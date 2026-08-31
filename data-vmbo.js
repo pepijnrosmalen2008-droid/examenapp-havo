@@ -31398,6 +31398,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Door secularisatie»."
       ],
       "uh": "Door secularisatie werd geloof minder belangrijk."
+     },
+     {
+      "v": "Een samenleving met vaste lagen waar je in geboren wordt. Welk begrip past hierbij?",
+      "o": [
+       "Normen",
+       "Emancipatie",
+       "Tolerantie",
+       "Standensamenleving"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een samenleving met vaste lagen waar je in geboren wordt. Dat past bij Standensamenleving: vaste standen.",
+      "uo": [
+       "Nee, dat hoort bij Normen: gedragsregels.",
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Klopt: vaste standen."
+      ],
+      "uh": "Standensamenleving: vaste standen."
+     },
+     {
+      "v": "Andere opvattingen en gewoonten kunnen verdragen. Om welk begrip gaat het?",
+      "o": [
+       "Tolerantie",
+       "Vooroordeel",
+       "Normen",
+       "Identiteit"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Andere opvattingen en gewoonten kunnen verdragen. Dat past bij Tolerantie: anderen verdragen.",
+      "uo": [
+       "Klopt: anderen verdragen.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Nee, dat hoort bij Normen: gedragsregels.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen."
+      ],
+      "uh": "Tolerantie: anderen verdragen."
+     },
+     {
+      "v": "Vrouwen streden voor het recht om te mogen stemmen. Welk begrip herken je hier?",
+      "o": [
+       "Secularisatie",
+       "Emancipatie",
+       "Normen",
+       "Religie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Vrouwen streden voor het recht om te mogen stemmen. Dat past bij Emancipatie: streven naar gelijkheid.",
+      "uo": [
+       "Nee, dat hoort bij Secularisatie: religie wordt minder.",
+       "Klopt: streven naar gelijkheid.",
+       "Nee, dat hoort bij Normen: gedragsregels.",
+       "Nee, dat hoort bij Religie: een geloof."
+      ],
+      "uh": "Emancipatie: streven naar gelijkheid."
+     },
+     {
+      "v": "Wie je bent en bij welke groep je je thuis voelt. Wat is hier aan de hand?",
+      "o": [
+       "Traditie",
+       "Secularisatie",
+       "Identiteit",
+       "Mentaliteit"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Wie je bent en bij welke groep je je thuis voelt. Dat past bij Identiteit: gevoel van erbij horen.",
+      "uo": [
+       "Nee, dat hoort bij Traditie: overgeleverde gewoonte.",
+       "Nee, dat hoort bij Secularisatie: religie wordt minder.",
+       "Klopt: gevoel van erbij horen.",
+       "Nee, dat hoort bij Mentaliteit: manier van denken."
+      ],
+      "uh": "Identiteit: gevoel van erbij horen."
+     },
+     {
+      "v": "Een gedeeld geloof met eigen rituelen en gebruiken. Welk begrip past hierbij?",
+      "o": [
+       "Normen",
+       "Traditie",
+       "Secularisatie",
+       "Religie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een gedeeld geloof met eigen rituelen en gebruiken. Dat past bij Religie: een geloof.",
+      "uo": [
+       "Nee, dat hoort bij Normen: gedragsregels.",
+       "Nee, dat hoort bij Traditie: overgeleverde gewoonte.",
+       "Nee, dat hoort bij Secularisatie: religie wordt minder.",
+       "Klopt: een geloof."
+      ],
+      "uh": "Religie: een geloof."
+     },
+     {
+      "v": "Het gevoel bij een bepaalde groep of natie te horen. Om welk begrip gaat het?",
+      "o": [
+       "Identiteit",
+       "Secularisatie",
+       "Traditie",
+       "Mentaliteit"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het gevoel bij een bepaalde groep of natie te horen. Dat past bij Identiteit: gevoel van erbij horen.",
+      "uo": [
+       "Klopt: gevoel van erbij horen.",
+       "Nee, dat hoort bij Secularisatie: religie wordt minder.",
+       "Nee, dat hoort bij Traditie: overgeleverde gewoonte.",
+       "Nee, dat hoort bij Mentaliteit: manier van denken."
+      ],
+      "uh": "Identiteit: gevoel van erbij horen."
+     },
+     {
+      "v": "Steeds minder mensen gaan naar de kerk en geloven in een god. Welk begrip herken je hier?",
+      "o": [
+       "Emancipatie",
+       "Secularisatie",
+       "Mentaliteit",
+       "Identiteit"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Steeds minder mensen gaan naar de kerk en geloven in een god. Dat past bij Secularisatie: religie wordt minder.",
+      "uo": [
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Klopt: religie wordt minder.",
+       "Nee, dat hoort bij Mentaliteit: manier van denken.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen."
+      ],
+      "uh": "Secularisatie: religie wordt minder."
+     },
+     {
+      "v": "De gedeelde denkwijze van een groep in een bepaalde periode. Wat is hier aan de hand?",
+      "o": [
+       "Identiteit",
+       "Standensamenleving",
+       "Mentaliteit",
+       "Waarden"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De gedeelde denkwijze van een groep in een bepaalde periode. Dat past bij Mentaliteit: manier van denken.",
+      "uo": [
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Nee, dat hoort bij Standensamenleving: vaste standen.",
+       "Klopt: manier van denken.",
+       "Nee, dat hoort bij Waarden: wat men belangrijk vindt."
+      ],
+      "uh": "Mentaliteit: manier van denken."
+     },
+     {
+      "v": "Je oordeelt over iemand zonder die persoon echt te kennen. Welk begrip past hierbij?",
+      "o": [
+       "Identiteit",
+       "Tolerantie",
+       "Mentaliteit",
+       "Vooroordeel"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je oordeelt over iemand zonder die persoon echt te kennen. Dat past bij Vooroordeel: oordeel zonder feiten.",
+      "uo": [
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Nee, dat hoort bij Mentaliteit: manier van denken.",
+       "Klopt: oordeel zonder feiten."
+      ],
+      "uh": "Vooroordeel: oordeel zonder feiten."
+     },
+     {
+      "v": "De manier waarop mensen in een tijd denken en de wereld zien. Om welk begrip gaat het?",
+      "o": [
+       "Mentaliteit",
+       "Cultuur",
+       "Traditie",
+       "Secularisatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De manier waarop mensen in een tijd denken en de wereld zien. Dat past bij Mentaliteit: manier van denken.",
+      "uo": [
+       "Klopt: manier van denken.",
+       "Nee, dat hoort bij Cultuur: gewoonten en waarden.",
+       "Nee, dat hoort bij Traditie: overgeleverde gewoonte.",
+       "Nee, dat hoort bij Secularisatie: religie wordt minder."
+      ],
+      "uh": "Mentaliteit: manier van denken."
+     },
+     {
+      "v": "Je laat anderen hun eigen geloof en mening hebben. Welk begrip herken je hier?",
+      "o": [
+       "Traditie",
+       "Tolerantie",
+       "Religie",
+       "Cultuur"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je laat anderen hun eigen geloof en mening hebben. Dat past bij Tolerantie: anderen verdragen.",
+      "uo": [
+       "Nee, dat hoort bij Traditie: overgeleverde gewoonte.",
+       "Klopt: anderen verdragen.",
+       "Nee, dat hoort bij Religie: een geloof.",
+       "Nee, dat hoort bij Cultuur: gewoonten en waarden."
+      ],
+      "uh": "Tolerantie: anderen verdragen."
+     },
+     {
+      "v": "Het proces waarbij religie een kleinere rol in de samenleving speelt. Wat is hier aan de hand?",
+      "o": [
+       "Mentaliteit",
+       "Emancipatie",
+       "Secularisatie",
+       "Religie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het proces waarbij religie een kleinere rol in de samenleving speelt. Dat past bij Secularisatie: religie wordt minder.",
+      "uo": [
+       "Nee, dat hoort bij Mentaliteit: manier van denken.",
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Klopt: religie wordt minder.",
+       "Nee, dat hoort bij Religie: een geloof."
+      ],
+      "uh": "Secularisatie: religie wordt minder."
+     },
+     {
+      "v": "Het streven van een groep naar gelijke rechten. Welk begrip past hierbij?",
+      "o": [
+       "Religie",
+       "Secularisatie",
+       "Normen",
+       "Emancipatie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het streven van een groep naar gelijke rechten. Dat past bij Emancipatie: streven naar gelijkheid.",
+      "uo": [
+       "Nee, dat hoort bij Religie: een geloof.",
+       "Nee, dat hoort bij Secularisatie: religie wordt minder.",
+       "Nee, dat hoort bij Normen: gedragsregels.",
+       "Klopt: streven naar gelijkheid."
+      ],
+      "uh": "Emancipatie: streven naar gelijkheid."
+     },
+     {
+      "v": "Mensen geloven in een god en gaan naar een gebedshuis. Om welk begrip gaat het?",
+      "o": [
+       "Religie",
+       "Vooroordeel",
+       "Tolerantie",
+       "Standensamenleving"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Mensen geloven in een god en gaan naar een gebedshuis. Dat past bij Religie: een geloof.",
+      "uo": [
+       "Klopt: een geloof.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Nee, dat hoort bij Standensamenleving: vaste standen."
+      ],
+      "uh": "Religie: een geloof."
+     },
+     {
+      "v": "Gedragsregels, zoals dat je een ander laat uitpraten. Welk begrip herken je hier?",
+      "o": [
+       "Waarden",
+       "Normen",
+       "Tolerantie",
+       "Secularisatie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Gedragsregels, zoals dat je een ander laat uitpraten. Dat past bij Normen: gedragsregels.",
+      "uo": [
+       "Nee, dat hoort bij Waarden: wat men belangrijk vindt.",
+       "Klopt: gedragsregels.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Nee, dat hoort bij Secularisatie: religie wordt minder."
+      ],
+      "uh": "Normen: gedragsregels."
+     },
+     {
+      "v": "De ongeschreven regels over hoe je je hoort te gedragen. Wat is hier aan de hand?",
+      "o": [
+       "Mentaliteit",
+       "Waarden",
+       "Normen",
+       "Cultuur"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De ongeschreven regels over hoe je je hoort te gedragen. Dat past bij Normen: gedragsregels.",
+      "uo": [
+       "Nee, dat hoort bij Mentaliteit: manier van denken.",
+       "Nee, dat hoort bij Waarden: wat men belangrijk vindt.",
+       "Klopt: gedragsregels.",
+       "Nee, dat hoort bij Cultuur: gewoonten en waarden."
+      ],
+      "uh": "Normen: gedragsregels."
+     },
+     {
+      "v": "Hoe een volk leeft: taal, eten, kleding en gebruiken. Welk begrip past hierbij?",
+      "o": [
+       "Standensamenleving",
+       "Vooroordeel",
+       "Tolerantie",
+       "Cultuur"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Hoe een volk leeft: taal, eten, kleding en gebruiken. Dat past bij Cultuur: gewoonten en waarden.",
+      "uo": [
+       "Nee, dat hoort bij Standensamenleving: vaste standen.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Klopt: gewoonten en waarden."
+      ],
+      "uh": "Cultuur: gewoonten en waarden."
+     },
+     {
+      "v": "Je positie lag vast: als boerenkind bleef je boer. Om welk begrip gaat het?",
+      "o": [
+       "Standensamenleving",
+       "Emancipatie",
+       "Cultuur",
+       "Normen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je positie lag vast: als boerenkind bleef je boer. Dat past bij Standensamenleving: vaste standen.",
+      "uo": [
+       "Klopt: vaste standen.",
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Nee, dat hoort bij Cultuur: gewoonten en waarden.",
+       "Nee, dat hoort bij Normen: gedragsregels."
+      ],
+      "uh": "Standensamenleving: vaste standen."
+     },
+     {
+      "v": "Wat mensen echt belangrijk vinden, zoals vrijheid of eerlijkheid. Welk begrip herken je hier?",
+      "o": [
+       "Normen",
+       "Waarden",
+       "Secularisatie",
+       "Traditie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Wat mensen echt belangrijk vinden, zoals vrijheid of eerlijkheid. Dat past bij Waarden: wat men belangrijk vindt.",
+      "uo": [
+       "Nee, dat hoort bij Normen: gedragsregels.",
+       "Klopt: wat men belangrijk vindt.",
+       "Nee, dat hoort bij Secularisatie: religie wordt minder.",
+       "Nee, dat hoort bij Traditie: overgeleverde gewoonte."
+      ],
+      "uh": "Waarden: wat men belangrijk vindt."
+     },
+     {
+      "v": "Een gewoonte die van generatie op generatie wordt doorgegeven. Wat is hier aan de hand?",
+      "o": [
+       "Cultuur",
+       "Mentaliteit",
+       "Traditie",
+       "Tolerantie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een gewoonte die van generatie op generatie wordt doorgegeven. Dat past bij Traditie: overgeleverde gewoonte.",
+      "uo": [
+       "Nee, dat hoort bij Cultuur: gewoonten en waarden.",
+       "Nee, dat hoort bij Mentaliteit: manier van denken.",
+       "Klopt: overgeleverde gewoonte.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen."
+      ],
+      "uh": "Traditie: overgeleverde gewoonte."
+     },
+     {
+      "v": "De gewoonten, feesten en waarden van een groep mensen. Welk begrip past hierbij?",
+      "o": [
+       "Identiteit",
+       "Mentaliteit",
+       "Standensamenleving",
+       "Cultuur"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De gewoonten, feesten en waarden van een groep mensen. Dat past bij Cultuur: gewoonten en waarden.",
+      "uo": [
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Nee, dat hoort bij Mentaliteit: manier van denken.",
+       "Nee, dat hoort bij Standensamenleving: vaste standen.",
+       "Klopt: gewoonten en waarden."
+      ],
+      "uh": "Cultuur: gewoonten en waarden."
+     },
+     {
+      "v": "Elk jaar vieren ze hetzelfde feest, precies zoals hun grootouders. Om welk begrip gaat het?",
+      "o": [
+       "Traditie",
+       "Religie",
+       "Tolerantie",
+       "Secularisatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Elk jaar vieren ze hetzelfde feest, precies zoals hun grootouders. Dat past bij Traditie: overgeleverde gewoonte.",
+      "uo": [
+       "Klopt: overgeleverde gewoonte.",
+       "Nee, dat hoort bij Religie: een geloof.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Nee, dat hoort bij Secularisatie: religie wordt minder."
+      ],
+      "uh": "Traditie: overgeleverde gewoonte."
+     },
+     {
+      "v": "De idealen die een groep hoog in het vaandel heeft. Welk begrip herken je hier?",
+      "o": [
+       "Vooroordeel",
+       "Waarden",
+       "Tolerantie",
+       "Standensamenleving"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De idealen die een groep hoog in het vaandel heeft. Dat past bij Waarden: wat men belangrijk vindt.",
+      "uo": [
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Klopt: wat men belangrijk vindt.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Nee, dat hoort bij Standensamenleving: vaste standen."
+      ],
+      "uh": "Waarden: wat men belangrijk vindt."
+     },
+     {
+      "v": "Een mening vooraf, zonder de feiten te kennen. Wat is hier aan de hand?",
+      "o": [
+       "Mentaliteit",
+       "Tolerantie",
+       "Vooroordeel",
+       "Identiteit"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een mening vooraf, zonder de feiten te kennen. Dat past bij Vooroordeel: oordeel zonder feiten.",
+      "uo": [
+       "Nee, dat hoort bij Mentaliteit: manier van denken.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Klopt: oordeel zonder feiten.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen."
+      ],
+      "uh": "Vooroordeel: oordeel zonder feiten."
      }
     ],
     "begrippen": [
@@ -31676,6 +32132,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Om machtsmisbruik te voorkomen»."
       ],
       "uh": "Om machtsmisbruik te voorkomen: Zo controleren de machten elkaar."
+     },
+     {
+      "v": "De gekozen kamer die de regering controleert en wetten maakt. Welk begrip past hierbij?",
+      "o": [
+       "Regering",
+       "Eerste Kamer",
+       "Democratie",
+       "Tweede Kamer"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De gekozen kamer die de regering controleert en wetten maakt. Dat past bij Tweede Kamer: gekozen, controleert regering.",
+      "uo": [
+       "Nee, dat hoort bij Regering: koning en ministers.",
+       "Nee, dat hoort bij Eerste Kamer: keurt wetten goed of af.",
+       "Nee, dat hoort bij Democratie: het volk kiest.",
+       "Klopt: gekozen, controleert regering."
+      ],
+      "uh": "Tweede Kamer: gekozen, controleert regering."
+     },
+     {
+      "v": "De volksvertegenwoordiging die wetten behandelt en controleert. Om welk begrip gaat het?",
+      "o": [
+       "Parlement",
+       "Uitvoerende macht",
+       "Wetgevende macht",
+       "Grondwet"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De volksvertegenwoordiging die wetten behandelt en controleert. Dat past bij Parlement: de volksvertegenwoordiging.",
+      "uo": [
+       "Klopt: de volksvertegenwoordiging.",
+       "Nee, dat hoort bij Uitvoerende macht: voert wetten uit.",
+       "Nee, dat hoort bij Wetgevende macht: maakt wetten.",
+       "Nee, dat hoort bij Grondwet: de hoogste wet."
+      ],
+      "uh": "Parlement: de volksvertegenwoordiging."
+     },
+     {
+      "v": "Deze kamer keurt een wet uiteindelijk goed of af. Welk begrip herken je hier?",
+      "o": [
+       "Tweede Kamer",
+       "Eerste Kamer",
+       "Democratie",
+       "Regering"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Deze kamer keurt een wet uiteindelijk goed of af. Dat past bij Eerste Kamer: keurt wetten goed of af.",
+      "uo": [
+       "Nee, dat hoort bij Tweede Kamer: gekozen, controleert regering.",
+       "Klopt: keurt wetten goed of af.",
+       "Nee, dat hoort bij Democratie: het volk kiest.",
+       "Nee, dat hoort bij Regering: koning en ministers."
+      ],
+      "uh": "Eerste Kamer: keurt wetten goed of af."
+     },
+     {
+      "v": "Een staat die zijn burgers beschermt tegen tegenslag. Wat is hier aan de hand?",
+      "o": [
+       "Eerste Kamer",
+       "Trias Politica",
+       "Verzorgingsstaat",
+       "Grondrecht"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een staat die zijn burgers beschermt tegen tegenslag. Dat past bij Verzorgingsstaat: staat zorgt voor burgers.",
+      "uo": [
+       "Nee, dat hoort bij Eerste Kamer: keurt wetten goed of af.",
+       "Nee, dat hoort bij Trias Politica: scheiding van machten.",
+       "Klopt: staat zorgt voor burgers.",
+       "Nee, dat hoort bij Grondrecht: recht voor iedereen."
+      ],
+      "uh": "Verzorgingsstaat: staat zorgt voor burgers."
+     },
+     {
+      "v": "De macht die het beleid en de wetten in de praktijk brengt. Welk begrip past hierbij?",
+      "o": [
+       "Grondrecht",
+       "Wetgevende macht",
+       "Rechterlijke macht",
+       "Uitvoerende macht"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De macht die het beleid en de wetten in de praktijk brengt. Dat past bij Uitvoerende macht: voert wetten uit.",
+      "uo": [
+       "Nee, dat hoort bij Grondrecht: recht voor iedereen.",
+       "Nee, dat hoort bij Wetgevende macht: maakt wetten.",
+       "Nee, dat hoort bij Rechterlijke macht: spreekt recht.",
+       "Klopt: voert wetten uit."
+      ],
+      "uh": "Uitvoerende macht: voert wetten uit."
+     },
+     {
+      "v": "De staat zorgt met uitkeringen en zorg voor wie het nodig heeft. Om welk begrip gaat het?",
+      "o": [
+       "Verzorgingsstaat",
+       "Trias Politica",
+       "Eerste Kamer",
+       "Grondrecht"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De staat zorgt met uitkeringen en zorg voor wie het nodig heeft. Dat past bij Verzorgingsstaat: staat zorgt voor burgers.",
+      "uo": [
+       "Klopt: staat zorgt voor burgers.",
+       "Nee, dat hoort bij Trias Politica: scheiding van machten.",
+       "Nee, dat hoort bij Eerste Kamer: keurt wetten goed of af.",
+       "Nee, dat hoort bij Grondrecht: recht voor iedereen."
+      ],
+      "uh": "Verzorgingsstaat: staat zorgt voor burgers."
+     },
+     {
+      "v": "De koning en de ministers samen besturen het land. Welk begrip herken je hier?",
+      "o": [
+       "Parlement",
+       "Regering",
+       "Rechterlijke macht",
+       "Uitvoerende macht"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De koning en de ministers samen besturen het land. Dat past bij Regering: koning en ministers.",
+      "uo": [
+       "Nee, dat hoort bij Parlement: de volksvertegenwoordiging.",
+       "Klopt: koning en ministers.",
+       "Nee, dat hoort bij Rechterlijke macht: spreekt recht.",
+       "Nee, dat hoort bij Uitvoerende macht: voert wetten uit."
+      ],
+      "uh": "Regering: koning en ministers."
+     },
+     {
+      "v": "Een basisrecht dat voor alle burgers geldt. Wat is hier aan de hand?",
+      "o": [
+       "Regering",
+       "Parlement",
+       "Grondrecht",
+       "Trias Politica"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een basisrecht dat voor alle burgers geldt. Dat past bij Grondrecht: recht voor iedereen.",
+      "uo": [
+       "Nee, dat hoort bij Regering: koning en ministers.",
+       "Nee, dat hoort bij Parlement: de volksvertegenwoordiging.",
+       "Klopt: recht voor iedereen.",
+       "Nee, dat hoort bij Trias Politica: scheiding van machten."
+      ],
+      "uh": "Grondrecht: recht voor iedereen."
+     },
+     {
+      "v": "Het volk kiest zijn eigen vertegenwoordigers via verkiezingen. Welk begrip past hierbij?",
+      "o": [
+       "Tweede Kamer",
+       "Trias Politica",
+       "Eerste Kamer",
+       "Democratie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het volk kiest zijn eigen vertegenwoordigers via verkiezingen. Dat past bij Democratie: het volk kiest.",
+      "uo": [
+       "Nee, dat hoort bij Tweede Kamer: gekozen, controleert regering.",
+       "Nee, dat hoort bij Trias Politica: scheiding van machten.",
+       "Nee, dat hoort bij Eerste Kamer: keurt wetten goed of af.",
+       "Klopt: het volk kiest."
+      ],
+      "uh": "Democratie: het volk kiest."
+     },
+     {
+      "v": "Iedereen heeft recht op vrijheid van meningsuiting. Om welk begrip gaat het?",
+      "o": [
+       "Grondrecht",
+       "Parlement",
+       "Regering",
+       "Trias Politica"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Iedereen heeft recht op vrijheid van meningsuiting. Dat past bij Grondrecht: recht voor iedereen.",
+      "uo": [
+       "Klopt: recht voor iedereen.",
+       "Nee, dat hoort bij Parlement: de volksvertegenwoordiging.",
+       "Nee, dat hoort bij Regering: koning en ministers.",
+       "Nee, dat hoort bij Trias Politica: scheiding van machten."
+      ],
+      "uh": "Grondrecht: recht voor iedereen."
+     },
+     {
+      "v": "De gekozen volksvertegenwoordigers controleren de regering. Welk begrip herken je hier?",
+      "o": [
+       "Regering",
+       "Parlement",
+       "Tweede Kamer",
+       "Verzorgingsstaat"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De gekozen volksvertegenwoordigers controleren de regering. Dat past bij Parlement: de volksvertegenwoordiging.",
+      "uo": [
+       "Nee, dat hoort bij Regering: koning en ministers.",
+       "Klopt: de volksvertegenwoordiging.",
+       "Nee, dat hoort bij Tweede Kamer: gekozen, controleert regering.",
+       "Nee, dat hoort bij Verzorgingsstaat: staat zorgt voor burgers."
+      ],
+      "uh": "Parlement: de volksvertegenwoordiging."
+     },
+     {
+      "v": "Het bestuur van het land, dat het beleid uitvoert. Wat is hier aan de hand?",
+      "o": [
+       "Grondwet",
+       "Grondrecht",
+       "Regering",
+       "Rechterlijke macht"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het bestuur van het land, dat het beleid uitvoert. Dat past bij Regering: koning en ministers.",
+      "uo": [
+       "Nee, dat hoort bij Grondwet: de hoogste wet.",
+       "Nee, dat hoort bij Grondrecht: recht voor iedereen.",
+       "Klopt: koning en ministers.",
+       "Nee, dat hoort bij Rechterlijke macht: spreekt recht."
+      ],
+      "uh": "Regering: koning en ministers."
+     },
+     {
+      "v": "De kamer die als laatste over een wet stemt. Welk begrip past hierbij?",
+      "o": [
+       "Regering",
+       "Tweede Kamer",
+       "Democratie",
+       "Eerste Kamer"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De kamer die als laatste over een wet stemt. Dat past bij Eerste Kamer: keurt wetten goed of af.",
+      "uo": [
+       "Nee, dat hoort bij Regering: koning en ministers.",
+       "Nee, dat hoort bij Tweede Kamer: gekozen, controleert regering.",
+       "Nee, dat hoort bij Democratie: het volk kiest.",
+       "Klopt: keurt wetten goed of af."
+      ],
+      "uh": "Eerste Kamer: keurt wetten goed of af."
+     },
+     {
+      "v": "Dit deel van de staat zorgt dat de wetten worden uitgevoerd. Om welk begrip gaat het?",
+      "o": [
+       "Uitvoerende macht",
+       "Regering",
+       "Grondrecht",
+       "Tweede Kamer"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Dit deel van de staat zorgt dat de wetten worden uitgevoerd. Dat past bij Uitvoerende macht: voert wetten uit.",
+      "uo": [
+       "Klopt: voert wetten uit.",
+       "Nee, dat hoort bij Regering: koning en ministers.",
+       "Nee, dat hoort bij Grondrecht: recht voor iedereen.",
+       "Nee, dat hoort bij Tweede Kamer: gekozen, controleert regering."
+      ],
+      "uh": "Uitvoerende macht: voert wetten uit."
+     },
+     {
+      "v": "De macht die nieuwe wetten opstelt en aanneemt. Welk begrip herken je hier?",
+      "o": [
+       "Rechterlijke macht",
+       "Wetgevende macht",
+       "Uitvoerende macht",
+       "Eerste Kamer"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De macht die nieuwe wetten opstelt en aanneemt. Dat past bij Wetgevende macht: maakt wetten.",
+      "uo": [
+       "Nee, dat hoort bij Rechterlijke macht: spreekt recht.",
+       "Klopt: maakt wetten.",
+       "Nee, dat hoort bij Uitvoerende macht: voert wetten uit.",
+       "Nee, dat hoort bij Eerste Kamer: keurt wetten goed of af."
+      ],
+      "uh": "Wetgevende macht: maakt wetten."
+     },
+     {
+      "v": "Dit deel van de staat maakt de wetten. Wat is hier aan de hand?",
+      "o": [
+       "Rechterlijke macht",
+       "Uitvoerende macht",
+       "Wetgevende macht",
+       "Tweede Kamer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Dit deel van de staat maakt de wetten. Dat past bij Wetgevende macht: maakt wetten.",
+      "uo": [
+       "Nee, dat hoort bij Rechterlijke macht: spreekt recht.",
+       "Nee, dat hoort bij Uitvoerende macht: voert wetten uit.",
+       "Klopt: maakt wetten.",
+       "Nee, dat hoort bij Tweede Kamer: gekozen, controleert regering."
+      ],
+      "uh": "Wetgevende macht: maakt wetten."
+     },
+     {
+      "v": "De belangrijkste wet met de basisregels van de staat. Welk begrip past hierbij?",
+      "o": [
+       "Parlement",
+       "Wetgevende macht",
+       "Trias Politica",
+       "Grondwet"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De belangrijkste wet met de basisregels van de staat. Dat past bij Grondwet: de hoogste wet.",
+      "uo": [
+       "Nee, dat hoort bij Parlement: de volksvertegenwoordiging.",
+       "Nee, dat hoort bij Wetgevende macht: maakt wetten.",
+       "Nee, dat hoort bij Trias Politica: scheiding van machten.",
+       "Klopt: de hoogste wet."
+      ],
+      "uh": "Grondwet: de hoogste wet."
+     },
+     {
+      "v": "Deze rechtstreeks door het volk gekozen kamer controleert de regering. Om welk begrip gaat het?",
+      "o": [
+       "Tweede Kamer",
+       "Eerste Kamer",
+       "Trias Politica",
+       "Verzorgingsstaat"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Deze rechtstreeks door het volk gekozen kamer controleert de regering. Dat past bij Tweede Kamer: gekozen, controleert regering.",
+      "uo": [
+       "Klopt: gekozen, controleert regering.",
+       "Nee, dat hoort bij Eerste Kamer: keurt wetten goed of af.",
+       "Nee, dat hoort bij Trias Politica: scheiding van machten.",
+       "Nee, dat hoort bij Verzorgingsstaat: staat zorgt voor burgers."
+      ],
+      "uh": "Tweede Kamer: gekozen, controleert regering."
+     },
+     {
+      "v": "De macht is verdeeld over wie wetten maakt, uitvoert en rechtspreekt. Welk begrip herken je hier?",
+      "o": [
+       "Democratie",
+       "Trias Politica",
+       "Wetgevende macht",
+       "Verzorgingsstaat"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De macht is verdeeld over wie wetten maakt, uitvoert en rechtspreekt. Dat past bij Trias Politica: scheiding van machten.",
+      "uo": [
+       "Nee, dat hoort bij Democratie: het volk kiest.",
+       "Klopt: scheiding van machten.",
+       "Nee, dat hoort bij Wetgevende macht: maakt wetten.",
+       "Nee, dat hoort bij Verzorgingsstaat: staat zorgt voor burgers."
+      ],
+      "uh": "Trias Politica: scheiding van machten."
+     },
+     {
+      "v": "De macht die oordeelt of iemand de wet heeft overtreden. Wat is hier aan de hand?",
+      "o": [
+       "Grondrecht",
+       "Tweede Kamer",
+       "Rechterlijke macht",
+       "Grondwet"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De macht die oordeelt of iemand de wet heeft overtreden. Dat past bij Rechterlijke macht: spreekt recht.",
+      "uo": [
+       "Nee, dat hoort bij Grondrecht: recht voor iedereen.",
+       "Nee, dat hoort bij Tweede Kamer: gekozen, controleert regering.",
+       "Klopt: spreekt recht.",
+       "Nee, dat hoort bij Grondwet: de hoogste wet."
+      ],
+      "uh": "Rechterlijke macht: spreekt recht."
+     },
+     {
+      "v": "De hoogste wet van het land, waar alle andere wetten aan moeten voldoen. Welk begrip past hierbij?",
+      "o": [
+       "Verzorgingsstaat",
+       "Grondrecht",
+       "Rechterlijke macht",
+       "Grondwet"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De hoogste wet van het land, waar alle andere wetten aan moeten voldoen. Dat past bij Grondwet: de hoogste wet.",
+      "uo": [
+       "Nee, dat hoort bij Verzorgingsstaat: staat zorgt voor burgers.",
+       "Nee, dat hoort bij Grondrecht: recht voor iedereen.",
+       "Nee, dat hoort bij Rechterlijke macht: spreekt recht.",
+       "Klopt: de hoogste wet."
+      ],
+      "uh": "Grondwet: de hoogste wet."
+     },
+     {
+      "v": "Dit deel van de staat spreekt recht en bepaalt de straf. Om welk begrip gaat het?",
+      "o": [
+       "Rechterlijke macht",
+       "Wetgevende macht",
+       "Uitvoerende macht",
+       "Eerste Kamer"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Dit deel van de staat spreekt recht en bepaalt de straf. Dat past bij Rechterlijke macht: spreekt recht.",
+      "uo": [
+       "Klopt: spreekt recht.",
+       "Nee, dat hoort bij Wetgevende macht: maakt wetten.",
+       "Nee, dat hoort bij Uitvoerende macht: voert wetten uit.",
+       "Nee, dat hoort bij Eerste Kamer: keurt wetten goed of af."
+      ],
+      "uh": "Rechterlijke macht: spreekt recht."
+     },
+     {
+      "v": "De verdeling van de staatsmacht in drie delen. Welk begrip herken je hier?",
+      "o": [
+       "Eerste Kamer",
+       "Trias Politica",
+       "Parlement",
+       "Uitvoerende macht"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De verdeling van de staatsmacht in drie delen. Dat past bij Trias Politica: scheiding van machten.",
+      "uo": [
+       "Nee, dat hoort bij Eerste Kamer: keurt wetten goed of af.",
+       "Klopt: scheiding van machten.",
+       "Nee, dat hoort bij Parlement: de volksvertegenwoordiging.",
+       "Nee, dat hoort bij Uitvoerende macht: voert wetten uit."
+      ],
+      "uh": "Trias Politica: scheiding van machten."
+     },
+     {
+      "v": "Een staatsvorm waarin het volk de macht kiest. Wat is hier aan de hand?",
+      "o": [
+       "Verzorgingsstaat",
+       "Eerste Kamer",
+       "Democratie",
+       "Parlement"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een staatsvorm waarin het volk de macht kiest. Dat past bij Democratie: het volk kiest.",
+      "uo": [
+       "Nee, dat hoort bij Verzorgingsstaat: staat zorgt voor burgers.",
+       "Nee, dat hoort bij Eerste Kamer: keurt wetten goed of af.",
+       "Klopt: het volk kiest.",
+       "Nee, dat hoort bij Parlement: de volksvertegenwoordiging."
+      ],
+      "uh": "Democratie: het volk kiest."
      }
     ],
     "begrippen": [
@@ -31952,6 +32864,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Machines in fabrieken»."
       ],
       "uh": "Machines in fabrieken: Met machines veel tegelijk maken."
+     },
+     {
+      "v": "Het neerleggen van het werk om iets af te dwingen. Welk begrip past hierbij?",
+      "o": [
+       "Arbeider",
+       "Socialisme",
+       "Kinderarbeid",
+       "Staking"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het neerleggen van het werk om iets af te dwingen. Dat past bij Staking: het werk neerleggen.",
+      "uo": [
+       "Nee, dat hoort bij Arbeider: fabriekswerker.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Kinderarbeid: kinderen in de fabriek.",
+       "Klopt: het werk neerleggen."
+      ],
+      "uh": "Staking: het werk neerleggen."
+     },
+     {
+      "v": "Een organisatie die opkomt voor de arbeiders. Om welk begrip gaat het?",
+      "o": [
+       "Vakbond",
+       "Socialisme",
+       "Kinderarbeid",
+       "Arbeider"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een organisatie die opkomt voor de arbeiders. Dat past bij Vakbond: komt op voor arbeiders.",
+      "uo": [
+       "Klopt: komt op voor arbeiders.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Kinderarbeid: kinderen in de fabriek.",
+       "Nee, dat hoort bij Arbeider: fabriekswerker."
+      ],
+      "uh": "Vakbond: komt op voor arbeiders."
+     },
+     {
+      "v": "De fabriekseigenaar bezit de fabriek en streeft naar zo veel mogelijk winst. Welk begrip herken je hier?",
+      "o": [
+       "Socialisme",
+       "Kapitalisme",
+       "Verstedelijking",
+       "Sociale kwestie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De fabriekseigenaar bezit de fabriek en streeft naar zo veel mogelijk winst. Dat past bij Kapitalisme: bezit en winst.",
+      "uo": [
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Klopt: bezit en winst.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Nee, dat hoort bij Sociale kwestie: ellende van arbeiders."
+      ],
+      "uh": "Kapitalisme: bezit en winst."
+     },
+     {
+      "v": "Het in grote hoeveelheden tegelijk maken van producten. Wat is hier aan de hand?",
+      "o": [
+       "Vakbond",
+       "Kapitalisme",
+       "Massaproductie",
+       "Sociale kwestie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het in grote hoeveelheden tegelijk maken van producten. Dat past bij Massaproductie: veel tegelijk maken.",
+      "uo": [
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders.",
+       "Nee, dat hoort bij Kapitalisme: bezit en winst.",
+       "Klopt: veel tegelijk maken.",
+       "Nee, dat hoort bij Sociale kwestie: ellende van arbeiders."
+      ],
+      "uh": "Massaproductie: veel tegelijk maken."
+     },
+     {
+      "v": "Het probleem van de slechte omstandigheden van arbeiders. Welk begrip past hierbij?",
+      "o": [
+       "Arbeider",
+       "Kinderarbeid",
+       "Fabriek",
+       "Sociale kwestie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het probleem van de slechte omstandigheden van arbeiders. Dat past bij Sociale kwestie: ellende van arbeiders.",
+      "uo": [
+       "Nee, dat hoort bij Arbeider: fabriekswerker.",
+       "Nee, dat hoort bij Kinderarbeid: kinderen in de fabriek.",
+       "Nee, dat hoort bij Fabriek: gebouw met machines.",
+       "Klopt: ellende van arbeiders."
+      ],
+      "uh": "Sociale kwestie: ellende van arbeiders."
+     },
+     {
+      "v": "Aan de lopende band werden duizenden dezelfde producten gemaakt. Om welk begrip gaat het?",
+      "o": [
+       "Massaproductie",
+       "Kapitalisme",
+       "Vakbond",
+       "Sociale kwestie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Aan de lopende band werden duizenden dezelfde producten gemaakt. Dat past bij Massaproductie: veel tegelijk maken.",
+      "uo": [
+       "Klopt: veel tegelijk maken.",
+       "Nee, dat hoort bij Kapitalisme: bezit en winst.",
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders.",
+       "Nee, dat hoort bij Sociale kwestie: ellende van arbeiders."
+      ],
+      "uh": "Massaproductie: veel tegelijk maken."
+     },
+     {
+      "v": "Hij werkte lange dagen aan de machine in de fabriek. Welk begrip herken je hier?",
+      "o": [
+       "Vakbond",
+       "Arbeider",
+       "Kinderarbeid",
+       "Sociale kwestie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Hij werkte lange dagen aan de machine in de fabriek. Dat past bij Arbeider: fabriekswerker.",
+      "uo": [
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders.",
+       "Klopt: fabriekswerker.",
+       "Nee, dat hoort bij Kinderarbeid: kinderen in de fabriek.",
+       "Nee, dat hoort bij Sociale kwestie: ellende van arbeiders."
+      ],
+      "uh": "Arbeider: fabriekswerker."
+     },
+     {
+      "v": "Een gebouw waar met machines massaal wordt geproduceerd. Wat is hier aan de hand?",
+      "o": [
+       "Vakbond",
+       "Socialisme",
+       "Fabriek",
+       "Staking"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een gebouw waar met machines massaal wordt geproduceerd. Dat past bij Fabriek: gebouw met machines.",
+      "uo": [
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Klopt: gebouw met machines.",
+       "Nee, dat hoort bij Staking: het werk neerleggen."
+      ],
+      "uh": "Fabriek: gebouw met machines."
+     },
+     {
+      "v": "Een beweging streed voor gelijkheid en betere rechten voor arbeiders. Welk begrip past hierbij?",
+      "o": [
+       "Massaproductie",
+       "Kapitalisme",
+       "Verstedelijking",
+       "Socialisme"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een beweging streed voor gelijkheid en betere rechten voor arbeiders. Dat past bij Socialisme: gelijkheid voor arbeiders.",
+      "uo": [
+       "Nee, dat hoort bij Massaproductie: veel tegelijk maken.",
+       "Nee, dat hoort bij Kapitalisme: bezit en winst.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Klopt: gelijkheid voor arbeiders."
+      ],
+      "uh": "Socialisme: gelijkheid voor arbeiders."
+     },
+     {
+      "v": "In een groot gebouw vol machines werkten honderden mensen. Om welk begrip gaat het?",
+      "o": [
+       "Fabriek",
+       "Socialisme",
+       "Vakbond",
+       "Staking"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "In een groot gebouw vol machines werkten honderden mensen. Dat past bij Fabriek: gebouw met machines.",
+      "uo": [
+       "Klopt: gebouw met machines.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders.",
+       "Nee, dat hoort bij Staking: het werk neerleggen."
+      ],
+      "uh": "Fabriek: gebouw met machines."
+     },
+     {
+      "v": "Arbeiders sloten zich aaneen om samen betere lonen te eisen. Welk begrip herken je hier?",
+      "o": [
+       "Staking",
+       "Vakbond",
+       "Sociale kwestie",
+       "Verstedelijking"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Arbeiders sloten zich aaneen om samen betere lonen te eisen. Dat past bij Vakbond: komt op voor arbeiders.",
+      "uo": [
+       "Nee, dat hoort bij Staking: het werk neerleggen.",
+       "Klopt: komt op voor arbeiders.",
+       "Nee, dat hoort bij Sociale kwestie: ellende van arbeiders.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien."
+      ],
+      "uh": "Vakbond: komt op voor arbeiders."
+     },
+     {
+      "v": "Iemand die in loondienst in een fabriek werkt. Wat is hier aan de hand?",
+      "o": [
+       "Industriële revolutie",
+       "Fabriek",
+       "Arbeider",
+       "Kinderarbeid"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Iemand die in loondienst in een fabriek werkt. Dat past bij Arbeider: fabriekswerker.",
+      "uo": [
+       "Nee, dat hoort bij Industriële revolutie: productie met machines.",
+       "Nee, dat hoort bij Fabriek: gebouw met machines.",
+       "Klopt: fabriekswerker.",
+       "Nee, dat hoort bij Kinderarbeid: kinderen in de fabriek."
+      ],
+      "uh": "Arbeider: fabriekswerker."
+     },
+     {
+      "v": "Een systeem gericht op privébezit en winst. Welk begrip past hierbij?",
+      "o": [
+       "Sociale kwestie",
+       "Socialisme",
+       "Verstedelijking",
+       "Kapitalisme"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een systeem gericht op privébezit en winst. Dat past bij Kapitalisme: bezit en winst.",
+      "uo": [
+       "Nee, dat hoort bij Sociale kwestie: ellende van arbeiders.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Klopt: bezit en winst."
+      ],
+      "uh": "Kapitalisme: bezit en winst."
+     },
+     {
+      "v": "De arbeiders leefden in armoede, met lange dagen en lage lonen. Om welk begrip gaat het?",
+      "o": [
+       "Sociale kwestie",
+       "Fabriek",
+       "Massaproductie",
+       "Verstedelijking"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De arbeiders leefden in armoede, met lange dagen en lage lonen. Dat past bij Sociale kwestie: ellende van arbeiders.",
+      "uo": [
+       "Klopt: ellende van arbeiders.",
+       "Nee, dat hoort bij Fabriek: gebouw met machines.",
+       "Nee, dat hoort bij Massaproductie: veel tegelijk maken.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien."
+      ],
+      "uh": "Sociale kwestie: ellende van arbeiders."
+     },
+     {
+      "v": "De sterke groei van steden door de industrie. Welk begrip herken je hier?",
+      "o": [
+       "Massaproductie",
+       "Verstedelijking",
+       "Staking",
+       "Vakbond"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De sterke groei van steden door de industrie. Dat past bij Verstedelijking: steden groeien.",
+      "uo": [
+       "Nee, dat hoort bij Massaproductie: veel tegelijk maken.",
+       "Klopt: steden groeien.",
+       "Nee, dat hoort bij Staking: het werk neerleggen.",
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders."
+      ],
+      "uh": "Verstedelijking: steden groeien."
+     },
+     {
+      "v": "Mensen trokken massaal naar de stad voor werk in de fabriek. Wat is hier aan de hand?",
+      "o": [
+       "Fabriek",
+       "Massaproductie",
+       "Verstedelijking",
+       "Kinderarbeid"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Mensen trokken massaal naar de stad voor werk in de fabriek. Dat past bij Verstedelijking: steden groeien.",
+      "uo": [
+       "Nee, dat hoort bij Fabriek: gebouw met machines.",
+       "Nee, dat hoort bij Massaproductie: veel tegelijk maken.",
+       "Klopt: steden groeien.",
+       "Nee, dat hoort bij Kinderarbeid: kinderen in de fabriek."
+      ],
+      "uh": "Verstedelijking: steden groeien."
+     },
+     {
+      "v": "De omslag naar produceren met machines in fabrieken. Welk begrip past hierbij?",
+      "o": [
+       "Arbeider",
+       "Vakbond",
+       "Socialisme",
+       "Industriële revolutie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De omslag naar produceren met machines in fabrieken. Dat past bij Industriële revolutie: productie met machines.",
+      "uo": [
+       "Nee, dat hoort bij Arbeider: fabriekswerker.",
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Klopt: productie met machines."
+      ],
+      "uh": "Industriële revolutie: productie met machines."
+     },
+     {
+      "v": "De arbeiders legden het werk neer tot hun eisen werden ingewilligd. Om welk begrip gaat het?",
+      "o": [
+       "Staking",
+       "Vakbond",
+       "Arbeider",
+       "Massaproductie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De arbeiders legden het werk neer tot hun eisen werden ingewilligd. Dat past bij Staking: het werk neerleggen.",
+      "uo": [
+       "Klopt: het werk neerleggen.",
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders.",
+       "Nee, dat hoort bij Arbeider: fabriekswerker.",
+       "Nee, dat hoort bij Massaproductie: veel tegelijk maken."
+      ],
+      "uh": "Staking: het werk neerleggen."
+     },
+     {
+      "v": "Een machine die draaide op de stoom van kokend water. Welk begrip herken je hier?",
+      "o": [
+       "Fabriek",
+       "Stoommachine",
+       "Socialisme",
+       "Staking"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een machine die draaide op de stoom van kokend water. Dat past bij Stoommachine: machine op stoom.",
+      "uo": [
+       "Nee, dat hoort bij Fabriek: gebouw met machines.",
+       "Klopt: machine op stoom.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Staking: het werk neerleggen."
+      ],
+      "uh": "Stoommachine: machine op stoom."
+     },
+     {
+      "v": "Kinderen die onder zware omstandigheden moesten werken. Wat is hier aan de hand?",
+      "o": [
+       "Massaproductie",
+       "Verstedelijking",
+       "Kinderarbeid",
+       "Vakbond"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Kinderen die onder zware omstandigheden moesten werken. Dat past bij Kinderarbeid: kinderen in de fabriek.",
+      "uo": [
+       "Nee, dat hoort bij Massaproductie: veel tegelijk maken.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Klopt: kinderen in de fabriek.",
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders."
+      ],
+      "uh": "Kinderarbeid: kinderen in de fabriek."
+     },
+     {
+      "v": "Machines namen het handwerk over en de productie schoot omhoog. Welk begrip past hierbij?",
+      "o": [
+       "Stoommachine",
+       "Massaproductie",
+       "Kapitalisme",
+       "Industriële revolutie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Machines namen het handwerk over en de productie schoot omhoog. Dat past bij Industriële revolutie: productie met machines.",
+      "uo": [
+       "Nee, dat hoort bij Stoommachine: machine op stoom.",
+       "Nee, dat hoort bij Massaproductie: veel tegelijk maken.",
+       "Nee, dat hoort bij Kapitalisme: bezit en winst.",
+       "Klopt: productie met machines."
+      ],
+      "uh": "Industriële revolutie: productie met machines."
+     },
+     {
+      "v": "Jonge kinderen werkten twaalf uur per dag in de fabriek. Om welk begrip gaat het?",
+      "o": [
+       "Kinderarbeid",
+       "Sociale kwestie",
+       "Socialisme",
+       "Staking"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Jonge kinderen werkten twaalf uur per dag in de fabriek. Dat past bij Kinderarbeid: kinderen in de fabriek.",
+      "uo": [
+       "Klopt: kinderen in de fabriek.",
+       "Nee, dat hoort bij Sociale kwestie: ellende van arbeiders.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Staking: het werk neerleggen."
+      ],
+      "uh": "Kinderarbeid: kinderen in de fabriek."
+     },
+     {
+      "v": "De uitvinding die machines op stoomkracht liet werken. Welk begrip herken je hier?",
+      "o": [
+       "Kinderarbeid",
+       "Stoommachine",
+       "Massaproductie",
+       "Vakbond"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De uitvinding die machines op stoomkracht liet werken. Dat past bij Stoommachine: machine op stoom.",
+      "uo": [
+       "Nee, dat hoort bij Kinderarbeid: kinderen in de fabriek.",
+       "Klopt: machine op stoom.",
+       "Nee, dat hoort bij Massaproductie: veel tegelijk maken.",
+       "Nee, dat hoort bij Vakbond: komt op voor arbeiders."
+      ],
+      "uh": "Stoommachine: machine op stoom."
+     },
+     {
+      "v": "Een stroming die opkomt voor gelijkheid en de arbeiders. Wat is hier aan de hand?",
+      "o": [
+       "Staking",
+       "Kapitalisme",
+       "Socialisme",
+       "Arbeider"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een stroming die opkomt voor gelijkheid en de arbeiders. Dat past bij Socialisme: gelijkheid voor arbeiders.",
+      "uo": [
+       "Nee, dat hoort bij Staking: het werk neerleggen.",
+       "Nee, dat hoort bij Kapitalisme: bezit en winst.",
+       "Klopt: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Arbeider: fabriekswerker."
+      ],
+      "uh": "Socialisme: gelijkheid voor arbeiders."
      }
     ],
     "begrippen": [
@@ -32228,6 +33596,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Voor een verzekering»."
       ],
       "uh": "Voor een verzekering: Premie betaal je voor een verzekering."
+     },
+     {
+      "v": "Het inkomen dat je krijgt nadat je gestopt bent met werken. Welk begrip past hierbij?",
+      "o": [
+       "Werkloosheid",
+       "AOW",
+       "Solidariteit",
+       "Pensioen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het inkomen dat je krijgt nadat je gestopt bent met werken. Dat past bij Pensioen: inkomen na je werk.",
+      "uo": [
+       "Nee, dat hoort bij Werkloosheid: geen werk hebben.",
+       "Nee, dat hoort bij AOW: staatspensioen.",
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen.",
+       "Klopt: inkomen na je werk."
+      ],
+      "uh": "Pensioen: inkomen na je werk."
+     },
+     {
+      "v": "Een afspraak die je beschermt tegen de kosten van tegenslag. Om welk begrip gaat het?",
+      "o": [
+       "Verzekering",
+       "Solidariteit",
+       "Uitkering",
+       "Werkloosheid"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een afspraak die je beschermt tegen de kosten van tegenslag. Dat past bij Verzekering: bescherming tegen risico.",
+      "uo": [
+       "Klopt: bescherming tegen risico.",
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Werkloosheid: geen werk hebben."
+      ],
+      "uh": "Verzekering: bescherming tegen risico."
+     },
+     {
+      "v": "Wie geen enkel ander inkomen heeft, kan hierop terugvallen. Welk begrip herken je hier?",
+      "o": [
+       "Uitkering",
+       "Bijstand",
+       "Solidariteit",
+       "AOW"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Wie geen enkel ander inkomen heeft, kan hierop terugvallen. Dat past bij Bijstand: laatste vangnet.",
+      "uo": [
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Klopt: laatste vangnet.",
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen.",
+       "Nee, dat hoort bij AOW: staatspensioen."
+      ],
+      "uh": "Bijstand: laatste vangnet."
+     },
+     {
+      "v": "Iets dat de overheid voor alle burgers regelt. Wat is hier aan de hand?",
+      "o": [
+       "Pensioen",
+       "Uitkering",
+       "Collectieve voorziening",
+       "Sociale zekerheid"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Iets dat de overheid voor alle burgers regelt. Dat past bij Collectieve voorziening: voor iedereen geregeld.",
+      "uo": [
+       "Nee, dat hoort bij Pensioen: inkomen na je werk.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Klopt: voor iedereen geregeld.",
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag."
+      ],
+      "uh": "Collectieve voorziening: voor iedereen geregeld."
+     },
+     {
+      "v": "De situatie waarin mensen geen werk hebben. Welk begrip past hierbij?",
+      "o": [
+       "Verzekering",
+       "Bijstand",
+       "Premie",
+       "Werkloosheid"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De situatie waarin mensen geen werk hebben. Dat past bij Werkloosheid: geen werk hebben.",
+      "uo": [
+       "Nee, dat hoort bij Verzekering: bescherming tegen risico.",
+       "Nee, dat hoort bij Bijstand: laatste vangnet.",
+       "Nee, dat hoort bij Premie: bedrag voor verzekering.",
+       "Klopt: geen werk hebben."
+      ],
+      "uh": "Werkloosheid: geen werk hebben."
+     },
+     {
+      "v": "De overheid regelt onderwijs en wegen voor iedereen samen. Om welk begrip gaat het?",
+      "o": [
+       "Collectieve voorziening",
+       "Uitkering",
+       "Pensioen",
+       "Sociale zekerheid"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De overheid regelt onderwijs en wegen voor iedereen samen. Dat past bij Collectieve voorziening: voor iedereen geregeld.",
+      "uo": [
+       "Klopt: voor iedereen geregeld.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Pensioen: inkomen na je werk.",
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag."
+      ],
+      "uh": "Collectieve voorziening: voor iedereen geregeld."
+     },
+     {
+      "v": "Gezonde mensen betalen mee zodat zieken geholpen kunnen worden. Welk begrip herken je hier?",
+      "o": [
+       "Verzekering",
+       "Solidariteit",
+       "Premie",
+       "Pensioen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Gezonde mensen betalen mee zodat zieken geholpen kunnen worden. Dat past bij Solidariteit: samen risico's dragen.",
+      "uo": [
+       "Nee, dat hoort bij Verzekering: bescherming tegen risico.",
+       "Klopt: samen risico's dragen.",
+       "Nee, dat hoort bij Premie: bedrag voor verzekering.",
+       "Nee, dat hoort bij Pensioen: inkomen na je werk."
+      ],
+      "uh": "Solidariteit: samen risico's dragen."
+     },
+     {
+      "v": "Een staat die voor het welzijn van zijn burgers zorgt. Wat is hier aan de hand?",
+      "o": [
+       "Collectieve voorziening",
+       "Werkloosheid",
+       "Verzorgingsstaat",
+       "Uitkering"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een staat die voor het welzijn van zijn burgers zorgt. Dat past bij Verzorgingsstaat: staat zorgt voor burgers.",
+      "uo": [
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Werkloosheid: geen werk hebben.",
+       "Klopt: staat zorgt voor burgers.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen."
+      ],
+      "uh": "Verzorgingsstaat: staat zorgt voor burgers."
+     },
+     {
+      "v": "Het maandelijkse bedrag dat je voor je verzekering betaalt. Welk begrip past hierbij?",
+      "o": [
+       "Sociale zekerheid",
+       "Uitkering",
+       "Verzorgingsstaat",
+       "Premie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het maandelijkse bedrag dat je voor je verzekering betaalt. Dat past bij Premie: bedrag voor verzekering.",
+      "uo": [
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Verzorgingsstaat: staat zorgt voor burgers.",
+       "Klopt: bedrag voor verzekering."
+      ],
+      "uh": "Premie: bedrag voor verzekering."
+     },
+     {
+      "v": "De staat regelt zorg, onderwijs en uitkeringen voor iedereen. Om welk begrip gaat het?",
+      "o": [
+       "Verzorgingsstaat",
+       "Werkloosheid",
+       "Collectieve voorziening",
+       "Uitkering"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De staat regelt zorg, onderwijs en uitkeringen voor iedereen. Dat past bij Verzorgingsstaat: staat zorgt voor burgers.",
+      "uo": [
+       "Klopt: staat zorgt voor burgers.",
+       "Nee, dat hoort bij Werkloosheid: geen werk hebben.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen."
+      ],
+      "uh": "Verzorgingsstaat: staat zorgt voor burgers."
+     },
+     {
+      "v": "Je betaalt maandelijks zodat schade later vergoed wordt. Welk begrip herken je hier?",
+      "o": [
+       "Solidariteit",
+       "Verzekering",
+       "Uitkering",
+       "Werkloosheid"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je betaalt maandelijks zodat schade later vergoed wordt. Dat past bij Verzekering: bescherming tegen risico.",
+      "uo": [
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen.",
+       "Klopt: bescherming tegen risico.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Werkloosheid: geen werk hebben."
+      ],
+      "uh": "Verzekering: bescherming tegen risico."
+     },
+     {
+      "v": "Samen de risico's dragen, sterke schouders steunen de zwakke. Wat is hier aan de hand?",
+      "o": [
+       "Collectieve voorziening",
+       "Uitkering",
+       "Solidariteit",
+       "AOW"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Samen de risico's dragen, sterke schouders steunen de zwakke. Dat past bij Solidariteit: samen risico's dragen.",
+      "uo": [
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Klopt: samen risico's dragen.",
+       "Nee, dat hoort bij AOW: staatspensioen."
+      ],
+      "uh": "Solidariteit: samen risico's dragen."
+     },
+     {
+      "v": "Het laatste vangnet voor wie geen inkomen heeft. Welk begrip past hierbij?",
+      "o": [
+       "AOW",
+       "Uitkering",
+       "Solidariteit",
+       "Bijstand"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het laatste vangnet voor wie geen inkomen heeft. Dat past bij Bijstand: laatste vangnet.",
+      "uo": [
+       "Nee, dat hoort bij AOW: staatspensioen.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen.",
+       "Klopt: laatste vangnet."
+      ],
+      "uh": "Bijstand: laatste vangnet."
+     },
+     {
+      "v": "Na het sluiten van de fabriek zaten veel mensen zonder baan. Om welk begrip gaat het?",
+      "o": [
+       "Werkloosheid",
+       "Uitkering",
+       "Collectieve voorziening",
+       "Solidariteit"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Na het sluiten van de fabriek zaten veel mensen zonder baan. Dat past bij Werkloosheid: geen werk hebben.",
+      "uo": [
+       "Klopt: geen werk hebben.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen."
+      ],
+      "uh": "Werkloosheid: geen werk hebben."
+     },
+     {
+      "v": "Geld van de overheid voor wie te weinig inkomen heeft. Welk begrip herken je hier?",
+      "o": [
+       "Bijstand",
+       "Uitkering",
+       "Pensioen",
+       "Solidariteit"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Geld van de overheid voor wie te weinig inkomen heeft. Dat past bij Uitkering: geld bij te weinig inkomen.",
+      "uo": [
+       "Nee, dat hoort bij Bijstand: laatste vangnet.",
+       "Klopt: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Pensioen: inkomen na je werk.",
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen."
+      ],
+      "uh": "Uitkering: geld bij te weinig inkomen."
+     },
+     {
+      "v": "Wie geen werk heeft, krijgt geld van de overheid. Wat is hier aan de hand?",
+      "o": [
+       "Pensioen",
+       "Bijstand",
+       "Uitkering",
+       "AOW"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Wie geen werk heeft, krijgt geld van de overheid. Dat past bij Uitkering: geld bij te weinig inkomen.",
+      "uo": [
+       "Nee, dat hoort bij Pensioen: inkomen na je werk.",
+       "Nee, dat hoort bij Bijstand: laatste vangnet.",
+       "Klopt: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij AOW: staatspensioen."
+      ],
+      "uh": "Uitkering: geld bij te weinig inkomen."
+     },
+     {
+      "v": "Het stelsel dat inkomen geeft bij tegenslag. Welk begrip past hierbij?",
+      "o": [
+       "Collectieve voorziening",
+       "Uitkering",
+       "Solidariteit",
+       "Sociale zekerheid"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het stelsel dat inkomen geeft bij tegenslag. Dat past bij Sociale zekerheid: inkomen bij tegenslag.",
+      "uo": [
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen.",
+       "Klopt: inkomen bij tegenslag."
+      ],
+      "uh": "Sociale zekerheid: inkomen bij tegenslag."
+     },
+     {
+      "v": "Als je stopt met werken, ontvang je toch nog inkomen. Om welk begrip gaat het?",
+      "o": [
+       "Pensioen",
+       "AOW",
+       "Uitkering",
+       "Collectieve voorziening"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Als je stopt met werken, ontvang je toch nog inkomen. Dat past bij Pensioen: inkomen na je werk.",
+      "uo": [
+       "Klopt: inkomen na je werk.",
+       "Nee, dat hoort bij AOW: staatspensioen.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld."
+      ],
+      "uh": "Pensioen: inkomen na je werk."
+     },
+     {
+      "v": "Een wet die arbeiders beschermt, zoals een verbod op kinderarbeid. Welk begrip herken je hier?",
+      "o": [
+       "Sociale zekerheid",
+       "Sociale wet",
+       "AOW",
+       "Solidariteit"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een wet die arbeiders beschermt, zoals een verbod op kinderarbeid. Dat past bij Sociale wet: beschermende wet.",
+      "uo": [
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag.",
+       "Klopt: beschermende wet.",
+       "Nee, dat hoort bij AOW: staatspensioen.",
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen."
+      ],
+      "uh": "Sociale wet: beschermende wet."
+     },
+     {
+      "v": "Het staatspensioen voor ouderen. Wat is hier aan de hand?",
+      "o": [
+       "Collectieve voorziening",
+       "Premie",
+       "AOW",
+       "Verzekering"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het staatspensioen voor ouderen. Dat past bij AOW: staatspensioen.",
+      "uo": [
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Premie: bedrag voor verzekering.",
+       "Klopt: staatspensioen.",
+       "Nee, dat hoort bij Verzekering: bescherming tegen risico."
+      ],
+      "uh": "AOW: staatspensioen."
+     },
+     {
+      "v": "Wie ziek of werkloos wordt, valt niet zonder inkomen. Welk begrip past hierbij?",
+      "o": [
+       "Collectieve voorziening",
+       "Verzorgingsstaat",
+       "Pensioen",
+       "Sociale zekerheid"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Wie ziek of werkloos wordt, valt niet zonder inkomen. Dat past bij Sociale zekerheid: inkomen bij tegenslag.",
+      "uo": [
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Verzorgingsstaat: staat zorgt voor burgers.",
+       "Nee, dat hoort bij Pensioen: inkomen na je werk.",
+       "Klopt: inkomen bij tegenslag."
+      ],
+      "uh": "Sociale zekerheid: inkomen bij tegenslag."
+     },
+     {
+      "v": "Iedereen krijgt vanaf een bepaalde leeftijd een pensioen van de staat. Om welk begrip gaat het?",
+      "o": [
+       "AOW",
+       "Pensioen",
+       "Solidariteit",
+       "Uitkering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Iedereen krijgt vanaf een bepaalde leeftijd een pensioen van de staat. Dat past bij AOW: staatspensioen.",
+      "uo": [
+       "Klopt: staatspensioen.",
+       "Nee, dat hoort bij Pensioen: inkomen na je werk.",
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen."
+      ],
+      "uh": "AOW: staatspensioen."
+     },
+     {
+      "v": "Een wet die mensen beschermt tegen armoede of uitbuiting. Welk begrip herken je hier?",
+      "o": [
+       "Pensioen",
+       "Sociale wet",
+       "Collectieve voorziening",
+       "Verzorgingsstaat"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een wet die mensen beschermt tegen armoede of uitbuiting. Dat past bij Sociale wet: beschermende wet.",
+      "uo": [
+       "Nee, dat hoort bij Pensioen: inkomen na je werk.",
+       "Klopt: beschermende wet.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Verzorgingsstaat: staat zorgt voor burgers."
+      ],
+      "uh": "Sociale wet: beschermende wet."
+     },
+     {
+      "v": "Het bedrag dat je periodiek voor een verzekering betaalt. Wat is hier aan de hand?",
+      "o": [
+       "Solidariteit",
+       "Uitkering",
+       "Premie",
+       "AOW"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het bedrag dat je periodiek voor een verzekering betaalt. Dat past bij Premie: bedrag voor verzekering.",
+      "uo": [
+       "Nee, dat hoort bij Solidariteit: samen risico's dragen.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Klopt: bedrag voor verzekering.",
+       "Nee, dat hoort bij AOW: staatspensioen."
+      ],
+      "uh": "Premie: bedrag voor verzekering."
      }
     ],
     "begrippen": [
@@ -32504,6 +34328,443 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Economische groei»."
       ],
       "uh": "Economische groei: De economie groeide sterk."
+     },
+     {
+      "v": "Het minder belangrijk worden van religie. Welk begrip past hierbij?",
+      "o": [
+       "Consumptiemaatschappij",
+       "Protestbeweging",
+       "Welvaart",
+       "Secularisatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het minder belangrijk worden van religie. Dat past bij Secularisatie: religie wordt minder.",
+      "uo": [
+       "Nee, dat hoort bij Consumptiemaatschappij: veel kopen.",
+       "Nee, dat hoort bij Protestbeweging: groep die zich verzet.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt.",
+       "Klopt: religie wordt minder."
+      ],
+      "uh": "Secularisatie: religie wordt minder."
+     },
+     {
+      "v": "Het losser worden van groepen en het individu voorop. Om welk begrip gaat het?",
+      "o": [
+       "Individualisering",
+       "Democratisering",
+       "Secularisatie",
+       "Consumptiemaatschappij"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het losser worden van groepen en het individu voorop. Dat past bij Individualisering: het individu voorop.",
+      "uo": [
+       "Klopt: het individu voorop.",
+       "Nee, dat hoort bij Democratisering: meer inspraak.",
+       "Nee, dat hoort bij Secularisatie: religie wordt minder.",
+       "Nee, dat hoort bij Consumptiemaatschappij: veel kopen."
+      ],
+      "uh": "Individualisering: het individu voorop."
+     },
+     {
+      "v": "Studenten en werknemers eisten meer inspraak in het bestuur. Welk begrip herken je hier?",
+      "o": [
+       "Ontzuiling",
+       "Democratisering",
+       "Generatiekloof",
+       "Protestbeweging"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Studenten en werknemers eisten meer inspraak in het bestuur. Dat past bij Democratisering: meer inspraak.",
+      "uo": [
+       "Nee, dat hoort bij Ontzuiling: zuilen verdwijnen.",
+       "Klopt: meer inspraak.",
+       "Nee, dat hoort bij Generatiekloof: kloof jong en oud.",
+       "Nee, dat hoort bij Protestbeweging: groep die zich verzet."
+      ],
+      "uh": "Democratisering: meer inspraak."
+     },
+     {
+      "v": "Het verschil in opvattingen tussen jong en oud. Wat is hier aan de hand?",
+      "o": [
+       "Emancipatie",
+       "Jongerencultuur",
+       "Generatiekloof",
+       "Massamedia"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het verschil in opvattingen tussen jong en oud. Dat past bij Generatiekloof: kloof jong en oud.",
+      "uo": [
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Nee, dat hoort bij Jongerencultuur: eigen stijl van jongeren.",
+       "Klopt: kloof jong en oud.",
+       "Nee, dat hoort bij Massamedia: bereiken velen tegelijk."
+      ],
+      "uh": "Generatiekloof: kloof jong en oud."
+     },
+     {
+      "v": "Een groep die zich openlijk tegen iets verzet. Welk begrip past hierbij?",
+      "o": [
+       "Welvaart",
+       "Ontzuiling",
+       "Generatiekloof",
+       "Protestbeweging"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een groep die zich openlijk tegen iets verzet. Dat past bij Protestbeweging: groep die zich verzet.",
+      "uo": [
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt.",
+       "Nee, dat hoort bij Ontzuiling: zuilen verdwijnen.",
+       "Nee, dat hoort bij Generatiekloof: kloof jong en oud.",
+       "Klopt: groep die zich verzet."
+      ],
+      "uh": "Protestbeweging: groep die zich verzet."
+     },
+     {
+      "v": "Ouders en hun tienerkinderen begrepen elkaars wereld niet meer. Om welk begrip gaat het?",
+      "o": [
+       "Generatiekloof",
+       "Jongerencultuur",
+       "Emancipatie",
+       "Massamedia"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Ouders en hun tienerkinderen begrepen elkaars wereld niet meer. Dat past bij Generatiekloof: kloof jong en oud.",
+      "uo": [
+       "Klopt: kloof jong en oud.",
+       "Nee, dat hoort bij Jongerencultuur: eigen stijl van jongeren.",
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Nee, dat hoort bij Massamedia: bereiken velen tegelijk."
+      ],
+      "uh": "Generatiekloof: kloof jong en oud."
+     },
+     {
+      "v": "Mensen kochten steeds meer: auto's, televisies en wasmachines. Welk begrip herken je hier?",
+      "o": [
+       "Verzuiling",
+       "Consumptiemaatschappij",
+       "Jongerencultuur",
+       "Democratisering"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Mensen kochten steeds meer: auto's, televisies en wasmachines. Dat past bij Consumptiemaatschappij: veel kopen.",
+      "uo": [
+       "Nee, dat hoort bij Verzuiling: samenleving in zuilen.",
+       "Klopt: veel kopen.",
+       "Nee, dat hoort bij Jongerencultuur: eigen stijl van jongeren.",
+       "Nee, dat hoort bij Democratisering: meer inspraak."
+      ],
+      "uh": "Consumptiemaatschappij: veel kopen."
+     },
+     {
+      "v": "Het verdwijnen van de scheiding tussen de zuilen. Wat is hier aan de hand?",
+      "o": [
+       "Welvaart",
+       "Verzuiling",
+       "Ontzuiling",
+       "Generatiekloof"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het verdwijnen van de scheiding tussen de zuilen. Dat past bij Ontzuiling: zuilen verdwijnen.",
+      "uo": [
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt.",
+       "Nee, dat hoort bij Verzuiling: samenleving in zuilen.",
+       "Klopt: zuilen verdwijnen.",
+       "Nee, dat hoort bij Generatiekloof: kloof jong en oud."
+      ],
+      "uh": "Ontzuiling: zuilen verdwijnen."
+     },
+     {
+      "v": "Televisie en kranten bereikten miljoenen mensen tegelijk. Welk begrip past hierbij?",
+      "o": [
+       "Verzuiling",
+       "Consumptiemaatschappij",
+       "Welvaart",
+       "Massamedia"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Televisie en kranten bereikten miljoenen mensen tegelijk. Dat past bij Massamedia: bereiken velen tegelijk.",
+      "uo": [
+       "Nee, dat hoort bij Verzuiling: samenleving in zuilen.",
+       "Nee, dat hoort bij Consumptiemaatschappij: veel kopen.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt.",
+       "Klopt: bereiken velen tegelijk."
+      ],
+      "uh": "Massamedia: bereiken velen tegelijk."
+     },
+     {
+      "v": "De aparte zuilen met eigen scholen en clubs vielen uit elkaar. Om welk begrip gaat het?",
+      "o": [
+       "Ontzuiling",
+       "Verzuiling",
+       "Welvaart",
+       "Generatiekloof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De aparte zuilen met eigen scholen en clubs vielen uit elkaar. Dat past bij Ontzuiling: zuilen verdwijnen.",
+      "uo": [
+       "Klopt: zuilen verdwijnen.",
+       "Nee, dat hoort bij Verzuiling: samenleving in zuilen.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt.",
+       "Nee, dat hoort bij Generatiekloof: kloof jong en oud."
+      ],
+      "uh": "Ontzuiling: zuilen verdwijnen."
+     },
+     {
+      "v": "Mensen gingen steeds meer hun eigen leven en keuzes voorop stellen. Welk begrip herken je hier?",
+      "o": [
+       "Ontzuiling",
+       "Individualisering",
+       "Protestbeweging",
+       "Generatiekloof"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Mensen gingen steeds meer hun eigen leven en keuzes voorop stellen. Dat past bij Individualisering: het individu voorop.",
+      "uo": [
+       "Nee, dat hoort bij Ontzuiling: zuilen verdwijnen.",
+       "Klopt: het individu voorop.",
+       "Nee, dat hoort bij Protestbeweging: groep die zich verzet.",
+       "Nee, dat hoort bij Generatiekloof: kloof jong en oud."
+      ],
+      "uh": "Individualisering: het individu voorop."
+     },
+     {
+      "v": "Een samenleving waarin veel gekocht en verbruikt wordt. Wat is hier aan de hand?",
+      "o": [
+       "Protestbeweging",
+       "Welvaart",
+       "Consumptiemaatschappij",
+       "Jongerencultuur"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een samenleving waarin veel gekocht en verbruikt wordt. Dat past bij Consumptiemaatschappij: veel kopen.",
+      "uo": [
+       "Nee, dat hoort bij Protestbeweging: groep die zich verzet.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt.",
+       "Klopt: veel kopen.",
+       "Nee, dat hoort bij Jongerencultuur: eigen stijl van jongeren."
+      ],
+      "uh": "Consumptiemaatschappij: veel kopen."
+     },
+     {
+      "v": "Het krijgen van meer inspraak en zeggenschap. Welk begrip past hierbij?",
+      "o": [
+       "Protestbeweging",
+       "Ontzuiling",
+       "Generatiekloof",
+       "Democratisering"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het krijgen van meer inspraak en zeggenschap. Dat past bij Democratisering: meer inspraak.",
+      "uo": [
+       "Nee, dat hoort bij Protestbeweging: groep die zich verzet.",
+       "Nee, dat hoort bij Ontzuiling: zuilen verdwijnen.",
+       "Nee, dat hoort bij Generatiekloof: kloof jong en oud.",
+       "Klopt: meer inspraak."
+      ],
+      "uh": "Democratisering: meer inspraak."
+     },
+     {
+      "v": "Studenten gingen de straat op tegen de oorlog en het gezag. Om welk begrip gaat het?",
+      "o": [
+       "Protestbeweging",
+       "Jongerencultuur",
+       "Ontzuiling",
+       "Consumptiemaatschappij"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Studenten gingen de straat op tegen de oorlog en het gezag. Dat past bij Protestbeweging: groep die zich verzet.",
+      "uo": [
+       "Klopt: groep die zich verzet.",
+       "Nee, dat hoort bij Jongerencultuur: eigen stijl van jongeren.",
+       "Nee, dat hoort bij Ontzuiling: zuilen verdwijnen.",
+       "Nee, dat hoort bij Consumptiemaatschappij: veel kopen."
+      ],
+      "uh": "Protestbeweging: groep die zich verzet."
+     },
+     {
+      "v": "De eigen stijl en smaak van jongeren. Welk begrip herken je hier?",
+      "o": [
+       "Ontzuiling",
+       "Jongerencultuur",
+       "Generatiekloof",
+       "Welvaart"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De eigen stijl en smaak van jongeren. Dat past bij Jongerencultuur: eigen stijl van jongeren.",
+      "uo": [
+       "Nee, dat hoort bij Ontzuiling: zuilen verdwijnen.",
+       "Klopt: eigen stijl van jongeren.",
+       "Nee, dat hoort bij Generatiekloof: kloof jong en oud.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt."
+      ],
+      "uh": "Jongerencultuur: eigen stijl van jongeren."
+     },
+     {
+      "v": "Jongeren kregen hun eigen muziek, kleding en idolen. Wat is hier aan de hand?",
+      "o": [
+       "Ontzuiling",
+       "Protestbeweging",
+       "Jongerencultuur",
+       "Consumptiemaatschappij"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Jongeren kregen hun eigen muziek, kleding en idolen. Dat past bij Jongerencultuur: eigen stijl van jongeren.",
+      "uo": [
+       "Nee, dat hoort bij Ontzuiling: zuilen verdwijnen.",
+       "Nee, dat hoort bij Protestbeweging: groep die zich verzet.",
+       "Klopt: eigen stijl van jongeren.",
+       "Nee, dat hoort bij Consumptiemaatschappij: veel kopen."
+      ],
+      "uh": "Jongerencultuur: eigen stijl van jongeren."
+     },
+     {
+      "v": "De samenleving verdeeld in aparte groepen met eigen voorzieningen. Welk begrip past hierbij?",
+      "o": [
+       "Emancipatie",
+       "Individualisering",
+       "Consumptiemaatschappij",
+       "Verzuiling"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De samenleving verdeeld in aparte groepen met eigen voorzieningen. Dat past bij Verzuiling: samenleving in zuilen.",
+      "uo": [
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Nee, dat hoort bij Individualisering: het individu voorop.",
+       "Nee, dat hoort bij Consumptiemaatschappij: veel kopen.",
+       "Klopt: samenleving in zuilen."
+      ],
+      "uh": "Verzuiling: samenleving in zuilen."
+     },
+     {
+      "v": "Steeds minder mensen gingen nog naar de kerk. Om welk begrip gaat het?",
+      "o": [
+       "Secularisatie",
+       "Ontzuiling",
+       "Emancipatie",
+       "Welvaart"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Steeds minder mensen gingen nog naar de kerk. Dat past bij Secularisatie: religie wordt minder.",
+      "uo": [
+       "Klopt: religie wordt minder.",
+       "Nee, dat hoort bij Ontzuiling: zuilen verdwijnen.",
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt."
+      ],
+      "uh": "Secularisatie: religie wordt minder."
+     },
+     {
+      "v": "Vrouwen en minderheden streden voor gelijke rechten. Welk begrip herken je hier?",
+      "o": [
+       "Democratisering",
+       "Emancipatie",
+       "Protestbeweging",
+       "Welvaart"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Vrouwen en minderheden streden voor gelijke rechten. Dat past bij Emancipatie: streven naar gelijkheid.",
+      "uo": [
+       "Nee, dat hoort bij Democratisering: meer inspraak.",
+       "Klopt: streven naar gelijkheid.",
+       "Nee, dat hoort bij Protestbeweging: groep die zich verzet.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt."
+      ],
+      "uh": "Emancipatie: streven naar gelijkheid."
+     },
+     {
+      "v": "Hoe goed mensen in hun behoeften kunnen voorzien. Wat is hier aan de hand?",
+      "o": [
+       "Verzuiling",
+       "Ontzuiling",
+       "Welvaart",
+       "Individualisering"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Hoe goed mensen in hun behoeften kunnen voorzien. Dat past bij Welvaart: hoe goed men rondkomt.",
+      "uo": [
+       "Nee, dat hoort bij Verzuiling: samenleving in zuilen.",
+       "Nee, dat hoort bij Ontzuiling: zuilen verdwijnen.",
+       "Klopt: hoe goed men rondkomt.",
+       "Nee, dat hoort bij Individualisering: het individu voorop."
+      ],
+      "uh": "Welvaart: hoe goed men rondkomt."
+     },
+     {
+      "v": "Na de oorlog kregen mensen meer geld en spullen dan ooit. Om welk begrip gaat het?",
+      "o": [
+       "Generatiekloof",
+       "Consumptiemaatschappij",
+       "Jongerencultuur",
+       "Welvaart"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Na de oorlog kregen mensen meer geld en spullen dan ooit. Dat past bij Welvaart: hoe goed men rondkomt.",
+      "uo": [
+       "Nee, dat hoort bij Generatiekloof: kloof jong en oud.",
+       "Nee, dat hoort bij Consumptiemaatschappij: veel kopen.",
+       "Nee, dat hoort bij Jongerencultuur: eigen stijl van jongeren.",
+       "Klopt: hoe goed men rondkomt."
+      ],
+      "uh": "Welvaart: hoe goed men rondkomt."
+     },
+     {
+      "v": "Het streven van een groep naar gelijke rechten. Welk begrip herken je hier?",
+      "o": [
+       "Emancipatie",
+       "Democratisering",
+       "Protestbeweging",
+       "Welvaart"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het streven van een groep naar gelijke rechten. Dat past bij Emancipatie: streven naar gelijkheid.",
+      "uo": [
+       "Klopt: streven naar gelijkheid.",
+       "Nee, dat hoort bij Democratisering: meer inspraak.",
+       "Nee, dat hoort bij Protestbeweging: groep die zich verzet.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt."
+      ],
+      "uh": "Emancipatie: streven naar gelijkheid."
+     },
+     {
+      "v": "Media die heel veel mensen tegelijk bereiken. Wat is hier aan de hand?",
+      "o": [
+       "Consumptiemaatschappij",
+       "Massamedia",
+       "Welvaart",
+       "Verzuiling"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Media die heel veel mensen tegelijk bereiken. Dat past bij Massamedia: bereiken velen tegelijk.",
+      "uo": [
+       "Nee, dat hoort bij Consumptiemaatschappij: veel kopen.",
+       "Klopt: bereiken velen tegelijk.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt.",
+       "Nee, dat hoort bij Verzuiling: samenleving in zuilen."
+      ],
+      "uh": "Massamedia: bereiken velen tegelijk."
      }
     ],
     "begrippen": [
@@ -32780,6 +35041,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Een groot landbouwbedrijf in een kolonie»."
       ],
       "uh": "Een groot landbouwbedrijf in een kolonie."
+     },
+     {
+      "v": "De militaire acties van Nederland in Indië. Welk begrip past hierbij?",
+      "o": [
+       "Onafhankelijkheid",
+       "Dekolonisatie",
+       "Suriname",
+       "Politionele acties"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De militaire acties van Nederland in Indië. Dat past bij Politionele acties: militaire acties in Indië.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijkheid: zelfstandig worden.",
+       "Nee, dat hoort bij Dekolonisatie: koloniën worden vrij.",
+       "Nee, dat hoort bij Suriname: kolonie, vrij in 1975.",
+       "Klopt: militaire acties in Indië."
+      ],
+      "uh": "Politionele acties: militaire acties in Indië."
+     },
+     {
+      "v": "Een groot landbouwbedrijf in een kolonie. Om welk begrip gaat het?",
+      "o": [
+       "Plantage",
+       "Dekolonisatie",
+       "Kolonisatie",
+       "Uitbuiting"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een groot landbouwbedrijf in een kolonie. Dat past bij Plantage: landbouwbedrijf in kolonie.",
+      "uo": [
+       "Klopt: landbouwbedrijf in kolonie.",
+       "Nee, dat hoort bij Dekolonisatie: koloniën worden vrij.",
+       "Nee, dat hoort bij Kolonisatie: gebied in bezit nemen.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst."
+      ],
+      "uh": "Plantage: landbouwbedrijf in kolonie."
+     },
+     {
+      "v": "Deze kolonie in Zuid-Amerika werd in 1975 een vrij land. Welk begrip herken je hier?",
+      "o": [
+       "Nederlands-Indië",
+       "Suriname",
+       "Uitbuiting",
+       "Nationalisme"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Deze kolonie in Zuid-Amerika werd in 1975 een vrij land. Dat past bij Suriname: kolonie, vrij in 1975.",
+      "uo": [
+       "Nee, dat hoort bij Nederlands-Indië: kolonie, nu Indonesië.",
+       "Klopt: kolonie, vrij in 1975.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst.",
+       "Nee, dat hoort bij Nationalisme: streven naar eigen natie."
+      ],
+      "uh": "Suriname: kolonie, vrij in 1975."
+     },
+     {
+      "v": "Het bezitten van mensen die gedwongen moeten werken. Wat is hier aan de hand?",
+      "o": [
+       "Nederlands-Indië",
+       "Onafhankelijkheid",
+       "Slavernij",
+       "Kolonie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het bezitten van mensen die gedwongen moeten werken. Dat past bij Slavernij: mensen als bezit.",
+      "uo": [
+       "Nee, dat hoort bij Nederlands-Indië: kolonie, nu Indonesië.",
+       "Nee, dat hoort bij Onafhankelijkheid: zelfstandig worden.",
+       "Klopt: mensen als bezit.",
+       "Nee, dat hoort bij Kolonie: bestuurd gebied."
+      ],
+      "uh": "Slavernij: mensen als bezit."
+     },
+     {
+      "v": "Het zelfstandig worden van een gebied. Welk begrip past hierbij?",
+      "o": [
+       "Politionele acties",
+       "Nationalisme",
+       "Suriname",
+       "Onafhankelijkheid"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het zelfstandig worden van een gebied. Dat past bij Onafhankelijkheid: zelfstandig worden.",
+      "uo": [
+       "Nee, dat hoort bij Politionele acties: militaire acties in Indië.",
+       "Nee, dat hoort bij Nationalisme: streven naar eigen natie.",
+       "Nee, dat hoort bij Suriname: kolonie, vrij in 1975.",
+       "Klopt: zelfstandig worden."
+      ],
+      "uh": "Onafhankelijkheid: zelfstandig worden."
+     },
+     {
+      "v": "Mensen werden als bezit verkocht en gedwongen te werken. Om welk begrip gaat het?",
+      "o": [
+       "Slavernij",
+       "Onafhankelijkheid",
+       "Nederlands-Indië",
+       "Kolonie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Mensen werden als bezit verkocht en gedwongen te werken. Dat past bij Slavernij: mensen als bezit.",
+      "uo": [
+       "Klopt: mensen als bezit.",
+       "Nee, dat hoort bij Onafhankelijkheid: zelfstandig worden.",
+       "Nee, dat hoort bij Nederlands-Indië: kolonie, nu Indonesië.",
+       "Nee, dat hoort bij Kolonie: bestuurd gebied."
+      ],
+      "uh": "Slavernij: mensen als bezit."
+     },
+     {
+      "v": "De bevolking moest hard werken terwijl de winst naar het moederland ging. Welk begrip herken je hier?",
+      "o": [
+       "Plantage",
+       "Uitbuiting",
+       "Nederlands-Indië",
+       "Slavernij"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De bevolking moest hard werken terwijl de winst naar het moederland ging. Dat past bij Uitbuiting: misbruik voor winst.",
+      "uo": [
+       "Nee, dat hoort bij Plantage: landbouwbedrijf in kolonie.",
+       "Klopt: misbruik voor winst.",
+       "Nee, dat hoort bij Nederlands-Indië: kolonie, nu Indonesië.",
+       "Nee, dat hoort bij Slavernij: mensen als bezit."
+      ],
+      "uh": "Uitbuiting: misbruik voor winst."
+     },
+     {
+      "v": "Het in bezit nemen en besturen van een ander gebied. Wat is hier aan de hand?",
+      "o": [
+       "Slavernij",
+       "Politionele acties",
+       "Kolonisatie",
+       "Kolonie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het in bezit nemen en besturen van een ander gebied. Dat past bij Kolonisatie: gebied in bezit nemen.",
+      "uo": [
+       "Nee, dat hoort bij Slavernij: mensen als bezit.",
+       "Nee, dat hoort bij Politionele acties: militaire acties in Indië.",
+       "Klopt: gebied in bezit nemen.",
+       "Nee, dat hoort bij Kolonie: bestuurd gebied."
+      ],
+      "uh": "Kolonisatie: gebied in bezit nemen."
+     },
+     {
+      "v": "Na de onafhankelijkheid verhuisden veel mensen naar Nederland. Welk begrip past hierbij?",
+      "o": [
+       "Slavernij",
+       "Uitbuiting",
+       "Nederlands-Indië",
+       "Migratie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Na de onafhankelijkheid verhuisden veel mensen naar Nederland. Dat past bij Migratie: mensen verhuizen.",
+      "uo": [
+       "Nee, dat hoort bij Slavernij: mensen als bezit.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst.",
+       "Nee, dat hoort bij Nederlands-Indië: kolonie, nu Indonesië.",
+       "Klopt: mensen verhuizen."
+      ],
+      "uh": "Migratie: mensen verhuizen."
+     },
+     {
+      "v": "Een sterk land nam een ver gebied in bezit en ging het besturen. Om welk begrip gaat het?",
+      "o": [
+       "Kolonisatie",
+       "Dekolonisatie",
+       "Nationalisme",
+       "Uitbuiting"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een sterk land nam een ver gebied in bezit en ging het besturen. Dat past bij Kolonisatie: gebied in bezit nemen.",
+      "uo": [
+       "Klopt: gebied in bezit nemen.",
+       "Nee, dat hoort bij Dekolonisatie: koloniën worden vrij.",
+       "Nee, dat hoort bij Nationalisme: streven naar eigen natie.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst."
+      ],
+      "uh": "Kolonisatie: gebied in bezit nemen."
+     },
+     {
+      "v": "Op grote velden werd koffie of suiker verbouwd voor de export. Welk begrip herken je hier?",
+      "o": [
+       "Dekolonisatie",
+       "Plantage",
+       "Kolonisatie",
+       "Uitbuiting"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Op grote velden werd koffie of suiker verbouwd voor de export. Dat past bij Plantage: landbouwbedrijf in kolonie.",
+      "uo": [
+       "Nee, dat hoort bij Dekolonisatie: koloniën worden vrij.",
+       "Klopt: landbouwbedrijf in kolonie.",
+       "Nee, dat hoort bij Kolonisatie: gebied in bezit nemen.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst."
+      ],
+      "uh": "Plantage: landbouwbedrijf in kolonie."
+     },
+     {
+      "v": "Mensen of een gebied misbruiken voor eigen winst. Wat is hier aan de hand?",
+      "o": [
+       "Migratie",
+       "Plantage",
+       "Uitbuiting",
+       "Politionele acties"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Mensen of een gebied misbruiken voor eigen winst. Dat past bij Uitbuiting: misbruik voor winst.",
+      "uo": [
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Plantage: landbouwbedrijf in kolonie.",
+       "Klopt: misbruik voor winst.",
+       "Nee, dat hoort bij Politionele acties: militaire acties in Indië."
+      ],
+      "uh": "Uitbuiting: misbruik voor winst."
+     },
+     {
+      "v": "De kolonie die in 1975 onafhankelijk werd. Welk begrip past hierbij?",
+      "o": [
+       "Nationalisme",
+       "Nederlands-Indië",
+       "Uitbuiting",
+       "Suriname"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De kolonie die in 1975 onafhankelijk werd. Dat past bij Suriname: kolonie, vrij in 1975.",
+      "uo": [
+       "Nee, dat hoort bij Nationalisme: streven naar eigen natie.",
+       "Nee, dat hoort bij Nederlands-Indië: kolonie, nu Indonesië.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst.",
+       "Klopt: kolonie, vrij in 1975."
+      ],
+      "uh": "Suriname: kolonie, vrij in 1975."
+     },
+     {
+      "v": "Het gebied werd een eigen land, vrij van vreemd bestuur. Om welk begrip gaat het?",
+      "o": [
+       "Onafhankelijkheid",
+       "Kolonisatie",
+       "Uitbuiting",
+       "Slavernij"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het gebied werd een eigen land, vrij van vreemd bestuur. Dat past bij Onafhankelijkheid: zelfstandig worden.",
+      "uo": [
+       "Klopt: zelfstandig worden.",
+       "Nee, dat hoort bij Kolonisatie: gebied in bezit nemen.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst.",
+       "Nee, dat hoort bij Slavernij: mensen als bezit."
+      ],
+      "uh": "Onafhankelijkheid: zelfstandig worden."
+     },
+     {
+      "v": "De Nederlandse kolonie die nu Indonesië heet. Welk begrip herken je hier?",
+      "o": [
+       "Suriname",
+       "Nederlands-Indië",
+       "Politionele acties",
+       "Onafhankelijkheid"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De Nederlandse kolonie die nu Indonesië heet. Dat past bij Nederlands-Indië: kolonie, nu Indonesië.",
+      "uo": [
+       "Nee, dat hoort bij Suriname: kolonie, vrij in 1975.",
+       "Klopt: kolonie, nu Indonesië.",
+       "Nee, dat hoort bij Politionele acties: militaire acties in Indië.",
+       "Nee, dat hoort bij Onafhankelijkheid: zelfstandig worden."
+      ],
+      "uh": "Nederlands-Indië: kolonie, nu Indonesië."
+     },
+     {
+      "v": "Deze kolonie in Azië werd later het onafhankelijke Indonesië. Wat is hier aan de hand?",
+      "o": [
+       "Onafhankelijkheid",
+       "Suriname",
+       "Nederlands-Indië",
+       "Kolonisatie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Deze kolonie in Azië werd later het onafhankelijke Indonesië. Dat past bij Nederlands-Indië: kolonie, nu Indonesië.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijkheid: zelfstandig worden.",
+       "Nee, dat hoort bij Suriname: kolonie, vrij in 1975.",
+       "Klopt: kolonie, nu Indonesië.",
+       "Nee, dat hoort bij Kolonisatie: gebied in bezit nemen."
+      ],
+      "uh": "Nederlands-Indië: kolonie, nu Indonesië."
+     },
+     {
+      "v": "Een gebied dat door een vreemde mogendheid wordt bestuurd. Welk begrip past hierbij?",
+      "o": [
+       "Politionele acties",
+       "Migratie",
+       "Uitbuiting",
+       "Kolonie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een gebied dat door een vreemde mogendheid wordt bestuurd. Dat past bij Kolonie: bestuurd gebied.",
+      "uo": [
+       "Nee, dat hoort bij Politionele acties: militaire acties in Indië.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst.",
+       "Klopt: bestuurd gebied."
+      ],
+      "uh": "Kolonie: bestuurd gebied."
+     },
+     {
+      "v": "Nederland stuurde militairen naar Indië om het gezag te herstellen. Om welk begrip gaat het?",
+      "o": [
+       "Politionele acties",
+       "Dekolonisatie",
+       "Kolonie",
+       "Onafhankelijkheid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Nederland stuurde militairen naar Indië om het gezag te herstellen. Dat past bij Politionele acties: militaire acties in Indië.",
+      "uo": [
+       "Klopt: militaire acties in Indië.",
+       "Nee, dat hoort bij Dekolonisatie: koloniën worden vrij.",
+       "Nee, dat hoort bij Kolonie: bestuurd gebied.",
+       "Nee, dat hoort bij Onafhankelijkheid: zelfstandig worden."
+      ],
+      "uh": "Politionele acties: militaire acties in Indië."
+     },
+     {
+      "v": "De koloniën maakten zich los en werden zelfstandige landen. Welk begrip herken je hier?",
+      "o": [
+       "Kolonisatie",
+       "Dekolonisatie",
+       "Nederlands-Indië",
+       "Slavernij"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De koloniën maakten zich los en werden zelfstandige landen. Dat past bij Dekolonisatie: koloniën worden vrij.",
+      "uo": [
+       "Nee, dat hoort bij Kolonisatie: gebied in bezit nemen.",
+       "Klopt: koloniën worden vrij.",
+       "Nee, dat hoort bij Nederlands-Indië: kolonie, nu Indonesië.",
+       "Nee, dat hoort bij Slavernij: mensen als bezit."
+      ],
+      "uh": "Dekolonisatie: koloniën worden vrij."
+     },
+     {
+      "v": "Het streven naar een eigen, onafhankelijke natie. Wat is hier aan de hand?",
+      "o": [
+       "Slavernij",
+       "Nederlands-Indië",
+       "Nationalisme",
+       "Plantage"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het streven naar een eigen, onafhankelijke natie. Dat past bij Nationalisme: streven naar eigen natie.",
+      "uo": [
+       "Nee, dat hoort bij Slavernij: mensen als bezit.",
+       "Nee, dat hoort bij Nederlands-Indië: kolonie, nu Indonesië.",
+       "Klopt: streven naar eigen natie.",
+       "Nee, dat hoort bij Plantage: landbouwbedrijf in kolonie."
+      ],
+      "uh": "Nationalisme: streven naar eigen natie."
+     },
+     {
+      "v": "Een ver gebied dat door een ander land werd bestuurd. Welk begrip past hierbij?",
+      "o": [
+       "Slavernij",
+       "Plantage",
+       "Politionele acties",
+       "Kolonie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een ver gebied dat door een ander land werd bestuurd. Dat past bij Kolonie: bestuurd gebied.",
+      "uo": [
+       "Nee, dat hoort bij Slavernij: mensen als bezit.",
+       "Nee, dat hoort bij Plantage: landbouwbedrijf in kolonie.",
+       "Nee, dat hoort bij Politionele acties: militaire acties in Indië.",
+       "Klopt: bestuurd gebied."
+      ],
+      "uh": "Kolonie: bestuurd gebied."
+     },
+     {
+      "v": "De bevolking wilde trots een eigen, zelfstandige natie. Om welk begrip gaat het?",
+      "o": [
+       "Nationalisme",
+       "Onafhankelijkheid",
+       "Migratie",
+       "Politionele acties"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De bevolking wilde trots een eigen, zelfstandige natie. Dat past bij Nationalisme: streven naar eigen natie.",
+      "uo": [
+       "Klopt: streven naar eigen natie.",
+       "Nee, dat hoort bij Onafhankelijkheid: zelfstandig worden.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Politionele acties: militaire acties in Indië."
+      ],
+      "uh": "Nationalisme: streven naar eigen natie."
+     },
+     {
+      "v": "Het proces waarbij koloniën onafhankelijk worden. Welk begrip herken je hier?",
+      "o": [
+       "Nationalisme",
+       "Dekolonisatie",
+       "Uitbuiting",
+       "Plantage"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het proces waarbij koloniën onafhankelijk worden. Dat past bij Dekolonisatie: koloniën worden vrij.",
+      "uo": [
+       "Nee, dat hoort bij Nationalisme: streven naar eigen natie.",
+       "Klopt: koloniën worden vrij.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst.",
+       "Nee, dat hoort bij Plantage: landbouwbedrijf in kolonie."
+      ],
+      "uh": "Dekolonisatie: koloniën worden vrij."
+     },
+     {
+      "v": "Het verhuizen van groepen mensen naar een ander gebied. Wat is hier aan de hand?",
+      "o": [
+       "Nederlands-Indië",
+       "Uitbuiting",
+       "Migratie",
+       "Slavernij"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het verhuizen van groepen mensen naar een ander gebied. Dat past bij Migratie: mensen verhuizen.",
+      "uo": [
+       "Nee, dat hoort bij Nederlands-Indië: kolonie, nu Indonesië.",
+       "Nee, dat hoort bij Uitbuiting: misbruik voor winst.",
+       "Klopt: mensen verhuizen.",
+       "Nee, dat hoort bij Slavernij: mensen als bezit."
+      ],
+      "uh": "Migratie: mensen verhuizen."
      }
     ],
     "begrippen": [
@@ -33059,6 +35776,519 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Een vreemd leger had de macht»."
       ],
       "uh": "Een vreemd leger had de macht: Duitsland beheerste het land."
+     },
+     {
+      "v": "Het westerse militaire bondgenootschap. Welk begrip past hierbij?",
+      "o": [
+       "Beurskrach van 1929",
+       "Interbellum",
+       "Dictatuur",
+       "NAVO"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het westerse militaire bondgenootschap. Dat past bij NAVO: westers bondgenootschap.",
+      "uo": [
+       "Nee, dat hoort bij Beurskrach van 1929: instorting van de beurs.",
+       "Nee, dat hoort bij Interbellum: tussen de wereldoorlogen.",
+       "Nee, dat hoort bij Dictatuur: alle macht bij één.",
+       "Klopt: westers bondgenootschap."
+      ],
+      "uh": "NAVO: westers bondgenootschap."
+     },
+     {
+      "v": "Een vreemd leger had het land in zijn greep en maakte de dienst uit. Om welk begrip gaat het?",
+      "o": [
+       "Bezetting",
+       "Dictatuur",
+       "Koude Oorlog",
+       "Tweede Wereldoorlog"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een vreemd leger had het land in zijn greep en maakte de dienst uit. Dat past bij Bezetting: vreemd leger beheerst.",
+      "uo": [
+       "Klopt: vreemd leger beheerst.",
+       "Nee, dat hoort bij Dictatuur: alle macht bij één.",
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Nee, dat hoort bij Tweede Wereldoorlog: oorlog 1939-1945."
+      ],
+      "uh": "Bezetting: vreemd leger beheerst."
+     },
+     {
+      "v": "Eén sterke leider en één partij hadden alle macht in handen. Welk begrip herken je hier?",
+      "o": [
+       "Tweede Wereldoorlog",
+       "Fascisme",
+       "NAVO",
+       "Interbellum"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Eén sterke leider en één partij hadden alle macht in handen. Dat past bij Fascisme: sterke leider, één partij.",
+      "uo": [
+       "Nee, dat hoort bij Tweede Wereldoorlog: oorlog 1939-1945.",
+       "Klopt: sterke leider, één partij.",
+       "Nee, dat hoort bij NAVO: westers bondgenootschap.",
+       "Nee, dat hoort bij Interbellum: tussen de wereldoorlogen."
+      ],
+      "uh": "Fascisme: sterke leider, één partij."
+     },
+     {
+      "v": "De plotselinge ineenstorting van de beurs in 1929. Wat is hier aan de hand?",
+      "o": [
+       "Tweede Wereldoorlog",
+       "Crisis",
+       "Beurskrach van 1929",
+       "Holocaust"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De plotselinge ineenstorting van de beurs in 1929. Dat past bij Beurskrach van 1929: instorting van de beurs.",
+      "uo": [
+       "Nee, dat hoort bij Tweede Wereldoorlog: oorlog 1939-1945.",
+       "Nee, dat hoort bij Crisis: werkloosheid en armoede.",
+       "Klopt: instorting van de beurs.",
+       "Nee, dat hoort bij Holocaust: moord op de Joden."
+      ],
+      "uh": "Beurskrach van 1929: instorting van de beurs."
+     },
+     {
+      "v": "De grote oorlog van 1914 tot 1918. Welk begrip past hierbij?",
+      "o": [
+       "NAVO",
+       "Crisis",
+       "Koude Oorlog",
+       "Eerste Wereldoorlog"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De grote oorlog van 1914 tot 1918. Dat past bij Eerste Wereldoorlog: oorlog 1914-1918.",
+      "uo": [
+       "Nee, dat hoort bij NAVO: westers bondgenootschap.",
+       "Nee, dat hoort bij Crisis: werkloosheid en armoede.",
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Klopt: oorlog 1914-1918."
+      ],
+      "uh": "Eerste Wereldoorlog: oorlog 1914-1918."
+     },
+     {
+      "v": "De spanning tussen de VS en de Sovjet-Unie na 1945. Om welk begrip gaat het?",
+      "o": [
+       "Koude Oorlog",
+       "Interbellum",
+       "Beurskrach van 1929",
+       "Nazisme"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De spanning tussen de VS en de Sovjet-Unie na 1945. Dat past bij Koude Oorlog: VS tegen Sovjet-Unie.",
+      "uo": [
+       "Klopt: VS tegen Sovjet-Unie.",
+       "Nee, dat hoort bij Interbellum: tussen de wereldoorlogen.",
+       "Nee, dat hoort bij Beurskrach van 1929: instorting van de beurs.",
+       "Nee, dat hoort bij Nazisme: Duits fascisme met racisme."
+      ],
+      "uh": "Koude Oorlog: VS tegen Sovjet-Unie."
+     },
+     {
+      "v": "De westerse landen sloten een militair bondgenootschap tegen het communisme. Welk begrip herken je hier?",
+      "o": [
+       "Interbellum",
+       "NAVO",
+       "Dictatuur",
+       "Beurskrach van 1929"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De westerse landen sloten een militair bondgenootschap tegen het communisme. Dat past bij NAVO: westers bondgenootschap.",
+      "uo": [
+       "Nee, dat hoort bij Interbellum: tussen de wereldoorlogen.",
+       "Klopt: westers bondgenootschap.",
+       "Nee, dat hoort bij Dictatuur: alle macht bij één.",
+       "Nee, dat hoort bij Beurskrach van 1929: instorting van de beurs."
+      ],
+      "uh": "NAVO: westers bondgenootschap."
+     },
+     {
+      "v": "De massamoord op de Joden door de nazi's. Wat is hier aan de hand?",
+      "o": [
+       "Koude Oorlog",
+       "Bezetting",
+       "Holocaust",
+       "Dictatuur"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De massamoord op de Joden door de nazi's. Dat past bij Holocaust: moord op de Joden.",
+      "uo": [
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Nee, dat hoort bij Bezetting: vreemd leger beheerst.",
+       "Klopt: moord op de Joden.",
+       "Nee, dat hoort bij Dictatuur: alle macht bij één."
+      ],
+      "uh": "Holocaust: moord op de Joden."
+     },
+     {
+      "v": "De periode dat een vreemd leger een land beheerst. Welk begrip past hierbij?",
+      "o": [
+       "Nazisme",
+       "Val van de Muur",
+       "Warschaupact",
+       "Bezetting"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De periode dat een vreemd leger een land beheerst. Dat past bij Bezetting: vreemd leger beheerst.",
+      "uo": [
+       "Nee, dat hoort bij Nazisme: Duits fascisme met racisme.",
+       "Nee, dat hoort bij Val van de Muur: Berlijnse Muur valt, 1989.",
+       "Nee, dat hoort bij Warschaupact: communistisch bondgenootschap.",
+       "Klopt: vreemd leger beheerst."
+      ],
+      "uh": "Bezetting: vreemd leger beheerst."
+     },
+     {
+      "v": "De nazi's vermoordden op grote schaal de Joden. Om welk begrip gaat het?",
+      "o": [
+       "Holocaust",
+       "Bezetting",
+       "Koude Oorlog",
+       "Dictatuur"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De nazi's vermoordden op grote schaal de Joden. Dat past bij Holocaust: moord op de Joden.",
+      "uo": [
+       "Klopt: moord op de Joden.",
+       "Nee, dat hoort bij Bezetting: vreemd leger beheerst.",
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Nee, dat hoort bij Dictatuur: alle macht bij één."
+      ],
+      "uh": "Holocaust: moord op de Joden."
+     },
+     {
+      "v": "De ineenstorting van de Berlijnse Muur in 1989. Welk begrip herken je hier?",
+      "o": [
+       "Fascisme",
+       "Val van de Muur",
+       "Warschaupact",
+       "Crisis"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De ineenstorting van de Berlijnse Muur in 1989. Dat past bij Val van de Muur: Berlijnse Muur valt, 1989.",
+      "uo": [
+       "Nee, dat hoort bij Fascisme: sterke leider, één partij.",
+       "Klopt: Berlijnse Muur valt, 1989.",
+       "Nee, dat hoort bij Warschaupact: communistisch bondgenootschap.",
+       "Nee, dat hoort bij Crisis: werkloosheid en armoede."
+      ],
+      "uh": "Val van de Muur: Berlijnse Muur valt, 1989."
+     },
+     {
+      "v": "In 1929 stortten de aandelenkoersen ineens volledig in. Wat is hier aan de hand?",
+      "o": [
+       "Tweede Wereldoorlog",
+       "Crisis",
+       "Beurskrach van 1929",
+       "Holocaust"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "In 1929 stortten de aandelenkoersen ineens volledig in. Dat past bij Beurskrach van 1929: instorting van de beurs.",
+      "uo": [
+       "Nee, dat hoort bij Tweede Wereldoorlog: oorlog 1939-1945.",
+       "Nee, dat hoort bij Crisis: werkloosheid en armoede.",
+       "Klopt: instorting van de beurs.",
+       "Nee, dat hoort bij Holocaust: moord op de Joden."
+      ],
+      "uh": "Beurskrach van 1929: instorting van de beurs."
+     },
+     {
+      "v": "De communistische landen sloten hun eigen militaire bondgenootschap. Welk begrip past hierbij?",
+      "o": [
+       "Interbellum",
+       "Fascisme",
+       "Holocaust",
+       "Warschaupact"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De communistische landen sloten hun eigen militaire bondgenootschap. Dat past bij Warschaupact: communistisch bondgenootschap.",
+      "uo": [
+       "Nee, dat hoort bij Interbellum: tussen de wereldoorlogen.",
+       "Nee, dat hoort bij Fascisme: sterke leider, één partij.",
+       "Nee, dat hoort bij Holocaust: moord op de Joden.",
+       "Klopt: communistisch bondgenootschap."
+      ],
+      "uh": "Warschaupact: communistisch bondgenootschap."
+     },
+     {
+      "v": "De periode tussen de Eerste en Tweede Wereldoorlog. Om welk begrip gaat het?",
+      "o": [
+       "Interbellum",
+       "Koude Oorlog",
+       "Dictatuur",
+       "Tweede Wereldoorlog"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De periode tussen de Eerste en Tweede Wereldoorlog. Dat past bij Interbellum: tussen de wereldoorlogen.",
+      "uo": [
+       "Klopt: tussen de wereldoorlogen.",
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Nee, dat hoort bij Dictatuur: alle macht bij één.",
+       "Nee, dat hoort bij Tweede Wereldoorlog: oorlog 1939-1945."
+      ],
+      "uh": "Interbellum: tussen de wereldoorlogen."
+     },
+     {
+      "v": "De grote oorlog van 1939 tot 1945. Welk begrip herken je hier?",
+      "o": [
+       "Crisis",
+       "Tweede Wereldoorlog",
+       "Koude Oorlog",
+       "NAVO"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De grote oorlog van 1939 tot 1945. Dat past bij Tweede Wereldoorlog: oorlog 1939-1945.",
+      "uo": [
+       "Nee, dat hoort bij Crisis: werkloosheid en armoede.",
+       "Klopt: oorlog 1939-1945.",
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Nee, dat hoort bij NAVO: westers bondgenootschap."
+      ],
+      "uh": "Tweede Wereldoorlog: oorlog 1939-1945."
+     },
+     {
+      "v": "Hitlers partij combineerde de dictatuur met haat tegen Joden. Wat is hier aan de hand?",
+      "o": [
+       "Val van de Muur",
+       "Fascisme",
+       "Nazisme",
+       "Warschaupact"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Hitlers partij combineerde de dictatuur met haat tegen Joden. Dat past bij Nazisme: Duits fascisme met racisme.",
+      "uo": [
+       "Nee, dat hoort bij Val van de Muur: Berlijnse Muur valt, 1989.",
+       "Nee, dat hoort bij Fascisme: sterke leider, één partij.",
+       "Klopt: Duits fascisme met racisme.",
+       "Nee, dat hoort bij Warschaupact: communistisch bondgenootschap."
+      ],
+      "uh": "Nazisme: Duits fascisme met racisme."
+     },
+     {
+      "v": "Van 1939 tot 1945 raakte bijna de hele wereld in oorlog. Welk begrip past hierbij?",
+      "o": [
+       "NAVO",
+       "Crisis",
+       "Koude Oorlog",
+       "Tweede Wereldoorlog"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Van 1939 tot 1945 raakte bijna de hele wereld in oorlog. Dat past bij Tweede Wereldoorlog: oorlog 1939-1945.",
+      "uo": [
+       "Nee, dat hoort bij NAVO: westers bondgenootschap.",
+       "Nee, dat hoort bij Crisis: werkloosheid en armoede.",
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Klopt: oorlog 1939-1945."
+      ],
+      "uh": "Tweede Wereldoorlog: oorlog 1939-1945."
+     },
+     {
+      "v": "Het Duitse fascisme met racisme en Jodenhaat. Om welk begrip gaat het?",
+      "o": [
+       "Nazisme",
+       "Fascisme",
+       "Koude Oorlog",
+       "Bezetting"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het Duitse fascisme met racisme en Jodenhaat. Dat past bij Nazisme: Duits fascisme met racisme.",
+      "uo": [
+       "Klopt: Duits fascisme met racisme.",
+       "Nee, dat hoort bij Fascisme: sterke leider, één partij.",
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Nee, dat hoort bij Bezetting: vreemd leger beheerst."
+      ],
+      "uh": "Nazisme: Duits fascisme met racisme."
+     },
+     {
+      "v": "Een stroming met een sterke leider en één partij. Welk begrip herken je hier?",
+      "o": [
+       "Nazisme",
+       "Fascisme",
+       "Holocaust",
+       "Bezetting"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een stroming met een sterke leider en één partij. Dat past bij Fascisme: sterke leider, één partij.",
+      "uo": [
+       "Nee, dat hoort bij Nazisme: Duits fascisme met racisme.",
+       "Klopt: sterke leider, één partij.",
+       "Nee, dat hoort bij Holocaust: moord op de Joden.",
+       "Nee, dat hoort bij Bezetting: vreemd leger beheerst."
+      ],
+      "uh": "Fascisme: sterke leider, één partij."
+     },
+     {
+      "v": "Een tijd van werkloosheid en armoede. Wat is hier aan de hand?",
+      "o": [
+       "Bezetting",
+       "Fascisme",
+       "Crisis",
+       "Dictatuur"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een tijd van werkloosheid en armoede. Dat past bij Crisis: werkloosheid en armoede.",
+      "uo": [
+       "Nee, dat hoort bij Bezetting: vreemd leger beheerst.",
+       "Nee, dat hoort bij Fascisme: sterke leider, één partij.",
+       "Klopt: werkloosheid en armoede.",
+       "Nee, dat hoort bij Dictatuur: alle macht bij één."
+      ],
+      "uh": "Crisis: werkloosheid en armoede."
+     },
+     {
+      "v": "De jaren van rust tussen de twee grote wereldoorlogen. Welk begrip past hierbij?",
+      "o": [
+       "Val van de Muur",
+       "Koude Oorlog",
+       "Nazisme",
+       "Interbellum"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De jaren van rust tussen de twee grote wereldoorlogen. Dat past bij Interbellum: tussen de wereldoorlogen.",
+      "uo": [
+       "Nee, dat hoort bij Val van de Muur: Berlijnse Muur valt, 1989.",
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Nee, dat hoort bij Nazisme: Duits fascisme met racisme.",
+       "Klopt: tussen de wereldoorlogen."
+      ],
+      "uh": "Interbellum: tussen de wereldoorlogen."
+     },
+     {
+      "v": "In 1989 viel de muur die Berlijn in tweeën deelde. Welk begrip herken je hier?",
+      "o": [
+       "Val van de Muur",
+       "Koude Oorlog",
+       "Bezetting",
+       "Beurskrach van 1929"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "In 1989 viel de muur die Berlijn in tweeën deelde. Dat past bij Val van de Muur: Berlijnse Muur valt, 1989.",
+      "uo": [
+       "Klopt: Berlijnse Muur valt, 1989.",
+       "Nee, dat hoort bij Koude Oorlog: VS tegen Sovjet-Unie.",
+       "Nee, dat hoort bij Bezetting: vreemd leger beheerst.",
+       "Nee, dat hoort bij Beurskrach van 1929: instorting van de beurs."
+      ],
+      "uh": "Val van de Muur: Berlijnse Muur valt, 1989."
+     },
+     {
+      "v": "Een bestuur waarin alle macht bij één persoon ligt. Wat is hier aan de hand?",
+      "o": [
+       "Interbellum",
+       "Dictatuur",
+       "Tweede Wereldoorlog",
+       "Nazisme"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een bestuur waarin alle macht bij één persoon ligt. Dat past bij Dictatuur: alle macht bij één.",
+      "uo": [
+       "Nee, dat hoort bij Interbellum: tussen de wereldoorlogen.",
+       "Klopt: alle macht bij één.",
+       "Nee, dat hoort bij Tweede Wereldoorlog: oorlog 1939-1945.",
+       "Nee, dat hoort bij Nazisme: Duits fascisme met racisme."
+      ],
+      "uh": "Dictatuur: alle macht bij één."
+     },
+     {
+      "v": "Van 1914 tot 1918 vochten grote legers in de loopgraven. Welk begrip past hierbij?",
+      "o": [
+       "Val van de Muur",
+       "Tweede Wereldoorlog",
+       "Eerste Wereldoorlog",
+       "Interbellum"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Van 1914 tot 1918 vochten grote legers in de loopgraven. Dat past bij Eerste Wereldoorlog: oorlog 1914-1918.",
+      "uo": [
+       "Nee, dat hoort bij Val van de Muur: Berlijnse Muur valt, 1989.",
+       "Nee, dat hoort bij Tweede Wereldoorlog: oorlog 1939-1945.",
+       "Klopt: oorlog 1914-1918.",
+       "Nee, dat hoort bij Interbellum: tussen de wereldoorlogen."
+      ],
+      "uh": "Eerste Wereldoorlog: oorlog 1914-1918."
+     },
+     {
+      "v": "Eén leider had alle macht en duldde geen tegenspraak. Om welk begrip gaat het?",
+      "o": [
+       "Bezetting",
+       "Crisis",
+       "Interbellum",
+       "Dictatuur"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Eén leider had alle macht en duldde geen tegenspraak. Dat past bij Dictatuur: alle macht bij één.",
+      "uo": [
+       "Nee, dat hoort bij Bezetting: vreemd leger beheerst.",
+       "Nee, dat hoort bij Crisis: werkloosheid en armoede.",
+       "Nee, dat hoort bij Interbellum: tussen de wereldoorlogen.",
+       "Klopt: alle macht bij één."
+      ],
+      "uh": "Dictatuur: alle macht bij één."
+     },
+     {
+      "v": "In de jaren dertig waren miljoenen mensen werkloos en arm. Welk begrip herken je hier?",
+      "o": [
+       "Crisis",
+       "Fascisme",
+       "Bezetting",
+       "Dictatuur"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "In de jaren dertig waren miljoenen mensen werkloos en arm. Dat past bij Crisis: werkloosheid en armoede.",
+      "uo": [
+       "Klopt: werkloosheid en armoede.",
+       "Nee, dat hoort bij Fascisme: sterke leider, één partij.",
+       "Nee, dat hoort bij Bezetting: vreemd leger beheerst.",
+       "Nee, dat hoort bij Dictatuur: alle macht bij één."
+      ],
+      "uh": "Crisis: werkloosheid en armoede."
+     },
+     {
+      "v": "Het militaire bondgenootschap van de communistische landen. Wat is hier aan de hand?",
+      "o": [
+       "NAVO",
+       "Warschaupact",
+       "Fascisme",
+       "Crisis"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het militaire bondgenootschap van de communistische landen. Dat past bij Warschaupact: communistisch bondgenootschap.",
+      "uo": [
+       "Nee, dat hoort bij NAVO: westers bondgenootschap.",
+       "Klopt: communistisch bondgenootschap.",
+       "Nee, dat hoort bij Fascisme: sterke leider, één partij.",
+       "Nee, dat hoort bij Crisis: werkloosheid en armoede."
+      ],
+      "uh": "Warschaupact: communistisch bondgenootschap."
      }
     ],
     "begrippen": [
@@ -33343,6 +36573,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Kopen en verkopen over de grens»."
       ],
       "uh": "Kopen en verkopen over de grens: Goederen kopen en verkopen tussen landen."
+     },
+     {
+      "v": "De toestand waarin geen oorlog is. Welk begrip past hierbij?",
+      "o": [
+       "Vluchteling",
+       "Verdrag",
+       "Multinational",
+       "Vrede"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De toestand waarin geen oorlog is. Dat past bij Vrede: geen oorlog.",
+      "uo": [
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar.",
+       "Nee, dat hoort bij Verdrag: afspraak tussen landen.",
+       "Nee, dat hoort bij Multinational: bedrijf in veel landen.",
+       "Klopt: geen oorlog."
+      ],
+      "uh": "Vrede: geen oorlog."
+     },
+     {
+      "v": "Een officiële afspraak tussen landen. Om welk begrip gaat het?",
+      "o": [
+       "Verdrag",
+       "Europese samenwerking",
+       "Vluchteling",
+       "Globalisering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een officiële afspraak tussen landen. Dat past bij Verdrag: afspraak tussen landen.",
+      "uo": [
+       "Klopt: afspraak tussen landen.",
+       "Nee, dat hoort bij Europese samenwerking: landen werken samen.",
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven."
+      ],
+      "uh": "Verdrag: afspraak tussen landen."
+     },
+     {
+      "v": "Landen kopen en verkopen goederen aan elkaar. Welk begrip herken je hier?",
+      "o": [
+       "Globalisering",
+       "Handel",
+       "Europese samenwerking",
+       "Europese Unie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Landen kopen en verkopen goederen aan elkaar. Dat past bij Handel: kopen en verkopen.",
+      "uo": [
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Klopt: kopen en verkopen.",
+       "Nee, dat hoort bij Europese samenwerking: landen werken samen.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen."
+      ],
+      "uh": "Handel: kopen en verkopen."
+     },
+     {
+      "v": "Steun van rijke landen aan arme landen. Wat is hier aan de hand?",
+      "o": [
+       "Verdrag",
+       "Handel",
+       "Ontwikkelingshulp",
+       "Migratie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Steun van rijke landen aan arme landen. Dat past bij Ontwikkelingshulp: steun aan arme landen.",
+      "uo": [
+       "Nee, dat hoort bij Verdrag: afspraak tussen landen.",
+       "Nee, dat hoort bij Handel: kopen en verkopen.",
+       "Klopt: steun aan arme landen.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen."
+      ],
+      "uh": "Ontwikkelingshulp: steun aan arme landen."
+     },
+     {
+      "v": "Het steeds meer verweven raken van landen en economieën. Welk begrip past hierbij?",
+      "o": [
+       "Migratie",
+       "Vrij verkeer",
+       "Vluchteling",
+       "Globalisering"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het steeds meer verweven raken van landen en economieën. Dat past bij Globalisering: landen raken verweven.",
+      "uo": [
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Vrij verkeer: vrij binnen de EU.",
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar.",
+       "Klopt: landen raken verweven."
+      ],
+      "uh": "Globalisering: landen raken verweven."
+     },
+     {
+      "v": "Rijke landen steunen arme landen met geld en kennis. Om welk begrip gaat het?",
+      "o": [
+       "Ontwikkelingshulp",
+       "Handel",
+       "Verdrag",
+       "Migratie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Rijke landen steunen arme landen met geld en kennis. Dat past bij Ontwikkelingshulp: steun aan arme landen.",
+      "uo": [
+       "Klopt: steun aan arme landen.",
+       "Nee, dat hoort bij Handel: kopen en verkopen.",
+       "Nee, dat hoort bij Verdrag: afspraak tussen landen.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen."
+      ],
+      "uh": "Ontwikkelingshulp: steun aan arme landen."
+     },
+     {
+      "v": "Grote groepen mensen verhuizen naar een ander land. Welk begrip herken je hier?",
+      "o": [
+       "Europese samenwerking",
+       "Migratie",
+       "Europese Unie",
+       "Verdrag"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Grote groepen mensen verhuizen naar een ander land. Dat past bij Migratie: mensen verhuizen.",
+      "uo": [
+       "Nee, dat hoort bij Europese samenwerking: landen werken samen.",
+       "Klopt: mensen verhuizen.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Nee, dat hoort bij Verdrag: afspraak tussen landen."
+      ],
+      "uh": "Migratie: mensen verhuizen."
+     },
+     {
+      "v": "Het samenwerken van Europese landen. Wat is hier aan de hand?",
+      "o": [
+       "Globalisering",
+       "Europese Unie",
+       "Europese samenwerking",
+       "Handel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het samenwerken van Europese landen. Dat past bij Europese samenwerking: landen werken samen.",
+      "uo": [
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Klopt: landen werken samen.",
+       "Nee, dat hoort bij Handel: kopen en verkopen."
+      ],
+      "uh": "Europese samenwerking: landen werken samen."
+     },
+     {
+      "v": "Dit bedrijf heeft vestigingen in tientallen landen tegelijk. Welk begrip past hierbij?",
+      "o": [
+       "Migratie",
+       "Vrij verkeer",
+       "Vluchteling",
+       "Multinational"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Dit bedrijf heeft vestigingen in tientallen landen tegelijk. Dat past bij Multinational: bedrijf in veel landen.",
+      "uo": [
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Vrij verkeer: vrij binnen de EU.",
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar.",
+       "Klopt: bedrijf in veel landen."
+      ],
+      "uh": "Multinational: bedrijf in veel landen."
+     },
+     {
+      "v": "Landen in Europa werken samen om oorlog te voorkomen en handel te bevorderen. Om welk begrip gaat het?",
+      "o": [
+       "Europese samenwerking",
+       "Europese Unie",
+       "Globalisering",
+       "Handel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Landen in Europa werken samen om oorlog te voorkomen en handel te bevorderen. Dat past bij Europese samenwerking: landen werken samen.",
+      "uo": [
+       "Klopt: landen werken samen.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Nee, dat hoort bij Handel: kopen en verkopen."
+      ],
+      "uh": "Europese samenwerking: landen werken samen."
+     },
+     {
+      "v": "Landen legden hun afspraken vast in een ondertekend document. Welk begrip herken je hier?",
+      "o": [
+       "Multinational",
+       "Verdrag",
+       "Migratie",
+       "Vrede"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Landen legden hun afspraken vast in een ondertekend document. Dat past bij Verdrag: afspraak tussen landen.",
+      "uo": [
+       "Nee, dat hoort bij Multinational: bedrijf in veel landen.",
+       "Klopt: afspraak tussen landen.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Vrede: geen oorlog."
+      ],
+      "uh": "Verdrag: afspraak tussen landen."
+     },
+     {
+      "v": "Het verhuizen van mensen naar een ander gebied. Wat is hier aan de hand?",
+      "o": [
+       "Vrij verkeer",
+       "Vluchteling",
+       "Migratie",
+       "Ontwikkelingshulp"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het verhuizen van mensen naar een ander gebied. Dat past bij Migratie: mensen verhuizen.",
+      "uo": [
+       "Nee, dat hoort bij Vrij verkeer: vrij binnen de EU.",
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar.",
+       "Klopt: mensen verhuizen.",
+       "Nee, dat hoort bij Ontwikkelingshulp: steun aan arme landen."
+      ],
+      "uh": "Migratie: mensen verhuizen."
+     },
+     {
+      "v": "Het kopen en verkopen van goederen. Welk begrip past hierbij?",
+      "o": [
+       "Europese Unie",
+       "Globalisering",
+       "Europese samenwerking",
+       "Handel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het kopen en verkopen van goederen. Dat past bij Handel: kopen en verkopen.",
+      "uo": [
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Nee, dat hoort bij Europese samenwerking: landen werken samen.",
+       "Klopt: kopen en verkopen."
+      ],
+      "uh": "Handel: kopen en verkopen."
+     },
+     {
+      "v": "Bedrijven, landen en mensen over de hele wereld raken steeds meer verbonden. Om welk begrip gaat het?",
+      "o": [
+       "Globalisering",
+       "Vrij verkeer",
+       "Vluchteling",
+       "Migratie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Bedrijven, landen en mensen over de hele wereld raken steeds meer verbonden. Dat past bij Globalisering: landen raken verweven.",
+      "uo": [
+       "Klopt: landen raken verweven.",
+       "Nee, dat hoort bij Vrij verkeer: vrij binnen de EU.",
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen."
+      ],
+      "uh": "Globalisering: landen raken verweven."
+     },
+     {
+      "v": "Het vrij mogen reizen en handelen binnen de EU. Welk begrip herken je hier?",
+      "o": [
+       "Europese Unie",
+       "Vrij verkeer",
+       "Globalisering",
+       "Ontwikkelingshulp"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het vrij mogen reizen en handelen binnen de EU. Dat past bij Vrij verkeer: vrij binnen de EU.",
+      "uo": [
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Klopt: vrij binnen de EU.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Nee, dat hoort bij Ontwikkelingshulp: steun aan arme landen."
+      ],
+      "uh": "Vrij verkeer: vrij binnen de EU."
+     },
+     {
+      "v": "Binnen de EU mogen mensen en goederen vrij de grens over. Wat is hier aan de hand?",
+      "o": [
+       "Multinational",
+       "Europese Unie",
+       "Vrij verkeer",
+       "Vrede"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Binnen de EU mogen mensen en goederen vrij de grens over. Dat past bij Vrij verkeer: vrij binnen de EU.",
+      "uo": [
+       "Nee, dat hoort bij Multinational: bedrijf in veel landen.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Klopt: vrij binnen de EU.",
+       "Nee, dat hoort bij Vrede: geen oorlog."
+      ],
+      "uh": "Vrij verkeer: vrij binnen de EU."
+     },
+     {
+      "v": "Het samenwerkingsverband van Europese landen. Welk begrip past hierbij?",
+      "o": [
+       "Verdrag",
+       "Vluchteling",
+       "Migratie",
+       "Europese Unie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het samenwerkingsverband van Europese landen. Dat past bij Europese Unie: samenwerkende EU-landen.",
+      "uo": [
+       "Nee, dat hoort bij Verdrag: afspraak tussen landen.",
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Klopt: samenwerkende EU-landen."
+      ],
+      "uh": "Europese Unie: samenwerkende EU-landen."
+     },
+     {
+      "v": "Na jaren van oorlog legden de landen de wapens neer. Om welk begrip gaat het?",
+      "o": [
+       "Vrede",
+       "Verdrag",
+       "Globalisering",
+       "Vrij verkeer"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Na jaren van oorlog legden de landen de wapens neer. Dat past bij Vrede: geen oorlog.",
+      "uo": [
+       "Klopt: geen oorlog.",
+       "Nee, dat hoort bij Verdrag: afspraak tussen landen.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Nee, dat hoort bij Vrij verkeer: vrij binnen de EU."
+      ],
+      "uh": "Vrede: geen oorlog."
+     },
+     {
+      "v": "In veel EU-landen betaal je met dezelfde munt. Welk begrip herken je hier?",
+      "o": [
+       "Vrij verkeer",
+       "Euro",
+       "Multinational",
+       "Ontwikkelingshulp"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In veel EU-landen betaal je met dezelfde munt. Dat past bij Euro: munt van de eurozone.",
+      "uo": [
+       "Nee, dat hoort bij Vrij verkeer: vrij binnen de EU.",
+       "Klopt: munt van de eurozone.",
+       "Nee, dat hoort bij Multinational: bedrijf in veel landen.",
+       "Nee, dat hoort bij Ontwikkelingshulp: steun aan arme landen."
+      ],
+      "uh": "Euro: munt van de eurozone."
+     },
+     {
+      "v": "Iemand die zijn land ontvlucht vanwege gevaar. Wat is hier aan de hand?",
+      "o": [
+       "Ontwikkelingshulp",
+       "Vrede",
+       "Vluchteling",
+       "Europese Unie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Iemand die zijn land ontvlucht vanwege gevaar. Dat past bij Vluchteling: ontvlucht gevaar.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkelingshulp: steun aan arme landen.",
+       "Nee, dat hoort bij Vrede: geen oorlog.",
+       "Klopt: ontvlucht gevaar.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen."
+      ],
+      "uh": "Vluchteling: ontvlucht gevaar."
+     },
+     {
+      "v": "Zevenentwintig landen werken samen aan handel, regels en een munt. Welk begrip past hierbij?",
+      "o": [
+       "Migratie",
+       "Europese samenwerking",
+       "Vrij verkeer",
+       "Europese Unie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Zevenentwintig landen werken samen aan handel, regels en een munt. Dat past bij Europese Unie: samenwerkende EU-landen.",
+      "uo": [
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Europese samenwerking: landen werken samen.",
+       "Nee, dat hoort bij Vrij verkeer: vrij binnen de EU.",
+       "Klopt: samenwerkende EU-landen."
+      ],
+      "uh": "Europese Unie: samenwerkende EU-landen."
+     },
+     {
+      "v": "Iemand ontvlucht zijn land vanwege oorlog of vervolging. Om welk begrip gaat het?",
+      "o": [
+       "Vluchteling",
+       "Migratie",
+       "Vrij verkeer",
+       "Globalisering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Iemand ontvlucht zijn land vanwege oorlog of vervolging. Dat past bij Vluchteling: ontvlucht gevaar.",
+      "uo": [
+       "Klopt: ontvlucht gevaar.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Vrij verkeer: vrij binnen de EU.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven."
+      ],
+      "uh": "Vluchteling: ontvlucht gevaar."
+     },
+     {
+      "v": "De gemeenschappelijke munt van veel EU-landen. Welk begrip herken je hier?",
+      "o": [
+       "Europese samenwerking",
+       "Euro",
+       "Europese Unie",
+       "Ontwikkelingshulp"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De gemeenschappelijke munt van veel EU-landen. Dat past bij Euro: munt van de eurozone.",
+      "uo": [
+       "Nee, dat hoort bij Europese samenwerking: landen werken samen.",
+       "Klopt: munt van de eurozone.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Nee, dat hoort bij Ontwikkelingshulp: steun aan arme landen."
+      ],
+      "uh": "Euro: munt van de eurozone."
+     },
+     {
+      "v": "Een groot bedrijf dat in veel landen actief is. Wat is hier aan de hand?",
+      "o": [
+       "Europese samenwerking",
+       "Globalisering",
+       "Multinational",
+       "Vluchteling"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een groot bedrijf dat in veel landen actief is. Dat past bij Multinational: bedrijf in veel landen.",
+      "uo": [
+       "Nee, dat hoort bij Europese samenwerking: landen werken samen.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Klopt: bedrijf in veel landen.",
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar."
+      ],
+      "uh": "Multinational: bedrijf in veel landen."
      }
     ],
     "begrippen": [
