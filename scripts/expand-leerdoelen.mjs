@@ -325,7 +325,7 @@ export function expandLeerdoel(spec) {
     });
     // Hybride aanvulling: vul elke moeilijkheid aan tot het quotum (standaard 10)
     // met gegenereerde vragen. Handgeschreven vragen blijven vooraan/leidend.
-    if (spec.concepten && spec.concepten.length && spec.supplement !== false) {
+    if (spec.concepten && spec.concepten.length && spec.supplement === true) {
       const perDiff = spec.perDiff || 10;
       sv = [...sv, ...generateSupplement(spec.concepten, sv, perDiff)];
     }

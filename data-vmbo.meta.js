@@ -21,7 +21,7 @@ var VAKKEN_VMBO = [
      "Kernboodschap van een gesproken tekst",
      "Beeld en geluid interpreteren"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -36,7 +36,7 @@ var VAKKEN_VMBO = [
      "Presentatie en spreekbeurt",
      "Discussie en overleg"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -53,7 +53,7 @@ var VAKKEN_VMBO = [
      "Hoofdgedachte en deelonderwerpen",
      "Argumentatie: feiten vs. meningen"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -69,7 +69,7 @@ var VAKKEN_VMBO = [
      "Verslag en samenvatting",
      "Spelling en interpunctie"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -85,7 +85,7 @@ var VAKKEN_VMBO = [
      "Genres herkennen",
      "Eigen mening onderbouwen"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -116,7 +116,7 @@ var VAKKEN_VMBO = [
      "Woordbetekenis uit context",
      "Gatenteksten: idioom en grammatica in context"
     ],
-    "nSv": 30,
+    "nSv": 10,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -131,7 +131,7 @@ var VAKKEN_VMBO = [
      "Gesproken Engels begrijpen",
      "Hoofd- en bijzaken herkennen"
     ],
-    "nSv": 30,
+    "nSv": 10,
     "nOe": 0,
     "nBeg": 11,
     "hasSam": true
@@ -146,7 +146,7 @@ var VAKKEN_VMBO = [
      "Reageren in een gesprek",
      "Vragen stellen en beantwoorden"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -161,7 +161,7 @@ var VAKKEN_VMBO = [
      "Formele en informele brief",
      "Woordvolgorde en spelling"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -192,7 +192,7 @@ var VAKKEN_VMBO = [
      "Woordbetekenis uit context",
      "Gatenteksten: idioom en grammatica in context"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -207,7 +207,7 @@ var VAKKEN_VMBO = [
      "Gesproken Duits begrijpen",
      "Hoofd- en bijzaken herkennen"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -222,7 +222,7 @@ var VAKKEN_VMBO = [
      "Reageren in een gesprek",
      "Vragen stellen en beantwoorden"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -237,7 +237,7 @@ var VAKKEN_VMBO = [
      "Formele en informele brief",
      "Naamvallen en woordvolgorde"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -268,7 +268,7 @@ var VAKKEN_VMBO = [
      "Woordbetekenis uit context",
      "Gatenteksten: idioom en grammatica in context"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -283,7 +283,7 @@ var VAKKEN_VMBO = [
      "Gesproken Frans begrijpen",
      "Hoofd- en bijzaken herkennen"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -298,7 +298,7 @@ var VAKKEN_VMBO = [
      "Reageren in een gesprek",
      "Vragen stellen en beantwoorden"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -313,7 +313,7 @@ var VAKKEN_VMBO = [
      "Formele en informele brief",
      "Werkwoordvervoeging en spelling"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -344,7 +344,7 @@ var VAKKEN_VMBO = [
      "Lineaire vergelijkingen oplossen",
      "Inklemmen bij kwadratische/exponentiële formules"
     ],
-    "nSv": 30,
+    "nSv": 9,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -361,7 +361,7 @@ var VAKKEN_VMBO = [
      "Samengestelde eenheden (bv. km/h ↔ m/s)",
      "Omtrek, oppervlakte en volume"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -378,7 +378,7 @@ var VAKKEN_VMBO = [
      "Kijklijnen en zichtveld",
      "Symmetrie"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -394,7 +394,7 @@ var VAKKEN_VMBO = [
      "Cirkeldiagram en histogram",
      "Gemiddelde, modus en mediaan"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -438,7 +438,7 @@ var VAKKEN_VMBO = [
      "Faseovergangen",
      "Temperatuur-tijdgrafieken"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -454,7 +454,7 @@ var VAKKEN_VMBO = [
      "Wet van Ohm: U = I × R",
      "Vermogen P = U × I en energie E = P × t"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -470,7 +470,7 @@ var VAKKEN_VMBO = [
      "Isolatie",
      "Q = c × m × ΔT"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -486,7 +486,7 @@ var VAKKEN_VMBO = [
      "Lichtbreking",
      "Beeldvorming"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -502,7 +502,7 @@ var VAKKEN_VMBO = [
      "Amplitude",
      "Geluidssnelheid en echopeiling"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -518,7 +518,7 @@ var VAKKEN_VMBO = [
      "Hefbomen: M = F × r",
      "Snelheid s = v × t, remweg en stopafstand"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -533,7 +533,7 @@ var VAKKEN_VMBO = [
      "Atomen en moleculen",
      "Eigenschappen van materialen"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -549,7 +549,7 @@ var VAKKEN_VMBO = [
      "Toepassingen en risico's",
      "Bescherming"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -593,7 +593,7 @@ var VAKKEN_VMBO = [
      "Destilleren en extraheren",
      "Chromatografie"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -609,7 +609,7 @@ var VAKKEN_VMBO = [
      "Molecuulformules",
      "Reactievergelijkingen kloppend maken"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -624,7 +624,7 @@ var VAKKEN_VMBO = [
      "Kenmerken van een reactie",
      "Ontledings- en vormingsreacties"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -640,7 +640,7 @@ var VAKKEN_VMBO = [
      "CO₂ aantonen met kalkwater",
      "Water aantonen met wit kopersulfaat"
     ],
-    "nSv": 30,
+    "nSv": 8,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -655,7 +655,7 @@ var VAKKEN_VMBO = [
      "Grondstof tot product",
      "Kunststoffen en metalen"
     ],
-    "nSv": 30,
+    "nSv": 7,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -670,7 +670,7 @@ var VAKKEN_VMBO = [
      "Onderzoek opzetten",
      "Eigenschappen meten"
     ],
-    "nSv": 30,
+    "nSv": 7,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -686,7 +686,7 @@ var VAKKEN_VMBO = [
      "Indicatoren (lakmoes, rodekoolsap)",
      "Neutralisatiereacties"
     ],
-    "nSv": 30,
+    "nSv": 7,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -718,7 +718,7 @@ var VAKKEN_VMBO = [
      "Monohybride kruisingen",
      "Natuurlijke selectie"
     ],
-    "nSv": 33,
+    "nSv": 24,
     "nOe": 0,
     "nBeg": 18,
     "hasSam": true
@@ -733,7 +733,7 @@ var VAKKEN_VMBO = [
      "Stevigheid en bescherming",
      "Opbouw van het lichaam"
     ],
-    "nSv": 31,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -750,7 +750,7 @@ var VAKKEN_VMBO = [
      "Koolstof- en stikstofkringloop",
      "Fotosynthese"
     ],
-    "nSv": 30,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 13,
     "hasSam": true
@@ -765,7 +765,7 @@ var VAKKEN_VMBO = [
      "Milieuvervuiling",
      "Duurzaamheid en kringloopdenken"
     ],
-    "nSv": 30,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -780,7 +780,7 @@ var VAKKEN_VMBO = [
      "Skelet en gewrichten",
      "Spieren en beweging"
     ],
-    "nSv": 30,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -798,7 +798,7 @@ var VAKKEN_VMBO = [
      "Nieren, huid en uitscheiding",
      "Zenuwstelsel, hormonen en zintuigen (oog)"
     ],
-    "nSv": 32,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 13,
     "hasSam": true
@@ -815,7 +815,7 @@ var VAKKEN_VMBO = [
      "Genetische modificatie (o.a. insuline)",
      "Voor- en nadelen van gm-gewassen"
     ],
-    "nSv": 30,
+    "nSv": 16,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -845,7 +845,7 @@ var VAKKEN_VMBO = [
      "Inflatie en indexcijfers",
      "Verzekeringen"
     ],
-    "nSv": 30,
+    "nSv": 14,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -860,7 +860,7 @@ var VAKKEN_VMBO = [
      "Consumentenrechten",
      "Consumentenorganisaties"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -875,7 +875,7 @@ var VAKKEN_VMBO = [
      "Brutoloon en nettoloon",
      "Arbeidsverdeling en productiviteit"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -890,7 +890,7 @@ var VAKKEN_VMBO = [
      "Verkoopprijs, omzet en btw",
      "Kosten en winst"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -905,7 +905,7 @@ var VAKKEN_VMBO = [
      "Belastingen",
      "Taken van de overheid"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -922,7 +922,7 @@ var VAKKEN_VMBO = [
      "De Europese Unie",
      "Ontwikkelingssamenwerking"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -937,7 +937,7 @@ var VAKKEN_VMBO = [
      "Milieukosten",
      "Duurzaam produceren en consumeren"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -952,7 +952,7 @@ var VAKKEN_VMBO = [
      "Samengestelde interest (rente-op-rente)",
      "De rol van de centrale bank"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -967,7 +967,7 @@ var VAKKEN_VMBO = [
      "Ondernemingsplan",
      "Kosten, prijs en winst van een bedrijf"
     ],
-    "nSv": 30,
+    "nSv": 12,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -996,7 +996,7 @@ var VAKKEN_VMBO = [
      "Waarden en normen door de tijd",
      "Cultuur en religie"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1013,7 +1013,7 @@ var VAKKEN_VMBO = [
      "Eerste en Tweede Kamer",
      "Het ontstaan van de verzorgingsstaat"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1028,7 +1028,7 @@ var VAKKEN_VMBO = [
      "Industriële revolutie",
      "Arbeid en de sociale kwestie"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1043,7 +1043,7 @@ var VAKKEN_VMBO = [
      "Sociale wetten",
      "De verzorgingsstaat na 1945"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1058,7 +1058,7 @@ var VAKKEN_VMBO = [
      "Ontzuiling en emancipatie",
      "Jongerencultuur en protest"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1073,7 +1073,7 @@ var VAKKEN_VMBO = [
      "Nederlands-Indië",
      "Onafhankelijkheid van Indonesië en Suriname"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1091,7 +1091,7 @@ var VAKKEN_VMBO = [
      "Koude Oorlog: NAVO vs. Warschaupact",
      "Val van de Muur en dekolonisatie"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1106,7 +1106,7 @@ var VAKKEN_VMBO = [
      "Europese samenwerking (EU)",
      "Globalisering"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1149,7 +1149,7 @@ var VAKKEN_VMBO = [
      "Windsystemen en de wet van Buys Ballot",
      "Klimaatgrafieken lezen"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1165,7 +1165,7 @@ var VAKKEN_VMBO = [
      "Nederland en het water",
      "Overstromingsrisico"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1180,7 +1180,7 @@ var VAKKEN_VMBO = [
      "Bevolkingsgroei",
      "Verstedelijking en migratie"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1196,7 +1196,7 @@ var VAKKEN_VMBO = [
      "Centrum-periferierelaties",
      "Oorzaken van welvaartsverschillen"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1211,7 +1211,7 @@ var VAKKEN_VMBO = [
      "Bestemming van gebieden",
      "Belangen bij ruimtegebruik"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1227,7 +1227,7 @@ var VAKKEN_VMBO = [
      "Cultuurgebieden",
      "Grenzen en territoriale conflicten"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1270,7 +1270,7 @@ var VAKKEN_VMBO = [
      "De route van een wetsvoorstel",
      "Besluitvorming en belangengroepen"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1286,7 +1286,7 @@ var VAKKEN_VMBO = [
      "Werkgevers, werknemers en vakbonden",
      "Inkomen en sociale zekerheid"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1301,7 +1301,7 @@ var VAKKEN_VMBO = [
      "Cultuur en identiteit",
      "Discriminatie en integratie"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1318,7 +1318,7 @@ var VAKKEN_VMBO = [
      "Rechten van verdachten",
      "Soorten straffen"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1335,7 +1335,7 @@ var VAKKEN_VMBO = [
      "Censuur",
      "De multiculturele samenleving"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1350,7 +1350,7 @@ var VAKKEN_VMBO = [
      "Digitalisering",
      "Privacy en sociale media"
     ],
-    "nSv": 30,
+    "nSv": 11,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
