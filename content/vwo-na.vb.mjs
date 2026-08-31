@@ -27,4 +27,18 @@ export default {
     'Doppler-effect': ['De sirene klinkt hoger bij nadering en lager na het passeren', 'Beweegt de bron naar je toe, dan hoor je een hogere toon'],
     Resonantie: ['De amplitude loopt sterk op als je op de eigenfrequentie aandrijft', 'Een brug die op zijn eigen trilling wordt aangedreven, kan bezwijken'],
   },
+  C: {
+    Kracht: ['Een duw of trek die een voorwerp versnelt of vervormt', 'Volgens F = m·a bepaalt hij de versnelling'],
+    Arbeid: ['Een kracht verplaatst een kist over een afstand', 'W = F·s: kracht maal weg in de richting van de kracht'],
+    'Kinetische energie': ['De bewegingsenergie van een rijdende auto, ½mv²', 'Verdubbel je de snelheid, dan wordt deze vier keer zo groot'],
+    'Potentiële energie': ['De hoogte-energie van een steen boven de grond', 'Hoe hoger je iets tilt, hoe meer je hiervan opslaat'],
+    Energiebehoud: ['Zonder wrijving blijft de som van beweging- en hoogte-energie gelijk', 'Bij het vallen wordt hoogte-energie omgezet in bewegingsenergie'],
+    Impuls: ['Het product van massa en snelheid van een voorwerp', 'Een zware, snelle vrachtwagen heeft er veel van'],
+    Impulsbehoud: ['Twee schaatsers duwen elkaar af, samen blijft de impuls nul', 'Zonder externe kracht verandert de totale impuls niet'],
+    Vermogen: ['Hoeveel arbeid een motor per seconde levert, in watt', 'P = W/t: energie gedeeld door de tijd'],
+    Veerkracht: ['Een uitgerekte veer trekt terug naar zijn evenwichtsstand', 'F = −kx: de kracht wijst tegengesteld aan de uitrekking'],
+    'Middelpuntzoekende kracht': ['De kracht die een voorwerp in een cirkelbaan houdt, naar het midden gericht', 'Ze staat loodrecht op de beweging en verricht geen arbeid'],
+    'Tweede wet van Newton': ['De nettokracht is massa maal versnelling', 'Meer kracht op dezelfde massa geeft meer versnelling'],
+    'Derde wet van Newton': ['Duw je tegen een muur, dan duwt de muur even hard terug', 'Actie en reactie zijn even groot en tegengesteld gericht'],
+  },
 };
