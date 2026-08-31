@@ -10,4 +10,17 @@ export default {
     'Wet van behoud van massa': ['De totale massa vóór en na een reactie in een afgesloten systeem is gelijk', 'Er gaat geen massa verloren, atomen worden alleen herschikt'],
     'GHS-pictogram': ['Een teken op de verpakking waarschuwt voor het gevaar van een stof', 'Een vlam, doodshoofd of bijtend symbool op een fles'],
   },
+  B: {
+    Ionbinding: ['Natrium geeft een elektron af aan chloor; de geladen deeltjes trekken elkaar aan', 'De binding in keukenzout, tussen een metaal- en een niet-metaalion'],
+    'Covalente binding': ['Twee niet-metaalatomen delen samen een elektronenpaar', 'In een watermolecuul houden O en H elkaar vast door elektronen te delen'],
+    Metaalbinding: ['Positieve metaalkernen zitten in een zee van vrije elektronen', 'Deze binding verklaart waarom metalen stroom en warmte geleiden'],
+    Elektronegativiteit: ['De mate waarin een atoom de gedeelde elektronen naar zich toe trekt', 'Fluor heeft hiervan de hoogste waarde, waterstof een lage'],
+    Polariteit: ['Doordat O de elektronen sterker aantrekt, is de O-H binding aan één kant negatiever', 'Een ongelijke ladingsverdeling binnen een binding'],
+    Waterstofbrug: ['De sterke aantrekking die het hoge kookpunt van water verklaart', 'Ontstaat als waterstof gebonden is aan stikstof, zuurstof of fluor'],
+    Vanderwaalskracht: ['De zwakke aantrekking die tussen alle moleculen werkt, ook apolaire', 'De enige intermoleculaire kracht tussen onpolaire alkanen'],
+    'Dipool-dipoolkracht': ['De aantrekking tussen de plus- en de minkant van permanente dipolen', 'Werkt tussen polaire moleculen, sterker dan vanderwaals maar zwakker dan een waterstofbrug'],
+    'Atomair rooster': ['Diamant: elk koolstofatoom covalent gebonden in een enorm netwerk, extreem hard', 'Een netwerk van atomen met een zeer hoog smeltpunt, zoals kwarts'],
+    Ionrooster: ['Een regelmatige stapeling van positieve en negatieve ionen, zoals in zout', 'Hoog smeltpunt en bros, geleidt alleen gesmolten of opgelost'],
+    Molecuulrooster: ['Losse moleculen bijeengehouden door zwakke krachten, laag smeltpunt', 'Vast jood: moleculen in een rooster door zwakke vanderwaalskrachten'],
+  },
 };
