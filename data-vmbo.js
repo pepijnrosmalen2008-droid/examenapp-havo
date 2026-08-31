@@ -14498,6 +14498,538 @@ var VAKKEN_VMBO = [
        "Klopt: een vaste stof."
       ],
       "uh": "Vaste stof: Een vaste stof."
+     },
+     {
+      "v": "Een stof die de vorm van de bak aanneemt. Welk begrip past hierbij?",
+      "o": [
+       "Vloeistof",
+       "Vaste stof",
+       "Gas",
+       "Stollen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een stof die de vorm van de bak aanneemt. Dat past bij Vloeistof: neemt vorm van de bak aan.",
+      "uo": [
+       "Klopt: neemt vorm van de bak aan.",
+       "Nee, dat hoort bij Vaste stof: vaste vorm.",
+       "Nee, dat hoort bij Gas: vult de ruimte.",
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast."
+      ],
+      "uh": "Vloeistof: neemt vorm van de bak aan."
+     },
+     {
+      "v": "De temperatuur waarbij ijs overgaat in water is nul graden. Om welk begrip gaat het?",
+      "o": [
+       "Kookpunt",
+       "Smeltpunt",
+       "Vaste stof",
+       "Verdampen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De temperatuur waarbij ijs overgaat in water is nul graden. Dat past bij Smeltpunt: smelttemperatuur.",
+      "uo": [
+       "Nee, dat hoort bij Kookpunt: kooktemperatuur.",
+       "Klopt: smelttemperatuur.",
+       "Nee, dat hoort bij Vaste stof: vaste vorm.",
+       "Nee, dat hoort bij Verdampen: vloeibaar wordt gas."
+      ],
+      "uh": "Smeltpunt: smelttemperatuur."
+     },
+     {
+      "v": "Een ijsblokje wordt in de zon vanzelf water. Welk begrip herken je hier?",
+      "o": [
+       "Temperatuur-tijdgrafiek",
+       "Stollen",
+       "Smelten",
+       "Gas"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een ijsblokje wordt in de zon vanzelf water. Dat past bij Smelten: vast wordt vloeibaar.",
+      "uo": [
+       "Nee, dat hoort bij Temperatuur-tijdgrafiek: temperatuur tegen tijd.",
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast.",
+       "Klopt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Gas: vult de ruimte."
+      ],
+      "uh": "Smelten: vast wordt vloeibaar."
+     },
+     {
+      "v": "De ruimte die een voorwerp inneemt. Wat is hier aan de hand?",
+      "o": [
+       "Gas",
+       "Massa",
+       "Dichtheid",
+       "Volume"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De ruimte die een voorwerp inneemt. Dat past bij Volume: ingenomen ruimte.",
+      "uo": [
+       "Nee, dat hoort bij Gas: vult de ruimte.",
+       "Nee, dat hoort bij Massa: hoeveelheid stof.",
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Klopt: ingenomen ruimte."
+      ],
+      "uh": "Volume: ingenomen ruimte."
+     },
+     {
+      "v": "De massa van een stof per hoeveelheid ruimte. Welk begrip past hierbij?",
+      "o": [
+       "Dichtheid",
+       "Vloeistof",
+       "Condenseren",
+       "Stollen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De massa van een stof per hoeveelheid ruimte. Dat past bij Dichtheid: massa per volume.",
+      "uo": [
+       "Klopt: massa per volume.",
+       "Nee, dat hoort bij Vloeistof: neemt vorm van de bak aan.",
+       "Nee, dat hoort bij Condenseren: gas wordt vloeibaar.",
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast."
+      ],
+      "uh": "Dichtheid: massa per volume."
+     },
+     {
+      "v": "Een stof met een eigen, vaste vorm. Om welk begrip gaat het?",
+      "o": [
+       "Vloeistof",
+       "Vaste stof",
+       "Gas",
+       "Volume"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een stof met een eigen, vaste vorm. Dat past bij Vaste stof: vaste vorm.",
+      "uo": [
+       "Nee, dat hoort bij Vloeistof: neemt vorm van de bak aan.",
+       "Klopt: vaste vorm.",
+       "Nee, dat hoort bij Gas: vult de ruimte.",
+       "Nee, dat hoort bij Volume: ingenomen ruimte."
+      ],
+      "uh": "Vaste stof: vaste vorm."
+     },
+     {
+      "v": "Water neemt de vorm aan van het glas waarin je het giet. Welk begrip herken je hier?",
+      "o": [
+       "Smelten",
+       "Smeltpunt",
+       "Vloeistof",
+       "Volume"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Water neemt de vorm aan van het glas waarin je het giet. Dat past bij Vloeistof: neemt vorm van de bak aan.",
+      "uo": [
+       "Nee, dat hoort bij Smelten: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Smeltpunt: smelttemperatuur.",
+       "Klopt: neemt vorm van de bak aan.",
+       "Nee, dat hoort bij Volume: ingenomen ruimte."
+      ],
+      "uh": "Vloeistof: neemt vorm van de bak aan."
+     },
+     {
+      "v": "De temperatuur waarbij een stof kookt. Wat is hier aan de hand?",
+      "o": [
+       "Vloeistof",
+       "Smeltpunt",
+       "Smelten",
+       "Kookpunt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De temperatuur waarbij een stof kookt. Dat past bij Kookpunt: kooktemperatuur.",
+      "uo": [
+       "Nee, dat hoort bij Vloeistof: neemt vorm van de bak aan.",
+       "Nee, dat hoort bij Smeltpunt: smelttemperatuur.",
+       "Nee, dat hoort bij Smelten: vast wordt vloeibaar.",
+       "Klopt: kooktemperatuur."
+      ],
+      "uh": "Kookpunt: kooktemperatuur."
+     },
+     {
+      "v": "De temperatuur waarbij een stof smelt. Welk begrip past hierbij?",
+      "o": [
+       "Smeltpunt",
+       "Kookpunt",
+       "Vaste stof",
+       "Verdampen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De temperatuur waarbij een stof smelt. Dat past bij Smeltpunt: smelttemperatuur.",
+      "uo": [
+       "Klopt: smelttemperatuur.",
+       "Nee, dat hoort bij Kookpunt: kooktemperatuur.",
+       "Nee, dat hoort bij Vaste stof: vaste vorm.",
+       "Nee, dat hoort bij Verdampen: vloeibaar wordt gas."
+      ],
+      "uh": "Smeltpunt: smelttemperatuur."
+     },
+     {
+      "v": "De temperatuur waarbij water gaat koken is honderd graden. Om welk begrip gaat het?",
+      "o": [
+       "Stollen",
+       "Kookpunt",
+       "Vloeistof",
+       "Massa"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De temperatuur waarbij water gaat koken is honderd graden. Dat past bij Kookpunt: kooktemperatuur.",
+      "uo": [
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast.",
+       "Klopt: kooktemperatuur.",
+       "Nee, dat hoort bij Vloeistof: neemt vorm van de bak aan.",
+       "Nee, dat hoort bij Massa: hoeveelheid stof."
+      ],
+      "uh": "Kookpunt: kooktemperatuur."
+     },
+     {
+      "v": "Een grafiek van de temperatuur tegen de tijd. Welk begrip herken je hier?",
+      "o": [
+       "Kookpunt",
+       "Faseovergang",
+       "Temperatuur-tijdgrafiek",
+       "Vaste stof"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een grafiek van de temperatuur tegen de tijd. Dat past bij Temperatuur-tijdgrafiek: temperatuur tegen tijd.",
+      "uo": [
+       "Nee, dat hoort bij Kookpunt: kooktemperatuur.",
+       "Nee, dat hoort bij Faseovergang: wisseling van fase.",
+       "Klopt: temperatuur tegen tijd.",
+       "Nee, dat hoort bij Vaste stof: vaste vorm."
+      ],
+      "uh": "Temperatuur-tijdgrafiek: temperatuur tegen tijd."
+     },
+     {
+      "v": "Hoeveel ruimte een pak melk inneemt, meet je in liters. Wat is hier aan de hand?",
+      "o": [
+       "Gas",
+       "Massa",
+       "Dichtheid",
+       "Volume"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Hoeveel ruimte een pak melk inneemt, meet je in liters. Dat past bij Volume: ingenomen ruimte.",
+      "uo": [
+       "Nee, dat hoort bij Gas: vult de ruimte.",
+       "Nee, dat hoort bij Massa: hoeveelheid stof.",
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Klopt: ingenomen ruimte."
+      ],
+      "uh": "Volume: ingenomen ruimte."
+     },
+     {
+      "v": "Lucht verspreidt zich door de hele ruimte. Welk begrip past hierbij?",
+      "o": [
+       "Gas",
+       "Kookpunt",
+       "Stollen",
+       "Temperatuur-tijdgrafiek"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Lucht verspreidt zich door de hele ruimte. Dat past bij Gas: vult de ruimte.",
+      "uo": [
+       "Klopt: vult de ruimte.",
+       "Nee, dat hoort bij Kookpunt: kooktemperatuur.",
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast.",
+       "Nee, dat hoort bij Temperatuur-tijdgrafiek: temperatuur tegen tijd."
+      ],
+      "uh": "Gas: vult de ruimte."
+     },
+     {
+      "v": "De hoeveelheid stof in een voorwerp, in kilogram. Om welk begrip gaat het?",
+      "o": [
+       "Volume",
+       "Massa",
+       "Dichtheid",
+       "Vloeistof"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De hoeveelheid stof in een voorwerp, in kilogram. Dat past bij Massa: hoeveelheid stof.",
+      "uo": [
+       "Nee, dat hoort bij Volume: ingenomen ruimte.",
+       "Klopt: hoeveelheid stof.",
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Nee, dat hoort bij Vloeistof: neemt vorm van de bak aan."
+      ],
+      "uh": "Massa: hoeveelheid stof."
+     },
+     {
+      "v": "De overgang van gas naar vloeibaar. Welk begrip herken je hier?",
+      "o": [
+       "Stollen",
+       "Verdampen",
+       "Condenseren",
+       "Smeltpunt"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De overgang van gas naar vloeibaar. Dat past bij Condenseren: gas wordt vloeibaar.",
+      "uo": [
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast.",
+       "Nee, dat hoort bij Verdampen: vloeibaar wordt gas.",
+       "Klopt: gas wordt vloeibaar.",
+       "Nee, dat hoort bij Smeltpunt: smelttemperatuur."
+      ],
+      "uh": "Condenseren: gas wordt vloeibaar."
+     },
+     {
+      "v": "Vloeibaar kaarsvet wordt weer hard als het afkoelt. Wat is hier aan de hand?",
+      "o": [
+       "Condenseren",
+       "Gas",
+       "Kookpunt",
+       "Stollen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Vloeibaar kaarsvet wordt weer hard als het afkoelt. Dat past bij Stollen: vloeibaar wordt vast.",
+      "uo": [
+       "Nee, dat hoort bij Condenseren: gas wordt vloeibaar.",
+       "Nee, dat hoort bij Gas: vult de ruimte.",
+       "Nee, dat hoort bij Kookpunt: kooktemperatuur.",
+       "Klopt: vloeibaar wordt vast."
+      ],
+      "uh": "Stollen: vloeibaar wordt vast."
+     },
+     {
+      "v": "Op een koude spiegel slaat de waterdamp neer tot druppels. Welk begrip past hierbij?",
+      "o": [
+       "Condenseren",
+       "Verdampen",
+       "Smelten",
+       "Temperatuur-tijdgrafiek"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Op een koude spiegel slaat de waterdamp neer tot druppels. Dat past bij Condenseren: gas wordt vloeibaar.",
+      "uo": [
+       "Klopt: gas wordt vloeibaar.",
+       "Nee, dat hoort bij Verdampen: vloeibaar wordt gas.",
+       "Nee, dat hoort bij Smelten: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Temperatuur-tijdgrafiek: temperatuur tegen tijd."
+      ],
+      "uh": "Condenseren: gas wordt vloeibaar."
+     },
+     {
+      "v": "De overgang van vloeibaar naar vast. Om welk begrip gaat het?",
+      "o": [
+       "Smelten",
+       "Stollen",
+       "Temperatuur-tijdgrafiek",
+       "Gas"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De overgang van vloeibaar naar vast. Dat past bij Stollen: vloeibaar wordt vast.",
+      "uo": [
+       "Nee, dat hoort bij Smelten: vast wordt vloeibaar.",
+       "Klopt: vloeibaar wordt vast.",
+       "Nee, dat hoort bij Temperatuur-tijdgrafiek: temperatuur tegen tijd.",
+       "Nee, dat hoort bij Gas: vult de ruimte."
+      ],
+      "uh": "Stollen: vloeibaar wordt vast."
+     },
+     {
+      "v": "De overgang van vast naar vloeibaar. Welk begrip herken je hier?",
+      "o": [
+       "Kookpunt",
+       "Gas",
+       "Smelten",
+       "Condenseren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De overgang van vast naar vloeibaar. Dat past bij Smelten: vast wordt vloeibaar.",
+      "uo": [
+       "Nee, dat hoort bij Kookpunt: kooktemperatuur.",
+       "Nee, dat hoort bij Gas: vult de ruimte.",
+       "Klopt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Condenseren: gas wordt vloeibaar."
+      ],
+      "uh": "Smelten: vast wordt vloeibaar."
+     },
+     {
+      "v": "Een overgang van de ene fase naar de andere. Wat is hier aan de hand?",
+      "o": [
+       "Volume",
+       "Verdampen",
+       "Smelten",
+       "Faseovergang"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een overgang van de ene fase naar de andere. Dat past bij Faseovergang: wisseling van fase.",
+      "uo": [
+       "Nee, dat hoort bij Volume: ingenomen ruimte.",
+       "Nee, dat hoort bij Verdampen: vloeibaar wordt gas.",
+       "Nee, dat hoort bij Smelten: vast wordt vloeibaar.",
+       "Klopt: wisseling van fase."
+      ],
+      "uh": "Faseovergang: wisseling van fase."
+     },
+     {
+      "v": "Op de weegschaal lees je af hoeveel stof een voorwerp bevat. Welk begrip past hierbij?",
+      "o": [
+       "Massa",
+       "Volume",
+       "Dichtheid",
+       "Gas"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Op de weegschaal lees je af hoeveel stof een voorwerp bevat. Dat past bij Massa: hoeveelheid stof.",
+      "uo": [
+       "Klopt: hoeveelheid stof.",
+       "Nee, dat hoort bij Volume: ingenomen ruimte.",
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Nee, dat hoort bij Gas: vult de ruimte."
+      ],
+      "uh": "Massa: hoeveelheid stof."
+     },
+     {
+      "v": "Een steen houdt zijn eigen vaste vorm. Om welk begrip gaat het?",
+      "o": [
+       "Volume",
+       "Vaste stof",
+       "Verdampen",
+       "Stollen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een steen houdt zijn eigen vaste vorm. Dat past bij Vaste stof: vaste vorm.",
+      "uo": [
+       "Nee, dat hoort bij Volume: ingenomen ruimte.",
+       "Klopt: vaste vorm.",
+       "Nee, dat hoort bij Verdampen: vloeibaar wordt gas.",
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast."
+      ],
+      "uh": "Vaste stof: vaste vorm."
+     },
+     {
+      "v": "In een grafiek zie je hoe de temperatuur tijdens het opwarmen oploopt. Welk begrip herken je hier?",
+      "o": [
+       "Kookpunt",
+       "Faseovergang",
+       "Temperatuur-tijdgrafiek",
+       "Vaste stof"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "In een grafiek zie je hoe de temperatuur tijdens het opwarmen oploopt. Dat past bij Temperatuur-tijdgrafiek: temperatuur tegen tijd.",
+      "uo": [
+       "Nee, dat hoort bij Kookpunt: kooktemperatuur.",
+       "Nee, dat hoort bij Faseovergang: wisseling van fase.",
+       "Klopt: temperatuur tegen tijd.",
+       "Nee, dat hoort bij Vaste stof: vaste vorm."
+      ],
+      "uh": "Temperatuur-tijdgrafiek: temperatuur tegen tijd."
+     },
+     {
+      "v": "De overgang van vloeibaar naar gas. Wat is hier aan de hand?",
+      "o": [
+       "Smeltpunt",
+       "Condenseren",
+       "Vaste stof",
+       "Verdampen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De overgang van vloeibaar naar gas. Dat past bij Verdampen: vloeibaar wordt gas.",
+      "uo": [
+       "Nee, dat hoort bij Smeltpunt: smelttemperatuur.",
+       "Nee, dat hoort bij Condenseren: gas wordt vloeibaar.",
+       "Nee, dat hoort bij Vaste stof: vaste vorm.",
+       "Klopt: vloeibaar wordt gas."
+      ],
+      "uh": "Verdampen: vloeibaar wordt gas."
+     },
+     {
+      "v": "Een blok ijzer is veel zwaarder dan een even groot blok hout. Welk begrip past hierbij?",
+      "o": [
+       "Dichtheid",
+       "Vloeistof",
+       "Condenseren",
+       "Stollen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een blok ijzer is veel zwaarder dan een even groot blok hout. Dat past bij Dichtheid: massa per volume.",
+      "uo": [
+       "Klopt: massa per volume.",
+       "Nee, dat hoort bij Vloeistof: neemt vorm van de bak aan.",
+       "Nee, dat hoort bij Condenseren: gas wordt vloeibaar.",
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast."
+      ],
+      "uh": "Dichtheid: massa per volume."
+     },
+     {
+      "v": "Een natte plas droogt op doordat het water damp wordt. Om welk begrip gaat het?",
+      "o": [
+       "Condenseren",
+       "Verdampen",
+       "Stollen",
+       "Smeltpunt"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een natte plas droogt op doordat het water damp wordt. Dat past bij Verdampen: vloeibaar wordt gas.",
+      "uo": [
+       "Nee, dat hoort bij Condenseren: gas wordt vloeibaar.",
+       "Klopt: vloeibaar wordt gas.",
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast.",
+       "Nee, dat hoort bij Smeltpunt: smelttemperatuur."
+      ],
+      "uh": "Verdampen: vloeibaar wordt gas."
+     },
+     {
+      "v": "Water gaat van ijs naar vloeibaar of naar damp. Welk begrip herken je hier?",
+      "o": [
+       "Verdampen",
+       "Smelten",
+       "Faseovergang",
+       "Gas"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Water gaat van ijs naar vloeibaar of naar damp. Dat past bij Faseovergang: wisseling van fase.",
+      "uo": [
+       "Nee, dat hoort bij Verdampen: vloeibaar wordt gas.",
+       "Nee, dat hoort bij Smelten: vast wordt vloeibaar.",
+       "Klopt: wisseling van fase.",
+       "Nee, dat hoort bij Gas: vult de ruimte."
+      ],
+      "uh": "Faseovergang: wisseling van fase."
+     },
+     {
+      "v": "Een stof die de hele beschikbare ruimte vult. Wat is hier aan de hand?",
+      "o": [
+       "Temperatuur-tijdgrafiek",
+       "Kookpunt",
+       "Stollen",
+       "Gas"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een stof die de hele beschikbare ruimte vult. Dat past bij Gas: vult de ruimte.",
+      "uo": [
+       "Nee, dat hoort bij Temperatuur-tijdgrafiek: temperatuur tegen tijd.",
+       "Nee, dat hoort bij Kookpunt: kooktemperatuur.",
+       "Nee, dat hoort bij Stollen: vloeibaar wordt vast.",
+       "Klopt: vult de ruimte."
+      ],
+      "uh": "Gas: vult de ruimte."
      }
     ],
     "begrippen": [
@@ -14802,6 +15334,424 @@ var VAKKEN_VMBO = [
        "Klopt: bijna geen weerstand, dus heel veel stroom."
       ],
       "uh": "Er loopt heel veel stroom: Bijna geen weerstand, dus heel veel stroom."
+     },
+     {
+      "v": "Een stof die de stroom goed doorlaat. Welk begrip past hierbij?",
+      "o": [
+       "Geleider",
+       "Isolator",
+       "Wet van Ohm",
+       "Zekering"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een stof die de stroom goed doorlaat. Dat past bij Geleider: laat stroom door.",
+      "uo": [
+       "Klopt: laat stroom door.",
+       "Nee, dat hoort bij Isolator: laat geen stroom door.",
+       "Nee, dat hoort bij Wet van Ohm: U is I maal R.",
+       "Nee, dat hoort bij Zekering: beveiliging tegen te veel stroom."
+      ],
+      "uh": "Geleider: laat stroom door."
+     },
+     {
+      "v": "De hoeveelheid elektrische energie die gebruikt wordt. Om welk begrip gaat het?",
+      "o": [
+       "Vermogen",
+       "Elektrische energie",
+       "Weerstand",
+       "Isolator"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De hoeveelheid elektrische energie die gebruikt wordt. Dat past bij Elektrische energie: gebruikte energie.",
+      "uo": [
+       "Nee, dat hoort bij Vermogen: energie per seconde.",
+       "Klopt: gebruikte energie.",
+       "Nee, dat hoort bij Weerstand: werkt de stroom tegen.",
+       "Nee, dat hoort bij Isolator: laat geen stroom door."
+      ],
+      "uh": "Elektrische energie: gebruikte energie."
+     },
+     {
+      "v": "Het rubber om een stekker laat geen stroom door. Welk begrip herken je hier?",
+      "o": [
+       "Parallelschakeling",
+       "Geleider",
+       "Isolator",
+       "Serieschakeling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het rubber om een stekker laat geen stroom door. Dat past bij Isolator: laat geen stroom door.",
+      "uo": [
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar.",
+       "Nee, dat hoort bij Geleider: laat stroom door.",
+       "Klopt: laat geen stroom door.",
+       "Nee, dat hoort bij Serieschakeling: één stroomweg."
+      ],
+      "uh": "Isolator: laat geen stroom door."
+     },
+     {
+      "v": "Een beveiliging die de stroom bij gevaar onderbreekt. Wat is hier aan de hand?",
+      "o": [
+       "Parallelschakeling",
+       "Spanning",
+       "Stroomsterkte",
+       "Zekering"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een beveiliging die de stroom bij gevaar onderbreekt. Dat past bij Zekering: beveiliging tegen te veel stroom.",
+      "uo": [
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar.",
+       "Nee, dat hoort bij Spanning: de elektrische duw.",
+       "Nee, dat hoort bij Stroomsterkte: lading per seconde.",
+       "Klopt: beveiliging tegen te veel stroom."
+      ],
+      "uh": "Zekering: beveiliging tegen te veel stroom."
+     },
+     {
+      "v": "Een schakeling met maar één stroomweg. Welk begrip past hierbij?",
+      "o": [
+       "Serieschakeling",
+       "Parallelschakeling",
+       "Isolator",
+       "Geleider"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een schakeling met maar één stroomweg. Dat past bij Serieschakeling: één stroomweg.",
+      "uo": [
+       "Klopt: één stroomweg.",
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar.",
+       "Nee, dat hoort bij Isolator: laat geen stroom door.",
+       "Nee, dat hoort bij Geleider: laat stroom door."
+      ],
+      "uh": "Serieschakeling: één stroomweg."
+     },
+     {
+      "v": "Bij te veel stroom smelt een draadje door en valt de stroom uit. Om welk begrip gaat het?",
+      "o": [
+       "Kortsluiting",
+       "Zekering",
+       "Parallelschakeling",
+       "Serieschakeling"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Bij te veel stroom smelt een draadje door en valt de stroom uit. Dat past bij Zekering: beveiliging tegen te veel stroom.",
+      "uo": [
+       "Nee, dat hoort bij Kortsluiting: te weinig weerstand.",
+       "Klopt: beveiliging tegen te veel stroom.",
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar.",
+       "Nee, dat hoort bij Serieschakeling: één stroomweg."
+      ],
+      "uh": "Zekering: beveiliging tegen te veel stroom."
+     },
+     {
+      "v": "Hoeveel energie een apparaat per seconde gebruikt, meet je in watt. Welk begrip herken je hier?",
+      "o": [
+       "Stroomsterkte",
+       "Spanning",
+       "Vermogen",
+       "Parallelschakeling"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Hoeveel energie een apparaat per seconde gebruikt, meet je in watt. Dat past bij Vermogen: energie per seconde.",
+      "uo": [
+       "Nee, dat hoort bij Stroomsterkte: lading per seconde.",
+       "Nee, dat hoort bij Spanning: de elektrische duw.",
+       "Klopt: energie per seconde.",
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar."
+      ],
+      "uh": "Vermogen: energie per seconde."
+     },
+     {
+      "v": "De elektrische duw die de stroom aandrijft. Wat is hier aan de hand?",
+      "o": [
+       "Geleider",
+       "Weerstand",
+       "Stroomsterkte",
+       "Spanning"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De elektrische duw die de stroom aandrijft. Dat past bij Spanning: de elektrische duw.",
+      "uo": [
+       "Nee, dat hoort bij Geleider: laat stroom door.",
+       "Nee, dat hoort bij Weerstand: werkt de stroom tegen.",
+       "Nee, dat hoort bij Stroomsterkte: lading per seconde.",
+       "Klopt: de elektrische duw."
+      ],
+      "uh": "Spanning: de elektrische duw."
+     },
+     {
+      "v": "Twee draden raken elkaar en de stroom neemt een te korte weg. Welk begrip past hierbij?",
+      "o": [
+       "Kortsluiting",
+       "Zekering",
+       "Geleider",
+       "Vermogen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Twee draden raken elkaar en de stroom neemt een te korte weg. Dat past bij Kortsluiting: te weinig weerstand.",
+      "uo": [
+       "Klopt: te weinig weerstand.",
+       "Nee, dat hoort bij Zekering: beveiliging tegen te veel stroom.",
+       "Nee, dat hoort bij Geleider: laat stroom door.",
+       "Nee, dat hoort bij Vermogen: energie per seconde."
+      ],
+      "uh": "Kortsluiting: te weinig weerstand."
+     },
+     {
+      "v": "De batterij geeft de elektrische duw die de stroom laat lopen, in volt. Om welk begrip gaat het?",
+      "o": [
+       "Wet van Ohm",
+       "Spanning",
+       "Elektrische energie",
+       "Kortsluiting"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De batterij geeft de elektrische duw die de stroom laat lopen, in volt. Dat past bij Spanning: de elektrische duw.",
+      "uo": [
+       "Nee, dat hoort bij Wet van Ohm: U is I maal R.",
+       "Klopt: de elektrische duw.",
+       "Nee, dat hoort bij Elektrische energie: gebruikte energie.",
+       "Nee, dat hoort bij Kortsluiting: te weinig weerstand."
+      ],
+      "uh": "Spanning: de elektrische duw."
+     },
+     {
+      "v": "De energiemeter telt hoeveel stroom je huis in totaal verbruikt. Welk begrip herken je hier?",
+      "o": [
+       "Weerstand",
+       "Vermogen",
+       "Elektrische energie",
+       "Isolator"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De energiemeter telt hoeveel stroom je huis in totaal verbruikt. Dat past bij Elektrische energie: gebruikte energie.",
+      "uo": [
+       "Nee, dat hoort bij Weerstand: werkt de stroom tegen.",
+       "Nee, dat hoort bij Vermogen: energie per seconde.",
+       "Klopt: gebruikte energie.",
+       "Nee, dat hoort bij Isolator: laat geen stroom door."
+      ],
+      "uh": "Elektrische energie: gebruikte energie."
+     },
+     {
+      "v": "De energie die per seconde wordt gebruikt. Wat is hier aan de hand?",
+      "o": [
+       "Serieschakeling",
+       "Elektrische energie",
+       "Parallelschakeling",
+       "Vermogen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De energie die per seconde wordt gebruikt. Dat past bij Vermogen: energie per seconde.",
+      "uo": [
+       "Nee, dat hoort bij Serieschakeling: één stroomweg.",
+       "Nee, dat hoort bij Elektrische energie: gebruikte energie.",
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar.",
+       "Klopt: energie per seconde."
+      ],
+      "uh": "Vermogen: energie per seconde."
+     },
+     {
+      "v": "Een stof die de stroom niet doorlaat. Welk begrip past hierbij?",
+      "o": [
+       "Isolator",
+       "Spanning",
+       "Stroomsterkte",
+       "Parallelschakeling"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een stof die de stroom niet doorlaat. Dat past bij Isolator: laat geen stroom door.",
+      "uo": [
+       "Klopt: laat geen stroom door.",
+       "Nee, dat hoort bij Spanning: de elektrische duw.",
+       "Nee, dat hoort bij Stroomsterkte: lading per seconde.",
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar."
+      ],
+      "uh": "Isolator: laat geen stroom door."
+     },
+     {
+      "v": "De formule U is I maal R. Welk begrip herken je hier?",
+      "o": [
+       "Vermogen",
+       "Wet van Ohm",
+       "Spanning",
+       "Zekering"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De formule U is I maal R. Dat past bij Wet van Ohm: U is I maal R.",
+      "uo": [
+       "Nee, dat hoort bij Vermogen: energie per seconde.",
+       "Klopt: U is I maal R.",
+       "Nee, dat hoort bij Spanning: de elektrische duw.",
+       "Nee, dat hoort bij Zekering: beveiliging tegen te veel stroom."
+      ],
+      "uh": "Wet van Ohm: U is I maal R."
+     },
+     {
+      "v": "Spanning is stroomsterkte maal weerstand. Wat is hier aan de hand?",
+      "o": [
+       "Serieschakeling",
+       "Vermogen",
+       "Wet van Ohm",
+       "Parallelschakeling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Spanning is stroomsterkte maal weerstand. Dat past bij Wet van Ohm: U is I maal R.",
+      "uo": [
+       "Nee, dat hoort bij Serieschakeling: één stroomweg.",
+       "Nee, dat hoort bij Vermogen: energie per seconde.",
+       "Klopt: U is I maal R.",
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar."
+      ],
+      "uh": "Wet van Ohm: U is I maal R."
+     },
+     {
+      "v": "De hoeveelheid lading die per seconde stroomt. Welk begrip past hierbij?",
+      "o": [
+       "Parallelschakeling",
+       "Geleider",
+       "Vermogen",
+       "Stroomsterkte"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De hoeveelheid lading die per seconde stroomt. Dat past bij Stroomsterkte: lading per seconde.",
+      "uo": [
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar.",
+       "Nee, dat hoort bij Geleider: laat stroom door.",
+       "Nee, dat hoort bij Vermogen: energie per seconde.",
+       "Klopt: lading per seconde."
+      ],
+      "uh": "Stroomsterkte: lading per seconde."
+     },
+     {
+      "v": "Een koperdraad laat de stroom makkelijk door. Om welk begrip gaat het?",
+      "o": [
+       "Geleider",
+       "Isolator",
+       "Wet van Ohm",
+       "Zekering"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een koperdraad laat de stroom makkelijk door. Dat past bij Geleider: laat stroom door.",
+      "uo": [
+       "Klopt: laat stroom door.",
+       "Nee, dat hoort bij Isolator: laat geen stroom door.",
+       "Nee, dat hoort bij Wet van Ohm: U is I maal R.",
+       "Nee, dat hoort bij Zekering: beveiliging tegen te veel stroom."
+      ],
+      "uh": "Geleider: laat stroom door."
+     },
+     {
+      "v": "Een dunne draad werkt de stroom tegen en wordt warm. Welk begrip herken je hier?",
+      "o": [
+       "Stroomsterkte",
+       "Weerstand",
+       "Spanning",
+       "Elektrische energie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een dunne draad werkt de stroom tegen en wordt warm. Dat past bij Weerstand: werkt de stroom tegen.",
+      "uo": [
+       "Nee, dat hoort bij Stroomsterkte: lading per seconde.",
+       "Klopt: werkt de stroom tegen.",
+       "Nee, dat hoort bij Spanning: de elektrische duw.",
+       "Nee, dat hoort bij Elektrische energie: gebruikte energie."
+      ],
+      "uh": "Weerstand: werkt de stroom tegen."
+     },
+     {
+      "v": "Een schakeling met meerdere takken naast elkaar. Wat is hier aan de hand?",
+      "o": [
+       "Spanning",
+       "Wet van Ohm",
+       "Parallelschakeling",
+       "Geleider"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een schakeling met meerdere takken naast elkaar. Dat past bij Parallelschakeling: takken naast elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Spanning: de elektrische duw.",
+       "Nee, dat hoort bij Wet van Ohm: U is I maal R.",
+       "Klopt: takken naast elkaar.",
+       "Nee, dat hoort bij Geleider: laat stroom door."
+      ],
+      "uh": "Parallelschakeling: takken naast elkaar."
+     },
+     {
+      "v": "Hoeveel lading er per seconde door de draad gaat, meet je in ampère. Welk begrip past hierbij?",
+      "o": [
+       "Vermogen",
+       "Spanning",
+       "Weerstand",
+       "Stroomsterkte"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Hoeveel lading er per seconde door de draad gaat, meet je in ampère. Dat past bij Stroomsterkte: lading per seconde.",
+      "uo": [
+       "Nee, dat hoort bij Vermogen: energie per seconde.",
+       "Nee, dat hoort bij Spanning: de elektrische duw.",
+       "Nee, dat hoort bij Weerstand: werkt de stroom tegen.",
+       "Klopt: lading per seconde."
+      ],
+      "uh": "Stroomsterkte: lading per seconde."
+     },
+     {
+      "v": "Datgene wat de stroom tegenwerkt, in ohm. Welk begrip herken je hier?",
+      "o": [
+       "Weerstand",
+       "Stroomsterkte",
+       "Spanning",
+       "Elektrische energie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Datgene wat de stroom tegenwerkt, in ohm. Dat past bij Weerstand: werkt de stroom tegen.",
+      "uo": [
+       "Klopt: werkt de stroom tegen.",
+       "Nee, dat hoort bij Stroomsterkte: lading per seconde.",
+       "Nee, dat hoort bij Spanning: de elektrische duw.",
+       "Nee, dat hoort bij Elektrische energie: gebruikte energie."
+      ],
+      "uh": "Weerstand: werkt de stroom tegen."
+     },
+     {
+      "v": "Een verbinding met veel te weinig weerstand. Wat is hier aan de hand?",
+      "o": [
+       "Wet van Ohm",
+       "Kortsluiting",
+       "Isolator",
+       "Parallelschakeling"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een verbinding met veel te weinig weerstand. Dat past bij Kortsluiting: te weinig weerstand.",
+      "uo": [
+       "Nee, dat hoort bij Wet van Ohm: U is I maal R.",
+       "Klopt: te weinig weerstand.",
+       "Nee, dat hoort bij Isolator: laat geen stroom door.",
+       "Nee, dat hoort bij Parallelschakeling: takken naast elkaar."
+      ],
+      "uh": "Kortsluiting: te weinig weerstand."
      }
     ],
     "begrippen": [
@@ -15098,6 +16048,462 @@ var VAKKEN_VMBO = [
        "Klopt: de jas isoleert en houdt je warmte binnen."
       ],
       "uh": "Om warmte binnen te houden: De jas isoleert en houdt je warmte binnen."
+     },
+     {
+      "v": "Een stof die warmte goed doorlaat. Welk begrip past hierbij?",
+      "o": [
+       "Warmtegeleider",
+       "Rendement",
+       "Zuurstof",
+       "Isolatie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een stof die warmte goed doorlaat. Dat past bij Warmtegeleider: laat warmte door.",
+      "uo": [
+       "Klopt: laat warmte door.",
+       "Nee, dat hoort bij Rendement: nuttig deel van de energie.",
+       "Nee, dat hoort bij Zuurstof: nodig voor verbranden.",
+       "Nee, dat hoort bij Isolatie: warmte tegenhouden."
+      ],
+      "uh": "Warmtegeleider: laat warmte door."
+     },
+     {
+      "v": "De warmte die nodig is om één kilogram één graad op te warmen. Om welk begrip gaat het?",
+      "o": [
+       "Rendement",
+       "Soortelijke warmte",
+       "Warmtegeleider",
+       "Isolatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De warmte die nodig is om één kilogram één graad op te warmen. Dat past bij Soortelijke warmte: warmte per kg per graad.",
+      "uo": [
+       "Nee, dat hoort bij Rendement: nuttig deel van de energie.",
+       "Klopt: warmte per kg per graad.",
+       "Nee, dat hoort bij Warmtegeleider: laat warmte door.",
+       "Nee, dat hoort bij Isolatie: warmte tegenhouden."
+      ],
+      "uh": "Soortelijke warmte: warmte per kg per graad."
+     },
+     {
+      "v": "Een houten pannenlepel blijft koel aan het uiteinde. Welk begrip herken je hier?",
+      "o": [
+       "Convectie",
+       "Warmtestroming",
+       "Warmte-isolator",
+       "Isolatie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een houten pannenlepel blijft koel aan het uiteinde. Dat past bij Warmte-isolator: houdt warmte tegen.",
+      "uo": [
+       "Nee, dat hoort bij Convectie: stroming van warmte.",
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Klopt: houdt warmte tegen.",
+       "Nee, dat hoort bij Isolatie: warmte tegenhouden."
+      ],
+      "uh": "Warmte-isolator: houdt warmte tegen."
+     },
+     {
+      "v": "Warmtetransport door een stromende vloeistof of gas. Wat is hier aan de hand?",
+      "o": [
+       "Rendement",
+       "Warmtestroming",
+       "Soortelijke warmte",
+       "Convectie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Warmtetransport door een stromende vloeistof of gas. Dat past bij Convectie: stroming van warmte.",
+      "uo": [
+       "Nee, dat hoort bij Rendement: nuttig deel van de energie.",
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Nee, dat hoort bij Soortelijke warmte: warmte per kg per graad.",
+       "Klopt: stroming van warmte."
+      ],
+      "uh": "Convectie: stroming van warmte."
+     },
+     {
+      "v": "Een reactie van een brandstof met zuurstof. Welk begrip past hierbij?",
+      "o": [
+       "Verbranding",
+       "Warmtegeleider",
+       "Convectie",
+       "Warmtegeleiding"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een reactie van een brandstof met zuurstof. Dat past bij Verbranding: reactie met zuurstof.",
+      "uo": [
+       "Klopt: reactie met zuurstof.",
+       "Nee, dat hoort bij Warmtegeleider: laat warmte door.",
+       "Nee, dat hoort bij Convectie: stroming van warmte.",
+       "Nee, dat hoort bij Warmtegeleiding: warmte door een stof."
+      ],
+      "uh": "Verbranding: reactie met zuurstof."
+     },
+     {
+      "v": "In een pan water stijgt het warme water op en zakt het koude. Om welk begrip gaat het?",
+      "o": [
+       "Warmtestroming",
+       "Convectie",
+       "Soortelijke warmte",
+       "Rendement"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In een pan water stijgt het warme water op en zakt het koude. Dat past bij Convectie: stroming van warmte.",
+      "uo": [
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Klopt: stroming van warmte.",
+       "Nee, dat hoort bij Soortelijke warmte: warmte per kg per graad.",
+       "Nee, dat hoort bij Rendement: nuttig deel van de energie."
+      ],
+      "uh": "Convectie: stroming van warmte."
+     },
+     {
+      "v": "Zonder dit gas uit de lucht kan een vuur niet branden. Welk begrip herken je hier?",
+      "o": [
+       "Warmtegeleiding",
+       "Warmtestroming",
+       "Zuurstof",
+       "Soortelijke warmte"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Zonder dit gas uit de lucht kan een vuur niet branden. Dat past bij Zuurstof: nodig voor verbranden.",
+      "uo": [
+       "Nee, dat hoort bij Warmtegeleiding: warmte door een stof.",
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Klopt: nodig voor verbranden.",
+       "Nee, dat hoort bij Soortelijke warmte: warmte per kg per graad."
+      ],
+      "uh": "Zuurstof: nodig voor verbranden."
+     },
+     {
+      "v": "Warmte die meebeweegt met een stromende stof. Wat is hier aan de hand?",
+      "o": [
+       "Verbranding",
+       "Warmtegeleiding",
+       "Warmtestraling",
+       "Warmtestroming"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Warmte die meebeweegt met een stromende stof. Dat past bij Warmtestroming: warmte met bewegende stof.",
+      "uo": [
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof.",
+       "Nee, dat hoort bij Warmtegeleiding: warmte door een stof.",
+       "Nee, dat hoort bij Warmtestraling: warmte via straling.",
+       "Klopt: warmte met bewegende stof."
+      ],
+      "uh": "Warmtestroming: warmte met bewegende stof."
+     },
+     {
+      "v": "Van alle energie die een lamp gebruikt, wordt maar een deel nuttig licht. Welk begrip past hierbij?",
+      "o": [
+       "Rendement",
+       "Verbranding",
+       "Isolatie",
+       "Warmtegeleiding"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Van alle energie die een lamp gebruikt, wordt maar een deel nuttig licht. Dat past bij Rendement: nuttig deel van de energie.",
+      "uo": [
+       "Klopt: nuttig deel van de energie.",
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof.",
+       "Nee, dat hoort bij Isolatie: warmte tegenhouden.",
+       "Nee, dat hoort bij Warmtegeleiding: warmte door een stof."
+      ],
+      "uh": "Rendement: nuttig deel van de energie."
+     },
+     {
+      "v": "Warme lucht boven de verwarming stijgt op en verspreidt de warmte. Om welk begrip gaat het?",
+      "o": [
+       "Warmtegeleiding",
+       "Warmtestroming",
+       "Warmtestraling",
+       "Verbranding"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Warme lucht boven de verwarming stijgt op en verspreidt de warmte. Dat past bij Warmtestroming: warmte met bewegende stof.",
+      "uo": [
+       "Nee, dat hoort bij Warmtegeleiding: warmte door een stof.",
+       "Klopt: warmte met bewegende stof.",
+       "Nee, dat hoort bij Warmtestraling: warmte via straling.",
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof."
+      ],
+      "uh": "Warmtestroming: warmte met bewegende stof."
+     },
+     {
+      "v": "Water heeft veel energie nodig om één graad op te warmen. Welk begrip herken je hier?",
+      "o": [
+       "Warmtestroming",
+       "Isolatie",
+       "Soortelijke warmte",
+       "Zuurstof"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Water heeft veel energie nodig om één graad op te warmen. Dat past bij Soortelijke warmte: warmte per kg per graad.",
+      "uo": [
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Nee, dat hoort bij Isolatie: warmte tegenhouden.",
+       "Klopt: warmte per kg per graad.",
+       "Nee, dat hoort bij Zuurstof: nodig voor verbranden."
+      ],
+      "uh": "Soortelijke warmte: warmte per kg per graad."
+     },
+     {
+      "v": "Het gas dat nodig is voor verbranding. Wat is hier aan de hand?",
+      "o": [
+       "Verbranding",
+       "Brandstof",
+       "Soortelijke warmte",
+       "Zuurstof"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het gas dat nodig is voor verbranding. Dat past bij Zuurstof: nodig voor verbranden.",
+      "uo": [
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof.",
+       "Nee, dat hoort bij Brandstof: stof die je verbrandt.",
+       "Nee, dat hoort bij Soortelijke warmte: warmte per kg per graad.",
+       "Klopt: nodig voor verbranden."
+      ],
+      "uh": "Zuurstof: nodig voor verbranden."
+     },
+     {
+      "v": "Een stof die warmte slecht doorlaat. Welk begrip past hierbij?",
+      "o": [
+       "Warmte-isolator",
+       "Warmtestroming",
+       "Convectie",
+       "Isolatie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een stof die warmte slecht doorlaat. Dat past bij Warmte-isolator: houdt warmte tegen.",
+      "uo": [
+       "Klopt: houdt warmte tegen.",
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Nee, dat hoort bij Convectie: stroming van warmte.",
+       "Nee, dat hoort bij Isolatie: warmte tegenhouden."
+      ],
+      "uh": "Warmte-isolator: houdt warmte tegen."
+     },
+     {
+      "v": "Hout brandt op doordat het met zuurstof reageert en warmte geeft. Om welk begrip gaat het?",
+      "o": [
+       "Isolatie",
+       "Verbranding",
+       "Warmtestroming",
+       "Convectie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Hout brandt op doordat het met zuurstof reageert en warmte geeft. Dat past bij Verbranding: reactie met zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Isolatie: warmte tegenhouden.",
+       "Klopt: reactie met zuurstof.",
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Nee, dat hoort bij Convectie: stroming van warmte."
+      ],
+      "uh": "Verbranding: reactie met zuurstof."
+     },
+     {
+      "v": "Het tegenhouden van warmte. Welk begrip herken je hier?",
+      "o": [
+       "Soortelijke warmte",
+       "Warmtegeleiding",
+       "Isolatie",
+       "Zuurstof"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het tegenhouden van warmte. Dat past bij Isolatie: warmte tegenhouden.",
+      "uo": [
+       "Nee, dat hoort bij Soortelijke warmte: warmte per kg per graad.",
+       "Nee, dat hoort bij Warmtegeleiding: warmte door een stof.",
+       "Klopt: warmte tegenhouden.",
+       "Nee, dat hoort bij Zuurstof: nodig voor verbranden."
+      ],
+      "uh": "Isolatie: warmte tegenhouden."
+     },
+     {
+      "v": "Dubbel glas houdt de warmte binnen in huis. Wat is hier aan de hand?",
+      "o": [
+       "Soortelijke warmte",
+       "Warmtestraling",
+       "Warmtestroming",
+       "Isolatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Dubbel glas houdt de warmte binnen in huis. Dat past bij Isolatie: warmte tegenhouden.",
+      "uo": [
+       "Nee, dat hoort bij Soortelijke warmte: warmte per kg per graad.",
+       "Nee, dat hoort bij Warmtestraling: warmte via straling.",
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Klopt: warmte tegenhouden."
+      ],
+      "uh": "Isolatie: warmte tegenhouden."
+     },
+     {
+      "v": "Warmte die zich door een vaste stof verplaatst. Welk begrip past hierbij?",
+      "o": [
+       "Warmtegeleiding",
+       "Warmtestroming",
+       "Warmtestraling",
+       "Verbranding"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Warmte die zich door een vaste stof verplaatst. Dat past bij Warmtegeleiding: warmte door een stof.",
+      "uo": [
+       "Klopt: warmte door een stof.",
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Nee, dat hoort bij Warmtestraling: warmte via straling.",
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof."
+      ],
+      "uh": "Warmtegeleiding: warmte door een stof."
+     },
+     {
+      "v": "Een metalen lepel wordt snel heet in de soep. Om welk begrip gaat het?",
+      "o": [
+       "Warmte-isolator",
+       "Warmtegeleider",
+       "Warmtestraling",
+       "Convectie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een metalen lepel wordt snel heet in de soep. Dat past bij Warmtegeleider: laat warmte door.",
+      "uo": [
+       "Nee, dat hoort bij Warmte-isolator: houdt warmte tegen.",
+       "Klopt: laat warmte door.",
+       "Nee, dat hoort bij Warmtestraling: warmte via straling.",
+       "Nee, dat hoort bij Convectie: stroming van warmte."
+      ],
+      "uh": "Warmtegeleider: laat warmte door."
+     },
+     {
+      "v": "De zon warmt je gezicht op zonder dat er iets tussen zit. Welk begrip herken je hier?",
+      "o": [
+       "Brandstof",
+       "Warmtegeleider",
+       "Warmtestraling",
+       "Zuurstof"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De zon warmt je gezicht op zonder dat er iets tussen zit. Dat past bij Warmtestraling: warmte via straling.",
+      "uo": [
+       "Nee, dat hoort bij Brandstof: stof die je verbrandt.",
+       "Nee, dat hoort bij Warmtegeleider: laat warmte door.",
+       "Klopt: warmte via straling.",
+       "Nee, dat hoort bij Zuurstof: nodig voor verbranden."
+      ],
+      "uh": "Warmtestraling: warmte via straling."
+     },
+     {
+      "v": "Een stof die je verbrandt om energie te krijgen. Wat is hier aan de hand?",
+      "o": [
+       "Verbranding",
+       "Zuurstof",
+       "Isolatie",
+       "Brandstof"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een stof die je verbrandt om energie te krijgen. Dat past bij Brandstof: stof die je verbrandt.",
+      "uo": [
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof.",
+       "Nee, dat hoort bij Zuurstof: nodig voor verbranden.",
+       "Nee, dat hoort bij Isolatie: warmte tegenhouden.",
+       "Klopt: stof die je verbrandt."
+      ],
+      "uh": "Brandstof: stof die je verbrandt."
+     },
+     {
+      "v": "De steel van een metalen pan wordt vanzelf ook heet. Welk begrip past hierbij?",
+      "o": [
+       "Warmtegeleiding",
+       "Warmtestroming",
+       "Warmtestraling",
+       "Zuurstof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De steel van een metalen pan wordt vanzelf ook heet. Dat past bij Warmtegeleiding: warmte door een stof.",
+      "uo": [
+       "Klopt: warmte door een stof.",
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Nee, dat hoort bij Warmtestraling: warmte via straling.",
+       "Nee, dat hoort bij Zuurstof: nodig voor verbranden."
+      ],
+      "uh": "Warmtegeleiding: warmte door een stof."
+     },
+     {
+      "v": "In de kachel stook je hout of gas om warmte te krijgen. Om welk begrip gaat het?",
+      "o": [
+       "Verbranding",
+       "Brandstof",
+       "Isolatie",
+       "Warmtegeleiding"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "In de kachel stook je hout of gas om warmte te krijgen. Dat past bij Brandstof: stof die je verbrandt.",
+      "uo": [
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof.",
+       "Klopt: stof die je verbrandt.",
+       "Nee, dat hoort bij Isolatie: warmte tegenhouden.",
+       "Nee, dat hoort bij Warmtegeleiding: warmte door een stof."
+      ],
+      "uh": "Brandstof: stof die je verbrandt."
+     },
+     {
+      "v": "Warmte die via straling door de lege ruimte gaat. Welk begrip herken je hier?",
+      "o": [
+       "Warmtegeleiding",
+       "Warmtestroming",
+       "Warmtestraling",
+       "Warmtegeleider"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Warmte die via straling door de lege ruimte gaat. Dat past bij Warmtestraling: warmte via straling.",
+      "uo": [
+       "Nee, dat hoort bij Warmtegeleiding: warmte door een stof.",
+       "Nee, dat hoort bij Warmtestroming: warmte met bewegende stof.",
+       "Klopt: warmte via straling.",
+       "Nee, dat hoort bij Warmtegeleider: laat warmte door."
+      ],
+      "uh": "Warmtestraling: warmte via straling."
+     },
+     {
+      "v": "Het deel van de energie dat nuttig wordt gebruikt. Wat is hier aan de hand?",
+      "o": [
+       "Convectie",
+       "Soortelijke warmte",
+       "Zuurstof",
+       "Rendement"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het deel van de energie dat nuttig wordt gebruikt. Dat past bij Rendement: nuttig deel van de energie.",
+      "uo": [
+       "Nee, dat hoort bij Convectie: stroming van warmte.",
+       "Nee, dat hoort bij Soortelijke warmte: warmte per kg per graad.",
+       "Nee, dat hoort bij Zuurstof: nodig voor verbranden.",
+       "Klopt: nuttig deel van de energie."
+      ],
+      "uh": "Rendement: nuttig deel van de energie."
      }
     ],
     "begrippen": [
@@ -15394,6 +16800,443 @@ var VAKKEN_VMBO = [
        "Klopt: een bolle lens."
       ],
       "uh": "Een bolle lens."
+     },
+     {
+      "v": "Een beeld dat je op een scherm kunt opvangen. Welk begrip past hierbij?",
+      "o": [
+       "Reëel beeld",
+       "Brandpunt",
+       "Terugkaatsing",
+       "Lichtstraal"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een beeld dat je op een scherm kunt opvangen. Dat past bij Reëel beeld: op te vangen op scherm.",
+      "uo": [
+       "Klopt: op te vangen op scherm.",
+       "Nee, dat hoort bij Brandpunt: punt waar licht samenkomt.",
+       "Nee, dat hoort bij Terugkaatsing: licht weerkaatst.",
+       "Nee, dat hoort bij Lichtstraal: richting van licht."
+      ],
+      "uh": "Reëel beeld: op te vangen op scherm."
+     },
+     {
+      "v": "De afbeelding die door een lens of spiegel ontstaat. Om welk begrip gaat het?",
+      "o": [
+       "Reëel beeld",
+       "Beeld",
+       "Virtueel beeld",
+       "Lichtbreking"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De afbeelding die door een lens of spiegel ontstaat. Dat past bij Beeld: afbeelding via lens/spiegel.",
+      "uo": [
+       "Nee, dat hoort bij Reëel beeld: op te vangen op scherm.",
+       "Klopt: afbeelding via lens/spiegel.",
+       "Nee, dat hoort bij Virtueel beeld: niet op te vangen.",
+       "Nee, dat hoort bij Lichtbreking: licht verandert richting."
+      ],
+      "uh": "Beeld: afbeelding via lens/spiegel."
+     },
+     {
+      "v": "Het beeld in de spiegel kun je niet op een scherm opvangen. Welk begrip herken je hier?",
+      "o": [
+       "Brandpunt",
+       "Invalshoek",
+       "Virtueel beeld",
+       "Lens"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het beeld in de spiegel kun je niet op een scherm opvangen. Dat past bij Virtueel beeld: niet op te vangen.",
+      "uo": [
+       "Nee, dat hoort bij Brandpunt: punt waar licht samenkomt.",
+       "Nee, dat hoort bij Invalshoek: hoek van inval.",
+       "Klopt: niet op te vangen.",
+       "Nee, dat hoort bij Lens: bundelt of spreidt licht."
+      ],
+      "uh": "Virtueel beeld: niet op te vangen."
+     },
+     {
+      "v": "Het weerkaatsen van licht op een oppervlak. Wat is hier aan de hand?",
+      "o": [
+       "Invalshoek",
+       "Spiegeling",
+       "Lichtbreking",
+       "Terugkaatsing"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het weerkaatsen van licht op een oppervlak. Dat past bij Terugkaatsing: licht weerkaatst.",
+      "uo": [
+       "Nee, dat hoort bij Invalshoek: hoek van inval.",
+       "Nee, dat hoort bij Spiegeling: licht kaatst terug.",
+       "Nee, dat hoort bij Lichtbreking: licht verandert richting.",
+       "Klopt: licht weerkaatst."
+      ],
+      "uh": "Terugkaatsing: licht weerkaatst."
+     },
+     {
+      "v": "Een lens die het licht bundelt. Welk begrip past hierbij?",
+      "o": [
+       "Bolle lens",
+       "Beeld",
+       "Brandpunt",
+       "Lichtstraal"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een lens die het licht bundelt. Dat past bij Bolle lens: brengt licht samen.",
+      "uo": [
+       "Klopt: brengt licht samen.",
+       "Nee, dat hoort bij Beeld: afbeelding via lens/spiegel.",
+       "Nee, dat hoort bij Brandpunt: punt waar licht samenkomt.",
+       "Nee, dat hoort bij Lichtstraal: richting van licht."
+      ],
+      "uh": "Bolle lens: brengt licht samen."
+     },
+     {
+      "v": "Het licht botst op de spiegel en gaat weer terug. Om welk begrip gaat het?",
+      "o": [
+       "Spiegeling",
+       "Terugkaatsing",
+       "Lichtbreking",
+       "Invalshoek"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het licht botst op de spiegel en gaat weer terug. Dat past bij Terugkaatsing: licht weerkaatst.",
+      "uo": [
+       "Nee, dat hoort bij Spiegeling: licht kaatst terug.",
+       "Klopt: licht weerkaatst.",
+       "Nee, dat hoort bij Lichtbreking: licht verandert richting.",
+       "Nee, dat hoort bij Invalshoek: hoek van inval."
+      ],
+      "uh": "Terugkaatsing: licht weerkaatst."
+     },
+     {
+      "v": "Achter een bolle lens komen alle stralen in één punt samen. Welk begrip herken je hier?",
+      "o": [
+       "Lens",
+       "Holle lens",
+       "Brandpunt",
+       "Lichtstraal"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Achter een bolle lens komen alle stralen in één punt samen. Dat past bij Brandpunt: punt waar licht samenkomt.",
+      "uo": [
+       "Nee, dat hoort bij Lens: bundelt of spreidt licht.",
+       "Nee, dat hoort bij Holle lens: spreidt licht.",
+       "Klopt: punt waar licht samenkomt.",
+       "Nee, dat hoort bij Lichtstraal: richting van licht."
+      ],
+      "uh": "Brandpunt: punt waar licht samenkomt."
+     },
+     {
+      "v": "Het terugkaatsen van licht op een oppervlak. Wat is hier aan de hand?",
+      "o": [
+       "Reëel beeld",
+       "Lichtbreking",
+       "Invalshoek",
+       "Spiegeling"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het terugkaatsen van licht op een oppervlak. Dat past bij Spiegeling: licht kaatst terug.",
+      "uo": [
+       "Nee, dat hoort bij Reëel beeld: op te vangen op scherm.",
+       "Nee, dat hoort bij Lichtbreking: licht verandert richting.",
+       "Nee, dat hoort bij Invalshoek: hoek van inval.",
+       "Klopt: licht kaatst terug."
+      ],
+      "uh": "Spiegeling: licht kaatst terug."
+     },
+     {
+      "v": "De hoek waaronder de lichtstraal op de spiegel valt. Welk begrip past hierbij?",
+      "o": [
+       "Invalshoek",
+       "Terugkaatsing",
+       "Lens",
+       "Virtueel beeld"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De hoek waaronder de lichtstraal op de spiegel valt. Dat past bij Invalshoek: hoek van inval.",
+      "uo": [
+       "Klopt: hoek van inval.",
+       "Nee, dat hoort bij Terugkaatsing: licht weerkaatst.",
+       "Nee, dat hoort bij Lens: bundelt of spreidt licht.",
+       "Nee, dat hoort bij Virtueel beeld: niet op te vangen."
+      ],
+      "uh": "Invalshoek: hoek van inval."
+     },
+     {
+      "v": "Het licht kaatst terug op het gladde wateroppervlak. Om welk begrip gaat het?",
+      "o": [
+       "Beeld",
+       "Spiegeling",
+       "Brandpunt",
+       "Lichtstraal"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het licht kaatst terug op het gladde wateroppervlak. Dat past bij Spiegeling: licht kaatst terug.",
+      "uo": [
+       "Nee, dat hoort bij Beeld: afbeelding via lens/spiegel.",
+       "Klopt: licht kaatst terug.",
+       "Nee, dat hoort bij Brandpunt: punt waar licht samenkomt.",
+       "Nee, dat hoort bij Lichtstraal: richting van licht."
+      ],
+      "uh": "Spiegeling: licht kaatst terug."
+     },
+     {
+      "v": "Via de lens ontstaat een afbeelding van het voorwerp. Welk begrip herken je hier?",
+      "o": [
+       "Virtueel beeld",
+       "Reëel beeld",
+       "Beeld",
+       "Lens"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Via de lens ontstaat een afbeelding van het voorwerp. Dat past bij Beeld: afbeelding via lens/spiegel.",
+      "uo": [
+       "Nee, dat hoort bij Virtueel beeld: niet op te vangen.",
+       "Nee, dat hoort bij Reëel beeld: op te vangen op scherm.",
+       "Klopt: afbeelding via lens/spiegel.",
+       "Nee, dat hoort bij Lens: bundelt of spreidt licht."
+      ],
+      "uh": "Beeld: afbeelding via lens/spiegel."
+     },
+     {
+      "v": "Het punt waar een bolle lens het licht samenbrengt. Wat is hier aan de hand?",
+      "o": [
+       "Terugkaatsing",
+       "Bolle lens",
+       "Reëel beeld",
+       "Brandpunt"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het punt waar een bolle lens het licht samenbrengt. Dat past bij Brandpunt: punt waar licht samenkomt.",
+      "uo": [
+       "Nee, dat hoort bij Terugkaatsing: licht weerkaatst.",
+       "Nee, dat hoort bij Bolle lens: brengt licht samen.",
+       "Nee, dat hoort bij Reëel beeld: op te vangen op scherm.",
+       "Klopt: punt waar licht samenkomt."
+      ],
+      "uh": "Brandpunt: punt waar licht samenkomt."
+     },
+     {
+      "v": "Een beeld dat je niet op een scherm kunt opvangen. Welk begrip past hierbij?",
+      "o": [
+       "Virtueel beeld",
+       "Invalshoek",
+       "Brandpunt",
+       "Lens"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een beeld dat je niet op een scherm kunt opvangen. Dat past bij Virtueel beeld: niet op te vangen.",
+      "uo": [
+       "Klopt: niet op te vangen.",
+       "Nee, dat hoort bij Invalshoek: hoek van inval.",
+       "Nee, dat hoort bij Brandpunt: punt waar licht samenkomt.",
+       "Nee, dat hoort bij Lens: bundelt of spreidt licht."
+      ],
+      "uh": "Virtueel beeld: niet op te vangen."
+     },
+     {
+      "v": "Deze lens brengt de lichtstralen samen in één punt. Om welk begrip gaat het?",
+      "o": [
+       "Holle lens",
+       "Bolle lens",
+       "Invalshoek",
+       "Reëel beeld"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Deze lens brengt de lichtstralen samen in één punt. Dat past bij Bolle lens: brengt licht samen.",
+      "uo": [
+       "Nee, dat hoort bij Holle lens: spreidt licht.",
+       "Klopt: brengt licht samen.",
+       "Nee, dat hoort bij Invalshoek: hoek van inval.",
+       "Nee, dat hoort bij Reëel beeld: op te vangen op scherm."
+      ],
+      "uh": "Bolle lens: brengt licht samen."
+     },
+     {
+      "v": "Een gebogen stuk glas dat licht bundelt of spreidt. Welk begrip herken je hier?",
+      "o": [
+       "Holle lens",
+       "Bolle lens",
+       "Lens",
+       "Beeld"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een gebogen stuk glas dat licht bundelt of spreidt. Dat past bij Lens: bundelt of spreidt licht.",
+      "uo": [
+       "Nee, dat hoort bij Holle lens: spreidt licht.",
+       "Nee, dat hoort bij Bolle lens: brengt licht samen.",
+       "Klopt: bundelt of spreidt licht.",
+       "Nee, dat hoort bij Beeld: afbeelding via lens/spiegel."
+      ],
+      "uh": "Lens: bundelt of spreidt licht."
+     },
+     {
+      "v": "Door dit gebogen stukje glas zie je dingen groter of kleiner. Wat is hier aan de hand?",
+      "o": [
+       "Beeld",
+       "Lichtstraal",
+       "Spiegeling",
+       "Lens"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Door dit gebogen stukje glas zie je dingen groter of kleiner. Dat past bij Lens: bundelt of spreidt licht.",
+      "uo": [
+       "Nee, dat hoort bij Beeld: afbeelding via lens/spiegel.",
+       "Nee, dat hoort bij Lichtstraal: richting van licht.",
+       "Nee, dat hoort bij Spiegeling: licht kaatst terug.",
+       "Klopt: bundelt of spreidt licht."
+      ],
+      "uh": "Lens: bundelt of spreidt licht."
+     },
+     {
+      "v": "De rechte lijn die de richting van licht aangeeft. Welk begrip past hierbij?",
+      "o": [
+       "Lichtstraal",
+       "Lichtbreking",
+       "Lens",
+       "Terugkaatsing"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De rechte lijn die de richting van licht aangeeft. Dat past bij Lichtstraal: richting van licht.",
+      "uo": [
+       "Klopt: richting van licht.",
+       "Nee, dat hoort bij Lichtbreking: licht verandert richting.",
+       "Nee, dat hoort bij Lens: bundelt of spreidt licht.",
+       "Nee, dat hoort bij Terugkaatsing: licht weerkaatst."
+      ],
+      "uh": "Lichtstraal: richting van licht."
+     },
+     {
+      "v": "Dit beeld kun je opvangen op een scherm, zoals in de bioscoop. Om welk begrip gaat het?",
+      "o": [
+       "Virtueel beeld",
+       "Reëel beeld",
+       "Lens",
+       "Bolle lens"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Dit beeld kun je opvangen op een scherm, zoals in de bioscoop. Dat past bij Reëel beeld: op te vangen op scherm.",
+      "uo": [
+       "Nee, dat hoort bij Virtueel beeld: niet op te vangen.",
+       "Klopt: op te vangen op scherm.",
+       "Nee, dat hoort bij Lens: bundelt of spreidt licht.",
+       "Nee, dat hoort bij Bolle lens: brengt licht samen."
+      ],
+      "uh": "Reëel beeld: op te vangen op scherm."
+     },
+     {
+      "v": "Een lens die het licht spreidt. Wat is hier aan de hand?",
+      "o": [
+       "Brandpunt",
+       "Beeld",
+       "Holle lens",
+       "Lichtstraal"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een lens die het licht spreidt. Dat past bij Holle lens: spreidt licht.",
+      "uo": [
+       "Nee, dat hoort bij Brandpunt: punt waar licht samenkomt.",
+       "Nee, dat hoort bij Beeld: afbeelding via lens/spiegel.",
+       "Klopt: spreidt licht.",
+       "Nee, dat hoort bij Lichtstraal: richting van licht."
+      ],
+      "uh": "Holle lens: spreidt licht."
+     },
+     {
+      "v": "Een dunne bundel licht gaat in een rechte lijn vooruit. Welk begrip past hierbij?",
+      "o": [
+       "Terugkaatsing",
+       "Lichtbreking",
+       "Lens",
+       "Lichtstraal"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een dunne bundel licht gaat in een rechte lijn vooruit. Dat past bij Lichtstraal: richting van licht.",
+      "uo": [
+       "Nee, dat hoort bij Terugkaatsing: licht weerkaatst.",
+       "Nee, dat hoort bij Lichtbreking: licht verandert richting.",
+       "Nee, dat hoort bij Lens: bundelt of spreidt licht.",
+       "Klopt: richting van licht."
+      ],
+      "uh": "Lichtstraal: richting van licht."
+     },
+     {
+      "v": "Deze lens laat de lichtstralen juist uit elkaar gaan. Om welk begrip gaat het?",
+      "o": [
+       "Holle lens",
+       "Bolle lens",
+       "Lens",
+       "Terugkaatsing"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Deze lens laat de lichtstralen juist uit elkaar gaan. Dat past bij Holle lens: spreidt licht.",
+      "uo": [
+       "Klopt: spreidt licht.",
+       "Nee, dat hoort bij Bolle lens: brengt licht samen.",
+       "Nee, dat hoort bij Lens: bundelt of spreidt licht.",
+       "Nee, dat hoort bij Terugkaatsing: licht weerkaatst."
+      ],
+      "uh": "Holle lens: spreidt licht."
+     },
+     {
+      "v": "Het van richting veranderen van licht bij een overgang. Welk begrip herken je hier?",
+      "o": [
+       "Holle lens",
+       "Lichtbreking",
+       "Terugkaatsing",
+       "Beeld"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het van richting veranderen van licht bij een overgang. Dat past bij Lichtbreking: licht verandert richting.",
+      "uo": [
+       "Nee, dat hoort bij Holle lens: spreidt licht.",
+       "Klopt: licht verandert richting.",
+       "Nee, dat hoort bij Terugkaatsing: licht weerkaatst.",
+       "Nee, dat hoort bij Beeld: afbeelding via lens/spiegel."
+      ],
+      "uh": "Lichtbreking: licht verandert richting."
+     },
+     {
+      "v": "De hoek tussen de invallende straal en de loodlijn. Wat is hier aan de hand?",
+      "o": [
+       "Reëel beeld",
+       "Terugkaatsing",
+       "Invalshoek",
+       "Brandpunt"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De hoek tussen de invallende straal en de loodlijn. Dat past bij Invalshoek: hoek van inval.",
+      "uo": [
+       "Nee, dat hoort bij Reëel beeld: op te vangen op scherm.",
+       "Nee, dat hoort bij Terugkaatsing: licht weerkaatst.",
+       "Klopt: hoek van inval.",
+       "Nee, dat hoort bij Brandpunt: punt waar licht samenkomt."
+      ],
+      "uh": "Invalshoek: hoek van inval."
      }
     ],
     "begrippen": [
@@ -15690,6 +17533,443 @@ var VAKKEN_VMBO = [
        "Klopt: een lage toon heeft een lage frequentie."
       ],
       "uh": "lage frequentie: Een lage toon heeft een lage frequentie."
+     },
+     {
+      "v": "Geluid dat wordt teruggekaatst. Welk begrip past hierbij?",
+      "o": [
+       "Echo",
+       "Trilling",
+       "Geluid",
+       "Decibel"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Geluid dat wordt teruggekaatst. Dat past bij Echo: teruggekaatst geluid.",
+      "uo": [
+       "Klopt: teruggekaatst geluid.",
+       "Nee, dat hoort bij Trilling: heen en weer bewegen.",
+       "Nee, dat hoort bij Geluid: voortplantende trillingen.",
+       "Nee, dat hoort bij Decibel: eenheid van sterkte."
+      ],
+      "uh": "Echo: teruggekaatst geluid."
+     },
+     {
+      "v": "De snelheid waarmee geluid zich voortplant. Om welk begrip gaat het?",
+      "o": [
+       "Trilling",
+       "Geluidssnelheid",
+       "Decibel",
+       "Trillingstijd"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De snelheid waarmee geluid zich voortplant. Dat past bij Geluidssnelheid: snelheid van geluid.",
+      "uo": [
+       "Nee, dat hoort bij Trilling: heen en weer bewegen.",
+       "Klopt: snelheid van geluid.",
+       "Nee, dat hoort bij Decibel: eenheid van sterkte.",
+       "Nee, dat hoort bij Trillingstijd: tijd van één trilling."
+      ],
+      "uh": "Geluidssnelheid: snelheid van geluid."
+     },
+     {
+      "v": "De eenheid van geluidssterkte. Wat is hier aan de hand?",
+      "o": [
+       "Amplitude",
+       "Geluidssterkte",
+       "Decibel",
+       "Trillingstijd"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De eenheid van geluidssterkte. Dat past bij Decibel: eenheid van sterkte.",
+      "uo": [
+       "Nee, dat hoort bij Amplitude: grootte van de uitwijking.",
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude.",
+       "Klopt: eenheid van sterkte.",
+       "Nee, dat hoort bij Trillingstijd: tijd van één trilling."
+      ],
+      "uh": "Decibel: eenheid van sterkte."
+     },
+     {
+      "v": "De grootte van de uitwijking van een trilling. Welk begrip past hierbij?",
+      "o": [
+       "Geluid",
+       "Geluidssterkte",
+       "Toonhoogte",
+       "Amplitude"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De grootte van de uitwijking van een trilling. Dat past bij Amplitude: grootte van de uitwijking.",
+      "uo": [
+       "Nee, dat hoort bij Geluid: voortplantende trillingen.",
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude.",
+       "Nee, dat hoort bij Toonhoogte: hoog of laag, via frequentie.",
+       "Klopt: grootte van de uitwijking."
+      ],
+      "uh": "Amplitude: grootte van de uitwijking."
+     },
+     {
+      "v": "De sterkte van geluid meet je in deze eenheid. Om welk begrip gaat het?",
+      "o": [
+       "Decibel",
+       "Geluidssterkte",
+       "Amplitude",
+       "Trillingstijd"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De sterkte van geluid meet je in deze eenheid. Dat past bij Decibel: eenheid van sterkte.",
+      "uo": [
+       "Klopt: eenheid van sterkte.",
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude.",
+       "Nee, dat hoort bij Amplitude: grootte van de uitwijking.",
+       "Nee, dat hoort bij Trillingstijd: tijd van één trilling."
+      ],
+      "uh": "Decibel: eenheid van sterkte."
+     },
+     {
+      "v": "Hoe harder je slaat, hoe luider het geluid door de grotere uitwijking. Welk begrip herken je hier?",
+      "o": [
+       "Geluidsbron",
+       "Geluidssterkte",
+       "Echo",
+       "Trillingstijd"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Hoe harder je slaat, hoe luider het geluid door de grotere uitwijking. Dat past bij Geluidssterkte: hard of zacht, via amplitude.",
+      "uo": [
+       "Nee, dat hoort bij Geluidsbron: maakt het geluid.",
+       "Klopt: hard of zacht, via amplitude.",
+       "Nee, dat hoort bij Echo: teruggekaatst geluid.",
+       "Nee, dat hoort bij Trillingstijd: tijd van één trilling."
+      ],
+      "uh": "Geluidssterkte: hard of zacht, via amplitude."
+     },
+     {
+      "v": "Het heen en weer bewegen om een ruststand. Wat is hier aan de hand?",
+      "o": [
+       "Geluidssnelheid",
+       "Frequentie",
+       "Trilling",
+       "Geluidssterkte"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het heen en weer bewegen om een ruststand. Dat past bij Trilling: heen en weer bewegen.",
+      "uo": [
+       "Nee, dat hoort bij Geluidssnelheid: snelheid van geluid.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Klopt: heen en weer bewegen.",
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude."
+      ],
+      "uh": "Trilling: heen en weer bewegen."
+     },
+     {
+      "v": "De luidspreker maakt de trillingen die je hoort. Welk begrip past hierbij?",
+      "o": [
+       "Trilling",
+       "Geluidssnelheid",
+       "Decibel",
+       "Geluidsbron"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De luidspreker maakt de trillingen die je hoort. Dat past bij Geluidsbron: maakt het geluid.",
+      "uo": [
+       "Nee, dat hoort bij Trilling: heen en weer bewegen.",
+       "Nee, dat hoort bij Geluidssnelheid: snelheid van geluid.",
+       "Nee, dat hoort bij Decibel: eenheid van sterkte.",
+       "Klopt: maakt het geluid."
+      ],
+      "uh": "Geluidsbron: maakt het geluid."
+     },
+     {
+      "v": "Een gitaarsnaar beweegt snel heen en weer. Om welk begrip gaat het?",
+      "o": [
+       "Trilling",
+       "Frequentie",
+       "Geluidssnelheid",
+       "Geluidssterkte"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een gitaarsnaar beweegt snel heen en weer. Dat past bij Trilling: heen en weer bewegen.",
+      "uo": [
+       "Klopt: heen en weer bewegen.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Nee, dat hoort bij Geluidssnelheid: snelheid van geluid.",
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude."
+      ],
+      "uh": "Trilling: heen en weer bewegen."
+     },
+     {
+      "v": "Geluid gaat door lucht met ongeveer 340 meter per seconde. Welk begrip herken je hier?",
+      "o": [
+       "Trilling",
+       "Geluidssnelheid",
+       "Decibel",
+       "Trillingstijd"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Geluid gaat door lucht met ongeveer 340 meter per seconde. Dat past bij Geluidssnelheid: snelheid van geluid.",
+      "uo": [
+       "Nee, dat hoort bij Trilling: heen en weer bewegen.",
+       "Klopt: snelheid van geluid.",
+       "Nee, dat hoort bij Decibel: eenheid van sterkte.",
+       "Nee, dat hoort bij Trillingstijd: tijd van één trilling."
+      ],
+      "uh": "Geluidssnelheid: snelheid van geluid."
+     },
+     {
+      "v": "Hoe hard of zacht een geluid is, bepaald door de amplitude. Wat is hier aan de hand?",
+      "o": [
+       "Trillingstijd",
+       "Toonhoogte",
+       "Geluidssterkte",
+       "Trilling"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Hoe hard of zacht een geluid is, bepaald door de amplitude. Dat past bij Geluidssterkte: hard of zacht, via amplitude.",
+      "uo": [
+       "Nee, dat hoort bij Trillingstijd: tijd van één trilling.",
+       "Nee, dat hoort bij Toonhoogte: hoog of laag, via frequentie.",
+       "Klopt: hard of zacht, via amplitude.",
+       "Nee, dat hoort bij Trilling: heen en weer bewegen."
+      ],
+      "uh": "Geluidssterkte: hard of zacht, via amplitude."
+     },
+     {
+      "v": "Afstand meten met behulp van een echo. Welk begrip past hierbij?",
+      "o": [
+       "Amplitude",
+       "Echo",
+       "Trillingstijd",
+       "Echopeiling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Afstand meten met behulp van een echo. Dat past bij Echopeiling: afstand meten met echo.",
+      "uo": [
+       "Nee, dat hoort bij Amplitude: grootte van de uitwijking.",
+       "Nee, dat hoort bij Echo: teruggekaatst geluid.",
+       "Nee, dat hoort bij Trillingstijd: tijd van één trilling.",
+       "Klopt: afstand meten met echo."
+      ],
+      "uh": "Echopeiling: afstand meten met echo."
+     },
+     {
+      "v": "Hoe ver de snaar maximaal uit zijn ruststand komt. Om welk begrip gaat het?",
+      "o": [
+       "Amplitude",
+       "Geluidssterkte",
+       "Toonhoogte",
+       "Geluid"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Hoe ver de snaar maximaal uit zijn ruststand komt. Dat past bij Amplitude: grootte van de uitwijking.",
+      "uo": [
+       "Klopt: grootte van de uitwijking.",
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude.",
+       "Nee, dat hoort bij Toonhoogte: hoog of laag, via frequentie.",
+       "Nee, dat hoort bij Geluid: voortplantende trillingen."
+      ],
+      "uh": "Amplitude: grootte van de uitwijking."
+     },
+     {
+      "v": "De tijd van één trilling. Welk begrip herken je hier?",
+      "o": [
+       "Frequentie",
+       "Trillingstijd",
+       "Trilling",
+       "Geluidssterkte"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De tijd van één trilling. Dat past bij Trillingstijd: tijd van één trilling.",
+      "uo": [
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Klopt: tijd van één trilling.",
+       "Nee, dat hoort bij Trilling: heen en weer bewegen.",
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude."
+      ],
+      "uh": "Trillingstijd: tijd van één trilling."
+     },
+     {
+      "v": "De tijd die één volledige trilling duurt. Wat is hier aan de hand?",
+      "o": [
+       "Trilling",
+       "Frequentie",
+       "Trillingstijd",
+       "Decibel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De tijd die één volledige trilling duurt. Dat past bij Trillingstijd: tijd van één trilling.",
+      "uo": [
+       "Nee, dat hoort bij Trilling: heen en weer bewegen.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Klopt: tijd van één trilling.",
+       "Nee, dat hoort bij Decibel: eenheid van sterkte."
+      ],
+      "uh": "Trillingstijd: tijd van één trilling."
+     },
+     {
+      "v": "Trillingen die zich door de lucht voortplanten. Welk begrip past hierbij?",
+      "o": [
+       "Frequentie",
+       "Geluidsbron",
+       "Decibel",
+       "Geluid"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Trillingen die zich door de lucht voortplanten. Dat past bij Geluid: voortplantende trillingen.",
+      "uo": [
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Nee, dat hoort bij Geluidsbron: maakt het geluid.",
+       "Nee, dat hoort bij Decibel: eenheid van sterkte.",
+       "Klopt: voortplantende trillingen."
+      ],
+      "uh": "Geluid: voortplantende trillingen."
+     },
+     {
+      "v": "Je roept in de bergen en hoort je stem even later terug. Om welk begrip gaat het?",
+      "o": [
+       "Echo",
+       "Echopeiling",
+       "Trilling",
+       "Geluid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je roept in de bergen en hoort je stem even later terug. Dat past bij Echo: teruggekaatst geluid.",
+      "uo": [
+       "Klopt: teruggekaatst geluid.",
+       "Nee, dat hoort bij Echopeiling: afstand meten met echo.",
+       "Nee, dat hoort bij Trilling: heen en weer bewegen.",
+       "Nee, dat hoort bij Geluid: voortplantende trillingen."
+      ],
+      "uh": "Echo: teruggekaatst geluid."
+     },
+     {
+      "v": "Het aantal trillingen per seconde, gemeten in hertz. Welk begrip herken je hier?",
+      "o": [
+       "Trillingstijd",
+       "Frequentie",
+       "Toonhoogte",
+       "Decibel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het aantal trillingen per seconde, gemeten in hertz. Dat past bij Frequentie: trillingen per seconde.",
+      "uo": [
+       "Nee, dat hoort bij Trillingstijd: tijd van één trilling.",
+       "Klopt: trillingen per seconde.",
+       "Nee, dat hoort bij Toonhoogte: hoog of laag, via frequentie.",
+       "Nee, dat hoort bij Decibel: eenheid van sterkte."
+      ],
+      "uh": "Frequentie: trillingen per seconde."
+     },
+     {
+      "v": "Hoe hoog of laag een toon klinkt, bepaald door de frequentie. Wat is hier aan de hand?",
+      "o": [
+       "Amplitude",
+       "Geluidssnelheid",
+       "Toonhoogte",
+       "Geluid"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Hoe hoog of laag een toon klinkt, bepaald door de frequentie. Dat past bij Toonhoogte: hoog of laag, via frequentie.",
+      "uo": [
+       "Nee, dat hoort bij Amplitude: grootte van de uitwijking.",
+       "Nee, dat hoort bij Geluidssnelheid: snelheid van geluid.",
+       "Klopt: hoog of laag, via frequentie.",
+       "Nee, dat hoort bij Geluid: voortplantende trillingen."
+      ],
+      "uh": "Toonhoogte: hoog of laag, via frequentie."
+     },
+     {
+      "v": "Trillingen planten zich door de lucht voort en bereiken je oor. Welk begrip past hierbij?",
+      "o": [
+       "Geluidssterkte",
+       "Trilling",
+       "Geluidssnelheid",
+       "Geluid"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Trillingen planten zich door de lucht voort en bereiken je oor. Dat past bij Geluid: voortplantende trillingen.",
+      "uo": [
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude.",
+       "Nee, dat hoort bij Trilling: heen en weer bewegen.",
+       "Nee, dat hoort bij Geluidssnelheid: snelheid van geluid.",
+       "Klopt: voortplantende trillingen."
+      ],
+      "uh": "Geluid: voortplantende trillingen."
+     },
+     {
+      "v": "Een fluit klinkt hoger dan een basgitaar door de snellere trilling. Om welk begrip gaat het?",
+      "o": [
+       "Toonhoogte",
+       "Geluidssterkte",
+       "Trillingstijd",
+       "Decibel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een fluit klinkt hoger dan een basgitaar door de snellere trilling. Dat past bij Toonhoogte: hoog of laag, via frequentie.",
+      "uo": [
+       "Klopt: hoog of laag, via frequentie.",
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude.",
+       "Nee, dat hoort bij Trillingstijd: tijd van één trilling.",
+       "Nee, dat hoort bij Decibel: eenheid van sterkte."
+      ],
+      "uh": "Toonhoogte: hoog of laag, via frequentie."
+     },
+     {
+      "v": "Het aantal trillingen per seconde. Welk begrip herken je hier?",
+      "o": [
+       "Geluidssnelheid",
+       "Frequentie",
+       "Geluidssterkte",
+       "Geluid"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het aantal trillingen per seconde. Dat past bij Frequentie: trillingen per seconde.",
+      "uo": [
+       "Nee, dat hoort bij Geluidssnelheid: snelheid van geluid.",
+       "Klopt: trillingen per seconde.",
+       "Nee, dat hoort bij Geluidssterkte: hard of zacht, via amplitude.",
+       "Nee, dat hoort bij Geluid: voortplantende trillingen."
+      ],
+      "uh": "Frequentie: trillingen per seconde."
+     },
+     {
+      "v": "Datgene wat het geluid maakt. Wat is hier aan de hand?",
+      "o": [
+       "Frequentie",
+       "Geluid",
+       "Geluidsbron",
+       "Decibel"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Datgene wat het geluid maakt. Dat past bij Geluidsbron: maakt het geluid.",
+      "uo": [
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Nee, dat hoort bij Geluid: voortplantende trillingen.",
+       "Klopt: maakt het geluid.",
+       "Nee, dat hoort bij Decibel: eenheid van sterkte."
+      ],
+      "uh": "Geluidsbron: maakt het geluid."
      }
     ],
     "begrippen": [
@@ -15986,6 +18266,462 @@ var VAKKEN_VMBO = [
        "Klopt: bij hoge snelheid is de stopafstand groter."
       ],
       "uh": "De stopafstand is groter: Bij hoge snelheid is de stopafstand groter."
+     },
+     {
+      "v": "De afstand die je aflegt tijdens het remmen. Welk begrip past hierbij?",
+      "o": [
+       "Remweg",
+       "Stopafstand",
+       "Reactietijd",
+       "Kracht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De afstand die je aflegt tijdens het remmen. Dat past bij Remweg: afstand tijdens remmen.",
+      "uo": [
+       "Klopt: afstand tijdens remmen.",
+       "Nee, dat hoort bij Stopafstand: reactieafstand plus remweg.",
+       "Nee, dat hoort bij Reactietijd: tijd van zien tot reageren.",
+       "Nee, dat hoort bij Kracht: duw of trek."
+      ],
+      "uh": "Remweg: afstand tijdens remmen."
+     },
+     {
+      "v": "Het draai-effect van een kracht. Om welk begrip gaat het?",
+      "o": [
+       "Stopafstand",
+       "Moment",
+       "Wrijvingskracht",
+       "Zwaartekracht"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het draai-effect van een kracht. Dat past bij Moment: draai-effect van kracht.",
+      "uo": [
+       "Nee, dat hoort bij Stopafstand: reactieafstand plus remweg.",
+       "Klopt: draai-effect van kracht.",
+       "Nee, dat hoort bij Wrijvingskracht: werkt beweging tegen.",
+       "Nee, dat hoort bij Zwaartekracht: aantrekking van de aarde."
+      ],
+      "uh": "Moment: draai-effect van kracht."
+     },
+     {
+      "v": "De tijd tussen het zien van gevaar en het intrappen van de rem. Welk begrip herken je hier?",
+      "o": [
+       "Resultante",
+       "Remweg",
+       "Reactietijd",
+       "Evenwicht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De tijd tussen het zien van gevaar en het intrappen van de rem. Dat past bij Reactietijd: tijd van zien tot reageren.",
+      "uo": [
+       "Nee, dat hoort bij Resultante: som van de krachten.",
+       "Nee, dat hoort bij Remweg: afstand tijdens remmen.",
+       "Klopt: tijd van zien tot reageren.",
+       "Nee, dat hoort bij Evenwicht: krachten heffen elkaar op."
+      ],
+      "uh": "Reactietijd: tijd van zien tot reageren."
+     },
+     {
+      "v": "De kracht die een beweging tegenwerkt. Wat is hier aan de hand?",
+      "o": [
+       "Evenwicht",
+       "Newton",
+       "Stopafstand",
+       "Wrijvingskracht"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De kracht die een beweging tegenwerkt. Dat past bij Wrijvingskracht: werkt beweging tegen.",
+      "uo": [
+       "Nee, dat hoort bij Evenwicht: krachten heffen elkaar op.",
+       "Nee, dat hoort bij Newton: eenheid van kracht.",
+       "Nee, dat hoort bij Stopafstand: reactieafstand plus remweg.",
+       "Klopt: werkt beweging tegen."
+      ],
+      "uh": "Wrijvingskracht: werkt beweging tegen."
+     },
+     {
+      "v": "De toestand waarin de krachten elkaar opheffen. Welk begrip past hierbij?",
+      "o": [
+       "Evenwicht",
+       "Resultante",
+       "Remweg",
+       "Wrijvingskracht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De toestand waarin de krachten elkaar opheffen. Dat past bij Evenwicht: krachten heffen elkaar op.",
+      "uo": [
+       "Klopt: krachten heffen elkaar op.",
+       "Nee, dat hoort bij Resultante: som van de krachten.",
+       "Nee, dat hoort bij Remweg: afstand tijdens remmen.",
+       "Nee, dat hoort bij Wrijvingskracht: werkt beweging tegen."
+      ],
+      "uh": "Evenwicht: krachten heffen elkaar op."
+     },
+     {
+      "v": "Een rollende bal komt vanzelf tot stilstand door de wrijving. Om welk begrip gaat het?",
+      "o": [
+       "Newton",
+       "Wrijvingskracht",
+       "Stopafstand",
+       "Evenwicht"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een rollende bal komt vanzelf tot stilstand door de wrijving. Dat past bij Wrijvingskracht: werkt beweging tegen.",
+      "uo": [
+       "Nee, dat hoort bij Newton: eenheid van kracht.",
+       "Klopt: werkt beweging tegen.",
+       "Nee, dat hoort bij Stopafstand: reactieafstand plus remweg.",
+       "Nee, dat hoort bij Evenwicht: krachten heffen elkaar op."
+      ],
+      "uh": "Wrijvingskracht: werkt beweging tegen."
+     },
+     {
+      "v": "Het steunpunt waar de wip omheen kantelt. Welk begrip herken je hier?",
+      "o": [
+       "Remweg",
+       "Hefboom",
+       "Draaipunt",
+       "Wrijvingskracht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het steunpunt waar de wip omheen kantelt. Dat past bij Draaipunt: punt van draaien.",
+      "uo": [
+       "Nee, dat hoort bij Remweg: afstand tijdens remmen.",
+       "Nee, dat hoort bij Hefboom: staaf om een draaipunt.",
+       "Klopt: punt van draaien.",
+       "Nee, dat hoort bij Wrijvingskracht: werkt beweging tegen."
+      ],
+      "uh": "Draaipunt: punt van draaien."
+     },
+     {
+      "v": "De aantrekkingskracht van de aarde. Wat is hier aan de hand?",
+      "o": [
+       "Moment",
+       "Hefboom",
+       "Draaipunt",
+       "Zwaartekracht"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De aantrekkingskracht van de aarde. Dat past bij Zwaartekracht: aantrekking van de aarde.",
+      "uo": [
+       "Nee, dat hoort bij Moment: draai-effect van kracht.",
+       "Nee, dat hoort bij Hefboom: staaf om een draaipunt.",
+       "Nee, dat hoort bij Draaipunt: punt van draaien.",
+       "Klopt: aantrekking van de aarde."
+      ],
+      "uh": "Zwaartekracht: aantrekking van de aarde."
+     },
+     {
+      "v": "De totale afstand van gevaar zien tot volledig stilstaan. Welk begrip past hierbij?",
+      "o": [
+       "Stopafstand",
+       "Remweg",
+       "Resultante",
+       "Evenwicht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De totale afstand van gevaar zien tot volledig stilstaan. Dat past bij Stopafstand: reactieafstand plus remweg.",
+      "uo": [
+       "Klopt: reactieafstand plus remweg.",
+       "Nee, dat hoort bij Remweg: afstand tijdens remmen.",
+       "Nee, dat hoort bij Resultante: som van de krachten.",
+       "Nee, dat hoort bij Evenwicht: krachten heffen elkaar op."
+      ],
+      "uh": "Stopafstand: reactieafstand plus remweg."
+     },
+     {
+      "v": "Een appel valt naar beneden doordat de aarde hem aantrekt. Om welk begrip gaat het?",
+      "o": [
+       "Hefboom",
+       "Zwaartekracht",
+       "Draaipunt",
+       "Moment"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een appel valt naar beneden doordat de aarde hem aantrekt. Dat past bij Zwaartekracht: aantrekking van de aarde.",
+      "uo": [
+       "Nee, dat hoort bij Hefboom: staaf om een draaipunt.",
+       "Klopt: aantrekking van de aarde.",
+       "Nee, dat hoort bij Draaipunt: punt van draaien.",
+       "Nee, dat hoort bij Moment: draai-effect van kracht."
+      ],
+      "uh": "Zwaartekracht: aantrekking van de aarde."
+     },
+     {
+      "v": "Hoe verder van het draaipunt je duwt, hoe sterker het draai-effect. Welk begrip herken je hier?",
+      "o": [
+       "Draaipunt",
+       "Kracht",
+       "Moment",
+       "Hefboom"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Hoe verder van het draaipunt je duwt, hoe sterker het draai-effect. Dat past bij Moment: draai-effect van kracht.",
+      "uo": [
+       "Nee, dat hoort bij Draaipunt: punt van draaien.",
+       "Nee, dat hoort bij Kracht: duw of trek.",
+       "Klopt: draai-effect van kracht.",
+       "Nee, dat hoort bij Hefboom: staaf om een draaipunt."
+      ],
+      "uh": "Moment: draai-effect van kracht."
+     },
+     {
+      "v": "Het punt waar een hefboom om draait. Wat is hier aan de hand?",
+      "o": [
+       "Wrijvingskracht",
+       "Hefboom",
+       "Remweg",
+       "Draaipunt"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het punt waar een hefboom om draait. Dat past bij Draaipunt: punt van draaien.",
+      "uo": [
+       "Nee, dat hoort bij Wrijvingskracht: werkt beweging tegen.",
+       "Nee, dat hoort bij Hefboom: staaf om een draaipunt.",
+       "Nee, dat hoort bij Remweg: afstand tijdens remmen.",
+       "Klopt: punt van draaien."
+      ],
+      "uh": "Draaipunt: punt van draaien."
+     },
+     {
+      "v": "De tijd tussen zien en reageren. Welk begrip past hierbij?",
+      "o": [
+       "Reactietijd",
+       "Draaipunt",
+       "Wrijvingskracht",
+       "Kracht"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De tijd tussen zien en reageren. Dat past bij Reactietijd: tijd van zien tot reageren.",
+      "uo": [
+       "Klopt: tijd van zien tot reageren.",
+       "Nee, dat hoort bij Draaipunt: punt van draaien.",
+       "Nee, dat hoort bij Wrijvingskracht: werkt beweging tegen.",
+       "Nee, dat hoort bij Kracht: duw of trek."
+      ],
+      "uh": "Reactietijd: tijd van zien tot reageren."
+     },
+     {
+      "v": "Bij touwtrekken trekken beide teams even hard en beweegt het touw niet. Om welk begrip gaat het?",
+      "o": [
+       "Resultante",
+       "Evenwicht",
+       "Hefboom",
+       "Draaipunt"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij touwtrekken trekken beide teams even hard en beweegt het touw niet. Dat past bij Evenwicht: krachten heffen elkaar op.",
+      "uo": [
+       "Nee, dat hoort bij Resultante: som van de krachten.",
+       "Klopt: krachten heffen elkaar op.",
+       "Nee, dat hoort bij Hefboom: staaf om een draaipunt.",
+       "Nee, dat hoort bij Draaipunt: punt van draaien."
+      ],
+      "uh": "Evenwicht: krachten heffen elkaar op."
+     },
+     {
+      "v": "De totale kracht als je alle krachten optelt. Welk begrip herken je hier?",
+      "o": [
+       "Hefboom",
+       "Evenwicht",
+       "Resultante",
+       "Wrijvingskracht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De totale kracht als je alle krachten optelt. Dat past bij Resultante: som van de krachten.",
+      "uo": [
+       "Nee, dat hoort bij Hefboom: staaf om een draaipunt.",
+       "Nee, dat hoort bij Evenwicht: krachten heffen elkaar op.",
+       "Klopt: som van de krachten.",
+       "Nee, dat hoort bij Wrijvingskracht: werkt beweging tegen."
+      ],
+      "uh": "Resultante: som van de krachten."
+     },
+     {
+      "v": "Twee mensen duwen dezelfde kant op, samen is de kracht groter. Wat is hier aan de hand?",
+      "o": [
+       "Kracht",
+       "Moment",
+       "Draaipunt",
+       "Resultante"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Twee mensen duwen dezelfde kant op, samen is de kracht groter. Dat past bij Resultante: som van de krachten.",
+      "uo": [
+       "Nee, dat hoort bij Kracht: duw of trek.",
+       "Nee, dat hoort bij Moment: draai-effect van kracht.",
+       "Nee, dat hoort bij Draaipunt: punt van draaien.",
+       "Klopt: som van de krachten."
+      ],
+      "uh": "Resultante: som van de krachten."
+     },
+     {
+      "v": "Een duw of trek op een voorwerp. Welk begrip past hierbij?",
+      "o": [
+       "Kracht",
+       "Zwaartekracht",
+       "Moment",
+       "Draaipunt"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een duw of trek op een voorwerp. Dat past bij Kracht: duw of trek.",
+      "uo": [
+       "Klopt: duw of trek.",
+       "Nee, dat hoort bij Zwaartekracht: aantrekking van de aarde.",
+       "Nee, dat hoort bij Moment: draai-effect van kracht.",
+       "Nee, dat hoort bij Draaipunt: punt van draaien."
+      ],
+      "uh": "Kracht: duw of trek."
+     },
+     {
+      "v": "De afstand die de auto nog aflegt vanaf het moment dat je remt. Om welk begrip gaat het?",
+      "o": [
+       "Stopafstand",
+       "Remweg",
+       "Reactietijd",
+       "Kracht"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De afstand die de auto nog aflegt vanaf het moment dat je remt. Dat past bij Remweg: afstand tijdens remmen.",
+      "uo": [
+       "Nee, dat hoort bij Stopafstand: reactieafstand plus remweg.",
+       "Klopt: afstand tijdens remmen.",
+       "Nee, dat hoort bij Reactietijd: tijd van zien tot reageren.",
+       "Nee, dat hoort bij Kracht: duw of trek."
+      ],
+      "uh": "Remweg: afstand tijdens remmen."
+     },
+     {
+      "v": "De grootte van een kracht meet je in deze eenheid. Welk begrip herken je hier?",
+      "o": [
+       "Wrijvingskracht",
+       "Stopafstand",
+       "Newton",
+       "Kracht"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De grootte van een kracht meet je in deze eenheid. Dat past bij Newton: eenheid van kracht.",
+      "uo": [
+       "Nee, dat hoort bij Wrijvingskracht: werkt beweging tegen.",
+       "Nee, dat hoort bij Stopafstand: reactieafstand plus remweg.",
+       "Klopt: eenheid van kracht.",
+       "Nee, dat hoort bij Kracht: duw of trek."
+      ],
+      "uh": "Newton: eenheid van kracht."
+     },
+     {
+      "v": "Een staaf die om een draaipunt draait. Wat is hier aan de hand?",
+      "o": [
+       "Evenwicht",
+       "Draaipunt",
+       "Moment",
+       "Hefboom"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een staaf die om een draaipunt draait. Dat past bij Hefboom: staaf om een draaipunt.",
+      "uo": [
+       "Nee, dat hoort bij Evenwicht: krachten heffen elkaar op.",
+       "Nee, dat hoort bij Draaipunt: punt van draaien.",
+       "Nee, dat hoort bij Moment: draai-effect van kracht.",
+       "Klopt: staaf om een draaipunt."
+      ],
+      "uh": "Hefboom: staaf om een draaipunt."
+     },
+     {
+      "v": "Je duwt of trekt aan een kar om hem te laten bewegen. Welk begrip past hierbij?",
+      "o": [
+       "Kracht",
+       "Moment",
+       "Zwaartekracht",
+       "Newton"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je duwt of trekt aan een kar om hem te laten bewegen. Dat past bij Kracht: duw of trek.",
+      "uo": [
+       "Klopt: duw of trek.",
+       "Nee, dat hoort bij Moment: draai-effect van kracht.",
+       "Nee, dat hoort bij Zwaartekracht: aantrekking van de aarde.",
+       "Nee, dat hoort bij Newton: eenheid van kracht."
+      ],
+      "uh": "Kracht: duw of trek."
+     },
+     {
+      "v": "Met een lange staaf over een steunpunt til je makkelijk een zware steen. Om welk begrip gaat het?",
+      "o": [
+       "Newton",
+       "Hefboom",
+       "Remweg",
+       "Stopafstand"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Met een lange staaf over een steunpunt til je makkelijk een zware steen. Dat past bij Hefboom: staaf om een draaipunt.",
+      "uo": [
+       "Nee, dat hoort bij Newton: eenheid van kracht.",
+       "Klopt: staaf om een draaipunt.",
+       "Nee, dat hoort bij Remweg: afstand tijdens remmen.",
+       "Nee, dat hoort bij Stopafstand: reactieafstand plus remweg."
+      ],
+      "uh": "Hefboom: staaf om een draaipunt."
+     },
+     {
+      "v": "De eenheid waarin je kracht meet. Welk begrip herken je hier?",
+      "o": [
+       "Draaipunt",
+       "Moment",
+       "Newton",
+       "Hefboom"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De eenheid waarin je kracht meet. Dat past bij Newton: eenheid van kracht.",
+      "uo": [
+       "Nee, dat hoort bij Draaipunt: punt van draaien.",
+       "Nee, dat hoort bij Moment: draai-effect van kracht.",
+       "Klopt: eenheid van kracht.",
+       "Nee, dat hoort bij Hefboom: staaf om een draaipunt."
+      ],
+      "uh": "Newton: eenheid van kracht."
+     },
+     {
+      "v": "De reactieafstand plus de remweg. Wat is hier aan de hand?",
+      "o": [
+       "Evenwicht",
+       "Remweg",
+       "Resultante",
+       "Stopafstand"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De reactieafstand plus de remweg. Dat past bij Stopafstand: reactieafstand plus remweg.",
+      "uo": [
+       "Nee, dat hoort bij Evenwicht: krachten heffen elkaar op.",
+       "Nee, dat hoort bij Remweg: afstand tijdens remmen.",
+       "Nee, dat hoort bij Resultante: som van de krachten.",
+       "Klopt: reactieafstand plus remweg."
+      ],
+      "uh": "Stopafstand: reactieafstand plus remweg."
      }
     ],
     "begrippen": [
@@ -16281,6 +19017,462 @@ var VAKKEN_VMBO = [
        "Klopt: één soort atomen, dus een element."
       ],
       "uh": "element: Één soort atomen, dus een element."
+     },
+     {
+      "v": "Het positief geladen deeltje in de kern. Welk begrip past hierbij?",
+      "o": [
+       "Proton",
+       "Zuivere stof",
+       "Atoom",
+       "Scheiden"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het positief geladen deeltje in de kern. Dat past bij Proton: positief deeltje in de kern.",
+      "uo": [
+       "Klopt: positief deeltje in de kern.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Atoom: kleinste deeltje.",
+       "Nee, dat hoort bij Scheiden: mengsel uit elkaar halen."
+      ],
+      "uh": "Proton: positief deeltje in de kern."
+     },
+     {
+      "v": "Het negatief geladen deeltje in een atoom. Om welk begrip gaat het?",
+      "o": [
+       "Atoom",
+       "Elektron",
+       "Zuivere stof",
+       "Ion"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het negatief geladen deeltje in een atoom. Dat past bij Elektron: negatief deeltje.",
+      "uo": [
+       "Nee, dat hoort bij Atoom: kleinste deeltje.",
+       "Klopt: negatief deeltje.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Ion: geladen atoom."
+      ],
+      "uh": "Elektron: negatief deeltje."
+     },
+     {
+      "v": "In de kern zit ook dit deeltje zonder lading. Welk begrip herken je hier?",
+      "o": [
+       "Elektron",
+       "Proton",
+       "Neutron",
+       "Verbinding"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "In de kern zit ook dit deeltje zonder lading. Dat past bij Neutron: ongeladen deeltje.",
+      "uo": [
+       "Nee, dat hoort bij Elektron: negatief deeltje.",
+       "Nee, dat hoort bij Proton: positief deeltje in de kern.",
+       "Klopt: ongeladen deeltje.",
+       "Nee, dat hoort bij Verbinding: meerdere soorten atomen."
+      ],
+      "uh": "Neutron: ongeladen deeltje."
+     },
+     {
+      "v": "Een mengsel weer uit elkaar halen. Wat is hier aan de hand?",
+      "o": [
+       "Atoomkern",
+       "Molecuul",
+       "Atoom",
+       "Scheiden"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een mengsel weer uit elkaar halen. Dat past bij Scheiden: mengsel uit elkaar halen.",
+      "uo": [
+       "Nee, dat hoort bij Atoomkern: midden van het atoom.",
+       "Nee, dat hoort bij Molecuul: groepje atomen.",
+       "Nee, dat hoort bij Atoom: kleinste deeltje.",
+       "Klopt: mengsel uit elkaar halen."
+      ],
+      "uh": "Scheiden: mengsel uit elkaar halen."
+     },
+     {
+      "v": "Een stof die uit één soort deeltjes bestaat. Welk begrip past hierbij?",
+      "o": [
+       "Zuivere stof",
+       "Mengsel",
+       "Ion",
+       "Proton"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een stof die uit één soort deeltjes bestaat. Dat past bij Zuivere stof: één soort deeltjes.",
+      "uo": [
+       "Klopt: één soort deeltjes.",
+       "Nee, dat hoort bij Mengsel: deeltjes door elkaar.",
+       "Nee, dat hoort bij Ion: geladen atoom.",
+       "Nee, dat hoort bij Proton: positief deeltje in de kern."
+      ],
+      "uh": "Zuivere stof: één soort deeltjes."
+     },
+     {
+      "v": "Je haalt zout en water uit elkaar door in te dampen. Om welk begrip gaat het?",
+      "o": [
+       "Molecuul",
+       "Scheiden",
+       "Atoom",
+       "Atoomkern"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je haalt zout en water uit elkaar door in te dampen. Dat past bij Scheiden: mengsel uit elkaar halen.",
+      "uo": [
+       "Nee, dat hoort bij Molecuul: groepje atomen.",
+       "Klopt: mengsel uit elkaar halen.",
+       "Nee, dat hoort bij Atoom: kleinste deeltje.",
+       "Nee, dat hoort bij Atoomkern: midden van het atoom."
+      ],
+      "uh": "Scheiden: mengsel uit elkaar halen."
+     },
+     {
+      "v": "In het midden van het atoom zit de zware, positieve kern. Welk begrip herken je hier?",
+      "o": [
+       "Proton",
+       "Elektron",
+       "Atoomkern",
+       "Scheiden"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "In het midden van het atoom zit de zware, positieve kern. Dat past bij Atoomkern: midden van het atoom.",
+      "uo": [
+       "Nee, dat hoort bij Proton: positief deeltje in de kern.",
+       "Nee, dat hoort bij Elektron: negatief deeltje.",
+       "Klopt: midden van het atoom.",
+       "Nee, dat hoort bij Scheiden: mengsel uit elkaar halen."
+      ],
+      "uh": "Atoomkern: midden van het atoom."
+     },
+     {
+      "v": "Een groepje atomen dat aan elkaar zit. Wat is hier aan de hand?",
+      "o": [
+       "Elektron",
+       "Verbinding",
+       "Element",
+       "Molecuul"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een groepje atomen dat aan elkaar zit. Dat past bij Molecuul: groepje atomen.",
+      "uo": [
+       "Nee, dat hoort bij Elektron: negatief deeltje.",
+       "Nee, dat hoort bij Verbinding: meerdere soorten atomen.",
+       "Nee, dat hoort bij Element: één soort atomen.",
+       "Klopt: groepje atomen."
+      ],
+      "uh": "Molecuul: groepje atomen."
+     },
+     {
+      "v": "Een atoom dat een elektron mist of er een extra heeft, is geladen. Welk begrip past hierbij?",
+      "o": [
+       "Ion",
+       "Atoom",
+       "Atoomkern",
+       "Zuivere stof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een atoom dat een elektron mist of er een extra heeft, is geladen. Dat past bij Ion: geladen atoom.",
+      "uo": [
+       "Klopt: geladen atoom.",
+       "Nee, dat hoort bij Atoom: kleinste deeltje.",
+       "Nee, dat hoort bij Atoomkern: midden van het atoom.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes."
+      ],
+      "uh": "Ion: geladen atoom."
+     },
+     {
+      "v": "Een groepje atomen zit aan elkaar vast, zoals in water. Om welk begrip gaat het?",
+      "o": [
+       "Verbinding",
+       "Molecuul",
+       "Element",
+       "Elektron"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een groepje atomen zit aan elkaar vast, zoals in water. Dat past bij Molecuul: groepje atomen.",
+      "uo": [
+       "Nee, dat hoort bij Verbinding: meerdere soorten atomen.",
+       "Klopt: groepje atomen.",
+       "Nee, dat hoort bij Element: één soort atomen.",
+       "Nee, dat hoort bij Elektron: negatief deeltje."
+      ],
+      "uh": "Molecuul: groepje atomen."
+     },
+     {
+      "v": "Om de kern heen bewegen de negatief geladen deeltjes. Welk begrip herken je hier?",
+      "o": [
+       "Proton",
+       "Neutron",
+       "Elektron",
+       "Mengsel"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Om de kern heen bewegen de negatief geladen deeltjes. Dat past bij Elektron: negatief deeltje.",
+      "uo": [
+       "Nee, dat hoort bij Proton: positief deeltje in de kern.",
+       "Nee, dat hoort bij Neutron: ongeladen deeltje.",
+       "Klopt: negatief deeltje.",
+       "Nee, dat hoort bij Mengsel: deeltjes door elkaar."
+      ],
+      "uh": "Elektron: negatief deeltje."
+     },
+     {
+      "v": "Het zware midden van een atoom. Wat is hier aan de hand?",
+      "o": [
+       "Scheiden",
+       "Elektron",
+       "Proton",
+       "Atoomkern"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het zware midden van een atoom. Dat past bij Atoomkern: midden van het atoom.",
+      "uo": [
+       "Nee, dat hoort bij Scheiden: mengsel uit elkaar halen.",
+       "Nee, dat hoort bij Elektron: negatief deeltje.",
+       "Nee, dat hoort bij Proton: positief deeltje in de kern.",
+       "Klopt: midden van het atoom."
+      ],
+      "uh": "Atoomkern: midden van het atoom."
+     },
+     {
+      "v": "Het ongeladen deeltje in de kern. Welk begrip past hierbij?",
+      "o": [
+       "Neutron",
+       "Element",
+       "Mengsel",
+       "Ion"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het ongeladen deeltje in de kern. Dat past bij Neutron: ongeladen deeltje.",
+      "uo": [
+       "Klopt: ongeladen deeltje.",
+       "Nee, dat hoort bij Element: één soort atomen.",
+       "Nee, dat hoort bij Mengsel: deeltjes door elkaar.",
+       "Nee, dat hoort bij Ion: geladen atoom."
+      ],
+      "uh": "Neutron: ongeladen deeltje."
+     },
+     {
+      "v": "Puur, gedestilleerd water bevat maar één soort moleculen. Om welk begrip gaat het?",
+      "o": [
+       "Mengsel",
+       "Zuivere stof",
+       "Element",
+       "Scheiden"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Puur, gedestilleerd water bevat maar één soort moleculen. Dat past bij Zuivere stof: één soort deeltjes.",
+      "uo": [
+       "Nee, dat hoort bij Mengsel: deeltjes door elkaar.",
+       "Klopt: één soort deeltjes.",
+       "Nee, dat hoort bij Element: één soort atomen.",
+       "Nee, dat hoort bij Scheiden: mengsel uit elkaar halen."
+      ],
+      "uh": "Zuivere stof: één soort deeltjes."
+     },
+     {
+      "v": "Een stof uit meerdere soorten atomen. Welk begrip herken je hier?",
+      "o": [
+       "Mengsel",
+       "Element",
+       "Verbinding",
+       "Scheiden"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een stof uit meerdere soorten atomen. Dat past bij Verbinding: meerdere soorten atomen.",
+      "uo": [
+       "Nee, dat hoort bij Mengsel: deeltjes door elkaar.",
+       "Nee, dat hoort bij Element: één soort atomen.",
+       "Klopt: meerdere soorten atomen.",
+       "Nee, dat hoort bij Scheiden: mengsel uit elkaar halen."
+      ],
+      "uh": "Verbinding: meerdere soorten atomen."
+     },
+     {
+      "v": "Water bestaat uit waterstof- en zuurstofatomen samen. Wat is hier aan de hand?",
+      "o": [
+       "Atoom",
+       "Elektron",
+       "Atoomkern",
+       "Verbinding"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Water bestaat uit waterstof- en zuurstofatomen samen. Dat past bij Verbinding: meerdere soorten atomen.",
+      "uo": [
+       "Nee, dat hoort bij Atoom: kleinste deeltje.",
+       "Nee, dat hoort bij Elektron: negatief deeltje.",
+       "Nee, dat hoort bij Atoomkern: midden van het atoom.",
+       "Klopt: meerdere soorten atomen."
+      ],
+      "uh": "Verbinding: meerdere soorten atomen."
+     },
+     {
+      "v": "Het kleinste bouwsteentje van een stof. Welk begrip past hierbij?",
+      "o": [
+       "Atoom",
+       "Molecuul",
+       "Atoomkern",
+       "Mengsel"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het kleinste bouwsteentje van een stof. Dat past bij Atoom: kleinste deeltje.",
+      "uo": [
+       "Klopt: kleinste deeltje.",
+       "Nee, dat hoort bij Molecuul: groepje atomen.",
+       "Nee, dat hoort bij Atoomkern: midden van het atoom.",
+       "Nee, dat hoort bij Mengsel: deeltjes door elkaar."
+      ],
+      "uh": "Atoom: kleinste deeltje."
+     },
+     {
+      "v": "In de kern zit dit positief geladen deeltje. Om welk begrip gaat het?",
+      "o": [
+       "Neutron",
+       "Proton",
+       "Elektron",
+       "Atoom"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In de kern zit dit positief geladen deeltje. Dat past bij Proton: positief deeltje in de kern.",
+      "uo": [
+       "Nee, dat hoort bij Neutron: ongeladen deeltje.",
+       "Klopt: positief deeltje in de kern.",
+       "Nee, dat hoort bij Elektron: negatief deeltje.",
+       "Nee, dat hoort bij Atoom: kleinste deeltje."
+      ],
+      "uh": "Proton: positief deeltje in de kern."
+     },
+     {
+      "v": "Zuiver goud bestaat uit maar één soort atomen. Welk begrip herken je hier?",
+      "o": [
+       "Elektron",
+       "Ion",
+       "Element",
+       "Proton"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Zuiver goud bestaat uit maar één soort atomen. Dat past bij Element: één soort atomen.",
+      "uo": [
+       "Nee, dat hoort bij Elektron: negatief deeltje.",
+       "Nee, dat hoort bij Ion: geladen atoom.",
+       "Klopt: één soort atomen.",
+       "Nee, dat hoort bij Proton: positief deeltje in de kern."
+      ],
+      "uh": "Element: één soort atomen."
+     },
+     {
+      "v": "Twee of meer stoffen door elkaar. Wat is hier aan de hand?",
+      "o": [
+       "Scheiden",
+       "Zuivere stof",
+       "Proton",
+       "Mengsel"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Twee of meer stoffen door elkaar. Dat past bij Mengsel: deeltjes door elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Scheiden: mengsel uit elkaar halen.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Proton: positief deeltje in de kern.",
+       "Klopt: deeltjes door elkaar."
+      ],
+      "uh": "Mengsel: deeltjes door elkaar."
+     },
+     {
+      "v": "Het allerkleinste deeltje waaruit een stof is opgebouwd. Welk begrip past hierbij?",
+      "o": [
+       "Atoom",
+       "Molecuul",
+       "Ion",
+       "Elektron"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het allerkleinste deeltje waaruit een stof is opgebouwd. Dat past bij Atoom: kleinste deeltje.",
+      "uo": [
+       "Klopt: kleinste deeltje.",
+       "Nee, dat hoort bij Molecuul: groepje atomen.",
+       "Nee, dat hoort bij Ion: geladen atoom.",
+       "Nee, dat hoort bij Elektron: negatief deeltje."
+      ],
+      "uh": "Atoom: kleinste deeltje."
+     },
+     {
+      "v": "In zeewater zitten water en zout door elkaar. Om welk begrip gaat het?",
+      "o": [
+       "Ion",
+       "Mengsel",
+       "Elektron",
+       "Proton"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "In zeewater zitten water en zout door elkaar. Dat past bij Mengsel: deeltjes door elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Ion: geladen atoom.",
+       "Klopt: deeltjes door elkaar.",
+       "Nee, dat hoort bij Elektron: negatief deeltje.",
+       "Nee, dat hoort bij Proton: positief deeltje in de kern."
+      ],
+      "uh": "Mengsel: deeltjes door elkaar."
+     },
+     {
+      "v": "Een stof die uit één soort atomen bestaat. Welk begrip herken je hier?",
+      "o": [
+       "Proton",
+       "Verbinding",
+       "Element",
+       "Scheiden"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een stof die uit één soort atomen bestaat. Dat past bij Element: één soort atomen.",
+      "uo": [
+       "Nee, dat hoort bij Proton: positief deeltje in de kern.",
+       "Nee, dat hoort bij Verbinding: meerdere soorten atomen.",
+       "Klopt: één soort atomen.",
+       "Nee, dat hoort bij Scheiden: mengsel uit elkaar halen."
+      ],
+      "uh": "Element: één soort atomen."
+     },
+     {
+      "v": "Een atoom met een elektrische lading. Wat is hier aan de hand?",
+      "o": [
+       "Zuivere stof",
+       "Atoom",
+       "Atoomkern",
+       "Ion"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een atoom met een elektrische lading. Dat past bij Ion: geladen atoom.",
+      "uo": [
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Atoom: kleinste deeltje.",
+       "Nee, dat hoort bij Atoomkern: midden van het atoom.",
+       "Klopt: geladen atoom."
+      ],
+      "uh": "Ion: geladen atoom."
      }
     ],
     "begrippen": [
@@ -16577,6 +19769,462 @@ var VAKKEN_VMBO = [
        "Klopt: gamma is doordringend, dik lood helpt."
       ],
       "uh": "Een dikke laag lood: Gamma is doordringend, dik lood helpt."
+     },
+     {
+      "v": "Het geraakt worden door straling van buitenaf. Welk begrip past hierbij?",
+      "o": [
+       "Bestraling",
+       "Ioniserende straling",
+       "Gammastraling",
+       "Straling"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het geraakt worden door straling van buitenaf. Dat past bij Bestraling: straling van buitenaf.",
+      "uo": [
+       "Klopt: straling van buitenaf.",
+       "Nee, dat hoort bij Ioniserende straling: maakt deeltjes geladen.",
+       "Nee, dat hoort bij Gammastraling: doordringend, geen lading.",
+       "Nee, dat hoort bij Straling: energie door de ruimte."
+      ],
+      "uh": "Bestraling: straling van buitenaf."
+     },
+     {
+      "v": "Radioactief materiaal dat op of in je lichaam komt. Om welk begrip gaat het?",
+      "o": [
+       "Ioniserende straling",
+       "Besmetting",
+       "Gammastraling",
+       "Straling"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Radioactief materiaal dat op of in je lichaam komt. Dat past bij Besmetting: radioactief materiaal aan je.",
+      "uo": [
+       "Nee, dat hoort bij Ioniserende straling: maakt deeltjes geladen.",
+       "Klopt: radioactief materiaal aan je.",
+       "Nee, dat hoort bij Gammastraling: doordringend, geen lading.",
+       "Nee, dat hoort bij Straling: energie door de ruimte."
+      ],
+      "uh": "Besmetting: radioactief materiaal aan je."
+     },
+     {
+      "v": "Een dikke laag lood houdt de straling tegen. Welk begrip herken je hier?",
+      "o": [
+       "Geigerteller",
+       "Besmetting",
+       "Afscherming",
+       "Straling"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een dikke laag lood houdt de straling tegen. Dat past bij Afscherming: straling tegenhouden.",
+      "uo": [
+       "Nee, dat hoort bij Geigerteller: meet straling.",
+       "Nee, dat hoort bij Besmetting: radioactief materiaal aan je.",
+       "Klopt: straling tegenhouden.",
+       "Nee, dat hoort bij Straling: energie door de ruimte."
+      ],
+      "uh": "Afscherming: straling tegenhouden."
+     },
+     {
+      "v": "Een apparaat dat straling meet. Wat is hier aan de hand?",
+      "o": [
+       "Ioniserende straling",
+       "Betastraling",
+       "Afscherming",
+       "Geigerteller"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een apparaat dat straling meet. Dat past bij Geigerteller: meet straling.",
+      "uo": [
+       "Nee, dat hoort bij Ioniserende straling: maakt deeltjes geladen.",
+       "Nee, dat hoort bij Betastraling: snelle elektronen.",
+       "Nee, dat hoort bij Afscherming: straling tegenhouden.",
+       "Klopt: meet straling."
+      ],
+      "uh": "Geigerteller: meet straling."
+     },
+     {
+      "v": "Zeer doordringende straling zonder lading. Welk begrip past hierbij?",
+      "o": [
+       "Gammastraling",
+       "Alfastraling",
+       "Betastraling",
+       "Radioactiviteit"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Zeer doordringende straling zonder lading. Dat past bij Gammastraling: doordringend, geen lading.",
+      "uo": [
+       "Klopt: doordringend, geen lading.",
+       "Nee, dat hoort bij Alfastraling: zware geladen deeltjes.",
+       "Nee, dat hoort bij Betastraling: snelle elektronen.",
+       "Nee, dat hoort bij Radioactiviteit: kernen zenden straling uit."
+      ],
+      "uh": "Gammastraling: doordringend, geen lading."
+     },
+     {
+      "v": "Een apparaat tikt sneller naarmate er meer straling is. Om welk begrip gaat het?",
+      "o": [
+       "Betastraling",
+       "Geigerteller",
+       "Afscherming",
+       "Ioniserende straling"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een apparaat tikt sneller naarmate er meer straling is. Dat past bij Geigerteller: meet straling.",
+      "uo": [
+       "Nee, dat hoort bij Betastraling: snelle elektronen.",
+       "Klopt: meet straling.",
+       "Nee, dat hoort bij Afscherming: straling tegenhouden.",
+       "Nee, dat hoort bij Ioniserende straling: maakt deeltjes geladen."
+      ],
+      "uh": "Geigerteller: meet straling."
+     },
+     {
+      "v": "Na deze tijd is de helft van de radioactieve stof vervallen. Welk begrip herken je hier?",
+      "o": [
+       "Alfastraling",
+       "Dosis",
+       "Halveringstijd",
+       "Geigerteller"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Na deze tijd is de helft van de radioactieve stof vervallen. Dat past bij Halveringstijd: tijd tot de helft vervalt.",
+      "uo": [
+       "Nee, dat hoort bij Alfastraling: zware geladen deeltjes.",
+       "Nee, dat hoort bij Dosis: hoeveelheid straling.",
+       "Klopt: tijd tot de helft vervalt.",
+       "Nee, dat hoort bij Geigerteller: meet straling."
+      ],
+      "uh": "Halveringstijd: tijd tot de helft vervalt."
+     },
+     {
+      "v": "Het uitzenden van straling door onstabiele kernen. Wat is hier aan de hand?",
+      "o": [
+       "Ioniserende straling",
+       "Betastraling",
+       "Geigerteller",
+       "Radioactiviteit"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het uitzenden van straling door onstabiele kernen. Dat past bij Radioactiviteit: kernen zenden straling uit.",
+      "uo": [
+       "Nee, dat hoort bij Ioniserende straling: maakt deeltjes geladen.",
+       "Nee, dat hoort bij Betastraling: snelle elektronen.",
+       "Nee, dat hoort bij Geigerteller: meet straling.",
+       "Klopt: kernen zenden straling uit."
+      ],
+      "uh": "Radioactiviteit: kernen zenden straling uit."
+     },
+     {
+      "v": "De hoeveelheid straling die iemand heeft opgelopen. Welk begrip past hierbij?",
+      "o": [
+       "Dosis",
+       "Halveringstijd",
+       "Afscherming",
+       "Ioniserende straling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De hoeveelheid straling die iemand heeft opgelopen. Dat past bij Dosis: hoeveelheid straling.",
+      "uo": [
+       "Klopt: hoeveelheid straling.",
+       "Nee, dat hoort bij Halveringstijd: tijd tot de helft vervalt.",
+       "Nee, dat hoort bij Afscherming: straling tegenhouden.",
+       "Nee, dat hoort bij Ioniserende straling: maakt deeltjes geladen."
+      ],
+      "uh": "Dosis: hoeveelheid straling."
+     },
+     {
+      "v": "Sommige stoffen zenden vanzelf straling uit doordat hun kernen vervallen. Om welk begrip gaat het?",
+      "o": [
+       "Betastraling",
+       "Radioactiviteit",
+       "Geigerteller",
+       "Ioniserende straling"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Sommige stoffen zenden vanzelf straling uit doordat hun kernen vervallen. Dat past bij Radioactiviteit: kernen zenden straling uit.",
+      "uo": [
+       "Nee, dat hoort bij Betastraling: snelle elektronen.",
+       "Klopt: kernen zenden straling uit.",
+       "Nee, dat hoort bij Geigerteller: meet straling.",
+       "Nee, dat hoort bij Ioniserende straling: maakt deeltjes geladen."
+      ],
+      "uh": "Radioactiviteit: kernen zenden straling uit."
+     },
+     {
+      "v": "Er zit radioactief stof op je kleding of huid. Welk begrip herken je hier?",
+      "o": [
+       "Dosis",
+       "Bestraling",
+       "Besmetting",
+       "Halveringstijd"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Er zit radioactief stof op je kleding of huid. Dat past bij Besmetting: radioactief materiaal aan je.",
+      "uo": [
+       "Nee, dat hoort bij Dosis: hoeveelheid straling.",
+       "Nee, dat hoort bij Bestraling: straling van buitenaf.",
+       "Klopt: radioactief materiaal aan je.",
+       "Nee, dat hoort bij Halveringstijd: tijd tot de helft vervalt."
+      ],
+      "uh": "Besmetting: radioactief materiaal aan je."
+     },
+     {
+      "v": "De tijd waarin de helft van een stof vervalt. Wat is hier aan de hand?",
+      "o": [
+       "Geigerteller",
+       "Dosis",
+       "Alfastraling",
+       "Halveringstijd"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De tijd waarin de helft van een stof vervalt. Dat past bij Halveringstijd: tijd tot de helft vervalt.",
+      "uo": [
+       "Nee, dat hoort bij Geigerteller: meet straling.",
+       "Nee, dat hoort bij Dosis: hoeveelheid straling.",
+       "Nee, dat hoort bij Alfastraling: zware geladen deeltjes.",
+       "Klopt: tijd tot de helft vervalt."
+      ],
+      "uh": "Halveringstijd: tijd tot de helft vervalt."
+     },
+     {
+      "v": "Het tegenhouden van straling met materiaal. Welk begrip past hierbij?",
+      "o": [
+       "Afscherming",
+       "Besmetting",
+       "Geigerteller",
+       "Straling"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het tegenhouden van straling met materiaal. Dat past bij Afscherming: straling tegenhouden.",
+      "uo": [
+       "Klopt: straling tegenhouden.",
+       "Nee, dat hoort bij Besmetting: radioactief materiaal aan je.",
+       "Nee, dat hoort bij Geigerteller: meet straling.",
+       "Nee, dat hoort bij Straling: energie door de ruimte."
+      ],
+      "uh": "Afscherming: straling tegenhouden."
+     },
+     {
+      "v": "Deze straling zonder lading dringt zelfs door dik lood heen. Om welk begrip gaat het?",
+      "o": [
+       "Alfastraling",
+       "Gammastraling",
+       "Betastraling",
+       "Halveringstijd"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Deze straling zonder lading dringt zelfs door dik lood heen. Dat past bij Gammastraling: doordringend, geen lading.",
+      "uo": [
+       "Nee, dat hoort bij Alfastraling: zware geladen deeltjes.",
+       "Klopt: doordringend, geen lading.",
+       "Nee, dat hoort bij Betastraling: snelle elektronen.",
+       "Nee, dat hoort bij Halveringstijd: tijd tot de helft vervalt."
+      ],
+      "uh": "Gammastraling: doordringend, geen lading."
+     },
+     {
+      "v": "Snelle elektronen als straling. Welk begrip herken je hier?",
+      "o": [
+       "Gammastraling",
+       "Alfastraling",
+       "Betastraling",
+       "Bestraling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Snelle elektronen als straling. Dat past bij Betastraling: snelle elektronen.",
+      "uo": [
+       "Nee, dat hoort bij Gammastraling: doordringend, geen lading.",
+       "Nee, dat hoort bij Alfastraling: zware geladen deeltjes.",
+       "Klopt: snelle elektronen.",
+       "Nee, dat hoort bij Bestraling: straling van buitenaf."
+      ],
+      "uh": "Betastraling: snelle elektronen."
+     },
+     {
+      "v": "Deze snelle elektronen dringen verder door dan alfastraling. Wat is hier aan de hand?",
+      "o": [
+       "Dosis",
+       "Bestraling",
+       "Geigerteller",
+       "Betastraling"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Deze snelle elektronen dringen verder door dan alfastraling. Dat past bij Betastraling: snelle elektronen.",
+      "uo": [
+       "Nee, dat hoort bij Dosis: hoeveelheid straling.",
+       "Nee, dat hoort bij Bestraling: straling van buitenaf.",
+       "Nee, dat hoort bij Geigerteller: meet straling.",
+       "Klopt: snelle elektronen."
+      ],
+      "uh": "Betastraling: snelle elektronen."
+     },
+     {
+      "v": "Energie die zich door de ruimte verplaatst. Welk begrip past hierbij?",
+      "o": [
+       "Straling",
+       "Radioactiviteit",
+       "Ioniserende straling",
+       "Geigerteller"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Energie die zich door de ruimte verplaatst. Dat past bij Straling: energie door de ruimte.",
+      "uo": [
+       "Klopt: energie door de ruimte.",
+       "Nee, dat hoort bij Radioactiviteit: kernen zenden straling uit.",
+       "Nee, dat hoort bij Ioniserende straling: maakt deeltjes geladen.",
+       "Nee, dat hoort bij Geigerteller: meet straling."
+      ],
+      "uh": "Straling: energie door de ruimte."
+     },
+     {
+      "v": "Je wordt van buitenaf door een stralingsbron geraakt. Om welk begrip gaat het?",
+      "o": [
+       "Besmetting",
+       "Bestraling",
+       "Betastraling",
+       "Geigerteller"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je wordt van buitenaf door een stralingsbron geraakt. Dat past bij Bestraling: straling van buitenaf.",
+      "uo": [
+       "Nee, dat hoort bij Besmetting: radioactief materiaal aan je.",
+       "Klopt: straling van buitenaf.",
+       "Nee, dat hoort bij Betastraling: snelle elektronen.",
+       "Nee, dat hoort bij Geigerteller: meet straling."
+      ],
+      "uh": "Bestraling: straling van buitenaf."
+     },
+     {
+      "v": "Deze zware, geladen deeltjes worden al door een vel papier tegengehouden. Welk begrip herken je hier?",
+      "o": [
+       "Geigerteller",
+       "Bestraling",
+       "Alfastraling",
+       "Dosis"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Deze zware, geladen deeltjes worden al door een vel papier tegengehouden. Dat past bij Alfastraling: zware geladen deeltjes.",
+      "uo": [
+       "Nee, dat hoort bij Geigerteller: meet straling.",
+       "Nee, dat hoort bij Bestraling: straling van buitenaf.",
+       "Klopt: zware geladen deeltjes.",
+       "Nee, dat hoort bij Dosis: hoeveelheid straling."
+      ],
+      "uh": "Alfastraling: zware geladen deeltjes."
+     },
+     {
+      "v": "Straling die deeltjes geladen maakt. Wat is hier aan de hand?",
+      "o": [
+       "Gammastraling",
+       "Straling",
+       "Halveringstijd",
+       "Ioniserende straling"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Straling die deeltjes geladen maakt. Dat past bij Ioniserende straling: maakt deeltjes geladen.",
+      "uo": [
+       "Nee, dat hoort bij Gammastraling: doordringend, geen lading.",
+       "Nee, dat hoort bij Straling: energie door de ruimte.",
+       "Nee, dat hoort bij Halveringstijd: tijd tot de helft vervalt.",
+       "Klopt: maakt deeltjes geladen."
+      ],
+      "uh": "Ioniserende straling: maakt deeltjes geladen."
+     },
+     {
+      "v": "Energie die door de ruimte reist, zoals van de zon of een radioactieve stof. Welk begrip past hierbij?",
+      "o": [
+       "Straling",
+       "Radioactiviteit",
+       "Besmetting",
+       "Halveringstijd"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Energie die door de ruimte reist, zoals van de zon of een radioactieve stof. Dat past bij Straling: energie door de ruimte.",
+      "uo": [
+       "Klopt: energie door de ruimte.",
+       "Nee, dat hoort bij Radioactiviteit: kernen zenden straling uit.",
+       "Nee, dat hoort bij Besmetting: radioactief materiaal aan je.",
+       "Nee, dat hoort bij Halveringstijd: tijd tot de helft vervalt."
+      ],
+      "uh": "Straling: energie door de ruimte."
+     },
+     {
+      "v": "Deze straling slaat elektronen los en maakt deeltjes geladen. Om welk begrip gaat het?",
+      "o": [
+       "Afscherming",
+       "Ioniserende straling",
+       "Gammastraling",
+       "Bestraling"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Deze straling slaat elektronen los en maakt deeltjes geladen. Dat past bij Ioniserende straling: maakt deeltjes geladen.",
+      "uo": [
+       "Nee, dat hoort bij Afscherming: straling tegenhouden.",
+       "Klopt: maakt deeltjes geladen.",
+       "Nee, dat hoort bij Gammastraling: doordringend, geen lading.",
+       "Nee, dat hoort bij Bestraling: straling van buitenaf."
+      ],
+      "uh": "Ioniserende straling: maakt deeltjes geladen."
+     },
+     {
+      "v": "Zware geladen deeltjes die weinig doordringen. Welk begrip herken je hier?",
+      "o": [
+       "Betastraling",
+       "Gammastraling",
+       "Alfastraling",
+       "Radioactiviteit"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Zware geladen deeltjes die weinig doordringen. Dat past bij Alfastraling: zware geladen deeltjes.",
+      "uo": [
+       "Nee, dat hoort bij Betastraling: snelle elektronen.",
+       "Nee, dat hoort bij Gammastraling: doordringend, geen lading.",
+       "Klopt: zware geladen deeltjes.",
+       "Nee, dat hoort bij Radioactiviteit: kernen zenden straling uit."
+      ],
+      "uh": "Alfastraling: zware geladen deeltjes."
+     },
+     {
+      "v": "De hoeveelheid straling die je ontvangt. Wat is hier aan de hand?",
+      "o": [
+       "Ioniserende straling",
+       "Halveringstijd",
+       "Afscherming",
+       "Dosis"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De hoeveelheid straling die je ontvangt. Dat past bij Dosis: hoeveelheid straling.",
+      "uo": [
+       "Nee, dat hoort bij Ioniserende straling: maakt deeltjes geladen.",
+       "Nee, dat hoort bij Halveringstijd: tijd tot de helft vervalt.",
+       "Nee, dat hoort bij Afscherming: straling tegenhouden.",
+       "Klopt: hoeveelheid straling."
+      ],
+      "uh": "Dosis: hoeveelheid straling."
      }
     ],
     "begrippen": [

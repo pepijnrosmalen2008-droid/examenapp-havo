@@ -438,7 +438,7 @@ var VAKKEN_VMBO = [
      "Faseovergangen",
      "Temperatuur-tijdgrafieken"
     ],
-    "nSv": 12,
+    "nSv": 40,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -454,7 +454,7 @@ var VAKKEN_VMBO = [
      "Wet van Ohm: U = I × R",
      "Vermogen P = U × I en energie E = P × t"
     ],
-    "nSv": 12,
+    "nSv": 34,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -470,7 +470,7 @@ var VAKKEN_VMBO = [
      "Isolatie",
      "Q = c × m × ΔT"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -486,7 +486,7 @@ var VAKKEN_VMBO = [
      "Lichtbreking",
      "Beeldvorming"
     ],
-    "nSv": 12,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -502,7 +502,7 @@ var VAKKEN_VMBO = [
      "Amplitude",
      "Geluidssnelheid en echopeiling"
     ],
-    "nSv": 12,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -518,7 +518,7 @@ var VAKKEN_VMBO = [
      "Hefbomen: M = F × r",
      "Snelheid s = v × t, remweg en stopafstand"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -533,7 +533,7 @@ var VAKKEN_VMBO = [
      "Atomen en moleculen",
      "Eigenschappen van materialen"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -549,7 +549,7 @@ var VAKKEN_VMBO = [
      "Toepassingen en risico's",
      "Bescherming"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
