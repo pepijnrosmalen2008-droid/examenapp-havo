@@ -23,4 +23,17 @@ export default {
     Ionrooster: ['Een regelmatige stapeling van positieve en negatieve ionen, zoals in zout', 'Hoog smeltpunt en bros, geleidt alleen gesmolten of opgelost'],
     Molecuulrooster: ['Losse moleculen bijeengehouden door zwakke krachten, laag smeltpunt', 'Vast jood: moleculen in een rooster door zwakke vanderwaalskrachten'],
   },
+  C: {
+    Evenwichtsconstante: ['Een groot getal K vertelt dat er in evenwicht vooral product is', 'Deze constante geeft de verhouding tussen product en reactant'],
+    'Dynamisch evenwicht': ['De concentraties blijven gelijk terwijl de reactie heen en terug doorgaat', 'Heen- en teruggaande reactie verlopen precies even snel'],
+    'Le Chatelier': ['Verhoog je de druk, dan wijkt het evenwicht uit naar minder gasmoleculen', 'Voeg je product toe, dan verschuift het evenwicht naar de reactanten'],
+    pH: ['Een oplossing van 0,01 mol/L zoutzuur heeft hiervan de waarde 2', 'Deze maat daalt naarmate een oplossing zuurder wordt'],
+    pOH: ['Bij een pH van 9 is deze waarde 5, want samen zijn ze 14', 'De tegenhanger van de pH voor de basiciteit'],
+    Zuur: ['Zoutzuur staat een proton af aan het water', 'Volgens Brønsted het deeltje dat een H⁺ afgeeft'],
+    Base: ['Ammoniak neemt een proton op uit het water', 'Volgens Brønsted het deeltje dat een H⁺ opneemt'],
+    Oxidatie: ['Bij deze halfreactie staat een deeltje elektronen af', 'IJzer dat roest staat elektronen af'],
+    Reductie: ['Bij deze halfreactie neemt een deeltje elektronen op', 'Aan de kathode worden elektronen opgenomen'],
+    'Galvanische cel': ['Een batterij levert stroom uit een spontane redoxreactie', 'Twee halfcellen leveren samen een elektrische spanning'],
+    Elektrolyse: ['Met een stroombron splits je water in waterstof en zuurstof', 'Elektrische energie drijft een reactie die vanzelf niet verloopt'],
+  },
 };
