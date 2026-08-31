@@ -15077,6 +15077,519 @@ var VAKKEN_VMBO = [
        "Hogere belasting helpt niet."
       ],
       "uh": "Loon dat harder stijgt dan de prijzen: Je loon stijgt harder dan de prijzen."
+     },
+     {
+      "v": "Een afspraak die je beschermt tegen de kosten van pech of schade. Welk begrip past hierbij?",
+      "o": [
+       "Budgetteren",
+       "Premie",
+       "Verzekering",
+       "Inflatie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een afspraak die je beschermt tegen de kosten van pech of schade. Dat past bij Verzekering: bescherming tegen risico.",
+      "uo": [
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen.",
+       "Nee, dat hoort bij Premie: bedrag voor verzekering.",
+       "Klopt: bescherming tegen risico.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen."
+      ],
+      "uh": "Verzekering: bescherming tegen risico."
+     },
+     {
+      "v": "Ten opzichte van het basisjaar honderd staan de prijzen nu op honderdtien. Om welk begrip gaat het?",
+      "o": [
+       "Deflatie",
+       "Inflatie",
+       "Budgetteren",
+       "Indexcijfer"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Ten opzichte van het basisjaar honderd staan de prijzen nu op honderdtien. Dat past bij Indexcijfer: verandering t.o.v. basisjaar.",
+      "uo": [
+       "Nee, dat hoort bij Deflatie: prijzen dalen.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen.",
+       "Klopt: verandering t.o.v. basisjaar."
+      ],
+      "uh": "Indexcijfer: verandering t.o.v. basisjaar."
+     },
+     {
+      "v": "Op een lijstje zet je wat er binnenkomt en wat eruit gaat. Welk begrip herken je hier?",
+      "o": [
+       "Budget",
+       "Budgetteren",
+       "Deflatie",
+       "Verzekering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Op een lijstje zet je wat er binnenkomt en wat eruit gaat. Dat past bij Budget: overzicht inkomsten en uitgaven.",
+      "uo": [
+       "Klopt: overzicht inkomsten en uitgaven.",
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen.",
+       "Nee, dat hoort bij Deflatie: prijzen dalen.",
+       "Nee, dat hoort bij Verzekering: bescherming tegen risico."
+      ],
+      "uh": "Budget: overzicht inkomsten en uitgaven."
+     },
+     {
+      "v": "Al het geld dat je besteedt. Wat is hier aan de hand?",
+      "o": [
+       "Inkomen",
+       "Uitgaven",
+       "Sparen",
+       "Budgetteren"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Al het geld dat je besteedt. Dat past bij Uitgaven: geld dat je besteedt.",
+      "uo": [
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt.",
+       "Klopt: geld dat je besteedt.",
+       "Nee, dat hoort bij Sparen: geld bewaren.",
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen."
+      ],
+      "uh": "Uitgaven: geld dat je besteedt."
+     },
+     {
+      "v": "Hoeveel spullen je met je inkomen kunt kopen. Welk begrip past hierbij?",
+      "o": [
+       "Indexcijfer",
+       "Budget",
+       "Koopkracht",
+       "Deflatie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Hoeveel spullen je met je inkomen kunt kopen. Dat past bij Koopkracht: wat je inkomen kan kopen.",
+      "uo": [
+       "Nee, dat hoort bij Indexcijfer: verandering t.o.v. basisjaar.",
+       "Nee, dat hoort bij Budget: overzicht inkomsten en uitgaven.",
+       "Klopt: wat je inkomen kan kopen.",
+       "Nee, dat hoort bij Deflatie: prijzen dalen."
+      ],
+      "uh": "Koopkracht: wat je inkomen kan kopen."
+     },
+     {
+      "v": "Je inkomen in euro's, zonder rekening te houden met inflatie. Om welk begrip gaat het?",
+      "o": [
+       "Indexcijfer",
+       "Reëel inkomen",
+       "Deflatie",
+       "Nominaal inkomen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je inkomen in euro's, zonder rekening te houden met inflatie. Dat past bij Nominaal inkomen: inkomen in euro's.",
+      "uo": [
+       "Nee, dat hoort bij Indexcijfer: verandering t.o.v. basisjaar.",
+       "Nee, dat hoort bij Reëel inkomen: inkomen na inflatie.",
+       "Nee, dat hoort bij Deflatie: prijzen dalen.",
+       "Klopt: inkomen in euro's."
+      ],
+      "uh": "Nominaal inkomen: inkomen in euro's."
+     },
+     {
+      "v": "Je betaalt maandelijks een bedrag zodat schade aan je fiets vergoed wordt. Welk begrip herken je hier?",
+      "o": [
+       "Verzekering",
+       "Premie",
+       "Budgetteren",
+       "Inflatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je betaalt maandelijks een bedrag zodat schade aan je fiets vergoed wordt. Dat past bij Verzekering: bescherming tegen risico.",
+      "uo": [
+       "Klopt: bescherming tegen risico.",
+       "Nee, dat hoort bij Premie: bedrag voor verzekering.",
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen."
+      ],
+      "uh": "Verzekering: bescherming tegen risico."
+     },
+     {
+      "v": "Je inkomen gecorrigeerd voor de prijsstijging. Wat is hier aan de hand?",
+      "o": [
+       "Budgetteren",
+       "Reëel inkomen",
+       "Inflatie",
+       "Indexcijfer"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je inkomen gecorrigeerd voor de prijsstijging. Dat past bij Reëel inkomen: inkomen na inflatie.",
+      "uo": [
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen.",
+       "Klopt: inkomen na inflatie.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Nee, dat hoort bij Indexcijfer: verandering t.o.v. basisjaar."
+      ],
+      "uh": "Reëel inkomen: inkomen na inflatie."
+     },
+     {
+      "v": "Een getal dat een verandering ten opzichte van een basisjaar laat zien. Welk begrip past hierbij?",
+      "o": [
+       "Budget",
+       "Inflatie",
+       "Indexcijfer",
+       "Eigen risico"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een getal dat een verandering ten opzichte van een basisjaar laat zien. Dat past bij Indexcijfer: verandering t.o.v. basisjaar.",
+      "uo": [
+       "Nee, dat hoort bij Budget: overzicht inkomsten en uitgaven.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Klopt: verandering t.o.v. basisjaar.",
+       "Nee, dat hoort bij Eigen risico: schade die je zelf betaalt."
+      ],
+      "uh": "Indexcijfer: verandering t.o.v. basisjaar."
+     },
+     {
+      "v": "Je loon is gestegen, maar door de inflatie kun je er niet meer van kopen. Om welk begrip gaat het?",
+      "o": [
+       "Eigen risico",
+       "Nominaal inkomen",
+       "Koopkracht",
+       "Reëel inkomen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je loon is gestegen, maar door de inflatie kun je er niet meer van kopen. Dat past bij Reëel inkomen: inkomen na inflatie.",
+      "uo": [
+       "Nee, dat hoort bij Eigen risico: schade die je zelf betaalt.",
+       "Nee, dat hoort bij Nominaal inkomen: inkomen in euro's.",
+       "Nee, dat hoort bij Koopkracht: wat je inkomen kan kopen.",
+       "Klopt: inkomen na inflatie."
+      ],
+      "uh": "Reëel inkomen: inkomen na inflatie."
+     },
+     {
+      "v": "Het deel van de schade dat je zelf moet betalen. Welk begrip herken je hier?",
+      "o": [
+       "Eigen risico",
+       "Budget",
+       "Reëel inkomen",
+       "Inkomen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het deel van de schade dat je zelf moet betalen. Dat past bij Eigen risico: schade die je zelf betaalt.",
+      "uo": [
+       "Klopt: schade die je zelf betaalt.",
+       "Nee, dat hoort bij Budget: overzicht inkomsten en uitgaven.",
+       "Nee, dat hoort bij Reëel inkomen: inkomen na inflatie.",
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt."
+      ],
+      "uh": "Eigen risico: schade die je zelf betaalt."
+     },
+     {
+      "v": "Je betaalt deze maand huur, boodschappen en je telefoonabonnement. Wat is hier aan de hand?",
+      "o": [
+       "Sparen",
+       "Uitgaven",
+       "Inkomen",
+       "Budgetteren"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Je betaalt deze maand huur, boodschappen en je telefoonabonnement. Dat past bij Uitgaven: geld dat je besteedt.",
+      "uo": [
+       "Nee, dat hoort bij Sparen: geld bewaren.",
+       "Klopt: geld dat je besteedt.",
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt.",
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen."
+      ],
+      "uh": "Uitgaven: geld dat je besteedt."
+     },
+     {
+      "v": "Elke maand schrijf je een vast bedrag over aan je zorgverzekeraar. Welk begrip past hierbij?",
+      "o": [
+       "Budgetteren",
+       "Eigen risico",
+       "Premie",
+       "Reëel inkomen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Elke maand schrijf je een vast bedrag over aan je zorgverzekeraar. Dat past bij Premie: bedrag voor verzekering.",
+      "uo": [
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen.",
+       "Nee, dat hoort bij Eigen risico: schade die je zelf betaalt.",
+       "Klopt: bedrag voor verzekering.",
+       "Nee, dat hoort bij Reëel inkomen: inkomen na inflatie."
+      ],
+      "uh": "Premie: bedrag voor verzekering."
+     },
+     {
+      "v": "Het geld dat je binnenkrijgt uit werk of uitkering. Om welk begrip gaat het?",
+      "o": [
+       "Inflatie",
+       "Premie",
+       "Reëel inkomen",
+       "Inkomen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het geld dat je binnenkrijgt uit werk of uitkering. Dat past bij Inkomen: geld dat je ontvangt.",
+      "uo": [
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Nee, dat hoort bij Premie: bedrag voor verzekering.",
+       "Nee, dat hoort bij Reëel inkomen: inkomen na inflatie.",
+       "Klopt: geld dat je ontvangt."
+      ],
+      "uh": "Inkomen: geld dat je ontvangt."
+     },
+     {
+      "v": "Het algemeen dalen van de prijzen. Welk begrip herken je hier?",
+      "o": [
+       "Deflatie",
+       "Inflatie",
+       "Budget",
+       "Verzekering"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het algemeen dalen van de prijzen. Dat past bij Deflatie: prijzen dalen.",
+      "uo": [
+       "Klopt: prijzen dalen.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Nee, dat hoort bij Budget: overzicht inkomsten en uitgaven.",
+       "Nee, dat hoort bij Verzekering: bescherming tegen risico."
+      ],
+      "uh": "Deflatie: prijzen dalen."
+     },
+     {
+      "v": "Voordat de maand begint, plan je precies waar je geld aan uitgeeft. Wat is hier aan de hand?",
+      "o": [
+       "Budget",
+       "Budgetteren",
+       "Deflatie",
+       "Indexcijfer"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Voordat de maand begint, plan je precies waar je geld aan uitgeeft. Dat past bij Budgetteren: uitgaven plannen.",
+      "uo": [
+       "Nee, dat hoort bij Budget: overzicht inkomsten en uitgaven.",
+       "Klopt: uitgaven plannen.",
+       "Nee, dat hoort bij Deflatie: prijzen dalen.",
+       "Nee, dat hoort bij Indexcijfer: verandering t.o.v. basisjaar."
+      ],
+      "uh": "Budgetteren: uitgaven plannen."
+     },
+     {
+      "v": "De prijzen in de winkels dalen, alles wordt goedkoper. Welk begrip past hierbij?",
+      "o": [
+       "Verzekering",
+       "Budgetteren",
+       "Deflatie",
+       "Inkomen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De prijzen in de winkels dalen, alles wordt goedkoper. Dat past bij Deflatie: prijzen dalen.",
+      "uo": [
+       "Nee, dat hoort bij Verzekering: bescherming tegen risico.",
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen.",
+       "Klopt: prijzen dalen.",
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt."
+      ],
+      "uh": "Deflatie: prijzen dalen."
+     },
+     {
+      "v": "Van tevoren je uitgaven plannen zodat je niet tekortkomt. Om welk begrip gaat het?",
+      "o": [
+       "Eigen risico",
+       "Budget",
+       "Inflatie",
+       "Budgetteren"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Van tevoren je uitgaven plannen zodat je niet tekortkomt. Dat past bij Budgetteren: uitgaven plannen.",
+      "uo": [
+       "Nee, dat hoort bij Eigen risico: schade die je zelf betaalt.",
+       "Nee, dat hoort bij Budget: overzicht inkomsten en uitgaven.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Klopt: uitgaven plannen."
+      ],
+      "uh": "Budgetteren: uitgaven plannen."
+     },
+     {
+      "v": "Een overzicht van je inkomsten en uitgaven. Welk begrip herken je hier?",
+      "o": [
+       "Budget",
+       "Budgetteren",
+       "Deflatie",
+       "Verzekering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een overzicht van je inkomsten en uitgaven. Dat past bij Budget: overzicht inkomsten en uitgaven.",
+      "uo": [
+       "Klopt: overzicht inkomsten en uitgaven.",
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen.",
+       "Nee, dat hoort bij Deflatie: prijzen dalen.",
+       "Nee, dat hoort bij Verzekering: bescherming tegen risico."
+      ],
+      "uh": "Budget: overzicht inkomsten en uitgaven."
+     },
+     {
+      "v": "Geld niet uitgeven maar bewaren. Wat is hier aan de hand?",
+      "o": [
+       "Budget",
+       "Sparen",
+       "Indexcijfer",
+       "Inflatie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Geld niet uitgeven maar bewaren. Dat past bij Sparen: geld bewaren.",
+      "uo": [
+       "Nee, dat hoort bij Budget: overzicht inkomsten en uitgaven.",
+       "Klopt: geld bewaren.",
+       "Nee, dat hoort bij Indexcijfer: verandering t.o.v. basisjaar.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen."
+      ],
+      "uh": "Sparen: geld bewaren."
+     },
+     {
+      "v": "Aan het eind van de maand krijg je je salaris op je rekening. Welk begrip past hierbij?",
+      "o": [
+       "Koopkracht",
+       "Uitgaven",
+       "Inkomen",
+       "Indexcijfer"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Aan het eind van de maand krijg je je salaris op je rekening. Dat past bij Inkomen: geld dat je ontvangt.",
+      "uo": [
+       "Nee, dat hoort bij Koopkracht: wat je inkomen kan kopen.",
+       "Nee, dat hoort bij Uitgaven: geld dat je besteedt.",
+       "Klopt: geld dat je ontvangt.",
+       "Nee, dat hoort bij Indexcijfer: verandering t.o.v. basisjaar."
+      ],
+      "uh": "Inkomen: geld dat je ontvangt."
+     },
+     {
+      "v": "Op je loonstrook staat gewoon het bedrag in euro's dat je verdient. Om welk begrip gaat het?",
+      "o": [
+       "Indexcijfer",
+       "Reëel inkomen",
+       "Deflatie",
+       "Nominaal inkomen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Op je loonstrook staat gewoon het bedrag in euro's dat je verdient. Dat past bij Nominaal inkomen: inkomen in euro's.",
+      "uo": [
+       "Nee, dat hoort bij Indexcijfer: verandering t.o.v. basisjaar.",
+       "Nee, dat hoort bij Reëel inkomen: inkomen na inflatie.",
+       "Nee, dat hoort bij Deflatie: prijzen dalen.",
+       "Klopt: inkomen in euro's."
+      ],
+      "uh": "Nominaal inkomen: inkomen in euro's."
+     },
+     {
+      "v": "Het algemeen stijgen van de prijzen. Wat is hier aan de hand?",
+      "o": [
+       "Inflatie",
+       "Budgetteren",
+       "Verzekering",
+       "Inkomen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het algemeen stijgen van de prijzen. Dat past bij Inflatie: prijzen stijgen.",
+      "uo": [
+       "Klopt: prijzen stijgen.",
+       "Nee, dat hoort bij Budgetteren: uitgaven plannen.",
+       "Nee, dat hoort bij Verzekering: bescherming tegen risico.",
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt."
+      ],
+      "uh": "Inflatie: prijzen stijgen."
+     },
+     {
+      "v": "Door de prijsstijging kun je van hetzelfde loon minder kopen dan vorig jaar. Welk begrip past hierbij?",
+      "o": [
+       "Inkomen",
+       "Koopkracht",
+       "Reëel inkomen",
+       "Premie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Door de prijsstijging kun je van hetzelfde loon minder kopen dan vorig jaar. Dat past bij Koopkracht: wat je inkomen kan kopen.",
+      "uo": [
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt.",
+       "Klopt: wat je inkomen kan kopen.",
+       "Nee, dat hoort bij Reëel inkomen: inkomen na inflatie.",
+       "Nee, dat hoort bij Premie: bedrag voor verzekering."
+      ],
+      "uh": "Koopkracht: wat je inkomen kan kopen."
+     },
+     {
+      "v": "De boodschappen worden elk jaar duurder, alles kost meer. Om welk begrip gaat het?",
+      "o": [
+       "Reëel inkomen",
+       "Deflatie",
+       "Inflatie",
+       "Indexcijfer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De boodschappen worden elk jaar duurder, alles kost meer. Dat past bij Inflatie: prijzen stijgen.",
+      "uo": [
+       "Nee, dat hoort bij Reëel inkomen: inkomen na inflatie.",
+       "Nee, dat hoort bij Deflatie: prijzen dalen.",
+       "Klopt: prijzen stijgen.",
+       "Nee, dat hoort bij Indexcijfer: verandering t.o.v. basisjaar."
+      ],
+      "uh": "Inflatie: prijzen stijgen."
+     },
+     {
+      "v": "Je zet elke maand een deel van je zakgeld opzij voor later. Welk begrip herken je hier?",
+      "o": [
+       "Inflatie",
+       "Budget",
+       "Indexcijfer",
+       "Sparen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Je zet elke maand een deel van je zakgeld opzij voor later. Dat past bij Sparen: geld bewaren.",
+      "uo": [
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Nee, dat hoort bij Budget: overzicht inkomsten en uitgaven.",
+       "Nee, dat hoort bij Indexcijfer: verandering t.o.v. basisjaar.",
+       "Klopt: geld bewaren."
+      ],
+      "uh": "Sparen: geld bewaren."
+     },
+     {
+      "v": "Het bedrag dat je periodiek voor een verzekering betaalt. Wat is hier aan de hand?",
+      "o": [
+       "Premie",
+       "Eigen risico",
+       "Deflatie",
+       "Inflatie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het bedrag dat je periodiek voor een verzekering betaalt. Dat past bij Premie: bedrag voor verzekering.",
+      "uo": [
+       "Klopt: bedrag voor verzekering.",
+       "Nee, dat hoort bij Eigen risico: schade die je zelf betaalt.",
+       "Nee, dat hoort bij Deflatie: prijzen dalen.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen."
+      ],
+      "uh": "Premie: bedrag voor verzekering."
      }
     ],
     "begrippen": [
@@ -15380,6 +15893,462 @@ var VAKKEN_VMBO = [
        "Klopt: ze beschermen de koper."
       ],
       "uh": "Ze beschermen de koper."
+     },
+     {
+      "v": "De vaste regels en voorwaarden bij een overeenkomst. Welk begrip past hierbij?",
+      "o": [
+       "Algemene voorwaarden",
+       "Koopovereenkomst",
+       "Consumentenrecht",
+       "Consumentenorganisatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De vaste regels en voorwaarden bij een overeenkomst. Dat past bij Algemene voorwaarden: de kleine lettertjes.",
+      "uo": [
+       "Klopt: de kleine lettertjes.",
+       "Nee, dat hoort bij Koopovereenkomst: afspraak koper-verkoper.",
+       "Nee, dat hoort bij Consumentenrecht: rechten van de koper.",
+       "Nee, dat hoort bij Consumentenorganisatie: komt op voor kopers."
+      ],
+      "uh": "Algemene voorwaarden: de kleine lettertjes."
+     },
+     {
+      "v": "Een teken dat aangeeft dat iets aan bepaalde eisen voldoet. Om welk begrip gaat het?",
+      "o": [
+       "Garantie",
+       "Keurmerk",
+       "Klacht",
+       "Consumentenbond"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een teken dat aangeeft dat iets aan bepaalde eisen voldoet. Dat past bij Keurmerk: teken van kwaliteit.",
+      "uo": [
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek.",
+       "Klopt: teken van kwaliteit.",
+       "Nee, dat hoort bij Klacht: melding dat iets niet voldoet.",
+       "Nee, dat hoort bij Consumentenbond: test en adviseert."
+      ],
+      "uh": "Keurmerk: teken van kwaliteit."
+     },
+     {
+      "v": "Zodra je akkoord gaat, ontstaat er een afspraak tussen jou en de verkoper. Welk begrip herken je hier?",
+      "o": [
+       "Bedenktijd",
+       "Algemene voorwaarden",
+       "Koopovereenkomst",
+       "Garantie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Zodra je akkoord gaat, ontstaat er een afspraak tussen jou en de verkoper. Dat past bij Koopovereenkomst: afspraak koper-verkoper.",
+      "uo": [
+       "Nee, dat hoort bij Bedenktijd: periode om te annuleren.",
+       "Nee, dat hoort bij Algemene voorwaarden: de kleine lettertjes.",
+       "Klopt: afspraak koper-verkoper.",
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek."
+      ],
+      "uh": "Koopovereenkomst: afspraak koper-verkoper."
+     },
+     {
+      "v": "De persoon die producten koopt en gebruikt. Wat is hier aan de hand?",
+      "o": [
+       "Retourrecht",
+       "Algemene voorwaarden",
+       "Consumentenorganisatie",
+       "Consument"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De persoon die producten koopt en gebruikt. Dat past bij Consument: de koper en gebruiker.",
+      "uo": [
+       "Nee, dat hoort bij Retourrecht: aankoop terugsturen.",
+       "Nee, dat hoort bij Algemene voorwaarden: de kleine lettertjes.",
+       "Nee, dat hoort bij Consumentenorganisatie: komt op voor kopers.",
+       "Klopt: de koper en gebruiker."
+      ],
+      "uh": "Consument: de koper en gebruiker."
+     },
+     {
+      "v": "Een organisatie die de belangen van consumenten behartigt. Welk begrip past hierbij?",
+      "o": [
+       "Consumentenorganisatie",
+       "Consumentenbond",
+       "Bedenktijd",
+       "Koopovereenkomst"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een organisatie die de belangen van consumenten behartigt. Dat past bij Consumentenorganisatie: komt op voor kopers.",
+      "uo": [
+       "Klopt: komt op voor kopers.",
+       "Nee, dat hoort bij Consumentenbond: test en adviseert.",
+       "Nee, dat hoort bij Bedenktijd: periode om te annuleren.",
+       "Nee, dat hoort bij Koopovereenkomst: afspraak koper-verkoper."
+      ],
+      "uh": "Consumentenorganisatie: komt op voor kopers."
+     },
+     {
+      "v": "Jij koopt en gebruikt producten voor jezelf. Om welk begrip gaat het?",
+      "o": [
+       "Consumentenbond",
+       "Consument",
+       "Aankoop op afstand",
+       "Garantie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Jij koopt en gebruikt producten voor jezelf. Dat past bij Consument: de koper en gebruiker.",
+      "uo": [
+       "Nee, dat hoort bij Consumentenbond: test en adviseert.",
+       "Klopt: de koper en gebruiker.",
+       "Nee, dat hoort bij Aankoop op afstand: kopen zonder winkel.",
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek."
+      ],
+      "uh": "Consument: de koper en gebruiker."
+     },
+     {
+      "v": "Je stuurt de winkel een bericht dat je bestelling beschadigd aankwam. Welk begrip herken je hier?",
+      "o": [
+       "Consument",
+       "Aankoop op afstand",
+       "Klacht",
+       "Consumentenrecht"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je stuurt de winkel een bericht dat je bestelling beschadigd aankwam. Dat past bij Klacht: melding dat iets niet voldoet.",
+      "uo": [
+       "Nee, dat hoort bij Consument: de koper en gebruiker.",
+       "Nee, dat hoort bij Aankoop op afstand: kopen zonder winkel.",
+       "Klopt: melding dat iets niet voldoet.",
+       "Nee, dat hoort bij Consumentenrecht: rechten van de koper."
+      ],
+      "uh": "Klacht: melding dat iets niet voldoet."
+     },
+     {
+      "v": "De belofte dat een gebrekkig product hersteld of vervangen wordt. Wat is hier aan de hand?",
+      "o": [
+       "Algemene voorwaarden",
+       "Bedenktijd",
+       "Retourrecht",
+       "Garantie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De belofte dat een gebrekkig product hersteld of vervangen wordt. Dat past bij Garantie: herstel bij een gebrek.",
+      "uo": [
+       "Nee, dat hoort bij Algemene voorwaarden: de kleine lettertjes.",
+       "Nee, dat hoort bij Bedenktijd: periode om te annuleren.",
+       "Nee, dat hoort bij Retourrecht: aankoop terugsturen.",
+       "Klopt: herstel bij een gebrek."
+      ],
+      "uh": "Garantie: herstel bij een gebrek."
+     },
+     {
+      "v": "Je koopt een spel via een webshop zonder de winkel te bezoeken. Welk begrip past hierbij?",
+      "o": [
+       "Aankoop op afstand",
+       "Bedenktijd",
+       "Algemene voorwaarden",
+       "Consumentenorganisatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je koopt een spel via een webshop zonder de winkel te bezoeken. Dat past bij Aankoop op afstand: kopen zonder winkel.",
+      "uo": [
+       "Klopt: kopen zonder winkel.",
+       "Nee, dat hoort bij Bedenktijd: periode om te annuleren.",
+       "Nee, dat hoort bij Algemene voorwaarden: de kleine lettertjes.",
+       "Nee, dat hoort bij Consumentenorganisatie: komt op voor kopers."
+      ],
+      "uh": "Aankoop op afstand: kopen zonder winkel."
+     },
+     {
+      "v": "Je nieuwe telefoon gaat binnen een jaar stuk en de winkel repareert hem gratis. Om welk begrip gaat het?",
+      "o": [
+       "Consumentenrecht",
+       "Garantie",
+       "Keurmerk",
+       "Aankoop op afstand"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je nieuwe telefoon gaat binnen een jaar stuk en de winkel repareert hem gratis. Dat past bij Garantie: herstel bij een gebrek.",
+      "uo": [
+       "Nee, dat hoort bij Consumentenrecht: rechten van de koper.",
+       "Klopt: herstel bij een gebrek.",
+       "Nee, dat hoort bij Keurmerk: teken van kwaliteit.",
+       "Nee, dat hoort bij Aankoop op afstand: kopen zonder winkel."
+      ],
+      "uh": "Garantie: herstel bij een gebrek."
+     },
+     {
+      "v": "Op de verpakking staat een logo dat de kwaliteit garandeert. Welk begrip herken je hier?",
+      "o": [
+       "Consumentenorganisatie",
+       "Garantie",
+       "Keurmerk",
+       "Consument"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Op de verpakking staat een logo dat de kwaliteit garandeert. Dat past bij Keurmerk: teken van kwaliteit.",
+      "uo": [
+       "Nee, dat hoort bij Consumentenorganisatie: komt op voor kopers.",
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek.",
+       "Klopt: teken van kwaliteit.",
+       "Nee, dat hoort bij Consument: de koper en gebruiker."
+      ],
+      "uh": "Keurmerk: teken van kwaliteit."
+     },
+     {
+      "v": "Een melding dat een product of dienst niet voldoet. Wat is hier aan de hand?",
+      "o": [
+       "Consumentenrecht",
+       "Garantie",
+       "Retourrecht",
+       "Klacht"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een melding dat een product of dienst niet voldoet. Dat past bij Klacht: melding dat iets niet voldoet.",
+      "uo": [
+       "Nee, dat hoort bij Consumentenrecht: rechten van de koper.",
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek.",
+       "Nee, dat hoort bij Retourrecht: aankoop terugsturen.",
+       "Klopt: melding dat iets niet voldoet."
+      ],
+      "uh": "Klacht: melding dat iets niet voldoet."
+     },
+     {
+      "v": "De afspraak tussen koper en verkoper over een product. Welk begrip past hierbij?",
+      "o": [
+       "Koopovereenkomst",
+       "Retourrecht",
+       "Consument",
+       "Garantie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De afspraak tussen koper en verkoper over een product. Dat past bij Koopovereenkomst: afspraak koper-verkoper.",
+      "uo": [
+       "Klopt: afspraak koper-verkoper.",
+       "Nee, dat hoort bij Retourrecht: aankoop terugsturen.",
+       "Nee, dat hoort bij Consument: de koper en gebruiker.",
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek."
+      ],
+      "uh": "Koopovereenkomst: afspraak koper-verkoper."
+     },
+     {
+      "v": "Een club komt op voor de belangen van kopers en waarschuwt voor oplichting. Om welk begrip gaat het?",
+      "o": [
+       "Consumentenbond",
+       "Consumentenorganisatie",
+       "Bedenktijd",
+       "Koopovereenkomst"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een club komt op voor de belangen van kopers en waarschuwt voor oplichting. Dat past bij Consumentenorganisatie: komt op voor kopers.",
+      "uo": [
+       "Nee, dat hoort bij Consumentenbond: test en adviseert.",
+       "Klopt: komt op voor kopers.",
+       "Nee, dat hoort bij Bedenktijd: periode om te annuleren.",
+       "Nee, dat hoort bij Koopovereenkomst: afspraak koper-verkoper."
+      ],
+      "uh": "Consumentenorganisatie: komt op voor kopers."
+     },
+     {
+      "v": "De periode waarin je een koop nog kunt annuleren. Welk begrip herken je hier?",
+      "o": [
+       "Consumentenbond",
+       "Retourrecht",
+       "Bedenktijd",
+       "Consument"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De periode waarin je een koop nog kunt annuleren. Dat past bij Bedenktijd: periode om te annuleren.",
+      "uo": [
+       "Nee, dat hoort bij Consumentenbond: test en adviseert.",
+       "Nee, dat hoort bij Retourrecht: aankoop terugsturen.",
+       "Klopt: periode om te annuleren.",
+       "Nee, dat hoort bij Consument: de koper en gebruiker."
+      ],
+      "uh": "Bedenktijd: periode om te annuleren."
+     },
+     {
+      "v": "Na een online bestelling heb je nog twee weken om je te bedenken. Wat is hier aan de hand?",
+      "o": [
+       "Consumentenrecht",
+       "Keurmerk",
+       "Klacht",
+       "Bedenktijd"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Na een online bestelling heb je nog twee weken om je te bedenken. Dat past bij Bedenktijd: periode om te annuleren.",
+      "uo": [
+       "Nee, dat hoort bij Consumentenrecht: rechten van de koper.",
+       "Nee, dat hoort bij Keurmerk: teken van kwaliteit.",
+       "Nee, dat hoort bij Klacht: melding dat iets niet voldoet.",
+       "Klopt: periode om te annuleren."
+      ],
+      "uh": "Bedenktijd: periode om te annuleren."
+     },
+     {
+      "v": "De rechten die jij als koper hebt tegenover de verkoper. Welk begrip past hierbij?",
+      "o": [
+       "Consumentenrecht",
+       "Algemene voorwaarden",
+       "Garantie",
+       "Koopovereenkomst"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De rechten die jij als koper hebt tegenover de verkoper. Dat past bij Consumentenrecht: rechten van de koper.",
+      "uo": [
+       "Klopt: rechten van de koper.",
+       "Nee, dat hoort bij Algemene voorwaarden: de kleine lettertjes.",
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek.",
+       "Nee, dat hoort bij Koopovereenkomst: afspraak koper-verkoper."
+      ],
+      "uh": "Consumentenrecht: rechten van de koper."
+     },
+     {
+      "v": "In de kleine lettertjes staan alle regels van de koop. Om welk begrip gaat het?",
+      "o": [
+       "Koopovereenkomst",
+       "Algemene voorwaarden",
+       "Consumentenrecht",
+       "Consumentenorganisatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In de kleine lettertjes staan alle regels van de koop. Dat past bij Algemene voorwaarden: de kleine lettertjes.",
+      "uo": [
+       "Nee, dat hoort bij Koopovereenkomst: afspraak koper-verkoper.",
+       "Klopt: de kleine lettertjes.",
+       "Nee, dat hoort bij Consumentenrecht: rechten van de koper.",
+       "Nee, dat hoort bij Consumentenorganisatie: komt op voor kopers."
+      ],
+      "uh": "Algemene voorwaarden: de kleine lettertjes."
+     },
+     {
+      "v": "De trui die je online kocht mag je binnen veertien dagen terugsturen. Welk begrip herken je hier?",
+      "o": [
+       "Consumentenrecht",
+       "Keurmerk",
+       "Retourrecht",
+       "Consument"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De trui die je online kocht mag je binnen veertien dagen terugsturen. Dat past bij Retourrecht: aankoop terugsturen.",
+      "uo": [
+       "Nee, dat hoort bij Consumentenrecht: rechten van de koper.",
+       "Nee, dat hoort bij Keurmerk: teken van kwaliteit.",
+       "Klopt: aankoop terugsturen.",
+       "Nee, dat hoort bij Consument: de koper en gebruiker."
+      ],
+      "uh": "Retourrecht: aankoop terugsturen."
+     },
+     {
+      "v": "De vereniging die producten test en consumenten adviseert. Wat is hier aan de hand?",
+      "o": [
+       "Algemene voorwaarden",
+       "Consumentenorganisatie",
+       "Koopovereenkomst",
+       "Consumentenbond"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De vereniging die producten test en consumenten adviseert. Dat past bij Consumentenbond: test en adviseert.",
+      "uo": [
+       "Nee, dat hoort bij Algemene voorwaarden: de kleine lettertjes.",
+       "Nee, dat hoort bij Consumentenorganisatie: komt op voor kopers.",
+       "Nee, dat hoort bij Koopovereenkomst: afspraak koper-verkoper.",
+       "Klopt: test en adviseert."
+      ],
+      "uh": "Consumentenbond: test en adviseert."
+     },
+     {
+      "v": "Als koper heb je wettelijke rechten als een product kapot blijkt. Welk begrip past hierbij?",
+      "o": [
+       "Consumentenrecht",
+       "Garantie",
+       "Algemene voorwaarden",
+       "Keurmerk"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Als koper heb je wettelijke rechten als een product kapot blijkt. Dat past bij Consumentenrecht: rechten van de koper.",
+      "uo": [
+       "Klopt: rechten van de koper.",
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek.",
+       "Nee, dat hoort bij Algemene voorwaarden: de kleine lettertjes.",
+       "Nee, dat hoort bij Keurmerk: teken van kwaliteit."
+      ],
+      "uh": "Consumentenrecht: rechten van de koper."
+     },
+     {
+      "v": "Deze organisatie test producten en geeft kopers advies. Om welk begrip gaat het?",
+      "o": [
+       "Garantie",
+       "Consumentenbond",
+       "Consument",
+       "Bedenktijd"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Deze organisatie test producten en geeft kopers advies. Dat past bij Consumentenbond: test en adviseert.",
+      "uo": [
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek.",
+       "Klopt: test en adviseert.",
+       "Nee, dat hoort bij Consument: de koper en gebruiker.",
+       "Nee, dat hoort bij Bedenktijd: periode om te annuleren."
+      ],
+      "uh": "Consumentenbond: test en adviseert."
+     },
+     {
+      "v": "Het recht om een aankoop terug te sturen. Welk begrip herken je hier?",
+      "o": [
+       "Garantie",
+       "Bedenktijd",
+       "Retourrecht",
+       "Consumentenorganisatie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het recht om een aankoop terug te sturen. Dat past bij Retourrecht: aankoop terugsturen.",
+      "uo": [
+       "Nee, dat hoort bij Garantie: herstel bij een gebrek.",
+       "Nee, dat hoort bij Bedenktijd: periode om te annuleren.",
+       "Klopt: aankoop terugsturen.",
+       "Nee, dat hoort bij Consumentenorganisatie: komt op voor kopers."
+      ],
+      "uh": "Retourrecht: aankoop terugsturen."
+     },
+     {
+      "v": "Iets kopen zonder in de winkel te zijn, bijvoorbeeld online. Wat is hier aan de hand?",
+      "o": [
+       "Consumentenorganisatie",
+       "Bedenktijd",
+       "Algemene voorwaarden",
+       "Aankoop op afstand"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Iets kopen zonder in de winkel te zijn, bijvoorbeeld online. Dat past bij Aankoop op afstand: kopen zonder winkel.",
+      "uo": [
+       "Nee, dat hoort bij Consumentenorganisatie: komt op voor kopers.",
+       "Nee, dat hoort bij Bedenktijd: periode om te annuleren.",
+       "Nee, dat hoort bij Algemene voorwaarden: de kleine lettertjes.",
+       "Klopt: kopen zonder winkel."
+      ],
+      "uh": "Aankoop op afstand: kopen zonder winkel."
      }
     ],
     "begrippen": [
@@ -15675,6 +16644,462 @@ var VAKKEN_VMBO = [
        "Klopt: een middel om mee te produceren, zoals arbeid."
       ],
       "uh": "Een middel om mee te produceren, zoals arbeid."
+     },
+     {
+      "v": "Afspraken over loon en werk voor een hele bedrijfstak. Welk begrip past hierbij?",
+      "o": [
+       "Cao",
+       "Minimumloon",
+       "Vakbond",
+       "Arbeidsverdeling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Afspraken over loon en werk voor een hele bedrijfstak. Dat past bij Cao: afspraken over het werk.",
+      "uo": [
+       "Klopt: afspraken over het werk.",
+       "Nee, dat hoort bij Minimumloon: laagste toegestane loon.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen."
+      ],
+      "uh": "Cao: afspraken over het werk."
+     },
+     {
+      "v": "Degene die mensen in dienst neemt. Om welk begrip gaat het?",
+      "o": [
+       "Werknemer",
+       "Werkgever",
+       "Cao",
+       "Productiefactor"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Degene die mensen in dienst neemt. Dat past bij Werkgever: neemt mensen aan.",
+      "uo": [
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Klopt: neemt mensen aan.",
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Nee, dat hoort bij Productiefactor: middel om te produceren."
+      ],
+      "uh": "Werkgever: neemt mensen aan."
+     },
+     {
+      "v": "De wet bepaalt het laagste loon dat een baas mag betalen. Welk begrip herken je hier?",
+      "o": [
+       "Arbeidsverdeling",
+       "Cao",
+       "Minimumloon",
+       "Specialisatie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De wet bepaalt het laagste loon dat een baas mag betalen. Dat past bij Minimumloon: laagste toegestane loon.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen.",
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Klopt: laagste toegestane loon.",
+       "Nee, dat hoort bij Specialisatie: je op één taak richten."
+      ],
+      "uh": "Minimumloon: laagste toegestane loon."
+     },
+     {
+      "v": "Een middel dat je nodig hebt om te produceren. Wat is hier aan de hand?",
+      "o": [
+       "Arbeidsverdeling",
+       "Nettoloon",
+       "Vakbond",
+       "Productiefactor"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een middel dat je nodig hebt om te produceren. Dat past bij Productiefactor: middel om te produceren.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen.",
+       "Nee, dat hoort bij Nettoloon: loon na aftrek.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Klopt: middel om te produceren."
+      ],
+      "uh": "Productiefactor: middel om te produceren."
+     },
+     {
+      "v": "Je richten op één taak, die je daardoor beter beheerst. Welk begrip past hierbij?",
+      "o": [
+       "Specialisatie",
+       "Arbeidsverdeling",
+       "Nettoloon",
+       "Werknemer"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je richten op één taak, die je daardoor beter beheerst. Dat past bij Specialisatie: je op één taak richten.",
+      "uo": [
+       "Klopt: je op één taak richten.",
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen.",
+       "Nee, dat hoort bij Nettoloon: loon na aftrek.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst."
+      ],
+      "uh": "Specialisatie: je op één taak richten."
+     },
+     {
+      "v": "Arbeid, grond en kapitaal zijn nodig om iets te maken. Om welk begrip gaat het?",
+      "o": [
+       "Arbeidsproductiviteit",
+       "Productiefactor",
+       "Nettoloon",
+       "Specialisatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Arbeid, grond en kapitaal zijn nodig om iets te maken. Dat past bij Productiefactor: middel om te produceren.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsproductiviteit: productie per werknemer.",
+       "Klopt: middel om te produceren.",
+       "Nee, dat hoort bij Nettoloon: loon na aftrek.",
+       "Nee, dat hoort bij Specialisatie: je op één taak richten."
+      ],
+      "uh": "Productiefactor: middel om te produceren."
+     },
+     {
+      "v": "Je werkt tegen loon in dienst van een baas. Welk begrip herken je hier?",
+      "o": [
+       "Arbeidsverdeling",
+       "Specialisatie",
+       "Werknemer",
+       "Brutoloon"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je werkt tegen loon in dienst van een baas. Dat past bij Werknemer: werkt in loondienst.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen.",
+       "Nee, dat hoort bij Specialisatie: je op één taak richten.",
+       "Klopt: werkt in loondienst.",
+       "Nee, dat hoort bij Brutoloon: loon vóór aftrek."
+      ],
+      "uh": "Werknemer: werkt in loondienst."
+     },
+     {
+      "v": "Je loon nadat de inhoudingen eraf zijn. Wat is hier aan de hand?",
+      "o": [
+       "Werknemer",
+       "Brutoloon",
+       "Arbeidsproductiviteit",
+       "Nettoloon"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je loon nadat de inhoudingen eraf zijn. Dat past bij Nettoloon: loon na aftrek.",
+      "uo": [
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Nee, dat hoort bij Brutoloon: loon vóór aftrek.",
+       "Nee, dat hoort bij Arbeidsproductiviteit: productie per werknemer.",
+       "Klopt: loon na aftrek."
+      ],
+      "uh": "Nettoloon: loon na aftrek."
+     },
+     {
+      "v": "Een organisatie onderhandelt namens de werknemers over hun loon. Welk begrip past hierbij?",
+      "o": [
+       "Vakbond",
+       "Werkgever",
+       "Specialisatie",
+       "Arbeidsverdeling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een organisatie onderhandelt namens de werknemers over hun loon. Dat past bij Vakbond: komt op voor werknemers.",
+      "uo": [
+       "Klopt: komt op voor werknemers.",
+       "Nee, dat hoort bij Werkgever: neemt mensen aan.",
+       "Nee, dat hoort bij Specialisatie: je op één taak richten.",
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen."
+      ],
+      "uh": "Vakbond: komt op voor werknemers."
+     },
+     {
+      "v": "Dit is het bedrag dat je uiteindelijk op je rekening krijgt. Om welk begrip gaat het?",
+      "o": [
+       "Werknemer",
+       "Nettoloon",
+       "Arbeidsproductiviteit",
+       "Loonheffing"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Dit is het bedrag dat je uiteindelijk op je rekening krijgt. Dat past bij Nettoloon: loon na aftrek.",
+      "uo": [
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Klopt: loon na aftrek.",
+       "Nee, dat hoort bij Arbeidsproductiviteit: productie per werknemer.",
+       "Nee, dat hoort bij Loonheffing: inhoudingen op je loon."
+      ],
+      "uh": "Nettoloon: loon na aftrek."
+     },
+     {
+      "v": "Het bedrijf neemt nieuwe mensen aan en betaalt hun loon. Welk begrip herken je hier?",
+      "o": [
+       "Arbeidsverdeling",
+       "Werknemer",
+       "Werkgever",
+       "Specialisatie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het bedrijf neemt nieuwe mensen aan en betaalt hun loon. Dat past bij Werkgever: neemt mensen aan.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Klopt: neemt mensen aan.",
+       "Nee, dat hoort bij Specialisatie: je op één taak richten."
+      ],
+      "uh": "Werkgever: neemt mensen aan."
+     },
+     {
+      "v": "Iemand die in loondienst werkt. Wat is hier aan de hand?",
+      "o": [
+       "Productiefactor",
+       "Werkgever",
+       "Cao",
+       "Werknemer"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Iemand die in loondienst werkt. Dat past bij Werknemer: werkt in loondienst.",
+      "uo": [
+       "Nee, dat hoort bij Productiefactor: middel om te produceren.",
+       "Nee, dat hoort bij Werkgever: neemt mensen aan.",
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Klopt: werkt in loondienst."
+      ],
+      "uh": "Werknemer: werkt in loondienst."
+     },
+     {
+      "v": "Het wettelijk laagste loon. Welk begrip past hierbij?",
+      "o": [
+       "Minimumloon",
+       "Werknemer",
+       "Productiefactor",
+       "Brutoloon"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het wettelijk laagste loon. Dat past bij Minimumloon: laagste toegestane loon.",
+      "uo": [
+       "Klopt: laagste toegestane loon.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Nee, dat hoort bij Productiefactor: middel om te produceren.",
+       "Nee, dat hoort bij Brutoloon: loon vóór aftrek."
+      ],
+      "uh": "Minimumloon: laagste toegestane loon."
+     },
+     {
+      "v": "Eén werknemer doet alleen nog het lassen en wordt daar heel goed in. Om welk begrip gaat het?",
+      "o": [
+       "Arbeidsverdeling",
+       "Specialisatie",
+       "Nettoloon",
+       "Werknemer"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Eén werknemer doet alleen nog het lassen en wordt daar heel goed in. Dat past bij Specialisatie: je op één taak richten.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen.",
+       "Klopt: je op één taak richten.",
+       "Nee, dat hoort bij Nettoloon: loon na aftrek.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst."
+      ],
+      "uh": "Specialisatie: je op één taak richten."
+     },
+     {
+      "v": "Het werk opsplitsen in aparte taken. Welk begrip herken je hier?",
+      "o": [
+       "Arbeidsproductiviteit",
+       "Specialisatie",
+       "Arbeidsverdeling",
+       "Nettoloon"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het werk opsplitsen in aparte taken. Dat past bij Arbeidsverdeling: werk in taken opdelen.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsproductiviteit: productie per werknemer.",
+       "Nee, dat hoort bij Specialisatie: je op één taak richten.",
+       "Klopt: werk in taken opdelen.",
+       "Nee, dat hoort bij Nettoloon: loon na aftrek."
+      ],
+      "uh": "Arbeidsverdeling: werk in taken opdelen."
+     },
+     {
+      "v": "In de fabriek doet ieder een eigen deel van het werk. Wat is hier aan de hand?",
+      "o": [
+       "Nettoloon",
+       "Loonheffing",
+       "Productiefactor",
+       "Arbeidsverdeling"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In de fabriek doet ieder een eigen deel van het werk. Dat past bij Arbeidsverdeling: werk in taken opdelen.",
+      "uo": [
+       "Nee, dat hoort bij Nettoloon: loon na aftrek.",
+       "Nee, dat hoort bij Loonheffing: inhoudingen op je loon.",
+       "Nee, dat hoort bij Productiefactor: middel om te produceren.",
+       "Klopt: werk in taken opdelen."
+      ],
+      "uh": "Arbeidsverdeling: werk in taken opdelen."
+     },
+     {
+      "v": "Je loon vóór de inhoudingen. Welk begrip past hierbij?",
+      "o": [
+       "Brutoloon",
+       "Nettoloon",
+       "Arbeidsproductiviteit",
+       "Werknemer"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je loon vóór de inhoudingen. Dat past bij Brutoloon: loon vóór aftrek.",
+      "uo": [
+       "Klopt: loon vóór aftrek.",
+       "Nee, dat hoort bij Nettoloon: loon na aftrek.",
+       "Nee, dat hoort bij Arbeidsproductiviteit: productie per werknemer.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst."
+      ],
+      "uh": "Brutoloon: loon vóór aftrek."
+     },
+     {
+      "v": "In een akkoord voor de hele bedrijfstak staan de arbeidsvoorwaarden. Om welk begrip gaat het?",
+      "o": [
+       "Minimumloon",
+       "Cao",
+       "Vakbond",
+       "Arbeidsverdeling"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In een akkoord voor de hele bedrijfstak staan de arbeidsvoorwaarden. Dat past bij Cao: afspraken over het werk.",
+      "uo": [
+       "Nee, dat hoort bij Minimumloon: laagste toegestane loon.",
+       "Klopt: afspraken over het werk.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen."
+      ],
+      "uh": "Cao: afspraken over het werk."
+     },
+     {
+      "v": "De werkgever houdt belasting en premies al in op je loon. Welk begrip herken je hier?",
+      "o": [
+       "Productiefactor",
+       "Cao",
+       "Loonheffing",
+       "Nettoloon"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De werkgever houdt belasting en premies al in op je loon. Dat past bij Loonheffing: inhoudingen op je loon.",
+      "uo": [
+       "Nee, dat hoort bij Productiefactor: middel om te produceren.",
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Klopt: inhoudingen op je loon.",
+       "Nee, dat hoort bij Nettoloon: loon na aftrek."
+      ],
+      "uh": "Loonheffing: inhoudingen op je loon."
+     },
+     {
+      "v": "De hoeveelheid productie per werknemer. Wat is hier aan de hand?",
+      "o": [
+       "Nettoloon",
+       "Arbeidsverdeling",
+       "Vakbond",
+       "Arbeidsproductiviteit"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De hoeveelheid productie per werknemer. Dat past bij Arbeidsproductiviteit: productie per werknemer.",
+      "uo": [
+       "Nee, dat hoort bij Nettoloon: loon na aftrek.",
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Klopt: productie per werknemer."
+      ],
+      "uh": "Arbeidsproductiviteit: productie per werknemer."
+     },
+     {
+      "v": "Dit is je loon voordat er belasting en premies vanaf gaan. Welk begrip past hierbij?",
+      "o": [
+       "Brutoloon",
+       "Nettoloon",
+       "Cao",
+       "Productiefactor"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Dit is je loon voordat er belasting en premies vanaf gaan. Dat past bij Brutoloon: loon vóór aftrek.",
+      "uo": [
+       "Klopt: loon vóór aftrek.",
+       "Nee, dat hoort bij Nettoloon: loon na aftrek.",
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Nee, dat hoort bij Productiefactor: middel om te produceren."
+      ],
+      "uh": "Brutoloon: loon vóór aftrek."
+     },
+     {
+      "v": "Elke werknemer maakt gemiddeld tien producten per uur. Om welk begrip gaat het?",
+      "o": [
+       "Cao",
+       "Arbeidsproductiviteit",
+       "Productiefactor",
+       "Werkgever"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Elke werknemer maakt gemiddeld tien producten per uur. Dat past bij Arbeidsproductiviteit: productie per werknemer.",
+      "uo": [
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Klopt: productie per werknemer.",
+       "Nee, dat hoort bij Productiefactor: middel om te produceren.",
+       "Nee, dat hoort bij Werkgever: neemt mensen aan."
+      ],
+      "uh": "Arbeidsproductiviteit: productie per werknemer."
+     },
+     {
+      "v": "De belasting en premies die van je brutoloon worden ingehouden. Welk begrip herken je hier?",
+      "o": [
+       "Arbeidsverdeling",
+       "Brutoloon",
+       "Loonheffing",
+       "Productiefactor"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De belasting en premies die van je brutoloon worden ingehouden. Dat past bij Loonheffing: inhoudingen op je loon.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen.",
+       "Nee, dat hoort bij Brutoloon: loon vóór aftrek.",
+       "Klopt: inhoudingen op je loon.",
+       "Nee, dat hoort bij Productiefactor: middel om te produceren."
+      ],
+      "uh": "Loonheffing: inhoudingen op je loon."
+     },
+     {
+      "v": "Een organisatie die opkomt voor werknemers. Wat is hier aan de hand?",
+      "o": [
+       "Arbeidsverdeling",
+       "Werkgever",
+       "Specialisatie",
+       "Vakbond"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een organisatie die opkomt voor werknemers. Dat past bij Vakbond: komt op voor werknemers.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsverdeling: werk in taken opdelen.",
+       "Nee, dat hoort bij Werkgever: neemt mensen aan.",
+       "Nee, dat hoort bij Specialisatie: je op één taak richten.",
+       "Klopt: komt op voor werknemers."
+      ],
+      "uh": "Vakbond: komt op voor werknemers."
      }
     ],
     "begrippen": [
@@ -15970,6 +17395,462 @@ var VAKKEN_VMBO = [
        "Klopt: btw draag je af aan de overheid."
       ],
       "uh": "Als belasting aan de overheid: Btw draag je af aan de overheid."
+     },
+     {
+      "v": "De vaste plus de meebewegende kosten samen. Welk begrip past hierbij?",
+      "o": [
+       "Totale kosten",
+       "Kosten",
+       "Btw",
+       "Inkoopprijs"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De vaste plus de meebewegende kosten samen. Dat past bij Totale kosten: constant plus variabel.",
+      "uo": [
+       "Klopt: constant plus variabel.",
+       "Nee, dat hoort bij Kosten: uitgaven om te produceren.",
+       "Nee, dat hoort bij Btw: belasting op de prijs.",
+       "Nee, dat hoort bij Inkoopprijs: prijs bij inkoop."
+      ],
+      "uh": "Totale kosten: constant plus variabel."
+     },
+     {
+      "v": "Kosten die meebewegen met de hoeveelheid productie. Om welk begrip gaat het?",
+      "o": [
+       "Constante kosten",
+       "Variabele kosten",
+       "Btw",
+       "Verkoopprijs"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Kosten die meebewegen met de hoeveelheid productie. Dat past bij Variabele kosten: bewegen mee.",
+      "uo": [
+       "Nee, dat hoort bij Constante kosten: blijven gelijk.",
+       "Klopt: bewegen mee.",
+       "Nee, dat hoort bij Btw: belasting op de prijs.",
+       "Nee, dat hoort bij Verkoopprijs: prijs bij verkoop."
+      ],
+      "uh": "Variabele kosten: bewegen mee."
+     },
+     {
+      "v": "Je trekt van de omzet af wat de verkochte spullen je aan inkoop kostten. Welk begrip herken je hier?",
+      "o": [
+       "Omzet",
+       "Kosten",
+       "Brutowinst",
+       "Break-even"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je trekt van de omzet af wat de verkochte spullen je aan inkoop kostten. Dat past bij Brutowinst: omzet min inkoopwaarde.",
+      "uo": [
+       "Nee, dat hoort bij Omzet: prijs maal aantal.",
+       "Nee, dat hoort bij Kosten: uitgaven om te produceren.",
+       "Klopt: omzet min inkoopwaarde.",
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten."
+      ],
+      "uh": "Brutowinst: omzet min inkoopwaarde."
+     },
+     {
+      "v": "Het punt waarop de omzet precies gelijk is aan de kosten. Wat is hier aan de hand?",
+      "o": [
+       "Winstmarge",
+       "Winst",
+       "Btw",
+       "Break-even"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het punt waarop de omzet precies gelijk is aan de kosten. Dat past bij Break-even: omzet is gelijk aan kosten.",
+      "uo": [
+       "Nee, dat hoort bij Winstmarge: verkoop min inkoop.",
+       "Nee, dat hoort bij Winst: opbrengst min kosten.",
+       "Nee, dat hoort bij Btw: belasting op de prijs.",
+       "Klopt: omzet is gelijk aan kosten."
+      ],
+      "uh": "Break-even: omzet is gelijk aan kosten."
+     },
+     {
+      "v": "Wat er overblijft als je de kosten van de opbrengst aftrekt. Welk begrip past hierbij?",
+      "o": [
+       "Winst",
+       "Kosten",
+       "Constante kosten",
+       "Btw"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Wat er overblijft als je de kosten van de opbrengst aftrekt. Dat past bij Winst: opbrengst min kosten.",
+      "uo": [
+       "Klopt: opbrengst min kosten.",
+       "Nee, dat hoort bij Kosten: uitgaven om te produceren.",
+       "Nee, dat hoort bij Constante kosten: blijven gelijk.",
+       "Nee, dat hoort bij Btw: belasting op de prijs."
+      ],
+      "uh": "Winst: opbrengst min kosten."
+     },
+     {
+      "v": "Je verkoopt precies genoeg om je kosten te dekken, zonder winst of verlies. Om welk begrip gaat het?",
+      "o": [
+       "Winst",
+       "Break-even",
+       "Btw",
+       "Winstmarge"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je verkoopt precies genoeg om je kosten te dekken, zonder winst of verlies. Dat past bij Break-even: omzet is gelijk aan kosten.",
+      "uo": [
+       "Nee, dat hoort bij Winst: opbrengst min kosten.",
+       "Klopt: omzet is gelijk aan kosten.",
+       "Nee, dat hoort bij Btw: belasting op de prijs.",
+       "Nee, dat hoort bij Winstmarge: verkoop min inkoop."
+      ],
+      "uh": "Break-even: omzet is gelijk aan kosten."
+     },
+     {
+      "v": "De huur van het pand blijft elke maand hetzelfde, hoeveel je ook maakt. Welk begrip herken je hier?",
+      "o": [
+       "Break-even",
+       "Inkoopprijs",
+       "Constante kosten",
+       "Verkoopprijs"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De huur van het pand blijft elke maand hetzelfde, hoeveel je ook maakt. Dat past bij Constante kosten: blijven gelijk.",
+      "uo": [
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten.",
+       "Nee, dat hoort bij Inkoopprijs: prijs bij inkoop.",
+       "Klopt: blijven gelijk.",
+       "Nee, dat hoort bij Verkoopprijs: prijs bij verkoop."
+      ],
+      "uh": "Constante kosten: blijven gelijk."
+     },
+     {
+      "v": "De prijs waarvoor je een product verkoopt. Wat is hier aan de hand?",
+      "o": [
+       "Break-even",
+       "Inkoopprijs",
+       "Winst",
+       "Verkoopprijs"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De prijs waarvoor je een product verkoopt. Dat past bij Verkoopprijs: prijs bij verkoop.",
+      "uo": [
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten.",
+       "Nee, dat hoort bij Inkoopprijs: prijs bij inkoop.",
+       "Nee, dat hoort bij Winst: opbrengst min kosten.",
+       "Klopt: prijs bij verkoop."
+      ],
+      "uh": "Verkoopprijs: prijs bij verkoop."
+     },
+     {
+      "v": "Op elk product zit het verschil tussen wat je ervoor betaalt en verkoopt. Welk begrip past hierbij?",
+      "o": [
+       "Winstmarge",
+       "Brutowinst",
+       "Btw",
+       "Break-even"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Op elk product zit het verschil tussen wat je ervoor betaalt en verkoopt. Dat past bij Winstmarge: verkoop min inkoop.",
+      "uo": [
+       "Klopt: verkoop min inkoop.",
+       "Nee, dat hoort bij Brutowinst: omzet min inkoopwaarde.",
+       "Nee, dat hoort bij Btw: belasting op de prijs.",
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten."
+      ],
+      "uh": "Winstmarge: verkoop min inkoop."
+     },
+     {
+      "v": "De prijs op het kaartje die de klant betaalt. Om welk begrip gaat het?",
+      "o": [
+       "Kosten",
+       "Verkoopprijs",
+       "Break-even",
+       "Variabele kosten"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De prijs op het kaartje die de klant betaalt. Dat past bij Verkoopprijs: prijs bij verkoop.",
+      "uo": [
+       "Nee, dat hoort bij Kosten: uitgaven om te produceren.",
+       "Klopt: prijs bij verkoop.",
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten.",
+       "Nee, dat hoort bij Variabele kosten: bewegen mee."
+      ],
+      "uh": "Verkoopprijs: prijs bij verkoop."
+     },
+     {
+      "v": "Hoe meer broden je bakt, hoe meer meel je moet kopen. Welk begrip herken je hier?",
+      "o": [
+       "Brutowinst",
+       "Constante kosten",
+       "Variabele kosten",
+       "Btw"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Hoe meer broden je bakt, hoe meer meel je moet kopen. Dat past bij Variabele kosten: bewegen mee.",
+      "uo": [
+       "Nee, dat hoort bij Brutowinst: omzet min inkoopwaarde.",
+       "Nee, dat hoort bij Constante kosten: blijven gelijk.",
+       "Klopt: bewegen mee.",
+       "Nee, dat hoort bij Btw: belasting op de prijs."
+      ],
+      "uh": "Variabele kosten: bewegen mee."
+     },
+     {
+      "v": "Kosten die gelijk blijven, ongeacht hoeveel je produceert. Wat is hier aan de hand?",
+      "o": [
+       "Verkoopprijs",
+       "Variabele kosten",
+       "Btw",
+       "Constante kosten"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Kosten die gelijk blijven, ongeacht hoeveel je produceert. Dat past bij Constante kosten: blijven gelijk.",
+      "uo": [
+       "Nee, dat hoort bij Verkoopprijs: prijs bij verkoop.",
+       "Nee, dat hoort bij Variabele kosten: bewegen mee.",
+       "Nee, dat hoort bij Btw: belasting op de prijs.",
+       "Klopt: blijven gelijk."
+      ],
+      "uh": "Constante kosten: blijven gelijk."
+     },
+     {
+      "v": "De omzet min de inkoopwaarde van wat je verkocht. Welk begrip past hierbij?",
+      "o": [
+       "Brutowinst",
+       "Kosten",
+       "Omzet",
+       "Break-even"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De omzet min de inkoopwaarde van wat je verkocht. Dat past bij Brutowinst: omzet min inkoopwaarde.",
+      "uo": [
+       "Klopt: omzet min inkoopwaarde.",
+       "Nee, dat hoort bij Kosten: uitgaven om te produceren.",
+       "Nee, dat hoort bij Omzet: prijs maal aantal.",
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten."
+      ],
+      "uh": "Brutowinst: omzet min inkoopwaarde."
+     },
+     {
+      "v": "Na aftrek van alle kosten houdt de ondernemer geld over. Om welk begrip gaat het?",
+      "o": [
+       "Omzet",
+       "Winst",
+       "Brutowinst",
+       "Kosten"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Na aftrek van alle kosten houdt de ondernemer geld over. Dat past bij Winst: opbrengst min kosten.",
+      "uo": [
+       "Nee, dat hoort bij Omzet: prijs maal aantal.",
+       "Klopt: opbrengst min kosten.",
+       "Nee, dat hoort bij Brutowinst: omzet min inkoopwaarde.",
+       "Nee, dat hoort bij Kosten: uitgaven om te produceren."
+      ],
+      "uh": "Winst: opbrengst min kosten."
+     },
+     {
+      "v": "De belasting die in de verkoopprijs zit. Welk begrip herken je hier?",
+      "o": [
+       "Variabele kosten",
+       "Winst",
+       "Btw",
+       "Kosten"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De belasting die in de verkoopprijs zit. Dat past bij Btw: belasting op de prijs.",
+      "uo": [
+       "Nee, dat hoort bij Variabele kosten: bewegen mee.",
+       "Nee, dat hoort bij Winst: opbrengst min kosten.",
+       "Klopt: belasting op de prijs.",
+       "Nee, dat hoort bij Kosten: uitgaven om te produceren."
+      ],
+      "uh": "Btw: belasting op de prijs."
+     },
+     {
+      "v": "Op de bon staat naast de prijs ook de belasting die je meebetaalt. Wat is hier aan de hand?",
+      "o": [
+       "Totale kosten",
+       "Winstmarge",
+       "Break-even",
+       "Btw"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Op de bon staat naast de prijs ook de belasting die je meebetaalt. Dat past bij Btw: belasting op de prijs.",
+      "uo": [
+       "Nee, dat hoort bij Totale kosten: constant plus variabel.",
+       "Nee, dat hoort bij Winstmarge: verkoop min inkoop.",
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten.",
+       "Klopt: belasting op de prijs."
+      ],
+      "uh": "Btw: belasting op de prijs."
+     },
+     {
+      "v": "De prijs vermenigvuldigd met het aantal verkochte producten. Welk begrip past hierbij?",
+      "o": [
+       "Omzet",
+       "Winst",
+       "Brutowinst",
+       "Kosten"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De prijs vermenigvuldigd met het aantal verkochte producten. Dat past bij Omzet: prijs maal aantal.",
+      "uo": [
+       "Klopt: prijs maal aantal.",
+       "Nee, dat hoort bij Winst: opbrengst min kosten.",
+       "Nee, dat hoort bij Brutowinst: omzet min inkoopwaarde.",
+       "Nee, dat hoort bij Kosten: uitgaven om te produceren."
+      ],
+      "uh": "Omzet: prijs maal aantal."
+     },
+     {
+      "v": "Je telt de vaste huur en de meebewegende grondstofkosten bij elkaar op. Om welk begrip gaat het?",
+      "o": [
+       "Constante kosten",
+       "Totale kosten",
+       "Variabele kosten",
+       "Verkoopprijs"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je telt de vaste huur en de meebewegende grondstofkosten bij elkaar op. Dat past bij Totale kosten: constant plus variabel.",
+      "uo": [
+       "Nee, dat hoort bij Constante kosten: blijven gelijk.",
+       "Klopt: constant plus variabel.",
+       "Nee, dat hoort bij Variabele kosten: bewegen mee.",
+       "Nee, dat hoort bij Verkoopprijs: prijs bij verkoop."
+      ],
+      "uh": "Totale kosten: constant plus variabel."
+     },
+     {
+      "v": "De winkel betaalt de leverancier één euro per brood. Welk begrip herken je hier?",
+      "o": [
+       "Break-even",
+       "Totale kosten",
+       "Inkoopprijs",
+       "Omzet"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De winkel betaalt de leverancier één euro per brood. Dat past bij Inkoopprijs: prijs bij inkoop.",
+      "uo": [
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten.",
+       "Nee, dat hoort bij Totale kosten: constant plus variabel.",
+       "Klopt: prijs bij inkoop.",
+       "Nee, dat hoort bij Omzet: prijs maal aantal."
+      ],
+      "uh": "Inkoopprijs: prijs bij inkoop."
+     },
+     {
+      "v": "De uitgaven die je maakt om te kunnen produceren. Wat is hier aan de hand?",
+      "o": [
+       "Constante kosten",
+       "Omzet",
+       "Variabele kosten",
+       "Kosten"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De uitgaven die je maakt om te kunnen produceren. Dat past bij Kosten: uitgaven om te produceren.",
+      "uo": [
+       "Nee, dat hoort bij Constante kosten: blijven gelijk.",
+       "Nee, dat hoort bij Omzet: prijs maal aantal.",
+       "Nee, dat hoort bij Variabele kosten: bewegen mee.",
+       "Klopt: uitgaven om te produceren."
+      ],
+      "uh": "Kosten: uitgaven om te produceren."
+     },
+     {
+      "v": "Je verkocht honderd broden van twee euro, samen tweehonderd euro. Welk begrip past hierbij?",
+      "o": [
+       "Omzet",
+       "Winst",
+       "Brutowinst",
+       "Btw"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je verkocht honderd broden van twee euro, samen tweehonderd euro. Dat past bij Omzet: prijs maal aantal.",
+      "uo": [
+       "Klopt: prijs maal aantal.",
+       "Nee, dat hoort bij Winst: opbrengst min kosten.",
+       "Nee, dat hoort bij Brutowinst: omzet min inkoopwaarde.",
+       "Nee, dat hoort bij Btw: belasting op de prijs."
+      ],
+      "uh": "Omzet: prijs maal aantal."
+     },
+     {
+      "v": "De ondernemer betaalt voor grondstoffen, huur en loon. Om welk begrip gaat het?",
+      "o": [
+       "Winstmarge",
+       "Kosten",
+       "Break-even",
+       "Verkoopprijs"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De ondernemer betaalt voor grondstoffen, huur en loon. Dat past bij Kosten: uitgaven om te produceren.",
+      "uo": [
+       "Nee, dat hoort bij Winstmarge: verkoop min inkoop.",
+       "Klopt: uitgaven om te produceren.",
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten.",
+       "Nee, dat hoort bij Verkoopprijs: prijs bij verkoop."
+      ],
+      "uh": "Kosten: uitgaven om te produceren."
+     },
+     {
+      "v": "De prijs die je zelf voor een product betaalt bij inkoop. Welk begrip herken je hier?",
+      "o": [
+       "Btw",
+       "Verkoopprijs",
+       "Inkoopprijs",
+       "Break-even"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De prijs die je zelf voor een product betaalt bij inkoop. Dat past bij Inkoopprijs: prijs bij inkoop.",
+      "uo": [
+       "Nee, dat hoort bij Btw: belasting op de prijs.",
+       "Nee, dat hoort bij Verkoopprijs: prijs bij verkoop.",
+       "Klopt: prijs bij inkoop.",
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten."
+      ],
+      "uh": "Inkoopprijs: prijs bij inkoop."
+     },
+     {
+      "v": "Het verschil tussen verkoop- en inkoopprijs. Wat is hier aan de hand?",
+      "o": [
+       "Break-even",
+       "Brutowinst",
+       "Btw",
+       "Winstmarge"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het verschil tussen verkoop- en inkoopprijs. Dat past bij Winstmarge: verkoop min inkoop.",
+      "uo": [
+       "Nee, dat hoort bij Break-even: omzet is gelijk aan kosten.",
+       "Nee, dat hoort bij Brutowinst: omzet min inkoopwaarde.",
+       "Nee, dat hoort bij Btw: belasting op de prijs.",
+       "Klopt: verkoop min inkoop."
+      ],
+      "uh": "Winstmarge: verkoop min inkoop."
      }
     ],
     "begrippen": [
@@ -16265,6 +18146,462 @@ var VAKKEN_VMBO = [
        "Klopt: subsidie stimuleert iets, een uitkering helpt bij te weinig inkomen."
       ],
       "uh": "Subsidie stimuleert iets, een uitkering helpt bij te weinig inkomen."
+     },
+     {
+      "v": "Een plan van verwachte inkomsten en uitgaven. Welk begrip past hierbij?",
+      "o": [
+       "Begroting",
+       "Staatsschuld",
+       "Subsidie",
+       "Overheidstaak"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een plan van verwachte inkomsten en uitgaven. Dat past bij Begroting: plan van inkomsten en uitgaven.",
+      "uo": [
+       "Klopt: plan van inkomsten en uitgaven.",
+       "Nee, dat hoort bij Staatsschuld: wat de staat heeft geleend.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren.",
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid."
+      ],
+      "uh": "Begroting: plan van inkomsten en uitgaven."
+     },
+     {
+      "v": "Geld van de overheid voor wie te weinig inkomen heeft. Om welk begrip gaat het?",
+      "o": [
+       "Subsidie",
+       "Uitkering",
+       "Begroting",
+       "Overheidstaak"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Geld van de overheid voor wie te weinig inkomen heeft. Dat past bij Uitkering: geld bij te weinig inkomen.",
+      "uo": [
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren.",
+       "Klopt: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Begroting: plan van inkomsten en uitgaven.",
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid."
+      ],
+      "uh": "Uitkering: geld bij te weinig inkomen."
+     },
+     {
+      "v": "Alles wat de overheid in de loop van de jaren heeft geleend. Welk begrip herken je hier?",
+      "o": [
+       "Infrastructuur",
+       "Begroting",
+       "Staatsschuld",
+       "Subsidie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Alles wat de overheid in de loop van de jaren heeft geleend. Dat past bij Staatsschuld: wat de staat heeft geleend.",
+      "uo": [
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Nee, dat hoort bij Begroting: plan van inkomsten en uitgaven.",
+       "Klopt: wat de staat heeft geleend.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren."
+      ],
+      "uh": "Staatsschuld: wat de staat heeft geleend."
+     },
+     {
+      "v": "Een taak die de overheid op zich neemt. Wat is hier aan de hand?",
+      "o": [
+       "Subsidie",
+       "Inkomstenbelasting",
+       "Accijns",
+       "Overheidstaak"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een taak die de overheid op zich neemt. Dat past bij Overheidstaak: taak van de overheid.",
+      "uo": [
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren.",
+       "Nee, dat hoort bij Inkomstenbelasting: belasting over inkomen.",
+       "Nee, dat hoort bij Accijns: extra belasting op producten.",
+       "Klopt: taak van de overheid."
+      ],
+      "uh": "Overheidstaak: taak van de overheid."
+     },
+     {
+      "v": "Een extra belasting op bepaalde producten. Welk begrip past hierbij?",
+      "o": [
+       "Accijns",
+       "Belasting",
+       "Subsidie",
+       "Collectieve voorziening"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een extra belasting op bepaalde producten. Dat past bij Accijns: extra belasting op producten.",
+      "uo": [
+       "Klopt: extra belasting op producten.",
+       "Nee, dat hoort bij Belasting: verplichte betaling aan de staat.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld."
+      ],
+      "uh": "Accijns: extra belasting op producten."
+     },
+     {
+      "v": "Zorgen voor veiligheid en onderwijs hoort bij de overheid. Om welk begrip gaat het?",
+      "o": [
+       "Inkomstenbelasting",
+       "Overheidstaak",
+       "Accijns",
+       "Subsidie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Zorgen voor veiligheid en onderwijs hoort bij de overheid. Dat past bij Overheidstaak: taak van de overheid.",
+      "uo": [
+       "Nee, dat hoort bij Inkomstenbelasting: belasting over inkomen.",
+       "Klopt: taak van de overheid.",
+       "Nee, dat hoort bij Accijns: extra belasting op producten.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren."
+      ],
+      "uh": "Overheidstaak: taak van de overheid."
+     },
+     {
+      "v": "De overheid geeft geld om zonnepanelen aantrekkelijker te maken. Welk begrip herken je hier?",
+      "o": [
+       "Collectieve voorziening",
+       "Uitkering",
+       "Subsidie",
+       "Accijns"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De overheid geeft geld om zonnepanelen aantrekkelijker te maken. Dat past bij Subsidie: geld om te stimuleren.",
+      "uo": [
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Klopt: geld om te stimuleren.",
+       "Nee, dat hoort bij Accijns: extra belasting op producten."
+      ],
+      "uh": "Subsidie: geld om te stimuleren."
+     },
+     {
+      "v": "Belasting die je rechtstreeks over je inkomen betaalt. Wat is hier aan de hand?",
+      "o": [
+       "Overheidstaak",
+       "Inkomstenbelasting",
+       "Subsidie",
+       "Directe belasting"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Belasting die je rechtstreeks over je inkomen betaalt. Dat past bij Directe belasting: belasting op inkomen.",
+      "uo": [
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid.",
+       "Nee, dat hoort bij Inkomstenbelasting: belasting over inkomen.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren.",
+       "Klopt: belasting op inkomen."
+      ],
+      "uh": "Directe belasting: belasting op inkomen."
+     },
+     {
+      "v": "Wegen, bruggen en spoorlijnen verbinden het hele land. Welk begrip past hierbij?",
+      "o": [
+       "Infrastructuur",
+       "Collectieve voorziening",
+       "Indirecte belasting",
+       "Overheidstaak"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Wegen, bruggen en spoorlijnen verbinden het hele land. Dat past bij Infrastructuur: wegen en verbindingen.",
+      "uo": [
+       "Klopt: wegen en verbindingen.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Indirecte belasting: belasting in de prijs.",
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid."
+      ],
+      "uh": "Infrastructuur: wegen en verbindingen."
+     },
+     {
+      "v": "Over je inkomen betaal je rechtstreeks belasting aan de staat. Om welk begrip gaat het?",
+      "o": [
+       "Inkomstenbelasting",
+       "Directe belasting",
+       "Subsidie",
+       "Overheidstaak"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Over je inkomen betaal je rechtstreeks belasting aan de staat. Dat past bij Directe belasting: belasting op inkomen.",
+      "uo": [
+       "Nee, dat hoort bij Inkomstenbelasting: belasting over inkomen.",
+       "Klopt: belasting op inkomen.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren.",
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid."
+      ],
+      "uh": "Directe belasting: belasting op inkomen."
+     },
+     {
+      "v": "Wie geen werk heeft, krijgt geld van de overheid om rond te komen. Welk begrip herken je hier?",
+      "o": [
+       "Inkomstenbelasting",
+       "Subsidie",
+       "Uitkering",
+       "Accijns"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Wie geen werk heeft, krijgt geld van de overheid om rond te komen. Dat past bij Uitkering: geld bij te weinig inkomen.",
+      "uo": [
+       "Nee, dat hoort bij Inkomstenbelasting: belasting over inkomen.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren.",
+       "Klopt: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Accijns: extra belasting op producten."
+      ],
+      "uh": "Uitkering: geld bij te weinig inkomen."
+     },
+     {
+      "v": "Geld van de overheid om iets te stimuleren. Wat is hier aan de hand?",
+      "o": [
+       "Accijns",
+       "Uitkering",
+       "Collectieve voorziening",
+       "Subsidie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Geld van de overheid om iets te stimuleren. Dat past bij Subsidie: geld om te stimuleren.",
+      "uo": [
+       "Nee, dat hoort bij Accijns: extra belasting op producten.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Klopt: geld om te stimuleren."
+      ],
+      "uh": "Subsidie: geld om te stimuleren."
+     },
+     {
+      "v": "Het totale bedrag dat de staat heeft geleend. Welk begrip past hierbij?",
+      "o": [
+       "Staatsschuld",
+       "Inkomstenbelasting",
+       "Overheidstaak",
+       "Collectieve voorziening"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het totale bedrag dat de staat heeft geleend. Dat past bij Staatsschuld: wat de staat heeft geleend.",
+      "uo": [
+       "Klopt: wat de staat heeft geleend.",
+       "Nee, dat hoort bij Inkomstenbelasting: belasting over inkomen.",
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld."
+      ],
+      "uh": "Staatsschuld: wat de staat heeft geleend."
+     },
+     {
+      "v": "Op benzine, alcohol en tabak zit een extra heffing. Om welk begrip gaat het?",
+      "o": [
+       "Belasting",
+       "Accijns",
+       "Begroting",
+       "Overheidstaak"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Op benzine, alcohol en tabak zit een extra heffing. Dat past bij Accijns: extra belasting op producten.",
+      "uo": [
+       "Nee, dat hoort bij Belasting: verplichte betaling aan de staat.",
+       "Klopt: extra belasting op producten.",
+       "Nee, dat hoort bij Begroting: plan van inkomsten en uitgaven.",
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid."
+      ],
+      "uh": "Accijns: extra belasting op producten."
+     },
+     {
+      "v": "De belasting die je over je inkomen betaalt. Welk begrip herken je hier?",
+      "o": [
+       "Staatsschuld",
+       "Directe belasting",
+       "Inkomstenbelasting",
+       "Collectieve voorziening"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De belasting die je over je inkomen betaalt. Dat past bij Inkomstenbelasting: belasting over inkomen.",
+      "uo": [
+       "Nee, dat hoort bij Staatsschuld: wat de staat heeft geleend.",
+       "Nee, dat hoort bij Directe belasting: belasting op inkomen.",
+       "Klopt: belasting over inkomen.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld."
+      ],
+      "uh": "Inkomstenbelasting: belasting over inkomen."
+     },
+     {
+      "v": "Over wat je verdient draag je een percentage af aan de staat. Wat is hier aan de hand?",
+      "o": [
+       "Begroting",
+       "Collectieve voorziening",
+       "Indirecte belasting",
+       "Inkomstenbelasting"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Over wat je verdient draag je een percentage af aan de staat. Dat past bij Inkomstenbelasting: belasting over inkomen.",
+      "uo": [
+       "Nee, dat hoort bij Begroting: plan van inkomsten en uitgaven.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Indirecte belasting: belasting in de prijs.",
+       "Klopt: belasting over inkomen."
+      ],
+      "uh": "Inkomstenbelasting: belasting over inkomen."
+     },
+     {
+      "v": "Een verplichte betaling aan de overheid. Welk begrip past hierbij?",
+      "o": [
+       "Belasting",
+       "Accijns",
+       "Collectieve voorziening",
+       "Subsidie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een verplichte betaling aan de overheid. Dat past bij Belasting: verplichte betaling aan de staat.",
+      "uo": [
+       "Klopt: verplichte betaling aan de staat.",
+       "Nee, dat hoort bij Accijns: extra belasting op producten.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren."
+      ],
+      "uh": "Belasting: verplichte betaling aan de staat."
+     },
+     {
+      "v": "De overheid maakt vooraf een plan van alle inkomsten en uitgaven. Om welk begrip gaat het?",
+      "o": [
+       "Staatsschuld",
+       "Begroting",
+       "Subsidie",
+       "Overheidstaak"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De overheid maakt vooraf een plan van alle inkomsten en uitgaven. Dat past bij Begroting: plan van inkomsten en uitgaven.",
+      "uo": [
+       "Nee, dat hoort bij Staatsschuld: wat de staat heeft geleend.",
+       "Klopt: plan van inkomsten en uitgaven.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren.",
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid."
+      ],
+      "uh": "Begroting: plan van inkomsten en uitgaven."
+     },
+     {
+      "v": "In de prijs van je frisdrank zit al belasting verstopt. Welk begrip herken je hier?",
+      "o": [
+       "Begroting",
+       "Staatsschuld",
+       "Indirecte belasting",
+       "Uitkering"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "In de prijs van je frisdrank zit al belasting verstopt. Dat past bij Indirecte belasting: belasting in de prijs.",
+      "uo": [
+       "Nee, dat hoort bij Begroting: plan van inkomsten en uitgaven.",
+       "Nee, dat hoort bij Staatsschuld: wat de staat heeft geleend.",
+       "Klopt: belasting in de prijs.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen."
+      ],
+      "uh": "Indirecte belasting: belasting in de prijs."
+     },
+     {
+      "v": "Iets dat de overheid voor alle burgers regelt. Wat is hier aan de hand?",
+      "o": [
+       "Inkomstenbelasting",
+       "Subsidie",
+       "Staatsschuld",
+       "Collectieve voorziening"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Iets dat de overheid voor alle burgers regelt. Dat past bij Collectieve voorziening: voor iedereen geregeld.",
+      "uo": [
+       "Nee, dat hoort bij Inkomstenbelasting: belasting over inkomen.",
+       "Nee, dat hoort bij Subsidie: geld om te stimuleren.",
+       "Nee, dat hoort bij Staatsschuld: wat de staat heeft geleend.",
+       "Klopt: voor iedereen geregeld."
+      ],
+      "uh": "Collectieve voorziening: voor iedereen geregeld."
+     },
+     {
+      "v": "Iedereen betaalt verplicht een deel van zijn inkomen aan de staat. Welk begrip past hierbij?",
+      "o": [
+       "Belasting",
+       "Accijns",
+       "Begroting",
+       "Overheidstaak"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Iedereen betaalt verplicht een deel van zijn inkomen aan de staat. Dat past bij Belasting: verplichte betaling aan de staat.",
+      "uo": [
+       "Klopt: verplichte betaling aan de staat.",
+       "Nee, dat hoort bij Accijns: extra belasting op producten.",
+       "Nee, dat hoort bij Begroting: plan van inkomsten en uitgaven.",
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid."
+      ],
+      "uh": "Belasting: verplichte betaling aan de staat."
+     },
+     {
+      "v": "De overheid regelt wegen en onderwijs voor iedereen samen. Om welk begrip gaat het?",
+      "o": [
+       "Indirecte belasting",
+       "Collectieve voorziening",
+       "Staatsschuld",
+       "Belasting"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De overheid regelt wegen en onderwijs voor iedereen samen. Dat past bij Collectieve voorziening: voor iedereen geregeld.",
+      "uo": [
+       "Nee, dat hoort bij Indirecte belasting: belasting in de prijs.",
+       "Klopt: voor iedereen geregeld.",
+       "Nee, dat hoort bij Staatsschuld: wat de staat heeft geleend.",
+       "Nee, dat hoort bij Belasting: verplichte betaling aan de staat."
+      ],
+      "uh": "Collectieve voorziening: voor iedereen geregeld."
+     },
+     {
+      "v": "Belasting die verstopt zit in de prijs van een product. Welk begrip herken je hier?",
+      "o": [
+       "Accijns",
+       "Directe belasting",
+       "Indirecte belasting",
+       "Staatsschuld"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Belasting die verstopt zit in de prijs van een product. Dat past bij Indirecte belasting: belasting in de prijs.",
+      "uo": [
+       "Nee, dat hoort bij Accijns: extra belasting op producten.",
+       "Nee, dat hoort bij Directe belasting: belasting op inkomen.",
+       "Klopt: belasting in de prijs.",
+       "Nee, dat hoort bij Staatsschuld: wat de staat heeft geleend."
+      ],
+      "uh": "Indirecte belasting: belasting in de prijs."
+     },
+     {
+      "v": "De voorzieningen zoals wegen en verbindingen. Wat is hier aan de hand?",
+      "o": [
+       "Overheidstaak",
+       "Collectieve voorziening",
+       "Indirecte belasting",
+       "Infrastructuur"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De voorzieningen zoals wegen en verbindingen. Dat past bij Infrastructuur: wegen en verbindingen.",
+      "uo": [
+       "Nee, dat hoort bij Overheidstaak: taak van de overheid.",
+       "Nee, dat hoort bij Collectieve voorziening: voor iedereen geregeld.",
+       "Nee, dat hoort bij Indirecte belasting: belasting in de prijs.",
+       "Klopt: wegen en verbindingen."
+      ],
+      "uh": "Infrastructuur: wegen en verbindingen."
      }
     ],
     "begrippen": [
@@ -16562,6 +18899,462 @@ var VAKKEN_VMBO = [
        "Klopt: vrije handel binnen de EU zonder grenzen."
       ],
       "uh": "Vrije handel binnen de EU zonder grenzen."
+     },
+     {
+      "v": "Hulp van rijke landen aan arme landen. Welk begrip past hierbij?",
+      "o": [
+       "Ontwikkelingssamenwerking",
+       "Globalisering",
+       "Invoerrechten",
+       "Wisselkoers"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Hulp van rijke landen aan arme landen. Dat past bij Ontwikkelingssamenwerking: hulp aan arme landen.",
+      "uo": [
+       "Klopt: hulp aan arme landen.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Nee, dat hoort bij Invoerrechten: belasting op invoer.",
+       "Nee, dat hoort bij Wisselkoers: prijs van een munt."
+      ],
+      "uh": "Ontwikkelingssamenwerking: hulp aan arme landen."
+     },
+     {
+      "v": "Belasting die je betaalt bij het invoeren van goederen. Om welk begrip gaat het?",
+      "o": [
+       "Protectionisme",
+       "Invoerrechten",
+       "Export",
+       "Globalisering"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Belasting die je betaalt bij het invoeren van goederen. Dat past bij Invoerrechten: belasting op invoer.",
+      "uo": [
+       "Nee, dat hoort bij Protectionisme: eigen markt beschermen.",
+       "Klopt: belasting op invoer.",
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven."
+      ],
+      "uh": "Invoerrechten: belasting op invoer."
+     },
+     {
+      "v": "Landen handelen met elkaar zonder heffingen of drempels. Welk begrip herken je hier?",
+      "o": [
+       "Euro",
+       "Europese Unie",
+       "Vrijhandel",
+       "Import"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Landen handelen met elkaar zonder heffingen of drempels. Dat past bij Vrijhandel: handel zonder drempels.",
+      "uo": [
+       "Nee, dat hoort bij Euro: de munt van de eurozone.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Klopt: handel zonder drempels.",
+       "Nee, dat hoort bij Import: invoer uit buitenland."
+      ],
+      "uh": "Vrijhandel: handel zonder drempels."
+     },
+     {
+      "v": "Het steeds meer verweven raken van landen en economieën. Wat is hier aan de hand?",
+      "o": [
+       "Protectionisme",
+       "Ontwikkelingssamenwerking",
+       "Export",
+       "Globalisering"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het steeds meer verweven raken van landen en economieën. Dat past bij Globalisering: landen raken verweven.",
+      "uo": [
+       "Nee, dat hoort bij Protectionisme: eigen markt beschermen.",
+       "Nee, dat hoort bij Ontwikkelingssamenwerking: hulp aan arme landen.",
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Klopt: landen raken verweven."
+      ],
+      "uh": "Globalisering: landen raken verweven."
+     },
+     {
+      "v": "De gemeenschappelijke munt van veel EU-landen. Welk begrip past hierbij?",
+      "o": [
+       "Euro",
+       "Export",
+       "Import",
+       "Globalisering"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De gemeenschappelijke munt van veel EU-landen. Dat past bij Euro: de munt van de eurozone.",
+      "uo": [
+       "Klopt: de munt van de eurozone.",
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Import: invoer uit buitenland.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven."
+      ],
+      "uh": "Euro: de munt van de eurozone."
+     },
+     {
+      "v": "Bedrijven, landen en mensen over de hele wereld raken steeds meer verbonden. Om welk begrip gaat het?",
+      "o": [
+       "Ontwikkelingssamenwerking",
+       "Globalisering",
+       "Export",
+       "Protectionisme"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Bedrijven, landen en mensen over de hele wereld raken steeds meer verbonden. Dat past bij Globalisering: landen raken verweven.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkelingssamenwerking: hulp aan arme landen.",
+       "Klopt: landen raken verweven.",
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Protectionisme: eigen markt beschermen."
+      ],
+      "uh": "Globalisering: landen raken verweven."
+     },
+     {
+      "v": "Binnen de EU mogen goederen vrij over de grenzen. Welk begrip herken je hier?",
+      "o": [
+       "Wisselkoers",
+       "Invoerrechten",
+       "Interne markt",
+       "Handelsbalans"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Binnen de EU mogen goederen vrij over de grenzen. Dat past bij Interne markt: vrije handel in de EU.",
+      "uo": [
+       "Nee, dat hoort bij Wisselkoers: prijs van een munt.",
+       "Nee, dat hoort bij Invoerrechten: belasting op invoer.",
+       "Klopt: vrije handel in de EU.",
+       "Nee, dat hoort bij Handelsbalans: export min import."
+      ],
+      "uh": "Interne markt: vrije handel in de EU."
+     },
+     {
+      "v": "Het uitvoeren van goederen naar het buitenland. Wat is hier aan de hand?",
+      "o": [
+       "Interne markt",
+       "Import",
+       "Invoerrechten",
+       "Export"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het uitvoeren van goederen naar het buitenland. Dat past bij Export: uitvoer naar buitenland.",
+      "uo": [
+       "Nee, dat hoort bij Interne markt: vrije handel in de EU.",
+       "Nee, dat hoort bij Import: invoer uit buitenland.",
+       "Nee, dat hoort bij Invoerrechten: belasting op invoer.",
+       "Klopt: uitvoer naar buitenland."
+      ],
+      "uh": "Export: uitvoer naar buitenland."
+     },
+     {
+      "v": "Een land heft hoge invoerrechten om eigen bedrijven te beschermen. Welk begrip past hierbij?",
+      "o": [
+       "Protectionisme",
+       "Vrijhandel",
+       "Handelsbalans",
+       "Globalisering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een land heft hoge invoerrechten om eigen bedrijven te beschermen. Dat past bij Protectionisme: eigen markt beschermen.",
+      "uo": [
+       "Klopt: eigen markt beschermen.",
+       "Nee, dat hoort bij Vrijhandel: handel zonder drempels.",
+       "Nee, dat hoort bij Handelsbalans: export min import.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven."
+      ],
+      "uh": "Protectionisme: eigen markt beschermen."
+     },
+     {
+      "v": "Nederland verkoopt kaas aan andere landen. Om welk begrip gaat het?",
+      "o": [
+       "Protectionisme",
+       "Export",
+       "Globalisering",
+       "Handelsbalans"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Nederland verkoopt kaas aan andere landen. Dat past bij Export: uitvoer naar buitenland.",
+      "uo": [
+       "Nee, dat hoort bij Protectionisme: eigen markt beschermen.",
+       "Klopt: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Nee, dat hoort bij Handelsbalans: export min import."
+      ],
+      "uh": "Export: uitvoer naar buitenland."
+     },
+     {
+      "v": "Op producten van buiten de EU moet extra belasting betaald worden. Welk begrip herken je hier?",
+      "o": [
+       "Export",
+       "Protectionisme",
+       "Invoerrechten",
+       "Euro"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Op producten van buiten de EU moet extra belasting betaald worden. Dat past bij Invoerrechten: belasting op invoer.",
+      "uo": [
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Protectionisme: eigen markt beschermen.",
+       "Klopt: belasting op invoer.",
+       "Nee, dat hoort bij Euro: de munt van de eurozone."
+      ],
+      "uh": "Invoerrechten: belasting op invoer."
+     },
+     {
+      "v": "De vrije handel zonder grenzen binnen de EU. Wat is hier aan de hand?",
+      "o": [
+       "Export",
+       "Vrijhandel",
+       "Europese Unie",
+       "Interne markt"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De vrije handel zonder grenzen binnen de EU. Dat past bij Interne markt: vrije handel in de EU.",
+      "uo": [
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Vrijhandel: handel zonder drempels.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Klopt: vrije handel in de EU."
+      ],
+      "uh": "Interne markt: vrije handel in de EU."
+     },
+     {
+      "v": "Handel drijven zonder belemmeringen. Welk begrip past hierbij?",
+      "o": [
+       "Vrijhandel",
+       "Europese Unie",
+       "Euro",
+       "Import"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Handel drijven zonder belemmeringen. Dat past bij Vrijhandel: handel zonder drempels.",
+      "uo": [
+       "Klopt: handel zonder drempels.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Nee, dat hoort bij Euro: de munt van de eurozone.",
+       "Nee, dat hoort bij Import: invoer uit buitenland."
+      ],
+      "uh": "Vrijhandel: handel zonder drempels."
+     },
+     {
+      "v": "In Nederland, Duitsland en Frankrijk betaal je met dezelfde munt. Om welk begrip gaat het?",
+      "o": [
+       "Wisselkoers",
+       "Euro",
+       "Export",
+       "Import"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "In Nederland, Duitsland en Frankrijk betaal je met dezelfde munt. Dat past bij Euro: de munt van de eurozone.",
+      "uo": [
+       "Nee, dat hoort bij Wisselkoers: prijs van een munt.",
+       "Klopt: de munt van de eurozone.",
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Import: invoer uit buitenland."
+      ],
+      "uh": "Euro: de munt van de eurozone."
+     },
+     {
+      "v": "De prijs van de ene munt uitgedrukt in een andere. Welk begrip herken je hier?",
+      "o": [
+       "Europese Unie",
+       "Euro",
+       "Wisselkoers",
+       "Interne markt"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De prijs van de ene munt uitgedrukt in een andere. Dat past bij Wisselkoers: prijs van een munt.",
+      "uo": [
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Nee, dat hoort bij Euro: de munt van de eurozone.",
+       "Klopt: prijs van een munt.",
+       "Nee, dat hoort bij Interne markt: vrije handel in de EU."
+      ],
+      "uh": "Wisselkoers: prijs van een munt."
+     },
+     {
+      "v": "Voor één euro krijg je vandaag ongeveer één dollar en tien cent. Wat is hier aan de hand?",
+      "o": [
+       "Import",
+       "Ontwikkelingssamenwerking",
+       "Globalisering",
+       "Wisselkoers"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Voor één euro krijg je vandaag ongeveer één dollar en tien cent. Dat past bij Wisselkoers: prijs van een munt.",
+      "uo": [
+       "Nee, dat hoort bij Import: invoer uit buitenland.",
+       "Nee, dat hoort bij Ontwikkelingssamenwerking: hulp aan arme landen.",
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Klopt: prijs van een munt."
+      ],
+      "uh": "Wisselkoers: prijs van een munt."
+     },
+     {
+      "v": "Het invoeren van goederen uit het buitenland. Welk begrip past hierbij?",
+      "o": [
+       "Import",
+       "Export",
+       "Invoerrechten",
+       "Interne markt"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het invoeren van goederen uit het buitenland. Dat past bij Import: invoer uit buitenland.",
+      "uo": [
+       "Klopt: invoer uit buitenland.",
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Invoerrechten: belasting op invoer.",
+       "Nee, dat hoort bij Interne markt: vrije handel in de EU."
+      ],
+      "uh": "Import: invoer uit buitenland."
+     },
+     {
+      "v": "Rijke landen helpen arme landen met geld en kennis. Om welk begrip gaat het?",
+      "o": [
+       "Globalisering",
+       "Ontwikkelingssamenwerking",
+       "Invoerrechten",
+       "Wisselkoers"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Rijke landen helpen arme landen met geld en kennis. Dat past bij Ontwikkelingssamenwerking: hulp aan arme landen.",
+      "uo": [
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Klopt: hulp aan arme landen.",
+       "Nee, dat hoort bij Invoerrechten: belasting op invoer.",
+       "Nee, dat hoort bij Wisselkoers: prijs van een munt."
+      ],
+      "uh": "Ontwikkelingssamenwerking: hulp aan arme landen."
+     },
+     {
+      "v": "Je vergelijkt wat een land uitvoert met wat het invoert. Welk begrip herken je hier?",
+      "o": [
+       "Interne markt",
+       "Europese Unie",
+       "Handelsbalans",
+       "Invoerrechten"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je vergelijkt wat een land uitvoert met wat het invoert. Dat past bij Handelsbalans: export min import.",
+      "uo": [
+       "Nee, dat hoort bij Interne markt: vrije handel in de EU.",
+       "Nee, dat hoort bij Europese Unie: samenwerkende EU-landen.",
+       "Klopt: export min import.",
+       "Nee, dat hoort bij Invoerrechten: belasting op invoer."
+      ],
+      "uh": "Handelsbalans: export min import."
+     },
+     {
+      "v": "Het samenwerkingsverband van Europese landen. Wat is hier aan de hand?",
+      "o": [
+       "Euro",
+       "Interne markt",
+       "Export",
+       "Europese Unie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het samenwerkingsverband van Europese landen. Dat past bij Europese Unie: samenwerkende EU-landen.",
+      "uo": [
+       "Nee, dat hoort bij Euro: de munt van de eurozone.",
+       "Nee, dat hoort bij Interne markt: vrije handel in de EU.",
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Klopt: samenwerkende EU-landen."
+      ],
+      "uh": "Europese Unie: samenwerkende EU-landen."
+     },
+     {
+      "v": "Nederland koopt bananen uit het buitenland. Welk begrip past hierbij?",
+      "o": [
+       "Import",
+       "Export",
+       "Wisselkoers",
+       "Handelsbalans"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Nederland koopt bananen uit het buitenland. Dat past bij Import: invoer uit buitenland.",
+      "uo": [
+       "Klopt: invoer uit buitenland.",
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Wisselkoers: prijs van een munt.",
+       "Nee, dat hoort bij Handelsbalans: export min import."
+      ],
+      "uh": "Import: invoer uit buitenland."
+     },
+     {
+      "v": "Zevenentwintig landen werken samen op het gebied van handel en regels. Om welk begrip gaat het?",
+      "o": [
+       "Wisselkoers",
+       "Europese Unie",
+       "Euro",
+       "Invoerrechten"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Zevenentwintig landen werken samen op het gebied van handel en regels. Dat past bij Europese Unie: samenwerkende EU-landen.",
+      "uo": [
+       "Nee, dat hoort bij Wisselkoers: prijs van een munt.",
+       "Klopt: samenwerkende EU-landen.",
+       "Nee, dat hoort bij Euro: de munt van de eurozone.",
+       "Nee, dat hoort bij Invoerrechten: belasting op invoer."
+      ],
+      "uh": "Europese Unie: samenwerkende EU-landen."
+     },
+     {
+      "v": "Het verschil tussen de export en de import van een land. Welk begrip herken je hier?",
+      "o": [
+       "Export",
+       "Wisselkoers",
+       "Handelsbalans",
+       "Interne markt"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het verschil tussen de export en de import van een land. Dat past bij Handelsbalans: export min import.",
+      "uo": [
+       "Nee, dat hoort bij Export: uitvoer naar buitenland.",
+       "Nee, dat hoort bij Wisselkoers: prijs van een munt.",
+       "Klopt: export min import.",
+       "Nee, dat hoort bij Interne markt: vrije handel in de EU."
+      ],
+      "uh": "Handelsbalans: export min import."
+     },
+     {
+      "v": "De eigen markt beschermen tegen buitenlandse concurrentie. Wat is hier aan de hand?",
+      "o": [
+       "Globalisering",
+       "Vrijhandel",
+       "Handelsbalans",
+       "Protectionisme"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De eigen markt beschermen tegen buitenlandse concurrentie. Dat past bij Protectionisme: eigen markt beschermen.",
+      "uo": [
+       "Nee, dat hoort bij Globalisering: landen raken verweven.",
+       "Nee, dat hoort bij Vrijhandel: handel zonder drempels.",
+       "Nee, dat hoort bij Handelsbalans: export min import.",
+       "Klopt: eigen markt beschermen."
+      ],
+      "uh": "Protectionisme: eigen markt beschermen."
      }
     ],
     "begrippen": [
@@ -16857,6 +19650,462 @@ var VAKKEN_VMBO = [
        "Klopt: bewust minder kopen en gebruiken."
       ],
       "uh": "Bewust minder kopen en gebruiken."
+     },
+     {
+      "v": "Vooruitgang die de aarde niet uitput. Welk begrip past hierbij?",
+      "o": [
+       "Duurzame ontwikkeling",
+       "Uitputting",
+       "Vervuiler-betaalt-principe",
+       "Fossiele brandstof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Vooruitgang die de aarde niet uitput. Dat past bij Duurzame ontwikkeling: toekomstbestendige groei.",
+      "uo": [
+       "Klopt: toekomstbestendige groei.",
+       "Nee, dat hoort bij Uitputting: grondstoffen raken op.",
+       "Nee, dat hoort bij Vervuiler-betaalt-principe: vervuiler betaalt.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen."
+      ],
+      "uh": "Duurzame ontwikkeling: toekomstbestendige groei."
+     },
+     {
+      "v": "Het opraken van een grondstof. Om welk begrip gaat het?",
+      "o": [
+       "Duurzame ontwikkeling",
+       "Uitputting",
+       "Duurzaam produceren",
+       "Consuminderen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het opraken van een grondstof. Dat past bij Uitputting: grondstoffen raken op.",
+      "uo": [
+       "Nee, dat hoort bij Duurzame ontwikkeling: toekomstbestendige groei.",
+       "Klopt: grondstoffen raken op.",
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Nee, dat hoort bij Consuminderen: bewust minder gebruiken."
+      ],
+      "uh": "Uitputting: grondstoffen raken op."
+     },
+     {
+      "v": "Een kolencentrale draait op brandstof uit de aarde die opraakt. Welk begrip herken je hier?",
+      "o": [
+       "Externe kosten",
+       "Duurzaam produceren",
+       "Fossiele brandstof",
+       "Grondstof"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een kolencentrale draait op brandstof uit de aarde die opraakt. Dat past bij Fossiele brandstof: olie, gas en kolen.",
+      "uo": [
+       "Nee, dat hoort bij Externe kosten: samenleving betaalt de schade.",
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Klopt: olie, gas en kolen.",
+       "Nee, dat hoort bij Grondstof: basismateriaal."
+      ],
+      "uh": "Fossiele brandstof: olie, gas en kolen."
+     },
+     {
+      "v": "Bewust minder spullen kopen en gebruiken. Wat is hier aan de hand?",
+      "o": [
+       "Groene energie",
+       "Duurzaam produceren",
+       "Externe kosten",
+       "Consuminderen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Bewust minder spullen kopen en gebruiken. Dat past bij Consuminderen: bewust minder gebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Groene energie: energie die niet opraakt.",
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Nee, dat hoort bij Externe kosten: samenleving betaalt de schade.",
+       "Klopt: bewust minder gebruiken."
+      ],
+      "uh": "Consuminderen: bewust minder gebruiken."
+     },
+     {
+      "v": "Een economie waarin grondstoffen steeds hergebruikt worden. Welk begrip past hierbij?",
+      "o": [
+       "Circulaire economie",
+       "Externe kosten",
+       "Fossiele brandstof",
+       "Duurzame ontwikkeling"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een economie waarin grondstoffen steeds hergebruikt worden. Dat past bij Circulaire economie: grondstoffen hergebruiken.",
+      "uo": [
+       "Klopt: grondstoffen hergebruiken.",
+       "Nee, dat hoort bij Externe kosten: samenleving betaalt de schade.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Nee, dat hoort bij Duurzame ontwikkeling: toekomstbestendige groei."
+      ],
+      "uh": "Circulaire economie: grondstoffen hergebruiken."
+     },
+     {
+      "v": "Je koopt bewust minder spullen om het milieu te sparen. Om welk begrip gaat het?",
+      "o": [
+       "Duurzaam produceren",
+       "Consuminderen",
+       "Externe kosten",
+       "Groene energie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je koopt bewust minder spullen om het milieu te sparen. Dat past bij Consuminderen: bewust minder gebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Klopt: bewust minder gebruiken.",
+       "Nee, dat hoort bij Externe kosten: samenleving betaalt de schade.",
+       "Nee, dat hoort bij Groene energie: energie die niet opraakt."
+      ],
+      "uh": "Consuminderen: bewust minder gebruiken."
+     },
+     {
+      "v": "Uit hout wordt papier gemaakt. Welk begrip herken je hier?",
+      "o": [
+       "Duurzaam produceren",
+       "Circulaire economie",
+       "Grondstof",
+       "Milieukosten"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Uit hout wordt papier gemaakt. Dat past bij Grondstof: basismateriaal.",
+      "uo": [
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Nee, dat hoort bij Circulaire economie: grondstoffen hergebruiken.",
+       "Klopt: basismateriaal.",
+       "Nee, dat hoort bij Milieukosten: kosten van milieuschade."
+      ],
+      "uh": "Grondstof: basismateriaal."
+     },
+     {
+      "v": "Kosten die niet de veroorzaker maar de samenleving draagt. Wat is hier aan de hand?",
+      "o": [
+       "Duurzaam produceren",
+       "Milieukosten",
+       "Recycling",
+       "Externe kosten"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Kosten die niet de veroorzaker maar de samenleving draagt. Dat past bij Externe kosten: samenleving betaalt de schade.",
+      "uo": [
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Nee, dat hoort bij Milieukosten: kosten van milieuschade.",
+       "Nee, dat hoort bij Recycling: afval hergebruiken.",
+       "Klopt: samenleving betaalt de schade."
+      ],
+      "uh": "Externe kosten: samenleving betaalt de schade."
+     },
+     {
+      "v": "Windmolens leveren stroom uit een bron die niet opraakt. Welk begrip past hierbij?",
+      "o": [
+       "Groene energie",
+       "Fossiele brandstof",
+       "Vervuiler-betaalt-principe",
+       "Consuminderen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Windmolens leveren stroom uit een bron die niet opraakt. Dat past bij Groene energie: energie die niet opraakt.",
+      "uo": [
+       "Klopt: energie die niet opraakt.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Nee, dat hoort bij Vervuiler-betaalt-principe: vervuiler betaalt.",
+       "Nee, dat hoort bij Consuminderen: bewust minder gebruiken."
+      ],
+      "uh": "Groene energie: energie die niet opraakt."
+     },
+     {
+      "v": "De vervuiling van een bedrijf wordt betaald door de hele samenleving. Om welk begrip gaat het?",
+      "o": [
+       "Groene energie",
+       "Externe kosten",
+       "Duurzame ontwikkeling",
+       "Recycling"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De vervuiling van een bedrijf wordt betaald door de hele samenleving. Dat past bij Externe kosten: samenleving betaalt de schade.",
+      "uo": [
+       "Nee, dat hoort bij Groene energie: energie die niet opraakt.",
+       "Klopt: samenleving betaalt de schade.",
+       "Nee, dat hoort bij Duurzame ontwikkeling: toekomstbestendige groei.",
+       "Nee, dat hoort bij Recycling: afval hergebruiken."
+      ],
+      "uh": "Externe kosten: samenleving betaalt de schade."
+     },
+     {
+      "v": "Als we doorgaan met winnen, raakt de olie ooit op. Welk begrip herken je hier?",
+      "o": [
+       "Groene energie",
+       "Duurzame ontwikkeling",
+       "Uitputting",
+       "Grondstof"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Als we doorgaan met winnen, raakt de olie ooit op. Dat past bij Uitputting: grondstoffen raken op.",
+      "uo": [
+       "Nee, dat hoort bij Groene energie: energie die niet opraakt.",
+       "Nee, dat hoort bij Duurzame ontwikkeling: toekomstbestendige groei.",
+       "Klopt: grondstoffen raken op.",
+       "Nee, dat hoort bij Grondstof: basismateriaal."
+      ],
+      "uh": "Uitputting: grondstoffen raken op."
+     },
+     {
+      "v": "Het basismateriaal waarmee je een product maakt. Wat is hier aan de hand?",
+      "o": [
+       "Consuminderen",
+       "Fossiele brandstof",
+       "Uitputting",
+       "Grondstof"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het basismateriaal waarmee je een product maakt. Dat past bij Grondstof: basismateriaal.",
+      "uo": [
+       "Nee, dat hoort bij Consuminderen: bewust minder gebruiken.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Nee, dat hoort bij Uitputting: grondstoffen raken op.",
+       "Klopt: basismateriaal."
+      ],
+      "uh": "Grondstof: basismateriaal."
+     },
+     {
+      "v": "Brandstof zoals olie, gas en kolen die opraakt. Welk begrip past hierbij?",
+      "o": [
+       "Fossiele brandstof",
+       "Duurzaam produceren",
+       "Externe kosten",
+       "Grondstof"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Brandstof zoals olie, gas en kolen die opraakt. Dat past bij Fossiele brandstof: olie, gas en kolen.",
+      "uo": [
+       "Klopt: olie, gas en kolen.",
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Nee, dat hoort bij Externe kosten: samenleving betaalt de schade.",
+       "Nee, dat hoort bij Grondstof: basismateriaal."
+      ],
+      "uh": "Fossiele brandstof: olie, gas en kolen."
+     },
+     {
+      "v": "Oude producten worden weer grondstof voor nieuwe, niets is afval. Om welk begrip gaat het?",
+      "o": [
+       "Recycling",
+       "Circulaire economie",
+       "Duurzaam produceren",
+       "Fossiele brandstof"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Oude producten worden weer grondstof voor nieuwe, niets is afval. Dat past bij Circulaire economie: grondstoffen hergebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Recycling: afval hergebruiken.",
+       "Klopt: grondstoffen hergebruiken.",
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen."
+      ],
+      "uh": "Circulaire economie: grondstoffen hergebruiken."
+     },
+     {
+      "v": "Produceren met zorg voor mens en milieu. Welk begrip herken je hier?",
+      "o": [
+       "Duurzame ontwikkeling",
+       "Circulaire economie",
+       "Duurzaam produceren",
+       "Consuminderen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Produceren met zorg voor mens en milieu. Dat past bij Duurzaam produceren: produceren met zorg.",
+      "uo": [
+       "Nee, dat hoort bij Duurzame ontwikkeling: toekomstbestendige groei.",
+       "Nee, dat hoort bij Circulaire economie: grondstoffen hergebruiken.",
+       "Klopt: produceren met zorg.",
+       "Nee, dat hoort bij Consuminderen: bewust minder gebruiken."
+      ],
+      "uh": "Duurzaam produceren: produceren met zorg."
+     },
+     {
+      "v": "De fabriek maakt spullen met zo min mogelijk schade aan het milieu. Wat is hier aan de hand?",
+      "o": [
+       "Uitputting",
+       "Fossiele brandstof",
+       "Duurzame ontwikkeling",
+       "Duurzaam produceren"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De fabriek maakt spullen met zo min mogelijk schade aan het milieu. Dat past bij Duurzaam produceren: produceren met zorg.",
+      "uo": [
+       "Nee, dat hoort bij Uitputting: grondstoffen raken op.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Nee, dat hoort bij Duurzame ontwikkeling: toekomstbestendige groei.",
+       "Klopt: produceren met zorg."
+      ],
+      "uh": "Duurzaam produceren: produceren met zorg."
+     },
+     {
+      "v": "De kosten die milieuschade met zich meebrengt. Welk begrip past hierbij?",
+      "o": [
+       "Milieukosten",
+       "Externe kosten",
+       "Circulaire economie",
+       "Consuminderen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De kosten die milieuschade met zich meebrengt. Dat past bij Milieukosten: kosten van milieuschade.",
+      "uo": [
+       "Klopt: kosten van milieuschade.",
+       "Nee, dat hoort bij Externe kosten: samenleving betaalt de schade.",
+       "Nee, dat hoort bij Circulaire economie: grondstoffen hergebruiken.",
+       "Nee, dat hoort bij Consuminderen: bewust minder gebruiken."
+      ],
+      "uh": "Milieukosten: kosten van milieuschade."
+     },
+     {
+      "v": "Groei die ook voor toekomstige generaties leefbaar blijft. Om welk begrip gaat het?",
+      "o": [
+       "Uitputting",
+       "Duurzame ontwikkeling",
+       "Vervuiler-betaalt-principe",
+       "Fossiele brandstof"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Groei die ook voor toekomstige generaties leefbaar blijft. Dat past bij Duurzame ontwikkeling: toekomstbestendige groei.",
+      "uo": [
+       "Nee, dat hoort bij Uitputting: grondstoffen raken op.",
+       "Klopt: toekomstbestendige groei.",
+       "Nee, dat hoort bij Vervuiler-betaalt-principe: vervuiler betaalt.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen."
+      ],
+      "uh": "Duurzame ontwikkeling: toekomstbestendige groei."
+     },
+     {
+      "v": "Het bedrijf dat vervuilt, moet zelf voor de opruiming opdraaien. Welk begrip herken je hier?",
+      "o": [
+       "Fossiele brandstof",
+       "Recycling",
+       "Vervuiler-betaalt-principe",
+       "Circulaire economie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het bedrijf dat vervuilt, moet zelf voor de opruiming opdraaien. Dat past bij Vervuiler-betaalt-principe: vervuiler betaalt.",
+      "uo": [
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Nee, dat hoort bij Recycling: afval hergebruiken.",
+       "Klopt: vervuiler betaalt.",
+       "Nee, dat hoort bij Circulaire economie: grondstoffen hergebruiken."
+      ],
+      "uh": "Vervuiler-betaalt-principe: vervuiler betaalt."
+     },
+     {
+      "v": "Afval verwerken tot nieuwe grondstof. Wat is hier aan de hand?",
+      "o": [
+       "Grondstof",
+       "Circulaire economie",
+       "Duurzaam produceren",
+       "Recycling"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Afval verwerken tot nieuwe grondstof. Dat past bij Recycling: afval hergebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Circulaire economie: grondstoffen hergebruiken.",
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Klopt: afval hergebruiken."
+      ],
+      "uh": "Recycling: afval hergebruiken."
+     },
+     {
+      "v": "De schade aan de natuur door een fabriek kost de samenleving geld. Welk begrip past hierbij?",
+      "o": [
+       "Milieukosten",
+       "Externe kosten",
+       "Groene energie",
+       "Duurzame ontwikkeling"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De schade aan de natuur door een fabriek kost de samenleving geld. Dat past bij Milieukosten: kosten van milieuschade.",
+      "uo": [
+       "Klopt: kosten van milieuschade.",
+       "Nee, dat hoort bij Externe kosten: samenleving betaalt de schade.",
+       "Nee, dat hoort bij Groene energie: energie die niet opraakt.",
+       "Nee, dat hoort bij Duurzame ontwikkeling: toekomstbestendige groei."
+      ],
+      "uh": "Milieukosten: kosten van milieuschade."
+     },
+     {
+      "v": "Van oud papier wordt weer nieuw papier gemaakt. Om welk begrip gaat het?",
+      "o": [
+       "Grondstof",
+       "Recycling",
+       "Duurzaam produceren",
+       "Milieukosten"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Van oud papier wordt weer nieuw papier gemaakt. Dat past bij Recycling: afval hergebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Klopt: afval hergebruiken.",
+       "Nee, dat hoort bij Duurzaam produceren: produceren met zorg.",
+       "Nee, dat hoort bij Milieukosten: kosten van milieuschade."
+      ],
+      "uh": "Recycling: afval hergebruiken."
+     },
+     {
+      "v": "De regel dat degene die vervuilt de kosten betaalt. Welk begrip herken je hier?",
+      "o": [
+       "Circulaire economie",
+       "Externe kosten",
+       "Vervuiler-betaalt-principe",
+       "Groene energie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De regel dat degene die vervuilt de kosten betaalt. Dat past bij Vervuiler-betaalt-principe: vervuiler betaalt.",
+      "uo": [
+       "Nee, dat hoort bij Circulaire economie: grondstoffen hergebruiken.",
+       "Nee, dat hoort bij Externe kosten: samenleving betaalt de schade.",
+       "Klopt: vervuiler betaalt.",
+       "Nee, dat hoort bij Groene energie: energie die niet opraakt."
+      ],
+      "uh": "Vervuiler-betaalt-principe: vervuiler betaalt."
+     },
+     {
+      "v": "Energie uit bronnen die niet opraken. Wat is hier aan de hand?",
+      "o": [
+       "Consuminderen",
+       "Fossiele brandstof",
+       "Vervuiler-betaalt-principe",
+       "Groene energie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Energie uit bronnen die niet opraken. Dat past bij Groene energie: energie die niet opraakt.",
+      "uo": [
+       "Nee, dat hoort bij Consuminderen: bewust minder gebruiken.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Nee, dat hoort bij Vervuiler-betaalt-principe: vervuiler betaalt.",
+       "Klopt: energie die niet opraakt."
+      ],
+      "uh": "Groene energie: energie die niet opraakt."
      }
     ],
     "begrippen": [
@@ -17152,6 +20401,462 @@ var VAKKEN_VMBO = [
        "Klopt: je krijgt ook rente over de eerder ontvangen rente."
       ],
       "uh": "Omdat je rente over rente krijgt: Je krijgt ook rente over de eerder ontvangen rente."
+     },
+     {
+      "v": "Het terugbetalen van een lening. Welk begrip past hierbij?",
+      "o": [
+       "Aflossing",
+       "Rente",
+       "Rentestand",
+       "Inflatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het terugbetalen van een lening. Dat past bij Aflossing: lening terugbetalen.",
+      "uo": [
+       "Klopt: lening terugbetalen.",
+       "Nee, dat hoort bij Rente: vergoeding voor geld.",
+       "Nee, dat hoort bij Rentestand: hoogte van de rente.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen."
+      ],
+      "uh": "Aflossing: lening terugbetalen."
+     },
+     {
+      "v": "De hoogte van de rente op dat moment. Om welk begrip gaat het?",
+      "o": [
+       "Rente",
+       "Rentestand",
+       "Lenen",
+       "Inflatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De hoogte van de rente op dat moment. Dat past bij Rentestand: hoogte van de rente.",
+      "uo": [
+       "Nee, dat hoort bij Rente: vergoeding voor geld.",
+       "Klopt: hoogte van de rente.",
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen."
+      ],
+      "uh": "Rentestand: hoogte van de rente."
+     },
+     {
+      "v": "Als je de lening niet betaalt, mag de bank je huis verkopen. Welk begrip herken je hier?",
+      "o": [
+       "Sparen",
+       "Lenen",
+       "Onderpand",
+       "Rente"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Als je de lening niet betaalt, mag de bank je huis verkopen. Dat past bij Onderpand: zekerheid voor de bank.",
+      "uo": [
+       "Nee, dat hoort bij Sparen: geld opzijzetten.",
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken.",
+       "Klopt: zekerheid voor de bank.",
+       "Nee, dat hoort bij Rente: vergoeding voor geld."
+      ],
+      "uh": "Onderpand: zekerheid voor de bank."
+     },
+     {
+      "v": "Het algemeen stijgen van de prijzen. Wat is hier aan de hand?",
+      "o": [
+       "Hypotheek",
+       "Rente",
+       "Centrale bank",
+       "Inflatie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het algemeen stijgen van de prijzen. Dat past bij Inflatie: prijzen stijgen.",
+      "uo": [
+       "Nee, dat hoort bij Hypotheek: lening voor een huis.",
+       "Nee, dat hoort bij Rente: vergoeding voor geld.",
+       "Nee, dat hoort bij Centrale bank: bewaakt het geld.",
+       "Klopt: prijzen stijgen."
+      ],
+      "uh": "Inflatie: prijzen stijgen."
+     },
+     {
+      "v": "Geld tijdelijk gebruiken dat je moet terugbetalen. Welk begrip past hierbij?",
+      "o": [
+       "Lenen",
+       "Hypotheek",
+       "Centrale bank",
+       "Enkelvoudige interest"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Geld tijdelijk gebruiken dat je moet terugbetalen. Dat past bij Lenen: geld tijdelijk gebruiken.",
+      "uo": [
+       "Klopt: geld tijdelijk gebruiken.",
+       "Nee, dat hoort bij Hypotheek: lening voor een huis.",
+       "Nee, dat hoort bij Centrale bank: bewaakt het geld.",
+       "Nee, dat hoort bij Enkelvoudige interest: rente over startbedrag."
+      ],
+      "uh": "Lenen: geld tijdelijk gebruiken."
+     },
+     {
+      "v": "Je spaargeld wordt minder waard omdat alles duurder wordt. Om welk begrip gaat het?",
+      "o": [
+       "Rente",
+       "Inflatie",
+       "Centrale bank",
+       "Hypotheek"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je spaargeld wordt minder waard omdat alles duurder wordt. Dat past bij Inflatie: prijzen stijgen.",
+      "uo": [
+       "Nee, dat hoort bij Rente: vergoeding voor geld.",
+       "Klopt: prijzen stijgen.",
+       "Nee, dat hoort bij Centrale bank: bewaakt het geld.",
+       "Nee, dat hoort bij Hypotheek: lening voor een huis."
+      ],
+      "uh": "Inflatie: prijzen stijgen."
+     },
+     {
+      "v": "Deze bank bewaakt de waarde van het geld in een land. Welk begrip herken je hier?",
+      "o": [
+       "Lenen",
+       "Sparen",
+       "Centrale bank",
+       "Hypotheek"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Deze bank bewaakt de waarde van het geld in een land. Dat past bij Centrale bank: bewaakt het geld.",
+      "uo": [
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken.",
+       "Nee, dat hoort bij Sparen: geld opzijzetten.",
+       "Klopt: bewaakt het geld.",
+       "Nee, dat hoort bij Hypotheek: lening voor een huis."
+      ],
+      "uh": "Centrale bank: bewaakt het geld."
+     },
+     {
+      "v": "Rente die je ook over de eerder bijgeschreven rente krijgt. Wat is hier aan de hand?",
+      "o": [
+       "Onderpand",
+       "Enkelvoudige interest",
+       "Hypotheek",
+       "Samengestelde interest"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Rente die je ook over de eerder bijgeschreven rente krijgt. Dat past bij Samengestelde interest: rente over rente.",
+      "uo": [
+       "Nee, dat hoort bij Onderpand: zekerheid voor de bank.",
+       "Nee, dat hoort bij Enkelvoudige interest: rente over startbedrag.",
+       "Nee, dat hoort bij Hypotheek: lening voor een huis.",
+       "Klopt: rente over rente."
+      ],
+      "uh": "Samengestelde interest: rente over rente."
+     },
+     {
+      "v": "De winkel biedt je de mogelijkheid om later te betalen. Welk begrip past hierbij?",
+      "o": [
+       "Krediet",
+       "Lenen",
+       "Hypotheek",
+       "Sparen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De winkel biedt je de mogelijkheid om later te betalen. Dat past bij Krediet: mogelijkheid om te lenen.",
+      "uo": [
+       "Klopt: mogelijkheid om te lenen.",
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken.",
+       "Nee, dat hoort bij Hypotheek: lening voor een huis.",
+       "Nee, dat hoort bij Sparen: geld opzijzetten."
+      ],
+      "uh": "Krediet: mogelijkheid om te lenen."
+     },
+     {
+      "v": "Je krijgt niet alleen rente over je inleg, maar ook rente over eerdere rente. Om welk begrip gaat het?",
+      "o": [
+       "Rente",
+       "Samengestelde interest",
+       "Hypotheek",
+       "Onderpand"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je krijgt niet alleen rente over je inleg, maar ook rente over eerdere rente. Dat past bij Samengestelde interest: rente over rente.",
+      "uo": [
+       "Nee, dat hoort bij Rente: vergoeding voor geld.",
+       "Klopt: rente over rente.",
+       "Nee, dat hoort bij Hypotheek: lening voor een huis.",
+       "Nee, dat hoort bij Onderpand: zekerheid voor de bank."
+      ],
+      "uh": "Samengestelde interest: rente over rente."
+     },
+     {
+      "v": "De bank verlaagt het percentage dat je voor een lening betaalt. Welk begrip herken je hier?",
+      "o": [
+       "Krediet",
+       "Rente",
+       "Rentestand",
+       "Aflossing"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De bank verlaagt het percentage dat je voor een lening betaalt. Dat past bij Rentestand: hoogte van de rente.",
+      "uo": [
+       "Nee, dat hoort bij Krediet: mogelijkheid om te lenen.",
+       "Nee, dat hoort bij Rente: vergoeding voor geld.",
+       "Klopt: hoogte van de rente.",
+       "Nee, dat hoort bij Aflossing: lening terugbetalen."
+      ],
+      "uh": "Rentestand: hoogte van de rente."
+     },
+     {
+      "v": "De bank die het geldstelsel bewaakt. Wat is hier aan de hand?",
+      "o": [
+       "Inflatie",
+       "Onderpand",
+       "Samengestelde interest",
+       "Centrale bank"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De bank die het geldstelsel bewaakt. Dat past bij Centrale bank: bewaakt het geld.",
+      "uo": [
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Nee, dat hoort bij Onderpand: zekerheid voor de bank.",
+       "Nee, dat hoort bij Samengestelde interest: rente over rente.",
+       "Klopt: bewaakt het geld."
+      ],
+      "uh": "Centrale bank: bewaakt het geld."
+     },
+     {
+      "v": "Iets van waarde als zekerheid voor een lening. Welk begrip past hierbij?",
+      "o": [
+       "Onderpand",
+       "Lenen",
+       "Sparen",
+       "Rente"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Iets van waarde als zekerheid voor een lening. Dat past bij Onderpand: zekerheid voor de bank.",
+      "uo": [
+       "Klopt: zekerheid voor de bank.",
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken.",
+       "Nee, dat hoort bij Sparen: geld opzijzetten.",
+       "Nee, dat hoort bij Rente: vergoeding voor geld."
+      ],
+      "uh": "Onderpand: zekerheid voor de bank."
+     },
+     {
+      "v": "Je krijgt van de bank geld dat je later moet terugbetalen. Om welk begrip gaat het?",
+      "o": [
+       "Sparen",
+       "Lenen",
+       "Krediet",
+       "Hypotheek"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Je krijgt van de bank geld dat je later moet terugbetalen. Dat past bij Lenen: geld tijdelijk gebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Sparen: geld opzijzetten.",
+       "Klopt: geld tijdelijk gebruiken.",
+       "Nee, dat hoort bij Krediet: mogelijkheid om te lenen.",
+       "Nee, dat hoort bij Hypotheek: lening voor een huis."
+      ],
+      "uh": "Lenen: geld tijdelijk gebruiken."
+     },
+     {
+      "v": "Geld opzijzetten voor later. Welk begrip herken je hier?",
+      "o": [
+       "Samengestelde interest",
+       "Lenen",
+       "Sparen",
+       "Rente"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Geld opzijzetten voor later. Dat past bij Sparen: geld opzijzetten.",
+      "uo": [
+       "Nee, dat hoort bij Samengestelde interest: rente over rente.",
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken.",
+       "Klopt: geld opzijzetten.",
+       "Nee, dat hoort bij Rente: vergoeding voor geld."
+      ],
+      "uh": "Sparen: geld opzijzetten."
+     },
+     {
+      "v": "Je zet elke maand geld op je spaarrekening opzij. Wat is hier aan de hand?",
+      "o": [
+       "Rente",
+       "Krediet",
+       "Inflatie",
+       "Sparen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Je zet elke maand geld op je spaarrekening opzij. Dat past bij Sparen: geld opzijzetten.",
+      "uo": [
+       "Nee, dat hoort bij Rente: vergoeding voor geld.",
+       "Nee, dat hoort bij Krediet: mogelijkheid om te lenen.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Klopt: geld opzijzetten."
+      ],
+      "uh": "Sparen: geld opzijzetten."
+     },
+     {
+      "v": "De vergoeding die je betaalt of krijgt voor geld. Welk begrip past hierbij?",
+      "o": [
+       "Rente",
+       "Aflossing",
+       "Hypotheek",
+       "Lenen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De vergoeding die je betaalt of krijgt voor geld. Dat past bij Rente: vergoeding voor geld.",
+      "uo": [
+       "Klopt: vergoeding voor geld.",
+       "Nee, dat hoort bij Aflossing: lening terugbetalen.",
+       "Nee, dat hoort bij Hypotheek: lening voor een huis.",
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken."
+      ],
+      "uh": "Rente: vergoeding voor geld."
+     },
+     {
+      "v": "Elke maand betaal je een deel van je lening terug. Om welk begrip gaat het?",
+      "o": [
+       "Rente",
+       "Aflossing",
+       "Rentestand",
+       "Inflatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Elke maand betaal je een deel van je lening terug. Dat past bij Aflossing: lening terugbetalen.",
+      "uo": [
+       "Nee, dat hoort bij Rente: vergoeding voor geld.",
+       "Klopt: lening terugbetalen.",
+       "Nee, dat hoort bij Rentestand: hoogte van de rente.",
+       "Nee, dat hoort bij Inflatie: prijzen stijgen."
+      ],
+      "uh": "Aflossing: lening terugbetalen."
+     },
+     {
+      "v": "Je krijgt elk jaar rente alleen over het bedrag dat je in het begin inlegde. Welk begrip herken je hier?",
+      "o": [
+       "Inflatie",
+       "Aflossing",
+       "Enkelvoudige interest",
+       "Rentestand"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je krijgt elk jaar rente alleen over het bedrag dat je in het begin inlegde. Dat past bij Enkelvoudige interest: rente over startbedrag.",
+      "uo": [
+       "Nee, dat hoort bij Inflatie: prijzen stijgen.",
+       "Nee, dat hoort bij Aflossing: lening terugbetalen.",
+       "Klopt: rente over startbedrag.",
+       "Nee, dat hoort bij Rentestand: hoogte van de rente."
+      ],
+      "uh": "Enkelvoudige interest: rente over startbedrag."
+     },
+     {
+      "v": "Een lening om een huis te kopen. Wat is hier aan de hand?",
+      "o": [
+       "Lenen",
+       "Krediet",
+       "Sparen",
+       "Hypotheek"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een lening om een huis te kopen. Dat past bij Hypotheek: lening voor een huis.",
+      "uo": [
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken.",
+       "Nee, dat hoort bij Krediet: mogelijkheid om te lenen.",
+       "Nee, dat hoort bij Sparen: geld opzijzetten.",
+       "Klopt: lening voor een huis."
+      ],
+      "uh": "Hypotheek: lening voor een huis."
+     },
+     {
+      "v": "Voor het lenen van geld betaal je de bank een vergoeding. Welk begrip past hierbij?",
+      "o": [
+       "Rente",
+       "Aflossing",
+       "Krediet",
+       "Centrale bank"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Voor het lenen van geld betaal je de bank een vergoeding. Dat past bij Rente: vergoeding voor geld.",
+      "uo": [
+       "Klopt: vergoeding voor geld.",
+       "Nee, dat hoort bij Aflossing: lening terugbetalen.",
+       "Nee, dat hoort bij Krediet: mogelijkheid om te lenen.",
+       "Nee, dat hoort bij Centrale bank: bewaakt het geld."
+      ],
+      "uh": "Rente: vergoeding voor geld."
+     },
+     {
+      "v": "Voor de aankoop van een huis sluit je een grote lening af. Om welk begrip gaat het?",
+      "o": [
+       "Lenen",
+       "Hypotheek",
+       "Sparen",
+       "Rente"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Voor de aankoop van een huis sluit je een grote lening af. Dat past bij Hypotheek: lening voor een huis.",
+      "uo": [
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken.",
+       "Klopt: lening voor een huis.",
+       "Nee, dat hoort bij Sparen: geld opzijzetten.",
+       "Nee, dat hoort bij Rente: vergoeding voor geld."
+      ],
+      "uh": "Hypotheek: lening voor een huis."
+     },
+     {
+      "v": "Rente die alleen over het startbedrag wordt berekend. Welk begrip herken je hier?",
+      "o": [
+       "Krediet",
+       "Samengestelde interest",
+       "Enkelvoudige interest",
+       "Sparen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Rente die alleen over het startbedrag wordt berekend. Dat past bij Enkelvoudige interest: rente over startbedrag.",
+      "uo": [
+       "Nee, dat hoort bij Krediet: mogelijkheid om te lenen.",
+       "Nee, dat hoort bij Samengestelde interest: rente over rente.",
+       "Klopt: rente over startbedrag.",
+       "Nee, dat hoort bij Sparen: geld opzijzetten."
+      ],
+      "uh": "Enkelvoudige interest: rente over startbedrag."
+     },
+     {
+      "v": "De mogelijkheid om geld te lenen. Wat is hier aan de hand?",
+      "o": [
+       "Sparen",
+       "Lenen",
+       "Hypotheek",
+       "Krediet"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De mogelijkheid om geld te lenen. Dat past bij Krediet: mogelijkheid om te lenen.",
+      "uo": [
+       "Nee, dat hoort bij Sparen: geld opzijzetten.",
+       "Nee, dat hoort bij Lenen: geld tijdelijk gebruiken.",
+       "Nee, dat hoort bij Hypotheek: lening voor een huis.",
+       "Klopt: mogelijkheid om te lenen."
+      ],
+      "uh": "Krediet: mogelijkheid om te lenen."
      }
     ],
     "begrippen": [
@@ -17447,6 +21152,462 @@ var VAKKEN_VMBO = [
        "Klopt: de juridische vorm, zoals een eenmanszaak."
       ],
       "uh": "De juridische vorm, zoals een eenmanszaak."
+     },
+     {
+      "v": "Het verschil tussen verkoopprijs en kostprijs. Welk begrip past hierbij?",
+      "o": [
+       "Winstmarge",
+       "Kostprijs",
+       "Investering",
+       "Rechtsvorm"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het verschil tussen verkoopprijs en kostprijs. Dat past bij Winstmarge: verkoopprijs min kostprijs.",
+      "uo": [
+       "Klopt: verkoopprijs min kostprijs.",
+       "Nee, dat hoort bij Kostprijs: kosten per product.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Nee, dat hoort bij Rechtsvorm: juridische vorm."
+      ],
+      "uh": "Winstmarge: verkoopprijs min kostprijs."
+     },
+     {
+      "v": "De kosten die één product je kosten. Om welk begrip gaat het?",
+      "o": [
+       "Marktonderzoek",
+       "Kostprijs",
+       "Investering",
+       "Ondernemer"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De kosten die één product je kosten. Dat past bij Kostprijs: kosten per product.",
+      "uo": [
+       "Nee, dat hoort bij Marktonderzoek: onderzoek naar de markt.",
+       "Klopt: kosten per product.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Nee, dat hoort bij Ondernemer: start een bedrijf."
+      ],
+      "uh": "Kostprijs: kosten per product."
+     },
+     {
+      "v": "Ze regelt geld via spaargeld en een banklening. Welk begrip herken je hier?",
+      "o": [
+       "Risico",
+       "Investering",
+       "Financiering",
+       "Kostprijs"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Ze regelt geld via spaargeld en een banklening. Dat past bij Financiering: hoe je aan geld komt.",
+      "uo": [
+       "Nee, dat hoort bij Risico: kans op verlies.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Klopt: hoe je aan geld komt.",
+       "Nee, dat hoort bij Kostprijs: kosten per product."
+      ],
+      "uh": "Financiering: hoe je aan geld komt."
+     },
+     {
+      "v": "De juridische vorm van een bedrijf. Wat is hier aan de hand?",
+      "o": [
+       "Ondernemer",
+       "Concurrent",
+       "Doelgroep",
+       "Rechtsvorm"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De juridische vorm van een bedrijf. Dat past bij Rechtsvorm: juridische vorm.",
+      "uo": [
+       "Nee, dat hoort bij Ondernemer: start een bedrijf.",
+       "Nee, dat hoort bij Concurrent: rivaal op de markt.",
+       "Nee, dat hoort bij Doelgroep: jouw klanten.",
+       "Klopt: juridische vorm."
+      ],
+      "uh": "Rechtsvorm: juridische vorm."
+     },
+     {
+      "v": "Onderzoek naar wat de markt en klanten willen. Welk begrip past hierbij?",
+      "o": [
+       "Marktonderzoek",
+       "Doelgroep",
+       "Startkapitaal",
+       "Rechtsvorm"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Onderzoek naar wat de markt en klanten willen. Dat past bij Marktonderzoek: onderzoek naar de markt.",
+      "uo": [
+       "Klopt: onderzoek naar de markt.",
+       "Nee, dat hoort bij Doelgroep: jouw klanten.",
+       "Nee, dat hoort bij Startkapitaal: geld om te starten.",
+       "Nee, dat hoort bij Rechtsvorm: juridische vorm."
+      ],
+      "uh": "Marktonderzoek: onderzoek naar de markt."
+     },
+     {
+      "v": "Ze kiest of ze een eenmanszaak of een bv wordt. Om welk begrip gaat het?",
+      "o": [
+       "Concurrent",
+       "Rechtsvorm",
+       "Doelgroep",
+       "Ondernemer"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Ze kiest of ze een eenmanszaak of een bv wordt. Dat past bij Rechtsvorm: juridische vorm.",
+      "uo": [
+       "Nee, dat hoort bij Concurrent: rivaal op de markt.",
+       "Klopt: juridische vorm.",
+       "Nee, dat hoort bij Doelgroep: jouw klanten.",
+       "Nee, dat hoort bij Ondernemer: start een bedrijf."
+      ],
+      "uh": "Rechtsvorm: juridische vorm."
+     },
+     {
+      "v": "Twee straten verderop zit een andere bakker. Welk begrip herken je hier?",
+      "o": [
+       "Investering",
+       "Doelgroep",
+       "Concurrent",
+       "Rechtsvorm"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Twee straten verderop zit een andere bakker. Dat past bij Concurrent: rivaal op de markt.",
+      "uo": [
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Nee, dat hoort bij Doelgroep: jouw klanten.",
+       "Klopt: rivaal op de markt.",
+       "Nee, dat hoort bij Rechtsvorm: juridische vorm."
+      ],
+      "uh": "Concurrent: rivaal op de markt."
+     },
+     {
+      "v": "Een plan waarin staat hoe je je bedrijf opzet. Wat is hier aan de hand?",
+      "o": [
+       "Startkapitaal",
+       "Investering",
+       "Rechtsvorm",
+       "Ondernemingsplan"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een plan waarin staat hoe je je bedrijf opzet. Dat past bij Ondernemingsplan: plan voor je bedrijf.",
+      "uo": [
+       "Nee, dat hoort bij Startkapitaal: geld om te starten.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Nee, dat hoort bij Rechtsvorm: juridische vorm.",
+       "Klopt: plan voor je bedrijf."
+      ],
+      "uh": "Ondernemingsplan: plan voor je bedrijf."
+     },
+     {
+      "v": "Als niemand haar broodjes koopt, verliest ze haar geld. Welk begrip past hierbij?",
+      "o": [
+       "Risico",
+       "Financiering",
+       "Ondernemingsplan",
+       "Ondernemer"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Als niemand haar broodjes koopt, verliest ze haar geld. Dat past bij Risico: kans op verlies.",
+      "uo": [
+       "Klopt: kans op verlies.",
+       "Nee, dat hoort bij Financiering: hoe je aan geld komt.",
+       "Nee, dat hoort bij Ondernemingsplan: plan voor je bedrijf.",
+       "Nee, dat hoort bij Ondernemer: start een bedrijf."
+      ],
+      "uh": "Risico: kans op verlies."
+     },
+     {
+      "v": "Voor de start schrijft ze op wat ze gaat doen en hoe. Om welk begrip gaat het?",
+      "o": [
+       "Investering",
+       "Ondernemingsplan",
+       "Rechtsvorm",
+       "Startkapitaal"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Voor de start schrijft ze op wat ze gaat doen en hoe. Dat past bij Ondernemingsplan: plan voor je bedrijf.",
+      "uo": [
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Klopt: plan voor je bedrijf.",
+       "Nee, dat hoort bij Rechtsvorm: juridische vorm.",
+       "Nee, dat hoort bij Startkapitaal: geld om te starten."
+      ],
+      "uh": "Ondernemingsplan: plan voor je bedrijf."
+     },
+     {
+      "v": "Eén broodje maken kost haar tachtig cent aan ingrediënten en werk. Welk begrip herken je hier?",
+      "o": [
+       "Concurrent",
+       "Winstmarge",
+       "Kostprijs",
+       "Rechtsvorm"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Eén broodje maken kost haar tachtig cent aan ingrediënten en werk. Dat past bij Kostprijs: kosten per product.",
+      "uo": [
+       "Nee, dat hoort bij Concurrent: rivaal op de markt.",
+       "Nee, dat hoort bij Winstmarge: verkoopprijs min kostprijs.",
+       "Klopt: kosten per product.",
+       "Nee, dat hoort bij Rechtsvorm: juridische vorm."
+      ],
+      "uh": "Kostprijs: kosten per product."
+     },
+     {
+      "v": "Een ander bedrijf dat om dezelfde klanten strijdt. Wat is hier aan de hand?",
+      "o": [
+       "Ondernemer",
+       "Kostprijs",
+       "Marktonderzoek",
+       "Concurrent"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een ander bedrijf dat om dezelfde klanten strijdt. Dat past bij Concurrent: rivaal op de markt.",
+      "uo": [
+       "Nee, dat hoort bij Ondernemer: start een bedrijf.",
+       "Nee, dat hoort bij Kostprijs: kosten per product.",
+       "Nee, dat hoort bij Marktonderzoek: onderzoek naar de markt.",
+       "Klopt: rivaal op de markt."
+      ],
+      "uh": "Concurrent: rivaal op de markt."
+     },
+     {
+      "v": "De manier waarop je aan geld komt voor je bedrijf. Welk begrip past hierbij?",
+      "o": [
+       "Financiering",
+       "Investering",
+       "Risico",
+       "Kostprijs"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De manier waarop je aan geld komt voor je bedrijf. Dat past bij Financiering: hoe je aan geld komt.",
+      "uo": [
+       "Klopt: hoe je aan geld komt.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Nee, dat hoort bij Risico: kans op verlies.",
+       "Nee, dat hoort bij Kostprijs: kosten per product."
+      ],
+      "uh": "Financiering: hoe je aan geld komt."
+     },
+     {
+      "v": "Voor de start vraagt ze klanten wat zij willen. Om welk begrip gaat het?",
+      "o": [
+       "Risico",
+       "Marktonderzoek",
+       "Winstmarge",
+       "Investering"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Voor de start vraagt ze klanten wat zij willen. Dat past bij Marktonderzoek: onderzoek naar de markt.",
+      "uo": [
+       "Nee, dat hoort bij Risico: kans op verlies.",
+       "Klopt: onderzoek naar de markt.",
+       "Nee, dat hoort bij Winstmarge: verkoopprijs min kostprijs.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen."
+      ],
+      "uh": "Marktonderzoek: onderzoek naar de markt."
+     },
+     {
+      "v": "Geld dat je in bedrijfsmiddelen steekt. Welk begrip herken je hier?",
+      "o": [
+       "Doelgroep",
+       "Startkapitaal",
+       "Investering",
+       "Concurrent"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Geld dat je in bedrijfsmiddelen steekt. Dat past bij Investering: geld in bedrijfsmiddelen.",
+      "uo": [
+       "Nee, dat hoort bij Doelgroep: jouw klanten.",
+       "Nee, dat hoort bij Startkapitaal: geld om te starten.",
+       "Klopt: geld in bedrijfsmiddelen.",
+       "Nee, dat hoort bij Concurrent: rivaal op de markt."
+      ],
+      "uh": "Investering: geld in bedrijfsmiddelen."
+     },
+     {
+      "v": "Ze koopt een oven en een bakfiets voor haar bedrijf. Wat is hier aan de hand?",
+      "o": [
+       "Ondernemer",
+       "Winstmarge",
+       "Rechtsvorm",
+       "Investering"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Ze koopt een oven en een bakfiets voor haar bedrijf. Dat past bij Investering: geld in bedrijfsmiddelen.",
+      "uo": [
+       "Nee, dat hoort bij Ondernemer: start een bedrijf.",
+       "Nee, dat hoort bij Winstmarge: verkoopprijs min kostprijs.",
+       "Nee, dat hoort bij Rechtsvorm: juridische vorm.",
+       "Klopt: geld in bedrijfsmiddelen."
+      ],
+      "uh": "Investering: geld in bedrijfsmiddelen."
+     },
+     {
+      "v": "Iemand die een eigen bedrijf begint en runt. Welk begrip past hierbij?",
+      "o": [
+       "Ondernemer",
+       "Risico",
+       "Rechtsvorm",
+       "Winstmarge"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Iemand die een eigen bedrijf begint en runt. Dat past bij Ondernemer: start een bedrijf.",
+      "uo": [
+       "Klopt: start een bedrijf.",
+       "Nee, dat hoort bij Risico: kans op verlies.",
+       "Nee, dat hoort bij Rechtsvorm: juridische vorm.",
+       "Nee, dat hoort bij Winstmarge: verkoopprijs min kostprijs."
+      ],
+      "uh": "Ondernemer: start een bedrijf."
+     },
+     {
+      "v": "Ze verkoopt voor twee euro wat haar tachtig cent kost, dat verschil is haar winst. Om welk begrip gaat het?",
+      "o": [
+       "Kostprijs",
+       "Winstmarge",
+       "Investering",
+       "Rechtsvorm"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Ze verkoopt voor twee euro wat haar tachtig cent kost, dat verschil is haar winst. Dat past bij Winstmarge: verkoopprijs min kostprijs.",
+      "uo": [
+       "Nee, dat hoort bij Kostprijs: kosten per product.",
+       "Klopt: verkoopprijs min kostprijs.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Nee, dat hoort bij Rechtsvorm: juridische vorm."
+      ],
+      "uh": "Winstmarge: verkoopprijs min kostprijs."
+     },
+     {
+      "v": "Om te beginnen heeft ze geld nodig voor voorraad en een pand. Welk begrip herken je hier?",
+      "o": [
+       "Concurrent",
+       "Doelgroep",
+       "Startkapitaal",
+       "Kostprijs"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Om te beginnen heeft ze geld nodig voor voorraad en een pand. Dat past bij Startkapitaal: geld om te starten.",
+      "uo": [
+       "Nee, dat hoort bij Concurrent: rivaal op de markt.",
+       "Nee, dat hoort bij Doelgroep: jouw klanten.",
+       "Klopt: geld om te starten.",
+       "Nee, dat hoort bij Kostprijs: kosten per product."
+      ],
+      "uh": "Startkapitaal: geld om te starten."
+     },
+     {
+      "v": "De groep klanten waar je je op richt. Wat is hier aan de hand?",
+      "o": [
+       "Marktonderzoek",
+       "Concurrent",
+       "Investering",
+       "Doelgroep"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De groep klanten waar je je op richt. Dat past bij Doelgroep: jouw klanten.",
+      "uo": [
+       "Nee, dat hoort bij Marktonderzoek: onderzoek naar de markt.",
+       "Nee, dat hoort bij Concurrent: rivaal op de markt.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Klopt: jouw klanten."
+      ],
+      "uh": "Doelgroep: jouw klanten."
+     },
+     {
+      "v": "Zij start haar eigen bedrijf en neemt daarbij risico. Welk begrip past hierbij?",
+      "o": [
+       "Ondernemer",
+       "Investering",
+       "Risico",
+       "Financiering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Zij start haar eigen bedrijf en neemt daarbij risico. Dat past bij Ondernemer: start een bedrijf.",
+      "uo": [
+       "Klopt: start een bedrijf.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Nee, dat hoort bij Risico: kans op verlies.",
+       "Nee, dat hoort bij Financiering: hoe je aan geld komt."
+      ],
+      "uh": "Ondernemer: start een bedrijf."
+     },
+     {
+      "v": "Haar broodjes zijn vooral bedoeld voor studenten. Om welk begrip gaat het?",
+      "o": [
+       "Marktonderzoek",
+       "Doelgroep",
+       "Investering",
+       "Ondernemer"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Haar broodjes zijn vooral bedoeld voor studenten. Dat past bij Doelgroep: jouw klanten.",
+      "uo": [
+       "Nee, dat hoort bij Marktonderzoek: onderzoek naar de markt.",
+       "Klopt: jouw klanten.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Nee, dat hoort bij Ondernemer: start een bedrijf."
+      ],
+      "uh": "Doelgroep: jouw klanten."
+     },
+     {
+      "v": "Het geld dat je nodig hebt om een bedrijf te starten. Welk begrip herken je hier?",
+      "o": [
+       "Ondernemingsplan",
+       "Investering",
+       "Startkapitaal",
+       "Concurrent"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het geld dat je nodig hebt om een bedrijf te starten. Dat past bij Startkapitaal: geld om te starten.",
+      "uo": [
+       "Nee, dat hoort bij Ondernemingsplan: plan voor je bedrijf.",
+       "Nee, dat hoort bij Investering: geld in bedrijfsmiddelen.",
+       "Klopt: geld om te starten.",
+       "Nee, dat hoort bij Concurrent: rivaal op de markt."
+      ],
+      "uh": "Startkapitaal: geld om te starten."
+     },
+     {
+      "v": "De kans dat je verlies lijdt. Wat is hier aan de hand?",
+      "o": [
+       "Ondernemer",
+       "Financiering",
+       "Ondernemingsplan",
+       "Risico"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De kans dat je verlies lijdt. Dat past bij Risico: kans op verlies.",
+      "uo": [
+       "Nee, dat hoort bij Ondernemer: start een bedrijf.",
+       "Nee, dat hoort bij Financiering: hoe je aan geld komt.",
+       "Nee, dat hoort bij Ondernemingsplan: plan voor je bedrijf.",
+       "Klopt: kans op verlies."
+      ],
+      "uh": "Risico: kans op verlies."
      }
     ],
     "begrippen": [

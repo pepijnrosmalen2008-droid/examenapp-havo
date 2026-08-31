@@ -845,7 +845,7 @@ var VAKKEN_VMBO = [
      "Inflatie en indexcijfers",
      "Verzekeringen"
     ],
-    "nSv": 14,
+    "nSv": 41,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -860,7 +860,7 @@ var VAKKEN_VMBO = [
      "Consumentenrechten",
      "Consumentenorganisaties"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -875,7 +875,7 @@ var VAKKEN_VMBO = [
      "Brutoloon en nettoloon",
      "Arbeidsverdeling en productiviteit"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -890,7 +890,7 @@ var VAKKEN_VMBO = [
      "Verkoopprijs, omzet en btw",
      "Kosten en winst"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -905,7 +905,7 @@ var VAKKEN_VMBO = [
      "Belastingen",
      "Taken van de overheid"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -922,7 +922,7 @@ var VAKKEN_VMBO = [
      "De Europese Unie",
      "Ontwikkelingssamenwerking"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -937,7 +937,7 @@ var VAKKEN_VMBO = [
      "Milieukosten",
      "Duurzaam produceren en consumeren"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -952,7 +952,7 @@ var VAKKEN_VMBO = [
      "Samengestelde interest (rente-op-rente)",
      "De rol van de centrale bank"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -967,7 +967,7 @@ var VAKKEN_VMBO = [
      "Ondernemingsplan",
      "Kosten, prijs en winst van een bedrijf"
     ],
-    "nSv": 12,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
