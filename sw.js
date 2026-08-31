@@ -1,4 +1,4 @@
-const CACHE = 'slagio-v599';
+const CACHE = 'slagio-v600';
 const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/foutenboek-uitleg-havo.js', '/data-vwo.meta.js', '/data-vmbo.meta.js', '/state.js', '/mascotte.js', '/lottie.min.js', '/vonk-lottie.js', '/vonk.lottie.json', '/vonk-phys.js', '/vonk.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/league.js', '/schedule.js', '/foutenboek.js', '/herhalen.js', '/v4.js', '/zoek.js', '/klas.js', '/notif-engine.js', '/onb.js', '/widget.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/ce-oud.js', '/manifest.json', '/widget/slagio-widget.json', '/widget/slagio-widget-data.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
