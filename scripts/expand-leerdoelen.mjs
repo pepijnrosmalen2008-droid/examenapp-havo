@@ -173,123 +173,71 @@ function buildSummary(spec) {
   return `${intro}<div class="sam-head">Kernbegrippen</div>${defs}${onthoud}`;
 }
 
-// ── Aanvullende vraaggenerator (hybride) ────────────────────────────────────
-// Vult de handgeschreven gouden vragen aan tot een quotum per moeilijkheid, met
-// DUIDELIJKE vraagstelling en PERSOONLIJKE per-optie-uitleg (elke foute optie
-// vertelt wát het dan wél is). Geen "wat betekent deze term"-vragen: we werken
-// van omschrijving → begrip en met onderscheid-tussen-verwarbare-begrippen.
+// ── Situatie-vraaggenerator ─────────────────────────────────────────────────
+// Maakt SITUATIE-vragen uit de begrippenkaarten: elke kaart krijgt een of meer
+// concrete situaties (`vb`). Uit zo'n situatie bouwt de generator een inzicht-
+// vraag "herken het begrip in deze situatie" met gewone begrippen als opties
+// (GEEN haakjes) en persoonlijke per-optie-uitleg. Eén vraag per situatie, dus
+// geen herhaling van hetzelfde begrip in drie vormen. De situatie zelf noemt het
+// begrip niet; dat schrijf je bij het opstellen van `vb`.
 const _lc1 = s => { s = String(s || '').trim(); return s ? s[0].toLowerCase() + s.slice(1) : s; };
 const _stripEnd = s => String(s || '').replace(/[.\s]+$/, '');
+const _endPunc = s => { s = String(s || '').trim(); return /[.!?]$/.test(s) ? s : s + '.'; };
+const _PROMPTS = ['Welk begrip past hierbij?', 'Om welk begrip gaat het?', 'Welk begrip herken je hier?', 'Wat is hier aan de hand?'];
 function generateSupplement(concepten, authored, perDiff) {
-  const cs = (concepten || []).filter(c => c && c.t && c.d);
+  const cs = (concepten || []).filter(c => c && c.t);
   if (cs.length < 4) return [];
   const byTerm = {}; cs.forEach(c => { byTerm[c.t.toLowerCase()] = c; });
   const norm = s => String(s || '').toLowerCase().replace(/\s+/g, ' ').trim();
   const kernFor = c => _stripEnd(kernOf(c));
   const used = new Set((authored || []).map(q => norm(q.v)));
-  const aByD = { 1: 0, 2: 0, 3: 0 }; (authored || []).forEach(q => { if (aByD[q.d] != null) aByD[q.d]++; });
-  const bucket = { 1: [], 2: [], 3: [] };
-  const need = d => perDiff - aByD[d] - bucket[d].length;
-  const distr = (c, preferFar) => {
-    const close = (c.fout || []).map(t => byTerm[norm(t)]).filter(Boolean).filter(x => x.t !== c.t);
-    const far = cs.filter(x => x.t !== c.t && !close.includes(x));
-    return preferFar ? [...shuffle(far, c.t.length + 3), ...close] : [...close, ...shuffle(far, c.t.length + 5)];
-  };
-  const add = (d, q) => {
+  const out = [];
+  const add = q => {
     const k = norm(q.v);
     if (used.has(k) || q.v.length > MAX_STEM) return;
     if (new Set(q.o.map(norm)).size !== 4 || q.o.some(o => !String(o).trim())) return;
     if (q.uo.some(w => String(w).trim().length < MIN_UO) || String(q.u).length < MIN_U) return;
-    used.add(k); bucket[d].push(q);
+    used.add(k); out.push(q);
   };
-  // Vocab-concept (talen): d is een vertaling ("Engels voor ..."). Dan werken we
-  // met vertaalvragen i.p.v. omschrijving → begrip.
-  const isVocab = c => /^(Engels|Duits|Frans|Spaans)\b/.test(String(c.d || ''));
-  // d1 (makkelijk): herken het begrip uit een heldere omschrijving; makkelijke afleiders.
-  for (const c of shuffle(cs, 7)) {
-    if (need(1) <= 0) break;
-    const ds = distr(c, true).slice(0, 3); if (ds.length < 3) continue;
-    if (isVocab(c)) {
-      add(1, { v: `Wat betekent «${c.t}»?`, o: [kernFor(c), ...ds.map(x => kernFor(x))], c: 0, d: 1,
-        u: `«${c.t}» betekent ${kernFor(c)}.`,
-        uo: [`Klopt: «${c.t}» betekent ${kernFor(c)}.`, ...ds.map(x => `Nee, dat is de betekenis van «${x.t}».`)],
-        uh: `«${c.t}» = ${kernFor(c)}.` });
-    } else {
-      const clue = String(c.d).length <= 84 ? _stripEnd(c.d) : kernFor(c);
-      add(1, { v: `Welk begrip wordt hier beschreven: ${clue}?`, o: [c.t, ...ds.map(x => x.t)], c: 0, d: 1,
-        u: `${_stripEnd(c.d)}: dat is «${c.t}».`,
-        uo: [`Klopt: ${kernFor(c)}.`, ...ds.map(x => `Nee, dat is «${x.t}»: ${kernFor(x)}.`)],
-        uh: `«${c.t}» = ${kernFor(c)}.` });
-    }
+  // Afleiders: bij een makkelijke vraag (d1) verre begrippen, bij een moeilijke
+  // (d3) juist de verwarbare (fout) begrippen, zodat de moeilijkheid echt oploopt.
+  const distractors = (c, d) => {
+    const close = (c.fout || []).map(t => byTerm[norm(t)]).filter(Boolean).filter(x => x.t !== c.t);
+    const far = cs.filter(x => x.t !== c.t && !close.includes(x));
+    const order = d >= 3 ? [...close, ...shuffle(far, c.t.length + 5)]
+      : d === 2 ? [...shuffle(close, c.t.length + 2), ...shuffle(far, c.t.length + 7)]
+        : [...shuffle(far, c.t.length + 3), ...close];
+    return order.slice(0, 3);
+  };
+  // Verzamel alle (begrip, situatie)-paren. `vb` mag een string of {s} zijn; een
+  // eventuele d-tag wordt genegeerd, want de generator balanceert de moeilijkheid
+  // zelf. De moeilijkheid bepaalt welke afleiders je krijgt: bij makkelijk verre
+  // begrippen, bij moeilijk juist de verwarbare.
+  const pairs = [];
+  for (const c of cs) {
+    const vbs = Array.isArray(c.vb) ? c.vb : (c.vb ? [c.vb] : []);
+    for (const raw of vbs) { const s = typeof raw === 'string' ? raw : (raw && raw.s); if (s) pairs.push({ c, s }); }
   }
-  // d2 (gemiddeld): kenmerk/betekenis met verwarbare afleiders.
-  for (const c of shuffle(cs, 13)) {
-    if (need(2) <= 0) break;
-    const ds = distr(c, false).slice(0, 3); if (ds.length < 3) continue;
-    if (isVocab(c)) {
-      add(2, { v: `Welk woord betekent ${_lc1(kernFor(c))}?`, o: [c.t, ...ds.map(x => x.t)], c: 0, d: 2,
-        u: `«${c.t}» betekent ${kernFor(c)}.`,
-        uo: [`Klopt: «${c.t}» betekent ${kernFor(c)}.`, ...ds.map(x => `Nee, «${x.t}» betekent ${kernFor(x)}.`)],
-        uh: `«${c.t}» = ${kernFor(c)}.` });
-    } else {
-      add(2, { v: `Wat is kenmerkend voor «${c.t}»?`, o: [kernFor(c), ...ds.map(x => kernFor(x))], c: 0, d: 2,
-        u: `Kenmerkend voor «${c.t}»: ${kernFor(c)}.`,
-        uo: [`Klopt: dit is kenmerkend voor «${c.t}».`, ...ds.map(x => `Nee, dat hoort bij «${x.t}».`)],
-        uh: `«${c.t}» = ${kernFor(c)}.` });
-    }
+  // Seed met de handgeschreven verdeling, en vul daarna de minst gevulde
+  // moeilijkheid steeds als eerste aan (richting 10/10/10).
+  const filled = { 1: 0, 2: 0, 3: 0 };
+  (authored || []).forEach(q => { if (filled[q.d] != null) filled[q.d]++; });
+  let pi = 0;
+  for (const { c, s } of shuffle(pairs, 101)) {
+    const d = [1, 2, 3].reduce((best, x) => (filled[x] < filled[best] ? x : best), 1);
+    const ds = distractors(c, d); if (ds.length < 3) continue;
+    const prompt = _PROMPTS[pi++ % _PROMPTS.length];
+    const before = out.length;
+    add({
+      v: `${_endPunc(s)} ${prompt}`,
+      o: [c.t, ...ds.map(x => x.t)], c: 0, d,
+      u: `${_endPunc(s)} Dat past bij ${c.t}: ${kernFor(c)}.`,
+      uo: [`Klopt: ${kernFor(c)}.`, ...ds.map(x => `Nee, dat hoort bij ${x.t}: ${kernFor(x)}.`)],
+      uh: `${c.t}: ${kernFor(c)}.`,
+    });
+    if (out.length > before) filled[d]++;
   }
-  // d3 (moeilijk): twee verwarbare begrippen onderscheiden.
-  for (const c of shuffle(cs, 29)) {
-    if (need(3) <= 0) break;
-    const partner = (c.fout || []).map(t => byTerm[norm(t)]).filter(Boolean).find(x => x.t !== c.t) || cs.find(x => x.t !== c.t);
-    if (!partner) continue;
-    const extra = shuffle(cs.filter(x => x.t !== c.t && x.t !== partner.t), c.t.length + 1).slice(0, 2);
-    if (extra.length < 2) continue;
-    add(3, { v: `«${c.t}» en «${partner.t}» lijken op elkaar. Wat hoort bij «${c.t}»?`,
-      o: [kernFor(c), kernFor(partner), kernFor(extra[0]), kernFor(extra[1])], c: 0, d: 3,
-      u: `Kenmerkend voor «${c.t}»: ${kernFor(c)}. Bij «${partner.t}»: ${kernFor(partner)}.`,
-      uo: [`Klopt: dit is kenmerkend voor «${c.t}».`, `Nee, dat hoort juist bij «${partner.t}».`, `Nee, dat hoort bij «${extra[0].t}».`, `Nee, dat hoort bij «${extra[1].t}».`],
-      uh: `«${c.t}» = ${kernFor(c)}, «${partner.t}» = ${kernFor(partner)}.` });
-  }
-  // Aanvulronde d2: nog open quota vullen met een omschrijving → begrip-vorm.
-  for (const c of shuffle(cs, 41)) {
-    if (need(2) <= 0) break;
-    const ds = distr(c, true).slice(0, 3); if (ds.length < 3) continue;
-    if (isVocab(c)) continue;
-    const clue = String(c.d).length <= 84 ? _stripEnd(c.d) : kernFor(c);
-    add(2, { v: `Bij welk begrip past deze omschrijving: ${clue}?`, o: [c.t, ...ds.map(x => x.t)], c: 0, d: 2,
-      u: `${_stripEnd(c.d)}: dat is «${c.t}».`,
-      uo: [`Klopt: ${kernFor(c)}.`, ...ds.map(x => `Nee, dat is «${x.t}»: ${kernFor(x)}.`)],
-      uh: `«${c.t}» = ${kernFor(c)}.` });
-  }
-  // Aanvulronde d1: tweede vorm (korte kern als clue) zodat ook kleine domeinen
-  // met weinig concepten toch 10 makkelijke vragen halen.
-  for (const c of shuffle(cs, 67)) {
-    if (need(1) <= 0) break;
-    const ds = distr(c, true).slice(0, 3); if (ds.length < 3) continue;
-    if (isVocab(c)) {
-      add(1, { v: `Wat is de vertaling van «${c.t}»?`, o: [kernFor(c), ...ds.map(x => kernFor(x))], c: 0, d: 1,
-        u: `«${c.t}» betekent ${kernFor(c)}.`,
-        uo: [`Klopt: «${c.t}» betekent ${kernFor(c)}.`, ...ds.map(x => `Nee, dat is de betekenis van «${x.t}».`)],
-        uh: `«${c.t}» = ${kernFor(c)}.` });
-    } else {
-      add(1, { v: `Welk begrip wordt beschreven met: ${_lc1(kernFor(c))}?`, o: [c.t, ...ds.map(x => x.t)], c: 0, d: 1,
-        u: `${_stripEnd(c.d)}: dat is «${c.t}».`,
-        uo: [`Klopt: ${kernFor(c)}.`, ...ds.map(x => `Nee, dat is «${x.t}»: ${kernFor(x)}.`)],
-        uh: `«${c.t}» = ${kernFor(c)}.` });
-    }
-  }
-  // Aanvulronde d3: waaraan herken je het begrip (kern tegenover andere kernen).
-  for (const c of shuffle(cs, 53)) {
-    if (need(3) <= 0) break;
-    const extra = shuffle(cs.filter(x => x.t !== c.t), c.t.length + 2).slice(0, 3);
-    if (extra.length < 3) continue;
-    add(3, { v: `Waaraan herken je «${c.t}»?`, o: [kernFor(c), ...extra.map(x => kernFor(x))], c: 0, d: 3,
-      u: `Je herkent «${c.t}» hieraan: ${kernFor(c)}.`,
-      uo: [`Klopt: hieraan herken je «${c.t}».`, ...extra.map(x => `Nee, dat hoort bij «${x.t}».`)],
-      uh: `«${c.t}» = ${kernFor(c)}.` });
-  }
-  return [...bucket[1], ...bucket[2], ...bucket[3]];
+  return out;
 }
 
 /** Bouw het volledige leerdoel-object. */
@@ -323,11 +271,10 @@ export function expandLeerdoel(spec) {
       if (!uh) { const ans = String(o[q.c] || '').trim(); uh = (ans && u && !u.toLowerCase().startsWith(ans.toLowerCase().slice(0, 10))) ? `${ans}: ${u}` : u; }
       return { v: q.v, o, c: q.c, d: q.d, u, uo, uh };
     });
-    // Hybride aanvulling: vul elke moeilijkheid aan tot het quotum (standaard 10)
-    // met gegenereerde vragen. Handgeschreven vragen blijven vooraan/leidend.
-    if (spec.concepten && spec.concepten.length && spec.supplement === true) {
-      const perDiff = spec.perDiff || 10;
-      sv = [...sv, ...generateSupplement(spec.concepten, sv, perDiff)];
+    // Situatie-aanvulling: waar begrippen concrete situaties (`vb`) hebben, maakt
+    // de generator daar situatievragen van. Handgeschreven vragen blijven vooraan.
+    if (spec.concepten && spec.concepten.some(c => c && (Array.isArray(c.vb) ? c.vb.length : c.vb))) {
+      sv = [...sv, ...generateSupplement(spec.concepten, sv, spec.perDiff || 10)];
     }
     // Positiebalans: verdeel het juiste antwoord round-robin over 0..3 zodat geen
     // positie oververtegenwoordigd is (poort tegen positie-bias). De opties en de

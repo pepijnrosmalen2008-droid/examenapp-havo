@@ -1149,7 +1149,7 @@ var VAKKEN_VMBO = [
      "Windsystemen en de wet van Buys Ballot",
      "Klimaatgrafieken lezen"
     ],
-    "nSv": 11,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1165,7 +1165,7 @@ var VAKKEN_VMBO = [
      "Nederland en het water",
      "Overstromingsrisico"
     ],
-    "nSv": 11,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1180,7 +1180,7 @@ var VAKKEN_VMBO = [
      "Bevolkingsgroei",
      "Verstedelijking en migratie"
     ],
-    "nSv": 11,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1196,7 +1196,7 @@ var VAKKEN_VMBO = [
      "Centrum-periferierelaties",
      "Oorzaken van welvaartsverschillen"
     ],
-    "nSv": 11,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1211,7 +1211,7 @@ var VAKKEN_VMBO = [
      "Bestemming van gebieden",
      "Belangen bij ruimtegebruik"
     ],
-    "nSv": 11,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1227,7 +1227,7 @@ var VAKKEN_VMBO = [
      "Cultuurgebieden",
      "Grenzen en territoriale conflicten"
     ],
-    "nSv": 11,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true

@@ -16547,6 +16547,405 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Door de invloed van de zee»."
       ],
       "uh": "Door de invloed van de zee: De zee zorgt voor milde temperaturen."
+     },
+     {
+      "v": "Op de weerkaart loopt een lijn langs alle plaatsen met precies dezelfde luchtdruk. Welk begrip past hierbij?",
+      "o": [
+       "Hogedrukgebied",
+       "Luchtdruk",
+       "Wet van Buys Ballot",
+       "Isobar"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Op de weerkaart loopt een lijn langs alle plaatsen met precies dezelfde luchtdruk. Dat past bij Isobar: lijn van gelijke druk.",
+      "uo": [
+       "Nee, dat hoort bij Hogedrukgebied: hoge druk, droog weer.",
+       "Nee, dat hoort bij Luchtdruk: druk van de lucht.",
+       "Nee, dat hoort bij Wet van Buys Ballot: regel voor windrichting.",
+       "Klopt: lijn van gelijke druk."
+      ],
+      "uh": "Isobar: lijn van gelijke druk."
+     },
+     {
+      "v": "De regenmeter vangt al het water op dat uit de lucht is gevallen. Om welk begrip gaat het?",
+      "o": [
+       "Neerslag",
+       "Temperatuur",
+       "Klimaatgrafiek",
+       "Wet van Buys Ballot"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De regenmeter vangt al het water op dat uit de lucht is gevallen. Dat past bij Neerslag: regen en sneeuw.",
+      "uo": [
+       "Klopt: regen en sneeuw.",
+       "Nee, dat hoort bij Temperatuur: hoe warm het is.",
+       "Nee, dat hoort bij Klimaatgrafiek: temperatuur en neerslag per maand.",
+       "Nee, dat hoort bij Wet van Buys Ballot: regel voor windrichting."
+      ],
+      "uh": "Neerslag: regen en sneeuw."
+     },
+     {
+      "v": "Een vaste regel voorspelt hoe de wind om hoge- en lagedrukgebieden heen draait. Welk begrip herken je hier?",
+      "o": [
+       "Luchtdruk",
+       "Wet van Buys Ballot",
+       "Klimaatgrafiek",
+       "Front"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een vaste regel voorspelt hoe de wind om hoge- en lagedrukgebieden heen draait. Dat past bij Wet van Buys Ballot: regel voor windrichting.",
+      "uo": [
+       "Nee, dat hoort bij Luchtdruk: druk van de lucht.",
+       "Klopt: regel voor windrichting.",
+       "Nee, dat hoort bij Klimaatgrafiek: temperatuur en neerslag per maand.",
+       "Nee, dat hoort bij Front: grens warme en koude lucht."
+      ],
+      "uh": "Wet van Buys Ballot: regel voor windrichting."
+     },
+     {
+      "v": "Dit gebied staat bekend om zijn droge, hete zomers en zachte winters. Wat is hier aan de hand?",
+      "o": [
+       "Landklimaat",
+       "Weer",
+       "Klimaat",
+       "Zeeklimaat"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Dit gebied staat bekend om zijn droge, hete zomers en zachte winters. Dat past bij Klimaat: gemiddeld weer, lange termijn.",
+      "uo": [
+       "Nee, dat hoort bij Landklimaat: extreem, ver van zee.",
+       "Nee, dat hoort bij Weer: toestand van de lucht nu.",
+       "Klopt: gemiddeld weer, lange termijn.",
+       "Nee, dat hoort bij Zeeklimaat: mild door de zee."
+      ],
+      "uh": "Klimaat: gemiddeld weer, lange termijn."
+     },
+     {
+      "v": "Het blijft droog en de zon schijnt de hele dag volop. Welk begrip past hierbij?",
+      "o": [
+       "Klimaatgrafiek",
+       "Klimaat",
+       "Wet van Buys Ballot",
+       "Hogedrukgebied"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het blijft droog en de zon schijnt de hele dag volop. Dat past bij Hogedrukgebied: hoge druk, droog weer.",
+      "uo": [
+       "Nee, dat hoort bij Klimaatgrafiek: temperatuur en neerslag per maand.",
+       "Nee, dat hoort bij Klimaat: gemiddeld weer, lange termijn.",
+       "Nee, dat hoort bij Wet van Buys Ballot: regel voor windrichting.",
+       "Klopt: hoge druk, droog weer."
+      ],
+      "uh": "Hogedrukgebied: hoge druk, droog weer."
+     },
+     {
+      "v": "Over de laatste dertig jaar valt hier gemiddeld de meeste regen in de winter. Om welk begrip gaat het?",
+      "o": [
+       "Klimaat",
+       "Weer",
+       "Landklimaat",
+       "Zeeklimaat"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Over de laatste dertig jaar valt hier gemiddeld de meeste regen in de winter. Dat past bij Klimaat: gemiddeld weer, lange termijn.",
+      "uo": [
+       "Klopt: gemiddeld weer, lange termijn.",
+       "Nee, dat hoort bij Weer: toestand van de lucht nu.",
+       "Nee, dat hoort bij Landklimaat: extreem, ver van zee.",
+       "Nee, dat hoort bij Zeeklimaat: mild door de zee."
+      ],
+      "uh": "Klimaat: gemiddeld weer, lange termijn."
+     },
+     {
+      "v": "Een botsing van aanrukkende koude en warme lucht brengt buien. Welk begrip herken je hier?",
+      "o": [
+       "Neerslag",
+       "Front",
+       "Temperatuur",
+       "Wind"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een botsing van aanrukkende koude en warme lucht brengt buien. Dat past bij Front: grens warme en koude lucht.",
+      "uo": [
+       "Nee, dat hoort bij Neerslag: regen en sneeuw.",
+       "Klopt: grens warme en koude lucht.",
+       "Nee, dat hoort bij Temperatuur: hoe warm het is.",
+       "Nee, dat hoort bij Wind: bewegende lucht."
+      ],
+      "uh": "Front: grens warme en koude lucht."
+     },
+     {
+      "v": "Op de weerkaart schuift een massa warme lucht tegen een massa koude lucht aan. Welk begrip past hierbij?",
+      "o": [
+       "Zeeklimaat",
+       "Isobar",
+       "Front",
+       "Neerslag"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Op de weerkaart schuift een massa warme lucht tegen een massa koude lucht aan. Dat past bij Front: grens warme en koude lucht.",
+      "uo": [
+       "Nee, dat hoort bij Zeeklimaat: mild door de zee.",
+       "Nee, dat hoort bij Isobar: lijn van gelijke druk.",
+       "Klopt: grens warme en koude lucht.",
+       "Nee, dat hoort bij Neerslag: regen en sneeuw."
+      ],
+      "uh": "Front: grens warme en koude lucht."
+     },
+     {
+      "v": "Uit de wolken vallen eerst regendruppels en later natte sneeuw. Om welk begrip gaat het?",
+      "o": [
+       "Klimaat",
+       "Wind",
+       "Front",
+       "Neerslag"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Uit de wolken vallen eerst regendruppels en later natte sneeuw. Dat past bij Neerslag: regen en sneeuw.",
+      "uo": [
+       "Nee, dat hoort bij Klimaat: gemiddeld weer, lange termijn.",
+       "Nee, dat hoort bij Wind: bewegende lucht.",
+       "Nee, dat hoort bij Front: grens warme en koude lucht.",
+       "Klopt: regen en sneeuw."
+      ],
+      "uh": "Neerslag: regen en sneeuw."
+     },
+     {
+      "v": "Diep in het binnenland, ver van zee, zijn de winters ijzig en de zomers snikheet. Welk begrip herken je hier?",
+      "o": [
+       "Landklimaat",
+       "Zeeklimaat",
+       "Wind",
+       "Wet van Buys Ballot"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Diep in het binnenland, ver van zee, zijn de winters ijzig en de zomers snikheet. Dat past bij Landklimaat: extreem, ver van zee.",
+      "uo": [
+       "Klopt: extreem, ver van zee.",
+       "Nee, dat hoort bij Zeeklimaat: mild door de zee.",
+       "Nee, dat hoort bij Wind: bewegende lucht.",
+       "Nee, dat hoort bij Wet van Buys Ballot: regel voor windrichting."
+      ],
+      "uh": "Landklimaat: extreem, ver van zee."
+     },
+     {
+      "v": "De weerman verwacht opstijgende lucht en de hele middag buien. Wat is hier aan de hand?",
+      "o": [
+       "Klimaat",
+       "Lagedrukgebied",
+       "Wet van Buys Ballot",
+       "Klimaatgrafiek"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De weerman verwacht opstijgende lucht en de hele middag buien. Dat past bij Lagedrukgebied: lage druk, nat weer.",
+      "uo": [
+       "Nee, dat hoort bij Klimaat: gemiddeld weer, lange termijn.",
+       "Klopt: lage druk, nat weer.",
+       "Nee, dat hoort bij Wet van Buys Ballot: regel voor windrichting.",
+       "Nee, dat hoort bij Klimaatgrafiek: temperatuur en neerslag per maand."
+      ],
+      "uh": "Lagedrukgebied: lage druk, nat weer."
+     },
+     {
+      "v": "Het is de hele dag grijs bewolkt en het regent flink door. Welk begrip past hierbij?",
+      "o": [
+       "Klimaatgrafiek",
+       "Hogedrukgebied",
+       "Lagedrukgebied",
+       "Isobar"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het is de hele dag grijs bewolkt en het regent flink door. Dat past bij Lagedrukgebied: lage druk, nat weer.",
+      "uo": [
+       "Nee, dat hoort bij Klimaatgrafiek: temperatuur en neerslag per maand.",
+       "Nee, dat hoort bij Hogedrukgebied: hoge druk, droog weer.",
+       "Klopt: lage druk, nat weer.",
+       "Nee, dat hoort bij Isobar: lijn van gelijke druk."
+      ],
+      "uh": "Lagedrukgebied: lage druk, nat weer."
+     },
+     {
+      "v": "Hoog in de bergen is de druk van de lucht lager dan aan zee. Om welk begrip gaat het?",
+      "o": [
+       "Temperatuur",
+       "Lagedrukgebied",
+       "Hogedrukgebied",
+       "Luchtdruk"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Hoog in de bergen is de druk van de lucht lager dan aan zee. Dat past bij Luchtdruk: druk van de lucht.",
+      "uo": [
+       "Nee, dat hoort bij Temperatuur: hoe warm het is.",
+       "Nee, dat hoort bij Lagedrukgebied: lage druk, nat weer.",
+       "Nee, dat hoort bij Hogedrukgebied: hoge druk, droog weer.",
+       "Klopt: druk van de lucht."
+      ],
+      "uh": "Luchtdruk: druk van de lucht."
+     },
+     {
+      "v": "Het waait, het is bewolkt en het is nu twaalf graden. Welk begrip herken je hier?",
+      "o": [
+       "Weer",
+       "Lagedrukgebied",
+       "Temperatuur",
+       "Hogedrukgebied"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het waait, het is bewolkt en het is nu twaalf graden. Dat past bij Weer: toestand van de lucht nu.",
+      "uo": [
+       "Klopt: toestand van de lucht nu.",
+       "Nee, dat hoort bij Lagedrukgebied: lage druk, nat weer.",
+       "Nee, dat hoort bij Temperatuur: hoe warm het is.",
+       "Nee, dat hoort bij Hogedrukgebied: hoge druk, droog weer."
+      ],
+      "uh": "Weer: toestand van de lucht nu."
+     },
+     {
+      "v": "De thermometer op het schoolplein wijst 19 graden aan. Wat is hier aan de hand?",
+      "o": [
+       "Neerslag",
+       "Temperatuur",
+       "Hogedrukgebied",
+       "Landklimaat"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De thermometer op het schoolplein wijst 19 graden aan. Dat past bij Temperatuur: hoe warm het is.",
+      "uo": [
+       "Nee, dat hoort bij Neerslag: regen en sneeuw.",
+       "Klopt: hoe warm het is.",
+       "Nee, dat hoort bij Hogedrukgebied: hoge druk, droog weer.",
+       "Nee, dat hoort bij Landklimaat: extreem, ver van zee."
+      ],
+      "uh": "Temperatuur: hoe warm het is."
+     },
+     {
+      "v": "Doordat de zee de temperatuur dempt, vriest het hier zelden hard. Welk begrip past hierbij?",
+      "o": [
+       "Hogedrukgebied",
+       "Landklimaat",
+       "Zeeklimaat",
+       "Klimaatgrafiek"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Doordat de zee de temperatuur dempt, vriest het hier zelden hard. Dat past bij Zeeklimaat: mild door de zee.",
+      "uo": [
+       "Nee, dat hoort bij Hogedrukgebied: hoge druk, droog weer.",
+       "Nee, dat hoort bij Landklimaat: extreem, ver van zee.",
+       "Klopt: mild door de zee.",
+       "Nee, dat hoort bij Klimaatgrafiek: temperatuur en neerslag per maand."
+      ],
+      "uh": "Zeeklimaat: mild door de zee."
+     },
+     {
+      "v": "Lucht stroomt van een gebied met hoge druk naar een gebied met lage druk. Om welk begrip gaat het?",
+      "o": [
+       "Lagedrukgebied",
+       "Klimaat",
+       "Temperatuur",
+       "Wind"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Lucht stroomt van een gebied met hoge druk naar een gebied met lage druk. Dat past bij Wind: bewegende lucht.",
+      "uo": [
+       "Nee, dat hoort bij Lagedrukgebied: lage druk, nat weer.",
+       "Nee, dat hoort bij Klimaat: gemiddeld weer, lange termijn.",
+       "Nee, dat hoort bij Temperatuur: hoe warm het is.",
+       "Klopt: bewegende lucht."
+      ],
+      "uh": "Wind: bewegende lucht."
+     },
+     {
+      "v": "Vanochtend scheen de zon, nu regent het en straks waait het hard. Welk begrip herken je hier?",
+      "o": [
+       "Weer",
+       "Klimaat",
+       "Neerslag",
+       "Front"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Vanochtend scheen de zon, nu regent het en straks waait het hard. Dat past bij Weer: toestand van de lucht nu.",
+      "uo": [
+       "Klopt: toestand van de lucht nu.",
+       "Nee, dat hoort bij Klimaat: gemiddeld weer, lange termijn.",
+       "Nee, dat hoort bij Neerslag: regen en sneeuw.",
+       "Nee, dat hoort bij Front: grens warme en koude lucht."
+      ],
+      "uh": "Weer: toestand van de lucht nu."
+     },
+     {
+      "v": "De lucht daalt en er is nauwelijks een wolk te zien. Wat is hier aan de hand?",
+      "o": [
+       "Lagedrukgebied",
+       "Hogedrukgebied",
+       "Wet van Buys Ballot",
+       "Wind"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De lucht daalt en er is nauwelijks een wolk te zien. Dat past bij Hogedrukgebied: hoge druk, droog weer.",
+      "uo": [
+       "Nee, dat hoort bij Lagedrukgebied: lage druk, nat weer.",
+       "Klopt: hoge druk, droog weer.",
+       "Nee, dat hoort bij Wet van Buys Ballot: regel voor windrichting.",
+       "Nee, dat hoort bij Wind: bewegende lucht."
+      ],
+      "uh": "Hogedrukgebied: hoge druk, droog weer."
+     },
+     {
+      "v": "Een barometer meet hoe hard de lucht op de grond drukt. Welk begrip past hierbij?",
+      "o": [
+       "Neerslag",
+       "Front",
+       "Luchtdruk",
+       "Wind"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een barometer meet hoe hard de lucht op de grond drukt. Dat past bij Luchtdruk: druk van de lucht.",
+      "uo": [
+       "Nee, dat hoort bij Neerslag: regen en sneeuw.",
+       "Nee, dat hoort bij Front: grens warme en koude lucht.",
+       "Klopt: druk van de lucht.",
+       "Nee, dat hoort bij Wind: bewegende lucht."
+      ],
+      "uh": "Luchtdruk: druk van de lucht."
+     },
+     {
+      "v": "Vlak aan de kust zijn de winters zacht en de zomers koel door het water. Om welk begrip gaat het?",
+      "o": [
+       "Hogedrukgebied",
+       "Landklimaat",
+       "Klimaat",
+       "Zeeklimaat"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Vlak aan de kust zijn de winters zacht en de zomers koel door het water. Dat past bij Zeeklimaat: mild door de zee.",
+      "uo": [
+       "Nee, dat hoort bij Hogedrukgebied: hoge druk, droog weer.",
+       "Nee, dat hoort bij Landklimaat: extreem, ver van zee.",
+       "Nee, dat hoort bij Klimaat: gemiddeld weer, lange termijn.",
+       "Klopt: mild door de zee."
+      ],
+      "uh": "Zeeklimaat: mild door de zee."
      }
     ],
     "begrippen": [
@@ -16832,6 +17231,462 @@ var VAKKEN_VMBO = [
        "Er valt wel regen."
       ],
       "uh": "Grote delen liggen laag: Veel land ligt onder zeeniveau."
+     },
+     {
+      "v": "Als het te nat wordt, pompt een machine het water over de dijk. Welk begrip past hierbij?",
+      "o": [
+       "Waterkringloop",
+       "Dijk",
+       "Verdamping",
+       "Gemaal"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Als het te nat wordt, pompt een machine het water over de dijk. Dat past bij Gemaal: pompt water weg.",
+      "uo": [
+       "Nee, dat hoort bij Waterkringloop: water gaat rond.",
+       "Nee, dat hoort bij Dijk: waterkering.",
+       "Nee, dat hoort bij Verdamping: water wordt damp.",
+       "Klopt: pompt water weg."
+      ],
+      "uh": "Gemaal: pompt water weg."
+     },
+     {
+      "v": "Vroeger stond hier een meer, nu zijn het weilanden op drooggelegd land. Om welk begrip gaat het?",
+      "o": [
+       "Polder",
+       "Dijk",
+       "Gemaal",
+       "Waterkringloop"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Vroeger stond hier een meer, nu zijn het weilanden op drooggelegd land. Dat past bij Polder: drooggelegd laagland.",
+      "uo": [
+       "Klopt: drooggelegd laagland.",
+       "Nee, dat hoort bij Dijk: waterkering.",
+       "Nee, dat hoort bij Gemaal: pompt water weg.",
+       "Nee, dat hoort bij Waterkringloop: water gaat rond."
+      ],
+      "uh": "Polder: drooggelegd laagland."
+     },
+     {
+      "v": "Na de zware regen liep het hele weiland onder water. Welk begrip herken je hier?",
+      "o": [
+       "Grondwater",
+       "Overstroming",
+       "Waterschap",
+       "Delta"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Na de zware regen liep het hele weiland onder water. Dat past bij Overstroming: land loopt onder.",
+      "uo": [
+       "Nee, dat hoort bij Grondwater: water in de bodem.",
+       "Klopt: land loopt onder.",
+       "Nee, dat hoort bij Waterschap: bestuur voor water.",
+       "Nee, dat hoort bij Delta: riviermonding in zee."
+      ],
+      "uh": "Overstroming: land loopt onder."
+     },
+     {
+      "v": "Deze overheid houdt de sloten op peil en onderhoudt de dijken. Wat is hier aan de hand?",
+      "o": [
+       "Grondwater",
+       "Gemaal",
+       "Waterschap",
+       "Zeespiegelstijging"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Deze overheid houdt de sloten op peil en onderhoudt de dijken. Dat past bij Waterschap: bestuur voor water.",
+      "uo": [
+       "Nee, dat hoort bij Grondwater: water in de bodem.",
+       "Nee, dat hoort bij Gemaal: pompt water weg.",
+       "Klopt: bestuur voor water.",
+       "Nee, dat hoort bij Zeespiegelstijging: zee komt hoger."
+      ],
+      "uh": "Waterschap: bestuur voor water."
+     },
+     {
+      "v": "Schepen varen over het stromende water richting de monding. Welk begrip past hierbij?",
+      "o": [
+       "Waterschap",
+       "Polder",
+       "Waterkringloop",
+       "Rivier"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Schepen varen over het stromende water richting de monding. Dat past bij Rivier: stromend water naar zee.",
+      "uo": [
+       "Nee, dat hoort bij Waterschap: bestuur voor water.",
+       "Nee, dat hoort bij Polder: drooggelegd laagland.",
+       "Nee, dat hoort bij Waterkringloop: water gaat rond.",
+       "Klopt: stromend water naar zee."
+      ],
+      "uh": "Rivier: stromend water naar zee."
+     },
+     {
+      "v": "Een apart bestuur zorgt voor de dijken en het waterpeil in de regio. Om welk begrip gaat het?",
+      "o": [
+       "Waterschap",
+       "Gemaal",
+       "Overstroming",
+       "Dijk"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een apart bestuur zorgt voor de dijken en het waterpeil in de regio. Dat past bij Waterschap: bestuur voor water.",
+      "uo": [
+       "Klopt: bestuur voor water.",
+       "Nee, dat hoort bij Gemaal: pompt water weg.",
+       "Nee, dat hoort bij Overstroming: land loopt onder.",
+       "Nee, dat hoort bij Dijk: waterkering."
+      ],
+      "uh": "Waterschap: bestuur voor water."
+     },
+     {
+      "v": "Een hoge wal langs het water houdt het lager gelegen land droog. Welk begrip herken je hier?",
+      "o": [
+       "Gemaal",
+       "Dijk",
+       "Polder",
+       "Rivier"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een hoge wal langs het water houdt het lager gelegen land droog. Dat past bij Dijk: waterkering.",
+      "uo": [
+       "Nee, dat hoort bij Gemaal: pompt water weg.",
+       "Klopt: waterkering.",
+       "Nee, dat hoort bij Polder: drooggelegd laagland.",
+       "Nee, dat hoort bij Rivier: stromend water naar zee."
+      ],
+      "uh": "Dijk: waterkering."
+     },
+     {
+      "v": "Het natte schoolplein droogt op zodra de zon gaat schijnen. Wat is hier aan de hand?",
+      "o": [
+       "Dijk",
+       "Polder",
+       "Verdamping",
+       "Waterkringloop"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het natte schoolplein droogt op zodra de zon gaat schijnen. Dat past bij Verdamping: water wordt damp.",
+      "uo": [
+       "Nee, dat hoort bij Dijk: waterkering.",
+       "Nee, dat hoort bij Polder: drooggelegd laagland.",
+       "Klopt: water wordt damp.",
+       "Nee, dat hoort bij Waterkringloop: water gaat rond."
+      ],
+      "uh": "Verdamping: water wordt damp."
+     },
+     {
+      "v": "Door de opwarming smelt er ijs en komt het zeeniveau langzaam omhoog. Welk begrip past hierbij?",
+      "o": [
+       "Grondwater",
+       "Overstroming",
+       "Waterkringloop",
+       "Zeespiegelstijging"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Door de opwarming smelt er ijs en komt het zeeniveau langzaam omhoog. Dat past bij Zeespiegelstijging: zee komt hoger.",
+      "uo": [
+       "Nee, dat hoort bij Grondwater: water in de bodem.",
+       "Nee, dat hoort bij Overstroming: land loopt onder.",
+       "Nee, dat hoort bij Waterkringloop: water gaat rond.",
+       "Klopt: zee komt hoger."
+      ],
+      "uh": "Zeespiegelstijging: zee komt hoger."
+     },
+     {
+      "v": "Door de warme zon verandert het water in de plas langzaam in waterdamp. Om welk begrip gaat het?",
+      "o": [
+       "Verdamping",
+       "Neerslag",
+       "Delta",
+       "Waterschap"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Door de warme zon verandert het water in de plas langzaam in waterdamp. Dat past bij Verdamping: water wordt damp.",
+      "uo": [
+       "Klopt: water wordt damp.",
+       "Nee, dat hoort bij Neerslag: regen en sneeuw.",
+       "Nee, dat hoort bij Delta: riviermonding in zee.",
+       "Nee, dat hoort bij Waterschap: bestuur voor water."
+      ],
+      "uh": "Verdamping: water wordt damp."
+     },
+     {
+      "v": "Dit lage stuk land ligt onder zeeniveau maar blijft droog door dijken en pompen. Welk begrip herken je hier?",
+      "o": [
+       "Rivier",
+       "Polder",
+       "Waterkringloop",
+       "Waterschap"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Dit lage stuk land ligt onder zeeniveau maar blijft droog door dijken en pompen. Dat past bij Polder: drooggelegd laagland.",
+      "uo": [
+       "Nee, dat hoort bij Rivier: stromend water naar zee.",
+       "Klopt: drooggelegd laagland.",
+       "Nee, dat hoort bij Waterkringloop: water gaat rond.",
+       "Nee, dat hoort bij Waterschap: bestuur voor water."
+      ],
+      "uh": "Polder: drooggelegd laagland."
+     },
+     {
+      "v": "Bij hoogwater beschermt een verhoging het dorp tegen de rivier. Wat is hier aan de hand?",
+      "o": [
+       "Gemaal",
+       "Polder",
+       "Dijk",
+       "Waterkringloop"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij hoogwater beschermt een verhoging het dorp tegen de rivier. Dat past bij Dijk: waterkering.",
+      "uo": [
+       "Nee, dat hoort bij Gemaal: pompt water weg.",
+       "Nee, dat hoort bij Polder: drooggelegd laagland.",
+       "Klopt: waterkering.",
+       "Nee, dat hoort bij Waterkringloop: water gaat rond."
+      ],
+      "uh": "Dijk: waterkering."
+     },
+     {
+      "v": "De rivier trad buiten zijn oevers en zette de straten blank. Welk begrip past hierbij?",
+      "o": [
+       "Dijk",
+       "Zeespiegelstijging",
+       "Gemaal",
+       "Overstroming"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De rivier trad buiten zijn oevers en zette de straten blank. Dat past bij Overstroming: land loopt onder.",
+      "uo": [
+       "Nee, dat hoort bij Dijk: waterkering.",
+       "Nee, dat hoort bij Zeespiegelstijging: zee komt hoger.",
+       "Nee, dat hoort bij Gemaal: pompt water weg.",
+       "Klopt: land loopt onder."
+      ],
+      "uh": "Overstroming: land loopt onder."
+     },
+     {
+      "v": "Water stroomt vanuit de bergen door het land tot in de zee. Om welk begrip gaat het?",
+      "o": [
+       "Rivier",
+       "Polder",
+       "Waterkringloop",
+       "Waterschap"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Water stroomt vanuit de bergen door het land tot in de zee. Dat past bij Rivier: stromend water naar zee.",
+      "uo": [
+       "Klopt: stromend water naar zee.",
+       "Nee, dat hoort bij Polder: drooggelegd laagland.",
+       "Nee, dat hoort bij Waterkringloop: water gaat rond.",
+       "Nee, dat hoort bij Waterschap: bestuur voor water."
+      ],
+      "uh": "Rivier: stromend water naar zee."
+     },
+     {
+      "v": "Een boer pompt voor zijn gewassen water op dat onder de grond zit. Welk begrip herken je hier?",
+      "o": [
+       "Rivier",
+       "Grondwater",
+       "Zeespiegelstijging",
+       "Gemaal"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een boer pompt voor zijn gewassen water op dat onder de grond zit. Dat past bij Grondwater: water in de bodem.",
+      "uo": [
+       "Nee, dat hoort bij Rivier: stromend water naar zee.",
+       "Klopt: water in de bodem.",
+       "Nee, dat hoort bij Zeespiegelstijging: zee komt hoger.",
+       "Nee, dat hoort bij Gemaal: pompt water weg."
+      ],
+      "uh": "Grondwater: water in de bodem."
+     },
+     {
+      "v": "Als je diep genoeg graaft, komt er vanzelf water uit de bodem omhoog. Wat is hier aan de hand?",
+      "o": [
+       "Delta",
+       "Rivier",
+       "Grondwater",
+       "Waterschap"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Als je diep genoeg graaft, komt er vanzelf water uit de bodem omhoog. Dat past bij Grondwater: water in de bodem.",
+      "uo": [
+       "Nee, dat hoort bij Delta: riviermonding in zee.",
+       "Nee, dat hoort bij Rivier: stromend water naar zee.",
+       "Klopt: water in de bodem.",
+       "Nee, dat hoort bij Waterschap: bestuur voor water."
+      ],
+      "uh": "Grondwater: water in de bodem."
+     },
+     {
+      "v": "Water gaat steeds rond: verdampen, neerslag en afstromen naar zee. Welk begrip past hierbij?",
+      "o": [
+       "Delta",
+       "Zeespiegelstijging",
+       "Gemaal",
+       "Waterkringloop"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Water gaat steeds rond: verdampen, neerslag en afstromen naar zee. Dat past bij Waterkringloop: water gaat rond.",
+      "uo": [
+       "Nee, dat hoort bij Delta: riviermonding in zee.",
+       "Nee, dat hoort bij Zeespiegelstijging: zee komt hoger.",
+       "Nee, dat hoort bij Gemaal: pompt water weg.",
+       "Klopt: water gaat rond."
+      ],
+      "uh": "Waterkringloop: water gaat rond."
+     },
+     {
+      "v": "Een installatie pompt het overtollige water uit het lage land weg. Om welk begrip gaat het?",
+      "o": [
+       "Gemaal",
+       "Dijk",
+       "Delta",
+       "Rivier"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een installatie pompt het overtollige water uit het lage land weg. Dat past bij Gemaal: pompt water weg.",
+      "uo": [
+       "Klopt: pompt water weg.",
+       "Nee, dat hoort bij Dijk: waterkering.",
+       "Nee, dat hoort bij Delta: riviermonding in zee.",
+       "Nee, dat hoort bij Rivier: stromend water naar zee."
+      ],
+      "uh": "Gemaal: pompt water weg."
+     },
+     {
+      "v": "Uit de donkere wolken valt eerst regen en later hagel. Welk begrip herken je hier?",
+      "o": [
+       "Verdamping",
+       "Neerslag",
+       "Polder",
+       "Dijk"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Uit de donkere wolken valt eerst regen en later hagel. Dat past bij Neerslag: regen en sneeuw.",
+      "uo": [
+       "Nee, dat hoort bij Verdamping: water wordt damp.",
+       "Klopt: regen en sneeuw.",
+       "Nee, dat hoort bij Polder: drooggelegd laagland.",
+       "Nee, dat hoort bij Dijk: waterkering."
+      ],
+      "uh": "Neerslag: regen en sneeuw."
+     },
+     {
+      "v": "Waar de grote rivier de zee bereikt, waaiert hij uit in vele armen. Wat is hier aan de hand?",
+      "o": [
+       "Grondwater",
+       "Polder",
+       "Delta",
+       "Waterschap"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Waar de grote rivier de zee bereikt, waaiert hij uit in vele armen. Dat past bij Delta: riviermonding in zee.",
+      "uo": [
+       "Nee, dat hoort bij Grondwater: water in de bodem.",
+       "Nee, dat hoort bij Polder: drooggelegd laagland.",
+       "Klopt: riviermonding in zee.",
+       "Nee, dat hoort bij Waterschap: bestuur voor water."
+      ],
+      "uh": "Delta: riviermonding in zee."
+     },
+     {
+      "v": "Zeewater verdampt, wordt een wolk, valt als regen en komt weer bij de zee. Welk begrip past hierbij?",
+      "o": [
+       "Grondwater",
+       "Verdamping",
+       "Delta",
+       "Waterkringloop"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Zeewater verdampt, wordt een wolk, valt als regen en komt weer bij de zee. Dat past bij Waterkringloop: water gaat rond.",
+      "uo": [
+       "Nee, dat hoort bij Grondwater: water in de bodem.",
+       "Nee, dat hoort bij Verdamping: water wordt damp.",
+       "Nee, dat hoort bij Delta: riviermonding in zee.",
+       "Klopt: water gaat rond."
+      ],
+      "uh": "Waterkringloop: water gaat rond."
+     },
+     {
+      "v": "Vlak voor de zee splitst de rivier zich in allemaal kleine takken. Om welk begrip gaat het?",
+      "o": [
+       "Delta",
+       "Rivier",
+       "Zeespiegelstijging",
+       "Polder"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Vlak voor de zee splitst de rivier zich in allemaal kleine takken. Dat past bij Delta: riviermonding in zee.",
+      "uo": [
+       "Klopt: riviermonding in zee.",
+       "Nee, dat hoort bij Rivier: stromend water naar zee.",
+       "Nee, dat hoort bij Zeespiegelstijging: zee komt hoger.",
+       "Nee, dat hoort bij Polder: drooggelegd laagland."
+      ],
+      "uh": "Delta: riviermonding in zee."
+     },
+     {
+      "v": "'s Winters komt er water uit de lucht in de vorm van sneeuw. Welk begrip herken je hier?",
+      "o": [
+       "Grondwater",
+       "Neerslag",
+       "Waterkringloop",
+       "Polder"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'s Winters komt er water uit de lucht in de vorm van sneeuw. Dat past bij Neerslag: regen en sneeuw.",
+      "uo": [
+       "Nee, dat hoort bij Grondwater: water in de bodem.",
+       "Klopt: regen en sneeuw.",
+       "Nee, dat hoort bij Waterkringloop: water gaat rond.",
+       "Nee, dat hoort bij Polder: drooggelegd laagland."
+      ],
+      "uh": "Neerslag: regen en sneeuw."
+     },
+     {
+      "v": "De gemiddelde stand van de zee wordt elk jaar een beetje hoger. Wat is hier aan de hand?",
+      "o": [
+       "Waterkringloop",
+       "Overstroming",
+       "Zeespiegelstijging",
+       "Grondwater"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De gemiddelde stand van de zee wordt elk jaar een beetje hoger. Dat past bij Zeespiegelstijging: zee komt hoger.",
+      "uo": [
+       "Nee, dat hoort bij Waterkringloop: water gaat rond.",
+       "Nee, dat hoort bij Overstroming: land loopt onder.",
+       "Klopt: zee komt hoger.",
+       "Nee, dat hoort bij Grondwater: water in de bodem."
+      ],
+      "uh": "Zeespiegelstijging: zee komt hoger."
      }
     ],
     "begrippen": [
@@ -17108,6 +17963,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Dunbevolkt gebied buiten de stad»."
       ],
       "uh": "Dunbevolkt gebied buiten de stad."
+     },
+     {
+      "v": "Je deelt het aantal inwoners door de oppervlakte in vierkante kilometers. Welk begrip past hierbij?",
+      "o": [
+       "Platteland",
+       "Bevolkingsgroei",
+       "Verstedelijking",
+       "Bevolkingsdichtheid"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je deelt het aantal inwoners door de oppervlakte in vierkante kilometers. Dat past bij Bevolkingsdichtheid: inwoners per km².",
+      "uo": [
+       "Nee, dat hoort bij Platteland: buiten de stad.",
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Klopt: inwoners per km²."
+      ],
+      "uh": "Bevolkingsdichtheid: inwoners per km²."
+     },
+     {
+      "v": "Een steeds groter deel van de bevolking woont in steden. Om welk begrip gaat het?",
+      "o": [
+       "Verstedelijking",
+       "Geboortecijfer",
+       "Platteland",
+       "Natuurlijke aanwas"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een steeds groter deel van de bevolking woont in steden. Dat past bij Verstedelijking: steden groeien.",
+      "uo": [
+       "Klopt: steden groeien.",
+       "Nee, dat hoort bij Geboortecijfer: geboorten per 1000.",
+       "Nee, dat hoort bij Platteland: buiten de stad.",
+       "Nee, dat hoort bij Natuurlijke aanwas: geboorten min sterfte."
+      ],
+      "uh": "Verstedelijking: steden groeien."
+     },
+     {
+      "v": "Het aandeel 65-plussers in de bevolking wordt steeds groter. Welk begrip herken je hier?",
+      "o": [
+       "Bevolkingsgroei",
+       "Vergrijzing",
+       "Migratie",
+       "Immigratie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het aandeel 65-plussers in de bevolking wordt steeds groter. Dat past bij Vergrijzing: meer ouderen.",
+      "uo": [
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners.",
+       "Klopt: meer ouderen.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Immigratie: een land binnenkomen."
+      ],
+      "uh": "Vergrijzing: meer ouderen."
+     },
+     {
+      "v": "In dit dunbevolkte gebied is veel natuur en weinig bebouwing. Wat is hier aan de hand?",
+      "o": [
+       "Migratie",
+       "Immigratie",
+       "Platteland",
+       "Bevolkingsgroei"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "In dit dunbevolkte gebied is veel natuur en weinig bebouwing. Dat past bij Platteland: buiten de stad.",
+      "uo": [
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Immigratie: een land binnenkomen.",
+       "Klopt: buiten de stad.",
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners."
+      ],
+      "uh": "Platteland: buiten de stad."
+     },
+     {
+      "v": "Grote groepen mensen trekken naar een ander gebied om te wonen. Welk begrip past hierbij?",
+      "o": [
+       "Immigratie",
+       "Verstedelijking",
+       "Emigratie",
+       "Migratie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Grote groepen mensen trekken naar een ander gebied om te wonen. Dat past bij Migratie: mensen verhuizen.",
+      "uo": [
+       "Nee, dat hoort bij Immigratie: een land binnenkomen.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Nee, dat hoort bij Emigratie: je land verlaten.",
+       "Klopt: mensen verhuizen."
+      ],
+      "uh": "Migratie: mensen verhuizen."
+     },
+     {
+      "v": "Buiten de stad, tussen de weilanden, staan maar een paar boerderijen. Om welk begrip gaat het?",
+      "o": [
+       "Platteland",
+       "Immigratie",
+       "Migratie",
+       "Bevolkingsgroei"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Buiten de stad, tussen de weilanden, staan maar een paar boerderijen. Dat past bij Platteland: buiten de stad.",
+      "uo": [
+       "Klopt: buiten de stad.",
+       "Nee, dat hoort bij Immigratie: een land binnenkomen.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners."
+      ],
+      "uh": "Platteland: buiten de stad."
+     },
+     {
+      "v": "Een Nederlands gezin vertrekt om voorgoed in Canada te gaan wonen. Welk begrip herken je hier?",
+      "o": [
+       "Immigratie",
+       "Emigratie",
+       "Bevolkingsdichtheid",
+       "Platteland"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een Nederlands gezin vertrekt om voorgoed in Canada te gaan wonen. Dat past bij Emigratie: je land verlaten.",
+      "uo": [
+       "Nee, dat hoort bij Immigratie: een land binnenkomen.",
+       "Klopt: je land verlaten.",
+       "Nee, dat hoort bij Bevolkingsdichtheid: inwoners per km².",
+       "Nee, dat hoort bij Platteland: buiten de stad."
+      ],
+      "uh": "Emigratie: je land verlaten."
+     },
+     {
+      "v": "De statistiek toont hoeveel kinderen er per duizend inwoners geboren worden. Wat is hier aan de hand?",
+      "o": [
+       "Bevolkingsdichtheid",
+       "Urbanisatie",
+       "Geboortecijfer",
+       "Immigratie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De statistiek toont hoeveel kinderen er per duizend inwoners geboren worden. Dat past bij Geboortecijfer: geboorten per 1000.",
+      "uo": [
+       "Nee, dat hoort bij Bevolkingsdichtheid: inwoners per km².",
+       "Nee, dat hoort bij Urbanisatie: van platteland naar stad.",
+       "Klopt: geboorten per 1000.",
+       "Nee, dat hoort bij Immigratie: een land binnenkomen."
+      ],
+      "uh": "Geboortecijfer: geboorten per 1000."
+     },
+     {
+      "v": "Mensen verhuizen van het platteland naar de stad. Welk begrip past hierbij?",
+      "o": [
+       "Platteland",
+       "Verstedelijking",
+       "Geboortecijfer",
+       "Urbanisatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Mensen verhuizen van het platteland naar de stad. Dat past bij Urbanisatie: van platteland naar stad.",
+      "uo": [
+       "Nee, dat hoort bij Platteland: buiten de stad.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Nee, dat hoort bij Geboortecijfer: geboorten per 1000.",
+       "Klopt: van platteland naar stad."
+      ],
+      "uh": "Urbanisatie: van platteland naar stad."
+     },
+     {
+      "v": "Per duizend inwoners worden er in dit land twaalf baby's per jaar geboren. Om welk begrip gaat het?",
+      "o": [
+       "Geboortecijfer",
+       "Sterftecijfer",
+       "Migratie",
+       "Platteland"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Per duizend inwoners worden er in dit land twaalf baby's per jaar geboren. Dat past bij Geboortecijfer: geboorten per 1000.",
+      "uo": [
+       "Klopt: geboorten per 1000.",
+       "Nee, dat hoort bij Sterftecijfer: sterfgevallen per 1000.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Platteland: buiten de stad."
+      ],
+      "uh": "Geboortecijfer: geboorten per 1000."
+     },
+     {
+      "v": "De stad groeit en er komen steeds meer stadsbewoners bij. Welk begrip herken je hier?",
+      "o": [
+       "Geboortecijfer",
+       "Verstedelijking",
+       "Platteland",
+       "Natuurlijke aanwas"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De stad groeit en er komen steeds meer stadsbewoners bij. Dat past bij Verstedelijking: steden groeien.",
+      "uo": [
+       "Nee, dat hoort bij Geboortecijfer: geboorten per 1000.",
+       "Klopt: steden groeien.",
+       "Nee, dat hoort bij Platteland: buiten de stad.",
+       "Nee, dat hoort bij Natuurlijke aanwas: geboorten min sterfte."
+      ],
+      "uh": "Verstedelijking: steden groeien."
+     },
+     {
+      "v": "Mensen verlaten hun eigen land om ergens anders te gaan wonen. Wat is hier aan de hand?",
+      "o": [
+       "Natuurlijke aanwas",
+       "Immigratie",
+       "Emigratie",
+       "Migratie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Mensen verlaten hun eigen land om ergens anders te gaan wonen. Dat past bij Emigratie: je land verlaten.",
+      "uo": [
+       "Nee, dat hoort bij Natuurlijke aanwas: geboorten min sterfte.",
+       "Nee, dat hoort bij Immigratie: een land binnenkomen.",
+       "Klopt: je land verlaten.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen."
+      ],
+      "uh": "Emigratie: je land verlaten."
+     },
+     {
+      "v": "Er komen steeds meer ouderen en relatief minder jongeren. Welk begrip past hierbij?",
+      "o": [
+       "Immigratie",
+       "Bevolkingsgroei",
+       "Migratie",
+       "Vergrijzing"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Er komen steeds meer ouderen en relatief minder jongeren. Dat past bij Vergrijzing: meer ouderen.",
+      "uo": [
+       "Nee, dat hoort bij Immigratie: een land binnenkomen.",
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners.",
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Klopt: meer ouderen."
+      ],
+      "uh": "Vergrijzing: meer ouderen."
+     },
+     {
+      "v": "Een gezin verhuist van het ene land naar het andere om er te wonen. Om welk begrip gaat het?",
+      "o": [
+       "Migratie",
+       "Geboortecijfer",
+       "Bevolkingsgroei",
+       "Emigratie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een gezin verhuist van het ene land naar het andere om er te wonen. Dat past bij Migratie: mensen verhuizen.",
+      "uo": [
+       "Klopt: mensen verhuizen.",
+       "Nee, dat hoort bij Geboortecijfer: geboorten per 1000.",
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners.",
+       "Nee, dat hoort bij Emigratie: je land verlaten."
+      ],
+      "uh": "Migratie: mensen verhuizen."
+     },
+     {
+      "v": "Je trekt het aantal sterfgevallen af van het aantal geboorten. Welk begrip herken je hier?",
+      "o": [
+       "Bevolkingsgroei",
+       "Natuurlijke aanwas",
+       "Geboortecijfer",
+       "Immigratie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Je trekt het aantal sterfgevallen af van het aantal geboorten. Dat past bij Natuurlijke aanwas: geboorten min sterfte.",
+      "uo": [
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners.",
+       "Klopt: geboorten min sterfte.",
+       "Nee, dat hoort bij Geboortecijfer: geboorten per 1000.",
+       "Nee, dat hoort bij Immigratie: een land binnenkomen."
+      ],
+      "uh": "Natuurlijke aanwas: geboorten min sterfte."
+     },
+     {
+      "v": "Er worden meer kinderen geboren dan er mensen overlijden. Wat is hier aan de hand?",
+      "o": [
+       "Vergrijzing",
+       "Bevolkingsgroei",
+       "Natuurlijke aanwas",
+       "Immigratie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Er worden meer kinderen geboren dan er mensen overlijden. Dat past bij Natuurlijke aanwas: geboorten min sterfte.",
+      "uo": [
+       "Nee, dat hoort bij Vergrijzing: meer ouderen.",
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners.",
+       "Klopt: geboorten min sterfte.",
+       "Nee, dat hoort bij Immigratie: een land binnenkomen."
+      ],
+      "uh": "Natuurlijke aanwas: geboorten min sterfte."
+     },
+     {
+      "v": "In tien jaar tijd is het aantal inwoners van de stad flink toegenomen. Welk begrip past hierbij?",
+      "o": [
+       "Immigratie",
+       "Sterftecijfer",
+       "Platteland",
+       "Bevolkingsgroei"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In tien jaar tijd is het aantal inwoners van de stad flink toegenomen. Dat past bij Bevolkingsgroei: meer inwoners.",
+      "uo": [
+       "Nee, dat hoort bij Immigratie: een land binnenkomen.",
+       "Nee, dat hoort bij Sterftecijfer: sterfgevallen per 1000.",
+       "Nee, dat hoort bij Platteland: buiten de stad.",
+       "Klopt: meer inwoners."
+      ],
+      "uh": "Bevolkingsgroei: meer inwoners."
+     },
+     {
+      "v": "In dit gebied wonen vijfhonderd mensen op elke vierkante kilometer. Om welk begrip gaat het?",
+      "o": [
+       "Bevolkingsdichtheid",
+       "Bevolkingsgroei",
+       "Natuurlijke aanwas",
+       "Vergrijzing"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "In dit gebied wonen vijfhonderd mensen op elke vierkante kilometer. Dat past bij Bevolkingsdichtheid: inwoners per km².",
+      "uo": [
+       "Klopt: inwoners per km².",
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners.",
+       "Nee, dat hoort bij Natuurlijke aanwas: geboorten min sterfte.",
+       "Nee, dat hoort bij Vergrijzing: meer ouderen."
+      ],
+      "uh": "Bevolkingsdichtheid: inwoners per km²."
+     },
+     {
+      "v": "Per duizend inwoners overlijden er in dit land acht mensen per jaar. Welk begrip herken je hier?",
+      "o": [
+       "Geboortecijfer",
+       "Sterftecijfer",
+       "Natuurlijke aanwas",
+       "Platteland"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Per duizend inwoners overlijden er in dit land acht mensen per jaar. Dat past bij Sterftecijfer: sterfgevallen per 1000.",
+      "uo": [
+       "Nee, dat hoort bij Geboortecijfer: geboorten per 1000.",
+       "Klopt: sterfgevallen per 1000.",
+       "Nee, dat hoort bij Natuurlijke aanwas: geboorten min sterfte.",
+       "Nee, dat hoort bij Platteland: buiten de stad."
+      ],
+      "uh": "Sterftecijfer: sterfgevallen per 1000."
+     },
+     {
+      "v": "Nieuwe inwoners komen van buiten de landsgrens het land binnen. Wat is hier aan de hand?",
+      "o": [
+       "Migratie",
+       "Verstedelijking",
+       "Immigratie",
+       "Bevolkingsgroei"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Nieuwe inwoners komen van buiten de landsgrens het land binnen. Dat past bij Immigratie: een land binnenkomen.",
+      "uo": [
+       "Nee, dat hoort bij Migratie: mensen verhuizen.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Klopt: een land binnenkomen.",
+       "Nee, dat hoort bij Bevolkingsgroei: meer inwoners."
+      ],
+      "uh": "Immigratie: een land binnenkomen."
+     },
+     {
+      "v": "Er wonen elk jaar meer mensen in het land dan het jaar ervoor. Welk begrip past hierbij?",
+      "o": [
+       "Bevolkingsdichtheid",
+       "Natuurlijke aanwas",
+       "Vergrijzing",
+       "Bevolkingsgroei"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Er wonen elk jaar meer mensen in het land dan het jaar ervoor. Dat past bij Bevolkingsgroei: meer inwoners.",
+      "uo": [
+       "Nee, dat hoort bij Bevolkingsdichtheid: inwoners per km².",
+       "Nee, dat hoort bij Natuurlijke aanwas: geboorten min sterfte.",
+       "Nee, dat hoort bij Vergrijzing: meer ouderen.",
+       "Klopt: meer inwoners."
+      ],
+      "uh": "Bevolkingsgroei: meer inwoners."
+     },
+     {
+      "v": "Een familie uit het buitenland komt zich hier vestigen. Om welk begrip gaat het?",
+      "o": [
+       "Immigratie",
+       "Emigratie",
+       "Natuurlijke aanwas",
+       "Platteland"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een familie uit het buitenland komt zich hier vestigen. Dat past bij Immigratie: een land binnenkomen.",
+      "uo": [
+       "Klopt: een land binnenkomen.",
+       "Nee, dat hoort bij Emigratie: je land verlaten.",
+       "Nee, dat hoort bij Natuurlijke aanwas: geboorten min sterfte.",
+       "Nee, dat hoort bij Platteland: buiten de stad."
+      ],
+      "uh": "Immigratie: een land binnenkomen."
+     },
+     {
+      "v": "De tabel toont hoeveel mensen er per duizend inwoners overlijden. Welk begrip herken je hier?",
+      "o": [
+       "Immigratie",
+       "Sterftecijfer",
+       "Emigratie",
+       "Verstedelijking"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De tabel toont hoeveel mensen er per duizend inwoners overlijden. Dat past bij Sterftecijfer: sterfgevallen per 1000.",
+      "uo": [
+       "Nee, dat hoort bij Immigratie: een land binnenkomen.",
+       "Klopt: sterfgevallen per 1000.",
+       "Nee, dat hoort bij Emigratie: je land verlaten.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien."
+      ],
+      "uh": "Sterftecijfer: sterfgevallen per 1000."
+     },
+     {
+      "v": "Boeren verlaten het dorp en trekken naar de grote stad voor werk. Wat is hier aan de hand?",
+      "o": [
+       "Geboortecijfer",
+       "Verstedelijking",
+       "Urbanisatie",
+       "Platteland"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Boeren verlaten het dorp en trekken naar de grote stad voor werk. Dat past bij Urbanisatie: van platteland naar stad.",
+      "uo": [
+       "Nee, dat hoort bij Geboortecijfer: geboorten per 1000.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Klopt: van platteland naar stad.",
+       "Nee, dat hoort bij Platteland: buiten de stad."
+      ],
+      "uh": "Urbanisatie: van platteland naar stad."
      }
     ],
     "begrippen": [
@@ -17385,6 +18696,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Met grondstoffen»."
       ],
       "uh": "Met grondstoffen kan een land geld verdienen."
+     },
+     {
+      "v": "Dit getal zegt hoe oud iemand gemiddeld naar verwachting wordt. Welk begrip past hierbij?",
+      "o": [
+       "Analfabetisme",
+       "Bnp per inwoner",
+       "Grondstoffen",
+       "Levensverwachting"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Dit getal zegt hoe oud iemand gemiddeld naar verwachting wordt. Dat past bij Levensverwachting: gemiddelde levensduur.",
+      "uo": [
+       "Nee, dat hoort bij Analfabetisme: niet kunnen lezen.",
+       "Nee, dat hoort bij Bnp per inwoner: productie per persoon.",
+       "Nee, dat hoort bij Grondstoffen: natuurlijke rijkdommen.",
+       "Klopt: gemiddelde levensduur."
+      ],
+      "uh": "Levensverwachting: gemiddelde levensduur."
+     },
+     {
+      "v": "Doordat er weinig onderwijs is, kan een deel van de mensen niet lezen. Om welk begrip gaat het?",
+      "o": [
+       "Analfabetisme",
+       "Ontwikkeld land",
+       "Centrum",
+       "Periferie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Doordat er weinig onderwijs is, kan een deel van de mensen niet lezen. Dat past bij Analfabetisme: niet kunnen lezen.",
+      "uo": [
+       "Klopt: niet kunnen lezen.",
+       "Nee, dat hoort bij Ontwikkeld land: rijk land.",
+       "Nee, dat hoort bij Centrum: rijk kerngebied.",
+       "Nee, dat hoort bij Periferie: arm randgebied."
+      ],
+      "uh": "Analfabetisme: niet kunnen lezen."
+     },
+     {
+      "v": "Dit land verdient veel geld met olie en metalen uit de bodem. Welk begrip herken je hier?",
+      "o": [
+       "Infrastructuur",
+       "Grondstoffen",
+       "Levensverwachting",
+       "Welvaartsverschil"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Dit land verdient veel geld met olie en metalen uit de bodem. Dat past bij Grondstoffen: natuurlijke rijkdommen.",
+      "uo": [
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Klopt: natuurlijke rijkdommen.",
+       "Nee, dat hoort bij Levensverwachting: gemiddelde levensduur.",
+       "Nee, dat hoort bij Welvaartsverschil: verschil in rijkdom."
+      ],
+      "uh": "Grondstoffen: natuurlijke rijkdommen."
+     },
+     {
+      "v": "Via hulpprojecten steunen rijke landen de ontwikkeling van arme landen. Wat is hier aan de hand?",
+      "o": [
+       "Bnp per inwoner",
+       "Grondstoffen",
+       "Ontwikkelingssamenwerking",
+       "Periferie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Via hulpprojecten steunen rijke landen de ontwikkeling van arme landen. Dat past bij Ontwikkelingssamenwerking: hulp aan arme landen.",
+      "uo": [
+       "Nee, dat hoort bij Bnp per inwoner: productie per persoon.",
+       "Nee, dat hoort bij Grondstoffen: natuurlijke rijkdommen.",
+       "Klopt: hulp aan arme landen.",
+       "Nee, dat hoort bij Periferie: arm randgebied."
+      ],
+      "uh": "Ontwikkelingssamenwerking: hulp aan arme landen."
+     },
+     {
+      "v": "In het welvarende hart van het land gebeurt de meeste economie. Welk begrip past hierbij?",
+      "o": [
+       "Ontwikkeld land",
+       "Periferie",
+       "Welvaartsverschil",
+       "Centrum"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "In het welvarende hart van het land gebeurt de meeste economie. Dat past bij Centrum: rijk kerngebied.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkeld land: rijk land.",
+       "Nee, dat hoort bij Periferie: arm randgebied.",
+       "Nee, dat hoort bij Welvaartsverschil: verschil in rijkdom.",
+       "Klopt: rijk kerngebied."
+      ],
+      "uh": "Centrum: rijk kerngebied."
+     },
+     {
+      "v": "Een rijk land helpt een arm land met geld en kennis om vooruit te komen. Om welk begrip gaat het?",
+      "o": [
+       "Ontwikkelingssamenwerking",
+       "Grondstoffen",
+       "Bnp per inwoner",
+       "Periferie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een rijk land helpt een arm land met geld en kennis om vooruit te komen. Dat past bij Ontwikkelingssamenwerking: hulp aan arme landen.",
+      "uo": [
+       "Klopt: hulp aan arme landen.",
+       "Nee, dat hoort bij Grondstoffen: natuurlijke rijkdommen.",
+       "Nee, dat hoort bij Bnp per inwoner: productie per persoon.",
+       "Nee, dat hoort bij Periferie: arm randgebied."
+      ],
+      "uh": "Ontwikkelingssamenwerking: hulp aan arme landen."
+     },
+     {
+      "v": "De ene groep in het land is heel rijk, de andere heel arm. Welk begrip herken je hier?",
+      "o": [
+       "Welvaart",
+       "Welvaartsverschil",
+       "Grondstoffen",
+       "Levensverwachting"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De ene groep in het land is heel rijk, de andere heel arm. Dat past bij Welvaartsverschil: verschil in rijkdom.",
+      "uo": [
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt.",
+       "Klopt: verschil in rijkdom.",
+       "Nee, dat hoort bij Grondstoffen: natuurlijke rijkdommen.",
+       "Nee, dat hoort bij Levensverwachting: gemiddelde levensduur."
+      ],
+      "uh": "Welvaartsverschil: verschil in rijkdom."
+     },
+     {
+      "v": "Je deelt de totale productie van een land door het aantal inwoners. Wat is hier aan de hand?",
+      "o": [
+       "Ontwikkelingssamenwerking",
+       "Ontwikkelingsland",
+       "Bnp per inwoner",
+       "Centrum"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je deelt de totale productie van een land door het aantal inwoners. Dat past bij Bnp per inwoner: productie per persoon.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkelingssamenwerking: hulp aan arme landen.",
+       "Nee, dat hoort bij Ontwikkelingsland: arm land.",
+       "Klopt: productie per persoon.",
+       "Nee, dat hoort bij Centrum: rijk kerngebied."
+      ],
+      "uh": "Bnp per inwoner: productie per persoon."
+     },
+     {
+      "v": "Goede wegen, havens en spoorlijnen verbinden alle delen van het land. Welk begrip past hierbij?",
+      "o": [
+       "Bnp per inwoner",
+       "Grondstoffen",
+       "Ontwikkeld land",
+       "Infrastructuur"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Goede wegen, havens en spoorlijnen verbinden alle delen van het land. Dat past bij Infrastructuur: wegen en verbindingen.",
+      "uo": [
+       "Nee, dat hoort bij Bnp per inwoner: productie per persoon.",
+       "Nee, dat hoort bij Grondstoffen: natuurlijke rijkdommen.",
+       "Nee, dat hoort bij Ontwikkeld land: rijk land.",
+       "Klopt: wegen en verbindingen."
+      ],
+      "uh": "Infrastructuur: wegen en verbindingen."
+     },
+     {
+      "v": "Dit getal laat zien hoeveel een land gemiddeld per persoon produceert. Om welk begrip gaat het?",
+      "o": [
+       "Bnp per inwoner",
+       "Levensverwachting",
+       "Ontwikkelingsland",
+       "Periferie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Dit getal laat zien hoeveel een land gemiddeld per persoon produceert. Dat past bij Bnp per inwoner: productie per persoon.",
+      "uo": [
+       "Klopt: productie per persoon.",
+       "Nee, dat hoort bij Levensverwachting: gemiddelde levensduur.",
+       "Nee, dat hoort bij Ontwikkelingsland: arm land.",
+       "Nee, dat hoort bij Periferie: arm randgebied."
+      ],
+      "uh": "Bnp per inwoner: productie per persoon."
+     },
+     {
+      "v": "Veel volwassenen in dit gebied kunnen niet lezen of schrijven. Welk begrip herken je hier?",
+      "o": [
+       "Ontwikkeld land",
+       "Analfabetisme",
+       "Centrum",
+       "Periferie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Veel volwassenen in dit gebied kunnen niet lezen of schrijven. Dat past bij Analfabetisme: niet kunnen lezen.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkeld land: rijk land.",
+       "Klopt: niet kunnen lezen.",
+       "Nee, dat hoort bij Centrum: rijk kerngebied.",
+       "Nee, dat hoort bij Periferie: arm randgebied."
+      ],
+      "uh": "Analfabetisme: niet kunnen lezen."
+     },
+     {
+      "v": "Tussen twee landen zit een groot verschil in rijkdom en inkomen. Wat is hier aan de hand?",
+      "o": [
+       "Levensverwachting",
+       "Welvaart",
+       "Welvaartsverschil",
+       "Ontwikkelingssamenwerking"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Tussen twee landen zit een groot verschil in rijkdom en inkomen. Dat past bij Welvaartsverschil: verschil in rijkdom.",
+      "uo": [
+       "Nee, dat hoort bij Levensverwachting: gemiddelde levensduur.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt.",
+       "Klopt: verschil in rijkdom.",
+       "Nee, dat hoort bij Ontwikkelingssamenwerking: hulp aan arme landen."
+      ],
+      "uh": "Welvaartsverschil: verschil in rijkdom."
+     },
+     {
+      "v": "Natuurlijke rijkdommen zoals hout en erts worden gewonnen en verkocht. Welk begrip past hierbij?",
+      "o": [
+       "Welvaartsverschil",
+       "Infrastructuur",
+       "Levensverwachting",
+       "Grondstoffen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Natuurlijke rijkdommen zoals hout en erts worden gewonnen en verkocht. Dat past bij Grondstoffen: natuurlijke rijkdommen.",
+      "uo": [
+       "Nee, dat hoort bij Welvaartsverschil: verschil in rijkdom.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Nee, dat hoort bij Levensverwachting: gemiddelde levensduur.",
+       "Klopt: natuurlijke rijkdommen."
+      ],
+      "uh": "Grondstoffen: natuurlijke rijkdommen."
+     },
+     {
+      "v": "In dit rijke kerngebied zijn veel bedrijven, banen en voorzieningen. Om welk begrip gaat het?",
+      "o": [
+       "Centrum",
+       "Infrastructuur",
+       "Analfabetisme",
+       "Levensverwachting"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "In dit rijke kerngebied zijn veel bedrijven, banen en voorzieningen. Dat past bij Centrum: rijk kerngebied.",
+      "uo": [
+       "Klopt: rijk kerngebied.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Nee, dat hoort bij Analfabetisme: niet kunnen lezen.",
+       "Nee, dat hoort bij Levensverwachting: gemiddelde levensduur."
+      ],
+      "uh": "Centrum: rijk kerngebied."
+     },
+     {
+      "v": "De inwoners zijn welvarend en er is goed onderwijs en gezondheidszorg. Welk begrip herken je hier?",
+      "o": [
+       "Ontwikkelingsland",
+       "Ontwikkeld land",
+       "Grondstoffen",
+       "Levensverwachting"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De inwoners zijn welvarend en er is goed onderwijs en gezondheidszorg. Dat past bij Ontwikkeld land: rijk land.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkelingsland: arm land.",
+       "Klopt: rijk land.",
+       "Nee, dat hoort bij Grondstoffen: natuurlijke rijkdommen.",
+       "Nee, dat hoort bij Levensverwachting: gemiddelde levensduur."
+      ],
+      "uh": "Ontwikkeld land: rijk land."
+     },
+     {
+      "v": "Dit rijke land heeft veel industrie, goede zorg en hoge welvaart. Wat is hier aan de hand?",
+      "o": [
+       "Bnp per inwoner",
+       "Ontwikkelingsland",
+       "Ontwikkeld land",
+       "Welvaartsverschil"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Dit rijke land heeft veel industrie, goede zorg en hoge welvaart. Dat past bij Ontwikkeld land: rijk land.",
+      "uo": [
+       "Nee, dat hoort bij Bnp per inwoner: productie per persoon.",
+       "Nee, dat hoort bij Ontwikkelingsland: arm land.",
+       "Klopt: rijk land.",
+       "Nee, dat hoort bij Welvaartsverschil: verschil in rijkdom."
+      ],
+      "uh": "Ontwikkeld land: rijk land."
+     },
+     {
+      "v": "In dit land kunnen de meeste mensen makkelijk in hun behoeften voorzien. Welk begrip past hierbij?",
+      "o": [
+       "Analfabetisme",
+       "Ontwikkelingsland",
+       "Bnp per inwoner",
+       "Welvaart"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In dit land kunnen de meeste mensen makkelijk in hun behoeften voorzien. Dat past bij Welvaart: hoe goed men rondkomt.",
+      "uo": [
+       "Nee, dat hoort bij Analfabetisme: niet kunnen lezen.",
+       "Nee, dat hoort bij Ontwikkelingsland: arm land.",
+       "Nee, dat hoort bij Bnp per inwoner: productie per persoon.",
+       "Klopt: hoe goed men rondkomt."
+      ],
+      "uh": "Welvaart: hoe goed men rondkomt."
+     },
+     {
+      "v": "In dit land worden mensen gemiddeld tachtig jaar oud. Om welk begrip gaat het?",
+      "o": [
+       "Levensverwachting",
+       "Bnp per inwoner",
+       "Analfabetisme",
+       "Ontwikkelingssamenwerking"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "In dit land worden mensen gemiddeld tachtig jaar oud. Dat past bij Levensverwachting: gemiddelde levensduur.",
+      "uo": [
+       "Klopt: gemiddelde levensduur.",
+       "Nee, dat hoort bij Bnp per inwoner: productie per persoon.",
+       "Nee, dat hoort bij Analfabetisme: niet kunnen lezen.",
+       "Nee, dat hoort bij Ontwikkelingssamenwerking: hulp aan arme landen."
+      ],
+      "uh": "Levensverwachting: gemiddelde levensduur."
+     },
+     {
+      "v": "In dit arme land is weinig industrie en een lage welvaart. Welk begrip herken je hier?",
+      "o": [
+       "Ontwikkeld land",
+       "Ontwikkelingsland",
+       "Grondstoffen",
+       "Levensverwachting"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In dit arme land is weinig industrie en een lage welvaart. Dat past bij Ontwikkelingsland: arm land.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkeld land: rijk land.",
+       "Klopt: arm land.",
+       "Nee, dat hoort bij Grondstoffen: natuurlijke rijkdommen.",
+       "Nee, dat hoort bij Levensverwachting: gemiddelde levensduur."
+      ],
+      "uh": "Ontwikkelingsland: arm land."
+     },
+     {
+      "v": "Aan de afgelegen, arme rand van het land trekken mensen juist weg. Wat is hier aan de hand?",
+      "o": [
+       "Ontwikkeld land",
+       "Welvaartsverschil",
+       "Periferie",
+       "Welvaart"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Aan de afgelegen, arme rand van het land trekken mensen juist weg. Dat past bij Periferie: arm randgebied.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkeld land: rijk land.",
+       "Nee, dat hoort bij Welvaartsverschil: verschil in rijkdom.",
+       "Klopt: arm randgebied.",
+       "Nee, dat hoort bij Welvaart: hoe goed men rondkomt."
+      ],
+      "uh": "Periferie: arm randgebied."
+     },
+     {
+      "v": "Mensen hebben er genoeg geld, eten en voorzieningen om goed rond te komen. Welk begrip past hierbij?",
+      "o": [
+       "Ontwikkelingssamenwerking",
+       "Welvaartsverschil",
+       "Centrum",
+       "Welvaart"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Mensen hebben er genoeg geld, eten en voorzieningen om goed rond te komen. Dat past bij Welvaart: hoe goed men rondkomt.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkelingssamenwerking: hulp aan arme landen.",
+       "Nee, dat hoort bij Welvaartsverschil: verschil in rijkdom.",
+       "Nee, dat hoort bij Centrum: rijk kerngebied.",
+       "Klopt: hoe goed men rondkomt."
+      ],
+      "uh": "Welvaart: hoe goed men rondkomt."
+     },
+     {
+      "v": "Dit arme gebied ligt ver van de stad, met weinig werk en voorzieningen. Om welk begrip gaat het?",
+      "o": [
+       "Periferie",
+       "Centrum",
+       "Levensverwachting",
+       "Ontwikkelingssamenwerking"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Dit arme gebied ligt ver van de stad, met weinig werk en voorzieningen. Dat past bij Periferie: arm randgebied.",
+      "uo": [
+       "Klopt: arm randgebied.",
+       "Nee, dat hoort bij Centrum: rijk kerngebied.",
+       "Nee, dat hoort bij Levensverwachting: gemiddelde levensduur.",
+       "Nee, dat hoort bij Ontwikkelingssamenwerking: hulp aan arme landen."
+      ],
+      "uh": "Periferie: arm randgebied."
+     },
+     {
+      "v": "Veel inwoners zijn arm en er is weinig geld voor onderwijs en zorg. Welk begrip herken je hier?",
+      "o": [
+       "Bnp per inwoner",
+       "Ontwikkelingsland",
+       "Welvaartsverschil",
+       "Ontwikkelingssamenwerking"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Veel inwoners zijn arm en er is weinig geld voor onderwijs en zorg. Dat past bij Ontwikkelingsland: arm land.",
+      "uo": [
+       "Nee, dat hoort bij Bnp per inwoner: productie per persoon.",
+       "Klopt: arm land.",
+       "Nee, dat hoort bij Welvaartsverschil: verschil in rijkdom.",
+       "Nee, dat hoort bij Ontwikkelingssamenwerking: hulp aan arme landen."
+      ],
+      "uh": "Ontwikkelingsland: arm land."
+     },
+     {
+      "v": "Dankzij nieuwe wegen en verbindingen worden goederen snel vervoerd. Wat is hier aan de hand?",
+      "o": [
+       "Ontwikkeld land",
+       "Grondstoffen",
+       "Infrastructuur",
+       "Bnp per inwoner"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Dankzij nieuwe wegen en verbindingen worden goederen snel vervoerd. Dat past bij Infrastructuur: wegen en verbindingen.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkeld land: rijk land.",
+       "Nee, dat hoort bij Grondstoffen: natuurlijke rijkdommen.",
+       "Klopt: wegen en verbindingen.",
+       "Nee, dat hoort bij Bnp per inwoner: productie per persoon."
+      ],
+      "uh": "Infrastructuur: wegen en verbindingen."
      }
     ],
     "begrippen": [
@@ -17661,6 +19428,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «De overheid»."
       ],
       "uh": "De overheid bepaalt mede het ruimtegebruik."
+     },
+     {
+      "v": "Op dit terrein zijn bedrijven en fabrieken gevestigd. Welk begrip past hierbij?",
+      "o": [
+       "Functie",
+       "Bestemmingsplan",
+       "Infrastructuur",
+       "Industriegebied"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Op dit terrein zijn bedrijven en fabrieken gevestigd. Dat past bij Industriegebied: gebied voor bedrijven.",
+      "uo": [
+       "Nee, dat hoort bij Functie: gebruik van een gebied.",
+       "Nee, dat hoort bij Bestemmingsplan: plan voor grondgebruik.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Klopt: gebied voor bedrijven."
+      ],
+      "uh": "Industriegebied: gebied voor bedrijven."
+     },
+     {
+      "v": "Dit gebied is bedoeld voor vrije tijd en ontspanning. Om welk begrip gaat het?",
+      "o": [
+       "Recreatiefunctie",
+       "Woonfunctie",
+       "Functie",
+       "Bestemmingsplan"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Dit gebied is bedoeld voor vrije tijd en ontspanning. Dat past bij Recreatiefunctie: gebied voor ontspanning.",
+      "uo": [
+       "Klopt: gebied voor ontspanning.",
+       "Nee, dat hoort bij Woonfunctie: gebied om te wonen.",
+       "Nee, dat hoort bij Functie: gebruik van een gebied.",
+       "Nee, dat hoort bij Bestemmingsplan: plan voor grondgebruik."
+      ],
+      "uh": "Recreatiefunctie: gebied voor ontspanning."
+     },
+     {
+      "v": "Dit stuk land is beschermd zodat planten en dieren er veilig zijn. Welk begrip herken je hier?",
+      "o": [
+       "Functie",
+       "Natuurgebied",
+       "Infrastructuur",
+       "Belangenafweging"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Dit stuk land is beschermd zodat planten en dieren er veilig zijn. Dat past bij Natuurgebied: beschermde natuur.",
+      "uo": [
+       "Nee, dat hoort bij Functie: gebruik van een gebied.",
+       "Klopt: beschermde natuur.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Nee, dat hoort bij Belangenafweging: belangen afwegen."
+      ],
+      "uh": "Natuurgebied: beschermde natuur."
+     },
+     {
+      "v": "Wegen, bruggen en spoor zorgen dat je je kunt verplaatsen. Wat is hier aan de hand?",
+      "o": [
+       "Bestemming",
+       "Industriegebied",
+       "Infrastructuur",
+       "Verstedelijking"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Wegen, bruggen en spoor zorgen dat je je kunt verplaatsen. Dat past bij Infrastructuur: wegen en verbindingen.",
+      "uo": [
+       "Nee, dat hoort bij Bestemming: toegewezen functie.",
+       "Nee, dat hoort bij Industriegebied: gebied voor bedrijven.",
+       "Klopt: wegen en verbindingen.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien."
+      ],
+      "uh": "Infrastructuur: wegen en verbindingen."
+     },
+     {
+      "v": "Iedere partij heeft een eigen voordeel dat ze wil behouden. Welk begrip past hierbij?",
+      "o": [
+       "Ruimtelijke ordening",
+       "Verstedelijking",
+       "Infrastructuur",
+       "Belang"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Iedere partij heeft een eigen voordeel dat ze wil behouden. Dat past bij Belang: wat iemand wil.",
+      "uo": [
+       "Nee, dat hoort bij Ruimtelijke ordening: de ruimte plannen.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Klopt: wat iemand wil."
+      ],
+      "uh": "Belang: wat iemand wil."
+     },
+     {
+      "v": "Nieuwe wegen en een station verbinden de wijk met de rest van de stad. Om welk begrip gaat het?",
+      "o": [
+       "Infrastructuur",
+       "Industriegebied",
+       "Bestemming",
+       "Verstedelijking"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Nieuwe wegen en een station verbinden de wijk met de rest van de stad. Dat past bij Infrastructuur: wegen en verbindingen.",
+      "uo": [
+       "Klopt: wegen en verbindingen.",
+       "Nee, dat hoort bij Industriegebied: gebied voor bedrijven.",
+       "Nee, dat hoort bij Bestemming: toegewezen functie.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien."
+      ],
+      "uh": "Infrastructuur: wegen en verbindingen."
+     },
+     {
+      "v": "In deze wijk staan alleen maar huizen waar mensen wonen. Welk begrip herken je hier?",
+      "o": [
+       "Industriegebied",
+       "Woonfunctie",
+       "Infrastructuur",
+       "Ruimtelijke ordening"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "In deze wijk staan alleen maar huizen waar mensen wonen. Dat past bij Woonfunctie: gebied om te wonen.",
+      "uo": [
+       "Nee, dat hoort bij Industriegebied: gebied voor bedrijven.",
+       "Klopt: gebied om te wonen.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Nee, dat hoort bij Ruimtelijke ordening: de ruimte plannen."
+      ],
+      "uh": "Woonfunctie: gebied om te wonen."
+     },
+     {
+      "v": "Het document van de gemeente legt vast wat je op een perceel mag bouwen. Wat is hier aan de hand?",
+      "o": [
+       "Ruimtelijke ordening",
+       "Bestemming",
+       "Bestemmingsplan",
+       "Woonfunctie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het document van de gemeente legt vast wat je op een perceel mag bouwen. Dat past bij Bestemmingsplan: plan voor grondgebruik.",
+      "uo": [
+       "Nee, dat hoort bij Ruimtelijke ordening: de ruimte plannen.",
+       "Nee, dat hoort bij Bestemming: toegewezen functie.",
+       "Klopt: plan voor grondgebruik.",
+       "Nee, dat hoort bij Woonfunctie: gebied om te wonen."
+      ],
+      "uh": "Bestemmingsplan: plan voor grondgebruik."
+     },
+     {
+      "v": "De stad breidt steeds verder uit over het omliggende land. Welk begrip past hierbij?",
+      "o": [
+       "Functie",
+       "Bestemmingsplan",
+       "Infrastructuur",
+       "Verstedelijking"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De stad breidt steeds verder uit over het omliggende land. Dat past bij Verstedelijking: steden groeien.",
+      "uo": [
+       "Nee, dat hoort bij Functie: gebruik van een gebied.",
+       "Nee, dat hoort bij Bestemmingsplan: plan voor grondgebruik.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Klopt: steden groeien."
+      ],
+      "uh": "Verstedelijking: steden groeien."
+     },
+     {
+      "v": "In een officieel plan staat waarvoor elk stuk grond gebruikt mag worden. Om welk begrip gaat het?",
+      "o": [
+       "Bestemmingsplan",
+       "Bestemming",
+       "Ruimtelijke ordening",
+       "Woonfunctie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "In een officieel plan staat waarvoor elk stuk grond gebruikt mag worden. Dat past bij Bestemmingsplan: plan voor grondgebruik.",
+      "uo": [
+       "Klopt: plan voor grondgebruik.",
+       "Nee, dat hoort bij Bestemming: toegewezen functie.",
+       "Nee, dat hoort bij Ruimtelijke ordening: de ruimte plannen.",
+       "Nee, dat hoort bij Woonfunctie: gebied om te wonen."
+      ],
+      "uh": "Bestemmingsplan: plan voor grondgebruik."
+     },
+     {
+      "v": "In dit park kunnen mensen wandelen, spelen en ontspannen. Welk begrip herken je hier?",
+      "o": [
+       "Bestemming",
+       "Recreatiefunctie",
+       "Infrastructuur",
+       "Bestemmingsplan"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "In dit park kunnen mensen wandelen, spelen en ontspannen. Dat past bij Recreatiefunctie: gebied voor ontspanning.",
+      "uo": [
+       "Nee, dat hoort bij Bestemming: toegewezen functie.",
+       "Klopt: gebied voor ontspanning.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Nee, dat hoort bij Bestemmingsplan: plan voor grondgebruik."
+      ],
+      "uh": "Recreatiefunctie: gebied voor ontspanning."
+     },
+     {
+      "v": "Dit gebied is bedoeld om in te wonen. Wat is hier aan de hand?",
+      "o": [
+       "Bestemmingsplan",
+       "Recreatiefunctie",
+       "Woonfunctie",
+       "Infrastructuur"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Dit gebied is bedoeld om in te wonen. Dat past bij Woonfunctie: gebied om te wonen.",
+      "uo": [
+       "Nee, dat hoort bij Bestemmingsplan: plan voor grondgebruik.",
+       "Nee, dat hoort bij Recreatiefunctie: gebied voor ontspanning.",
+       "Klopt: gebied om te wonen.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen."
+      ],
+      "uh": "Woonfunctie: gebied om te wonen."
+     },
+     {
+      "v": "Hier mag niet gebouwd worden om de natuur te sparen. Welk begrip past hierbij?",
+      "o": [
+       "Woonfunctie",
+       "Industriegebied",
+       "Verstedelijking",
+       "Natuurgebied"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Hier mag niet gebouwd worden om de natuur te sparen. Dat past bij Natuurgebied: beschermde natuur.",
+      "uo": [
+       "Nee, dat hoort bij Woonfunctie: gebied om te wonen.",
+       "Nee, dat hoort bij Industriegebied: gebied voor bedrijven.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Klopt: beschermde natuur."
+      ],
+      "uh": "Natuurgebied: beschermde natuur."
+     },
+     {
+      "v": "De boer wil zijn land houden, de bouwer wil er huizen neerzetten. Om welk begrip gaat het?",
+      "o": [
+       "Belang",
+       "Verstedelijking",
+       "Infrastructuur",
+       "Ruimtelijke ordening"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De boer wil zijn land houden, de bouwer wil er huizen neerzetten. Dat past bij Belang: wat iemand wil.",
+      "uo": [
+       "Klopt: wat iemand wil.",
+       "Nee, dat hoort bij Verstedelijking: steden groeien.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Nee, dat hoort bij Ruimtelijke ordening: de ruimte plannen."
+      ],
+      "uh": "Belang: wat iemand wil."
+     },
+     {
+      "v": "Het doel of gebruik van een stuk grond, zoals werken of ontspannen. Welk begrip herken je hier?",
+      "o": [
+       "Bestemming",
+       "Functie",
+       "Industriegebied",
+       "Infrastructuur"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het doel of gebruik van een stuk grond, zoals werken of ontspannen. Dat past bij Functie: gebruik van een gebied.",
+      "uo": [
+       "Nee, dat hoort bij Bestemming: toegewezen functie.",
+       "Klopt: gebruik van een gebied.",
+       "Nee, dat hoort bij Industriegebied: gebied voor bedrijven.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen."
+      ],
+      "uh": "Functie: gebruik van een gebied."
+     },
+     {
+      "v": "Dit gebied wordt gebruikt om in te wonen. Wat is hier aan de hand?",
+      "o": [
+       "Woonfunctie",
+       "Bestemming",
+       "Functie",
+       "Belangenafweging"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Dit gebied wordt gebruikt om in te wonen. Dat past bij Functie: gebruik van een gebied.",
+      "uo": [
+       "Nee, dat hoort bij Woonfunctie: gebied om te wonen.",
+       "Nee, dat hoort bij Bestemming: toegewezen functie.",
+       "Klopt: gebruik van een gebied.",
+       "Nee, dat hoort bij Belangenafweging: belangen afwegen."
+      ],
+      "uh": "Functie: gebruik van een gebied."
+     },
+     {
+      "v": "De overheid plant zorgvuldig waar in het land alles mag komen. Welk begrip past hierbij?",
+      "o": [
+       "Industriegebied",
+       "Natuurgebied",
+       "Belangenafweging",
+       "Ruimtelijke ordening"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De overheid plant zorgvuldig waar in het land alles mag komen. Dat past bij Ruimtelijke ordening: de ruimte plannen.",
+      "uo": [
+       "Nee, dat hoort bij Industriegebied: gebied voor bedrijven.",
+       "Nee, dat hoort bij Natuurgebied: beschermde natuur.",
+       "Nee, dat hoort bij Belangenafweging: belangen afwegen.",
+       "Klopt: de ruimte plannen."
+      ],
+      "uh": "Ruimtelijke ordening: de ruimte plannen."
+     },
+     {
+      "v": "Aan de rand van de stad staan grote fabrieken en bedrijfshallen. Om welk begrip gaat het?",
+      "o": [
+       "Industriegebied",
+       "Natuurgebied",
+       "Recreatiefunctie",
+       "Woonfunctie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Aan de rand van de stad staan grote fabrieken en bedrijfshallen. Dat past bij Industriegebied: gebied voor bedrijven.",
+      "uo": [
+       "Klopt: gebied voor bedrijven.",
+       "Nee, dat hoort bij Natuurgebied: beschermde natuur.",
+       "Nee, dat hoort bij Recreatiefunctie: gebied voor ontspanning.",
+       "Nee, dat hoort bij Woonfunctie: gebied om te wonen."
+      ],
+      "uh": "Industriegebied: gebied voor bedrijven."
+     },
+     {
+      "v": "Dit stuk grond heeft in het plan de functie natuur gekregen. Welk begrip herken je hier?",
+      "o": [
+       "Functie",
+       "Bestemming",
+       "Belangenafweging",
+       "Infrastructuur"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Dit stuk grond heeft in het plan de functie natuur gekregen. Dat past bij Bestemming: toegewezen functie.",
+      "uo": [
+       "Nee, dat hoort bij Functie: gebruik van een gebied.",
+       "Klopt: toegewezen functie.",
+       "Nee, dat hoort bij Belangenafweging: belangen afwegen.",
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen."
+      ],
+      "uh": "Bestemming: toegewezen functie."
+     },
+     {
+      "v": "Voor de beslissing worden alle voor- en nadelen tegen elkaar gezet. Wat is hier aan de hand?",
+      "o": [
+       "Infrastructuur",
+       "Bestemming",
+       "Belangenafweging",
+       "Bestemmingsplan"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Voor de beslissing worden alle voor- en nadelen tegen elkaar gezet. Dat past bij Belangenafweging: belangen afwegen.",
+      "uo": [
+       "Nee, dat hoort bij Infrastructuur: wegen en verbindingen.",
+       "Nee, dat hoort bij Bestemming: toegewezen functie.",
+       "Klopt: belangen afwegen.",
+       "Nee, dat hoort bij Bestemmingsplan: plan voor grondgebruik."
+      ],
+      "uh": "Belangenafweging: belangen afwegen."
+     },
+     {
+      "v": "De gemeente bepaalt welk stuk grond voor wonen, werken of natuur is. Welk begrip past hierbij?",
+      "o": [
+       "Belangenafweging",
+       "Bestemmingsplan",
+       "Woonfunctie",
+       "Ruimtelijke ordening"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De gemeente bepaalt welk stuk grond voor wonen, werken of natuur is. Dat past bij Ruimtelijke ordening: de ruimte plannen.",
+      "uo": [
+       "Nee, dat hoort bij Belangenafweging: belangen afwegen.",
+       "Nee, dat hoort bij Bestemmingsplan: plan voor grondgebruik.",
+       "Nee, dat hoort bij Woonfunctie: gebied om te wonen.",
+       "Klopt: de ruimte plannen."
+      ],
+      "uh": "Ruimtelijke ordening: de ruimte plannen."
+     },
+     {
+      "v": "De gemeente weegt de wensen van bewoners, bedrijven en natuur tegen elkaar af. Om welk begrip gaat het?",
+      "o": [
+       "Belangenafweging",
+       "Belang",
+       "Functie",
+       "Bestemmingsplan"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De gemeente weegt de wensen van bewoners, bedrijven en natuur tegen elkaar af. Dat past bij Belangenafweging: belangen afwegen.",
+      "uo": [
+       "Klopt: belangen afwegen.",
+       "Nee, dat hoort bij Belang: wat iemand wil.",
+       "Nee, dat hoort bij Functie: gebruik van een gebied.",
+       "Nee, dat hoort bij Bestemmingsplan: plan voor grondgebruik."
+      ],
+      "uh": "Belangenafweging: belangen afwegen."
+     },
+     {
+      "v": "Aan een gebied is toegewezen dat het voor wonen bedoeld is. Welk begrip herken je hier?",
+      "o": [
+       "Recreatiefunctie",
+       "Bestemming",
+       "Woonfunctie",
+       "Ruimtelijke ordening"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Aan een gebied is toegewezen dat het voor wonen bedoeld is. Dat past bij Bestemming: toegewezen functie.",
+      "uo": [
+       "Nee, dat hoort bij Recreatiefunctie: gebied voor ontspanning.",
+       "Klopt: toegewezen functie.",
+       "Nee, dat hoort bij Woonfunctie: gebied om te wonen.",
+       "Nee, dat hoort bij Ruimtelijke ordening: de ruimte plannen."
+      ],
+      "uh": "Bestemming: toegewezen functie."
+     },
+     {
+      "v": "Er komen steeds meer gebouwen en stadsbewoners bij. Wat is hier aan de hand?",
+      "o": [
+       "Industriegebied",
+       "Woonfunctie",
+       "Verstedelijking",
+       "Recreatiefunctie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Er komen steeds meer gebouwen en stadsbewoners bij. Dat past bij Verstedelijking: steden groeien.",
+      "uo": [
+       "Nee, dat hoort bij Industriegebied: gebied voor bedrijven.",
+       "Nee, dat hoort bij Woonfunctie: gebied om te wonen.",
+       "Klopt: steden groeien.",
+       "Nee, dat hoort bij Recreatiefunctie: gebied voor ontspanning."
+      ],
+      "uh": "Verstedelijking: steden groeien."
      }
     ],
     "begrippen": [
@@ -17938,6 +20161,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Het gebied waarover een land zeggenschap heeft»."
       ],
       "uh": "Het gebied waarover een land zeggenschap heeft: Het grondgebied van een land."
+     },
+     {
+      "v": "Migranten gaan meedoen met werk, school en contact met anderen. Welk begrip past hierbij?",
+      "o": [
+       "Godsdienst",
+       "Migratiestroom",
+       "Identiteit",
+       "Integratie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Migranten gaan meedoen met werk, school en contact met anderen. Dat past bij Integratie: meedoen in de samenleving.",
+      "uo": [
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof.",
+       "Nee, dat hoort bij Migratiestroom: grote verhuisstroom.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Klopt: meedoen in de samenleving."
+      ],
+      "uh": "Integratie: meedoen in de samenleving."
+     },
+     {
+      "v": "Er is oorlog omdat beide landen hetzelfde gebied opeisen. Om welk begrip gaat het?",
+      "o": [
+       "Territoriaal conflict",
+       "Integratie",
+       "Godsdienst",
+       "Nationaliteit"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Er is oorlog omdat beide landen hetzelfde gebied opeisen. Dat past bij Territoriaal conflict: ruzie over gebied.",
+      "uo": [
+       "Klopt: ruzie over gebied.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof.",
+       "Nee, dat hoort bij Nationaliteit: bij een land horen."
+      ],
+      "uh": "Territoriaal conflict: ruzie over gebied."
+     },
+     {
+      "v": "Iemand ontvlucht zijn land vanwege oorlog en geweld. Welk begrip herken je hier?",
+      "o": [
+       "Migratiestroom",
+       "Vluchteling",
+       "Identiteit",
+       "Nationaliteit"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Iemand ontvlucht zijn land vanwege oorlog en geweld. Dat past bij Vluchteling: ontvlucht gevaar.",
+      "uo": [
+       "Nee, dat hoort bij Migratiestroom: grote verhuisstroom.",
+       "Klopt: ontvlucht gevaar.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Nee, dat hoort bij Nationaliteit: bij een land horen."
+      ],
+      "uh": "Vluchteling: ontvlucht gevaar."
+     },
+     {
+      "v": "Het gedeelde geloof binnen een cultuur. Wat is hier aan de hand?",
+      "o": [
+       "Identiteit",
+       "Nationaliteit",
+       "Godsdienst",
+       "Grens"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het gedeelde geloof binnen een cultuur. Dat past bij Godsdienst: gedeeld geloof.",
+      "uo": [
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Nee, dat hoort bij Nationaliteit: bij een land horen.",
+       "Klopt: gedeeld geloof.",
+       "Nee, dat hoort bij Grens: scheidingslijn."
+      ],
+      "uh": "Godsdienst: gedeeld geloof."
+     },
+     {
+      "v": "Je voelt je thuis bij je groep en bent er trots op. Welk begrip past hierbij?",
+      "o": [
+       "Godsdienst",
+       "Cultuur",
+       "Cultuurgebied",
+       "Identiteit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je voelt je thuis bij je groep en bent er trots op. Dat past bij Identiteit: gevoel van erbij horen.",
+      "uo": [
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof.",
+       "Nee, dat hoort bij Cultuur: gewoonten en gebruiken.",
+       "Nee, dat hoort bij Cultuurgebied: gebied met gedeelde cultuur.",
+       "Klopt: gevoel van erbij horen."
+      ],
+      "uh": "Identiteit: gevoel van erbij horen."
+     },
+     {
+      "v": "Een groep deelt hetzelfde geloof en gaat naar dezelfde gebedsplek. Om welk begrip gaat het?",
+      "o": [
+       "Godsdienst",
+       "Nationaliteit",
+       "Identiteit",
+       "Grens"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een groep deelt hetzelfde geloof en gaat naar dezelfde gebedsplek. Dat past bij Godsdienst: gedeeld geloof.",
+      "uo": [
+       "Klopt: gedeeld geloof.",
+       "Nee, dat hoort bij Nationaliteit: bij een land horen.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Nee, dat hoort bij Grens: scheidingslijn."
+      ],
+      "uh": "Godsdienst: gedeeld geloof."
+     },
+     {
+      "v": "Het volledige grondgebied waarover een land de baas is. Welk begrip herken je hier?",
+      "o": [
+       "Territoriaal conflict",
+       "Territorium",
+       "Cultuurgebied",
+       "Identiteit"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het volledige grondgebied waarover een land de baas is. Dat past bij Territorium: grondgebied van een land.",
+      "uo": [
+       "Nee, dat hoort bij Territoriaal conflict: ruzie over gebied.",
+       "Klopt: grondgebied van een land.",
+       "Nee, dat hoort bij Cultuurgebied: gebied met gedeelde cultuur.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen."
+      ],
+      "uh": "Territorium: grondgebied van een land."
+     },
+     {
+      "v": "Een hoog gebergte scheidt de twee landen van elkaar. Wat is hier aan de hand?",
+      "o": [
+       "Territorium",
+       "Cultuurgebied",
+       "Natuurlijke grens",
+       "Godsdienst"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een hoog gebergte scheidt de twee landen van elkaar. Dat past bij Natuurlijke grens: grens langs de natuur.",
+      "uo": [
+       "Nee, dat hoort bij Territorium: grondgebied van een land.",
+       "Nee, dat hoort bij Cultuurgebied: gebied met gedeelde cultuur.",
+       "Klopt: grens langs de natuur.",
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof."
+      ],
+      "uh": "Natuurlijke grens: grens langs de natuur."
+     },
+     {
+      "v": "De taal, gewoonten, feesten en gebruiken van een groep. Welk begrip past hierbij?",
+      "o": [
+       "Nationaliteit",
+       "Identiteit",
+       "Cultuurgebied",
+       "Cultuur"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De taal, gewoonten, feesten en gebruiken van een groep. Dat past bij Cultuur: gewoonten en gebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Nationaliteit: bij een land horen.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Nee, dat hoort bij Cultuurgebied: gebied met gedeelde cultuur.",
+       "Klopt: gewoonten en gebruiken."
+      ],
+      "uh": "Cultuur: gewoonten en gebruiken."
+     },
+     {
+      "v": "Een grote rivier vormt precies de scheiding tussen twee landen. Om welk begrip gaat het?",
+      "o": [
+       "Natuurlijke grens",
+       "Cultuurgebied",
+       "Territorium",
+       "Godsdienst"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een grote rivier vormt precies de scheiding tussen twee landen. Dat past bij Natuurlijke grens: grens langs de natuur.",
+      "uo": [
+       "Klopt: grens langs de natuur.",
+       "Nee, dat hoort bij Cultuurgebied: gebied met gedeelde cultuur.",
+       "Nee, dat hoort bij Territorium: grondgebied van een land.",
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof."
+      ],
+      "uh": "Natuurlijke grens: grens langs de natuur."
+     },
+     {
+      "v": "Twee landen maken ruzie over wie een stuk grond mag hebben. Welk begrip herken je hier?",
+      "o": [
+       "Territorium",
+       "Territoriaal conflict",
+       "Migratiestroom",
+       "Vluchteling"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Twee landen maken ruzie over wie een stuk grond mag hebben. Dat past bij Territoriaal conflict: ruzie over gebied.",
+      "uo": [
+       "Nee, dat hoort bij Territorium: grondgebied van een land.",
+       "Klopt: ruzie over gebied.",
+       "Nee, dat hoort bij Migratiestroom: grote verhuisstroom.",
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar."
+      ],
+      "uh": "Territoriaal conflict: ruzie over gebied."
+     },
+     {
+      "v": "Het land met alles binnen zijn grenzen waar het over gaat. Wat is hier aan de hand?",
+      "o": [
+       "Godsdienst",
+       "Integratie",
+       "Territorium",
+       "Grens"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het land met alles binnen zijn grenzen waar het over gaat. Dat past bij Territorium: grondgebied van een land.",
+      "uo": [
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Klopt: grondgebied van een land.",
+       "Nee, dat hoort bij Grens: scheidingslijn."
+      ],
+      "uh": "Territorium: grondgebied van een land."
+     },
+     {
+      "v": "Uit angst voor vervolging verlaat een persoon halsoverkop zijn land. Welk begrip past hierbij?",
+      "o": [
+       "Nationaliteit",
+       "Migratiestroom",
+       "Identiteit",
+       "Vluchteling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Uit angst voor vervolging verlaat een persoon halsoverkop zijn land. Dat past bij Vluchteling: ontvlucht gevaar.",
+      "uo": [
+       "Nee, dat hoort bij Nationaliteit: bij een land horen.",
+       "Nee, dat hoort bij Migratiestroom: grote verhuisstroom.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Klopt: ontvlucht gevaar."
+      ],
+      "uh": "Vluchteling: ontvlucht gevaar."
+     },
+     {
+      "v": "Het gevoel dat je ergens bij hoort. Om welk begrip gaat het?",
+      "o": [
+       "Identiteit",
+       "Territorium",
+       "Nationaliteit",
+       "Grens"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het gevoel dat je ergens bij hoort. Dat past bij Identiteit: gevoel van erbij horen.",
+      "uo": [
+       "Klopt: gevoel van erbij horen.",
+       "Nee, dat hoort bij Territorium: grondgebied van een land.",
+       "Nee, dat hoort bij Nationaliteit: bij een land horen.",
+       "Nee, dat hoort bij Grens: scheidingslijn."
+      ],
+      "uh": "Identiteit: gevoel van erbij horen."
+     },
+     {
+      "v": "Een gebied waar iedereen dezelfde taal en gewoonten deelt. Welk begrip herken je hier?",
+      "o": [
+       "Cultuur",
+       "Cultuurgebied",
+       "Natuurlijke grens",
+       "Nationaliteit"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een gebied waar iedereen dezelfde taal en gewoonten deelt. Dat past bij Cultuurgebied: gebied met gedeelde cultuur.",
+      "uo": [
+       "Nee, dat hoort bij Cultuur: gewoonten en gebruiken.",
+       "Klopt: gebied met gedeelde cultuur.",
+       "Nee, dat hoort bij Natuurlijke grens: grens langs de natuur.",
+       "Nee, dat hoort bij Nationaliteit: bij een land horen."
+      ],
+      "uh": "Cultuurgebied: gebied met gedeelde cultuur."
+     },
+     {
+      "v": "In deze streek leven en spreken alle mensen op dezelfde manier. Wat is hier aan de hand?",
+      "o": [
+       "Natuurlijke grens",
+       "Cultuur",
+       "Cultuurgebied",
+       "Godsdienst"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "In deze streek leven en spreken alle mensen op dezelfde manier. Dat past bij Cultuurgebied: gebied met gedeelde cultuur.",
+      "uo": [
+       "Nee, dat hoort bij Natuurlijke grens: grens langs de natuur.",
+       "Nee, dat hoort bij Cultuur: gewoonten en gebruiken.",
+       "Klopt: gebied met gedeelde cultuur.",
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof."
+      ],
+      "uh": "Cultuurgebied: gebied met gedeelde cultuur."
+     },
+     {
+      "v": "Een lijn op de kaart scheidt twee landen van elkaar. Welk begrip past hierbij?",
+      "o": [
+       "Godsdienst",
+       "Territoriaal conflict",
+       "Nationaliteit",
+       "Grens"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een lijn op de kaart scheidt twee landen van elkaar. Dat past bij Grens: scheidingslijn.",
+      "uo": [
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof.",
+       "Nee, dat hoort bij Territoriaal conflict: ruzie over gebied.",
+       "Nee, dat hoort bij Nationaliteit: bij een land horen.",
+       "Klopt: scheidingslijn."
+      ],
+      "uh": "Grens: scheidingslijn."
+     },
+     {
+      "v": "Nieuwkomers leren de taal en doen mee in de samenleving. Om welk begrip gaat het?",
+      "o": [
+       "Integratie",
+       "Migratiestroom",
+       "Cultuur",
+       "Territoriaal conflict"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Nieuwkomers leren de taal en doen mee in de samenleving. Dat past bij Integratie: meedoen in de samenleving.",
+      "uo": [
+       "Klopt: meedoen in de samenleving.",
+       "Nee, dat hoort bij Migratiestroom: grote verhuisstroom.",
+       "Nee, dat hoort bij Cultuur: gewoonten en gebruiken.",
+       "Nee, dat hoort bij Territoriaal conflict: ruzie over gebied."
+      ],
+      "uh": "Integratie: meedoen in de samenleving."
+     },
+     {
+      "v": "Een grote groep mensen verhuist massaal naar een ander land. Welk begrip herken je hier?",
+      "o": [
+       "Vluchteling",
+       "Migratiestroom",
+       "Cultuurgebied",
+       "Godsdienst"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een grote groep mensen verhuist massaal naar een ander land. Dat past bij Migratiestroom: grote verhuisstroom.",
+      "uo": [
+       "Nee, dat hoort bij Vluchteling: ontvlucht gevaar.",
+       "Klopt: grote verhuisstroom.",
+       "Nee, dat hoort bij Cultuurgebied: gebied met gedeelde cultuur.",
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof."
+      ],
+      "uh": "Migratiestroom: grote verhuisstroom."
+     },
+     {
+      "v": "Je bent officieel burger van een bepaald land. Wat is hier aan de hand?",
+      "o": [
+       "Territorium",
+       "Cultuurgebied",
+       "Nationaliteit",
+       "Territoriaal conflict"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je bent officieel burger van een bepaald land. Dat past bij Nationaliteit: bij een land horen.",
+      "uo": [
+       "Nee, dat hoort bij Territorium: grondgebied van een land.",
+       "Nee, dat hoort bij Cultuurgebied: gebied met gedeelde cultuur.",
+       "Klopt: bij een land horen.",
+       "Nee, dat hoort bij Territoriaal conflict: ruzie over gebied."
+      ],
+      "uh": "Nationaliteit: bij een land horen."
+     },
+     {
+      "v": "Bij de slagboom houdt het ene land op en begint het andere. Welk begrip past hierbij?",
+      "o": [
+       "Nationaliteit",
+       "Natuurlijke grens",
+       "Territorium",
+       "Grens"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij de slagboom houdt het ene land op en begint het andere. Dat past bij Grens: scheidingslijn.",
+      "uo": [
+       "Nee, dat hoort bij Nationaliteit: bij een land horen.",
+       "Nee, dat hoort bij Natuurlijke grens: grens langs de natuur.",
+       "Nee, dat hoort bij Territorium: grondgebied van een land.",
+       "Klopt: scheidingslijn."
+      ],
+      "uh": "Grens: scheidingslijn."
+     },
+     {
+      "v": "In je paspoort staat dat je bij Nederland hoort. Om welk begrip gaat het?",
+      "o": [
+       "Nationaliteit",
+       "Identiteit",
+       "Natuurlijke grens",
+       "Godsdienst"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "In je paspoort staat dat je bij Nederland hoort. Dat past bij Nationaliteit: bij een land horen.",
+      "uo": [
+       "Klopt: bij een land horen.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Nee, dat hoort bij Natuurlijke grens: grens langs de natuur.",
+       "Nee, dat hoort bij Godsdienst: gedeeld geloof."
+      ],
+      "uh": "Nationaliteit: bij een land horen."
+     },
+     {
+      "v": "Duizenden mensen trekken tegelijk vanuit één gebied naar een ander. Welk begrip herken je hier?",
+      "o": [
+       "Cultuur",
+       "Migratiestroom",
+       "Territoriaal conflict",
+       "Identiteit"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Duizenden mensen trekken tegelijk vanuit één gebied naar een ander. Dat past bij Migratiestroom: grote verhuisstroom.",
+      "uo": [
+       "Nee, dat hoort bij Cultuur: gewoonten en gebruiken.",
+       "Klopt: grote verhuisstroom.",
+       "Nee, dat hoort bij Territoriaal conflict: ruzie over gebied.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen."
+      ],
+      "uh": "Migratiestroom: grote verhuisstroom."
+     },
+     {
+      "v": "Hoe een groep mensen leeft: hun eten, kleding en tradities. Wat is hier aan de hand?",
+      "o": [
+       "Cultuurgebied",
+       "Identiteit",
+       "Cultuur",
+       "Territorium"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Hoe een groep mensen leeft: hun eten, kleding en tradities. Dat past bij Cultuur: gewoonten en gebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Cultuurgebied: gebied met gedeelde cultuur.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Klopt: gewoonten en gebruiken.",
+       "Nee, dat hoort bij Territorium: grondgebied van een land."
+      ],
+      "uh": "Cultuur: gewoonten en gebruiken."
      }
     ],
     "begrippen": [
