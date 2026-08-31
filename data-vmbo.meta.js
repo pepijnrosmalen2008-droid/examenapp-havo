@@ -593,7 +593,7 @@ var VAKKEN_VMBO = [
      "Destilleren en extraheren",
      "Chromatografie"
     ],
-    "nSv": 8,
+    "nSv": 30,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -609,7 +609,7 @@ var VAKKEN_VMBO = [
      "Molecuulformules",
      "Reactievergelijkingen kloppend maken"
     ],
-    "nSv": 8,
+    "nSv": 30,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -624,7 +624,7 @@ var VAKKEN_VMBO = [
      "Kenmerken van een reactie",
      "Ontledings- en vormingsreacties"
     ],
-    "nSv": 8,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -640,7 +640,7 @@ var VAKKEN_VMBO = [
      "CO₂ aantonen met kalkwater",
      "Water aantonen met wit kopersulfaat"
     ],
-    "nSv": 8,
+    "nSv": 30,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -655,7 +655,7 @@ var VAKKEN_VMBO = [
      "Grondstof tot product",
      "Kunststoffen en metalen"
     ],
-    "nSv": 7,
+    "nSv": 31,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -670,7 +670,7 @@ var VAKKEN_VMBO = [
      "Onderzoek opzetten",
      "Eigenschappen meten"
     ],
-    "nSv": 7,
+    "nSv": 31,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -686,7 +686,7 @@ var VAKKEN_VMBO = [
      "Indicatoren (lakmoes, rodekoolsap)",
      "Neutralisatiereacties"
     ],
-    "nSv": 7,
+    "nSv": 31,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true

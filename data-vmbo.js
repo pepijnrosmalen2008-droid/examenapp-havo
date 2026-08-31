@@ -20473,6 +20473,424 @@ var VAKKEN_VMBO = [
        "Klopt: aan een stofeigenschap herken je een stof."
       ],
       "uh": "een kenmerk waaraan je een stof herkent: Aan een stofeigenschap herken je een stof."
+     },
+     {
+      "v": "Een koffiefilter houdt de gemalen bonen tegen. Welk begrip past hierbij?",
+      "o": [
+       "Filtreren",
+       "Indampen",
+       "Destilleren",
+       "Zuivere stof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een koffiefilter houdt de gemalen bonen tegen. Dat past bij Filtreren: vaste stof eruit filteren.",
+      "uo": [
+       "Klopt: vaste stof eruit filteren.",
+       "Nee, dat hoort bij Indampen: vloeistof weg, stof blijft.",
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes."
+      ],
+      "uh": "Filtreren: vaste stof eruit filteren."
+     },
+     {
+      "v": "De massa van een stof per hoeveelheid ruimte. Om welk begrip gaat het?",
+      "o": [
+       "Zuivere stof",
+       "Dichtheid",
+       "Destilleren",
+       "Smeltpunt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De massa van een stof per hoeveelheid ruimte. Dat past bij Dichtheid: massa per volume.",
+      "uo": [
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Klopt: massa per volume.",
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt.",
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar."
+      ],
+      "uh": "Dichtheid: massa per volume."
+     },
+     {
+      "v": "De temperatuur waarbij een stof kookt. Welk begrip herken je hier?",
+      "o": [
+       "Destilleren",
+       "Smeltpunt",
+       "Kookpunt",
+       "Mengsel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De temperatuur waarbij een stof kookt. Dat past bij Kookpunt: vloeibaar wordt gas.",
+      "uo": [
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt.",
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar.",
+       "Klopt: vloeibaar wordt gas.",
+       "Nee, dat hoort bij Mengsel: meerdere stoffen."
+      ],
+      "uh": "Kookpunt: vloeibaar wordt gas."
+     },
+     {
+      "v": "In zeewater zitten water en zout door elkaar. Wat is hier aan de hand?",
+      "o": [
+       "Smeltpunt",
+       "Dichtheid",
+       "Filtreren",
+       "Mengsel"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In zeewater zitten water en zout door elkaar. Dat past bij Mengsel: meerdere stoffen.",
+      "uo": [
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Nee, dat hoort bij Filtreren: vaste stof eruit filteren.",
+       "Klopt: meerdere stoffen."
+      ],
+      "uh": "Mengsel: meerdere stoffen."
+     },
+     {
+      "v": "De temperatuur waarbij een vaste stof vloeibaar wordt. Welk begrip past hierbij?",
+      "o": [
+       "Smeltpunt",
+       "Kookpunt",
+       "Zuivere stof",
+       "Dichtheid"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De temperatuur waarbij een vaste stof vloeibaar wordt. Dat past bij Smeltpunt: vast wordt vloeibaar.",
+      "uo": [
+       "Klopt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Kookpunt: vloeibaar wordt gas.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Dichtheid: massa per volume."
+      ],
+      "uh": "Smeltpunt: vast wordt vloeibaar."
+     },
+     {
+      "v": "Zuiver keukenzout bevat maar één soort deeltjes. Om welk begrip gaat het?",
+      "o": [
+       "Dichtheid",
+       "Zuivere stof",
+       "Destilleren",
+       "Stofeigenschap"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Zuiver keukenzout bevat maar één soort deeltjes. Dat past bij Zuivere stof: één soort deeltjes.",
+      "uo": [
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Klopt: één soort deeltjes.",
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt.",
+       "Nee, dat hoort bij Stofeigenschap: kenmerk van een stof."
+      ],
+      "uh": "Zuivere stof: één soort deeltjes."
+     },
+     {
+      "v": "De vloeistof laten verdampen om de opgeloste stof over te houden. Welk begrip herken je hier?",
+      "o": [
+       "Destilleren",
+       "Filtreren",
+       "Indampen",
+       "Mengsel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De vloeistof laten verdampen om de opgeloste stof over te houden. Dat past bij Indampen: vloeistof weg, stof blijft.",
+      "uo": [
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt.",
+       "Nee, dat hoort bij Filtreren: vaste stof eruit filteren.",
+       "Klopt: vloeistof weg, stof blijft.",
+       "Nee, dat hoort bij Mengsel: meerdere stoffen."
+      ],
+      "uh": "Indampen: vloeistof weg, stof blijft."
+     },
+     {
+      "v": "Vaste stukjes uit een vloeistof halen met een filter. Wat is hier aan de hand?",
+      "o": [
+       "Smeltpunt",
+       "Dichtheid",
+       "Mengsel",
+       "Filtreren"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Vaste stukjes uit een vloeistof halen met een filter. Dat past bij Filtreren: vaste stof eruit filteren.",
+      "uo": [
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Nee, dat hoort bij Mengsel: meerdere stoffen.",
+       "Klopt: vaste stof eruit filteren."
+      ],
+      "uh": "Filtreren: vaste stof eruit filteren."
+     },
+     {
+      "v": "Je laat het water verdampen en houdt het zout over. Welk begrip past hierbij?",
+      "o": [
+       "Indampen",
+       "Filtreren",
+       "Smeltpunt",
+       "Destilleren"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je laat het water verdampen en houdt het zout over. Dat past bij Indampen: vloeistof weg, stof blijft.",
+      "uo": [
+       "Klopt: vloeistof weg, stof blijft.",
+       "Nee, dat hoort bij Filtreren: vaste stof eruit filteren.",
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt."
+      ],
+      "uh": "Indampen: vloeistof weg, stof blijft."
+     },
+     {
+      "v": "Een blok ijzer is zwaarder dan een even groot blok kurk. Om welk begrip gaat het?",
+      "o": [
+       "Stofeigenschap",
+       "Dichtheid",
+       "Zuivere stof",
+       "Kookpunt"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een blok ijzer is zwaarder dan een even groot blok kurk. Dat past bij Dichtheid: massa per volume.",
+      "uo": [
+       "Nee, dat hoort bij Stofeigenschap: kenmerk van een stof.",
+       "Klopt: massa per volume.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Kookpunt: vloeibaar wordt gas."
+      ],
+      "uh": "Dichtheid: massa per volume."
+     },
+     {
+      "v": "Zo win je zoet water uit zout zeewater. Welk begrip herken je hier?",
+      "o": [
+       "Smeltpunt",
+       "Zuivere stof",
+       "Destilleren",
+       "Indampen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Zo win je zoet water uit zout zeewater. Dat past bij Destilleren: scheiden op kookpunt.",
+      "uo": [
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Klopt: scheiden op kookpunt.",
+       "Nee, dat hoort bij Indampen: vloeistof weg, stof blijft."
+      ],
+      "uh": "Destilleren: scheiden op kookpunt."
+     },
+     {
+      "v": "Een kenmerk waaraan je een stof herkent. Wat is hier aan de hand?",
+      "o": [
+       "Destilleren",
+       "Dichtheid",
+       "Zuivere stof",
+       "Stofeigenschap"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een kenmerk waaraan je een stof herkent. Dat past bij Stofeigenschap: kenmerk van een stof.",
+      "uo": [
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt.",
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Klopt: kenmerk van een stof."
+      ],
+      "uh": "Stofeigenschap: kenmerk van een stof."
+     },
+     {
+      "v": "Aan het smeltpunt en de kleur herken je om welke stof het gaat. Welk begrip past hierbij?",
+      "o": [
+       "Stofeigenschap",
+       "Dichtheid",
+       "Mengsel",
+       "Zuivere stof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Aan het smeltpunt en de kleur herken je om welke stof het gaat. Dat past bij Stofeigenschap: kenmerk van een stof.",
+      "uo": [
+       "Klopt: kenmerk van een stof.",
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Nee, dat hoort bij Mengsel: meerdere stoffen.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes."
+      ],
+      "uh": "Stofeigenschap: kenmerk van een stof."
+     },
+     {
+      "v": "Lucht is een mengsel van stikstof en zuurstof. Om welk begrip gaat het?",
+      "o": [
+       "Dichtheid",
+       "Mengsel",
+       "Filtreren",
+       "Smeltpunt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Lucht is een mengsel van stikstof en zuurstof. Dat past bij Mengsel: meerdere stoffen.",
+      "uo": [
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Klopt: meerdere stoffen.",
+       "Nee, dat hoort bij Filtreren: vaste stof eruit filteren.",
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar."
+      ],
+      "uh": "Mengsel: meerdere stoffen."
+     },
+     {
+      "v": "Een stof die uit één soort deeltjes bestaat. Welk begrip herken je hier?",
+      "o": [
+       "Smeltpunt",
+       "Mengsel",
+       "Zuivere stof",
+       "Stofeigenschap"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een stof die uit één soort deeltjes bestaat. Dat past bij Zuivere stof: één soort deeltjes.",
+      "uo": [
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Mengsel: meerdere stoffen.",
+       "Klopt: één soort deeltjes.",
+       "Nee, dat hoort bij Stofeigenschap: kenmerk van een stof."
+      ],
+      "uh": "Zuivere stof: één soort deeltjes."
+     },
+     {
+      "v": "Met een filter haal je de zandkorrels uit het troebele water. Wat is hier aan de hand?",
+      "o": [
+       "Zuivere stof",
+       "Indampen",
+       "Destilleren",
+       "Filtreren"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Met een filter haal je de zandkorrels uit het troebele water. Dat past bij Filtreren: vaste stof eruit filteren.",
+      "uo": [
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Indampen: vloeistof weg, stof blijft.",
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt.",
+       "Klopt: vaste stof eruit filteren."
+      ],
+      "uh": "Filtreren: vaste stof eruit filteren."
+     },
+     {
+      "v": "Stoffen scheiden op verschil in kookpunt. Welk begrip past hierbij?",
+      "o": [
+       "Destilleren",
+       "Zuivere stof",
+       "Smeltpunt",
+       "Indampen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Stoffen scheiden op verschil in kookpunt. Dat past bij Destilleren: scheiden op kookpunt.",
+      "uo": [
+       "Klopt: scheiden op kookpunt.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Indampen: vloeistof weg, stof blijft."
+      ],
+      "uh": "Destilleren: scheiden op kookpunt."
+     },
+     {
+      "v": "De temperatuur waarbij een vloeistof gas wordt. Om welk begrip gaat het?",
+      "o": [
+       "Smeltpunt",
+       "Kookpunt",
+       "Dichtheid",
+       "Destilleren"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De temperatuur waarbij een vloeistof gas wordt. Dat past bij Kookpunt: vloeibaar wordt gas.",
+      "uo": [
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar.",
+       "Klopt: vloeibaar wordt gas.",
+       "Nee, dat hoort bij Dichtheid: massa per volume.",
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt."
+      ],
+      "uh": "Kookpunt: vloeibaar wordt gas."
+     },
+     {
+      "v": "Gedestilleerd water bevat maar één soort moleculen. Welk begrip herken je hier?",
+      "o": [
+       "Filtreren",
+       "Mengsel",
+       "Zuivere stof",
+       "Destilleren"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Gedestilleerd water bevat maar één soort moleculen. Dat past bij Zuivere stof: één soort deeltjes.",
+      "uo": [
+       "Nee, dat hoort bij Filtreren: vaste stof eruit filteren.",
+       "Nee, dat hoort bij Mengsel: meerdere stoffen.",
+       "Klopt: één soort deeltjes.",
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt."
+      ],
+      "uh": "Zuivere stof: één soort deeltjes."
+     },
+     {
+      "v": "De temperatuur waarbij een stof smelt. Wat is hier aan de hand?",
+      "o": [
+       "Stofeigenschap",
+       "Zuivere stof",
+       "Destilleren",
+       "Smeltpunt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De temperatuur waarbij een stof smelt. Dat past bij Smeltpunt: vast wordt vloeibaar.",
+      "uo": [
+       "Nee, dat hoort bij Stofeigenschap: kenmerk van een stof.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Destilleren: scheiden op kookpunt.",
+       "Klopt: vast wordt vloeibaar."
+      ],
+      "uh": "Smeltpunt: vast wordt vloeibaar."
+     },
+     {
+      "v": "Twee of meer stoffen door elkaar. Welk begrip past hierbij?",
+      "o": [
+       "Mengsel",
+       "Zuivere stof",
+       "Stofeigenschap",
+       "Dichtheid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Twee of meer stoffen door elkaar. Dat past bij Mengsel: meerdere stoffen.",
+      "uo": [
+       "Klopt: meerdere stoffen.",
+       "Nee, dat hoort bij Zuivere stof: één soort deeltjes.",
+       "Nee, dat hoort bij Stofeigenschap: kenmerk van een stof.",
+       "Nee, dat hoort bij Dichtheid: massa per volume."
+      ],
+      "uh": "Mengsel: meerdere stoffen."
+     },
+     {
+      "v": "Je scheidt alcohol en water op hun verschillende kookpunt. Om welk begrip gaat het?",
+      "o": [
+       "Filtreren",
+       "Destilleren",
+       "Smeltpunt",
+       "Stofeigenschap"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je scheidt alcohol en water op hun verschillende kookpunt. Dat past bij Destilleren: scheiden op kookpunt.",
+      "uo": [
+       "Nee, dat hoort bij Filtreren: vaste stof eruit filteren.",
+       "Klopt: scheiden op kookpunt.",
+       "Nee, dat hoort bij Smeltpunt: vast wordt vloeibaar.",
+       "Nee, dat hoort bij Stofeigenschap: kenmerk van een stof."
+      ],
+      "uh": "Destilleren: scheiden op kookpunt."
      }
     ],
     "begrippen": [
@@ -20681,6 +21099,424 @@ var VAKKEN_VMBO = [
        "Klopt: verdampen is vloeibaar naar gas."
       ],
       "uh": "vloeibaar naar gas: Verdampen is vloeibaar naar gas."
+     },
+     {
+      "v": "De toestand waarin deeltjes los en ver uiteen zitten. Welk begrip past hierbij?",
+      "o": [
+       "Gasfase",
+       "Vaste fase",
+       "Vloeibare fase",
+       "Verdampen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De toestand waarin deeltjes los en ver uiteen zitten. Dat past bij Gasfase: los en ver uit elkaar.",
+      "uo": [
+       "Klopt: los en ver uit elkaar.",
+       "Nee, dat hoort bij Vaste fase: dicht opeen, vast.",
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar.",
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas."
+      ],
+      "uh": "Gasfase: los en ver uit elkaar."
+     },
+     {
+      "v": "De deeltjes bewegen langs elkaar en nemen de vorm van de bak aan. Om welk begrip gaat het?",
+      "o": [
+       "Verdampen",
+       "Vloeibare fase",
+       "Atoom",
+       "Molecuulformule"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De deeltjes bewegen langs elkaar en nemen de vorm van de bak aan. Dat past bij Vloeibare fase: bewegen langs elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas.",
+       "Klopt: bewegen langs elkaar.",
+       "Nee, dat hoort bij Atoom: bouwsteen van moleculen.",
+       "Nee, dat hoort bij Molecuulformule: atomen in een molecuul."
+      ],
+      "uh": "Vloeibare fase: bewegen langs elkaar."
+     },
+     {
+      "v": "De toestand waarin deeltjes dicht opeen vastzitten. Welk begrip herken je hier?",
+      "o": [
+       "Gasfase",
+       "Vloeibare fase",
+       "Vaste fase",
+       "Molecuulformule"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De toestand waarin deeltjes dicht opeen vastzitten. Dat past bij Vaste fase: dicht opeen, vast.",
+      "uo": [
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar.",
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar.",
+       "Klopt: dicht opeen, vast.",
+       "Nee, dat hoort bij Molecuulformule: atomen in een molecuul."
+      ],
+      "uh": "Vaste fase: dicht opeen, vast."
+     },
+     {
+      "v": "De nog kleinere bouwsteentjes waaruit een molecuul bestaat. Wat is hier aan de hand?",
+      "o": [
+       "Vloeibare fase",
+       "Smelten",
+       "Vaste fase",
+       "Atoom"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De nog kleinere bouwsteentjes waaruit een molecuul bestaat. Dat past bij Atoom: bouwsteen van moleculen.",
+      "uo": [
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar.",
+       "Nee, dat hoort bij Smelten: vast naar vloeibaar.",
+       "Nee, dat hoort bij Vaste fase: dicht opeen, vast.",
+       "Klopt: bouwsteen van moleculen."
+      ],
+      "uh": "Atoom: bouwsteen van moleculen."
+     },
+     {
+      "v": "De notatie H2O geeft aan welke atomen in het deeltje zitten. Welk begrip past hierbij?",
+      "o": [
+       "Molecuulformule",
+       "Element",
+       "Gasfase",
+       "Smelten"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De notatie H2O geeft aan welke atomen in het deeltje zitten. Dat past bij Molecuulformule: atomen in een molecuul.",
+      "uo": [
+       "Klopt: atomen in een molecuul.",
+       "Nee, dat hoort bij Element: één soort atomen.",
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar.",
+       "Nee, dat hoort bij Smelten: vast naar vloeibaar."
+      ],
+      "uh": "Molecuulformule: atomen in een molecuul."
+     },
+     {
+      "v": "Twee waterstofatomen en één zuurstofatoom vormen samen dit deeltje. Om welk begrip gaat het?",
+      "o": [
+       "Element",
+       "Molecuul",
+       "Smelten",
+       "Vloeibare fase"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Twee waterstofatomen en één zuurstofatoom vormen samen dit deeltje. Dat past bij Molecuul: kleinste deeltje van een stof.",
+      "uo": [
+       "Nee, dat hoort bij Element: één soort atomen.",
+       "Klopt: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Smelten: vast naar vloeibaar.",
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar."
+      ],
+      "uh": "Molecuul: kleinste deeltje van een stof."
+     },
+     {
+      "v": "Een ijsblokje gaat over in vloeibaar water. Welk begrip herken je hier?",
+      "o": [
+       "Molecuul",
+       "Verdampen",
+       "Smelten",
+       "Gasfase"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een ijsblokje gaat over in vloeibaar water. Dat past bij Smelten: vast naar vloeibaar.",
+      "uo": [
+       "Nee, dat hoort bij Molecuul: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas.",
+       "Klopt: vast naar vloeibaar.",
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar."
+      ],
+      "uh": "Smelten: vast naar vloeibaar."
+     },
+     {
+      "v": "De deeltjes vliegen los en ver uit elkaar door de ruimte. Wat is hier aan de hand?",
+      "o": [
+       "Element",
+       "Molecuulformule",
+       "Atoom",
+       "Gasfase"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De deeltjes vliegen los en ver uit elkaar door de ruimte. Dat past bij Gasfase: los en ver uit elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Element: één soort atomen.",
+       "Nee, dat hoort bij Molecuulformule: atomen in een molecuul.",
+       "Nee, dat hoort bij Atoom: bouwsteen van moleculen.",
+       "Klopt: los en ver uit elkaar."
+      ],
+      "uh": "Gasfase: los en ver uit elkaar."
+     },
+     {
+      "v": "In deze toestand vult een stof de hele ruimte. Welk begrip past hierbij?",
+      "o": [
+       "Gasfase",
+       "Vaste fase",
+       "Vloeibare fase",
+       "Molecuul"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "In deze toestand vult een stof de hele ruimte. Dat past bij Gasfase: los en ver uit elkaar.",
+      "uo": [
+       "Klopt: los en ver uit elkaar.",
+       "Nee, dat hoort bij Vaste fase: dicht opeen, vast.",
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar.",
+       "Nee, dat hoort bij Molecuul: kleinste deeltje van een stof."
+      ],
+      "uh": "Gasfase: los en ver uit elkaar."
+     },
+     {
+      "v": "In deze toestand houdt een stof zijn eigen vorm. Om welk begrip gaat het?",
+      "o": [
+       "Vloeibare fase",
+       "Vaste fase",
+       "Gasfase",
+       "Molecuulformule"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In deze toestand houdt een stof zijn eigen vorm. Dat past bij Vaste fase: dicht opeen, vast.",
+      "uo": [
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar.",
+       "Klopt: dicht opeen, vast.",
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar.",
+       "Nee, dat hoort bij Molecuulformule: atomen in een molecuul."
+      ],
+      "uh": "Vaste fase: dicht opeen, vast."
+     },
+     {
+      "v": "De overgang van vloeibaar naar gas. Welk begrip herken je hier?",
+      "o": [
+       "Gasfase",
+       "Molecuul",
+       "Verdampen",
+       "Element"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De overgang van vloeibaar naar gas. Dat past bij Verdampen: vloeibaar naar gas.",
+      "uo": [
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar.",
+       "Nee, dat hoort bij Molecuul: kleinste deeltje van een stof.",
+       "Klopt: vloeibaar naar gas.",
+       "Nee, dat hoort bij Element: één soort atomen."
+      ],
+      "uh": "Verdampen: vloeibaar naar gas."
+     },
+     {
+      "v": "Een stof die uit één soort atomen bestaat. Wat is hier aan de hand?",
+      "o": [
+       "Vloeibare fase",
+       "Molecuul",
+       "Atoom",
+       "Element"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een stof die uit één soort atomen bestaat. Dat past bij Element: één soort atomen.",
+      "uo": [
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar.",
+       "Nee, dat hoort bij Molecuul: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Atoom: bouwsteen van moleculen.",
+       "Klopt: één soort atomen."
+      ],
+      "uh": "Element: één soort atomen."
+     },
+     {
+      "v": "Zuiver koper bestaat uit maar één soort atomen. Welk begrip past hierbij?",
+      "o": [
+       "Element",
+       "Molecuul",
+       "Atoom",
+       "Verdampen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Zuiver koper bestaat uit maar één soort atomen. Dat past bij Element: één soort atomen.",
+      "uo": [
+       "Klopt: één soort atomen.",
+       "Nee, dat hoort bij Molecuul: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Atoom: bouwsteen van moleculen.",
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas."
+      ],
+      "uh": "Element: één soort atomen."
+     },
+     {
+      "v": "Koolstof en zuurstof zijn soorten van dit deeltje. Om welk begrip gaat het?",
+      "o": [
+       "Smelten",
+       "Atoom",
+       "Vaste fase",
+       "Vloeibare fase"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Koolstof en zuurstof zijn soorten van dit deeltje. Dat past bij Atoom: bouwsteen van moleculen.",
+      "uo": [
+       "Nee, dat hoort bij Smelten: vast naar vloeibaar.",
+       "Klopt: bouwsteen van moleculen.",
+       "Nee, dat hoort bij Vaste fase: dicht opeen, vast.",
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar."
+      ],
+      "uh": "Atoom: bouwsteen van moleculen."
+     },
+     {
+      "v": "Het kleinste deeltje van een stof. Welk begrip herken je hier?",
+      "o": [
+       "Vloeibare fase",
+       "Atoom",
+       "Molecuul",
+       "Verdampen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het kleinste deeltje van een stof. Dat past bij Molecuul: kleinste deeltje van een stof.",
+      "uo": [
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar.",
+       "Nee, dat hoort bij Atoom: bouwsteen van moleculen.",
+       "Klopt: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas."
+      ],
+      "uh": "Molecuul: kleinste deeltje van een stof."
+     },
+     {
+      "v": "De toestand waarin deeltjes langs elkaar bewegen. Wat is hier aan de hand?",
+      "o": [
+       "Molecuul",
+       "Vaste fase",
+       "Gasfase",
+       "Vloeibare fase"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De toestand waarin deeltjes langs elkaar bewegen. Dat past bij Vloeibare fase: bewegen langs elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Molecuul: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Vaste fase: dicht opeen, vast.",
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar.",
+       "Klopt: bewegen langs elkaar."
+      ],
+      "uh": "Vloeibare fase: bewegen langs elkaar."
+     },
+     {
+      "v": "Een plas water wordt langzaam waterdamp. Welk begrip past hierbij?",
+      "o": [
+       "Verdampen",
+       "Molecuul",
+       "Gasfase",
+       "Element"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een plas water wordt langzaam waterdamp. Dat past bij Verdampen: vloeibaar naar gas.",
+      "uo": [
+       "Klopt: vloeibaar naar gas.",
+       "Nee, dat hoort bij Molecuul: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar.",
+       "Nee, dat hoort bij Element: één soort atomen."
+      ],
+      "uh": "Verdampen: vloeibaar naar gas."
+     },
+     {
+      "v": "De deeltjes zitten dicht opeen en trillen op hun plaats. Om welk begrip gaat het?",
+      "o": [
+       "Gasfase",
+       "Vaste fase",
+       "Vloeibare fase",
+       "Verdampen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De deeltjes zitten dicht opeen en trillen op hun plaats. Dat past bij Vaste fase: dicht opeen, vast.",
+      "uo": [
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar.",
+       "Klopt: dicht opeen, vast.",
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar.",
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas."
+      ],
+      "uh": "Vaste fase: dicht opeen, vast."
+     },
+     {
+      "v": "Het kleinste deeltje van water dat nog steeds water is. Welk begrip herken je hier?",
+      "o": [
+       "Verdampen",
+       "Atoom",
+       "Molecuul",
+       "Molecuulformule"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het kleinste deeltje van water dat nog steeds water is. Dat past bij Molecuul: kleinste deeltje van een stof.",
+      "uo": [
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas.",
+       "Nee, dat hoort bij Atoom: bouwsteen van moleculen.",
+       "Klopt: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Molecuulformule: atomen in een molecuul."
+      ],
+      "uh": "Molecuul: kleinste deeltje van een stof."
+     },
+     {
+      "v": "Een formule die de atomen in een molecuul weergeeft. Wat is hier aan de hand?",
+      "o": [
+       "Gasfase",
+       "Vloeibare fase",
+       "Verdampen",
+       "Molecuulformule"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een formule die de atomen in een molecuul weergeeft. Dat past bij Molecuulformule: atomen in een molecuul.",
+      "uo": [
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar.",
+       "Nee, dat hoort bij Vloeibare fase: bewegen langs elkaar.",
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas.",
+       "Klopt: atomen in een molecuul."
+      ],
+      "uh": "Molecuulformule: atomen in een molecuul."
+     },
+     {
+      "v": "Het bouwsteentje waaruit moleculen bestaan. Welk begrip past hierbij?",
+      "o": [
+       "Atoom",
+       "Molecuul",
+       "Element",
+       "Verdampen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het bouwsteentje waaruit moleculen bestaan. Dat past bij Atoom: bouwsteen van moleculen.",
+      "uo": [
+       "Klopt: bouwsteen van moleculen.",
+       "Nee, dat hoort bij Molecuul: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Element: één soort atomen.",
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas."
+      ],
+      "uh": "Atoom: bouwsteen van moleculen."
+     },
+     {
+      "v": "De overgang van vast naar vloeibaar. Om welk begrip gaat het?",
+      "o": [
+       "Verdampen",
+       "Smelten",
+       "Molecuul",
+       "Gasfase"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De overgang van vast naar vloeibaar. Dat past bij Smelten: vast naar vloeibaar.",
+      "uo": [
+       "Nee, dat hoort bij Verdampen: vloeibaar naar gas.",
+       "Klopt: vast naar vloeibaar.",
+       "Nee, dat hoort bij Molecuul: kleinste deeltje van een stof.",
+       "Nee, dat hoort bij Gasfase: los en ver uit elkaar."
+      ],
+      "uh": "Smelten: vast naar vloeibaar."
      }
     ],
     "begrippen": [
@@ -20888,6 +21724,462 @@ var VAKKEN_VMBO = [
        "Klopt: er komt vaak warmte of licht (energie) vrij."
       ],
       "uh": "er komt energie vrij: Er komt vaak warmte of licht (energie) vrij."
+     },
+     {
+      "v": "Water valt uiteen in waterstof en zuurstof. Welk begrip past hierbij?",
+      "o": [
+       "Ontleden",
+       "Vormingsreactie",
+       "Reactieschema",
+       "Chemische reactie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Water valt uiteen in waterstof en zuurstof. Dat past bij Ontleden: uiteen in meerdere.",
+      "uo": [
+       "Klopt: uiteen in meerdere.",
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof.",
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan."
+      ],
+      "uh": "Ontleden: uiteen in meerdere."
+     },
+     {
+      "v": "Eén stof valt uiteen in meerdere aparte stoffen. Om welk begrip gaat het?",
+      "o": [
+       "Faseovergang",
+       "Ontleden",
+       "Reactieproduct",
+       "Chemische reactie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Eén stof valt uiteen in meerdere aparte stoffen. Dat past bij Ontleden: uiteen in meerdere.",
+      "uo": [
+       "Nee, dat hoort bij Faseovergang: geen nieuwe stof.",
+       "Klopt: uiteen in meerdere.",
+       "Nee, dat hoort bij Reactieproduct: nieuwe stof na de reactie.",
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan."
+      ],
+      "uh": "Ontleden: uiteen in meerdere."
+     },
+     {
+      "v": "Ijs wordt water, maar het blijft dezelfde stof. Welk begrip herken je hier?",
+      "o": [
+       "Reactie-energie",
+       "Chemische reactie",
+       "Faseovergang",
+       "Reactieproduct"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Ijs wordt water, maar het blijft dezelfde stof. Dat past bij Faseovergang: geen nieuwe stof.",
+      "uo": [
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie.",
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan.",
+       "Klopt: geen nieuwe stof.",
+       "Nee, dat hoort bij Reactieproduct: nieuwe stof na de reactie."
+      ],
+      "uh": "Faseovergang: geen nieuwe stof."
+     },
+     {
+      "v": "Sommige reacties hebben juist energie nodig om te starten. Wat is hier aan de hand?",
+      "o": [
+       "Faseovergang",
+       "Reactieschema",
+       "Vormingsreactie",
+       "Reactie-energie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Sommige reacties hebben juist energie nodig om te starten. Dat past bij Reactie-energie: energie bij een reactie.",
+      "uo": [
+       "Nee, dat hoort bij Faseovergang: geen nieuwe stof.",
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof.",
+       "Klopt: energie bij een reactie."
+      ],
+      "uh": "Reactie-energie: energie bij een reactie."
+     },
+     {
+      "v": "Je schrijft de beginstoffen met een pijl naar de producten. Welk begrip past hierbij?",
+      "o": [
+       "Reactieschema",
+       "Vormingsreactie",
+       "Reactie-energie",
+       "Ontleden"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je schrijft de beginstoffen met een pijl naar de producten. Dat past bij Reactieschema: beginstoffen → producten.",
+      "uo": [
+       "Klopt: beginstoffen → producten.",
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof.",
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie.",
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere."
+      ],
+      "uh": "Reactieschema: beginstoffen → producten."
+     },
+     {
+      "v": "De energie die vrijkomt of nodig is bij een reactie. Om welk begrip gaat het?",
+      "o": [
+       "Reactieschema",
+       "Reactie-energie",
+       "Vormingsreactie",
+       "Faseovergang"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De energie die vrijkomt of nodig is bij een reactie. Dat past bij Reactie-energie: energie bij een reactie.",
+      "uo": [
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Klopt: energie bij een reactie.",
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof.",
+       "Nee, dat hoort bij Faseovergang: geen nieuwe stof."
+      ],
+      "uh": "Reactie-energie: energie bij een reactie."
+     },
+     {
+      "v": "Uit meerdere stoffen ontstaat samen één nieuwe stof. Welk begrip herken je hier?",
+      "o": [
+       "Faseovergang",
+       "Ontleden",
+       "Vormingsreactie",
+       "Reactieschema"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Uit meerdere stoffen ontstaat samen één nieuwe stof. Dat past bij Vormingsreactie: samen tot één stof.",
+      "uo": [
+       "Nee, dat hoort bij Faseovergang: geen nieuwe stof.",
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere.",
+       "Klopt: samen tot één stof.",
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten."
+      ],
+      "uh": "Vormingsreactie: samen tot één stof."
+     },
+     {
+      "v": "De stoffen die je vóór de reactie hebt. Wat is hier aan de hand?",
+      "o": [
+       "Ontleden",
+       "Reactie-energie",
+       "Reactieschema",
+       "Beginstof"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De stoffen die je vóór de reactie hebt. Dat past bij Beginstof: stof vooraf.",
+      "uo": [
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere.",
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie.",
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Klopt: stof vooraf."
+      ],
+      "uh": "Beginstof: stof vooraf."
+     },
+     {
+      "v": "Kokend water wordt damp, nog steeds water. Welk begrip past hierbij?",
+      "o": [
+       "Faseovergang",
+       "Chemische reactie",
+       "Beginstof",
+       "Reactieproduct"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Kokend water wordt damp, nog steeds water. Dat past bij Faseovergang: geen nieuwe stof.",
+      "uo": [
+       "Klopt: geen nieuwe stof.",
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan.",
+       "Nee, dat hoort bij Beginstof: stof vooraf.",
+       "Nee, dat hoort bij Reactieproduct: nieuwe stof na de reactie."
+      ],
+      "uh": "Faseovergang: geen nieuwe stof."
+     },
+     {
+      "v": "Ijzer en zuurstof vormen samen roest, een nieuwe stof. Om welk begrip gaat het?",
+      "o": [
+       "Faseovergang",
+       "Chemische reactie",
+       "Reactieschema",
+       "Vormingsreactie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Ijzer en zuurstof vormen samen roest, een nieuwe stof. Dat past bij Chemische reactie: nieuwe stoffen ontstaan.",
+      "uo": [
+       "Nee, dat hoort bij Faseovergang: geen nieuwe stof.",
+       "Klopt: nieuwe stoffen ontstaan.",
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof."
+      ],
+      "uh": "Chemische reactie: nieuwe stoffen ontstaan."
+     },
+     {
+      "v": "IJzer en zwavel vormen samen één nieuwe stof. Welk begrip herken je hier?",
+      "o": [
+       "Reactieschema",
+       "Reactieproduct",
+       "Vormingsreactie",
+       "Reactie-energie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "IJzer en zwavel vormen samen één nieuwe stof. Dat past bij Vormingsreactie: samen tot één stof.",
+      "uo": [
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Nee, dat hoort bij Reactieproduct: nieuwe stof na de reactie.",
+       "Klopt: samen tot één stof.",
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie."
+      ],
+      "uh": "Vormingsreactie: samen tot één stof."
+     },
+     {
+      "v": "Een reactie waarbij uit meerdere stoffen één nieuwe ontstaat. Wat is hier aan de hand?",
+      "o": [
+       "Reactieschema",
+       "Ontleden",
+       "Reactieproduct",
+       "Vormingsreactie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een reactie waarbij uit meerdere stoffen één nieuwe ontstaat. Dat past bij Vormingsreactie: samen tot één stof.",
+      "uo": [
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere.",
+       "Nee, dat hoort bij Reactieproduct: nieuwe stof na de reactie.",
+       "Klopt: samen tot één stof."
+      ],
+      "uh": "Vormingsreactie: samen tot één stof."
+     },
+     {
+      "v": "Een verandering van fase zonder dat er een nieuwe stof ontstaat. Welk begrip past hierbij?",
+      "o": [
+       "Faseovergang",
+       "Chemische reactie",
+       "Reactie-energie",
+       "Reactieproduct"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een verandering van fase zonder dat er een nieuwe stof ontstaat. Dat past bij Faseovergang: geen nieuwe stof.",
+      "uo": [
+       "Klopt: geen nieuwe stof.",
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan.",
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie.",
+       "Nee, dat hoort bij Reactieproduct: nieuwe stof na de reactie."
+      ],
+      "uh": "Faseovergang: geen nieuwe stof."
+     },
+     {
+      "v": "Water is dit na de reactie van waterstof en zuurstof. Om welk begrip gaat het?",
+      "o": [
+       "Reactie-energie",
+       "Reactieproduct",
+       "Reactieschema",
+       "Ontleden"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Water is dit na de reactie van waterstof en zuurstof. Dat past bij Reactieproduct: nieuwe stof na de reactie.",
+      "uo": [
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie.",
+       "Klopt: nieuwe stof na de reactie.",
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere."
+      ],
+      "uh": "Reactieproduct: nieuwe stof na de reactie."
+     },
+     {
+      "v": "Een nieuwe stof die bij de reactie ontstaat. Welk begrip herken je hier?",
+      "o": [
+       "Chemische reactie",
+       "Beginstof",
+       "Reactieproduct",
+       "Ontleden"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een nieuwe stof die bij de reactie ontstaat. Dat past bij Reactieproduct: nieuwe stof na de reactie.",
+      "uo": [
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan.",
+       "Nee, dat hoort bij Beginstof: stof vooraf.",
+       "Klopt: nieuwe stof na de reactie.",
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere."
+      ],
+      "uh": "Reactieproduct: nieuwe stof na de reactie."
+     },
+     {
+      "v": "De nieuwe stof die na de reactie is ontstaan. Wat is hier aan de hand?",
+      "o": [
+       "Reactieschema",
+       "Beginstof",
+       "Chemische reactie",
+       "Reactieproduct"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De nieuwe stof die na de reactie is ontstaan. Dat past bij Reactieproduct: nieuwe stof na de reactie.",
+      "uo": [
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Nee, dat hoort bij Beginstof: stof vooraf.",
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan.",
+       "Klopt: nieuwe stof na de reactie."
+      ],
+      "uh": "Reactieproduct: nieuwe stof na de reactie."
+     },
+     {
+      "v": "Een verandering waarbij nieuwe stoffen ontstaan. Welk begrip past hierbij?",
+      "o": [
+       "Chemische reactie",
+       "Ontleden",
+       "Vormingsreactie",
+       "Reactie-energie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een verandering waarbij nieuwe stoffen ontstaan. Dat past bij Chemische reactie: nieuwe stoffen ontstaan.",
+      "uo": [
+       "Klopt: nieuwe stoffen ontstaan.",
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere.",
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof.",
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie."
+      ],
+      "uh": "Chemische reactie: nieuwe stoffen ontstaan."
+     },
+     {
+      "v": "Een reactie waarbij één stof uiteenvalt in meerdere. Om welk begrip gaat het?",
+      "o": [
+       "Vormingsreactie",
+       "Ontleden",
+       "Reactieschema",
+       "Chemische reactie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een reactie waarbij één stof uiteenvalt in meerdere. Dat past bij Ontleden: uiteen in meerdere.",
+      "uo": [
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof.",
+       "Klopt: uiteen in meerdere.",
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan."
+      ],
+      "uh": "Ontleden: uiteen in meerdere."
+     },
+     {
+      "v": "Een stof die je vóór de reactie hebt. Welk begrip herken je hier?",
+      "o": [
+       "Chemische reactie",
+       "Reactieproduct",
+       "Beginstof",
+       "Vormingsreactie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een stof die je vóór de reactie hebt. Dat past bij Beginstof: stof vooraf.",
+      "uo": [
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan.",
+       "Nee, dat hoort bij Reactieproduct: nieuwe stof na de reactie.",
+       "Klopt: stof vooraf.",
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof."
+      ],
+      "uh": "Beginstof: stof vooraf."
+     },
+     {
+      "v": "Met een pijl geef je aan wat er tot wat reageert. Wat is hier aan de hand?",
+      "o": [
+       "Ontleden",
+       "Vormingsreactie",
+       "Reactieproduct",
+       "Reactieschema"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Met een pijl geef je aan wat er tot wat reageert. Dat past bij Reactieschema: beginstoffen → producten.",
+      "uo": [
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere.",
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof.",
+       "Nee, dat hoort bij Reactieproduct: nieuwe stof na de reactie.",
+       "Klopt: beginstoffen → producten."
+      ],
+      "uh": "Reactieschema: beginstoffen → producten."
+     },
+     {
+      "v": "Uit hout en zuurstof ontstaan bij verbranden nieuwe stoffen. Welk begrip past hierbij?",
+      "o": [
+       "Chemische reactie",
+       "Faseovergang",
+       "Reactie-energie",
+       "Reactieschema"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Uit hout en zuurstof ontstaan bij verbranden nieuwe stoffen. Dat past bij Chemische reactie: nieuwe stoffen ontstaan.",
+      "uo": [
+       "Klopt: nieuwe stoffen ontstaan.",
+       "Nee, dat hoort bij Faseovergang: geen nieuwe stof.",
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie.",
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten."
+      ],
+      "uh": "Chemische reactie: nieuwe stoffen ontstaan."
+     },
+     {
+      "v": "De notatie beginstoffen pijl reactieproducten. Om welk begrip gaat het?",
+      "o": [
+       "Vormingsreactie",
+       "Reactieschema",
+       "Reactie-energie",
+       "Ontleden"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De notatie beginstoffen pijl reactieproducten. Dat past bij Reactieschema: beginstoffen → producten.",
+      "uo": [
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof.",
+       "Klopt: beginstoffen → producten.",
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie.",
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere."
+      ],
+      "uh": "Reactieschema: beginstoffen → producten."
+     },
+     {
+      "v": "Waterstof en zuurstof zijn dit vóór ze water vormen. Welk begrip herken je hier?",
+      "o": [
+       "Reactieschema",
+       "Reactie-energie",
+       "Beginstof",
+       "Ontleden"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Waterstof en zuurstof zijn dit vóór ze water vormen. Dat past bij Beginstof: stof vooraf.",
+      "uo": [
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Nee, dat hoort bij Reactie-energie: energie bij een reactie.",
+       "Klopt: stof vooraf.",
+       "Nee, dat hoort bij Ontleden: uiteen in meerdere."
+      ],
+      "uh": "Beginstof: stof vooraf."
+     },
+     {
+      "v": "Bij het branden komen er warmte en licht vrij. Wat is hier aan de hand?",
+      "o": [
+       "Vormingsreactie",
+       "Chemische reactie",
+       "Reactieschema",
+       "Reactie-energie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij het branden komen er warmte en licht vrij. Dat past bij Reactie-energie: energie bij een reactie.",
+      "uo": [
+       "Nee, dat hoort bij Vormingsreactie: samen tot één stof.",
+       "Nee, dat hoort bij Chemische reactie: nieuwe stoffen ontstaan.",
+       "Nee, dat hoort bij Reactieschema: beginstoffen → producten.",
+       "Klopt: energie bij een reactie."
+      ],
+      "uh": "Reactie-energie: energie bij een reactie."
      }
     ],
     "begrippen": [
@@ -21092,6 +22384,424 @@ var VAKKEN_VMBO = [
        "Klopt: luchtvervuiling zijn schadelijke stoffen in de lucht, zoals fijnstof."
       ],
       "uh": "schadelijke stoffen in de lucht: Luchtvervuiling zijn schadelijke stoffen in de lucht, zoals fijnstof."
+     },
+     {
+      "v": "Brandstof uit de aarde zoals olie, gas en steenkool. Welk begrip past hierbij?",
+      "o": [
+       "Fossiele brandstof",
+       "Brandstof",
+       "Luchtvervuiling",
+       "Branddriehoek"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Brandstof uit de aarde zoals olie, gas en steenkool. Dat past bij Fossiele brandstof: olie, gas, steenkool.",
+      "uo": [
+       "Klopt: olie, gas, steenkool.",
+       "Nee, dat hoort bij Brandstof: stof die je verbrandt.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+       "Nee, dat hoort bij Branddriehoek: brandstof, zuurstof, warmte."
+      ],
+      "uh": "Fossiele brandstof: olie, gas, steenkool."
+     },
+     {
+      "v": "De opwarming van de aarde door broeikasgassen. Om welk begrip gaat het?",
+      "o": [
+       "Luchtvervuiling",
+       "Broeikaseffect",
+       "Brandstof",
+       "Verbranden"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De opwarming van de aarde door broeikasgassen. Dat past bij Broeikaseffect: aarde warmt op.",
+      "uo": [
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+       "Klopt: aarde warmt op.",
+       "Nee, dat hoort bij Brandstof: stof die je verbrandt.",
+       "Nee, dat hoort bij Verbranden: brandstof + zuurstof."
+      ],
+      "uh": "Broeikaseffect: aarde warmt op."
+     },
+     {
+      "v": "Het gas CO2 dat bij verbranding ontstaat. Welk begrip herken je hier?",
+      "o": [
+       "Broeikaseffect",
+       "Branddriehoek",
+       "Koolstofdioxide",
+       "Luchtvervuiling"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het gas CO2 dat bij verbranding ontstaat. Dat past bij Koolstofdioxide: CO₂ bij verbranding.",
+      "uo": [
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Branddriehoek: brandstof, zuurstof, warmte.",
+       "Klopt: CO₂ bij verbranding.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht."
+      ],
+      "uh": "Koolstofdioxide: CO₂ bij verbranding."
+     },
+     {
+      "v": "In de open haard stook je hout om warmte te krijgen. Wat is hier aan de hand?",
+      "o": [
+       "Broeikaseffect",
+       "Zuurstof",
+       "Verbranden",
+       "Brandstof"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "In de open haard stook je hout om warmte te krijgen. Dat past bij Brandstof: stof die je verbrandt.",
+      "uo": [
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Zuurstof: nodig voor vuur.",
+       "Nee, dat hoort bij Verbranden: brandstof + zuurstof.",
+       "Klopt: stof die je verbrandt."
+      ],
+      "uh": "Brandstof: stof die je verbrandt."
+     },
+     {
+      "v": "Voor vuur heb je brandstof, zuurstof en warmte tegelijk nodig. Welk begrip past hierbij?",
+      "o": [
+       "Branddriehoek",
+       "Broeikaseffect",
+       "Koolstofdioxide",
+       "Fossiele brandstof"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Voor vuur heb je brandstof, zuurstof en warmte tegelijk nodig. Dat past bij Branddriehoek: brandstof, zuurstof, warmte.",
+      "uo": [
+       "Klopt: brandstof, zuurstof, warmte.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas, steenkool."
+      ],
+      "uh": "Branddriehoek: brandstof, zuurstof, warmte."
+     },
+     {
+      "v": "Een kaars gaat uit als je er een glas overheen zet en de zuurstof op is. Om welk begrip gaat het?",
+      "o": [
+       "Broeikaseffect",
+       "Verbranden",
+       "Branddriehoek",
+       "Luchtvervuiling"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een kaars gaat uit als je er een glas overheen zet en de zuurstof op is. Dat past bij Verbranden: brandstof + zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Klopt: brandstof + zuurstof.",
+       "Nee, dat hoort bij Branddriehoek: brandstof, zuurstof, warmte.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht."
+      ],
+      "uh": "Verbranden: brandstof + zuurstof."
+     },
+     {
+      "v": "Bij onvolledige verbranding ontstaat dit giftige gas. Welk begrip herken je hier?",
+      "o": [
+       "Verbranden",
+       "Koolstofdioxide",
+       "Koolstofmonoxide",
+       "Luchtvervuiling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Bij onvolledige verbranding ontstaat dit giftige gas. Dat past bij Koolstofmonoxide: giftig CO.",
+      "uo": [
+       "Nee, dat hoort bij Verbranden: brandstof + zuurstof.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding.",
+       "Klopt: giftig CO.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht."
+      ],
+      "uh": "Koolstofmonoxide: giftig CO."
+     },
+     {
+      "v": "Een auto rijdt op benzine die uit aardolie komt. Wat is hier aan de hand?",
+      "o": [
+       "Broeikaseffect",
+       "Verbranden",
+       "Luchtvervuiling",
+       "Fossiele brandstof"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een auto rijdt op benzine die uit aardolie komt. Dat past bij Fossiele brandstof: olie, gas, steenkool.",
+      "uo": [
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Verbranden: brandstof + zuurstof.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+       "Klopt: olie, gas, steenkool."
+      ],
+      "uh": "Fossiele brandstof: olie, gas, steenkool."
+     },
+     {
+      "v": "Steenkool die in miljoenen jaren in de aarde is ontstaan. Welk begrip past hierbij?",
+      "o": [
+       "Fossiele brandstof",
+       "Brandstof",
+       "Verbranden",
+       "Koolstofdioxide"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Steenkool die in miljoenen jaren in de aarde is ontstaan. Dat past bij Fossiele brandstof: olie, gas, steenkool.",
+      "uo": [
+       "Klopt: olie, gas, steenkool.",
+       "Nee, dat hoort bij Brandstof: stof die je verbrandt.",
+       "Nee, dat hoort bij Verbranden: brandstof + zuurstof.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding."
+      ],
+      "uh": "Fossiele brandstof: olie, gas, steenkool."
+     },
+     {
+      "v": "Gassen in de lucht houden warmte vast en de aarde warmt op. Om welk begrip gaat het?",
+      "o": [
+       "Luchtvervuiling",
+       "Broeikaseffect",
+       "Brandstof",
+       "Verbranden"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Gassen in de lucht houden warmte vast en de aarde warmt op. Dat past bij Broeikaseffect: aarde warmt op.",
+      "uo": [
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+       "Klopt: aarde warmt op.",
+       "Nee, dat hoort bij Brandstof: stof die je verbrandt.",
+       "Nee, dat hoort bij Verbranden: brandstof + zuurstof."
+      ],
+      "uh": "Broeikaseffect: aarde warmt op."
+     },
+     {
+      "v": "Schadelijke stoffen in de lucht. Welk begrip herken je hier?",
+      "o": [
+       "Koolstofmonoxide",
+       "Branddriehoek",
+       "Luchtvervuiling",
+       "Koolstofdioxide"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Schadelijke stoffen in de lucht. Dat past bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+      "uo": [
+       "Nee, dat hoort bij Koolstofmonoxide: giftig CO.",
+       "Nee, dat hoort bij Branddriehoek: brandstof, zuurstof, warmte.",
+       "Klopt: schadelijke stoffen in de lucht.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding."
+      ],
+      "uh": "Luchtvervuiling: schadelijke stoffen in de lucht."
+     },
+     {
+      "v": "Het gas dat nodig is voor verbranding. Wat is hier aan de hand?",
+      "o": [
+       "Luchtvervuiling",
+       "Koolstofdioxide",
+       "Broeikaseffect",
+       "Zuurstof"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het gas dat nodig is voor verbranding. Dat past bij Zuurstof: nodig voor vuur.",
+      "uo": [
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Klopt: nodig voor vuur."
+      ],
+      "uh": "Zuurstof: nodig voor vuur."
+     },
+     {
+      "v": "Zonder dit gas uit de lucht dooft een vuur. Welk begrip past hierbij?",
+      "o": [
+       "Zuurstof",
+       "Koolstofdioxide",
+       "Luchtvervuiling",
+       "Brandstof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Zonder dit gas uit de lucht dooft een vuur. Dat past bij Zuurstof: nodig voor vuur.",
+      "uo": [
+       "Klopt: nodig voor vuur.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+       "Nee, dat hoort bij Brandstof: stof die je verbrandt."
+      ],
+      "uh": "Zuurstof: nodig voor vuur."
+     },
+     {
+      "v": "Benzine, hout en gas zijn hier voorbeelden van. Om welk begrip gaat het?",
+      "o": [
+       "Verbranden",
+       "Brandstof",
+       "Luchtvervuiling",
+       "Koolstofdioxide"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Benzine, hout en gas zijn hier voorbeelden van. Dat past bij Brandstof: stof die je verbrandt.",
+      "uo": [
+       "Nee, dat hoort bij Verbranden: brandstof + zuurstof.",
+       "Klopt: stof die je verbrandt.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding."
+      ],
+      "uh": "Brandstof: stof die je verbrandt."
+     },
+     {
+      "v": "Een reactie van een brandstof met zuurstof. Welk begrip herken je hier?",
+      "o": [
+       "Branddriehoek",
+       "Broeikaseffect",
+       "Verbranden",
+       "Luchtvervuiling"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een reactie van een brandstof met zuurstof. Dat past bij Verbranden: brandstof + zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Branddriehoek: brandstof, zuurstof, warmte.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Klopt: brandstof + zuurstof.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht."
+      ],
+      "uh": "Verbranden: brandstof + zuurstof."
+     },
+     {
+      "v": "Doordat er meer CO2 in de lucht komt, stijgt de temperatuur op aarde. Wat is hier aan de hand?",
+      "o": [
+       "Verbranden",
+       "Luchtvervuiling",
+       "Brandstof",
+       "Broeikaseffect"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Doordat er meer CO2 in de lucht komt, stijgt de temperatuur op aarde. Dat past bij Broeikaseffect: aarde warmt op.",
+      "uo": [
+       "Nee, dat hoort bij Verbranden: brandstof + zuurstof.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+       "Nee, dat hoort bij Brandstof: stof die je verbrandt.",
+       "Klopt: aarde warmt op."
+      ],
+      "uh": "Broeikaseffect: aarde warmt op."
+     },
+     {
+      "v": "Fijnstof en uitlaatgassen maken de lucht schadelijk. Welk begrip past hierbij?",
+      "o": [
+       "Luchtvervuiling",
+       "Branddriehoek",
+       "Koolstofmonoxide",
+       "Koolstofdioxide"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Fijnstof en uitlaatgassen maken de lucht schadelijk. Dat past bij Luchtvervuiling: schadelijke stoffen in de lucht.",
+      "uo": [
+       "Klopt: schadelijke stoffen in de lucht.",
+       "Nee, dat hoort bij Branddriehoek: brandstof, zuurstof, warmte.",
+       "Nee, dat hoort bij Koolstofmonoxide: giftig CO.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding."
+      ],
+      "uh": "Luchtvervuiling: schadelijke stoffen in de lucht."
+     },
+     {
+      "v": "Bij verbranding ontstaat dit gas dat het broeikaseffect versterkt. Om welk begrip gaat het?",
+      "o": [
+       "Koolstofmonoxide",
+       "Koolstofdioxide",
+       "Zuurstof",
+       "Branddriehoek"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij verbranding ontstaat dit gas dat het broeikaseffect versterkt. Dat past bij Koolstofdioxide: CO₂ bij verbranding.",
+      "uo": [
+       "Nee, dat hoort bij Koolstofmonoxide: giftig CO.",
+       "Klopt: CO₂ bij verbranding.",
+       "Nee, dat hoort bij Zuurstof: nodig voor vuur.",
+       "Nee, dat hoort bij Branddriehoek: brandstof, zuurstof, warmte."
+      ],
+      "uh": "Koolstofdioxide: CO₂ bij verbranding."
+     },
+     {
+      "v": "Hout reageert met zuurstof en geeft warmte af. Welk begrip herken je hier?",
+      "o": [
+       "Broeikaseffect",
+       "Branddriehoek",
+       "Verbranden",
+       "Luchtvervuiling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Hout reageert met zuurstof en geeft warmte af. Dat past bij Verbranden: brandstof + zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Branddriehoek: brandstof, zuurstof, warmte.",
+       "Klopt: brandstof + zuurstof.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht."
+      ],
+      "uh": "Verbranden: brandstof + zuurstof."
+     },
+     {
+      "v": "De drie dingen die samen nodig zijn voor vuur. Wat is hier aan de hand?",
+      "o": [
+       "Fossiele brandstof",
+       "Broeikaseffect",
+       "Koolstofdioxide",
+       "Branddriehoek"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De drie dingen die samen nodig zijn voor vuur. Dat past bij Branddriehoek: brandstof, zuurstof, warmte.",
+      "uo": [
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas, steenkool.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding.",
+       "Klopt: brandstof, zuurstof, warmte."
+      ],
+      "uh": "Branddriehoek: brandstof, zuurstof, warmte."
+     },
+     {
+      "v": "Een stof die je verbrandt om energie te krijgen. Welk begrip past hierbij?",
+      "o": [
+       "Brandstof",
+       "Zuurstof",
+       "Broeikaseffect",
+       "Koolstofdioxide"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een stof die je verbrandt om energie te krijgen. Dat past bij Brandstof: stof die je verbrandt.",
+      "uo": [
+       "Klopt: stof die je verbrandt.",
+       "Nee, dat hoort bij Zuurstof: nodig voor vuur.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding."
+      ],
+      "uh": "Brandstof: stof die je verbrandt."
+     },
+     {
+      "v": "Het giftige gas CO bij onvolledige verbranding. Om welk begrip gaat het?",
+      "o": [
+       "Koolstofdioxide",
+       "Koolstofmonoxide",
+       "Verbranden",
+       "Luchtvervuiling"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het giftige gas CO bij onvolledige verbranding. Dat past bij Koolstofmonoxide: giftig CO.",
+      "uo": [
+       "Nee, dat hoort bij Koolstofdioxide: CO₂ bij verbranding.",
+       "Klopt: giftig CO.",
+       "Nee, dat hoort bij Verbranden: brandstof + zuurstof.",
+       "Nee, dat hoort bij Luchtvervuiling: schadelijke stoffen in de lucht."
+      ],
+      "uh": "Koolstofmonoxide: giftig CO."
      }
     ],
     "begrippen": [
@@ -21280,6 +22990,462 @@ var VAKKEN_VMBO = [
        "De keuze maakt wel degelijk uit."
       ],
       "uh": "om het geschikt te laten zijn voor het doel: Je kiest een materiaal dat past bij het doel (sterk, licht)."
+     },
+     {
+      "v": "Oud papier wordt weer nieuw papier. Welk begrip past hierbij?",
+      "o": [
+       "Grondstof",
+       "Duurzaam",
+       "Productieproces",
+       "Recyclen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Oud papier wordt weer nieuw papier. Dat past bij Recyclen: opnieuw gebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Nee, dat hoort bij Duurzaam: zuinig en milieuvriendelijk.",
+       "Nee, dat hoort bij Productieproces: grondstof naar product.",
+       "Klopt: opnieuw gebruiken."
+      ],
+      "uh": "Recyclen: opnieuw gebruiken."
+     },
+     {
+      "v": "Van oude flessen worden nieuwe producten gemaakt. Om welk begrip gaat het?",
+      "o": [
+       "Recyclen",
+       "Duurzaam",
+       "Productieproces",
+       "Grondstof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Van oude flessen worden nieuwe producten gemaakt. Dat past bij Recyclen: opnieuw gebruiken.",
+      "uo": [
+       "Klopt: opnieuw gebruiken.",
+       "Nee, dat hoort bij Duurzaam: zuinig en milieuvriendelijk.",
+       "Nee, dat hoort bij Productieproces: grondstof naar product.",
+       "Nee, dat hoort bij Grondstof: ruwe beginstof."
+      ],
+      "uh": "Recyclen: opnieuw gebruiken."
+     },
+     {
+      "v": "Je gaat zuinig om met grondstoffen, met oog op de toekomst. Welk begrip herken je hier?",
+      "o": [
+       "Kunststof",
+       "Duurzaam",
+       "Eindproduct",
+       "Grondstof"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je gaat zuinig om met grondstoffen, met oog op de toekomst. Dat past bij Duurzaam: zuinig en milieuvriendelijk.",
+      "uo": [
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Klopt: zuinig en milieuvriendelijk.",
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Nee, dat hoort bij Grondstof: ruwe beginstof."
+      ],
+      "uh": "Duurzaam: zuinig en milieuvriendelijk."
+     },
+     {
+      "v": "Hardheid, sterkte en gewicht bepalen je keuze. Wat is hier aan de hand?",
+      "o": [
+       "Productieproces",
+       "Kunststof",
+       "Eigenschap",
+       "Grondstof"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Hardheid, sterkte en gewicht bepalen je keuze. Dat past bij Eigenschap: kenmerk om te kiezen.",
+      "uo": [
+       "Nee, dat hoort bij Productieproces: grondstof naar product.",
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Klopt: kenmerk om te kiezen.",
+       "Nee, dat hoort bij Grondstof: ruwe beginstof."
+      ],
+      "uh": "Eigenschap: kenmerk om te kiezen."
+     },
+     {
+      "v": "Van grondstof via tussenstappen tot het eindproduct. Welk begrip past hierbij?",
+      "o": [
+       "Eigenschap",
+       "Kunststof",
+       "Recyclen",
+       "Productieproces"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Van grondstof via tussenstappen tot het eindproduct. Dat past bij Productieproces: grondstof naar product.",
+      "uo": [
+       "Nee, dat hoort bij Eigenschap: kenmerk om te kiezen.",
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken.",
+       "Klopt: grondstof naar product."
+      ],
+      "uh": "Productieproces: grondstof naar product."
+     },
+     {
+      "v": "Een kenmerk waarop je een materiaal kiest, zoals sterkte. Om welk begrip gaat het?",
+      "o": [
+       "Eigenschap",
+       "Kunststof",
+       "Productieproces",
+       "Grondstof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een kenmerk waarop je een materiaal kiest, zoals sterkte. Dat past bij Eigenschap: kenmerk om te kiezen.",
+      "uo": [
+       "Klopt: kenmerk om te kiezen.",
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Nee, dat hoort bij Productieproces: grondstof naar product.",
+       "Nee, dat hoort bij Grondstof: ruwe beginstof."
+      ],
+      "uh": "Eigenschap: kenmerk om te kiezen."
+     },
+     {
+      "v": "Deze plastic fles is gemaakt uit aardolie. Welk begrip herken je hier?",
+      "o": [
+       "Eigenschap",
+       "Kunststof",
+       "Eindproduct",
+       "Recyclen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Deze plastic fles is gemaakt uit aardolie. Dat past bij Kunststof: plastic uit olie.",
+      "uo": [
+       "Nee, dat hoort bij Eigenschap: kenmerk om te kiezen.",
+       "Klopt: plastic uit olie.",
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken."
+      ],
+      "uh": "Kunststof: plastic uit olie."
+     },
+     {
+      "v": "Plaatstaal is nog geen auto, maar wel een tussenstap. Wat is hier aan de hand?",
+      "o": [
+       "Grondstof",
+       "Eindproduct",
+       "Halffabricaat",
+       "Recyclen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Plaatstaal is nog geen auto, maar wel een tussenstap. Dat past bij Halffabricaat: tussenproduct.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Klopt: tussenproduct.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken."
+      ],
+      "uh": "Halffabricaat: tussenproduct."
+     },
+     {
+      "v": "Zo produceren dat er ook voor later genoeg blijft. Welk begrip past hierbij?",
+      "o": [
+       "Grondstof",
+       "Kunststof",
+       "Eindproduct",
+       "Duurzaam"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Zo produceren dat er ook voor later genoeg blijft. Dat past bij Duurzaam: zuinig en milieuvriendelijk.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Klopt: zuinig en milieuvriendelijk."
+      ],
+      "uh": "Duurzaam: zuinig en milieuvriendelijk."
+     },
+     {
+      "v": "Hout is dit voor het maken van papier. Om welk begrip gaat het?",
+      "o": [
+       "Grondstof",
+       "Eindproduct",
+       "Halffabricaat",
+       "Eigenschap"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Hout is dit voor het maken van papier. Dat past bij Grondstof: ruwe beginstof.",
+      "uo": [
+       "Klopt: ruwe beginstof.",
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Nee, dat hoort bij Halffabricaat: tussenproduct.",
+       "Nee, dat hoort bij Eigenschap: kenmerk om te kiezen."
+      ],
+      "uh": "Grondstof: ruwe beginstof."
+     },
+     {
+      "v": "Een licht en goedkoop materiaal uit olie. Welk begrip herken je hier?",
+      "o": [
+       "Grondstof",
+       "Kunststof",
+       "Halffabricaat",
+       "Productieproces"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een licht en goedkoop materiaal uit olie. Dat past bij Kunststof: plastic uit olie.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Klopt: plastic uit olie.",
+       "Nee, dat hoort bij Halffabricaat: tussenproduct.",
+       "Nee, dat hoort bij Productieproces: grondstof naar product."
+      ],
+      "uh": "Kunststof: plastic uit olie."
+     },
+     {
+      "v": "Plastic, gemaakt uit aardolie. Wat is hier aan de hand?",
+      "o": [
+       "Eindproduct",
+       "Eigenschap",
+       "Kunststof",
+       "Recyclen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Plastic, gemaakt uit aardolie. Dat past bij Kunststof: plastic uit olie.",
+      "uo": [
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Nee, dat hoort bij Eigenschap: kenmerk om te kiezen.",
+       "Klopt: plastic uit olie.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken."
+      ],
+      "uh": "Kunststof: plastic uit olie."
+     },
+     {
+      "v": "Zuinig met grondstoffen en milieu. Welk begrip past hierbij?",
+      "o": [
+       "Grondstof",
+       "Recyclen",
+       "Productieproces",
+       "Duurzaam"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Zuinig met grondstoffen en milieu. Dat past bij Duurzaam: zuinig en milieuvriendelijk.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken.",
+       "Nee, dat hoort bij Productieproces: grondstof naar product.",
+       "Klopt: zuinig en milieuvriendelijk."
+      ],
+      "uh": "Duurzaam: zuinig en milieuvriendelijk."
+     },
+     {
+      "v": "Het brood in de winkel is dit. Om welk begrip gaat het?",
+      "o": [
+       "Eindproduct",
+       "Grondstof",
+       "Eigenschap",
+       "Kunststof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het brood in de winkel is dit. Dat past bij Eindproduct: afgewerkt product.",
+      "uo": [
+       "Klopt: afgewerkt product.",
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Nee, dat hoort bij Eigenschap: kenmerk om te kiezen.",
+       "Nee, dat hoort bij Kunststof: plastic uit olie."
+      ],
+      "uh": "Eindproduct: afgewerkt product."
+     },
+     {
+      "v": "Het afgewerkte product voor de gebruiker. Welk begrip herken je hier?",
+      "o": [
+       "Halffabricaat",
+       "Eindproduct",
+       "Kunststof",
+       "Recyclen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het afgewerkte product voor de gebruiker. Dat past bij Eindproduct: afgewerkt product.",
+      "uo": [
+       "Nee, dat hoort bij Halffabricaat: tussenproduct.",
+       "Klopt: afgewerkt product.",
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken."
+      ],
+      "uh": "Eindproduct: afgewerkt product."
+     },
+     {
+      "v": "De kant-en-klare auto rolt van de band. Wat is hier aan de hand?",
+      "o": [
+       "Kunststof",
+       "Grondstof",
+       "Eindproduct",
+       "Recyclen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De kant-en-klare auto rolt van de band. Dat past bij Eindproduct: afgewerkt product.",
+      "uo": [
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Klopt: afgewerkt product.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken."
+      ],
+      "uh": "Eindproduct: afgewerkt product."
+     },
+     {
+      "v": "De ruwe stof waarmee je begint. Welk begrip past hierbij?",
+      "o": [
+       "Eigenschap",
+       "Eindproduct",
+       "Halffabricaat",
+       "Grondstof"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De ruwe stof waarmee je begint. Dat past bij Grondstof: ruwe beginstof.",
+      "uo": [
+       "Nee, dat hoort bij Eigenschap: kenmerk om te kiezen.",
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Nee, dat hoort bij Halffabricaat: tussenproduct.",
+       "Klopt: ruwe beginstof."
+      ],
+      "uh": "Grondstof: ruwe beginstof."
+     },
+     {
+      "v": "Materiaal opnieuw gebruiken. Om welk begrip gaat het?",
+      "o": [
+       "Recyclen",
+       "Kunststof",
+       "Eindproduct",
+       "Grondstof"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Materiaal opnieuw gebruiken. Dat past bij Recyclen: opnieuw gebruiken.",
+      "uo": [
+       "Klopt: opnieuw gebruiken.",
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Nee, dat hoort bij Grondstof: ruwe beginstof."
+      ],
+      "uh": "Recyclen: opnieuw gebruiken."
+     },
+     {
+      "v": "Een tussenproduct dat nog niet klaar is. Welk begrip herken je hier?",
+      "o": [
+       "Eindproduct",
+       "Halffabricaat",
+       "Grondstof",
+       "Eigenschap"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een tussenproduct dat nog niet klaar is. Dat past bij Halffabricaat: tussenproduct.",
+      "uo": [
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Klopt: tussenproduct.",
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Nee, dat hoort bij Eigenschap: kenmerk om te kiezen."
+      ],
+      "uh": "Halffabricaat: tussenproduct."
+     },
+     {
+      "v": "De hele weg van erts tot een fiets. Wat is hier aan de hand?",
+      "o": [
+       "Duurzaam",
+       "Halffabricaat",
+       "Productieproces",
+       "Recyclen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De hele weg van erts tot een fiets. Dat past bij Productieproces: grondstof naar product.",
+      "uo": [
+       "Nee, dat hoort bij Duurzaam: zuinig en milieuvriendelijk.",
+       "Nee, dat hoort bij Halffabricaat: tussenproduct.",
+       "Klopt: grondstof naar product.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken."
+      ],
+      "uh": "Productieproces: grondstof naar product."
+     },
+     {
+      "v": "Uit ijzererts uit de bodem maak je staal. Welk begrip past hierbij?",
+      "o": [
+       "Kunststof",
+       "Eigenschap",
+       "Recyclen",
+       "Grondstof"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Uit ijzererts uit de bodem maak je staal. Dat past bij Grondstof: ruwe beginstof.",
+      "uo": [
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Nee, dat hoort bij Eigenschap: kenmerk om te kiezen.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken.",
+       "Klopt: ruwe beginstof."
+      ],
+      "uh": "Grondstof: ruwe beginstof."
+     },
+     {
+      "v": "De stappen van grondstof naar eindproduct. Om welk begrip gaat het?",
+      "o": [
+       "Productieproces",
+       "Halffabricaat",
+       "Kunststof",
+       "Recyclen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De stappen van grondstof naar eindproduct. Dat past bij Productieproces: grondstof naar product.",
+      "uo": [
+       "Klopt: grondstof naar product.",
+       "Nee, dat hoort bij Halffabricaat: tussenproduct.",
+       "Nee, dat hoort bij Kunststof: plastic uit olie.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken."
+      ],
+      "uh": "Productieproces: grondstof naar product."
+     },
+     {
+      "v": "Deeg is dit onderweg naar een afgebakken brood. Welk begrip herken je hier?",
+      "o": [
+       "Eindproduct",
+       "Halffabricaat",
+       "Grondstof",
+       "Recyclen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Deeg is dit onderweg naar een afgebakken brood. Dat past bij Halffabricaat: tussenproduct.",
+      "uo": [
+       "Nee, dat hoort bij Eindproduct: afgewerkt product.",
+       "Klopt: tussenproduct.",
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Nee, dat hoort bij Recyclen: opnieuw gebruiken."
+      ],
+      "uh": "Halffabricaat: tussenproduct."
+     },
+     {
+      "v": "Je kiest een sterk en licht materiaal voor een fiets. Wat is hier aan de hand?",
+      "o": [
+       "Grondstof",
+       "Productieproces",
+       "Eigenschap",
+       "Duurzaam"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je kiest een sterk en licht materiaal voor een fiets. Dat past bij Eigenschap: kenmerk om te kiezen.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: ruwe beginstof.",
+       "Nee, dat hoort bij Productieproces: grondstof naar product.",
+       "Klopt: kenmerk om te kiezen.",
+       "Nee, dat hoort bij Duurzaam: zuinig en milieuvriendelijk."
+      ],
+      "uh": "Eigenschap: kenmerk om te kiezen."
      }
     ],
     "begrippen": [
@@ -21464,6 +23630,462 @@ var VAKKEN_VMBO = [
        "Prijs heeft er niets mee te maken."
       ],
       "uh": "schadelijk voor je gezondheid: Een giftige stof is schadelijk voor je gezondheid."
+     },
+     {
+      "v": "Een pictogram dat aangeeft dat een stof giftig of brandbaar is. Welk begrip past hierbij?",
+      "o": [
+       "Conclusie",
+       "Eigenschap",
+       "Meten",
+       "Gevaarsymbool"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een pictogram dat aangeeft dat een stof giftig of brandbaar is. Dat past bij Gevaarsymbool: waarschuwt voor gevaar.",
+      "uo": [
+       "Nee, dat hoort bij Conclusie: besluit uit de proef.",
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal.",
+       "Nee, dat hoort bij Meten: nauwkeurig bepalen.",
+       "Klopt: waarschuwt voor gevaar."
+      ],
+      "uh": "Gevaarsymbool: waarschuwt voor gevaar."
+     },
+     {
+      "v": "Op de fles waarschuwt een teken voor gevaar. Om welk begrip gaat het?",
+      "o": [
+       "Gevaarsymbool",
+       "Eigenschap",
+       "Meten",
+       "Conclusie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Op de fles waarschuwt een teken voor gevaar. Dat past bij Gevaarsymbool: waarschuwt voor gevaar.",
+      "uo": [
+       "Klopt: waarschuwt voor gevaar.",
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal.",
+       "Nee, dat hoort bij Meten: nauwkeurig bepalen.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef."
+      ],
+      "uh": "Gevaarsymbool: waarschuwt voor gevaar."
+     },
+     {
+      "v": "Deze stof is schadelijk voor je gezondheid als je hem binnenkrijgt. Welk begrip herken je hier?",
+      "o": [
+       "Brandbaar",
+       "Giftig",
+       "Eigenschap",
+       "Meten"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Deze stof is schadelijk voor je gezondheid als je hem binnenkrijgt. Dat past bij Giftig: schadelijk/giftig.",
+      "uo": [
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam.",
+       "Klopt: schadelijk/giftig.",
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal.",
+       "Nee, dat hoort bij Meten: nauwkeurig bepalen."
+      ],
+      "uh": "Giftig: schadelijk/giftig."
+     },
+     {
+      "v": "Een stof die snel begint te branden bij een vonk. Wat is hier aan de hand?",
+      "o": [
+       "Proef",
+       "Gevaarsymbool",
+       "Brandbaar",
+       "Conclusie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een stof die snel begint te branden bij een vonk. Dat past bij Brandbaar: vat makkelijk vlam.",
+      "uo": [
+       "Nee, dat hoort bij Proef: test/experiment.",
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Klopt: vat makkelijk vlam.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef."
+      ],
+      "uh": "Brandbaar: vat makkelijk vlam."
+     },
+     {
+      "v": "Uit de metingen besluit je welk materiaal het beste is. Welk begrip past hierbij?",
+      "o": [
+       "Eigenschap",
+       "Hypothese",
+       "Proef",
+       "Conclusie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Uit de metingen besluit je welk materiaal het beste is. Dat past bij Conclusie: besluit uit de proef.",
+      "uo": [
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal.",
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Nee, dat hoort bij Proef: test/experiment.",
+       "Klopt: besluit uit de proef."
+      ],
+      "uh": "Conclusie: besluit uit de proef."
+     },
+     {
+      "v": "Een stof die makkelijk vlam vat. Om welk begrip gaat het?",
+      "o": [
+       "Brandbaar",
+       "Gevaarsymbool",
+       "Proef",
+       "Conclusie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een stof die makkelijk vlam vat. Dat past bij Brandbaar: vat makkelijk vlam.",
+      "uo": [
+       "Klopt: vat makkelijk vlam.",
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Nee, dat hoort bij Proef: test/experiment.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef."
+      ],
+      "uh": "Brandbaar: vat makkelijk vlam."
+     },
+     {
+      "v": "Je onderzoekt de hardheid en sterkte van het materiaal. Welk begrip herken je hier?",
+      "o": [
+       "Hypothese",
+       "Eigenschap",
+       "Brandbaar",
+       "Meten"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Je onderzoekt de hardheid en sterkte van het materiaal. Dat past bij Eigenschap: kenmerk van materiaal.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Klopt: kenmerk van materiaal.",
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam.",
+       "Nee, dat hoort bij Meten: nauwkeurig bepalen."
+      ],
+      "uh": "Eigenschap: kenmerk van materiaal."
+     },
+     {
+      "v": "Je test met een experiment welk materiaal het sterkst is. Wat is hier aan de hand?",
+      "o": [
+       "Gevaarsymbool",
+       "Hypothese",
+       "Proef",
+       "Conclusie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je test met een experiment welk materiaal het sterkst is. Dat past bij Proef: test/experiment.",
+      "uo": [
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Klopt: test/experiment.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef."
+      ],
+      "uh": "Proef: test/experiment."
+     },
+     {
+      "v": "Een stof waarvan je ziek wordt als je hem inslikt of inademt. Welk begrip past hierbij?",
+      "o": [
+       "Eigenschap",
+       "Meten",
+       "Gevaarsymbool",
+       "Giftig"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een stof waarvan je ziek wordt als je hem inslikt of inademt. Dat past bij Giftig: schadelijk/giftig.",
+      "uo": [
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal.",
+       "Nee, dat hoort bij Meten: nauwkeurig bepalen.",
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Klopt: schadelijk/giftig."
+      ],
+      "uh": "Giftig: schadelijk/giftig."
+     },
+     {
+      "v": "Je gok van tevoren over de uitkomst van de proef. Om welk begrip gaat het?",
+      "o": [
+       "Hypothese",
+       "Conclusie",
+       "Brandbaar",
+       "Eigenschap"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je gok van tevoren over de uitkomst van de proef. Dat past bij Hypothese: verwachting vooraf.",
+      "uo": [
+       "Klopt: verwachting vooraf.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef.",
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam.",
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal."
+      ],
+      "uh": "Hypothese: verwachting vooraf."
+     },
+     {
+      "v": "Iets waaraan je een materiaal kunt herkennen. Welk begrip herken je hier?",
+      "o": [
+       "Hypothese",
+       "Eigenschap",
+       "Gevaarsymbool",
+       "Proef"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Iets waaraan je een materiaal kunt herkennen. Dat past bij Eigenschap: kenmerk van materiaal.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Klopt: kenmerk van materiaal.",
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Nee, dat hoort bij Proef: test/experiment."
+      ],
+      "uh": "Eigenschap: kenmerk van materiaal."
+     },
+     {
+      "v": "Een kenmerk van een materiaal, zoals sterkte. Wat is hier aan de hand?",
+      "o": [
+       "Proef",
+       "Gevaarsymbool",
+       "Eigenschap",
+       "Brandbaar"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een kenmerk van een materiaal, zoals sterkte. Dat past bij Eigenschap: kenmerk van materiaal.",
+      "uo": [
+       "Nee, dat hoort bij Proef: test/experiment.",
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Klopt: kenmerk van materiaal.",
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam."
+      ],
+      "uh": "Eigenschap: kenmerk van materiaal."
+     },
+     {
+      "v": "Schadelijk voor je gezondheid bij binnenkrijgen. Welk begrip past hierbij?",
+      "o": [
+       "Hypothese",
+       "Brandbaar",
+       "Conclusie",
+       "Giftig"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Schadelijk voor je gezondheid bij binnenkrijgen. Dat past bij Giftig: schadelijk/giftig.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef.",
+       "Klopt: schadelijk/giftig."
+      ],
+      "uh": "Giftig: schadelijk/giftig."
+     },
+     {
+      "v": "Op de weegschaal lees je precies de massa af. Om welk begrip gaat het?",
+      "o": [
+       "Meten",
+       "Eigenschap",
+       "Gevaarsymbool",
+       "Proef"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Op de weegschaal lees je precies de massa af. Dat past bij Meten: nauwkeurig bepalen.",
+      "uo": [
+       "Klopt: nauwkeurig bepalen.",
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal.",
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Nee, dat hoort bij Proef: test/experiment."
+      ],
+      "uh": "Meten: nauwkeurig bepalen."
+     },
+     {
+      "v": "Een grootte nauwkeurig bepalen met een instrument. Welk begrip herken je hier?",
+      "o": [
+       "Giftig",
+       "Meten",
+       "Conclusie",
+       "Eigenschap"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een grootte nauwkeurig bepalen met een instrument. Dat past bij Meten: nauwkeurig bepalen.",
+      "uo": [
+       "Nee, dat hoort bij Giftig: schadelijk/giftig.",
+       "Klopt: nauwkeurig bepalen.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef.",
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal."
+      ],
+      "uh": "Meten: nauwkeurig bepalen."
+     },
+     {
+      "v": "Met een meetlint bepaal je de lengte nauwkeurig. Wat is hier aan de hand?",
+      "o": [
+       "Brandbaar",
+       "Hypothese",
+       "Meten",
+       "Conclusie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Met een meetlint bepaal je de lengte nauwkeurig. Dat past bij Meten: nauwkeurig bepalen.",
+      "uo": [
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam.",
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Klopt: nauwkeurig bepalen.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef."
+      ],
+      "uh": "Meten: nauwkeurig bepalen."
+     },
+     {
+      "v": "Een verwachting die je vooraf opstelt. Welk begrip past hierbij?",
+      "o": [
+       "Eigenschap",
+       "Conclusie",
+       "Proef",
+       "Hypothese"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een verwachting die je vooraf opstelt. Dat past bij Hypothese: verwachting vooraf.",
+      "uo": [
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef.",
+       "Nee, dat hoort bij Proef: test/experiment.",
+       "Klopt: verwachting vooraf."
+      ],
+      "uh": "Hypothese: verwachting vooraf."
+     },
+     {
+      "v": "Een teken dat waarschuwt voor gevaar van een stof. Om welk begrip gaat het?",
+      "o": [
+       "Gevaarsymbool",
+       "Brandbaar",
+       "Meten",
+       "Conclusie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een teken dat waarschuwt voor gevaar van een stof. Dat past bij Gevaarsymbool: waarschuwt voor gevaar.",
+      "uo": [
+       "Klopt: waarschuwt voor gevaar.",
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam.",
+       "Nee, dat hoort bij Meten: nauwkeurig bepalen.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef."
+      ],
+      "uh": "Gevaarsymbool: waarschuwt voor gevaar."
+     },
+     {
+      "v": "Een test om iets te onderzoeken. Welk begrip herken je hier?",
+      "o": [
+       "Hypothese",
+       "Proef",
+       "Brandbaar",
+       "Conclusie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een test om iets te onderzoeken. Dat past bij Proef: test/experiment.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Klopt: test/experiment.",
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef."
+      ],
+      "uh": "Proef: test/experiment."
+     },
+     {
+      "v": "Achteraf trek je dit uit je resultaten. Wat is hier aan de hand?",
+      "o": [
+       "Proef",
+       "Hypothese",
+       "Conclusie",
+       "Eigenschap"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Achteraf trek je dit uit je resultaten. Dat past bij Conclusie: besluit uit de proef.",
+      "uo": [
+       "Nee, dat hoort bij Proef: test/experiment.",
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Klopt: besluit uit de proef.",
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal."
+      ],
+      "uh": "Conclusie: besluit uit de proef."
+     },
+     {
+      "v": "Vooraf verwacht je dat het ene materiaal sterker is. Welk begrip past hierbij?",
+      "o": [
+       "Gevaarsymbool",
+       "Brandbaar",
+       "Meten",
+       "Hypothese"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Vooraf verwacht je dat het ene materiaal sterker is. Dat past bij Hypothese: verwachting vooraf.",
+      "uo": [
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam.",
+       "Nee, dat hoort bij Meten: nauwkeurig bepalen.",
+       "Klopt: verwachting vooraf."
+      ],
+      "uh": "Hypothese: verwachting vooraf."
+     },
+     {
+      "v": "Wat je uit de metingen besluit. Om welk begrip gaat het?",
+      "o": [
+       "Conclusie",
+       "Hypothese",
+       "Brandbaar",
+       "Eigenschap"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Wat je uit de metingen besluit. Dat past bij Conclusie: besluit uit de proef.",
+      "uo": [
+       "Klopt: besluit uit de proef.",
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Nee, dat hoort bij Brandbaar: vat makkelijk vlam.",
+       "Nee, dat hoort bij Eigenschap: kenmerk van materiaal."
+      ],
+      "uh": "Conclusie: besluit uit de proef."
+     },
+     {
+      "v": "Een opstelling waarmee je iets uitprobeert. Welk begrip herken je hier?",
+      "o": [
+       "Hypothese",
+       "Proef",
+       "Gevaarsymbool",
+       "Conclusie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een opstelling waarmee je iets uitprobeert. Dat past bij Proef: test/experiment.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: verwachting vooraf.",
+       "Klopt: test/experiment.",
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef."
+      ],
+      "uh": "Proef: test/experiment."
+     },
+     {
+      "v": "Deze stof vat heel makkelijk vlam. Wat is hier aan de hand?",
+      "o": [
+       "Proef",
+       "Gevaarsymbool",
+       "Brandbaar",
+       "Conclusie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Deze stof vat heel makkelijk vlam. Dat past bij Brandbaar: vat makkelijk vlam.",
+      "uo": [
+       "Nee, dat hoort bij Proef: test/experiment.",
+       "Nee, dat hoort bij Gevaarsymbool: waarschuwt voor gevaar.",
+       "Klopt: vat makkelijk vlam.",
+       "Nee, dat hoort bij Conclusie: besluit uit de proef."
+      ],
+      "uh": "Brandbaar: vat makkelijk vlam."
      }
     ],
     "begrippen": [
@@ -21649,6 +24271,462 @@ var VAKKEN_VMBO = [
        "Er wordt juist iets bruikbaars gemaakt."
       ],
       "uh": "om materiaal met de gewenste eigenschappen te krijgen: Door synthese maak je materiaal met precies de gewenste eigenschappen."
+     },
+     {
+      "v": "Een materiaal dat in de fabriek uit olie ontstaat. Welk begrip past hierbij?",
+      "o": [
+       "Hernieuwbaar",
+       "Duurzaam",
+       "Fossiele grondstof",
+       "Kunststof"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een materiaal dat in de fabriek uit olie ontstaat. Dat past bij Kunststof: gemaakt plastic.",
+      "uo": [
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Nee, dat hoort bij Duurzaam: zuinig voor de toekomst.",
+       "Nee, dat hoort bij Fossiele grondstof: olie, gas, steenkool.",
+       "Klopt: gemaakt plastic."
+      ],
+      "uh": "Kunststof: gemaakt plastic."
+     },
+     {
+      "v": "Deze door de mens gemaakte stof is plastic uit olie. Om welk begrip gaat het?",
+      "o": [
+       "Kunststof",
+       "Polymeer",
+       "Grondstof",
+       "Eindig"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Deze door de mens gemaakte stof is plastic uit olie. Dat past bij Kunststof: gemaakt plastic.",
+      "uo": [
+       "Klopt: gemaakt plastic.",
+       "Nee, dat hoort bij Polymeer: lange molecuulketen.",
+       "Nee, dat hoort bij Grondstof: uit de natuur.",
+       "Nee, dat hoort bij Eindig: raakt op."
+      ],
+      "uh": "Kunststof: gemaakt plastic."
+     },
+     {
+      "v": "Veel kleine moleculen koppelen aaneen tot een lange keten. Welk begrip herken je hier?",
+      "o": [
+       "Synthese",
+       "Polymeer",
+       "Eindig",
+       "Grondstof"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Veel kleine moleculen koppelen aaneen tot een lange keten. Dat past bij Polymeer: lange molecuulketen.",
+      "uo": [
+       "Nee, dat hoort bij Synthese: nieuwe stof maken.",
+       "Klopt: lange molecuulketen.",
+       "Nee, dat hoort bij Eindig: raakt op.",
+       "Nee, dat hoort bij Grondstof: uit de natuur."
+      ],
+      "uh": "Polymeer: lange molecuulketen."
+     },
+     {
+      "v": "Zo omgaan met de aarde dat het ook later nog kan. Wat is hier aan de hand?",
+      "o": [
+       "Synthese",
+       "Hernieuwbaar",
+       "Duurzaam",
+       "Grondstof"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Zo omgaan met de aarde dat het ook later nog kan. Dat past bij Duurzaam: zuinig voor de toekomst.",
+      "uo": [
+       "Nee, dat hoort bij Synthese: nieuwe stof maken.",
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Klopt: zuinig voor de toekomst.",
+       "Nee, dat hoort bij Grondstof: uit de natuur."
+      ],
+      "uh": "Duurzaam: zuinig voor de toekomst."
+     },
+     {
+      "v": "Zon en wind leveren energie die niet opraakt. Welk begrip past hierbij?",
+      "o": [
+       "Duurzaam",
+       "Kunststof",
+       "Grondstof",
+       "Hernieuwbaar"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Zon en wind leveren energie die niet opraakt. Dat past bij Hernieuwbaar: raakt niet op.",
+      "uo": [
+       "Nee, dat hoort bij Duurzaam: zuinig voor de toekomst.",
+       "Nee, dat hoort bij Kunststof: gemaakt plastic.",
+       "Nee, dat hoort bij Grondstof: uit de natuur.",
+       "Klopt: raakt niet op."
+      ],
+      "uh": "Hernieuwbaar: raakt niet op."
+     },
+     {
+      "v": "Zuinig met grondstoffen, met oog op de toekomst. Om welk begrip gaat het?",
+      "o": [
+       "Duurzaam",
+       "Hernieuwbaar",
+       "Synthese",
+       "Grondstof"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Zuinig met grondstoffen, met oog op de toekomst. Dat past bij Duurzaam: zuinig voor de toekomst.",
+      "uo": [
+       "Klopt: zuinig voor de toekomst.",
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Nee, dat hoort bij Synthese: nieuwe stof maken.",
+       "Nee, dat hoort bij Grondstof: uit de natuur."
+      ],
+      "uh": "Duurzaam: zuinig voor de toekomst."
+     },
+     {
+      "v": "In de fabriek maak je uit kleine bouwstenen een nieuwe stof. Welk begrip herken je hier?",
+      "o": [
+       "Polymeer",
+       "Synthese",
+       "Hernieuwbaar",
+       "Fossiele grondstof"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "In de fabriek maak je uit kleine bouwstenen een nieuwe stof. Dat past bij Synthese: nieuwe stof maken.",
+      "uo": [
+       "Nee, dat hoort bij Polymeer: lange molecuulketen.",
+       "Klopt: nieuwe stof maken.",
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Nee, dat hoort bij Fossiele grondstof: olie, gas, steenkool."
+      ],
+      "uh": "Synthese: nieuwe stof maken."
+     },
+     {
+      "v": "Olie, gas en steenkool komen uit de aarde en raken op. Wat is hier aan de hand?",
+      "o": [
+       "Eindig",
+       "Hernieuwbaar",
+       "Fossiele grondstof",
+       "Synthese"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Olie, gas en steenkool komen uit de aarde en raken op. Dat past bij Fossiele grondstof: olie, gas, steenkool.",
+      "uo": [
+       "Nee, dat hoort bij Eindig: raakt op.",
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Klopt: olie, gas, steenkool.",
+       "Nee, dat hoort bij Synthese: nieuwe stof maken."
+      ],
+      "uh": "Fossiele grondstof: olie, gas, steenkool."
+     },
+     {
+      "v": "Een heel lang molecuul, opgebouwd uit herhaalde stukjes. Welk begrip past hierbij?",
+      "o": [
+       "Grondstof",
+       "Synthese",
+       "Eindig",
+       "Polymeer"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een heel lang molecuul, opgebouwd uit herhaalde stukjes. Dat past bij Polymeer: lange molecuulketen.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: uit de natuur.",
+       "Nee, dat hoort bij Synthese: nieuwe stof maken.",
+       "Nee, dat hoort bij Eindig: raakt op.",
+       "Klopt: lange molecuulketen."
+      ],
+      "uh": "Polymeer: lange molecuulketen."
+     },
+     {
+      "v": "Het ruwe materiaal waar je mee begint. Om welk begrip gaat het?",
+      "o": [
+       "Grondstof",
+       "Synthese",
+       "Duurzaam",
+       "Hernieuwbaar"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het ruwe materiaal waar je mee begint. Dat past bij Grondstof: uit de natuur.",
+      "uo": [
+       "Klopt: uit de natuur.",
+       "Nee, dat hoort bij Synthese: nieuwe stof maken.",
+       "Nee, dat hoort bij Duurzaam: zuinig voor de toekomst.",
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op."
+      ],
+      "uh": "Grondstof: uit de natuur."
+     },
+     {
+      "v": "Kleine moleculen koppelen tot een nieuw materiaal. Welk begrip herken je hier?",
+      "o": [
+       "Grondstof",
+       "Synthese",
+       "Kunststof",
+       "Fossiele grondstof"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Kleine moleculen koppelen tot een nieuw materiaal. Dat past bij Synthese: nieuwe stof maken.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: uit de natuur.",
+       "Klopt: nieuwe stof maken.",
+       "Nee, dat hoort bij Kunststof: gemaakt plastic.",
+       "Nee, dat hoort bij Fossiele grondstof: olie, gas, steenkool."
+      ],
+      "uh": "Synthese: nieuwe stof maken."
+     },
+     {
+      "v": "Het maken van een nieuwe stof uit andere stoffen. Wat is hier aan de hand?",
+      "o": [
+       "Hernieuwbaar",
+       "Polymeer",
+       "Synthese",
+       "Fossiele grondstof"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het maken van een nieuwe stof uit andere stoffen. Dat past bij Synthese: nieuwe stof maken.",
+      "uo": [
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Nee, dat hoort bij Polymeer: lange molecuulketen.",
+       "Klopt: nieuwe stof maken.",
+       "Nee, dat hoort bij Fossiele grondstof: olie, gas, steenkool."
+      ],
+      "uh": "Synthese: nieuwe stof maken."
+     },
+     {
+      "v": "Een lange keten van veel gekoppelde moleculen. Welk begrip past hierbij?",
+      "o": [
+       "Grondstof",
+       "Kunststof",
+       "Hernieuwbaar",
+       "Polymeer"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een lange keten van veel gekoppelde moleculen. Dat past bij Polymeer: lange molecuulketen.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: uit de natuur.",
+       "Nee, dat hoort bij Kunststof: gemaakt plastic.",
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Klopt: lange molecuulketen."
+      ],
+      "uh": "Polymeer: lange molecuulketen."
+     },
+     {
+      "v": "Een voorraad die op een dag helemaal leeg is. Om welk begrip gaat het?",
+      "o": [
+       "Eindig",
+       "Hernieuwbaar",
+       "Polymeer",
+       "Synthese"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een voorraad die op een dag helemaal leeg is. Dat past bij Eindig: raakt op.",
+      "uo": [
+       "Klopt: raakt op.",
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Nee, dat hoort bij Polymeer: lange molecuulketen.",
+       "Nee, dat hoort bij Synthese: nieuwe stof maken."
+      ],
+      "uh": "Eindig: raakt op."
+     },
+     {
+      "v": "Iets dat opraakt en niet onuitputtelijk is. Welk begrip herken je hier?",
+      "o": [
+       "Synthese",
+       "Eindig",
+       "Duurzaam",
+       "Polymeer"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Iets dat opraakt en niet onuitputtelijk is. Dat past bij Eindig: raakt op.",
+      "uo": [
+       "Nee, dat hoort bij Synthese: nieuwe stof maken.",
+       "Klopt: raakt op.",
+       "Nee, dat hoort bij Duurzaam: zuinig voor de toekomst.",
+       "Nee, dat hoort bij Polymeer: lange molecuulketen."
+      ],
+      "uh": "Eindig: raakt op."
+     },
+     {
+      "v": "Als we doorgaan met winnen, raakt de olie een keer op. Wat is hier aan de hand?",
+      "o": [
+       "Kunststof",
+       "Hernieuwbaar",
+       "Eindig",
+       "Grondstof"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Als we doorgaan met winnen, raakt de olie een keer op. Dat past bij Eindig: raakt op.",
+      "uo": [
+       "Nee, dat hoort bij Kunststof: gemaakt plastic.",
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Klopt: raakt op.",
+       "Nee, dat hoort bij Grondstof: uit de natuur."
+      ],
+      "uh": "Eindig: raakt op."
+     },
+     {
+      "v": "Een stof die je uit de natuur haalt. Welk begrip past hierbij?",
+      "o": [
+       "Hernieuwbaar",
+       "Synthese",
+       "Fossiele grondstof",
+       "Grondstof"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een stof die je uit de natuur haalt. Dat past bij Grondstof: uit de natuur.",
+      "uo": [
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Nee, dat hoort bij Synthese: nieuwe stof maken.",
+       "Nee, dat hoort bij Fossiele grondstof: olie, gas, steenkool.",
+       "Klopt: uit de natuur."
+      ],
+      "uh": "Grondstof: uit de natuur."
+     },
+     {
+      "v": "Een door de mens gemaakte stof, plastic. Om welk begrip gaat het?",
+      "o": [
+       "Kunststof",
+       "Duurzaam",
+       "Fossiele grondstof",
+       "Hernieuwbaar"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een door de mens gemaakte stof, plastic. Dat past bij Kunststof: gemaakt plastic.",
+      "uo": [
+       "Klopt: gemaakt plastic.",
+       "Nee, dat hoort bij Duurzaam: zuinig voor de toekomst.",
+       "Nee, dat hoort bij Fossiele grondstof: olie, gas, steenkool.",
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op."
+      ],
+      "uh": "Kunststof: gemaakt plastic."
+     },
+     {
+      "v": "Grondstof uit de aarde zoals olie, gas en steenkool. Welk begrip herken je hier?",
+      "o": [
+       "Hernieuwbaar",
+       "Fossiele grondstof",
+       "Eindig",
+       "Grondstof"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Grondstof uit de aarde zoals olie, gas en steenkool. Dat past bij Fossiele grondstof: olie, gas, steenkool.",
+      "uo": [
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Klopt: olie, gas, steenkool.",
+       "Nee, dat hoort bij Eindig: raakt op.",
+       "Nee, dat hoort bij Grondstof: uit de natuur."
+      ],
+      "uh": "Fossiele grondstof: olie, gas, steenkool."
+     },
+     {
+      "v": "Een bron die telkens weer aangevuld wordt. Wat is hier aan de hand?",
+      "o": [
+       "Fossiele grondstof",
+       "Eindig",
+       "Hernieuwbaar",
+       "Synthese"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een bron die telkens weer aangevuld wordt. Dat past bij Hernieuwbaar: raakt niet op.",
+      "uo": [
+       "Nee, dat hoort bij Fossiele grondstof: olie, gas, steenkool.",
+       "Nee, dat hoort bij Eindig: raakt op.",
+       "Klopt: raakt niet op.",
+       "Nee, dat hoort bij Synthese: nieuwe stof maken."
+      ],
+      "uh": "Hernieuwbaar: raakt niet op."
+     },
+     {
+      "v": "Hout, olie en erts haal je uit de natuur. Welk begrip past hierbij?",
+      "o": [
+       "Kunststof",
+       "Duurzaam",
+       "Eindig",
+       "Grondstof"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Hout, olie en erts haal je uit de natuur. Dat past bij Grondstof: uit de natuur.",
+      "uo": [
+       "Nee, dat hoort bij Kunststof: gemaakt plastic.",
+       "Nee, dat hoort bij Duurzaam: zuinig voor de toekomst.",
+       "Nee, dat hoort bij Eindig: raakt op.",
+       "Klopt: uit de natuur."
+      ],
+      "uh": "Grondstof: uit de natuur."
+     },
+     {
+      "v": "Iets dat niet opraakt, zoals zon en wind. Om welk begrip gaat het?",
+      "o": [
+       "Hernieuwbaar",
+       "Fossiele grondstof",
+       "Eindig",
+       "Grondstof"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Iets dat niet opraakt, zoals zon en wind. Dat past bij Hernieuwbaar: raakt niet op.",
+      "uo": [
+       "Klopt: raakt niet op.",
+       "Nee, dat hoort bij Fossiele grondstof: olie, gas, steenkool.",
+       "Nee, dat hoort bij Eindig: raakt op.",
+       "Nee, dat hoort bij Grondstof: uit de natuur."
+      ],
+      "uh": "Hernieuwbaar: raakt niet op."
+     },
+     {
+      "v": "Een grondstof die in miljoenen jaren is ontstaan en opraakt. Welk begrip herken je hier?",
+      "o": [
+       "Hernieuwbaar",
+       "Fossiele grondstof",
+       "Eindig",
+       "Synthese"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een grondstof die in miljoenen jaren is ontstaan en opraakt. Dat past bij Fossiele grondstof: olie, gas, steenkool.",
+      "uo": [
+       "Nee, dat hoort bij Hernieuwbaar: raakt niet op.",
+       "Klopt: olie, gas, steenkool.",
+       "Nee, dat hoort bij Eindig: raakt op.",
+       "Nee, dat hoort bij Synthese: nieuwe stof maken."
+      ],
+      "uh": "Fossiele grondstof: olie, gas, steenkool."
+     },
+     {
+      "v": "Je gaat zuinig met grondstoffen om, met oog op later. Wat is hier aan de hand?",
+      "o": [
+       "Eindig",
+       "Kunststof",
+       "Duurzaam",
+       "Grondstof"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je gaat zuinig met grondstoffen om, met oog op later. Dat past bij Duurzaam: zuinig voor de toekomst.",
+      "uo": [
+       "Nee, dat hoort bij Eindig: raakt op.",
+       "Nee, dat hoort bij Kunststof: gemaakt plastic.",
+       "Klopt: zuinig voor de toekomst.",
+       "Nee, dat hoort bij Grondstof: uit de natuur."
+      ],
+      "uh": "Duurzaam: zuinig voor de toekomst."
      }
     ],
     "begrippen": [
