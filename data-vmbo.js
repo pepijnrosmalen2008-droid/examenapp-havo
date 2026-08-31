@@ -3568,6 +3568,462 @@ var VAKKEN_VMBO = [
        "«hoewel» is although (tegenstelling)."
       ],
       "uh": "terwijl: «while» betekent terwijl, op hetzelfde moment."
+     },
+     {
+      "v": "Welk woord betekent daarom (gevolg)?",
+      "o": [
+       "However",
+       "Because",
+       "Therefore",
+       "But"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Therefore' betekent daarom (gevolg).",
+      "uo": [
+       "Nee, 'However' betekent echter (tegenstelling).",
+       "Nee, 'Because' betekent omdat (reden).",
+       "Klopt: 'Therefore' betekent daarom (gevolg).",
+       "Nee, 'But' betekent maar (tegenstelling)."
+      ],
+      "uh": "Therefore: daarom (gevolg)."
+     },
+     {
+      "v": "Welk woord betekent omdat (reden)?",
+      "o": [
+       "Kernzin",
+       "But",
+       "However",
+       "Because"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Because' betekent omdat (reden).",
+      "uo": [
+       "Nee, 'Kernzin' betekent hoofdgedachte van de alinea.",
+       "Nee, 'But' betekent maar (tegenstelling).",
+       "Nee, 'However' betekent echter (tegenstelling).",
+       "Klopt: 'Because' betekent omdat (reden)."
+      ],
+      "uh": "Because: omdat (reden)."
+     },
+     {
+      "v": "Wat is de vertaling van 'For example'?",
+      "o": [
+       "bijvoorbeeld (voorbeeld)",
+       "omdat (reden)",
+       "terwijl (tijd)",
+       "globaal lezen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'For example' betekent bijvoorbeeld (voorbeeld).",
+      "uo": [
+       "Klopt: 'For example' betekent bijvoorbeeld (voorbeeld).",
+       "Nee, dat is de betekenis van 'Because'.",
+       "Nee, dat is de betekenis van 'While'.",
+       "Nee, dat is de betekenis van 'Skimmen'."
+      ],
+      "uh": "For example: bijvoorbeeld (voorbeeld)."
+     },
+     {
+      "v": "Welk woord betekent terwijl (tijd)?",
+      "o": [
+       "Although",
+       "While",
+       "For example",
+       "However"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'While' betekent terwijl (tijd).",
+      "uo": [
+       "Nee, 'Although' betekent hoewel (tegenstelling).",
+       "Klopt: 'While' betekent terwijl (tijd).",
+       "Nee, 'For example' betekent bijvoorbeeld (voorbeeld).",
+       "Nee, 'However' betekent echter (tegenstelling)."
+      ],
+      "uh": "While: terwijl (tijd)."
+     },
+     {
+      "v": "Welk woord betekent maar (tegenstelling)?",
+      "o": [
+       "While",
+       "Moreover",
+       "But",
+       "Therefore"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "'But' betekent maar (tegenstelling).",
+      "uo": [
+       "Nee, 'While' betekent terwijl (tijd).",
+       "Nee, 'Moreover' betekent bovendien (opsomming).",
+       "Klopt: 'But' betekent maar (tegenstelling).",
+       "Nee, 'Therefore' betekent daarom (gevolg)."
+      ],
+      "uh": "But: maar (tegenstelling)."
+     },
+     {
+      "v": "Wat is de vertaling van 'While'?",
+      "o": [
+       "echter (tegenstelling)",
+       "hoewel (tegenstelling)",
+       "bijvoorbeeld (voorbeeld)",
+       "terwijl (tijd)"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'While' betekent terwijl (tijd).",
+      "uo": [
+       "Nee, dat is de betekenis van 'However'.",
+       "Nee, dat is de betekenis van 'Although'.",
+       "Nee, dat is de betekenis van 'For example'.",
+       "Klopt: 'While' betekent terwijl (tijd)."
+      ],
+      "uh": "While: terwijl (tijd)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Although'?",
+      "o": [
+       "hoewel (tegenstelling)",
+       "gericht zoeken",
+       "globaal lezen",
+       "echter (tegenstelling)"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'Although' betekent hoewel (tegenstelling).",
+      "uo": [
+       "Klopt: 'Although' betekent hoewel (tegenstelling).",
+       "Nee, dat is de betekenis van 'Scannen'.",
+       "Nee, dat is de betekenis van 'Skimmen'.",
+       "Nee, dat is de betekenis van 'However'."
+      ],
+      "uh": "Although: hoewel (tegenstelling)."
+     },
+     {
+      "v": "Snel je ogen over de tekst laten gaan om één detail te vinden. Wat is hier aan de hand?",
+      "o": [
+       "Skimmen",
+       "Scannen",
+       "Although",
+       "However"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Snel je ogen over de tekst laten gaan om één detail te vinden. Dat past bij Scannen: gericht zoeken.",
+      "uo": [
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Klopt: gericht zoeken.",
+       "Nee, dat hoort bij Although: hoewel (tegenstelling).",
+       "Nee, dat hoort bij However: echter (tegenstelling)."
+      ],
+      "uh": "Scannen: gericht zoeken."
+     },
+     {
+      "v": "Wat is de vertaling van 'Moreover'?",
+      "o": [
+       "globaal lezen",
+       "gericht zoeken",
+       "bovendien (opsomming)",
+       "hoewel (tegenstelling)"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "'Moreover' betekent bovendien (opsomming).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Skimmen'.",
+       "Nee, dat is de betekenis van 'Scannen'.",
+       "Klopt: 'Moreover' betekent bovendien (opsomming).",
+       "Nee, dat is de betekenis van 'Although'."
+      ],
+      "uh": "Moreover: bovendien (opsomming)."
+     },
+     {
+      "v": "Je zoekt gericht één jaartal op in de tekst. Om welk begrip gaat het?",
+      "o": [
+       "However",
+       "Skimmen",
+       "Although",
+       "Scannen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je zoekt gericht één jaartal op in de tekst. Dat past bij Scannen: gericht zoeken.",
+      "uo": [
+       "Nee, dat hoort bij However: echter (tegenstelling).",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Although: hoewel (tegenstelling).",
+       "Klopt: gericht zoeken."
+      ],
+      "uh": "Scannen: gericht zoeken."
+     },
+     {
+      "v": "Wat is de vertaling van 'Because'?",
+      "o": [
+       "omdat (reden)",
+       "bovendien (opsomming)",
+       "hoewel (tegenstelling)",
+       "daarom (gevolg)"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'Because' betekent omdat (reden).",
+      "uo": [
+       "Klopt: 'Because' betekent omdat (reden).",
+       "Nee, dat is de betekenis van 'Moreover'.",
+       "Nee, dat is de betekenis van 'Although'.",
+       "Nee, dat is de betekenis van 'Therefore'."
+      ],
+      "uh": "Because: omdat (reden)."
+     },
+     {
+      "v": "Welk woord betekent hoewel (tegenstelling)?",
+      "o": [
+       "Because",
+       "Although",
+       "However",
+       "But"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Although' betekent hoewel (tegenstelling).",
+      "uo": [
+       "Nee, 'Because' betekent omdat (reden).",
+       "Klopt: 'Although' betekent hoewel (tegenstelling).",
+       "Nee, 'However' betekent echter (tegenstelling).",
+       "Nee, 'But' betekent maar (tegenstelling)."
+      ],
+      "uh": "Although: hoewel (tegenstelling)."
+     },
+     {
+      "v": "Welk woord betekent bijvoorbeeld (voorbeeld)?",
+      "o": [
+       "While",
+       "Because",
+       "For example",
+       "Skimmen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "'For example' betekent bijvoorbeeld (voorbeeld).",
+      "uo": [
+       "Nee, 'While' betekent terwijl (tijd).",
+       "Nee, 'Because' betekent omdat (reden).",
+       "Klopt: 'For example' betekent bijvoorbeeld (voorbeeld).",
+       "Nee, 'Skimmen' betekent globaal lezen."
+      ],
+      "uh": "For example: bijvoorbeeld (voorbeeld)."
+     },
+     {
+      "v": "Wat is de vertaling van 'But'?",
+      "o": [
+       "hoofdgedachte van de alinea",
+       "omdat (reden)",
+       "hoewel (tegenstelling)",
+       "maar (tegenstelling)"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'But' betekent maar (tegenstelling).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Kernzin'.",
+       "Nee, dat is de betekenis van 'Because'.",
+       "Nee, dat is de betekenis van 'Although'.",
+       "Klopt: 'But' betekent maar (tegenstelling)."
+      ],
+      "uh": "But: maar (tegenstelling)."
+     },
+     {
+      "v": "De belangrijkste zin van een alinea. Welk begrip herken je hier?",
+      "o": [
+       "Kernzin",
+       "Moreover",
+       "Because",
+       "But"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De belangrijkste zin van een alinea. Dat past bij Kernzin: hoofdgedachte van de alinea.",
+      "uo": [
+       "Klopt: hoofdgedachte van de alinea.",
+       "Nee, dat hoort bij Moreover: bovendien (opsomming).",
+       "Nee, dat hoort bij Because: omdat (reden).",
+       "Nee, dat hoort bij But: maar (tegenstelling)."
+      ],
+      "uh": "Kernzin: hoofdgedachte van de alinea."
+     },
+     {
+      "v": "De ene zin waarin de hoofdgedachte van de alinea staat. Wat is hier aan de hand?",
+      "o": [
+       "Although",
+       "Kernzin",
+       "While",
+       "Scannen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De ene zin waarin de hoofdgedachte van de alinea staat. Dat past bij Kernzin: hoofdgedachte van de alinea.",
+      "uo": [
+       "Nee, dat hoort bij Although: hoewel (tegenstelling).",
+       "Klopt: hoofdgedachte van de alinea.",
+       "Nee, dat hoort bij While: terwijl (tijd).",
+       "Nee, dat hoort bij Scannen: gericht zoeken."
+      ],
+      "uh": "Kernzin: hoofdgedachte van de alinea."
+     },
+     {
+      "v": "Even vlug kijken waar een tekst globaal over gaat. Welk begrip past hierbij?",
+      "o": [
+       "Intensief lezen",
+       "Scannen",
+       "Skimmen",
+       "Although"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Even vlug kijken waar een tekst globaal over gaat. Dat past bij Skimmen: globaal lezen.",
+      "uo": [
+       "Nee, dat hoort bij Intensief lezen: nauwkeurig lezen.",
+       "Nee, dat hoort bij Scannen: gericht zoeken.",
+       "Klopt: globaal lezen.",
+       "Nee, dat hoort bij Although: hoewel (tegenstelling)."
+      ],
+      "uh": "Skimmen: globaal lezen."
+     },
+     {
+      "v": "Wat is de vertaling van 'Therefore'?",
+      "o": [
+       "terwijl (tijd)",
+       "hoofdgedachte van de alinea",
+       "globaal lezen",
+       "daarom (gevolg)"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "'Therefore' betekent daarom (gevolg).",
+      "uo": [
+       "Nee, dat is de betekenis van 'While'.",
+       "Nee, dat is de betekenis van 'Kernzin'.",
+       "Nee, dat is de betekenis van 'Skimmen'.",
+       "Klopt: 'Therefore' betekent daarom (gevolg)."
+      ],
+      "uh": "Therefore: daarom (gevolg)."
+     },
+     {
+      "v": "Je leest elk woord nauwkeurig omdat elk detail telt. Welk begrip herken je hier?",
+      "o": [
+       "Intensief lezen",
+       "Skimmen",
+       "For example",
+       "Therefore"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je leest elk woord nauwkeurig omdat elk detail telt. Dat past bij Intensief lezen: nauwkeurig lezen.",
+      "uo": [
+       "Klopt: nauwkeurig lezen.",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij For example: bijvoorbeeld (voorbeeld).",
+       "Nee, dat hoort bij Therefore: daarom (gevolg)."
+      ],
+      "uh": "Intensief lezen: nauwkeurig lezen."
+     },
+     {
+      "v": "Welk woord betekent echter (tegenstelling)?",
+      "o": [
+       "Therefore",
+       "However",
+       "Because",
+       "Kernzin"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'However' betekent echter (tegenstelling).",
+      "uo": [
+       "Nee, 'Therefore' betekent daarom (gevolg).",
+       "Klopt: 'However' betekent echter (tegenstelling).",
+       "Nee, 'Because' betekent omdat (reden).",
+       "Nee, 'Kernzin' betekent hoofdgedachte van de alinea."
+      ],
+      "uh": "However: echter (tegenstelling)."
+     },
+     {
+      "v": "Je leest snel over de tekst heen om de grote lijn te pakken. Welk begrip past hierbij?",
+      "o": [
+       "Therefore",
+       "However",
+       "Skimmen",
+       "Moreover"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je leest snel over de tekst heen om de grote lijn te pakken. Dat past bij Skimmen: globaal lezen.",
+      "uo": [
+       "Nee, dat hoort bij Therefore: daarom (gevolg).",
+       "Nee, dat hoort bij However: echter (tegenstelling).",
+       "Klopt: globaal lezen.",
+       "Nee, dat hoort bij Moreover: bovendien (opsomming)."
+      ],
+      "uh": "Skimmen: globaal lezen."
+     },
+     {
+      "v": "Wat is de vertaling van 'However'?",
+      "o": [
+       "maar (tegenstelling)",
+       "daarom (gevolg)",
+       "omdat (reden)",
+       "echter (tegenstelling)"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "'However' betekent echter (tegenstelling).",
+      "uo": [
+       "Nee, dat is de betekenis van 'But'.",
+       "Nee, dat is de betekenis van 'Therefore'.",
+       "Nee, dat is de betekenis van 'Because'.",
+       "Klopt: 'However' betekent echter (tegenstelling)."
+      ],
+      "uh": "However: echter (tegenstelling)."
+     },
+     {
+      "v": "Heel precies lezen omdat je alles moet begrijpen. Welk begrip herken je hier?",
+      "o": [
+       "Intensief lezen",
+       "Skimmen",
+       "Kernzin",
+       "Although"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Heel precies lezen omdat je alles moet begrijpen. Dat past bij Intensief lezen: nauwkeurig lezen.",
+      "uo": [
+       "Klopt: nauwkeurig lezen.",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Kernzin: hoofdgedachte van de alinea.",
+       "Nee, dat hoort bij Although: hoewel (tegenstelling)."
+      ],
+      "uh": "Intensief lezen: nauwkeurig lezen."
+     },
+     {
+      "v": "Welk woord betekent bovendien (opsomming)?",
+      "o": [
+       "Scannen",
+       "Moreover",
+       "Skimmen",
+       "Although"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'Moreover' betekent bovendien (opsomming).",
+      "uo": [
+       "Nee, 'Scannen' betekent gericht zoeken.",
+       "Klopt: 'Moreover' betekent bovendien (opsomming).",
+       "Nee, 'Skimmen' betekent globaal lezen.",
+       "Nee, 'Although' betekent hoewel (tegenstelling)."
+      ],
+      "uh": "Moreover: bovendien (opsomming)."
      }
     ],
     "begrippen": [
@@ -3825,6 +4281,424 @@ var VAKKEN_VMBO = [
        "De reden vraag je met why."
       ],
       "uh": "de tijd: Je vraagt hoe laat het is (de tijd)."
+     },
+     {
+      "v": "Uit de rest van de zin raad je wat een onbekend woord betekent. Welk begrip past hierbij?",
+      "o": [
+       "When",
+       "Hoofdgedachte",
+       "Context",
+       "Who"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Uit de rest van de zin raad je wat een onbekend woord betekent. Dat past bij Context: situatie eromheen.",
+      "uo": [
+       "Nee, dat hoort bij When: wanneer (tijd).",
+       "Nee, dat hoort bij Hoofdgedachte: de kern van het verhaal.",
+       "Klopt: situatie eromheen.",
+       "Nee, dat hoort bij Who: wie (persoon)."
+      ],
+      "uh": "Context: situatie eromheen."
+     },
+     {
+      "v": "Welk woord betekent hoeveel (prijs)?",
+      "o": [
+       "Who",
+       "How",
+       "Why",
+       "How much"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'How much' betekent hoeveel (prijs).",
+      "uo": [
+       "Nee, 'Who' betekent wie (persoon).",
+       "Nee, 'How' betekent hoe (manier).",
+       "Nee, 'Why' betekent waarom (reden).",
+       "Klopt: 'How much' betekent hoeveel (prijs)."
+      ],
+      "uh": "How much: hoeveel (prijs)."
+     },
+     {
+      "v": "Welk woord betekent hoe (manier)?",
+      "o": [
+       "How",
+       "Why",
+       "When",
+       "How much"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'How' betekent hoe (manier).",
+      "uo": [
+       "Klopt: 'How' betekent hoe (manier).",
+       "Nee, 'Why' betekent waarom (reden).",
+       "Nee, 'When' betekent wanneer (tijd).",
+       "Nee, 'How much' betekent hoeveel (prijs)."
+      ],
+      "uh": "How: hoe (manier)."
+     },
+     {
+      "v": "Welk woord betekent wat (ding)?",
+      "o": [
+       "Who",
+       "What",
+       "How much",
+       "Where"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'What' betekent wat (ding).",
+      "uo": [
+       "Nee, 'Who' betekent wie (persoon).",
+       "Klopt: 'What' betekent wat (ding).",
+       "Nee, 'How much' betekent hoeveel (prijs).",
+       "Nee, 'Where' betekent waar (plaats)."
+      ],
+      "uh": "What: wat (ding)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Why'?",
+      "o": [
+       "wanneer (tijd)",
+       "hoe (manier)",
+       "waarom (reden)",
+       "hoeveel (prijs)"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Why' betekent waarom (reden).",
+      "uo": [
+       "Nee, dat is de betekenis van 'When'.",
+       "Nee, dat is de betekenis van 'How'.",
+       "Klopt: 'Why' betekent waarom (reden).",
+       "Nee, dat is de betekenis van 'How much'."
+      ],
+      "uh": "Why: waarom (reden)."
+     },
+     {
+      "v": "Wat is de vertaling van 'What'?",
+      "o": [
+       "hoeveel (prijs)",
+       "waar (plaats)",
+       "wanneer (tijd)",
+       "wat (ding)"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "'What' betekent wat (ding).",
+      "uo": [
+       "Nee, dat is de betekenis van 'How much'.",
+       "Nee, dat is de betekenis van 'Where'.",
+       "Nee, dat is de betekenis van 'When'.",
+       "Klopt: 'What' betekent wat (ding)."
+      ],
+      "uh": "What: wat (ding)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Repeat'?",
+      "o": [
+       "herhalen",
+       "begrijpen",
+       "waarom (reden)",
+       "wie (persoon)"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "'Repeat' betekent herhalen.",
+      "uo": [
+       "Klopt: 'Repeat' betekent herhalen.",
+       "Nee, dat is de betekenis van 'Understand'.",
+       "Nee, dat is de betekenis van 'Why'.",
+       "Nee, dat is de betekenis van 'Who'."
+      ],
+      "uh": "Repeat: herhalen."
+     },
+     {
+      "v": "De belangrijkste boodschap van wat je hoort. Wat is hier aan de hand?",
+      "o": [
+       "Context",
+       "Hoofdgedachte",
+       "What",
+       "Understand"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De belangrijkste boodschap van wat je hoort. Dat past bij Hoofdgedachte: de kern van het verhaal.",
+      "uo": [
+       "Nee, dat hoort bij Context: situatie eromheen.",
+       "Klopt: de kern van het verhaal.",
+       "Nee, dat hoort bij What: wat (ding).",
+       "Nee, dat hoort bij Understand: begrijpen."
+      ],
+      "uh": "Hoofdgedachte: de kern van het verhaal."
+     },
+     {
+      "v": "De situatie eromheen die helpt een woord te begrijpen. Welk begrip past hierbij?",
+      "o": [
+       "How",
+       "Where",
+       "Context",
+       "Repeat"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De situatie eromheen die helpt een woord te begrijpen. Dat past bij Context: situatie eromheen.",
+      "uo": [
+       "Nee, dat hoort bij How: hoe (manier).",
+       "Nee, dat hoort bij Where: waar (plaats).",
+       "Klopt: situatie eromheen.",
+       "Nee, dat hoort bij Repeat: herhalen."
+      ],
+      "uh": "Context: situatie eromheen."
+     },
+     {
+      "v": "Wat is de vertaling van 'How much'?",
+      "o": [
+       "begrijpen",
+       "hoe (manier)",
+       "de kern van het verhaal",
+       "hoeveel (prijs)"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "'How much' betekent hoeveel (prijs).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Understand'.",
+       "Nee, dat is de betekenis van 'How'.",
+       "Nee, dat is de betekenis van 'Hoofdgedachte'.",
+       "Klopt: 'How much' betekent hoeveel (prijs)."
+      ],
+      "uh": "How much: hoeveel (prijs)."
+     },
+     {
+      "v": "Welk woord betekent begrijpen?",
+      "o": [
+       "Understand",
+       "Repeat",
+       "How",
+       "Context"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Understand' betekent begrijpen.",
+      "uo": [
+       "Klopt: 'Understand' betekent begrijpen.",
+       "Nee, 'Repeat' betekent herhalen.",
+       "Nee, 'How' betekent hoe (manier).",
+       "Nee, 'Context' betekent situatie eromheen."
+      ],
+      "uh": "Understand: begrijpen."
+     },
+     {
+      "v": "Welk woord betekent wanneer (tijd)?",
+      "o": [
+       "Who",
+       "When",
+       "What",
+       "How much"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'When' betekent wanneer (tijd).",
+      "uo": [
+       "Nee, 'Who' betekent wie (persoon).",
+       "Klopt: 'When' betekent wanneer (tijd).",
+       "Nee, 'What' betekent wat (ding).",
+       "Nee, 'How much' betekent hoeveel (prijs)."
+      ],
+      "uh": "When: wanneer (tijd)."
+     },
+     {
+      "v": "Wat is de vertaling van 'When'?",
+      "o": [
+       "wie (persoon)",
+       "waar (plaats)",
+       "wanneer (tijd)",
+       "hoeveel (prijs)"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "'When' betekent wanneer (tijd).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Who'.",
+       "Nee, dat is de betekenis van 'Where'.",
+       "Klopt: 'When' betekent wanneer (tijd).",
+       "Nee, dat is de betekenis van 'How much'."
+      ],
+      "uh": "When: wanneer (tijd)."
+     },
+     {
+      "v": "Welk woord betekent waar (plaats)?",
+      "o": [
+       "Hoofdgedachte",
+       "When",
+       "Why",
+       "Where"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Where' betekent waar (plaats).",
+      "uo": [
+       "Nee, 'Hoofdgedachte' betekent de kern van het verhaal.",
+       "Nee, 'When' betekent wanneer (tijd).",
+       "Nee, 'Why' betekent waarom (reden).",
+       "Klopt: 'Where' betekent waar (plaats)."
+      ],
+      "uh": "Where: waar (plaats)."
+     },
+     {
+      "v": "Welk woord betekent wie (persoon)?",
+      "o": [
+       "Who",
+       "Hoofdgedachte",
+       "Repeat",
+       "Why"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'Who' betekent wie (persoon).",
+      "uo": [
+       "Klopt: 'Who' betekent wie (persoon).",
+       "Nee, 'Hoofdgedachte' betekent de kern van het verhaal.",
+       "Nee, 'Repeat' betekent herhalen.",
+       "Nee, 'Why' betekent waarom (reden)."
+      ],
+      "uh": "Who: wie (persoon)."
+     },
+     {
+      "v": "Waar het luisterfragment in de kern over gaat. Wat is hier aan de hand?",
+      "o": [
+       "Context",
+       "Hoofdgedachte",
+       "When",
+       "What"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Waar het luisterfragment in de kern over gaat. Dat past bij Hoofdgedachte: de kern van het verhaal.",
+      "uo": [
+       "Nee, dat hoort bij Context: situatie eromheen.",
+       "Klopt: de kern van het verhaal.",
+       "Nee, dat hoort bij When: wanneer (tijd).",
+       "Nee, dat hoort bij What: wat (ding)."
+      ],
+      "uh": "Hoofdgedachte: de kern van het verhaal."
+     },
+     {
+      "v": "Wat is de vertaling van 'Understand'?",
+      "o": [
+       "hoe (manier)",
+       "herhalen",
+       "begrijpen",
+       "situatie eromheen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Understand' betekent begrijpen.",
+      "uo": [
+       "Nee, dat is de betekenis van 'How'.",
+       "Nee, dat is de betekenis van 'Repeat'.",
+       "Klopt: 'Understand' betekent begrijpen.",
+       "Nee, dat is de betekenis van 'Context'."
+      ],
+      "uh": "Understand: begrijpen."
+     },
+     {
+      "v": "Wat is de vertaling van 'How'?",
+      "o": [
+       "de kern van het verhaal",
+       "begrijpen",
+       "herhalen",
+       "hoe (manier)"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "'How' betekent hoe (manier).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Hoofdgedachte'.",
+       "Nee, dat is de betekenis van 'Understand'.",
+       "Nee, dat is de betekenis van 'Repeat'.",
+       "Klopt: 'How' betekent hoe (manier)."
+      ],
+      "uh": "How: hoe (manier)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Who'?",
+      "o": [
+       "wie (persoon)",
+       "wat (ding)",
+       "waar (plaats)",
+       "de kern van het verhaal"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "'Who' betekent wie (persoon).",
+      "uo": [
+       "Klopt: 'Who' betekent wie (persoon).",
+       "Nee, dat is de betekenis van 'What'.",
+       "Nee, dat is de betekenis van 'Where'.",
+       "Nee, dat is de betekenis van 'Hoofdgedachte'."
+      ],
+      "uh": "Who: wie (persoon)."
+     },
+     {
+      "v": "Welk woord betekent waarom (reden)?",
+      "o": [
+       "How",
+       "Why",
+       "When",
+       "How much"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Why' betekent waarom (reden).",
+      "uo": [
+       "Nee, 'How' betekent hoe (manier).",
+       "Klopt: 'Why' betekent waarom (reden).",
+       "Nee, 'When' betekent wanneer (tijd).",
+       "Nee, 'How much' betekent hoeveel (prijs)."
+      ],
+      "uh": "Why: waarom (reden)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Where'?",
+      "o": [
+       "hoe (manier)",
+       "hoeveel (prijs)",
+       "waar (plaats)",
+       "herhalen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "'Where' betekent waar (plaats).",
+      "uo": [
+       "Nee, dat is de betekenis van 'How'.",
+       "Nee, dat is de betekenis van 'How much'.",
+       "Klopt: 'Where' betekent waar (plaats).",
+       "Nee, dat is de betekenis van 'Repeat'."
+      ],
+      "uh": "Where: waar (plaats)."
+     },
+     {
+      "v": "Welk woord betekent herhalen?",
+      "o": [
+       "Who",
+       "Understand",
+       "Why",
+       "Repeat"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "'Repeat' betekent herhalen.",
+      "uo": [
+       "Nee, 'Who' betekent wie (persoon).",
+       "Nee, 'Understand' betekent begrijpen.",
+       "Nee, 'Why' betekent waarom (reden).",
+       "Klopt: 'Repeat' betekent herhalen."
+      ],
+      "uh": "Repeat: herhalen."
      }
     ],
     "begrippen": [
@@ -4059,6 +4933,405 @@ var VAKKEN_VMBO = [
        "Bedanken is thank you."
       ],
       "uh": "bij een eerste kennismaking: Je zegt het als je iemand voor het eerst ontmoet."
+     },
+     {
+      "v": "Welk woord betekent afscheid?",
+      "o": [
+       "Hello",
+       "Goodbye",
+       "Excuse me",
+       "Nice to meet you"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Goodbye' betekent afscheid.",
+      "uo": [
+       "Nee, 'Hello' betekent begroeting.",
+       "Klopt: 'Goodbye' betekent afscheid.",
+       "Nee, 'Excuse me' betekent aandacht vragen.",
+       "Nee, 'Nice to meet you' betekent bij kennismaking."
+      ],
+      "uh": "Goodbye: afscheid."
+     },
+     {
+      "v": "Je antwoord als iemand je bedankt. Om welk begrip gaat het?",
+      "o": [
+       "Nice to meet you",
+       "Thank you",
+       "You're welcome",
+       "Goodbye"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je antwoord als iemand je bedankt. Dat past bij You're welcome: graag gedaan.",
+      "uo": [
+       "Nee, dat hoort bij Nice to meet you: bij kennismaking.",
+       "Nee, dat hoort bij Thank you: bedanken.",
+       "Klopt: graag gedaan.",
+       "Nee, dat hoort bij Goodbye: afscheid."
+      ],
+      "uh": "You're welcome: graag gedaan."
+     },
+     {
+      "v": "Wat is de vertaling van 'Goodbye'?",
+      "o": [
+       "bij kennismaking",
+       "begroeting",
+       "aandacht vragen",
+       "afscheid"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Goodbye' betekent afscheid.",
+      "uo": [
+       "Nee, dat is de betekenis van 'Nice to meet you'.",
+       "Nee, dat is de betekenis van 'Hello'.",
+       "Nee, dat is de betekenis van 'Excuse me'.",
+       "Klopt: 'Goodbye' betekent afscheid."
+      ],
+      "uh": "Goodbye: afscheid."
+     },
+     {
+      "v": "Welk woord betekent hoe gaat het?",
+      "o": [
+       "How are you",
+       "I'm sorry",
+       "Hello",
+       "May I"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'How are you' betekent hoe gaat het.",
+      "uo": [
+       "Klopt: 'How are you' betekent hoe gaat het.",
+       "Nee, 'I'm sorry' betekent sorry zeggen.",
+       "Nee, 'Hello' betekent begroeting.",
+       "Nee, 'May I' betekent mag ik."
+      ],
+      "uh": "How are you: hoe gaat het."
+     },
+     {
+      "v": "Je vraagt beleefd of iemand je wil helpen. Welk begrip past hierbij?",
+      "o": [
+       "May I",
+       "Could you",
+       "Nice to meet you",
+       "Excuse me"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Je vraagt beleefd of iemand je wil helpen. Dat past bij Could you: beleefd verzoek.",
+      "uo": [
+       "Nee, dat hoort bij May I: mag ik.",
+       "Klopt: beleefd verzoek.",
+       "Nee, dat hoort bij Nice to meet you: bij kennismaking.",
+       "Nee, dat hoort bij Excuse me: aandacht vragen."
+      ],
+      "uh": "Could you: beleefd verzoek."
+     },
+     {
+      "v": "Het beleefde begin van een verzoek om hulp. Om welk begrip gaat het?",
+      "o": [
+       "Hello",
+       "May I",
+       "Could you",
+       "You're welcome"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het beleefde begin van een verzoek om hulp. Dat past bij Could you: beleefd verzoek.",
+      "uo": [
+       "Nee, dat hoort bij Hello: begroeting.",
+       "Nee, dat hoort bij May I: mag ik.",
+       "Klopt: beleefd verzoek.",
+       "Nee, dat hoort bij You're welcome: graag gedaan."
+      ],
+      "uh": "Could you: beleefd verzoek."
+     },
+     {
+      "v": "Iemand bedankt je en jij reageert vriendelijk terug. Welk begrip herken je hier?",
+      "o": [
+       "May I",
+       "Excuse me",
+       "Nice to meet you",
+       "You're welcome"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Iemand bedankt je en jij reageert vriendelijk terug. Dat past bij You're welcome: graag gedaan.",
+      "uo": [
+       "Nee, dat hoort bij May I: mag ik.",
+       "Nee, dat hoort bij Excuse me: aandacht vragen.",
+       "Nee, dat hoort bij Nice to meet you: bij kennismaking.",
+       "Klopt: graag gedaan."
+      ],
+      "uh": "You're welcome: graag gedaan."
+     },
+     {
+      "v": "Wat je zegt om je te verontschuldigen. Wat is hier aan de hand?",
+      "o": [
+       "I'm sorry",
+       "Excuse me",
+       "Nice to meet you",
+       "Thank you"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Wat je zegt om je te verontschuldigen. Dat past bij I'm sorry: sorry zeggen.",
+      "uo": [
+       "Klopt: sorry zeggen.",
+       "Nee, dat hoort bij Excuse me: aandacht vragen.",
+       "Nee, dat hoort bij Nice to meet you: bij kennismaking.",
+       "Nee, dat hoort bij Thank you: bedanken."
+      ],
+      "uh": "I'm sorry: sorry zeggen."
+     },
+     {
+      "v": "Je bent per ongeluk tegen iemand aangelopen en verontschuldigt je. Welk begrip past hierbij?",
+      "o": [
+       "Excuse me",
+       "I'm sorry",
+       "Hello",
+       "May I"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je bent per ongeluk tegen iemand aangelopen en verontschuldigt je. Dat past bij I'm sorry: sorry zeggen.",
+      "uo": [
+       "Nee, dat hoort bij Excuse me: aandacht vragen.",
+       "Klopt: sorry zeggen.",
+       "Nee, dat hoort bij Hello: begroeting.",
+       "Nee, dat hoort bij May I: mag ik."
+      ],
+      "uh": "I'm sorry: sorry zeggen."
+     },
+     {
+      "v": "Je wilt beleefd de aandacht van een voorbijganger vragen. Om welk begrip gaat het?",
+      "o": [
+       "Hello",
+       "Nice to meet you",
+       "Excuse me",
+       "May I"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je wilt beleefd de aandacht van een voorbijganger vragen. Dat past bij Excuse me: aandacht vragen.",
+      "uo": [
+       "Nee, dat hoort bij Hello: begroeting.",
+       "Nee, dat hoort bij Nice to meet you: bij kennismaking.",
+       "Klopt: aandacht vragen.",
+       "Nee, dat hoort bij May I: mag ik."
+      ],
+      "uh": "Excuse me: aandacht vragen."
+     },
+     {
+      "v": "Wat is de vertaling van 'How are you'?",
+      "o": [
+       "sorry zeggen",
+       "afscheid",
+       "mag ik",
+       "hoe gaat het"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "'How are you' betekent hoe gaat het.",
+      "uo": [
+       "Nee, dat is de betekenis van 'I'm sorry'.",
+       "Nee, dat is de betekenis van 'Goodbye'.",
+       "Nee, dat is de betekenis van 'May I'.",
+       "Klopt: 'How are you' betekent hoe gaat het."
+      ],
+      "uh": "How are you: hoe gaat het."
+     },
+     {
+      "v": "Wat is de vertaling van 'Thank you'?",
+      "o": [
+       "bedanken",
+       "graag gedaan",
+       "begroeting",
+       "mag ik"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Thank you' betekent bedanken.",
+      "uo": [
+       "Klopt: 'Thank you' betekent bedanken.",
+       "Nee, dat is de betekenis van 'You're welcome'.",
+       "Nee, dat is de betekenis van 'Hello'.",
+       "Nee, dat is de betekenis van 'May I'."
+      ],
+      "uh": "Thank you: bedanken."
+     },
+     {
+      "v": "Wat je zegt bij een eerste kennismaking. Welk begrip past hierbij?",
+      "o": [
+       "Excuse me",
+       "Nice to meet you",
+       "How are you",
+       "Hello"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Wat je zegt bij een eerste kennismaking. Dat past bij Nice to meet you: bij kennismaking.",
+      "uo": [
+       "Nee, dat hoort bij Excuse me: aandacht vragen.",
+       "Klopt: bij kennismaking.",
+       "Nee, dat hoort bij How are you: hoe gaat het.",
+       "Nee, dat hoort bij Hello: begroeting."
+      ],
+      "uh": "Nice to meet you: bij kennismaking."
+     },
+     {
+      "v": "Welk woord betekent begroeting?",
+      "o": [
+       "Excuse me",
+       "Goodbye",
+       "Hello",
+       "Nice to meet you"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "'Hello' betekent begroeting.",
+      "uo": [
+       "Nee, 'Excuse me' betekent aandacht vragen.",
+       "Nee, 'Goodbye' betekent afscheid.",
+       "Klopt: 'Hello' betekent begroeting.",
+       "Nee, 'Nice to meet you' betekent bij kennismaking."
+      ],
+      "uh": "Hello: begroeting."
+     },
+     {
+      "v": "Welk woord betekent bedanken?",
+      "o": [
+       "May I",
+       "You're welcome",
+       "Hello",
+       "Thank you"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Thank you' betekent bedanken.",
+      "uo": [
+       "Nee, 'May I' betekent mag ik.",
+       "Nee, 'You're welcome' betekent graag gedaan.",
+       "Nee, 'Hello' betekent begroeting.",
+       "Klopt: 'Thank you' betekent bedanken."
+      ],
+      "uh": "Thank you: bedanken."
+     },
+     {
+      "v": "Je vraagt beleefd om toestemming voor iets. Wat is hier aan de hand?",
+      "o": [
+       "May I",
+       "How are you",
+       "Nice to meet you",
+       "Thank you"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Je vraagt beleefd om toestemming voor iets. Dat past bij May I: mag ik.",
+      "uo": [
+       "Klopt: mag ik.",
+       "Nee, dat hoort bij How are you: hoe gaat het.",
+       "Nee, dat hoort bij Nice to meet you: bij kennismaking.",
+       "Nee, dat hoort bij Thank you: bedanken."
+      ],
+      "uh": "May I: mag ik."
+     },
+     {
+      "v": "Beleefd vragen of iets mag. Welk begrip past hierbij?",
+      "o": [
+       "Could you",
+       "May I",
+       "Nice to meet you",
+       "Hello"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Beleefd vragen of iets mag. Dat past bij May I: mag ik.",
+      "uo": [
+       "Nee, dat hoort bij Could you: beleefd verzoek.",
+       "Klopt: mag ik.",
+       "Nee, dat hoort bij Nice to meet you: bij kennismaking.",
+       "Nee, dat hoort bij Hello: begroeting."
+      ],
+      "uh": "May I: mag ik."
+     },
+     {
+      "v": "Wat is de vertaling van 'Hello'?",
+      "o": [
+       "bedanken",
+       "afscheid",
+       "begroeting",
+       "graag gedaan"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Hello' betekent begroeting.",
+      "uo": [
+       "Nee, dat is de betekenis van 'Thank you'.",
+       "Nee, dat is de betekenis van 'Goodbye'.",
+       "Klopt: 'Hello' betekent begroeting.",
+       "Nee, dat is de betekenis van 'You're welcome'."
+      ],
+      "uh": "Hello: begroeting."
+     },
+     {
+      "v": "Wat je zegt om beleefd iemands aandacht te krijgen. Welk begrip herken je hier?",
+      "o": [
+       "May I",
+       "Nice to meet you",
+       "Hello",
+       "Excuse me"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Wat je zegt om beleefd iemands aandacht te krijgen. Dat past bij Excuse me: aandacht vragen.",
+      "uo": [
+       "Nee, dat hoort bij May I: mag ik.",
+       "Nee, dat hoort bij Nice to meet you: bij kennismaking.",
+       "Nee, dat hoort bij Hello: begroeting.",
+       "Klopt: aandacht vragen."
+      ],
+      "uh": "Excuse me: aandacht vragen."
+     },
+     {
+      "v": "Je schudt iemand voor het eerst de hand en stelt je voor. Wat is hier aan de hand?",
+      "o": [
+       "Nice to meet you",
+       "Goodbye",
+       "May I",
+       "I'm sorry"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je schudt iemand voor het eerst de hand en stelt je voor. Dat past bij Nice to meet you: bij kennismaking.",
+      "uo": [
+       "Klopt: bij kennismaking.",
+       "Nee, dat hoort bij Goodbye: afscheid.",
+       "Nee, dat hoort bij May I: mag ik.",
+       "Nee, dat hoort bij I'm sorry: sorry zeggen."
+      ],
+      "uh": "Nice to meet you: bij kennismaking."
+     },
+     {
+      "v": "Beleefd vragen of iemand het raam open wil doen. Welk begrip past hierbij?",
+      "o": [
+       "May I",
+       "Could you",
+       "Hello",
+       "You're welcome"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Beleefd vragen of iemand het raam open wil doen. Dat past bij Could you: beleefd verzoek.",
+      "uo": [
+       "Nee, dat hoort bij May I: mag ik.",
+       "Klopt: beleefd verzoek.",
+       "Nee, dat hoort bij Hello: begroeting.",
+       "Nee, dat hoort bij You're welcome: graag gedaan."
+      ],
+      "uh": "Could you: beleefd verzoek."
      }
     ],
     "begrippen": [
@@ -4289,6 +5562,424 @@ var VAKKEN_VMBO = [
        "«goes» is present simple bij he/she/it."
       ],
       "uh": "went: De verleden tijd van go is went."
+     },
+     {
+      "v": "De vorm die aangeeft dat er meer dan één is, meestal met een -s. Welk begrip past hierbij?",
+      "o": [
+       "Woordvolgorde",
+       "Meervoud",
+       "A",
+       "Present continuous"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De vorm die aangeeft dat er meer dan één is, meestal met een -s. Dat past bij Meervoud: meestal -s.",
+      "uo": [
+       "Nee, dat hoort bij Woordvolgorde: onderwerp-werkwoord-rest.",
+       "Klopt: meestal -s.",
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Nee, dat hoort bij Present continuous: nu bezig, -ing."
+      ],
+      "uh": "Meervoud: meestal -s."
+     },
+     {
+      "v": "De vaste volgorde van onderwerp, werkwoord en voorwerp in een zin. Om welk begrip gaat het?",
+      "o": [
+       "A",
+       "Do not",
+       "Woordvolgorde",
+       "An"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De vaste volgorde van onderwerp, werkwoord en voorwerp in een zin. Dat past bij Woordvolgorde: onderwerp-werkwoord-rest.",
+      "uo": [
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Nee, dat hoort bij Do not: ontkenning.",
+       "Klopt: onderwerp-werkwoord-rest.",
+       "Nee, dat hoort bij An: voor klinkerklank."
+      ],
+      "uh": "Woordvolgorde: onderwerp-werkwoord-rest."
+     },
+     {
+      "v": "Het onbepaalde lidwoord dat je voor een klinkerklank zet. Welk begrip herken je hier?",
+      "o": [
+       "Meervoud",
+       "A",
+       "Present simple",
+       "An"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het onbepaalde lidwoord dat je voor een klinkerklank zet. Dat past bij An: voor klinkerklank.",
+      "uo": [
+       "Nee, dat hoort bij Meervoud: meestal -s.",
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Nee, dat hoort bij Present simple: gewoontes, -s bij hij/zij.",
+       "Klopt: voor klinkerklank."
+      ],
+      "uh": "An: voor klinkerklank."
+     },
+     {
+      "v": "Iets dat op dit moment bezig is, terwijl je het zegt. Wat is hier aan de hand?",
+      "o": [
+       "Present continuous",
+       "Past simple",
+       "Woordvolgorde",
+       "A"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Iets dat op dit moment bezig is, terwijl je het zegt. Dat past bij Present continuous: nu bezig, -ing.",
+      "uo": [
+       "Klopt: nu bezig, -ing.",
+       "Nee, dat hoort bij Past simple: verleden tijd.",
+       "Nee, dat hoort bij Woordvolgorde: onderwerp-werkwoord-rest.",
+       "Nee, dat hoort bij A: voor medeklinkerklank."
+      ],
+      "uh": "Present continuous: nu bezig, -ing."
+     },
+     {
+      "v": "Vorige week bezochten we een museum. Welk begrip past hierbij?",
+      "o": [
+       "Present simple",
+       "Past simple",
+       "Do not",
+       "An"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Vorige week bezochten we een museum. Dat past bij Past simple: verleden tijd.",
+      "uo": [
+       "Nee, dat hoort bij Present simple: gewoontes, -s bij hij/zij.",
+       "Klopt: verleden tijd.",
+       "Nee, dat hoort bij Do not: ontkenning.",
+       "Nee, dat hoort bij An: voor klinkerklank."
+      ],
+      "uh": "Past simple: verleden tijd."
+     },
+     {
+      "v": "Een algemene waarheid, zoals dat water bij honderd graden kookt. Om welk begrip gaat het?",
+      "o": [
+       "Do not",
+       "An",
+       "Present simple",
+       "A"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een algemene waarheid, zoals dat water bij honderd graden kookt. Dat past bij Present simple: gewoontes, -s bij hij/zij.",
+      "uo": [
+       "Nee, dat hoort bij Do not: ontkenning.",
+       "Nee, dat hoort bij An: voor klinkerklank.",
+       "Klopt: gewoontes, -s bij hij/zij.",
+       "Nee, dat hoort bij A: voor medeklinkerklank."
+      ],
+      "uh": "Present simple: gewoontes, -s bij hij/zij."
+     },
+     {
+      "v": "Van one dog naar two dogs verandert deze vorm. Welk begrip herken je hier?",
+      "o": [
+       "Present continuous",
+       "Present simple",
+       "An",
+       "Meervoud"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Van one dog naar two dogs verandert deze vorm. Dat past bij Meervoud: meestal -s.",
+      "uo": [
+       "Nee, dat hoort bij Present continuous: nu bezig, -ing.",
+       "Nee, dat hoort bij Present simple: gewoontes, -s bij hij/zij.",
+       "Nee, dat hoort bij An: voor klinkerklank.",
+       "Klopt: meestal -s."
+      ],
+      "uh": "Meervoud: meestal -s."
+     },
+     {
+      "v": "De reden dat \"I like football\" goed is en \"I football like\" niet. Wat is hier aan de hand?",
+      "o": [
+       "Woordvolgorde",
+       "Do not",
+       "A",
+       "An"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De reden dat \"I like football\" goed is en \"I football like\" niet. Dat past bij Woordvolgorde: onderwerp-werkwoord-rest.",
+      "uo": [
+       "Klopt: onderwerp-werkwoord-rest.",
+       "Nee, dat hoort bij Do not: ontkenning.",
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Nee, dat hoort bij An: voor klinkerklank."
+      ],
+      "uh": "Woordvolgorde: onderwerp-werkwoord-rest."
+     },
+     {
+      "v": "De vorm voor meer dan één van iets. Welk begrip past hierbij?",
+      "o": [
+       "Present simple",
+       "Meervoud",
+       "An",
+       "Present continuous"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De vorm voor meer dan één van iets. Dat past bij Meervoud: meestal -s.",
+      "uo": [
+       "Nee, dat hoort bij Present simple: gewoontes, -s bij hij/zij.",
+       "Klopt: meestal -s.",
+       "Nee, dat hoort bij An: voor klinkerklank.",
+       "Nee, dat hoort bij Present continuous: nu bezig, -ing."
+      ],
+      "uh": "Meervoud: meestal -s."
+     },
+     {
+      "v": "Voor woorden die met een klinkerklank beginnen gebruik je dit lidwoord. Om welk begrip gaat het?",
+      "o": [
+       "Meervoud",
+       "Past simple",
+       "An",
+       "Present simple"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Voor woorden die met een klinkerklank beginnen gebruik je dit lidwoord. Dat past bij An: voor klinkerklank.",
+      "uo": [
+       "Nee, dat hoort bij Meervoud: meestal -s.",
+       "Nee, dat hoort bij Past simple: verleden tijd.",
+       "Klopt: voor klinkerklank.",
+       "Nee, dat hoort bij Present simple: gewoontes, -s bij hij/zij."
+      ],
+      "uh": "An: voor klinkerklank."
+     },
+     {
+      "v": "Om te zeggen dat hij iets juist niet doet in de tegenwoordige tijd. Welk begrip herken je hier?",
+      "o": [
+       "A",
+       "Present continuous",
+       "Woordvolgorde",
+       "Do not"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Om te zeggen dat hij iets juist niet doet in de tegenwoordige tijd. Dat past bij Do not: ontkenning.",
+      "uo": [
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Nee, dat hoort bij Present continuous: nu bezig, -ing.",
+       "Nee, dat hoort bij Woordvolgorde: onderwerp-werkwoord-rest.",
+       "Klopt: ontkenning."
+      ],
+      "uh": "Do not: ontkenning."
+     },
+     {
+      "v": "De verleden tijd voor een afgeronde gebeurtenis. Wat is hier aan de hand?",
+      "o": [
+       "Past simple",
+       "Present continuous",
+       "An",
+       "Woordvolgorde"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De verleden tijd voor een afgeronde gebeurtenis. Dat past bij Past simple: verleden tijd.",
+      "uo": [
+       "Klopt: verleden tijd.",
+       "Nee, dat hoort bij Present continuous: nu bezig, -ing.",
+       "Nee, dat hoort bij An: voor klinkerklank.",
+       "Nee, dat hoort bij Woordvolgorde: onderwerp-werkwoord-rest."
+      ],
+      "uh": "Past simple: verleden tijd."
+     },
+     {
+      "v": "Iets dat gisteren gebeurde en al voorbij is. Welk begrip past hierbij?",
+      "o": [
+       "Present simple",
+       "Past simple",
+       "Do not",
+       "An"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Iets dat gisteren gebeurde en al voorbij is. Dat past bij Past simple: verleden tijd.",
+      "uo": [
+       "Nee, dat hoort bij Present simple: gewoontes, -s bij hij/zij.",
+       "Klopt: verleden tijd.",
+       "Nee, dat hoort bij Do not: ontkenning.",
+       "Nee, dat hoort bij An: voor klinkerklank."
+      ],
+      "uh": "Past simple: verleden tijd."
+     },
+     {
+      "v": "Kijk, hij is nu aan het rennen op het schoolplein. Om welk begrip gaat het?",
+      "o": [
+       "Woordvolgorde",
+       "Past simple",
+       "Present continuous",
+       "A"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Kijk, hij is nu aan het rennen op het schoolplein. Dat past bij Present continuous: nu bezig, -ing.",
+      "uo": [
+       "Nee, dat hoort bij Woordvolgorde: onderwerp-werkwoord-rest.",
+       "Nee, dat hoort bij Past simple: verleden tijd.",
+       "Klopt: nu bezig, -ing.",
+       "Nee, dat hoort bij A: voor medeklinkerklank."
+      ],
+      "uh": "Present continuous: nu bezig, -ing."
+     },
+     {
+      "v": "De tijd voor gewoontes en feiten die altijd gelden. Welk begrip herken je hier?",
+      "o": [
+       "A",
+       "Present continuous",
+       "Past simple",
+       "Present simple"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De tijd voor gewoontes en feiten die altijd gelden. Dat past bij Present simple: gewoontes, -s bij hij/zij.",
+      "uo": [
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Nee, dat hoort bij Present continuous: nu bezig, -ing.",
+       "Nee, dat hoort bij Past simple: verleden tijd.",
+       "Klopt: gewoontes, -s bij hij/zij."
+      ],
+      "uh": "Present simple: gewoontes, -s bij hij/zij."
+     },
+     {
+      "v": "De regel dat het onderwerp voor het werkwoord komt. Wat is hier aan de hand?",
+      "o": [
+       "Woordvolgorde",
+       "Do not",
+       "A",
+       "An"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De regel dat het onderwerp voor het werkwoord komt. Dat past bij Woordvolgorde: onderwerp-werkwoord-rest.",
+      "uo": [
+       "Klopt: onderwerp-werkwoord-rest.",
+       "Nee, dat hoort bij Do not: ontkenning.",
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Nee, dat hoort bij An: voor klinkerklank."
+      ],
+      "uh": "Woordvolgorde: onderwerp-werkwoord-rest."
+     },
+     {
+      "v": "De manier om in de present simple iets te ontkennen. Welk begrip past hierbij?",
+      "o": [
+       "Present continuous",
+       "Do not",
+       "An",
+       "Present simple"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De manier om in de present simple iets te ontkennen. Dat past bij Do not: ontkenning.",
+      "uo": [
+       "Nee, dat hoort bij Present continuous: nu bezig, -ing.",
+       "Klopt: ontkenning.",
+       "Nee, dat hoort bij An: voor klinkerklank.",
+       "Nee, dat hoort bij Present simple: gewoontes, -s bij hij/zij."
+      ],
+      "uh": "Do not: ontkenning."
+     },
+     {
+      "v": "Voor woorden die met een medeklinkerklank beginnen gebruik je dit lidwoord. Om welk begrip gaat het?",
+      "o": [
+       "Meervoud",
+       "An",
+       "A",
+       "Do not"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Voor woorden die met een medeklinkerklank beginnen gebruik je dit lidwoord. Dat past bij A: voor medeklinkerklank.",
+      "uo": [
+       "Nee, dat hoort bij Meervoud: meestal -s.",
+       "Nee, dat hoort bij An: voor klinkerklank.",
+       "Klopt: voor medeklinkerklank.",
+       "Nee, dat hoort bij Do not: ontkenning."
+      ],
+      "uh": "A: voor medeklinkerklank."
+     },
+     {
+      "v": "Iets dat je elke dag doet, een gewoonte, zoals naar school gaan. Welk begrip herken je hier?",
+      "o": [
+       "A",
+       "An",
+       "Do not",
+       "Present simple"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Iets dat je elke dag doet, een gewoonte, zoals naar school gaan. Dat past bij Present simple: gewoontes, -s bij hij/zij.",
+      "uo": [
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Nee, dat hoort bij An: voor klinkerklank.",
+       "Nee, dat hoort bij Do not: ontkenning.",
+       "Klopt: gewoontes, -s bij hij/zij."
+      ],
+      "uh": "Present simple: gewoontes, -s bij hij/zij."
+     },
+     {
+      "v": "Het onbepaalde lidwoord dat je voor een medeklinkerklank zet. Wat is hier aan de hand?",
+      "o": [
+       "A",
+       "An",
+       "Woordvolgorde",
+       "Past simple"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het onbepaalde lidwoord dat je voor een medeklinkerklank zet. Dat past bij A: voor medeklinkerklank.",
+      "uo": [
+       "Klopt: voor medeklinkerklank.",
+       "Nee, dat hoort bij An: voor klinkerklank.",
+       "Nee, dat hoort bij Woordvolgorde: onderwerp-werkwoord-rest.",
+       "Nee, dat hoort bij Past simple: verleden tijd."
+      ],
+      "uh": "A: voor medeklinkerklank."
+     },
+     {
+      "v": "De tijd voor een handeling die nu aan de gang is. Welk begrip past hierbij?",
+      "o": [
+       "Present simple",
+       "Present continuous",
+       "A",
+       "An"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De tijd voor een handeling die nu aan de gang is. Dat past bij Present continuous: nu bezig, -ing.",
+      "uo": [
+       "Nee, dat hoort bij Present simple: gewoontes, -s bij hij/zij.",
+       "Klopt: nu bezig, -ing.",
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Nee, dat hoort bij An: voor klinkerklank."
+      ],
+      "uh": "Present continuous: nu bezig, -ing."
+     },
+     {
+      "v": "In de tegenwoordige tijd maak je een zin ontkennend met deze hulpvorm. Om welk begrip gaat het?",
+      "o": [
+       "Meervoud",
+       "A",
+       "Do not",
+       "Woordvolgorde"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "In de tegenwoordige tijd maak je een zin ontkennend met deze hulpvorm. Dat past bij Do not: ontkenning.",
+      "uo": [
+       "Nee, dat hoort bij Meervoud: meestal -s.",
+       "Nee, dat hoort bij A: voor medeklinkerklank.",
+       "Klopt: ontkenning.",
+       "Nee, dat hoort bij Woordvolgorde: onderwerp-werkwoord-rest."
+      ],
+      "uh": "Do not: ontkenning."
      }
     ],
     "begrippen": [
@@ -4527,6 +6218,519 @@ var VAKKEN_VMBO = [
        "«daarom» is deshalb."
       ],
       "uh": "ook: «auch» betekent ook en voegt iets toe."
+     },
+     {
+      "v": "Welk woord betekent hoewel (tegenstelling)?",
+      "o": [
+       "Weil",
+       "Obwohl",
+       "Skimmen",
+       "Deshalb"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Obwohl' betekent hoewel (tegenstelling).",
+      "uo": [
+       "Nee, 'Weil' betekent omdat (reden).",
+       "Klopt: 'Obwohl' betekent hoewel (tegenstelling).",
+       "Nee, 'Skimmen' betekent globaal lezen.",
+       "Nee, 'Deshalb' betekent daarom (gevolg)."
+      ],
+      "uh": "Obwohl: hoewel (tegenstelling)."
+     },
+     {
+      "v": "Welk woord betekent en (opsomming)?",
+      "o": [
+       "Deshalb",
+       "Aber",
+       "Und",
+       "Weil"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Und' betekent en (opsomming).",
+      "uo": [
+       "Nee, 'Deshalb' betekent daarom (gevolg).",
+       "Nee, 'Aber' betekent maar (tegenstelling).",
+       "Klopt: 'Und' betekent en (opsomming).",
+       "Nee, 'Weil' betekent omdat (reden)."
+      ],
+      "uh": "Und: en (opsomming)."
+     },
+     {
+      "v": "Een woord dat op het Nederlands lijkt maar iets anders betekent. Welk begrip herken je hier?",
+      "o": [
+       "Weil",
+       "Aber",
+       "Obwohl",
+       "Valse vriend"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een woord dat op het Nederlands lijkt maar iets anders betekent. Dat past bij Valse vriend: lijkt, betekent anders.",
+      "uo": [
+       "Nee, dat hoort bij Weil: omdat (reden).",
+       "Nee, dat hoort bij Aber: maar (tegenstelling).",
+       "Nee, dat hoort bij Obwohl: hoewel (tegenstelling).",
+       "Klopt: lijkt, betekent anders."
+      ],
+      "uh": "Valse vriend: lijkt, betekent anders."
+     },
+     {
+      "v": "Even vlug kijken waar een tekst globaal over gaat. Wat is hier aan de hand?",
+      "o": [
+       "Skimmen",
+       "Scannen",
+       "Deshalb",
+       "Aber"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Even vlug kijken waar een tekst globaal over gaat. Dat past bij Skimmen: globaal lezen.",
+      "uo": [
+       "Klopt: globaal lezen.",
+       "Nee, dat hoort bij Scannen: gericht zoeken.",
+       "Nee, dat hoort bij Deshalb: daarom (gevolg).",
+       "Nee, dat hoort bij Aber: maar (tegenstelling)."
+      ],
+      "uh": "Skimmen: globaal lezen."
+     },
+     {
+      "v": "Wat is de vertaling van 'Auch'?",
+      "o": [
+       "globaal lezen",
+       "ook (opsomming)",
+       "en (opsomming)",
+       "gericht zoeken"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'Auch' betekent ook (opsomming).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Skimmen'.",
+       "Klopt: 'Auch' betekent ook (opsomming).",
+       "Nee, dat is de betekenis van 'Und'.",
+       "Nee, dat is de betekenis van 'Scannen'."
+      ],
+      "uh": "Auch: ook (opsomming)."
+     },
+     {
+      "v": "Welk woord betekent ook (opsomming)?",
+      "o": [
+       "Zum Beispiel",
+       "Aber",
+       "Auch",
+       "Valse vriend"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Auch' betekent ook (opsomming).",
+      "uo": [
+       "Nee, 'Zum Beispiel' betekent bijvoorbeeld.",
+       "Nee, 'Aber' betekent maar (tegenstelling).",
+       "Klopt: 'Auch' betekent ook (opsomming).",
+       "Nee, 'Valse vriend' betekent lijkt, betekent anders."
+      ],
+      "uh": "Auch: ook (opsomming)."
+     },
+     {
+      "v": "Het Duitse woord bellen lijkt op bellen, maar betekent blaffen. Welk begrip herken je hier?",
+      "o": [
+       "Zum Beispiel",
+       "Weil",
+       "Obwohl",
+       "Valse vriend"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het Duitse woord bellen lijkt op bellen, maar betekent blaffen. Dat past bij Valse vriend: lijkt, betekent anders.",
+      "uo": [
+       "Nee, dat hoort bij Zum Beispiel: bijvoorbeeld.",
+       "Nee, dat hoort bij Weil: omdat (reden).",
+       "Nee, dat hoort bij Obwohl: hoewel (tegenstelling).",
+       "Klopt: lijkt, betekent anders."
+      ],
+      "uh": "Valse vriend: lijkt, betekent anders."
+     },
+     {
+      "v": "Wat is de vertaling van 'Obwohl'?",
+      "o": [
+       "hoewel (tegenstelling)",
+       "omdat (reden)",
+       "daarom (gevolg)",
+       "lijkt, betekent anders"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "'Obwohl' betekent hoewel (tegenstelling).",
+      "uo": [
+       "Klopt: 'Obwohl' betekent hoewel (tegenstelling).",
+       "Nee, dat is de betekenis van 'Weil'.",
+       "Nee, dat is de betekenis van 'Deshalb'.",
+       "Nee, dat is de betekenis van 'Valse vriend'."
+      ],
+      "uh": "Obwohl: hoewel (tegenstelling)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Und'?",
+      "o": [
+       "maar (tegenstelling)",
+       "en (opsomming)",
+       "daarom (gevolg)",
+       "omdat (reden)"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Und' betekent en (opsomming).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Aber'.",
+       "Klopt: 'Und' betekent en (opsomming).",
+       "Nee, dat is de betekenis van 'Deshalb'.",
+       "Nee, dat is de betekenis van 'Weil'."
+      ],
+      "uh": "Und: en (opsomming)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Deshalb'?",
+      "o": [
+       "ook (opsomming)",
+       "en (opsomming)",
+       "daarom (gevolg)",
+       "lijkt, betekent anders"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "'Deshalb' betekent daarom (gevolg).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Auch'.",
+       "Nee, dat is de betekenis van 'Und'.",
+       "Klopt: 'Deshalb' betekent daarom (gevolg).",
+       "Nee, dat is de betekenis van 'Valse vriend'."
+      ],
+      "uh": "Deshalb: daarom (gevolg)."
+     },
+     {
+      "v": "Dit woord zet twee dingen recht tegenover elkaar, net als maar. Welk begrip herken je hier?",
+      "o": [
+       "Skimmen",
+       "Und",
+       "Weil",
+       "Aber"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Dit woord zet twee dingen recht tegenover elkaar, net als maar. Dat past bij Aber: maar (tegenstelling).",
+      "uo": [
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Und: en (opsomming).",
+       "Nee, dat hoort bij Weil: omdat (reden).",
+       "Klopt: maar (tegenstelling)."
+      ],
+      "uh": "Aber: maar (tegenstelling)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Zum Beispiel'?",
+      "o": [
+       "bijvoorbeeld",
+       "daarom (gevolg)",
+       "hoewel (tegenstelling)",
+       "maar (tegenstelling)"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Zum Beispiel' betekent bijvoorbeeld.",
+      "uo": [
+       "Klopt: 'Zum Beispiel' betekent bijvoorbeeld.",
+       "Nee, dat is de betekenis van 'Deshalb'.",
+       "Nee, dat is de betekenis van 'Obwohl'.",
+       "Nee, dat is de betekenis van 'Aber'."
+      ],
+      "uh": "Zum Beispiel: bijvoorbeeld."
+     },
+     {
+      "v": "Snel zoeken naar één bepaald detail in de tekst. Welk begrip past hierbij?",
+      "o": [
+       "Und",
+       "Scannen",
+       "Auch",
+       "Valse vriend"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Snel zoeken naar één bepaald detail in de tekst. Dat past bij Scannen: gericht zoeken.",
+      "uo": [
+       "Nee, dat hoort bij Und: en (opsomming).",
+       "Klopt: gericht zoeken.",
+       "Nee, dat hoort bij Auch: ook (opsomming).",
+       "Nee, dat hoort bij Valse vriend: lijkt, betekent anders."
+      ],
+      "uh": "Scannen: gericht zoeken."
+     },
+     {
+      "v": "Welk woord betekent omdat (reden)?",
+      "o": [
+       "Deshalb",
+       "Aber",
+       "Weil",
+       "Skimmen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "'Weil' betekent omdat (reden).",
+      "uo": [
+       "Nee, 'Deshalb' betekent daarom (gevolg).",
+       "Nee, 'Aber' betekent maar (tegenstelling).",
+       "Klopt: 'Weil' betekent omdat (reden).",
+       "Nee, 'Skimmen' betekent globaal lezen."
+      ],
+      "uh": "Weil: omdat (reden)."
+     },
+     {
+      "v": "Dit woord telt twee dingen simpelweg bij elkaar op. Welk begrip herken je hier?",
+      "o": [
+       "Weil",
+       "Aber",
+       "Deshalb",
+       "Und"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Dit woord telt twee dingen simpelweg bij elkaar op. Dat past bij Und: en (opsomming).",
+      "uo": [
+       "Nee, dat hoort bij Weil: omdat (reden).",
+       "Nee, dat hoort bij Aber: maar (tegenstelling).",
+       "Nee, dat hoort bij Deshalb: daarom (gevolg).",
+       "Klopt: en (opsomming)."
+      ],
+      "uh": "Und: en (opsomming)."
+     },
+     {
+      "v": "Deze woorden kondigen een voorbeeld aan. Wat is hier aan de hand?",
+      "o": [
+       "Zum Beispiel",
+       "Aber",
+       "Obwohl",
+       "Valse vriend"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Deze woorden kondigen een voorbeeld aan. Dat past bij Zum Beispiel: bijvoorbeeld.",
+      "uo": [
+       "Klopt: bijvoorbeeld.",
+       "Nee, dat hoort bij Aber: maar (tegenstelling).",
+       "Nee, dat hoort bij Obwohl: hoewel (tegenstelling).",
+       "Nee, dat hoort bij Valse vriend: lijkt, betekent anders."
+      ],
+      "uh": "Zum Beispiel: bijvoorbeeld."
+     },
+     {
+      "v": "Dit woord geeft het gevolg van iets aan, net als daarom. Welk begrip past hierbij?",
+      "o": [
+       "Weil",
+       "Deshalb",
+       "Skimmen",
+       "Valse vriend"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Dit woord geeft het gevolg van iets aan, net als daarom. Dat past bij Deshalb: daarom (gevolg).",
+      "uo": [
+       "Nee, dat hoort bij Weil: omdat (reden).",
+       "Klopt: daarom (gevolg).",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Valse vriend: lijkt, betekent anders."
+      ],
+      "uh": "Deshalb: daarom (gevolg)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Weil'?",
+      "o": [
+       "maar (tegenstelling)",
+       "daarom (gevolg)",
+       "omdat (reden)",
+       "en (opsomming)"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Weil' betekent omdat (reden).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Aber'.",
+       "Nee, dat is de betekenis van 'Deshalb'.",
+       "Klopt: 'Weil' betekent omdat (reden).",
+       "Nee, dat is de betekenis van 'Und'."
+      ],
+      "uh": "Weil: omdat (reden)."
+     },
+     {
+      "v": "Dit woord geeft de reden waarom iets zo is. Welk begrip herken je hier?",
+      "o": [
+       "Valse vriend",
+       "Skimmen",
+       "Zum Beispiel",
+       "Weil"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Dit woord geeft de reden waarom iets zo is. Dat past bij Weil: omdat (reden).",
+      "uo": [
+       "Nee, dat hoort bij Valse vriend: lijkt, betekent anders.",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Zum Beispiel: bijvoorbeeld.",
+       "Klopt: omdat (reden)."
+      ],
+      "uh": "Weil: omdat (reden)."
+     },
+     {
+      "v": "Je zoekt gericht één jaartal op in de Duitse tekst. Wat is hier aan de hand?",
+      "o": [
+       "Scannen",
+       "Skimmen",
+       "Aber",
+       "Valse vriend"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je zoekt gericht één jaartal op in de Duitse tekst. Dat past bij Scannen: gericht zoeken.",
+      "uo": [
+       "Klopt: gericht zoeken.",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Aber: maar (tegenstelling).",
+       "Nee, dat hoort bij Valse vriend: lijkt, betekent anders."
+      ],
+      "uh": "Scannen: gericht zoeken."
+     },
+     {
+      "v": "Dit woord voegt iets extra toe, net als ook. Welk begrip past hierbij?",
+      "o": [
+       "Aber",
+       "Auch",
+       "Zum Beispiel",
+       "Valse vriend"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Dit woord voegt iets extra toe, net als ook. Dat past bij Auch: ook (opsomming).",
+      "uo": [
+       "Nee, dat hoort bij Aber: maar (tegenstelling).",
+       "Klopt: ook (opsomming).",
+       "Nee, dat hoort bij Zum Beispiel: bijvoorbeeld.",
+       "Nee, dat hoort bij Valse vriend: lijkt, betekent anders."
+      ],
+      "uh": "Auch: ook (opsomming)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Aber'?",
+      "o": [
+       "bijvoorbeeld",
+       "globaal lezen",
+       "maar (tegenstelling)",
+       "lijkt, betekent anders"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "'Aber' betekent maar (tegenstelling).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Zum Beispiel'.",
+       "Nee, dat is de betekenis van 'Skimmen'.",
+       "Klopt: 'Aber' betekent maar (tegenstelling).",
+       "Nee, dat is de betekenis van 'Valse vriend'."
+      ],
+      "uh": "Aber: maar (tegenstelling)."
+     },
+     {
+      "v": "Dit woord geeft toe dat iets zo is en toch anders loopt, net als hoewel. Welk begrip herken je hier?",
+      "o": [
+       "Valse vriend",
+       "Weil",
+       "Deshalb",
+       "Obwohl"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Dit woord geeft toe dat iets zo is en toch anders loopt, net als hoewel. Dat past bij Obwohl: hoewel (tegenstelling).",
+      "uo": [
+       "Nee, dat hoort bij Valse vriend: lijkt, betekent anders.",
+       "Nee, dat hoort bij Weil: omdat (reden).",
+       "Nee, dat hoort bij Deshalb: daarom (gevolg).",
+       "Klopt: hoewel (tegenstelling)."
+      ],
+      "uh": "Obwohl: hoewel (tegenstelling)."
+     },
+     {
+      "v": "Je leest snel over de Duitse tekst heen voor de grote lijn. Wat is hier aan de hand?",
+      "o": [
+       "Skimmen",
+       "Scannen",
+       "Deshalb",
+       "Aber"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je leest snel over de Duitse tekst heen voor de grote lijn. Dat past bij Skimmen: globaal lezen.",
+      "uo": [
+       "Klopt: globaal lezen.",
+       "Nee, dat hoort bij Scannen: gericht zoeken.",
+       "Nee, dat hoort bij Deshalb: daarom (gevolg).",
+       "Nee, dat hoort bij Aber: maar (tegenstelling)."
+      ],
+      "uh": "Skimmen: globaal lezen."
+     },
+     {
+      "v": "Welk woord betekent daarom (gevolg)?",
+      "o": [
+       "Und",
+       "Deshalb",
+       "Auch",
+       "Valse vriend"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'Deshalb' betekent daarom (gevolg).",
+      "uo": [
+       "Nee, 'Und' betekent en (opsomming).",
+       "Klopt: 'Deshalb' betekent daarom (gevolg).",
+       "Nee, 'Auch' betekent ook (opsomming).",
+       "Nee, 'Valse vriend' betekent lijkt, betekent anders."
+      ],
+      "uh": "Deshalb: daarom (gevolg)."
+     },
+     {
+      "v": "Welk woord betekent maar (tegenstelling)?",
+      "o": [
+       "Weil",
+       "Und",
+       "Aber",
+       "Skimmen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "'Aber' betekent maar (tegenstelling).",
+      "uo": [
+       "Nee, 'Weil' betekent omdat (reden).",
+       "Nee, 'Und' betekent en (opsomming).",
+       "Klopt: 'Aber' betekent maar (tegenstelling).",
+       "Nee, 'Skimmen' betekent globaal lezen."
+      ],
+      "uh": "Aber: maar (tegenstelling)."
+     },
+     {
+      "v": "Welk woord betekent bijvoorbeeld?",
+      "o": [
+       "Aber",
+       "Deshalb",
+       "Obwohl",
+       "Zum Beispiel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Zum Beispiel' betekent bijvoorbeeld.",
+      "uo": [
+       "Nee, 'Aber' betekent maar (tegenstelling).",
+       "Nee, 'Deshalb' betekent daarom (gevolg).",
+       "Nee, 'Obwohl' betekent hoewel (tegenstelling).",
+       "Klopt: 'Zum Beispiel' betekent bijvoorbeeld."
+      ],
+      "uh": "Zum Beispiel: bijvoorbeeld."
      }
     ],
     "begrippen": [
@@ -4757,6 +6961,481 @@ var VAKKEN_VMBO = [
        "«wanneer» is wann."
       ],
       "uh": "wat: «was» vraagt naar een ding (wat)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Wann'?",
+      "o": [
+       "waar (plaats)",
+       "wanneer (tijd)",
+       "hoe (manier)",
+       "situatie eromheen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Wann' betekent wanneer (tijd).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Wo'.",
+       "Klopt: 'Wann' betekent wanneer (tijd).",
+       "Nee, dat is de betekenis van 'Wie'.",
+       "Nee, dat is de betekenis van 'Context'."
+      ],
+      "uh": "Wann: wanneer (tijd)."
+     },
+     {
+      "v": "Je vraagt naar de manier waarop iets gaat. Om welk begrip gaat het?",
+      "o": [
+       "Hoofdgedachte",
+       "Warum",
+       "Wie",
+       "Wo"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je vraagt naar de manier waarop iets gaat. Dat past bij Wie: hoe (manier).",
+      "uo": [
+       "Nee, dat hoort bij Hoofdgedachte: de kern.",
+       "Nee, dat hoort bij Warum: waarom (reden).",
+       "Klopt: hoe (manier).",
+       "Nee, dat hoort bij Wo: waar (plaats)."
+      ],
+      "uh": "Wie: hoe (manier)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Wer'?",
+      "o": [
+       "hoeveel (prijs)",
+       "waar (plaats)",
+       "wat (ding)",
+       "wie (persoon)"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Wer' betekent wie (persoon).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Wie viel'.",
+       "Nee, dat is de betekenis van 'Wo'.",
+       "Nee, dat is de betekenis van 'Was'.",
+       "Klopt: 'Wer' betekent wie (persoon)."
+      ],
+      "uh": "Wer: wie (persoon)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Wie viel'?",
+      "o": [
+       "hoeveel (prijs)",
+       "wie (persoon)",
+       "de kern",
+       "wanneer (tijd)"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'Wie viel' betekent hoeveel (prijs).",
+      "uo": [
+       "Klopt: 'Wie viel' betekent hoeveel (prijs).",
+       "Nee, dat is de betekenis van 'Wer'.",
+       "Nee, dat is de betekenis van 'Hoofdgedachte'.",
+       "Nee, dat is de betekenis van 'Wann'."
+      ],
+      "uh": "Wie viel: hoeveel (prijs)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Was'?",
+      "o": [
+       "wie (persoon)",
+       "wat (ding)",
+       "de kern",
+       "waarom (reden)"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Was' betekent wat (ding).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Wer'.",
+       "Klopt: 'Was' betekent wat (ding).",
+       "Nee, dat is de betekenis van 'Hoofdgedachte'.",
+       "Nee, dat is de betekenis van 'Warum'."
+      ],
+      "uh": "Was: wat (ding)."
+     },
+     {
+      "v": "De situatie eromheen die helpt een woord te begrijpen. Om welk begrip gaat het?",
+      "o": [
+       "Warum",
+       "Wann",
+       "Context",
+       "Was"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De situatie eromheen die helpt een woord te begrijpen. Dat past bij Context: situatie eromheen.",
+      "uo": [
+       "Nee, dat hoort bij Warum: waarom (reden).",
+       "Nee, dat hoort bij Wann: wanneer (tijd).",
+       "Klopt: situatie eromheen.",
+       "Nee, dat hoort bij Was: wat (ding)."
+      ],
+      "uh": "Context: situatie eromheen."
+     },
+     {
+      "v": "Wat is de vertaling van 'Wie'?",
+      "o": [
+       "waar (plaats)",
+       "waarom (reden)",
+       "de kern",
+       "hoe (manier)"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Wie' betekent hoe (manier).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Wo'.",
+       "Nee, dat is de betekenis van 'Warum'.",
+       "Nee, dat is de betekenis van 'Hoofdgedachte'.",
+       "Klopt: 'Wie' betekent hoe (manier)."
+      ],
+      "uh": "Wie: hoe (manier)."
+     },
+     {
+      "v": "Welk woord betekent waarom (reden)?",
+      "o": [
+       "Warum",
+       "Hoofdgedachte",
+       "Wo",
+       "Wann"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'Warum' betekent waarom (reden).",
+      "uo": [
+       "Klopt: 'Warum' betekent waarom (reden).",
+       "Nee, 'Hoofdgedachte' betekent de kern.",
+       "Nee, 'Wo' betekent waar (plaats).",
+       "Nee, 'Wann' betekent wanneer (tijd)."
+      ],
+      "uh": "Warum: waarom (reden)."
+     },
+     {
+      "v": "Je vraagt naar wat iets is, naar een ding. Welk begrip past hierbij?",
+      "o": [
+       "Wer",
+       "Was",
+       "Hoofdgedachte",
+       "Warum"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je vraagt naar wat iets is, naar een ding. Dat past bij Was: wat (ding).",
+      "uo": [
+       "Nee, dat hoort bij Wer: wie (persoon).",
+       "Klopt: wat (ding).",
+       "Nee, dat hoort bij Hoofdgedachte: de kern.",
+       "Nee, dat hoort bij Warum: waarom (reden)."
+      ],
+      "uh": "Was: wat (ding)."
+     },
+     {
+      "v": "Waar het Duitse luisterfragment in de kern over gaat. Om welk begrip gaat het?",
+      "o": [
+       "Wo",
+       "Wann",
+       "Hoofdgedachte",
+       "Warum"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Waar het Duitse luisterfragment in de kern over gaat. Dat past bij Hoofdgedachte: de kern.",
+      "uo": [
+       "Nee, dat hoort bij Wo: waar (plaats).",
+       "Nee, dat hoort bij Wann: wanneer (tijd).",
+       "Klopt: de kern.",
+       "Nee, dat hoort bij Warum: waarom (reden)."
+      ],
+      "uh": "Hoofdgedachte: de kern."
+     },
+     {
+      "v": "Je vraagt naar het aantal of de prijs. Welk begrip herken je hier?",
+      "o": [
+       "Context",
+       "Wie",
+       "Wann",
+       "Wie viel"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je vraagt naar het aantal of de prijs. Dat past bij Wie viel: hoeveel (prijs).",
+      "uo": [
+       "Nee, dat hoort bij Context: situatie eromheen.",
+       "Nee, dat hoort bij Wie: hoe (manier).",
+       "Nee, dat hoort bij Wann: wanneer (tijd).",
+       "Klopt: hoeveel (prijs)."
+      ],
+      "uh": "Wie viel: hoeveel (prijs)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Warum'?",
+      "o": [
+       "waarom (reden)",
+       "hoe (manier)",
+       "wanneer (tijd)",
+       "hoeveel (prijs)"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Warum' betekent waarom (reden).",
+      "uo": [
+       "Klopt: 'Warum' betekent waarom (reden).",
+       "Nee, dat is de betekenis van 'Wie'.",
+       "Nee, dat is de betekenis van 'Wann'.",
+       "Nee, dat is de betekenis van 'Wie viel'."
+      ],
+      "uh": "Warum: waarom (reden)."
+     },
+     {
+      "v": "Welk woord betekent waar (plaats)?",
+      "o": [
+       "Wie",
+       "Wo",
+       "Hoofdgedachte",
+       "Was"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'Wo' betekent waar (plaats).",
+      "uo": [
+       "Nee, 'Wie' betekent hoe (manier).",
+       "Klopt: 'Wo' betekent waar (plaats).",
+       "Nee, 'Hoofdgedachte' betekent de kern.",
+       "Nee, 'Was' betekent wat (ding)."
+      ],
+      "uh": "Wo: waar (plaats)."
+     },
+     {
+      "v": "Welk woord betekent hoeveel (prijs)?",
+      "o": [
+       "Wann",
+       "Wie",
+       "Wie viel",
+       "Context"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "'Wie viel' betekent hoeveel (prijs).",
+      "uo": [
+       "Nee, 'Wann' betekent wanneer (tijd).",
+       "Nee, 'Wie' betekent hoe (manier).",
+       "Klopt: 'Wie viel' betekent hoeveel (prijs).",
+       "Nee, 'Context' betekent situatie eromheen."
+      ],
+      "uh": "Wie viel: hoeveel (prijs)."
+     },
+     {
+      "v": "Je vraagt naar het moment of tijdstip. Welk begrip herken je hier?",
+      "o": [
+       "Context",
+       "Wo",
+       "Wie",
+       "Wann"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je vraagt naar het moment of tijdstip. Dat past bij Wann: wanneer (tijd).",
+      "uo": [
+       "Nee, dat hoort bij Context: situatie eromheen.",
+       "Nee, dat hoort bij Wo: waar (plaats).",
+       "Nee, dat hoort bij Wie: hoe (manier).",
+       "Klopt: wanneer (tijd)."
+      ],
+      "uh": "Wann: wanneer (tijd)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Wo'?",
+      "o": [
+       "waar (plaats)",
+       "hoe (manier)",
+       "de kern",
+       "wat (ding)"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'Wo' betekent waar (plaats).",
+      "uo": [
+       "Klopt: 'Wo' betekent waar (plaats).",
+       "Nee, dat is de betekenis van 'Wie'.",
+       "Nee, dat is de betekenis van 'Hoofdgedachte'.",
+       "Nee, dat is de betekenis van 'Was'."
+      ],
+      "uh": "Wo: waar (plaats)."
+     },
+     {
+      "v": "Je vraagt naar de plaats waar iets is. Welk begrip past hierbij?",
+      "o": [
+       "Wann",
+       "Wo",
+       "Wer",
+       "Wie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Je vraagt naar de plaats waar iets is. Dat past bij Wo: waar (plaats).",
+      "uo": [
+       "Nee, dat hoort bij Wann: wanneer (tijd).",
+       "Klopt: waar (plaats).",
+       "Nee, dat hoort bij Wer: wie (persoon).",
+       "Nee, dat hoort bij Wie: hoe (manier)."
+      ],
+      "uh": "Wo: waar (plaats)."
+     },
+     {
+      "v": "Welk woord betekent wie (persoon)?",
+      "o": [
+       "Was",
+       "Wo",
+       "Wer",
+       "Wie viel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Wer' betekent wie (persoon).",
+      "uo": [
+       "Nee, 'Was' betekent wat (ding).",
+       "Nee, 'Wo' betekent waar (plaats).",
+       "Klopt: 'Wer' betekent wie (persoon).",
+       "Nee, 'Wie viel' betekent hoeveel (prijs)."
+      ],
+      "uh": "Wer: wie (persoon)."
+     },
+     {
+      "v": "Welk woord betekent hoe (manier)?",
+      "o": [
+       "Context",
+       "Hoofdgedachte",
+       "Was",
+       "Wie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "'Wie' betekent hoe (manier).",
+      "uo": [
+       "Nee, 'Context' betekent situatie eromheen.",
+       "Nee, 'Hoofdgedachte' betekent de kern.",
+       "Nee, 'Was' betekent wat (ding).",
+       "Klopt: 'Wie' betekent hoe (manier)."
+      ],
+      "uh": "Wie: hoe (manier)."
+     },
+     {
+      "v": "Uit de rest van de zin raad je een onbekend Duits woord. Wat is hier aan de hand?",
+      "o": [
+       "Context",
+       "Hoofdgedachte",
+       "Wer",
+       "Wann"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Uit de rest van de zin raad je een onbekend Duits woord. Dat past bij Context: situatie eromheen.",
+      "uo": [
+       "Klopt: situatie eromheen.",
+       "Nee, dat hoort bij Hoofdgedachte: de kern.",
+       "Nee, dat hoort bij Wer: wie (persoon).",
+       "Nee, dat hoort bij Wann: wanneer (tijd)."
+      ],
+      "uh": "Context: situatie eromheen."
+     },
+     {
+      "v": "Je vraagt naar de reden waarom iets gebeurt. Welk begrip past hierbij?",
+      "o": [
+       "Wie",
+       "Warum",
+       "Wann",
+       "Wie viel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je vraagt naar de reden waarom iets gebeurt. Dat past bij Warum: waarom (reden).",
+      "uo": [
+       "Nee, dat hoort bij Wie: hoe (manier).",
+       "Klopt: waarom (reden).",
+       "Nee, dat hoort bij Wann: wanneer (tijd).",
+       "Nee, dat hoort bij Wie viel: hoeveel (prijs)."
+      ],
+      "uh": "Warum: waarom (reden)."
+     },
+     {
+      "v": "Je vraagt naar wie iets deed, naar een persoon. Om welk begrip gaat het?",
+      "o": [
+       "Context",
+       "Hoofdgedachte",
+       "Wer",
+       "Wie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je vraagt naar wie iets deed, naar een persoon. Dat past bij Wer: wie (persoon).",
+      "uo": [
+       "Nee, dat hoort bij Context: situatie eromheen.",
+       "Nee, dat hoort bij Hoofdgedachte: de kern.",
+       "Klopt: wie (persoon).",
+       "Nee, dat hoort bij Wie: hoe (manier)."
+      ],
+      "uh": "Wer: wie (persoon)."
+     },
+     {
+      "v": "Welk woord betekent wanneer (tijd)?",
+      "o": [
+       "Hoofdgedachte",
+       "Wo",
+       "Wer",
+       "Wann"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "'Wann' betekent wanneer (tijd).",
+      "uo": [
+       "Nee, 'Hoofdgedachte' betekent de kern.",
+       "Nee, 'Wo' betekent waar (plaats).",
+       "Nee, 'Wer' betekent wie (persoon).",
+       "Klopt: 'Wann' betekent wanneer (tijd)."
+      ],
+      "uh": "Wann: wanneer (tijd)."
+     },
+     {
+      "v": "Welk woord betekent wat (ding)?",
+      "o": [
+       "Was",
+       "Wer",
+       "Hoofdgedachte",
+       "Warum"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Was' betekent wat (ding).",
+      "uo": [
+       "Klopt: 'Was' betekent wat (ding).",
+       "Nee, 'Wer' betekent wie (persoon).",
+       "Nee, 'Hoofdgedachte' betekent de kern.",
+       "Nee, 'Warum' betekent waarom (reden)."
+      ],
+      "uh": "Was: wat (ding)."
+     },
+     {
+      "v": "De belangrijkste boodschap van wat je hoort. Welk begrip past hierbij?",
+      "o": [
+       "Wann",
+       "Hoofdgedachte",
+       "Wo",
+       "Warum"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De belangrijkste boodschap van wat je hoort. Dat past bij Hoofdgedachte: de kern.",
+      "uo": [
+       "Nee, dat hoort bij Wann: wanneer (tijd).",
+       "Klopt: de kern.",
+       "Nee, dat hoort bij Wo: waar (plaats).",
+       "Nee, dat hoort bij Warum: waarom (reden)."
+      ],
+      "uh": "Hoofdgedachte: de kern."
      }
     ],
     "begrippen": [
@@ -4983,6 +7662,424 @@ var VAKKEN_VMBO = [
        "«jullie» is ihr."
       ],
       "uh": "jij (informeel): «du» is de informele vorm (jij)."
+     },
+     {
+      "v": "Je stapt iemand op de tenen en biedt je excuses aan. Welk begrip past hierbij?",
+      "o": [
+       "Danke",
+       "Entschuldigung",
+       "Auf Wiedersehen",
+       "Tschüss"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je stapt iemand op de tenen en biedt je excuses aan. Dat past bij Entschuldigung: sorry.",
+      "uo": [
+       "Nee, dat hoort bij Danke: bedankt.",
+       "Klopt: sorry.",
+       "Nee, dat hoort bij Auf Wiedersehen: afscheid (net).",
+       "Nee, dat hoort bij Tschüss: afscheid (informeel)."
+      ],
+      "uh": "Entschuldigung: sorry."
+     },
+     {
+      "v": "Je antwoord als iemand je bedankt, of alsjeblieft bij het aangeven. Om welk begrip gaat het?",
+      "o": [
+       "Freut mich",
+       "Danke",
+       "Bitte",
+       "Entschuldigung"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je antwoord als iemand je bedankt, of alsjeblieft bij het aangeven. Dat past bij Bitte: alsjeblieft / graag gedaan.",
+      "uo": [
+       "Nee, dat hoort bij Freut mich: aangenaam.",
+       "Nee, dat hoort bij Danke: bedankt.",
+       "Klopt: alsjeblieft / graag gedaan.",
+       "Nee, dat hoort bij Entschuldigung: sorry."
+      ],
+      "uh": "Bitte: alsjeblieft / graag gedaan."
+     },
+     {
+      "v": "Welk woord betekent bedankt?",
+      "o": [
+       "Entschuldigung",
+       "Bitte",
+       "Freut mich",
+       "Danke"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Danke' betekent bedankt.",
+      "uo": [
+       "Nee, 'Entschuldigung' betekent sorry.",
+       "Nee, 'Bitte' betekent alsjeblieft / graag gedaan.",
+       "Nee, 'Freut mich' betekent aangenaam.",
+       "Klopt: 'Danke' betekent bedankt."
+      ],
+      "uh": "Danke: bedankt."
+     },
+     {
+      "v": "Wat je informeel zegt bij het afscheid. Wat is hier aan de hand?",
+      "o": [
+       "Tschüss",
+       "Bitte",
+       "Entschuldigung",
+       "Du"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Wat je informeel zegt bij het afscheid. Dat past bij Tschüss: afscheid (informeel).",
+      "uo": [
+       "Klopt: afscheid (informeel).",
+       "Nee, dat hoort bij Bitte: alsjeblieft / graag gedaan.",
+       "Nee, dat hoort bij Entschuldigung: sorry.",
+       "Nee, dat hoort bij Du: informeel: jij."
+      ],
+      "uh": "Tschüss: afscheid (informeel)."
+     },
+     {
+      "v": "Je ontmoet iemand voor het eerst en stelt je voor. Welk begrip past hierbij?",
+      "o": [
+       "Wie geht's",
+       "Freut mich",
+       "Auf Wiedersehen",
+       "Bitte"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je ontmoet iemand voor het eerst en stelt je voor. Dat past bij Freut mich: aangenaam.",
+      "uo": [
+       "Nee, dat hoort bij Wie geht's: hoe gaat het.",
+       "Klopt: aangenaam.",
+       "Nee, dat hoort bij Auf Wiedersehen: afscheid (net).",
+       "Nee, dat hoort bij Bitte: alsjeblieft / graag gedaan."
+      ],
+      "uh": "Freut mich: aangenaam."
+     },
+     {
+      "v": "Je zwaait je vriend gedag als je weggaat. Om welk begrip gaat het?",
+      "o": [
+       "Entschuldigung",
+       "Bitte",
+       "Tschüss",
+       "Du"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je zwaait je vriend gedag als je weggaat. Dat past bij Tschüss: afscheid (informeel).",
+      "uo": [
+       "Nee, dat hoort bij Entschuldigung: sorry.",
+       "Nee, dat hoort bij Bitte: alsjeblieft / graag gedaan.",
+       "Klopt: afscheid (informeel).",
+       "Nee, dat hoort bij Du: informeel: jij."
+      ],
+      "uh": "Tschüss: afscheid (informeel)."
+     },
+     {
+      "v": "De beleefde aanspreekvorm voor u. Welk begrip herken je hier?",
+      "o": [
+       "Auf Wiedersehen",
+       "Du",
+       "Wie geht's",
+       "Sie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De beleefde aanspreekvorm voor u. Dat past bij Sie: beleefd: u.",
+      "uo": [
+       "Nee, dat hoort bij Auf Wiedersehen: afscheid (net).",
+       "Nee, dat hoort bij Du: informeel: jij.",
+       "Nee, dat hoort bij Wie geht's: hoe gaat het.",
+       "Klopt: beleefd: u."
+      ],
+      "uh": "Sie: beleefd: u."
+     },
+     {
+      "v": "Wat je zegt om sorry te zeggen. Wat is hier aan de hand?",
+      "o": [
+       "Entschuldigung",
+       "Freut mich",
+       "Auf Wiedersehen",
+       "Du"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Wat je zegt om sorry te zeggen. Dat past bij Entschuldigung: sorry.",
+      "uo": [
+       "Klopt: sorry.",
+       "Nee, dat hoort bij Freut mich: aangenaam.",
+       "Nee, dat hoort bij Auf Wiedersehen: afscheid (net).",
+       "Nee, dat hoort bij Du: informeel: jij."
+      ],
+      "uh": "Entschuldigung: sorry."
+     },
+     {
+      "v": "Tegen een onbekende volwassene spreek je beleefd aan. Welk begrip past hierbij?",
+      "o": [
+       "Du",
+       "Sie",
+       "Wie geht's",
+       "Auf Wiedersehen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Tegen een onbekende volwassene spreek je beleefd aan. Dat past bij Sie: beleefd: u.",
+      "uo": [
+       "Nee, dat hoort bij Du: informeel: jij.",
+       "Klopt: beleefd: u.",
+       "Nee, dat hoort bij Wie geht's: hoe gaat het.",
+       "Nee, dat hoort bij Auf Wiedersehen: afscheid (net)."
+      ],
+      "uh": "Sie: beleefd: u."
+     },
+     {
+      "v": "Iemand bedankt je en jij reageert met graag gedaan. Om welk begrip gaat het?",
+      "o": [
+       "Auf Wiedersehen",
+       "Wie geht's",
+       "Bitte",
+       "Sie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Iemand bedankt je en jij reageert met graag gedaan. Dat past bij Bitte: alsjeblieft / graag gedaan.",
+      "uo": [
+       "Nee, dat hoort bij Auf Wiedersehen: afscheid (net).",
+       "Nee, dat hoort bij Wie geht's: hoe gaat het.",
+       "Klopt: alsjeblieft / graag gedaan.",
+       "Nee, dat hoort bij Sie: beleefd: u."
+      ],
+      "uh": "Bitte: alsjeblieft / graag gedaan."
+     },
+     {
+      "v": "De informele aanspreekvorm voor jij. Welk begrip herken je hier?",
+      "o": [
+       "Entschuldigung",
+       "Sie",
+       "Bitte",
+       "Du"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De informele aanspreekvorm voor jij. Dat past bij Du: informeel: jij.",
+      "uo": [
+       "Nee, dat hoort bij Entschuldigung: sorry.",
+       "Nee, dat hoort bij Sie: beleefd: u.",
+       "Nee, dat hoort bij Bitte: alsjeblieft / graag gedaan.",
+       "Klopt: informeel: jij."
+      ],
+      "uh": "Du: informeel: jij."
+     },
+     {
+      "v": "Welk woord betekent hoe gaat het?",
+      "o": [
+       "Wie geht's",
+       "Freut mich",
+       "Auf Wiedersehen",
+       "Bitte"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Wie geht's' betekent hoe gaat het.",
+      "uo": [
+       "Klopt: 'Wie geht's' betekent hoe gaat het.",
+       "Nee, 'Freut mich' betekent aangenaam.",
+       "Nee, 'Auf Wiedersehen' betekent afscheid (net).",
+       "Nee, 'Bitte' betekent alsjeblieft / graag gedaan."
+      ],
+      "uh": "Wie geht's: hoe gaat het."
+     },
+     {
+      "v": "Wat is de vertaling van 'Wie geht's'?",
+      "o": [
+       "bedankt",
+       "hoe gaat het",
+       "informeel: jij",
+       "afscheid (informeel)"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'Wie geht's' betekent hoe gaat het.",
+      "uo": [
+       "Nee, dat is de betekenis van 'Danke'.",
+       "Klopt: 'Wie geht's' betekent hoe gaat het.",
+       "Nee, dat is de betekenis van 'Du'.",
+       "Nee, dat is de betekenis van 'Tschüss'."
+      ],
+      "uh": "Wie geht's: hoe gaat het."
+     },
+     {
+      "v": "Wat je zegt om beleefd afscheid te nemen. Om welk begrip gaat het?",
+      "o": [
+       "Wie geht's",
+       "Hallo",
+       "Auf Wiedersehen",
+       "Bitte"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Wat je zegt om beleefd afscheid te nemen. Dat past bij Auf Wiedersehen: afscheid (net).",
+      "uo": [
+       "Nee, dat hoort bij Wie geht's: hoe gaat het.",
+       "Nee, dat hoort bij Hallo: begroeting.",
+       "Klopt: afscheid (net).",
+       "Nee, dat hoort bij Bitte: alsjeblieft / graag gedaan."
+      ],
+      "uh": "Auf Wiedersehen: afscheid (net)."
+     },
+     {
+      "v": "Welk woord betekent begroeting?",
+      "o": [
+       "Entschuldigung",
+       "Tschüss",
+       "Bitte",
+       "Hallo"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Hallo' betekent begroeting.",
+      "uo": [
+       "Nee, 'Entschuldigung' betekent sorry.",
+       "Nee, 'Tschüss' betekent afscheid (informeel).",
+       "Nee, 'Bitte' betekent alsjeblieft / graag gedaan.",
+       "Klopt: 'Hallo' betekent begroeting."
+      ],
+      "uh": "Hallo: begroeting."
+     },
+     {
+      "v": "Je bent per ongeluk tegen iemand aangelopen en verontschuldigt je. Wat is hier aan de hand?",
+      "o": [
+       "Entschuldigung",
+       "Freut mich",
+       "Auf Wiedersehen",
+       "Du"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Je bent per ongeluk tegen iemand aangelopen en verontschuldigt je. Dat past bij Entschuldigung: sorry.",
+      "uo": [
+       "Klopt: sorry.",
+       "Nee, dat hoort bij Freut mich: aangenaam.",
+       "Nee, dat hoort bij Auf Wiedersehen: afscheid (net).",
+       "Nee, dat hoort bij Du: informeel: jij."
+      ],
+      "uh": "Entschuldigung: sorry."
+     },
+     {
+      "v": "Tegen je vrienden gebruik je de informele aanspreekvorm. Welk begrip past hierbij?",
+      "o": [
+       "Sie",
+       "Du",
+       "Bitte",
+       "Entschuldigung"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Tegen je vrienden gebruik je de informele aanspreekvorm. Dat past bij Du: informeel: jij.",
+      "uo": [
+       "Nee, dat hoort bij Sie: beleefd: u.",
+       "Klopt: informeel: jij.",
+       "Nee, dat hoort bij Bitte: alsjeblieft / graag gedaan.",
+       "Nee, dat hoort bij Entschuldigung: sorry."
+      ],
+      "uh": "Du: informeel: jij."
+     },
+     {
+      "v": "Wat is de vertaling van 'Danke'?",
+      "o": [
+       "aangenaam",
+       "alsjeblieft / graag gedaan",
+       "bedankt",
+       "sorry"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Danke' betekent bedankt.",
+      "uo": [
+       "Nee, dat is de betekenis van 'Freut mich'.",
+       "Nee, dat is de betekenis van 'Bitte'.",
+       "Klopt: 'Danke' betekent bedankt.",
+       "Nee, dat is de betekenis van 'Entschuldigung'."
+      ],
+      "uh": "Danke: bedankt."
+     },
+     {
+      "v": "Wat is de vertaling van 'Hallo'?",
+      "o": [
+       "beleefd: u",
+       "bedankt",
+       "aangenaam",
+       "begroeting"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "'Hallo' betekent begroeting.",
+      "uo": [
+       "Nee, dat is de betekenis van 'Sie'.",
+       "Nee, dat is de betekenis van 'Danke'.",
+       "Nee, dat is de betekenis van 'Freut mich'.",
+       "Klopt: 'Hallo' betekent begroeting."
+      ],
+      "uh": "Hallo: begroeting."
+     },
+     {
+      "v": "Wat je zegt bij een kennismaking, aangenaam. Wat is hier aan de hand?",
+      "o": [
+       "Freut mich",
+       "Wie geht's",
+       "Bitte",
+       "Auf Wiedersehen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Wat je zegt bij een kennismaking, aangenaam. Dat past bij Freut mich: aangenaam.",
+      "uo": [
+       "Klopt: aangenaam.",
+       "Nee, dat hoort bij Wie geht's: hoe gaat het.",
+       "Nee, dat hoort bij Bitte: alsjeblieft / graag gedaan.",
+       "Nee, dat hoort bij Auf Wiedersehen: afscheid (net)."
+      ],
+      "uh": "Freut mich: aangenaam."
+     },
+     {
+      "v": "Je neemt netjes afscheid van een onbekende. Welk begrip past hierbij?",
+      "o": [
+       "Hallo",
+       "Auf Wiedersehen",
+       "Entschuldigung",
+       "Wie geht's"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je neemt netjes afscheid van een onbekende. Dat past bij Auf Wiedersehen: afscheid (net).",
+      "uo": [
+       "Nee, dat hoort bij Hallo: begroeting.",
+       "Klopt: afscheid (net).",
+       "Nee, dat hoort bij Entschuldigung: sorry.",
+       "Nee, dat hoort bij Wie geht's: hoe gaat het."
+      ],
+      "uh": "Auf Wiedersehen: afscheid (net)."
+     },
+     {
+      "v": "Tegen je leraar of een winkelmedewerker gebruik je deze nette vorm. Om welk begrip gaat het?",
+      "o": [
+       "Bitte",
+       "Freut mich",
+       "Sie",
+       "Tschüss"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Tegen je leraar of een winkelmedewerker gebruik je deze nette vorm. Dat past bij Sie: beleefd: u.",
+      "uo": [
+       "Nee, dat hoort bij Bitte: alsjeblieft / graag gedaan.",
+       "Nee, dat hoort bij Freut mich: aangenaam.",
+       "Klopt: beleefd: u.",
+       "Nee, dat hoort bij Tschüss: afscheid (informeel)."
+      ],
+      "uh": "Sie: beleefd: u."
      }
     ],
     "begrippen": [
@@ -5194,6 +8291,462 @@ var VAKKEN_VMBO = [
        "Klopt: «der» is het mannelijke lidwoord (de)."
       ],
       "uh": "der: «der» is het mannelijke lidwoord (de)."
+     },
+     {
+      "v": "In Ich spiele Fußball is spiele dit zinsdeel. Welk begrip past hierbij?",
+      "o": [
+       "Persoonsvorm",
+       "Sein",
+       "Der",
+       "Die"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "In Ich spiele Fußball is spiele dit zinsdeel. Dat past bij Persoonsvorm: werkwoord op plaats twee.",
+      "uo": [
+       "Klopt: werkwoord op plaats twee.",
+       "Nee, dat hoort bij Sein: zijn.",
+       "Nee, dat hoort bij Der: mannelijk: de.",
+       "Nee, dat hoort bij Die: vrouwelijk / meervoud."
+      ],
+      "uh": "Persoonsvorm: werkwoord op plaats twee."
+     },
+     {
+      "v": "In een gewone Duitse zin staat dit werkwoord op de tweede plaats. Om welk begrip gaat het?",
+      "o": [
+       "Sein",
+       "Persoonsvorm",
+       "Der",
+       "Die"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "In een gewone Duitse zin staat dit werkwoord op de tweede plaats. Dat past bij Persoonsvorm: werkwoord op plaats twee.",
+      "uo": [
+       "Nee, dat hoort bij Sein: zijn.",
+       "Klopt: werkwoord op plaats twee.",
+       "Nee, dat hoort bij Der: mannelijk: de.",
+       "Nee, dat hoort bij Die: vrouwelijk / meervoud."
+      ],
+      "uh": "Persoonsvorm: werkwoord op plaats twee."
+     },
+     {
+      "v": "Als de zin met Heute begint, wisselen onderwerp en werkwoord van plaats. Welk begrip herken je hier?",
+      "o": [
+       "Das",
+       "Haben",
+       "Inversie",
+       "Der"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Als de zin met Heute begint, wisselen onderwerp en werkwoord van plaats. Dat past bij Inversie: omdraaien na ander begin.",
+      "uo": [
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Haben: hebben.",
+       "Klopt: omdraaien na ander begin.",
+       "Nee, dat hoort bij Der: mannelijk: de."
+      ],
+      "uh": "Inversie: omdraaien na ander begin."
+     },
+     {
+      "v": "Van spielen maak je spielst bij du door deze aanpassing. Wat is hier aan de hand?",
+      "o": [
+       "Haben",
+       "Sein",
+       "Das",
+       "Werkwoordsuitgang"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Van spielen maak je spielst bij du door deze aanpassing. Dat past bij Werkwoordsuitgang: uitgang bij onderwerp.",
+      "uo": [
+       "Nee, dat hoort bij Haben: hebben.",
+       "Nee, dat hoort bij Sein: zijn.",
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Klopt: uitgang bij onderwerp."
+      ],
+      "uh": "Werkwoordsuitgang: uitgang bij onderwerp."
+     },
+     {
+      "v": "Het werkwoord voor zijn, zoals in du bist en er ist. Welk begrip past hierbij?",
+      "o": [
+       "Sein",
+       "Der",
+       "Inversie",
+       "Werkwoordsuitgang"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het werkwoord voor zijn, zoals in du bist en er ist. Dat past bij Sein: zijn.",
+      "uo": [
+       "Klopt: zijn.",
+       "Nee, dat hoort bij Der: mannelijk: de.",
+       "Nee, dat hoort bij Inversie: omdraaien na ander begin.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp."
+      ],
+      "uh": "Sein: zijn."
+     },
+     {
+      "v": "De uitgang die past bij het onderwerp. Om welk begrip gaat het?",
+      "o": [
+       "Sein",
+       "Werkwoordsuitgang",
+       "Das",
+       "Haben"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De uitgang die past bij het onderwerp. Dat past bij Werkwoordsuitgang: uitgang bij onderwerp.",
+      "uo": [
+       "Nee, dat hoort bij Sein: zijn.",
+       "Klopt: uitgang bij onderwerp.",
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Haben: hebben."
+      ],
+      "uh": "Werkwoordsuitgang: uitgang bij onderwerp."
+     },
+     {
+      "v": "Het werkwoord voor hebben, zoals in du hast en er hat. Welk begrip herken je hier?",
+      "o": [
+       "Das",
+       "Persoonsvorm",
+       "Haben",
+       "Werkwoordsuitgang"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het werkwoord voor hebben, zoals in du hast en er hat. Dat past bij Haben: hebben.",
+      "uo": [
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Persoonsvorm: werkwoord op plaats twee.",
+       "Klopt: hebben.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp."
+      ],
+      "uh": "Haben: hebben."
+     },
+     {
+      "v": "Het lidwoord dat bij een vrouwelijk woord of een meervoud hoort. Wat is hier aan de hand?",
+      "o": [
+       "Haben",
+       "Der",
+       "Das",
+       "Die"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het lidwoord dat bij een vrouwelijk woord of een meervoud hoort. Dat past bij Die: vrouwelijk / meervoud.",
+      "uo": [
+       "Nee, dat hoort bij Haben: hebben.",
+       "Nee, dat hoort bij Der: mannelijk: de.",
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Klopt: vrouwelijk / meervoud."
+      ],
+      "uh": "Die: vrouwelijk / meervoud."
+     },
+     {
+      "v": "In Heute spiele ich staan werkwoord en onderwerp omgedraaid. Welk begrip past hierbij?",
+      "o": [
+       "Inversie",
+       "Haben",
+       "Das",
+       "Der"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "In Heute spiele ich staan werkwoord en onderwerp omgedraaid. Dat past bij Inversie: omdraaien na ander begin.",
+      "uo": [
+       "Klopt: omdraaien na ander begin.",
+       "Nee, dat hoort bij Haben: hebben.",
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Der: mannelijk: de."
+      ],
+      "uh": "Inversie: omdraaien na ander begin."
+     },
+     {
+      "v": "Bij het woord Tisch (mannelijk) hoort dit lidwoord. Om welk begrip gaat het?",
+      "o": [
+       "Die",
+       "Der",
+       "Das",
+       "Haben"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Bij het woord Tisch (mannelijk) hoort dit lidwoord. Dat past bij Der: mannelijk: de.",
+      "uo": [
+       "Nee, dat hoort bij Die: vrouwelijk / meervoud.",
+       "Klopt: mannelijk: de.",
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Haben: hebben."
+      ],
+      "uh": "Der: mannelijk: de."
+     },
+     {
+      "v": "De vorm habe bij ich hoort bij dit werkwoord. Welk begrip herken je hier?",
+      "o": [
+       "Das",
+       "Persoonsvorm",
+       "Haben",
+       "Werkwoordsuitgang"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De vorm habe bij ich hoort bij dit werkwoord. Dat past bij Haben: hebben.",
+      "uo": [
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Persoonsvorm: werkwoord op plaats twee.",
+       "Klopt: hebben.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp."
+      ],
+      "uh": "Haben: hebben."
+     },
+     {
+      "v": "Het werkwoord dat hebben betekent. Wat is hier aan de hand?",
+      "o": [
+       "Die",
+       "Sein",
+       "Werkwoordsuitgang",
+       "Haben"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het werkwoord dat hebben betekent. Dat past bij Haben: hebben.",
+      "uo": [
+       "Nee, dat hoort bij Die: vrouwelijk / meervoud.",
+       "Nee, dat hoort bij Sein: zijn.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Klopt: hebben."
+      ],
+      "uh": "Haben: hebben."
+     },
+     {
+      "v": "Het omdraaien van onderwerp en werkwoord na een ander zinsbegin. Welk begrip past hierbij?",
+      "o": [
+       "Inversie",
+       "Persoonsvorm",
+       "Sein",
+       "Der"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het omdraaien van onderwerp en werkwoord na een ander zinsbegin. Dat past bij Inversie: omdraaien na ander begin.",
+      "uo": [
+       "Klopt: omdraaien na ander begin.",
+       "Nee, dat hoort bij Persoonsvorm: werkwoord op plaats twee.",
+       "Nee, dat hoort bij Sein: zijn.",
+       "Nee, dat hoort bij Der: mannelijk: de."
+      ],
+      "uh": "Inversie: omdraaien na ander begin."
+     },
+     {
+      "v": "Bij het woord Auto (onzijdig) hoort dit lidwoord. Om welk begrip gaat het?",
+      "o": [
+       "Werkwoordsuitgang",
+       "Das",
+       "Persoonsvorm",
+       "Haben"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Bij het woord Auto (onzijdig) hoort dit lidwoord. Dat past bij Das: onzijdig: het.",
+      "uo": [
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Klopt: onzijdig: het.",
+       "Nee, dat hoort bij Persoonsvorm: werkwoord op plaats twee.",
+       "Nee, dat hoort bij Haben: hebben."
+      ],
+      "uh": "Das: onzijdig: het."
+     },
+     {
+      "v": "Het onzijdige lidwoord. Welk begrip herken je hier?",
+      "o": [
+       "Die",
+       "Der",
+       "Das",
+       "Persoonsvorm"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het onzijdige lidwoord. Dat past bij Das: onzijdig: het.",
+      "uo": [
+       "Nee, dat hoort bij Die: vrouwelijk / meervoud.",
+       "Nee, dat hoort bij Der: mannelijk: de.",
+       "Klopt: onzijdig: het.",
+       "Nee, dat hoort bij Persoonsvorm: werkwoord op plaats twee."
+      ],
+      "uh": "Das: onzijdig: het."
+     },
+     {
+      "v": "Het lidwoord dat bij een onzijdig woord hoort, zoals bij Kind. Wat is hier aan de hand?",
+      "o": [
+       "Haben",
+       "Der",
+       "Die",
+       "Das"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het lidwoord dat bij een onzijdig woord hoort, zoals bij Kind. Dat past bij Das: onzijdig: het.",
+      "uo": [
+       "Nee, dat hoort bij Haben: hebben.",
+       "Nee, dat hoort bij Der: mannelijk: de.",
+       "Nee, dat hoort bij Die: vrouwelijk / meervoud.",
+       "Klopt: onzijdig: het."
+      ],
+      "uh": "Das: onzijdig: het."
+     },
+     {
+      "v": "Het mannelijke lidwoord. Welk begrip past hierbij?",
+      "o": [
+       "Der",
+       "Werkwoordsuitgang",
+       "Persoonsvorm",
+       "Haben"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het mannelijke lidwoord. Dat past bij Der: mannelijk: de.",
+      "uo": [
+       "Klopt: mannelijk: de.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Nee, dat hoort bij Persoonsvorm: werkwoord op plaats twee.",
+       "Nee, dat hoort bij Haben: hebben."
+      ],
+      "uh": "Der: mannelijk: de."
+     },
+     {
+      "v": "Het vervoegde werkwoord, dat op plek twee staat. Om welk begrip gaat het?",
+      "o": [
+       "Inversie",
+       "Persoonsvorm",
+       "Der",
+       "Die"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het vervoegde werkwoord, dat op plek twee staat. Dat past bij Persoonsvorm: werkwoord op plaats twee.",
+      "uo": [
+       "Nee, dat hoort bij Inversie: omdraaien na ander begin.",
+       "Klopt: werkwoord op plaats twee.",
+       "Nee, dat hoort bij Der: mannelijk: de.",
+       "Nee, dat hoort bij Die: vrouwelijk / meervoud."
+      ],
+      "uh": "Persoonsvorm: werkwoord op plaats twee."
+     },
+     {
+      "v": "Het vrouwelijke lidwoord, ook voor meervoud. Welk begrip herken je hier?",
+      "o": [
+       "Das",
+       "Der",
+       "Die",
+       "Haben"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het vrouwelijke lidwoord, ook voor meervoud. Dat past bij Die: vrouwelijk / meervoud.",
+      "uo": [
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Der: mannelijk: de.",
+       "Klopt: vrouwelijk / meervoud.",
+       "Nee, dat hoort bij Haben: hebben."
+      ],
+      "uh": "Die: vrouwelijk / meervoud."
+     },
+     {
+      "v": "De vorm bin bij ich hoort bij dit werkwoord. Wat is hier aan de hand?",
+      "o": [
+       "Werkwoordsuitgang",
+       "Der",
+       "Inversie",
+       "Sein"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De vorm bin bij ich hoort bij dit werkwoord. Dat past bij Sein: zijn.",
+      "uo": [
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Nee, dat hoort bij Der: mannelijk: de.",
+       "Nee, dat hoort bij Inversie: omdraaien na ander begin.",
+       "Klopt: zijn."
+      ],
+      "uh": "Sein: zijn."
+     },
+     {
+      "v": "Het lidwoord dat bij een mannelijk woord hoort, zoals bij Mann. Welk begrip past hierbij?",
+      "o": [
+       "Der",
+       "Die",
+       "Das",
+       "Persoonsvorm"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het lidwoord dat bij een mannelijk woord hoort, zoals bij Mann. Dat past bij Der: mannelijk: de.",
+      "uo": [
+       "Klopt: mannelijk: de.",
+       "Nee, dat hoort bij Die: vrouwelijk / meervoud.",
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Persoonsvorm: werkwoord op plaats twee."
+      ],
+      "uh": "Der: mannelijk: de."
+     },
+     {
+      "v": "Het werkwoord dat zijn betekent. Om welk begrip gaat het?",
+      "o": [
+       "Haben",
+       "Sein",
+       "Das",
+       "Werkwoordsuitgang"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het werkwoord dat zijn betekent. Dat past bij Sein: zijn.",
+      "uo": [
+       "Nee, dat hoort bij Haben: hebben.",
+       "Klopt: zijn.",
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp."
+      ],
+      "uh": "Sein: zijn."
+     },
+     {
+      "v": "Bij het woord Frau (vrouwelijk) hoort dit lidwoord. Welk begrip herken je hier?",
+      "o": [
+       "Persoonsvorm",
+       "Werkwoordsuitgang",
+       "Die",
+       "Haben"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Bij het woord Frau (vrouwelijk) hoort dit lidwoord. Dat past bij Die: vrouwelijk / meervoud.",
+      "uo": [
+       "Nee, dat hoort bij Persoonsvorm: werkwoord op plaats twee.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Klopt: vrouwelijk / meervoud.",
+       "Nee, dat hoort bij Haben: hebben."
+      ],
+      "uh": "Die: vrouwelijk / meervoud."
+     },
+     {
+      "v": "Bij ich hoort -e en bij du hoort -st achter de stam. Wat is hier aan de hand?",
+      "o": [
+       "Das",
+       "Sein",
+       "Inversie",
+       "Werkwoordsuitgang"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij ich hoort -e en bij du hoort -st achter de stam. Dat past bij Werkwoordsuitgang: uitgang bij onderwerp.",
+      "uo": [
+       "Nee, dat hoort bij Das: onzijdig: het.",
+       "Nee, dat hoort bij Sein: zijn.",
+       "Nee, dat hoort bij Inversie: omdraaien na ander begin.",
+       "Klopt: uitgang bij onderwerp."
+      ],
+      "uh": "Werkwoordsuitgang: uitgang bij onderwerp."
      }
     ],
     "begrippen": [
@@ -5432,6 +8985,519 @@ var VAKKEN_VMBO = [
        "Achteraan beginnen helpt niet."
       ],
       "uh": "Skimmen geeft snel de hoofdlijn."
+     },
+     {
+      "v": "Welk woord betekent hoewel (tegenstelling)?",
+      "o": [
+       "Parce que",
+       "Bien que",
+       "Donc",
+       "Context"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Bien que' betekent hoewel (tegenstelling).",
+      "uo": [
+       "Nee, 'Parce que' betekent omdat (reden).",
+       "Klopt: 'Bien que' betekent hoewel (tegenstelling).",
+       "Nee, 'Donc' betekent dus (gevolg).",
+       "Nee, 'Context' betekent situatie eromheen."
+      ],
+      "uh": "Bien que: hoewel (tegenstelling)."
+     },
+     {
+      "v": "Welk woord betekent en (opsomming)?",
+      "o": [
+       "Skimmen",
+       "Mais",
+       "Et",
+       "Aussi"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Et' betekent en (opsomming).",
+      "uo": [
+       "Nee, 'Skimmen' betekent globaal lezen.",
+       "Nee, 'Mais' betekent maar (tegenstelling).",
+       "Klopt: 'Et' betekent en (opsomming).",
+       "Nee, 'Aussi' betekent ook (opsomming)."
+      ],
+      "uh": "Et: en (opsomming)."
+     },
+     {
+      "v": "De situatie eromheen die helpt een woord te begrijpen. Welk begrip herken je hier?",
+      "o": [
+       "Scannen",
+       "Skimmen",
+       "Parce que",
+       "Context"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De situatie eromheen die helpt een woord te begrijpen. Dat past bij Context: situatie eromheen.",
+      "uo": [
+       "Nee, dat hoort bij Scannen: gericht zoeken.",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Parce que: omdat (reden).",
+       "Klopt: situatie eromheen."
+      ],
+      "uh": "Context: situatie eromheen."
+     },
+     {
+      "v": "Even vlug kijken waar een tekst globaal over gaat. Wat is hier aan de hand?",
+      "o": [
+       "Skimmen",
+       "Et",
+       "Aussi",
+       "Context"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Even vlug kijken waar een tekst globaal over gaat. Dat past bij Skimmen: globaal lezen.",
+      "uo": [
+       "Klopt: globaal lezen.",
+       "Nee, dat hoort bij Et: en (opsomming).",
+       "Nee, dat hoort bij Aussi: ook (opsomming).",
+       "Nee, dat hoort bij Context: situatie eromheen."
+      ],
+      "uh": "Skimmen: globaal lezen."
+     },
+     {
+      "v": "Wat is de vertaling van 'Aussi'?",
+      "o": [
+       "maar (tegenstelling)",
+       "ook (opsomming)",
+       "omdat (reden)",
+       "globaal lezen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "'Aussi' betekent ook (opsomming).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Mais'.",
+       "Klopt: 'Aussi' betekent ook (opsomming).",
+       "Nee, dat is de betekenis van 'Parce que'.",
+       "Nee, dat is de betekenis van 'Skimmen'."
+      ],
+      "uh": "Aussi: ook (opsomming)."
+     },
+     {
+      "v": "Welk woord betekent ook (opsomming)?",
+      "o": [
+       "Bien que",
+       "Mais",
+       "Aussi",
+       "Et"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Aussi' betekent ook (opsomming).",
+      "uo": [
+       "Nee, 'Bien que' betekent hoewel (tegenstelling).",
+       "Nee, 'Mais' betekent maar (tegenstelling).",
+       "Klopt: 'Aussi' betekent ook (opsomming).",
+       "Nee, 'Et' betekent en (opsomming)."
+      ],
+      "uh": "Aussi: ook (opsomming)."
+     },
+     {
+      "v": "Uit de rest van de zin raad je een onbekend Frans woord. Welk begrip herken je hier?",
+      "o": [
+       "Par exemple",
+       "Bien que",
+       "Et",
+       "Context"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Uit de rest van de zin raad je een onbekend Frans woord. Dat past bij Context: situatie eromheen.",
+      "uo": [
+       "Nee, dat hoort bij Par exemple: bijvoorbeeld.",
+       "Nee, dat hoort bij Bien que: hoewel (tegenstelling).",
+       "Nee, dat hoort bij Et: en (opsomming).",
+       "Klopt: situatie eromheen."
+      ],
+      "uh": "Context: situatie eromheen."
+     },
+     {
+      "v": "Wat is de vertaling van 'Bien que'?",
+      "o": [
+       "hoewel (tegenstelling)",
+       "omdat (reden)",
+       "maar (tegenstelling)",
+       "en (opsomming)"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "'Bien que' betekent hoewel (tegenstelling).",
+      "uo": [
+       "Klopt: 'Bien que' betekent hoewel (tegenstelling).",
+       "Nee, dat is de betekenis van 'Parce que'.",
+       "Nee, dat is de betekenis van 'Mais'.",
+       "Nee, dat is de betekenis van 'Et'."
+      ],
+      "uh": "Bien que: hoewel (tegenstelling)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Et'?",
+      "o": [
+       "maar (tegenstelling)",
+       "en (opsomming)",
+       "globaal lezen",
+       "ook (opsomming)"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Et' betekent en (opsomming).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Mais'.",
+       "Klopt: 'Et' betekent en (opsomming).",
+       "Nee, dat is de betekenis van 'Skimmen'.",
+       "Nee, dat is de betekenis van 'Aussi'."
+      ],
+      "uh": "Et: en (opsomming)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Donc'?",
+      "o": [
+       "ook (opsomming)",
+       "globaal lezen",
+       "dus (gevolg)",
+       "gericht zoeken"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "'Donc' betekent dus (gevolg).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Aussi'.",
+       "Nee, dat is de betekenis van 'Skimmen'.",
+       "Klopt: 'Donc' betekent dus (gevolg).",
+       "Nee, dat is de betekenis van 'Scannen'."
+      ],
+      "uh": "Donc: dus (gevolg)."
+     },
+     {
+      "v": "Dit woord zet twee dingen recht tegenover elkaar, net als maar. Welk begrip herken je hier?",
+      "o": [
+       "Skimmen",
+       "Et",
+       "Parce que",
+       "Mais"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Dit woord zet twee dingen recht tegenover elkaar, net als maar. Dat past bij Mais: maar (tegenstelling).",
+      "uo": [
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Et: en (opsomming).",
+       "Nee, dat hoort bij Parce que: omdat (reden).",
+       "Klopt: maar (tegenstelling)."
+      ],
+      "uh": "Mais: maar (tegenstelling)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Par exemple'?",
+      "o": [
+       "bijvoorbeeld",
+       "dus (gevolg)",
+       "maar (tegenstelling)",
+       "hoewel (tegenstelling)"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Par exemple' betekent bijvoorbeeld.",
+      "uo": [
+       "Klopt: 'Par exemple' betekent bijvoorbeeld.",
+       "Nee, dat is de betekenis van 'Donc'.",
+       "Nee, dat is de betekenis van 'Mais'.",
+       "Nee, dat is de betekenis van 'Bien que'."
+      ],
+      "uh": "Par exemple: bijvoorbeeld."
+     },
+     {
+      "v": "Snel zoeken naar één bepaald detail in de tekst. Welk begrip past hierbij?",
+      "o": [
+       "Et",
+       "Scannen",
+       "Aussi",
+       "Context"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Snel zoeken naar één bepaald detail in de tekst. Dat past bij Scannen: gericht zoeken.",
+      "uo": [
+       "Nee, dat hoort bij Et: en (opsomming).",
+       "Klopt: gericht zoeken.",
+       "Nee, dat hoort bij Aussi: ook (opsomming).",
+       "Nee, dat hoort bij Context: situatie eromheen."
+      ],
+      "uh": "Scannen: gericht zoeken."
+     },
+     {
+      "v": "Welk woord betekent omdat (reden)?",
+      "o": [
+       "Mais",
+       "Donc",
+       "Parce que",
+       "Et"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "'Parce que' betekent omdat (reden).",
+      "uo": [
+       "Nee, 'Mais' betekent maar (tegenstelling).",
+       "Nee, 'Donc' betekent dus (gevolg).",
+       "Klopt: 'Parce que' betekent omdat (reden).",
+       "Nee, 'Et' betekent en (opsomming)."
+      ],
+      "uh": "Parce que: omdat (reden)."
+     },
+     {
+      "v": "Dit woord telt twee dingen simpelweg bij elkaar op. Welk begrip herken je hier?",
+      "o": [
+       "Aussi",
+       "Mais",
+       "Skimmen",
+       "Et"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Dit woord telt twee dingen simpelweg bij elkaar op. Dat past bij Et: en (opsomming).",
+      "uo": [
+       "Nee, dat hoort bij Aussi: ook (opsomming).",
+       "Nee, dat hoort bij Mais: maar (tegenstelling).",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Klopt: en (opsomming)."
+      ],
+      "uh": "Et: en (opsomming)."
+     },
+     {
+      "v": "Deze woorden kondigen een voorbeeld aan. Wat is hier aan de hand?",
+      "o": [
+       "Par exemple",
+       "Skimmen",
+       "Context",
+       "Bien que"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Deze woorden kondigen een voorbeeld aan. Dat past bij Par exemple: bijvoorbeeld.",
+      "uo": [
+       "Klopt: bijvoorbeeld.",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Context: situatie eromheen.",
+       "Nee, dat hoort bij Bien que: hoewel (tegenstelling)."
+      ],
+      "uh": "Par exemple: bijvoorbeeld."
+     },
+     {
+      "v": "Dit woord geeft het gevolg van iets aan, net als dus. Welk begrip past hierbij?",
+      "o": [
+       "Parce que",
+       "Donc",
+       "Skimmen",
+       "Bien que"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Dit woord geeft het gevolg van iets aan, net als dus. Dat past bij Donc: dus (gevolg).",
+      "uo": [
+       "Nee, dat hoort bij Parce que: omdat (reden).",
+       "Klopt: dus (gevolg).",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Bien que: hoewel (tegenstelling)."
+      ],
+      "uh": "Donc: dus (gevolg)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Parce que'?",
+      "o": [
+       "maar (tegenstelling)",
+       "dus (gevolg)",
+       "omdat (reden)",
+       "globaal lezen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Parce que' betekent omdat (reden).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Mais'.",
+       "Nee, dat is de betekenis van 'Donc'.",
+       "Klopt: 'Parce que' betekent omdat (reden).",
+       "Nee, dat is de betekenis van 'Skimmen'."
+      ],
+      "uh": "Parce que: omdat (reden)."
+     },
+     {
+      "v": "Deze woorden geven de reden waarom iets zo is. Welk begrip herken je hier?",
+      "o": [
+       "Bien que",
+       "Skimmen",
+       "Context",
+       "Parce que"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Deze woorden geven de reden waarom iets zo is. Dat past bij Parce que: omdat (reden).",
+      "uo": [
+       "Nee, dat hoort bij Bien que: hoewel (tegenstelling).",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Context: situatie eromheen.",
+       "Klopt: omdat (reden)."
+      ],
+      "uh": "Parce que: omdat (reden)."
+     },
+     {
+      "v": "Je zoekt gericht één prijs op in de Franse folder. Wat is hier aan de hand?",
+      "o": [
+       "Scannen",
+       "Skimmen",
+       "Mais",
+       "Context"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je zoekt gericht één prijs op in de Franse folder. Dat past bij Scannen: gericht zoeken.",
+      "uo": [
+       "Klopt: gericht zoeken.",
+       "Nee, dat hoort bij Skimmen: globaal lezen.",
+       "Nee, dat hoort bij Mais: maar (tegenstelling).",
+       "Nee, dat hoort bij Context: situatie eromheen."
+      ],
+      "uh": "Scannen: gericht zoeken."
+     },
+     {
+      "v": "Dit woord voegt iets extra toe, net als ook. Welk begrip past hierbij?",
+      "o": [
+       "Mais",
+       "Aussi",
+       "Bien que",
+       "Et"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Dit woord voegt iets extra toe, net als ook. Dat past bij Aussi: ook (opsomming).",
+      "uo": [
+       "Nee, dat hoort bij Mais: maar (tegenstelling).",
+       "Klopt: ook (opsomming).",
+       "Nee, dat hoort bij Bien que: hoewel (tegenstelling).",
+       "Nee, dat hoort bij Et: en (opsomming)."
+      ],
+      "uh": "Aussi: ook (opsomming)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Mais'?",
+      "o": [
+       "bijvoorbeeld",
+       "globaal lezen",
+       "maar (tegenstelling)",
+       "situatie eromheen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "'Mais' betekent maar (tegenstelling).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Par exemple'.",
+       "Nee, dat is de betekenis van 'Skimmen'.",
+       "Klopt: 'Mais' betekent maar (tegenstelling).",
+       "Nee, dat is de betekenis van 'Context'."
+      ],
+      "uh": "Mais: maar (tegenstelling)."
+     },
+     {
+      "v": "Deze woorden geven toe dat iets zo is en toch anders loopt, net als hoewel. Welk begrip herken je hier?",
+      "o": [
+       "Et",
+       "Parce que",
+       "Mais",
+       "Bien que"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Deze woorden geven toe dat iets zo is en toch anders loopt, net als hoewel. Dat past bij Bien que: hoewel (tegenstelling).",
+      "uo": [
+       "Nee, dat hoort bij Et: en (opsomming).",
+       "Nee, dat hoort bij Parce que: omdat (reden).",
+       "Nee, dat hoort bij Mais: maar (tegenstelling).",
+       "Klopt: hoewel (tegenstelling)."
+      ],
+      "uh": "Bien que: hoewel (tegenstelling)."
+     },
+     {
+      "v": "Je leest snel over de Franse tekst heen voor de grote lijn. Wat is hier aan de hand?",
+      "o": [
+       "Skimmen",
+       "Scannen",
+       "Donc",
+       "Mais"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je leest snel over de Franse tekst heen voor de grote lijn. Dat past bij Skimmen: globaal lezen.",
+      "uo": [
+       "Klopt: globaal lezen.",
+       "Nee, dat hoort bij Scannen: gericht zoeken.",
+       "Nee, dat hoort bij Donc: dus (gevolg).",
+       "Nee, dat hoort bij Mais: maar (tegenstelling)."
+      ],
+      "uh": "Skimmen: globaal lezen."
+     },
+     {
+      "v": "Welk woord betekent dus (gevolg)?",
+      "o": [
+       "Skimmen",
+       "Donc",
+       "Aussi",
+       "Scannen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'Donc' betekent dus (gevolg).",
+      "uo": [
+       "Nee, 'Skimmen' betekent globaal lezen.",
+       "Klopt: 'Donc' betekent dus (gevolg).",
+       "Nee, 'Aussi' betekent ook (opsomming).",
+       "Nee, 'Scannen' betekent gericht zoeken."
+      ],
+      "uh": "Donc: dus (gevolg)."
+     },
+     {
+      "v": "Welk woord betekent maar (tegenstelling)?",
+      "o": [
+       "Parce que",
+       "Et",
+       "Mais",
+       "Skimmen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "'Mais' betekent maar (tegenstelling).",
+      "uo": [
+       "Nee, 'Parce que' betekent omdat (reden).",
+       "Nee, 'Et' betekent en (opsomming).",
+       "Klopt: 'Mais' betekent maar (tegenstelling).",
+       "Nee, 'Skimmen' betekent globaal lezen."
+      ],
+      "uh": "Mais: maar (tegenstelling)."
+     },
+     {
+      "v": "Welk woord betekent bijvoorbeeld?",
+      "o": [
+       "Bien que",
+       "Donc",
+       "Mais",
+       "Par exemple"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Par exemple' betekent bijvoorbeeld.",
+      "uo": [
+       "Nee, 'Bien que' betekent hoewel (tegenstelling).",
+       "Nee, 'Donc' betekent dus (gevolg).",
+       "Nee, 'Mais' betekent maar (tegenstelling).",
+       "Klopt: 'Par exemple' betekent bijvoorbeeld."
+      ],
+      "uh": "Par exemple: bijvoorbeeld."
      }
     ],
     "begrippen": [
@@ -5662,6 +9728,481 @@ var VAKKEN_VMBO = [
        "«wanneer» is quand."
       ],
       "uh": "wat: «que» vraagt naar een ding (wat)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Quand'?",
+      "o": [
+       "waar (plaats)",
+       "wanneer (tijd)",
+       "hoe (manier)",
+       "hoeveel (prijs)"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "'Quand' betekent wanneer (tijd).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Où'.",
+       "Klopt: 'Quand' betekent wanneer (tijd).",
+       "Nee, dat is de betekenis van 'Comment'.",
+       "Nee, dat is de betekenis van 'Combien'."
+      ],
+      "uh": "Quand: wanneer (tijd)."
+     },
+     {
+      "v": "Je vraagt naar de manier waarop iets gaat. Om welk begrip gaat het?",
+      "o": [
+       "Qui",
+       "Pourquoi",
+       "Comment",
+       "Context"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je vraagt naar de manier waarop iets gaat. Dat past bij Comment: hoe (manier).",
+      "uo": [
+       "Nee, dat hoort bij Qui: wie (persoon).",
+       "Nee, dat hoort bij Pourquoi: waarom (reden).",
+       "Klopt: hoe (manier).",
+       "Nee, dat hoort bij Context: situatie eromheen."
+      ],
+      "uh": "Comment: hoe (manier)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Qui'?",
+      "o": [
+       "hoeveel (prijs)",
+       "waar (plaats)",
+       "wat (ding)",
+       "wie (persoon)"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Qui' betekent wie (persoon).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Combien'.",
+       "Nee, dat is de betekenis van 'Où'.",
+       "Nee, dat is de betekenis van 'Que'.",
+       "Klopt: 'Qui' betekent wie (persoon)."
+      ],
+      "uh": "Qui: wie (persoon)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Combien'?",
+      "o": [
+       "hoeveel (prijs)",
+       "hoe (manier)",
+       "wie (persoon)",
+       "situatie eromheen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Combien' betekent hoeveel (prijs).",
+      "uo": [
+       "Klopt: 'Combien' betekent hoeveel (prijs).",
+       "Nee, dat is de betekenis van 'Comment'.",
+       "Nee, dat is de betekenis van 'Qui'.",
+       "Nee, dat is de betekenis van 'Context'."
+      ],
+      "uh": "Combien: hoeveel (prijs)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Que'?",
+      "o": [
+       "wie (persoon)",
+       "wat (ding)",
+       "hoe (manier)",
+       "hoeveel (prijs)"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "'Que' betekent wat (ding).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Qui'.",
+       "Klopt: 'Que' betekent wat (ding).",
+       "Nee, dat is de betekenis van 'Comment'.",
+       "Nee, dat is de betekenis van 'Combien'."
+      ],
+      "uh": "Que: wat (ding)."
+     },
+     {
+      "v": "De omringende woorden die je helpen iets te begrijpen. Om welk begrip gaat het?",
+      "o": [
+       "Qui",
+       "Hoofdgedachte",
+       "Context",
+       "Combien"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De omringende woorden die je helpen iets te begrijpen. Dat past bij Context: situatie eromheen.",
+      "uo": [
+       "Nee, dat hoort bij Qui: wie (persoon).",
+       "Nee, dat hoort bij Hoofdgedachte: de kern.",
+       "Klopt: situatie eromheen.",
+       "Nee, dat hoort bij Combien: hoeveel (prijs)."
+      ],
+      "uh": "Context: situatie eromheen."
+     },
+     {
+      "v": "Wat is de vertaling van 'Comment'?",
+      "o": [
+       "wat (ding)",
+       "wanneer (tijd)",
+       "hoeveel (prijs)",
+       "hoe (manier)"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "'Comment' betekent hoe (manier).",
+      "uo": [
+       "Nee, dat is de betekenis van 'Que'.",
+       "Nee, dat is de betekenis van 'Quand'.",
+       "Nee, dat is de betekenis van 'Combien'.",
+       "Klopt: 'Comment' betekent hoe (manier)."
+      ],
+      "uh": "Comment: hoe (manier)."
+     },
+     {
+      "v": "Welk woord betekent waarom (reden)?",
+      "o": [
+       "Pourquoi",
+       "Comment",
+       "Quand",
+       "Context"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "'Pourquoi' betekent waarom (reden).",
+      "uo": [
+       "Klopt: 'Pourquoi' betekent waarom (reden).",
+       "Nee, 'Comment' betekent hoe (manier).",
+       "Nee, 'Quand' betekent wanneer (tijd).",
+       "Nee, 'Context' betekent situatie eromheen."
+      ],
+      "uh": "Pourquoi: waarom (reden)."
+     },
+     {
+      "v": "Je vraagt naar wat iets is, naar een ding. Welk begrip past hierbij?",
+      "o": [
+       "Qui",
+       "Que",
+       "Hoofdgedachte",
+       "Pourquoi"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je vraagt naar wat iets is, naar een ding. Dat past bij Que: wat (ding).",
+      "uo": [
+       "Nee, dat hoort bij Qui: wie (persoon).",
+       "Klopt: wat (ding).",
+       "Nee, dat hoort bij Hoofdgedachte: de kern.",
+       "Nee, dat hoort bij Pourquoi: waarom (reden)."
+      ],
+      "uh": "Que: wat (ding)."
+     },
+     {
+      "v": "Waar het Franse luisterfragment in de kern over gaat. Om welk begrip gaat het?",
+      "o": [
+       "Où",
+       "Quand",
+       "Hoofdgedachte",
+       "Pourquoi"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Waar het Franse luisterfragment in de kern over gaat. Dat past bij Hoofdgedachte: de kern.",
+      "uo": [
+       "Nee, dat hoort bij Où: waar (plaats).",
+       "Nee, dat hoort bij Quand: wanneer (tijd).",
+       "Klopt: de kern.",
+       "Nee, dat hoort bij Pourquoi: waarom (reden)."
+      ],
+      "uh": "Hoofdgedachte: de kern."
+     },
+     {
+      "v": "Je vraagt naar het aantal of de prijs. Welk begrip herken je hier?",
+      "o": [
+       "Quand",
+       "Comment",
+       "Qui",
+       "Combien"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je vraagt naar het aantal of de prijs. Dat past bij Combien: hoeveel (prijs).",
+      "uo": [
+       "Nee, dat hoort bij Quand: wanneer (tijd).",
+       "Nee, dat hoort bij Comment: hoe (manier).",
+       "Nee, dat hoort bij Qui: wie (persoon).",
+       "Klopt: hoeveel (prijs)."
+      ],
+      "uh": "Combien: hoeveel (prijs)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Pourquoi'?",
+      "o": [
+       "waarom (reden)",
+       "hoe (manier)",
+       "situatie eromheen",
+       "wat (ding)"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Pourquoi' betekent waarom (reden).",
+      "uo": [
+       "Klopt: 'Pourquoi' betekent waarom (reden).",
+       "Nee, dat is de betekenis van 'Comment'.",
+       "Nee, dat is de betekenis van 'Context'.",
+       "Nee, dat is de betekenis van 'Que'."
+      ],
+      "uh": "Pourquoi: waarom (reden)."
+     },
+     {
+      "v": "Welk woord betekent waar (plaats)?",
+      "o": [
+       "Comment",
+       "Où",
+       "Hoofdgedachte",
+       "Que"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'Où' betekent waar (plaats).",
+      "uo": [
+       "Nee, 'Comment' betekent hoe (manier).",
+       "Klopt: 'Où' betekent waar (plaats).",
+       "Nee, 'Hoofdgedachte' betekent de kern.",
+       "Nee, 'Que' betekent wat (ding)."
+      ],
+      "uh": "Où: waar (plaats)."
+     },
+     {
+      "v": "Welk woord betekent hoeveel (prijs)?",
+      "o": [
+       "Qui",
+       "Comment",
+       "Combien",
+       "Quand"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "'Combien' betekent hoeveel (prijs).",
+      "uo": [
+       "Nee, 'Qui' betekent wie (persoon).",
+       "Nee, 'Comment' betekent hoe (manier).",
+       "Klopt: 'Combien' betekent hoeveel (prijs).",
+       "Nee, 'Quand' betekent wanneer (tijd)."
+      ],
+      "uh": "Combien: hoeveel (prijs)."
+     },
+     {
+      "v": "Je vraagt naar het moment of tijdstip. Welk begrip herken je hier?",
+      "o": [
+       "Combien",
+       "Où",
+       "Comment",
+       "Quand"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je vraagt naar het moment of tijdstip. Dat past bij Quand: wanneer (tijd).",
+      "uo": [
+       "Nee, dat hoort bij Combien: hoeveel (prijs).",
+       "Nee, dat hoort bij Où: waar (plaats).",
+       "Nee, dat hoort bij Comment: hoe (manier).",
+       "Klopt: wanneer (tijd)."
+      ],
+      "uh": "Quand: wanneer (tijd)."
+     },
+     {
+      "v": "Wat is de vertaling van 'Où'?",
+      "o": [
+       "waar (plaats)",
+       "hoe (manier)",
+       "de kern",
+       "wat (ding)"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'Où' betekent waar (plaats).",
+      "uo": [
+       "Klopt: 'Où' betekent waar (plaats).",
+       "Nee, dat is de betekenis van 'Comment'.",
+       "Nee, dat is de betekenis van 'Hoofdgedachte'.",
+       "Nee, dat is de betekenis van 'Que'."
+      ],
+      "uh": "Où: waar (plaats)."
+     },
+     {
+      "v": "Je vraagt naar de plaats waar iets is. Welk begrip past hierbij?",
+      "o": [
+       "Qui",
+       "Où",
+       "Quand",
+       "Comment"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Je vraagt naar de plaats waar iets is. Dat past bij Où: waar (plaats).",
+      "uo": [
+       "Nee, dat hoort bij Qui: wie (persoon).",
+       "Klopt: waar (plaats).",
+       "Nee, dat hoort bij Quand: wanneer (tijd).",
+       "Nee, dat hoort bij Comment: hoe (manier)."
+      ],
+      "uh": "Où: waar (plaats)."
+     },
+     {
+      "v": "Welk woord betekent wie (persoon)?",
+      "o": [
+       "Que",
+       "Où",
+       "Qui",
+       "Combien"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Qui' betekent wie (persoon).",
+      "uo": [
+       "Nee, 'Que' betekent wat (ding).",
+       "Nee, 'Où' betekent waar (plaats).",
+       "Klopt: 'Qui' betekent wie (persoon).",
+       "Nee, 'Combien' betekent hoeveel (prijs)."
+      ],
+      "uh": "Qui: wie (persoon)."
+     },
+     {
+      "v": "Welk woord betekent hoe (manier)?",
+      "o": [
+       "Que",
+       "Quand",
+       "Combien",
+       "Comment"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "'Comment' betekent hoe (manier).",
+      "uo": [
+       "Nee, 'Que' betekent wat (ding).",
+       "Nee, 'Quand' betekent wanneer (tijd).",
+       "Nee, 'Combien' betekent hoeveel (prijs).",
+       "Klopt: 'Comment' betekent hoe (manier)."
+      ],
+      "uh": "Comment: hoe (manier)."
+     },
+     {
+      "v": "Je leidt de betekenis van een woord af uit de zin eromheen. Wat is hier aan de hand?",
+      "o": [
+       "Context",
+       "Hoofdgedachte",
+       "Qui",
+       "Quand"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je leidt de betekenis van een woord af uit de zin eromheen. Dat past bij Context: situatie eromheen.",
+      "uo": [
+       "Klopt: situatie eromheen.",
+       "Nee, dat hoort bij Hoofdgedachte: de kern.",
+       "Nee, dat hoort bij Qui: wie (persoon).",
+       "Nee, dat hoort bij Quand: wanneer (tijd)."
+      ],
+      "uh": "Context: situatie eromheen."
+     },
+     {
+      "v": "Je vraagt naar de reden waarom iets gebeurt. Welk begrip past hierbij?",
+      "o": [
+       "Comment",
+       "Pourquoi",
+       "Context",
+       "Que"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je vraagt naar de reden waarom iets gebeurt. Dat past bij Pourquoi: waarom (reden).",
+      "uo": [
+       "Nee, dat hoort bij Comment: hoe (manier).",
+       "Klopt: waarom (reden).",
+       "Nee, dat hoort bij Context: situatie eromheen.",
+       "Nee, dat hoort bij Que: wat (ding)."
+      ],
+      "uh": "Pourquoi: waarom (reden)."
+     },
+     {
+      "v": "Je vraagt naar wie iets deed, naar een persoon. Om welk begrip gaat het?",
+      "o": [
+       "Context",
+       "Hoofdgedachte",
+       "Qui",
+       "Comment"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je vraagt naar wie iets deed, naar een persoon. Dat past bij Qui: wie (persoon).",
+      "uo": [
+       "Nee, dat hoort bij Context: situatie eromheen.",
+       "Nee, dat hoort bij Hoofdgedachte: de kern.",
+       "Klopt: wie (persoon).",
+       "Nee, dat hoort bij Comment: hoe (manier)."
+      ],
+      "uh": "Qui: wie (persoon)."
+     },
+     {
+      "v": "Welk woord betekent wanneer (tijd)?",
+      "o": [
+       "Context",
+       "Où",
+       "Qui",
+       "Quand"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "'Quand' betekent wanneer (tijd).",
+      "uo": [
+       "Nee, 'Context' betekent situatie eromheen.",
+       "Nee, 'Où' betekent waar (plaats).",
+       "Nee, 'Qui' betekent wie (persoon).",
+       "Klopt: 'Quand' betekent wanneer (tijd)."
+      ],
+      "uh": "Quand: wanneer (tijd)."
+     },
+     {
+      "v": "Welk woord betekent wat (ding)?",
+      "o": [
+       "Que",
+       "Qui",
+       "Hoofdgedachte",
+       "Pourquoi"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Que' betekent wat (ding).",
+      "uo": [
+       "Klopt: 'Que' betekent wat (ding).",
+       "Nee, 'Qui' betekent wie (persoon).",
+       "Nee, 'Hoofdgedachte' betekent de kern.",
+       "Nee, 'Pourquoi' betekent waarom (reden)."
+      ],
+      "uh": "Que: wat (ding)."
+     },
+     {
+      "v": "De belangrijkste boodschap van wat je hoort. Welk begrip past hierbij?",
+      "o": [
+       "Quand",
+       "Hoofdgedachte",
+       "Où",
+       "Pourquoi"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De belangrijkste boodschap van wat je hoort. Dat past bij Hoofdgedachte: de kern.",
+      "uo": [
+       "Nee, dat hoort bij Quand: wanneer (tijd).",
+       "Klopt: de kern.",
+       "Nee, dat hoort bij Où: waar (plaats).",
+       "Nee, dat hoort bij Pourquoi: waarom (reden)."
+      ],
+      "uh": "Hoofdgedachte: de kern."
      }
     ],
     "begrippen": [
@@ -5888,6 +10429,424 @@ var VAKKEN_VMBO = [
        "«hij» is il."
       ],
       "uh": "jij (informeel): «tu» is de informele vorm (jij)."
+     },
+     {
+      "v": "Je bent per ongeluk tegen iemand aangelopen en verontschuldigt je. Welk begrip past hierbij?",
+      "o": [
+       "S'il vous plaît",
+       "Excusez-moi",
+       "Salut",
+       "Enchanté"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je bent per ongeluk tegen iemand aangelopen en verontschuldigt je. Dat past bij Excusez-moi: pardon.",
+      "uo": [
+       "Nee, dat hoort bij S'il vous plaît: alstublieft.",
+       "Klopt: pardon.",
+       "Nee, dat hoort bij Salut: informeel: hoi.",
+       "Nee, dat hoort bij Enchanté: aangenaam."
+      ],
+      "uh": "Excusez-moi: pardon."
+     },
+     {
+      "v": "Je antwoord als iemand je bedankt. Om welk begrip gaat het?",
+      "o": [
+       "Salut",
+       "Merci",
+       "De rien",
+       "Bonjour"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je antwoord als iemand je bedankt. Dat past bij De rien: graag gedaan.",
+      "uo": [
+       "Nee, dat hoort bij Salut: informeel: hoi.",
+       "Nee, dat hoort bij Merci: bedankt.",
+       "Klopt: graag gedaan.",
+       "Nee, dat hoort bij Bonjour: begroeting."
+      ],
+      "uh": "De rien: graag gedaan."
+     },
+     {
+      "v": "Welk woord betekent bedankt?",
+      "o": [
+       "S'il vous plaît",
+       "De rien",
+       "Enchanté",
+       "Merci"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Merci' betekent bedankt.",
+      "uo": [
+       "Nee, 'S'il vous plaît' betekent alstublieft.",
+       "Nee, 'De rien' betekent graag gedaan.",
+       "Nee, 'Enchanté' betekent aangenaam.",
+       "Klopt: 'Merci' betekent bedankt."
+      ],
+      "uh": "Merci: bedankt."
+     },
+     {
+      "v": "Welk woord betekent afscheid?",
+      "o": [
+       "Au revoir",
+       "Enchanté",
+       "Salut",
+       "Vous"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'Au revoir' betekent afscheid.",
+      "uo": [
+       "Klopt: 'Au revoir' betekent afscheid.",
+       "Nee, 'Enchanté' betekent aangenaam.",
+       "Nee, 'Salut' betekent informeel: hoi.",
+       "Nee, 'Vous' betekent beleefd: u."
+      ],
+      "uh": "Au revoir: afscheid."
+     },
+     {
+      "v": "Je ontmoet iemand voor het eerst en stelt je voor. Welk begrip past hierbij?",
+      "o": [
+       "Comment ça va",
+       "Enchanté",
+       "Merci",
+       "Vous"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je ontmoet iemand voor het eerst en stelt je voor. Dat past bij Enchanté: aangenaam.",
+      "uo": [
+       "Nee, dat hoort bij Comment ça va: hoe gaat het.",
+       "Klopt: aangenaam.",
+       "Nee, dat hoort bij Merci: bedankt.",
+       "Nee, dat hoort bij Vous: beleefd: u."
+      ],
+      "uh": "Enchanté: aangenaam."
+     },
+     {
+      "v": "Wat is de vertaling van 'Au revoir'?",
+      "o": [
+       "informeel: hoi",
+       "aangenaam",
+       "afscheid",
+       "beleefd: u"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "'Au revoir' betekent afscheid.",
+      "uo": [
+       "Nee, dat is de betekenis van 'Salut'.",
+       "Nee, dat is de betekenis van 'Enchanté'.",
+       "Klopt: 'Au revoir' betekent afscheid.",
+       "Nee, dat is de betekenis van 'Vous'."
+      ],
+      "uh": "Au revoir: afscheid."
+     },
+     {
+      "v": "Je stapt iemand op de tenen en biedt je excuses aan. Welk begrip herken je hier?",
+      "o": [
+       "Enchanté",
+       "S'il vous plaît",
+       "Salut",
+       "Excusez-moi"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je stapt iemand op de tenen en biedt je excuses aan. Dat past bij Excusez-moi: pardon.",
+      "uo": [
+       "Nee, dat hoort bij Enchanté: aangenaam.",
+       "Nee, dat hoort bij S'il vous plaît: alstublieft.",
+       "Nee, dat hoort bij Salut: informeel: hoi.",
+       "Klopt: pardon."
+      ],
+      "uh": "Excusez-moi: pardon."
+     },
+     {
+      "v": "Welk woord betekent alstublieft?",
+      "o": [
+       "S'il vous plaît",
+       "Vous",
+       "Enchanté",
+       "Salut"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'S'il vous plaît' betekent alstublieft.",
+      "uo": [
+       "Klopt: 'S'il vous plaît' betekent alstublieft.",
+       "Nee, 'Vous' betekent beleefd: u.",
+       "Nee, 'Enchanté' betekent aangenaam.",
+       "Nee, 'Salut' betekent informeel: hoi."
+      ],
+      "uh": "S'il vous plaît: alstublieft."
+     },
+     {
+      "v": "Wat je zegt om sorry of pardon te zeggen. Welk begrip past hierbij?",
+      "o": [
+       "S'il vous plaît",
+       "Excusez-moi",
+       "Salut",
+       "Enchanté"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Wat je zegt om sorry of pardon te zeggen. Dat past bij Excusez-moi: pardon.",
+      "uo": [
+       "Nee, dat hoort bij S'il vous plaît: alstublieft.",
+       "Klopt: pardon.",
+       "Nee, dat hoort bij Salut: informeel: hoi.",
+       "Nee, dat hoort bij Enchanté: aangenaam."
+      ],
+      "uh": "Excusez-moi: pardon."
+     },
+     {
+      "v": "Iemand bedankt je en jij reageert met graag gedaan. Om welk begrip gaat het?",
+      "o": [
+       "S'il vous plaît",
+       "Enchanté",
+       "De rien",
+       "Vous"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Iemand bedankt je en jij reageert met graag gedaan. Dat past bij De rien: graag gedaan.",
+      "uo": [
+       "Nee, dat hoort bij S'il vous plaît: alstublieft.",
+       "Nee, dat hoort bij Enchanté: aangenaam.",
+       "Klopt: graag gedaan.",
+       "Nee, dat hoort bij Vous: beleefd: u."
+      ],
+      "uh": "De rien: graag gedaan."
+     },
+     {
+      "v": "Tegen je leraar of een winkelmedewerker gebruik je deze nette vorm. Welk begrip herken je hier?",
+      "o": [
+       "S'il vous plaît",
+       "Bonjour",
+       "Enchanté",
+       "Vous"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Tegen je leraar of een winkelmedewerker gebruik je deze nette vorm. Dat past bij Vous: beleefd: u.",
+      "uo": [
+       "Nee, dat hoort bij S'il vous plaît: alstublieft.",
+       "Nee, dat hoort bij Bonjour: begroeting.",
+       "Nee, dat hoort bij Enchanté: aangenaam.",
+       "Klopt: beleefd: u."
+      ],
+      "uh": "Vous: beleefd: u."
+     },
+     {
+      "v": "Welk woord betekent hoe gaat het?",
+      "o": [
+       "Comment ça va",
+       "Enchanté",
+       "Vous",
+       "De rien"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "'Comment ça va' betekent hoe gaat het.",
+      "uo": [
+       "Klopt: 'Comment ça va' betekent hoe gaat het.",
+       "Nee, 'Enchanté' betekent aangenaam.",
+       "Nee, 'Vous' betekent beleefd: u.",
+       "Nee, 'De rien' betekent graag gedaan."
+      ],
+      "uh": "Comment ça va: hoe gaat het."
+     },
+     {
+      "v": "Wat is de vertaling van 'Comment ça va'?",
+      "o": [
+       "informeel: hoi",
+       "hoe gaat het",
+       "graag gedaan",
+       "bedankt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "'Comment ça va' betekent hoe gaat het.",
+      "uo": [
+       "Nee, dat is de betekenis van 'Salut'.",
+       "Klopt: 'Comment ça va' betekent hoe gaat het.",
+       "Nee, dat is de betekenis van 'De rien'.",
+       "Nee, dat is de betekenis van 'Merci'."
+      ],
+      "uh": "Comment ça va: hoe gaat het."
+     },
+     {
+      "v": "De informele groet, hoi of doei. Om welk begrip gaat het?",
+      "o": [
+       "Enchanté",
+       "Bonjour",
+       "Salut",
+       "Au revoir"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De informele groet, hoi of doei. Dat past bij Salut: informeel: hoi.",
+      "uo": [
+       "Nee, dat hoort bij Enchanté: aangenaam.",
+       "Nee, dat hoort bij Bonjour: begroeting.",
+       "Klopt: informeel: hoi.",
+       "Nee, dat hoort bij Au revoir: afscheid."
+      ],
+      "uh": "Salut: informeel: hoi."
+     },
+     {
+      "v": "Welk woord betekent begroeting?",
+      "o": [
+       "Salut",
+       "Au revoir",
+       "Enchanté",
+       "Bonjour"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "'Bonjour' betekent begroeting.",
+      "uo": [
+       "Nee, 'Salut' betekent informeel: hoi.",
+       "Nee, 'Au revoir' betekent afscheid.",
+       "Nee, 'Enchanté' betekent aangenaam.",
+       "Klopt: 'Bonjour' betekent begroeting."
+      ],
+      "uh": "Bonjour: begroeting."
+     },
+     {
+      "v": "Wat is de vertaling van 'S'il vous plaît'?",
+      "o": [
+       "alstublieft",
+       "beleefd: u",
+       "aangenaam",
+       "informeel: hoi"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "'S'il vous plaît' betekent alstublieft.",
+      "uo": [
+       "Klopt: 'S'il vous plaît' betekent alstublieft.",
+       "Nee, dat is de betekenis van 'Vous'.",
+       "Nee, dat is de betekenis van 'Enchanté'.",
+       "Nee, dat is de betekenis van 'Salut'."
+      ],
+      "uh": "S'il vous plaît: alstublieft."
+     },
+     {
+      "v": "De beleefde aanspreekvorm voor u. Welk begrip past hierbij?",
+      "o": [
+       "Bonjour",
+       "Vous",
+       "Enchanté",
+       "S'il vous plaît"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De beleefde aanspreekvorm voor u. Dat past bij Vous: beleefd: u.",
+      "uo": [
+       "Nee, dat hoort bij Bonjour: begroeting.",
+       "Klopt: beleefd: u.",
+       "Nee, dat hoort bij Enchanté: aangenaam.",
+       "Nee, dat hoort bij S'il vous plaît: alstublieft."
+      ],
+      "uh": "Vous: beleefd: u."
+     },
+     {
+      "v": "Wat is de vertaling van 'Merci'?",
+      "o": [
+       "aangenaam",
+       "graag gedaan",
+       "bedankt",
+       "alstublieft"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "'Merci' betekent bedankt.",
+      "uo": [
+       "Nee, dat is de betekenis van 'Enchanté'.",
+       "Nee, dat is de betekenis van 'De rien'.",
+       "Klopt: 'Merci' betekent bedankt.",
+       "Nee, dat is de betekenis van 'S'il vous plaît'."
+      ],
+      "uh": "Merci: bedankt."
+     },
+     {
+      "v": "Wat is de vertaling van 'Bonjour'?",
+      "o": [
+       "beleefd: u",
+       "graag gedaan",
+       "alstublieft",
+       "begroeting"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "'Bonjour' betekent begroeting.",
+      "uo": [
+       "Nee, dat is de betekenis van 'Vous'.",
+       "Nee, dat is de betekenis van 'De rien'.",
+       "Nee, dat is de betekenis van 'S'il vous plaît'.",
+       "Klopt: 'Bonjour' betekent begroeting."
+      ],
+      "uh": "Bonjour: begroeting."
+     },
+     {
+      "v": "Wat je zegt bij een kennismaking, aangenaam. Wat is hier aan de hand?",
+      "o": [
+       "Enchanté",
+       "Comment ça va",
+       "Salut",
+       "De rien"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Wat je zegt bij een kennismaking, aangenaam. Dat past bij Enchanté: aangenaam.",
+      "uo": [
+       "Klopt: aangenaam.",
+       "Nee, dat hoort bij Comment ça va: hoe gaat het.",
+       "Nee, dat hoort bij Salut: informeel: hoi.",
+       "Nee, dat hoort bij De rien: graag gedaan."
+      ],
+      "uh": "Enchanté: aangenaam."
+     },
+     {
+      "v": "Je begroet losjes een vriend of neemt informeel afscheid. Welk begrip past hierbij?",
+      "o": [
+       "Bonjour",
+       "Salut",
+       "De rien",
+       "S'il vous plaît"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je begroet losjes een vriend of neemt informeel afscheid. Dat past bij Salut: informeel: hoi.",
+      "uo": [
+       "Nee, dat hoort bij Bonjour: begroeting.",
+       "Klopt: informeel: hoi.",
+       "Nee, dat hoort bij De rien: graag gedaan.",
+       "Nee, dat hoort bij S'il vous plaît: alstublieft."
+      ],
+      "uh": "Salut: informeel: hoi."
+     },
+     {
+      "v": "Tegen een onbekende volwassene spreek je beleefd aan. Om welk begrip gaat het?",
+      "o": [
+       "Au revoir",
+       "Bonjour",
+       "Vous",
+       "Enchanté"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Tegen een onbekende volwassene spreek je beleefd aan. Dat past bij Vous: beleefd: u.",
+      "uo": [
+       "Nee, dat hoort bij Au revoir: afscheid.",
+       "Nee, dat hoort bij Bonjour: begroeting.",
+       "Klopt: beleefd: u.",
+       "Nee, dat hoort bij Enchanté: aangenaam."
+      ],
+      "uh": "Vous: beleefd: u."
      }
     ],
     "begrippen": [
@@ -6099,6 +11058,462 @@ var VAKKEN_VMBO = [
        "Klopt: «la» is het vrouwelijke lidwoord."
       ],
       "uh": "la: «la» is het vrouwelijke lidwoord."
+     },
+     {
+      "v": "Parler, regarder en aimer horen bij deze groep. Welk begrip past hierbij?",
+      "o": [
+       "-er werkwoord",
+       "Werkwoordsuitgang",
+       "Les",
+       "Avoir"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Parler, regarder en aimer horen bij deze groep. Dat past bij -er werkwoord: regelmatig -er.",
+      "uo": [
+       "Klopt: regelmatig -er.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Nee, dat hoort bij Les: meervoud.",
+       "Nee, dat hoort bij Avoir: hebben."
+      ],
+      "uh": "-er werkwoord: regelmatig -er."
+     },
+     {
+      "v": "Een werkwoord als parler dat je vervoegt met -e, -es en -ons. Om welk begrip gaat het?",
+      "o": [
+       "Werkwoordsuitgang",
+       "-er werkwoord",
+       "Les",
+       "Avoir"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een werkwoord als parler dat je vervoegt met -e, -es en -ons. Dat past bij -er werkwoord: regelmatig -er.",
+      "uo": [
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Klopt: regelmatig -er.",
+       "Nee, dat hoort bij Les: meervoud.",
+       "Nee, dat hoort bij Avoir: hebben."
+      ],
+      "uh": "-er werkwoord: regelmatig -er."
+     },
+     {
+      "v": "Om een Franse zin ontkennend te maken zet je twee woordjes om het werkwoord. Welk begrip herken je hier?",
+      "o": [
+       "Être",
+       "Avoir",
+       "Ne ... pas",
+       "Le"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Om een Franse zin ontkennend te maken zet je twee woordjes om het werkwoord. Dat past bij Ne ... pas: ontkenning.",
+      "uo": [
+       "Nee, dat hoort bij Être: zijn.",
+       "Nee, dat hoort bij Avoir: hebben.",
+       "Klopt: ontkenning.",
+       "Nee, dat hoort bij Le: mannelijk."
+      ],
+      "uh": "Ne ... pas: ontkenning."
+     },
+     {
+      "v": "Van parler maak je parlons bij nous door deze aanpassing. Wat is hier aan de hand?",
+      "o": [
+       "Ne ... pas",
+       "-er werkwoord",
+       "Avoir",
+       "Werkwoordsuitgang"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Van parler maak je parlons bij nous door deze aanpassing. Dat past bij Werkwoordsuitgang: uitgang bij onderwerp.",
+      "uo": [
+       "Nee, dat hoort bij Ne ... pas: ontkenning.",
+       "Nee, dat hoort bij -er werkwoord: regelmatig -er.",
+       "Nee, dat hoort bij Avoir: hebben.",
+       "Klopt: uitgang bij onderwerp."
+      ],
+      "uh": "Werkwoordsuitgang: uitgang bij onderwerp."
+     },
+     {
+      "v": "Het werkwoord voor zijn, zoals in tu es en il est. Welk begrip past hierbij?",
+      "o": [
+       "Être",
+       "Avoir",
+       "Les",
+       "Werkwoordsuitgang"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het werkwoord voor zijn, zoals in tu es en il est. Dat past bij Être: zijn.",
+      "uo": [
+       "Klopt: zijn.",
+       "Nee, dat hoort bij Avoir: hebben.",
+       "Nee, dat hoort bij Les: meervoud.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp."
+      ],
+      "uh": "Être: zijn."
+     },
+     {
+      "v": "De uitgang die past bij het onderwerp. Om welk begrip gaat het?",
+      "o": [
+       "-er werkwoord",
+       "Werkwoordsuitgang",
+       "Avoir",
+       "Ne ... pas"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De uitgang die past bij het onderwerp. Dat past bij Werkwoordsuitgang: uitgang bij onderwerp.",
+      "uo": [
+       "Nee, dat hoort bij -er werkwoord: regelmatig -er.",
+       "Klopt: uitgang bij onderwerp.",
+       "Nee, dat hoort bij Avoir: hebben.",
+       "Nee, dat hoort bij Ne ... pas: ontkenning."
+      ],
+      "uh": "Werkwoordsuitgang: uitgang bij onderwerp."
+     },
+     {
+      "v": "Het werkwoord voor hebben, zoals in tu as en il a. Welk begrip herken je hier?",
+      "o": [
+       "-er werkwoord",
+       "Être",
+       "Avoir",
+       "La"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het werkwoord voor hebben, zoals in tu as en il a. Dat past bij Avoir: hebben.",
+      "uo": [
+       "Nee, dat hoort bij -er werkwoord: regelmatig -er.",
+       "Nee, dat hoort bij Être: zijn.",
+       "Klopt: hebben.",
+       "Nee, dat hoort bij La: vrouwelijk."
+      ],
+      "uh": "Avoir: hebben."
+     },
+     {
+      "v": "Het lidwoord dat bij een vrouwelijk woord hoort. Wat is hier aan de hand?",
+      "o": [
+       "Werkwoordsuitgang",
+       "Ne ... pas",
+       "Être",
+       "La"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het lidwoord dat bij een vrouwelijk woord hoort. Dat past bij La: vrouwelijk.",
+      "uo": [
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Nee, dat hoort bij Ne ... pas: ontkenning.",
+       "Nee, dat hoort bij Être: zijn.",
+       "Klopt: vrouwelijk."
+      ],
+      "uh": "La: vrouwelijk."
+     },
+     {
+      "v": "In je ne parle pas zorgen twee woordjes voor de ontkenning. Welk begrip past hierbij?",
+      "o": [
+       "Ne ... pas",
+       "Avoir",
+       "Être",
+       "Le"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "In je ne parle pas zorgen twee woordjes voor de ontkenning. Dat past bij Ne ... pas: ontkenning.",
+      "uo": [
+       "Klopt: ontkenning.",
+       "Nee, dat hoort bij Avoir: hebben.",
+       "Nee, dat hoort bij Être: zijn.",
+       "Nee, dat hoort bij Le: mannelijk."
+      ],
+      "uh": "Ne ... pas: ontkenning."
+     },
+     {
+      "v": "Bij een mannelijk woord als livre hoort dit lidwoord. Om welk begrip gaat het?",
+      "o": [
+       "Ne ... pas",
+       "Le",
+       "Être",
+       "Werkwoordsuitgang"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Bij een mannelijk woord als livre hoort dit lidwoord. Dat past bij Le: mannelijk.",
+      "uo": [
+       "Nee, dat hoort bij Ne ... pas: ontkenning.",
+       "Klopt: mannelijk.",
+       "Nee, dat hoort bij Être: zijn.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp."
+      ],
+      "uh": "Le: mannelijk."
+     },
+     {
+      "v": "De vorm ai bij je hoort bij dit werkwoord. Welk begrip herken je hier?",
+      "o": [
+       "-er werkwoord",
+       "Être",
+       "Avoir",
+       "La"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De vorm ai bij je hoort bij dit werkwoord. Dat past bij Avoir: hebben.",
+      "uo": [
+       "Nee, dat hoort bij -er werkwoord: regelmatig -er.",
+       "Nee, dat hoort bij Être: zijn.",
+       "Klopt: hebben.",
+       "Nee, dat hoort bij La: vrouwelijk."
+      ],
+      "uh": "Avoir: hebben."
+     },
+     {
+      "v": "Het werkwoord dat hebben betekent. Wat is hier aan de hand?",
+      "o": [
+       "Werkwoordsuitgang",
+       "-er werkwoord",
+       "Les",
+       "Avoir"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het werkwoord dat hebben betekent. Dat past bij Avoir: hebben.",
+      "uo": [
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Nee, dat hoort bij -er werkwoord: regelmatig -er.",
+       "Nee, dat hoort bij Les: meervoud.",
+       "Klopt: hebben."
+      ],
+      "uh": "Avoir: hebben."
+     },
+     {
+      "v": "De ontkenning die je rond het werkwoord plaatst. Welk begrip past hierbij?",
+      "o": [
+       "Ne ... pas",
+       "Avoir",
+       "Être",
+       "Le"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De ontkenning die je rond het werkwoord plaatst. Dat past bij Ne ... pas: ontkenning.",
+      "uo": [
+       "Klopt: ontkenning.",
+       "Nee, dat hoort bij Avoir: hebben.",
+       "Nee, dat hoort bij Être: zijn.",
+       "Nee, dat hoort bij Le: mannelijk."
+      ],
+      "uh": "Ne ... pas: ontkenning."
+     },
+     {
+      "v": "Bij meer dan één ding hoort dit lidwoord. Om welk begrip gaat het?",
+      "o": [
+       "Werkwoordsuitgang",
+       "Les",
+       "-er werkwoord",
+       "Avoir"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Bij meer dan één ding hoort dit lidwoord. Dat past bij Les: meervoud.",
+      "uo": [
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Klopt: meervoud.",
+       "Nee, dat hoort bij -er werkwoord: regelmatig -er.",
+       "Nee, dat hoort bij Avoir: hebben."
+      ],
+      "uh": "Les: meervoud."
+     },
+     {
+      "v": "Het meervoudslidwoord. Welk begrip herken je hier?",
+      "o": [
+       "La",
+       "Le",
+       "Les",
+       "-er werkwoord"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het meervoudslidwoord. Dat past bij Les: meervoud.",
+      "uo": [
+       "Nee, dat hoort bij La: vrouwelijk.",
+       "Nee, dat hoort bij Le: mannelijk.",
+       "Klopt: meervoud.",
+       "Nee, dat hoort bij -er werkwoord: regelmatig -er."
+      ],
+      "uh": "Les: meervoud."
+     },
+     {
+      "v": "Het lidwoord dat bij een meervoud hoort. Wat is hier aan de hand?",
+      "o": [
+       "Avoir",
+       "Le",
+       "La",
+       "Les"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het lidwoord dat bij een meervoud hoort. Dat past bij Les: meervoud.",
+      "uo": [
+       "Nee, dat hoort bij Avoir: hebben.",
+       "Nee, dat hoort bij Le: mannelijk.",
+       "Nee, dat hoort bij La: vrouwelijk.",
+       "Klopt: meervoud."
+      ],
+      "uh": "Les: meervoud."
+     },
+     {
+      "v": "Het mannelijke lidwoord. Welk begrip past hierbij?",
+      "o": [
+       "Le",
+       "Ne ... pas",
+       "Être",
+       "Werkwoordsuitgang"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het mannelijke lidwoord. Dat past bij Le: mannelijk.",
+      "uo": [
+       "Klopt: mannelijk.",
+       "Nee, dat hoort bij Ne ... pas: ontkenning.",
+       "Nee, dat hoort bij Être: zijn.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp."
+      ],
+      "uh": "Le: mannelijk."
+     },
+     {
+      "v": "Een regelmatig werkwoord dat op -er eindigt. Om welk begrip gaat het?",
+      "o": [
+       "Être",
+       "-er werkwoord",
+       "Ne ... pas",
+       "Avoir"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een regelmatig werkwoord dat op -er eindigt. Dat past bij -er werkwoord: regelmatig -er.",
+      "uo": [
+       "Nee, dat hoort bij Être: zijn.",
+       "Klopt: regelmatig -er.",
+       "Nee, dat hoort bij Ne ... pas: ontkenning.",
+       "Nee, dat hoort bij Avoir: hebben."
+      ],
+      "uh": "-er werkwoord: regelmatig -er."
+     },
+     {
+      "v": "Het vrouwelijke lidwoord. Welk begrip herken je hier?",
+      "o": [
+       "Les",
+       "Le",
+       "La",
+       "Être"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het vrouwelijke lidwoord. Dat past bij La: vrouwelijk.",
+      "uo": [
+       "Nee, dat hoort bij Les: meervoud.",
+       "Nee, dat hoort bij Le: mannelijk.",
+       "Klopt: vrouwelijk.",
+       "Nee, dat hoort bij Être: zijn."
+      ],
+      "uh": "La: vrouwelijk."
+     },
+     {
+      "v": "De vorm suis bij je hoort bij dit werkwoord. Wat is hier aan de hand?",
+      "o": [
+       "Werkwoordsuitgang",
+       "Le",
+       "Ne ... pas",
+       "Être"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De vorm suis bij je hoort bij dit werkwoord. Dat past bij Être: zijn.",
+      "uo": [
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp.",
+       "Nee, dat hoort bij Le: mannelijk.",
+       "Nee, dat hoort bij Ne ... pas: ontkenning.",
+       "Klopt: zijn."
+      ],
+      "uh": "Être: zijn."
+     },
+     {
+      "v": "Het lidwoord dat bij een mannelijk woord hoort. Welk begrip past hierbij?",
+      "o": [
+       "Le",
+       "Les",
+       "La",
+       "-er werkwoord"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het lidwoord dat bij een mannelijk woord hoort. Dat past bij Le: mannelijk.",
+      "uo": [
+       "Klopt: mannelijk.",
+       "Nee, dat hoort bij Les: meervoud.",
+       "Nee, dat hoort bij La: vrouwelijk.",
+       "Nee, dat hoort bij -er werkwoord: regelmatig -er."
+      ],
+      "uh": "Le: mannelijk."
+     },
+     {
+      "v": "Het werkwoord dat zijn betekent. Om welk begrip gaat het?",
+      "o": [
+       "Avoir",
+       "Être",
+       "Les",
+       "Werkwoordsuitgang"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het werkwoord dat zijn betekent. Dat past bij Être: zijn.",
+      "uo": [
+       "Nee, dat hoort bij Avoir: hebben.",
+       "Klopt: zijn.",
+       "Nee, dat hoort bij Les: meervoud.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp."
+      ],
+      "uh": "Être: zijn."
+     },
+     {
+      "v": "Bij een vrouwelijk woord als table hoort dit lidwoord. Welk begrip herken je hier?",
+      "o": [
+       "Être",
+       "Ne ... pas",
+       "La",
+       "Werkwoordsuitgang"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Bij een vrouwelijk woord als table hoort dit lidwoord. Dat past bij La: vrouwelijk.",
+      "uo": [
+       "Nee, dat hoort bij Être: zijn.",
+       "Nee, dat hoort bij Ne ... pas: ontkenning.",
+       "Klopt: vrouwelijk.",
+       "Nee, dat hoort bij Werkwoordsuitgang: uitgang bij onderwerp."
+      ],
+      "uh": "La: vrouwelijk."
+     },
+     {
+      "v": "Bij je hoort -e en bij nous hoort -ons achter de stam. Wat is hier aan de hand?",
+      "o": [
+       "Les",
+       "Être",
+       "Ne ... pas",
+       "Werkwoordsuitgang"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij je hoort -e en bij nous hoort -ons achter de stam. Dat past bij Werkwoordsuitgang: uitgang bij onderwerp.",
+      "uo": [
+       "Nee, dat hoort bij Les: meervoud.",
+       "Nee, dat hoort bij Être: zijn.",
+       "Nee, dat hoort bij Ne ... pas: ontkenning.",
+       "Klopt: uitgang bij onderwerp."
+      ],
+      "uh": "Werkwoordsuitgang: uitgang bij onderwerp."
      }
     ],
     "begrippen": [

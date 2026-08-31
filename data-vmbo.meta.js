@@ -116,7 +116,7 @@ var VAKKEN_VMBO = [
      "Woordbetekenis uit context",
      "Gatenteksten: idioom en grammatica in context"
     ],
-    "nSv": 10,
+    "nSv": 34,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -131,7 +131,7 @@ var VAKKEN_VMBO = [
      "Gesproken Engels begrijpen",
      "Hoofd- en bijzaken herkennen"
     ],
-    "nSv": 10,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 11,
     "hasSam": true
@@ -146,7 +146,7 @@ var VAKKEN_VMBO = [
      "Reageren in een gesprek",
      "Vragen stellen en beantwoorden"
     ],
-    "nSv": 9,
+    "nSv": 30,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -161,7 +161,7 @@ var VAKKEN_VMBO = [
      "Formele en informele brief",
      "Woordvolgorde en spelling"
     ],
-    "nSv": 9,
+    "nSv": 31,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -192,7 +192,7 @@ var VAKKEN_VMBO = [
      "Woordbetekenis uit context",
      "Gatenteksten: idioom en grammatica in context"
     ],
-    "nSv": 9,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -207,7 +207,7 @@ var VAKKEN_VMBO = [
      "Gesproken Duits begrijpen",
      "Hoofd- en bijzaken herkennen"
     ],
-    "nSv": 9,
+    "nSv": 34,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -222,7 +222,7 @@ var VAKKEN_VMBO = [
      "Reageren in een gesprek",
      "Vragen stellen en beantwoorden"
     ],
-    "nSv": 9,
+    "nSv": 31,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -237,7 +237,7 @@ var VAKKEN_VMBO = [
      "Formele en informele brief",
      "Naamvallen en woordvolgorde"
     ],
-    "nSv": 8,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -268,7 +268,7 @@ var VAKKEN_VMBO = [
      "Woordbetekenis uit context",
      "Gatenteksten: idioom en grammatica in context"
     ],
-    "nSv": 9,
+    "nSv": 36,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -283,7 +283,7 @@ var VAKKEN_VMBO = [
      "Gesproken Frans begrijpen",
      "Hoofd- en bijzaken herkennen"
     ],
-    "nSv": 9,
+    "nSv": 34,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
@@ -298,7 +298,7 @@ var VAKKEN_VMBO = [
      "Reageren in een gesprek",
      "Vragen stellen en beantwoorden"
     ],
-    "nSv": 9,
+    "nSv": 31,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -313,7 +313,7 @@ var VAKKEN_VMBO = [
      "Formele en informele brief",
      "Werkwoordvervoeging en spelling"
     ],
-    "nSv": 8,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true

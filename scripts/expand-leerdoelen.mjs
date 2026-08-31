@@ -209,32 +209,52 @@ function generateSupplement(concepten, authored, perDiff) {
         : [...shuffle(far, c.t.length + 3), ...close];
     return order.slice(0, 3);
   };
-  // Verzamel alle (begrip, situatie)-paren. `vb` mag een string of {s} zijn; een
-  // eventuele d-tag wordt genegeerd, want de generator balanceert de moeilijkheid
-  // zelf. De moeilijkheid bepaalt welke afleiders je krijgt: bij makkelijk verre
-  // begrippen, bij moeilijk juist de verwarbare.
-  const pairs = [];
+  // Woordbegrip (talen): d begint met "Engels/Duits/Frans/Spaans voor ...". Dan
+  // maken we vertaalvragen; verder werken we met situaties (vb).
+  const isVocab = c => /^(Engels|Duits|Frans|Spaans)e?\b/i.test(String(c.d || ''));
+  // Kandidaten: elk bouwt een vraag voor een gegeven moeilijkheid. De moeilijkheid
+  // bepaalt de afleiders (ver = makkelijk, verwarbaar = moeilijk).
+  const cands = [];
   for (const c of cs) {
     const vbs = Array.isArray(c.vb) ? c.vb : (c.vb ? [c.vb] : []);
-    for (const raw of vbs) { const s = typeof raw === 'string' ? raw : (raw && raw.s); if (s) pairs.push({ c, s }); }
+    for (const raw of vbs) {
+      const s = typeof raw === 'string' ? raw : (raw && raw.s); if (!s) continue;
+      cands.push({ build: (d, prompt) => {
+        const ds = distractors(c, d); if (ds.length < 3) return null;
+        return { v: `${_endPunc(s)} ${prompt}`, o: [c.t, ...ds.map(x => x.t)], c: 0, d,
+          u: `${_endPunc(s)} Dat past bij ${c.t}: ${kernFor(c)}.`,
+          uo: [`Klopt: ${kernFor(c)}.`, ...ds.map(x => `Nee, dat hoort bij ${x.t}: ${kernFor(x)}.`)],
+          uh: `${c.t}: ${kernFor(c)}.` };
+      } });
+    }
+    if (isVocab(c)) {
+      cands.push({ build: (d) => {
+        const ds = distractors(c, d); if (ds.length < 3) return null;
+        return { v: `Wat is de vertaling van '${c.t}'?`, o: [kernFor(c), ...ds.map(x => kernFor(x))], c: 0, d,
+          u: `'${c.t}' betekent ${kernFor(c)}.`,
+          uo: [`Klopt: '${c.t}' betekent ${kernFor(c)}.`, ...ds.map(x => `Nee, dat is de betekenis van '${x.t}'.`)],
+          uh: `${c.t}: ${kernFor(c)}.` };
+      } });
+      cands.push({ build: (d) => {
+        const ds = distractors(c, d); if (ds.length < 3) return null;
+        return { v: `Welk woord betekent ${_lc1(kernFor(c))}?`, o: [c.t, ...ds.map(x => x.t)], c: 0, d,
+          u: `'${c.t}' betekent ${kernFor(c)}.`,
+          uo: [`Klopt: '${c.t}' betekent ${kernFor(c)}.`, ...ds.map(x => `Nee, '${x.t}' betekent ${kernFor(x)}.`)],
+          uh: `${c.t}: ${kernFor(c)}.` };
+      } });
+    }
   }
   // Seed met de handgeschreven verdeling, en vul daarna de minst gevulde
   // moeilijkheid steeds als eerste aan (richting 10/10/10).
   const filled = { 1: 0, 2: 0, 3: 0 };
   (authored || []).forEach(q => { if (filled[q.d] != null) filled[q.d]++; });
   let pi = 0;
-  for (const { c, s } of shuffle(pairs, 101)) {
+  for (const cand of shuffle(cands, 101)) {
     const d = [1, 2, 3].reduce((best, x) => (filled[x] < filled[best] ? x : best), 1);
-    const ds = distractors(c, d); if (ds.length < 3) continue;
-    const prompt = _PROMPTS[pi++ % _PROMPTS.length];
+    const q = cand.build(d, _PROMPTS[pi++ % _PROMPTS.length]);
+    if (!q) continue;
     const before = out.length;
-    add({
-      v: `${_endPunc(s)} ${prompt}`,
-      o: [c.t, ...ds.map(x => x.t)], c: 0, d,
-      u: `${_endPunc(s)} Dat past bij ${c.t}: ${kernFor(c)}.`,
-      uo: [`Klopt: ${kernFor(c)}.`, ...ds.map(x => `Nee, dat hoort bij ${x.t}: ${kernFor(x)}.`)],
-      uh: `${c.t}: ${kernFor(c)}.`,
-    });
+    add(q);
     if (out.length > before) filled[d]++;
   }
   return out;

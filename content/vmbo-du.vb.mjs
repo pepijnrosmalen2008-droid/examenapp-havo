@@ -1,0 +1,46 @@
+// VMBO Duits - situaties per begrip. Woordbegrippen krijgen naast de automatische
+// vertaalvraag ook een functie-situatie; grammatica en skills werken via situaties.
+export default {
+  A: {
+    Aber: ['Dit woord zet twee dingen recht tegenover elkaar, net als maar'],
+    Weil: ['Dit woord geeft de reden waarom iets zo is'],
+    Deshalb: ['Dit woord geeft het gevolg van iets aan, net als daarom'],
+    Obwohl: ['Dit woord geeft toe dat iets zo is en toch anders loopt, net als hoewel'],
+    Und: ['Dit woord telt twee dingen simpelweg bij elkaar op'],
+    Auch: ['Dit woord voegt iets extra toe, net als ook'],
+    'Zum Beispiel': ['Deze woorden kondigen een voorbeeld aan'],
+    Skimmen: ['Je leest snel over de Duitse tekst heen voor de grote lijn', 'Even vlug kijken waar een tekst globaal over gaat'],
+    Scannen: ['Je zoekt gericht één jaartal op in de Duitse tekst', 'Snel zoeken naar één bepaald detail in de tekst'],
+    'Valse vriend': ['Het Duitse woord bellen lijkt op bellen, maar betekent blaffen', 'Een woord dat op het Nederlands lijkt maar iets anders betekent'],
+  },
+  B: {
+    Wer: ['Je vraagt naar wie iets deed, naar een persoon'],
+    Was: ['Je vraagt naar wat iets is, naar een ding'],
+    Wo: ['Je vraagt naar de plaats waar iets is'],
+    Wann: ['Je vraagt naar het moment of tijdstip'],
+    Warum: ['Je vraagt naar de reden waarom iets gebeurt'],
+    Wie: ['Je vraagt naar de manier waarop iets gaat'],
+    'Wie viel': ['Je vraagt naar het aantal of de prijs'],
+    Hoofdgedachte: ['Waar het Duitse luisterfragment in de kern over gaat', 'De belangrijkste boodschap van wat je hoort'],
+    Context: ['Uit de rest van de zin raad je een onbekend Duits woord', 'De situatie eromheen die helpt een woord te begrijpen'],
+  },
+  C: {
+    'Tschüss': ['Je zwaait je vriend gedag als je weggaat', 'Wat je informeel zegt bij het afscheid'],
+    'Auf Wiedersehen': ['Je neemt netjes afscheid van een onbekende', 'Wat je zegt om beleefd afscheid te nemen'],
+    'Freut mich': ['Je ontmoet iemand voor het eerst en stelt je voor', 'Wat je zegt bij een kennismaking, aangenaam'],
+    Bitte: ['Iemand bedankt je en jij reageert met graag gedaan', 'Je antwoord als iemand je bedankt, of alsjeblieft bij het aangeven'],
+    Entschuldigung: ['Je bent per ongeluk tegen iemand aangelopen en verontschuldigt je', 'Wat je zegt om sorry te zeggen', 'Je stapt iemand op de tenen en biedt je excuses aan'],
+    Sie: ['Tegen een onbekende volwassene spreek je beleefd aan', 'De beleefde aanspreekvorm voor u', 'Tegen je leraar of een winkelmedewerker gebruik je deze nette vorm'],
+    Du: ['Tegen je vrienden gebruik je de informele aanspreekvorm', 'De informele aanspreekvorm voor jij'],
+  },
+  D: {
+    Der: ['Het lidwoord dat bij een mannelijk woord hoort, zoals bij Mann', 'Het mannelijke lidwoord', 'Bij het woord Tisch (mannelijk) hoort dit lidwoord'],
+    Die: ['Het lidwoord dat bij een vrouwelijk woord of een meervoud hoort', 'Het vrouwelijke lidwoord, ook voor meervoud', 'Bij het woord Frau (vrouwelijk) hoort dit lidwoord'],
+    Das: ['Het lidwoord dat bij een onzijdig woord hoort, zoals bij Kind', 'Het onzijdige lidwoord', 'Bij het woord Auto (onzijdig) hoort dit lidwoord'],
+    Sein: ['Het werkwoord voor zijn, zoals in du bist en er ist', 'Het werkwoord dat zijn betekent', 'De vorm bin bij ich hoort bij dit werkwoord'],
+    Haben: ['Het werkwoord voor hebben, zoals in du hast en er hat', 'Het werkwoord dat hebben betekent', 'De vorm habe bij ich hoort bij dit werkwoord'],
+    Persoonsvorm: ['In een gewone Duitse zin staat dit werkwoord op de tweede plaats', 'Het vervoegde werkwoord, dat op plek twee staat', 'In Ich spiele Fußball is spiele dit zinsdeel'],
+    Inversie: ['Als de zin met Heute begint, wisselen onderwerp en werkwoord van plaats', 'Het omdraaien van onderwerp en werkwoord na een ander zinsbegin', 'In Heute spiele ich staan werkwoord en onderwerp omgedraaid'],
+    Werkwoordsuitgang: ['Bij ich hoort -e en bij du hoort -st achter de stam', 'De uitgang die past bij het onderwerp', 'Van spielen maak je spielst bij du door deze aanpassing'],
+  },
+};
