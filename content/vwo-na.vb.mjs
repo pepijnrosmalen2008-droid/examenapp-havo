@@ -41,4 +41,18 @@ export default {
     'Tweede wet van Newton': ['De nettokracht is massa maal versnelling', 'Meer kracht op dezelfde massa geeft meer versnelling'],
     'Derde wet van Newton': ['Duw je tegen een muur, dan duwt de muur even hard terug', 'Actie en reactie zijn even groot en tegengesteld gericht'],
   },
+  D: {
+    Stroomsterkte: ['De hoeveelheid lading die per seconde door de draad gaat, in ampère', 'I = U/R: uit de spanning en de weerstand bereken je deze'],
+    Spanning: ['De elektrische duw die de stroom aandrijft, in volt', 'De batterij levert dit verschil in energie per lading'],
+    Weerstand: ['Iets dat de stroom tegenwerkt, in ohm', 'Een dunne of lange draad heeft er meer van'],
+    'Wet van Ohm': ['Het verband U = I·R tussen spanning, stroom en weerstand', 'Bij 12 V en 220 Ω volgt de stroom uit deze wet'],
+    Serieschakeling: ['De componenten staan achter elkaar en de stroom is overal gelijk', 'De spanningen over de onderdelen tellen op'],
+    Parallelschakeling: ['De componenten staan naast elkaar en de spanning is overal gelijk', 'De stromen door de takken tellen op'],
+    'Elektrisch veld': ['Rond een lading heerst een gebied dat kracht op andere ladingen uitoefent', 'E = kQ/r²: het veld neemt af met het kwadraat van de afstand'],
+    'Magnetisch veld': ['Rond een stroomdraad ontstaat een gebied dat op een kompas werkt', 'Een bewegende lading wekt dit op'],
+    'Wet van Faraday': ['Een veranderende magnetische flux wekt een spanning op', 'Beweeg een magneet in een spoel en er ontstaat stroom'],
+    'Wet van Lenz': ['De geïnduceerde stroom werkt de verandering die hem veroorzaakt tegen', 'De opgewekte stroom remt de fluxverandering af'],
+    Zelfinductie: ['Een spoel verzet zich tegen een verandering van de stroom', 'Bij het inschakelen loopt de stroom door een spoel traag op'],
+    Condensator: ['Een component die lading en een elektrisch veld opslaat', 'Na de tijd RC is hij tot 63 procent opgeladen'],
+  },
 };
