@@ -195,6 +195,424 @@ var VAKKEN_VMBO = [
        "Instrueren is uitleggen hoe iets moet."
       ],
       "uh": "amuseren: Laten lachen is amuseren (vermaken)."
+     },
+     {
+      "v": "De docent legt uit hoe de waterkringloop werkt. Welk begrip past hierbij?",
+      "o": [
+       "Overtuigen",
+       "Informeren",
+       "Amuseren",
+       "Bijzaak"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De docent legt uit hoe de waterkringloop werkt. Dat past bij Informeren: uitleggen.",
+      "uo": [
+       "Nee, dat hoort bij Overtuigen: mening veranderen.",
+       "Klopt: uitleggen.",
+       "Nee, dat hoort bij Amuseren: vermaken.",
+       "Nee, dat hoort bij Bijzaak: minder belangrijk detail."
+      ],
+      "uh": "Informeren: uitleggen."
+     },
+     {
+      "v": "De mening die iemand in een discussie verdedigt. Om welk begrip gaat het?",
+      "o": [
+       "Feit",
+       "Argument",
+       "Standpunt",
+       "Amuseren"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De mening die iemand in een discussie verdedigt. Dat past bij Standpunt: de verdedigde mening.",
+      "uo": [
+       "Nee, dat hoort bij Feit: controleerbaar en waar.",
+       "Nee, dat hoort bij Argument: reden voor een mening.",
+       "Klopt: de verdedigde mening.",
+       "Nee, dat hoort bij Amuseren: vermaken."
+      ],
+      "uh": "Standpunt: de verdedigde mening."
+     },
+     {
+      "v": "Een reden waarmee je een mening onderbouwt. Welk begrip herken je hier?",
+      "o": [
+       "Amuseren",
+       "Feit",
+       "Standpunt",
+       "Argument"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een reden waarmee je een mening onderbouwt. Dat past bij Argument: reden voor een mening.",
+      "uo": [
+       "Nee, dat hoort bij Amuseren: vermaken.",
+       "Nee, dat hoort bij Feit: controleerbaar en waar.",
+       "Nee, dat hoort bij Standpunt: de verdedigde mening.",
+       "Klopt: reden voor een mening."
+      ],
+      "uh": "Argument: reden voor een mening."
+     },
+     {
+      "v": "Iemand zegt dat vla het lekkerste toetje is. Wat is hier aan de hand?",
+      "o": [
+       "Mening",
+       "Overtuigen",
+       "Amuseren",
+       "Hoofdzaak"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Iemand zegt dat vla het lekkerste toetje is. Dat past bij Mening: persoonlijk oordeel.",
+      "uo": [
+       "Klopt: persoonlijk oordeel.",
+       "Nee, dat hoort bij Overtuigen: mening veranderen.",
+       "Nee, dat hoort bij Amuseren: vermaken.",
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste."
+      ],
+      "uh": "Mening: persoonlijk oordeel."
+     },
+     {
+      "v": "Een klein, onbelangrijk detail dat je makkelijk kunt weglaten. Welk begrip past hierbij?",
+      "o": [
+       "Hoofdzaak",
+       "Bijzaak",
+       "Argument",
+       "Feit"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een klein, onbelangrijk detail dat je makkelijk kunt weglaten. Dat past bij Bijzaak: minder belangrijk detail.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste.",
+       "Klopt: minder belangrijk detail.",
+       "Nee, dat hoort bij Argument: reden voor een mening.",
+       "Nee, dat hoort bij Feit: controleerbaar en waar."
+      ],
+      "uh": "Bijzaak: minder belangrijk detail."
+     },
+     {
+      "v": "Water kookt bij honderd graden, dat kun je nameten. Om welk begrip gaat het?",
+      "o": [
+       "Informeren",
+       "Hoofdzaak",
+       "Feit",
+       "Bijzaak"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Water kookt bij honderd graden, dat kun je nameten. Dat past bij Feit: controleerbaar en waar.",
+      "uo": [
+       "Nee, dat hoort bij Informeren: uitleggen.",
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste.",
+       "Klopt: controleerbaar en waar.",
+       "Nee, dat hoort bij Bijzaak: minder belangrijk detail."
+      ],
+      "uh": "Feit: controleerbaar en waar."
+     },
+     {
+      "v": "De reclame wil je laten geloven dat dit merk het beste is. Welk begrip herken je hier?",
+      "o": [
+       "Argument",
+       "Informeren",
+       "Hoofdzaak",
+       "Overtuigen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De reclame wil je laten geloven dat dit merk het beste is. Dat past bij Overtuigen: mening veranderen.",
+      "uo": [
+       "Nee, dat hoort bij Argument: reden voor een mening.",
+       "Nee, dat hoort bij Informeren: uitleggen.",
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste.",
+       "Klopt: mening veranderen."
+      ],
+      "uh": "Overtuigen: mening veranderen."
+     },
+     {
+      "v": "Wat de spreker met zijn verhaal wil bereiken. Wat is hier aan de hand?",
+      "o": [
+       "Spreekdoel",
+       "Bijzaak",
+       "Amuseren",
+       "Mening"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Wat de spreker met zijn verhaal wil bereiken. Dat past bij Spreekdoel: doel van de spreker.",
+      "uo": [
+       "Klopt: doel van de spreker.",
+       "Nee, dat hoort bij Bijzaak: minder belangrijk detail.",
+       "Nee, dat hoort bij Amuseren: vermaken.",
+       "Nee, dat hoort bij Mening: persoonlijk oordeel."
+      ],
+      "uh": "Spreekdoel: doel van de spreker."
+     },
+     {
+      "v": "Iemand iets uitleggen of vertellen met feiten. Welk begrip past hierbij?",
+      "o": [
+       "Overtuigen",
+       "Informeren",
+       "Amuseren",
+       "Bijzaak"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Iemand iets uitleggen of vertellen met feiten. Dat past bij Informeren: uitleggen.",
+      "uo": [
+       "Nee, dat hoort bij Overtuigen: mening veranderen.",
+       "Klopt: uitleggen.",
+       "Nee, dat hoort bij Amuseren: vermaken.",
+       "Nee, dat hoort bij Bijzaak: minder belangrijk detail."
+      ],
+      "uh": "Informeren: uitleggen."
+     },
+     {
+      "v": "Hij verdedigt dat huiswerk afgeschaft moet worden. Om welk begrip gaat het?",
+      "o": [
+       "Feit",
+       "Hoofdzaak",
+       "Standpunt",
+       "Amuseren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Hij verdedigt dat huiswerk afgeschaft moet worden. Dat past bij Standpunt: de verdedigde mening.",
+      "uo": [
+       "Nee, dat hoort bij Feit: controleerbaar en waar.",
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste.",
+       "Klopt: de verdedigde mening.",
+       "Nee, dat hoort bij Amuseren: vermaken."
+      ],
+      "uh": "Standpunt: de verdedigde mening."
+     },
+     {
+      "v": "Het publiek vermaken. Welk begrip herken je hier?",
+      "o": [
+       "Argument",
+       "Informeren",
+       "Hoofdzaak",
+       "Amuseren"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het publiek vermaken. Dat past bij Amuseren: vermaken.",
+      "uo": [
+       "Nee, dat hoort bij Argument: reden voor een mening.",
+       "Nee, dat hoort bij Informeren: uitleggen.",
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste.",
+       "Klopt: vermaken."
+      ],
+      "uh": "Amuseren: vermaken."
+     },
+     {
+      "v": "Het belangrijkste punt van een verhaal. Wat is hier aan de hand?",
+      "o": [
+       "Hoofdzaak",
+       "Bijzaak",
+       "Feit",
+       "Amuseren"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het belangrijkste punt van een verhaal. Dat past bij Hoofdzaak: het belangrijkste.",
+      "uo": [
+       "Klopt: het belangrijkste.",
+       "Nee, dat hoort bij Bijzaak: minder belangrijk detail.",
+       "Nee, dat hoort bij Feit: controleerbaar en waar.",
+       "Nee, dat hoort bij Amuseren: vermaken."
+      ],
+      "uh": "Hoofdzaak: het belangrijkste."
+     },
+     {
+      "v": "De belangrijkste boodschap van het nieuwsbericht in één zin. Welk begrip past hierbij?",
+      "o": [
+       "Argument",
+       "Hoofdzaak",
+       "Feit",
+       "Amuseren"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De belangrijkste boodschap van het nieuwsbericht in één zin. Dat past bij Hoofdzaak: het belangrijkste.",
+      "uo": [
+       "Nee, dat hoort bij Argument: reden voor een mening.",
+       "Klopt: het belangrijkste.",
+       "Nee, dat hoort bij Feit: controleerbaar en waar.",
+       "Nee, dat hoort bij Amuseren: vermaken."
+      ],
+      "uh": "Hoofdzaak: het belangrijkste."
+     },
+     {
+      "v": "Volgens mij is de zomer het mooiste seizoen. Om welk begrip gaat het?",
+      "o": [
+       "Standpunt",
+       "Feit",
+       "Mening",
+       "Amuseren"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Volgens mij is de zomer het mooiste seizoen. Dat past bij Mening: persoonlijk oordeel.",
+      "uo": [
+       "Nee, dat hoort bij Standpunt: de verdedigde mening.",
+       "Nee, dat hoort bij Feit: controleerbaar en waar.",
+       "Klopt: persoonlijk oordeel.",
+       "Nee, dat hoort bij Amuseren: vermaken."
+      ],
+      "uh": "Mening: persoonlijk oordeel."
+     },
+     {
+      "v": "Iets wat je kunt controleren en wat voor iedereen waar is. Welk begrip herken je hier?",
+      "o": [
+       "Amuseren",
+       "Mening",
+       "Overtuigen",
+       "Feit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Iets wat je kunt controleren en wat voor iedereen waar is. Dat past bij Feit: controleerbaar en waar.",
+      "uo": [
+       "Nee, dat hoort bij Amuseren: vermaken.",
+       "Nee, dat hoort bij Mening: persoonlijk oordeel.",
+       "Nee, dat hoort bij Overtuigen: mening veranderen.",
+       "Klopt: controleerbaar en waar."
+      ],
+      "uh": "Feit: controleerbaar en waar."
+     },
+     {
+      "v": "De spreker wil dat je iets gaat doen, geloven of weten. Wat is hier aan de hand?",
+      "o": [
+       "Spreekdoel",
+       "Bijzaak",
+       "Amuseren",
+       "Mening"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De spreker wil dat je iets gaat doen, geloven of weten. Dat past bij Spreekdoel: doel van de spreker.",
+      "uo": [
+       "Klopt: doel van de spreker.",
+       "Nee, dat hoort bij Bijzaak: minder belangrijk detail.",
+       "Nee, dat hoort bij Amuseren: vermaken.",
+       "Nee, dat hoort bij Mening: persoonlijk oordeel."
+      ],
+      "uh": "Spreekdoel: doel van de spreker."
+     },
+     {
+      "v": "De cabaretier vertelt grappen om het publiek te laten lachen. Welk begrip past hierbij?",
+      "o": [
+       "Informeren",
+       "Amuseren",
+       "Hoofdzaak",
+       "Argument"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De cabaretier vertelt grappen om het publiek te laten lachen. Dat past bij Amuseren: vermaken.",
+      "uo": [
+       "Nee, dat hoort bij Informeren: uitleggen.",
+       "Klopt: vermaken.",
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste.",
+       "Nee, dat hoort bij Argument: reden voor een mening."
+      ],
+      "uh": "Amuseren: vermaken."
+     },
+     {
+      "v": "Ze zegt dat de school later moet beginnen, want tieners slapen langer. Om welk begrip gaat het?",
+      "o": [
+       "Standpunt",
+       "Feit",
+       "Argument",
+       "Amuseren"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Ze zegt dat de school later moet beginnen, want tieners slapen langer. Dat past bij Argument: reden voor een mening.",
+      "uo": [
+       "Nee, dat hoort bij Standpunt: de verdedigde mening.",
+       "Nee, dat hoort bij Feit: controleerbaar en waar.",
+       "Klopt: reden voor een mening.",
+       "Nee, dat hoort bij Amuseren: vermaken."
+      ],
+      "uh": "Argument: reden voor een mening."
+     },
+     {
+      "v": "In de krant staat dat Amsterdam de hoofdstad van Nederland is. Welk begrip herken je hier?",
+      "o": [
+       "Bijzaak",
+       "Hoofdzaak",
+       "Informeren",
+       "Feit"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In de krant staat dat Amsterdam de hoofdstad van Nederland is. Dat past bij Feit: controleerbaar en waar.",
+      "uo": [
+       "Nee, dat hoort bij Bijzaak: minder belangrijk detail.",
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste.",
+       "Nee, dat hoort bij Informeren: uitleggen.",
+       "Klopt: controleerbaar en waar."
+      ],
+      "uh": "Feit: controleerbaar en waar."
+     },
+     {
+      "v": "Een minder belangrijk detail naast de kern. Wat is hier aan de hand?",
+      "o": [
+       "Bijzaak",
+       "Hoofdzaak",
+       "Feit",
+       "Amuseren"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een minder belangrijk detail naast de kern. Dat past bij Bijzaak: minder belangrijk detail.",
+      "uo": [
+       "Klopt: minder belangrijk detail.",
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste.",
+       "Nee, dat hoort bij Feit: controleerbaar en waar.",
+       "Nee, dat hoort bij Amuseren: vermaken."
+      ],
+      "uh": "Bijzaak: minder belangrijk detail."
+     },
+     {
+      "v": "Een persoonlijk oordeel dat niet te bewijzen is. Welk begrip past hierbij?",
+      "o": [
+       "Feit",
+       "Mening",
+       "Hoofdzaak",
+       "Standpunt"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een persoonlijk oordeel dat niet te bewijzen is. Dat past bij Mening: persoonlijk oordeel.",
+      "uo": [
+       "Nee, dat hoort bij Feit: controleerbaar en waar.",
+       "Klopt: persoonlijk oordeel.",
+       "Nee, dat hoort bij Hoofdzaak: het belangrijkste.",
+       "Nee, dat hoort bij Standpunt: de verdedigde mening."
+      ],
+      "uh": "Mening: persoonlijk oordeel."
+     },
+     {
+      "v": "Iemands mening proberen te veranderen. Om welk begrip gaat het?",
+      "o": [
+       "Amuseren",
+       "Bijzaak",
+       "Overtuigen",
+       "Mening"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Iemands mening proberen te veranderen. Dat past bij Overtuigen: mening veranderen.",
+      "uo": [
+       "Nee, dat hoort bij Amuseren: vermaken.",
+       "Nee, dat hoort bij Bijzaak: minder belangrijk detail.",
+       "Klopt: mening veranderen.",
+       "Nee, dat hoort bij Mening: persoonlijk oordeel."
+      ],
+      "uh": "Overtuigen: mening veranderen."
      }
     ],
     "begrippen": [
@@ -406,6 +824,462 @@ var VAKKEN_VMBO = [
        "Klopt: je gebruikt nette, formele taal."
       ],
       "uh": "formele taal: Je gebruikt nette, formele taal."
+     },
+     {
+      "v": "Een punt waarmee je iemands mening bestrijdt. Welk begrip past hierbij?",
+      "o": [
+       "Tegenargument",
+       "Argument",
+       "Register",
+       "Standpunt"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een punt waarmee je iemands mening bestrijdt. Dat past bij Tegenargument: reden tegen.",
+      "uo": [
+       "Klopt: reden tegen.",
+       "Nee, dat hoort bij Argument: reden voor je mening.",
+       "Nee, dat hoort bij Register: passende taalstijl.",
+       "Nee, dat hoort bij Standpunt: verdedigde mening."
+      ],
+      "uh": "Tegenargument: reden tegen."
+     },
+     {
+      "v": "De ander brengt in dat het juist duurder wordt. Om welk begrip gaat het?",
+      "o": [
+       "Argument",
+       "Tegenargument",
+       "Register",
+       "Standpunt"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De ander brengt in dat het juist duurder wordt. Dat past bij Tegenargument: reden tegen.",
+      "uo": [
+       "Nee, dat hoort bij Argument: reden voor je mening.",
+       "Klopt: reden tegen.",
+       "Nee, dat hoort bij Register: passende taalstijl.",
+       "Nee, dat hoort bij Standpunt: verdedigde mening."
+      ],
+      "uh": "Tegenargument: reden tegen."
+     },
+     {
+      "v": "Met sterke argumenten probeer je de ander mee te krijgen. Welk begrip herken je hier?",
+      "o": [
+       "Informeel",
+       "Actief luisteren",
+       "Overtuigen",
+       "Formeel"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Met sterke argumenten probeer je de ander mee te krijgen. Dat past bij Overtuigen: de ander winnen.",
+      "uo": [
+       "Nee, dat hoort bij Informeel: los, tegen vrienden.",
+       "Nee, dat hoort bij Actief luisteren: op de ander ingaan.",
+       "Klopt: de ander winnen.",
+       "Nee, dat hoort bij Formeel: net en zakelijk."
+      ],
+      "uh": "Overtuigen: de ander winnen."
+     },
+     {
+      "v": "Niet alleen wachten op je beurt, maar meedenken. Wat is hier aan de hand?",
+      "o": [
+       "Argument",
+       "Register",
+       "Formeel",
+       "Actief luisteren"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Niet alleen wachten op je beurt, maar meedenken. Dat past bij Actief luisteren: op de ander ingaan.",
+      "uo": [
+       "Nee, dat hoort bij Argument: reden voor je mening.",
+       "Nee, dat hoort bij Register: passende taalstijl.",
+       "Nee, dat hoort bij Formeel: net en zakelijk.",
+       "Klopt: op de ander ingaan."
+      ],
+      "uh": "Actief luisteren: op de ander ingaan."
+     },
+     {
+      "v": "Zij verdedigt in het debat dat schooluniformen goed zijn. Welk begrip past hierbij?",
+      "o": [
+       "Standpunt",
+       "Actief luisteren",
+       "Informeel",
+       "Tegenargument"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Zij verdedigt in het debat dat schooluniformen goed zijn. Dat past bij Standpunt: verdedigde mening.",
+      "uo": [
+       "Klopt: verdedigde mening.",
+       "Nee, dat hoort bij Actief luisteren: op de ander ingaan.",
+       "Nee, dat hoort bij Informeel: los, tegen vrienden.",
+       "Nee, dat hoort bij Tegenargument: reden tegen."
+      ],
+      "uh": "Standpunt: verdedigde mening."
+     },
+     {
+      "v": "Echt luisteren en op de ander reageren. Om welk begrip gaat het?",
+      "o": [
+       "Register",
+       "Actief luisteren",
+       "Formeel",
+       "Argument"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Echt luisteren en op de ander reageren. Dat past bij Actief luisteren: op de ander ingaan.",
+      "uo": [
+       "Nee, dat hoort bij Register: passende taalstijl.",
+       "Klopt: op de ander ingaan.",
+       "Nee, dat hoort bij Formeel: net en zakelijk.",
+       "Nee, dat hoort bij Argument: reden voor je mening."
+      ],
+      "uh": "Actief luisteren: op de ander ingaan."
+     },
+     {
+      "v": "Hij zegt: minder auto's, want dat is beter voor het milieu. Welk begrip herken je hier?",
+      "o": [
+       "Formeel",
+       "Actief luisteren",
+       "Argument",
+       "Register"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Hij zegt: minder auto's, want dat is beter voor het milieu. Dat past bij Argument: reden voor je mening.",
+      "uo": [
+       "Nee, dat hoort bij Formeel: net en zakelijk.",
+       "Nee, dat hoort bij Actief luisteren: op de ander ingaan.",
+       "Klopt: reden voor je mening.",
+       "Nee, dat hoort bij Register: passende taalstijl."
+      ],
+      "uh": "Argument: reden voor je mening."
+     },
+     {
+      "v": "Tegen je vrienden praat je los, met woorden als joh en gaaf. Wat is hier aan de hand?",
+      "o": [
+       "Argument",
+       "Formeel",
+       "Register",
+       "Informeel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Tegen je vrienden praat je los, met woorden als joh en gaaf. Dat past bij Informeel: los, tegen vrienden.",
+      "uo": [
+       "Nee, dat hoort bij Argument: reden voor je mening.",
+       "Nee, dat hoort bij Formeel: net en zakelijk.",
+       "Nee, dat hoort bij Register: passende taalstijl.",
+       "Klopt: los, tegen vrienden."
+      ],
+      "uh": "Informeel: los, tegen vrienden."
+     },
+     {
+      "v": "Zorgen dat iemand het uiteindelijk met je eens is. Welk begrip past hierbij?",
+      "o": [
+       "Overtuigen",
+       "Actief luisteren",
+       "Informeel",
+       "Formeel"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Zorgen dat iemand het uiteindelijk met je eens is. Dat past bij Overtuigen: de ander winnen.",
+      "uo": [
+       "Klopt: de ander winnen.",
+       "Nee, dat hoort bij Actief luisteren: op de ander ingaan.",
+       "Nee, dat hoort bij Informeel: los, tegen vrienden.",
+       "Nee, dat hoort bij Formeel: net en zakelijk."
+      ],
+      "uh": "Overtuigen: de ander winnen."
+     },
+     {
+      "v": "De u-vorm, geen straattaal, keurige zinnen. Om welk begrip gaat het?",
+      "o": [
+       "Informeel",
+       "Formeel",
+       "Actief luisteren",
+       "Standpunt"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De u-vorm, geen straattaal, keurige zinnen. Dat past bij Formeel: net en zakelijk.",
+      "uo": [
+       "Nee, dat hoort bij Informeel: los, tegen vrienden.",
+       "Klopt: net en zakelijk.",
+       "Nee, dat hoort bij Actief luisteren: op de ander ingaan.",
+       "Nee, dat hoort bij Standpunt: verdedigde mening."
+      ],
+      "uh": "Formeel: net en zakelijk."
+     },
+     {
+      "v": "Waarmee je onderbouwt waarom je gelijk hebt. Welk begrip herken je hier?",
+      "o": [
+       "Formeel",
+       "Actief luisteren",
+       "Argument",
+       "Register"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Waarmee je onderbouwt waarom je gelijk hebt. Dat past bij Argument: reden voor je mening.",
+      "uo": [
+       "Nee, dat hoort bij Formeel: net en zakelijk.",
+       "Nee, dat hoort bij Actief luisteren: op de ander ingaan.",
+       "Klopt: reden voor je mening.",
+       "Nee, dat hoort bij Register: passende taalstijl."
+      ],
+      "uh": "Argument: reden voor je mening."
+     },
+     {
+      "v": "Een reden die je eigen mening ondersteunt. Wat is hier aan de hand?",
+      "o": [
+       "Register",
+       "Standpunt",
+       "Tegenargument",
+       "Argument"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een reden die je eigen mening ondersteunt. Dat past bij Argument: reden voor je mening.",
+      "uo": [
+       "Nee, dat hoort bij Register: passende taalstijl.",
+       "Nee, dat hoort bij Standpunt: verdedigde mening.",
+       "Nee, dat hoort bij Tegenargument: reden tegen.",
+       "Klopt: reden voor je mening."
+      ],
+      "uh": "Argument: reden voor je mening."
+     },
+     {
+      "v": "De ander van je mening zien te winnen. Welk begrip past hierbij?",
+      "o": [
+       "Overtuigen",
+       "Standpunt",
+       "Actief luisteren",
+       "Formeel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De ander van je mening zien te winnen. Dat past bij Overtuigen: de ander winnen.",
+      "uo": [
+       "Klopt: de ander winnen.",
+       "Nee, dat hoort bij Standpunt: verdedigde mening.",
+       "Nee, dat hoort bij Actief luisteren: op de ander ingaan.",
+       "Nee, dat hoort bij Formeel: net en zakelijk."
+      ],
+      "uh": "Overtuigen: de ander winnen."
+     },
+     {
+      "v": "Aanpassen hoe je praat aan met wie je praat. Om welk begrip gaat het?",
+      "o": [
+       "Overtuigen",
+       "Register",
+       "Argument",
+       "Informeel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Aanpassen hoe je praat aan met wie je praat. Dat past bij Register: passende taalstijl.",
+      "uo": [
+       "Nee, dat hoort bij Overtuigen: de ander winnen.",
+       "Klopt: passende taalstijl.",
+       "Nee, dat hoort bij Argument: reden voor je mening.",
+       "Nee, dat hoort bij Informeel: los, tegen vrienden."
+      ],
+      "uh": "Register: passende taalstijl."
+     },
+     {
+      "v": "De stijl van taal die past bij de situatie. Welk begrip herken je hier?",
+      "o": [
+       "Tegenargument",
+       "Formeel",
+       "Register",
+       "Informeel"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De stijl van taal die past bij de situatie. Dat past bij Register: passende taalstijl.",
+      "uo": [
+       "Nee, dat hoort bij Tegenargument: reden tegen.",
+       "Nee, dat hoort bij Formeel: net en zakelijk.",
+       "Klopt: passende taalstijl.",
+       "Nee, dat hoort bij Informeel: los, tegen vrienden."
+      ],
+      "uh": "Register: passende taalstijl."
+     },
+     {
+      "v": "Je kiest een andere toon bij je oma dan bij je vrienden. Wat is hier aan de hand?",
+      "o": [
+       "Informeel",
+       "Formeel",
+       "Tegenargument",
+       "Register"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je kiest een andere toon bij je oma dan bij je vrienden. Dat past bij Register: passende taalstijl.",
+      "uo": [
+       "Nee, dat hoort bij Informeel: los, tegen vrienden.",
+       "Nee, dat hoort bij Formeel: net en zakelijk.",
+       "Nee, dat hoort bij Tegenargument: reden tegen.",
+       "Klopt: passende taalstijl."
+      ],
+      "uh": "Register: passende taalstijl."
+     },
+     {
+      "v": "Nette taal die past bij onbekenden of een baas. Welk begrip past hierbij?",
+      "o": [
+       "Formeel",
+       "Tegenargument",
+       "Standpunt",
+       "Argument"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Nette taal die past bij onbekenden of een baas. Dat past bij Formeel: net en zakelijk.",
+      "uo": [
+       "Klopt: net en zakelijk.",
+       "Nee, dat hoort bij Tegenargument: reden tegen.",
+       "Nee, dat hoort bij Standpunt: verdedigde mening.",
+       "Nee, dat hoort bij Argument: reden voor je mening."
+      ],
+      "uh": "Formeel: net en zakelijk."
+     },
+     {
+      "v": "Een reden die tegen een standpunt ingaat. Om welk begrip gaat het?",
+      "o": [
+       "Argument",
+       "Tegenargument",
+       "Overtuigen",
+       "Standpunt"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een reden die tegen een standpunt ingaat. Dat past bij Tegenargument: reden tegen.",
+      "uo": [
+       "Nee, dat hoort bij Argument: reden voor je mening.",
+       "Klopt: reden tegen.",
+       "Nee, dat hoort bij Overtuigen: de ander winnen.",
+       "Nee, dat hoort bij Standpunt: verdedigde mening."
+      ],
+      "uh": "Tegenargument: reden tegen."
+     },
+     {
+      "v": "De losse taal die je onder vrienden gebruikt. Welk begrip herken je hier?",
+      "o": [
+       "Register",
+       "Formeel",
+       "Informeel",
+       "Argument"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De losse taal die je onder vrienden gebruikt. Dat past bij Informeel: los, tegen vrienden.",
+      "uo": [
+       "Nee, dat hoort bij Register: passende taalstijl.",
+       "Nee, dat hoort bij Formeel: net en zakelijk.",
+       "Klopt: los, tegen vrienden.",
+       "Nee, dat hoort bij Argument: reden voor je mening."
+      ],
+      "uh": "Informeel: los, tegen vrienden."
+     },
+     {
+      "v": "Het punt dat jij verdedigt met argumenten. Wat is hier aan de hand?",
+      "o": [
+       "Tegenargument",
+       "Actief luisteren",
+       "Informeel",
+       "Standpunt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het punt dat jij verdedigt met argumenten. Dat past bij Standpunt: verdedigde mening.",
+      "uo": [
+       "Nee, dat hoort bij Tegenargument: reden tegen.",
+       "Nee, dat hoort bij Actief luisteren: op de ander ingaan.",
+       "Nee, dat hoort bij Informeel: los, tegen vrienden.",
+       "Klopt: verdedigde mening."
+      ],
+      "uh": "Standpunt: verdedigde mening."
+     },
+     {
+      "v": "In een sollicitatiebrief gebruik je nette, zakelijke taal. Welk begrip past hierbij?",
+      "o": [
+       "Formeel",
+       "Informeel",
+       "Register",
+       "Argument"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "In een sollicitatiebrief gebruik je nette, zakelijke taal. Dat past bij Formeel: net en zakelijk.",
+      "uo": [
+       "Klopt: net en zakelijk.",
+       "Nee, dat hoort bij Informeel: los, tegen vrienden.",
+       "Nee, dat hoort bij Register: passende taalstijl.",
+       "Nee, dat hoort bij Argument: reden voor je mening."
+      ],
+      "uh": "Formeel: net en zakelijk."
+     },
+     {
+      "v": "De mening die je in een discussie inneemt. Om welk begrip gaat het?",
+      "o": [
+       "Argument",
+       "Standpunt",
+       "Formeel",
+       "Register"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De mening die je in een discussie inneemt. Dat past bij Standpunt: verdedigde mening.",
+      "uo": [
+       "Nee, dat hoort bij Argument: reden voor je mening.",
+       "Klopt: verdedigde mening.",
+       "Nee, dat hoort bij Formeel: net en zakelijk.",
+       "Nee, dat hoort bij Register: passende taalstijl."
+      ],
+      "uh": "Standpunt: verdedigde mening."
+     },
+     {
+      "v": "De jij-vorm, afkortingen en spreektaal. Welk begrip herken je hier?",
+      "o": [
+       "Standpunt",
+       "Actief luisteren",
+       "Informeel",
+       "Tegenargument"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De jij-vorm, afkortingen en spreektaal. Dat past bij Informeel: los, tegen vrienden.",
+      "uo": [
+       "Nee, dat hoort bij Standpunt: verdedigde mening.",
+       "Nee, dat hoort bij Actief luisteren: op de ander ingaan.",
+       "Klopt: los, tegen vrienden.",
+       "Nee, dat hoort bij Tegenargument: reden tegen."
+      ],
+      "uh": "Informeel: los, tegen vrienden."
+     },
+     {
+      "v": "Je knikt, vraagt door en gaat in op wat de ander zegt. Wat is hier aan de hand?",
+      "o": [
+       "Standpunt",
+       "Register",
+       "Informeel",
+       "Actief luisteren"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je knikt, vraagt door en gaat in op wat de ander zegt. Dat past bij Actief luisteren: op de ander ingaan.",
+      "uo": [
+       "Nee, dat hoort bij Standpunt: verdedigde mening.",
+       "Nee, dat hoort bij Register: passende taalstijl.",
+       "Nee, dat hoort bij Informeel: los, tegen vrienden.",
+       "Klopt: op de ander ingaan."
+      ],
+      "uh": "Actief luisteren: op de ander ingaan."
      }
     ],
     "begrippen": [
@@ -630,6 +1504,424 @@ var VAKKEN_VMBO = [
        "Een gevolg is \"dus\"."
       ],
       "uh": "een voorbeeld: \"bijvoorbeeld\" leidt een voorbeeld in."
+     },
+     {
+      "v": "Een stukje tekst over één deelonderwerp, met een witregel ervoor. Welk begrip past hierbij?",
+      "o": [
+       "Kernzin",
+       "Alinea",
+       "Tekstdoel",
+       "Instruerend"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een stukje tekst over één deelonderwerp, met een witregel ervoor. Dat past bij Alinea: stuk met één onderwerp.",
+      "uo": [
+       "Nee, dat hoort bij Kernzin: hoofdgedachte alinea.",
+       "Klopt: stuk met één onderwerp.",
+       "Nee, dat hoort bij Tekstdoel: doel van de tekst.",
+       "Nee, dat hoort bij Instruerend: stap voor stap."
+      ],
+      "uh": "Alinea: stuk met één onderwerp."
+     },
+     {
+      "v": "Het woordje daarom laat zien dat er een gevolg komt. Om welk begrip gaat het?",
+      "o": [
+       "Activerend",
+       "Overtuigend",
+       "Signaalwoord",
+       "Hoofdgedachte"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het woordje daarom laat zien dat er een gevolg komt. Dat past bij Signaalwoord: toont het verband.",
+      "uo": [
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Nee, dat hoort bij Overtuigend: mening veranderen.",
+       "Klopt: toont het verband.",
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap."
+      ],
+      "uh": "Signaalwoord: toont het verband."
+     },
+     {
+      "v": "Het woordje maar laat zien dat er een tegenstelling komt. Welk begrip herken je hier?",
+      "o": [
+       "Overtuigend",
+       "Verwijswoord",
+       "Activerend",
+       "Signaalwoord"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het woordje maar laat zien dat er een tegenstelling komt. Dat past bij Signaalwoord: toont het verband.",
+      "uo": [
+       "Nee, dat hoort bij Overtuigend: mening veranderen.",
+       "Nee, dat hoort bij Verwijswoord: wijst terug.",
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Klopt: toont het verband."
+      ],
+      "uh": "Signaalwoord: toont het verband."
+     },
+     {
+      "v": "Een tekst legt met feiten uit hoe vulkanen werken. Wat is hier aan de hand?",
+      "o": [
+       "Informerend",
+       "Tekstdoel",
+       "Hoofdgedachte",
+       "Verwijswoord"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een tekst legt met feiten uit hoe vulkanen werken. Dat past bij Informerend: uitleggen met feiten.",
+      "uo": [
+       "Klopt: uitleggen met feiten.",
+       "Nee, dat hoort bij Tekstdoel: doel van de tekst.",
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap.",
+       "Nee, dat hoort bij Verwijswoord: wijst terug."
+      ],
+      "uh": "Informerend: uitleggen met feiten."
+     },
+     {
+      "v": "Een tekst die uitlegt hoe je iets moet doen. Welk begrip past hierbij?",
+      "o": [
+       "Informerend",
+       "Instruerend",
+       "Activerend",
+       "Verwijswoord"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een tekst die uitlegt hoe je iets moet doen. Dat past bij Instruerend: stap voor stap.",
+      "uo": [
+       "Nee, dat hoort bij Informerend: uitleggen met feiten.",
+       "Klopt: stap voor stap.",
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Nee, dat hoort bij Verwijswoord: wijst terug."
+      ],
+      "uh": "Instruerend: stap voor stap."
+     },
+     {
+      "v": "De ene tekst wil informeren, de andere overtuigen of vermaken. Om welk begrip gaat het?",
+      "o": [
+       "Informerend",
+       "Activerend",
+       "Tekstdoel",
+       "Hoofdgedachte"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De ene tekst wil informeren, de andere overtuigen of vermaken. Dat past bij Tekstdoel: doel van de tekst.",
+      "uo": [
+       "Nee, dat hoort bij Informerend: uitleggen met feiten.",
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Klopt: doel van de tekst.",
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap."
+      ],
+      "uh": "Tekstdoel: doel van de tekst."
+     },
+     {
+      "v": "De ene zin waarin de hoofdgedachte van de alinea staat. Welk begrip herken je hier?",
+      "o": [
+       "Tekstdoel",
+       "Alinea",
+       "Overtuigend",
+       "Kernzin"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De ene zin waarin de hoofdgedachte van de alinea staat. Dat past bij Kernzin: hoofdgedachte alinea.",
+      "uo": [
+       "Nee, dat hoort bij Tekstdoel: doel van de tekst.",
+       "Nee, dat hoort bij Alinea: stuk met één onderwerp.",
+       "Nee, dat hoort bij Overtuigend: mening veranderen.",
+       "Klopt: hoofdgedachte alinea."
+      ],
+      "uh": "Kernzin: hoofdgedachte alinea."
+     },
+     {
+      "v": "Een woord dat terugwijst naar iets eerder in de tekst. Wat is hier aan de hand?",
+      "o": [
+       "Verwijswoord",
+       "Overtuigend",
+       "Activerend",
+       "Hoofdgedachte"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een woord dat terugwijst naar iets eerder in de tekst. Dat past bij Verwijswoord: wijst terug.",
+      "uo": [
+       "Klopt: wijst terug.",
+       "Nee, dat hoort bij Overtuigend: mening veranderen.",
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap."
+      ],
+      "uh": "Verwijswoord: wijst terug."
+     },
+     {
+      "v": "Een tekstdeel dat één onderwerp behandelt. Welk begrip past hierbij?",
+      "o": [
+       "Kernzin",
+       "Alinea",
+       "Tekstdoel",
+       "Instruerend"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een tekstdeel dat één onderwerp behandelt. Dat past bij Alinea: stuk met één onderwerp.",
+      "uo": [
+       "Nee, dat hoort bij Kernzin: hoofdgedachte alinea.",
+       "Klopt: stuk met één onderwerp.",
+       "Nee, dat hoort bij Tekstdoel: doel van de tekst.",
+       "Nee, dat hoort bij Instruerend: stap voor stap."
+      ],
+      "uh": "Alinea: stuk met één onderwerp."
+     },
+     {
+      "v": "Een woord dat het verband tussen zinnen aangeeft. Om welk begrip gaat het?",
+      "o": [
+       "Activerend",
+       "Overtuigend",
+       "Signaalwoord",
+       "Hoofdgedachte"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een woord dat het verband tussen zinnen aangeeft. Dat past bij Signaalwoord: toont het verband.",
+      "uo": [
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Nee, dat hoort bij Overtuigend: mening veranderen.",
+       "Klopt: toont het verband.",
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap."
+      ],
+      "uh": "Signaalwoord: toont het verband."
+     },
+     {
+      "v": "De belangrijkste boodschap van de hele tekst. Welk begrip herken je hier?",
+      "o": [
+       "Activerend",
+       "Kernzin",
+       "Alinea",
+       "Hoofdgedachte"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De belangrijkste boodschap van de hele tekst. Dat past bij Hoofdgedachte: belangrijkste boodschap.",
+      "uo": [
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Nee, dat hoort bij Kernzin: hoofdgedachte alinea.",
+       "Nee, dat hoort bij Alinea: stuk met één onderwerp.",
+       "Klopt: belangrijkste boodschap."
+      ],
+      "uh": "Hoofdgedachte: belangrijkste boodschap."
+     },
+     {
+      "v": "Een gebruiksaanwijzing legt stap voor stap uit hoe iets werkt. Wat is hier aan de hand?",
+      "o": [
+       "Instruerend",
+       "Tekstdoel",
+       "Hoofdgedachte",
+       "Verwijswoord"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een gebruiksaanwijzing legt stap voor stap uit hoe iets werkt. Dat past bij Instruerend: stap voor stap.",
+      "uo": [
+       "Klopt: stap voor stap.",
+       "Nee, dat hoort bij Tekstdoel: doel van de tekst.",
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap.",
+       "Nee, dat hoort bij Verwijswoord: wijst terug."
+      ],
+      "uh": "Instruerend: stap voor stap."
+     },
+     {
+      "v": "Een tekst die je mening wil veranderen. Welk begrip past hierbij?",
+      "o": [
+       "Informerend",
+       "Overtuigend",
+       "Activerend",
+       "Verwijswoord"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een tekst die je mening wil veranderen. Dat past bij Overtuigend: mening veranderen.",
+      "uo": [
+       "Nee, dat hoort bij Informerend: uitleggen met feiten.",
+       "Klopt: mening veranderen.",
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Nee, dat hoort bij Verwijswoord: wijst terug."
+      ],
+      "uh": "Overtuigend: mening veranderen."
+     },
+     {
+      "v": "Een betoog probeert je te laten geloven dat je minder vlees moet eten. Om welk begrip gaat het?",
+      "o": [
+       "Hoofdgedachte",
+       "Tekstdoel",
+       "Overtuigend",
+       "Verwijswoord"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een betoog probeert je te laten geloven dat je minder vlees moet eten. Dat past bij Overtuigend: mening veranderen.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap.",
+       "Nee, dat hoort bij Tekstdoel: doel van de tekst.",
+       "Klopt: mening veranderen.",
+       "Nee, dat hoort bij Verwijswoord: wijst terug."
+      ],
+      "uh": "Overtuigend: mening veranderen."
+     },
+     {
+      "v": "Wat de schrijver met de tekst wil bereiken. Welk begrip herken je hier?",
+      "o": [
+       "Hoofdgedachte",
+       "Signaalwoord",
+       "Informerend",
+       "Tekstdoel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Wat de schrijver met de tekst wil bereiken. Dat past bij Tekstdoel: doel van de tekst.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap.",
+       "Nee, dat hoort bij Signaalwoord: toont het verband.",
+       "Nee, dat hoort bij Informerend: uitleggen met feiten.",
+       "Klopt: doel van de tekst."
+      ],
+      "uh": "Tekstdoel: doel van de tekst."
+     },
+     {
+      "v": "Het woordje die verwijst terug naar iets dat eerder genoemd is. Wat is hier aan de hand?",
+      "o": [
+       "Verwijswoord",
+       "Overtuigend",
+       "Activerend",
+       "Hoofdgedachte"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het woordje die verwijst terug naar iets dat eerder genoemd is. Dat past bij Verwijswoord: wijst terug.",
+      "uo": [
+       "Klopt: wijst terug.",
+       "Nee, dat hoort bij Overtuigend: mening veranderen.",
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap."
+      ],
+      "uh": "Verwijswoord: wijst terug."
+     },
+     {
+      "v": "Als je de hele tekst in één zin zou samenvatten. Welk begrip past hierbij?",
+      "o": [
+       "Kernzin",
+       "Hoofdgedachte",
+       "Signaalwoord",
+       "Informerend"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Als je de hele tekst in één zin zou samenvatten. Dat past bij Hoofdgedachte: belangrijkste boodschap.",
+      "uo": [
+       "Nee, dat hoort bij Kernzin: hoofdgedachte alinea.",
+       "Klopt: belangrijkste boodschap.",
+       "Nee, dat hoort bij Signaalwoord: toont het verband.",
+       "Nee, dat hoort bij Informerend: uitleggen met feiten."
+      ],
+      "uh": "Hoofdgedachte: belangrijkste boodschap."
+     },
+     {
+      "v": "Een tekst die je tot actie wil aanzetten. Om welk begrip gaat het?",
+      "o": [
+       "Instruerend",
+       "Overtuigend",
+       "Activerend",
+       "Verwijswoord"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een tekst die je tot actie wil aanzetten. Dat past bij Activerend: aanzetten tot doen.",
+      "uo": [
+       "Nee, dat hoort bij Instruerend: stap voor stap.",
+       "Nee, dat hoort bij Overtuigend: mening veranderen.",
+       "Klopt: aanzetten tot doen.",
+       "Nee, dat hoort bij Verwijswoord: wijst terug."
+      ],
+      "uh": "Activerend: aanzetten tot doen."
+     },
+     {
+      "v": "De schrijver wil je iets laten weten, geloven of doen. Welk begrip herken je hier?",
+      "o": [
+       "Hoofdgedachte",
+       "Activerend",
+       "Informerend",
+       "Tekstdoel"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De schrijver wil je iets laten weten, geloven of doen. Dat past bij Tekstdoel: doel van de tekst.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap.",
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Nee, dat hoort bij Informerend: uitleggen met feiten.",
+       "Klopt: doel van de tekst."
+      ],
+      "uh": "Tekstdoel: doel van de tekst."
+     },
+     {
+      "v": "Een reclame zet je aan om meteen te kopen. Wat is hier aan de hand?",
+      "o": [
+       "Activerend",
+       "Overtuigend",
+       "Verwijswoord",
+       "Instruerend"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een reclame zet je aan om meteen te kopen. Dat past bij Activerend: aanzetten tot doen.",
+      "uo": [
+       "Klopt: aanzetten tot doen.",
+       "Nee, dat hoort bij Overtuigend: mening veranderen.",
+       "Nee, dat hoort bij Verwijswoord: wijst terug.",
+       "Nee, dat hoort bij Instruerend: stap voor stap."
+      ],
+      "uh": "Activerend: aanzetten tot doen."
+     },
+     {
+      "v": "Een tekst die uitlegt en informatie geeft. Welk begrip past hierbij?",
+      "o": [
+       "Overtuigend",
+       "Informerend",
+       "Activerend",
+       "Verwijswoord"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een tekst die uitlegt en informatie geeft. Dat past bij Informerend: uitleggen met feiten.",
+      "uo": [
+       "Nee, dat hoort bij Overtuigend: mening veranderen.",
+       "Klopt: uitleggen met feiten.",
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Nee, dat hoort bij Verwijswoord: wijst terug."
+      ],
+      "uh": "Informerend: uitleggen met feiten."
+     },
+     {
+      "v": "De zin met de belangrijkste boodschap van een alinea. Om welk begrip gaat het?",
+      "o": [
+       "Signaalwoord",
+       "Activerend",
+       "Kernzin",
+       "Hoofdgedachte"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De zin met de belangrijkste boodschap van een alinea. Dat past bij Kernzin: hoofdgedachte alinea.",
+      "uo": [
+       "Nee, dat hoort bij Signaalwoord: toont het verband.",
+       "Nee, dat hoort bij Activerend: aanzetten tot doen.",
+       "Klopt: hoofdgedachte alinea.",
+       "Nee, dat hoort bij Hoofdgedachte: belangrijkste boodschap."
+      ],
+      "uh": "Kernzin: hoofdgedachte alinea."
      }
     ],
     "begrippen": [
@@ -842,6 +2134,462 @@ var VAKKEN_VMBO = [
        "Klopt: in het slot vat je samen en sluit je af."
       ],
       "uh": "het slot: In het slot vat je samen en sluit je af."
+     },
+     {
+      "v": "Hier open je en maak je de lezer nieuwsgierig. Welk begrip past hierbij?",
+      "o": [
+       "Inleiding",
+       "Kern",
+       "Ik-vorm",
+       "'t Kofschip"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Hier open je en maak je de lezer nieuwsgierig. Dat past bij Inleiding: het begin.",
+      "uo": [
+       "Klopt: het begin.",
+       "Nee, dat hoort bij Kern: de uitwerking.",
+       "Nee, dat hoort bij Ik-vorm: kale stam.",
+       "Nee, dat hoort bij 't Kofschip: t of d kiezen."
+      ],
+      "uh": "Inleiding: het begin."
+     },
+     {
+      "v": "Het eerste deel van je tekst, waarin je het onderwerp aankondigt. Om welk begrip gaat het?",
+      "o": [
+       "Kern",
+       "Inleiding",
+       "Ik-vorm",
+       "'t Kofschip"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het eerste deel van je tekst, waarin je het onderwerp aankondigt. Dat past bij Inleiding: het begin.",
+      "uo": [
+       "Nee, dat hoort bij Kern: de uitwerking.",
+       "Klopt: het begin.",
+       "Nee, dat hoort bij Ik-vorm: kale stam.",
+       "Nee, dat hoort bij 't Kofschip: t of d kiezen."
+      ],
+      "uh": "Inleiding: het begin."
+     },
+     {
+      "v": "Het middendeel waarin je het onderwerp helemaal uitwerkt. Welk begrip herken je hier?",
+      "o": [
+       "Stam plus t",
+       "Inleiding",
+       "Kern",
+       "Slot"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het middendeel waarin je het onderwerp helemaal uitwerkt. Dat past bij Kern: de uitwerking.",
+      "uo": [
+       "Nee, dat hoort bij Stam plus t: hij/zij + t.",
+       "Nee, dat hoort bij Inleiding: het begin.",
+       "Klopt: de uitwerking.",
+       "Nee, dat hoort bij Slot: samenvatten en afsluiten."
+      ],
+      "uh": "Kern: de uitwerking."
+     },
+     {
+      "v": "Hier rond je af en trek je een conclusie. Wat is hier aan de hand?",
+      "o": [
+       "Kern",
+       "Stam",
+       "Voltooid deelwoord",
+       "Slot"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Hier rond je af en trek je een conclusie. Dat past bij Slot: samenvatten en afsluiten.",
+      "uo": [
+       "Nee, dat hoort bij Kern: de uitwerking.",
+       "Nee, dat hoort bij Stam: werkwoord min -en.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Klopt: samenvatten en afsluiten."
+      ],
+      "uh": "Slot: samenvatten en afsluiten."
+     },
+     {
+      "v": "Dit ezelsbruggetje helpt je kiezen tussen -t en -d in een voltooid deelwoord. Welk begrip past hierbij?",
+      "o": [
+       "'t Kofschip",
+       "Stam",
+       "Slot",
+       "Voltooid deelwoord"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Dit ezelsbruggetje helpt je kiezen tussen -t en -d in een voltooid deelwoord. Dat past bij 't Kofschip: t of d kiezen.",
+      "uo": [
+       "Klopt: t of d kiezen.",
+       "Nee, dat hoort bij Stam: werkwoord min -en.",
+       "Nee, dat hoort bij Slot: samenvatten en afsluiten.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm."
+      ],
+      "uh": "'t Kofschip: t of d kiezen."
+     },
+     {
+      "v": "Het einde van de tekst met een conclusie. Om welk begrip gaat het?",
+      "o": [
+       "Stam",
+       "Slot",
+       "Voltooid deelwoord",
+       "Kern"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het einde van de tekst met een conclusie. Dat past bij Slot: samenvatten en afsluiten.",
+      "uo": [
+       "Nee, dat hoort bij Stam: werkwoord min -en.",
+       "Klopt: samenvatten en afsluiten.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Nee, dat hoort bij Kern: de uitwerking."
+      ],
+      "uh": "Slot: samenvatten en afsluiten."
+     },
+     {
+      "v": "De ge-vorm van het werkwoord: gewerkt, gefietst, gelopen. Welk begrip herken je hier?",
+      "o": [
+       "Ik-vorm",
+       "'t Kofschip",
+       "Voltooid deelwoord",
+       "Stam plus t"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De ge-vorm van het werkwoord: gewerkt, gefietst, gelopen. Dat past bij Voltooid deelwoord: de ge-vorm.",
+      "uo": [
+       "Nee, dat hoort bij Ik-vorm: kale stam.",
+       "Nee, dat hoort bij 't Kofschip: t of d kiezen.",
+       "Klopt: de ge-vorm.",
+       "Nee, dat hoort bij Stam plus t: hij/zij + t."
+      ],
+      "uh": "Voltooid deelwoord: de ge-vorm."
+     },
+     {
+      "v": "Bij ik hoort de kale vorm zonder -t: ik loop, ik werk. Wat is hier aan de hand?",
+      "o": [
+       "Voltooid deelwoord",
+       "Inleiding",
+       "'t Kofschip",
+       "Ik-vorm"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Bij ik hoort de kale vorm zonder -t: ik loop, ik werk. Dat past bij Ik-vorm: kale stam.",
+      "uo": [
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Nee, dat hoort bij Inleiding: het begin.",
+       "Nee, dat hoort bij 't Kofschip: t of d kiezen.",
+       "Klopt: kale stam."
+      ],
+      "uh": "Ik-vorm: kale stam."
+     },
+     {
+      "v": "Hier staat de meeste informatie van je betoog. Welk begrip past hierbij?",
+      "o": [
+       "Kern",
+       "Inleiding",
+       "Voltooid deelwoord",
+       "Stam plus t"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Hier staat de meeste informatie van je betoog. Dat past bij Kern: de uitwerking.",
+      "uo": [
+       "Klopt: de uitwerking.",
+       "Nee, dat hoort bij Inleiding: het begin.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Nee, dat hoort bij Stam plus t: hij/zij + t."
+      ],
+      "uh": "Kern: de uitwerking."
+     },
+     {
+      "v": "Bij lopen is dit loop. Om welk begrip gaat het?",
+      "o": [
+       "Voltooid deelwoord",
+       "Stam",
+       "Slot",
+       "Stam plus t"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Bij lopen is dit loop. Dat past bij Stam: werkwoord min -en.",
+      "uo": [
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Klopt: werkwoord min -en.",
+       "Nee, dat hoort bij Slot: samenvatten en afsluiten.",
+       "Nee, dat hoort bij Stam plus t: hij/zij + t."
+      ],
+      "uh": "Stam: werkwoord min -en."
+     },
+     {
+      "v": "Bij hebben of zijn hoort deze ge-vorm. Welk begrip herken je hier?",
+      "o": [
+       "Inleiding",
+       "Stam",
+       "Voltooid deelwoord",
+       "Ik-vorm"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Bij hebben of zijn hoort deze ge-vorm. Dat past bij Voltooid deelwoord: de ge-vorm.",
+      "uo": [
+       "Nee, dat hoort bij Inleiding: het begin.",
+       "Nee, dat hoort bij Stam: werkwoord min -en.",
+       "Klopt: de ge-vorm.",
+       "Nee, dat hoort bij Ik-vorm: kale stam."
+      ],
+      "uh": "Voltooid deelwoord: de ge-vorm."
+     },
+     {
+      "v": "De vorm met ge- ervoor, zoals in ik heb gewerkt. Wat is hier aan de hand?",
+      "o": [
+       "Stam",
+       "'t Kofschip",
+       "Ik-vorm",
+       "Voltooid deelwoord"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De vorm met ge- ervoor, zoals in ik heb gewerkt. Dat past bij Voltooid deelwoord: de ge-vorm.",
+      "uo": [
+       "Nee, dat hoort bij Stam: werkwoord min -en.",
+       "Nee, dat hoort bij 't Kofschip: t of d kiezen.",
+       "Nee, dat hoort bij Ik-vorm: kale stam.",
+       "Klopt: de ge-vorm."
+      ],
+      "uh": "Voltooid deelwoord: de ge-vorm."
+     },
+     {
+      "v": "Het grootste deel van de tekst, met de uitwerking. Welk begrip past hierbij?",
+      "o": [
+       "Kern",
+       "Inleiding",
+       "Stam plus t",
+       "Slot"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het grootste deel van de tekst, met de uitwerking. Dat past bij Kern: de uitwerking.",
+      "uo": [
+       "Klopt: de uitwerking.",
+       "Nee, dat hoort bij Inleiding: het begin.",
+       "Nee, dat hoort bij Stam plus t: hij/zij + t.",
+       "Nee, dat hoort bij Slot: samenvatten en afsluiten."
+      ],
+      "uh": "Kern: de uitwerking."
+     },
+     {
+      "v": "Bij hij vindt komt na de stam een t. Om welk begrip gaat het?",
+      "o": [
+       "Stam",
+       "Stam plus t",
+       "Voltooid deelwoord",
+       "Inleiding"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Bij hij vindt komt na de stam een t. Dat past bij Stam plus t: hij/zij + t.",
+      "uo": [
+       "Nee, dat hoort bij Stam: werkwoord min -en.",
+       "Klopt: hij/zij + t.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Nee, dat hoort bij Inleiding: het begin."
+      ],
+      "uh": "Stam plus t: hij/zij + t."
+     },
+     {
+      "v": "De vorm bij hij of zij, met een -t erachter. Welk begrip herken je hier?",
+      "o": [
+       "Voltooid deelwoord",
+       "Ik-vorm",
+       "Stam plus t",
+       "Inleiding"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De vorm bij hij of zij, met een -t erachter. Dat past bij Stam plus t: hij/zij + t.",
+      "uo": [
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Nee, dat hoort bij Ik-vorm: kale stam.",
+       "Klopt: hij/zij + t.",
+       "Nee, dat hoort bij Inleiding: het begin."
+      ],
+      "uh": "Stam plus t: hij/zij + t."
+     },
+     {
+      "v": "Bij hij en zij komt er een -t achter: hij loopt, zij werkt. Wat is hier aan de hand?",
+      "o": [
+       "Voltooid deelwoord",
+       "Ik-vorm",
+       "Slot",
+       "Stam plus t"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Bij hij en zij komt er een -t achter: hij loopt, zij werkt. Dat past bij Stam plus t: hij/zij + t.",
+      "uo": [
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Nee, dat hoort bij Ik-vorm: kale stam.",
+       "Nee, dat hoort bij Slot: samenvatten en afsluiten.",
+       "Klopt: hij/zij + t."
+      ],
+      "uh": "Stam plus t: hij/zij + t."
+     },
+     {
+      "v": "Het hele werkwoord zonder de uitgang -en. Welk begrip past hierbij?",
+      "o": [
+       "Stam",
+       "Ik-vorm",
+       "Kern",
+       "Slot"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het hele werkwoord zonder de uitgang -en. Dat past bij Stam: werkwoord min -en.",
+      "uo": [
+       "Klopt: werkwoord min -en.",
+       "Nee, dat hoort bij Ik-vorm: kale stam.",
+       "Nee, dat hoort bij Kern: de uitwerking.",
+       "Nee, dat hoort bij Slot: samenvatten en afsluiten."
+      ],
+      "uh": "Stam: werkwoord min -en."
+     },
+     {
+      "v": "Het begin van een tekst dat het onderwerp introduceert. Om welk begrip gaat het?",
+      "o": [
+       "Slot",
+       "Inleiding",
+       "Kern",
+       "Stam plus t"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het begin van een tekst dat het onderwerp introduceert. Dat past bij Inleiding: het begin.",
+      "uo": [
+       "Nee, dat hoort bij Slot: samenvatten en afsluiten.",
+       "Klopt: het begin.",
+       "Nee, dat hoort bij Kern: de uitwerking.",
+       "Nee, dat hoort bij Stam plus t: hij/zij + t."
+      ],
+      "uh": "Inleiding: het begin."
+     },
+     {
+      "v": "De vorm van het werkwoord die bij ik hoort. Welk begrip herken je hier?",
+      "o": [
+       "Slot",
+       "Stam",
+       "Ik-vorm",
+       "'t Kofschip"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De vorm van het werkwoord die bij ik hoort. Dat past bij Ik-vorm: kale stam.",
+      "uo": [
+       "Nee, dat hoort bij Slot: samenvatten en afsluiten.",
+       "Nee, dat hoort bij Stam: werkwoord min -en.",
+       "Klopt: kale stam.",
+       "Nee, dat hoort bij 't Kofschip: t of d kiezen."
+      ],
+      "uh": "Ik-vorm: kale stam."
+     },
+     {
+      "v": "Eindigt de stam op een k, dan is het gewerkt met een t. Wat is hier aan de hand?",
+      "o": [
+       "Inleiding",
+       "Ik-vorm",
+       "Voltooid deelwoord",
+       "'t Kofschip"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Eindigt de stam op een k, dan is het gewerkt met een t. Dat past bij 't Kofschip: t of d kiezen.",
+      "uo": [
+       "Nee, dat hoort bij Inleiding: het begin.",
+       "Nee, dat hoort bij Ik-vorm: kale stam.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Klopt: t of d kiezen."
+      ],
+      "uh": "'t Kofschip: t of d kiezen."
+     },
+     {
+      "v": "Van het werkwoord werken haal je -en eraf en houd je werk over. Welk begrip past hierbij?",
+      "o": [
+       "Stam",
+       "Ik-vorm",
+       "Kern",
+       "Voltooid deelwoord"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Van het werkwoord werken haal je -en eraf en houd je werk over. Dat past bij Stam: werkwoord min -en.",
+      "uo": [
+       "Klopt: werkwoord min -en.",
+       "Nee, dat hoort bij Ik-vorm: kale stam.",
+       "Nee, dat hoort bij Kern: de uitwerking.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm."
+      ],
+      "uh": "Stam: werkwoord min -en."
+     },
+     {
+      "v": "De truc met de letters t, k, f, s, ch, p voor -t of -d. Om welk begrip gaat het?",
+      "o": [
+       "Stam",
+       "'t Kofschip",
+       "Slot",
+       "Voltooid deelwoord"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De truc met de letters t, k, f, s, ch, p voor -t of -d. Dat past bij 't Kofschip: t of d kiezen.",
+      "uo": [
+       "Nee, dat hoort bij Stam: werkwoord min -en.",
+       "Klopt: t of d kiezen.",
+       "Nee, dat hoort bij Slot: samenvatten en afsluiten.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm."
+      ],
+      "uh": "'t Kofschip: t of d kiezen."
+     },
+     {
+      "v": "De stam zonder er iets achter. Welk begrip herken je hier?",
+      "o": [
+       "'t Kofschip",
+       "Inleiding",
+       "Ik-vorm",
+       "Voltooid deelwoord"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De stam zonder er iets achter. Dat past bij Ik-vorm: kale stam.",
+      "uo": [
+       "Nee, dat hoort bij 't Kofschip: t of d kiezen.",
+       "Nee, dat hoort bij Inleiding: het begin.",
+       "Klopt: kale stam.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm."
+      ],
+      "uh": "Ik-vorm: kale stam."
+     },
+     {
+      "v": "Het laatste deel waarin je samenvat en afsluit. Wat is hier aan de hand?",
+      "o": [
+       "Stam plus t",
+       "Inleiding",
+       "Voltooid deelwoord",
+       "Slot"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het laatste deel waarin je samenvat en afsluit. Dat past bij Slot: samenvatten en afsluiten.",
+      "uo": [
+       "Nee, dat hoort bij Stam plus t: hij/zij + t.",
+       "Nee, dat hoort bij Inleiding: het begin.",
+       "Nee, dat hoort bij Voltooid deelwoord: de ge-vorm.",
+       "Klopt: samenvatten en afsluiten."
+      ],
+      "uh": "Slot: samenvatten en afsluiten."
      }
     ],
     "begrippen": [
@@ -1046,6 +2794,519 @@ var VAKKEN_VMBO = [
        "Klopt: een motief is een terugkerend element of idee."
       ],
       "uh": "een terugkerend element of idee: Een motief is een terugkerend element of idee."
+     },
+     {
+      "v": "Je leest door omdat je wil weten hoe het afloopt. Welk begrip past hierbij?",
+      "o": [
+       "Spanning",
+       "Cliffhanger",
+       "Motief",
+       "Hij-perspectief"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je leest door omdat je wil weten hoe het afloopt. Dat past bij Spanning: hoe loopt het af.",
+      "uo": [
+       "Klopt: hoe loopt het af.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Hij-perspectief: buitenstaander vertelt."
+      ],
+      "uh": "Spanning: hoe loopt het af."
+     },
+     {
+      "v": "Het hoofdstuk stopt precies op het spannendste moment. Om welk begrip gaat het?",
+      "o": [
+       "Ik-perspectief",
+       "Cliffhanger",
+       "Hoofdpersoon",
+       "Motief"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het hoofdstuk stopt precies op het spannendste moment. Dat past bij Cliffhanger: spannend open einde.",
+      "uo": [
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt.",
+       "Klopt: spannend open einde.",
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Nee, dat hoort bij Motief: terugkerend element."
+      ],
+      "uh": "Cliffhanger: spannend open einde."
+     },
+     {
+      "v": "Een steeds herhaald symbool of onderwerp. Welk begrip herken je hier?",
+      "o": [
+       "Ik-perspectief",
+       "Thema",
+       "Motief",
+       "Cliffhanger"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een steeds herhaald symbool of onderwerp. Dat past bij Motief: terugkerend element.",
+      "uo": [
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt.",
+       "Nee, dat hoort bij Thema: hoofdonderwerp/boodschap.",
+       "Klopt: terugkerend element.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde."
+      ],
+      "uh": "Motief: terugkerend element."
+     },
+     {
+      "v": "De verteller doet mee in het verhaal en zegt ik. Wat is hier aan de hand?",
+      "o": [
+       "Thema",
+       "Cliffhanger",
+       "Motief",
+       "Ik-perspectief"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De verteller doet mee in het verhaal en zegt ik. Dat past bij Ik-perspectief: \"ik\" vertelt.",
+      "uo": [
+       "Nee, dat hoort bij Thema: hoofdonderwerp/boodschap.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Klopt: \"ik\" vertelt."
+      ],
+      "uh": "Ik-perspectief: \"ik\" vertelt."
+     },
+     {
+      "v": "Net als het gevaarlijk wordt, is het hoofdstuk uit. Welk begrip past hierbij?",
+      "o": [
+       "Cliffhanger",
+       "Spanning",
+       "Hoofdpersoon",
+       "Personage"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Net als het gevaarlijk wordt, is het hoofdstuk uit. Dat past bij Cliffhanger: spannend open einde.",
+      "uo": [
+       "Klopt: spannend open einde.",
+       "Nee, dat hoort bij Spanning: hoe loopt het af.",
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Nee, dat hoort bij Personage: figuur in het verhaal."
+      ],
+      "uh": "Cliffhanger: spannend open einde."
+     },
+     {
+      "v": "Dit boek is een echte thriller, vol spanning en misdaad. Om welk begrip gaat het?",
+      "o": [
+       "Cliffhanger",
+       "Genre",
+       "Personage",
+       "Hoofdpersoon"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Dit boek is een echte thriller, vol spanning en misdaad. Dat past bij Genre: soort verhaal.",
+      "uo": [
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Klopt: soort verhaal.",
+       "Nee, dat hoort bij Personage: figuur in het verhaal.",
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur."
+      ],
+      "uh": "Genre: soort verhaal."
+     },
+     {
+      "v": "Een element of idee dat telkens terugkeert. Welk begrip herken je hier?",
+      "o": [
+       "Ik-perspectief",
+       "Thema",
+       "Motief",
+       "Cliffhanger"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een element of idee dat telkens terugkeert. Dat past bij Motief: terugkerend element.",
+      "uo": [
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt.",
+       "Nee, dat hoort bij Thema: hoofdonderwerp/boodschap.",
+       "Klopt: terugkerend element.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde."
+      ],
+      "uh": "Motief: terugkerend element."
+     },
+     {
+      "v": "De grote gedachte achter het hele verhaal. Wat is hier aan de hand?",
+      "o": [
+       "Hoofdpersoon",
+       "Cliffhanger",
+       "Personage",
+       "Thema"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De grote gedachte achter het hele verhaal. Dat past bij Thema: hoofdonderwerp/boodschap.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Nee, dat hoort bij Personage: figuur in het verhaal.",
+       "Klopt: hoofdonderwerp/boodschap."
+      ],
+      "uh": "Thema: hoofdonderwerp/boodschap."
+     },
+     {
+      "v": "Je hart klopt sneller als de held in gevaar is. Welk begrip past hierbij?",
+      "o": [
+       "Spanning",
+       "Cliffhanger",
+       "Hoofdpersoon",
+       "Motief"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je hart klopt sneller als de held in gevaar is. Dat past bij Spanning: hoe loopt het af.",
+      "uo": [
+       "Klopt: hoe loopt het af.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Nee, dat hoort bij Motief: terugkerend element."
+      ],
+      "uh": "Spanning: hoe loopt het af."
+     },
+     {
+      "v": "De persoon die je door het hele boek volgt. Om welk begrip gaat het?",
+      "o": [
+       "Personage",
+       "Hoofdpersoon",
+       "Cliffhanger",
+       "Motief"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De persoon die je door het hele boek volgt. Dat past bij Hoofdpersoon: belangrijkste figuur.",
+      "uo": [
+       "Nee, dat hoort bij Personage: figuur in het verhaal.",
+       "Klopt: belangrijkste figuur.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Nee, dat hoort bij Motief: terugkerend element."
+      ],
+      "uh": "Hoofdpersoon: belangrijkste figuur."
+     },
+     {
+      "v": "De verteller staat buiten het verhaal en gebruikt hij en zij. Welk begrip herken je hier?",
+      "o": [
+       "Motief",
+       "Spanning",
+       "Hij-perspectief",
+       "Cliffhanger"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De verteller staat buiten het verhaal en gebruikt hij en zij. Dat past bij Hij-perspectief: buitenstaander vertelt.",
+      "uo": [
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Spanning: hoe loopt het af.",
+       "Klopt: buitenstaander vertelt.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde."
+      ],
+      "uh": "Hij-perspectief: buitenstaander vertelt."
+     },
+     {
+      "v": "Een detective, een romance of een griezelverhaal. Wat is hier aan de hand?",
+      "o": [
+       "Motief",
+       "Thema",
+       "Ik-perspectief",
+       "Genre"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een detective, een romance of een griezelverhaal. Dat past bij Genre: soort verhaal.",
+      "uo": [
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Thema: hoofdonderwerp/boodschap.",
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt.",
+       "Klopt: soort verhaal."
+      ],
+      "uh": "Genre: soort verhaal."
+     },
+     {
+      "v": "Een buitenstaander vertelt over hem en haar. Welk begrip past hierbij?",
+      "o": [
+       "Hij-perspectief",
+       "Ik-perspectief",
+       "Cliffhanger",
+       "Genre"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een buitenstaander vertelt over hem en haar. Dat past bij Hij-perspectief: buitenstaander vertelt.",
+      "uo": [
+       "Klopt: buitenstaander vertelt.",
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Nee, dat hoort bij Genre: soort verhaal."
+      ],
+      "uh": "Hij-perspectief: buitenstaander vertelt."
+     },
+     {
+      "v": "De figuur om wie het verhaal vooral draait. Om welk begrip gaat het?",
+      "o": [
+       "Spanning",
+       "Hoofdpersoon",
+       "Motief",
+       "Ik-perspectief"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De figuur om wie het verhaal vooral draait. Dat past bij Hoofdpersoon: belangrijkste figuur.",
+      "uo": [
+       "Nee, dat hoort bij Spanning: hoe loopt het af.",
+       "Klopt: belangrijkste figuur.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt."
+      ],
+      "uh": "Hoofdpersoon: belangrijkste figuur."
+     },
+     {
+      "v": "Het gevoel dat je nieuwsgierig maakt naar de afloop. Welk begrip herken je hier?",
+      "o": [
+       "Hoofdpersoon",
+       "Cliffhanger",
+       "Spanning",
+       "Motief"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het gevoel dat je nieuwsgierig maakt naar de afloop. Dat past bij Spanning: hoe loopt het af.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Klopt: hoe loopt het af.",
+       "Nee, dat hoort bij Motief: terugkerend element."
+      ],
+      "uh": "Spanning: hoe loopt het af."
+     },
+     {
+      "v": "De soort waartoe een verhaal behoort, zoals sciencefiction. Wat is hier aan de hand?",
+      "o": [
+       "Spanning",
+       "Thema",
+       "Hoofdpersoon",
+       "Genre"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De soort waartoe een verhaal behoort, zoals sciencefiction. Dat past bij Genre: soort verhaal.",
+      "uo": [
+       "Nee, dat hoort bij Spanning: hoe loopt het af.",
+       "Nee, dat hoort bij Thema: hoofdonderwerp/boodschap.",
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Klopt: soort verhaal."
+      ],
+      "uh": "Genre: soort verhaal."
+     },
+     {
+      "v": "Het belangrijkste personage van het verhaal. Welk begrip past hierbij?",
+      "o": [
+       "Hoofdpersoon",
+       "Spanning",
+       "Motief",
+       "Ik-perspectief"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het belangrijkste personage van het verhaal. Dat past bij Hoofdpersoon: belangrijkste figuur.",
+      "uo": [
+       "Klopt: belangrijkste figuur.",
+       "Nee, dat hoort bij Spanning: hoe loopt het af.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt."
+      ],
+      "uh": "Hoofdpersoon: belangrijkste figuur."
+     },
+     {
+      "v": "De jongen en het meisje in het boek. Om welk begrip gaat het?",
+      "o": [
+       "Hoofdpersoon",
+       "Personage",
+       "Spanning",
+       "Thema"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De jongen en het meisje in het boek. Dat past bij Personage: figuur in het verhaal.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Klopt: figuur in het verhaal.",
+       "Nee, dat hoort bij Spanning: hoe loopt het af.",
+       "Nee, dat hoort bij Thema: hoofdonderwerp/boodschap."
+      ],
+      "uh": "Personage: figuur in het verhaal."
+     },
+     {
+      "v": "Een karakter dat een rol speelt in het verhaal. Welk begrip herken je hier?",
+      "o": [
+       "Ik-perspectief",
+       "Hoofdpersoon",
+       "Personage",
+       "Spanning"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een karakter dat een rol speelt in het verhaal. Dat past bij Personage: figuur in het verhaal.",
+      "uo": [
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt.",
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Klopt: figuur in het verhaal.",
+       "Nee, dat hoort bij Spanning: hoe loopt het af."
+      ],
+      "uh": "Personage: figuur in het verhaal."
+     },
+     {
+      "v": "Je leest alles vanuit de ogen van ik. Wat is hier aan de hand?",
+      "o": [
+       "Thema",
+       "Cliffhanger",
+       "Motief",
+       "Ik-perspectief"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Je leest alles vanuit de ogen van ik. Dat past bij Ik-perspectief: \"ik\" vertelt.",
+      "uo": [
+       "Nee, dat hoort bij Thema: hoofdonderwerp/boodschap.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Klopt: \"ik\" vertelt."
+      ],
+      "uh": "Ik-perspectief: \"ik\" vertelt."
+     },
+     {
+      "v": "Een open, spannend einde waardoor je verder wil lezen. Welk begrip past hierbij?",
+      "o": [
+       "Cliffhanger",
+       "Spanning",
+       "Hoofdpersoon",
+       "Motief"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een open, spannend einde waardoor je verder wil lezen. Dat past bij Cliffhanger: spannend open einde.",
+      "uo": [
+       "Klopt: spannend open einde.",
+       "Nee, dat hoort bij Spanning: hoe loopt het af.",
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Nee, dat hoort bij Motief: terugkerend element."
+      ],
+      "uh": "Cliffhanger: spannend open einde."
+     },
+     {
+      "v": "Iemand die niet meedoet vertelt over de personages. Om welk begrip gaat het?",
+      "o": [
+       "Ik-perspectief",
+       "Hij-perspectief",
+       "Cliffhanger",
+       "Genre"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Iemand die niet meedoet vertelt over de personages. Dat past bij Hij-perspectief: buitenstaander vertelt.",
+      "uo": [
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt.",
+       "Klopt: buitenstaander vertelt.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Nee, dat hoort bij Genre: soort verhaal."
+      ],
+      "uh": "Hij-perspectief: buitenstaander vertelt."
+     },
+     {
+      "v": "Het hoofdonderwerp of de boodschap van het verhaal. Welk begrip herken je hier?",
+      "o": [
+       "Personage",
+       "Cliffhanger",
+       "Thema",
+       "Hoofdpersoon"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het hoofdonderwerp of de boodschap van het verhaal. Dat past bij Thema: hoofdonderwerp/boodschap.",
+      "uo": [
+       "Nee, dat hoort bij Personage: figuur in het verhaal.",
+       "Nee, dat hoort bij Cliffhanger: spannend open einde.",
+       "Klopt: hoofdonderwerp/boodschap.",
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur."
+      ],
+      "uh": "Thema: hoofdonderwerp/boodschap."
+     },
+     {
+      "v": "Het verhaal wordt verteld door ik, een van de personages. Wat is hier aan de hand?",
+      "o": [
+       "Motief",
+       "Hij-perspectief",
+       "Personage",
+       "Ik-perspectief"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het verhaal wordt verteld door ik, een van de personages. Dat past bij Ik-perspectief: \"ik\" vertelt.",
+      "uo": [
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Hij-perspectief: buitenstaander vertelt.",
+       "Nee, dat hoort bij Personage: figuur in het verhaal.",
+       "Klopt: \"ik\" vertelt."
+      ],
+      "uh": "Ik-perspectief: \"ik\" vertelt."
+     },
+     {
+      "v": "Waar het verhaal eigenlijk over gaat, bijvoorbeeld vriendschap. Welk begrip past hierbij?",
+      "o": [
+       "Thema",
+       "Motief",
+       "Hoofdpersoon",
+       "Spanning"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Waar het verhaal eigenlijk over gaat, bijvoorbeeld vriendschap. Dat past bij Thema: hoofdonderwerp/boodschap.",
+      "uo": [
+       "Klopt: hoofdonderwerp/boodschap.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Hoofdpersoon: belangrijkste figuur.",
+       "Nee, dat hoort bij Spanning: hoe loopt het af."
+      ],
+      "uh": "Thema: hoofdonderwerp/boodschap."
+     },
+     {
+      "v": "Een van de figuren die in het verhaal voorkomt. Om welk begrip gaat het?",
+      "o": [
+       "Ik-perspectief",
+       "Personage",
+       "Motief",
+       "Thema"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een van de figuren die in het verhaal voorkomt. Dat past bij Personage: figuur in het verhaal.",
+      "uo": [
+       "Nee, dat hoort bij Ik-perspectief: \"ik\" vertelt.",
+       "Klopt: figuur in het verhaal.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Thema: hoofdonderwerp/boodschap."
+      ],
+      "uh": "Personage: figuur in het verhaal."
+     },
+     {
+      "v": "Door het hele boek komt steeds het beeld van een sleutel terug. Welk begrip herken je hier?",
+      "o": [
+       "Genre",
+       "Thema",
+       "Motief",
+       "Hij-perspectief"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Door het hele boek komt steeds het beeld van een sleutel terug. Dat past bij Motief: terugkerend element.",
+      "uo": [
+       "Nee, dat hoort bij Genre: soort verhaal.",
+       "Nee, dat hoort bij Thema: hoofdonderwerp/boodschap.",
+       "Klopt: terugkerend element.",
+       "Nee, dat hoort bij Hij-perspectief: buitenstaander vertelt."
+      ],
+      "uh": "Motief: terugkerend element."
      }
     ],
     "begrippen": [

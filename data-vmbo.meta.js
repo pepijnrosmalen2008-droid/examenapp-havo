@@ -21,7 +21,7 @@ var VAKKEN_VMBO = [
      "Kernboodschap van een gesproken tekst",
      "Beeld en geluid interpreteren"
     ],
-    "nSv": 9,
+    "nSv": 31,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -36,7 +36,7 @@ var VAKKEN_VMBO = [
      "Presentatie en spreekbeurt",
      "Discussie en overleg"
     ],
-    "nSv": 8,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -53,7 +53,7 @@ var VAKKEN_VMBO = [
      "Hoofdgedachte en deelonderwerpen",
      "Argumentatie: feiten vs. meningen"
     ],
-    "nSv": 9,
+    "nSv": 31,
     "nOe": 0,
     "nBeg": 10,
     "hasSam": true
@@ -69,7 +69,7 @@ var VAKKEN_VMBO = [
      "Verslag en samenvatting",
      "Spelling en interpunctie"
     ],
-    "nSv": 8,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -85,7 +85,7 @@ var VAKKEN_VMBO = [
      "Genres herkennen",
      "Eigen mening onderbouwen"
     ],
-    "nSv": 8,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 9,
     "hasSam": true
