@@ -1,0 +1,43 @@
+// VMBO Wiskunde - situaties per begrip (3 per begrip; klein aantal concepten).
+export default {
+  A: {
+    Vergelijking: ['Je moet uitrekenen welk getal x is als 3x gelijk is aan 12', 'Er staat een gelijkheid met een onbekende die je moet oplossen', 'Bij 2x + 4 = 10 zoek je de waarde van x'],
+    Richtingscoëfficiënt: ['In y = 3x + 2 zegt het getal 3 hoe steil de lijn omhoog loopt', 'Dit getal in de formule geeft de helling van de rechte lijn', 'Per stap naar rechts gaat de lijn drie omhoog'],
+    Startgetal: ['In y = 2x + 5 is 5 de plek waar de lijn de verticale as snijdt', 'Het vaste getal in de formule waar de lijn op de y-as begint', 'Bij x is nul heeft y precies deze waarde'],
+    'Lineair verband': ['De grafiek van de formule is een kaarsrechte lijn', 'Een verband dat je met y = ax + b beschrijft', 'De punten liggen keurig op één rechte lijn'],
+    Variabele: ['De letter x staat voor een getal dat nog niet bekend is', 'Een letter die je in een formule invult met een getal', 'In 3x is x de onbekende letter'],
+    Substitueren: ['Je vult voor x het getal 4 in om y uit te rekenen', 'Op de plek van de letter zet je een getal', 'Vul het bekende getal in en reken uit'],
+    Coëfficiënt: ['In 3x is de 3 het getal dat voor de letter staat', 'Het getal waarmee de variabele wordt vermenigvuldigd', 'Bij 5a is de 5 dit getal'],
+    Oplossing: ['Je vond dat x gelijk is aan 4 en dat maakt de vergelijking kloppend', 'De waarde van x waarvoor de vergelijking klopt', 'Het antwoord dat de gelijkheid waar maakt'],
+  },
+  B: {
+    Procent: ['Van de honderd leerlingen is twintig ziek, dus twintig per honderd', 'Een deel uitgedrukt per honderd', 'Tien van de honderd is tien hiervan'],
+    Verhouding: ['Voor elke jongen zijn er twee meisjes in de klas', 'De relatie tussen twee aantallen, zoals één op twee', 'Meng sap en water in de mengverhouding drie staat tot één'],
+    Kwadraat: ['Je rekent 5 maal 5 uit, een getal maal zichzelf', 'Drie tot de macht twee is drie maal drie', 'Een getal met zichzelf vermenigvuldigd'],
+    Afronden: ['Van 3,7 maak je het nette hele getal 4', 'Je maakt van een lang kommagetal een handig rond getal', 'Het getal 148 wordt op honderdtallen precies honderd'],
+    Schatten: ['Je bepaalt ongeveer, zonder precies uit te rekenen, hoeveel het wordt', 'Snel een antwoord bij benadering geven', 'Ongeveer hoeveel 19 maal 21 is, zonder rekenmachine'],
+    Meter: ['Een tafel is honderd centimeter lang, precies deze lengte-eenheid', 'De eenheid van lengte waar honderd centimeter in gaan', 'Een deur is ongeveer twee van deze eenheden hoog'],
+    Kilogram: ['Een pak suiker van duizend gram weegt precies deze massa-eenheid', 'De eenheid van massa met duizend gram erin', 'Een zak aardappelen van vijf van deze eenheden'],
+    Percentage: ['De korting van twintig per honderd staat op het bord', 'Een deel geschreven in honderdsten, met een procentteken', 'De helft is vijftig hiervan'],
+  },
+  C: {
+    Oppervlakte: ['Je berekent hoeveel vierkante meter tapijt de kamer van 3 bij 4 nodig heeft', 'Je vermenigvuldigt lengte en breedte van een rechthoek', 'De grootte van het platte vlak binnen de vorm'],
+    Omtrek: ['Je meet hoeveel meter hek er om het vierkante veld heen moet', 'De totale lengte van de rand rondom een figuur', 'Alle zijden bij elkaar opgeteld'],
+    'Rechte hoek': ['De hoek in de hoek van een vierkant is precies negentig graden', 'Een hoek van negentig graden, zoals bij een winkelhaak', 'Waar de muur en de vloer elkaar loodrecht raken'],
+    'Gestrekte hoek': ['Een halve draai, een platte hoek van honderdtachtig graden', 'De hoek van een rechte lijn, honderdtachtig graden', 'Twee rechte hoeken naast elkaar vormen deze hoek'],
+    'Stelling van Pythagoras': ['In een rechthoekige driehoek reken je met a² + b² = c²', 'Met de twee korte zijden bereken je de schuine zijde', 'Bij zijden 3 en 4 vind je de schuine zijde 5'],
+    'Schuine zijde': ['De langste zijde van een rechthoekige driehoek, tegenover de rechte hoek', 'De zijde c die het langst is in een rechthoekige driehoek', 'Niet een van de rechte zijden, maar de lange'],
+    Volume: ['Je berekent hoeveel de doos van 2 bij 3 bij 4 kan bevatten', 'Je vermenigvuldigt lengte, breedte en hoogte', 'De inhoud van een balk'],
+    Hoek: ['Je meet met een geodriehoek de opening tussen twee lijnen in graden', 'De opening tussen twee lijnen, gemeten in graden', 'Groter dan negentig graden noem je stomp'],
+  },
+  D: {
+    Gemiddelde: ['Je telt 2, 4 en 6 op en deelt door drie', 'De som van de getallen gedeeld door hoeveel het er zijn', 'De cijfers 6, 7 en 8 leveren samen precies zeven op'],
+    Modus: ['In de rij 2, 3, 3, 5 komt de 3 het vaakst voor', 'Het getal dat het meest voorkomt', 'De waarde met de hoogste frequentie'],
+    Mediaan: ['Zet je 1, 3 en 5 op volgorde, dan is 3 het middelste getal', 'Het middelste getal als je alles op volgorde zet', 'Precies de helft ligt eronder, de helft erboven'],
+    Kans: ['De kans om met een dobbelsteen een zes te gooien is één op zes', 'Het aantal gunstige uitkomsten gedeeld door het totaal', 'Bij een eerlijke munt is de kans op kop één op twee'],
+    Cirkeldiagram: ['In een taartvormige grafiek is de hele cirkel samen honderd procent', 'Een ronde grafiek waarin delen als taartpunten staan', 'Elk stuk van de taart toont een deel van het geheel'],
+    Staafdiagram: ['In een grafiek met balken lees je per categorie het aantal af', 'Een grafiek waarin staven de aantallen tonen', 'Hoe hoger de balk, hoe groter het aantal'],
+    Frequentie: ['Je telt hoe vaak het cijfer 7 voorkomt in de lijst', 'Het aantal keren dat een waarde voorkomt', 'De 3 komt vier keer voor, dat is dit getal'],
+    Uitkomst: ['Bij het gooien van een dobbelsteen is een 4 een mogelijk resultaat', 'Een mogelijk resultaat van een kansexperiment', 'Kop of munt zijn de mogelijke resultaten'],
+  },
+};

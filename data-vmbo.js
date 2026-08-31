@@ -4076,6 +4076,462 @@ var VAKKEN_VMBO = [
        "Oppervlakte hoort hier niet bij."
       ],
       "uh": "het snijpunt met de y-as: B is het startgetal, het snijpunt met de y-as."
+     },
+     {
+      "v": "Vul het bekende getal in en reken uit. Welk begrip past hierbij?",
+      "o": [
+       "Variabele",
+       "Substitueren",
+       "Oplossing",
+       "Richtingscoëfficiënt"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Vul het bekende getal in en reken uit. Dat past bij Substitueren: getal invullen.",
+      "uo": [
+       "Nee, dat hoort bij Variabele: letter voor een getal.",
+       "Klopt: getal invullen.",
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a."
+      ],
+      "uh": "Substitueren: getal invullen."
+     },
+     {
+      "v": "Je vult voor x het getal 4 in om y uit te rekenen. Om welk begrip gaat het?",
+      "o": [
+       "Oplossing",
+       "Variabele",
+       "Substitueren",
+       "Richtingscoëfficiënt"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je vult voor x het getal 4 in om y uit te rekenen. Dat past bij Substitueren: getal invullen.",
+      "uo": [
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Nee, dat hoort bij Variabele: letter voor een getal.",
+       "Klopt: getal invullen.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a."
+      ],
+      "uh": "Substitueren: getal invullen."
+     },
+     {
+      "v": "In 3x is de 3 het getal dat voor de letter staat. Welk begrip herken je hier?",
+      "o": [
+       "Lineair verband",
+       "Richtingscoëfficiënt",
+       "Oplossing",
+       "Coëfficiënt"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "In 3x is de 3 het getal dat voor de letter staat. Dat past bij Coëfficiënt: getal voor de letter.",
+      "uo": [
+       "Nee, dat hoort bij Lineair verband: rechte lijn.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a.",
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Klopt: getal voor de letter."
+      ],
+      "uh": "Coëfficiënt: getal voor de letter."
+     },
+     {
+      "v": "Het antwoord dat de gelijkheid waar maakt. Wat is hier aan de hand?",
+      "o": [
+       "Oplossing",
+       "Coëfficiënt",
+       "Startgetal",
+       "Variabele"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het antwoord dat de gelijkheid waar maakt. Dat past bij Oplossing: de waarde van x.",
+      "uo": [
+       "Klopt: de waarde van x.",
+       "Nee, dat hoort bij Coëfficiënt: getal voor de letter.",
+       "Nee, dat hoort bij Startgetal: snijpunt y-as (b).",
+       "Nee, dat hoort bij Variabele: letter voor een getal."
+      ],
+      "uh": "Oplossing: de waarde van x."
+     },
+     {
+      "v": "De grafiek van de formule is een kaarsrechte lijn. Welk begrip past hierbij?",
+      "o": [
+       "Vergelijking",
+       "Lineair verband",
+       "Coëfficiënt",
+       "Substitueren"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De grafiek van de formule is een kaarsrechte lijn. Dat past bij Lineair verband: rechte lijn.",
+      "uo": [
+       "Nee, dat hoort bij Vergelijking: oplossen naar x.",
+       "Klopt: rechte lijn.",
+       "Nee, dat hoort bij Coëfficiënt: getal voor de letter.",
+       "Nee, dat hoort bij Substitueren: getal invullen."
+      ],
+      "uh": "Lineair verband: rechte lijn."
+     },
+     {
+      "v": "De waarde van x waarvoor de vergelijking klopt. Om welk begrip gaat het?",
+      "o": [
+       "Startgetal",
+       "Coëfficiënt",
+       "Oplossing",
+       "Variabele"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De waarde van x waarvoor de vergelijking klopt. Dat past bij Oplossing: de waarde van x.",
+      "uo": [
+       "Nee, dat hoort bij Startgetal: snijpunt y-as (b).",
+       "Nee, dat hoort bij Coëfficiënt: getal voor de letter.",
+       "Klopt: de waarde van x.",
+       "Nee, dat hoort bij Variabele: letter voor een getal."
+      ],
+      "uh": "Oplossing: de waarde van x."
+     },
+     {
+      "v": "De letter x staat voor een getal dat nog niet bekend is. Welk begrip herken je hier?",
+      "o": [
+       "Lineair verband",
+       "Vergelijking",
+       "Richtingscoëfficiënt",
+       "Variabele"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De letter x staat voor een getal dat nog niet bekend is. Dat past bij Variabele: letter voor een getal.",
+      "uo": [
+       "Nee, dat hoort bij Lineair verband: rechte lijn.",
+       "Nee, dat hoort bij Vergelijking: oplossen naar x.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a.",
+       "Klopt: letter voor een getal."
+      ],
+      "uh": "Variabele: letter voor een getal."
+     },
+     {
+      "v": "In y = 3x + 2 zegt het getal 3 hoe steil de lijn omhoog loopt. Wat is hier aan de hand?",
+      "o": [
+       "Richtingscoëfficiënt",
+       "Lineair verband",
+       "Variabele",
+       "Oplossing"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "In y = 3x + 2 zegt het getal 3 hoe steil de lijn omhoog loopt. Dat past bij Richtingscoëfficiënt: de helling a.",
+      "uo": [
+       "Klopt: de helling a.",
+       "Nee, dat hoort bij Lineair verband: rechte lijn.",
+       "Nee, dat hoort bij Variabele: letter voor een getal.",
+       "Nee, dat hoort bij Oplossing: de waarde van x."
+      ],
+      "uh": "Richtingscoëfficiënt: de helling a."
+     },
+     {
+      "v": "Bij 5a is de 5 dit getal. Welk begrip past hierbij?",
+      "o": [
+       "Richtingscoëfficiënt",
+       "Coëfficiënt",
+       "Oplossing",
+       "Lineair verband"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Bij 5a is de 5 dit getal. Dat past bij Coëfficiënt: getal voor de letter.",
+      "uo": [
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a.",
+       "Klopt: getal voor de letter.",
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Nee, dat hoort bij Lineair verband: rechte lijn."
+      ],
+      "uh": "Coëfficiënt: getal voor de letter."
+     },
+     {
+      "v": "Bij 2x + 4 = 10 zoek je de waarde van x. Om welk begrip gaat het?",
+      "o": [
+       "Oplossing",
+       "Variabele",
+       "Vergelijking",
+       "Richtingscoëfficiënt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Bij 2x + 4 = 10 zoek je de waarde van x. Dat past bij Vergelijking: oplossen naar x.",
+      "uo": [
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Nee, dat hoort bij Variabele: letter voor een getal.",
+       "Klopt: oplossen naar x.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a."
+      ],
+      "uh": "Vergelijking: oplossen naar x."
+     },
+     {
+      "v": "In 3x is x de onbekende letter. Welk begrip herken je hier?",
+      "o": [
+       "Lineair verband",
+       "Vergelijking",
+       "Oplossing",
+       "Variabele"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "In 3x is x de onbekende letter. Dat past bij Variabele: letter voor een getal.",
+      "uo": [
+       "Nee, dat hoort bij Lineair verband: rechte lijn.",
+       "Nee, dat hoort bij Vergelijking: oplossen naar x.",
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Klopt: letter voor een getal."
+      ],
+      "uh": "Variabele: letter voor een getal."
+     },
+     {
+      "v": "Een letter die je in een formule invult met een getal. Wat is hier aan de hand?",
+      "o": [
+       "Variabele",
+       "Vergelijking",
+       "Richtingscoëfficiënt",
+       "Lineair verband"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een letter die je in een formule invult met een getal. Dat past bij Variabele: letter voor een getal.",
+      "uo": [
+       "Klopt: letter voor een getal.",
+       "Nee, dat hoort bij Vergelijking: oplossen naar x.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a.",
+       "Nee, dat hoort bij Lineair verband: rechte lijn."
+      ],
+      "uh": "Variabele: letter voor een getal."
+     },
+     {
+      "v": "Het getal waarmee de variabele wordt vermenigvuldigd. Welk begrip past hierbij?",
+      "o": [
+       "Vergelijking",
+       "Coëfficiënt",
+       "Lineair verband",
+       "Variabele"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het getal waarmee de variabele wordt vermenigvuldigd. Dat past bij Coëfficiënt: getal voor de letter.",
+      "uo": [
+       "Nee, dat hoort bij Vergelijking: oplossen naar x.",
+       "Klopt: getal voor de letter.",
+       "Nee, dat hoort bij Lineair verband: rechte lijn.",
+       "Nee, dat hoort bij Variabele: letter voor een getal."
+      ],
+      "uh": "Coëfficiënt: getal voor de letter."
+     },
+     {
+      "v": "Bij x is nul heeft y precies deze waarde. Om welk begrip gaat het?",
+      "o": [
+       "Oplossing",
+       "Richtingscoëfficiënt",
+       "Startgetal",
+       "Lineair verband"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij x is nul heeft y precies deze waarde. Dat past bij Startgetal: snijpunt y-as (b).",
+      "uo": [
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a.",
+       "Klopt: snijpunt y-as (b).",
+       "Nee, dat hoort bij Lineair verband: rechte lijn."
+      ],
+      "uh": "Startgetal: snijpunt y-as (b)."
+     },
+     {
+      "v": "Het vaste getal in de formule waar de lijn op de y-as begint. Welk begrip herken je hier?",
+      "o": [
+       "Vergelijking",
+       "Richtingscoëfficiënt",
+       "Substitueren",
+       "Startgetal"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het vaste getal in de formule waar de lijn op de y-as begint. Dat past bij Startgetal: snijpunt y-as (b).",
+      "uo": [
+       "Nee, dat hoort bij Vergelijking: oplossen naar x.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a.",
+       "Nee, dat hoort bij Substitueren: getal invullen.",
+       "Klopt: snijpunt y-as (b)."
+      ],
+      "uh": "Startgetal: snijpunt y-as (b)."
+     },
+     {
+      "v": "In y = 2x + 5 is 5 de plek waar de lijn de verticale as snijdt. Wat is hier aan de hand?",
+      "o": [
+       "Startgetal",
+       "Substitueren",
+       "Vergelijking",
+       "Oplossing"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "In y = 2x + 5 is 5 de plek waar de lijn de verticale as snijdt. Dat past bij Startgetal: snijpunt y-as (b).",
+      "uo": [
+       "Klopt: snijpunt y-as (b).",
+       "Nee, dat hoort bij Substitueren: getal invullen.",
+       "Nee, dat hoort bij Vergelijking: oplossen naar x.",
+       "Nee, dat hoort bij Oplossing: de waarde van x."
+      ],
+      "uh": "Startgetal: snijpunt y-as (b)."
+     },
+     {
+      "v": "Er staat een gelijkheid met een onbekende die je moet oplossen. Welk begrip past hierbij?",
+      "o": [
+       "Startgetal",
+       "Vergelijking",
+       "Richtingscoëfficiënt",
+       "Oplossing"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Er staat een gelijkheid met een onbekende die je moet oplossen. Dat past bij Vergelijking: oplossen naar x.",
+      "uo": [
+       "Nee, dat hoort bij Startgetal: snijpunt y-as (b).",
+       "Klopt: oplossen naar x.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a.",
+       "Nee, dat hoort bij Oplossing: de waarde van x."
+      ],
+      "uh": "Vergelijking: oplossen naar x."
+     },
+     {
+      "v": "Op de plek van de letter zet je een getal. Om welk begrip gaat het?",
+      "o": [
+       "Oplossing",
+       "Variabele",
+       "Substitueren",
+       "Richtingscoëfficiënt"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Op de plek van de letter zet je een getal. Dat past bij Substitueren: getal invullen.",
+      "uo": [
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Nee, dat hoort bij Variabele: letter voor een getal.",
+       "Klopt: getal invullen.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a."
+      ],
+      "uh": "Substitueren: getal invullen."
+     },
+     {
+      "v": "Dit getal in de formule geeft de helling van de rechte lijn. Welk begrip herken je hier?",
+      "o": [
+       "Oplossing",
+       "Lineair verband",
+       "Variabele",
+       "Richtingscoëfficiënt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Dit getal in de formule geeft de helling van de rechte lijn. Dat past bij Richtingscoëfficiënt: de helling a.",
+      "uo": [
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Nee, dat hoort bij Lineair verband: rechte lijn.",
+       "Nee, dat hoort bij Variabele: letter voor een getal.",
+       "Klopt: de helling a."
+      ],
+      "uh": "Richtingscoëfficiënt: de helling a."
+     },
+     {
+      "v": "De punten liggen keurig op één rechte lijn. Wat is hier aan de hand?",
+      "o": [
+       "Lineair verband",
+       "Vergelijking",
+       "Variabele",
+       "Substitueren"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De punten liggen keurig op één rechte lijn. Dat past bij Lineair verband: rechte lijn.",
+      "uo": [
+       "Klopt: rechte lijn.",
+       "Nee, dat hoort bij Vergelijking: oplossen naar x.",
+       "Nee, dat hoort bij Variabele: letter voor een getal.",
+       "Nee, dat hoort bij Substitueren: getal invullen."
+      ],
+      "uh": "Lineair verband: rechte lijn."
+     },
+     {
+      "v": "Je moet uitrekenen welk getal x is als 3x gelijk is aan 12. Welk begrip past hierbij?",
+      "o": [
+       "Substitueren",
+       "Vergelijking",
+       "Oplossing",
+       "Lineair verband"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je moet uitrekenen welk getal x is als 3x gelijk is aan 12. Dat past bij Vergelijking: oplossen naar x.",
+      "uo": [
+       "Nee, dat hoort bij Substitueren: getal invullen.",
+       "Klopt: oplossen naar x.",
+       "Nee, dat hoort bij Oplossing: de waarde van x.",
+       "Nee, dat hoort bij Lineair verband: rechte lijn."
+      ],
+      "uh": "Vergelijking: oplossen naar x."
+     },
+     {
+      "v": "Een verband dat je met y = ax + b beschrijft. Om welk begrip gaat het?",
+      "o": [
+       "Substitueren",
+       "Variabele",
+       "Lineair verband",
+       "Oplossing"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een verband dat je met y = ax + b beschrijft. Dat past bij Lineair verband: rechte lijn.",
+      "uo": [
+       "Nee, dat hoort bij Substitueren: getal invullen.",
+       "Nee, dat hoort bij Variabele: letter voor een getal.",
+       "Klopt: rechte lijn.",
+       "Nee, dat hoort bij Oplossing: de waarde van x."
+      ],
+      "uh": "Lineair verband: rechte lijn."
+     },
+     {
+      "v": "Per stap naar rechts gaat de lijn drie omhoog. Welk begrip herken je hier?",
+      "o": [
+       "Variabele",
+       "Startgetal",
+       "Lineair verband",
+       "Richtingscoëfficiënt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Per stap naar rechts gaat de lijn drie omhoog. Dat past bij Richtingscoëfficiënt: de helling a.",
+      "uo": [
+       "Nee, dat hoort bij Variabele: letter voor een getal.",
+       "Nee, dat hoort bij Startgetal: snijpunt y-as (b).",
+       "Nee, dat hoort bij Lineair verband: rechte lijn.",
+       "Klopt: de helling a."
+      ],
+      "uh": "Richtingscoëfficiënt: de helling a."
+     },
+     {
+      "v": "Je vond dat x gelijk is aan 4 en dat maakt de vergelijking kloppend. Wat is hier aan de hand?",
+      "o": [
+       "Oplossing",
+       "Vergelijking",
+       "Richtingscoëfficiënt",
+       "Lineair verband"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je vond dat x gelijk is aan 4 en dat maakt de vergelijking kloppend. Dat past bij Oplossing: de waarde van x.",
+      "uo": [
+       "Klopt: de waarde van x.",
+       "Nee, dat hoort bij Vergelijking: oplossen naar x.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: de helling a.",
+       "Nee, dat hoort bij Lineair verband: rechte lijn."
+      ],
+      "uh": "Oplossing: de waarde van x."
      }
     ],
     "begrippen": [
@@ -4281,6 +4737,462 @@ var VAKKEN_VMBO = [
        "Klopt: 2 · 60 = 120 minuten."
       ],
       "uh": "120: 2 · 60 = 120 minuten."
+     },
+     {
+      "v": "Een deur is ongeveer twee van deze eenheden hoog. Welk begrip past hierbij?",
+      "o": [
+       "Meter",
+       "Kilogram",
+       "Afronden",
+       "Verhouding"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een deur is ongeveer twee van deze eenheden hoog. Dat past bij Meter: 1 m = 100 cm.",
+      "uo": [
+       "Klopt: 1 m = 100 cm.",
+       "Nee, dat hoort bij Kilogram: 1 kg = 1000 g.",
+       "Nee, dat hoort bij Afronden: op een net getal.",
+       "Nee, dat hoort bij Verhouding: relatie tussen aantallen."
+      ],
+      "uh": "Meter: 1 m = 100 cm."
+     },
+     {
+      "v": "Een tafel is honderd centimeter lang, precies deze lengte-eenheid. Om welk begrip gaat het?",
+      "o": [
+       "Kilogram",
+       "Meter",
+       "Afronden",
+       "Verhouding"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een tafel is honderd centimeter lang, precies deze lengte-eenheid. Dat past bij Meter: 1 m = 100 cm.",
+      "uo": [
+       "Nee, dat hoort bij Kilogram: 1 kg = 1000 g.",
+       "Klopt: 1 m = 100 cm.",
+       "Nee, dat hoort bij Afronden: op een net getal.",
+       "Nee, dat hoort bij Verhouding: relatie tussen aantallen."
+      ],
+      "uh": "Meter: 1 m = 100 cm."
+     },
+     {
+      "v": "Een pak suiker van duizend gram weegt precies deze massa-eenheid. Welk begrip herken je hier?",
+      "o": [
+       "Afronden",
+       "Meter",
+       "Kilogram",
+       "Procent"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een pak suiker van duizend gram weegt precies deze massa-eenheid. Dat past bij Kilogram: 1 kg = 1000 g.",
+      "uo": [
+       "Nee, dat hoort bij Afronden: op een net getal.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Klopt: 1 kg = 1000 g.",
+       "Nee, dat hoort bij Procent: deel per honderd."
+      ],
+      "uh": "Kilogram: 1 kg = 1000 g."
+     },
+     {
+      "v": "De helft is vijftig hiervan. Wat is hier aan de hand?",
+      "o": [
+       "Verhouding",
+       "Procent",
+       "Schatten",
+       "Percentage"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De helft is vijftig hiervan. Dat past bij Percentage: deel in honderdsten.",
+      "uo": [
+       "Nee, dat hoort bij Verhouding: relatie tussen aantallen.",
+       "Nee, dat hoort bij Procent: deel per honderd.",
+       "Nee, dat hoort bij Schatten: bij benadering.",
+       "Klopt: deel in honderdsten."
+      ],
+      "uh": "Percentage: deel in honderdsten."
+     },
+     {
+      "v": "Van 3,7 maak je het nette hele getal 4. Welk begrip past hierbij?",
+      "o": [
+       "Afronden",
+       "Schatten",
+       "Meter",
+       "Procent"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Van 3,7 maak je het nette hele getal 4. Dat past bij Afronden: op een net getal.",
+      "uo": [
+       "Klopt: op een net getal.",
+       "Nee, dat hoort bij Schatten: bij benadering.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Nee, dat hoort bij Procent: deel per honderd."
+      ],
+      "uh": "Afronden: op een net getal."
+     },
+     {
+      "v": "Een deel geschreven in honderdsten, met een procentteken. Om welk begrip gaat het?",
+      "o": [
+       "Procent",
+       "Percentage",
+       "Schatten",
+       "Verhouding"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een deel geschreven in honderdsten, met een procentteken. Dat past bij Percentage: deel in honderdsten.",
+      "uo": [
+       "Nee, dat hoort bij Procent: deel per honderd.",
+       "Klopt: deel in honderdsten.",
+       "Nee, dat hoort bij Schatten: bij benadering.",
+       "Nee, dat hoort bij Verhouding: relatie tussen aantallen."
+      ],
+      "uh": "Percentage: deel in honderdsten."
+     },
+     {
+      "v": "Je bepaalt ongeveer, zonder precies uit te rekenen, hoeveel het wordt. Welk begrip herken je hier?",
+      "o": [
+       "Meter",
+       "Afronden",
+       "Schatten",
+       "Procent"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Je bepaalt ongeveer, zonder precies uit te rekenen, hoeveel het wordt. Dat past bij Schatten: bij benadering.",
+      "uo": [
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Nee, dat hoort bij Afronden: op een net getal.",
+       "Klopt: bij benadering.",
+       "Nee, dat hoort bij Procent: deel per honderd."
+      ],
+      "uh": "Schatten: bij benadering."
+     },
+     {
+      "v": "Voor elke jongen zijn er twee meisjes in de klas. Wat is hier aan de hand?",
+      "o": [
+       "Kwadraat",
+       "Procent",
+       "Meter",
+       "Verhouding"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Voor elke jongen zijn er twee meisjes in de klas. Dat past bij Verhouding: relatie tussen aantallen.",
+      "uo": [
+       "Nee, dat hoort bij Kwadraat: getal maal zichzelf.",
+       "Nee, dat hoort bij Procent: deel per honderd.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Klopt: relatie tussen aantallen."
+      ],
+      "uh": "Verhouding: relatie tussen aantallen."
+     },
+     {
+      "v": "Een zak aardappelen van vijf van deze eenheden. Welk begrip past hierbij?",
+      "o": [
+       "Kilogram",
+       "Meter",
+       "Afronden",
+       "Procent"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een zak aardappelen van vijf van deze eenheden. Dat past bij Kilogram: 1 kg = 1000 g.",
+      "uo": [
+       "Klopt: 1 kg = 1000 g.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Nee, dat hoort bij Afronden: op een net getal.",
+       "Nee, dat hoort bij Procent: deel per honderd."
+      ],
+      "uh": "Kilogram: 1 kg = 1000 g."
+     },
+     {
+      "v": "Tien van de honderd is tien hiervan. Om welk begrip gaat het?",
+      "o": [
+       "Verhouding",
+       "Procent",
+       "Percentage",
+       "Afronden"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Tien van de honderd is tien hiervan. Dat past bij Procent: deel per honderd.",
+      "uo": [
+       "Nee, dat hoort bij Verhouding: relatie tussen aantallen.",
+       "Klopt: deel per honderd.",
+       "Nee, dat hoort bij Percentage: deel in honderdsten.",
+       "Nee, dat hoort bij Afronden: op een net getal."
+      ],
+      "uh": "Procent: deel per honderd."
+     },
+     {
+      "v": "Ongeveer hoeveel 19 maal 21 is, zonder rekenmachine. Welk begrip herken je hier?",
+      "o": [
+       "Kwadraat",
+       "Kilogram",
+       "Schatten",
+       "Procent"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Ongeveer hoeveel 19 maal 21 is, zonder rekenmachine. Dat past bij Schatten: bij benadering.",
+      "uo": [
+       "Nee, dat hoort bij Kwadraat: getal maal zichzelf.",
+       "Nee, dat hoort bij Kilogram: 1 kg = 1000 g.",
+       "Klopt: bij benadering.",
+       "Nee, dat hoort bij Procent: deel per honderd."
+      ],
+      "uh": "Schatten: bij benadering."
+     },
+     {
+      "v": "Snel een antwoord bij benadering geven. Wat is hier aan de hand?",
+      "o": [
+       "Procent",
+       "Afronden",
+       "Meter",
+       "Schatten"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Snel een antwoord bij benadering geven. Dat past bij Schatten: bij benadering.",
+      "uo": [
+       "Nee, dat hoort bij Procent: deel per honderd.",
+       "Nee, dat hoort bij Afronden: op een net getal.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Klopt: bij benadering."
+      ],
+      "uh": "Schatten: bij benadering."
+     },
+     {
+      "v": "De eenheid van massa met duizend gram erin. Welk begrip past hierbij?",
+      "o": [
+       "Kilogram",
+       "Meter",
+       "Afronden",
+       "Procent"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De eenheid van massa met duizend gram erin. Dat past bij Kilogram: 1 kg = 1000 g.",
+      "uo": [
+       "Klopt: 1 kg = 1000 g.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Nee, dat hoort bij Afronden: op een net getal.",
+       "Nee, dat hoort bij Procent: deel per honderd."
+      ],
+      "uh": "Kilogram: 1 kg = 1000 g."
+     },
+     {
+      "v": "Een getal met zichzelf vermenigvuldigd. Om welk begrip gaat het?",
+      "o": [
+       "Kilogram",
+       "Kwadraat",
+       "Schatten",
+       "Procent"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een getal met zichzelf vermenigvuldigd. Dat past bij Kwadraat: getal maal zichzelf.",
+      "uo": [
+       "Nee, dat hoort bij Kilogram: 1 kg = 1000 g.",
+       "Klopt: getal maal zichzelf.",
+       "Nee, dat hoort bij Schatten: bij benadering.",
+       "Nee, dat hoort bij Procent: deel per honderd."
+      ],
+      "uh": "Kwadraat: getal maal zichzelf."
+     },
+     {
+      "v": "Drie tot de macht twee is drie maal drie. Welk begrip herken je hier?",
+      "o": [
+       "Meter",
+       "Verhouding",
+       "Kwadraat",
+       "Procent"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Drie tot de macht twee is drie maal drie. Dat past bij Kwadraat: getal maal zichzelf.",
+      "uo": [
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Nee, dat hoort bij Verhouding: relatie tussen aantallen.",
+       "Klopt: getal maal zichzelf.",
+       "Nee, dat hoort bij Procent: deel per honderd."
+      ],
+      "uh": "Kwadraat: getal maal zichzelf."
+     },
+     {
+      "v": "Je rekent 5 maal 5 uit, een getal maal zichzelf. Wat is hier aan de hand?",
+      "o": [
+       "Procent",
+       "Verhouding",
+       "Meter",
+       "Kwadraat"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Je rekent 5 maal 5 uit, een getal maal zichzelf. Dat past bij Kwadraat: getal maal zichzelf.",
+      "uo": [
+       "Nee, dat hoort bij Procent: deel per honderd.",
+       "Nee, dat hoort bij Verhouding: relatie tussen aantallen.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Klopt: getal maal zichzelf."
+      ],
+      "uh": "Kwadraat: getal maal zichzelf."
+     },
+     {
+      "v": "Een deel uitgedrukt per honderd. Welk begrip past hierbij?",
+      "o": [
+       "Procent",
+       "Meter",
+       "Afronden",
+       "Schatten"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een deel uitgedrukt per honderd. Dat past bij Procent: deel per honderd.",
+      "uo": [
+       "Klopt: deel per honderd.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Nee, dat hoort bij Afronden: op een net getal.",
+       "Nee, dat hoort bij Schatten: bij benadering."
+      ],
+      "uh": "Procent: deel per honderd."
+     },
+     {
+      "v": "De eenheid van lengte waar honderd centimeter in gaan. Om welk begrip gaat het?",
+      "o": [
+       "Kilogram",
+       "Meter",
+       "Percentage",
+       "Verhouding"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De eenheid van lengte waar honderd centimeter in gaan. Dat past bij Meter: 1 m = 100 cm.",
+      "uo": [
+       "Nee, dat hoort bij Kilogram: 1 kg = 1000 g.",
+       "Klopt: 1 m = 100 cm.",
+       "Nee, dat hoort bij Percentage: deel in honderdsten.",
+       "Nee, dat hoort bij Verhouding: relatie tussen aantallen."
+      ],
+      "uh": "Meter: 1 m = 100 cm."
+     },
+     {
+      "v": "De relatie tussen twee aantallen, zoals één op twee. Welk begrip herken je hier?",
+      "o": [
+       "Meter",
+       "Procent",
+       "Verhouding",
+       "Kwadraat"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De relatie tussen twee aantallen, zoals één op twee. Dat past bij Verhouding: relatie tussen aantallen.",
+      "uo": [
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Nee, dat hoort bij Procent: deel per honderd.",
+       "Klopt: relatie tussen aantallen.",
+       "Nee, dat hoort bij Kwadraat: getal maal zichzelf."
+      ],
+      "uh": "Verhouding: relatie tussen aantallen."
+     },
+     {
+      "v": "Het getal 148 wordt op honderdtallen precies honderd. Wat is hier aan de hand?",
+      "o": [
+       "Procent",
+       "Kilogram",
+       "Kwadraat",
+       "Afronden"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het getal 148 wordt op honderdtallen precies honderd. Dat past bij Afronden: op een net getal.",
+      "uo": [
+       "Nee, dat hoort bij Procent: deel per honderd.",
+       "Nee, dat hoort bij Kilogram: 1 kg = 1000 g.",
+       "Nee, dat hoort bij Kwadraat: getal maal zichzelf.",
+       "Klopt: op een net getal."
+      ],
+      "uh": "Afronden: op een net getal."
+     },
+     {
+      "v": "Van de honderd leerlingen is twintig ziek, dus twintig per honderd. Welk begrip past hierbij?",
+      "o": [
+       "Procent",
+       "Verhouding",
+       "Kwadraat",
+       "Schatten"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Van de honderd leerlingen is twintig ziek, dus twintig per honderd. Dat past bij Procent: deel per honderd.",
+      "uo": [
+       "Klopt: deel per honderd.",
+       "Nee, dat hoort bij Verhouding: relatie tussen aantallen.",
+       "Nee, dat hoort bij Kwadraat: getal maal zichzelf.",
+       "Nee, dat hoort bij Schatten: bij benadering."
+      ],
+      "uh": "Procent: deel per honderd."
+     },
+     {
+      "v": "Je maakt van een lang kommagetal een handig rond getal. Om welk begrip gaat het?",
+      "o": [
+       "Schatten",
+       "Afronden",
+       "Meter",
+       "Procent"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je maakt van een lang kommagetal een handig rond getal. Dat past bij Afronden: op een net getal.",
+      "uo": [
+       "Nee, dat hoort bij Schatten: bij benadering.",
+       "Klopt: op een net getal.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Nee, dat hoort bij Procent: deel per honderd."
+      ],
+      "uh": "Afronden: op een net getal."
+     },
+     {
+      "v": "Meng sap en water in de mengverhouding drie staat tot één. Welk begrip herken je hier?",
+      "o": [
+       "Kwadraat",
+       "Meter",
+       "Verhouding",
+       "Percentage"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Meng sap en water in de mengverhouding drie staat tot één. Dat past bij Verhouding: relatie tussen aantallen.",
+      "uo": [
+       "Nee, dat hoort bij Kwadraat: getal maal zichzelf.",
+       "Nee, dat hoort bij Meter: 1 m = 100 cm.",
+       "Klopt: relatie tussen aantallen.",
+       "Nee, dat hoort bij Percentage: deel in honderdsten."
+      ],
+      "uh": "Verhouding: relatie tussen aantallen."
+     },
+     {
+      "v": "De korting van twintig per honderd staat op het bord. Wat is hier aan de hand?",
+      "o": [
+       "Kwadraat",
+       "Procent",
+       "Kilogram",
+       "Percentage"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De korting van twintig per honderd staat op het bord. Dat past bij Percentage: deel in honderdsten.",
+      "uo": [
+       "Nee, dat hoort bij Kwadraat: getal maal zichzelf.",
+       "Nee, dat hoort bij Procent: deel per honderd.",
+       "Nee, dat hoort bij Kilogram: 1 kg = 1000 g.",
+       "Klopt: deel in honderdsten."
+      ],
+      "uh": "Percentage: deel in honderdsten."
      }
     ],
     "begrippen": [
@@ -4486,6 +5398,462 @@ var VAKKEN_VMBO = [
        "Klopt: c = √(3² + 4²) = √25 = 5."
       ],
       "uh": "Pythagoras: a² + b² = c², c is de schuine zijde."
+     },
+     {
+      "v": "Niet een van de rechte zijden, maar de lange. Welk begrip past hierbij?",
+      "o": [
+       "Schuine zijde",
+       "Rechte hoek",
+       "Gestrekte hoek",
+       "Stelling van Pythagoras"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Niet een van de rechte zijden, maar de lange. Dat past bij Schuine zijde: langste zijde c.",
+      "uo": [
+       "Klopt: langste zijde c.",
+       "Nee, dat hoort bij Rechte hoek: 90 graden.",
+       "Nee, dat hoort bij Gestrekte hoek: 180 graden.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c²."
+      ],
+      "uh": "Schuine zijde: langste zijde c."
+     },
+     {
+      "v": "De langste zijde van een rechthoekige driehoek, tegenover de rechte hoek. Om welk begrip gaat het?",
+      "o": [
+       "Rechte hoek",
+       "Schuine zijde",
+       "Gestrekte hoek",
+       "Stelling van Pythagoras"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De langste zijde van een rechthoekige driehoek, tegenover de rechte hoek. Dat past bij Schuine zijde: langste zijde c.",
+      "uo": [
+       "Nee, dat hoort bij Rechte hoek: 90 graden.",
+       "Klopt: langste zijde c.",
+       "Nee, dat hoort bij Gestrekte hoek: 180 graden.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c²."
+      ],
+      "uh": "Schuine zijde: langste zijde c."
+     },
+     {
+      "v": "Je berekent hoeveel de doos van 2 bij 3 bij 4 kan bevatten. Welk begrip herken je hier?",
+      "o": [
+       "Hoek",
+       "Gestrekte hoek",
+       "Volume",
+       "Schuine zijde"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je berekent hoeveel de doos van 2 bij 3 bij 4 kan bevatten. Dat past bij Volume: l · b · h.",
+      "uo": [
+       "Nee, dat hoort bij Hoek: opening in graden.",
+       "Nee, dat hoort bij Gestrekte hoek: 180 graden.",
+       "Klopt: l · b · h.",
+       "Nee, dat hoort bij Schuine zijde: langste zijde c."
+      ],
+      "uh": "Volume: l · b · h."
+     },
+     {
+      "v": "Groter dan negentig graden noem je stomp. Wat is hier aan de hand?",
+      "o": [
+       "Volume",
+       "Rechte hoek",
+       "Gestrekte hoek",
+       "Hoek"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Groter dan negentig graden noem je stomp. Dat past bij Hoek: opening in graden.",
+      "uo": [
+       "Nee, dat hoort bij Volume: l · b · h.",
+       "Nee, dat hoort bij Rechte hoek: 90 graden.",
+       "Nee, dat hoort bij Gestrekte hoek: 180 graden.",
+       "Klopt: opening in graden."
+      ],
+      "uh": "Hoek: opening in graden."
+     },
+     {
+      "v": "Een halve draai, een platte hoek van honderdtachtig graden. Welk begrip past hierbij?",
+      "o": [
+       "Gestrekte hoek",
+       "Hoek",
+       "Omtrek",
+       "Schuine zijde"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een halve draai, een platte hoek van honderdtachtig graden. Dat past bij Gestrekte hoek: 180 graden.",
+      "uo": [
+       "Klopt: 180 graden.",
+       "Nee, dat hoort bij Hoek: opening in graden.",
+       "Nee, dat hoort bij Omtrek: lengte van de rand.",
+       "Nee, dat hoort bij Schuine zijde: langste zijde c."
+      ],
+      "uh": "Gestrekte hoek: 180 graden."
+     },
+     {
+      "v": "De opening tussen twee lijnen, gemeten in graden. Om welk begrip gaat het?",
+      "o": [
+       "Rechte hoek",
+       "Hoek",
+       "Schuine zijde",
+       "Gestrekte hoek"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De opening tussen twee lijnen, gemeten in graden. Dat past bij Hoek: opening in graden.",
+      "uo": [
+       "Nee, dat hoort bij Rechte hoek: 90 graden.",
+       "Klopt: opening in graden.",
+       "Nee, dat hoort bij Schuine zijde: langste zijde c.",
+       "Nee, dat hoort bij Gestrekte hoek: 180 graden."
+      ],
+      "uh": "Hoek: opening in graden."
+     },
+     {
+      "v": "In een rechthoekige driehoek reken je met a² + b² = c². Welk begrip herken je hier?",
+      "o": [
+       "Hoek",
+       "Oppervlakte",
+       "Stelling van Pythagoras",
+       "Omtrek"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "In een rechthoekige driehoek reken je met a² + b² = c². Dat past bij Stelling van Pythagoras: a² + b² = c².",
+      "uo": [
+       "Nee, dat hoort bij Hoek: opening in graden.",
+       "Nee, dat hoort bij Oppervlakte: l · b.",
+       "Klopt: a² + b² = c².",
+       "Nee, dat hoort bij Omtrek: lengte van de rand."
+      ],
+      "uh": "Stelling van Pythagoras: a² + b² = c²."
+     },
+     {
+      "v": "Je meet hoeveel meter hek er om het vierkante veld heen moet. Wat is hier aan de hand?",
+      "o": [
+       "Volume",
+       "Stelling van Pythagoras",
+       "Hoek",
+       "Omtrek"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Je meet hoeveel meter hek er om het vierkante veld heen moet. Dat past bij Omtrek: lengte van de rand.",
+      "uo": [
+       "Nee, dat hoort bij Volume: l · b · h.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c².",
+       "Nee, dat hoort bij Hoek: opening in graden.",
+       "Klopt: lengte van de rand."
+      ],
+      "uh": "Omtrek: lengte van de rand."
+     },
+     {
+      "v": "De inhoud van een balk. Welk begrip past hierbij?",
+      "o": [
+       "Volume",
+       "Oppervlakte",
+       "Stelling van Pythagoras",
+       "Omtrek"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De inhoud van een balk. Dat past bij Volume: l · b · h.",
+      "uo": [
+       "Klopt: l · b · h.",
+       "Nee, dat hoort bij Oppervlakte: l · b.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c².",
+       "Nee, dat hoort bij Omtrek: lengte van de rand."
+      ],
+      "uh": "Volume: l · b · h."
+     },
+     {
+      "v": "De grootte van het platte vlak binnen de vorm. Om welk begrip gaat het?",
+      "o": [
+       "Omtrek",
+       "Oppervlakte",
+       "Hoek",
+       "Stelling van Pythagoras"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De grootte van het platte vlak binnen de vorm. Dat past bij Oppervlakte: l · b.",
+      "uo": [
+       "Nee, dat hoort bij Omtrek: lengte van de rand.",
+       "Klopt: l · b.",
+       "Nee, dat hoort bij Hoek: opening in graden.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c²."
+      ],
+      "uh": "Oppervlakte: l · b."
+     },
+     {
+      "v": "Bij zijden 3 en 4 vind je de schuine zijde 5. Welk begrip herken je hier?",
+      "o": [
+       "Volume",
+       "Rechte hoek",
+       "Stelling van Pythagoras",
+       "Hoek"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Bij zijden 3 en 4 vind je de schuine zijde 5. Dat past bij Stelling van Pythagoras: a² + b² = c².",
+      "uo": [
+       "Nee, dat hoort bij Volume: l · b · h.",
+       "Nee, dat hoort bij Rechte hoek: 90 graden.",
+       "Klopt: a² + b² = c².",
+       "Nee, dat hoort bij Hoek: opening in graden."
+      ],
+      "uh": "Stelling van Pythagoras: a² + b² = c²."
+     },
+     {
+      "v": "Met de twee korte zijden bereken je de schuine zijde. Wat is hier aan de hand?",
+      "o": [
+       "Omtrek",
+       "Oppervlakte",
+       "Hoek",
+       "Stelling van Pythagoras"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Met de twee korte zijden bereken je de schuine zijde. Dat past bij Stelling van Pythagoras: a² + b² = c².",
+      "uo": [
+       "Nee, dat hoort bij Omtrek: lengte van de rand.",
+       "Nee, dat hoort bij Oppervlakte: l · b.",
+       "Nee, dat hoort bij Hoek: opening in graden.",
+       "Klopt: a² + b² = c²."
+      ],
+      "uh": "Stelling van Pythagoras: a² + b² = c²."
+     },
+     {
+      "v": "Je vermenigvuldigt lengte, breedte en hoogte. Welk begrip past hierbij?",
+      "o": [
+       "Volume",
+       "Oppervlakte",
+       "Schuine zijde",
+       "Gestrekte hoek"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je vermenigvuldigt lengte, breedte en hoogte. Dat past bij Volume: l · b · h.",
+      "uo": [
+       "Klopt: l · b · h.",
+       "Nee, dat hoort bij Oppervlakte: l · b.",
+       "Nee, dat hoort bij Schuine zijde: langste zijde c.",
+       "Nee, dat hoort bij Gestrekte hoek: 180 graden."
+      ],
+      "uh": "Volume: l · b · h."
+     },
+     {
+      "v": "Waar de muur en de vloer elkaar loodrecht raken. Om welk begrip gaat het?",
+      "o": [
+       "Oppervlakte",
+       "Rechte hoek",
+       "Stelling van Pythagoras",
+       "Schuine zijde"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Waar de muur en de vloer elkaar loodrecht raken. Dat past bij Rechte hoek: 90 graden.",
+      "uo": [
+       "Nee, dat hoort bij Oppervlakte: l · b.",
+       "Klopt: 90 graden.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c².",
+       "Nee, dat hoort bij Schuine zijde: langste zijde c."
+      ],
+      "uh": "Rechte hoek: 90 graden."
+     },
+     {
+      "v": "Een hoek van negentig graden, zoals bij een winkelhaak. Welk begrip herken je hier?",
+      "o": [
+       "Stelling van Pythagoras",
+       "Gestrekte hoek",
+       "Rechte hoek",
+       "Schuine zijde"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een hoek van negentig graden, zoals bij een winkelhaak. Dat past bij Rechte hoek: 90 graden.",
+      "uo": [
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c².",
+       "Nee, dat hoort bij Gestrekte hoek: 180 graden.",
+       "Klopt: 90 graden.",
+       "Nee, dat hoort bij Schuine zijde: langste zijde c."
+      ],
+      "uh": "Rechte hoek: 90 graden."
+     },
+     {
+      "v": "De hoek in de hoek van een vierkant is precies negentig graden. Wat is hier aan de hand?",
+      "o": [
+       "Stelling van Pythagoras",
+       "Gestrekte hoek",
+       "Hoek",
+       "Rechte hoek"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De hoek in de hoek van een vierkant is precies negentig graden. Dat past bij Rechte hoek: 90 graden.",
+      "uo": [
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c².",
+       "Nee, dat hoort bij Gestrekte hoek: 180 graden.",
+       "Nee, dat hoort bij Hoek: opening in graden.",
+       "Klopt: 90 graden."
+      ],
+      "uh": "Rechte hoek: 90 graden."
+     },
+     {
+      "v": "Je vermenigvuldigt lengte en breedte van een rechthoek. Welk begrip past hierbij?",
+      "o": [
+       "Oppervlakte",
+       "Rechte hoek",
+       "Stelling van Pythagoras",
+       "Schuine zijde"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Je vermenigvuldigt lengte en breedte van een rechthoek. Dat past bij Oppervlakte: l · b.",
+      "uo": [
+       "Klopt: l · b.",
+       "Nee, dat hoort bij Rechte hoek: 90 graden.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c².",
+       "Nee, dat hoort bij Schuine zijde: langste zijde c."
+      ],
+      "uh": "Oppervlakte: l · b."
+     },
+     {
+      "v": "De zijde c die het langst is in een rechthoekige driehoek. Om welk begrip gaat het?",
+      "o": [
+       "Rechte hoek",
+       "Schuine zijde",
+       "Volume",
+       "Stelling van Pythagoras"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De zijde c die het langst is in een rechthoekige driehoek. Dat past bij Schuine zijde: langste zijde c.",
+      "uo": [
+       "Nee, dat hoort bij Rechte hoek: 90 graden.",
+       "Klopt: langste zijde c.",
+       "Nee, dat hoort bij Volume: l · b · h.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c²."
+      ],
+      "uh": "Schuine zijde: langste zijde c."
+     },
+     {
+      "v": "De totale lengte van de rand rondom een figuur. Welk begrip herken je hier?",
+      "o": [
+       "Volume",
+       "Oppervlakte",
+       "Omtrek",
+       "Stelling van Pythagoras"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De totale lengte van de rand rondom een figuur. Dat past bij Omtrek: lengte van de rand.",
+      "uo": [
+       "Nee, dat hoort bij Volume: l · b · h.",
+       "Nee, dat hoort bij Oppervlakte: l · b.",
+       "Klopt: lengte van de rand.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c²."
+      ],
+      "uh": "Omtrek: lengte van de rand."
+     },
+     {
+      "v": "Twee rechte hoeken naast elkaar vormen deze hoek. Wat is hier aan de hand?",
+      "o": [
+       "Schuine zijde",
+       "Hoek",
+       "Omtrek",
+       "Gestrekte hoek"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Twee rechte hoeken naast elkaar vormen deze hoek. Dat past bij Gestrekte hoek: 180 graden.",
+      "uo": [
+       "Nee, dat hoort bij Schuine zijde: langste zijde c.",
+       "Nee, dat hoort bij Hoek: opening in graden.",
+       "Nee, dat hoort bij Omtrek: lengte van de rand.",
+       "Klopt: 180 graden."
+      ],
+      "uh": "Gestrekte hoek: 180 graden."
+     },
+     {
+      "v": "Je berekent hoeveel vierkante meter tapijt de kamer van 3 bij 4 nodig heeft. Welk begrip past hierbij?",
+      "o": [
+       "Oppervlakte",
+       "Omtrek",
+       "Stelling van Pythagoras",
+       "Schuine zijde"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je berekent hoeveel vierkante meter tapijt de kamer van 3 bij 4 nodig heeft. Dat past bij Oppervlakte: l · b.",
+      "uo": [
+       "Klopt: l · b.",
+       "Nee, dat hoort bij Omtrek: lengte van de rand.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c².",
+       "Nee, dat hoort bij Schuine zijde: langste zijde c."
+      ],
+      "uh": "Oppervlakte: l · b."
+     },
+     {
+      "v": "De hoek van een rechte lijn, honderdtachtig graden. Om welk begrip gaat het?",
+      "o": [
+       "Rechte hoek",
+       "Gestrekte hoek",
+       "Oppervlakte",
+       "Omtrek"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De hoek van een rechte lijn, honderdtachtig graden. Dat past bij Gestrekte hoek: 180 graden.",
+      "uo": [
+       "Nee, dat hoort bij Rechte hoek: 90 graden.",
+       "Klopt: 180 graden.",
+       "Nee, dat hoort bij Oppervlakte: l · b.",
+       "Nee, dat hoort bij Omtrek: lengte van de rand."
+      ],
+      "uh": "Gestrekte hoek: 180 graden."
+     },
+     {
+      "v": "Alle zijden bij elkaar opgeteld. Welk begrip herken je hier?",
+      "o": [
+       "Hoek",
+       "Stelling van Pythagoras",
+       "Omtrek",
+       "Volume"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Alle zijden bij elkaar opgeteld. Dat past bij Omtrek: lengte van de rand.",
+      "uo": [
+       "Nee, dat hoort bij Hoek: opening in graden.",
+       "Nee, dat hoort bij Stelling van Pythagoras: a² + b² = c².",
+       "Klopt: lengte van de rand.",
+       "Nee, dat hoort bij Volume: l · b · h."
+      ],
+      "uh": "Omtrek: lengte van de rand."
+     },
+     {
+      "v": "Je meet met een geodriehoek de opening tussen twee lijnen in graden. Wat is hier aan de hand?",
+      "o": [
+       "Gestrekte hoek",
+       "Rechte hoek",
+       "Schuine zijde",
+       "Hoek"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je meet met een geodriehoek de opening tussen twee lijnen in graden. Dat past bij Hoek: opening in graden.",
+      "uo": [
+       "Nee, dat hoort bij Gestrekte hoek: 180 graden.",
+       "Nee, dat hoort bij Rechte hoek: 90 graden.",
+       "Nee, dat hoort bij Schuine zijde: langste zijde c.",
+       "Klopt: opening in graden."
+      ],
+      "uh": "Hoek: opening in graden."
      }
     ],
     "begrippen": [
@@ -4690,6 +6058,462 @@ var VAKKEN_VMBO = [
        "Klopt: de hele cirkel is samen 100%."
       ],
       "uh": "100%: De hele cirkel is samen 100%."
+     },
+     {
+      "v": "Hoe hoger de balk, hoe groter het aantal. Welk begrip past hierbij?",
+      "o": [
+       "Staafdiagram",
+       "Cirkeldiagram",
+       "Uitkomst",
+       "Modus"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Hoe hoger de balk, hoe groter het aantal. Dat past bij Staafdiagram: staven tonen aantallen.",
+      "uo": [
+       "Klopt: staven tonen aantallen.",
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat.",
+       "Nee, dat hoort bij Modus: meest voorkomend."
+      ],
+      "uh": "Staafdiagram: staven tonen aantallen."
+     },
+     {
+      "v": "In een grafiek met balken lees je per categorie het aantal af. Om welk begrip gaat het?",
+      "o": [
+       "Cirkeldiagram",
+       "Staafdiagram",
+       "Uitkomst",
+       "Modus"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In een grafiek met balken lees je per categorie het aantal af. Dat past bij Staafdiagram: staven tonen aantallen.",
+      "uo": [
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Klopt: staven tonen aantallen.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat.",
+       "Nee, dat hoort bij Modus: meest voorkomend."
+      ],
+      "uh": "Staafdiagram: staven tonen aantallen."
+     },
+     {
+      "v": "Je telt hoe vaak het cijfer 7 voorkomt in de lijst. Welk begrip herken je hier?",
+      "o": [
+       "Cirkeldiagram",
+       "Modus",
+       "Frequentie",
+       "Gemiddelde"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je telt hoe vaak het cijfer 7 voorkomt in de lijst. Dat past bij Frequentie: aantal keren.",
+      "uo": [
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Nee, dat hoort bij Modus: meest voorkomend.",
+       "Klopt: aantal keren.",
+       "Nee, dat hoort bij Gemiddelde: som : aantal."
+      ],
+      "uh": "Frequentie: aantal keren."
+     },
+     {
+      "v": "Kop of munt zijn de mogelijke resultaten. Wat is hier aan de hand?",
+      "o": [
+       "Gemiddelde",
+       "Staafdiagram",
+       "Mediaan",
+       "Uitkomst"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Kop of munt zijn de mogelijke resultaten. Dat past bij Uitkomst: mogelijk resultaat.",
+      "uo": [
+       "Nee, dat hoort bij Gemiddelde: som : aantal.",
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen.",
+       "Nee, dat hoort bij Mediaan: het middelste getal.",
+       "Klopt: mogelijk resultaat."
+      ],
+      "uh": "Uitkomst: mogelijk resultaat."
+     },
+     {
+      "v": "De kans om met een dobbelsteen een zes te gooien is één op zes. Welk begrip past hierbij?",
+      "o": [
+       "Kans",
+       "Gemiddelde",
+       "Cirkeldiagram",
+       "Uitkomst"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De kans om met een dobbelsteen een zes te gooien is één op zes. Dat past bij Kans: gunstig : totaal.",
+      "uo": [
+       "Klopt: gunstig : totaal.",
+       "Nee, dat hoort bij Gemiddelde: som : aantal.",
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat."
+      ],
+      "uh": "Kans: gunstig : totaal."
+     },
+     {
+      "v": "Een mogelijk resultaat van een kansexperiment. Om welk begrip gaat het?",
+      "o": [
+       "Staafdiagram",
+       "Uitkomst",
+       "Mediaan",
+       "Gemiddelde"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een mogelijk resultaat van een kansexperiment. Dat past bij Uitkomst: mogelijk resultaat.",
+      "uo": [
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen.",
+       "Klopt: mogelijk resultaat.",
+       "Nee, dat hoort bij Mediaan: het middelste getal.",
+       "Nee, dat hoort bij Gemiddelde: som : aantal."
+      ],
+      "uh": "Uitkomst: mogelijk resultaat."
+     },
+     {
+      "v": "In een taartvormige grafiek is de hele cirkel samen honderd procent. Welk begrip herken je hier?",
+      "o": [
+       "Mediaan",
+       "Staafdiagram",
+       "Cirkeldiagram",
+       "Kans"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "In een taartvormige grafiek is de hele cirkel samen honderd procent. Dat past bij Cirkeldiagram: hele cirkel = 100%.",
+      "uo": [
+       "Nee, dat hoort bij Mediaan: het middelste getal.",
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen.",
+       "Klopt: hele cirkel = 100%.",
+       "Nee, dat hoort bij Kans: gunstig : totaal."
+      ],
+      "uh": "Cirkeldiagram: hele cirkel = 100%."
+     },
+     {
+      "v": "In de rij 2, 3, 3, 5 komt de 3 het vaakst voor. Wat is hier aan de hand?",
+      "o": [
+       "Uitkomst",
+       "Cirkeldiagram",
+       "Staafdiagram",
+       "Modus"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In de rij 2, 3, 3, 5 komt de 3 het vaakst voor. Dat past bij Modus: meest voorkomend.",
+      "uo": [
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat.",
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen.",
+       "Klopt: meest voorkomend."
+      ],
+      "uh": "Modus: meest voorkomend."
+     },
+     {
+      "v": "De 3 komt vier keer voor, dat is dit getal. Welk begrip past hierbij?",
+      "o": [
+       "Frequentie",
+       "Modus",
+       "Uitkomst",
+       "Mediaan"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De 3 komt vier keer voor, dat is dit getal. Dat past bij Frequentie: aantal keren.",
+      "uo": [
+       "Klopt: aantal keren.",
+       "Nee, dat hoort bij Modus: meest voorkomend.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat.",
+       "Nee, dat hoort bij Mediaan: het middelste getal."
+      ],
+      "uh": "Frequentie: aantal keren."
+     },
+     {
+      "v": "De cijfers 6, 7 en 8 leveren samen precies zeven op. Om welk begrip gaat het?",
+      "o": [
+       "Mediaan",
+       "Gemiddelde",
+       "Modus",
+       "Staafdiagram"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De cijfers 6, 7 en 8 leveren samen precies zeven op. Dat past bij Gemiddelde: som : aantal.",
+      "uo": [
+       "Nee, dat hoort bij Mediaan: het middelste getal.",
+       "Klopt: som : aantal.",
+       "Nee, dat hoort bij Modus: meest voorkomend.",
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen."
+      ],
+      "uh": "Gemiddelde: som : aantal."
+     },
+     {
+      "v": "Elk stuk van de taart toont een deel van het geheel. Welk begrip herken je hier?",
+      "o": [
+       "Mediaan",
+       "Uitkomst",
+       "Cirkeldiagram",
+       "Kans"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Elk stuk van de taart toont een deel van het geheel. Dat past bij Cirkeldiagram: hele cirkel = 100%.",
+      "uo": [
+       "Nee, dat hoort bij Mediaan: het middelste getal.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat.",
+       "Klopt: hele cirkel = 100%.",
+       "Nee, dat hoort bij Kans: gunstig : totaal."
+      ],
+      "uh": "Cirkeldiagram: hele cirkel = 100%."
+     },
+     {
+      "v": "Een ronde grafiek waarin delen als taartpunten staan. Wat is hier aan de hand?",
+      "o": [
+       "Kans",
+       "Staafdiagram",
+       "Frequentie",
+       "Cirkeldiagram"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een ronde grafiek waarin delen als taartpunten staan. Dat past bij Cirkeldiagram: hele cirkel = 100%.",
+      "uo": [
+       "Nee, dat hoort bij Kans: gunstig : totaal.",
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen.",
+       "Nee, dat hoort bij Frequentie: aantal keren.",
+       "Klopt: hele cirkel = 100%."
+      ],
+      "uh": "Cirkeldiagram: hele cirkel = 100%."
+     },
+     {
+      "v": "Het aantal keren dat een waarde voorkomt. Welk begrip past hierbij?",
+      "o": [
+       "Frequentie",
+       "Modus",
+       "Cirkeldiagram",
+       "Gemiddelde"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het aantal keren dat een waarde voorkomt. Dat past bij Frequentie: aantal keren.",
+      "uo": [
+       "Klopt: aantal keren.",
+       "Nee, dat hoort bij Modus: meest voorkomend.",
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Nee, dat hoort bij Gemiddelde: som : aantal."
+      ],
+      "uh": "Frequentie: aantal keren."
+     },
+     {
+      "v": "Precies de helft ligt eronder, de helft erboven. Om welk begrip gaat het?",
+      "o": [
+       "Staafdiagram",
+       "Mediaan",
+       "Cirkeldiagram",
+       "Uitkomst"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Precies de helft ligt eronder, de helft erboven. Dat past bij Mediaan: het middelste getal.",
+      "uo": [
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen.",
+       "Klopt: het middelste getal.",
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat."
+      ],
+      "uh": "Mediaan: het middelste getal."
+     },
+     {
+      "v": "Het middelste getal als je alles op volgorde zet. Welk begrip herken je hier?",
+      "o": [
+       "Gemiddelde",
+       "Modus",
+       "Mediaan",
+       "Uitkomst"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het middelste getal als je alles op volgorde zet. Dat past bij Mediaan: het middelste getal.",
+      "uo": [
+       "Nee, dat hoort bij Gemiddelde: som : aantal.",
+       "Nee, dat hoort bij Modus: meest voorkomend.",
+       "Klopt: het middelste getal.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat."
+      ],
+      "uh": "Mediaan: het middelste getal."
+     },
+     {
+      "v": "Zet je 1, 3 en 5 op volgorde, dan is 3 het middelste getal. Wat is hier aan de hand?",
+      "o": [
+       "Uitkomst",
+       "Modus",
+       "Gemiddelde",
+       "Mediaan"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Zet je 1, 3 en 5 op volgorde, dan is 3 het middelste getal. Dat past bij Mediaan: het middelste getal.",
+      "uo": [
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat.",
+       "Nee, dat hoort bij Modus: meest voorkomend.",
+       "Nee, dat hoort bij Gemiddelde: som : aantal.",
+       "Klopt: het middelste getal."
+      ],
+      "uh": "Mediaan: het middelste getal."
+     },
+     {
+      "v": "De som van de getallen gedeeld door hoeveel het er zijn. Welk begrip past hierbij?",
+      "o": [
+       "Gemiddelde",
+       "Kans",
+       "Staafdiagram",
+       "Uitkomst"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De som van de getallen gedeeld door hoeveel het er zijn. Dat past bij Gemiddelde: som : aantal.",
+      "uo": [
+       "Klopt: som : aantal.",
+       "Nee, dat hoort bij Kans: gunstig : totaal.",
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat."
+      ],
+      "uh": "Gemiddelde: som : aantal."
+     },
+     {
+      "v": "Een grafiek waarin staven de aantallen tonen. Om welk begrip gaat het?",
+      "o": [
+       "Cirkeldiagram",
+       "Staafdiagram",
+       "Gemiddelde",
+       "Modus"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een grafiek waarin staven de aantallen tonen. Dat past bij Staafdiagram: staven tonen aantallen.",
+      "uo": [
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Klopt: staven tonen aantallen.",
+       "Nee, dat hoort bij Gemiddelde: som : aantal.",
+       "Nee, dat hoort bij Modus: meest voorkomend."
+      ],
+      "uh": "Staafdiagram: staven tonen aantallen."
+     },
+     {
+      "v": "Het getal dat het meest voorkomt. Welk begrip herken je hier?",
+      "o": [
+       "Gemiddelde",
+       "Mediaan",
+       "Modus",
+       "Staafdiagram"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het getal dat het meest voorkomt. Dat past bij Modus: meest voorkomend.",
+      "uo": [
+       "Nee, dat hoort bij Gemiddelde: som : aantal.",
+       "Nee, dat hoort bij Mediaan: het middelste getal.",
+       "Klopt: meest voorkomend.",
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen."
+      ],
+      "uh": "Modus: meest voorkomend."
+     },
+     {
+      "v": "Bij een eerlijke munt is de kans op kop één op twee. Wat is hier aan de hand?",
+      "o": [
+       "Uitkomst",
+       "Modus",
+       "Frequentie",
+       "Kans"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Bij een eerlijke munt is de kans op kop één op twee. Dat past bij Kans: gunstig : totaal.",
+      "uo": [
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat.",
+       "Nee, dat hoort bij Modus: meest voorkomend.",
+       "Nee, dat hoort bij Frequentie: aantal keren.",
+       "Klopt: gunstig : totaal."
+      ],
+      "uh": "Kans: gunstig : totaal."
+     },
+     {
+      "v": "Je telt 2, 4 en 6 op en deelt door drie. Welk begrip past hierbij?",
+      "o": [
+       "Gemiddelde",
+       "Modus",
+       "Mediaan",
+       "Cirkeldiagram"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je telt 2, 4 en 6 op en deelt door drie. Dat past bij Gemiddelde: som : aantal.",
+      "uo": [
+       "Klopt: som : aantal.",
+       "Nee, dat hoort bij Modus: meest voorkomend.",
+       "Nee, dat hoort bij Mediaan: het middelste getal.",
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%."
+      ],
+      "uh": "Gemiddelde: som : aantal."
+     },
+     {
+      "v": "Het aantal gunstige uitkomsten gedeeld door het totaal. Om welk begrip gaat het?",
+      "o": [
+       "Gemiddelde",
+       "Kans",
+       "Cirkeldiagram",
+       "Uitkomst"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het aantal gunstige uitkomsten gedeeld door het totaal. Dat past bij Kans: gunstig : totaal.",
+      "uo": [
+       "Nee, dat hoort bij Gemiddelde: som : aantal.",
+       "Klopt: gunstig : totaal.",
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat."
+      ],
+      "uh": "Kans: gunstig : totaal."
+     },
+     {
+      "v": "De waarde met de hoogste frequentie. Welk begrip herken je hier?",
+      "o": [
+       "Staafdiagram",
+       "Cirkeldiagram",
+       "Modus",
+       "Uitkomst"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De waarde met de hoogste frequentie. Dat past bij Modus: meest voorkomend.",
+      "uo": [
+       "Nee, dat hoort bij Staafdiagram: staven tonen aantallen.",
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Klopt: meest voorkomend.",
+       "Nee, dat hoort bij Uitkomst: mogelijk resultaat."
+      ],
+      "uh": "Modus: meest voorkomend."
+     },
+     {
+      "v": "Bij het gooien van een dobbelsteen is een 4 een mogelijk resultaat. Wat is hier aan de hand?",
+      "o": [
+       "Gemiddelde",
+       "Kans",
+       "Cirkeldiagram",
+       "Uitkomst"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij het gooien van een dobbelsteen is een 4 een mogelijk resultaat. Dat past bij Uitkomst: mogelijk resultaat.",
+      "uo": [
+       "Nee, dat hoort bij Gemiddelde: som : aantal.",
+       "Nee, dat hoort bij Kans: gunstig : totaal.",
+       "Nee, dat hoort bij Cirkeldiagram: hele cirkel = 100%.",
+       "Klopt: mogelijk resultaat."
+      ],
+      "uh": "Uitkomst: mogelijk resultaat."
      }
     ],
     "begrippen": [

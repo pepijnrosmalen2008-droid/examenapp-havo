@@ -344,7 +344,7 @@ var VAKKEN_VMBO = [
      "Lineaire vergelijkingen oplossen",
      "Inklemmen bij kwadratische/exponentiële formules"
     ],
-    "nSv": 9,
+    "nSv": 33,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -361,7 +361,7 @@ var VAKKEN_VMBO = [
      "Samengestelde eenheden (bv. km/h ↔ m/s)",
      "Omtrek, oppervlakte en volume"
     ],
-    "nSv": 8,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -378,7 +378,7 @@ var VAKKEN_VMBO = [
      "Kijklijnen en zichtveld",
      "Symmetrie"
     ],
-    "nSv": 8,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
@@ -394,7 +394,7 @@ var VAKKEN_VMBO = [
      "Cirkeldiagram en histogram",
      "Gemiddelde, modus en mediaan"
     ],
-    "nSv": 8,
+    "nSv": 32,
     "nOe": 0,
     "nBeg": 8,
     "hasSam": true
