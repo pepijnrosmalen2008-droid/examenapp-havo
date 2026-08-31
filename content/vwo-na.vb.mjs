@@ -13,4 +13,18 @@ export default {
     Watt: ['De SI-eenheid van vermogen, joule per seconde', 'Hoeveel energie een apparaat per seconde gebruikt'],
     'Numeriek model': ['Je berekent de beweging stap voor stap in kleine tijdstapjes', 'Een computer rekent de baan uit met kleine stapjes tijd'],
   },
+  B: {
+    Golflengte: ['De afstand tussen twee opeenvolgende golftoppen', 'Uit v = f·λ bereken je deze bij bekende snelheid en frequentie'],
+    Frequentie: ['Het aantal trillingen per seconde, in hertz', 'Een hogere waarde geeft een hogere toon'],
+    'Transversale golf': ['De trilling staat loodrecht op de richting waarin de golf gaat, zoals bij licht', 'Een golf op het water, en alleen deze soort kun je polariseren'],
+    'Longitudinale golf': ['De trilling gaat in dezelfde richting als de golf, zoals bij geluid', 'Een drukgolf van samengeperste en uitgerekte lucht'],
+    'Staande golf': ['Twee tegengestelde golven vormen een patroon met stilstaande punten', 'Op een snaar ontstaan vaste knopen en buiken'],
+    Knoop: ['Een punt in een staande golf dat helemaal stilstaat', 'Aan de uiteinden van een trillende snaar zitten deze punten'],
+    Buik: ['Een punt in een staande golf met de grootste uitwijking', 'Precies tussen twee stilstaande punten trilt het maximaal'],
+    Interferentie: ['Twee golven versterken of doven elkaar afhankelijk van hun fase', 'In fase geeft versterking, in tegenfase uitdoving'],
+    Diffractie: ['Golven buigen om een obstakel of door een smalle opening heen', 'Licht dat door een spleet gaat, waaiert uit'],
+    Breking: ['Licht verandert van richting als het van lucht naar glas gaat', 'De straal buigt naar de normaal toe in een dichter medium'],
+    'Doppler-effect': ['De sirene klinkt hoger bij nadering en lager na het passeren', 'Beweegt de bron naar je toe, dan hoor je een hogere toon'],
+    Resonantie: ['De amplitude loopt sterk op als je op de eigenfrequentie aandrijft', 'Een brug die op zijn eigen trilling wordt aangedreven, kan bezwijken'],
+  },
 };
