@@ -373,7 +373,18 @@ async function loadSpecs(specfile) {
   if (abs.endsWith('.json')) return JSON.parse(fs.readFileSync(abs, 'utf8'));
   const mod = await import(pathToFileURL(abs).href);
   const s = mod.default || mod.specs || mod.SPECS;
-  return Array.isArray(s) ? s : [s];
+  const specs = Array.isArray(s) ? s : [s];
+  // Optioneel situatiebestand: content/<vak>.vb.mjs met { domein: { term: [situaties] } }.
+  // Zo blijven de grote spec-bestanden schoon en staan de situaties compact apart.
+  const vbAbs = abs.replace(/\.spec\.mjs$/, '.vb.mjs');
+  if (vbAbs !== abs && fs.existsSync(vbAbs)) {
+    const map = (await import(pathToFileURL(vbAbs).href)).default || {};
+    for (const spec of specs) {
+      const dm = map[spec.domein] || {};
+      for (const c of (spec.concepten || [])) { if (dm[c.t] && !c.vb) c.vb = dm[c.t]; }
+    }
+  }
+  return specs;
 }
 
 async function runSpecFile(specfile, write) {

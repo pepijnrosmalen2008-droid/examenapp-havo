@@ -9025,6 +9025,652 @@ var VAKKEN_VMBO = [
        "Klopt: de omgeving (zon) maakt het verschil."
       ],
       "uh": "Fenotype = genotype + omgeving."
+     },
+     {
+      "v": "Deze vorm van een gen overheerst en is altijd zichtbaar als hij aanwezig is. Welk begrip past hierbij?",
+      "o": [
+       "Dominant allel",
+       "Orgaan",
+       "Genotype",
+       "Fenotype"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Deze vorm van een gen overheerst en is altijd zichtbaar als hij aanwezig is. Dat past bij Dominant allel: overheerst altijd.",
+      "uo": [
+       "Klopt: overheerst altijd.",
+       "Nee, dat hoort bij Orgaan: meerdere weefsels met een taak.",
+       "Nee, dat hoort bij Genotype: de genen.",
+       "Nee, dat hoort bij Fenotype: zichtbare eigenschappen."
+      ],
+      "uh": "Dominant allel: overheerst altijd."
+     },
+     {
+      "v": "Het groene korreltje in plantencellen dat zonlicht opvangt. Om welk begrip gaat het?",
+      "o": [
+       "Weefsel",
+       "Bladgroenkorrel",
+       "Fenotype",
+       "Celmembraan"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het groene korreltje in plantencellen dat zonlicht opvangt. Dat past bij Bladgroenkorrel: doet fotosynthese.",
+      "uo": [
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Klopt: doet fotosynthese.",
+       "Nee, dat hoort bij Fenotype: zichtbare eigenschappen.",
+       "Nee, dat hoort bij Celmembraan: omhulsel van de cel."
+      ],
+      "uh": "Bladgroenkorrel: doet fotosynthese."
+     },
+     {
+      "v": "De eigenschappen die je echt kunt waarnemen aan een organisme. Welk begrip herken je hier?",
+      "o": [
+       "Recessief allel",
+       "Orgaan",
+       "Fenotype",
+       "Natuurlijke selectie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De eigenschappen die je echt kunt waarnemen aan een organisme. Dat past bij Fenotype: zichtbare eigenschappen.",
+      "uo": [
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar.",
+       "Nee, dat hoort bij Orgaan: meerdere weefsels met een taak.",
+       "Klopt: zichtbare eigenschappen.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepasten overleven."
+      ],
+      "uh": "Fenotype: zichtbare eigenschappen."
+     },
+     {
+      "v": "In dit bolletje midden in de cel ligt het erfelijk materiaal opgeslagen. Wat is hier aan de hand?",
+      "o": [
+       "Recessief allel",
+       "Weefsel",
+       "Genotype",
+       "Celkern"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In dit bolletje midden in de cel ligt het erfelijk materiaal opgeslagen. Dat past bij Celkern: bevat het DNA.",
+      "uo": [
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar.",
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Nee, dat hoort bij Genotype: de genen.",
+       "Klopt: bevat het DNA."
+      ],
+      "uh": "Celkern: bevat het DNA."
+     },
+     {
+      "v": "Je huid is opgebouwd uit miljoenen van deze piepkleine bouwsteentjes. Welk begrip past hierbij?",
+      "o": [
+       "Cel",
+       "Weefsel",
+       "Orgaan",
+       "Genotype"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je huid is opgebouwd uit miljoenen van deze piepkleine bouwsteentjes. Dat past bij Cel: kleinste bouwsteen.",
+      "uo": [
+       "Klopt: kleinste bouwsteen.",
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Nee, dat hoort bij Orgaan: meerdere weefsels met een taak.",
+       "Nee, dat hoort bij Genotype: de genen."
+      ],
+      "uh": "Cel: kleinste bouwsteen."
+     },
+     {
+      "v": "De geleiachtige vloeistof die de hele cel opvult. Om welk begrip gaat het?",
+      "o": [
+       "Dominant allel",
+       "Cytoplasma",
+       "Natuurlijke selectie",
+       "Orgaanstelsel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De geleiachtige vloeistof die de hele cel opvult. Dat past bij Cytoplasma: vloeistof in de cel.",
+      "uo": [
+       "Nee, dat hoort bij Dominant allel: overheerst altijd.",
+       "Klopt: vloeistof in de cel.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepasten overleven.",
+       "Nee, dat hoort bij Orgaanstelsel: samenwerkende organen."
+      ],
+      "uh": "Cytoplasma: vloeistof in de cel."
+     },
+     {
+      "v": "Alle erfelijke informatie die je van je ouders hebt gekregen. Welk begrip herken je hier?",
+      "o": [
+       "DNA",
+       "Fenotype",
+       "Genotype",
+       "Dominant allel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Alle erfelijke informatie die je van je ouders hebt gekregen. Dat past bij Genotype: de genen.",
+      "uo": [
+       "Nee, dat hoort bij DNA: erfelijke informatie.",
+       "Nee, dat hoort bij Fenotype: zichtbare eigenschappen.",
+       "Klopt: de genen.",
+       "Nee, dat hoort bij Dominant allel: overheerst altijd."
+      ],
+      "uh": "Genotype: de genen."
+     },
+     {
+      "v": "Het hart bestaat uit meerdere weefsels die samen bloed rondpompen. Wat is hier aan de hand?",
+      "o": [
+       "Cytoplasma",
+       "Natuurlijke selectie",
+       "Vacuole",
+       "Orgaan"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het hart bestaat uit meerdere weefsels die samen bloed rondpompen. Dat past bij Orgaan: meerdere weefsels met een taak.",
+      "uo": [
+       "Nee, dat hoort bij Cytoplasma: vloeistof in de cel.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepasten overleven.",
+       "Nee, dat hoort bij Vacuole: vochtblaas in plantencel.",
+       "Klopt: meerdere weefsels met een taak."
+      ],
+      "uh": "Orgaan: meerdere weefsels met een taak."
+     },
+     {
+      "v": "Allemaal spiercellen met dezelfde vorm en taak liggen bij elkaar. Welk begrip past hierbij?",
+      "o": [
+       "Weefsel",
+       "Cel",
+       "Orgaan",
+       "Natuurlijke selectie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Allemaal spiercellen met dezelfde vorm en taak liggen bij elkaar. Dat past bij Weefsel: groep gelijke cellen.",
+      "uo": [
+       "Klopt: groep gelijke cellen.",
+       "Nee, dat hoort bij Cel: kleinste bouwsteen.",
+       "Nee, dat hoort bij Orgaan: meerdere weefsels met een taak.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepasten overleven."
+      ],
+      "uh": "Weefsel: groep gelijke cellen."
+     },
+     {
+      "v": "Een genvariant die de andere overstemt en het uiterlijk bepaalt. Om welk begrip gaat het?",
+      "o": [
+       "Orgaan",
+       "Dominant allel",
+       "Genotype",
+       "Fenotype"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een genvariant die de andere overstemt en het uiterlijk bepaalt. Dat past bij Dominant allel: overheerst altijd.",
+      "uo": [
+       "Nee, dat hoort bij Orgaan: meerdere weefsels met een taak.",
+       "Klopt: overheerst altijd.",
+       "Nee, dat hoort bij Genotype: de genen.",
+       "Nee, dat hoort bij Fenotype: zichtbare eigenschappen."
+      ],
+      "uh": "Dominant allel: overheerst altijd."
+     },
+     {
+      "v": "Hart en bloedvaten werken samen als één geheel om bloed rond te pompen. Welk begrip herken je hier?",
+      "o": [
+       "Weefsel",
+       "Orgaan",
+       "Orgaanstelsel",
+       "Celmembraan"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Hart en bloedvaten werken samen als één geheel om bloed rond te pompen. Dat past bij Orgaanstelsel: samenwerkende organen.",
+      "uo": [
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Nee, dat hoort bij Orgaan: meerdere weefsels met een taak.",
+       "Klopt: samenwerkende organen.",
+       "Nee, dat hoort bij Celmembraan: omhulsel van de cel."
+      ],
+      "uh": "Orgaanstelsel: samenwerkende organen."
+     },
+     {
+      "v": "De grote holte vol vocht in een plantencel. Wat is hier aan de hand?",
+      "o": [
+       "Recessief allel",
+       "Weefsel",
+       "Genotype",
+       "Vacuole"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De grote holte vol vocht in een plantencel. Dat past bij Vacuole: vochtblaas in plantencel.",
+      "uo": [
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar.",
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Nee, dat hoort bij Genotype: de genen.",
+       "Klopt: vochtblaas in plantencel."
+      ],
+      "uh": "Vacuole: vochtblaas in plantencel."
+     },
+     {
+      "v": "Je bruine ogen en krullend haar zijn wat je aan de buitenkant ziet. Welk begrip past hierbij?",
+      "o": [
+       "Fenotype",
+       "Genotype",
+       "Celmembraan",
+       "Celwand"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je bruine ogen en krullend haar zijn wat je aan de buitenkant ziet. Dat past bij Fenotype: zichtbare eigenschappen.",
+      "uo": [
+       "Klopt: zichtbare eigenschappen.",
+       "Nee, dat hoort bij Genotype: de genen.",
+       "Nee, dat hoort bij Celmembraan: omhulsel van de cel.",
+       "Nee, dat hoort bij Celwand: stevige laag bij planten."
+      ],
+      "uh": "Fenotype: zichtbare eigenschappen."
+     },
+     {
+      "v": "De lange dubbele streng die alle erfelijke informatie bevat. Welk begrip herken je hier?",
+      "o": [
+       "Bladgroenkorrel",
+       "DNA",
+       "Celwand",
+       "Dominant allel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De lange dubbele streng die alle erfelijke informatie bevat. Dat past bij DNA: erfelijke informatie.",
+      "uo": [
+       "Nee, dat hoort bij Bladgroenkorrel: doet fotosynthese.",
+       "Klopt: erfelijke informatie.",
+       "Nee, dat hoort bij Celwand: stevige laag bij planten.",
+       "Nee, dat hoort bij Dominant allel: overheerst altijd."
+      ],
+      "uh": "DNA: erfelijke informatie."
+     },
+     {
+      "v": "Om een plantencel zit een stevige laag die de cel stevigheid geeft. Wat is hier aan de hand?",
+      "o": [
+       "Weefsel",
+       "Celmembraan",
+       "Celwand",
+       "Recessief allel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Om een plantencel zit een stevige laag die de cel stevigheid geeft. Dat past bij Celwand: stevige laag bij planten.",
+      "uo": [
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Nee, dat hoort bij Celmembraan: omhulsel van de cel.",
+       "Klopt: stevige laag bij planten.",
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar."
+      ],
+      "uh": "Celwand: stevige laag bij planten."
+     },
+     {
+      "v": "De buitenrand van een dierlijke cel houdt de inhoud bij elkaar. Welk begrip past hierbij?",
+      "o": [
+       "Natuurlijke selectie",
+       "Weefsel",
+       "Gen",
+       "Celmembraan"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De buitenrand van een dierlijke cel houdt de inhoud bij elkaar. Dat past bij Celmembraan: omhulsel van de cel.",
+      "uo": [
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepasten overleven.",
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Nee, dat hoort bij Gen: code voor een eigenschap.",
+       "Klopt: omhulsel van de cel."
+      ],
+      "uh": "Celmembraan: omhulsel van de cel."
+     },
+     {
+      "v": "Het molecuul waarin de code voor al je eigenschappen staat. Om welk begrip gaat het?",
+      "o": [
+       "DNA",
+       "Gen",
+       "Chromosoom",
+       "Weefsel"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het molecuul waarin de code voor al je eigenschappen staat. Dat past bij DNA: erfelijke informatie.",
+      "uo": [
+       "Klopt: erfelijke informatie.",
+       "Nee, dat hoort bij Gen: code voor een eigenschap.",
+       "Nee, dat hoort bij Chromosoom: opgerold DNA.",
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen."
+      ],
+      "uh": "DNA: erfelijke informatie."
+     },
+     {
+      "v": "Als een cel gaat delen, wordt het DNA opgerold tot compacte pakketjes. Welk begrip herken je hier?",
+      "o": [
+       "Gen",
+       "Chromosoom",
+       "DNA",
+       "Recessief allel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Als een cel gaat delen, wordt het DNA opgerold tot compacte pakketjes. Dat past bij Chromosoom: opgerold DNA.",
+      "uo": [
+       "Nee, dat hoort bij Gen: code voor een eigenschap.",
+       "Klopt: opgerold DNA.",
+       "Nee, dat hoort bij DNA: erfelijke informatie.",
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar."
+      ],
+      "uh": "Chromosoom: opgerold DNA."
+     },
+     {
+      "v": "Maag en darmen vormen samen één samenwerkend systeem. Wat is hier aan de hand?",
+      "o": [
+       "Fenotype",
+       "Genotype",
+       "Orgaanstelsel",
+       "Chromosoom"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Maag en darmen vormen samen één samenwerkend systeem. Dat past bij Orgaanstelsel: samenwerkende organen.",
+      "uo": [
+       "Nee, dat hoort bij Fenotype: zichtbare eigenschappen.",
+       "Nee, dat hoort bij Genotype: de genen.",
+       "Klopt: samenwerkende organen.",
+       "Nee, dat hoort bij Chromosoom: opgerold DNA."
+      ],
+      "uh": "Orgaanstelsel: samenwerkende organen."
+     },
+     {
+      "v": "De best aangepaste individuen planten zich voort, de rest sterft uit. Welk begrip past hierbij?",
+      "o": [
+       "Celmembraan",
+       "Fenotype",
+       "Vacuole",
+       "Natuurlijke selectie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De best aangepaste individuen planten zich voort, de rest sterft uit. Dat past bij Natuurlijke selectie: best aangepasten overleven.",
+      "uo": [
+       "Nee, dat hoort bij Celmembraan: omhulsel van de cel.",
+       "Nee, dat hoort bij Fenotype: zichtbare eigenschappen.",
+       "Nee, dat hoort bij Vacuole: vochtblaas in plantencel.",
+       "Klopt: best aangepasten overleven."
+      ],
+      "uh": "Natuurlijke selectie: best aangepasten overleven."
+     },
+     {
+      "v": "Verschillende weefsels vormen samen de maag, met een eigen taak. Om welk begrip gaat het?",
+      "o": [
+       "Orgaan",
+       "Weefsel",
+       "Orgaanstelsel",
+       "DNA"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Verschillende weefsels vormen samen de maag, met een eigen taak. Dat past bij Orgaan: meerdere weefsels met een taak.",
+      "uo": [
+       "Klopt: meerdere weefsels met een taak.",
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Nee, dat hoort bij Orgaanstelsel: samenwerkende organen.",
+       "Nee, dat hoort bij DNA: erfelijke informatie."
+      ],
+      "uh": "Orgaan: meerdere weefsels met een taak."
+     },
+     {
+      "v": "Een stugge buitenlaag die alleen plantencellen hebben. Welk begrip herken je hier?",
+      "o": [
+       "Genotype",
+       "Celwand",
+       "Recessief allel",
+       "Dominant allel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een stugge buitenlaag die alleen plantencellen hebben. Dat past bij Celwand: stevige laag bij planten.",
+      "uo": [
+       "Nee, dat hoort bij Genotype: de genen.",
+       "Klopt: stevige laag bij planten.",
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar.",
+       "Nee, dat hoort bij Dominant allel: overheerst altijd."
+      ],
+      "uh": "Celwand: stevige laag bij planten."
+     },
+     {
+      "v": "Het deel van het DNA dat één kenmerk bepaalt. Wat is hier aan de hand?",
+      "o": [
+       "Chromosoom",
+       "DNA",
+       "Gen",
+       "Weefsel"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het deel van het DNA dat één kenmerk bepaalt. Dat past bij Gen: code voor een eigenschap.",
+      "uo": [
+       "Nee, dat hoort bij Chromosoom: opgerold DNA.",
+       "Nee, dat hoort bij DNA: erfelijke informatie.",
+       "Klopt: code voor een eigenschap.",
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen."
+      ],
+      "uh": "Gen: code voor een eigenschap."
+     },
+     {
+      "v": "Opgerolde draden DNA die je bij een celdeling kunt zien. Welk begrip past hierbij?",
+      "o": [
+       "Recessief allel",
+       "Gen",
+       "DNA",
+       "Chromosoom"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Opgerolde draden DNA die je bij een celdeling kunt zien. Dat past bij Chromosoom: opgerold DNA.",
+      "uo": [
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar.",
+       "Nee, dat hoort bij Gen: code voor een eigenschap.",
+       "Nee, dat hoort bij DNA: erfelijke informatie.",
+       "Klopt: opgerold DNA."
+      ],
+      "uh": "Chromosoom: opgerold DNA."
+     },
+     {
+      "v": "Een genvariant die wegvalt zodra de sterkere variant aanwezig is. Om welk begrip gaat het?",
+      "o": [
+       "Recessief allel",
+       "Celwand",
+       "Gen",
+       "Chromosoom"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een genvariant die wegvalt zodra de sterkere variant aanwezig is. Dat past bij Recessief allel: alleen dubbel zichtbaar.",
+      "uo": [
+       "Klopt: alleen dubbel zichtbaar.",
+       "Nee, dat hoort bij Celwand: stevige laag bij planten.",
+       "Nee, dat hoort bij Gen: code voor een eigenschap.",
+       "Nee, dat hoort bij Chromosoom: opgerold DNA."
+      ],
+      "uh": "Recessief allel: alleen dubbel zichtbaar."
+     },
+     {
+      "v": "In deze vloeistof binnen de cel drijven de celonderdelen. Welk begrip herken je hier?",
+      "o": [
+       "Vacuole",
+       "Cytoplasma",
+       "Celkern",
+       "Dominant allel"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "In deze vloeistof binnen de cel drijven de celonderdelen. Dat past bij Cytoplasma: vloeistof in de cel.",
+      "uo": [
+       "Nee, dat hoort bij Vacuole: vochtblaas in plantencel.",
+       "Klopt: vloeistof in de cel.",
+       "Nee, dat hoort bij Celkern: bevat het DNA.",
+       "Nee, dat hoort bij Dominant allel: overheerst altijd."
+      ],
+      "uh": "Cytoplasma: vloeistof in de cel."
+     },
+     {
+      "v": "Het onderdeel dat de cel aanstuurt en het DNA bewaart. Wat is hier aan de hand?",
+      "o": [
+       "Celmembraan",
+       "Cytoplasma",
+       "Celkern",
+       "Natuurlijke selectie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het onderdeel dat de cel aanstuurt en het DNA bewaart. Dat past bij Celkern: bevat het DNA.",
+      "uo": [
+       "Nee, dat hoort bij Celmembraan: omhulsel van de cel.",
+       "Nee, dat hoort bij Cytoplasma: vloeistof in de cel.",
+       "Klopt: bevat het DNA.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepasten overleven."
+      ],
+      "uh": "Celkern: bevat het DNA."
+     },
+     {
+      "v": "Een groep dezelfde cellen werkt samen aan één functie. Welk begrip past hierbij?",
+      "o": [
+       "Recessief allel",
+       "Celmembraan",
+       "Genotype",
+       "Weefsel"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een groep dezelfde cellen werkt samen aan één functie. Dat past bij Weefsel: groep gelijke cellen.",
+      "uo": [
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar.",
+       "Nee, dat hoort bij Celmembraan: omhulsel van de cel.",
+       "Nee, dat hoort bij Genotype: de genen.",
+       "Klopt: groep gelijke cellen."
+      ],
+      "uh": "Weefsel: groep gelijke cellen."
+     },
+     {
+      "v": "De genen die je hebt, of je ze nu ziet of niet. Om welk begrip gaat het?",
+      "o": [
+       "Genotype",
+       "DNA",
+       "Fenotype",
+       "Recessief allel"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De genen die je hebt, of je ze nu ziet of niet. Dat past bij Genotype: de genen.",
+      "uo": [
+       "Klopt: de genen.",
+       "Nee, dat hoort bij DNA: erfelijke informatie.",
+       "Nee, dat hoort bij Fenotype: zichtbare eigenschappen.",
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar."
+      ],
+      "uh": "Genotype: de genen."
+     },
+     {
+      "v": "Dieren die het best passen bij hun omgeving overleven en krijgen meer jongen. Welk begrip herken je hier?",
+      "o": [
+       "Fenotype",
+       "Natuurlijke selectie",
+       "Weefsel",
+       "Orgaanstelsel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Dieren die het best passen bij hun omgeving overleven en krijgen meer jongen. Dat past bij Natuurlijke selectie: best aangepasten overleven.",
+      "uo": [
+       "Nee, dat hoort bij Fenotype: zichtbare eigenschappen.",
+       "Klopt: best aangepasten overleven.",
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Nee, dat hoort bij Orgaanstelsel: samenwerkende organen."
+      ],
+      "uh": "Natuurlijke selectie: best aangepasten overleven."
+     },
+     {
+      "v": "Een grote met vocht gevulde blaas houdt de plantencel stevig. Wat is hier aan de hand?",
+      "o": [
+       "Genotype",
+       "Weefsel",
+       "Vacuole",
+       "Recessief allel"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een grote met vocht gevulde blaas houdt de plantencel stevig. Dat past bij Vacuole: vochtblaas in plantencel.",
+      "uo": [
+       "Nee, dat hoort bij Genotype: de genen.",
+       "Nee, dat hoort bij Weefsel: groep gelijke cellen.",
+       "Klopt: vochtblaas in plantencel.",
+       "Nee, dat hoort bij Recessief allel: alleen dubbel zichtbaar."
+      ],
+      "uh": "Vacuole: vochtblaas in plantencel."
+     },
+     {
+      "v": "In dit groene onderdeel van een bladcel wordt met zonlicht suiker gemaakt. Om welk begrip gaat het?",
+      "o": [
+       "Celkern",
+       "Vacuole",
+       "Celwand",
+       "Bladgroenkorrel"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "In dit groene onderdeel van een bladcel wordt met zonlicht suiker gemaakt. Dat past bij Bladgroenkorrel: doet fotosynthese.",
+      "uo": [
+       "Nee, dat hoort bij Celkern: bevat het DNA.",
+       "Nee, dat hoort bij Vacuole: vochtblaas in plantencel.",
+       "Nee, dat hoort bij Celwand: stevige laag bij planten.",
+       "Klopt: doet fotosynthese."
+      ],
+      "uh": "Bladgroenkorrel: doet fotosynthese."
+     },
+     {
+      "v": "Een dun laagje om de cel bepaalt wat er in en uit mag. Welk begrip herken je hier?",
+      "o": [
+       "Celmembraan",
+       "Celwand",
+       "Celkern",
+       "Genotype"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een dun laagje om de cel bepaalt wat er in en uit mag. Dat past bij Celmembraan: omhulsel van de cel.",
+      "uo": [
+       "Klopt: omhulsel van de cel.",
+       "Nee, dat hoort bij Celwand: stevige laag bij planten.",
+       "Nee, dat hoort bij Celkern: bevat het DNA.",
+       "Nee, dat hoort bij Genotype: de genen."
+      ],
+      "uh": "Celmembraan: omhulsel van de cel."
+     },
+     {
+      "v": "Deze vorm van een gen is alleen zichtbaar als beide ouders hem doorgeven. Wat is hier aan de hand?",
+      "o": [
+       "Celwand",
+       "Recessief allel",
+       "Gen",
+       "Chromosoom"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Deze vorm van een gen is alleen zichtbaar als beide ouders hem doorgeven. Dat past bij Recessief allel: alleen dubbel zichtbaar.",
+      "uo": [
+       "Nee, dat hoort bij Celwand: stevige laag bij planten.",
+       "Klopt: alleen dubbel zichtbaar.",
+       "Nee, dat hoort bij Gen: code voor een eigenschap.",
+       "Nee, dat hoort bij Chromosoom: opgerold DNA."
+      ],
+      "uh": "Recessief allel: alleen dubbel zichtbaar."
      }
     ],
     "begrippen": [
@@ -9420,6 +10066,462 @@ var VAKKEN_VMBO = [
        "Klopt: gelijke cellen vormen een weefsel."
       ],
       "uh": "Een weefsel: Gelijke cellen vormen een weefsel."
+     },
+     {
+      "v": "Het skelet geeft je lichaam vorm en houvast. Welk begrip past hierbij?",
+      "o": [
+       "Steunfunctie",
+       "Onderhuids bindweefsel",
+       "Ziekteverwekker",
+       "Bot"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het skelet geeft je lichaam vorm en houvast. Dat past bij Steunfunctie: stevigheid en vorm.",
+      "uo": [
+       "Klopt: stevigheid en vorm.",
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Ziekteverwekker: veroorzaakt ziekte.",
+       "Nee, dat hoort bij Bot: hard steunorgaan."
+      ],
+      "uh": "Steunfunctie: stevigheid en vorm."
+     },
+     {
+      "v": "De ribben vormen een kooi die hart en longen afschermt. Om welk begrip gaat het?",
+      "o": [
+       "Talgklier",
+       "Beschermende functie",
+       "Onderhuids bindweefsel",
+       "Kraakbeen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De ribben vormen een kooi die hart en longen afschermt. Dat past bij Beschermende functie: organen afschermen.",
+      "uo": [
+       "Nee, dat hoort bij Talgklier: geeft huidvet af.",
+       "Klopt: organen afschermen.",
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Kraakbeen: buigzaam steunweefsel."
+      ],
+      "uh": "Beschermende functie: organen afschermen."
+     },
+     {
+      "v": "Dit kliertje in de huid geeft een vettig laagje af dat de huid soepel houdt. Welk begrip herken je hier?",
+      "o": [
+       "Kraakbeen",
+       "Zweetklier",
+       "Talgklier",
+       "Ziekteverwekker"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Dit kliertje in de huid geeft een vettig laagje af dat de huid soepel houdt. Dat past bij Talgklier: geeft huidvet af.",
+      "uo": [
+       "Nee, dat hoort bij Kraakbeen: buigzaam steunweefsel.",
+       "Nee, dat hoort bij Zweetklier: geeft zweet af, koelt.",
+       "Klopt: geeft huidvet af.",
+       "Nee, dat hoort bij Ziekteverwekker: veroorzaakt ziekte."
+      ],
+      "uh": "Talgklier: geeft huidvet af."
+     },
+     {
+      "v": "Een klein organisme dat een infectie veroorzaakt. Wat is hier aan de hand?",
+      "o": [
+       "Onderhuids bindweefsel",
+       "Zweetklier",
+       "Opperhuid",
+       "Ziekteverwekker"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een klein organisme dat een infectie veroorzaakt. Dat past bij Ziekteverwekker: veroorzaakt ziekte.",
+      "uo": [
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Zweetklier: geeft zweet af, koelt.",
+       "Nee, dat hoort bij Opperhuid: buitenste huidlaag.",
+       "Klopt: veroorzaakt ziekte."
+      ],
+      "uh": "Ziekteverwekker: veroorzaakt ziekte."
+     },
+     {
+      "v": "Het geheel van botten dat je lichaam stevigheid geeft. Welk begrip past hierbij?",
+      "o": [
+       "Skelet",
+       "Bot",
+       "Opperhuid",
+       "Huid"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het geheel van botten dat je lichaam stevigheid geeft. Dat past bij Skelet: alle botten samen.",
+      "uo": [
+       "Klopt: alle botten samen.",
+       "Nee, dat hoort bij Bot: hard steunorgaan.",
+       "Nee, dat hoort bij Opperhuid: buitenste huidlaag.",
+       "Nee, dat hoort bij Huid: beschermende bedekking."
+      ],
+      "uh": "Skelet: alle botten samen."
+     },
+     {
+      "v": "Een bacterie of virus dringt je lichaam binnen en maakt je ziek. Om welk begrip gaat het?",
+      "o": [
+       "Zweetklier",
+       "Ziekteverwekker",
+       "Opperhuid",
+       "Onderhuids bindweefsel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een bacterie of virus dringt je lichaam binnen en maakt je ziek. Dat past bij Ziekteverwekker: veroorzaakt ziekte.",
+      "uo": [
+       "Nee, dat hoort bij Zweetklier: geeft zweet af, koelt.",
+       "Klopt: veroorzaakt ziekte.",
+       "Nee, dat hoort bij Opperhuid: buitenste huidlaag.",
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast."
+      ],
+      "uh": "Ziekteverwekker: veroorzaakt ziekte."
+     },
+     {
+      "v": "Op het uiteinde van je botten zit een soepel, verend laagje. Welk begrip herken je hier?",
+      "o": [
+       "Steunfunctie",
+       "Bot",
+       "Kraakbeen",
+       "Ziekteverwekker"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Op het uiteinde van je botten zit een soepel, verend laagje. Dat past bij Kraakbeen: buigzaam steunweefsel.",
+      "uo": [
+       "Nee, dat hoort bij Steunfunctie: stevigheid en vorm.",
+       "Nee, dat hoort bij Bot: hard steunorgaan.",
+       "Klopt: buigzaam steunweefsel.",
+       "Nee, dat hoort bij Ziekteverwekker: veroorzaakt ziekte."
+      ],
+      "uh": "Kraakbeen: buigzaam steunweefsel."
+     },
+     {
+      "v": "De dunne buitenlaag van de huid met dode cellen bovenop. Wat is hier aan de hand?",
+      "o": [
+       "Ziekteverwekker",
+       "Kraakbeen",
+       "Onderhuids bindweefsel",
+       "Opperhuid"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De dunne buitenlaag van de huid met dode cellen bovenop. Dat past bij Opperhuid: buitenste huidlaag.",
+      "uo": [
+       "Nee, dat hoort bij Ziekteverwekker: veroorzaakt ziekte.",
+       "Nee, dat hoort bij Kraakbeen: buigzaam steunweefsel.",
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Klopt: buitenste huidlaag."
+      ],
+      "uh": "Opperhuid: buitenste huidlaag."
+     },
+     {
+      "v": "Als je het warm hebt, geeft dit kliertje vocht af om af te koelen. Welk begrip past hierbij?",
+      "o": [
+       "Zweetklier",
+       "Talgklier",
+       "Onderhuids bindweefsel",
+       "Ziekteverwekker"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Als je het warm hebt, geeft dit kliertje vocht af om af te koelen. Dat past bij Zweetklier: geeft zweet af, koelt.",
+      "uo": [
+       "Klopt: geeft zweet af, koelt.",
+       "Nee, dat hoort bij Talgklier: geeft huidvet af.",
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Ziekteverwekker: veroorzaakt ziekte."
+      ],
+      "uh": "Zweetklier: geeft zweet af, koelt."
+     },
+     {
+      "v": "De bovenste, buitenste laag van de huid die je aanraakt. Om welk begrip gaat het?",
+      "o": [
+       "Kraakbeen",
+       "Opperhuid",
+       "Onderhuids bindweefsel",
+       "Ziekteverwekker"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De bovenste, buitenste laag van de huid die je aanraakt. Dat past bij Opperhuid: buitenste huidlaag.",
+      "uo": [
+       "Nee, dat hoort bij Kraakbeen: buigzaam steunweefsel.",
+       "Klopt: buitenste huidlaag.",
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Ziekteverwekker: veroorzaakt ziekte."
+      ],
+      "uh": "Opperhuid: buitenste huidlaag."
+     },
+     {
+      "v": "De schedel zit om de hersenen heen om ze te beschermen. Welk begrip herken je hier?",
+      "o": [
+       "Huid",
+       "Steunfunctie",
+       "Beschermende functie",
+       "Onderhuids bindweefsel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De schedel zit om de hersenen heen om ze te beschermen. Dat past bij Beschermende functie: organen afschermen.",
+      "uo": [
+       "Nee, dat hoort bij Huid: beschermende bedekking.",
+       "Nee, dat hoort bij Steunfunctie: stevigheid en vorm.",
+       "Klopt: organen afschermen.",
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast."
+      ],
+      "uh": "Beschermende functie: organen afschermen."
+     },
+     {
+      "v": "Het buigzame materiaal in je oor en aan de uiteinden van botten. Wat is hier aan de hand?",
+      "o": [
+       "Huid",
+       "Skelet",
+       "Onderhuids bindweefsel",
+       "Kraakbeen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het buigzame materiaal in je oor en aan de uiteinden van botten. Dat past bij Kraakbeen: buigzaam steunweefsel.",
+      "uo": [
+       "Nee, dat hoort bij Huid: beschermende bedekking.",
+       "Nee, dat hoort bij Skelet: alle botten samen.",
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Klopt: buigzaam steunweefsel."
+      ],
+      "uh": "Kraakbeen: buigzaam steunweefsel."
+     },
+     {
+      "v": "De klier bij een haarwortel die vet afscheidt. Welk begrip past hierbij?",
+      "o": [
+       "Talgklier",
+       "Zweetklier",
+       "Kraakbeen",
+       "Ziekteverwekker"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De klier bij een haarwortel die vet afscheidt. Dat past bij Talgklier: geeft huidvet af.",
+      "uo": [
+       "Klopt: geeft huidvet af.",
+       "Nee, dat hoort bij Zweetklier: geeft zweet af, koelt.",
+       "Nee, dat hoort bij Kraakbeen: buigzaam steunweefsel.",
+       "Nee, dat hoort bij Ziekteverwekker: veroorzaakt ziekte."
+      ],
+      "uh": "Talgklier: geeft huidvet af."
+     },
+     {
+      "v": "Alle botten samen vormen het geraamte dat je lichaam draagt. Om welk begrip gaat het?",
+      "o": [
+       "Zweetklier",
+       "Skelet",
+       "Ziekteverwekker",
+       "Huid"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Alle botten samen vormen het geraamte dat je lichaam draagt. Dat past bij Skelet: alle botten samen.",
+      "uo": [
+       "Nee, dat hoort bij Zweetklier: geeft zweet af, koelt.",
+       "Klopt: alle botten samen.",
+       "Nee, dat hoort bij Ziekteverwekker: veroorzaakt ziekte.",
+       "Nee, dat hoort bij Huid: beschermende bedekking."
+      ],
+      "uh": "Skelet: alle botten samen."
+     },
+     {
+      "v": "De vetlaag onder de huid die warmte vasthoudt. Welk begrip herken je hier?",
+      "o": [
+       "Kraakbeen",
+       "Lederhuid",
+       "Onderhuids bindweefsel",
+       "Bot"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De vetlaag onder de huid die warmte vasthoudt. Dat past bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+      "uo": [
+       "Nee, dat hoort bij Kraakbeen: buigzaam steunweefsel.",
+       "Nee, dat hoort bij Lederhuid: laag onder de opperhuid.",
+       "Klopt: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Bot: hard steunorgaan."
+      ],
+      "uh": "Onderhuids bindweefsel: vetlaag, houdt warmte vast."
+     },
+     {
+      "v": "In deze onderste laag zit vet dat isoleert en energie opslaat. Wat is hier aan de hand?",
+      "o": [
+       "Talgklier",
+       "Huid",
+       "Bot",
+       "Onderhuids bindweefsel"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In deze onderste laag zit vet dat isoleert en energie opslaat. Dat past bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+      "uo": [
+       "Nee, dat hoort bij Talgklier: geeft huidvet af.",
+       "Nee, dat hoort bij Huid: beschermende bedekking.",
+       "Nee, dat hoort bij Bot: hard steunorgaan.",
+       "Klopt: vetlaag, houdt warmte vast."
+      ],
+      "uh": "Onderhuids bindweefsel: vetlaag, houdt warmte vast."
+     },
+     {
+      "v": "De laag om je lichaam die je beschermt tegen kou en ziektekiemen. Welk begrip past hierbij?",
+      "o": [
+       "Huid",
+       "Opperhuid",
+       "Lederhuid",
+       "Beschermende functie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De laag om je lichaam die je beschermt tegen kou en ziektekiemen. Dat past bij Huid: beschermende bedekking.",
+      "uo": [
+       "Klopt: beschermende bedekking.",
+       "Nee, dat hoort bij Opperhuid: buitenste huidlaag.",
+       "Nee, dat hoort bij Lederhuid: laag onder de opperhuid.",
+       "Nee, dat hoort bij Beschermende functie: organen afschermen."
+      ],
+      "uh": "Huid: beschermende bedekking."
+     },
+     {
+      "v": "Je botten houden je rechtop en dragen het gewicht van je lichaam. Om welk begrip gaat het?",
+      "o": [
+       "Onderhuids bindweefsel",
+       "Steunfunctie",
+       "Ziekteverwekker",
+       "Bot"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je botten houden je rechtop en dragen het gewicht van je lichaam. Dat past bij Steunfunctie: stevigheid en vorm.",
+      "uo": [
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Klopt: stevigheid en vorm.",
+       "Nee, dat hoort bij Ziekteverwekker: veroorzaakt ziekte.",
+       "Nee, dat hoort bij Bot: hard steunorgaan."
+      ],
+      "uh": "Steunfunctie: stevigheid en vorm."
+     },
+     {
+      "v": "In deze middelste huidlaag zitten zenuwen, bloedvaten en klieren. Welk begrip herken je hier?",
+      "o": [
+       "Onderhuids bindweefsel",
+       "Opperhuid",
+       "Lederhuid",
+       "Steunfunctie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "In deze middelste huidlaag zitten zenuwen, bloedvaten en klieren. Dat past bij Lederhuid: laag onder de opperhuid.",
+      "uo": [
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Opperhuid: buitenste huidlaag.",
+       "Klopt: laag onder de opperhuid.",
+       "Nee, dat hoort bij Steunfunctie: stevigheid en vorm."
+      ],
+      "uh": "Lederhuid: laag onder de opperhuid."
+     },
+     {
+      "v": "Een hard, kalkrijk deel van het geraamte, zoals je dijbeen. Wat is hier aan de hand?",
+      "o": [
+       "Onderhuids bindweefsel",
+       "Kraakbeen",
+       "Skelet",
+       "Bot"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een hard, kalkrijk deel van het geraamte, zoals je dijbeen. Dat past bij Bot: hard steunorgaan.",
+      "uo": [
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Kraakbeen: buigzaam steunweefsel.",
+       "Nee, dat hoort bij Skelet: alle botten samen.",
+       "Klopt: hard steunorgaan."
+      ],
+      "uh": "Bot: hard steunorgaan."
+     },
+     {
+      "v": "Het grootste orgaan van je lichaam bedekt je hele buitenkant. Welk begrip past hierbij?",
+      "o": [
+       "Huid",
+       "Onderhuids bindweefsel",
+       "Skelet",
+       "Beschermende functie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het grootste orgaan van je lichaam bedekt je hele buitenkant. Dat past bij Huid: beschermende bedekking.",
+      "uo": [
+       "Klopt: beschermende bedekking.",
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Skelet: alle botten samen.",
+       "Nee, dat hoort bij Beschermende functie: organen afschermen."
+      ],
+      "uh": "Huid: beschermende bedekking."
+     },
+     {
+      "v": "Dit harde, stevige onderdeel van het skelet kan breken bij een val. Om welk begrip gaat het?",
+      "o": [
+       "Kraakbeen",
+       "Bot",
+       "Skelet",
+       "Lederhuid"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Dit harde, stevige onderdeel van het skelet kan breken bij een val. Dat past bij Bot: hard steunorgaan.",
+      "uo": [
+       "Nee, dat hoort bij Kraakbeen: buigzaam steunweefsel.",
+       "Klopt: hard steunorgaan.",
+       "Nee, dat hoort bij Skelet: alle botten samen.",
+       "Nee, dat hoort bij Lederhuid: laag onder de opperhuid."
+      ],
+      "uh": "Bot: hard steunorgaan."
+     },
+     {
+      "v": "De laag onder de opperhuid met zweetklieren en zenuwuiteinden. Welk begrip herken je hier?",
+      "o": [
+       "Onderhuids bindweefsel",
+       "Opperhuid",
+       "Lederhuid",
+       "Beschermende functie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De laag onder de opperhuid met zweetklieren en zenuwuiteinden. Dat past bij Lederhuid: laag onder de opperhuid.",
+      "uo": [
+       "Nee, dat hoort bij Onderhuids bindweefsel: vetlaag, houdt warmte vast.",
+       "Nee, dat hoort bij Opperhuid: buitenste huidlaag.",
+       "Klopt: laag onder de opperhuid.",
+       "Nee, dat hoort bij Beschermende functie: organen afschermen."
+      ],
+      "uh": "Lederhuid: laag onder de opperhuid."
+     },
+     {
+      "v": "De klier in de huid die zweet naar buiten brengt. Wat is hier aan de hand?",
+      "o": [
+       "Huid",
+       "Bot",
+       "Skelet",
+       "Zweetklier"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De klier in de huid die zweet naar buiten brengt. Dat past bij Zweetklier: geeft zweet af, koelt.",
+      "uo": [
+       "Nee, dat hoort bij Huid: beschermende bedekking.",
+       "Nee, dat hoort bij Bot: hard steunorgaan.",
+       "Nee, dat hoort bij Skelet: alle botten samen.",
+       "Klopt: geeft zweet af, koelt."
+      ],
+      "uh": "Zweetklier: geeft zweet af, koelt."
      }
     ],
     "begrippen": [
@@ -9793,6 +10895,500 @@ var VAKKEN_VMBO = [
        "Klopt: er komt zuurstof vrij."
       ],
       "uh": "Zuurstof: Er komt zuurstof vrij."
+     },
+     {
+      "v": "Alle organismen in een gebied samen met hun leefomgeving. Welk begrip past hierbij?",
+      "o": [
+       "Ecosysteem",
+       "Consument",
+       "Koolstofkringloop",
+       "Verbranding"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Alle organismen in een gebied samen met hun leefomgeving. Dat past bij Ecosysteem: organismen plus omgeving.",
+      "uo": [
+       "Klopt: organismen plus omgeving.",
+       "Nee, dat hoort bij Consument: eet andere organismen.",
+       "Nee, dat hoort bij Koolstofkringloop: koolstof gaat rond.",
+       "Nee, dat hoort bij Verbranding: energie vrijmaken met zuurstof."
+      ],
+      "uh": "Ecosysteem: organismen plus omgeving."
+     },
+     {
+      "v": "Een dier moet andere organismen eten om aan voedsel te komen. Om welk begrip gaat het?",
+      "o": [
+       "Producent",
+       "Consument",
+       "Reducent",
+       "Herbivoor"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een dier moet andere organismen eten om aan voedsel te komen. Dat past bij Consument: eet andere organismen.",
+      "uo": [
+       "Nee, dat hoort bij Producent: maakt zelf voedsel.",
+       "Klopt: eet andere organismen.",
+       "Nee, dat hoort bij Reducent: breekt dood materiaal af.",
+       "Nee, dat hoort bij Herbivoor: planteneter."
+      ],
+      "uh": "Consument: eet andere organismen."
+     },
+     {
+      "v": "Een dier dat alleen vlees eet. Welk begrip herken je hier?",
+      "o": [
+       "Consument",
+       "Reducent",
+       "Carnivoor",
+       "Voedselketen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een dier dat alleen vlees eet. Dat past bij Carnivoor: vleeseter.",
+      "uo": [
+       "Nee, dat hoort bij Consument: eet andere organismen.",
+       "Nee, dat hoort bij Reducent: breekt dood materiaal af.",
+       "Klopt: vleeseter.",
+       "Nee, dat hoort bij Voedselketen: wie eet wie, in een lijn."
+      ],
+      "uh": "Carnivoor: vleeseter."
+     },
+     {
+      "v": "Een rechte lijn van wie-eet-wie: plant, planteneter, vleeseter. Wat is hier aan de hand?",
+      "o": [
+       "Ecosysteem",
+       "Voedselweb",
+       "Omnivoor",
+       "Voedselketen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een rechte lijn van wie-eet-wie: plant, planteneter, vleeseter. Dat past bij Voedselketen: wie eet wie, in een lijn.",
+      "uo": [
+       "Nee, dat hoort bij Ecosysteem: organismen plus omgeving.",
+       "Nee, dat hoort bij Voedselweb: verbonden voedselketens.",
+       "Nee, dat hoort bij Omnivoor: alleseter.",
+       "Klopt: wie eet wie, in een lijn."
+      ],
+      "uh": "Voedselketen: wie eet wie, in een lijn."
+     },
+     {
+      "v": "Een plant maakt met zonlicht zijn eigen voedsel. Welk begrip past hierbij?",
+      "o": [
+       "Producent",
+       "Koolstofkringloop",
+       "Verbranding",
+       "Voedselketen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een plant maakt met zonlicht zijn eigen voedsel. Dat past bij Producent: maakt zelf voedsel.",
+      "uo": [
+       "Klopt: maakt zelf voedsel.",
+       "Nee, dat hoort bij Koolstofkringloop: koolstof gaat rond.",
+       "Nee, dat hoort bij Verbranding: energie vrijmaken met zuurstof.",
+       "Nee, dat hoort bij Voedselketen: wie eet wie, in een lijn."
+      ],
+      "uh": "Producent: maakt zelf voedsel."
+     },
+     {
+      "v": "Een leeuw voedt zich alleen met andere dieren. Om welk begrip gaat het?",
+      "o": [
+       "Herbivoor",
+       "Carnivoor",
+       "Omnivoor",
+       "Verbranding"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een leeuw voedt zich alleen met andere dieren. Dat past bij Carnivoor: vleeseter.",
+      "uo": [
+       "Nee, dat hoort bij Herbivoor: planteneter.",
+       "Klopt: vleeseter.",
+       "Nee, dat hoort bij Omnivoor: alleseter.",
+       "Nee, dat hoort bij Verbranding: energie vrijmaken met zuurstof."
+      ],
+      "uh": "Carnivoor: vleeseter."
+     },
+     {
+      "v": "Koolstof gaat rond via fotosynthese, eten en verbranding. Welk begrip herken je hier?",
+      "o": [
+       "Producent",
+       "Voedselweb",
+       "Koolstofkringloop",
+       "Fotosynthese"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Koolstof gaat rond via fotosynthese, eten en verbranding. Dat past bij Koolstofkringloop: koolstof gaat rond.",
+      "uo": [
+       "Nee, dat hoort bij Producent: maakt zelf voedsel.",
+       "Nee, dat hoort bij Voedselweb: verbonden voedselketens.",
+       "Klopt: koolstof gaat rond.",
+       "Nee, dat hoort bij Fotosynthese: suiker maken met licht."
+      ],
+      "uh": "Koolstofkringloop: koolstof gaat rond."
+     },
+     {
+      "v": "De kringloop waarin stikstof steeds opnieuw gebruikt wordt. Wat is hier aan de hand?",
+      "o": [
+       "Carnivoor",
+       "Koolstofkringloop",
+       "Producent",
+       "Stikstofkringloop"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De kringloop waarin stikstof steeds opnieuw gebruikt wordt. Dat past bij Stikstofkringloop: stikstof gaat rond.",
+      "uo": [
+       "Nee, dat hoort bij Carnivoor: vleeseter.",
+       "Nee, dat hoort bij Koolstofkringloop: koolstof gaat rond.",
+       "Nee, dat hoort bij Producent: maakt zelf voedsel.",
+       "Klopt: stikstof gaat rond."
+      ],
+      "uh": "Stikstofkringloop: stikstof gaat rond."
+     },
+     {
+      "v": "De weg die koolstof aflegt door planten, dieren en de lucht. Welk begrip past hierbij?",
+      "o": [
+       "Koolstofkringloop",
+       "Voedselweb",
+       "Producent",
+       "Fotosynthese"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De weg die koolstof aflegt door planten, dieren en de lucht. Dat past bij Koolstofkringloop: koolstof gaat rond.",
+      "uo": [
+       "Klopt: koolstof gaat rond.",
+       "Nee, dat hoort bij Voedselweb: verbonden voedselketens.",
+       "Nee, dat hoort bij Producent: maakt zelf voedsel.",
+       "Nee, dat hoort bij Fotosynthese: suiker maken met licht."
+      ],
+      "uh": "Koolstofkringloop: koolstof gaat rond."
+     },
+     {
+      "v": "Een netwerk waarin veel dieren en planten elkaars voedsel zijn. Om welk begrip gaat het?",
+      "o": [
+       "Voedselketen",
+       "Voedselweb",
+       "Reducent",
+       "Omnivoor"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een netwerk waarin veel dieren en planten elkaars voedsel zijn. Dat past bij Voedselweb: verbonden voedselketens.",
+      "uo": [
+       "Nee, dat hoort bij Voedselketen: wie eet wie, in een lijn.",
+       "Klopt: verbonden voedselketens.",
+       "Nee, dat hoort bij Reducent: breekt dood materiaal af.",
+       "Nee, dat hoort bij Omnivoor: alleseter."
+      ],
+      "uh": "Voedselweb: verbonden voedselketens."
+     },
+     {
+      "v": "Een mens eet zowel vlees als groente. Welk begrip herken je hier?",
+      "o": [
+       "Voedselketen",
+       "Voedselweb",
+       "Omnivoor",
+       "Fotosynthese"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een mens eet zowel vlees als groente. Dat past bij Omnivoor: alleseter.",
+      "uo": [
+       "Nee, dat hoort bij Voedselketen: wie eet wie, in een lijn.",
+       "Nee, dat hoort bij Voedselweb: verbonden voedselketens.",
+       "Klopt: alleseter.",
+       "Nee, dat hoort bij Fotosynthese: suiker maken met licht."
+      ],
+      "uh": "Omnivoor: alleseter."
+     },
+     {
+      "v": "Een dier dat planten als voedsel heeft. Wat is hier aan de hand?",
+      "o": [
+       "Verbranding",
+       "Carnivoor",
+       "Omnivoor",
+       "Herbivoor"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een dier dat planten als voedsel heeft. Dat past bij Herbivoor: planteneter.",
+      "uo": [
+       "Nee, dat hoort bij Verbranding: energie vrijmaken met zuurstof.",
+       "Nee, dat hoort bij Carnivoor: vleeseter.",
+       "Nee, dat hoort bij Omnivoor: alleseter.",
+       "Klopt: planteneter."
+      ],
+      "uh": "Herbivoor: planteneter."
+     },
+     {
+      "v": "Stikstof gaat via bacteriën, planten en dieren rond in de natuur. Welk begrip past hierbij?",
+      "o": [
+       "Stikstofkringloop",
+       "Voedselweb",
+       "Producent",
+       "Fotosynthese"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Stikstof gaat via bacteriën, planten en dieren rond in de natuur. Dat past bij Stikstofkringloop: stikstof gaat rond.",
+      "uo": [
+       "Klopt: stikstof gaat rond.",
+       "Nee, dat hoort bij Voedselweb: verbonden voedselketens.",
+       "Nee, dat hoort bij Producent: maakt zelf voedsel.",
+       "Nee, dat hoort bij Fotosynthese: suiker maken met licht."
+      ],
+      "uh": "Stikstofkringloop: stikstof gaat rond."
+     },
+     {
+      "v": "Het organisme dat dood materiaal opruimt en afbreekt. Om welk begrip gaat het?",
+      "o": [
+       "Producent",
+       "Reducent",
+       "Consument",
+       "Stikstofkringloop"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het organisme dat dood materiaal opruimt en afbreekt. Dat past bij Reducent: breekt dood materiaal af.",
+      "uo": [
+       "Nee, dat hoort bij Producent: maakt zelf voedsel.",
+       "Klopt: breekt dood materiaal af.",
+       "Nee, dat hoort bij Consument: eet andere organismen.",
+       "Nee, dat hoort bij Stikstofkringloop: stikstof gaat rond."
+      ],
+      "uh": "Reducent: breekt dood materiaal af."
+     },
+     {
+      "v": "Het proces waarbij voedingsstoffen met zuurstof energie leveren. Welk begrip herken je hier?",
+      "o": [
+       "Ecosysteem",
+       "Koolstofkringloop",
+       "Verbranding",
+       "Voedselweb"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het proces waarbij voedingsstoffen met zuurstof energie leveren. Dat past bij Verbranding: energie vrijmaken met zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Ecosysteem: organismen plus omgeving.",
+       "Nee, dat hoort bij Koolstofkringloop: koolstof gaat rond.",
+       "Klopt: energie vrijmaken met zuurstof.",
+       "Nee, dat hoort bij Voedselweb: verbonden voedselketens."
+      ],
+      "uh": "Verbranding: energie vrijmaken met zuurstof."
+     },
+     {
+      "v": "Een plant maakt met zonlicht, water en koolstofdioxide suiker en zuurstof. Wat is hier aan de hand?",
+      "o": [
+       "Consument",
+       "Verbranding",
+       "Producent",
+       "Fotosynthese"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een plant maakt met zonlicht, water en koolstofdioxide suiker en zuurstof. Dat past bij Fotosynthese: suiker maken met licht.",
+      "uo": [
+       "Nee, dat hoort bij Consument: eet andere organismen.",
+       "Nee, dat hoort bij Verbranding: energie vrijmaken met zuurstof.",
+       "Nee, dat hoort bij Producent: maakt zelf voedsel.",
+       "Klopt: suiker maken met licht."
+      ],
+      "uh": "Fotosynthese: suiker maken met licht."
+     },
+     {
+      "v": "Schimmels en bacteriën breken dode bladeren en dieren af. Welk begrip past hierbij?",
+      "o": [
+       "Reducent",
+       "Producent",
+       "Consument",
+       "Stikstofkringloop"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Schimmels en bacteriën breken dode bladeren en dieren af. Dat past bij Reducent: breekt dood materiaal af.",
+      "uo": [
+       "Klopt: breekt dood materiaal af.",
+       "Nee, dat hoort bij Producent: maakt zelf voedsel.",
+       "Nee, dat hoort bij Consument: eet andere organismen.",
+       "Nee, dat hoort bij Stikstofkringloop: stikstof gaat rond."
+      ],
+      "uh": "Reducent: breekt dood materiaal af."
+     },
+     {
+      "v": "Een organisme dat zijn energie haalt uit het eten van anderen. Om welk begrip gaat het?",
+      "o": [
+       "Koolstofkringloop",
+       "Consument",
+       "Verbranding",
+       "Voedselketen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een organisme dat zijn energie haalt uit het eten van anderen. Dat past bij Consument: eet andere organismen.",
+      "uo": [
+       "Nee, dat hoort bij Koolstofkringloop: koolstof gaat rond.",
+       "Klopt: eet andere organismen.",
+       "Nee, dat hoort bij Verbranding: energie vrijmaken met zuurstof.",
+       "Nee, dat hoort bij Voedselketen: wie eet wie, in een lijn."
+      ],
+      "uh": "Consument: eet andere organismen."
+     },
+     {
+      "v": "Alle voedselketens in een gebied zitten met elkaar verweven. Welk begrip herken je hier?",
+      "o": [
+       "Omnivoor",
+       "Voedselketen",
+       "Voedselweb",
+       "Ecosysteem"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Alle voedselketens in een gebied zitten met elkaar verweven. Dat past bij Voedselweb: verbonden voedselketens.",
+      "uo": [
+       "Nee, dat hoort bij Omnivoor: alleseter.",
+       "Nee, dat hoort bij Voedselketen: wie eet wie, in een lijn.",
+       "Klopt: verbonden voedselketens.",
+       "Nee, dat hoort bij Ecosysteem: organismen plus omgeving."
+      ],
+      "uh": "Voedselweb: verbonden voedselketens."
+     },
+     {
+      "v": "Een koe leeft van gras en planten. Wat is hier aan de hand?",
+      "o": [
+       "Verbranding",
+       "Carnivoor",
+       "Omnivoor",
+       "Herbivoor"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een koe leeft van gras en planten. Dat past bij Herbivoor: planteneter.",
+      "uo": [
+       "Nee, dat hoort bij Verbranding: energie vrijmaken met zuurstof.",
+       "Nee, dat hoort bij Carnivoor: vleeseter.",
+       "Nee, dat hoort bij Omnivoor: alleseter.",
+       "Klopt: planteneter."
+      ],
+      "uh": "Herbivoor: planteneter."
+     },
+     {
+      "v": "In een sloot leven planten, vissen en insecten samen met hun omgeving. Welk begrip past hierbij?",
+      "o": [
+       "Ecosysteem",
+       "Consument",
+       "Koolstofkringloop",
+       "Verbranding"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "In een sloot leven planten, vissen en insecten samen met hun omgeving. Dat past bij Ecosysteem: organismen plus omgeving.",
+      "uo": [
+       "Klopt: organismen plus omgeving.",
+       "Nee, dat hoort bij Consument: eet andere organismen.",
+       "Nee, dat hoort bij Koolstofkringloop: koolstof gaat rond.",
+       "Nee, dat hoort bij Verbranding: energie vrijmaken met zuurstof."
+      ],
+      "uh": "Ecosysteem: organismen plus omgeving."
+     },
+     {
+      "v": "In je cellen wordt suiker met zuurstof omgezet in energie. Om welk begrip gaat het?",
+      "o": [
+       "Fotosynthese",
+       "Verbranding",
+       "Ecosysteem",
+       "Voedselweb"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "In je cellen wordt suiker met zuurstof omgezet in energie. Dat past bij Verbranding: energie vrijmaken met zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Fotosynthese: suiker maken met licht.",
+       "Klopt: energie vrijmaken met zuurstof.",
+       "Nee, dat hoort bij Ecosysteem: organismen plus omgeving.",
+       "Nee, dat hoort bij Voedselweb: verbonden voedselketens."
+      ],
+      "uh": "Verbranding: energie vrijmaken met zuurstof."
+     },
+     {
+      "v": "Gras wordt gegeten door een konijn, dat weer door een vos wordt gegeten. Welk begrip herken je hier?",
+      "o": [
+       "Omnivoor",
+       "Voedselweb",
+       "Voedselketen",
+       "Ecosysteem"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Gras wordt gegeten door een konijn, dat weer door een vos wordt gegeten. Dat past bij Voedselketen: wie eet wie, in een lijn.",
+      "uo": [
+       "Nee, dat hoort bij Omnivoor: alleseter.",
+       "Nee, dat hoort bij Voedselweb: verbonden voedselketens.",
+       "Klopt: wie eet wie, in een lijn.",
+       "Nee, dat hoort bij Ecosysteem: organismen plus omgeving."
+      ],
+      "uh": "Voedselketen: wie eet wie, in een lijn."
+     },
+     {
+      "v": "Het proces waarbij een blad met licht suiker vormt. Wat is hier aan de hand?",
+      "o": [
+       "Carnivoor",
+       "Producent",
+       "Omnivoor",
+       "Fotosynthese"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het proces waarbij een blad met licht suiker vormt. Dat past bij Fotosynthese: suiker maken met licht.",
+      "uo": [
+       "Nee, dat hoort bij Carnivoor: vleeseter.",
+       "Nee, dat hoort bij Producent: maakt zelf voedsel.",
+       "Nee, dat hoort bij Omnivoor: alleseter.",
+       "Klopt: suiker maken met licht."
+      ],
+      "uh": "Fotosynthese: suiker maken met licht."
+     },
+     {
+      "v": "Het organisme onderaan de keten dat zelf voedsel maakt. Welk begrip past hierbij?",
+      "o": [
+       "Producent",
+       "Consument",
+       "Reducent",
+       "Verbranding"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het organisme onderaan de keten dat zelf voedsel maakt. Dat past bij Producent: maakt zelf voedsel.",
+      "uo": [
+       "Klopt: maakt zelf voedsel.",
+       "Nee, dat hoort bij Consument: eet andere organismen.",
+       "Nee, dat hoort bij Reducent: breekt dood materiaal af.",
+       "Nee, dat hoort bij Verbranding: energie vrijmaken met zuurstof."
+      ],
+      "uh": "Producent: maakt zelf voedsel."
+     },
+     {
+      "v": "Een dier dat zowel planten als dieren eet. Om welk begrip gaat het?",
+      "o": [
+       "Herbivoor",
+       "Omnivoor",
+       "Carnivoor",
+       "Fotosynthese"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een dier dat zowel planten als dieren eet. Dat past bij Omnivoor: alleseter.",
+      "uo": [
+       "Nee, dat hoort bij Herbivoor: planteneter.",
+       "Klopt: alleseter.",
+       "Nee, dat hoort bij Carnivoor: vleeseter.",
+       "Nee, dat hoort bij Fotosynthese: suiker maken met licht."
+      ],
+      "uh": "Omnivoor: alleseter."
      }
     ],
     "begrippen": [
@@ -10168,6 +11764,443 @@ var VAKKEN_VMBO = [
        "Klopt: er zijn minder nieuwe grondstoffen nodig."
       ],
       "uh": "Er zijn minder nieuwe grondstoffen nodig."
+     },
+     {
+      "v": "De rijkdom aan verschillende soorten leven in een gebied. Welk begrip past hierbij?",
+      "o": [
+       "Biodiversiteit",
+       "Fijnstof",
+       "Grondstof",
+       "Fossiele brandstof"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De rijkdom aan verschillende soorten leven in een gebied. Dat past bij Biodiversiteit: soortenrijkdom.",
+      "uo": [
+       "Klopt: soortenrijkdom.",
+       "Nee, dat hoort bij Fijnstof: schadelijke luchtdeeltjes.",
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen."
+      ],
+      "uh": "Biodiversiteit: soortenrijkdom."
+     },
+     {
+      "v": "Brandstof uit de aarde zoals olie, gas en kolen die opraakt. Om welk begrip gaat het?",
+      "o": [
+       "Duurzame energie",
+       "Fossiele brandstof",
+       "Afbreekbaar",
+       "Duurzaamheid"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Brandstof uit de aarde zoals olie, gas en kolen die opraakt. Dat past bij Fossiele brandstof: olie, gas en kolen.",
+      "uo": [
+       "Nee, dat hoort bij Duurzame energie: energie die niet opraakt.",
+       "Klopt: olie, gas en kolen.",
+       "Nee, dat hoort bij Afbreekbaar: wordt afgebroken.",
+       "Nee, dat hoort bij Duurzaamheid: toekomstbestendig leven."
+      ],
+      "uh": "Fossiele brandstof: olie, gas en kolen."
+     },
+     {
+      "v": "Een appelklokhuis vergaat vanzelf op de composthoop. Welk begrip herken je hier?",
+      "o": [
+       "Grondstof",
+       "Fossiele brandstof",
+       "Afbreekbaar",
+       "Milieuvervuiling"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een appelklokhuis vergaat vanzelf op de composthoop. Dat past bij Afbreekbaar: wordt afgebroken.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Klopt: wordt afgebroken.",
+       "Nee, dat hoort bij Milieuvervuiling: schadelijke stoffen lozen."
+      ],
+      "uh": "Afbreekbaar: wordt afgebroken."
+     },
+     {
+      "v": "Het ruwe natuurlijke materiaal waarmee je een product maakt. Wat is hier aan de hand?",
+      "o": [
+       "Fijnstof",
+       "Fossiele brandstof",
+       "Duurzame energie",
+       "Grondstof"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het ruwe natuurlijke materiaal waarmee je een product maakt. Dat past bij Grondstof: basismateriaal.",
+      "uo": [
+       "Nee, dat hoort bij Fijnstof: schadelijke luchtdeeltjes.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Nee, dat hoort bij Duurzame energie: energie die niet opraakt.",
+       "Klopt: basismateriaal."
+      ],
+      "uh": "Grondstof: basismateriaal."
+     },
+     {
+      "v": "Materialen steeds opnieuw gebruiken in plaats van weggooien. Welk begrip past hierbij?",
+      "o": [
+       "Kringloopdenken",
+       "Broeikaseffect",
+       "Grondstof",
+       "Fossiele brandstof"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Materialen steeds opnieuw gebruiken in plaats van weggooien. Dat past bij Kringloopdenken: grondstoffen hergebruiken.",
+      "uo": [
+       "Klopt: grondstoffen hergebruiken.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen."
+      ],
+      "uh": "Kringloopdenken: grondstoffen hergebruiken."
+     },
+     {
+      "v": "Uit ijzererts uit de bodem wordt staal gemaakt. Om welk begrip gaat het?",
+      "o": [
+       "Fossiele brandstof",
+       "Grondstof",
+       "Duurzame energie",
+       "Fijnstof"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Uit ijzererts uit de bodem wordt staal gemaakt. Dat past bij Grondstof: basismateriaal.",
+      "uo": [
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Klopt: basismateriaal.",
+       "Nee, dat hoort bij Duurzame energie: energie die niet opraakt.",
+       "Nee, dat hoort bij Fijnstof: schadelijke luchtdeeltjes."
+      ],
+      "uh": "Grondstof: basismateriaal."
+     },
+     {
+      "v": "Zonnepanelen en windmolens leveren stroom zonder op te raken. Welk begrip herken je hier?",
+      "o": [
+       "Grondstof",
+       "Broeikasgas",
+       "Duurzame energie",
+       "Broeikaseffect"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Zonnepanelen en windmolens leveren stroom zonder op te raken. Dat past bij Duurzame energie: energie die niet opraakt.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Broeikasgas: gas dat warmte vasthoudt.",
+       "Klopt: energie die niet opraakt.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op."
+      ],
+      "uh": "Duurzame energie: energie die niet opraakt."
+     },
+     {
+      "v": "De opwarming van de aarde doordat warmte wordt vastgehouden. Wat is hier aan de hand?",
+      "o": [
+       "Grondstof",
+       "Milieuvervuiling",
+       "Kringloopdenken",
+       "Broeikaseffect"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De opwarming van de aarde doordat warmte wordt vastgehouden. Dat past bij Broeikaseffect: aarde warmt op.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Milieuvervuiling: schadelijke stoffen lozen.",
+       "Nee, dat hoort bij Kringloopdenken: grondstoffen hergebruiken.",
+       "Klopt: aarde warmt op."
+      ],
+      "uh": "Broeikaseffect: aarde warmt op."
+     },
+     {
+      "v": "Gassen in de lucht houden warmte vast en de aarde warmt op. Om welk begrip gaat het?",
+      "o": [
+       "Broeikaseffect",
+       "Fijnstof",
+       "Biodiversiteit",
+       "Recycling"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Gassen in de lucht houden warmte vast en de aarde warmt op. Dat past bij Broeikaseffect: aarde warmt op.",
+      "uo": [
+       "Klopt: aarde warmt op.",
+       "Nee, dat hoort bij Fijnstof: schadelijke luchtdeeltjes.",
+       "Nee, dat hoort bij Biodiversiteit: soortenrijkdom.",
+       "Nee, dat hoort bij Recycling: afval hergebruiken."
+      ],
+      "uh": "Broeikaseffect: aarde warmt op."
+     },
+     {
+      "v": "Een auto rijdt op benzine die uit aardolie is gemaakt. Welk begrip herken je hier?",
+      "o": [
+       "Duurzame energie",
+       "Fossiele brandstof",
+       "Afbreekbaar",
+       "Duurzaamheid"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een auto rijdt op benzine die uit aardolie is gemaakt. Dat past bij Fossiele brandstof: olie, gas en kolen.",
+      "uo": [
+       "Nee, dat hoort bij Duurzame energie: energie die niet opraakt.",
+       "Klopt: olie, gas en kolen.",
+       "Nee, dat hoort bij Afbreekbaar: wordt afgebroken.",
+       "Nee, dat hoort bij Duurzaamheid: toekomstbestendig leven."
+      ],
+      "uh": "Fossiele brandstof: olie, gas en kolen."
+     },
+     {
+      "v": "Energie uit bronnen die niet opraken, zoals zon en wind. Wat is hier aan de hand?",
+      "o": [
+       "Grondstof",
+       "Broeikasgas",
+       "Duurzame energie",
+       "Broeikaseffect"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Energie uit bronnen die niet opraken, zoals zon en wind. Dat past bij Duurzame energie: energie die niet opraakt.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Broeikasgas: gas dat warmte vasthoudt.",
+       "Klopt: energie die niet opraakt.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op."
+      ],
+      "uh": "Duurzame energie: energie die niet opraakt."
+     },
+     {
+      "v": "Materiaal dat door de natuur vanzelf wordt afgebroken. Welk begrip past hierbij?",
+      "o": [
+       "Kringloopdenken",
+       "Recycling",
+       "Duurzaamheid",
+       "Afbreekbaar"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Materiaal dat door de natuur vanzelf wordt afgebroken. Dat past bij Afbreekbaar: wordt afgebroken.",
+      "uo": [
+       "Nee, dat hoort bij Kringloopdenken: grondstoffen hergebruiken.",
+       "Nee, dat hoort bij Recycling: afval hergebruiken.",
+       "Nee, dat hoort bij Duurzaamheid: toekomstbestendig leven.",
+       "Klopt: wordt afgebroken."
+      ],
+      "uh": "Afbreekbaar: wordt afgebroken."
+     },
+     {
+      "v": "Afval van het ene product wordt de grondstof voor het volgende. Om welk begrip gaat het?",
+      "o": [
+       "Kringloopdenken",
+       "Broeikaseffect",
+       "Grondstof",
+       "Fossiele brandstof"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Afval van het ene product wordt de grondstof voor het volgende. Dat past bij Kringloopdenken: grondstoffen hergebruiken.",
+      "uo": [
+       "Klopt: grondstoffen hergebruiken.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen."
+      ],
+      "uh": "Kringloopdenken: grondstoffen hergebruiken."
+     },
+     {
+      "v": "Zuinig omgaan met de aarde, met oog op toekomstige generaties. Welk begrip herken je hier?",
+      "o": [
+       "Kringloopdenken",
+       "Duurzaamheid",
+       "Fijnstof",
+       "Biodiversiteit"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Zuinig omgaan met de aarde, met oog op toekomstige generaties. Dat past bij Duurzaamheid: toekomstbestendig leven.",
+      "uo": [
+       "Nee, dat hoort bij Kringloopdenken: grondstoffen hergebruiken.",
+       "Klopt: toekomstbestendig leven.",
+       "Nee, dat hoort bij Fijnstof: schadelijke luchtdeeltjes.",
+       "Nee, dat hoort bij Biodiversiteit: soortenrijkdom."
+      ],
+      "uh": "Duurzaamheid: toekomstbestendig leven."
+     },
+     {
+      "v": "Je gebruikt grondstoffen zo dat er ook voor later genoeg blijft. Wat is hier aan de hand?",
+      "o": [
+       "Grondstof",
+       "Recycling",
+       "Duurzaamheid",
+       "Fossiele brandstof"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je gebruikt grondstoffen zo dat er ook voor later genoeg blijft. Dat past bij Duurzaamheid: toekomstbestendig leven.",
+      "uo": [
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Recycling: afval hergebruiken.",
+       "Klopt: toekomstbestendig leven.",
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen."
+      ],
+      "uh": "Duurzaamheid: toekomstbestendig leven."
+     },
+     {
+      "v": "Schadelijke stoffen komen in lucht, water of bodem terecht. Welk begrip past hierbij?",
+      "o": [
+       "Recycling",
+       "Broeikaseffect",
+       "Afbreekbaar",
+       "Milieuvervuiling"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Schadelijke stoffen komen in lucht, water of bodem terecht. Dat past bij Milieuvervuiling: schadelijke stoffen lozen.",
+      "uo": [
+       "Nee, dat hoort bij Recycling: afval hergebruiken.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Afbreekbaar: wordt afgebroken.",
+       "Klopt: schadelijke stoffen lozen."
+      ],
+      "uh": "Milieuvervuiling: schadelijke stoffen lozen."
+     },
+     {
+      "v": "In dit bos leven honderden verschillende soorten planten en dieren. Om welk begrip gaat het?",
+      "o": [
+       "Biodiversiteit",
+       "Broeikasgas",
+       "Duurzaamheid",
+       "Duurzame energie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "In dit bos leven honderden verschillende soorten planten en dieren. Dat past bij Biodiversiteit: soortenrijkdom.",
+      "uo": [
+       "Klopt: soortenrijkdom.",
+       "Nee, dat hoort bij Broeikasgas: gas dat warmte vasthoudt.",
+       "Nee, dat hoort bij Duurzaamheid: toekomstbestendig leven.",
+       "Nee, dat hoort bij Duurzame energie: energie die niet opraakt."
+      ],
+      "uh": "Biodiversiteit: soortenrijkdom."
+     },
+     {
+      "v": "Koolstofdioxide en methaan houden de warmte in de atmosfeer vast. Welk begrip herken je hier?",
+      "o": [
+       "Fossiele brandstof",
+       "Broeikasgas",
+       "Grondstof",
+       "Milieuvervuiling"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Koolstofdioxide en methaan houden de warmte in de atmosfeer vast. Dat past bij Broeikasgas: gas dat warmte vasthoudt.",
+      "uo": [
+       "Nee, dat hoort bij Fossiele brandstof: olie, gas en kolen.",
+       "Klopt: gas dat warmte vasthoudt.",
+       "Nee, dat hoort bij Grondstof: basismateriaal.",
+       "Nee, dat hoort bij Milieuvervuiling: schadelijke stoffen lozen."
+      ],
+      "uh": "Broeikasgas: gas dat warmte vasthoudt."
+     },
+     {
+      "v": "Gebruikt materiaal wordt verwerkt tot iets nieuws. Wat is hier aan de hand?",
+      "o": [
+       "Duurzaamheid",
+       "Kringloopdenken",
+       "Recycling",
+       "Duurzame energie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Gebruikt materiaal wordt verwerkt tot iets nieuws. Dat past bij Recycling: afval hergebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Duurzaamheid: toekomstbestendig leven.",
+       "Nee, dat hoort bij Kringloopdenken: grondstoffen hergebruiken.",
+       "Klopt: afval hergebruiken.",
+       "Nee, dat hoort bij Duurzame energie: energie die niet opraakt."
+      ],
+      "uh": "Recycling: afval hergebruiken."
+     },
+     {
+      "v": "Een fabriek loost gif in de rivier en de vissen gaan dood. Welk begrip past hierbij?",
+      "o": [
+       "Duurzaamheid",
+       "Broeikaseffect",
+       "Recycling",
+       "Milieuvervuiling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een fabriek loost gif in de rivier en de vissen gaan dood. Dat past bij Milieuvervuiling: schadelijke stoffen lozen.",
+      "uo": [
+       "Nee, dat hoort bij Duurzaamheid: toekomstbestendig leven.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Recycling: afval hergebruiken.",
+       "Klopt: schadelijke stoffen lozen."
+      ],
+      "uh": "Milieuvervuiling: schadelijke stoffen lozen."
+     },
+     {
+      "v": "Oude plastic flessen worden omgesmolten tot nieuwe producten. Om welk begrip gaat het?",
+      "o": [
+       "Recycling",
+       "Duurzame energie",
+       "Duurzaamheid",
+       "Milieuvervuiling"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Oude plastic flessen worden omgesmolten tot nieuwe producten. Dat past bij Recycling: afval hergebruiken.",
+      "uo": [
+       "Klopt: afval hergebruiken.",
+       "Nee, dat hoort bij Duurzame energie: energie die niet opraakt.",
+       "Nee, dat hoort bij Duurzaamheid: toekomstbestendig leven.",
+       "Nee, dat hoort bij Milieuvervuiling: schadelijke stoffen lozen."
+      ],
+      "uh": "Recycling: afval hergebruiken."
+     },
+     {
+      "v": "Een gas dat bijdraagt aan de opwarming van de aarde. Welk begrip herken je hier?",
+      "o": [
+       "Fijnstof",
+       "Broeikasgas",
+       "Broeikaseffect",
+       "Grondstof"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een gas dat bijdraagt aan de opwarming van de aarde. Dat past bij Broeikasgas: gas dat warmte vasthoudt.",
+      "uo": [
+       "Nee, dat hoort bij Fijnstof: schadelijke luchtdeeltjes.",
+       "Klopt: gas dat warmte vasthoudt.",
+       "Nee, dat hoort bij Broeikaseffect: aarde warmt op.",
+       "Nee, dat hoort bij Grondstof: basismateriaal."
+      ],
+      "uh": "Broeikasgas: gas dat warmte vasthoudt."
+     },
+     {
+      "v": "Piepkleine deeltjes in de lucht die je longen beschadigen. Wat is hier aan de hand?",
+      "o": [
+       "Duurzame energie",
+       "Broeikasgas",
+       "Fijnstof",
+       "Recycling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Piepkleine deeltjes in de lucht die je longen beschadigen. Dat past bij Fijnstof: schadelijke luchtdeeltjes.",
+      "uo": [
+       "Nee, dat hoort bij Duurzame energie: energie die niet opraakt.",
+       "Nee, dat hoort bij Broeikasgas: gas dat warmte vasthoudt.",
+       "Klopt: schadelijke luchtdeeltjes.",
+       "Nee, dat hoort bij Recycling: afval hergebruiken."
+      ],
+      "uh": "Fijnstof: schadelijke luchtdeeltjes."
      }
     ],
     "begrippen": [
@@ -10539,6 +12572,462 @@ var VAKKEN_VMBO = [
        "Klopt: kraakbeen zit in het oor en de neus."
       ],
       "uh": "In het oor: Kraakbeen zit in het oor en de neus."
+     },
+     {
+      "v": "De vloeistof die wrijving in een gewricht vermindert. Welk begrip past hierbij?",
+      "o": [
+       "Gewrichtssmeer",
+       "Scharniergewricht",
+       "Antagonist",
+       "Spier"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De vloeistof die wrijving in een gewricht vermindert. Dat past bij Gewrichtssmeer: vermindert wrijving.",
+      "uo": [
+       "Klopt: vermindert wrijving.",
+       "Nee, dat hoort bij Scharniergewricht: buigt één richting.",
+       "Nee, dat hoort bij Antagonist: tegenwerkende spier.",
+       "Nee, dat hoort bij Spier: trekt samen, beweegt."
+      ],
+      "uh": "Gewrichtssmeer: vermindert wrijving."
+     },
+     {
+      "v": "Het zakje om een gewricht dat de smeervloeistof vasthoudt. Om welk begrip gaat het?",
+      "o": [
+       "Pees",
+       "Gewrichtskapsel",
+       "Kogelgewricht",
+       "Buigspier"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het zakje om een gewricht dat de smeervloeistof vasthoudt. Dat past bij Gewrichtskapsel: omhulsel met smeer.",
+      "uo": [
+       "Nee, dat hoort bij Pees: verbindt spier met bot.",
+       "Klopt: omhulsel met smeer.",
+       "Nee, dat hoort bij Kogelgewricht: draait alle richtingen.",
+       "Nee, dat hoort bij Buigspier: buigt een gewricht."
+      ],
+      "uh": "Gewrichtskapsel: omhulsel met smeer."
+     },
+     {
+      "v": "Een verend laagje op de botuiteinden vangt de schokken in een gewricht op. Welk begrip herken je hier?",
+      "o": [
+       "Spier",
+       "Buigspier",
+       "Kraakbeen",
+       "Gewricht"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een verend laagje op de botuiteinden vangt de schokken in een gewricht op. Dat past bij Kraakbeen: bedekt botuiteinden.",
+      "uo": [
+       "Nee, dat hoort bij Spier: trekt samen, beweegt.",
+       "Nee, dat hoort bij Buigspier: buigt een gewricht.",
+       "Klopt: bedekt botuiteinden.",
+       "Nee, dat hoort bij Gewricht: beweegbare botverbinding."
+      ],
+      "uh": "Kraakbeen: bedekt botuiteinden."
+     },
+     {
+      "v": "Een gewricht dat in alle richtingen kan draaien. Wat is hier aan de hand?",
+      "o": [
+       "Strekspier",
+       "Spier",
+       "Buigspier",
+       "Kogelgewricht"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een gewricht dat in alle richtingen kan draaien. Dat past bij Kogelgewricht: draait alle richtingen.",
+      "uo": [
+       "Nee, dat hoort bij Strekspier: strekt een gewricht.",
+       "Nee, dat hoort bij Spier: trekt samen, beweegt.",
+       "Nee, dat hoort bij Buigspier: buigt een gewricht.",
+       "Klopt: draait alle richtingen."
+      ],
+      "uh": "Kogelgewricht: draait alle richtingen."
+     },
+     {
+      "v": "De spier die een gewricht dichtvouwt. Welk begrip past hierbij?",
+      "o": [
+       "Buigspier",
+       "Strekspier",
+       "Gewrichtssmeer",
+       "Kogelgewricht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De spier die een gewricht dichtvouwt. Dat past bij Buigspier: buigt een gewricht.",
+      "uo": [
+       "Klopt: buigt een gewricht.",
+       "Nee, dat hoort bij Strekspier: strekt een gewricht.",
+       "Nee, dat hoort bij Gewrichtssmeer: vermindert wrijving.",
+       "Nee, dat hoort bij Kogelgewricht: draait alle richtingen."
+      ],
+      "uh": "Buigspier: buigt een gewricht."
+     },
+     {
+      "v": "Je schouder kan alle kanten op draaien, als een bal in een kom. Om welk begrip gaat het?",
+      "o": [
+       "Spier",
+       "Kogelgewricht",
+       "Buigspier",
+       "Strekspier"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je schouder kan alle kanten op draaien, als een bal in een kom. Dat past bij Kogelgewricht: draait alle richtingen.",
+      "uo": [
+       "Nee, dat hoort bij Spier: trekt samen, beweegt.",
+       "Klopt: draait alle richtingen.",
+       "Nee, dat hoort bij Buigspier: buigt een gewricht.",
+       "Nee, dat hoort bij Strekspier: strekt een gewricht."
+      ],
+      "uh": "Kogelgewricht: draait alle richtingen."
+     },
+     {
+      "v": "Terwijl de ene spier samentrekt, ontspant de tegenwerkende spier. Welk begrip herken je hier?",
+      "o": [
+       "Strekspier",
+       "Buigspier",
+       "Antagonist",
+       "Gewrichtssmeer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Terwijl de ene spier samentrekt, ontspant de tegenwerkende spier. Dat past bij Antagonist: tegenwerkende spier.",
+      "uo": [
+       "Nee, dat hoort bij Strekspier: strekt een gewricht.",
+       "Nee, dat hoort bij Buigspier: buigt een gewricht.",
+       "Klopt: tegenwerkende spier.",
+       "Nee, dat hoort bij Gewrichtssmeer: vermindert wrijving."
+      ],
+      "uh": "Antagonist: tegenwerkende spier."
+     },
+     {
+      "v": "Het stevige weefsel dat twee botten bij een gewricht verbindt. Wat is hier aan de hand?",
+      "o": [
+       "Strekspier",
+       "Gewrichtssmeer",
+       "Antagonist",
+       "Gewrichtsband"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het stevige weefsel dat twee botten bij een gewricht verbindt. Dat past bij Gewrichtsband: houdt botten bijeen.",
+      "uo": [
+       "Nee, dat hoort bij Strekspier: strekt een gewricht.",
+       "Nee, dat hoort bij Gewrichtssmeer: vermindert wrijving.",
+       "Nee, dat hoort bij Antagonist: tegenwerkende spier.",
+       "Klopt: houdt botten bijeen."
+      ],
+      "uh": "Gewrichtsband: houdt botten bijeen."
+     },
+     {
+      "v": "Je elleboog kan alleen buigen en strekken, net als een deurscharnier. Welk begrip past hierbij?",
+      "o": [
+       "Scharniergewricht",
+       "Kogelgewricht",
+       "Gewrichtskapsel",
+       "Antagonist"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je elleboog kan alleen buigen en strekken, net als een deurscharnier. Dat past bij Scharniergewricht: buigt één richting.",
+      "uo": [
+       "Klopt: buigt één richting.",
+       "Nee, dat hoort bij Kogelgewricht: draait alle richtingen.",
+       "Nee, dat hoort bij Gewrichtskapsel: omhulsel met smeer.",
+       "Nee, dat hoort bij Antagonist: tegenwerkende spier."
+      ],
+      "uh": "Scharniergewricht: buigt één richting."
+     },
+     {
+      "v": "Sterke banden houden de botten in een knie op hun plaats. Om welk begrip gaat het?",
+      "o": [
+       "Gewrichtssmeer",
+       "Gewrichtsband",
+       "Antagonist",
+       "Strekspier"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Sterke banden houden de botten in een knie op hun plaats. Dat past bij Gewrichtsband: houdt botten bijeen.",
+      "uo": [
+       "Nee, dat hoort bij Gewrichtssmeer: vermindert wrijving.",
+       "Klopt: houdt botten bijeen.",
+       "Nee, dat hoort bij Antagonist: tegenwerkende spier.",
+       "Nee, dat hoort bij Strekspier: strekt een gewricht."
+      ],
+      "uh": "Gewrichtsband: houdt botten bijeen."
+     },
+     {
+      "v": "Een omhulsel houdt de gewrichtsvloeistof bij het gewricht binnen. Welk begrip herken je hier?",
+      "o": [
+       "Pees",
+       "Gewrichtsband",
+       "Gewrichtskapsel",
+       "Strekspier"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een omhulsel houdt de gewrichtsvloeistof bij het gewricht binnen. Dat past bij Gewrichtskapsel: omhulsel met smeer.",
+      "uo": [
+       "Nee, dat hoort bij Pees: verbindt spier met bot.",
+       "Nee, dat hoort bij Gewrichtsband: houdt botten bijeen.",
+       "Klopt: omhulsel met smeer.",
+       "Nee, dat hoort bij Strekspier: strekt een gewricht."
+      ],
+      "uh": "Gewrichtskapsel: omhulsel met smeer."
+     },
+     {
+      "v": "De tegenwerkende spier die het tegenovergestelde doet. Wat is hier aan de hand?",
+      "o": [
+       "Kogelgewricht",
+       "Gewrichtskapsel",
+       "Gewricht",
+       "Antagonist"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De tegenwerkende spier die het tegenovergestelde doet. Dat past bij Antagonist: tegenwerkende spier.",
+      "uo": [
+       "Nee, dat hoort bij Kogelgewricht: draait alle richtingen.",
+       "Nee, dat hoort bij Gewrichtskapsel: omhulsel met smeer.",
+       "Nee, dat hoort bij Gewricht: beweegbare botverbinding.",
+       "Klopt: tegenwerkende spier."
+      ],
+      "uh": "Antagonist: tegenwerkende spier."
+     },
+     {
+      "v": "Het soepele materiaal dat de botten in een gewricht bedekt. Welk begrip past hierbij?",
+      "o": [
+       "Kraakbeen",
+       "Gewrichtssmeer",
+       "Spier",
+       "Buigspier"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het soepele materiaal dat de botten in een gewricht bedekt. Dat past bij Kraakbeen: bedekt botuiteinden.",
+      "uo": [
+       "Klopt: bedekt botuiteinden.",
+       "Nee, dat hoort bij Gewrichtssmeer: vermindert wrijving.",
+       "Nee, dat hoort bij Spier: trekt samen, beweegt.",
+       "Nee, dat hoort bij Buigspier: buigt een gewricht."
+      ],
+      "uh": "Kraakbeen: bedekt botuiteinden."
+     },
+     {
+      "v": "Als deze spier samentrekt, buigt je arm. Om welk begrip gaat het?",
+      "o": [
+       "Strekspier",
+       "Buigspier",
+       "Gewrichtssmeer",
+       "Kogelgewricht"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Als deze spier samentrekt, buigt je arm. Dat past bij Buigspier: buigt een gewricht.",
+      "uo": [
+       "Nee, dat hoort bij Strekspier: strekt een gewricht.",
+       "Klopt: buigt een gewricht.",
+       "Nee, dat hoort bij Gewrichtssmeer: vermindert wrijving.",
+       "Nee, dat hoort bij Kogelgewricht: draait alle richtingen."
+      ],
+      "uh": "Buigspier: buigt een gewricht."
+     },
+     {
+      "v": "Het weefsel dat door samentrekken beweging veroorzaakt. Welk begrip herken je hier?",
+      "o": [
+       "Strekspier",
+       "Gewrichtskapsel",
+       "Spier",
+       "Kogelgewricht"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het weefsel dat door samentrekken beweging veroorzaakt. Dat past bij Spier: trekt samen, beweegt.",
+      "uo": [
+       "Nee, dat hoort bij Strekspier: strekt een gewricht.",
+       "Nee, dat hoort bij Gewrichtskapsel: omhulsel met smeer.",
+       "Klopt: trekt samen, beweegt.",
+       "Nee, dat hoort bij Kogelgewricht: draait alle richtingen."
+      ],
+      "uh": "Spier: trekt samen, beweegt."
+     },
+     {
+      "v": "Dit vlezige weefsel trekt samen en zorgt dat je arm beweegt. Wat is hier aan de hand?",
+      "o": [
+       "Strekspier",
+       "Pees",
+       "Antagonist",
+       "Spier"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Dit vlezige weefsel trekt samen en zorgt dat je arm beweegt. Dat past bij Spier: trekt samen, beweegt.",
+      "uo": [
+       "Nee, dat hoort bij Strekspier: strekt een gewricht.",
+       "Nee, dat hoort bij Pees: verbindt spier met bot.",
+       "Nee, dat hoort bij Antagonist: tegenwerkende spier.",
+       "Klopt: trekt samen, beweegt."
+      ],
+      "uh": "Spier: trekt samen, beweegt."
+     },
+     {
+      "v": "De plaats waar twee botten samenkomen en beweegbaar zijn. Welk begrip past hierbij?",
+      "o": [
+       "Gewricht",
+       "Gewrichtsband",
+       "Pees",
+       "Gewrichtskapsel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De plaats waar twee botten samenkomen en beweegbaar zijn. Dat past bij Gewricht: beweegbare botverbinding.",
+      "uo": [
+       "Klopt: beweegbare botverbinding.",
+       "Nee, dat hoort bij Gewrichtsband: houdt botten bijeen.",
+       "Nee, dat hoort bij Pees: verbindt spier met bot.",
+       "Nee, dat hoort bij Gewrichtskapsel: omhulsel met smeer."
+      ],
+      "uh": "Gewricht: beweegbare botverbinding."
+     },
+     {
+      "v": "Een glibberig vocht in het gewricht zorgt dat de botten soepel bewegen. Om welk begrip gaat het?",
+      "o": [
+       "Scharniergewricht",
+       "Gewrichtssmeer",
+       "Antagonist",
+       "Spier"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een glibberig vocht in het gewricht zorgt dat de botten soepel bewegen. Dat past bij Gewrichtssmeer: vermindert wrijving.",
+      "uo": [
+       "Nee, dat hoort bij Scharniergewricht: buigt één richting.",
+       "Klopt: vermindert wrijving.",
+       "Nee, dat hoort bij Antagonist: tegenwerkende spier.",
+       "Nee, dat hoort bij Spier: trekt samen, beweegt."
+      ],
+      "uh": "Gewrichtssmeer: vermindert wrijving."
+     },
+     {
+      "v": "Aan het eind van een spier zit een stevig koord dat aan het bot vastzit. Welk begrip herken je hier?",
+      "o": [
+       "Spier",
+       "Gewrichtsband",
+       "Pees",
+       "Gewricht"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Aan het eind van een spier zit een stevig koord dat aan het bot vastzit. Dat past bij Pees: verbindt spier met bot.",
+      "uo": [
+       "Nee, dat hoort bij Spier: trekt samen, beweegt.",
+       "Nee, dat hoort bij Gewrichtsband: houdt botten bijeen.",
+       "Klopt: verbindt spier met bot.",
+       "Nee, dat hoort bij Gewricht: beweegbare botverbinding."
+      ],
+      "uh": "Pees: verbindt spier met bot."
+     },
+     {
+      "v": "De spier die een gebogen gewricht weer recht maakt. Wat is hier aan de hand?",
+      "o": [
+       "Kogelgewricht",
+       "Buigspier",
+       "Spier",
+       "Strekspier"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De spier die een gebogen gewricht weer recht maakt. Dat past bij Strekspier: strekt een gewricht.",
+      "uo": [
+       "Nee, dat hoort bij Kogelgewricht: draait alle richtingen.",
+       "Nee, dat hoort bij Buigspier: buigt een gewricht.",
+       "Nee, dat hoort bij Spier: trekt samen, beweegt.",
+       "Klopt: strekt een gewricht."
+      ],
+      "uh": "Strekspier: strekt een gewricht."
+     },
+     {
+      "v": "Op de plek waar twee botten bewegen, kun je je arm buigen. Welk begrip past hierbij?",
+      "o": [
+       "Gewricht",
+       "Spier",
+       "Gewrichtskapsel",
+       "Scharniergewricht"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Op de plek waar twee botten bewegen, kun je je arm buigen. Dat past bij Gewricht: beweegbare botverbinding.",
+      "uo": [
+       "Klopt: beweegbare botverbinding.",
+       "Nee, dat hoort bij Spier: trekt samen, beweegt.",
+       "Nee, dat hoort bij Gewrichtskapsel: omhulsel met smeer.",
+       "Nee, dat hoort bij Scharniergewricht: buigt één richting."
+      ],
+      "uh": "Gewricht: beweegbare botverbinding."
+     },
+     {
+      "v": "Als deze spier samentrekt, strek je je arm weer. Om welk begrip gaat het?",
+      "o": [
+       "Buigspier",
+       "Strekspier",
+       "Scharniergewricht",
+       "Gewrichtssmeer"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Als deze spier samentrekt, strek je je arm weer. Dat past bij Strekspier: strekt een gewricht.",
+      "uo": [
+       "Nee, dat hoort bij Buigspier: buigt een gewricht.",
+       "Klopt: strekt een gewricht.",
+       "Nee, dat hoort bij Scharniergewricht: buigt één richting.",
+       "Nee, dat hoort bij Gewrichtssmeer: vermindert wrijving."
+      ],
+      "uh": "Strekspier: strekt een gewricht."
+     },
+     {
+      "v": "Het taaie stuk dat een spier aan een bot verbindt. Welk begrip herken je hier?",
+      "o": [
+       "Scharniergewricht",
+       "Gewrichtsband",
+       "Pees",
+       "Kogelgewricht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het taaie stuk dat een spier aan een bot verbindt. Dat past bij Pees: verbindt spier met bot.",
+      "uo": [
+       "Nee, dat hoort bij Scharniergewricht: buigt één richting.",
+       "Nee, dat hoort bij Gewrichtsband: houdt botten bijeen.",
+       "Klopt: verbindt spier met bot.",
+       "Nee, dat hoort bij Kogelgewricht: draait alle richtingen."
+      ],
+      "uh": "Pees: verbindt spier met bot."
+     },
+     {
+      "v": "Een gewricht dat maar in één richting kan bewegen. Wat is hier aan de hand?",
+      "o": [
+       "Kraakbeen",
+       "Gewrichtsband",
+       "Buigspier",
+       "Scharniergewricht"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een gewricht dat maar in één richting kan bewegen. Dat past bij Scharniergewricht: buigt één richting.",
+      "uo": [
+       "Nee, dat hoort bij Kraakbeen: bedekt botuiteinden.",
+       "Nee, dat hoort bij Gewrichtsband: houdt botten bijeen.",
+       "Nee, dat hoort bij Buigspier: buigt een gewricht.",
+       "Klopt: buigt één richting."
+      ],
+      "uh": "Scharniergewricht: buigt één richting."
      }
     ],
     "begrippen": [
@@ -10913,6 +13402,500 @@ var VAKKEN_VMBO = [
        "Klopt: de longen nemen zuurstof op."
       ],
       "uh": "De longen nemen zuurstof op."
+     },
+     {
+      "v": "Een orgaan waarmee je licht, geluid of geur waarneemt. Welk begrip past hierbij?",
+      "o": [
+       "Zintuig",
+       "Nier",
+       "Hart",
+       "Slagader"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een orgaan waarmee je licht, geluid of geur waarneemt. Dat past bij Zintuig: vangt prikkels op.",
+      "uo": [
+       "Klopt: vangt prikkels op.",
+       "Nee, dat hoort bij Nier: filtert het bloed.",
+       "Nee, dat hoort bij Hart: pompt het bloed rond.",
+       "Nee, dat hoort bij Slagader: bloed van het hart af."
+      ],
+      "uh": "Zintuig: vangt prikkels op."
+     },
+     {
+      "v": "Dit dikke, stevige bloedvat voert bloed vanaf het hart weg. Om welk begrip gaat het?",
+      "o": [
+       "Ader",
+       "Slagader",
+       "Haarvat",
+       "Longblaasje"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Dit dikke, stevige bloedvat voert bloed vanaf het hart weg. Dat past bij Slagader: bloed van het hart af.",
+      "uo": [
+       "Nee, dat hoort bij Ader: bloed naar het hart toe.",
+       "Klopt: bloed van het hart af.",
+       "Nee, dat hoort bij Haarvat: uitwisseling van stoffen.",
+       "Nee, dat hoort bij Longblaasje: plek van gaswisseling."
+      ],
+      "uh": "Slagader: bloed van het hart af."
+     },
+     {
+      "v": "Het systeem dat prikkels doorgeeft en het lichaam aanstuurt. Welk begrip herken je hier?",
+      "o": [
+       "Nier",
+       "Ader",
+       "Zenuwstelsel",
+       "Enzym"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het systeem dat prikkels doorgeeft en het lichaam aanstuurt. Dat past bij Zenuwstelsel: stuurt met prikkels.",
+      "uo": [
+       "Nee, dat hoort bij Nier: filtert het bloed.",
+       "Nee, dat hoort bij Ader: bloed naar het hart toe.",
+       "Klopt: stuurt met prikkels.",
+       "Nee, dat hoort bij Enzym: versnelt een reactie."
+      ],
+      "uh": "Zenuwstelsel: stuurt met prikkels."
+     },
+     {
+      "v": "Het proces waarbij eten wordt omgezet in opneembare stoffen. Wat is hier aan de hand?",
+      "o": [
+       "Darmvlok",
+       "Nier",
+       "Gaswisseling",
+       "Vertering"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het proces waarbij eten wordt omgezet in opneembare stoffen. Dat past bij Vertering: voedsel klein maken.",
+      "uo": [
+       "Nee, dat hoort bij Darmvlok: neemt voeding op.",
+       "Nee, dat hoort bij Nier: filtert het bloed.",
+       "Nee, dat hoort bij Gaswisseling: zuurstof in, CO2 uit.",
+       "Klopt: voedsel klein maken."
+      ],
+      "uh": "Vertering: voedsel klein maken."
+     },
+     {
+      "v": "Duizenden kleine uitstulpingen in de dunne darm nemen voedsel op. Welk begrip past hierbij?",
+      "o": [
+       "Darmvlok",
+       "Hormoon",
+       "Slagader",
+       "Enzym"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Duizenden kleine uitstulpingen in de dunne darm nemen voedsel op. Dat past bij Darmvlok: neemt voeding op.",
+      "uo": [
+       "Klopt: neemt voeding op.",
+       "Nee, dat hoort bij Hormoon: regelt via het bloed.",
+       "Nee, dat hoort bij Slagader: bloed van het hart af.",
+       "Nee, dat hoort bij Enzym: versnelt een reactie."
+      ],
+      "uh": "Darmvlok: neemt voeding op."
+     },
+     {
+      "v": "Hersenen en zenuwen geven razendsnel signalen door je lichaam. Om welk begrip gaat het?",
+      "o": [
+       "Enzym",
+       "Zenuwstelsel",
+       "Ader",
+       "Gaswisseling"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Hersenen en zenuwen geven razendsnel signalen door je lichaam. Dat past bij Zenuwstelsel: stuurt met prikkels.",
+      "uo": [
+       "Nee, dat hoort bij Enzym: versnelt een reactie.",
+       "Klopt: stuurt met prikkels.",
+       "Nee, dat hoort bij Ader: bloed naar het hart toe.",
+       "Nee, dat hoort bij Gaswisseling: zuurstof in, CO2 uit."
+      ],
+      "uh": "Zenuwstelsel: stuurt met prikkels."
+     },
+     {
+      "v": "In de longen komt zuurstof het bloed in en gaat koolstofdioxide eruit. Welk begrip herken je hier?",
+      "o": [
+       "Hormoon",
+       "Slagader",
+       "Gaswisseling",
+       "Zenuwstelsel"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "In de longen komt zuurstof het bloed in en gaat koolstofdioxide eruit. Dat past bij Gaswisseling: zuurstof in, CO2 uit.",
+      "uo": [
+       "Nee, dat hoort bij Hormoon: regelt via het bloed.",
+       "Nee, dat hoort bij Slagader: bloed van het hart af.",
+       "Klopt: zuurstof in, CO2 uit.",
+       "Nee, dat hoort bij Zenuwstelsel: stuurt met prikkels."
+      ],
+      "uh": "Gaswisseling: zuurstof in, CO2 uit."
+     },
+     {
+      "v": "Het minuscule blaasje in de long waar gaswisseling plaatsvindt. Wat is hier aan de hand?",
+      "o": [
+       "Hart",
+       "Haarvat",
+       "Ader",
+       "Longblaasje"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het minuscule blaasje in de long waar gaswisseling plaatsvindt. Dat past bij Longblaasje: plek van gaswisseling.",
+      "uo": [
+       "Nee, dat hoort bij Hart: pompt het bloed rond.",
+       "Nee, dat hoort bij Haarvat: uitwisseling van stoffen.",
+       "Nee, dat hoort bij Ader: bloed naar het hart toe.",
+       "Klopt: plek van gaswisseling."
+      ],
+      "uh": "Longblaasje: plek van gaswisseling."
+     },
+     {
+      "v": "De uitwisseling van zuurstof en koolstofdioxide in de longen. Welk begrip past hierbij?",
+      "o": [
+       "Gaswisseling",
+       "Slagader",
+       "Hormoon",
+       "Zenuwstelsel"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De uitwisseling van zuurstof en koolstofdioxide in de longen. Dat past bij Gaswisseling: zuurstof in, CO2 uit.",
+      "uo": [
+       "Klopt: zuurstof in, CO2 uit.",
+       "Nee, dat hoort bij Slagader: bloed van het hart af.",
+       "Nee, dat hoort bij Hormoon: regelt via het bloed.",
+       "Nee, dat hoort bij Zenuwstelsel: stuurt met prikkels."
+      ],
+      "uh": "Gaswisseling: zuurstof in, CO2 uit."
+     },
+     {
+      "v": "Een stof die de vertering versnelt zonder zelf op te raken. Om welk begrip gaat het?",
+      "o": [
+       "Hormoon",
+       "Enzym",
+       "Zenuwstelsel",
+       "Gaswisseling"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een stof die de vertering versnelt zonder zelf op te raken. Dat past bij Enzym: versnelt een reactie.",
+      "uo": [
+       "Nee, dat hoort bij Hormoon: regelt via het bloed.",
+       "Klopt: versnelt een reactie.",
+       "Nee, dat hoort bij Zenuwstelsel: stuurt met prikkels.",
+       "Nee, dat hoort bij Gaswisseling: zuurstof in, CO2 uit."
+      ],
+      "uh": "Enzym: versnelt een reactie."
+     },
+     {
+      "v": "Een stof uit een klier reist via het bloed en regelt bijvoorbeeld je groei. Welk begrip herken je hier?",
+      "o": [
+       "Hart",
+       "Nier",
+       "Hormoon",
+       "Gaswisseling"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een stof uit een klier reist via het bloed en regelt bijvoorbeeld je groei. Dat past bij Hormoon: regelt via het bloed.",
+      "uo": [
+       "Nee, dat hoort bij Hart: pompt het bloed rond.",
+       "Nee, dat hoort bij Nier: filtert het bloed.",
+       "Klopt: regelt via het bloed.",
+       "Nee, dat hoort bij Gaswisseling: zuurstof in, CO2 uit."
+      ],
+      "uh": "Hormoon: regelt via het bloed."
+     },
+     {
+      "v": "Het orgaan dat het bloed zuivert en urine vormt. Wat is hier aan de hand?",
+      "o": [
+       "Ader",
+       "Darmvlok",
+       "Hart",
+       "Nier"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het orgaan dat het bloed zuivert en urine vormt. Dat past bij Nier: filtert het bloed.",
+      "uo": [
+       "Nee, dat hoort bij Ader: bloed naar het hart toe.",
+       "Nee, dat hoort bij Darmvlok: neemt voeding op.",
+       "Nee, dat hoort bij Hart: pompt het bloed rond.",
+       "Klopt: filtert het bloed."
+      ],
+      "uh": "Nier: filtert het bloed."
+     },
+     {
+      "v": "In deze kleine bolletjes in de long wordt zuurstof opgenomen. Welk begrip past hierbij?",
+      "o": [
+       "Longblaasje",
+       "Hart",
+       "Zintuig",
+       "Enzym"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "In deze kleine bolletjes in de long wordt zuurstof opgenomen. Dat past bij Longblaasje: plek van gaswisseling.",
+      "uo": [
+       "Klopt: plek van gaswisseling.",
+       "Nee, dat hoort bij Hart: pompt het bloed rond.",
+       "Nee, dat hoort bij Zintuig: vangt prikkels op.",
+       "Nee, dat hoort bij Enzym: versnelt een reactie."
+      ],
+      "uh": "Longblaasje: plek van gaswisseling."
+     },
+     {
+      "v": "Het bloedvat waardoor bloed naar het hart toe stroomt. Om welk begrip gaat het?",
+      "o": [
+       "Slagader",
+       "Ader",
+       "Haarvat",
+       "Hormoon"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het bloedvat waardoor bloed naar het hart toe stroomt. Dat past bij Ader: bloed naar het hart toe.",
+      "uo": [
+       "Nee, dat hoort bij Slagader: bloed van het hart af.",
+       "Klopt: bloed naar het hart toe.",
+       "Nee, dat hoort bij Haarvat: uitwisseling van stoffen.",
+       "Nee, dat hoort bij Hormoon: regelt via het bloed."
+      ],
+      "uh": "Ader: bloed naar het hart toe."
+     },
+     {
+      "v": "Het orgaan dat als een pomp het bloed rondstuwt. Welk begrip herken je hier?",
+      "o": [
+       "Gaswisseling",
+       "Enzym",
+       "Hart",
+       "Darmvlok"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het orgaan dat als een pomp het bloed rondstuwt. Dat past bij Hart: pompt het bloed rond.",
+      "uo": [
+       "Nee, dat hoort bij Gaswisseling: zuurstof in, CO2 uit.",
+       "Nee, dat hoort bij Enzym: versnelt een reactie.",
+       "Klopt: pompt het bloed rond.",
+       "Nee, dat hoort bij Darmvlok: neemt voeding op."
+      ],
+      "uh": "Hart: pompt het bloed rond."
+     },
+     {
+      "v": "In dit heel dunne bloedvaatje wisselen bloed en cellen stoffen uit. Wat is hier aan de hand?",
+      "o": [
+       "Gaswisseling",
+       "Slagader",
+       "Ader",
+       "Haarvat"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "In dit heel dunne bloedvaatje wisselen bloed en cellen stoffen uit. Dat past bij Haarvat: uitwisseling van stoffen.",
+      "uo": [
+       "Nee, dat hoort bij Gaswisseling: zuurstof in, CO2 uit.",
+       "Nee, dat hoort bij Slagader: bloed van het hart af.",
+       "Nee, dat hoort bij Ader: bloed naar het hart toe.",
+       "Klopt: uitwisseling van stoffen."
+      ],
+      "uh": "Haarvat: uitwisseling van stoffen."
+     },
+     {
+      "v": "Dit bloedvat voert het bloed juist terug naar het hart. Welk begrip past hierbij?",
+      "o": [
+       "Ader",
+       "Enzym",
+       "Vertering",
+       "Zintuig"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Dit bloedvat voert het bloed juist terug naar het hart. Dat past bij Ader: bloed naar het hart toe.",
+      "uo": [
+       "Klopt: bloed naar het hart toe.",
+       "Nee, dat hoort bij Enzym: versnelt een reactie.",
+       "Nee, dat hoort bij Vertering: voedsel klein maken.",
+       "Nee, dat hoort bij Zintuig: vangt prikkels op."
+      ],
+      "uh": "Ader: bloed naar het hart toe."
+     },
+     {
+      "v": "Het bloedvat dat bloed van het hart naar het lichaam brengt. Om welk begrip gaat het?",
+      "o": [
+       "Ader",
+       "Slagader",
+       "Haarvat",
+       "Longblaasje"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het bloedvat dat bloed van het hart naar het lichaam brengt. Dat past bij Slagader: bloed van het hart af.",
+      "uo": [
+       "Nee, dat hoort bij Ader: bloed naar het hart toe.",
+       "Klopt: bloed van het hart af.",
+       "Nee, dat hoort bij Haarvat: uitwisseling van stoffen.",
+       "Nee, dat hoort bij Longblaasje: plek van gaswisseling."
+      ],
+      "uh": "Slagader: bloed van het hart af."
+     },
+     {
+      "v": "Een stofje in je speeksel breekt zetmeel af tot suiker. Welk begrip herken je hier?",
+      "o": [
+       "Haarvat",
+       "Longblaasje",
+       "Enzym",
+       "Hart"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een stofje in je speeksel breekt zetmeel af tot suiker. Dat past bij Enzym: versnelt een reactie.",
+      "uo": [
+       "Nee, dat hoort bij Haarvat: uitwisseling van stoffen.",
+       "Nee, dat hoort bij Longblaasje: plek van gaswisseling.",
+       "Klopt: versnelt een reactie.",
+       "Nee, dat hoort bij Hart: pompt het bloed rond."
+      ],
+      "uh": "Enzym: versnelt een reactie."
+     },
+     {
+      "v": "Dit orgaan filtert afvalstoffen uit het bloed en maakt urine. Wat is hier aan de hand?",
+      "o": [
+       "Ader",
+       "Darmvlok",
+       "Hart",
+       "Nier"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Dit orgaan filtert afvalstoffen uit het bloed en maakt urine. Dat past bij Nier: filtert het bloed.",
+      "uo": [
+       "Nee, dat hoort bij Ader: bloed naar het hart toe.",
+       "Nee, dat hoort bij Darmvlok: neemt voeding op.",
+       "Nee, dat hoort bij Hart: pompt het bloed rond.",
+       "Klopt: filtert het bloed."
+      ],
+      "uh": "Nier: filtert het bloed."
+     },
+     {
+      "v": "Met je oog, oor en neus neem je prikkels uit je omgeving waar. Welk begrip past hierbij?",
+      "o": [
+       "Zintuig",
+       "Nier",
+       "Hart",
+       "Slagader"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Met je oog, oor en neus neem je prikkels uit je omgeving waar. Dat past bij Zintuig: vangt prikkels op.",
+      "uo": [
+       "Klopt: vangt prikkels op.",
+       "Nee, dat hoort bij Nier: filtert het bloed.",
+       "Nee, dat hoort bij Hart: pompt het bloed rond.",
+       "Nee, dat hoort bij Slagader: bloed van het hart af."
+      ],
+      "uh": "Zintuig: vangt prikkels op."
+     },
+     {
+      "v": "Deze holle spier pompt het bloed door je hele lichaam. Om welk begrip gaat het?",
+      "o": [
+       "Haarvat",
+       "Hart",
+       "Zenuwstelsel",
+       "Enzym"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Deze holle spier pompt het bloed door je hele lichaam. Dat past bij Hart: pompt het bloed rond.",
+      "uo": [
+       "Nee, dat hoort bij Haarvat: uitwisseling van stoffen.",
+       "Klopt: pompt het bloed rond.",
+       "Nee, dat hoort bij Zenuwstelsel: stuurt met prikkels.",
+       "Nee, dat hoort bij Enzym: versnelt een reactie."
+      ],
+      "uh": "Hart: pompt het bloed rond."
+     },
+     {
+      "v": "Het voedsel in je maag en darmen wordt afgebroken tot kleine stukjes. Welk begrip herken je hier?",
+      "o": [
+       "Gaswisseling",
+       "Nier",
+       "Vertering",
+       "Darmvlok"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het voedsel in je maag en darmen wordt afgebroken tot kleine stukjes. Dat past bij Vertering: voedsel klein maken.",
+      "uo": [
+       "Nee, dat hoort bij Gaswisseling: zuurstof in, CO2 uit.",
+       "Nee, dat hoort bij Nier: filtert het bloed.",
+       "Klopt: voedsel klein maken.",
+       "Nee, dat hoort bij Darmvlok: neemt voeding op."
+      ],
+      "uh": "Vertering: voedsel klein maken."
+     },
+     {
+      "v": "Het allerkleinste bloedvat waar zuurstof en voeding worden afgegeven. Wat is hier aan de hand?",
+      "o": [
+       "Nier",
+       "Hormoon",
+       "Longblaasje",
+       "Haarvat"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het allerkleinste bloedvat waar zuurstof en voeding worden afgegeven. Dat past bij Haarvat: uitwisseling van stoffen.",
+      "uo": [
+       "Nee, dat hoort bij Nier: filtert het bloed.",
+       "Nee, dat hoort bij Hormoon: regelt via het bloed.",
+       "Nee, dat hoort bij Longblaasje: plek van gaswisseling.",
+       "Klopt: uitwisseling van stoffen."
+      ],
+      "uh": "Haarvat: uitwisseling van stoffen."
+     },
+     {
+      "v": "Het plooitje in de darmwand dat het oppervlak vergroot voor opname. Welk begrip past hierbij?",
+      "o": [
+       "Darmvlok",
+       "Vertering",
+       "Ader",
+       "Hormoon"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het plooitje in de darmwand dat het oppervlak vergroot voor opname. Dat past bij Darmvlok: neemt voeding op.",
+      "uo": [
+       "Klopt: neemt voeding op.",
+       "Nee, dat hoort bij Vertering: voedsel klein maken.",
+       "Nee, dat hoort bij Ader: bloed naar het hart toe.",
+       "Nee, dat hoort bij Hormoon: regelt via het bloed."
+      ],
+      "uh": "Darmvlok: neemt voeding op."
+     },
+     {
+      "v": "Een boodschapperstof die via het bloed processen regelt. Om welk begrip gaat het?",
+      "o": [
+       "Enzym",
+       "Hormoon",
+       "Zenuwstelsel",
+       "Haarvat"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een boodschapperstof die via het bloed processen regelt. Dat past bij Hormoon: regelt via het bloed.",
+      "uo": [
+       "Nee, dat hoort bij Enzym: versnelt een reactie.",
+       "Klopt: regelt via het bloed.",
+       "Nee, dat hoort bij Zenuwstelsel: stuurt met prikkels.",
+       "Nee, dat hoort bij Haarvat: uitwisseling van stoffen."
+      ],
+      "uh": "Hormoon: regelt via het bloed."
      }
     ],
     "begrippen": [
@@ -11290,6 +14273,462 @@ var VAKKEN_VMBO = [
        "Klopt: bacteriën worden ongevoelig (resistent)."
       ],
       "uh": "Bacteriën worden ongevoelig (resistent)."
+     },
+     {
+      "v": "Een gewas waarvan het erfelijk materiaal is aangepast. Welk begrip past hierbij?",
+      "o": [
+       "Gm-gewas",
+       "Gist",
+       "Biotechnologie",
+       "Schimmel"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een gewas waarvan het erfelijk materiaal is aangepast. Dat past bij Gm-gewas: gewas met veranderd DNA.",
+      "uo": [
+       "Klopt: gewas met veranderd DNA.",
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Nee, dat hoort bij Biotechnologie: organismen als fabriekje.",
+       "Nee, dat hoort bij Schimmel: maakt o.a. antibiotica."
+      ],
+      "uh": "Gm-gewas: gewas met veranderd DNA."
+     },
+     {
+      "v": "Het hormoon dat de bloedsuikerspiegel verlaagt. Om welk begrip gaat het?",
+      "o": [
+       "Gist",
+       "Insuline",
+       "Biotechnologie",
+       "Genetische modificatie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het hormoon dat de bloedsuikerspiegel verlaagt. Dat past bij Insuline: hormoon uit gm-bacteriën.",
+      "uo": [
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Klopt: hormoon uit gm-bacteriën.",
+       "Nee, dat hoort bij Biotechnologie: organismen als fabriekje.",
+       "Nee, dat hoort bij Genetische modificatie: DNA gericht veranderen."
+      ],
+      "uh": "Insuline: hormoon uit gm-bacteriën."
+     },
+     {
+      "v": "Sommige bacteriën zijn ongevoelig geworden voor een antibioticum. Welk begrip herken je hier?",
+      "o": [
+       "Bacterie",
+       "Insuline",
+       "Resistentie",
+       "Biotechnologie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Sommige bacteriën zijn ongevoelig geworden voor een antibioticum. Dat past bij Resistentie: ongevoelig voor antibiotica.",
+      "uo": [
+       "Nee, dat hoort bij Bacterie: eencellig, geen kern.",
+       "Nee, dat hoort bij Insuline: hormoon uit gm-bacteriën.",
+       "Klopt: ongevoelig voor antibiotica.",
+       "Nee, dat hoort bij Biotechnologie: organismen als fabriekje."
+      ],
+      "uh": "Resistentie: ongevoelig voor antibiotica."
+     },
+     {
+      "v": "Een klein eencellig organisme, soms nuttig, soms ziekmakend. Wat is hier aan de hand?",
+      "o": [
+       "Resistentie",
+       "Biotechnologie",
+       "Genetische modificatie",
+       "Bacterie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een klein eencellig organisme, soms nuttig, soms ziekmakend. Dat past bij Bacterie: eencellig, geen kern.",
+      "uo": [
+       "Nee, dat hoort bij Resistentie: ongevoelig voor antibiotica.",
+       "Nee, dat hoort bij Biotechnologie: organismen als fabriekje.",
+       "Nee, dat hoort bij Genetische modificatie: DNA gericht veranderen.",
+       "Klopt: eencellig, geen kern."
+      ],
+      "uh": "Bacterie: eencellig, geen kern."
+     },
+     {
+      "v": "Een middel dat bacteriën doodt of hun groei stopt. Welk begrip past hierbij?",
+      "o": [
+       "Antibioticum",
+       "Gisting",
+       "Bacterie",
+       "Genetische modificatie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een middel dat bacteriën doodt of hun groei stopt. Dat past bij Antibioticum: werkt tegen bacteriën.",
+      "uo": [
+       "Klopt: werkt tegen bacteriën.",
+       "Nee, dat hoort bij Gisting: suiker omzetten zonder zuurstof.",
+       "Nee, dat hoort bij Bacterie: eencellig, geen kern.",
+       "Nee, dat hoort bij Genetische modificatie: DNA gericht veranderen."
+      ],
+      "uh": "Antibioticum: werkt tegen bacteriën."
+     },
+     {
+      "v": "Dit eencellige organisme zonder celkern kan een ontsteking veroorzaken. Om welk begrip gaat het?",
+      "o": [
+       "Schimmel",
+       "Bacterie",
+       "Gist",
+       "Genetische modificatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Dit eencellige organisme zonder celkern kan een ontsteking veroorzaken. Dat past bij Bacterie: eencellig, geen kern.",
+      "uo": [
+       "Nee, dat hoort bij Schimmel: maakt o.a. antibiotica.",
+       "Klopt: eencellig, geen kern.",
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Nee, dat hoort bij Genetische modificatie: DNA gericht veranderen."
+      ],
+      "uh": "Bacterie: eencellig, geen kern."
+     },
+     {
+      "v": "In het laboratorium wordt een gen van het ene organisme in het andere gezet. Welk begrip herken je hier?",
+      "o": [
+       "Antibioticum",
+       "Gist",
+       "Genetische modificatie",
+       "Resistentie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "In het laboratorium wordt een gen van het ene organisme in het andere gezet. Dat past bij Genetische modificatie: DNA gericht veranderen.",
+      "uo": [
+       "Nee, dat hoort bij Antibioticum: werkt tegen bacteriën.",
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Klopt: DNA gericht veranderen.",
+       "Nee, dat hoort bij Resistentie: ongevoelig voor antibiotica."
+      ],
+      "uh": "Genetische modificatie: DNA gericht veranderen."
+     },
+     {
+      "v": "Een schimmeltje dat suiker omzet en deeg doet rijzen. Wat is hier aan de hand?",
+      "o": [
+       "Insuline",
+       "Melkzuurbacterie",
+       "Schimmel",
+       "Gist"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een schimmeltje dat suiker omzet en deeg doet rijzen. Dat past bij Gist: laat deeg rijzen.",
+      "uo": [
+       "Nee, dat hoort bij Insuline: hormoon uit gm-bacteriën.",
+       "Nee, dat hoort bij Melkzuurbacterie: maakt yoghurt en kaas.",
+       "Nee, dat hoort bij Schimmel: maakt o.a. antibiotica.",
+       "Klopt: laat deeg rijzen."
+      ],
+      "uh": "Gist: laat deeg rijzen."
+     },
+     {
+      "v": "Een prikje met verzwakte ziektekiemen leert je afweer een ziekte herkennen. Welk begrip past hierbij?",
+      "o": [
+       "Vaccin",
+       "Resistentie",
+       "Bacterie",
+       "Biotechnologie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een prikje met verzwakte ziektekiemen leert je afweer een ziekte herkennen. Dat past bij Vaccin: traint de afweer.",
+      "uo": [
+       "Klopt: traint de afweer.",
+       "Nee, dat hoort bij Resistentie: ongevoelig voor antibiotica.",
+       "Nee, dat hoort bij Bacterie: eencellig, geen kern.",
+       "Nee, dat hoort bij Biotechnologie: organismen als fabriekje."
+      ],
+      "uh": "Vaccin: traint de afweer."
+     },
+     {
+      "v": "Dit micro-organisme laat brooddeeg rijzen en maakt bier. Om welk begrip gaat het?",
+      "o": [
+       "Schimmel",
+       "Gist",
+       "Melkzuurbacterie",
+       "Biotechnologie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Dit micro-organisme laat brooddeeg rijzen en maakt bier. Dat past bij Gist: laat deeg rijzen.",
+      "uo": [
+       "Nee, dat hoort bij Schimmel: maakt o.a. antibiotica.",
+       "Klopt: laat deeg rijzen.",
+       "Nee, dat hoort bij Melkzuurbacterie: maakt yoghurt en kaas.",
+       "Nee, dat hoort bij Biotechnologie: organismen als fabriekje."
+      ],
+      "uh": "Gist: laat deeg rijzen."
+     },
+     {
+      "v": "Mensen met diabetes spuiten dit hormoon om hun bloedsuiker te regelen. Welk begrip herken je hier?",
+      "o": [
+       "Genetische modificatie",
+       "Antibioticum",
+       "Insuline",
+       "Schimmel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Mensen met diabetes spuiten dit hormoon om hun bloedsuiker te regelen. Dat past bij Insuline: hormoon uit gm-bacteriën.",
+      "uo": [
+       "Nee, dat hoort bij Genetische modificatie: DNA gericht veranderen.",
+       "Nee, dat hoort bij Antibioticum: werkt tegen bacteriën.",
+       "Klopt: hormoon uit gm-bacteriën.",
+       "Nee, dat hoort bij Schimmel: maakt o.a. antibiotica."
+      ],
+      "uh": "Insuline: hormoon uit gm-bacteriën."
+     },
+     {
+      "v": "Het bewust veranderen van het erfelijk materiaal van een organisme. Wat is hier aan de hand?",
+      "o": [
+       "Resistentie",
+       "Gist",
+       "Antibioticum",
+       "Genetische modificatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het bewust veranderen van het erfelijk materiaal van een organisme. Dat past bij Genetische modificatie: DNA gericht veranderen.",
+      "uo": [
+       "Nee, dat hoort bij Resistentie: ongevoelig voor antibiotica.",
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Nee, dat hoort bij Antibioticum: werkt tegen bacteriën.",
+       "Klopt: DNA gericht veranderen."
+      ],
+      "uh": "Genetische modificatie: DNA gericht veranderen."
+     },
+     {
+      "v": "De ongevoeligheid van een organisme voor een bestrijdingsmiddel. Welk begrip past hierbij?",
+      "o": [
+       "Resistentie",
+       "Antibioticum",
+       "Gist",
+       "Bacterie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De ongevoeligheid van een organisme voor een bestrijdingsmiddel. Dat past bij Resistentie: ongevoelig voor antibiotica.",
+      "uo": [
+       "Klopt: ongevoelig voor antibiotica.",
+       "Nee, dat hoort bij Antibioticum: werkt tegen bacteriën.",
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Nee, dat hoort bij Bacterie: eencellig, geen kern."
+      ],
+      "uh": "Resistentie: ongevoelig voor antibiotica."
+     },
+     {
+      "v": "Een medicijn doodt de bacteriën die een infectie veroorzaken. Om welk begrip gaat het?",
+      "o": [
+       "Vaccin",
+       "Antibioticum",
+       "Resistentie",
+       "Insuline"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een medicijn doodt de bacteriën die een infectie veroorzaken. Dat past bij Antibioticum: werkt tegen bacteriën.",
+      "uo": [
+       "Nee, dat hoort bij Vaccin: traint de afweer.",
+       "Klopt: werkt tegen bacteriën.",
+       "Nee, dat hoort bij Resistentie: ongevoelig voor antibiotica.",
+       "Nee, dat hoort bij Insuline: hormoon uit gm-bacteriën."
+      ],
+      "uh": "Antibioticum: werkt tegen bacteriën."
+     },
+     {
+      "v": "Het proces waarbij micro-organismen suiker omzetten zonder zuurstof. Welk begrip herken je hier?",
+      "o": [
+       "Insuline",
+       "Vaccin",
+       "Gisting",
+       "Antibioticum"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het proces waarbij micro-organismen suiker omzetten zonder zuurstof. Dat past bij Gisting: suiker omzetten zonder zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Insuline: hormoon uit gm-bacteriën.",
+       "Nee, dat hoort bij Vaccin: traint de afweer.",
+       "Klopt: suiker omzetten zonder zuurstof.",
+       "Nee, dat hoort bij Antibioticum: werkt tegen bacteriën."
+      ],
+      "uh": "Gisting: suiker omzetten zonder zuurstof."
+     },
+     {
+      "v": "Zonder zuurstof zet gist suiker om in alcohol en koolstofdioxide. Wat is hier aan de hand?",
+      "o": [
+       "Gist",
+       "Genetische modificatie",
+       "Bacterie",
+       "Gisting"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Zonder zuurstof zet gist suiker om in alcohol en koolstofdioxide. Dat past bij Gisting: suiker omzetten zonder zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Nee, dat hoort bij Genetische modificatie: DNA gericht veranderen.",
+       "Nee, dat hoort bij Bacterie: eencellig, geen kern.",
+       "Klopt: suiker omzetten zonder zuurstof."
+      ],
+      "uh": "Gisting: suiker omzetten zonder zuurstof."
+     },
+     {
+      "v": "Het gebruik van levende organismen om producten te maken. Welk begrip past hierbij?",
+      "o": [
+       "Biotechnologie",
+       "Genetische modificatie",
+       "Gisting",
+       "Bacterie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het gebruik van levende organismen om producten te maken. Dat past bij Biotechnologie: organismen als fabriekje.",
+      "uo": [
+       "Klopt: organismen als fabriekje.",
+       "Nee, dat hoort bij Genetische modificatie: DNA gericht veranderen.",
+       "Nee, dat hoort bij Gisting: suiker omzetten zonder zuurstof.",
+       "Nee, dat hoort bij Bacterie: eencellig, geen kern."
+      ],
+      "uh": "Biotechnologie: organismen als fabriekje."
+     },
+     {
+      "v": "Deze maïs heeft een ingebouwd gen waardoor insecten hem laten staan. Om welk begrip gaat het?",
+      "o": [
+       "Gist",
+       "Gm-gewas",
+       "Biotechnologie",
+       "Schimmel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Deze maïs heeft een ingebouwd gen waardoor insecten hem laten staan. Dat past bij Gm-gewas: gewas met veranderd DNA.",
+      "uo": [
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Klopt: gewas met veranderd DNA.",
+       "Nee, dat hoort bij Biotechnologie: organismen als fabriekje.",
+       "Nee, dat hoort bij Schimmel: maakt o.a. antibiotica."
+      ],
+      "uh": "Gm-gewas: gewas met veranderd DNA."
+     },
+     {
+      "v": "Deze bacterie maakt van melk yoghurt. Welk begrip herken je hier?",
+      "o": [
+       "Resistentie",
+       "Gist",
+       "Melkzuurbacterie",
+       "Schimmel"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Deze bacterie maakt van melk yoghurt. Dat past bij Melkzuurbacterie: maakt yoghurt en kaas.",
+      "uo": [
+       "Nee, dat hoort bij Resistentie: ongevoelig voor antibiotica.",
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Klopt: maakt yoghurt en kaas.",
+       "Nee, dat hoort bij Schimmel: maakt o.a. antibiotica."
+      ],
+      "uh": "Melkzuurbacterie: maakt yoghurt en kaas."
+     },
+     {
+      "v": "Een organisme met draden dat op voedsel kan groeien. Wat is hier aan de hand?",
+      "o": [
+       "Genetische modificatie",
+       "Bacterie",
+       "Gist",
+       "Schimmel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een organisme met draden dat op voedsel kan groeien. Dat past bij Schimmel: maakt o.a. antibiotica.",
+      "uo": [
+       "Nee, dat hoort bij Genetische modificatie: DNA gericht veranderen.",
+       "Nee, dat hoort bij Bacterie: eencellig, geen kern.",
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Klopt: maakt o.a. antibiotica."
+      ],
+      "uh": "Schimmel: maakt o.a. antibiotica."
+     },
+     {
+      "v": "Met behulp van gist en bacteriën maken mensen brood, kaas en medicijnen. Welk begrip past hierbij?",
+      "o": [
+       "Biotechnologie",
+       "Vaccin",
+       "Gm-gewas",
+       "Antibioticum"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Met behulp van gist en bacteriën maken mensen brood, kaas en medicijnen. Dat past bij Biotechnologie: organismen als fabriekje.",
+      "uo": [
+       "Klopt: organismen als fabriekje.",
+       "Nee, dat hoort bij Vaccin: traint de afweer.",
+       "Nee, dat hoort bij Gm-gewas: gewas met veranderd DNA.",
+       "Nee, dat hoort bij Antibioticum: werkt tegen bacteriën."
+      ],
+      "uh": "Biotechnologie: organismen als fabriekje."
+     },
+     {
+      "v": "Op oud brood groeit een pluizige laag die het bederft. Om welk begrip gaat het?",
+      "o": [
+       "Gist",
+       "Schimmel",
+       "Bacterie",
+       "Insuline"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Op oud brood groeit een pluizige laag die het bederft. Dat past bij Schimmel: maakt o.a. antibiotica.",
+      "uo": [
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Klopt: maakt o.a. antibiotica.",
+       "Nee, dat hoort bij Bacterie: eencellig, geen kern.",
+       "Nee, dat hoort bij Insuline: hormoon uit gm-bacteriën."
+      ],
+      "uh": "Schimmel: maakt o.a. antibiotica."
+     },
+     {
+      "v": "Het micro-organisme dat melkzuur vormt bij het maken van yoghurt. Welk begrip herken je hier?",
+      "o": [
+       "Schimmel",
+       "Gist",
+       "Melkzuurbacterie",
+       "Gisting"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het micro-organisme dat melkzuur vormt bij het maken van yoghurt. Dat past bij Melkzuurbacterie: maakt yoghurt en kaas.",
+      "uo": [
+       "Nee, dat hoort bij Schimmel: maakt o.a. antibiotica.",
+       "Nee, dat hoort bij Gist: laat deeg rijzen.",
+       "Klopt: maakt yoghurt en kaas.",
+       "Nee, dat hoort bij Gisting: suiker omzetten zonder zuurstof."
+      ],
+      "uh": "Melkzuurbacterie: maakt yoghurt en kaas."
+     },
+     {
+      "v": "Een middel dat je lichaam beschermt door afweer op te bouwen. Wat is hier aan de hand?",
+      "o": [
+       "Biotechnologie",
+       "Resistentie",
+       "Bacterie",
+       "Vaccin"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een middel dat je lichaam beschermt door afweer op te bouwen. Dat past bij Vaccin: traint de afweer.",
+      "uo": [
+       "Nee, dat hoort bij Biotechnologie: organismen als fabriekje.",
+       "Nee, dat hoort bij Resistentie: ongevoelig voor antibiotica.",
+       "Nee, dat hoort bij Bacterie: eencellig, geen kern.",
+       "Klopt: traint de afweer."
+      ],
+      "uh": "Vaccin: traint de afweer."
      }
     ],
     "begrippen": [
