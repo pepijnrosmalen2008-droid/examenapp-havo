@@ -1270,7 +1270,7 @@ var VAKKEN_VMBO = [
      "De route van een wetsvoorstel",
      "Besluitvorming en belangengroepen"
     ],
-    "nSv": 11,
+    "nSv": 39,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1286,7 +1286,7 @@ var VAKKEN_VMBO = [
      "Werkgevers, werknemers en vakbonden",
      "Inkomen en sociale zekerheid"
     ],
-    "nSv": 11,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1301,7 +1301,7 @@ var VAKKEN_VMBO = [
      "Cultuur en identiteit",
      "Discriminatie en integratie"
     ],
-    "nSv": 11,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1318,7 +1318,7 @@ var VAKKEN_VMBO = [
      "Rechten van verdachten",
      "Soorten straffen"
     ],
-    "nSv": 11,
+    "nSv": 39,
     "nOe": 0,
     "nBeg": 14,
     "hasSam": true
@@ -1335,7 +1335,7 @@ var VAKKEN_VMBO = [
      "Censuur",
      "De multiculturele samenleving"
     ],
-    "nSv": 11,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true
@@ -1350,7 +1350,7 @@ var VAKKEN_VMBO = [
      "Digitalisering",
      "Privacy en sociale media"
     ],
-    "nSv": 11,
+    "nSv": 35,
     "nOe": 0,
     "nBeg": 12,
     "hasSam": true

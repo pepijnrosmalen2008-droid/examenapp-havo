@@ -41707,6 +41707,538 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «De afspraken van de coalitie»."
       ],
       "uh": "De afspraken van de coalitie: De plannen waarover de coalitie het eens is."
+     },
+     {
+      "v": "Het proberen te beïnvloeden van politici. Welk begrip past hierbij?",
+      "o": [
+       "Verkiezingen",
+       "Belangengroep",
+       "Regeerakkoord",
+       "Lobbyen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het proberen te beïnvloeden van politici. Dat past bij Lobbyen: politici beïnvloeden.",
+      "uo": [
+       "Nee, dat hoort bij Verkiezingen: kiezen van vertegenwoordigers.",
+       "Nee, dat hoort bij Belangengroep: komt op voor een belang.",
+       "Nee, dat hoort bij Regeerakkoord: afspraken van de coalitie.",
+       "Klopt: politici beïnvloeden."
+      ],
+      "uh": "Lobbyen: politici beïnvloeden."
+     },
+     {
+      "v": "Twee of meer partijen gaan samen regeren en vormen de meerderheid. Om welk begrip gaat het?",
+      "o": [
+       "Coalitie",
+       "Socialisme",
+       "Lobbyen",
+       "Politieke stroming"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Twee of meer partijen gaan samen regeren en vormen de meerderheid. Dat past bij Coalitie: samen regerende partijen.",
+      "uo": [
+       "Klopt: samen regerende partijen.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Lobbyen: politici beïnvloeden.",
+       "Nee, dat hoort bij Politieke stroming: groep met gedeelde ideeën."
+      ],
+      "uh": "Coalitie: samen regerende partijen."
+     },
+     {
+      "v": "Deze stroming stelt de vrijheid van het individu voorop. Welk begrip herken je hier?",
+      "o": [
+       "Socialisme",
+       "Liberalisme",
+       "Confessioneel",
+       "Wetsvoorstel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Deze stroming stelt de vrijheid van het individu voorop. Dat past bij Liberalisme: vrijheid van het individu.",
+      "uo": [
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Klopt: vrijheid van het individu.",
+       "Nee, dat hoort bij Confessioneel: politiek op basis van geloof.",
+       "Nee, dat hoort bij Wetsvoorstel: voorstel voor een wet."
+      ],
+      "uh": "Liberalisme: vrijheid van het individu."
+     },
+     {
+      "v": "De politieke richting die de nadruk legt op gelijkheid. Wat is hier aan de hand?",
+      "o": [
+       "Belangengroep",
+       "Oppositie",
+       "Links",
+       "Wetsvoorstel"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De politieke richting die de nadruk legt op gelijkheid. Dat past bij Links: nadruk op gelijkheid.",
+      "uo": [
+       "Nee, dat hoort bij Belangengroep: komt op voor een belang.",
+       "Nee, dat hoort bij Oppositie: controleert de regering.",
+       "Klopt: nadruk op gelijkheid.",
+       "Nee, dat hoort bij Wetsvoorstel: voorstel voor een wet."
+      ],
+      "uh": "Links: nadruk op gelijkheid."
+     },
+     {
+      "v": "Het nemen van beslissingen over de samenleving. Welk begrip past hierbij?",
+      "o": [
+       "Coalitie",
+       "Politieke stroming",
+       "Oppositie",
+       "Politiek"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het nemen van beslissingen over de samenleving. Dat past bij Politiek: beslissen over de samenleving.",
+      "uo": [
+       "Nee, dat hoort bij Coalitie: samen regerende partijen.",
+       "Nee, dat hoort bij Politieke stroming: groep met gedeelde ideeën.",
+       "Nee, dat hoort bij Oppositie: controleert de regering.",
+       "Klopt: beslissen over de samenleving."
+      ],
+      "uh": "Politiek: beslissen over de samenleving."
+     },
+     {
+      "v": "Een groep die opkomt voor een bepaald belang. Om welk begrip gaat het?",
+      "o": [
+       "Belangengroep",
+       "Socialisme",
+       "Confessioneel",
+       "Coalitie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een groep die opkomt voor een bepaald belang. Dat past bij Belangengroep: komt op voor een belang.",
+      "uo": [
+       "Klopt: komt op voor een belang.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Confessioneel: politiek op basis van geloof.",
+       "Nee, dat hoort bij Coalitie: samen regerende partijen."
+      ],
+      "uh": "Belangengroep: komt op voor een belang."
+     },
+     {
+      "v": "Een organisatie probeert politici te overtuigen van haar standpunt. Welk begrip herken je hier?",
+      "o": [
+       "Belangengroep",
+       "Lobbyen",
+       "Regeerakkoord",
+       "Verkiezingen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een organisatie probeert politici te overtuigen van haar standpunt. Dat past bij Lobbyen: politici beïnvloeden.",
+      "uo": [
+       "Nee, dat hoort bij Belangengroep: komt op voor een belang.",
+       "Klopt: politici beïnvloeden.",
+       "Nee, dat hoort bij Regeerakkoord: afspraken van de coalitie.",
+       "Nee, dat hoort bij Verkiezingen: kiezen van vertegenwoordigers."
+      ],
+      "uh": "Lobbyen: politici beïnvloeden."
+     },
+     {
+      "v": "De partijen die de regering controleren en niet meeregeren. Wat is hier aan de hand?",
+      "o": [
+       "Verkiezingen",
+       "Regeerakkoord",
+       "Oppositie",
+       "Socialisme"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De partijen die de regering controleren en niet meeregeren. Dat past bij Oppositie: controleert de regering.",
+      "uo": [
+       "Nee, dat hoort bij Verkiezingen: kiezen van vertegenwoordigers.",
+       "Nee, dat hoort bij Regeerakkoord: afspraken van de coalitie.",
+       "Klopt: controleert de regering.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders."
+      ],
+      "uh": "Oppositie: controleert de regering."
+     },
+     {
+      "v": "De samenwerkende partijen die samen de regering vormen. Welk begrip past hierbij?",
+      "o": [
+       "Confessioneel",
+       "Oppositie",
+       "Wetsvoorstel",
+       "Coalitie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De samenwerkende partijen die samen de regering vormen. Dat past bij Coalitie: samen regerende partijen.",
+      "uo": [
+       "Nee, dat hoort bij Confessioneel: politiek op basis van geloof.",
+       "Nee, dat hoort bij Oppositie: controleert de regering.",
+       "Nee, dat hoort bij Wetsvoorstel: voorstel voor een wet.",
+       "Klopt: samen regerende partijen."
+      ],
+      "uh": "Coalitie: samen regerende partijen."
+     },
+     {
+      "v": "De partijen die niet meeregeren houden de regering scherp in de gaten. Om welk begrip gaat het?",
+      "o": [
+       "Oppositie",
+       "Regeerakkoord",
+       "Verkiezingen",
+       "Socialisme"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De partijen die niet meeregeren houden de regering scherp in de gaten. Dat past bij Oppositie: controleert de regering.",
+      "uo": [
+       "Klopt: controleert de regering.",
+       "Nee, dat hoort bij Regeerakkoord: afspraken van de coalitie.",
+       "Nee, dat hoort bij Verkiezingen: kiezen van vertegenwoordigers.",
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders."
+      ],
+      "uh": "Oppositie: controleert de regering."
+     },
+     {
+      "v": "De afspraken van de partijen die samen gaan regeren. Welk begrip herken je hier?",
+      "o": [
+       "Wetsvoorstel",
+       "Regeerakkoord",
+       "Liberalisme",
+       "Verkiezingen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De afspraken van de partijen die samen gaan regeren. Dat past bij Regeerakkoord: afspraken van de coalitie.",
+      "uo": [
+       "Nee, dat hoort bij Wetsvoorstel: voorstel voor een wet.",
+       "Klopt: afspraken van de coalitie.",
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu.",
+       "Nee, dat hoort bij Verkiezingen: kiezen van vertegenwoordigers."
+      ],
+      "uh": "Regeerakkoord: afspraken van de coalitie."
+     },
+     {
+      "v": "Deze richting wil dat de overheid zorgt voor gelijkheid en de zwakkeren. Wat is hier aan de hand?",
+      "o": [
+       "Belangengroep",
+       "Oppositie",
+       "Links",
+       "Wetsvoorstel"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Deze richting wil dat de overheid zorgt voor gelijkheid en de zwakkeren. Dat past bij Links: nadruk op gelijkheid.",
+      "uo": [
+       "Nee, dat hoort bij Belangengroep: komt op voor een belang.",
+       "Nee, dat hoort bij Oppositie: controleert de regering.",
+       "Klopt: nadruk op gelijkheid.",
+       "Nee, dat hoort bij Wetsvoorstel: voorstel voor een wet."
+      ],
+      "uh": "Links: nadruk op gelijkheid."
+     },
+     {
+      "v": "Om de vier jaar kiezen burgers wie hen vertegenwoordigt. Welk begrip past hierbij?",
+      "o": [
+       "Liberalisme",
+       "Coalitie",
+       "Politieke stroming",
+       "Verkiezingen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Om de vier jaar kiezen burgers wie hen vertegenwoordigt. Dat past bij Verkiezingen: kiezen van vertegenwoordigers.",
+      "uo": [
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu.",
+       "Nee, dat hoort bij Coalitie: samen regerende partijen.",
+       "Nee, dat hoort bij Politieke stroming: groep met gedeelde ideeën.",
+       "Klopt: kiezen van vertegenwoordigers."
+      ],
+      "uh": "Verkiezingen: kiezen van vertegenwoordigers."
+     },
+     {
+      "v": "Een groep met gedeelde ideeën over hoe het land bestuurd moet worden. Om welk begrip gaat het?",
+      "o": [
+       "Politieke stroming",
+       "Oppositie",
+       "Belangengroep",
+       "Rechts"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een groep met gedeelde ideeën over hoe het land bestuurd moet worden. Dat past bij Politieke stroming: groep met gedeelde ideeën.",
+      "uo": [
+       "Klopt: groep met gedeelde ideeën.",
+       "Nee, dat hoort bij Oppositie: controleert de regering.",
+       "Nee, dat hoort bij Belangengroep: komt op voor een belang.",
+       "Nee, dat hoort bij Rechts: nadruk op vrijheid."
+      ],
+      "uh": "Politieke stroming: groep met gedeelde ideeën."
+     },
+     {
+      "v": "Een voorstel voor een nieuwe wet. Welk begrip herken je hier?",
+      "o": [
+       "Regeerakkoord",
+       "Wetsvoorstel",
+       "Liberalisme",
+       "Rechts"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een voorstel voor een nieuwe wet. Dat past bij Wetsvoorstel: voorstel voor een wet.",
+      "uo": [
+       "Nee, dat hoort bij Regeerakkoord: afspraken van de coalitie.",
+       "Klopt: voorstel voor een wet.",
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu.",
+       "Nee, dat hoort bij Rechts: nadruk op vrijheid."
+      ],
+      "uh": "Wetsvoorstel: voorstel voor een wet."
+     },
+     {
+      "v": "Deze stroming komt op voor gelijkheid en de rechten van arbeiders. Wat is hier aan de hand?",
+      "o": [
+       "Confessioneel",
+       "Liberalisme",
+       "Socialisme",
+       "Links"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Deze stroming komt op voor gelijkheid en de rechten van arbeiders. Dat past bij Socialisme: gelijkheid voor arbeiders.",
+      "uo": [
+       "Nee, dat hoort bij Confessioneel: politiek op basis van geloof.",
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu.",
+       "Klopt: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Links: nadruk op gelijkheid."
+      ],
+      "uh": "Socialisme: gelijkheid voor arbeiders."
+     },
+     {
+      "v": "Een plan voor een nieuwe wet wordt in de Kamer behandeld. Welk begrip past hierbij?",
+      "o": [
+       "Politieke stroming",
+       "Liberalisme",
+       "Belangengroep",
+       "Wetsvoorstel"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een plan voor een nieuwe wet wordt in de Kamer behandeld. Dat past bij Wetsvoorstel: voorstel voor een wet.",
+      "uo": [
+       "Nee, dat hoort bij Politieke stroming: groep met gedeelde ideeën.",
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu.",
+       "Nee, dat hoort bij Belangengroep: komt op voor een belang.",
+       "Klopt: voorstel voor een wet."
+      ],
+      "uh": "Wetsvoorstel: voorstel voor een wet."
+     },
+     {
+      "v": "Een stroming die gelijkheid en de arbeiders vooropstelt. Om welk begrip gaat het?",
+      "o": [
+       "Socialisme",
+       "Confessioneel",
+       "Liberalisme",
+       "Verkiezingen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een stroming die gelijkheid en de arbeiders vooropstelt. Dat past bij Socialisme: gelijkheid voor arbeiders.",
+      "uo": [
+       "Klopt: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Confessioneel: politiek op basis van geloof.",
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu.",
+       "Nee, dat hoort bij Verkiezingen: kiezen van vertegenwoordigers."
+      ],
+      "uh": "Socialisme: gelijkheid voor arbeiders."
+     },
+     {
+      "v": "Een stroming die de vrijheid van de persoon centraal stelt. Welk begrip herken je hier?",
+      "o": [
+       "Socialisme",
+       "Liberalisme",
+       "Confessioneel",
+       "Wetsvoorstel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een stroming die de vrijheid van de persoon centraal stelt. Dat past bij Liberalisme: vrijheid van het individu.",
+      "uo": [
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Klopt: vrijheid van het individu.",
+       "Nee, dat hoort bij Confessioneel: politiek op basis van geloof.",
+       "Nee, dat hoort bij Wetsvoorstel: voorstel voor een wet."
+      ],
+      "uh": "Liberalisme: vrijheid van het individu."
+     },
+     {
+      "v": "De politieke richting die de nadruk legt op vrijheid en de markt. Wat is hier aan de hand?",
+      "o": [
+       "Coalitie",
+       "Liberalisme",
+       "Rechts",
+       "Confessioneel"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De politieke richting die de nadruk legt op vrijheid en de markt. Dat past bij Rechts: nadruk op vrijheid.",
+      "uo": [
+       "Nee, dat hoort bij Coalitie: samen regerende partijen.",
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu.",
+       "Klopt: nadruk op vrijheid.",
+       "Nee, dat hoort bij Confessioneel: politiek op basis van geloof."
+      ],
+      "uh": "Rechts: nadruk op vrijheid."
+     },
+     {
+      "v": "Partijen met dezelfde ideeën over de samenleving horen bij elkaar. Welk begrip past hierbij?",
+      "o": [
+       "Links",
+       "Politiek",
+       "Wetsvoorstel",
+       "Politieke stroming"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Partijen met dezelfde ideeën over de samenleving horen bij elkaar. Dat past bij Politieke stroming: groep met gedeelde ideeën.",
+      "uo": [
+       "Nee, dat hoort bij Links: nadruk op gelijkheid.",
+       "Nee, dat hoort bij Politiek: beslissen over de samenleving.",
+       "Nee, dat hoort bij Wetsvoorstel: voorstel voor een wet.",
+       "Klopt: groep met gedeelde ideeën."
+      ],
+      "uh": "Politieke stroming: groep met gedeelde ideeën."
+     },
+     {
+      "v": "Een club komt op voor het milieu en probeert dat op de agenda te krijgen. Om welk begrip gaat het?",
+      "o": [
+       "Belangengroep",
+       "Lobbyen",
+       "Liberalisme",
+       "Regeerakkoord"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een club komt op voor het milieu en probeert dat op de agenda te krijgen. Dat past bij Belangengroep: komt op voor een belang.",
+      "uo": [
+       "Klopt: komt op voor een belang.",
+       "Nee, dat hoort bij Lobbyen: politici beïnvloeden.",
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu.",
+       "Nee, dat hoort bij Regeerakkoord: afspraken van de coalitie."
+      ],
+      "uh": "Belangengroep: komt op voor een belang."
+     },
+     {
+      "v": "De regerende partijen leggen hun plannen voor vier jaar vast. Welk begrip herken je hier?",
+      "o": [
+       "Socialisme",
+       "Regeerakkoord",
+       "Confessioneel",
+       "Oppositie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De regerende partijen leggen hun plannen voor vier jaar vast. Dat past bij Regeerakkoord: afspraken van de coalitie.",
+      "uo": [
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Klopt: afspraken van de coalitie.",
+       "Nee, dat hoort bij Confessioneel: politiek op basis van geloof.",
+       "Nee, dat hoort bij Oppositie: controleert de regering."
+      ],
+      "uh": "Regeerakkoord: afspraken van de coalitie."
+     },
+     {
+      "v": "Politiek die uitgaat van een godsdienst. Wat is hier aan de hand?",
+      "o": [
+       "Socialisme",
+       "Liberalisme",
+       "Confessioneel",
+       "Politieke stroming"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Politiek die uitgaat van een godsdienst. Dat past bij Confessioneel: politiek op basis van geloof.",
+      "uo": [
+       "Nee, dat hoort bij Socialisme: gelijkheid voor arbeiders.",
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu.",
+       "Klopt: politiek op basis van geloof.",
+       "Nee, dat hoort bij Politieke stroming: groep met gedeelde ideeën."
+      ],
+      "uh": "Confessioneel: politiek op basis van geloof."
+     },
+     {
+      "v": "In de Tweede Kamer wordt besloten over de regels voor het hele land. Welk begrip past hierbij?",
+      "o": [
+       "Coalitie",
+       "Politieke stroming",
+       "Oppositie",
+       "Politiek"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "In de Tweede Kamer wordt besloten over de regels voor het hele land. Dat past bij Politiek: beslissen over de samenleving.",
+      "uo": [
+       "Nee, dat hoort bij Coalitie: samen regerende partijen.",
+       "Nee, dat hoort bij Politieke stroming: groep met gedeelde ideeën.",
+       "Nee, dat hoort bij Oppositie: controleert de regering.",
+       "Klopt: beslissen over de samenleving."
+      ],
+      "uh": "Politiek: beslissen over de samenleving."
+     },
+     {
+      "v": "Deze partijen baseren hun politiek op een geloof. Om welk begrip gaat het?",
+      "o": [
+       "Confessioneel",
+       "Wetsvoorstel",
+       "Coalitie",
+       "Belangengroep"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Deze partijen baseren hun politiek op een geloof. Dat past bij Confessioneel: politiek op basis van geloof.",
+      "uo": [
+       "Klopt: politiek op basis van geloof.",
+       "Nee, dat hoort bij Wetsvoorstel: voorstel voor een wet.",
+       "Nee, dat hoort bij Coalitie: samen regerende partijen.",
+       "Nee, dat hoort bij Belangengroep: komt op voor een belang."
+      ],
+      "uh": "Confessioneel: politiek op basis van geloof."
+     },
+     {
+      "v": "Deze richting wil veel vrijheid voor het individu en een kleine overheid. Welk begrip herken je hier?",
+      "o": [
+       "Links",
+       "Rechts",
+       "Oppositie",
+       "Coalitie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Deze richting wil veel vrijheid voor het individu en een kleine overheid. Dat past bij Rechts: nadruk op vrijheid.",
+      "uo": [
+       "Nee, dat hoort bij Links: nadruk op gelijkheid.",
+       "Klopt: nadruk op vrijheid.",
+       "Nee, dat hoort bij Oppositie: controleert de regering.",
+       "Nee, dat hoort bij Coalitie: samen regerende partijen."
+      ],
+      "uh": "Rechts: nadruk op vrijheid."
+     },
+     {
+      "v": "De manier waarop kiezers hun vertegenwoordigers kiezen. Wat is hier aan de hand?",
+      "o": [
+       "Politieke stroming",
+       "Coalitie",
+       "Verkiezingen",
+       "Liberalisme"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De manier waarop kiezers hun vertegenwoordigers kiezen. Dat past bij Verkiezingen: kiezen van vertegenwoordigers.",
+      "uo": [
+       "Nee, dat hoort bij Politieke stroming: groep met gedeelde ideeën.",
+       "Nee, dat hoort bij Coalitie: samen regerende partijen.",
+       "Klopt: kiezen van vertegenwoordigers.",
+       "Nee, dat hoort bij Liberalisme: vrijheid van het individu."
+      ],
+      "uh": "Verkiezingen: kiezen van vertegenwoordigers."
      }
     ],
     "begrippen": [
@@ -41992,6 +42524,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Een stelsel dat inkomen geeft bij tegenslag»."
       ],
       "uh": "Een stelsel dat inkomen geeft bij tegenslag: Vangt je op met een uitkering bij tegenslag."
+     },
+     {
+      "v": "Geld van de overheid voor wie te weinig inkomen heeft. Welk begrip past hierbij?",
+      "o": [
+       "Staking",
+       "Inkomen",
+       "Sociale zekerheid",
+       "Uitkering"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Geld van de overheid voor wie te weinig inkomen heeft. Dat past bij Uitkering: geld bij te weinig inkomen.",
+      "uo": [
+       "Nee, dat hoort bij Staking: het werk neerleggen.",
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt.",
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag.",
+       "Klopt: geld bij te weinig inkomen."
+      ],
+      "uh": "Uitkering: geld bij te weinig inkomen."
+     },
+     {
+      "v": "Het stelsel dat inkomen geeft bij tegenslag. Om welk begrip gaat het?",
+      "o": [
+       "Sociale zekerheid",
+       "Uitkering",
+       "Minimumloon",
+       "Inkomen"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het stelsel dat inkomen geeft bij tegenslag. Dat past bij Sociale zekerheid: inkomen bij tegenslag.",
+      "uo": [
+       "Klopt: inkomen bij tegenslag.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Minimumloon: laagste toegestane loon.",
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt."
+      ],
+      "uh": "Sociale zekerheid: inkomen bij tegenslag."
+     },
+     {
+      "v": "De wet bepaalt het laagste loon dat een baas mag betalen. Welk begrip herken je hier?",
+      "o": [
+       "Sociale zekerheid",
+       "Minimumloon",
+       "Staking",
+       "Werkgelegenheid"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De wet bepaalt het laagste loon dat een baas mag betalen. Dat past bij Minimumloon: laagste toegestane loon.",
+      "uo": [
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag.",
+       "Klopt: laagste toegestane loon.",
+       "Nee, dat hoort bij Staking: het werk neerleggen.",
+       "Nee, dat hoort bij Werkgelegenheid: hoeveelheid werk."
+      ],
+      "uh": "Minimumloon: laagste toegestane loon."
+     },
+     {
+      "v": "Het neerleggen van het werk om eisen kracht bij te zetten. Wat is hier aan de hand?",
+      "o": [
+       "Cao",
+       "Vakbond",
+       "Staking",
+       "Werknemer"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het neerleggen van het werk om eisen kracht bij te zetten. Dat past bij Staking: het werk neerleggen.",
+      "uo": [
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Klopt: het werk neerleggen.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst."
+      ],
+      "uh": "Staking: het werk neerleggen."
+     },
+     {
+      "v": "Een organisatie die opkomt voor werknemers. Welk begrip past hierbij?",
+      "o": [
+       "Uitkering",
+       "Arbeidsmarkt",
+       "Sociale zekerheid",
+       "Vakbond"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een organisatie die opkomt voor werknemers. Dat past bij Vakbond: komt op voor werknemers.",
+      "uo": [
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Arbeidsmarkt: vraag en aanbod van werk.",
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag.",
+       "Klopt: komt op voor werknemers."
+      ],
+      "uh": "Vakbond: komt op voor werknemers."
+     },
+     {
+      "v": "De werknemers legden het werk neer voor een hoger loon. Om welk begrip gaat het?",
+      "o": [
+       "Staking",
+       "Vakbond",
+       "Cao",
+       "Werknemer"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De werknemers legden het werk neer voor een hoger loon. Dat past bij Staking: het werk neerleggen.",
+      "uo": [
+       "Klopt: het werk neerleggen.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst."
+      ],
+      "uh": "Staking: het werk neerleggen."
+     },
+     {
+      "v": "Aan het eind van de maand krijgt ze haar salaris. Welk begrip herken je hier?",
+      "o": [
+       "Arbeidsmarkt",
+       "Inkomen",
+       "Cao",
+       "Sociale zekerheid"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Aan het eind van de maand krijgt ze haar salaris. Dat past bij Inkomen: geld dat je ontvangt.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsmarkt: vraag en aanbod van werk.",
+       "Klopt: geld dat je ontvangt.",
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag."
+      ],
+      "uh": "Inkomen: geld dat je ontvangt."
+     },
+     {
+      "v": "De situatie waarin mensen geen werk hebben. Wat is hier aan de hand?",
+      "o": [
+       "Arbeidsmarkt",
+       "Werkgelegenheid",
+       "Werkloosheid",
+       "Uitkering"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De situatie waarin mensen geen werk hebben. Dat past bij Werkloosheid: geen werk hebben.",
+      "uo": [
+       "Nee, dat hoort bij Arbeidsmarkt: vraag en aanbod van werk.",
+       "Nee, dat hoort bij Werkgelegenheid: hoeveelheid werk.",
+       "Klopt: geen werk hebben.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen."
+      ],
+      "uh": "Werkloosheid: geen werk hebben."
+     },
+     {
+      "v": "Werkzoekenden en bedrijven met vacatures vinden elkaar. Welk begrip past hierbij?",
+      "o": [
+       "Inkomen",
+       "Vakbond",
+       "Staking",
+       "Arbeidsmarkt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Werkzoekenden en bedrijven met vacatures vinden elkaar. Dat past bij Arbeidsmarkt: vraag en aanbod van werk.",
+      "uo": [
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Nee, dat hoort bij Staking: het werk neerleggen.",
+       "Klopt: vraag en aanbod van werk."
+      ],
+      "uh": "Arbeidsmarkt: vraag en aanbod van werk."
+     },
+     {
+      "v": "Veel mensen zoeken een baan maar kunnen er geen vinden. Om welk begrip gaat het?",
+      "o": [
+       "Werkloosheid",
+       "Werkgelegenheid",
+       "Arbeidsmarkt",
+       "Uitkering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Veel mensen zoeken een baan maar kunnen er geen vinden. Dat past bij Werkloosheid: geen werk hebben.",
+      "uo": [
+       "Klopt: geen werk hebben.",
+       "Nee, dat hoort bij Werkgelegenheid: hoeveelheid werk.",
+       "Nee, dat hoort bij Arbeidsmarkt: vraag en aanbod van werk.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen."
+      ],
+      "uh": "Werkloosheid: geen werk hebben."
+     },
+     {
+      "v": "Wie ziek of werkloos wordt, valt niet zonder geld. Welk begrip herken je hier?",
+      "o": [
+       "Werkloosheid",
+       "Sociale zekerheid",
+       "Vakbond",
+       "Staking"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Wie ziek of werkloos wordt, valt niet zonder geld. Dat past bij Sociale zekerheid: inkomen bij tegenslag.",
+      "uo": [
+       "Nee, dat hoort bij Werkloosheid: geen werk hebben.",
+       "Klopt: inkomen bij tegenslag.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Nee, dat hoort bij Staking: het werk neerleggen."
+      ],
+      "uh": "Sociale zekerheid: inkomen bij tegenslag."
+     },
+     {
+      "v": "Het geld dat je binnenkrijgt uit werk of uitkering. Wat is hier aan de hand?",
+      "o": [
+       "Sociale zekerheid",
+       "Uitkering",
+       "Inkomen",
+       "Staking"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het geld dat je binnenkrijgt uit werk of uitkering. Dat past bij Inkomen: geld dat je ontvangt.",
+      "uo": [
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Klopt: geld dat je ontvangt.",
+       "Nee, dat hoort bij Staking: het werk neerleggen."
+      ],
+      "uh": "Inkomen: geld dat je ontvangt."
+     },
+     {
+      "v": "Het wettelijk laagste loon. Welk begrip past hierbij?",
+      "o": [
+       "Vakbond",
+       "Inkomen",
+       "Werknemer",
+       "Minimumloon"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het wettelijk laagste loon. Dat past bij Minimumloon: laagste toegestane loon.",
+      "uo": [
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Klopt: laagste toegestane loon."
+      ],
+      "uh": "Minimumloon: laagste toegestane loon."
+     },
+     {
+      "v": "Een organisatie onderhandelt namens de werknemers over hun loon. Om welk begrip gaat het?",
+      "o": [
+       "Vakbond",
+       "Arbeidsmarkt",
+       "Sociale zekerheid",
+       "Uitkering"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een organisatie onderhandelt namens de werknemers over hun loon. Dat past bij Vakbond: komt op voor werknemers.",
+      "uo": [
+       "Klopt: komt op voor werknemers.",
+       "Nee, dat hoort bij Arbeidsmarkt: vraag en aanbod van werk.",
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen."
+      ],
+      "uh": "Vakbond: komt op voor werknemers."
+     },
+     {
+      "v": "Iemand die in loondienst werkt. Welk begrip herken je hier?",
+      "o": [
+       "Werkgever",
+       "Werknemer",
+       "Cao",
+       "Inkomen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Iemand die in loondienst werkt. Dat past bij Werknemer: werkt in loondienst.",
+      "uo": [
+       "Nee, dat hoort bij Werkgever: neemt mensen aan.",
+       "Klopt: werkt in loondienst.",
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt."
+      ],
+      "uh": "Werknemer: werkt in loondienst."
+     },
+     {
+      "v": "Hij werkt tegen loon in dienst van een baas. Wat is hier aan de hand?",
+      "o": [
+       "Uitkering",
+       "Werkgever",
+       "Werknemer",
+       "Staking"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Hij werkt tegen loon in dienst van een baas. Dat past bij Werknemer: werkt in loondienst.",
+      "uo": [
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Werkgever: neemt mensen aan.",
+       "Klopt: werkt in loondienst.",
+       "Nee, dat hoort bij Staking: het werk neerleggen."
+      ],
+      "uh": "Werknemer: werkt in loondienst."
+     },
+     {
+      "v": "De hoeveelheid beschikbaar werk. Welk begrip past hierbij?",
+      "o": [
+       "Cao",
+       "Werknemer",
+       "Staking",
+       "Werkgelegenheid"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De hoeveelheid beschikbaar werk. Dat past bij Werkgelegenheid: hoeveelheid werk.",
+      "uo": [
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Nee, dat hoort bij Staking: het werk neerleggen.",
+       "Klopt: hoeveelheid werk."
+      ],
+      "uh": "Werkgelegenheid: hoeveelheid werk."
+     },
+     {
+      "v": "Wie geen werk heeft, krijgt geld van de overheid. Om welk begrip gaat het?",
+      "o": [
+       "Uitkering",
+       "Inkomen",
+       "Werknemer",
+       "Vakbond"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Wie geen werk heeft, krijgt geld van de overheid. Dat past bij Uitkering: geld bij te weinig inkomen.",
+      "uo": [
+       "Klopt: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers."
+      ],
+      "uh": "Uitkering: geld bij te weinig inkomen."
+     },
+     {
+      "v": "Het bedrijf neemt nieuwe mensen aan en betaalt hun loon. Welk begrip herken je hier?",
+      "o": [
+       "Werknemer",
+       "Werkgever",
+       "Uitkering",
+       "Staking"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het bedrijf neemt nieuwe mensen aan en betaalt hun loon. Dat past bij Werkgever: neemt mensen aan.",
+      "uo": [
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Klopt: neemt mensen aan.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Staking: het werk neerleggen."
+      ],
+      "uh": "Werkgever: neemt mensen aan."
+     },
+     {
+      "v": "Afspraken over het werk voor een hele bedrijfstak. Wat is hier aan de hand?",
+      "o": [
+       "Staking",
+       "Arbeidsmarkt",
+       "Cao",
+       "Uitkering"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Afspraken over het werk voor een hele bedrijfstak. Dat past bij Cao: afspraken over het werk.",
+      "uo": [
+       "Nee, dat hoort bij Staking: het werk neerleggen.",
+       "Nee, dat hoort bij Arbeidsmarkt: vraag en aanbod van werk.",
+       "Klopt: afspraken over het werk.",
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen."
+      ],
+      "uh": "Cao: afspraken over het werk."
+     },
+     {
+      "v": "Er zijn genoeg banen beschikbaar in deze regio. Welk begrip past hierbij?",
+      "o": [
+       "Uitkering",
+       "Werkloosheid",
+       "Minimumloon",
+       "Werkgelegenheid"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Er zijn genoeg banen beschikbaar in deze regio. Dat past bij Werkgelegenheid: hoeveelheid werk.",
+      "uo": [
+       "Nee, dat hoort bij Uitkering: geld bij te weinig inkomen.",
+       "Nee, dat hoort bij Werkloosheid: geen werk hebben.",
+       "Nee, dat hoort bij Minimumloon: laagste toegestane loon.",
+       "Klopt: hoeveelheid werk."
+      ],
+      "uh": "Werkgelegenheid: hoeveelheid werk."
+     },
+     {
+      "v": "In een akkoord voor de hele bedrijfstak staan loon en werktijden. Om welk begrip gaat het?",
+      "o": [
+       "Cao",
+       "Vakbond",
+       "Sociale zekerheid",
+       "Werknemer"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "In een akkoord voor de hele bedrijfstak staan loon en werktijden. Dat past bij Cao: afspraken over het werk.",
+      "uo": [
+       "Klopt: afspraken over het werk.",
+       "Nee, dat hoort bij Vakbond: komt op voor werknemers.",
+       "Nee, dat hoort bij Sociale zekerheid: inkomen bij tegenslag.",
+       "Nee, dat hoort bij Werknemer: werkt in loondienst."
+      ],
+      "uh": "Cao: afspraken over het werk."
+     },
+     {
+      "v": "Degene die mensen in dienst neemt. Welk begrip herken je hier?",
+      "o": [
+       "Inkomen",
+       "Werkgever",
+       "Cao",
+       "Werkgelegenheid"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Degene die mensen in dienst neemt. Dat past bij Werkgever: neemt mensen aan.",
+      "uo": [
+       "Nee, dat hoort bij Inkomen: geld dat je ontvangt.",
+       "Klopt: neemt mensen aan.",
+       "Nee, dat hoort bij Cao: afspraken over het werk.",
+       "Nee, dat hoort bij Werkgelegenheid: hoeveelheid werk."
+      ],
+      "uh": "Werkgever: neemt mensen aan."
+     },
+     {
+      "v": "Het geheel van vraag naar en aanbod van werk. Wat is hier aan de hand?",
+      "o": [
+       "Werknemer",
+       "Werkgelegenheid",
+       "Arbeidsmarkt",
+       "Staking"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het geheel van vraag naar en aanbod van werk. Dat past bij Arbeidsmarkt: vraag en aanbod van werk.",
+      "uo": [
+       "Nee, dat hoort bij Werknemer: werkt in loondienst.",
+       "Nee, dat hoort bij Werkgelegenheid: hoeveelheid werk.",
+       "Klopt: vraag en aanbod van werk.",
+       "Nee, dat hoort bij Staking: het werk neerleggen."
+      ],
+      "uh": "Arbeidsmarkt: vraag en aanbod van werk."
      }
     ],
     "begrippen": [
@@ -42268,6 +43256,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Taal, gewoonten en gebruiken»."
       ],
       "uh": "Taal, gewoonten en gebruiken van een groep."
+     },
+     {
+      "v": "Iemand die naar een ander land verhuist. Welk begrip past hierbij?",
+      "o": [
+       "Discriminatie",
+       "Integratie",
+       "Vooroordeel",
+       "Migrant"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Iemand die naar een ander land verhuist. Dat past bij Migrant: verhuist naar ander land.",
+      "uo": [
+       "Nee, dat hoort bij Discriminatie: ongelijk behandelen.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Klopt: verhuist naar ander land."
+      ],
+      "uh": "Migrant: verhuist naar ander land."
+     },
+     {
+      "v": "Andere culturen en meningen kunnen verdragen. Om welk begrip gaat het?",
+      "o": [
+       "Tolerantie",
+       "Discriminatie",
+       "Integratie",
+       "Godsdienstvrijheid"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Andere culturen en meningen kunnen verdragen. Dat past bij Tolerantie: anderen verdragen.",
+      "uo": [
+       "Klopt: anderen verdragen.",
+       "Nee, dat hoort bij Discriminatie: ongelijk behandelen.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Nee, dat hoort bij Godsdienstvrijheid: vrij je geloof kiezen."
+      ],
+      "uh": "Tolerantie: anderen verdragen."
+     },
+     {
+      "v": "Bevolkingsgroepen leven gescheiden, in eigen wijken en scholen. Welk begrip herken je hier?",
+      "o": [
+       "Stereotype",
+       "Segregatie",
+       "Vooroordeel",
+       "Multiculturele samenleving"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Bevolkingsgroepen leven gescheiden, in eigen wijken en scholen. Dat past bij Segregatie: gescheiden leven.",
+      "uo": [
+       "Nee, dat hoort bij Stereotype: vast beeld van een groep.",
+       "Klopt: gescheiden leven.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Nee, dat hoort bij Multiculturele samenleving: veel culturen samen."
+      ],
+      "uh": "Segregatie: gescheiden leven."
+     },
+     {
+      "v": "Het recht om je eigen geloof te kiezen. Wat is hier aan de hand?",
+      "o": [
+       "Migrant",
+       "Tolerantie",
+       "Godsdienstvrijheid",
+       "Integratie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Het recht om je eigen geloof te kiezen. Dat past bij Godsdienstvrijheid: vrij je geloof kiezen.",
+      "uo": [
+       "Nee, dat hoort bij Migrant: verhuist naar ander land.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Klopt: vrij je geloof kiezen.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving."
+      ],
+      "uh": "Godsdienstvrijheid: vrij je geloof kiezen."
+     },
+     {
+      "v": "Het ongelijk behandelen van mensen om wie ze zijn. Welk begrip past hierbij?",
+      "o": [
+       "Tolerantie",
+       "Integratie",
+       "Stereotype",
+       "Discriminatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het ongelijk behandelen van mensen om wie ze zijn. Dat past bij Discriminatie: ongelijk behandelen.",
+      "uo": [
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Nee, dat hoort bij Stereotype: vast beeld van een groep.",
+       "Klopt: ongelijk behandelen."
+      ],
+      "uh": "Discriminatie: ongelijk behandelen."
+     },
+     {
+      "v": "Iedereen mag zelf kiezen of en wat hij gelooft. Om welk begrip gaat het?",
+      "o": [
+       "Godsdienstvrijheid",
+       "Tolerantie",
+       "Migrant",
+       "Integratie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Iedereen mag zelf kiezen of en wat hij gelooft. Dat past bij Godsdienstvrijheid: vrij je geloof kiezen.",
+      "uo": [
+       "Klopt: vrij je geloof kiezen.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Nee, dat hoort bij Migrant: verhuist naar ander land.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving."
+      ],
+      "uh": "Godsdienstvrijheid: vrij je geloof kiezen."
+     },
+     {
+      "v": "Alle leden van een groep over één kam scheren met een vast beeld. Welk begrip herken je hier?",
+      "o": [
+       "Tolerantie",
+       "Stereotype",
+       "Discriminatie",
+       "Multiculturele samenleving"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Alle leden van een groep over één kam scheren met een vast beeld. Dat past bij Stereotype: vast beeld van een groep.",
+      "uo": [
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Klopt: vast beeld van een groep.",
+       "Nee, dat hoort bij Discriminatie: ongelijk behandelen.",
+       "Nee, dat hoort bij Multiculturele samenleving: veel culturen samen."
+      ],
+      "uh": "Stereotype: vast beeld van een groep."
+     },
+     {
+      "v": "De gewoonten, taal en gebruiken van een groep. Wat is hier aan de hand?",
+      "o": [
+       "Stereotype",
+       "Identiteit",
+       "Cultuur",
+       "Vooroordeel"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De gewoonten, taal en gebruiken van een groep. Dat past bij Cultuur: gewoonten en gebruiken.",
+      "uo": [
+       "Nee, dat hoort bij Stereotype: vast beeld van een groep.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Klopt: gewoonten en gebruiken.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten."
+      ],
+      "uh": "Cultuur: gewoonten en gebruiken."
+     },
+     {
+      "v": "Een groep strijdt voor gelijke rechten en kansen. Welk begrip past hierbij?",
+      "o": [
+       "Multiculturele samenleving",
+       "Tolerantie",
+       "Godsdienstvrijheid",
+       "Emancipatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een groep strijdt voor gelijke rechten en kansen. Dat past bij Emancipatie: streven naar gelijkheid.",
+      "uo": [
+       "Nee, dat hoort bij Multiculturele samenleving: veel culturen samen.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Nee, dat hoort bij Godsdienstvrijheid: vrij je geloof kiezen.",
+       "Klopt: streven naar gelijkheid."
+      ],
+      "uh": "Emancipatie: streven naar gelijkheid."
+     },
+     {
+      "v": "De taal, gewoonten en feesten van een bevolkingsgroep. Om welk begrip gaat het?",
+      "o": [
+       "Cultuur",
+       "Identiteit",
+       "Stereotype",
+       "Vooroordeel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De taal, gewoonten en feesten van een bevolkingsgroep. Dat past bij Cultuur: gewoonten en gebruiken.",
+      "uo": [
+       "Klopt: gewoonten en gebruiken.",
+       "Nee, dat hoort bij Identiteit: gevoel van erbij horen.",
+       "Nee, dat hoort bij Stereotype: vast beeld van een groep.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten."
+      ],
+      "uh": "Cultuur: gewoonten en gebruiken."
+     },
+     {
+      "v": "Je laat anderen hun eigen geloof en gewoonten hebben. Welk begrip herken je hier?",
+      "o": [
+       "Stereotype",
+       "Tolerantie",
+       "Vooroordeel",
+       "Multiculturele samenleving"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je laat anderen hun eigen geloof en gewoonten hebben. Dat past bij Tolerantie: anderen verdragen.",
+      "uo": [
+       "Nee, dat hoort bij Stereotype: vast beeld van een groep.",
+       "Klopt: anderen verdragen.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Nee, dat hoort bij Multiculturele samenleving: veel culturen samen."
+      ],
+      "uh": "Tolerantie: anderen verdragen."
+     },
+     {
+      "v": "Een vast, vaak overdreven beeld van een groep. Wat is hier aan de hand?",
+      "o": [
+       "Emancipatie",
+       "Vooroordeel",
+       "Stereotype",
+       "Migrant"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een vast, vaak overdreven beeld van een groep. Dat past bij Stereotype: vast beeld van een groep.",
+      "uo": [
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Klopt: vast beeld van een groep.",
+       "Nee, dat hoort bij Migrant: verhuist naar ander land."
+      ],
+      "uh": "Stereotype: vast beeld van een groep."
+     },
+     {
+      "v": "Het gescheiden leven van bevolkingsgroepen. Welk begrip past hierbij?",
+      "o": [
+       "Godsdienstvrijheid",
+       "Integratie",
+       "Discriminatie",
+       "Segregatie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het gescheiden leven van bevolkingsgroepen. Dat past bij Segregatie: gescheiden leven.",
+      "uo": [
+       "Nee, dat hoort bij Godsdienstvrijheid: vrij je geloof kiezen.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Nee, dat hoort bij Discriminatie: ongelijk behandelen.",
+       "Klopt: gescheiden leven."
+      ],
+      "uh": "Segregatie: gescheiden leven."
+     },
+     {
+      "v": "Iemand wordt afgewezen voor een baan vanwege zijn afkomst. Om welk begrip gaat het?",
+      "o": [
+       "Discriminatie",
+       "Integratie",
+       "Stereotype",
+       "Tolerantie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Iemand wordt afgewezen voor een baan vanwege zijn afkomst. Dat past bij Discriminatie: ongelijk behandelen.",
+      "uo": [
+       "Klopt: ongelijk behandelen.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Nee, dat hoort bij Stereotype: vast beeld van een groep.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen."
+      ],
+      "uh": "Discriminatie: ongelijk behandelen."
+     },
+     {
+      "v": "Het meedoen van migranten in de samenleving. Welk begrip herken je hier?",
+      "o": [
+       "Segregatie",
+       "Integratie",
+       "Emancipatie",
+       "Tolerantie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het meedoen van migranten in de samenleving. Dat past bij Integratie: meedoen in de samenleving.",
+      "uo": [
+       "Nee, dat hoort bij Segregatie: gescheiden leven.",
+       "Klopt: meedoen in de samenleving.",
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen."
+      ],
+      "uh": "Integratie: meedoen in de samenleving."
+     },
+     {
+      "v": "Nieuwkomers leren de taal en gaan meedoen op school en werk. Wat is hier aan de hand?",
+      "o": [
+       "Discriminatie",
+       "Segregatie",
+       "Integratie",
+       "Godsdienstvrijheid"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Nieuwkomers leren de taal en gaan meedoen op school en werk. Dat past bij Integratie: meedoen in de samenleving.",
+      "uo": [
+       "Nee, dat hoort bij Discriminatie: ongelijk behandelen.",
+       "Nee, dat hoort bij Segregatie: gescheiden leven.",
+       "Klopt: meedoen in de samenleving.",
+       "Nee, dat hoort bij Godsdienstvrijheid: vrij je geloof kiezen."
+      ],
+      "uh": "Integratie: meedoen in de samenleving."
+     },
+     {
+      "v": "Een samenleving met mensen van veel culturen. Welk begrip past hierbij?",
+      "o": [
+       "Discriminatie",
+       "Vooroordeel",
+       "Segregatie",
+       "Multiculturele samenleving"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een samenleving met mensen van veel culturen. Dat past bij Multiculturele samenleving: veel culturen samen.",
+      "uo": [
+       "Nee, dat hoort bij Discriminatie: ongelijk behandelen.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Nee, dat hoort bij Segregatie: gescheiden leven.",
+       "Klopt: veel culturen samen."
+      ],
+      "uh": "Multiculturele samenleving: veel culturen samen."
+     },
+     {
+      "v": "Iemand verhuist naar een ander land om er te wonen. Om welk begrip gaat het?",
+      "o": [
+       "Migrant",
+       "Integratie",
+       "Tolerantie",
+       "Godsdienstvrijheid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Iemand verhuist naar een ander land om er te wonen. Dat past bij Migrant: verhuist naar ander land.",
+      "uo": [
+       "Klopt: verhuist naar ander land.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Nee, dat hoort bij Godsdienstvrijheid: vrij je geloof kiezen."
+      ],
+      "uh": "Migrant: verhuist naar ander land."
+     },
+     {
+      "v": "Het gevoel bij een bepaalde groep te horen. Welk begrip herken je hier?",
+      "o": [
+       "Cultuur",
+       "Identiteit",
+       "Vooroordeel",
+       "Godsdienstvrijheid"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het gevoel bij een bepaalde groep te horen. Dat past bij Identiteit: gevoel van erbij horen.",
+      "uo": [
+       "Nee, dat hoort bij Cultuur: gewoonten en gebruiken.",
+       "Klopt: gevoel van erbij horen.",
+       "Nee, dat hoort bij Vooroordeel: oordeel zonder feiten.",
+       "Nee, dat hoort bij Godsdienstvrijheid: vrij je geloof kiezen."
+      ],
+      "uh": "Identiteit: gevoel van erbij horen."
+     },
+     {
+      "v": "Een mening vooraf, zonder de feiten te kennen. Wat is hier aan de hand?",
+      "o": [
+       "Godsdienstvrijheid",
+       "Migrant",
+       "Vooroordeel",
+       "Multiculturele samenleving"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een mening vooraf, zonder de feiten te kennen. Dat past bij Vooroordeel: oordeel zonder feiten.",
+      "uo": [
+       "Nee, dat hoort bij Godsdienstvrijheid: vrij je geloof kiezen.",
+       "Nee, dat hoort bij Migrant: verhuist naar ander land.",
+       "Klopt: oordeel zonder feiten.",
+       "Nee, dat hoort bij Multiculturele samenleving: veel culturen samen."
+      ],
+      "uh": "Vooroordeel: oordeel zonder feiten."
+     },
+     {
+      "v": "In deze stad wonen mensen met heel veel verschillende achtergronden samen. Welk begrip past hierbij?",
+      "o": [
+       "Emancipatie",
+       "Cultuur",
+       "Discriminatie",
+       "Multiculturele samenleving"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "In deze stad wonen mensen met heel veel verschillende achtergronden samen. Dat past bij Multiculturele samenleving: veel culturen samen.",
+      "uo": [
+       "Nee, dat hoort bij Emancipatie: streven naar gelijkheid.",
+       "Nee, dat hoort bij Cultuur: gewoonten en gebruiken.",
+       "Nee, dat hoort bij Discriminatie: ongelijk behandelen.",
+       "Klopt: veel culturen samen."
+      ],
+      "uh": "Multiculturele samenleving: veel culturen samen."
+     },
+     {
+      "v": "Je oordeelt over een groep zonder de mensen echt te kennen. Om welk begrip gaat het?",
+      "o": [
+       "Vooroordeel",
+       "Stereotype",
+       "Integratie",
+       "Discriminatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je oordeelt over een groep zonder de mensen echt te kennen. Dat past bij Vooroordeel: oordeel zonder feiten.",
+      "uo": [
+       "Klopt: oordeel zonder feiten.",
+       "Nee, dat hoort bij Stereotype: vast beeld van een groep.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Nee, dat hoort bij Discriminatie: ongelijk behandelen."
+      ],
+      "uh": "Vooroordeel: oordeel zonder feiten."
+     },
+     {
+      "v": "Het gevoel bij een groep of gebied te horen. Welk begrip herken je hier?",
+      "o": [
+       "Tolerantie",
+       "Identiteit",
+       "Stereotype",
+       "Multiculturele samenleving"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het gevoel bij een groep of gebied te horen. Dat past bij Identiteit: gevoel van erbij horen.",
+      "uo": [
+       "Nee, dat hoort bij Tolerantie: anderen verdragen.",
+       "Klopt: gevoel van erbij horen.",
+       "Nee, dat hoort bij Stereotype: vast beeld van een groep.",
+       "Nee, dat hoort bij Multiculturele samenleving: veel culturen samen."
+      ],
+      "uh": "Identiteit: gevoel van erbij horen."
+     },
+     {
+      "v": "Het streven naar gelijke rechten en kansen. Wat is hier aan de hand?",
+      "o": [
+       "Cultuur",
+       "Integratie",
+       "Emancipatie",
+       "Godsdienstvrijheid"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het streven naar gelijke rechten en kansen. Dat past bij Emancipatie: streven naar gelijkheid.",
+      "uo": [
+       "Nee, dat hoort bij Cultuur: gewoonten en gebruiken.",
+       "Nee, dat hoort bij Integratie: meedoen in de samenleving.",
+       "Klopt: streven naar gelijkheid.",
+       "Nee, dat hoort bij Godsdienstvrijheid: vrij je geloof kiezen."
+      ],
+      "uh": "Emancipatie: streven naar gelijkheid."
      }
     ],
     "begrippen": [
@@ -42546,6 +43990,538 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Gegevens die aantonen of iemand iets deed»."
       ],
       "uh": "Gegevens die schuld of onschuld aantonen."
+     },
+     {
+      "v": "Het opnieuw plegen van een strafbaar feit. Welk begrip past hierbij?",
+      "o": [
+       "Rechtsstaat",
+       "Officier van justitie",
+       "Bewijs",
+       "Recidive"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het opnieuw plegen van een strafbaar feit. Dat past bij Recidive: opnieuw de fout in.",
+      "uo": [
+       "Nee, dat hoort bij Rechtsstaat: wet geldt voor iedereen.",
+       "Nee, dat hoort bij Officier van justitie: de aanklager.",
+       "Nee, dat hoort bij Bewijs: gegevens die iets aantonen.",
+       "Klopt: opnieuw de fout in."
+      ],
+      "uh": "Recidive: opnieuw de fout in."
+     },
+     {
+      "v": "In de rechtszaal wordt beslist of iemand schuldig is en welke straf volgt. Om welk begrip gaat het?",
+      "o": [
+       "Strafproces",
+       "Bewijs",
+       "Officier van justitie",
+       "Rechter"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "In de rechtszaal wordt beslist of iemand schuldig is en welke straf volgt. Dat past bij Strafproces: rechtszaak over schuld.",
+      "uo": [
+       "Klopt: rechtszaak over schuld.",
+       "Nee, dat hoort bij Bewijs: gegevens die iets aantonen.",
+       "Nee, dat hoort bij Officier van justitie: de aanklager.",
+       "Nee, dat hoort bij Rechter: velt het oordeel."
+      ],
+      "uh": "Strafproces: rechtszaak over schuld."
+     },
+     {
+      "v": "De politie houdt iemand aan die ergens van beschuldigd wordt. Welk begrip herken je hier?",
+      "o": [
+       "Onschuldpresumptie",
+       "Verdachte",
+       "Taakstraf",
+       "Rechter"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De politie houdt iemand aan die ergens van beschuldigd wordt. Dat past bij Verdachte: wordt beschuldigd.",
+      "uo": [
+       "Nee, dat hoort bij Onschuldpresumptie: onschuldig tot bewezen.",
+       "Klopt: wordt beschuldigd.",
+       "Nee, dat hoort bij Taakstraf: straf met onbetaald werk.",
+       "Nee, dat hoort bij Rechter: velt het oordeel."
+      ],
+      "uh": "Verdachte: wordt beschuldigd."
+     },
+     {
+      "v": "Een ernstig strafbaar feit, zoals diefstal of geweld. Wat is hier aan de hand?",
+      "o": [
+       "Bewijs",
+       "Overtreding",
+       "Misdrijf",
+       "Strafproces"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een ernstig strafbaar feit, zoals diefstal of geweld. Dat past bij Misdrijf: ernstig strafbaar feit.",
+      "uo": [
+       "Nee, dat hoort bij Bewijs: gegevens die iets aantonen.",
+       "Nee, dat hoort bij Overtreding: licht strafbaar feit.",
+       "Klopt: ernstig strafbaar feit.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld."
+      ],
+      "uh": "Misdrijf: ernstig strafbaar feit."
+     },
+     {
+      "v": "Gedrag dat bij de wet verboden is. Welk begrip past hierbij?",
+      "o": [
+       "Preventie",
+       "Advocaat",
+       "Strafproces",
+       "Criminaliteit"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Gedrag dat bij de wet verboden is. Dat past bij Criminaliteit: verboden gedrag.",
+      "uo": [
+       "Nee, dat hoort bij Preventie: criminaliteit voorkomen.",
+       "Nee, dat hoort bij Advocaat: verdedigt de verdachte.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Klopt: verboden gedrag."
+      ],
+      "uh": "Criminaliteit: verboden gedrag."
+     },
+     {
+      "v": "Het voorkomen van criminaliteit. Om welk begrip gaat het?",
+      "o": [
+       "Preventie",
+       "Recidive",
+       "Strafproces",
+       "Rechter"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het voorkomen van criminaliteit. Dat past bij Preventie: criminaliteit voorkomen.",
+      "uo": [
+       "Klopt: criminaliteit voorkomen.",
+       "Nee, dat hoort bij Recidive: opnieuw de fout in.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Nee, dat hoort bij Rechter: velt het oordeel."
+      ],
+      "uh": "Preventie: criminaliteit voorkomen."
+     },
+     {
+      "v": "Na zijn straf gaat hij opnieuw de fout in. Welk begrip herken je hier?",
+      "o": [
+       "Officier van justitie",
+       "Recidive",
+       "Bewijs",
+       "Rechtsstaat"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Na zijn straf gaat hij opnieuw de fout in. Dat past bij Recidive: opnieuw de fout in.",
+      "uo": [
+       "Nee, dat hoort bij Officier van justitie: de aanklager.",
+       "Klopt: opnieuw de fout in.",
+       "Nee, dat hoort bij Bewijs: gegevens die iets aantonen.",
+       "Nee, dat hoort bij Rechtsstaat: wet geldt voor iedereen."
+      ],
+      "uh": "Recidive: opnieuw de fout in."
+     },
+     {
+      "v": "Gegevens die aantonen of iemand iets heeft gedaan. Wat is hier aan de hand?",
+      "o": [
+       "Officier van justitie",
+       "Strafproces",
+       "Bewijs",
+       "Recidive"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Gegevens die aantonen of iemand iets heeft gedaan. Dat past bij Bewijs: gegevens die iets aantonen.",
+      "uo": [
+       "Nee, dat hoort bij Officier van justitie: de aanklager.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Klopt: gegevens die iets aantonen.",
+       "Nee, dat hoort bij Recidive: opnieuw de fout in."
+      ],
+      "uh": "Bewijs: gegevens die iets aantonen."
+     },
+     {
+      "v": "De rechtszaak waarin over schuld en straf wordt beslist. Welk begrip past hierbij?",
+      "o": [
+       "Rechtsstaat",
+       "Preventie",
+       "Rechter",
+       "Strafproces"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De rechtszaak waarin over schuld en straf wordt beslist. Dat past bij Strafproces: rechtszaak over schuld.",
+      "uo": [
+       "Nee, dat hoort bij Rechtsstaat: wet geldt voor iedereen.",
+       "Nee, dat hoort bij Preventie: criminaliteit voorkomen.",
+       "Nee, dat hoort bij Rechter: velt het oordeel.",
+       "Klopt: rechtszaak over schuld."
+      ],
+      "uh": "Strafproces: rechtszaak over schuld."
+     },
+     {
+      "v": "Vingerafdrukken en camerabeelden tonen aan wat er gebeurd is. Om welk begrip gaat het?",
+      "o": [
+       "Bewijs",
+       "Strafproces",
+       "Officier van justitie",
+       "Recidive"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Vingerafdrukken en camerabeelden tonen aan wat er gebeurd is. Dat past bij Bewijs: gegevens die iets aantonen.",
+      "uo": [
+       "Klopt: gegevens die iets aantonen.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Nee, dat hoort bij Officier van justitie: de aanklager.",
+       "Nee, dat hoort bij Recidive: opnieuw de fout in."
+      ],
+      "uh": "Bewijs: gegevens die iets aantonen."
+     },
+     {
+      "v": "Je bent onschuldig tot het tegendeel bewezen is. Welk begrip herken je hier?",
+      "o": [
+       "Advocaat",
+       "Onschuldpresumptie",
+       "Strafproces",
+       "Rechtsstaat"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je bent onschuldig tot het tegendeel bewezen is. Dat past bij Onschuldpresumptie: onschuldig tot bewezen.",
+      "uo": [
+       "Nee, dat hoort bij Advocaat: verdedigt de verdachte.",
+       "Klopt: onschuldig tot bewezen.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Nee, dat hoort bij Rechtsstaat: wet geldt voor iedereen."
+      ],
+      "uh": "Onschuldpresumptie: onschuldig tot bewezen."
+     },
+     {
+      "v": "Een inbraak met geweld is een ernstig strafbaar feit. Wat is hier aan de hand?",
+      "o": [
+       "Rechter",
+       "Overtreding",
+       "Misdrijf",
+       "Recidive"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een inbraak met geweld is een ernstig strafbaar feit. Dat past bij Misdrijf: ernstig strafbaar feit.",
+      "uo": [
+       "Nee, dat hoort bij Rechter: velt het oordeel.",
+       "Nee, dat hoort bij Overtreding: licht strafbaar feit.",
+       "Klopt: ernstig strafbaar feit.",
+       "Nee, dat hoort bij Recidive: opnieuw de fout in."
+      ],
+      "uh": "Misdrijf: ernstig strafbaar feit."
+     },
+     {
+      "v": "Als straf moet hij honderd uur onbetaald werk doen. Welk begrip past hierbij?",
+      "o": [
+       "Rechter",
+       "Preventie",
+       "Strafproces",
+       "Taakstraf"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Als straf moet hij honderd uur onbetaald werk doen. Dat past bij Taakstraf: straf met onbetaald werk.",
+      "uo": [
+       "Nee, dat hoort bij Rechter: velt het oordeel.",
+       "Nee, dat hoort bij Preventie: criminaliteit voorkomen.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Klopt: straf met onbetaald werk."
+      ],
+      "uh": "Taakstraf: straf met onbetaald werk."
+     },
+     {
+      "v": "Een staat waarin iedereen zich aan de wet houdt en rechten heeft. Om welk begrip gaat het?",
+      "o": [
+       "Rechtsstaat",
+       "Verdachte",
+       "Misdrijf",
+       "Strafproces"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een staat waarin iedereen zich aan de wet houdt en rechten heeft. Dat past bij Rechtsstaat: wet geldt voor iedereen.",
+      "uo": [
+       "Klopt: wet geldt voor iedereen.",
+       "Nee, dat hoort bij Verdachte: wordt beschuldigd.",
+       "Nee, dat hoort bij Misdrijf: ernstig strafbaar feit.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld."
+      ],
+      "uh": "Rechtsstaat: wet geldt voor iedereen."
+     },
+     {
+      "v": "Iemand die een verdachte verdedigt. Welk begrip herken je hier?",
+      "o": [
+       "Rechter",
+       "Advocaat",
+       "Officier van justitie",
+       "Misdrijf"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Iemand die een verdachte verdedigt. Dat past bij Advocaat: verdedigt de verdachte.",
+      "uo": [
+       "Nee, dat hoort bij Rechter: velt het oordeel.",
+       "Klopt: verdedigt de verdachte.",
+       "Nee, dat hoort bij Officier van justitie: de aanklager.",
+       "Nee, dat hoort bij Misdrijf: ernstig strafbaar feit."
+      ],
+      "uh": "Advocaat: verdedigt de verdachte."
+     },
+     {
+      "v": "Namens de staat klaagt deze persoon de verdachte aan. Wat is hier aan de hand?",
+      "o": [
+       "Advocaat",
+       "Rechter",
+       "Officier van justitie",
+       "Criminaliteit"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Namens de staat klaagt deze persoon de verdachte aan. Dat past bij Officier van justitie: de aanklager.",
+      "uo": [
+       "Nee, dat hoort bij Advocaat: verdedigt de verdachte.",
+       "Nee, dat hoort bij Rechter: velt het oordeel.",
+       "Klopt: de aanklager.",
+       "Nee, dat hoort bij Criminaliteit: verboden gedrag."
+      ],
+      "uh": "Officier van justitie: de aanklager."
+     },
+     {
+      "v": "Deze persoon staat de verdachte bij en verdedigt hem. Welk begrip past hierbij?",
+      "o": [
+       "Criminaliteit",
+       "Taakstraf",
+       "Rechtsstaat",
+       "Advocaat"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Deze persoon staat de verdachte bij en verdedigt hem. Dat past bij Advocaat: verdedigt de verdachte.",
+      "uo": [
+       "Nee, dat hoort bij Criminaliteit: verboden gedrag.",
+       "Nee, dat hoort bij Taakstraf: straf met onbetaald werk.",
+       "Nee, dat hoort bij Rechtsstaat: wet geldt voor iedereen.",
+       "Klopt: verdedigt de verdachte."
+      ],
+      "uh": "Advocaat: verdedigt de verdachte."
+     },
+     {
+      "v": "De aanklager namens de staat. Om welk begrip gaat het?",
+      "o": [
+       "Officier van justitie",
+       "Rechter",
+       "Advocaat",
+       "Rechtsstaat"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De aanklager namens de staat. Dat past bij Officier van justitie: de aanklager.",
+      "uo": [
+       "Klopt: de aanklager.",
+       "Nee, dat hoort bij Rechter: velt het oordeel.",
+       "Nee, dat hoort bij Advocaat: verdedigt de verdachte.",
+       "Nee, dat hoort bij Rechtsstaat: wet geldt voor iedereen."
+      ],
+      "uh": "Officier van justitie: de aanklager."
+     },
+     {
+      "v": "Iemand die van een strafbaar feit wordt beschuldigd. Welk begrip herken je hier?",
+      "o": [
+       "Advocaat",
+       "Verdachte",
+       "Preventie",
+       "Strafproces"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Iemand die van een strafbaar feit wordt beschuldigd. Dat past bij Verdachte: wordt beschuldigd.",
+      "uo": [
+       "Nee, dat hoort bij Advocaat: verdedigt de verdachte.",
+       "Klopt: wordt beschuldigd.",
+       "Nee, dat hoort bij Preventie: criminaliteit voorkomen.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld."
+      ],
+      "uh": "Verdachte: wordt beschuldigd."
+     },
+     {
+      "v": "Een licht strafbaar feit, zoals te hard rijden. Wat is hier aan de hand?",
+      "o": [
+       "Strafproces",
+       "Preventie",
+       "Overtreding",
+       "Rechtsstaat"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een licht strafbaar feit, zoals te hard rijden. Dat past bij Overtreding: licht strafbaar feit.",
+      "uo": [
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Nee, dat hoort bij Preventie: criminaliteit voorkomen.",
+       "Klopt: licht strafbaar feit.",
+       "Nee, dat hoort bij Rechtsstaat: wet geldt voor iedereen."
+      ],
+      "uh": "Overtreding: licht strafbaar feit."
+     },
+     {
+      "v": "In dit land geldt de wet voor iedereen, ook voor de regering. Welk begrip past hierbij?",
+      "o": [
+       "Onschuldpresumptie",
+       "Rechter",
+       "Officier van justitie",
+       "Rechtsstaat"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "In dit land geldt de wet voor iedereen, ook voor de regering. Dat past bij Rechtsstaat: wet geldt voor iedereen.",
+      "uo": [
+       "Nee, dat hoort bij Onschuldpresumptie: onschuldig tot bewezen.",
+       "Nee, dat hoort bij Rechter: velt het oordeel.",
+       "Nee, dat hoort bij Officier van justitie: de aanklager.",
+       "Klopt: wet geldt voor iedereen."
+      ],
+      "uh": "Rechtsstaat: wet geldt voor iedereen."
+     },
+     {
+      "v": "Met camera's en voorlichting probeert men criminaliteit te voorkomen. Om welk begrip gaat het?",
+      "o": [
+       "Preventie",
+       "Recidive",
+       "Strafproces",
+       "Rechter"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Met camera's en voorlichting probeert men criminaliteit te voorkomen. Dat past bij Preventie: criminaliteit voorkomen.",
+      "uo": [
+       "Klopt: criminaliteit voorkomen.",
+       "Nee, dat hoort bij Recidive: opnieuw de fout in.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Nee, dat hoort bij Rechter: velt het oordeel."
+      ],
+      "uh": "Preventie: criminaliteit voorkomen."
+     },
+     {
+      "v": "Zolang schuld niet bewezen is, geldt iemand als onschuldig. Welk begrip herken je hier?",
+      "o": [
+       "Advocaat",
+       "Onschuldpresumptie",
+       "Strafproces",
+       "Rechtsstaat"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Zolang schuld niet bewezen is, geldt iemand als onschuldig. Dat past bij Onschuldpresumptie: onschuldig tot bewezen.",
+      "uo": [
+       "Nee, dat hoort bij Advocaat: verdedigt de verdachte.",
+       "Klopt: onschuldig tot bewezen.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Nee, dat hoort bij Rechtsstaat: wet geldt voor iedereen."
+      ],
+      "uh": "Onschuldpresumptie: onschuldig tot bewezen."
+     },
+     {
+      "v": "Degene die een oordeel velt en de straf bepaalt. Wat is hier aan de hand?",
+      "o": [
+       "Advocaat",
+       "Officier van justitie",
+       "Rechter",
+       "Strafproces"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Degene die een oordeel velt en de straf bepaalt. Dat past bij Rechter: velt het oordeel.",
+      "uo": [
+       "Nee, dat hoort bij Advocaat: verdedigt de verdachte.",
+       "Nee, dat hoort bij Officier van justitie: de aanklager.",
+       "Klopt: velt het oordeel.",
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld."
+      ],
+      "uh": "Rechter: velt het oordeel."
+     },
+     {
+      "v": "Gedrag dat bij de wet verboden is, zoals diefstal. Welk begrip past hierbij?",
+      "o": [
+       "Onschuldpresumptie",
+       "Misdrijf",
+       "Rechter",
+       "Criminaliteit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Gedrag dat bij de wet verboden is, zoals diefstal. Dat past bij Criminaliteit: verboden gedrag.",
+      "uo": [
+       "Nee, dat hoort bij Onschuldpresumptie: onschuldig tot bewezen.",
+       "Nee, dat hoort bij Misdrijf: ernstig strafbaar feit.",
+       "Nee, dat hoort bij Rechter: velt het oordeel.",
+       "Klopt: verboden gedrag."
+      ],
+      "uh": "Criminaliteit: verboden gedrag."
+     },
+     {
+      "v": "Deze persoon luistert naar beide kanten en velt het oordeel. Om welk begrip gaat het?",
+      "o": [
+       "Rechter",
+       "Taakstraf",
+       "Bewijs",
+       "Overtreding"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Deze persoon luistert naar beide kanten en velt het oordeel. Dat past bij Rechter: velt het oordeel.",
+      "uo": [
+       "Klopt: velt het oordeel.",
+       "Nee, dat hoort bij Taakstraf: straf met onbetaald werk.",
+       "Nee, dat hoort bij Bewijs: gegevens die iets aantonen.",
+       "Nee, dat hoort bij Overtreding: licht strafbaar feit."
+      ],
+      "uh": "Rechter: velt het oordeel."
+     },
+     {
+      "v": "Te hard rijden is een licht strafbaar feit. Welk begrip herken je hier?",
+      "o": [
+       "Misdrijf",
+       "Overtreding",
+       "Rechter",
+       "Onschuldpresumptie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Te hard rijden is een licht strafbaar feit. Dat past bij Overtreding: licht strafbaar feit.",
+      "uo": [
+       "Nee, dat hoort bij Misdrijf: ernstig strafbaar feit.",
+       "Klopt: licht strafbaar feit.",
+       "Nee, dat hoort bij Rechter: velt het oordeel.",
+       "Nee, dat hoort bij Onschuldpresumptie: onschuldig tot bewezen."
+      ],
+      "uh": "Overtreding: licht strafbaar feit."
+     },
+     {
+      "v": "Een straf waarbij je onbetaald werk moet doen. Wat is hier aan de hand?",
+      "o": [
+       "Strafproces",
+       "Preventie",
+       "Taakstraf",
+       "Rechter"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een straf waarbij je onbetaald werk moet doen. Dat past bij Taakstraf: straf met onbetaald werk.",
+      "uo": [
+       "Nee, dat hoort bij Strafproces: rechtszaak over schuld.",
+       "Nee, dat hoort bij Preventie: criminaliteit voorkomen.",
+       "Klopt: straf met onbetaald werk.",
+       "Nee, dat hoort bij Rechter: velt het oordeel."
+      ],
+      "uh": "Taakstraf: straf met onbetaald werk."
      }
     ],
     "begrippen": [
@@ -42832,6 +44808,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Netwerken waarop mensen zelf berichten delen»."
       ],
       "uh": "Netwerken waarop mensen zelf berichten delen: Online netwerken om zelf te delen."
+     },
+     {
+      "v": "Het onbevooroordeeld weergeven van feiten. Welk begrip past hierbij?",
+      "o": [
+       "Nepnieuws",
+       "Manipulatie",
+       "Informerende functie",
+       "Objectiviteit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het onbevooroordeeld weergeven van feiten. Dat past bij Objectiviteit: onbevooroordeeld weergeven.",
+      "uo": [
+       "Nee, dat hoort bij Nepnieuws: nep als echt nieuws.",
+       "Nee, dat hoort bij Manipulatie: mening bewust sturen.",
+       "Nee, dat hoort bij Informerende functie: nieuws geven.",
+       "Klopt: onbevooroordeeld weergeven."
+      ],
+      "uh": "Objectiviteit: onbevooroordeeld weergeven."
+     },
+     {
+      "v": "Het recht van media om vrij te publiceren. Om welk begrip gaat het?",
+      "o": [
+       "Persvrijheid",
+       "Opiniërende functie",
+       "Nepnieuws",
+       "Manipulatie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het recht van media om vrij te publiceren. Dat past bij Persvrijheid: vrij mogen publiceren.",
+      "uo": [
+       "Klopt: vrij mogen publiceren.",
+       "Nee, dat hoort bij Opiniërende functie: meningen geven.",
+       "Nee, dat hoort bij Nepnieuws: nep als echt nieuws.",
+       "Nee, dat hoort bij Manipulatie: mening bewust sturen."
+      ],
+      "uh": "Persvrijheid: vrij mogen publiceren."
+     },
+     {
+      "v": "Een boodschap probeert je een bepaald product te laten kopen. Welk begrip herken je hier?",
+      "o": [
+       "Nepnieuws",
+       "Reclame",
+       "Beeldvorming",
+       "Opiniërende functie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een boodschap probeert je een bepaald product te laten kopen. Dat past bij Reclame: zet aan tot kopen.",
+      "uo": [
+       "Nee, dat hoort bij Nepnieuws: nep als echt nieuws.",
+       "Klopt: zet aan tot kopen.",
+       "Nee, dat hoort bij Beeldvorming: het opgeroepen beeld.",
+       "Nee, dat hoort bij Opiniërende functie: meningen geven."
+      ],
+      "uh": "Reclame: zet aan tot kopen."
+     },
+     {
+      "v": "Onjuiste berichten die als echt nieuws worden verspreid. Wat is hier aan de hand?",
+      "o": [
+       "Opiniërende functie",
+       "Beeldvorming",
+       "Nepnieuws",
+       "Massamedia"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Onjuiste berichten die als echt nieuws worden verspreid. Dat past bij Nepnieuws: nep als echt nieuws.",
+      "uo": [
+       "Nee, dat hoort bij Opiniërende functie: meningen geven.",
+       "Nee, dat hoort bij Beeldvorming: het opgeroepen beeld.",
+       "Klopt: nep als echt nieuws.",
+       "Nee, dat hoort bij Massamedia: bereiken velen tegelijk."
+      ],
+      "uh": "Nepnieuws: nep als echt nieuws."
+     },
+     {
+      "v": "Het beeld dat media van iets of iemand oproepen. Welk begrip past hierbij?",
+      "o": [
+       "Objectiviteit",
+       "Manipulatie",
+       "Sociale media",
+       "Beeldvorming"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het beeld dat media van iets of iemand oproepen. Dat past bij Beeldvorming: het opgeroepen beeld.",
+      "uo": [
+       "Nee, dat hoort bij Objectiviteit: onbevooroordeeld weergeven.",
+       "Nee, dat hoort bij Manipulatie: mening bewust sturen.",
+       "Nee, dat hoort bij Sociale media: netwerken om te delen.",
+       "Klopt: het opgeroepen beeld."
+      ],
+      "uh": "Beeldvorming: het opgeroepen beeld."
+     },
+     {
+      "v": "Een verzonnen bericht wordt als echt nieuws verspreid. Om welk begrip gaat het?",
+      "o": [
+       "Nepnieuws",
+       "Beeldvorming",
+       "Opiniërende functie",
+       "Massamedia"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een verzonnen bericht wordt als echt nieuws verspreid. Dat past bij Nepnieuws: nep als echt nieuws.",
+      "uo": [
+       "Klopt: nep als echt nieuws.",
+       "Nee, dat hoort bij Beeldvorming: het opgeroepen beeld.",
+       "Nee, dat hoort bij Opiniërende functie: meningen geven.",
+       "Nee, dat hoort bij Massamedia: bereiken velen tegelijk."
+      ],
+      "uh": "Nepnieuws: nep als echt nieuws."
+     },
+     {
+      "v": "De overheid houdt bepaalde berichten tegen zodat je ze niet ziet. Welk begrip herken je hier?",
+      "o": [
+       "Persvrijheid",
+       "Censuur",
+       "Beeldvorming",
+       "Opiniërende functie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De overheid houdt bepaalde berichten tegen zodat je ze niet ziet. Dat past bij Censuur: informatie tegenhouden.",
+      "uo": [
+       "Nee, dat hoort bij Persvrijheid: vrij mogen publiceren.",
+       "Klopt: informatie tegenhouden.",
+       "Nee, dat hoort bij Beeldvorming: het opgeroepen beeld.",
+       "Nee, dat hoort bij Opiniërende functie: meningen geven."
+      ],
+      "uh": "Censuur: informatie tegenhouden."
+     },
+     {
+      "v": "Het geven van nieuws en informatie. Wat is hier aan de hand?",
+      "o": [
+       "Nepnieuws",
+       "Reclame",
+       "Informerende functie",
+       "Persvrijheid"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het geven van nieuws en informatie. Dat past bij Informerende functie: nieuws geven.",
+      "uo": [
+       "Nee, dat hoort bij Nepnieuws: nep als echt nieuws.",
+       "Nee, dat hoort bij Reclame: zet aan tot kopen.",
+       "Klopt: nieuws geven.",
+       "Nee, dat hoort bij Persvrijheid: vrij mogen publiceren."
+      ],
+      "uh": "Informerende functie: nieuws geven."
+     },
+     {
+      "v": "Op online netwerken plaatsen mensen zelf berichten en filmpjes. Welk begrip past hierbij?",
+      "o": [
+       "Nepnieuws",
+       "Massamedia",
+       "Amuserende functie",
+       "Sociale media"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Op online netwerken plaatsen mensen zelf berichten en filmpjes. Dat past bij Sociale media: netwerken om te delen.",
+      "uo": [
+       "Nee, dat hoort bij Nepnieuws: nep als echt nieuws.",
+       "Nee, dat hoort bij Massamedia: bereiken velen tegelijk.",
+       "Nee, dat hoort bij Amuserende functie: het publiek vermaken.",
+       "Klopt: netwerken om te delen."
+      ],
+      "uh": "Sociale media: netwerken om te delen."
+     },
+     {
+      "v": "Het journaal vertelt je wat er in de wereld gebeurt. Om welk begrip gaat het?",
+      "o": [
+       "Informerende functie",
+       "Reclame",
+       "Nepnieuws",
+       "Persvrijheid"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het journaal vertelt je wat er in de wereld gebeurt. Dat past bij Informerende functie: nieuws geven.",
+      "uo": [
+       "Klopt: nieuws geven.",
+       "Nee, dat hoort bij Reclame: zet aan tot kopen.",
+       "Nee, dat hoort bij Nepnieuws: nep als echt nieuws.",
+       "Nee, dat hoort bij Persvrijheid: vrij mogen publiceren."
+      ],
+      "uh": "Informerende functie: nieuws geven."
+     },
+     {
+      "v": "Journalisten mogen vrij schrijven, ook kritisch over de regering. Welk begrip herken je hier?",
+      "o": [
+       "Censuur",
+       "Persvrijheid",
+       "Sociale media",
+       "Objectiviteit"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Journalisten mogen vrij schrijven, ook kritisch over de regering. Dat past bij Persvrijheid: vrij mogen publiceren.",
+      "uo": [
+       "Nee, dat hoort bij Censuur: informatie tegenhouden.",
+       "Klopt: vrij mogen publiceren.",
+       "Nee, dat hoort bij Sociale media: netwerken om te delen.",
+       "Nee, dat hoort bij Objectiviteit: onbevooroordeeld weergeven."
+      ],
+      "uh": "Persvrijheid: vrij mogen publiceren."
+     },
+     {
+      "v": "Het tegenhouden of aanpassen van informatie. Wat is hier aan de hand?",
+      "o": [
+       "Manipulatie",
+       "Sociale media",
+       "Censuur",
+       "Objectiviteit"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het tegenhouden of aanpassen van informatie. Dat past bij Censuur: informatie tegenhouden.",
+      "uo": [
+       "Nee, dat hoort bij Manipulatie: mening bewust sturen.",
+       "Nee, dat hoort bij Sociale media: netwerken om te delen.",
+       "Klopt: informatie tegenhouden.",
+       "Nee, dat hoort bij Objectiviteit: onbevooroordeeld weergeven."
+      ],
+      "uh": "Censuur: informatie tegenhouden."
+     },
+     {
+      "v": "Een boodschap om mensen tot kopen aan te zetten. Welk begrip past hierbij?",
+      "o": [
+       "Opiniërende functie",
+       "Nepnieuws",
+       "Beeldvorming",
+       "Reclame"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een boodschap om mensen tot kopen aan te zetten. Dat past bij Reclame: zet aan tot kopen.",
+      "uo": [
+       "Nee, dat hoort bij Opiniërende functie: meningen geven.",
+       "Nee, dat hoort bij Nepnieuws: nep als echt nieuws.",
+       "Nee, dat hoort bij Beeldvorming: het opgeroepen beeld.",
+       "Klopt: zet aan tot kopen."
+      ],
+      "uh": "Reclame: zet aan tot kopen."
+     },
+     {
+      "v": "Door de manier van berichten krijg je een bepaald beeld van iemand. Om welk begrip gaat het?",
+      "o": [
+       "Beeldvorming",
+       "Opiniërende functie",
+       "Nepnieuws",
+       "Persvrijheid"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Door de manier van berichten krijg je een bepaald beeld van iemand. Dat past bij Beeldvorming: het opgeroepen beeld.",
+      "uo": [
+       "Klopt: het opgeroepen beeld.",
+       "Nee, dat hoort bij Opiniërende functie: meningen geven.",
+       "Nee, dat hoort bij Nepnieuws: nep als echt nieuws.",
+       "Nee, dat hoort bij Persvrijheid: vrij mogen publiceren."
+      ],
+      "uh": "Beeldvorming: het opgeroepen beeld."
+     },
+     {
+      "v": "Het geven van meningen. Welk begrip herken je hier?",
+      "o": [
+       "Informerende functie",
+       "Opiniërende functie",
+       "Amuserende functie",
+       "Reclame"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het geven van meningen. Dat past bij Opiniërende functie: meningen geven.",
+      "uo": [
+       "Nee, dat hoort bij Informerende functie: nieuws geven.",
+       "Klopt: meningen geven.",
+       "Nee, dat hoort bij Amuserende functie: het publiek vermaken.",
+       "Nee, dat hoort bij Reclame: zet aan tot kopen."
+      ],
+      "uh": "Opiniërende functie: meningen geven."
+     },
+     {
+      "v": "In een column geeft de schrijver zijn eigen mening. Wat is hier aan de hand?",
+      "o": [
+       "Amuserende functie",
+       "Informerende functie",
+       "Opiniërende functie",
+       "Persvrijheid"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "In een column geeft de schrijver zijn eigen mening. Dat past bij Opiniërende functie: meningen geven.",
+      "uo": [
+       "Nee, dat hoort bij Amuserende functie: het publiek vermaken.",
+       "Nee, dat hoort bij Informerende functie: nieuws geven.",
+       "Klopt: meningen geven.",
+       "Nee, dat hoort bij Persvrijheid: vrij mogen publiceren."
+      ],
+      "uh": "Opiniërende functie: meningen geven."
+     },
+     {
+      "v": "Media die veel mensen tegelijk bereiken. Welk begrip past hierbij?",
+      "o": [
+       "Informerende functie",
+       "Censuur",
+       "Manipulatie",
+       "Massamedia"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Media die veel mensen tegelijk bereiken. Dat past bij Massamedia: bereiken velen tegelijk.",
+      "uo": [
+       "Nee, dat hoort bij Informerende functie: nieuws geven.",
+       "Nee, dat hoort bij Censuur: informatie tegenhouden.",
+       "Nee, dat hoort bij Manipulatie: mening bewust sturen.",
+       "Klopt: bereiken velen tegelijk."
+      ],
+      "uh": "Massamedia: bereiken velen tegelijk."
+     },
+     {
+      "v": "De verslaggever geeft de feiten weer, zonder eigen mening. Om welk begrip gaat het?",
+      "o": [
+       "Objectiviteit",
+       "Manipulatie",
+       "Informerende functie",
+       "Beeldvorming"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De verslaggever geeft de feiten weer, zonder eigen mening. Dat past bij Objectiviteit: onbevooroordeeld weergeven.",
+      "uo": [
+       "Klopt: onbevooroordeeld weergeven.",
+       "Nee, dat hoort bij Manipulatie: mening bewust sturen.",
+       "Nee, dat hoort bij Informerende functie: nieuws geven.",
+       "Nee, dat hoort bij Beeldvorming: het opgeroepen beeld."
+      ],
+      "uh": "Objectiviteit: onbevooroordeeld weergeven."
+     },
+     {
+      "v": "Een spelshow op tv is er vooral om je te vermaken. Welk begrip herken je hier?",
+      "o": [
+       "Informerende functie",
+       "Amuserende functie",
+       "Opiniërende functie",
+       "Reclame"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een spelshow op tv is er vooral om je te vermaken. Dat past bij Amuserende functie: het publiek vermaken.",
+      "uo": [
+       "Nee, dat hoort bij Informerende functie: nieuws geven.",
+       "Klopt: het publiek vermaken.",
+       "Nee, dat hoort bij Opiniërende functie: meningen geven.",
+       "Nee, dat hoort bij Reclame: zet aan tot kopen."
+      ],
+      "uh": "Amuserende functie: het publiek vermaken."
+     },
+     {
+      "v": "Het bewust sturen van iemands mening. Wat is hier aan de hand?",
+      "o": [
+       "Nepnieuws",
+       "Objectiviteit",
+       "Manipulatie",
+       "Massamedia"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het bewust sturen van iemands mening. Dat past bij Manipulatie: mening bewust sturen.",
+      "uo": [
+       "Nee, dat hoort bij Nepnieuws: nep als echt nieuws.",
+       "Nee, dat hoort bij Objectiviteit: onbevooroordeeld weergeven.",
+       "Klopt: mening bewust sturen.",
+       "Nee, dat hoort bij Massamedia: bereiken velen tegelijk."
+      ],
+      "uh": "Manipulatie: mening bewust sturen."
+     },
+     {
+      "v": "Televisie, kranten en nieuwssites bereiken miljoenen mensen tegelijk. Welk begrip past hierbij?",
+      "o": [
+       "Persvrijheid",
+       "Sociale media",
+       "Reclame",
+       "Massamedia"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Televisie, kranten en nieuwssites bereiken miljoenen mensen tegelijk. Dat past bij Massamedia: bereiken velen tegelijk.",
+      "uo": [
+       "Nee, dat hoort bij Persvrijheid: vrij mogen publiceren.",
+       "Nee, dat hoort bij Sociale media: netwerken om te delen.",
+       "Nee, dat hoort bij Reclame: zet aan tot kopen.",
+       "Klopt: bereiken velen tegelijk."
+      ],
+      "uh": "Massamedia: bereiken velen tegelijk."
+     },
+     {
+      "v": "Door telkens negatieve dingen te tonen stuurt de zender je mening. Om welk begrip gaat het?",
+      "o": [
+       "Manipulatie",
+       "Beeldvorming",
+       "Opiniërende functie",
+       "Censuur"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Door telkens negatieve dingen te tonen stuurt de zender je mening. Dat past bij Manipulatie: mening bewust sturen.",
+      "uo": [
+       "Klopt: mening bewust sturen.",
+       "Nee, dat hoort bij Beeldvorming: het opgeroepen beeld.",
+       "Nee, dat hoort bij Opiniërende functie: meningen geven.",
+       "Nee, dat hoort bij Censuur: informatie tegenhouden."
+      ],
+      "uh": "Manipulatie: mening bewust sturen."
+     },
+     {
+      "v": "Het vermaken van het publiek. Welk begrip herken je hier?",
+      "o": [
+       "Objectiviteit",
+       "Amuserende functie",
+       "Beeldvorming",
+       "Massamedia"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het vermaken van het publiek. Dat past bij Amuserende functie: het publiek vermaken.",
+      "uo": [
+       "Nee, dat hoort bij Objectiviteit: onbevooroordeeld weergeven.",
+       "Klopt: het publiek vermaken.",
+       "Nee, dat hoort bij Beeldvorming: het opgeroepen beeld.",
+       "Nee, dat hoort bij Massamedia: bereiken velen tegelijk."
+      ],
+      "uh": "Amuserende functie: het publiek vermaken."
+     },
+     {
+      "v": "Online netwerken waarop mensen zelf berichten delen. Wat is hier aan de hand?",
+      "o": [
+       "Amuserende functie",
+       "Massamedia",
+       "Sociale media",
+       "Manipulatie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Online netwerken waarop mensen zelf berichten delen. Dat past bij Sociale media: netwerken om te delen.",
+      "uo": [
+       "Nee, dat hoort bij Amuserende functie: het publiek vermaken.",
+       "Nee, dat hoort bij Massamedia: bereiken velen tegelijk.",
+       "Klopt: netwerken om te delen.",
+       "Nee, dat hoort bij Manipulatie: mening bewust sturen."
+      ],
+      "uh": "Sociale media: netwerken om te delen."
      }
     ],
     "begrippen": [
@@ -43108,6 +45540,462 @@ var VAKKEN_VMBO = [
        "Nee, het juiste antwoord is «Onbekend blijven»."
       ],
       "uh": "Onbekend blijven: Je identiteit blijft onbekend."
+     },
+     {
+      "v": "Het onbekend blijven van je identiteit. Welk begrip past hierbij?",
+      "o": [
+       "Algoritme",
+       "Privacy",
+       "Datalek",
+       "Anonimiteit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het onbekend blijven van je identiteit. Dat past bij Anonimiteit: onbekend blijven.",
+      "uo": [
+       "Nee, dat hoort bij Algoritme: rekenregels van een computer.",
+       "Nee, dat hoort bij Privacy: controle over je gegevens.",
+       "Nee, dat hoort bij Datalek: gegevens komen vrij.",
+       "Klopt: onbekend blijven."
+      ],
+      "uh": "Anonimiteit: onbekend blijven."
+     },
+     {
+      "v": "Criminaliteit via computers en internet. Om welk begrip gaat het?",
+      "o": [
+       "Cybercriminaliteit",
+       "Persoonsgegevens",
+       "Privacy",
+       "Anonimiteit"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Criminaliteit via computers en internet. Dat past bij Cybercriminaliteit: misdaad via internet.",
+      "uo": [
+       "Klopt: misdaad via internet.",
+       "Nee, dat hoort bij Persoonsgegevens: informatie over een persoon.",
+       "Nee, dat hoort bij Privacy: controle over je gegevens.",
+       "Nee, dat hoort bij Anonimiteit: onbekend blijven."
+      ],
+      "uh": "Cybercriminaliteit: misdaad via internet."
+     },
+     {
+      "v": "Je ziet online steeds meer berichten die passen bij wat je al vindt. Welk begrip herken je hier?",
+      "o": [
+       "Algoritme",
+       "Filterbubbel",
+       "Auteursrecht",
+       "Cybercriminaliteit"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je ziet online steeds meer berichten die passen bij wat je al vindt. Dat past bij Filterbubbel: alleen wat bij je past.",
+      "uo": [
+       "Nee, dat hoort bij Algoritme: rekenregels van een computer.",
+       "Klopt: alleen wat bij je past.",
+       "Nee, dat hoort bij Auteursrecht: recht van de maker.",
+       "Nee, dat hoort bij Cybercriminaliteit: misdaad via internet."
+      ],
+      "uh": "Filterbubbel: alleen wat bij je past."
+     },
+     {
+      "v": "Het akkoord geven voor het gebruik van je gegevens. Wat is hier aan de hand?",
+      "o": [
+       "Auteursrecht",
+       "Cybercriminaliteit",
+       "Toestemming",
+       "Digitalisering"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het akkoord geven voor het gebruik van je gegevens. Dat past bij Toestemming: akkoord voor gebruik.",
+      "uo": [
+       "Nee, dat hoort bij Auteursrecht: recht van de maker.",
+       "Nee, dat hoort bij Cybercriminaliteit: misdaad via internet.",
+       "Klopt: akkoord voor gebruik.",
+       "Nee, dat hoort bij Digitalisering: meer computers en internet."
+      ],
+      "uh": "Toestemming: akkoord voor gebruik."
+     },
+     {
+      "v": "Het per ongeluk vrijkomen van persoonsgegevens. Welk begrip past hierbij?",
+      "o": [
+       "Persoonsgegevens",
+       "Cybercriminaliteit",
+       "Algoritme",
+       "Datalek"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het per ongeluk vrijkomen van persoonsgegevens. Dat past bij Datalek: gegevens komen vrij.",
+      "uo": [
+       "Nee, dat hoort bij Persoonsgegevens: informatie over een persoon.",
+       "Nee, dat hoort bij Cybercriminaliteit: misdaad via internet.",
+       "Nee, dat hoort bij Algoritme: rekenregels van een computer.",
+       "Klopt: gegevens komen vrij."
+      ],
+      "uh": "Datalek: gegevens komen vrij."
+     },
+     {
+      "v": "Een app mag je gegevens pas gebruiken als jij akkoord geeft. Om welk begrip gaat het?",
+      "o": [
+       "Toestemming",
+       "Cybercriminaliteit",
+       "Auteursrecht",
+       "Digitalisering"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een app mag je gegevens pas gebruiken als jij akkoord geeft. Dat past bij Toestemming: akkoord voor gebruik.",
+      "uo": [
+       "Klopt: akkoord voor gebruik.",
+       "Nee, dat hoort bij Cybercriminaliteit: misdaad via internet.",
+       "Nee, dat hoort bij Auteursrecht: recht van de maker.",
+       "Nee, dat hoort bij Digitalisering: meer computers en internet."
+      ],
+      "uh": "Toestemming: akkoord voor gebruik."
+     },
+     {
+      "v": "Sommige mensen kunnen goed overweg met techniek, anderen helemaal niet. Welk begrip herken je hier?",
+      "o": [
+       "Digitalisering",
+       "Digitale kloof",
+       "Persoonsgegevens",
+       "Toestemming"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Sommige mensen kunnen goed overweg met techniek, anderen helemaal niet. Dat past bij Digitale kloof: kloof in digitale kennis.",
+      "uo": [
+       "Nee, dat hoort bij Digitalisering: meer computers en internet.",
+       "Klopt: kloof in digitale kennis.",
+       "Nee, dat hoort bij Persoonsgegevens: informatie over een persoon.",
+       "Nee, dat hoort bij Toestemming: akkoord voor gebruik."
+      ],
+      "uh": "Digitale kloof: kloof in digitale kennis."
+     },
+     {
+      "v": "Het recht om zelf te bepalen wat anderen over je weten. Wat is hier aan de hand?",
+      "o": [
+       "Cybercriminaliteit",
+       "Auteursrecht",
+       "Privacy",
+       "Anonimiteit"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het recht om zelf te bepalen wat anderen over je weten. Dat past bij Privacy: controle over je gegevens.",
+      "uo": [
+       "Nee, dat hoort bij Cybercriminaliteit: misdaad via internet.",
+       "Nee, dat hoort bij Auteursrecht: recht van de maker.",
+       "Klopt: controle over je gegevens.",
+       "Nee, dat hoort bij Anonimiteit: onbekend blijven."
+      ],
+      "uh": "Privacy: controle over je gegevens."
+     },
+     {
+      "v": "De maker van een liedje beslist wie het mag gebruiken. Welk begrip past hierbij?",
+      "o": [
+       "Toestemming",
+       "Privacy",
+       "Persoonsgegevens",
+       "Auteursrecht"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De maker van een liedje beslist wie het mag gebruiken. Dat past bij Auteursrecht: recht van de maker.",
+      "uo": [
+       "Nee, dat hoort bij Toestemming: akkoord voor gebruik.",
+       "Nee, dat hoort bij Privacy: controle over je gegevens.",
+       "Nee, dat hoort bij Persoonsgegevens: informatie over een persoon.",
+       "Klopt: recht van de maker."
+      ],
+      "uh": "Auteursrecht: recht van de maker."
+     },
+     {
+      "v": "Jij bepaalt zelf wie wat over je te weten komt. Om welk begrip gaat het?",
+      "o": [
+       "Privacy",
+       "Persoonsgegevens",
+       "Digitale kloof",
+       "Algoritme"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Jij bepaalt zelf wie wat over je te weten komt. Dat past bij Privacy: controle over je gegevens.",
+      "uo": [
+       "Klopt: controle over je gegevens.",
+       "Nee, dat hoort bij Persoonsgegevens: informatie over een persoon.",
+       "Nee, dat hoort bij Digitale kloof: kloof in digitale kennis.",
+       "Nee, dat hoort bij Algoritme: rekenregels van een computer."
+      ],
+      "uh": "Privacy: controle over je gegevens."
+     },
+     {
+      "v": "Een oplichter steelt via internet geld van je rekening. Welk begrip herken je hier?",
+      "o": [
+       "Persoonsgegevens",
+       "Cybercriminaliteit",
+       "Privacy",
+       "Anonimiteit"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een oplichter steelt via internet geld van je rekening. Dat past bij Cybercriminaliteit: misdaad via internet.",
+      "uo": [
+       "Nee, dat hoort bij Persoonsgegevens: informatie over een persoon.",
+       "Klopt: misdaad via internet.",
+       "Nee, dat hoort bij Privacy: controle over je gegevens.",
+       "Nee, dat hoort bij Anonimiteit: onbekend blijven."
+      ],
+      "uh": "Cybercriminaliteit: misdaad via internet."
+     },
+     {
+      "v": "Het verschil tussen wie wel en niet met techniek overweg kan. Wat is hier aan de hand?",
+      "o": [
+       "Datalek",
+       "Digitalisering",
+       "Digitale kloof",
+       "Sociale media"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het verschil tussen wie wel en niet met techniek overweg kan. Dat past bij Digitale kloof: kloof in digitale kennis.",
+      "uo": [
+       "Nee, dat hoort bij Datalek: gegevens komen vrij.",
+       "Nee, dat hoort bij Digitalisering: meer computers en internet.",
+       "Klopt: kloof in digitale kennis.",
+       "Nee, dat hoort bij Sociale media: netwerken om te delen."
+      ],
+      "uh": "Digitale kloof: kloof in digitale kennis."
+     },
+     {
+      "v": "Het alleen zien van informatie die bij je past. Welk begrip past hierbij?",
+      "o": [
+       "Cybercriminaliteit",
+       "Algoritme",
+       "Auteursrecht",
+       "Filterbubbel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het alleen zien van informatie die bij je past. Dat past bij Filterbubbel: alleen wat bij je past.",
+      "uo": [
+       "Nee, dat hoort bij Cybercriminaliteit: misdaad via internet.",
+       "Nee, dat hoort bij Algoritme: rekenregels van een computer.",
+       "Nee, dat hoort bij Auteursrecht: recht van de maker.",
+       "Klopt: alleen wat bij je past."
+      ],
+      "uh": "Filterbubbel: alleen wat bij je past."
+     },
+     {
+      "v": "Door een fout komen de gegevens van klanten op straat te liggen. Om welk begrip gaat het?",
+      "o": [
+       "Datalek",
+       "Auteursrecht",
+       "Digitale kloof",
+       "Anonimiteit"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Door een fout komen de gegevens van klanten op straat te liggen. Dat past bij Datalek: gegevens komen vrij.",
+      "uo": [
+       "Klopt: gegevens komen vrij.",
+       "Nee, dat hoort bij Auteursrecht: recht van de maker.",
+       "Nee, dat hoort bij Digitale kloof: kloof in digitale kennis.",
+       "Nee, dat hoort bij Anonimiteit: onbekend blijven."
+      ],
+      "uh": "Datalek: gegevens komen vrij."
+     },
+     {
+      "v": "Informatie die over een persoon gaat. Welk begrip herken je hier?",
+      "o": [
+       "Privacy",
+       "Persoonsgegevens",
+       "Filterbubbel",
+       "Algoritme"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Informatie die over een persoon gaat. Dat past bij Persoonsgegevens: informatie over een persoon.",
+      "uo": [
+       "Nee, dat hoort bij Privacy: controle over je gegevens.",
+       "Klopt: informatie over een persoon.",
+       "Nee, dat hoort bij Filterbubbel: alleen wat bij je past.",
+       "Nee, dat hoort bij Algoritme: rekenregels van een computer."
+      ],
+      "uh": "Persoonsgegevens: informatie over een persoon."
+     },
+     {
+      "v": "Je naam, adres en geboortedatum staan in een bestand. Wat is hier aan de hand?",
+      "o": [
+       "Algoritme",
+       "Privacy",
+       "Persoonsgegevens",
+       "Sociale media"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je naam, adres en geboortedatum staan in een bestand. Dat past bij Persoonsgegevens: informatie over een persoon.",
+      "uo": [
+       "Nee, dat hoort bij Algoritme: rekenregels van een computer.",
+       "Nee, dat hoort bij Privacy: controle over je gegevens.",
+       "Klopt: informatie over een persoon.",
+       "Nee, dat hoort bij Sociale media: netwerken om te delen."
+      ],
+      "uh": "Persoonsgegevens: informatie over een persoon."
+     },
+     {
+      "v": "Het steeds meer gebruiken van computers en internet. Welk begrip past hierbij?",
+      "o": [
+       "Datalek",
+       "Auteursrecht",
+       "Anonimiteit",
+       "Digitalisering"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het steeds meer gebruiken van computers en internet. Dat past bij Digitalisering: meer computers en internet.",
+      "uo": [
+       "Nee, dat hoort bij Datalek: gegevens komen vrij.",
+       "Nee, dat hoort bij Auteursrecht: recht van de maker.",
+       "Nee, dat hoort bij Anonimiteit: onbekend blijven.",
+       "Klopt: meer computers en internet."
+      ],
+      "uh": "Digitalisering: meer computers en internet."
+     },
+     {
+      "v": "Online weet niemand wie je echt bent. Om welk begrip gaat het?",
+      "o": [
+       "Anonimiteit",
+       "Privacy",
+       "Sociale media",
+       "Toestemming"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Online weet niemand wie je echt bent. Dat past bij Anonimiteit: onbekend blijven.",
+      "uo": [
+       "Klopt: onbekend blijven.",
+       "Nee, dat hoort bij Privacy: controle over je gegevens.",
+       "Nee, dat hoort bij Sociale media: netwerken om te delen.",
+       "Nee, dat hoort bij Toestemming: akkoord voor gebruik."
+      ],
+      "uh": "Anonimiteit: onbekend blijven."
+     },
+     {
+      "v": "Op online netwerken deel je berichten en foto's met anderen. Welk begrip herken je hier?",
+      "o": [
+       "Filterbubbel",
+       "Sociale media",
+       "Privacy",
+       "Toestemming"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Op online netwerken deel je berichten en foto's met anderen. Dat past bij Sociale media: netwerken om te delen.",
+      "uo": [
+       "Nee, dat hoort bij Filterbubbel: alleen wat bij je past.",
+       "Klopt: netwerken om te delen.",
+       "Nee, dat hoort bij Privacy: controle over je gegevens.",
+       "Nee, dat hoort bij Toestemming: akkoord voor gebruik."
+      ],
+      "uh": "Sociale media: netwerken om te delen."
+     },
+     {
+      "v": "Een set regels waarmee een computer keuzes maakt. Wat is hier aan de hand?",
+      "o": [
+       "Persoonsgegevens",
+       "Datalek",
+       "Algoritme",
+       "Digitalisering"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een set regels waarmee een computer keuzes maakt. Dat past bij Algoritme: rekenregels van een computer.",
+      "uo": [
+       "Nee, dat hoort bij Persoonsgegevens: informatie over een persoon.",
+       "Nee, dat hoort bij Datalek: gegevens komen vrij.",
+       "Klopt: rekenregels van een computer.",
+       "Nee, dat hoort bij Digitalisering: meer computers en internet."
+      ],
+      "uh": "Algoritme: rekenregels van een computer."
+     },
+     {
+      "v": "Steeds meer gaat via de computer, app en internet. Welk begrip past hierbij?",
+      "o": [
+       "Sociale media",
+       "Digitale kloof",
+       "Datalek",
+       "Digitalisering"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Steeds meer gaat via de computer, app en internet. Dat past bij Digitalisering: meer computers en internet.",
+      "uo": [
+       "Nee, dat hoort bij Sociale media: netwerken om te delen.",
+       "Nee, dat hoort bij Digitale kloof: kloof in digitale kennis.",
+       "Nee, dat hoort bij Datalek: gegevens komen vrij.",
+       "Klopt: meer computers en internet."
+      ],
+      "uh": "Digitalisering: meer computers en internet."
+     },
+     {
+      "v": "Een set rekenregels bepaalt welke video je als volgende ziet. Om welk begrip gaat het?",
+      "o": [
+       "Algoritme",
+       "Filterbubbel",
+       "Cybercriminaliteit",
+       "Toestemming"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een set rekenregels bepaalt welke video je als volgende ziet. Dat past bij Algoritme: rekenregels van een computer.",
+      "uo": [
+       "Klopt: rekenregels van een computer.",
+       "Nee, dat hoort bij Filterbubbel: alleen wat bij je past.",
+       "Nee, dat hoort bij Cybercriminaliteit: misdaad via internet.",
+       "Nee, dat hoort bij Toestemming: akkoord voor gebruik."
+      ],
+      "uh": "Algoritme: rekenregels van een computer."
+     },
+     {
+      "v": "Online netwerken om berichten te delen. Welk begrip herken je hier?",
+      "o": [
+       "Datalek",
+       "Sociale media",
+       "Algoritme",
+       "Digitale kloof"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Online netwerken om berichten te delen. Dat past bij Sociale media: netwerken om te delen.",
+      "uo": [
+       "Nee, dat hoort bij Datalek: gegevens komen vrij.",
+       "Klopt: netwerken om te delen.",
+       "Nee, dat hoort bij Algoritme: rekenregels van een computer.",
+       "Nee, dat hoort bij Digitale kloof: kloof in digitale kennis."
+      ],
+      "uh": "Sociale media: netwerken om te delen."
+     },
+     {
+      "v": "Het recht van een maker op zijn eigen werk. Wat is hier aan de hand?",
+      "o": [
+       "Persoonsgegevens",
+       "Privacy",
+       "Auteursrecht",
+       "Toestemming"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het recht van een maker op zijn eigen werk. Dat past bij Auteursrecht: recht van de maker.",
+      "uo": [
+       "Nee, dat hoort bij Persoonsgegevens: informatie over een persoon.",
+       "Nee, dat hoort bij Privacy: controle over je gegevens.",
+       "Klopt: recht van de maker.",
+       "Nee, dat hoort bij Toestemming: akkoord voor gebruik."
+      ],
+      "uh": "Auteursrecht: recht van de maker."
      }
     ],
     "begrippen": [
