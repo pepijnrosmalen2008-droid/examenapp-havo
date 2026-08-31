@@ -204,6 +204,18 @@ export function expandLeerdoel(spec) {
       if (!uh) { const ans = String(o[q.c] || '').trim(); uh = (ans && u && !u.toLowerCase().startsWith(ans.toLowerCase().slice(0, 10))) ? `${ans}: ${u}` : u; }
       return { v: q.v, o, c: q.c, d: q.d, u, uo, uh };
     });
+    // Positiebalans: verdeel het juiste antwoord round-robin over 0..3 zodat geen
+    // positie oververtegenwoordigd is (poort tegen positie-bias). De opties en de
+    // per-optie-uitleg (uo) verhuizen mee, zodat alles gekoppeld blijft. In de app
+    // worden opties bij het tonen sowieso nog eens geschud, dus dit is puur hygiëne.
+    sv = sv.map((q, i) => {
+      const t = i % 4;
+      if (q.c === t) return q;
+      const o = q.o.slice(), uo = q.uo.slice();
+      [o[q.c], o[t]] = [o[t], o[q.c]];
+      [uo[q.c], uo[t]] = [uo[t], uo[q.c]];
+      return { ...q, c: t, o, uo };
+    });
   } else {
     const bank = balance(genBank(spec.concepten), spec.target || 26);
     const toepas = (spec.toepas || []).map(q => ({ ...q }));

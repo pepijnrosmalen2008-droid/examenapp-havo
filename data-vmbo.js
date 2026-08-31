@@ -23,7 +23,223 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is een feit?",
+      "o": [
+       "iets wat te controleren is",
+       "iemands persoonlijke oordeel",
+       "een vraag",
+       "een grap"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een feit is controleerbaar en waar voor iedereen.",
+      "uo": [
+       "Klopt: een feit is controleerbaar en waar voor iedereen.",
+       "Dat is juist een mening.",
+       "Een vraag is geen feit.",
+       "Een grap is geen feit."
+      ],
+      "uh": "Feit = controleerbaar en waar. Mening = persoonlijk oordeel."
+     },
+     {
+      "v": "'Deze film is de beste van het jaar' is een...",
+      "o": [
+       "feit",
+       "mening",
+       "vraag",
+       "opsomming"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "\"de beste\" is een persoonlijk oordeel, dus een mening.",
+      "uo": [
+       "Een feit is controleerbaar; \"de beste\" is een oordeel.",
+       "Klopt: \"de beste\" is een persoonlijk oordeel, dus een mening.",
+       "Het is geen vraag.",
+       "Het is geen opsomming."
+      ],
+      "uh": "mening: \"de beste\" is een persoonlijk oordeel, dus een mening."
+     },
+     {
+      "v": "'Amsterdam is de hoofdstad van Nederland' is een...",
+      "o": [
+       "mening",
+       "argument",
+       "feit",
+       "grap"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Dit is te controleren en waar, dus een feit.",
+      "uo": [
+       "Het is geen oordeel, dus geen mening.",
+       "Een argument onderbouwt een mening; dit doet dat niet.",
+       "Klopt: dit is te controleren en waar, dus een feit.",
+       "Het is geen grap."
+      ],
+      "uh": "feit: Dit is te controleren en waar, dus een feit."
+     },
+     {
+      "v": "Wat is de hoofdzaak in een verhaal?",
+      "o": [
+       "een klein detail",
+       "de titel",
+       "een voorbeeld",
+       "de belangrijkste informatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De hoofdzaak is de belangrijkste informatie.",
+      "uo": [
+       "Een klein detail is juist een bijzaak.",
+       "De titel is niet de hoofdzaak van de inhoud.",
+       "Een voorbeeld is meestal een bijzaak.",
+       "Klopt: de hoofdzaak is de belangrijkste informatie."
+      ],
+      "uh": "de belangrijkste informatie: De hoofdzaak is de belangrijkste informatie."
+     },
+     {
+      "v": "Waar let je bij luisteren als eerste op?",
+      "o": [
+       "de hoofdgedachte",
+       "elk woord",
+       "de spelling",
+       "de opmaak"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Pak eerst de hoofdgedachte.",
+      "uo": [
+       "Klopt: pak eerst de hoofdgedachte.",
+       "Elk woord verstaan hoeft niet.",
+       "Spelling speelt bij luisteren geen rol.",
+       "Opmaak hoor je niet."
+      ],
+      "uh": "de hoofdgedachte: Pak eerst de hoofdgedachte."
+     },
+     {
+      "v": "Een spreker wil jouw mening veranderen. Zijn doel is...",
+      "o": [
+       "informeren",
+       "overtuigen",
+       "amuseren",
+       "instrueren"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Je mening willen veranderen is overtuigen.",
+      "uo": [
+       "Informeren is alleen uitleggen, niet je mening veranderen.",
+       "Klopt: je mening willen veranderen is overtuigen.",
+       "Amuseren is vermaken.",
+       "Instrueren is stap-voor-stap uitleggen hoe iets moet."
+      ],
+      "uh": "overtuigen: Je mening willen veranderen is overtuigen."
+     },
+     {
+      "v": "Wat is een argument?",
+      "o": [
+       "een vraag",
+       "een controleerbaar feit",
+       "een reden die een mening ondersteunt",
+       "een titel"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een argument onderbouwt een mening met een reden.",
+      "uo": [
+       "Een vraag onderbouwt niets.",
+       "Een feit staat los; een argument steunt een mening.",
+       "Klopt: een argument onderbouwt een mening met een reden.",
+       "Een titel is geen argument."
+      ],
+      "uh": "een reden die een mening ondersteunt: Een argument onderbouwt een mening met een reden."
+     },
+     {
+      "v": "Wat is een bijzaak?",
+      "o": [
+       "de kern",
+       "het onderwerp",
+       "de conclusie",
+       "een minder belangrijk detail"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een bijzaak is een minder belangrijk detail.",
+      "uo": [
+       "De kern is juist de hoofdzaak.",
+       "Het onderwerp is de kern.",
+       "De conclusie is geen bijzaak.",
+       "Klopt: een bijzaak is een minder belangrijk detail."
+      ],
+      "uh": "een minder belangrijk detail: Een bijzaak is een minder belangrijk detail."
+     },
+     {
+      "v": "Een cabaretier wil je laten lachen. Zijn doel is...",
+      "o": [
+       "amuseren",
+       "overtuigen",
+       "informeren",
+       "instrueren"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Laten lachen is amuseren (vermaken).",
+      "uo": [
+       "Klopt: laten lachen is amuseren (vermaken).",
+       "Overtuigen is je mening veranderen.",
+       "Informeren is uitleggen.",
+       "Instrueren is uitleggen hoe iets moet."
+      ],
+      "uh": "amuseren: Laten lachen is amuseren (vermaken)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Feit",
+      "d": "iets wat te controleren en waar is"
+     },
+     {
+      "t": "Mening",
+      "d": "een persoonlijk oordeel"
+     },
+     {
+      "t": "Hoofdzaak",
+      "d": "de belangrijkste informatie"
+     },
+     {
+      "t": "Bijzaak",
+      "d": "een minder belangrijk detail"
+     },
+     {
+      "t": "Argument",
+      "d": "een reden die een mening ondersteunt"
+     },
+     {
+      "t": "Standpunt",
+      "d": "de mening die iemand verdedigt"
+     },
+     {
+      "t": "Spreekdoel",
+      "d": "wat de spreker wil bereiken"
+     },
+     {
+      "t": "Informeren",
+      "d": "iets uitleggen of vertellen"
+     },
+     {
+      "t": "Overtuigen",
+      "d": "iemands mening willen veranderen"
+     },
+     {
+      "t": "Amuseren",
+      "d": "het publiek vermaken"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>luisteren en kijken</strong> pak je de <strong>hoofdgedachte</strong> en scheid je <strong>feiten</strong> van <strong>meningen</strong>. Je let ook op het <strong>doel</strong> van de spreker: informeren, overtuigen of amuseren.</div><div class=\"sam-head\">1. Feit en mening</div><p>Een <strong>feit</strong> is te controleren en waar voor iedereen (\"Amsterdam is de hoofdstad\"). Een <strong>mening</strong> is een persoonlijk oordeel (\"Dit is de mooiste stad\"). Wie wil overtuigen, mengt vaak feiten en meningen; leer ze uit elkaar te halen.</p><div class=\"sam-head\">2. Hoofdzaken en het doel van de spreker</div><p>De <strong>hoofdzaak</strong> is de belangrijkste informatie; een <strong>bijzaak</strong> is een minder belangrijk detail. Let ook op het <strong>spreekdoel</strong>: wil iemand <em>informeren</em> (uitleggen), <em>overtuigen</em> (jouw mening veranderen) of <em>amuseren</em> (vermaken)? Een <strong>argument</strong> is een reden die een mening ondersteunt.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Feit</div><div class=\"sam-definitie-body\">iets wat te controleren en waar is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Mening</div><div class=\"sam-definitie-body\">een persoonlijk oordeel.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hoofdzaak</div><div class=\"sam-definitie-body\">de belangrijkste informatie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bijzaak</div><div class=\"sam-definitie-body\">een minder belangrijk detail.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Argument</div><div class=\"sam-definitie-body\">een reden die een mening ondersteunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Standpunt</div><div class=\"sam-definitie-body\">de mening die iemand verdedigt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Spreekdoel</div><div class=\"sam-definitie-body\">wat de spreker wil bereiken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Informeren</div><div class=\"sam-definitie-body\">iets uitleggen of vertellen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Overtuigen</div><div class=\"sam-definitie-body\">iemands mening willen veranderen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Amuseren</div><div class=\"sam-definitie-body\">het publiek vermaken.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Feit»</b> is controleerbaar en waar, terwijl <b>«Mening»</b> persoonlijk oordeel is. <b>«Hoofdzaak»</b> is het belangrijkste, terwijl <b>«Bijzaak»</b> minder belangrijk detail is. <b>«Argument»</b> is reden voor een mening, terwijl <b>«Feit»</b> controleerbaar en waar is. <b>«Standpunt»</b> is de verdedigde mening, terwijl <b>«Argument»</b> reden voor een mening is.</div>"
    },
    {
     "id": "B",
@@ -37,7 +253,196 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is formeel taalgebruik?",
+      "o": [
+       "nette, zakelijke taal",
+       "straattaal",
+       "dialect",
+       "afkortingen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Formeel is net en zakelijk.",
+      "uo": [
+       "Klopt: formeel is net en zakelijk.",
+       "Straattaal is juist informeel.",
+       "Dialect is geen formeel taalgebruik.",
+       "Afkortingen horen bij informele taal."
+      ],
+      "uh": "Formeel = net/zakelijk (onbekenden). Informeel = los (vrienden)."
+     },
+     {
+      "v": "Hoe spreek je meestal tegen je docent?",
+      "o": [
+       "informeel",
+       "formeel",
+       "in straattaal",
+       "met emoji"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Tegen een docent gebruik je nette, formele taal.",
+      "uo": [
+       "Informeel is voor vrienden.",
+       "Klopt: tegen een docent gebruik je nette, formele taal.",
+       "Straattaal past niet op school.",
+       "Emoji horen niet in gesproken taal."
+      ],
+      "uh": "formeel: Tegen een docent gebruik je nette, formele taal."
+     },
+     {
+      "v": "Wat is een standpunt?",
+      "o": [
+       "een vraag",
+       "een controleerbaar feit",
+       "een mening die je verdedigt",
+       "een voorbeeld"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een standpunt is de mening die je verdedigt.",
+      "uo": [
+       "Een vraag is geen standpunt.",
+       "Een feit staat los van een mening.",
+       "Klopt: een standpunt is de mening die je verdedigt.",
+       "Een voorbeeld onderbouwt, maar is geen standpunt."
+      ],
+      "uh": "een mening die je verdedigt: Een standpunt is de mening die je verdedigt."
+     },
+     {
+      "v": "Wat is een tegenargument?",
+      "o": [
+       "een reden voor jouw mening",
+       "een conclusie",
+       "een feit",
+       "een reden tegen een mening"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een tegenargument is een reden tegen een standpunt.",
+      "uo": [
+       "Een reden vóór je mening is juist een gewoon argument.",
+       "Een conclusie sluit af, maar is geen tegenargument.",
+       "Een feit is geen tegenargument.",
+       "Klopt: een tegenargument is een reden tegen een standpunt."
+      ],
+      "uh": "een reden tegen een mening: Een tegenargument is een reden tegen een standpunt."
+     },
+     {
+      "v": "Wat hoort bij een goed gesprek?",
+      "o": [
+       "naar de ander luisteren",
+       "door elkaar praten",
+       "de ander onderbreken",
+       "alleen zelf praten"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Goed luisteren hoort bij een goed gesprek.",
+      "uo": [
+       "Klopt: goed luisteren hoort bij een goed gesprek.",
+       "Door elkaar praten werkt juist niet.",
+       "Onderbreken stoort het gesprek.",
+       "Alleen zelf praten is geen gesprek."
+      ],
+      "uh": "naar de ander luisteren: Goed luisteren hoort bij een goed gesprek."
+     },
+     {
+      "v": "'Hoi, alles goed?' is...",
+      "o": [
+       "formeel",
+       "informeel",
+       "een standpunt",
+       "een feit"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Dit is losse, informele taal.",
+      "uo": [
+       "Formeel zou \"Goedendag, hoe gaat het met u?\" zijn.",
+       "Klopt: dit is losse, informele taal.",
+       "Het verdedigt geen mening.",
+       "Het is geen controleerbaar feit."
+      ],
+      "uh": "informeel: Dit is losse, informele taal."
+     },
+     {
+      "v": "Waarmee onderbouw je een mening?",
+      "o": [
+       "met stilte",
+       "met een grap",
+       "met argumenten",
+       "met een vraag"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Met argumenten (redenen) onderbouw je een mening.",
+      "uo": [
+       "Stilte overtuigt niet.",
+       "Een grap onderbouwt niets.",
+       "Klopt: met argumenten (redenen) onderbouw je een mening.",
+       "Een vraag onderbouwt geen mening."
+      ],
+      "uh": "Met argumenten (redenen) onderbouw je een mening."
+     },
+     {
+      "v": "Welke taal gebruik je in een sollicitatiegesprek?",
+      "o": [
+       "straattaal",
+       "alleen emoji",
+       "dialect",
+       "formele taal"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je gebruikt nette, formele taal.",
+      "uo": [
+       "Straattaal is te los voor een sollicitatie.",
+       "Emoji horen niet in gesproken taal.",
+       "Dialect past niet in een sollicitatie.",
+       "Klopt: je gebruikt nette, formele taal."
+      ],
+      "uh": "formele taal: Je gebruikt nette, formele taal."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Formeel",
+      "d": "net, zakelijk taalgebruik voor onbekenden"
+     },
+     {
+      "t": "Informeel",
+      "d": "gewoon, los taalgebruik tegen vrienden"
+     },
+     {
+      "t": "Register",
+      "d": "de stijl van taal die bij de situatie past"
+     },
+     {
+      "t": "Standpunt",
+      "d": "de mening die je verdedigt"
+     },
+     {
+      "t": "Argument",
+      "d": "een reden die je standpunt ondersteunt"
+     },
+     {
+      "t": "Tegenargument",
+      "d": "een reden tegen een standpunt"
+     },
+     {
+      "t": "Overtuigen",
+      "d": "de ander van je mening zien te winnen"
+     },
+     {
+      "t": "Actief luisteren",
+      "d": "echt luisteren en op de ander ingaan"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">In een gesprek kies je het juiste <strong>register</strong>: <strong>formeel</strong> (net, zakelijk) of <strong>informeel</strong> (gewoon, tegen vrienden). Je onderbouwt je <strong>standpunt</strong> met <strong>argumenten</strong> en luistert naar de ander.</div><div class=\"sam-head\">1. Register: formeel of informeel</div><p><strong>Formeel taalgebruik</strong> is net en zakelijk; dat gebruik je in een sollicitatiegesprek of tegen onbekenden (\"Zou u mij kunnen helpen?\"). <strong>Informeel taalgebruik</strong> is gewoon en losser, tegen vrienden (\"Hoi, alles goed?\"). Kies je register bij je publiek.</p><div class=\"sam-head\">2. Argumenteren in een gesprek</div><p>Een <strong>standpunt</strong> is de mening die je verdedigt. Je onderbouwt die met <strong>argumenten</strong> (redenen). Een <strong>tegenargument</strong> is een reden tegen een mening. In een goed gesprek laat je de ander uitspreken en luister je actief.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Formeel</div><div class=\"sam-definitie-body\">net, zakelijk taalgebruik voor onbekenden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Informeel</div><div class=\"sam-definitie-body\">gewoon, los taalgebruik tegen vrienden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Register</div><div class=\"sam-definitie-body\">de stijl van taal die bij de situatie past.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Standpunt</div><div class=\"sam-definitie-body\">de mening die je verdedigt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Argument</div><div class=\"sam-definitie-body\">een reden die je standpunt ondersteunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Tegenargument</div><div class=\"sam-definitie-body\">een reden tegen een standpunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Overtuigen</div><div class=\"sam-definitie-body\">de ander van je mening zien te winnen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Actief luisteren</div><div class=\"sam-definitie-body\">echt luisteren en op de ander ingaan.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Formeel»</b> is net en zakelijk, terwijl <b>«Informeel»</b> los, tegen vrienden is. <b>«Register»</b> is passende taalstijl, terwijl <b>«Formeel»</b> net en zakelijk is. <b>«Standpunt»</b> is verdedigde mening, terwijl <b>«Argument»</b> reden voor je mening is. <b>«Argument»</b> is reden voor je mening, terwijl <b>«Tegenargument»</b> reden tegen is.</div>"
    },
    {
     "id": "C",
@@ -53,7 +458,223 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is het doel van een reclametekst?",
+      "o": [
+       "aanzetten tot kopen",
+       "informeren",
+       "instrueren",
+       "amuseren"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Reclame wil je activeren, iets laten kopen of doen.",
+      "uo": [
+       "Klopt: reclame wil je activeren, iets laten kopen of doen.",
+       "Reclame geeft geen neutrale informatie.",
+       "Instrueren is uitleggen hoe iets moet.",
+       "Amuseren (vermaken) is niet het hoofddoel van reclame."
+      ],
+      "uh": "Doelen: informeren, overtuigen, instrueren, amuseren, activeren (reclame)."
+     },
+     {
+      "v": "Wat is het doel van een gebruiksaanwijzing?",
+      "o": [
+       "overtuigen",
+       "instrueren",
+       "amuseren",
+       "activeren"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Ze legt stap voor stap uit hoe iets moet (instrueren).",
+      "uo": [
+       "Een gebruiksaanwijzing verdedigt geen mening.",
+       "Klopt: ze legt stap voor stap uit hoe iets moet (instrueren).",
+       "Ze is niet bedoeld om te vermaken.",
+       "Ze zet niet aan tot kopen."
+      ],
+      "uh": "instrueren: Ze legt stap voor stap uit hoe iets moet (instrueren)."
+     },
+     {
+      "v": "Welk signaalwoord geeft een tegenstelling aan?",
+      "o": [
+       "omdat",
+       "bovendien",
+       "maar",
+       "dus"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "\"maar\" geeft een tegenstelling.",
+      "uo": [
+       "\"omdat\" geeft een reden.",
+       "\"bovendien\" is een opsomming.",
+       "Klopt: \"maar\" geeft een tegenstelling.",
+       "\"dus\" geeft een gevolg."
+      ],
+      "uh": "maar: \"maar\" geeft een tegenstelling."
+     },
+     {
+      "v": "Wat geeft het woord 'daarom' aan?",
+      "o": [
+       "een reden",
+       "een tegenstelling",
+       "een voorbeeld",
+       "een gevolg"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "\"daarom\" geeft een gevolg aan.",
+      "uo": [
+       "Een reden is \"omdat\".",
+       "Een tegenstelling is \"maar\".",
+       "Een voorbeeld is \"bijvoorbeeld\".",
+       "Klopt: \"daarom\" geeft een gevolg aan."
+      ],
+      "uh": "een gevolg: \"daarom\" geeft een gevolg aan."
+     },
+     {
+      "v": "Waar verwijst een verwijswoord als 'dat' meestal naar?",
+      "o": [
+       "iets wat eerder genoemd is",
+       "de titel",
+       "de schrijver",
+       "de lezer"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een verwijswoord wijst terug naar iets eerder genoemd.",
+      "uo": [
+       "Klopt: een verwijswoord wijst terug naar iets eerder genoemd.",
+       "Het verwijst niet standaard naar de titel.",
+       "Niet naar de schrijver.",
+       "Niet naar de lezer."
+      ],
+      "uh": "iets wat eerder genoemd is: Een verwijswoord wijst terug naar iets eerder genoemd."
+     },
+     {
+      "v": "Wat is de hoofdgedachte van een tekst?",
+      "o": [
+       "een klein detail",
+       "de belangrijkste boodschap",
+       "altijd de eerste zin",
+       "een voorbeeld"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De hoofdgedachte is de belangrijkste boodschap.",
+      "uo": [
+       "Een detail is geen hoofdgedachte.",
+       "Klopt: de hoofdgedachte is de belangrijkste boodschap.",
+       "De hoofdgedachte staat niet altijd vooraan.",
+       "Een voorbeeld is een detail."
+      ],
+      "uh": "de belangrijkste boodschap: De hoofdgedachte is de belangrijkste boodschap."
+     },
+     {
+      "v": "Wat is een alinea?",
+      "o": [
+       "de titel",
+       "een losse zin",
+       "een tekststuk met één deelonderwerp",
+       "een voetnoot"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een alinea behandelt één deelonderwerp.",
+      "uo": [
+       "De titel is geen alinea.",
+       "Een alinea is meer dan één losse zin.",
+       "Klopt: een alinea behandelt één deelonderwerp.",
+       "Een voetnoot staat los onderaan."
+      ],
+      "uh": "een tekststuk met één deelonderwerp: Een alinea behandelt één deelonderwerp."
+     },
+     {
+      "v": "Een betogende tekst wil vooral...",
+      "o": [
+       "informeren",
+       "amuseren",
+       "instrueren",
+       "overtuigen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een betoog wil je overtuigen van een mening.",
+      "uo": [
+       "Informeren geeft alleen feiten.",
+       "Amuseren is vermaken.",
+       "Instrueren legt uit hoe iets moet.",
+       "Klopt: een betoog wil je overtuigen van een mening."
+      ],
+      "uh": "overtuigen: Een betoog wil je overtuigen van een mening."
+     },
+     {
+      "v": "Wat leidt het woord 'bijvoorbeeld' in?",
+      "o": [
+       "een voorbeeld",
+       "een tegenstelling",
+       "een reden",
+       "een gevolg"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "\"bijvoorbeeld\" leidt een voorbeeld in.",
+      "uo": [
+       "Klopt: \"bijvoorbeeld\" leidt een voorbeeld in.",
+       "Een tegenstelling is \"maar\".",
+       "Een reden is \"omdat\".",
+       "Een gevolg is \"dus\"."
+      ],
+      "uh": "een voorbeeld: \"bijvoorbeeld\" leidt een voorbeeld in."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Tekstdoel",
+      "d": "wat de schrijver met de tekst wil bereiken"
+     },
+     {
+      "t": "Informerend",
+      "d": "een tekst die uitlegt met feiten"
+     },
+     {
+      "t": "Overtuigend",
+      "d": "een tekst die je mening wil veranderen (betoog)"
+     },
+     {
+      "t": "Instruerend",
+      "d": "een tekst die uitlegt hoe iets moet"
+     },
+     {
+      "t": "Activerend",
+      "d": "een tekst die je iets wil laten doen (reclame)"
+     },
+     {
+      "t": "Signaalwoord",
+      "d": "een woord dat het verband tussen zinnen toont"
+     },
+     {
+      "t": "Verwijswoord",
+      "d": "een woord dat terugwijst naar iets eerder genoemd"
+     },
+     {
+      "t": "Alinea",
+      "d": "een tekststuk met één deelonderwerp"
+     },
+     {
+      "t": "Kernzin",
+      "d": "de zin met de hoofdgedachte van een alinea"
+     },
+     {
+      "t": "Hoofdgedachte",
+      "d": "de belangrijkste boodschap van de tekst"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>leesvaardigheid</strong> herken je het <strong>tekstdoel</strong> (informeren, overtuigen, instrueren, amuseren) en gebruik je <strong>signaalwoorden</strong> en <strong>verwijswoorden</strong> om de samenhang te snappen.</div><div class=\"sam-head\">1. Tekstdoel en tekstsoort</div><p>Elke tekst heeft een <strong>doel</strong>: <em>informeren</em> (uitleggen, met feiten), <em>overtuigen</em> (een betoog), <em>instrueren</em> (uitleggen hoe iets moet) of <em>amuseren</em> (vermaken). Een reclame wil vooral <em>activeren</em>: je iets laten doen of kopen.</p><div class=\"sam-head\">2. Signaal- en verwijswoorden</div><p><strong>Signaalwoorden</strong> tonen het verband: tegenstelling (<em>maar</em>, <em>toch</em>), reden (<em>omdat</em>), gevolg (<em>daarom</em>, <em>dus</em>), voorbeeld (<em>bijvoorbeeld</em>). <strong>Verwijswoorden</strong> (zoals <em>dit</em>, <em>dat</em>, <em>hij</em>) verwijzen naar iets dat eerder is genoemd. Een <strong>alinea</strong> is een tekststuk met één deelonderwerp; de <strong>kernzin</strong> geeft de hoofdgedachte.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Tekstdoel</div><div class=\"sam-definitie-body\">wat de schrijver met de tekst wil bereiken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Informerend</div><div class=\"sam-definitie-body\">een tekst die uitlegt met feiten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Overtuigend</div><div class=\"sam-definitie-body\">een tekst die je mening wil veranderen (betoog).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Instruerend</div><div class=\"sam-definitie-body\">een tekst die uitlegt hoe iets moet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Activerend</div><div class=\"sam-definitie-body\">een tekst die je iets wil laten doen (reclame).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Signaalwoord</div><div class=\"sam-definitie-body\">een woord dat het verband tussen zinnen toont.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verwijswoord</div><div class=\"sam-definitie-body\">een woord dat terugwijst naar iets eerder genoemd.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Alinea</div><div class=\"sam-definitie-body\">een tekststuk met één deelonderwerp.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kernzin</div><div class=\"sam-definitie-body\">de zin met de hoofdgedachte van een alinea.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hoofdgedachte</div><div class=\"sam-definitie-body\">de belangrijkste boodschap van de tekst.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Informerend»</b> is uitleggen met feiten, terwijl <b>«Overtuigend»</b> mening veranderen is. <b>«Instruerend»</b> is stap voor stap, terwijl <b>«Informerend»</b> uitleggen met feiten is. <b>«Activerend»</b> is aanzetten tot doen, terwijl <b>«Overtuigend»</b> mening veranderen is. <b>«Signaalwoord»</b> is toont het verband, terwijl <b>«Verwijswoord»</b> wijst terug is.</div>"
    },
    {
     "id": "D",
@@ -68,7 +689,196 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Kies de juiste vorm: 'Hij ___ de bal.' (vangen)",
+      "o": [
+       "vangt",
+       "vangd",
+       "vang",
+       "vankt"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Hij/zij krijgt stam + t: hij vangt.",
+      "uo": [
+       "Klopt: hij/zij krijgt stam + t: hij vangt.",
+       "\"vangd\" is fout; bij hij komt -t, niet -d.",
+       "\"vang\" mist de -t bij hij.",
+       "\"vankt\" is een verkeerde stam."
+      ],
+      "uh": "Hij/zij/het = stam + t (hij werkt, hij vangt)."
+     },
+     {
+      "v": "Kies de juiste vorm: 'Ik ___ elke dag.' (werken)",
+      "o": [
+       "werkt",
+       "werk",
+       "werkd",
+       "werck"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De ik-vorm is de kale stam: ik werk.",
+      "uo": [
+       "\"werkt\" hoort bij hij/zij, niet bij ik.",
+       "Klopt: de ik-vorm is de kale stam: ik werk.",
+       "\"werkd\" bestaat niet.",
+       "\"werck\" is een verkeerde spelling."
+      ],
+      "uh": "Ik-vorm = kale stam, zonder -t of -d."
+     },
+     {
+      "v": "Wat is het voltooid deelwoord van 'werken'?",
+      "o": [
+       "gewerk",
+       "gewerkd",
+       "gewerkt",
+       "werkt"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De stam eindigt op k ('t kofschip), dus -t: gewerkt.",
+      "uo": [
+       "\"gewerk\" mist de uitgang.",
+       "\"gewerkd\" is fout; k vraagt om -t.",
+       "Klopt: de stam eindigt op k ('t kofschip), dus -t: gewerkt.",
+       "\"werkt\" mist het voorvoegsel ge-."
+      ],
+      "uh": "'t kofschip (t,k,f,s,ch,p) → -t, anders -d."
+     },
+     {
+      "v": "Wat is het voltooid deelwoord van 'voetballen'?",
+      "o": [
+       "gevoetbalt",
+       "voetbald",
+       "gevoetbal",
+       "gevoetbald"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De stam eindigt op l (niet in 't kofschip), dus -d.",
+      "uo": [
+       "\"gevoetbalt\" is fout; l zit niet in 't kofschip.",
+       "\"voetbald\" mist het voorvoegsel ge-.",
+       "\"gevoetbal\" mist de uitgang.",
+       "Klopt: de stam eindigt op l (niet in 't kofschip), dus -d."
+      ],
+      "uh": "gevoetbald: De stam eindigt op l (niet in 't kofschip), dus -d."
+     },
+     {
+      "v": "Kies: 'Hij ___ boos.' (worden)",
+      "o": [
+       "wordt",
+       "word",
+       "wort",
+       "worden"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Bij hij komt stam + t: hij wordt.",
+      "uo": [
+       "Klopt: bij hij komt stam + t: hij wordt.",
+       "\"word\" is de ik-vorm, niet de hij-vorm.",
+       "\"wort\" is een verkeerde spelling.",
+       "\"worden\" is het hele werkwoord."
+      ],
+      "uh": "ik word, hij wordt (stam word + t)."
+     },
+     {
+      "v": "Wat is de stam van een werkwoord?",
+      "o": [
+       "het hele werkwoord",
+       "het hele werkwoord min -en",
+       "de verleden tijd",
+       "het meervoud"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De stam is het hele werkwoord min -en.",
+      "uo": [
+       "Het hele werkwoord is de infinitief, niet de stam.",
+       "Klopt: de stam is het hele werkwoord min -en.",
+       "De verleden tijd is iets anders.",
+       "Het meervoud is geen stam."
+      ],
+      "uh": "het hele werkwoord min -en: De stam is het hele werkwoord min -en."
+     },
+     {
+      "v": "Waarmee begint een goede tekst?",
+      "o": [
+       "de kern",
+       "het slot",
+       "de inleiding",
+       "de conclusie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een tekst opent met de inleiding.",
+      "uo": [
+       "De kern komt na de inleiding.",
+       "Het slot komt aan het eind.",
+       "Klopt: een tekst opent met de inleiding.",
+       "De conclusie hoort bij het slot."
+      ],
+      "uh": "de inleiding: Een tekst opent met de inleiding."
+     },
+     {
+      "v": "In welk deel vat je samen en sluit je af?",
+      "o": [
+       "de inleiding",
+       "de kern",
+       "de titel",
+       "het slot"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "In het slot vat je samen en sluit je af.",
+      "uo": [
+       "De inleiding opent juist.",
+       "In de kern werk je uit, je vat nog niet samen.",
+       "De titel vat niet samen.",
+       "Klopt: in het slot vat je samen en sluit je af."
+      ],
+      "uh": "het slot: In het slot vat je samen en sluit je af."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Stam",
+      "d": "het hele werkwoord min -en (werken → werk)"
+     },
+     {
+      "t": "Ik-vorm",
+      "d": "de kale stam (ik werk)"
+     },
+     {
+      "t": "Stam plus t",
+      "d": "de vorm bij hij/zij/het (hij werkt)"
+     },
+     {
+      "t": "'t Kofschip",
+      "d": "ezelsbruggetje voor -t of -d in het voltooid deelwoord"
+     },
+     {
+      "t": "Voltooid deelwoord",
+      "d": "de ge-vorm van het werkwoord (gewerkt, gevoetbald)"
+     },
+     {
+      "t": "Inleiding",
+      "d": "het begin van een tekst, waar je het onderwerp opent"
+     },
+     {
+      "t": "Kern",
+      "d": "het middendeel waarin je het onderwerp uitwerkt"
+     },
+     {
+      "t": "Slot",
+      "d": "het einde, waarin je samenvat en afsluit"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>schrijven</strong> let je op de <strong>werkwoordspelling</strong> (stam, stam+t, 't kofschip) en op de <strong>opbouw</strong>: inleiding, kern en slot.</div><div class=\"sam-head\">1. Werkwoordspelling</div><p>De <strong>stam</strong> is het hele werkwoord min <em>-en</em> (werken → werk). De <strong>ik-vorm</strong> is de kale stam (ik werk). Bij <em>hij/zij/het</em> komt er een <strong>-t</strong> bij (hij werkt). Voor het <strong>voltooid deelwoord</strong> helpt <strong>'t kofschip</strong>: eindigt de stam op een letter uit 't kofschip (t, k, f, s, ch, p), dan schrijf je <em>-t</em> (gewerkt), anders <em>-d</em> (gevoetbald).</p><div class=\"sam-head\">2. Opbouw van een tekst</div><p>Een goede tekst heeft een <strong>inleiding</strong> (je opent en noemt het onderwerp), een <strong>kern</strong> (de uitwerking) en een <strong>slot</strong> (je vat samen en sluit af). Elke <strong>alinea</strong> behandelt één deelonderwerp.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stam</div><div class=\"sam-definitie-body\">het hele werkwoord min -en (werken → werk).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ik-vorm</div><div class=\"sam-definitie-body\">de kale stam (ik werk).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stam plus t</div><div class=\"sam-definitie-body\">de vorm bij hij/zij/het (hij werkt).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">'t Kofschip</div><div class=\"sam-definitie-body\">ezelsbruggetje voor -t of -d in het voltooid deelwoord.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Voltooid deelwoord</div><div class=\"sam-definitie-body\">de ge-vorm van het werkwoord (gewerkt, gevoetbald).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Inleiding</div><div class=\"sam-definitie-body\">het begin van een tekst, waar je het onderwerp opent.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kern</div><div class=\"sam-definitie-body\">het middendeel waarin je het onderwerp uitwerkt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Slot</div><div class=\"sam-definitie-body\">het einde, waarin je samenvat en afsluit.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Ik-vorm»</b> is kale stam, terwijl <b>«Stam»</b> werkwoord min -en is. <b>«Stam plus t»</b> is hij/zij + t, terwijl <b>«Ik-vorm»</b> kale stam is. <b>«'t Kofschip»</b> is t of d kiezen, terwijl <b>«Stam»</b> werkwoord min -en is. <b>«Voltooid deelwoord»</b> is de ge-vorm, terwijl <b>«'t Kofschip»</b> t of d kiezen is.</div>"
    },
    {
     "id": "E",
@@ -83,7 +893,200 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is het thema van een verhaal?",
+      "o": [
+       "het hoofdonderwerp of de boodschap",
+       "de plek waar het speelt",
+       "de schrijver",
+       "de titel"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het thema is het hoofdonderwerp of de boodschap.",
+      "uo": [
+       "Klopt: het thema is het hoofdonderwerp of de boodschap.",
+       "De plek is het decor, niet het thema.",
+       "De schrijver staat los van het thema.",
+       "De titel is niet per se het thema."
+      ],
+      "uh": "Thema = het onderwerp/de boodschap. Motief = terugkerend element."
+     },
+     {
+      "v": "Wat geldt bij het ik-perspectief?",
+      "o": [
+       "een buitenstaander vertelt",
+       "\"ik\" vertelt het verhaal",
+       "er is geen verteller",
+       "de lezer vertelt"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij het ik-perspectief vertelt \"ik\" het verhaal.",
+      "uo": [
+       "Dat is juist het hij/zij-perspectief.",
+       "Klopt: bij het ik-perspectief vertelt \"ik\" het verhaal.",
+       "Er is altijd een verteller.",
+       "De lezer is geen verteller."
+      ],
+      "uh": "\"ik\" vertelt het verhaal: Bij het ik-perspectief vertelt \"ik\" het verhaal."
+     },
+     {
+      "v": "Wie is de hoofdpersoon?",
+      "o": [
+       "een bijfiguur",
+       "de schrijver",
+       "het belangrijkste personage",
+       "de lezer"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De hoofdpersoon is het belangrijkste personage.",
+      "uo": [
+       "Een bijfiguur is juist minder belangrijk.",
+       "De schrijver staat buiten het verhaal.",
+       "Klopt: de hoofdpersoon is het belangrijkste personage.",
+       "De lezer is geen personage."
+      ],
+      "uh": "het belangrijkste personage: De hoofdpersoon is het belangrijkste personage."
+     },
+     {
+      "v": "Wat zorgt voor spanning?",
+      "o": [
+       "de titel",
+       "saaie beschrijvingen",
+       "de inhoudsopgave",
+       "je wilt weten hoe het afloopt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Spanning is de nieuwsgierigheid naar de afloop.",
+      "uo": [
+       "De titel alleen maakt geen spanning.",
+       "Saaie stukken doen spanning juist afnemen.",
+       "De inhoudsopgave geeft geen spanning.",
+       "Klopt: spanning is de nieuwsgierigheid naar de afloop."
+      ],
+      "uh": "je wilt weten hoe het afloopt: Spanning is de nieuwsgierigheid naar de afloop."
+     },
+     {
+      "v": "Wat is een cliffhanger?",
+      "o": [
+       "een spannend open einde",
+       "de samenvatting",
+       "de inleiding",
+       "de titel"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een cliffhanger is een spannend open einde van een hoofdstuk.",
+      "uo": [
+       "Klopt: een cliffhanger is een spannend open einde van een hoofdstuk.",
+       "Een samenvatting sluit juist netjes af.",
+       "De inleiding staat aan het begin.",
+       "De titel is geen cliffhanger."
+      ],
+      "uh": "een spannend open einde: Een cliffhanger is een spannend open einde van een hoofdstuk."
+     },
+     {
+      "v": "Wat is een genre?",
+      "o": [
+       "de schrijver",
+       "een soort verhaal, zoals thriller",
+       "de uitgever",
+       "het aantal bladzijden"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een genre is de soort verhaal (thriller, sciencefiction).",
+      "uo": [
+       "De schrijver is geen genre.",
+       "Klopt: een genre is de soort verhaal (thriller, sciencefiction).",
+       "De uitgever brengt het boek uit, dat is geen genre.",
+       "Het aantal bladzijden zegt niets over het genre."
+      ],
+      "uh": "een soort verhaal, zoals thriller: Een genre is de soort verhaal (thriller, sciencefiction)."
+     },
+     {
+      "v": "Wat geldt bij het hij/zij-perspectief?",
+      "o": [
+       "\"ik\" vertelt",
+       "er is geen verhaal",
+       "een buitenstaander vertelt over de personages",
+       "de lezer bepaalt de afloop"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een buitenstaander vertelt over de personages.",
+      "uo": [
+       "\"ik\" hoort bij het ik-perspectief.",
+       "Er is wel degelijk een verhaal.",
+       "Klopt: een buitenstaander vertelt over de personages.",
+       "De lezer bepaalt de afloop niet."
+      ],
+      "uh": "Een buitenstaander vertelt over de personages."
+     },
+     {
+      "v": "Wat is een motief in een verhaal?",
+      "o": [
+       "de bladzijde",
+       "de kaft",
+       "de prijs",
+       "een terugkerend element of idee"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een motief is een terugkerend element of idee.",
+      "uo": [
+       "Een bladzijde is geen motief.",
+       "De kaft is de buitenkant van het boek.",
+       "De prijs staat los van het verhaal.",
+       "Klopt: een motief is een terugkerend element of idee."
+      ],
+      "uh": "een terugkerend element of idee: Een motief is een terugkerend element of idee."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Ik-perspectief",
+      "d": "de verteller is \"ik\", een personage in het verhaal"
+     },
+     {
+      "t": "Hij-perspectief",
+      "d": "een buitenstaander vertelt over de personages"
+     },
+     {
+      "t": "Personage",
+      "d": "een figuur in het verhaal"
+     },
+     {
+      "t": "Hoofdpersoon",
+      "d": "het belangrijkste personage"
+     },
+     {
+      "t": "Thema",
+      "d": "het hoofdonderwerp of de boodschap van het verhaal"
+     },
+     {
+      "t": "Spanning",
+      "d": "de nieuwsgierigheid naar hoe het afloopt"
+     },
+     {
+      "t": "Cliffhanger",
+      "d": "een spannend open einde van een hoofdstuk"
+     },
+     {
+      "t": "Genre",
+      "d": "de soort verhaal, zoals thriller of sciencefiction"
+     },
+     {
+      "t": "Motief",
+      "d": "een terugkerend element of idee in het verhaal"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>fictie</strong> herken je het <strong>perspectief</strong> (wie vertelt), de <strong>personages</strong>, het <strong>thema</strong> en wat voor <strong>spanning</strong> zorgt.</div><div class=\"sam-head\">1. Vertelperspectief en personages</div><p>Bij het <strong>ik-perspectief</strong> vertelt \"ik\" het verhaal; bij het <strong>hij/zij-perspectief</strong> vertelt een buitenstaander over de personages. Een <strong>personage</strong> is een figuur in het verhaal; de <strong>hoofdpersoon</strong> is de belangrijkste.</p><div class=\"sam-head\">2. Thema, spanning en genre</div><p>Het <strong>thema</strong> is het hoofdonderwerp of de boodschap (bijvoorbeeld vriendschap). <strong>Spanning</strong> ontstaat als je wil weten hoe het afloopt; een <strong>cliffhanger</strong> is een spannend open einde. Het <strong>genre</strong> is de soort verhaal, zoals thriller of sciencefiction. Een <strong>motief</strong> is een terugkerend element of idee.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ik-perspectief</div><div class=\"sam-definitie-body\">de verteller is \"ik\", een personage in het verhaal.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hij-perspectief</div><div class=\"sam-definitie-body\">een buitenstaander vertelt over de personages.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Personage</div><div class=\"sam-definitie-body\">een figuur in het verhaal.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hoofdpersoon</div><div class=\"sam-definitie-body\">het belangrijkste personage.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Thema</div><div class=\"sam-definitie-body\">het hoofdonderwerp of de boodschap van het verhaal.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Spanning</div><div class=\"sam-definitie-body\">de nieuwsgierigheid naar hoe het afloopt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cliffhanger</div><div class=\"sam-definitie-body\">een spannend open einde van een hoofdstuk.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Genre</div><div class=\"sam-definitie-body\">de soort verhaal, zoals thriller of sciencefiction.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Motief</div><div class=\"sam-definitie-body\">een terugkerend element of idee in het verhaal.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Ik-perspectief»</b> is \"ik\" vertelt, terwijl <b>«Hij-perspectief»</b> buitenstaander vertelt is. <b>«Personage»</b> is figuur in het verhaal, terwijl <b>«Hoofdpersoon»</b> belangrijkste figuur is. <b>«Thema»</b> is hoofdonderwerp/boodschap, terwijl <b>«Motief»</b> terugkerend element is. <b>«Spanning»</b> is hoe loopt het af, terwijl <b>«Cliffhanger»</b> spannend open einde is.</div>"
    }
   ]
  },
@@ -113,7 +1116,250 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Welk woord geeft een tegenstelling aan?",
+      "o": [
+       "however",
+       "because",
+       "and",
+       "so"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«however» betekent echter en zet een tegenstelling neer.",
+      "uo": [
+       "Klopt: «however» betekent echter en zet een tegenstelling neer.",
+       "«because» betekent omdat: dat is een reden, geen tegenstelling.",
+       "«and» is een opsomming (en), geen tegenstelling.",
+       "«so» betekent dus: dat is een gevolg."
+      ],
+      "uh": "Tegenstelling: but, however, although. Reden: because. Gevolg: so, therefore."
+     },
+     {
+      "v": "Wat betekent 'although' in 'Although it was late, she kept working'?",
+      "o": [
+       "omdat",
+       "hoewel",
+       "daarom",
+       "totdat"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«although» betekent hoewel, ondanks dat het laat was.",
+      "uo": [
+       "«omdat» zou een reden zijn; «although» geeft juist een tegenstelling.",
+       "Klopt: «although» betekent hoewel, ondanks dat het laat was.",
+       "«daarom» is een gevolg (therefore), niet de betekenis hier.",
+       "«totdat» is until; dat past niet."
+      ],
+      "uh": "hoewel: «although» betekent hoewel, ondanks dat het laat was."
+     },
+     {
+      "v": "Wat betekent het signaalwoord 'therefore'?",
+      "o": [
+       "een reden",
+       "een voorbeeld",
+       "een gevolg",
+       "een tegenstelling"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«therefore» (daarom) geeft een gevolg aan.",
+      "uo": [
+       "Een reden wordt ingeleid met because (omdat).",
+       "Een voorbeeld leid je in met for example.",
+       "Klopt: «therefore» (daarom) geeft een gevolg aan.",
+       "Een tegenstelling is but of however."
+      ],
+      "uh": "een gevolg: «therefore» (daarom) geeft een gevolg aan."
+     },
+     {
+      "v": "Je zoekt snel één datum in een tekst. Welke strategie gebruik je?",
+      "o": [
+       "Skimmen",
+       "Alles vertalen",
+       "Intensief lezen",
+       "Scannen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Scannen is gericht zoeken naar één stukje informatie.",
+      "uo": [
+       "Skimmen is voor de hoofdlijn, niet voor één detail.",
+       "Alles vertalen is traag en onnodig voor één datum.",
+       "Intensief lezen kost veel tijd en is hier niet nodig.",
+       "Klopt: scannen is gericht zoeken naar één stukje informatie."
+      ],
+      "uh": "Scannen is gericht zoeken naar één stukje informatie."
+     },
+     {
+      "v": "Wat betekent 'because'?",
+      "o": [
+       "omdat",
+       "maar",
+       "bijvoorbeeld",
+       "daarna"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«because» betekent omdat en geeft een reden.",
+      "uo": [
+       "Klopt: «because» betekent omdat en geeft een reden.",
+       "«maar» is but (tegenstelling).",
+       "«bijvoorbeeld» is for example.",
+       "«daarna» is after that."
+      ],
+      "uh": "omdat: «because» betekent omdat en geeft een reden."
+     },
+     {
+      "v": "Welk woord leidt een voorbeeld in?",
+      "o": [
+       "however",
+       "for example",
+       "because",
+       "but"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«for example» leidt een voorbeeld in.",
+      "uo": [
+       "«however» is een tegenstelling (echter).",
+       "Klopt: «for example» leidt een voorbeeld in.",
+       "«because» geeft een reden (omdat).",
+       "«but» is een tegenstelling (maar)."
+      ],
+      "uh": "for example: «for example» leidt een voorbeeld in."
+     },
+     {
+      "v": "Wat doet de kernzin van een alinea?",
+      "o": [
+       "Hij geeft altijd een voorbeeld",
+       "Hij staat altijd in de titel",
+       "Hij geeft de hoofdgedachte",
+       "Hij noemt de schrijver"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De kernzin bevat de hoofdgedachte van de alinea.",
+      "uo": [
+       "Een voorbeeld is een detail, niet de kernzin.",
+       "De titel staat los van de alinea; de kernzin staat erin.",
+       "Klopt: de kernzin bevat de hoofdgedachte van de alinea.",
+       "De schrijver noemen doet de kernzin niet."
+      ],
+      "uh": "Hij geeft de hoofdgedachte: De kernzin bevat de hoofdgedachte van de alinea."
+     },
+     {
+      "v": "Wat betekent 'moreover'?",
+      "o": [
+       "hoewel",
+       "echter",
+       "omdat",
+       "bovendien"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«moreover» betekent bovendien en voegt iets toe.",
+      "uo": [
+       "«hoewel» is although (tegenstelling).",
+       "«echter» is however (tegenstelling).",
+       "«omdat» is because (reden).",
+       "Klopt: «moreover» betekent bovendien en voegt iets toe."
+      ],
+      "uh": "bovendien: «moreover» betekent bovendien en voegt iets toe."
+     },
+     {
+      "v": "Hoe pak je de hoofdgedachte van een tekst het snelst?",
+      "o": [
+       "Skimmen",
+       "Elk woord opzoeken",
+       "De tekst vertalen",
+       "Achteraan beginnen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Skimmen geeft snel de hoofdlijn.",
+      "uo": [
+       "Klopt: skimmen geeft snel de hoofdlijn.",
+       "Elk woord opzoeken kost veel te veel tijd.",
+       "Vertalen is traag en vaak niet nodig.",
+       "Achteraan beginnen helpt niet voor het overzicht."
+      ],
+      "uh": "Skimmen geeft snel de hoofdlijn."
+     },
+     {
+      "v": "Wat betekent 'while' in 'She read while he cooked'?",
+      "o": [
+       "nadat",
+       "terwijl",
+       "omdat",
+       "hoewel"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«while» betekent terwijl, op hetzelfde moment.",
+      "uo": [
+       "«nadat» is after; de dingen gebeuren hier tegelijk.",
+       "Klopt: «while» betekent terwijl, op hetzelfde moment.",
+       "«omdat» is because (reden).",
+       "«hoewel» is although (tegenstelling)."
+      ],
+      "uh": "terwijl: «while» betekent terwijl, op hetzelfde moment."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Skimmen",
+      "d": "snel en globaal lezen om de hoofdgedachte te pakken"
+     },
+     {
+      "t": "Scannen",
+      "d": "gericht zoeken naar één stukje informatie"
+     },
+     {
+      "t": "Intensief lezen",
+      "d": "nauwkeurig lezen omdat elk detail telt"
+     },
+     {
+      "t": "Kernzin",
+      "d": "de zin met de hoofdgedachte van een alinea"
+     },
+     {
+      "t": "But",
+      "d": "Engels voor \"maar\"; geeft een tegenstelling aan"
+     },
+     {
+      "t": "However",
+      "d": "Engels voor \"echter\"; geeft een tegenstelling aan"
+     },
+     {
+      "t": "Although",
+      "d": "Engels voor \"hoewel\"; geeft een tegenstelling aan"
+     },
+     {
+      "t": "Because",
+      "d": "Engels voor \"omdat\"; geeft een reden aan"
+     },
+     {
+      "t": "Therefore",
+      "d": "Engels voor \"daarom\"; geeft een gevolg aan"
+     },
+     {
+      "t": "For example",
+      "d": "Engels voor \"bijvoorbeeld\"; leidt een voorbeeld in"
+     },
+     {
+      "t": "Moreover",
+      "d": "Engels voor \"bovendien\"; voegt iets toe"
+     },
+     {
+      "t": "While",
+      "d": "Engels voor \"terwijl\"; geeft gelijktijdigheid aan"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>leesvaardigheid</strong> gebruik je strategieën als <strong>skimmen</strong> (globaal lezen) en <strong>scannen</strong> (gericht zoeken). <strong>Signaalwoorden</strong> (connectors) zoals <em>but</em>, <em>because</em> en <em>therefore</em> laten zien hoe zinnen samenhangen.</div><div class=\"sam-head\">1. Leesstrategieën</div><p>Je leest een tekst niet altijd woord voor woord. Met <strong>skimmen</strong> lees je snel en globaal om de hoofdgedachte te pakken. Met <strong>scannen</strong> zoek je gericht naar één ding, bijvoorbeeld een naam of datum. Bij <strong>intensief lezen</strong> lees je nauwkeurig omdat elk detail telt. De <strong>kernzin</strong> geeft de hoofdgedachte van een alinea en staat vaak vooraan of achteraan.</p><div class=\"sam-head\">2. Signaalwoorden (connectors)</div><p><strong>Signaalwoorden</strong> verbinden zinnen en verraden het verband. Een <strong>tegenstelling</strong>: <em>but</em> (maar), <em>however</em> (echter), <em>although</em> (hoewel). Een <strong>reden</strong>: <em>because</em> (omdat). Een <strong>gevolg</strong>: <em>so</em> (dus), <em>therefore</em> (daarom). Een <strong>opsomming</strong>: <em>and</em>, <em>moreover</em> (bovendien). Een <strong>voorbeeld</strong>: <em>for example</em> (bijvoorbeeld). Herken je het signaalwoord, dan snap je vaak de zin zonder alles te vertalen.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Skimmen</div><div class=\"sam-definitie-body\">snel en globaal lezen om de hoofdgedachte te pakken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Scannen</div><div class=\"sam-definitie-body\">gericht zoeken naar één stukje informatie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Intensief lezen</div><div class=\"sam-definitie-body\">nauwkeurig lezen omdat elk detail telt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kernzin</div><div class=\"sam-definitie-body\">de zin met de hoofdgedachte van een alinea.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">But</div><div class=\"sam-definitie-body\">Engels voor \"maar\"; geeft een tegenstelling aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">However</div><div class=\"sam-definitie-body\">Engels voor \"echter\"; geeft een tegenstelling aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Although</div><div class=\"sam-definitie-body\">Engels voor \"hoewel\"; geeft een tegenstelling aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Because</div><div class=\"sam-definitie-body\">Engels voor \"omdat\"; geeft een reden aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Therefore</div><div class=\"sam-definitie-body\">Engels voor \"daarom\"; geeft een gevolg aan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">For example</div><div class=\"sam-definitie-body\">Engels voor \"bijvoorbeeld\"; leidt een voorbeeld in.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Moreover</div><div class=\"sam-definitie-body\">Engels voor \"bovendien\"; voegt iets toe.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">While</div><div class=\"sam-definitie-body\">Engels voor \"terwijl\"; geeft gelijktijdigheid aan.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Skimmen»</b> is globaal lezen, terwijl <b>«Scannen»</b> gericht zoeken is. <b>«Intensief lezen»</b> is nauwkeurig lezen, terwijl <b>«Skimmen»</b> globaal lezen is. <b>«But»</b> is maar (tegenstelling), terwijl <b>«Because»</b> omdat (reden) is. <b>«However»</b> is echter (tegenstelling), terwijl <b>«Therefore»</b> daarom (gevolg) is.</div>"
    },
    {
     "id": "B",
@@ -127,7 +1373,246 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat betekent 'where'?",
+      "o": [
+       "waar",
+       "wanneer",
+       "waarom",
+       "wie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«where» vraagt naar een plaats (waar).",
+      "uo": [
+       "Klopt: «where» vraagt naar een plaats (waar).",
+       "«wanneer» is when.",
+       "«waarom» is why.",
+       "«wie» is who."
+      ],
+      "uh": "Vraagwoorden: who=wie, what=wat, where=waar, when=wanneer, why=waarom, how=hoe."
+     },
+     {
+      "v": "Iemand vraagt 'How much is it?'. Waar gaat de vraag over?",
+      "o": [
+       "de tijd",
+       "de prijs",
+       "de plaats",
+       "de reden"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«how much» vraagt hier naar de prijs.",
+      "uo": [
+       "Naar de tijd vraag je met when.",
+       "Klopt: «how much» vraagt hier naar de prijs.",
+       "Naar de plaats vraag je met where.",
+       "Naar de reden vraag je met why."
+      ],
+      "uh": "de prijs: «how much» vraagt hier naar de prijs."
+     },
+     {
+      "v": "Waar vraagt 'why' naar?",
+      "o": [
+       "een plaats",
+       "een tijd",
+       "een reden",
+       "een persoon"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«why» vraagt naar een reden (waarom).",
+      "uo": [
+       "Naar een plaats vraag je met where.",
+       "Naar een tijd vraag je met when.",
+       "Klopt: «why» vraagt naar een reden (waarom).",
+       "Naar een persoon vraag je met who."
+      ],
+      "uh": "een reden: «why» vraagt naar een reden (waarom)."
+     },
+     {
+      "v": "Wat betekent 'Could you repeat that?'",
+      "o": [
+       "Wat kost het?",
+       "Waar is het?",
+       "Hoe laat is het?",
+       "Kun je dat herhalen?"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je vraagt of iemand het nog eens zegt.",
+      "uo": [
+       "Dat is «How much is it?».",
+       "Dat zou «Where is it?» zijn.",
+       "Dat is «What time is it?».",
+       "Klopt: je vraagt of iemand het nog eens zegt."
+      ],
+      "uh": "Kun je dat herhalen?: Je vraagt of iemand het nog eens zegt."
+     },
+     {
+      "v": "Waar vraagt 'When does the film start?' naar?",
+      "o": [
+       "het tijdstip",
+       "de plaats",
+       "de prijs",
+       "de reden"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«when» vraagt naar het tijdstip.",
+      "uo": [
+       "Klopt: «when» vraagt naar het tijdstip.",
+       "De plaats vraag je met where.",
+       "De prijs vraag je met how much.",
+       "De reden vraag je met why."
+      ],
+      "uh": "het tijdstip: «when» vraagt naar het tijdstip."
+     },
+     {
+      "v": "Wat betekent 'who'?",
+      "o": [
+       "wat",
+       "wie",
+       "waar",
+       "hoe"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«who» vraagt naar een persoon (wie).",
+      "uo": [
+       "«wat» is what.",
+       "Klopt: «who» vraagt naar een persoon (wie).",
+       "«waar» is where.",
+       "«hoe» is how."
+      ],
+      "uh": "wie: «who» vraagt naar een persoon (wie)."
+     },
+     {
+      "v": "Wat doe je bij luisteren als eerste?",
+      "o": [
+       "Elk woord verstaan",
+       "De laatste zin onthouden",
+       "De hoofdgedachte pakken",
+       "De spelling controleren"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Pak eerst de hoofdgedachte, raad de rest.",
+      "uo": [
+       "Elk woord verstaan lukt bijna nooit en is niet nodig.",
+       "Alleen de laatste zin mist het geheel.",
+       "Klopt: pak eerst de hoofdgedachte, raad de rest.",
+       "Spelling speelt bij luisteren geen rol."
+      ],
+      "uh": "De hoofdgedachte pakken: Pak eerst de hoofdgedachte, raad de rest."
+     },
+     {
+      "v": "Waar vraagt 'how' naar?",
+      "o": [
+       "de prijs",
+       "de plaats",
+       "de persoon",
+       "de manier"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«how» vraagt naar de manier (hoe).",
+      "uo": [
+       "De prijs vraag je met how much.",
+       "De plaats vraag je met where.",
+       "De persoon vraag je met who.",
+       "Klopt: «how» vraagt naar de manier (hoe)."
+      ],
+      "uh": "de manier: «how» vraagt naar de manier (hoe)."
+     },
+     {
+      "v": "Wat betekent 'I don't understand'?",
+      "o": [
+       "Ik begrijp het niet",
+       "Ik ben het eens",
+       "Ik weet het al",
+       "Ik hoor je goed"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je zegt dat je het niet snapt.",
+      "uo": [
+       "Klopt: je zegt dat je het niet snapt.",
+       "«Eens zijn» is «I agree».",
+       "Dat zou «I already know» zijn.",
+       "Dat zou «I can hear you» zijn."
+      ],
+      "uh": "Ik begrijp het niet: Je zegt dat je het niet snapt."
+     },
+     {
+      "v": "Waar vraagt 'What time is it?' naar?",
+      "o": [
+       "de plaats",
+       "de tijd",
+       "de prijs",
+       "de reden"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je vraagt hoe laat het is (de tijd).",
+      "uo": [
+       "De plaats vraag je met where.",
+       "Klopt: je vraagt hoe laat het is (de tijd).",
+       "De prijs vraag je met how much.",
+       "De reden vraag je met why."
+      ],
+      "uh": "de tijd: Je vraagt hoe laat het is (de tijd)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Who",
+      "d": "Engels vraagwoord voor \"wie\"; vraagt naar een persoon"
+     },
+     {
+      "t": "What",
+      "d": "Engels vraagwoord voor \"wat\"; vraagt naar een ding"
+     },
+     {
+      "t": "Where",
+      "d": "Engels vraagwoord voor \"waar\"; vraagt naar een plaats"
+     },
+     {
+      "t": "When",
+      "d": "Engels vraagwoord voor \"wanneer\"; vraagt naar een tijd"
+     },
+     {
+      "t": "Why",
+      "d": "Engels vraagwoord voor \"waarom\"; vraagt naar een reden"
+     },
+     {
+      "t": "How",
+      "d": "Engels vraagwoord voor \"hoe\"; vraagt naar de manier"
+     },
+     {
+      "t": "How much",
+      "d": "Engels voor \"hoeveel\"; vraagt vaak naar de prijs"
+     },
+     {
+      "t": "Hoofdgedachte",
+      "d": "de kern van wat de spreker bedoelt"
+     },
+     {
+      "t": "Context",
+      "d": "de situatie eromheen die helpt woorden te raden"
+     },
+     {
+      "t": "Repeat",
+      "d": "Engels voor \"herhalen\""
+     },
+     {
+      "t": "Understand",
+      "d": "Engels voor \"begrijpen\""
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>luisteren</strong> pak je eerst de <strong>hoofdgedachte</strong> en laat je losse onbekende woorden los. <strong>Vraagwoorden</strong> zoals <em>who</em>, <em>where</em> en <em>why</em> vertellen waar een vraag naar zoekt.</div><div class=\"sam-head\">1. Vraagwoorden herkennen</div><p>Vraagwoorden sturen het antwoord: <em>who</em> (wie), <em>what</em> (wat), <em>where</em> (waar), <em>when</em> (wanneer), <em>why</em> (waarom), <em>how</em> (hoe) en <em>how much</em> (hoeveel). Hoor je het vraagwoord, dan weet je meteen of het om een persoon, plaats, tijd, reden of prijs gaat.</p><div class=\"sam-head\">2. Luisteren met een doel</div><p>Je hoeft niet elk woord te verstaan. Pak eerst de <strong>hoofdgedachte</strong> en gebruik de <strong>context</strong> om onbekende woorden te raden. Handige zinnen zijn <em>Could you repeat that?</em> (Kun je dat herhalen?) en <em>I don't understand</em> (Ik begrijp het niet).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Who</div><div class=\"sam-definitie-body\">Engels vraagwoord voor \"wie\"; vraagt naar een persoon.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">What</div><div class=\"sam-definitie-body\">Engels vraagwoord voor \"wat\"; vraagt naar een ding.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Where</div><div class=\"sam-definitie-body\">Engels vraagwoord voor \"waar\"; vraagt naar een plaats.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">When</div><div class=\"sam-definitie-body\">Engels vraagwoord voor \"wanneer\"; vraagt naar een tijd.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Why</div><div class=\"sam-definitie-body\">Engels vraagwoord voor \"waarom\"; vraagt naar een reden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">How</div><div class=\"sam-definitie-body\">Engels vraagwoord voor \"hoe\"; vraagt naar de manier.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">How much</div><div class=\"sam-definitie-body\">Engels voor \"hoeveel\"; vraagt vaak naar de prijs.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hoofdgedachte</div><div class=\"sam-definitie-body\">de kern van wat de spreker bedoelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Context</div><div class=\"sam-definitie-body\">de situatie eromheen die helpt woorden te raden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Repeat</div><div class=\"sam-definitie-body\">Engels voor \"herhalen\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Understand</div><div class=\"sam-definitie-body\">Engels voor \"begrijpen\".</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Who»</b> is wie (persoon), terwijl <b>«What»</b> wat (ding) is. <b>«Where»</b> is waar (plaats), terwijl <b>«When»</b> wanneer (tijd) is. <b>«Why»</b> is waarom (reden), terwijl <b>«How»</b> hoe (manier) is. <b>«How much»</b> is hoeveel (prijs), terwijl <b>«How»</b> hoe (manier) is.</div>"
    },
    {
     "id": "C",
@@ -141,7 +1626,223 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Kies de juiste vorm: 'Could you ___ me, please?'",
+      "o": [
+       "help",
+       "helping",
+       "helped",
+       "to help"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Na «could» komt het hele werkwoord zonder -ing of -ed.",
+      "uo": [
+       "Klopt: na «could» komt het hele werkwoord zonder -ing of -ed.",
+       "«helping» kan niet na could.",
+       "«helped» is verleden tijd en past niet na could.",
+       "«to help» is fout; could pakt het kale werkwoord."
+      ],
+      "uh": "Na could/may/would komt het hele werkwoord zonder -s, -ing of to."
+     },
+     {
+      "v": "Wat zeg je als je ergens binnenkomt?",
+      "o": [
+       "Goodbye",
+       "Hello",
+       "Sorry",
+       "Thanks"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«Hello» is een begroeting.",
+      "uo": [
+       "«Goodbye» zeg je juist bij weggaan.",
+       "Klopt: «Hello» is een begroeting.",
+       "«Sorry» is een verontschuldiging.",
+       "«Thanks» is bedanken."
+      ],
+      "uh": "Hello: «Hello» is een begroeting."
+     },
+     {
+      "v": "Waarvoor gebruik je 'Excuse me'?",
+      "o": [
+       "om te bedanken",
+       "om afscheid te nemen",
+       "om de aandacht te vragen",
+       "om te feliciteren"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Excuse me» vraagt beleefd de aandacht.",
+      "uo": [
+       "Bedanken is «Thank you».",
+       "Afscheid is «Goodbye».",
+       "Klopt: «Excuse me» vraagt beleefd de aandacht.",
+       "Feliciteren is «Congratulations»."
+      ],
+      "uh": "om de aandacht te vragen: «Excuse me» vraagt beleefd de aandacht."
+     },
+     {
+      "v": "Iemand bedankt je. Wat antwoord je?",
+      "o": [
+       "Hello",
+       "Please",
+       "Sorry",
+       "You're welcome"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«You're welcome» betekent graag gedaan.",
+      "uo": [
+       "«Hello» is een begroeting.",
+       "«Please» is alsjeblieft bij een verzoek.",
+       "«Sorry» is een verontschuldiging.",
+       "Klopt: «You're welcome» betekent graag gedaan."
+      ],
+      "uh": "You're welcome: «You're welcome» betekent graag gedaan."
+     },
+     {
+      "v": "Beleefd vragen: '___ I have a coffee, please?'",
+      "o": [
+       "May",
+       "Must",
+       "Should",
+       "Will"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "«May I» vraagt beleefd om toestemming.",
+      "uo": [
+       "Klopt: «May I» vraagt beleefd om toestemming.",
+       "«Must» betekent moeten; dat is geen beleefd verzoek.",
+       "«Should» betekent zou moeten (advies).",
+       "«Will» is toekomst, geen beleefd verzoek."
+      ],
+      "uh": "May: «May I» vraagt beleefd om toestemming."
+     },
+     {
+      "v": "Wat betekent 'How are you?'",
+      "o": [
+       "Hoe heet je?",
+       "Hoe gaat het?",
+       "Hoe oud ben je?",
+       "Waar woon je?"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je vraagt hoe het met iemand gaat.",
+      "uo": [
+       "«Hoe heet je?» is «What is your name?».",
+       "Klopt: je vraagt hoe het met iemand gaat.",
+       "«Hoe oud ben je?» is «How old are you?».",
+       "«Waar woon je?» is «Where do you live?»."
+      ],
+      "uh": "Hoe gaat het?: Je vraagt hoe het met iemand gaat."
+     },
+     {
+      "v": "Hoe verontschuldig je je?",
+      "o": [
+       "Well done",
+       "Thank you",
+       "I'm sorry",
+       "See you"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«I'm sorry» is sorry zeggen.",
+      "uo": [
+       "«Well done» is een compliment.",
+       "«Thank you» is bedanken.",
+       "Klopt: «I'm sorry» is sorry zeggen.",
+       "«See you» is afscheid nemen."
+      ],
+      "uh": "I'm sorry: «I'm sorry» is sorry zeggen."
+     },
+     {
+      "v": "Hoe neem je afscheid?",
+      "o": [
+       "Good morning",
+       "Here you are",
+       "Nice to meet you",
+       "See you later"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«See you later» is afscheid nemen.",
+      "uo": [
+       "«Good morning» is een begroeting.",
+       "«Here you are» zeg je bij aangeven.",
+       "«Nice to meet you» zeg je bij kennismaking.",
+       "Klopt: «See you later» is afscheid nemen."
+      ],
+      "uh": "See you later: «See you later» is afscheid nemen."
+     },
+     {
+      "v": "Wanneer zeg je 'Nice to meet you'?",
+      "o": [
+       "bij een eerste kennismaking",
+       "bij afscheid",
+       "als je boos bent",
+       "als je bedankt"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je zegt het als je iemand voor het eerst ontmoet.",
+      "uo": [
+       "Klopt: je zegt het als je iemand voor het eerst ontmoet.",
+       "Bij afscheid zeg je goodbye.",
+       "Boosheid past hier niet.",
+       "Bedanken is thank you."
+      ],
+      "uh": "bij een eerste kennismaking: Je zegt het als je iemand voor het eerst ontmoet."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Hello",
+      "d": "Engelse begroeting: hallo"
+     },
+     {
+      "t": "Goodbye",
+      "d": "Engels voor afscheid: tot ziens"
+     },
+     {
+      "t": "Nice to meet you",
+      "d": "zin bij een eerste kennismaking"
+     },
+     {
+      "t": "How are you",
+      "d": "Engels voor \"Hoe gaat het?\""
+     },
+     {
+      "t": "Excuse me",
+      "d": "zin om de aandacht te vragen"
+     },
+     {
+      "t": "I'm sorry",
+      "d": "zin om je te verontschuldigen"
+     },
+     {
+      "t": "Thank you",
+      "d": "Engels voor bedanken"
+     },
+     {
+      "t": "You're welcome",
+      "d": "antwoord op bedankt: graag gedaan"
+     },
+     {
+      "t": "Could you",
+      "d": "beleefd begin van een verzoek; daarna het hele werkwoord"
+     },
+     {
+      "t": "May I",
+      "d": "beleefd om toestemming vragen"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">In een gesprek gebruik je vaste <strong>beleefde uitdrukkingen</strong>: begroeten, bedanken, iets vragen en je verontschuldigen. Een beleefd verzoek begint vaak met <em>Could</em>, <em>May</em> of <em>Would</em>.</div><div class=\"sam-head\">1. Begroeten en afscheid</div><p>Je begroet met <em>Hello</em> of <em>Good morning</em> en neemt afscheid met <em>Goodbye</em> of <em>See you later</em>. Bij een eerste kennismaking zeg je <em>Nice to meet you</em>. Vraag je hoe het gaat, dan zeg je <em>How are you?</em></p><div class=\"sam-head\">2. Beleefd vragen en reageren</div><p>Een beleefd verzoek maak je met <em>Could you...?</em>, <em>May I...?</em> of <em>Would you like...?</em>; na deze woorden komt het hele werkwoord zonder -s (<em>Could you help me?</em>). Bedanken doe je met <em>Thank you</em>, en je antwoordt met <em>You're welcome</em>. Je verontschuldigt je met <em>I'm sorry</em> en vraagt de aandacht met <em>Excuse me</em>.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hello</div><div class=\"sam-definitie-body\">Engelse begroeting: hallo.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Goodbye</div><div class=\"sam-definitie-body\">Engels voor afscheid: tot ziens.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Nice to meet you</div><div class=\"sam-definitie-body\">zin bij een eerste kennismaking.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">How are you</div><div class=\"sam-definitie-body\">Engels voor \"Hoe gaat het?\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Excuse me</div><div class=\"sam-definitie-body\">zin om de aandacht te vragen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">I'm sorry</div><div class=\"sam-definitie-body\">zin om je te verontschuldigen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Thank you</div><div class=\"sam-definitie-body\">Engels voor bedanken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">You're welcome</div><div class=\"sam-definitie-body\">antwoord op bedankt: graag gedaan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Could you</div><div class=\"sam-definitie-body\">beleefd begin van een verzoek; daarna het hele werkwoord.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">May I</div><div class=\"sam-definitie-body\">beleefd om toestemming vragen.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Hello»</b> is begroeting, terwijl <b>«Goodbye»</b> afscheid is. <b>«Nice to meet you»</b> is bij kennismaking, terwijl <b>«Goodbye»</b> afscheid is. <b>«Excuse me»</b> is aandacht vragen, terwijl <b>«I'm sorry»</b> sorry zeggen is. <b>«Thank you»</b> is bedanken, terwijl <b>«You're welcome»</b> graag gedaan is.</div>"
    },
    {
     "id": "D",
@@ -155,7 +1856,215 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Kies de juiste vorm: 'She ___ to school every day.'",
+      "o": [
+       "goes",
+       "go",
+       "going",
+       "gone"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Bij he/she/it krijgt het werkwoord -s: goes.",
+      "uo": [
+       "Klopt: bij he/she/it krijgt het werkwoord -s: goes.",
+       "«go» mist de -s bij she in de present simple.",
+       "«going» heeft am/is/are nodig en past niet.",
+       "«gone» is een voltooid deelwoord, niet deze tijd."
+      ],
+      "uh": "Present simple: he/she/it + werkwoord + -s (she goes, he plays)."
+     },
+     {
+      "v": "Kies de juiste vorm: 'They ___ football right now.'",
+      "o": [
+       "play",
+       "are playing",
+       "plays",
+       "played"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "\"right now\" vraagt de present continuous: are playing.",
+      "uo": [
+       "«play» is een gewoonte, niet \"nu bezig\".",
+       "Klopt: \"right now\" vraagt de present continuous: are playing.",
+       "«plays» hoort bij he/she/it, niet bij they.",
+       "«played» is verleden tijd."
+      ],
+      "uh": "Nu bezig = present continuous: am/is/are + werkwoord-ing."
+     },
+     {
+      "v": "Verleden tijd: 'Yesterday I ___ a film.'",
+      "o": [
+       "watch",
+       "watching",
+       "watched",
+       "watches"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "\"yesterday\" vraagt de verleden tijd: watched.",
+      "uo": [
+       "«watch» is tegenwoordige tijd.",
+       "«watching» heeft een hulpwerkwoord nodig.",
+       "Klopt: \"yesterday\" vraagt de verleden tijd: watched.",
+       "«watches» is present simple bij he/she/it."
+      ],
+      "uh": "watched: \"yesterday\" vraagt de verleden tijd: watched."
+     },
+     {
+      "v": "Kies het juiste lidwoord: '___ apple'",
+      "o": [
+       "a",
+       "many",
+       "the one",
+       "an"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Voor een klinkerklank gebruik je «an»: an apple.",
+      "uo": [
+       "«a» gebruik je voor een medeklinkerklank; apple begint met een klinker.",
+       "«many» betekent veel, geen lidwoord voor één appel.",
+       "«the one» is geen onbepaald lidwoord.",
+       "Klopt: voor een klinkerklank gebruik je «an»: an apple."
+      ],
+      "uh": "a voor medeklinkerklank, an voor klinkerklank (a book, an apple)."
+     },
+     {
+      "v": "Wat is het meervoud van 'child'?",
+      "o": [
+       "children",
+       "childs",
+       "childes",
+       "child"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het meervoud van child is children.",
+      "uo": [
+       "Klopt: het meervoud van child is children.",
+       "«childs» bestaat niet; child is onregelmatig.",
+       "«childes» bestaat niet.",
+       "«child» is enkelvoud."
+      ],
+      "uh": "children: Het meervoud van child is children."
+     },
+     {
+      "v": "Welke zin heeft de juiste woordvolgorde?",
+      "o": [
+       "I like very much football",
+       "I like football very much",
+       "Football I like very much",
+       "Very much I like football"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Onderwerp + werkwoord + voorwerp, daarna de bepaling.",
+      "uo": [
+       "De bepaling \"very much\" hoort niet tussen werkwoord en voorwerp.",
+       "Klopt: onderwerp + werkwoord + voorwerp, daarna de bepaling.",
+       "Het voorwerp hoort niet vooraan.",
+       "De bepaling hoort niet vooraan."
+      ],
+      "uh": "Vaste volgorde: onderwerp + werkwoord + voorwerp + rest."
+     },
+     {
+      "v": "Kies de juiste vorm: 'He ___ not like coffee.'",
+      "o": [
+       "do",
+       "is",
+       "does",
+       "are"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij he/she/it gebruik je \"does not\".",
+      "uo": [
+       "«do not» hoort bij I/you/we/they, niet bij he.",
+       "«is» hoort bij de -ing-vorm, niet bij like.",
+       "Klopt: bij he/she/it gebruik je \"does not\".",
+       "«are» hoort bij you/we/they."
+      ],
+      "uh": "does: Bij he/she/it gebruik je \"does not\"."
+     },
+     {
+      "v": "Kies de juiste vorm: 'There ___ two books on the table.'",
+      "o": [
+       "is",
+       "be",
+       "am",
+       "are"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij meervoud (two books) gebruik je \"are\".",
+      "uo": [
+       "«is» hoort bij enkelvoud; twee boeken is meervoud.",
+       "«be» is de basisvorm en past hier niet.",
+       "«am» hoort alleen bij I.",
+       "Klopt: bij meervoud (two books) gebruik je \"are\"."
+      ],
+      "uh": "are: Bij meervoud (two books) gebruik je \"are\"."
+     },
+     {
+      "v": "Wat is de verleden tijd van 'go'?",
+      "o": [
+       "went",
+       "goed",
+       "gone",
+       "goes"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De verleden tijd van go is went.",
+      "uo": [
+       "Klopt: de verleden tijd van go is went.",
+       "«goed» bestaat niet; go is onregelmatig.",
+       "«gone» is het voltooid deelwoord (have gone).",
+       "«goes» is present simple bij he/she/it."
+      ],
+      "uh": "went: De verleden tijd van go is went."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Present simple",
+      "d": "tijd voor gewoontes; he/she/it krijgt een -s"
+     },
+     {
+      "t": "Present continuous",
+      "d": "tijd voor iets dat nu bezig is: am/is/are + -ing"
+     },
+     {
+      "t": "Past simple",
+      "d": "verleden tijd; regelmatig -ed, vaak onregelmatig"
+     },
+     {
+      "t": "A",
+      "d": "onbepaald lidwoord voor een medeklinkerklank"
+     },
+     {
+      "t": "An",
+      "d": "onbepaald lidwoord voor een klinkerklank"
+     },
+     {
+      "t": "Woordvolgorde",
+      "d": "de vaste volgorde onderwerp + werkwoord + rest"
+     },
+     {
+      "t": "Meervoud",
+      "d": "de vorm voor meer dan één; vaak -s, soms onregelmatig"
+     },
+     {
+      "t": "Do not",
+      "d": "ontkenning in de present simple: do/does not"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>schrijven</strong> let je op de juiste <strong>werkwoordsvorm</strong> en <strong>woordvolgorde</strong>. In de <em>present simple</em> krijgt hij/zij/het een <strong>-s</strong>; de vaste volgorde is onderwerp + werkwoord + rest.</div><div class=\"sam-head\">1. Werkwoordstijden</div><p>De <strong>present simple</strong> gebruik je voor gewoontes: <em>I play, she plays</em> (bij he/she/it een -s). De <strong>present continuous</strong> is voor nu bezig: <em>am/is/are + werkwoord-ing</em> (<em>They are playing</em>). De <strong>past simple</strong> is verleden tijd: bij regelmatige werkwoorden -ed (<em>watched</em>), maar veel werkwoorden zijn onregelmatig (<em>go - went</em>).</p><div class=\"sam-head\">2. Woordvolgorde en lidwoorden</div><p>Engels heeft een vaste volgorde: <strong>onderwerp + werkwoord + lijdend voorwerp</strong> (<em>I like football</em>), met bepalingen daarachter (<em>I like football very much</em>). Het lidwoord is <em>a</em> voor een medeklinkerklank en <em>an</em> voor een klinkerklank (<em>an apple</em>). Bij ontkenning gebruik je <em>do/does not</em>: <em>He does not like coffee</em>.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Present simple</div><div class=\"sam-definitie-body\">tijd voor gewoontes; he/she/it krijgt een -s.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Present continuous</div><div class=\"sam-definitie-body\">tijd voor iets dat nu bezig is: am/is/are + -ing.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Past simple</div><div class=\"sam-definitie-body\">verleden tijd; regelmatig -ed, vaak onregelmatig.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">A</div><div class=\"sam-definitie-body\">onbepaald lidwoord voor een medeklinkerklank.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">An</div><div class=\"sam-definitie-body\">onbepaald lidwoord voor een klinkerklank.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Woordvolgorde</div><div class=\"sam-definitie-body\">de vaste volgorde onderwerp + werkwoord + rest.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Meervoud</div><div class=\"sam-definitie-body\">de vorm voor meer dan één; vaak -s, soms onregelmatig.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Do not</div><div class=\"sam-definitie-body\">ontkenning in de present simple: do/does not.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Present simple»</b> is gewoontes, -s bij hij/zij, terwijl <b>«Present continuous»</b> nu bezig, -ing is. <b>«Past simple»</b> is verleden tijd, terwijl <b>«Present simple»</b> gewoontes, -s bij hij/zij is. <b>«A»</b> is voor medeklinkerklank, terwijl <b>«An»</b> voor klinkerklank is. <b>«Woordvolgorde»</b> is onderwerp-werkwoord-rest, terwijl <b>«Present simple»</b> gewoontes, -s bij hij/zij is.</div>"
    }
   ]
  },
@@ -185,7 +2094,223 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat betekent 'aber'?",
+      "o": [
+       "maar",
+       "omdat",
+       "daarom",
+       "ook"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«aber» betekent maar en geeft een tegenstelling.",
+      "uo": [
+       "Klopt: «aber» betekent maar en geeft een tegenstelling.",
+       "«omdat» is weil.",
+       "«daarom» is deshalb.",
+       "«ook» is auch."
+      ],
+      "uh": "Tegenstelling: aber. Reden: weil. Gevolg: deshalb."
+     },
+     {
+      "v": "Wat betekent 'weil'?",
+      "o": [
+       "maar",
+       "omdat",
+       "en",
+       "hoewel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«weil» betekent omdat en geeft een reden.",
+      "uo": [
+       "«maar» is aber.",
+       "Klopt: «weil» betekent omdat en geeft een reden.",
+       "«en» is und.",
+       "«hoewel» is obwohl."
+      ],
+      "uh": "omdat: «weil» betekent omdat en geeft een reden."
+     },
+     {
+      "v": "Welk woord geeft een gevolg aan?",
+      "o": [
+       "weil",
+       "aber",
+       "deshalb",
+       "und"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«deshalb» betekent daarom en geeft een gevolg.",
+      "uo": [
+       "«weil» geeft een reden (omdat).",
+       "«aber» is een tegenstelling (maar).",
+       "Klopt: «deshalb» betekent daarom en geeft een gevolg.",
+       "«und» is een opsomming (en)."
+      ],
+      "uh": "deshalb: «deshalb» betekent daarom en geeft een gevolg."
+     },
+     {
+      "v": "Wat betekent het Duitse woord 'Wasser'?",
+      "o": [
+       "weer",
+       "winter",
+       "wagen",
+       "water"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "«Wasser» lijkt op water en betekent dat ook.",
+      "uo": [
+       "«weer» is Wetter.",
+       "«winter» is Winter.",
+       "«wagen» is Wagen (auto).",
+       "Klopt: «Wasser» lijkt op water en betekent dat ook."
+      ],
+      "uh": "water: «Wasser» lijkt op water en betekent dat ook."
+     },
+     {
+      "v": "Wat is een valse vriend?",
+      "o": [
+       "een woord dat lijkt maar iets anders betekent",
+       "een synoniem",
+       "een signaalwoord",
+       "een lidwoord"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Het lijkt op het Nederlands maar betekent iets anders.",
+      "uo": [
+       "Klopt: het lijkt op het Nederlands maar betekent iets anders.",
+       "Een synoniem heeft juist dezelfde betekenis.",
+       "Een signaalwoord verbindt zinnen.",
+       "Een lidwoord is der/die/das."
+      ],
+      "uh": "een woord dat lijkt maar iets anders betekent: Het lijkt op het Nederlands maar betekent iets anders."
+     },
+     {
+      "v": "Wat betekent 'zum Beispiel'?",
+      "o": [
+       "daarom",
+       "bijvoorbeeld",
+       "hoewel",
+       "omdat"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«zum Beispiel» leidt een voorbeeld in.",
+      "uo": [
+       "«daarom» is deshalb.",
+       "Klopt: «zum Beispiel» leidt een voorbeeld in.",
+       "«hoewel» is obwohl.",
+       "«omdat» is weil."
+      ],
+      "uh": "bijvoorbeeld: «zum Beispiel» leidt een voorbeeld in."
+     },
+     {
+      "v": "Je zoekt gericht één jaartal in een Duitse tekst. Wat doe je?",
+      "o": [
+       "skimmen",
+       "alles vertalen",
+       "scannen",
+       "hardop lezen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Scannen is gericht zoeken naar één detail.",
+      "uo": [
+       "Skimmen is voor de hoofdlijn.",
+       "Alles vertalen kost te veel tijd.",
+       "Klopt: scannen is gericht zoeken naar één detail.",
+       "Hardop lezen helpt niet bij zoeken."
+      ],
+      "uh": "Scannen is gericht zoeken naar één detail."
+     },
+     {
+      "v": "Wat betekent 'obwohl'?",
+      "o": [
+       "omdat",
+       "daarom",
+       "en",
+       "hoewel"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«obwohl» betekent hoewel (tegenstelling).",
+      "uo": [
+       "«omdat» is weil.",
+       "«daarom» is deshalb.",
+       "«en» is und.",
+       "Klopt: «obwohl» betekent hoewel (tegenstelling)."
+      ],
+      "uh": "hoewel: «obwohl» betekent hoewel (tegenstelling)."
+     },
+     {
+      "v": "Wat betekent 'auch'?",
+      "o": [
+       "ook",
+       "maar",
+       "omdat",
+       "daarom"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«auch» betekent ook en voegt iets toe.",
+      "uo": [
+       "Klopt: «auch» betekent ook en voegt iets toe.",
+       "«maar» is aber.",
+       "«omdat» is weil.",
+       "«daarom» is deshalb."
+      ],
+      "uh": "ook: «auch» betekent ook en voegt iets toe."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Skimmen",
+      "d": "snel en globaal lezen voor de hoofdgedachte"
+     },
+     {
+      "t": "Scannen",
+      "d": "gericht zoeken naar één stukje informatie"
+     },
+     {
+      "t": "Aber",
+      "d": "Duits voor \"maar\"; geeft een tegenstelling"
+     },
+     {
+      "t": "Weil",
+      "d": "Duits voor \"omdat\"; geeft een reden"
+     },
+     {
+      "t": "Deshalb",
+      "d": "Duits voor \"daarom\"; geeft een gevolg"
+     },
+     {
+      "t": "Obwohl",
+      "d": "Duits voor \"hoewel\"; geeft een tegenstelling"
+     },
+     {
+      "t": "Und",
+      "d": "Duits voor \"en\"; een opsomming"
+     },
+     {
+      "t": "Auch",
+      "d": "Duits voor \"ook\"; voegt iets toe"
+     },
+     {
+      "t": "Zum Beispiel",
+      "d": "Duits voor \"bijvoorbeeld\"; leidt een voorbeeld in"
+     },
+     {
+      "t": "Valse vriend",
+      "d": "een woord dat lijkt maar iets anders betekent"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>leesvaardigheid</strong> gebruik je <strong>skimmen</strong> en <strong>scannen</strong>. <strong>Signaalwoorden</strong> zoals <em>aber</em> (maar), <em>weil</em> (omdat) en <em>deshalb</em> (daarom) laten de samenhang zien. Duits lijkt vaak op Nederlands, dus raad slim.</div><div class=\"sam-head\">1. Leesstrategieën en verwante woorden</div><p>Lees een Duitse tekst eerst globaal (<strong>skimmen</strong>) en zoek details gericht op (<strong>scannen</strong>). Veel Duitse woorden lijken op het Nederlands (<em>Wasser</em> = water, <em>Buch</em> = boek); die verwantschap helpt je raden. Let wel op <strong>valse vrienden</strong> zoals <em>bellen</em> (blaffen) en <em>See</em> (meer).</p><div class=\"sam-head\">2. Signaalwoorden</div><p>Signaalwoorden verraden het verband. Tegenstelling: <em>aber</em> (maar), <em>obwohl</em> (hoewel). Reden: <em>weil</em> (omdat), <em>denn</em> (want). Gevolg: <em>deshalb</em> en <em>darum</em> (daarom). Opsomming: <em>und</em> (en), <em>auch</em> (ook). Voorbeeld: <em>zum Beispiel</em> (bijvoorbeeld).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Skimmen</div><div class=\"sam-definitie-body\">snel en globaal lezen voor de hoofdgedachte.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Scannen</div><div class=\"sam-definitie-body\">gericht zoeken naar één stukje informatie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Aber</div><div class=\"sam-definitie-body\">Duits voor \"maar\"; geeft een tegenstelling.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Weil</div><div class=\"sam-definitie-body\">Duits voor \"omdat\"; geeft een reden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Deshalb</div><div class=\"sam-definitie-body\">Duits voor \"daarom\"; geeft een gevolg.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Obwohl</div><div class=\"sam-definitie-body\">Duits voor \"hoewel\"; geeft een tegenstelling.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Und</div><div class=\"sam-definitie-body\">Duits voor \"en\"; een opsomming.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Auch</div><div class=\"sam-definitie-body\">Duits voor \"ook\"; voegt iets toe.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zum Beispiel</div><div class=\"sam-definitie-body\">Duits voor \"bijvoorbeeld\"; leidt een voorbeeld in.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Valse vriend</div><div class=\"sam-definitie-body\">een woord dat lijkt maar iets anders betekent.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Skimmen»</b> is globaal lezen, terwijl <b>«Scannen»</b> gericht zoeken is. <b>«Aber»</b> is maar (tegenstelling), terwijl <b>«Weil»</b> omdat (reden) is. <b>«Weil»</b> is omdat (reden), terwijl <b>«Deshalb»</b> daarom (gevolg) is. <b>«Obwohl»</b> is hoewel (tegenstelling), terwijl <b>«Weil»</b> omdat (reden) is.</div>"
    },
    {
     "id": "B",
@@ -199,7 +2324,219 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat betekent 'wo'?",
+      "o": [
+       "waar",
+       "wie",
+       "wanneer",
+       "waarom"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«wo» betekent waar (plaats).",
+      "uo": [
+       "Klopt: «wo» betekent waar (plaats).",
+       "«wie» als persoon is wer; let op de valkuil.",
+       "«wanneer» is wann.",
+       "«waarom» is warum."
+      ],
+      "uh": "Let op: wer = wie (persoon), wo = waar (plaats)."
+     },
+     {
+      "v": "Wat betekent 'wer'?",
+      "o": [
+       "waar",
+       "wie",
+       "wat",
+       "hoe"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«wer» vraagt naar een persoon (wie).",
+      "uo": [
+       "«waar» is wo; dat is de klassieke valkuil.",
+       "Klopt: «wer» vraagt naar een persoon (wie).",
+       "«wat» is was.",
+       "«hoe» is wie."
+      ],
+      "uh": "wie: «wer» vraagt naar een persoon (wie)."
+     },
+     {
+      "v": "Waar vraagt 'warum' naar?",
+      "o": [
+       "een plaats",
+       "een tijd",
+       "een reden",
+       "een persoon"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«warum» vraagt naar een reden (waarom).",
+      "uo": [
+       "Naar een plaats vraag je met wo.",
+       "Naar een tijd vraag je met wann.",
+       "Klopt: «warum» vraagt naar een reden (waarom).",
+       "Naar een persoon vraag je met wer."
+      ],
+      "uh": "een reden: «warum» vraagt naar een reden (waarom)."
+     },
+     {
+      "v": "Wat betekent 'Ich verstehe nicht'?",
+      "o": [
+       "Hoe laat is het?",
+       "Ik weet het al",
+       "Waar is het?",
+       "Ik begrijp het niet"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je zegt dat je het niet snapt.",
+      "uo": [
+       "Dat is «Wie spät ist es?».",
+       "Dat zou «Ich weiß es schon» zijn.",
+       "Dat is «Wo ist das?».",
+       "Klopt: je zegt dat je het niet snapt."
+      ],
+      "uh": "Ik begrijp het niet: Je zegt dat je het niet snapt."
+     },
+     {
+      "v": "Waar vraagt 'wann' naar?",
+      "o": [
+       "de tijd",
+       "de plaats",
+       "de prijs",
+       "de reden"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«wann» vraagt naar de tijd (wanneer).",
+      "uo": [
+       "Klopt: «wann» vraagt naar de tijd (wanneer).",
+       "De plaats vraag je met wo.",
+       "De prijs vraag je met wie viel.",
+       "De reden vraag je met warum."
+      ],
+      "uh": "de tijd: «wann» vraagt naar de tijd (wanneer)."
+     },
+     {
+      "v": "Wat betekent 'wie'?",
+      "o": [
+       "waarom",
+       "hoe",
+       "waar",
+       "wie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«wie» betekent hoe (de manier).",
+      "uo": [
+       "«waarom» is warum.",
+       "Klopt: «wie» betekent hoe (de manier).",
+       "«waar» is wo.",
+       "Persoon «wie» is wer, niet wie."
+      ],
+      "uh": "hoe: «wie» betekent hoe (de manier)."
+     },
+     {
+      "v": "Wat doe je bij luisteren als eerste?",
+      "o": [
+       "elk woord verstaan",
+       "de spelling checken",
+       "de hoofdgedachte pakken",
+       "achteraan beginnen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Pak eerst de hoofdgedachte.",
+      "uo": [
+       "Elk woord verstaan lukt zelden en hoeft niet.",
+       "Spelling speelt bij luisteren geen rol.",
+       "Klopt: pak eerst de hoofdgedachte.",
+       "Achteraan beginnen helpt niet."
+      ],
+      "uh": "de hoofdgedachte pakken: Pak eerst de hoofdgedachte."
+     },
+     {
+      "v": "'Wie viel kostet das?' vraagt naar...",
+      "o": [
+       "de plaats",
+       "de persoon",
+       "de tijd",
+       "de prijs"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«wie viel» vraagt naar hoeveel iets kost.",
+      "uo": [
+       "De plaats vraag je met wo.",
+       "De persoon vraag je met wer.",
+       "De tijd vraag je met wann.",
+       "Klopt: «wie viel» vraagt naar hoeveel iets kost."
+      ],
+      "uh": "de prijs: «wie viel» vraagt naar hoeveel iets kost."
+     },
+     {
+      "v": "Wat betekent 'was'?",
+      "o": [
+       "wat",
+       "wie",
+       "waar",
+       "wanneer"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«was» vraagt naar een ding (wat).",
+      "uo": [
+       "Klopt: «was» vraagt naar een ding (wat).",
+       "Persoon «wie» is wer.",
+       "«waar» is wo.",
+       "«wanneer» is wann."
+      ],
+      "uh": "wat: «was» vraagt naar een ding (wat)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Wer",
+      "d": "Duits vraagwoord voor \"wie\"; vraagt naar een persoon"
+     },
+     {
+      "t": "Was",
+      "d": "Duits vraagwoord voor \"wat\"; vraagt naar een ding"
+     },
+     {
+      "t": "Wo",
+      "d": "Duits vraagwoord voor \"waar\"; vraagt naar een plaats"
+     },
+     {
+      "t": "Wann",
+      "d": "Duits vraagwoord voor \"wanneer\"; vraagt naar een tijd"
+     },
+     {
+      "t": "Warum",
+      "d": "Duits vraagwoord voor \"waarom\"; vraagt naar een reden"
+     },
+     {
+      "t": "Wie",
+      "d": "Duits vraagwoord voor \"hoe\"; vraagt naar de manier"
+     },
+     {
+      "t": "Wie viel",
+      "d": "Duits voor \"hoeveel\"; vraagt vaak naar de prijs"
+     },
+     {
+      "t": "Hoofdgedachte",
+      "d": "de kern van wat de spreker bedoelt"
+     },
+     {
+      "t": "Context",
+      "d": "de situatie eromheen die helpt woorden te raden"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>luisteren</strong> pak je de <strong>hoofdgedachte</strong> en gebruik je <strong>vraagwoorden</strong> als <em>wer</em> (wie), <em>wo</em> (waar) en <em>warum</em> (waarom) om te horen waar een vraag naar zoekt.</div><div class=\"sam-head\">1. Vraagwoorden</div><p>De Duitse vraagwoorden: <em>wer</em> (wie), <em>was</em> (wat), <em>wo</em> (waar), <em>wann</em> (wanneer), <em>warum</em> (waarom), <em>wie</em> (hoe) en <em>wie viel</em> (hoeveel). Let op: <em>wer</em> lijkt op \"waar\" maar betekent \"wie\", en <em>wo</em> betekent \"waar\". Dat is een klassieke valkuil.</p><div class=\"sam-head\">2. Luisteren met een doel</div><p>Je hoeft niet alles te verstaan. Pak de <strong>hoofdgedachte</strong> en gebruik de <strong>context</strong>. Handige zinnen: <em>Können Sie das wiederholen?</em> (Kunt u dat herhalen?) en <em>Ich verstehe nicht</em> (Ik begrijp het niet).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Wer</div><div class=\"sam-definitie-body\">Duits vraagwoord voor \"wie\"; vraagt naar een persoon.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Was</div><div class=\"sam-definitie-body\">Duits vraagwoord voor \"wat\"; vraagt naar een ding.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Wo</div><div class=\"sam-definitie-body\">Duits vraagwoord voor \"waar\"; vraagt naar een plaats.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Wann</div><div class=\"sam-definitie-body\">Duits vraagwoord voor \"wanneer\"; vraagt naar een tijd.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Warum</div><div class=\"sam-definitie-body\">Duits vraagwoord voor \"waarom\"; vraagt naar een reden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Wie</div><div class=\"sam-definitie-body\">Duits vraagwoord voor \"hoe\"; vraagt naar de manier.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Wie viel</div><div class=\"sam-definitie-body\">Duits voor \"hoeveel\"; vraagt vaak naar de prijs.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hoofdgedachte</div><div class=\"sam-definitie-body\">de kern van wat de spreker bedoelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Context</div><div class=\"sam-definitie-body\">de situatie eromheen die helpt woorden te raden.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Wer»</b> is wie (persoon), terwijl <b>«Wo»</b> waar (plaats) is. <b>«Was»</b> is wat (ding), terwijl <b>«Wer»</b> wie (persoon) is. <b>«Wann»</b> is wanneer (tijd), terwijl <b>«Wo»</b> waar (plaats) is. <b>«Warum»</b> is waarom (reden), terwijl <b>«Wie»</b> hoe (manier) is.</div>"
    },
    {
     "id": "C",
@@ -213,7 +2550,223 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat betekent 'Danke'?",
+      "o": [
+       "bedankt",
+       "sorry",
+       "hallo",
+       "tot ziens"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Danke» betekent bedankt.",
+      "uo": [
+       "Klopt: «Danke» betekent bedankt.",
+       "«sorry» is Entschuldigung.",
+       "«hallo» is Hallo.",
+       "«tot ziens» is Auf Wiedersehen."
+      ],
+      "uh": "bedankt: «Danke» betekent bedankt."
+     },
+     {
+      "v": "Iemand zegt 'Danke'. Wat antwoord je?",
+      "o": [
+       "Hallo",
+       "Bitte",
+       "Tschüss",
+       "Warum"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«Bitte» betekent hier graag gedaan.",
+      "uo": [
+       "«Hallo» is een begroeting.",
+       "Klopt: «Bitte» betekent hier graag gedaan.",
+       "«Tschüss» is afscheid.",
+       "«Warum» is waarom."
+      ],
+      "uh": "Bitte: «Bitte» betekent hier graag gedaan."
+     },
+     {
+      "v": "Welke aanspreekvorm is beleefd (tegen een onbekende)?",
+      "o": [
+       "du",
+       "ihr",
+       "Sie",
+       "wir"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«Sie» is de beleefde vorm (u).",
+      "uo": [
+       "«du» is informeel, tegen vrienden.",
+       "«ihr» is jullie (informeel meervoud).",
+       "Klopt: «Sie» is de beleefde vorm (u).",
+       "«wir» betekent wij."
+      ],
+      "uh": "Sie = beleefd (u), du = informeel (jij)."
+     },
+     {
+      "v": "Wat betekent 'Entschuldigung'?",
+      "o": [
+       "aangenaam",
+       "bedankt",
+       "graag gedaan",
+       "sorry"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je verontschuldigt je (sorry).",
+      "uo": [
+       "«aangenaam» is Freut mich.",
+       "«bedankt» is Danke.",
+       "«graag gedaan» is Bitte.",
+       "Klopt: je verontschuldigt je (sorry)."
+      ],
+      "uh": "sorry: Je verontschuldigt je (sorry)."
+     },
+     {
+      "v": "Wanneer zeg je 'Freut mich'?",
+      "o": [
+       "bij een kennismaking",
+       "bij afscheid",
+       "als je bedankt",
+       "als je boos bent"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Freut mich» zeg je als je iemand ontmoet.",
+      "uo": [
+       "Klopt: «Freut mich» zeg je als je iemand ontmoet.",
+       "Bij afscheid zeg je Tschüss.",
+       "Bedanken is Danke.",
+       "Boosheid past hier niet."
+      ],
+      "uh": "bij een kennismaking: «Freut mich» zeg je als je iemand ontmoet."
+     },
+     {
+      "v": "Wat betekent 'Wie geht's?'",
+      "o": [
+       "Hoe heet je?",
+       "Hoe gaat het?",
+       "Waar woon je?",
+       "Hoe laat is het?"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je vraagt hoe het gaat.",
+      "uo": [
+       "«Hoe heet je?» is «Wie heißt du?».",
+       "Klopt: je vraagt hoe het gaat.",
+       "«Waar woon je?» is «Wo wohnst du?».",
+       "«Hoe laat is het?» is «Wie spät ist es?»."
+      ],
+      "uh": "Hoe gaat het?: Je vraagt hoe het gaat."
+     },
+     {
+      "v": "Hoe neem je informeel afscheid?",
+      "o": [
+       "Guten Tag",
+       "Freut mich",
+       "Tschüss",
+       "Bitte"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Tschüss» is informeel afscheid (doei).",
+      "uo": [
+       "«Guten Tag» is een begroeting.",
+       "«Freut mich» zeg je bij kennismaking.",
+       "Klopt: «Tschüss» is informeel afscheid (doei).",
+       "«Bitte» is alsjeblieft."
+      ],
+      "uh": "Tschüss: «Tschüss» is informeel afscheid (doei)."
+     },
+     {
+      "v": "Hoe vraag je beleefd om hulp?",
+      "o": [
+       "Danke schön",
+       "Wie geht's?",
+       "Auf Wiedersehen",
+       "Können Sie mir helfen?"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«Können Sie mir helfen?» vraagt beleefd om hulp.",
+      "uo": [
+       "Dat is hartelijk bedanken.",
+       "Dat vraagt hoe het gaat.",
+       "Dat is afscheid nemen.",
+       "Klopt: «Können Sie mir helfen?» vraagt beleefd om hulp."
+      ],
+      "uh": "Können Sie mir helfen?: «Können Sie mir helfen?» vraagt beleefd om hulp."
+     },
+     {
+      "v": "Wat betekent 'du'?",
+      "o": [
+       "jij (informeel)",
+       "u (beleefd)",
+       "wij",
+       "jullie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«du» is de informele vorm (jij).",
+      "uo": [
+       "Klopt: «du» is de informele vorm (jij).",
+       "«u (beleefd)» is Sie.",
+       "«wij» is wir.",
+       "«jullie» is ihr."
+      ],
+      "uh": "jij (informeel): «du» is de informele vorm (jij)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Hallo",
+      "d": "Duitse begroeting: hallo"
+     },
+     {
+      "t": "Tschüss",
+      "d": "informeel afscheid: doei"
+     },
+     {
+      "t": "Auf Wiedersehen",
+      "d": "net afscheid: tot ziens"
+     },
+     {
+      "t": "Wie geht's",
+      "d": "Duits voor \"Hoe gaat het?\""
+     },
+     {
+      "t": "Freut mich",
+      "d": "zin bij een kennismaking: aangenaam"
+     },
+     {
+      "t": "Danke",
+      "d": "Duits voor bedanken"
+     },
+     {
+      "t": "Bitte",
+      "d": "alsjeblieft; ook antwoord op danke (graag gedaan)"
+     },
+     {
+      "t": "Entschuldigung",
+      "d": "zin om je te verontschuldigen: sorry"
+     },
+     {
+      "t": "Sie",
+      "d": "beleefde aanspreekvorm (u)"
+     },
+     {
+      "t": "Du",
+      "d": "informele aanspreekvorm (jij)"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">In een gesprek gebruik je vaste <strong>beleefde uitdrukkingen</strong>: begroeten, bedanken en je verontschuldigen. Je spreekt iemand beleefd aan met <em>Sie</em> en informeel met <em>du</em>.</div><div class=\"sam-head\">1. Begroeten en beleefdheid</div><p>Je begroet met <em>Hallo</em> of <em>Guten Tag</em> en neemt afscheid met <em>Tschüss</em> of <em>Auf Wiedersehen</em>. Vraag je hoe het gaat: <em>Wie geht's?</em> Bij een kennismaking zeg je <em>Freut mich</em> (aangenaam). Belangrijk: <em>Sie</em> is beleefd (tegen onbekenden), <em>du</em> is informeel (tegen vrienden).</p><div class=\"sam-head\">2. Bedanken en vragen</div><p>Bedanken doe je met <em>Danke</em>, en je antwoordt met <em>Bitte</em> (graag gedaan). Je verontschuldigt je met <em>Entschuldigung</em>. Een beleefde vraag: <em>Können Sie mir helfen?</em> (Kunt u mij helpen?).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hallo</div><div class=\"sam-definitie-body\">Duitse begroeting: hallo.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Tschüss</div><div class=\"sam-definitie-body\">informeel afscheid: doei.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Auf Wiedersehen</div><div class=\"sam-definitie-body\">net afscheid: tot ziens.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Wie geht's</div><div class=\"sam-definitie-body\">Duits voor \"Hoe gaat het?\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Freut mich</div><div class=\"sam-definitie-body\">zin bij een kennismaking: aangenaam.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Danke</div><div class=\"sam-definitie-body\">Duits voor bedanken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bitte</div><div class=\"sam-definitie-body\">alsjeblieft; ook antwoord op danke (graag gedaan).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Entschuldigung</div><div class=\"sam-definitie-body\">zin om je te verontschuldigen: sorry.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sie</div><div class=\"sam-definitie-body\">beleefde aanspreekvorm (u).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Du</div><div class=\"sam-definitie-body\">informele aanspreekvorm (jij).</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Hallo»</b> is begroeting, terwijl <b>«Tschüss»</b> afscheid (informeel) is. <b>«Auf Wiedersehen»</b> is afscheid (net), terwijl <b>«Hallo»</b> begroeting is. <b>«Wie geht's»</b> is hoe gaat het, terwijl <b>«Freut mich»</b> aangenaam is. <b>«Danke»</b> is bedankt, terwijl <b>«Bitte»</b> alsjeblieft / graag gedaan is.</div>"
    },
    {
     "id": "D",
@@ -227,7 +2780,196 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Kies de juiste vorm: 'Ich ___ Fußball.'",
+      "o": [
+       "spiele",
+       "spielst",
+       "spielt",
+       "spielen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Bij ich is de uitgang -e: ich spiele.",
+      "uo": [
+       "Klopt: bij ich is de uitgang -e: ich spiele.",
+       "«spielst» hoort bij du.",
+       "«spielt» hoort bij er/sie/es.",
+       "«spielen» hoort bij wir/sie."
+      ],
+      "uh": "ich -e, du -st, er/sie/es -t, wir/sie -en."
+     },
+     {
+      "v": "Kies de juiste vorm: 'Du ___ ein Buch.'",
+      "o": [
+       "habe",
+       "hast",
+       "hat",
+       "haben"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij du hoort «hast».",
+      "uo": [
+       "«habe» hoort bij ich.",
+       "Klopt: bij du hoort «hast».",
+       "«hat» hoort bij er/sie/es.",
+       "«haben» hoort bij wir/sie."
+      ],
+      "uh": "hast: Bij du hoort «hast»."
+     },
+     {
+      "v": "Welk lidwoord is onzijdig (het)?",
+      "o": [
+       "der",
+       "die",
+       "das",
+       "den"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«das» is onzijdig (het).",
+      "uo": [
+       "«der» is mannelijk (de).",
+       "«die» is vrouwelijk of meervoud (de).",
+       "Klopt: «das» is onzijdig (het).",
+       "«den» is een naamvalsvorm, geen basis-lidwoord."
+      ],
+      "uh": "der (mannelijk), die (vrouwelijk/meervoud), das (onzijdig)."
+     },
+     {
+      "v": "Kies de juiste vorm: 'Er ___ nach Hause.'",
+      "o": [
+       "gehe",
+       "gehst",
+       "gehen",
+       "geht"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij er is de uitgang -t: er geht.",
+      "uo": [
+       "«gehe» hoort bij ich.",
+       "«gehst» hoort bij du.",
+       "«gehen» hoort bij wir/sie.",
+       "Klopt: bij er is de uitgang -t: er geht."
+      ],
+      "uh": "geht: Bij er is de uitgang -t: er geht."
+     },
+     {
+      "v": "Waar staat de persoonsvorm in een gewone Duitse zin?",
+      "o": [
+       "op de tweede plaats",
+       "op de eerste plaats",
+       "altijd achteraan",
+       "dat maakt niet uit"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De persoonsvorm staat op de tweede plaats.",
+      "uo": [
+       "Klopt: de persoonsvorm staat op de tweede plaats.",
+       "Op de eerste plaats staat meestal het onderwerp of een bepaling.",
+       "Achteraan komt de persoonsvorm alleen in bijzinnen.",
+       "De plaats ligt juist vast."
+      ],
+      "uh": "In de hoofdzin staat de persoonsvorm altijd op plaats twee."
+     },
+     {
+      "v": "Kies de juiste vorm: 'Ich ___ zwölf Jahre alt.'",
+      "o": [
+       "bist",
+       "bin",
+       "ist",
+       "sind"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij ich hoort «bin».",
+      "uo": [
+       "«bist» hoort bij du.",
+       "Klopt: bij ich hoort «bin».",
+       "«ist» hoort bij er/sie/es.",
+       "«sind» hoort bij wir/sie."
+      ],
+      "uh": "bin: Bij ich hoort «bin»."
+     },
+     {
+      "v": "Vul in met inversie: 'Heute ___ ich Fußball.'",
+      "o": [
+       "spielt",
+       "spielst",
+       "spiele",
+       "spielen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Na \"Heute\" komt de persoonsvorm bij ich: spiele.",
+      "uo": [
+       "«spielt» hoort bij er/sie/es.",
+       "«spielst» hoort bij du.",
+       "Klopt: na \"Heute\" komt de persoonsvorm bij ich: spiele.",
+       "«spielen» hoort bij wir/sie."
+      ],
+      "uh": "spiele: Na \"Heute\" komt de persoonsvorm bij ich: spiele."
+     },
+     {
+      "v": "Welk lidwoord hoort bij een mannelijk woord (de)?",
+      "o": [
+       "ein",
+       "die",
+       "das",
+       "der"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«der» is het mannelijke lidwoord (de).",
+      "uo": [
+       "«ein» is onbepaald (een).",
+       "«die» is vrouwelijk of meervoud.",
+       "«das» is onzijdig.",
+       "Klopt: «der» is het mannelijke lidwoord (de)."
+      ],
+      "uh": "der: «der» is het mannelijke lidwoord (de)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Der",
+      "d": "mannelijk lidwoord (de)"
+     },
+     {
+      "t": "Die",
+      "d": "vrouwelijk lidwoord (de); ook meervoud"
+     },
+     {
+      "t": "Das",
+      "d": "onzijdig lidwoord (het)"
+     },
+     {
+      "t": "Sein",
+      "d": "werkwoord \"zijn\": ich bin, du bist, er ist"
+     },
+     {
+      "t": "Haben",
+      "d": "werkwoord \"hebben\": ich habe, du hast, er hat"
+     },
+     {
+      "t": "Persoonsvorm",
+      "d": "het vervoegde werkwoord; staat op de tweede plaats"
+     },
+     {
+      "t": "Inversie",
+      "d": "onderwerp en persoonsvorm wisselen na een ander begin"
+     },
+     {
+      "t": "Werkwoordsuitgang",
+      "d": "de uitgang die past bij het onderwerp (spiele, spielst, spielt)"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>schrijven</strong> let je op de <strong>lidwoorden</strong> <em>der/die/das</em>, de <strong>werkwoordsvervoeging</strong> en de <strong>woordvolgorde</strong> (de persoonsvorm staat op de tweede plaats).</div><div class=\"sam-head\">1. Werkwoorden en lidwoorden</div><p>Duitse werkwoorden krijgen een uitgang: <em>ich spiele, du spielst, er/sie/es spielt, wir/sie spielen</em>. De hulpwerkwoorden zijn <em>sein</em> (zijn: ich bin, du bist, er ist) en <em>haben</em> (hebben: ich habe, du hast, er hat). Elk zelfstandig naamwoord heeft een lidwoord: <em>der</em> (mannelijk), <em>die</em> (vrouwelijk), <em>das</em> (onzijdig).</p><div class=\"sam-head\">2. Woordvolgorde</div><p>In een gewone Duitse zin staat de <strong>persoonsvorm op de tweede plaats</strong>: <em>Ich spiele heute Fußball</em>. Begin je met een ander zinsdeel, dan komt eerst de persoonsvorm, dan het onderwerp: <em>Heute spiele ich Fußball</em> (inversie).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Der</div><div class=\"sam-definitie-body\">mannelijk lidwoord (de).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Die</div><div class=\"sam-definitie-body\">vrouwelijk lidwoord (de); ook meervoud.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Das</div><div class=\"sam-definitie-body\">onzijdig lidwoord (het).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sein</div><div class=\"sam-definitie-body\">werkwoord \"zijn\": ich bin, du bist, er ist.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Haben</div><div class=\"sam-definitie-body\">werkwoord \"hebben\": ich habe, du hast, er hat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Persoonsvorm</div><div class=\"sam-definitie-body\">het vervoegde werkwoord; staat op de tweede plaats.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Inversie</div><div class=\"sam-definitie-body\">onderwerp en persoonsvorm wisselen na een ander begin.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Werkwoordsuitgang</div><div class=\"sam-definitie-body\">de uitgang die past bij het onderwerp (spiele, spielst, spielt).</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Der»</b> is mannelijk: de, terwijl <b>«Die»</b> vrouwelijk / meervoud is. <b>«Das»</b> is onzijdig: het, terwijl <b>«Der»</b> mannelijk: de is. <b>«Sein»</b> is zijn, terwijl <b>«Haben»</b> hebben is. <b>«Persoonsvorm»</b> is werkwoord op plaats twee, terwijl <b>«Inversie»</b> omdraaien na ander begin is.</div>"
    }
   ]
  },
@@ -257,7 +2999,223 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat betekent 'mais'?",
+      "o": [
+       "maar",
+       "omdat",
+       "dus",
+       "ook"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«mais» betekent maar en geeft een tegenstelling.",
+      "uo": [
+       "Klopt: «mais» betekent maar en geeft een tegenstelling.",
+       "«omdat» is parce que.",
+       "«dus» is donc.",
+       "«ook» is aussi."
+      ],
+      "uh": "Tegenstelling: mais. Reden: parce que. Gevolg: donc."
+     },
+     {
+      "v": "Wat betekent 'parce que'?",
+      "o": [
+       "maar",
+       "omdat",
+       "en",
+       "hoewel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«parce que» betekent omdat en geeft een reden.",
+      "uo": [
+       "«maar» is mais.",
+       "Klopt: «parce que» betekent omdat en geeft een reden.",
+       "«en» is et, het juiste antwoord is «omdat».",
+       "«hoewel» is bien que."
+      ],
+      "uh": "omdat: «parce que» betekent omdat en geeft een reden."
+     },
+     {
+      "v": "Welk woord geeft een gevolg aan?",
+      "o": [
+       "parce que",
+       "mais",
+       "donc",
+       "et"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«donc» betekent dus en geeft een gevolg.",
+      "uo": [
+       "«parce que» geeft een reden (omdat).",
+       "«mais» is een tegenstelling (maar).",
+       "Klopt: «donc» betekent dus en geeft een gevolg.",
+       "«et» is een opsomming (en)."
+      ],
+      "uh": "donc: «donc» betekent dus en geeft een gevolg."
+     },
+     {
+      "v": "Wat betekent 'aussi'?",
+      "o": [
+       "maar",
+       "dus",
+       "omdat",
+       "ook"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«aussi» betekent ook en voegt iets toe.",
+      "uo": [
+       "«maar» is mais.",
+       "«dus» is donc.",
+       "«omdat» is parce que.",
+       "Klopt: «aussi» betekent ook en voegt iets toe."
+      ],
+      "uh": "ook: «aussi» betekent ook en voegt iets toe."
+     },
+     {
+      "v": "Je zoekt gericht één prijs in een Franse folder. Wat doe je?",
+      "o": [
+       "scannen",
+       "skimmen",
+       "alles vertalen",
+       "hardop lezen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Scannen is gericht zoeken naar één detail.",
+      "uo": [
+       "Klopt: scannen is gericht zoeken naar één detail.",
+       "Skimmen is voor de hoofdlijn.",
+       "Alles vertalen kost te veel tijd.",
+       "Hardop lezen helpt niet bij zoeken."
+      ],
+      "uh": "Scannen is gericht zoeken naar één detail."
+     },
+     {
+      "v": "Wat betekent 'par exemple'?",
+      "o": [
+       "daarom",
+       "bijvoorbeeld",
+       "hoewel",
+       "omdat"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«par exemple» leidt een voorbeeld in.",
+      "uo": [
+       "«daarom/dus» is donc.",
+       "Klopt: «par exemple» leidt een voorbeeld in.",
+       "«hoewel» is bien que.",
+       "«omdat» is parce que."
+      ],
+      "uh": "bijvoorbeeld: «par exemple» leidt een voorbeeld in."
+     },
+     {
+      "v": "Wat betekent 'et'?",
+      "o": [
+       "maar",
+       "omdat",
+       "en",
+       "dus"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«et» betekent en (opsomming).",
+      "uo": [
+       "«maar» is mais.",
+       "«omdat» is parce que.",
+       "Klopt: «et» betekent en (opsomming).",
+       "«dus» is donc."
+      ],
+      "uh": "en: «et» betekent en (opsomming)."
+     },
+     {
+      "v": "Wat betekent 'bien que'?",
+      "o": [
+       "omdat",
+       "dus",
+       "en",
+       "hoewel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "«bien que» betekent hoewel (tegenstelling).",
+      "uo": [
+       "«omdat» is parce que.",
+       "«dus» is donc.",
+       "«en» is et, het juiste antwoord is «hoewel».",
+       "Klopt: «bien que» betekent hoewel (tegenstelling)."
+      ],
+      "uh": "hoewel: «bien que» betekent hoewel (tegenstelling)."
+     },
+     {
+      "v": "Hoe pak je de hoofdgedachte van een Franse tekst het snelst?",
+      "o": [
+       "skimmen",
+       "elk woord opzoeken",
+       "de tekst vertalen",
+       "achteraan beginnen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Skimmen geeft snel de hoofdlijn.",
+      "uo": [
+       "Klopt: skimmen geeft snel de hoofdlijn.",
+       "Elk woord opzoeken kost te veel tijd.",
+       "Vertalen is traag en vaak niet nodig.",
+       "Achteraan beginnen helpt niet."
+      ],
+      "uh": "Skimmen geeft snel de hoofdlijn."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Skimmen",
+      "d": "snel en globaal lezen voor de hoofdgedachte"
+     },
+     {
+      "t": "Scannen",
+      "d": "gericht zoeken naar één stukje informatie"
+     },
+     {
+      "t": "Mais",
+      "d": "Frans voor \"maar\"; geeft een tegenstelling"
+     },
+     {
+      "t": "Parce que",
+      "d": "Frans voor \"omdat\"; geeft een reden"
+     },
+     {
+      "t": "Donc",
+      "d": "Frans voor \"dus\"; geeft een gevolg"
+     },
+     {
+      "t": "Bien que",
+      "d": "Frans voor \"hoewel\"; geeft een tegenstelling"
+     },
+     {
+      "t": "Et",
+      "d": "Frans voor \"en\"; een opsomming"
+     },
+     {
+      "t": "Aussi",
+      "d": "Frans voor \"ook\"; voegt iets toe"
+     },
+     {
+      "t": "Par exemple",
+      "d": "Frans voor \"bijvoorbeeld\"; leidt een voorbeeld in"
+     },
+     {
+      "t": "Context",
+      "d": "de situatie eromheen die helpt woorden te raden"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>leesvaardigheid</strong> gebruik je <strong>skimmen</strong> en <strong>scannen</strong>. <strong>Signaalwoorden</strong> zoals <em>mais</em> (maar), <em>parce que</em> (omdat) en <em>donc</em> (dus) laten de samenhang zien.</div><div class=\"sam-head\">1. Leesstrategieën</div><p>Lees een Franse tekst eerst globaal (<strong>skimmen</strong>) voor de hoofdgedachte en zoek details gericht op (<strong>scannen</strong>). Je hoeft niet elk woord te kennen: gebruik de <strong>context</strong> en herkenbare woorden (<em>télévision</em>, <em>musique</em>) om te raden.</p><div class=\"sam-head\">2. Signaalwoorden</div><p>Signaalwoorden verraden het verband. Tegenstelling: <em>mais</em> (maar), <em>bien que</em> (hoewel). Reden: <em>parce que</em> (omdat), <em>car</em> (want). Gevolg: <em>donc</em> (dus), <em>alors</em> (dus/toen). Opsomming: <em>et</em> (en), <em>aussi</em> (ook). Voorbeeld: <em>par exemple</em> (bijvoorbeeld).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Skimmen</div><div class=\"sam-definitie-body\">snel en globaal lezen voor de hoofdgedachte.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Scannen</div><div class=\"sam-definitie-body\">gericht zoeken naar één stukje informatie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Mais</div><div class=\"sam-definitie-body\">Frans voor \"maar\"; geeft een tegenstelling.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Parce que</div><div class=\"sam-definitie-body\">Frans voor \"omdat\"; geeft een reden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Donc</div><div class=\"sam-definitie-body\">Frans voor \"dus\"; geeft een gevolg.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bien que</div><div class=\"sam-definitie-body\">Frans voor \"hoewel\"; geeft een tegenstelling.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Et</div><div class=\"sam-definitie-body\">Frans voor \"en\"; een opsomming.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Aussi</div><div class=\"sam-definitie-body\">Frans voor \"ook\"; voegt iets toe.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Par exemple</div><div class=\"sam-definitie-body\">Frans voor \"bijvoorbeeld\"; leidt een voorbeeld in.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Context</div><div class=\"sam-definitie-body\">de situatie eromheen die helpt woorden te raden.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Skimmen»</b> is globaal lezen, terwijl <b>«Scannen»</b> gericht zoeken is. <b>«Mais»</b> is maar (tegenstelling), terwijl <b>«Parce que»</b> omdat (reden) is. <b>«Parce que»</b> is omdat (reden), terwijl <b>«Donc»</b> dus (gevolg) is. <b>«Bien que»</b> is hoewel (tegenstelling), terwijl <b>«Parce que»</b> omdat (reden) is.</div>"
    },
    {
     "id": "B",
@@ -271,7 +3229,219 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat betekent 'où'?",
+      "o": [
+       "waar",
+       "wie",
+       "wanneer",
+       "waarom"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«où» betekent waar (plaats).",
+      "uo": [
+       "Klopt: «où» betekent waar (plaats).",
+       "«wie» is qui.",
+       "«wanneer» is quand.",
+       "«waarom» is pourquoi."
+      ],
+      "uh": "qui=wie, que=wat, où=waar, quand=wanneer, pourquoi=waarom, comment=hoe."
+     },
+     {
+      "v": "Wat betekent 'pourquoi'?",
+      "o": [
+       "hoe",
+       "waarom",
+       "waar",
+       "wanneer"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«pourquoi» vraagt naar een reden (waarom).",
+      "uo": [
+       "«hoe» is comment.",
+       "Klopt: «pourquoi» vraagt naar een reden (waarom).",
+       "«waar» is où.",
+       "«wanneer» is quand."
+      ],
+      "uh": "waarom: «pourquoi» vraagt naar een reden (waarom)."
+     },
+     {
+      "v": "Waar vraagt 'qui' naar?",
+      "o": [
+       "een plaats",
+       "een tijd",
+       "een persoon",
+       "een reden"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«qui» vraagt naar een persoon (wie).",
+      "uo": [
+       "Naar een plaats vraag je met où.",
+       "Naar een tijd vraag je met quand.",
+       "Klopt: «qui» vraagt naar een persoon (wie).",
+       "Naar een reden vraag je met pourquoi."
+      ],
+      "uh": "een persoon: «qui» vraagt naar een persoon (wie)."
+     },
+     {
+      "v": "Wat betekent 'Je ne comprends pas'?",
+      "o": [
+       "Hoe laat is het?",
+       "Ik weet het al",
+       "Waar is het?",
+       "Ik begrijp het niet"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je zegt dat je het niet snapt.",
+      "uo": [
+       "Dat is «Quelle heure est-il?».",
+       "Dat zou «Je sais déjà» zijn.",
+       "Dat is «Où est-ce?».",
+       "Klopt: je zegt dat je het niet snapt."
+      ],
+      "uh": "Ik begrijp het niet: Je zegt dat je het niet snapt."
+     },
+     {
+      "v": "Waar vraagt 'quand' naar?",
+      "o": [
+       "de tijd",
+       "de plaats",
+       "de prijs",
+       "de reden"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«quand» vraagt naar de tijd (wanneer).",
+      "uo": [
+       "Klopt: «quand» vraagt naar de tijd (wanneer).",
+       "De plaats vraag je met où.",
+       "De prijs vraag je met combien.",
+       "De reden vraag je met pourquoi."
+      ],
+      "uh": "de tijd: «quand» vraagt naar de tijd (wanneer)."
+     },
+     {
+      "v": "Wat betekent 'comment'?",
+      "o": [
+       "waarom",
+       "hoe",
+       "waar",
+       "wie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "«comment» betekent hoe (de manier).",
+      "uo": [
+       "«waarom» is pourquoi.",
+       "Klopt: «comment» betekent hoe (de manier).",
+       "«waar» is où.",
+       "«wie» is qui."
+      ],
+      "uh": "hoe: «comment» betekent hoe (de manier)."
+     },
+     {
+      "v": "Wat doe je bij luisteren als eerste?",
+      "o": [
+       "elk woord verstaan",
+       "de spelling checken",
+       "de hoofdgedachte pakken",
+       "achteraan beginnen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Pak eerst de hoofdgedachte.",
+      "uo": [
+       "Elk woord verstaan lukt zelden en hoeft niet.",
+       "Spelling speelt bij luisteren geen rol.",
+       "Klopt: pak eerst de hoofdgedachte.",
+       "Achteraan beginnen helpt niet."
+      ],
+      "uh": "de hoofdgedachte pakken: Pak eerst de hoofdgedachte."
+     },
+     {
+      "v": "'Combien ça coûte?' vraagt naar...",
+      "o": [
+       "de plaats",
+       "de persoon",
+       "de tijd",
+       "de prijs"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«combien» vraagt hoeveel iets kost.",
+      "uo": [
+       "De plaats vraag je met où.",
+       "De persoon vraag je met qui.",
+       "De tijd vraag je met quand.",
+       "Klopt: «combien» vraagt hoeveel iets kost."
+      ],
+      "uh": "de prijs: «combien» vraagt hoeveel iets kost."
+     },
+     {
+      "v": "Wat betekent 'que'?",
+      "o": [
+       "wat",
+       "wie",
+       "waar",
+       "wanneer"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«que» vraagt naar een ding (wat).",
+      "uo": [
+       "Klopt: «que» vraagt naar een ding (wat).",
+       "«wie» is qui.",
+       "«waar» is où.",
+       "«wanneer» is quand."
+      ],
+      "uh": "wat: «que» vraagt naar een ding (wat)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Qui",
+      "d": "Frans vraagwoord voor \"wie\"; vraagt naar een persoon"
+     },
+     {
+      "t": "Que",
+      "d": "Frans vraagwoord voor \"wat\"; vraagt naar een ding"
+     },
+     {
+      "t": "Où",
+      "d": "Frans vraagwoord voor \"waar\"; vraagt naar een plaats"
+     },
+     {
+      "t": "Quand",
+      "d": "Frans vraagwoord voor \"wanneer\"; vraagt naar een tijd"
+     },
+     {
+      "t": "Pourquoi",
+      "d": "Frans vraagwoord voor \"waarom\"; vraagt naar een reden"
+     },
+     {
+      "t": "Comment",
+      "d": "Frans vraagwoord voor \"hoe\"; vraagt naar de manier"
+     },
+     {
+      "t": "Combien",
+      "d": "Frans voor \"hoeveel\"; vraagt vaak naar de prijs"
+     },
+     {
+      "t": "Hoofdgedachte",
+      "d": "de kern van wat de spreker bedoelt"
+     },
+     {
+      "t": "Context",
+      "d": "de situatie eromheen die helpt woorden te raden"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>luisteren</strong> pak je de <strong>hoofdgedachte</strong> en gebruik je <strong>vraagwoorden</strong> als <em>qui</em> (wie), <em>où</em> (waar) en <em>pourquoi</em> (waarom).</div><div class=\"sam-head\">1. Vraagwoorden</div><p>De Franse vraagwoorden: <em>qui</em> (wie), <em>que/quoi</em> (wat), <em>où</em> (waar), <em>quand</em> (wanneer), <em>pourquoi</em> (waarom), <em>comment</em> (hoe) en <em>combien</em> (hoeveel). Hoor je het vraagwoord, dan weet je waar de vraag naar zoekt.</p><div class=\"sam-head\">2. Luisteren met een doel</div><p>Pak de <strong>hoofdgedachte</strong> en gebruik de <strong>context</strong>. Handige zinnen: <em>Pouvez-vous répéter?</em> (Kunt u herhalen?) en <em>Je ne comprends pas</em> (Ik begrijp het niet).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Qui</div><div class=\"sam-definitie-body\">Frans vraagwoord voor \"wie\"; vraagt naar een persoon.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Que</div><div class=\"sam-definitie-body\">Frans vraagwoord voor \"wat\"; vraagt naar een ding.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Où</div><div class=\"sam-definitie-body\">Frans vraagwoord voor \"waar\"; vraagt naar een plaats.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Quand</div><div class=\"sam-definitie-body\">Frans vraagwoord voor \"wanneer\"; vraagt naar een tijd.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Pourquoi</div><div class=\"sam-definitie-body\">Frans vraagwoord voor \"waarom\"; vraagt naar een reden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Comment</div><div class=\"sam-definitie-body\">Frans vraagwoord voor \"hoe\"; vraagt naar de manier.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Combien</div><div class=\"sam-definitie-body\">Frans voor \"hoeveel\"; vraagt vaak naar de prijs.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hoofdgedachte</div><div class=\"sam-definitie-body\">de kern van wat de spreker bedoelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Context</div><div class=\"sam-definitie-body\">de situatie eromheen die helpt woorden te raden.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Qui»</b> is wie (persoon), terwijl <b>«Où»</b> waar (plaats) is. <b>«Que»</b> is wat (ding), terwijl <b>«Qui»</b> wie (persoon) is. <b>«Où»</b> is waar (plaats), terwijl <b>«Quand»</b> wanneer (tijd) is. <b>«Pourquoi»</b> is waarom (reden), terwijl <b>«Comment»</b> hoe (manier) is.</div>"
    },
    {
     "id": "C",
@@ -285,7 +3455,223 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat betekent 'Merci'?",
+      "o": [
+       "bedankt",
+       "sorry",
+       "hallo",
+       "tot ziens"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "«Merci» betekent bedankt.",
+      "uo": [
+       "Klopt: «Merci» betekent bedankt.",
+       "«sorry» is Excusez-moi.",
+       "«hallo» is Bonjour.",
+       "«tot ziens» is Au revoir."
+      ],
+      "uh": "bedankt: «Merci» betekent bedankt."
+     },
+     {
+      "v": "Iemand zegt 'Merci'. Wat antwoord je?",
+      "o": [
+       "Bonjour",
+       "De rien",
+       "Au revoir",
+       "Pourquoi"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "«De rien» betekent graag gedaan.",
+      "uo": [
+       "«Bonjour» is een begroeting.",
+       "Klopt: «De rien» betekent graag gedaan.",
+       "«Au revoir» is afscheid.",
+       "«Pourquoi» is waarom."
+      ],
+      "uh": "De rien: «De rien» betekent graag gedaan."
+     },
+     {
+      "v": "Welke aanspreekvorm is beleefd (tegen een onbekende)?",
+      "o": [
+       "tu",
+       "il",
+       "vous",
+       "nous"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«vous» is de beleefde vorm (u).",
+      "uo": [
+       "«tu» is informeel, tegen vrienden.",
+       "«il» betekent hij.",
+       "Klopt: «vous» is de beleefde vorm (u).",
+       "«nous» betekent wij."
+      ],
+      "uh": "vous = beleefd (u), tu = informeel (jij)."
+     },
+     {
+      "v": "Wat betekent 'Excusez-moi'?",
+      "o": [
+       "aangenaam",
+       "bedankt",
+       "graag gedaan",
+       "pardon"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je verontschuldigt je (pardon).",
+      "uo": [
+       "«aangenaam» is Enchanté.",
+       "«bedankt» is Merci.",
+       "«graag gedaan» is De rien.",
+       "Klopt: je verontschuldigt je (pardon)."
+      ],
+      "uh": "pardon: Je verontschuldigt je (pardon)."
+     },
+     {
+      "v": "Wanneer zeg je 'Enchanté'?",
+      "o": [
+       "bij een kennismaking",
+       "bij afscheid",
+       "als je bedankt",
+       "als je boos bent"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«Enchanté» zeg je bij een kennismaking.",
+      "uo": [
+       "Klopt: «Enchanté» zeg je bij een kennismaking.",
+       "Bij afscheid zeg je Au revoir.",
+       "Bedanken is Merci.",
+       "Boosheid past hier niet."
+      ],
+      "uh": "bij een kennismaking: «Enchanté» zeg je bij een kennismaking."
+     },
+     {
+      "v": "Wat betekent 'Comment ça va?'",
+      "o": [
+       "Hoe heet je?",
+       "Hoe gaat het?",
+       "Waar woon je?",
+       "Hoe laat is het?"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je vraagt hoe het gaat.",
+      "uo": [
+       "«Hoe heet je?» is «Comment tu t'appelles?».",
+       "Klopt: je vraagt hoe het gaat.",
+       "«Waar woon je?» is «Où habites-tu?».",
+       "«Hoe laat is het?» is «Quelle heure est-il?»."
+      ],
+      "uh": "Hoe gaat het?: Je vraagt hoe het gaat."
+     },
+     {
+      "v": "Hoe begroet je iemand overdag?",
+      "o": [
+       "Au revoir",
+       "Merci",
+       "Bonjour",
+       "De rien"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "«Bonjour» is de begroeting overdag.",
+      "uo": [
+       "«Au revoir» is afscheid.",
+       "«Merci» is bedanken.",
+       "Klopt: «Bonjour» is de begroeting overdag.",
+       "«De rien» is graag gedaan."
+      ],
+      "uh": "Bonjour: «Bonjour» is de begroeting overdag."
+     },
+     {
+      "v": "Wat betekent \"s'il vous plaît\"?",
+      "o": [
+       "tot ziens",
+       "sorry",
+       "bedankt",
+       "alstublieft"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«s'il vous plaît» betekent alstublieft.",
+      "uo": [
+       "«tot ziens» is Au revoir.",
+       "«sorry» is Excusez-moi.",
+       "«bedankt» is Merci.",
+       "Klopt: «s'il vous plaît» betekent alstublieft."
+      ],
+      "uh": "alstublieft: «s'il vous plaît» betekent alstublieft."
+     },
+     {
+      "v": "Wat betekent 'tu'?",
+      "o": [
+       "jij (informeel)",
+       "u (beleefd)",
+       "wij",
+       "hij"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "«tu» is de informele vorm (jij).",
+      "uo": [
+       "Klopt: «tu» is de informele vorm (jij).",
+       "«u (beleefd)» is vous.",
+       "«wij» is nous.",
+       "«hij» is il."
+      ],
+      "uh": "jij (informeel): «tu» is de informele vorm (jij)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Bonjour",
+      "d": "Franse begroeting: goedendag"
+     },
+     {
+      "t": "Au revoir",
+      "d": "Frans voor afscheid: tot ziens"
+     },
+     {
+      "t": "Salut",
+      "d": "informele begroeting/afscheid: hoi/doei"
+     },
+     {
+      "t": "Comment ça va",
+      "d": "Frans voor \"Hoe gaat het?\""
+     },
+     {
+      "t": "Enchanté",
+      "d": "zin bij een kennismaking: aangenaam"
+     },
+     {
+      "t": "Merci",
+      "d": "Frans voor bedanken"
+     },
+     {
+      "t": "De rien",
+      "d": "antwoord op merci: graag gedaan"
+     },
+     {
+      "t": "S'il vous plaît",
+      "d": "Frans voor \"alstublieft\""
+     },
+     {
+      "t": "Excusez-moi",
+      "d": "zin om je te verontschuldigen: pardon"
+     },
+     {
+      "t": "Vous",
+      "d": "beleefde aanspreekvorm (u); tu is informeel"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">In een gesprek gebruik je vaste <strong>beleefde uitdrukkingen</strong>: begroeten, bedanken en je verontschuldigen. Je spreekt iemand beleefd aan met <em>vous</em> en informeel met <em>tu</em>.</div><div class=\"sam-head\">1. Begroeten en beleefdheid</div><p>Je begroet met <em>Bonjour</em> (of informeel <em>Salut</em>) en neemt afscheid met <em>Au revoir</em>. Vraag je hoe het gaat: <em>Comment ça va?</em> Bij een kennismaking zeg je <em>Enchanté</em> (aangenaam). Belangrijk: <em>vous</em> is beleefd, <em>tu</em> is informeel.</p><div class=\"sam-head\">2. Bedanken en vragen</div><p>Bedanken doe je met <em>Merci</em>, en je antwoordt met <em>De rien</em> (graag gedaan). Beleefd vragen doe je met <em>s'il vous plaît</em> (alstublieft). Je verontschuldigt je met <em>Excusez-moi</em> (pardon).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bonjour</div><div class=\"sam-definitie-body\">Franse begroeting: goedendag.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Au revoir</div><div class=\"sam-definitie-body\">Frans voor afscheid: tot ziens.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Salut</div><div class=\"sam-definitie-body\">informele begroeting/afscheid: hoi/doei.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Comment ça va</div><div class=\"sam-definitie-body\">Frans voor \"Hoe gaat het?\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Enchanté</div><div class=\"sam-definitie-body\">zin bij een kennismaking: aangenaam.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Merci</div><div class=\"sam-definitie-body\">Frans voor bedanken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">De rien</div><div class=\"sam-definitie-body\">antwoord op merci: graag gedaan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">S'il vous plaît</div><div class=\"sam-definitie-body\">Frans voor \"alstublieft\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Excusez-moi</div><div class=\"sam-definitie-body\">zin om je te verontschuldigen: pardon.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vous</div><div class=\"sam-definitie-body\">beleefde aanspreekvorm (u); tu is informeel.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Bonjour»</b> is begroeting, terwijl <b>«Au revoir»</b> afscheid is. <b>«Salut»</b> is informeel: hoi, terwijl <b>«Bonjour»</b> begroeting is. <b>«Comment ça va»</b> is hoe gaat het, terwijl <b>«Enchanté»</b> aangenaam is. <b>«Merci»</b> is bedankt, terwijl <b>«De rien»</b> graag gedaan is.</div>"
    },
    {
     "id": "D",
@@ -299,7 +3685,196 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Kies de juiste vorm: 'Je ___ français.'",
+      "o": [
+       "parle",
+       "parles",
+       "parlons",
+       "parlent"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Bij je is de uitgang -e: je parle.",
+      "uo": [
+       "Klopt: bij je is de uitgang -e: je parle.",
+       "«parles» hoort bij tu.",
+       "«parlons» hoort bij nous.",
+       "«parlent» hoort bij ils/elles."
+      ],
+      "uh": "je -e, tu -es, il/elle -e, nous -ons, ils/elles -ent."
+     },
+     {
+      "v": "Kies de juiste vorm: 'Tu ___ un livre.' (avoir)",
+      "o": [
+       "ai",
+       "as",
+       "a",
+       "ont"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij tu hoort «as».",
+      "uo": [
+       "«ai» hoort bij je (j'ai).",
+       "Klopt: bij tu hoort «as».",
+       "«a» hoort bij il/elle.",
+       "«ont» hoort bij ils/elles."
+      ],
+      "uh": "as: Bij tu hoort «as»."
+     },
+     {
+      "v": "Welk lidwoord is meervoud (de)?",
+      "o": [
+       "le",
+       "la",
+       "les",
+       "un"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "«les» is het meervoudslidwoord.",
+      "uo": [
+       "«le» is mannelijk enkelvoud.",
+       "«la» is vrouwelijk enkelvoud.",
+       "Klopt: «les» is het meervoudslidwoord.",
+       "«un» is onbepaald (een)."
+      ],
+      "uh": "le (mannelijk), la (vrouwelijk), les (meervoud)."
+     },
+     {
+      "v": "Hoe maak je 'Je parle' ontkennend?",
+      "o": [
+       "Je parle non",
+       "Non je parle",
+       "Je pas parle",
+       "Je ne parle pas"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Ne voor en pas na het werkwoord: je ne parle pas.",
+      "uo": [
+       "«non» los erbij is geen correcte ontkenning.",
+       "«non» vooraan ontkent de zin niet correct.",
+       "«pas» moet na het werkwoord, niet ervoor alleen.",
+       "Klopt: ne voor en pas na het werkwoord: je ne parle pas."
+      ],
+      "uh": "Ontkenning: ne + werkwoord + pas (je ne ... pas)."
+     },
+     {
+      "v": "Kies de juiste vorm: 'Il ___ à la maison.' (être)",
+      "o": [
+       "est",
+       "es",
+       "suis",
+       "sont"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Bij il hoort «est».",
+      "uo": [
+       "Klopt: bij il hoort «est».",
+       "«es» hoort bij tu.",
+       "«suis» hoort bij je.",
+       "«sont» hoort bij ils/elles."
+      ],
+      "uh": "est: Bij il hoort «est»."
+     },
+     {
+      "v": "Kies de juiste vorm: 'Nous ___ français.'",
+      "o": [
+       "parle",
+       "parlons",
+       "parles",
+       "parlent"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij nous is de uitgang -ons: parlons.",
+      "uo": [
+       "«parle» hoort bij je/il.",
+       "Klopt: bij nous is de uitgang -ons: parlons.",
+       "«parles» hoort bij tu.",
+       "«parlent» hoort bij ils/elles."
+      ],
+      "uh": "parlons: Bij nous is de uitgang -ons: parlons."
+     },
+     {
+      "v": "Kies de juiste vorm: 'J'___ un chien.' (avoir)",
+      "o": [
+       "a",
+       "as",
+       "ai",
+       "avons"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij je hoort «ai» (j'ai).",
+      "uo": [
+       "«a» hoort bij il/elle.",
+       "«as» hoort bij tu.",
+       "Klopt: bij je hoort «ai» (j'ai).",
+       "«avons» hoort bij nous."
+      ],
+      "uh": "ai: Bij je hoort «ai» (j'ai)."
+     },
+     {
+      "v": "Welk lidwoord hoort bij een vrouwelijk woord?",
+      "o": [
+       "le",
+       "un",
+       "les",
+       "la"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "«la» is het vrouwelijke lidwoord.",
+      "uo": [
+       "«le» is mannelijk.",
+       "«un» is onbepaald mannelijk.",
+       "«les» is meervoud.",
+       "Klopt: «la» is het vrouwelijke lidwoord."
+      ],
+      "uh": "la: «la» is het vrouwelijke lidwoord."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Le",
+      "d": "mannelijk lidwoord (de/het)"
+     },
+     {
+      "t": "La",
+      "d": "vrouwelijk lidwoord (de/het)"
+     },
+     {
+      "t": "Les",
+      "d": "meervoudslidwoord (de)"
+     },
+     {
+      "t": "Être",
+      "d": "werkwoord \"zijn\": je suis, tu es, il est"
+     },
+     {
+      "t": "Avoir",
+      "d": "werkwoord \"hebben\": j'ai, tu as, il a"
+     },
+     {
+      "t": "-er werkwoord",
+      "d": "werkwoord op -er: je parle, tu parles, il parle"
+     },
+     {
+      "t": "Ne ... pas",
+      "d": "de ontkenning rond het werkwoord (niet/geen)"
+     },
+     {
+      "t": "Werkwoordsuitgang",
+      "d": "de uitgang die past bij het onderwerp (parle, parles, parlons)"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>schrijven</strong> let je op de <strong>lidwoorden</strong> <em>le/la/les</em>, de <strong>werkwoordsvervoeging</strong> en de <strong>ontkenning</strong> met <em>ne ... pas</em>.</div><div class=\"sam-head\">1. Werkwoorden en lidwoorden</div><p>Werkwoorden op <em>-er</em> vervoeg je: <em>je parle, tu parles, il/elle parle, nous parlons, ils parlent</em>. De hulpwerkwoorden zijn <em>être</em> (zijn: je suis, tu es, il est) en <em>avoir</em> (hebben: j'ai, tu as, il a). Lidwoorden: <em>le</em> (mannelijk), <em>la</em> (vrouwelijk), <em>les</em> (meervoud).</p><div class=\"sam-head\">2. Ontkenning</div><p>Een ontkenning maak je met <strong>ne ... pas</strong> rond het werkwoord: <em>Je ne parle pas français</em> (Ik spreek geen Frans). Beide delen horen erbij: <em>ne</em> voor en <em>pas</em> na het werkwoord.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Le</div><div class=\"sam-definitie-body\">mannelijk lidwoord (de/het).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">La</div><div class=\"sam-definitie-body\">vrouwelijk lidwoord (de/het).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Les</div><div class=\"sam-definitie-body\">meervoudslidwoord (de).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Être</div><div class=\"sam-definitie-body\">werkwoord \"zijn\": je suis, tu es, il est.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Avoir</div><div class=\"sam-definitie-body\">werkwoord \"hebben\": j'ai, tu as, il a.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">-er werkwoord</div><div class=\"sam-definitie-body\">werkwoord op -er: je parle, tu parles, il parle.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ne ... pas</div><div class=\"sam-definitie-body\">de ontkenning rond het werkwoord (niet/geen).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Werkwoordsuitgang</div><div class=\"sam-definitie-body\">de uitgang die past bij het onderwerp (parle, parles, parlons).</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Le»</b> is mannelijk, terwijl <b>«La»</b> vrouwelijk is. <b>«Les»</b> is meervoud, terwijl <b>«Le»</b> mannelijk is. <b>«Être»</b> is zijn, terwijl <b>«Avoir»</b> hebben is. <b>«-er werkwoord»</b> is regelmatig -er, terwijl <b>«Être»</b> zijn is.</div>"
    }
   ]
  },
@@ -329,7 +3904,215 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Los op: 3x = 12",
+      "o": [
+       "x = 4",
+       "x = 3",
+       "x = 9",
+       "x = 36"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Deel beide kanten door 3: x = 4.",
+      "uo": [
+       "Klopt: deel beide kanten door 3: x = 4.",
+       "Bij x = 3 is 3·3 = 9, niet 12.",
+       "x = 9 zou 3·9 = 27 geven.",
+       "x = 36 is 12·3, de verkeerde bewerking."
+      ],
+      "uh": "Bij ax = b deel je beide kanten door a."
+     },
+     {
+      "v": "Los op: x + 5 = 12",
+      "o": [
+       "x = 5",
+       "x = 7",
+       "x = 17",
+       "x = 60"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Haal 5 weg aan beide kanten: x = 7.",
+      "uo": [
+       "x = 5 geeft 5 + 5 = 10.",
+       "Klopt: haal 5 weg aan beide kanten: x = 7.",
+       "x = 17 is 12 + 5, de verkeerde kant op.",
+       "x = 60 is 12·5, dat hoort hier niet."
+      ],
+      "uh": "x = 7: Haal 5 weg aan beide kanten: x = 7."
+     },
+     {
+      "v": "Bereken 2x + 3 als x = 4.",
+      "o": [
+       "9",
+       "14",
+       "11",
+       "24"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "2·4 + 3 = 8 + 3 = 11.",
+      "uo": [
+       "9 zou 2·3 zijn, verkeerde x.",
+       "14 telt er te veel bij op.",
+       "Klopt: 2·4 + 3 = 8 + 3 = 11.",
+       "24 is 2·(4+3)·..., de verkeerde volgorde."
+      ],
+      "uh": "Vul x in en reken uit: eerst maal, dan plus."
+     },
+     {
+      "v": "In y = 2x + 1, wat is y als x = 3?",
+      "o": [
+       "5",
+       "6",
+       "9",
+       "7"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "2·3 + 1 = 7.",
+      "uo": [
+       "5 zou 2·2 + 1 zijn.",
+       "6 vergeet de + 1 of rekent 2·3.",
+       "9 telt te veel op.",
+       "Klopt: 2·3 + 1 = 7."
+      ],
+      "uh": "7: 2·3 + 1 = 7."
+     },
+     {
+      "v": "Los op: 5x = 20",
+      "o": [
+       "x = 4",
+       "x = 5",
+       "x = 15",
+       "x = 100"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Deel beide kanten door 5: x = 4.",
+      "uo": [
+       "Klopt: deel beide kanten door 5: x = 4.",
+       "x = 5 geeft 5·5 = 25.",
+       "x = 15 is 20 - 5, verkeerde bewerking.",
+       "x = 100 is 20·5, ook fout."
+      ],
+      "uh": "x = 4: Deel beide kanten door 5: x = 4."
+     },
+     {
+      "v": "Wat is de richtingscoëfficiënt in y = 3x + 2?",
+      "o": [
+       "2",
+       "3",
+       "5",
+       "1"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "A = 3 is de richtingscoëfficiënt (helling).",
+      "uo": [
+       "2 is het startgetal b, niet de helling.",
+       "Klopt: a = 3 is de richtingscoëfficiënt (helling).",
+       "5 is 3 + 2, geen van beide.",
+       "1 komt niet in de formule voor."
+      ],
+      "uh": "In y = ax + b is a de helling en b het startgetal."
+     },
+     {
+      "v": "Los op: x - 4 = 10",
+      "o": [
+       "x = 6",
+       "x = 40",
+       "x = 14",
+       "x = -6"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Tel 4 op aan beide kanten: x = 14.",
+      "uo": [
+       "x = 6 geeft 6 - 4 = 2.",
+       "x = 40 is 10·4, verkeerd.",
+       "Klopt: tel 4 op aan beide kanten: x = 14.",
+       "x = -6 is de verkeerde kant op."
+      ],
+      "uh": "x = 14: Tel 4 op aan beide kanten: x = 14."
+     },
+     {
+      "v": "Los op: 2x + 4 = 10",
+      "o": [
+       "x = 2",
+       "x = 7",
+       "x = 5",
+       "x = 3"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "2x = 6, dus x = 3.",
+      "uo": [
+       "x = 2 geeft 2·2 + 4 = 8.",
+       "x = 7 is veel te groot.",
+       "x = 5 geeft 14.",
+       "Klopt: 2x = 6, dus x = 3."
+      ],
+      "uh": "x = 3: 2x = 6, dus x = 3."
+     },
+     {
+      "v": "Wat betekent b in y = ax + b?",
+      "o": [
+       "het snijpunt met de y-as",
+       "de helling",
+       "de x-waarde",
+       "de oppervlakte"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "B is het startgetal, het snijpunt met de y-as.",
+      "uo": [
+       "Klopt: b is het startgetal, het snijpunt met de y-as.",
+       "De helling is a, niet b.",
+       "b is geen x-waarde.",
+       "Oppervlakte hoort hier niet bij."
+      ],
+      "uh": "het snijpunt met de y-as: B is het startgetal, het snijpunt met de y-as."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Vergelijking",
+      "d": "een gelijkheid met een onbekende die je oplost"
+     },
+     {
+      "t": "Richtingscoëfficiënt",
+      "d": "de helling a in y = ax + b"
+     },
+     {
+      "t": "Startgetal",
+      "d": "het getal b in y = ax + b: het snijpunt met de y-as"
+     },
+     {
+      "t": "Lineair verband",
+      "d": "een verband met een rechte lijn: y = ax + b"
+     },
+     {
+      "t": "Variabele",
+      "d": "een letter die voor een getal staat, zoals x"
+     },
+     {
+      "t": "Substitueren",
+      "d": "een getal invullen op de plaats van een letter"
+     },
+     {
+      "t": "Coëfficiënt",
+      "d": "het getal voor een letter, zoals de 3 in 3x"
+     },
+     {
+      "t": "Oplossing",
+      "d": "de waarde van x die de vergelijking klopt maakt"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Je lost <strong>vergelijkingen</strong> op door aan beide kanten hetzelfde te doen, en je werkt met de <strong>lineaire formule</strong> <em>y = ax + b</em>, waarin <em>a</em> de helling is en <em>b</em> het snijpunt met de y-as.</div><div class=\"sam-head\">1. Vergelijkingen oplossen</div><p>Een <strong>vergelijking</strong> los je op door links en rechts dezelfde bewerking te doen, tot <em>x</em> alleen staat. Staat er <em>3x = 12</em>, dan deel je beide kanten door 3: <em>x = 4</em>. Staat er <em>x + 5 = 12</em>, dan haal je 5 aan beide kanten weg: <em>x = 7</em>.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Vergelijking oplossen</div><div class=\"sam-formula-eq\">Doe links en rechts hetzelfde tot x alleen staat</div><div class=\"sam-formula-note\">Bijvoorbeeld: 2x + 4 = 10 → 2x = 6 → x = 3.</div></div><div class=\"sam-worked\"><div class=\"sam-worked-h\">✍️ Voorbeeldopgave</div><div class=\"sam-worked-q\">Los op: 2x + 4 = 10</div><ol class=\"sam-worked-steps\"><li>Haal 4 aan beide kanten weg: 2x = 6</li><li>Deel beide kanten door 2: x = 3</li></ol><div class=\"sam-worked-ans\">✅ x = 3</div></div><div class=\"sam-head\">2. De lineaire formule y = ax + b</div><p>In <em>y = ax + b</em> is <em>a</em> de <strong>richtingscoëfficiënt</strong> (de helling: hoeveel y stijgt per stap x) en <em>b</em> het <strong>startgetal</strong> (het snijpunt met de y-as). Vul je een x-waarde in, dan reken je y uit. Bij <em>y = 2x + 1</em> en <em>x = 3</em> geldt <em>y = 2·3 + 1 = 7</em>.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Lineair verband</div><div class=\"sam-formula-eq\">y = a·x + b</div><div class=\"sam-formula-note\">a = helling (richtingscoëfficiënt), b = snijpunt met de y-as.</div></div><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vergelijking</div><div class=\"sam-definitie-body\">een gelijkheid met een onbekende die je oplost.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Richtingscoëfficiënt</div><div class=\"sam-definitie-body\">de helling a in y = ax + b.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Startgetal</div><div class=\"sam-definitie-body\">het getal b in y = ax + b: het snijpunt met de y-as.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Lineair verband</div><div class=\"sam-definitie-body\">een verband met een rechte lijn: y = ax + b.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Variabele</div><div class=\"sam-definitie-body\">een letter die voor een getal staat, zoals x.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Substitueren</div><div class=\"sam-definitie-body\">een getal invullen op de plaats van een letter.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Coëfficiënt</div><div class=\"sam-definitie-body\">het getal voor een letter, zoals de 3 in 3x.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Oplossing</div><div class=\"sam-definitie-body\">de waarde van x die de vergelijking klopt maakt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Richtingscoëfficiënt»</b> is de helling a, terwijl <b>«Startgetal»</b> snijpunt y-as (b) is. <b>«Lineair verband»</b> is rechte lijn, terwijl <b>«Vergelijking»</b> oplossen naar x is. <b>«Variabele»</b> is letter voor een getal, terwijl <b>«Vergelijking»</b> oplossen naar x is. <b>«Substitueren»</b> is getal invullen, terwijl <b>«Variabele»</b> letter voor een getal is.</div>"
    },
    {
     "id": "B",
@@ -345,7 +4128,196 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Hoeveel is 10% van 200?",
+      "o": [
+       "20",
+       "10",
+       "2",
+       "100"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "200 : 100 · 10 = 20.",
+      "uo": [
+       "Klopt: 200 : 100 · 10 = 20.",
+       "10 is 5% van 200.",
+       "2 is 1% van 200.",
+       "100 is de helft (50%)."
+      ],
+      "uh": "Percentage van een getal: getal : 100 · percentage."
+     },
+     {
+      "v": "Hoeveel is 25% van 80?",
+      "o": [
+       "16",
+       "20",
+       "25",
+       "40"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "80 : 100 · 25 = 20 (een kwart).",
+      "uo": [
+       "16 is 20% van 80.",
+       "Klopt: 80 : 100 · 25 = 20 (een kwart).",
+       "25 is het percentage, niet het antwoord.",
+       "40 is de helft (50%)."
+      ],
+      "uh": "20: 80 : 100 · 25 = 20 (een kwart)."
+     },
+     {
+      "v": "Hoeveel cm is 1 meter?",
+      "o": [
+       "10",
+       "1000",
+       "100",
+       "1"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "1 meter is 100 cm.",
+      "uo": [
+       "10 cm is een decimeter.",
+       "1000 cm is 10 meter.",
+       "Klopt: 1 meter is 100 cm.",
+       "1 cm is veel te weinig."
+      ],
+      "uh": "1 m = 100 cm, 1 kg = 1000 g, 1 uur = 60 min."
+     },
+     {
+      "v": "Hoeveel is 50% van 60?",
+      "o": [
+       "6",
+       "120",
+       "50",
+       "30"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "50% is de helft: 30.",
+      "uo": [
+       "6 is 10% van 60.",
+       "120 is het dubbele.",
+       "50 is het percentage, niet het antwoord.",
+       "Klopt: 50% is de helft: 30."
+      ],
+      "uh": "30: 50% is de helft: 30."
+     },
+     {
+      "v": "Hoeveel gram is 1 kilogram?",
+      "o": [
+       "1000",
+       "100",
+       "10",
+       "10000"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "1 kg is 1000 gram.",
+      "uo": [
+       "Klopt: 1 kg is 1000 gram.",
+       "100 gram is een ons.",
+       "10 gram is heel weinig.",
+       "10000 gram is 10 kg."
+      ],
+      "uh": "1000: 1 kg is 1000 gram."
+     },
+     {
+      "v": "Hoeveel is 3² (3 kwadraat)?",
+      "o": [
+       "6",
+       "9",
+       "5",
+       "8"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "3² = 3 · 3 = 9.",
+      "uo": [
+       "6 is 3 · 2, geen kwadraat.",
+       "Klopt: 3² = 3 · 3 = 9.",
+       "5 is 3 + 2, het juiste antwoord is «9».",
+       "8 is 2³, niet 3²."
+      ],
+      "uh": "a² betekent a maal zichzelf."
+     },
+     {
+      "v": "Rond 3,7 af op een heel getal.",
+      "o": [
+       "3",
+       "3,5",
+       "4",
+       "40"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "3,7 rondt af naar 4.",
+      "uo": [
+       "3 rondt naar beneden af; 3,7 ligt dichter bij 4.",
+       "3,5 is geen heel getal.",
+       "Klopt: 3,7 rondt af naar 4.",
+       "40 is 3,7 maal 10-ish, fout."
+      ],
+      "uh": "4: 3,7 rondt af naar 4."
+     },
+     {
+      "v": "Hoeveel minuten zitten er in 2 uur?",
+      "o": [
+       "60",
+       "200",
+       "20",
+       "120"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "2 · 60 = 120 minuten.",
+      "uo": [
+       "60 minuten is 1 uur.",
+       "200 klopt niet met 60 per uur.",
+       "20 is veel te weinig.",
+       "Klopt: 2 · 60 = 120 minuten."
+      ],
+      "uh": "120: 2 · 60 = 120 minuten."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Procent",
+      "d": "een deel per honderd"
+     },
+     {
+      "t": "Verhouding",
+      "d": "de relatie tussen twee aantallen, zoals 1 : 2"
+     },
+     {
+      "t": "Kwadraat",
+      "d": "een getal maal zichzelf: a² = a · a"
+     },
+     {
+      "t": "Afronden",
+      "d": "een getal vervangen door een handig, dichtbij getal"
+     },
+     {
+      "t": "Schatten",
+      "d": "een antwoord bij benadering bepalen"
+     },
+     {
+      "t": "Meter",
+      "d": "eenheid van lengte; 1 meter is 100 cm"
+     },
+     {
+      "t": "Kilogram",
+      "d": "eenheid van massa; 1 kg is 1000 gram"
+     },
+     {
+      "t": "Percentage",
+      "d": "een deel uitgedrukt in honderdsten"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Je rekent met <strong>procenten</strong>, <strong>verhoudingen</strong> en <strong>eenheden</strong>. Een procent is een deel per honderd: <em>10% van 200 = 20</em>.</div><div class=\"sam-head\">1. Procenten</div><p>Een <strong>procent</strong> is een deel per honderd. Je rekent een percentage van een getal uit door te delen door 100 en te vermenigvuldigen. <em>25% van 80 = 80 : 100 · 25 = 20</em>.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Percentage van een getal</div><div class=\"sam-formula-eq\">deel = getal : 100 · percentage</div><div class=\"sam-formula-note\">25% van 80 = 80 : 100 · 25 = 20.</div></div><div class=\"sam-worked\"><div class=\"sam-worked-h\">✍️ Voorbeeldopgave</div><div class=\"sam-worked-q\">Hoeveel is 20% van 50?</div><ol class=\"sam-worked-steps\"><li>Deel door 100: 50 : 100 = 0,5</li><li>Maal het percentage: 0,5 · 20 = 10</li></ol><div class=\"sam-worked-ans\">✅ 10</div></div><div class=\"sam-head\">2. Eenheden en verhoudingen</div><p>Bij <strong>eenheden</strong> onthoud je: 1 meter = 100 cm, 1 kg = 1000 gram, 1 uur = 60 minuten. Een <strong>verhouding</strong> als 1 : 2 betekent: op elke 1 hoort 2. Bij een <strong>machtsverheffing</strong> is <em>3² = 3 · 3 = 9</em>.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Kwadraat</div><div class=\"sam-formula-eq\">a² = a · a</div><div class=\"sam-formula-note\">Bijvoorbeeld 3² = 3 · 3 = 9.</div></div><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Procent</div><div class=\"sam-definitie-body\">een deel per honderd.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verhouding</div><div class=\"sam-definitie-body\">de relatie tussen twee aantallen, zoals 1 : 2.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kwadraat</div><div class=\"sam-definitie-body\">een getal maal zichzelf: a² = a · a.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Afronden</div><div class=\"sam-definitie-body\">een getal vervangen door een handig, dichtbij getal.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Schatten</div><div class=\"sam-definitie-body\">een antwoord bij benadering bepalen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Meter</div><div class=\"sam-definitie-body\">eenheid van lengte; 1 meter is 100 cm.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kilogram</div><div class=\"sam-definitie-body\">eenheid van massa; 1 kg is 1000 gram.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Percentage</div><div class=\"sam-definitie-body\">een deel uitgedrukt in honderdsten.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Procent»</b> is deel per honderd, terwijl <b>«Verhouding»</b> relatie tussen aantallen is. <b>«Kwadraat»</b> is getal maal zichzelf, terwijl <b>«Verhouding»</b> relatie tussen aantallen is. <b>«Afronden»</b> is op een net getal, terwijl <b>«Schatten»</b> bij benadering is. <b>«Meter»</b> is 1 m = 100 cm, terwijl <b>«Kilogram»</b> 1 kg = 1000 g is.</div>"
    },
    {
     "id": "C",
@@ -361,7 +4333,196 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Oppervlakte van een rechthoek van 4 bij 5?",
+      "o": [
+       "20",
+       "9",
+       "18",
+       "40"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Lengte · breedte = 4 · 5 = 20.",
+      "uo": [
+       "Klopt: lengte · breedte = 4 · 5 = 20.",
+       "9 is 4 + 5, dat is geen oppervlakte.",
+       "18 is de omtrek, niet de oppervlakte.",
+       "40 is het dubbele, fout."
+      ],
+      "uh": "Oppervlakte rechthoek = lengte · breedte."
+     },
+     {
+      "v": "Omtrek van een vierkant met zijde 3?",
+      "o": [
+       "9",
+       "12",
+       "6",
+       "3"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "4 zijden van 3: 4 · 3 = 12.",
+      "uo": [
+       "9 is 3² (de oppervlakte).",
+       "Klopt: 4 zijden van 3: 4 · 3 = 12.",
+       "6 is maar twee zijden.",
+       "3 is één zijde."
+      ],
+      "uh": "Omtrek = som van alle zijden."
+     },
+     {
+      "v": "Hoeveel graden is een rechte hoek?",
+      "o": [
+       "45",
+       "180",
+       "90",
+       "360"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een rechte hoek is 90°.",
+      "uo": [
+       "45° is een halve rechte hoek.",
+       "180° is een gestrekte hoek.",
+       "Klopt: een rechte hoek is 90°.",
+       "360° is een volledige draai."
+      ],
+      "uh": "Recht 90°, gestrekt 180°, volle draai 360°."
+     },
+     {
+      "v": "Oppervlakte van een vierkant met zijde 6?",
+      "o": [
+       "12",
+       "6",
+       "24",
+       "36"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Zijde · zijde = 6 · 6 = 36.",
+      "uo": [
+       "12 is 6 + 6.",
+       "6 is één zijde.",
+       "24 is de omtrek.",
+       "Klopt: zijde · zijde = 6 · 6 = 36."
+      ],
+      "uh": "36: Zijde · zijde = 6 · 6 = 36."
+     },
+     {
+      "v": "De hoeken van een driehoek zijn samen...",
+      "o": [
+       "180°",
+       "90°",
+       "270°",
+       "360°"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De hoeken van een driehoek zijn samen 180°.",
+      "uo": [
+       "Klopt: de hoeken van een driehoek zijn samen 180°.",
+       "90° is één rechte hoek.",
+       "270° klopt niet.",
+       "360° geldt voor een vierhoek."
+      ],
+      "uh": "180°: De hoeken van een driehoek zijn samen 180°."
+     },
+     {
+      "v": "Oppervlakte van een driehoek met basis 6 en hoogte 4?",
+      "o": [
+       "24",
+       "12",
+       "10",
+       "48"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "½ · 6 · 4 = 12.",
+      "uo": [
+       "24 vergeet de factor ½ (dat is 6·4).",
+       "Klopt: ½ · 6 · 4 = 12.",
+       "10 is 6 + 4.",
+       "48 is veel te groot."
+      ],
+      "uh": "Oppervlakte driehoek = ½ · basis · hoogte."
+     },
+     {
+      "v": "Volume van een balk 2 bij 3 bij 4?",
+      "o": [
+       "9",
+       "14",
+       "24",
+       "12"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "2 · 3 · 4 = 24.",
+      "uo": [
+       "9 is 2 + 3 + 4.",
+       "14 klopt niet.",
+       "Klopt: 2 · 3 · 4 = 24.",
+       "12 is maar 3 · 4."
+      ],
+      "uh": "Volume balk = lengte · breedte · hoogte."
+     },
+     {
+      "v": "Rechthoekige driehoek met a = 3 en b = 4. Wat is c?",
+      "o": [
+       "12",
+       "6",
+       "7",
+       "5"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "C = √(3² + 4²) = √25 = 5.",
+      "uo": [
+       "12 is 3 · 4.",
+       "6 klopt niet met Pythagoras.",
+       "7 is 3 + 4, maar zo werkt het niet.",
+       "Klopt: c = √(3² + 4²) = √25 = 5."
+      ],
+      "uh": "Pythagoras: a² + b² = c², c is de schuine zijde."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Oppervlakte",
+      "d": "de grootte van een vlak: lengte maal breedte"
+     },
+     {
+      "t": "Omtrek",
+      "d": "de lengte van de rand rondom een figuur"
+     },
+     {
+      "t": "Rechte hoek",
+      "d": "een hoek van 90 graden"
+     },
+     {
+      "t": "Gestrekte hoek",
+      "d": "een hoek van 180 graden"
+     },
+     {
+      "t": "Stelling van Pythagoras",
+      "d": "a² + b² = c² in een rechthoekige driehoek"
+     },
+     {
+      "t": "Schuine zijde",
+      "d": "de langste zijde (c) tegenover de rechte hoek"
+     },
+     {
+      "t": "Volume",
+      "d": "de inhoud van een lichaam: lengte · breedte · hoogte"
+     },
+     {
+      "t": "Hoek",
+      "d": "de opening tussen twee lijnen, gemeten in graden"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">In de <strong>meetkunde</strong> reken je met <strong>oppervlakte</strong>, <strong>omtrek</strong>, <strong>hoeken</strong> en de <strong>stelling van Pythagoras</strong>.</div><div class=\"sam-head\">1. Oppervlakte en omtrek</div><p>De <strong>oppervlakte</strong> van een rechthoek is <em>lengte · breedte</em>; de <strong>omtrek</strong> is de lengte van de rand: <em>2 · (lengte + breedte)</em>. De oppervlakte van een <strong>driehoek</strong> is <em>½ · basis · hoogte</em>.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Rechthoek en driehoek</div><div class=\"sam-formula-eq\">A(rechthoek) = l · b   ·   A(driehoek) = ½ · b · h</div><div class=\"sam-formula-note\">Omtrek rechthoek = 2 · (l + b).</div></div><div class=\"sam-worked\"><div class=\"sam-worked-h\">✍️ Voorbeeldopgave</div><div class=\"sam-worked-q\">Oppervlakte van een driehoek met basis 6 en hoogte 4</div><ol class=\"sam-worked-steps\"><li>Gebruik ½ · basis · hoogte</li><li>½ · 6 · 4 = 12</li></ol><div class=\"sam-worked-ans\">✅ 12</div></div><div class=\"sam-head\">2. Hoeken en Pythagoras</div><p>Een <strong>rechte hoek</strong> is 90°, een <strong>gestrekte hoek</strong> 180°. De hoeken van een driehoek zijn samen 180°. In een <strong>rechthoekige driehoek</strong> geldt de <strong>stelling van Pythagoras</strong>: <em>a² + b² = c²</em>, met c de langste zijde (schuine zijde).</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Stelling van Pythagoras</div><div class=\"sam-formula-eq\">a² + b² = c²</div><div class=\"sam-formula-note\">c is de schuine zijde. Bij a = 3 en b = 4: c = √(9 + 16) = 5.</div></div><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Oppervlakte</div><div class=\"sam-definitie-body\">de grootte van een vlak: lengte maal breedte.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Omtrek</div><div class=\"sam-definitie-body\">de lengte van de rand rondom een figuur.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Rechte hoek</div><div class=\"sam-definitie-body\">een hoek van 90 graden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gestrekte hoek</div><div class=\"sam-definitie-body\">een hoek van 180 graden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stelling van Pythagoras</div><div class=\"sam-definitie-body\">a² + b² = c² in een rechthoekige driehoek.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Schuine zijde</div><div class=\"sam-definitie-body\">de langste zijde (c) tegenover de rechte hoek.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Volume</div><div class=\"sam-definitie-body\">de inhoud van een lichaam: lengte · breedte · hoogte.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hoek</div><div class=\"sam-definitie-body\">de opening tussen twee lijnen, gemeten in graden.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Oppervlakte»</b> is l · b, terwijl <b>«Omtrek»</b> lengte van de rand is. <b>«Rechte hoek»</b> is 90 graden, terwijl <b>«Gestrekte hoek»</b> 180 graden is. <b>«Stelling van Pythagoras»</b> is a² + b² = c², terwijl <b>«Oppervlakte»</b> l · b is. <b>«Schuine zijde»</b> is langste zijde c, terwijl <b>«Rechte hoek»</b> 90 graden is.</div>"
    },
    {
     "id": "D",
@@ -376,7 +4537,196 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is het gemiddelde van 2, 4 en 6?",
+      "o": [
+       "4",
+       "3",
+       "6",
+       "12"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "(2 + 4 + 6) : 3 = 12 : 3 = 4.",
+      "uo": [
+       "Klopt: (2 + 4 + 6) : 3 = 12 : 3 = 4.",
+       "3 is te laag; tel eerst op.",
+       "6 is het grootste getal, niet het gemiddelde.",
+       "12 is de som, nog niet gedeeld."
+      ],
+      "uh": "Gemiddelde = som : aantal."
+     },
+     {
+      "v": "Wat is de modus van 2, 3, 3, 5?",
+      "o": [
+       "2",
+       "3",
+       "5",
+       "13"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "3 komt het vaakst voor, dus dat is de modus.",
+      "uo": [
+       "2 komt maar één keer voor.",
+       "Klopt: 3 komt het vaakst voor, dus dat is de modus.",
+       "5 komt één keer voor.",
+       "13 is de som, geen modus."
+      ],
+      "uh": "Modus = het getal dat het vaakst voorkomt."
+     },
+     {
+      "v": "Wat is de kans op kop bij een eerlijke munt?",
+      "o": [
+       "1 op 6",
+       "1 op 4",
+       "1 op 2",
+       "zeker"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Kop of munt, dus 1 op 2.",
+      "uo": [
+       "1 op 6 hoort bij een dobbelsteen.",
+       "1 op 4 klopt niet bij een munt.",
+       "Klopt: kop of munt, dus 1 op 2.",
+       "Kop is niet zeker; munt kan ook."
+      ],
+      "uh": "Kans = gunstige : totaal aantal uitkomsten."
+     },
+     {
+      "v": "Wat is het gemiddelde van 10 en 20?",
+      "o": [
+       "10",
+       "30",
+       "20",
+       "15"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "(10 + 20) : 2 = 15.",
+      "uo": [
+       "10 is het kleinste getal.",
+       "30 is de som, nog niet gedeeld.",
+       "20 is het grootste getal.",
+       "Klopt: (10 + 20) : 2 = 15."
+      ],
+      "uh": "15: (10 + 20) : 2 = 15."
+     },
+     {
+      "v": "Wat is de mediaan van 1, 3 en 5?",
+      "o": [
+       "3",
+       "1",
+       "5",
+       "9"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Op volgorde is 3 het middelste getal.",
+      "uo": [
+       "Klopt: op volgorde is 3 het middelste getal.",
+       "1 is het kleinste getal.",
+       "5 is het grootste getal.",
+       "9 is de som."
+      ],
+      "uh": "Mediaan = het middelste getal op volgorde."
+     },
+     {
+      "v": "Wat is de kans op een 6 met één dobbelsteen?",
+      "o": [
+       "1 op 2",
+       "1 op 6",
+       "1 op 3",
+       "zeker"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Er zijn 6 zijden, dus 1 op 6.",
+      "uo": [
+       "1 op 2 hoort bij een munt.",
+       "Klopt: er zijn 6 zijden, dus 1 op 6.",
+       "1 op 3 klopt niet.",
+       "Een 6 is niet zeker."
+      ],
+      "uh": "1 op 6: Er zijn 6 zijden, dus 1 op 6."
+     },
+     {
+      "v": "Wat is de modus?",
+      "o": [
+       "het gemiddelde",
+       "het middelste getal",
+       "het meest voorkomende getal",
+       "het grootste getal"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De modus is het meest voorkomende getal.",
+      "uo": [
+       "Het gemiddelde is som : aantal.",
+       "Het middelste getal is de mediaan.",
+       "Klopt: de modus is het meest voorkomende getal.",
+       "Het grootste getal is het maximum."
+      ],
+      "uh": "het meest voorkomende getal: De modus is het meest voorkomende getal."
+     },
+     {
+      "v": "Een heel cirkeldiagram staat samen voor...",
+      "o": [
+       "50%",
+       "25%",
+       "10%",
+       "100%"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De hele cirkel is samen 100%.",
+      "uo": [
+       "50% is een halve cirkel.",
+       "25% is een kwart.",
+       "10% is een klein stukje.",
+       "Klopt: de hele cirkel is samen 100%."
+      ],
+      "uh": "100%: De hele cirkel is samen 100%."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Gemiddelde",
+      "d": "de som van de getallen gedeeld door het aantal"
+     },
+     {
+      "t": "Modus",
+      "d": "het getal dat het vaakst voorkomt"
+     },
+     {
+      "t": "Mediaan",
+      "d": "het middelste getal als je ze op volgorde zet"
+     },
+     {
+      "t": "Kans",
+      "d": "gunstige uitkomsten gedeeld door totaal aantal uitkomsten"
+     },
+     {
+      "t": "Cirkeldiagram",
+      "d": "een diagram waarin de hele cirkel 100% is"
+     },
+     {
+      "t": "Staafdiagram",
+      "d": "een diagram met staven die aantallen tonen"
+     },
+     {
+      "t": "Frequentie",
+      "d": "hoe vaak een waarde voorkomt"
+     },
+     {
+      "t": "Uitkomst",
+      "d": "een mogelijk resultaat van een kansexperiment"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Je bepaalt het <strong>gemiddelde</strong>, de <strong>modus</strong> en de <strong>mediaan</strong> van getallen, en je rekent met eenvoudige <strong>kansen</strong>.</div><div class=\"sam-head\">1. Gemiddelde, modus en mediaan</div><p>Het <strong>gemiddelde</strong> is de som van de getallen gedeeld door hoeveel het er zijn. De <strong>modus</strong> is het getal dat het vaakst voorkomt. De <strong>mediaan</strong> is het middelste getal als je ze op volgorde zet.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Gemiddelde</div><div class=\"sam-formula-eq\">gemiddelde = som van de getallen : aantal getallen</div><div class=\"sam-formula-note\">Bijvoorbeeld (2 + 4 + 6) : 3 = 4.</div></div><div class=\"sam-worked\"><div class=\"sam-worked-h\">✍️ Voorbeeldopgave</div><div class=\"sam-worked-q\">Bereken het gemiddelde van 2, 4 en 6</div><ol class=\"sam-worked-steps\"><li>Tel op: 2 + 4 + 6 = 12</li><li>Deel door het aantal (3): 12 : 3 = 4</li></ol><div class=\"sam-worked-ans\">✅ 4</div></div><div class=\"sam-head\">2. Kans</div><p>De <strong>kans</strong> op een uitkomst is het aantal gunstige uitkomsten gedeeld door het totale aantal uitkomsten. Bij een eerlijke munt is de kans op kop <em>1 op 2</em>; bij een dobbelsteen is de kans op een 6 gelijk aan <em>1 op 6</em>.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Kans</div><div class=\"sam-formula-eq\">kans = gunstige uitkomsten : totaal aantal uitkomsten</div><div class=\"sam-formula-note\">Kans op een 6 met één dobbelsteen = 1 : 6.</div></div><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gemiddelde</div><div class=\"sam-definitie-body\">de som van de getallen gedeeld door het aantal.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Modus</div><div class=\"sam-definitie-body\">het getal dat het vaakst voorkomt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Mediaan</div><div class=\"sam-definitie-body\">het middelste getal als je ze op volgorde zet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kans</div><div class=\"sam-definitie-body\">gunstige uitkomsten gedeeld door totaal aantal uitkomsten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cirkeldiagram</div><div class=\"sam-definitie-body\">een diagram waarin de hele cirkel 100% is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Staafdiagram</div><div class=\"sam-definitie-body\">een diagram met staven die aantallen tonen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Frequentie</div><div class=\"sam-definitie-body\">hoe vaak een waarde voorkomt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Uitkomst</div><div class=\"sam-definitie-body\">een mogelijk resultaat van een kansexperiment.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Gemiddelde»</b> is som : aantal, terwijl <b>«Mediaan»</b> het middelste getal is. <b>«Modus»</b> is meest voorkomend, terwijl <b>«Mediaan»</b> het middelste getal is. <b>«Kans»</b> is gunstig : totaal, terwijl <b>«Gemiddelde»</b> som : aantal is. <b>«Cirkeldiagram»</b> is hele cirkel = 100%, terwijl <b>«Staafdiagram»</b> staven tonen aantallen is.</div>"
    },
    {
     "id": "E",
@@ -2822,7 +7172,200 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is een zuivere stof?",
+      "o": [
+       "een stof uit één soort moleculen",
+       "meerdere stoffen door elkaar",
+       "altijd een vloeistof",
+       "altijd water"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een zuivere stof bestaat uit één soort moleculen.",
+      "uo": [
+       "Klopt: een zuivere stof bestaat uit één soort moleculen.",
+       "Dat is juist een mengsel.",
+       "Een zuivere stof kan ook vast of gas zijn.",
+       "Niet alleen water is zuiver."
+      ],
+      "uh": "Zuiver = één soort deeltjes, mengsel = meerdere stoffen."
+     },
+     {
+      "v": "Wat is zeewater?",
+      "o": [
+       "een zuivere stof",
+       "een mengsel",
+       "een element",
+       "een molecuul"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Water met zout erin is een mengsel.",
+      "uo": [
+       "Zeewater bevat meer dan één stof.",
+       "Klopt: water met zout erin is een mengsel.",
+       "Een element is een grondstof, niet zeewater.",
+       "Een molecuul is een deeltje, geen mengsel."
+      ],
+      "uh": "een mengsel: Water met zout erin is een mengsel."
+     },
+     {
+      "v": "Waarmee haal je vaste stukjes uit een vloeistof?",
+      "o": [
+       "destilleren",
+       "indampen",
+       "filtreren",
+       "smelten"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij filtreren blijft het vaste op het filter achter.",
+      "uo": [
+       "Destilleren scheidt op kookpunt.",
+       "Indampen verdampt juist de vloeistof.",
+       "Klopt: bij filtreren blijft het vaste op het filter achter.",
+       "Smelten is een faseovergang, geen scheiding."
+      ],
+      "uh": "Filtreren: vast eruit. Indampen: vloeistof weg. Destilleren: op kookpunt."
+     },
+     {
+      "v": "Wat is het smeltpunt?",
+      "o": [
+       "het gewicht",
+       "de temperatuur van vloeibaar naar gas",
+       "de massa per volume",
+       "de temperatuur van vast naar vloeibaar"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij het smeltpunt wordt vast vloeibaar.",
+      "uo": [
+       "Gewicht is geen smeltpunt.",
+       "Dat is het kookpunt.",
+       "Dat is de dichtheid.",
+       "Klopt: bij het smeltpunt wordt vast vloeibaar."
+      ],
+      "uh": "de temperatuur van vast naar vloeibaar: Bij het smeltpunt wordt vast vloeibaar."
+     },
+     {
+      "v": "Hoe scheid je zout uit zout water?",
+      "o": [
+       "indampen",
+       "filtreren",
+       "een magneet",
+       "zeven"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Door indampen verdampt het water en blijft het zout over.",
+      "uo": [
+       "Klopt: door indampen verdampt het water en blijft het zout over.",
+       "Zout zit opgelost, dus een filter houdt het niet tegen.",
+       "Een magneet werkt niet op zout.",
+       "Zeven werkt niet op opgeloste stoffen."
+      ],
+      "uh": "indampen: Door indampen verdampt het water en blijft het zout over."
+     },
+     {
+      "v": "Wat is dichtheid?",
+      "o": [
+       "het kookpunt",
+       "de massa per volume",
+       "het smeltpunt",
+       "de kleur"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Dichtheid is de massa per volume.",
+      "uo": [
+       "Het kookpunt is een temperatuur.",
+       "Klopt: dichtheid is de massa per volume.",
+       "Het smeltpunt is een temperatuur.",
+       "Kleur is een andere eigenschap."
+      ],
+      "uh": "de massa per volume: Dichtheid is de massa per volume."
+     },
+     {
+      "v": "Waarop scheidt destilleren stoffen?",
+      "o": [
+       "op kleur",
+       "op magnetisme",
+       "op verschil in kookpunt",
+       "op grootte"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Destilleren scheidt op verschil in kookpunt.",
+      "uo": [
+       "Kleur speelt bij destilleren geen rol.",
+       "Magnetisme is een andere methode.",
+       "Klopt: destilleren scheidt op verschil in kookpunt.",
+       "Grootte hoort bij filtreren of zeven."
+      ],
+      "uh": "op verschil in kookpunt: Destilleren scheidt op verschil in kookpunt."
+     },
+     {
+      "v": "Wat is een stofeigenschap?",
+      "o": [
+       "een filter",
+       "een mengsel",
+       "een reactie",
+       "een kenmerk waaraan je een stof herkent"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Aan een stofeigenschap herken je een stof.",
+      "uo": [
+       "Een filter is gereedschap.",
+       "Een mengsel is geen eigenschap.",
+       "Een reactie is een verandering, geen eigenschap.",
+       "Klopt: aan een stofeigenschap herken je een stof."
+      ],
+      "uh": "een kenmerk waaraan je een stof herkent: Aan een stofeigenschap herken je een stof."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Zuivere stof",
+      "d": "een stof die uit één soort moleculen bestaat"
+     },
+     {
+      "t": "Mengsel",
+      "d": "twee of meer stoffen door elkaar"
+     },
+     {
+      "t": "Stofeigenschap",
+      "d": "een kenmerk waaraan je een stof herkent"
+     },
+     {
+      "t": "Smeltpunt",
+      "d": "de temperatuur waarbij een stof van vast naar vloeibaar gaat"
+     },
+     {
+      "t": "Kookpunt",
+      "d": "de temperatuur waarbij een stof van vloeibaar naar gas gaat"
+     },
+     {
+      "t": "Dichtheid",
+      "d": "de massa per volume van een stof"
+     },
+     {
+      "t": "Filtreren",
+      "d": "vaste stukjes uit een vloeistof halen met een filter"
+     },
+     {
+      "t": "Indampen",
+      "d": "de vloeistof laten verdampen om de opgeloste stof over te houden"
+     },
+     {
+      "t": "Destilleren",
+      "d": "stoffen scheiden op verschil in kookpunt"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Een <strong>zuivere stof</strong> bestaat uit één soort deeltjes; een <strong>mengsel</strong> uit meerdere. Je herkent stoffen aan <strong>eigenschappen</strong> als smeltpunt en dichtheid, en je scheidt mengsels met <strong>filtreren</strong>, <strong>indampen</strong> of <strong>destilleren</strong>.</div><div class=\"sam-head\">1. Zuivere stof en mengsel</div><p>Een <strong>zuivere stof</strong> bestaat uit één soort moleculen (bijvoorbeeld puur water). Een <strong>mengsel</strong> bestaat uit meerdere stoffen door elkaar (bijvoorbeeld zeewater). Elke stof heeft eigen <strong>stofeigenschappen</strong> zoals <strong>smeltpunt</strong>, <strong>kookpunt</strong> en <strong>dichtheid</strong>, waaraan je hem herkent.</p><div class=\"sam-head\">2. Mengsels scheiden</div><p>Je scheidt een mengsel op basis van verschillen. Met <strong>filtreren</strong> haal je vaste stukjes uit een vloeistof. Met <strong>indampen</strong> laat je de vloeistof verdampen en houd je de opgeloste stof over. Met <strong>destilleren</strong> scheid je stoffen op kookpunt.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zuivere stof</div><div class=\"sam-definitie-body\">een stof die uit één soort moleculen bestaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Mengsel</div><div class=\"sam-definitie-body\">twee of meer stoffen door elkaar.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stofeigenschap</div><div class=\"sam-definitie-body\">een kenmerk waaraan je een stof herkent.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Smeltpunt</div><div class=\"sam-definitie-body\">de temperatuur waarbij een stof van vast naar vloeibaar gaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kookpunt</div><div class=\"sam-definitie-body\">de temperatuur waarbij een stof van vloeibaar naar gas gaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Dichtheid</div><div class=\"sam-definitie-body\">de massa per volume van een stof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Filtreren</div><div class=\"sam-definitie-body\">vaste stukjes uit een vloeistof halen met een filter.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Indampen</div><div class=\"sam-definitie-body\">de vloeistof laten verdampen om de opgeloste stof over te houden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Destilleren</div><div class=\"sam-definitie-body\">stoffen scheiden op verschil in kookpunt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Zuivere stof»</b> is één soort deeltjes, terwijl <b>«Mengsel»</b> meerdere stoffen is. <b>«Stofeigenschap»</b> is kenmerk van een stof, terwijl <b>«Dichtheid»</b> massa per volume is. <b>«Smeltpunt»</b> is vast wordt vloeibaar, terwijl <b>«Kookpunt»</b> vloeibaar wordt gas is. <b>«Filtreren»</b> is vaste stof eruit filteren, terwijl <b>«Indampen»</b> vloeistof weg, stof blijft is.</div>"
    },
    {
     "id": "B",
@@ -2837,7 +7380,200 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is een molecuul?",
+      "o": [
+       "het kleinste deeltje van een stof",
+       "een groot voorwerp",
+       "een mengsel",
+       "een temperatuur"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een molecuul is het kleinste deeltje van een stof.",
+      "uo": [
+       "Klopt: een molecuul is het kleinste deeltje van een stof.",
+       "Een molecuul is juist heel klein.",
+       "Een mengsel is iets anders.",
+       "Een temperatuur is geen deeltje."
+      ],
+      "uh": "Moleculen bestaan uit atomen; atomen zijn de bouwstenen."
+     },
+     {
+      "v": "Waaruit zijn moleculen opgebouwd?",
+      "o": [
+       "uit mengsels",
+       "uit atomen",
+       "uit vloeistoffen",
+       "uit gassen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Moleculen bestaan uit atomen.",
+      "uo": [
+       "Een mengsel is geen bouwsteen van een molecuul.",
+       "Klopt: moleculen bestaan uit atomen.",
+       "Een vloeistof is een fase, geen bouwsteen.",
+       "Een gas is een fase, geen bouwsteen."
+      ],
+      "uh": "uit atomen: Moleculen bestaan uit atomen."
+     },
+     {
+      "v": "In welke fase liggen de moleculen het dichtst op elkaar?",
+      "o": [
+       "gas",
+       "vloeibaar",
+       "vast",
+       "ze liggen altijd gelijk"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "In de vaste fase zitten moleculen het dichtst opeen.",
+      "uo": [
+       "In een gas liggen ze juist ver uit elkaar.",
+       "In een vloeistof bewegen ze langs elkaar.",
+       "Klopt: in de vaste fase zitten moleculen het dichtst opeen.",
+       "De afstand verschilt wel degelijk per fase."
+      ],
+      "uh": "Vast (dicht) → vloeibaar (langs elkaar) → gas (ver uiteen)."
+     },
+     {
+      "v": "Wat gebeurt er bij smelten?",
+      "o": [
+       "niets",
+       "vloeibaar wordt gas",
+       "gas wordt vast",
+       "vast wordt vloeibaar"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij smelten gaat vast over in vloeibaar.",
+      "uo": [
+       "Er verandert wel degelijk een fase.",
+       "Vloeibaar naar gas is verdampen.",
+       "Gas naar vast is rijpen (afzetten).",
+       "Klopt: bij smelten gaat vast over in vloeibaar."
+      ],
+      "uh": "vast wordt vloeibaar: Bij smelten gaat vast over in vloeibaar."
+     },
+     {
+      "v": "Wat is een element?",
+      "o": [
+       "een stof uit één soort atomen",
+       "een mengsel",
+       "een molecuulformule",
+       "een reactie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een element bestaat uit één soort atomen.",
+      "uo": [
+       "Klopt: een element bestaat uit één soort atomen.",
+       "Een mengsel bevat meerdere stoffen.",
+       "Een molecuulformule is een notatie, geen stof.",
+       "Een reactie is een verandering."
+      ],
+      "uh": "een stof uit één soort atomen: Een element bestaat uit één soort atomen."
+     },
+     {
+      "v": "Wat geeft de molecuulformule H₂O aan?",
+      "o": [
+       "dat water een mengsel is",
+       "dat een watermolecuul 2 waterstof- en 1 zuurstofatoom heeft",
+       "het kookpunt van water",
+       "de kleur van water"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "H₂O = 2 waterstofatomen en 1 zuurstofatoom.",
+      "uo": [
+       "H₂O beschrijft juist een zuivere stof.",
+       "Klopt: H₂O = 2 waterstofatomen en 1 zuurstofatoom.",
+       "De formule geeft geen temperatuur.",
+       "De formule zegt niets over kleur."
+      ],
+      "uh": "dat een watermolecuul 2 waterstof- en 1 zuurstofatoom heeft: H₂O = 2 waterstofatomen en 1 zuurstofatoom."
+     },
+     {
+      "v": "In welke fase vliegen de moleculen los en ver uit elkaar?",
+      "o": [
+       "vast",
+       "vloeibaar",
+       "gas",
+       "geen enkele"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "In de gasfase vliegen moleculen los en ver uiteen.",
+      "uo": [
+       "In de vaste fase zitten ze juist vast.",
+       "In een vloeistof bewegen ze langs elkaar.",
+       "Klopt: in de gasfase vliegen moleculen los en ver uiteen.",
+       "Dit geldt wel degelijk voor gas."
+      ],
+      "uh": "gas: In de gasfase vliegen moleculen los en ver uiteen."
+     },
+     {
+      "v": "Wat is verdampen?",
+      "o": [
+       "vast naar vloeibaar",
+       "vloeibaar naar vast",
+       "gas naar vloeibaar",
+       "vloeibaar naar gas"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Verdampen is vloeibaar naar gas.",
+      "uo": [
+       "Vast naar vloeibaar is smelten.",
+       "Vloeibaar naar vast is stollen.",
+       "Gas naar vloeibaar is condenseren.",
+       "Klopt: verdampen is vloeibaar naar gas."
+      ],
+      "uh": "vloeibaar naar gas: Verdampen is vloeibaar naar gas."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Molecuul",
+      "d": "het kleinste deeltje van een stof"
+     },
+     {
+      "t": "Atoom",
+      "d": "het bouwsteentje waaruit moleculen bestaan"
+     },
+     {
+      "t": "Element",
+      "d": "een stof die uit één soort atomen bestaat"
+     },
+     {
+      "t": "Molecuulformule",
+      "d": "een formule die de atomen in een molecuul weergeeft"
+     },
+     {
+      "t": "Vaste fase",
+      "d": "moleculen dicht opeen, trillen op hun plaats"
+     },
+     {
+      "t": "Vloeibare fase",
+      "d": "moleculen bewegen langs elkaar"
+     },
+     {
+      "t": "Gasfase",
+      "d": "moleculen vliegen los en ver uit elkaar"
+     },
+     {
+      "t": "Smelten",
+      "d": "overgang van vast naar vloeibaar"
+     },
+     {
+      "t": "Verdampen",
+      "d": "overgang van vloeibaar naar gas"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Stoffen bestaan uit <strong>moleculen</strong>, die weer uit <strong>atomen</strong> zijn opgebouwd. Bij de fasen <strong>vast</strong>, <strong>vloeibaar</strong> en <strong>gas</strong> liggen de moleculen steeds losser.</div><div class=\"sam-head\">1. Moleculen en atomen</div><p>Een <strong>molecuul</strong> is het kleinste deeltje van een stof; het is opgebouwd uit <strong>atomen</strong>. Een <strong>element</strong> is een stof uit één soort atomen. Een <strong>molecuulformule</strong> (zoals H₂O) geeft aan welke en hoeveel atomen in een molecuul zitten.</p><div class=\"sam-head\">2. De drie fasen</div><p>In de <strong>vaste fase</strong> zitten de moleculen dicht op elkaar en trillen ze op hun plaats. In de <strong>vloeibare fase</strong> bewegen ze langs elkaar. In de <strong>gasfase</strong> vliegen ze los en ver uit elkaar. Bij verwarmen ga je van vast naar vloeibaar (<strong>smelten</strong>) naar gas (<strong>verdampen</strong>).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Molecuul</div><div class=\"sam-definitie-body\">het kleinste deeltje van een stof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Atoom</div><div class=\"sam-definitie-body\">het bouwsteentje waaruit moleculen bestaan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Element</div><div class=\"sam-definitie-body\">een stof die uit één soort atomen bestaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Molecuulformule</div><div class=\"sam-definitie-body\">een formule die de atomen in een molecuul weergeeft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vaste fase</div><div class=\"sam-definitie-body\">moleculen dicht opeen, trillen op hun plaats.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vloeibare fase</div><div class=\"sam-definitie-body\">moleculen bewegen langs elkaar.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gasfase</div><div class=\"sam-definitie-body\">moleculen vliegen los en ver uit elkaar.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Smelten</div><div class=\"sam-definitie-body\">overgang van vast naar vloeibaar.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verdampen</div><div class=\"sam-definitie-body\">overgang van vloeibaar naar gas.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Molecuul»</b> is kleinste deeltje van een stof, terwijl <b>«Atoom»</b> bouwsteen van moleculen is. <b>«Element»</b> is één soort atomen, terwijl <b>«Molecuul»</b> kleinste deeltje van een stof is. <b>«Molecuulformule»</b> is atomen in een molecuul, terwijl <b>«Element»</b> één soort atomen is. <b>«Vaste fase»</b> is dicht opeen, vast, terwijl <b>«Vloeibare fase»</b> bewegen langs elkaar is.</div>"
    },
    {
     "id": "C",
@@ -2851,7 +7587,196 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat ontstaat er bij een chemische reactie?",
+      "o": [
+       "nieuwe stoffen",
+       "alleen warmte",
+       "niets nieuws",
+       "alleen een andere fase"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Bij een chemische reactie ontstaan nieuwe stoffen.",
+      "uo": [
+       "Klopt: bij een chemische reactie ontstaan nieuwe stoffen.",
+       "Warmte komt vaak vrij, maar dat is niet het kenmerk.",
+       "Er verandert juist iets: nieuwe stoffen.",
+       "Een andere fase zonder nieuwe stof is geen chemische reactie."
+      ],
+      "uh": "Chemische reactie = nieuwe stoffen. Faseovergang = zelfde stof."
+     },
+     {
+      "v": "Hoe noem je de stoffen vóór een reactie?",
+      "o": [
+       "reactieproducten",
+       "beginstoffen",
+       "mengsels",
+       "elementen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De stoffen vooraf heten beginstoffen.",
+      "uo": [
+       "Reactieproducten ontstaan juist na de reactie.",
+       "Klopt: de stoffen vooraf heten beginstoffen.",
+       "Een mengsel is iets anders.",
+       "Een element is een soort stof, geen rol in de reactie."
+      ],
+      "uh": "beginstoffen: De stoffen vooraf heten beginstoffen."
+     },
+     {
+      "v": "Wat is een reactieproduct?",
+      "o": [
+       "een stof vooraf",
+       "een filter",
+       "een nieuwe stof na de reactie",
+       "een fase"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een reactieproduct ontstaat tijdens de reactie.",
+      "uo": [
+       "Een stof vooraf is een beginstof.",
+       "Een filter is gereedschap.",
+       "Klopt: een reactieproduct ontstaat tijdens de reactie.",
+       "Een fase is vast, vloeibaar of gas."
+      ],
+      "uh": "een nieuwe stof na de reactie: Een reactieproduct ontstaat tijdens de reactie."
+     },
+     {
+      "v": "Wat betekent de pijl in een reactieschema?",
+      "o": [
+       "gedeeld door",
+       "is gelijk aan",
+       "plus",
+       "reageert tot"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De pijl betekent \"reageert tot\".",
+      "uo": [
+       "Delen hoort hier niet.",
+       "Gelijk aan zou een isgelijkteken zijn.",
+       "Plus staat tussen stoffen aan dezelfde kant.",
+       "Klopt: de pijl betekent \"reageert tot\"."
+      ],
+      "uh": "Reactieschema: beginstoffen → reactieproducten."
+     },
+     {
+      "v": "Wat gebeurt er bij ontleden?",
+      "o": [
+       "één stof valt uiteen in meerdere",
+       "meerdere stoffen worden één",
+       "er verandert niets",
+       "alleen de fase verandert"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Bij ontleden valt één stof uiteen in meerdere.",
+      "uo": [
+       "Klopt: bij ontleden valt één stof uiteen in meerdere.",
+       "Meerdere stoffen samen is juist een vormingsreactie.",
+       "Er verandert wel degelijk iets.",
+       "Een faseovergang is geen ontleding."
+      ],
+      "uh": "één stof valt uiteen in meerdere: Bij ontleden valt één stof uiteen in meerdere."
+     },
+     {
+      "v": "Smelten van ijs is...",
+      "o": [
+       "een chemische reactie",
+       "een faseovergang, geen nieuwe stof",
+       "een ontleding",
+       "een verbranding"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het blijft water; alleen de fase verandert.",
+      "uo": [
+       "Er ontstaat geen nieuwe stof, dus geen chemische reactie.",
+       "Klopt: het blijft water; alleen de fase verandert.",
+       "Ontleden geeft nieuwe stoffen; hier niet.",
+       "Verbranden is iets heel anders."
+      ],
+      "uh": "een faseovergang, geen nieuwe stof: Het blijft water; alleen de fase verandert."
+     },
+     {
+      "v": "Wat is een vormingsreactie?",
+      "o": [
+       "een faseovergang",
+       "één stof valt uiteen",
+       "uit meerdere stoffen ontstaat één nieuwe stof",
+       "een mengsel maken"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Bij een vormingsreactie ontstaat uit meerdere stoffen één nieuwe.",
+      "uo": [
+       "Een faseovergang geeft geen nieuwe stof.",
+       "Uiteenvallen is ontleden.",
+       "Klopt: bij een vormingsreactie ontstaat uit meerdere stoffen één nieuwe.",
+       "Een mengsel maken is geen chemische reactie."
+      ],
+      "uh": "uit meerdere stoffen ontstaat één nieuwe stof: Bij een vormingsreactie ontstaat uit meerdere stoffen één nieuwe."
+     },
+     {
+      "v": "Wat is vaak een teken van een chemische reactie?",
+      "o": [
+       "er gebeurt niets",
+       "de fles wordt zwaarder",
+       "de kleur blijft altijd gelijk",
+       "er komt energie vrij"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Er komt vaak warmte of licht (energie) vrij.",
+      "uo": [
+       "Er gebeurt wel degelijk iets.",
+       "De totale massa verandert niet zomaar.",
+       "Vaak verandert juist de kleur.",
+       "Klopt: er komt vaak warmte of licht (energie) vrij."
+      ],
+      "uh": "er komt energie vrij: Er komt vaak warmte of licht (energie) vrij."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Chemische reactie",
+      "d": "een verandering waarbij nieuwe stoffen ontstaan"
+     },
+     {
+      "t": "Beginstof",
+      "d": "een stof die je vóór de reactie hebt"
+     },
+     {
+      "t": "Reactieproduct",
+      "d": "een nieuwe stof die bij de reactie ontstaat"
+     },
+     {
+      "t": "Reactieschema",
+      "d": "de notatie beginstoffen → reactieproducten"
+     },
+     {
+      "t": "Vormingsreactie",
+      "d": "uit meerdere stoffen ontstaat één nieuwe stof"
+     },
+     {
+      "t": "Ontleden",
+      "d": "één stof valt uiteen in meerdere stoffen"
+     },
+     {
+      "t": "Faseovergang",
+      "d": "een verandering van fase zonder nieuwe stof"
+     },
+     {
+      "t": "Reactie-energie",
+      "d": "de energie die vrijkomt of nodig is bij een reactie"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij een <strong>chemische reactie</strong> verdwijnen <strong>beginstoffen</strong> en ontstaan er nieuwe stoffen, de <strong>reactieproducten</strong>. Je noteert dit in een <strong>reactieschema</strong>.</div><div class=\"sam-head\">1. Kenmerken van een reactie</div><p>Bij een <strong>chemische reactie</strong> ontstaan er <strong>nieuwe stoffen</strong> met andere eigenschappen. Kenmerken zijn: er verdwijnen stoffen en er ontstaan andere, en er komt vaak <strong>energie</strong> vrij (warmte, licht) of er is energie nodig. De stoffen vooraf heten <strong>beginstoffen</strong>, de nieuwe stoffen <strong>reactieproducten</strong>.</p><div class=\"sam-head\">2. Reactieschema, vormen en ontleden</div><p>Een <strong>reactieschema</strong> schrijf je als <em>beginstoffen → reactieproducten</em>. Bij een <strong>vormingsreactie</strong> maak je uit meerdere stoffen één nieuwe stof; bij <strong>ontleden</strong> valt één stof uiteen in meerdere. De pijl betekent \"reageert tot\".</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Chemische reactie</div><div class=\"sam-definitie-body\">een verandering waarbij nieuwe stoffen ontstaan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Beginstof</div><div class=\"sam-definitie-body\">een stof die je vóór de reactie hebt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Reactieproduct</div><div class=\"sam-definitie-body\">een nieuwe stof die bij de reactie ontstaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Reactieschema</div><div class=\"sam-definitie-body\">de notatie beginstoffen → reactieproducten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vormingsreactie</div><div class=\"sam-definitie-body\">uit meerdere stoffen ontstaat één nieuwe stof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ontleden</div><div class=\"sam-definitie-body\">één stof valt uiteen in meerdere stoffen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Faseovergang</div><div class=\"sam-definitie-body\">een verandering van fase zonder nieuwe stof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Reactie-energie</div><div class=\"sam-definitie-body\">de energie die vrijkomt of nodig is bij een reactie.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Chemische reactie»</b> is nieuwe stoffen ontstaan, terwijl <b>«Faseovergang»</b> geen nieuwe stof is. <b>«Beginstof»</b> is stof vooraf, terwijl <b>«Reactieproduct»</b> nieuwe stof na de reactie is. <b>«Vormingsreactie»</b> is samen tot één stof, terwijl <b>«Ontleden»</b> uiteen in meerdere is. <b>«Reactie-energie»</b> is energie bij een reactie, terwijl <b>«Chemische reactie»</b> nieuwe stoffen ontstaan is.</div>"
    },
    {
     "id": "D",
@@ -2866,7 +7791,200 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is verbranden?",
+      "o": [
+       "een reactie van brandstof met zuurstof",
+       "het smelten van een stof",
+       "het oplossen van een stof",
+       "het filtreren van lucht"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Verbranden is een reactie van brandstof met zuurstof.",
+      "uo": [
+       "Klopt: verbranden is een reactie van brandstof met zuurstof.",
+       "Smelten is een faseovergang.",
+       "Oplossen is iets anders.",
+       "Filtreren is een scheidingsmethode."
+      ],
+      "uh": "Verbranden = brandstof + zuurstof → energie + CO₂ en water."
+     },
+     {
+      "v": "Welk gas is nodig om iets te laten branden?",
+      "o": [
+       "koolstofdioxide",
+       "zuurstof",
+       "stikstof",
+       "waterstof"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Zuurstof is nodig voor verbranding.",
+      "uo": [
+       "CO₂ ontstaat juist bij verbranding en dooft vuur.",
+       "Klopt: zuurstof is nodig voor verbranding.",
+       "Stikstof doet niet mee aan gewone verbranding.",
+       "Waterstof is zelf een brandstof, niet wat je nodig hebt."
+      ],
+      "uh": "Zuurstof is nodig voor verbranding."
+     },
+     {
+      "v": "Welke drie dingen staan in de branddriehoek?",
+      "o": [
+       "olie, gas en kolen",
+       "water, lucht en licht",
+       "brandstof, zuurstof en warmte",
+       "CO₂, water en warmte"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Vuur heeft brandstof, zuurstof en warmte nodig.",
+      "uo": [
+       "Dat zijn soorten brandstof, niet de driehoek.",
+       "Water dooft juist vuur.",
+       "Klopt: vuur heeft brandstof, zuurstof en warmte nodig.",
+       "Dat zijn producten van verbranding."
+      ],
+      "uh": "Branddriehoek: brandstof + zuurstof + warmte."
+     },
+     {
+      "v": "Welk gas ontstaat bij verbranding en versterkt het broeikaseffect?",
+      "o": [
+       "zuurstof",
+       "helium",
+       "stikstof",
+       "koolstofdioxide"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Koolstofdioxide (CO₂) versterkt het broeikaseffect.",
+      "uo": [
+       "Zuurstof wordt juist verbruikt.",
+       "Helium ontstaat niet bij verbranding.",
+       "Stikstof speelt hierin geen hoofdrol.",
+       "Klopt: koolstofdioxide (CO₂) versterkt het broeikaseffect."
+      ],
+      "uh": "Koolstofdioxide (CO₂) versterkt het broeikaseffect."
+     },
+     {
+      "v": "Wat is een gevolg van te veel CO₂ in de lucht?",
+      "o": [
+       "de aarde warmt op",
+       "de aarde koelt af",
+       "er komt meer zuurstof",
+       "er verandert niets"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Meer CO₂ versterkt het broeikaseffect en de aarde warmt op.",
+      "uo": [
+       "Klopt: meer CO₂ versterkt het broeikaseffect en de aarde warmt op.",
+       "Het tegenovergestelde gebeurt.",
+       "CO₂ maakt geen zuurstof.",
+       "Er verandert wel degelijk iets aan het klimaat."
+      ],
+      "uh": "de aarde warmt op: Meer CO₂ versterkt het broeikaseffect en de aarde warmt op."
+     },
+     {
+      "v": "Wat zijn fossiele brandstoffen?",
+      "o": [
+       "water en lucht",
+       "aardolie, aardgas en steenkool",
+       "zonne- en windenergie",
+       "zuurstof en stikstof"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Aardolie, aardgas en steenkool zijn fossiele brandstoffen.",
+      "uo": [
+       "Water en lucht zijn geen brandstoffen.",
+       "Klopt: aardolie, aardgas en steenkool zijn fossiele brandstoffen.",
+       "Zon en wind zijn juist duurzame bronnen.",
+       "Dat zijn gassen in de lucht."
+      ],
+      "uh": "Aardolie, aardgas en steenkool zijn fossiele brandstoffen."
+     },
+     {
+      "v": "Welk giftig gas ontstaat bij onvolledige verbranding?",
+      "o": [
+       "koolstofdioxide",
+       "zuurstof",
+       "koolstofmonoxide",
+       "waterdamp"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Bij onvolledige verbranding ontstaat het giftige CO.",
+      "uo": [
+       "CO₂ is niet het giftige gas dat hier bedoeld wordt.",
+       "Zuurstof wordt verbruikt.",
+       "Klopt: bij onvolledige verbranding ontstaat het giftige CO.",
+       "Waterdamp is niet giftig."
+      ],
+      "uh": "koolstofmonoxide: Bij onvolledige verbranding ontstaat het giftige CO."
+     },
+     {
+      "v": "Wat is luchtvervuiling?",
+      "o": [
+       "een faseovergang",
+       "schone berglucht",
+       "zuurstof in water",
+       "schadelijke stoffen in de lucht"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Luchtvervuiling zijn schadelijke stoffen in de lucht, zoals fijnstof.",
+      "uo": [
+       "Een faseovergang heeft er niets mee te maken.",
+       "Schone lucht is juist het tegenovergestelde.",
+       "Zuurstof in water is iets anders.",
+       "Klopt: luchtvervuiling zijn schadelijke stoffen in de lucht, zoals fijnstof."
+      ],
+      "uh": "schadelijke stoffen in de lucht: Luchtvervuiling zijn schadelijke stoffen in de lucht, zoals fijnstof."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Verbranden",
+      "d": "een reactie van een brandstof met zuurstof, met energie"
+     },
+     {
+      "t": "Brandstof",
+      "d": "een stof die je verbrandt om energie te krijgen"
+     },
+     {
+      "t": "Zuurstof",
+      "d": "het gas uit de lucht dat nodig is voor verbranding"
+     },
+     {
+      "t": "Branddriehoek",
+      "d": "brandstof, zuurstof en warmte samen nodig voor vuur"
+     },
+     {
+      "t": "Koolstofdioxide",
+      "d": "het gas CO₂ dat bij verbranding ontstaat"
+     },
+     {
+      "t": "Broeikaseffect",
+      "d": "de opwarming van de aarde door broeikasgassen zoals CO₂"
+     },
+     {
+      "t": "Fossiele brandstof",
+      "d": "brandstof uit de aarde, zoals aardolie, gas en steenkool"
+     },
+     {
+      "t": "Koolstofmonoxide",
+      "d": "het giftige gas CO bij onvolledige verbranding"
+     },
+     {
+      "t": "Luchtvervuiling",
+      "d": "schadelijke stoffen in de lucht, zoals fijnstof"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\"><strong>Verbranden</strong> is een reactie van een <strong>brandstof</strong> met <strong>zuurstof</strong>, waarbij energie vrijkomt. Vaak ontstaan <strong>koolstofdioxide</strong> en water. Te veel CO₂ versterkt het <strong>broeikaseffect</strong>.</div><div class=\"sam-head\">1. De verbrandingsreactie</div><p><strong>Verbranden</strong> is een reactie van een <strong>brandstof</strong> met <strong>zuurstof</strong> uit de lucht, waarbij <strong>warmte</strong> vrijkomt. Voor vuur zijn drie dingen nodig (de <strong>branddriehoek</strong>): brandstof, zuurstof en een hoge genoeg temperatuur. Bij verbranding van veel brandstoffen ontstaan <strong>koolstofdioxide</strong> (CO₂) en <strong>water</strong>.</p><div class=\"sam-head\">2. Milieu</div><p>Bij verbranding van <strong>fossiele brandstoffen</strong> komt veel <strong>CO₂</strong> vrij. Dat versterkt het <strong>broeikaseffect</strong>, waardoor de aarde opwarmt. Ook ontstaat <strong>luchtvervuiling</strong>, bijvoorbeeld door fijnstof. Bij onvolledige verbranding ontstaat het giftige <strong>koolstofmonoxide</strong> (CO).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verbranden</div><div class=\"sam-definitie-body\">een reactie van een brandstof met zuurstof, met energie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Brandstof</div><div class=\"sam-definitie-body\">een stof die je verbrandt om energie te krijgen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zuurstof</div><div class=\"sam-definitie-body\">het gas uit de lucht dat nodig is voor verbranding.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Branddriehoek</div><div class=\"sam-definitie-body\">brandstof, zuurstof en warmte samen nodig voor vuur.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Koolstofdioxide</div><div class=\"sam-definitie-body\">het gas CO₂ dat bij verbranding ontstaat.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Broeikaseffect</div><div class=\"sam-definitie-body\">de opwarming van de aarde door broeikasgassen zoals CO₂.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fossiele brandstof</div><div class=\"sam-definitie-body\">brandstof uit de aarde, zoals aardolie, gas en steenkool.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Koolstofmonoxide</div><div class=\"sam-definitie-body\">het giftige gas CO bij onvolledige verbranding.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Luchtvervuiling</div><div class=\"sam-definitie-body\">schadelijke stoffen in de lucht, zoals fijnstof.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Brandstof»</b> is stof die je verbrandt, terwijl <b>«Zuurstof»</b> nodig voor vuur is. <b>«Zuurstof»</b> is nodig voor vuur, terwijl <b>«Koolstofdioxide»</b> CO₂ bij verbranding is. <b>«Branddriehoek»</b> is brandstof, zuurstof, warmte, terwijl <b>«Verbranden»</b> brandstof + zuurstof is. <b>«Koolstofdioxide»</b> is CO₂ bij verbranding, terwijl <b>«Koolstofmonoxide»</b> giftig CO is.</div>"
    },
    {
     "id": "E",
@@ -2880,7 +7998,177 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Waarmee begint een productieproces?",
+      "o": [
+       "met een grondstof",
+       "met het eindproduct",
+       "met de verkoop",
+       "met afval"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Je begint met een grondstof.",
+      "uo": [
+       "Klopt: je begint met een grondstof.",
+       "Het eindproduct is juist het resultaat.",
+       "Verkoop komt na de productie.",
+       "Afval is geen startpunt."
+      ],
+      "uh": "Grondstof → halffabricaat → eindproduct."
+     },
+     {
+      "v": "Wat is een halffabricaat?",
+      "o": [
+       "een ruwe grondstof",
+       "een tussenproduct dat nog niet klaar is",
+       "het afgewerkte product",
+       "een soort afval"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een halffabricaat is een tussenproduct.",
+      "uo": [
+       "Een ruwe grondstof is het beginpunt.",
+       "Klopt: een halffabricaat is een tussenproduct.",
+       "Het afgewerkte product is het eindproduct.",
+       "Afval is iets anders."
+      ],
+      "uh": "een tussenproduct dat nog niet klaar is: Een halffabricaat is een tussenproduct."
+     },
+     {
+      "v": "Waaruit wordt kunststof (plastic) meestal gemaakt?",
+      "o": [
+       "zand",
+       "water",
+       "aardolie",
+       "lucht"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Kunststof wordt uit aardolie gemaakt.",
+      "uo": [
+       "Zand is grondstof voor glas, niet plastic.",
+       "Water is geen grondstof voor plastic.",
+       "Klopt: kunststof wordt uit aardolie gemaakt.",
+       "Lucht is geen grondstof voor plastic."
+      ],
+      "uh": "aardolie: Kunststof wordt uit aardolie gemaakt."
+     },
+     {
+      "v": "Wat is het voordeel van recyclen?",
+      "o": [
+       "het gebruikt meer olie",
+       "het kost meer grondstoffen",
+       "het maakt meer afval",
+       "het bespaart grondstoffen en energie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Recyclen bespaart grondstoffen en energie.",
+      "uo": [
+       "Recyclen gebruikt juist minder olie.",
+       "Recyclen bespaart juist grondstoffen.",
+       "Recyclen vermindert afval.",
+       "Klopt: recyclen bespaart grondstoffen en energie."
+      ],
+      "uh": "Recyclen = materiaal opnieuw gebruiken, dus duurzamer."
+     },
+     {
+      "v": "Wat is het eindproduct in een fabriek?",
+      "o": [
+       "het afgewerkte product",
+       "de ruwe grondstof",
+       "een tussenproduct",
+       "het afval"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het eindproduct is het afgewerkte product.",
+      "uo": [
+       "Klopt: het eindproduct is het afgewerkte product.",
+       "De ruwe grondstof is het beginpunt.",
+       "Een tussenproduct is een halffabricaat.",
+       "Afval is geen eindproduct."
+      ],
+      "uh": "het afgewerkte product: Het eindproduct is het afgewerkte product."
+     },
+     {
+      "v": "Wat betekent duurzaam?",
+      "o": [
+       "zo veel mogelijk verbruiken",
+       "zuinig met grondstoffen en milieu",
+       "zo goedkoop mogelijk",
+       "zo snel mogelijk"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Duurzaam is zuinig met grondstoffen en milieu.",
+      "uo": [
+       "Veel verbruiken is juist niet duurzaam.",
+       "Klopt: duurzaam is zuinig met grondstoffen en milieu.",
+       "Goedkoop is niet hetzelfde als duurzaam.",
+       "Snelheid zegt niets over duurzaamheid."
+      ],
+      "uh": "zuinig met grondstoffen en milieu: Duurzaam is zuinig met grondstoffen en milieu."
+     },
+     {
+      "v": "Waarom kies je een materiaal op zijn eigenschappen?",
+      "o": [
+       "om het zwaarder te maken",
+       "om het duurder te maken",
+       "om het geschikt te laten zijn voor het doel",
+       "dat maakt niet uit"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Je kiest een materiaal dat past bij het doel (sterk, licht).",
+      "uo": [
+       "Zwaarder is meestal niet gewenst.",
+       "Duurder maken is geen doel.",
+       "Klopt: je kiest een materiaal dat past bij het doel (sterk, licht).",
+       "De keuze maakt wel degelijk uit."
+      ],
+      "uh": "om het geschikt te laten zijn voor het doel: Je kiest een materiaal dat past bij het doel (sterk, licht)."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Grondstof",
+      "d": "de ruwe stof waarmee je begint"
+     },
+     {
+      "t": "Halffabricaat",
+      "d": "een tussenproduct dat nog niet klaar is"
+     },
+     {
+      "t": "Eindproduct",
+      "d": "het afgewerkte product voor de gebruiker"
+     },
+     {
+      "t": "Productieproces",
+      "d": "de stappen van grondstof naar eindproduct"
+     },
+     {
+      "t": "Kunststof",
+      "d": "plastic, gemaakt uit aardolie"
+     },
+     {
+      "t": "Recyclen",
+      "d": "materiaal opnieuw gebruiken"
+     },
+     {
+      "t": "Duurzaam",
+      "d": "zuinig met grondstoffen en milieu"
+     },
+     {
+      "t": "Eigenschap",
+      "d": "een kenmerk waarop je een materiaal kiest, zoals sterkte"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">In een <strong>productieproces</strong> maak je van <strong>grondstoffen</strong> via <strong>halffabricaten</strong> een <strong>eindproduct</strong>. Veel producten zijn van <strong>kunststof</strong>, die je soms kunt <strong>recyclen</strong>.</div><div class=\"sam-head\">1. Van grondstof tot eindproduct</div><p>Een <strong>productieproces</strong> begint met een <strong>grondstof</strong> (bijvoorbeeld aardolie of ijzererts). Onderweg ontstaan <strong>halffabricaten</strong> (nog niet klaar, zoals plaatstaal), en aan het eind het <strong>eindproduct</strong> (zoals een auto).</p><div class=\"sam-head\">2. Kunststoffen en recyclen</div><p><strong>Kunststof</strong> (plastic) wordt gemaakt uit aardolie en heeft handige eigenschappen: licht, sterk en goedkoop, maar vaak slecht afbreekbaar. Door te <strong>recyclen</strong> gebruik je materiaal opnieuw, wat grondstoffen en energie bespaart.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Grondstof</div><div class=\"sam-definitie-body\">de ruwe stof waarmee je begint.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Halffabricaat</div><div class=\"sam-definitie-body\">een tussenproduct dat nog niet klaar is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Eindproduct</div><div class=\"sam-definitie-body\">het afgewerkte product voor de gebruiker.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Productieproces</div><div class=\"sam-definitie-body\">de stappen van grondstof naar eindproduct.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kunststof</div><div class=\"sam-definitie-body\">plastic, gemaakt uit aardolie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Recyclen</div><div class=\"sam-definitie-body\">materiaal opnieuw gebruiken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Duurzaam</div><div class=\"sam-definitie-body\">zuinig met grondstoffen en milieu.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Eigenschap</div><div class=\"sam-definitie-body\">een kenmerk waarop je een materiaal kiest, zoals sterkte.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Grondstof»</b> is ruwe beginstof, terwijl <b>«Eindproduct»</b> afgewerkt product is. <b>«Halffabricaat»</b> is tussenproduct, terwijl <b>«Eindproduct»</b> afgewerkt product is. <b>«Productieproces»</b> is grondstof naar product, terwijl <b>«Halffabricaat»</b> tussenproduct is. <b>«Kunststof»</b> is plastic uit olie, terwijl <b>«Grondstof»</b> ruwe beginstof is.</div>"
    },
    {
     "id": "F",
@@ -2894,7 +8182,177 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is een hypothese?",
+      "o": [
+       "een verwachting die je vooraf opstelt",
+       "het resultaat achteraf",
+       "een meetinstrument",
+       "een gevaarsymbool"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een hypothese is je verwachting vooraf.",
+      "uo": [
+       "Klopt: een hypothese is je verwachting vooraf.",
+       "Het resultaat achteraf is de conclusie.",
+       "Een meetinstrument is gereedschap.",
+       "Een gevaarsymbool is een waarschuwing."
+      ],
+      "uh": "Hypothese (vooraf) → proef → meten → conclusie (achteraf)."
+     },
+     {
+      "v": "Wat doe je na een proef met je metingen?",
+      "o": [
+       "een hypothese verzinnen",
+       "een conclusie trekken",
+       "de proef vergeten",
+       "niets"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Uit de metingen trek je een conclusie.",
+      "uo": [
+       "De hypothese stel je juist vooraf op.",
+       "Klopt: uit de metingen trek je een conclusie.",
+       "Je gebruikt de proef juist.",
+       "De metingen zijn er om iets te besluiten."
+      ],
+      "uh": "een conclusie trekken: Uit de metingen trek je een conclusie."
+     },
+     {
+      "v": "Waarvoor waarschuwt een gevaarsymbool?",
+      "o": [
+       "voor de kleur",
+       "voor de prijs",
+       "voor gevaar van een stof",
+       "voor het gewicht"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een gevaarsymbool waarschuwt voor gevaar, zoals giftig of brandbaar.",
+      "uo": [
+       "Kleur is geen gevaar.",
+       "De prijs staat er los van.",
+       "Klopt: een gevaarsymbool waarschuwt voor gevaar, zoals giftig of brandbaar.",
+       "Gewicht is geen gevaarsymbool."
+      ],
+      "uh": "voor gevaar van een stof: Een gevaarsymbool waarschuwt voor gevaar, zoals giftig of brandbaar."
+     },
+     {
+      "v": "Wat betekent het gevaarsymbool voor \"brandbaar\"?",
+      "o": [
+       "de stof is zwaar",
+       "de stof is giftig",
+       "de stof is duur",
+       "de stof kan makkelijk vlam vatten"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Brandbaar betekent dat de stof makkelijk vlam vat.",
+      "uo": [
+       "Gewicht is geen gevaar.",
+       "Giftig is een ander symbool.",
+       "Prijs is geen gevaar.",
+       "Klopt: brandbaar betekent dat de stof makkelijk vlam vat."
+      ],
+      "uh": "de stof kan makkelijk vlam vatten: Brandbaar betekent dat de stof makkelijk vlam vat."
+     },
+     {
+      "v": "Waarom meet je in plaats van schatten?",
+      "o": [
+       "om een nauwkeurig resultaat te krijgen",
+       "omdat het sneller is",
+       "omdat het altijd moet",
+       "om tijd te rekken"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Meten geeft een nauwkeurig, betrouwbaar resultaat.",
+      "uo": [
+       "Klopt: meten geeft een nauwkeurig, betrouwbaar resultaat.",
+       "Schatten is juist sneller, maar minder precies.",
+       "Het gaat om nauwkeurigheid, niet om een regel.",
+       "Meten is geen tijdrekken."
+      ],
+      "uh": "om een nauwkeurig resultaat te krijgen: Meten geeft een nauwkeurig, betrouwbaar resultaat."
+     },
+     {
+      "v": "Wat test je bij productonderzoek?",
+      "o": [
+       "de prijs in de winkel",
+       "de eigenschappen van een materiaal",
+       "de reclame",
+       "de naam"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je test eigenschappen zoals sterkte of hardheid.",
+      "uo": [
+       "De prijs test je niet in het lab.",
+       "Klopt: je test eigenschappen zoals sterkte of hardheid.",
+       "Reclame is geen eigenschap.",
+       "De naam zegt niets over de kwaliteit."
+      ],
+      "uh": "de eigenschappen van een materiaal: Je test eigenschappen zoals sterkte of hardheid."
+     },
+     {
+      "v": "Wat is een giftige stof?",
+      "o": [
+       "altijd zwaar",
+       "altijd brandbaar",
+       "schadelijk voor je gezondheid",
+       "altijd duur"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een giftige stof is schadelijk voor je gezondheid.",
+      "uo": [
+       "Gewicht heeft er niets mee te maken.",
+       "Giftig is niet hetzelfde als brandbaar.",
+       "Klopt: een giftige stof is schadelijk voor je gezondheid.",
+       "Prijs heeft er niets mee te maken."
+      ],
+      "uh": "schadelijk voor je gezondheid: Een giftige stof is schadelijk voor je gezondheid."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Hypothese",
+      "d": "een verwachting die je vooraf opstelt"
+     },
+     {
+      "t": "Proef",
+      "d": "een test om iets te onderzoeken"
+     },
+     {
+      "t": "Meten",
+      "d": "een grootte nauwkeurig bepalen met een meetinstrument"
+     },
+     {
+      "t": "Conclusie",
+      "d": "wat je uit de metingen besluit"
+     },
+     {
+      "t": "Eigenschap",
+      "d": "een kenmerk van een materiaal, zoals sterkte"
+     },
+     {
+      "t": "Gevaarsymbool",
+      "d": "een teken dat waarschuwt voor gevaar van een stof"
+     },
+     {
+      "t": "Giftig",
+      "d": "schadelijk voor je gezondheid bij binnenkrijgen"
+     },
+     {
+      "t": "Brandbaar",
+      "d": "kan makkelijk vlam vatten"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\">Bij <strong>productonderzoek</strong> test je de <strong>eigenschappen</strong> van een materiaal met een <strong>proef</strong>. Je stelt een <strong>hypothese</strong> op, <strong>meet</strong> netjes en let op <strong>veiligheid</strong> via <strong>gevaarsymbolen</strong>.</div><div class=\"sam-head\">1. Onderzoek doen</div><p>Je onderzoekt een product door zijn <strong>eigenschappen</strong> te testen (sterkte, hardheid, of iets water doorlaat). Je begint met een <strong>hypothese</strong> (een verwachting), doet een <strong>proef</strong> en <strong>meet</strong> zorgvuldig. Uit de metingen trek je een <strong>conclusie</strong>.</p><div class=\"sam-head\">2. Veilig werken</div><p>In het lab werk je veilig. <strong>Gevaarsymbolen</strong> op verpakkingen waarschuwen voor bijvoorbeeld <strong>giftige</strong>, <strong>brandbare</strong> of <strong>bijtende</strong> stoffen. Draag zo nodig een veiligheidsbril en lees de waarschuwingen.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hypothese</div><div class=\"sam-definitie-body\">een verwachting die je vooraf opstelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Proef</div><div class=\"sam-definitie-body\">een test om iets te onderzoeken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Meten</div><div class=\"sam-definitie-body\">een grootte nauwkeurig bepalen met een meetinstrument.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Conclusie</div><div class=\"sam-definitie-body\">wat je uit de metingen besluit.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Eigenschap</div><div class=\"sam-definitie-body\">een kenmerk van een materiaal, zoals sterkte.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gevaarsymbool</div><div class=\"sam-definitie-body\">een teken dat waarschuwt voor gevaar van een stof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Giftig</div><div class=\"sam-definitie-body\">schadelijk voor je gezondheid bij binnenkrijgen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Brandbaar</div><div class=\"sam-definitie-body\">kan makkelijk vlam vatten.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Hypothese»</b> is verwachting vooraf, terwijl <b>«Conclusie»</b> besluit uit de proef is. <b>«Proef»</b> is test/experiment, terwijl <b>«Hypothese»</b> verwachting vooraf is. <b>«Eigenschap»</b> is kenmerk van materiaal, terwijl <b>«Hypothese»</b> verwachting vooraf is. <b>«Gevaarsymbool»</b> is waarschuwt voor gevaar, terwijl <b>«Eigenschap»</b> kenmerk van materiaal is.</div>"
    },
    {
     "id": "G",
@@ -2909,7 +8367,177 @@ var VAKKEN_VMBO = [
     ],
     "nSv": 0,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 0,
+    "sv": [
+     {
+      "v": "Wat is een grondstof?",
+      "o": [
+       "een stof die je uit de natuur haalt",
+       "een afgewerkt product",
+       "een gevaarsymbool",
+       "een meetinstrument"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een grondstof komt uit de natuur.",
+      "uo": [
+       "Klopt: een grondstof komt uit de natuur.",
+       "Een afgewerkt product is het eindproduct.",
+       "Een gevaarsymbool is een waarschuwing.",
+       "Een meetinstrument is gereedschap."
+      ],
+      "uh": "Fossiel (olie, gas, kolen) = eindig. Zon en wind = hernieuwbaar."
+     },
+     {
+      "v": "Welke grondstoffen raken op (zijn eindig)?",
+      "o": [
+       "zonlicht",
+       "fossiele grondstoffen",
+       "wind",
+       "water uit de regen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Fossiele grondstoffen zoals olie en gas raken op.",
+      "uo": [
+       "Zonlicht raakt niet op.",
+       "Klopt: fossiele grondstoffen zoals olie en gas raken op.",
+       "Wind is hernieuwbaar.",
+       "Regen komt telkens terug."
+      ],
+      "uh": "Fossiele grondstoffen zoals olie en gas raken op."
+     },
+     {
+      "v": "Wat betekent hernieuwbaar?",
+      "o": [
+       "het is giftig",
+       "het raakt snel op",
+       "het raakt niet op",
+       "het is duur"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Hernieuwbare bronnen raken niet op.",
+      "uo": [
+       "Hernieuwbaar zegt niets over giftig.",
+       "Dat is juist eindig.",
+       "Klopt: hernieuwbare bronnen raken niet op.",
+       "Prijs is een ander punt."
+      ],
+      "uh": "het raakt niet op: Hernieuwbare bronnen raken niet op."
+     },
+     {
+      "v": "Wat is synthese?",
+      "o": [
+       "een stof wegen",
+       "een stof scheiden",
+       "een stof smelten",
+       "een nieuwe stof maken uit andere stoffen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Bij synthese maak je een nieuwe stof.",
+      "uo": [
+       "Wegen is meten, geen synthese.",
+       "Scheiden is het tegenovergestelde.",
+       "Smelten is een faseovergang.",
+       "Klopt: bij synthese maak je een nieuwe stof."
+      ],
+      "uh": "Synthese = nieuwe stof maken (bv. kunststof uit kleine moleculen)."
+     },
+     {
+      "v": "Wat is een polymeer?",
+      "o": [
+       "een lange keten van veel gekoppelde moleculen",
+       "één enkel atoom",
+       "een mengsel",
+       "een gevaarsymbool"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een polymeer is een lange keten van veel moleculen.",
+      "uo": [
+       "Klopt: een polymeer is een lange keten van veel moleculen.",
+       "Eén atoom is juist heel klein.",
+       "Een polymeer is een zuivere stof, geen mengsel.",
+       "Een gevaarsymbool is een waarschuwing."
+      ],
+      "uh": "een lange keten van veel gekoppelde moleculen: Een polymeer is een lange keten van veel moleculen."
+     },
+     {
+      "v": "Welke bron is duurzaam (hernieuwbaar)?",
+      "o": [
+       "aardolie",
+       "zonne-energie",
+       "steenkool",
+       "aardgas"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Zonne-energie is een hernieuwbare bron.",
+      "uo": [
+       "Aardolie is juist fossiel en eindig.",
+       "Klopt: zonne-energie is een hernieuwbare bron.",
+       "Steenkool is fossiel en raakt op.",
+       "Aardgas is fossiel en eindig."
+      ],
+      "uh": "Zonne-energie is een hernieuwbare bron."
+     },
+     {
+      "v": "Waarom maak je kunststoffen via synthese?",
+      "o": [
+       "om grondstoffen te verspillen",
+       "om afval te maken",
+       "om materiaal met de gewenste eigenschappen te krijgen",
+       "om niets te bereiken"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Door synthese maak je materiaal met precies de gewenste eigenschappen.",
+      "uo": [
+       "Verspillen is geen doel.",
+       "Afval maken is geen doel.",
+       "Klopt: door synthese maak je materiaal met precies de gewenste eigenschappen.",
+       "Er wordt juist iets bruikbaars gemaakt."
+      ],
+      "uh": "om materiaal met de gewenste eigenschappen te krijgen: Door synthese maak je materiaal met precies de gewenste eigenschappen."
+     }
+    ],
+    "begrippen": [
+     {
+      "t": "Grondstof",
+      "d": "een stof die je uit de natuur haalt"
+     },
+     {
+      "t": "Fossiele grondstof",
+      "d": "grondstof uit de aarde zoals olie, gas en steenkool"
+     },
+     {
+      "t": "Eindig",
+      "d": "raakt op; is niet onuitputtelijk"
+     },
+     {
+      "t": "Hernieuwbaar",
+      "d": "raakt niet op, zoals zon en wind"
+     },
+     {
+      "t": "Synthese",
+      "d": "het maken van een nieuwe stof uit andere stoffen"
+     },
+     {
+      "t": "Kunststof",
+      "d": "een door de mens gemaakte stof (plastic)"
+     },
+     {
+      "t": "Polymeer",
+      "d": "een lange keten van veel gekoppelde moleculen"
+     },
+     {
+      "t": "Duurzaam",
+      "d": "zuinig met grondstoffen, met oog op de toekomst"
+     }
+    ],
+    "sam": "<div class=\"sam-intro\"><strong>Grondstoffen</strong> haal je uit de natuur; sommige zijn <strong>fossiel</strong> en raken op. Bij <strong>synthese</strong> maak je nieuwe stoffen, zoals <strong>kunststoffen</strong> uit kleine bouwstenen.</div><div class=\"sam-head\">1. Grondstoffen</div><p><strong>Grondstoffen</strong> komen uit de natuur: mineralen, hout, aardolie. <strong>Fossiele grondstoffen</strong> (olie, gas, steenkool) zijn <strong>eindig</strong>: ze raken op. <strong>Duurzame</strong> of hernieuwbare bronnen (zon, wind, biomassa) raken niet op.</p><div class=\"sam-head\">2. Synthese van nieuwe stoffen</div><p>Bij <strong>synthese</strong> maak je een nieuwe stof uit andere stoffen. Zo maak je <strong>kunststoffen</strong> door veel kleine moleculen aan elkaar te koppelen tot een lange keten: een <strong>polymeer</strong>. Zo ontstaan materialen met precies de gewenste eigenschappen.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Grondstof</div><div class=\"sam-definitie-body\">een stof die je uit de natuur haalt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fossiele grondstof</div><div class=\"sam-definitie-body\">grondstof uit de aarde zoals olie, gas en steenkool.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Eindig</div><div class=\"sam-definitie-body\">raakt op; is niet onuitputtelijk.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hernieuwbaar</div><div class=\"sam-definitie-body\">raakt niet op, zoals zon en wind.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Synthese</div><div class=\"sam-definitie-body\">het maken van een nieuwe stof uit andere stoffen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kunststof</div><div class=\"sam-definitie-body\">een door de mens gemaakte stof (plastic).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Polymeer</div><div class=\"sam-definitie-body\">een lange keten van veel gekoppelde moleculen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Duurzaam</div><div class=\"sam-definitie-body\">zuinig met grondstoffen, met oog op de toekomst.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Grondstof»</b> is uit de natuur, terwijl <b>«Synthese»</b> nieuwe stof maken is. <b>«Fossiele grondstof»</b> is olie, gas, steenkool, terwijl <b>«Hernieuwbaar»</b> raakt niet op is. <b>«Eindig»</b> is raakt op, terwijl <b>«Hernieuwbaar»</b> raakt niet op is. <b>«Kunststof»</b> is gemaakt plastic, terwijl <b>«Polymeer»</b> lange molecuulketen is.</div>"
    }
   ]
  },

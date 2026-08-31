@@ -21,9 +21,10 @@ var VAKKEN_VMBO = [
      "Kernboodschap van een gesproken tekst",
      "Beeld en geluid interpreteren"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -35,9 +36,10 @@ var VAKKEN_VMBO = [
      "Presentatie en spreekbeurt",
      "Discussie en overleg"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -51,9 +53,10 @@ var VAKKEN_VMBO = [
      "Hoofdgedachte en deelonderwerpen",
      "Argumentatie: feiten vs. meningen"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -66,9 +69,10 @@ var VAKKEN_VMBO = [
      "Verslag en samenvatting",
      "Spelling en interpunctie"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -81,9 +85,10 @@ var VAKKEN_VMBO = [
      "Genres herkennen",
      "Eigen mening onderbouwen"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 9,
+    "hasSam": true
    }
   ]
  },
@@ -111,9 +116,10 @@ var VAKKEN_VMBO = [
      "Woordbetekenis uit context",
      "Gatenteksten: idioom en grammatica in context"
     ],
-    "nSv": 0,
+    "nSv": 10,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 12,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -125,9 +131,10 @@ var VAKKEN_VMBO = [
      "Gesproken Engels begrijpen",
      "Hoofd- en bijzaken herkennen"
     ],
-    "nSv": 0,
+    "nSv": 10,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 11,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -139,9 +146,10 @@ var VAKKEN_VMBO = [
      "Reageren in een gesprek",
      "Vragen stellen en beantwoorden"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -153,9 +161,10 @@ var VAKKEN_VMBO = [
      "Formele en informele brief",
      "Woordvolgorde en spelling"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    }
   ]
  },
@@ -183,9 +192,10 @@ var VAKKEN_VMBO = [
      "Woordbetekenis uit context",
      "Gatenteksten: idioom en grammatica in context"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -197,9 +207,10 @@ var VAKKEN_VMBO = [
      "Gesproken Duits begrijpen",
      "Hoofd- en bijzaken herkennen"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -211,9 +222,10 @@ var VAKKEN_VMBO = [
      "Reageren in een gesprek",
      "Vragen stellen en beantwoorden"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -225,9 +237,10 @@ var VAKKEN_VMBO = [
      "Formele en informele brief",
      "Naamvallen en woordvolgorde"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    }
   ]
  },
@@ -255,9 +268,10 @@ var VAKKEN_VMBO = [
      "Woordbetekenis uit context",
      "Gatenteksten: idioom en grammatica in context"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -269,9 +283,10 @@ var VAKKEN_VMBO = [
      "Gesproken Frans begrijpen",
      "Hoofd- en bijzaken herkennen"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -283,9 +298,10 @@ var VAKKEN_VMBO = [
      "Reageren in een gesprek",
      "Vragen stellen en beantwoorden"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 10,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -297,9 +313,10 @@ var VAKKEN_VMBO = [
      "Formele en informele brief",
      "Werkwoordvervoeging en spelling"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    }
   ]
  },
@@ -327,9 +344,10 @@ var VAKKEN_VMBO = [
      "Lineaire vergelijkingen oplossen",
      "Inklemmen bij kwadratische/exponentiële formules"
     ],
-    "nSv": 0,
+    "nSv": 9,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -343,9 +361,10 @@ var VAKKEN_VMBO = [
      "Samengestelde eenheden (bv. km/h ↔ m/s)",
      "Omtrek, oppervlakte en volume"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -359,9 +378,10 @@ var VAKKEN_VMBO = [
      "Kijklijnen en zichtveld",
      "Symmetrie"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -374,9 +394,10 @@ var VAKKEN_VMBO = [
      "Cirkeldiagram en histogram",
      "Gemiddelde, modus en mediaan"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -572,9 +593,10 @@ var VAKKEN_VMBO = [
      "Destilleren en extraheren",
      "Chromatografie"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "B",
@@ -587,9 +609,10 @@ var VAKKEN_VMBO = [
      "Molecuulformules",
      "Reactievergelijkingen kloppend maken"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "C",
@@ -601,9 +624,10 @@ var VAKKEN_VMBO = [
      "Kenmerken van een reactie",
      "Ontledings- en vormingsreacties"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "D",
@@ -616,9 +640,10 @@ var VAKKEN_VMBO = [
      "CO₂ aantonen met kalkwater",
      "Water aantonen met wit kopersulfaat"
     ],
-    "nSv": 0,
+    "nSv": 8,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 9,
+    "hasSam": true
    },
    {
     "id": "E",
@@ -630,9 +655,10 @@ var VAKKEN_VMBO = [
      "Grondstof tot product",
      "Kunststoffen en metalen"
     ],
-    "nSv": 0,
+    "nSv": 7,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "F",
@@ -644,9 +670,10 @@ var VAKKEN_VMBO = [
      "Onderzoek opzetten",
      "Eigenschappen meten"
     ],
-    "nSv": 0,
+    "nSv": 7,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    },
    {
     "id": "G",
@@ -659,9 +686,10 @@ var VAKKEN_VMBO = [
      "Indicatoren (lakmoes, rodekoolsap)",
      "Neutralisatiereacties"
     ],
-    "nSv": 0,
+    "nSv": 7,
     "nOe": 0,
-    "nBeg": 0
+    "nBeg": 8,
+    "hasSam": true
    }
   ]
  },
