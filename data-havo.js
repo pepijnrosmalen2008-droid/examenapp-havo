@@ -12489,1051 +12489,634 @@ var VAKKEN = [
      "Conclusies trekken en resultaten beoordelen",
      "Wetenschappelijke redeneerwijze en kritisch denken"
     ],
-    "sam": "<div class=\"sam-head\">Onderzoeksopzet</div><ul><li><strong>Hypothese</strong>: testbare voorspelling die voortvloeit uit een onderzoeksvraag. Formaat: \"Als [onafhankelijke variabele] dan [verwacht effect op afhankelijke variabele], omdat [redenering].\"</li><li><strong>Onafhankelijke variabele (OV)</strong>: de variabele die de onderzoeker zelf verandert/manipuleert. Bijv. temperatuur, concentratie, lichtintensiteit.</li><li><strong>Afhankelijke variabele (AV)</strong>: wat je meet als gevolg van de OV. Bijv. groeisnelheid, hoeveelheid geproduceerd O₂, hartslag.</li><li><strong>Constante variabelen (CV)</strong>: alle andere factoren die je gelijkhoudt om te zorgen dat alleen de OV invloed heeft op de AV. Bijv. temperatuur constanthouden als je licht varieert.</li><li><strong>Controlegroep</strong>: groep waarbij de OV niet wordt aangepast (nulconditie). Vergelijking met de experimentele groep toont het effect van de OV.</li></ul><div class=\"sam-head\">Grafieken interpreteren</div><ul><li><strong>Verband beschrijven</strong>: noem OV op x-as en AV op y-as. Beschrijf het patroon: stijgend, dalend, lineair, exponentieel, plateauwaarde, optimum.</li><li><strong>Optimum herkennen</strong>: bij enzymen en fotosynthese stijgt de reactiesnelheid tot een maximum bij een optimale waarde (bijv. temperatuur of pH), daarna daalt die. Reden: boven optimum denaturatie of limiterende factor.</li><li><strong>Foutmarges en herhalingen</strong>: meerdere herhalingen (replicaties) verminderen de invloed van toevalsfouten. Foutbalken tonen spreiding in de data.</li><li><strong>Correlatie ≠ causaliteit</strong>: twee factoren kunnen tegelijk veranderen zonder dat de ene de andere veroorzaakt. Causaliteit bewijzen vereist gecontroleerd experiment.</li></ul><div class=\"sam-head\">Conclusies en wetenschappelijk redeneren</div><ul><li><strong>Conclusie</strong>: gebaseerd op de data, niet op de hypothese. Noem altijd of de hypothese wordt ondersteund of verworpen, en op basis van welke data.</li><li><strong>Betrouwbaarheid</strong>: mate waarin het onderzoek herhaalbaar is en consistente resultaten geeft. Verbeterd door meerdere herhalingen en gestandaardiseerde methoden.</li><li><strong>Validiteit</strong>: mate waarin het onderzoek echt meet wat het beoogt te meten. Wordt bedreigd door storende variabelen die niet constant zijn gehouden.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Bij biologisch onderzoek stel je de <strong>onafhankelijke variabele</strong> zelf in en meet je de <strong>afhankelijke variabele</strong>. Een <strong>controlegroep</strong> geeft een vergelijkingsbasis. Je vergroot de <strong>betrouwbaarheid</strong> met herhalingen en bewaakt de <strong>validiteit</strong> door <strong>storende variabelen</strong> constant te houden.</div><div class=\"sam-head\">1. Variabelen en opzet</div><p>De <strong>onafhankelijke variabele</strong> (OV) stel je zelf in; de <strong>afhankelijke variabele</strong> (AV) meet je als reactie. Een <strong>controlegroep</strong> biedt een nulconditie om mee te vergelijken. Een <strong>hypothese</strong> die de data niet ondersteunen, wordt verworpen.</p><div class=\"sam-head\">2. Kwaliteit van onderzoek</div><p><strong>Betrouwbaarheid</strong> gaat over de herhaalbaarheid; meerdere <strong>replicaties</strong> verkleinen de invloed van toevalsfouten. <strong>Validiteit</strong> gaat over of je het juiste meet; een <strong>storende variabele</strong> die je niet constant houdt, verlaagt de validiteit. <strong>Correlatie</strong> is gelijktijdige verandering, <strong>causaliteit</strong> een bewezen oorzaak-gevolgrelatie.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Onafhankelijke variabele</div><div class=\"sam-definitie-body\">de variabele die de onderzoeker zelf instelt of manipuleert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Afhankelijke variabele</div><div class=\"sam-definitie-body\">de variabele die je meet als reactie op de onafhankelijke variabele.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Controlegroep</div><div class=\"sam-definitie-body\">de groep zonder behandeling die als vergelijkingsbasis dient.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Betrouwbaarheid</div><div class=\"sam-definitie-body\">de herhaalbaarheid: geeft herhaling dezelfde uitkomst?.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Validiteit</div><div class=\"sam-definitie-body\">of je meet wat je bedoelt te meten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Replicatie</div><div class=\"sam-definitie-body\">een herhaling van de meting om toevalsfouten te verkleinen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hypothese</div><div class=\"sam-definitie-body\">een toetsbare verwachting die je vooraf opstelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Correlatie</div><div class=\"sam-definitie-body\">gelijktijdige verandering van twee variabelen, geen bewijs van oorzaak.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Causaliteit</div><div class=\"sam-definitie-body\">een bewezen oorzaak-gevolgrelatie via een gecontroleerd experiment.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Storende variabele</div><div class=\"sam-definitie-body\">een variabele die de meting beïnvloedt en de validiteit verlaagt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Onafhankelijke variabele»</b> is zelf ingesteld, terwijl <b>«Afhankelijke variabele»</b> gemeten reactie is. <b>«Controlegroep»</b> is vergelijkingsbasis, terwijl <b>«Storende variabele»</b> verstoort de meting is. <b>«Betrouwbaarheid»</b> is herhaalbaarheid, terwijl <b>«Validiteit»</b> het juiste meten is. <b>«Replicatie»</b> is herhaling van de meting, terwijl <b>«Controlegroep»</b> vergelijkingsbasis is.</div>",
     "sv": [
      {
-      "v": "Welke variabele manipuleert de onderzoeker zelf in een biologisch experiment?",
+      "v": "Welke variabele manipuleert de onderzoeker zelf in een experiment?",
       "o": [
-       "De onafhankelijke variabele (OV)",
-       "De afhankelijke variabele",
-       "De constante variabele",
-       "De controlevariabele (nulmeting)"
+       "de onafhankelijke variabele",
+       "de afhankelijke variabele",
+       "de storende variabele",
+       "de controlegroep"
       ],
       "c": 0,
-      "u": "OV = wat je zelf verandert (bijv. temperatuur). AV = wat je meet als gevolg (bijv. reactiesnelheid). CV = alles wat je gelijkhoudt om eerlijk te vergelijken."
+      "d": 2,
+      "u": "De OV stel je zelf in.",
+      "uo": [
+       "Klopt: de OV stel je zelf in.",
+       "Nee, die meet je juist.",
+       "Nee, die wil je constant houden.",
+       "Nee, dat is een groep, geen variabele."
+      ],
+      "uh": "Onafhankelijke variabele: zelf ingesteld."
      },
      {
       "v": "Wat is het doel van een controlegroep in een experiment?",
       "o": [
-       "Een nulconditie bieden waarmee de experimentele groep kan worden vergeleken",
-       "De onafhankelijke variabele zo groot mogelijk maken",
-       "Alle constante variabelen te elimineren",
-       "De afhankelijke variabele te bepalen"
+       "de meting sneller maken",
+       "een vergelijkingsbasis bieden voor de experimentele groep",
+       "de hypothese bewijzen",
+       "de storende variabele meten"
       ],
-      "c": 0,
-      "u": "De controlegroep krijgt geen behandeling (of de nulwaarde van de OV). Zo kun je het effect van de OV aantonen door te vergelijken met de experimentele groep."
+      "c": 1,
+      "d": 2,
+      "u": "De controlegroep is de nulconditie.",
+      "uo": [
+       "Nee, dat is niet het doel.",
+       "Klopt: de controlegroep is de nulconditie.",
+       "Nee, je toetst, je bewijst niet zomaar.",
+       "Nee, die houd je juist constant."
+      ],
+      "uh": "Controlegroep: vergelijkingsbasis."
      },
      {
-      "v": "Een grafiek toont dat de reactiesnelheid van een enzym stijgt tot 37°C en daarna snel daalt. Hoe heet dit temperatuurpunt?",
+      "v": "De reactiesnelheid van een enzym stijgt tot 37 °C en daalt daarna snel. Hoe heet dit punt?",
       "o": [
-       "Het optimum",
-       "Het evenwichtspunt",
-       "De denaturatietemperatuur",
-       "Het compensatiepunt"
+       "het nulpunt",
+       "het maximum voor altijd",
+       "het optimum",
+       "de drempelwaarde"
       ],
-      "c": 0,
-      "u": "Bij het optimum is de reactiesnelheid het hoogst. Boven het optimum denatureert het enzym: de ruimtelijke structuur van het actief centrum verandert en het substraat past niet meer."
+      "c": 2,
+      "d": 2,
+      "u": "Bij het optimum werkt het enzym het best.",
+      "uo": [
+       "Nee, daar is de snelheid niet nul.",
+       "Nee, erna daalt het juist.",
+       "Klopt: bij het optimum werkt het enzym het best.",
+       "Nee, dat is een ander begrip."
+      ],
+      "uh": "Optimum: beste temperatuur voor het enzym."
      },
      {
-      "v": "Twee onderzoekers meten dezelfde soort maar komen tot verschillende conclusies. Wat vergroot de betrouwbaarheid van biologisch onderzoek?",
+      "v": "Wat vergroot de betrouwbaarheid van biologisch onderzoek?",
       "o": [
-       "Meerdere herhalingen (replicaties) uitvoeren",
-       "Alleen een grote steekproef nemen",
-       "De hypothese aanpassen aan de resultaten",
-       "Geen controlegroep gebruiken"
+       "de storende variabele laten variëren",
+       "de proef maar één keer doen",
+       "de hypothese aanpassen aan de uitkomst",
+       "meerdere herhalingen (replicaties) uitvoeren"
       ],
-      "c": 0,
-      "u": "Betrouwbaarheid = herhaalbaarheid. Meerdere replicaties verminderen de invloed van toevallige fouten en laten zien of resultaten consistent zijn."
+      "c": 3,
+      "d": 3,
+      "u": "Herhalen middelt toeval uit.",
+      "uo": [
+       "Nee, dat verstoort juist.",
+       "Nee, dat is juist onbetrouwbaar.",
+       "Nee, dat is niet eerlijk.",
+       "Klopt: herhalen middelt toeval uit."
+      ],
+      "uh": "Betrouwbaarheid: herhalen (replicaties)."
      },
      {
       "v": "Wat is het verschil tussen correlatie en causaliteit?",
       "o": [
-       "Correlatie = gelijktijdige verandering, causaliteit = bewezen oorzaak-gevolgrelatie via gecontroleerd experiment",
-       "Correlatie = oorzaak en gevolg, causaliteit = toevallig verband",
-       "Beide zijn hetzelfde: als twee factoren samenhangen, veroorzaakt de een de ander",
-       "Causaliteit betekent dat twee variabelen negatief samenhangen"
+       "correlatie is gelijktijdige verandering, causaliteit is een bewezen oorzaak-gevolgrelatie",
+       "ze zijn hetzelfde",
+       "correlatie is oorzaak-gevolg",
+       "causaliteit is toeval"
       ],
       "c": 0,
-      "u": "Correlatie: twee grootheden veranderen samen, maar dat bewijst geen oorzaak. Bijv. meer ijsverkoop en meer verdrinkingen in de zomer - beide worden veroorzaakt door warm weer, niet door elkaar."
+      "d": 3,
+      "u": "Samenhang tegenover bewezen oorzaak.",
+      "uo": [
+       "Klopt: samenhang tegenover bewezen oorzaak.",
+       "Nee, ze verschillen.",
+       "Nee, dat is causaliteit.",
+       "Nee, causaliteit is juist bewezen."
+      ],
+      "uh": "Correlatie: samenhang; causaliteit: bewezen oorzaak."
      },
      {
-      "v": "Een onderzoeker vergeet de temperatuur constant te houden terwijl hij lichtintensiteit varieert. Welk probleem ontstaat hierdoor?",
+      "v": "Een onderzoeker houdt de temperatuur niet constant terwijl hij licht varieert. Wat gebeurt er?",
       "o": [
-       "De validiteit neemt af: temperatuur is een storende variabele die de AV ook beïnvloedt",
-       "De hypothese moet worden aangepast",
-       "De controlegroep verdwijnt",
-       "Er is geen probleem zolang de temperatuur niet te hoog wordt"
+       "de betrouwbaarheid stijgt",
+       "de validiteit daalt: temperatuur is een storende variabele",
+       "er verandert niets",
+       "de hypothese wordt bewezen"
       ],
-      "c": 0,
-      "u": "Storende variabele (confounder): temperatuur beïnvloedt ook de AV. Het effect kan niet meer worden toegeschreven aan lichtintensiteit alleen. Validiteit is aangetast."
+      "c": 1,
+      "d": 3,
+      "u": "Een niet-constante storende variabele bederft de meting.",
+      "uo": [
+       "Nee, juist niet.",
+       "Klopt: een niet-constante storende variabele bederft de meting.",
+       "Nee, het beïnvloedt de AV.",
+       "Nee, dat kun je zo niet concluderen."
+      ],
+      "uh": "Storende variabele niet constant: validiteit daalt."
      },
      {
       "v": "Welk begrip beschrijft de herhaalbaarheid van een onderzoek?",
       "o": [
-       "Validiteit",
-       "Betrouwbaarheid",
-       "Nauwkeurigheid",
-       "Objectiviteit"
+       "correlatie",
+       "validiteit",
+       "betrouwbaarheid",
+       "causaliteit"
       ],
-      "c": 1,
-      "u": "Betrouwbaarheid = herhaalbaarheid. Als andere onderzoekers hetzelfde experiment uitvoeren en dezelfde resultaten krijgen, is het betrouwbaar. Validiteit gaat over of je het juiste meet."
+      "c": 2,
+      "d": 2,
+      "u": "Betrouwbaarheid is herhaalbaarheid.",
+      "uo": [
+       "Nee, dat is samenhang.",
+       "Nee, dat is of je het juiste meet.",
+       "Klopt: betrouwbaarheid is herhaalbaarheid.",
+       "Nee, dat is oorzaak-gevolg."
+      ],
+      "uh": "Betrouwbaarheid: herhaalbaarheid."
      },
      {
       "v": "Welke conclusie trek je als je hypothese door de data NIET wordt ondersteund?",
       "o": [
-       "De hypothese is verworpen; herformuleer op basis van de resultaten",
-       "De hypothese is bevestigd ondanks de data",
-       "Er is een fout in de methode want de hypothese was correct",
-       "Het experiment moet worden herhaald totdat de data klopt"
-      ],
-      "c": 0,
-      "u": "Een wetenschappelijke conclusie volgt de data. Als de data de hypothese niet ondersteunt, is de hypothese verworpen. Dit is waardevolle informatie die de theorie helpt verfijnen."
-     },
-     {
-      "v": "Welk kenmerk beschrijft de afhankelijke variabele in een biologisch experiment?",
-      "o": [
-       "De variabele die je meet als reactie op de OV",
-       "De variabele die je zelf manipuleert",
-       "De variabele die constant gehouden wordt",
-       "De waarde van de controlegroep"
-      ],
-      "c": 0,
-      "u": "AV = afhankelijke variabele: wat je meet als gevolg van de OV. Bijv. OV = lichtintensiteit, AV = fotosynthesesnelheid."
-     },
-     {
-      "v": "Wat is het verschil tussen validiteit en betrouwbaarheid in onderzoek?",
-      "o": [
-       "Validiteit: meten we het juiste? Betrouwbaarheid: is het meten consistent?",
-       "Ze betekenen hetzelfde",
-       "Betrouwbaarheid gaat over het meten van het juiste",
-       "Validiteit gaat over herhaalbaarheid"
-      ],
-      "c": 0,
-      "u": "Valide: je meet echt wat je wilt meten. Betrouwbaar: herhaling geeft consistent dezelfde uitkomst. Een meting kan betrouwbaar zijn zonder valide te zijn."
-     },
-     {
-      "v": "Wat is de rol van de controlegroep in een experiment?",
-      "o": [
-       "Vergelijkingsbasis bieden voor de experimentele groep",
-       "De onafhankelijke variabele maximaliseren",
-       "De afhankelijke variabele buiten beschouwing laten",
-       "Bevestigen dat de hypothese klopt"
-      ],
-      "c": 0,
-      "u": "De controlegroep ontvangt geen behandeling (nulconditie). Het vergelijken van de experimentele groep met de controlegroep maakt het mogelijk het effect van de OV aan te tonen."
-     },
-     {
-      "v": "Waarom zijn meerdere herhalingen (replicaties) belangrijk in biologisch onderzoek?",
-      "o": [
-       "Ze verminderen de invloed van toevallige fouten op de conclusie",
-       "Ze maken het experiment duurder zonder voordeel",
-       "Ze bewijzen de hypothese altijd correct",
-       "Ze vervangt de controlegroep"
-      ],
-      "c": 0,
-      "u": "Replicaties verhogen de betrouwbaarheid: toevallige variaties middelen uit. Hoe meer herhalingen, hoe robuuster de conclusie."
-     },
-     {
-      "v": "Wat betekent «Steekproef»?",
-      "o": [
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
-       "een deel van een populatie dat je onderzoekt",
-       "een verandering in het DNA",
-       "transcriptie en translatie; mutaties"
-      ],
-      "c": 1,
-      "u": "«Steekproef» betekent: een deel van een populatie dat je onderzoekt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een deel van een populatie dat je onderzoekt\"?",
-      "o": [
-       "Antigeen",
-       "Afweer",
-       "Celmembraan",
-       "Steekproef"
+       "je negeert de resultaten",
+       "de hypothese is bewezen",
+       "de data zijn altijd fout",
+       "de hypothese is verworpen; je herformuleert op basis van de resultaten"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Steekproef»: een deel van een populatie dat je onderzoekt.",
-      "d": 2
+      "d": 2,
+      "u": "Bij geen steun verwerp je de hypothese.",
+      "uo": [
+       "Nee, dat is onwetenschappelijk.",
+       "Nee, juist het tegenovergestelde.",
+       "Nee, dat volgt er niet uit.",
+       "Klopt: bij geen steun verwerp je de hypothese."
+      ],
+      "uh": "Geen steun: hypothese verworpen."
      },
      {
-      "v": "Welke term past bij: \"een deel van een populatie dat je onderzoekt\"?",
+      "v": "Wat is de afhankelijke variabele in een experiment?",
       "o": [
-       "Constant",
-       "Correlatie vs. causaliteit",
-       "Steekproef",
-       "Grafiek lezen"
+       "de variabele die je meet als reactie op de OV",
+       "de variabele die je zelf instelt",
+       "een storende variabele",
+       "de controlegroep"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De AV is de gemeten reactie.",
+      "uo": [
+       "Klopt: de AV is de gemeten reactie.",
+       "Nee, dat is de OV.",
+       "Nee, die wil je constant houden.",
+       "Nee, dat is een groep."
+      ],
+      "uh": "Afhankelijke variabele: gemeten reactie."
+     },
+     {
+      "v": "Wat is het verschil tussen validiteit en betrouwbaarheid?",
+      "o": [
+       "ze zijn hetzelfde",
+       "validiteit is of je het juiste meet, betrouwbaarheid of het meten consistent is",
+       "validiteit is consistentie",
+       "betrouwbaarheid is het juiste meten"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het juiste meten tegenover consistent meten.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Klopt: het juiste meten tegenover consistent meten.",
+       "Nee, dat is betrouwbaarheid.",
+       "Nee, dat is validiteit."
+      ],
+      "uh": "Validiteit: het juiste; betrouwbaarheid: consistent."
+     },
+     {
+      "v": "Waarom zijn meerdere replicaties belangrijk in biologisch onderzoek?",
+      "o": [
+       "ze bewijzen de hypothese",
+       "ze maken het onderzoek korter",
+       "ze verminderen de invloed van toevallige fouten op de conclusie",
+       "ze veranderen de OV"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Steekproef»: een deel van een populatie dat je onderzoekt.",
-      "d": 3
+      "d": 3,
+      "u": "Herhalen middelt toeval uit.",
+      "uo": [
+       "Nee, je toetst.",
+       "Nee, het duurt juist langer.",
+       "Klopt: herhalen middelt toeval uit.",
+       "Nee, dat doen ze niet."
+      ],
+      "uh": "Replicaties: minder invloed van toeval."
      },
      {
-      "v": "Wat houdt «Steekproef» in?",
+      "v": "Wat is een hypothese?",
       "o": [
-       "alles wat je gelijk houdt",
-       "wat de onderzoeker zelf instelt (de \"oorzaak\")",
-       "een namaakbehandeling zonder werkzame stof",
-       "een deel van een populatie dat je onderzoekt"
+       "een storende variabele",
+       "een bewezen feit",
+       "de gemeten uitkomst",
+       "een toetsbare verwachting die je vooraf opstelt"
       ],
       "c": 3,
-      "u": "«Steekproef» betekent: een deel van een populatie dat je onderzoekt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Standaarddeviatie»?",
-      "o": [
-       "de factor die je meet als gevolg",
-       "een maat voor de spreiding van meetwaarden",
-       "een reeks van eten en gegeten worden",
-       "hormoon dat de bloedglucose verlaagt"
+      "d": 2,
+      "u": "Een hypothese is een toetsbare gok vooraf.",
+      "uo": [
+       "Nee, dat is iets anders.",
+       "Nee, ze moet nog getoetst worden.",
+       "Nee, dat is het resultaat.",
+       "Klopt: een hypothese is een toetsbare gok vooraf."
       ],
-      "c": 1,
-      "u": "«Standaarddeviatie» betekent: een maat voor de spreiding van meetwaarden.",
-      "d": 1
+      "uh": "Hypothese: toetsbare verwachting vooraf."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een maat voor de spreiding van meetwaarden\"?",
+      "v": "Wat is de onafhankelijke variabele?",
       "o": [
-       "Nieren",
-       "Standaarddeviatie",
-       "Duurzaamheid",
-       "Chloroplast"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Standaarddeviatie»: een maat voor de spreiding van meetwaarden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een maat voor de spreiding van meetwaarden\"?",
-      "o": [
-       "Standaarddeviatie",
-       "Fotosynthesesnelheid",
-       "Grafiek lezen",
-       "Placebo"
+       "de variabele die je zelf instelt",
+       "de variabele die je meet",
+       "een groep proefpersonen",
+       "een toevalsfout"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Standaarddeviatie»: een maat voor de spreiding van meetwaarden.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Standaarddeviatie» in?",
-      "o": [
-       "een maat voor de spreiding van meetwaarden",
-       "mate waarin je meet wat je wilt meten",
-       "een deel van een populatie dat je onderzoekt",
-       "een toetsbare voorspelling van een verwacht verband"
+      "d": 2,
+      "u": "De OV stel je zelf in.",
+      "uo": [
+       "Klopt: de OV stel je zelf in.",
+       "Nee, dat is de AV.",
+       "Nee, dat is geen variabele.",
+       "Nee, dat is een fout."
       ],
-      "c": 0,
-      "u": "«Standaarddeviatie» betekent: een maat voor de spreiding van meetwaarden.",
-      "d": 3
+      "uh": "Onafhankelijke variabele: zelf instellen."
      },
      {
-      "v": "Wat betekent «Fotosynthesesnelheid»?",
+      "v": "De hoogte van de plant die je aan het eind meet. Welk begrip past hierbij?",
       "o": [
-       "best aangepaste individuen planten zich meer voort",
-       "voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan",
-       "de hoeveelheid fotosynthese per tijd",
-       "een maat voor de spreiding van meetwaarden"
-      ],
-      "c": 2,
-      "u": "«Fotosynthesesnelheid» betekent: de hoeveelheid fotosynthese per tijd.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de hoeveelheid fotosynthese per tijd\"?",
-      "o": [
-       "Neuron",
-       "Hart & bloedvaten",
-       "Fotosynthesesnelheid",
-       "Celdeling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Fotosynthesesnelheid»: de hoeveelheid fotosynthese per tijd.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de hoeveelheid fotosynthese per tijd\"?",
-      "o": [
-       "Controle-experiment",
-       "Steekproef",
-       "Afhankelijk",
-       "Fotosynthesesnelheid"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Fotosynthesesnelheid»: de hoeveelheid fotosynthese per tijd.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Fotosynthesesnelheid» in?",
-      "o": [
-       "vergelijkingsgroep zonder behandeling",
-       "de factor die je meet als gevolg",
-       "de hoeveelheid fotosynthese per tijd",
-       "een maat voor de spreiding van meetwaarden"
-      ],
-      "c": 2,
-      "u": "«Fotosynthesesnelheid» betekent: de hoeveelheid fotosynthese per tijd.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Placebo»?",
-      "o": [
-       "een namaakbehandeling zonder werkzame stof",
-       "samenhang ≠ oorzaak",
-       "een reeks van eten en gegeten worden",
-       "een gestructureerd pakketje DNA"
-      ],
-      "c": 0,
-      "u": "«Placebo» betekent: een namaakbehandeling zonder werkzame stof.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een namaakbehandeling zonder werkzame stof\"?",
-      "o": [
-       "Placebo",
-       "Verteringsstelsel",
-       "Hart & bloedvaten",
-       "Nieren"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Placebo»: een namaakbehandeling zonder werkzame stof.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een namaakbehandeling zonder werkzame stof\"?",
-      "o": [
-       "Placebo",
-       "Constant",
-       "Controlegroep",
-       "Onafhankelijk"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Placebo»: een namaakbehandeling zonder werkzame stof.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Placebo» in?",
-      "o": [
-       "een namaakbehandeling zonder werkzame stof",
-       "vergelijkingsgroep zonder behandeling",
-       "een dun plakje materiaal voor onder de microscoop",
-       "een toetsbare voorspelling van een verwacht verband"
-      ],
-      "c": 0,
-      "u": "«Placebo» betekent: een namaakbehandeling zonder werkzame stof.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Hypothese»?",
-      "o": [
-       "glucose + zuurstof worden CO2 + water + energie (ATP)",
-       "een toetsbare voorspelling van een verwacht verband",
-       "de verscheidenheid aan soorten en genen",
-       "eiwit dat specifiek aan een antigeen bindt"
-      ],
-      "c": 1,
-      "u": "«Hypothese» betekent: een toetsbare voorspelling van een verwacht verband.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een toetsbare voorspelling van een verwacht verband\"?",
-      "o": [
-       "Hypothese",
-       "Osmose",
-       "Reducent",
-       "Piramide van biomassa"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Hypothese»: een toetsbare voorspelling van een verwacht verband.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een toetsbare voorspelling van een verwacht verband\"?",
-      "o": [
-       "Hypothese",
+       "Validiteit",
        "Afhankelijke variabele",
-       "Steekproef",
-       "Onafhankelijk"
+       "Controlegroep",
+       "Correlatie"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Hypothese»: een toetsbare voorspelling van een verwacht verband.",
-      "d": 3
+      "c": 1,
+      "d": 1,
+      "u": "De hoogte van de plant die je aan het eind meet. Dat past bij Afhankelijke variabele: gemeten reactie.",
+      "uo": [
+       "Nee, dat hoort bij Validiteit: het juiste meten.",
+       "Klopt: gemeten reactie.",
+       "Nee, dat hoort bij Controlegroep: vergelijkingsbasis.",
+       "Nee, dat hoort bij Correlatie: gelijktijdige verandering."
+      ],
+      "uh": "Afhankelijke variabele: gemeten reactie."
      },
      {
-      "v": "Wat houdt «Hypothese» in?",
+      "v": "Twee dingen veranderen samen, maar het een hoeft het ander niet te veroorzaken. Om welk begrip gaat het?",
       "o": [
-       "een toetsbare voorspelling van een verwacht verband",
-       "een namaakbehandeling zonder werkzame stof",
-       "optimum, verband tussen assen",
-       "onafhankelijk, afhankelijk, constant"
-      ],
-      "c": 0,
-      "u": "«Hypothese» betekent: een toetsbare voorspelling van een verwacht verband.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Onafhankelijke variabele»?",
-      "o": [
-       "de factor die je in een proef bewust verandert",
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "de hoeveelheid fotosynthese per tijd",
-       "voedsel → kleine stoffen; opname in het bloed"
-      ],
-      "c": 0,
-      "u": "«Onafhankelijke variabele» betekent: de factor die je in een proef bewust verandert.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de factor die je in een proef bewust verandert\"?",
-      "o": [
-       "Bloedsomloop",
-       "Diffusie",
-       "Recessief allel",
-       "Onafhankelijke variabele"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Onafhankelijke variabele»: de factor die je in een proef bewust verandert.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de factor die je in een proef bewust verandert\"?",
-      "o": [
+       "Storende variabele",
        "Betrouwbaarheid",
-       "Onafhankelijke variabele",
-       "Grafiek lezen",
-       "Determineertabel"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Onafhankelijke variabele»: de factor die je in een proef bewust verandert.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Onafhankelijke variabele» in?",
-      "o": [
-       "de factor die je in een proef bewust verandert",
-       "optimum, verband tussen assen",
-       "een deel van een populatie dat je onderzoekt",
-       "samenhang ≠ oorzaak"
-      ],
-      "c": 0,
-      "u": "«Onafhankelijke variabele» betekent: de factor die je in een proef bewust verandert.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Afhankelijke variabele»?",
-      "o": [
-       "hormoon dat de bloedglucose verlaagt",
-       "de factor die je meet als gevolg",
-       "een voedingsstof voor organismen",
-       "een snelle, onwillekeurige reactie op een prikkel"
-      ],
-      "c": 1,
-      "u": "«Afhankelijke variabele» betekent: de factor die je meet als gevolg.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de factor die je meet als gevolg\"?",
-      "o": [
-       "Constant",
-       "Hypothese",
-       "Afhankelijk",
+       "Correlatie",
        "Afhankelijke variabele"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Afhankelijke variabele»: de factor die je meet als gevolg.",
-      "d": 2
+      "c": 2,
+      "d": 1,
+      "u": "Twee dingen veranderen samen, maar het een hoeft het ander niet te veroorzaken. Dat past bij Correlatie: gelijktijdige verandering.",
+      "uo": [
+       "Nee, dat hoort bij Storende variabele: verstoort de meting.",
+       "Nee, dat hoort bij Betrouwbaarheid: herhaalbaarheid.",
+       "Klopt: gelijktijdige verandering.",
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie."
+      ],
+      "uh": "Correlatie: gelijktijdige verandering."
      },
      {
-      "v": "Welke term past bij: \"de factor die je meet als gevolg\"?",
+      "v": "Gelijktijdige verandering zonder bewijs van oorzaak. Welk begrip herken je hier?",
       "o": [
-       "Preparaat",
        "Afhankelijke variabele",
-       "Variabelen",
-       "Grafiek lezen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Afhankelijke variabele»: de factor die je meet als gevolg.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Afhankelijke variabele» in?",
-      "o": [
-       "de factor die je meet als gevolg",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven",
-       "een proef zonder de onderzochte factor, als vergelijkingspunt",
-       "een sleutel om organismen op kenmerken te benoemen"
-      ],
-      "c": 0,
-      "u": "«Afhankelijke variabele» betekent: de factor die je meet als gevolg.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Controle-experiment»?",
-      "o": [
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "Darwin: variatie + natuurlijke selectie",
-       "onafhankelijk, afhankelijk, constant",
-       "een proef zonder de onderzochte factor, als vergelijkingspunt"
+       "Betrouwbaarheid",
+       "Storende variabele",
+       "Correlatie"
       ],
       "c": 3,
-      "u": "«Controle-experiment» betekent: een proef zonder de onderzochte factor, als vergelijkingspunt.",
-      "d": 1
+      "d": 1,
+      "u": "Gelijktijdige verandering zonder bewijs van oorzaak. Dat past bij Correlatie: gelijktijdige verandering.",
+      "uo": [
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie.",
+       "Nee, dat hoort bij Betrouwbaarheid: herhaalbaarheid.",
+       "Nee, dat hoort bij Storende variabele: verstoort de meting.",
+       "Klopt: gelijktijdige verandering."
+      ],
+      "uh": "Correlatie: gelijktijdige verandering."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een proef zonder de onderzochte factor, als vergelijkingspunt\"?",
+      "v": "Een bewezen oorzaak-gevolgrelatie. Wat is hier aan de hand?",
       "o": [
-       "Controle-experiment",
-       "Piramide van biomassa",
-       "Energie",
-       "Antilichaam"
+       "Causaliteit",
+       "Onafhankelijke variabele",
+       "Storende variabele",
+       "Validiteit"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Controle-experiment»: een proef zonder de onderzochte factor, als vergelijkingspunt.",
-      "d": 2
+      "d": 1,
+      "u": "Een bewezen oorzaak-gevolgrelatie. Dat past bij Causaliteit: bewezen oorzaak-gevolg.",
+      "uo": [
+       "Klopt: bewezen oorzaak-gevolg.",
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld.",
+       "Nee, dat hoort bij Storende variabele: verstoort de meting.",
+       "Nee, dat hoort bij Validiteit: het juiste meten."
+      ],
+      "uh": "Causaliteit: bewezen oorzaak-gevolg."
      },
      {
-      "v": "Welke term past bij: \"een proef zonder de onderzochte factor, als vergelijkingspunt\"?",
+      "v": "Een gecontroleerd experiment bewijst dat het een het ander veroorzaakt. Welk begrip past hierbij?",
       "o": [
-       "Correlatie vs. causaliteit",
-       "Controle-experiment",
-       "Fotosynthesesnelheid",
+       "Onafhankelijke variabele",
+       "Causaliteit",
+       "Storende variabele",
        "Validiteit"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Controle-experiment»: een proef zonder de onderzochte factor, als vergelijkingspunt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Controle-experiment» in?",
-      "o": [
-       "een proef zonder de onderzochte factor, als vergelijkingspunt",
-       "onafhankelijk, afhankelijk, constant",
-       "wat je meet (het \"gevolg\")",
-       "een dun plakje materiaal voor onder de microscoop"
+      "d": 1,
+      "u": "Een gecontroleerd experiment bewijst dat het een het ander veroorzaakt. Dat past bij Causaliteit: bewezen oorzaak-gevolg.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld.",
+       "Klopt: bewezen oorzaak-gevolg.",
+       "Nee, dat hoort bij Storende variabele: verstoort de meting.",
+       "Nee, dat hoort bij Validiteit: het juiste meten."
       ],
-      "c": 0,
-      "u": "«Controle-experiment» betekent: een proef zonder de onderzochte factor, als vergelijkingspunt.",
-      "d": 3
+      "uh": "Causaliteit: bewezen oorzaak-gevolg."
      },
      {
-      "v": "Wat betekent «Betrouwbaarheid»?",
+      "v": "Een toetsbare verwachting vooraf. Om welk begrip gaat het?",
       "o": [
-       "draagkracht; eutrofiëring als verstoring",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "een variant van een gen"
-      ],
-      "c": 1,
-      "u": "«Betrouwbaarheid» betekent: mate waarin herhaalde metingen dezelfde uitkomst geven. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"mate waarin herhaalde metingen dezelfde uitkomst geven\"?",
-      "o": [
-       "Glucagon",
-       "Mitose",
-       "Betrouwbaarheid",
-       "Reducent"
+       "Onafhankelijke variabele",
+       "Controlegroep",
+       "Hypothese",
+       "Storende variabele"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Betrouwbaarheid»: mate waarin herhaalde metingen dezelfde uitkomst geven. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"mate waarin herhaalde metingen dezelfde uitkomst geven\"?",
-      "o": [
-       "Standaarddeviatie",
-       "Validiteit",
-       "Betrouwbaarheid",
-       "Onafhankelijk"
+      "d": 1,
+      "u": "Een toetsbare verwachting vooraf. Dat past bij Hypothese: toetsbare verwachting.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld.",
+       "Nee, dat hoort bij Controlegroep: vergelijkingsbasis.",
+       "Klopt: toetsbare verwachting.",
+       "Nee, dat hoort bij Storende variabele: verstoort de meting."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Betrouwbaarheid»: mate waarin herhaalde metingen dezelfde uitkomst geven. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
-      "d": 3
+      "uh": "Hypothese: toetsbare verwachting."
      },
      {
-      "v": "Wat houdt «Betrouwbaarheid» in?",
-      "o": [
-       "optimum, verband tussen assen",
-       "een dun plakje materiaal voor onder de microscoop",
-       "mate waarin je meet wat je wilt meten",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven"
-      ],
-      "c": 3,
-      "u": "«Betrouwbaarheid» betekent: mate waarin herhaalde metingen dezelfde uitkomst geven. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Validiteit»?",
-      "o": [
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
-       "de geleidelijke verandering van een ecosysteem",
-       "mate waarin je meet wat je wilt meten",
-       "organisme dat zelf organische stof maakt (planten)"
-      ],
-      "c": 2,
-      "u": "«Validiteit» betekent: mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"mate waarin je meet wat je wilt meten\"?",
+      "v": "Een herhaling van de meting. Welk begrip herken je hier?",
       "o": [
        "Hypothese",
-       "Nutriënt",
+       "Controlegroep",
+       "Betrouwbaarheid",
+       "Replicatie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een herhaling van de meting. Dat past bij Replicatie: herhaling van de meting.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Nee, dat hoort bij Controlegroep: vergelijkingsbasis.",
+       "Nee, dat hoort bij Betrouwbaarheid: herhaalbaarheid.",
+       "Klopt: herhaling van de meting."
+      ],
+      "uh": "Replicatie: herhaling van de meting."
+     },
+     {
+      "v": "Je herhaalt de meting een aantal keer om toeval uit te middelen. Wat is hier aan de hand?",
+      "o": [
+       "Replicatie",
        "Validiteit",
-       "Antagonisme"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Validiteit»: mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"mate waarin je meet wat je wilt meten\"?",
-      "o": [
-       "Afhankelijke variabele",
-       "Placebo",
-       "Steekproef",
-       "Validiteit"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Validiteit»: mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Validiteit» in?",
-      "o": [
-       "alles wat je gelijk houdt",
-       "een namaakbehandeling zonder werkzame stof",
-       "mate waarin je meet wat je wilt meten",
-       "een proef zonder de onderzochte factor, als vergelijkingspunt"
-      ],
-      "c": 2,
-      "u": "«Validiteit» betekent: mate waarin je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Determineertabel»?",
-      "o": [
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "een sleutel om organismen op kenmerken te benoemen",
-       "een van elders ingevoerde soort",
-       "wat je meet (het \"gevolg\")"
-      ],
-      "c": 1,
-      "u": "«Determineertabel» betekent: een sleutel om organismen op kenmerken te benoemen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een sleutel om organismen op kenmerken te benoemen\"?",
-      "o": [
-       "Enzym",
-       "Antagonisme",
-       "Determineertabel",
-       "Placebo"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Determineertabel»: een sleutel om organismen op kenmerken te benoemen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een sleutel om organismen op kenmerken te benoemen\"?",
-      "o": [
-       "Afhankelijk",
-       "Controlegroep",
-       "Preparaat",
-       "Determineertabel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Determineertabel»: een sleutel om organismen op kenmerken te benoemen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Determineertabel» in?",
-      "o": [
-       "een toetsbare voorspelling van een verwacht verband",
-       "een sleutel om organismen op kenmerken te benoemen",
-       "vergelijkingsgroep zonder behandeling",
-       "een namaakbehandeling zonder werkzame stof"
-      ],
-      "c": 1,
-      "u": "«Determineertabel» betekent: een sleutel om organismen op kenmerken te benoemen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Preparaat»?",
-      "o": [
-       "een dun plakje materiaal voor onder de microscoop",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "een snelle, onwillekeurige reactie op een prikkel",
-       "mitose (2 identiek) en meiose (4 verschillend)"
+       "Storende variabele",
+       "Afhankelijke variabele"
       ],
       "c": 0,
-      "u": "«Preparaat» betekent: een dun plakje materiaal voor onder de microscoop.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een dun plakje materiaal voor onder de microscoop\"?",
-      "o": [
-       "Hart & bloedvaten",
-       "Antigeen",
-       "Preparaat",
-       "Controle-experiment"
+      "d": 1,
+      "u": "Je herhaalt de meting een aantal keer om toeval uit te middelen. Dat past bij Replicatie: herhaling van de meting.",
+      "uo": [
+       "Klopt: herhaling van de meting.",
+       "Nee, dat hoort bij Validiteit: het juiste meten.",
+       "Nee, dat hoort bij Storende variabele: verstoort de meting.",
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Preparaat»: een dun plakje materiaal voor onder de microscoop.",
-      "d": 2
+      "uh": "Replicatie: herhaling van de meting."
      },
      {
-      "v": "Welke term past bij: \"een dun plakje materiaal voor onder de microscoop\"?",
+      "v": "De mate waarin herhaling hetzelfde geeft. Welk begrip past hierbij?",
       "o": [
-       "Controlegroep",
-       "Grafiek lezen",
-       "Preparaat",
-       "Standaarddeviatie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Preparaat»: een dun plakje materiaal voor onder de microscoop.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Preparaat» in?",
-      "o": [
-       "alles wat je gelijk houdt",
-       "de factor die je meet als gevolg",
-       "een dun plakje materiaal voor onder de microscoop",
-       "wat je meet (het \"gevolg\")"
-      ],
-      "c": 2,
-      "u": "«Preparaat» betekent: een dun plakje materiaal voor onder de microscoop.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Variabelen»?",
-      "o": [
-       "optimum, verband tussen assen",
-       "een spier met tegengestelde werking",
-       "organel waarin fotosynthese plaatsvindt",
-       "onafhankelijk, afhankelijk, constant"
-      ],
-      "c": 3,
-      "u": "«Variabelen» betekent: onafhankelijk, afhankelijk, constant.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"onafhankelijk, afhankelijk, constant\"?",
-      "o": [
-       "Correlatie vs. causaliteit",
-       "Specifieke afweer",
-       "Steekproef",
-       "Variabelen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Variabelen»: onafhankelijk, afhankelijk, constant.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"onafhankelijk, afhankelijk, constant\"?",
-      "o": [
-       "Controlegroep",
-       "Onafhankelijk",
-       "Variabelen",
-       "Placebo"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Variabelen»: onafhankelijk, afhankelijk, constant.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Variabelen» in?",
-      "o": [
-       "onafhankelijk, afhankelijk, constant",
-       "de factor die je in een proef bewust verandert",
-       "de factor die je meet als gevolg",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven"
-      ],
-      "c": 0,
-      "u": "«Variabelen» betekent: onafhankelijk, afhankelijk, constant.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Controlegroep»?",
-      "o": [
-       "fotosynthese (opbouw) en celademhaling (afbraak)",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "vergelijkingsgroep zonder behandeling",
-       "een van elders ingevoerde soort"
-      ],
-      "c": 2,
-      "u": "«Controlegroep» betekent: vergelijkingsgroep zonder behandeling.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vergelijkingsgroep zonder behandeling\"?",
-      "o": [
-       "Producent",
-       "Controlegroep",
-       "Celmembraan",
-       "Draagkracht"
+       "Validiteit",
+       "Betrouwbaarheid",
+       "Correlatie",
+       "Afhankelijke variabele"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Controlegroep»: vergelijkingsgroep zonder behandeling.",
-      "d": 2
+      "d": 3,
+      "u": "De mate waarin herhaling hetzelfde geeft. Dat past bij Betrouwbaarheid: herhaalbaarheid.",
+      "uo": [
+       "Nee, dat hoort bij Validiteit: het juiste meten.",
+       "Klopt: herhaalbaarheid.",
+       "Nee, dat hoort bij Correlatie: gelijktijdige verandering.",
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie."
+      ],
+      "uh": "Betrouwbaarheid: herhaalbaarheid."
      },
      {
-      "v": "Welke term past bij: \"vergelijkingsgroep zonder behandeling\"?",
+      "v": "Meer metingen maken je resultaat hiervan beter. Om welk begrip gaat het?",
       "o": [
-       "Controle-experiment",
-       "Steekproef",
-       "Correlatie vs. causaliteit",
+       "Hypothese",
+       "Storende variabele",
+       "Betrouwbaarheid",
+       "Controlegroep"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Meer metingen maken je resultaat hiervan beter. Dat past bij Betrouwbaarheid: herhaalbaarheid.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Nee, dat hoort bij Storende variabele: verstoort de meting.",
+       "Klopt: herhaalbaarheid.",
+       "Nee, dat hoort bij Controlegroep: vergelijkingsbasis."
+      ],
+      "uh": "Betrouwbaarheid: herhaalbaarheid."
+     },
+     {
+      "v": "De groep zonder behandeling waarmee je vergelijkt. Welk begrip herken je hier?",
+      "o": [
+       "Replicatie",
+       "Storende variabele",
+       "Causaliteit",
        "Controlegroep"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Controlegroep»: vergelijkingsgroep zonder behandeling.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Controlegroep» in?",
-      "o": [
-       "vergelijkingsgroep zonder behandeling",
-       "optimum, verband tussen assen",
-       "de hoeveelheid fotosynthese per tijd",
-       "een dun plakje materiaal voor onder de microscoop"
+      "d": 3,
+      "u": "De groep zonder behandeling waarmee je vergelijkt. Dat past bij Controlegroep: vergelijkingsbasis.",
+      "uo": [
+       "Nee, dat hoort bij Replicatie: herhaling van de meting.",
+       "Nee, dat hoort bij Storende variabele: verstoort de meting.",
+       "Nee, dat hoort bij Causaliteit: bewezen oorzaak-gevolg.",
+       "Klopt: vergelijkingsbasis."
       ],
-      "c": 0,
-      "u": "«Controlegroep» betekent: vergelijkingsgroep zonder behandeling.",
-      "d": 3
+      "uh": "Controlegroep: vergelijkingsbasis."
      },
      {
-      "v": "Wat betekent «Grafiek lezen»?",
+      "v": "Een variabele die de meting verstoort. Wat is hier aan de hand?",
       "o": [
-       "optimum, verband tussen assen",
-       "een reeks van eten en gegeten worden",
-       "een zenuwcel die impulsen geleidt",
-       "transcriptie en translatie; mutaties"
-      ],
-      "c": 0,
-      "u": "«Grafiek lezen» betekent: optimum, verband tussen assen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"optimum, verband tussen assen\"?",
-      "o": [
-       "Longen",
-       "Recessief allel",
-       "Grafiek lezen",
-       "Placebo"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Grafiek lezen»: optimum, verband tussen assen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"optimum, verband tussen assen\"?",
-      "o": [
-       "Grafiek lezen",
-       "Controlegroep",
-       "Validiteit",
-       "Placebo"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Grafiek lezen»: optimum, verband tussen assen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Grafiek lezen» in?",
-      "o": [
-       "een toetsbare voorspelling van een verwacht verband",
-       "optimum, verband tussen assen",
-       "wat je meet (het \"gevolg\")",
-       "een proef zonder de onderzochte factor, als vergelijkingspunt"
-      ],
-      "c": 1,
-      "u": "«Grafiek lezen» betekent: optimum, verband tussen assen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Correlatie vs. causaliteit»?",
-      "o": [
-       "organel dat eiwitten maakt",
-       "een gestructureerd pakketje DNA",
-       "alles wat je gelijk houdt",
-       "samenhang ≠ oorzaak"
-      ],
-      "c": 3,
-      "u": "«Correlatie vs. causaliteit» betekent: samenhang ≠ oorzaak.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"samenhang ≠ oorzaak\"?",
-      "o": [
-       "Longen",
-       "Bloedsomloop",
-       "Correlatie vs. causaliteit",
-       "Determineertabel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Correlatie vs. causaliteit»: samenhang ≠ oorzaak.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"samenhang ≠ oorzaak\"?",
-      "o": [
-       "Correlatie vs. causaliteit",
-       "Grafiek lezen",
-       "Validiteit",
-       "Fotosynthesesnelheid"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Correlatie vs. causaliteit»: samenhang ≠ oorzaak.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Correlatie vs. causaliteit» in?",
-      "o": [
-       "mate waarin je meet wat je wilt meten",
-       "samenhang ≠ oorzaak",
-       "de factor die je meet als gevolg",
-       "een toetsbare voorspelling van een verwacht verband"
-      ],
-      "c": 1,
-      "u": "«Correlatie vs. causaliteit» betekent: samenhang ≠ oorzaak.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Onafhankelijk»?",
-      "o": [
-       "wat de onderzoeker zelf instelt (de \"oorzaak\")",
-       "eiwit dat specifiek aan een antigeen bindt",
-       "een verandering in het DNA",
-       "een chemische boodschapper die via het bloed werkt"
-      ],
-      "c": 0,
-      "u": "«Onafhankelijk» betekent: wat de onderzoeker zelf instelt (de \"oorzaak\").",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"wat de onderzoeker zelf instelt (de \"oorzaak\")\"?",
-      "o": [
-       "Onafhankelijk",
-       "Celmembraan",
-       "Symbiose",
-       "Mutatie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Onafhankelijk»: wat de onderzoeker zelf instelt (de \"oorzaak\").",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"wat de onderzoeker zelf instelt (de \"oorzaak\")\"?",
-      "o": [
-       "Variabelen",
-       "Validiteit",
+       "Storende variabele",
+       "Causaliteit",
        "Onafhankelijke variabele",
-       "Onafhankelijk"
+       "Hypothese"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Onafhankelijk»: wat de onderzoeker zelf instelt (de \"oorzaak\").",
-      "d": 3
+      "c": 0,
+      "d": 1,
+      "u": "Een variabele die de meting verstoort. Dat past bij Storende variabele: verstoort de meting.",
+      "uo": [
+       "Klopt: verstoort de meting.",
+       "Nee, dat hoort bij Causaliteit: bewezen oorzaak-gevolg.",
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld.",
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting."
+      ],
+      "uh": "Storende variabele: verstoort de meting."
      },
      {
-      "v": "Wat houdt «Onafhankelijk» in?",
+      "v": "De grootheid die je zelf instelt in de proef. Welk begrip past hierbij?",
       "o": [
-       "een maat voor de spreiding van meetwaarden",
-       "wat de onderzoeker zelf instelt (de \"oorzaak\")",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven",
-       "een toetsbare voorspelling van een verwacht verband"
+       "Afhankelijke variabele",
+       "Onafhankelijke variabele",
+       "Hypothese",
+       "Controlegroep"
       ],
       "c": 1,
-      "u": "«Onafhankelijk» betekent: wat de onderzoeker zelf instelt (de \"oorzaak\").",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Afhankelijk»?",
-      "o": [
-       "wat je meet (het \"gevolg\")",
-       "neuron, synaps, reflexboog",
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "een maat voor de spreiding van meetwaarden"
+      "d": 2,
+      "u": "De grootheid die je zelf instelt in de proef. Dat past bij Onafhankelijke variabele: zelf ingesteld.",
+      "uo": [
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie.",
+       "Klopt: zelf ingesteld.",
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Nee, dat hoort bij Controlegroep: vergelijkingsbasis."
       ],
-      "c": 0,
-      "u": "«Afhankelijk» betekent: wat je meet (het \"gevolg\").",
-      "d": 1
+      "uh": "Onafhankelijke variabele: zelf ingesteld."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"wat je meet (het \"gevolg\")\"?",
+      "v": "Je gok van tevoren over de uitkomst van de proef. Om welk begrip gaat het?",
       "o": [
-       "Energiedoorgifte",
-       "Validiteit",
-       "Regeling",
-       "Afhankelijk"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Afhankelijk»: wat je meet (het \"gevolg\").",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"wat je meet (het \"gevolg\")\"?",
-      "o": [
-       "Preparaat",
-       "Validiteit",
-       "Constant",
-       "Afhankelijk"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Afhankelijk»: wat je meet (het \"gevolg\").",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Afhankelijk» in?",
-      "o": [
-       "alles wat je gelijk houdt",
-       "de factor die je in een proef bewust verandert",
-       "een deel van een populatie dat je onderzoekt",
-       "wat je meet (het \"gevolg\")"
-      ],
-      "c": 3,
-      "u": "«Afhankelijk» betekent: wat je meet (het \"gevolg\").",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Constant»?",
-      "o": [
-       "alles wat je gelijk houdt",
-       "gerichte afweer door lymfocyten, met geheugen",
-       "Mendelse overerving en stambomen",
-       "voedsel → kleine stoffen; opname in het bloed"
-      ],
-      "c": 0,
-      "u": "«Constant» betekent: alles wat je gelijk houdt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"alles wat je gelijk houdt\"?",
-      "o": [
-       "Standaarddeviatie",
-       "Celademhaling",
-       "Constant",
-       "Exoot"
+       "Onafhankelijke variabele",
+       "Correlatie",
+       "Hypothese",
+       "Storende variabele"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Constant»: alles wat je gelijk houdt.",
-      "d": 2
+      "d": 3,
+      "u": "Je gok van tevoren over de uitkomst van de proef. Dat past bij Hypothese: toetsbare verwachting.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld.",
+       "Nee, dat hoort bij Correlatie: gelijktijdige verandering.",
+       "Klopt: toetsbare verwachting.",
+       "Nee, dat hoort bij Storende variabele: verstoort de meting."
+      ],
+      "uh": "Hypothese: toetsbare verwachting."
      },
      {
-      "v": "Welke term past bij: \"alles wat je gelijk houdt\"?",
+      "v": "De grootheid die je meet als resultaat. Welk begrip herken je hier?",
       "o": [
-       "Grafiek lezen",
-       "Constant",
-       "Determineertabel",
+       "Correlatie",
+       "Validiteit",
+       "Controlegroep",
+       "Afhankelijke variabele"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De grootheid die je meet als resultaat. Dat past bij Afhankelijke variabele: gemeten reactie.",
+      "uo": [
+       "Nee, dat hoort bij Correlatie: gelijktijdige verandering.",
+       "Nee, dat hoort bij Validiteit: het juiste meten.",
+       "Nee, dat hoort bij Controlegroep: vergelijkingsbasis.",
+       "Klopt: gemeten reactie."
+      ],
+      "uh": "Afhankelijke variabele: gemeten reactie."
+     },
+     {
+      "v": "Of je meet wat je bedoelt te meten. Wat is hier aan de hand?",
+      "o": [
+       "Validiteit",
+       "Betrouwbaarheid",
+       "Hypothese",
+       "Controlegroep"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Of je meet wat je bedoelt te meten. Dat past bij Validiteit: het juiste meten.",
+      "uo": [
+       "Klopt: het juiste meten.",
+       "Nee, dat hoort bij Betrouwbaarheid: herhaalbaarheid.",
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Nee, dat hoort bij Controlegroep: vergelijkingsbasis."
+      ],
+      "uh": "Validiteit: het juiste meten."
+     },
+     {
+      "v": "De hoeveelheid mest die je zelf per plantje varieert. Welk begrip past hierbij?",
+      "o": [
+       "Afhankelijke variabele",
+       "Onafhankelijke variabele",
+       "Betrouwbaarheid",
        "Validiteit"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Constant»: alles wat je gelijk houdt.",
-      "d": 3
+      "d": 3,
+      "u": "De hoeveelheid mest die je zelf per plantje varieert. Dat past bij Onafhankelijke variabele: zelf ingesteld.",
+      "uo": [
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie.",
+       "Klopt: zelf ingesteld.",
+       "Nee, dat hoort bij Betrouwbaarheid: herhaalbaarheid.",
+       "Nee, dat hoort bij Validiteit: het juiste meten."
+      ],
+      "uh": "Onafhankelijke variabele: zelf ingesteld."
      },
      {
-      "v": "Wat houdt «Constant» in?",
+      "v": "Je meet echt de invloed van licht en niet iets anders. Om welk begrip gaat het?",
       "o": [
-       "mate waarin herhaalde metingen dezelfde uitkomst geven",
-       "een sleutel om organismen op kenmerken te benoemen",
-       "alles wat je gelijk houdt",
-       "een dun plakje materiaal voor onder de microscoop"
+       "Storende variabele",
+       "Replicatie",
+       "Validiteit",
+       "Afhankelijke variabele"
       ],
       "c": 2,
-      "u": "«Constant» betekent: alles wat je gelijk houdt.",
-      "d": 3
+      "d": 1,
+      "u": "Je meet echt de invloed van licht en niet iets anders. Dat past bij Validiteit: het juiste meten.",
+      "uo": [
+       "Nee, dat hoort bij Storende variabele: verstoort de meting.",
+       "Nee, dat hoort bij Replicatie: herhaling van de meting.",
+       "Klopt: het juiste meten.",
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie."
+      ],
+      "uh": "Validiteit: het juiste meten."
+     },
+     {
+      "v": "De planten die geen mest krijgen, als vergelijking. Welk begrip herken je hier?",
+      "o": [
+       "Afhankelijke variabele",
+       "Storende variabele",
+       "Hypothese",
+       "Controlegroep"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De planten die geen mest krijgen, als vergelijking. Dat past bij Controlegroep: vergelijkingsbasis.",
+      "uo": [
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie.",
+       "Nee, dat hoort bij Storende variabele: verstoort de meting.",
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Klopt: vergelijkingsbasis."
+      ],
+      "uh": "Controlegroep: vergelijkingsbasis."
+     },
+     {
+      "v": "Je vergeet de temperatuur constant te houden, wat de meting bederft. Wat is hier aan de hand?",
+      "o": [
+       "Storende variabele",
+       "Controlegroep",
+       "Causaliteit",
+       "Validiteit"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je vergeet de temperatuur constant te houden, wat de meting bederft. Dat past bij Storende variabele: verstoort de meting.",
+      "uo": [
+       "Klopt: verstoort de meting.",
+       "Nee, dat hoort bij Controlegroep: vergelijkingsbasis.",
+       "Nee, dat hoort bij Causaliteit: bewezen oorzaak-gevolg.",
+       "Nee, dat hoort bij Validiteit: het juiste meten."
+      ],
+      "uh": "Storende variabele: verstoort de meting."
      }
     ],
     "oe": [
@@ -13590,80 +13173,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Steekproef",
-      "d": "een deel van een populatie dat je onderzoekt"
-     },
-     {
-      "t": "Standaarddeviatie",
-      "d": "een maat voor de spreiding van meetwaarden"
-     },
-     {
-      "t": "Fotosynthesesnelheid",
-      "d": "de hoeveelheid fotosynthese per tijd"
-     },
-     {
-      "t": "Placebo",
-      "d": "een namaakbehandeling zonder werkzame stof"
-     },
-     {
-      "t": "Hypothese",
-      "d": "een toetsbare voorspelling van een verwacht verband"
-     },
-     {
       "t": "Onafhankelijke variabele",
-      "d": "de factor die je in een proef bewust verandert"
+      "d": "de variabele die de onderzoeker zelf instelt of manipuleert"
      },
      {
       "t": "Afhankelijke variabele",
-      "d": "de factor die je meet als gevolg"
-     },
-     {
-      "t": "Controle-experiment",
-      "d": "een proef zonder de onderzochte factor, als vergelijkingspunt"
-     },
-     {
-      "t": "Betrouwbaarheid",
-      "d": "mate waarin herhaalde metingen dezelfde uitkomst geven"
-     },
-     {
-      "t": "Validiteit",
-      "d": "mate waarin je meet wat je wilt meten"
-     },
-     {
-      "t": "Determineertabel",
-      "d": "een sleutel om organismen op kenmerken te benoemen"
-     },
-     {
-      "t": "Preparaat",
-      "d": "een dun plakje materiaal voor onder de microscoop"
-     },
-     {
-      "t": "Variabelen",
-      "d": "onafhankelijk, afhankelijk, constant"
+      "d": "de variabele die je meet als reactie op de onafhankelijke variabele"
      },
      {
       "t": "Controlegroep",
-      "d": "vergelijkingsgroep zonder behandeling"
+      "d": "de groep zonder behandeling die als vergelijkingsbasis dient"
      },
      {
-      "t": "Grafiek lezen",
-      "d": "optimum, verband tussen assen"
+      "t": "Betrouwbaarheid",
+      "d": "de herhaalbaarheid: geeft herhaling dezelfde uitkomst?"
      },
      {
-      "t": "Correlatie vs. causaliteit",
-      "d": "samenhang ≠ oorzaak"
+      "t": "Validiteit",
+      "d": "of je meet wat je bedoelt te meten"
      },
      {
-      "t": "Onafhankelijk",
-      "d": "wat de onderzoeker zelf instelt (de \"oorzaak\")"
+      "t": "Replicatie",
+      "d": "een herhaling van de meting om toevalsfouten te verkleinen"
      },
      {
-      "t": "Afhankelijk",
-      "d": "wat je meet (het \"gevolg\")"
+      "t": "Hypothese",
+      "d": "een toetsbare verwachting die je vooraf opstelt"
      },
      {
-      "t": "Constant",
-      "d": "alles wat je gelijk houdt"
+      "t": "Correlatie",
+      "d": "gelijktijdige verandering van twee variabelen, geen bewijs van oorzaak"
+     },
+     {
+      "t": "Causaliteit",
+      "d": "een bewezen oorzaak-gevolgrelatie via een gecontroleerd experiment"
+     },
+     {
+      "t": "Storende variabele",
+      "d": "een variabele die de meting beïnvloedt en de validiteit verlaagt"
      }
     ]
    },
@@ -13690,1328 +13237,634 @@ var VAKKEN = [
      "Mutaties en genexpressie",
      "Genetica: Mendelse overerving en stamboombomen"
     ],
-    "sam": "<div class=\"sam-head\">Celorganellen en stofwisseling</div><ul><li><strong>Mitochondrion</strong>: aerobe celademhaling → 36–38 ATP per glucose. Eigen DNA (endosymbiose). Aanwezig in alle eukaryote cellen.</li><li><strong>Chloroplast</strong>: fotosynthese. Bevat chlorofyl (groen pigment) voor lichtabsorptie. Alleen in plantencel en algen. Eigen DNA (endosymbiose).</li><li><strong>Ribosoom</strong>: eiwitsynthese (translatie). Op ruw endoplasmatisch reticulum of vrij in cytoplasma. Aanwezig in alle cellen (ook prokaryoten).</li><li><strong>Celmembraan</strong>: selectief doorlaatbaar. Fosfolipiden-dubbellaag met eiwitten. Regelt in- en uitstroom van stoffen.</li><li><strong>Fotosynthese (globaal)</strong>: <span class=\"fm\">6CO₂ + 6H₂O + lichtenergie → C₆H₁₂O₆ + 6O₂</span>. Lichtreacties (thylakoid, ATP + NADPH aanmaken) + donkerreacties/Calvincyclus (stroma, glucose bouwen).</li><li><strong>Aerobe celademhaling</strong>: <span class=\"fm\">C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 36–38 ATP</span>. Fasen: glycolyse (cytoplasma) → citroenzuurcyclus → oxidatieve fosforylering (mitochondrion).</li><li><strong>Anaerobe gisting</strong>: glucose → ethanol + CO₂ + 2 ATP (gistcellen) of melkzuur + 2 ATP (spiercellen). Noodoplossing bij zuurstoftekort. Zeer inefficiënt.</li><li><strong>Beperkende factor fotosynthese</strong>: licht, CO₂-concentratie of temperatuur kan de snelheid beperken. Bij plateau → andere factor is beperkend.</li></ul><div class=\"sam-head\">DNA, transcriptie en translatie</div><ul><li><strong>DNA-structuur</strong>: antiparallelle dubbelhelix van nucleotiden. Basenparen: A−T (2 H-bruggen) en G−C (3 H-bruggen, sterker). In elke lichaamscel identiek aanwezig.</li><li><strong>Replicatie</strong>: DNA-dubbelstreng wordt gesplitst; aan elke streng wordt complementair een nieuwe streng gesynthetiseerd. Semi-conservatief: helft oud, helft nieuw. Vindt plaats vóór celdeling.</li><li><strong>Transcriptie</strong>: DNA → mRNA in de celkern. Slechts één streng dient als mal. mRNA verlaat de kern via kernporiën.</li><li><strong>Translatie</strong>: mRNA → aminozuurketen op het ribosoom. tRNA brengt de juiste aminozuren aan. Elk codon (3 basen van mRNA) codeert voor 1 aminozuur. Stopcodon beëindigt de keten.</li><li><strong>Mutaties</strong>: verandering in DNA. Puntmutatie (één base gewijzigd), insertie (base ingevoegd), deletie (base verwijderd). Insertie en deletie veroorzaken frameshift: alle codons erna veranderen → groot effect. Puntmutatie soms stil (zelfde aminozuur door degenerate code).</li><li><strong>Genexpressie</strong>: welke genen zijn actief hangt af van het celtype en omstandigheden. Transcriptiefactoren reguleren of een gen aan- of uitstaat. Eenzelfde DNA → verschillende cellen door differentiële genexpressie.</li></ul><div class=\"sam-head\">Celdeling en erfelijkheid</div><ul><li><strong>Mitose</strong>: gelijk-delende kern → 2 identieke dochtercellen (2n → 2n). Voor groei, herstel en ongeslachtelijke voortplanting. Gaat via profase → metafase → anafase → telofase.</li><li><strong>Meiose</strong>: reductiedeling → 4 haplode geslachtscellen (2n → 4×n). Crossing-over in profase I: uitwisseling van chromosoomstukken → genetische variatie. Basis van seksuele voortplanting.</li><li><strong>Mendelse overerving</strong>: dominant allel (B) onderdrukt recessief (b). Genotype BB of Bb → fenotype dominant. Genotype bb → fenotype recessief. Kruis Bb × Bb geeft: ¼ BB : ½ Bb : ¼ bb = 3 dominant : 1 recessief.</li><li><strong>X-gebonden overerving</strong>: gen op X-chromosoom. Mannen (XY): één X → recessief allel direct zichtbaar. Vrouwen (XX): draagster als slechts één X het recessieve allel heeft. Kleurenblindheid, hemofilie zijn klassieke voorbeelden.</li><li><strong>Stamboom analyseren</strong>: aangedaan = eigenschap zichtbaar (verschijnt in fenotype). Drager = Bb (niet aangedaan maar kan het doorgeven). Let op geslacht van aangedane personen voor X-gebonden erfelijkheid.</li></ul><div class=\"sam-head\">Biotechnologie en gentech</div><ul><li><strong>PCR (polymerasekettingreactie)</strong>: vermenigvuldigt een specifiek stukje DNA miljoenen keren. Gebruikt bij forensisch onderzoek, diagnose van infecties en genetisch onderzoek.</li><li><strong>Gel-elektroforese</strong>: scheidt DNA-fragmenten op grootte. Kortere fragmenten bewegen sneller. Gebruikt om personen te identificeren (DNA-profiel) of genmutaties aan te tonen.</li><li><strong>Genetische modificatie (GM)</strong>: een gen van een andere soort wordt in het DNA van een organisme ingevoegd. Bijv. insuline-producerende bacteriën (menselijk insulinegen in bacterieel DNA).</li><li><strong>CRISPR-Cas9</strong>: moleculaire schaar die precies op één plek het DNA knipt. Kan genen uitschakelen of vervangen. Medische en landbouwtoepassingen (nog in onderzoek).</li><li><strong>Ethische vragen GM</strong>: voordelen (medicijnen, resistente gewassen) versus risico (verspreiding transgene genen in ecosysteem, onvoorziene gevolgen).</li></ul>",
+    "sam": "<div class=\"sam-intro\">Erfelijke informatie ligt in het <strong>DNA</strong>, met basenparen A-T en G-C. Bij <strong>replicatie</strong> verdubbelt het DNA; bij <strong>translatie</strong> maakt het ribosoom een eiwit. <strong>Enzymen</strong> verlagen de activeringsenergie. Het waarneembare <strong>fenotype</strong> volgt uit het <strong>genotype</strong>. <strong>Mitochondriën</strong> en <strong>chloroplasten</strong> hebben eigen DNA.</div><div class=\"sam-head\">1. DNA en eiwitsynthese</div><p>In het <strong>DNA</strong> paren adenine met thymine en guanine met cytosine. Voor een celdeling verdubbelt het DNA via <strong>replicatie</strong>. Bij <strong>translatie</strong> op het ribosoom wordt mRNA vertaald in een aminozuurketen (eiwit). Een <strong>frameshiftmutatie</strong> (insertie van één nucleotide) verschuift het leesraam.</p><div class=\"sam-head\">2. Cel en erfelijkheid</div><p>Een <strong>enzym</strong> is een biologische katalysator die de <strong>activeringsenergie</strong> verlaagt. De <strong>chloroplast</strong> verzorgt de fotosynthese. <strong>Prokaryoten</strong> hebben geen kernmembraan, <strong>eukaryoten</strong> wel. <strong>Mitochondriën</strong> en chloroplasten bevatten eigen DNA en zijn waarschijnlijk via endosymbiose ontstaan. Het <strong>fenotype</strong> is de waarneembare eigenschap, het <strong>genotype</strong> de genetische samenstelling.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">DNA-basenparen</div><div class=\"sam-definitie-body\">adenine paart met thymine, guanine met cytosine.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Translatie</div><div class=\"sam-definitie-body\">het vertalen van mRNA in een aminozuurketen op het ribosoom.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Replicatie</div><div class=\"sam-definitie-body\">de verdubbeling van het DNA voorafgaand aan celdeling.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fenotype</div><div class=\"sam-definitie-body\">de waarneembare eigenschap van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Genotype</div><div class=\"sam-definitie-body\">de genetische samenstelling van een organisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Enzym</div><div class=\"sam-definitie-body\">een biologische katalysator die de activeringsenergie verlaagt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Chloroplast</div><div class=\"sam-definitie-body\">het organel dat de fotosynthese verzorgt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Mitochondriën</div><div class=\"sam-definitie-body\">organellen met eigen DNA waar de celademhaling plaatsvindt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Prokaryoot</div><div class=\"sam-definitie-body\">een cel zonder kernmembraan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Frameshiftmutatie</div><div class=\"sam-definitie-body\">een mutatie die het leesraam van de codons verschuift.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«DNA-basenparen»</b> is A-T en G-C, terwijl <b>«Translatie»</b> mRNA naar eiwit is. <b>«Translatie»</b> is mRNA naar eiwit, terwijl <b>«Replicatie»</b> DNA verdubbelen is. <b>«Fenotype»</b> is waarneembare eigenschap, terwijl <b>«Genotype»</b> genetische samenstelling is. <b>«Enzym»</b> is katalysator, verlaagt energie, terwijl <b>«Chloroplast»</b> fotosynthese-organel is.</div>",
     "sv": [
      {
       "v": "Welke basenparen komen voor in DNA?",
       "o": [
-       "Adenine-Thymine en Guanine-Cytosine",
-       "Adenine-Uracil en Guanine-Cytosine",
-       "Adenine-Guanine en Thymine-Cytosine",
-       "Uracil-Adenine en Guanine-Cytosine"
+       "adenine-thymine en guanine-cytosine",
+       "adenine-guanine en thymine-cytosine",
+       "adenine-cytosine en guanine-thymine",
+       "alle basen paren met elkaar"
       ],
       "c": 0,
-      "u": "In DNA: A koppelt aan T en G koppelt aan C. In RNA vervangt Uracil de Thymine."
+      "d": 2,
+      "u": "Het juiste antwoord is: adenine-thymine en guanine-cytosine.",
+      "uo": [
+       "Klopt: A-T en G-C.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Nee, de paring is specifiek."
+      ],
+      "uh": "DNA: A-T en G-C."
      },
      {
-      "v": "Welk proces vindt plaats op het ribosoom waarbij mRNA wordt omgezet in een aminozuurketen (eiwit)?",
+      "v": "Welk proces zet op het ribosoom mRNA om in een aminozuurketen?",
       "o": [
-       "Translatie",
-       "Transcriptie (DNA → mRNA in de kern)",
-       "Replicatie",
-       "Mutatie (verandering in DNA-volgorde)"
+       "replicatie",
+       "translatie",
+       "transcriptie",
+       "mutatie"
       ],
-      "c": 0,
-      "u": "Transcriptie is het overschrijven van DNA naar mRNA in de celkern. Translatie is het vertalen van mRNA naar een aminozuurketen op het ribosoom."
+      "c": 1,
+      "d": 3,
+      "u": "Translatie maakt het eiwit.",
+      "uo": [
+       "Nee, dat is DNA-verdubbeling.",
+       "Klopt: translatie maakt het eiwit.",
+       "Nee, dat is DNA naar mRNA.",
+       "Nee, dat is een verandering in het DNA."
+      ],
+      "uh": "Translatie: mRNA → eiwit op het ribosoom."
      },
      {
-      "v": "Welke celademhaling is een noodoplossing bij zuurstoftekort en levert slechts 2 ATP per glucosemolecuul?",
+      "v": "Welke celademhaling is een noodoplossing bij zuurstoftekort en levert slechts 2 ATP?",
       "o": [
-       "Anaerobe gisting (zonder zuurstof, 2 ATP)",
-       "Aerobe ademhaling (met zuurstof, 36–38 ATP)",
-       "Fotosynthese (lichtenergie → glucose)",
-       "Oxidatieve fosforylering (ATP-synthase)"
+       "fotosynthese",
+       "aerobe verbranding",
+       "anaerobe gisting",
+       "replicatie"
       ],
-      "c": 0,
-      "u": "Aeroob is volledig en levert veel ATP. Anaerobe gisting is een noodoplossing bij zuurstoftekort en levert weinig ATP."
+      "c": 2,
+      "d": 3,
+      "u": "Gisting werkt zonder zuurstof, met weinig opbrengst.",
+      "uo": [
+       "Nee, dat maakt glucose.",
+       "Nee, die levert juist veel ATP.",
+       "Klopt: gisting werkt zonder zuurstof, met weinig opbrengst.",
+       "Nee, dat is DNA-verdubbeling."
+      ],
+      "uh": "Anaerobe gisting: zonder zuurstof, 2 ATP."
      },
      {
-      "v": "Welk begrip beschrijft de waarneembare eigenschap van een organisme (bijv. oogkleur) in tegenstelling tot de genetische samenstelling?",
+      "v": "Welk begrip beschrijft de waarneembare eigenschap van een organisme, zoals oogkleur?",
       "o": [
-       "Fenotype",
-       "Genotype",
-       "Karyotype (chromosomenpatroon)",
-       "Proteoom"
+       "het chromosoom",
+       "het genotype",
+       "het allel",
+       "het fenotype"
       ],
-      "c": 0,
-      "u": "Genotype is de genetische samenstelling, bijv. Bb. Fenotype is wat je kunt waarnemen, bijv. bruine ogen."
+      "c": 3,
+      "d": 2,
+      "u": "Het fenotype is wat je ziet.",
+      "uo": [
+       "Nee, dat draagt de genen.",
+       "Nee, dat is de genetische samenstelling.",
+       "Nee, dat is een genvariant.",
+       "Klopt: het fenotype is wat je ziet."
+      ],
+      "uh": "Fenotype: waarneembare eigenschap."
      },
      {
-      "v": "Welke organellen in een plantencel zijn verantwoordelijk voor de fotosynthese?",
+      "v": "Welk organel in een plantencel verzorgt de fotosynthese?",
       "o": [
-       "Chloroplasten",
-       "Mitochondriën",
-       "Ribosomen",
-       "Vacuolen"
+       "de chloroplast",
+       "het mitochondrion",
+       "de celkern",
+       "het ribosoom"
       ],
       "c": 0,
-      "u": "Chloroplasten bevatten chlorofyl en voeren de lichtafhankelijke en licht-onafhankelijke reacties van de fotosynthese uit. Mitochondriën doen de celademhaling."
+      "d": 2,
+      "u": "De chloroplast doet de fotosynthese.",
+      "uo": [
+       "Klopt: de chloroplast doet de fotosynthese.",
+       "Nee, dat verzorgt de celademhaling.",
+       "Nee, die bevat het DNA.",
+       "Nee, dat maakt eiwitten."
+      ],
+      "uh": "Chloroplast: fotosynthese."
      },
      {
       "v": "Wat is het verschil tussen een prokaryoot en een eukaryoot?",
       "o": [
-       "Prokaryoten hebben geen kernmembraan; eukaryoten hebben een membraanomgeven kern",
-       "Prokaryoten hebben een kernmembraan; eukaryoten niet",
-       "Prokaryoten zijn altijd meercellig; eukaryoten zijn altijd eencellig",
-       "Er is geen wezenlijk verschil"
+       "ze zijn hetzelfde",
+       "een prokaryoot heeft geen kernmembraan, een eukaryoot wel",
+       "een prokaryoot heeft een kern",
+       "een eukaryoot heeft geen DNA"
       ],
-      "c": 0,
-      "u": "Prokaryoten (bacteriën, archaea) hebben geen kernmembraan. Het DNA ligt vrij in het cytoplasma. Eukaryoten (dieren, planten, schimmels) hebben een echte celkern met kernmembraan."
+      "c": 1,
+      "d": 3,
+      "u": "Het kernmembraan is het onderscheid.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Klopt: het kernmembraan is het onderscheid.",
+       "Nee, juist niet.",
+       "Nee, beide hebben DNA."
+      ],
+      "uh": "Prokaryoot: geen kernmembraan; eukaryoot: wel."
      },
      {
       "v": "Welk proces beschrijft de verdubbeling van het DNA voorafgaand aan celdeling?",
       "o": [
-       "Replicatie",
-       "Transcriptie",
-       "Translatie",
-       "Mutatie"
+       "transcriptie",
+       "translatie",
+       "replicatie",
+       "gisting"
       ],
-      "c": 0,
-      "u": "DNA-replicatie: het dubbelstrengige DNA wordt gesplitst en aan beide templates wordt een complementaire nieuwe streng gesynthetiseerd. Resulteert in twee identieke kopieën."
+      "c": 2,
+      "d": 2,
+      "u": "Replicatie verdubbelt het DNA.",
+      "uo": [
+       "Nee, dat maakt mRNA.",
+       "Nee, dat maakt een eiwit.",
+       "Klopt: replicatie verdubbelt het DNA.",
+       "Nee, dat is een ademhalingsvorm."
+      ],
+      "uh": "Replicatie: DNA verdubbelen."
      },
      {
-      "v": "Wat is een enzym en wat doet het met de activeringsenergie?",
+      "v": "Wat doet een enzym met de activeringsenergie?",
       "o": [
-       "Een enzym is een biologische katalysator die de activeringsenergie verlaagt",
-       "Een enzym is een hormoon dat celdeling stimuleert",
-       "Een enzym verhoogt de activeringsenergie zodat de reactie sneller verloopt",
-       "Een enzym is een lipide dat het celmembraan vormt"
+       "het levert de energie zelf",
+       "het verhoogt de activeringsenergie",
+       "het heeft er geen invloed op",
+       "het verlaagt de activeringsenergie"
       ],
-      "c": 0,
-      "u": "Enzymen zijn eiwitten die als biologische katalysatoren werken. Ze verlagen de activeringsenergie waardoor biochemische reacties sneller verlopen bij lichaamstemperatuur."
+      "c": 3,
+      "d": 3,
+      "u": "Een enzym verlaagt de drempel voor de reactie.",
+      "uo": [
+       "Nee, het levert geen energie.",
+       "Nee, juist verlagen.",
+       "Nee, het heeft wel invloed.",
+       "Klopt: een enzym verlaagt de drempel voor de reactie."
+      ],
+      "uh": "Enzym: verlaagt de activeringsenergie."
      },
      {
-      "v": "Welke wet van Mendel stelt dat allelen van een gen bij gameetvorming van elkaar worden gescheiden?",
+      "v": "Welke wet van Mendel stelt dat allelen bij gameetvorming van elkaar worden gescheiden?",
       "o": [
-       "Wet van scheiding",
-       "Wet van vrije combinatie",
-       "Wet van dominantie",
-       "Wet van overerving"
+       "de wet van scheiding (onafhankelijkheid van gameten)",
+       "de wet van de zwaartekracht",
+       "de wet van behoud van energie",
+       "de wet van Hardy-Weinberg"
       ],
       "c": 0,
-      "u": "Eerste wet van Mendel (wet van scheiding): bij de vorming van geslachtscellen worden de twee allelen van een gen van elkaar gescheiden. Elk gamet bevat slechts één allel."
+      "d": 3,
+      "u": "Dat is Mendels scheidingswet.",
+      "uo": [
+       "Klopt: dat is Mendels scheidingswet.",
+       "Nee, dat is natuurkunde.",
+       "Nee, dat is natuurkunde.",
+       "Nee, dat is een populatiegenetische wet."
+      ],
+      "uh": "Mendel: allelen scheiden bij gameetvorming."
      },
      {
-      "v": "Welke organellen bevatten eigen DNA en zijn waarschijnlijk via endosymbiose ontstaan?",
+      "v": "Welke organellen bevatten eigen DNA en ontstonden waarschijnlijk via endosymbiose?",
       "o": [
-       "Mitochondriën en chloroplasten",
-       "Ribosomen en kern",
-       "Vacuoles en lysosomen",
-       "Golgi-apparaat en ER"
+       "de celkern en het ribosoom",
+       "mitochondriën en chloroplasten",
+       "het endoplasmatisch reticulum",
+       "de celwand"
       ],
-      "c": 0,
-      "u": "Endosymbiose-theorie: mitochondriën en chloroplasten stonden ooit als zelfstandige bacteriën en werden opgenomen in een gastheercel. Ze hebben eigen DNA, eigen ribosomen en delen door deling."
+      "c": 1,
+      "d": 3,
+      "u": "Beide hebben eigen DNA.",
+      "uo": [
+       "Nee, die hebben dat niet apart.",
+       "Klopt: beide hebben eigen DNA.",
+       "Nee, dat heeft geen eigen DNA.",
+       "Nee, dat is een structuur zonder DNA."
+      ],
+      "uh": "Eigen DNA, endosymbiose: mitochondriën en chloroplasten."
      },
      {
       "v": "Welk type mutatie verschuift het leesraam van alle codons na het insertiepunt?",
       "o": [
-       "Insertie van één nucleotide: frameshiftmutatie",
-       "Puntmutatie: vervanging van één nucleotide",
-       "Chromosomale mutatie: een heel chromosoomdeel verandert",
-       "Stomme mutatie: geen verandering in aminozuur"
+       "een chromosoommutatie",
+       "een puntmutatie zonder gevolg",
+       "een frameshiftmutatie",
+       "geen mutatie"
       ],
-      "c": 0,
-      "u": "Frameshiftmutatie: het invoegen of verwijderen van één nucleotide verschuift het leesraam van alle codons daarna. Heeft in de regel ernstige gevolgen voor het eiwit. Puntmutatie verandert maar één aminozuur."
+      "c": 2,
+      "d": 3,
+      "u": "Één nucleotide erbij verschuift het leesraam.",
+      "uo": [
+       "Nee, dat betreft hele chromosomen.",
+       "Nee, die verandert één codon.",
+       "Klopt: één nucleotide erbij verschuift het leesraam.",
+       "Nee, er is wel een mutatie."
+      ],
+      "uh": "Frameshift: leesraam verschuift."
      },
      {
-      "v": "Wat betekent «Ribosoom»?",
+      "v": "Wat is het genotype van een organisme?",
       "o": [
-       "organel dat eiwitten maakt",
-       "organel waarin fotosynthese plaatsvindt",
-       "organisme dat andere organismen eet",
-       "best aangepaste individuen planten zich meer voort"
-      ],
-      "c": 0,
-      "u": "«Ribosoom» betekent: organel dat eiwitten maakt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"organel dat eiwitten maakt\"?",
-      "o": [
-       "Fotosynthese",
-       "Chloroplast",
-       "Antagonisme",
-       "Ribosoom"
+       "een enzym",
+       "de waarneembare eigenschap",
+       "een organel",
+       "de genetische samenstelling"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Ribosoom»: organel dat eiwitten maakt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"organel dat eiwitten maakt\"?",
-      "o": [
-       "Celdeling",
-       "Chloroplast",
-       "Mitose",
-       "Ribosoom"
+      "d": 2,
+      "u": "Het genotype is de erfelijke aanleg.",
+      "uo": [
+       "Nee, dat is een katalysator.",
+       "Nee, dat is het fenotype.",
+       "Nee, dat is een celonderdeel.",
+       "Klopt: het genotype is de erfelijke aanleg."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Ribosoom»: organel dat eiwitten maakt.",
-      "d": 3
+      "uh": "Genotype: genetische samenstelling."
      },
      {
-      "v": "Wat houdt «Ribosoom» in?",
+      "v": "Wat is een enzym?",
       "o": [
-       "bouw en functie van de celonderdelen",
-       "Mendelse overerving en stambomen",
-       "CO2 + water + licht worden glucose + zuurstof",
-       "organel dat eiwitten maakt"
-      ],
-      "c": 3,
-      "u": "«Ribosoom» betekent: organel dat eiwitten maakt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Osmose»?",
-      "o": [
-       "best aangepaste individuen planten zich meer voort",
-       "hormonen & negatieve terugkoppeling (homeostase)",
-       "diffusie van water door een selectief membraan",
-       "organel dat eiwitten maakt"
-      ],
-      "c": 2,
-      "u": "«Osmose» betekent: diffusie van water door een selectief membraan.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"diffusie van water door een selectief membraan\"?",
-      "o": [
-       "Hypothese",
-       "Populatie",
-       "Validiteit",
-       "Osmose"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Osmose»: diffusie van water door een selectief membraan.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"diffusie van water door een selectief membraan\"?",
-      "o": [
-       "Dominant allel",
-       "Cel",
-       "Celademhaling",
-       "Osmose"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Osmose»: diffusie van water door een selectief membraan.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Osmose» in?",
-      "o": [
-       "CO2 + water + licht worden glucose + zuurstof",
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "diffusie van water door een selectief membraan",
-       "bouw en functie van de celonderdelen"
-      ],
-      "c": 2,
-      "u": "«Osmose» betekent: diffusie van water door een selectief membraan.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Chromosoom»?",
-      "o": [
-       "neuron, synaps, reflexboog",
-       "een gestructureerd pakketje DNA",
-       "een verandering in het DNA",
-       "algemene eerste verdediging (huid, fagocyten)"
-      ],
-      "c": 1,
-      "u": "«Chromosoom» betekent: een gestructureerd pakketje DNA.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een gestructureerd pakketje DNA\"?",
-      "o": [
-       "Chromosoom",
-       "Successie",
-       "DNA",
-       "Bladgroenkorrel (plant)"
+       "een biologische katalysator",
+       "een erfelijke eigenschap",
+       "een basenpaar",
+       "een chromosoom"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Chromosoom»: een gestructureerd pakketje DNA.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een gestructureerd pakketje DNA\"?",
-      "o": [
-       "Chromosoom",
-       "Celdeling",
-       "DNA",
-       "Genetica"
+      "d": 2,
+      "u": "Een enzym versnelt reacties.",
+      "uo": [
+       "Klopt: een enzym versnelt reacties.",
+       "Nee, dat is een fenotype.",
+       "Nee, dat hoort bij DNA.",
+       "Nee, dat draagt genen."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Chromosoom»: een gestructureerd pakketje DNA.",
-      "d": 3
+      "uh": "Enzym: biologische katalysator."
      },
      {
-      "v": "Wat houdt «Chromosoom» in?",
+      "v": "Op het ribosoom wordt mRNA vertaald naar een eiwit. Welk begrip past hierbij?",
       "o": [
-       "allel dat alleen homozygoot tot uiting komt",
-       "een gestructureerd pakketje DNA",
-       "glucose + zuurstof worden CO2 + water + energie (ATP)",
-       "het tot uiting komen van een gen in een eiwit"
-      ],
-      "c": 1,
-      "u": "«Chromosoom» betekent: een gestructureerd pakketje DNA.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Allel»?",
-      "o": [
-       "een variant van een gen",
-       "de verscheidenheid aan soorten en genen",
-       "twee hormonen of spieren met een tegengesteld effect",
-       "draagkracht; eutrofiëring als verstoring"
-      ],
-      "c": 0,
-      "u": "«Allel» betekent: een variant van een gen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een variant van een gen\"?",
-      "o": [
-       "DNA → eiwit",
-       "Evolutie",
-       "Allel",
-       "Antigeen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Allel»: een variant van een gen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een variant van een gen\"?",
-      "o": [
-       "Allel",
-       "Chloroplast",
-       "DNA",
-       "Recessief allel"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Allel»: een variant van een gen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Allel» in?",
-      "o": [
-       "fotosynthese (opbouw) en celademhaling (afbraak)",
-       "een variant van een gen",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "fotosynthese: legt lichtenergie vast"
-      ],
-      "c": 1,
-      "u": "«Allel» betekent: een variant van een gen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Genexpressie»?",
-      "o": [
-       "de 10%-regel en de energiepiramide",
-       "een niet-levende invloed (licht, temperatuur, water)",
-       "het tot uiting komen van een gen in een eiwit",
-       "een dun plakje materiaal voor onder de microscoop"
-      ],
-      "c": 2,
-      "u": "«Genexpressie» betekent: het tot uiting komen van een gen in een eiwit.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het tot uiting komen van een gen in een eiwit\"?",
-      "o": [
-       "Steekproef",
-       "Genexpressie",
-       "Validiteit",
-       "Verteringsstelsel"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Genexpressie»: het tot uiting komen van een gen in een eiwit.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het tot uiting komen van een gen in een eiwit\"?",
-      "o": [
-       "Celademhaling",
-       "Genexpressie",
-       "Fotosynthese",
-       "Dominant allel"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Genexpressie»: het tot uiting komen van een gen in een eiwit.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Genexpressie» in?",
-      "o": [
-       "organel dat eiwitten maakt",
-       "diffusie van water door een selectief membraan",
-       "het tot uiting komen van een gen in een eiwit",
-       "een verandering in het DNA"
-      ],
-      "c": 2,
-      "u": "«Genexpressie» betekent: het tot uiting komen van een gen in een eiwit.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Cel»?",
-      "o": [
-       "de kleinste eenheid van leven",
-       "Mendelse overerving en stambomen",
-       "producent, consument, reducent; voedselketen",
-       "onafhankelijk, afhankelijk, constant"
-      ],
-      "c": 0,
-      "u": "«Cel» betekent: de kleinste eenheid van leven.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de kleinste eenheid van leven\"?",
-      "o": [
-       "Mitose",
-       "Specifieke afweer",
-       "Cel",
-       "Piramide van biomassa"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Cel»: de kleinste eenheid van leven.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de kleinste eenheid van leven\"?",
-      "o": [
-       "DNA",
-       "Cel",
-       "Chloroplast",
-       "Chromosoom"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Cel»: de kleinste eenheid van leven.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Cel» in?",
-      "o": [
-       "organel waarin fotosynthese plaatsvindt",
-       "een variant van een gen",
-       "de kleinste eenheid van leven",
-       "allel dat het fenotype bepaalt, ook heterozygoot"
-      ],
-      "c": 2,
-      "u": "«Cel» betekent: de kleinste eenheid van leven.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Celmembraan»?",
-      "o": [
-       "een invloed van levende organismen",
-       "de selectief doorlaatbare grens van een cel",
-       "een van elders ingevoerde soort",
-       "een voedingsstof voor organismen"
-      ],
-      "c": 1,
-      "u": "«Celmembraan» betekent: de selectief doorlaatbare grens van een cel.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de selectief doorlaatbare grens van een cel\"?",
-      "o": [
-       "Celmembraan",
-       "Evolutie",
-       "Verteringsstelsel",
-       "Antagonisme"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Celmembraan»: de selectief doorlaatbare grens van een cel.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de selectief doorlaatbare grens van een cel\"?",
-      "o": [
-       "Celmembraan",
-       "Genetica",
-       "Fotosynthese",
-       "Dominant allel"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Celmembraan»: de selectief doorlaatbare grens van een cel.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Celmembraan» in?",
-      "o": [
-       "een variant van een gen",
-       "de selectief doorlaatbare grens van een cel",
-       "allel dat alleen homozygoot tot uiting komt",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)"
-      ],
-      "c": 1,
-      "u": "«Celmembraan» betekent: de selectief doorlaatbare grens van een cel.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Celkern»?",
-      "o": [
-       "twee hormonen of spieren met een tegengesteld effect",
-       "vergelijkingsgroep zonder behandeling",
-       "een dun plakje materiaal voor onder de microscoop",
-       "organel dat het DNA bevat en de cel aanstuurt"
-      ],
-      "c": 3,
-      "u": "«Celkern» betekent: organel dat het DNA bevat en de cel aanstuurt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"organel dat het DNA bevat en de cel aanstuurt\"?",
-      "o": [
-       "Celkern",
-       "Genexpressie",
-       "Bladgroenkorrel (plant)",
-       "Hypothese"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Celkern»: organel dat het DNA bevat en de cel aanstuurt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"organel dat het DNA bevat en de cel aanstuurt\"?",
-      "o": [
-       "Celkern",
-       "Celorganellen",
-       "Allel",
-       "Chloroplast"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Celkern»: organel dat het DNA bevat en de cel aanstuurt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Celkern» in?",
-      "o": [
-       "bouw en functie van de celonderdelen",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "de selectief doorlaatbare grens van een cel",
-       "een verandering in het DNA"
-      ],
-      "c": 1,
-      "u": "«Celkern» betekent: organel dat het DNA bevat en de cel aanstuurt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Mitochondrion»?",
-      "o": [
-       "gewone celdeling met twee identieke dochtercellen",
-       "fotosynthese: legt lichtenergie vast",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "het constant houden van het interne milieu"
-      ],
-      "c": 2,
-      "u": "«Mitochondrion» betekent: energiecentrale die aerobe celademhaling uitvoert (ATP).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"energiecentrale die aerobe celademhaling uitvoert (ATP)\"?",
-      "o": [
-       "Reflex",
-       "Genetica",
-       "Mitochondrion",
-       "Producent"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Mitochondrion»: energiecentrale die aerobe celademhaling uitvoert (ATP).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"energiecentrale die aerobe celademhaling uitvoert (ATP)\"?",
-      "o": [
-       "Mitochondrion",
-       "Genetica",
-       "Meiose",
-       "Genexpressie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Mitochondrion»: energiecentrale die aerobe celademhaling uitvoert (ATP).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Mitochondrion» in?",
-      "o": [
-       "de kleinste eenheid van leven",
-       "glucose + zuurstof worden CO2 + water + energie (ATP)",
-       "allel dat alleen homozygoot tot uiting komt",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)"
-      ],
-      "c": 3,
-      "u": "«Mitochondrion» betekent: energiecentrale die aerobe celademhaling uitvoert (ATP).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Chloroplast»?",
-      "o": [
-       "organel waarin fotosynthese plaatsvindt",
-       "algemene eerste verdediging (huid, fagocyten)",
-       "een zenuwcel die impulsen geleidt",
-       "een invloed van levende organismen"
-      ],
-      "c": 0,
-      "u": "«Chloroplast» betekent: organel waarin fotosynthese plaatsvindt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"organel waarin fotosynthese plaatsvindt\"?",
-      "o": [
-       "Chloroplast",
-       "Reflex",
-       "Homeostase",
-       "Diffusie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Chloroplast»: organel waarin fotosynthese plaatsvindt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"organel waarin fotosynthese plaatsvindt\"?",
-      "o": [
-       "Mitose",
-       "Osmose",
-       "Fotosynthese",
-       "Chloroplast"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Chloroplast»: organel waarin fotosynthese plaatsvindt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Chloroplast» in?",
-      "o": [
-       "organel waarin fotosynthese plaatsvindt",
-       "een variant van een gen",
-       "fotosynthese (opbouw) en celademhaling (afbraak)",
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)"
-      ],
-      "c": 0,
-      "u": "«Chloroplast» betekent: organel waarin fotosynthese plaatsvindt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Enzym»?",
-      "o": [
-       "een reeks van eten en gegeten worden",
-       "eiwit dat als biokatalysator een reactie versnelt",
-       "Darwin: variatie + natuurlijke selectie",
-       "isolatie → nieuwe soorten; allelfrequenties"
-      ],
-      "c": 1,
-      "u": "«Enzym» betekent: eiwit dat als biokatalysator een reactie versnelt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"eiwit dat als biokatalysator een reactie versnelt\"?",
-      "o": [
-       "Aspecifieke afweer",
-       "Controle-experiment",
        "Enzym",
-       "Celdeling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Enzym»: eiwit dat als biokatalysator een reactie versnelt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"eiwit dat als biokatalysator een reactie versnelt\"?",
-      "o": [
-       "DNA → eiwit",
-       "Celademhaling",
-       "Enzym",
-       "Dominant allel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Enzym»: eiwit dat als biokatalysator een reactie versnelt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Enzym» in?",
-      "o": [
-       "de kleinste eenheid van leven",
-       "eiwit dat als biokatalysator een reactie versnelt",
-       "een gestructureerd pakketje DNA",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)"
+       "Translatie",
+       "Frameshiftmutatie",
+       "Fenotype"
       ],
       "c": 1,
-      "u": "«Enzym» betekent: eiwit dat als biokatalysator een reactie versnelt.",
-      "d": 3
+      "d": 1,
+      "u": "Op het ribosoom wordt mRNA vertaald naar een eiwit. Dat past bij Translatie: mRNA naar eiwit.",
+      "uo": [
+       "Nee, dat hoort bij Enzym: katalysator, verlaagt energie.",
+       "Klopt: mRNA naar eiwit.",
+       "Nee, dat hoort bij Frameshiftmutatie: leesraam verschuift.",
+       "Nee, dat hoort bij Fenotype: waarneembare eigenschap."
+      ],
+      "uh": "Translatie: mRNA naar eiwit."
      },
      {
-      "v": "Wat betekent «Fotosynthese»?",
+      "v": "De energiecentrales met eigen DNA waar de celademhaling gebeurt. Om welk begrip gaat het?",
       "o": [
-       "een namaakbehandeling zonder werkzame stof",
-       "fotosynthese: legt lichtenergie vast",
-       "CO2 + water + licht worden glucose + zuurstof",
-       "het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af"
+       "Genotype",
+       "Replicatie",
+       "Mitochondriën",
+       "Fenotype"
       ],
       "c": 2,
-      "u": "«Fotosynthese» betekent: CO2 + water + licht worden glucose + zuurstof.",
-      "d": 1
+      "d": 1,
+      "u": "De energiecentrales met eigen DNA waar de celademhaling gebeurt. Dat past bij Mitochondriën: celademhaling, eigen DNA.",
+      "uo": [
+       "Nee, dat hoort bij Genotype: genetische samenstelling.",
+       "Nee, dat hoort bij Replicatie: DNA verdubbelen.",
+       "Klopt: celademhaling, eigen DNA.",
+       "Nee, dat hoort bij Fenotype: waarneembare eigenschap."
+      ],
+      "uh": "Mitochondriën: celademhaling, eigen DNA."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"CO2 + water + licht worden glucose + zuurstof\"?",
+      "v": "De organellen van de celademhaling. Welk begrip herken je hier?",
       "o": [
-       "Fotosynthese",
-       "Chromosoom",
-       "Bloedsomloop",
-       "Populatie"
+       "Fenotype",
+       "Replicatie",
+       "Genotype",
+       "Mitochondriën"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De organellen van de celademhaling. Dat past bij Mitochondriën: celademhaling, eigen DNA.",
+      "uo": [
+       "Nee, dat hoort bij Fenotype: waarneembare eigenschap.",
+       "Nee, dat hoort bij Replicatie: DNA verdubbelen.",
+       "Nee, dat hoort bij Genotype: genetische samenstelling.",
+       "Klopt: celademhaling, eigen DNA."
+      ],
+      "uh": "Mitochondriën: celademhaling, eigen DNA."
+     },
+     {
+      "v": "Een cel zonder membraanomgeven kern. Wat is hier aan de hand?",
+      "o": [
+       "Prokaryoot",
+       "Genotype",
+       "DNA-basenparen",
+       "Frameshiftmutatie"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Fotosynthese»: CO2 + water + licht worden glucose + zuurstof.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"CO2 + water + licht worden glucose + zuurstof\"?",
-      "o": [
-       "Fotosynthese",
-       "Ribosoom",
-       "Mitochondrion",
-       "Osmose"
+      "d": 1,
+      "u": "Een cel zonder membraanomgeven kern. Dat past bij Prokaryoot: geen kernmembraan.",
+      "uo": [
+       "Klopt: geen kernmembraan.",
+       "Nee, dat hoort bij Genotype: genetische samenstelling.",
+       "Nee, dat hoort bij DNA-basenparen: A-T en G-C.",
+       "Nee, dat hoort bij Frameshiftmutatie: leesraam verschuift."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Fotosynthese»: CO2 + water + licht worden glucose + zuurstof.",
-      "d": 3
+      "uh": "Prokaryoot: geen kernmembraan."
      },
      {
-      "v": "Wat houdt «Fotosynthese» in?",
+      "v": "Een bacterie zonder kernmembraan. Welk begrip past hierbij?",
       "o": [
-       "organel waarin fotosynthese plaatsvindt",
-       "CO2 + water + licht worden glucose + zuurstof",
-       "fotosynthese: legt lichtenergie vast",
-       "fotosynthese (opbouw) en celademhaling (afbraak)"
+       "Genotype",
+       "Prokaryoot",
+       "DNA-basenparen",
+       "Frameshiftmutatie"
       ],
       "c": 1,
-      "u": "«Fotosynthese» betekent: CO2 + water + licht worden glucose + zuurstof.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Celademhaling»?",
-      "o": [
-       "fotosynthese: legt lichtenergie vast",
-       "transcriptie en translatie; mutaties",
-       "Mendelse overerving en stambomen",
-       "glucose + zuurstof worden CO2 + water + energie (ATP)"
+      "d": 1,
+      "u": "Een bacterie zonder kernmembraan. Dat past bij Prokaryoot: geen kernmembraan.",
+      "uo": [
+       "Nee, dat hoort bij Genotype: genetische samenstelling.",
+       "Klopt: geen kernmembraan.",
+       "Nee, dat hoort bij DNA-basenparen: A-T en G-C.",
+       "Nee, dat hoort bij Frameshiftmutatie: leesraam verschuift."
       ],
-      "c": 3,
-      "u": "«Celademhaling» betekent: glucose + zuurstof worden CO2 + water + energie (ATP).",
-      "d": 1
+      "uh": "Prokaryoot: geen kernmembraan."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"glucose + zuurstof worden CO2 + water + energie (ATP)\"?",
+      "v": "Het fotosynthese-organel in plantencellen. Om welk begrip gaat het?",
       "o": [
-       "Celorganellen",
-       "DNA → eiwit",
-       "Homeostase",
-       "Celademhaling"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Celademhaling»: glucose + zuurstof worden CO2 + water + energie (ATP).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"glucose + zuurstof worden CO2 + water + energie (ATP)\"?",
-      "o": [
+       "Frameshiftmutatie",
+       "DNA-basenparen",
        "Chloroplast",
-       "DNA",
-       "Chromosoom",
-       "Celademhaling"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Celademhaling»: glucose + zuurstof worden CO2 + water + energie (ATP).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Celademhaling» in?",
-      "o": [
-       "een verandering in het DNA",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "glucose + zuurstof worden CO2 + water + energie (ATP)",
-       "allel dat alleen homozygoot tot uiting komt"
+       "Genotype"
       ],
       "c": 2,
-      "u": "«Celademhaling» betekent: glucose + zuurstof worden CO2 + water + energie (ATP).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «DNA»?",
-      "o": [
-       "glucose + zuurstof worden CO2 + water + energie (ATP)",
-       "molecuul met de erfelijke informatie in genen",
-       "het constant houden van het interne milieu",
-       "Darwin: variatie + natuurlijke selectie"
+      "d": 1,
+      "u": "Het fotosynthese-organel in plantencellen. Dat past bij Chloroplast: fotosynthese-organel.",
+      "uo": [
+       "Nee, dat hoort bij Frameshiftmutatie: leesraam verschuift.",
+       "Nee, dat hoort bij DNA-basenparen: A-T en G-C.",
+       "Klopt: fotosynthese-organel.",
+       "Nee, dat hoort bij Genotype: genetische samenstelling."
       ],
-      "c": 1,
-      "u": "«DNA» betekent: molecuul met de erfelijke informatie in genen.",
-      "d": 1
+      "uh": "Chloroplast: fotosynthese-organel."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"molecuul met de erfelijke informatie in genen\"?",
+      "v": "Een stof die een reactie versnelt. Welk begrip herken je hier?",
       "o": [
-       "Evolutie",
-       "DNA",
-       "Onafhankelijk",
-       "Constant"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «DNA»: molecuul met de erfelijke informatie in genen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"molecuul met de erfelijke informatie in genen\"?",
-      "o": [
-       "Chromosoom",
-       "DNA",
-       "Osmose",
-       "Genetica"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «DNA»: molecuul met de erfelijke informatie in genen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «DNA» in?",
-      "o": [
-       "organel waarin fotosynthese plaatsvindt",
-       "molecuul met de erfelijke informatie in genen",
-       "het tot uiting komen van een gen in een eiwit",
-       "glucose + zuurstof worden CO2 + water + energie (ATP)"
-      ],
-      "c": 1,
-      "u": "«DNA» betekent: molecuul met de erfelijke informatie in genen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Mitose»?",
-      "o": [
-       "transport van stoffen door het lichaam",
-       "een lichaamsvreemde stof die een afweerreactie opwekt",
-       "gewone celdeling met twee identieke dochtercellen",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans"
-      ],
-      "c": 2,
-      "u": "«Mitose» betekent: gewone celdeling met twee identieke dochtercellen. Let op het verschil met meiose: mitose geeft 2 identieke cellen, meiose 4 met het halve chromosoomaantal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gewone celdeling met twee identieke dochtercellen\"?",
-      "o": [
-       "Mitose",
-       "Grafiek lezen",
-       "Reducent",
-       "Validiteit"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Mitose»: gewone celdeling met twee identieke dochtercellen. Let op het verschil met meiose: mitose geeft 2 identieke cellen, meiose 4 met het halve chromosoomaantal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gewone celdeling met twee identieke dochtercellen\"?",
-      "o": [
-       "Mitose",
-       "Genexpressie",
-       "Meiose",
-       "DNA"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Mitose»: gewone celdeling met twee identieke dochtercellen. Let op het verschil met meiose: mitose geeft 2 identieke cellen, meiose 4 met het halve chromosoomaantal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Mitose» in?",
-      "o": [
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "fotosynthese: legt lichtenergie vast",
-       "allel dat alleen homozygoot tot uiting komt",
-       "gewone celdeling met twee identieke dochtercellen"
-      ],
-      "c": 3,
-      "u": "«Mitose» betekent: gewone celdeling met twee identieke dochtercellen. Let op het verschil met meiose: mitose geeft 2 identieke cellen, meiose 4 met het halve chromosoomaantal.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Meiose»?",
-      "o": [
-       "een proef zonder de onderzochte factor, als vergelijkingspunt",
-       "Mendelse overerving en stambomen",
-       "het constant houden van het interne milieu",
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)"
-      ],
-      "c": 3,
-      "u": "«Meiose» betekent: reductiedeling die geslachtscellen vormt (halve chromosoomaantal). Anders dan mitose: meiose halveert het chromosoomaantal en zorgt voor variatie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"reductiedeling die geslachtscellen vormt (halve chromosoomaantal)\"?",
-      "o": [
-       "Antigeen",
-       "Preparaat",
-       "Controlegroep",
-       "Meiose"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Meiose»: reductiedeling die geslachtscellen vormt (halve chromosoomaantal). Anders dan mitose: meiose halveert het chromosoomaantal en zorgt voor variatie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"reductiedeling die geslachtscellen vormt (halve chromosoomaantal)\"?",
-      "o": [
-       "Chromosoom",
-       "Meiose",
-       "Fotosynthese",
-       "DNA → eiwit"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Meiose»: reductiedeling die geslachtscellen vormt (halve chromosoomaantal). Anders dan mitose: meiose halveert het chromosoomaantal en zorgt voor variatie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Meiose» in?",
-      "o": [
-       "organel waarin fotosynthese plaatsvindt",
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
-       "allel dat alleen homozygoot tot uiting komt",
-       "diffusie van water door een selectief membraan"
-      ],
-      "c": 1,
-      "u": "«Meiose» betekent: reductiedeling die geslachtscellen vormt (halve chromosoomaantal). Anders dan mitose: meiose halveert het chromosoomaantal en zorgt voor variatie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Mutatie»?",
-      "o": [
-       "de selectief doorlaatbare grens van een cel",
-       "aspecifiek en specifiek",
-       "een verandering in het DNA",
-       "Darwin: variatie + natuurlijke selectie"
-      ],
-      "c": 2,
-      "u": "«Mutatie» betekent: een verandering in het DNA.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een verandering in het DNA\"?",
-      "o": [
-       "Specifieke afweer",
-       "Correlatie vs. causaliteit",
-       "Genexpressie",
-       "Mutatie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Mutatie»: een verandering in het DNA.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een verandering in het DNA\"?",
-      "o": [
-       "Bladgroenkorrel (plant)",
-       "Chloroplast",
-       "Mutatie",
-       "Chromosoom"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Mutatie»: een verandering in het DNA.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Mutatie» in?",
-      "o": [
-       "allel dat alleen homozygoot tot uiting komt",
-       "een verandering in het DNA",
-       "fotosynthese (opbouw) en celademhaling (afbraak)",
-       "gewone celdeling met twee identieke dochtercellen"
-      ],
-      "c": 1,
-      "u": "«Mutatie» betekent: een verandering in het DNA.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Dominant allel»?",
-      "o": [
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "optimum, verband tussen assen",
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
-       "gewone celdeling met twee identieke dochtercellen"
-      ],
-      "c": 0,
-      "u": "«Dominant allel» betekent: allel dat het fenotype bepaalt, ook heterozygoot.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"allel dat het fenotype bepaalt, ook heterozygoot\"?",
-      "o": [
-       "Dominant allel",
-       "Genexpressie",
-       "Consument",
-       "Hormoon"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Dominant allel»: allel dat het fenotype bepaalt, ook heterozygoot.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"allel dat het fenotype bepaalt, ook heterozygoot\"?",
-      "o": [
-       "Fotosynthese",
-       "Mitose",
-       "Celorganellen",
-       "Dominant allel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Dominant allel»: allel dat het fenotype bepaalt, ook heterozygoot.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Dominant allel» in?",
-      "o": [
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "diffusie van water door een selectief membraan",
-       "een verandering in het DNA",
-       "het tot uiting komen van een gen in een eiwit"
-      ],
-      "c": 0,
-      "u": "«Dominant allel» betekent: allel dat het fenotype bepaalt, ook heterozygoot.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Recessief allel»?",
-      "o": [
-       "bouw en functie van de celonderdelen",
-       "allel dat alleen homozygoot tot uiting komt",
-       "een deel van een populatie dat je onderzoekt",
-       "samenhang ≠ oorzaak"
-      ],
-      "c": 1,
-      "u": "«Recessief allel» betekent: allel dat alleen homozygoot tot uiting komt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"allel dat alleen homozygoot tot uiting komt\"?",
-      "o": [
-       "Variabelen",
-       "Insuline",
-       "Preparaat",
-       "Recessief allel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Recessief allel»: allel dat alleen homozygoot tot uiting komt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"allel dat alleen homozygoot tot uiting komt\"?",
-      "o": [
-       "Genetica",
-       "Recessief allel",
-       "Enzym",
-       "Energie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Recessief allel»: allel dat alleen homozygoot tot uiting komt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Recessief allel» in?",
-      "o": [
-       "gewone celdeling met twee identieke dochtercellen",
-       "het tot uiting komen van een gen in een eiwit",
-       "allel dat alleen homozygoot tot uiting komt",
-       "een variant van een gen"
-      ],
-      "c": 2,
-      "u": "«Recessief allel» betekent: allel dat alleen homozygoot tot uiting komt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Celorganellen»?",
-      "o": [
-       "een lichaamsvreemde stof die een afweerreactie opwekt",
-       "het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af",
-       "een levensgemeenschap plus de abiotische omgeving",
-       "bouw en functie van de celonderdelen"
-      ],
-      "c": 3,
-      "u": "«Celorganellen» betekent: bouw en functie van de celonderdelen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"bouw en functie van de celonderdelen\"?",
-      "o": [
-       "Celorganellen",
-       "Specifieke afweer",
-       "Producent",
-       "Biodiversiteit"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Celorganellen»: bouw en functie van de celonderdelen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"bouw en functie van de celonderdelen\"?",
-      "o": [
-       "Ribosoom",
-       "Osmose",
-       "Celorganellen",
-       "Celademhaling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Celorganellen»: bouw en functie van de celonderdelen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Celorganellen» in?",
-      "o": [
-       "gewone celdeling met twee identieke dochtercellen",
-       "transcriptie en translatie; mutaties",
-       "bouw en functie van de celonderdelen",
-       "fotosynthese: legt lichtenergie vast"
-      ],
-      "c": 2,
-      "u": "«Celorganellen» betekent: bouw en functie van de celonderdelen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Energie»?",
-      "o": [
-       "fotosynthese (opbouw) en celademhaling (afbraak)",
-       "een proef zonder de onderzochte factor, als vergelijkingspunt",
-       "de verscheidenheid aan soorten en genen",
-       "transport van stoffen door het lichaam"
-      ],
-      "c": 0,
-      "u": "«Energie» betekent: fotosynthese (opbouw) en celademhaling (afbraak).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"fotosynthese (opbouw) en celademhaling (afbraak)\"?",
-      "o": [
-       "Populatiedynamiek",
-       "Exoot",
-       "Antigeen",
-       "Energie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Energie»: fotosynthese (opbouw) en celademhaling (afbraak).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"fotosynthese (opbouw) en celademhaling (afbraak)\"?",
-      "o": [
-       "Energie",
-       "Celdeling",
-       "Recessief allel",
-       "Meiose"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Energie»: fotosynthese (opbouw) en celademhaling (afbraak).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Energie» in?",
-      "o": [
-       "fotosynthese (opbouw) en celademhaling (afbraak)",
-       "een variant van een gen",
-       "glucose + zuurstof worden CO2 + water + energie (ATP)",
-       "de selectief doorlaatbare grens van een cel"
-      ],
-      "c": 0,
-      "u": "«Energie» betekent: fotosynthese (opbouw) en celademhaling (afbraak).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Celdeling»?",
-      "o": [
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
-       "glucose + zuurstof worden CO2 + water + energie (ATP)",
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
-       "mitose (2 identiek) en meiose (4 verschillend)"
-      ],
-      "c": 3,
-      "u": "«Celdeling» betekent: mitose (2 identiek) en meiose (4 verschillend).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"mitose (2 identiek) en meiose (4 verschillend)\"?",
-      "o": [
-       "Insuline",
-       "Celademhaling",
-       "Celdeling",
-       "Ecosysteem"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Celdeling»: mitose (2 identiek) en meiose (4 verschillend).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"mitose (2 identiek) en meiose (4 verschillend)\"?",
-      "o": [
-       "Genexpressie",
-       "Celdeling",
-       "Celmembraan",
+       "Prokaryoot",
+       "Fenotype",
+       "Replicatie",
        "Enzym"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Celdeling»: mitose (2 identiek) en meiose (4 verschillend).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Celdeling» in?",
-      "o": [
-       "allel dat alleen homozygoot tot uiting komt",
-       "mitose (2 identiek) en meiose (4 verschillend)",
-       "een verandering in het DNA",
-       "een gestructureerd pakketje DNA"
+      "c": 3,
+      "d": 1,
+      "u": "Een stof die een reactie versnelt. Dat past bij Enzym: katalysator, verlaagt energie.",
+      "uo": [
+       "Nee, dat hoort bij Prokaryoot: geen kernmembraan.",
+       "Nee, dat hoort bij Fenotype: waarneembare eigenschap.",
+       "Nee, dat hoort bij Replicatie: DNA verdubbelen.",
+       "Klopt: katalysator, verlaagt energie."
       ],
-      "c": 1,
-      "u": "«Celdeling» betekent: mitose (2 identiek) en meiose (4 verschillend).",
-      "d": 3
+      "uh": "Enzym: katalysator, verlaagt energie."
      },
      {
-      "v": "Wat betekent «DNA → eiwit»?",
+      "v": "Een biologische katalysator die de activeringsenergie verlaagt. Wat is hier aan de hand?",
       "o": [
-       "transcriptie en translatie; mutaties",
-       "een namaakbehandeling zonder werkzame stof",
-       "alles wat je gelijk houdt",
-       "organel dat eiwitten maakt"
+       "Enzym",
+       "Chloroplast",
+       "Replicatie",
+       "DNA-basenparen"
       ],
       "c": 0,
-      "u": "«DNA → eiwit» betekent: transcriptie en translatie; mutaties.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"transcriptie en translatie; mutaties\"?",
-      "o": [
-       "DNA → eiwit",
-       "Abiotische factor",
-       "Homeostase",
-       "Bladgroenkorrel (plant)"
+      "d": 2,
+      "u": "Een biologische katalysator die de activeringsenergie verlaagt. Dat past bij Enzym: katalysator, verlaagt energie.",
+      "uo": [
+       "Klopt: katalysator, verlaagt energie.",
+       "Nee, dat hoort bij Chloroplast: fotosynthese-organel.",
+       "Nee, dat hoort bij Replicatie: DNA verdubbelen.",
+       "Nee, dat hoort bij DNA-basenparen: A-T en G-C."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «DNA → eiwit»: transcriptie en translatie; mutaties.",
-      "d": 2
+      "uh": "Enzym: katalysator, verlaagt energie."
      },
      {
-      "v": "Welke term past bij: \"transcriptie en translatie; mutaties\"?",
+      "v": "De waarneembare eigenschap van een organisme. Welk begrip past hierbij?",
       "o": [
-       "DNA",
-       "Recessief allel",
-       "DNA → eiwit",
-       "Mitose"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «DNA → eiwit»: transcriptie en translatie; mutaties.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «DNA → eiwit» in?",
-      "o": [
-       "glucose + zuurstof worden CO2 + water + energie (ATP)",
-       "transcriptie en translatie; mutaties",
-       "een verandering in het DNA",
-       "fotosynthese: legt lichtenergie vast"
+       "DNA-basenparen",
+       "Fenotype",
+       "Enzym",
+       "Prokaryoot"
       ],
       "c": 1,
-      "u": "«DNA → eiwit» betekent: transcriptie en translatie; mutaties.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Genetica»?",
-      "o": [
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "Mendelse overerving en stambomen",
-       "een deel van een populatie dat je onderzoekt",
-       "wat de onderzoeker zelf instelt (de \"oorzaak\")"
+      "d": 1,
+      "u": "De waarneembare eigenschap van een organisme. Dat past bij Fenotype: waarneembare eigenschap.",
+      "uo": [
+       "Nee, dat hoort bij DNA-basenparen: A-T en G-C.",
+       "Klopt: waarneembare eigenschap.",
+       "Nee, dat hoort bij Enzym: katalysator, verlaagt energie.",
+       "Nee, dat hoort bij Prokaryoot: geen kernmembraan."
       ],
-      "c": 1,
-      "u": "«Genetica» betekent: Mendelse overerving en stambomen.",
-      "d": 1
+      "uh": "Fenotype: waarneembare eigenschap."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"Mendelse overerving en stambomen\"?",
+      "v": "De oogkleur die je echt kunt zien. Om welk begrip gaat het?",
       "o": [
-       "Placebo",
-       "Antilichaam",
-       "Genetica",
-       "Dominant allel"
+       "Replicatie",
+       "Genotype",
+       "Fenotype",
+       "Chloroplast"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Genetica»: Mendelse overerving en stambomen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"Mendelse overerving en stambomen\"?",
-      "o": [
-       "Allel",
-       "Celorganellen",
-       "Genetica",
-       "Dominant allel"
+      "d": 2,
+      "u": "De oogkleur die je echt kunt zien. Dat past bij Fenotype: waarneembare eigenschap.",
+      "uo": [
+       "Nee, dat hoort bij Replicatie: DNA verdubbelen.",
+       "Nee, dat hoort bij Genotype: genetische samenstelling.",
+       "Klopt: waarneembare eigenschap.",
+       "Nee, dat hoort bij Chloroplast: fotosynthese-organel."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Genetica»: Mendelse overerving en stambomen.",
-      "d": 3
+      "uh": "Fenotype: waarneembare eigenschap."
      },
      {
-      "v": "Wat houdt «Genetica» in?",
+      "v": "De verdubbeling van het DNA. Welk begrip herken je hier?",
       "o": [
-       "bouw en functie van de celonderdelen",
-       "Mendelse overerving en stambomen",
-       "een gestructureerd pakketje DNA",
-       "gewone celdeling met twee identieke dochtercellen"
-      ],
-      "c": 1,
-      "u": "«Genetica» betekent: Mendelse overerving en stambomen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Bladgroenkorrel (plant)»?",
-      "o": [
-       "organel waarin fotosynthese plaatsvindt",
-       "een lichaamsvreemde stof die een afweerreactie opwekt",
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
-       "fotosynthese: legt lichtenergie vast"
+       "Chloroplast",
+       "Translatie",
+       "Genotype",
+       "Replicatie"
       ],
       "c": 3,
-      "u": "«Bladgroenkorrel (plant)» betekent: fotosynthese: legt lichtenergie vast.",
-      "d": 1
+      "d": 3,
+      "u": "De verdubbeling van het DNA. Dat past bij Replicatie: DNA verdubbelen.",
+      "uo": [
+       "Nee, dat hoort bij Chloroplast: fotosynthese-organel.",
+       "Nee, dat hoort bij Translatie: mRNA naar eiwit.",
+       "Nee, dat hoort bij Genotype: genetische samenstelling.",
+       "Klopt: DNA verdubbelen."
+      ],
+      "uh": "Replicatie: DNA verdubbelen."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"fotosynthese: legt lichtenergie vast\"?",
+      "v": "Een mutatie die het leesraam verschuift. Wat is hier aan de hand?",
       "o": [
-       "Bladgroenkorrel (plant)",
-       "Energie",
-       "Onafhankelijk",
-       "Antigeen"
+       "Frameshiftmutatie",
+       "Chloroplast",
+       "Translatie",
+       "Mitochondriën"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Bladgroenkorrel (plant)»: fotosynthese: legt lichtenergie vast.",
-      "d": 2
+      "d": 1,
+      "u": "Een mutatie die het leesraam verschuift. Dat past bij Frameshiftmutatie: leesraam verschuift.",
+      "uo": [
+       "Klopt: leesraam verschuift.",
+       "Nee, dat hoort bij Chloroplast: fotosynthese-organel.",
+       "Nee, dat hoort bij Translatie: mRNA naar eiwit.",
+       "Nee, dat hoort bij Mitochondriën: celademhaling, eigen DNA."
+      ],
+      "uh": "Frameshiftmutatie: leesraam verschuift."
      },
      {
-      "v": "Welke term past bij: \"fotosynthese: legt lichtenergie vast\"?",
+      "v": "De vaste paren in de DNA-streng. Welk begrip past hierbij?",
       "o": [
-       "Recessief allel",
-       "Osmose",
-       "Bladgroenkorrel (plant)",
-       "Fotosynthese"
+       "Translatie",
+       "DNA-basenparen",
+       "Frameshiftmutatie",
+       "Replicatie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De vaste paren in de DNA-streng. Dat past bij DNA-basenparen: A-T en G-C.",
+      "uo": [
+       "Nee, dat hoort bij Translatie: mRNA naar eiwit.",
+       "Klopt: A-T en G-C.",
+       "Nee, dat hoort bij Frameshiftmutatie: leesraam verschuift.",
+       "Nee, dat hoort bij Replicatie: DNA verdubbelen."
+      ],
+      "uh": "DNA-basenparen: A-T en G-C."
+     },
+     {
+      "v": "Het groene organel waarin de fotosynthese plaatsvindt. Om welk begrip gaat het?",
+      "o": [
+       "Replicatie",
+       "Mitochondriën",
+       "Chloroplast",
+       "Genotype"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Bladgroenkorrel (plant)»: fotosynthese: legt lichtenergie vast.",
-      "d": 3
+      "d": 3,
+      "u": "Het groene organel waarin de fotosynthese plaatsvindt. Dat past bij Chloroplast: fotosynthese-organel.",
+      "uo": [
+       "Nee, dat hoort bij Replicatie: DNA verdubbelen.",
+       "Nee, dat hoort bij Mitochondriën: celademhaling, eigen DNA.",
+       "Klopt: fotosynthese-organel.",
+       "Nee, dat hoort bij Genotype: genetische samenstelling."
+      ],
+      "uh": "Chloroplast: fotosynthese-organel."
      },
      {
-      "v": "Wat houdt «Bladgroenkorrel (plant)» in?",
+      "v": "De stap van mRNA naar een aminozuurketen. Welk begrip herken je hier?",
       "o": [
-       "fotosynthese: legt lichtenergie vast",
-       "eiwit dat als biokatalysator een reactie versnelt",
-       "gewone celdeling met twee identieke dochtercellen",
-       "een gestructureerd pakketje DNA"
+       "Fenotype",
+       "Enzym",
+       "Frameshiftmutatie",
+       "Translatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De stap van mRNA naar een aminozuurketen. Dat past bij Translatie: mRNA naar eiwit.",
+      "uo": [
+       "Nee, dat hoort bij Fenotype: waarneembare eigenschap.",
+       "Nee, dat hoort bij Enzym: katalysator, verlaagt energie.",
+       "Nee, dat hoort bij Frameshiftmutatie: leesraam verschuift.",
+       "Klopt: mRNA naar eiwit."
+      ],
+      "uh": "Translatie: mRNA naar eiwit."
+     },
+     {
+      "v": "De genetische samenstelling. Wat is hier aan de hand?",
+      "o": [
+       "Genotype",
+       "Fenotype",
+       "Replicatie",
+       "Chloroplast"
       ],
       "c": 0,
-      "u": "«Bladgroenkorrel (plant)» betekent: fotosynthese: legt lichtenergie vast.",
-      "d": 3
+      "d": 2,
+      "u": "De genetische samenstelling. Dat past bij Genotype: genetische samenstelling.",
+      "uo": [
+       "Klopt: genetische samenstelling.",
+       "Nee, dat hoort bij Fenotype: waarneembare eigenschap.",
+       "Nee, dat hoort bij Replicatie: DNA verdubbelen.",
+       "Nee, dat hoort bij Chloroplast: fotosynthese-organel."
+      ],
+      "uh": "Genotype: genetische samenstelling."
+     },
+     {
+      "v": "Adenine paart met thymine en guanine met cytosine. Welk begrip past hierbij?",
+      "o": [
+       "Translatie",
+       "DNA-basenparen",
+       "Genotype",
+       "Fenotype"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Adenine paart met thymine en guanine met cytosine. Dat past bij DNA-basenparen: A-T en G-C.",
+      "uo": [
+       "Nee, dat hoort bij Translatie: mRNA naar eiwit.",
+       "Klopt: A-T en G-C.",
+       "Nee, dat hoort bij Genotype: genetische samenstelling.",
+       "Nee, dat hoort bij Fenotype: waarneembare eigenschap."
+      ],
+      "uh": "DNA-basenparen: A-T en G-C."
+     },
+     {
+      "v": "De genen die iemand van zijn ouders kreeg. Om welk begrip gaat het?",
+      "o": [
+       "Enzym",
+       "DNA-basenparen",
+       "Genotype",
+       "Prokaryoot"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De genen die iemand van zijn ouders kreeg. Dat past bij Genotype: genetische samenstelling.",
+      "uo": [
+       "Nee, dat hoort bij Enzym: katalysator, verlaagt energie.",
+       "Nee, dat hoort bij DNA-basenparen: A-T en G-C.",
+       "Klopt: genetische samenstelling.",
+       "Nee, dat hoort bij Prokaryoot: geen kernmembraan."
+      ],
+      "uh": "Genotype: genetische samenstelling."
+     },
+     {
+      "v": "Vóór een celdeling wordt het DNA verdubbeld. Welk begrip herken je hier?",
+      "o": [
+       "Genotype",
+       "Translatie",
+       "Chloroplast",
+       "Replicatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Vóór een celdeling wordt het DNA verdubbeld. Dat past bij Replicatie: DNA verdubbelen.",
+      "uo": [
+       "Nee, dat hoort bij Genotype: genetische samenstelling.",
+       "Nee, dat hoort bij Translatie: mRNA naar eiwit.",
+       "Nee, dat hoort bij Chloroplast: fotosynthese-organel.",
+       "Klopt: DNA verdubbelen."
+      ],
+      "uh": "Replicatie: DNA verdubbelen."
+     },
+     {
+      "v": "Eén nucleotide erbij verschuift het hele leesraam. Wat is hier aan de hand?",
+      "o": [
+       "Frameshiftmutatie",
+       "Replicatie",
+       "Translatie",
+       "Enzym"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Eén nucleotide erbij verschuift het hele leesraam. Dat past bij Frameshiftmutatie: leesraam verschuift.",
+      "uo": [
+       "Klopt: leesraam verschuift.",
+       "Nee, dat hoort bij Replicatie: DNA verdubbelen.",
+       "Nee, dat hoort bij Translatie: mRNA naar eiwit.",
+       "Nee, dat hoort bij Enzym: katalysator, verlaagt energie."
+      ],
+      "uh": "Frameshiftmutatie: leesraam verschuift."
      }
     ],
     "oe": [
@@ -15118,104 +13971,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Ribosoom",
-      "d": "organel dat eiwitten maakt"
+      "t": "DNA-basenparen",
+      "d": "adenine paart met thymine, guanine met cytosine"
      },
      {
-      "t": "Osmose",
-      "d": "diffusie van water door een selectief membraan"
+      "t": "Translatie",
+      "d": "het vertalen van mRNA in een aminozuurketen op het ribosoom"
      },
      {
-      "t": "Chromosoom",
-      "d": "een gestructureerd pakketje DNA"
+      "t": "Replicatie",
+      "d": "de verdubbeling van het DNA voorafgaand aan celdeling"
      },
      {
-      "t": "Allel",
-      "d": "een variant van een gen"
+      "t": "Fenotype",
+      "d": "de waarneembare eigenschap van een organisme"
      },
      {
-      "t": "Genexpressie",
-      "d": "het tot uiting komen van een gen in een eiwit"
-     },
-     {
-      "t": "Cel",
-      "d": "de kleinste eenheid van leven"
-     },
-     {
-      "t": "Celmembraan",
-      "d": "de selectief doorlaatbare grens van een cel"
-     },
-     {
-      "t": "Celkern",
-      "d": "organel dat het DNA bevat en de cel aanstuurt"
-     },
-     {
-      "t": "Mitochondrion",
-      "d": "energiecentrale die aerobe celademhaling uitvoert (ATP)"
-     },
-     {
-      "t": "Chloroplast",
-      "d": "organel waarin fotosynthese plaatsvindt"
+      "t": "Genotype",
+      "d": "de genetische samenstelling van een organisme"
      },
      {
       "t": "Enzym",
-      "d": "eiwit dat als biokatalysator een reactie versnelt"
+      "d": "een biologische katalysator die de activeringsenergie verlaagt"
      },
      {
-      "t": "Fotosynthese",
-      "d": "CO2 + water + licht worden glucose + zuurstof"
+      "t": "Chloroplast",
+      "d": "het organel dat de fotosynthese verzorgt"
      },
      {
-      "t": "Celademhaling",
-      "d": "glucose + zuurstof worden CO2 + water + energie (ATP)"
+      "t": "Mitochondriën",
+      "d": "organellen met eigen DNA waar de celademhaling plaatsvindt"
      },
      {
-      "t": "DNA",
-      "d": "molecuul met de erfelijke informatie in genen"
+      "t": "Prokaryoot",
+      "d": "een cel zonder kernmembraan"
      },
      {
-      "t": "Mitose",
-      "d": "gewone celdeling met twee identieke dochtercellen"
-     },
-     {
-      "t": "Meiose",
-      "d": "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)"
-     },
-     {
-      "t": "Mutatie",
-      "d": "een verandering in het DNA"
-     },
-     {
-      "t": "Dominant allel",
-      "d": "allel dat het fenotype bepaalt, ook heterozygoot"
-     },
-     {
-      "t": "Recessief allel",
-      "d": "allel dat alleen homozygoot tot uiting komt"
-     },
-     {
-      "t": "Celorganellen",
-      "d": "bouw en functie van de celonderdelen"
-     },
-     {
-      "t": "Energie",
-      "d": "fotosynthese (opbouw) en celademhaling (afbraak)"
-     },
-     {
-      "t": "Celdeling",
-      "d": "mitose (2 identiek) en meiose (4 verschillend)"
-     },
-     {
-      "t": "DNA → eiwit",
-      "d": "transcriptie en translatie; mutaties"
-     },
-     {
-      "t": "Genetica",
-      "d": "Mendelse overerving en stambomen"
-     },
-     {
-      "t": "Bladgroenkorrel (plant)",
-      "d": "fotosynthese: legt lichtenergie vast"
+      "t": "Frameshiftmutatie",
+      "d": "een mutatie die het leesraam van de codons verschuift"
      }
     ],
     "leerdoelen": [
@@ -23498,1391 +22291,615 @@ var VAKKEN = [
      "Zenuwstelsel: neuronen, synaps, reflexbogen",
      "Afweersysteem: specifiek en aspecifiek"
     ],
-    "sam": "<div class=\"sam-head\">Spijsvertering en opname</div><ul><li><strong>Route</strong>: mond → slokdarm → maag → dunne darm → dikke darm → anus. Elke stap breekt voedsel verder af of absorbeert stoffen.</li><li><strong>Mechanische vs. chemische vertering</strong>: mechanisch = kauwen, peristaltiek (spiersamentrekkingen). Chemisch = enzymen breken macromoleculen af tot kleine moleculen die opgenomen kunnen worden.</li><li><strong>Enzymen per locatie</strong>: mond: amylase (speeksel) → zetmeel → maltose. Maag: pepsine (actief bij pH 2) → eiwitten → peptiden. Dunne darm: pancreasenzymen (lipase, amylase, protease) + gal van de lever (emulgeert vet → vergroot oppervlak voor lipase).</li><li><strong>Absorptie</strong>: darmvlokken (villi) + microvilli vergroten oppervlak (~200 m²). Glucose en aminozuren → bloed (poortader naar lever). Vetzuren en glycerol → lymfevaten.</li><li><strong>Dikke darm</strong>: waterabsorptie, vorming van feces. Darmflora fermenteert onverteerbare vezels.</li></ul><div class=\"sam-head\">Gasuitwisseling</div><ul><li><strong>Longblaasjes (alveoli)</strong>: zeer dunne wand (één cellaag), grote totale oppervlakte (~70 m²), rijke bloedvaatbedekking - ideaal voor gasdiffusie.</li><li><strong>Diffusie</strong>: O₂ stroomt van hoge concentratie (alveoli) naar lage concentratie (bloed). CO₂ omgekeerd. Passief transport, altijd van hoog naar laag.</li><li><strong>Hemoglobine</strong>: eiwit in rode bloedcellen. Bij hoge O₂-spanning (longen): bindt O₂ (oxyhemoglobine). Bij lage O₂-spanning (weefsels): geeft O₂ af. CO₂ wordt deels als bicarbonaat (HCO₃⁻) getransporteerd in plasma.</li><li><strong>Sturing ademhaling</strong>: CO₂-concentratie in bloed bepaalt ademfrequentie. Hoge CO₂ → sneller ademen. Aangestuurd vanuit het verlengde merg.</li></ul><div class=\"sam-head\">Bloedsomloop</div><ul><li><strong>Kleine kringloop (longcirculatie)</strong>: rechterboezem → rechterkamer → longslagader → longen (O₂ laden, CO₂ lossen) → longader → linkerboezem.</li><li><strong>Grote kringloop (lichaamscirculatie)</strong>: linkerboezem → linkerkamer → aorta → lichaam (O₂ lossen, CO₂ laden) → holle aders → rechterboezem.</li><li><strong>Hart</strong>: 4 kamers - 2 boezems (ontvangen bloed), 2 kamers (pompen bloed weg). Hartkleppen voorkomen terugstroming. Linkerkamer heeft dikste wand (hogere druk voor grote kringloop).</li><li><strong>Bloedvaten</strong>: slagaders = dikke wand, elastisch, van hart af. Aders = dunner, kleppen tegen terugstroom, naar hart toe. Haarvaten = één cellaag, uitwisseling van O₂, CO₂, glucose, afvalstoffen.</li><li><strong>Bloeddruk</strong>: systolisch (hart samengetrokken) / diastolisch (hart ontspannen). Normaal ≈ 120/80 mmHg. Te hoge druk = risico op hart- en vaatziekten.</li></ul><div class=\"sam-head\">Zelfregulatie en hormonen</div><ul><li><strong>Negatieve terugkoppeling</strong>: effect tegengaat de oorspronkelijke stimulus → homeostase. Klassiek: hoog bloedsuiker → insuline → bloedsuiker daalt → minder insuline nodig.</li><li><strong>Insuline</strong>: bètacellen alvleesklier. Stimuleert glucoseopname door cellen en glycogeenvorming in lever. Bloedsuiker daalt.</li><li><strong>Glucagon</strong>: alfacellen alvleesklier. Glycogeenafbraak in lever → glucose vrij. Bloedsuiker stijgt. Antagonist van insuline.</li><li><strong>ADH (antidiuretisch hormoon)</strong>: hypofyse. Waterterugopname in nieren bij uitdroging. Minder en geconcentreerdere urine. Watergehalte stijgt.</li><li><strong>Adrenaline</strong>: bijniermerg. Verhoogt hartfrequentie, verwijdt luchtwegen, mobiliseert glucose. Vecht-of-vluchtreactie.</li></ul><div class=\"sam-head\">Zenuwstelsel en reflexen</div><ul><li><strong>CZS vs. PZS</strong>: Centraal zenuwstelsel = hersenen + ruggenmerg. Perifeer = alle andere zenuwen.</li><li><strong>Neuron</strong>: dendriet (ontvangen signalen) → cellichaam → axon → synaptische eindknop. Myelineschede versnelt geleiding.</li><li><strong>Synaps</strong>: neurotransmitters worden vrijgelaten uit presynaptische cel, diffunderen over de spleet, binden aan receptoren op de postsynaptische cel.</li><li><strong>Reflexboog</strong>: receptor → sensorisch neuron → schakelende neuron (ruggenmerg) → motorisch neuron → effector (spier/klier). Loopt niet via hersenen: sneller dan bewuste reactie.</li></ul><div class=\"sam-head\">Afweersysteem</div><ul><li><strong>Aspecifieke afweer (1e linie)</strong>: huid (barrière), slijmvliezen, lysozym, macrofagen (fagocytose), ontsteking. Snel, niet gericht op specifiek pathogeen, geen geheugen.</li><li><strong>Specifieke afweer (2e linie)</strong>: gericht op één antigeen. Trager bij eerste contact, sneller bij herinfectie door geheugen.</li><li><strong>B-lymfocyten</strong>: bij activatie → plasmacellen → produceren antilichamen. Antilichamen binden aan het bijpassende antigeen (sleutel-slot) en neutraliseren het.</li><li><strong>T-lymfocyten</strong>: helper-T-cellen activeren B-cellen en andere afweercellen. Cytotoxische T-cellen doden geïnfecteerde lichaamscellen direct.</li><li><strong>Immunologisch geheugen</strong>: na infectie blijven geheugen-B-cellen over. Bij herinfectie: sneller en meer antilichamen → basis van vaccinatie.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Het lichaam handhaaft <strong>homeostase</strong> via <strong>negatieve terugkoppeling</strong>. De <strong>alvleesklier</strong> regelt de bloedsuiker met <strong>insuline</strong> (verlaagt) en <strong>glucagon</strong> (verhoogt); de <strong>lever</strong> bewaart glycogeen. Het <strong>autonome zenuwstelsel</strong> regelt onbewuste functies, en de <strong>specifieke afweer</strong> vormt geheugen.</div><div class=\"sam-head\">1. Regulatie en bloedsuiker</div><p><strong>Homeostase</strong> is het constant houden van het interne milieu, geregeld via <strong>negatieve terugkoppeling</strong>: een afwijking wordt automatisch tegengewerkt. De <strong>alvleesklier</strong> maakt <strong>insuline</strong> (verlaagt de bloedsuiker) en <strong>glucagon</strong> (verhoogt hem). De <strong>lever</strong> bewaart glycogeen als reservesuiker.</p><div class=\"sam-head\">2. Zenuwstelsel en afweer</div><p>Het <strong>autonome zenuwstelsel</strong> regelt onbewuste functies zoals hartslag en vertering. De <strong>specifieke afweer</strong> vormt immunologisch geheugen, zodat een herinfectie sneller wordt bestreden; <strong>cytotoxische T-cellen</strong> doden virusgeïnfecteerde cellen. De <strong>longslagader</strong> voert zuurstofarm bloed van het hart naar de longen.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Homeostase</div><div class=\"sam-definitie-body\">het constant houden van het interne milieu van het lichaam.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Negatieve terugkoppeling</div><div class=\"sam-definitie-body\">een afwijking van het setpoint wordt automatisch tegengewerkt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Insuline</div><div class=\"sam-definitie-body\">het hormoon dat de bloedsuikerspiegel verlaagt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Glucagon</div><div class=\"sam-definitie-body\">het hormoon dat de bloedsuikerspiegel verhoogt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Alvleesklier</div><div class=\"sam-definitie-body\">het orgaan dat insuline en glucagon produceert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Lever</div><div class=\"sam-definitie-body\">het orgaan dat glycogeen als reservesuiker bewaart.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Specifieke afweer</div><div class=\"sam-definitie-body\">de gerichte afweer die immunologisch geheugen vormt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Autonoom zenuwstelsel</div><div class=\"sam-definitie-body\">het deel dat onbewuste functies zoals hartslag en vertering regelt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Longslagader</div><div class=\"sam-definitie-body\">het bloedvat dat zuurstofarm bloed van het hart naar de longen voert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cytotoxische T-cel</div><div class=\"sam-definitie-body\">de cel die virusgeïnfecteerde lichaamscellen direct doodt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Homeostase»</b> is intern milieu constant, terwijl <b>«Negatieve terugkoppeling»</b> afwijking tegenwerken is. <b>«Insuline»</b> is verlaagt bloedsuiker, terwijl <b>«Glucagon»</b> verhoogt bloedsuiker is. <b>«Alvleesklier»</b> is maakt insuline en glucagon, terwijl <b>«Lever»</b> bewaart glycogeen is. <b>«Specifieke afweer»</b> is gericht, met geheugen, terwijl <b>«Autonoom zenuwstelsel»</b> onbewuste functies is.</div>",
     "sv": [
      {
-      "v": "Welk regulatiemechanisme tegengaat de oorspronkelijke stimulus en handhaaft zo homeostase (bijv. bloedsuikerregulatie)?",
+      "v": "Welk regulatiemechanisme werkt de oorspronkelijke stimulus tegen en handhaaft homeostase?",
       "o": [
-       "Negatieve terugkoppeling",
-       "Positieve terugkoppeling",
-       "Feedforward-regulatie",
-       "Hormonale cascade"
+       "negatieve terugkoppeling",
+       "positieve terugkoppeling",
+       "passief transport",
+       "osmose"
       ],
       "c": 0,
-      "u": "Negatieve terugkoppeling is homeostase. Hoog bloedsuiker leidt tot insuline, bloedsuiker daalt, minder insuline nodig."
+      "d": 3,
+      "u": "Een afwijking wordt tegengewerkt.",
+      "uo": [
+       "Klopt: een afwijking wordt tegengewerkt.",
+       "Nee, die versterkt de afwijking juist.",
+       "Nee, dat is een transportvorm.",
+       "Nee, dat is waterverplaatsing."
+      ],
+      "uh": "Homeostase: negatieve terugkoppeling."
      },
      {
       "v": "Welk hormoon verhoogt de bloedsuikerspiegel en welk verlaagt die?",
       "o": [
-       "Glucagon verhoogt en insuline verlaagt",
-       "Insuline verhoogt en glucagon verlaagt",
-       "Adrenaline verlaagt en insuline verhoogt",
-       "Beide verhogen de bloedsuiker"
+       "insuline verhoogt, glucagon verlaagt",
+       "glucagon verhoogt, insuline verlaagt",
+       "beide verhogen",
+       "beide verlagen"
       ],
-      "c": 0,
-      "u": "Insuline (bètacellen alvleesklier): stimuleert glucoseopname in cellen, bloedsuiker daalt. Glucagon (alfacellen): glycogeenafbraak in lever, bloedsuiker stijgt."
+      "c": 1,
+      "d": 2,
+      "u": "Glucagon omhoog, insuline omlaag.",
+      "uo": [
+       "Nee, dat is precies omgedraaid.",
+       "Klopt: glucagon omhoog, insuline omlaag.",
+       "Nee, ze werken tegengesteld.",
+       "Nee, ze werken tegengesteld."
+      ],
+      "uh": "Glucagon verhoogt, insuline verlaagt."
      },
      {
-      "v": "Welk type afweer vormt immunologisch geheugen zodat een herinfectie sneller wordt bestreden?",
+      "v": "Welk type afweer vormt immunologisch geheugen, zodat herinfectie sneller wordt bestreden?",
       "o": [
-       "Specifieke afweer",
-       "Aspecifieke afweer (snel, niet-gericht, geen geheugen)",
-       "Aangeboren immuniteit",
-       "Passieve immuniteit"
+       "de negatieve terugkoppeling",
+       "de aspecifieke afweer",
+       "de specifieke afweer",
+       "de homeostase"
       ],
-      "c": 0,
-      "u": "Aspecifiek: eerste verdedigingslinie, snel, niet specifiek (huid, macrofagen, ontsteking). Specifiek: langzamer, gericht op antigeen, vormt geheugen voor snellere reactie bij herinfectie."
+      "c": 2,
+      "d": 3,
+      "u": "De specifieke afweer onthoudt de ziekteverwekker.",
+      "uo": [
+       "Nee, dat is regulatie.",
+       "Nee, die is algemeen en zonder geheugen.",
+       "Klopt: de specifieke afweer onthoudt de ziekteverwekker.",
+       "Nee, dat is evenwicht."
+      ],
+      "uh": "Specifieke afweer: gericht, met geheugen."
      },
      {
-      "v": "Welk orgaan regelt de bloedsuikerspiegel door insuline en glucagon te produceren?",
+      "v": "Welk orgaan regelt de bloedsuiker door insuline en glucagon te maken?",
       "o": [
-       "Alvleesklier (pancreas)",
-       "Lever",
-       "Nieren",
-       "Bijnierschors"
+       "de milt",
+       "de lever",
+       "de nier",
+       "de alvleesklier"
       ],
-      "c": 0,
-      "u": "De alvleesklier heeft eilandjes van Langerhans: bètacellen produceren insuline (bloedsuiker daalt), alfacellen produceren glucagon (bloedsuiker stijgt). De lever slaat glucose op als glycogeen."
+      "c": 3,
+      "d": 2,
+      "u": "De alvleesklier maakt beide hormonen.",
+      "uo": [
+       "Nee, die hoort bij de afweer.",
+       "Nee, die bewaart glycogeen.",
+       "Nee, die regelt de waterhuishouding.",
+       "Klopt: de alvleesklier maakt beide hormonen."
+      ],
+      "uh": "Alvleesklier: maakt insuline en glucagon."
      },
      {
-      "v": "Welk deel van het zenuwstelsel regelt onbewuste lichaamsfuncties zoals hartslag en vertering?",
+      "v": "Welk deel van het zenuwstelsel regelt onbewuste functies zoals hartslag en vertering?",
       "o": [
-       "Autonoom zenuwstelsel",
-       "Somatisch zenuwstelsel",
-       "Centraal zenuwstelsel",
-       "Perifeer zenuwstelsel"
+       "het autonome zenuwstelsel",
+       "het bewuste zenuwstelsel",
+       "het skelet",
+       "de bloedsomloop"
       ],
       "c": 0,
-      "u": "Autonoom zenuwstelsel: regelt onbewuste functies. Sympathisch (actie): verhoogt hartslag, verwijdt pupillen. Parasympathisch (rust): verlaagt hartslag, bevordert vertering."
+      "d": 3,
+      "u": "Het autonome deel werkt vanzelf.",
+      "uo": [
+       "Klopt: het autonome deel werkt vanzelf.",
+       "Nee, dat regelt bewuste bewegingen.",
+       "Nee, dat is geen zenuwstelsel.",
+       "Nee, dat is een orgaanstelsel."
+      ],
+      "uh": "Autonoom zenuwstelsel: onbewuste functies."
      },
      {
       "v": "Welk bloedvat voert zuurstofarm bloed van het hart naar de longen?",
       "o": [
-       "Longslagader",
-       "Longader",
-       "Aorta",
-       "Holle ader"
+       "de longader",
+       "de longslagader",
+       "de aorta",
+       "de holle ader"
       ],
-      "c": 0,
-      "u": "De longslagader voert zuurstofarm bloed van de rechterhartkamer naar de longen. Daar vindt gasuitwisseling plaats: CO2 diffundeert de long in, O2 diffundeert het bloed in. Daarna keert zuurstofrijk bloed via de longader terug naar de linkerhartkamer."
+      "c": 1,
+      "d": 3,
+      "u": "De longslagader gaat van hart naar longen met arm bloed.",
+      "uo": [
+       "Nee, die voert juist zuurstofrijk bloed terug.",
+       "Klopt: de longslagader gaat van hart naar longen met arm bloed.",
+       "Nee, die voert bloed het lichaam in.",
+       "Nee, die brengt bloed terug naar het hart."
+      ],
+      "uh": "Longslagader: zuurstofarm, hart naar longen."
      },
      {
-      "v": "Welk orgaan bewaart glycogeen als reservesuiker en speelt een centrale rol in de bloedsuikerregulatie?",
+      "v": "Welk orgaan bewaart glycogeen als reservesuiker?",
+      "o": [
+       "de long",
+       "de alvleesklier",
+       "de lever",
+       "het hart"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De lever slaat glycogeen op.",
+      "uo": [
+       "Nee, die verzorgt de gaswisseling.",
+       "Nee, die maakt de hormonen.",
+       "Klopt: de lever slaat glycogeen op.",
+       "Nee, die pompt bloed."
+      ],
+      "uh": "Lever: bewaart glycogeen."
+     },
+     {
+      "v": "Welke cellen doden virusgeïnfecteerde lichaamscellen direct?",
+      "o": [
+       "zenuwcellen",
+       "rode bloedcellen",
+       "levercellen",
+       "cytotoxische T-cellen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Cytotoxische T-cellen ruimen geïnfecteerde cellen op.",
+      "uo": [
+       "Nee, die geleiden prikkels.",
+       "Nee, die vervoeren zuurstof.",
+       "Nee, die slaan glycogeen op.",
+       "Klopt: cytotoxische T-cellen ruimen geïnfecteerde cellen op."
+      ],
+      "uh": "Cytotoxische T-cellen: doden geïnfecteerde cellen."
+     },
+     {
+      "v": "Wat is homeostase?",
+      "o": [
+       "het constant houden van het interne milieu",
+       "het delen van cellen",
+       "het opslaan van vet",
+       "het vertalen van mRNA"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Homeostase houdt het lichaam in evenwicht.",
+      "uo": [
+       "Klopt: homeostase houdt het lichaam in evenwicht.",
+       "Nee, dat is celdeling.",
+       "Nee, dat is opslag.",
+       "Nee, dat is translatie."
+      ],
+      "uh": "Homeostase: intern milieu constant."
+     },
+     {
+      "v": "Wat doet insuline?",
+      "o": [
+       "het verhoogt de bloedsuikerspiegel",
+       "het verlaagt de bloedsuikerspiegel",
+       "het versnelt de hartslag",
+       "het maakt eiwitten af"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Insuline laat glucose de cellen in en verlaagt de bloedsuiker.",
+      "uo": [
+       "Nee, dat doet glucagon.",
+       "Klopt: insuline laat glucose de cellen in en verlaagt de bloedsuiker.",
+       "Nee, dat is iets anders.",
+       "Nee, dat is translatie."
+      ],
+      "uh": "Insuline: verlaagt bloedsuiker."
+     },
+     {
+      "v": "Wat doet glucagon?",
+      "o": [
+       "het remt de afweer",
+       "het verlaagt de bloedsuikerspiegel",
+       "het verhoogt de bloedsuikerspiegel",
+       "het regelt de ademhaling"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Glucagon maakt glycogeen weer tot glucose.",
+      "uo": [
+       "Nee, dat is iets anders.",
+       "Nee, dat doet insuline.",
+       "Klopt: glucagon maakt glycogeen weer tot glucose.",
+       "Nee, dat is een ander stelsel."
+      ],
+      "uh": "Glucagon: verhoogt bloedsuiker."
+     },
+     {
+      "v": "Wat kenmerkt de specifieke afweer ten opzichte van de aspecifieke afweer?",
+      "o": [
+       "ze is de eerste barrière van de huid",
+       "ze reageert op alles hetzelfde",
+       "ze werkt zonder witte bloedcellen",
+       "ze is gericht en vormt geheugen"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Specifieke afweer is gericht en onthoudt.",
+      "uo": [
+       "Nee, dat is aspecifiek.",
+       "Nee, dat is aspecifiek.",
+       "Nee, ze gebruikt juist witte bloedcellen.",
+       "Klopt: specifieke afweer is gericht en onthoudt."
+      ],
+      "uh": "Specifieke afweer: gericht, met geheugen."
+     },
+     {
+      "v": "Stijgt de bloedsuiker, dan komt insuline vrij die hem weer verlaagt. Welk begrip past hierbij?",
+      "o": [
+       "Negatieve terugkoppeling",
+       "Alvleesklier",
+       "Lever",
+       "Cytotoxische T-cel"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Stijgt de bloedsuiker, dan komt insuline vrij die hem weer verlaagt. Dat past bij Negatieve terugkoppeling: afwijking tegenwerken.",
+      "uo": [
+       "Klopt: afwijking tegenwerken.",
+       "Nee, dat hoort bij Alvleesklier: maakt insuline en glucagon.",
+       "Nee, dat hoort bij Lever: bewaart glycogeen.",
+       "Nee, dat hoort bij Cytotoxische T-cel: doodt geïnfecteerde cellen."
+      ],
+      "uh": "Negatieve terugkoppeling: afwijking tegenwerken."
+     },
+     {
+      "v": "Je hartslag en vertering gaan vanzelf, zonder dat je nadenkt. Om welk begrip gaat het?",
+      "o": [
+       "Glucagon",
+       "Autonoom zenuwstelsel",
+       "Cytotoxische T-cel",
+       "Lever"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Je hartslag en vertering gaan vanzelf, zonder dat je nadenkt. Dat past bij Autonoom zenuwstelsel: onbewuste functies.",
+      "uo": [
+       "Nee, dat hoort bij Glucagon: verhoogt bloedsuiker.",
+       "Klopt: onbewuste functies.",
+       "Nee, dat hoort bij Cytotoxische T-cel: doodt geïnfecteerde cellen.",
+       "Nee, dat hoort bij Lever: bewaart glycogeen."
+      ],
+      "uh": "Autonoom zenuwstelsel: onbewuste functies."
+     },
+     {
+      "v": "Het deel dat onbewuste functies regelt. Welk begrip herken je hier?",
+      "o": [
+       "Cytotoxische T-cel",
+       "Glucagon",
+       "Autonoom zenuwstelsel",
+       "Lever"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het deel dat onbewuste functies regelt. Dat past bij Autonoom zenuwstelsel: onbewuste functies.",
+      "uo": [
+       "Nee, dat hoort bij Cytotoxische T-cel: doodt geïnfecteerde cellen.",
+       "Nee, dat hoort bij Glucagon: verhoogt bloedsuiker.",
+       "Klopt: onbewuste functies.",
+       "Nee, dat hoort bij Lever: bewaart glycogeen."
+      ],
+      "uh": "Autonoom zenuwstelsel: onbewuste functies."
+     },
+     {
+      "v": "Het bloedvat naar de longen. Wat is hier aan de hand?",
+      "o": [
+       "Cytotoxische T-cel",
+       "Insuline",
+       "Alvleesklier",
+       "Longslagader"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het bloedvat naar de longen. Dat past bij Longslagader: zuurstofarm, hart naar longen.",
+      "uo": [
+       "Nee, dat hoort bij Cytotoxische T-cel: doodt geïnfecteerde cellen.",
+       "Nee, dat hoort bij Insuline: verlaagt bloedsuiker.",
+       "Nee, dat hoort bij Alvleesklier: maakt insuline en glucagon.",
+       "Klopt: zuurstofarm, hart naar longen."
+      ],
+      "uh": "Longslagader: zuurstofarm, hart naar longen."
+     },
+     {
+      "v": "Dit vat brengt zuurstofarm bloed van het hart naar de longen. Welk begrip past hierbij?",
+      "o": [
+       "Longslagader",
+       "Insuline",
+       "Alvleesklier",
+       "Cytotoxische T-cel"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Dit vat brengt zuurstofarm bloed van het hart naar de longen. Dat past bij Longslagader: zuurstofarm, hart naar longen.",
+      "uo": [
+       "Klopt: zuurstofarm, hart naar longen.",
+       "Nee, dat hoort bij Insuline: verlaagt bloedsuiker.",
+       "Nee, dat hoort bij Alvleesklier: maakt insuline en glucagon.",
+       "Nee, dat hoort bij Cytotoxische T-cel: doodt geïnfecteerde cellen."
+      ],
+      "uh": "Longslagader: zuurstofarm, hart naar longen."
+     },
+     {
+      "v": "De gerichte afweer met immunologisch geheugen. Om welk begrip gaat het?",
+      "o": [
+       "Lever",
+       "Specifieke afweer",
+       "Negatieve terugkoppeling",
+       "Longslagader"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De gerichte afweer met immunologisch geheugen. Dat past bij Specifieke afweer: gericht, met geheugen.",
+      "uo": [
+       "Nee, dat hoort bij Lever: bewaart glycogeen.",
+       "Klopt: gericht, met geheugen.",
+       "Nee, dat hoort bij Negatieve terugkoppeling: afwijking tegenwerken.",
+       "Nee, dat hoort bij Longslagader: zuurstofarm, hart naar longen."
+      ],
+      "uh": "Specifieke afweer: gericht, met geheugen."
+     },
+     {
+      "v": "Het orgaan dat glycogeen opslaat. Welk begrip herken je hier?",
+      "o": [
+       "Insuline",
+       "Glucagon",
+       "Lever",
+       "Longslagader"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het orgaan dat glycogeen opslaat. Dat past bij Lever: bewaart glycogeen.",
+      "uo": [
+       "Nee, dat hoort bij Insuline: verlaagt bloedsuiker.",
+       "Nee, dat hoort bij Glucagon: verhoogt bloedsuiker.",
+       "Klopt: bewaart glycogeen.",
+       "Nee, dat hoort bij Longslagader: zuurstofarm, hart naar longen."
+      ],
+      "uh": "Lever: bewaart glycogeen."
+     },
+     {
+      "v": "Dit orgaan bewaart glycogeen als reservesuiker. Wat is hier aan de hand?",
+      "o": [
+       "Homeostase",
+       "Alvleesklier",
+       "Insuline",
+       "Lever"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Dit orgaan bewaart glycogeen als reservesuiker. Dat past bij Lever: bewaart glycogeen.",
+      "uo": [
+       "Nee, dat hoort bij Homeostase: intern milieu constant.",
+       "Nee, dat hoort bij Alvleesklier: maakt insuline en glucagon.",
+       "Nee, dat hoort bij Insuline: verlaagt bloedsuiker.",
+       "Klopt: bewaart glycogeen."
+      ],
+      "uh": "Lever: bewaart glycogeen."
+     },
+     {
+      "v": "Het hormoon dat de bloedsuiker verhoogt. Welk begrip past hierbij?",
+      "o": [
+       "Glucagon",
+       "Insuline",
+       "Lever",
+       "Cytotoxische T-cel"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het hormoon dat de bloedsuiker verhoogt. Dat past bij Glucagon: verhoogt bloedsuiker.",
+      "uo": [
+       "Klopt: verhoogt bloedsuiker.",
+       "Nee, dat hoort bij Insuline: verlaagt bloedsuiker.",
+       "Nee, dat hoort bij Lever: bewaart glycogeen.",
+       "Nee, dat hoort bij Cytotoxische T-cel: doodt geïnfecteerde cellen."
+      ],
+      "uh": "Glucagon: verhoogt bloedsuiker."
+     },
+     {
+      "v": "Bij honger breekt dit hormoon glycogeen in de lever af. Om welk begrip gaat het?",
+      "o": [
+       "Homeostase",
+       "Glucagon",
+       "Lever",
+       "Longslagader"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Bij honger breekt dit hormoon glycogeen in de lever af. Dat past bij Glucagon: verhoogt bloedsuiker.",
+      "uo": [
+       "Nee, dat hoort bij Homeostase: intern milieu constant.",
+       "Klopt: verhoogt bloedsuiker.",
+       "Nee, dat hoort bij Lever: bewaart glycogeen.",
+       "Nee, dat hoort bij Longslagader: zuurstofarm, hart naar longen."
+      ],
+      "uh": "Glucagon: verhoogt bloedsuiker."
+     },
+     {
+      "v": "Het hormoon dat de bloedsuiker verlaagt. Welk begrip herken je hier?",
+      "o": [
+       "Alvleesklier",
+       "Glucagon",
+       "Insuline",
+       "Specifieke afweer"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het hormoon dat de bloedsuiker verlaagt. Dat past bij Insuline: verlaagt bloedsuiker.",
+      "uo": [
+       "Nee, dat hoort bij Alvleesklier: maakt insuline en glucagon.",
+       "Nee, dat hoort bij Glucagon: verhoogt bloedsuiker.",
+       "Klopt: verlaagt bloedsuiker.",
+       "Nee, dat hoort bij Specifieke afweer: gericht, met geheugen."
+      ],
+      "uh": "Insuline: verlaagt bloedsuiker."
+     },
+     {
+      "v": "De cel die geïnfecteerde cellen opruimt. Wat is hier aan de hand?",
+      "o": [
+       "Glucagon",
+       "Specifieke afweer",
+       "Longslagader",
+       "Cytotoxische T-cel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De cel die geïnfecteerde cellen opruimt. Dat past bij Cytotoxische T-cel: doodt geïnfecteerde cellen.",
+      "uo": [
+       "Nee, dat hoort bij Glucagon: verhoogt bloedsuiker.",
+       "Nee, dat hoort bij Specifieke afweer: gericht, met geheugen.",
+       "Nee, dat hoort bij Longslagader: zuurstofarm, hart naar longen.",
+       "Klopt: doodt geïnfecteerde cellen."
+      ],
+      "uh": "Cytotoxische T-cel: doodt geïnfecteerde cellen."
+     },
+     {
+      "v": "Het constant houden van het interne milieu. Welk begrip past hierbij?",
+      "o": [
+       "Homeostase",
+       "Lever",
+       "Cytotoxische T-cel",
+       "Glucagon"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het constant houden van het interne milieu. Dat past bij Homeostase: intern milieu constant.",
+      "uo": [
+       "Klopt: intern milieu constant.",
+       "Nee, dat hoort bij Lever: bewaart glycogeen.",
+       "Nee, dat hoort bij Cytotoxische T-cel: doodt geïnfecteerde cellen.",
+       "Nee, dat hoort bij Glucagon: verhoogt bloedsuiker."
+      ],
+      "uh": "Homeostase: intern milieu constant."
+     },
+     {
+      "v": "Na een ziekte onthoudt je afweer de ziekteverwekker. Om welk begrip gaat het?",
+      "o": [
+       "Autonoom zenuwstelsel",
+       "Specifieke afweer",
+       "Glucagon",
+       "Cytotoxische T-cel"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Na een ziekte onthoudt je afweer de ziekteverwekker. Dat past bij Specifieke afweer: gericht, met geheugen.",
+      "uo": [
+       "Nee, dat hoort bij Autonoom zenuwstelsel: onbewuste functies.",
+       "Klopt: gericht, met geheugen.",
+       "Nee, dat hoort bij Glucagon: verhoogt bloedsuiker.",
+       "Nee, dat hoort bij Cytotoxische T-cel: doodt geïnfecteerde cellen."
+      ],
+      "uh": "Specifieke afweer: gericht, met geheugen."
+     },
+     {
+      "v": "Een afwijking wordt automatisch tegengewerkt. Welk begrip herken je hier?",
+      "o": [
+       "Glucagon",
+       "Homeostase",
+       "Negatieve terugkoppeling",
+       "Alvleesklier"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een afwijking wordt automatisch tegengewerkt. Dat past bij Negatieve terugkoppeling: afwijking tegenwerken.",
+      "uo": [
+       "Nee, dat hoort bij Glucagon: verhoogt bloedsuiker.",
+       "Nee, dat hoort bij Homeostase: intern milieu constant.",
+       "Klopt: afwijking tegenwerken.",
+       "Nee, dat hoort bij Alvleesklier: maakt insuline en glucagon."
+      ],
+      "uh": "Negatieve terugkoppeling: afwijking tegenwerken."
+     },
+     {
+      "v": "Het orgaan dat de bloedsuikerhormonen produceert. Wat is hier aan de hand?",
+      "o": [
+       "Cytotoxische T-cel",
+       "Insuline",
+       "Specifieke afweer",
+       "Alvleesklier"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het orgaan dat de bloedsuikerhormonen produceert. Dat past bij Alvleesklier: maakt insuline en glucagon.",
+      "uo": [
+       "Nee, dat hoort bij Cytotoxische T-cel: doodt geïnfecteerde cellen.",
+       "Nee, dat hoort bij Insuline: verlaagt bloedsuiker.",
+       "Nee, dat hoort bij Specifieke afweer: gericht, met geheugen.",
+       "Klopt: maakt insuline en glucagon."
+      ],
+      "uh": "Alvleesklier: maakt insuline en glucagon."
+     },
+     {
+      "v": "Je lichaam houdt de temperatuur rond 37 graden, ongeacht buiten. Welk begrip past hierbij?",
+      "o": [
+       "Homeostase",
+       "Negatieve terugkoppeling",
+       "Specifieke afweer",
+       "Alvleesklier"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je lichaam houdt de temperatuur rond 37 graden, ongeacht buiten. Dat past bij Homeostase: intern milieu constant.",
+      "uo": [
+       "Klopt: intern milieu constant.",
+       "Nee, dat hoort bij Negatieve terugkoppeling: afwijking tegenwerken.",
+       "Nee, dat hoort bij Specifieke afweer: gericht, met geheugen.",
+       "Nee, dat hoort bij Alvleesklier: maakt insuline en glucagon."
+      ],
+      "uh": "Homeostase: intern milieu constant."
+     },
+     {
+      "v": "Dit orgaan maakt zowel insuline als glucagon. Om welk begrip gaat het?",
       "o": [
        "Lever",
        "Alvleesklier",
-       "Nieren",
-       "Hart"
-      ],
-      "c": 0,
-      "u": "De lever slaat glucose op als glycogeen wanneer insuline aanwezig is. Bij glucagon wordt glycogeen afgebroken tot glucose en afgegeven aan het bloed."
-     },
-     {
-      "v": "Welke cellen zijn verantwoordelijk voor het direct doden van met virus geïnfecteerde lichaamscellen?",
-      "o": [
-       "Cytotoxische T-cellen",
-       "B-cellen (plasmacellen)",
-       "Macrofagen",
-       "Helper T-cellen"
-      ],
-      "c": 0,
-      "u": "Cytotoxische T-cellen (ook wel killer T-cellen) herkennen geïnfecteerde cellen via hun MHC-I presentatie en vernietigen ze. Helper T-cellen activeren B-cellen en cytotoxische T-cellen."
-     },
-     {
-      "v": "Wat betekent «Reflex»?",
-      "o": [
-       "vecht-of-vlucht: hartslag en glucose omhoog",
-       "een snelle, onwillekeurige reactie op een prikkel",
-       "onafhankelijk, afhankelijk, constant",
-       "het tot uiting komen van een gen in een eiwit"
-      ],
-      "c": 1,
-      "u": "«Reflex» betekent: een snelle, onwillekeurige reactie op een prikkel.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een snelle, onwillekeurige reactie op een prikkel\"?",
-      "o": [
-       "Reflex",
-       "Glucagon",
-       "Enzym",
-       "Afweer"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Reflex»: een snelle, onwillekeurige reactie op een prikkel.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een snelle, onwillekeurige reactie op een prikkel\"?",
-      "o": [
-       "Antigeen",
-       "Antagonist",
-       "Synaps",
-       "Reflex"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Reflex»: een snelle, onwillekeurige reactie op een prikkel.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Reflex» in?",
-      "o": [
-       "een snelle, onwillekeurige reactie op een prikkel",
-       "het constant houden van het interne milieu",
-       "verhoogt de bloedglucose",
-       "de verbinding tussen twee neuronen met neurotransmitters"
-      ],
-      "c": 0,
-      "u": "«Reflex» betekent: een snelle, onwillekeurige reactie op een prikkel.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Gewricht»?",
-      "o": [
-       "de verscheidenheid aan soorten en genen",
-       "organisme dat zelf organische stof maakt (planten)",
-       "de beweegbare verbinding tussen twee botten",
-       "voedsel → kleine stoffen; opname in het bloed"
-      ],
-      "c": 2,
-      "u": "«Gewricht» betekent: de beweegbare verbinding tussen twee botten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de beweegbare verbinding tussen twee botten\"?",
-      "o": [
-       "Gewricht",
-       "Cel",
-       "Genetica",
-       "Genexpressie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Gewricht»: de beweegbare verbinding tussen twee botten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de beweegbare verbinding tussen twee botten\"?",
-      "o": [
-       "Neuron",
-       "Hart & bloedvaten",
-       "Gasuitwisseling",
-       "Gewricht"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Gewricht»: de beweegbare verbinding tussen twee botten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Gewricht» in?",
-      "o": [
-       "gerichte afweer door lymfocyten, met geheugen",
-       "O₂ opnemen, CO₂ afgeven (longen)",
-       "de beweegbare verbinding tussen twee botten",
-       "twee hormonen of spieren met een tegengesteld effect"
-      ],
-      "c": 2,
-      "u": "«Gewricht» betekent: de beweegbare verbinding tussen twee botten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Antagonist»?",
-      "o": [
-       "Mendelse overerving en stambomen",
-       "een spier met tegengestelde werking",
-       "de factor die je in een proef bewust verandert",
-       "wat je meet (het \"gevolg\")"
-      ],
-      "c": 1,
-      "u": "«Antagonist» betekent: een spier met tegengestelde werking.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een spier met tegengestelde werking\"?",
-      "o": [
-       "Enzym",
-       "Antagonist",
-       "Validiteit",
-       "Betrouwbaarheid"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Antagonist»: een spier met tegengestelde werking.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een spier met tegengestelde werking\"?",
-      "o": [
-       "Zenuwstelsel",
-       "Antagonist",
-       "Glucagon",
-       "Vaccinatie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Antagonist»: een spier met tegengestelde werking.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Antagonist» in?",
-      "o": [
-       "een snelle, onwillekeurige reactie op een prikkel",
-       "verhoogt de bloedglucose",
-       "de beweegbare verbinding tussen twee botten",
-       "een spier met tegengestelde werking"
-      ],
-      "c": 3,
-      "u": "«Antagonist» betekent: een spier met tegengestelde werking.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Diffusie»?",
-      "o": [
-       "netto verplaatsing van hoge naar lage concentratie",
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "best aangepaste individuen planten zich meer voort"
-      ],
-      "c": 0,
-      "u": "«Diffusie» betekent: netto verplaatsing van hoge naar lage concentratie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"netto verplaatsing van hoge naar lage concentratie\"?",
-      "o": [
-       "Hart & bloedvaten",
-       "Diffusie",
-       "Exoot",
-       "Onafhankelijk"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Diffusie»: netto verplaatsing van hoge naar lage concentratie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"netto verplaatsing van hoge naar lage concentratie\"?",
-      "o": [
-       "Antagonist",
-       "Zenuwstelsel",
-       "Diffusie",
-       "Antilichaam"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Diffusie»: netto verplaatsing van hoge naar lage concentratie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Diffusie» in?",
-      "o": [
-       "een chemische boodschapper die via het bloed werkt",
-       "hormonen & negatieve terugkoppeling (homeostase)",
-       "netto verplaatsing van hoge naar lage concentratie",
-       "gerichte afweer door lymfocyten, met geheugen"
-      ],
-      "c": 2,
-      "u": "«Diffusie» betekent: netto verplaatsing van hoge naar lage concentratie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Homeostase»?",
-      "o": [
-       "het constant houden van het interne milieu",
-       "een lichaamsvreemde stof die een afweerreactie opwekt",
-       "organel dat eiwitten maakt",
-       "verhoogt de bloedglucose"
-      ],
-      "c": 0,
-      "u": "«Homeostase» betekent: het constant houden van het interne milieu.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het constant houden van het interne milieu\"?",
-      "o": [
-       "Afhankelijke variabele",
-       "Betrouwbaarheid",
-       "Producent",
-       "Homeostase"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Homeostase»: het constant houden van het interne milieu.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het constant houden van het interne milieu\"?",
-      "o": [
-       "Aspecifieke afweer",
-       "Longen",
-       "Bloedsomloop",
-       "Homeostase"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Homeostase»: het constant houden van het interne milieu.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Homeostase» in?",
-      "o": [
-       "een spier met tegengestelde werking",
-       "gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes)",
-       "het constant houden van het interne milieu",
-       "vecht-of-vlucht: hartslag en glucose omhoog"
-      ],
-      "c": 2,
-      "u": "«Homeostase» betekent: het constant houden van het interne milieu.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Hormoon»?",
-      "o": [
-       "een chemische boodschapper die via het bloed werkt",
-       "mitose (2 identiek) en meiose (4 verschillend)",
-       "bouw en functie van de celonderdelen",
-       "organisme dat zelf organische stof maakt (planten)"
-      ],
-      "c": 0,
-      "u": "«Hormoon» betekent: een chemische boodschapper die via het bloed werkt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een chemische boodschapper die via het bloed werkt\"?",
-      "o": [
-       "Energiedoorgifte",
-       "Hormoon",
-       "Celorganellen",
-       "Chromosoom"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Hormoon»: een chemische boodschapper die via het bloed werkt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een chemische boodschapper die via het bloed werkt\"?",
-      "o": [
-       "Spijsvertering",
-       "Verteringsstelsel",
-       "Hormoon",
-       "Antigeen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Hormoon»: een chemische boodschapper die via het bloed werkt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Hormoon» in?",
-      "o": [
-       "gerichte afweer door lymfocyten, met geheugen",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "een chemische boodschapper die via het bloed werkt",
-       "neuron, synaps, reflexboog"
-      ],
-      "c": 2,
-      "u": "«Hormoon» betekent: een chemische boodschapper die via het bloed werkt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Insuline»?",
-      "o": [
-       "mate waarin je meet wat je wilt meten",
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "een niet-levende invloed (licht, temperatuur, water)",
-       "hormoon dat de bloedglucose verlaagt"
-      ],
-      "c": 3,
-      "u": "«Insuline» betekent: hormoon dat de bloedglucose verlaagt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hormoon dat de bloedglucose verlaagt\"?",
-      "o": [
-       "Voedselrelaties",
-       "Antagonisme",
-       "Insuline",
-       "Biodiversiteit"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Insuline»: hormoon dat de bloedglucose verlaagt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"hormoon dat de bloedglucose verlaagt\"?",
-      "o": [
-       "Bloedsomloop",
-       "Antilichaam",
-       "Verteringsstelsel",
-       "Insuline"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Insuline»: hormoon dat de bloedglucose verlaagt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Insuline» in?",
-      "o": [
-       "hormoon dat de bloedglucose verlaagt",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "een chemische boodschapper die via het bloed werkt",
-       "eiwit dat specifiek aan een antigeen bindt"
-      ],
-      "c": 0,
-      "u": "«Insuline» betekent: hormoon dat de bloedglucose verlaagt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Neuron»?",
-      "o": [
-       "een zenuwcel die impulsen geleidt",
-       "vecht-of-vlucht: hartslag en glucose omhoog",
-       "best aangepaste individuen planten zich meer voort",
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)"
-      ],
-      "c": 0,
-      "u": "«Neuron» betekent: een zenuwcel die impulsen geleidt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een zenuwcel die impulsen geleidt\"?",
-      "o": [
-       "Verteringsstelsel",
-       "Voedselrelaties",
-       "Neuron",
-       "Biotische factor"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Neuron»: een zenuwcel die impulsen geleidt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een zenuwcel die impulsen geleidt\"?",
-      "o": [
-       "Aspecifieke afweer",
-       "Gasuitwisseling",
-       "Neuron",
-       "Antagonisme"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Neuron»: een zenuwcel die impulsen geleidt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Neuron» in?",
-      "o": [
-       "een chemische boodschapper die via het bloed werkt",
-       "hormonen & negatieve terugkoppeling (homeostase)",
-       "hormoon dat de bloedglucose verlaagt",
-       "een zenuwcel die impulsen geleidt"
-      ],
-      "c": 3,
-      "u": "«Neuron» betekent: een zenuwcel die impulsen geleidt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Synaps»?",
-      "o": [
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "organel waarin fotosynthese plaatsvindt",
-       "alle individuen van één soort in een gebied",
-       "de verbinding tussen twee neuronen met neurotransmitters"
-      ],
-      "c": 3,
-      "u": "«Synaps» betekent: de verbinding tussen twee neuronen met neurotransmitters.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de verbinding tussen twee neuronen met neurotransmitters\"?",
-      "o": [
-       "Voedselrelaties",
-       "Synaps",
-       "Bladgroenkorrel (plant)",
-       "Antagonist"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Synaps»: de verbinding tussen twee neuronen met neurotransmitters.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de verbinding tussen twee neuronen met neurotransmitters\"?",
-      "o": [
-       "Bloedsomloop",
        "Specifieke afweer",
-       "Homeostase",
-       "Synaps"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Synaps»: de verbinding tussen twee neuronen met neurotransmitters.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Synaps» in?",
-      "o": [
-       "eiwit dat specifiek aan een antigeen bindt",
-       "de verbinding tussen twee neuronen met neurotransmitters",
-       "aspecifiek en specifiek",
-       "neuron, synaps, reflexboog"
-      ],
-      "c": 1,
-      "u": "«Synaps» betekent: de verbinding tussen twee neuronen met neurotransmitters.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Antigeen»?",
-      "o": [
-       "een lichaamsvreemde stof die een afweerreactie opwekt",
-       "diffusie van water door een selectief membraan",
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
-       "allel dat het fenotype bepaalt, ook heterozygoot"
-      ],
-      "c": 0,
-      "u": "«Antigeen» betekent: een lichaamsvreemde stof die een afweerreactie opwekt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een lichaamsvreemde stof die een afweerreactie opwekt\"?",
-      "o": [
-       "Bloedsomloop",
-       "Afhankelijke variabele",
-       "Antigeen",
-       "Specifieke afweer"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Antigeen»: een lichaamsvreemde stof die een afweerreactie opwekt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een lichaamsvreemde stof die een afweerreactie opwekt\"?",
-      "o": [
-       "Longen",
-       "Gasuitwisseling",
-       "Zenuwstelsel",
-       "Antigeen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Antigeen»: een lichaamsvreemde stof die een afweerreactie opwekt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Antigeen» in?",
-      "o": [
-       "een lichaamsvreemde stof die een afweerreactie opwekt",
-       "twee hormonen of spieren met een tegengesteld effect",
-       "eiwit dat specifiek aan een antigeen bindt",
-       "hormonen & negatieve terugkoppeling (homeostase)"
-      ],
-      "c": 0,
-      "u": "«Antigeen» betekent: een lichaamsvreemde stof die een afweerreactie opwekt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Antilichaam»?",
-      "o": [
-       "organel waarin fotosynthese plaatsvindt",
-       "eiwit dat specifiek aan een antigeen bindt",
-       "een langdurige samenleving van twee soorten",
-       "een toetsbare voorspelling van een verwacht verband"
-      ],
-      "c": 1,
-      "u": "«Antilichaam» betekent: eiwit dat specifiek aan een antigeen bindt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"eiwit dat specifiek aan een antigeen bindt\"?",
-      "o": [
-       "Antilichaam",
-       "Spijsvertering",
-       "Energie",
-       "Synaps"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Antilichaam»: eiwit dat specifiek aan een antigeen bindt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"eiwit dat specifiek aan een antigeen bindt\"?",
-      "o": [
-       "Reflex",
-       "Aspecifieke afweer",
-       "Antilichaam",
-       "Neuron"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Antilichaam»: eiwit dat specifiek aan een antigeen bindt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Antilichaam» in?",
-      "o": [
-       "het constant houden van het interne milieu",
-       "netto verplaatsing van hoge naar lage concentratie",
-       "O₂ opnemen, CO₂ afgeven (longen)",
-       "eiwit dat specifiek aan een antigeen bindt"
-      ],
-      "c": 3,
-      "u": "«Antilichaam» betekent: eiwit dat specifiek aan een antigeen bindt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Specifieke afweer»?",
-      "o": [
-       "transport van stoffen door het lichaam",
-       "hormonen & negatieve terugkoppeling (homeostase)",
-       "de verdeling van biomassa over trofische niveaus",
-       "gerichte afweer door lymfocyten, met geheugen"
-      ],
-      "c": 3,
-      "u": "«Specifieke afweer» betekent: gerichte afweer door lymfocyten, met geheugen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gerichte afweer door lymfocyten, met geheugen\"?",
-      "o": [
-       "Diffusie",
-       "Specifieke afweer",
-       "Cel",
-       "Duurzaamheid"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Specifieke afweer»: gerichte afweer door lymfocyten, met geheugen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gerichte afweer door lymfocyten, met geheugen\"?",
-      "o": [
-       "Insuline",
-       "Nieren",
-       "Specifieke afweer",
-       "Neuron"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Specifieke afweer»: gerichte afweer door lymfocyten, met geheugen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Specifieke afweer» in?",
-      "o": [
-       "een chemische boodschapper die via het bloed werkt",
-       "netto verplaatsing van hoge naar lage concentratie",
-       "vecht-of-vlucht: hartslag en glucose omhoog",
-       "gerichte afweer door lymfocyten, met geheugen"
-      ],
-      "c": 3,
-      "u": "«Specifieke afweer» betekent: gerichte afweer door lymfocyten, met geheugen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Aspecifieke afweer»?",
-      "o": [
-       "allel dat alleen homozygoot tot uiting komt",
-       "mitose (2 identiek) en meiose (4 verschillend)",
-       "algemene eerste verdediging (huid, fagocyten)",
-       "twee hormonen of spieren met een tegengesteld effect"
-      ],
-      "c": 2,
-      "u": "«Aspecifieke afweer» betekent: algemene eerste verdediging (huid, fagocyten).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"algemene eerste verdediging (huid, fagocyten)\"?",
-      "o": [
-       "Aspecifieke afweer",
-       "Fotosynthese",
-       "Validiteit",
-       "Energie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Aspecifieke afweer»: algemene eerste verdediging (huid, fagocyten).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"algemene eerste verdediging (huid, fagocyten)\"?",
-      "o": [
-       "Insuline",
-       "Glucagon",
-       "Verteringsstelsel",
-       "Aspecifieke afweer"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Aspecifieke afweer»: algemene eerste verdediging (huid, fagocyten).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Aspecifieke afweer» in?",
-      "o": [
-       "verhoogt de bloedglucose",
-       "een chemische boodschapper die via het bloed werkt",
-       "algemene eerste verdediging (huid, fagocyten)",
-       "gerichte afweer door lymfocyten, met geheugen"
-      ],
-      "c": 2,
-      "u": "«Aspecifieke afweer» betekent: algemene eerste verdediging (huid, fagocyten).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vaccinatie»?",
-      "o": [
-       "mitose (2 identiek) en meiose (4 verschillend)",
-       "het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af",
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
-       "een voedingsstof voor organismen"
-      ],
-      "c": 2,
-      "u": "«Vaccinatie» betekent: inbrengen van onschadelijk antigeen om geheugen op te bouwen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"inbrengen van onschadelijk antigeen om geheugen op te bouwen\"?",
-      "o": [
-       "Meiose",
-       "Adrenaline",
-       "Afhankelijk",
-       "Vaccinatie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Vaccinatie»: inbrengen van onschadelijk antigeen om geheugen op te bouwen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"inbrengen van onschadelijk antigeen om geheugen op te bouwen\"?",
-      "o": [
-       "Vaccinatie",
-       "Adrenaline",
-       "Homeostase",
-       "Bloedsomloop"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vaccinatie»: inbrengen van onschadelijk antigeen om geheugen op te bouwen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vaccinatie» in?",
-      "o": [
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
-       "netto verplaatsing van hoge naar lage concentratie",
-       "hormoon dat de bloedglucose verlaagt",
-       "het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af"
-      ],
-      "c": 0,
-      "u": "«Vaccinatie» betekent: inbrengen van onschadelijk antigeen om geheugen op te bouwen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Antagonisme»?",
-      "o": [
-       "allel dat het fenotype bepaalt, ook heterozygoot",
-       "het constant houden van het interne milieu",
-       "twee hormonen of spieren met een tegengesteld effect",
-       "de verbinding tussen twee neuronen met neurotransmitters"
-      ],
-      "c": 2,
-      "u": "«Antagonisme» betekent: twee hormonen of spieren met een tegengesteld effect.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"twee hormonen of spieren met een tegengesteld effect\"?",
-      "o": [
-       "Afhankelijke variabele",
-       "Genetica",
-       "Antagonisme",
-       "Energiedoorgifte"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Antagonisme»: twee hormonen of spieren met een tegengesteld effect.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"twee hormonen of spieren met een tegengesteld effect\"?",
-      "o": [
-       "Antagonisme",
-       "Synaps",
-       "Bloedsomloop",
-       "Antilichaam"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Antagonisme»: twee hormonen of spieren met een tegengesteld effect.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Antagonisme» in?",
-      "o": [
-       "de beweegbare verbinding tussen twee botten",
-       "verhoogt de bloedglucose",
-       "twee hormonen of spieren met een tegengesteld effect",
-       "een chemische boodschapper die via het bloed werkt"
-      ],
-      "c": 2,
-      "u": "«Antagonisme» betekent: twee hormonen of spieren met een tegengesteld effect.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Spijsvertering»?",
-      "o": [
-       "alle individuen van één soort in een gebied",
-       "voedsel → kleine stoffen; opname in het bloed",
-       "netto verplaatsing van hoge naar lage concentratie",
-       "organel dat eiwitten maakt"
-      ],
-      "c": 1,
-      "u": "«Spijsvertering» betekent: voedsel → kleine stoffen; opname in het bloed.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"voedsel → kleine stoffen; opname in het bloed\"?",
-      "o": [
-       "Genetica",
-       "Spijsvertering",
-       "Betrouwbaarheid",
        "Insuline"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Spijsvertering»: voedsel → kleine stoffen; opname in het bloed.",
-      "d": 2
+      "d": 3,
+      "u": "Dit orgaan maakt zowel insuline als glucagon. Dat past bij Alvleesklier: maakt insuline en glucagon.",
+      "uo": [
+       "Nee, dat hoort bij Lever: bewaart glycogeen.",
+       "Klopt: maakt insuline en glucagon.",
+       "Nee, dat hoort bij Specifieke afweer: gericht, met geheugen.",
+       "Nee, dat hoort bij Insuline: verlaagt bloedsuiker."
+      ],
+      "uh": "Alvleesklier: maakt insuline en glucagon."
      },
      {
-      "v": "Welke term past bij: \"voedsel → kleine stoffen; opname in het bloed\"?",
+      "v": "Na een maaltijd laat dit hormoon glucose de cellen in. Welk begrip herken je hier?",
       "o": [
-       "Spijsvertering",
-       "Gewricht",
+       "Lever",
+       "Homeostase",
        "Insuline",
-       "Glucagon"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Spijsvertering»: voedsel → kleine stoffen; opname in het bloed.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Spijsvertering» in?",
-      "o": [
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "verhoogt de bloedglucose",
-       "voedsel → kleine stoffen; opname in het bloed",
-       "een lichaamsvreemde stof die een afweerreactie opwekt"
+       "Longslagader"
       ],
       "c": 2,
-      "u": "«Spijsvertering» betekent: voedsel → kleine stoffen; opname in het bloed.",
-      "d": 3
+      "d": 1,
+      "u": "Na een maaltijd laat dit hormoon glucose de cellen in. Dat past bij Insuline: verlaagt bloedsuiker.",
+      "uo": [
+       "Nee, dat hoort bij Lever: bewaart glycogeen.",
+       "Nee, dat hoort bij Homeostase: intern milieu constant.",
+       "Klopt: verlaagt bloedsuiker.",
+       "Nee, dat hoort bij Longslagader: zuurstofarm, hart naar longen."
+      ],
+      "uh": "Insuline: verlaagt bloedsuiker."
      },
      {
-      "v": "Wat betekent «Gasuitwisseling»?",
+      "v": "Deze cel doodt lichaamscellen die door een virus zijn geïnfecteerd. Wat is hier aan de hand?",
       "o": [
-       "de geleidelijke verandering van een ecosysteem",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "molecuul met de erfelijke informatie in genen",
-       "O₂ opnemen, CO₂ afgeven (longen)"
+       "Homeostase",
+       "Specifieke afweer",
+       "Insuline",
+       "Cytotoxische T-cel"
       ],
       "c": 3,
-      "u": "«Gasuitwisseling» betekent: O₂ opnemen, CO₂ afgeven (longen).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"O₂ opnemen, CO₂ afgeven (longen)\"?",
-      "o": [
-       "Nieren",
-       "Aspecifieke afweer",
-       "Voedselketen",
-       "Gasuitwisseling"
+      "d": 2,
+      "u": "Deze cel doodt lichaamscellen die door een virus zijn geïnfecteerd. Dat past bij Cytotoxische T-cel: doodt geïnfecteerde cellen.",
+      "uo": [
+       "Nee, dat hoort bij Homeostase: intern milieu constant.",
+       "Nee, dat hoort bij Specifieke afweer: gericht, met geheugen.",
+       "Nee, dat hoort bij Insuline: verlaagt bloedsuiker.",
+       "Klopt: doodt geïnfecteerde cellen."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Gasuitwisseling»: O₂ opnemen, CO₂ afgeven (longen).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"O₂ opnemen, CO₂ afgeven (longen)\"?",
-      "o": [
-       "Zenuwstelsel",
-       "Gasuitwisseling",
-       "Bloedsomloop",
-       "Regeling"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Gasuitwisseling»: O₂ opnemen, CO₂ afgeven (longen).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Gasuitwisseling» in?",
-      "o": [
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "O₂ opnemen, CO₂ afgeven (longen)",
-       "algemene eerste verdediging (huid, fagocyten)",
-       "een snelle, onwillekeurige reactie op een prikkel"
-      ],
-      "c": 1,
-      "u": "«Gasuitwisseling» betekent: O₂ opnemen, CO₂ afgeven (longen).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Bloedsomloop»?",
-      "o": [
-       "transport van stoffen door het lichaam",
-       "een zenuwcel die impulsen geleidt",
-       "mate waarin je meet wat je wilt meten",
-       "wat de onderzoeker zelf instelt (de \"oorzaak\")"
-      ],
-      "c": 0,
-      "u": "«Bloedsomloop» betekent: transport van stoffen door het lichaam.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"transport van stoffen door het lichaam\"?",
-      "o": [
-       "Duurzaamheid",
-       "Bloedsomloop",
-       "Chromosoom",
-       "Glucagon"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Bloedsomloop»: transport van stoffen door het lichaam.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"transport van stoffen door het lichaam\"?",
-      "o": [
-       "Aspecifieke afweer",
-       "Afweer",
-       "Bloedsomloop",
-       "Nieren"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Bloedsomloop»: transport van stoffen door het lichaam.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Bloedsomloop» in?",
-      "o": [
-       "vecht-of-vlucht: hartslag en glucose omhoog",
-       "gerichte afweer door lymfocyten, met geheugen",
-       "transport van stoffen door het lichaam",
-       "een spier met tegengestelde werking"
-      ],
-      "c": 2,
-      "u": "«Bloedsomloop» betekent: transport van stoffen door het lichaam.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Regeling»?",
-      "o": [
-       "een levensgemeenschap plus de abiotische omgeving",
-       "een reeks van eten en gegeten worden",
-       "hormonen & negatieve terugkoppeling (homeostase)",
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)"
-      ],
-      "c": 2,
-      "u": "«Regeling» betekent: hormonen & negatieve terugkoppeling (homeostase).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hormonen & negatieve terugkoppeling (homeostase)\"?",
-      "o": [
-       "Zenuwstelsel",
-       "Regeling",
-       "Biotische factor",
-       "Homeostase"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Regeling»: hormonen & negatieve terugkoppeling (homeostase).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"hormonen & negatieve terugkoppeling (homeostase)\"?",
-      "o": [
-       "Hormoon",
-       "Regeling",
-       "Reflex",
-       "Antagonist"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Regeling»: hormonen & negatieve terugkoppeling (homeostase).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Regeling» in?",
-      "o": [
-       "transport van stoffen door het lichaam",
-       "voedsel → kleine stoffen; opname in het bloed",
-       "hormonen & negatieve terugkoppeling (homeostase)",
-       "de beweegbare verbinding tussen twee botten"
-      ],
-      "c": 2,
-      "u": "«Regeling» betekent: hormonen & negatieve terugkoppeling (homeostase).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Zenuwstelsel»?",
-      "o": [
-       "molecuul met de erfelijke informatie in genen",
-       "mitose (2 identiek) en meiose (4 verschillend)",
-       "neuron, synaps, reflexboog",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans"
-      ],
-      "c": 2,
-      "u": "«Zenuwstelsel» betekent: neuron, synaps, reflexboog.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"neuron, synaps, reflexboog\"?",
-      "o": [
-       "Nutriënt",
-       "Reflex",
-       "Producent",
-       "Zenuwstelsel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Zenuwstelsel»: neuron, synaps, reflexboog.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"neuron, synaps, reflexboog\"?",
-      "o": [
-       "Gewricht",
-       "Synaps",
-       "Zenuwstelsel",
-       "Verteringsstelsel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Zenuwstelsel»: neuron, synaps, reflexboog.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Zenuwstelsel» in?",
-      "o": [
-       "neuron, synaps, reflexboog",
-       "aspecifiek en specifiek",
-       "het constant houden van het interne milieu",
-       "algemene eerste verdediging (huid, fagocyten)"
-      ],
-      "c": 0,
-      "u": "«Zenuwstelsel» betekent: neuron, synaps, reflexboog.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Afweer»?",
-      "o": [
-       "O₂ opnemen, CO₂ afgeven (longen)",
-       "diffusie van water door een selectief membraan",
-       "een dun plakje materiaal voor onder de microscoop",
-       "aspecifiek en specifiek"
-      ],
-      "c": 3,
-      "u": "«Afweer» betekent: aspecifiek en specifiek.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"aspecifiek en specifiek\"?",
-      "o": [
-       "Celmembraan",
-       "Dominant allel",
-       "Afweer",
-       "Fotosynthese"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Afweer»: aspecifiek en specifiek.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"aspecifiek en specifiek\"?",
-      "o": [
-       "Glucagon",
-       "Reflex",
-       "Afweer",
-       "Specifieke afweer"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Afweer»: aspecifiek en specifiek.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Afweer» in?",
-      "o": [
-       "algemene eerste verdediging (huid, fagocyten)",
-       "de beweegbare verbinding tussen twee botten",
-       "het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af",
-       "aspecifiek en specifiek"
-      ],
-      "c": 3,
-      "u": "«Afweer» betekent: aspecifiek en specifiek.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verteringsstelsel»?",
-      "o": [
-       "voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan",
-       "de geleidelijke verandering van een ecosysteem",
-       "een lichaamsvreemde stof die een afweerreactie opwekt",
-       "een spier met tegengestelde werking"
-      ],
-      "c": 0,
-      "u": "«Verteringsstelsel» betekent: voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan\"?",
-      "o": [
-       "Reflex",
-       "Energie",
-       "Regeling",
-       "Verteringsstelsel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Verteringsstelsel»: voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan\"?",
-      "o": [
-       "Hormoon",
-       "Afweer",
-       "Antagonisme",
-       "Verteringsstelsel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Verteringsstelsel»: voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Verteringsstelsel» in?",
-      "o": [
-       "voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan",
-       "een zenuwcel die impulsen geleidt",
-       "algemene eerste verdediging (huid, fagocyten)",
-       "O₂ opnemen, CO₂ afgeven (longen)"
-      ],
-      "c": 0,
-      "u": "«Verteringsstelsel» betekent: voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Longen»?",
-      "o": [
-       "gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes)",
-       "aspecifiek en specifiek",
-       "de selectief doorlaatbare grens van een cel",
-       "de verscheidenheid aan soorten en genen"
-      ],
-      "c": 0,
-      "u": "«Longen» betekent: gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes)\"?",
-      "o": [
-       "Piramide van biomassa",
-       "Natuurlijke selectie",
-       "Longen",
-       "Aspecifieke afweer"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Longen»: gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes)\"?",
-      "o": [
-       "Antigeen",
-       "Verteringsstelsel",
-       "Longen",
-       "Homeostase"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Longen»: gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Longen» in?",
-      "o": [
-       "verhoogt de bloedglucose",
-       "netto verplaatsing van hoge naar lage concentratie",
-       "gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes)",
-       "transport van stoffen door het lichaam"
-      ],
-      "c": 2,
-      "u": "«Longen» betekent: gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Hart & bloedvaten»?",
-      "o": [
-       "reductiedeling die geslachtscellen vormt (halve chromosoomaantal)",
-       "een levensgemeenschap plus de abiotische omgeving",
-       "het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af",
-       "de verdeling van biomassa over trofische niveaus"
-      ],
-      "c": 2,
-      "u": "«Hart & bloedvaten» betekent: het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af\"?",
-      "o": [
-       "Gewricht",
-       "Hart & bloedvaten",
-       "Voedselketen",
-       "Chloroplast"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Hart & bloedvaten»: het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af\"?",
-      "o": [
-       "Hart & bloedvaten",
-       "Antagonist",
-       "Nieren",
-       "Homeostase"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Hart & bloedvaten»: het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Hart & bloedvaten» in?",
-      "o": [
-       "het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af",
-       "transport van stoffen door het lichaam",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "aspecifiek en specifiek"
-      ],
-      "c": 0,
-      "u": "«Hart & bloedvaten» betekent: het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Nieren»?",
-      "o": [
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven",
-       "neuron, synaps, reflexboog",
-       "de geleidelijke verandering van een ecosysteem"
-      ],
-      "c": 0,
-      "u": "«Nieren» betekent: filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans\"?",
-      "o": [
-       "Piramide van biomassa",
-       "Natuurlijke selectie",
-       "Antagonisme",
-       "Nieren"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Nieren»: filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans\"?",
-      "o": [
-       "Spijsvertering",
-       "Afweer",
-       "Nieren",
-       "Neuron"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Nieren»: filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Nieren» in?",
-      "o": [
-       "twee hormonen of spieren met een tegengesteld effect",
-       "transport van stoffen door het lichaam",
-       "een snelle, onwillekeurige reactie op een prikkel",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans"
-      ],
-      "c": 3,
-      "u": "«Nieren» betekent: filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Glucagon»?",
-      "o": [
-       "verhoogt de bloedglucose",
-       "diffusie van water door een selectief membraan",
-       "hormonen & negatieve terugkoppeling (homeostase)",
-       "de geleidelijke verandering van een ecosysteem"
-      ],
-      "c": 0,
-      "u": "«Glucagon» betekent: verhoogt de bloedglucose.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"verhoogt de bloedglucose\"?",
-      "o": [
-       "Onafhankelijk",
-       "Nieren",
-       "Genetica",
-       "Glucagon"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Glucagon»: verhoogt de bloedglucose.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"verhoogt de bloedglucose\"?",
-      "o": [
-       "Glucagon",
-       "Hart & bloedvaten",
-       "Antagonist",
-       "Nieren"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Glucagon»: verhoogt de bloedglucose.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Glucagon» in?",
-      "o": [
-       "inbrengen van onschadelijk antigeen om geheugen op te bouwen",
-       "eiwit dat specifiek aan een antigeen bindt",
-       "verhoogt de bloedglucose",
-       "transport van stoffen door het lichaam"
-      ],
-      "c": 2,
-      "u": "«Glucagon» betekent: verhoogt de bloedglucose.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Adrenaline»?",
-      "o": [
-       "een snelle, onwillekeurige reactie op een prikkel",
-       "de geleidelijke verandering van een ecosysteem",
-       "een zenuwcel die impulsen geleidt",
-       "vecht-of-vlucht: hartslag en glucose omhoog"
-      ],
-      "c": 3,
-      "u": "«Adrenaline» betekent: vecht-of-vlucht: hartslag en glucose omhoog.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vecht-of-vlucht: hartslag en glucose omhoog\"?",
-      "o": [
-       "Celademhaling",
-       "Soortvorming",
-       "Antagonist",
-       "Adrenaline"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Adrenaline»: vecht-of-vlucht: hartslag en glucose omhoog.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"vecht-of-vlucht: hartslag en glucose omhoog\"?",
-      "o": [
-       "Vaccinatie",
-       "Gasuitwisseling",
-       "Adrenaline",
-       "Regeling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Adrenaline»: vecht-of-vlucht: hartslag en glucose omhoog.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Adrenaline» in?",
-      "o": [
-       "eiwit dat specifiek aan een antigeen bindt",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "vecht-of-vlucht: hartslag en glucose omhoog",
-       "neuron, synaps, reflexboog"
-      ],
-      "c": 2,
-      "u": "«Adrenaline» betekent: vecht-of-vlucht: hartslag en glucose omhoog.",
-      "d": 3
+      "uh": "Cytotoxische T-cel: doodt geïnfecteerde cellen."
      }
     ],
     "oe": [
@@ -24949,112 +22966,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Reflex",
-      "d": "een snelle, onwillekeurige reactie op een prikkel"
-     },
-     {
-      "t": "Gewricht",
-      "d": "de beweegbare verbinding tussen twee botten"
-     },
-     {
-      "t": "Antagonist",
-      "d": "een spier met tegengestelde werking"
-     },
-     {
-      "t": "Diffusie",
-      "d": "netto verplaatsing van hoge naar lage concentratie"
-     },
-     {
       "t": "Homeostase",
-      "d": "het constant houden van het interne milieu"
+      "d": "het constant houden van het interne milieu van het lichaam"
      },
      {
-      "t": "Hormoon",
-      "d": "een chemische boodschapper die via het bloed werkt"
+      "t": "Negatieve terugkoppeling",
+      "d": "een afwijking van het setpoint wordt automatisch tegengewerkt"
      },
      {
       "t": "Insuline",
-      "d": "hormoon dat de bloedglucose verlaagt"
-     },
-     {
-      "t": "Neuron",
-      "d": "een zenuwcel die impulsen geleidt"
-     },
-     {
-      "t": "Synaps",
-      "d": "de verbinding tussen twee neuronen met neurotransmitters"
-     },
-     {
-      "t": "Antigeen",
-      "d": "een lichaamsvreemde stof die een afweerreactie opwekt"
-     },
-     {
-      "t": "Antilichaam",
-      "d": "eiwit dat specifiek aan een antigeen bindt"
-     },
-     {
-      "t": "Specifieke afweer",
-      "d": "gerichte afweer door lymfocyten, met geheugen"
-     },
-     {
-      "t": "Aspecifieke afweer",
-      "d": "algemene eerste verdediging (huid, fagocyten)"
-     },
-     {
-      "t": "Vaccinatie",
-      "d": "inbrengen van onschadelijk antigeen om geheugen op te bouwen"
-     },
-     {
-      "t": "Antagonisme",
-      "d": "twee hormonen of spieren met een tegengesteld effect"
-     },
-     {
-      "t": "Spijsvertering",
-      "d": "voedsel → kleine stoffen; opname in het bloed"
-     },
-     {
-      "t": "Gasuitwisseling",
-      "d": "O₂ opnemen, CO₂ afgeven (longen)"
-     },
-     {
-      "t": "Bloedsomloop",
-      "d": "transport van stoffen door het lichaam"
-     },
-     {
-      "t": "Regeling",
-      "d": "hormonen & negatieve terugkoppeling (homeostase)"
-     },
-     {
-      "t": "Zenuwstelsel",
-      "d": "neuron, synaps, reflexboog"
-     },
-     {
-      "t": "Afweer",
-      "d": "aspecifiek en specifiek"
-     },
-     {
-      "t": "Verteringsstelsel",
-      "d": "voedsel wordt met enzymen afgebroken tot kleine moleculen (glucose, aminozuren), die in de dunne darm het bloed in gaan"
-     },
-     {
-      "t": "Longen",
-      "d": "gasuitwisseling: O₂ het bloed in, CO₂ eruit (door diffusie in de longblaasjes)"
-     },
-     {
-      "t": "Hart & bloedvaten",
-      "d": "het bloed brengt O₂ en voedingsstoffen naar de cellen en voert CO₂ en afval af"
-     },
-     {
-      "t": "Nieren",
-      "d": "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans"
+      "d": "het hormoon dat de bloedsuikerspiegel verlaagt"
      },
      {
       "t": "Glucagon",
-      "d": "verhoogt de bloedglucose"
+      "d": "het hormoon dat de bloedsuikerspiegel verhoogt"
      },
      {
-      "t": "Adrenaline",
-      "d": "vecht-of-vlucht: hartslag en glucose omhoog"
+      "t": "Alvleesklier",
+      "d": "het orgaan dat insuline en glucagon produceert"
+     },
+     {
+      "t": "Lever",
+      "d": "het orgaan dat glycogeen als reservesuiker bewaart"
+     },
+     {
+      "t": "Specifieke afweer",
+      "d": "de gerichte afweer die immunologisch geheugen vormt"
+     },
+     {
+      "t": "Autonoom zenuwstelsel",
+      "d": "het deel dat onbewuste functies zoals hartslag en vertering regelt"
+     },
+     {
+      "t": "Longslagader",
+      "d": "het bloedvat dat zuurstofarm bloed van het hart naar de longen voert"
+     },
+     {
+      "t": "Cytotoxische T-cel",
+      "d": "de cel die virusgeïnfecteerde lichaamscellen direct doodt"
      }
     ]
    },
@@ -28466,1206 +26415,634 @@ var VAKKEN = [
      "Darwins evolutietheorie",
      "Hardy-Weinberg evenwicht"
     ],
-    "sam": "<div class=\"sam-head\">Ecosystemen en energie</div><ul><li><strong>10%-regel</strong>: per trofisch niveau wordt circa 10% van de energie doorgegeven; 90% gaat verloren als warmte, beweging en uitscheiding. Daarom zijn voedselketens beperkt tot 4–5 schakels.</li><li><strong>Trofisch niveau</strong>: positie in de voedselketen. Producenten (niveau 1) → herbivoren (niveau 2) → carnivoren (niveau 3) etc.</li><li><strong>Eutrofiering</strong>: hoge concentraties stikstof (N) en fosfaat (P) uit meststoffen → explosieve algenbloei → algen blokkeren zonlicht → waterplanten sterven → bacteriën breken af → zuurstofverbruik stijgt sterk → hypoxie → vissterfte.</li><li><strong>Niche</strong>: de ecologische rol van een soort - wat eet hij, waar leeft hij, wanneer is hij actief. Twee soorten met identieke niche concurreren totdat een soort verdwijnt (competitieve uitsluiting).</li></ul><div class=\"sam-head\">Evolutie</div><ul><li><strong>Darwins vier principes</strong>: (1) variatie in populatie, (2) erfelijkheid (variatie is overdraagbaar), (3) overproductie (meer nakomelingen dan kunnen overleven), (4) natuurlijke selectie (meest geschikte individuen overleven en planten zich voort).</li><li><strong>Allopatrische speciatie</strong>: soortvorming door geografische isolatie. Twee deelpopulaties evolueren onafhankelijk door drift en selectie tot ze niet meer kunnen kruisen.</li><li><strong>Sympatrische speciatie</strong>: soortvorming zonder geografische barrière. Bijv. door ecologische specialisatie of polyploïdie bij planten.</li><li><strong>Genetische drift</strong>: toevalsverandering in allelfrequenties, onafhankelijk van selectiedruk. Sterk in kleine populaties. Bottleneck-effect: populatie krimpt drastisch, weinig genetische variatie over.</li></ul><div class=\"sam-head\">Hardy-Weinberg</div><ul><li><strong>Formule</strong>: <span class=\"fm\">p² + 2pq + q² = 1</span>. p = frequentie dominante allel, q = frequentie recessieve allel. p + q = 1.</li><li><strong>Voorwaarden voor evenwicht</strong>: grote populatie, willekeurige paring, geen selectie, geen mutatie, geen migratie. In de praktijk zijn deze zelden allemaal vervuld.</li><li><strong>Afwijking van HW</strong>: wijst op evolutionaire krachten. Bijv. als q² lager is dan verwacht, wordt het recessieve fenotype geselecteerd tegen.</li><li><strong>Berekening</strong>: als 16% witte vlinders (qq) → q = 0,4 → p = 0,6 → heterozygoten 2pq = 48%.</li></ul>",
+    "sam": "<div class=\"sam-intro\">In een <strong>voedselketen</strong> geeft elk <strong>trofisch niveau</strong> ongeveer 10% van de energie door. <strong>Producenten</strong> maken organische stof via fotosynthese. Populaties veranderen door <strong>natuurlijke selectie</strong>, <strong>genetische drift</strong> en <strong>speciatie</strong>; het <strong>Hardy-Weinberg-evenwicht</strong> beschrijft het geval zonder evolutie.</div><div class=\"sam-head\">1. Energie en ecosysteem</div><p>Een <strong>producent</strong> maakt organische stof via fotosynthese; de <strong>primaire productie</strong> is de totale aanmaak per tijdseenheid. Per <strong>trofisch niveau</strong> wordt volgens de <strong>10%-regel</strong> ongeveer 10% van de energie doorgegeven; de rest gaat verloren als warmte. Een <strong>niche</strong> is de rol van een soort; bij <strong>successie</strong> verandert een levensgemeenschap naar een climaxstadium.</p><div class=\"sam-head\">2. Evolutie</div><p>De evolutietheorie van Darwin steunt op vier principes: <strong>variatie</strong>, <strong>erfelijkheid</strong>, <strong>overproductie</strong> en <strong>natuurlijke selectie</strong>. Bij <strong>allopatrische speciatie</strong> isoleert een geografische barrière twee populaties. <strong>Genetische drift</strong> is toevallige verandering van allelfrequenties, sterk in kleine populaties (bottleneck-effect). Zonder selectie, mutatie of migratie geldt het <strong>Hardy-Weinberg-evenwicht</strong>.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Trofisch niveau</div><div class=\"sam-definitie-body\">een schakel in de voedselketen, met ongeveer 10% energiedoorgifte.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Natuurlijke selectie</div><div class=\"sam-definitie-body\">de best aangepaste individuen planten zich meer voort.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Allopatrische speciatie</div><div class=\"sam-definitie-body\">soortvorming doordat een geografische barrière populaties isoleert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hardy-Weinberg-evenwicht</div><div class=\"sam-definitie-body\">de allelfrequenties blijven gelijk zonder selectie, mutatie of migratie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Genetische drift</div><div class=\"sam-definitie-body\">toevallige verandering van allelfrequenties, sterk in kleine populaties.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Producent</div><div class=\"sam-definitie-body\">een organisme dat organische stof aanmaakt via fotosynthese.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Primaire productie</div><div class=\"sam-definitie-body\">de totale organische stof die producenten per tijdseenheid aanmaken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Successie</div><div class=\"sam-definitie-body\">de geleidelijke verandering van een levensgemeenschap naar een climaxstadium.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Niche</div><div class=\"sam-definitie-body\">de rol van een soort in zijn ecosysteem (wat, waar, wanneer).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bottleneck-effect</div><div class=\"sam-definitie-body\">een sterke populatiekrimp waarna weinig genetische variatie overblijft.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Trofisch niveau»</b> is schakel in de voedselketen, terwijl <b>«Producent»</b> maakt eigen voedsel is. <b>«Natuurlijke selectie»</b> is best aangepaste overleven, terwijl <b>«Genetische drift»</b> toevallige verandering is. <b>«Allopatrische speciatie»</b> is soortvorming door barrière, terwijl <b>«Genetische drift»</b> toevallige verandering is. <b>«Hardy-Weinberg-evenwicht»</b> is geen evolutie, terwijl <b>«Genetische drift»</b> toevallige verandering is.</div>",
     "sv": [
      {
-      "v": "Welk percentage van de energie wordt gemiddeld doorgegeven van het ene naar het volgende trofische niveau in een voedselketen?",
+      "v": "Welk percentage van de energie wordt gemiddeld doorgegeven naar het volgende trofische niveau?",
       "o": [
-       "Circa 10%",
-       "Circa 50%",
-       "Circa 90%",
-       "Circa 1%"
+       "circa 10%",
+       "circa 50%",
+       "circa 90%",
+       "circa 100%"
       ],
       "c": 0,
-      "u": "Energiestroom: elke stap verliest circa 90% als warmte, beweging en uitscheiding. Voedselketens zijn beperkt tot 4 of 5 schakels door dit verlies."
+      "d": 3,
+      "u": "Ongeveer 10% gaat door, de rest verdwijnt als warmte.",
+      "uo": [
+       "Klopt: ongeveer 10% gaat door, de rest verdwijnt als warmte.",
+       "Nee, dat is te veel.",
+       "Nee, dat gaat juist verloren.",
+       "Nee, er gaat veel verloren."
+      ],
+      "uh": "10%-regel: ~10% doorgegeven per niveau."
      },
      {
       "v": "Wat zijn de vier kernprincipes van Darwins evolutietheorie?",
       "o": [
-       "Variatie, erfelijkheid, overproductie en natuurlijke selectie",
-       "Mutatie, migratie, drift en selectie",
-       "Adaptatie, speciatie, extinctie en diversificatie",
-       "Variatie, mutatie, recombinatie en uitsterven"
+       "groei, deling, dood en geboorte",
+       "variatie, erfelijkheid, overproductie en natuurlijke selectie",
+       "water, licht, bodem en lucht",
+       "vraag, aanbod, prijs en winst"
       ],
-      "c": 0,
-      "u": "Darwin: variatie plus erfelijkheid plus overproductie plus selectie. Individuen met voordelige eigenschappen overleven beter en geven die door."
+      "c": 1,
+      "d": 3,
+      "u": "Dat zijn de vier principes.",
+      "uo": [
+       "Nee, dat zijn levensprocessen.",
+       "Klopt: dat zijn de vier principes.",
+       "Nee, dat zijn abiotische factoren.",
+       "Nee, dat is economie."
+      ],
+      "uh": "Darwin: variatie, erfelijkheid, overproductie, selectie."
      },
      {
-      "v": "Welk type speciatie treedt op doordat een geografische barrière twee populaties van elkaar isoleert?",
+      "v": "Welk type speciatie treedt op doordat een geografische barrière populaties isoleert?",
       "o": [
-       "Allopatrische speciatie",
-       "Sympatrische speciatie",
-       "Adaptieve radiatie",
-       "Hybridisatie"
+       "genetische drift",
+       "sympatrische speciatie",
+       "allopatrische speciatie",
+       "successie"
       ],
-      "c": 0,
-      "u": "Allopatrisch: geografische barriere isoleert twee populaties. Door verschillende selectiedruk en toevalsveranderingen worden de populaties genetisch zo anders dat ze zich niet meer kunnen voortplanten: nieuwe soorten."
+      "c": 2,
+      "d": 3,
+      "u": "Allopatrisch betekent gescheiden door plaats.",
+      "uo": [
+       "Nee, dat is toeval, geen speciatie.",
+       "Nee, dat is zonder barrière.",
+       "Klopt: allopatrisch betekent gescheiden door plaats.",
+       "Nee, dat is ecologische verandering."
+      ],
+      "uh": "Allopatrische speciatie: door een geografische barrière."
      },
      {
-      "v": "Welk evolutionair concept stelt dat allelfrequenties constant blijven als er geen selectie, mutatie of migratie is?",
+      "v": "Welk concept stelt dat allelfrequenties gelijk blijven zonder selectie, mutatie of migratie?",
       "o": [
-       "Hardy-Weinberg evenwicht",
-       "Genetische drift",
-       "Natuurlijke selectie",
-       "Mutatiedruk"
+       "de successie",
+       "de natuurlijke selectie",
+       "de genetische drift",
+       "het Hardy-Weinberg-evenwicht"
       ],
-      "c": 0,
-      "u": "p² + 2pq + q² = 1. Afwijking van Hardy-Weinberg wijst op evolutionaire krachten zoals selectie, drift of migratie."
+      "c": 3,
+      "d": 3,
+      "u": "Zonder die krachten verandert er niets.",
+      "uo": [
+       "Nee, dat is ecologisch.",
+       "Nee, die verandert juist de frequenties.",
+       "Nee, die verandert ze door toeval.",
+       "Klopt: zonder die krachten verandert er niets."
+      ],
+      "uh": "Hardy-Weinberg: geen evolutie, frequenties gelijk."
      },
      {
-      "v": "Welk begrip beschrijft toevallige veranderingen in allelfrequenties die vooral in kleine populaties optreden?",
+      "v": "Welk begrip beschrijft toevallige veranderingen in allelfrequenties, vooral in kleine populaties?",
       "o": [
-       "Genetische drift",
-       "Natuurlijke selectie",
-       "Genmigratie",
-       "Mutatiedruk"
+       "genetische drift",
+       "natuurlijke selectie",
+       "primaire productie",
+       "homeostase"
       ],
       "c": 0,
-      "u": "Drift is willekeurig: in kleine populaties kan een allel verdwijnen door toeval, niet door voor- of nadeel."
+      "d": 3,
+      "u": "Genetische drift is verandering door toeval.",
+      "uo": [
+       "Klopt: genetische drift is verandering door toeval.",
+       "Nee, die is gericht op aanpassing.",
+       "Nee, dat is een ecologisch begrip.",
+       "Nee, dat is fysiologie."
+      ],
+      "uh": "Genetische drift: toevallige verandering, sterk in kleine populaties."
      },
      {
       "v": "Wat is een producent in een voedselketen?",
       "o": [
-       "Een organisme dat organische stof aanmaakt via fotosynthese (bijv. planten en algen)",
-       "Een organisme dat organische stof afbreekt (bijv. schimmels)",
-       "Een organisme dat andere dieren eet",
-       "Een organisme dat enkel wordt gegeten door carnivoren"
+       "een dier dat planten eet",
+       "een organisme dat organische stof aanmaakt via fotosynthese",
+       "een schimmel die dood materiaal afbreekt",
+       "een roofdier bovenaan"
       ],
-      "c": 0,
-      "u": "Producenten (autotroof) maken organische stof uit CO2 en licht of chemische energie. Ze vormen de basis van elk ecosysteem en het eerste trofische niveau."
+      "c": 1,
+      "d": 2,
+      "u": "Producenten maken hun eigen voedsel.",
+      "uo": [
+       "Nee, dat is een consument.",
+       "Klopt: producenten maken hun eigen voedsel.",
+       "Nee, dat is een reducent.",
+       "Nee, dat is een toppredator."
+      ],
+      "uh": "Producent: maakt organische stof via fotosynthese."
      },
      {
-      "v": "Welk begrip beschrijft de totale hoeveelheid organische stof die door producenten per tijdseenheid wordt aangemaakt?",
+      "v": "Welk begrip beschrijft de totale organische stof die producenten per tijdseenheid aanmaken?",
       "o": [
-       "Primaire productie",
-       "Secundaire productie",
-       "Bioaccumulatie",
-       "Successie"
+       "de niche",
+       "de secundaire consumptie",
+       "de primaire productie",
+       "de successie"
       ],
-      "c": 0,
-      "u": "Bruto primaire productie (GPP): totale fotosynthese. Netto primaire productie (NPP): GPP min de energie die de planten zelf verbruiken via ademhaling. NPP is beschikbaar voor herbivoren."
+      "c": 2,
+      "d": 3,
+      "u": "Dat is de primaire productie.",
+      "uo": [
+       "Nee, dat is de rol van een soort.",
+       "Nee, dat is wat consumenten eten.",
+       "Klopt: dat is de primaire productie.",
+       "Nee, dat is verandering in de tijd."
+      ],
+      "uh": "Primaire productie: totale aanmaak door producenten."
      },
      {
-      "v": "Welk ecologisch begrip beschrijft de geleidelijke verandering van een levensgemeenschap naar een eindstadium (climaxgemeenschap)?",
+      "v": "Welk ecologisch begrip beschrijft de geleidelijke verandering naar een climaxgemeenschap?",
       "o": [
-       "Successie",
-       "Adaptatie",
-       "Speciatie",
-       "Competitie"
+       "translatie",
+       "speciatie",
+       "homeostase",
+       "successie"
       ],
-      "c": 0,
-      "u": "Successie: kale grond → pioniersoorten (mossen, korstmossen) → grasland → struiken → bos (climax). Primaire successie begint op kale bodem; secundaire na verstoring van bestaand ecosysteem."
+      "c": 3,
+      "d": 3,
+      "u": "Successie leidt naar een stabiel eindstadium.",
+      "uo": [
+       "Nee, dat is eiwitsynthese.",
+       "Nee, dat is soortvorming.",
+       "Nee, dat is fysiologisch evenwicht.",
+       "Klopt: successie leidt naar een stabiel eindstadium."
+      ],
+      "uh": "Successie: opeenvolging naar de climaxgemeenschap."
      },
      {
-      "v": "Welke term beschrijft de rol van een soort in zijn ecosysteem (wat hij eet, waar hij leeft, wanneer actief)?",
+      "v": "Welke term beschrijft de rol van een soort in zijn ecosysteem (wat hij eet, waar hij leeft)?",
       "o": [
-       "Niche",
-       "Bioom",
-       "Biotoop",
-       "Populatie"
+       "de niche",
+       "de populatie",
+       "het biotoop",
+       "de successie"
       ],
       "c": 0,
-      "u": "Niche = de ecologische rol van een soort. Twee soorten met identieke niche sluiten elkaar uit (competitieve uitsluiting). Niche-differentiatie vermindert competitie."
+      "d": 2,
+      "u": "De niche is de functionele rol.",
+      "uo": [
+       "Klopt: de niche is de functionele rol.",
+       "Nee, dat is een groep individuen.",
+       "Nee, dat is de leefplek zelf.",
+       "Nee, dat is verandering in de tijd."
+      ],
+      "uh": "Niche: de rol van een soort."
      },
      {
       "v": "Wat is het bottleneck-effect?",
       "o": [
-       "Een sterke populatiekrimp waarna weinig genetische variatie overblijft",
-       "Een explosieve populatiegroei door voedselrijkdom",
-       "Een geografische barrière die speciatie veroorzaakt",
-       "Een selectievoordeel bij grote individuen"
+       "een sterke groei van een populatie",
+       "een sterke populatiekrimp waarna weinig genetische variatie overblijft",
+       "de vorming van een nieuwe soort",
+       "de opbouw van energie in een keten"
       ],
-      "c": 0,
-      "u": "Bottleneck: populatie krimpt drastisch (bijv. door ramp). De overlevenden zijn een toevallige selectie met weinig genetische diversiteit. Genetische drift is sterk. Populatie herstelt maar mist genetische variatie."
+      "c": 1,
+      "d": 3,
+      "u": "Na een ramp blijft een kleine, arme genpoel over.",
+      "uo": [
+       "Nee, het is juist krimp.",
+       "Klopt: na een ramp blijft een kleine, arme genpoel over.",
+       "Nee, dat is speciatie.",
+       "Nee, dat is energiedoorgifte."
+      ],
+      "uh": "Bottleneck: krimp, weinig variatie over."
      },
      {
-      "v": "Hoe werkt de 10%-regel bij energiedoorgifte in een voedselketen?",
+      "v": "Waar gaat volgens de 10%-regel het grootste deel van de energie naartoe?",
       "o": [
-       "Per trofisch niveau wordt circa 10% van de energie doorgegeven; 90% gaat verloren als warmte",
-       "Per trofisch niveau wordt 50% doorgegeven",
-       "Alle energie wordt overgedragen behalve wat verloren gaat door eten",
-       "Per schakel wordt 100% doorgegeven maar verlies treedt op door vertering"
+       "de energie verdwijnt in de bodem",
+       "alle energie gaat door naar het volgende niveau",
+       "ongeveer 90% gaat verloren als warmte",
+       "de energie wordt teruggegeven aan de zon"
       ],
-      "c": 0,
-      "u": "10%-regel: bijv. 10.000 kJ gras → 1.000 kJ koe → 100 kJ mens. Voedselketens zijn max 4-5 schakels lang door dit grote energieverlies."
+      "c": 2,
+      "d": 3,
+      "u": "Maar ~10% gaat door, de rest gaat verloren als warmte.",
+      "uo": [
+       "Nee, dat is niet de kern.",
+       "Nee, het meeste gaat verloren.",
+       "Klopt: maar ~10% gaat door, de rest gaat verloren als warmte.",
+       "Nee, dat kan niet."
+      ],
+      "uh": "10%-regel: ~90% gaat verloren als warmte."
      },
      {
-      "v": "Welk begrip beschrijft de verandering van allelfrequenties door toeval, los van selectiedruk?",
+      "v": "Wat is natuurlijke selectie?",
       "o": [
-       "Genetische drift",
+       "toeval bepaalt wie overleeft",
+       "alle individuen krijgen evenveel jongen",
+       "de grootste dieren winnen altijd",
+       "de best aangepaste individuen planten zich meer voort"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Aanpassing vergroot de voortplantingskans.",
+      "uo": [
+       "Nee, dat is genetische drift.",
+       "Nee, dat is geen selectie.",
+       "Nee, grootte alleen bepaalt het niet.",
+       "Klopt: aanpassing vergroot de voortplantingskans."
+      ],
+      "uh": "Natuurlijke selectie: best aangepaste planten zich meer voort."
+     },
+     {
+      "v": "Wat beschrijft een voedselketen?",
+      "o": [
+       "wie wie eet en hoe energie wordt doorgegeven",
+       "de temperatuur van een gebied",
+       "de erfelijke aanleg van een soort",
+       "de bouw van een cel"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een voedselketen toont de energiestroom.",
+      "uo": [
+       "Klopt: een voedselketen toont de energiestroom.",
+       "Nee, dat is een abiotische factor.",
+       "Nee, dat is genetica.",
+       "Nee, dat is celbiologie."
+      ],
+      "uh": "Voedselketen: wie eet wie, energiedoorgifte."
+     },
+     {
+      "v": "De best aangepaste dieren krijgen meer nakomelingen. Welk begrip past hierbij?",
+      "o": [
+       "Bottleneck-effect",
        "Natuurlijke selectie",
-       "Genmigratie",
-       "Mutatiedruk"
-      ],
-      "c": 0,
-      "u": "Genetische drift: in kleine populaties kunnen allelen door toeval verdwijnen of toenemen, ongeacht hun effect op fitness. Sterk in kleine geïsoleerde populaties."
-     },
-     {
-      "v": "Welke voorwaarde is GEEN vereiste voor Hardy-Weinberg evenwicht?",
-      "o": [
-       "Grote populatieomvang",
-       "Willekeurige paring",
-       "Snelle generatietijd",
-       "Geen migratie"
-      ],
-      "c": 2,
-      "u": "Hardy-Weinberg vereist: grote populatie, willekeurige paring, geen selectie, geen mutatie, geen migratie. Generatietijd is geen voorwaarde. In de praktijk zijn deze condities zelden tegelijk vervuld."
-     },
-     {
-      "v": "Wat betekent «Successie»?",
-      "o": [
-       "de geleidelijke verandering van een ecosysteem",
-       "een reeks van eten en gegeten worden",
-       "een dun plakje materiaal voor onder de microscoop",
-       "samenhang ≠ oorzaak"
-      ],
-      "c": 0,
-      "u": "«Successie» betekent: de geleidelijke verandering van een ecosysteem.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de geleidelijke verandering van een ecosysteem\"?",
-      "o": [
-       "Successie",
-       "Fotosynthese",
-       "Chromosoom",
-       "Celorganellen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Successie»: de geleidelijke verandering van een ecosysteem.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de geleidelijke verandering van een ecosysteem\"?",
-      "o": [
-       "Successie",
-       "Duurzaamheid",
-       "Soortvorming",
-       "Draagkracht"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Successie»: de geleidelijke verandering van een ecosysteem.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Successie» in?",
-      "o": [
-       "een voedingsstof voor organismen",
-       "een reeks van eten en gegeten worden",
-       "isolatie → nieuwe soorten; allelfrequenties",
-       "de geleidelijke verandering van een ecosysteem"
-      ],
-      "c": 3,
-      "u": "«Successie» betekent: de geleidelijke verandering van een ecosysteem.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Symbiose»?",
-      "o": [
-       "twee hormonen of spieren met een tegengesteld effect",
-       "het tot uiting komen van een gen in een eiwit",
-       "een langdurige samenleving van twee soorten",
-       "een invloed van levende organismen"
-      ],
-      "c": 2,
-      "u": "«Symbiose» betekent: een langdurige samenleving van twee soorten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een langdurige samenleving van twee soorten\"?",
-      "o": [
-       "Populatiedynamiek",
-       "Duurzaamheid",
-       "Symbiose",
-       "Genexpressie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Symbiose»: een langdurige samenleving van twee soorten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een langdurige samenleving van twee soorten\"?",
-      "o": [
-       "Nutriënt",
-       "Exoot",
-       "Symbiose",
-       "Ecosysteem"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Symbiose»: een langdurige samenleving van twee soorten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Symbiose» in?",
-      "o": [
-       "een invloed van levende organismen",
-       "een langdurige samenleving van twee soorten",
-       "de verscheidenheid aan soorten en genen",
-       "best aangepaste individuen planten zich meer voort"
-      ],
-      "c": 1,
-      "u": "«Symbiose» betekent: een langdurige samenleving van twee soorten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Nutriënt»?",
-      "o": [
-       "samenhang ≠ oorzaak",
-       "het tot uiting komen van een gen in een eiwit",
-       "wat de onderzoeker zelf instelt (de \"oorzaak\")",
-       "een voedingsstof voor organismen"
-      ],
-      "c": 3,
-      "u": "«Nutriënt» betekent: een voedingsstof voor organismen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een voedingsstof voor organismen\"?",
-      "o": [
-       "Nutriënt",
-       "Populatie",
-       "Specifieke afweer",
-       "Hypothese"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Nutriënt»: een voedingsstof voor organismen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een voedingsstof voor organismen\"?",
-      "o": [
-       "Populatie",
-       "Voedselrelaties",
-       "Exoot",
-       "Nutriënt"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Nutriënt»: een voedingsstof voor organismen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Nutriënt» in?",
-      "o": [
-       "een levensgemeenschap plus de abiotische omgeving",
-       "een voedingsstof voor organismen",
-       "gebruik zonder uitputting voor latere generaties",
-       "een niet-levende invloed (licht, temperatuur, water)"
-      ],
-      "c": 1,
-      "u": "«Nutriënt» betekent: een voedingsstof voor organismen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Piramide van biomassa»?",
-      "o": [
-       "fotosynthese (opbouw) en celademhaling (afbraak)",
-       "mitose (2 identiek) en meiose (4 verschillend)",
-       "Mendelse overerving en stambomen",
-       "de verdeling van biomassa over trofische niveaus"
-      ],
-      "c": 3,
-      "u": "«Piramide van biomassa» betekent: de verdeling van biomassa over trofische niveaus.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de verdeling van biomassa over trofische niveaus\"?",
-      "o": [
-       "Placebo",
-       "Piramide van biomassa",
-       "Dominant allel",
-       "Producent"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Piramide van biomassa»: de verdeling van biomassa over trofische niveaus.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de verdeling van biomassa over trofische niveaus\"?",
-      "o": [
-       "Ecosysteem",
-       "Piramide van biomassa",
-       "Exoot",
-       "Draagkracht"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Piramide van biomassa»: de verdeling van biomassa over trofische niveaus.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Piramide van biomassa» in?",
-      "o": [
-       "een niet-levende invloed (licht, temperatuur, water)",
-       "een van elders ingevoerde soort",
-       "alle individuen van één soort in een gebied",
-       "de verdeling van biomassa over trofische niveaus"
-      ],
-      "c": 3,
-      "u": "«Piramide van biomassa» betekent: de verdeling van biomassa over trofische niveaus.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Exoot»?",
-      "o": [
-       "het constant houden van het interne milieu",
-       "een van elders ingevoerde soort",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven",
-       "samenhang ≠ oorzaak"
-      ],
-      "c": 1,
-      "u": "«Exoot» betekent: een van elders ingevoerde soort.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een van elders ingevoerde soort\"?",
-      "o": [
-       "Placebo",
-       "Exoot",
-       "Verteringsstelsel",
-       "Preparaat"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Exoot»: een van elders ingevoerde soort.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een van elders ingevoerde soort\"?",
-      "o": [
        "Producent",
-       "Voedselketen",
+       "Hardy-Weinberg-evenwicht"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De best aangepaste dieren krijgen meer nakomelingen. Dat past bij Natuurlijke selectie: best aangepaste overleven.",
+      "uo": [
+       "Nee, dat hoort bij Bottleneck-effect: krimp, weinig variatie.",
+       "Klopt: best aangepaste overleven.",
+       "Nee, dat hoort bij Producent: maakt eigen voedsel.",
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie."
+      ],
+      "uh": "Natuurlijke selectie: best aangepaste overleven."
+     },
+     {
+      "v": "Op kaal zand komen eerst mossen, dan grassen, dan bos. Om welk begrip gaat het?",
+      "o": [
+       "Trofisch niveau",
+       "Allopatrische speciatie",
        "Successie",
-       "Exoot"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Exoot»: een van elders ingevoerde soort.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Exoot» in?",
-      "o": [
-       "organisme dat zelf organische stof maakt (planten)",
-       "een van elders ingevoerde soort",
-       "draagkracht; eutrofiëring als verstoring",
-       "een langdurige samenleving van twee soorten"
-      ],
-      "c": 1,
-      "u": "«Exoot» betekent: een van elders ingevoerde soort.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Populatie»?",
-      "o": [
-       "het tot uiting komen van een gen in een eiwit",
-       "hormoon dat de bloedglucose verlaagt",
-       "alle individuen van één soort in een gebied",
-       "organel dat eiwitten maakt"
+       "Bottleneck-effect"
       ],
       "c": 2,
-      "u": "«Populatie» betekent: alle individuen van één soort in een gebied.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"alle individuen van één soort in een gebied\"?",
-      "o": [
-       "Populatie",
-       "Ecosysteem",
-       "Piramide van biomassa",
-       "Diffusie"
+      "d": 1,
+      "u": "Op kaal zand komen eerst mossen, dan grassen, dan bos. Dat past bij Successie: geleidelijke opeenvolging.",
+      "uo": [
+       "Nee, dat hoort bij Trofisch niveau: schakel in de voedselketen.",
+       "Nee, dat hoort bij Allopatrische speciatie: soortvorming door barrière.",
+       "Klopt: geleidelijke opeenvolging.",
+       "Nee, dat hoort bij Bottleneck-effect: krimp, weinig variatie."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Populatie»: alle individuen van één soort in een gebied.",
-      "d": 2
+      "uh": "Successie: geleidelijke opeenvolging."
      },
      {
-      "v": "Welke term past bij: \"alle individuen van één soort in een gebied\"?",
+      "v": "De geleidelijke opeenvolging naar een climaxstadium. Welk begrip herken je hier?",
       "o": [
-       "Energiedoorgifte",
-       "Populatie",
-       "Natuurlijke selectie",
-       "Consument"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Populatie»: alle individuen van één soort in een gebied.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Populatie» in?",
-      "o": [
-       "alle individuen van één soort in een gebied",
-       "een invloed van levende organismen",
-       "isolatie → nieuwe soorten; allelfrequenties",
-       "de verscheidenheid aan soorten en genen"
-      ],
-      "c": 0,
-      "u": "«Populatie» betekent: alle individuen van één soort in een gebied.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ecosysteem»?",
-      "o": [
-       "bouw en functie van de celonderdelen",
-       "een voedingsstof voor organismen",
-       "een lichaamsvreemde stof die een afweerreactie opwekt",
-       "een levensgemeenschap plus de abiotische omgeving"
-      ],
-      "c": 3,
-      "u": "«Ecosysteem» betekent: een levensgemeenschap plus de abiotische omgeving.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een levensgemeenschap plus de abiotische omgeving\"?",
-      "o": [
-       "Voedselrelaties",
-       "Ecosysteem",
-       "Validiteit",
-       "Hart & bloedvaten"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ecosysteem»: een levensgemeenschap plus de abiotische omgeving.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een levensgemeenschap plus de abiotische omgeving\"?",
-      "o": [
-       "Populatiedynamiek",
-       "Piramide van biomassa",
-       "Ecosysteem",
-       "Voedselketen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Ecosysteem»: een levensgemeenschap plus de abiotische omgeving.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ecosysteem» in?",
-      "o": [
-       "draagkracht; eutrofiëring als verstoring",
-       "een levensgemeenschap plus de abiotische omgeving",
-       "een invloed van levende organismen",
-       "organisme dat zelf organische stof maakt (planten)"
-      ],
-      "c": 1,
-      "u": "«Ecosysteem» betekent: een levensgemeenschap plus de abiotische omgeving.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Biotische factor»?",
-      "o": [
-       "mate waarin je meet wat je wilt meten",
-       "een invloed van levende organismen",
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)"
-      ],
-      "c": 1,
-      "u": "«Biotische factor» betekent: een invloed van levende organismen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een invloed van levende organismen\"?",
-      "o": [
-       "Hormoon",
-       "Steekproef",
-       "Recessief allel",
-       "Biotische factor"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Biotische factor»: een invloed van levende organismen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een invloed van levende organismen\"?",
-      "o": [
-       "Evolutie",
-       "Draagkracht",
-       "Reducent",
-       "Biotische factor"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Biotische factor»: een invloed van levende organismen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Biotische factor» in?",
-      "o": [
-       "organisme dat andere organismen eet",
-       "de geleidelijke verandering van een ecosysteem",
-       "een invloed van levende organismen",
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)"
-      ],
-      "c": 2,
-      "u": "«Biotische factor» betekent: een invloed van levende organismen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Abiotische factor»?",
-      "o": [
-       "organisme dat zelf organische stof maakt (planten)",
-       "isolatie → nieuwe soorten; allelfrequenties",
-       "de verscheidenheid aan soorten en genen",
-       "een niet-levende invloed (licht, temperatuur, water)"
-      ],
-      "c": 3,
-      "u": "«Abiotische factor» betekent: een niet-levende invloed (licht, temperatuur, water).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een niet-levende invloed (licht, temperatuur, water)\"?",
-      "o": [
-       "Neuron",
-       "Ecosysteem",
-       "Abiotische factor",
-       "Determineertabel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Abiotische factor»: een niet-levende invloed (licht, temperatuur, water).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een niet-levende invloed (licht, temperatuur, water)\"?",
-      "o": [
-       "Abiotische factor",
-       "Producent",
-       "Biotische factor",
-       "Ecosysteem"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Abiotische factor»: een niet-levende invloed (licht, temperatuur, water).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Abiotische factor» in?",
-      "o": [
-       "een langdurige samenleving van twee soorten",
-       "een niet-levende invloed (licht, temperatuur, water)",
-       "een voedingsstof voor organismen",
-       "organisme dat andere organismen eet"
-      ],
-      "c": 1,
-      "u": "«Abiotische factor» betekent: een niet-levende invloed (licht, temperatuur, water).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Voedselketen»?",
-      "o": [
-       "een reeks van eten en gegeten worden",
-       "een verandering in het DNA",
-       "de selectief doorlaatbare grens van een cel",
-       "een toetsbare voorspelling van een verwacht verband"
-      ],
-      "c": 0,
-      "u": "«Voedselketen» betekent: een reeks van eten en gegeten worden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een reeks van eten en gegeten worden\"?",
-      "o": [
-       "Steekproef",
-       "Gewricht",
-       "Voedselketen",
+       "Bottleneck-effect",
+       "Allopatrische speciatie",
+       "Trofisch niveau",
        "Successie"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Voedselketen»: een reeks van eten en gegeten worden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een reeks van eten en gegeten worden\"?",
-      "o": [
-       "Reducent",
-       "Piramide van biomassa",
-       "Voedselketen",
-       "Consument"
+      "c": 3,
+      "d": 1,
+      "u": "De geleidelijke opeenvolging naar een climaxstadium. Dat past bij Successie: geleidelijke opeenvolging.",
+      "uo": [
+       "Nee, dat hoort bij Bottleneck-effect: krimp, weinig variatie.",
+       "Nee, dat hoort bij Allopatrische speciatie: soortvorming door barrière.",
+       "Nee, dat hoort bij Trofisch niveau: schakel in de voedselketen.",
+       "Klopt: geleidelijke opeenvolging."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Voedselketen»: een reeks van eten en gegeten worden.",
-      "d": 3
+      "uh": "Successie: geleidelijke opeenvolging."
      },
      {
-      "v": "Wat houdt «Voedselketen» in?",
+      "v": "De functionele rol van een soort. Wat is hier aan de hand?",
       "o": [
-       "de 10%-regel en de energiepiramide",
-       "een niet-levende invloed (licht, temperatuur, water)",
-       "een reeks van eten en gegeten worden",
-       "een voedingsstof voor organismen"
-      ],
-      "c": 2,
-      "u": "«Voedselketen» betekent: een reeks van eten en gegeten worden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Producent»?",
-      "o": [
-       "organel dat het DNA bevat en de cel aanstuurt",
-       "de geleidelijke verandering van een ecosysteem",
-       "organisme dat zelf organische stof maakt (planten)",
-       "transport van stoffen door het lichaam"
-      ],
-      "c": 2,
-      "u": "«Producent» betekent: organisme dat zelf organische stof maakt (planten).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"organisme dat zelf organische stof maakt (planten)\"?",
-      "o": [
-       "Producent",
-       "Onafhankelijke variabele",
-       "Voedselketen",
-       "Controle-experiment"
+       "Niche",
+       "Hardy-Weinberg-evenwicht",
+       "Allopatrische speciatie",
+       "Primaire productie"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Producent»: organisme dat zelf organische stof maakt (planten).",
-      "d": 2
+      "d": 1,
+      "u": "De functionele rol van een soort. Dat past bij Niche: rol van een soort.",
+      "uo": [
+       "Klopt: rol van een soort.",
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie.",
+       "Nee, dat hoort bij Allopatrische speciatie: soortvorming door barrière.",
+       "Nee, dat hoort bij Primaire productie: totale aanmaak door producenten."
+      ],
+      "uh": "Niche: rol van een soort."
      },
      {
-      "v": "Welke term past bij: \"organisme dat zelf organische stof maakt (planten)\"?",
+      "v": "De rol van een soort: wat hij eet, waar hij leeft en wanneer hij actief is. Welk begrip past hierbij?",
       "o": [
-       "Voedselrelaties",
-       "Producent",
-       "Soortvorming",
-       "Reducent"
+       "Hardy-Weinberg-evenwicht",
+       "Niche",
+       "Allopatrische speciatie",
+       "Primaire productie"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Producent»: organisme dat zelf organische stof maakt (planten).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Producent» in?",
-      "o": [
-       "organisme dat zelf organische stof maakt (planten)",
-       "organisme dat andere organismen eet",
-       "best aangepaste individuen planten zich meer voort",
-       "alle individuen van één soort in een gebied"
+      "d": 1,
+      "u": "De rol van een soort: wat hij eet, waar hij leeft en wanneer hij actief is. Dat past bij Niche: rol van een soort.",
+      "uo": [
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie.",
+       "Klopt: rol van een soort.",
+       "Nee, dat hoort bij Allopatrische speciatie: soortvorming door barrière.",
+       "Nee, dat hoort bij Primaire productie: totale aanmaak door producenten."
       ],
-      "c": 0,
-      "u": "«Producent» betekent: organisme dat zelf organische stof maakt (planten).",
-      "d": 3
+      "uh": "Niche: rol van een soort."
      },
      {
-      "v": "Wat betekent «Consument»?",
+      "v": "De totale aanmaak door producenten. Om welk begrip gaat het?",
       "o": [
-       "organisme dat andere organismen eet",
-       "alles wat je gelijk houdt",
-       "optimum, verband tussen assen",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)"
+       "Hardy-Weinberg-evenwicht",
+       "Trofisch niveau",
+       "Primaire productie",
+       "Natuurlijke selectie"
       ],
-      "c": 0,
-      "u": "«Consument» betekent: organisme dat andere organismen eet.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"organisme dat andere organismen eet\"?",
-      "o": [
-       "Consument",
-       "Correlatie vs. causaliteit",
-       "Allel",
-       "Zenuwstelsel"
+      "c": 2,
+      "d": 2,
+      "u": "De totale aanmaak door producenten. Dat past bij Primaire productie: totale aanmaak door producenten.",
+      "uo": [
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie.",
+       "Nee, dat hoort bij Trofisch niveau: schakel in de voedselketen.",
+       "Klopt: totale aanmaak door producenten.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepaste overleven."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Consument»: organisme dat andere organismen eet.",
-      "d": 2
+      "uh": "Primaire productie: totale aanmaak door producenten."
      },
      {
-      "v": "Welke term past bij: \"organisme dat andere organismen eet\"?",
+      "v": "Een organisme dat organische stof aanmaakt. Welk begrip herken je hier?",
       "o": [
-       "Symbiose",
-       "Biodiversiteit",
-       "Ecosysteem",
-       "Consument"
+       "Bottleneck-effect",
+       "Hardy-Weinberg-evenwicht",
+       "Natuurlijke selectie",
+       "Producent"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Consument»: organisme dat andere organismen eet.",
-      "d": 3
+      "d": 1,
+      "u": "Een organisme dat organische stof aanmaakt. Dat past bij Producent: maakt eigen voedsel.",
+      "uo": [
+       "Nee, dat hoort bij Bottleneck-effect: krimp, weinig variatie.",
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepaste overleven.",
+       "Klopt: maakt eigen voedsel."
+      ],
+      "uh": "Producent: maakt eigen voedsel."
      },
      {
-      "v": "Wat houdt «Consument» in?",
+      "v": "Een plant maakt met licht zijn eigen voedsel. Wat is hier aan de hand?",
       "o": [
-       "organisme dat andere organismen eet",
-       "een levensgemeenschap plus de abiotische omgeving",
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
-       "best aangepaste individuen planten zich meer voort"
+       "Producent",
+       "Trofisch niveau",
+       "Hardy-Weinberg-evenwicht",
+       "Primaire productie"
       ],
       "c": 0,
-      "u": "«Consument» betekent: organisme dat andere organismen eet.",
-      "d": 3
+      "d": 2,
+      "u": "Een plant maakt met licht zijn eigen voedsel. Dat past bij Producent: maakt eigen voedsel.",
+      "uo": [
+       "Klopt: maakt eigen voedsel.",
+       "Nee, dat hoort bij Trofisch niveau: schakel in de voedselketen.",
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie.",
+       "Nee, dat hoort bij Primaire productie: totale aanmaak door producenten."
+      ],
+      "uh": "Producent: maakt eigen voedsel."
      },
      {
-      "v": "Wat betekent «Reducent»?",
+      "v": "Het geval zonder evolutie. Welk begrip past hierbij?",
       "o": [
-       "eiwit dat als biokatalysator een reactie versnelt",
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
-       "Darwin: variatie + natuurlijke selectie",
-       "CO2 + water + licht worden glucose + zuurstof"
+       "Allopatrische speciatie",
+       "Hardy-Weinberg-evenwicht",
+       "Producent",
+       "Bottleneck-effect"
       ],
       "c": 1,
-      "u": "«Reducent» betekent: organisme dat dood materiaal afbreekt (bacteriën, schimmels).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"organisme dat dood materiaal afbreekt (bacteriën, schimmels)\"?",
-      "o": [
-       "Energiedoorgifte",
-       "Reducent",
-       "Antilichaam",
-       "Zenuwstelsel"
+      "d": 1,
+      "u": "Het geval zonder evolutie. Dat past bij Hardy-Weinberg-evenwicht: geen evolutie.",
+      "uo": [
+       "Nee, dat hoort bij Allopatrische speciatie: soortvorming door barrière.",
+       "Klopt: geen evolutie.",
+       "Nee, dat hoort bij Producent: maakt eigen voedsel.",
+       "Nee, dat hoort bij Bottleneck-effect: krimp, weinig variatie."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Reducent»: organisme dat dood materiaal afbreekt (bacteriën, schimmels).",
-      "d": 2
+      "uh": "Hardy-Weinberg-evenwicht: geen evolutie."
      },
      {
-      "v": "Welke term past bij: \"organisme dat dood materiaal afbreekt (bacteriën, schimmels)\"?",
+      "v": "Zonder selectie, mutatie of migratie blijven de allelfrequenties gelijk. Om welk begrip gaat het?",
       "o": [
-       "Consument",
-       "Voedselrelaties",
-       "Reducent",
-       "Populatiedynamiek"
+       "Primaire productie",
+       "Genetische drift",
+       "Hardy-Weinberg-evenwicht",
+       "Trofisch niveau"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Reducent»: organisme dat dood materiaal afbreekt (bacteriën, schimmels).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Reducent» in?",
-      "o": [
-       "alle individuen van één soort in een gebied",
-       "een van elders ingevoerde soort",
-       "organisme dat dood materiaal afbreekt (bacteriën, schimmels)",
-       "best aangepaste individuen planten zich meer voort"
+      "d": 2,
+      "u": "Zonder selectie, mutatie of migratie blijven de allelfrequenties gelijk. Dat past bij Hardy-Weinberg-evenwicht: geen evolutie.",
+      "uo": [
+       "Nee, dat hoort bij Primaire productie: totale aanmaak door producenten.",
+       "Nee, dat hoort bij Genetische drift: toevallige verandering.",
+       "Klopt: geen evolutie.",
+       "Nee, dat hoort bij Trofisch niveau: schakel in de voedselketen."
       ],
-      "c": 2,
-      "u": "«Reducent» betekent: organisme dat dood materiaal afbreekt (bacteriën, schimmels).",
-      "d": 3
+      "uh": "Hardy-Weinberg-evenwicht: geen evolutie."
      },
      {
-      "v": "Wat betekent «Draagkracht»?",
+      "v": "Soortvorming door een geografische barrière. Welk begrip herken je hier?",
       "o": [
-       "de maximale populatiegrootte die een gebied aankan",
-       "fotosynthese: legt lichtenergie vast",
-       "energiecentrale die aerobe celademhaling uitvoert (ATP)",
-       "producent, consument, reducent; voedselketen"
-      ],
-      "c": 0,
-      "u": "«Draagkracht» betekent: de maximale populatiegrootte die een gebied aankan.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de maximale populatiegrootte die een gebied aankan\"?",
-      "o": [
-       "Draagkracht",
-       "Meiose",
-       "Antilichaam",
-       "Vaccinatie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Draagkracht»: de maximale populatiegrootte die een gebied aankan.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de maximale populatiegrootte die een gebied aankan\"?",
-      "o": [
-       "Evolutie",
-       "Draagkracht",
-       "Biotische factor",
-       "Ecosysteem"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Draagkracht»: de maximale populatiegrootte die een gebied aankan.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Draagkracht» in?",
-      "o": [
-       "Darwin: variatie + natuurlijke selectie",
-       "de verdeling van biomassa over trofische niveaus",
-       "organisme dat zelf organische stof maakt (planten)",
-       "de maximale populatiegrootte die een gebied aankan"
+       "Bottleneck-effect",
+       "Trofisch niveau",
+       "Primaire productie",
+       "Allopatrische speciatie"
       ],
       "c": 3,
-      "u": "«Draagkracht» betekent: de maximale populatiegrootte die een gebied aankan.",
-      "d": 3
+      "d": 1,
+      "u": "Soortvorming door een geografische barrière. Dat past bij Allopatrische speciatie: soortvorming door barrière.",
+      "uo": [
+       "Nee, dat hoort bij Bottleneck-effect: krimp, weinig variatie.",
+       "Nee, dat hoort bij Trofisch niveau: schakel in de voedselketen.",
+       "Nee, dat hoort bij Primaire productie: totale aanmaak door producenten.",
+       "Klopt: soortvorming door barrière."
+      ],
+      "uh": "Allopatrische speciatie: soortvorming door barrière."
      },
      {
-      "v": "Wat betekent «Natuurlijke selectie»?",
+      "v": "Een sterke krimp met verlies van variatie. Wat is hier aan de hand?",
       "o": [
-       "best aangepaste individuen planten zich meer voort",
-       "mitose (2 identiek) en meiose (4 verschillend)",
-       "mate waarin herhaalde metingen dezelfde uitkomst geven",
-       "optimum, verband tussen assen"
+       "Bottleneck-effect",
+       "Genetische drift",
+       "Hardy-Weinberg-evenwicht",
+       "Niche"
       ],
       "c": 0,
-      "u": "«Natuurlijke selectie» betekent: best aangepaste individuen planten zich meer voort.",
-      "d": 1
+      "d": 2,
+      "u": "Een sterke krimp met verlies van variatie. Dat past bij Bottleneck-effect: krimp, weinig variatie.",
+      "uo": [
+       "Klopt: krimp, weinig variatie.",
+       "Nee, dat hoort bij Genetische drift: toevallige verandering.",
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie.",
+       "Nee, dat hoort bij Niche: rol van een soort."
+      ],
+      "uh": "Bottleneck-effect: krimp, weinig variatie."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"best aangepaste individuen planten zich meer voort\"?",
+      "v": "Een schakel in de voedselketen. Welk begrip past hierbij?",
       "o": [
-       "DNA → eiwit",
-       "Onafhankelijk",
-       "Hypothese",
+       "Bottleneck-effect",
+       "Trofisch niveau",
+       "Primaire productie",
+       "Hardy-Weinberg-evenwicht"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een schakel in de voedselketen. Dat past bij Trofisch niveau: schakel in de voedselketen.",
+      "uo": [
+       "Nee, dat hoort bij Bottleneck-effect: krimp, weinig variatie.",
+       "Klopt: schakel in de voedselketen.",
+       "Nee, dat hoort bij Primaire productie: totale aanmaak door producenten.",
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie."
+      ],
+      "uh": "Trofisch niveau: schakel in de voedselketen."
+     },
+     {
+      "v": "De totale hoeveelheid suiker die planten per tijd aanmaken. Om welk begrip gaat het?",
+      "o": [
+       "Hardy-Weinberg-evenwicht",
+       "Trofisch niveau",
+       "Primaire productie",
+       "Natuurlijke selectie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De totale hoeveelheid suiker die planten per tijd aanmaken. Dat past bij Primaire productie: totale aanmaak door producenten.",
+      "uo": [
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie.",
+       "Nee, dat hoort bij Trofisch niveau: schakel in de voedselketen.",
+       "Klopt: totale aanmaak door producenten.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepaste overleven."
+      ],
+      "uh": "Primaire productie: totale aanmaak door producenten."
+     },
+     {
+      "v": "De best aangepaste individuen planten zich meer voort. Welk begrip herken je hier?",
+      "o": [
+       "Hardy-Weinberg-evenwicht",
+       "Bottleneck-effect",
+       "Producent",
        "Natuurlijke selectie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Natuurlijke selectie»: best aangepaste individuen planten zich meer voort.",
-      "d": 2
+      "d": 1,
+      "u": "De best aangepaste individuen planten zich meer voort. Dat past bij Natuurlijke selectie: best aangepaste overleven.",
+      "uo": [
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie.",
+       "Nee, dat hoort bij Bottleneck-effect: krimp, weinig variatie.",
+       "Nee, dat hoort bij Producent: maakt eigen voedsel.",
+       "Klopt: best aangepaste overleven."
+      ],
+      "uh": "Natuurlijke selectie: best aangepaste overleven."
      },
      {
-      "v": "Welke term past bij: \"best aangepaste individuen planten zich meer voort\"?",
+      "v": "Toevallige verandering van allelfrequenties. Wat is hier aan de hand?",
       "o": [
+       "Genetische drift",
        "Natuurlijke selectie",
-       "Populatiedynamiek",
-       "Exoot",
-       "Ecosysteem"
+       "Bottleneck-effect",
+       "Producent"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Natuurlijke selectie»: best aangepaste individuen planten zich meer voort.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Natuurlijke selectie» in?",
-      "o": [
-       "best aangepaste individuen planten zich meer voort",
-       "organisme dat andere organismen eet",
-       "een reeks van eten en gegeten worden",
-       "een levensgemeenschap plus de abiotische omgeving"
+      "d": 2,
+      "u": "Toevallige verandering van allelfrequenties. Dat past bij Genetische drift: toevallige verandering.",
+      "uo": [
+       "Klopt: toevallige verandering.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepaste overleven.",
+       "Nee, dat hoort bij Bottleneck-effect: krimp, weinig variatie.",
+       "Nee, dat hoort bij Producent: maakt eigen voedsel."
       ],
-      "c": 0,
-      "u": "«Natuurlijke selectie» betekent: best aangepaste individuen planten zich meer voort.",
-      "d": 3
+      "uh": "Genetische drift: toevallige verandering."
      },
      {
-      "v": "Wat betekent «Biodiversiteit»?",
+      "v": "Elke schakel in de voedselketen geeft ongeveer tien procent door. Welk begrip past hierbij?",
       "o": [
-       "voedsel → kleine stoffen; opname in het bloed",
-       "een verandering in het DNA",
-       "mitose (2 identiek) en meiose (4 verschillend)",
-       "de verscheidenheid aan soorten en genen"
-      ],
-      "c": 3,
-      "u": "«Biodiversiteit» betekent: de verscheidenheid aan soorten en genen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de verscheidenheid aan soorten en genen\"?",
-      "o": [
-       "Ecosysteem",
-       "Spijsvertering",
-       "Fotosynthesesnelheid",
-       "Biodiversiteit"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Biodiversiteit»: de verscheidenheid aan soorten en genen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de verscheidenheid aan soorten en genen\"?",
-      "o": [
-       "Biodiversiteit",
-       "Populatiedynamiek",
-       "Voedselketen",
-       "Successie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Biodiversiteit»: de verscheidenheid aan soorten en genen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Biodiversiteit» in?",
-      "o": [
-       "isolatie → nieuwe soorten; allelfrequenties",
-       "een voedingsstof voor organismen",
-       "producent, consument, reducent; voedselketen",
-       "de verscheidenheid aan soorten en genen"
-      ],
-      "c": 3,
-      "u": "«Biodiversiteit» betekent: de verscheidenheid aan soorten en genen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Duurzaamheid»?",
-      "o": [
-       "eiwit dat als biokatalysator een reactie versnelt",
-       "molecuul met de erfelijke informatie in genen",
-       "gebruik zonder uitputting voor latere generaties",
-       "een niet-levende invloed (licht, temperatuur, water)"
-      ],
-      "c": 2,
-      "u": "«Duurzaamheid» betekent: gebruik zonder uitputting voor latere generaties.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gebruik zonder uitputting voor latere generaties\"?",
-      "o": [
-       "Hormoon",
-       "Evolutie",
-       "Duurzaamheid",
-       "Gasuitwisseling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Duurzaamheid»: gebruik zonder uitputting voor latere generaties.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gebruik zonder uitputting voor latere generaties\"?",
-      "o": [
-       "Soortvorming",
-       "Populatie",
-       "Reducent",
-       "Duurzaamheid"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Duurzaamheid»: gebruik zonder uitputting voor latere generaties.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Duurzaamheid» in?",
-      "o": [
-       "isolatie → nieuwe soorten; allelfrequenties",
-       "gebruik zonder uitputting voor latere generaties",
-       "een voedingsstof voor organismen",
-       "alle individuen van één soort in een gebied"
-      ],
-      "c": 1,
-      "u": "«Duurzaamheid» betekent: gebruik zonder uitputting voor latere generaties.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Voedselrelaties»?",
-      "o": [
-       "producent, consument, reducent; voedselketen",
-       "de beweegbare verbinding tussen twee botten",
-       "CO2 + water + licht worden glucose + zuurstof",
-       "wat de onderzoeker zelf instelt (de \"oorzaak\")"
-      ],
-      "c": 0,
-      "u": "«Voedselrelaties» betekent: producent, consument, reducent; voedselketen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"producent, consument, reducent; voedselketen\"?",
-      "o": [
-       "Constant",
-       "Placebo",
-       "Piramide van biomassa",
-       "Voedselrelaties"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Voedselrelaties»: producent, consument, reducent; voedselketen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"producent, consument, reducent; voedselketen\"?",
-      "o": [
-       "Piramide van biomassa",
-       "Voedselrelaties",
+       "Producent",
+       "Trofisch niveau",
        "Successie",
-       "Soortvorming"
+       "Allopatrische speciatie"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Voedselrelaties»: producent, consument, reducent; voedselketen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Voedselrelaties» in?",
-      "o": [
-       "de verscheidenheid aan soorten en genen",
-       "gebruik zonder uitputting voor latere generaties",
-       "een van elders ingevoerde soort",
-       "producent, consument, reducent; voedselketen"
+      "d": 3,
+      "u": "Elke schakel in de voedselketen geeft ongeveer tien procent door. Dat past bij Trofisch niveau: schakel in de voedselketen.",
+      "uo": [
+       "Nee, dat hoort bij Producent: maakt eigen voedsel.",
+       "Klopt: schakel in de voedselketen.",
+       "Nee, dat hoort bij Successie: geleidelijke opeenvolging.",
+       "Nee, dat hoort bij Allopatrische speciatie: soortvorming door barrière."
       ],
-      "c": 3,
-      "u": "«Voedselrelaties» betekent: producent, consument, reducent; voedselketen.",
-      "d": 3
+      "uh": "Trofisch niveau: schakel in de voedselketen."
      },
      {
-      "v": "Wat betekent «Energiedoorgifte»?",
+      "v": "In een klein groepje verandert de kleurverdeling puur door toeval. Om welk begrip gaat het?",
       "o": [
-       "de 10%-regel en de energiepiramide",
-       "een niet-levende invloed (licht, temperatuur, water)",
-       "een verandering in het DNA",
-       "molecuul met de erfelijke informatie in genen"
-      ],
-      "c": 0,
-      "u": "«Energiedoorgifte» betekent: de 10%-regel en de energiepiramide.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de 10%-regel en de energiepiramide\"?",
-      "o": [
-       "Insuline",
-       "Consument",
-       "Energiedoorgifte",
-       "Onafhankelijke variabele"
+       "Allopatrische speciatie",
+       "Hardy-Weinberg-evenwicht",
+       "Genetische drift",
+       "Trofisch niveau"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Energiedoorgifte»: de 10%-regel en de energiepiramide.",
-      "d": 2
+      "d": 1,
+      "u": "In een klein groepje verandert de kleurverdeling puur door toeval. Dat past bij Genetische drift: toevallige verandering.",
+      "uo": [
+       "Nee, dat hoort bij Allopatrische speciatie: soortvorming door barrière.",
+       "Nee, dat hoort bij Hardy-Weinberg-evenwicht: geen evolutie.",
+       "Klopt: toevallige verandering.",
+       "Nee, dat hoort bij Trofisch niveau: schakel in de voedselketen."
+      ],
+      "uh": "Genetische drift: toevallige verandering."
      },
      {
-      "v": "Welke term past bij: \"de 10%-regel en de energiepiramide\"?",
+      "v": "Een rivier splitst een populatie en er ontstaan twee soorten. Welk begrip herken je hier?",
       "o": [
-       "Ecosysteem",
-       "Reducent",
-       "Piramide van biomassa",
-       "Energiedoorgifte"
+       "Primaire productie",
+       "Genetische drift",
+       "Niche",
+       "Allopatrische speciatie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Energiedoorgifte»: de 10%-regel en de energiepiramide.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Energiedoorgifte» in?",
-      "o": [
-       "een levensgemeenschap plus de abiotische omgeving",
-       "de 10%-regel en de energiepiramide",
-       "een langdurige samenleving van twee soorten",
-       "een voedingsstof voor organismen"
+      "d": 2,
+      "u": "Een rivier splitst een populatie en er ontstaan twee soorten. Dat past bij Allopatrische speciatie: soortvorming door barrière.",
+      "uo": [
+       "Nee, dat hoort bij Primaire productie: totale aanmaak door producenten.",
+       "Nee, dat hoort bij Genetische drift: toevallige verandering.",
+       "Nee, dat hoort bij Niche: rol van een soort.",
+       "Klopt: soortvorming door barrière."
       ],
-      "c": 1,
-      "u": "«Energiedoorgifte» betekent: de 10%-regel en de energiepiramide.",
-      "d": 3
+      "uh": "Allopatrische speciatie: soortvorming door barrière."
      },
      {
-      "v": "Wat betekent «Populatiedynamiek»?",
+      "v": "Na een ramp blijft een kleine groep met weinig variatie over. Wat is hier aan de hand?",
       "o": [
-       "de kleinste eenheid van leven",
-       "draagkracht; eutrofiëring als verstoring",
-       "filteren afvalstoffen (ureum) uit het bloed en regelen de waterbalans",
-       "fotosynthese: legt lichtenergie vast"
-      ],
-      "c": 1,
-      "u": "«Populatiedynamiek» betekent: draagkracht; eutrofiëring als verstoring.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"draagkracht; eutrofiëring als verstoring\"?",
-      "o": [
-       "Verteringsstelsel",
-       "Celmembraan",
-       "Populatiedynamiek",
-       "Standaarddeviatie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Populatiedynamiek»: draagkracht; eutrofiëring als verstoring.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"draagkracht; eutrofiëring als verstoring\"?",
-      "o": [
-       "Populatiedynamiek",
-       "Duurzaamheid",
+       "Bottleneck-effect",
+       "Genetische drift",
        "Natuurlijke selectie",
-       "Energiedoorgifte"
+       "Producent"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Populatiedynamiek»: draagkracht; eutrofiëring als verstoring.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Populatiedynamiek» in?",
-      "o": [
-       "draagkracht; eutrofiëring als verstoring",
-       "best aangepaste individuen planten zich meer voort",
-       "een invloed van levende organismen",
-       "een reeks van eten en gegeten worden"
+      "d": 3,
+      "u": "Na een ramp blijft een kleine groep met weinig variatie over. Dat past bij Bottleneck-effect: krimp, weinig variatie.",
+      "uo": [
+       "Klopt: krimp, weinig variatie.",
+       "Nee, dat hoort bij Genetische drift: toevallige verandering.",
+       "Nee, dat hoort bij Natuurlijke selectie: best aangepaste overleven.",
+       "Nee, dat hoort bij Producent: maakt eigen voedsel."
       ],
-      "c": 0,
-      "u": "«Populatiedynamiek» betekent: draagkracht; eutrofiëring als verstoring.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Evolutie»?",
-      "o": [
-       "de factor die je meet als gevolg",
-       "transport van stoffen door het lichaam",
-       "Darwin: variatie + natuurlijke selectie",
-       "organel waarin fotosynthese plaatsvindt"
-      ],
-      "c": 2,
-      "u": "«Evolutie» betekent: Darwin: variatie + natuurlijke selectie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"Darwin: variatie + natuurlijke selectie\"?",
-      "o": [
-       "Steekproef",
-       "Evolutie",
-       "Populatiedynamiek",
-       "Mitochondrion"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Evolutie»: Darwin: variatie + natuurlijke selectie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"Darwin: variatie + natuurlijke selectie\"?",
-      "o": [
-       "Consument",
-       "Evolutie",
-       "Successie",
-       "Populatie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Evolutie»: Darwin: variatie + natuurlijke selectie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Evolutie» in?",
-      "o": [
-       "een invloed van levende organismen",
-       "een van elders ingevoerde soort",
-       "de maximale populatiegrootte die een gebied aankan",
-       "Darwin: variatie + natuurlijke selectie"
-      ],
-      "c": 3,
-      "u": "«Evolutie» betekent: Darwin: variatie + natuurlijke selectie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Soortvorming»?",
-      "o": [
-       "Mendelse overerving en stambomen",
-       "een levensgemeenschap plus de abiotische omgeving",
-       "organisme dat zelf organische stof maakt (planten)",
-       "isolatie → nieuwe soorten; allelfrequenties"
-      ],
-      "c": 3,
-      "u": "«Soortvorming» betekent: isolatie → nieuwe soorten; allelfrequenties.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"isolatie → nieuwe soorten; allelfrequenties\"?",
-      "o": [
-       "Soortvorming",
-       "Onafhankelijk",
-       "DNA → eiwit",
-       "Recessief allel"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Soortvorming»: isolatie → nieuwe soorten; allelfrequenties.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"isolatie → nieuwe soorten; allelfrequenties\"?",
-      "o": [
-       "Exoot",
-       "Soortvorming",
-       "Voedselrelaties",
-       "Populatiedynamiek"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Soortvorming»: isolatie → nieuwe soorten; allelfrequenties.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Soortvorming» in?",
-      "o": [
-       "organisme dat zelf organische stof maakt (planten)",
-       "isolatie → nieuwe soorten; allelfrequenties",
-       "de maximale populatiegrootte die een gebied aankan",
-       "een voedingsstof voor organismen"
-      ],
-      "c": 1,
-      "u": "«Soortvorming» betekent: isolatie → nieuwe soorten; allelfrequenties.",
-      "d": 3
+      "uh": "Bottleneck-effect: krimp, weinig variatie."
      }
     ],
     "oe": [
@@ -29742,92 +27119,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Successie",
-      "d": "de geleidelijke verandering van een ecosysteem"
-     },
-     {
-      "t": "Symbiose",
-      "d": "een langdurige samenleving van twee soorten"
-     },
-     {
-      "t": "Nutriënt",
-      "d": "een voedingsstof voor organismen"
-     },
-     {
-      "t": "Piramide van biomassa",
-      "d": "de verdeling van biomassa over trofische niveaus"
-     },
-     {
-      "t": "Exoot",
-      "d": "een van elders ingevoerde soort"
-     },
-     {
-      "t": "Populatie",
-      "d": "alle individuen van één soort in een gebied"
-     },
-     {
-      "t": "Ecosysteem",
-      "d": "een levensgemeenschap plus de abiotische omgeving"
-     },
-     {
-      "t": "Biotische factor",
-      "d": "een invloed van levende organismen"
-     },
-     {
-      "t": "Abiotische factor",
-      "d": "een niet-levende invloed (licht, temperatuur, water)"
-     },
-     {
-      "t": "Voedselketen",
-      "d": "een reeks van eten en gegeten worden"
-     },
-     {
-      "t": "Producent",
-      "d": "organisme dat zelf organische stof maakt (planten)"
-     },
-     {
-      "t": "Consument",
-      "d": "organisme dat andere organismen eet"
-     },
-     {
-      "t": "Reducent",
-      "d": "organisme dat dood materiaal afbreekt (bacteriën, schimmels)"
-     },
-     {
-      "t": "Draagkracht",
-      "d": "de maximale populatiegrootte die een gebied aankan"
+      "t": "Trofisch niveau",
+      "d": "een schakel in de voedselketen, met ongeveer 10% energiedoorgifte"
      },
      {
       "t": "Natuurlijke selectie",
-      "d": "best aangepaste individuen planten zich meer voort"
+      "d": "de best aangepaste individuen planten zich meer voort"
      },
      {
-      "t": "Biodiversiteit",
-      "d": "de verscheidenheid aan soorten en genen"
+      "t": "Allopatrische speciatie",
+      "d": "soortvorming doordat een geografische barrière populaties isoleert"
      },
      {
-      "t": "Duurzaamheid",
-      "d": "gebruik zonder uitputting voor latere generaties"
+      "t": "Hardy-Weinberg-evenwicht",
+      "d": "de allelfrequenties blijven gelijk zonder selectie, mutatie of migratie"
      },
      {
-      "t": "Voedselrelaties",
-      "d": "producent, consument, reducent; voedselketen"
+      "t": "Genetische drift",
+      "d": "toevallige verandering van allelfrequenties, sterk in kleine populaties"
      },
      {
-      "t": "Energiedoorgifte",
-      "d": "de 10%-regel en de energiepiramide"
+      "t": "Producent",
+      "d": "een organisme dat organische stof aanmaakt via fotosynthese"
      },
      {
-      "t": "Populatiedynamiek",
-      "d": "draagkracht; eutrofiëring als verstoring"
+      "t": "Primaire productie",
+      "d": "de totale organische stof die producenten per tijdseenheid aanmaken"
      },
      {
-      "t": "Evolutie",
-      "d": "Darwin: variatie + natuurlijke selectie"
+      "t": "Successie",
+      "d": "de geleidelijke verandering van een levensgemeenschap naar een climaxstadium"
      },
      {
-      "t": "Soortvorming",
-      "d": "isolatie → nieuwe soorten; allelfrequenties"
+      "t": "Niche",
+      "d": "de rol van een soort in zijn ecosysteem (wat, waar, wanneer)"
+     },
+     {
+      "t": "Bottleneck-effect",
+      "d": "een sterke populatiekrimp waarna weinig genetische variatie overblijft"
      }
     ]
    }

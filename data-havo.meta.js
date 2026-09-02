@@ -287,9 +287,9 @@ var VAKKEN = [
      "Conclusies trekken en resultaten beoordelen",
      "Wetenschappelijke redeneerwijze en kritisch denken"
     ],
-    "nSv": 88,
+    "nSv": 33,
     "nOe": 5,
-    "nBeg": 19,
+    "nBeg": 10,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -407,9 +407,9 @@ var VAKKEN = [
      "Mutaties en genexpressie",
      "Genetica: Mendelse overerving en stamboombomen"
     ],
-    "nSv": 111,
+    "nSv": 33,
     "nOe": 10,
-    "nBeg": 25,
+    "nBeg": 10,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -566,9 +566,9 @@ var VAKKEN = [
      "Zenuwstelsel: neuronen, synaps, reflexbogen",
      "Afweersysteem: specifiek en aspecifiek"
     ],
-    "nSv": 116,
+    "nSv": 32,
     "nOe": 6,
-    "nBeg": 27,
+    "nBeg": 10,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -725,9 +725,9 @@ var VAKKEN = [
      "Darwins evolutietheorie",
      "Hardy-Weinberg evenwicht"
     ],
-    "nSv": 101,
+    "nSv": 33,
     "nOe": 7,
-    "nBeg": 22,
+    "nBeg": 10,
     "hasSam": true,
     "leerdoelen": [
      {
