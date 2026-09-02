@@ -77,7 +77,7 @@ html.dark.level-vmbo{
 }
 /* Root-achtergrond: voorkomt witte randen bij snel scrollen / overscroll-bounce
    (de body dekt niet de overscroll-zone; html wél). */
-html{background:var(--bg,#f5f6fa)}
+html{background:var(--bg,#f5f6fa);overflow-x:clip}
 /* wrapper voor emoji→SVG-iconen (ico-swap.js): lijnt het icoon uit met de tekst */
 .ico-emoji{display:inline-flex;align-items:center;justify-content:center;vertical-align:-.14em}
 .ico-emoji>.ico{display:block}
@@ -1008,13 +1008,13 @@ html.dark .qb{background:#2e3550}
 /* ── EXAMEN MODUS ────────────────────────────── */
 /* Oefenen-paneel: bundelt Simulatietoets, Echte examenvragen en Oude examens
    in één rustige kaart met rijen i.p.v. losse gekleurde kaarten. */
-.oefen-panel{background:#fff;border:1px solid var(--bo);border-radius:16px;overflow:hidden;margin-bottom:14px}
+.oefen-panel{background:var(--s);border:1px solid var(--bo);border-radius:16px;overflow:hidden;margin-bottom:14px}
 .oefen-head{padding:13px 16px 3px;font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--mu)}
 .oefen-panel .sim-entry-btn,.oefen-panel .exam-entry-btn,.oefen-panel .ce-archief-card{border:0!important;border-top:1px solid var(--bo)!important;border-radius:0!important;margin:0!important;box-shadow:none!important;background:transparent!important}
 .oefen-head + .sim-entry-btn,.oefen-head + .exam-entry-btn{border-top:0!important}
 .oefen-panel .sim-entry-btn:hover,.oefen-panel .exam-entry-btn:hover{background:rgba(var(--or-rgb),.04)!important;transform:none!important}
-.exam-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:#fff;border:1px solid var(--bo);color:var(--dk);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
-.exam-entry-btn:hover{background:#fff;border-color:var(--or);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(0,0,0,.12)}
+.exam-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:var(--s);border:1px solid var(--bo);color:var(--dk);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
+.exam-entry-btn:hover{background:var(--s);border-color:var(--or);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(0,0,0,.12)}
 .exam-entry-icon{font-size:22px;line-height:1;flex-shrink:0}
 .exam-entry-text{flex:1;min-width:0}
 .exam-entry-title{font-size:14px;font-weight:800;letter-spacing:-.2px;margin-bottom:1px;color:var(--or)}
@@ -1265,8 +1265,8 @@ html.dark .qb{background:#2e3550}
 .lp-card.lp-locked:hover{transform:none!important;border-color:rgba(255,255,255,.07)!important}
 .lp-ring-outer.lp-locked-ring svg .lp-ring-bg{stroke:rgba(255,255,255,.06)}
 /* Simulatietoets entry button */
-.sim-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:#fff;border:1px solid var(--bo);color:var(--dk);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
-.sim-entry-btn:hover{background:#fff;border-color:var(--or);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(0,0,0,.12)}
+.sim-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:var(--s);border:1px solid var(--bo);color:var(--dk);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
+.sim-entry-btn:hover{background:var(--s);border-color:var(--or);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(0,0,0,.12)}
 .sim-entry-icon{width:36px;height:36px;border-radius:10px;background:rgba(var(--or-rgb),.18);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
 .sim-entry-text{flex:1;min-width:0}
 .sim-entry-title{font-size:13px;font-weight:800;color:var(--or)}
@@ -2361,8 +2361,8 @@ html.dark .calc-btn{background:#2e3550}
 .exam-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 .em-chip{font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;background:var(--bg2);color:var(--mu);display:inline-flex;align-items:center;gap:6px}
 .em-chip.em-date{background:var(--orl);color:var(--or)}
-.yt-card{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:11px;background:#fff;border:1px solid var(--bo);margin-top:10px;text-decoration:none;transition:all .22s cubic-bezier(.34,1.4,.64,1);width:100%}
-.yt-card:hover{background:#fff;border-color:var(--bo)}
+.yt-card{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:11px;background:var(--s);border:1px solid var(--bo);margin-top:10px;text-decoration:none;transition:all .22s cubic-bezier(.34,1.4,.64,1);width:100%}
+.yt-card:hover{background:var(--s);border-color:var(--bo)}
 .yt-icon{width:28px;height:28px;border-radius:8px;background:#FF0000;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .yt-icon svg{width:16px;height:16px;fill:#fff}
 .yt-info{display:flex;align-items:baseline;gap:6px;min-width:0;flex-wrap:wrap}
@@ -3060,7 +3060,7 @@ html.dark .calc-btn{background:#2e3550}
 .anim-change-btn:hover{background:rgba(var(--or-rgb),.22)}
 .anim-evo-subtitle{font-size:12px;color:var(--mu);margin-bottom:16px}
 .anim-evo-stages{display:flex;align-items:flex-end;gap:0;margin-bottom:12px}
-.anim-stage{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;position:relative}
+.anim-stage{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px;position:relative}
 .anim-stage:not(:last-child)::after{content:'';position:absolute;right:0;top:20px;width:100%;height:2px;background:var(--bo);z-index:0;transform:translateX(50%)}
 .anim-stage.done::after{background:var(--or)}
 .anim-stage-pip{width:40px;height:40px;border-radius:50%;background:var(--bg2);border:2px solid var(--bo);display:flex;align-items:center;justify-content:center;font-size:20px;position:relative;z-index:1;transition:all .3s}
@@ -4766,6 +4766,9 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
   /* ── SCHERMEN: geen website-padding ── */
   body{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 92px)!important}
+  /* Op schermen zonder bottom-nav (quiz, welcome, resultaat, race…) geen
+     92px-reservering: die liet een leeg vlak in de body-achtergrond zien. */
+  body.nav-hidden{padding-bottom:env(safe-area-inset-bottom,0px)!important}
   .w{padding:0 14px!important}
   .sc>.w:first-child,.sc .w:first-of-type{padding-top:4px!important}
 

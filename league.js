@@ -424,10 +424,19 @@ function leagueSyncAndFetch(force){
 var _lgCeremonyDone=false;
 function _lgMaybeCeremony(){
   if(_lgCeremonyDone)return;
+  // Niet tonen op het niveau-kiezen-scherm: de divisie-uitslag hoort pas op de
+  // niveaupagina (home) te verschijnen, niet nog vóór een niveau gekozen is.
+  // De vlag blijft ongezet, zodat de ceremonie later op de home wél komt.
+  try{if(document.documentElement.classList.contains('level-welcome'))return;}catch(e){}
   const L=getLeague();
   if(!L||!L.result||L.result.seen)return;              // recap voor ELKE weekafsluiting
   _lgCeremonyDone=true;
-  setTimeout(()=>{try{showLeagueCeremony(L.result);}catch(e){}},600);
+  setTimeout(()=>{
+    // Extra check: als de gebruiker binnen die 600ms tóch naar het niveau-kiezen-
+    // scherm ging, niet tonen (en de vlag terugzetten voor een latere kans).
+    if(document.documentElement.classList.contains('level-welcome')){_lgCeremonyDone=false;return;}
+    try{showLeagueCeremony(L.result);}catch(e){}
+  },600);
 }
 // Weekafsluiting-recap: toont prominent hoeveelste je bent geworden + de uitkomst
 // (gepromoveerd / gebleven / gedegradeerd), voor élke week (niet enkel promo/demote).
