@@ -25215,7 +25215,7 @@ var VAKKEN_VMBO = [
       "uh": "3 op 1: de meerderheid is dominant."
      },
      {
-      "v": "Welke van deze is een voorbeeld van een weefsel?",
+      "v": "Welk van deze hoort bij het organisatieniveau weefsel?",
       "o": [
        "Het hart",
        "Het bloedvatenstelsel",
