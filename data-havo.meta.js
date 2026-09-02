@@ -26,9 +26,9 @@ var VAKKEN = [
      "Tekstsoorten (betoog, beschouwing, instructie)",
      "Bedoeling en toon van de schrijver"
     ],
-    "nSv": 88,
+    "nSv": 31,
     "nOe": 5,
-    "nBeg": 19,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -44,9 +44,9 @@ var VAKKEN = [
      "Non-verbale communicatie",
      "Feedback geven en ontvangen"
     ],
-    "nSv": 32,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 6,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -62,7 +62,7 @@ var VAKKEN = [
      "Woordkeuze, stijl en coherentie",
      "Gebruik van signaalwoorden"
     ],
-    "nSv": 47,
+    "nSv": 30,
     "nOe": 4,
     "nBeg": 10,
     "hasSam": true
@@ -80,7 +80,7 @@ var VAKKEN = [
      "Lengte en volledigheid beoordelen",
      "Samenvatting beoordelen op kwaliteit"
     ],
-    "nSv": 49,
+    "nSv": 30,
     "nOe": 3,
     "nBeg": 10,
     "hasSam": true
@@ -98,9 +98,9 @@ var VAKKEN = [
      "Aanvaardbaarheid van argumentatie beoordelen",
      "Feitelijke vs waarderende argumenten"
     ],
-    "nSv": 71,
+    "nSv": 30,
     "nOe": 5,
-    "nBeg": 15,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -116,9 +116,9 @@ var VAKKEN = [
      "Chronologie en tijdsverschijnselen",
      "Poëzie: klank, beeld en structuur"
     ],
-    "nSv": 90,
+    "nSv": 31,
     "nOe": 3,
-    "nBeg": 19,
+    "nBeg": 10,
     "hasSam": true
    }
   ]

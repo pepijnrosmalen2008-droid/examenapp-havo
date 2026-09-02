@@ -26,1051 +26,596 @@ var VAKKEN = [
      "Tekstsoorten (betoog, beschouwing, instructie)",
      "Bedoeling en toon van de schrijver"
     ],
-    "sam": "<div class=\"sam-head\">Tekstbegrip</div><ul><li><strong>Hoofdgedachte</strong>: het centrale standpunt of de boodschap van de hele tekst. Staat vaak in inleiding of conclusie. Verschil met onderwerp: het onderwerp is het thema (bijv. \"sociale media\"), de hoofdgedachte is wat de auteur daarover beweert.</li><li><strong>Deelonderwerpen</strong>: elke alinea werkt toe naar de hoofdgedachte. Noteer per alinea de kern om de opbouw zichtbaar te maken.</li><li><strong>Feit vs. mening</strong>: feiten zijn objectief controleerbaar (\"42% van jongeren…\"). Meningen bevatten waardeoordelen: goed, slecht, moeten, onacceptabel. Feiten worden regelmatig ingezet om een mening te ondersteunen.</li></ul><div class=\"sam-head\">Signaalwoorden</div><ul><li><strong>Gevolg/oorzaak</strong>: daardoor, dus, zodat, waardoor, als gevolg hiervan, omdat, doordat</li><li><strong>Tegenstelling</strong>: maar, echter, toch, terwijl, integendeel, daarentegen, in tegenstelling tot</li><li><strong>Toevoeging</strong>: bovendien, daarnaast, ook, verder, tevens, zelfs, niet alleen … maar ook</li><li><strong>Concessie</strong>: weliswaar, hoewel, ondanks, ook al, toegegeven dat</li><li><strong>Opsomming/volgorde</strong>: ten eerste, vervolgens, ten slotte, enerzijds … anderzijds</li></ul><div class=\"sam-head\">Argumentatiestructuur</div><ul><li><strong>Enkelvoudig</strong>: één argument onderbouwt het standpunt direct.</li><li><strong>Meervoudig</strong>: meerdere onafhankelijke argumenten ondersteunen elk afzonderlijk het standpunt. Als je één argument weghaalt, blijven de andere staan.</li><li><strong>Onderschikkend</strong>: een argument wordt zelf onderbouwd door een sub-argument - ketting van redeneringen.</li><li><strong>Concessie en weerlegging</strong>: auteur erkent tegenargument (\"weliswaar klopt X\") maar handhaaft standpunt (\"toch geldt Y\"). Vergroot geloofwaardigheid van het betoog.</li></ul><div class=\"sam-head\">Tekstsoorten en toon</div><ul><li><strong>Betoog</strong>: doel = overtuigen van één standpunt. Bevat stelling, argumenten en conclusie. Eenzijdig van opzet.</li><li><strong>Beschouwing</strong>: verkent vraagstuk van meerdere kanten, geen hard standpunt. Genuanceerder dan betoog.</li><li><strong>Informatieve tekst</strong>: informeren staat centraal, geen standpunt. Feiten en uitleg.</li><li><strong>Toon van de schrijver</strong>: houding zichtbaar in woordkeuze - ironisch, kritisch, enthousiast, zakelijk, sceptisch. Let op bijvoeglijke naamwoorden en retorische vragen.</li></ul><div class=\"sam-onthoud\">Signaalwoorden per relatie: Oorzaak/gevolg: <em>daardoor, omdat, doordat, vandaar, waardoor, dus</em>. Tegenstelling: <em>echter, maar, toch, terwijl, integendeel</em>. Toevoeging: <em>bovendien, ook, tevens, zelfs, niet alleen…maar ook</em>. Opsomming: <em>ten eerste, vervolgens, ten slotte, enerzijds…anderzijds</em>. Concessie: <em>weliswaar, hoewel, ondanks, ook al</em>.</div><div class=\"sam-ce-spot\"><ul><li>\"Welk verband drukt het signaalwoord uit?\" → kijk naar de relatie vóór en ná het woord (oorzaak, gevolg, tegenstelling, toevoeging)</li><li>\"Wat is de hoofdgedachte?\" → zoek de overkoepelende stelling/boodschap over het hele onderwerp, niet een deelargument</li><li>\"Is dit een betoog of beschouwing?\" → betoog: eenzijdig, expliciete stelling. Beschouwing: meerdere kanten, genuanceerd</li><li>\"Welk argumentatieschema?\" → enkelvoudig (één argument), meervoudig (onafhankelijke argumenten), onderschikkend (argument→sub-argument keten)</li><li>\"Welk retorisch middel?\" → concessie, retorische vraag, opsomming, analoog voorbeeld, beroep op autoriteit</li></ul></div>",
+    "sam": "<div class=\"sam-intro\">Bij leesvaardigheid bepaal je de <strong>hoofdgedachte</strong> en het <strong>communicatieve doel</strong>, herken je het <strong>teksttype</strong> (betoog, beschouwing, uiteenzetting) en volg je de <strong>signaalwoorden</strong>. Je onderscheidt een <strong>feit</strong> van een <strong>mening</strong> en herkent middelen als de <strong>concessie</strong>.</div><div class=\"sam-head\">1. Doel en tekstsoort</div><p>De <strong>hoofdgedachte</strong> is de centrale boodschap die de hele tekst draagt. Het <strong>communicatieve doel</strong> is de bedoeling: informeren, overtuigen of beschrijven. Een <strong>betoog</strong> wil overtuigen van één standpunt; een <strong>beschouwing</strong> verkent een vraagstuk van meerdere kanten zonder een hard standpunt.</p><div class=\"sam-head\">2. Argumentatie en signaalwoorden</div><p>Een <strong>feit</strong> is objectief controleerbaar, een <strong>mening</strong> een persoonlijk oordeel. Een <strong>concessie</strong> erkent een tegenargument maar handhaaft het eigen standpunt (\"weliswaar X, maar toch…\"). <strong>Signaalwoorden</strong> sturen de tekst: \"echter\" (tegenstelling), \"ten eerste/vervolgens\" (opsomming), \"daardoor\" (gevolg). Bij <strong>deductie</strong> trek je uit een algemene regel een specifieke conclusie.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hoofdgedachte</div><div class=\"sam-definitie-body\">de centrale boodschap die de hele tekst draagt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Betoog</div><div class=\"sam-definitie-body\">een tekst die de lezer van één standpunt wil overtuigen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Beschouwing</div><div class=\"sam-definitie-body\">een tekst die een vraagstuk van meerdere kanten verkent.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Concessie</div><div class=\"sam-definitie-body\">een tegenargument erkennen en daarna het eigen standpunt handhaven.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Feit</div><div class=\"sam-definitie-body\">een objectief controleerbare uitspraak.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Mening</div><div class=\"sam-definitie-body\">een persoonlijk oordeel dat niet te bewijzen is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Communicatief doel</div><div class=\"sam-definitie-body\">de bedoeling van de schrijver: informeren, overtuigen of beschrijven.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Deductie</div><div class=\"sam-definitie-body\">uit een algemene regel een specifieke conclusie trekken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Signaalwoord</div><div class=\"sam-definitie-body\">een woord dat het verband tussen zinnen aangeeft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Argument</div><div class=\"sam-definitie-body\">een reden die een standpunt onderbouwt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Hoofdgedachte»</b> is centrale boodschap, terwijl <b>«Communicatief doel»</b> de bedoeling van de tekst is. <b>«Betoog»</b> is wil overtuigen, terwijl <b>«Beschouwing»</b> meerdere kanten, geen hard standpunt is. <b>«Concessie»</b> is toegeven en toch volhouden, terwijl <b>«Feit»</b> controleerbaar is. <b>«Feit»</b> is controleerbaar, terwijl <b>«Mening»</b> persoonlijk oordeel is.</div>",
     "sv": [
      {
-      "v": "Welk tekstueel element is het overkoepelende standpunt of de centrale boodschap die de hele tekst draagt?",
+      "v": "Welk element is de overkoepelende boodschap die de hele tekst draagt?",
       "o": [
-       "De hoofdgedachte",
-       "Het deelonderwerp",
-       "De inleiding",
-       "De conclusie"
+       "de hoofdgedachte",
+       "een detail",
+       "de titel",
+       "een signaalwoord"
       ],
       "c": 0,
-      "u": "De hoofdgedachte is het centrale idee dat elke alinea ondersteunt. Het is het standpunt of de boodschap over het onderwerp, niet het onderwerp zelf."
+      "d": 2,
+      "u": "De hoofdgedachte draagt de tekst.",
+      "uo": [
+       "Klopt: de hoofdgedachte draagt de tekst.",
+       "Nee, een detail is bijzaak.",
+       "Nee, de titel is niet altijd de kern.",
+       "Nee, dat markeert een verband."
+      ],
+      "uh": "Hoofdgedachte: de centrale boodschap van de tekst."
      },
      {
       "v": "Welk signaalwoord geeft een tegenstelling aan?",
       "o": [
-       "Echter",
-       "Daardoor",
-       "Bovendien",
-       "Weliswaar"
+       "daardoor",
+       "echter",
+       "ten eerste",
+       "namelijk"
       ],
-      "c": 0,
-      "u": "Echter geeft een tegenstelling aan. Daardoor is een gevolg. Bovendien is een toevoeging. Weliswaar leidt een concessie in."
+      "c": 1,
+      "d": 2,
+      "u": "\"echter\" markeert een tegenstelling.",
+      "uo": [
+       "Nee, dat is een gevolg.",
+       "Klopt: \"echter\" markeert een tegenstelling.",
+       "Nee, dat is een opsomming.",
+       "Nee, dat is een reden."
+      ],
+      "uh": "Signaalwoord \"echter\": tegenstelling."
      },
      {
-      "v": "Welk teksttype heeft als communicatief doel de lezer van één standpunt te overtuigen?",
+      "v": "Welk teksttype wil de lezer van één standpunt overtuigen?",
       "o": [
-       "Betoog",
-       "Beschouwing",
-       "Informatieve tekst",
-       "Narratieve tekst"
+       "de beschouwing",
+       "de uiteenzetting",
+       "het betoog",
+       "het verslag"
       ],
-      "c": 0,
-      "u": "Betoog: overtuigen van één standpunt. Beschouwing: verkennen van een vraagstuk en meerdere kanten laten zien."
+      "c": 2,
+      "d": 2,
+      "u": "Een betoog wil overtuigen.",
+      "uo": [
+       "Nee, dat weegt af.",
+       "Nee, dat informeert.",
+       "Klopt: een betoog wil overtuigen.",
+       "Nee, dat doet neutraal verslag."
+      ],
+      "uh": "Betoog: de lezer overtuigen."
      },
      {
-      "v": "Welk retorisch middel erkent een tegenargument maar handhaaft daarna het eigen standpunt (bijv. \"weliswaar klopt X, maar toch...\")?",
+      "v": "Welk retorisch middel erkent een tegenargument maar handhaaft daarna het standpunt?",
       "o": [
-       "Concessie",
-       "Weerlegging",
-       "Analogie",
-       "Opsomming"
+       "de vergelijking",
+       "de herhaling",
+       "de opsomming",
+       "de concessie"
       ],
-      "c": 0,
-      "u": "Concessie: de auteur geeft iets toe (weliswaar klopt X) maar handhaaft het eigen standpunt (maar toch geldt Y). Dit maakt de redenering geloofwaardiger."
+      "c": 3,
+      "d": 3,
+      "u": "Bij een concessie geef je een punt toe en houd je toch vol.",
+      "uo": [
+       "Nee, dat is een stijlfiguur.",
+       "Nee, dat is iets herhalen.",
+       "Nee, dat is een reeks.",
+       "Klopt: bij een concessie geef je een punt toe en houd je toch vol."
+      ],
+      "uh": "Concessie: toegeven en toch je standpunt houden."
      },
      {
-      "v": "Welke uitspraakvorm is objectief controleerbaar en niet afhankelijk van een persoonlijke waardering?",
+      "v": "Welke uitspraak is objectief controleerbaar en niet afhankelijk van een waardering?",
       "o": [
-       "Feit",
-       "Mening",
-       "Hypothese",
-       "Stelling"
+       "een feit",
+       "een mening",
+       "een concessie",
+       "een drogreden"
       ],
       "c": 0,
-      "u": "Feiten zijn aantoonbaar waar of onwaar. Meningen bevatten subjectieve oordelen zoals goed, slecht of onacceptabel."
+      "d": 2,
+      "u": "Een feit is controleerbaar.",
+      "uo": [
+       "Klopt: een feit is controleerbaar.",
+       "Nee, dat is een persoonlijk oordeel.",
+       "Nee, dat is een middel.",
+       "Nee, dat is een denkfout."
+      ],
+      "uh": "Feit: objectief controleerbaar."
      },
      {
-      "v": "Welk tekstkenmerk verwijst naar de bedoeling waarmee een schrijver een tekst heeft geschreven: informeren, overtuigen of beschrijven?",
+      "v": "Welk kenmerk verwijst naar de bedoeling waarmee een schrijver een tekst schreef?",
       "o": [
-       "Communicatief doel",
-       "Stijl",
-       "Toon",
-       "Onderwerp"
+       "de hoofdgedachte",
+       "het communicatieve doel",
+       "het signaalwoord",
+       "de titel"
       ],
-      "c": 0,
-      "u": "Het communicatieve doel is de bedoeling van de schrijver: wil hij informeren, overtuigen of beschrijven? Dit is te herkennen aan de tekstsoort, het taalgebruik en de inhoud."
+      "c": 1,
+      "d": 2,
+      "u": "Informeren, overtuigen of beschrijven is het doel.",
+      "uo": [
+       "Nee, dat is de kernboodschap.",
+       "Klopt: informeren, overtuigen of beschrijven is het doel.",
+       "Nee, dat markeert een verband.",
+       "Nee, dat is de kop."
+      ],
+      "uh": "Communicatief doel: de bedoeling van de tekst."
      },
      {
-      "v": "Welk type redenering gebruikt de schrijver wanneer hij vanuit een algemene regel een specifieke conclusie trekt?",
+      "v": "Welke redenering trekt uit een algemene regel een specifieke conclusie?",
       "o": [
-       "Deductie",
-       "Inductie",
-       "Analogie",
-       "Abductie"
+       "concessie",
+       "inductie",
+       "deductie",
+       "opsomming"
       ],
-      "c": 0,
-      "u": "Deductie: als A geldt voor alle B en X is een B, dan geldt A voor X. Inductie: specifieke waarnemingen leiden tot een algemene conclusie. Op het HAVO-CE is deductief redeneren in argumentatieve teksten een veelgesteld vraagtype."
+      "c": 2,
+      "d": 3,
+      "u": "Van algemeen naar specifiek is deductie.",
+      "uo": [
+       "Nee, dat is een middel.",
+       "Nee, dat gaat van specifiek naar algemeen.",
+       "Klopt: van algemeen naar specifiek is deductie.",
+       "Nee, dat is een reeks."
+      ],
+      "uh": "Deductie: van algemene regel naar specifieke conclusie."
      },
      {
       "v": "Welk signaalwoord geeft een opsomming of volgorde aan?",
       "o": [
-       "Ten eerste / vervolgens / ten slotte",
-       "Echter / maar / toch",
-       "Bovendien / tevens / daarnaast",
-       "Weliswaar / hoewel / ondanks"
-      ],
-      "c": 0,
-      "u": "Ten eerste, vervolgens en ten slotte zijn signaalwoorden die een ordening of volgorde aangeven. Ze helpen de lezer de structuur van de tekst te volgen."
-     },
-     {
-      "v": "Welk kenmerk heeft een beschouwing waarmee het zich onderscheidt van een betoog?",
-      "o": [
-       "Een beschouwing verkent een vraagstuk van meerdere kanten zonder een hard standpunt in te nemen",
-       "Een beschouwing bevat altijd één duidelijk standpunt dat wordt verdedigd",
-       "Een beschouwing is altijd korter dan een betoog",
-       "Een beschouwing bevat nooit feiten, alleen meningen"
-      ],
-      "c": 0,
-      "u": "Betoog: eenzijdig, duidelijk standpunt verdedigen. Beschouwing: genuanceerd, meerdere kanten belichten, de lezer laten nadenken. Beide kunnen argumenten bevatten maar het doel verschilt."
-     },
-     {
-      "v": "Welk signaalwoord drukt een oorzaak-gevolgrelatie uit?",
-      "o": [
-       "Daardoor",
-       "Echter",
-       "Bovendien",
-       "Weliswaar"
-      ],
-      "c": 0,
-      "u": "Daardoor geeft een gevolg aan. Echter en maar geven een tegenstelling. Bovendien voegt iets toe. Signaalwoorden helpen bij het bepalen van de tekststructuur."
-     },
-     {
-      "v": "Wat is de functie van een inleiding in een betoog?",
-      "o": [
-       "Het onderwerp introduceren en de lezer motiveren verder te lezen",
-       "Het standpunt weerleggen met tegenargumenten",
-       "Een samenvatting geven van alle argumenten",
-       "De conclusie herhalen in andere woorden"
-      ],
-      "c": 0,
-      "u": "Een inleiding trekt de aandacht, introduceert het onderwerp en bevat soms al de hoofdgedachte of stelling. De conclusie herhaalt het standpunt en rondt het betoog af."
-     },
-     {
-      "v": "Wat is de strekking van een tekst?",
-      "o": [
-       "De algemene boodschap of moraal die de tekst wil overbrengen",
-       "Het onderwerp waarover de tekst gaat",
-       "De stijl en het taalgebruik van de schrijver",
-       "De structuur en opbouw van de alinea's"
-      ],
-      "c": 0,
-      "u": "De strekking is de overkoepelende boodschap of moraal. Het verschil met de hoofdgedachte is gradueel: de hoofdgedachte is de centrale uitspraak, de strekking is de bredere betekenis of les."
-     },
-     {
-      "v": "Wat betekent «Kernzin»?",
-      "o": [
-       "de zin met de hoofdgedachte van een alinea",
-       "argumenten die niet deugen",
-       "overbodige, herhalende informatie",
-       "een tekst die één standpunt verdedigt"
-      ],
-      "c": 0,
-      "u": "«Kernzin» betekent: de zin met de hoofdgedachte van een alinea.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de zin met de hoofdgedachte van een alinea\"?",
-      "o": [
-       "Kernzin",
-       "Autoriteitsdrogreden",
-       "Perspectief",
-       "Cirkelredenering"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Kernzin»: de zin met de hoofdgedachte van een alinea.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de zin met de hoofdgedachte van een alinea\"?",
-      "o": [
-       "Amuseren",
-       "Objectief",
-       "Signaalwoord",
-       "Kernzin"
+       "want",
+       "echter",
+       "daardoor",
+       "ten eerste / vervolgens / ten slotte"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Kernzin»: de zin met de hoofdgedachte van een alinea.",
-      "d": 3
+      "d": 2,
+      "u": "Deze woorden ordenen een reeks.",
+      "uo": [
+       "Nee, dat is een reden.",
+       "Nee, dat is een tegenstelling.",
+       "Nee, dat is een gevolg.",
+       "Klopt: deze woorden ordenen een reeks."
+      ],
+      "uh": "\"Ten eerste/vervolgens\": opsomming."
      },
      {
-      "v": "Wat houdt «Kernzin» in?",
+      "v": "Hoe onderscheidt een beschouwing zich van een betoog?",
       "o": [
-       "de beoogde lezersgroep",
-       "de zin met de hoofdgedachte van een alinea",
-       "doordat, daardoor, dus, zodat",
-       "de mening van de lezer proberen te veranderen"
+       "ze verkent een vraagstuk van meerdere kanten zonder een hard standpunt",
+       "ze wil per se overtuigen",
+       "ze geeft alleen instructies",
+       "ze bevat alleen feiten"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een beschouwing weegt af zonder één standpunt op te dringen.",
+      "uo": [
+       "Klopt: een beschouwing weegt af zonder één standpunt op te dringen.",
+       "Nee, dat is een betoog.",
+       "Nee, dat is een instructie.",
+       "Nee, ook meningen komen aan bod."
+      ],
+      "uh": "Beschouwing: meerdere kanten, geen hard standpunt."
+     },
+     {
+      "v": "Wat is een mening?",
+      "o": [
+       "een controleerbaar feit",
+       "een persoonlijk oordeel dat niet te bewijzen is",
+       "een signaalwoord",
+       "een titel"
       ],
       "c": 1,
-      "u": "«Kernzin» betekent: de zin met de hoofdgedachte van een alinea.",
-      "d": 3
+      "d": 2,
+      "u": "Een mening is subjectief.",
+      "uo": [
+       "Nee, dat is een feit.",
+       "Klopt: een mening is subjectief.",
+       "Nee, dat markeert een verband.",
+       "Nee, dat is de kop."
+      ],
+      "uh": "Mening: een persoonlijk, onbewijsbaar oordeel."
      },
      {
-      "v": "Wat betekent «Signaalwoord»?",
+      "v": "Welk signaalwoord geeft een oorzaak-gevolgrelatie aan?",
       "o": [
-       "wijzen het verband aan",
-       "de kernboodschap in één zin",
-       "een tekstdeel over één deelonderwerp",
-       "een woord dat een verband aangeeft"
+       "bijvoorbeeld",
+       "echter",
+       "daardoor",
+       "ten eerste"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "\"daardoor\" leidt een gevolg in.",
+      "uo": [
+       "Nee, dat is een voorbeeld.",
+       "Nee, dat is een tegenstelling.",
+       "Klopt: \"daardoor\" leidt een gevolg in.",
+       "Nee, dat is een opsomming."
+      ],
+      "uh": "\"Daardoor\": oorzaak-gevolg."
+     },
+     {
+      "v": "De schrijver wil je overtuigen dat je minder moet vliegen. Welk begrip past hierbij?",
+      "o": [
+       "Hoofdgedachte",
+       "Signaalwoord",
+       "Argument",
+       "Betoog"
       ],
       "c": 3,
-      "u": "«Signaalwoord» betekent: een woord dat een verband aangeeft.",
-      "d": 1
+      "d": 1,
+      "u": "De schrijver wil je overtuigen dat je minder moet vliegen. Dat past bij Betoog: wil overtuigen.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap.",
+       "Nee, dat hoort bij Signaalwoord: geeft verband aan.",
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt.",
+       "Klopt: wil overtuigen."
+      ],
+      "uh": "Betoog: wil overtuigen."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een woord dat een verband aangeeft\"?",
+      "v": "Uit een algemene regel trek je een specifieke conclusie. Om welk begrip gaat het?",
       "o": [
-       "Signaalwoord",
-       "Weerlegging",
-       "Drogredenen",
-       "Amuseren"
+       "Deductie",
+       "Hoofdgedachte",
+       "Concessie",
+       "Communicatief doel"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Signaalwoord»: een woord dat een verband aangeeft.",
-      "d": 2
+      "d": 1,
+      "u": "Uit een algemene regel trek je een specifieke conclusie. Dat past bij Deductie: algemeen naar specifiek.",
+      "uo": [
+       "Klopt: algemeen naar specifiek.",
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap.",
+       "Nee, dat hoort bij Concessie: toegeven en toch volhouden.",
+       "Nee, dat hoort bij Communicatief doel: de bedoeling van de tekst."
+      ],
+      "uh": "Deductie: algemeen naar specifiek."
      },
      {
-      "v": "Welke term past bij: \"een woord dat een verband aangeeft\"?",
+      "v": "Van een algemene regel naar een specifiek geval. Welk begrip herken je hier?",
       "o": [
-       "Alineaverband",
-       "Tegenstelling",
        "Hoofdgedachte",
+       "Deductie",
+       "Concessie",
+       "Communicatief doel"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Van een algemene regel naar een specifiek geval. Dat past bij Deductie: algemeen naar specifiek.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap.",
+       "Klopt: algemeen naar specifiek.",
+       "Nee, dat hoort bij Concessie: toegeven en toch volhouden.",
+       "Nee, dat hoort bij Communicatief doel: de bedoeling van de tekst."
+      ],
+      "uh": "Deductie: algemeen naar specifiek."
+     },
+     {
+      "v": "Een woord dat het verband tussen zinnen aangeeft. Wat is hier aan de hand?",
+      "o": [
+       "Feit",
+       "Beschouwing",
+       "Signaalwoord",
+       "Deductie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een woord dat het verband tussen zinnen aangeeft. Dat past bij Signaalwoord: geeft verband aan.",
+      "uo": [
+       "Nee, dat hoort bij Feit: controleerbaar.",
+       "Nee, dat hoort bij Beschouwing: meerdere kanten, geen hard standpunt.",
+       "Klopt: geeft verband aan.",
+       "Nee, dat hoort bij Deductie: algemeen naar specifiek."
+      ],
+      "uh": "Signaalwoord: geeft verband aan."
+     },
+     {
+      "v": "Het woordje echter laat zien dat er een tegenstelling komt. Welk begrip past hierbij?",
+      "o": [
+       "Beschouwing",
+       "Argument",
+       "Feit",
        "Signaalwoord"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Signaalwoord»: een woord dat een verband aangeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Signaalwoord» in?",
-      "o": [
-       "bijvoorbeeld, zoals, namelijk",
-       "een woord dat een verband aangeeft",
-       "de lezer iets laten weten of uitleggen",
-       "kortom, dus, al met al"
+      "d": 3,
+      "u": "Het woordje echter laat zien dat er een tegenstelling komt. Dat past bij Signaalwoord: geeft verband aan.",
+      "uo": [
+       "Nee, dat hoort bij Beschouwing: meerdere kanten, geen hard standpunt.",
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt.",
+       "Nee, dat hoort bij Feit: controleerbaar.",
+       "Klopt: geeft verband aan."
       ],
-      "c": 1,
-      "u": "«Signaalwoord» betekent: een woord dat een verband aangeeft.",
-      "d": 3
+      "uh": "Signaalwoord: geeft verband aan."
      },
      {
-      "v": "Wat betekent «Publiek»?",
+      "v": "De bedoeling waarmee een tekst is geschreven. Om welk begrip gaat het?",
       "o": [
-       "het gezichtspunt van waaruit verteld wordt",
-       "door de ogen van één personage, in de derde persoon",
-       "de beoogde lezersgroep",
-       "ten eerste, bovendien, ook, daarnaast"
-      ],
-      "c": 2,
-      "u": "«Publiek» betekent: de beoogde lezersgroep.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de beoogde lezersgroep\"?",
-      "o": [
-       "Oorzaak-gevolg",
-       "Hoofdgedachte",
-       "Stromingen",
-       "Publiek"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Publiek»: de beoogde lezersgroep.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de beoogde lezersgroep\"?",
-      "o": [
-       "Tekstdoel",
-       "Activeren",
-       "Conclusie/samenvatting",
-       "Publiek"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Publiek»: de beoogde lezersgroep.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Publiek» in?",
-      "o": [
-       "doordat, daardoor, dus, zodat",
-       "de beoogde lezersgroep",
-       "de zin met de hoofdgedachte van een alinea",
-       "oorzaak-gevolg, tegenstelling, opsomming…"
-      ],
-      "c": 1,
-      "u": "«Publiek» betekent: de beoogde lezersgroep.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Tekstdoel»?",
-      "o": [
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "mening + onderbouwing",
-       "wat de schrijver wil bereiken",
-       "\"een BN'er zegt het\" - geen echte deskundige"
-      ],
-      "c": 2,
-      "u": "«Tekstdoel» betekent: wat de schrijver wil bereiken.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"wat de schrijver wil bereiken\"?",
-      "o": [
-       "Motief",
-       "Amuseren",
-       "Objectief",
-       "Tekstdoel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Tekstdoel»: wat de schrijver wil bereiken.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"wat de schrijver wil bereiken\"?",
-      "o": [
-       "Publiek",
-       "Kernzin",
-       "Hoofdgedachte",
-       "Tekstdoel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Tekstdoel»: wat de schrijver wil bereiken.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Tekstdoel» in?",
-      "o": [
-       "de kernboodschap in één zin",
-       "de lezer iets laten weten of uitleggen",
-       "wat de schrijver wil bereiken",
-       "maar, echter, toch, daarentegen"
-      ],
-      "c": 2,
-      "u": "«Tekstdoel» betekent: wat de schrijver wil bereiken.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Objectief»?",
-      "o": [
-       "feitelijk en zonder mening",
-       "de kernboodschap in één zin",
-       "mening + onderbouwing",
-       "iets in eigen woorden weergeven"
+       "Communicatief doel",
+       "Argument",
+       "Betoog",
+       "Deductie"
       ],
       "c": 0,
-      "u": "«Objectief» betekent: feitelijk en zonder mening.",
-      "d": 1
+      "d": 1,
+      "u": "De bedoeling waarmee een tekst is geschreven. Dat past bij Communicatief doel: de bedoeling van de tekst.",
+      "uo": [
+       "Klopt: de bedoeling van de tekst.",
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt.",
+       "Nee, dat hoort bij Betoog: wil overtuigen.",
+       "Nee, dat hoort bij Deductie: algemeen naar specifiek."
+      ],
+      "uh": "Communicatief doel: de bedoeling van de tekst."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"feitelijk en zonder mening\"?",
+      "v": "Een persoonlijk oordeel dat je niet kunt bewijzen. Welk begrip herken je hier?",
       "o": [
-       "Samenvatting",
-       "Objectief",
-       "Stromingen",
-       "Kernzin"
+       "Feit",
+       "Mening",
+       "Hoofdgedachte",
+       "Concessie"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Objectief»: feitelijk en zonder mening.",
-      "d": 2
+      "d": 3,
+      "u": "Een persoonlijk oordeel dat je niet kunt bewijzen. Dat past bij Mening: persoonlijk oordeel.",
+      "uo": [
+       "Nee, dat hoort bij Feit: controleerbaar.",
+       "Klopt: persoonlijk oordeel.",
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap.",
+       "Nee, dat hoort bij Concessie: toegeven en toch volhouden."
+      ],
+      "uh": "Mening: persoonlijk oordeel."
      },
      {
-      "v": "Welke term past bij: \"feitelijk en zonder mening\"?",
+      "v": "Volgens mij is de zomer het mooiste seizoen. Wat is hier aan de hand?",
       "o": [
-       "Amuseren",
-       "Tekstverbanden",
-       "Objectief",
+       "Argument",
+       "Signaalwoord",
+       "Mening",
        "Hoofdgedachte"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Objectief»: feitelijk en zonder mening.",
-      "d": 3
+      "d": 1,
+      "u": "Volgens mij is de zomer het mooiste seizoen. Dat past bij Mening: persoonlijk oordeel.",
+      "uo": [
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt.",
+       "Nee, dat hoort bij Signaalwoord: geeft verband aan.",
+       "Klopt: persoonlijk oordeel.",
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap."
+      ],
+      "uh": "Mening: persoonlijk oordeel."
      },
      {
-      "v": "Wat houdt «Objectief» in?",
+      "v": "Een tegenargument erkennen en toch je standpunt houden. Welk begrip past hierbij?",
       "o": [
-       "wijzen het verband aan",
-       "de beoogde lezersgroep",
-       "bijvoorbeeld, zoals, namelijk",
-       "feitelijk en zonder mening"
+       "Argument",
+       "Feit",
+       "Hoofdgedachte",
+       "Concessie"
       ],
       "c": 3,
-      "u": "«Objectief» betekent: feitelijk en zonder mening.",
-      "d": 3
+      "d": 3,
+      "u": "Een tegenargument erkennen en toch je standpunt houden. Dat past bij Concessie: toegeven en toch volhouden.",
+      "uo": [
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt.",
+       "Nee, dat hoort bij Feit: controleerbaar.",
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap.",
+       "Klopt: toegeven en toch volhouden."
+      ],
+      "uh": "Concessie: toegeven en toch volhouden."
      },
      {
-      "v": "Wat betekent «Informeren»?",
+      "v": "Weliswaar klopt X, maar toch houd ik vast aan mijn standpunt. Om welk begrip gaat het?",
       "o": [
-       "een tekst die neutraal informeert",
-       "de lezer iets laten weten of uitleggen",
-       "bijvoorbeeld, zoals, namelijk",
-       "de mate van formeel taalgebruik"
+       "Concessie",
+       "Beschouwing",
+       "Hoofdgedachte",
+       "Argument"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Weliswaar klopt X, maar toch houd ik vast aan mijn standpunt. Dat past bij Concessie: toegeven en toch volhouden.",
+      "uo": [
+       "Klopt: toegeven en toch volhouden.",
+       "Nee, dat hoort bij Beschouwing: meerdere kanten, geen hard standpunt.",
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap.",
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt."
+      ],
+      "uh": "Concessie: toegeven en toch volhouden."
+     },
+     {
+      "v": "Een tekst die een vraagstuk van meerdere kanten verkent. Welk begrip herken je hier?",
+      "o": [
+       "Betoog",
+       "Beschouwing",
+       "Feit",
+       "Communicatief doel"
       ],
       "c": 1,
-      "u": "«Informeren» betekent: de lezer iets laten weten of uitleggen.",
-      "d": 1
+      "d": 3,
+      "u": "Een tekst die een vraagstuk van meerdere kanten verkent. Dat past bij Beschouwing: meerdere kanten, geen hard standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Betoog: wil overtuigen.",
+       "Klopt: meerdere kanten, geen hard standpunt.",
+       "Nee, dat hoort bij Feit: controleerbaar.",
+       "Nee, dat hoort bij Communicatief doel: de bedoeling van de tekst."
+      ],
+      "uh": "Beschouwing: meerdere kanten, geen hard standpunt."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de lezer iets laten weten of uitleggen\"?",
+      "v": "Een reden die een standpunt onderbouwt. Wat is hier aan de hand?",
       "o": [
-       "Oorzaak-gevolg",
+       "Feit",
        "Hoofdgedachte",
-       "Verbanden",
-       "Informeren"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Informeren»: de lezer iets laten weten of uitleggen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de lezer iets laten weten of uitleggen\"?",
-      "o": [
-       "Informeren",
-       "Amuseren",
-       "Objectief",
-       "Signaalwoord"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Informeren»: de lezer iets laten weten of uitleggen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Informeren» in?",
-      "o": [
-       "de lezer iets laten weten of uitleggen",
-       "bijvoorbeeld, zoals, namelijk",
-       "je vermakencolumn, verhaal",
-       "kortom, dus, al met al"
-      ],
-      "c": 0,
-      "u": "«Informeren» betekent: de lezer iets laten weten of uitleggen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Overtuigen»?",
-      "o": [
-       "de zin met de hoofdgedachte van een alinea",
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "de mening van de lezer proberen te veranderen",
-       "een gestructureerde woordenstrijd"
+       "Argument",
+       "Deductie"
       ],
       "c": 2,
-      "u": "«Overtuigen» betekent: de mening van de lezer proberen te veranderen.",
-      "d": 1
+      "d": 1,
+      "u": "Een reden die een standpunt onderbouwt. Dat past bij Argument: onderbouwt een standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Feit: controleerbaar.",
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap.",
+       "Klopt: onderbouwt een standpunt.",
+       "Nee, dat hoort bij Deductie: algemeen naar specifiek."
+      ],
+      "uh": "Argument: onderbouwt een standpunt."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de mening van de lezer proberen te veranderen\"?",
+      "v": "De centrale boodschap van de tekst. Welk begrip past hierbij?",
       "o": [
-       "Objectief",
-       "Overtuigen",
-       "Activeren",
+       "Mening",
+       "Communicatief doel",
+       "Argument",
+       "Hoofdgedachte"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De centrale boodschap van de tekst. Dat past bij Hoofdgedachte: centrale boodschap.",
+      "uo": [
+       "Nee, dat hoort bij Mening: persoonlijk oordeel.",
+       "Nee, dat hoort bij Communicatief doel: de bedoeling van de tekst.",
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt.",
+       "Klopt: centrale boodschap."
+      ],
+      "uh": "Hoofdgedachte: centrale boodschap."
+     },
+     {
+      "v": "De schrijver wil informeren, overtuigen of beschrijven. Om welk begrip gaat het?",
+      "o": [
+       "Communicatief doel",
+       "Argument",
+       "Betoog",
+       "Deductie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De schrijver wil informeren, overtuigen of beschrijven. Dat past bij Communicatief doel: de bedoeling van de tekst.",
+      "uo": [
+       "Klopt: de bedoeling van de tekst.",
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt.",
+       "Nee, dat hoort bij Betoog: wil overtuigen.",
+       "Nee, dat hoort bij Deductie: algemeen naar specifiek."
+      ],
+      "uh": "Communicatief doel: de bedoeling van de tekst."
+     },
+     {
+      "v": "Een tekst met één standpunt die wil overtuigen. Welk begrip herken je hier?",
+      "o": [
+       "Beschouwing",
+       "Betoog",
+       "Mening",
        "Argument"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Overtuigen»: de mening van de lezer proberen te veranderen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de mening van de lezer proberen te veranderen\"?",
-      "o": [
-       "Kernzin",
-       "Hoofdgedachte",
-       "Conclusie/samenvatting",
-       "Overtuigen"
+      "d": 2,
+      "u": "Een tekst met één standpunt die wil overtuigen. Dat past bij Betoog: wil overtuigen.",
+      "uo": [
+       "Nee, dat hoort bij Beschouwing: meerdere kanten, geen hard standpunt.",
+       "Klopt: wil overtuigen.",
+       "Nee, dat hoort bij Mening: persoonlijk oordeel.",
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Overtuigen»: de mening van de lezer proberen te veranderen.",
-      "d": 3
+      "uh": "Betoog: wil overtuigen."
      },
      {
-      "v": "Wat houdt «Overtuigen» in?",
-      "o": [
-       "de mening van de lezer proberen te veranderen",
-       "wat de schrijver wil bereiken",
-       "oorzaak-gevolg, tegenstelling, opsomming…",
-       "als, mits, tenzij"
-      ],
-      "c": 0,
-      "u": "«Overtuigen» betekent: de mening van de lezer proberen te veranderen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Activeren»?",
-      "o": [
-       "informeren, overtuigen of activeren",
-       "oorzaak-gevolg, tegenstelling, opsomming…",
-       "\"een BN'er zegt het\" - geen echte deskundige",
-       "de lezer iets laten doen of tot actie aanzetten"
-      ],
-      "c": 3,
-      "u": "«Activeren» betekent: de lezer iets laten doen of tot actie aanzetten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de lezer iets laten doen of tot actie aanzetten\"?",
-      "o": [
-       "Realisme (19e e.)",
-       "Activeren",
-       "Naturalisme (eind 19e e.)",
-       "Betoog"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Activeren»: de lezer iets laten doen of tot actie aanzetten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de lezer iets laten doen of tot actie aanzetten\"?",
-      "o": [
-       "Overtuigen",
-       "Conclusie/samenvatting",
-       "Activeren",
-       "Tekstverbanden"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Activeren»: de lezer iets laten doen of tot actie aanzetten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Activeren» in?",
-      "o": [
-       "bijvoorbeeld, zoals, namelijk",
-       "de lezer iets laten doen of tot actie aanzetten",
-       "kortom, dus, al met al",
-       "oorzaak-gevolg, tegenstelling, opsomming…"
-      ],
-      "c": 1,
-      "u": "«Activeren» betekent: de lezer iets laten doen of tot actie aanzetten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Hoofdgedachte»?",
-      "o": [
-       "door de ogen van één personage, in de derde persoon",
-       "de kernboodschap in één zin",
-       "de gevolgen van iets",
-       "wijzen het verband aan"
-      ],
-      "c": 1,
-      "u": "«Hoofdgedachte» betekent: de kernboodschap in één zin.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de kernboodschap in één zin\"?",
-      "o": [
-       "Uiteenzetting",
-       "Debat",
-       "Hoofdgedachte",
-       "Tegenstelling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Hoofdgedachte»: de kernboodschap in één zin.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de kernboodschap in één zin\"?",
+      "v": "Een objectief controleerbare uitspraak. Wat is hier aan de hand?",
       "o": [
        "Signaalwoord",
-       "Kernzin",
-       "Voorwaarde",
+       "Mening",
+       "Feit",
+       "Argument"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een objectief controleerbare uitspraak. Dat past bij Feit: controleerbaar.",
+      "uo": [
+       "Nee, dat hoort bij Signaalwoord: geeft verband aan.",
+       "Nee, dat hoort bij Mening: persoonlijk oordeel.",
+       "Klopt: controleerbaar.",
+       "Nee, dat hoort bij Argument: onderbouwt een standpunt."
+      ],
+      "uh": "Feit: controleerbaar."
+     },
+     {
+      "v": "De hele tekst in één zin samengevat. Welk begrip past hierbij?",
+      "o": [
+       "Feit",
+       "Concessie",
+       "Mening",
        "Hoofdgedachte"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Hoofdgedachte»: de kernboodschap in één zin.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Hoofdgedachte» in?",
-      "o": [
-       "oorzaak-gevolg, tegenstelling, opsomming…",
-       "de kernboodschap in één zin",
-       "maar, echter, toch, daarentegen",
-       "de lezer iets laten doen of tot actie aanzetten"
+      "d": 1,
+      "u": "De hele tekst in één zin samengevat. Dat past bij Hoofdgedachte: centrale boodschap.",
+      "uo": [
+       "Nee, dat hoort bij Feit: controleerbaar.",
+       "Nee, dat hoort bij Concessie: toegeven en toch volhouden.",
+       "Nee, dat hoort bij Mening: persoonlijk oordeel.",
+       "Klopt: centrale boodschap."
       ],
-      "c": 1,
-      "u": "«Hoofdgedachte» betekent: de kernboodschap in één zin.",
-      "d": 3
+      "uh": "Hoofdgedachte: centrale boodschap."
      },
      {
-      "v": "Wat betekent «Tekstverbanden»?",
+      "v": "Water kookt bij honderd graden, dat is te controleren. Om welk begrip gaat het?",
       "o": [
-       "oorzaak-gevolg, tegenstelling, opsomming…",
-       "verteller weet alles, ook gedachten van iedereen",
-       "een tekst die één standpunt verdedigt",
-       "met \"als\"/\"zoals\"zo sterk als een beer"
-      ],
-      "c": 0,
-      "u": "«Tekstverbanden» betekent: oorzaak-gevolg, tegenstelling, opsomming….",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"oorzaak-gevolg, tegenstelling, opsomming…\"?",
-      "o": [
-       "Tegenstelling",
-       "Tekstverbanden",
-       "Selecteren",
-       "Activeren"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Tekstverbanden»: oorzaak-gevolg, tegenstelling, opsomming….",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"oorzaak-gevolg, tegenstelling, opsomming…\"?",
-      "o": [
-       "Voorwaarde",
-       "Signaalwoorden",
-       "Tekstverbanden",
-       "Amuseren"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Tekstverbanden»: oorzaak-gevolg, tegenstelling, opsomming….",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Tekstverbanden» in?",
-      "o": [
-       "feitelijk en zonder mening",
-       "de lezer iets laten doen of tot actie aanzetten",
-       "oorzaak-gevolg, tegenstelling, opsomming…",
-       "wijzen het verband aan"
-      ],
-      "c": 2,
-      "u": "«Tekstverbanden» betekent: oorzaak-gevolg, tegenstelling, opsomming….",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Signaalwoorden»?",
-      "o": [
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "de beoogde lezersgroep",
-       "flashback, vooruitwijzing",
-       "wijzen het verband aan"
-      ],
-      "c": 3,
-      "u": "«Signaalwoorden» betekent: wijzen het verband aan.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"wijzen het verband aan\"?",
-      "o": [
-       "Realisme (19e e.)",
-       "Alwetend",
-       "Signaalwoorden",
-       "Signaalwoord"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Signaalwoorden»: wijzen het verband aan.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"wijzen het verband aan\"?",
-      "o": [
-       "Alineaverband",
-       "Oorzaak-gevolg",
+       "Feit",
+       "Mening",
        "Hoofdgedachte",
-       "Signaalwoorden"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Signaalwoorden»: wijzen het verband aan.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Signaalwoorden» in?",
-      "o": [
-       "de beoogde lezersgroep",
-       "wijzen het verband aan",
-       "als, mits, tenzij",
-       "de lezer iets laten doen of tot actie aanzetten"
-      ],
-      "c": 1,
-      "u": "«Signaalwoorden» betekent: wijzen het verband aan.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Alineaverband»?",
-      "o": [
-       "rol van een alinea in de tekst",
-       "binnen het maximum blijven",
-       "maar, echter, toch, daarentegen",
-       "wat de schrijver wil bereiken"
+       "Concessie"
       ],
       "c": 0,
-      "u": "«Alineaverband» betekent: rol van een alinea in de tekst.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"rol van een alinea in de tekst\"?",
-      "o": [
-       "Redundantie",
-       "Signaalwoord",
-       "Activeren",
-       "Alineaverband"
+      "d": 2,
+      "u": "Water kookt bij honderd graden, dat is te controleren. Dat past bij Feit: controleerbaar.",
+      "uo": [
+       "Klopt: controleerbaar.",
+       "Nee, dat hoort bij Mening: persoonlijk oordeel.",
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap.",
+       "Nee, dat hoort bij Concessie: toegeven en toch volhouden."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Alineaverband»: rol van een alinea in de tekst.",
-      "d": 2
+      "uh": "Feit: controleerbaar."
      },
      {
-      "v": "Welke term past bij: \"rol van een alinea in de tekst\"?",
+      "v": "De schrijver zet argumenten voor en tegen op een rij zonder te kiezen. Welk begrip herken je hier?",
       "o": [
-       "Amuseren",
-       "Tegenstelling",
-       "Toelichting/voorbeeld",
-       "Alineaverband"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Alineaverband»: rol van een alinea in de tekst.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alineaverband» in?",
-      "o": [
-       "als, mits, tenzij",
-       "maar, echter, toch, daarentegen",
-       "rol van een alinea in de tekst",
-       "een woord dat een verband aangeeft"
-      ],
-      "c": 2,
-      "u": "«Alineaverband» betekent: rol van een alinea in de tekst.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Amuseren»?",
-      "o": [
-       "sterke overdrijvingik heb je duizend keer gebeld",
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens",
-       "je vermakencolumn, verhaal",
-       "binnen het maximum blijven"
-      ],
-      "c": 2,
-      "u": "«Amuseren» betekent: je vermakencolumn, verhaal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"je vermakencolumn, verhaal\"?",
-      "o": [
-       "Vergelijking",
-       "Verbanden",
-       "Amuseren",
-       "Hoofdgedachte"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Amuseren»: je vermakencolumn, verhaal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"je vermakencolumn, verhaal\"?",
-      "o": [
-       "Activeren",
-       "Signaalwoorden",
-       "Publiek",
-       "Amuseren"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Amuseren»: je vermakencolumn, verhaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Amuseren» in?",
-      "o": [
-       "de lezer iets laten weten of uitleggen",
-       "wijzen het verband aan",
-       "maar, echter, toch, daarentegen",
-       "je vermakencolumn, verhaal"
-      ],
-      "c": 3,
-      "u": "«Amuseren» betekent: je vermakencolumn, verhaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Oorzaak-gevolg»?",
-      "o": [
-       "het standpunt herhalen als argument",
-       "een beeld zonder de woorden als of zoals",
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "doordat, daardoor, dus, zodat"
-      ],
-      "c": 3,
-      "u": "«Oorzaak-gevolg» betekent: doordat, daardoor, dus, zodat.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"doordat, daardoor, dus, zodat\"?",
-      "o": [
-       "Publiek",
-       "Oorzaak-gevolg",
-       "Aanvaardbaarheid",
-       "Informeren"
+       "Betoog",
+       "Beschouwing",
+       "Feit",
+       "Communicatief doel"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Oorzaak-gevolg»: doordat, daardoor, dus, zodat.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"doordat, daardoor, dus, zodat\"?",
-      "o": [
-       "Oorzaak-gevolg",
-       "Informeren",
-       "Toelichting/voorbeeld",
-       "Tekstverbanden"
+      "d": 3,
+      "u": "De schrijver zet argumenten voor en tegen op een rij zonder te kiezen. Dat past bij Beschouwing: meerdere kanten, geen hard standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Betoog: wil overtuigen.",
+       "Klopt: meerdere kanten, geen hard standpunt.",
+       "Nee, dat hoort bij Feit: controleerbaar.",
+       "Nee, dat hoort bij Communicatief doel: de bedoeling van de tekst."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Oorzaak-gevolg»: doordat, daardoor, dus, zodat.",
-      "d": 3
+      "uh": "Beschouwing: meerdere kanten, geen hard standpunt."
      },
      {
-      "v": "Wat houdt «Oorzaak-gevolg» in?",
+      "v": "De school moet later beginnen, want tieners slapen langer. Wat is hier aan de hand?",
       "o": [
-       "doordat, daardoor, dus, zodat",
-       "je vermakencolumn, verhaal",
-       "de kernboodschap in één zin",
-       "als, mits, tenzij"
-      ],
-      "c": 0,
-      "u": "«Oorzaak-gevolg» betekent: doordat, daardoor, dus, zodat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Tegenstelling»?",
-      "o": [
-       "de zin met de hoofdgedachte van een alinea",
-       "maar, echter, toch, daarentegen",
-       "het centrale idee van een werk",
-       "een tekst die neutraal informeert"
-      ],
-      "c": 1,
-      "u": "«Tegenstelling» betekent: maar, echter, toch, daarentegen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"maar, echter, toch, daarentegen\"?",
-      "o": [
-       "Spreekdoel",
-       "Tegenstelling",
-       "Overtuigen",
-       "Eigen woorden"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Tegenstelling»: maar, echter, toch, daarentegen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"maar, echter, toch, daarentegen\"?",
-      "o": [
+       "Feit",
        "Hoofdgedachte",
-       "Tekstverbanden",
-       "Tegenstelling",
-       "Overtuigen"
+       "Argument",
+       "Deductie"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Tegenstelling»: maar, echter, toch, daarentegen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Tegenstelling» in?",
-      "o": [
-       "je vermakencolumn, verhaal",
-       "maar, echter, toch, daarentegen",
-       "rol van een alinea in de tekst",
-       "doordat, daardoor, dus, zodat"
+      "d": 1,
+      "u": "De school moet later beginnen, want tieners slapen langer. Dat past bij Argument: onderbouwt een standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Feit: controleerbaar.",
+       "Nee, dat hoort bij Hoofdgedachte: centrale boodschap.",
+       "Klopt: onderbouwt een standpunt.",
+       "Nee, dat hoort bij Deductie: algemeen naar specifiek."
       ],
-      "c": 1,
-      "u": "«Tegenstelling» betekent: maar, echter, toch, daarentegen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Opsomming»?",
-      "o": [
-       "\"een BN'er zegt het\" - geen echte deskundige",
-       "aantonen dat een argument niet klopt",
-       "ten eerste, bovendien, ook, daarnaast",
-       "nevenschikkend of onderschikkend"
-      ],
-      "c": 2,
-      "u": "«Opsomming» betekent: ten eerste, bovendien, ook, daarnaast.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"ten eerste, bovendien, ook, daarnaast\"?",
-      "o": [
-       "Signaalwoorden",
-       "Tekstdoel",
-       "Woordenlimiet",
-       "Opsomming"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Opsomming»: ten eerste, bovendien, ook, daarnaast.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"ten eerste, bovendien, ook, daarnaast\"?",
-      "o": [
-       "Conclusie/samenvatting",
-       "Opsomming",
-       "Tegenstelling",
-       "Activeren"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Opsomming»: ten eerste, bovendien, ook, daarnaast.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Opsomming» in?",
-      "o": [
-       "je vermakencolumn, verhaal",
-       "wijzen het verband aan",
-       "maar, echter, toch, daarentegen",
-       "ten eerste, bovendien, ook, daarnaast"
-      ],
-      "c": 3,
-      "u": "«Opsomming» betekent: ten eerste, bovendien, ook, daarnaast.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Voorwaarde»?",
-      "o": [
-       "iets in eigen woorden weergeven",
-       "als, mits, tenzij",
-       "nevenschikkend of onderschikkend",
-       "aantonen dat een argument niet klopt"
-      ],
-      "c": 1,
-      "u": "«Voorwaarde» betekent: als, mits, tenzij.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"als, mits, tenzij\"?",
-      "o": [
-       "Alwetend",
-       "Personificatie",
-       "Voorwaarde",
-       "Register & stijl"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Voorwaarde»: als, mits, tenzij.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"als, mits, tenzij\"?",
-      "o": [
-       "Toelichting/voorbeeld",
-       "Objectief",
-       "Voorwaarde",
-       "Alineaverband"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Voorwaarde»: als, mits, tenzij.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Voorwaarde» in?",
-      "o": [
-       "de zin met de hoofdgedachte van een alinea",
-       "als, mits, tenzij",
-       "doordat, daardoor, dus, zodat",
-       "de mening van de lezer proberen te veranderen"
-      ],
-      "c": 1,
-      "u": "«Voorwaarde» betekent: als, mits, tenzij.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Toelichting/voorbeeld»?",
-      "o": [
-       "de kernboodschap in één zin",
-       "bijvoorbeeld, zoals, namelijk",
-       "een woord dat een verband aangeeft",
-       "realisme, naturalisme, modernisme"
-      ],
-      "c": 1,
-      "u": "«Toelichting/voorbeeld» betekent: bijvoorbeeld, zoals, namelijk.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"bijvoorbeeld, zoals, namelijk\"?",
-      "o": [
-       "Toelichting/voorbeeld",
-       "Autoriteit",
-       "Spreekdoel",
-       "Thema"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Toelichting/voorbeeld»: bijvoorbeeld, zoals, namelijk.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"bijvoorbeeld, zoals, namelijk\"?",
-      "o": [
-       "Amuseren",
-       "Tekstdoel",
-       "Toelichting/voorbeeld",
-       "Signaalwoorden"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Toelichting/voorbeeld»: bijvoorbeeld, zoals, namelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Toelichting/voorbeeld» in?",
-      "o": [
-       "bijvoorbeeld, zoals, namelijk",
-       "feitelijk en zonder mening",
-       "je vermakencolumn, verhaal",
-       "de beoogde lezersgroep"
-      ],
-      "c": 0,
-      "u": "«Toelichting/voorbeeld» betekent: bijvoorbeeld, zoals, namelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Conclusie/samenvatting»?",
-      "o": [
-       "oorzaak-gevolg, tegenstelling, opsomming…",
-       "de zin met de hoofdgedachte van een alinea",
-       "kortom, dus, al met al",
-       "het centrale idee van een werk"
-      ],
-      "c": 2,
-      "u": "«Conclusie/samenvatting» betekent: kortom, dus, al met al.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"kortom, dus, al met al\"?",
-      "o": [
-       "Parafrase",
-       "Samenvatting",
-       "Presentatiestructuur",
-       "Conclusie/samenvatting"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Conclusie/samenvatting»: kortom, dus, al met al.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"kortom, dus, al met al\"?",
-      "o": [
-       "Signaalwoord",
-       "Alineaverband",
-       "Conclusie/samenvatting",
-       "Signaalwoorden"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Conclusie/samenvatting»: kortom, dus, al met al.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Conclusie/samenvatting» in?",
-      "o": [
-       "doordat, daardoor, dus, zodat",
-       "de zin met de hoofdgedachte van een alinea",
-       "kortom, dus, al met al",
-       "een woord dat een verband aangeeft"
-      ],
-      "c": 2,
-      "u": "«Conclusie/samenvatting» betekent: kortom, dus, al met al.",
-      "d": 3
+      "uh": "Argument: onderbouwt een standpunt."
      }
     ],
     "oe": [
@@ -1127,80 +672,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Kernzin",
-      "d": "de zin met de hoofdgedachte van een alinea"
+      "t": "Hoofdgedachte",
+      "d": "de centrale boodschap die de hele tekst draagt"
+     },
+     {
+      "t": "Betoog",
+      "d": "een tekst die de lezer van één standpunt wil overtuigen"
+     },
+     {
+      "t": "Beschouwing",
+      "d": "een tekst die een vraagstuk van meerdere kanten verkent"
+     },
+     {
+      "t": "Concessie",
+      "d": "een tegenargument erkennen en daarna het eigen standpunt handhaven"
+     },
+     {
+      "t": "Feit",
+      "d": "een objectief controleerbare uitspraak"
+     },
+     {
+      "t": "Mening",
+      "d": "een persoonlijk oordeel dat niet te bewijzen is"
+     },
+     {
+      "t": "Communicatief doel",
+      "d": "de bedoeling van de schrijver: informeren, overtuigen of beschrijven"
+     },
+     {
+      "t": "Deductie",
+      "d": "uit een algemene regel een specifieke conclusie trekken"
      },
      {
       "t": "Signaalwoord",
-      "d": "een woord dat een verband aangeeft"
+      "d": "een woord dat het verband tussen zinnen aangeeft"
      },
      {
-      "t": "Publiek",
-      "d": "de beoogde lezersgroep"
-     },
-     {
-      "t": "Tekstdoel",
-      "d": "wat de schrijver wil bereiken"
-     },
-     {
-      "t": "Objectief",
-      "d": "feitelijk en zonder mening"
-     },
-     {
-      "t": "Informeren",
-      "d": "de lezer iets laten weten of uitleggen"
-     },
-     {
-      "t": "Overtuigen",
-      "d": "de mening van de lezer proberen te veranderen"
-     },
-     {
-      "t": "Activeren",
-      "d": "de lezer iets laten doen of tot actie aanzetten"
-     },
-     {
-      "t": "Hoofdgedachte",
-      "d": "de kernboodschap in één zin"
-     },
-     {
-      "t": "Tekstverbanden",
-      "d": "oorzaak-gevolg, tegenstelling, opsomming…"
-     },
-     {
-      "t": "Signaalwoorden",
-      "d": "wijzen het verband aan"
-     },
-     {
-      "t": "Alineaverband",
-      "d": "rol van een alinea in de tekst"
-     },
-     {
-      "t": "Amuseren",
-      "d": "je vermakencolumn, verhaal"
-     },
-     {
-      "t": "Oorzaak-gevolg",
-      "d": "doordat, daardoor, dus, zodat"
-     },
-     {
-      "t": "Tegenstelling",
-      "d": "maar, echter, toch, daarentegen"
-     },
-     {
-      "t": "Opsomming",
-      "d": "ten eerste, bovendien, ook, daarnaast"
-     },
-     {
-      "t": "Voorwaarde",
-      "d": "als, mits, tenzij"
-     },
-     {
-      "t": "Toelichting/voorbeeld",
-      "d": "bijvoorbeeld, zoals, namelijk"
-     },
-     {
-      "t": "Conclusie/samenvatting",
-      "d": "kortom, dus, al met al"
+      "t": "Argument",
+      "d": "een reden die een standpunt onderbouwt"
      }
     ]
    },
@@ -1217,383 +726,577 @@ var VAKKEN = [
      "Non-verbale communicatie",
      "Feedback geven en ontvangen"
     ],
-    "sam": "<div class=\"sam-head\">Spreekvaardigheid</div><ul><li><strong>Structuur presentatie</strong>: inleiding (onderwerp + doel + opbouw) → kern (max 3 hoofdpunten, elk met argument + voorbeeld) → conclusie (samenvatting + kernboodschap).</li><li><strong>Register</strong>: formeel bij officiele gelegenheden (ABN, geen tussenwoorden, volledige zinnen). Informeel bij vrienden (dialect, spreektaal, afkortingen).</li><li><strong>Non-verbaal</strong>: oogcontact, houding, stemvolume en -tempo. Spreek langzamer dan je denkt nodig te zijn; pauzes zijn krachtig.</li></ul><div class=\"sam-head\">Debat</div><ul><li><strong>Debatstructuur</strong>: stelling → voor/tegen teams → openingsronde → weerleggingsronde → slotpleidooi. Elk argument: standpunt + redenering + bewijs.</li><li><strong>Luistervaardigheid</strong>: schrijf kernwoorden, let op signaalwoorden (echter, bovendien, dus), onderscheid hoofdpunt van details.</li><li><strong>Feedback (2-sterren-1-wens)</strong>: twee positieve punten + één verbeterpunt. Concreet en op het gedrag, niet de persoon.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Een goede <strong>presentatie</strong> heeft een <strong>inleiding, kern en conclusie</strong>. <strong>Non-verbale communicatie</strong> als <strong>oogcontact</strong> versterkt je geloofwaardigheid. In een <strong>debat</strong> bouw je een sterk argument op (standpunt, redenering, bewijs) en sluit je af met een <strong>slotpleidooi</strong>. Je past je <strong>register</strong> aan.</div><div class=\"sam-head\">1. Presenteren</div><p>Een <strong>presentatiestructuur</strong> bestaat uit een <strong>inleiding</strong>, een <strong>kern</strong> en een <strong>conclusie</strong>. Bij <strong>non-verbale communicatie</strong> heeft <strong>oogcontact</strong> de meeste invloed op je geloofwaardigheid. Een <strong>informatieve</strong> presentatie informeert neutraal, een <strong>overtuigende</strong> zet aan tot een mening of actie.</p><div class=\"sam-head\">2. Debat en register</div><p>Een sterk <strong>debatargument</strong> heeft een standpunt, een redenering en bewijs. Het <strong>slotpleidooi</strong> vat de sterkste argumenten samen en overtuigt de jury. In een <strong>formeel register</strong> gebruik je volledige zinnen, de u-vorm en geen afkortingen. Bij <strong>actief luisteren</strong> noteer je kernwoorden per punt, geen hele zinnen.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Presentatiestructuur</div><div class=\"sam-definitie-body\">de opbouw met een inleiding, kern en conclusie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Non-verbale communicatie</div><div class=\"sam-definitie-body\">communicatie via houding, gebaren en oogcontact.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Debatargument</div><div class=\"sam-definitie-body\">een argument met een standpunt, een redenering en bewijs.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Formeel register</div><div class=\"sam-definitie-body\">nette taal met volledige zinnen en de u-vorm.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Informatieve presentatie</div><div class=\"sam-definitie-body\">een presentatie die neutraal informeert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Overtuigende presentatie</div><div class=\"sam-definitie-body\">een presentatie die aanzet tot een mening of actie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Slotpleidooi</div><div class=\"sam-definitie-body\">de afsluiting die de sterkste argumenten samenvat en overtuigt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Oogcontact</div><div class=\"sam-definitie-body\">het aankijken van je publiek, versterkt de geloofwaardigheid.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Actief luisteren</div><div class=\"sam-definitie-body\">meedenken en per punt kernwoorden noteren.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Register</div><div class=\"sam-definitie-body\">de mate van formaliteit van je taalgebruik.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Presentatiestructuur»</b> is inleiding, kern, conclusie, terwijl <b>«Debatargument»</b> standpunt, redenering, bewijs is. <b>«Non-verbale communicatie»</b> is lichaamstaal, terwijl <b>«Register»</b> mate van formaliteit is. <b>«Debatargument»</b> is standpunt, redenering, bewijs, terwijl <b>«Slotpleidooi»</b> argumenten samenvatten is. <b>«Formeel register»</b> is volledige zinnen, u-vorm, terwijl <b>«Informatieve presentatie»</b> informeert neutraal is.</div>",
     "sv": [
      {
       "v": "Wat zijn de drie onderdelen van een goede presentatiestructuur?",
       "o": [
-       "Inleiding, kern en conclusie",
-       "Titel, inhoud en bronnenlijst",
-       "Opening, midden en einde zonder verdere eisen",
-       "Hypothese, bewijs en conclusie"
+       "inleiding, kern en conclusie",
+       "titel, tekst en plaatje",
+       "begin, pauze en einde",
+       "vraag, antwoord en applaus"
       ],
       "c": 0,
-      "u": "Inleiding: trek aandacht, introduceer het onderwerp en geef de opbouw aan. Kern: max 3 punten elk met argument en voorbeeld. Conclusie: vat samen en geef de kernboodschap."
+      "d": 2,
+      "u": "Inleiding, kern en conclusie.",
+      "uo": [
+       "Klopt: inleiding, kern en conclusie.",
+       "Nee, dat is geen structuur.",
+       "Nee, dat is te vaag.",
+       "Nee, dat is geen opbouw."
+      ],
+      "uh": "Presentatie: inleiding, kern en conclusie."
      },
      {
-      "v": "Welk kenmerk van non-verbale communicatie heeft tijdens een presentatie de meeste invloed op geloofwaardigheid?",
+      "v": "Welk kenmerk van non-verbale communicatie heeft de meeste invloed op geloofwaardigheid?",
       "o": [
-       "Volume van de stem",
-       "Oogcontact met het publiek",
-       "De kleding van de spreker",
-       "Het gebruik van een PowerPoint"
+       "de kleur van je kleding",
+       "oogcontact met het publiek",
+       "de lengte van je zinnen",
+       "het aantal slides"
       ],
       "c": 1,
-      "u": "Oogcontact toont dat je de stof beheerst (niet voorleest) en bouwt verbinding met het publiek. Gebrek aan oogcontact ondermijnt vertrouwen en betrokkenheid sterk."
+      "d": 2,
+      "u": "Oogcontact wekt vertrouwen.",
+      "uo": [
+       "Nee, dat is minder bepalend.",
+       "Klopt: oogcontact wekt vertrouwen.",
+       "Nee, dat is verbaal.",
+       "Nee, dat is vormgeving."
+      ],
+      "uh": "Oogcontact: versterkt de geloofwaardigheid."
      },
      {
       "v": "Wat zijn de kenmerken van een sterk debatargument?",
       "o": [
-       "Standpunt, redenering en bewijs",
-       "Alleen een standpunt zonder verdere uitleg",
-       "Een lang betoog met veel feiten",
-       "Een persoonlijke mening zonder bron"
+       "een grap en een plaatje",
+       "alleen een mening",
+       "een standpunt, een redenering en bewijs",
+       "een lange zin"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Standpunt, redenering en bewijs samen.",
+      "uo": [
+       "Nee, dat is geen argument.",
+       "Nee, een mening alleen overtuigt niet.",
+       "Klopt: standpunt, redenering en bewijs samen.",
+       "Nee, lengte is geen kracht."
+      ],
+      "uh": "Sterk argument: standpunt, redenering, bewijs."
+     },
+     {
+      "v": "Hoe noteer je bij het luisteren naar een lezing de hoofdpunten effectief?",
+      "o": [
+       "niets, gewoon luisteren",
+       "elke zin letterlijk opschrijven",
+       "alleen de titel",
+       "signaalwoorden en kernwoorden per punt, geen hele zinnen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Kernwoorden vangen de hoofdzaken.",
+      "uo": [
+       "Nee, noteren helpt het onthouden.",
+       "Nee, dat is niet vol te houden.",
+       "Nee, dat is te weinig.",
+       "Klopt: kernwoorden vangen de hoofdzaken."
+      ],
+      "uh": "Luisteren: kernwoorden en signaalwoorden noteren."
+     },
+     {
+      "v": "Wanneer is een presentatie informatief en wanneer overtuigend?",
+      "o": [
+       "informatief informeert neutraal, overtuigend zet aan tot een mening of actie",
+       "ze zijn hetzelfde",
+       "informatief overtuigt, overtuigend informeert",
+       "beide zijn altijd neutraal"
       ],
       "c": 0,
-      "u": "Elk debatargument bevat: (1) standpunt (wat beweer je), (2) redenering (waarom klopt het), (3) bewijs (feit, statistiek, voorbeeld). Dit is de ARK-methode."
+      "d": 3,
+      "u": "Informeren tegenover aanzetten tot mening/actie.",
+      "uo": [
+       "Klopt: informeren tegenover aanzetten tot mening/actie.",
+       "Nee, ze verschillen.",
+       "Nee, dat is omgedraaid.",
+       "Nee, overtuigend is niet neutraal."
+      ],
+      "uh": "Informatief: neutraal; overtuigend: naar mening of actie."
      },
      {
-      "v": "Hoe noteer je bij luisteren naar een lezing effectief de hoofdpunten?",
+      "v": "Welke zinsbouw hoort bij een formeel register?",
       "o": [
-       "Alles woordelijk opschrijven",
-       "Signaalwoorden noteren en kernwoorden per punt, niet hele zinnen",
-       "Alleen de voorbeelden noteren",
-       "Niets opschrijven en vertrouwen op geheugen"
+       "straattaal en emoji",
+       "volledige zinnen, de u-vorm en geen afkortingen",
+       "losse woorden",
+       "alleen uitroepen"
       ],
       "c": 1,
-      "u": "Effectief notities: luister op signaalwoorden (ten eerste, dus, echter, het belangrijkste is), schrijf kernwoorden en steekwoorden, geen hele zinnen. Na afloop aanvullen terwijl het nog vers is."
-     },
-     {
-      "v": "Wanneer is een presentatie \"informatief\" en wanneer \"overtuigend\"?",
-      "o": [
-       "Informatief informeert neutraal; overtuigend zet aan tot een mening of actie",
-       "Ze zijn hetzelfde zolang je feiten gebruikt",
-       "Informatief is altijd mondeling, overtuigend altijd schriftelijk",
-       "Overtuigend betekent altijd dat je emoties gebruikt"
+      "d": 2,
+      "u": "Formeel is verzorgd en volledig.",
+      "uo": [
+       "Nee, dat is informeel.",
+       "Klopt: formeel is verzorgd en volledig.",
+       "Nee, dat is te los.",
+       "Nee, dat is geen nette taal."
       ],
-      "c": 0,
-      "u": "Doel bepaalt de soort: informatief licht toe en geeft kennis. Overtuigend neemt expliciet een standpunt in en probeert het publiek te overtuigen."
-     },
-     {
-      "v": "Welke zinsbouw hoort bij formeel register?",
-      "o": [
-       "Korte zinnen met \"je\" en \"ze\" en spreektaal",
-       "Volledige zinnen, \"u\" als aansprekvorm, geen stopwoorden, geen afkortingen",
-       "Veel stopwoorden zoals \"eigenlijk\", \"gewoon\" en \"zeg maar\"",
-       "Aanzetten met \"Ja nee\" of \"Zeg\""
-      ],
-      "c": 1,
-      "u": "Formeel: u, mevrouw/meneer, ABN, volledige zinnen, professioneel vocabulaire. Informeel: je/jij, stopwoorden, spreektaal, afkortingen."
+      "uh": "Formeel register: volledige zinnen, u-vorm."
      },
      {
       "v": "Wat is het doel van het slotpleidooi in een debat?",
       "o": [
-       "De sterkste argumenten samenvatten en de jury overtuigen",
-       "Nieuwe argumenten inbrengen die nog niet besproken zijn",
-       "De tegenpartij persoonlijk aanvallen",
-       "De stelling opnieuw voorlezen"
-      ],
-      "c": 0,
-      "u": "Slotpleidooi: geen nieuwe argumenten, maar de krachtigste punten herhalen en de zwakste tegenargumenten benoemen. Eindig met een krachtige conclusie."
-     },
-     {
-      "v": "Welk non-verbaal gedrag versterkt de geloofwaardigheid van een spreker het meest?",
-      "o": [
-       "Oogcontact houden met het publiek",
-       "Snel spreken om meer inhoud te kunnen behandelen",
-       "Achterover leunen om ontspannen over te komen",
-       "Aantekeningen voorlezen voor nauwkeurigheid"
-      ],
-      "c": 0,
-      "u": "Oogcontact laat zien dat je de stof beheerst en bouwt verbinding met het publiek. Snel spreken, voorlezen of afwijkend lichaamshouding verminderen de geloofwaardigheid."
-     },
-     {
-      "v": "Wat betekent «Register»?",
-      "o": [
-       "je valt de persoon aan i.p.v. het argument",
-       "een korte weergave van de kern van een tekst",
-       "mening van een deskundige",
-       "de mate van formeel taalgebruik"
-      ],
-      "c": 3,
-      "u": "«Register» betekent: de mate van formeel taalgebruik.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de mate van formeel taalgebruik\"?",
-      "o": [
-       "Drogredenen",
-       "Register",
-       "Non-verbaal",
-       "Metafoor"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Register»: de mate van formeel taalgebruik.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de mate van formeel taalgebruik\"?",
-      "o": [
-       "Debat",
-       "Presentatiestructuur",
-       "Spreekdoel",
-       "Register"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Register»: de mate van formeel taalgebruik.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Register» in?",
-      "o": [
-       "informeren, overtuigen of activeren",
-       "houding, oogcontact en stem",
-       "inleiding, kern, slot",
-       "de mate van formeel taalgebruik"
-      ],
-      "c": 3,
-      "u": "«Register» betekent: de mate van formeel taalgebruik.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Spreekdoel»?",
-      "o": [
-       "mening van een deskundige",
-       "het standpunt herhalen als argument",
-       "betoog, beschouwing, uiteenzetting",
-       "informeren, overtuigen of activeren"
-      ],
-      "c": 3,
-      "u": "«Spreekdoel» betekent: informeren, overtuigen of activeren.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"informeren, overtuigen of activeren\"?",
-      "o": [
-       "Alineaverband",
-       "Spreekdoel",
-       "Modernisme (20e e.)",
-       "Overhaaste generalisatie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Spreekdoel»: informeren, overtuigen of activeren.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"informeren, overtuigen of activeren\"?",
-      "o": [
-       "Presentatiestructuur",
-       "Debat",
-       "Weerlegging",
-       "Spreekdoel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Spreekdoel»: informeren, overtuigen of activeren.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Spreekdoel» in?",
-      "o": [
-       "inleiding, kern, slot",
-       "informeren, overtuigen of activeren",
-       "aantonen dat een argument niet klopt",
-       "houding, oogcontact en stem"
-      ],
-      "c": 1,
-      "u": "«Spreekdoel» betekent: informeren, overtuigen of activeren.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Debat»?",
-      "o": [
-       "ten eerste, bovendien, ook, daarnaast",
-       "een gestructureerde woordenstrijd",
-       "inleiding, kern, slot",
-       "voorbeeld, autoriteit, gevolg, vergelijking"
-      ],
-      "c": 1,
-      "u": "«Debat» betekent: een gestructureerde woordenstrijd.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een gestructureerde woordenstrijd\"?",
-      "o": [
-       "Register & stijl",
-       "Signaalwoorden",
-       "Debat",
-       "Alwetend"
+       "de tegenstander uitlachen",
+       "een nieuw onderwerp aansnijden",
+       "de sterkste argumenten samenvatten en de jury overtuigen",
+       "de tijd rekken"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Debat»: een gestructureerde woordenstrijd.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een gestructureerde woordenstrijd\"?",
-      "o": [
-       "Non-verbaal",
-       "Debat",
-       "Weerlegging",
-       "Register"
+      "d": 3,
+      "u": "Je bundelt je sterkste punten en overtuigt.",
+      "uo": [
+       "Nee, dat is onbeleefd.",
+       "Nee, dat hoort niet aan het eind.",
+       "Klopt: je bundelt je sterkste punten en overtuigt.",
+       "Nee, dat is geen doel."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Debat»: een gestructureerde woordenstrijd.",
-      "d": 3
+      "uh": "Slotpleidooi: sterkste argumenten samenvatten."
      },
      {
-      "v": "Wat houdt «Debat» in?",
+      "v": "Wat is non-verbale communicatie?",
       "o": [
-       "houding, oogcontact en stem",
-       "aantonen dat een argument niet klopt",
-       "inleiding, kern, slot",
-       "een gestructureerde woordenstrijd"
+       "de titel van je presentatie",
+       "de woorden die je kiest",
+       "de lengte van je zinnen",
+       "communicatie via houding, gebaren en oogcontact"
       ],
       "c": 3,
-      "u": "«Debat» betekent: een gestructureerde woordenstrijd.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Non-verbaal»?",
-      "o": [
-       "betoog, beschouwing, uiteenzetting",
-       "houding, oogcontact en stem",
-       "een beeld zonder de woorden als of zoals",
-       "met \"als\"/\"zoals\"zo sterk als een beer"
+      "d": 2,
+      "u": "Lichaamstaal is non-verbaal.",
+      "uo": [
+       "Nee, dat is een kop.",
+       "Nee, woorden zijn verbaal.",
+       "Nee, dat is zinsbouw.",
+       "Klopt: lichaamstaal is non-verbaal."
       ],
-      "c": 1,
-      "u": "«Non-verbaal» betekent: houding, oogcontact en stem.",
-      "d": 1
+      "uh": "Non-verbaal: houding, gebaren, oogcontact."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"houding, oogcontact en stem\"?",
+      "v": "Wat doe je bij actief luisteren?",
       "o": [
-       "Non-verbaal",
-       "Tekstverbanden",
-       "Selecteren",
-       "Stelling & argumenten"
+       "meedenken en per punt kernwoorden noteren",
+       "wachten tot je aan de beurt bent",
+       "alleen knikken",
+       "meteen je mening geven"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Non-verbaal»: houding, oogcontact en stem.",
-      "d": 2
+      "d": 2,
+      "u": "Je verwerkt actief wat de spreker zegt.",
+      "uo": [
+       "Klopt: je verwerkt actief wat de spreker zegt.",
+       "Nee, dat is passief.",
+       "Nee, dat is te weinig.",
+       "Nee, eerst luisteren."
+      ],
+      "uh": "Actief luisteren: meedenken en kern noteren."
      },
      {
-      "v": "Welke term past bij: \"houding, oogcontact en stem\"?",
+      "v": "Waarmee begint een goede presentatie?",
       "o": [
-       "Debat",
-       "Weerlegging",
-       "Non-verbaal",
+       "met de conclusie",
+       "met een inleiding die het onderwerp aankondigt",
+       "met een pauze",
+       "met vragen uit het publiek"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De inleiding opent en trekt de aandacht.",
+      "uo": [
+       "Nee, dat komt aan het eind.",
+       "Klopt: de inleiding opent en trekt de aandacht.",
+       "Nee, dat is geen opening.",
+       "Nee, dat komt meestal later."
+      ],
+      "uh": "Presentatie begint met de inleiding."
+     },
+     {
+      "v": "Met je houding en gebaren zeg je ook iets. Welk begrip past hierbij?",
+      "o": [
+       "Informatieve presentatie",
+       "Formeel register",
+       "Non-verbale communicatie",
+       "Actief luisteren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Met je houding en gebaren zeg je ook iets. Dat past bij Non-verbale communicatie: lichaamstaal.",
+      "uo": [
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Nee, dat hoort bij Formeel register: volledige zinnen, u-vorm.",
+       "Klopt: lichaamstaal.",
+       "Nee, dat hoort bij Actief luisteren: kernwoorden noteren."
+      ],
+      "uh": "Non-verbale communicatie: lichaamstaal."
+     },
+     {
+      "v": "Je kijkt je publiek aan om geloofwaardig over te komen. Om welk begrip gaat het?",
+      "o": [
+       "Debatargument",
+       "Informatieve presentatie",
+       "Register",
+       "Oogcontact"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Je kijkt je publiek aan om geloofwaardig over te komen. Dat past bij Oogcontact: publiek aankijken.",
+      "uo": [
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs.",
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Nee, dat hoort bij Register: mate van formaliteit.",
+       "Klopt: publiek aankijken."
+      ],
+      "uh": "Oogcontact: publiek aankijken."
+     },
+     {
+      "v": "Het aankijken van het publiek. Welk begrip herken je hier?",
+      "o": [
+       "Oogcontact",
+       "Informatieve presentatie",
+       "Register",
+       "Debatargument"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het aankijken van het publiek. Dat past bij Oogcontact: publiek aankijken.",
+      "uo": [
+       "Klopt: publiek aankijken.",
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Nee, dat hoort bij Register: mate van formaliteit.",
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs."
+      ],
+      "uh": "Oogcontact: publiek aankijken."
+     },
+     {
+      "v": "Meedenkend luisteren en kernwoorden noteren. Wat is hier aan de hand?",
+      "o": [
+       "Debatargument",
+       "Actief luisteren",
+       "Non-verbale communicatie",
+       "Presentatiestructuur"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Meedenkend luisteren en kernwoorden noteren. Dat past bij Actief luisteren: kernwoorden noteren.",
+      "uo": [
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs.",
+       "Klopt: kernwoorden noteren.",
+       "Nee, dat hoort bij Non-verbale communicatie: lichaamstaal.",
+       "Nee, dat hoort bij Presentatiestructuur: inleiding, kern, conclusie."
+      ],
+      "uh": "Actief luisteren: kernwoorden noteren."
+     },
+     {
+      "v": "Je noteert per punt de kernwoorden en denkt mee. Welk begrip past hierbij?",
+      "o": [
+       "Oogcontact",
+       "Register",
+       "Actief luisteren",
        "Presentatiestructuur"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Non-verbaal»: houding, oogcontact en stem.",
-      "d": 3
+      "d": 3,
+      "u": "Je noteert per punt de kernwoorden en denkt mee. Dat past bij Actief luisteren: kernwoorden noteren.",
+      "uo": [
+       "Nee, dat hoort bij Oogcontact: publiek aankijken.",
+       "Nee, dat hoort bij Register: mate van formaliteit.",
+       "Klopt: kernwoorden noteren.",
+       "Nee, dat hoort bij Presentatiestructuur: inleiding, kern, conclusie."
+      ],
+      "uh": "Actief luisteren: kernwoorden noteren."
      },
      {
-      "v": "Wat houdt «Non-verbaal» in?",
+      "v": "De afsluiting die de argumenten samenvat. Om welk begrip gaat het?",
       "o": [
-       "houding, oogcontact en stem",
-       "de mate van formeel taalgebruik",
-       "aantonen dat een argument niet klopt",
-       "informeren, overtuigen of activeren"
+       "Register",
+       "Formeel register",
+       "Overtuigende presentatie",
+       "Slotpleidooi"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De afsluiting die de argumenten samenvat. Dat past bij Slotpleidooi: argumenten samenvatten.",
+      "uo": [
+       "Nee, dat hoort bij Register: mate van formaliteit.",
+       "Nee, dat hoort bij Formeel register: volledige zinnen, u-vorm.",
+       "Nee, dat hoort bij Overtuigende presentatie: zet aan tot mening of actie.",
+       "Klopt: argumenten samenvatten."
+      ],
+      "uh": "Slotpleidooi: argumenten samenvatten."
+     },
+     {
+      "v": "Een presentatie die tot een mening of actie aanzet. Welk begrip herken je hier?",
+      "o": [
+       "Overtuigende presentatie",
+       "Informatieve presentatie",
+       "Non-verbale communicatie",
+       "Debatargument"
       ],
       "c": 0,
-      "u": "«Non-verbaal» betekent: houding, oogcontact en stem.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Weerlegging»?",
-      "o": [
-       "aantonen dat een argument niet klopt",
-       "bijvoorbeeld, zoals, namelijk",
-       "verteller weet alles, ook gedachten van iedereen",
-       "feitelijk en zonder mening"
+      "d": 3,
+      "u": "Een presentatie die tot een mening of actie aanzet. Dat past bij Overtuigende presentatie: zet aan tot mening of actie.",
+      "uo": [
+       "Klopt: zet aan tot mening of actie.",
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Nee, dat hoort bij Non-verbale communicatie: lichaamstaal.",
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs."
       ],
-      "c": 0,
-      "u": "«Weerlegging» betekent: aantonen dat een argument niet klopt.",
-      "d": 1
+      "uh": "Overtuigende presentatie: zet aan tot mening of actie."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"aantonen dat een argument niet klopt\"?",
+      "v": "Je zet het publiek aan om zonnepanelen te kopen. Wat is hier aan de hand?",
       "o": [
-       "Hyperbool",
-       "Alwetend",
-       "Weerlegging",
-       "Stelling & argumenten"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Weerlegging»: aantonen dat een argument niet klopt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"aantonen dat een argument niet klopt\"?",
-      "o": [
-       "Weerlegging",
-       "Non-verbaal",
-       "Debat",
-       "Spreekdoel"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Weerlegging»: aantonen dat een argument niet klopt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Weerlegging» in?",
-      "o": [
-       "houding, oogcontact en stem",
-       "aantonen dat een argument niet klopt",
-       "informeren, overtuigen of activeren",
-       "inleiding, kern, slot"
-      ],
-      "c": 1,
-      "u": "«Weerlegging» betekent: aantonen dat een argument niet klopt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Presentatiestructuur»?",
-      "o": [
-       "inleiding, kern, slot",
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "een tekst die een kwestie afweegt",
-       "hoofdzaken houden, bijzaken schrappen"
-      ],
-      "c": 0,
-      "u": "«Presentatiestructuur» betekent: inleiding, kern, slot.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"inleiding, kern, slot\"?",
-      "o": [
-       "Vergelijking",
-       "Presentatiestructuur",
-       "Debat",
-       "Woordenlimiet"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Presentatiestructuur»: inleiding, kern, slot.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"inleiding, kern, slot\"?",
-      "o": [
-       "Spreekdoel",
-       "Presentatiestructuur",
-       "Non-verbaal",
+       "Debatargument",
+       "Overtuigende presentatie",
+       "Formeel register",
        "Register"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Presentatiestructuur»: inleiding, kern, slot.",
-      "d": 3
+      "d": 1,
+      "u": "Je zet het publiek aan om zonnepanelen te kopen. Dat past bij Overtuigende presentatie: zet aan tot mening of actie.",
+      "uo": [
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs.",
+       "Klopt: zet aan tot mening of actie.",
+       "Nee, dat hoort bij Formeel register: volledige zinnen, u-vorm.",
+       "Nee, dat hoort bij Register: mate van formaliteit."
+      ],
+      "uh": "Overtuigende presentatie: zet aan tot mening of actie."
      },
      {
-      "v": "Wat houdt «Presentatiestructuur» in?",
+      "v": "Nette taal met de u-vorm. Welk begrip past hierbij?",
       "o": [
-       "inleiding, kern, slot",
-       "aantonen dat een argument niet klopt",
-       "de mate van formeel taalgebruik",
-       "een gestructureerde woordenstrijd"
+       "Register",
+       "Informatieve presentatie",
+       "Formeel register",
+       "Presentatiestructuur"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Nette taal met de u-vorm. Dat past bij Formeel register: volledige zinnen, u-vorm.",
+      "uo": [
+       "Nee, dat hoort bij Register: mate van formaliteit.",
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Klopt: volledige zinnen, u-vorm.",
+       "Nee, dat hoort bij Presentatiestructuur: inleiding, kern, conclusie."
+      ],
+      "uh": "Formeel register: volledige zinnen, u-vorm."
+     },
+     {
+      "v": "In een presentatie voor de jury gebruik je nette, volledige zinnen. Om welk begrip gaat het?",
+      "o": [
+       "Presentatiestructuur",
+       "Debatargument",
+       "Non-verbale communicatie",
+       "Formeel register"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In een presentatie voor de jury gebruik je nette, volledige zinnen. Dat past bij Formeel register: volledige zinnen, u-vorm.",
+      "uo": [
+       "Nee, dat hoort bij Presentatiestructuur: inleiding, kern, conclusie.",
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs.",
+       "Nee, dat hoort bij Non-verbale communicatie: lichaamstaal.",
+       "Klopt: volledige zinnen, u-vorm."
+      ],
+      "uh": "Formeel register: volledige zinnen, u-vorm."
+     },
+     {
+      "v": "Een argument met standpunt, redenering en bewijs. Welk begrip herken je hier?",
+      "o": [
+       "Debatargument",
+       "Slotpleidooi",
+       "Register",
+       "Overtuigende presentatie"
       ],
       "c": 0,
-      "u": "«Presentatiestructuur» betekent: inleiding, kern, slot.",
-      "d": 3
+      "d": 3,
+      "u": "Een argument met standpunt, redenering en bewijs. Dat past bij Debatargument: standpunt, redenering, bewijs.",
+      "uo": [
+       "Klopt: standpunt, redenering, bewijs.",
+       "Nee, dat hoort bij Slotpleidooi: argumenten samenvatten.",
+       "Nee, dat hoort bij Register: mate van formaliteit.",
+       "Nee, dat hoort bij Overtuigende presentatie: zet aan tot mening of actie."
+      ],
+      "uh": "Debatargument: standpunt, redenering, bewijs."
+     },
+     {
+      "v": "De mate van formaliteit van je taal. Wat is hier aan de hand?",
+      "o": [
+       "Presentatiestructuur",
+       "Register",
+       "Informatieve presentatie",
+       "Oogcontact"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De mate van formaliteit van je taal. Dat past bij Register: mate van formaliteit.",
+      "uo": [
+       "Nee, dat hoort bij Presentatiestructuur: inleiding, kern, conclusie.",
+       "Klopt: mate van formaliteit.",
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Nee, dat hoort bij Oogcontact: publiek aankijken."
+      ],
+      "uh": "Register: mate van formaliteit."
+     },
+     {
+      "v": "De opbouw van een goede presentatie. Welk begrip past hierbij?",
+      "o": [
+       "Informatieve presentatie",
+       "Debatargument",
+       "Presentatiestructuur",
+       "Overtuigende presentatie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De opbouw van een goede presentatie. Dat past bij Presentatiestructuur: inleiding, kern, conclusie.",
+      "uo": [
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs.",
+       "Klopt: inleiding, kern, conclusie.",
+       "Nee, dat hoort bij Overtuigende presentatie: zet aan tot mening of actie."
+      ],
+      "uh": "Presentatiestructuur: inleiding, kern, conclusie."
+     },
+     {
+      "v": "Aan het eind van het debat vat je je sterkste argumenten samen. Om welk begrip gaat het?",
+      "o": [
+       "Formeel register",
+       "Debatargument",
+       "Overtuigende presentatie",
+       "Slotpleidooi"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Aan het eind van het debat vat je je sterkste argumenten samen. Dat past bij Slotpleidooi: argumenten samenvatten.",
+      "uo": [
+       "Nee, dat hoort bij Formeel register: volledige zinnen, u-vorm.",
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs.",
+       "Nee, dat hoort bij Overtuigende presentatie: zet aan tot mening of actie.",
+       "Klopt: argumenten samenvatten."
+      ],
+      "uh": "Slotpleidooi: argumenten samenvatten."
+     },
+     {
+      "v": "Communicatie via lichaamstaal. Welk begrip herken je hier?",
+      "o": [
+       "Non-verbale communicatie",
+       "Formeel register",
+       "Informatieve presentatie",
+       "Actief luisteren"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Communicatie via lichaamstaal. Dat past bij Non-verbale communicatie: lichaamstaal.",
+      "uo": [
+       "Klopt: lichaamstaal.",
+       "Nee, dat hoort bij Formeel register: volledige zinnen, u-vorm.",
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Nee, dat hoort bij Actief luisteren: kernwoorden noteren."
+      ],
+      "uh": "Non-verbale communicatie: lichaamstaal."
+     },
+     {
+      "v": "Een presentatie die neutraal informeert. Wat is hier aan de hand?",
+      "o": [
+       "Overtuigende presentatie",
+       "Informatieve presentatie",
+       "Slotpleidooi",
+       "Presentatiestructuur"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een presentatie die neutraal informeert. Dat past bij Informatieve presentatie: informeert neutraal.",
+      "uo": [
+       "Nee, dat hoort bij Overtuigende presentatie: zet aan tot mening of actie.",
+       "Klopt: informeert neutraal.",
+       "Nee, dat hoort bij Slotpleidooi: argumenten samenvatten.",
+       "Nee, dat hoort bij Presentatiestructuur: inleiding, kern, conclusie."
+      ],
+      "uh": "Informatieve presentatie: informeert neutraal."
+     },
+     {
+      "v": "Je presentatie heeft een inleiding, een kern en een conclusie. Welk begrip past hierbij?",
+      "o": [
+       "Informatieve presentatie",
+       "Debatargument",
+       "Presentatiestructuur",
+       "Non-verbale communicatie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je presentatie heeft een inleiding, een kern en een conclusie. Dat past bij Presentatiestructuur: inleiding, kern, conclusie.",
+      "uo": [
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs.",
+       "Klopt: inleiding, kern, conclusie.",
+       "Nee, dat hoort bij Non-verbale communicatie: lichaamstaal."
+      ],
+      "uh": "Presentatiestructuur: inleiding, kern, conclusie."
+     },
+     {
+      "v": "Je legt neutraal uit hoe zonnepanelen werken. Om welk begrip gaat het?",
+      "o": [
+       "Register",
+       "Debatargument",
+       "Formeel register",
+       "Informatieve presentatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Je legt neutraal uit hoe zonnepanelen werken. Dat past bij Informatieve presentatie: informeert neutraal.",
+      "uo": [
+       "Nee, dat hoort bij Register: mate van formaliteit.",
+       "Nee, dat hoort bij Debatargument: standpunt, redenering, bewijs.",
+       "Nee, dat hoort bij Formeel register: volledige zinnen, u-vorm.",
+       "Klopt: informeert neutraal."
+      ],
+      "uh": "Informatieve presentatie: informeert neutraal."
+     },
+     {
+      "v": "Een sterk argument heeft een standpunt, een redenering en bewijs. Welk begrip herken je hier?",
+      "o": [
+       "Debatargument",
+       "Slotpleidooi",
+       "Oogcontact",
+       "Non-verbale communicatie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een sterk argument heeft een standpunt, een redenering en bewijs. Dat past bij Debatargument: standpunt, redenering, bewijs.",
+      "uo": [
+       "Klopt: standpunt, redenering, bewijs.",
+       "Nee, dat hoort bij Slotpleidooi: argumenten samenvatten.",
+       "Nee, dat hoort bij Oogcontact: publiek aankijken.",
+       "Nee, dat hoort bij Non-verbale communicatie: lichaamstaal."
+      ],
+      "uh": "Debatargument: standpunt, redenering, bewijs."
+     },
+     {
+      "v": "Tegen de jury praat je formeler dan tegen je klasgenoten. Wat is hier aan de hand?",
+      "o": [
+       "Non-verbale communicatie",
+       "Register",
+       "Informatieve presentatie",
+       "Actief luisteren"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Tegen de jury praat je formeler dan tegen je klasgenoten. Dat past bij Register: mate van formaliteit.",
+      "uo": [
+       "Nee, dat hoort bij Non-verbale communicatie: lichaamstaal.",
+       "Klopt: mate van formaliteit.",
+       "Nee, dat hoort bij Informatieve presentatie: informeert neutraal.",
+       "Nee, dat hoort bij Actief luisteren: kernwoorden noteren."
+      ],
+      "uh": "Register: mate van formaliteit."
      }
     ],
     "oe": [
@@ -1630,28 +1333,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Register",
-      "d": "de mate van formeel taalgebruik"
-     },
-     {
-      "t": "Spreekdoel",
-      "d": "informeren, overtuigen of activeren"
-     },
-     {
-      "t": "Debat",
-      "d": "een gestructureerde woordenstrijd"
-     },
-     {
-      "t": "Non-verbaal",
-      "d": "houding, oogcontact en stem"
-     },
-     {
-      "t": "Weerlegging",
-      "d": "aantonen dat een argument niet klopt"
-     },
-     {
       "t": "Presentatiestructuur",
-      "d": "inleiding, kern, slot"
+      "d": "de opbouw met een inleiding, kern en conclusie"
+     },
+     {
+      "t": "Non-verbale communicatie",
+      "d": "communicatie via houding, gebaren en oogcontact"
+     },
+     {
+      "t": "Debatargument",
+      "d": "een argument met een standpunt, een redenering en bewijs"
+     },
+     {
+      "t": "Formeel register",
+      "d": "nette taal met volledige zinnen en de u-vorm"
+     },
+     {
+      "t": "Informatieve presentatie",
+      "d": "een presentatie die neutraal informeert"
+     },
+     {
+      "t": "Overtuigende presentatie",
+      "d": "een presentatie die aanzet tot een mening of actie"
+     },
+     {
+      "t": "Slotpleidooi",
+      "d": "de afsluiting die de sterkste argumenten samenvat en overtuigt"
+     },
+     {
+      "t": "Oogcontact",
+      "d": "het aankijken van je publiek, versterkt de geloofwaardigheid"
+     },
+     {
+      "t": "Actief luisteren",
+      "d": "meedenken en per punt kernwoorden noteren"
+     },
+     {
+      "t": "Register",
+      "d": "de mate van formaliteit van je taalgebruik"
      }
     ]
    },
@@ -1668,564 +1387,577 @@ var VAKKEN = [
      "Woordkeuze, stijl en coherentie",
      "Gebruik van signaalwoorden"
     ],
-    "sam": "<div class=\"sam-head\">Betoog schrijven</div><ul><li><strong>Structuur betoog</strong>: (1) Inleiding met stelling, (2) Argumenten (elk in eigen alinea: kernzin → bewijs/voorbeeld → uitwerking), (3) Weerlegging tegenargument, (4) Conclusie die de stelling bevestigt.</li><li><strong>Stelling</strong>: concreet, betwistbaar, in één zin. Niet \"roken is slecht\" maar \"roken in openbare ruimtes moet landelijk verboden worden\".</li><li><strong>Argument opbouwen</strong>: kernzin (bewering) → redenering (waarom klopt dit?) → bewijs (cijfer, voorbeeld, autoriteit) → conclusie (link terug naar stelling).</li></ul><div class=\"sam-head\">Alinea en coherentie</div><ul><li><strong>Alinea-structuur</strong>: begin met een kernzin die het hoofdpunt bevat. Werk uit met twee of drie zinnen. Sluit af met een overgangszin naar de volgende alinea.</li><li><strong>Coherentie</strong>: gebruik verwijswoorden (dit, deze, het) en signaalwoorden (bovendien, echter, daarom) om de tekst vloeiend te maken.</li><li><strong>Zakelijke brief</strong>: aanhef (Geachte heer/mevrouw), duidelijk doel in eerste alinea, concrete vraag of actie in laatste alinea, afsluiting (Met vriendelijke groet).</li></ul>",
+    "sam": "<div class=\"sam-intro\">In een <strong>betoog</strong> zet je een <strong>stelling</strong> neer, onderbouw je die met <strong>argumenten</strong> en een heldere <strong>redenering</strong>, en verbind je alles met <strong>signaalwoorden</strong>. Je vermijdt <strong>drogredenen</strong>, kiest het juiste <strong>register</strong> en sluit af met een sterke <strong>conclusie</strong>.</div><div class=\"sam-head\">1. Opbouw van een betoog</div><p>De <strong>stelling</strong> (het standpunt) staat expliciet in de <strong>inleiding</strong>. Elke <strong>alinea</strong> heeft een <strong>kernzin</strong>; de <strong>redenering</strong> legt het verband tussen de kernzin en de stelling uit. De <strong>conclusie</strong> herhaalt het standpunt in andere woorden en benadrukt de kracht van de argumenten.</p><div class=\"sam-head\">2. Signaalwoorden en valkuilen</div><p><strong>Signaalwoorden</strong> markeren verbanden: \"daardoor/waardoor\" (gevolg), \"echter\" (tegenstelling), \"want/omdat\" (reden). Vermijd <strong>drogredenen</strong> zoals het beroep op de massa (\"iedereen weet dat…\"). In een <strong>formele brief</strong> aan een onbekende gebruik je de aanhef \"Geachte heer/mevrouw,\".</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stelling</div><div class=\"sam-definitie-body\">het standpunt dat je in een betoog verdedigt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Redenering</div><div class=\"sam-definitie-body\">de uitleg van het verband tussen de kernzin en de stelling.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Inleiding</div><div class=\"sam-definitie-body\">het begin van de tekst, met de expliciete stelling.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kernzin</div><div class=\"sam-definitie-body\">de zin met het hoofdpunt van een alinea.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Signaalwoord</div><div class=\"sam-definitie-body\">een woord dat het verband tussen zinnen aangeeft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Drogreden</div><div class=\"sam-definitie-body\">een argument dat schijnbaar geldig is maar niet klopt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Formele brief</div><div class=\"sam-definitie-body\">een nette brief met de aanhef \"Geachte heer/mevrouw,\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Conclusie</div><div class=\"sam-definitie-body\">de afsluiting die het standpunt herhaalt en de argumenten benadrukt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Alinea</div><div class=\"sam-definitie-body\">een tekstdeel over één deelonderwerp.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Argument</div><div class=\"sam-definitie-body\">een reden die de stelling onderbouwt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Stelling»</b> is het verdedigde standpunt, terwijl <b>«Redenering»</b> verklaart het verband is. <b>«Inleiding»</b> is begin met de stelling, terwijl <b>«Conclusie»</b> herhaalt het standpunt is. <b>«Kernzin»</b> is hoofdpunt van een alinea, terwijl <b>«Alinea»</b> één deelonderwerp is. <b>«Signaalwoord»</b> is geeft verband aan, terwijl <b>«Redenering»</b> verklaart het verband is.</div>",
     "sv": [
      {
-      "v": "Welk signaalwoord geeft een oorzaak-gevolg relatie aan?",
+      "v": "Welk signaalwoord geeft een oorzaak-gevolgrelatie aan?",
       "o": [
-       "Daardoor / waardoor / als gevolg hiervan",
-       "Echter / toch / maar",
-       "Bovendien / ook / tevens",
-       "Ten eerste / vervolgens / ten slotte"
+       "daardoor / waardoor / als gevolg hiervan",
+       "echter",
+       "bijvoorbeeld",
+       "ten eerste"
       ],
       "c": 0,
-      "u": "Oorzaak-gevolg: daardoor, waardoor, dus, vandaar, als gevolg hiervan. Tegenstelling: echter, maar, toch. Toevoeging: bovendien, ook. Volgorde: ten eerste, vervolgens, ten slotte."
+      "d": 2,
+      "u": "Deze woorden leiden een gevolg in.",
+      "uo": [
+       "Klopt: deze woorden leiden een gevolg in.",
+       "Nee, dat is een tegenstelling.",
+       "Nee, dat is een voorbeeld.",
+       "Nee, dat is een opsomming."
+      ],
+      "uh": "\"Daardoor/waardoor\": oorzaak-gevolg."
      },
      {
       "v": "Welk tekstonderdeel bevat de expliciete stelling in een betoog?",
       "o": [
-       "De conclusie",
-       "De inleiding",
-       "Een willekeurige alinea in de kern",
-       "Het slot"
+       "de conclusie",
+       "de inleiding",
+       "een voetnoot",
+       "de titel"
       ],
       "c": 1,
-      "u": "De stelling staat doorgaans aan het einde van de inleiding, na de context. In de conclusie wordt ze herhaald en bevestigd. De kern bevat de argumenten die de stelling onderbouwen."
+      "d": 2,
+      "u": "De stelling staat in de inleiding.",
+      "uo": [
+       "Nee, daar herhaal je haar.",
+       "Klopt: de stelling staat in de inleiding.",
+       "Nee, dat is een terzijde.",
+       "Nee, de titel is niet de stelling."
+      ],
+      "uh": "Stelling: expliciet in de inleiding."
      },
      {
-      "v": "Welk element ontbreekt in deze alinea: \"Scholen moeten verplicht mediawijsheid geven. Jongeren gebruiken veel sociale media.\"",
+      "v": "Welk element ontbreekt: \"Scholen moeten mediawijsheid geven. Jongeren gebruiken veel sociale media.\"?",
       "o": [
-       "Een kernzin",
-       "Een redenering die het verband verklaart",
-       "Een conclusie",
-       "Een signaalwoord voor volgorde"
+       "een titel",
+       "een kernzin",
+       "een redenering die het verband verklaart",
+       "een signaalwoord van tijd"
       ],
-      "c": 1,
-      "u": "Kernzin (standpunt) is aanwezig. Maar de uitwerking mist de redenering: waaróm leidt veel gebruik van sociale media tot de noodzaak van onderwijs? De causale schakel ontbreekt."
+      "c": 2,
+      "d": 3,
+      "u": "Het verband tussen beide zinnen wordt niet uitgelegd.",
+      "uo": [
+       "Nee, een titel is geen alinea-element.",
+       "Nee, de eerste zin is de kernzin.",
+       "Klopt: het verband tussen beide zinnen wordt niet uitgelegd.",
+       "Nee, tijd is hier niet het probleem."
+      ],
+      "uh": "Zonder redenering ontbreekt het verband."
      },
      {
       "v": "Wat is de juiste aanhef van een formele brief aan een onbekende persoon?",
       "o": [
-       "Geachte heer/mevrouw,",
-       "Hey,",
-       "Hallo,",
-       "Beste meneer/mevrouw,"
-      ],
-      "c": 0,
-      "u": "\"Geachte heer/mevrouw,\" is de standaard formele aanhef als de naam onbekend is. \"Beste\" is semi-formeel. \"Hey\" of \"Hallo\" zijn informeel en ongeschikt voor een zakelijke brief."
-     },
-     {
-      "v": "Welk deel van een betoogende alinea legt het verband tussen de kernzin en de stelling uit?",
-      "o": [
-       "De redenering",
-       "Het bewijs",
-       "De afsluiting",
-       "De inleiding"
-      ],
-      "c": 0,
-      "u": "Een sterke betoogende alinea heeft: kernzin (standpunt), redenering (waarom?), bewijs (feit/voorbeeld) en afsluiting. De redenering verbindt het bewijs met de stelling."
-     },
-     {
-      "v": "Welke fout is het als je in een betoog schrijft: \"Iedereen weet dat telefoons slecht zijn voor jongeren\"?",
-      "o": [
-       "Drogreden: beroep op de massa",
-       "Een geldige claim die bewijs niet nodig heeft",
-       "Een concessie die de stelling verzwakt",
-       "Een goede kernzin voor een alinea"
-      ],
-      "c": 0,
-      "u": "\"Iedereen weet\" is een beroep op de massa: de claim is niet onderbouwd maar lijkt geldig omdat \"iedereen\" het zegt. Dit is een drogreden die de lezer moet overtuigen zonder echt bewijs."
-     },
-     {
-      "v": "Wat is het kenmerk van een sterke conclusie in een betoog?",
-      "o": [
-       "Het standpunt herhalen in andere woorden én de kracht van de argumenten benadrukken",
-       "Een nieuw argument toevoegen dat nog niet eerder is besproken",
-       "Beginnen met \"Ten slotte wil ik zeggen dat...\"",
-       "Alleen een samenvatting geven van de argumenten"
-      ],
-      "c": 0,
-      "u": "Een goede conclusie herhaalt het standpunt (niet letterlijk), verwijst naar de sterkste argumenten en kan een oproep tot actie of een blik op de toekomst bevatten. Geen nieuwe argumenten."
-     },
-     {
-      "v": "Wat betekent «Betoog»?",
-      "o": [
-       "een korte weergave van de kern van een tekst",
-       "een tekstdeel over één deelonderwerp",
-       "een overeenkomstig geval",
-       "een tekst die één standpunt verdedigt"
+       "Hey!",
+       "Hoi,",
+       "Beste vriend,",
+       "Geachte heer/mevrouw,"
       ],
       "c": 3,
-      "u": "«Betoog» betekent: een tekst die één standpunt verdedigt.",
-      "d": 1
+      "d": 2,
+      "u": "Bij een onbekende gebruik je deze nette aanhef.",
+      "uo": [
+       "Nee, dat is veel te los.",
+       "Nee, dat is te informeel.",
+       "Nee, je kent de persoon niet.",
+       "Klopt: bij een onbekende gebruik je deze nette aanhef."
+      ],
+      "uh": "Formele brief, onbekende: \"Geachte heer/mevrouw,\"."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een tekst die één standpunt verdedigt\"?",
+      "v": "Welk deel van een betoogende alinea legt het verband tussen kernzin en stelling uit?",
       "o": [
-       "Register",
-       "Betoog",
-       "Verteltijd",
+       "de redenering",
+       "de titel",
+       "het signaalwoord van tijd",
+       "de bijlage"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De redenering verbindt de kernzin met de stelling.",
+      "uo": [
+       "Klopt: de redenering verbindt de kernzin met de stelling.",
+       "Nee, dat is de kop.",
+       "Nee, dat legt geen verband uit.",
+       "Nee, dat is een aanhangsel."
+      ],
+      "uh": "Redenering: verklaart het verband met de stelling."
+     },
+     {
+      "v": "Wat is de fout in: \"Iedereen weet dat telefoons slecht zijn voor jongeren\"?",
+      "o": [
+       "een spelfout",
+       "een drogreden: het beroep op de massa",
+       "een te lange zin",
+       "een ontbrekende titel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "\"iedereen weet\" bewijst niets, het is een drogreden.",
+      "uo": [
+       "Nee, er is geen spelfout.",
+       "Klopt: \"iedereen weet\" bewijst niets, het is een drogreden.",
+       "Nee, de lengte is niet het probleem.",
+       "Nee, dat is geen alinea-element."
+      ],
+      "uh": "Beroep op de massa: een drogreden."
+     },
+     {
+      "v": "Wat kenmerkt een sterke conclusie in een betoog?",
+      "o": [
+       "een grap maken",
+       "een nieuw argument toevoegen",
+       "het standpunt in andere woorden herhalen én de kracht van de argumenten benadrukken",
+       "de tekst abrupt stoppen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je bundelt en versterkt, zonder nieuw materiaal.",
+      "uo": [
+       "Nee, dat verzwakt de conclusie.",
+       "Nee, nieuwe argumenten horen in de kern.",
+       "Klopt: je bundelt en versterkt, zonder nieuw materiaal.",
+       "Nee, dat is geen afronding."
+      ],
+      "uh": "Conclusie: standpunt herhalen en argumenten benadrukken."
+     },
+     {
+      "v": "Wat is een stelling?",
+      "o": [
+       "een titel",
+       "een controleerbaar feit",
+       "een signaalwoord",
+       "het standpunt dat je verdedigt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De stelling is je te verdedigen standpunt.",
+      "uo": [
+       "Nee, dat is de kop.",
+       "Nee, een feit is controleerbaar.",
+       "Nee, dat markeert een verband.",
+       "Klopt: de stelling is je te verdedigen standpunt."
+      ],
+      "uh": "Stelling: het verdedigde standpunt."
+     },
+     {
+      "v": "Wat is een kernzin?",
+      "o": [
+       "de zin met het hoofdpunt van een alinea",
+       "de langste zin",
+       "de laatste zin van de tekst",
+       "de titel"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De kernzin draagt het hoofdpunt.",
+      "uo": [
+       "Klopt: de kernzin draagt het hoofdpunt.",
+       "Nee, lengte bepaalt het niet.",
+       "Nee, dat kan, maar hoeft niet.",
+       "Nee, dat is de kop."
+      ],
+      "uh": "Kernzin: hoofdpunt van een alinea."
+     },
+     {
+      "v": "Wat is een redenering in een betoog?",
+      "o": [
+       "een willekeurige mening",
+       "de onderbouwing die het verband tussen kernzin en stelling uitlegt",
+       "een spelregel",
+       "een opsomming van feiten zonder verband"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De redenering legt het verband uit.",
+      "uo": [
+       "Nee, dat onderbouwt niets.",
+       "Klopt: de redenering legt het verband uit.",
+       "Nee, dat is geen tekstelement.",
+       "Nee, zonder verband is het geen redenering."
+      ],
+      "uh": "Redenering: onderbouwt het verband."
+     },
+     {
+      "v": "De uitleg die het verband tussen de kernzin en de stelling legt. Welk begrip past hierbij?",
+      "o": [
+       "Argument",
+       "Drogreden",
+       "Redenering",
+       "Kernzin"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De uitleg die het verband tussen de kernzin en de stelling legt. Dat past bij Redenering: verklaart het verband.",
+      "uo": [
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig.",
+       "Klopt: verklaart het verband.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea."
+      ],
+      "uh": "Redenering: verklaart het verband."
+     },
+     {
+      "v": "Aan het eind herhaal je je standpunt en benadruk je je argumenten. Om welk begrip gaat het?",
+      "o": [
+       "Argument",
+       "Kernzin",
+       "Stelling",
+       "Conclusie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Aan het eind herhaal je je standpunt en benadruk je je argumenten. Dat past bij Conclusie: herhaalt het standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Stelling: het verdedigde standpunt.",
+       "Klopt: herhaalt het standpunt."
+      ],
+      "uh": "Conclusie: herhaalt het standpunt."
+     },
+     {
+      "v": "De afsluiting die het standpunt herhaalt. Welk begrip herken je hier?",
+      "o": [
+       "Conclusie",
+       "Kernzin",
+       "Stelling",
+       "Argument"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De afsluiting die het standpunt herhaalt. Dat past bij Conclusie: herhaalt het standpunt.",
+      "uo": [
+       "Klopt: herhaalt het standpunt.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Stelling: het verdedigde standpunt.",
+       "Nee, dat hoort bij Argument: onderbouwt de stelling."
+      ],
+      "uh": "Conclusie: herhaalt het standpunt."
+     },
+     {
+      "v": "Een tekstdeel over één onderwerp. Wat is hier aan de hand?",
+      "o": [
+       "Conclusie",
+       "Alinea",
+       "Argument",
+       "Stelling"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een tekstdeel over één onderwerp. Dat past bij Alinea: één deelonderwerp.",
+      "uo": [
+       "Nee, dat hoort bij Conclusie: herhaalt het standpunt.",
+       "Klopt: één deelonderwerp.",
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Nee, dat hoort bij Stelling: het verdedigde standpunt."
+      ],
+      "uh": "Alinea: één deelonderwerp."
+     },
+     {
+      "v": "Een stukje tekst over één deelonderwerp met een witregel ervoor. Welk begrip past hierbij?",
+      "o": [
+       "Argument",
+       "Conclusie",
+       "Alinea",
+       "Stelling"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een stukje tekst over één deelonderwerp met een witregel ervoor. Dat past bij Alinea: één deelonderwerp.",
+      "uo": [
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Nee, dat hoort bij Conclusie: herhaalt het standpunt.",
+       "Klopt: één deelonderwerp.",
+       "Nee, dat hoort bij Stelling: het verdedigde standpunt."
+      ],
+      "uh": "Alinea: één deelonderwerp."
+     },
+     {
+      "v": "Een nette brief met formele aanhef. Om welk begrip gaat het?",
+      "o": [
+       "Signaalwoord",
+       "Redenering",
+       "Argument",
+       "Formele brief"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een nette brief met formele aanhef. Dat past bij Formele brief: Geachte heer/mevrouw.",
+      "uo": [
+       "Nee, dat hoort bij Signaalwoord: geeft verband aan.",
+       "Nee, dat hoort bij Redenering: verklaart het verband.",
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Klopt: Geachte heer/mevrouw."
+      ],
+      "uh": "Formele brief: Geachte heer/mevrouw."
+     },
+     {
+      "v": "Een schijnbaar geldig maar onjuist argument. Welk begrip herken je hier?",
+      "o": [
+       "Drogreden",
+       "Inleiding",
+       "Stelling",
+       "Alinea"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een schijnbaar geldig maar onjuist argument. Dat past bij Drogreden: schijnbaar geldig.",
+      "uo": [
+       "Klopt: schijnbaar geldig.",
+       "Nee, dat hoort bij Inleiding: begin met de stelling.",
+       "Nee, dat hoort bij Stelling: het verdedigde standpunt.",
+       "Nee, dat hoort bij Alinea: één deelonderwerp."
+      ],
+      "uh": "Drogreden: schijnbaar geldig."
+     },
+     {
+      "v": "Iedereen weet dat, dus het is waar: een schijnargument. Wat is hier aan de hand?",
+      "o": [
+       "Argument",
+       "Drogreden",
+       "Stelling",
+       "Alinea"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Iedereen weet dat, dus het is waar: een schijnargument. Dat past bij Drogreden: schijnbaar geldig.",
+      "uo": [
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Klopt: schijnbaar geldig.",
+       "Nee, dat hoort bij Stelling: het verdedigde standpunt.",
+       "Nee, dat hoort bij Alinea: één deelonderwerp."
+      ],
+      "uh": "Drogreden: schijnbaar geldig."
+     },
+     {
+      "v": "De zin met het hoofdpunt van een alinea. Welk begrip past hierbij?",
+      "o": [
+       "Formele brief",
+       "Drogreden",
+       "Kernzin",
+       "Argument"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De zin met het hoofdpunt van een alinea. Dat past bij Kernzin: hoofdpunt van een alinea.",
+      "uo": [
+       "Nee, dat hoort bij Formele brief: Geachte heer/mevrouw.",
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig.",
+       "Klopt: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Argument: onderbouwt de stelling."
+      ],
+      "uh": "Kernzin: hoofdpunt van een alinea."
+     },
+     {
+      "v": "De ene zin waarin het hoofdpunt van de alinea staat. Om welk begrip gaat het?",
+      "o": [
+       "Argument",
+       "Alinea",
+       "Stelling",
+       "Kernzin"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De ene zin waarin het hoofdpunt van de alinea staat. Dat past bij Kernzin: hoofdpunt van een alinea.",
+      "uo": [
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Nee, dat hoort bij Alinea: één deelonderwerp.",
+       "Nee, dat hoort bij Stelling: het verdedigde standpunt.",
+       "Klopt: hoofdpunt van een alinea."
+      ],
+      "uh": "Kernzin: hoofdpunt van een alinea."
+     },
+     {
+      "v": "Het openingsdeel met de stelling. Welk begrip herken je hier?",
+      "o": [
+       "Inleiding",
+       "Conclusie",
+       "Stelling",
+       "Argument"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het openingsdeel met de stelling. Dat past bij Inleiding: begin met de stelling.",
+      "uo": [
+       "Klopt: begin met de stelling.",
+       "Nee, dat hoort bij Conclusie: herhaalt het standpunt.",
+       "Nee, dat hoort bij Stelling: het verdedigde standpunt.",
+       "Nee, dat hoort bij Argument: onderbouwt de stelling."
+      ],
+      "uh": "Inleiding: begin met de stelling."
+     },
+     {
+      "v": "Een reden die de stelling onderbouwt. Wat is hier aan de hand?",
+      "o": [
+       "Stelling",
+       "Argument",
+       "Kernzin",
+       "Conclusie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een reden die de stelling onderbouwt. Dat past bij Argument: onderbouwt de stelling.",
+      "uo": [
+       "Nee, dat hoort bij Stelling: het verdedigde standpunt.",
+       "Klopt: onderbouwt de stelling.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Conclusie: herhaalt het standpunt."
+      ],
+      "uh": "Argument: onderbouwt de stelling."
+     },
+     {
+      "v": "Het standpunt dat je in een betoog verdedigt. Welk begrip past hierbij?",
+      "o": [
+       "Signaalwoord",
+       "Redenering",
+       "Stelling",
+       "Formele brief"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het standpunt dat je in een betoog verdedigt. Dat past bij Stelling: het verdedigde standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Signaalwoord: geeft verband aan.",
+       "Nee, dat hoort bij Redenering: verklaart het verband.",
+       "Klopt: het verdedigde standpunt.",
+       "Nee, dat hoort bij Formele brief: Geachte heer/mevrouw."
+      ],
+      "uh": "Stelling: het verdedigde standpunt."
+     },
+     {
+      "v": "Een brief aan een onbekende begint met Geachte heer of mevrouw. Om welk begrip gaat het?",
+      "o": [
+       "Signaalwoord",
+       "Redenering",
+       "Argument",
+       "Formele brief"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een brief aan een onbekende begint met Geachte heer of mevrouw. Dat past bij Formele brief: Geachte heer/mevrouw.",
+      "uo": [
+       "Nee, dat hoort bij Signaalwoord: geeft verband aan.",
+       "Nee, dat hoort bij Redenering: verklaart het verband.",
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Klopt: Geachte heer/mevrouw."
+      ],
+      "uh": "Formele brief: Geachte heer/mevrouw."
+     },
+     {
+      "v": "De onderbouwing van het verband. Welk begrip herken je hier?",
+      "o": [
+       "Redenering",
+       "Drogreden",
+       "Argument",
+       "Kernzin"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De onderbouwing van het verband. Dat past bij Redenering: verklaart het verband.",
+      "uo": [
+       "Klopt: verklaart het verband.",
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig.",
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea."
+      ],
+      "uh": "Redenering: verklaart het verband."
+     },
+     {
+      "v": "Een woord dat het verband aangeeft. Wat is hier aan de hand?",
+      "o": [
+       "Redenering",
+       "Signaalwoord",
+       "Kernzin",
+       "Inleiding"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een woord dat het verband aangeeft. Dat past bij Signaalwoord: geeft verband aan.",
+      "uo": [
+       "Nee, dat hoort bij Redenering: verklaart het verband.",
+       "Klopt: geeft verband aan.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Inleiding: begin met de stelling."
+      ],
+      "uh": "Signaalwoord: geeft verband aan."
+     },
+     {
+      "v": "Hij verdedigt dat huiswerk afgeschaft moet worden. Welk begrip past hierbij?",
+      "o": [
+       "Drogreden",
+       "Redenering",
+       "Stelling",
+       "Argument"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Hij verdedigt dat huiswerk afgeschaft moet worden. Dat past bij Stelling: het verdedigde standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig.",
+       "Nee, dat hoort bij Redenering: verklaart het verband.",
+       "Klopt: het verdedigde standpunt.",
+       "Nee, dat hoort bij Argument: onderbouwt de stelling."
+      ],
+      "uh": "Stelling: het verdedigde standpunt."
+     },
+     {
+      "v": "Het woordje daardoor laat zien dat er een gevolg komt. Om welk begrip gaat het?",
+      "o": [
+       "Argument",
+       "Kernzin",
+       "Formele brief",
        "Signaalwoord"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Betoog»: een tekst die één standpunt verdedigt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een tekst die één standpunt verdedigt\"?",
-      "o": [
-       "Structuur",
-       "Stelling & argumenten",
-       "Alinea-opbouw",
-       "Betoog"
-      ],
       "c": 3,
-      "u": "Het juiste begrip is «Betoog»: een tekst die één standpunt verdedigt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Betoog» in?",
-      "o": [
-       "betoog, beschouwing, uiteenzetting",
-       "een tekst die één standpunt verdedigt",
-       "overnemen zonder bronvermelding",
-       "kernzin + uitwerking"
+      "d": 1,
+      "u": "Het woordje daardoor laat zien dat er een gevolg komt. Dat past bij Signaalwoord: geeft verband aan.",
+      "uo": [
+       "Nee, dat hoort bij Argument: onderbouwt de stelling.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Formele brief: Geachte heer/mevrouw.",
+       "Klopt: geeft verband aan."
       ],
-      "c": 1,
-      "u": "«Betoog» betekent: een tekst die één standpunt verdedigt.",
-      "d": 3
+      "uh": "Signaalwoord: geeft verband aan."
      },
      {
-      "v": "Wat betekent «Beschouwing»?",
+      "v": "Het begin van je betoog waarin je de stelling neerzet. Welk begrip herken je hier?",
       "o": [
-       "je valt de persoon aan i.p.v. het argument",
-       "een tekst die een kwestie afweegt",
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "kortom, dus, al met al"
-      ],
-      "c": 1,
-      "u": "«Beschouwing» betekent: een tekst die een kwestie afweegt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een tekst die een kwestie afweegt\"?",
-      "o": [
-       "Toelichting/voorbeeld",
-       "Uiteenzetting",
-       "Stijlfiguren",
-       "Beschouwing"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Beschouwing»: een tekst die een kwestie afweegt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een tekst die een kwestie afweegt\"?",
-      "o": [
-       "Plagiaat",
-       "Beschouwing",
-       "Structuur",
-       "Alinea-opbouw"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Beschouwing»: een tekst die een kwestie afweegt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Beschouwing» in?",
-      "o": [
-       "een tekst die neutraal informeert",
-       "betoog, beschouwing, uiteenzetting",
-       "een tekst die één standpunt verdedigt",
-       "een tekst die een kwestie afweegt"
-      ],
-      "c": 3,
-      "u": "«Beschouwing» betekent: een tekst die een kwestie afweegt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Uiteenzetting»?",
-      "o": [
-       "wijzen het verband aan",
-       "een tekst die neutraal informeert",
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "een korte weergave van de kern van een tekst"
-      ],
-      "c": 1,
-      "u": "«Uiteenzetting» betekent: een tekst die neutraal informeert.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een tekst die neutraal informeert\"?",
-      "o": [
-       "Vergelijking",
-       "Perspectief",
-       "Parafrase",
-       "Uiteenzetting"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Uiteenzetting»: een tekst die neutraal informeert.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een tekst die neutraal informeert\"?",
-      "o": [
-       "Uiteenzetting",
-       "Plagiaat",
-       "Tekstsoorten",
-       "Betoog"
+       "Inleiding",
+       "Conclusie",
+       "Kernzin",
+       "Drogreden"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Uiteenzetting»: een tekst die neutraal informeert.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Uiteenzetting» in?",
-      "o": [
-       "een tekst die neutraal informeert",
-       "mening + onderbouwing",
-       "overnemen zonder bronvermelding",
-       "een tekst die een kwestie afweegt"
+      "d": 2,
+      "u": "Het begin van je betoog waarin je de stelling neerzet. Dat past bij Inleiding: begin met de stelling.",
+      "uo": [
+       "Klopt: begin met de stelling.",
+       "Nee, dat hoort bij Conclusie: herhaalt het standpunt.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig."
       ],
-      "c": 0,
-      "u": "«Uiteenzetting» betekent: een tekst die neutraal informeert.",
-      "d": 3
+      "uh": "Inleiding: begin met de stelling."
      },
      {
-      "v": "Wat betekent «Parafrase»?",
+      "v": "De reden die je stelling ondersteunt. Wat is hier aan de hand?",
       "o": [
-       "iets in eigen woorden weergeven",
-       "een overeenkomstig geval",
-       "het tegenovergestelde bedoelen van wat je zegt",
-       "maar, echter, toch, daarentegen"
-      ],
-      "c": 0,
-      "u": "«Parafrase» betekent: iets in eigen woorden weergeven.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"iets in eigen woorden weergeven\"?",
-      "o": [
-       "Parafrase",
-       "Activeren",
-       "Eigen woorden",
-       "Vergelijking"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Parafrase»: iets in eigen woorden weergeven.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"iets in eigen woorden weergeven\"?",
-      "o": [
-       "Stelling & argumenten",
-       "Parafrase",
-       "Betoog",
-       "Register & stijl"
+       "Drogreden",
+       "Argument",
+       "Kernzin",
+       "Alinea"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Parafrase»: iets in eigen woorden weergeven.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Parafrase» in?",
-      "o": [
-       "overnemen zonder bronvermelding",
-       "inleiding, kern, slot",
-       "formeel, foutloos, helder",
-       "iets in eigen woorden weergeven"
+      "d": 3,
+      "u": "De reden die je stelling ondersteunt. Dat past bij Argument: onderbouwt de stelling.",
+      "uo": [
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig.",
+       "Klopt: onderbouwt de stelling.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Alinea: één deelonderwerp."
       ],
-      "c": 3,
-      "u": "«Parafrase» betekent: iets in eigen woorden weergeven.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Plagiaat»?",
-      "o": [
-       "een terugkerend element in een verhaal",
-       "het centrale idee van een werk",
-       "overnemen zonder bronvermelding",
-       "de gevolgen van iets"
-      ],
-      "c": 2,
-      "u": "«Plagiaat» betekent: overnemen zonder bronvermelding.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"overnemen zonder bronvermelding\"?",
-      "o": [
-       "Perspectief",
-       "Uiteenzetting",
-       "Stijlfiguren",
-       "Plagiaat"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Plagiaat»: overnemen zonder bronvermelding.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"overnemen zonder bronvermelding\"?",
-      "o": [
-       "Plagiaat",
-       "Parafrase",
-       "Betoog",
-       "Stelling & argumenten"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Plagiaat»: overnemen zonder bronvermelding.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Plagiaat» in?",
-      "o": [
-       "mening + onderbouwing",
-       "iets in eigen woorden weergeven",
-       "formeel, foutloos, helder",
-       "overnemen zonder bronvermelding"
-      ],
-      "c": 3,
-      "u": "«Plagiaat» betekent: overnemen zonder bronvermelding.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Tekstsoorten»?",
-      "o": [
-       "inleiding, kern, slot",
-       "betoog, beschouwing, uiteenzetting",
-       "het tegenovergestelde bedoelen van wat je zegt",
-       "feitelijk en zonder mening"
-      ],
-      "c": 1,
-      "u": "«Tekstsoorten» betekent: betoog, beschouwing, uiteenzetting.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"betoog, beschouwing, uiteenzetting\"?",
-      "o": [
-       "Vergelijking",
-       "Tegenstelling",
-       "Tekstsoorten",
-       "Thema"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Tekstsoorten»: betoog, beschouwing, uiteenzetting.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"betoog, beschouwing, uiteenzetting\"?",
-      "o": [
-       "Uiteenzetting",
-       "Stelling & argumenten",
-       "Tekstsoorten",
-       "Parafrase"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Tekstsoorten»: betoog, beschouwing, uiteenzetting.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Tekstsoorten» in?",
-      "o": [
-       "een tekst die een kwestie afweegt",
-       "inleiding, kern, slot",
-       "een tekst die één standpunt verdedigt",
-       "betoog, beschouwing, uiteenzetting"
-      ],
-      "c": 3,
-      "u": "«Tekstsoorten» betekent: betoog, beschouwing, uiteenzetting.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Alinea-opbouw»?",
-      "o": [
-       "door de ogen van één personage, in de derde persoon",
-       "kernzin + uitwerking",
-       "een reden die een standpunt steunt",
-       "als, mits, tenzij"
-      ],
-      "c": 1,
-      "u": "«Alinea-opbouw» betekent: kernzin + uitwerking.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"kernzin + uitwerking\"?",
-      "o": [
-       "Overtuigen",
-       "Presentatiestructuur",
-       "Structuur",
-       "Alinea-opbouw"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Alinea-opbouw»: kernzin + uitwerking.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"kernzin + uitwerking\"?",
-      "o": [
-       "Alinea-opbouw",
-       "Tekstsoorten",
-       "Uiteenzetting",
-       "Stelling & argumenten"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Alinea-opbouw»: kernzin + uitwerking.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alinea-opbouw» in?",
-      "o": [
-       "kernzin + uitwerking",
-       "een tekst die één standpunt verdedigt",
-       "betoog, beschouwing, uiteenzetting",
-       "iets in eigen woorden weergeven"
-      ],
-      "c": 0,
-      "u": "«Alinea-opbouw» betekent: kernzin + uitwerking.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Stelling & argumenten»?",
-      "o": [
-       "de zin met de hoofdgedachte van een alinea",
-       "een woord dat een verband aangeeft",
-       "mening + onderbouwing",
-       "een reden die een standpunt steunt"
-      ],
-      "c": 2,
-      "u": "«Stelling & argumenten» betekent: mening + onderbouwing.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"mening + onderbouwing\"?",
-      "o": [
-       "Aanvaardbaarheid",
-       "Stelling & argumenten",
-       "Cirkelredenering",
-       "Register"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Stelling & argumenten»: mening + onderbouwing.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"mening + onderbouwing\"?",
-      "o": [
-       "Plagiaat",
-       "Tekstsoorten",
-       "Register & stijl",
-       "Stelling & argumenten"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Stelling & argumenten»: mening + onderbouwing.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Stelling & argumenten» in?",
-      "o": [
-       "mening + onderbouwing",
-       "een tekst die een kwestie afweegt",
-       "iets in eigen woorden weergeven",
-       "inleiding, kern, slot"
-      ],
-      "c": 0,
-      "u": "«Stelling & argumenten» betekent: mening + onderbouwing.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Structuur»?",
-      "o": [
-       "\"een BN'er zegt het\" - geen echte deskundige",
-       "een gestructureerde woordenstrijd",
-       "inleiding, kern, slot",
-       "aantonen dat een argument niet klopt"
-      ],
-      "c": 2,
-      "u": "«Structuur» betekent: inleiding, kern, slot.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"inleiding, kern, slot\"?",
-      "o": [
-       "Presentatiestructuur",
-       "Uiteenzetting",
-       "Structuur",
-       "Oorzaak-gevolg"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Structuur»: inleiding, kern, slot.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"inleiding, kern, slot\"?",
-      "o": [
-       "Beschouwing",
-       "Stelling & argumenten",
-       "Structuur",
-       "Uiteenzetting"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Structuur»: inleiding, kern, slot.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Structuur» in?",
-      "o": [
-       "formeel, foutloos, helder",
-       "inleiding, kern, slot",
-       "kernzin + uitwerking",
-       "een tekst die neutraal informeert"
-      ],
-      "c": 1,
-      "u": "«Structuur» betekent: inleiding, kern, slot.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Register & stijl»?",
-      "o": [
-       "flashback, vooruitwijzing",
-       "een gestructureerde woordenstrijd",
-       "formeel, foutloos, helder",
-       "de lezer iets laten doen of tot actie aanzetten"
-      ],
-      "c": 2,
-      "u": "«Register & stijl» betekent: formeel, foutloos, helder.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"formeel, foutloos, helder\"?",
-      "o": [
-       "Register & stijl",
-       "Tekstsoorten",
-       "Modernisme (20e e.)",
-       "Uiteenzetting"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Register & stijl»: formeel, foutloos, helder.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"formeel, foutloos, helder\"?",
-      "o": [
-       "Register & stijl",
-       "Tekstsoorten",
-       "Beschouwing",
-       "Stelling & argumenten"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Register & stijl»: formeel, foutloos, helder.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Register & stijl» in?",
-      "o": [
-       "iets in eigen woorden weergeven",
-       "formeel, foutloos, helder",
-       "kernzin + uitwerking",
-       "mening + onderbouwing"
-      ],
-      "c": 1,
-      "u": "«Register & stijl» betekent: formeel, foutloos, helder.",
-      "d": 3
+      "uh": "Argument: onderbouwt de stelling."
      }
     ],
     "oe": [
@@ -2272,44 +2004,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Betoog",
-      "d": "een tekst die één standpunt verdedigt"
+      "t": "Stelling",
+      "d": "het standpunt dat je in een betoog verdedigt"
      },
      {
-      "t": "Beschouwing",
-      "d": "een tekst die een kwestie afweegt"
+      "t": "Redenering",
+      "d": "de uitleg van het verband tussen de kernzin en de stelling"
      },
      {
-      "t": "Uiteenzetting",
-      "d": "een tekst die neutraal informeert"
+      "t": "Inleiding",
+      "d": "het begin van de tekst, met de expliciete stelling"
      },
      {
-      "t": "Parafrase",
-      "d": "iets in eigen woorden weergeven"
+      "t": "Kernzin",
+      "d": "de zin met het hoofdpunt van een alinea"
      },
      {
-      "t": "Plagiaat",
-      "d": "overnemen zonder bronvermelding"
+      "t": "Signaalwoord",
+      "d": "een woord dat het verband tussen zinnen aangeeft"
      },
      {
-      "t": "Tekstsoorten",
-      "d": "betoog, beschouwing, uiteenzetting"
+      "t": "Drogreden",
+      "d": "een argument dat schijnbaar geldig is maar niet klopt"
      },
      {
-      "t": "Alinea-opbouw",
-      "d": "kernzin + uitwerking"
+      "t": "Formele brief",
+      "d": "een nette brief met de aanhef \"Geachte heer/mevrouw,\""
      },
      {
-      "t": "Stelling & argumenten",
-      "d": "mening + onderbouwing"
+      "t": "Conclusie",
+      "d": "de afsluiting die het standpunt herhaalt en de argumenten benadrukt"
      },
      {
-      "t": "Structuur",
-      "d": "inleiding, kern, slot"
+      "t": "Alinea",
+      "d": "een tekstdeel over één deelonderwerp"
      },
      {
-      "t": "Register & stijl",
-      "d": "formeel, foutloos, helder"
+      "t": "Argument",
+      "d": "een reden die de stelling onderbouwt"
      }
     ]
    },
@@ -2326,586 +2058,577 @@ var VAKKEN = [
      "Lengte en volledigheid beoordelen",
      "Samenvatting beoordelen op kwaliteit"
     ],
-    "sam": "<div class=\"sam-head\">Samenvatten</div><ul><li><strong>Stap 1 - lees globaal</strong>: bepaal het onderwerp en tekstsoort. Wat is het doel van de tekst?</li><li><strong>Stap 2 - kernzinnen</strong>: noteer per alinea de kernzin (de zin die het hoofdpunt bevat). Laat details, voorbeelden en herhalingen weg.</li><li><strong>Stap 3 - schrijf samen</strong>: verbind de kernzinnen met signaalwoorden. Gebruik eigen woorden - kopieer geen zinnen letterlijk.</li><li><strong>Stap 4 - controleer</strong>: is de hoofdgedachte aanwezig? Staan de verhoudingen goed (geen onnodige details)? Is de samenvatting coherent?</li></ul><div class=\"sam-head\">Beoordeling</div><ul><li><strong>Volledigheid</strong>: zijn alle hoofdpunten aanwezig? Ontbreken er essentiële argumenten of conclusies?</li><li><strong>Beknoptheid</strong>: zijn details en herhalingen weggelaten? Is de samenvatting significant korter dan het origineel?</li><li><strong>Eigen woorden</strong>: is de samenvatting een parafrase of een kopie? Eigen formulering toont begrip.</li><li><strong>Coherentie</strong>: loopt de samenvatting logisch? Zijn verbanden tussen de punten duidelijk gemaakt?</li></ul>",
+    "sam": "<div class=\"sam-intro\">Bij <strong>samenvatten</strong> lees je eerst <strong>globaal</strong>, noteer je de <strong>kernzinnen</strong> en schrijf je in eigen woorden de kern op. Een goede samenvatting is <strong>volledig</strong> (alle hoofdpunten), <strong>coherent</strong> (heldere verbanden) en laat de <strong>stelling</strong> niet weg.</div><div class=\"sam-head\">1. Aanpak</div><p>De eerste stap is <strong>globaal lezen</strong> om onderwerp, doel en tekstsoort te bepalen. Daarna noteer je de <strong>kernzinnen</strong> (het hoofdpunt van elke alinea, niet de <strong>details</strong>). De volgorde: globaal lezen → kernzinnen noteren → samenvatting schrijven → controleren.</p><div class=\"sam-head\">2. Kwaliteit</div><p><strong>Volledigheid</strong> betekent dat alle hoofd- en kernpunten aanwezig zijn. <strong>Coherentie</strong> beoordeelt of de onderlinge verbanden duidelijk zijn; gebruik signaalwoorden als \"toch/echter\" (tegenstelling) en \"kortom/concluderend\" (conclusie). Je mag de <strong>stelling</strong> van de auteur niet weglaten, want die draagt de hele tekst. Vermijd vage formuleringen als \"de auteur vindt dit goed\".</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Samenvatten</div><div class=\"sam-definitie-body\">de kern van een tekst in eigen woorden kort weergeven.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Globaal lezen</div><div class=\"sam-definitie-body\">snel lezen om onderwerp, doel en tekstsoort te bepalen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kernzin</div><div class=\"sam-definitie-body\">de zin met het hoofdpunt van een alinea.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Coherentie</div><div class=\"sam-definitie-body\">de duidelijkheid van de onderlinge verbanden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Volledigheid</div><div class=\"sam-definitie-body\">dat alle hoofd- en kernpunten aanwezig zijn.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Detail</div><div class=\"sam-definitie-body\">een bijzaak die een hoofdpunt verduidelijkt of illustreert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stelling</div><div class=\"sam-definitie-body\">het centrale standpunt dat de hele tekst draagt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Signaalwoord</div><div class=\"sam-definitie-body\">een woord dat het verband tussen zinnen aangeeft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hoofdpunt</div><div class=\"sam-definitie-body\">een belangrijk punt dat in de samenvatting moet staan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Objectiviteit</div><div class=\"sam-definitie-body\">zonder eigen mening, trouw aan de brontekst samenvatten.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Samenvatten»</b> is kort en in eigen woorden, terwijl <b>«Globaal lezen»</b> snel lezen voor de kern is. <b>«Globaal lezen»</b> is snel lezen voor de kern, terwijl <b>«Kernzin»</b> hoofdpunt van een alinea is. <b>«Kernzin»</b> is hoofdpunt van een alinea, terwijl <b>«Detail»</b> illustreert een hoofdpunt is. <b>«Coherentie»</b> is duidelijke verbanden, terwijl <b>«Volledigheid»</b> alle hoofdpunten aanwezig is.</div>",
     "sv": [
      {
       "v": "Wat is de eerste stap bij het samenvatten van een tekst?",
       "o": [
-       "Globaal lezen om onderwerp, doel en tekstsoort te bepalen",
-       "Direct beginnen met schrijven",
-       "De eerste en laatste zin van elke alinea noteren",
-       "Alle onbekende woorden opzoeken"
+       "globaal lezen om onderwerp, doel en tekstsoort te bepalen",
+       "meteen de eerste zin overschrijven",
+       "de conclusie gokken",
+       "de tekst inkorten zonder te lezen"
       ],
       "c": 0,
-      "u": "Begin altijd met een globale lezing: wat is het onderwerp? Wat is het doel (informeren, overtuigen)? Welke tekstsoort? Dit bepaalt wat hoofd- en bijzaak is."
+      "d": 2,
+      "u": "Eerst overzicht, dan pas samenvatten.",
+      "uo": [
+       "Klopt: eerst overzicht, dan pas samenvatten.",
+       "Nee, dat is te vroeg.",
+       "Nee, je moet eerst lezen.",
+       "Nee, lezen is noodzakelijk."
+      ],
+      "uh": "Samenvatten begint met globaal lezen."
      },
      {
       "v": "Welk signaalwoord geeft in een samenvatting een tegenstelling aan?",
       "o": [
-       "Bovendien",
-       "Daardoor",
-       "Toch / echter",
-       "Ten eerste"
+       "daardoor",
+       "toch / echter",
+       "kortom",
+       "bijvoorbeeld"
       ],
-      "c": 2,
-      "u": "Tegenstelling: toch, echter, maar, desondanks. Toevoeging: bovendien, ook. Gevolg: daardoor, dus. Volgorde: ten eerste, vervolgens. Signaalwoorden maken een samenvatting coherent."
+      "c": 1,
+      "d": 2,
+      "u": "\"toch/echter\" markeert een tegenstelling.",
+      "uo": [
+       "Nee, dat is een gevolg.",
+       "Klopt: \"toch/echter\" markeert een tegenstelling.",
+       "Nee, dat is een conclusie.",
+       "Nee, dat is een voorbeeld."
+      ],
+      "uh": "\"Toch/echter\": tegenstelling."
      },
      {
-      "v": "Je samenvatting bevat deze zin: \"De auteur vindt dit een goed idee.\" Wat is hier het probleem?",
+      "v": "Wat is het probleem met de zin \"De auteur vindt dit een goed idee\"?",
       "o": [
-       "Te kort",
-       "Geen eigen woorden",
-       "Vage formulering - welk idee? Welke reden geeft de auteur?",
-       "Geen probleem, dit is een goede samenvatting"
+       "er staat een spelfout in",
+       "de zin is te lang",
+       "de formulering is vaag: welk idee, en met welke reden?",
+       "de zin is te formeel"
       ],
       "c": 2,
-      "u": "Een samenvatting moet de inhoud overdragen, niet vaag samenvatten. \"De auteur betoogt dat thuiswerken de productiviteit met 20% verhoogt omdat...\" is informatief. \"De auteur vindt dit goed\" zegt niets."
+      "d": 3,
+      "u": "\"dit\" en \"goed\" zijn te vaag om de kern weer te geven.",
+      "uo": [
+       "Nee, er is geen spelfout.",
+       "Nee, de zin is juist kort.",
+       "Klopt: \"dit\" en \"goed\" zijn te vaag om de kern weer te geven.",
+       "Nee, register is niet het probleem."
+      ],
+      "uh": "Vermijd vage formuleringen in een samenvatting."
      },
      {
       "v": "Welk criterium beoordeelt of de onderlinge verbanden in een samenvatting duidelijk zijn?",
       "o": [
-       "Volledigheid",
-       "Beknoptheid",
-       "Coherentie",
-       "Objectiviteit"
+       "lengte",
+       "volledigheid",
+       "spelling",
+       "coherentie"
       ],
-      "c": 2,
-      "u": "Coherentie = logische samenhang. Signaalwoorden leggen verbanden (oorzaak, tegenstelling, gevolg). Zonder coherentie is een samenvatting een opsomming van losse punten."
+      "c": 3,
+      "d": 3,
+      "u": "Coherentie gaat over de samenhang.",
+      "uo": [
+       "Nee, lengte is geen samenhang.",
+       "Nee, dat gaat over of alles erin staat.",
+       "Nee, dat is een schrijfregel.",
+       "Klopt: coherentie gaat over de samenhang."
+      ],
+      "uh": "Coherentie: duidelijke verbanden."
      },
      {
       "v": "Wat is het verschil tussen een kernzin en een detail in een alinea?",
       "o": [
-       "Kernzin bevat het hoofdpunt; detail verduidelijkt of illustreert dat punt",
-       "Kernzin is altijd de eerste zin; detail is altijd de laatste",
-       "Kernzin bevat een feit; detail een mening",
-       "Ze zijn hetzelfde"
+       "de kernzin bevat het hoofdpunt, het detail verduidelijkt of illustreert dat",
+       "ze zijn hetzelfde",
+       "het detail is het hoofdpunt",
+       "de kernzin is altijd de laatste zin"
       ],
       "c": 0,
-      "u": "De kernzin draagt de boodschap van de alinea. Details (voorbeelden, statistieken, uitleg) ondersteunen die boodschap. Bij het samenvatten houd je de kernzin en laat je de details weg."
+      "d": 3,
+      "u": "Hoofdpunt tegenover illustratie.",
+      "uo": [
+       "Klopt: hoofdpunt tegenover illustratie.",
+       "Nee, ze verschillen.",
+       "Nee, dat is omgedraaid.",
+       "Nee, dat hoeft niet."
+      ],
+      "uh": "Kernzin: hoofdpunt; detail: illustratie."
      },
      {
-      "v": "Welk signaalwoord gebruik je in een samenvatting om een conclusie aan te kondigen?",
+      "v": "Welk signaalwoord kondigt in een samenvatting een conclusie aan?",
       "o": [
-       "Kortom / concluderend / dus",
-       "Bovendien / ook",
-       "Ten eerste / vervolgens",
-       "Echter / toch"
+       "echter",
+       "kortom / concluderend / dus",
+       "ten eerste",
+       "bijvoorbeeld"
       ],
-      "c": 0,
-      "u": "\"Kortom\" en \"concluderend\" signaleren dat de samenvatting naar de eindconclusie gaat. Dit geeft structuur en helpt de lezer begrijpen hoe de tekst eindigt."
+      "c": 1,
+      "d": 2,
+      "u": "Deze woorden leiden een conclusie in.",
+      "uo": [
+       "Nee, dat is een tegenstelling.",
+       "Klopt: deze woorden leiden een conclusie in.",
+       "Nee, dat is een opsomming.",
+       "Nee, dat is een voorbeeld."
+      ],
+      "uh": "\"Kortom/dus\": conclusie."
      },
      {
       "v": "Waarom mag je in een samenvatting de stelling van de auteur niet weglaten?",
       "o": [
-       "Omdat de stelling het centrale standpunt is dat de hele tekst draagt",
-       "Omdat de stelling het langst is",
-       "Omdat de stelling altijd in de eerste zin staat",
-       "Omdat de stelling niet meer mag worden aangepast"
+       "omdat het verboden is",
+       "omdat de stelling altijd het langst is",
+       "omdat de stelling het centrale standpunt is dat de hele tekst draagt",
+       "omdat de stelling grappig is"
       ],
-      "c": 0,
-      "u": "De stelling is de kern van een betoog. Zonder stelling mist de samenvatting de rode draad. Alle argumenten zijn alleen begrijpelijk in relatie tot de stelling."
+      "c": 2,
+      "d": 3,
+      "u": "Zonder de stelling mis je de kern.",
+      "uo": [
+       "Nee, dat is geen reden.",
+       "Nee, lengte doet er niet toe.",
+       "Klopt: zonder de stelling mis je de kern.",
+       "Nee, dat is niet ter zake."
+      ],
+      "uh": "De stelling draagt de tekst, dus laat haar niet weg."
      },
      {
-      "v": "Wat bedoelen we met \"volledigheid\" bij het beoordelen van een samenvatting?",
+      "v": "Wat betekent volledigheid bij het beoordelen van een samenvatting?",
       "o": [
-       "Alle hoofd- en kernpunten van de originele tekst zijn aanwezig",
-       "De samenvatting is even lang als het origineel",
-       "Alle details en voorbeelden zijn meegenomen",
-       "Geen enkel woord is weggelaten"
+       "de zinnen zijn kort",
+       "de samenvatting is even lang als het origineel",
+       "er staan geen spelfouten in",
+       "alle hoofd- en kernpunten van de originele tekst zijn aanwezig"
       ],
-      "c": 0,
-      "u": "Volledigheid = alle essentiële hoofdpunten zijn aanwezig. Niet \"alles\", maar alle argumenten en conclusies die nodig zijn om de boodschap te begrijpen."
+      "c": 3,
+      "d": 3,
+      "u": "Geen belangrijk punt ontbreekt.",
+      "uo": [
+       "Nee, zinslengte is geen maat.",
+       "Nee, een samenvatting is juist korter.",
+       "Nee, dat is spelling.",
+       "Klopt: geen belangrijk punt ontbreekt."
+      ],
+      "uh": "Volledigheid: alle hoofdpunten aanwezig."
      },
      {
       "v": "Welke volgorde is correct bij het schrijven van een samenvatting?",
       "o": [
-       "Globaal lezen → kernzinnen noteren → samenvatting schrijven → controleren",
-       "Direct schrijven → lezen → bijstellen",
-       "Conclusie eerst schrijven → inleiding toevoegen → bewijs zoeken",
-       "Woord voor woord vertalen naar eigen taal"
+       "globaal lezen → kernzinnen noteren → schrijven → controleren",
+       "meteen schrijven → lezen → weggooien",
+       "controleren → lezen → schrijven",
+       "alleen de conclusie overschrijven"
       ],
       "c": 0,
-      "u": "Systematisch aanpak: globaal lezen (overzicht), kernzinnen per alinea noteren, samenvatting schrijven met signaalwoorden, ten slotte controleren op volledigheid en coherentie."
-     },
-     {
-      "v": "Wat betekent «Samenvatting»?",
-      "o": [
-       "een korte weergave van de kern van een tekst",
-       "een reden die een standpunt steunt",
-       "door de ogen van één personage, in de derde persoon",
-       "signaalwoorden behouden"
+      "d": 2,
+      "u": "Dat is de logische volgorde.",
+      "uo": [
+       "Klopt: dat is de logische volgorde.",
+       "Nee, dat is de omgekeerde volgorde.",
+       "Nee, dat klopt niet.",
+       "Nee, dat is te weinig."
       ],
-      "c": 0,
-      "u": "«Samenvatting» betekent: een korte weergave van de kern van een tekst.",
-      "d": 1
+      "uh": "Volgorde: lezen, kernzinnen, schrijven, controleren."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een korte weergave van de kern van een tekst\"?",
+      "v": "Wat is globaal lezen?",
       "o": [
-       "Non-verbaal",
-       "Ironie",
-       "Samenvatting",
-       "Argumentatietypen"
+       "elk woord nauwkeurig lezen",
+       "snel lezen om onderwerp, doel en tekstsoort te bepalen",
+       "alleen de titel lezen",
+       "de tekst overschrijven"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Globaal lezen geeft snel overzicht.",
+      "uo": [
+       "Nee, dat is nauwkeurig lezen.",
+       "Klopt: globaal lezen geeft snel overzicht.",
+       "Nee, de titel alleen is te weinig.",
+       "Nee, dat is kopiëren."
+      ],
+      "uh": "Globaal lezen: snel voor onderwerp, doel en tekstsoort."
+     },
+     {
+      "v": "Je leest de tekst snel door om het onderwerp en doel te bepalen. Welk begrip past hierbij?",
+      "o": [
+       "Stelling",
+       "Volledigheid",
+       "Globaal lezen",
+       "Detail"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Samenvatting»: een korte weergave van de kern van een tekst.",
-      "d": 2
+      "d": 1,
+      "u": "Je leest de tekst snel door om het onderwerp en doel te bepalen. Dat past bij Globaal lezen: snel lezen voor de kern.",
+      "uo": [
+       "Nee, dat hoort bij Stelling: centrale standpunt.",
+       "Nee, dat hoort bij Volledigheid: alle hoofdpunten aanwezig.",
+       "Klopt: snel lezen voor de kern.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt."
+      ],
+      "uh": "Globaal lezen: snel lezen voor de kern."
      },
      {
-      "v": "Welke term past bij: \"een korte weergave van de kern van een tekst\"?",
+      "v": "Het woordje kortom kondigt een conclusie aan. Om welk begrip gaat het?",
+      "o": [
+       "Objectiviteit",
+       "Kernzin",
+       "Detail",
+       "Signaalwoord"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het woordje kortom kondigt een conclusie aan. Dat past bij Signaalwoord: geeft verband aan.",
+      "uo": [
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt.",
+       "Klopt: geeft verband aan."
+      ],
+      "uh": "Signaalwoord: geeft verband aan."
+     },
+     {
+      "v": "Een woord dat het verband aangeeft. Welk begrip herken je hier?",
       "o": [
        "Signaalwoord",
-       "Samenvatting",
-       "Eigen woorden",
-       "Alinea"
+       "Kernzin",
+       "Detail",
+       "Objectiviteit"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Samenvatting»: een korte weergave van de kern van een tekst.",
-      "d": 3
+      "c": 0,
+      "d": 1,
+      "u": "Een woord dat het verband aangeeft. Dat past bij Signaalwoord: geeft verband aan.",
+      "uo": [
+       "Klopt: geeft verband aan.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt.",
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening."
+      ],
+      "uh": "Signaalwoord: geeft verband aan."
      },
      {
-      "v": "Wat houdt «Samenvatting» in?",
-      "o": [
-       "binnen het maximum blijven",
-       "volg de volgorde van de tekst",
-       "een korte weergave van de kern van een tekst",
-       "niet overschrijven, wel correct"
-      ],
-      "c": 2,
-      "u": "«Samenvatting» betekent: een korte weergave van de kern van een tekst.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Kernzin»?",
-      "o": [
-       "wijzen het verband aan",
-       "aantonen dat een argument niet klopt",
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "de zin met de hoofdgedachte van een alinea"
-      ],
-      "c": 3,
-      "u": "«Kernzin» betekent: de zin met de hoofdgedachte van een alinea.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de zin met de hoofdgedachte van een alinea\"?",
-      "o": [
-       "Tekstverbanden",
-       "Eigen woorden",
-       "Verbanden",
-       "Kernzin"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Kernzin»: de zin met de hoofdgedachte van een alinea.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de zin met de hoofdgedachte van een alinea\"?",
+      "v": "Een belangrijk punt van de tekst. Wat is hier aan de hand?",
       "o": [
        "Kernzin",
-       "Alinea",
-       "Samenvatting",
-       "Redundantie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Kernzin»: de zin met de hoofdgedachte van een alinea.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Kernzin» in?",
-      "o": [
-       "binnen het maximum blijven",
-       "de zin met de hoofdgedachte van een alinea",
-       "een korte weergave van de kern van een tekst",
-       "signaalwoorden behouden"
+       "Hoofdpunt",
+       "Samenvatten",
+       "Objectiviteit"
       ],
       "c": 1,
-      "u": "«Kernzin» betekent: de zin met de hoofdgedachte van een alinea.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Redundantie»?",
-      "o": [
-       "overbodige, herhalende informatie",
-       "de mate van formeel taalgebruik",
-       "maar, echter, toch, daarentegen",
-       "\"een BN'er zegt het\" - geen echte deskundige"
+      "d": 1,
+      "u": "Een belangrijk punt van de tekst. Dat past bij Hoofdpunt: belangrijk punt.",
+      "uo": [
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Klopt: belangrijk punt.",
+       "Nee, dat hoort bij Samenvatten: kort en in eigen woorden.",
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening."
       ],
-      "c": 0,
-      "u": "«Redundantie» betekent: overbodige, herhalende informatie.",
-      "d": 1
+      "uh": "Hoofdpunt: belangrijk punt."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"overbodige, herhalende informatie\"?",
+      "v": "Een belangrijk punt dat in de samenvatting hoort. Welk begrip past hierbij?",
       "o": [
-       "Vertelperspectief",
-       "Uiteenzetting",
-       "Redundantie",
-       "Signaalwoord"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Redundantie»: overbodige, herhalende informatie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"overbodige, herhalende informatie\"?",
-      "o": [
-       "Redundantie",
-       "Selecteren",
-       "Eigen woorden",
-       "Signaalwoord"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Redundantie»: overbodige, herhalende informatie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Redundantie» in?",
-      "o": [
-       "volg de volgorde van de tekst",
-       "overbodige, herhalende informatie",
-       "niet overschrijven, wel correct",
-       "signaalwoorden behouden"
-      ],
-      "c": 1,
-      "u": "«Redundantie» betekent: overbodige, herhalende informatie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Signaalwoord»?",
-      "o": [
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens",
-       "een woord dat een verband aangeeft",
-       "een tekst die een kwestie afweegt",
-       "het standpunt herhalen als argument"
-      ],
-      "c": 1,
-      "u": "«Signaalwoord» betekent: een woord dat een verband aangeeft.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een woord dat een verband aangeeft\"?",
-      "o": [
-       "Signaalwoord",
-       "Overhaaste generalisatie",
-       "Presentatiestructuur",
-       "Redundantie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Signaalwoord»: een woord dat een verband aangeeft.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een woord dat een verband aangeeft\"?",
-      "o": [
-       "Samenvatting",
+       "Samenvatten",
        "Kernzin",
-       "Verbanden",
-       "Signaalwoord"
+       "Hoofdpunt",
+       "Objectiviteit"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een belangrijk punt dat in de samenvatting hoort. Dat past bij Hoofdpunt: belangrijk punt.",
+      "uo": [
+       "Nee, dat hoort bij Samenvatten: kort en in eigen woorden.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Klopt: belangrijk punt.",
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening."
+      ],
+      "uh": "Hoofdpunt: belangrijk punt."
+     },
+     {
+      "v": "Het standpunt dat de tekst draagt. Om welk begrip gaat het?",
+      "o": [
+       "Hoofdpunt",
+       "Samenvatten",
+       "Coherentie",
+       "Stelling"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Signaalwoord»: een woord dat een verband aangeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Signaalwoord» in?",
-      "o": [
-       "een woord dat een verband aangeeft",
-       "overbodige, herhalende informatie",
-       "een korte weergave van de kern van een tekst",
-       "signaalwoorden behouden"
+      "d": 1,
+      "u": "Het standpunt dat de tekst draagt. Dat past bij Stelling: centrale standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Hoofdpunt: belangrijk punt.",
+       "Nee, dat hoort bij Samenvatten: kort en in eigen woorden.",
+       "Nee, dat hoort bij Coherentie: duidelijke verbanden.",
+       "Klopt: centrale standpunt."
       ],
-      "c": 0,
-      "u": "«Signaalwoord» betekent: een woord dat een verband aangeeft.",
-      "d": 3
+      "uh": "Stelling: centrale standpunt."
      },
      {
-      "v": "Wat betekent «Alinea»?",
+      "v": "Een bijzaak die een hoofdpunt illustreert. Welk begrip herken je hier?",
       "o": [
-       "een overeenkomstig geval",
-       "de gevolgen van iets",
-       "een tekstdeel over één deelonderwerp",
-       "je valt de persoon aan i.p.v. het argument"
-      ],
-      "c": 2,
-      "u": "«Alinea» betekent: een tekstdeel over één deelonderwerp.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een tekstdeel over één deelonderwerp\"?",
-      "o": [
-       "Oorzaak-gevolg",
-       "Alinea",
-       "Tegenstelling",
-       "Cirkelredenering"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Alinea»: een tekstdeel over één deelonderwerp.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een tekstdeel over één deelonderwerp\"?",
-      "o": [
-       "Woordenlimiet",
-       "Alinea",
-       "Verbanden",
-       "Signaalwoord"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Alinea»: een tekstdeel over één deelonderwerp.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alinea» in?",
-      "o": [
-       "volg de volgorde van de tekst",
-       "de zin met de hoofdgedachte van een alinea",
-       "een tekstdeel over één deelonderwerp",
-       "binnen het maximum blijven"
-      ],
-      "c": 2,
-      "u": "«Alinea» betekent: een tekstdeel over één deelonderwerp.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Selecteren»?",
-      "o": [
-       "maar, echter, toch, daarentegen",
-       "de gevolgen van iets",
-       "hoofdzaken houden, bijzaken schrappen",
-       "formeel, foutloos, helder"
-      ],
-      "c": 2,
-      "u": "«Selecteren» betekent: hoofdzaken houden, bijzaken schrappen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hoofdzaken houden, bijzaken schrappen\"?",
-      "o": [
-       "Selecteren",
-       "Samenvatting",
-       "Oorzaak-gevolg",
-       "Signaalwoorden"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Selecteren»: hoofdzaken houden, bijzaken schrappen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"hoofdzaken houden, bijzaken schrappen\"?",
-      "o": [
-       "Selecteren",
-       "Verbanden",
-       "Structuur",
-       "Signaalwoord"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Selecteren»: hoofdzaken houden, bijzaken schrappen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Selecteren» in?",
-      "o": [
-       "de zin met de hoofdgedachte van een alinea",
-       "hoofdzaken houden, bijzaken schrappen",
-       "een woord dat een verband aangeeft",
-       "overbodige, herhalende informatie"
-      ],
-      "c": 1,
-      "u": "«Selecteren» betekent: hoofdzaken houden, bijzaken schrappen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Structuur»?",
-      "o": [
-       "je valt de persoon aan i.p.v. het argument",
-       "de kernboodschap in één zin",
-       "binnen het maximum blijven",
-       "volg de volgorde van de tekst"
-      ],
-      "c": 3,
-      "u": "«Structuur» betekent: volg de volgorde van de tekst.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"volg de volgorde van de tekst\"?",
-      "o": [
-       "Structuur",
-       "Perspectief",
-       "Voorwaarde",
-       "Ik-perspectief"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Structuur»: volg de volgorde van de tekst.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"volg de volgorde van de tekst\"?",
-      "o": [
-       "Samenvatting",
-       "Structuur",
-       "Woordenlimiet",
-       "Kernzin"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Structuur»: volg de volgorde van de tekst.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Structuur» in?",
-      "o": [
-       "volg de volgorde van de tekst",
-       "een korte weergave van de kern van een tekst",
-       "de zin met de hoofdgedachte van een alinea",
-       "binnen het maximum blijven"
-      ],
-      "c": 0,
-      "u": "«Structuur» betekent: volg de volgorde van de tekst.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Eigen woorden»?",
-      "o": [
-       "niet overschrijven, wel correct",
-       "wijzen het verband aan",
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "iets in eigen woorden weergeven"
-      ],
-      "c": 0,
-      "u": "«Eigen woorden» betekent: niet overschrijven, wel correct.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"niet overschrijven, wel correct\"?",
-      "o": [
-       "Voorwaarde",
-       "Informeren",
-       "Eigen woorden",
-       "Plagiaat"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Eigen woorden»: niet overschrijven, wel correct.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"niet overschrijven, wel correct\"?",
-      "o": [
-       "Eigen woorden",
-       "Samenvatting",
+       "Detail",
        "Kernzin",
-       "Redundantie"
+       "Volledigheid",
+       "Objectiviteit"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Eigen woorden»: niet overschrijven, wel correct.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Eigen woorden» in?",
-      "o": [
-       "volg de volgorde van de tekst",
-       "niet overschrijven, wel correct",
-       "binnen het maximum blijven",
-       "signaalwoorden behouden"
+      "d": 2,
+      "u": "Een bijzaak die een hoofdpunt illustreert. Dat past bij Detail: illustreert een hoofdpunt.",
+      "uo": [
+       "Klopt: illustreert een hoofdpunt.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Volledigheid: alle hoofdpunten aanwezig.",
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening."
       ],
-      "c": 1,
-      "u": "«Eigen woorden» betekent: niet overschrijven, wel correct.",
-      "d": 3
+      "uh": "Detail: illustreert een hoofdpunt."
      },
      {
-      "v": "Wat betekent «Woordenlimiet»?",
-      "o": [
-       "binnen het maximum blijven",
-       "houding, oogcontact en stem",
-       "signaalwoorden behouden",
-       "aantonen dat een argument niet klopt"
-      ],
-      "c": 0,
-      "u": "«Woordenlimiet» betekent: binnen het maximum blijven.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"binnen het maximum blijven\"?",
-      "o": [
-       "Autoriteitsdrogreden",
-       "Tekstdoel",
-       "Woordenlimiet",
-       "Parafrase"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Woordenlimiet»: binnen het maximum blijven.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"binnen het maximum blijven\"?",
-      "o": [
-       "Samenvatting",
-       "Woordenlimiet",
-       "Structuur",
-       "Eigen woorden"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Woordenlimiet»: binnen het maximum blijven.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Woordenlimiet» in?",
-      "o": [
-       "niet overschrijven, wel correct",
-       "volg de volgorde van de tekst",
-       "een korte weergave van de kern van een tekst",
-       "binnen het maximum blijven"
-      ],
-      "c": 3,
-      "u": "«Woordenlimiet» betekent: binnen het maximum blijven.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verbanden»?",
-      "o": [
-       "signaalwoorden behouden",
-       "door de ogen van één personage, in de derde persoon",
-       "flashback, vooruitwijzing",
-       "de beoogde lezersgroep"
-      ],
-      "c": 0,
-      "u": "«Verbanden» betekent: signaalwoorden behouden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"signaalwoorden behouden\"?",
-      "o": [
-       "Overtuigen",
-       "Opsomming",
-       "Argument",
-       "Verbanden"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Verbanden»: signaalwoorden behouden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"signaalwoorden behouden\"?",
+      "v": "Een klein voorbeeld dat een hoofdpunt verduidelijkt. Wat is hier aan de hand?",
       "o": [
        "Kernzin",
-       "Selecteren",
-       "Signaalwoord",
-       "Verbanden"
+       "Detail",
+       "Samenvatten",
+       "Volledigheid"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Verbanden»: signaalwoorden behouden.",
-      "d": 3
+      "c": 1,
+      "d": 3,
+      "u": "Een klein voorbeeld dat een hoofdpunt verduidelijkt. Dat past bij Detail: illustreert een hoofdpunt.",
+      "uo": [
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Klopt: illustreert een hoofdpunt.",
+       "Nee, dat hoort bij Samenvatten: kort en in eigen woorden.",
+       "Nee, dat hoort bij Volledigheid: alle hoofdpunten aanwezig."
+      ],
+      "uh": "Detail: illustreert een hoofdpunt."
      },
      {
-      "v": "Wat houdt «Verbanden» in?",
+      "v": "De duidelijkheid van de verbanden. Welk begrip past hierbij?",
       "o": [
-       "signaalwoorden behouden",
-       "niet overschrijven, wel correct",
-       "binnen het maximum blijven",
-       "een korte weergave van de kern van een tekst"
+       "Objectiviteit",
+       "Detail",
+       "Coherentie",
+       "Globaal lezen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De duidelijkheid van de verbanden. Dat past bij Coherentie: duidelijke verbanden.",
+      "uo": [
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt.",
+       "Klopt: duidelijke verbanden.",
+       "Nee, dat hoort bij Globaal lezen: snel lezen voor de kern."
+      ],
+      "uh": "Coherentie: duidelijke verbanden."
+     },
+     {
+      "v": "De onderlinge verbanden in je samenvatting zijn duidelijk. Om welk begrip gaat het?",
+      "o": [
+       "Kernzin",
+       "Volledigheid",
+       "Stelling",
+       "Coherentie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De onderlinge verbanden in je samenvatting zijn duidelijk. Dat past bij Coherentie: duidelijke verbanden.",
+      "uo": [
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Volledigheid: alle hoofdpunten aanwezig.",
+       "Nee, dat hoort bij Stelling: centrale standpunt.",
+       "Klopt: duidelijke verbanden."
+      ],
+      "uh": "Coherentie: duidelijke verbanden."
+     },
+     {
+      "v": "De zin met het hoofdpunt van een alinea. Welk begrip herken je hier?",
+      "o": [
+       "Kernzin",
+       "Detail",
+       "Coherentie",
+       "Samenvatten"
       ],
       "c": 0,
-      "u": "«Verbanden» betekent: signaalwoorden behouden.",
-      "d": 3
+      "d": 3,
+      "u": "De zin met het hoofdpunt van een alinea. Dat past bij Kernzin: hoofdpunt van een alinea.",
+      "uo": [
+       "Klopt: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt.",
+       "Nee, dat hoort bij Coherentie: duidelijke verbanden.",
+       "Nee, dat hoort bij Samenvatten: kort en in eigen woorden."
+      ],
+      "uh": "Kernzin: hoofdpunt van een alinea."
+     },
+     {
+      "v": "Zonder eigen mening samenvatten. Wat is hier aan de hand?",
+      "o": [
+       "Kernzin",
+       "Objectiviteit",
+       "Detail",
+       "Coherentie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Zonder eigen mening samenvatten. Dat past bij Objectiviteit: zonder eigen mening.",
+      "uo": [
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Klopt: zonder eigen mening.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt.",
+       "Nee, dat hoort bij Coherentie: duidelijke verbanden."
+      ],
+      "uh": "Objectiviteit: zonder eigen mening."
+     },
+     {
+      "v": "De kern kort en in eigen woorden weergeven. Welk begrip past hierbij?",
+      "o": [
+       "Objectiviteit",
+       "Globaal lezen",
+       "Samenvatten",
+       "Stelling"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De kern kort en in eigen woorden weergeven. Dat past bij Samenvatten: kort en in eigen woorden.",
+      "uo": [
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening.",
+       "Nee, dat hoort bij Globaal lezen: snel lezen voor de kern.",
+       "Klopt: kort en in eigen woorden.",
+       "Nee, dat hoort bij Stelling: centrale standpunt."
+      ],
+      "uh": "Samenvatten: kort en in eigen woorden."
+     },
+     {
+      "v": "Het centrale standpunt dat de hele tekst draagt. Om welk begrip gaat het?",
+      "o": [
+       "Objectiviteit",
+       "Detail",
+       "Coherentie",
+       "Stelling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het centrale standpunt dat de hele tekst draagt. Dat past bij Stelling: centrale standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt.",
+       "Nee, dat hoort bij Coherentie: duidelijke verbanden.",
+       "Klopt: centrale standpunt."
+      ],
+      "uh": "Stelling: centrale standpunt."
+     },
+     {
+      "v": "Snel lezen voor onderwerp, doel en tekstsoort. Welk begrip herken je hier?",
+      "o": [
+       "Globaal lezen",
+       "Volledigheid",
+       "Stelling",
+       "Detail"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Snel lezen voor onderwerp, doel en tekstsoort. Dat past bij Globaal lezen: snel lezen voor de kern.",
+      "uo": [
+       "Klopt: snel lezen voor de kern.",
+       "Nee, dat hoort bij Volledigheid: alle hoofdpunten aanwezig.",
+       "Nee, dat hoort bij Stelling: centrale standpunt.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt."
+      ],
+      "uh": "Globaal lezen: snel lezen voor de kern."
+     },
+     {
+      "v": "Alle hoofdpunten zijn aanwezig. Wat is hier aan de hand?",
+      "o": [
+       "Coherentie",
+       "Volledigheid",
+       "Kernzin",
+       "Globaal lezen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Alle hoofdpunten zijn aanwezig. Dat past bij Volledigheid: alle hoofdpunten aanwezig.",
+      "uo": [
+       "Nee, dat hoort bij Coherentie: duidelijke verbanden.",
+       "Klopt: alle hoofdpunten aanwezig.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Globaal lezen: snel lezen voor de kern."
+      ],
+      "uh": "Volledigheid: alle hoofdpunten aanwezig."
+     },
+     {
+      "v": "Je geeft de kern van een tekst kort en in eigen woorden weer. Welk begrip past hierbij?",
+      "o": [
+       "Volledigheid",
+       "Globaal lezen",
+       "Samenvatten",
+       "Stelling"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je geeft de kern van een tekst kort en in eigen woorden weer. Dat past bij Samenvatten: kort en in eigen woorden.",
+      "uo": [
+       "Nee, dat hoort bij Volledigheid: alle hoofdpunten aanwezig.",
+       "Nee, dat hoort bij Globaal lezen: snel lezen voor de kern.",
+       "Klopt: kort en in eigen woorden.",
+       "Nee, dat hoort bij Stelling: centrale standpunt."
+      ],
+      "uh": "Samenvatten: kort en in eigen woorden."
+     },
+     {
+      "v": "Alle hoofd- en kernpunten van de tekst staan erin. Om welk begrip gaat het?",
+      "o": [
+       "Objectiviteit",
+       "Kernzin",
+       "Stelling",
+       "Volledigheid"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Alle hoofd- en kernpunten van de tekst staan erin. Dat past bij Volledigheid: alle hoofdpunten aanwezig.",
+      "uo": [
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening.",
+       "Nee, dat hoort bij Kernzin: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Stelling: centrale standpunt.",
+       "Klopt: alle hoofdpunten aanwezig."
+      ],
+      "uh": "Volledigheid: alle hoofdpunten aanwezig."
+     },
+     {
+      "v": "De zin waarin het hoofdpunt van de alinea staat. Welk begrip herken je hier?",
+      "o": [
+       "Kernzin",
+       "Detail",
+       "Samenvatten",
+       "Objectiviteit"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De zin waarin het hoofdpunt van de alinea staat. Dat past bij Kernzin: hoofdpunt van een alinea.",
+      "uo": [
+       "Klopt: hoofdpunt van een alinea.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt.",
+       "Nee, dat hoort bij Samenvatten: kort en in eigen woorden.",
+       "Nee, dat hoort bij Objectiviteit: zonder eigen mening."
+      ],
+      "uh": "Kernzin: hoofdpunt van een alinea."
+     },
+     {
+      "v": "Je vat samen zonder je eigen mening toe te voegen. Wat is hier aan de hand?",
+      "o": [
+       "Volledigheid",
+       "Objectiviteit",
+       "Hoofdpunt",
+       "Detail"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je vat samen zonder je eigen mening toe te voegen. Dat past bij Objectiviteit: zonder eigen mening.",
+      "uo": [
+       "Nee, dat hoort bij Volledigheid: alle hoofdpunten aanwezig.",
+       "Klopt: zonder eigen mening.",
+       "Nee, dat hoort bij Hoofdpunt: belangrijk punt.",
+       "Nee, dat hoort bij Detail: illustreert een hoofdpunt."
+      ],
+      "uh": "Objectiviteit: zonder eigen mening."
      }
     ],
     "oe": [
@@ -2942,44 +2665,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Samenvatting",
-      "d": "een korte weergave van de kern van een tekst"
+      "t": "Samenvatten",
+      "d": "de kern van een tekst in eigen woorden kort weergeven"
+     },
+     {
+      "t": "Globaal lezen",
+      "d": "snel lezen om onderwerp, doel en tekstsoort te bepalen"
      },
      {
       "t": "Kernzin",
-      "d": "de zin met de hoofdgedachte van een alinea"
+      "d": "de zin met het hoofdpunt van een alinea"
      },
      {
-      "t": "Redundantie",
-      "d": "overbodige, herhalende informatie"
+      "t": "Coherentie",
+      "d": "de duidelijkheid van de onderlinge verbanden"
+     },
+     {
+      "t": "Volledigheid",
+      "d": "dat alle hoofd- en kernpunten aanwezig zijn"
+     },
+     {
+      "t": "Detail",
+      "d": "een bijzaak die een hoofdpunt verduidelijkt of illustreert"
+     },
+     {
+      "t": "Stelling",
+      "d": "het centrale standpunt dat de hele tekst draagt"
      },
      {
       "t": "Signaalwoord",
-      "d": "een woord dat een verband aangeeft"
+      "d": "een woord dat het verband tussen zinnen aangeeft"
      },
      {
-      "t": "Alinea",
-      "d": "een tekstdeel over één deelonderwerp"
+      "t": "Hoofdpunt",
+      "d": "een belangrijk punt dat in de samenvatting moet staan"
      },
      {
-      "t": "Selecteren",
-      "d": "hoofdzaken houden, bijzaken schrappen"
-     },
-     {
-      "t": "Structuur",
-      "d": "volg de volgorde van de tekst"
-     },
-     {
-      "t": "Eigen woorden",
-      "d": "niet overschrijven, wel correct"
-     },
-     {
-      "t": "Woordenlimiet",
-      "d": "binnen het maximum blijven"
-     },
-     {
-      "t": "Verbanden",
-      "d": "signaalwoorden behouden"
+      "t": "Objectiviteit",
+      "d": "zonder eigen mening, trouw aan de brontekst samenvatten"
      }
     ]
    },
@@ -2996,848 +2719,577 @@ var VAKKEN = [
      "Aanvaardbaarheid van argumentatie beoordelen",
      "Feitelijke vs waarderende argumenten"
     ],
-    "sam": "<div class=\"sam-head\">Standpunt en argumenten</div><ul><li><strong>Standpunt</strong>: de bewering die de schrijver wil verdedigen. Herkenbaar aan: \"ik vind\", \"moet\", \"is goed/slecht\", waarderende taal.</li><li><strong>Argument</strong>: de reden die het standpunt ondersteunt. Signaalwoorden: want, omdat, immers, dus, daarom.</li><li><strong>Subargument</strong>: een argument dat een ander argument ondersteunt (onderschikkende keten).</li></ul><div class=\"sam-head\">Argumentatieschema's (HAVO)</div><ul><li><strong>Oorzaak-gevolg</strong>: A veroorzaakt B. Drogreden: het gevolg kan andere oorzaken hebben.</li><li><strong>Kenmerk</strong>: X heeft eigenschap Y, dus past in categorie Z. Drogreden: de eigenschap klopt niet of is niet relevant.</li><li><strong>Vergelijking</strong>: A is vergelijkbaar met B, dus geldt voor A wat voor B geldt. Drogreden: de situaties wijken op relevante punten af.</li><li><strong>Voorbeeld</strong>: X is een goed voorbeeld van Y, dus geldt Y in het algemeen. Drogreden: overhaaste generalisatie - te weinig voorbeelden.</li><li><strong>Autoriteit</strong>: deskundige Z zegt X. Drogreden: bron is niet deskundig of belanghebbend.</li></ul><div class=\"sam-head\">Drogredenen</div><ul><li><strong>Overhaaste generalisatie</strong>: van één of weinig gevallen een algemene conclusie trekken.</li><li><strong>Cirkelredenering</strong>: het standpunt wordt als bewijs voor zichzelf gebruikt.</li><li><strong>Ad hominem</strong>: de persoon aanvallen in plaats van het argument.</li><li><strong>Vals dilemma</strong>: twee opties presenteren terwijl er meer mogelijk zijn.</li><li><strong>Gezagsdrogreden</strong>: beroep op autoriteit die niet deskundig is op dit gebied.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Je analyseert <strong>argumentatie</strong>: het <strong>standpunt</strong>, de <strong>argumenten</strong> en de <strong>structuur</strong> (meervoudig of onderschikkend). Je onderscheidt een <strong>feitelijk</strong> van een <strong>waarderend</strong> argument, herkent <strong>argumentatieschema's</strong> zoals het <strong>autoriteitsschema</strong>, en spoort <strong>drogredenen</strong> op.</div><div class=\"sam-head\">1. Structuur en soorten</div><p>Bij een <strong>meervoudige</strong> argumentatie steunen losse argumenten elk apart het standpunt; bij een <strong>onderschikkende</strong> structuur vormen ze een keten (het ene ondersteunt het volgende). Een <strong>feitelijk</strong> argument is controleerbaar, een <strong>waarderend</strong> argument berust op normen en waarden. Het <strong>autoriteitsschema</strong> gebruikt een deskundige als onderbouwing.</p><div class=\"sam-head\">2. Drogredenen</div><p>Een <strong>drogreden</strong> lijkt geldig maar klopt niet. Voorbeelden: het <strong>vals dilemma</strong> (maar twee opties terwijl er meer zijn) en de <strong>cirkelredenering</strong> (het standpunt bewijst zichzelf: \"mijn voorstel is goed omdat het goed is\"). Signaalwoorden als \"want/omdat/immers\" wijzen op een argument.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vals dilemma</div><div class=\"sam-definitie-body\">de drogreden die maar twee opties toont terwijl er meer zijn.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Feitelijk argument</div><div class=\"sam-definitie-body\">een controleerbaar argument.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Waarderend argument</div><div class=\"sam-definitie-body\">een argument dat op normen en waarden berust.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Onderschikkende argumentatie</div><div class=\"sam-definitie-body\">argumenten vormen een keten: het ene ondersteunt het volgende.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Meervoudige argumentatie</div><div class=\"sam-definitie-body\">meerdere losse argumenten steunen elk apart het standpunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Autoriteitsschema</div><div class=\"sam-definitie-body\">een deskundige gebruiken als onderbouwing van een standpunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cirkelredenering</div><div class=\"sam-definitie-body\">de drogreden waarbij het standpunt zichzelf bewijst.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Drogreden</div><div class=\"sam-definitie-body\">een argument dat schijnbaar geldig is maar niet klopt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Standpunt</div><div class=\"sam-definitie-body\">de mening die met argumenten wordt verdedigd.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Argument</div><div class=\"sam-definitie-body\">een reden die het standpunt ondersteunt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Vals dilemma»</b> is maar twee opties, terwijl <b>«Cirkelredenering»</b> bewijst zichzelf is. <b>«Feitelijk argument»</b> is controleerbaar, terwijl <b>«Waarderend argument»</b> op normen en waarden is. <b>«Onderschikkende argumentatie»</b> is keten van argumenten, terwijl <b>«Meervoudige argumentatie»</b> losse argumenten is. <b>«Autoriteitsschema»</b> is deskundige als bewijs, terwijl <b>«Cirkelredenering»</b> bewijst zichzelf is.</div>",
     "sv": [
      {
       "v": "Wat is een vals dilemma?",
       "o": [
-       "Slechts twee opties presenteren terwijl er meer mogelijkheden zijn",
-       "Een argument waarbij de bron onbetrouwbaar is",
-       "Een te snelle algemene conclusie uit weinig voorbeelden",
-       "Een argument dat zijn eigen conclusie als bewijs gebruikt"
+       "slechts twee opties presenteren terwijl er meer mogelijk zijn",
+       "de persoon aanvallen",
+       "iets met zichzelf bewijzen",
+       "een deskundige aanhalen"
       ],
       "c": 0,
-      "u": "Vals dilemma: \"Je bent voor of tegen ons.\" In werkelijkheid zijn er meer posities mogelijk. Herkenningstip: tekst gebruikt woorden als \"ofwel … ofwel\", \"óf … óf\", \"er zijn maar twee opties\"."
+      "d": 2,
+      "u": "Een vals dilemma verzwijgt de andere opties.",
+      "uo": [
+       "Klopt: een vals dilemma verzwijgt de andere opties.",
+       "Nee, dat is een persoonlijke aanval.",
+       "Nee, dat is een cirkelredenering.",
+       "Nee, dat is het autoriteitsschema."
+      ],
+      "uh": "Vals dilemma: maar twee opties."
      },
      {
       "v": "Wat is het verschil tussen een feitelijk en een waarderend argument?",
       "o": [
-       "Feitelijk is controleerbaar; waarderend berust op normen en waarden",
-       "Feitelijk is altijd sterker dan waarderend",
-       "Waarderend argument staat altijd in een betoog, feitelijk in een uiteenzetting",
-       "Ze zijn in de praktijk altijd hetzelfde"
+       "ze zijn hetzelfde",
+       "feitelijk is controleerbaar, waarderend berust op normen en waarden",
+       "feitelijk berust op waarden",
+       "waarderend is controleerbaar"
       ],
-      "c": 0,
-      "u": "Feitelijk: \"Roken verhoogt de kans op longkanker met 25× - dit is meetbaar.\" Waarderend: \"Roken is immoreel.\" Het CE vraagt je dit onderscheid te maken en de aanvaardbaarheid van elk type te beoordelen."
+      "c": 1,
+      "d": 3,
+      "u": "Controleerbaar tegenover op waarden gebaseerd.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Klopt: controleerbaar tegenover op waarden gebaseerd.",
+       "Nee, dat is omgedraaid.",
+       "Nee, dat is omgedraaid."
+      ],
+      "uh": "Feitelijk: controleerbaar; waarderend: op waarden."
      },
      {
       "v": "Welk signaalwoord wijst op een argument dat een standpunt ondersteunt?",
       "o": [
-       "Echter",
-       "Want / omdat / immers",
-       "Maar / toch",
-       "Ten slotte"
-      ],
-      "c": 1,
-      "u": "Argumentsignaalwoorden: want, omdat, immers, dus, daarom. Tegenstellingssignaalwoorden: echter, maar, toch. \"Immers\" introduceert een argument dat vanzelfsprekend lijkt."
-     },
-     {
-      "v": "Wat is het kenmerk van een onderschikkende argumentatiestructuur?",
-      "o": [
-       "Meerdere onafhankelijke argumenten steunen elk apart het standpunt",
-       "Argumenten vormen een keten: het ene ondersteunt het volgende",
-       "Er is maar één argument",
-       "Er zijn geen subargumenten"
-      ],
-      "c": 1,
-      "u": "Onderschikkend (keten): standpunt ← arg1 ← subarg1a. Het subargument ondersteunt het argument, dat het standpunt ondersteunt. Meervoudig: meerdere losse argumenten elk direct richting het standpunt."
-     },
-     {
-      "v": "Welk argumentatieschema gebruik je bij: \"Artsen adviseren dit medicijn, dus het werkt\"?",
-      "o": [
-       "Oorzaak-gevolgschema",
-       "Vergelijkingsschema",
-       "Autoriteitsschema",
-       "Voorbeeldschema"
+       "ten eerste",
+       "echter",
+       "want / omdat / immers",
+       "bijvoorbeeld"
       ],
       "c": 2,
-      "u": "Autoriteitsschema: een deskundige (arts) onderbouwt het standpunt. Drogreden wordt het als de bron buiten zijn vakgebied spreekt of een belang heeft (reclame door arts die betaald wordt)."
-     },
-     {
-      "v": "Iemand zegt: \"Je bent óf vóór strengere klimaatwetten, óf je wil de planeet vernietigen.\" Welke drogreden?",
-      "o": [
-       "Overhaaste generalisatie",
-       "Ad hominem",
-       "Vals dilemma",
-       "Cirkelredenering"
+      "d": 2,
+      "u": "Deze woorden leiden een reden in.",
+      "uo": [
+       "Nee, dat is een opsomming.",
+       "Nee, dat is een tegenstelling.",
+       "Klopt: deze woorden leiden een reden in.",
+       "Nee, dat is een voorbeeld."
       ],
-      "c": 2,
-      "u": "Vals dilemma: er worden slechts twee opties gepresenteerd terwijl er meer zijn (bijv. middenweg, andere aanpak). Herkenbaar aan \"óf…óf\", \"je bent voor of tegen\"."
+      "uh": "\"Want/omdat/immers\": een argument."
      },
      {
-      "v": "Welk argumentatieschema gebruikt een deskundige als onderbouwing van een standpunt?",
+      "v": "Wat kenmerkt een onderschikkende argumentatiestructuur?",
       "o": [
-       "Autoriteitsschema",
-       "Vergelijkingsschema",
-       "Oorzaak-gevolgschema",
-       "Voorbeeldschema"
+       "er zijn geen argumenten",
+       "losse argumenten steunen elk apart",
+       "er is maar één argument",
+       "de argumenten vormen een keten: het ene ondersteunt het volgende"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De argumenten hangen als een ketting samen.",
+      "uo": [
+       "Nee, er zijn juist argumenten.",
+       "Nee, dat is meervoudig.",
+       "Nee, dat is enkelvoudig.",
+       "Klopt: de argumenten hangen als een ketting samen."
+      ],
+      "uh": "Onderschikkend: een keten van argumenten."
+     },
+     {
+      "v": "Welk argumentatieschema gebruik je bij \"Artsen adviseren dit medicijn, dus het werkt\"?",
+      "o": [
+       "het autoriteitsschema",
+       "het vals dilemma",
+       "de cirkelredenering",
+       "de persoonlijke aanval"
       ],
       "c": 0,
-      "u": "Autoriteitsschema: een expert of erkende bron wordt ingeroepen als bewijs. Drogreden: de bron is niet deskundig op dit gebied, of heeft een belang bij de conclusie."
+      "d": 3,
+      "u": "Een deskundige dient als onderbouwing.",
+      "uo": [
+       "Klopt: een deskundige dient als onderbouwing.",
+       "Nee, er zijn geen twee opties.",
+       "Nee, het bewijst zichzelf niet.",
+       "Nee, er wordt niemand aangevallen."
+      ],
+      "uh": "Deskundige als bewijs: autoriteitsschema."
+     },
+     {
+      "v": "\"Je bent óf vóór strengere klimaatwetten, óf je wil de planeet vernietigen.\" Welke drogreden?",
+      "o": [
+       "een cirkelredenering",
+       "een vals dilemma",
+       "het autoriteitsschema",
+       "een feitelijk argument"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Er zijn meer standpunten dan deze twee.",
+      "uo": [
+       "Nee, het bewijst zichzelf niet.",
+       "Klopt: er zijn meer standpunten dan deze twee.",
+       "Nee, er is geen deskundige.",
+       "Nee, dit is een drogreden."
+      ],
+      "uh": "Maar twee opties: vals dilemma."
      },
      {
       "v": "Wat is een meervoudige argumentatiestructuur?",
       "o": [
-       "Meerdere losse argumenten steunen elk apart het standpunt",
-       "Argumenten zijn geschakeld: het ene steunt het andere",
-       "Er is maar één argument",
-       "Het standpunt heeft geen subargumenten"
+       "er is maar één argument",
+       "de argumenten vormen een keten",
+       "meerdere losse argumenten steunen elk apart het standpunt",
+       "het standpunt bewijst zichzelf"
       ],
-      "c": 0,
-      "u": "Meervoudig: standpunt ← arg1 én standpunt ← arg2 (onafhankelijk van elkaar). Onderschikkend: standpunt ← arg1 ← subarg1. Elk type vraagt een andere beoordeling."
+      "c": 2,
+      "d": 3,
+      "u": "Elk argument staat op zichzelf.",
+      "uo": [
+       "Nee, dat is enkelvoudig.",
+       "Nee, dat is onderschikkend.",
+       "Klopt: elk argument staat op zichzelf.",
+       "Nee, dat is een cirkelredenering."
+      ],
+      "uh": "Meervoudig: losse argumenten, elk apart."
      },
      {
-      "v": "Iemand zegt: \"Mijn voorstel is goed omdat het een goed voorstel is.\" Welke drogreden is dit?",
+      "v": "\"Mijn voorstel is goed omdat het een goed voorstel is.\" Welke drogreden is dit?",
       "o": [
-       "Cirkelredenering",
-       "Ad hominem",
+       "een persoonlijke aanval",
+       "een vals dilemma",
+       "het autoriteitsschema",
+       "een cirkelredenering"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het standpunt bewijst zichzelf.",
+      "uo": [
+       "Nee, er wordt niemand aangevallen.",
+       "Nee, er zijn geen twee opties.",
+       "Nee, er is geen deskundige.",
+       "Klopt: het standpunt bewijst zichzelf."
+      ],
+      "uh": "Bewijst zichzelf: cirkelredenering."
+     },
+     {
+      "v": "Wat is een drogreden?",
+      "o": [
+       "een argument dat schijnbaar geldig is maar niet klopt",
+       "een sterk onderbouwd argument",
+       "een controleerbaar feit",
+       "een kernzin"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een drogreden lijkt te kloppen maar is onjuist.",
+      "uo": [
+       "Klopt: een drogreden lijkt te kloppen maar is onjuist.",
+       "Nee, dat is juist een goed argument.",
+       "Nee, een feit is controleerbaar.",
+       "Nee, dat is een tekstbegrip."
+      ],
+      "uh": "Drogreden: schijnbaar geldig, maar onjuist."
+     },
+     {
+      "v": "Wat is een standpunt?",
+      "o": [
+       "een controleerbaar feit",
+       "de mening die met argumenten wordt verdedigd",
+       "een signaalwoord",
+       "een terugblik"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het standpunt is de te verdedigen mening.",
+      "uo": [
+       "Nee, een feit is controleerbaar.",
+       "Klopt: het standpunt is de te verdedigen mening.",
+       "Nee, dat markeert een verband.",
+       "Nee, dat is een verteltechniek."
+      ],
+      "uh": "Standpunt: de verdedigde mening."
+     },
+     {
+      "v": "Een argument dat je kunt controleren met cijfers of onderzoek. Welk begrip past hierbij?",
+      "o": [
        "Vals dilemma",
-       "Overhaaste generalisatie"
-      ],
-      "c": 0,
-      "u": "Cirkelredenering: het standpunt wordt als bewijs voor zichzelf gebruikt. Er is geen nieuwe informatie toegevoegd. Herkenbaar doordat de conclusie al in de premisse zit."
-     },
-     {
-      "v": "Welk kenmerk maakt een argument \"relevant\"?",
-      "o": [
-       "Er is een logisch verband tussen het argument en het standpunt",
-       "Het argument is lang en gedetailleerd",
-       "Het argument bevat een statistiek",
-       "Het argument wordt aan het begin van de tekst gegeven"
-      ],
-      "c": 0,
-      "u": "Relevantie: het argument heeft echt betrekking op het standpunt. Een argument kan waar zijn maar irrelevant voor de conclusie."
-     },
-     {
-      "v": "Welk signaalwoord introduceert een subargument (argument ter ondersteuning van een ander argument)?",
-      "o": [
-       "Immers / want / omdat",
-       "Echter / toch / maar",
-       "Ten eerste / ten tweede",
-       "Kortom / dus / concluderend"
-      ],
-      "c": 0,
-      "u": "Subargumenten worden ingeleid door dezelfde argumentsignaalwoorden: want, omdat, immers. Ze ondersteunen een argument dat op zijn beurt het standpunt ondersteunt (onderschikkende keten)."
-     },
-     {
-      "v": "Wat betekent «Standpunt»?",
-      "o": [
-       "terugkerend element vs. onderwerp",
-       "argumenten die niet deugen",
-       "de mening die verdedigd wordt",
-       "wat de schrijver wil bereiken"
+       "Argument",
+       "Feitelijk argument",
+       "Drogreden"
       ],
       "c": 2,
-      "u": "«Standpunt» betekent: de mening die verdedigd wordt.",
-      "d": 1
+      "d": 1,
+      "u": "Een argument dat je kunt controleren met cijfers of onderzoek. Dat past bij Feitelijk argument: controleerbaar.",
+      "uo": [
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Nee, dat hoort bij Argument: ondersteunt het standpunt.",
+       "Klopt: controleerbaar.",
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig."
+      ],
+      "uh": "Feitelijk argument: controleerbaar."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de mening die verdedigd wordt\"?",
+      "v": "Een argument dat geldig lijkt maar niet klopt. Om welk begrip gaat het?",
       "o": [
        "Standpunt",
-       "Motief & thema",
-       "Stromingen",
-       "Overhaaste generalisatie"
+       "Waarderend argument",
+       "Vals dilemma",
+       "Drogreden"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Standpunt»: de mening die verdedigd wordt.",
-      "d": 2
+      "c": 3,
+      "d": 1,
+      "u": "Een argument dat geldig lijkt maar niet klopt. Dat past bij Drogreden: schijnbaar geldig.",
+      "uo": [
+       "Nee, dat hoort bij Standpunt: de verdedigde mening.",
+       "Nee, dat hoort bij Waarderend argument: op normen en waarden.",
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Klopt: schijnbaar geldig."
+      ],
+      "uh": "Drogreden: schijnbaar geldig."
      },
      {
-      "v": "Welke term past bij: \"de mening die verdedigd wordt\"?",
+      "v": "Een schijnbaar geldig maar onjuist argument. Welk begrip herken je hier?",
+      "o": [
+       "Drogreden",
+       "Waarderend argument",
+       "Vals dilemma",
+       "Standpunt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een schijnbaar geldig maar onjuist argument. Dat past bij Drogreden: schijnbaar geldig.",
+      "uo": [
+       "Klopt: schijnbaar geldig.",
+       "Nee, dat hoort bij Waarderend argument: op normen en waarden.",
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Nee, dat hoort bij Standpunt: de verdedigde mening."
+      ],
+      "uh": "Drogreden: schijnbaar geldig."
+     },
+     {
+      "v": "De verdedigde mening. Wat is hier aan de hand?",
       "o": [
        "Argument",
-       "Structuur",
+       "Standpunt",
+       "Waarderend argument",
+       "Meervoudige argumentatie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De verdedigde mening. Dat past bij Standpunt: de verdedigde mening.",
+      "uo": [
+       "Nee, dat hoort bij Argument: ondersteunt het standpunt.",
+       "Klopt: de verdedigde mening.",
+       "Nee, dat hoort bij Waarderend argument: op normen en waarden.",
+       "Nee, dat hoort bij Meervoudige argumentatie: losse argumenten."
+      ],
+      "uh": "Standpunt: de verdedigde mening."
+     },
+     {
+      "v": "De mening die je met argumenten verdedigt. Welk begrip past hierbij?",
+      "o": [
+       "Vals dilemma",
+       "Waarderend argument",
        "Standpunt",
        "Drogreden"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Standpunt»: de mening die verdedigd wordt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Standpunt» in?",
-      "o": [
-       "nevenschikkend of onderschikkend",
-       "de mening die verdedigd wordt",
-       "mening van een deskundige",
-       "de mate waarin een bewering klopt"
+      "d": 1,
+      "u": "De mening die je met argumenten verdedigt. Dat past bij Standpunt: de verdedigde mening.",
+      "uo": [
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Nee, dat hoort bij Waarderend argument: op normen en waarden.",
+       "Klopt: de verdedigde mening.",
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig."
       ],
-      "c": 1,
-      "u": "«Standpunt» betekent: de mening die verdedigd wordt.",
-      "d": 3
+      "uh": "Standpunt: de verdedigde mening."
      },
      {
-      "v": "Wat betekent «Argument»?",
+      "v": "Het standpunt dat zichzelf bewijst. Om welk begrip gaat het?",
       "o": [
-       "een reden die een standpunt steunt",
-       "de mate waarin een bewering klopt",
-       "de lezer iets laten doen of tot actie aanzetten",
-       "inleiding, kern, slot"
-      ],
-      "c": 0,
-      "u": "«Argument» betekent: een reden die een standpunt steunt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een reden die een standpunt steunt\"?",
-      "o": [
-       "Persoonlijke aanval",
+       "Meervoudige argumentatie",
+       "Vals dilemma",
        "Argument",
-       "Register",
-       "Redundantie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Argument»: een reden die een standpunt steunt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een reden die een standpunt steunt\"?",
-      "o": [
-       "Argument",
-       "Weerlegging",
-       "Autoriteitsdrogreden",
-       "Argumentatietypen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Argument»: een reden die een standpunt steunt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Argument» in?",
-      "o": [
-       "mening van een deskundige",
-       "de mening die verdedigd wordt",
-       "het standpunt herhalen als argument",
-       "een reden die een standpunt steunt"
+       "Cirkelredenering"
       ],
       "c": 3,
-      "u": "«Argument» betekent: een reden die een standpunt steunt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Drogreden»?",
-      "o": [
-       "een argument dat niet deugt",
-       "kortom, dus, al met al",
-       "formeel, foutloos, helder",
-       "het gezichtspunt van waaruit verteld wordt"
+      "d": 2,
+      "u": "Het standpunt dat zichzelf bewijst. Dat past bij Cirkelredenering: bewijst zichzelf.",
+      "uo": [
+       "Nee, dat hoort bij Meervoudige argumentatie: losse argumenten.",
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Nee, dat hoort bij Argument: ondersteunt het standpunt.",
+       "Klopt: bewijst zichzelf."
       ],
-      "c": 0,
-      "u": "«Drogreden» betekent: een argument dat niet deugt.",
-      "d": 1
+      "uh": "Cirkelredenering: bewijst zichzelf."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een argument dat niet deugt\"?",
+      "v": "Een deskundige gebruiken als onderbouwing. Welk begrip herken je hier?",
       "o": [
-       "Plagiaat",
-       "Register",
+       "Autoriteitsschema",
        "Drogreden",
-       "Personificatie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Drogreden»: een argument dat niet deugt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een argument dat niet deugt\"?",
-      "o": [
-       "Oorzaak-gevolg",
-       "Vergelijking",
-       "Overhaaste generalisatie",
-       "Drogreden"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Drogreden»: een argument dat niet deugt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Drogreden» in?",
-      "o": [
-       "de mate waarin een bewering klopt",
-       "je valt de persoon aan i.p.v. het argument",
-       "een argument dat niet deugt",
-       "mening van een deskundige"
-      ],
-      "c": 2,
-      "u": "«Drogreden» betekent: een argument dat niet deugt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Weerlegging»?",
-      "o": [
-       "een beeld zonder de woorden als of zoals",
-       "aantonen dat een argument niet klopt",
-       "uit één geval een algemene regel trekken",
-       "een overeenkomstig geval"
-      ],
-      "c": 1,
-      "u": "«Weerlegging» betekent: aantonen dat een argument niet klopt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"aantonen dat een argument niet klopt\"?",
-      "o": [
-       "Weerlegging",
-       "Persoonlijke aanval",
-       "Autoriteitsdrogreden",
-       "Tekstsoorten"
+       "Feitelijk argument",
+       "Standpunt"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Weerlegging»: aantonen dat een argument niet klopt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"aantonen dat een argument niet klopt\"?",
-      "o": [
-       "Structuur",
-       "Drogreden",
-       "Oorzaak-gevolg",
-       "Weerlegging"
+      "d": 1,
+      "u": "Een deskundige gebruiken als onderbouwing. Dat past bij Autoriteitsschema: deskundige als bewijs.",
+      "uo": [
+       "Klopt: deskundige als bewijs.",
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig.",
+       "Nee, dat hoort bij Feitelijk argument: controleerbaar.",
+       "Nee, dat hoort bij Standpunt: de verdedigde mening."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Weerlegging»: aantonen dat een argument niet klopt.",
-      "d": 3
+      "uh": "Autoriteitsschema: deskundige als bewijs."
      },
      {
-      "v": "Wat houdt «Weerlegging» in?",
+      "v": "Artsen adviseren dit, dus het werkt: een deskundige als bewijs. Wat is hier aan de hand?",
       "o": [
-       "aantonen dat een argument niet klopt",
-       "een reden die een standpunt steunt",
-       "een overeenkomstig geval",
-       "de mate waarin een bewering klopt"
-      ],
-      "c": 0,
-      "u": "«Weerlegging» betekent: aantonen dat een argument niet klopt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Aanvaardbaarheid»?",
-      "o": [
-       "de mate waarin een bewering klopt",
-       "maar, echter, toch, daarentegen",
-       "een tekst die een kwestie afweegt",
-       "betoog, beschouwing, uiteenzetting"
-      ],
-      "c": 0,
-      "u": "«Aanvaardbaarheid» betekent: de mate waarin een bewering klopt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin een bewering klopt\"?",
-      "o": [
-       "Aanvaardbaarheid",
-       "Tekstverbanden",
-       "Stijlfiguren",
-       "Stromingen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Aanvaardbaarheid»: de mate waarin een bewering klopt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de mate waarin een bewering klopt\"?",
-      "o": [
-       "Drogreden",
-       "Aanvaardbaarheid",
-       "Weerlegging",
-       "Structuur"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Aanvaardbaarheid»: de mate waarin een bewering klopt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Aanvaardbaarheid» in?",
-      "o": [
-       "nevenschikkend of onderschikkend",
-       "aantonen dat een argument niet klopt",
-       "uit één geval een algemene regel trekken",
-       "de mate waarin een bewering klopt"
-      ],
-      "c": 3,
-      "u": "«Aanvaardbaarheid» betekent: de mate waarin een bewering klopt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Structuur»?",
-      "o": [
-       "argumenten die niet deugen",
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "nevenschikkend of onderschikkend",
-       "\"een BN'er zegt het\" - geen echte deskundige"
-      ],
-      "c": 2,
-      "u": "«Structuur» betekent: nevenschikkend of onderschikkend.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"nevenschikkend of onderschikkend\"?",
-      "o": [
-       "Alineaverband",
-       "Structuur",
-       "Aanvaardbaarheid",
-       "Register"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Structuur»: nevenschikkend of onderschikkend.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"nevenschikkend of onderschikkend\"?",
-      "o": [
-       "Vergelijking",
        "Cirkelredenering",
-       "Structuur",
-       "Drogredenen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Structuur»: nevenschikkend of onderschikkend.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Structuur» in?",
-      "o": [
-       "aantonen dat een argument niet klopt",
-       "\"een BN'er zegt het\" - geen echte deskundige",
-       "nevenschikkend of onderschikkend",
-       "voorbeeld, autoriteit, gevolg, vergelijking"
-      ],
-      "c": 2,
-      "u": "«Structuur» betekent: nevenschikkend of onderschikkend.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Argumentatietypen»?",
-      "o": [
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "een argument dat niet deugt",
-       "de zin met de hoofdgedachte van een alinea",
-       "een tekstdeel over één deelonderwerp"
-      ],
-      "c": 0,
-      "u": "«Argumentatietypen» betekent: voorbeeld, autoriteit, gevolg, vergelijking.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"voorbeeld, autoriteit, gevolg, vergelijking\"?",
-      "o": [
-       "Structuur",
-       "Plagiaat",
-       "Naturalisme (eind 19e e.)",
-       "Argumentatietypen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Argumentatietypen»: voorbeeld, autoriteit, gevolg, vergelijking.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"voorbeeld, autoriteit, gevolg, vergelijking\"?",
-      "o": [
-       "Drogreden",
-       "Drogredenen",
-       "Standpunt",
-       "Argumentatietypen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Argumentatietypen»: voorbeeld, autoriteit, gevolg, vergelijking.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Argumentatietypen» in?",
-      "o": [
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "een reden die een standpunt steunt",
-       "mening van een deskundige",
-       "\"een BN'er zegt het\" - geen echte deskundige"
-      ],
-      "c": 0,
-      "u": "«Argumentatietypen» betekent: voorbeeld, autoriteit, gevolg, vergelijking.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Drogredenen»?",
-      "o": [
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "als, mits, tenzij",
-       "aantonen dat een argument niet klopt",
-       "argumenten die niet deugen"
-      ],
-      "c": 3,
-      "u": "«Drogredenen» betekent: argumenten die niet deugen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"argumenten die niet deugen\"?",
-      "o": [
-       "Naturalisme (eind 19e e.)",
-       "Vertelperspectief",
-       "Drogredenen",
-       "Oorzaak-gevolg"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Drogredenen»: argumenten die niet deugen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"argumenten die niet deugen\"?",
-      "o": [
-       "Drogredenen",
-       "Argumentatietypen",
-       "Oorzaak-gevolg",
-       "Cirkelredenering"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Drogredenen»: argumenten die niet deugen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Drogredenen» in?",
-      "o": [
-       "je valt de persoon aan i.p.v. het argument",
-       "uit één geval een algemene regel trekken",
-       "het standpunt herhalen als argument",
-       "argumenten die niet deugen"
-      ],
-      "c": 3,
-      "u": "«Drogredenen» betekent: argumenten die niet deugen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Autoriteit»?",
-      "o": [
-       "mening van een deskundige",
-       "kernzin + uitwerking",
-       "als, mits, tenzij",
-       "informeren, overtuigen of activeren"
-      ],
-      "c": 0,
-      "u": "«Autoriteit» betekent: mening van een deskundige.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"mening van een deskundige\"?",
-      "o": [
-       "Autoriteit",
-       "Autoriteitsdrogreden",
-       "Perspectief",
-       "Alwetend"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Autoriteit»: mening van een deskundige.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"mening van een deskundige\"?",
-      "o": [
-       "Argumentatietypen",
-       "Weerlegging",
-       "Autoriteit",
-       "Cirkelredenering"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Autoriteit»: mening van een deskundige.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Autoriteit» in?",
-      "o": [
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "nevenschikkend of onderschikkend",
-       "mening van een deskundige",
-       "het standpunt herhalen als argument"
-      ],
-      "c": 2,
-      "u": "«Autoriteit» betekent: mening van een deskundige.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Oorzaak-gevolg»?",
-      "o": [
-       "overnemen zonder bronvermelding",
-       "de gevolgen van iets",
-       "houding, oogcontact en stem",
-       "de lezer iets laten doen of tot actie aanzetten"
+       "Autoriteitsschema",
+       "Onderschikkende argumentatie",
+       "Argument"
       ],
       "c": 1,
-      "u": "«Oorzaak-gevolg» betekent: de gevolgen van iets.",
-      "d": 1
+      "d": 2,
+      "u": "Artsen adviseren dit, dus het werkt: een deskundige als bewijs. Dat past bij Autoriteitsschema: deskundige als bewijs.",
+      "uo": [
+       "Nee, dat hoort bij Cirkelredenering: bewijst zichzelf.",
+       "Klopt: deskundige als bewijs.",
+       "Nee, dat hoort bij Onderschikkende argumentatie: keten van argumenten.",
+       "Nee, dat hoort bij Argument: ondersteunt het standpunt."
+      ],
+      "uh": "Autoriteitsschema: deskundige als bewijs."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de gevolgen van iets\"?",
+      "v": "Argumenten die een keten vormen. Welk begrip past hierbij?",
       "o": [
-       "Oorzaak-gevolg",
-       "Ik-perspectief",
-       "Opsomming",
+       "Vals dilemma",
+       "Cirkelredenering",
+       "Onderschikkende argumentatie",
+       "Standpunt"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Argumenten die een keten vormen. Dat past bij Onderschikkende argumentatie: keten van argumenten.",
+      "uo": [
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Nee, dat hoort bij Cirkelredenering: bewijst zichzelf.",
+       "Klopt: keten van argumenten.",
+       "Nee, dat hoort bij Standpunt: de verdedigde mening."
+      ],
+      "uh": "Onderschikkende argumentatie: keten van argumenten."
+     },
+     {
+      "v": "Het ene argument ondersteunt het volgende, als een keten. Om welk begrip gaat het?",
+      "o": [
+       "Vals dilemma",
+       "Meervoudige argumentatie",
+       "Feitelijk argument",
+       "Onderschikkende argumentatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het ene argument ondersteunt het volgende, als een keten. Dat past bij Onderschikkende argumentatie: keten van argumenten.",
+      "uo": [
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Nee, dat hoort bij Meervoudige argumentatie: losse argumenten.",
+       "Nee, dat hoort bij Feitelijk argument: controleerbaar.",
+       "Klopt: keten van argumenten."
+      ],
+      "uh": "Onderschikkende argumentatie: keten van argumenten."
+     },
+     {
+      "v": "Een argument dat op normen en waarden berust. Welk begrip herken je hier?",
+      "o": [
+       "Waarderend argument",
+       "Feitelijk argument",
+       "Autoriteitsschema",
+       "Argument"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een argument dat op normen en waarden berust. Dat past bij Waarderend argument: op normen en waarden.",
+      "uo": [
+       "Klopt: op normen en waarden.",
+       "Nee, dat hoort bij Feitelijk argument: controleerbaar.",
+       "Nee, dat hoort bij Autoriteitsschema: deskundige als bewijs.",
+       "Nee, dat hoort bij Argument: ondersteunt het standpunt."
+      ],
+      "uh": "Waarderend argument: op normen en waarden."
+     },
+     {
+      "v": "Een reden die het standpunt steunt. Wat is hier aan de hand?",
+      "o": [
+       "Vals dilemma",
+       "Argument",
+       "Onderschikkende argumentatie",
+       "Cirkelredenering"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een reden die het standpunt steunt. Dat past bij Argument: ondersteunt het standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Klopt: ondersteunt het standpunt.",
+       "Nee, dat hoort bij Onderschikkende argumentatie: keten van argumenten.",
+       "Nee, dat hoort bij Cirkelredenering: bewijst zichzelf."
+      ],
+      "uh": "Argument: ondersteunt het standpunt."
+     },
+     {
+      "v": "Maar twee opties voorspiegelen terwijl er meer zijn. Welk begrip past hierbij?",
+      "o": [
+       "Onderschikkende argumentatie",
+       "Cirkelredenering",
+       "Vals dilemma",
+       "Waarderend argument"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Maar twee opties voorspiegelen terwijl er meer zijn. Dat past bij Vals dilemma: maar twee opties.",
+      "uo": [
+       "Nee, dat hoort bij Onderschikkende argumentatie: keten van argumenten.",
+       "Nee, dat hoort bij Cirkelredenering: bewijst zichzelf.",
+       "Klopt: maar twee opties.",
+       "Nee, dat hoort bij Waarderend argument: op normen en waarden."
+      ],
+      "uh": "Vals dilemma: maar twee opties."
+     },
+     {
+      "v": "Mijn voorstel is goed omdat het een goed voorstel is. Om welk begrip gaat het?",
+      "o": [
+       "Feitelijk argument",
+       "Vals dilemma",
+       "Argument",
+       "Cirkelredenering"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Mijn voorstel is goed omdat het een goed voorstel is. Dat past bij Cirkelredenering: bewijst zichzelf.",
+      "uo": [
+       "Nee, dat hoort bij Feitelijk argument: controleerbaar.",
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Nee, dat hoort bij Argument: ondersteunt het standpunt.",
+       "Klopt: bewijst zichzelf."
+      ],
+      "uh": "Cirkelredenering: bewijst zichzelf."
+     },
+     {
+      "v": "Een controleerbaar argument. Welk begrip herken je hier?",
+      "o": [
+       "Feitelijk argument",
+       "Argument",
+       "Vals dilemma",
        "Drogreden"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Oorzaak-gevolg»: de gevolgen van iets.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de gevolgen van iets\"?",
-      "o": [
-       "Overhaaste generalisatie",
-       "Drogreden",
-       "Autoriteitsdrogreden",
-       "Oorzaak-gevolg"
+      "d": 1,
+      "u": "Een controleerbaar argument. Dat past bij Feitelijk argument: controleerbaar.",
+      "uo": [
+       "Klopt: controleerbaar.",
+       "Nee, dat hoort bij Argument: ondersteunt het standpunt.",
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Oorzaak-gevolg»: de gevolgen van iets.",
-      "d": 3
+      "uh": "Feitelijk argument: controleerbaar."
      },
      {
-      "v": "Wat houdt «Oorzaak-gevolg» in?",
+      "v": "Losse argumenten die elk apart steunen. Wat is hier aan de hand?",
       "o": [
-       "de gevolgen van iets",
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "de mening die verdedigd wordt",
-       "\"een BN'er zegt het\" - geen echte deskundige"
-      ],
-      "c": 0,
-      "u": "«Oorzaak-gevolg» betekent: de gevolgen van iets.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vergelijking»?",
-      "o": [
-       "een overeenkomstig geval",
-       "kortom, dus, al met al",
-       "je vermakencolumn, verhaal",
-       "bijvoorbeeld, zoals, namelijk"
-      ],
-      "c": 0,
-      "u": "«Vergelijking» betekent: een overeenkomstig geval. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een overeenkomstig geval\"?",
-      "o": [
-       "Vergelijking",
-       "Verteltijd",
-       "Structuur",
-       "Signaalwoord"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vergelijking»: een overeenkomstig geval. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een overeenkomstig geval\"?",
-      "o": [
-       "Persoonlijke aanval",
-       "Drogreden",
-       "Vergelijking",
-       "Argumentatietypen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Vergelijking»: een overeenkomstig geval. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vergelijking» in?",
-      "o": [
-       "een argument dat niet deugt",
-       "een overeenkomstig geval",
-       "\"een BN'er zegt het\" - geen echte deskundige",
-       "voorbeeld, autoriteit, gevolg, vergelijking"
-      ],
-      "c": 1,
-      "u": "«Vergelijking» betekent: een overeenkomstig geval. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Persoonlijke aanval»?",
-      "o": [
-       "je valt de persoon aan i.p.v. het argument",
-       "de werkelijkheid zo waarheidsgetrouw mogelijk",
-       "wat de schrijver wil bereiken",
-       "de mening die verdedigd wordt"
-      ],
-      "c": 0,
-      "u": "«Persoonlijke aanval» betekent: je valt de persoon aan i.p.v. het argument.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"je valt de persoon aan i.p.v. het argument\"?",
-      "o": [
-       "Ik-perspectief",
-       "Tekstverbanden",
-       "Debat",
-       "Persoonlijke aanval"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Persoonlijke aanval»: je valt de persoon aan i.p.v. het argument.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"je valt de persoon aan i.p.v. het argument\"?",
-      "o": [
-       "Structuur",
-       "Drogredenen",
-       "Overhaaste generalisatie",
-       "Persoonlijke aanval"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Persoonlijke aanval»: je valt de persoon aan i.p.v. het argument.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Persoonlijke aanval» in?",
-      "o": [
-       "je valt de persoon aan i.p.v. het argument",
-       "aantonen dat een argument niet klopt",
-       "\"een BN'er zegt het\" - geen echte deskundige",
-       "een overeenkomstig geval"
-      ],
-      "c": 0,
-      "u": "«Persoonlijke aanval» betekent: je valt de persoon aan i.p.v. het argument.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Autoriteitsdrogreden»?",
-      "o": [
-       "een woord dat een verband aangeeft",
-       "\"een BN'er zegt het\" - geen echte deskundige",
-       "mening van een deskundige",
-       "aantonen dat een argument niet klopt"
-      ],
-      "c": 1,
-      "u": "«Autoriteitsdrogreden» betekent: \"een BN'er zegt het\" - geen echte deskundige.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"een BN'er zegt het\" - geen echte deskundige\"?",
-      "o": [
-       "Signaalwoorden",
-       "Kernzin",
-       "Weerlegging",
-       "Autoriteitsdrogreden"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Autoriteitsdrogreden»: \"een BN'er zegt het\" - geen echte deskundige.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"\"een BN'er zegt het\" - geen echte deskundige\"?",
-      "o": [
-       "Structuur",
-       "Argumentatietypen",
-       "Autoriteitsdrogreden",
-       "Drogredenen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Autoriteitsdrogreden»: \"een BN'er zegt het\" - geen echte deskundige.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Autoriteitsdrogreden» in?",
-      "o": [
-       "je valt de persoon aan i.p.v. het argument",
-       "voorbeeld, autoriteit, gevolg, vergelijking",
-       "\"een BN'er zegt het\" - geen echte deskundige",
-       "een reden die een standpunt steunt"
-      ],
-      "c": 2,
-      "u": "«Autoriteitsdrogreden» betekent: \"een BN'er zegt het\" - geen echte deskundige.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Overhaaste generalisatie»?",
-      "o": [
-       "ten eerste, bovendien, ook, daarnaast",
-       "uit één geval een algemene regel trekken",
-       "experiment; stream of consciousness",
-       "iets levenloos krijgt menselijke trekkende wind fluistert"
-      ],
-      "c": 1,
-      "u": "«Overhaaste generalisatie» betekent: uit één geval een algemene regel trekken.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"uit één geval een algemene regel trekken\"?",
-      "o": [
-       "Overhaaste generalisatie",
-       "Verteltijd",
-       "Selecteren",
-       "Opsomming"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Overhaaste generalisatie»: uit één geval een algemene regel trekken.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"uit één geval een algemene regel trekken\"?",
-      "o": [
-       "Weerlegging",
-       "Structuur",
-       "Argumentatietypen",
-       "Overhaaste generalisatie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Overhaaste generalisatie»: uit één geval een algemene regel trekken.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Overhaaste generalisatie» in?",
-      "o": [
-       "de mening die verdedigd wordt",
-       "de mate waarin een bewering klopt",
-       "je valt de persoon aan i.p.v. het argument",
-       "uit één geval een algemene regel trekken"
-      ],
-      "c": 3,
-      "u": "«Overhaaste generalisatie» betekent: uit één geval een algemene regel trekken.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Cirkelredenering»?",
-      "o": [
-       "binnen het maximum blijven",
-       "hoofdzaken houden, bijzaken schrappen",
-       "het standpunt herhalen als argument",
-       "een woord dat een verband aangeeft"
-      ],
-      "c": 2,
-      "u": "«Cirkelredenering» betekent: het standpunt herhalen als argument.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het standpunt herhalen als argument\"?",
-      "o": [
-       "Kernzin",
+       "Onderschikkende argumentatie",
+       "Meervoudige argumentatie",
        "Cirkelredenering",
-       "Voorwaarde",
-       "Personificatie"
+       "Vals dilemma"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Cirkelredenering»: het standpunt herhalen als argument.",
-      "d": 2
+      "d": 2,
+      "u": "Losse argumenten die elk apart steunen. Dat past bij Meervoudige argumentatie: losse argumenten.",
+      "uo": [
+       "Nee, dat hoort bij Onderschikkende argumentatie: keten van argumenten.",
+       "Klopt: losse argumenten.",
+       "Nee, dat hoort bij Cirkelredenering: bewijst zichzelf.",
+       "Nee, dat hoort bij Vals dilemma: maar twee opties."
+      ],
+      "uh": "Meervoudige argumentatie: losse argumenten."
      },
      {
-      "v": "Welke term past bij: \"het standpunt herhalen als argument\"?",
+      "v": "Je stelt: je bent voor ons of tegen ons, terwijl er meer opties zijn. Welk begrip past hierbij?",
       "o": [
-       "Oorzaak-gevolg",
-       "Autoriteit",
-       "Weerlegging",
+       "Autoriteitsschema",
+       "Cirkelredenering",
+       "Vals dilemma",
+       "Onderschikkende argumentatie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je stelt: je bent voor ons of tegen ons, terwijl er meer opties zijn. Dat past bij Vals dilemma: maar twee opties.",
+      "uo": [
+       "Nee, dat hoort bij Autoriteitsschema: deskundige als bewijs.",
+       "Nee, dat hoort bij Cirkelredenering: bewijst zichzelf.",
+       "Klopt: maar twee opties.",
+       "Nee, dat hoort bij Onderschikkende argumentatie: keten van argumenten."
+      ],
+      "uh": "Vals dilemma: maar twee opties."
+     },
+     {
+      "v": "Twee losse redenen steunen elk apart hetzelfde standpunt. Om welk begrip gaat het?",
+      "o": [
+       "Argument",
+       "Waarderend argument",
+       "Autoriteitsschema",
+       "Meervoudige argumentatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Twee losse redenen steunen elk apart hetzelfde standpunt. Dat past bij Meervoudige argumentatie: losse argumenten.",
+      "uo": [
+       "Nee, dat hoort bij Argument: ondersteunt het standpunt.",
+       "Nee, dat hoort bij Waarderend argument: op normen en waarden.",
+       "Nee, dat hoort bij Autoriteitsschema: deskundige als bewijs.",
+       "Klopt: losse argumenten."
+      ],
+      "uh": "Meervoudige argumentatie: losse argumenten."
+     },
+     {
+      "v": "Een argument dat berust op wat je goed of belangrijk vindt. Welk begrip herken je hier?",
+      "o": [
+       "Waarderend argument",
+       "Feitelijk argument",
+       "Vals dilemma",
        "Cirkelredenering"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Cirkelredenering»: het standpunt herhalen als argument.",
-      "d": 3
+      "c": 0,
+      "d": 2,
+      "u": "Een argument dat berust op wat je goed of belangrijk vindt. Dat past bij Waarderend argument: op normen en waarden.",
+      "uo": [
+       "Klopt: op normen en waarden.",
+       "Nee, dat hoort bij Feitelijk argument: controleerbaar.",
+       "Nee, dat hoort bij Vals dilemma: maar twee opties.",
+       "Nee, dat hoort bij Cirkelredenering: bewijst zichzelf."
+      ],
+      "uh": "Waarderend argument: op normen en waarden."
      },
      {
-      "v": "Wat houdt «Cirkelredenering» in?",
+      "v": "De reden die je standpunt ondersteunt. Wat is hier aan de hand?",
       "o": [
-       "de mate waarin een bewering klopt",
-       "het standpunt herhalen als argument",
-       "de mening die verdedigd wordt",
-       "voorbeeld, autoriteit, gevolg, vergelijking"
+       "Standpunt",
+       "Argument",
+       "Onderschikkende argumentatie",
+       "Drogreden"
       ],
       "c": 1,
-      "u": "«Cirkelredenering» betekent: het standpunt herhalen als argument.",
-      "d": 3
+      "d": 3,
+      "u": "De reden die je standpunt ondersteunt. Dat past bij Argument: ondersteunt het standpunt.",
+      "uo": [
+       "Nee, dat hoort bij Standpunt: de verdedigde mening.",
+       "Klopt: ondersteunt het standpunt.",
+       "Nee, dat hoort bij Onderschikkende argumentatie: keten van argumenten.",
+       "Nee, dat hoort bij Drogreden: schijnbaar geldig."
+      ],
+      "uh": "Argument: ondersteunt het standpunt."
      }
     ],
     "oe": [
@@ -3894,64 +3346,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Standpunt",
-      "d": "de mening die verdedigd wordt"
+      "t": "Vals dilemma",
+      "d": "de drogreden die maar twee opties toont terwijl er meer zijn"
      },
      {
-      "t": "Argument",
-      "d": "een reden die een standpunt steunt"
+      "t": "Feitelijk argument",
+      "d": "een controleerbaar argument"
      },
      {
-      "t": "Drogreden",
-      "d": "een argument dat niet deugt"
+      "t": "Waarderend argument",
+      "d": "een argument dat op normen en waarden berust"
      },
      {
-      "t": "Weerlegging",
-      "d": "aantonen dat een argument niet klopt"
+      "t": "Onderschikkende argumentatie",
+      "d": "argumenten vormen een keten: het ene ondersteunt het volgende"
      },
      {
-      "t": "Aanvaardbaarheid",
-      "d": "de mate waarin een bewering klopt"
+      "t": "Meervoudige argumentatie",
+      "d": "meerdere losse argumenten steunen elk apart het standpunt"
      },
      {
-      "t": "Structuur",
-      "d": "nevenschikkend of onderschikkend"
-     },
-     {
-      "t": "Argumentatietypen",
-      "d": "voorbeeld, autoriteit, gevolg, vergelijking"
-     },
-     {
-      "t": "Drogredenen",
-      "d": "argumenten die niet deugen"
-     },
-     {
-      "t": "Autoriteit",
-      "d": "mening van een deskundige"
-     },
-     {
-      "t": "Oorzaak-gevolg",
-      "d": "de gevolgen van iets"
-     },
-     {
-      "t": "Vergelijking",
-      "d": "een overeenkomstig geval"
-     },
-     {
-      "t": "Persoonlijke aanval",
-      "d": "je valt de persoon aan i.p.v. het argument"
-     },
-     {
-      "t": "Autoriteitsdrogreden",
-      "d": "\"een BN'er zegt het\" - geen echte deskundige"
-     },
-     {
-      "t": "Overhaaste generalisatie",
-      "d": "uit één geval een algemene regel trekken"
+      "t": "Autoriteitsschema",
+      "d": "een deskundige gebruiken als onderbouwing van een standpunt"
      },
      {
       "t": "Cirkelredenering",
-      "d": "het standpunt herhalen als argument"
+      "d": "de drogreden waarbij het standpunt zichzelf bewijst"
+     },
+     {
+      "t": "Drogreden",
+      "d": "een argument dat schijnbaar geldig is maar niet klopt"
+     },
+     {
+      "t": "Standpunt",
+      "d": "de mening die met argumenten wordt verdedigd"
+     },
+     {
+      "t": "Argument",
+      "d": "een reden die het standpunt ondersteunt"
      }
     ]
    },
@@ -3968,1073 +3400,596 @@ var VAKKEN = [
      "Chronologie en tijdsverschijnselen",
      "Poëzie: klank, beeld en structuur"
     ],
-    "sam": "<div class=\"sam-head\">Vertelstandpunt en focalisatie</div><ul><li><strong>Ik-verteller</strong>: personage in het verhaal, eerste persoon. Begrensd perspectief - weet alleen wat hij/zij zelf ervaart. Kan onbetrouwbaar zijn.</li><li><strong>Alwetende (auctoriale) verteller</strong>: staat buiten het verhaal, kent gedachten en gevoelens van alle personages. Derde persoon.</li><li><strong>Personale verteller</strong>: derde persoon, maar perspectief van één personage. Weet alles van dat personage, niets van de rest.</li><li><strong>Focalisatie</strong>: door wiens ogen zien we de wereld? Extern = vanuit buitenaf. Intern = vanuit een personage. Hoeft niet samen te vallen met de verteller.</li></ul><div class=\"sam-head\">Thema, motief en structuur</div><ul><li><strong>Thema</strong>: centrale abstracte boodschap of vraagstuk (eenzaamheid, identiteit, verraad). Pas te benoemen na lezing van het geheel.</li><li><strong>Motief</strong>: concreet terugkerend element (object, situatie, woord) dat het thema symbolisch ondersteunt. Bijv. een gesloten deur als motief bij het thema isolatie.</li><li><strong>Chronologie</strong>: verhaal verloopt in tijdsvolgorde. <strong>Anachronie</strong>: terugblik (analepse/flashback) of vooruitwijzing (prolepse).</li><li><strong>In medias res</strong>: verhaal begint midden in de actie, zonder uitgebreide introductie.</li><li><strong>Retarderende momenten</strong>: opzettelijke vertragingen die spanning opbouwen vlak voor een climax.</li><li><strong>Verteltempo</strong>: samenvatting (versnelt), scene (realtime dialoog), ellips (tijdsprong), stilstand (beschrijving).</li></ul><div class=\"sam-head\">Literaire stromingen</div><ul><li><strong>Romantiek</strong> (vroeg 19e eeuw): verheerlijking van gevoel, natuur en het verre verleden. Afwijzing van industrialisatie en rationalisme. Individualistisch en idealistisch.</li><li><strong>Realisme</strong> (midden–laat 19e eeuw): objectieve weergave van de werkelijkheid inclusief sociale misstanden en armoede. Reactie op de Romantiek.</li><li><strong>Naturalisme</strong>: extreme variant van Realisme. Mensen worden volledig bepaald door milieu en erfelijkheid. Deterministische, sombere kijk.</li><li><strong>Modernisme</strong> (vroeg 20e eeuw): stream of consciousness, fragmentarisch vertellen, nadruk op innerlijk bewustzijn. Twijfel aan vaste waarheden.</li></ul><div class=\"sam-head\">Poëzie</div><ul><li><strong>Metrum</strong>: regelmatig ritme door afwisseling van beklemtoonde en onbeklemtoonde lettergrepen.</li><li><strong>Rijm</strong>: eindrijm (aabb, abab), binnenrijm, alliteratie (herhaalde beginmedeklinker).</li><li><strong>Beeldende middelen</strong>: metafoor (A ís B), vergelijking (A is als B), personificatie (levenloze dingen krijgen menselijke eigenschappen), symbool (concreet object staat voor abstracte waarde).</li></ul>",
+    "sam": "<div class=\"sam-intro\">Bij literatuur herken je het <strong>vertelstandpunt</strong> (ik-verteller, focalisatie) en verteltechnieken als de <strong>analepse</strong>. Je kent <strong>stijlfiguren</strong> als de <strong>vergelijking</strong>, structuurbegrippen als het <strong>motief</strong> en <strong>stromingen</strong> als het <strong>realisme</strong>, <strong>naturalisme</strong> en <strong>modernisme</strong>.</div><div class=\"sam-head\">1. Vertellen en structuur</div><p>De <strong>ik-verteller</strong> vertelt in de eerste persoon met een begrensd perspectief. <strong>Focalisatie</strong> beschrijft door wiens ogen de wereld wordt waargenomen. Een <strong>analepse</strong> is een terugblik (flashback). Een <strong>motief</strong> is een concreet terugkerend element dat het abstracte thema ondersteunt.</p><div class=\"sam-head\">2. Stijl en stromingen</div><p>Een <strong>vergelijking</strong> koppelt twee zaken met \"als\" of \"zoals\". Het <strong>realisme</strong> geeft sociale misstanden objectief weer; het <strong>naturalisme</strong> ziet de mens als bepaald door milieu en erfelijkheid (determinisme). Het <strong>modernisme</strong> experimenteert met de <strong>stream of consciousness</strong>. Een <strong>bildungsroman</strong> volgt de innerlijke ontwikkeling van een opgroeiende hoofdpersoon.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ik-verteller</div><div class=\"sam-definitie-body\">een verteller in de eerste persoon met een begrensd perspectief.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Focalisatie</div><div class=\"sam-definitie-body\">door wiens ogen de wereld van het verhaal wordt waargenomen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Motief</div><div class=\"sam-definitie-body\">een concreet terugkerend element dat het thema ondersteunt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Analepse</div><div class=\"sam-definitie-body\">een terugblik naar een eerder moment in het verhaal.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Modernisme</div><div class=\"sam-definitie-body\">een stroming die experimenteert met de stream of consciousness.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Realisme</div><div class=\"sam-definitie-body\">een stroming die sociale misstanden objectief weergeeft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Naturalisme</div><div class=\"sam-definitie-body\">een stroming die de mens als bepaald door milieu en erfelijkheid ziet.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bildungsroman</div><div class=\"sam-definitie-body\">een roman over de innerlijke ontwikkeling van een opgroeiende held.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vergelijking</div><div class=\"sam-definitie-body\">een stijlfiguur die twee zaken koppelt met \"als\" of \"zoals\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Thema</div><div class=\"sam-definitie-body\">de centrale gedachte of boodschap van een werk.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Ik-verteller»</b> is vertelt in de ik-vorm, terwijl <b>«Focalisatie»</b> door wiens ogen is. <b>«Motief»</b> is terugkerend element, terwijl <b>«Analepse»</b> terugblik/flashback is. <b>«Modernisme»</b> is stream of consciousness, terwijl <b>«Realisme»</b> objectieve weergave is. <b>«Realisme»</b> is objectieve weergave, terwijl <b>«Naturalisme»</b> determinisme is.</div>",
     "sv": [
      {
-      "v": "Welk vertelstandpunt gebruikt de eerste persoon en heeft een begrensd perspectief beperkt tot eigen ervaringen?",
+      "v": "Welk vertelstandpunt gebruikt de eerste persoon met een begrensd perspectief?",
       "o": [
-       "Ik-verteller",
-       "Alwetende verteller",
-       "Personale verteller",
-       "Auctoriale verteller"
+       "de ik-verteller",
+       "de alwetende verteller",
+       "de hij-verteller",
+       "de personale verteller"
       ],
       "c": 0,
-      "u": "Ik-verteller: subjectief, weet alleen wat hij of zij zelf ervaart. Geen toegang tot gedachten van andere personages."
+      "d": 3,
+      "u": "De ik-verteller ziet alleen zijn eigen ervaringen.",
+      "uo": [
+       "Klopt: de ik-verteller ziet alleen zijn eigen ervaringen.",
+       "Nee, die weet juist alles.",
+       "Nee, die staat buiten het verhaal.",
+       "Nee, dat is een ander standpunt."
+      ],
+      "uh": "Ik-verteller: eerste persoon, begrensd perspectief."
      },
      {
-      "v": "Welke literaire stroming kenmerkt zich door stream of consciousness?",
+      "v": "Welke literaire stroming kenmerkt zich door de stream of consciousness?",
       "o": [
-       "Modernisme",
-       "Realisme",
-       "Romantiek",
-       "Naturalisme"
+       "het realisme",
+       "het modernisme",
+       "het naturalisme",
+       "de romantiek"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het modernisme geeft de gedachtestroom direct weer.",
+      "uo": [
+       "Nee, dat geeft de werkelijkheid objectief weer.",
+       "Klopt: het modernisme geeft de gedachtestroom direct weer.",
+       "Nee, dat draait om determinisme.",
+       "Nee, dat is een oudere stroming."
+      ],
+      "uh": "Modernisme: stream of consciousness."
+     },
+     {
+      "v": "Welk begrip verwijst naar een concreet terugkerend element dat het thema ondersteunt?",
+      "o": [
+       "de analepse",
+       "het thema",
+       "het motief",
+       "de focalisatie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een motief keert terug en verwijst naar het abstracte thema.",
+      "uo": [
+       "Nee, dat is een terugblik.",
+       "Nee, dat is de centrale gedachte zelf.",
+       "Klopt: een motief keert terug en verwijst naar het abstracte thema.",
+       "Nee, dat is het gezichtspunt."
+      ],
+      "uh": "Motief: terugkerend concreet element."
+     },
+     {
+      "v": "Welke stroming (19e eeuw) richtte zich op een objectieve weergave van sociale misstanden?",
+      "o": [
+       "het postmodernisme",
+       "het modernisme",
+       "de romantiek",
+       "het realisme"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het realisme toont de werkelijkheid zoals ze is.",
+      "uo": [
+       "Nee, dat is later en speelt met fictie.",
+       "Nee, dat is 20e-eeuws en experimenteel.",
+       "Nee, dat draait om gevoel.",
+       "Klopt: het realisme toont de werkelijkheid zoals ze is."
+      ],
+      "uh": "Realisme: objectieve weergave van misstanden."
+     },
+     {
+      "v": "Welk begrip beschrijft door wiens ogen de wereld van het verhaal wordt waargenomen?",
+      "o": [
+       "de focalisatie",
+       "het motief",
+       "de analepse",
+       "het thema"
       ],
       "c": 0,
-      "u": "Modernisme (vroeg 20e eeuw): nadruk op innerlijk bewustzijn, experimentele vertelvormen, stream of consciousness."
+      "d": 3,
+      "u": "Focalisatie is het waarnemingspunt.",
+      "uo": [
+       "Klopt: focalisatie is het waarnemingspunt.",
+       "Nee, dat is een terugkerend element.",
+       "Nee, dat is een terugblik.",
+       "Nee, dat is de kerngedachte."
+      ],
+      "uh": "Focalisatie: door wiens ogen verteld wordt."
      },
      {
-      "v": "Welk literair begrip verwijst naar een concreet terugkerend element (object, beeld) dat het abstracte onderwerp ondersteunt?",
+      "v": "Welk begrip beschrijft een terugblik naar een eerder moment in het verhaal?",
       "o": [
+       "de prolepse",
+       "de analepse (flashback)",
+       "het motief",
+       "de climax"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een analepse is een terugblik.",
+      "uo": [
+       "Nee, dat is een vooruitblik.",
+       "Klopt: een analepse is een terugblik.",
+       "Nee, dat is een terugkerend element.",
+       "Nee, dat is het spanningshoogtepunt."
+      ],
+      "uh": "Analepse: terugblik/flashback."
+     },
+     {
+      "v": "Welk stijlfiguur vergelijkt twee zaken met het woord \"als\" of \"zoals\"?",
+      "o": [
+       "het motief",
+       "de metafoor",
+       "de vergelijking",
+       "de analepse"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een vergelijking gebruikt \"als\" of \"zoals\".",
+      "uo": [
+       "Nee, dat is een terugkerend element.",
+       "Nee, die vergelijkt juist zonder die woorden.",
+       "Klopt: een vergelijking gebruikt \"als\" of \"zoals\".",
+       "Nee, dat is een terugblik."
+      ],
+      "uh": "Vergelijking: met \"als\" of \"zoals\"."
+     },
+     {
+      "v": "Wat kenmerkt de naturalistische roman ten opzichte van het realisme?",
+      "o": [
+       "het speelt in de toekomst",
+       "de mens is volledig vrij",
+       "er komt geen werkelijkheid in voor",
+       "de mens wordt volledig bepaald door milieu en erfelijkheid (determinisme)"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het naturalisme voegt determinisme toe.",
+      "uo": [
+       "Nee, dat is niet het kenmerk.",
+       "Nee, juist het tegenovergestelde.",
+       "Nee, ook het naturalisme is realistisch.",
+       "Klopt: het naturalisme voegt determinisme toe."
+      ],
+      "uh": "Naturalisme: mens bepaald door milieu en erfelijkheid."
+     },
+     {
+      "v": "Welk begrip beschrijft een verhaal waarin de hoofdpersoon opgroeit tot volwassenheid?",
+      "o": [
+       "de bildungsroman",
+       "de detective",
+       "de sciencefiction",
+       "de satire"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een bildungsroman volgt de innerlijke ontwikkeling.",
+      "uo": [
+       "Klopt: een bildungsroman volgt de innerlijke ontwikkeling.",
+       "Nee, dat draait om een misdaad.",
+       "Nee, dat draait om toekomst en techniek.",
+       "Nee, dat bespot misstanden."
+      ],
+      "uh": "Bildungsroman: opgroeiroman."
+     },
+     {
+      "v": "Wat is het thema van een literair werk?",
+      "o": [
+       "de eerste zin",
+       "de centrale gedachte of boodschap",
+       "de naam van de hoofdpersoon",
+       "het aantal hoofdstukken"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het thema is de kerngedachte.",
+      "uo": [
+       "Nee, dat is de opening.",
+       "Klopt: het thema is de kerngedachte.",
+       "Nee, dat is een personage.",
+       "Nee, dat is de omvang."
+      ],
+      "uh": "Thema: de centrale gedachte."
+     },
+     {
+      "v": "Wat is een metafoor?",
+      "o": [
+       "een terugblik in het verhaal",
+       "een vergelijking met \"als\" of \"zoals\"",
+       "een beeldspraak die twee zaken direct gelijkstelt, zonder \"als\"",
+       "een terugkerend element"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een metafoor vergelijkt direct, zonder \"als\".",
+      "uo": [
+       "Nee, dat is een analepse.",
+       "Nee, dat is een vergelijking.",
+       "Klopt: een metafoor vergelijkt direct, zonder \"als\".",
+       "Nee, dat is een motief."
+      ],
+      "uh": "Metafoor: directe beeldspraak, zonder \"als\"."
+     },
+     {
+      "v": "Je ziet de wereld door de ogen van een bepaald personage. Welk begrip past hierbij?",
+      "o": [
+       "Naturalisme",
        "Motief",
        "Thema",
-       "Symbool",
-       "Leitmotiv"
+       "Focalisatie"
       ],
-      "c": 0,
-      "u": "Thema is abstract (eenzaamheid). Motief is concreet en terugkerend, bijv. een leeg huis dat steeds verschijnt als symbool van eenzaamheid."
+      "c": 3,
+      "d": 1,
+      "u": "Je ziet de wereld door de ogen van een bepaald personage. Dat past bij Focalisatie: door wiens ogen.",
+      "uo": [
+       "Nee, dat hoort bij Naturalisme: determinisme.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Thema: centrale gedachte.",
+       "Klopt: door wiens ogen."
+      ],
+      "uh": "Focalisatie: door wiens ogen."
      },
      {
-      "v": "Welke literaire stroming (midden–laat 19e eeuw) richtte zich op een objectieve weergave van sociale misstanden en armoede?",
+      "v": "Het boek volgt hoe een jongen opgroeit tot volwassenheid. Om welk begrip gaat het?",
       "o": [
+       "Bildungsroman",
+       "Analepse",
        "Realisme",
-       "Romantiek",
-       "Naturalisme",
        "Modernisme"
       ],
       "c": 0,
-      "u": "Realisme (19e eeuw): schrijvers wilden de maatschappij eerlijk weergeven, inclusief armoede en sociale ongelijkheid. Reactie op de romantische idealisering."
-     },
-     {
-      "v": "Welk narratologisch begrip beschrijft door wiens ogen de wereld van het verhaal wordt waargenomen?",
-      "o": [
-       "Focalisatie",
-       "Vertelstandpunt",
-       "Verteltempo",
-       "Chronologie"
+      "d": 1,
+      "u": "Het boek volgt hoe een jongen opgroeit tot volwassenheid. Dat past bij Bildungsroman: opgroeiroman.",
+      "uo": [
+       "Klopt: opgroeiroman.",
+       "Nee, dat hoort bij Analepse: terugblik/flashback.",
+       "Nee, dat hoort bij Realisme: objectieve weergave.",
+       "Nee, dat hoort bij Modernisme: stream of consciousness."
       ],
-      "c": 0,
-      "u": "Focalisatie is het gezichtspunt: door wiens ogen zien we de wereld van het verhaal? Dit hoeft niet samen te vallen met de verteller."
+      "uh": "Bildungsroman: opgroeiroman."
      },
      {
-      "v": "Welk begrip beschrijft een terugblik in een verhaal waarbij de vertelling tijdelijk terugkeert naar een eerder moment?",
+      "v": "Een opgroeiroman. Welk begrip herken je hier?",
       "o": [
-       "Analepse (terugblik / flashback)",
-       "Prolepse (vooruitwijzing / flashforward)",
-       "In medias res",
-       "Retardering"
+       "Analepse",
+       "Bildungsroman",
+       "Realisme",
+       "Modernisme"
       ],
-      "c": 0,
-      "u": "Analepse is de terugblik: de vertelling gaat terug naar een eerder moment in de tijd. Prolepse is een vooruitwijzing naar een later moment. Beide zijn vormen van anachronie."
+      "c": 1,
+      "d": 1,
+      "u": "Een opgroeiroman. Dat past bij Bildungsroman: opgroeiroman.",
+      "uo": [
+       "Nee, dat hoort bij Analepse: terugblik/flashback.",
+       "Klopt: opgroeiroman.",
+       "Nee, dat hoort bij Realisme: objectieve weergave.",
+       "Nee, dat hoort bij Modernisme: stream of consciousness."
+      ],
+      "uh": "Bildungsroman: opgroeiroman."
      },
      {
-      "v": "Welk stijlfiguur vergelijkt twee zaken met behulp van het woord \"als\" of \"zoals\"?",
+      "v": "Een stijlfiguur met als of zoals. Wat is hier aan de hand?",
       "o": [
+       "Realisme",
+       "Analepse",
        "Vergelijking",
-       "Metafoor",
-       "Personificatie",
-       "Hyperbool"
-      ],
-      "c": 0,
-      "u": "Vergelijking: \"zijn hart was zo koud als ijs.\" Metafoor: \"zijn hart van ijs.\" Een vergelijking gebruikt altijd een vergelijkingswoord; een metafoor niet."
-     },
-     {
-      "v": "Wat is het kenmerk van de naturalistische roman ten opzichte van het realisme?",
-      "o": [
-       "Naturalisme beschrijft mensen als volledig bepaald door milieu en erfelijkheid (determinisme)",
-       "Naturalisme idealiseert de hoofdpersoon",
-       "Naturalisme speelt zich altijd af in de natuur",
-       "Naturalisme is een vroeg-negentiende-eeuwse stroming met veel gevoel"
-      ],
-      "c": 0,
-      "u": "Naturalisme (late 19e eeuw) is een radicale variant van het realisme. Schrijvers als Zola toonden dat mensen het product zijn van hun omgeving en erfelijkheid. Het beeld is somber en deterministisch."
-     },
-     {
-      "v": "Welk begrip beschrijft een verhaaltype waarbij de hoofdpersoon een innerlijke ontwikkeling doormaakt en opgroeit tot volwassenheid?",
-      "o": [
-       "Bildungsroman (opgroeiroman)",
-       "Picaresque roman",
-       "Historische roman",
-       "Thriller"
-      ],
-      "c": 0,
-      "u": "Bildungsroman (Duits: opvoedingsroman): de hoofdpersoon groeit van kind of jongere naar volwassenheid. Bekende voorbeelden zijn David Copperfield en De aanslag. Vaak zijn zelfontdekking en identiteit centrale thema's."
-     },
-     {
-      "v": "Welk literair begrip beschrijft de tijdspanne die in een verhaal wordt behandeld (van begin tot einde van het verhaal)?",
-      "o": [
-       "Verhaaltijd",
-       "Verteltijd",
-       "Verteltempo",
-       "Chronologie"
-      ],
-      "c": 0,
-      "u": "Verhaaltijd: de periode die het verhaal beslaat, bijv. één dag of twintig jaar. Verteltijd: hoe lang het duurt om het te lezen. Verteltempo: de verhouding tussen verhaaltijd en verteltijd."
-     },
-     {
-      "v": "Wat is het kenmerk van de romantische stroming in de literatuur?",
-      "o": [
-       "Verheerlijking van gevoel, natuur en het verleden; afwijzing van rationalisme",
-       "Objectieve beschrijving van sociale misstanden en armoede",
-       "Fragmentarisch vertellen en stream of consciousness",
-       "Deterministische kijk waarbij mensen bepaald worden door erfelijkheid"
-      ],
-      "c": 0,
-      "u": "Romantiek (vroeg 19e eeuw): gevoel, natuur, individuele vrijheid en het verre verleden centraal. Reactie op de industrialisatie en het rationalisme van de Verlichting."
-     },
-     {
-      "v": "Welk begrip beschrijft het verteltechnische middel waarbij de verteller de vertelling bewust vertraagt om spanning op te bouwen?",
-      "o": [
-       "Retardering",
-       "Analepse (terugblik)",
-       "In medias res",
-       "Ellips"
-      ],
-      "c": 0,
-      "u": "Retardering: opzettelijke vertraging vlak voor de climax. De verteller voegt details of zijverhalen in om de spanning te verhogen. Tegenhanger van versnelling (samenvatting, ellips)."
-     },
-     {
-      "v": "Welk stijlfiguur geeft een levenloze zaak menselijke eigenschappen?",
-      "o": [
-       "Personificatie",
-       "Metafoor",
-       "Vergelijking",
-       "Symbool"
-      ],
-      "c": 0,
-      "u": "Personificatie: \"De wind fluisterde geheimen.\" Een levenloze zaak (wind) krijgt menselijk gedrag (fluisteren). Metafoor: directe gelijkstelling. Vergelijking: met \"als\" of \"zoals\"."
-     },
-     {
-      "v": "Wat is een \"in medias res\" opening in een verhaal?",
-      "o": [
-       "Het verhaal begint midden in de actie, zonder uitgebreide introductie",
-       "Het verhaal begint met een terugblik",
-       "Het verhaal begint met een beschrijving van de omgeving",
-       "Het verhaal begint met een monoloog van de verteller"
-      ],
-      "c": 0,
-      "u": "\"In medias res\" (Latijn: midden in de dingen): de lezer wordt direct in de actie gegooid. De achtergrond wordt later via flashbacks of uitleg duidelijk. Verhoogt de spanning direct."
-     },
-     {
-      "v": "Wat betekent «Metafoor»?",
-      "o": [
-       "betoog, beschouwing, uiteenzetting",
-       "formeel, foutloos, helder",
-       "een beeld zonder de woorden als of zoals",
-       "mening van een deskundige"
+       "Thema"
       ],
       "c": 2,
-      "u": "«Metafoor» betekent: een beeld zonder de woorden als of zoals. Anders dan een vergelijking: een metafoor gebruikt géén \"als/zoals\".",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een beeld zonder de woorden als of zoals\"?",
-      "o": [
-       "Eigen woorden",
-       "Metafoor",
-       "Objectief",
-       "Selecteren"
+      "d": 1,
+      "u": "Een stijlfiguur met als of zoals. Dat past bij Vergelijking: met \"als\" of \"zoals\".",
+      "uo": [
+       "Nee, dat hoort bij Realisme: objectieve weergave.",
+       "Nee, dat hoort bij Analepse: terugblik/flashback.",
+       "Klopt: met \"als\" of \"zoals\".",
+       "Nee, dat hoort bij Thema: centrale gedachte."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Metafoor»: een beeld zonder de woorden als of zoals. Anders dan een vergelijking: een metafoor gebruikt géén \"als/zoals\".",
-      "d": 2
+      "uh": "Vergelijking: met \"als\" of \"zoals\"."
      },
      {
-      "v": "Welke term past bij: \"een beeld zonder de woorden als of zoals\"?",
+      "v": "Zo sterk als een beer, met het woordje als. Welk begrip past hierbij?",
       "o": [
-       "Motief & thema",
-       "Perspectief",
-       "Metafoor",
-       "Personificatie"
+       "Thema",
+       "Analepse",
+       "Realisme",
+       "Vergelijking"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Metafoor»: een beeld zonder de woorden als of zoals. Anders dan een vergelijking: een metafoor gebruikt géén \"als/zoals\".",
-      "d": 3
+      "c": 3,
+      "d": 1,
+      "u": "Zo sterk als een beer, met het woordje als. Dat past bij Vergelijking: met \"als\" of \"zoals\".",
+      "uo": [
+       "Nee, dat hoort bij Thema: centrale gedachte.",
+       "Nee, dat hoort bij Analepse: terugblik/flashback.",
+       "Nee, dat hoort bij Realisme: objectieve weergave.",
+       "Klopt: met \"als\" of \"zoals\"."
+      ],
+      "uh": "Vergelijking: met \"als\" of \"zoals\"."
      },
      {
-      "v": "Wat houdt «Metafoor» in?",
+      "v": "Een stroming met determinisme. Om welk begrip gaat het?",
       "o": [
-       "een beeld zonder de woorden als of zoals",
-       "experiment; stream of consciousness",
-       "het tegenovergestelde bedoelen van wat je zegt",
-       "met \"als\"/\"zoals\"zo sterk als een beer"
+       "Naturalisme",
+       "Realisme",
+       "Thema",
+       "Modernisme"
       ],
       "c": 0,
-      "u": "«Metafoor» betekent: een beeld zonder de woorden als of zoals. Anders dan een vergelijking: een metafoor gebruikt géén \"als/zoals\".",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Perspectief»?",
-      "o": [
-       "formeel, foutloos, helder",
-       "argumenten die niet deugen",
-       "informeren, overtuigen of activeren",
-       "het gezichtspunt van waaruit verteld wordt"
+      "d": 2,
+      "u": "Een stroming met determinisme. Dat past bij Naturalisme: determinisme.",
+      "uo": [
+       "Klopt: determinisme.",
+       "Nee, dat hoort bij Realisme: objectieve weergave.",
+       "Nee, dat hoort bij Thema: centrale gedachte.",
+       "Nee, dat hoort bij Modernisme: stream of consciousness."
       ],
-      "c": 3,
-      "u": "«Perspectief» betekent: het gezichtspunt van waaruit verteld wordt.",
-      "d": 1
+      "uh": "Naturalisme: determinisme."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het gezichtspunt van waaruit verteld wordt\"?",
+      "v": "Een stroming met objectieve weergave. Welk begrip herken je hier?",
       "o": [
-       "Naturalisme (eind 19e e.)",
-       "Perspectief",
-       "Overhaaste generalisatie",
-       "Alinea"
+       "Ik-verteller",
+       "Realisme",
+       "Analepse",
+       "Vergelijking"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Perspectief»: het gezichtspunt van waaruit verteld wordt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het gezichtspunt van waaruit verteld wordt\"?",
-      "o": [
-       "Vergelijking",
-       "Perspectief",
-       "Alwetend",
-       "Stromingen"
+      "d": 1,
+      "u": "Een stroming met objectieve weergave. Dat past bij Realisme: objectieve weergave.",
+      "uo": [
+       "Nee, dat hoort bij Ik-verteller: vertelt in de ik-vorm.",
+       "Klopt: objectieve weergave.",
+       "Nee, dat hoort bij Analepse: terugblik/flashback.",
+       "Nee, dat hoort bij Vergelijking: met \"als\" of \"zoals\"."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Perspectief»: het gezichtspunt van waaruit verteld wordt.",
-      "d": 3
+      "uh": "Realisme: objectieve weergave."
      },
      {
-      "v": "Wat houdt «Perspectief» in?",
+      "v": "De roman geeft armoede en misstanden nuchter en getrouw weer. Wat is hier aan de hand?",
       "o": [
-       "sterke overdrijvingik heb je duizend keer gebeld",
-       "experiment; stream of consciousness",
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "het gezichtspunt van waaruit verteld wordt"
-      ],
-      "c": 3,
-      "u": "«Perspectief» betekent: het gezichtspunt van waaruit verteld wordt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Motief»?",
-      "o": [
-       "je valt de persoon aan i.p.v. het argument",
-       "aantonen dat een argument niet klopt",
-       "ten eerste, bovendien, ook, daarnaast",
-       "een terugkerend element in een verhaal"
-      ],
-      "c": 3,
-      "u": "«Motief» betekent: een terugkerend element in een verhaal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een terugkerend element in een verhaal\"?",
-      "o": [
-       "Register & stijl",
-       "Persoonlijke aanval",
        "Motief",
-       "Structuur"
+       "Naturalisme",
+       "Realisme",
+       "Modernisme"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Motief»: een terugkerend element in een verhaal.",
-      "d": 2
+      "d": 2,
+      "u": "De roman geeft armoede en misstanden nuchter en getrouw weer. Dat past bij Realisme: objectieve weergave.",
+      "uo": [
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Naturalisme: determinisme.",
+       "Klopt: objectieve weergave.",
+       "Nee, dat hoort bij Modernisme: stream of consciousness."
+      ],
+      "uh": "Realisme: objectieve weergave."
      },
      {
-      "v": "Welke term past bij: \"een terugkerend element in een verhaal\"?",
+      "v": "Een terugblik naar een eerder moment. Welk begrip past hierbij?",
       "o": [
-       "Vertelperspectief",
-       "Hyperbool",
-       "Ironie",
+       "Vergelijking",
+       "Ik-verteller",
+       "Realisme",
+       "Analepse"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een terugblik naar een eerder moment. Dat past bij Analepse: terugblik/flashback.",
+      "uo": [
+       "Nee, dat hoort bij Vergelijking: met \"als\" of \"zoals\".",
+       "Nee, dat hoort bij Ik-verteller: vertelt in de ik-vorm.",
+       "Nee, dat hoort bij Realisme: objectieve weergave.",
+       "Klopt: terugblik/flashback."
+      ],
+      "uh": "Analepse: terugblik/flashback."
+     },
+     {
+      "v": "Midden in het verhaal springt de tekst terug naar de jeugd. Om welk begrip gaat het?",
+      "o": [
+       "Analepse",
+       "Motief",
+       "Modernisme",
+       "Naturalisme"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Midden in het verhaal springt de tekst terug naar de jeugd. Dat past bij Analepse: terugblik/flashback.",
+      "uo": [
+       "Klopt: terugblik/flashback.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Modernisme: stream of consciousness.",
+       "Nee, dat hoort bij Naturalisme: determinisme."
+      ],
+      "uh": "Analepse: terugblik/flashback."
+     },
+     {
+      "v": "Een terugkerend concreet element. Welk begrip herken je hier?",
+      "o": [
+       "Vergelijking",
+       "Motief",
+       "Thema",
+       "Ik-verteller"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een terugkerend concreet element. Dat past bij Motief: terugkerend element.",
+      "uo": [
+       "Nee, dat hoort bij Vergelijking: met \"als\" of \"zoals\".",
+       "Klopt: terugkerend element.",
+       "Nee, dat hoort bij Thema: centrale gedachte.",
+       "Nee, dat hoort bij Ik-verteller: vertelt in de ik-vorm."
+      ],
+      "uh": "Motief: terugkerend element."
+     },
+     {
+      "v": "De centrale gedachte van een werk. Wat is hier aan de hand?",
+      "o": [
+       "Analepse",
+       "Motief",
+       "Thema",
+       "Ik-verteller"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De centrale gedachte van een werk. Dat past bij Thema: centrale gedachte.",
+      "uo": [
+       "Nee, dat hoort bij Analepse: terugblik/flashback.",
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Klopt: centrale gedachte.",
+       "Nee, dat hoort bij Ik-verteller: vertelt in de ik-vorm."
+      ],
+      "uh": "Thema: centrale gedachte."
+     },
+     {
+      "v": "Een verteller in de eerste persoon. Welk begrip past hierbij?",
+      "o": [
+       "Modernisme",
+       "Focalisatie",
+       "Naturalisme",
+       "Ik-verteller"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een verteller in de eerste persoon. Dat past bij Ik-verteller: vertelt in de ik-vorm.",
+      "uo": [
+       "Nee, dat hoort bij Modernisme: stream of consciousness.",
+       "Nee, dat hoort bij Focalisatie: door wiens ogen.",
+       "Nee, dat hoort bij Naturalisme: determinisme.",
+       "Klopt: vertelt in de ik-vorm."
+      ],
+      "uh": "Ik-verteller: vertelt in de ik-vorm."
+     },
+     {
+      "v": "De mens wordt bepaald door zijn milieu en erfelijkheid. Om welk begrip gaat het?",
+      "o": [
+       "Naturalisme",
+       "Ik-verteller",
+       "Thema",
+       "Modernisme"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De mens wordt bepaald door zijn milieu en erfelijkheid. Dat past bij Naturalisme: determinisme.",
+      "uo": [
+       "Klopt: determinisme.",
+       "Nee, dat hoort bij Ik-verteller: vertelt in de ik-vorm.",
+       "Nee, dat hoort bij Thema: centrale gedachte.",
+       "Nee, dat hoort bij Modernisme: stream of consciousness."
+      ],
+      "uh": "Naturalisme: determinisme."
+     },
+     {
+      "v": "Door wiens ogen het verhaal wordt waargenomen. Welk begrip herken je hier?",
+      "o": [
+       "Ik-verteller",
+       "Focalisatie",
+       "Thema",
+       "Naturalisme"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Door wiens ogen het verhaal wordt waargenomen. Dat past bij Focalisatie: door wiens ogen.",
+      "uo": [
+       "Nee, dat hoort bij Ik-verteller: vertelt in de ik-vorm.",
+       "Klopt: door wiens ogen.",
+       "Nee, dat hoort bij Thema: centrale gedachte.",
+       "Nee, dat hoort bij Naturalisme: determinisme."
+      ],
+      "uh": "Focalisatie: door wiens ogen."
+     },
+     {
+      "v": "Een stroming met stream of consciousness. Wat is hier aan de hand?",
+      "o": [
+       "Motief",
+       "Realisme",
+       "Modernisme",
+       "Naturalisme"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een stroming met stream of consciousness. Dat past bij Modernisme: stream of consciousness.",
+      "uo": [
+       "Nee, dat hoort bij Motief: terugkerend element.",
+       "Nee, dat hoort bij Realisme: objectieve weergave.",
+       "Klopt: stream of consciousness.",
+       "Nee, dat hoort bij Naturalisme: determinisme."
+      ],
+      "uh": "Modernisme: stream of consciousness."
+     },
+     {
+      "v": "Het verhaal wordt verteld door ik, met een beperkt zicht. Welk begrip past hierbij?",
+      "o": [
+       "Thema",
+       "Modernisme",
+       "Naturalisme",
+       "Ik-verteller"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het verhaal wordt verteld door ik, met een beperkt zicht. Dat past bij Ik-verteller: vertelt in de ik-vorm.",
+      "uo": [
+       "Nee, dat hoort bij Thema: centrale gedachte.",
+       "Nee, dat hoort bij Modernisme: stream of consciousness.",
+       "Nee, dat hoort bij Naturalisme: determinisme.",
+       "Klopt: vertelt in de ik-vorm."
+      ],
+      "uh": "Ik-verteller: vertelt in de ik-vorm."
+     },
+     {
+      "v": "De gedachtestroom van het personage wordt direct weergegeven. Om welk begrip gaat het?",
+      "o": [
+       "Modernisme",
+       "Realisme",
+       "Naturalisme",
        "Motief"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Motief»: een terugkerend element in een verhaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Motief» in?",
-      "o": [
-       "door de ogen van één personage, in de derde persoon",
-       "iets levenloos krijgt menselijke trekkende wind fluistert",
-       "vergelijking, metafoor, personificatie",
-       "een terugkerend element in een verhaal"
+      "c": 0,
+      "d": 2,
+      "u": "De gedachtestroom van het personage wordt direct weergegeven. Dat past bij Modernisme: stream of consciousness.",
+      "uo": [
+       "Klopt: stream of consciousness.",
+       "Nee, dat hoort bij Realisme: objectieve weergave.",
+       "Nee, dat hoort bij Naturalisme: determinisme.",
+       "Nee, dat hoort bij Motief: terugkerend element."
       ],
-      "c": 3,
-      "u": "«Motief» betekent: een terugkerend element in een verhaal.",
-      "d": 3
+      "uh": "Modernisme: stream of consciousness."
      },
      {
-      "v": "Wat betekent «Thema»?",
+      "v": "Door het hele boek keert het beeld van een sleutel terug. Welk begrip herken je hier?",
       "o": [
-       "aantonen dat een argument niet klopt",
-       "het centrale idee van een werk",
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "je valt de persoon aan i.p.v. het argument"
+       "Analepse",
+       "Motief",
+       "Ik-verteller",
+       "Realisme"
       ],
       "c": 1,
-      "u": "«Thema» betekent: het centrale idee van een werk.",
-      "d": 1
+      "d": 3,
+      "u": "Door het hele boek keert het beeld van een sleutel terug. Dat past bij Motief: terugkerend element.",
+      "uo": [
+       "Nee, dat hoort bij Analepse: terugblik/flashback.",
+       "Klopt: terugkerend element.",
+       "Nee, dat hoort bij Ik-verteller: vertelt in de ik-vorm.",
+       "Nee, dat hoort bij Realisme: objectieve weergave."
+      ],
+      "uh": "Motief: terugkerend element."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het centrale idee van een werk\"?",
+      "v": "Waar het boek eigenlijk over gaat, bijvoorbeeld vriendschap. Wat is hier aan de hand?",
       "o": [
-       "Register",
+       "Analepse",
+       "Modernisme",
        "Thema",
-       "Naturalisme (eind 19e e.)",
-       "Structuur"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Thema»: het centrale idee van een werk.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het centrale idee van een werk\"?",
-      "o": [
-       "Verteltijd",
-       "Alwetend",
-       "Thema",
-       "Ironie"
+       "Bildungsroman"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Thema»: het centrale idee van een werk.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Thema» in?",
-      "o": [
-       "de werkelijkheid zo waarheidsgetrouw mogelijk",
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "een terugkerend element in een verhaal",
-       "het centrale idee van een werk"
+      "d": 1,
+      "u": "Waar het boek eigenlijk over gaat, bijvoorbeeld vriendschap. Dat past bij Thema: centrale gedachte.",
+      "uo": [
+       "Nee, dat hoort bij Analepse: terugblik/flashback.",
+       "Nee, dat hoort bij Modernisme: stream of consciousness.",
+       "Klopt: centrale gedachte.",
+       "Nee, dat hoort bij Bildungsroman: opgroeiroman."
       ],
-      "c": 3,
-      "u": "«Thema» betekent: het centrale idee van een werk.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ironie»?",
-      "o": [
-       "overbodige, herhalende informatie",
-       "het tegenovergestelde bedoelen van wat je zegt",
-       "niet overschrijven, wel correct",
-       "aantonen dat een argument niet klopt"
-      ],
-      "c": 1,
-      "u": "«Ironie» betekent: het tegenovergestelde bedoelen van wat je zegt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het tegenovergestelde bedoelen van wat je zegt\"?",
-      "o": [
-       "Publiek",
-       "Stijlfiguren",
-       "Tekstsoorten",
-       "Ironie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Ironie»: het tegenovergestelde bedoelen van wat je zegt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het tegenovergestelde bedoelen van wat je zegt\"?",
-      "o": [
-       "Stijlfiguren",
-       "Ironie",
-       "Alwetend",
-       "Personaal (hij/zij)"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ironie»: het tegenovergestelde bedoelen van wat je zegt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ironie» in?",
-      "o": [
-       "het tegenovergestelde bedoelen van wat je zegt",
-       "een terugkerend element in een verhaal",
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens",
-       "het centrale idee van een werk"
-      ],
-      "c": 0,
-      "u": "«Ironie» betekent: het tegenovergestelde bedoelen van wat je zegt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vertelperspectief»?",
-      "o": [
-       "de mate van formeel taalgebruik",
-       "door wiens ogen zie je het verhaal?",
-       "informeren, overtuigen of activeren",
-       "mening van een deskundige"
-      ],
-      "c": 1,
-      "u": "«Vertelperspectief» betekent: door wiens ogen zie je het verhaal?.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"door wiens ogen zie je het verhaal?\"?",
-      "o": [
-       "Vertelperspectief",
-       "Perspectief",
-       "Eigen woorden",
-       "Publiek"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vertelperspectief»: door wiens ogen zie je het verhaal?.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"door wiens ogen zie je het verhaal?\"?",
-      "o": [
-       "Motief",
-       "Vergelijking",
-       "Personificatie",
-       "Vertelperspectief"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Vertelperspectief»: door wiens ogen zie je het verhaal?.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vertelperspectief» in?",
-      "o": [
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "verteller weet alles, ook gedachten van iedereen",
-       "door wiens ogen zie je het verhaal?",
-       "vergelijking, metafoor, personificatie"
-      ],
-      "c": 2,
-      "u": "«Vertelperspectief» betekent: door wiens ogen zie je het verhaal?.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verteltijd»?",
-      "o": [
-       "de mate waarin een bewering klopt",
-       "realisme, naturalisme, modernisme",
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "flashback, vooruitwijzing"
-      ],
-      "c": 3,
-      "u": "«Verteltijd» betekent: flashback, vooruitwijzing.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"flashback, vooruitwijzing\"?",
-      "o": [
-       "Parafrase",
-       "Weerlegging",
-       "Verteltijd",
-       "Perspectief"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Verteltijd»: flashback, vooruitwijzing.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"flashback, vooruitwijzing\"?",
-      "o": [
-       "Stijlfiguren",
-       "Metafoor",
-       "Motief",
-       "Verteltijd"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Verteltijd»: flashback, vooruitwijzing.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Verteltijd» in?",
-      "o": [
-       "terugkerend element vs. onderwerp",
-       "sterke overdrijvingik heb je duizend keer gebeld",
-       "experiment; stream of consciousness",
-       "flashback, vooruitwijzing"
-      ],
-      "c": 3,
-      "u": "«Verteltijd» betekent: flashback, vooruitwijzing.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Motief & thema»?",
-      "o": [
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "volg de volgorde van de tekst",
-       "terugkerend element vs. onderwerp",
-       "signaalwoorden behouden"
-      ],
-      "c": 2,
-      "u": "«Motief & thema» betekent: terugkerend element vs. onderwerp.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"terugkerend element vs. onderwerp\"?",
-      "o": [
-       "Modernisme (20e e.)",
-       "Beschouwing",
-       "Motief & thema",
-       "Register & stijl"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Motief & thema»: terugkerend element vs. onderwerp.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"terugkerend element vs. onderwerp\"?",
-      "o": [
-       "Motief",
-       "Motief & thema",
-       "Ironie",
-       "Hyperbool"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Motief & thema»: terugkerend element vs. onderwerp.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Motief & thema» in?",
-      "o": [
-       "het centrale idee van een werk",
-       "de werkelijkheid zo waarheidsgetrouw mogelijk",
-       "een terugkerend element in een verhaal",
-       "terugkerend element vs. onderwerp"
-      ],
-      "c": 3,
-      "u": "«Motief & thema» betekent: terugkerend element vs. onderwerp.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Stromingen»?",
-      "o": [
-       "realisme, naturalisme, modernisme",
-       "een woord dat een verband aangeeft",
-       "betoog, beschouwing, uiteenzetting",
-       "de mate waarin een bewering klopt"
-      ],
-      "c": 0,
-      "u": "«Stromingen» betekent: realisme, naturalisme, modernisme.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"realisme, naturalisme, modernisme\"?",
-      "o": [
-       "Persoonlijke aanval",
-       "Verteltijd",
-       "Stromingen",
-       "Presentatiestructuur"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Stromingen»: realisme, naturalisme, modernisme.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"realisme, naturalisme, modernisme\"?",
-      "o": [
-       "Naturalisme (eind 19e e.)",
-       "Verteltijd",
-       "Stromingen",
-       "Realisme (19e e.)"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Stromingen»: realisme, naturalisme, modernisme.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Stromingen» in?",
-      "o": [
-       "sterke overdrijvingik heb je duizend keer gebeld",
-       "het tegenovergestelde bedoelen van wat je zegt",
-       "het centrale idee van een werk",
-       "realisme, naturalisme, modernisme"
-      ],
-      "c": 3,
-      "u": "«Stromingen» betekent: realisme, naturalisme, modernisme.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Stijlfiguren»?",
-      "o": [
-       "iets in eigen woorden weergeven",
-       "een terugkerend element in een verhaal",
-       "vergelijking, metafoor, personificatie",
-       "terugkerend element vs. onderwerp"
-      ],
-      "c": 2,
-      "u": "«Stijlfiguren» betekent: vergelijking, metafoor, personificatie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vergelijking, metafoor, personificatie\"?",
-      "o": [
-       "Redundantie",
-       "Stijlfiguren",
-       "Signaalwoord",
-       "Register & stijl"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Stijlfiguren»: vergelijking, metafoor, personificatie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"vergelijking, metafoor, personificatie\"?",
-      "o": [
-       "Naturalisme (eind 19e e.)",
-       "Vergelijking",
-       "Motief",
-       "Stijlfiguren"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Stijlfiguren»: vergelijking, metafoor, personificatie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Stijlfiguren» in?",
-      "o": [
-       "vergelijking, metafoor, personificatie",
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens",
-       "experiment; stream of consciousness",
-       "sterke overdrijvingik heb je duizend keer gebeld"
-      ],
-      "c": 0,
-      "u": "«Stijlfiguren» betekent: vergelijking, metafoor, personificatie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ik-perspectief»?",
-      "o": [
-       "een tekst die één standpunt verdedigt",
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "een reden die een standpunt steunt",
-       "de lezer iets laten weten of uitleggen"
-      ],
-      "c": 1,
-      "u": "«Ik-perspectief» betekent: verteller is personage (\"ik\"); beperkt tot eigen ervaring.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"verteller is personage (\"ik\"); beperkt tot eigen ervaring\"?",
-      "o": [
-       "Oorzaak-gevolg",
-       "Ik-perspectief",
-       "Persoonlijke aanval",
-       "Signaalwoord"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ik-perspectief»: verteller is personage (\"ik\"); beperkt tot eigen ervaring.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"verteller is personage (\"ik\"); beperkt tot eigen ervaring\"?",
-      "o": [
-       "Perspectief",
-       "Motief",
-       "Ik-perspectief",
-       "Vertelperspectief"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Ik-perspectief»: verteller is personage (\"ik\"); beperkt tot eigen ervaring.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ik-perspectief» in?",
-      "o": [
-       "realisme, naturalisme, modernisme",
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "experiment; stream of consciousness",
-       "het tegenovergestelde bedoelen van wat je zegt"
-      ],
-      "c": 1,
-      "u": "«Ik-perspectief» betekent: verteller is personage (\"ik\"); beperkt tot eigen ervaring.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Personaal (hij/zij)»?",
-      "o": [
-       "bijvoorbeeld, zoals, namelijk",
-       "iets levenloos krijgt menselijke trekkende wind fluistert",
-       "de zin met de hoofdgedachte van een alinea",
-       "door de ogen van één personage, in de derde persoon"
-      ],
-      "c": 3,
-      "u": "«Personaal (hij/zij)» betekent: door de ogen van één personage, in de derde persoon.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"door de ogen van één personage, in de derde persoon\"?",
-      "o": [
-       "Presentatiestructuur",
-       "Autoriteitsdrogreden",
-       "Stijlfiguren",
-       "Personaal (hij/zij)"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Personaal (hij/zij)»: door de ogen van één personage, in de derde persoon.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"door de ogen van één personage, in de derde persoon\"?",
-      "o": [
-       "Motief & thema",
-       "Hyperbool",
-       "Alwetend",
-       "Personaal (hij/zij)"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Personaal (hij/zij)»: door de ogen van één personage, in de derde persoon.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Personaal (hij/zij)» in?",
-      "o": [
-       "vergelijking, metafoor, personificatie",
-       "door de ogen van één personage, in de derde persoon",
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "de werkelijkheid zo waarheidsgetrouw mogelijk"
-      ],
-      "c": 1,
-      "u": "«Personaal (hij/zij)» betekent: door de ogen van één personage, in de derde persoon.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Alwetend»?",
-      "o": [
-       "verteller weet alles, ook gedachten van iedereen",
-       "signaalwoorden behouden",
-       "informeren, overtuigen of activeren",
-       "een tekst die neutraal informeert"
-      ],
-      "c": 0,
-      "u": "«Alwetend» betekent: verteller weet alles, ook gedachten van iedereen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"verteller weet alles, ook gedachten van iedereen\"?",
-      "o": [
-       "Alwetend",
-       "Hyperbool",
-       "Ik-perspectief",
-       "Cirkelredenering"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Alwetend»: verteller weet alles, ook gedachten van iedereen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"verteller weet alles, ook gedachten van iedereen\"?",
-      "o": [
-       "Alwetend",
-       "Ironie",
-       "Stromingen",
-       "Metafoor"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Alwetend»: verteller weet alles, ook gedachten van iedereen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alwetend» in?",
-      "o": [
-       "experiment; stream of consciousness",
-       "terugkerend element vs. onderwerp",
-       "het gezichtspunt van waaruit verteld wordt",
-       "verteller weet alles, ook gedachten van iedereen"
-      ],
-      "c": 3,
-      "u": "«Alwetend» betekent: verteller weet alles, ook gedachten van iedereen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Realisme (19e e.)»?",
-      "o": [
-       "de werkelijkheid zo waarheidsgetrouw mogelijk",
-       "feitelijk en zonder mening",
-       "een tekst die één standpunt verdedigt",
-       "het centrale idee van een werk"
-      ],
-      "c": 0,
-      "u": "«Realisme (19e e.)» betekent: de werkelijkheid zo waarheidsgetrouw mogelijk.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de werkelijkheid zo waarheidsgetrouw mogelijk\"?",
-      "o": [
-       "Overhaaste generalisatie",
-       "Thema",
-       "Realisme (19e e.)",
-       "Amuseren"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Realisme (19e e.)»: de werkelijkheid zo waarheidsgetrouw mogelijk.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de werkelijkheid zo waarheidsgetrouw mogelijk\"?",
-      "o": [
-       "Perspectief",
-       "Realisme (19e e.)",
-       "Vertelperspectief",
-       "Modernisme (20e e.)"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Realisme (19e e.)»: de werkelijkheid zo waarheidsgetrouw mogelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Realisme (19e e.)» in?",
-      "o": [
-       "door wiens ogen zie je het verhaal?",
-       "de werkelijkheid zo waarheidsgetrouw mogelijk",
-       "het gezichtspunt van waaruit verteld wordt",
-       "sterke overdrijvingik heb je duizend keer gebeld"
-      ],
-      "c": 1,
-      "u": "«Realisme (19e e.)» betekent: de werkelijkheid zo waarheidsgetrouw mogelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Naturalisme (eind 19e e.)»?",
-      "o": [
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens",
-       "volg de volgorde van de tekst",
-       "de mening van de lezer proberen te veranderen",
-       "mening + onderbouwing"
-      ],
-      "c": 0,
-      "u": "«Naturalisme (eind 19e e.)» betekent: objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens\"?",
-      "o": [
-       "Drogreden",
-       "Naturalisme (eind 19e e.)",
-       "Thema",
-       "Opsomming"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Naturalisme (eind 19e e.)»: objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens\"?",
-      "o": [
-       "Naturalisme (eind 19e e.)",
-       "Motief & thema",
-       "Personaal (hij/zij)",
-       "Vergelijking"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Naturalisme (eind 19e e.)»: objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Naturalisme (eind 19e e.)» in?",
-      "o": [
-       "flashback, vooruitwijzing",
-       "vergelijking, metafoor, personificatie",
-       "een beeld zonder de woorden als of zoals",
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens"
-      ],
-      "c": 3,
-      "u": "«Naturalisme (eind 19e e.)» betekent: objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Modernisme (20e e.)»?",
-      "o": [
-       "formeel, foutloos, helder",
-       "mening + onderbouwing",
-       "maar, echter, toch, daarentegen",
-       "experiment; stream of consciousness"
-      ],
-      "c": 3,
-      "u": "«Modernisme (20e e.)» betekent: experiment; stream of consciousness.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"experiment; stream of consciousness\"?",
-      "o": [
-       "Modernisme (20e e.)",
-       "Structuur",
-       "Alineaverband",
-       "Samenvatting"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Modernisme (20e e.)»: experiment; stream of consciousness.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"experiment; stream of consciousness\"?",
-      "o": [
-       "Modernisme (20e e.)",
-       "Perspectief",
-       "Naturalisme (eind 19e e.)",
-       "Stromingen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Modernisme (20e e.)»: experiment; stream of consciousness.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Modernisme (20e e.)» in?",
-      "o": [
-       "iets levenloos krijgt menselijke trekkende wind fluistert",
-       "het tegenovergestelde bedoelen van wat je zegt",
-       "flashback, vooruitwijzing",
-       "experiment; stream of consciousness"
-      ],
-      "c": 3,
-      "u": "«Modernisme (20e e.)» betekent: experiment; stream of consciousness.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vergelijking»?",
-      "o": [
-       "de lezer iets laten doen of tot actie aanzetten",
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "ten eerste, bovendien, ook, daarnaast",
-       "de beoogde lezersgroep"
-      ],
-      "c": 1,
-      "u": "«Vergelijking» betekent: met \"als\"/\"zoals\"zo sterk als een beer. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"met \"als\"/\"zoals\"zo sterk als een beer\"?",
-      "o": [
-       "Amuseren",
-       "Register & stijl",
-       "Vergelijking",
-       "Perspectief"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Vergelijking»: met \"als\"/\"zoals\"zo sterk als een beer. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"met \"als\"/\"zoals\"zo sterk als een beer\"?",
-      "o": [
-       "Realisme (19e e.)",
-       "Personificatie",
-       "Motief",
-       "Vergelijking"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Vergelijking»: met \"als\"/\"zoals\"zo sterk als een beer. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vergelijking» in?",
-      "o": [
-       "met \"als\"/\"zoals\"zo sterk als een beer",
-       "een terugkerend element in een verhaal",
-       "het gezichtspunt van waaruit verteld wordt",
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens"
-      ],
-      "c": 0,
-      "u": "«Vergelijking» betekent: met \"als\"/\"zoals\"zo sterk als een beer. Anders dan een metafoor: een vergelijking gebruikt \"als\" of \"zoals\".",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Personificatie»?",
-      "o": [
-       "oorzaak-gevolg, tegenstelling, opsomming…",
-       "signaalwoorden behouden",
-       "iets levenloos krijgt menselijke trekkende wind fluistert",
-       "het tegenovergestelde bedoelen van wat je zegt"
-      ],
-      "c": 2,
-      "u": "«Personificatie» betekent: iets levenloos krijgt menselijke trekkende wind fluistert.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"iets levenloos krijgt menselijke trekkende wind fluistert\"?",
-      "o": [
-       "Metafoor",
-       "Publiek",
-       "Verteltijd",
-       "Personificatie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Personificatie»: iets levenloos krijgt menselijke trekkende wind fluistert.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"iets levenloos krijgt menselijke trekkende wind fluistert\"?",
-      "o": [
-       "Personificatie",
-       "Hyperbool",
-       "Thema",
-       "Metafoor"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Personificatie»: iets levenloos krijgt menselijke trekkende wind fluistert.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Personificatie» in?",
-      "o": [
-       "iets levenloos krijgt menselijke trekkende wind fluistert",
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "de werkelijkheid zo waarheidsgetrouw mogelijk",
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens"
-      ],
-      "c": 0,
-      "u": "«Personificatie» betekent: iets levenloos krijgt menselijke trekkende wind fluistert.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Hyperbool»?",
-      "o": [
-       "hoofdzaken houden, bijzaken schrappen",
-       "het tegenovergestelde bedoelen van wat je zegt",
-       "doordat, daardoor, dus, zodat",
-       "sterke overdrijvingik heb je duizend keer gebeld"
-      ],
-      "c": 3,
-      "u": "«Hyperbool» betekent: sterke overdrijvingik heb je duizend keer gebeld.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"sterke overdrijvingik heb je duizend keer gebeld\"?",
-      "o": [
-       "Drogreden",
-       "Stijlfiguren",
-       "Autoriteitsdrogreden",
-       "Hyperbool"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Hyperbool»: sterke overdrijvingik heb je duizend keer gebeld.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"sterke overdrijvingik heb je duizend keer gebeld\"?",
-      "o": [
-       "Ironie",
-       "Ik-perspectief",
-       "Stijlfiguren",
-       "Hyperbool"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Hyperbool»: sterke overdrijvingik heb je duizend keer gebeld.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Hyperbool» in?",
-      "o": [
-       "verteller is personage (\"ik\"); beperkt tot eigen ervaring",
-       "sterke overdrijvingik heb je duizend keer gebeld",
-       "verteller weet alles, ook gedachten van iedereen",
-       "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens"
-      ],
-      "c": 1,
-      "u": "«Hyperbool» betekent: sterke overdrijvingik heb je duizend keer gebeld.",
-      "d": 3
+      "uh": "Thema: centrale gedachte."
      }
     ],
     "oe": [
@@ -5071,80 +4026,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Metafoor",
-      "d": "een beeld zonder de woorden als of zoals"
+      "t": "Ik-verteller",
+      "d": "een verteller in de eerste persoon met een begrensd perspectief"
      },
      {
-      "t": "Perspectief",
-      "d": "het gezichtspunt van waaruit verteld wordt"
+      "t": "Focalisatie",
+      "d": "door wiens ogen de wereld van het verhaal wordt waargenomen"
      },
      {
       "t": "Motief",
-      "d": "een terugkerend element in een verhaal"
+      "d": "een concreet terugkerend element dat het thema ondersteunt"
      },
      {
-      "t": "Thema",
-      "d": "het centrale idee van een werk"
+      "t": "Analepse",
+      "d": "een terugblik naar een eerder moment in het verhaal"
      },
      {
-      "t": "Ironie",
-      "d": "het tegenovergestelde bedoelen van wat je zegt"
+      "t": "Modernisme",
+      "d": "een stroming die experimenteert met de stream of consciousness"
      },
      {
-      "t": "Vertelperspectief",
-      "d": "door wiens ogen zie je het verhaal?"
+      "t": "Realisme",
+      "d": "een stroming die sociale misstanden objectief weergeeft"
      },
      {
-      "t": "Verteltijd",
-      "d": "flashback, vooruitwijzing"
+      "t": "Naturalisme",
+      "d": "een stroming die de mens als bepaald door milieu en erfelijkheid ziet"
      },
      {
-      "t": "Motief & thema",
-      "d": "terugkerend element vs. onderwerp"
-     },
-     {
-      "t": "Stromingen",
-      "d": "realisme, naturalisme, modernisme"
-     },
-     {
-      "t": "Stijlfiguren",
-      "d": "vergelijking, metafoor, personificatie"
-     },
-     {
-      "t": "Ik-perspectief",
-      "d": "verteller is personage (\"ik\"); beperkt tot eigen ervaring"
-     },
-     {
-      "t": "Personaal (hij/zij)",
-      "d": "door de ogen van één personage, in de derde persoon"
-     },
-     {
-      "t": "Alwetend",
-      "d": "verteller weet alles, ook gedachten van iedereen"
-     },
-     {
-      "t": "Realisme (19e e.)",
-      "d": "de werkelijkheid zo waarheidsgetrouw mogelijk"
-     },
-     {
-      "t": "Naturalisme (eind 19e e.)",
-      "d": "objectieve weergave van sociale misstanden en armoede; milieu bepaalt de mens"
-     },
-     {
-      "t": "Modernisme (20e e.)",
-      "d": "experiment; stream of consciousness"
+      "t": "Bildungsroman",
+      "d": "een roman over de innerlijke ontwikkeling van een opgroeiende held"
      },
      {
       "t": "Vergelijking",
-      "d": "met \"als\"/\"zoals\"zo sterk als een beer"
+      "d": "een stijlfiguur die twee zaken koppelt met \"als\" of \"zoals\""
      },
      {
-      "t": "Personificatie",
-      "d": "iets levenloos krijgt menselijke trekkende wind fluistert"
-     },
-     {
-      "t": "Hyperbool",
-      "d": "sterke overdrijvingik heb je duizend keer gebeld"
+      "t": "Thema",
+      "d": "de centrale gedachte of boodschap van een werk"
      }
     ]
    }
