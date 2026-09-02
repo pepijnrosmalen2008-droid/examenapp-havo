@@ -1420,9 +1420,9 @@ var VAKKEN = [
      "Oprichting en beeindiging van organisaties",
      "Continuiteit van de onderneming"
     ],
-    "nSv": 60,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 12,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1437,9 +1437,9 @@ var VAKKEN = [
      "CAO en arbeidsrecht",
      "Motivatie en beloningsvormen"
     ],
-    "nSv": 43,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 8,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1455,9 +1455,9 @@ var VAKKEN = [
      "Kwantitatief en kwalitatief onderzoek",
      "Marktvormen (monopolie, oligopolie, volkomen concurrentie)"
     ],
-    "nSv": 55,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 11,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1472,9 +1472,9 @@ var VAKKEN = [
      "Rentabiliteit: REV en RTV",
      "Hefboomwerking (positief en negatief)"
     ],
-    "nSv": 44,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 9,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1490,9 +1490,9 @@ var VAKKEN = [
      "Solvabiliteit",
      "Rentabiliteit als kengetal"
     ],
-    "nSv": 34,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 6,
+    "nBeg": 10,
     "hasSam": true
    }
   ]
