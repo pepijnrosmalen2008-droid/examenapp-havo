@@ -81,9 +81,9 @@ html{background:var(--bg,#f5f6fa);overflow-x:clip}
 /* wrapper voor emoji→SVG-iconen (ico-swap.js): lijnt het icoon uit met de tekst */
 .ico-emoji{display:inline-flex;align-items:center;justify-content:center;vertical-align:-.14em}
 .ico-emoji>.ico{display:block}
-body{font-family:var(--font);background:var(--bg);color:var(--dk);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s;overscroll-behavior-y:contain}
+body{font-family:var(--font);background:var(--bg);color:var(--dk);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s;overscroll-behavior-y:contain;overflow-x:clip}
 h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.3px}
-.sc{display:none;min-height:100vh}.sc.on{display:block;animation:screenIn .38s cubic-bezier(.22,1,.36,1)}
+.sc{display:none;min-height:100vh;overflow-x:clip}.sc.on{display:block;animation:screenIn .38s cubic-bezier(.22,1,.36,1)}
 @keyframes screenIn{from{opacity:0;transform:scale(.975) translateY(16px)}to{opacity:1;transform:scale(1) translateY(0)}}
 .w{max-width:960px;margin:0 auto;padding:0 24px}
 
@@ -4769,9 +4769,11 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 
   /* ── SCHERMEN: geen website-padding ── */
   body{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 92px)!important}
-  /* Op schermen zonder bottom-nav (quiz, welcome, resultaat, race…) geen
-     92px-reservering: die liet een leeg vlak in de body-achtergrond zien. */
-  body.nav-hidden{padding-bottom:env(safe-area-inset-bottom,0px)!important}
+  /* Op schermen zonder bottom-nav (quiz, welcome, resultaat, race…) helemaal geen
+     body-padding onderaan: die reservering liet een los, afwijkend gekleurd vlak
+     in de body-achtergrond zien. Het scherm zelf (.sc, min-height:100vh + eigen
+     achtergrond) vult nu tot de onderrand door, zodat de kleur netjes aansluit. */
+  body.nav-hidden{padding-bottom:0!important}
   .w{padding:0 14px!important}
   .sc>.w:first-child,.sc .w:first-of-type{padding-top:4px!important}
 
