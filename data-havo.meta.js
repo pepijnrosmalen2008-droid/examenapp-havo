@@ -150,9 +150,9 @@ var VAKKEN = [
     "onderwerpen": [
      "A1: Wiskundige en profielspecifieke vaardigheden (CE+SE)"
     ],
-    "nSv": 58,
+    "nSv": 32,
     "nOe": 3,
-    "nBeg": 12,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -172,9 +172,9 @@ var VAKKEN = [
      "B2: Algebra (CE)",
      "B3: Telproblemen (SE - niet op CE)"
     ],
-    "nSv": 51,
+    "nSv": 34,
     "nOe": 7,
-    "nBeg": 8,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -196,9 +196,9 @@ var VAKKEN = [
      "C4: Lineaire verbanden: y = ax + b (CE)",
      "C5: Exponentiële verbanden: y = a·g^x (CE)"
     ],
-    "nSv": 77,
+    "nSv": 33,
     "nOe": 8,
-    "nBeg": 15,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -222,9 +222,9 @@ var VAKKEN = [
      "D6: Optimalisatieproblemen in context (CE)",
      "D7: Toenemend/afnemend stijgen en dalen (CE)"
     ],
-    "nSv": 55,
+    "nSv": 33,
     "nOe": 3,
-    "nBeg": 9,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -246,9 +246,9 @@ var VAKKEN = [
      "E4: Regressie en correlatie: r en R² (CE)",
      "E5: Kansrekening: P(A), binomiaal (SE - niet op CE)"
     ],
-    "nSv": 83,
+    "nSv": 34,
     "nOe": 9,
-    "nBeg": 15,
+    "nBeg": 10,
     "hasSam": true
    }
   ]
