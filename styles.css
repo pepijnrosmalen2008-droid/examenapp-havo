@@ -2361,7 +2361,7 @@ html.dark .calc-btn{background:#2e3550}
 .exam-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 .em-chip{font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;background:var(--bg2);color:var(--mu);display:inline-flex;align-items:center;gap:6px}
 .em-chip.em-date{background:var(--orl);color:var(--or)}
-.yt-card{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:11px;background:var(--s);border:1px solid var(--bo);margin-top:10px;text-decoration:none;transition:all .22s cubic-bezier(.34,1.4,.64,1);width:100%}
+.yt-card{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:11px;background:var(--s);border:1px solid var(--bo);margin-top:10px;margin-bottom:20px;text-decoration:none;transition:all .22s cubic-bezier(.34,1.4,.64,1);width:100%}
 .yt-card:hover{background:var(--s);border-color:var(--bo)}
 .yt-icon{width:28px;height:28px;border-radius:8px;background:#FF0000;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .yt-icon svg{width:16px;height:16px;fill:#fff}
@@ -2412,7 +2412,10 @@ html.dark .calc-btn{background:#2e3550}
    elke bestemming altijd één klik weg is. */
 @media(min-width:900px){
   body{padding-left:250px}
-  body.nav-hidden{padding-left:0}
+  /* Focus-schermen (niveau-kiezen + quizflow): geen zijbalk én geen zijbalk-ruimte.
+     !important zodat dit ook wint van body.sidebar-collapsed (dat anders een lege
+     76px-balk zou laten staan omdat het later in de CSS komt). */
+  body.nav-hidden{padding-left:0!important}
   body.nav-hidden .bottom-nav{display:none!important}
   .bottom-nav{display:block;top:0;bottom:0;left:0;right:auto;width:250px;padding:0;pointer-events:auto;z-index:250}
   .bottom-nav-inner{flex-direction:column;align-items:stretch;justify-content:flex-start;gap:3px;max-width:none;width:100%;height:100%;margin:0;border-radius:0;border:none;border-right:1px solid var(--bo);padding:18px 16px;background:var(--nav-bg);backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:1px 0 0 var(--bo),4px 0 24px rgba(16,24,40,.03);overflow-y:auto}
