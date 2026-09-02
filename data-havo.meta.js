@@ -2128,9 +2128,9 @@ var VAKKEN = [
      "Modelleren: praktijkproblemen vertalen naar wiskundige formules",
      "Grafieken interpreteren: trend, verband, beginwaarde en helling aflezen"
     ],
-    "nSv": 31,
+    "nSv": 32,
     "nOe": 3,
-    "nBeg": 7,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -2149,9 +2149,9 @@ var VAKKEN = [
      "B1: Exponentiële functies (CE)",
      "B1: Vergelijkingen oplossen (CE)"
     ],
-    "nSv": 52,
+    "nSv": 32,
     "nOe": 3,
-    "nBeg": 11,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -2170,7 +2170,7 @@ var VAKKEN = [
      "C1: Hoeken en lijnen (CE)",
      "C1: Ruimtelijke figuren (CE)"
     ],
-    "nSv": 46,
+    "nSv": 32,
     "nOe": 3,
     "nBeg": 10,
     "hasSam": true
@@ -2191,9 +2191,9 @@ var VAKKEN = [
      "D1: Optimaliseren (CE)",
      "D1: Toepassingen in modellen (CE)"
     ],
-    "nSv": 53,
+    "nSv": 32,
     "nOe": 3,
-    "nBeg": 12,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -2215,9 +2215,9 @@ var VAKKEN = [
      "Goniometrische functies: amplitude, periode en verschuiving",
      "Vectoren: optelling, grootte en inwendig product"
     ],
-    "nSv": 46,
+    "nSv": 32,
     "nOe": 3,
-    "nBeg": 8,
+    "nBeg": 10,
     "hasSam": true
    }
   ]

@@ -68697,376 +68697,615 @@ var VAKKEN = [
      "Modelleren: praktijkproblemen vertalen naar wiskundige formules",
      "Grafieken interpreteren: trend, verband, beginwaarde en helling aflezen"
     ],
-    "sam": "<div class=\"sam-head\">Redeneren en bewijzen</div><ul><li><strong>Directe redenering</strong>: stap voor stap van de gegeven informatie naar de conclusie. Elke stap moet logisch volgen uit de vorige.</li><li><strong>Tegenvoorbeeld</strong>: één voorbeeld waarvoor een bewering niet klopt volstaat om de bewering te weerleggen. Handig bij \"geldt dit altijd?\"</li><li><strong>Uit het ongerijmde</strong>: neem aan dat de bewering onwaar is en leid een tegenspraak af. Dan is de bewering toch waar.</li></ul><div class=\"sam-head\">Algebraïsche vaardigheden</div><ul><li><strong>Vereenvoudigen</strong>: combineer gelijksoortige termen, werk haakjes uit en herleid tot de eenvoudigste vorm.</li><li><strong>Substitueren</strong>: vervang een variabele door een waarde of een andere uitdrukking. Essentieel bij stelsels en samengestelde functies.</li><li><strong>Vergelijking opstellen</strong>: verwoord de situatie in symbolen. Benoem variabelen expliciet en controleer of de eenheden kloppen.</li></ul><div class=\"sam-head\">Modelleren</div><ul><li><strong>Modelleercyclus</strong>: probleem → wiskundige formule → oplossing → terugvertaling naar de context → beoordeling of het antwoord realistisch is.</li><li><strong>Parameters</strong>: constanten in een formule die de situatie bepalen (bijv. beginstand, groeisnelheid). Onderscheid duidelijk van de variabele.</li><li><strong>Domein bewust kiezen</strong>: in een praktijkmodel zijn niet alle x-waarden zinvol (bijv. negatieve tijd of massa heeft geen betekenis).</li></ul><div class=\"sam-head\">Grafieken interpreteren</div><ul><li><strong>Beginwaarde</strong>: y-waarde bij x = 0, af te lezen op de y-as.</li><li><strong>Helling</strong>: stijging per eenheid op de x-as. Positieve helling = toename, negatieve helling = afname.</li><li><strong>Verband bepalen</strong>: rechte lijn → lineair. Parabool → kwadratisch. Afvlakkende kromme → exponentieel verval of wortelfunctie. Periodiek → sinus/cosinus.</li><li><strong>Snijpunten</strong>: snijpunt met x-as → nulpunt (y = 0). Snijpunt met y-as → beginwaarde (x = 0).</li></ul>",
+    "sam": "<div class=\"sam-intro\">De basis van wiskunde B: <strong>herleiden</strong>, <strong>vergelijkingen oplossen</strong> en <strong>ontbinden in factoren</strong>. Je leest de <strong>beginwaarde</strong> en <strong>richtingscoëfficiënt</strong> af, en lost een <strong>stelsel vergelijkingen</strong> op met <strong>substitutie</strong>.</div><div class=\"sam-head\">1. Algebra</div><p><strong>Herleiden</strong> is een uitdrukking eenvoudiger schrijven, bijvoorbeeld (x − 1)(x + 1) = x² − 1. <strong>Ontbinden in factoren</strong> schrijft een som als product: x² − 9 = (x − 3)(x + 3). Een <strong>vergelijking</strong> los je op door aan beide kanten dezelfde bewerking te doen; x² = 16 geeft x = ±4.</p><div class=\"sam-head\">2. Grafieken en stelsels</div><p>Bij x = 0 lees je op de y-as de <strong>beginwaarde</strong> af. Een <strong>lineair verband</strong> is een rechte lijn met een constante <strong>richtingscoëfficiënt</strong> (Δy/Δx). Een <strong>stelsel vergelijkingen</strong> los je op met <strong>substitutie</strong>: druk één variabele uit en vul die in de andere vergelijking in.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Beginwaarde</div><div class=\"sam-definitie-body\">de waarde die je op de y-as afleest bij x = 0.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Lineair verband</div><div class=\"sam-definitie-body\">een verband met een rechte lijn en een constante stijging.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Substitutie</div><div class=\"sam-definitie-body\">één variabele uitdrukken en invullen in de andere vergelijking.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stelsel vergelijkingen</div><div class=\"sam-definitie-body\">twee vergelijkingen met een gemeenschappelijke oplossing.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Richtingscoëfficiënt</div><div class=\"sam-definitie-body\">de helling Δy/Δx van een rechte lijn.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Herleiden</div><div class=\"sam-definitie-body\">een uitdrukking zo eenvoudig mogelijk schrijven.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kwadratische vergelijking</div><div class=\"sam-definitie-body\">een vergelijking met x² als hoogste macht.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Discriminant</div><div class=\"sam-definitie-body\">D = b² − 4ac, bepaalt het aantal reële oplossingen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ontbinden in factoren</div><div class=\"sam-definitie-body\">een som als product van factoren schrijven.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Exact rekenen</div><div class=\"sam-definitie-body\">met breuken en wortels doorrekenen zonder af te ronden.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Beginwaarde»</b> is waarde bij x = 0, terwijl <b>«Richtingscoëfficiënt»</b> helling Δy/Δx is. <b>«Lineair verband»</b> is rechte lijn, terwijl <b>«Kwadratische vergelijking»</b> hoogste macht x² is. <b>«Substitutie»</b> is invullen in de andere vergelijking, terwijl <b>«Stelsel vergelijkingen»</b> twee vergelijkingen samen is. <b>«Herleiden»</b> is eenvoudiger schrijven, terwijl <b>«Ontbinden in factoren»</b> som als product is.</div>",
     "sv": [
      {
       "v": "Wat lees je af op de y-as bij x = 0 van een grafiek?",
       "o": [
-       "De beginwaarde (of beginstand)",
-       "Het maximum",
-       "De stijging per tijdseenheid",
-       "Het nulpunt van de functie"
+       "de beginwaarde",
+       "de richtingscoëfficiënt",
+       "het nulpunt",
+       "de periode"
       ],
       "c": 0,
-      "u": "Snijpunt met de y-as: de waarde bij x = 0. Bijv. bij een groeimodel is dit de beginpopulatie of de startkosten."
+      "d": 2,
+      "u": "Bij x = 0 lees je de beginwaarde af.",
+      "uo": [
+       "Klopt: bij x = 0 lees je de beginwaarde af.",
+       "Nee, dat is de helling.",
+       "Nee, dat is waar de grafiek de x-as snijdt.",
+       "Nee, dat hoort bij periodieke functies."
+      ],
+      "uh": "Bij x = 0 op de y-as lees je de beginwaarde af."
      },
      {
       "v": "Hoe herken je een lineair verband in een grafiek?",
       "o": [
-       "Een rechte lijn: constante stijging per eenheid op de x-as",
-       "Een parabool: symmetrisch kwadratisch verband",
-       "Een afvlakkende curve: steeds langzamer stijgend",
-       "Een S-curve: eerst snel dan langzamer"
+       "aan een dalende kromme",
+       "aan een rechte lijn met een constante stijging per eenheid",
+       "aan een parabool",
+       "aan een sinusgolf"
       ],
-      "c": 0,
-      "u": "Lineair: rechte lijn, y = ax + b. Constante helling a. Kwadratisch: parabool. Exponentieel: afvlakkend of stijgend naar een asymptoot."
+      "c": 1,
+      "d": 2,
+      "u": "Lineair betekent een rechte lijn.",
+      "uo": [
+       "Nee, dat is geen rechte lijn.",
+       "Klopt: lineair betekent een rechte lijn.",
+       "Nee, dat is kwadratisch.",
+       "Nee, dat is goniometrisch."
+      ],
+      "uh": "Lineair verband: een rechte lijn met constante stijging."
      },
      {
       "v": "Wat is substitutie bij het oplossen van een stelsel vergelijkingen?",
       "o": [
-       "Druk één variabele uit in de andere en vervang dit in de tweede vergelijking",
-       "Trek de vergelijkingen van elkaar af",
-       "Vermenigvuldig beide vergelijkingen met een constante",
-       "Gebruik de abc-formule"
+       "de grafieken inkleuren",
+       "beide vergelijkingen optellen",
+       "één variabele uitdrukken in de andere en dat invullen",
+       "alles door 2 delen"
       ],
-      "c": 0,
-      "u": "Substitutie: herleid bijv. y = 3x − 2 uit de eerste vergelijking en vervang y in de tweede. Zo blijft er één vergelijking in één onbekende over."
+      "c": 2,
+      "d": 3,
+      "u": "Je vervangt een variabele door een uitdrukking.",
+      "uo": [
+       "Nee, dat helpt niet.",
+       "Nee, dat is de eliminatiemethode.",
+       "Klopt: je vervangt een variabele door een uitdrukking.",
+       "Nee, dat lost het stelsel niet op."
+      ],
+      "uh": "Substitutie: één variabele uitdrukken en invullen."
      },
      {
-      "v": "Wat betekent «Modelleercyclus»?",
+      "v": "Bereken de richtingscoëfficiënt van de lijn door (0, 1) en (2, 7).",
       "o": [
-       "de lengte van één herhaling van een periodieke functie",
-       "een punt waar de helling nul is",
-       "het punt waar de grafiek van hol naar bol overgaat",
-       "probleem → model → rekenen → terugvertalen"
+       "4",
+       "6",
+       "2",
+       "3"
       ],
       "c": 3,
-      "u": "«Modelleercyclus» betekent: probleem → model → rekenen → terugvertalen.",
-      "d": 1
+      "d": 2,
+      "u": "(7 − 1)/(2 − 0) = 3.",
+      "uo": [
+       "Nee, 6/2 = 3.",
+       "Nee, dat is alleen Δy.",
+       "Nee, dat is alleen Δx.",
+       "Klopt: (7 − 1)/(2 − 0) = 3."
+      ],
+      "uh": "Richtingscoëfficiënt: rc = Δy gedeeld door Δx."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"probleem → model → rekenen → terugvertalen\"?",
+      "v": "Ontbind in factoren: x² − 9.",
       "o": [
-       "Hellingen",
-       "Transformaties",
-       "Modelleercyclus",
+       "(x − 3)(x + 3)",
+       "(x − 3)²",
+       "(x + 9)(x − 1)",
+       "(x − 9)(x + 1)"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Verschil van kwadraten.",
+      "uo": [
+       "Klopt: verschil van kwadraten.",
+       "Nee, dat geeft x² − 6x + 9.",
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Verschil van kwadraten: a² − b² = (a − b)(a + b)."
+     },
+     {
+      "v": "Los op: 2x + 6 = 0.",
+      "o": [
+       "x = 3",
+       "x = −3",
+       "x = −6",
+       "x = 6"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "2x = −6, dus x = −3.",
+      "uo": [
+       "Nee, let op het minteken.",
+       "Klopt: 2x = −6, dus x = −3.",
+       "Nee, je moet nog door 2 delen.",
+       "Nee, dat teken en die deling kloppen niet."
+      ],
+      "uh": "Haal de losse term over en deel door de factor."
+     },
+     {
+      "v": "Wat is de discriminant D en wat betekent D < 0?",
+      "o": [
+       "D = 2a; D < 0 betekent één oplossing",
+       "D = b + c; D < 0 betekent twee oplossingen",
+       "D = b² − 4ac; D < 0 betekent geen reële oplossingen",
+       "D bestaat niet"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Bij D < 0 zijn er geen reële oplossingen.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, de formule klopt niet.",
+       "Klopt: bij D < 0 zijn er geen reële oplossingen.",
+       "Nee, D bestaat wel."
+      ],
+      "uh": "De discriminant D = b² − 4ac telt de reële oplossingen."
+     },
+     {
+      "v": "Herleid: (x − 1)(x + 1).",
+      "o": [
+       "x² − x − 1",
+       "x² + 1",
+       "x² − 2x + 1",
+       "x² − 1"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Verschil van kwadraten, x² − 1.",
+      "uo": [
+       "Nee, de kruistermen vallen weg.",
+       "Nee, het teken klopt niet.",
+       "Nee, dat is (x − 1)².",
+       "Klopt: verschil van kwadraten, x² − 1."
+      ],
+      "uh": "Merkwaardig product: (a − b)(a + b) = a² − b²."
+     },
+     {
+      "v": "Wat betekent exact rekenen?",
+      "o": [
+       "met breuken en wortels doorrekenen zonder af te ronden",
+       "altijd op twee decimalen afronden",
+       "de rekenmachine gebruiken",
+       "alleen met hele getallen werken"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Exact is zonder afronden doorrekenen.",
+      "uo": [
+       "Klopt: exact is zonder afronden doorrekenen.",
+       "Nee, dat is juist afgerond.",
+       "Nee, dat geeft vaak een benadering.",
+       "Nee, breuken en wortels mogen juist."
+      ],
+      "uh": "Exact rekenen: doorrekenen met breuken en wortels."
+     },
+     {
+      "v": "Los op: x² = 16.",
+      "o": [
+       "x = 4",
+       "x = ±4",
+       "x = 8",
+       "x = ±8"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Zowel 4 als −4 in het kwadraat geeft 16.",
+      "uo": [
+       "Nee, je mist de negatieve oplossing.",
+       "Klopt: zowel 4 als −4 in het kwadraat geeft 16.",
+       "Nee, 8² = 64.",
+       "Nee, √16 = 4."
+      ],
+      "uh": "De vergelijking x² = a heeft twee oplossingen: x = ±√a."
+     },
+     {
+      "v": "Wat is de oplossing van een stelsel van twee vergelijkingen?",
+      "o": [
+       "het snijpunt met de y-as",
+       "de som van beide vergelijkingen",
+       "de waarden van x en y die aan beide vergelijkingen voldoen",
+       "het grootste getal"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De oplossing voldoet aan beide.",
+      "uo": [
+       "Nee, dat is één punt van één lijn.",
+       "Nee, dat is een tussenstap, geen oplossing.",
+       "Klopt: de oplossing voldoet aan beide.",
+       "Nee, dat is geen oplossing."
+      ],
+      "uh": "Een stelsel: de x en y die aan beide vergelijkingen voldoen."
+     },
+     {
+      "v": "Wat is de richtingscoëfficiënt van y = 3x − 2?",
+      "o": [
+       "1",
+       "−2",
+       "2",
+       "3"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De rc is de factor voor x, dus 3.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat is de beginwaarde.",
+       "Nee, dat klopt niet.",
+       "Klopt: de rc is de factor voor x, dus 3."
+      ],
+      "uh": "In y = a·x + b is a de richtingscoëfficiënt."
+     },
+     {
+      "v": "Een rechte lijn met een constante stijging per stap. Welk begrip past hierbij?",
+      "o": [
+       "Lineair verband",
+       "Exact rekenen",
+       "Herleiden",
+       "Stelsel vergelijkingen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een rechte lijn met een constante stijging per stap. Dat past bij Lineair verband: rechte lijn.",
+      "uo": [
+       "Klopt: rechte lijn.",
+       "Nee, dat hoort bij Exact rekenen: niet afronden.",
+       "Nee, dat hoort bij Herleiden: eenvoudiger schrijven.",
+       "Nee, dat hoort bij Stelsel vergelijkingen: twee vergelijkingen samen."
+      ],
+      "uh": "Lineair verband: rechte lijn."
+     },
+     {
+      "v": "Het getal b kwadraat min 4ac dat het aantal oplossingen bepaalt. Om welk begrip gaat het?",
+      "o": [
+       "Substitutie",
+       "Discriminant",
+       "Richtingscoëfficiënt",
+       "Exact rekenen"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het getal b kwadraat min 4ac dat het aantal oplossingen bepaalt. Dat past bij Discriminant: b² − 4ac.",
+      "uo": [
+       "Nee, dat hoort bij Substitutie: invullen in de andere vergelijking.",
+       "Klopt: b² − 4ac.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: helling Δy/Δx.",
+       "Nee, dat hoort bij Exact rekenen: niet afronden."
+      ],
+      "uh": "Discriminant: b² − 4ac."
+     },
+     {
+      "v": "De uitdrukking b kwadraat min 4ac. Welk begrip herken je hier?",
+      "o": [
+       "Richtingscoëfficiënt",
+       "Kwadratische vergelijking",
+       "Discriminant",
+       "Substitutie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De uitdrukking b kwadraat min 4ac. Dat past bij Discriminant: b² − 4ac.",
+      "uo": [
+       "Nee, dat hoort bij Richtingscoëfficiënt: helling Δy/Δx.",
+       "Nee, dat hoort bij Kwadratische vergelijking: hoogste macht x².",
+       "Klopt: b² − 4ac.",
+       "Nee, dat hoort bij Substitutie: invullen in de andere vergelijking."
+      ],
+      "uh": "Discriminant: b² − 4ac."
+     },
+     {
+      "v": "Een som als product schrijven. Wat is hier aan de hand?",
+      "o": [
+       "Kwadratische vergelijking",
+       "Stelsel vergelijkingen",
+       "Exact rekenen",
+       "Ontbinden in factoren"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een som als product schrijven. Dat past bij Ontbinden in factoren: som als product.",
+      "uo": [
+       "Nee, dat hoort bij Kwadratische vergelijking: hoogste macht x².",
+       "Nee, dat hoort bij Stelsel vergelijkingen: twee vergelijkingen samen.",
+       "Nee, dat hoort bij Exact rekenen: niet afronden.",
+       "Klopt: som als product."
+      ],
+      "uh": "Ontbinden in factoren: som als product."
+     },
+     {
+      "v": "Je schrijft x kwadraat min negen als een product van twee haakjes. Welk begrip past hierbij?",
+      "o": [
+       "Ontbinden in factoren",
+       "Herleiden",
+       "Beginwaarde",
+       "Richtingscoëfficiënt"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Je schrijft x kwadraat min negen als een product van twee haakjes. Dat past bij Ontbinden in factoren: som als product.",
+      "uo": [
+       "Klopt: som als product.",
+       "Nee, dat hoort bij Herleiden: eenvoudiger schrijven.",
+       "Nee, dat hoort bij Beginwaarde: waarde bij x = 0.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: helling Δy/Δx."
+      ],
+      "uh": "Ontbinden in factoren: som als product."
+     },
+     {
+      "v": "Een vergelijking met x kwadraat. Om welk begrip gaat het?",
+      "o": [
+       "Exact rekenen",
+       "Kwadratische vergelijking",
+       "Ontbinden in factoren",
+       "Herleiden"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een vergelijking met x kwadraat. Dat past bij Kwadratische vergelijking: hoogste macht x².",
+      "uo": [
+       "Nee, dat hoort bij Exact rekenen: niet afronden.",
+       "Klopt: hoogste macht x².",
+       "Nee, dat hoort bij Ontbinden in factoren: som als product.",
+       "Nee, dat hoort bij Herleiden: eenvoudiger schrijven."
+      ],
+      "uh": "Kwadratische vergelijking: hoogste macht x²."
+     },
+     {
+      "v": "Een uitdrukking eenvoudiger schrijven. Welk begrip herken je hier?",
+      "o": [
+       "Beginwaarde",
+       "Ontbinden in factoren",
+       "Herleiden",
+       "Exact rekenen"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een uitdrukking eenvoudiger schrijven. Dat past bij Herleiden: eenvoudiger schrijven.",
+      "uo": [
+       "Nee, dat hoort bij Beginwaarde: waarde bij x = 0.",
+       "Nee, dat hoort bij Ontbinden in factoren: som als product.",
+       "Klopt: eenvoudiger schrijven.",
+       "Nee, dat hoort bij Exact rekenen: niet afronden."
+      ],
+      "uh": "Herleiden: eenvoudiger schrijven."
+     },
+     {
+      "v": "Je werkt de haakjes weg en schrijft het zo eenvoudig mogelijk. Wat is hier aan de hand?",
+      "o": [
+       "Exact rekenen",
+       "Substitutie",
+       "Beginwaarde",
+       "Herleiden"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Je werkt de haakjes weg en schrijft het zo eenvoudig mogelijk. Dat past bij Herleiden: eenvoudiger schrijven.",
+      "uo": [
+       "Nee, dat hoort bij Exact rekenen: niet afronden.",
+       "Nee, dat hoort bij Substitutie: invullen in de andere vergelijking.",
+       "Nee, dat hoort bij Beginwaarde: waarde bij x = 0.",
+       "Klopt: eenvoudiger schrijven."
+      ],
+      "uh": "Herleiden: eenvoudiger schrijven."
+     },
+     {
+      "v": "Twee vergelijkingen met een gemeenschappelijke oplossing. Welk begrip past hierbij?",
+      "o": [
+       "Stelsel vergelijkingen",
+       "Substitutie",
+       "Richtingscoëfficiënt",
+       "Herleiden"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Twee vergelijkingen met een gemeenschappelijke oplossing. Dat past bij Stelsel vergelijkingen: twee vergelijkingen samen.",
+      "uo": [
+       "Klopt: twee vergelijkingen samen.",
+       "Nee, dat hoort bij Substitutie: invullen in de andere vergelijking.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: helling Δy/Δx.",
+       "Nee, dat hoort bij Herleiden: eenvoudiger schrijven."
+      ],
+      "uh": "Stelsel vergelijkingen: twee vergelijkingen samen."
+     },
+     {
+      "v": "Twee vergelijkingen die je samen oplost voor x en y. Om welk begrip gaat het?",
+      "o": [
+       "Richtingscoëfficiënt",
+       "Stelsel vergelijkingen",
+       "Beginwaarde",
        "Discriminant"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Modelleercyclus»: probleem → model → rekenen → terugvertalen.",
-      "d": 2
+      "c": 1,
+      "d": 1,
+      "u": "Twee vergelijkingen die je samen oplost voor x en y. Dat past bij Stelsel vergelijkingen: twee vergelijkingen samen.",
+      "uo": [
+       "Nee, dat hoort bij Richtingscoëfficiënt: helling Δy/Δx.",
+       "Klopt: twee vergelijkingen samen.",
+       "Nee, dat hoort bij Beginwaarde: waarde bij x = 0.",
+       "Nee, dat hoort bij Discriminant: b² − 4ac."
+      ],
+      "uh": "Stelsel vergelijkingen: twee vergelijkingen samen."
      },
      {
-      "v": "Welke term past bij: \"probleem → model → rekenen → terugvertalen\"?",
+      "v": "Een variabele uitdrukken en invullen. Welk begrip herken je hier?",
       "o": [
-       "Tegenvoorbeeld",
-       "Verband herkennen",
-       "Modelleercyclus",
-       "Interpoleren/extrapoleren"
+       "Richtingscoëfficiënt",
+       "Stelsel vergelijkingen",
+       "Substitutie",
+       "Kwadratische vergelijking"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Modelleercyclus»: probleem → model → rekenen → terugvertalen.",
-      "d": 3
+      "d": 3,
+      "u": "Een variabele uitdrukken en invullen. Dat past bij Substitutie: invullen in de andere vergelijking.",
+      "uo": [
+       "Nee, dat hoort bij Richtingscoëfficiënt: helling Δy/Δx.",
+       "Nee, dat hoort bij Stelsel vergelijkingen: twee vergelijkingen samen.",
+       "Klopt: invullen in de andere vergelijking.",
+       "Nee, dat hoort bij Kwadratische vergelijking: hoogste macht x²."
+      ],
+      "uh": "Substitutie: invullen in de andere vergelijking."
      },
      {
-      "v": "Wat houdt «Modelleercyclus» in?",
+      "v": "Doorrekenen zonder af te ronden. Wat is hier aan de hand?",
       "o": [
-       "lineair, kwadratisch, exponentieel",
-       "probleem → model → rekenen → terugvertalen",
-       "de tweede verschillen zijn gelijk",
-       "binnen/buiten het meetbereik schatten"
+       "Stelsel vergelijkingen",
+       "Substitutie",
+       "Richtingscoëfficiënt",
+       "Exact rekenen"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Doorrekenen zonder af te ronden. Dat past bij Exact rekenen: niet afronden.",
+      "uo": [
+       "Nee, dat hoort bij Stelsel vergelijkingen: twee vergelijkingen samen.",
+       "Nee, dat hoort bij Substitutie: invullen in de andere vergelijking.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: helling Δy/Δx.",
+       "Klopt: niet afronden."
+      ],
+      "uh": "Exact rekenen: niet afronden."
+     },
+     {
+      "v": "De startwaarde van een verband. Welk begrip past hierbij?",
+      "o": [
+       "Beginwaarde",
+       "Richtingscoëfficiënt",
+       "Stelsel vergelijkingen",
+       "Kwadratische vergelijking"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De startwaarde van een verband. Dat past bij Beginwaarde: waarde bij x = 0.",
+      "uo": [
+       "Klopt: waarde bij x = 0.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: helling Δy/Δx.",
+       "Nee, dat hoort bij Stelsel vergelijkingen: twee vergelijkingen samen.",
+       "Nee, dat hoort bij Kwadratische vergelijking: hoogste macht x²."
+      ],
+      "uh": "Beginwaarde: waarde bij x = 0."
+     },
+     {
+      "v": "Een vergelijking waarin x kwadraat de hoogste macht is. Om welk begrip gaat het?",
+      "o": [
+       "Exact rekenen",
+       "Kwadratische vergelijking",
+       "Ontbinden in factoren",
+       "Herleiden"
       ],
       "c": 1,
-      "u": "«Modelleercyclus» betekent: probleem → model → rekenen → terugvertalen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Representaties»?",
-      "o": [
-       "een verband waarvan de grafiek een parabool is",
-       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
-       "tabel, grafiek, formule, woorden",
-       "de lijn die de grafiek in precies één punt raakt"
+      "d": 1,
+      "u": "Een vergelijking waarin x kwadraat de hoogste macht is. Dat past bij Kwadratische vergelijking: hoogste macht x².",
+      "uo": [
+       "Nee, dat hoort bij Exact rekenen: niet afronden.",
+       "Klopt: hoogste macht x².",
+       "Nee, dat hoort bij Ontbinden in factoren: som als product.",
+       "Nee, dat hoort bij Herleiden: eenvoudiger schrijven."
       ],
-      "c": 2,
-      "u": "«Representaties» betekent: tabel, grafiek, formule, woorden.",
-      "d": 1
+      "uh": "Kwadratische vergelijking: hoogste macht x²."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"tabel, grafiek, formule, woorden\"?",
+      "v": "Een verband met een rechte lijn. Welk begrip herken je hier?",
       "o": [
-       "Gelijkvormig",
+       "Discriminant",
+       "Kwadratische vergelijking",
        "Lineair verband",
-       "Functie",
-       "Representaties"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Representaties»: tabel, grafiek, formule, woorden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"tabel, grafiek, formule, woorden\"?",
-      "o": [
-       "Interpoleren/extrapoleren",
-       "Lineair",
-       "Kwadratisch",
-       "Representaties"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Representaties»: tabel, grafiek, formule, woorden.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Representaties» in?",
-      "o": [
-       "gelijke stappen erbij/eraf (+ vast getal)",
-       "tabel, grafiek, formule, woorden",
-       "binnen/buiten het meetbereik schatten",
-       "één geval dat een bewering weerlegt"
-      ],
-      "c": 1,
-      "u": "«Representaties» betekent: tabel, grafiek, formule, woorden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verband herkennen»?",
-      "o": [
-       "het punt waar de grafiek van hol naar bol overgaat",
-       "derde zijde uit twee zijden + ingesloten hoek",
-       "lineair, kwadratisch, exponentieel",
-       "zijde/hoek in willekeurige driehoek"
+       "Substitutie"
       ],
       "c": 2,
-      "u": "«Verband herkennen» betekent: lineair, kwadratisch, exponentieel.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"lineair, kwadratisch, exponentieel\"?",
-      "o": [
-       "Gelijkvormig",
-       "Tegenvoorbeeld",
-       "Verband herkennen",
-       "Kwadratisch verband"
+      "d": 3,
+      "u": "Een verband met een rechte lijn. Dat past bij Lineair verband: rechte lijn.",
+      "uo": [
+       "Nee, dat hoort bij Discriminant: b² − 4ac.",
+       "Nee, dat hoort bij Kwadratische vergelijking: hoogste macht x².",
+       "Klopt: rechte lijn.",
+       "Nee, dat hoort bij Substitutie: invullen in de andere vergelijking."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Verband herkennen»: lineair, kwadratisch, exponentieel.",
-      "d": 2
+      "uh": "Lineair verband: rechte lijn."
      },
      {
-      "v": "Welke term past bij: \"lineair, kwadratisch, exponentieel\"?",
+      "v": "De a in y is ax plus b. Wat is hier aan de hand?",
       "o": [
-       "Verband herkennen",
-       "Representaties",
-       "Kwadratisch",
-       "Tegenvoorbeeld"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Verband herkennen»: lineair, kwadratisch, exponentieel.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Verband herkennen» in?",
-      "o": [
-       "lineair, kwadratisch, exponentieel",
-       "probleem → model → rekenen → terugvertalen",
-       "één geval dat een bewering weerlegt",
-       "de tweede verschillen zijn gelijk"
-      ],
-      "c": 0,
-      "u": "«Verband herkennen» betekent: lineair, kwadratisch, exponentieel.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Interpoleren/extrapoleren»?",
-      "o": [
-       "dezelfde vorm maar mogelijk een andere grootte",
-       "binnen/buiten het meetbereik schatten",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand",
-       "algebraïsch of met de GR oplossen"
-      ],
-      "c": 1,
-      "u": "«Interpoleren/extrapoleren» betekent: binnen/buiten het meetbereik schatten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"binnen/buiten het meetbereik schatten\"?",
-      "o": [
-       "Differentiëren",
-       "Interpoleren/extrapoleren",
-       "Lineair",
-       "Hellinggrafiek"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Interpoleren/extrapoleren»: binnen/buiten het meetbereik schatten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"binnen/buiten het meetbereik schatten\"?",
-      "o": [
-       "Lineair",
-       "Interpoleren/extrapoleren",
-       "Kwadratisch",
-       "Verband herkennen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Interpoleren/extrapoleren»: binnen/buiten het meetbereik schatten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Interpoleren/extrapoleren» in?",
-      "o": [
-       "binnen/buiten het meetbereik schatten",
-       "tabel, grafiek, formule, woorden",
-       "gelijke stappen erbij/eraf (+ vast getal)",
-       "de tweede verschillen zijn gelijk"
-      ],
-      "c": 0,
-      "u": "«Interpoleren/extrapoleren» betekent: binnen/buiten het meetbereik schatten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Tegenvoorbeeld»?",
-      "o": [
-       "een grootheid met een lengte en een richting",
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
-       "de lijn die de grafiek in precies één punt raakt",
-       "één geval dat een bewering weerlegt"
+       "Stelsel vergelijkingen",
+       "Exact rekenen",
+       "Herleiden",
+       "Richtingscoëfficiënt"
       ],
       "c": 3,
-      "u": "«Tegenvoorbeeld» betekent: één geval dat een bewering weerlegt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"één geval dat een bewering weerlegt\"?",
-      "o": [
-       "Transformaties",
-       "Asymptoten",
-       "Tegenvoorbeeld",
-       "Buigpunt"
+      "d": 1,
+      "u": "De a in y is ax plus b. Dat past bij Richtingscoëfficiënt: helling Δy/Δx.",
+      "uo": [
+       "Nee, dat hoort bij Stelsel vergelijkingen: twee vergelijkingen samen.",
+       "Nee, dat hoort bij Exact rekenen: niet afronden.",
+       "Nee, dat hoort bij Herleiden: eenvoudiger schrijven.",
+       "Klopt: helling Δy/Δx."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Tegenvoorbeeld»: één geval dat een bewering weerlegt.",
-      "d": 2
+      "uh": "Richtingscoëfficiënt: helling Δy/Δx."
      },
      {
-      "v": "Welke term past bij: \"één geval dat een bewering weerlegt\"?",
+      "v": "De waarde die je op de y-as afleest als x nul is. Welk begrip past hierbij?",
       "o": [
-       "Tegenvoorbeeld",
-       "Modelleercyclus",
-       "Lineair",
-       "Representaties"
+       "Beginwaarde",
+       "Richtingscoëfficiënt",
+       "Exact rekenen",
+       "Kwadratische vergelijking"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Tegenvoorbeeld»: één geval dat een bewering weerlegt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Tegenvoorbeeld» in?",
-      "o": [
-       "één geval dat een bewering weerlegt",
-       "gelijke stappen erbij/eraf (+ vast getal)",
-       "probleem → model → rekenen → terugvertalen",
-       "lineair, kwadratisch, exponentieel"
+      "d": 2,
+      "u": "De waarde die je op de y-as afleest als x nul is. Dat past bij Beginwaarde: waarde bij x = 0.",
+      "uo": [
+       "Klopt: waarde bij x = 0.",
+       "Nee, dat hoort bij Richtingscoëfficiënt: helling Δy/Δx.",
+       "Nee, dat hoort bij Exact rekenen: niet afronden.",
+       "Nee, dat hoort bij Kwadratische vergelijking: hoogste macht x²."
       ],
-      "c": 0,
-      "u": "«Tegenvoorbeeld» betekent: één geval dat een bewering weerlegt.",
-      "d": 3
+      "uh": "Beginwaarde: waarde bij x = 0."
      },
      {
-      "v": "Wat betekent «Lineair»?",
+      "v": "De helling: hoeveel y stijgt als x met 1 toeneemt. Om welk begrip gaat het?",
       "o": [
-       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
-       "gelijke stappen erbij/eraf (+ vast getal)",
-       "lineair, kwadratisch, exponentieel",
-       "de verzameling toegestane invoerwaarden"
+       "Beginwaarde",
+       "Richtingscoëfficiënt",
+       "Stelsel vergelijkingen",
+       "Lineair verband"
       ],
       "c": 1,
-      "u": "«Lineair» betekent: gelijke stappen erbij/eraf (+ vast getal).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gelijke stappen erbij/eraf (+ vast getal)\"?",
-      "o": [
-       "Nulpunt",
-       "Periode",
-       "Verband herkennen",
-       "Lineair"
+      "d": 3,
+      "u": "De helling: hoeveel y stijgt als x met 1 toeneemt. Dat past bij Richtingscoëfficiënt: helling Δy/Δx.",
+      "uo": [
+       "Nee, dat hoort bij Beginwaarde: waarde bij x = 0.",
+       "Klopt: helling Δy/Δx.",
+       "Nee, dat hoort bij Stelsel vergelijkingen: twee vergelijkingen samen.",
+       "Nee, dat hoort bij Lineair verband: rechte lijn."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Lineair»: gelijke stappen erbij/eraf (+ vast getal).",
-      "d": 2
+      "uh": "Richtingscoëfficiënt: helling Δy/Δx."
      },
      {
-      "v": "Welke term past bij: \"gelijke stappen erbij/eraf (+ vast getal)\"?",
+      "v": "Je drukt y uit in x en vult dat in de andere vergelijking in. Welk begrip herken je hier?",
       "o": [
-       "Tegenvoorbeeld",
-       "Lineair",
-       "Interpoleren/extrapoleren",
-       "Representaties"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Lineair»: gelijke stappen erbij/eraf (+ vast getal).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Lineair» in?",
-      "o": [
-       "één geval dat een bewering weerlegt",
-       "de tweede verschillen zijn gelijk",
-       "probleem → model → rekenen → terugvertalen",
-       "gelijke stappen erbij/eraf (+ vast getal)"
-      ],
-      "c": 3,
-      "u": "«Lineair» betekent: gelijke stappen erbij/eraf (+ vast getal).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Kwadratisch»?",
-      "o": [
-       "de vloeiende kromme die hoort bij een kwadratische functie",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "de tweede verschillen zijn gelijk",
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt"
+       "Exact rekenen",
+       "Beginwaarde",
+       "Substitutie",
+       "Kwadratische vergelijking"
       ],
       "c": 2,
-      "u": "«Kwadratisch» betekent: de tweede verschillen zijn gelijk.",
-      "d": 1
+      "d": 1,
+      "u": "Je drukt y uit in x en vult dat in de andere vergelijking in. Dat past bij Substitutie: invullen in de andere vergelijking.",
+      "uo": [
+       "Nee, dat hoort bij Exact rekenen: niet afronden.",
+       "Nee, dat hoort bij Beginwaarde: waarde bij x = 0.",
+       "Klopt: invullen in de andere vergelijking.",
+       "Nee, dat hoort bij Kwadratische vergelijking: hoogste macht x²."
+      ],
+      "uh": "Substitutie: invullen in de andere vergelijking."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de tweede verschillen zijn gelijk\"?",
+      "v": "Je laat wortels en breuken staan in plaats van af te ronden. Wat is hier aan de hand?",
       "o": [
-       "Asymptoot",
-       "Functietypen",
-       "Kwadratisch",
-       "Lineair"
+       "Lineair verband",
+       "Herleiden",
+       "Kwadratische vergelijking",
+       "Exact rekenen"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Kwadratisch»: de tweede verschillen zijn gelijk.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de tweede verschillen zijn gelijk\"?",
-      "o": [
-       "Kwadratisch",
-       "Lineair",
-       "Interpoleren/extrapoleren",
-       "Verband herkennen"
+      "c": 3,
+      "d": 2,
+      "u": "Je laat wortels en breuken staan in plaats van af te ronden. Dat past bij Exact rekenen: niet afronden.",
+      "uo": [
+       "Nee, dat hoort bij Lineair verband: rechte lijn.",
+       "Nee, dat hoort bij Herleiden: eenvoudiger schrijven.",
+       "Nee, dat hoort bij Kwadratische vergelijking: hoogste macht x².",
+       "Klopt: niet afronden."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Kwadratisch»: de tweede verschillen zijn gelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Kwadratisch» in?",
-      "o": [
-       "de tweede verschillen zijn gelijk",
-       "probleem → model → rekenen → terugvertalen",
-       "gelijke stappen erbij/eraf (+ vast getal)",
-       "binnen/buiten het meetbereik schatten"
-      ],
-      "c": 0,
-      "u": "«Kwadratisch» betekent: de tweede verschillen zijn gelijk.",
-      "d": 3
+      "uh": "Exact rekenen: niet afronden."
      }
     ],
     "oe": [
@@ -69103,32 +69342,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Modelleercyclus",
-      "d": "probleem → model → rekenen → terugvertalen"
+      "t": "Beginwaarde",
+      "d": "de waarde die je op de y-as afleest bij x = 0"
      },
      {
-      "t": "Representaties",
-      "d": "tabel, grafiek, formule, woorden"
+      "t": "Lineair verband",
+      "d": "een verband met een rechte lijn en een constante stijging"
      },
      {
-      "t": "Verband herkennen",
-      "d": "lineair, kwadratisch, exponentieel"
+      "t": "Substitutie",
+      "d": "één variabele uitdrukken en invullen in de andere vergelijking"
      },
      {
-      "t": "Interpoleren/extrapoleren",
-      "d": "binnen/buiten het meetbereik schatten"
+      "t": "Stelsel vergelijkingen",
+      "d": "twee vergelijkingen met een gemeenschappelijke oplossing"
      },
      {
-      "t": "Tegenvoorbeeld",
-      "d": "één geval dat een bewering weerlegt"
+      "t": "Richtingscoëfficiënt",
+      "d": "de helling Δy/Δx van een rechte lijn"
      },
      {
-      "t": "Lineair",
-      "d": "gelijke stappen erbij/eraf (+ vast getal)"
+      "t": "Herleiden",
+      "d": "een uitdrukking zo eenvoudig mogelijk schrijven"
      },
      {
-      "t": "Kwadratisch",
-      "d": "de tweede verschillen zijn gelijk"
+      "t": "Kwadratische vergelijking",
+      "d": "een vergelijking met x² als hoogste macht"
+     },
+     {
+      "t": "Discriminant",
+      "d": "D = b² − 4ac, bepaalt het aantal reële oplossingen"
+     },
+     {
+      "t": "Ontbinden in factoren",
+      "d": "een som als product van factoren schrijven"
+     },
+     {
+      "t": "Exact rekenen",
+      "d": "met breuken en wortels doorrekenen zonder af te ronden"
      }
     ]
    },
@@ -69148,623 +69399,615 @@ var VAKKEN = [
      "B1: Exponentiële functies (CE)",
      "B1: Vergelijkingen oplossen (CE)"
     ],
-    "sam": "<div class=\"sam-head\">Functiesoorten</div><ul><li><strong>Lineaire functie</strong>: <span class=\"fm\">f(x) = ax + b</span>. Rechte lijn. a = helling (richtingscoëfficiënt), b = beginwaarde (snijpunt y-as). Nulpunt bij x = −b/a.</li><li><strong>Kwadratische functie</strong>: <span class=\"fm\">f(x) = ax² + bx + c</span>. Parabool. a &gt; 0: dalparabool. a &lt; 0: bergparabool. Top bij x = −b/(2a). Discriminant D = b² − 4ac bepaalt het aantal nulpunten.</li><li><strong>Exponentiële functie</strong>: <span class=\"fm\">f(x) = a · gˣ</span>. Horizontale asymptoot bij y = 0 (als a &gt; 0). g &gt; 1 = stijgend. 0 &lt; g &lt; 1 = dalend.</li><li><strong>Logaritmische functie</strong>: <span class=\"fm\">f(x) = log_a(x)</span>. Domein: x &gt; 0. Verticale asymptoot bij x = 0. Inverse van de exponentiële functie.</li><li><strong>Goniometrische functies</strong>: <span class=\"fm\">y = a·sin(bx + c) + d</span>. Amplitude = |a|. Periode = 2π/b. Middellijn y = d.</li></ul><div class=\"sam-head\">Grafieken schetsen en analyseren</div><ul><li><strong>Nulpunten</strong>: stel f(x) = 0 en los op. Snijpunt y-as bij f(0).</li><li><strong>Asymptoten</strong>: horizontale asymptoot y = d bij exponentiële functies. Verticale asymptoot bij nuldelers of logaritmische functies.</li><li><strong>Snijpunten van twee grafieken</strong>: stel f(x) = g(x), los op naar x, substitueer terug voor y-coördinaat.</li></ul><div class=\"sam-head\">Transformaties van grafieken</div><ul><li><strong>Verticaal schuiven</strong>: f(x) + d → grafiek d omhoog (d &gt; 0).</li><li><strong>Horizontaal schuiven</strong>: f(x − c) → grafiek c naar rechts. f(x + c) → grafiek c naar links.</li><li><strong>Verticaal rekken/persen</strong>: a·f(x) → y-waarden·a. |a| &gt; 1 = uitrekken. 0 &lt; |a| &lt; 1 = inpersen. a &lt; 0 = ook spiegeling in x-as.</li><li><strong>Spiegelen</strong>: −f(x) = spiegeling in x-as. f(−x) = spiegeling in y-as.</li></ul><div class=\"sam-head\">Vergelijkingen oplossen</div><ul><li><strong>Kwadratisch</strong>: <span class=\"fm\">x = (−b ± √(b²−4ac)) / 2a</span>. D &gt; 0: twee oplossingen. D = 0: één. D &lt; 0: geen reële oplossing.</li><li><strong>Exponentieel</strong>: a·gˣ = k → gˣ = k/a → x = log(k/a)/log(g). Logaritmeer altijd beide kanten.</li><li><strong>Breukvergelijking</strong>: vermenigvuldig met de noemer, los op, controleer of oplossing de noemer niet nul maakt.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Een <strong>functie</strong> geeft bij elke x precies één y. Met <strong>transformaties</strong> verschuif, spiegel of vervorm je een grafiek. Een <strong>asymptoot</strong> nadert de grafiek zonder te raken. <strong>Exponentiële</strong> en <strong>goniometrische</strong> functies hebben eigen kenmerken zoals <strong>periode</strong> en <strong>amplitude</strong>.</div><div class=\"sam-head\">1. Functies en transformaties</div><p>Een <strong>functie</strong> koppelt aan elke x precies één y. <strong>Transformaties</strong>: f(x − c) verschuift c naar rechts, f(x) + c omhoog, en −f(x) is een <strong>spiegeling</strong> in de x-as. <strong>Snijpunten</strong> van f en g vind je door f(x) = g(x) op te lossen. Het <strong>domein</strong> zijn de toegestane x-waarden, het <strong>bereik</strong> de mogelijke y-waarden.</p><div class=\"sam-head\">2. Exponentieel en goniometrie</div><p>Een <strong>exponentiële vergelijking</strong> los je op door te <strong>logaritmeren</strong>. De <strong>horizontale asymptoot</strong> van f(x) = 3·2ˣ + 1 is y = 1. Voor een <strong>sinusfunctie</strong> y = a·sin(bx): de <strong>amplitude</strong> is |a| en de <strong>periode</strong> is 2π/b.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Functie</div><div class=\"sam-definitie-body\">een verband dat aan elke x precies één y toekent.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Transformatie</div><div class=\"sam-definitie-body\">een verschuiving, spiegeling of vervorming van een grafiek.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Asymptoot</div><div class=\"sam-definitie-body\">een lijn die de grafiek steeds dichter nadert zonder te raken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Exponentiële vergelijking</div><div class=\"sam-definitie-body\">een vergelijking met de onbekende in de exponent.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Amplitude</div><div class=\"sam-definitie-body\">de uitwijking |a| van een sinusfunctie a·sin(bx).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Periode</div><div class=\"sam-definitie-body\">de lengte 2π/b waarna een sinusfunctie zich herhaalt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Snijpunt</div><div class=\"sam-definitie-body\">een punt waar twee grafieken elkaar kruisen, uit f(x) = g(x).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Spiegeling</div><div class=\"sam-definitie-body\">de transformatie −f(x): spiegelen in de x-as.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Domein</div><div class=\"sam-definitie-body\">de verzameling toegestane x-waarden van een functie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bereik</div><div class=\"sam-definitie-body\">de verzameling mogelijke y-waarden van een functie.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Functie»</b> is elke x geeft één y, terwijl <b>«Transformatie»</b> grafiek bewerken is. <b>«Asymptoot»</b> is lijn die grafiek nadert, terwijl <b>«Periode»</b> 2π/b is. <b>«Exponentiële vergelijking»</b> is x in de exponent, terwijl <b>«Amplitude»</b> uitwijking |a| is. <b>«Amplitude»</b> is uitwijking |a|, terwijl <b>«Periode»</b> 2π/b is.</div>",
     "sv": [
      {
       "v": "Wat is een functie in de wiskunde?",
       "o": [
-       "Elke x geeft precies één y",
-       "Elke y geeft precies één x",
-       "Een vergelijking met twee variabelen",
-       "Altijd een rechte lijn"
+       "een verband dat aan elke x precies één y toekent",
+       "een verband met meerdere y per x",
+       "een willekeurige verzameling punten",
+       "een rechte lijn"
       ],
       "c": 0,
-      "u": "Een functie koppelt aan elke x-waarde precies één y-waarde. Een cirkel is geen functie: één x-waarde geeft dan twee y-waarden."
+      "d": 2,
+      "u": "Elke x heeft precies één y.",
+      "uo": [
+       "Klopt: elke x heeft precies één y.",
+       "Nee, dan is het geen functie.",
+       "Nee, er moet een regel zijn.",
+       "Nee, dat is maar één soort functie."
+      ],
+      "uh": "Functie: elke x geeft precies één y."
      },
      {
       "v": "Hoe verschuift f(x − 3) ten opzichte van f(x)?",
       "o": [
-       "3 naar rechts",
        "3 naar links",
+       "3 naar rechts",
        "3 omhoog",
        "3 omlaag"
       ],
-      "c": 0,
-      "u": "f(x − c) verschuift de grafiek c naar rechts. Tegenintuïtief: min in het argument = rechtsverschuiving. f(x + 3) = 3 naar links."
+      "c": 1,
+      "d": 3,
+      "u": "F(x − c) schuift c naar rechts.",
+      "uo": [
+       "Nee, dat is f(x + 3).",
+       "Klopt: f(x − c) schuift c naar rechts.",
+       "Nee, dat is f(x) + 3.",
+       "Nee, dat is f(x) − 3."
+      ],
+      "uh": "f(x − c) met c > 0: c naar rechts."
      },
      {
-      "v": "Wat is de horizontale asymptoot van f(x) = 3 · 2ˣ + 1?",
+      "v": "Wat is de horizontale asymptoot van f(x) = 3·2ˣ + 1?",
       "o": [
-       "y = 1",
-       "y = 3",
        "y = 0",
-       "y = 4"
+       "y = 3",
+       "y = 1",
+       "y = 2"
       ],
-      "c": 0,
-      "u": "Als x → −∞ nadert 2ˣ naar 0, dus f(x) → 1. Asymptoot: y = 1. Algemeen: f(x) = a·gˣ + d heeft asymptoot y = d."
+      "c": 2,
+      "d": 3,
+      "u": "De plus 1 tilt de asymptoot naar y = 1.",
+      "uo": [
+       "Nee, zonder de plus 1 was het y = 0.",
+       "Nee, 3 is de factor voor de macht.",
+       "Klopt: de plus 1 tilt de asymptoot naar y = 1.",
+       "Nee, 2 is het grondtal."
+      ],
+      "uh": "De constante term bepaalt de horizontale asymptoot."
      },
      {
       "v": "Hoe los je een exponentiële vergelijking op?",
       "o": [
-       "Logaritmeer beide kanten",
-       "Gebruik de abc-formule",
-       "Neem de wortel van beide kanten",
-       "Differentieer beide kanten"
+       "deel door x",
+       "kwadrateer beide kanten",
+       "tel bij beide kanten op",
+       "logaritmeer beide kanten"
       ],
-      "c": 0,
-      "u": "Bijv. 2ˣ = 50: log(2ˣ) = log 50 → x·log 2 = log 50 → x = log 50/log 2 ≈ 5,64."
+      "c": 3,
+      "d": 3,
+      "u": "Met de logaritme haal je x uit de exponent.",
+      "uo": [
+       "Nee, dat helpt niet.",
+       "Nee, dat helpt hier niet.",
+       "Nee, dat lost het niet op.",
+       "Klopt: met de logaritme haal je x uit de exponent."
+      ],
+      "uh": "Exponentiële vergelijking: logaritmeer beide kanten."
      },
      {
       "v": "Welke transformatie geeft −f(x) op de grafiek?",
       "o": [
-       "Spiegeling in de x-as",
-       "Spiegeling in de y-as",
-       "Verschuiving omlaag",
-       "Horizontale compressie"
+       "een spiegeling in de x-as",
+       "een spiegeling in de y-as",
+       "een verschuiving naar links",
+       "een verschuiving omhoog"
       ],
       "c": 0,
-      "u": "−f(x): alle y-waarden van teken wisselen → spiegeling in de x-as. f(−x): x-waarden wisselen → spiegeling in de y-as."
+      "d": 3,
+      "u": "Het minteken spiegelt in de x-as.",
+      "uo": [
+       "Klopt: het minteken spiegelt in de x-as.",
+       "Nee, dat is f(−x).",
+       "Nee, dat is een translatie.",
+       "Nee, dat is f(x) + c."
+      ],
+      "uh": "−f(x): spiegeling in de x-as."
      },
      {
-      "v": "Hoe vind je snijpunten van twee grafieken f en g?",
+      "v": "Hoe vind je de snijpunten van twee grafieken f en g?",
       "o": [
-       "Stel f(x) = g(x) en los op",
-       "Bereken f(0) en g(0)",
-       "Differentieer beide functies",
-       "Vermenigvuldig de functies met elkaar"
+       "tel f en g op",
+       "stel f(x) = g(x) en los op",
+       "trek f van g af en stop",
+       "teken alleen f"
       ],
-      "c": 0,
-      "u": "Stel f(x) = g(x): de x-waarden geven de snijpunten. Substitueer terug in f(x) voor de y-coördinaat."
+      "c": 1,
+      "d": 2,
+      "u": "Op een snijpunt zijn de y-waarden gelijk.",
+      "uo": [
+       "Nee, dat geeft geen snijpunt.",
+       "Klopt: op een snijpunt zijn de y-waarden gelijk.",
+       "Nee, je moet de vergelijking oplossen.",
+       "Nee, dan mis je g."
+      ],
+      "uh": "Snijpunten: los f(x) = g(x) op."
      },
      {
-      "v": "Wat is de amplitude van y = 4 · sin(x) + 1?",
+      "v": "Wat is de amplitude van y = 4·sin(x) + 1?",
       "o": [
-       "4 (factor vóór de sinus)",
-       "1 (verticale verschuiving)",
-       "5 (maximum van de functie)",
-       "3 (minimum van de functie)"
+       "5",
+       "1",
+       "4 (de factor voor de sinus)",
+       "2π"
       ],
-      "c": 0,
-      "u": "Amplitude = |a| = 4. De functie schommelt tussen 1 − 4 = −3 en 1 + 4 = 5. Middellijn y = 1."
+      "c": 2,
+      "d": 2,
+      "u": "De factor 4 is de amplitude.",
+      "uo": [
+       "Nee, dat is 4 + 1, geen amplitude.",
+       "Nee, dat is de verticale verschuiving.",
+       "Klopt: de factor 4 is de amplitude.",
+       "Nee, dat is een periode."
+      ],
+      "uh": "In a·sin(bx) is |a| de amplitude."
      },
      {
       "v": "Wat is de periode van y = sin(3x)?",
       "o": [
-       "2π/3",
-       "3·2π",
+       "π",
        "2π",
-       "1/3"
+       "3",
+       "2π/3"
       ],
-      "c": 0,
-      "u": "Periode = 2π/b = 2π/3. Grotere b → kortere periode → snellere oscillatie. Amplitude en middellijn veranderen niet door b."
+      "c": 3,
+      "d": 3,
+      "u": "Periode = 2π/b = 2π/3.",
+      "uo": [
+       "Nee, deel 2π door 3.",
+       "Nee, dat is de periode van sin(x).",
+       "Nee, 3 is de factor b.",
+       "Klopt: periode = 2π/b = 2π/3."
+      ],
+      "uh": "Periode van sin(bx): 2π/b."
      },
      {
-      "v": "Wat betekent «Functie»?",
+      "v": "Wat doet de transformatie f(x) + 2 met de grafiek?",
       "o": [
-       "een verband dat bij elke invoer precies één uitvoer geeft",
-       "de lijn die de grafiek in precies één punt raakt",
-       "pijl met richting en grootte",
-       "precies even groot en van dezelfde vorm"
+       "ze schuift 2 omhoog",
+       "ze schuift 2 naar rechts",
+       "ze spiegelt in de x-as",
+       "ze wordt smaller"
       ],
       "c": 0,
-      "u": "«Functie» betekent: een verband dat bij elke invoer precies één uitvoer geeft.",
-      "d": 1
+      "d": 2,
+      "u": "Bij de functiewaarde optellen schuift verticaal.",
+      "uo": [
+       "Klopt: bij de functiewaarde optellen schuift verticaal.",
+       "Nee, dat is f(x − 2).",
+       "Nee, dat is −f(x).",
+       "Nee, dat is een vervorming."
+      ],
+      "uh": "f(x) + c met c > 0: c omhoog."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een verband dat bij elke invoer precies één uitvoer geeft\"?",
+      "v": "Wat is het domein van een functie?",
       "o": [
-       "Stationair punt",
-       "Vergelijkingen",
-       "Functie",
-       "Nulpunt"
+       "de mogelijke y-waarden",
+       "de toegestane x-waarden",
+       "de nulpunten",
+       "de asymptoten"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het domein zijn de toegestane invoerwaarden.",
+      "uo": [
+       "Nee, dat is het bereik.",
+       "Klopt: het domein zijn de toegestane invoerwaarden.",
+       "Nee, dat zijn losse punten.",
+       "Nee, dat zijn lijnen."
+      ],
+      "uh": "Domein: de toegestane x-waarden."
+     },
+     {
+      "v": "Wat is het bereik van een functie?",
+      "o": [
+       "het aantal nulpunten",
+       "de toegestane x-waarden",
+       "de mogelijke y-waarden",
+       "de periode"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Functie»: een verband dat bij elke invoer precies één uitvoer geeft.",
-      "d": 2
+      "d": 2,
+      "u": "Het bereik zijn de mogelijke uitkomsten.",
+      "uo": [
+       "Nee, dat is een aantal.",
+       "Nee, dat is het domein.",
+       "Klopt: het bereik zijn de mogelijke uitkomsten.",
+       "Nee, dat is een lengte."
+      ],
+      "uh": "Bereik: de mogelijke y-waarden."
      },
      {
-      "v": "Welke term past bij: \"een verband dat bij elke invoer precies één uitvoer geeft\"?",
+      "v": "Los op: 2ˣ = 8.",
       "o": [
-       "Nulpunt",
-       "Discriminant",
-       "Functietypen",
+       "x = 8",
+       "x = 4",
+       "x = 2",
+       "x = 3"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het juiste antwoord is: x = 3.",
+      "uo": [
+       "Nee, x is de exponent, niet het getal.",
+       "Nee, 2⁴ = 16.",
+       "Nee, 2² = 4.",
+       "Klopt: 2³ = 8."
+      ],
+      "uh": "Schrijf beide kanten als macht van hetzelfde grondtal."
+     },
+     {
+      "v": "Je verschuift of spiegelt de grafiek van een functie. Welk begrip past hierbij?",
+      "o": [
+       "Transformatie",
+       "Amplitude",
+       "Snijpunt",
+       "Periode"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Je verschuift of spiegelt de grafiek van een functie. Dat past bij Transformatie: grafiek bewerken.",
+      "uo": [
+       "Klopt: grafiek bewerken.",
+       "Nee, dat hoort bij Amplitude: uitwijking |a|.",
+       "Nee, dat hoort bij Snijpunt: f(x) = g(x).",
+       "Nee, dat hoort bij Periode: 2π/b."
+      ],
+      "uh": "Transformatie: grafiek bewerken."
+     },
+     {
+      "v": "De transformatie min f van x spiegelt de grafiek in de x-as. Om welk begrip gaat het?",
+      "o": [
+       "Amplitude",
+       "Spiegeling",
+       "Bereik",
+       "Asymptoot"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De transformatie min f van x spiegelt de grafiek in de x-as. Dat past bij Spiegeling: spiegelen in de x-as.",
+      "uo": [
+       "Nee, dat hoort bij Amplitude: uitwijking |a|.",
+       "Klopt: spiegelen in de x-as.",
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden.",
+       "Nee, dat hoort bij Asymptoot: lijn die grafiek nadert."
+      ],
+      "uh": "Spiegeling: spiegelen in de x-as."
+     },
+     {
+      "v": "Spiegelen in de x-as. Welk begrip herken je hier?",
+      "o": [
+       "Bereik",
+       "Amplitude",
+       "Spiegeling",
+       "Asymptoot"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Spiegelen in de x-as. Dat past bij Spiegeling: spiegelen in de x-as.",
+      "uo": [
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden.",
+       "Nee, dat hoort bij Amplitude: uitwijking |a|.",
+       "Klopt: spiegelen in de x-as.",
+       "Nee, dat hoort bij Asymptoot: lijn die grafiek nadert."
+      ],
+      "uh": "Spiegeling: spiegelen in de x-as."
+     },
+     {
+      "v": "De toegestane invoerwaarden. Wat is hier aan de hand?",
+      "o": [
+       "Functie",
+       "Snijpunt",
+       "Spiegeling",
+       "Domein"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De toegestane invoerwaarden. Dat past bij Domein: toegestane x-waarden.",
+      "uo": [
+       "Nee, dat hoort bij Functie: elke x geeft één y.",
+       "Nee, dat hoort bij Snijpunt: f(x) = g(x).",
+       "Nee, dat hoort bij Spiegeling: spiegelen in de x-as.",
+       "Klopt: toegestane x-waarden."
+      ],
+      "uh": "Domein: toegestane x-waarden."
+     },
+     {
+      "v": "Alle x-waarden die je in de functie mag invullen. Welk begrip past hierbij?",
+      "o": [
+       "Domein",
+       "Snijpunt",
+       "Spiegeling",
        "Functie"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Functie»: een verband dat bij elke invoer precies één uitvoer geeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Functie» in?",
-      "o": [
-       "lineair, kwadratisch, exponentieel, gebroken, wortel",
-       "lijn die de grafiek nadert maar niet raakt",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "een verband dat bij elke invoer precies één uitvoer geeft"
+      "c": 0,
+      "d": 1,
+      "u": "Alle x-waarden die je in de functie mag invullen. Dat past bij Domein: toegestane x-waarden.",
+      "uo": [
+       "Klopt: toegestane x-waarden.",
+       "Nee, dat hoort bij Snijpunt: f(x) = g(x).",
+       "Nee, dat hoort bij Spiegeling: spiegelen in de x-as.",
+       "Nee, dat hoort bij Functie: elke x geeft één y."
       ],
-      "c": 3,
-      "u": "«Functie» betekent: een verband dat bij elke invoer precies één uitvoer geeft.",
-      "d": 3
+      "uh": "Domein: toegestane x-waarden."
      },
      {
-      "v": "Wat betekent «Nulpunt»?",
+      "v": "Waar f en g elkaar snijden, uit f is g. Om welk begrip gaat het?",
       "o": [
-       "algebraïsch of met de GR oplossen",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "stijgen dat steeds sneller gaat"
+       "Functie",
+       "Snijpunt",
+       "Amplitude",
+       "Domein"
       ],
       "c": 1,
-      "u": "«Nulpunt» betekent: een invoerwaarde waar de grafiek de horizontale as snijdt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een invoerwaarde waar de grafiek de horizontale as snijdt\"?",
-      "o": [
-       "Afgeleide",
-       "Nulpunt",
-       "Straal",
-       "Integraal"
+      "d": 1,
+      "u": "Waar f en g elkaar snijden, uit f is g. Dat past bij Snijpunt: f(x) = g(x).",
+      "uo": [
+       "Nee, dat hoort bij Functie: elke x geeft één y.",
+       "Klopt: f(x) = g(x).",
+       "Nee, dat hoort bij Amplitude: uitwijking |a|.",
+       "Nee, dat hoort bij Domein: toegestane x-waarden."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Nulpunt»: een invoerwaarde waar de grafiek de horizontale as snijdt.",
-      "d": 2
+      "uh": "Snijpunt: f(x) = g(x)."
      },
      {
-      "v": "Welke term past bij: \"een invoerwaarde waar de grafiek de horizontale as snijdt\"?",
+      "v": "De herhaallengte van een sinus. Welk begrip herken je hier?",
       "o": [
-       "Asymptoten",
-       "Domein",
-       "Parabool",
-       "Nulpunt"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Nulpunt»: een invoerwaarde waar de grafiek de horizontale as snijdt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Nulpunt» in?",
-      "o": [
-       "verschuiven en vermenigvuldigen",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "de verzameling toegestane invoerwaarden",
-       "de uitdrukking die het aantal nulpunten van een parabool bepaalt"
-      ],
-      "c": 1,
-      "u": "«Nulpunt» betekent: een invoerwaarde waar de grafiek de horizontale as snijdt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Discriminant»?",
-      "o": [
-       "de maximale uitwijking ten opzichte van de evenwichtsstand",
-       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
-       "het punt waar de grafiek van hol naar bol overgaat",
-       "tabel, grafiek, formule, woorden"
-      ],
-      "c": 1,
-      "u": "«Discriminant» betekent: de uitdrukking die het aantal nulpunten van een parabool bepaalt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de uitdrukking die het aantal nulpunten van een parabool bepaalt\"?",
-      "o": [
-       "Kwadratisch",
-       "Helling",
-       "Discriminant",
-       "Vergelijkingen"
+       "Asymptoot",
+       "Amplitude",
+       "Periode",
+       "Functie"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Discriminant»: de uitdrukking die het aantal nulpunten van een parabool bepaalt.",
-      "d": 2
+      "d": 3,
+      "u": "De herhaallengte van een sinus. Dat past bij Periode: 2π/b.",
+      "uo": [
+       "Nee, dat hoort bij Asymptoot: lijn die grafiek nadert.",
+       "Nee, dat hoort bij Amplitude: uitwijking |a|.",
+       "Klopt: 2π/b.",
+       "Nee, dat hoort bij Functie: elke x geeft één y."
+      ],
+      "uh": "Periode: 2π/b."
      },
      {
-      "v": "Welke term past bij: \"de uitdrukking die het aantal nulpunten van een parabool bepaalt\"?",
+      "v": "Na hoeveel de sinusgrafiek zich herhaalt, 2 pi gedeeld door b. Wat is hier aan de hand?",
       "o": [
-       "Discriminant",
+       "Bereik",
+       "Snijpunt",
+       "Spiegeling",
+       "Periode"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Na hoeveel de sinusgrafiek zich herhaalt, 2 pi gedeeld door b. Dat past bij Periode: 2π/b.",
+      "uo": [
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden.",
+       "Nee, dat hoort bij Snijpunt: f(x) = g(x).",
+       "Nee, dat hoort bij Spiegeling: spiegelen in de x-as.",
+       "Klopt: 2π/b."
+      ],
+      "uh": "Periode: 2π/b."
+     },
+     {
+      "v": "Een vergelijking met de onbekende in de exponent. Welk begrip past hierbij?",
+      "o": [
+       "Exponentiële vergelijking",
+       "Amplitude",
+       "Domein",
+       "Snijpunt"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Een vergelijking met de onbekende in de exponent. Dat past bij Exponentiële vergelijking: x in de exponent.",
+      "uo": [
+       "Klopt: x in de exponent.",
+       "Nee, dat hoort bij Amplitude: uitwijking |a|.",
+       "Nee, dat hoort bij Domein: toegestane x-waarden.",
+       "Nee, dat hoort bij Snijpunt: f(x) = g(x)."
+      ],
+      "uh": "Exponentiële vergelijking: x in de exponent."
+     },
+     {
+      "v": "In 2 tot de macht x is 8 staat de onbekende in de exponent. Om welk begrip gaat het?",
+      "o": [
+       "Bereik",
+       "Exponentiële vergelijking",
+       "Domein",
+       "Snijpunt"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "In 2 tot de macht x is 8 staat de onbekende in de exponent. Dat past bij Exponentiële vergelijking: x in de exponent.",
+      "uo": [
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden.",
+       "Klopt: x in de exponent.",
+       "Nee, dat hoort bij Domein: toegestane x-waarden.",
+       "Nee, dat hoort bij Snijpunt: f(x) = g(x)."
+      ],
+      "uh": "Exponentiële vergelijking: x in de exponent."
+     },
+     {
+      "v": "Een lijn die de grafiek nadert. Welk begrip herken je hier?",
+      "o": [
+       "Exponentiële vergelijking",
+       "Periode",
+       "Asymptoot",
+       "Snijpunt"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een lijn die de grafiek nadert. Dat past bij Asymptoot: lijn die grafiek nadert.",
+      "uo": [
+       "Nee, dat hoort bij Exponentiële vergelijking: x in de exponent.",
+       "Nee, dat hoort bij Periode: 2π/b.",
+       "Klopt: lijn die grafiek nadert.",
+       "Nee, dat hoort bij Snijpunt: f(x) = g(x)."
+      ],
+      "uh": "Asymptoot: lijn die grafiek nadert."
+     },
+     {
+      "v": "De mogelijke uitkomsten. Wat is hier aan de hand?",
+      "o": [
+       "Exponentiële vergelijking",
+       "Domein",
        "Functie",
-       "Asymptoten",
+       "Bereik"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De mogelijke uitkomsten. Dat past bij Bereik: mogelijke y-waarden.",
+      "uo": [
+       "Nee, dat hoort bij Exponentiële vergelijking: x in de exponent.",
+       "Nee, dat hoort bij Domein: toegestane x-waarden.",
+       "Nee, dat hoort bij Functie: elke x geeft één y.",
+       "Klopt: mogelijke y-waarden."
+      ],
+      "uh": "Bereik: mogelijke y-waarden."
+     },
+     {
+      "v": "Een verband dat aan elke x één y toekent. Welk begrip past hierbij?",
+      "o": [
+       "Functie",
+       "Snijpunt",
+       "Spiegeling",
        "Bereik"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Discriminant»: de uitdrukking die het aantal nulpunten van een parabool bepaalt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Discriminant» in?",
-      "o": [
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "de verzameling toegestane invoerwaarden",
-       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
-       "lineair, kwadratisch, exponentieel, gebroken, wortel"
+      "d": 1,
+      "u": "Een verband dat aan elke x één y toekent. Dat past bij Functie: elke x geeft één y.",
+      "uo": [
+       "Klopt: elke x geeft één y.",
+       "Nee, dat hoort bij Snijpunt: f(x) = g(x).",
+       "Nee, dat hoort bij Spiegeling: spiegelen in de x-as.",
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden."
       ],
-      "c": 2,
-      "u": "«Discriminant» betekent: de uitdrukking die het aantal nulpunten van een parabool bepaalt.",
-      "d": 3
+      "uh": "Functie: elke x geeft één y."
      },
      {
-      "v": "Wat betekent «Domein»?",
-      "o": [
-       "de maximale uitwijking ten opzichte van de evenwichtsstand",
-       "de verzameling toegestane invoerwaarden",
-       "het punt waar de grafiek van hol naar bol overgaat",
-       "een verband met een vaste groeifactor per stap"
-      ],
-      "c": 1,
-      "u": "«Domein» betekent: de verzameling toegestane invoerwaarden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de verzameling toegestane invoerwaarden\"?",
-      "o": [
-       "Modelleercyclus",
-       "Toenemende stijging",
-       "Stationair punt",
-       "Domein"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Domein»: de verzameling toegestane invoerwaarden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de verzameling toegestane invoerwaarden\"?",
+      "v": "Het punt waar twee grafieken elkaar kruisen. Om welk begrip gaat het?",
       "o": [
        "Asymptoot",
-       "Vergelijkingen",
-       "Discriminant",
-       "Domein"
+       "Snijpunt",
+       "Exponentiële vergelijking",
+       "Periode"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Domein»: de verzameling toegestane invoerwaarden.",
-      "d": 3
+      "c": 1,
+      "d": 2,
+      "u": "Het punt waar twee grafieken elkaar kruisen. Dat past bij Snijpunt: f(x) = g(x).",
+      "uo": [
+       "Nee, dat hoort bij Asymptoot: lijn die grafiek nadert.",
+       "Klopt: f(x) = g(x).",
+       "Nee, dat hoort bij Exponentiële vergelijking: x in de exponent.",
+       "Nee, dat hoort bij Periode: 2π/b."
+      ],
+      "uh": "Snijpunt: f(x) = g(x)."
      },
      {
-      "v": "Wat houdt «Domein» in?",
+      "v": "Een bewerking van een grafiek. Welk begrip herken je hier?",
       "o": [
-       "de verzameling toegestane invoerwaarden",
-       "verschuiven en vermenigvuldigen",
-       "een verband dat bij elke invoer precies één uitvoer geeft",
-       "lineair, kwadratisch, exponentieel, gebroken, wortel"
-      ],
-      "c": 0,
-      "u": "«Domein» betekent: de verzameling toegestane invoerwaarden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Bereik»?",
-      "o": [
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
-       "de lengte van één herhaling van een periodieke functie",
-       "de verzameling mogelijke uitvoerwaarden",
-       "probleem → model → rekenen → terugvertalen"
-      ],
-      "c": 2,
-      "u": "«Bereik» betekent: de verzameling mogelijke uitvoerwaarden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de verzameling mogelijke uitvoerwaarden\"?",
-      "o": [
-       "Lineair",
+       "Bereik",
        "Functie",
-       "Bereik",
-       "Parabool"
+       "Transformatie",
+       "Snijpunt"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Bereik»: de verzameling mogelijke uitvoerwaarden.",
-      "d": 2
+      "d": 3,
+      "u": "Een bewerking van een grafiek. Dat past bij Transformatie: grafiek bewerken.",
+      "uo": [
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden.",
+       "Nee, dat hoort bij Functie: elke x geeft één y.",
+       "Klopt: grafiek bewerken.",
+       "Nee, dat hoort bij Snijpunt: f(x) = g(x)."
+      ],
+      "uh": "Transformatie: grafiek bewerken."
      },
      {
-      "v": "Welke term past bij: \"de verzameling mogelijke uitvoerwaarden\"?",
+      "v": "De factor a voor de sinus. Wat is hier aan de hand?",
       "o": [
-       "Discriminant",
-       "Functietypen",
        "Bereik",
-       "Nulpunt"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Bereik»: de verzameling mogelijke uitvoerwaarden.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Bereik» in?",
-      "o": [
-       "de verzameling mogelijke uitvoerwaarden",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "een verband dat bij elke invoer precies één uitvoer geeft",
-       "de verzameling toegestane invoerwaarden"
-      ],
-      "c": 0,
-      "u": "«Bereik» betekent: de verzameling mogelijke uitvoerwaarden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Asymptoot»?",
-      "o": [
-       "verschuiven en vermenigvuldigen",
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
-       "de mate van stijging of daling van een grafiek",
-       "algebraïsch of met de GR oplossen"
-      ],
-      "c": 1,
-      "u": "«Asymptoot» betekent: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een lijn die de grafiek steeds dichter nadert maar niet raakt\"?",
-      "o": [
-       "Vectoren",
-       "Lineair",
-       "Bereik",
-       "Asymptoot"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Asymptoot»: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een lijn die de grafiek steeds dichter nadert maar niet raakt\"?",
-      "o": [
-       "Transformaties",
        "Asymptoot",
-       "Asymptoten",
-       "Functie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Asymptoot»: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Asymptoot» in?",
-      "o": [
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
-       "lijn die de grafiek nadert maar niet raakt",
-       "een verband dat bij elke invoer precies één uitvoer geeft"
-      ],
-      "c": 1,
-      "u": "«Asymptoot» betekent: een lijn die de grafiek steeds dichter nadert maar niet raakt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Parabool»?",
-      "o": [
-       "machtsregel, som, constante",
-       "verschuiven en vermenigvuldigen",
-       "de vloeiende kromme die hoort bij een kwadratische functie",
-       "het punt waar de grafiek van hol naar bol overgaat"
-      ],
-      "c": 2,
-      "u": "«Parabool» betekent: de vloeiende kromme die hoort bij een kwadratische functie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de vloeiende kromme die hoort bij een kwadratische functie\"?",
-      "o": [
-       "Parabool",
-       "Hellinggrafiek",
-       "Radiaal",
-       "Verband herkennen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Parabool»: de vloeiende kromme die hoort bij een kwadratische functie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de vloeiende kromme die hoort bij een kwadratische functie\"?",
-      "o": [
-       "Asymptoten",
-       "Parabool",
        "Functie",
-       "Domein"
+       "Amplitude"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Parabool»: de vloeiende kromme die hoort bij een kwadratische functie.",
-      "d": 3
+      "c": 3,
+      "d": 1,
+      "u": "De factor a voor de sinus. Dat past bij Amplitude: uitwijking |a|.",
+      "uo": [
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden.",
+       "Nee, dat hoort bij Asymptoot: lijn die grafiek nadert.",
+       "Nee, dat hoort bij Functie: elke x geeft één y.",
+       "Klopt: uitwijking |a|."
+      ],
+      "uh": "Amplitude: uitwijking |a|."
      },
      {
-      "v": "Wat houdt «Parabool» in?",
+      "v": "Bij elke invoer x hoort precies één uitkomst y. Welk begrip past hierbij?",
       "o": [
-       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
-       "de vloeiende kromme die hoort bij een kwadratische functie",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt"
-      ],
-      "c": 1,
-      "u": "«Parabool» betekent: de vloeiende kromme die hoort bij een kwadratische functie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Functietypen»?",
-      "o": [
-       "lineair, kwadratisch, exponentieel, gebroken, wortel",
-       "een hoekmaat waarbij de booglengte gelijk is aan de straal",
-       "het punt waar de grafiek van hol naar bol overgaat",
-       "de functie die de helling van de grafiek in elk punt geeft"
+       "Functie",
+       "Transformatie",
+       "Asymptoot",
+       "Bereik"
       ],
       "c": 0,
-      "u": "«Functietypen» betekent: lineair, kwadratisch, exponentieel, gebroken, wortel.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"lineair, kwadratisch, exponentieel, gebroken, wortel\"?",
-      "o": [
-       "Vergelijkingen",
-       "Afstand",
-       "Functietypen",
-       "Sin, cos, tan"
+      "d": 2,
+      "u": "Bij elke invoer x hoort precies één uitkomst y. Dat past bij Functie: elke x geeft één y.",
+      "uo": [
+       "Klopt: elke x geeft één y.",
+       "Nee, dat hoort bij Transformatie: grafiek bewerken.",
+       "Nee, dat hoort bij Asymptoot: lijn die grafiek nadert.",
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Functietypen»: lineair, kwadratisch, exponentieel, gebroken, wortel.",
-      "d": 2
+      "uh": "Functie: elke x geeft één y."
      },
      {
-      "v": "Welke term past bij: \"lineair, kwadratisch, exponentieel, gebroken, wortel\"?",
+      "v": "Hoe ver een sinusgolf maximaal van het midden uitwijkt. Om welk begrip gaat het?",
       "o": [
-       "Asymptoten",
-       "Functietypen",
-       "Asymptoot",
-       "Discriminant"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Functietypen»: lineair, kwadratisch, exponentieel, gebroken, wortel.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Functietypen» in?",
-      "o": [
-       "een verband dat bij elke invoer precies één uitvoer geeft",
-       "lineair, kwadratisch, exponentieel, gebroken, wortel",
-       "de vloeiende kromme die hoort bij een kwadratische functie",
-       "verschuiven en vermenigvuldigen"
-      ],
-      "c": 1,
-      "u": "«Functietypen» betekent: lineair, kwadratisch, exponentieel, gebroken, wortel.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Asymptoten»?",
-      "o": [
-       "de lengte van één herhaling van een periodieke functie",
-       "tussen twee punten",
-       "verschuiven en vermenigvuldigen",
-       "lijn die de grafiek nadert maar niet raakt"
-      ],
-      "c": 3,
-      "u": "«Asymptoten» betekent: lijn die de grafiek nadert maar niet raakt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"lijn die de grafiek nadert maar niet raakt\"?",
-      "o": [
-       "Functietypen",
-       "Lineair",
-       "Asymptoten",
-       "Verband herkennen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Asymptoten»: lijn die de grafiek nadert maar niet raakt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"lijn die de grafiek nadert maar niet raakt\"?",
-      "o": [
-       "Asymptoot",
-       "Parabool",
-       "Asymptoten",
-       "Functietypen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Asymptoten»: lijn die de grafiek nadert maar niet raakt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Asymptoten» in?",
-      "o": [
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "lijn die de grafiek nadert maar niet raakt",
-       "algebraïsch of met de GR oplossen",
-       "de verzameling toegestane invoerwaarden"
-      ],
-      "c": 1,
-      "u": "«Asymptoten» betekent: lijn die de grafiek nadert maar niet raakt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Transformaties»?",
-      "o": [
-       "verschuiven en vermenigvuldigen",
-       "precies even groot en van dezelfde vorm",
-       "algebraïsch of met de GR oplossen",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand"
-      ],
-      "c": 0,
-      "u": "«Transformaties» betekent: verschuiven en vermenigvuldigen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"verschuiven en vermenigvuldigen\"?",
-      "o": [
-       "Representaties",
-       "Functietypen",
-       "Transformaties",
-       "Straal"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Transformaties»: verschuiven en vermenigvuldigen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"verschuiven en vermenigvuldigen\"?",
-      "o": [
-       "Domein",
-       "Parabool",
-       "Vergelijkingen",
-       "Transformaties"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Transformaties»: verschuiven en vermenigvuldigen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Transformaties» in?",
-      "o": [
-       "lijn die de grafiek nadert maar niet raakt",
-       "een verband dat bij elke invoer precies één uitvoer geeft",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt",
-       "verschuiven en vermenigvuldigen"
-      ],
-      "c": 3,
-      "u": "«Transformaties» betekent: verschuiven en vermenigvuldigen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vergelijkingen»?",
-      "o": [
-       "de mate van stijging of daling van een grafiek",
-       "dezelfde vorm maar mogelijk een andere grootte",
-       "algebraïsch of met de GR oplossen",
-       "een verband met een vaste groeifactor per stap"
-      ],
-      "c": 2,
-      "u": "«Vergelijkingen» betekent: algebraïsch of met de GR oplossen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"algebraïsch of met de GR oplossen\"?",
-      "o": [
-       "Discriminant",
+       "Periode",
        "Amplitude",
-       "Primitieve",
-       "Vergelijkingen"
+       "Functie",
+       "Bereik"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Vergelijkingen»: algebraïsch of met de GR oplossen.",
-      "d": 2
+      "c": 1,
+      "d": 3,
+      "u": "Hoe ver een sinusgolf maximaal van het midden uitwijkt. Dat past bij Amplitude: uitwijking |a|.",
+      "uo": [
+       "Nee, dat hoort bij Periode: 2π/b.",
+       "Klopt: uitwijking |a|.",
+       "Nee, dat hoort bij Functie: elke x geeft één y.",
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden."
+      ],
+      "uh": "Amplitude: uitwijking |a|."
      },
      {
-      "v": "Welke term past bij: \"algebraïsch of met de GR oplossen\"?",
+      "v": "De grafiek nadert deze lijn steeds dichter zonder hem te raken. Welk begrip herken je hier?",
       "o": [
-       "Vergelijkingen",
-       "Transformaties",
-       "Asymptoten",
-       "Asymptoot"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vergelijkingen»: algebraïsch of met de GR oplossen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vergelijkingen» in?",
-      "o": [
-       "verschuiven en vermenigvuldigen",
-       "de verzameling mogelijke uitvoerwaarden",
-       "algebraïsch of met de GR oplossen",
-       "lijn die de grafiek nadert maar niet raakt"
+       "Functie",
+       "Exponentiële vergelijking",
+       "Asymptoot",
+       "Bereik"
       ],
       "c": 2,
-      "u": "«Vergelijkingen» betekent: algebraïsch of met de GR oplossen.",
-      "d": 3
+      "d": 1,
+      "u": "De grafiek nadert deze lijn steeds dichter zonder hem te raken. Dat past bij Asymptoot: lijn die grafiek nadert.",
+      "uo": [
+       "Nee, dat hoort bij Functie: elke x geeft één y.",
+       "Nee, dat hoort bij Exponentiële vergelijking: x in de exponent.",
+       "Klopt: lijn die grafiek nadert.",
+       "Nee, dat hoort bij Bereik: mogelijke y-waarden."
+      ],
+      "uh": "Asymptoot: lijn die grafiek nadert."
+     },
+     {
+      "v": "Alle y-waarden die de functie kan aannemen. Wat is hier aan de hand?",
+      "o": [
+       "Spiegeling",
+       "Domein",
+       "Exponentiële vergelijking",
+       "Bereik"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Alle y-waarden die de functie kan aannemen. Dat past bij Bereik: mogelijke y-waarden.",
+      "uo": [
+       "Nee, dat hoort bij Spiegeling: spiegelen in de x-as.",
+       "Nee, dat hoort bij Domein: toegestane x-waarden.",
+       "Nee, dat hoort bij Exponentiële vergelijking: x in de exponent.",
+       "Klopt: mogelijke y-waarden."
+      ],
+      "uh": "Bereik: mogelijke y-waarden."
      }
     ],
     "oe": [
@@ -69802,47 +70045,43 @@ var VAKKEN = [
     "begrippen": [
      {
       "t": "Functie",
-      "d": "een verband dat bij elke invoer precies één uitvoer geeft"
+      "d": "een verband dat aan elke x precies één y toekent"
      },
      {
-      "t": "Nulpunt",
-      "d": "een invoerwaarde waar de grafiek de horizontale as snijdt"
-     },
-     {
-      "t": "Discriminant",
-      "d": "de uitdrukking die het aantal nulpunten van een parabool bepaalt"
-     },
-     {
-      "t": "Domein",
-      "d": "de verzameling toegestane invoerwaarden"
-     },
-     {
-      "t": "Bereik",
-      "d": "de verzameling mogelijke uitvoerwaarden"
+      "t": "Transformatie",
+      "d": "een verschuiving, spiegeling of vervorming van een grafiek"
      },
      {
       "t": "Asymptoot",
-      "d": "een lijn die de grafiek steeds dichter nadert maar niet raakt"
+      "d": "een lijn die de grafiek steeds dichter nadert zonder te raken"
      },
      {
-      "t": "Parabool",
-      "d": "de vloeiende kromme die hoort bij een kwadratische functie"
+      "t": "Exponentiële vergelijking",
+      "d": "een vergelijking met de onbekende in de exponent"
      },
      {
-      "t": "Functietypen",
-      "d": "lineair, kwadratisch, exponentieel, gebroken, wortel"
+      "t": "Amplitude",
+      "d": "de uitwijking |a| van een sinusfunctie a·sin(bx)"
      },
      {
-      "t": "Asymptoten",
-      "d": "lijn die de grafiek nadert maar niet raakt"
+      "t": "Periode",
+      "d": "de lengte 2π/b waarna een sinusfunctie zich herhaalt"
      },
      {
-      "t": "Transformaties",
-      "d": "verschuiven en vermenigvuldigen"
+      "t": "Snijpunt",
+      "d": "een punt waar twee grafieken elkaar kruisen, uit f(x) = g(x)"
      },
      {
-      "t": "Vergelijkingen",
-      "d": "algebraïsch of met de GR oplossen"
+      "t": "Spiegeling",
+      "d": "de transformatie −f(x): spiegelen in de x-as"
+     },
+     {
+      "t": "Domein",
+      "d": "de verzameling toegestane x-waarden van een functie"
+     },
+     {
+      "t": "Bereik",
+      "d": "de verzameling mogelijke y-waarden van een functie"
      }
     ]
    },
@@ -69862,553 +70101,615 @@ var VAKKEN = [
      "C1: Hoeken en lijnen (CE)",
      "C1: Ruimtelijke figuren (CE)"
     ],
-    "sam": "<div class=\"sam-head\">Coördinaten en lijnen</div><ul><li><strong>Afstand</strong>: <span class=\"fm\">d = √((x₂−x₁)² + (y₂−y₁)²)</span>. Volgt uit Pythagoras.</li><li><strong>Middelpunt</strong>: <span class=\"fm\">M = ((x₁+x₂)/2, (y₁+y₂)/2)</span>.</li><li><strong>Helling</strong>: rc = (y₂−y₁)/(x₂−x₁). Loodrechte lijnen: rc₁ × rc₂ = −1.</li><li><strong>Lijn door twee punten</strong>: y − y₁ = rc(x − x₁). Schrijf om naar y = ax + b.</li><li><strong>Cirkelvergelijking</strong>: <span class=\"fm\">(x − a)² + (y − b)² = r²</span>. Middelpunt M(a, b), straal r. Algemene vorm omschrijven via kwadraat aanvullen.</li></ul><div class=\"sam-head\">Vectoren</div><ul><li><strong>Vector</strong>: grootheid met richting én grootte. Notatie →a = (a₁, a₂).</li><li><strong>Optelling</strong>: →a + →b = (a₁+b₁, a₂+b₂). Grafisch: kop-op-staart.</li><li><strong>Grootte</strong>: |→a| = √(a₁² + a₂²).</li><li><strong>Inwendig product</strong>: →a · →b = a₁b₁ + a₂b₂. →a · →b = 0 ↔ loodrecht. Hoek: cos θ = (→a · →b)/(|→a|·|→b|).</li></ul><div class=\"sam-head\">Goniometrie in driehoeken</div><ul><li><strong>Rechthoekige driehoek</strong>: sin α = overstaande/schuinzijde. cos α = aanliggende/schuinzijde. tan α = overstaande/aanliggende. (SOH-CAH-TOA)</li><li><strong>Sinusregel</strong>: a/sin A = b/sin B = c/sin C. Gebruik bij AAS, ASA of twee zijden + overstaande hoek (SSA).</li><li><strong>Cosinusregel</strong>: <span class=\"fm\">a² = b² + c² − 2bc·cos A</span>. Gebruik bij SAS (twee zijden + ingesloten hoek) of SSS (drie zijden).</li><li><strong>Oppervlakte</strong>: <span class=\"fm\">A = ½·b·c·sin A</span>.</li></ul><div class=\"sam-head\">Ruimtelijke figuren</div><ul><li><strong>Ruimtelijk redeneren</strong>: teken altijd een schets met correcte oriëntatie van assen. Label punten, zijden en hoeken.</li><li><strong>Afstand in 3D</strong>: <span class=\"fm\">d = √((x₂−x₁)²+(y₂−y₁)²+(z₂−z₁)²)</span>. Extensie van de 2D-formule.</li><li><strong>Hoek tussen lijnen</strong>: gebruik het inwendig product van de richtingsvectoren om de hoek te bepalen.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Met <strong>vectoren</strong> en het <strong>inproduct</strong> bepaal je of lijnen <strong>loodrecht</strong> staan (inproduct 0). In een rechthoekige driehoek gebruik je <strong>sinus</strong>, <strong>cosinus</strong> en <strong>tangens</strong> (SOH-CAH-TOA), en bij andere driehoeken de <strong>sinus-</strong> of <strong>cosinusregel</strong>. Een <strong>cirkel</strong> heeft de vergelijking (x − a)² + (y − b)² = r².</div><div class=\"sam-head\">1. Vectoren en loodrecht</div><p>Twee vectoren staan <strong>loodrecht</strong> als hun <strong>inproduct</strong> nul is. Twee lijnen staan loodrecht als het product van hun richtingscoëfficiënten −1 is; de loodlijn op rc = 2 heeft rc = −½.</p><div class=\"sam-head\">2. Driehoeken en cirkels</div><p>In een rechthoekige driehoek geldt <strong>SOH-CAH-TOA</strong>: sin = overstaande/schuinzijde, cos = aanliggende/schuinzijde, tan = overstaande/aanliggende. De <strong>sinusregel</strong> gebruik je bij twee hoeken en een zijde; de <strong>cosinusregel</strong> bij drie zijden of twee zijden met de ingesloten hoek. Een punt ligt op de <strong>cirkel</strong> (x − a)² + (y − b)² = r² als invullen r² geeft.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Inproduct</div><div class=\"sam-definitie-body\">a₁b₁ + a₂b₂; is 0 bij loodrechte vectoren.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Loodrecht</div><div class=\"sam-definitie-body\">twee vectoren met inproduct 0, of lijnen met rc₁·rc₂ = −1.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Richtingscoëfficiënt loodlijn</div><div class=\"sam-definitie-body\">de rc waarvan het product met de gegeven rc gelijk aan −1 is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sinus</div><div class=\"sam-definitie-body\">in een rechthoekige driehoek: overstaande gedeeld door schuinzijde.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cosinus</div><div class=\"sam-definitie-body\">in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Tangens</div><div class=\"sam-definitie-body\">in een rechthoekige driehoek: overstaande gedeeld door aanliggende.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sinusregel</div><div class=\"sam-definitie-body\">a/sin A = b/sin B, bij twee hoeken en een zijde.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cosinusregel</div><div class=\"sam-definitie-body\">de regel bij drie zijden of twee zijden met de ingesloten hoek.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cirkelvergelijking</div><div class=\"sam-definitie-body\">de standaardvorm (x − a)² + (y − b)² = r².</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vector</div><div class=\"sam-definitie-body\">een grootheid met een grootte en een richting.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Inproduct»</b> is som van producten van kentallen, terwijl <b>«Loodrecht»</b> inproduct 0 is. <b>«Loodrecht»</b> is inproduct 0, terwijl <b>«Sinus»</b> overstaande / schuinzijde is. <b>«Richtingscoëfficiënt loodlijn»</b> is rc met product −1, terwijl <b>«Loodrecht»</b> inproduct 0 is. <b>«Sinus»</b> is overstaande / schuinzijde, terwijl <b>«Cosinus»</b> aanliggende / schuinzijde is.</div>",
     "sv": [
      {
       "v": "Wanneer zijn twee vectoren loodrecht op elkaar?",
       "o": [
-       "Inwendig product = 0: →a · →b = 0",
-       "Vectoren hebben gelijke lengte",
-       "Vectoren wijzen dezelfde kant op",
-       "Som van de vectoren is nul"
+       "als het inproduct 0 is",
+       "als ze even lang zijn",
+       "als hun som 0 is",
+       "als ze parallel zijn"
       ],
       "c": 0,
-      "u": "→a · →b = a₁b₁ + a₂b₂ = 0 ↔ loodrecht. Positief → scherpe hoek. Negatief → stompe hoek."
+      "d": 3,
+      "u": "Loodrecht betekent inproduct 0.",
+      "uo": [
+       "Klopt: loodrecht betekent inproduct 0.",
+       "Nee, gelijke lengte zegt niets over de hoek.",
+       "Nee, dat betekent tegengesteld.",
+       "Nee, parallel is juist niet loodrecht."
+      ],
+      "uh": "Loodrechte vectoren: inproduct gelijk aan 0."
      },
      {
-      "v": "Wat is de helling van een loodlijn op rc = 2?",
+      "v": "Wat is de helling van een loodlijn op een lijn met rc = 2?",
       "o": [
-       "rc = −½",
-       "rc = −2",
-       "rc = ½",
-       "rc = 2"
+       "2",
+       "−½",
+       "½",
+       "−2"
       ],
-      "c": 0,
-      "u": "Loodrecht: rc₁ × rc₂ = −1. Dus rc₂ = −1/2. Steile lijn → loodlijn is bijna plat."
+      "c": 1,
+      "d": 3,
+      "u": "Rc₁·rc₂ = −1, dus −½.",
+      "uo": [
+       "Nee, dat is dezelfde helling.",
+       "Klopt: rc₁·rc₂ = −1, dus −½.",
+       "Nee, dat product is niet −1.",
+       "Nee, dat product is niet −1."
+      ],
+      "uh": "Loodrecht: het product van de rc's is −1."
      },
      {
-      "v": "Wat betekent het als het inwendig product van twee vectoren nul is?",
+      "v": "Wat betekent het als het inproduct van twee vectoren nul is?",
       "o": [
-       "De vectoren staan loodrecht op elkaar (hoek = 90°)",
-       "De vectoren zijn evenwijdig en wijzen dezelfde kant op",
-       "De vectoren hebben precies gelijke lengte",
-       "De vectoren hebben tegengestelde richting en heffen elkaar op"
+       "de vectoren zijn parallel",
+       "de vectoren zijn even lang",
+       "de vectoren staan loodrecht op elkaar",
+       "een van de vectoren is nul"
       ],
-      "c": 0,
-      "u": "Inwendig product →a · →b = a₁b₁ + a₂b₂ = 0 ↔ loodrecht. Positief inwendig product: scherpe hoek. Negatief: stompe hoek. Handig om te controleren of twee lijnen haaks staan."
+      "c": 2,
+      "d": 2,
+      "u": "Inproduct 0 betekent een hoek van 90°.",
+      "uo": [
+       "Nee, parallel geeft juist geen 0.",
+       "Nee, dat volgt er niet uit.",
+       "Klopt: inproduct 0 betekent een hoek van 90°.",
+       "Nee, dat hoeft niet."
+      ],
+      "uh": "Inproduct 0: de vectoren staan loodrecht."
      },
      {
       "v": "Wat beschrijft sin α in een rechthoekige driehoek?",
       "o": [
-       "Overstaande gedeeld door schuinzijde",
-       "Aanliggende gedeeld door schuinzijde",
-       "Overstaande gedeeld door aanliggende",
-       "Schuinzijde gedeeld door overstaande"
+       "schuinzijde gedeeld door overstaande",
+       "aanliggende gedeeld door schuinzijde",
+       "overstaande gedeeld door aanliggende",
+       "overstaande gedeeld door schuinzijde"
       ],
-      "c": 0,
-      "u": "SOH-CAH-TOA: Sin=O/H, Cos=A/H, Tan=O/A. Alleen toepasbaar in rechthoekige driehoeken."
+      "c": 3,
+      "d": 2,
+      "u": "Sin = overstaande/schuinzijde.",
+      "uo": [
+       "Nee, dat is het omgekeerde.",
+       "Nee, dat is de cosinus.",
+       "Nee, dat is de tangens.",
+       "Klopt: sin = overstaande/schuinzijde."
+      ],
+      "uh": "SOH: sin = overstaande / schuinzijde."
      },
      {
       "v": "Wanneer gebruik je de sinusregel?",
       "o": [
-       "Bij AAS, ASA of twee zijden + overstaande hoek",
-       "Bij drie bekende zijden (SSS)",
-       "Bij twee zijden en ingesloten hoek (SAS)",
-       "Alleen in rechthoekige driehoeken"
+       "bij twee hoeken en een zijde, of twee zijden met een overstaande hoek",
+       "alleen bij een rechthoekige driehoek",
+       "bij drie gegeven zijden",
+       "nooit"
       ],
       "c": 0,
-      "u": "a/sin A = b/sin B = c/sin C. AAS/ASA: twee hoeken + zijde. SSA: twee zijden + overstaande hoek (let op dubbelzinnigheid)."
-     },
-     {
-      "v": "Hoe controleer je of punt P op de cirkel (x−2)²+(y−3)²=25 ligt?",
-      "o": [
-       "Vul P in en vergelijk uitkomst met 25",
-       "Bereken afgeleide in P",
-       "Stel y=0 en los op",
-       "Bereken het middelpunt van P en het centrum"
+      "d": 3,
+      "u": "De sinusregel past bij deze gevallen.",
+      "uo": [
+       "Klopt: de sinusregel past bij deze gevallen.",
+       "Nee, dan volstaat SOH-CAH-TOA.",
+       "Nee, dan gebruik je de cosinusregel.",
+       "Nee, hij is vaak nodig."
       ],
-      "c": 0,
-      "u": "Invullen: uitkomst = r² → op de cirkel. Kleiner → binnen. Groter → buiten."
+      "uh": "Sinusregel: bij twee hoeken en een zijde (of AAS/ASA)."
      },
      {
-      "v": "Wat betekent «Lineair verband»?",
+      "v": "Hoe controleer je of punt P op de cirkel (x − 2)² + (y − 3)² = 25 ligt?",
       "o": [
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "tussen twee punten",
-       "de afstand van het middelpunt tot de rand van een cirkel",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand"
+       "kijk of P in het middelpunt ligt",
+       "vul P in en vergelijk de uitkomst met 25",
+       "bereken de rc van P",
+       "tel de coördinaten van P op"
       ],
-      "c": 0,
-      "u": "«Lineair verband» betekent: een verband met een constante toename; de grafiek is een rechte lijn.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een verband met een constante toename; de grafiek is een rechte lijn\"?",
-      "o": [
-       "Lineair verband",
-       "Asymptoten",
-       "Extreem",
-       "Periode"
+      "c": 1,
+      "d": 3,
+      "u": "Als invullen 25 geeft, ligt P op de cirkel.",
+      "uo": [
+       "Nee, dat is het middelpunt, niet de rand.",
+       "Klopt: als invullen 25 geeft, ligt P op de cirkel.",
+       "Nee, dat is niet relevant.",
+       "Nee, dat zegt niets."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Lineair verband»: een verband met een constante toename; de grafiek is een rechte lijn.",
-      "d": 2
+      "uh": "Punt op cirkel: invullen en vergelijken met r²."
      },
      {
-      "v": "Welke term past bij: \"een verband met een constante toename; de grafiek is een rechte lijn\"?",
+      "v": "Wat beschrijft cos α in een rechthoekige driehoek?",
       "o": [
-       "Lineair verband",
-       "Kwadratisch verband",
-       "Sin, cos, tan",
-       "Exponentieel verband"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Lineair verband»: een verband met een constante toename; de grafiek is een rechte lijn.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Lineair verband» in?",
-      "o": [
-       "een verband met een vaste groeifactor per stap",
-       "de lengte van één herhaling van een periodieke functie",
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "zijden in een rechthoekige driehoek"
+       "overstaande gedeeld door aanliggende",
+       "overstaande gedeeld door schuinzijde",
+       "aanliggende gedeeld door schuinzijde",
+       "schuinzijde gedeeld door aanliggende"
       ],
       "c": 2,
-      "u": "«Lineair verband» betekent: een verband met een constante toename; de grafiek is een rechte lijn.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Exponentieel verband»?",
-      "o": [
-       "de maximale uitwijking ten opzichte van de evenwichtsstand",
-       "een verband met een vaste groeifactor per stap",
-       "zijde/hoek in willekeurige driehoek",
-       "het punt waar de grafiek van hol naar bol overgaat"
+      "d": 2,
+      "u": "Cos = aanliggende/schuinzijde.",
+      "uo": [
+       "Nee, dat is de tangens.",
+       "Nee, dat is de sinus.",
+       "Klopt: cos = aanliggende/schuinzijde.",
+       "Nee, dat is het omgekeerde."
       ],
-      "c": 1,
-      "u": "«Exponentieel verband» betekent: een verband met een vaste groeifactor per stap.",
-      "d": 1
+      "uh": "CAH: cos = aanliggende / schuinzijde."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een verband met een vaste groeifactor per stap\"?",
+      "v": "Wat beschrijft tan α in een rechthoekige driehoek?",
       "o": [
-       "Exponentieel verband",
-       "Tegenvoorbeeld",
-       "Toenemende stijging",
-       "Domein"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Exponentieel verband»: een verband met een vaste groeifactor per stap.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een verband met een vaste groeifactor per stap\"?",
-      "o": [
-       "Exponentieel verband",
-       "Lineair verband",
-       "Sinusregel",
-       "Periode"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Exponentieel verband»: een verband met een vaste groeifactor per stap.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Exponentieel verband» in?",
-      "o": [
-       "een verband met een vaste groeifactor per stap",
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand",
-       "rc; loodrechte lijnen"
-      ],
-      "c": 0,
-      "u": "«Exponentieel verband» betekent: een verband met een vaste groeifactor per stap.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Kwadratisch verband»?",
-      "o": [
-       "een verband waarvan de grafiek een parabool is",
-       "rc; loodrechte lijnen",
-       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
-       "lineair, kwadratisch, exponentieel"
-      ],
-      "c": 0,
-      "u": "«Kwadratisch verband» betekent: een verband waarvan de grafiek een parabool is.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een verband waarvan de grafiek een parabool is\"?",
-      "o": [
-       "Hellinggrafiek",
-       "Kwadratisch verband",
-       "Interpoleren/extrapoleren",
-       "Transformaties"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Kwadratisch verband»: een verband waarvan de grafiek een parabool is.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een verband waarvan de grafiek een parabool is\"?",
-      "o": [
-       "Lineair verband",
-       "Sin, cos, tan",
-       "Sinusregel",
-       "Kwadratisch verband"
+       "schuinzijde gedeeld door overstaande",
+       "overstaande gedeeld door schuinzijde",
+       "aanliggende gedeeld door schuinzijde",
+       "overstaande gedeeld door aanliggende"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Kwadratisch verband»: een verband waarvan de grafiek een parabool is.",
-      "d": 3
+      "d": 2,
+      "u": "Tan = overstaande/aanliggende.",
+      "uo": [
+       "Nee, dat is het omgekeerde.",
+       "Nee, dat is de sinus.",
+       "Nee, dat is de cosinus.",
+       "Klopt: tan = overstaande/aanliggende."
+      ],
+      "uh": "TOA: tan = overstaande / aanliggende."
      },
      {
-      "v": "Wat houdt «Kwadratisch verband» in?",
+      "v": "Wanneer gebruik je de cosinusregel?",
       "o": [
-       "een verband waarvan de grafiek een parabool is",
-       "de lengte van één herhaling van een periodieke functie",
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "een verband met een vaste groeifactor per stap"
+       "bij drie zijden, of twee zijden met de ingesloten hoek",
+       "alleen bij twee hoeken",
+       "alleen in een rechthoekige driehoek",
+       "nooit"
       ],
       "c": 0,
-      "u": "«Kwadratisch verband» betekent: een verband waarvan de grafiek een parabool is.",
-      "d": 3
+      "d": 3,
+      "u": "De cosinusregel past bij deze gevallen.",
+      "uo": [
+       "Klopt: de cosinusregel past bij deze gevallen.",
+       "Nee, dan gebruik je de sinusregel.",
+       "Nee, dan volstaat SOH-CAH-TOA.",
+       "Nee, hij is vaak nodig."
+      ],
+      "uh": "Cosinusregel: drie zijden of twee zijden met ingesloten hoek."
      },
      {
-      "v": "Wat betekent «Periode»?",
+      "v": "Hoe controleer je of twee lijnen loodrecht op elkaar staan?",
       "o": [
-       "zijden in een rechthoekige driehoek",
-       "de lengte van één herhaling van een periodieke functie",
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
-       "de vloeiende kromme die hoort bij een kwadratische functie"
+       "ze hebben dezelfde rc",
+       "het product van hun richtingscoëfficiënten is −1",
+       "hun som is 0",
+       "ze snijden de y-as"
       ],
       "c": 1,
-      "u": "«Periode» betekent: de lengte van één herhaling van een periodieke functie.",
-      "d": 1
+      "d": 3,
+      "u": "Rc₁·rc₂ = −1.",
+      "uo": [
+       "Nee, dan zijn ze evenwijdig.",
+       "Klopt: rc₁·rc₂ = −1.",
+       "Nee, dat klopt niet.",
+       "Nee, dat zegt niets over loodrecht."
+      ],
+      "uh": "Twee lijnen loodrecht: rc₁ × rc₂ = −1."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de lengte van één herhaling van een periodieke functie\"?",
+      "v": "Waar staat SOH-CAH-TOA voor?",
       "o": [
-       "Interpoleren/extrapoleren",
-       "Grootte (lengte)",
-       "Periode",
-       "Buigpunt"
+       "de drie zijden van een driehoek",
+       "sin = A/H, cos = O/H, tan = A/O",
+       "sin = O/H, cos = A/H, tan = O/A",
+       "de oppervlakte van een driehoek"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Periode»: de lengte van één herhaling van een periodieke functie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de lengte van één herhaling van een periodieke functie\"?",
-      "o": [
-       "Lineair verband",
-       "Hellingen",
-       "Periode",
-       "Kwadratisch verband"
+      "d": 2,
+      "u": "Dat is het ezelsbruggetje.",
+      "uo": [
+       "Nee, het gaat over verhoudingen.",
+       "Nee, dat is verwisseld.",
+       "Klopt: dat is het ezelsbruggetje.",
+       "Nee, het gaat niet over oppervlakte."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Periode»: de lengte van één herhaling van een periodieke functie.",
-      "d": 3
+      "uh": "SOH-CAH-TOA: sin=O/H, cos=A/H, tan=O/A."
      },
      {
-      "v": "Wat houdt «Periode» in?",
+      "v": "Wat is een vector?",
       "o": [
-       "rc; loodrechte lijnen",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand",
-       "de lengte van één herhaling van een periodieke functie",
-       "een verband waarvan de grafiek een parabool is"
-      ],
-      "c": 2,
-      "u": "«Periode» betekent: de lengte van één herhaling van een periodieke functie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Amplitude»?",
-      "o": [
-       "stijgen dat steeds langzamer gaat",
-       "zijden in een rechthoekige driehoek",
-       "met Pythagoras uit de kentallen",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand"
+       "een hoek",
+       "alleen een getal",
+       "een punt in het vlak",
+       "een grootheid met een grootte en een richting"
       ],
       "c": 3,
-      "u": "«Amplitude» betekent: de maximale uitwijking ten opzichte van de evenwichtsstand.",
-      "d": 1
+      "d": 2,
+      "u": "Een vector heeft grootte en richting.",
+      "uo": [
+       "Nee, dat is iets anders.",
+       "Nee, een getal heeft geen richting.",
+       "Nee, een punt heeft geen richting.",
+       "Klopt: een vector heeft grootte en richting."
+      ],
+      "uh": "Vector: grootheid met grootte en richting."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de maximale uitwijking ten opzichte van de evenwichtsstand\"?",
+      "v": "Twee vectoren waarvan het inproduct nul is. Welk begrip past hierbij?",
       "o": [
-       "Integraal",
-       "Amplitude",
-       "Hellinggrafiek",
-       "Functie"
+       "Loodrecht",
+       "Cosinus",
+       "Inproduct",
+       "Vector"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Twee vectoren waarvan het inproduct nul is. Dat past bij Loodrecht: inproduct 0.",
+      "uo": [
+       "Klopt: inproduct 0.",
+       "Nee, dat hoort bij Cosinus: aanliggende / schuinzijde.",
+       "Nee, dat hoort bij Inproduct: som van producten van kentallen.",
+       "Nee, dat hoort bij Vector: grootte en richting."
+      ],
+      "uh": "Loodrecht: inproduct 0."
+     },
+     {
+      "v": "Bij drie zijden of twee zijden met de ingesloten hoek. Om welk begrip gaat het?",
+      "o": [
+       "Richtingscoëfficiënt loodlijn",
+       "Cosinusregel",
+       "Cosinus",
+       "Vector"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Amplitude»: de maximale uitwijking ten opzichte van de evenwichtsstand.",
-      "d": 2
+      "d": 1,
+      "u": "Bij drie zijden of twee zijden met de ingesloten hoek. Dat past bij Cosinusregel: drie zijden of ingesloten hoek.",
+      "uo": [
+       "Nee, dat hoort bij Richtingscoëfficiënt loodlijn: rc met product −1.",
+       "Klopt: drie zijden of ingesloten hoek.",
+       "Nee, dat hoort bij Cosinus: aanliggende / schuinzijde.",
+       "Nee, dat hoort bij Vector: grootte en richting."
+      ],
+      "uh": "Cosinusregel: drie zijden of ingesloten hoek."
      },
      {
-      "v": "Welke term past bij: \"de maximale uitwijking ten opzichte van de evenwichtsstand\"?",
+      "v": "De regel bij drie zijden of een ingesloten hoek. Welk begrip herken je hier?",
       "o": [
-       "Sin, cos, tan",
-       "Amplitude",
-       "Exponentieel verband",
+       "Cosinus",
+       "Richtingscoëfficiënt loodlijn",
+       "Cosinusregel",
+       "Vector"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De regel bij drie zijden of een ingesloten hoek. Dat past bij Cosinusregel: drie zijden of ingesloten hoek.",
+      "uo": [
+       "Nee, dat hoort bij Cosinus: aanliggende / schuinzijde.",
+       "Nee, dat hoort bij Richtingscoëfficiënt loodlijn: rc met product −1.",
+       "Klopt: drie zijden of ingesloten hoek.",
+       "Nee, dat hoort bij Vector: grootte en richting."
+      ],
+      "uh": "Cosinusregel: drie zijden of ingesloten hoek."
+     },
+     {
+      "v": "De standaardvorm van een cirkel. Wat is hier aan de hand?",
+      "o": [
+       "Sinusregel",
+       "Vector",
+       "Loodrecht",
+       "Cirkelvergelijking"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De standaardvorm van een cirkel. Dat past bij Cirkelvergelijking: (x − a)² + (y − b)² = r².",
+      "uo": [
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Loodrecht: inproduct 0.",
+       "Klopt: (x − a)² + (y − b)² = r²."
+      ],
+      "uh": "Cirkelvergelijking: (x − a)² + (y − b)² = r²."
+     },
+     {
+      "v": "De vorm x min a in het kwadraat plus y min b in het kwadraat is r kwadraat. Welk begrip past hierbij?",
+      "o": [
+       "Cirkelvergelijking",
+       "Vector",
+       "Loodrecht",
        "Sinusregel"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Amplitude»: de maximale uitwijking ten opzichte van de evenwichtsstand.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Amplitude» in?",
-      "o": [
-       "rc; loodrechte lijnen",
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "zijden in een rechthoekige driehoek",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand"
-      ],
-      "c": 3,
-      "u": "«Amplitude» betekent: de maximale uitwijking ten opzichte van de evenwichtsstand.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Pythagoras»?",
-      "o": [
-       "zijden in een rechthoekige driehoek",
-       "een verband dat bij elke invoer precies één uitvoer geeft",
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
-       "hoek ↔ verhouding van zijden (SOS-CAS-TOA)"
-      ],
       "c": 0,
-      "u": "«Pythagoras» betekent: zijden in een rechthoekige driehoek.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zijden in een rechthoekige driehoek\"?",
-      "o": [
-       "Pythagoras",
-       "Gelijkvormig",
-       "Buigpunt",
-       "Afstand"
+      "d": 1,
+      "u": "De vorm x min a in het kwadraat plus y min b in het kwadraat is r kwadraat. Dat past bij Cirkelvergelijking: (x − a)² + (y − b)² = r².",
+      "uo": [
+       "Klopt: (x − a)² + (y − b)² = r².",
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Loodrecht: inproduct 0.",
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Pythagoras»: zijden in een rechthoekige driehoek.",
-      "d": 2
+      "uh": "Cirkelvergelijking: (x − a)² + (y − b)² = r²."
      },
      {
-      "v": "Welke term past bij: \"zijden in een rechthoekige driehoek\"?",
+      "v": "De regel a/sin A is b/sin B. Om welk begrip gaat het?",
       "o": [
-       "Periode",
-       "Kwadratisch verband",
-       "Pythagoras",
-       "Sinusregel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Pythagoras»: zijden in een rechthoekige driehoek.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Pythagoras» in?",
-      "o": [
-       "zijden in een rechthoekige driehoek",
-       "de lengte van één herhaling van een periodieke functie",
-       "een verband met een vaste groeifactor per stap",
-       "hoek ↔ verhouding van zijden (SOS-CAS-TOA)"
-      ],
-      "c": 0,
-      "u": "«Pythagoras» betekent: zijden in een rechthoekige driehoek.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Sin, cos, tan»?",
-      "o": [
-       "hoek ↔ verhouding van zijden (SOS-CAS-TOA)",
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "dezelfde vorm maar mogelijk een andere grootte",
-       "de verzameling toegestane invoerwaarden"
-      ],
-      "c": 0,
-      "u": "«Sin, cos, tan» betekent: hoek ↔ verhouding van zijden (SOS-CAS-TOA).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hoek ↔ verhouding van zijden (SOS-CAS-TOA)\"?",
-      "o": [
-       "Straal",
-       "Exponentieel verband",
-       "Sin, cos, tan",
-       "Discriminant"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Sin, cos, tan»: hoek ↔ verhouding van zijden (SOS-CAS-TOA).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"hoek ↔ verhouding van zijden (SOS-CAS-TOA)\"?",
-      "o": [
-       "Sin, cos, tan",
-       "Exponentieel verband",
-       "Kwadratisch verband",
-       "Amplitude"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Sin, cos, tan»: hoek ↔ verhouding van zijden (SOS-CAS-TOA).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Sin, cos, tan» in?",
-      "o": [
-       "zijden in een rechthoekige driehoek",
-       "hoek ↔ verhouding van zijden (SOS-CAS-TOA)",
-       "een verband waarvan de grafiek een parabool is",
-       "zijde/hoek in willekeurige driehoek"
-      ],
-      "c": 1,
-      "u": "«Sin, cos, tan» betekent: hoek ↔ verhouding van zijden (SOS-CAS-TOA).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Sinusregel»?",
-      "o": [
-       "een verband waarvan de grafiek een parabool is",
-       "precies even groot en van dezelfde vorm",
-       "de afstand van het middelpunt tot de rand van een cirkel",
-       "zijde/hoek in willekeurige driehoek"
-      ],
-      "c": 3,
-      "u": "«Sinusregel» betekent: zijde/hoek in willekeurige driehoek.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zijde/hoek in willekeurige driehoek\"?",
-      "o": [
-       "Differentiëren",
+       "Sinus",
        "Sinusregel",
-       "Integraal",
-       "Congruent"
+       "Vector",
+       "Loodrecht"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Sinusregel»: zijde/hoek in willekeurige driehoek.",
-      "d": 2
+      "d": 1,
+      "u": "De regel a/sin A is b/sin B. Dat past bij Sinusregel: a/sin A = b/sin B.",
+      "uo": [
+       "Nee, dat hoort bij Sinus: overstaande / schuinzijde.",
+       "Klopt: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Loodrecht: inproduct 0."
+      ],
+      "uh": "Sinusregel: a/sin A = b/sin B."
      },
      {
-      "v": "Welke term past bij: \"zijde/hoek in willekeurige driehoek\"?",
+      "v": "Overstaande gedeeld door aanliggende. Welk begrip herken je hier?",
       "o": [
-       "Lineair verband",
        "Cosinusregel",
-       "Sin, cos, tan",
-       "Sinusregel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Sinusregel»: zijde/hoek in willekeurige driehoek.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Sinusregel» in?",
-      "o": [
-       "zijde/hoek in willekeurige driehoek",
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "de lengte van één herhaling van een periodieke functie",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand"
-      ],
-      "c": 0,
-      "u": "«Sinusregel» betekent: zijde/hoek in willekeurige driehoek.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Cosinusregel»?",
-      "o": [
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "derde zijde uit twee zijden + ingesloten hoek",
-       "zijde/hoek in willekeurige driehoek",
-       "een hoekmaat waarbij de booglengte gelijk is aan de straal"
-      ],
-      "c": 1,
-      "u": "«Cosinusregel» betekent: derde zijde uit twee zijden + ingesloten hoek.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"derde zijde uit twee zijden + ingesloten hoek\"?",
-      "o": [
-       "Radiaal",
-       "Cosinusregel",
-       "Extreem",
-       "Periode"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Cosinusregel»: derde zijde uit twee zijden + ingesloten hoek.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"derde zijde uit twee zijden + ingesloten hoek\"?",
-      "o": [
-       "Pythagoras",
-       "Hellingen",
-       "Cosinusregel",
-       "Exponentieel verband"
+       "Sinusregel",
+       "Tangens",
+       "Vector"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Cosinusregel»: derde zijde uit twee zijden + ingesloten hoek.",
-      "d": 3
+      "d": 1,
+      "u": "Overstaande gedeeld door aanliggende. Dat past bij Tangens: overstaande / aanliggende.",
+      "uo": [
+       "Nee, dat hoort bij Cosinusregel: drie zijden of ingesloten hoek.",
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Klopt: overstaande / aanliggende.",
+       "Nee, dat hoort bij Vector: grootte en richting."
+      ],
+      "uh": "Tangens: overstaande / aanliggende."
      },
      {
-      "v": "Wat houdt «Cosinusregel» in?",
+      "v": "In een rechthoekige driehoek de overstaande gedeeld door de aanliggende. Wat is hier aan de hand?",
       "o": [
-       "derde zijde uit twee zijden + ingesloten hoek",
-       "een verband met een vaste groeifactor per stap",
-       "zijden in een rechthoekige driehoek",
-       "een verband met een constante toename; de grafiek is een rechte lijn"
+       "Vector",
+       "Sinus",
+       "Inproduct",
+       "Tangens"
       ],
-      "c": 0,
-      "u": "«Cosinusregel» betekent: derde zijde uit twee zijden + ingesloten hoek.",
-      "d": 3
+      "c": 3,
+      "d": 2,
+      "u": "In een rechthoekige driehoek de overstaande gedeeld door de aanliggende. Dat past bij Tangens: overstaande / aanliggende.",
+      "uo": [
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Sinus: overstaande / schuinzijde.",
+       "Nee, dat hoort bij Inproduct: som van producten van kentallen.",
+       "Klopt: overstaande / aanliggende."
+      ],
+      "uh": "Tangens: overstaande / aanliggende."
      },
      {
-      "v": "Wat betekent «Hellingen»?",
+      "v": "Overstaande gedeeld door schuinzijde. Welk begrip past hierbij?",
       "o": [
-       "rc; loodrechte lijnen",
-       "lijn die de grafiek nadert maar niet raakt",
-       "één geval dat een bewering weerlegt",
-       "met Pythagoras uit de kentallen"
+       "Sinus",
+       "Cosinus",
+       "Sinusregel",
+       "Cosinusregel"
       ],
       "c": 0,
-      "u": "«Hellingen» betekent: rc; loodrechte lijnen.",
-      "d": 1
+      "d": 3,
+      "u": "Overstaande gedeeld door schuinzijde. Dat past bij Sinus: overstaande / schuinzijde.",
+      "uo": [
+       "Klopt: overstaande / schuinzijde.",
+       "Nee, dat hoort bij Cosinus: aanliggende / schuinzijde.",
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Cosinusregel: drie zijden of ingesloten hoek."
+      ],
+      "uh": "Sinus: overstaande / schuinzijde."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"rc; loodrechte lijnen\"?",
+      "v": "In een rechthoekige driehoek de overstaande gedeeld door de schuinzijde. Om welk begrip gaat het?",
       "o": [
-       "Hellingen",
-       "Exponentieel verband",
-       "Afnemende stijging",
-       "Functie"
+       "Tangens",
+       "Sinus",
+       "Richtingscoëfficiënt loodlijn",
+       "Cirkelvergelijking"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Hellingen»: rc; loodrechte lijnen.",
-      "d": 2
+      "c": 1,
+      "d": 1,
+      "u": "In een rechthoekige driehoek de overstaande gedeeld door de schuinzijde. Dat past bij Sinus: overstaande / schuinzijde.",
+      "uo": [
+       "Nee, dat hoort bij Tangens: overstaande / aanliggende.",
+       "Klopt: overstaande / schuinzijde.",
+       "Nee, dat hoort bij Richtingscoëfficiënt loodlijn: rc met product −1.",
+       "Nee, dat hoort bij Cirkelvergelijking: (x − a)² + (y − b)² = r²."
+      ],
+      "uh": "Sinus: overstaande / schuinzijde."
      },
      {
-      "v": "Welke term past bij: \"rc; loodrechte lijnen\"?",
+      "v": "De loodlijn heeft product min een met de rc. Welk begrip herken je hier?",
       "o": [
-       "Hellingen",
-       "Exponentieel verband",
-       "Amplitude",
-       "Periode"
+       "Sinus",
+       "Loodrecht",
+       "Richtingscoëfficiënt loodlijn",
+       "Cirkelvergelijking"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Hellingen»: rc; loodrechte lijnen.",
-      "d": 3
+      "c": 2,
+      "d": 2,
+      "u": "De loodlijn heeft product min een met de rc. Dat past bij Richtingscoëfficiënt loodlijn: rc met product −1.",
+      "uo": [
+       "Nee, dat hoort bij Sinus: overstaande / schuinzijde.",
+       "Nee, dat hoort bij Loodrecht: inproduct 0.",
+       "Klopt: rc met product −1.",
+       "Nee, dat hoort bij Cirkelvergelijking: (x − a)² + (y − b)² = r²."
+      ],
+      "uh": "Richtingscoëfficiënt loodlijn: rc met product −1."
      },
      {
-      "v": "Wat houdt «Hellingen» in?",
+      "v": "Een grootheid met grootte en richting. Wat is hier aan de hand?",
       "o": [
-       "rc; loodrechte lijnen",
-       "een verband waarvan de grafiek een parabool is",
-       "een verband met een constante toename; de grafiek is een rechte lijn",
-       "zijden in een rechthoekige driehoek"
+       "Cosinus",
+       "Inproduct",
+       "Loodrecht",
+       "Vector"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een grootheid met grootte en richting. Dat past bij Vector: grootte en richting.",
+      "uo": [
+       "Nee, dat hoort bij Cosinus: aanliggende / schuinzijde.",
+       "Nee, dat hoort bij Inproduct: som van producten van kentallen.",
+       "Nee, dat hoort bij Loodrecht: inproduct 0.",
+       "Klopt: grootte en richting."
+      ],
+      "uh": "Vector: grootte en richting."
+     },
+     {
+      "v": "De som van de producten van de kentallen. Welk begrip past hierbij?",
+      "o": [
+       "Inproduct",
+       "Cosinus",
+       "Richtingscoëfficiënt loodlijn",
+       "Vector"
       ],
       "c": 0,
-      "u": "«Hellingen» betekent: rc; loodrechte lijnen.",
-      "d": 3
+      "d": 1,
+      "u": "De som van de producten van de kentallen. Dat past bij Inproduct: som van producten van kentallen.",
+      "uo": [
+       "Klopt: som van producten van kentallen.",
+       "Nee, dat hoort bij Cosinus: aanliggende / schuinzijde.",
+       "Nee, dat hoort bij Richtingscoëfficiënt loodlijn: rc met product −1.",
+       "Nee, dat hoort bij Vector: grootte en richting."
+      ],
+      "uh": "Inproduct: som van producten van kentallen."
+     },
+     {
+      "v": "Bij twee hoeken en een zijde reken je met a gedeeld door sin A. Om welk begrip gaat het?",
+      "o": [
+       "Cosinusregel",
+       "Sinusregel",
+       "Cosinus",
+       "Richtingscoëfficiënt loodlijn"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij twee hoeken en een zijde reken je met a gedeeld door sin A. Dat past bij Sinusregel: a/sin A = b/sin B.",
+      "uo": [
+       "Nee, dat hoort bij Cosinusregel: drie zijden of ingesloten hoek.",
+       "Klopt: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Cosinus: aanliggende / schuinzijde.",
+       "Nee, dat hoort bij Richtingscoëfficiënt loodlijn: rc met product −1."
+      ],
+      "uh": "Sinusregel: a/sin A = b/sin B."
+     },
+     {
+      "v": "Ze staan haaks op elkaar. Welk begrip herken je hier?",
+      "o": [
+       "Inproduct",
+       "Sinus",
+       "Loodrecht",
+       "Vector"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Ze staan haaks op elkaar. Dat past bij Loodrecht: inproduct 0.",
+      "uo": [
+       "Nee, dat hoort bij Inproduct: som van producten van kentallen.",
+       "Nee, dat hoort bij Sinus: overstaande / schuinzijde.",
+       "Klopt: inproduct 0.",
+       "Nee, dat hoort bij Vector: grootte en richting."
+      ],
+      "uh": "Loodrecht: inproduct 0."
+     },
+     {
+      "v": "Aanliggende gedeeld door schuinzijde. Wat is hier aan de hand?",
+      "o": [
+       "Vector",
+       "Sinusregel",
+       "Cosinusregel",
+       "Cosinus"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Aanliggende gedeeld door schuinzijde. Dat past bij Cosinus: aanliggende / schuinzijde.",
+      "uo": [
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Cosinusregel: drie zijden of ingesloten hoek.",
+       "Klopt: aanliggende / schuinzijde."
+      ],
+      "uh": "Cosinus: aanliggende / schuinzijde."
+     },
+     {
+      "v": "Je vermenigvuldigt de kentallen en telt op; nul betekent loodrecht. Welk begrip past hierbij?",
+      "o": [
+       "Inproduct",
+       "Loodrecht",
+       "Cosinus",
+       "Sinusregel"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je vermenigvuldigt de kentallen en telt op; nul betekent loodrecht. Dat past bij Inproduct: som van producten van kentallen.",
+      "uo": [
+       "Klopt: som van producten van kentallen.",
+       "Nee, dat hoort bij Loodrecht: inproduct 0.",
+       "Nee, dat hoort bij Cosinus: aanliggende / schuinzijde.",
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B."
+      ],
+      "uh": "Inproduct: som van producten van kentallen."
+     },
+     {
+      "v": "In een rechthoekige driehoek de aanliggende gedeeld door de schuinzijde. Om welk begrip gaat het?",
+      "o": [
+       "Sinus",
+       "Cosinus",
+       "Richtingscoëfficiënt loodlijn",
+       "Inproduct"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "In een rechthoekige driehoek de aanliggende gedeeld door de schuinzijde. Dat past bij Cosinus: aanliggende / schuinzijde.",
+      "uo": [
+       "Nee, dat hoort bij Sinus: overstaande / schuinzijde.",
+       "Klopt: aanliggende / schuinzijde.",
+       "Nee, dat hoort bij Richtingscoëfficiënt loodlijn: rc met product −1.",
+       "Nee, dat hoort bij Inproduct: som van producten van kentallen."
+      ],
+      "uh": "Cosinus: aanliggende / schuinzijde."
+     },
+     {
+      "v": "De helling waarvan het product met de gegeven helling min een is. Welk begrip herken je hier?",
+      "o": [
+       "Sinusregel",
+       "Vector",
+       "Richtingscoëfficiënt loodlijn",
+       "Cosinusregel"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De helling waarvan het product met de gegeven helling min een is. Dat past bij Richtingscoëfficiënt loodlijn: rc met product −1.",
+      "uo": [
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Klopt: rc met product −1.",
+       "Nee, dat hoort bij Cosinusregel: drie zijden of ingesloten hoek."
+      ],
+      "uh": "Richtingscoëfficiënt loodlijn: rc met product −1."
+     },
+     {
+      "v": "Een pijl met een grootte en een richting. Wat is hier aan de hand?",
+      "o": [
+       "Cirkelvergelijking",
+       "Inproduct",
+       "Cosinus",
+       "Vector"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een pijl met een grootte en een richting. Dat past bij Vector: grootte en richting.",
+      "uo": [
+       "Nee, dat hoort bij Cirkelvergelijking: (x − a)² + (y − b)² = r².",
+       "Nee, dat hoort bij Inproduct: som van producten van kentallen.",
+       "Nee, dat hoort bij Cosinus: aanliggende / schuinzijde.",
+       "Klopt: grootte en richting."
+      ],
+      "uh": "Vector: grootte en richting."
      }
     ],
     "oe": [
@@ -70445,44 +70746,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Lineair verband",
-      "d": "een verband met een constante toename; de grafiek is een rechte lijn"
+      "t": "Inproduct",
+      "d": "a₁b₁ + a₂b₂; is 0 bij loodrechte vectoren"
      },
      {
-      "t": "Exponentieel verband",
-      "d": "een verband met een vaste groeifactor per stap"
+      "t": "Loodrecht",
+      "d": "twee vectoren met inproduct 0, of lijnen met rc₁·rc₂ = −1"
      },
      {
-      "t": "Kwadratisch verband",
-      "d": "een verband waarvan de grafiek een parabool is"
+      "t": "Richtingscoëfficiënt loodlijn",
+      "d": "de rc waarvan het product met de gegeven rc gelijk aan −1 is"
      },
      {
-      "t": "Periode",
-      "d": "de lengte van één herhaling van een periodieke functie"
+      "t": "Sinus",
+      "d": "in een rechthoekige driehoek: overstaande gedeeld door schuinzijde"
      },
      {
-      "t": "Amplitude",
-      "d": "de maximale uitwijking ten opzichte van de evenwichtsstand"
+      "t": "Cosinus",
+      "d": "in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde"
      },
      {
-      "t": "Pythagoras",
-      "d": "zijden in een rechthoekige driehoek"
-     },
-     {
-      "t": "Sin, cos, tan",
-      "d": "hoek ↔ verhouding van zijden (SOS-CAS-TOA)"
+      "t": "Tangens",
+      "d": "in een rechthoekige driehoek: overstaande gedeeld door aanliggende"
      },
      {
       "t": "Sinusregel",
-      "d": "zijde/hoek in willekeurige driehoek"
+      "d": "a/sin A = b/sin B, bij twee hoeken en een zijde"
      },
      {
       "t": "Cosinusregel",
-      "d": "derde zijde uit twee zijden + ingesloten hoek"
+      "d": "de regel bij drie zijden of twee zijden met de ingesloten hoek"
      },
      {
-      "t": "Hellingen",
-      "d": "rc; loodrechte lijnen"
+      "t": "Cirkelvergelijking",
+      "d": "de standaardvorm (x − a)² + (y − b)² = r²"
+     },
+     {
+      "t": "Vector",
+      "d": "een grootheid met een grootte en een richting"
      }
     ]
    },
@@ -70502,51 +70803,83 @@ var VAKKEN = [
      "D1: Optimaliseren (CE)",
      "D1: Toepassingen in modellen (CE)"
     ],
-    "sam": "<div class=\"sam-head\">Afgeleide en hellingsgetal</div><ul><li><strong>Afgeleide f'(x)</strong>: geeft de helling van de raaklijn in elk punt x. Positief: stijgend. Negatief: dalend. Nul: horizontale raaklijn (mogelijk extremum).</li><li><strong>Differentieerregels</strong>: (xⁿ)' = n·xⁿ⁻¹. (c·f)' = c·f'. (f ± g)' = f' ± g'. (sin x)' = cos x. (cos x)' = −sin x. (eˣ)' = eˣ. (ln x)' = 1/x.</li><li><strong>Kettingregel</strong>: (f(g(x)))' = f'(g(x)) · g'(x). Voorbeeld: (sin(3x))' = cos(3x) · 3.</li><li><strong>Gemiddelde vs. momentane verandering</strong>: gemiddeld = (f(b)−f(a))/(b−a) over een interval. Momentaan = f'(x) in één punt.</li></ul><div class=\"sam-head\">Raaklijn en extremen</div><ul><li><strong>Raaklijn</strong> in (a, f(a)): <span class=\"fm\">y = f'(a)·(x − a) + f(a)</span>. Helling = f'(a).</li><li><strong>Extremen vinden</strong>: stel f'(x) = 0 en bepaal tekenwisseling. f' van + naar − → maximum. f' van − naar + → minimum.</li><li><strong>Tweede afgeleide test</strong>: f'(a) = 0 én f''(a) &lt; 0 → maximum. f''(a) &gt; 0 → minimum. f''(a) = 0 → gebruik tekenschema van f'.</li><li><strong>Buigpunt</strong>: f''(x) = 0 én f'' wisselt van teken.</li></ul><div class=\"sam-head\">Optimaliseren en toepassingen</div><ul><li><strong>Optimalisatieprobleem</strong>: (1) stel een formule op voor de te optimaliseren grootheid. (2) Differentieer. (3) Stel f'(x) = 0 en los op. (4) Controleer of het een max of min is. (5) Bereken de gevraagde waarde.</li><li><strong>Toepassingen in modellen</strong>: kosten/winst (maximale winst), geometrie (minimaal materiaal), beweging (maximale snelheid). Altijd de context controleren: heeft de gevonden waarde zin in het domein van het model?</li><li><strong>Stijgend/dalend</strong>: f'(x) &gt; 0 = stijgend interval. f'(x) &lt; 0 = dalend interval. Toenemend stijgend: f' &gt; 0 én f'' &gt; 0. Afnemend stijgend: f' &gt; 0 én f'' &lt; 0.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Met <strong>differentiëren</strong> vind je de <strong>helling</strong> en de <strong>raaklijn</strong>. De afgeleide van xⁿ is n·xⁿ⁻¹, van sin(x) is cos(x), van ln(x) is 1/x en van een constante 0. Voor samengestelde functies gebruik je de <strong>kettingregel</strong>. Waar f'(x) = 0 ligt een <strong>extremum</strong>.</div><div class=\"sam-head\">1. Afgeleiden</div><p>De <strong>afgeleide</strong> geeft de helling. Belangrijke regels: xⁿ → n·xⁿ⁻¹, een constante → 0, sin(x) → cos(x), cos(x) → −sin(x), eˣ → eˣ en ln(x) → 1/x. Voor een samengestelde functie geldt de <strong>kettingregel</strong>: [f(g(x))]' = f'(g(x))·g'(x).</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Kettingregel</div><div class=\"sam-formula-eq\">[f(g(x))]' = f'(g(x)) · g'(x)</div><div class=\"sam-formula-note\">Buitenste differentiëren, binnenste laten staan, maal de afgeleide van de binnenste.</div></div><div class=\"sam-head\">2. Raaklijn en extremen</div><p>De <strong>raaklijn</strong> aan f in x = a is y = f'(a)·(x − a) + f(a). Waar <strong>f'(x) = 0</strong> ligt een <strong>extremum</strong> (top of dal); is f'(x) > 0, dan stijgt f. Bij een product van functies gebruik je de <strong>productregel</strong>.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Afgeleide</div><div class=\"sam-definitie-body\">de functie die de helling van f in elk punt geeft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Raaklijn</div><div class=\"sam-definitie-body\">de lijn y = f'(a)·(x − a) + f(a) die de grafiek in één punt raakt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kettingregel</div><div class=\"sam-definitie-body\">de regel [f(g(x))]' = f'(g(x))·g'(x) voor samengestelde functies.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Productregel</div><div class=\"sam-definitie-body\">de regel voor het differentiëren van een product van functies.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Extremum</div><div class=\"sam-definitie-body\">een top of dal waar f'(x) = 0.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Helling</div><div class=\"sam-definitie-body\">de steilheid van de grafiek in een punt, gelijk aan de afgeleide.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Primitieve</div><div class=\"sam-definitie-body\">een functie waarvan de afgeleide f is, het omgekeerde van differentiëren.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Buigpunt</div><div class=\"sam-definitie-body\">een punt waar de grafiek van hol naar bol overgaat, f''(x) = 0.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stationair punt</div><div class=\"sam-definitie-body\">een punt waar f'(x) = 0.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Differentiëren</div><div class=\"sam-definitie-body\">het bepalen van de afgeleide van een functie.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Afgeleide»</b> is helling in elk punt, terwijl <b>«Primitieve»</b> omgekeerde van afgeleide is. <b>«Raaklijn»</b> is raakt in één punt, terwijl <b>«Helling»</b> steilheid is. <b>«Kettingregel»</b> is voor f(g(x)), terwijl <b>«Productregel»</b> voor f(x)·g(x) is. <b>«Extremum»</b> is top of dal, terwijl <b>«Helling»</b> steilheid is.</div>",
     "sv": [
      {
       "v": "Wat is de vergelijking van de raaklijn aan f(x) in het punt x = a?",
       "o": [
-       "y = f'(a)·(x min a) + f(a)",
-       "y = f(a)·x + f'(a)",
+       "y = f'(a)·(x − a) + f(a)",
+       "y = f(a)·x",
        "y = f'(x)·a",
-       "y = f(x)·(x min a)"
+       "y = a·x + b"
       ],
       "c": 0,
-      "u": "De raaklijn heeft helling f'(a) en gaat door het punt (a, f(a)). Invullen in de lijnvergelijking y - f(a) = f'(a)(x - a) geeft het antwoord."
+      "d": 3,
+      "u": "Helling f'(a), gaat door (a, f(a)).",
+      "uo": [
+       "Klopt: helling f'(a), gaat door (a, f(a)).",
+       "Nee, dat is geen raaklijn.",
+       "Nee, dat klopt niet.",
+       "Nee, dat is een algemene lijn."
+      ],
+      "uh": "Raaklijn: y = f'(a)·(x − a) + f(a)."
      },
      {
       "v": "Wat is de kettingregel?",
       "o": [
-       "f(g(x))′ = f′(g(x))·g′(x): buitenste differentiëren, binnenste laten staan, maal afg. binnenste",
-       "f(x)·g(x))′ = f′g + fg′: de productregel voor een product van twee functies",
-       "(f(x)/g(x))′ = (f′g − fg′)/g²: de quotiëntregel voor een breuk van functies",
-       "De primitieve van f(g(x)): de omgekeerde toepassing van de kettingregel"
+       "f'(x)·g'(x)",
+       "[f(g(x))]' = f'(g(x))·g'(x)",
+       "f'(x) + g'(x)",
+       "f(x)·g(x)"
       ],
-      "c": 0,
-      "u": "Kettingregel: buitenste functie differentiëren, binnenste laten staan, vermenigvuldigen met de afgeleide van de binnenste. Voorbeeld: (sin(3x))' = cos(3x)·3."
+      "c": 1,
+      "d": 3,
+      "u": "Buitenste differentiëren maal de afgeleide van de binnenste.",
+      "uo": [
+       "Nee, dat is niet de kettingregel.",
+       "Klopt: buitenste differentiëren maal de afgeleide van de binnenste.",
+       "Nee, dat klopt niet.",
+       "Nee, dat is een gewoon product."
+      ],
+      "uh": "Kettingregel: f'(g(x))·g'(x)."
      },
      {
-      "v": "Wat is de afgeleide van een constante functie f(x) = 5?",
+      "v": "Wat is de afgeleide van de constante functie f(x) = 5?",
       "o": [
-       "0",
-       "5",
        "1",
-       "−5"
+       "5",
+       "0",
+       "5x"
       ],
-      "c": 0,
-      "u": "Een constante verandert niet, dus de helling is overal 0. Algemeen: (c)' = 0."
+      "c": 2,
+      "d": 1,
+      "u": "Een constante verandert niet, dus afgeleide 0.",
+      "uo": [
+       "Nee, de helling is 0.",
+       "Nee, de functiewaarde is 5, de helling 0.",
+       "Klopt: een constante verandert niet, dus afgeleide 0.",
+       "Nee, er is geen x."
+      ],
+      "uh": "De afgeleide van een constante is 0."
      },
      {
       "v": "Wat is de afgeleide van sin(x)?",
       "o": [
-       "cos(x)",
+       "tan(x)",
        "−cos(x)",
        "−sin(x)",
-       "tan(x)"
+       "cos(x)"
       ],
-      "c": 0,
-      "u": "(sin x)' = cos x. (cos x)' = −sin x. Standaard afleidingen die je uit het hoofd moet kennen."
+      "c": 3,
+      "d": 2,
+      "u": "De afgeleide van sin(x) is cos(x).",
+      "uo": [
+       "Nee, dat is een andere functie.",
+       "Nee, het teken klopt niet.",
+       "Nee, dat is de vorm van de afgeleide van cos.",
+       "Klopt: de afgeleide van sin(x) is cos(x)."
+      ],
+      "uh": "De afgeleide van sin(x) is cos(x)."
      },
      {
       "v": "Wat is de afgeleide van f(x) = ln(x)?",
@@ -70554,586 +70887,531 @@ var VAKKEN = [
        "1/x",
        "ln(x)",
        "x",
-       "e^x"
+       "eˣ"
       ],
       "c": 0,
-      "u": "(ln x)' = 1/x voor x > 0. Standaard afleiding. ln is de natuurlijke logaritme met grondtal e."
+      "d": 2,
+      "u": "De afgeleide van ln(x) is 1/x.",
+      "uo": [
+       "Klopt: de afgeleide van ln(x) is 1/x.",
+       "Nee, dat is de functie zelf.",
+       "Nee, dat klopt niet.",
+       "Nee, dat is een andere functie."
+      ],
+      "uh": "De afgeleide van ln(x) is 1/x."
      },
      {
-      "v": "Wat betekent «Afgeleide»?",
+      "v": "Wat is de afgeleide van f(x) = x²?",
       "o": [
-       "de mate van stijging of daling van een grafiek",
-       "de verzameling mogelijke uitvoerwaarden",
-       "de functie die de helling van de grafiek in elk punt geeft",
-       "probleem → model → rekenen → terugvertalen"
+       "x",
+       "2x",
+       "2",
+       "x³"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "N·xⁿ⁻¹ geeft 2x.",
+      "uo": [
+       "Nee, de exponent komt ervoor.",
+       "Klopt: n·xⁿ⁻¹ geeft 2x.",
+       "Nee, de x blijft staan.",
+       "Nee, dat zou integreren zijn."
+      ],
+      "uh": "De afgeleide van x² is 2x."
+     },
+     {
+      "v": "Wat is de afgeleide van f(x) = x³?",
+      "o": [
+       "3x",
+       "x²",
+       "3x²",
+       "3x³"
       ],
       "c": 2,
-      "u": "«Afgeleide» betekent: de functie die de helling van de grafiek in elk punt geeft.",
-      "d": 1
+      "d": 2,
+      "u": "3·x² volgens n·xⁿ⁻¹.",
+      "uo": [
+       "Nee, de exponent wordt 2.",
+       "Nee, de factor 3 hoort ervoor.",
+       "Klopt: 3·x² volgens n·xⁿ⁻¹.",
+       "Nee, de exponent daalt met 1."
+      ],
+      "uh": "De afgeleide van x³ is 3x²."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de functie die de helling van de grafiek in elk punt geeft\"?",
+      "v": "Welke regel gebruik je voor de afgeleide van f(x) = x²·sin(x)?",
+      "o": [
+       "de wortelregel",
+       "de kettingregel",
+       "geen regel",
+       "de productregel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het is een product van twee functies.",
+      "uo": [
+       "Nee, die bestaat niet.",
+       "Nee, er is geen samenstelling f(g(x)).",
+       "Nee, een regel is nodig.",
+       "Klopt: het is een product van twee functies."
+      ],
+      "uh": "Product van functies: de productregel."
+     },
+     {
+      "v": "Wat geldt als f'(x) > 0 op een interval?",
+      "o": [
+       "de functie stijgt daar",
+       "de functie daalt daar",
+       "de functie is constant",
+       "er ligt een minimum"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een positieve afgeleide betekent stijgen.",
+      "uo": [
+       "Klopt: een positieve afgeleide betekent stijgen.",
+       "Nee, dalen hoort bij f'(x) < 0.",
+       "Nee, constant hoort bij f'(x) = 0.",
+       "Nee, een minimum is één punt."
+      ],
+      "uh": "f'(x) > 0: de functie stijgt."
+     },
+     {
+      "v": "Waar heeft een functie een extremum?",
+      "o": [
+       "waar f(x) = 0",
+       "waar f'(x) = 0 en het teken omslaat",
+       "waar f'(x) het grootst is",
+       "waar de grafiek de y-as snijdt"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "In een top of dal is de helling 0.",
+      "uo": [
+       "Nee, dat is een nulpunt van f.",
+       "Klopt: in een top of dal is de helling 0.",
+       "Nee, dat is de steilste helling.",
+       "Nee, dat is het y-snijpunt."
+      ],
+      "uh": "Extremum: f'(x) = 0 met tekenwissel."
+     },
+     {
+      "v": "Wat is de afgeleide van f(x) = cos(x)?",
+      "o": [
+       "cos(x)",
+       "sin(x)",
+       "−sin(x)",
+       "−cos(x)"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De afgeleide van cos(x) is −sin(x).",
+      "uo": [
+       "Nee, dat is de functie zelf.",
+       "Nee, let op het minteken.",
+       "Klopt: de afgeleide van cos(x) is −sin(x).",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "De afgeleide van cos(x) is −sin(x)."
+     },
+     {
+      "v": "Wat is de afgeleide van f(x) = eˣ?",
+      "o": [
+       "ln(x)",
+       "x·eˣ⁻¹",
+       "1",
+       "eˣ"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Eˣ is zijn eigen afgeleide.",
+      "uo": [
+       "Nee, dat is de omgekeerde functie.",
+       "Nee, dat is de machtsregel.",
+       "Nee, de afgeleide is niet constant.",
+       "Klopt: eˣ is zijn eigen afgeleide."
+      ],
+      "uh": "De afgeleide van eˣ is eˣ."
+     },
+     {
+      "v": "De lijn die de grafiek in precies één punt raakt. Welk begrip past hierbij?",
+      "o": [
+       "Raaklijn",
+       "Afgeleide",
+       "Extremum",
+       "Stationair punt"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De lijn die de grafiek in precies één punt raakt. Dat past bij Raaklijn: raakt in één punt.",
+      "uo": [
+       "Klopt: raakt in één punt.",
+       "Nee, dat hoort bij Afgeleide: helling in elk punt.",
+       "Nee, dat hoort bij Extremum: top of dal.",
+       "Nee, dat hoort bij Stationair punt: f'(x) = 0."
+      ],
+      "uh": "Raaklijn: raakt in één punt."
+     },
+     {
+      "v": "Het punt waar de grafiek van hol naar bol overgaat. Om welk begrip gaat het?",
       "o": [
        "Afgeleide",
-       "Kwadratisch verband",
-       "Vector",
-       "Sinusregel"
+       "Buigpunt",
+       "Productregel",
+       "Stationair punt"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Afgeleide»: de functie die de helling van de grafiek in elk punt geeft.",
-      "d": 2
+      "c": 1,
+      "d": 1,
+      "u": "Het punt waar de grafiek van hol naar bol overgaat. Dat past bij Buigpunt: f''(x) = 0.",
+      "uo": [
+       "Nee, dat hoort bij Afgeleide: helling in elk punt.",
+       "Klopt: f''(x) = 0.",
+       "Nee, dat hoort bij Productregel: voor f(x)·g(x).",
+       "Nee, dat hoort bij Stationair punt: f'(x) = 0."
+      ],
+      "uh": "Buigpunt: f''(x) = 0."
      },
      {
-      "v": "Welke term past bij: \"de functie die de helling van de grafiek in elk punt geeft\"?",
+      "v": "Waar de tweede afgeleide nul is. Welk begrip herken je hier?",
       "o": [
-       "Differentiëren",
+       "Productregel",
        "Afgeleide",
-       "Stationair punt",
-       "Afnemende stijging"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Afgeleide»: de functie die de helling van de grafiek in elk punt geeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Afgeleide» in?",
-      "o": [
-       "de functie die de helling van de grafiek in elk punt geeft",
-       "stijgen dat steeds sneller gaat",
-       "een functie waarvan de afgeleide de gegeven functie is",
-       "een maximum of minimum van een functie"
-      ],
-      "c": 0,
-      "u": "«Afgeleide» betekent: de functie die de helling van de grafiek in elk punt geeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Raaklijn»?",
-      "o": [
-       "binnen/buiten het meetbereik schatten",
-       "stijgen dat steeds sneller gaat",
-       "derde zijde uit twee zijden + ingesloten hoek",
-       "de lijn die de grafiek in precies één punt raakt"
-      ],
-      "c": 3,
-      "u": "«Raaklijn» betekent: de lijn die de grafiek in precies één punt raakt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de lijn die de grafiek in precies één punt raakt\"?",
-      "o": [
-       "Periode",
-       "Grootte (lengte)",
-       "Raaklijn",
-       "Kwadratisch"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Raaklijn»: de lijn die de grafiek in precies één punt raakt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de lijn die de grafiek in precies één punt raakt\"?",
-      "o": [
-       "Hellinggrafiek",
-       "Afnemende stijging",
-       "Extreem",
-       "Raaklijn"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Raaklijn»: de lijn die de grafiek in precies één punt raakt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Raaklijn» in?",
-      "o": [
-       "de lijn die de grafiek in precies één punt raakt",
-       "een functie waarvan de afgeleide de gegeven functie is",
-       "het punt waar de grafiek van hol naar bol overgaat",
-       "een maximum of minimum van een functie"
-      ],
-      "c": 0,
-      "u": "«Raaklijn» betekent: de lijn die de grafiek in precies één punt raakt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Extreem»?",
-      "o": [
-       "een maximum of minimum van een functie",
-       "de verzameling toegestane invoerwaarden",
-       "met Pythagoras uit de kentallen",
-       "de maximale uitwijking ten opzichte van de evenwichtsstand"
-      ],
-      "c": 0,
-      "u": "«Extreem» betekent: een maximum of minimum van een functie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een maximum of minimum van een functie\"?",
-      "o": [
-       "Discriminant",
-       "Domein",
-       "Representaties",
-       "Extreem"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Extreem»: een maximum of minimum van een functie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een maximum of minimum van een functie\"?",
-      "o": [
-       "Extreem",
-       "Stationair punt",
-       "Helling",
-       "Toenemende stijging"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Extreem»: een maximum of minimum van een functie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Extreem» in?",
-      "o": [
-       "stijgen dat steeds langzamer gaat",
-       "stijgen dat steeds sneller gaat",
-       "de oppervlakte tussen een grafiek en de horizontale as",
-       "een maximum of minimum van een functie"
-      ],
-      "c": 3,
-      "u": "«Extreem» betekent: een maximum of minimum van een functie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Buigpunt»?",
-      "o": [
-       "een punt waar de helling nul is",
-       "het punt waar de grafiek van hol naar bol overgaat",
-       "de mate van stijging of daling van een grafiek",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt"
-      ],
-      "c": 1,
-      "u": "«Buigpunt» betekent: het punt waar de grafiek van hol naar bol overgaat.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het punt waar de grafiek van hol naar bol overgaat\"?",
-      "o": [
-       "Discriminant",
-       "Functietypen",
-       "Vectoren",
-       "Buigpunt"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Buigpunt»: het punt waar de grafiek van hol naar bol overgaat.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het punt waar de grafiek van hol naar bol overgaat\"?",
-      "o": [
        "Buigpunt",
-       "Helling",
-       "Primitieve",
-       "Hellinggrafiek"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Buigpunt»: het punt waar de grafiek van hol naar bol overgaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Buigpunt» in?",
-      "o": [
-       "de oppervlakte tussen een grafiek en de horizontale as",
-       "de mate van stijging of daling van een grafiek",
-       "machtsregel, som, constante",
-       "het punt waar de grafiek van hol naar bol overgaat"
-      ],
-      "c": 3,
-      "u": "«Buigpunt» betekent: het punt waar de grafiek van hol naar bol overgaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Primitieve»?",
-      "o": [
-       "de functie die de helling van de grafiek in elk punt geeft",
-       "een functie waarvan de afgeleide de gegeven functie is",
-       "de verzameling toegestane invoerwaarden",
-       "zijde/hoek in willekeurige driehoek"
-      ],
-      "c": 1,
-      "u": "«Primitieve» betekent: een functie waarvan de afgeleide de gegeven functie is.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een functie waarvan de afgeleide de gegeven functie is\"?",
-      "o": [
-       "Sin, cos, tan",
-       "Primitieve",
-       "Nulpunt",
-       "Lineair"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Primitieve»: een functie waarvan de afgeleide de gegeven functie is.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een functie waarvan de afgeleide de gegeven functie is\"?",
-      "o": [
-       "Primitieve",
-       "Hellinggrafiek",
-       "Toenemende stijging",
-       "Extreem"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Primitieve»: een functie waarvan de afgeleide de gegeven functie is.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Primitieve» in?",
-      "o": [
-       "stijgen dat steeds langzamer gaat",
-       "een functie waarvan de afgeleide de gegeven functie is",
-       "stijgen dat steeds sneller gaat",
-       "de mate van stijging of daling van een grafiek"
-      ],
-      "c": 1,
-      "u": "«Primitieve» betekent: een functie waarvan de afgeleide de gegeven functie is.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Integraal»?",
-      "o": [
-       "de oppervlakte tussen een grafiek en de horizontale as",
-       "één geval dat een bewering weerlegt",
-       "een maximum of minimum van een functie",
-       "verschuiven en vermenigvuldigen"
-      ],
-      "c": 0,
-      "u": "«Integraal» betekent: de oppervlakte tussen een grafiek en de horizontale as.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de oppervlakte tussen een grafiek en de horizontale as\"?",
-      "o": [
-       "Transformaties",
-       "Nulpunt",
-       "Integraal",
-       "Cosinusregel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Integraal»: de oppervlakte tussen een grafiek en de horizontale as.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de oppervlakte tussen een grafiek en de horizontale as\"?",
-      "o": [
-       "Toenemende stijging",
-       "Hellinggrafiek",
-       "Raaklijn",
-       "Integraal"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Integraal»: de oppervlakte tussen een grafiek en de horizontale as.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Integraal» in?",
-      "o": [
-       "de lijn die de grafiek in precies één punt raakt",
-       "stijgen dat steeds sneller gaat",
-       "de oppervlakte tussen een grafiek en de horizontale as",
-       "machtsregel, som, constante"
-      ],
-      "c": 2,
-      "u": "«Integraal» betekent: de oppervlakte tussen een grafiek en de horizontale as.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Helling»?",
-      "o": [
-       "de mate van stijging of daling van een grafiek",
-       "zijde/hoek in willekeurige driehoek",
-       "tussen twee punten",
-       "gelijke stappen erbij/eraf (+ vast getal)"
-      ],
-      "c": 0,
-      "u": "«Helling» betekent: de mate van stijging of daling van een grafiek.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de mate van stijging of daling van een grafiek\"?",
-      "o": [
-       "Afstand",
-       "Helling",
-       "Lineair",
-       "Verband herkennen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Helling»: de mate van stijging of daling van een grafiek.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de mate van stijging of daling van een grafiek\"?",
-      "o": [
-       "Integraal",
-       "Afgeleide",
-       "Helling",
-       "Extreem"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Helling»: de mate van stijging of daling van een grafiek.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Helling» in?",
-      "o": [
-       "de lijn die de grafiek in precies één punt raakt",
-       "stijgen dat steeds sneller gaat",
-       "een punt waar de helling nul is",
-       "de mate van stijging of daling van een grafiek"
-      ],
-      "c": 3,
-      "u": "«Helling» betekent: de mate van stijging of daling van een grafiek.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Toenemende stijging»?",
-      "o": [
-       "rc; loodrechte lijnen",
-       "stijgen dat steeds sneller gaat",
-       "de mate van stijging of daling van een grafiek",
-       "één geval dat een bewering weerlegt"
-      ],
-      "c": 1,
-      "u": "«Toenemende stijging» betekent: stijgen dat steeds sneller gaat.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"stijgen dat steeds sneller gaat\"?",
-      "o": [
-       "Radiaal",
-       "Parabool",
-       "Toenemende stijging",
-       "Representaties"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Toenemende stijging»: stijgen dat steeds sneller gaat.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"stijgen dat steeds sneller gaat\"?",
-      "o": [
-       "Helling",
-       "Toenemende stijging",
-       "Stationair punt",
-       "Integraal"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Toenemende stijging»: stijgen dat steeds sneller gaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Toenemende stijging» in?",
-      "o": [
-       "de grafiek van de helling van een functie",
-       "machtsregel, som, constante",
-       "stijgen dat steeds sneller gaat",
-       "de oppervlakte tussen een grafiek en de horizontale as"
-      ],
-      "c": 2,
-      "u": "«Toenemende stijging» betekent: stijgen dat steeds sneller gaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Afnemende stijging»?",
-      "o": [
-       "de lijn die de grafiek in precies één punt raakt",
-       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
-       "probleem → model → rekenen → terugvertalen",
-       "stijgen dat steeds langzamer gaat"
-      ],
-      "c": 3,
-      "u": "«Afnemende stijging» betekent: stijgen dat steeds langzamer gaat.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"stijgen dat steeds langzamer gaat\"?",
-      "o": [
-       "Differentiëren",
-       "Afnemende stijging",
-       "Raaklijn",
-       "Cosinusregel"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Afnemende stijging»: stijgen dat steeds langzamer gaat.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"stijgen dat steeds langzamer gaat\"?",
-      "o": [
-       "Toenemende stijging",
-       "Raaklijn",
-       "Afnemende stijging",
-       "Integraal"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Afnemende stijging»: stijgen dat steeds langzamer gaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Afnemende stijging» in?",
-      "o": [
-       "een maximum of minimum van een functie",
-       "de mate van stijging of daling van een grafiek",
-       "stijgen dat steeds langzamer gaat",
-       "stijgen dat steeds sneller gaat"
-      ],
-      "c": 2,
-      "u": "«Afnemende stijging» betekent: stijgen dat steeds langzamer gaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Hellinggrafiek»?",
-      "o": [
-       "de functie die de helling van de grafiek in elk punt geeft",
-       "de grafiek van de helling van een functie",
-       "pijl met richting en grootte",
-       "de vloeiende kromme die hoort bij een kwadratische functie"
-      ],
-      "c": 1,
-      "u": "«Hellinggrafiek» betekent: de grafiek van de helling van een functie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de grafiek van de helling van een functie\"?",
-      "o": [
-       "Asymptoten",
-       "Raaklijn",
-       "Hellinggrafiek",
-       "Functie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Hellinggrafiek»: de grafiek van de helling van een functie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de grafiek van de helling van een functie\"?",
-      "o": [
-       "Buigpunt",
-       "Stationair punt",
-       "Hellinggrafiek",
-       "Toenemende stijging"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Hellinggrafiek»: de grafiek van de helling van een functie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Hellinggrafiek» in?",
-      "o": [
-       "machtsregel, som, constante",
-       "een functie waarvan de afgeleide de gegeven functie is",
-       "stijgen dat steeds sneller gaat",
-       "de grafiek van de helling van een functie"
-      ],
-      "c": 3,
-      "u": "«Hellinggrafiek» betekent: de grafiek van de helling van een functie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Stationair punt»?",
-      "o": [
-       "de maximale uitwijking ten opzichte van de evenwichtsstand",
-       "hoek ↔ verhouding van zijden (SOS-CAS-TOA)",
-       "een punt waar de helling nul is",
-       "een invoerwaarde waar de grafiek de horizontale as snijdt"
-      ],
-      "c": 2,
-      "u": "«Stationair punt» betekent: een punt waar de helling nul is.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een punt waar de helling nul is\"?",
-      "o": [
-       "Stationair punt",
-       "Exponentieel verband",
-       "Sin, cos, tan",
-       "Lineair verband"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Stationair punt»: een punt waar de helling nul is.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een punt waar de helling nul is\"?",
-      "o": [
-       "Buigpunt",
-       "Afnemende stijging",
-       "Stationair punt",
-       "Afgeleide"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Stationair punt»: een punt waar de helling nul is.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Stationair punt» in?",
-      "o": [
-       "een punt waar de helling nul is",
-       "een maximum of minimum van een functie",
-       "het punt waar de grafiek van hol naar bol overgaat",
-       "stijgen dat steeds langzamer gaat"
-      ],
-      "c": 0,
-      "u": "«Stationair punt» betekent: een punt waar de helling nul is.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Differentiëren»?",
-      "o": [
-       "de verzameling toegestane invoerwaarden",
-       "lineair, kwadratisch, exponentieel",
-       "machtsregel, som, constante",
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt"
-      ],
-      "c": 2,
-      "u": "«Differentiëren» betekent: machtsregel, som, constante.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"machtsregel, som, constante\"?",
-      "o": [
-       "Differentiëren",
-       "Functietypen",
-       "Kwadratisch",
-       "Raaklijn"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Differentiëren»: machtsregel, som, constante.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"machtsregel, som, constante\"?",
-      "o": [
-       "Raaklijn",
-       "Primitieve",
-       "Differentiëren",
        "Stationair punt"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Differentiëren»: machtsregel, som, constante.",
-      "d": 3
+      "d": 1,
+      "u": "Waar de tweede afgeleide nul is. Dat past bij Buigpunt: f''(x) = 0.",
+      "uo": [
+       "Nee, dat hoort bij Productregel: voor f(x)·g(x).",
+       "Nee, dat hoort bij Afgeleide: helling in elk punt.",
+       "Klopt: f''(x) = 0.",
+       "Nee, dat hoort bij Stationair punt: f'(x) = 0."
+      ],
+      "uh": "Buigpunt: f''(x) = 0."
      },
      {
-      "v": "Wat houdt «Differentiëren» in?",
+      "v": "Waar de afgeleide gelijk is aan nul. Wat is hier aan de hand?",
       "o": [
-       "een functie waarvan de afgeleide de gegeven functie is",
-       "machtsregel, som, constante",
-       "de functie die de helling van de grafiek in elk punt geeft",
-       "de lijn die de grafiek in precies één punt raakt"
+       "Raaklijn",
+       "Buigpunt",
+       "Helling",
+       "Stationair punt"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Waar de afgeleide gelijk is aan nul. Dat past bij Stationair punt: f'(x) = 0.",
+      "uo": [
+       "Nee, dat hoort bij Raaklijn: raakt in één punt.",
+       "Nee, dat hoort bij Buigpunt: f''(x) = 0.",
+       "Nee, dat hoort bij Helling: steilheid.",
+       "Klopt: f'(x) = 0."
+      ],
+      "uh": "Stationair punt: f'(x) = 0."
+     },
+     {
+      "v": "Een punt waar de helling nul is. Welk begrip past hierbij?",
+      "o": [
+       "Stationair punt",
+       "Differentiëren",
+       "Extremum",
+       "Kettingregel"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een punt waar de helling nul is. Dat past bij Stationair punt: f'(x) = 0.",
+      "uo": [
+       "Klopt: f'(x) = 0.",
+       "Nee, dat hoort bij Differentiëren: de afgeleide bepalen.",
+       "Nee, dat hoort bij Extremum: top of dal.",
+       "Nee, dat hoort bij Kettingregel: voor f(g(x))."
+      ],
+      "uh": "Stationair punt: f'(x) = 0."
+     },
+     {
+      "v": "Het omgekeerde van differentiëren. Om welk begrip gaat het?",
+      "o": [
+       "Afgeleide",
+       "Primitieve",
+       "Productregel",
+       "Helling"
       ],
       "c": 1,
-      "u": "«Differentiëren» betekent: machtsregel, som, constante.",
-      "d": 3
+      "d": 3,
+      "u": "Het omgekeerde van differentiëren. Dat past bij Primitieve: omgekeerde van afgeleide.",
+      "uo": [
+       "Nee, dat hoort bij Afgeleide: helling in elk punt.",
+       "Klopt: omgekeerde van afgeleide.",
+       "Nee, dat hoort bij Productregel: voor f(x)·g(x).",
+       "Nee, dat hoort bij Helling: steilheid."
+      ],
+      "uh": "Primitieve: omgekeerde van afgeleide."
+     },
+     {
+      "v": "De steilheid van de raaklijn. Welk begrip herken je hier?",
+      "o": [
+       "Buigpunt",
+       "Primitieve",
+       "Helling",
+       "Differentiëren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De steilheid van de raaklijn. Dat past bij Helling: steilheid.",
+      "uo": [
+       "Nee, dat hoort bij Buigpunt: f''(x) = 0.",
+       "Nee, dat hoort bij Primitieve: omgekeerde van afgeleide.",
+       "Klopt: steilheid.",
+       "Nee, dat hoort bij Differentiëren: de afgeleide bepalen."
+      ],
+      "uh": "Helling: steilheid."
+     },
+     {
+      "v": "Hoe steil de grafiek in een punt loopt. Wat is hier aan de hand?",
+      "o": [
+       "Afgeleide",
+       "Raaklijn",
+       "Productregel",
+       "Helling"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Hoe steil de grafiek in een punt loopt. Dat past bij Helling: steilheid.",
+      "uo": [
+       "Nee, dat hoort bij Afgeleide: helling in elk punt.",
+       "Nee, dat hoort bij Raaklijn: raakt in één punt.",
+       "Nee, dat hoort bij Productregel: voor f(x)·g(x).",
+       "Klopt: steilheid."
+      ],
+      "uh": "Helling: steilheid."
+     },
+     {
+      "v": "De regel voor f keer g. Welk begrip past hierbij?",
+      "o": [
+       "Productregel",
+       "Extremum",
+       "Primitieve",
+       "Differentiëren"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De regel voor f keer g. Dat past bij Productregel: voor f(x)·g(x).",
+      "uo": [
+       "Klopt: voor f(x)·g(x).",
+       "Nee, dat hoort bij Extremum: top of dal.",
+       "Nee, dat hoort bij Primitieve: omgekeerde van afgeleide.",
+       "Nee, dat hoort bij Differentiëren: de afgeleide bepalen."
+      ],
+      "uh": "Productregel: voor f(x)·g(x)."
+     },
+     {
+      "v": "Je differentieert een product van twee functies, zoals x kwadraat maal sin x. Om welk begrip gaat het?",
+      "o": [
+       "Kettingregel",
+       "Productregel",
+       "Primitieve",
+       "Extremum"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Je differentieert een product van twee functies, zoals x kwadraat maal sin x. Dat past bij Productregel: voor f(x)·g(x).",
+      "uo": [
+       "Nee, dat hoort bij Kettingregel: voor f(g(x)).",
+       "Klopt: voor f(x)·g(x).",
+       "Nee, dat hoort bij Primitieve: omgekeerde van afgeleide.",
+       "Nee, dat hoort bij Extremum: top of dal."
+      ],
+      "uh": "Productregel: voor f(x)·g(x)."
+     },
+     {
+      "v": "De regel voor een samengestelde functie. Welk begrip herken je hier?",
+      "o": [
+       "Primitieve",
+       "Extremum",
+       "Kettingregel",
+       "Differentiëren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De regel voor een samengestelde functie. Dat past bij Kettingregel: voor f(g(x)).",
+      "uo": [
+       "Nee, dat hoort bij Primitieve: omgekeerde van afgeleide.",
+       "Nee, dat hoort bij Extremum: top of dal.",
+       "Klopt: voor f(g(x)).",
+       "Nee, dat hoort bij Differentiëren: de afgeleide bepalen."
+      ],
+      "uh": "Kettingregel: voor f(g(x))."
+     },
+     {
+      "v": "Het bepalen van de afgeleide. Wat is hier aan de hand?",
+      "o": [
+       "Raaklijn",
+       "Primitieve",
+       "Kettingregel",
+       "Differentiëren"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het bepalen van de afgeleide. Dat past bij Differentiëren: de afgeleide bepalen.",
+      "uo": [
+       "Nee, dat hoort bij Raaklijn: raakt in één punt.",
+       "Nee, dat hoort bij Primitieve: omgekeerde van afgeleide.",
+       "Nee, dat hoort bij Kettingregel: voor f(g(x)).",
+       "Klopt: de afgeleide bepalen."
+      ],
+      "uh": "Differentiëren: de afgeleide bepalen."
+     },
+     {
+      "v": "De hellingfunctie van f. Welk begrip past hierbij?",
+      "o": [
+       "Afgeleide",
+       "Productregel",
+       "Raaklijn",
+       "Differentiëren"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De hellingfunctie van f. Dat past bij Afgeleide: helling in elk punt.",
+      "uo": [
+       "Klopt: helling in elk punt.",
+       "Nee, dat hoort bij Productregel: voor f(x)·g(x).",
+       "Nee, dat hoort bij Raaklijn: raakt in één punt.",
+       "Nee, dat hoort bij Differentiëren: de afgeleide bepalen."
+      ],
+      "uh": "Afgeleide: helling in elk punt."
+     },
+     {
+      "v": "De functie waarvan de afgeleide je gegeven functie is. Om welk begrip gaat het?",
+      "o": [
+       "Afgeleide",
+       "Primitieve",
+       "Helling",
+       "Productregel"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De functie waarvan de afgeleide je gegeven functie is. Dat past bij Primitieve: omgekeerde van afgeleide.",
+      "uo": [
+       "Nee, dat hoort bij Afgeleide: helling in elk punt.",
+       "Klopt: omgekeerde van afgeleide.",
+       "Nee, dat hoort bij Helling: steilheid.",
+       "Nee, dat hoort bij Productregel: voor f(x)·g(x)."
+      ],
+      "uh": "Primitieve: omgekeerde van afgeleide."
+     },
+     {
+      "v": "De rechte met de afgeleide als helling. Welk begrip herken je hier?",
+      "o": [
+       "Extremum",
+       "Helling",
+       "Raaklijn",
+       "Differentiëren"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De rechte met de afgeleide als helling. Dat past bij Raaklijn: raakt in één punt.",
+      "uo": [
+       "Nee, dat hoort bij Extremum: top of dal.",
+       "Nee, dat hoort bij Helling: steilheid.",
+       "Klopt: raakt in één punt.",
+       "Nee, dat hoort bij Differentiëren: de afgeleide bepalen."
+      ],
+      "uh": "Raaklijn: raakt in één punt."
+     },
+     {
+      "v": "Een top of dal van de functie. Wat is hier aan de hand?",
+      "o": [
+       "Stationair punt",
+       "Afgeleide",
+       "Productregel",
+       "Extremum"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een top of dal van de functie. Dat past bij Extremum: top of dal.",
+      "uo": [
+       "Nee, dat hoort bij Stationair punt: f'(x) = 0.",
+       "Nee, dat hoort bij Afgeleide: helling in elk punt.",
+       "Nee, dat hoort bij Productregel: voor f(x)·g(x).",
+       "Klopt: top of dal."
+      ],
+      "uh": "Extremum: top of dal."
+     },
+     {
+      "v": "De functie die in elk punt de helling geeft. Welk begrip past hierbij?",
+      "o": [
+       "Afgeleide",
+       "Primitieve",
+       "Productregel",
+       "Helling"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De functie die in elk punt de helling geeft. Dat past bij Afgeleide: helling in elk punt.",
+      "uo": [
+       "Klopt: helling in elk punt.",
+       "Nee, dat hoort bij Primitieve: omgekeerde van afgeleide.",
+       "Nee, dat hoort bij Productregel: voor f(x)·g(x).",
+       "Nee, dat hoort bij Helling: steilheid."
+      ],
+      "uh": "Afgeleide: helling in elk punt."
+     },
+     {
+      "v": "De top of het dal waar de helling nul is. Om welk begrip gaat het?",
+      "o": [
+       "Helling",
+       "Extremum",
+       "Productregel",
+       "Differentiëren"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De top of het dal waar de helling nul is. Dat past bij Extremum: top of dal.",
+      "uo": [
+       "Nee, dat hoort bij Helling: steilheid.",
+       "Klopt: top of dal.",
+       "Nee, dat hoort bij Productregel: voor f(x)·g(x).",
+       "Nee, dat hoort bij Differentiëren: de afgeleide bepalen."
+      ],
+      "uh": "Extremum: top of dal."
+     },
+     {
+      "v": "Je differentieert een functie in een functie, zoals sin van x tot de derde. Welk begrip herken je hier?",
+      "o": [
+       "Primitieve",
+       "Extremum",
+       "Kettingregel",
+       "Differentiëren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je differentieert een functie in een functie, zoals sin van x tot de derde. Dat past bij Kettingregel: voor f(g(x)).",
+      "uo": [
+       "Nee, dat hoort bij Primitieve: omgekeerde van afgeleide.",
+       "Nee, dat hoort bij Extremum: top of dal.",
+       "Klopt: voor f(g(x)).",
+       "Nee, dat hoort bij Differentiëren: de afgeleide bepalen."
+      ],
+      "uh": "Kettingregel: voor f(g(x))."
+     },
+     {
+      "v": "Je bepaalt de afgeleide van een functie. Wat is hier aan de hand?",
+      "o": [
+       "Afgeleide",
+       "Primitieve",
+       "Stationair punt",
+       "Differentiëren"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je bepaalt de afgeleide van een functie. Dat past bij Differentiëren: de afgeleide bepalen.",
+      "uo": [
+       "Nee, dat hoort bij Afgeleide: helling in elk punt.",
+       "Nee, dat hoort bij Primitieve: omgekeerde van afgeleide.",
+       "Nee, dat hoort bij Stationair punt: f'(x) = 0.",
+       "Klopt: de afgeleide bepalen."
+      ],
+      "uh": "Differentiëren: de afgeleide bepalen."
      }
     ],
     "oe": [
@@ -71171,51 +71449,43 @@ var VAKKEN = [
     "begrippen": [
      {
       "t": "Afgeleide",
-      "d": "de functie die de helling van de grafiek in elk punt geeft"
+      "d": "de functie die de helling van f in elk punt geeft"
      },
      {
       "t": "Raaklijn",
-      "d": "de lijn die de grafiek in precies één punt raakt"
+      "d": "de lijn y = f'(a)·(x − a) + f(a) die de grafiek in één punt raakt"
      },
      {
-      "t": "Extreem",
-      "d": "een maximum of minimum van een functie"
+      "t": "Kettingregel",
+      "d": "de regel [f(g(x))]' = f'(g(x))·g'(x) voor samengestelde functies"
      },
      {
-      "t": "Buigpunt",
-      "d": "het punt waar de grafiek van hol naar bol overgaat"
+      "t": "Productregel",
+      "d": "de regel voor het differentiëren van een product van functies"
      },
      {
-      "t": "Primitieve",
-      "d": "een functie waarvan de afgeleide de gegeven functie is"
-     },
-     {
-      "t": "Integraal",
-      "d": "de oppervlakte tussen een grafiek en de horizontale as"
+      "t": "Extremum",
+      "d": "een top of dal waar f'(x) = 0"
      },
      {
       "t": "Helling",
-      "d": "de mate van stijging of daling van een grafiek"
+      "d": "de steilheid van de grafiek in een punt, gelijk aan de afgeleide"
      },
      {
-      "t": "Toenemende stijging",
-      "d": "stijgen dat steeds sneller gaat"
+      "t": "Primitieve",
+      "d": "een functie waarvan de afgeleide f is, het omgekeerde van differentiëren"
      },
      {
-      "t": "Afnemende stijging",
-      "d": "stijgen dat steeds langzamer gaat"
-     },
-     {
-      "t": "Hellinggrafiek",
-      "d": "de grafiek van de helling van een functie"
+      "t": "Buigpunt",
+      "d": "een punt waar de grafiek van hol naar bol overgaat, f''(x) = 0"
      },
      {
       "t": "Stationair punt",
-      "d": "een punt waar de helling nul is"
+      "d": "een punt waar f'(x) = 0"
      },
      {
       "t": "Differentiëren",
-      "d": "machtsregel, som, constante"
+      "d": "het bepalen van de afgeleide van een functie"
      }
     ]
    },
@@ -71238,545 +71508,615 @@ var VAKKEN = [
      "Goniometrische functies: amplitude, periode en verschuiving",
      "Vectoren: optelling, grootte en inwendig product"
     ],
-    "sam": "<div class=\"sam-head\">Analytische meetkunde</div><ul><li><strong>Cirkelvergelijking</strong>: (x − a)² + (y − b)² = r². Middelpunt M(a, b), straal r. Schrijf algemene kwadratische vorm om via kwadraat aanvullen.</li><li><strong>Afstand</strong>: d = √((x₂−x₁)² + (y₂−y₁)²)</li><li><strong>Middelpunt</strong>: M = ((x₁+x₂)/2, (y₁+y₂)/2)</li><li><strong>Helling</strong>: rc = (y₂−y₁)/(x₂−x₁). Loodrechte lijnen: rc₁ × rc₂ = −1.</li><li><strong>Lijn door twee punten</strong>: y − y₁ = rc(x − x₁)</li></ul><div class=\"sam-head\">Goniometrie</div><ul><li><strong>Rechthoekige driehoek</strong>: sin α = overstaande/schuinzijde, cos α = aanliggende/schuinzijde, tan α = overstaande/aanliggende.</li><li><strong>Sinusregel</strong>: a/sin A = b/sin B = c/sin C. Gebruik bij twee hoeken + zijde, of twee zijden + overstaande hoek.</li><li><strong>Cosinusregel</strong>: a² = b² + c² − 2bc·cos A. Gebruik bij drie zijden (SSS) of twee zijden + ingesloten hoek (SAS).</li><li><strong>Goniometrische functies</strong>: y = a·sin(bx + c) + d. Amplitude = |a|, periode = 2π/b, horizontale verschuiving = −c/b, verticale verschuiving = d.</li></ul><div class=\"sam-head\">Vectoren</div><ul><li><strong>Vector</strong>: pijl met richting én grootte. Notatie →a = (a₁, a₂).</li><li><strong>Optelling</strong>: →a + →b = (a₁+b₁, a₂+b₂). Grafisch: kop-op-staart.</li><li><strong>Grootte</strong>: |→a| = √(a₁² + a₂²).</li><li><strong>Inwendig product</strong>: →a · →b = a₁b₁ + a₂b₂. Als →a · →b = 0 dan staan de vectoren loodrecht op elkaar.</li></ul>",
+    "sam": "<div class=\"sam-intro\">In de analytische meetkunde reken je met <strong>vectoren</strong>, hun <strong>norm</strong> en het <strong>inproduct</strong>. Je herkent <strong>loodrechte</strong> lijnen (rc₁·rc₂ = −1), stelt de <strong>cirkelvergelijking</strong> (x − a)² + (y − b)² = r² op, en bepaalt het <strong>middelpunt</strong> van een lijnstuk.</div><div class=\"sam-head\">1. Vectoren</div><p>De <strong>norm</strong> (grootte) van vector a⃗ is |a⃗| = √(a₁² + a₂²). Het <strong>inproduct</strong> a⃗·b⃗ is 0 bij <strong>loodrechte</strong> vectoren, negatief bij een stompe hoek. Vectoren tel je grafisch op met de <strong>kop-op-staart</strong>-methode.</p><div class=\"sam-head\">2. Lijnen en cirkels</div><p>Twee lijnen staan <strong>loodrecht</strong> als rc₁·rc₂ = −1; de loodlijn op rc = 3 heeft rc = −1/3. De <strong>cirkelvergelijking</strong> is (x − a)² + (y − b)² = r². Het <strong>middelpunt</strong> van het lijnstuk van A(x₁, y₁) naar B(x₂, y₂) is ((x₁ + x₂)/2, (y₁ + y₂)/2). Voor y = sin(bx) geldt: een grotere b geeft een kortere periode.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vector</div><div class=\"sam-definitie-body\">een grootheid met een grootte en een richting.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Norm</div><div class=\"sam-definitie-body\">|a⃗| = √(a₁² + a₂²): de lengte van een vector.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Inproduct</div><div class=\"sam-definitie-body\">a₁b₁ + a₂b₂; 0 bij loodrecht, negatief bij een stompe hoek.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cirkelvergelijking</div><div class=\"sam-definitie-body\">de standaardvorm (x − a)² + (y − b)² = r².</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Middelpunt</div><div class=\"sam-definitie-body\">van A naar B: ((x₁ + x₂)/2, (y₁ + y₂)/2).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sinusregel</div><div class=\"sam-definitie-body\">a/sin A = b/sin B, bij twee hoeken en een zijde.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cosinusregel</div><div class=\"sam-definitie-body\">de regel bij drie zijden of twee zijden met de ingesloten hoek.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Loodrecht</div><div class=\"sam-definitie-body\">twee lijnen met rc₁·rc₂ = −1 of vectoren met inproduct 0.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Periode</div><div class=\"sam-definitie-body\">de lengte 2π/b waarna y = sin(bx) zich herhaalt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kop-op-staart-methode</div><div class=\"sam-definitie-body\">het grafisch optellen van vectoren door ze achter elkaar te leggen.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Vector»</b> is grootte en richting, terwijl <b>«Norm»</b> lengte van een vector is. <b>«Norm»</b> is lengte van een vector, terwijl <b>«Inproduct»</b> som van producten is. <b>«Cirkelvergelijking»</b> is (x − a)² + (y − b)² = r², terwijl <b>«Middelpunt»</b> gemiddelde van de coördinaten is. <b>«Sinusregel»</b> is a/sin A = b/sin B, terwijl <b>«Cosinusregel»</b> drie zijden of ingesloten hoek is.</div>",
     "sv": [
      {
-      "v": "Wat geeft de grootte van een vector aan en hoe noteer je die?",
+      "v": "Wat geeft de grootte van een vector a⃗ = (a₁, a₂) aan?",
       "o": [
-       "|→a| = wortel(a₁² + a₂²): de Euclidische lengte, afstand van oorsprong tot eindpunt",
-       "a₁ + a₂: de som van de componenten, totale verandering in x en y",
-       "a₁·a₂: het product van de componenten, oppervlakte van het rechthoekje",
-       "max(|a₁|, |a₂|): de absolute waarde van de langste component, de dominante richting"
+       "|a⃗| = √(a₁² + a₂²), de lengte",
+       "a₁ + a₂",
+       "a₁ · a₂",
+       "a₁ − a₂"
       ],
       "c": 0,
-      "u": "Grootte |→a| van vector (a₁, a₂) = wortel(a₁² + a₂²). Volgt uit de stelling van Pythagoras: a₁ en a₂ zijn de rechthoekszijden. Een eenheidsvector heeft grootte 1."
+      "d": 3,
+      "u": "De norm is de Euclidische lengte.",
+      "uo": [
+       "Klopt: de norm is de Euclidische lengte.",
+       "Nee, dat is de som van de kentallen.",
+       "Nee, dat is een product.",
+       "Nee, dat is een verschil."
+      ],
+      "uh": "Norm: |a⃗| = √(a₁² + a₂²)."
      },
      {
-      "v": "Twee vectoren zijn loodrecht op elkaar. Wat geldt dan voor hun inwendig product?",
+      "v": "Twee vectoren zijn loodrecht. Wat geldt voor hun inproduct?",
       "o": [
-       "Het inwendig product is 0",
-       "Het inwendig product is maximaal",
-       "De vectoren zijn even lang",
-       "Het inwendig product is gelijk aan de som van de lengtes"
+       "het inproduct is 1",
+       "het inproduct is 0",
+       "het inproduct is negatief",
+       "het inproduct is maximaal"
       ],
-      "c": 0,
-      "u": "→a · →b = a₁b₁ + a₂b₂ = 0 ↔ loodrecht. Inwendig product = 0 is het criterium voor loodrechtheid. Handig om te controleren of twee richtingsvectoren van lijnen haaks staan."
+      "c": 1,
+      "d": 2,
+      "u": "Loodrecht betekent inproduct 0.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Klopt: loodrecht betekent inproduct 0.",
+       "Nee, dat hoort bij een stompe hoek.",
+       "Nee, dat is bij dezelfde richting."
+      ],
+      "uh": "Loodrechte vectoren: inproduct 0."
      },
      {
       "v": "Lijn l heeft rc = 3. Wat is de helling van een loodrechte lijn op l?",
       "o": [
-       "-3",
-       "-1/3",
        "1/3",
-       "3"
+       "3",
+       "−1/3",
+       "−3"
       ],
-      "c": 1,
-      "u": "Loodrecht: rc₁ × rc₂ = -1. Dus rc₂ = -1/3. Als de lijn steil omhoog gaat, staat de loodlijn er bijna plat op."
+      "c": 2,
+      "d": 3,
+      "u": "Rc₁·rc₂ = −1, dus −1/3.",
+      "uo": [
+       "Nee, dat product is niet −1.",
+       "Nee, dat is dezelfde helling.",
+       "Klopt: rc₁·rc₂ = −1, dus −1/3.",
+       "Nee, dat product is niet −1."
+      ],
+      "uh": "Loodrecht: het product van de rc's is −1."
      },
      {
-      "v": "Wat is het effect van parameter b in y = sin(bx) op de grafiek?",
+      "v": "Wat is het effect van parameter b in y = sin(bx)?",
       "o": [
-       "Grotere b geeft kortere periode (snellere oscillatie): periode = 2π/b",
-       "Grotere b vergroot de amplitude van de sinus",
-       "Grotere b verschuift de grafiek horizontaal naar rechts",
-       "b heeft geen invloed op hoe snel de sinus oscilleert"
+       "b heeft geen effect",
+       "een grotere b geeft een grotere amplitude",
+       "b verschuift de grafiek omhoog",
+       "een grotere b geeft een kortere periode"
       ],
-      "c": 0,
-      "u": "Periode van y = sin(bx) = 2π/b. b = 2: periode = π. b = 3: periode = 2π/3. Grotere b = snellere oscillatie. De amplitude wordt bepaald door factor a vóór de sinus, niet door b."
+      "c": 3,
+      "d": 3,
+      "u": "Periode = 2π/b, dus grotere b is kortere periode.",
+      "uo": [
+       "Nee, b bepaalt de periode.",
+       "Nee, de amplitude staat los van b.",
+       "Nee, dat doet een constante term.",
+       "Klopt: periode = 2π/b, dus grotere b is kortere periode."
+      ],
+      "uh": "In sin(bx): grotere b, kortere periode (2π/b)."
      },
      {
       "v": "Hoe tel je twee vectoren grafisch op?",
       "o": [
-       "Kop-op-staart: staart van de tweede vector aan de kop van de eerste",
-       "Beide vectoren vanuit het middelpunt van het assenstelsel laten beginnen",
-       "Vectoren vermenigvuldigen en de resultante berekenen",
-       "De gemiddelde richting en som van de lengtes nemen"
+       "kop-op-staart: de staart van de tweede aan de kop van de eerste",
+       "je legt ze evenwijdig naast elkaar",
+       "je trekt ze van elkaar af",
+       "je telt alleen de lengtes op"
       ],
       "c": 0,
-      "u": "Kop-op-staart: de resulterende vector loopt van de staart van de eerste naar de kop van de tweede. Algebraïsch: componentgewijs optellen (a₁+b₁, a₂+b₂)."
-     },
-     {
-      "v": "Welk ezelsbruggetje gebruik je voor sin, cos en tan in een rechthoekige driehoek?",
-      "o": [
-       "SOH-CAH-TOA: Sin=O/H, Cos=A/H, Tan=O/A",
-       "SHO-CHA-TOA: Sin=H/O, Cos=H/A, Tan=A/O",
-       "cos α = overstaande gedeeld door schuinzijde",
-       "tan α = schuinzijde gedeeld door aanliggende"
+      "d": 2,
+      "u": "De som is de pijl van begin naar eind.",
+      "uo": [
+       "Klopt: de som is de pijl van begin naar eind.",
+       "Nee, zo tel je niet op.",
+       "Nee, dat is aftrekken.",
+       "Nee, richting telt ook."
       ],
-      "c": 0,
-      "u": "SOH-CAH-TOA: Sin = Overstaande/Schuinzijde. Cos = Aanliggende/Schuinzijde. Tan = Overstaande/Aanliggende. Alleen toepasbaar in rechthoekige driehoeken. Voor andere driehoeken gebruik je de sinus- of cosinusregel."
+      "uh": "Vectoren optellen: kop-op-staart."
      },
      {
-      "v": "Welke formule gebruik je om te bepalen of punt P(3, 4) op de cirkel (x-1)² + (y-2)² = 9 ligt?",
+      "v": "Waar staat het ezelsbruggetje SOH-CAH-TOA voor?",
       "o": [
-       "Bereken (3-1)² + (4-2)² en vergelijk met 9",
-       "Bereken de afstand van P tot de x-as",
-       "Vervang x door 0 en los op",
-       "Bereken het middelpunt"
-      ],
-      "c": 0,
-      "u": "Invullen: (3-1)² + (4-2)² = 4 + 4 = 8. Vergelijk met r² = 9: omdat 8 < 9 ligt P binnen de cirkel. Regel: kleiner dan r² = binnen, gelijk aan r² = op de cirkel, groter dan r² = buiten."
-     },
-     {
-      "v": "Wat geeft het inwendig product →a · →b = -15 aan over de hoek tussen de vectoren?",
-      "o": [
-       "De hoek is scherp (kleiner dan 90°)",
-       "De hoek is stomp (groter dan 90°)",
-       "De vectoren zijn loodrecht",
-       "De vectoren zijn evenwijdig"
+       "de zijden van een rechthoek",
+       "sin = O/H, cos = A/H, tan = O/A",
+       "de oppervlakte van een driehoek",
+       "de omtrek van een cirkel"
       ],
       "c": 1,
-      "u": "Inwendig product = |a||b|·cos θ. Negatief product → cos θ < 0 → θ > 90°: stompe hoek. Nul → loodrecht. Positief → scherpe hoek."
+      "d": 2,
+      "u": "De verhoudingen in een rechthoekige driehoek.",
+      "uo": [
+       "Nee, het gaat over hoeken.",
+       "Klopt: de verhoudingen in een rechthoekige driehoek.",
+       "Nee, niet over oppervlakte.",
+       "Nee, niet over omtrek."
+      ],
+      "uh": "SOH-CAH-TOA: sin=O/H, cos=A/H, tan=O/A."
      },
      {
-      "v": "Gegeven cirkel met middelpunt M(2, 3) en straal 4. Ligt punt Q(2, 7) op de cirkel?",
+      "v": "Hoe controleer je of punt P(3, 4) op de cirkel (x − 1)² + (y − 2)² = 9 ligt?",
       "o": [
-       "Nee, Q ligt buiten de cirkel",
-       "Ja, Q ligt op de cirkel",
-       "Nee, Q ligt binnen de cirkel",
-       "Kan niet bepaald worden zonder grafiek"
+       "bereken de rc van P",
+       "kijk of P het middelpunt is",
+       "bereken (3 − 1)² + (4 − 2)² en vergelijk met 9",
+       "tel 3 en 4 op"
       ],
-      "c": 1,
-      "u": "Afstand MQ = √((2-2)² + (7-3)²) = √16 = 4 = straal. Dus Q ligt precies op de cirkel."
+      "c": 2,
+      "d": 3,
+      "u": "Als de uitkomst 9 is, ligt P op de cirkel.",
+      "uo": [
+       "Nee, dat is niet relevant.",
+       "Nee, dat is het middelpunt.",
+       "Klopt: als de uitkomst 9 is, ligt P op de cirkel.",
+       "Nee, dat zegt niets."
+      ],
+      "uh": "Punt op cirkel: vul in en vergelijk met r²."
      },
      {
-      "v": "Wat is de sinusregel en wanneer gebruik je hem?",
+      "v": "Wat zegt een inproduct a⃗·b⃗ = −15 over de hoek tussen de vectoren?",
       "o": [
-       "a/sin A = b/sin B; bij twee zijden en een ingesloten hoek",
-       "a/sin A = b/sin B; bij twee hoeken en een zijde, of twee zijden en een overstaande hoek",
-       "a² = b²+c²-2bc·cos A; altijd",
-       "sin A = overstaande/schuinzijde; alleen in rechthoekige driehoek"
+       "de vectoren zijn gelijk",
+       "de hoek is recht (90°)",
+       "de hoek is scherp (kleiner dan 90°)",
+       "de hoek is stomp (groter dan 90°)"
       ],
-      "c": 1,
-      "u": "Sinusregel: a/sin A = b/sin B = c/sin C. Gebruik: AAS, ASA of SSA (twee zijden + overstaande hoek). Cosinusregel gebruik je bij SAS of SSS."
+      "c": 3,
+      "d": 3,
+      "u": "Een negatief inproduct hoort bij een stompe hoek.",
+      "uo": [
+       "Nee, dat volgt er niet uit.",
+       "Nee, dan zou het 0 zijn.",
+       "Nee, dan zou het positief zijn.",
+       "Klopt: een negatief inproduct hoort bij een stompe hoek."
+      ],
+      "uh": "Negatief inproduct: stompe hoek."
      },
      {
       "v": "Wat is de standaardvorm van een cirkelvergelijking?",
       "o": [
        "(x − a)² + (y − b)² = r²",
-       "x² + y² = r",
-       "ax + by = r²",
-       "x² + y² + ax + by = 0"
+       "y = a·x + b",
+       "a·x² + b·x + c = 0",
+       "x² + y² = x"
       ],
       "c": 0,
-      "u": "Middelpunt M(a, b), straal r. Algemene vorm omschrijven via kwadraat aanvullen naar standaardvorm."
+      "d": 2,
+      "u": "Middelpunt (a, b) en straal r.",
+      "uo": [
+       "Klopt: middelpunt (a, b) en straal r.",
+       "Nee, dat is een lijn.",
+       "Nee, dat is een kwadratische vergelijking.",
+       "Nee, dat is geen standaardvorm."
+      ],
+      "uh": "Cirkel: (x − a)² + (y − b)² = r²."
      },
      {
       "v": "Hoe controleer je of twee lijnen loodrecht op elkaar staan?",
       "o": [
-       "rc₁ × rc₂ = −1",
        "rc₁ = rc₂",
+       "rc₁ × rc₂ = −1",
        "rc₁ + rc₂ = 0",
-       "rc₁ × rc₂ = 1"
-      ],
-      "c": 0,
-      "u": "Loodrecht: product van hellingen = −1. Evenwijdig: rc₁ = rc₂. Als één lijn verticaal is (rc ongedefinieerd), is de loodlijn horizontaal."
-     },
-     {
-      "v": "Wat zegt het inwendig product →a · →b = 0?",
-      "o": [
-       "De vectoren staan loodrecht op elkaar",
-       "De vectoren zijn evenwijdig",
-       "De vectoren zijn even lang",
-       "De vectoren wijzen in dezelfde richting"
-      ],
-      "c": 0,
-      "u": "Inwendig product = 0 ↔ loodrecht. Positief: scherpe hoek. Negatief: stompe hoek."
-     },
-     {
-      "v": "Wat is het middelpunt van het lijnstuk van A(x₁,y₁) naar B(x₂,y₂)?",
-      "o": [
-       "M = ((x₁+x₂)/2 , (y₁+y₂)/2)",
-       "M = (x₂−x₁ , y₂−y₁)",
-       "M = (x₁·x₂ , y₁·y₂)",
-       "M = (x₁/x₂ , y₁/y₂)"
-      ],
-      "c": 0,
-      "u": "Middelpunt = gemiddelde van de coördinaten. Afstand: d = √((x₂−x₁)²+(y₂−y₁)²)."
-     },
-     {
-      "v": "Wat betekent «Vector»?",
-      "o": [
-       "een grootheid met een lengte en een richting",
-       "probleem → model → rekenen → terugvertalen",
-       "het punt waar de grafiek van hol naar bol overgaat",
-       "tussen twee punten"
-      ],
-      "c": 0,
-      "u": "«Vector» betekent: een grootheid met een lengte en een richting.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een grootheid met een lengte en een richting\"?",
-      "o": [
-       "Afnemende stijging",
-       "Radiaal",
-       "Vector",
-       "Exponentieel verband"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Vector»: een grootheid met een lengte en een richting.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een grootheid met een lengte en een richting\"?",
-      "o": [
-       "Vectoren",
-       "Straal",
-       "Vector",
-       "Gelijkvormig"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Vector»: een grootheid met een lengte en een richting.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vector» in?",
-      "o": [
-       "precies even groot en van dezelfde vorm",
-       "de afstand van het middelpunt tot de rand van een cirkel",
-       "een grootheid met een lengte en een richting",
-       "met Pythagoras uit de kentallen"
-      ],
-      "c": 2,
-      "u": "«Vector» betekent: een grootheid met een lengte en een richting.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Straal»?",
-      "o": [
-       "lineair, kwadratisch, exponentieel, gebroken, wortel",
-       "de afstand van het middelpunt tot de rand van een cirkel",
-       "precies even groot en van dezelfde vorm",
-       "de verzameling mogelijke uitvoerwaarden"
+       "ze snijden de x-as"
       ],
       "c": 1,
-      "u": "«Straal» betekent: de afstand van het middelpunt tot de rand van een cirkel.",
-      "d": 1
+      "d": 3,
+      "u": "Bij loodrecht is het product van de rc's −1.",
+      "uo": [
+       "Nee, dan zijn ze evenwijdig.",
+       "Klopt: bij loodrecht is het product van de rc's −1.",
+       "Nee, dat betekent tegengesteld, niet loodrecht.",
+       "Nee, dat zegt niets."
+      ],
+      "uh": "Loodrecht: rc₁ × rc₂ = −1."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de afstand van het middelpunt tot de rand van een cirkel\"?",
+      "v": "Wat is het middelpunt van het lijnstuk van A(x₁, y₁) naar B(x₂, y₂)?",
       "o": [
-       "Lineair verband",
-       "Asymptoten",
-       "Straal",
-       "Representaties"
+       "(x₂ − x₁, y₂ − y₁)",
+       "(x₁ · x₂, y₁ · y₂)",
+       "((x₁ + x₂)/2, (y₁ + y₂)/2)",
+       "(x₁ + x₂, y₁ + y₂)"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Straal»: de afstand van het middelpunt tot de rand van een cirkel.",
-      "d": 2
+      "d": 3,
+      "u": "Het middelpunt is het gemiddelde van de coördinaten.",
+      "uo": [
+       "Nee, dat is de verschilvector.",
+       "Nee, dat is een product.",
+       "Klopt: het middelpunt is het gemiddelde van de coördinaten.",
+       "Nee, je moet nog delen door 2."
+      ],
+      "uh": "Middelpunt: het gemiddelde van de coördinaten."
      },
      {
-      "v": "Welke term past bij: \"de afstand van het middelpunt tot de rand van een cirkel\"?",
+      "v": "Wat is de norm van een vector?",
       "o": [
-       "Gelijkvormig",
-       "Congruent",
-       "Afstand",
-       "Straal"
+       "de hoek met de x-as",
+       "de richting van de vector",
+       "het inproduct met zichzelf",
+       "de lengte van de vector"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Straal»: de afstand van het middelpunt tot de rand van een cirkel.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Straal» in?",
-      "o": [
-       "de afstand van het middelpunt tot de rand van een cirkel",
-       "precies even groot en van dezelfde vorm",
-       "een grootheid met een lengte en een richting",
-       "dezelfde vorm maar mogelijk een andere grootte"
+      "d": 2,
+      "u": "De norm is de lengte.",
+      "uo": [
+       "Nee, dat is de richtingshoek.",
+       "Nee, dat is de richting.",
+       "Nee, dat is het kwadraat van de norm.",
+       "Klopt: de norm is de lengte."
       ],
-      "c": 0,
-      "u": "«Straal» betekent: de afstand van het middelpunt tot de rand van een cirkel.",
-      "d": 3
+      "uh": "Norm: de lengte van een vector."
      },
      {
-      "v": "Wat betekent «Congruent»?",
+      "v": "De lengte van een vector, wortel uit a-een kwadraat plus a-twee kwadraat. Welk begrip past hierbij?",
       "o": [
-       "een functie waarvan de afgeleide de gegeven functie is",
-       "precies even groot en van dezelfde vorm",
-       "de vloeiende kromme die hoort bij een kwadratische functie",
-       "rc; loodrechte lijnen"
-      ],
-      "c": 1,
-      "u": "«Congruent» betekent: precies even groot en van dezelfde vorm.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"precies even groot en van dezelfde vorm\"?",
-      "o": [
-       "Representaties",
-       "Congruent",
-       "Transformaties",
-       "Tegenvoorbeeld"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Congruent»: precies even groot en van dezelfde vorm.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"precies even groot en van dezelfde vorm\"?",
-      "o": [
-       "Congruent",
+       "Norm",
        "Vector",
-       "Gelijkvormig",
-       "Straal"
+       "Loodrecht",
+       "Cirkelvergelijking"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Congruent»: precies even groot en van dezelfde vorm.",
-      "d": 3
+      "d": 1,
+      "u": "De lengte van een vector, wortel uit a-een kwadraat plus a-twee kwadraat. Dat past bij Norm: lengte van een vector.",
+      "uo": [
+       "Klopt: lengte van een vector.",
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Loodrecht: rc₁·rc₂ = −1.",
+       "Nee, dat hoort bij Cirkelvergelijking: (x − a)² + (y − b)² = r²."
+      ],
+      "uh": "Norm: lengte van een vector."
      },
      {
-      "v": "Wat houdt «Congruent» in?",
+      "v": "Twee lijnen waarvan het product van de hellingen min een is. Om welk begrip gaat het?",
       "o": [
-       "dezelfde vorm maar mogelijk een andere grootte",
-       "de afstand van het middelpunt tot de rand van een cirkel",
-       "precies even groot en van dezelfde vorm",
-       "een hoekmaat waarbij de booglengte gelijk is aan de straal"
+       "Inproduct",
+       "Loodrecht",
+       "Vector",
+       "Kop-op-staart-methode"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Twee lijnen waarvan het product van de hellingen min een is. Dat past bij Loodrecht: rc₁·rc₂ = −1.",
+      "uo": [
+       "Nee, dat hoort bij Inproduct: som van producten.",
+       "Klopt: rc₁·rc₂ = −1.",
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar."
+      ],
+      "uh": "Loodrecht: rc₁·rc₂ = −1."
+     },
+     {
+      "v": "Ze staan haaks op elkaar. Welk begrip herken je hier?",
+      "o": [
+       "Vector",
+       "Inproduct",
+       "Loodrecht",
+       "Kop-op-staart-methode"
       ],
       "c": 2,
-      "u": "«Congruent» betekent: precies even groot en van dezelfde vorm.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Gelijkvormig»?",
-      "o": [
-       "de lengte van één herhaling van een periodieke functie",
-       "de oppervlakte tussen een grafiek en de horizontale as",
-       "met Pythagoras uit de kentallen",
-       "dezelfde vorm maar mogelijk een andere grootte"
+      "d": 1,
+      "u": "Ze staan haaks op elkaar. Dat past bij Loodrecht: rc₁·rc₂ = −1.",
+      "uo": [
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Inproduct: som van producten.",
+       "Klopt: rc₁·rc₂ = −1.",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar."
       ],
-      "c": 3,
-      "u": "«Gelijkvormig» betekent: dezelfde vorm maar mogelijk een andere grootte.",
-      "d": 1
+      "uh": "Loodrecht: rc₁·rc₂ = −1."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"dezelfde vorm maar mogelijk een andere grootte\"?",
+      "v": "De herhaallengte van een sinus. Wat is hier aan de hand?",
       "o": [
-       "Gelijkvormig",
-       "Lineair verband",
+       "Kop-op-staart-methode",
+       "Middelpunt",
        "Sinusregel",
-       "Buigpunt"
+       "Periode"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Gelijkvormig»: dezelfde vorm maar mogelijk een andere grootte.",
-      "d": 2
+      "c": 3,
+      "d": 1,
+      "u": "De herhaallengte van een sinus. Dat past bij Periode: 2π/b.",
+      "uo": [
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar.",
+       "Nee, dat hoort bij Middelpunt: gemiddelde van de coördinaten.",
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Klopt: 2π/b."
+      ],
+      "uh": "Periode: 2π/b."
      },
      {
-      "v": "Welke term past bij: \"dezelfde vorm maar mogelijk een andere grootte\"?",
+      "v": "Na hoeveel de sinusgrafiek zich herhaalt, 2 pi gedeeld door b. Welk begrip past hierbij?",
       "o": [
-       "Vectoren",
-       "Vector",
-       "Gelijkvormig",
-       "Afstand"
+       "Periode",
+       "Middelpunt",
+       "Sinusregel",
+       "Kop-op-staart-methode"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Na hoeveel de sinusgrafiek zich herhaalt, 2 pi gedeeld door b. Dat past bij Periode: 2π/b.",
+      "uo": [
+       "Klopt: 2π/b.",
+       "Nee, dat hoort bij Middelpunt: gemiddelde van de coördinaten.",
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar."
+      ],
+      "uh": "Periode: 2π/b."
+     },
+     {
+      "v": "De regel bij drie zijden of een ingesloten hoek. Om welk begrip gaat het?",
+      "o": [
+       "Inproduct",
+       "Cosinusregel",
+       "Middelpunt",
+       "Kop-op-staart-methode"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De regel bij drie zijden of een ingesloten hoek. Dat past bij Cosinusregel: drie zijden of ingesloten hoek.",
+      "uo": [
+       "Nee, dat hoort bij Inproduct: som van producten.",
+       "Klopt: drie zijden of ingesloten hoek.",
+       "Nee, dat hoort bij Middelpunt: gemiddelde van de coördinaten.",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar."
+      ],
+      "uh": "Cosinusregel: drie zijden of ingesloten hoek."
+     },
+     {
+      "v": "De regel a/sin A is b/sin B. Welk begrip herken je hier?",
+      "o": [
+       "Middelpunt",
+       "Cosinusregel",
+       "Sinusregel",
+       "Inproduct"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Gelijkvormig»: dezelfde vorm maar mogelijk een andere grootte.",
-      "d": 3
+      "d": 2,
+      "u": "De regel a/sin A is b/sin B. Dat past bij Sinusregel: a/sin A = b/sin B.",
+      "uo": [
+       "Nee, dat hoort bij Middelpunt: gemiddelde van de coördinaten.",
+       "Nee, dat hoort bij Cosinusregel: drie zijden of ingesloten hoek.",
+       "Klopt: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Inproduct: som van producten."
+      ],
+      "uh": "Sinusregel: a/sin A = b/sin B."
      },
      {
-      "v": "Wat houdt «Gelijkvormig» in?",
+      "v": "Bij twee hoeken en een zijde reken je met a gedeeld door sin A. Wat is hier aan de hand?",
       "o": [
-       "pijl met richting en grootte",
-       "precies even groot en van dezelfde vorm",
-       "met Pythagoras uit de kentallen",
-       "dezelfde vorm maar mogelijk een andere grootte"
+       "Norm",
+       "Cirkelvergelijking",
+       "Kop-op-staart-methode",
+       "Sinusregel"
       ],
       "c": 3,
-      "u": "«Gelijkvormig» betekent: dezelfde vorm maar mogelijk een andere grootte.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Radiaal»?",
-      "o": [
-       "de uitdrukking die het aantal nulpunten van een parabool bepaalt",
-       "gelijke stappen erbij/eraf (+ vast getal)",
-       "de vloeiende kromme die hoort bij een kwadratische functie",
-       "een hoekmaat waarbij de booglengte gelijk is aan de straal"
+      "d": 1,
+      "u": "Bij twee hoeken en een zijde reken je met a gedeeld door sin A. Dat past bij Sinusregel: a/sin A = b/sin B.",
+      "uo": [
+       "Nee, dat hoort bij Norm: lengte van een vector.",
+       "Nee, dat hoort bij Cirkelvergelijking: (x − a)² + (y − b)² = r².",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar.",
+       "Klopt: a/sin A = b/sin B."
       ],
-      "c": 3,
-      "u": "«Radiaal» betekent: een hoekmaat waarbij de booglengte gelijk is aan de straal.",
-      "d": 1
+      "uh": "Sinusregel: a/sin A = b/sin B."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een hoekmaat waarbij de booglengte gelijk is aan de straal\"?",
+      "v": "De standaardvorm van een cirkel. Welk begrip past hierbij?",
       "o": [
-       "Lineair verband",
-       "Radiaal",
-       "Nulpunt",
-       "Verband herkennen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Radiaal»: een hoekmaat waarbij de booglengte gelijk is aan de straal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een hoekmaat waarbij de booglengte gelijk is aan de straal\"?",
-      "o": [
-       "Congruent",
-       "Radiaal",
-       "Gelijkvormig",
-       "Grootte (lengte)"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Radiaal»: een hoekmaat waarbij de booglengte gelijk is aan de straal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Radiaal» in?",
-      "o": [
-       "met Pythagoras uit de kentallen",
-       "een hoekmaat waarbij de booglengte gelijk is aan de straal",
-       "pijl met richting en grootte",
-       "een grootheid met een lengte en een richting"
-      ],
-      "c": 1,
-      "u": "«Radiaal» betekent: een hoekmaat waarbij de booglengte gelijk is aan de straal.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vectoren»?",
-      "o": [
-       "de functie die de helling van de grafiek in elk punt geeft",
-       "rc; loodrechte lijnen",
-       "tabel, grafiek, formule, woorden",
-       "pijl met richting en grootte"
-      ],
-      "c": 3,
-      "u": "«Vectoren» betekent: pijl met richting en grootte.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"pijl met richting en grootte\"?",
-      "o": [
-       "Vectoren",
-       "Afnemende stijging",
-       "Discriminant",
-       "Pythagoras"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vectoren»: pijl met richting en grootte.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"pijl met richting en grootte\"?",
-      "o": [
-       "Radiaal",
-       "Vectoren",
-       "Vector",
-       "Straal"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Vectoren»: pijl met richting en grootte.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vectoren» in?",
-      "o": [
-       "pijl met richting en grootte",
-       "de afstand van het middelpunt tot de rand van een cirkel",
-       "met Pythagoras uit de kentallen",
-       "een grootheid met een lengte en een richting"
-      ],
-      "c": 0,
-      "u": "«Vectoren» betekent: pijl met richting en grootte.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Grootte (lengte)»?",
-      "o": [
-       "lijn die de grafiek nadert maar niet raakt",
-       "een maximum of minimum van een functie",
-       "met Pythagoras uit de kentallen",
-       "een hoekmaat waarbij de booglengte gelijk is aan de straal"
-      ],
-      "c": 2,
-      "u": "«Grootte (lengte)» betekent: met Pythagoras uit de kentallen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"met Pythagoras uit de kentallen\"?",
-      "o": [
-       "Grootte (lengte)",
-       "Functietypen",
-       "Nulpunt",
-       "Vergelijkingen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Grootte (lengte)»: met Pythagoras uit de kentallen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"met Pythagoras uit de kentallen\"?",
-      "o": [
-       "Congruent",
-       "Grootte (lengte)",
-       "Vectoren",
-       "Straal"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Grootte (lengte)»: met Pythagoras uit de kentallen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Grootte (lengte)» in?",
-      "o": [
-       "tussen twee punten",
-       "met Pythagoras uit de kentallen",
-       "een hoekmaat waarbij de booglengte gelijk is aan de straal",
-       "dezelfde vorm maar mogelijk een andere grootte"
-      ],
-      "c": 1,
-      "u": "«Grootte (lengte)» betekent: met Pythagoras uit de kentallen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Afstand»?",
-      "o": [
-       "een lijn die de grafiek steeds dichter nadert maar niet raakt",
-       "een functie waarvan de afgeleide de gegeven functie is",
-       "de oppervlakte tussen een grafiek en de horizontale as",
-       "tussen twee punten"
-      ],
-      "c": 3,
-      "u": "«Afstand» betekent: tussen twee punten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"tussen twee punten\"?",
-      "o": [
-       "Vergelijkingen",
-       "Integraal",
-       "Toenemende stijging",
-       "Afstand"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Afstand»: tussen twee punten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"tussen twee punten\"?",
-      "o": [
-       "Vectoren",
-       "Afstand",
-       "Congruent",
+       "Cirkelvergelijking",
+       "Middelpunt",
+       "Inproduct",
        "Vector"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Afstand»: tussen twee punten.",
-      "d": 3
+      "c": 0,
+      "d": 2,
+      "u": "De standaardvorm van een cirkel. Dat past bij Cirkelvergelijking: (x − a)² + (y − b)² = r².",
+      "uo": [
+       "Klopt: (x − a)² + (y − b)² = r².",
+       "Nee, dat hoort bij Middelpunt: gemiddelde van de coördinaten.",
+       "Nee, dat hoort bij Inproduct: som van producten.",
+       "Nee, dat hoort bij Vector: grootte en richting."
+      ],
+      "uh": "Cirkelvergelijking: (x − a)² + (y − b)² = r²."
      },
      {
-      "v": "Wat houdt «Afstand» in?",
+      "v": "De vorm x min a in het kwadraat plus y min b in het kwadraat is r kwadraat. Om welk begrip gaat het?",
       "o": [
-       "tussen twee punten",
-       "de afstand van het middelpunt tot de rand van een cirkel",
-       "dezelfde vorm maar mogelijk een andere grootte",
-       "een hoekmaat waarbij de booglengte gelijk is aan de straal"
+       "Kop-op-staart-methode",
+       "Cirkelvergelijking",
+       "Vector",
+       "Loodrecht"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De vorm x min a in het kwadraat plus y min b in het kwadraat is r kwadraat. Dat past bij Cirkelvergelijking: (x − a)² + (y − b)² = r².",
+      "uo": [
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar.",
+       "Klopt: (x − a)² + (y − b)² = r².",
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Loodrecht: rc₁·rc₂ = −1."
+      ],
+      "uh": "Cirkelvergelijking: (x − a)² + (y − b)² = r²."
+     },
+     {
+      "v": "De som van de producten van de kentallen. Welk begrip herken je hier?",
+      "o": [
+       "Middelpunt",
+       "Norm",
+       "Inproduct",
+       "Cosinusregel"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De som van de producten van de kentallen. Dat past bij Inproduct: som van producten.",
+      "uo": [
+       "Nee, dat hoort bij Middelpunt: gemiddelde van de coördinaten.",
+       "Nee, dat hoort bij Norm: lengte van een vector.",
+       "Klopt: som van producten.",
+       "Nee, dat hoort bij Cosinusregel: drie zijden of ingesloten hoek."
+      ],
+      "uh": "Inproduct: som van producten."
+     },
+     {
+      "v": "Het grafisch optellen van vectoren. Wat is hier aan de hand?",
+      "o": [
+       "Sinusregel",
+       "Inproduct",
+       "Vector",
+       "Kop-op-staart-methode"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het grafisch optellen van vectoren. Dat past bij Kop-op-staart-methode: vectoren achter elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Inproduct: som van producten.",
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Klopt: vectoren achter elkaar."
+      ],
+      "uh": "Kop-op-staart-methode: vectoren achter elkaar."
+     },
+     {
+      "v": "Een grootheid met grootte en richting. Welk begrip past hierbij?",
+      "o": [
+       "Vector",
+       "Periode",
+       "Kop-op-staart-methode",
+       "Inproduct"
       ],
       "c": 0,
-      "u": "«Afstand» betekent: tussen twee punten.",
-      "d": 3
+      "d": 1,
+      "u": "Een grootheid met grootte en richting. Dat past bij Vector: grootte en richting.",
+      "uo": [
+       "Klopt: grootte en richting.",
+       "Nee, dat hoort bij Periode: 2π/b.",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar.",
+       "Nee, dat hoort bij Inproduct: som van producten."
+      ],
+      "uh": "Vector: grootte en richting."
+     },
+     {
+      "v": "Bij drie zijden of twee zijden met de ingesloten hoek. Om welk begrip gaat het?",
+      "o": [
+       "Sinusregel",
+       "Cosinusregel",
+       "Inproduct",
+       "Norm"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Bij drie zijden of twee zijden met de ingesloten hoek. Dat past bij Cosinusregel: drie zijden of ingesloten hoek.",
+      "uo": [
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Klopt: drie zijden of ingesloten hoek.",
+       "Nee, dat hoort bij Inproduct: som van producten.",
+       "Nee, dat hoort bij Norm: lengte van een vector."
+      ],
+      "uh": "Cosinusregel: drie zijden of ingesloten hoek."
+     },
+     {
+      "v": "De lengte van een vector. Welk begrip herken je hier?",
+      "o": [
+       "Periode",
+       "Inproduct",
+       "Norm",
+       "Kop-op-staart-methode"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De lengte van een vector. Dat past bij Norm: lengte van een vector.",
+      "uo": [
+       "Nee, dat hoort bij Periode: 2π/b.",
+       "Nee, dat hoort bij Inproduct: som van producten.",
+       "Klopt: lengte van een vector.",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar."
+      ],
+      "uh": "Norm: lengte van een vector."
+     },
+     {
+      "v": "Het midden van een lijnstuk. Wat is hier aan de hand?",
+      "o": [
+       "Norm",
+       "Sinusregel",
+       "Kop-op-staart-methode",
+       "Middelpunt"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het midden van een lijnstuk. Dat past bij Middelpunt: gemiddelde van de coördinaten.",
+      "uo": [
+       "Nee, dat hoort bij Norm: lengte van een vector.",
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar.",
+       "Klopt: gemiddelde van de coördinaten."
+      ],
+      "uh": "Middelpunt: gemiddelde van de coördinaten."
+     },
+     {
+      "v": "Een pijl met een grootte en een richting. Welk begrip past hierbij?",
+      "o": [
+       "Vector",
+       "Norm",
+       "Sinusregel",
+       "Kop-op-staart-methode"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een pijl met een grootte en een richting. Dat past bij Vector: grootte en richting.",
+      "uo": [
+       "Klopt: grootte en richting.",
+       "Nee, dat hoort bij Norm: lengte van een vector.",
+       "Nee, dat hoort bij Sinusregel: a/sin A = b/sin B.",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar."
+      ],
+      "uh": "Vector: grootte en richting."
+     },
+     {
+      "v": "Het gemiddelde van de coördinaten van de twee eindpunten. Om welk begrip gaat het?",
+      "o": [
+       "Cirkelvergelijking",
+       "Middelpunt",
+       "Inproduct",
+       "Cosinusregel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het gemiddelde van de coördinaten van de twee eindpunten. Dat past bij Middelpunt: gemiddelde van de coördinaten.",
+      "uo": [
+       "Nee, dat hoort bij Cirkelvergelijking: (x − a)² + (y − b)² = r².",
+       "Klopt: gemiddelde van de coördinaten.",
+       "Nee, dat hoort bij Inproduct: som van producten.",
+       "Nee, dat hoort bij Cosinusregel: drie zijden of ingesloten hoek."
+      ],
+      "uh": "Middelpunt: gemiddelde van de coördinaten."
+     },
+     {
+      "v": "Je vermenigvuldigt de kentallen en telt op; nul betekent loodrecht. Welk begrip herken je hier?",
+      "o": [
+       "Vector",
+       "Middelpunt",
+       "Inproduct",
+       "Kop-op-staart-methode"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je vermenigvuldigt de kentallen en telt op; nul betekent loodrecht. Dat past bij Inproduct: som van producten.",
+      "uo": [
+       "Nee, dat hoort bij Vector: grootte en richting.",
+       "Nee, dat hoort bij Middelpunt: gemiddelde van de coördinaten.",
+       "Klopt: som van producten.",
+       "Nee, dat hoort bij Kop-op-staart-methode: vectoren achter elkaar."
+      ],
+      "uh": "Inproduct: som van producten."
+     },
+     {
+      "v": "Je legt de staart van de tweede vector aan de kop van de eerste. Wat is hier aan de hand?",
+      "o": [
+       "Loodrecht",
+       "Inproduct",
+       "Periode",
+       "Kop-op-staart-methode"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je legt de staart van de tweede vector aan de kop van de eerste. Dat past bij Kop-op-staart-methode: vectoren achter elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Loodrecht: rc₁·rc₂ = −1.",
+       "Nee, dat hoort bij Inproduct: som van producten.",
+       "Nee, dat hoort bij Periode: 2π/b.",
+       "Klopt: vectoren achter elkaar."
+      ],
+      "uh": "Kop-op-staart-methode: vectoren achter elkaar."
      }
     ],
     "oe": [
@@ -71814,35 +72154,43 @@ var VAKKEN = [
     "begrippen": [
      {
       "t": "Vector",
-      "d": "een grootheid met een lengte en een richting"
+      "d": "een grootheid met een grootte en een richting"
      },
      {
-      "t": "Straal",
-      "d": "de afstand van het middelpunt tot de rand van een cirkel"
+      "t": "Norm",
+      "d": "|a⃗| = √(a₁² + a₂²): de lengte van een vector"
      },
      {
-      "t": "Congruent",
-      "d": "precies even groot en van dezelfde vorm"
+      "t": "Inproduct",
+      "d": "a₁b₁ + a₂b₂; 0 bij loodrecht, negatief bij een stompe hoek"
      },
      {
-      "t": "Gelijkvormig",
-      "d": "dezelfde vorm maar mogelijk een andere grootte"
+      "t": "Cirkelvergelijking",
+      "d": "de standaardvorm (x − a)² + (y − b)² = r²"
      },
      {
-      "t": "Radiaal",
-      "d": "een hoekmaat waarbij de booglengte gelijk is aan de straal"
+      "t": "Middelpunt",
+      "d": "van A naar B: ((x₁ + x₂)/2, (y₁ + y₂)/2)"
      },
      {
-      "t": "Vectoren",
-      "d": "pijl met richting en grootte"
+      "t": "Sinusregel",
+      "d": "a/sin A = b/sin B, bij twee hoeken en een zijde"
      },
      {
-      "t": "Grootte (lengte)",
-      "d": "met Pythagoras uit de kentallen"
+      "t": "Cosinusregel",
+      "d": "de regel bij drie zijden of twee zijden met de ingesloten hoek"
      },
      {
-      "t": "Afstand",
-      "d": "tussen twee punten"
+      "t": "Loodrecht",
+      "d": "twee lijnen met rc₁·rc₂ = −1 of vectoren met inproduct 0"
+     },
+     {
+      "t": "Periode",
+      "d": "de lengte 2π/b waarna y = sin(bx) zich herhaalt"
+     },
+     {
+      "t": "Kop-op-staart-methode",
+      "d": "het grafisch optellen van vectoren door ze achter elkaar te leggen"
      }
     ]
    }

@@ -1,0 +1,181 @@
+// HAVO Wiskunde B - gouden-stijl contentspec. Vervangt crude generatorvragen
+// door authored reken-/inzichtvragen met per-optie-uitleg + situatiebegrippen.
+const V = (domein, naam, intro, secties, concepten, vragen) => ({ niveau: 'havo', vak: 'wb', domein, naam, intro, secties, concepten, vragen });
+
+export default [
+  V('A', 'Vaardigheden',
+    `De basis van wiskunde B: <strong>herleiden</strong>, <strong>vergelijkingen oplossen</strong> en <strong>ontbinden in factoren</strong>. Je leest de <strong>beginwaarde</strong> en <strong>richtingscoëfficiënt</strong> af, en lost een <strong>stelsel vergelijkingen</strong> op met <strong>substitutie</strong>.`,
+    [
+      { h: '1. Algebra', p: [
+        `<strong>Herleiden</strong> is een uitdrukking eenvoudiger schrijven, bijvoorbeeld (x − 1)(x + 1) = x² − 1. <strong>Ontbinden in factoren</strong> schrijft een som als product: x² − 9 = (x − 3)(x + 3). Een <strong>vergelijking</strong> los je op door aan beide kanten dezelfde bewerking te doen; x² = 16 geeft x = ±4.`] },
+      { h: '2. Grafieken en stelsels', p: [
+        `Bij x = 0 lees je op de y-as de <strong>beginwaarde</strong> af. Een <strong>lineair verband</strong> is een rechte lijn met een constante <strong>richtingscoëfficiënt</strong> (Δy/Δx). Een <strong>stelsel vergelijkingen</strong> los je op met <strong>substitutie</strong>: druk één variabele uit en vul die in de andere vergelijking in.`] },
+    ],
+    [
+      { t: 'Beginwaarde', d: 'de waarde die je op de y-as afleest bij x = 0', k: 'waarde bij x = 0', fout: ['Richtingscoëfficiënt'] },
+      { t: 'Lineair verband', d: 'een verband met een rechte lijn en een constante stijging', k: 'rechte lijn', fout: ['Kwadratische vergelijking'] },
+      { t: 'Substitutie', d: 'één variabele uitdrukken en invullen in de andere vergelijking', k: 'invullen in de andere vergelijking', fout: ['Stelsel vergelijkingen'] },
+      { t: 'Stelsel vergelijkingen', d: 'twee vergelijkingen met een gemeenschappelijke oplossing', k: 'twee vergelijkingen samen', fout: ['Substitutie'] },
+      { t: 'Richtingscoëfficiënt', d: 'de helling Δy/Δx van een rechte lijn', k: 'helling Δy/Δx', fout: ['Beginwaarde'] },
+      { t: 'Herleiden', d: 'een uitdrukking zo eenvoudig mogelijk schrijven', k: 'eenvoudiger schrijven', fout: ['Ontbinden in factoren'] },
+      { t: 'Kwadratische vergelijking', d: 'een vergelijking met x² als hoogste macht', k: 'hoogste macht x²', fout: ['Lineair verband'] },
+      { t: 'Discriminant', d: 'D = b² − 4ac, bepaalt het aantal reële oplossingen', k: 'b² − 4ac', fout: ['Kwadratische vergelijking'] },
+      { t: 'Ontbinden in factoren', d: 'een som als product van factoren schrijven', k: 'som als product', fout: ['Herleiden'] },
+      { t: 'Exact rekenen', d: 'met breuken en wortels doorrekenen zonder af te ronden', k: 'niet afronden', fout: ['Herleiden'] },
+    ],
+    [
+      { v: 'Wat lees je af op de y-as bij x = 0 van een grafiek?', o: ['de beginwaarde', 'de richtingscoëfficiënt', 'het nulpunt', 'de periode'], c: 0, d: 2, uo: ['Klopt: bij x = 0 lees je de beginwaarde af.', 'Nee, dat is de helling.', 'Nee, dat is waar de grafiek de x-as snijdt.', 'Nee, dat hoort bij periodieke functies.'], uh: 'Bij x = 0 op de y-as lees je de beginwaarde af.' },
+      { v: 'Hoe herken je een lineair verband in een grafiek?', o: ['aan een rechte lijn met een constante stijging per eenheid', 'aan een dalende kromme', 'aan een parabool', 'aan een sinusgolf'], c: 0, d: 2, uo: ['Klopt: lineair betekent een rechte lijn.', 'Nee, dat is geen rechte lijn.', 'Nee, dat is kwadratisch.', 'Nee, dat is goniometrisch.'], uh: 'Lineair verband: een rechte lijn met constante stijging.' },
+      { v: 'Wat is substitutie bij het oplossen van een stelsel vergelijkingen?', o: ['één variabele uitdrukken in de andere en dat invullen', 'beide vergelijkingen optellen', 'de grafieken inkleuren', 'alles door 2 delen'], c: 0, d: 3, uo: ['Klopt: je vervangt een variabele door een uitdrukking.', 'Nee, dat is de eliminatiemethode.', 'Nee, dat helpt niet.', 'Nee, dat lost het stelsel niet op.'], uh: 'Substitutie: één variabele uitdrukken en invullen.' },
+      { v: 'Bereken de richtingscoëfficiënt van de lijn door (0, 1) en (2, 7).', o: ['3', '6', '2', '4'], c: 0, d: 2, uo: ['Klopt: (7 − 1)/(2 − 0) = 3.', 'Nee, dat is alleen Δy.', 'Nee, dat is alleen Δx.', 'Nee, 6/2 = 3.'], uh: 'Richtingscoëfficiënt: rc = Δy gedeeld door Δx.' },
+      { v: 'Ontbind in factoren: x² − 9.', o: ['(x − 3)(x + 3)', '(x − 3)²', '(x + 9)(x − 1)', '(x − 9)(x + 1)'], c: 0, d: 2, uo: ['Klopt: verschil van kwadraten.', 'Nee, dat geeft x² − 6x + 9.', 'Nee, dat klopt niet.', 'Nee, dat klopt niet.'], uh: 'Verschil van kwadraten: a² − b² = (a − b)(a + b).' },
+      { v: 'Los op: 2x + 6 = 0.', o: ['x = −3', 'x = 3', 'x = −6', 'x = 6'], c: 0, d: 1, uo: ['Klopt: 2x = −6, dus x = −3.', 'Nee, let op het minteken.', 'Nee, je moet nog door 2 delen.', 'Nee, dat teken en die deling kloppen niet.'], uh: 'Haal de losse term over en deel door de factor.' },
+      { v: 'Wat is de discriminant D en wat betekent D < 0?', o: ['D = b² − 4ac; D < 0 betekent geen reële oplossingen', 'D = b + c; D < 0 betekent twee oplossingen', 'D = 2a; D < 0 betekent één oplossing', 'D bestaat niet'], c: 0, d: 3, uo: ['Klopt: bij D < 0 zijn er geen reële oplossingen.', 'Nee, de formule klopt niet.', 'Nee, dat klopt niet.', 'Nee, D bestaat wel.'], uh: 'De discriminant D = b² − 4ac telt de reële oplossingen.' },
+      { v: 'Herleid: (x − 1)(x + 1).', o: ['x² − 1', 'x² + 1', 'x² − 2x + 1', 'x² − x − 1'], c: 0, d: 2, uo: ['Klopt: verschil van kwadraten, x² − 1.', 'Nee, het teken klopt niet.', 'Nee, dat is (x − 1)².', 'Nee, de kruistermen vallen weg.'], uh: 'Merkwaardig product: (a − b)(a + b) = a² − b².' },
+      { v: 'Wat betekent exact rekenen?', o: ['met breuken en wortels doorrekenen zonder af te ronden', 'altijd op twee decimalen afronden', 'de rekenmachine gebruiken', 'alleen met hele getallen werken'], c: 0, d: 2, uo: ['Klopt: exact is zonder afronden doorrekenen.', 'Nee, dat is juist afgerond.', 'Nee, dat geeft vaak een benadering.', 'Nee, breuken en wortels mogen juist.'], uh: 'Exact rekenen: doorrekenen met breuken en wortels.' },
+      { v: 'Los op: x² = 16.', o: ['x = ±4', 'x = 4', 'x = 8', 'x = ±8'], c: 0, d: 2, uo: ['Klopt: zowel 4 als −4 in het kwadraat geeft 16.', 'Nee, je mist de negatieve oplossing.', 'Nee, 8² = 64.', 'Nee, √16 = 4.'], uh: 'De vergelijking x² = a heeft twee oplossingen: x = ±√a.' },
+      { v: 'Wat is de oplossing van een stelsel van twee vergelijkingen?', o: ['de waarden van x en y die aan beide vergelijkingen voldoen', 'de som van beide vergelijkingen', 'het snijpunt met de y-as', 'het grootste getal'], c: 0, d: 2, uo: ['Klopt: de oplossing voldoet aan beide.', 'Nee, dat is een tussenstap, geen oplossing.', 'Nee, dat is één punt van één lijn.', 'Nee, dat is geen oplossing.'], uh: 'Een stelsel: de x en y die aan beide vergelijkingen voldoen.' },
+      { v: 'Wat is de richtingscoëfficiënt van y = 3x − 2?', o: ['3', '−2', '2', '1'], c: 0, d: 2, uo: ['Klopt: de rc is de factor voor x, dus 3.', 'Nee, dat is de beginwaarde.', 'Nee, dat klopt niet.', 'Nee, dat klopt niet.'], uh: 'In y = a·x + b is a de richtingscoëfficiënt.' },
+    ]),
+
+  V('B', 'Functies, grafieken en vergelijkingen',
+    `Een <strong>functie</strong> geeft bij elke x precies één y. Met <strong>transformaties</strong> verschuif, spiegel of vervorm je een grafiek. Een <strong>asymptoot</strong> nadert de grafiek zonder te raken. <strong>Exponentiële</strong> en <strong>goniometrische</strong> functies hebben eigen kenmerken zoals <strong>periode</strong> en <strong>amplitude</strong>.`,
+    [
+      { h: '1. Functies en transformaties', p: [
+        `Een <strong>functie</strong> koppelt aan elke x precies één y. <strong>Transformaties</strong>: f(x − c) verschuift c naar rechts, f(x) + c omhoog, en −f(x) is een <strong>spiegeling</strong> in de x-as. <strong>Snijpunten</strong> van f en g vind je door f(x) = g(x) op te lossen. Het <strong>domein</strong> zijn de toegestane x-waarden, het <strong>bereik</strong> de mogelijke y-waarden.`] },
+      { h: '2. Exponentieel en goniometrie', p: [
+        `Een <strong>exponentiële vergelijking</strong> los je op door te <strong>logaritmeren</strong>. De <strong>horizontale asymptoot</strong> van f(x) = 3·2ˣ + 1 is y = 1. Voor een <strong>sinusfunctie</strong> y = a·sin(bx): de <strong>amplitude</strong> is |a| en de <strong>periode</strong> is 2π/b.`] },
+    ],
+    [
+      { t: 'Functie', d: 'een verband dat aan elke x precies één y toekent', k: 'elke x geeft één y', fout: ['Transformatie'] },
+      { t: 'Transformatie', d: 'een verschuiving, spiegeling of vervorming van een grafiek', k: 'grafiek bewerken', fout: ['Functie'] },
+      { t: 'Asymptoot', d: 'een lijn die de grafiek steeds dichter nadert zonder te raken', k: 'lijn die grafiek nadert', fout: ['Periode'] },
+      { t: 'Exponentiële vergelijking', d: 'een vergelijking met de onbekende in de exponent', k: 'x in de exponent', fout: ['Amplitude'] },
+      { t: 'Amplitude', d: 'de uitwijking |a| van een sinusfunctie a·sin(bx)', k: 'uitwijking |a|', fout: ['Periode'] },
+      { t: 'Periode', d: 'de lengte 2π/b waarna een sinusfunctie zich herhaalt', k: '2π/b', fout: ['Amplitude'] },
+      { t: 'Snijpunt', d: 'een punt waar twee grafieken elkaar kruisen, uit f(x) = g(x)', k: 'f(x) = g(x)', fout: ['Asymptoot'] },
+      { t: 'Spiegeling', d: 'de transformatie −f(x): spiegelen in de x-as', k: 'spiegelen in de x-as', fout: ['Transformatie'] },
+      { t: 'Domein', d: 'de verzameling toegestane x-waarden van een functie', k: 'toegestane x-waarden', fout: ['Bereik'] },
+      { t: 'Bereik', d: 'de verzameling mogelijke y-waarden van een functie', k: 'mogelijke y-waarden', fout: ['Domein'] },
+    ],
+    [
+      { v: 'Wat is een functie in de wiskunde?', o: ['een verband dat aan elke x precies één y toekent', 'een verband met meerdere y per x', 'een willekeurige verzameling punten', 'een rechte lijn'], c: 0, d: 2, uo: ['Klopt: elke x heeft precies één y.', 'Nee, dan is het geen functie.', 'Nee, er moet een regel zijn.', 'Nee, dat is maar één soort functie.'], uh: 'Functie: elke x geeft precies één y.' },
+      { v: 'Hoe verschuift f(x − 3) ten opzichte van f(x)?', o: ['3 naar rechts', '3 naar links', '3 omhoog', '3 omlaag'], c: 0, d: 3, uo: ['Klopt: f(x − c) schuift c naar rechts.', 'Nee, dat is f(x + 3).', 'Nee, dat is f(x) + 3.', 'Nee, dat is f(x) − 3.'], uh: 'f(x − c) met c > 0: c naar rechts.' },
+      { v: 'Wat is de horizontale asymptoot van f(x) = 3·2ˣ + 1?', o: ['y = 1', 'y = 3', 'y = 0', 'y = 2'], c: 0, d: 3, uo: ['Klopt: de plus 1 tilt de asymptoot naar y = 1.', 'Nee, 3 is de factor voor de macht.', 'Nee, zonder de plus 1 was het y = 0.', 'Nee, 2 is het grondtal.'], uh: 'De constante term bepaalt de horizontale asymptoot.' },
+      { v: 'Hoe los je een exponentiële vergelijking op?', o: ['logaritmeer beide kanten', 'kwadrateer beide kanten', 'tel bij beide kanten op', 'deel door x'], c: 0, d: 3, uo: ['Klopt: met de logaritme haal je x uit de exponent.', 'Nee, dat helpt hier niet.', 'Nee, dat lost het niet op.', 'Nee, dat helpt niet.'], uh: 'Exponentiële vergelijking: logaritmeer beide kanten.' },
+      { v: 'Welke transformatie geeft −f(x) op de grafiek?', o: ['een spiegeling in de x-as', 'een spiegeling in de y-as', 'een verschuiving naar links', 'een verschuiving omhoog'], c: 0, d: 3, uo: ['Klopt: het minteken spiegelt in de x-as.', 'Nee, dat is f(−x).', 'Nee, dat is een translatie.', 'Nee, dat is f(x) + c.'], uh: '−f(x): spiegeling in de x-as.' },
+      { v: 'Hoe vind je de snijpunten van twee grafieken f en g?', o: ['stel f(x) = g(x) en los op', 'tel f en g op', 'trek f van g af en stop', 'teken alleen f'], c: 0, d: 2, uo: ['Klopt: op een snijpunt zijn de y-waarden gelijk.', 'Nee, dat geeft geen snijpunt.', 'Nee, je moet de vergelijking oplossen.', 'Nee, dan mis je g.'], uh: 'Snijpunten: los f(x) = g(x) op.' },
+      { v: 'Wat is de amplitude van y = 4·sin(x) + 1?', o: ['4 (de factor voor de sinus)', '1', '5', '2π'], c: 0, d: 2, uo: ['Klopt: de factor 4 is de amplitude.', 'Nee, dat is de verticale verschuiving.', 'Nee, dat is 4 + 1, geen amplitude.', 'Nee, dat is een periode.'], uh: 'In a·sin(bx) is |a| de amplitude.' },
+      { v: 'Wat is de periode van y = sin(3x)?', o: ['2π/3', '2π', '3', 'π'], c: 0, d: 3, uo: ['Klopt: periode = 2π/b = 2π/3.', 'Nee, dat is de periode van sin(x).', 'Nee, 3 is de factor b.', 'Nee, deel 2π door 3.'], uh: 'Periode van sin(bx): 2π/b.' },
+      { v: 'Wat doet de transformatie f(x) + 2 met de grafiek?', o: ['ze schuift 2 omhoog', 'ze schuift 2 naar rechts', 'ze spiegelt in de x-as', 'ze wordt smaller'], c: 0, d: 2, uo: ['Klopt: bij de functiewaarde optellen schuift verticaal.', 'Nee, dat is f(x − 2).', 'Nee, dat is −f(x).', 'Nee, dat is een vervorming.'], uh: 'f(x) + c met c > 0: c omhoog.' },
+      { v: 'Wat is het domein van een functie?', o: ['de toegestane x-waarden', 'de mogelijke y-waarden', 'de nulpunten', 'de asymptoten'], c: 0, d: 2, uo: ['Klopt: het domein zijn de toegestane invoerwaarden.', 'Nee, dat is het bereik.', 'Nee, dat zijn losse punten.', 'Nee, dat zijn lijnen.'], uh: 'Domein: de toegestane x-waarden.' },
+      { v: 'Wat is het bereik van een functie?', o: ['de mogelijke y-waarden', 'de toegestane x-waarden', 'het aantal nulpunten', 'de periode'], c: 0, d: 2, uo: ['Klopt: het bereik zijn de mogelijke uitkomsten.', 'Nee, dat is het domein.', 'Nee, dat is een aantal.', 'Nee, dat is een lengte.'], uh: 'Bereik: de mogelijke y-waarden.' },
+      { v: 'Los op: 2ˣ = 8.', o: ['x = 3', 'x = 4', 'x = 2', 'x = 8'], c: 0, d: 2, uo: ['Klopt: 2³ = 8.', 'Nee, 2⁴ = 16.', 'Nee, 2² = 4.', 'Nee, x is de exponent, niet het getal.'], uh: 'Schrijf beide kanten als macht van hetzelfde grondtal.' },
+    ]),
+
+  V('C', 'Meetkundige berekeningen',
+    `Met <strong>vectoren</strong> en het <strong>inproduct</strong> bepaal je of lijnen <strong>loodrecht</strong> staan (inproduct 0). In een rechthoekige driehoek gebruik je <strong>sinus</strong>, <strong>cosinus</strong> en <strong>tangens</strong> (SOH-CAH-TOA), en bij andere driehoeken de <strong>sinus-</strong> of <strong>cosinusregel</strong>. Een <strong>cirkel</strong> heeft de vergelijking (x − a)² + (y − b)² = r².`,
+    [
+      { h: '1. Vectoren en loodrecht', p: [
+        `Twee vectoren staan <strong>loodrecht</strong> als hun <strong>inproduct</strong> nul is. Twee lijnen staan loodrecht als het product van hun richtingscoëfficiënten −1 is; de loodlijn op rc = 2 heeft rc = −½.`] },
+      { h: '2. Driehoeken en cirkels', p: [
+        `In een rechthoekige driehoek geldt <strong>SOH-CAH-TOA</strong>: sin = overstaande/schuinzijde, cos = aanliggende/schuinzijde, tan = overstaande/aanliggende. De <strong>sinusregel</strong> gebruik je bij twee hoeken en een zijde; de <strong>cosinusregel</strong> bij drie zijden of twee zijden met de ingesloten hoek. Een punt ligt op de <strong>cirkel</strong> (x − a)² + (y − b)² = r² als invullen r² geeft.`] },
+    ],
+    [
+      { t: 'Inproduct', d: 'a₁b₁ + a₂b₂; is 0 bij loodrechte vectoren', k: 'som van producten van kentallen', fout: ['Loodrecht'] },
+      { t: 'Loodrecht', d: 'twee vectoren met inproduct 0, of lijnen met rc₁·rc₂ = −1', k: 'inproduct 0', fout: ['Sinus'] },
+      { t: 'Richtingscoëfficiënt loodlijn', d: 'de rc waarvan het product met de gegeven rc gelijk aan −1 is', k: 'rc met product −1', fout: ['Loodrecht'] },
+      { t: 'Sinus', d: 'in een rechthoekige driehoek: overstaande gedeeld door schuinzijde', k: 'overstaande / schuinzijde', fout: ['Cosinus'] },
+      { t: 'Cosinus', d: 'in een rechthoekige driehoek: aanliggende gedeeld door schuinzijde', k: 'aanliggende / schuinzijde', fout: ['Sinus'] },
+      { t: 'Tangens', d: 'in een rechthoekige driehoek: overstaande gedeeld door aanliggende', k: 'overstaande / aanliggende', fout: ['Sinus'] },
+      { t: 'Sinusregel', d: 'a/sin A = b/sin B, bij twee hoeken en een zijde', k: 'a/sin A = b/sin B', fout: ['Cosinusregel'] },
+      { t: 'Cosinusregel', d: 'de regel bij drie zijden of twee zijden met de ingesloten hoek', k: 'drie zijden of ingesloten hoek', fout: ['Sinusregel'] },
+      { t: 'Cirkelvergelijking', d: 'de standaardvorm (x − a)² + (y − b)² = r²', k: '(x − a)² + (y − b)² = r²', fout: ['Inproduct'] },
+      { t: 'Vector', d: 'een grootheid met een grootte en een richting', k: 'grootte en richting', fout: ['Inproduct'] },
+    ],
+    [
+      { v: 'Wanneer zijn twee vectoren loodrecht op elkaar?', o: ['als het inproduct 0 is', 'als ze even lang zijn', 'als hun som 0 is', 'als ze parallel zijn'], c: 0, d: 3, uo: ['Klopt: loodrecht betekent inproduct 0.', 'Nee, gelijke lengte zegt niets over de hoek.', 'Nee, dat betekent tegengesteld.', 'Nee, parallel is juist niet loodrecht.'], uh: 'Loodrechte vectoren: inproduct gelijk aan 0.' },
+      { v: 'Wat is de helling van een loodlijn op een lijn met rc = 2?', o: ['−½', '2', '½', '−2'], c: 0, d: 3, uo: ['Klopt: rc₁·rc₂ = −1, dus −½.', 'Nee, dat is dezelfde helling.', 'Nee, dat product is niet −1.', 'Nee, dat product is niet −1.'], uh: 'Loodrecht: het product van de rc\'s is −1.' },
+      { v: 'Wat betekent het als het inproduct van twee vectoren nul is?', o: ['de vectoren staan loodrecht op elkaar', 'de vectoren zijn even lang', 'de vectoren zijn parallel', 'een van de vectoren is nul'], c: 0, d: 2, uo: ['Klopt: inproduct 0 betekent een hoek van 90°.', 'Nee, dat volgt er niet uit.', 'Nee, parallel geeft juist geen 0.', 'Nee, dat hoeft niet.'], uh: 'Inproduct 0: de vectoren staan loodrecht.' },
+      { v: 'Wat beschrijft sin α in een rechthoekige driehoek?', o: ['overstaande gedeeld door schuinzijde', 'aanliggende gedeeld door schuinzijde', 'overstaande gedeeld door aanliggende', 'schuinzijde gedeeld door overstaande'], c: 0, d: 2, uo: ['Klopt: sin = overstaande/schuinzijde.', 'Nee, dat is de cosinus.', 'Nee, dat is de tangens.', 'Nee, dat is het omgekeerde.'], uh: 'SOH: sin = overstaande / schuinzijde.' },
+      { v: 'Wanneer gebruik je de sinusregel?', o: ['bij twee hoeken en een zijde, of twee zijden met een overstaande hoek', 'alleen bij een rechthoekige driehoek', 'bij drie gegeven zijden', 'nooit'], c: 0, d: 3, uo: ['Klopt: de sinusregel past bij deze gevallen.', 'Nee, dan volstaat SOH-CAH-TOA.', 'Nee, dan gebruik je de cosinusregel.', 'Nee, hij is vaak nodig.'], uh: 'Sinusregel: bij twee hoeken en een zijde (of AAS/ASA).' },
+      { v: 'Hoe controleer je of punt P op de cirkel (x − 2)² + (y − 3)² = 25 ligt?', o: ['vul P in en vergelijk de uitkomst met 25', 'kijk of P in het middelpunt ligt', 'bereken de rc van P', 'tel de coördinaten van P op'], c: 0, d: 3, uo: ['Klopt: als invullen 25 geeft, ligt P op de cirkel.', 'Nee, dat is het middelpunt, niet de rand.', 'Nee, dat is niet relevant.', 'Nee, dat zegt niets.'], uh: 'Punt op cirkel: invullen en vergelijken met r².' },
+      { v: 'Wat beschrijft cos α in een rechthoekige driehoek?', o: ['aanliggende gedeeld door schuinzijde', 'overstaande gedeeld door schuinzijde', 'overstaande gedeeld door aanliggende', 'schuinzijde gedeeld door aanliggende'], c: 0, d: 2, uo: ['Klopt: cos = aanliggende/schuinzijde.', 'Nee, dat is de sinus.', 'Nee, dat is de tangens.', 'Nee, dat is het omgekeerde.'], uh: 'CAH: cos = aanliggende / schuinzijde.' },
+      { v: 'Wat beschrijft tan α in een rechthoekige driehoek?', o: ['overstaande gedeeld door aanliggende', 'overstaande gedeeld door schuinzijde', 'aanliggende gedeeld door schuinzijde', 'schuinzijde gedeeld door overstaande'], c: 0, d: 2, uo: ['Klopt: tan = overstaande/aanliggende.', 'Nee, dat is de sinus.', 'Nee, dat is de cosinus.', 'Nee, dat is het omgekeerde.'], uh: 'TOA: tan = overstaande / aanliggende.' },
+      { v: 'Wanneer gebruik je de cosinusregel?', o: ['bij drie zijden, of twee zijden met de ingesloten hoek', 'alleen bij twee hoeken', 'alleen in een rechthoekige driehoek', 'nooit'], c: 0, d: 3, uo: ['Klopt: de cosinusregel past bij deze gevallen.', 'Nee, dan gebruik je de sinusregel.', 'Nee, dan volstaat SOH-CAH-TOA.', 'Nee, hij is vaak nodig.'], uh: 'Cosinusregel: drie zijden of twee zijden met ingesloten hoek.' },
+      { v: 'Hoe controleer je of twee lijnen loodrecht op elkaar staan?', o: ['het product van hun richtingscoëfficiënten is −1', 'ze hebben dezelfde rc', 'hun som is 0', 'ze snijden de y-as'], c: 0, d: 3, uo: ['Klopt: rc₁·rc₂ = −1.', 'Nee, dan zijn ze evenwijdig.', 'Nee, dat klopt niet.', 'Nee, dat zegt niets over loodrecht.'], uh: 'Twee lijnen loodrecht: rc₁ × rc₂ = −1.' },
+      { v: 'Waar staat SOH-CAH-TOA voor?', o: ['sin = O/H, cos = A/H, tan = O/A', 'sin = A/H, cos = O/H, tan = A/O', 'de drie zijden van een driehoek', 'de oppervlakte van een driehoek'], c: 0, d: 2, uo: ['Klopt: dat is het ezelsbruggetje.', 'Nee, dat is verwisseld.', 'Nee, het gaat over verhoudingen.', 'Nee, het gaat niet over oppervlakte.'], uh: 'SOH-CAH-TOA: sin=O/H, cos=A/H, tan=O/A.' },
+      { v: 'Wat is een vector?', o: ['een grootheid met een grootte en een richting', 'alleen een getal', 'een punt in het vlak', 'een hoek'], c: 0, d: 2, uo: ['Klopt: een vector heeft grootte en richting.', 'Nee, een getal heeft geen richting.', 'Nee, een punt heeft geen richting.', 'Nee, dat is iets anders.'], uh: 'Vector: grootheid met grootte en richting.' },
+    ]),
+
+  V('D', 'Toegepaste analyse',
+    `Met <strong>differentiëren</strong> vind je de <strong>helling</strong> en de <strong>raaklijn</strong>. De afgeleide van xⁿ is n·xⁿ⁻¹, van sin(x) is cos(x), van ln(x) is 1/x en van een constante 0. Voor samengestelde functies gebruik je de <strong>kettingregel</strong>. Waar f'(x) = 0 ligt een <strong>extremum</strong>.`,
+    [
+      { h: '1. Afgeleiden', p: [
+        `De <strong>afgeleide</strong> geeft de helling. Belangrijke regels: xⁿ → n·xⁿ⁻¹, een constante → 0, sin(x) → cos(x), cos(x) → −sin(x), eˣ → eˣ en ln(x) → 1/x. Voor een samengestelde functie geldt de <strong>kettingregel</strong>: [f(g(x))]' = f'(g(x))·g'(x).`],
+        formula: { label: 'Kettingregel', eq: '[f(g(x))]\' = f\'(g(x)) · g\'(x)', note: 'Buitenste differentiëren, binnenste laten staan, maal de afgeleide van de binnenste.' } },
+      { h: '2. Raaklijn en extremen', p: [
+        `De <strong>raaklijn</strong> aan f in x = a is y = f'(a)·(x − a) + f(a). Waar <strong>f'(x) = 0</strong> ligt een <strong>extremum</strong> (top of dal); is f'(x) > 0, dan stijgt f. Bij een product van functies gebruik je de <strong>productregel</strong>.`] },
+    ],
+    [
+      { t: 'Afgeleide', d: 'de functie die de helling van f in elk punt geeft', k: 'helling in elk punt', fout: ['Primitieve'] },
+      { t: 'Raaklijn', d: 'de lijn y = f\'(a)·(x − a) + f(a) die de grafiek in één punt raakt', k: 'raakt in één punt', fout: ['Helling'] },
+      { t: 'Kettingregel', d: 'de regel [f(g(x))]\' = f\'(g(x))·g\'(x) voor samengestelde functies', k: 'voor f(g(x))', fout: ['Productregel'] },
+      { t: 'Productregel', d: 'de regel voor het differentiëren van een product van functies', k: 'voor f(x)·g(x)', fout: ['Kettingregel'] },
+      { t: 'Extremum', d: 'een top of dal waar f\'(x) = 0', k: 'top of dal', fout: ['Helling'] },
+      { t: 'Helling', d: 'de steilheid van de grafiek in een punt, gelijk aan de afgeleide', k: 'steilheid', fout: ['Raaklijn'] },
+      { t: 'Primitieve', d: 'een functie waarvan de afgeleide f is, het omgekeerde van differentiëren', k: 'omgekeerde van afgeleide', fout: ['Afgeleide'] },
+      { t: 'Buigpunt', d: 'een punt waar de grafiek van hol naar bol overgaat, f\'\'(x) = 0', k: 'f\'\'(x) = 0', fout: ['Extremum'] },
+      { t: 'Stationair punt', d: 'een punt waar f\'(x) = 0', k: 'f\'(x) = 0', fout: ['Buigpunt'] },
+      { t: 'Differentiëren', d: 'het bepalen van de afgeleide van een functie', k: 'de afgeleide bepalen', fout: ['Primitieve'] },
+    ],
+    [
+      { v: 'Wat is de vergelijking van de raaklijn aan f(x) in het punt x = a?', o: ['y = f\'(a)·(x − a) + f(a)', 'y = f(a)·x', 'y = f\'(x)·a', 'y = a·x + b'], c: 0, d: 3, uo: ['Klopt: helling f\'(a), gaat door (a, f(a)).', 'Nee, dat is geen raaklijn.', 'Nee, dat klopt niet.', 'Nee, dat is een algemene lijn.'], uh: 'Raaklijn: y = f\'(a)·(x − a) + f(a).' },
+      { v: 'Wat is de kettingregel?', o: ['[f(g(x))]\' = f\'(g(x))·g\'(x)', 'f\'(x)·g\'(x)', 'f\'(x) + g\'(x)', 'f(x)·g(x)'], c: 0, d: 3, uo: ['Klopt: buitenste differentiëren maal de afgeleide van de binnenste.', 'Nee, dat is niet de kettingregel.', 'Nee, dat klopt niet.', 'Nee, dat is een gewoon product.'], uh: 'Kettingregel: f\'(g(x))·g\'(x).' },
+      { v: 'Wat is de afgeleide van de constante functie f(x) = 5?', o: ['0', '5', '1', '5x'], c: 0, d: 1, uo: ['Klopt: een constante verandert niet, dus afgeleide 0.', 'Nee, de functiewaarde is 5, de helling 0.', 'Nee, de helling is 0.', 'Nee, er is geen x.'], uh: 'De afgeleide van een constante is 0.' },
+      { v: 'Wat is de afgeleide van sin(x)?', o: ['cos(x)', '−cos(x)', '−sin(x)', 'tan(x)'], c: 0, d: 2, uo: ['Klopt: de afgeleide van sin(x) is cos(x).', 'Nee, het teken klopt niet.', 'Nee, dat is de vorm van de afgeleide van cos.', 'Nee, dat is een andere functie.'], uh: 'De afgeleide van sin(x) is cos(x).' },
+      { v: 'Wat is de afgeleide van f(x) = ln(x)?', o: ['1/x', 'ln(x)', 'x', 'eˣ'], c: 0, d: 2, uo: ['Klopt: de afgeleide van ln(x) is 1/x.', 'Nee, dat is de functie zelf.', 'Nee, dat klopt niet.', 'Nee, dat is een andere functie.'], uh: 'De afgeleide van ln(x) is 1/x.' },
+      { v: 'Wat is de afgeleide van f(x) = x²?', o: ['2x', 'x', '2', 'x³'], c: 0, d: 2, uo: ['Klopt: n·xⁿ⁻¹ geeft 2x.', 'Nee, de exponent komt ervoor.', 'Nee, de x blijft staan.', 'Nee, dat zou integreren zijn.'], uh: 'De afgeleide van x² is 2x.' },
+      { v: 'Wat is de afgeleide van f(x) = x³?', o: ['3x²', 'x²', '3x', '3x³'], c: 0, d: 2, uo: ['Klopt: 3·x² volgens n·xⁿ⁻¹.', 'Nee, de factor 3 hoort ervoor.', 'Nee, de exponent wordt 2.', 'Nee, de exponent daalt met 1.'], uh: 'De afgeleide van x³ is 3x².' },
+      { v: 'Welke regel gebruik je voor de afgeleide van f(x) = x²·sin(x)?', o: ['de productregel', 'de kettingregel', 'geen regel', 'de wortelregel'], c: 0, d: 3, uo: ['Klopt: het is een product van twee functies.', 'Nee, er is geen samenstelling f(g(x)).', 'Nee, een regel is nodig.', 'Nee, die bestaat niet.'], uh: 'Product van functies: de productregel.' },
+      { v: 'Wat geldt als f\'(x) > 0 op een interval?', o: ['de functie stijgt daar', 'de functie daalt daar', 'de functie is constant', 'er ligt een minimum'], c: 0, d: 2, uo: ['Klopt: een positieve afgeleide betekent stijgen.', 'Nee, dalen hoort bij f\'(x) < 0.', 'Nee, constant hoort bij f\'(x) = 0.', 'Nee, een minimum is één punt.'], uh: 'f\'(x) > 0: de functie stijgt.' },
+      { v: 'Waar heeft een functie een extremum?', o: ['waar f\'(x) = 0 en het teken omslaat', 'waar f(x) = 0', 'waar f\'(x) het grootst is', 'waar de grafiek de y-as snijdt'], c: 0, d: 2, uo: ['Klopt: in een top of dal is de helling 0.', 'Nee, dat is een nulpunt van f.', 'Nee, dat is de steilste helling.', 'Nee, dat is het y-snijpunt.'], uh: 'Extremum: f\'(x) = 0 met tekenwissel.' },
+      { v: 'Wat is de afgeleide van f(x) = cos(x)?', o: ['−sin(x)', 'sin(x)', 'cos(x)', '−cos(x)'], c: 0, d: 2, uo: ['Klopt: de afgeleide van cos(x) is −sin(x).', 'Nee, let op het minteken.', 'Nee, dat is de functie zelf.', 'Nee, dat klopt niet.'], uh: 'De afgeleide van cos(x) is −sin(x).' },
+      { v: 'Wat is de afgeleide van f(x) = eˣ?', o: ['eˣ', 'x·eˣ⁻¹', '1', 'ln(x)'], c: 0, d: 2, uo: ['Klopt: eˣ is zijn eigen afgeleide.', 'Nee, dat is de machtsregel.', 'Nee, de afgeleide is niet constant.', 'Nee, dat is de omgekeerde functie.'], uh: 'De afgeleide van eˣ is eˣ.' },
+    ]),
+
+  V('E', 'Meetkunde',
+    `In de analytische meetkunde reken je met <strong>vectoren</strong>, hun <strong>norm</strong> en het <strong>inproduct</strong>. Je herkent <strong>loodrechte</strong> lijnen (rc₁·rc₂ = −1), stelt de <strong>cirkelvergelijking</strong> (x − a)² + (y − b)² = r² op, en bepaalt het <strong>middelpunt</strong> van een lijnstuk.`,
+    [
+      { h: '1. Vectoren', p: [
+        `De <strong>norm</strong> (grootte) van vector a⃗ is |a⃗| = √(a₁² + a₂²). Het <strong>inproduct</strong> a⃗·b⃗ is 0 bij <strong>loodrechte</strong> vectoren, negatief bij een stompe hoek. Vectoren tel je grafisch op met de <strong>kop-op-staart</strong>-methode.`] },
+      { h: '2. Lijnen en cirkels', p: [
+        `Twee lijnen staan <strong>loodrecht</strong> als rc₁·rc₂ = −1; de loodlijn op rc = 3 heeft rc = −1/3. De <strong>cirkelvergelijking</strong> is (x − a)² + (y − b)² = r². Het <strong>middelpunt</strong> van het lijnstuk van A(x₁, y₁) naar B(x₂, y₂) is ((x₁ + x₂)/2, (y₁ + y₂)/2). Voor y = sin(bx) geldt: een grotere b geeft een kortere periode.`] },
+    ],
+    [
+      { t: 'Vector', d: 'een grootheid met een grootte en een richting', k: 'grootte en richting', fout: ['Norm'] },
+      { t: 'Norm', d: '|a⃗| = √(a₁² + a₂²): de lengte van een vector', k: 'lengte van een vector', fout: ['Inproduct'] },
+      { t: 'Inproduct', d: 'a₁b₁ + a₂b₂; 0 bij loodrecht, negatief bij een stompe hoek', k: 'som van producten', fout: ['Norm'] },
+      { t: 'Cirkelvergelijking', d: 'de standaardvorm (x − a)² + (y − b)² = r²', k: '(x − a)² + (y − b)² = r²', fout: ['Middelpunt'] },
+      { t: 'Middelpunt', d: 'van A naar B: ((x₁ + x₂)/2, (y₁ + y₂)/2)', k: 'gemiddelde van de coördinaten', fout: ['Cirkelvergelijking'] },
+      { t: 'Sinusregel', d: 'a/sin A = b/sin B, bij twee hoeken en een zijde', k: 'a/sin A = b/sin B', fout: ['Cosinusregel'] },
+      { t: 'Cosinusregel', d: 'de regel bij drie zijden of twee zijden met de ingesloten hoek', k: 'drie zijden of ingesloten hoek', fout: ['Sinusregel'] },
+      { t: 'Loodrecht', d: 'twee lijnen met rc₁·rc₂ = −1 of vectoren met inproduct 0', k: 'rc₁·rc₂ = −1', fout: ['Periode'] },
+      { t: 'Periode', d: 'de lengte 2π/b waarna y = sin(bx) zich herhaalt', k: '2π/b', fout: ['Loodrecht'] },
+      { t: 'Kop-op-staart-methode', d: 'het grafisch optellen van vectoren door ze achter elkaar te leggen', k: 'vectoren achter elkaar', fout: ['Inproduct'] },
+    ],
+    [
+      { v: 'Wat geeft de grootte van een vector a⃗ = (a₁, a₂) aan?', o: ['|a⃗| = √(a₁² + a₂²), de lengte', 'a₁ + a₂', 'a₁ · a₂', 'a₁ − a₂'], c: 0, d: 3, uo: ['Klopt: de norm is de Euclidische lengte.', 'Nee, dat is de som van de kentallen.', 'Nee, dat is een product.', 'Nee, dat is een verschil.'], uh: 'Norm: |a⃗| = √(a₁² + a₂²).' },
+      { v: 'Twee vectoren zijn loodrecht. Wat geldt voor hun inproduct?', o: ['het inproduct is 0', 'het inproduct is 1', 'het inproduct is negatief', 'het inproduct is maximaal'], c: 0, d: 2, uo: ['Klopt: loodrecht betekent inproduct 0.', 'Nee, dat klopt niet.', 'Nee, dat hoort bij een stompe hoek.', 'Nee, dat is bij dezelfde richting.'], uh: 'Loodrechte vectoren: inproduct 0.' },
+      { v: 'Lijn l heeft rc = 3. Wat is de helling van een loodrechte lijn op l?', o: ['−1/3', '3', '1/3', '−3'], c: 0, d: 3, uo: ['Klopt: rc₁·rc₂ = −1, dus −1/3.', 'Nee, dat is dezelfde helling.', 'Nee, dat product is niet −1.', 'Nee, dat product is niet −1.'], uh: 'Loodrecht: het product van de rc\'s is −1.' },
+      { v: 'Wat is het effect van parameter b in y = sin(bx)?', o: ['een grotere b geeft een kortere periode', 'een grotere b geeft een grotere amplitude', 'b verschuift de grafiek omhoog', 'b heeft geen effect'], c: 0, d: 3, uo: ['Klopt: periode = 2π/b, dus grotere b is kortere periode.', 'Nee, de amplitude staat los van b.', 'Nee, dat doet een constante term.', 'Nee, b bepaalt de periode.'], uh: 'In sin(bx): grotere b, kortere periode (2π/b).' },
+      { v: 'Hoe tel je twee vectoren grafisch op?', o: ['kop-op-staart: de staart van de tweede aan de kop van de eerste', 'je legt ze evenwijdig naast elkaar', 'je trekt ze van elkaar af', 'je telt alleen de lengtes op'], c: 0, d: 2, uo: ['Klopt: de som is de pijl van begin naar eind.', 'Nee, zo tel je niet op.', 'Nee, dat is aftrekken.', 'Nee, richting telt ook.'], uh: 'Vectoren optellen: kop-op-staart.' },
+      { v: 'Waar staat het ezelsbruggetje SOH-CAH-TOA voor?', o: ['sin = O/H, cos = A/H, tan = O/A', 'de zijden van een rechthoek', 'de oppervlakte van een driehoek', 'de omtrek van een cirkel'], c: 0, d: 2, uo: ['Klopt: de verhoudingen in een rechthoekige driehoek.', 'Nee, het gaat over hoeken.', 'Nee, niet over oppervlakte.', 'Nee, niet over omtrek.'], uh: 'SOH-CAH-TOA: sin=O/H, cos=A/H, tan=O/A.' },
+      { v: 'Hoe controleer je of punt P(3, 4) op de cirkel (x − 1)² + (y − 2)² = 9 ligt?', o: ['bereken (3 − 1)² + (4 − 2)² en vergelijk met 9', 'kijk of P het middelpunt is', 'bereken de rc van P', 'tel 3 en 4 op'], c: 0, d: 3, uo: ['Klopt: als de uitkomst 9 is, ligt P op de cirkel.', 'Nee, dat is het middelpunt.', 'Nee, dat is niet relevant.', 'Nee, dat zegt niets.'], uh: 'Punt op cirkel: vul in en vergelijk met r².' },
+      { v: 'Wat zegt een inproduct a⃗·b⃗ = −15 over de hoek tussen de vectoren?', o: ['de hoek is stomp (groter dan 90°)', 'de hoek is recht (90°)', 'de hoek is scherp (kleiner dan 90°)', 'de vectoren zijn gelijk'], c: 0, d: 3, uo: ['Klopt: een negatief inproduct hoort bij een stompe hoek.', 'Nee, dan zou het 0 zijn.', 'Nee, dan zou het positief zijn.', 'Nee, dat volgt er niet uit.'], uh: 'Negatief inproduct: stompe hoek.' },
+      { v: 'Wat is de standaardvorm van een cirkelvergelijking?', o: ['(x − a)² + (y − b)² = r²', 'y = a·x + b', 'a·x² + b·x + c = 0', 'x² + y² = x'], c: 0, d: 2, uo: ['Klopt: middelpunt (a, b) en straal r.', 'Nee, dat is een lijn.', 'Nee, dat is een kwadratische vergelijking.', 'Nee, dat is geen standaardvorm.'], uh: 'Cirkel: (x − a)² + (y − b)² = r².' },
+      { v: 'Hoe controleer je of twee lijnen loodrecht op elkaar staan?', o: ['rc₁ × rc₂ = −1', 'rc₁ = rc₂', 'rc₁ + rc₂ = 0', 'ze snijden de x-as'], c: 0, d: 3, uo: ['Klopt: bij loodrecht is het product van de rc\'s −1.', 'Nee, dan zijn ze evenwijdig.', 'Nee, dat betekent tegengesteld, niet loodrecht.', 'Nee, dat zegt niets.'], uh: 'Loodrecht: rc₁ × rc₂ = −1.' },
+      { v: 'Wat is het middelpunt van het lijnstuk van A(x₁, y₁) naar B(x₂, y₂)?', o: ['((x₁ + x₂)/2, (y₁ + y₂)/2)', '(x₁ · x₂, y₁ · y₂)', '(x₂ − x₁, y₂ − y₁)', '(x₁ + x₂, y₁ + y₂)'], c: 0, d: 3, uo: ['Klopt: het middelpunt is het gemiddelde van de coördinaten.', 'Nee, dat is een product.', 'Nee, dat is de verschilvector.', 'Nee, je moet nog delen door 2.'], uh: 'Middelpunt: het gemiddelde van de coördinaten.' },
+      { v: 'Wat is de norm van een vector?', o: ['de lengte van de vector', 'de richting van de vector', 'het inproduct met zichzelf', 'de hoek met de x-as'], c: 0, d: 2, uo: ['Klopt: de norm is de lengte.', 'Nee, dat is de richting.', 'Nee, dat is het kwadraat van de norm.', 'Nee, dat is de richtingshoek.'], uh: 'Norm: de lengte van een vector.' },
+    ]),
+];
