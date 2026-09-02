@@ -1663,9 +1663,9 @@ var VAKKEN = [
      "A6 Oorzaken en gevolgen",
      "A7 Feiten, meningen, standplaatsgebondenheid"
     ],
-    "nSv": 77,
+    "nSv": 31,
     "nOe": 12,
-    "nBeg": 13,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1691,9 +1691,9 @@ var VAKKEN = [
      "B9 Tijdvak 9",
      "B10 Tijdvak 10"
     ],
-    "nSv": 289,
+    "nSv": 31,
     "nOe": 29,
-    "nBeg": 64,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1709,9 +1709,9 @@ var VAKKEN = [
     "onderwerpen": [
      "C1 Thema's (schoolkeuze)"
     ],
-    "nSv": 56,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 12,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1729,9 +1729,9 @@ var VAKKEN = [
      "D1 Beginselen van de rechtsstaat",
      "D2 Parlementaire democratie in Nederland"
     ],
-    "nSv": 56,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 12,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1747,9 +1747,9 @@ var VAKKEN = [
     "onderwerpen": [
      "E1 Oriëntatie op studie en beroep"
     ],
-    "nSv": 54,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 12,
+    "nBeg": 10,
     "hasSam": true
    }
   ]
