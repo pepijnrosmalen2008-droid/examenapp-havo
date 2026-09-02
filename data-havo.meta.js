@@ -1792,9 +1792,9 @@ var VAKKEN = [
      "A1 Geografische benadering",
      "A2 Geografisch onderzoek"
     ],
-    "nSv": 54,
+    "nSv": 31,
     "nOe": 3,
-    "nBeg": 11,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1822,9 +1822,9 @@ var VAKKEN = [
      "B2 Samenhangen en verschillen in de wereld",
      "B3 Mondiale processen en lokale effecten"
     ],
-    "nSv": 89,
+    "nSv": 30,
     "nOe": 7,
-    "nBeg": 19,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1852,9 +1852,9 @@ var VAKKEN = [
      "C2 Samenhangen en verschillen op aarde",
      "C3 De aarde als natuurlijk systeem en lokale effecten"
     ],
-    "nSv": 82,
+    "nSv": 30,
     "nOe": 7,
-    "nBeg": 18,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1881,9 +1881,9 @@ var VAKKEN = [
      "D1 Gebiedskenmerken",
      "D2 Actuele vraagstukken"
     ],
-    "nSv": 66,
+    "nSv": 30,
     "nOe": 6,
-    "nBeg": 14,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1910,9 +1910,9 @@ var VAKKEN = [
      "E1 Nationale en regionale vraagstukken",
      "E2 Regionale en lokale vraagstukken"
     ],
-    "nSv": 57,
+    "nSv": 30,
     "nOe": 8,
-    "nBeg": 12,
+    "nBeg": 10,
     "hasSam": true
    }
   ]

@@ -54605,645 +54605,596 @@ var VAKKEN = [
      "A1 Geografische benadering",
      "A2 Geografisch onderzoek"
     ],
-    "sam": "<div class=\"sam-head\">A1 Geografische benadering</div><ul><li><strong>Geografische vraag</strong>: richt zich op ruimtelijke verschijnselen - Waar? Waarom daar? Welk patroon?</li><li><strong>Schaalniveaus</strong>: lokaal (buurt/wijk), regionaal (provincie), nationaal (land), mondiaal (wereld). Per niveau andere factoren relevant.</li><li><strong>Absolute vs. relatieve afstand</strong>: absoluut = km/meters; relatief = tijd, kosten, moeite.</li><li><strong>Ruimtelijk patroon</strong>: beschrijf verspreiding (dicht/dun, geconcentreerd/verspreid) vóór je verklaart.</li><li><strong>Thematische kaart</strong>: visualiseert één thema. Legenda altijd eerst lezen.</li></ul><div class=\"sam-head\">A2 Geografisch onderzoek</div><ul><li><strong>Broncombinatie</strong>: kaart + tabel + tekst geeft completer beeld; fouten worden zichtbaar.</li><li><strong>Oorzaak-gevolg</strong>: vanuit fysische (klimaat, reliëf, water) én menselijke factoren (economie, politiek, cultuur).</li><li><strong>Geografische analyse</strong>: 1. Beschrijf het patroon. 2. Verklaar vanuit factoren. 3. Beoordeel samenhangen.</li></ul><div class=\"sam-onthoud\">Geografische vraag = Waar + Waarom. Schaalniveaus: lokaal → mondiaal. Altijd legenda lezen. Beschrijf voor je verklaart. Combineer bronnen voor een volledig beeld.</div>",
+    "sam": "<div class=\"sam-intro\">Geografen stellen een <strong>geografische vraag</strong> over <strong>ruimtelijke patronen</strong>, kiezen een <strong>schaalniveau</strong> en werken met <strong>kaarten</strong> (thematisch, met een <strong>legenda</strong>). Ze onderscheiden <strong>absolute</strong> van <strong>relatieve afstand</strong> en combineren bronnen voor een betrouwbaar beeld.</div><div class=\"sam-head\">1. Vragen en schaal</div><p>Een <strong>geografische vraag</strong> gaat over ruimtelijke patronen en verschijnselen: waar, en waarom daar? Het <strong>schaalniveau</strong> is het ruimtelijke niveau van analyse (van lokaal tot mondiaal). <strong>Inzoomen</strong> geeft een groter schaalniveau met meer detail; <strong>uitzoomen</strong> een kleiner schaalniveau met een groter gebied.</p><div class=\"sam-head\">2. Kaarten en afstand</div><p>Een <strong>thematische kaart</strong> visualiseert één thema; de <strong>legenda</strong> verklaart de symbolen en kleuren. Een <strong>ruimtelijk patroon</strong> is de verspreiding van verschijnselen over een gebied. <strong>Absolute afstand</strong> is de werkelijke afstand in kilometers, <strong>relatieve afstand</strong> die in tijd, kosten of moeite. <strong>Broncombinatie</strong> geeft een completer en betrouwbaarder beeld.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Geografische vraag</div><div class=\"sam-definitie-body\">een vraag over ruimtelijke patronen en verschijnselen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Schaalniveau</div><div class=\"sam-definitie-body\">het ruimtelijke niveau van analyse, van lokaal tot mondiaal.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Absolute afstand</div><div class=\"sam-definitie-body\">de werkelijke afstand tussen twee plaatsen in kilometers.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Relatieve afstand</div><div class=\"sam-definitie-body\">de afstand uitgedrukt in tijd, kosten of moeite.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ruimtelijk patroon</div><div class=\"sam-definitie-body\">de verspreiding van verschijnselen over een gebied.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Thematische kaart</div><div class=\"sam-definitie-body\">een kaart die één thema visualiseert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Legenda</div><div class=\"sam-definitie-body\">de verklaring van de symbolen en kleuren op een kaart.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Broncombinatie</div><div class=\"sam-definitie-body\">meerdere bronnen combineren voor een completer en betrouwbaarder beeld.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Inzoomen</div><div class=\"sam-definitie-body\">naar een groter schaalniveau gaan, met meer detail.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Topografische kaart</div><div class=\"sam-definitie-body\">een kaart die het landschap toont: hoogte, wegen en plaatsen.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Geografische vraag»</b> is over ruimtelijke patronen, terwijl <b>«Ruimtelijk patroon»</b> verspreiding over een gebied is. <b>«Schaalniveau»</b> is ruimtelijk niveau van analyse, terwijl <b>«Absolute afstand»</b> werkelijke afstand in km is. <b>«Absolute afstand»</b> is werkelijke afstand in km, terwijl <b>«Relatieve afstand»</b> afstand in tijd of kosten is. <b>«Thematische kaart»</b> is één thema, terwijl <b>«Topografische kaart»</b> het landschap is.</div>",
     "sv": [
      {
       "v": "Wat is een geografische vraag?",
       "o": [
-       "Vraag over ruimtelijke patronen en verschijnselen",
-       "Vraag over historische tijdvakken",
-       "Vraag over economische groeicijfers",
-       "Vraag over culturele gebruiken"
+       "een vraag over ruimtelijke patronen en verschijnselen",
+       "een vraag over jaartallen",
+       "een rekenopgave",
+       "een taalvraag"
       ],
       "c": 0,
-      "u": "Een geografische vraag richt zich op ruimtelijke verschijnselen: Waar? Waarom daar? Welk patroon? Geografen analyseren ligging, spreiding, samenhang en verandering."
+      "d": 2,
+      "u": "Geografie draait om ruimtelijke patronen.",
+      "uo": [
+       "Klopt: geografie draait om ruimtelijke patronen.",
+       "Nee, dat is geschiedenis.",
+       "Nee, dat is wiskunde.",
+       "Nee, dat is taal."
+      ],
+      "uh": "Geografische vraag: over ruimtelijke patronen."
      },
      {
       "v": "Wat is een schaalniveau?",
       "o": [
-       "Ruimtelijk niveau van analyse",
-       "De grootte van een kaart",
-       "Afstand tussen twee gebieden",
-       "De hoogte van een bergketen"
+       "de kleur van een kaart",
+       "het ruimtelijke niveau van analyse, van lokaal tot mondiaal",
+       "de titel van een kaart",
+       "de legenda"
       ],
-      "c": 0,
-      "u": "Schaalniveaus: lokaal (buurt/stad), regionaal (provincie), nationaal (land) en mondiaal (wereld). Per niveau zijn andere factoren relevant."
+      "c": 1,
+      "d": 2,
+      "u": "Je bekijkt iets op een bepaald niveau.",
+      "uo": [
+       "Nee, kleur is iets anders.",
+       "Klopt: je bekijkt iets op een bepaald niveau.",
+       "Nee, dat is de kop.",
+       "Nee, dat is de verklaring."
+      ],
+      "uh": "Schaalniveau: ruimtelijk niveau van analyse."
      },
      {
       "v": "Wat is absolute afstand?",
       "o": [
-       "Werkelijke afstand in kilometers",
-       "Reistijd tussen twee locaties",
-       "Transportkosten tussen twee plaatsen",
-       "Hoe ver iets aanvoelt"
+       "de afstand in kosten",
+       "de afstand in reistijd",
+       "de werkelijke afstand in kilometers",
+       "de afstand in moeite"
       ],
-      "c": 0,
-      "u": "Absolute afstand = afstand in km of meters. Relatieve afstand = afstand in tijd, kosten of moeite. Relatieve afstand bepaalt vaker ruimtelijk gedrag."
+      "c": 2,
+      "d": 2,
+      "u": "Absoluut is in kilometers.",
+      "uo": [
+       "Nee, dat is relatief.",
+       "Nee, dat is relatief.",
+       "Klopt: absoluut is in kilometers.",
+       "Nee, dat is relatief."
+      ],
+      "uh": "Absolute afstand: werkelijke afstand in km."
      },
      {
       "v": "Waarom is broncombinatie belangrijk?",
       "o": [
-       "Geeft een completer en betrouwbaarder beeld",
-       "Maakt geografische analyse sneller",
-       "Vereist minder vakkennis",
-       "Levert altijd exactere cijfers"
+       "het is verplicht",
+       "het kost minder tijd",
+       "het maakt de kaart mooier",
+       "het geeft een completer en betrouwbaarder beeld"
       ],
-      "c": 0,
-      "u": "Eén bron is nooit volledig. Door meerdere bronnen te combineren (kaart + tabel + tekst) kun je patronen beter verklaren en fouten signaleren."
+      "c": 3,
+      "d": 3,
+      "u": "Meer bronnen vullen elkaar aan en controleren elkaar.",
+      "uo": [
+       "Nee, er is een inhoudelijke reden.",
+       "Nee, het kost juist meer tijd.",
+       "Nee, dat is niet de reden.",
+       "Klopt: meer bronnen vullen elkaar aan en controleren elkaar."
+      ],
+      "uh": "Broncombinatie: completer en betrouwbaarder beeld."
      },
      {
       "v": "Wat is een ruimtelijk patroon?",
       "o": [
-       "Verspreiding van verschijnselen over een gebied",
-       "Tijdsvolgorde van geografische gebeurtenissen",
-       "Inwoneraantal per land",
-       "Economische groei per regio"
+       "de verspreiding van verschijnselen over een gebied",
+       "de titel van een kaart",
+       "de reistijd tussen steden",
+       "een enkel jaartal"
       ],
       "c": 0,
-      "u": "Een ruimtelijk patroon beschrijft hoe verschijnselen zijn verdeeld: dicht/dun, geconcentreerd/verspreid, langs kust of rivier. Altijd beschrijven vóór verklaren."
+      "d": 2,
+      "u": "Het patroon is de verspreiding.",
+      "uo": [
+       "Klopt: het patroon is de verspreiding.",
+       "Nee, dat is de kop.",
+       "Nee, dat is relatieve afstand.",
+       "Nee, dat is geschiedenis."
+      ],
+      "uh": "Ruimtelijk patroon: verspreiding over een gebied."
      },
      {
       "v": "Wat is een thematische kaart?",
       "o": [
-       "Kaart die één thema visualiseert",
-       "Kaart met alle geografische details",
-       "Kaart met wegen en steden",
-       "Kaart met uitsluitend politieke grenzen"
+       "een kaart die het hele landschap toont",
+       "een kaart die één thema visualiseert",
+       "een kaart zonder legenda",
+       "een luchtfoto"
       ],
-      "c": 0,
-      "u": "Thematische kaart = één onderwerp visueel weergegeven (bevolkingsdichtheid, temperatuur, armoede). De legenda is cruciaal. Lees die altijd eerst."
+      "c": 1,
+      "d": 2,
+      "u": "Een thematische kaart toont één thema.",
+      "uo": [
+       "Nee, dat is topografisch.",
+       "Klopt: een thematische kaart toont één thema.",
+       "Nee, een legenda hoort erbij.",
+       "Nee, dat is een foto."
+      ],
+      "uh": "Thematische kaart: één thema."
      },
      {
       "v": "Wat betekent inzoomen op een kaart?",
       "o": [
-       "Groter schaalniveau, meer detail zichtbaar",
-       "Kleiner schaalniveau, minder detail",
-       "Meer landen tegelijk zichtbaar",
-       "Minder kleuren in de legenda"
+       "de kaart draaien",
+       "een kleiner schaalniveau, groter gebied",
+       "een groter schaalniveau, meer detail zichtbaar",
+       "de legenda weglaten"
       ],
-      "c": 0,
-      "u": "Inzoomen = groter schaalniveau (bijv. van 1:1.000.000 naar 1:10.000). Je ziet meer detail van een kleiner gebied."
+      "c": 2,
+      "d": 3,
+      "u": "Inzoomen toont een kleiner gebied met meer detail.",
+      "uo": [
+       "Nee, dat is iets anders.",
+       "Nee, dat is uitzoomen.",
+       "Klopt: inzoomen toont een kleiner gebied met meer detail.",
+       "Nee, dat heeft er niets mee te maken."
+      ],
+      "uh": "Inzoomen: groter schaalniveau, meer detail."
      },
      {
       "v": "Wat betekent uitzoomen op een kaart?",
       "o": [
-       "Kleiner schaalniveau, groter gebied zichtbaar",
-       "Meer detail van één locatie",
-       "Hogere precisie in afstandsmeting",
-       "Meer symbolen per vierkante centimeter"
+       "de titel wijzigen",
+       "een groter schaalniveau, meer detail",
+       "de kaart inkleuren",
+       "een kleiner schaalniveau, groter gebied zichtbaar"
       ],
-      "c": 0,
-      "u": "Uitzoomen = kleiner schaalniveau. Je ziet een groter gebied maar minder detail. Handig voor mondiale of regionale patronen."
+      "c": 3,
+      "d": 3,
+      "u": "Uitzoomen toont een groter gebied met minder detail.",
+      "uo": [
+       "Nee, dat heeft er niets mee te maken.",
+       "Nee, dat is inzoomen.",
+       "Nee, dat is iets anders.",
+       "Klopt: uitzoomen toont een groter gebied met minder detail."
+      ],
+      "uh": "Uitzoomen: kleiner schaalniveau, groter gebied."
      },
      {
       "v": "Wat is een legenda op een kaart?",
       "o": [
-       "Verklaring van symbolen en kleuren",
-       "De titel van de kaart",
-       "De schaalindicator op de kaart",
-       "Het coördinatensysteem van de kaart"
+       "de verklaring van de symbolen en kleuren",
+       "de schaal van de kaart",
+       "de titel van de kaart",
+       "de reistijd"
       ],
       "c": 0,
-      "u": "De legenda verklaart symbolen en kleuren. Altijd eerst lezen vóór je de kaart interpreteert. Zonder legenda kun je een thematische kaart niet begrijpen."
-     },
-     {
-      "v": "Wat is een geografische analyse?",
-      "o": [
-       "Ruimtelijke patronen verklaren en beschrijven",
-       "Historische feiten in volgorde zetten",
-       "Economische groeicijfers berekenen",
-       "Teksten samenvatten in kernzinnen"
+      "d": 2,
+      "u": "De legenda legt de tekens uit.",
+      "uo": [
+       "Klopt: de legenda legt de tekens uit.",
+       "Nee, dat is de schaal.",
+       "Nee, dat is de kop.",
+       "Nee, dat is afstand."
       ],
-      "c": 0,
-      "u": "Geografische analyse: 1. Beschrijf het patroon. 2. Verklaar vanuit fysische en menselijke factoren. 3. Beoordeel samenhangen. 4. Gebruik meerdere bronnen."
+      "uh": "Legenda: verklaring van symbolen en kleuren."
      },
      {
-      "v": "Wat betekent «Thematische kaart»?",
+      "v": "Wat is relatieve afstand?",
       "o": [
-       "opbouw en verandering van steden",
-       "een kaart die één onderwerp toont",
-       "het beperken van de oorzaak van klimaatverandering",
-       "snelle verstedelijking, favela's"
+       "de werkelijke afstand in kilometers",
+       "de afstand in tijd, kosten of moeite",
+       "de hoogte boven zeeniveau",
+       "de schaal van de kaart"
       ],
       "c": 1,
-      "u": "«Thematische kaart» betekent: een kaart die één onderwerp toont.",
-      "d": 1
+      "d": 3,
+      "u": "Relatief is in tijd, kosten of moeite.",
+      "uo": [
+       "Nee, dat is absoluut.",
+       "Klopt: relatief is in tijd, kosten of moeite.",
+       "Nee, dat is hoogte.",
+       "Nee, dat is schaal."
+      ],
+      "uh": "Relatieve afstand: in tijd, kosten of moeite."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een kaart die één onderwerp toont\"?",
+      "v": "Wat toont een topografische kaart vooral?",
       "o": [
-       "Urbanisatie",
-       "Verwering",
-       "HDI",
-       "Thematische kaart"
+       "alleen de legenda",
+       "de verspreiding van één thema",
+       "het landschap: hoogte, wegen en plaatsen",
+       "alleen de reistijd"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Topografie toont het landschap.",
+      "uo": [
+       "Nee, dat is een onderdeel.",
+       "Nee, dat is thematisch.",
+       "Klopt: topografie toont het landschap.",
+       "Nee, dat is relatieve afstand."
+      ],
+      "uh": "Topografische kaart: het landschap."
+     },
+     {
+      "v": "Je bekijkt een probleem lokaal, nationaal of mondiaal. Welk begrip past hierbij?",
+      "o": [
+       "Topografische kaart",
+       "Ruimtelijk patroon",
+       "Legenda",
+       "Schaalniveau"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Thematische kaart»: een kaart die één onderwerp toont.",
-      "d": 2
+      "d": 1,
+      "u": "Je bekijkt een probleem lokaal, nationaal of mondiaal. Dat past bij Schaalniveau: ruimtelijk niveau van analyse.",
+      "uo": [
+       "Nee, dat hoort bij Topografische kaart: het landschap.",
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied.",
+       "Nee, dat hoort bij Legenda: verklaring van symbolen.",
+       "Klopt: ruimtelijk niveau van analyse."
+      ],
+      "uh": "Schaalniveau: ruimtelijk niveau van analyse."
      },
      {
-      "v": "Welke term past bij: \"een kaart die één onderwerp toont\"?",
+      "v": "Je gebruikt kaart, tabel en tekst samen voor een beter beeld. Om welk begrip gaat het?",
+      "o": [
+       "Broncombinatie",
+       "Thematische kaart",
+       "Relatieve afstand",
+       "Topografische kaart"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Je gebruikt kaart, tabel en tekst samen voor een beter beeld. Dat past bij Broncombinatie: bronnen combineren.",
+      "uo": [
+       "Klopt: bronnen combineren.",
+       "Nee, dat hoort bij Thematische kaart: één thema.",
+       "Nee, dat hoort bij Relatieve afstand: afstand in tijd of kosten.",
+       "Nee, dat hoort bij Topografische kaart: het landschap."
+      ],
+      "uh": "Broncombinatie: bronnen combineren."
+     },
+     {
+      "v": "Meerdere bronnen combineren. Welk begrip herken je hier?",
       "o": [
        "Thematische kaart",
        "Broncombinatie",
-       "Geografische vraag",
-       "Schaalniveau"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Thematische kaart»: een kaart die één onderwerp toont.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Thematische kaart» in?",
-      "o": [
-       "de afstand gemeten in reistijd of kosten",
-       "thematische kaart, ruimtelijk patroon",
-       "een niet-willekeurige verdeling over de ruimte",
-       "een kaart die één onderwerp toont"
-      ],
-      "c": 3,
-      "u": "«Thematische kaart» betekent: een kaart die één onderwerp toont.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Schaal»?",
-      "o": [
-       "een economisch afhankelijke randregio",
-       "economisch, cultureel, politiek, demografisch",
-       "de verhouding tussen kaart en werkelijkheid",
-       "materiaal waaruit je informatie haalt"
-      ],
-      "c": 2,
-      "u": "«Schaal» betekent: de verhouding tussen kaart en werkelijkheid.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de verhouding tussen kaart en werkelijkheid\"?",
-      "o": [
-       "Bevolkingsdichtheid",
-       "Bron",
-       "Schaal",
-       "Economisch"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Schaal»: de verhouding tussen kaart en werkelijkheid.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de verhouding tussen kaart en werkelijkheid\"?",
-      "o": [
-       "Schaal",
-       "Kaarten",
-       "Geografische vraag",
-       "Relatieve afstand"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Schaal»: de verhouding tussen kaart en werkelijkheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Schaal» in?",
-      "o": [
-       "de verhouding tussen kaart en werkelijkheid",
-       "waar, waarom dáár, en met welk gevolg?",
-       "de afstand gemeten in kilometers",
-       "een kaart die één onderwerp toont"
-      ],
-      "c": 0,
-      "u": "«Schaal» betekent: de verhouding tussen kaart en werkelijkheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Schaalniveau»?",
-      "o": [
-       "een arme, ongeplande stadswijk",
-       "de manier waarop een samenleving wordt bestuurd en beslissingen neemt",
-       "een reden om ergens weg te trekken",
-       "lokaal, regionaal, nationaal of mondiaal"
-      ],
-      "c": 3,
-      "u": "«Schaalniveau» betekent: lokaal, regionaal, nationaal of mondiaal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"lokaal, regionaal, nationaal of mondiaal\"?",
-      "o": [
-       "Kaarten",
-       "Sedimentgesteente",
-       "Adaptatie",
-       "Schaalniveau"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Schaalniveau»: lokaal, regionaal, nationaal of mondiaal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"lokaal, regionaal, nationaal of mondiaal\"?",
-      "o": [
-       "Ruimtelijk patroon",
-       "Schaalniveau",
-       "Afstand",
-       "Thematische kaart"
+       "Relatieve afstand",
+       "Topografische kaart"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Schaalniveau»: lokaal, regionaal, nationaal of mondiaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Schaalniveau» in?",
-      "o": [
-       "lokaal, regionaal, nationaal of mondiaal",
-       "de afstand gemeten in kilometers",
-       "absoluut (km) vs. relatief (tijd/kosten)",
-       "een niet-willekeurige verdeling over de ruimte"
+      "d": 1,
+      "u": "Meerdere bronnen combineren. Dat past bij Broncombinatie: bronnen combineren.",
+      "uo": [
+       "Nee, dat hoort bij Thematische kaart: één thema.",
+       "Klopt: bronnen combineren.",
+       "Nee, dat hoort bij Relatieve afstand: afstand in tijd of kosten.",
+       "Nee, dat hoort bij Topografische kaart: het landschap."
       ],
-      "c": 0,
-      "u": "«Schaalniveau» betekent: lokaal, regionaal, nationaal of mondiaal.",
-      "d": 3
+      "uh": "Broncombinatie: bronnen combineren."
      },
      {
-      "v": "Wat betekent «Ruimtelijk patroon»?",
-      "o": [
-       "het vasthouden van warmte door broeikasgassen",
-       "de verhouding tussen kaart en werkelijkheid",
-       "het stedelijke kerngebied van Nederland",
-       "een niet-willekeurige verdeling over de ruimte"
-      ],
-      "c": 3,
-      "u": "«Ruimtelijk patroon» betekent: een niet-willekeurige verdeling over de ruimte.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een niet-willekeurige verdeling over de ruimte\"?",
+      "v": "Naar meer detail toe gaan. Wat is hier aan de hand?",
       "o": [
        "Ruimtelijk patroon",
-       "Dimensies",
-       "Bevolking",
-       "Platentektoniek"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ruimtelijk patroon»: een niet-willekeurige verdeling over de ruimte.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een niet-willekeurige verdeling over de ruimte\"?",
-      "o": [
-       "Ruimtelijk patroon",
-       "Kaarten",
-       "Relatieve afstand",
+       "Geografische vraag",
+       "Inzoomen",
        "Broncombinatie"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ruimtelijk patroon»: een niet-willekeurige verdeling over de ruimte.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ruimtelijk patroon» in?",
-      "o": [
-       "absoluut (km) vs. relatief (tijd/kosten)",
-       "een niet-willekeurige verdeling over de ruimte",
-       "waar, waarom dáár, en met welk gevolg?",
-       "de afstand gemeten in kilometers"
+      "c": 2,
+      "d": 1,
+      "u": "Naar meer detail toe gaan. Dat past bij Inzoomen: groter schaalniveau, meer detail.",
+      "uo": [
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied.",
+       "Nee, dat hoort bij Geografische vraag: over ruimtelijke patronen.",
+       "Klopt: groter schaalniveau, meer detail.",
+       "Nee, dat hoort bij Broncombinatie: bronnen combineren."
       ],
-      "c": 1,
-      "u": "«Ruimtelijk patroon» betekent: een niet-willekeurige verdeling over de ruimte.",
-      "d": 3
+      "uh": "Inzoomen: groter schaalniveau, meer detail."
      },
      {
-      "v": "Wat betekent «Bron»?",
+      "v": "Je gaat naar een groter schaalniveau met meer detail. Welk begrip past hierbij?",
       "o": [
-       "hoe water, wind en ijs het land slijten",
-       "materiaal waaruit je informatie haalt",
-       "een uitgangsmateriaal voor productie",
-       "een economisch dominante regio"
-      ],
-      "c": 1,
-      "u": "«Bron» betekent: materiaal waaruit je informatie haalt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"materiaal waaruit je informatie haalt\"?",
-      "o": [
-       "Ruimtelijk patroon",
-       "Bron",
-       "Monocultuur",
-       "Endogeen vs. exogeen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Bron»: materiaal waaruit je informatie haalt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"materiaal waaruit je informatie haalt\"?",
-      "o": [
-       "Ruimtelijk patroon",
-       "Afstand",
+       "Broncombinatie",
        "Geografische vraag",
-       "Bron"
+       "Ruimtelijk patroon",
+       "Inzoomen"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Bron»: materiaal waaruit je informatie haalt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Bron» in?",
-      "o": [
-       "een niet-willekeurige verdeling over de ruimte",
-       "de verhouding tussen kaart en werkelijkheid",
-       "de afstand gemeten in reistijd of kosten",
-       "materiaal waaruit je informatie haalt"
+      "d": 1,
+      "u": "Je gaat naar een groter schaalniveau met meer detail. Dat past bij Inzoomen: groter schaalniveau, meer detail.",
+      "uo": [
+       "Nee, dat hoort bij Broncombinatie: bronnen combineren.",
+       "Nee, dat hoort bij Geografische vraag: over ruimtelijke patronen.",
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied.",
+       "Klopt: groter schaalniveau, meer detail."
       ],
-      "c": 3,
-      "u": "«Bron» betekent: materiaal waaruit je informatie haalt.",
-      "d": 3
+      "uh": "Inzoomen: groter schaalniveau, meer detail."
      },
      {
-      "v": "Wat betekent «Absolute afstand»?",
+      "v": "De verklaring van symbolen en kleuren. Om welk begrip gaat het?",
       "o": [
-       "een economisch dominante regio",
-       "de afstand gemeten in kilometers",
-       "een reden om ergens naartoe te trekken",
-       "de bewuste inrichting van de ruimte"
+       "Legenda",
+       "Thematische kaart",
+       "Absolute afstand",
+       "Geografische vraag"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De verklaring van symbolen en kleuren. Dat past bij Legenda: verklaring van symbolen.",
+      "uo": [
+       "Klopt: verklaring van symbolen.",
+       "Nee, dat hoort bij Thematische kaart: één thema.",
+       "Nee, dat hoort bij Absolute afstand: werkelijke afstand in km.",
+       "Nee, dat hoort bij Geografische vraag: over ruimtelijke patronen."
+      ],
+      "uh": "Legenda: verklaring van symbolen."
+     },
+     {
+      "v": "Een kaart van één thema. Welk begrip herken je hier?",
+      "o": [
+       "Legenda",
+       "Thematische kaart",
+       "Schaalniveau",
+       "Broncombinatie"
       ],
       "c": 1,
-      "u": "«Absolute afstand» betekent: de afstand gemeten in kilometers.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de afstand gemeten in kilometers\"?",
-      "o": [
-       "Bevolkingsdichtheid",
-       "Grondstof",
-       "Centrum–periferie",
-       "Absolute afstand"
+      "d": 1,
+      "u": "Een kaart van één thema. Dat past bij Thematische kaart: één thema.",
+      "uo": [
+       "Nee, dat hoort bij Legenda: verklaring van symbolen.",
+       "Klopt: één thema.",
+       "Nee, dat hoort bij Schaalniveau: ruimtelijk niveau van analyse.",
+       "Nee, dat hoort bij Broncombinatie: bronnen combineren."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Absolute afstand»: de afstand gemeten in kilometers.",
-      "d": 2
+      "uh": "Thematische kaart: één thema."
      },
      {
-      "v": "Welke term past bij: \"de afstand gemeten in kilometers\"?",
+      "v": "Een kaart die alleen de bevolkingsdichtheid laat zien. Wat is hier aan de hand?",
       "o": [
        "Schaalniveau",
-       "Absolute afstand",
+       "Topografische kaart",
+       "Thematische kaart",
+       "Ruimtelijk patroon"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Een kaart die alleen de bevolkingsdichtheid laat zien. Dat past bij Thematische kaart: één thema.",
+      "uo": [
+       "Nee, dat hoort bij Schaalniveau: ruimtelijk niveau van analyse.",
+       "Nee, dat hoort bij Topografische kaart: het landschap.",
+       "Klopt: één thema.",
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied."
+      ],
+      "uh": "Thematische kaart: één thema."
+     },
+     {
+      "v": "De afstand in tijd, kosten of moeite. Welk begrip past hierbij?",
+      "o": [
+       "Inzoomen",
+       "Broncombinatie",
+       "Schaalniveau",
+       "Relatieve afstand"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De afstand in tijd, kosten of moeite. Dat past bij Relatieve afstand: afstand in tijd of kosten.",
+      "uo": [
+       "Nee, dat hoort bij Inzoomen: groter schaalniveau, meer detail.",
+       "Nee, dat hoort bij Broncombinatie: bronnen combineren.",
+       "Nee, dat hoort bij Schaalniveau: ruimtelijk niveau van analyse.",
+       "Klopt: afstand in tijd of kosten."
+      ],
+      "uh": "Relatieve afstand: afstand in tijd of kosten."
+     },
+     {
+      "v": "De reistijd of de kosten om ergens te komen. Om welk begrip gaat het?",
+      "o": [
        "Relatieve afstand",
+       "Absolute afstand",
+       "Schaalniveau",
+       "Legenda"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De reistijd of de kosten om ergens te komen. Dat past bij Relatieve afstand: afstand in tijd of kosten.",
+      "uo": [
+       "Klopt: afstand in tijd of kosten.",
+       "Nee, dat hoort bij Absolute afstand: werkelijke afstand in km.",
+       "Nee, dat hoort bij Schaalniveau: ruimtelijk niveau van analyse.",
+       "Nee, dat hoort bij Legenda: verklaring van symbolen."
+      ],
+      "uh": "Relatieve afstand: afstand in tijd of kosten."
+     },
+     {
+      "v": "De afstand in kilometers. Welk begrip herken je hier?",
+      "o": [
+       "Ruimtelijk patroon",
+       "Absolute afstand",
+       "Schaalniveau",
        "Geografische vraag"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Absolute afstand»: de afstand gemeten in kilometers.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Absolute afstand» in?",
-      "o": [
-       "waar, waarom dáár, en met welk gevolg?",
-       "lokaal, regionaal, nationaal of mondiaal",
-       "thematische kaart, ruimtelijk patroon",
-       "de afstand gemeten in kilometers"
+      "d": 1,
+      "u": "De afstand in kilometers. Dat past bij Absolute afstand: werkelijke afstand in km.",
+      "uo": [
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied.",
+       "Klopt: werkelijke afstand in km.",
+       "Nee, dat hoort bij Schaalniveau: ruimtelijk niveau van analyse.",
+       "Nee, dat hoort bij Geografische vraag: over ruimtelijke patronen."
       ],
-      "c": 3,
-      "u": "«Absolute afstand» betekent: de afstand gemeten in kilometers.",
-      "d": 3
+      "uh": "Absolute afstand: werkelijke afstand in km."
      },
      {
-      "v": "Wat betekent «Relatieve afstand»?",
+      "v": "Een kaart die het landschap toont. Wat is hier aan de hand?",
       "o": [
-       "de afstand gemeten in reistijd of kosten",
-       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
-       "een kaart die één onderwerp toont",
-       "de kans op een overstroming maal het gevolg"
-      ],
-      "c": 0,
-      "u": "«Relatieve afstand» betekent: de afstand gemeten in reistijd of kosten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de afstand gemeten in reistijd of kosten\"?",
-      "o": [
-       "Ontwikkelingsland",
-       "Urbanisatie",
-       "Relatieve afstand",
-       "Pullfactor"
+       "Geografische vraag",
+       "Thematische kaart",
+       "Topografische kaart",
+       "Ruimtelijk patroon"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Relatieve afstand»: de afstand gemeten in reistijd of kosten.",
-      "d": 2
+      "d": 2,
+      "u": "Een kaart die het landschap toont. Dat past bij Topografische kaart: het landschap.",
+      "uo": [
+       "Nee, dat hoort bij Geografische vraag: over ruimtelijke patronen.",
+       "Nee, dat hoort bij Thematische kaart: één thema.",
+       "Klopt: het landschap.",
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied."
+      ],
+      "uh": "Topografische kaart: het landschap."
      },
      {
-      "v": "Welke term past bij: \"de afstand gemeten in reistijd of kosten\"?",
+      "v": "Een vraag over ruimtelijke patronen. Welk begrip past hierbij?",
+      "o": [
+       "Thematische kaart",
+       "Ruimtelijk patroon",
+       "Topografische kaart",
+       "Geografische vraag"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een vraag over ruimtelijke patronen. Dat past bij Geografische vraag: over ruimtelijke patronen.",
+      "uo": [
+       "Nee, dat hoort bij Thematische kaart: één thema.",
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied.",
+       "Nee, dat hoort bij Topografische kaart: het landschap.",
+       "Klopt: over ruimtelijke patronen."
+      ],
+      "uh": "Geografische vraag: over ruimtelijke patronen."
+     },
+     {
+      "v": "Het kadertje dat de symbolen en kleuren op de kaart uitlegt. Om welk begrip gaat het?",
+      "o": [
+       "Legenda",
+       "Ruimtelijk patroon",
+       "Broncombinatie",
+       "Topografische kaart"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het kadertje dat de symbolen en kleuren op de kaart uitlegt. Dat past bij Legenda: verklaring van symbolen.",
+      "uo": [
+       "Klopt: verklaring van symbolen.",
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied.",
+       "Nee, dat hoort bij Broncombinatie: bronnen combineren.",
+       "Nee, dat hoort bij Topografische kaart: het landschap."
+      ],
+      "uh": "Legenda: verklaring van symbolen."
+     },
+     {
+      "v": "Het ruimtelijke niveau van analyse. Welk begrip herken je hier?",
+      "o": [
+       "Absolute afstand",
+       "Schaalniveau",
+       "Ruimtelijk patroon",
+       "Relatieve afstand"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het ruimtelijke niveau van analyse. Dat past bij Schaalniveau: ruimtelijk niveau van analyse.",
+      "uo": [
+       "Nee, dat hoort bij Absolute afstand: werkelijke afstand in km.",
+       "Klopt: ruimtelijk niveau van analyse.",
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied.",
+       "Nee, dat hoort bij Relatieve afstand: afstand in tijd of kosten."
+      ],
+      "uh": "Schaalniveau: ruimtelijk niveau van analyse."
+     },
+     {
+      "v": "De verspreiding van verschijnselen over een gebied. Wat is hier aan de hand?",
+      "o": [
+       "Topografische kaart",
+       "Geografische vraag",
+       "Ruimtelijk patroon",
+       "Thematische kaart"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De verspreiding van verschijnselen over een gebied. Dat past bij Ruimtelijk patroon: verspreiding over een gebied.",
+      "uo": [
+       "Nee, dat hoort bij Topografische kaart: het landschap.",
+       "Nee, dat hoort bij Geografische vraag: over ruimtelijke patronen.",
+       "Klopt: verspreiding over een gebied.",
+       "Nee, dat hoort bij Thematische kaart: één thema."
+      ],
+      "uh": "Ruimtelijk patroon: verspreiding over een gebied."
+     },
+     {
+      "v": "Je vraagt waar iets speelt en waarom juist daar. Welk begrip past hierbij?",
+      "o": [
+       "Broncombinatie",
+       "Topografische kaart",
+       "Schaalniveau",
+       "Geografische vraag"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Je vraagt waar iets speelt en waarom juist daar. Dat past bij Geografische vraag: over ruimtelijke patronen.",
+      "uo": [
+       "Nee, dat hoort bij Broncombinatie: bronnen combineren.",
+       "Nee, dat hoort bij Topografische kaart: het landschap.",
+       "Nee, dat hoort bij Schaalniveau: ruimtelijk niveau van analyse.",
+       "Klopt: over ruimtelijke patronen."
+      ],
+      "uh": "Geografische vraag: over ruimtelijke patronen."
+     },
+     {
+      "v": "Hoe de bevolking over een land verdeeld is. Om welk begrip gaat het?",
+      "o": [
+       "Ruimtelijk patroon",
+       "Geografische vraag",
+       "Relatieve afstand",
+       "Schaalniveau"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Hoe de bevolking over een land verdeeld is. Dat past bij Ruimtelijk patroon: verspreiding over een gebied.",
+      "uo": [
+       "Klopt: verspreiding over een gebied.",
+       "Nee, dat hoort bij Geografische vraag: over ruimtelijke patronen.",
+       "Nee, dat hoort bij Relatieve afstand: afstand in tijd of kosten.",
+       "Nee, dat hoort bij Schaalniveau: ruimtelijk niveau van analyse."
+      ],
+      "uh": "Ruimtelijk patroon: verspreiding over een gebied."
+     },
+     {
+      "v": "De werkelijke afstand van 100 kilometer tussen twee steden. Welk begrip herken je hier?",
       "o": [
        "Relatieve afstand",
        "Absolute afstand",
-       "Bron",
-       "Ruimtelijk patroon"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Relatieve afstand»: de afstand gemeten in reistijd of kosten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Relatieve afstand» in?",
-      "o": [
-       "de afstand gemeten in reistijd of kosten",
-       "een niet-willekeurige verdeling over de ruimte",
-       "thematische kaart, ruimtelijk patroon",
-       "materiaal waaruit je informatie haalt"
-      ],
-      "c": 0,
-      "u": "«Relatieve afstand» betekent: de afstand gemeten in reistijd of kosten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Geografische vraag»?",
-      "o": [
-       "lokaal, regionaal, nationaal of mondiaal",
-       "het verhuizen van mensen tussen gebieden",
-       "het aantal inwoners per vierkante kilometer",
-       "waar, waarom dáár, en met welk gevolg?"
-      ],
-      "c": 3,
-      "u": "«Geografische vraag» betekent: waar, waarom dáár, en met welk gevolg?.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"waar, waarom dáár, en met welk gevolg?\"?",
-      "o": [
-       "Geografische vraag",
-       "Sediment",
-       "Ontwikkelingsland",
-       "Weer"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Geografische vraag»: waar, waarom dáár, en met welk gevolg?.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"waar, waarom dáár, en met welk gevolg?\"?",
-      "o": [
-       "Thematische kaart",
-       "Relatieve afstand",
-       "Geografische vraag",
-       "Kaarten"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Geografische vraag»: waar, waarom dáár, en met welk gevolg?.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Geografische vraag» in?",
-      "o": [
-       "de verhouding tussen kaart en werkelijkheid",
-       "de afstand gemeten in kilometers",
-       "thematische kaart, ruimtelijk patroon",
-       "waar, waarom dáár, en met welk gevolg?"
-      ],
-      "c": 3,
-      "u": "«Geografische vraag» betekent: waar, waarom dáár, en met welk gevolg?.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Afstand»?",
-      "o": [
-       "absoluut (km) vs. relatief (tijd/kosten)",
-       "het verhuizen van mensen tussen gebieden",
-       "een arme, ongeplande stadswijk",
-       "de kans op een overstroming maal het gevolg"
-      ],
-      "c": 0,
-      "u": "«Afstand» betekent: absoluut (km) vs. relatief (tijd/kosten).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"absoluut (km) vs. relatief (tijd/kosten)\"?",
-      "o": [
-       "Ontwikkeling",
-       "Bevolkingsdichtheid",
-       "Afstand",
-       "Sedimentgesteente"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Afstand»: absoluut (km) vs. relatief (tijd/kosten).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"absoluut (km) vs. relatief (tijd/kosten)\"?",
-      "o": [
-       "Geografische vraag",
-       "Bron",
-       "Kaarten",
-       "Afstand"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Afstand»: absoluut (km) vs. relatief (tijd/kosten).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Afstand» in?",
-      "o": [
-       "absoluut (km) vs. relatief (tijd/kosten)",
-       "materiaal waaruit je informatie haalt",
-       "thematische kaart, ruimtelijk patroon",
-       "een kaart die één onderwerp toont"
-      ],
-      "c": 0,
-      "u": "«Afstand» betekent: absoluut (km) vs. relatief (tijd/kosten).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Broncombinatie»?",
-      "o": [
-       "de verdeling van de ruimte over functies",
-       "meerdere bronnen samen gebruiken",
-       "rijke kernlanden vs. arme periferie",
-       "het beperken van de oorzaak van klimaatverandering"
+       "Topografische kaart",
+       "Geografische vraag"
       ],
       "c": 1,
-      "u": "«Broncombinatie» betekent: meerdere bronnen samen gebruiken.",
-      "d": 1
+      "d": 3,
+      "u": "De werkelijke afstand van 100 kilometer tussen twee steden. Dat past bij Absolute afstand: werkelijke afstand in km.",
+      "uo": [
+       "Nee, dat hoort bij Relatieve afstand: afstand in tijd of kosten.",
+       "Klopt: werkelijke afstand in km.",
+       "Nee, dat hoort bij Topografische kaart: het landschap.",
+       "Nee, dat hoort bij Geografische vraag: over ruimtelijke patronen."
+      ],
+      "uh": "Absolute afstand: werkelijke afstand in km."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"meerdere bronnen samen gebruiken\"?",
+      "v": "Een kaart met hoogte, wegen en plaatsnamen. Wat is hier aan de hand?",
       "o": [
-       "Broncombinatie",
-       "Bevolkingsdichtheid",
-       "Ongelijkheid",
-       "Krimp"
+       "Ruimtelijk patroon",
+       "Schaalniveau",
+       "Topografische kaart",
+       "Legenda"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Broncombinatie»: meerdere bronnen samen gebruiken.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"meerdere bronnen samen gebruiken\"?",
-      "o": [
-       "Broncombinatie",
-       "Geografische vraag",
-       "Kaarten",
-       "Schaal"
+      "c": 2,
+      "d": 1,
+      "u": "Een kaart met hoogte, wegen en plaatsnamen. Dat past bij Topografische kaart: het landschap.",
+      "uo": [
+       "Nee, dat hoort bij Ruimtelijk patroon: verspreiding over een gebied.",
+       "Nee, dat hoort bij Schaalniveau: ruimtelijk niveau van analyse.",
+       "Klopt: het landschap.",
+       "Nee, dat hoort bij Legenda: verklaring van symbolen."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Broncombinatie»: meerdere bronnen samen gebruiken.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Broncombinatie» in?",
-      "o": [
-       "meerdere bronnen samen gebruiken",
-       "thematische kaart, ruimtelijk patroon",
-       "absoluut (km) vs. relatief (tijd/kosten)",
-       "een kaart die één onderwerp toont"
-      ],
-      "c": 0,
-      "u": "«Broncombinatie» betekent: meerdere bronnen samen gebruiken.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Kaarten»?",
-      "o": [
-       "krachten van binnenuit vs. van buitenaf",
-       "thematische kaart, ruimtelijk patroon",
-       "de verdeling van de ruimte over functies",
-       "het onder een andere plaat schuiven van een plaat"
-      ],
-      "c": 1,
-      "u": "«Kaarten» betekent: thematische kaart, ruimtelijk patroon.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"thematische kaart, ruimtelijk patroon\"?",
-      "o": [
-       "Kaarten",
-       "Informele sector",
-       "Thematische kaart",
-       "Mitigatie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Kaarten»: thematische kaart, ruimtelijk patroon.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"thematische kaart, ruimtelijk patroon\"?",
-      "o": [
-       "Kaarten",
-       "Bron",
-       "Thematische kaart",
-       "Absolute afstand"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Kaarten»: thematische kaart, ruimtelijk patroon.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Kaarten» in?",
-      "o": [
-       "thematische kaart, ruimtelijk patroon",
-       "meerdere bronnen samen gebruiken",
-       "de afstand gemeten in reistijd of kosten",
-       "de verhouding tussen kaart en werkelijkheid"
-      ],
-      "c": 0,
-      "u": "«Kaarten» betekent: thematische kaart, ruimtelijk patroon.",
-      "d": 3
+      "uh": "Topografische kaart: het landschap."
      }
     ],
     "oe": [
@@ -55280,48 +55231,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Thematische kaart",
-      "d": "een kaart die één onderwerp toont"
-     },
-     {
-      "t": "Schaal",
-      "d": "de verhouding tussen kaart en werkelijkheid"
+      "t": "Geografische vraag",
+      "d": "een vraag over ruimtelijke patronen en verschijnselen"
      },
      {
       "t": "Schaalniveau",
-      "d": "lokaal, regionaal, nationaal of mondiaal"
-     },
-     {
-      "t": "Ruimtelijk patroon",
-      "d": "een niet-willekeurige verdeling over de ruimte"
-     },
-     {
-      "t": "Bron",
-      "d": "materiaal waaruit je informatie haalt"
+      "d": "het ruimtelijke niveau van analyse, van lokaal tot mondiaal"
      },
      {
       "t": "Absolute afstand",
-      "d": "de afstand gemeten in kilometers"
+      "d": "de werkelijke afstand tussen twee plaatsen in kilometers"
      },
      {
       "t": "Relatieve afstand",
-      "d": "de afstand gemeten in reistijd of kosten"
+      "d": "de afstand uitgedrukt in tijd, kosten of moeite"
      },
      {
-      "t": "Geografische vraag",
-      "d": "waar, waarom dáár, en met welk gevolg?"
+      "t": "Ruimtelijk patroon",
+      "d": "de verspreiding van verschijnselen over een gebied"
      },
      {
-      "t": "Afstand",
-      "d": "absoluut (km) vs. relatief (tijd/kosten)"
+      "t": "Thematische kaart",
+      "d": "een kaart die één thema visualiseert"
+     },
+     {
+      "t": "Legenda",
+      "d": "de verklaring van de symbolen en kleuren op een kaart"
      },
      {
       "t": "Broncombinatie",
-      "d": "meerdere bronnen samen gebruiken"
+      "d": "meerdere bronnen combineren voor een completer en betrouwbaarder beeld"
      },
      {
-      "t": "Kaarten",
-      "d": "thematische kaart, ruimtelijk patroon"
+      "t": "Inzoomen",
+      "d": "naar een groter schaalniveau gaan, met meer detail"
+     },
+     {
+      "t": "Topografische kaart",
+      "d": "een kaart die het landschap toont: hoogte, wegen en plaatsen"
      }
     ]
    },
@@ -55350,1062 +55297,577 @@ var VAKKEN = [
      "B2 Samenhangen en verschillen in de wereld",
      "B3 Mondiale processen en lokale effecten"
     ],
-    "sam": "<div class=\"sam-head\">Globalisering en mondiale ongelijkheid</div><ul><li><strong>Globalisering</strong>: toenemende mondiale verwevenheid via handel, migratie, cultuur en communicatie. Drijvers: multinationals, internet, vrijhandel.</li><li><strong>Welvaart vs. welzijn</strong>: welvaart = materieel bezit (BBP). Welzijn = brede kwaliteit van leven (gezondheid, geluk, veiligheid).</li><li><strong>Centrum-periferie</strong>: rijke kern (VS, EU, Japan) domineert; arme periferie levert grondstoffen en goedkope arbeid.</li><li><strong>Multinational</strong>: bedrijf actief in meerdere landen; sleutelrol in globalisering (Shell, Apple, Nike).</li></ul><div class=\"sam-head\">Migratie en demografie</div><ul><li><strong>Push-pull model</strong>: push = redenen om te vertrekken (armoede, conflict, droogte); pull = redenen om ergens heen te gaan (werk, veiligheid, hogere lonen).</li><li><strong>Urbanisatie</strong>: toenemend percentage stedelingen. Oorzaak: werkgelegenheid en voorzieningen in steden.</li><li><strong>Demografische druk</strong>: grote bevolkingsgroei leidt tot tekort aan voedsel, water en woningen.</li><li><strong>Handelsbalans</strong>: export minus import. Positief = exportoverschot. Negatief = importoverschot.</li></ul><div class=\"sam-onthoud\">Globalisering = mondiale verwevenheid. Welvaart ≠ welzijn (BBP vs. HDI). Push/pull bij migratie. Centrum-periferie: rijke kern, arme rand. Urbanisatie = meer stedelingen.</div>",
+    "sam": "<div class=\"sam-intro\">Op wereldschaal bestudeer je <strong>globalisering</strong>, <strong>migratie</strong> (push- en pullfactoren) en de tegenstelling tussen <strong>centrum</strong> en <strong>periferie</strong>. Je onderscheidt <strong>welvaart</strong> van <strong>welzijn</strong> en volgt <strong>urbanisatie</strong>, <strong>multinationals</strong> en de <strong>handelsbalans</strong>.</div><div class=\"sam-head\">1. Globalisering en welvaart</div><p><strong>Globalisering</strong> is de mondiale verwevenheid van economie en cultuur, versterkt door handel, transport en communicatie. <strong>Welvaart</strong> is materieel (inkomen en bezit), <strong>welzijn</strong> gaat over de levenskwaliteit. Het <strong>centrum-periferiemodel</strong> zet een rijke kern tegenover een arme periferie.</p><div class=\"sam-head\">2. Migratie en economie</div><p><strong>Pushfactoren</strong> jagen mensen weg, <strong>pullfactoren</strong> trekken hen aan. <strong>Urbanisatie</strong> is het toenemende aandeel van de bevolking in steden. Een <strong>multinational</strong> is actief in meerdere landen. <strong>Demografische druk</strong> is een grote bevolkingsgroei door geboorte en migratie. De <strong>handelsbalans</strong> is het verschil tussen de waarde van export en import.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Globalisering</div><div class=\"sam-definitie-body\">de mondiale verwevenheid van economie en cultuur.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Welvaart</div><div class=\"sam-definitie-body\">de materiële welstand: inkomen en bezit.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Welzijn</div><div class=\"sam-definitie-body\">de levenskwaliteit, breder dan geld alleen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Pushfactor</div><div class=\"sam-definitie-body\">een factor die mensen wegjaagt uit een gebied.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Pullfactor</div><div class=\"sam-definitie-body\">een factor die mensen naar een gebied toe trekt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Centrum-periferiemodel</div><div class=\"sam-definitie-body\">model met een rijke kern tegenover een arme periferie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Urbanisatie</div><div class=\"sam-definitie-body\">het toenemende aandeel van de bevolking in steden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Multinational</div><div class=\"sam-definitie-body\">een bedrijf dat in meerdere landen actief is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Demografische druk</div><div class=\"sam-definitie-body\">een grote bevolkingsgroei door geboorte en migratie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Handelsbalans</div><div class=\"sam-definitie-body\">het verschil tussen de waarde van export en import.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Globalisering»</b> is mondiale verwevenheid, terwijl <b>«Centrum-periferiemodel»</b> rijke kern, arme periferie is. <b>«Welvaart»</b> is materiële welstand, terwijl <b>«Welzijn»</b> levenskwaliteit is. <b>«Pushfactor»</b> is jaagt weg, terwijl <b>«Pullfactor»</b> trekt aan is. <b>«Urbanisatie»</b> is meer mensen in steden, terwijl <b>«Multinational»</b> in meerdere landen actief is.</div>",
     "sv": [
      {
       "v": "Wat is globalisering?",
       "o": [
-       "Mondiale verwevenheid van economie en cultuur",
-       "Groei van nationale economieën",
-       "Verspreiding van westerse cultuur",
-       "Toename van internationale conflicten"
+       "de mondiale verwevenheid van economie en cultuur",
+       "de trek van mensen naar de stad",
+       "de groei van de bevolking",
+       "de opwarming van de aarde"
       ],
       "c": 0,
-      "u": "Globalisering = toenemende mondiale verwevenheid van economie, cultuur, politiek en communicatie. Multinationals, internet en vrijhandel drijven dit proces."
+      "d": 2,
+      "u": "Globalisering verweeft de wereld.",
+      "uo": [
+       "Klopt: globalisering verweeft de wereld.",
+       "Nee, dat is urbanisatie.",
+       "Nee, dat is bevolkingsgroei.",
+       "Nee, dat is klimaat."
+      ],
+      "uh": "Globalisering: mondiale verwevenheid."
      },
      {
       "v": "Wat is het verschil tussen welvaart en welzijn?",
       "o": [
-       "Welvaart is materieel, welzijn is levenskwaliteit",
-       "Ze betekenen hetzelfde",
-       "Welzijn is inkomen, welvaart is geluk",
-       "Welvaart is immaterieel, welzijn is materieel"
+       "ze zijn hetzelfde",
+       "welvaart is materieel, welzijn is de levenskwaliteit",
+       "welvaart is levenskwaliteit",
+       "welzijn is inkomen"
       ],
-      "c": 0,
-      "u": "Welvaart = materieel bezit en inkomen (BBP). Welzijn = brede levenskwaliteit (gezondheid, geluk, veiligheid, natuur). Een rijk land kan hoge welvaart maar laag welzijn hebben."
+      "c": 1,
+      "d": 3,
+      "u": "Geld tegenover levenskwaliteit.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Klopt: geld tegenover levenskwaliteit.",
+       "Nee, dat is omgedraaid.",
+       "Nee, dat is omgedraaid."
+      ],
+      "uh": "Welvaart: materieel; welzijn: levenskwaliteit."
      },
      {
       "v": "Wat zijn pushfactoren bij migratie?",
       "o": [
-       "Factoren die mensen wegjagen",
-       "Factoren die mensen aantrekken",
-       "De reisafstand van migranten",
-       "De bestemming van migranten"
+       "de reisafstand",
+       "factoren die mensen aantrekken",
+       "factoren die mensen wegjagen",
+       "de kosten van de reis"
       ],
-      "c": 0,
-      "u": "Pushfactoren = redenen om een gebied te verlaten: armoede, conflicten, droogte, werkloosheid. Pullfactoren = redenen om ergens heen te gaan: werk, veiligheid, welvaart."
+      "c": 2,
+      "d": 2,
+      "u": "Pushfactoren duwen mensen weg.",
+      "uo": [
+       "Nee, dat is afstand.",
+       "Nee, dat zijn pullfactoren.",
+       "Klopt: pushfactoren duwen mensen weg.",
+       "Nee, dat is een kostenpost."
+      ],
+      "uh": "Pushfactoren: jagen weg."
      },
      {
       "v": "Wat zijn pullfactoren bij migratie?",
       "o": [
-       "Factoren die mensen naar zich trekken",
-       "Factoren die mensen wegjagen",
-       "Obstakels tijdens de migratie",
-       "Economische gevolgen van migratie"
+       "de bevolkingsgroei",
+       "factoren die mensen wegjagen",
+       "de reistijd",
+       "factoren die mensen naar zich toe trekken"
       ],
-      "c": 0,
-      "u": "Pullfactoren = redenen om ergens heen te gaan: werk, hogere lonen, veiligheid, welvaart, betere gezondheidszorg. Pushfactoren drijven weg, pullfactoren trekken aan."
+      "c": 3,
+      "d": 2,
+      "u": "Pullfactoren trekken aan.",
+      "uo": [
+       "Nee, dat is demografie.",
+       "Nee, dat zijn pushfactoren.",
+       "Nee, dat is afstand.",
+       "Klopt: pullfactoren trekken aan."
+      ],
+      "uh": "Pullfactoren: trekken aan."
      },
      {
-      "v": "Wat is het centrum-periferie model?",
+      "v": "Wat is het centrum-periferiemodel?",
       "o": [
-       "Rijke kern versus arme periferie wereldwijd",
-       "Binnenstedelijke versus buitenstedelijke gebieden",
-       "Economische groei versus stagnatie",
-       "Noord versus Zuid op aarde"
+       "een rijke kern tegenover een arme periferie",
+       "de trek naar de stad",
+       "het verschil tussen export en import",
+       "de opwarming van de aarde"
       ],
       "c": 0,
-      "u": "Het centrum-periferie model: rijke kerngebieden (VS, EU, Japan) domineren de wereldeconomie; arme periferie-gebieden leveren grondstoffen en goedkope arbeid."
+      "d": 3,
+      "u": "Het model zet kern en rand tegenover elkaar.",
+      "uo": [
+       "Klopt: het model zet kern en rand tegenover elkaar.",
+       "Nee, dat is urbanisatie.",
+       "Nee, dat is de handelsbalans.",
+       "Nee, dat is klimaat."
+      ],
+      "uh": "Centrum-periferie: rijke kern, arme periferie."
      },
      {
       "v": "Wat is urbanisatie?",
       "o": [
-       "Toenemend aandeel bevolking in steden",
-       "Groei van het totale inwoneraantal",
-       "Trek van stad naar platteland",
-       "Bouw van nieuwe steden"
+       "de groei van het platteland",
+       "het toenemende aandeel van de bevolking in steden",
+       "de daling van de bevolking",
+       "de trek naar de buitenwijken"
       ],
-      "c": 0,
-      "u": "Urbanisatie = het stijgende percentage van de bevolking dat in steden woont. Oorzaken: werkgelegenheid in steden, platteland-stad migratie."
+      "c": 1,
+      "d": 2,
+      "u": "Steeds meer mensen wonen in steden.",
+      "uo": [
+       "Nee, juist het omgekeerde.",
+       "Klopt: steeds meer mensen wonen in steden.",
+       "Nee, dat is krimp.",
+       "Nee, dat is suburbanisatie."
+      ],
+      "uh": "Urbanisatie: meer bevolking in steden."
      },
      {
       "v": "Wat is een multinational?",
       "o": [
-       "Bedrijf actief in meerdere landen",
-       "Overheidsbedrijf in één land",
-       "Samenwerking tussen regeringen",
-       "Internationale handelsorganisatie"
+       "een lokale winkel",
+       "een overheidsdienst",
+       "een bedrijf dat in meerdere landen actief is",
+       "een migrant"
       ],
-      "c": 0,
-      "u": "Een multinational (of transnationaal bedrijf) is actief in meerdere landen: hoofdkantoor in één land, productie/verkoop elders. Ze spelen een sleutelrol in globalisering (Shell, Nike, Apple)."
+      "c": 2,
+      "d": 2,
+      "u": "Een multinational opereert wereldwijd.",
+      "uo": [
+       "Nee, dat is juist lokaal.",
+       "Nee, dat is geen bedrijf.",
+       "Klopt: een multinational opereert wereldwijd.",
+       "Nee, dat is een persoon."
+      ],
+      "uh": "Multinational: actief in meerdere landen."
      },
      {
       "v": "Wat is demografische druk?",
       "o": [
-       "Grote bevolkingsgroei door geboortecijfers en migratie",
-       "Lage bevolkingsdichtheid in een gebied",
-       "Vergrijzing van de bevolking",
-       "Migratie naar stedelijke gebieden"
+       "het verschil tussen export en import",
+       "een dalende bevolking",
+       "de opwarming van de aarde",
+       "een grote bevolkingsgroei door geboorte en migratie"
       ],
-      "c": 0,
-      "u": "Demografische druk = bevolkingsgroei die leidt tot tekort aan voedsel, water, woningen en voorzieningen. Speelt in ontwikkelingslanden met hoge vruchtbaarheidscijfers."
+      "c": 3,
+      "d": 3,
+      "u": "Veel groei zet gebieden onder druk.",
+      "uo": [
+       "Nee, dat is de handelsbalans.",
+       "Nee, dat is krimp.",
+       "Nee, dat is klimaat.",
+       "Klopt: veel groei zet gebieden onder druk."
+      ],
+      "uh": "Demografische druk: grote bevolkingsgroei."
      },
      {
       "v": "Wat is een handelsbalans?",
       "o": [
-       "Verschil tussen export en import waarde",
-       "Totale hoeveelheid handelspartners",
-       "Kosten van internationale handel",
-       "Handelsrelaties tussen twee landen"
+       "het verschil tussen de waarde van export en import",
+       "de bevolkingsgroei",
+       "de trek naar de stad",
+       "de reistijd tussen landen"
       ],
       "c": 0,
-      "u": "Handelsbalans = exportwaarde minus importwaarde. Positief saldo (exportoverschot) = meer verdienen dan betalen. Negatief saldo (importoverschot) = meer betalen dan verdienen."
-     },
-     {
-      "v": "Wat is mondialisering?",
-      "o": [
-       "Synoniem van globalisering",
-       "Nationale economische groei",
-       "Regionale handelsintegratie",
-       "Verspreiding van religie wereldwijd"
+      "d": 3,
+      "u": "Export min import is de handelsbalans.",
+      "uo": [
+       "Klopt: export min import is de handelsbalans.",
+       "Nee, dat is demografie.",
+       "Nee, dat is urbanisatie.",
+       "Nee, dat is afstand."
       ],
-      "c": 0,
-      "u": "Mondialisering = synoniem van globalisering: de toenemende mondiale verwevenheid op economisch, politiek en cultureel vlak. Beide termen worden wisselend gebruikt."
+      "uh": "Handelsbalans: export min import."
      },
      {
-      "v": "De denkbeeldige lijn die op wereldschaal het rijke Noorden van het arme Zuiden scheidt, heet de...",
+      "v": "Wat is welvaart?",
       "o": [
-       "Datumgrens",
-       "Evenaar",
-       "Brandt-lijn",
-       "Greenwich-lijn"
-      ],
-      "c": 2,
-      "u": "De Brandt-lijn is de denkbeeldige scheidslijn tussen de welvarende landen (globaal het Noorden) en de armere landen (globaal het Zuiden). De evenaar en datumgrens zijn puur geografische lijnen zonder economische betekenis."
-     },
-     {
-      "v": "Landen als Brazilië, India en China worden tot de opkomende economieën gerekend. Wat is hiervan een kenmerk?",
-      "o": [
-       "Ze zijn volledig afhankelijk van ontwikkelingshulp",
-       "Ze hebben een snelgroeiende industrie en middenklasse",
-       "Hun economie krimpt structureel",
-       "Ze hebben geen exportproducten"
+       "de levenskwaliteit",
+       "de materiële welstand, zoals inkomen en bezit",
+       "het aantal inwoners",
+       "de reistijd"
       ],
       "c": 1,
-      "u": "Opkomende economieën (zoals de BRICS-landen) kenmerken zich door snelle industrialisatie, economische groei en een groeiende middenklasse. Ze bewegen vanuit de periferie richting de semiperiferie of het centrum."
-     },
-     {
-      "v": "Met welke maatstaf worden ontwikkelingsverschillen tussen landen gemeten aan de hand van welvaart, levensverwachting én onderwijs samen?",
-      "o": [
-       "Het bruto binnenlands product (bbp)",
-       "De handelsbalans",
-       "De bevolkingsdichtheid",
-       "De Human Development Index (HDI)"
+      "d": 2,
+      "u": "Welvaart is de materiële kant.",
+      "uo": [
+       "Nee, dat is welzijn.",
+       "Klopt: welvaart is de materiële kant.",
+       "Nee, dat is demografie.",
+       "Nee, dat is afstand."
       ],
-      "c": 3,
-      "u": "De HDI combineert inkomen, levensverwachting en opleiding tot één cijfer (0–1) en geeft daarom een completer beeld van ontwikkeling dan alleen het bbp, dat puur economisch is."
+      "uh": "Welvaart: materiële welstand."
      },
      {
-      "v": "Wat betekent «Migratie»?",
+      "v": "Het inkomen en bezit dat mensen hebben. Welk begrip past hierbij?",
       "o": [
-       "het verhuizen van mensen tussen gebieden",
-       "rijk zuidoosten vs. arm noordoosten",
-       "een ongelijke verdeling tussen groepen of gebieden",
-       "ongelijke machts- en geldstromen"
-      ],
-      "c": 0,
-      "u": "«Migratie» betekent: het verhuizen van mensen tussen gebieden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het verhuizen van mensen tussen gebieden\"?",
-      "o": [
-       "Pushfactor",
-       "Bron",
-       "Migratie",
-       "Dimensies"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Migratie»: het verhuizen van mensen tussen gebieden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het verhuizen van mensen tussen gebieden\"?",
-      "o": [
-       "Pushfactor",
+       "Centrum-periferiemodel",
        "Globalisering",
-       "Migratie",
-       "Demografische transitie"
+       "Welvaart",
+       "Demografische druk"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Migratie»: het verhuizen van mensen tussen gebieden.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Migratie» in?",
-      "o": [
-       "het verhuizen van mensen tussen gebieden",
-       "de trek van het platteland naar de stad",
-       "een reden om ergens weg te trekken",
-       "economisch, cultureel, politiek, demografisch"
+      "d": 1,
+      "u": "Het inkomen en bezit dat mensen hebben. Dat past bij Welvaart: materiële welstand.",
+      "uo": [
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie.",
+       "Nee, dat hoort bij Globalisering: mondiale verwevenheid.",
+       "Klopt: materiële welstand.",
+       "Nee, dat hoort bij Demografische druk: grote bevolkingsgroei."
       ],
-      "c": 0,
-      "u": "«Migratie» betekent: het verhuizen van mensen tussen gebieden.",
-      "d": 3
+      "uh": "Welvaart: materiële welstand."
      },
      {
-      "v": "Wat betekent «Urbanisatie»?",
+      "v": "Een bedrijf met fabrieken en kantoren in veel landen. Om welk begrip gaat het?",
       "o": [
-       "de overgang van hoge naar lage geboorte- en sterftecijfers",
-       "het beperken van de oorzaak van klimaatverandering",
-       "een uitgangsmateriaal voor productie",
-       "de trek van het platteland naar de stad"
+       "Pullfactor",
+       "Pushfactor",
+       "Centrum-periferiemodel",
+       "Multinational"
       ],
       "c": 3,
-      "u": "«Urbanisatie» betekent: de trek van het platteland naar de stad.",
-      "d": 1
+      "d": 1,
+      "u": "Een bedrijf met fabrieken en kantoren in veel landen. Dat past bij Multinational: in meerdere landen actief.",
+      "uo": [
+       "Nee, dat hoort bij Pullfactor: trekt aan.",
+       "Nee, dat hoort bij Pushfactor: jaagt weg.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie.",
+       "Klopt: in meerdere landen actief."
+      ],
+      "uh": "Multinational: in meerdere landen actief."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de trek van het platteland naar de stad\"?",
+      "v": "Een bedrijf actief in meerdere landen. Welk begrip herken je hier?",
       "o": [
-       "Dimensies",
-       "Urbanisatie",
-       "Polder",
-       "Centrum–periferie"
+       "Multinational",
+       "Pushfactor",
+       "Centrum-periferiemodel",
+       "Pullfactor"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een bedrijf actief in meerdere landen. Dat past bij Multinational: in meerdere landen actief.",
+      "uo": [
+       "Klopt: in meerdere landen actief.",
+       "Nee, dat hoort bij Pushfactor: jaagt weg.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie.",
+       "Nee, dat hoort bij Pullfactor: trekt aan."
+      ],
+      "uh": "Multinational: in meerdere landen actief."
+     },
+     {
+      "v": "Een grote bevolkingsgroei. Wat is hier aan de hand?",
+      "o": [
+       "Handelsbalans",
+       "Demografische druk",
+       "Globalisering",
+       "Centrum-periferiemodel"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Urbanisatie»: de trek van het platteland naar de stad.",
-      "d": 2
+      "d": 1,
+      "u": "Een grote bevolkingsgroei. Dat past bij Demografische druk: grote bevolkingsgroei.",
+      "uo": [
+       "Nee, dat hoort bij Handelsbalans: export min import.",
+       "Klopt: grote bevolkingsgroei.",
+       "Nee, dat hoort bij Globalisering: mondiale verwevenheid.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie."
+      ],
+      "uh": "Demografische druk: grote bevolkingsgroei."
      },
      {
-      "v": "Welke term past bij: \"de trek van het platteland naar de stad\"?",
+      "v": "Een land groeit hard door hoge geboortecijfers en migratie. Welk begrip past hierbij?",
       "o": [
-       "Vergrijzing",
-       "Bevolkingsdichtheid",
-       "Cultureel",
+       "Globalisering",
+       "Handelsbalans",
+       "Demografische druk",
+       "Centrum-periferiemodel"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een land groeit hard door hoge geboortecijfers en migratie. Dat past bij Demografische druk: grote bevolkingsgroei.",
+      "uo": [
+       "Nee, dat hoort bij Globalisering: mondiale verwevenheid.",
+       "Nee, dat hoort bij Handelsbalans: export min import.",
+       "Klopt: grote bevolkingsgroei.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie."
+      ],
+      "uh": "Demografische druk: grote bevolkingsgroei."
+     },
+     {
+      "v": "Het toenemende aandeel bevolking in steden. Om welk begrip gaat het?",
+      "o": [
+       "Pullfactor",
+       "Multinational",
+       "Welzijn",
        "Urbanisatie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Urbanisatie»: de trek van het platteland naar de stad.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Urbanisatie» in?",
-      "o": [
-       "een economisch dominante regio",
-       "wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh",
-       "het aantal inwoners per vierkante kilometer",
-       "de trek van het platteland naar de stad"
+      "d": 3,
+      "u": "Het toenemende aandeel bevolking in steden. Dat past bij Urbanisatie: meer mensen in steden.",
+      "uo": [
+       "Nee, dat hoort bij Pullfactor: trekt aan.",
+       "Nee, dat hoort bij Multinational: in meerdere landen actief.",
+       "Nee, dat hoort bij Welzijn: levenskwaliteit.",
+       "Klopt: meer mensen in steden."
       ],
-      "c": 3,
-      "u": "«Urbanisatie» betekent: de trek van het platteland naar de stad.",
-      "d": 3
+      "uh": "Urbanisatie: meer mensen in steden."
      },
      {
-      "v": "Wat betekent «Vergrijzing»?",
+      "v": "Rijke kern tegenover arme periferie. Welk begrip herken je hier?",
       "o": [
-       "een ongelijke verdeling tussen groepen of gebieden",
-       "de toename van het aandeel ouderen",
-       "aardbevingen, vulkanen, overstromingen",
-       "de netwerken van wegen, spoor en leidingen"
-      ],
-      "c": 1,
-      "u": "«Vergrijzing» betekent: de toename van het aandeel ouderen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de toename van het aandeel ouderen\"?",
-      "o": [
-       "Ongelijkheid",
-       "Bevolkingsdichtheid",
-       "Sediment",
-       "Vergrijzing"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Vergrijzing»: de toename van het aandeel ouderen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de toename van het aandeel ouderen\"?",
-      "o": [
-       "Vergrijzing",
-       "Cultureel",
-       "Pullfactor",
-       "Mondiale spreiding"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vergrijzing»: de toename van het aandeel ouderen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vergrijzing» in?",
-      "o": [
-       "rijke kernlanden vs. arme periferie",
-       "het aantal inwoners per vierkante kilometer",
-       "de toename van het aandeel ouderen",
-       "een reden om ergens naartoe te trekken"
-      ],
-      "c": 2,
-      "u": "«Vergrijzing» betekent: de toename van het aandeel ouderen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Bevolkingsdichtheid»?",
-      "o": [
-       "een economisch afhankelijke randregio",
-       "de toenemende wereldwijde verwevenheid",
-       "het aantal inwoners per vierkante kilometer",
-       "de afstand gemeten in reistijd of kosten"
-      ],
-      "c": 2,
-      "u": "«Bevolkingsdichtheid» betekent: het aantal inwoners per vierkante kilometer.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het aantal inwoners per vierkante kilometer\"?",
-      "o": [
-       "Platentektoniek",
-       "Stedelijke gebieden",
-       "NAP",
-       "Bevolkingsdichtheid"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Bevolkingsdichtheid»: het aantal inwoners per vierkante kilometer.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het aantal inwoners per vierkante kilometer\"?",
-      "o": [
-       "Pullfactor",
-       "Centrum",
-       "Cultureel",
-       "Bevolkingsdichtheid"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Bevolkingsdichtheid»: het aantal inwoners per vierkante kilometer.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Bevolkingsdichtheid» in?",
-      "o": [
-       "het aantal inwoners per vierkante kilometer",
-       "ongelijke machts- en geldstromen",
-       "economisch, cultureel, politiek, demografisch",
-       "global shift van industrie"
-      ],
-      "c": 0,
-      "u": "«Bevolkingsdichtheid» betekent: het aantal inwoners per vierkante kilometer.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Politiek»?",
-      "o": [
-       "de verdeling van de ruimte over functies",
-       "afgekoeld magma/lavagraniet, basalt",
-       "de manier waarop een samenleving wordt bestuurd en beslissingen neemt",
-       "Normaal Amsterdams Peil, het referentievlak voor hoogte"
-      ],
-      "c": 2,
-      "u": "«Politiek» betekent: de manier waarop een samenleving wordt bestuurd en beslissingen neemt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de manier waarop een samenleving wordt bestuurd en beslissingen neemt\"?",
-      "o": [
-       "Welvaartsverdeling",
-       "Vulkanisme",
-       "Politiek",
-       "Grondstof"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Politiek»: de manier waarop een samenleving wordt bestuurd en beslissingen neemt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de manier waarop een samenleving wordt bestuurd en beslissingen neemt\"?",
-      "o": [
-       "Economisch",
-       "Bevolkingsdichtheid",
-       "HDI",
-       "Politiek"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Politiek»: de manier waarop een samenleving wordt bestuurd en beslissingen neemt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Politiek» in?",
-      "o": [
-       "een economisch afhankelijke randregio",
-       "verspreiding van gewoonten en mediadezelfde films en merken overal",
-       "de manier waarop een samenleving wordt bestuurd en beslissingen neemt",
-       "de toename van het aandeel ouderen"
-      ],
-      "c": 2,
-      "u": "«Politiek» betekent: de manier waarop een samenleving wordt bestuurd en beslissingen neemt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Demografisch»?",
-      "o": [
-       "een reden om ergens naartoe te trekken",
-       "snelle verstedelijking, favela's",
-       "verspreiding van gewoonten en mediadezelfde films en merken overal",
-       "met betrekking tot de opbouw en ontwikkeling van de bevolking"
-      ],
-      "c": 3,
-      "u": "«Demografisch» betekent: met betrekking tot de opbouw en ontwikkeling van de bevolking.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"met betrekking tot de opbouw en ontwikkeling van de bevolking\"?",
-      "o": [
-       "Dimensies",
-       "Ruimtelijk patroon",
-       "Demografisch",
-       "Overstromingsrisico"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Demografisch»: met betrekking tot de opbouw en ontwikkeling van de bevolking.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"met betrekking tot de opbouw en ontwikkeling van de bevolking\"?",
-      "o": [
+       "Centrum-periferiemodel",
        "Pushfactor",
-       "Migratie",
-       "Demografisch",
-       "Periferie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Demografisch»: met betrekking tot de opbouw en ontwikkeling van de bevolking.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Demografisch» in?",
-      "o": [
-       "met betrekking tot de opbouw en ontwikkeling van de bevolking",
-       "ongelijke machts- en geldstromen",
-       "de toenemende wereldwijde verwevenheid",
-       "de trek van het platteland naar de stad"
+       "Welvaart",
+       "Multinational"
       ],
       "c": 0,
-      "u": "«Demografisch» betekent: met betrekking tot de opbouw en ontwikkeling van de bevolking.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Globalisering»?",
-      "o": [
-       "thematische kaart, ruimtelijk patroon",
-       "de toenemende wereldwijde verwevenheid",
-       "een economisch afhankelijke randregio",
-       "opkomend land, grote ongelijkheid"
+      "d": 1,
+      "u": "Rijke kern tegenover arme periferie. Dat past bij Centrum-periferiemodel: rijke kern, arme periferie.",
+      "uo": [
+       "Klopt: rijke kern, arme periferie.",
+       "Nee, dat hoort bij Pushfactor: jaagt weg.",
+       "Nee, dat hoort bij Welvaart: materiële welstand.",
+       "Nee, dat hoort bij Multinational: in meerdere landen actief."
       ],
-      "c": 1,
-      "u": "«Globalisering» betekent: de toenemende wereldwijde verwevenheid.",
-      "d": 1
+      "uh": "Centrum-periferiemodel: rijke kern, arme periferie."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de toenemende wereldwijde verwevenheid\"?",
+      "v": "Een rijke kern staat tegenover een arme rand. Wat is hier aan de hand?",
       "o": [
-       "Ontwikkelingsland",
        "Globalisering",
-       "Cultureel",
-       "Ruimtelijk patroon"
+       "Centrum-periferiemodel",
+       "Pushfactor",
+       "Pullfactor"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Globalisering»: de toenemende wereldwijde verwevenheid.",
-      "d": 2
+      "d": 3,
+      "u": "Een rijke kern staat tegenover een arme rand. Dat past bij Centrum-periferiemodel: rijke kern, arme periferie.",
+      "uo": [
+       "Nee, dat hoort bij Globalisering: mondiale verwevenheid.",
+       "Klopt: rijke kern, arme periferie.",
+       "Nee, dat hoort bij Pushfactor: jaagt weg.",
+       "Nee, dat hoort bij Pullfactor: trekt aan."
+      ],
+      "uh": "Centrum-periferiemodel: rijke kern, arme periferie."
      },
      {
-      "v": "Welke term past bij: \"de toenemende wereldwijde verwevenheid\"?",
+      "v": "Een factor die mensen wegjaagt. Welk begrip past hierbij?",
       "o": [
-       "Mondiale spreiding",
-       "Cultureel",
-       "Vergrijzing",
+       "Handelsbalans",
+       "Centrum-periferiemodel",
+       "Pushfactor",
+       "Welvaart"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een factor die mensen wegjaagt. Dat past bij Pushfactor: jaagt weg.",
+      "uo": [
+       "Nee, dat hoort bij Handelsbalans: export min import.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie.",
+       "Klopt: jaagt weg.",
+       "Nee, dat hoort bij Welvaart: materiële welstand."
+      ],
+      "uh": "Pushfactor: jaagt weg."
+     },
+     {
+      "v": "Oorlog en armoede drijven mensen uit hun land weg. Om welk begrip gaat het?",
+      "o": [
+       "Welzijn",
+       "Pullfactor",
+       "Urbanisatie",
+       "Pushfactor"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Oorlog en armoede drijven mensen uit hun land weg. Dat past bij Pushfactor: jaagt weg.",
+      "uo": [
+       "Nee, dat hoort bij Welzijn: levenskwaliteit.",
+       "Nee, dat hoort bij Pullfactor: trekt aan.",
+       "Nee, dat hoort bij Urbanisatie: meer mensen in steden.",
+       "Klopt: jaagt weg."
+      ],
+      "uh": "Pushfactor: jaagt weg."
+     },
+     {
+      "v": "De levenskwaliteit. Welk begrip herken je hier?",
+      "o": [
+       "Welzijn",
+       "Welvaart",
+       "Pullfactor",
        "Globalisering"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Globalisering»: de toenemende wereldwijde verwevenheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Globalisering» in?",
-      "o": [
-       "de overgang van hoge naar lage geboorte- en sterftecijfers",
-       "verspreiding van gewoonten en mediadezelfde films en merken overal",
-       "het aantal inwoners per vierkante kilometer",
-       "de toenemende wereldwijde verwevenheid"
+      "c": 0,
+      "d": 3,
+      "u": "De levenskwaliteit. Dat past bij Welzijn: levenskwaliteit.",
+      "uo": [
+       "Klopt: levenskwaliteit.",
+       "Nee, dat hoort bij Welvaart: materiële welstand.",
+       "Nee, dat hoort bij Pullfactor: trekt aan.",
+       "Nee, dat hoort bij Globalisering: mondiale verwevenheid."
       ],
-      "c": 3,
-      "u": "«Globalisering» betekent: de toenemende wereldwijde verwevenheid.",
-      "d": 3
+      "uh": "Welzijn: levenskwaliteit."
      },
      {
-      "v": "Wat betekent «Demografische transitie»?",
+      "v": "Export min import. Wat is hier aan de hand?",
       "o": [
-       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
-       "economische activiteit buiten de registratie",
-       "de toenemende wereldwijde verwevenheid",
-       "de overgang van hoge naar lage geboorte- en sterftecijfers"
-      ],
-      "c": 3,
-      "u": "«Demografische transitie» betekent: de overgang van hoge naar lage geboorte- en sterftecijfers.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de overgang van hoge naar lage geboorte- en sterftecijfers\"?",
-      "o": [
-       "Thematische kaart",
-       "Welvaartsverdeling",
-       "Afstand",
-       "Demografische transitie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Demografische transitie»: de overgang van hoge naar lage geboorte- en sterftecijfers.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de overgang van hoge naar lage geboorte- en sterftecijfers\"?",
-      "o": [
-       "Centrum",
-       "Demografische transitie",
-       "HDI",
-       "Welvaartsverdeling"
+       "Pushfactor",
+       "Handelsbalans",
+       "Centrum-periferiemodel",
+       "Pullfactor"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Demografische transitie»: de overgang van hoge naar lage geboorte- en sterftecijfers.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Demografische transitie» in?",
-      "o": [
-       "verspreiding van gewoonten en mediadezelfde films en merken overal",
-       "het verhuizen van mensen tussen gebieden",
-       "met betrekking tot de opbouw en ontwikkeling van de bevolking",
-       "de overgang van hoge naar lage geboorte- en sterftecijfers"
+      "d": 1,
+      "u": "Export min import. Dat past bij Handelsbalans: export min import.",
+      "uo": [
+       "Nee, dat hoort bij Pushfactor: jaagt weg.",
+       "Klopt: export min import.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie.",
+       "Nee, dat hoort bij Pullfactor: trekt aan."
       ],
-      "c": 3,
-      "u": "«Demografische transitie» betekent: de overgang van hoge naar lage geboorte- en sterftecijfers.",
-      "d": 3
+      "uh": "Handelsbalans: export min import."
      },
      {
-      "v": "Wat betekent «Pushfactor»?",
+      "v": "De mondiale verwevenheid van economie en cultuur. Welk begrip past hierbij?",
       "o": [
-       "een reden om ergens weg te trekken",
-       "verspreiding van gewoonten en mediadezelfde films en merken overal",
-       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs",
-       "het aantal inwoners per vierkante kilometer"
-      ],
-      "c": 0,
-      "u": "«Pushfactor» betekent: een reden om ergens weg te trekken. Tegenover pull: push duwt weg uit het herkomstgebied.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een reden om ergens weg te trekken\"?",
-      "o": [
-       "Adaptatie",
-       "Klimaat & verwering",
-       "Pushfactor",
-       "Schaalniveau"
+       "Multinational",
+       "Centrum-periferiemodel",
+       "Globalisering",
+       "Welzijn"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Pushfactor»: een reden om ergens weg te trekken. Tegenover pull: push duwt weg uit het herkomstgebied.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een reden om ergens weg te trekken\"?",
-      "o": [
-       "Cultureel",
-       "Pushfactor",
-       "Centrum–periferie",
-       "Vergrijzing"
+      "d": 2,
+      "u": "De mondiale verwevenheid van economie en cultuur. Dat past bij Globalisering: mondiale verwevenheid.",
+      "uo": [
+       "Nee, dat hoort bij Multinational: in meerdere landen actief.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie.",
+       "Klopt: mondiale verwevenheid.",
+       "Nee, dat hoort bij Welzijn: levenskwaliteit."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Pushfactor»: een reden om ergens weg te trekken. Tegenover pull: push duwt weg uit het herkomstgebied.",
-      "d": 3
+      "uh": "Globalisering: mondiale verwevenheid."
      },
      {
-      "v": "Wat houdt «Pushfactor» in?",
+      "v": "Steeds meer mensen gaan in de stad wonen. Om welk begrip gaat het?",
       "o": [
-       "een economisch dominante regio",
-       "een reden om ergens weg te trekken",
-       "het aantal inwoners per vierkante kilometer",
-       "rijke kernlanden vs. arme periferie"
-      ],
-      "c": 1,
-      "u": "«Pushfactor» betekent: een reden om ergens weg te trekken. Tegenover pull: push duwt weg uit het herkomstgebied.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Pullfactor»?",
-      "o": [
-       "rijk zuidoosten vs. arm noordoosten",
-       "opbouw en verandering van steden",
-       "de netwerken van wegen, spoor en leidingen",
-       "een reden om ergens naartoe te trekken"
+       "Pullfactor",
+       "Multinational",
+       "Welzijn",
+       "Urbanisatie"
       ],
       "c": 3,
-      "u": "«Pullfactor» betekent: een reden om ergens naartoe te trekken. Tegenover push: pull trekt aan naar een gebied.",
-      "d": 1
+      "d": 3,
+      "u": "Steeds meer mensen gaan in de stad wonen. Dat past bij Urbanisatie: meer mensen in steden.",
+      "uo": [
+       "Nee, dat hoort bij Pullfactor: trekt aan.",
+       "Nee, dat hoort bij Multinational: in meerdere landen actief.",
+       "Nee, dat hoort bij Welzijn: levenskwaliteit.",
+       "Klopt: meer mensen in steden."
+      ],
+      "uh": "Urbanisatie: meer mensen in steden."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een reden om ergens naartoe te trekken\"?",
+      "v": "De materiële welstand. Welk begrip herken je hier?",
       "o": [
-       "Klimaat",
-       "Randstad",
-       "Broncombinatie",
+       "Welvaart",
+       "Globalisering",
+       "Centrum-periferiemodel",
+       "Demografische druk"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De materiële welstand. Dat past bij Welvaart: materiële welstand.",
+      "uo": [
+       "Klopt: materiële welstand.",
+       "Nee, dat hoort bij Globalisering: mondiale verwevenheid.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie.",
+       "Nee, dat hoort bij Demografische druk: grote bevolkingsgroei."
+      ],
+      "uh": "Welvaart: materiële welstand."
+     },
+     {
+      "v": "Een factor die mensen aantrekt. Wat is hier aan de hand?",
+      "o": [
+       "Pushfactor",
+       "Pullfactor",
+       "Urbanisatie",
+       "Welzijn"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een factor die mensen aantrekt. Dat past bij Pullfactor: trekt aan.",
+      "uo": [
+       "Nee, dat hoort bij Pushfactor: jaagt weg.",
+       "Klopt: trekt aan.",
+       "Nee, dat hoort bij Urbanisatie: meer mensen in steden.",
+       "Nee, dat hoort bij Welzijn: levenskwaliteit."
+      ],
+      "uh": "Pullfactor: trekt aan."
+     },
+     {
+      "v": "De wereld raakt verweven door handel, transport en internet. Welk begrip past hierbij?",
+      "o": [
+       "Handelsbalans",
+       "Centrum-periferiemodel",
+       "Globalisering",
+       "Urbanisatie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De wereld raakt verweven door handel, transport en internet. Dat past bij Globalisering: mondiale verwevenheid.",
+      "uo": [
+       "Nee, dat hoort bij Handelsbalans: export min import.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie.",
+       "Klopt: mondiale verwevenheid.",
+       "Nee, dat hoort bij Urbanisatie: meer mensen in steden."
+      ],
+      "uh": "Globalisering: mondiale verwevenheid."
+     },
+     {
+      "v": "Werk en veiligheid trekken migranten naar een land toe. Om welk begrip gaat het?",
+      "o": [
+       "Welvaart",
+       "Centrum-periferiemodel",
+       "Handelsbalans",
        "Pullfactor"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Pullfactor»: een reden om ergens naartoe te trekken. Tegenover push: pull trekt aan naar een gebied.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een reden om ergens naartoe te trekken\"?",
-      "o": [
-       "Centrum",
-       "Migratie",
-       "Pullfactor",
-       "Pushfactor"
+      "d": 1,
+      "u": "Werk en veiligheid trekken migranten naar een land toe. Dat past bij Pullfactor: trekt aan.",
+      "uo": [
+       "Nee, dat hoort bij Welvaart: materiële welstand.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie.",
+       "Nee, dat hoort bij Handelsbalans: export min import.",
+       "Klopt: trekt aan."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Pullfactor»: een reden om ergens naartoe te trekken. Tegenover push: pull trekt aan naar een gebied.",
-      "d": 3
+      "uh": "Pullfactor: trekt aan."
      },
      {
-      "v": "Wat houdt «Pullfactor» in?",
+      "v": "Je gezondheid, veiligheid en geluk, breder dan geld. Welk begrip herken je hier?",
       "o": [
-       "een reden om ergens naartoe te trekken",
-       "verspreiding van gewoonten en mediadezelfde films en merken overal",
-       "een economisch afhankelijke randregio",
-       "wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh"
+       "Welzijn",
+       "Welvaart",
+       "Globalisering",
+       "Handelsbalans"
       ],
       "c": 0,
-      "u": "«Pullfactor» betekent: een reden om ergens naartoe te trekken. Tegenover push: pull trekt aan naar een gebied.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «HDI»?",
-      "o": [
-       "het aantal inwoners per vierkante kilometer",
-       "een reden om ergens weg te trekken",
-       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs",
-       "Amazoneregenwoud, tropisch klimaat"
+      "d": 2,
+      "u": "Je gezondheid, veiligheid en geluk, breder dan geld. Dat past bij Welzijn: levenskwaliteit.",
+      "uo": [
+       "Klopt: levenskwaliteit.",
+       "Nee, dat hoort bij Welvaart: materiële welstand.",
+       "Nee, dat hoort bij Globalisering: mondiale verwevenheid.",
+       "Nee, dat hoort bij Handelsbalans: export min import."
       ],
-      "c": 2,
-      "u": "«HDI» betekent: een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs.",
-      "d": 1
+      "uh": "Welzijn: levenskwaliteit."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs\"?",
+      "v": "Het verschil tussen wat een land uitvoert en invoert. Wat is hier aan de hand?",
       "o": [
-       "Natuurlijke risico's",
-       "Centrum–periferie",
-       "Bevolkingsdichtheid",
-       "HDI"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «HDI»: een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs\"?",
-      "o": [
-       "Urbanisatie",
-       "Demografisch",
-       "HDI",
-       "Centrum"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «HDI»: een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «HDI» in?",
-      "o": [
-       "een economisch afhankelijke randregio",
-       "wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh",
-       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs",
-       "de toenemende wereldwijde verwevenheid"
-      ],
-      "c": 2,
-      "u": "«HDI» betekent: een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Centrum»?",
-      "o": [
-       "een economisch dominante regio",
-       "het aantal inwoners per vierkante kilometer",
-       "de trek van het platteland naar de stad",
-       "absoluut (km) vs. relatief (tijd/kosten)"
-      ],
-      "c": 0,
-      "u": "«Centrum» betekent: een economisch dominante regio.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een economisch dominante regio\"?",
-      "o": [
-       "Natuurlijke risico's",
-       "Centrum",
-       "Gesteentekringloop",
-       "Regionale verschillen"
+       "Welvaart",
+       "Handelsbalans",
+       "Demografische druk",
+       "Centrum-periferiemodel"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Centrum»: een economisch dominante regio.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een economisch dominante regio\"?",
-      "o": [
-       "HDI",
-       "Centrum",
-       "Politiek",
-       "Mondiale spreiding"
+      "d": 3,
+      "u": "Het verschil tussen wat een land uitvoert en invoert. Dat past bij Handelsbalans: export min import.",
+      "uo": [
+       "Nee, dat hoort bij Welvaart: materiële welstand.",
+       "Klopt: export min import.",
+       "Nee, dat hoort bij Demografische druk: grote bevolkingsgroei.",
+       "Nee, dat hoort bij Centrum-periferiemodel: rijke kern, arme periferie."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Centrum»: een economisch dominante regio.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Centrum» in?",
-      "o": [
-       "een economisch dominante regio",
-       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs",
-       "global shift van industrie",
-       "een economisch afhankelijke randregio"
-      ],
-      "c": 0,
-      "u": "«Centrum» betekent: een economisch dominante regio.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Periferie»?",
-      "o": [
-       "de kans op een overstroming maal het gevolg",
-       "een reden om ergens naartoe te trekken",
-       "de trek van het platteland naar de stad",
-       "een economisch afhankelijke randregio"
-      ],
-      "c": 3,
-      "u": "«Periferie» betekent: een economisch afhankelijke randregio.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een economisch afhankelijke randregio\"?",
-      "o": [
-       "Infrastructuur",
-       "Periferie",
-       "Ruimtelijke inrichting",
-       "Klimaat"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Periferie»: een economisch afhankelijke randregio.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een economisch afhankelijke randregio\"?",
-      "o": [
-       "Mondiale spreiding",
-       "Vergrijzing",
-       "Periferie",
-       "HDI"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Periferie»: een economisch afhankelijke randregio.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Periferie» in?",
-      "o": [
-       "een economisch afhankelijke randregio",
-       "een economisch dominante regio",
-       "de toename van het aandeel ouderen",
-       "ongelijke machts- en geldstromen"
-      ],
-      "c": 0,
-      "u": "«Periferie» betekent: een economisch afhankelijke randregio.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Dimensies»?",
-      "o": [
-       "de kans op een overstroming maal het gevolg",
-       "een niet-willekeurige verdeling over de ruimte",
-       "orkanen, toerisme, kwetsbaarheid",
-       "economisch, cultureel, politiek, demografisch"
-      ],
-      "c": 3,
-      "u": "«Dimensies» betekent: economisch, cultureel, politiek, demografisch.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"economisch, cultureel, politiek, demografisch\"?",
-      "o": [
-       "Adaptatie",
-       "Dimensies",
-       "Regionale verschillen",
-       "Schaal"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Dimensies»: economisch, cultureel, politiek, demografisch.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"economisch, cultureel, politiek, demografisch\"?",
-      "o": [
-       "Vergrijzing",
-       "Dimensies",
-       "HDI",
-       "Periferie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Dimensies»: economisch, cultureel, politiek, demografisch.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Dimensies» in?",
-      "o": [
-       "economisch, cultureel, politiek, demografisch",
-       "een reden om ergens weg te trekken",
-       "de toenemende wereldwijde verwevenheid",
-       "de trek van het platteland naar de stad"
-      ],
-      "c": 0,
-      "u": "«Dimensies» betekent: economisch, cultureel, politiek, demografisch.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Welvaartsverdeling»?",
-      "o": [
-       "het wegslijten en afvoeren van gesteente",
-       "het gemiddelde weer over lange tijd",
-       "het aanpassen aan de gevolgen van klimaatverandering",
-       "rijke kernlanden vs. arme periferie"
-      ],
-      "c": 3,
-      "u": "«Welvaartsverdeling» betekent: rijke kernlanden vs. arme periferie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"rijke kernlanden vs. arme periferie\"?",
-      "o": [
-       "Vulkanisme",
-       "Mondiale spreiding",
-       "Welvaartsverdeling",
-       "Centrum–periferie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Welvaartsverdeling»: rijke kernlanden vs. arme periferie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"rijke kernlanden vs. arme periferie\"?",
-      "o": [
-       "Welvaartsverdeling",
-       "Vergrijzing",
-       "Demografische transitie",
-       "Pushfactor"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Welvaartsverdeling»: rijke kernlanden vs. arme periferie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Welvaartsverdeling» in?",
-      "o": [
-       "een economisch dominante regio",
-       "rijke kernlanden vs. arme periferie",
-       "een reden om ergens weg te trekken",
-       "het verhuizen van mensen tussen gebieden"
-      ],
-      "c": 1,
-      "u": "«Welvaartsverdeling» betekent: rijke kernlanden vs. arme periferie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Centrum–periferie»?",
-      "o": [
-       "het gemiddelde weer over lange tijd",
-       "een economisch dominante regio",
-       "ongelijke machts- en geldstromen",
-       "de netwerken van wegen, spoor en leidingen"
-      ],
-      "c": 2,
-      "u": "«Centrum–periferie» betekent: ongelijke machts- en geldstromen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"ongelijke machts- en geldstromen\"?",
-      "o": [
-       "Verwering",
-       "Broeikaseffect",
-       "Centrum–periferie",
-       "Platentektoniek"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Centrum–periferie»: ongelijke machts- en geldstromen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"ongelijke machts- en geldstromen\"?",
-      "o": [
-       "Migratie",
-       "Centrum–periferie",
-       "Demografisch",
-       "Politiek"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Centrum–periferie»: ongelijke machts- en geldstromen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Centrum–periferie» in?",
-      "o": [
-       "global shift van industrie",
-       "een reden om ergens weg te trekken",
-       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs",
-       "ongelijke machts- en geldstromen"
-      ],
-      "c": 3,
-      "u": "«Centrum–periferie» betekent: ongelijke machts- en geldstromen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Mondiale spreiding»?",
-      "o": [
-       "stollings-, sediment- en metamorf gesteente",
-       "de trek van het platteland naar de stad",
-       "het stedelijke kerngebied van Nederland",
-       "global shift van industrie"
-      ],
-      "c": 3,
-      "u": "«Mondiale spreiding» betekent: global shift van industrie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"global shift van industrie\"?",
-      "o": [
-       "Mondiale spreiding",
-       "Demografische transitie",
-       "Endogeen vs. exogeen",
-       "Pushfactor"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Mondiale spreiding»: global shift van industrie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"global shift van industrie\"?",
-      "o": [
-       "Bevolkingsdichtheid",
-       "Demografisch",
-       "Economisch",
-       "Mondiale spreiding"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Mondiale spreiding»: global shift van industrie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Mondiale spreiding» in?",
-      "o": [
-       "global shift van industrie",
-       "de toename van het aandeel ouderen",
-       "met betrekking tot de opbouw en ontwikkeling van de bevolking",
-       "de overgang van hoge naar lage geboorte- en sterftecijfers"
-      ],
-      "c": 0,
-      "u": "«Mondiale spreiding» betekent: global shift van industrie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Economisch»?",
-      "o": [
-       "een kaart die één onderwerp toont",
-       "krachten van binnenuit vs. van buitenaf",
-       "wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh",
-       "het ter plekke afbreken van gesteente"
-      ],
-      "c": 2,
-      "u": "«Economisch» betekent: wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh\"?",
-      "o": [
-       "Demografisch",
-       "Economisch",
-       "Ongelijkheid",
-       "Water & veiligheid"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Economisch»: wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh\"?",
-      "o": [
-       "HDI",
-       "Economisch",
-       "Bevolkingsdichtheid",
-       "Demografische transitie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Economisch»: wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Economisch» in?",
-      "o": [
-       "de trek van het platteland naar de stad",
-       "het aantal inwoners per vierkante kilometer",
-       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs",
-       "wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh"
-      ],
-      "c": 3,
-      "u": "«Economisch» betekent: wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Cultureel»?",
-      "o": [
-       "wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh",
-       "economische activiteit buiten de registratie",
-       "een kaart die één onderwerp toont",
-       "verspreiding van gewoonten en mediadezelfde films en merken overal"
-      ],
-      "c": 3,
-      "u": "«Cultureel» betekent: verspreiding van gewoonten en mediadezelfde films en merken overal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"verspreiding van gewoonten en mediadezelfde films en merken overal\"?",
-      "o": [
-       "Verwering",
-       "Polder",
-       "Cultureel",
-       "Water & veiligheid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Cultureel»: verspreiding van gewoonten en mediadezelfde films en merken overal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"verspreiding van gewoonten en mediadezelfde films en merken overal\"?",
-      "o": [
-       "Centrum",
-       "Urbanisatie",
-       "Economisch",
-       "Cultureel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Cultureel»: verspreiding van gewoonten en mediadezelfde films en merken overal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Cultureel» in?",
-      "o": [
-       "de trek van het platteland naar de stad",
-       "verspreiding van gewoonten en mediadezelfde films en merken overal",
-       "een economisch dominante regio",
-       "rijke kernlanden vs. arme periferie"
-      ],
-      "c": 1,
-      "u": "«Cultureel» betekent: verspreiding van gewoonten en mediadezelfde films en merken overal.",
-      "d": 3
+      "uh": "Handelsbalans: export min import."
      }
     ],
     "oe": [
@@ -56482,80 +55944,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Migratie",
-      "d": "het verhuizen van mensen tussen gebieden"
-     },
-     {
-      "t": "Urbanisatie",
-      "d": "de trek van het platteland naar de stad"
-     },
-     {
-      "t": "Vergrijzing",
-      "d": "de toename van het aandeel ouderen"
-     },
-     {
-      "t": "Bevolkingsdichtheid",
-      "d": "het aantal inwoners per vierkante kilometer"
-     },
-     {
-      "t": "Politiek",
-      "d": "de manier waarop een samenleving wordt bestuurd en beslissingen neemt"
-     },
-     {
-      "t": "Demografisch",
-      "d": "met betrekking tot de opbouw en ontwikkeling van de bevolking"
-     },
-     {
       "t": "Globalisering",
-      "d": "de toenemende wereldwijde verwevenheid"
+      "d": "de mondiale verwevenheid van economie en cultuur"
      },
      {
-      "t": "Demografische transitie",
-      "d": "de overgang van hoge naar lage geboorte- en sterftecijfers"
+      "t": "Welvaart",
+      "d": "de materiële welstand: inkomen en bezit"
+     },
+     {
+      "t": "Welzijn",
+      "d": "de levenskwaliteit, breder dan geld alleen"
      },
      {
       "t": "Pushfactor",
-      "d": "een reden om ergens weg te trekken"
+      "d": "een factor die mensen wegjaagt uit een gebied"
      },
      {
       "t": "Pullfactor",
-      "d": "een reden om ergens naartoe te trekken"
+      "d": "een factor die mensen naar een gebied toe trekt"
      },
      {
-      "t": "HDI",
-      "d": "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs"
+      "t": "Centrum-periferiemodel",
+      "d": "model met een rijke kern tegenover een arme periferie"
      },
      {
-      "t": "Centrum",
-      "d": "een economisch dominante regio"
+      "t": "Urbanisatie",
+      "d": "het toenemende aandeel van de bevolking in steden"
      },
      {
-      "t": "Periferie",
-      "d": "een economisch afhankelijke randregio"
+      "t": "Multinational",
+      "d": "een bedrijf dat in meerdere landen actief is"
      },
      {
-      "t": "Dimensies",
-      "d": "economisch, cultureel, politiek, demografisch"
+      "t": "Demografische druk",
+      "d": "een grote bevolkingsgroei door geboorte en migratie"
      },
      {
-      "t": "Welvaartsverdeling",
-      "d": "rijke kernlanden vs. arme periferie"
-     },
-     {
-      "t": "Centrum–periferie",
-      "d": "ongelijke machts- en geldstromen"
-     },
-     {
-      "t": "Mondiale spreiding",
-      "d": "global shift van industrie"
-     },
-     {
-      "t": "Economisch",
-      "d": "wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh"
-     },
-     {
-      "t": "Cultureel",
-      "d": "verspreiding van gewoonten en mediadezelfde films en merken overal"
+      "t": "Handelsbalans",
+      "d": "het verschil tussen de waarde van export en import"
      }
     ]
    },
@@ -56584,981 +56010,577 @@ var VAKKEN = [
      "C2 Samenhangen en verschillen op aarde",
      "C3 De aarde als natuurlijk systeem en lokale effecten"
     ],
-    "sam": "<div class=\"sam-head\">Endogene en exogene processen</div><ul><li><strong>Endogeen</strong>: processen vanuit het binnenste van de aarde - platentektoniek, vulkanisme, aardbevingen.</li><li><strong>Exogeen</strong>: processen van buitenaf - verwering (afbraak ter plekke), erosie (transport), sedimentatie (afzetting).</li><li><strong>Subductiezone</strong>: oceaanplaat duikt onder continent → diepzeetrog, vulkanen, aardbevingen (Ring of Fire).</li><li><strong>Hotspot</strong>: vast hittepunt in de mantel onafhankelijk van plaatgrenzen (Hawaï-eilanden).</li></ul><div class=\"sam-head\">Klimaat en waterkringloop</div><ul><li><strong>Klimaat vs. weer</strong>: klimaat = gemiddeld patroon (30 jaar); weer = dagelijkse toestand.</li><li><strong>Rivierregime</strong>: jaarlijks patroon van waterafvoer. Sneeuwgevoede rivier: piek in voorjaar. Regenrivier: volgt neerslagpatroon.</li><li><strong>Moesson</strong>: seizoensgebonden windpatroon; zomer = vochtig (zee naar land); winter = droog (land naar zee).</li><li><strong>Klimaatverandering</strong>: langetermijnverschuiving door CO₂-uitstoot. Gevolgen: zeespiegelstijging, smeltende gletsjers, extremer weer.</li></ul><div class=\"sam-onthoud\">Endogeen = binnenuit (vulkanen, aardbevingen). Exogeen = van buiten (erosie, sedimentatie). Rivierregime = jaarlijks afvoerpatroon. Klimaat ≠ weer (30 jaar vs. nu).</div>",
+    "sam": "<div class=\"sam-intro\">Het aardoppervlak vormt zich door <strong>endogene</strong> processen (van binnenuit, zoals <strong>subductie</strong> en vulkanisme) en <strong>exogene</strong> processen (van buitenaf, zoals <strong>verwering</strong>, <strong>erosie</strong> en <strong>sedimentatie</strong>). <strong>Klimaatverandering</strong> verschuift de langjarige gemiddelden.</div><div class=\"sam-head\">1. Endogene processen</div><p><strong>Endogene processen</strong> komen van binnenin de aarde. Bij een <strong>subductiezone</strong> duikt een plaat omlaag onder een andere. Een <strong>hotspot</strong> is een vast hittepunt diep in de aardmantel waardoor vulkanisme ontstaat.</p><div class=\"sam-head\">2. Exogene processen</div><p><strong>Exogene processen</strong> komen van buitenaf. <strong>Verwering</strong> breekt gesteente ter plekke af; <strong>erosie</strong> voert het materiaal af door water of wind; <strong>sedimentatie</strong> zet het weer af, bijvoorbeeld in een <strong>delta</strong>. Het <strong>rivierregime</strong> is het jaarlijkse patroon van de waterafvoer. <strong>Klimaatverandering</strong> is een langdurige verschuiving van de klimaatgemiddelden.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Endogene processen</div><div class=\"sam-definitie-body\">processen die van binnenin de aarde komen, zoals vulkanisme.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Exogene processen</div><div class=\"sam-definitie-body\">processen die van buitenaf werken, zoals verwering en erosie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Subductiezone</div><div class=\"sam-definitie-body\">de plek waar een plaat onder een andere omlaagduikt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Erosie</div><div class=\"sam-definitie-body\">het afvoeren van materiaal door water of wind.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sedimentatie</div><div class=\"sam-definitie-body\">de afzetting van meegevoerd materiaal op de bodem.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verwering</div><div class=\"sam-definitie-body\">het ter plekke afbreken van gesteente.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Rivierregime</div><div class=\"sam-definitie-body\">het jaarlijkse patroon van de waterafvoer van een rivier.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Delta</div><div class=\"sam-definitie-body\">een laaggelegen riviermondingsgebied vol sediment.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Klimaatverandering</div><div class=\"sam-definitie-body\">een langdurige verschuiving van de klimaatgemiddelden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hotspot</div><div class=\"sam-definitie-body\">een vast hittepunt diep in de aardmantel.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Endogene processen»</b> is van binnenuit, terwijl <b>«Exogene processen»</b> van buitenaf is. <b>«Subductiezone»</b> is plaat duikt omlaag, terwijl <b>«Hotspot»</b> vast hittepunt in de mantel is. <b>«Erosie»</b> is afvoer van materiaal, terwijl <b>«Sedimentatie»</b> afzetting van materiaal is. <b>«Verwering»</b> is ter plekke afbreken, terwijl <b>«Erosie»</b> afvoer van materiaal is.</div>",
     "sv": [
      {
       "v": "Wat is het verschil tussen endogene en exogene processen?",
       "o": [
-       "Endogeen = binnenin aarde; exogeen = buitenaf",
-       "Endogeen = oppervlak; exogeen = binnenin",
-       "Endogeen = erosie; exogeen = vulkanisme",
-       "Endogeen = klimaat; exogeen = geologie"
+       "endogeen komt van binnenin de aarde, exogeen van buitenaf",
+       "ze zijn hetzelfde",
+       "endogeen komt van buitenaf",
+       "exogeen komt van binnenuit"
       ],
       "c": 0,
-      "u": "Endogeen = processen vanuit het binnenste van de aarde (platentektoniek, vulkanisme, aardbevingen). Exogeen = processen van buitenaf (erosie, verwering, sedimentatie door wind, water, ijs)."
+      "d": 3,
+      "u": "Van binnen tegenover van buiten.",
+      "uo": [
+       "Klopt: van binnen tegenover van buiten.",
+       "Nee, ze verschillen.",
+       "Nee, dat is omgedraaid.",
+       "Nee, dat is omgedraaid."
+      ],
+      "uh": "Endogeen: van binnen; exogeen: van buiten."
      },
      {
       "v": "Wat is een subductiezone?",
       "o": [
-       "Plek waar een plaat omlaagduikt",
-       "Plek waar platen uit elkaar drijven",
-       "Plek waar platen langs elkaar schuiven",
-       "Plek met vulkanen zonder aardbevingen"
+       "de plek waar gesteente wordt afgebroken",
+       "de plek waar een plaat onder een andere omlaagduikt",
+       "een riviermonding",
+       "een hittepunt in de mantel"
       ],
-      "c": 0,
-      "u": "Subductiezone = convergerende plaatgrens waarbij een oceaanplaat onder een continent- of andere oceaanplaat duikt. Resulteert in diepzeetroggen, vulkanen en aardbevingen."
+      "c": 1,
+      "d": 3,
+      "u": "Bij subductie duikt een plaat weg.",
+      "uo": [
+       "Nee, dat is verwering.",
+       "Klopt: bij subductie duikt een plaat weg.",
+       "Nee, dat is een delta.",
+       "Nee, dat is een hotspot."
+      ],
+      "uh": "Subductiezone: plaat duikt omlaag."
      },
      {
       "v": "Wat is erosie?",
       "o": [
-       "Afvoer van materiaal door water of wind",
-       "Aangroei van nieuwe gesteentelagen",
-       "Smelten van gletsjers",
-       "Uiteenvallen van gesteente ter plekke"
+       "het ter plekke afbreken van gesteente",
+       "het afzetten van materiaal",
+       "het afvoeren van materiaal door water of wind",
+       "het omhoogkomen van magma"
       ],
-      "c": 0,
-      "u": "Erosie = het transport van verweerd materiaal (zand, klei, gesteente) door water, wind of ijs. Verwering = ter plekke afbreken. Sedimentatie = afzetting van het getransporteerde materiaal."
+      "c": 2,
+      "d": 2,
+      "u": "Erosie voert materiaal af.",
+      "uo": [
+       "Nee, dat is verwering.",
+       "Nee, dat is sedimentatie.",
+       "Klopt: erosie voert materiaal af.",
+       "Nee, dat is vulkanisme."
+      ],
+      "uh": "Erosie: afvoer van materiaal door water of wind."
      },
      {
       "v": "Wat is sedimentatie?",
       "o": [
-       "Afzetting van erosiemateriaal op de bodem",
-       "Afbraak van gesteente door verwering",
-       "Transport van materiaal over grote afstand",
-       "Vorming van nieuwe rotsen door hitte"
+       "het wegduiken van een plaat",
+       "het afvoeren van materiaal",
+       "het afbreken van gesteente",
+       "de afzetting van meegevoerd materiaal op de bodem"
       ],
-      "c": 0,
-      "u": "Sedimentatie = de afzetting van getransporteerd materiaal (zand, klei, slib) op de bodem van rivieren, zeeën of meren. Levert sedimentaire gesteenten op door samendrukking."
+      "c": 3,
+      "d": 2,
+      "u": "Sedimentatie zet materiaal af.",
+      "uo": [
+       "Nee, dat is subductie.",
+       "Nee, dat is erosie.",
+       "Nee, dat is verwering.",
+       "Klopt: sedimentatie zet materiaal af."
+      ],
+      "uh": "Sedimentatie: afzetting van materiaal."
      },
      {
       "v": "Wat is een rivierregime?",
       "o": [
-       "Jaarlijks patroon van waterafvoer",
-       "Richting en snelheid van een rivier",
-       "Breedte en diepte van een rivierbedding",
-       "Hoeveelheid sediment in een rivier"
+       "het jaarlijkse patroon van de waterafvoer",
+       "de monding van een rivier",
+       "de diepte van een rivier",
+       "de breedte van een rivier"
       ],
       "c": 0,
-      "u": "Rivierregime = het jaarlijkse patroon van waterafvoer. Sneeuwgevoede rivieren hebben een piek in het voorjaar (smeltwater). Regenrivieren volgen het neerslagpatroon."
+      "d": 3,
+      "u": "Het regime is het jaarpatroon van de afvoer.",
+      "uo": [
+       "Klopt: het regime is het jaarpatroon van de afvoer.",
+       "Nee, dat is de delta.",
+       "Nee, dat is een maat.",
+       "Nee, dat is een maat."
+      ],
+      "uh": "Rivierregime: jaarpatroon van de waterafvoer."
      },
      {
       "v": "Wat is klimaatverandering?",
       "o": [
-       "Langdurige verschuiving van klimaatgemiddelden",
-       "Kortstondig weersextreem zoals een storm",
-       "Seizoenswisseling in één jaar",
-       "Regionale temperatuurvariatie in één land"
+       "het weer van vandaag",
+       "een langdurige verschuiving van de klimaatgemiddelden",
+       "een korte hittegolf",
+       "de afvoer van een rivier"
       ],
-      "c": 0,
-      "u": "Klimaatverandering = langetermijnverschuiving in temperatuur en weerspatronen. Huidig: door menselijke uitstoot van CO₂ en methaan. Gevolgen: zeespiegelstijging, extremer weer, smeltende gletsjers."
+      "c": 1,
+      "d": 2,
+      "u": "Het gaat om langjarige gemiddelden.",
+      "uo": [
+       "Nee, dat is het weer.",
+       "Klopt: het gaat om langjarige gemiddelden.",
+       "Nee, dat is kortstondig.",
+       "Nee, dat is een rivierregime."
+      ],
+      "uh": "Klimaatverandering: verschuiving van klimaatgemiddelden."
      },
      {
       "v": "Wat is een delta?",
       "o": [
-       "Laaggelegen riviermondingsgebied vol sediment",
-       "Berggebied aan de bron van een rivier",
-       "Verbinding tussen rivier en kanaal",
-       "Snel stromend gedeelte van een rivier"
+       "een plek waar een plaat omlaagduikt",
+       "een hittepunt in de aardmantel",
+       "een laaggelegen riviermondingsgebied vol sediment",
+       "een bergtop"
       ],
-      "c": 0,
-      "u": "Een delta = riviermondingsgebied waar de rivier vertakt en sediment afzet. Ontstaat doordat de rivier vaart verliest en zijn lading loslaat. Voorbeelden: Nijldelta, Mekongdelta, Rijn-Maasdelta."
+      "c": 2,
+      "d": 2,
+      "u": "Een delta ontstaat door sedimentatie in de monding.",
+      "uo": [
+       "Nee, dat is een subductiezone.",
+       "Nee, dat is een hotspot.",
+       "Klopt: een delta ontstaat door sedimentatie in de monding.",
+       "Nee, dat is het tegenovergestelde van laag."
+      ],
+      "uh": "Delta: riviermonding vol sediment."
      },
      {
       "v": "Wat is verwering?",
       "o": [
-       "Ter plekke afbreken van gesteente",
-       "Transport van afgebroken materiaal",
-       "Afzetting van sediment in rivieren",
-       "Omhoogpersen van gesteente door tektoniek"
-      ],
-      "c": 0,
-      "u": "Verwering = ter plekke afbreken van gesteente door fysische processen (vorst, hitte) of chemische processen (zuur). Verschil met erosie: bij verwering blijft het materiaal op zijn plek."
-     },
-     {
-      "v": "Wat is een hotspot in vulkanologie?",
-      "o": [
-       "Vast hittepunt diep in de aardmantel",
-       "Snel bewegende tektonische plaat",
-       "Grens tussen twee tektonische platen",
-       "Ondiepe aardbeving dichtbij de kust"
-      ],
-      "c": 0,
-      "u": "Een hotspot = een vast punt van verhoogde hitte in de aardmantel. De plaat beweegt erover heen en er ontstaat een reeks vulkanen (bijv. Hawaï-eilanden). Onafhankelijk van plaatgrenzen."
-     },
-     {
-      "v": "Wat is een moesson?",
-      "o": [
-       "Seizoensgebonden windpatroon met regens",
-       "Tropische cycloon met hevige wind",
-       "Droge hete wind vanuit de woestijn",
-       "Koud oceaanstroompatroon nabij evenaar"
-      ],
-      "c": 0,
-      "u": "Een moesson = seizoensgebonden windpatroon dat omslaat tussen zomer (vochtige wind van zee naar land) en winter (droge wind van land naar zee). Brengt in zomer enorme regenval (Azië, India)."
-     },
-     {
-      "v": "Wat betekent «Weer»?",
-      "o": [
-       "de trek van het platteland naar de stad",
-       "de toestand van de atmosfeer op korte termijn",
-       "opbouw en verandering van steden",
-       "een kaart die één onderwerp toont"
-      ],
-      "c": 1,
-      "u": "«Weer» betekent: de toestand van de atmosfeer op korte termijn.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de toestand van de atmosfeer op korte termijn\"?",
-      "o": [
-       "Weer",
-       "Milieu",
-       "Krimp",
-       "Bevolkingsdichtheid"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Weer»: de toestand van de atmosfeer op korte termijn.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de toestand van de atmosfeer op korte termijn\"?",
-      "o": [
-       "Klimaat & verwering",
-       "Sediment",
-       "Platentektoniek",
-       "Weer"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Weer»: de toestand van de atmosfeer op korte termijn.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Weer» in?",
-      "o": [
-       "de toestand van de atmosfeer op korte termijn",
-       "het gemiddelde weer over lange tijd",
-       "het aanpassen aan de gevolgen van klimaatverandering",
-       "samengeperste lagen puinzandsteen, kalksteen"
-      ],
-      "c": 0,
-      "u": "«Weer» betekent: de toestand van de atmosfeer op korte termijn.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Klimaat»?",
-      "o": [
-       "het gemiddelde weer over lange tijd",
-       "wereldwijde handel en productieeen spijkerbroek gemaakt in Bangladesh",
-       "de beweging van de platen van de aardkorst",
-       "het wegslijten en afvoeren van gesteente"
-      ],
-      "c": 0,
-      "u": "«Klimaat» betekent: het gemiddelde weer over lange tijd.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het gemiddelde weer over lange tijd\"?",
-      "o": [
-       "Informele sector",
-       "Klimaat",
-       "Demografisch",
-       "Suburbanisatie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Klimaat»: het gemiddelde weer over lange tijd.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het gemiddelde weer over lange tijd\"?",
-      "o": [
-       "Klimaat",
-       "Erosie",
-       "Broeikaseffect",
-       "Natuurlijke risico's"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Klimaat»: het gemiddelde weer over lange tijd.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Klimaat» in?",
-      "o": [
-       "het gemiddelde weer over lange tijd",
-       "samengeperste lagen puinzandsteen, kalksteen",
-       "afgezet materiaal zoals zand en klei",
-       "stollings-, sediment- en metamorf gesteente"
-      ],
-      "c": 0,
-      "u": "«Klimaat» betekent: het gemiddelde weer over lange tijd.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Erosie»?",
-      "o": [
-       "met betrekking tot de opbouw en ontwikkeling van de bevolking",
-       "het wegslijten en afvoeren van gesteente",
-       "rijke kernlanden vs. arme periferie",
-       "de afname van de bevolking in een gebied"
-      ],
-      "c": 1,
-      "u": "«Erosie» betekent: het wegslijten en afvoeren van gesteente.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het wegslijten en afvoeren van gesteente\"?",
-      "o": [
-       "Pushfactor",
-       "Stollingsgesteente",
-       "Regionale verschillen",
-       "Erosie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Erosie»: het wegslijten en afvoeren van gesteente.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het wegslijten en afvoeren van gesteente\"?",
-      "o": [
-       "Platentektoniek",
-       "Erosie",
-       "Verwering",
-       "Natuurlijke risico's"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Erosie»: het wegslijten en afvoeren van gesteente.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Erosie» in?",
-      "o": [
-       "afgezet materiaal zoals zand en klei",
-       "stollings-, sediment- en metamorf gesteente",
-       "het wegslijten en afvoeren van gesteente",
-       "hoe water, wind en ijs het land slijten"
-      ],
-      "c": 2,
-      "u": "«Erosie» betekent: het wegslijten en afvoeren van gesteente.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Sediment»?",
-      "o": [
-       "lokaal, regionaal, nationaal of mondiaal",
-       "het beperken van de oorzaak van klimaatverandering",
-       "afgezet materiaal zoals zand en klei",
-       "de netwerken van wegen, spoor en leidingen"
-      ],
-      "c": 2,
-      "u": "«Sediment» betekent: afgezet materiaal zoals zand en klei.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"afgezet materiaal zoals zand en klei\"?",
-      "o": [
-       "Sediment",
-       "Weer",
-       "Urbanisatie",
-       "Globalisering"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Sediment»: afgezet materiaal zoals zand en klei.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"afgezet materiaal zoals zand en klei\"?",
-      "o": [
-       "Stollingsgesteente",
-       "Metamorf gesteente",
-       "Verwering",
-       "Sediment"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Sediment»: afgezet materiaal zoals zand en klei.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Sediment» in?",
-      "o": [
-       "afgekoeld magma/lavagraniet, basalt",
-       "afgezet materiaal zoals zand en klei",
-       "omgevormd door druk en hittemarmer, leisteen",
-       "de toestand van de atmosfeer op korte termijn"
-      ],
-      "c": 1,
-      "u": "«Sediment» betekent: afgezet materiaal zoals zand en klei.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vulkanisme»?",
-      "o": [
-       "de toenemende wereldwijde verwevenheid",
-       "het beperken van de oorzaak van klimaatverandering",
-       "de trek van het platteland naar de stad",
-       "het aan de oppervlakte komen van magma"
-      ],
-      "c": 3,
-      "u": "«Vulkanisme» betekent: het aan de oppervlakte komen van magma.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het aan de oppervlakte komen van magma\"?",
-      "o": [
-       "Mitigatie",
-       "Infrastructuur",
-       "Vulkanisme",
-       "Ligging & natuur"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Vulkanisme»: het aan de oppervlakte komen van magma.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het aan de oppervlakte komen van magma\"?",
-      "o": [
-       "Erosie",
-       "Vulkanisme",
-       "Gesteentekringloop",
-       "Metamorf gesteente"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Vulkanisme»: het aan de oppervlakte komen van magma.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vulkanisme» in?",
-      "o": [
-       "het ter plekke afbreken van gesteente",
-       "het aan de oppervlakte komen van magma",
-       "het gemiddelde weer over lange tijd",
-       "krachten van binnenuit vs. van buitenaf"
-      ],
-      "c": 1,
-      "u": "«Vulkanisme» betekent: het aan de oppervlakte komen van magma.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Broeikaseffect»?",
-      "o": [
-       "krachten van binnenuit vs. van buitenaf",
-       "afgekoeld magma/lavagraniet, basalt",
-       "het vasthouden van warmte door broeikasgassen",
-       "het aan de oppervlakte komen van magma"
-      ],
-      "c": 2,
-      "u": "«Broeikaseffect» betekent: het vasthouden van warmte door broeikasgassen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het vasthouden van warmte door broeikasgassen\"?",
-      "o": [
-       "Broeikaseffect",
-       "Verwering",
-       "Klimaat",
-       "Urbanisatie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Broeikaseffect»: het vasthouden van warmte door broeikasgassen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het vasthouden van warmte door broeikasgassen\"?",
-      "o": [
-       "Broeikaseffect",
-       "Sediment",
-       "Subductie",
-       "Metamorf gesteente"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Broeikaseffect»: het vasthouden van warmte door broeikasgassen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Broeikaseffect» in?",
-      "o": [
-       "het vasthouden van warmte door broeikasgassen",
-       "stollings-, sediment- en metamorf gesteente",
-       "afgezet materiaal zoals zand en klei",
-       "het aan de oppervlakte komen van magma"
-      ],
-      "c": 0,
-      "u": "«Broeikaseffect» betekent: het vasthouden van warmte door broeikasgassen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Platentektoniek»?",
-      "o": [
-       "de beweging van de platen van de aardkorst",
-       "het aantal inwoners per vierkante kilometer",
-       "samengeperste lagen puinzandsteen, kalksteen",
-       "omgevormd door druk en hittemarmer, leisteen"
-      ],
-      "c": 0,
-      "u": "«Platentektoniek» betekent: de beweging van de platen van de aardkorst.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de beweging van de platen van de aardkorst\"?",
-      "o": [
-       "Suburbanisatie",
-       "Platentektoniek",
-       "Centrum–periferie",
-       "Demografische transitie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Platentektoniek»: de beweging van de platen van de aardkorst.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de beweging van de platen van de aardkorst\"?",
-      "o": [
-       "Platentektoniek",
-       "Stollingsgesteente",
-       "Mitigatie",
-       "Vulkanisme"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Platentektoniek»: de beweging van de platen van de aardkorst.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Platentektoniek» in?",
-      "o": [
-       "de toestand van de atmosfeer op korte termijn",
-       "de beweging van de platen van de aardkorst",
-       "afgekoeld magma/lavagraniet, basalt",
-       "het gemiddelde weer over lange tijd"
-      ],
-      "c": 1,
-      "u": "«Platentektoniek» betekent: de beweging van de platen van de aardkorst.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Subductie»?",
-      "o": [
-       "orkanen, toerisme, kwetsbaarheid",
-       "laaggelegen, door dijken omringd en drooggemalen land",
-       "het onder een andere plaat schuiven van een plaat",
-       "economisch, cultureel, politiek, demografisch"
-      ],
-      "c": 2,
-      "u": "«Subductie» betekent: het onder een andere plaat schuiven van een plaat.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het onder een andere plaat schuiven van een plaat\"?",
-      "o": [
-       "Grondstof",
-       "Subductie",
-       "Krottenwijk",
-       "Bevolkingsdichtheid"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Subductie»: het onder een andere plaat schuiven van een plaat.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het onder een andere plaat schuiven van een plaat\"?",
-      "o": [
-       "Gesteentekringloop",
-       "Subductie",
-       "Mitigatie",
-       "Endogeen vs. exogeen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Subductie»: het onder een andere plaat schuiven van een plaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Subductie» in?",
-      "o": [
-       "het onder een andere plaat schuiven van een plaat",
-       "het aanpassen aan de gevolgen van klimaatverandering",
-       "stollings-, sediment- en metamorf gesteente",
-       "het wegslijten en afvoeren van gesteente"
-      ],
-      "c": 0,
-      "u": "«Subductie» betekent: het onder een andere plaat schuiven van een plaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Mitigatie»?",
-      "o": [
-       "de vooruitgang in welvaart en welzijn",
-       "het beperken van de oorzaak van klimaatverandering",
-       "het aantal inwoners per vierkante kilometer",
-       "het stedelijke kerngebied van Nederland"
-      ],
-      "c": 1,
-      "u": "«Mitigatie» betekent: het beperken van de oorzaak van klimaatverandering. Tegenover adaptatie: mitigatie pakt de oorzaak aan, adaptatie de gevolgen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het beperken van de oorzaak van klimaatverandering\"?",
-      "o": [
-       "Welvaartsverdeling",
-       "Mitigatie",
-       "Klimaat & verwering",
-       "Stedelijke gebieden"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Mitigatie»: het beperken van de oorzaak van klimaatverandering. Tegenover adaptatie: mitigatie pakt de oorzaak aan, adaptatie de gevolgen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het beperken van de oorzaak van klimaatverandering\"?",
-      "o": [
-       "Klimaat & verwering",
-       "Mitigatie",
-       "Verwering",
-       "Metamorf gesteente"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Mitigatie»: het beperken van de oorzaak van klimaatverandering. Tegenover adaptatie: mitigatie pakt de oorzaak aan, adaptatie de gevolgen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Mitigatie» in?",
-      "o": [
-       "het beperken van de oorzaak van klimaatverandering",
-       "afgekoeld magma/lavagraniet, basalt",
-       "het vasthouden van warmte door broeikasgassen",
-       "het aanpassen aan de gevolgen van klimaatverandering"
-      ],
-      "c": 0,
-      "u": "«Mitigatie» betekent: het beperken van de oorzaak van klimaatverandering. Tegenover adaptatie: mitigatie pakt de oorzaak aan, adaptatie de gevolgen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Adaptatie»?",
-      "o": [
-       "ongelijke machts- en geldstromen",
-       "een arme, ongeplande stadswijk",
-       "stollings-, sediment- en metamorf gesteente",
-       "het aanpassen aan de gevolgen van klimaatverandering"
-      ],
-      "c": 3,
-      "u": "«Adaptatie» betekent: het aanpassen aan de gevolgen van klimaatverandering. Tegenover mitigatie: adaptatie pakt de gevolgen aan.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het aanpassen aan de gevolgen van klimaatverandering\"?",
-      "o": [
-       "Endogeen vs. exogeen",
-       "Adaptatie",
-       "Regionale verschillen",
-       "HDI"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Adaptatie»: het aanpassen aan de gevolgen van klimaatverandering. Tegenover mitigatie: adaptatie pakt de gevolgen aan.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het aanpassen aan de gevolgen van klimaatverandering\"?",
-      "o": [
-       "Weer",
-       "Adaptatie",
-       "Subductie",
-       "Vulkanisme"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Adaptatie»: het aanpassen aan de gevolgen van klimaatverandering. Tegenover mitigatie: adaptatie pakt de gevolgen aan.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Adaptatie» in?",
-      "o": [
-       "afgekoeld magma/lavagraniet, basalt",
-       "aardbevingen, vulkanen, overstromingen",
-       "het aanpassen aan de gevolgen van klimaatverandering",
-       "afgezet materiaal zoals zand en klei"
-      ],
-      "c": 2,
-      "u": "«Adaptatie» betekent: het aanpassen aan de gevolgen van klimaatverandering. Tegenover mitigatie: adaptatie pakt de gevolgen aan.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verwering»?",
-      "o": [
-       "een arme, ongeplande stadswijk",
-       "het ter plekke afbreken van gesteente",
-       "de trek van het platteland naar de stad",
-       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs"
-      ],
-      "c": 1,
-      "u": "«Verwering» betekent: het ter plekke afbreken van gesteente.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het ter plekke afbreken van gesteente\"?",
-      "o": [
-       "Verwering",
-       "Schaalniveau",
-       "Absolute afstand",
-       "Regionale verschillen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Verwering»: het ter plekke afbreken van gesteente.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het ter plekke afbreken van gesteente\"?",
-      "o": [
-       "Broeikaseffect",
-       "Erosie",
-       "Verwering",
-       "Klimaat"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Verwering»: het ter plekke afbreken van gesteente.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Verwering» in?",
-      "o": [
-       "het beperken van de oorzaak van klimaatverandering",
-       "afgezet materiaal zoals zand en klei",
-       "het vasthouden van warmte door broeikasgassen",
+       "het wegduiken van een plaat",
+       "het afvoeren van materiaal",
+       "het afzetten van sediment",
        "het ter plekke afbreken van gesteente"
       ],
       "c": 3,
-      "u": "«Verwering» betekent: het ter plekke afbreken van gesteente.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Endogeen vs. exogeen»?",
-      "o": [
-       "de kans op een overstroming maal het gevolg",
-       "krachten van binnenuit vs. van buitenaf",
-       "een niet-willekeurige verdeling over de ruimte",
-       "met betrekking tot de opbouw en ontwikkeling van de bevolking"
+      "d": 2,
+      "u": "Verwering breekt gesteente af zonder het te verplaatsen.",
+      "uo": [
+       "Nee, dat is subductie.",
+       "Nee, dat is erosie.",
+       "Nee, dat is sedimentatie.",
+       "Klopt: verwering breekt gesteente af zonder het te verplaatsen."
       ],
-      "c": 1,
-      "u": "«Endogeen vs. exogeen» betekent: krachten van binnenuit vs. van buitenaf.",
-      "d": 1
+      "uh": "Verwering: gesteente ter plekke afbreken."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"krachten van binnenuit vs. van buitenaf\"?",
+      "v": "Wat is een hotspot in de vulkanologie?",
       "o": [
-       "Endogeen vs. exogeen",
-       "Urbanisatie",
-       "Overstromingsrisico",
-       "Stollingsgesteente"
+       "een vast hittepunt diep in de aardmantel",
+       "een plek waar twee platen botsen",
+       "een riviermonding",
+       "een gebied met veel erosie"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Endogeen vs. exogeen»: krachten van binnenuit vs. van buitenaf.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"krachten van binnenuit vs. van buitenaf\"?",
-      "o": [
-       "Gesteentekringloop",
-       "Sedimentgesteente",
-       "Klimaat & verwering",
-       "Endogeen vs. exogeen"
+      "d": 3,
+      "u": "Boven een hotspot ontstaat vulkanisme.",
+      "uo": [
+       "Klopt: boven een hotspot ontstaat vulkanisme.",
+       "Nee, dat is een plaatgrens.",
+       "Nee, dat is een delta.",
+       "Nee, dat is exogeen."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Endogeen vs. exogeen»: krachten van binnenuit vs. van buitenaf.",
-      "d": 3
+      "uh": "Hotspot: vast hittepunt in de mantel."
      },
      {
-      "v": "Wat houdt «Endogeen vs. exogeen» in?",
+      "v": "Wat is het verschil tussen erosie en verwering?",
       "o": [
-       "het onder een andere plaat schuiven van een plaat",
-       "het beperken van de oorzaak van klimaatverandering",
-       "de toestand van de atmosfeer op korte termijn",
-       "krachten van binnenuit vs. van buitenaf"
-      ],
-      "c": 3,
-      "u": "«Endogeen vs. exogeen» betekent: krachten van binnenuit vs. van buitenaf.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Gesteentekringloop»?",
-      "o": [
-       "absoluut (km) vs. relatief (tijd/kosten)",
-       "stollings-, sediment- en metamorf gesteente",
-       "economische activiteit buiten de registratie",
-       "de beweging van de platen van de aardkorst"
+       "ze zijn hetzelfde",
+       "erosie voert materiaal af, verwering breekt gesteente ter plekke af",
+       "erosie breekt ter plekke af",
+       "verwering voert materiaal af"
       ],
       "c": 1,
-      "u": "«Gesteentekringloop» betekent: stollings-, sediment- en metamorf gesteente.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"stollings-, sediment- en metamorf gesteente\"?",
-      "o": [
-       "Gesteentekringloop",
-       "Randstad",
-       "Migratie",
-       "Klimaat & verwering"
+      "d": 3,
+      "u": "Afvoeren tegenover ter plekke afbreken.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Klopt: afvoeren tegenover ter plekke afbreken.",
+       "Nee, dat is verwering.",
+       "Nee, dat is erosie."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Gesteentekringloop»: stollings-, sediment- en metamorf gesteente.",
-      "d": 2
+      "uh": "Erosie: afvoer; verwering: ter plekke afbreken."
      },
      {
-      "v": "Welke term past bij: \"stollings-, sediment- en metamorf gesteente\"?",
-      "o": [
-       "Vulkanisme",
-       "Adaptatie",
-       "Subductie",
-       "Gesteentekringloop"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Gesteentekringloop»: stollings-, sediment- en metamorf gesteente.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Gesteentekringloop» in?",
-      "o": [
-       "het wegslijten en afvoeren van gesteente",
-       "samengeperste lagen puinzandsteen, kalksteen",
-       "stollings-, sediment- en metamorf gesteente",
-       "het beperken van de oorzaak van klimaatverandering"
-      ],
-      "c": 2,
-      "u": "«Gesteentekringloop» betekent: stollings-, sediment- en metamorf gesteente.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Klimaat & verwering»?",
-      "o": [
-       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
-       "de afstand gemeten in reistijd of kosten",
-       "de trek van het platteland naar de stad",
-       "hoe water, wind en ijs het land slijten"
-      ],
-      "c": 3,
-      "u": "«Klimaat & verwering» betekent: hoe water, wind en ijs het land slijten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hoe water, wind en ijs het land slijten\"?",
-      "o": [
-       "HDI",
-       "Water & veiligheid",
-       "Subductie",
-       "Klimaat & verwering"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Klimaat & verwering»: hoe water, wind en ijs het land slijten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"hoe water, wind en ijs het land slijten\"?",
-      "o": [
-       "Subductie",
-       "Klimaat & verwering",
-       "Broeikaseffect",
-       "Stollingsgesteente"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Klimaat & verwering»: hoe water, wind en ijs het land slijten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Klimaat & verwering» in?",
-      "o": [
-       "hoe water, wind en ijs het land slijten",
-       "het gemiddelde weer over lange tijd",
-       "krachten van binnenuit vs. van buitenaf",
-       "het wegslijten en afvoeren van gesteente"
-      ],
-      "c": 0,
-      "u": "«Klimaat & verwering» betekent: hoe water, wind en ijs het land slijten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Natuurlijke risico's»?",
-      "o": [
-       "een economie die op één product leunt",
-       "de toestand van de atmosfeer op korte termijn",
-       "waar, waarom dáár, en met welk gevolg?",
-       "aardbevingen, vulkanen, overstromingen"
-      ],
-      "c": 3,
-      "u": "«Natuurlijke risico's» betekent: aardbevingen, vulkanen, overstromingen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"aardbevingen, vulkanen, overstromingen\"?",
-      "o": [
-       "Natuurlijke risico's",
-       "Vergrijzing",
-       "Globalisering",
-       "Relatieve afstand"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Natuurlijke risico's»: aardbevingen, vulkanen, overstromingen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"aardbevingen, vulkanen, overstromingen\"?",
-      "o": [
-       "Vulkanisme",
-       "Sediment",
-       "Natuurlijke risico's",
-       "Klimaat & verwering"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Natuurlijke risico's»: aardbevingen, vulkanen, overstromingen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Natuurlijke risico's» in?",
-      "o": [
-       "het aanpassen aan de gevolgen van klimaatverandering",
-       "het beperken van de oorzaak van klimaatverandering",
-       "aardbevingen, vulkanen, overstromingen",
-       "stollings-, sediment- en metamorf gesteente"
-      ],
-      "c": 2,
-      "u": "«Natuurlijke risico's» betekent: aardbevingen, vulkanen, overstromingen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Stollingsgesteente»?",
-      "o": [
-       "een arme, ongeplande stadswijk",
-       "afgekoeld magma/lavagraniet, basalt",
-       "de beweging van de platen van de aardkorst",
-       "rijke kernlanden vs. arme periferie"
-      ],
-      "c": 1,
-      "u": "«Stollingsgesteente» betekent: afgekoeld magma/lavagraniet, basalt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"afgekoeld magma/lavagraniet, basalt\"?",
-      "o": [
-       "Stollingsgesteente",
-       "Ruimtelijk patroon",
-       "Thematische kaart",
-       "Randstad"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Stollingsgesteente»: afgekoeld magma/lavagraniet, basalt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"afgekoeld magma/lavagraniet, basalt\"?",
-      "o": [
-       "Subductie",
-       "Erosie",
-       "Broeikaseffect",
-       "Stollingsgesteente"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Stollingsgesteente»: afgekoeld magma/lavagraniet, basalt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Stollingsgesteente» in?",
-      "o": [
-       "samengeperste lagen puinzandsteen, kalksteen",
-       "afgekoeld magma/lavagraniet, basalt",
-       "het wegslijten en afvoeren van gesteente",
-       "aardbevingen, vulkanen, overstromingen"
-      ],
-      "c": 1,
-      "u": "«Stollingsgesteente» betekent: afgekoeld magma/lavagraniet, basalt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Sedimentgesteente»?",
-      "o": [
-       "met betrekking tot de opbouw en ontwikkeling van de bevolking",
-       "verspreiding van gewoonten en mediadezelfde films en merken overal",
-       "de trek van de stad naar de rand of het ommeland",
-       "samengeperste lagen puinzandsteen, kalksteen"
-      ],
-      "c": 3,
-      "u": "«Sedimentgesteente» betekent: samengeperste lagen puinzandsteen, kalksteen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"samengeperste lagen puinzandsteen, kalksteen\"?",
-      "o": [
-       "Sedimentgesteente",
-       "Informele sector",
-       "Pullfactor",
-       "Economie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Sedimentgesteente»: samengeperste lagen puinzandsteen, kalksteen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"samengeperste lagen puinzandsteen, kalksteen\"?",
-      "o": [
-       "Vulkanisme",
-       "Klimaat & verwering",
-       "Sedimentgesteente",
-       "Sediment"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Sedimentgesteente»: samengeperste lagen puinzandsteen, kalksteen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Sedimentgesteente» in?",
-      "o": [
-       "hoe water, wind en ijs het land slijten",
-       "het ter plekke afbreken van gesteente",
-       "aardbevingen, vulkanen, overstromingen",
-       "samengeperste lagen puinzandsteen, kalksteen"
-      ],
-      "c": 3,
-      "u": "«Sedimentgesteente» betekent: samengeperste lagen puinzandsteen, kalksteen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Metamorf gesteente»?",
-      "o": [
-       "economisch, cultureel, politiek, demografisch",
-       "met betrekking tot de opbouw en ontwikkeling van de bevolking",
-       "materiaal waaruit je informatie haalt",
-       "omgevormd door druk en hittemarmer, leisteen"
-      ],
-      "c": 3,
-      "u": "«Metamorf gesteente» betekent: omgevormd door druk en hittemarmer, leisteen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"omgevormd door druk en hittemarmer, leisteen\"?",
-      "o": [
-       "Cultureel",
-       "Metamorf gesteente",
-       "Overstromingsrisico",
-       "Afstand"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Metamorf gesteente»: omgevormd door druk en hittemarmer, leisteen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"omgevormd door druk en hittemarmer, leisteen\"?",
+      "v": "Wind, water en ijs vormen het landschap van buitenaf. Welk begrip past hierbij?",
       "o": [
        "Erosie",
-       "Sediment",
+       "Delta",
+       "Exogene processen",
+       "Klimaatverandering"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Wind, water en ijs vormen het landschap van buitenaf. Dat past bij Exogene processen: van buitenaf.",
+      "uo": [
+       "Nee, dat hoort bij Erosie: afvoer van materiaal.",
+       "Nee, dat hoort bij Delta: riviermonding vol sediment.",
+       "Klopt: van buitenaf.",
+       "Nee, dat hoort bij Klimaatverandering: verschuiving van klimaatgemiddelden."
+      ],
+      "uh": "Exogene processen: van buitenaf."
+     },
+     {
+      "v": "Het laaggelegen, slibrijke gebied waar een rivier in zee mondt. Om welk begrip gaat het?",
+      "o": [
+       "Klimaatverandering",
+       "Erosie",
+       "Subductiezone",
+       "Delta"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het laaggelegen, slibrijke gebied waar een rivier in zee mondt. Dat past bij Delta: riviermonding vol sediment.",
+      "uo": [
+       "Nee, dat hoort bij Klimaatverandering: verschuiving van klimaatgemiddelden.",
+       "Nee, dat hoort bij Erosie: afvoer van materiaal.",
+       "Nee, dat hoort bij Subductiezone: plaat duikt omlaag.",
+       "Klopt: riviermonding vol sediment."
+      ],
+      "uh": "Delta: riviermonding vol sediment."
+     },
+     {
+      "v": "Een riviermondingsgebied vol sediment. Welk begrip herken je hier?",
+      "o": [
+       "Delta",
+       "Erosie",
+       "Subductiezone",
+       "Klimaatverandering"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een riviermondingsgebied vol sediment. Dat past bij Delta: riviermonding vol sediment.",
+      "uo": [
+       "Klopt: riviermonding vol sediment.",
+       "Nee, dat hoort bij Erosie: afvoer van materiaal.",
+       "Nee, dat hoort bij Subductiezone: plaat duikt omlaag.",
+       "Nee, dat hoort bij Klimaatverandering: verschuiving van klimaatgemiddelden."
+      ],
+      "uh": "Delta: riviermonding vol sediment."
+     },
+     {
+      "v": "Een langdurige verschuiving van klimaatgemiddelden. Wat is hier aan de hand?",
+      "o": [
+       "Hotspot",
+       "Klimaatverandering",
+       "Endogene processen",
+       "Rivierregime"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een langdurige verschuiving van klimaatgemiddelden. Dat past bij Klimaatverandering: verschuiving van klimaatgemiddelden.",
+      "uo": [
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel.",
+       "Klopt: verschuiving van klimaatgemiddelden.",
+       "Nee, dat hoort bij Endogene processen: van binnenuit.",
+       "Nee, dat hoort bij Rivierregime: jaarpatroon van waterafvoer."
+      ],
+      "uh": "Klimaatverandering: verschuiving van klimaatgemiddelden."
+     },
+     {
+      "v": "De langjarige gemiddelden van temperatuur en neerslag schuiven op. Welk begrip past hierbij?",
+      "o": [
+       "Endogene processen",
+       "Hotspot",
+       "Klimaatverandering",
+       "Rivierregime"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De langjarige gemiddelden van temperatuur en neerslag schuiven op. Dat past bij Klimaatverandering: verschuiving van klimaatgemiddelden.",
+      "uo": [
+       "Nee, dat hoort bij Endogene processen: van binnenuit.",
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel.",
+       "Klopt: verschuiving van klimaatgemiddelden.",
+       "Nee, dat hoort bij Rivierregime: jaarpatroon van waterafvoer."
+      ],
+      "uh": "Klimaatverandering: verschuiving van klimaatgemiddelden."
+     },
+     {
+      "v": "Het jaarpatroon van de waterafvoer. Om welk begrip gaat het?",
+      "o": [
+       "Hotspot",
+       "Subductiezone",
+       "Sedimentatie",
+       "Rivierregime"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Het jaarpatroon van de waterafvoer. Dat past bij Rivierregime: jaarpatroon van waterafvoer.",
+      "uo": [
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel.",
+       "Nee, dat hoort bij Subductiezone: plaat duikt omlaag.",
+       "Nee, dat hoort bij Sedimentatie: afzetting van materiaal.",
+       "Klopt: jaarpatroon van waterafvoer."
+      ],
+      "uh": "Rivierregime: jaarpatroon van waterafvoer."
+     },
+     {
+      "v": "Het ter plekke afbreken van gesteente. Welk begrip herken je hier?",
+      "o": [
        "Verwering",
-       "Metamorf gesteente"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Metamorf gesteente»: omgevormd door druk en hittemarmer, leisteen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Metamorf gesteente» in?",
-      "o": [
-       "omgevormd door druk en hittemarmer, leisteen",
-       "afgezet materiaal zoals zand en klei",
-       "hoe water, wind en ijs het land slijten",
-       "stollings-, sediment- en metamorf gesteente"
+       "Erosie",
+       "Subductiezone",
+       "Rivierregime"
       ],
       "c": 0,
-      "u": "«Metamorf gesteente» betekent: omgevormd door druk en hittemarmer, leisteen.",
-      "d": 3
+      "d": 2,
+      "u": "Het ter plekke afbreken van gesteente. Dat past bij Verwering: ter plekke afbreken.",
+      "uo": [
+       "Klopt: ter plekke afbreken.",
+       "Nee, dat hoort bij Erosie: afvoer van materiaal.",
+       "Nee, dat hoort bij Subductiezone: plaat duikt omlaag.",
+       "Nee, dat hoort bij Rivierregime: jaarpatroon van waterafvoer."
+      ],
+      "uh": "Verwering: ter plekke afbreken."
+     },
+     {
+      "v": "Vorst en wortels breken het gesteente ter plekke af. Wat is hier aan de hand?",
+      "o": [
+       "Erosie",
+       "Verwering",
+       "Endogene processen",
+       "Hotspot"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Vorst en wortels breken het gesteente ter plekke af. Dat past bij Verwering: ter plekke afbreken.",
+      "uo": [
+       "Nee, dat hoort bij Erosie: afvoer van materiaal.",
+       "Klopt: ter plekke afbreken.",
+       "Nee, dat hoort bij Endogene processen: van binnenuit.",
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel."
+      ],
+      "uh": "Verwering: ter plekke afbreken."
+     },
+     {
+      "v": "De afvoer van materiaal. Welk begrip past hierbij?",
+      "o": [
+       "Hotspot",
+       "Klimaatverandering",
+       "Erosie",
+       "Endogene processen"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De afvoer van materiaal. Dat past bij Erosie: afvoer van materiaal.",
+      "uo": [
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel.",
+       "Nee, dat hoort bij Klimaatverandering: verschuiving van klimaatgemiddelden.",
+       "Klopt: afvoer van materiaal.",
+       "Nee, dat hoort bij Endogene processen: van binnenuit."
+      ],
+      "uh": "Erosie: afvoer van materiaal."
+     },
+     {
+      "v": "Water en wind voeren zand en steen mee. Om welk begrip gaat het?",
+      "o": [
+       "Hotspot",
+       "Sedimentatie",
+       "Verwering",
+       "Erosie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Water en wind voeren zand en steen mee. Dat past bij Erosie: afvoer van materiaal.",
+      "uo": [
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel.",
+       "Nee, dat hoort bij Sedimentatie: afzetting van materiaal.",
+       "Nee, dat hoort bij Verwering: ter plekke afbreken.",
+       "Klopt: afvoer van materiaal."
+      ],
+      "uh": "Erosie: afvoer van materiaal."
+     },
+     {
+      "v": "Waar een plaat omlaagduikt. Welk begrip herken je hier?",
+      "o": [
+       "Subductiezone",
+       "Hotspot",
+       "Klimaatverandering",
+       "Verwering"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Waar een plaat omlaagduikt. Dat past bij Subductiezone: plaat duikt omlaag.",
+      "uo": [
+       "Klopt: plaat duikt omlaag.",
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel.",
+       "Nee, dat hoort bij Klimaatverandering: verschuiving van klimaatgemiddelden.",
+       "Nee, dat hoort bij Verwering: ter plekke afbreken."
+      ],
+      "uh": "Subductiezone: plaat duikt omlaag."
+     },
+     {
+      "v": "Een vast hittepunt in de aardmantel. Wat is hier aan de hand?",
+      "o": [
+       "Verwering",
+       "Hotspot",
+       "Rivierregime",
+       "Klimaatverandering"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een vast hittepunt in de aardmantel. Dat past bij Hotspot: vast hittepunt in de mantel.",
+      "uo": [
+       "Nee, dat hoort bij Verwering: ter plekke afbreken.",
+       "Klopt: vast hittepunt in de mantel.",
+       "Nee, dat hoort bij Rivierregime: jaarpatroon van waterafvoer.",
+       "Nee, dat hoort bij Klimaatverandering: verschuiving van klimaatgemiddelden."
+      ],
+      "uh": "Hotspot: vast hittepunt in de mantel."
+     },
+     {
+      "v": "Processen van binnenuit de aarde. Welk begrip past hierbij?",
+      "o": [
+       "Sedimentatie",
+       "Exogene processen",
+       "Endogene processen",
+       "Subductiezone"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Processen van binnenuit de aarde. Dat past bij Endogene processen: van binnenuit.",
+      "uo": [
+       "Nee, dat hoort bij Sedimentatie: afzetting van materiaal.",
+       "Nee, dat hoort bij Exogene processen: van buitenaf.",
+       "Klopt: van binnenuit.",
+       "Nee, dat hoort bij Subductiezone: plaat duikt omlaag."
+      ],
+      "uh": "Endogene processen: van binnenuit."
+     },
+     {
+      "v": "Het jaarlijkse patroon waarmee een rivier meer of minder water afvoert. Om welk begrip gaat het?",
+      "o": [
+       "Subductiezone",
+       "Delta",
+       "Sedimentatie",
+       "Rivierregime"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het jaarlijkse patroon waarmee een rivier meer of minder water afvoert. Dat past bij Rivierregime: jaarpatroon van waterafvoer.",
+      "uo": [
+       "Nee, dat hoort bij Subductiezone: plaat duikt omlaag.",
+       "Nee, dat hoort bij Delta: riviermonding vol sediment.",
+       "Nee, dat hoort bij Sedimentatie: afzetting van materiaal.",
+       "Klopt: jaarpatroon van waterafvoer."
+      ],
+      "uh": "Rivierregime: jaarpatroon van waterafvoer."
+     },
+     {
+      "v": "Processen van buitenaf. Welk begrip herken je hier?",
+      "o": [
+       "Exogene processen",
+       "Delta",
+       "Erosie",
+       "Klimaatverandering"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Processen van buitenaf. Dat past bij Exogene processen: van buitenaf.",
+      "uo": [
+       "Klopt: van buitenaf.",
+       "Nee, dat hoort bij Delta: riviermonding vol sediment.",
+       "Nee, dat hoort bij Erosie: afvoer van materiaal.",
+       "Nee, dat hoort bij Klimaatverandering: verschuiving van klimaatgemiddelden."
+      ],
+      "uh": "Exogene processen: van buitenaf."
+     },
+     {
+      "v": "De afzetting van materiaal. Wat is hier aan de hand?",
+      "o": [
+       "Erosie",
+       "Sedimentatie",
+       "Subductiezone",
+       "Exogene processen"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De afzetting van materiaal. Dat past bij Sedimentatie: afzetting van materiaal.",
+      "uo": [
+       "Nee, dat hoort bij Erosie: afvoer van materiaal.",
+       "Klopt: afzetting van materiaal.",
+       "Nee, dat hoort bij Subductiezone: plaat duikt omlaag.",
+       "Nee, dat hoort bij Exogene processen: van buitenaf."
+      ],
+      "uh": "Sedimentatie: afzetting van materiaal."
+     },
+     {
+      "v": "Vulkanisme en plaatbeweging komen van binnenin de aarde. Welk begrip past hierbij?",
+      "o": [
+       "Hotspot",
+       "Exogene processen",
+       "Endogene processen",
+       "Verwering"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Vulkanisme en plaatbeweging komen van binnenin de aarde. Dat past bij Endogene processen: van binnenuit.",
+      "uo": [
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel.",
+       "Nee, dat hoort bij Exogene processen: van buitenaf.",
+       "Klopt: van binnenuit.",
+       "Nee, dat hoort bij Verwering: ter plekke afbreken."
+      ],
+      "uh": "Endogene processen: van binnenuit."
+     },
+     {
+      "v": "De rivier zet zijn slib af in de monding. Om welk begrip gaat het?",
+      "o": [
+       "Hotspot",
+       "Subductiezone",
+       "Rivierregime",
+       "Sedimentatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De rivier zet zijn slib af in de monding. Dat past bij Sedimentatie: afzetting van materiaal.",
+      "uo": [
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel.",
+       "Nee, dat hoort bij Subductiezone: plaat duikt omlaag.",
+       "Nee, dat hoort bij Rivierregime: jaarpatroon van waterafvoer.",
+       "Klopt: afzetting van materiaal."
+      ],
+      "uh": "Sedimentatie: afzetting van materiaal."
+     },
+     {
+      "v": "Een oceaanplaat duikt onder een continentale plaat weg. Welk begrip herken je hier?",
+      "o": [
+       "Subductiezone",
+       "Hotspot",
+       "Rivierregime",
+       "Exogene processen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een oceaanplaat duikt onder een continentale plaat weg. Dat past bij Subductiezone: plaat duikt omlaag.",
+      "uo": [
+       "Klopt: plaat duikt omlaag.",
+       "Nee, dat hoort bij Hotspot: vast hittepunt in de mantel.",
+       "Nee, dat hoort bij Rivierregime: jaarpatroon van waterafvoer.",
+       "Nee, dat hoort bij Exogene processen: van buitenaf."
+      ],
+      "uh": "Subductiezone: plaat duikt omlaag."
+     },
+     {
+      "v": "Een vast hittepunt in de mantel waar vulkanen boven ontstaan. Wat is hier aan de hand?",
+      "o": [
+       "Subductiezone",
+       "Hotspot",
+       "Erosie",
+       "Endogene processen"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een vast hittepunt in de mantel waar vulkanen boven ontstaan. Dat past bij Hotspot: vast hittepunt in de mantel.",
+      "uo": [
+       "Nee, dat hoort bij Subductiezone: plaat duikt omlaag.",
+       "Klopt: vast hittepunt in de mantel.",
+       "Nee, dat hoort bij Erosie: afvoer van materiaal.",
+       "Nee, dat hoort bij Endogene processen: van binnenuit."
+      ],
+      "uh": "Hotspot: vast hittepunt in de mantel."
      }
     ],
     "oe": [
@@ -57635,76 +56657,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Weer",
-      "d": "de toestand van de atmosfeer op korte termijn"
+      "t": "Endogene processen",
+      "d": "processen die van binnenin de aarde komen, zoals vulkanisme"
      },
      {
-      "t": "Klimaat",
-      "d": "het gemiddelde weer over lange tijd"
+      "t": "Exogene processen",
+      "d": "processen die van buitenaf werken, zoals verwering en erosie"
+     },
+     {
+      "t": "Subductiezone",
+      "d": "de plek waar een plaat onder een andere omlaagduikt"
      },
      {
       "t": "Erosie",
-      "d": "het wegslijten en afvoeren van gesteente"
+      "d": "het afvoeren van materiaal door water of wind"
      },
      {
-      "t": "Sediment",
-      "d": "afgezet materiaal zoals zand en klei"
-     },
-     {
-      "t": "Vulkanisme",
-      "d": "het aan de oppervlakte komen van magma"
-     },
-     {
-      "t": "Broeikaseffect",
-      "d": "het vasthouden van warmte door broeikasgassen"
-     },
-     {
-      "t": "Platentektoniek",
-      "d": "de beweging van de platen van de aardkorst"
-     },
-     {
-      "t": "Subductie",
-      "d": "het onder een andere plaat schuiven van een plaat"
-     },
-     {
-      "t": "Mitigatie",
-      "d": "het beperken van de oorzaak van klimaatverandering"
-     },
-     {
-      "t": "Adaptatie",
-      "d": "het aanpassen aan de gevolgen van klimaatverandering"
+      "t": "Sedimentatie",
+      "d": "de afzetting van meegevoerd materiaal op de bodem"
      },
      {
       "t": "Verwering",
       "d": "het ter plekke afbreken van gesteente"
      },
      {
-      "t": "Endogeen vs. exogeen",
-      "d": "krachten van binnenuit vs. van buitenaf"
+      "t": "Rivierregime",
+      "d": "het jaarlijkse patroon van de waterafvoer van een rivier"
      },
      {
-      "t": "Gesteentekringloop",
-      "d": "stollings-, sediment- en metamorf gesteente"
+      "t": "Delta",
+      "d": "een laaggelegen riviermondingsgebied vol sediment"
      },
      {
-      "t": "Klimaat & verwering",
-      "d": "hoe water, wind en ijs het land slijten"
+      "t": "Klimaatverandering",
+      "d": "een langdurige verschuiving van de klimaatgemiddelden"
      },
      {
-      "t": "Natuurlijke risico's",
-      "d": "aardbevingen, vulkanen, overstromingen"
-     },
-     {
-      "t": "Stollingsgesteente",
-      "d": "afgekoeld magma/lavagraniet, basalt"
-     },
-     {
-      "t": "Sedimentgesteente",
-      "d": "samengeperste lagen puinzandsteen, kalksteen"
-     },
-     {
-      "t": "Metamorf gesteente",
-      "d": "omgevormd door druk en hittemarmer, leisteen"
+      "t": "Hotspot",
+      "d": "een vast hittepunt diep in de aardmantel"
      }
     ]
    },
@@ -57732,789 +56722,577 @@ var VAKKEN = [
      "D1 Gebiedskenmerken",
      "D2 Actuele vraagstukken"
     ],
-    "sam": "<div class=\"sam-head\">Kenmerken van een ontwikkelingsland</div><ul><li><strong>Demografische transitie</strong>: historisch model van bevolkingsontwikkeling in 4 fasen: hoog → laag geboorte- en sterftecijfer. Fase 2 = sterke bevolkingsgroei.</li><li><strong>Informele sector</strong>: niet-geregistreerde economische activiteiten (straathandel, klusjesmannen). Groot in ontwikkelingslanden.</li><li><strong>Economische dualiteit</strong>: formele economie (grote bedrijven, overheid) naast informele economie.</li><li><strong>Braindrain</strong>: emigratie van hoogopgeleiden naar rijke landen → land verliest menselijk kapitaal.</li><li><strong>Regionale ongelijkheid</strong>: centrum (hoofdstad) rijker dan periferie (platteland). Oorzaak: infrastructuur, investeringen.</li></ul><div class=\"sam-head\">Ontwikkeling en globalisering</div><ul><li><strong>Ontwikkelingsindicatoren</strong>: BBP per hoofd (welvaart), HDI (opleiding + gezondheid + inkomen), kindersterfte (gezondheidszorg), alfabetiseringsgraad (onderwijs).</li><li><strong>Sociale ongelijkheid</strong>: ongelijke verdeling van kansen en welvaart. Gemeten met Gini-coëfficiënt.</li><li><strong>Urbanisatie</strong>: snelle groei van steden door platteland-stad-migratie. Leidt tot sloppenwijken bij onvoldoende infrastructuur.</li></ul><div class=\"sam-onthoud\">Braindrain = verlies hoogopgeleiden. Informele sector = niet-geregistreerd. Demografische transitie: fase 2 = sterke groei. HDI = inkomen + opleiding + levensverwachting.</div>",
+    "sam": "<div class=\"sam-intro\">In een ontwikkelingsland speelt de <strong>demografische transitie</strong>, een grote <strong>informele sector</strong> en <strong>economische dualiteit</strong>. Er is vaak <strong>regionale ongelijkheid</strong> tussen kern en <strong>periferie</strong>, en <strong>braindrain</strong> van talent. Het <strong>ontwikkelingsniveau</strong> meet je met indicatoren.</div><div class=\"sam-head\">1. Bevolking en economie</div><p>De <strong>demografische transitie</strong> is het model van dalende geboorte- en sterftecijfers. De <strong>informele sector</strong> is economische activiteit buiten de officiële registratie; naast de formele economie ontstaat zo <strong>economische dualiteit</strong>. <strong>Verstedelijking</strong> is de ruimtelijke groei van steden, <strong>urbanisatie</strong> de groei van het bevolkingsaandeel in steden.</p><div class=\"sam-head\">2. Ongelijkheid en ontwikkeling</div><p><strong>Regionale ongelijkheid</strong> zijn de welvaartsverschillen tussen gebieden binnen één land; een <strong>periferiegebied</strong> is economisch marginaal en slecht bereikbaar. <strong>Braindrain</strong> is het vertrek van hoogopgeleiden naar rijke landen. Een <strong>ontwikkelingsindicator</strong> is een maatstaf voor het ontwikkelingsniveau van een land.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verstedelijking</div><div class=\"sam-definitie-body\">de ruimtelijke groei van steden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Urbanisatie</div><div class=\"sam-definitie-body\">de groei van het bevolkingsaandeel in steden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Informele sector</div><div class=\"sam-definitie-body\">economische activiteit buiten de officiële registratie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Demografische transitie</div><div class=\"sam-definitie-body\">het model van dalende geboorte- en sterftecijfers.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Regionale ongelijkheid</div><div class=\"sam-definitie-body\">welvaartsverschillen tussen gebieden binnen één land.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Periferiegebied</div><div class=\"sam-definitie-body\">een economisch marginaal en slecht bereikbaar gebied.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Economische dualiteit</div><div class=\"sam-definitie-body\">een formele en een informele economie naast elkaar.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Braindrain</div><div class=\"sam-definitie-body\">het vertrek van hoogopgeleiden naar rijke landen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ontwikkelingsindicator</div><div class=\"sam-definitie-body\">een maatstaf voor het ontwikkelingsniveau van een land.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bevolkingsgroei</div><div class=\"sam-definitie-body\">de toename van het inwoneraantal.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Verstedelijking»</b> is ruimtelijke groei van steden, terwijl <b>«Urbanisatie»</b> aandeel bevolking in steden is. <b>«Informele sector»</b> is buiten officiële registratie, terwijl <b>«Economische dualiteit»</b> formeel en informeel naast elkaar is. <b>«Demografische transitie»</b> is dalende geboorte en sterfte, terwijl <b>«Bevolkingsgroei»</b> toename inwoneraantal is. <b>«Regionale ongelijkheid»</b> is verschillen binnen één land, terwijl <b>«Periferiegebied»</b> marginaal en slecht bereikbaar is.</div>",
     "sv": [
      {
       "v": "Wat is het verschil tussen verstedelijking en urbanisatie?",
       "o": [
-       "Verstedelijking = ruimtelijke groei; urbanisatie = bevolkingsaandeel",
-       "Ze zijn exact dezelfde begrippen",
-       "Urbanisatie = land wordt stad; verstedelijking = stad krimpt",
-       "Verstedelijking gaat over cultuur; urbanisatie over bevolking"
+       "verstedelijking is ruimtelijke groei, urbanisatie is het bevolkingsaandeel",
+       "ze zijn hetzelfde",
+       "verstedelijking is het bevolkingsaandeel",
+       "urbanisatie is ruimtelijke groei"
       ],
       "c": 0,
-      "u": "Strikt genomen: urbanisatie = toenemend aandeel van de bevolking dat in steden woont. Verstedelijking = het ruimtelijke uitbreidingsproces van stedelijk gebied. In de praktijk vaak door elkaar gebruikt."
+      "d": 3,
+      "u": "Ruimtelijke groei tegenover het bevolkingsaandeel.",
+      "uo": [
+       "Klopt: ruimtelijke groei tegenover het bevolkingsaandeel.",
+       "Nee, ze verschillen.",
+       "Nee, dat is omgedraaid.",
+       "Nee, dat is omgedraaid."
+      ],
+      "uh": "Verstedelijking: ruimtelijk; urbanisatie: bevolkingsaandeel."
      },
      {
       "v": "Wat is de informele sector?",
       "o": [
-       "Economische activiteit buiten officiële registratie",
-       "Kleine bedrijven met weinig personeel",
-       "Seizoensarbeid in de landbouwsector",
-       "Overheidsbedrijven zonder winstoogmerk"
+       "de geregistreerde, belaste economie",
+       "economische activiteit buiten de officiële registratie",
+       "de overheid",
+       "de landbouw"
       ],
-      "c": 0,
-      "u": "De informele sector = economische activiteiten die niet geregistreerd zijn bij de overheid: straathandel, klusjesmannen, thuisproductie. Groot in ontwikkelingslanden; biedt inkomen maar geen sociale bescherming."
+      "c": 1,
+      "d": 3,
+      "u": "Informeel is niet geregistreerd of belast.",
+      "uo": [
+       "Nee, dat is de formele sector.",
+       "Klopt: informeel is niet geregistreerd of belast.",
+       "Nee, dat is de overheid.",
+       "Nee, dat is een sector, geen registratie."
+      ],
+      "uh": "Informele sector: buiten officiële registratie."
      },
      {
-      "v": "Wat is demografische transitie?",
+      "v": "Wat is de demografische transitie?",
       "o": [
-       "Model van dalende geboorte- en sterftecijfers",
-       "Migratie van platteland naar steden",
-       "Vergrijzing van de bevolking",
-       "Daling van het inwoneraantal"
+       "het vertrek van talent",
+       "de trek naar de stad",
+       "het model van dalende geboorte- en sterftecijfers",
+       "de opwarming van de aarde"
       ],
-      "c": 0,
-      "u": "Demografische transitie = historisch model van 4 fasen: 1. Hoog geboortecijfer, hoog sterftecijfer. 2. Sterftecijfer daalt, bevolking groeit snel. 3. Geboortecijfer daalt. 4. Beide laag, stabiele bevolking."
+      "c": 2,
+      "d": 3,
+      "u": "Het model beschrijft de daling van geboorte en sterfte.",
+      "uo": [
+       "Nee, dat is braindrain.",
+       "Nee, dat is urbanisatie.",
+       "Klopt: het model beschrijft de daling van geboorte en sterfte.",
+       "Nee, dat is klimaat."
+      ],
+      "uh": "Demografische transitie: dalende geboorte en sterfte."
      },
      {
       "v": "Wat is regionale ongelijkheid?",
       "o": [
-       "Welvaartsverschillen tussen gebieden in één land",
-       "Ongelijkheid tussen landen wereldwijd",
-       "Inkomensverschillen tussen bevolkingsgroepen",
-       "Verschillen in onderwijsniveau nationaal"
+       "de bevolkingsgroei",
+       "verschillen tussen landen",
+       "de trek naar de stad",
+       "welvaartsverschillen tussen gebieden binnen één land"
       ],
-      "c": 0,
-      "u": "Regionale ongelijkheid = welvaartsverschillen tussen regio's binnen een land. Centrum (hoofdstad) is meestal rijker. Periferie (platteland, afgelegen gebieden) armer. Oorzaken: infrastructuur, investeringen, menselijk kapitaal."
+      "c": 3,
+      "d": 3,
+      "u": "Het gaat om verschillen binnen één land.",
+      "uo": [
+       "Nee, dat is demografie.",
+       "Nee, dat is tussen landen.",
+       "Nee, dat is urbanisatie.",
+       "Klopt: het gaat om verschillen binnen één land."
+      ],
+      "uh": "Regionale ongelijkheid: verschillen binnen één land."
      },
      {
       "v": "Wat is een periferiegebied?",
       "o": [
-       "Economisch marginaal en slecht bereikbaar gebied",
-       "Sterk ontwikkeld randgebied van een stad",
-       "Industrieel centrum van een land",
-       "Diplomatiek neutraal grensgebied"
+       "een economisch marginaal en slecht bereikbaar gebied",
+       "de rijke, centrale stad",
+       "een riviermonding",
+       "een industriegebied"
       ],
       "c": 0,
-      "u": "Periferie = economisch achtergestelde gebieden met weinig investeringen, slechte infrastructuur en laag inkomen. Vaak platteland of afgelegen regio's."
+      "d": 2,
+      "u": "De periferie ligt aan de rand en is achtergesteld.",
+      "uo": [
+       "Klopt: de periferie ligt aan de rand en is achtergesteld.",
+       "Nee, dat is het centrum.",
+       "Nee, dat is een delta.",
+       "Nee, dat is juist bedrijvig."
+      ],
+      "uh": "Periferiegebied: marginaal en slecht bereikbaar."
      },
      {
       "v": "Wat is economische dualiteit?",
       "o": [
-       "Formele en informele economie naast elkaar",
-       "Tweedeling tussen arm en rijk",
-       "Twee economische systemen in één land",
-       "Concurrentie tussen twee industriesectoren"
+       "twee landen die samenwerken",
+       "een formele en een informele economie naast elkaar",
+       "de trek naar de stad",
+       "twee talen in één land"
       ],
-      "c": 0,
-      "u": "Economische dualiteit = het naast elkaar bestaan van een moderne formele economie (grote bedrijven, overheid) en een traditionele informele economie (kleine handel, zelfvoorzienend). Kenmerkend voor veel ontwikkelingslanden."
+      "c": 1,
+      "d": 3,
+      "u": "De formele en informele economie bestaan naast elkaar.",
+      "uo": [
+       "Nee, dat is samenwerking.",
+       "Klopt: de formele en informele economie bestaan naast elkaar.",
+       "Nee, dat is urbanisatie.",
+       "Nee, dat is taal."
+      ],
+      "uh": "Economische dualiteit: formeel en informeel naast elkaar."
      },
      {
       "v": "Wat is braindrain?",
       "o": [
-       "Vertrek van hoogopgeleiden naar rijke landen",
-       "Instroom van buitenlandse arbeidskrachten",
-       "Verlies van industriële kennis",
-       "Daling van onderwijsniveau nationaal"
+       "de trek naar de buitenwijken",
+       "de groei van de bevolking",
+       "het vertrek van hoogopgeleiden naar rijke landen",
+       "de opwarming van de aarde"
       ],
-      "c": 0,
-      "u": "Braindrain = emigratie van hoogopgeleide mensen (artsen, ingenieurs) vanuit een ontwikkelingsland naar rijke landen voor betere kansen. Nadeel: het land verliest menselijk kapitaal en investeringen in opleiding."
+      "c": 2,
+      "d": 2,
+      "u": "Het land verliest zijn talent.",
+      "uo": [
+       "Nee, dat is suburbanisatie.",
+       "Nee, dat is bevolkingsgroei.",
+       "Klopt: het land verliest zijn talent.",
+       "Nee, dat is klimaat."
+      ],
+      "uh": "Braindrain: talent vertrekt naar rijke landen."
      },
      {
       "v": "Wat is bevolkingsgroei?",
       "o": [
-       "Toename van het inwoneraantal",
-       "Stijging van de bevolkingsdichtheid",
-       "Migratie naar stedelijke gebieden",
-       "Daling van het sterftecijfer alleen"
+       "het vertrek van talent",
+       "de daling van de welvaart",
+       "de trek naar de stad",
+       "de toename van het inwoneraantal"
       ],
-      "c": 0,
-      "u": "Bevolkingsgroei = toename van de bevolking = (geboorten - sterften) + (immigratie - emigratie). Hoge groei in ontwikkelingslanden door hoog geboortecijfer en dalend sterftecijfer (fase 2 demografische transitie)."
+      "c": 3,
+      "d": 1,
+      "u": "Het aantal inwoners neemt toe.",
+      "uo": [
+       "Nee, dat is braindrain.",
+       "Nee, dat is iets anders.",
+       "Nee, dat is urbanisatie.",
+       "Klopt: het aantal inwoners neemt toe."
+      ],
+      "uh": "Bevolkingsgroei: toename van het inwoneraantal."
      },
      {
       "v": "Wat is een ontwikkelingsindicator?",
       "o": [
-       "Maatstaf voor ontwikkelingsniveau van een land",
-       "Economisch groeicijfer per kwartaal",
-       "Politieke stabiliteitsindex van een regio",
-       "Geografische ligging van een land"
+       "een maatstaf voor het ontwikkelingsniveau van een land",
+       "een migrant",
+       "een riviermonding",
+       "een thematische kaart"
       ],
       "c": 0,
-      "u": "Ontwikkelingsindicator = maatstaf voor het ontwikkelingsniveau van een land. Voorbeelden: BBP per hoofd (welvaart), HDI (menselijke ontwikkeling), kindersterfte (gezondheidszorg), alfabetiseringsgraad (onderwijs)."
-     },
-     {
-      "v": "Wat is sociale ongelijkheid?",
-      "o": [
-       "Ongelijke verdeling van kansen en welvaart",
-       "Ongelijkheid tussen landen internationaal",
-       "Seksegebonden loonverschillen alleen",
-       "Regionale verschillen in inkomen"
+      "d": 2,
+      "u": "Een indicator meet de ontwikkeling.",
+      "uo": [
+       "Klopt: een indicator meet de ontwikkeling.",
+       "Nee, dat is een persoon.",
+       "Nee, dat is een delta.",
+       "Nee, dat is een kaart."
       ],
-      "c": 0,
-      "u": "Sociale ongelijkheid = ongelijke verdeling van inkomen, welvaart, onderwijs en kansen tussen sociale groepen. Gemeten met de Gini-coëfficiënt."
+      "uh": "Ontwikkelingsindicator: maatstaf voor ontwikkeling."
      },
      {
-      "v": "Wat betekent «Ontwikkeling»?",
+      "v": "Wat kenmerkt de formele sector tegenover de informele?",
       "o": [
-       "de beweging van de platen van de aardkorst",
-       "de afstand gemeten in reistijd of kosten",
-       "met betrekking tot de opbouw en ontwikkeling van de bevolking",
-       "de vooruitgang in welvaart en welzijn"
-      ],
-      "c": 3,
-      "u": "«Ontwikkeling» betekent: de vooruitgang in welvaart en welzijn.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de vooruitgang in welvaart en welzijn\"?",
-      "o": [
-       "Erosie",
-       "Stedelijke gebieden",
-       "Ontwikkeling",
-       "Metamorf gesteente"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Ontwikkeling»: de vooruitgang in welvaart en welzijn.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de vooruitgang in welvaart en welzijn\"?",
-      "o": [
-       "Ontwikkeling",
-       "Regionale verschillen",
-       "Milieu",
-       "Economie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ontwikkeling»: de vooruitgang in welvaart en welzijn.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ontwikkeling» in?",
-      "o": [
-       "de vooruitgang in welvaart en welzijn",
-       "opkomend land, grote ongelijkheid",
-       "een land met een lage HDI",
-       "de trek van het platteland naar de stad"
-      ],
-      "c": 0,
-      "u": "«Ontwikkeling» betekent: de vooruitgang in welvaart en welzijn.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Informele sector»?",
-      "o": [
-       "meerdere bronnen samen gebruiken",
-       "economische activiteit buiten de registratie",
-       "thematische kaart, ruimtelijk patroon",
-       "de toename van het aandeel ouderen"
+       "de formele sector is niet geregistreerd",
+       "de formele sector is geregistreerd en betaalt belasting",
+       "de formele sector bestaat niet",
+       "ze zijn hetzelfde"
       ],
       "c": 1,
-      "u": "«Informele sector» betekent: economische activiteit buiten de registratie.",
-      "d": 1
+      "d": 3,
+      "u": "Formeel is officieel en belast.",
+      "uo": [
+       "Nee, dat is informeel.",
+       "Klopt: formeel is officieel en belast.",
+       "Nee, hij bestaat wel.",
+       "Nee, ze verschillen."
+      ],
+      "uh": "Formele sector: geregistreerd en belast."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"economische activiteit buiten de registratie\"?",
+      "v": "Het aandeel van de bevolking dat in steden woont, neemt toe. Welk begrip past hierbij?",
       "o": [
-       "Centrum",
-       "Pushfactor",
+       "Bevolkingsgroei",
        "Informele sector",
-       "Ligging & natuur"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Informele sector»: economische activiteit buiten de registratie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"economische activiteit buiten de registratie\"?",
-      "o": [
-       "Informele sector",
-       "Milieu",
-       "Economie",
-       "Krottenwijk"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Informele sector»: economische activiteit buiten de registratie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Informele sector» in?",
-      "o": [
-       "een uitgangsmateriaal voor productie",
-       "de vooruitgang in welvaart en welzijn",
-       "een economie die op één product leunt",
-       "economische activiteit buiten de registratie"
-      ],
-      "c": 3,
-      "u": "«Informele sector» betekent: economische activiteit buiten de registratie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Krottenwijk»?",
-      "o": [
-       "de bewuste inrichting van de ruimte",
-       "de trek van het platteland naar de stad",
-       "het verhuizen van mensen tussen gebieden",
-       "een arme, ongeplande stadswijk"
-      ],
-      "c": 3,
-      "u": "«Krottenwijk» betekent: een arme, ongeplande stadswijk.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een arme, ongeplande stadswijk\"?",
-      "o": [
-       "Verwering",
-       "Metamorf gesteente",
-       "HDI",
-       "Krottenwijk"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Krottenwijk»: een arme, ongeplande stadswijk.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een arme, ongeplande stadswijk\"?",
-      "o": [
-       "Bevolkingsdichtheid",
-       "Ontwikkelingsland",
-       "Regionale verschillen",
-       "Krottenwijk"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Krottenwijk»: een arme, ongeplande stadswijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Krottenwijk» in?",
-      "o": [
-       "de vooruitgang in welvaart en welzijn",
-       "het aantal inwoners per vierkante kilometer",
-       "een arme, ongeplande stadswijk",
-       "rijk zuidoosten vs. arm noordoosten"
-      ],
-      "c": 2,
-      "u": "«Krottenwijk» betekent: een arme, ongeplande stadswijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Grondstof»?",
-      "o": [
-       "een uitgangsmateriaal voor productie",
-       "hoe water, wind en ijs het land slijten",
-       "de toename van het aandeel ouderen",
-       "het stedelijke kerngebied van Nederland"
-      ],
-      "c": 0,
-      "u": "«Grondstof» betekent: een uitgangsmateriaal voor productie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een uitgangsmateriaal voor productie\"?",
-      "o": [
-       "Erosie",
-       "Migratie",
-       "Grondstof",
-       "Ligging & natuur"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Grondstof»: een uitgangsmateriaal voor productie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een uitgangsmateriaal voor productie\"?",
-      "o": [
-       "Monocultuur",
-       "Informele sector",
-       "Ontwikkeling",
-       "Grondstof"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Grondstof»: een uitgangsmateriaal voor productie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Grondstof» in?",
-      "o": [
-       "snelle verstedelijking, favela's",
-       "een uitgangsmateriaal voor productie",
-       "opkomend land, grote ongelijkheid",
-       "ontbossing van het regenwoud"
-      ],
-      "c": 1,
-      "u": "«Grondstof» betekent: een uitgangsmateriaal voor productie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ongelijkheid»?",
-      "o": [
-       "het aantal inwoners per vierkante kilometer",
-       "de afstand gemeten in reistijd of kosten",
-       "een ongelijke verdeling tussen groepen of gebieden",
-       "Amazoneregenwoud, tropisch klimaat"
-      ],
-      "c": 2,
-      "u": "«Ongelijkheid» betekent: een ongelijke verdeling tussen groepen of gebieden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een ongelijke verdeling tussen groepen of gebieden\"?",
-      "o": [
-       "Geografische vraag",
-       "Ongelijkheid",
-       "Water & veiligheid",
-       "Ontwikkelingsland"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ongelijkheid»: een ongelijke verdeling tussen groepen of gebieden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een ongelijke verdeling tussen groepen of gebieden\"?",
-      "o": [
-       "Ongelijkheid",
-       "Grondstof",
        "Urbanisatie",
-       "Bevolkingsdichtheid"
+       "Economische dualiteit"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ongelijkheid»: een ongelijke verdeling tussen groepen of gebieden.",
-      "d": 3
+      "c": 2,
+      "d": 1,
+      "u": "Het aandeel van de bevolking dat in steden woont, neemt toe. Dat past bij Urbanisatie: aandeel bevolking in steden.",
+      "uo": [
+       "Nee, dat hoort bij Bevolkingsgroei: toename inwoneraantal.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie.",
+       "Klopt: aandeel bevolking in steden.",
+       "Nee, dat hoort bij Economische dualiteit: formeel en informeel naast elkaar."
+      ],
+      "uh": "Urbanisatie: aandeel bevolking in steden."
      },
      {
-      "v": "Wat houdt «Ongelijkheid» in?",
+      "v": "Hoogopgeleide artsen vertrekken naar het rijke westen. Om welk begrip gaat het?",
       "o": [
-       "de trek van het platteland naar de stad",
-       "snelle verstedelijking, favela's",
-       "een economie die op één product leunt",
-       "een ongelijke verdeling tussen groepen of gebieden"
-      ],
-      "c": 3,
-      "u": "«Ongelijkheid» betekent: een ongelijke verdeling tussen groepen of gebieden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ontwikkelingsland»?",
-      "o": [
-       "een land met een lage HDI",
-       "economisch, cultureel, politiek, demografisch",
-       "de bewuste inrichting van de ruimte",
-       "het aantal inwoners per vierkante kilometer"
-      ],
-      "c": 0,
-      "u": "«Ontwikkelingsland» betekent: een land met een lage HDI.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een land met een lage HDI\"?",
-      "o": [
-       "Ontwikkelingsland",
-       "Welvaartsverdeling",
-       "Geografische vraag",
-       "Erosie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ontwikkelingsland»: een land met een lage HDI.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een land met een lage HDI\"?",
-      "o": [
-       "Ontwikkeling",
-       "Urbanisatie",
-       "Economie",
-       "Ontwikkelingsland"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Ontwikkelingsland»: een land met een lage HDI.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ontwikkelingsland» in?",
-      "o": [
-       "een land met een lage HDI",
-       "een uitgangsmateriaal voor productie",
-       "een economie die op één product leunt",
-       "de trek van het platteland naar de stad"
-      ],
-      "c": 0,
-      "u": "«Ontwikkelingsland» betekent: een land met een lage HDI.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Urbanisatie»?",
-      "o": [
-       "een economisch afhankelijke randregio",
-       "de trek van het platteland naar de stad",
-       "de afstand gemeten in kilometers",
-       "het wegslijten en afvoeren van gesteente"
-      ],
-      "c": 1,
-      "u": "«Urbanisatie» betekent: de trek van het platteland naar de stad.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de trek van het platteland naar de stad\"?",
-      "o": [
-       "NAP",
        "Urbanisatie",
        "Demografische transitie",
-       "Krimp"
+       "Ontwikkelingsindicator",
+       "Braindrain"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Urbanisatie»: de trek van het platteland naar de stad.",
-      "d": 2
+      "c": 3,
+      "d": 1,
+      "u": "Hoogopgeleide artsen vertrekken naar het rijke westen. Dat past bij Braindrain: talent vertrekt.",
+      "uo": [
+       "Nee, dat hoort bij Urbanisatie: aandeel bevolking in steden.",
+       "Nee, dat hoort bij Demografische transitie: dalende geboorte en sterfte.",
+       "Nee, dat hoort bij Ontwikkelingsindicator: maatstaf voor ontwikkeling.",
+       "Klopt: talent vertrekt."
+      ],
+      "uh": "Braindrain: talent vertrekt."
      },
      {
-      "v": "Welke term past bij: \"de trek van het platteland naar de stad\"?",
+      "v": "Het vertrek van hoogopgeleiden. Welk begrip herken je hier?",
       "o": [
-       "Grondstof",
+       "Braindrain",
+       "Demografische transitie",
+       "Ontwikkelingsindicator",
+       "Urbanisatie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het vertrek van hoogopgeleiden. Dat past bij Braindrain: talent vertrekt.",
+      "uo": [
+       "Klopt: talent vertrekt.",
+       "Nee, dat hoort bij Demografische transitie: dalende geboorte en sterfte.",
+       "Nee, dat hoort bij Ontwikkelingsindicator: maatstaf voor ontwikkeling.",
+       "Nee, dat hoort bij Urbanisatie: aandeel bevolking in steden."
+      ],
+      "uh": "Braindrain: talent vertrekt."
+     },
+     {
+      "v": "Een maatstaf voor het ontwikkelingsniveau. Wat is hier aan de hand?",
+      "o": [
+       "Demografische transitie",
+       "Ontwikkelingsindicator",
        "Urbanisatie",
-       "Monocultuur",
        "Informele sector"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Urbanisatie»: de trek van het platteland naar de stad.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Urbanisatie» in?",
-      "o": [
-       "de trek van het platteland naar de stad",
-       "een ongelijke verdeling tussen groepen of gebieden",
-       "het aantal inwoners per vierkante kilometer",
-       "rijk zuidoosten vs. arm noordoosten"
+      "d": 2,
+      "u": "Een maatstaf voor het ontwikkelingsniveau. Dat past bij Ontwikkelingsindicator: maatstaf voor ontwikkeling.",
+      "uo": [
+       "Nee, dat hoort bij Demografische transitie: dalende geboorte en sterfte.",
+       "Klopt: maatstaf voor ontwikkeling.",
+       "Nee, dat hoort bij Urbanisatie: aandeel bevolking in steden.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie."
       ],
-      "c": 0,
-      "u": "«Urbanisatie» betekent: de trek van het platteland naar de stad.",
-      "d": 3
+      "uh": "Ontwikkelingsindicator: maatstaf voor ontwikkeling."
      },
      {
-      "v": "Wat betekent «Monocultuur»?",
+      "v": "De HDI of het inkomen per hoofd meet de ontwikkeling. Welk begrip past hierbij?",
       "o": [
-       "de trek van het platteland naar de stad",
-       "een economie die op één product leunt",
-       "economisch, cultureel, politiek, demografisch",
-       "waar, waarom dáár, en met welk gevolg?"
-      ],
-      "c": 1,
-      "u": "«Monocultuur» betekent: een economie die op één product leunt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een economie die op één product leunt\"?",
-      "o": [
-       "Vulkanisme",
-       "Kaarten",
-       "Monocultuur",
-       "Metamorf gesteente"
+       "Verstedelijking",
+       "Informele sector",
+       "Ontwikkelingsindicator",
+       "Economische dualiteit"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Monocultuur»: een economie die op één product leunt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een economie die op één product leunt\"?",
-      "o": [
-       "Monocultuur",
-       "Ligging & natuur",
-       "Krottenwijk",
-       "Bevolkingsdichtheid"
+      "d": 1,
+      "u": "De HDI of het inkomen per hoofd meet de ontwikkeling. Dat past bij Ontwikkelingsindicator: maatstaf voor ontwikkeling.",
+      "uo": [
+       "Nee, dat hoort bij Verstedelijking: ruimtelijke groei van steden.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie.",
+       "Klopt: maatstaf voor ontwikkeling.",
+       "Nee, dat hoort bij Economische dualiteit: formeel en informeel naast elkaar."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Monocultuur»: een economie die op één product leunt.",
-      "d": 3
+      "uh": "Ontwikkelingsindicator: maatstaf voor ontwikkeling."
      },
      {
-      "v": "Wat houdt «Monocultuur» in?",
+      "v": "Formele en informele economie naast elkaar. Om welk begrip gaat het?",
       "o": [
-       "een arme, ongeplande stadswijk",
-       "een ongelijke verdeling tussen groepen of gebieden",
-       "een economie die op één product leunt",
-       "opkomend land, grote ongelijkheid"
-      ],
-      "c": 2,
-      "u": "«Monocultuur» betekent: een economie die op één product leunt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Bevolkingsdichtheid»?",
-      "o": [
-       "de afname van de bevolking in een gebied",
-       "een ongelijke verdeling tussen groepen of gebieden",
-       "het aantal inwoners per vierkante kilometer",
-       "het aan de oppervlakte komen van magma"
-      ],
-      "c": 2,
-      "u": "«Bevolkingsdichtheid» betekent: het aantal inwoners per vierkante kilometer.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het aantal inwoners per vierkante kilometer\"?",
-      "o": [
-       "Pullfactor",
-       "Kaarten",
-       "Ligging & natuur",
-       "Bevolkingsdichtheid"
+       "Ontwikkelingsindicator",
+       "Informele sector",
+       "Bevolkingsgroei",
+       "Economische dualiteit"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Bevolkingsdichtheid»: het aantal inwoners per vierkante kilometer.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het aantal inwoners per vierkante kilometer\"?",
-      "o": [
-       "Ontwikkeling",
-       "Bevolking",
-       "Grondstof",
-       "Bevolkingsdichtheid"
+      "d": 2,
+      "u": "Formele en informele economie naast elkaar. Dat past bij Economische dualiteit: formeel en informeel naast elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkelingsindicator: maatstaf voor ontwikkeling.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie.",
+       "Nee, dat hoort bij Bevolkingsgroei: toename inwoneraantal.",
+       "Klopt: formeel en informeel naast elkaar."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Bevolkingsdichtheid»: het aantal inwoners per vierkante kilometer.",
-      "d": 3
+      "uh": "Economische dualiteit: formeel en informeel naast elkaar."
      },
      {
-      "v": "Wat houdt «Bevolkingsdichtheid» in?",
+      "v": "Een marginaal en slecht bereikbaar gebied. Welk begrip herken je hier?",
       "o": [
-       "het aantal inwoners per vierkante kilometer",
-       "een land met een lage HDI",
-       "de vooruitgang in welvaart en welzijn",
-       "een arme, ongeplande stadswijk"
+       "Periferiegebied",
+       "Bevolkingsgroei",
+       "Economische dualiteit",
+       "Informele sector"
       ],
       "c": 0,
-      "u": "«Bevolkingsdichtheid» betekent: het aantal inwoners per vierkante kilometer.",
-      "d": 3
+      "d": 1,
+      "u": "Een marginaal en slecht bereikbaar gebied. Dat past bij Periferiegebied: marginaal en slecht bereikbaar.",
+      "uo": [
+       "Klopt: marginaal en slecht bereikbaar.",
+       "Nee, dat hoort bij Bevolkingsgroei: toename inwoneraantal.",
+       "Nee, dat hoort bij Economische dualiteit: formeel en informeel naast elkaar.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie."
+      ],
+      "uh": "Periferiegebied: marginaal en slecht bereikbaar."
      },
      {
-      "v": "Wat betekent «Ligging & natuur»?",
+      "v": "Een afgelegen streek met weinig werk en slechte wegen. Wat is hier aan de hand?",
       "o": [
-       "meerdere bronnen samen gebruiken",
-       "Amazoneregenwoud, tropisch klimaat",
-       "een reden om ergens weg te trekken",
-       "het aan de oppervlakte komen van magma"
+       "Regionale ongelijkheid",
+       "Periferiegebied",
+       "Urbanisatie",
+       "Economische dualiteit"
       ],
       "c": 1,
-      "u": "«Ligging & natuur» betekent: Amazoneregenwoud, tropisch klimaat.",
-      "d": 1
+      "d": 2,
+      "u": "Een afgelegen streek met weinig werk en slechte wegen. Dat past bij Periferiegebied: marginaal en slecht bereikbaar.",
+      "uo": [
+       "Nee, dat hoort bij Regionale ongelijkheid: verschillen binnen één land.",
+       "Klopt: marginaal en slecht bereikbaar.",
+       "Nee, dat hoort bij Urbanisatie: aandeel bevolking in steden.",
+       "Nee, dat hoort bij Economische dualiteit: formeel en informeel naast elkaar."
+      ],
+      "uh": "Periferiegebied: marginaal en slecht bereikbaar."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"Amazoneregenwoud, tropisch klimaat\"?",
+      "v": "Het model van dalende geboorte en sterfte. Welk begrip past hierbij?",
       "o": [
-       "Platentektoniek",
-       "Pullfactor",
-       "Ligging & natuur",
-       "Thematische kaart"
+       "Periferiegebied",
+       "Verstedelijking",
+       "Demografische transitie",
+       "Ontwikkelingsindicator"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Ligging & natuur»: Amazoneregenwoud, tropisch klimaat.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"Amazoneregenwoud, tropisch klimaat\"?",
-      "o": [
-       "Milieu",
-       "Ligging & natuur",
-       "Regionale verschillen",
-       "Monocultuur"
+      "d": 1,
+      "u": "Het model van dalende geboorte en sterfte. Dat past bij Demografische transitie: dalende geboorte en sterfte.",
+      "uo": [
+       "Nee, dat hoort bij Periferiegebied: marginaal en slecht bereikbaar.",
+       "Nee, dat hoort bij Verstedelijking: ruimtelijke groei van steden.",
+       "Klopt: dalende geboorte en sterfte.",
+       "Nee, dat hoort bij Ontwikkelingsindicator: maatstaf voor ontwikkeling."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ligging & natuur»: Amazoneregenwoud, tropisch klimaat.",
-      "d": 3
+      "uh": "Demografische transitie: dalende geboorte en sterfte."
      },
      {
-      "v": "Wat houdt «Ligging & natuur» in?",
+      "v": "Het model waarin geboorte- en sterftecijfers geleidelijk dalen. Om welk begrip gaat het?",
       "o": [
-       "Amazoneregenwoud, tropisch klimaat",
-       "een land met een lage HDI",
-       "ontbossing van het regenwoud",
-       "rijk zuidoosten vs. arm noordoosten"
+       "Periferiegebied",
+       "Bevolkingsgroei",
+       "Braindrain",
+       "Demografische transitie"
       ],
-      "c": 0,
-      "u": "«Ligging & natuur» betekent: Amazoneregenwoud, tropisch klimaat.",
-      "d": 3
+      "c": 3,
+      "d": 2,
+      "u": "Het model waarin geboorte- en sterftecijfers geleidelijk dalen. Dat past bij Demografische transitie: dalende geboorte en sterfte.",
+      "uo": [
+       "Nee, dat hoort bij Periferiegebied: marginaal en slecht bereikbaar.",
+       "Nee, dat hoort bij Bevolkingsgroei: toename inwoneraantal.",
+       "Nee, dat hoort bij Braindrain: talent vertrekt.",
+       "Klopt: dalende geboorte en sterfte."
+      ],
+      "uh": "Demografische transitie: dalende geboorte en sterfte."
      },
      {
-      "v": "Wat betekent «Bevolking»?",
-      "o": [
-       "samengeperste lagen puinzandsteen, kalksteen",
-       "snelle verstedelijking, favela's",
-       "de toestand van de atmosfeer op korte termijn",
-       "een land met een lage HDI"
-      ],
-      "c": 1,
-      "u": "«Bevolking» betekent: snelle verstedelijking, favela's.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"snelle verstedelijking, favela's\"?",
+      "v": "Economie buiten de officiële registratie. Welk begrip herken je hier?",
       "o": [
        "Informele sector",
-       "Overstromingsrisico",
-       "Bevolking",
-       "NAP"
+       "Economische dualiteit",
+       "Bevolkingsgroei",
+       "Verstedelijking"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Bevolking»: snelle verstedelijking, favela's.",
-      "d": 2
+      "c": 0,
+      "d": 3,
+      "u": "Economie buiten de officiële registratie. Dat past bij Informele sector: buiten officiële registratie.",
+      "uo": [
+       "Klopt: buiten officiële registratie.",
+       "Nee, dat hoort bij Economische dualiteit: formeel en informeel naast elkaar.",
+       "Nee, dat hoort bij Bevolkingsgroei: toename inwoneraantal.",
+       "Nee, dat hoort bij Verstedelijking: ruimtelijke groei van steden."
+      ],
+      "uh": "Informele sector: buiten officiële registratie."
      },
      {
-      "v": "Welke term past bij: \"snelle verstedelijking, favela's\"?",
+      "v": "De toename van het inwoneraantal. Wat is hier aan de hand?",
       "o": [
-       "Bevolkingsdichtheid",
-       "Bevolking",
-       "Krottenwijk",
-       "Ligging & natuur"
+       "Ontwikkelingsindicator",
+       "Bevolkingsgroei",
+       "Regionale ongelijkheid",
+       "Informele sector"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Bevolking»: snelle verstedelijking, favela's.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Bevolking» in?",
-      "o": [
-       "snelle verstedelijking, favela's",
-       "een ongelijke verdeling tussen groepen of gebieden",
-       "de trek van het platteland naar de stad",
-       "een land met een lage HDI"
+      "d": 1,
+      "u": "De toename van het inwoneraantal. Dat past bij Bevolkingsgroei: toename inwoneraantal.",
+      "uo": [
+       "Nee, dat hoort bij Ontwikkelingsindicator: maatstaf voor ontwikkeling.",
+       "Klopt: toename inwoneraantal.",
+       "Nee, dat hoort bij Regionale ongelijkheid: verschillen binnen één land.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie."
       ],
-      "c": 0,
-      "u": "«Bevolking» betekent: snelle verstedelijking, favela's.",
-      "d": 3
+      "uh": "Bevolkingsgroei: toename inwoneraantal."
      },
      {
-      "v": "Wat betekent «Economie»?",
+      "v": "De ruimtelijke groei van steden. Welk begrip past hierbij?",
       "o": [
-       "opkomend land, grote ongelijkheid",
-       "een economie die op één product leunt",
-       "orkanen, toerisme, kwetsbaarheid",
-       "de afname van de bevolking in een gebied"
+       "Demografische transitie",
+       "Urbanisatie",
+       "Verstedelijking",
+       "Economische dualiteit"
       ],
-      "c": 0,
-      "u": "«Economie» betekent: opkomend land, grote ongelijkheid.",
-      "d": 1
+      "c": 2,
+      "d": 2,
+      "u": "De ruimtelijke groei van steden. Dat past bij Verstedelijking: ruimtelijke groei van steden.",
+      "uo": [
+       "Nee, dat hoort bij Demografische transitie: dalende geboorte en sterfte.",
+       "Nee, dat hoort bij Urbanisatie: aandeel bevolking in steden.",
+       "Klopt: ruimtelijke groei van steden.",
+       "Nee, dat hoort bij Economische dualiteit: formeel en informeel naast elkaar."
+      ],
+      "uh": "Verstedelijking: ruimtelijke groei van steden."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"opkomend land, grote ongelijkheid\"?",
+      "v": "Een moderne fabriek naast veel informele straathandel. Om welk begrip gaat het?",
       "o": [
-       "Weer",
-       "Subductie",
-       "Centrum",
-       "Economie"
+       "Periferiegebied",
+       "Informele sector",
+       "Verstedelijking",
+       "Economische dualiteit"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Economie»: opkomend land, grote ongelijkheid.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"opkomend land, grote ongelijkheid\"?",
-      "o": [
-       "Monocultuur",
-       "Bevolkingsdichtheid",
-       "Economie",
-       "Ongelijkheid"
+      "d": 3,
+      "u": "Een moderne fabriek naast veel informele straathandel. Dat past bij Economische dualiteit: formeel en informeel naast elkaar.",
+      "uo": [
+       "Nee, dat hoort bij Periferiegebied: marginaal en slecht bereikbaar.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie.",
+       "Nee, dat hoort bij Verstedelijking: ruimtelijke groei van steden.",
+       "Klopt: formeel en informeel naast elkaar."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Economie»: opkomend land, grote ongelijkheid.",
-      "d": 3
+      "uh": "Economische dualiteit: formeel en informeel naast elkaar."
      },
      {
-      "v": "Wat houdt «Economie» in?",
-      "o": [
-       "Amazoneregenwoud, tropisch klimaat",
-       "opkomend land, grote ongelijkheid",
-       "een uitgangsmateriaal voor productie",
-       "ontbossing van het regenwoud"
-      ],
-      "c": 1,
-      "u": "«Economie» betekent: opkomend land, grote ongelijkheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Regionale verschillen»?",
-      "o": [
-       "rijk zuidoosten vs. arm noordoosten",
-       "het vasthouden van warmte door broeikasgassen",
-       "een land met een lage HDI",
-       "samengeperste lagen puinzandsteen, kalksteen"
-      ],
-      "c": 0,
-      "u": "«Regionale verschillen» betekent: rijk zuidoosten vs. arm noordoosten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"rijk zuidoosten vs. arm noordoosten\"?",
-      "o": [
-       "Milieu",
-       "Regionale verschillen",
-       "Gesteentekringloop",
-       "Krottenwijk"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Regionale verschillen»: rijk zuidoosten vs. arm noordoosten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"rijk zuidoosten vs. arm noordoosten\"?",
+      "v": "De groei van het bevolkingsaandeel in steden. Welk begrip herken je hier?",
       "o": [
        "Urbanisatie",
-       "Regionale verschillen",
-       "Bevolkingsdichtheid",
-       "Grondstof"
+       "Informele sector",
+       "Bevolkingsgroei",
+       "Economische dualiteit"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De groei van het bevolkingsaandeel in steden. Dat past bij Urbanisatie: aandeel bevolking in steden.",
+      "uo": [
+       "Klopt: aandeel bevolking in steden.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie.",
+       "Nee, dat hoort bij Bevolkingsgroei: toename inwoneraantal.",
+       "Nee, dat hoort bij Economische dualiteit: formeel en informeel naast elkaar."
+      ],
+      "uh": "Urbanisatie: aandeel bevolking in steden."
+     },
+     {
+      "v": "Welvaartsverschillen binnen één land. Wat is hier aan de hand?",
+      "o": [
+       "Periferiegebied",
+       "Regionale ongelijkheid",
+       "Urbanisatie",
+       "Informele sector"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Regionale verschillen»: rijk zuidoosten vs. arm noordoosten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Regionale verschillen» in?",
-      "o": [
-       "een economie die op één product leunt",
-       "een ongelijke verdeling tussen groepen of gebieden",
-       "de vooruitgang in welvaart en welzijn",
-       "rijk zuidoosten vs. arm noordoosten"
+      "d": 2,
+      "u": "Welvaartsverschillen binnen één land. Dat past bij Regionale ongelijkheid: verschillen binnen één land.",
+      "uo": [
+       "Nee, dat hoort bij Periferiegebied: marginaal en slecht bereikbaar.",
+       "Klopt: verschillen binnen één land.",
+       "Nee, dat hoort bij Urbanisatie: aandeel bevolking in steden.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie."
       ],
-      "c": 3,
-      "u": "«Regionale verschillen» betekent: rijk zuidoosten vs. arm noordoosten.",
-      "d": 3
+      "uh": "Regionale ongelijkheid: verschillen binnen één land."
      },
      {
-      "v": "Wat betekent «Milieu»?",
+      "v": "Steden groeien ruimtelijk en breiden zich uit. Welk begrip past hierbij?",
       "o": [
-       "opbouw en verandering van steden",
-       "samengeperste lagen puinzandsteen, kalksteen",
-       "het aan de oppervlakte komen van magma",
-       "ontbossing van het regenwoud"
-      ],
-      "c": 3,
-      "u": "«Milieu» betekent: ontbossing van het regenwoud.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"ontbossing van het regenwoud\"?",
-      "o": [
-       "Geografische vraag",
-       "Ruimtelijk patroon",
-       "Klimaat",
-       "Milieu"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Milieu»: ontbossing van het regenwoud.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"ontbossing van het regenwoud\"?",
-      "o": [
-       "Ontwikkeling",
-       "Milieu",
-       "Regionale verschillen",
-       "Ontwikkelingsland"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Milieu»: ontbossing van het regenwoud.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Milieu» in?",
-      "o": [
-       "economische activiteit buiten de registratie",
-       "een economie die op één product leunt",
-       "ontbossing van het regenwoud",
-       "rijk zuidoosten vs. arm noordoosten"
+       "Braindrain",
+       "Urbanisatie",
+       "Verstedelijking",
+       "Demografische transitie"
       ],
       "c": 2,
-      "u": "«Milieu» betekent: ontbossing van het regenwoud.",
-      "d": 3
+      "d": 3,
+      "u": "Steden groeien ruimtelijk en breiden zich uit. Dat past bij Verstedelijking: ruimtelijke groei van steden.",
+      "uo": [
+       "Nee, dat hoort bij Braindrain: talent vertrekt.",
+       "Nee, dat hoort bij Urbanisatie: aandeel bevolking in steden.",
+       "Klopt: ruimtelijke groei van steden.",
+       "Nee, dat hoort bij Demografische transitie: dalende geboorte en sterfte."
+      ],
+      "uh": "Verstedelijking: ruimtelijke groei van steden."
+     },
+     {
+      "v": "De ene regio is rijk, de andere arm binnen hetzelfde land. Om welk begrip gaat het?",
+      "o": [
+       "Braindrain",
+       "Informele sector",
+       "Verstedelijking",
+       "Regionale ongelijkheid"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De ene regio is rijk, de andere arm binnen hetzelfde land. Dat past bij Regionale ongelijkheid: verschillen binnen één land.",
+      "uo": [
+       "Nee, dat hoort bij Braindrain: talent vertrekt.",
+       "Nee, dat hoort bij Informele sector: buiten officiële registratie.",
+       "Nee, dat hoort bij Verstedelijking: ruimtelijke groei van steden.",
+       "Klopt: verschillen binnen één land."
+      ],
+      "uh": "Regionale ongelijkheid: verschillen binnen één land."
+     },
+     {
+      "v": "Straatverkoop en klusjes buiten de officiële registratie. Welk begrip herken je hier?",
+      "o": [
+       "Informele sector",
+       "Economische dualiteit",
+       "Bevolkingsgroei",
+       "Regionale ongelijkheid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Straatverkoop en klusjes buiten de officiële registratie. Dat past bij Informele sector: buiten officiële registratie.",
+      "uo": [
+       "Klopt: buiten officiële registratie.",
+       "Nee, dat hoort bij Economische dualiteit: formeel en informeel naast elkaar.",
+       "Nee, dat hoort bij Bevolkingsgroei: toename inwoneraantal.",
+       "Nee, dat hoort bij Regionale ongelijkheid: verschillen binnen één land."
+      ],
+      "uh": "Informele sector: buiten officiële registratie."
+     },
+     {
+      "v": "Het aantal inwoners van een land neemt toe. Wat is hier aan de hand?",
+      "o": [
+       "Braindrain",
+       "Bevolkingsgroei",
+       "Periferiegebied",
+       "Urbanisatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Het aantal inwoners van een land neemt toe. Dat past bij Bevolkingsgroei: toename inwoneraantal.",
+      "uo": [
+       "Nee, dat hoort bij Braindrain: talent vertrekt.",
+       "Klopt: toename inwoneraantal.",
+       "Nee, dat hoort bij Periferiegebied: marginaal en slecht bereikbaar.",
+       "Nee, dat hoort bij Urbanisatie: aandeel bevolking in steden."
+      ],
+      "uh": "Bevolkingsgroei: toename inwoneraantal."
      }
     ],
     "oe": [
@@ -58581,60 +57359,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Ontwikkeling",
-      "d": "de vooruitgang in welvaart en welzijn"
-     },
-     {
-      "t": "Informele sector",
-      "d": "economische activiteit buiten de registratie"
-     },
-     {
-      "t": "Krottenwijk",
-      "d": "een arme, ongeplande stadswijk"
-     },
-     {
-      "t": "Grondstof",
-      "d": "een uitgangsmateriaal voor productie"
-     },
-     {
-      "t": "Ongelijkheid",
-      "d": "een ongelijke verdeling tussen groepen of gebieden"
-     },
-     {
-      "t": "Ontwikkelingsland",
-      "d": "een land met een lage HDI"
+      "t": "Verstedelijking",
+      "d": "de ruimtelijke groei van steden"
      },
      {
       "t": "Urbanisatie",
-      "d": "de trek van het platteland naar de stad"
+      "d": "de groei van het bevolkingsaandeel in steden"
      },
      {
-      "t": "Monocultuur",
-      "d": "een economie die op één product leunt"
+      "t": "Informele sector",
+      "d": "economische activiteit buiten de officiële registratie"
      },
      {
-      "t": "Bevolkingsdichtheid",
-      "d": "het aantal inwoners per vierkante kilometer"
+      "t": "Demografische transitie",
+      "d": "het model van dalende geboorte- en sterftecijfers"
      },
      {
-      "t": "Ligging & natuur",
-      "d": "Amazoneregenwoud, tropisch klimaat"
+      "t": "Regionale ongelijkheid",
+      "d": "welvaartsverschillen tussen gebieden binnen één land"
      },
      {
-      "t": "Bevolking",
-      "d": "snelle verstedelijking, favela's"
+      "t": "Periferiegebied",
+      "d": "een economisch marginaal en slecht bereikbaar gebied"
      },
      {
-      "t": "Economie",
-      "d": "opkomend land, grote ongelijkheid"
+      "t": "Economische dualiteit",
+      "d": "een formele en een informele economie naast elkaar"
      },
      {
-      "t": "Regionale verschillen",
-      "d": "rijk zuidoosten vs. arm noordoosten"
+      "t": "Braindrain",
+      "d": "het vertrek van hoogopgeleiden naar rijke landen"
      },
      {
-      "t": "Milieu",
-      "d": "ontbossing van het regenwoud"
+      "t": "Ontwikkelingsindicator",
+      "d": "een maatstaf voor het ontwikkelingsniveau van een land"
+     },
+     {
+      "t": "Bevolkingsgroei",
+      "d": "de toename van het inwoneraantal"
      }
     ]
    },
@@ -58662,682 +57424,577 @@ var VAKKEN = [
      "E1 Nationale en regionale vraagstukken",
      "E2 Regionale en lokale vraagstukken"
     ],
-    "sam": "<div class=\"sam-head\">Waterbeheer in Nederland</div><ul><li><strong>Kwetsbaarheid</strong>: 26% van Nederland onder zeeniveau (polders). Rijn en Maas voeren water aan van buiten.</li><li><strong>Dijkring</strong>: aaneengesloten systeem van dijken dat een gebied beschermt. Elke ring heeft een veiligheidsnorm.</li><li><strong>Deltawerken</strong>: aangelegd na watersnoodramp 1953. Afsluiting zeearmen Zeeland. Maeslantkering beschermt Rotterdam.</li><li><strong>Ruimte voor de Rivier</strong>: rivieren meer ruimte geven via dijkverlegging, nevengeulen en uiterwaardverlaging.</li><li><strong>Klimaatadaptatie</strong>: aanpassen aan gevolgen klimaatverandering (hogere dijken, groene daken, ruimte voor water).</li></ul><div class=\"sam-head\">Verstedelijking en ruimtelijke ordening</div><ul><li><strong>Verstedelijking</strong>: groei van stedelijke bevolking. Suburbanisatie: bewoners trekken naar buitenwijken. Reurbanisatie: terugkeer naar stad.</li><li><strong>Ruimtelijke ordening</strong>: overheidsbeleid over gebruik van ruimte. Gemeente: bestemmingsplan. Rijk: Nationale Omgevingsvisie (NOVI).</li><li><strong>Functiemenging</strong>: wonen + werken + voorzieningen in één wijk. Levendigere, duurzamere wijken, minder reisverkeer.</li><li><strong>Nationaal landschap</strong>: beschermd cultuurhistorisch landschap (Groene Hart, Arkemheen-Eempolders).</li></ul><div class=\"sam-onthoud\">26% Nederland onder zeeniveau. Dijkringen = beschermingssysteem. Ruimte voor de Rivier = rivieren meer ruimte. Suburbanisatie = trek naar buitenwijken. NOVI = nationaal ruimtelijk beleid.</div>",
+    "sam": "<div class=\"sam-intro\">In Nederland spelen <strong>verstedelijking</strong>, <strong>suburbanisatie</strong> en <strong>mobiliteit</strong>. Als deltaland draait veel om <strong>waterveiligheid</strong>: <strong>polders</strong>, <strong>dijkringen</strong> en <strong>rivierverruiming</strong>. Via <strong>ruimtelijke ordening</strong> en <strong>klimaatadaptatie</strong> houden we de leefomgeving leefbaar.</div><div class=\"sam-head\">1. Steden en ruimte</div><p><strong>Verstedelijking</strong> is de groei van het stedelijke aandeel van de bevolking; <strong>suburbanisatie</strong> is de trek van de stad naar de omliggende buitenwijken. <strong>Mobiliteit</strong> is de verplaatsing van mensen en goederen. Via <strong>ruimtelijke ordening</strong> stuurt de overheid het gebruik van de schaarse ruimte.</p><div class=\"sam-head\">2. Water en klimaat</div><p><strong>Waterveiligheid</strong> is de bescherming van de bevolking tegen wateroverlast. Een <strong>polder</strong> is een drooggemaakt stuk land onder zeeniveau; een <strong>dijkring</strong> is een gesloten systeem van aaneengesloten dijken. Bij <strong>rivierverruiming</strong> geef je rivieren meer ruimte voor de waterafvoer. <strong>Klimaatadaptatie</strong> is het aanpassen aan de gevolgen van klimaatverandering.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verstedelijking</div><div class=\"sam-definitie-body\">de groei van het stedelijke aandeel van de bevolking.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Suburbanisatie</div><div class=\"sam-definitie-body\">de trek van de stad naar de omliggende buitenwijken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Waterveiligheid</div><div class=\"sam-definitie-body\">de bescherming van de bevolking tegen wateroverlast.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Polder</div><div class=\"sam-definitie-body\">een drooggemaakt stuk land onder zeeniveau.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Rivierverruiming</div><div class=\"sam-definitie-body\">rivieren meer ruimte geven voor de waterafvoer.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ruimtelijke ordening</div><div class=\"sam-definitie-body\">het beleid over het gebruik van de ruimte.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Mobiliteit</div><div class=\"sam-definitie-body\">de verplaatsing van mensen en goederen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Dijkring</div><div class=\"sam-definitie-body\">een gesloten systeem van aaneengesloten dijken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Klimaatadaptatie</div><div class=\"sam-definitie-body\">het aanpassen aan de gevolgen van klimaatverandering.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Overstromingsrisico</div><div class=\"sam-definitie-body\">de kans op een overstroming maal de gevolgen ervan.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Verstedelijking»</b> is groei van het stedelijk aandeel, terwijl <b>«Suburbanisatie»</b> stad naar buitenwijken is. <b>«Waterveiligheid»</b> is bescherming tegen water, terwijl <b>«Ruimtelijke ordening»</b> beleid over de ruimte is. <b>«Polder»</b> is drooggemaakt land onder NAP, terwijl <b>«Dijkring»</b> gesloten systeem van dijken is. <b>«Rivierverruiming»</b> is meer ruimte voor de rivier, terwijl <b>«Waterveiligheid»</b> bescherming tegen water is.</div>",
     "sv": [
      {
       "v": "Wat is verstedelijking?",
       "o": [
-       "Groei van het stedelijk aandeel bevolking",
-       "Uitbreiding van industriegebieden",
-       "Bouw van snelwegen buiten steden",
-       "Trek van bevolking naar platteland"
+       "de groei van het stedelijke aandeel van de bevolking",
+       "de trek naar de buitenwijken",
+       "de bescherming tegen water",
+       "de verplaatsing van goederen"
       ],
       "c": 0,
-      "u": "Verstedelijking = het toenemende aandeel van de bevolking dat in steden woont (vaak als synoniem van urbanisatie gebruikt; strikt omvat verstedelijking óók de ruimtelijke uitbreiding van het stedelijk gebied - zie domein D). Oorzaken: werkgelegenheid, voorzieningen en migratie van platteland naar stad."
+      "d": 2,
+      "u": "Steeds meer mensen wonen in steden.",
+      "uo": [
+       "Klopt: steeds meer mensen wonen in steden.",
+       "Nee, dat is suburbanisatie.",
+       "Nee, dat is waterveiligheid.",
+       "Nee, dat is mobiliteit."
+      ],
+      "uh": "Verstedelijking: groei van het stedelijk aandeel."
      },
      {
       "v": "Wat is suburbanisatie?",
       "o": [
-       "Trek van stad naar omliggende buitenwijken",
-       "Trek van platteland naar stad",
-       "Groei van binnenstedelijke bevolking",
-       "Bouw van nieuwe steden"
+       "de trek naar het stadscentrum",
+       "de trek van de stad naar de omliggende buitenwijken",
+       "de groei van de bevolking",
+       "de bescherming tegen water"
       ],
-      "c": 0,
-      "u": "Suburbanisatie = bewoners trekken van de kernstad naar omliggende gemeenten. Oorzaken: meer ruimte, groen, lagere woningprijzen. Mogelijk door massabezit van de auto."
+      "c": 1,
+      "d": 3,
+      "u": "Mensen verhuizen van de stad naar de rand.",
+      "uo": [
+       "Nee, juist het omgekeerde.",
+       "Klopt: mensen verhuizen van de stad naar de rand.",
+       "Nee, dat is demografie.",
+       "Nee, dat is waterveiligheid."
+      ],
+      "uh": "Suburbanisatie: stad naar buitenwijken."
      },
      {
       "v": "Wat is waterveiligheid?",
       "o": [
-       "Bescherming van bevolking tegen wateroverlast",
-       "Zuivering van drinkwater in steden",
-       "Beschikbaarheid van water in droge gebieden",
-       "Regelgeving over zwemmen in rivieren"
+       "de trek naar de stad",
+       "het schoonmaken van drinkwater",
+       "de bescherming van de bevolking tegen wateroverlast",
+       "de verplaatsing van goederen"
       ],
-      "c": 0,
-      "u": "Waterveiligheid = de mate waarin de bevolking beschermd is tegen overstromingen en wateroverlast. In Nederland: dijken, gemalen, stormvloedkeringen en ruimte voor de rivier."
+      "c": 2,
+      "d": 2,
+      "u": "Waterveiligheid beschermt tegen overstromingen.",
+      "uo": [
+       "Nee, dat is urbanisatie.",
+       "Nee, dat is iets anders.",
+       "Klopt: waterveiligheid beschermt tegen overstromingen.",
+       "Nee, dat is mobiliteit."
+      ],
+      "uh": "Waterveiligheid: bescherming tegen wateroverlast."
      },
      {
       "v": "Wat is een polder?",
       "o": [
-       "Drooggemaakt stuk land onder zeeniveau",
-       "Verhoogd terrein langs een rivier",
-       "Kunstmatig eiland in een haven",
-       "Ondergrondse waterreservoir"
+       "een stadswijk",
+       "een systeem van dijken",
+       "een riviermonding",
+       "een drooggemaakt stuk land onder zeeniveau"
       ],
-      "c": 0,
-      "u": "Een polder = een stuk land dat lager ligt dan de omringende wateren en droog wordt gehouden door dijken en gemalen. Groot deel van de Randstad en Groene Hart bestaat uit polders."
+      "c": 3,
+      "d": 2,
+      "u": "Een polder is drooggemaakt laag land.",
+      "uo": [
+       "Nee, dat is stedelijk.",
+       "Nee, dat is een dijkring.",
+       "Nee, dat is een delta.",
+       "Klopt: een polder is drooggemaakt laag land."
+      ],
+      "uh": "Polder: drooggemaakt land onder zeeniveau."
      },
      {
       "v": "Wat is rivierverruiming?",
       "o": [
-       "Rivieren meer ruimte voor waterafvoer geven",
-       "Verbreden van kanalen voor scheepvaart",
-       "Verlagen van dijken langs rivieren",
-       "Aanleggen van waterleidingen in riviergebieden"
+       "rivieren meer ruimte geven voor de waterafvoer",
+       "rivieren smaller maken",
+       "de trek naar de stad",
+       "de opwarming van de aarde"
       ],
       "c": 0,
-      "u": "Rivierverruiming = beleid om rivieren meer ruimte te geven zodat de waterstand bij hoogwater daalt. Methoden: dijkverlegging, nevengeulen, uiterwaardverlaging. Onderdeel van Ruimte voor de Rivier."
+      "d": 3,
+      "u": "Meer ruimte verlaagt het overstromingsrisico.",
+      "uo": [
+       "Klopt: meer ruimte verlaagt het overstromingsrisico.",
+       "Nee, juist het omgekeerde.",
+       "Nee, dat is urbanisatie.",
+       "Nee, dat is klimaat."
+      ],
+      "uh": "Rivierverruiming: meer ruimte voor de rivier."
      },
      {
       "v": "Wat is ruimtelijke ordening?",
       "o": [
-       "Beleid over gebruik van de ruimte",
-       "Aanleg van wegen en spoorlijnen",
-       "Beheer van natuur en landschappen",
-       "Verdeling van woningen over gemeenten"
+       "de bescherming tegen water",
+       "het beleid over het gebruik van de ruimte",
+       "de verplaatsing van mensen",
+       "de groei van steden"
       ],
-      "c": 0,
-      "u": "Ruimtelijke ordening = overheidsbeleid dat bepaalt waar en hoe ruimte wordt gebruikt (wonen, werken, natuur, landbouw). Gemeenten via bestemmingsplan; rijk via Nationale Omgevingsvisie (NOVI)."
+      "c": 1,
+      "d": 2,
+      "u": "De overheid deelt de ruimte in.",
+      "uo": [
+       "Nee, dat is waterveiligheid.",
+       "Klopt: de overheid deelt de ruimte in.",
+       "Nee, dat is mobiliteit.",
+       "Nee, dat is verstedelijking."
+      ],
+      "uh": "Ruimtelijke ordening: beleid over de ruimte."
      },
      {
       "v": "Wat is mobiliteit?",
       "o": [
-       "Verplaatsing van mensen en goederen",
-       "Flexibiliteit van de arbeidsmarkt",
-       "Technologische innovatie in transport",
-       "Verspreiding van bevolking over een land"
+       "de groei van steden",
+       "de bescherming tegen water",
+       "de verplaatsing van mensen en goederen",
+       "het beleid over de ruimte"
       ],
-      "c": 0,
-      "u": "Mobiliteit = de verplaatsing van mensen en goederen. Afhankelijk van vervoersinfrastructuur, economische activiteit en ruimtelijke spreiding van wonen en werken."
+      "c": 2,
+      "d": 2,
+      "u": "Mobiliteit gaat over verplaatsen.",
+      "uo": [
+       "Nee, dat is verstedelijking.",
+       "Nee, dat is waterveiligheid.",
+       "Klopt: mobiliteit gaat over verplaatsen.",
+       "Nee, dat is ruimtelijke ordening."
+      ],
+      "uh": "Mobiliteit: verplaatsing van mensen en goederen."
      },
      {
       "v": "Wat is een dijkring?",
       "o": [
-       "Gesloten systeem van aaneengesloten dijken",
-       "Rondweg om een waterstaatsgebied",
-       "Waterkering-beheerder in een polder",
-       "Beschermd gebied rondom een rivier"
+       "een stadswijk",
+       "een drooggemaakt stuk land",
+       "een riviermonding",
+       "een gesloten systeem van aaneengesloten dijken"
       ],
-      "c": 0,
-      "u": "Een dijkring = een aaneengesloten kring van waterkeringen die een bepaald gebied beschermen tegen overstroming. Nederland is opgedeeld in dijkringen, elk met een eigen veiligheidsnorm."
+      "c": 3,
+      "d": 3,
+      "u": "Een dijkring omsluit een gebied volledig.",
+      "uo": [
+       "Nee, dat is stedelijk.",
+       "Nee, dat is een polder.",
+       "Nee, dat is een delta.",
+       "Klopt: een dijkring omsluit een gebied volledig."
+      ],
+      "uh": "Dijkring: gesloten systeem van dijken."
      },
      {
       "v": "Wat is klimaatadaptatie?",
       "o": [
-       "Aanpassen aan gevolgen van klimaatverandering",
-       "Verminderen van CO₂-uitstoot",
-       "Herplanten van bossen wereldwijd",
-       "Overstappen op duurzame energie"
+       "het aanpassen aan de gevolgen van klimaatverandering",
+       "het verminderen van de uitstoot",
+       "de trek naar de stad",
+       "het schoonmaken van water"
       ],
       "c": 0,
-      "u": "Klimaatadaptatie = het aanpassen van infrastructuur en leefomgeving aan de gevolgen van klimaatverandering (zeespiegelstijging, extreme neerslag, droogte). Bijv. hogere dijken, groene daken, klimaatbestendige steden."
+      "d": 2,
+      "u": "Adaptatie past de omgeving aan de gevolgen aan.",
+      "uo": [
+       "Klopt: adaptatie past de omgeving aan de gevolgen aan.",
+       "Nee, dat is mitigatie.",
+       "Nee, dat is urbanisatie.",
+       "Nee, dat is iets anders."
+      ],
+      "uh": "Klimaatadaptatie: aanpassen aan de gevolgen."
      },
      {
-      "v": "Wat betekent «Randstad»?",
+      "v": "Hoe bereken je het overstromingsrisico?",
       "o": [
-       "een niet-willekeurige verdeling over de ruimte",
-       "de kans op een overstroming maal het gevolg",
-       "orkanen, toerisme, kwetsbaarheid",
-       "het stedelijke kerngebied van Nederland"
+       "kans plus gevolg",
+       "kans maal gevolg",
+       "alleen de kans",
+       "alleen het gevolg"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Risico is kans maal gevolg.",
+      "uo": [
+       "Nee, het is een product.",
+       "Klopt: risico is kans maal gevolg.",
+       "Nee, ook de gevolgen tellen mee.",
+       "Nee, ook de kans telt mee."
+      ],
+      "uh": "Overstromingsrisico: kans × gevolg."
+     },
+     {
+      "v": "Gezinnen verhuizen van de stad naar rustige buitenwijken. Welk begrip past hierbij?",
+      "o": [
+       "Rivierverruiming",
+       "Mobiliteit",
+       "Suburbanisatie",
+       "Overstromingsrisico"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Gezinnen verhuizen van de stad naar rustige buitenwijken. Dat past bij Suburbanisatie: stad naar buitenwijken.",
+      "uo": [
+       "Nee, dat hoort bij Rivierverruiming: meer ruimte voor de rivier.",
+       "Nee, dat hoort bij Mobiliteit: verplaatsing van mensen en goederen.",
+       "Klopt: stad naar buitenwijken.",
+       "Nee, dat hoort bij Overstromingsrisico: kans maal gevolg."
+      ],
+      "uh": "Suburbanisatie: stad naar buitenwijken."
+     },
+     {
+      "v": "Een gebied is volledig omsloten door aaneengesloten dijken. Om welk begrip gaat het?",
+      "o": [
+       "Klimaatadaptatie",
+       "Verstedelijking",
+       "Rivierverruiming",
+       "Dijkring"
       ],
       "c": 3,
-      "u": "«Randstad» betekent: het stedelijke kerngebied van Nederland.",
-      "d": 1
+      "d": 1,
+      "u": "Een gebied is volledig omsloten door aaneengesloten dijken. Dat past bij Dijkring: gesloten systeem van dijken.",
+      "uo": [
+       "Nee, dat hoort bij Klimaatadaptatie: aanpassen aan het klimaat.",
+       "Nee, dat hoort bij Verstedelijking: groei van het stedelijk aandeel.",
+       "Nee, dat hoort bij Rivierverruiming: meer ruimte voor de rivier.",
+       "Klopt: gesloten systeem van dijken."
+      ],
+      "uh": "Dijkring: gesloten systeem van dijken."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het stedelijke kerngebied van Nederland\"?",
+      "v": "Een gesloten systeem van dijken. Welk begrip herken je hier?",
       "o": [
-       "Randstad",
-       "Subductie",
-       "Krottenwijk",
-       "Infrastructuur"
+       "Dijkring",
+       "Verstedelijking",
+       "Rivierverruiming",
+       "Klimaatadaptatie"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Randstad»: het stedelijke kerngebied van Nederland.",
-      "d": 2
+      "d": 1,
+      "u": "Een gesloten systeem van dijken. Dat past bij Dijkring: gesloten systeem van dijken.",
+      "uo": [
+       "Klopt: gesloten systeem van dijken.",
+       "Nee, dat hoort bij Verstedelijking: groei van het stedelijk aandeel.",
+       "Nee, dat hoort bij Rivierverruiming: meer ruimte voor de rivier.",
+       "Nee, dat hoort bij Klimaatadaptatie: aanpassen aan het klimaat."
+      ],
+      "uh": "Dijkring: gesloten systeem van dijken."
      },
      {
-      "v": "Welke term past bij: \"het stedelijke kerngebied van Nederland\"?",
+      "v": "Aanpassen aan de gevolgen van klimaatverandering. Wat is hier aan de hand?",
       "o": [
-       "Randstad",
        "Polder",
-       "Overstromingsrisico",
-       "Stedelijke gebieden"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Randstad»: het stedelijke kerngebied van Nederland.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Randstad» in?",
-      "o": [
-       "opbouw en verandering van steden",
-       "het stedelijke kerngebied van Nederland",
-       "de kans op een overstroming maal het gevolg",
-       "overstromingsrisico, dijken, ruimte voor water"
+       "Klimaatadaptatie",
+       "Suburbanisatie",
+       "Verstedelijking"
       ],
       "c": 1,
-      "u": "«Randstad» betekent: het stedelijke kerngebied van Nederland.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ruimtelijke ordening»?",
-      "o": [
-       "omgevormd door druk en hittemarmer, leisteen",
-       "de toename van het aandeel ouderen",
-       "economisch, cultureel, politiek, demografisch",
-       "de bewuste inrichting van de ruimte"
+      "d": 1,
+      "u": "Aanpassen aan de gevolgen van klimaatverandering. Dat past bij Klimaatadaptatie: aanpassen aan het klimaat.",
+      "uo": [
+       "Nee, dat hoort bij Polder: drooggemaakt land onder NAP.",
+       "Klopt: aanpassen aan het klimaat.",
+       "Nee, dat hoort bij Suburbanisatie: stad naar buitenwijken.",
+       "Nee, dat hoort bij Verstedelijking: groei van het stedelijk aandeel."
       ],
-      "c": 3,
-      "u": "«Ruimtelijke ordening» betekent: de bewuste inrichting van de ruimte.",
-      "d": 1
+      "uh": "Klimaatadaptatie: aanpassen aan het klimaat."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de bewuste inrichting van de ruimte\"?",
-      "o": [
-       "Thematische kaart",
-       "Ruimtelijke ordening",
-       "Schaal",
-       "Bevolking"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ruimtelijke ordening»: de bewuste inrichting van de ruimte.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de bewuste inrichting van de ruimte\"?",
+      "v": "Steden leggen groen en waterpleinen aan tegen hitte en wateroverlast. Welk begrip past hierbij?",
       "o": [
        "Suburbanisatie",
-       "Krimp",
-       "Infrastructuur",
+       "Polder",
+       "Klimaatadaptatie",
+       "Verstedelijking"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Steden leggen groen en waterpleinen aan tegen hitte en wateroverlast. Dat past bij Klimaatadaptatie: aanpassen aan het klimaat.",
+      "uo": [
+       "Nee, dat hoort bij Suburbanisatie: stad naar buitenwijken.",
+       "Nee, dat hoort bij Polder: drooggemaakt land onder NAP.",
+       "Klopt: aanpassen aan het klimaat.",
+       "Nee, dat hoort bij Verstedelijking: groei van het stedelijk aandeel."
+      ],
+      "uh": "Klimaatadaptatie: aanpassen aan het klimaat."
+     },
+     {
+      "v": "De verplaatsing van mensen en goederen. Om welk begrip gaat het?",
+      "o": [
+       "Rivierverruiming",
+       "Ruimtelijke ordening",
+       "Waterveiligheid",
+       "Mobiliteit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "De verplaatsing van mensen en goederen. Dat past bij Mobiliteit: verplaatsing van mensen en goederen.",
+      "uo": [
+       "Nee, dat hoort bij Rivierverruiming: meer ruimte voor de rivier.",
+       "Nee, dat hoort bij Ruimtelijke ordening: beleid over de ruimte.",
+       "Nee, dat hoort bij Waterveiligheid: bescherming tegen water.",
+       "Klopt: verplaatsing van mensen en goederen."
+      ],
+      "uh": "Mobiliteit: verplaatsing van mensen en goederen."
+     },
+     {
+      "v": "Het beleid over het gebruik van de ruimte. Welk begrip herken je hier?",
+      "o": [
+       "Ruimtelijke ordening",
+       "Overstromingsrisico",
+       "Polder",
+       "Waterveiligheid"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het beleid over het gebruik van de ruimte. Dat past bij Ruimtelijke ordening: beleid over de ruimte.",
+      "uo": [
+       "Klopt: beleid over de ruimte.",
+       "Nee, dat hoort bij Overstromingsrisico: kans maal gevolg.",
+       "Nee, dat hoort bij Polder: drooggemaakt land onder NAP.",
+       "Nee, dat hoort bij Waterveiligheid: bescherming tegen water."
+      ],
+      "uh": "Ruimtelijke ordening: beleid over de ruimte."
+     },
+     {
+      "v": "De overheid bepaalt waar huizen, wegen en natuur komen. Wat is hier aan de hand?",
+      "o": [
+       "Mobiliteit",
+       "Ruimtelijke ordening",
+       "Waterveiligheid",
+       "Verstedelijking"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De overheid bepaalt waar huizen, wegen en natuur komen. Dat past bij Ruimtelijke ordening: beleid over de ruimte.",
+      "uo": [
+       "Nee, dat hoort bij Mobiliteit: verplaatsing van mensen en goederen.",
+       "Klopt: beleid over de ruimte.",
+       "Nee, dat hoort bij Waterveiligheid: bescherming tegen water.",
+       "Nee, dat hoort bij Verstedelijking: groei van het stedelijk aandeel."
+      ],
+      "uh": "Ruimtelijke ordening: beleid over de ruimte."
+     },
+     {
+      "v": "Drooggemaakt land onder zeeniveau. Welk begrip past hierbij?",
+      "o": [
+       "Overstromingsrisico",
+       "Klimaatadaptatie",
+       "Polder",
+       "Verstedelijking"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Drooggemaakt land onder zeeniveau. Dat past bij Polder: drooggemaakt land onder NAP.",
+      "uo": [
+       "Nee, dat hoort bij Overstromingsrisico: kans maal gevolg.",
+       "Nee, dat hoort bij Klimaatadaptatie: aanpassen aan het klimaat.",
+       "Klopt: drooggemaakt land onder NAP.",
+       "Nee, dat hoort bij Verstedelijking: groei van het stedelijk aandeel."
+      ],
+      "uh": "Polder: drooggemaakt land onder NAP."
+     },
+     {
+      "v": "Een drooggemaakt stuk land dat onder de zeespiegel ligt. Om welk begrip gaat het?",
+      "o": [
+       "Overstromingsrisico",
+       "Dijkring",
+       "Rivierverruiming",
+       "Polder"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een drooggemaakt stuk land dat onder de zeespiegel ligt. Dat past bij Polder: drooggemaakt land onder NAP.",
+      "uo": [
+       "Nee, dat hoort bij Overstromingsrisico: kans maal gevolg.",
+       "Nee, dat hoort bij Dijkring: gesloten systeem van dijken.",
+       "Nee, dat hoort bij Rivierverruiming: meer ruimte voor de rivier.",
+       "Klopt: drooggemaakt land onder NAP."
+      ],
+      "uh": "Polder: drooggemaakt land onder NAP."
+     },
+     {
+      "v": "De bescherming tegen wateroverlast. Welk begrip herken je hier?",
+      "o": [
+       "Waterveiligheid",
+       "Ruimtelijke ordening",
+       "Dijkring",
+       "Suburbanisatie"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De bescherming tegen wateroverlast. Dat past bij Waterveiligheid: bescherming tegen water.",
+      "uo": [
+       "Klopt: bescherming tegen water.",
+       "Nee, dat hoort bij Ruimtelijke ordening: beleid over de ruimte.",
+       "Nee, dat hoort bij Dijkring: gesloten systeem van dijken.",
+       "Nee, dat hoort bij Suburbanisatie: stad naar buitenwijken."
+      ],
+      "uh": "Waterveiligheid: bescherming tegen water."
+     },
+     {
+      "v": "Kans maal gevolg van een overstroming. Wat is hier aan de hand?",
+      "o": [
+       "Suburbanisatie",
+       "Overstromingsrisico",
+       "Ruimtelijke ordening",
+       "Mobiliteit"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Kans maal gevolg van een overstroming. Dat past bij Overstromingsrisico: kans maal gevolg.",
+      "uo": [
+       "Nee, dat hoort bij Suburbanisatie: stad naar buitenwijken.",
+       "Klopt: kans maal gevolg.",
+       "Nee, dat hoort bij Ruimtelijke ordening: beleid over de ruimte.",
+       "Nee, dat hoort bij Mobiliteit: verplaatsing van mensen en goederen."
+      ],
+      "uh": "Overstromingsrisico: kans maal gevolg."
+     },
+     {
+      "v": "De groei van het stedelijk bevolkingsaandeel. Welk begrip past hierbij?",
+      "o": [
+       "Polder",
+       "Suburbanisatie",
+       "Verstedelijking",
+       "Mobiliteit"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "De groei van het stedelijk bevolkingsaandeel. Dat past bij Verstedelijking: groei van het stedelijk aandeel.",
+      "uo": [
+       "Nee, dat hoort bij Polder: drooggemaakt land onder NAP.",
+       "Nee, dat hoort bij Suburbanisatie: stad naar buitenwijken.",
+       "Klopt: groei van het stedelijk aandeel.",
+       "Nee, dat hoort bij Mobiliteit: verplaatsing van mensen en goederen."
+      ],
+      "uh": "Verstedelijking: groei van het stedelijk aandeel."
+     },
+     {
+      "v": "Mensen en goederen verplaatsen zich met auto, trein en fiets. Om welk begrip gaat het?",
+      "o": [
+       "Rivierverruiming",
+       "Ruimtelijke ordening",
+       "Waterveiligheid",
+       "Mobiliteit"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Mensen en goederen verplaatsen zich met auto, trein en fiets. Dat past bij Mobiliteit: verplaatsing van mensen en goederen.",
+      "uo": [
+       "Nee, dat hoort bij Rivierverruiming: meer ruimte voor de rivier.",
+       "Nee, dat hoort bij Ruimtelijke ordening: beleid over de ruimte.",
+       "Nee, dat hoort bij Waterveiligheid: bescherming tegen water.",
+       "Klopt: verplaatsing van mensen en goederen."
+      ],
+      "uh": "Mobiliteit: verplaatsing van mensen en goederen."
+     },
+     {
+      "v": "De trek van stad naar buitenwijken. Welk begrip herken je hier?",
+      "o": [
+       "Suburbanisatie",
+       "Mobiliteit",
+       "Rivierverruiming",
+       "Overstromingsrisico"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De trek van stad naar buitenwijken. Dat past bij Suburbanisatie: stad naar buitenwijken.",
+      "uo": [
+       "Klopt: stad naar buitenwijken.",
+       "Nee, dat hoort bij Mobiliteit: verplaatsing van mensen en goederen.",
+       "Nee, dat hoort bij Rivierverruiming: meer ruimte voor de rivier.",
+       "Nee, dat hoort bij Overstromingsrisico: kans maal gevolg."
+      ],
+      "uh": "Suburbanisatie: stad naar buitenwijken."
+     },
+     {
+      "v": "Rivieren meer ruimte geven voor de afvoer. Wat is hier aan de hand?",
+      "o": [
+       "Waterveiligheid",
+       "Rivierverruiming",
+       "Overstromingsrisico",
        "Ruimtelijke ordening"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Ruimtelijke ordening»: de bewuste inrichting van de ruimte.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ruimtelijke ordening» in?",
-      "o": [
-       "de bewuste inrichting van de ruimte",
-       "de trek van de stad naar de rand of het ommeland",
-       "overstromingsrisico, dijken, ruimte voor water",
-       "orkanen, toerisme, kwetsbaarheid"
+      "c": 1,
+      "d": 2,
+      "u": "Rivieren meer ruimte geven voor de afvoer. Dat past bij Rivierverruiming: meer ruimte voor de rivier.",
+      "uo": [
+       "Nee, dat hoort bij Waterveiligheid: bescherming tegen water.",
+       "Klopt: meer ruimte voor de rivier.",
+       "Nee, dat hoort bij Overstromingsrisico: kans maal gevolg.",
+       "Nee, dat hoort bij Ruimtelijke ordening: beleid over de ruimte."
       ],
-      "c": 0,
-      "u": "«Ruimtelijke ordening» betekent: de bewuste inrichting van de ruimte.",
-      "d": 3
+      "uh": "Rivierverruiming: meer ruimte voor de rivier."
      },
      {
-      "v": "Wat betekent «Suburbanisatie»?",
+      "v": "Een steeds groter deel van de bevolking woont in steden. Welk begrip past hierbij?",
       "o": [
-       "rijke kernlanden vs. arme periferie",
-       "een economisch dominante regio",
-       "de trek van de stad naar de rand of het ommeland",
-       "opbouw en verandering van steden"
-      ],
-      "c": 2,
-      "u": "«Suburbanisatie» betekent: de trek van de stad naar de rand of het ommeland.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de trek van de stad naar de rand of het ommeland\"?",
-      "o": [
-       "Bron",
-       "Subductie",
+       "Dijkring",
        "Suburbanisatie",
-       "Pullfactor"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Suburbanisatie»: de trek van de stad naar de rand of het ommeland.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de trek van de stad naar de rand of het ommeland\"?",
-      "o": [
-       "Suburbanisatie",
-       "Ruimtelijke inrichting",
-       "NAP",
-       "Infrastructuur"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Suburbanisatie»: de trek van de stad naar de rand of het ommeland.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Suburbanisatie» in?",
-      "o": [
-       "de netwerken van wegen, spoor en leidingen",
-       "de kans op een overstroming maal het gevolg",
-       "de trek van de stad naar de rand of het ommeland",
-       "de verdeling van de ruimte over functies"
-      ],
-      "c": 2,
-      "u": "«Suburbanisatie» betekent: de trek van de stad naar de rand of het ommeland.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Krimp»?",
-      "o": [
-       "de afname van de bevolking in een gebied",
-       "de bewuste inrichting van de ruimte",
-       "de netwerken van wegen, spoor en leidingen",
-       "het onder een andere plaat schuiven van een plaat"
-      ],
-      "c": 0,
-      "u": "«Krimp» betekent: de afname van de bevolking in een gebied.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de afname van de bevolking in een gebied\"?",
-      "o": [
-       "Krimp",
-       "Subductie",
-       "Klimaat & verwering",
-       "NAP"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Krimp»: de afname van de bevolking in een gebied.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de afname van de bevolking in een gebied\"?",
-      "o": [
-       "Overstromingsrisico",
-       "Krimp",
-       "Infrastructuur",
+       "Verstedelijking",
        "Polder"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Krimp»: de afname van de bevolking in een gebied.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Krimp» in?",
-      "o": [
-       "de afname van de bevolking in een gebied",
-       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
-       "de netwerken van wegen, spoor en leidingen",
-       "het stedelijke kerngebied van Nederland"
-      ],
-      "c": 0,
-      "u": "«Krimp» betekent: de afname van de bevolking in een gebied.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Infrastructuur»?",
-      "o": [
-       "het beperken van de oorzaak van klimaatverandering",
-       "orkanen, toerisme, kwetsbaarheid",
-       "de netwerken van wegen, spoor en leidingen",
-       "een uitgangsmateriaal voor productie"
-      ],
       "c": 2,
-      "u": "«Infrastructuur» betekent: de netwerken van wegen, spoor en leidingen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de netwerken van wegen, spoor en leidingen\"?",
-      "o": [
-       "Cultureel",
-       "Ontwikkelingsland",
-       "Infrastructuur",
-       "HDI"
+      "d": 3,
+      "u": "Een steeds groter deel van de bevolking woont in steden. Dat past bij Verstedelijking: groei van het stedelijk aandeel.",
+      "uo": [
+       "Nee, dat hoort bij Dijkring: gesloten systeem van dijken.",
+       "Nee, dat hoort bij Suburbanisatie: stad naar buitenwijken.",
+       "Klopt: groei van het stedelijk aandeel.",
+       "Nee, dat hoort bij Polder: drooggemaakt land onder NAP."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Infrastructuur»: de netwerken van wegen, spoor en leidingen.",
-      "d": 2
+      "uh": "Verstedelijking: groei van het stedelijk aandeel."
      },
      {
-      "v": "Welke term past bij: \"de netwerken van wegen, spoor en leidingen\"?",
+      "v": "Je verbreedt de uiterwaarden zodat de rivier meer water kwijt kan. Om welk begrip gaat het?",
       "o": [
-       "Ruimtelijke inrichting",
-       "Water & veiligheid",
-       "Overstromingsrisico",
-       "Infrastructuur"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Infrastructuur»: de netwerken van wegen, spoor en leidingen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Infrastructuur» in?",
-      "o": [
-       "de netwerken van wegen, spoor en leidingen",
-       "overstromingsrisico, dijken, ruimte voor water",
-       "orkanen, toerisme, kwetsbaarheid",
-       "de afname van de bevolking in een gebied"
-      ],
-      "c": 0,
-      "u": "«Infrastructuur» betekent: de netwerken van wegen, spoor en leidingen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «NAP»?",
-      "o": [
-       "de verhouding tussen kaart en werkelijkheid",
-       "de trek van het platteland naar de stad",
-       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
-       "global shift van industrie"
-      ],
-      "c": 2,
-      "u": "«NAP» betekent: Normaal Amsterdams Peil, het referentievlak voor hoogte.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"Normaal Amsterdams Peil, het referentievlak voor hoogte\"?",
-      "o": [
-       "NAP",
-       "Regionale verschillen",
-       "Vergrijzing",
-       "Randstad"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «NAP»: Normaal Amsterdams Peil, het referentievlak voor hoogte.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"Normaal Amsterdams Peil, het referentievlak voor hoogte\"?",
-      "o": [
-       "Overstromingsrisico",
-       "Stedelijke gebieden",
+       "Verstedelijking",
+       "Polder",
        "Suburbanisatie",
-       "NAP"
+       "Rivierverruiming"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «NAP»: Normaal Amsterdams Peil, het referentievlak voor hoogte.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «NAP» in?",
-      "o": [
-       "de netwerken van wegen, spoor en leidingen",
-       "Normaal Amsterdams Peil, het referentievlak voor hoogte",
-       "de kans op een overstroming maal het gevolg",
-       "de bewuste inrichting van de ruimte"
+      "d": 1,
+      "u": "Je verbreedt de uiterwaarden zodat de rivier meer water kwijt kan. Dat past bij Rivierverruiming: meer ruimte voor de rivier.",
+      "uo": [
+       "Nee, dat hoort bij Verstedelijking: groei van het stedelijk aandeel.",
+       "Nee, dat hoort bij Polder: drooggemaakt land onder NAP.",
+       "Nee, dat hoort bij Suburbanisatie: stad naar buitenwijken.",
+       "Klopt: meer ruimte voor de rivier."
       ],
-      "c": 1,
-      "u": "«NAP» betekent: Normaal Amsterdams Peil, het referentievlak voor hoogte.",
-      "d": 3
+      "uh": "Rivierverruiming: meer ruimte voor de rivier."
      },
      {
-      "v": "Wat betekent «Polder»?",
+      "v": "Dijken en gemalen beschermen de bevolking tegen overstroming. Welk begrip herken je hier?",
       "o": [
-       "laaggelegen, door dijken omringd en drooggemalen land",
-       "een economisch dominante regio",
-       "het vasthouden van warmte door broeikasgassen",
-       "waar, waarom dáár, en met welk gevolg?"
-      ],
-      "c": 0,
-      "u": "«Polder» betekent: laaggelegen, door dijken omringd en drooggemalen land.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"laaggelegen, door dijken omringd en drooggemalen land\"?",
-      "o": [
-       "Migratie",
-       "Polder",
-       "Adaptatie",
-       "Bevolkingsdichtheid"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Polder»: laaggelegen, door dijken omringd en drooggemalen land.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"laaggelegen, door dijken omringd en drooggemalen land\"?",
-      "o": [
-       "Caribisch Nederland",
+       "Waterveiligheid",
+       "Ruimtelijke ordening",
        "Suburbanisatie",
-       "Polder",
-       "Water & veiligheid"
+       "Mobiliteit"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Polder»: laaggelegen, door dijken omringd en drooggemalen land.",
-      "d": 3
+      "c": 0,
+      "d": 2,
+      "u": "Dijken en gemalen beschermen de bevolking tegen overstroming. Dat past bij Waterveiligheid: bescherming tegen water.",
+      "uo": [
+       "Klopt: bescherming tegen water.",
+       "Nee, dat hoort bij Ruimtelijke ordening: beleid over de ruimte.",
+       "Nee, dat hoort bij Suburbanisatie: stad naar buitenwijken.",
+       "Nee, dat hoort bij Mobiliteit: verplaatsing van mensen en goederen."
+      ],
+      "uh": "Waterveiligheid: bescherming tegen water."
      },
      {
-      "v": "Wat houdt «Polder» in?",
+      "v": "De kans op een overstroming maal de schade die zij aanricht. Wat is hier aan de hand?",
       "o": [
-       "de afname van de bevolking in een gebied",
-       "laaggelegen, door dijken omringd en drooggemalen land",
-       "de kans op een overstroming maal het gevolg",
-       "opbouw en verandering van steden"
-      ],
-      "c": 1,
-      "u": "«Polder» betekent: laaggelegen, door dijken omringd en drooggemalen land.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Overstromingsrisico»?",
-      "o": [
-       "overstromingsrisico, dijken, ruimte voor water",
-       "het aan de oppervlakte komen van magma",
-       "rijk zuidoosten vs. arm noordoosten",
-       "de kans op een overstroming maal het gevolg"
-      ],
-      "c": 3,
-      "u": "«Overstromingsrisico» betekent: de kans op een overstroming maal het gevolg.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de kans op een overstroming maal het gevolg\"?",
-      "o": [
-       "Centrum–periferie",
-       "Centrum",
-       "Mondiale spreiding",
-       "Overstromingsrisico"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Overstromingsrisico»: de kans op een overstroming maal het gevolg.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de kans op een overstroming maal het gevolg\"?",
-      "o": [
+       "Waterveiligheid",
        "Overstromingsrisico",
-       "Polder",
-       "Ruimtelijke inrichting",
-       "NAP"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Overstromingsrisico»: de kans op een overstroming maal het gevolg.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Overstromingsrisico» in?",
-      "o": [
-       "orkanen, toerisme, kwetsbaarheid",
-       "de verdeling van de ruimte over functies",
-       "laaggelegen, door dijken omringd en drooggemalen land",
-       "de kans op een overstroming maal het gevolg"
-      ],
-      "c": 3,
-      "u": "«Overstromingsrisico» betekent: de kans op een overstroming maal het gevolg.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ruimtelijke inrichting»?",
-      "o": [
-       "de verdeling van de ruimte over functies",
-       "afgezet materiaal zoals zand en klei",
-       "de verhouding tussen kaart en werkelijkheid",
-       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs"
-      ],
-      "c": 0,
-      "u": "«Ruimtelijke inrichting» betekent: de verdeling van de ruimte over functies.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de verdeling van de ruimte over functies\"?",
-      "o": [
-       "Broncombinatie",
-       "Ontwikkelingsland",
-       "Stedelijke gebieden",
-       "Ruimtelijke inrichting"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Ruimtelijke inrichting»: de verdeling van de ruimte over functies.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de verdeling van de ruimte over functies\"?",
-      "o": [
-       "Randstad",
-       "Ruimtelijke inrichting",
-       "Caribisch Nederland",
-       "Overstromingsrisico"
+       "Rivierverruiming",
+       "Klimaatadaptatie"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Ruimtelijke inrichting»: de verdeling van de ruimte over functies.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ruimtelijke inrichting» in?",
-      "o": [
-       "de bewuste inrichting van de ruimte",
-       "laaggelegen, door dijken omringd en drooggemalen land",
-       "de verdeling van de ruimte over functies",
-       "orkanen, toerisme, kwetsbaarheid"
+      "d": 3,
+      "u": "De kans op een overstroming maal de schade die zij aanricht. Dat past bij Overstromingsrisico: kans maal gevolg.",
+      "uo": [
+       "Nee, dat hoort bij Waterveiligheid: bescherming tegen water.",
+       "Klopt: kans maal gevolg.",
+       "Nee, dat hoort bij Rivierverruiming: meer ruimte voor de rivier.",
+       "Nee, dat hoort bij Klimaatadaptatie: aanpassen aan het klimaat."
       ],
-      "c": 2,
-      "u": "«Ruimtelijke inrichting» betekent: de verdeling van de ruimte over functies.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Water & veiligheid»?",
-      "o": [
-       "overstromingsrisico, dijken, ruimte voor water",
-       "rijke kernlanden vs. arme periferie",
-       "het aantal inwoners per vierkante kilometer",
-       "de afstand gemeten in reistijd of kosten"
-      ],
-      "c": 0,
-      "u": "«Water & veiligheid» betekent: overstromingsrisico, dijken, ruimte voor water.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"overstromingsrisico, dijken, ruimte voor water\"?",
-      "o": [
-       "Regionale verschillen",
-       "Urbanisatie",
-       "Water & veiligheid",
-       "Dimensies"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Water & veiligheid»: overstromingsrisico, dijken, ruimte voor water.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"overstromingsrisico, dijken, ruimte voor water\"?",
-      "o": [
-       "Stedelijke gebieden",
-       "NAP",
-       "Water & veiligheid",
-       "Suburbanisatie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Water & veiligheid»: overstromingsrisico, dijken, ruimte voor water.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Water & veiligheid» in?",
-      "o": [
-       "de bewuste inrichting van de ruimte",
-       "het stedelijke kerngebied van Nederland",
-       "de kans op een overstroming maal het gevolg",
-       "overstromingsrisico, dijken, ruimte voor water"
-      ],
-      "c": 3,
-      "u": "«Water & veiligheid» betekent: overstromingsrisico, dijken, ruimte voor water.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Stedelijke gebieden»?",
-      "o": [
-       "de toestand van de atmosfeer op korte termijn",
-       "stollings-, sediment- en metamorf gesteente",
-       "opbouw en verandering van steden",
-       "een maat voor ontwikkeling: welvaart, levensverwachting en onderwijs"
-      ],
-      "c": 2,
-      "u": "«Stedelijke gebieden» betekent: opbouw en verandering van steden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"opbouw en verandering van steden\"?",
-      "o": [
-       "Economisch",
-       "Stedelijke gebieden",
-       "Periferie",
-       "Polder"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Stedelijke gebieden»: opbouw en verandering van steden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"opbouw en verandering van steden\"?",
-      "o": [
-       "Ruimtelijke inrichting",
-       "Randstad",
-       "Polder",
-       "Stedelijke gebieden"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Stedelijke gebieden»: opbouw en verandering van steden.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Stedelijke gebieden» in?",
-      "o": [
-       "orkanen, toerisme, kwetsbaarheid",
-       "opbouw en verandering van steden",
-       "het stedelijke kerngebied van Nederland",
-       "Normaal Amsterdams Peil, het referentievlak voor hoogte"
-      ],
-      "c": 1,
-      "u": "«Stedelijke gebieden» betekent: opbouw en verandering van steden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Caribisch Nederland»?",
-      "o": [
-       "aardbevingen, vulkanen, overstromingen",
-       "opkomend land, grote ongelijkheid",
-       "ontbossing van het regenwoud",
-       "orkanen, toerisme, kwetsbaarheid"
-      ],
-      "c": 3,
-      "u": "«Caribisch Nederland» betekent: orkanen, toerisme, kwetsbaarheid.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"orkanen, toerisme, kwetsbaarheid\"?",
-      "o": [
-       "Caribisch Nederland",
-       "Adaptatie",
-       "Natuurlijke risico's",
-       "Urbanisatie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Caribisch Nederland»: orkanen, toerisme, kwetsbaarheid.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"orkanen, toerisme, kwetsbaarheid\"?",
-      "o": [
-       "Randstad",
-       "Caribisch Nederland",
-       "Polder",
-       "Suburbanisatie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Caribisch Nederland»: orkanen, toerisme, kwetsbaarheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Caribisch Nederland» in?",
-      "o": [
-       "het stedelijke kerngebied van Nederland",
-       "de verdeling van de ruimte over functies",
-       "orkanen, toerisme, kwetsbaarheid",
-       "laaggelegen, door dijken omringd en drooggemalen land"
-      ],
-      "c": 2,
-      "u": "«Caribisch Nederland» betekent: orkanen, toerisme, kwetsbaarheid.",
-      "d": 3
+      "uh": "Overstromingsrisico: kans maal gevolg."
      }
     ],
     "oe": [
@@ -59424,52 +58081,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Randstad",
-      "d": "het stedelijke kerngebied van Nederland"
-     },
-     {
-      "t": "Ruimtelijke ordening",
-      "d": "de bewuste inrichting van de ruimte"
+      "t": "Verstedelijking",
+      "d": "de groei van het stedelijke aandeel van de bevolking"
      },
      {
       "t": "Suburbanisatie",
-      "d": "de trek van de stad naar de rand of het ommeland"
+      "d": "de trek van de stad naar de omliggende buitenwijken"
      },
      {
-      "t": "Krimp",
-      "d": "de afname van de bevolking in een gebied"
-     },
-     {
-      "t": "Infrastructuur",
-      "d": "de netwerken van wegen, spoor en leidingen"
-     },
-     {
-      "t": "NAP",
-      "d": "Normaal Amsterdams Peil, het referentievlak voor hoogte"
+      "t": "Waterveiligheid",
+      "d": "de bescherming van de bevolking tegen wateroverlast"
      },
      {
       "t": "Polder",
-      "d": "laaggelegen, door dijken omringd en drooggemalen land"
+      "d": "een drooggemaakt stuk land onder zeeniveau"
+     },
+     {
+      "t": "Rivierverruiming",
+      "d": "rivieren meer ruimte geven voor de waterafvoer"
+     },
+     {
+      "t": "Ruimtelijke ordening",
+      "d": "het beleid over het gebruik van de ruimte"
+     },
+     {
+      "t": "Mobiliteit",
+      "d": "de verplaatsing van mensen en goederen"
+     },
+     {
+      "t": "Dijkring",
+      "d": "een gesloten systeem van aaneengesloten dijken"
+     },
+     {
+      "t": "Klimaatadaptatie",
+      "d": "het aanpassen aan de gevolgen van klimaatverandering"
      },
      {
       "t": "Overstromingsrisico",
-      "d": "de kans op een overstroming maal het gevolg"
-     },
-     {
-      "t": "Ruimtelijke inrichting",
-      "d": "de verdeling van de ruimte over functies"
-     },
-     {
-      "t": "Water & veiligheid",
-      "d": "overstromingsrisico, dijken, ruimte voor water"
-     },
-     {
-      "t": "Stedelijke gebieden",
-      "d": "opbouw en verandering van steden"
-     },
-     {
-      "t": "Caribisch Nederland",
-      "d": "orkanen, toerisme, kwetsbaarheid"
+      "d": "de kans op een overstroming maal de gevolgen ervan"
      }
     ]
    }
