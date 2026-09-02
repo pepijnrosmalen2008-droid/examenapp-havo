@@ -2036,9 +2036,9 @@ var VAKKEN = [
      "Operationaliseren van begrippen",
      "Enquête, interview en observatie"
     ],
-    "nSv": 42,
+    "nSv": 31,
     "nOe": 3,
-    "nBeg": 9,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -2054,9 +2054,9 @@ var VAKKEN = [
      "Instituties en hun functies",
      "Pluralisme vs elitisme"
     ],
-    "nSv": 82,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 19,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -2073,9 +2073,9 @@ var VAKKEN = [
      "Media en politiek",
      "Europese Unie en nationale soevereiniteit"
     ],
-    "nSv": 59,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 13,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -2091,9 +2091,9 @@ var VAKKEN = [
      "Cultuur, socialisatie en identiteit",
      "Maatschappelijke tegenstellingen"
     ],
-    "nSv": 71,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 16,
+    "nBeg": 10,
     "hasSam": true
    }
   ]

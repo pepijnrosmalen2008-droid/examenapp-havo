@@ -57892,505 +57892,596 @@ var VAKKEN = [
      "Operationaliseren van begrippen",
      "Enquête, interview en observatie"
     ],
-    "sam": "<div class=\"sam-head\">Onderzoeksopzet</div><ul><li><strong>Probleemstelling</strong>: de centrale onderzoeksvraag. Deelvragen helpen die te beantwoorden.</li><li><strong>Hypothese</strong>: een verwacht antwoord dat je via onderzoek bevestigt of weerlegt. Formuleer als \"Als X dan Y\" of \"Naarmate X toeneemt, neemt Y toe/af\".</li><li><strong>Operationaliseren</strong>: een abstract begrip meetbaar maken. Bijv. \"welzijn\" = score op een vragenlijst. Essentieel voor valide meting.</li></ul><div class=\"sam-head\">Kwantitatief vs kwalitatief</div><ul><li><strong>Kwantitatief</strong>: cijfers en statistiek. Grote steekproeven. Doel = meten, vergelijken, generaliseren. Bijv. enquête met gesloten vragen.</li><li><strong>Kwalitatief</strong>: verhalen en ervaringen. Kleine, diepgaande steekproeven. Doel = begrijpen en verklaren. Bijv. diepte-interview, observatie.</li><li><strong>Mixed methods</strong>: combinatie van beide - sterker dan elk afzonderlijk.</li></ul><div class=\"sam-head\">Kwaliteit van onderzoek</div><ul><li><strong>Betrouwbaarheid</strong>: herhaald meten geeft dezelfde uitkomst. Is de meting consistent?</li><li><strong>Validiteit</strong>: meet het instrument wat het zou moeten meten?</li><li><strong>Representativiteit</strong>: is de steekproef een goede afspiegeling van de populatie? Willekeurige trekking = minder vertekening.</li><li><strong>Correlatie ≠ causaliteit</strong>: twee verschijnselen gaan samen, maar dat betekent niet dat het één het ander veroorzaakt. Altijd controleren op derde variabelen (confounders).</li></ul>",
+    "sam": "<div class=\"sam-intro\">Sociaalwetenschappelijk onderzoek is <strong>deductief</strong> (theorie toetsen) of <strong>inductief</strong> (theorie opbouwen). Je verhoogt de <strong>validiteit</strong> met <strong>triangulatie</strong>, kiest tussen een <strong>enquête</strong> en een <strong>diepte-interview</strong>, en onderscheidt de <strong>onafhankelijke</strong> van de <strong>afhankelijke variabele</strong>.</div><div class=\"sam-head\">1. Onderzoeksopzet</div><p><strong>Deductief</strong> onderzoek toetst een bestaande theorie; <strong>inductief</strong> onderzoek bouwt een theorie op vanuit observaties. De <strong>onafhankelijke variabele</strong> is de oorzaak, de <strong>afhankelijke variabele</strong> het effect. <strong>Triangulatie</strong> gebruikt meerdere methoden om de <strong>validiteit</strong> te verhogen.</p><div class=\"sam-head\">2. Meten en generaliseren</div><p>Een <strong>gesloten vraag</strong> laat je kiezen uit vaste opties, een <strong>open vraag</strong> geeft een eigen antwoord. Een <strong>diepte-interview</strong> laat je doorvragen en nuance achterhalen, waar een schriftelijke enquête dat niet kan. De <strong>generaliseerbaarheid</strong> is de mate waarin de resultaten gelden voor de hele populatie.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Triangulatie</div><div class=\"sam-definitie-body\">het gebruik van meerdere methoden om de validiteit te verhogen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Deductief onderzoek</div><div class=\"sam-definitie-body\">onderzoek dat een bestaande theorie toetst.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Inductief onderzoek</div><div class=\"sam-definitie-body\">onderzoek dat een theorie opbouwt vanuit observaties.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Diepte-interview</div><div class=\"sam-definitie-body\">een gesprek waarin je kunt doorvragen en nuance achterhaalt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Onafhankelijke variabele</div><div class=\"sam-definitie-body\">de variabele die de oorzaak vormt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Afhankelijke variabele</div><div class=\"sam-definitie-body\">de variabele die het effect is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Open vraag</div><div class=\"sam-definitie-body\">een vraag waarop je in eigen woorden antwoordt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gesloten vraag</div><div class=\"sam-definitie-body\">een vraag met vaste antwoordopties om uit te kiezen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Generaliseerbaarheid</div><div class=\"sam-definitie-body\">de mate waarin resultaten gelden voor de hele populatie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Validiteit</div><div class=\"sam-definitie-body\">of je meet wat je bedoelt te meten.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Triangulatie»</b> is meerdere methoden, terwijl <b>«Validiteit»</b> meten wat je bedoelt is. <b>«Deductief onderzoek»</b> is theorie toetsen, terwijl <b>«Inductief onderzoek»</b> theorie opbouwen is. <b>«Diepte-interview»</b> is doorvragen, terwijl <b>«Gesloten vraag»</b> vaste opties is. <b>«Onafhankelijke variabele»</b> is de oorzaak, terwijl <b>«Afhankelijke variabele»</b> het effect is.</div>",
     "sv": [
      {
       "v": "Welk begrip beschrijft het gebruik van meerdere methoden om de validiteit te verhogen?",
       "o": [
-       "Triangulatie",
-       "Operationalisering",
-       "Steekproeftrekking",
-       "Confounding"
+       "triangulatie",
+       "generalisatie",
+       "deductie",
+       "socialisatie"
       ],
       "c": 0,
-      "u": "Triangulatie combineert kwantitatief en kwalitatief onderzoek voor robuustere conclusies."
+      "d": 3,
+      "u": "Triangulatie combineert methoden.",
+      "uo": [
+       "Klopt: triangulatie combineert methoden.",
+       "Nee, dat gaat over de populatie.",
+       "Nee, dat is theorie toetsen.",
+       "Nee, dat is vorming."
+      ],
+      "uh": "Triangulatie: meerdere methoden combineren."
      },
      {
       "v": "Wat is het verschil tussen deductief en inductief onderzoek?",
       "o": [
-       "Deductief: theorie toetsen. Inductief: theorie opbouwen vanuit observaties.",
-       "Deductief is kwalitatief, inductief is kwantitatief",
-       "Ze betekenen hetzelfde",
-       "Deductief gebruikt geen hypothese"
+       "ze zijn hetzelfde",
+       "deductief toetst een theorie, inductief bouwt er een op vanuit observaties",
+       "deductief bouwt een theorie op",
+       "inductief toetst een theorie"
       ],
-      "c": 0,
-      "u": "Deductief start bij een hypothese en toetst die. Inductief leidt een theorie af uit data."
+      "c": 1,
+      "d": 3,
+      "u": "Toetsen tegenover opbouwen.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Klopt: toetsen tegenover opbouwen.",
+       "Nee, dat is inductief.",
+       "Nee, dat is deductief."
+      ],
+      "uh": "Deductief: toetsen; inductief: opbouwen."
      },
      {
       "v": "Wat is het voordeel van een diepte-interview boven een schriftelijke enquête?",
       "o": [
-       "Je kunt doorvragen en nuance achterhalen",
-       "Een enquête is altijd betrouwbaarder",
-       "Interviews zijn sneller af te nemen",
-       "Interviews zijn geschikter voor grote steekproeven"
+       "het kost minder tijd",
+       "je bereikt meer mensen tegelijk",
+       "je kunt doorvragen en nuance achterhalen",
+       "het is anoniemer"
       ],
-      "c": 0,
-      "u": "Interview: flexibel en diepgaand, maar tijdrovend en minder generaliseerbaar dan een enquête."
+      "c": 2,
+      "d": 2,
+      "u": "Doorvragen geeft diepgang.",
+      "uo": [
+       "Nee, het kost meer tijd.",
+       "Nee, dat is juist het voordeel van een enquête.",
+       "Klopt: doorvragen geeft diepgang.",
+       "Nee, dat is niet het voordeel."
+      ],
+      "uh": "Diepte-interview: doorvragen en nuance."
      },
      {
       "v": "Wat is het verschil tussen een afhankelijke en een onafhankelijke variabele?",
       "o": [
-       "Onafhankelijk = oorzaak. Afhankelijk = effect.",
-       "Afhankelijk = oorzaak, onafhankelijk = effect",
-       "Ze zijn beide gelijk",
-       "Afhankelijk is altijd kwantitatief"
+       "de afhankelijke is de oorzaak",
+       "ze zijn hetzelfde",
+       "de onafhankelijke is het effect",
+       "de onafhankelijke is de oorzaak, de afhankelijke het effect"
       ],
-      "c": 0,
-      "u": "In \"roken veroorzaakt kanker\" is roken de onafhankelijke en kanker de afhankelijke variabele."
+      "c": 3,
+      "d": 3,
+      "u": "Oorzaak tegenover effect.",
+      "uo": [
+       "Nee, dat is de onafhankelijke.",
+       "Nee, ze verschillen.",
+       "Nee, dat is de afhankelijke.",
+       "Klopt: oorzaak tegenover effect."
+      ],
+      "uh": "Onafhankelijk: oorzaak; afhankelijk: effect."
      },
      {
       "v": "Wat is het verschil tussen een open en een gesloten vraag in een enquête?",
       "o": [
-       "Open: eigen antwoord. Gesloten: kiezen uit vaste opties.",
-       "Open vragen zijn kwantitatief, gesloten kwalitatief",
-       "Gesloten vragen zijn altijd beter",
-       "Open vragen zijn sneller te analyseren"
+       "open geeft een eigen antwoord, gesloten laat je kiezen uit vaste opties",
+       "ze zijn hetzelfde",
+       "open laat je kiezen uit vaste opties",
+       "gesloten geeft een eigen antwoord"
       ],
       "c": 0,
-      "u": "Gesloten vragen zijn makkelijk te analyseren. Open vragen geven meer diepte maar zijn moeilijker te coderen."
+      "d": 2,
+      "u": "Eigen antwoord tegenover vaste opties.",
+      "uo": [
+       "Klopt: eigen antwoord tegenover vaste opties.",
+       "Nee, ze verschillen.",
+       "Nee, dat is een gesloten vraag.",
+       "Nee, dat is een open vraag."
+      ],
+      "uh": "Open: eigen antwoord; gesloten: vaste opties."
      },
      {
       "v": "Welk begrip beschrijft de mate waarin resultaten gelden voor de gehele populatie?",
       "o": [
+       "validiteit",
+       "generaliseerbaarheid",
+       "triangulatie",
+       "socialisatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Generaliseerbaarheid gaat over de populatie.",
+      "uo": [
+       "Nee, dat gaat over het juiste meten.",
+       "Klopt: generaliseerbaarheid gaat over de populatie.",
+       "Nee, dat is methodencombinatie.",
+       "Nee, dat is vorming."
+      ],
+      "uh": "Generaliseerbaarheid: geldt voor de hele populatie."
+     },
+     {
+      "v": "Wat is validiteit?",
+      "o": [
+       "de grootte van de steekproef",
+       "of herhaling hetzelfde geeft",
+       "of je meet wat je bedoelt te meten",
+       "het aantal vragen"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Validiteit is het juiste meten.",
+      "uo": [
+       "Nee, grootte alleen zegt het niet.",
+       "Nee, dat is betrouwbaarheid.",
+       "Klopt: validiteit is het juiste meten.",
+       "Nee, dat is een aantal."
+      ],
+      "uh": "Validiteit: meet je wat je bedoelt."
+     },
+     {
+      "v": "Wat is de onafhankelijke variabele?",
+      "o": [
+       "de steekproef",
+       "de variabele die het effect is",
+       "een storende factor",
+       "de variabele die de oorzaak vormt"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De onafhankelijke variabele is de oorzaak.",
+      "uo": [
+       "Nee, dat is een selectie.",
+       "Nee, dat is de afhankelijke.",
+       "Nee, dat is iets anders.",
+       "Klopt: de onafhankelijke variabele is de oorzaak."
+      ],
+      "uh": "Onafhankelijke variabele: de oorzaak."
+     },
+     {
+      "v": "Wat is de afhankelijke variabele?",
+      "o": [
+       "de variabele die het effect is",
+       "de variabele die de oorzaak vormt",
+       "een open vraag",
+       "de populatie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De afhankelijke variabele is het effect.",
+      "uo": [
+       "Klopt: de afhankelijke variabele is het effect.",
+       "Nee, dat is de onafhankelijke.",
+       "Nee, dat is een vraagtype.",
+       "Nee, dat is het geheel."
+      ],
+      "uh": "Afhankelijke variabele: het effect."
+     },
+     {
+      "v": "Wat kenmerkt deductief onderzoek?",
+      "o": [
+       "het bouwt een theorie op vanuit losse waarnemingen",
+       "het gaat van een theorie naar toetsing",
+       "het gebruikt geen theorie",
+       "het is altijd kwalitatief"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Deductief begint bij de theorie.",
+      "uo": [
+       "Nee, dat is inductief.",
+       "Klopt: deductief begint bij de theorie.",
+       "Nee, er is wel een theorie.",
+       "Nee, dat hoeft niet."
+      ],
+      "uh": "Deductief: van theorie naar toetsing."
+     },
+     {
+      "v": "Wat is een enquête?",
+      "o": [
+       "een observatie zonder vragen",
+       "een diepgaand gesprek met één persoon",
+       "een vragenlijst die je aan veel mensen voorlegt",
+       "een theorie"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een enquête verzamelt data bij veel mensen.",
+      "uo": [
+       "Nee, dat is observatie.",
+       "Nee, dat is een diepte-interview.",
+       "Klopt: een enquête verzamelt data bij veel mensen.",
+       "Nee, dat is geen methode."
+      ],
+      "uh": "Enquête: vragenlijst voor veel mensen."
+     },
+     {
+      "v": "Je begint met een theorie en toetst of die klopt. Welk begrip past hierbij?",
+      "o": [
+       "Gesloten vraag",
+       "Diepte-interview",
+       "Open vraag",
+       "Deductief onderzoek"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Je begint met een theorie en toetst of die klopt. Dat past bij Deductief onderzoek: theorie toetsen.",
+      "uo": [
+       "Nee, dat hoort bij Gesloten vraag: vaste opties.",
+       "Nee, dat hoort bij Diepte-interview: doorvragen.",
+       "Nee, dat hoort bij Open vraag: eigen antwoord.",
+       "Klopt: theorie toetsen."
+      ],
+      "uh": "Deductief onderzoek: theorie toetsen."
+     },
+     {
+      "v": "Je laat mensen kiezen uit vaste antwoordopties. Om welk begrip gaat het?",
+      "o": [
+       "Gesloten vraag",
+       "Onafhankelijke variabele",
+       "Inductief onderzoek",
+       "Validiteit"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Je laat mensen kiezen uit vaste antwoordopties. Dat past bij Gesloten vraag: vaste opties.",
+      "uo": [
+       "Klopt: vaste opties.",
+       "Nee, dat hoort bij Onafhankelijke variabele: de oorzaak.",
+       "Nee, dat hoort bij Inductief onderzoek: theorie opbouwen.",
+       "Nee, dat hoort bij Validiteit: meten wat je bedoelt."
+      ],
+      "uh": "Gesloten vraag: vaste opties."
+     },
+     {
+      "v": "Een vraag met vaste opties. Welk begrip herken je hier?",
+      "o": [
+       "Onafhankelijke variabele",
+       "Gesloten vraag",
+       "Inductief onderzoek",
+       "Validiteit"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een vraag met vaste opties. Dat past bij Gesloten vraag: vaste opties.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijke variabele: de oorzaak.",
+       "Klopt: vaste opties.",
+       "Nee, dat hoort bij Inductief onderzoek: theorie opbouwen.",
+       "Nee, dat hoort bij Validiteit: meten wat je bedoelt."
+      ],
+      "uh": "Gesloten vraag: vaste opties."
+     },
+     {
+      "v": "De mate waarin resultaten voor de populatie gelden. Wat is hier aan de hand?",
+      "o": [
+       "Diepte-interview",
+       "Gesloten vraag",
        "Generaliseerbaarheid",
-       "Betrouwbaarheid",
-       "Validiteit",
-       "Operationalisering"
+       "Inductief onderzoek"
       ],
-      "c": 0,
-      "u": "Kwantitatief onderzoek met grote aselecte steekproef heeft een hoge generaliseerbaarheid."
+      "c": 2,
+      "d": 1,
+      "u": "De mate waarin resultaten voor de populatie gelden. Dat past bij Generaliseerbaarheid: geldt voor de populatie.",
+      "uo": [
+       "Nee, dat hoort bij Diepte-interview: doorvragen.",
+       "Nee, dat hoort bij Gesloten vraag: vaste opties.",
+       "Klopt: geldt voor de populatie.",
+       "Nee, dat hoort bij Inductief onderzoek: theorie opbouwen."
+      ],
+      "uh": "Generaliseerbaarheid: geldt voor de populatie."
      },
      {
-      "v": "Wat betekent «Betrouwbaarheid»?",
+      "v": "In hoeverre je uitkomst geldt voor de hele bevolking. Welk begrip past hierbij?",
       "o": [
-       "een begrip meetbaar maken",
-       "socialisatie, cultuuroverdracht",
-       "of je meet wat je wilt meten",
-       "de consistentie van een meting"
+       "Inductief onderzoek",
+       "Gesloten vraag",
+       "Diepte-interview",
+       "Generaliseerbaarheid"
       ],
       "c": 3,
-      "u": "«Betrouwbaarheid» betekent: de consistentie van een meting. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
-      "d": 1
+      "d": 1,
+      "u": "In hoeverre je uitkomst geldt voor de hele bevolking. Dat past bij Generaliseerbaarheid: geldt voor de populatie.",
+      "uo": [
+       "Nee, dat hoort bij Inductief onderzoek: theorie opbouwen.",
+       "Nee, dat hoort bij Gesloten vraag: vaste opties.",
+       "Nee, dat hoort bij Diepte-interview: doorvragen.",
+       "Klopt: geldt voor de populatie."
+      ],
+      "uh": "Generaliseerbaarheid: geldt voor de populatie."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de consistentie van een meting\"?",
+      "v": "Een vraag met een eigen antwoord. Om welk begrip gaat het?",
       "o": [
-       "Vorming",
+       "Open vraag",
+       "Diepte-interview",
        "Validiteit",
-       "Betrouwbaarheid",
-       "Individualisering"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Betrouwbaarheid»: de consistentie van een meting. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de consistentie van een meting\"?",
-      "o": [
-       "Betrouwbaarheid",
-       "Representativiteit",
-       "Enquête",
-       "Causaliteit"
+       "Deductief onderzoek"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Betrouwbaarheid»: de consistentie van een meting. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Betrouwbaarheid» in?",
-      "o": [
-       "de consistentie van een meting",
-       "cijfers vs. verdieping",
-       "een begrip meetbaar maken",
-       "een verborgen derde variabele die een schijnverband schept"
+      "d": 1,
+      "u": "Een vraag met een eigen antwoord. Dat past bij Open vraag: eigen antwoord.",
+      "uo": [
+       "Klopt: eigen antwoord.",
+       "Nee, dat hoort bij Diepte-interview: doorvragen.",
+       "Nee, dat hoort bij Validiteit: meten wat je bedoelt.",
+       "Nee, dat hoort bij Deductief onderzoek: theorie toetsen."
       ],
-      "c": 0,
-      "u": "«Betrouwbaarheid» betekent: de consistentie van een meting. Betrouwbaar ≠ valide: consistent meten is niet hetzelfde als het júiste meten.",
-      "d": 3
+      "uh": "Open vraag: eigen antwoord."
      },
      {
-      "v": "Wat betekent «Validiteit»?",
+      "v": "De variabele die het effect is. Welk begrip herken je hier?",
       "o": [
-       "het beïnvloeden van besluitvormers",
-       "of je meet wat je wilt meten",
-       "een samenhang tussen twee variabelen",
-       "multiculturele samenleving"
+       "Onafhankelijke variabele",
+       "Afhankelijke variabele",
+       "Inductief onderzoek",
+       "Diepte-interview"
       ],
       "c": 1,
-      "u": "«Validiteit» betekent: of je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
-      "d": 1
+      "d": 3,
+      "u": "De variabele die het effect is. Dat past bij Afhankelijke variabele: het effect.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijke variabele: de oorzaak.",
+       "Klopt: het effect.",
+       "Nee, dat hoort bij Inductief onderzoek: theorie opbouwen.",
+       "Nee, dat hoort bij Diepte-interview: doorvragen."
+      ],
+      "uh": "Afhankelijke variabele: het effect."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"of je meet wat je wilt meten\"?",
+      "v": "Het effect dat je meet als resultaat. Wat is hier aan de hand?",
       "o": [
-       "Sociale ongelijkheid",
-       "Vorming",
-       "Validiteit",
-       "Trias politica"
+       "Triangulatie",
+       "Inductief onderzoek",
+       "Afhankelijke variabele",
+       "Gesloten vraag"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Validiteit»: of je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
-      "d": 2
+      "d": 1,
+      "u": "Het effect dat je meet als resultaat. Dat past bij Afhankelijke variabele: het effect.",
+      "uo": [
+       "Nee, dat hoort bij Triangulatie: meerdere methoden.",
+       "Nee, dat hoort bij Inductief onderzoek: theorie opbouwen.",
+       "Klopt: het effect.",
+       "Nee, dat hoort bij Gesloten vraag: vaste opties."
+      ],
+      "uh": "Afhankelijke variabele: het effect."
      },
      {
-      "v": "Welke term past bij: \"of je meet wat je wilt meten\"?",
+      "v": "Een gesprek waarin je kunt doorvragen. Welk begrip past hierbij?",
       "o": [
-       "Causaliteit",
+       "Onafhankelijke variabele",
+       "Gesloten vraag",
        "Validiteit",
-       "Operationaliseren",
-       "Correlatie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Validiteit»: of je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Validiteit» in?",
-      "o": [
-       "of je meet wat je wilt meten",
-       "een oorzaak-gevolgrelatie",
-       "een samenhang tussen twee variabelen",
-       "een steekproef die de populatie afspiegelt"
-      ],
-      "c": 0,
-      "u": "«Validiteit» betekent: of je meet wat je wilt meten. Valide ≠ betrouwbaar: valide = het juiste meten, betrouwbaar = herhaalbaar.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Representativiteit»?",
-      "o": [
-       "macht, gezag, sociale ongelijkheid",
-       "het aanleren van normen, waarden en rollen",
-       "een steekproef die de populatie afspiegelt",
-       "het geheel van gedeelde waarden en gewoonten"
-      ],
-      "c": 2,
-      "u": "«Representativiteit» betekent: een steekproef die de populatie afspiegelt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een steekproef die de populatie afspiegelt\"?",
-      "o": [
-       "Vorming",
-       "Integratie",
-       "Economisch kapitaal",
-       "Representativiteit"
+       "Diepte-interview"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Representativiteit»: een steekproef die de populatie afspiegelt.",
-      "d": 2
+      "d": 2,
+      "u": "Een gesprek waarin je kunt doorvragen. Dat past bij Diepte-interview: doorvragen.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijke variabele: de oorzaak.",
+       "Nee, dat hoort bij Gesloten vraag: vaste opties.",
+       "Nee, dat hoort bij Validiteit: meten wat je bedoelt.",
+       "Klopt: doorvragen."
+      ],
+      "uh": "Diepte-interview: doorvragen."
      },
      {
-      "v": "Welke term past bij: \"een steekproef die de populatie afspiegelt\"?",
+      "v": "In een gesprek vraag je door om nuance te achterhalen. Om welk begrip gaat het?",
       "o": [
-       "Confounder",
+       "Diepte-interview",
+       "Gesloten vraag",
        "Validiteit",
-       "Representativiteit",
-       "Enquête"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Representativiteit»: een steekproef die de populatie afspiegelt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Representativiteit» in?",
-      "o": [
-       "een steekproef die de populatie afspiegelt",
-       "de consistentie van een meting",
-       "cijfers vs. verdieping",
-       "of je meet wat je wilt meten"
+       "Triangulatie"
       ],
       "c": 0,
-      "u": "«Representativiteit» betekent: een steekproef die de populatie afspiegelt.",
-      "d": 3
+      "d": 3,
+      "u": "In een gesprek vraag je door om nuance te achterhalen. Dat past bij Diepte-interview: doorvragen.",
+      "uo": [
+       "Klopt: doorvragen.",
+       "Nee, dat hoort bij Gesloten vraag: vaste opties.",
+       "Nee, dat hoort bij Validiteit: meten wat je bedoelt.",
+       "Nee, dat hoort bij Triangulatie: meerdere methoden."
+      ],
+      "uh": "Diepte-interview: doorvragen."
      },
      {
-      "v": "Wat betekent «Correlatie»?",
+      "v": "Onderzoek dat een theorie opbouwt. Welk begrip herken je hier?",
       "o": [
-       "sociologisch en politicologisch",
-       "een samenhang tussen twee variabelen",
-       "de scheiding van de drie staatsmachten",
-       "een groep die een gedeeld belang behartigt"
+       "Diepte-interview",
+       "Inductief onderzoek",
+       "Open vraag",
+       "Gesloten vraag"
       ],
       "c": 1,
-      "u": "«Correlatie» betekent: een samenhang tussen twee variabelen. Correlatie is geen causaliteit: samen bewegen ≠ elkaar veroorzaken.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een samenhang tussen twee variabelen\"?",
-      "o": [
-       "Kwan vs. kwal",
-       "Correlatie",
-       "Binding",
-       "Operationaliseren"
+      "d": 1,
+      "u": "Onderzoek dat een theorie opbouwt. Dat past bij Inductief onderzoek: theorie opbouwen.",
+      "uo": [
+       "Nee, dat hoort bij Diepte-interview: doorvragen.",
+       "Klopt: theorie opbouwen.",
+       "Nee, dat hoort bij Open vraag: eigen antwoord.",
+       "Nee, dat hoort bij Gesloten vraag: vaste opties."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Correlatie»: een samenhang tussen twee variabelen. Correlatie is geen causaliteit: samen bewegen ≠ elkaar veroorzaken.",
-      "d": 2
+      "uh": "Inductief onderzoek: theorie opbouwen."
      },
      {
-      "v": "Welke term past bij: \"een samenhang tussen twee variabelen\"?",
+      "v": "Of je meet wat je bedoelt. Wat is hier aan de hand?",
       "o": [
+       "Onafhankelijke variabele",
+       "Generaliseerbaarheid",
        "Validiteit",
-       "Correlatie",
-       "Causaliteit",
-       "Betrouwbaarheid"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Correlatie»: een samenhang tussen twee variabelen. Correlatie is geen causaliteit: samen bewegen ≠ elkaar veroorzaken.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Correlatie» in?",
-      "o": [
-       "een samenhang tussen twee variabelen",
-       "een vragenlijst voor onderzoek",
-       "de consistentie van een meting",
-       "een verborgen derde variabele die een schijnverband schept"
-      ],
-      "c": 0,
-      "u": "«Correlatie» betekent: een samenhang tussen twee variabelen. Correlatie is geen causaliteit: samen bewegen ≠ elkaar veroorzaken.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Enquête»?",
-      "o": [
-       "het beïnvloeden van besluitvormers",
-       "het verwachte gedrag bij een positie",
-       "een vragenlijst voor onderzoek",
-       "de druk om je aan normen te houden"
+       "Inductief onderzoek"
       ],
       "c": 2,
-      "u": "«Enquête» betekent: een vragenlijst voor onderzoek.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een vragenlijst voor onderzoek\"?",
-      "o": [
-       "Enquête",
-       "Rechtsstaat",
-       "Vier hoofdconcepten",
-       "Sociale controle"
+      "d": 2,
+      "u": "Of je meet wat je bedoelt. Dat past bij Validiteit: meten wat je bedoelt.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijke variabele: de oorzaak.",
+       "Nee, dat hoort bij Generaliseerbaarheid: geldt voor de populatie.",
+       "Klopt: meten wat je bedoelt.",
+       "Nee, dat hoort bij Inductief onderzoek: theorie opbouwen."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Enquête»: een vragenlijst voor onderzoek.",
-      "d": 2
+      "uh": "Validiteit: meten wat je bedoelt."
      },
      {
-      "v": "Welke term past bij: \"een vragenlijst voor onderzoek\"?",
+      "v": "Meerdere methoden om de validiteit te verhogen. Welk begrip past hierbij?",
       "o": [
-       "Enquête",
-       "Betrouwbaarheid",
-       "Causaliteit",
-       "Operationaliseren"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Enquête»: een vragenlijst voor onderzoek.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Enquête» in?",
-      "o": [
-       "een begrip meetbaar maken",
-       "een vragenlijst voor onderzoek",
-       "een verborgen derde variabele die een schijnverband schept",
-       "cijfers vs. verdieping"
-      ],
-      "c": 1,
-      "u": "«Enquête» betekent: een vragenlijst voor onderzoek.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Causaliteit»?",
-      "o": [
-       "of je meet wat je wilt meten",
-       "een oorzaak-gevolgrelatie",
-       "een vragenlijst voor onderzoek",
-       "multiculturele samenleving"
-      ],
-      "c": 1,
-      "u": "«Causaliteit» betekent: een oorzaak-gevolgrelatie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een oorzaak-gevolgrelatie\"?",
-      "o": [
-       "Deviantie",
-       "Verzorgingsstaat",
-       "Causaliteit",
-       "Massamedia"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Causaliteit»: een oorzaak-gevolgrelatie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een oorzaak-gevolgrelatie\"?",
-      "o": [
-       "Correlatie",
-       "Operationaliseren",
-       "Enquête",
-       "Causaliteit"
+       "Diepte-interview",
+       "Validiteit",
+       "Afhankelijke variabele",
+       "Triangulatie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Causaliteit»: een oorzaak-gevolgrelatie.",
-      "d": 3
+      "d": 3,
+      "u": "Meerdere methoden om de validiteit te verhogen. Dat past bij Triangulatie: meerdere methoden.",
+      "uo": [
+       "Nee, dat hoort bij Diepte-interview: doorvragen.",
+       "Nee, dat hoort bij Validiteit: meten wat je bedoelt.",
+       "Nee, dat hoort bij Afhankelijke variabele: het effect.",
+       "Klopt: meerdere methoden."
+      ],
+      "uh": "Triangulatie: meerdere methoden."
      },
      {
-      "v": "Wat houdt «Causaliteit» in?",
+      "v": "Je laat mensen in eigen woorden antwoorden. Om welk begrip gaat het?",
       "o": [
-       "een begrip meetbaar maken",
-       "een oorzaak-gevolgrelatie",
-       "de consistentie van een meting",
-       "cijfers vs. verdieping"
+       "Open vraag",
+       "Diepte-interview",
+       "Validiteit",
+       "Deductief onderzoek"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Je laat mensen in eigen woorden antwoorden. Dat past bij Open vraag: eigen antwoord.",
+      "uo": [
+       "Klopt: eigen antwoord.",
+       "Nee, dat hoort bij Diepte-interview: doorvragen.",
+       "Nee, dat hoort bij Validiteit: meten wat je bedoelt.",
+       "Nee, dat hoort bij Deductief onderzoek: theorie toetsen."
+      ],
+      "uh": "Open vraag: eigen antwoord."
+     },
+     {
+      "v": "Onderzoek dat een theorie toetst. Welk begrip herken je hier?",
+      "o": [
+       "Inductief onderzoek",
+       "Deductief onderzoek",
+       "Triangulatie",
+       "Open vraag"
       ],
       "c": 1,
-      "u": "«Causaliteit» betekent: een oorzaak-gevolgrelatie.",
-      "d": 3
+      "d": 2,
+      "u": "Onderzoek dat een theorie toetst. Dat past bij Deductief onderzoek: theorie toetsen.",
+      "uo": [
+       "Nee, dat hoort bij Inductief onderzoek: theorie opbouwen.",
+       "Klopt: theorie toetsen.",
+       "Nee, dat hoort bij Triangulatie: meerdere methoden.",
+       "Nee, dat hoort bij Open vraag: eigen antwoord."
+      ],
+      "uh": "Deductief onderzoek: theorie toetsen."
      },
      {
-      "v": "Wat betekent «Confounder»?",
+      "v": "De variabele die de oorzaak vormt. Wat is hier aan de hand?",
       "o": [
-       "anomie (Durkheim/Merton), labeling",
-       "de aanvaarding van gezag als rechtvaardig",
-       "een verborgen derde variabele die een schijnverband schept",
-       "zetelverdeling naar rato van de stemmen"
+       "Deductief onderzoek",
+       "Afhankelijke variabele",
+       "Onafhankelijke variabele",
+       "Inductief onderzoek"
       ],
       "c": 2,
-      "u": "«Confounder» betekent: een verborgen derde variabele die een schijnverband schept.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een verborgen derde variabele die een schijnverband schept\"?",
-      "o": [
-       "Confounder",
-       "Criminaliteit",
-       "Democratie",
-       "Evenredige vertegenwoordiging"
+      "d": 3,
+      "u": "De variabele die de oorzaak vormt. Dat past bij Onafhankelijke variabele: de oorzaak.",
+      "uo": [
+       "Nee, dat hoort bij Deductief onderzoek: theorie toetsen.",
+       "Nee, dat hoort bij Afhankelijke variabele: het effect.",
+       "Klopt: de oorzaak.",
+       "Nee, dat hoort bij Inductief onderzoek: theorie opbouwen."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Confounder»: een verborgen derde variabele die een schijnverband schept.",
-      "d": 2
+      "uh": "Onafhankelijke variabele: de oorzaak."
      },
      {
-      "v": "Welke term past bij: \"een verborgen derde variabele die een schijnverband schept\"?",
+      "v": "Je combineert een enquête, interviews en observaties in één onderzoek. Welk begrip past hierbij?",
       "o": [
-       "Validiteit",
-       "Enquête",
-       "Confounder",
-       "Kwan vs. kwal"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Confounder»: een verborgen derde variabele die een schijnverband schept.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Confounder» in?",
-      "o": [
-       "een verborgen derde variabele die een schijnverband schept",
-       "een samenhang tussen twee variabelen",
-       "een oorzaak-gevolgrelatie",
-       "de consistentie van een meting"
-      ],
-      "c": 0,
-      "u": "«Confounder» betekent: een verborgen derde variabele die een schijnverband schept.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Operationaliseren»?",
-      "o": [
-       "een begrip meetbaar maken",
-       "of je meet wat je wilt meten",
-       "het aanleren van normen, waarden en rollen",
-       "anomie (Durkheim/Merton), labeling"
-      ],
-      "c": 0,
-      "u": "«Operationaliseren» betekent: een begrip meetbaar maken.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een begrip meetbaar maken\"?",
-      "o": [
-       "Deviantie",
-       "Individualisering",
-       "Verzorgingsstaat",
-       "Operationaliseren"
+       "Generaliseerbaarheid",
+       "Diepte-interview",
+       "Afhankelijke variabele",
+       "Triangulatie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Operationaliseren»: een begrip meetbaar maken.",
-      "d": 2
+      "d": 1,
+      "u": "Je combineert een enquête, interviews en observaties in één onderzoek. Dat past bij Triangulatie: meerdere methoden.",
+      "uo": [
+       "Nee, dat hoort bij Generaliseerbaarheid: geldt voor de populatie.",
+       "Nee, dat hoort bij Diepte-interview: doorvragen.",
+       "Nee, dat hoort bij Afhankelijke variabele: het effect.",
+       "Klopt: meerdere methoden."
+      ],
+      "uh": "Triangulatie: meerdere methoden."
      },
      {
-      "v": "Welke term past bij: \"een begrip meetbaar maken\"?",
+      "v": "De factor die je als oorzaak instelt of onderzoekt. Om welk begrip gaat het?",
       "o": [
-       "Betrouwbaarheid",
-       "Operationaliseren",
-       "Validiteit",
-       "Confounder"
+       "Onafhankelijke variabele",
+       "Afhankelijke variabele",
+       "Open vraag",
+       "Triangulatie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De factor die je als oorzaak instelt of onderzoekt. Dat past bij Onafhankelijke variabele: de oorzaak.",
+      "uo": [
+       "Klopt: de oorzaak.",
+       "Nee, dat hoort bij Afhankelijke variabele: het effect.",
+       "Nee, dat hoort bij Open vraag: eigen antwoord.",
+       "Nee, dat hoort bij Triangulatie: meerdere methoden."
+      ],
+      "uh": "Onafhankelijke variabele: de oorzaak."
+     },
+     {
+      "v": "Je verzamelt waarnemingen en bouwt er een theorie uit op. Welk begrip herken je hier?",
+      "o": [
+       "Deductief onderzoek",
+       "Inductief onderzoek",
+       "Afhankelijke variabele",
+       "Validiteit"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Operationaliseren»: een begrip meetbaar maken.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Operationaliseren» in?",
-      "o": [
-       "een steekproef die de populatie afspiegelt",
-       "een vragenlijst voor onderzoek",
-       "een samenhang tussen twee variabelen",
-       "een begrip meetbaar maken"
+      "d": 3,
+      "u": "Je verzamelt waarnemingen en bouwt er een theorie uit op. Dat past bij Inductief onderzoek: theorie opbouwen.",
+      "uo": [
+       "Nee, dat hoort bij Deductief onderzoek: theorie toetsen.",
+       "Klopt: theorie opbouwen.",
+       "Nee, dat hoort bij Afhankelijke variabele: het effect.",
+       "Nee, dat hoort bij Validiteit: meten wat je bedoelt."
       ],
-      "c": 3,
-      "u": "«Operationaliseren» betekent: een begrip meetbaar maken.",
-      "d": 3
+      "uh": "Inductief onderzoek: theorie opbouwen."
      },
      {
-      "v": "Wat betekent «Kwan vs. kwal»?",
+      "v": "Je meet echt wat je bedoelt te meten. Wat is hier aan de hand?",
       "o": [
-       "de indeling van de samenleving in lagen",
-       "cijfers vs. verdieping",
-       "het aanleren van normen, waarden en rollen",
-       "gedrag dat afwijkt van de norm"
-      ],
-      "c": 1,
-      "u": "«Kwan vs. kwal» betekent: cijfers vs. verdieping.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"cijfers vs. verdieping\"?",
-      "o": [
-       "Kwan vs. kwal",
-       "Confounder",
-       "Enquête",
-       "Sociale mobiliteit"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Kwan vs. kwal»: cijfers vs. verdieping.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"cijfers vs. verdieping\"?",
-      "o": [
-       "Correlatie",
+       "Gesloten vraag",
+       "Diepte-interview",
        "Validiteit",
-       "Enquête",
-       "Kwan vs. kwal"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Kwan vs. kwal»: cijfers vs. verdieping.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Kwan vs. kwal» in?",
-      "o": [
-       "een verborgen derde variabele die een schijnverband schept",
-       "de consistentie van een meting",
-       "cijfers vs. verdieping",
-       "een samenhang tussen twee variabelen"
+       "Deductief onderzoek"
       ],
       "c": 2,
-      "u": "«Kwan vs. kwal» betekent: cijfers vs. verdieping.",
-      "d": 3
+      "d": 1,
+      "u": "Je meet echt wat je bedoelt te meten. Dat past bij Validiteit: meten wat je bedoelt.",
+      "uo": [
+       "Nee, dat hoort bij Gesloten vraag: vaste opties.",
+       "Nee, dat hoort bij Diepte-interview: doorvragen.",
+       "Klopt: meten wat je bedoelt.",
+       "Nee, dat hoort bij Deductief onderzoek: theorie toetsen."
+      ],
+      "uh": "Validiteit: meten wat je bedoelt."
      }
     ],
     "oe": [
@@ -58427,40 +58518,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Betrouwbaarheid",
-      "d": "de consistentie van een meting"
+      "t": "Triangulatie",
+      "d": "het gebruik van meerdere methoden om de validiteit te verhogen"
+     },
+     {
+      "t": "Deductief onderzoek",
+      "d": "onderzoek dat een bestaande theorie toetst"
+     },
+     {
+      "t": "Inductief onderzoek",
+      "d": "onderzoek dat een theorie opbouwt vanuit observaties"
+     },
+     {
+      "t": "Diepte-interview",
+      "d": "een gesprek waarin je kunt doorvragen en nuance achterhaalt"
+     },
+     {
+      "t": "Onafhankelijke variabele",
+      "d": "de variabele die de oorzaak vormt"
+     },
+     {
+      "t": "Afhankelijke variabele",
+      "d": "de variabele die het effect is"
+     },
+     {
+      "t": "Open vraag",
+      "d": "een vraag waarop je in eigen woorden antwoordt"
+     },
+     {
+      "t": "Gesloten vraag",
+      "d": "een vraag met vaste antwoordopties om uit te kiezen"
+     },
+     {
+      "t": "Generaliseerbaarheid",
+      "d": "de mate waarin resultaten gelden voor de hele populatie"
      },
      {
       "t": "Validiteit",
-      "d": "of je meet wat je wilt meten"
-     },
-     {
-      "t": "Representativiteit",
-      "d": "een steekproef die de populatie afspiegelt"
-     },
-     {
-      "t": "Correlatie",
-      "d": "een samenhang tussen twee variabelen"
-     },
-     {
-      "t": "Enquête",
-      "d": "een vragenlijst voor onderzoek"
-     },
-     {
-      "t": "Causaliteit",
-      "d": "een oorzaak-gevolgrelatie"
-     },
-     {
-      "t": "Confounder",
-      "d": "een verborgen derde variabele die een schijnverband schept"
-     },
-     {
-      "t": "Operationaliseren",
-      "d": "een begrip meetbaar maken"
-     },
-     {
-      "t": "Kwan vs. kwal",
-      "d": "cijfers vs. verdieping"
+      "d": "of je meet wat je bedoelt te meten"
      }
     ]
    },
@@ -58477,985 +58572,577 @@ var VAKKEN = [
      "Instituties en hun functies",
      "Pluralisme vs elitisme"
     ],
-    "sam": "<div class=\"sam-head\">Sociologische benadering</div><ul><li><strong>Socialisatie</strong>: het proces waarbij individuen normen, waarden en gedragspatronen internaliseren. Primair (gezin), secundair (school, media, werk).</li><li><strong>Sociale cohesie</strong>: verbondenheid en solidariteit in een groep of samenleving. Hoge cohesie → stabiel. Lage cohesie → desintegratie en conflicten.</li><li><strong>Sociale controle</strong>: Formeel (wet, politie, rechter) of informeel (sociale druk, roddel, uitsluiting). Informele controle is in het dagelijks leven vaker effectief.</li><li><strong>Sociale stratificatie</strong>: lagen op basis van inkomen, opleiding en status. Bepaalt kansen en levensstijl. Open systemen laten meer mobiliteit toe dan gesloten.</li><li><strong>Sociologisch perspectief</strong>: verklaar individueel gedrag vanuit sociale structuren en groepsprocessen - niet alleen individuele keuzes.</li></ul><div class=\"sam-head\">Politicologische benadering</div><ul><li><strong>Macht</strong> (Weber): het vermogen anderen te laten handelen ook als ze dat zelf niet willen. Bronnen: geweld, geld, kennis, charisma, legitimiteit.</li><li><strong>Gezag</strong>: macht die als legitiem erkend wordt. Drie typen: traditioneel (traditie/erfopvolging), charismatisch (persoonlijkheid), rationeel-legaal (wet en procedures).</li><li><strong>Besluitvormingsproces</strong>: agendering → formulering → beslissing → uitvoering → evaluatie. Actoren proberen elke fase te beïnvloeden.</li><li><strong>Pluralisme</strong>: macht verspreid over veel groepen. <strong>Elitisme</strong>: macht geconcentreerd bij kleine elite.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Gedrag verklaar je vanuit twee benaderingen: de <strong>sociologische</strong> (structuren, groepen en instituties) en de psychologische (het individu). <strong>Socialisatie</strong> brengt normen en waarden over. Theorieën als de <strong>bindingstheorie</strong> van Hirschi en de <strong>machtsdefinitie</strong> van Weber verklaren gedrag en verhoudingen.</div><div class=\"sam-head\">1. Socialisatie en benaderingen</div><p><strong>Socialisatie</strong> is het internaliseren van normen en waarden via opvoeding, school en media. <strong>Primaire socialisatie</strong> vindt plaats in het gezin in de vroege jeugd. De <strong>sociologische benadering</strong> verklaart gedrag vanuit sociale structuren, groepen en instituties.</p><div class=\"sam-head\">2. Instituties en macht</div><p><strong>Formele instituties</strong> zijn wettelijk vastgelegd, <strong>informele instituties</strong> berusten op gewoonte en traditie. De <strong>bindingstheorie</strong> van Hirschi stelt dat zwakke sociale bindingen de drempel voor crimineel gedrag verlagen. Volgens <strong>Weber</strong> is <strong>macht</strong> het vermogen om andermans gedrag te bepalen, ook tegen diens wil.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Socialisatie</div><div class=\"sam-definitie-body\">het internaliseren van normen en waarden via opvoeding, school en media.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Primaire socialisatie</div><div class=\"sam-definitie-body\">de socialisatie in het gezin in de vroege jeugd.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sociologische benadering</div><div class=\"sam-definitie-body\">gedrag verklaren vanuit sociale structuren, groepen en instituties.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Psychologische benadering</div><div class=\"sam-definitie-body\">gedrag verklaren vanuit het individu zelf.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Macht</div><div class=\"sam-definitie-body\">het vermogen om andermans gedrag te bepalen, ook tegen diens wil (Weber).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bindingstheorie</div><div class=\"sam-definitie-body\">de theorie dat zwakke sociale bindingen de drempel voor crimineel gedrag verlagen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Formele institutie</div><div class=\"sam-definitie-body\">een wettelijk vastgelegde institutie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Informele institutie</div><div class=\"sam-definitie-body\">een institutie die op gewoonte en traditie berust.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Norm</div><div class=\"sam-definitie-body\">een concrete gedragsregel voor wat hoort.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Waarde</div><div class=\"sam-definitie-body\">een nastrevenswaardig ideaal.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Socialisatie»</b> is normen en waarden overnemen, terwijl <b>«Primaire socialisatie»</b> in het gezin is. <b>«Sociologische benadering»</b> is vanuit de samenleving, terwijl <b>«Psychologische benadering»</b> vanuit het individu is. <b>«Macht»</b> is gedrag van anderen bepalen, terwijl <b>«Bindingstheorie»</b> zwakke bindingen, meer criminaliteit is. <b>«Formele institutie»</b> is wettelijk vastgelegd, terwijl <b>«Informele institutie»</b> gewoonte en traditie is.</div>",
     "sv": [
      {
       "v": "Wat is socialisatie?",
       "o": [
-       "Het internaliseren van normen en waarden via opvoeding, school en media",
-       "Het stemrecht van burgers in een democratie",
-       "Het meten van sociale ongelijkheid in een samenleving",
-       "Het beleid om immigranten te integreren"
+       "het internaliseren van normen en waarden via opvoeding, school en media",
+       "het toetsen van een theorie",
+       "het meten van gedrag",
+       "het beïnvloeden van beleid"
       ],
       "c": 0,
-      "u": "Socialisatie maakt geordend samenleven mogelijk: individuen leren wat normaal en gewenst gedrag is. Primair = gezin. Secundair = school, media, werk, religie."
+      "d": 2,
+      "u": "Socialisatie draagt normen en waarden over.",
+      "uo": [
+       "Klopt: socialisatie draagt normen en waarden over.",
+       "Nee, dat is onderzoek.",
+       "Nee, dat is meten.",
+       "Nee, dat is lobbyisme."
+      ],
+      "uh": "Socialisatie: normen en waarden overnemen."
      },
      {
-      "v": "Welke benadering verklaart individueel gedrag vanuit sociale structuren, groepen en instituties?",
+      "v": "Welke benadering verklaart gedrag vanuit sociale structuren, groepen en instituties?",
       "o": [
-       "Sociologische benadering",
-       "Politicologische benadering",
-       "Economische benadering",
-       "Psychologische benadering"
+       "de psychologische benadering",
+       "de sociologische benadering",
+       "de biologische benadering",
+       "de economische benadering"
       ],
-      "c": 0,
-      "u": "Sociologie: hoe bepalen structuren en groepsprocessen gedrag en kansen? Politicologie: hoe functioneren macht en politieke besluitvorming?"
+      "c": 1,
+      "d": 3,
+      "u": "De sociologische benadering kijkt naar de samenleving.",
+      "uo": [
+       "Nee, die kijkt naar het individu.",
+       "Klopt: de sociologische benadering kijkt naar de samenleving.",
+       "Nee, dat gaat over het lichaam.",
+       "Nee, dat gaat over markten."
+      ],
+      "uh": "Sociologische benadering: vanuit de samenleving."
      },
      {
       "v": "Wat is primaire socialisatie?",
       "o": [
-       "Socialisatie in het gezin in de vroege jeugd",
-       "Socialisatie op school en het werk",
-       "Socialisatie via sociale media",
-       "Socialisatie in de volwassenheid"
+       "het toetsen van een theorie",
+       "de socialisatie op school en werk",
+       "de socialisatie in het gezin in de vroege jeugd",
+       "het beïnvloeden van beleid"
       ],
-      "c": 0,
-      "u": "Primair: gezin (normen, taal, waarden). Secundair: school, religie, werk, media."
+      "c": 2,
+      "d": 2,
+      "u": "Het gezin verzorgt de primaire socialisatie.",
+      "uo": [
+       "Nee, dat is onderzoek.",
+       "Nee, dat is secundair.",
+       "Klopt: het gezin verzorgt de primaire socialisatie.",
+       "Nee, dat is lobbyisme."
+      ],
+      "uh": "Primaire socialisatie: in het gezin."
      },
      {
-      "v": "Wat is de bindingstheorie van Hirschi?",
+      "v": "Wat stelt de bindingstheorie van Hirschi?",
       "o": [
-       "Zwakke sociale bindingen verlagen de drempel voor crimineel gedrag",
-       "Criminaliteit is aangeboren",
-       "Criminaliteit ontstaat door economische ongelijkheid",
-       "Criminaliteit wordt bepaald door media-invloed"
+       "straf voorkomt altijd criminaliteit",
+       "iedereen is van nature crimineel",
+       "criminaliteit is erfelijk",
+       "zwakke sociale bindingen verlagen de drempel voor crimineel gedrag"
       ],
-      "c": 0,
-      "u": "Hirschi: sterke bindingen vormen een rem op deviant gedrag. Sociale controle via hechting en betrokkenheid."
+      "c": 3,
+      "d": 3,
+      "u": "Minder binding betekent een lagere drempel.",
+      "uo": [
+       "Nee, dat is te simpel.",
+       "Nee, dat zegt de theorie niet.",
+       "Nee, dat is biologisch.",
+       "Klopt: minder binding betekent een lagere drempel."
+      ],
+      "uh": "Hirschi: zwakke bindingen, lagere drempel."
      },
      {
       "v": "Wat is de Weberse definitie van macht?",
       "o": [
-       "Het vermogen om andermans gedrag te bepalen, ook tegen diens wil",
-       "Het recht om wetten te maken",
-       "Democratisch verkregen beslissingsbevoegdheid",
-       "Economisch overwicht over concurrenten"
+       "het vermogen om andermans gedrag te bepalen, ook tegen diens wil",
+       "het bezit van veel geld",
+       "de leeftijd van een leider",
+       "een onderzoeksmethode"
       ],
       "c": 0,
-      "u": "Weber: macht kan gebaseerd zijn op dwang, geld, kennis of charisma. Gezag = macht + legitimiteit."
+      "d": 3,
+      "u": "Macht is invloed op gedrag, ook tegen de wil in.",
+      "uo": [
+       "Klopt: macht is invloed op gedrag, ook tegen de wil in.",
+       "Nee, geld is hooguit een machtsbron.",
+       "Nee, leeftijd is niet de definitie.",
+       "Nee, dat is methodologie."
+      ],
+      "uh": "Macht (Weber): gedrag bepalen, ook tegen de wil."
      },
      {
       "v": "Wat is het verschil tussen formele en informele instituties?",
       "o": [
-       "Formeel: wettelijk vastgelegd. Informeel: gewoonte en tradities.",
-       "Formeel is groter, informeel kleiner",
-       "Informele instituties zijn altijd effectiever",
-       "Ze zijn identiek"
-      ],
-      "c": 0,
-      "u": "Formele instituties zijn afdwingbaar via de wet. Informele sturen gedrag via sociale normen."
-     },
-     {
-      "v": "Wat betekent «Socialisatie»?",
-      "o": [
-       "een vast, vereenvoudigd beeld van een groep",
-       "grondrechten, machtscontrole",
-       "een staat die burgers tegen risico's beschermt",
-       "het aanleren van normen, waarden en rollen"
-      ],
-      "c": 3,
-      "u": "«Socialisatie» betekent: het aanleren van normen, waarden en rollen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het aanleren van normen, waarden en rollen\"?",
-      "o": [
-       "Socialisatie",
-       "Representativiteit",
-       "Verzorgingsstaat",
-       "Waarde"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Socialisatie»: het aanleren van normen, waarden en rollen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het aanleren van normen, waarden en rollen\"?",
-      "o": [
-       "Socialisatie",
-       "Cultuur",
-       "Vier hoofdconcepten",
-       "Vorming"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Socialisatie»: het aanleren van normen, waarden en rollen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Socialisatie» in?",
-      "o": [
-       "het aanleren van normen, waarden en rollen",
-       "gedrag dat afwijkt van de norm",
-       "vorming, verhouding, binding, verandering",
-       "uitstraling van de persooneen volksleider"
-      ],
-      "c": 0,
-      "u": "«Socialisatie» betekent: het aanleren van normen, waarden en rollen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Cultuur»?",
-      "o": [
-       "grondrechten, machtscontrole",
-       "socialisatie, cultuuroverdracht",
-       "kennis, opleiding, smaak, taal",
-       "het geheel van gedeelde waarden en gewoonten"
-      ],
-      "c": 3,
-      "u": "«Cultuur» betekent: het geheel van gedeelde waarden en gewoonten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het geheel van gedeelde waarden en gewoonten\"?",
-      "o": [
-       "Cultuur",
-       "Enquête",
-       "Verzorgingsstaat",
-       "Verandering"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Cultuur»: het geheel van gedeelde waarden en gewoonten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het geheel van gedeelde waarden en gewoonten\"?",
-      "o": [
-       "Verhouding",
-       "Cultuur",
-       "Socialisatie",
-       "Twee benaderingen"
+       "ze zijn hetzelfde",
+       "formeel is wettelijk vastgelegd, informeel berust op gewoonte en traditie",
+       "formeel is gewoonte",
+       "informeel staat in de wet"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Cultuur»: het geheel van gedeelde waarden en gewoonten.",
-      "d": 3
+      "d": 3,
+      "u": "Wettelijk tegenover gewoonte.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Klopt: wettelijk tegenover gewoonte.",
+       "Nee, dat is informeel.",
+       "Nee, dat is formeel."
+      ],
+      "uh": "Formeel: wettelijk; informeel: gewoonte."
      },
      {
-      "v": "Wat houdt «Cultuur» in?",
+      "v": "Wat is een norm?",
       "o": [
-       "het geheel van gedeelde waarden en gewoonten",
-       "het verwachte gedrag bij een positie",
+       "een onderzoeksmethode",
        "een nastrevenswaardig ideaal",
-       "vorming, verhouding, binding, verandering"
-      ],
-      "c": 0,
-      "u": "«Cultuur» betekent: het geheel van gedeelde waarden en gewoonten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Rol»?",
-      "o": [
-       "het verwachte gedrag bij een positie",
-       "een vragenlijst voor onderzoek",
-       "een begrip meetbaar maken",
-       "een samenleving met veel verschillende groepen"
-      ],
-      "c": 0,
-      "u": "«Rol» betekent: het verwachte gedrag bij een positie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het verwachte gedrag bij een positie\"?",
-      "o": [
-       "Rol",
-       "Belangengroep",
-       "Economisch kapitaal",
-       "Binding"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Rol»: het verwachte gedrag bij een positie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het verwachte gedrag bij een positie\"?",
-      "o": [
-       "Stereotype",
-       "Sociale stratificatie",
-       "Rol",
-       "Deviantie"
+       "een concrete gedragsregel voor wat hoort",
+       "een machtsvorm"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Rol»: het verwachte gedrag bij een positie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Rol» in?",
-      "o": [
-       "een vast, vereenvoudigd beeld van een groep",
-       "het verwachte gedrag bij een positie",
-       "macht, gezag, sociale ongelijkheid",
-       "een concrete gedragsregel"
+      "d": 1,
+      "u": "Een norm is een concrete gedragsregel.",
+      "uo": [
+       "Nee, dat is een methode.",
+       "Nee, dat is een waarde.",
+       "Klopt: een norm is een concrete gedragsregel.",
+       "Nee, dat is macht."
       ],
-      "c": 1,
-      "u": "«Rol» betekent: het verwachte gedrag bij een positie.",
-      "d": 3
+      "uh": "Norm: een concrete gedragsregel."
      },
      {
-      "v": "Wat betekent «Stereotype»?",
+      "v": "Wat is een waarde?",
       "o": [
-       "vorming, verhouding, binding, verandering",
-       "een vast, vereenvoudigd beeld van een groep",
-       "de gekozen aanpak van de overheid",
-       "een samenhang tussen twee variabelen"
-      ],
-      "c": 1,
-      "u": "«Stereotype» betekent: een vast, vereenvoudigd beeld van een groep.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een vast, vereenvoudigd beeld van een groep\"?",
-      "o": [
-       "Cultuur",
-       "Waarde",
-       "Maatschappelijk vraagstuk",
-       "Stereotype"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Stereotype»: een vast, vereenvoudigd beeld van een groep.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een vast, vereenvoudigd beeld van een groep\"?",
-      "o": [
-       "Verzorgingsstaat",
-       "Cultuur",
-       "Stereotype",
-       "Norm"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Stereotype»: een vast, vereenvoudigd beeld van een groep.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Stereotype» in?",
-      "o": [
-       "de indeling van de samenleving in lagen",
-       "een vast, vereenvoudigd beeld van een groep",
-       "het geheel van gedeelde waarden en gewoonten",
-       "gewoonte, afkomsteen koning"
-      ],
-      "c": 1,
-      "u": "«Stereotype» betekent: een vast, vereenvoudigd beeld van een groep.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Sociale controle»?",
-      "o": [
-       "media die een groot publiek bereiken",
-       "kennis, opleiding, smaak, taal",
-       "vorming, verhouding, binding, verandering",
-       "de druk om je aan normen te houden"
-      ],
-      "c": 3,
-      "u": "«Sociale controle» betekent: de druk om je aan normen te houden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de druk om je aan normen te houden\"?",
-      "o": [
-       "Waarde",
-       "Sociale controle",
-       "Vorming",
-       "Twee benaderingen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Sociale controle»: de druk om je aan normen te houden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de druk om je aan normen te houden\"?",
-      "o": [
-       "Charismatisch",
-       "Sociale controle",
-       "Traditioneel",
-       "Vorming"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Sociale controle»: de druk om je aan normen te houden.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Sociale controle» in?",
-      "o": [
-       "de druk om je aan normen te houden",
-       "uitstraling van de persooneen volksleider",
-       "een vast, vereenvoudigd beeld van een groep",
-       "gewoonte, afkomsteen koning"
-      ],
-      "c": 0,
-      "u": "«Sociale controle» betekent: de druk om je aan normen te houden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Norm»?",
-      "o": [
+       "een sanctie",
        "een concrete gedragsregel",
-       "sociale cohesie, sociaal kapitaal",
-       "het aanleren van normen, waarden en rollen",
-       "een samenleving met veel verschillende groepen"
-      ],
-      "c": 0,
-      "u": "«Norm» betekent: een concrete gedragsregel.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een concrete gedragsregel\"?",
-      "o": [
-       "Deviantie",
-       "Socialisatie",
-       "Macht",
-       "Norm"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Norm»: een concrete gedragsregel.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een concrete gedragsregel\"?",
-      "o": [
-       "Norm",
-       "Deviantie",
-       "Binding",
-       "Vorming"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Norm»: een concrete gedragsregel.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Norm» in?",
-      "o": [
-       "macht, gezag, sociale ongelijkheid",
-       "een concrete gedragsregel",
-       "vorming, verhouding, binding, verandering",
-       "de druk om je aan normen te houden"
-      ],
-      "c": 1,
-      "u": "«Norm» betekent: een concrete gedragsregel.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Waarde»?",
-      "o": [
-       "media die een groot publiek bereiken",
-       "een nastrevenswaardig ideaal",
-       "gewoonte, afkomsteen koning",
-       "een probleem dat veel mensen raakt"
-      ],
-      "c": 1,
-      "u": "«Waarde» betekent: een nastrevenswaardig ideaal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een nastrevenswaardig ideaal\"?",
-      "o": [
-       "Legitimiteit",
-       "Betrouwbaarheid",
-       "Waarde",
-       "Enquête"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Waarde»: een nastrevenswaardig ideaal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een nastrevenswaardig ideaal\"?",
-      "o": [
-       "Norm",
-       "Cultuur",
-       "Charismatisch",
-       "Waarde"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Waarde»: een nastrevenswaardig ideaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Waarde» in?",
-      "o": [
-       "beweging tussen de sociale lagen",
-       "een staat die burgers tegen risico's beschermt",
-       "een nastrevenswaardig ideaal",
-       "regels en functieeen minister, ambtenaar"
-      ],
-      "c": 2,
-      "u": "«Waarde» betekent: een nastrevenswaardig ideaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Sociale stratificatie»?",
-      "o": [
-       "stratificatie, mobiliteit, Bourdieu",
-       "de indeling van de samenleving in lagen",
-       "een staatsvorm waarin de macht bij het volk ligt",
-       "je netwerk en contacten"
-      ],
-      "c": 1,
-      "u": "«Sociale stratificatie» betekent: de indeling van de samenleving in lagen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de indeling van de samenleving in lagen\"?",
-      "o": [
-       "Economisch kapitaal",
-       "Massamedia",
-       "Sociale stratificatie",
-       "Vorming"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Sociale stratificatie»: de indeling van de samenleving in lagen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de indeling van de samenleving in lagen\"?",
-      "o": [
-       "Verhouding",
-       "Sociale stratificatie",
-       "Verzorgingsstaat",
-       "Twee benaderingen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Sociale stratificatie»: de indeling van de samenleving in lagen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Sociale stratificatie» in?",
-      "o": [
-       "gewoonte, afkomsteen koning",
-       "gedrag dat afwijkt van de norm",
-       "een concrete gedragsregel",
-       "de indeling van de samenleving in lagen"
-      ],
-      "c": 3,
-      "u": "«Sociale stratificatie» betekent: de indeling van de samenleving in lagen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Sociale mobiliteit»?",
-      "o": [
-       "een vragenlijst voor onderzoek",
-       "een nastrevenswaardig ideaal",
-       "beweging tussen de sociale lagen",
-       "het verwachte gedrag bij een positie"
-      ],
-      "c": 2,
-      "u": "«Sociale mobiliteit» betekent: beweging tussen de sociale lagen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"beweging tussen de sociale lagen\"?",
-      "o": [
-       "Sociale mobiliteit",
-       "Socialisatie",
-       "Charismatisch",
-       "Validiteit"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Sociale mobiliteit»: beweging tussen de sociale lagen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"beweging tussen de sociale lagen\"?",
-      "o": [
-       "Rol",
-       "Sociale stratificatie",
-       "Sociale mobiliteit",
-       "Cultuur"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Sociale mobiliteit»: beweging tussen de sociale lagen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Sociale mobiliteit» in?",
-      "o": [
-       "gedrag dat afwijkt van de norm",
-       "regels en functieeen minister, ambtenaar",
-       "beweging tussen de sociale lagen",
-       "een staat die burgers tegen risico's beschermt"
-      ],
-      "c": 2,
-      "u": "«Sociale mobiliteit» betekent: beweging tussen de sociale lagen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verzorgingsstaat»?",
-      "o": [
-       "media die een groot publiek bereiken",
-       "het aanleren van normen, waarden en rollen",
-       "een staat die burgers tegen risico's beschermt",
-       "sociologisch en politicologisch"
-      ],
-      "c": 2,
-      "u": "«Verzorgingsstaat» betekent: een staat die burgers tegen risico's beschermt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een staat die burgers tegen risico's beschermt\"?",
-      "o": [
-       "Ideologieën",
-       "Verzorgingsstaat",
-       "Cultuur",
-       "Lobby"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Verzorgingsstaat»: een staat die burgers tegen risico's beschermt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een staat die burgers tegen risico's beschermt\"?",
-      "o": [
-       "Vorming",
-       "Verhouding",
-       "Verzorgingsstaat",
-       "Stereotype"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Verzorgingsstaat»: een staat die burgers tegen risico's beschermt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Verzorgingsstaat» in?",
-      "o": [
-       "een staat die burgers tegen risico's beschermt",
-       "de druk om je aan normen te houden",
-       "beweging tussen de sociale lagen",
-       "macht, gezag, sociale ongelijkheid"
-      ],
-      "c": 0,
-      "u": "«Verzorgingsstaat» betekent: een staat die burgers tegen risico's beschermt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Deviantie»?",
-      "o": [
-       "een staat die burgers tegen risico's beschermt",
-       "een begrip meetbaar maken",
-       "socialisatie, cultuuroverdracht",
-       "gedrag dat afwijkt van de norm"
-      ],
-      "c": 3,
-      "u": "«Deviantie» betekent: gedrag dat afwijkt van de norm.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gedrag dat afwijkt van de norm\"?",
-      "o": [
-       "Deviantie",
-       "Evenredige vertegenwoordiging",
-       "Betrouwbaarheid",
-       "Ideologieën"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Deviantie»: gedrag dat afwijkt van de norm.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gedrag dat afwijkt van de norm\"?",
-      "o": [
-       "Stereotype",
-       "Norm",
-       "Waarde",
-       "Deviantie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Deviantie»: gedrag dat afwijkt van de norm.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Deviantie» in?",
-      "o": [
-       "een concrete gedragsregel",
-       "gedrag dat afwijkt van de norm",
-       "het aanleren van normen, waarden en rollen",
-       "vorming, verhouding, binding, verandering"
-      ],
-      "c": 1,
-      "u": "«Deviantie» betekent: gedrag dat afwijkt van de norm.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vier hoofdconcepten»?",
-      "o": [
-       "de aanvaarding van gezag als rechtvaardig",
-       "macht, gezag, sociale ongelijkheid",
-       "vorming, verhouding, binding, verandering",
-       "geld en bezit"
-      ],
-      "c": 2,
-      "u": "«Vier hoofdconcepten» betekent: vorming, verhouding, binding, verandering.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vorming, verhouding, binding, verandering\"?",
-      "o": [
-       "Vier hoofdconcepten",
-       "Pluriforme samenleving",
-       "Rol",
-       "Gezag"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vier hoofdconcepten»: vorming, verhouding, binding, verandering.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"vorming, verhouding, binding, verandering\"?",
-      "o": [
-       "Vier hoofdconcepten",
-       "Rol",
-       "Rationeel-legaal",
-       "Binding"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vier hoofdconcepten»: vorming, verhouding, binding, verandering.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vier hoofdconcepten» in?",
-      "o": [
-       "socialisatie, cultuuroverdracht",
-       "het aanleren van normen, waarden en rollen",
-       "het verwachte gedrag bij een positie",
-       "vorming, verhouding, binding, verandering"
-      ],
-      "c": 3,
-      "u": "«Vier hoofdconcepten» betekent: vorming, verhouding, binding, verandering.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Twee benaderingen»?",
-      "o": [
-       "de gekozen aanpak van de overheid",
-       "cijfers vs. verdieping",
-       "macht die als legitiem wordt aanvaard",
-       "sociologisch en politicologisch"
-      ],
-      "c": 3,
-      "u": "«Twee benaderingen» betekent: sociologisch en politicologisch.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"sociologisch en politicologisch\"?",
-      "o": [
-       "Coalitievorming",
-       "Sociaal kapitaal",
-       "Gezag",
-       "Twee benaderingen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Twee benaderingen»: sociologisch en politicologisch.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"sociologisch en politicologisch\"?",
-      "o": [
-       "Sociale mobiliteit",
-       "Twee benaderingen",
-       "Verzorgingsstaat",
-       "Norm"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Twee benaderingen»: sociologisch en politicologisch.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Twee benaderingen» in?",
-      "o": [
-       "gedrag dat afwijkt van de norm",
-       "het geheel van gedeelde waarden en gewoonten",
-       "macht, gezag, sociale ongelijkheid",
-       "sociologisch en politicologisch"
-      ],
-      "c": 3,
-      "u": "«Twee benaderingen» betekent: sociologisch en politicologisch.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vorming»?",
-      "o": [
-       "de aanvaarding van gezag als rechtvaardig",
-       "socialisatie, cultuuroverdracht",
-       "een vragenlijst voor onderzoek",
-       "het losser komen te staan van vaste verbanden"
-      ],
-      "c": 1,
-      "u": "«Vorming» betekent: socialisatie, cultuuroverdracht.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"socialisatie, cultuuroverdracht\"?",
-      "o": [
-       "Vorming",
-       "Maatschappelijk vraagstuk",
-       "Sociale mobiliteit",
-       "Evenredige vertegenwoordiging"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vorming»: socialisatie, cultuuroverdracht.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"socialisatie, cultuuroverdracht\"?",
-      "o": [
-       "Sociale controle",
-       "Twee benaderingen",
-       "Waarde",
-       "Vorming"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Vorming»: socialisatie, cultuuroverdracht.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vorming» in?",
-      "o": [
-       "beweging tussen de sociale lagen",
-       "gewoonte, afkomsteen koning",
-       "het aanleren van normen, waarden en rollen",
-       "socialisatie, cultuuroverdracht"
-      ],
-      "c": 3,
-      "u": "«Vorming» betekent: socialisatie, cultuuroverdracht.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verhouding»?",
-      "o": [
-       "een oorzaak-gevolgrelatie",
-       "formatie, meerderheid in de Kamer",
-       "sociologisch en politicologisch",
-       "macht, gezag, sociale ongelijkheid"
-      ],
-      "c": 3,
-      "u": "«Verhouding» betekent: macht, gezag, sociale ongelijkheid.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"macht, gezag, sociale ongelijkheid\"?",
-      "o": [
-       "Belangengroep",
-       "Verhouding",
-       "Gezag",
-       "Sociale stratificatie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Verhouding»: macht, gezag, sociale ongelijkheid.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"macht, gezag, sociale ongelijkheid\"?",
-      "o": [
-       "Socialisatie",
-       "Rationeel-legaal",
-       "Sociale stratificatie",
-       "Verhouding"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Verhouding»: macht, gezag, sociale ongelijkheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Verhouding» in?",
-      "o": [
-       "macht, gezag, sociale ongelijkheid",
-       "het verwachte gedrag bij een positie",
-       "een nastrevenswaardig ideaal",
-       "gedrag dat afwijkt van de norm"
-      ],
-      "c": 0,
-      "u": "«Verhouding» betekent: macht, gezag, sociale ongelijkheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Binding»?",
-      "o": [
-       "sociologisch en politicologisch",
-       "het vermogen om het gedrag van anderen te bepalen",
-       "sociale cohesie, sociaal kapitaal",
-       "het aanleren van normen, waarden en rollen"
-      ],
-      "c": 2,
-      "u": "«Binding» betekent: sociale cohesie, sociaal kapitaal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"sociale cohesie, sociaal kapitaal\"?",
-      "o": [
-       "Binding",
-       "Cultureel kapitaal",
-       "Evenredige vertegenwoordiging",
-       "Sociale controle"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Binding»: sociale cohesie, sociaal kapitaal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"sociale cohesie, sociaal kapitaal\"?",
-      "o": [
-       "Binding",
-       "Cultuur",
-       "Sociale mobiliteit",
-       "Vier hoofdconcepten"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Binding»: sociale cohesie, sociaal kapitaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Binding» in?",
-      "o": [
-       "sociale cohesie, sociaal kapitaal",
-       "regels en functieeen minister, ambtenaar",
-       "het verwachte gedrag bij een positie",
-       "vorming, verhouding, binding, verandering"
-      ],
-      "c": 0,
-      "u": "«Binding» betekent: sociale cohesie, sociaal kapitaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Traditioneel»?",
-      "o": [
-       "het verwachte gedrag bij een positie",
-       "stratificatie, mobiliteit, Bourdieu",
-       "gewoonte, afkomsteen koning",
-       "de indeling van de samenleving in lagen"
-      ],
-      "c": 2,
-      "u": "«Traditioneel» betekent: gewoonte, afkomsteen koning.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gewoonte, afkomsteen koning\"?",
-      "o": [
-       "Traditioneel",
-       "Sociale controle",
-       "Binding",
-       "Waarde"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Traditioneel»: gewoonte, afkomsteen koning.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gewoonte, afkomsteen koning\"?",
-      "o": [
-       "Traditioneel",
-       "Vier hoofdconcepten",
-       "Sociale mobiliteit",
-       "Binding"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Traditioneel»: gewoonte, afkomsteen koning.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Traditioneel» in?",
-      "o": [
-       "sociologisch en politicologisch",
-       "sociale cohesie, sociaal kapitaal",
-       "gewoonte, afkomsteen koning",
-       "het aanleren van normen, waarden en rollen"
-      ],
-      "c": 2,
-      "u": "«Traditioneel» betekent: gewoonte, afkomsteen koning.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Charismatisch»?",
-      "o": [
-       "uitstraling van de persooneen volksleider",
-       "het geheel van gedeelde waarden en gewoonten",
-       "samenwerkende partijen met samen een meerderheid",
+       "een steekproef",
        "een nastrevenswaardig ideaal"
       ],
-      "c": 0,
-      "u": "«Charismatisch» betekent: uitstraling van de persooneen volksleider.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"uitstraling van de persooneen volksleider\"?",
-      "o": [
-       "Traditioneel",
-       "Verhouding",
-       "Socialisatie",
-       "Charismatisch"
-      ],
       "c": 3,
-      "u": "Het juiste begrip is «Charismatisch»: uitstraling van de persooneen volksleider.",
-      "d": 2
+      "d": 2,
+      "u": "Een waarde is een ideaal.",
+      "uo": [
+       "Nee, dat is een straf.",
+       "Nee, dat is een norm.",
+       "Nee, dat is onderzoek.",
+       "Klopt: een waarde is een ideaal."
+      ],
+      "uh": "Waarde: een nastrevenswaardig ideaal."
      },
      {
-      "v": "Welke term past bij: \"uitstraling van de persooneen volksleider\"?",
+      "v": "Waar vindt secundaire socialisatie vooral plaats?",
       "o": [
-       "Charismatisch",
-       "Vorming",
-       "Norm",
-       "Waarde"
+       "op school, werk en via media",
+       "alleen in het gezin",
+       "alleen voor de geboorte",
+       "nergens"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Charismatisch»: uitstraling van de persooneen volksleider.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Charismatisch» in?",
-      "o": [
-       "een vast, vereenvoudigd beeld van een groep",
-       "het geheel van gedeelde waarden en gewoonten",
-       "sociale cohesie, sociaal kapitaal",
-       "uitstraling van de persooneen volksleider"
+      "d": 2,
+      "u": "Buiten het gezin socialiseer je verder.",
+      "uo": [
+       "Klopt: buiten het gezin socialiseer je verder.",
+       "Nee, dat is primair.",
+       "Nee, dat kan niet.",
+       "Nee, ze vindt wel plaats."
       ],
-      "c": 3,
-      "u": "«Charismatisch» betekent: uitstraling van de persooneen volksleider.",
-      "d": 3
+      "uh": "Secundaire socialisatie: school, werk, media."
      },
      {
-      "v": "Wat betekent «Rationeel-legaal»?",
+      "v": "Wat kenmerkt de psychologische benadering?",
       "o": [
-       "een probleem dat veel mensen raakt",
-       "een verborgen derde variabele die een schijnverband schept",
-       "regels en functieeen minister, ambtenaar",
-       "liberaal, sociaaldemocratisch, conservatief"
+       "gedrag verklaren vanuit de samenleving",
+       "gedrag verklaren vanuit het individu zelf",
+       "beleid beïnvloeden",
+       "wetten maken"
       ],
-      "c": 2,
-      "u": "«Rationeel-legaal» betekent: regels en functieeen minister, ambtenaar.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"regels en functieeen minister, ambtenaar\"?",
-      "o": [
-       "Verandering",
-       "Enquête",
-       "Rationeel-legaal",
-       "Lobby"
+      "c": 1,
+      "d": 3,
+      "u": "De psychologische benadering kijkt naar het individu.",
+      "uo": [
+       "Nee, dat is de sociologische benadering.",
+       "Klopt: de psychologische benadering kijkt naar het individu.",
+       "Nee, dat is lobbyisme.",
+       "Nee, dat is politiek."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Rationeel-legaal»: regels en functieeen minister, ambtenaar.",
-      "d": 2
+      "uh": "Psychologische benadering: vanuit het individu."
      },
      {
-      "v": "Welke term past bij: \"regels en functieeen minister, ambtenaar\"?",
+      "v": "In het gezin leert een klein kind de eerste normen. Welk begrip past hierbij?",
       "o": [
-       "Sociale stratificatie",
        "Waarde",
-       "Vorming",
-       "Rationeel-legaal"
+       "Bindingstheorie",
+       "Primaire socialisatie",
+       "Informele institutie"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Rationeel-legaal»: regels en functieeen minister, ambtenaar.",
-      "d": 3
+      "c": 2,
+      "d": 1,
+      "u": "In het gezin leert een klein kind de eerste normen. Dat past bij Primaire socialisatie: in het gezin.",
+      "uo": [
+       "Nee, dat hoort bij Waarde: nastrevenswaardig ideaal.",
+       "Nee, dat hoort bij Bindingstheorie: zwakke bindingen, meer criminaliteit.",
+       "Klopt: in het gezin.",
+       "Nee, dat hoort bij Informele institutie: gewoonte en traditie."
+      ],
+      "uh": "Primaire socialisatie: in het gezin."
      },
      {
-      "v": "Wat houdt «Rationeel-legaal» in?",
+      "v": "Ongeschreven gewoonten en tradities die toch sturen. Om welk begrip gaat het?",
       "o": [
-       "vorming, verhouding, binding, verandering",
-       "de indeling van de samenleving in lagen",
-       "beweging tussen de sociale lagen",
-       "regels en functieeen minister, ambtenaar"
+       "Sociologische benadering",
+       "Waarde",
+       "Psychologische benadering",
+       "Informele institutie"
       ],
       "c": 3,
-      "u": "«Rationeel-legaal» betekent: regels en functieeen minister, ambtenaar.",
-      "d": 3
+      "d": 1,
+      "u": "Ongeschreven gewoonten en tradities die toch sturen. Dat past bij Informele institutie: gewoonte en traditie.",
+      "uo": [
+       "Nee, dat hoort bij Sociologische benadering: vanuit de samenleving.",
+       "Nee, dat hoort bij Waarde: nastrevenswaardig ideaal.",
+       "Nee, dat hoort bij Psychologische benadering: vanuit het individu.",
+       "Klopt: gewoonte en traditie."
+      ],
+      "uh": "Informele institutie: gewoonte en traditie."
+     },
+     {
+      "v": "Een institutie op basis van gewoonte. Welk begrip herken je hier?",
+      "o": [
+       "Informele institutie",
+       "Waarde",
+       "Psychologische benadering",
+       "Sociologische benadering"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een institutie op basis van gewoonte. Dat past bij Informele institutie: gewoonte en traditie.",
+      "uo": [
+       "Klopt: gewoonte en traditie.",
+       "Nee, dat hoort bij Waarde: nastrevenswaardig ideaal.",
+       "Nee, dat hoort bij Psychologische benadering: vanuit het individu.",
+       "Nee, dat hoort bij Sociologische benadering: vanuit de samenleving."
+      ],
+      "uh": "Informele institutie: gewoonte en traditie."
+     },
+     {
+      "v": "Een concrete gedragsregel. Wat is hier aan de hand?",
+      "o": [
+       "Socialisatie",
+       "Norm",
+       "Bindingstheorie",
+       "Primaire socialisatie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een concrete gedragsregel. Dat past bij Norm: gedragsregel.",
+      "uo": [
+       "Nee, dat hoort bij Socialisatie: normen en waarden overnemen.",
+       "Klopt: gedragsregel.",
+       "Nee, dat hoort bij Bindingstheorie: zwakke bindingen, meer criminaliteit.",
+       "Nee, dat hoort bij Primaire socialisatie: in het gezin."
+      ],
+      "uh": "Norm: gedragsregel."
+     },
+     {
+      "v": "Een gedragsregel, zoals: je zegt netjes gedag. Welk begrip past hierbij?",
+      "o": [
+       "Socialisatie",
+       "Waarde",
+       "Norm",
+       "Psychologische benadering"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een gedragsregel, zoals: je zegt netjes gedag. Dat past bij Norm: gedragsregel.",
+      "uo": [
+       "Nee, dat hoort bij Socialisatie: normen en waarden overnemen.",
+       "Nee, dat hoort bij Waarde: nastrevenswaardig ideaal.",
+       "Klopt: gedragsregel.",
+       "Nee, dat hoort bij Psychologische benadering: vanuit het individu."
+      ],
+      "uh": "Norm: gedragsregel."
+     },
+     {
+      "v": "Een wettelijk vastgelegde institutie. Om welk begrip gaat het?",
+      "o": [
+       "Bindingstheorie",
+       "Waarde",
+       "Socialisatie",
+       "Formele institutie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een wettelijk vastgelegde institutie. Dat past bij Formele institutie: wettelijk vastgelegd.",
+      "uo": [
+       "Nee, dat hoort bij Bindingstheorie: zwakke bindingen, meer criminaliteit.",
+       "Nee, dat hoort bij Waarde: nastrevenswaardig ideaal.",
+       "Nee, dat hoort bij Socialisatie: normen en waarden overnemen.",
+       "Klopt: wettelijk vastgelegd."
+      ],
+      "uh": "Formele institutie: wettelijk vastgelegd."
+     },
+     {
+      "v": "Zwakke bindingen verlagen de drempel voor crimineel gedrag. Welk begrip herken je hier?",
+      "o": [
+       "Bindingstheorie",
+       "Macht",
+       "Primaire socialisatie",
+       "Formele institutie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Zwakke bindingen verlagen de drempel voor crimineel gedrag. Dat past bij Bindingstheorie: zwakke bindingen, meer criminaliteit.",
+      "uo": [
+       "Klopt: zwakke bindingen, meer criminaliteit.",
+       "Nee, dat hoort bij Macht: gedrag van anderen bepalen.",
+       "Nee, dat hoort bij Primaire socialisatie: in het gezin.",
+       "Nee, dat hoort bij Formele institutie: wettelijk vastgelegd."
+      ],
+      "uh": "Bindingstheorie: zwakke bindingen, meer criminaliteit."
+     },
+     {
+      "v": "Wie weinig binding heeft met de samenleving, komt eerder in de criminaliteit. Wat is hier aan de hand?",
+      "o": [
+       "Macht",
+       "Bindingstheorie",
+       "Informele institutie",
+       "Primaire socialisatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Wie weinig binding heeft met de samenleving, komt eerder in de criminaliteit. Dat past bij Bindingstheorie: zwakke bindingen, meer criminaliteit.",
+      "uo": [
+       "Nee, dat hoort bij Macht: gedrag van anderen bepalen.",
+       "Klopt: zwakke bindingen, meer criminaliteit.",
+       "Nee, dat hoort bij Informele institutie: gewoonte en traditie.",
+       "Nee, dat hoort bij Primaire socialisatie: in het gezin."
+      ],
+      "uh": "Bindingstheorie: zwakke bindingen, meer criminaliteit."
+     },
+     {
+      "v": "Gedrag verklaren vanuit het individu. Welk begrip past hierbij?",
+      "o": [
+       "Norm",
+       "Waarde",
+       "Psychologische benadering",
+       "Formele institutie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Gedrag verklaren vanuit het individu. Dat past bij Psychologische benadering: vanuit het individu.",
+      "uo": [
+       "Nee, dat hoort bij Norm: gedragsregel.",
+       "Nee, dat hoort bij Waarde: nastrevenswaardig ideaal.",
+       "Klopt: vanuit het individu.",
+       "Nee, dat hoort bij Formele institutie: wettelijk vastgelegd."
+      ],
+      "uh": "Psychologische benadering: vanuit het individu."
+     },
+     {
+      "v": "Je verklaart gedrag vanuit de persoon zelf. Om welk begrip gaat het?",
+      "o": [
+       "Formele institutie",
+       "Sociologische benadering",
+       "Waarde",
+       "Psychologische benadering"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je verklaart gedrag vanuit de persoon zelf. Dat past bij Psychologische benadering: vanuit het individu.",
+      "uo": [
+       "Nee, dat hoort bij Formele institutie: wettelijk vastgelegd.",
+       "Nee, dat hoort bij Sociologische benadering: vanuit de samenleving.",
+       "Nee, dat hoort bij Waarde: nastrevenswaardig ideaal.",
+       "Klopt: vanuit het individu."
+      ],
+      "uh": "Psychologische benadering: vanuit het individu."
+     },
+     {
+      "v": "Gedrag verklaren vanuit de samenleving. Welk begrip herken je hier?",
+      "o": [
+       "Sociologische benadering",
+       "Psychologische benadering",
+       "Primaire socialisatie",
+       "Macht"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Gedrag verklaren vanuit de samenleving. Dat past bij Sociologische benadering: vanuit de samenleving.",
+      "uo": [
+       "Klopt: vanuit de samenleving.",
+       "Nee, dat hoort bij Psychologische benadering: vanuit het individu.",
+       "Nee, dat hoort bij Primaire socialisatie: in het gezin.",
+       "Nee, dat hoort bij Macht: gedrag van anderen bepalen."
+      ],
+      "uh": "Sociologische benadering: vanuit de samenleving."
+     },
+     {
+      "v": "Een nastrevenswaardig ideaal. Wat is hier aan de hand?",
+      "o": [
+       "Formele institutie",
+       "Waarde",
+       "Informele institutie",
+       "Socialisatie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Een nastrevenswaardig ideaal. Dat past bij Waarde: nastrevenswaardig ideaal.",
+      "uo": [
+       "Nee, dat hoort bij Formele institutie: wettelijk vastgelegd.",
+       "Klopt: nastrevenswaardig ideaal.",
+       "Nee, dat hoort bij Informele institutie: gewoonte en traditie.",
+       "Nee, dat hoort bij Socialisatie: normen en waarden overnemen."
+      ],
+      "uh": "Waarde: nastrevenswaardig ideaal."
+     },
+     {
+      "v": "Het internaliseren van normen en waarden. Welk begrip past hierbij?",
+      "o": [
+       "Macht",
+       "Primaire socialisatie",
+       "Socialisatie",
+       "Psychologische benadering"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Het internaliseren van normen en waarden. Dat past bij Socialisatie: normen en waarden overnemen.",
+      "uo": [
+       "Nee, dat hoort bij Macht: gedrag van anderen bepalen.",
+       "Nee, dat hoort bij Primaire socialisatie: in het gezin.",
+       "Klopt: normen en waarden overnemen.",
+       "Nee, dat hoort bij Psychologische benadering: vanuit het individu."
+      ],
+      "uh": "Socialisatie: normen en waarden overnemen."
+     },
+     {
+      "v": "Een instituut dat in de wet is vastgelegd, zoals de rechtbank. Om welk begrip gaat het?",
+      "o": [
+       "Psychologische benadering",
+       "Informele institutie",
+       "Waarde",
+       "Formele institutie"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een instituut dat in de wet is vastgelegd, zoals de rechtbank. Dat past bij Formele institutie: wettelijk vastgelegd.",
+      "uo": [
+       "Nee, dat hoort bij Psychologische benadering: vanuit het individu.",
+       "Nee, dat hoort bij Informele institutie: gewoonte en traditie.",
+       "Nee, dat hoort bij Waarde: nastrevenswaardig ideaal.",
+       "Klopt: wettelijk vastgelegd."
+      ],
+      "uh": "Formele institutie: wettelijk vastgelegd."
+     },
+     {
+      "v": "De socialisatie in het gezin in de vroege jeugd. Welk begrip herken je hier?",
+      "o": [
+       "Primaire socialisatie",
+       "Bindingstheorie",
+       "Waarde",
+       "Informele institutie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De socialisatie in het gezin in de vroege jeugd. Dat past bij Primaire socialisatie: in het gezin.",
+      "uo": [
+       "Klopt: in het gezin.",
+       "Nee, dat hoort bij Bindingstheorie: zwakke bindingen, meer criminaliteit.",
+       "Nee, dat hoort bij Waarde: nastrevenswaardig ideaal.",
+       "Nee, dat hoort bij Informele institutie: gewoonte en traditie."
+      ],
+      "uh": "Primaire socialisatie: in het gezin."
+     },
+     {
+      "v": "Het vermogen om gedrag van anderen te bepalen. Wat is hier aan de hand?",
+      "o": [
+       "Bindingstheorie",
+       "Macht",
+       "Sociologische benadering",
+       "Socialisatie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Het vermogen om gedrag van anderen te bepalen. Dat past bij Macht: gedrag van anderen bepalen.",
+      "uo": [
+       "Nee, dat hoort bij Bindingstheorie: zwakke bindingen, meer criminaliteit.",
+       "Klopt: gedrag van anderen bepalen.",
+       "Nee, dat hoort bij Sociologische benadering: vanuit de samenleving.",
+       "Nee, dat hoort bij Socialisatie: normen en waarden overnemen."
+      ],
+      "uh": "Macht: gedrag van anderen bepalen."
+     },
+     {
+      "v": "Via opvoeding, school en media neem je normen en waarden over. Welk begrip past hierbij?",
+      "o": [
+       "Formele institutie",
+       "Primaire socialisatie",
+       "Socialisatie",
+       "Macht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Via opvoeding, school en media neem je normen en waarden over. Dat past bij Socialisatie: normen en waarden overnemen.",
+      "uo": [
+       "Nee, dat hoort bij Formele institutie: wettelijk vastgelegd.",
+       "Nee, dat hoort bij Primaire socialisatie: in het gezin.",
+       "Klopt: normen en waarden overnemen.",
+       "Nee, dat hoort bij Macht: gedrag van anderen bepalen."
+      ],
+      "uh": "Socialisatie: normen en waarden overnemen."
+     },
+     {
+      "v": "Iemand kan het gedrag van anderen bepalen, ook tegen hun wil. Om welk begrip gaat het?",
+      "o": [
+       "Norm",
+       "Psychologische benadering",
+       "Sociologische benadering",
+       "Macht"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Iemand kan het gedrag van anderen bepalen, ook tegen hun wil. Dat past bij Macht: gedrag van anderen bepalen.",
+      "uo": [
+       "Nee, dat hoort bij Norm: gedragsregel.",
+       "Nee, dat hoort bij Psychologische benadering: vanuit het individu.",
+       "Nee, dat hoort bij Sociologische benadering: vanuit de samenleving.",
+       "Klopt: gedrag van anderen bepalen."
+      ],
+      "uh": "Macht: gedrag van anderen bepalen."
+     },
+     {
+      "v": "Je verklaart gedrag vanuit groepen en instituties. Welk begrip herken je hier?",
+      "o": [
+       "Sociologische benadering",
+       "Psychologische benadering",
+       "Formele institutie",
+       "Socialisatie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Je verklaart gedrag vanuit groepen en instituties. Dat past bij Sociologische benadering: vanuit de samenleving.",
+      "uo": [
+       "Klopt: vanuit de samenleving.",
+       "Nee, dat hoort bij Psychologische benadering: vanuit het individu.",
+       "Nee, dat hoort bij Formele institutie: wettelijk vastgelegd.",
+       "Nee, dat hoort bij Socialisatie: normen en waarden overnemen."
+      ],
+      "uh": "Sociologische benadering: vanuit de samenleving."
+     },
+     {
+      "v": "Een ideaal dat je nastreeft, zoals eerlijkheid. Wat is hier aan de hand?",
+      "o": [
+       "Norm",
+       "Waarde",
+       "Socialisatie",
+       "Psychologische benadering"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een ideaal dat je nastreeft, zoals eerlijkheid. Dat past bij Waarde: nastrevenswaardig ideaal.",
+      "uo": [
+       "Nee, dat hoort bij Norm: gedragsregel.",
+       "Klopt: nastrevenswaardig ideaal.",
+       "Nee, dat hoort bij Socialisatie: normen en waarden overnemen.",
+       "Nee, dat hoort bij Psychologische benadering: vanuit het individu."
+      ],
+      "uh": "Waarde: nastrevenswaardig ideaal."
      }
     ],
     "oe": [
@@ -59493,79 +59180,43 @@ var VAKKEN = [
     "begrippen": [
      {
       "t": "Socialisatie",
-      "d": "het aanleren van normen, waarden en rollen"
+      "d": "het internaliseren van normen en waarden via opvoeding, school en media"
      },
      {
-      "t": "Cultuur",
-      "d": "het geheel van gedeelde waarden en gewoonten"
+      "t": "Primaire socialisatie",
+      "d": "de socialisatie in het gezin in de vroege jeugd"
      },
      {
-      "t": "Rol",
-      "d": "het verwachte gedrag bij een positie"
+      "t": "Sociologische benadering",
+      "d": "gedrag verklaren vanuit sociale structuren, groepen en instituties"
      },
      {
-      "t": "Stereotype",
-      "d": "een vast, vereenvoudigd beeld van een groep"
+      "t": "Psychologische benadering",
+      "d": "gedrag verklaren vanuit het individu zelf"
      },
      {
-      "t": "Sociale controle",
-      "d": "de druk om je aan normen te houden"
+      "t": "Macht",
+      "d": "het vermogen om andermans gedrag te bepalen, ook tegen diens wil (Weber)"
+     },
+     {
+      "t": "Bindingstheorie",
+      "d": "de theorie dat zwakke sociale bindingen de drempel voor crimineel gedrag verlagen"
+     },
+     {
+      "t": "Formele institutie",
+      "d": "een wettelijk vastgelegde institutie"
+     },
+     {
+      "t": "Informele institutie",
+      "d": "een institutie die op gewoonte en traditie berust"
      },
      {
       "t": "Norm",
-      "d": "een concrete gedragsregel"
+      "d": "een concrete gedragsregel voor wat hoort"
      },
      {
       "t": "Waarde",
       "d": "een nastrevenswaardig ideaal"
-     },
-     {
-      "t": "Sociale stratificatie",
-      "d": "de indeling van de samenleving in lagen"
-     },
-     {
-      "t": "Sociale mobiliteit",
-      "d": "beweging tussen de sociale lagen"
-     },
-     {
-      "t": "Verzorgingsstaat",
-      "d": "een staat die burgers tegen risico's beschermt"
-     },
-     {
-      "t": "Deviantie",
-      "d": "gedrag dat afwijkt van de norm"
-     },
-     {
-      "t": "Vier hoofdconcepten",
-      "d": "vorming, verhouding, binding, verandering"
-     },
-     {
-      "t": "Twee benaderingen",
-      "d": "sociologisch en politicologisch"
-     },
-     {
-      "t": "Vorming",
-      "d": "socialisatie, cultuuroverdracht"
-     },
-     {
-      "t": "Verhouding",
-      "d": "macht, gezag, sociale ongelijkheid"
-     },
-     {
-      "t": "Binding",
-      "d": "sociale cohesie, sociaal kapitaal"
-     },
-     {
-      "t": "Traditioneel",
-      "d": "gewoonte, afkomsteen koning"
-     },
-     {
-      "t": "Charismatisch",
-      "d": "uitstraling van de persooneen volksleider"
-     },
-     {
-      "t": "Rationeel-legaal",
-      "d": "regels en functieeen minister, ambtenaar"
      }
     ]
    },
@@ -59583,708 +59234,577 @@ var VAKKEN = [
      "Media en politiek",
      "Europese Unie en nationale soevereiniteit"
     ],
-    "sam": "<div class=\"sam-head\">Democratie en rechtsstaat</div><ul><li><strong>Parlementaire democratie</strong>: burgers kiezen de Tweede Kamer via verkiezingen. Het parlement controleert de uitvoerende macht (kabinet). De regering is afhankelijk van het vertrouwen van de Tweede Kamer.</li><li><strong>Rechtsstaat</strong>: overheid is gebonden aan de wet. Grondrechten beschermen burgers tegen overheidsmacht. Onafhankelijke rechterlijke macht beoordeelt of de wet correct wordt toegepast.</li><li><strong>Klassieke grondrechten</strong>: vrijheidsrechten - overheid onthoudt zich van ingrijpen. Bijv. vrijheid van meningsuiting, godsdienst, vergadering, privacyrecht.</li><li><strong>Sociale grondrechten</strong>: inspanningsverplichtingen - overheid moet actief zorgen voor welzijn. Bijv. recht op onderwijs, huisvesting, gezondheidszorg.</li></ul><div class=\"sam-head\">Politiek systeem</div><ul><li><strong>Trias politica</strong>: scheiding van wetgevende (parlement maakt wetten), uitvoerende (kabinet voert uit) en rechterlijke macht (rechters toetsen). Doel: voorkomen van machtsmisbruik. Checks and balances.</li><li><strong>Coalitievorming</strong>: geen enkele partij haalt een absolute meerderheid (76 zetels). Meerdere partijen onderhandelen over een regeerakkoord. Informateur → formateur → kabinet.</li><li><strong>Lobbyisme</strong>: bedrijven en maatschappelijke organisaties beïnvloeden politieke besluitvorming door informatie te verstrekken, campagnes te voeren of direct contact met politici. Kan wettelijk of onethisch zijn.</li></ul><div class=\"sam-head\">Politieke ideologieën</div><ul><li><strong>Liberalisme</strong>: nadruk op individuele vrijheid, vrije markt, beperkte overheid. Bijv. VVD.</li><li><strong>Sociaal-democratie</strong>: gelijkheid en solidariteit, sterke verzorgingsstaat. Bijv. PvdA/GL.</li><li><strong>Christendemocratie</strong>: gemeenschap, subsidiariteit (overheid springt pas bij als samenleving tekortschiet), solidariteit. Bijv. CDA, CU.</li><li><strong>Populisme</strong>: de volkswil tegenover de gevestigde elite en instituties. Kan zowel links als rechts zijn. Bijv. PVV.</li></ul>",
+    "sam": "<div class=\"sam-intro\">In de politiek onderscheid je <strong>klassieke</strong> en <strong>sociale grondrechten</strong>, en <strong>actief</strong> van <strong>passief kiesrecht</strong>. Bij <strong>agendering</strong> bereiken problemen de politieke agenda; <strong>lobbyisme</strong> beïnvloedt de besluitvorming. De Tweede Kamer heeft het <strong>recht van amendement</strong>, de <strong>Raad van State</strong> adviseert.</div><div class=\"sam-head\">1. Grondrechten en kiesrecht</div><p>Een <strong>klassiek grondrecht</strong> is een vrijheidsrecht dat de overheid moet respecteren; een <strong>sociaal grondrecht</strong> verplicht de overheid juist actief iets te doen (zoals zorgen voor onderwijs en huisvesting). Het <strong>actief kiesrecht</strong> is het recht om te stemmen, het <strong>passief kiesrecht</strong> het recht om je verkiesbaar te stellen.</p><div class=\"sam-head\">2. Besluitvorming en invloed</div><p>Bij <strong>agendering</strong> bereiken problemen de politieke agenda. <strong>Lobbyisme</strong> is het beïnvloeden van de besluitvorming door bedrijven en organisaties; <strong>populisme</strong> stelt de volkswil centraal tegenover de gevestigde elite. De Tweede Kamer heeft het <strong>recht van amendement</strong> (wetsvoorstellen wijzigen); de <strong>Raad van State</strong> is het hoogste adviesorgaan voor wetgeving en de hoogste bestuursrechter.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sociaal grondrecht</div><div class=\"sam-definitie-body\">een grondrecht dat de overheid verplicht actief iets te doen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Klassiek grondrecht</div><div class=\"sam-definitie-body\">een vrijheidsrecht dat de overheid moet respecteren.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Populisme</div><div class=\"sam-definitie-body\">een stroming die de volkswil centraal stelt tegenover de gevestigde elite.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Lobbyisme</div><div class=\"sam-definitie-body\">het beïnvloeden van politieke besluitvorming door bedrijven en organisaties.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Actief kiesrecht</div><div class=\"sam-definitie-body\">het recht om te stemmen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Passief kiesrecht</div><div class=\"sam-definitie-body\">het recht om je verkiesbaar te stellen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Raad van State</div><div class=\"sam-definitie-body\">het hoogste adviesorgaan voor wetgeving en de hoogste bestuursrechter.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Recht van amendement</div><div class=\"sam-definitie-body\">het recht van Tweede Kamerleden om wetsvoorstellen te wijzigen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Agendering</div><div class=\"sam-definitie-body\">het proces waarbij problemen de politieke agenda bereiken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Politieke besluitvorming</div><div class=\"sam-definitie-body\">het proces waarin de politiek tot besluiten komt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Sociaal grondrecht»</b> is overheid moet iets doen, terwijl <b>«Klassiek grondrecht»</b> overheid moet respecteren is. <b>«Populisme»</b> is volkswil tegen de elite, terwijl <b>«Lobbyisme»</b> besluitvorming beïnvloeden is. <b>«Lobbyisme»</b> is besluitvorming beïnvloeden, terwijl <b>«Agendering»</b> problemen op de agenda is. <b>«Actief kiesrecht»</b> is recht om te stemmen, terwijl <b>«Passief kiesrecht»</b> recht om verkiesbaar te zijn is.</div>",
     "sv": [
      {
-      "v": "Welk type grondrecht verplicht de overheid actief iets te doen (bijv. zorgen voor onderwijs en huisvesting)?",
+      "v": "Welk grondrecht verplicht de overheid actief iets te doen, zoals zorgen voor onderwijs?",
       "o": [
-       "Sociaal grondrecht (inspanningsverplichting)",
-       "Klassiek grondrecht",
-       "Formeel grondrecht (procedure-eis)",
-       "Materieel grondrecht"
+       "een sociaal grondrecht",
+       "een klassiek grondrecht",
+       "het kiesrecht",
+       "het recht van amendement"
       ],
       "c": 0,
-      "u": "Klassiek: overheid houdt zich afzijdig (vrijheid van meningsuiting, godsdienst). Sociaal: overheid is actief (recht op onderwijs, huisvesting). Klassieke rechten zijn afdwingbaar, sociale rechten zijn inspanningsverplichtingen."
+      "d": 3,
+      "u": "Een sociaal grondrecht is een inspanningsverplichting.",
+      "uo": [
+       "Klopt: een sociaal grondrecht is een inspanningsverplichting.",
+       "Nee, dat moet de overheid juist respecteren, niet uitvoeren.",
+       "Nee, dat gaat over stemmen.",
+       "Nee, dat gaat over wetten wijzigen."
+      ],
+      "uh": "Sociaal grondrecht: overheid moet actief iets doen."
      },
      {
-      "v": "Welk begrip beschrijft een politieke stroming die de volkswil centraal stelt en zich afzet tegen de gevestigde elite?",
+      "v": "Welke stroming stelt de volkswil centraal en zet zich af tegen de gevestigde elite?",
       "o": [
-       "Populisme",
-       "Liberalisme",
-       "Conservatisme",
-       "Socialisme"
+       "lobbyisme",
+       "populisme",
+       "liberalisme",
+       "socialisme"
       ],
-      "c": 0,
-      "u": "Populisme: het volk vs. de elite. Populisten beweren de stem van het gewone volk te vertolken. Kritiek op gevestigde politiek, media en instituties. Kan zowel links als rechts zijn."
+      "c": 1,
+      "d": 3,
+      "u": "Populisme plaatst het volk tegenover de elite.",
+      "uo": [
+       "Nee, dat is beïnvloeding door groepen.",
+       "Klopt: populisme plaatst het volk tegenover de elite.",
+       "Nee, dat draait om vrijheid.",
+       "Nee, dat draait om gelijkheid."
+      ],
+      "uh": "Populisme: volkswil tegen de elite."
      },
      {
-      "v": "Welk begrip beschrijft het beïnvloeden van politieke besluitvorming door bedrijven en maatschappelijke organisaties?",
+      "v": "Welk begrip beschrijft het beïnvloeden van besluitvorming door bedrijven en organisaties?",
       "o": [
-       "Lobbyisme",
-       "Pressiegroep",
-       "Politieke participatie",
-       "Burgerinitiatieven"
+       "populisme",
+       "agendering",
+       "lobbyisme",
+       "socialisatie"
       ],
-      "c": 0,
-      "u": "Lobbyisten proberen Kamerleden, ministers of ambtenaren te beinvloeden. Kan constructief zijn (expertise inbrengen) maar ook problematisch (ongelijke toegang voor machtige organisaties)."
+      "c": 2,
+      "d": 3,
+      "u": "Lobbyisme beïnvloedt de politiek.",
+      "uo": [
+       "Nee, dat is een stroming.",
+       "Nee, dat is problemen op de agenda krijgen.",
+       "Klopt: lobbyisme beïnvloedt de politiek.",
+       "Nee, dat is vorming."
+      ],
+      "uh": "Lobbyisme: besluitvorming beïnvloeden."
      },
      {
       "v": "Wat is het verschil tussen actief en passief kiesrecht?",
       "o": [
-       "Actief: recht om te stemmen. Passief: recht om je verkiesbaar te stellen.",
-       "Actief: recht om gekozen te worden. Passief: recht om te stemmen.",
-       "Ze betekenen hetzelfde",
-       "Alleen actief kiesrecht staat in de Grondwet"
+       "passief is stemmen",
+       "ze zijn hetzelfde",
+       "actief is verkiesbaar zijn",
+       "actief is het recht om te stemmen, passief het recht om verkiesbaar te zijn"
       ],
-      "c": 0,
-      "u": "In Nederland: actief kiesrecht vanaf 18 jaar. Passief kiesrecht: je mag je kandidaat stellen."
+      "c": 3,
+      "d": 3,
+      "u": "Stemmen tegenover verkiesbaar zijn.",
+      "uo": [
+       "Nee, dat is actief.",
+       "Nee, ze verschillen.",
+       "Nee, dat is passief.",
+       "Klopt: stemmen tegenover verkiesbaar zijn."
+      ],
+      "uh": "Actief: stemmen; passief: verkiesbaar zijn."
      },
      {
       "v": "Wat is de rol van de Raad van State?",
       "o": [
-       "Hoogste adviesorgaan voor wetgeving en hoogste bestuursrechter",
-       "De hoogste strafrechter",
-       "Het orgaan dat de koning adviseert over toespraken",
-       "Een lobbyorganisatie"
+       "hoogste adviesorgaan voor wetgeving en hoogste bestuursrechter",
+       "het maken van alle wetten",
+       "het organiseren van verkiezingen",
+       "het innen van belasting"
       ],
       "c": 0,
-      "u": "Raad van State adviseert over wetsvoorstellen en behandelt beroepen tegen overheidsbesluiten."
+      "d": 3,
+      "u": "De Raad adviseert en spreekt bestuursrecht.",
+      "uo": [
+       "Klopt: de Raad adviseert en spreekt bestuursrecht.",
+       "Nee, dat doet de wetgever.",
+       "Nee, dat doet de kiesraad.",
+       "Nee, dat doet de fiscus."
+      ],
+      "uh": "Raad van State: adviseert en is bestuursrechter."
      },
      {
       "v": "Wat is het recht van amendement?",
       "o": [
-       "Het recht van Tweede Kamerleden om wetsvoorstellen te wijzigen",
-       "Het recht om wetsvoorstellen in te dienen",
-       "Het recht van de Eerste Kamer om wetten te verwerpen",
-       "Het recht van de Koning om wetten te ondertekenen"
+       "het recht om te stemmen",
+       "het recht van Tweede Kamerleden om wetsvoorstellen te wijzigen",
+       "het recht om verkiesbaar te zijn",
+       "het recht om te lobbyen"
       ],
-      "c": 0,
-      "u": "Alleen de Tweede Kamer heeft het recht van amendement. De Eerste Kamer mag alleen ja of nee zeggen."
+      "c": 1,
+      "d": 3,
+      "u": "Met amenderen past de Kamer een wet aan.",
+      "uo": [
+       "Nee, dat is actief kiesrecht.",
+       "Klopt: met amenderen past de Kamer een wet aan.",
+       "Nee, dat is passief kiesrecht.",
+       "Nee, dat is geen recht."
+      ],
+      "uh": "Recht van amendement: wetsvoorstellen wijzigen."
      },
      {
       "v": "Welk begrip beschrijft het proces waarbij problemen de politieke agenda bereiken?",
       "o": [
+       "socialisatie",
+       "lobbyisme",
+       "agendering",
+       "triangulatie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Agendering brengt een probleem op de agenda.",
+      "uo": [
+       "Nee, dat is vorming.",
+       "Nee, dat is beïnvloeding van besluiten.",
+       "Klopt: agendering brengt een probleem op de agenda.",
+       "Nee, dat is een onderzoeksterm."
+      ],
+      "uh": "Agendering: problemen op de politieke agenda."
+     },
+     {
+      "v": "Wat is een klassiek grondrecht?",
+      "o": [
+       "het recht om wetten te wijzigen",
+       "een recht dat de overheid moet uitvoeren",
+       "het recht om te stemmen",
+       "een vrijheidsrecht dat de overheid moet respecteren"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een klassiek grondrecht beschermt de vrijheid.",
+      "uo": [
+       "Nee, dat is amendement.",
+       "Nee, dat is een sociaal grondrecht.",
+       "Nee, dat is kiesrecht.",
+       "Klopt: een klassiek grondrecht beschermt de vrijheid."
+      ],
+      "uh": "Klassiek grondrecht: overheid moet het respecteren."
+     },
+     {
+      "v": "Wat is actief kiesrecht?",
+      "o": [
+       "het recht om te stemmen",
+       "het recht om verkiesbaar te zijn",
+       "het recht om te lobbyen",
+       "het recht om te amenderen"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Actief kiesrecht is mogen stemmen.",
+      "uo": [
+       "Klopt: actief kiesrecht is mogen stemmen.",
+       "Nee, dat is passief kiesrecht.",
+       "Nee, dat is geen kiesrecht.",
+       "Nee, dat is een Kamerrecht."
+      ],
+      "uh": "Actief kiesrecht: het recht om te stemmen."
+     },
+     {
+      "v": "Wat is lobbyisme?",
+      "o": [
+       "het maken van wetten",
+       "het beïnvloeden van beleid door belangengroepen",
+       "het spreken van recht",
+       "het innen van belasting"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Lobbyisten proberen beleid te sturen.",
+      "uo": [
+       "Nee, dat doet de wetgever.",
+       "Klopt: lobbyisten proberen beleid te sturen.",
+       "Nee, dat doet de rechter.",
+       "Nee, dat doet de fiscus."
+      ],
+      "uh": "Lobbyisme: beleid beïnvloeden door groepen."
+     },
+     {
+      "v": "De overheid mag je vrijheid van meningsuiting niet inperken. Welk begrip past hierbij?",
+      "o": [
+       "Raad van State",
+       "Lobbyisme",
+       "Klassiek grondrecht",
+       "Recht van amendement"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De overheid mag je vrijheid van meningsuiting niet inperken. Dat past bij Klassiek grondrecht: overheid moet respecteren.",
+      "uo": [
+       "Nee, dat hoort bij Raad van State: adviseert over wetgeving.",
+       "Nee, dat hoort bij Lobbyisme: besluitvorming beïnvloeden.",
+       "Klopt: overheid moet respecteren.",
+       "Nee, dat hoort bij Recht van amendement: wetsvoorstellen wijzigen."
+      ],
+      "uh": "Klassiek grondrecht: overheid moet respecteren."
+     },
+     {
+      "v": "De Tweede Kamer past een wetsvoorstel aan. Om welk begrip gaat het?",
+      "o": [
+       "Populisme",
+       "Politieke besluitvorming",
+       "Lobbyisme",
+       "Recht van amendement"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De Tweede Kamer past een wetsvoorstel aan. Dat past bij Recht van amendement: wetsvoorstellen wijzigen.",
+      "uo": [
+       "Nee, dat hoort bij Populisme: volkswil tegen de elite.",
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen.",
+       "Nee, dat hoort bij Lobbyisme: besluitvorming beïnvloeden.",
+       "Klopt: wetsvoorstellen wijzigen."
+      ],
+      "uh": "Recht van amendement: wetsvoorstellen wijzigen."
+     },
+     {
+      "v": "Het recht om wetsvoorstellen te wijzigen. Welk begrip herken je hier?",
+      "o": [
+       "Recht van amendement",
+       "Politieke besluitvorming",
+       "Lobbyisme",
+       "Populisme"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het recht om wetsvoorstellen te wijzigen. Dat past bij Recht van amendement: wetsvoorstellen wijzigen.",
+      "uo": [
+       "Klopt: wetsvoorstellen wijzigen.",
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen.",
+       "Nee, dat hoort bij Lobbyisme: besluitvorming beïnvloeden.",
+       "Nee, dat hoort bij Populisme: volkswil tegen de elite."
+      ],
+      "uh": "Recht van amendement: wetsvoorstellen wijzigen."
+     },
+     {
+      "v": "Problemen komen op de politieke agenda. Wat is hier aan de hand?",
+      "o": [
+       "Lobbyisme",
        "Agendering",
-       "Beleidsvorming",
-       "Besluitvorming",
-       "Implementatie"
-      ],
-      "c": 0,
-      "u": "Agendering is de eerste fase van de beleidscyclus: problemen worden erkend en op de agenda gezet."
-     },
-     {
-      "v": "Wat betekent «Democratie»?",
-      "o": [
-       "socialisatie, cultuuroverdracht",
-       "kennis, opleiding, smaak, taal",
-       "je netwerk en contacten",
-       "een staatsvorm waarin de macht bij het volk ligt"
-      ],
-      "c": 3,
-      "u": "«Democratie» betekent: een staatsvorm waarin de macht bij het volk ligt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een staatsvorm waarin de macht bij het volk ligt\"?",
-      "o": [
-       "Rol",
-       "Democratie",
-       "Operationaliseren",
-       "Rechtsstaat"
+       "Passief kiesrecht",
+       "Populisme"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Democratie»: een staatsvorm waarin de macht bij het volk ligt.",
-      "d": 2
+      "d": 2,
+      "u": "Problemen komen op de politieke agenda. Dat past bij Agendering: problemen op de agenda.",
+      "uo": [
+       "Nee, dat hoort bij Lobbyisme: besluitvorming beïnvloeden.",
+       "Klopt: problemen op de agenda.",
+       "Nee, dat hoort bij Passief kiesrecht: recht om verkiesbaar te zijn.",
+       "Nee, dat hoort bij Populisme: volkswil tegen de elite."
+      ],
+      "uh": "Agendering: problemen op de agenda."
      },
      {
-      "v": "Welke term past bij: \"een staatsvorm waarin de macht bij het volk ligt\"?",
+      "v": "Een probleem krijgt zoveel aandacht dat de politiek het oppakt. Welk begrip past hierbij?",
       "o": [
-       "Democratie",
-       "Coalitie",
-       "Coalitievorming",
-       "Evenredige vertegenwoordiging"
+       "Politieke besluitvorming",
+       "Actief kiesrecht",
+       "Agendering",
+       "Klassiek grondrecht"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een probleem krijgt zoveel aandacht dat de politiek het oppakt. Dat past bij Agendering: problemen op de agenda.",
+      "uo": [
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen.",
+       "Nee, dat hoort bij Actief kiesrecht: recht om te stemmen.",
+       "Klopt: problemen op de agenda.",
+       "Nee, dat hoort bij Klassiek grondrecht: overheid moet respecteren."
+      ],
+      "uh": "Agendering: problemen op de agenda."
+     },
+     {
+      "v": "Het adviesorgaan en de hoogste bestuursrechter. Om welk begrip gaat het?",
+      "o": [
+       "Sociaal grondrecht",
+       "Recht van amendement",
+       "Politieke besluitvorming",
+       "Raad van State"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het adviesorgaan en de hoogste bestuursrechter. Dat past bij Raad van State: adviseert over wetgeving.",
+      "uo": [
+       "Nee, dat hoort bij Sociaal grondrecht: overheid moet iets doen.",
+       "Nee, dat hoort bij Recht van amendement: wetsvoorstellen wijzigen.",
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen.",
+       "Klopt: adviseert over wetgeving."
+      ],
+      "uh": "Raad van State: adviseert over wetgeving."
+     },
+     {
+      "v": "Het recht om verkiesbaar te zijn. Welk begrip herken je hier?",
+      "o": [
+       "Passief kiesrecht",
+       "Recht van amendement",
+       "Klassiek grondrecht",
+       "Agendering"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Democratie»: een staatsvorm waarin de macht bij het volk ligt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Democratie» in?",
-      "o": [
-       "de aanvaarding van gezag als rechtvaardig",
-       "het beïnvloeden van besluitvormers",
-       "de scheiding van de drie staatsmachten",
-       "een staatsvorm waarin de macht bij het volk ligt"
+      "d": 1,
+      "u": "Het recht om verkiesbaar te zijn. Dat past bij Passief kiesrecht: recht om verkiesbaar te zijn.",
+      "uo": [
+       "Klopt: recht om verkiesbaar te zijn.",
+       "Nee, dat hoort bij Recht van amendement: wetsvoorstellen wijzigen.",
+       "Nee, dat hoort bij Klassiek grondrecht: overheid moet respecteren.",
+       "Nee, dat hoort bij Agendering: problemen op de agenda."
       ],
-      "c": 3,
-      "u": "«Democratie» betekent: een staatsvorm waarin de macht bij het volk ligt.",
-      "d": 3
+      "uh": "Passief kiesrecht: recht om verkiesbaar te zijn."
      },
      {
-      "v": "Wat betekent «Macht»?",
+      "v": "Je mag je verkiesbaar stellen als kandidaat. Wat is hier aan de hand?",
       "o": [
-       "liberaal, sociaaldemocratisch, conservatief",
-       "de bereidheid lasten met elkaar te delen",
-       "macht die als legitiem wordt aanvaard",
-       "het vermogen het gedrag van anderen te bepalen"
-      ],
-      "c": 3,
-      "u": "«Macht» betekent: het vermogen het gedrag van anderen te bepalen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het vermogen het gedrag van anderen te bepalen\"?",
-      "o": [
-       "Confounder",
-       "Verhouding",
-       "Correlatie",
-       "Macht"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Macht»: het vermogen het gedrag van anderen te bepalen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het vermogen het gedrag van anderen te bepalen\"?",
-      "o": [
-       "Coalitie",
-       "Macht",
-       "Evenredige vertegenwoordiging",
-       "Democratie"
+       "Actief kiesrecht",
+       "Passief kiesrecht",
+       "Lobbyisme",
+       "Politieke besluitvorming"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Macht»: het vermogen het gedrag van anderen te bepalen.",
-      "d": 3
+      "d": 2,
+      "u": "Je mag je verkiesbaar stellen als kandidaat. Dat past bij Passief kiesrecht: recht om verkiesbaar te zijn.",
+      "uo": [
+       "Nee, dat hoort bij Actief kiesrecht: recht om te stemmen.",
+       "Klopt: recht om verkiesbaar te zijn.",
+       "Nee, dat hoort bij Lobbyisme: besluitvorming beïnvloeden.",
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen."
+      ],
+      "uh": "Passief kiesrecht: recht om verkiesbaar te zijn."
      },
      {
-      "v": "Wat houdt «Macht» in?",
+      "v": "Het beïnvloeden van besluitvorming door groepen. Welk begrip past hierbij?",
       "o": [
-       "liberaal, sociaaldemocratisch, conservatief",
-       "het vermogen het gedrag van anderen te bepalen",
-       "een staatsvorm waarin de macht bij het volk ligt",
-       "de scheiding van de drie staatsmachten"
+       "Sociaal grondrecht",
+       "Populisme",
+       "Lobbyisme",
+       "Politieke besluitvorming"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het beïnvloeden van besluitvorming door groepen. Dat past bij Lobbyisme: besluitvorming beïnvloeden.",
+      "uo": [
+       "Nee, dat hoort bij Sociaal grondrecht: overheid moet iets doen.",
+       "Nee, dat hoort bij Populisme: volkswil tegen de elite.",
+       "Klopt: besluitvorming beïnvloeden.",
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen."
+      ],
+      "uh": "Lobbyisme: besluitvorming beïnvloeden."
+     },
+     {
+      "v": "Een bedrijf probeert een minister te beïnvloeden. Om welk begrip gaat het?",
+      "o": [
+       "Passief kiesrecht",
+       "Agendering",
+       "Populisme",
+       "Lobbyisme"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een bedrijf probeert een minister te beïnvloeden. Dat past bij Lobbyisme: besluitvorming beïnvloeden.",
+      "uo": [
+       "Nee, dat hoort bij Passief kiesrecht: recht om verkiesbaar te zijn.",
+       "Nee, dat hoort bij Agendering: problemen op de agenda.",
+       "Nee, dat hoort bij Populisme: volkswil tegen de elite.",
+       "Klopt: besluitvorming beïnvloeden."
+      ],
+      "uh": "Lobbyisme: besluitvorming beïnvloeden."
+     },
+     {
+      "v": "Een stroming die de volkswil centraal stelt. Welk begrip herken je hier?",
+      "o": [
+       "Populisme",
+       "Actief kiesrecht",
+       "Sociaal grondrecht",
+       "Politieke besluitvorming"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een stroming die de volkswil centraal stelt. Dat past bij Populisme: volkswil tegen de elite.",
+      "uo": [
+       "Klopt: volkswil tegen de elite.",
+       "Nee, dat hoort bij Actief kiesrecht: recht om te stemmen.",
+       "Nee, dat hoort bij Sociaal grondrecht: overheid moet iets doen.",
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen."
+      ],
+      "uh": "Populisme: volkswil tegen de elite."
+     },
+     {
+      "v": "Het proces waarin de politiek besluit. Wat is hier aan de hand?",
+      "o": [
+       "Agendering",
+       "Politieke besluitvorming",
+       "Actief kiesrecht",
+       "Sociaal grondrecht"
       ],
       "c": 1,
-      "u": "«Macht» betekent: het vermogen het gedrag van anderen te bepalen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Belangengroep»?",
-      "o": [
-       "formatie, meerderheid in de Kamer",
-       "je netwerk en contacten",
-       "socialisatie, cultuuroverdracht",
-       "een groep die een gedeeld belang behartigt"
+      "d": 2,
+      "u": "Het proces waarin de politiek besluit. Dat past bij Politieke besluitvorming: tot besluiten komen.",
+      "uo": [
+       "Nee, dat hoort bij Agendering: problemen op de agenda.",
+       "Klopt: tot besluiten komen.",
+       "Nee, dat hoort bij Actief kiesrecht: recht om te stemmen.",
+       "Nee, dat hoort bij Sociaal grondrecht: overheid moet iets doen."
       ],
-      "c": 3,
-      "u": "«Belangengroep» betekent: een groep die een gedeeld belang behartigt.",
-      "d": 1
+      "uh": "Politieke besluitvorming: tot besluiten komen."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een groep die een gedeeld belang behartigt\"?",
+      "v": "Een grondrecht dat de overheid tot actie verplicht. Welk begrip past hierbij?",
       "o": [
-       "Verhouding",
-       "Sociaal kapitaal",
-       "Belangengroep",
-       "Verzorgingsstaat"
+       "Populisme",
+       "Politieke besluitvorming",
+       "Sociaal grondrecht",
+       "Recht van amendement"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Belangengroep»: een groep die een gedeeld belang behartigt.",
-      "d": 2
+      "d": 1,
+      "u": "Een grondrecht dat de overheid tot actie verplicht. Dat past bij Sociaal grondrecht: overheid moet iets doen.",
+      "uo": [
+       "Nee, dat hoort bij Populisme: volkswil tegen de elite.",
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen.",
+       "Klopt: overheid moet iets doen.",
+       "Nee, dat hoort bij Recht van amendement: wetsvoorstellen wijzigen."
+      ],
+      "uh": "Sociaal grondrecht: overheid moet iets doen."
      },
      {
-      "v": "Welke term past bij: \"een groep die een gedeeld belang behartigt\"?",
+      "v": "Het hoogste adviesorgaan dat over wetgeving adviseert. Om welk begrip gaat het?",
       "o": [
-       "Ideologie",
-       "Evenredige vertegenwoordiging",
-       "Macht",
-       "Belangengroep"
+       "Sociaal grondrecht",
+       "Recht van amendement",
+       "Politieke besluitvorming",
+       "Raad van State"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Belangengroep»: een groep die een gedeeld belang behartigt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Belangengroep» in?",
-      "o": [
-       "media die een groot publiek bereiken",
-       "een samenhangend geheel van ideeën over de samenleving",
-       "een groep die een gedeeld belang behartigt",
-       "formatie, meerderheid in de Kamer"
+      "d": 2,
+      "u": "Het hoogste adviesorgaan dat over wetgeving adviseert. Dat past bij Raad van State: adviseert over wetgeving.",
+      "uo": [
+       "Nee, dat hoort bij Sociaal grondrecht: overheid moet iets doen.",
+       "Nee, dat hoort bij Recht van amendement: wetsvoorstellen wijzigen.",
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen.",
+       "Klopt: adviseert over wetgeving."
       ],
-      "c": 2,
-      "u": "«Belangengroep» betekent: een groep die een gedeeld belang behartigt.",
-      "d": 3
+      "uh": "Raad van State: adviseert over wetgeving."
      },
      {
-      "v": "Wat betekent «Massamedia»?",
+      "v": "Een vrijheidsrecht dat de overheid moet respecteren. Welk begrip herken je hier?",
       "o": [
-       "een staat die burgers tegen risico's beschermt",
-       "media die een groot publiek bereiken",
-       "je netwerk en contacten",
-       "cijfers vs. verdieping"
+       "Klassiek grondrecht",
+       "Lobbyisme",
+       "Raad van State",
+       "Recht van amendement"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een vrijheidsrecht dat de overheid moet respecteren. Dat past bij Klassiek grondrecht: overheid moet respecteren.",
+      "uo": [
+       "Klopt: overheid moet respecteren.",
+       "Nee, dat hoort bij Lobbyisme: besluitvorming beïnvloeden.",
+       "Nee, dat hoort bij Raad van State: adviseert over wetgeving.",
+       "Nee, dat hoort bij Recht van amendement: wetsvoorstellen wijzigen."
+      ],
+      "uh": "Klassiek grondrecht: overheid moet respecteren."
+     },
+     {
+      "v": "Het recht om te stemmen. Wat is hier aan de hand?",
+      "o": [
+       "Passief kiesrecht",
+       "Actief kiesrecht",
+       "Politieke besluitvorming",
+       "Lobbyisme"
       ],
       "c": 1,
-      "u": "«Massamedia» betekent: media die een groot publiek bereiken.",
-      "d": 1
+      "d": 2,
+      "u": "Het recht om te stemmen. Dat past bij Actief kiesrecht: recht om te stemmen.",
+      "uo": [
+       "Nee, dat hoort bij Passief kiesrecht: recht om verkiesbaar te zijn.",
+       "Klopt: recht om te stemmen.",
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen.",
+       "Nee, dat hoort bij Lobbyisme: besluitvorming beïnvloeden."
+      ],
+      "uh": "Actief kiesrecht: recht om te stemmen."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"media die een groot publiek bereiken\"?",
+      "v": "De overheid moet zorgen voor onderwijs en huisvesting. Welk begrip past hierbij?",
       "o": [
-       "Trias politica",
-       "Stereotype",
-       "Economisch kapitaal",
-       "Massamedia"
+       "Politieke besluitvorming",
+       "Klassiek grondrecht",
+       "Sociaal grondrecht",
+       "Passief kiesrecht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De overheid moet zorgen voor onderwijs en huisvesting. Dat past bij Sociaal grondrecht: overheid moet iets doen.",
+      "uo": [
+       "Nee, dat hoort bij Politieke besluitvorming: tot besluiten komen.",
+       "Nee, dat hoort bij Klassiek grondrecht: overheid moet respecteren.",
+       "Klopt: overheid moet iets doen.",
+       "Nee, dat hoort bij Passief kiesrecht: recht om verkiesbaar te zijn."
+      ],
+      "uh": "Sociaal grondrecht: overheid moet iets doen."
+     },
+     {
+      "v": "Je mag zelf gaan stemmen bij verkiezingen. Om welk begrip gaat het?",
+      "o": [
+       "Sociaal grondrecht",
+       "Populisme",
+       "Klassiek grondrecht",
+       "Actief kiesrecht"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Massamedia»: media die een groot publiek bereiken.",
-      "d": 2
+      "d": 1,
+      "u": "Je mag zelf gaan stemmen bij verkiezingen. Dat past bij Actief kiesrecht: recht om te stemmen.",
+      "uo": [
+       "Nee, dat hoort bij Sociaal grondrecht: overheid moet iets doen.",
+       "Nee, dat hoort bij Populisme: volkswil tegen de elite.",
+       "Nee, dat hoort bij Klassiek grondrecht: overheid moet respecteren.",
+       "Klopt: recht om te stemmen."
+      ],
+      "uh": "Actief kiesrecht: recht om te stemmen."
      },
      {
-      "v": "Welke term past bij: \"media die een groot publiek bereiken\"?",
+      "v": "Een beweging die de volkswil tegenover de elite plaatst. Welk begrip herken je hier?",
       "o": [
-       "Coalitie",
-       "Massamedia",
-       "Trias politica",
-       "Lobby"
+       "Populisme",
+       "Lobbyisme",
+       "Actief kiesrecht",
+       "Raad van State"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een beweging die de volkswil tegenover de elite plaatst. Dat past bij Populisme: volkswil tegen de elite.",
+      "uo": [
+       "Klopt: volkswil tegen de elite.",
+       "Nee, dat hoort bij Lobbyisme: besluitvorming beïnvloeden.",
+       "Nee, dat hoort bij Actief kiesrecht: recht om te stemmen.",
+       "Nee, dat hoort bij Raad van State: adviseert over wetgeving."
+      ],
+      "uh": "Populisme: volkswil tegen de elite."
+     },
+     {
+      "v": "Het hele proces waarin de politiek tot een besluit komt. Wat is hier aan de hand?",
+      "o": [
+       "Agendering",
+       "Politieke besluitvorming",
+       "Klassiek grondrecht",
+       "Populisme"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Massamedia»: media die een groot publiek bereiken.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Massamedia» in?",
-      "o": [
-       "samenwerkende partijen met samen een meerderheid",
-       "het beïnvloeden van besluitvormers",
-       "media die een groot publiek bereiken",
-       "een samenhangend geheel van ideeën over de samenleving"
+      "d": 3,
+      "u": "Het hele proces waarin de politiek tot een besluit komt. Dat past bij Politieke besluitvorming: tot besluiten komen.",
+      "uo": [
+       "Nee, dat hoort bij Agendering: problemen op de agenda.",
+       "Klopt: tot besluiten komen.",
+       "Nee, dat hoort bij Klassiek grondrecht: overheid moet respecteren.",
+       "Nee, dat hoort bij Populisme: volkswil tegen de elite."
       ],
-      "c": 2,
-      "u": "«Massamedia» betekent: media die een groot publiek bereiken.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Lobby»?",
-      "o": [
-       "formatie, meerderheid in de Kamer",
-       "het beïnvloeden van besluitvormers",
-       "het verwachte gedrag bij een positie",
-       "het aanleren van normen, waarden en rollen"
-      ],
-      "c": 1,
-      "u": "«Lobby» betekent: het beïnvloeden van besluitvormers.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het beïnvloeden van besluitvormers\"?",
-      "o": [
-       "Traditioneel",
-       "Verhouding",
-       "Macht",
-       "Lobby"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Lobby»: het beïnvloeden van besluitvormers.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het beïnvloeden van besluitvormers\"?",
-      "o": [
-       "Lobby",
-       "Coalitie",
-       "Evenredige vertegenwoordiging",
-       "Macht"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Lobby»: het beïnvloeden van besluitvormers.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Lobby» in?",
-      "o": [
-       "zetelverdeling naar rato van de stemmen",
-       "het beïnvloeden van besluitvormers",
-       "een samenhangend geheel van ideeën over de samenleving",
-       "de aanvaarding van gezag als rechtvaardig"
-      ],
-      "c": 1,
-      "u": "«Lobby» betekent: het beïnvloeden van besluitvormers.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Trias politica»?",
-      "o": [
-       "de scheiding van de drie staatsmachten",
-       "sociale cohesie, sociaal kapitaal",
-       "uitstraling van de persooneen volksleider",
-       "het geheel van gedeelde waarden en gewoonten"
-      ],
-      "c": 0,
-      "u": "«Trias politica» betekent: de scheiding van de drie staatsmachten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de scheiding van de drie staatsmachten\"?",
-      "o": [
-       "Ideologieën",
-       "Trias politica",
-       "Correlatie",
-       "Sociaal kapitaal"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Trias politica»: de scheiding van de drie staatsmachten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de scheiding van de drie staatsmachten\"?",
-      "o": [
-       "Trias politica",
-       "Lobby",
-       "Massamedia",
-       "Legitimiteit"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Trias politica»: de scheiding van de drie staatsmachten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Trias politica» in?",
-      "o": [
-       "formatie, meerderheid in de Kamer",
-       "een staatsvorm waarin de macht bij het volk ligt",
-       "zetelverdeling naar rato van de stemmen",
-       "de scheiding van de drie staatsmachten"
-      ],
-      "c": 3,
-      "u": "«Trias politica» betekent: de scheiding van de drie staatsmachten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Legitimiteit»?",
-      "o": [
-       "de scheiding van de drie staatsmachten",
-       "beweging tussen de sociale lagen",
-       "de aanvaarding van gezag als rechtvaardig",
-       "media die een groot publiek bereiken"
-      ],
-      "c": 2,
-      "u": "«Legitimiteit» betekent: de aanvaarding van gezag als rechtvaardig.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de aanvaarding van gezag als rechtvaardig\"?",
-      "o": [
-       "Legitimiteit",
-       "Vorming",
-       "Norm",
-       "Confounder"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Legitimiteit»: de aanvaarding van gezag als rechtvaardig.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de aanvaarding van gezag als rechtvaardig\"?",
-      "o": [
-       "Trias politica",
-       "Massamedia",
-       "Legitimiteit",
-       "Coalitievorming"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Legitimiteit»: de aanvaarding van gezag als rechtvaardig.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Legitimiteit» in?",
-      "o": [
-       "het vermogen het gedrag van anderen te bepalen",
-       "liberaal, sociaaldemocratisch, conservatief",
-       "een groep die een gedeeld belang behartigt",
-       "de aanvaarding van gezag als rechtvaardig"
-      ],
-      "c": 3,
-      "u": "«Legitimiteit» betekent: de aanvaarding van gezag als rechtvaardig.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ideologie»?",
-      "o": [
-       "een samenhangend geheel van ideeën over de samenleving",
-       "zetelverdeling naar rato van de stemmen",
-       "het vermogen om het gedrag van anderen te bepalen",
-       "vorming, verhouding, binding, verandering"
-      ],
-      "c": 0,
-      "u": "«Ideologie» betekent: een samenhangend geheel van ideeën over de samenleving.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een samenhangend geheel van ideeën over de samenleving\"?",
-      "o": [
-       "Coalitievorming",
-       "Betrouwbaarheid",
-       "Ideologie",
-       "Socialisatie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Ideologie»: een samenhangend geheel van ideeën over de samenleving.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een samenhangend geheel van ideeën over de samenleving\"?",
-      "o": [
-       "Ideologie",
-       "Macht",
-       "Coalitie",
-       "Trias politica"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ideologie»: een samenhangend geheel van ideeën over de samenleving.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ideologie» in?",
-      "o": [
-       "grondrechten, machtscontrole",
-       "media die een groot publiek bereiken",
-       "een samenhangend geheel van ideeën over de samenleving",
-       "een groep die een gedeeld belang behartigt"
-      ],
-      "c": 2,
-      "u": "«Ideologie» betekent: een samenhangend geheel van ideeën over de samenleving.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Evenredige vertegenwoordiging»?",
-      "o": [
-       "zetelverdeling naar rato van de stemmen",
-       "een staat die burgers tegen risico's beschermt",
-       "een groep die een gedeeld belang behartigt",
-       "een vast, vereenvoudigd beeld van een groep"
-      ],
-      "c": 0,
-      "u": "«Evenredige vertegenwoordiging» betekent: zetelverdeling naar rato van de stemmen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zetelverdeling naar rato van de stemmen\"?",
-      "o": [
-       "Ideologie",
-       "Verzorgingsstaat",
-       "Evenredige vertegenwoordiging",
-       "Norm"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Evenredige vertegenwoordiging»: zetelverdeling naar rato van de stemmen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"zetelverdeling naar rato van de stemmen\"?",
-      "o": [
-       "Rechtsstaat",
-       "Massamedia",
-       "Evenredige vertegenwoordiging",
-       "Lobby"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Evenredige vertegenwoordiging»: zetelverdeling naar rato van de stemmen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Evenredige vertegenwoordiging» in?",
-      "o": [
-       "zetelverdeling naar rato van de stemmen",
-       "liberaal, sociaaldemocratisch, conservatief",
-       "de scheiding van de drie staatsmachten",
-       "een staatsvorm waarin de macht bij het volk ligt"
-      ],
-      "c": 0,
-      "u": "«Evenredige vertegenwoordiging» betekent: zetelverdeling naar rato van de stemmen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Coalitie»?",
-      "o": [
-       "samenwerkende partijen met samen een meerderheid",
-       "een staat die burgers tegen risico's beschermt",
-       "een staatsvorm waarin de macht bij het volk ligt",
-       "een concrete gedragsregel"
-      ],
-      "c": 0,
-      "u": "«Coalitie» betekent: samenwerkende partijen met samen een meerderheid.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"samenwerkende partijen met samen een meerderheid\"?",
-      "o": [
-       "Sociale ongelijkheid",
-       "Traditioneel",
-       "Coalitie",
-       "Deviantie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Coalitie»: samenwerkende partijen met samen een meerderheid.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"samenwerkende partijen met samen een meerderheid\"?",
-      "o": [
-       "Rechtsstaat",
-       "Ideologieën",
-       "Democratie",
-       "Coalitie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Coalitie»: samenwerkende partijen met samen een meerderheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Coalitie» in?",
-      "o": [
-       "samenwerkende partijen met samen een meerderheid",
-       "media die een groot publiek bereiken",
-       "een staatsvorm waarin de macht bij het volk ligt",
-       "een groep die een gedeeld belang behartigt"
-      ],
-      "c": 0,
-      "u": "«Coalitie» betekent: samenwerkende partijen met samen een meerderheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Rechtsstaat»?",
-      "o": [
-       "of je meet wat je wilt meten",
-       "een steekproef die de populatie afspiegelt",
-       "een concrete gedragsregel",
-       "grondrechten, machtscontrole"
-      ],
-      "c": 3,
-      "u": "«Rechtsstaat» betekent: grondrechten, machtscontrole.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"grondrechten, machtscontrole\"?",
-      "o": [
-       "Gezag",
-       "Operationaliseren",
-       "Rechtsstaat",
-       "Trias politica"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Rechtsstaat»: grondrechten, machtscontrole.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"grondrechten, machtscontrole\"?",
-      "o": [
-       "Belangengroep",
-       "Lobby",
-       "Rechtsstaat",
-       "Macht"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Rechtsstaat»: grondrechten, machtscontrole.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Rechtsstaat» in?",
-      "o": [
-       "zetelverdeling naar rato van de stemmen",
-       "een samenhangend geheel van ideeën over de samenleving",
-       "grondrechten, machtscontrole",
-       "een staatsvorm waarin de macht bij het volk ligt"
-      ],
-      "c": 2,
-      "u": "«Rechtsstaat» betekent: grondrechten, machtscontrole.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Coalitievorming»?",
-      "o": [
-       "formatie, meerderheid in de Kamer",
-       "samenwerkende partijen met samen een meerderheid",
-       "liberaal, sociaaldemocratisch, conservatief",
-       "de consistentie van een meting"
-      ],
-      "c": 0,
-      "u": "«Coalitievorming» betekent: formatie, meerderheid in de Kamer.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"formatie, meerderheid in de Kamer\"?",
-      "o": [
-       "Verandering",
-       "Rechtsstaat",
-       "Individualisering",
-       "Coalitievorming"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Coalitievorming»: formatie, meerderheid in de Kamer.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"formatie, meerderheid in de Kamer\"?",
-      "o": [
-       "Massamedia",
-       "Macht",
-       "Legitimiteit",
-       "Coalitievorming"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Coalitievorming»: formatie, meerderheid in de Kamer.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Coalitievorming» in?",
-      "o": [
-       "een samenhangend geheel van ideeën over de samenleving",
-       "liberaal, sociaaldemocratisch, conservatief",
-       "de scheiding van de drie staatsmachten",
-       "formatie, meerderheid in de Kamer"
-      ],
-      "c": 3,
-      "u": "«Coalitievorming» betekent: formatie, meerderheid in de Kamer.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ideologieën»?",
-      "o": [
-       "de scheiding van de drie staatsmachten",
-       "je netwerk en contacten",
-       "liberaal, sociaaldemocratisch, conservatief",
-       "het beïnvloeden van besluitvormers"
-      ],
-      "c": 2,
-      "u": "«Ideologieën» betekent: liberaal, sociaaldemocratisch, conservatief.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"liberaal, sociaaldemocratisch, conservatief\"?",
-      "o": [
-       "Individualisering",
-       "Ideologieën",
-       "Traditioneel",
-       "Charismatisch"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ideologieën»: liberaal, sociaaldemocratisch, conservatief.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"liberaal, sociaaldemocratisch, conservatief\"?",
-      "o": [
-       "Ideologieën",
-       "Ideologie",
-       "Trias politica",
-       "Rechtsstaat"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ideologieën»: liberaal, sociaaldemocratisch, conservatief.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ideologieën» in?",
-      "o": [
-       "een groep die een gedeeld belang behartigt",
-       "een samenhangend geheel van ideeën over de samenleving",
-       "media die een groot publiek bereiken",
-       "liberaal, sociaaldemocratisch, conservatief"
-      ],
-      "c": 3,
-      "u": "«Ideologieën» betekent: liberaal, sociaaldemocratisch, conservatief.",
-      "d": 3
+      "uh": "Politieke besluitvorming: tot besluiten komen."
      }
     ],
     "oe": [
@@ -60321,56 +59841,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Democratie",
-      "d": "een staatsvorm waarin de macht bij het volk ligt"
+      "t": "Sociaal grondrecht",
+      "d": "een grondrecht dat de overheid verplicht actief iets te doen"
      },
      {
-      "t": "Macht",
-      "d": "het vermogen het gedrag van anderen te bepalen"
+      "t": "Klassiek grondrecht",
+      "d": "een vrijheidsrecht dat de overheid moet respecteren"
      },
      {
-      "t": "Belangengroep",
-      "d": "een groep die een gedeeld belang behartigt"
+      "t": "Populisme",
+      "d": "een stroming die de volkswil centraal stelt tegenover de gevestigde elite"
      },
      {
-      "t": "Massamedia",
-      "d": "media die een groot publiek bereiken"
+      "t": "Lobbyisme",
+      "d": "het beïnvloeden van politieke besluitvorming door bedrijven en organisaties"
      },
      {
-      "t": "Lobby",
-      "d": "het beïnvloeden van besluitvormers"
+      "t": "Actief kiesrecht",
+      "d": "het recht om te stemmen"
      },
      {
-      "t": "Trias politica",
-      "d": "de scheiding van de drie staatsmachten"
+      "t": "Passief kiesrecht",
+      "d": "het recht om je verkiesbaar te stellen"
      },
      {
-      "t": "Legitimiteit",
-      "d": "de aanvaarding van gezag als rechtvaardig"
+      "t": "Raad van State",
+      "d": "het hoogste adviesorgaan voor wetgeving en de hoogste bestuursrechter"
      },
      {
-      "t": "Ideologie",
-      "d": "een samenhangend geheel van ideeën over de samenleving"
+      "t": "Recht van amendement",
+      "d": "het recht van Tweede Kamerleden om wetsvoorstellen te wijzigen"
      },
      {
-      "t": "Evenredige vertegenwoordiging",
-      "d": "zetelverdeling naar rato van de stemmen"
+      "t": "Agendering",
+      "d": "het proces waarbij problemen de politieke agenda bereiken"
      },
      {
-      "t": "Coalitie",
-      "d": "samenwerkende partijen met samen een meerderheid"
-     },
-     {
-      "t": "Rechtsstaat",
-      "d": "grondrechten, machtscontrole"
-     },
-     {
-      "t": "Coalitievorming",
-      "d": "formatie, meerderheid in de Kamer"
-     },
-     {
-      "t": "Ideologieën",
-      "d": "liberaal, sociaaldemocratisch, conservatief"
+      "t": "Politieke besluitvorming",
+      "d": "het proces waarin de politiek tot besluiten komt"
      }
     ]
    },
@@ -60387,852 +59895,577 @@ var VAKKEN = [
      "Cultuur, socialisatie en identiteit",
      "Maatschappelijke tegenstellingen"
     ],
-    "sam": "<div class=\"sam-head\">Sociale ongelijkheid</div><ul><li><strong>Sociale stratificatie</strong>: verdeling van de samenleving in lagen op basis van inkomen, opleiding en beroep (SES). Hogere laag = meer kapitaal, macht en privileges.</li><li><strong>Sociale mobiliteit</strong>: beweging op de maatschappelijke ladder. Intergenerationeel = vergelijking met ouders. Intragenerationeel = verandering binnen eigen leven. Hoge mobiliteit = open samenleving.</li><li><strong>Meritocratisch ideaal</strong>: positie hangt af van talent en inspanning, niet van herkomst. In de praktijk spelen afkomst, netwerk (sociaal kapitaal), cultureel kapitaal en discriminatie ook een rol.</li><li><strong>Kapitaalvormen (Bourdieu)</strong>: economisch kapitaal (geld), cultureel kapitaal (taal, opleiding), sociaal kapitaal (netwerk). Alle drie beïnvloeden kansen.</li></ul><div class=\"sam-head\">Criminaliteit</div><ul><li><strong>Straintheorie (Merton)</strong>: criminaliteit ontstaat door de spanning tussen maatschappelijke doelen (succes, welvaart) en de beperkte legale middelen om die te bereiken. Mensen kiezen alternatieve (illegale) wegen.</li><li><strong>Bindingstheorie (Hirschi)</strong>: zwakke sociale bindingen (gezin, school, werk) verlagen de drempel voor crimineel gedrag. Sterke binding remt criminaliteit.</li><li><strong>Preventie</strong>: voorkomen dat criminaliteit ontstaat (jeugdwerk, onderwijs, armoedebestrijding).</li><li><strong>Repressie</strong>: opsporing, vervolging en bestraffing. Heeft een afschrikkend effect.</li><li><strong>Resocialisatie</strong>: terugkeer in de samenleving na straf. Bijv. opleiding in gevangenis, reclassering.</li></ul><div class=\"sam-head\">Pluriforme samenleving</div><ul><li><strong>Pluriforme samenleving</strong>: grote diversiteit in culturele, religieuze en etnische achtergronden. Gevolg van migratie, koloniaal verleden, globalisering.</li><li><strong>Integratie</strong>: deelnemen aan de samenleving (taal, werk, onderwijs) met behoud van eigen identiteit. Nederlands beleidsdoel.</li><li><strong>Assimilatie</strong>: volledige opgave van eigen cultuur en opgaan in de dominante cultuur. Verdergaand dan integratie.</li><li><strong>Socialisatie</strong>: het proces waarbij individuen waarden, normen en gedragspatronen leren. Primair (gezin), secundair (school, vrienden, media).</li></ul>",
+    "sam": "<div class=\"sam-intro\">Maatschappelijke vraagstukken draaien om <strong>sociale ongelijkheid</strong> en <strong>mobiliteit</strong>. Je kent de <strong>straintheorie</strong> van Merton, het <strong>meritocratische ideaal</strong>, de <strong>pluriforme samenleving</strong> en <strong>integratie</strong>. Processen als <strong>individualisering</strong> en <strong>sociale reproductie</strong> vormen de samenleving.</div><div class=\"sam-head\">1. Ongelijkheid en mobiliteit</div><p><strong>Intergenerationele mobiliteit</strong> vergelijkt iemands positie met die van zijn ouders. Het <strong>meritocratische ideaal</strong> stelt dat je positie door talent en inzet bepaald wordt, niet door afkomst. <strong>Sociale reproductie</strong> is de overdracht van ongelijkheid via kapitaal van ouder op kind. De <strong>straintheorie</strong> van Merton verklaart criminaliteit uit de spanning tussen maatschappelijke doelen en legale middelen.</p><div class=\"sam-head\">2. Samenleving in verandering</div><p>Een <strong>pluriforme samenleving</strong> kent grote culturele, religieuze en etnische diversiteit. Bij <strong>integratie</strong> neem je deel aan de samenleving met behoud van de eigen culturele identiteit. Door <strong>individualisering</strong> worden mensen minder afhankelijk van vaste groepsverbanden en maken ze meer eigen keuzes.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Intergenerationele mobiliteit</div><div class=\"sam-definitie-body\">de vergelijking van iemands positie met die van zijn ouders.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Straintheorie</div><div class=\"sam-definitie-body\">criminaliteit uit de spanning tussen doelen en legale middelen (Merton).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Pluriforme samenleving</div><div class=\"sam-definitie-body\">een samenleving met grote culturele, religieuze en etnische diversiteit.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Integratie</div><div class=\"sam-definitie-body\">deelnemen aan de samenleving met behoud van de eigen culturele identiteit.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Meritocratie</div><div class=\"sam-definitie-body\">een samenleving waarin talent en inzet de positie bepalen, niet afkomst.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Individualisering</div><div class=\"sam-definitie-body\">dat mensen minder afhankelijk worden van vaste groepsverbanden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sociale reproductie</div><div class=\"sam-definitie-body\">de overdracht van ongelijkheid via kapitaal van ouder op kind.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sociale ongelijkheid</div><div class=\"sam-definitie-body\">de ongelijke verdeling van welvaart, macht en kansen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Segregatie</div><div class=\"sam-definitie-body\">het gescheiden leven van groepen in de samenleving.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sociale cohesie</div><div class=\"sam-definitie-body\">de samenhang tussen mensen in een samenleving.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Intergenerationele mobiliteit»</b> is positie versus die van ouders, terwijl <b>«Sociale reproductie»</b> ongelijkheid overdragen is. <b>«Straintheorie»</b> is spanning doelen en middelen, terwijl <b>«Sociale reproductie»</b> ongelijkheid overdragen is. <b>«Pluriforme samenleving»</b> is grote diversiteit, terwijl <b>«Integratie»</b> meedoen met eigen identiteit is. <b>«Integratie»</b> is meedoen met eigen identiteit, terwijl <b>«Segregatie»</b> groepen leven gescheiden is.</div>",
     "sv": [
      {
-      "v": "Welk begrip beschrijft de vergelijking van iemands maatschappelijke positie met die van zijn of haar ouders?",
+      "v": "Welk begrip vergelijkt iemands maatschappelijke positie met die van zijn of haar ouders?",
       "o": [
-       "Intergenerationele mobiliteit",
-       "Intragenerationele mobiliteit",
-       "Horizontale mobiliteit",
-       "Sociale stratificatie"
+       "intergenerationele mobiliteit",
+       "sociale reproductie",
+       "individualisering",
+       "segregatie"
       ],
       "c": 0,
-      "u": "Intergenerationele mobiliteit: vergelijk je positie met die van je ouders. Intragenerationele mobiliteit: verandering binnen je eigen leven. Hoge sociale mobiliteit wijst op een open samenleving."
+      "d": 3,
+      "u": "Het vergelijkt over generaties heen.",
+      "uo": [
+       "Klopt: het vergelijkt over generaties heen.",
+       "Nee, dat gaat over het doorgeven van ongelijkheid.",
+       "Nee, dat gaat over losser worden van groepen.",
+       "Nee, dat is gescheiden leven."
+      ],
+      "uh": "Intergenerationele mobiliteit: positie versus die van ouders."
      },
      {
-      "v": "Welke criminologische theorie verklaart criminaliteit als gevolg van spanning tussen maatschappelijke doelen en beschikbare legale middelen?",
+      "v": "Welke theorie verklaart criminaliteit uit spanning tussen maatschappelijke doelen en legale middelen?",
       "o": [
-       "Straintheorie (Merton)",
-       "Labelingtheorie",
-       "Bindingstheorie",
-       "Biologische theorie"
+       "de bindingstheorie",
+       "de straintheorie (Merton)",
+       "de meritocratie",
+       "de socialisatietheorie"
       ],
-      "c": 0,
-      "u": "Merton: de samenleving benadrukt succes (geld, status) maar niet iedereen heeft gelijke toegang tot legale middelen. De spanning tussen doel en middelen kan leiden tot criminaliteit als alternatieve route."
+      "c": 1,
+      "d": 3,
+      "u": "Strain is de spanning tussen doel en middel.",
+      "uo": [
+       "Nee, die gaat over zwakke bindingen.",
+       "Klopt: strain is de spanning tussen doel en middel.",
+       "Nee, dat is een ideaal.",
+       "Nee, dat gaat over normen leren."
+      ],
+      "uh": "Straintheorie: spanning tussen doelen en middelen."
      },
      {
-      "v": "Welk begrip beschrijft een samenleving met grote diversiteit in culturele, religieuze en etnische achtergronden?",
+      "v": "Welk begrip beschrijft een samenleving met grote culturele, religieuze en etnische diversiteit?",
       "o": [
-       "Pluriforme samenleving",
-       "Homogene samenleving",
-       "Multiculturele samenleving",
-       "Gesegregeerde samenleving"
+       "een meritocratie",
+       "een gesegregeerde samenleving",
+       "een pluriforme samenleving",
+       "een rechtsstaat"
       ],
-      "c": 0,
-      "u": "Pluriform: meerdere culturen, religies en levenswijzen naast elkaar. In Nederland door migratie, koloniaal verleden en globalisering. Brengt verrijking maar ook spanningen rond integratie en identiteit."
+      "c": 2,
+      "d": 2,
+      "u": "Pluriform betekent veelvormig en divers.",
+      "uo": [
+       "Nee, dat gaat over prestatie.",
+       "Nee, dat gaat over scheiding.",
+       "Klopt: pluriform betekent veelvormig en divers.",
+       "Nee, dat is een staatsvorm."
+      ],
+      "uh": "Pluriforme samenleving: grote diversiteit."
      },
      {
-      "v": "Welk integratieconcept houdt in dat iemand deelneemt aan de samenleving terwijl de eigen culturele identiteit behouden blijft?",
+      "v": "Welk integratieconcept houdt in dat je meedoet met behoud van je eigen culturele identiteit?",
       "o": [
-       "Integratie",
-       "Assimilatie",
-       "Segregatie",
-       "Marginalisatie"
+       "individualisering",
+       "segregatie",
+       "assimilatie",
+       "integratie"
       ],
-      "c": 0,
-      "u": "Integratie: tweetaligheid, werk, onderwijs, maar ook eigen tradities behouden. Assimilatie: volledige aanpassing aan de dominante cultuur. In Nederland wordt integratie als beleidsdoel gehanteerd."
+      "c": 3,
+      "d": 2,
+      "u": "Integratie is meedoen met behoud van identiteit.",
+      "uo": [
+       "Nee, dat is losser worden van groepen.",
+       "Nee, dat is juist gescheiden leven.",
+       "Nee, dat is volledig opgaan in de meerderheid.",
+       "Klopt: integratie is meedoen met behoud van identiteit."
+      ],
+      "uh": "Integratie: meedoen met eigen identiteit."
      },
      {
       "v": "Wat is het meritocratische ideaal?",
       "o": [
-       "Maatschappelijke positie wordt bepaald door talent en inzet, niet door afkomst",
-       "Rijke kinderen hebben altijd meer kansen",
-       "De overheid verdeelt welvaart gelijk",
-       "Opleiding is niet van belang voor maatschappelijke positie"
+       "de positie wordt bepaald door talent en inzet, niet door afkomst",
+       "de positie wordt bepaald door afkomst",
+       "iedereen heeft dezelfde positie",
+       "de overheid bepaalt de positie"
       ],
       "c": 0,
-      "u": "In de praktijk spelen ook afkomst, netwerk en cultureel kapitaal een rol."
+      "d": 3,
+      "u": "In een meritocratie tellen prestatie en inzet.",
+      "uo": [
+       "Klopt: in een meritocratie tellen prestatie en inzet.",
+       "Nee, dat is juist het tegenovergestelde.",
+       "Nee, dat klopt niet.",
+       "Nee, dat is niet het ideaal."
+      ],
+      "uh": "Meritocratie: positie door talent en inzet."
      },
      {
       "v": "Wat is individualisering als maatschappelijk proces?",
       "o": [
-       "Mensen worden minder afhankelijk van vaste groepsverbanden en maken meer eigen keuzes",
-       "Iedereen neemt steeds dezelfde normen en waarden over",
-       "De overheid bemoeit zich meer met het privéleven van burgers",
-       "Sociale ongelijkheid verdwijnt volledig"
+       "mensen gaan sterker in groepen leven",
+       "mensen worden minder afhankelijk van vaste groepen en maken meer eigen keuzes",
+       "de bevolking krimpt",
+       "de overheid groeit"
       ],
-      "c": 0,
-      "u": "Individualisering: traditionele verbanden (kerk, zuil, buurt, gezin) verliezen invloed en het individu bepaalt zelf zijn levensloop. Gevolg: meer vrijheid, maar ook minder vanzelfsprekende sociale binding."
+      "c": 1,
+      "d": 3,
+      "u": "Mensen komen losser van vaste verbanden.",
+      "uo": [
+       "Nee, dat is het tegenovergestelde.",
+       "Klopt: mensen komen losser van vaste verbanden.",
+       "Nee, dat is demografie.",
+       "Nee, dat is iets anders."
+      ],
+      "uh": "Individualisering: losser van vaste groepen."
      },
      {
-      "v": "Welk begrip beschrijft de reproductie van sociale ongelijkheid via overdracht van kapitaal van ouder op kind?",
+      "v": "Welk begrip beschrijft de overdracht van ongelijkheid via kapitaal van ouder op kind?",
+      "o": [
+       "meritocratie",
+       "intergenerationele mobiliteit",
+       "sociale reproductie",
+       "segregatie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Ongelijkheid wordt van ouders op kinderen doorgegeven.",
+      "uo": [
+       "Nee, dat is een ideaal.",
+       "Nee, dat vergelijkt juist de posities.",
+       "Klopt: ongelijkheid wordt van ouders op kinderen doorgegeven.",
+       "Nee, dat is gescheiden leven."
+      ],
+      "uh": "Sociale reproductie: ongelijkheid doorgeven."
+     },
+     {
+      "v": "Wat is segregatie?",
+      "o": [
+       "het houden van verkiezingen",
+       "het samen optrekken van groepen",
+       "de groei van de economie",
+       "het gescheiden leven van groepen in de samenleving"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Bij segregatie leven groepen apart.",
+      "uo": [
+       "Nee, dat is politiek.",
+       "Nee, dat is juist integratie.",
+       "Nee, dat is economisch.",
+       "Klopt: bij segregatie leven groepen apart."
+      ],
+      "uh": "Segregatie: groepen leven gescheiden."
+     },
+     {
+      "v": "Wat is sociale cohesie?",
+      "o": [
+       "de samenhang tussen mensen in een samenleving",
+       "de ongelijke verdeling van welvaart",
+       "de trek naar de stad",
+       "het beïnvloeden van beleid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Cohesie is samenhang.",
+      "uo": [
+       "Klopt: cohesie is samenhang.",
+       "Nee, dat is ongelijkheid.",
+       "Nee, dat is urbanisatie.",
+       "Nee, dat is lobbyisme."
+      ],
+      "uh": "Sociale cohesie: samenhang in de samenleving."
+     },
+     {
+      "v": "Wat is sociale ongelijkheid?",
+      "o": [
+       "de samenhang tussen mensen",
+       "de ongelijke verdeling van welvaart, macht en kansen",
+       "het toetsen van een theorie",
+       "het beïnvloeden van beleid"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Sociale ongelijkheid gaat over ongelijke verdeling.",
+      "uo": [
+       "Nee, dat is cohesie.",
+       "Klopt: sociale ongelijkheid gaat over ongelijke verdeling.",
+       "Nee, dat is onderzoek.",
+       "Nee, dat is lobbyisme."
+      ],
+      "uh": "Sociale ongelijkheid: ongelijke verdeling van welvaart en kansen."
+     },
+     {
+      "v": "Wie de doelen niet langs legale weg kan halen, kiest soms voor criminaliteit. Welk begrip past hierbij?",
+      "o": [
+       "Individualisering",
+       "Integratie",
+       "Straintheorie",
+       "Meritocratie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Wie de doelen niet langs legale weg kan halen, kiest soms voor criminaliteit. Dat past bij Straintheorie: spanning doelen en middelen.",
+      "uo": [
+       "Nee, dat hoort bij Individualisering: losser van groepen.",
+       "Nee, dat hoort bij Integratie: meedoen met eigen identiteit.",
+       "Klopt: spanning doelen en middelen.",
+       "Nee, dat hoort bij Meritocratie: positie door prestatie."
+      ],
+      "uh": "Straintheorie: spanning doelen en middelen."
+     },
+     {
+      "v": "De ene groep heeft veel welvaart en macht, de andere weinig. Om welk begrip gaat het?",
+      "o": [
+       "Pluriforme samenleving",
+       "Segregatie",
+       "Integratie",
+       "Sociale ongelijkheid"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De ene groep heeft veel welvaart en macht, de andere weinig. Dat past bij Sociale ongelijkheid: ongelijke verdeling.",
+      "uo": [
+       "Nee, dat hoort bij Pluriforme samenleving: grote diversiteit.",
+       "Nee, dat hoort bij Segregatie: groepen leven gescheiden.",
+       "Nee, dat hoort bij Integratie: meedoen met eigen identiteit.",
+       "Klopt: ongelijke verdeling."
+      ],
+      "uh": "Sociale ongelijkheid: ongelijke verdeling."
+     },
+     {
+      "v": "De ongelijke verdeling van welvaart en kansen. Welk begrip herken je hier?",
+      "o": [
+       "Sociale ongelijkheid",
+       "Segregatie",
+       "Integratie",
+       "Pluriforme samenleving"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De ongelijke verdeling van welvaart en kansen. Dat past bij Sociale ongelijkheid: ongelijke verdeling.",
+      "uo": [
+       "Klopt: ongelijke verdeling.",
+       "Nee, dat hoort bij Segregatie: groepen leven gescheiden.",
+       "Nee, dat hoort bij Integratie: meedoen met eigen identiteit.",
+       "Nee, dat hoort bij Pluriforme samenleving: grote diversiteit."
+      ],
+      "uh": "Sociale ongelijkheid: ongelijke verdeling."
+     },
+     {
+      "v": "Het gescheiden leven van groepen. Wat is hier aan de hand?",
+      "o": [
+       "Meritocratie",
+       "Segregatie",
+       "Sociale cohesie",
+       "Straintheorie"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het gescheiden leven van groepen. Dat past bij Segregatie: groepen leven gescheiden.",
+      "uo": [
+       "Nee, dat hoort bij Meritocratie: positie door prestatie.",
+       "Klopt: groepen leven gescheiden.",
+       "Nee, dat hoort bij Sociale cohesie: samenhang.",
+       "Nee, dat hoort bij Straintheorie: spanning doelen en middelen."
+      ],
+      "uh": "Segregatie: groepen leven gescheiden."
+     },
+     {
+      "v": "Groepen wonen en leven gescheiden van elkaar. Welk begrip past hierbij?",
+      "o": [
+       "Sociale cohesie",
+       "Meritocratie",
+       "Segregatie",
+       "Straintheorie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Groepen wonen en leven gescheiden van elkaar. Dat past bij Segregatie: groepen leven gescheiden.",
+      "uo": [
+       "Nee, dat hoort bij Sociale cohesie: samenhang.",
+       "Nee, dat hoort bij Meritocratie: positie door prestatie.",
+       "Klopt: groepen leven gescheiden.",
+       "Nee, dat hoort bij Straintheorie: spanning doelen en middelen."
+      ],
+      "uh": "Segregatie: groepen leven gescheiden."
+     },
+     {
+      "v": "De overdracht van ongelijkheid van ouder op kind. Om welk begrip gaat het?",
+      "o": [
+       "Individualisering",
+       "Intergenerationele mobiliteit",
+       "Straintheorie",
+       "Sociale reproductie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De overdracht van ongelijkheid van ouder op kind. Dat past bij Sociale reproductie: ongelijkheid overdragen.",
+      "uo": [
+       "Nee, dat hoort bij Individualisering: losser van groepen.",
+       "Nee, dat hoort bij Intergenerationele mobiliteit: positie versus die van ouders.",
+       "Nee, dat hoort bij Straintheorie: spanning doelen en middelen.",
+       "Klopt: ongelijkheid overdragen."
+      ],
+      "uh": "Sociale reproductie: ongelijkheid overdragen."
+     },
+     {
+      "v": "Mensen worden minder afhankelijk van vaste groepen. Welk begrip herken je hier?",
+      "o": [
+       "Individualisering",
+       "Sociale ongelijkheid",
+       "Straintheorie",
+       "Segregatie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Mensen worden minder afhankelijk van vaste groepen. Dat past bij Individualisering: losser van groepen.",
+      "uo": [
+       "Klopt: losser van groepen.",
+       "Nee, dat hoort bij Sociale ongelijkheid: ongelijke verdeling.",
+       "Nee, dat hoort bij Straintheorie: spanning doelen en middelen.",
+       "Nee, dat hoort bij Segregatie: groepen leven gescheiden."
+      ],
+      "uh": "Individualisering: losser van groepen."
+     },
+     {
+      "v": "Mensen komen losser te staan van kerk, buurt en familie. Wat is hier aan de hand?",
       "o": [
        "Sociale reproductie",
-       "Sociale mobiliteit",
-       "Sociale stratificatie",
-       "Socialisatie"
-      ],
-      "c": 0,
-      "u": "Bourdieu: ongelijkheid wordt doorgegeven via economisch, cultureel en sociaal kapitaal. Structuur reproduceert zichzelf."
-     },
-     {
-      "v": "Wat betekent «Maatschappelijk vraagstuk»?",
-      "o": [
-       "een probleem dat veel mensen raakt",
-       "anomie (Durkheim/Merton), labeling",
-       "het vermogen het gedrag van anderen te bepalen",
-       "zetelverdeling naar rato van de stemmen"
-      ],
-      "c": 0,
-      "u": "«Maatschappelijk vraagstuk» betekent: een probleem dat veel mensen raakt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een probleem dat veel mensen raakt\"?",
-      "o": [
-       "Operationaliseren",
-       "Pluriforme samenleving",
-       "Maatschappelijk vraagstuk",
-       "Coalitievorming"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Maatschappelijk vraagstuk»: een probleem dat veel mensen raakt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een probleem dat veel mensen raakt\"?",
-      "o": [
-       "Gezag",
-       "Sociale ongelijkheid",
-       "Maatschappelijk vraagstuk",
-       "Sociaal kapitaal"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Maatschappelijk vraagstuk»: een probleem dat veel mensen raakt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Maatschappelijk vraagstuk» in?",
-      "o": [
-       "je netwerk en contacten",
-       "een probleem dat veel mensen raakt",
-       "een samenleving met veel verschillende groepen",
-       "een staat die burgers tegen risico's beschermt"
-      ],
-      "c": 1,
-      "u": "«Maatschappelijk vraagstuk» betekent: een probleem dat veel mensen raakt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Beleid»?",
-      "o": [
-       "de gekozen aanpak van de overheid",
-       "grondrechten, machtscontrole",
-       "een begrip meetbaar maken",
-       "sociale cohesie, sociaal kapitaal"
-      ],
-      "c": 0,
-      "u": "«Beleid» betekent: de gekozen aanpak van de overheid.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de gekozen aanpak van de overheid\"?",
-      "o": [
-       "Sociaal kapitaal",
-       "Macht",
-       "Validiteit",
-       "Beleid"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Beleid»: de gekozen aanpak van de overheid.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de gekozen aanpak van de overheid\"?",
-      "o": [
-       "Beleid",
-       "Gezag",
-       "Sociaal kapitaal",
-       "Economisch kapitaal"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Beleid»: de gekozen aanpak van de overheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Beleid» in?",
-      "o": [
-       "individualisering, meritocratie",
-       "de gekozen aanpak van de overheid",
-       "het vermogen om het gedrag van anderen te bepalen",
-       "een staat die burgers tegen risico's beschermt"
-      ],
-      "c": 1,
-      "u": "«Beleid» betekent: de gekozen aanpak van de overheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verzorgingsstaat»?",
-      "o": [
-       "de gekozen aanpak van de overheid",
-       "socialisatie, cultuuroverdracht",
-       "grondrechten, machtscontrole",
-       "een staat die burgers tegen risico's beschermt"
-      ],
-      "c": 3,
-      "u": "«Verzorgingsstaat» betekent: een staat die burgers tegen risico's beschermt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een staat die burgers tegen risico's beschermt\"?",
-      "o": [
-       "Cultureel kapitaal",
-       "Sociaal kapitaal",
-       "Verzorgingsstaat",
-       "Criminaliteit"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Verzorgingsstaat»: een staat die burgers tegen risico's beschermt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een staat die burgers tegen risico's beschermt\"?",
-      "o": [
-       "Beleid",
-       "Pluriforme samenleving",
-       "Verzorgingsstaat",
-       "Sociaal kapitaal"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Verzorgingsstaat»: een staat die burgers tegen risico's beschermt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Verzorgingsstaat» in?",
-      "o": [
-       "een samenleving met veel verschillende groepen",
-       "een staat die burgers tegen risico's beschermt",
-       "macht die als legitiem wordt aanvaard",
-       "een groep die een gedeeld belang behartigt"
-      ],
-      "c": 1,
-      "u": "«Verzorgingsstaat» betekent: een staat die burgers tegen risico's beschermt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Individualisering»?",
-      "o": [
-       "een steekproef die de populatie afspiegelt",
-       "het losser komen te staan van vaste verbanden",
-       "gedrag dat afwijkt van de norm",
-       "een staat die burgers tegen risico's beschermt"
-      ],
-      "c": 1,
-      "u": "«Individualisering» betekent: het losser komen te staan van vaste verbanden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het losser komen te staan van vaste verbanden\"?",
-      "o": [
-       "Confounder",
        "Individualisering",
-       "Belangengroep",
-       "Correlatie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Individualisering»: het losser komen te staan van vaste verbanden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het losser komen te staan van vaste verbanden\"?",
-      "o": [
-       "Solidariteit",
-       "Gezag",
-       "Sociaal kapitaal",
-       "Individualisering"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Individualisering»: het losser komen te staan van vaste verbanden.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Individualisering» in?",
-      "o": [
-       "stratificatie, mobiliteit, Bourdieu",
-       "je netwerk en contacten",
-       "het losser komen te staan van vaste verbanden",
-       "anomie (Durkheim/Merton), labeling"
-      ],
-      "c": 2,
-      "u": "«Individualisering» betekent: het losser komen te staan van vaste verbanden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Solidariteit»?",
-      "o": [
-       "de scheiding van de drie staatsmachten",
-       "de bereidheid lasten met elkaar te delen",
-       "het geheel van gedeelde waarden en gewoonten",
-       "je netwerk en contacten"
-      ],
-      "c": 1,
-      "u": "«Solidariteit» betekent: de bereidheid lasten met elkaar te delen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de bereidheid lasten met elkaar te delen\"?",
-      "o": [
-       "Legitimiteit",
-       "Solidariteit",
-       "Democratie",
-       "Kwan vs. kwal"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Solidariteit»: de bereidheid lasten met elkaar te delen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de bereidheid lasten met elkaar te delen\"?",
-      "o": [
-       "Maatschappelijk vraagstuk",
-       "Solidariteit",
-       "Criminaliteit",
-       "Belangengroep"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Solidariteit»: de bereidheid lasten met elkaar te delen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Solidariteit» in?",
-      "o": [
-       "kennis, opleiding, smaak, taal",
-       "je netwerk en contacten",
-       "een samenleving met veel verschillende groepen",
-       "de bereidheid lasten met elkaar te delen"
-      ],
-      "c": 3,
-      "u": "«Solidariteit» betekent: de bereidheid lasten met elkaar te delen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Macht»?",
-      "o": [
-       "het aanleren van normen, waarden en rollen",
-       "een groep die een gedeeld belang behartigt",
-       "het vermogen om het gedrag van anderen te bepalen",
-       "uitstraling van de persooneen volksleider"
-      ],
-      "c": 2,
-      "u": "«Macht» betekent: het vermogen om het gedrag van anderen te bepalen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het vermogen om het gedrag van anderen te bepalen\"?",
-      "o": [
-       "Criminaliteit",
-       "Sociale ongelijkheid",
-       "Enquête",
-       "Macht"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Macht»: het vermogen om het gedrag van anderen te bepalen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het vermogen om het gedrag van anderen te bepalen\"?",
-      "o": [
-       "Verandering",
-       "Macht",
-       "Beleid",
-       "Criminaliteit"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Macht»: het vermogen om het gedrag van anderen te bepalen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Macht» in?",
-      "o": [
-       "individualisering, meritocratie",
-       "het vermogen om het gedrag van anderen te bepalen",
-       "anomie (Durkheim/Merton), labeling",
-       "de bereidheid lasten met elkaar te delen"
-      ],
-      "c": 1,
-      "u": "«Macht» betekent: het vermogen om het gedrag van anderen te bepalen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Gezag»?",
-      "o": [
-       "een begrip meetbaar maken",
-       "een vragenlijst voor onderzoek",
-       "macht die als legitiem wordt aanvaard",
-       "een concrete gedragsregel"
-      ],
-      "c": 2,
-      "u": "«Gezag» betekent: macht die als legitiem wordt aanvaard.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"macht die als legitiem wordt aanvaard\"?",
-      "o": [
-       "Legitimiteit",
-       "Enquête",
-       "Charismatisch",
-       "Gezag"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Gezag»: macht die als legitiem wordt aanvaard.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"macht die als legitiem wordt aanvaard\"?",
-      "o": [
-       "Pluriforme samenleving",
-       "Cultureel kapitaal",
-       "Gezag",
-       "Beleid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Gezag»: macht die als legitiem wordt aanvaard.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Gezag» in?",
-      "o": [
-       "individualisering, meritocratie",
-       "macht die als legitiem wordt aanvaard",
-       "de bereidheid lasten met elkaar te delen",
-       "een samenleving met veel verschillende groepen"
-      ],
-      "c": 1,
-      "u": "«Gezag» betekent: macht die als legitiem wordt aanvaard.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Belangengroep»?",
-      "o": [
-       "socialisatie, cultuuroverdracht",
-       "een groep die een gedeeld belang behartigt",
-       "het aanleren van normen, waarden en rollen",
-       "het losser komen te staan van vaste verbanden"
-      ],
-      "c": 1,
-      "u": "«Belangengroep» betekent: een groep die een gedeeld belang behartigt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een groep die een gedeeld belang behartigt\"?",
-      "o": [
-       "Gezag",
-       "Binding",
-       "Belangengroep",
-       "Evenredige vertegenwoordiging"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Belangengroep»: een groep die een gedeeld belang behartigt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een groep die een gedeeld belang behartigt\"?",
-      "o": [
-       "Solidariteit",
-       "Sociaal kapitaal",
-       "Macht",
-       "Belangengroep"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Belangengroep»: een groep die een gedeeld belang behartigt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Belangengroep» in?",
-      "o": [
-       "geld en bezit",
-       "een groep die een gedeeld belang behartigt",
-       "multiculturele samenleving",
-       "een staat die burgers tegen risico's beschermt"
-      ],
-      "c": 1,
-      "u": "«Belangengroep» betekent: een groep die een gedeeld belang behartigt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Pluriforme samenleving»?",
-      "o": [
-       "een samenleving met veel verschillende groepen",
-       "een begrip meetbaar maken",
-       "geld en bezit",
-       "een groep die een gedeeld belang behartigt"
-      ],
-      "c": 0,
-      "u": "«Pluriforme samenleving» betekent: een samenleving met veel verschillende groepen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een samenleving met veel verschillende groepen\"?",
-      "o": [
-       "Pluriforme samenleving",
-       "Trias politica",
-       "Maatschappelijk vraagstuk",
-       "Representativiteit"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Pluriforme samenleving»: een samenleving met veel verschillende groepen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een samenleving met veel verschillende groepen\"?",
-      "o": [
-       "Verandering",
-       "Pluriforme samenleving",
-       "Beleid",
-       "Belangengroep"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Pluriforme samenleving»: een samenleving met veel verschillende groepen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Pluriforme samenleving» in?",
-      "o": [
-       "een samenleving met veel verschillende groepen",
-       "je netwerk en contacten",
-       "een staat die burgers tegen risico's beschermt",
-       "een groep die een gedeeld belang behartigt"
-      ],
-      "c": 0,
-      "u": "«Pluriforme samenleving» betekent: een samenleving met veel verschillende groepen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Sociale ongelijkheid»?",
-      "o": [
-       "je netwerk en contacten",
-       "grondrechten, machtscontrole",
-       "stratificatie, mobiliteit, Bourdieu",
-       "zetelverdeling naar rato van de stemmen"
-      ],
-      "c": 2,
-      "u": "«Sociale ongelijkheid» betekent: stratificatie, mobiliteit, Bourdieu.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"stratificatie, mobiliteit, Bourdieu\"?",
-      "o": [
-       "Sociale ongelijkheid",
-       "Evenredige vertegenwoordiging",
-       "Macht",
-       "Individualisering"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Sociale ongelijkheid»: stratificatie, mobiliteit, Bourdieu.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"stratificatie, mobiliteit, Bourdieu\"?",
-      "o": [
-       "Verandering",
-       "Cultureel kapitaal",
-       "Sociale ongelijkheid",
-       "Sociaal kapitaal"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Sociale ongelijkheid»: stratificatie, mobiliteit, Bourdieu.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Sociale ongelijkheid» in?",
-      "o": [
-       "een staat die burgers tegen risico's beschermt",
-       "anomie (Durkheim/Merton), labeling",
-       "je netwerk en contacten",
-       "stratificatie, mobiliteit, Bourdieu"
-      ],
-      "c": 3,
-      "u": "«Sociale ongelijkheid» betekent: stratificatie, mobiliteit, Bourdieu.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Criminaliteit»?",
-      "o": [
-       "je netwerk en contacten",
-       "het vermogen om het gedrag van anderen te bepalen",
-       "het geheel van gedeelde waarden en gewoonten",
-       "anomie (Durkheim/Merton), labeling"
-      ],
-      "c": 3,
-      "u": "«Criminaliteit» betekent: anomie (Durkheim/Merton), labeling.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"anomie (Durkheim/Merton), labeling\"?",
-      "o": [
-       "Verzorgingsstaat",
-       "Criminaliteit",
-       "Vier hoofdconcepten",
-       "Coalitie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Criminaliteit»: anomie (Durkheim/Merton), labeling.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"anomie (Durkheim/Merton), labeling\"?",
-      "o": [
-       "Gezag",
-       "Sociale ongelijkheid",
-       "Criminaliteit",
-       "Integratie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Criminaliteit»: anomie (Durkheim/Merton), labeling.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Criminaliteit» in?",
-      "o": [
-       "anomie (Durkheim/Merton), labeling",
-       "geld en bezit",
-       "stratificatie, mobiliteit, Bourdieu",
-       "de gekozen aanpak van de overheid"
-      ],
-      "c": 0,
-      "u": "«Criminaliteit» betekent: anomie (Durkheim/Merton), labeling.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Integratie»?",
-      "o": [
-       "een steekproef die de populatie afspiegelt",
-       "het verwachte gedrag bij een positie",
-       "het vermogen om het gedrag van anderen te bepalen",
-       "multiculturele samenleving"
-      ],
-      "c": 3,
-      "u": "«Integratie» betekent: multiculturele samenleving.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"multiculturele samenleving\"?",
-      "o": [
-       "Traditioneel",
        "Integratie",
-       "Waarde",
-       "Charismatisch"
+       "Sociale cohesie"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Integratie»: multiculturele samenleving.",
-      "d": 2
+      "d": 2,
+      "u": "Mensen komen losser te staan van kerk, buurt en familie. Dat past bij Individualisering: losser van groepen.",
+      "uo": [
+       "Nee, dat hoort bij Sociale reproductie: ongelijkheid overdragen.",
+       "Klopt: losser van groepen.",
+       "Nee, dat hoort bij Integratie: meedoen met eigen identiteit.",
+       "Nee, dat hoort bij Sociale cohesie: samenhang."
+      ],
+      "uh": "Individualisering: losser van groepen."
      },
      {
-      "v": "Welke term past bij: \"multiculturele samenleving\"?",
+      "v": "Meedoen met behoud van de eigen identiteit. Welk begrip past hierbij?",
       "o": [
-       "Solidariteit",
-       "Beleid",
-       "Verandering",
+       "Sociale cohesie",
+       "Meritocratie",
+       "Integratie",
+       "Straintheorie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Meedoen met behoud van de eigen identiteit. Dat past bij Integratie: meedoen met eigen identiteit.",
+      "uo": [
+       "Nee, dat hoort bij Sociale cohesie: samenhang.",
+       "Nee, dat hoort bij Meritocratie: positie door prestatie.",
+       "Klopt: meedoen met eigen identiteit.",
+       "Nee, dat hoort bij Straintheorie: spanning doelen en middelen."
+      ],
+      "uh": "Integratie: meedoen met eigen identiteit."
+     },
+     {
+      "v": "Een nieuwkomer doet mee én behoudt zijn eigen cultuur. Om welk begrip gaat het?",
+      "o": [
+       "Pluriforme samenleving",
+       "Segregatie",
+       "Individualisering",
        "Integratie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Integratie»: multiculturele samenleving.",
-      "d": 3
+      "d": 2,
+      "u": "Een nieuwkomer doet mee én behoudt zijn eigen cultuur. Dat past bij Integratie: meedoen met eigen identiteit.",
+      "uo": [
+       "Nee, dat hoort bij Pluriforme samenleving: grote diversiteit.",
+       "Nee, dat hoort bij Segregatie: groepen leven gescheiden.",
+       "Nee, dat hoort bij Individualisering: losser van groepen.",
+       "Klopt: meedoen met eigen identiteit."
+      ],
+      "uh": "Integratie: meedoen met eigen identiteit."
      },
      {
-      "v": "Wat houdt «Integratie» in?",
+      "v": "Een samenleving met grote diversiteit. Welk begrip herken je hier?",
       "o": [
-       "multiculturele samenleving",
-       "geld en bezit",
-       "het losser komen te staan van vaste verbanden",
-       "je netwerk en contacten"
+       "Pluriforme samenleving",
+       "Integratie",
+       "Meritocratie",
+       "Individualisering"
       ],
       "c": 0,
-      "u": "«Integratie» betekent: multiculturele samenleving.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verandering»?",
-      "o": [
-       "kennis, opleiding, smaak, taal",
-       "een samenleving met veel verschillende groepen",
-       "multiculturele samenleving",
-       "individualisering, meritocratie"
+      "d": 3,
+      "u": "Een samenleving met grote diversiteit. Dat past bij Pluriforme samenleving: grote diversiteit.",
+      "uo": [
+       "Klopt: grote diversiteit.",
+       "Nee, dat hoort bij Integratie: meedoen met eigen identiteit.",
+       "Nee, dat hoort bij Meritocratie: positie door prestatie.",
+       "Nee, dat hoort bij Individualisering: losser van groepen."
       ],
-      "c": 3,
-      "u": "«Verandering» betekent: individualisering, meritocratie.",
-      "d": 1
+      "uh": "Pluriforme samenleving: grote diversiteit."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"individualisering, meritocratie\"?",
+      "v": "De samenhang in een samenleving. Wat is hier aan de hand?",
       "o": [
-       "Sociale mobiliteit",
-       "Verandering",
-       "Validiteit",
-       "Verzorgingsstaat"
+       "Segregatie",
+       "Sociale cohesie",
+       "Meritocratie",
+       "Pluriforme samenleving"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Verandering»: individualisering, meritocratie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"individualisering, meritocratie\"?",
-      "o": [
-       "Beleid",
-       "Criminaliteit",
-       "Economisch kapitaal",
-       "Verandering"
+      "d": 1,
+      "u": "De samenhang in een samenleving. Dat past bij Sociale cohesie: samenhang.",
+      "uo": [
+       "Nee, dat hoort bij Segregatie: groepen leven gescheiden.",
+       "Klopt: samenhang.",
+       "Nee, dat hoort bij Meritocratie: positie door prestatie.",
+       "Nee, dat hoort bij Pluriforme samenleving: grote diversiteit."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Verandering»: individualisering, meritocratie.",
-      "d": 3
+      "uh": "Sociale cohesie: samenhang."
      },
      {
-      "v": "Wat houdt «Verandering» in?",
+      "v": "De vergelijking met de positie van je ouders. Welk begrip past hierbij?",
       "o": [
-       "multiculturele samenleving",
-       "stratificatie, mobiliteit, Bourdieu",
-       "individualisering, meritocratie",
-       "macht die als legitiem wordt aanvaard"
+       "Pluriforme samenleving",
+       "Sociale reproductie",
+       "Intergenerationele mobiliteit",
+       "Segregatie"
       ],
       "c": 2,
-      "u": "«Verandering» betekent: individualisering, meritocratie.",
-      "d": 3
+      "d": 2,
+      "u": "De vergelijking met de positie van je ouders. Dat past bij Intergenerationele mobiliteit: positie versus die van ouders.",
+      "uo": [
+       "Nee, dat hoort bij Pluriforme samenleving: grote diversiteit.",
+       "Nee, dat hoort bij Sociale reproductie: ongelijkheid overdragen.",
+       "Klopt: positie versus die van ouders.",
+       "Nee, dat hoort bij Segregatie: groepen leven gescheiden."
+      ],
+      "uh": "Intergenerationele mobiliteit: positie versus die van ouders."
      },
      {
-      "v": "Wat betekent «Economisch kapitaal»?",
+      "v": "Kinderen van hoogopgeleiden krijgen vaak weer meer kansen. Om welk begrip gaat het?",
       "o": [
-       "een samenhangend geheel van ideeën over de samenleving",
-       "het beïnvloeden van besluitvormers",
-       "het aanleren van normen, waarden en rollen",
-       "geld en bezit"
+       "Sociale cohesie",
+       "Intergenerationele mobiliteit",
+       "Meritocratie",
+       "Sociale reproductie"
       ],
       "c": 3,
-      "u": "«Economisch kapitaal» betekent: geld en bezit.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"geld en bezit\"?",
-      "o": [
-       "Verhouding",
-       "Solidariteit",
-       "Coalitie",
-       "Economisch kapitaal"
+      "d": 3,
+      "u": "Kinderen van hoogopgeleiden krijgen vaak weer meer kansen. Dat past bij Sociale reproductie: ongelijkheid overdragen.",
+      "uo": [
+       "Nee, dat hoort bij Sociale cohesie: samenhang.",
+       "Nee, dat hoort bij Intergenerationele mobiliteit: positie versus die van ouders.",
+       "Nee, dat hoort bij Meritocratie: positie door prestatie.",
+       "Klopt: ongelijkheid overdragen."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Economisch kapitaal»: geld en bezit.",
-      "d": 2
+      "uh": "Sociale reproductie: ongelijkheid overdragen."
      },
      {
-      "v": "Welke term past bij: \"geld en bezit\"?",
+      "v": "Criminaliteit uit spanning tussen doelen en middelen. Welk begrip herken je hier?",
       "o": [
-       "Sociaal kapitaal",
-       "Solidariteit",
-       "Economisch kapitaal",
-       "Maatschappelijk vraagstuk"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Economisch kapitaal»: geld en bezit.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Economisch kapitaal» in?",
-      "o": [
-       "individualisering, meritocratie",
-       "een groep die een gedeeld belang behartigt",
-       "geld en bezit",
-       "de gekozen aanpak van de overheid"
-      ],
-      "c": 2,
-      "u": "«Economisch kapitaal» betekent: geld en bezit.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Cultureel kapitaal»?",
-      "o": [
-       "een nastrevenswaardig ideaal",
-       "kennis, opleiding, smaak, taal",
-       "macht die als legitiem wordt aanvaard",
-       "individualisering, meritocratie"
-      ],
-      "c": 1,
-      "u": "«Cultureel kapitaal» betekent: kennis, opleiding, smaak, taal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"kennis, opleiding, smaak, taal\"?",
-      "o": [
-       "Norm",
-       "Binding",
-       "Trias politica",
-       "Cultureel kapitaal"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Cultureel kapitaal»: kennis, opleiding, smaak, taal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"kennis, opleiding, smaak, taal\"?",
-      "o": [
-       "Gezag",
-       "Sociale ongelijkheid",
-       "Maatschappelijk vraagstuk",
-       "Cultureel kapitaal"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Cultureel kapitaal»: kennis, opleiding, smaak, taal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Cultureel kapitaal» in?",
-      "o": [
-       "kennis, opleiding, smaak, taal",
-       "stratificatie, mobiliteit, Bourdieu",
-       "het vermogen om het gedrag van anderen te bepalen",
-       "een probleem dat veel mensen raakt"
-      ],
-      "c": 0,
-      "u": "«Cultureel kapitaal» betekent: kennis, opleiding, smaak, taal.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Sociaal kapitaal»?",
-      "o": [
-       "een groep die een gedeeld belang behartigt",
-       "een nastrevenswaardig ideaal",
-       "het geheel van gedeelde waarden en gewoonten",
-       "je netwerk en contacten"
-      ],
-      "c": 3,
-      "u": "«Sociaal kapitaal» betekent: je netwerk en contacten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"je netwerk en contacten\"?",
-      "o": [
-       "Sociaal kapitaal",
-       "Solidariteit",
-       "Trias politica",
-       "Cultureel kapitaal"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Sociaal kapitaal»: je netwerk en contacten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"je netwerk en contacten\"?",
-      "o": [
-       "Criminaliteit",
+       "Straintheorie",
        "Integratie",
        "Individualisering",
-       "Sociaal kapitaal"
+       "Meritocratie"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Sociaal kapitaal»: je netwerk en contacten.",
-      "d": 3
+      "c": 0,
+      "d": 1,
+      "u": "Criminaliteit uit spanning tussen doelen en middelen. Dat past bij Straintheorie: spanning doelen en middelen.",
+      "uo": [
+       "Klopt: spanning doelen en middelen.",
+       "Nee, dat hoort bij Integratie: meedoen met eigen identiteit.",
+       "Nee, dat hoort bij Individualisering: losser van groepen.",
+       "Nee, dat hoort bij Meritocratie: positie door prestatie."
+      ],
+      "uh": "Straintheorie: spanning doelen en middelen."
      },
      {
-      "v": "Wat houdt «Sociaal kapitaal» in?",
+      "v": "Een samenleving waar prestatie de positie bepaalt. Wat is hier aan de hand?",
       "o": [
-       "stratificatie, mobiliteit, Bourdieu",
-       "multiculturele samenleving",
-       "een samenleving met veel verschillende groepen",
-       "je netwerk en contacten"
+       "Sociale reproductie",
+       "Meritocratie",
+       "Pluriforme samenleving",
+       "Straintheorie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een samenleving waar prestatie de positie bepaalt. Dat past bij Meritocratie: positie door prestatie.",
+      "uo": [
+       "Nee, dat hoort bij Sociale reproductie: ongelijkheid overdragen.",
+       "Klopt: positie door prestatie.",
+       "Nee, dat hoort bij Pluriforme samenleving: grote diversiteit.",
+       "Nee, dat hoort bij Straintheorie: spanning doelen en middelen."
+      ],
+      "uh": "Meritocratie: positie door prestatie."
+     },
+     {
+      "v": "Je vergelijkt je eigen positie met die van je ouders. Welk begrip past hierbij?",
+      "o": [
+       "Segregatie",
+       "Sociale reproductie",
+       "Intergenerationele mobiliteit",
+       "Straintheorie"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Je vergelijkt je eigen positie met die van je ouders. Dat past bij Intergenerationele mobiliteit: positie versus die van ouders.",
+      "uo": [
+       "Nee, dat hoort bij Segregatie: groepen leven gescheiden.",
+       "Nee, dat hoort bij Sociale reproductie: ongelijkheid overdragen.",
+       "Klopt: positie versus die van ouders.",
+       "Nee, dat hoort bij Straintheorie: spanning doelen en middelen."
+      ],
+      "uh": "Intergenerationele mobiliteit: positie versus die van ouders."
+     },
+     {
+      "v": "Je komt vooruit door talent en inzet, niet door afkomst. Om welk begrip gaat het?",
+      "o": [
+       "Sociale cohesie",
+       "Pluriforme samenleving",
+       "Individualisering",
+       "Meritocratie"
       ],
       "c": 3,
-      "u": "«Sociaal kapitaal» betekent: je netwerk en contacten.",
-      "d": 3
+      "d": 1,
+      "u": "Je komt vooruit door talent en inzet, niet door afkomst. Dat past bij Meritocratie: positie door prestatie.",
+      "uo": [
+       "Nee, dat hoort bij Sociale cohesie: samenhang.",
+       "Nee, dat hoort bij Pluriforme samenleving: grote diversiteit.",
+       "Nee, dat hoort bij Individualisering: losser van groepen.",
+       "Klopt: positie door prestatie."
+      ],
+      "uh": "Meritocratie: positie door prestatie."
+     },
+     {
+      "v": "Een land met veel culturen, religies en achtergronden. Welk begrip herken je hier?",
+      "o": [
+       "Pluriforme samenleving",
+       "Integratie",
+       "Straintheorie",
+       "Meritocratie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Een land met veel culturen, religies en achtergronden. Dat past bij Pluriforme samenleving: grote diversiteit.",
+      "uo": [
+       "Klopt: grote diversiteit.",
+       "Nee, dat hoort bij Integratie: meedoen met eigen identiteit.",
+       "Nee, dat hoort bij Straintheorie: spanning doelen en middelen.",
+       "Nee, dat hoort bij Meritocratie: positie door prestatie."
+      ],
+      "uh": "Pluriforme samenleving: grote diversiteit."
+     },
+     {
+      "v": "De mate waarin mensen zich met elkaar verbonden voelen. Wat is hier aan de hand?",
+      "o": [
+       "Sociale ongelijkheid",
+       "Sociale cohesie",
+       "Individualisering",
+       "Straintheorie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "De mate waarin mensen zich met elkaar verbonden voelen. Dat past bij Sociale cohesie: samenhang.",
+      "uo": [
+       "Nee, dat hoort bij Sociale ongelijkheid: ongelijke verdeling.",
+       "Klopt: samenhang.",
+       "Nee, dat hoort bij Individualisering: losser van groepen.",
+       "Nee, dat hoort bij Straintheorie: spanning doelen en middelen."
+      ],
+      "uh": "Sociale cohesie: samenhang."
      }
     ],
     "oe": [
@@ -61269,68 +60502,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Maatschappelijk vraagstuk",
-      "d": "een probleem dat veel mensen raakt"
+      "t": "Intergenerationele mobiliteit",
+      "d": "de vergelijking van iemands positie met die van zijn ouders"
      },
      {
-      "t": "Beleid",
-      "d": "de gekozen aanpak van de overheid"
-     },
-     {
-      "t": "Verzorgingsstaat",
-      "d": "een staat die burgers tegen risico's beschermt"
-     },
-     {
-      "t": "Individualisering",
-      "d": "het losser komen te staan van vaste verbanden"
-     },
-     {
-      "t": "Solidariteit",
-      "d": "de bereidheid lasten met elkaar te delen"
-     },
-     {
-      "t": "Macht",
-      "d": "het vermogen om het gedrag van anderen te bepalen"
-     },
-     {
-      "t": "Gezag",
-      "d": "macht die als legitiem wordt aanvaard"
-     },
-     {
-      "t": "Belangengroep",
-      "d": "een groep die een gedeeld belang behartigt"
+      "t": "Straintheorie",
+      "d": "criminaliteit uit de spanning tussen doelen en legale middelen (Merton)"
      },
      {
       "t": "Pluriforme samenleving",
-      "d": "een samenleving met veel verschillende groepen"
-     },
-     {
-      "t": "Sociale ongelijkheid",
-      "d": "stratificatie, mobiliteit, Bourdieu"
-     },
-     {
-      "t": "Criminaliteit",
-      "d": "anomie (Durkheim/Merton), labeling"
+      "d": "een samenleving met grote culturele, religieuze en etnische diversiteit"
      },
      {
       "t": "Integratie",
-      "d": "multiculturele samenleving"
+      "d": "deelnemen aan de samenleving met behoud van de eigen culturele identiteit"
      },
      {
-      "t": "Verandering",
-      "d": "individualisering, meritocratie"
+      "t": "Meritocratie",
+      "d": "een samenleving waarin talent en inzet de positie bepalen, niet afkomst"
      },
      {
-      "t": "Economisch kapitaal",
-      "d": "geld en bezit"
+      "t": "Individualisering",
+      "d": "dat mensen minder afhankelijk worden van vaste groepsverbanden"
      },
      {
-      "t": "Cultureel kapitaal",
-      "d": "kennis, opleiding, smaak, taal"
+      "t": "Sociale reproductie",
+      "d": "de overdracht van ongelijkheid via kapitaal van ouder op kind"
      },
      {
-      "t": "Sociaal kapitaal",
-      "d": "je netwerk en contacten"
+      "t": "Sociale ongelijkheid",
+      "d": "de ongelijke verdeling van welvaart, macht en kansen"
+     },
+     {
+      "t": "Segregatie",
+      "d": "het gescheiden leven van groepen in de samenleving"
+     },
+     {
+      "t": "Sociale cohesie",
+      "d": "de samenhang tussen mensen in een samenleving"
      }
     ]
    }
