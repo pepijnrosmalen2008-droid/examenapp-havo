@@ -27199,730 +27199,615 @@ var VAKKEN = [
      "Veiligheid in het laboratorium",
      "Mol-berekeningen in onderzoekscontext"
     ],
-    "sam": "<div class=\"sam-head\">Onderzoeksvaardigheden scheikunde</div><ul><li><strong>Hypothese</strong>: voorspelling op basis van een theorie, toetsbaar met een experiment. Formuleer als: \"Als [onafhankelijke variabele verandert], dan [verwacht effect op afhankelijke variabele], omdat [theorie].\"</li><li><strong>Variabelen</strong>: onafhankelijk = de variabele die jij verandert. Afhankelijk = wat je meet. Constant = alles wat je gelijkhoudt om een eerlijke vergelijking te maken.</li><li><strong>Controle-experiment</strong>: identieke opzet maar zonder de onafhankelijke variabele (of op 0 ingesteld). Dient als vergelijkingsreferentie.</li><li><strong>Betrouwbaarheid vs. validiteit</strong>: betrouwbaar = herhaalde metingen geven consistent dezelfde uitkomst. Valide = je meet daadwerkelijk wat je wilt meten.</li></ul><div class=\"sam-head\">Grafieken en meetwaarden</div><ul><li><strong>Lineair verband</strong>: y = ax + b. Helling a = ΔY/ΔX. Doorsnijdt y-as bij b. Bijv. concentratie vs. reactiesnelheid bij lage concentraties.</li><li><strong>Invers verband</strong>: y = a/x, hyperbolisch. Bijv. druk × volume = constant (wet van Boyle).</li><li><strong>Significante cijfers</strong>: bij berekeningen: gebruik het aantal sig. cijfers van de minst nauwkeurige meting. Bijv. 12,3 × 4 = 49 (niet 49,2).</li><li><strong>Eenheden</strong>: altijd vermelden. Mol (mol), concentratie (mol/L of M), massa (g of kg), volume (L of mL), druk (Pa of atm).</li></ul><div class=\"sam-head\">Veiligheid</div><ul><li>GHS-pictogrammen kennen: vlam (ontvlambaar), doodshoofd (giftig), uitroepteken (irriterend), corrosie (bijtend).</li><li>Bij zuur-basewerk: altijd zuur aan water toevoegen (nooit andersom) - exotherme reactie.</li><li>Afzuigkast bij vluchtige/giftige stoffen. Veiligheidsbril altijd.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Bij scheikundig onderzoek stel je de <strong>onafhankelijke variabele</strong> in, meet je de <strong>afhankelijke</strong>, en gebruik je een <strong>controle-experiment</strong>. Je werkt veilig met <strong>GHS-pictogrammen</strong>, rekent met de concentratie in <strong>mol/L</strong> en let op <strong>significante cijfers</strong>.</div><div class=\"sam-head\">1. Onderzoek opzetten</div><p>De <strong>onafhankelijke variabele</strong> verander je bewust; de <strong>afhankelijke variabele</strong> meet je. Een <strong>controle-experiment</strong> is een referentie zonder de testvariabele. Een goede <strong>hypothese</strong> luidt: als [OV], dan [AV verandert zo], omdat [theorie]. Meerdere meetpunten maken een trend betrouwbaarder.</p><div class=\"sam-head\">2. Veilig rekenen</div><p>Een <strong>GHS-pictogram</strong> met een vlam betekent ontvlambaar. Bij het verdunnen van geconcentreerd zwavelzuur voeg je <strong>zuur aan water</strong> toe, nooit andersom. De concentratie geef je in <strong>mol/L</strong> (molariteit). Het aantal <strong>significante cijfers</strong> zegt hoe nauwkeurig een getal is; 0,0340 heeft er drie.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Onafhankelijke variabele</div><div class=\"sam-definitie-body\">de variabele die de onderzoeker bewust verandert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Afhankelijke variabele</div><div class=\"sam-definitie-body\">de variabele die je meet als reactie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Controle-experiment</div><div class=\"sam-definitie-body\">een referentie zonder de testvariabele om effecten te vergelijken.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hypothese</div><div class=\"sam-definitie-body\">een toetsbare verwachting: als OV, dan AV, omdat theorie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">GHS-pictogram</div><div class=\"sam-definitie-body\">een gevaarsymbool op een etiket, zoals een vlam voor ontvlambaar.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Lineair verband</div><div class=\"sam-definitie-body\">een rechte lijn door de oorsprong: y is evenredig met x.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Molariteit</div><div class=\"sam-definitie-body\">de concentratie in mol opgeloste stof per liter (mol/L).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Significante cijfers</div><div class=\"sam-definitie-body\">de cijfers die de nauwkeurigheid van een meetwaarde aangeven.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Betrouwbaarheid</div><div class=\"sam-definitie-body\">de mate waarin herhaling dezelfde uitkomst geeft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verdunnen</div><div class=\"sam-definitie-body\">het verlagen van de concentratie door water toe te voegen.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Onafhankelijke variabele»</b> is bewust veranderd, terwijl <b>«Afhankelijke variabele»</b> gemeten reactie is. <b>«Controle-experiment»</b> is referentie zonder testvariabele, terwijl <b>«Hypothese»</b> toetsbare verwachting is. <b>«GHS-pictogram»</b> is gevaarsymbool, terwijl <b>«Molariteit»</b> mol per liter is. <b>«Lineair verband»</b> is y = ax, terwijl <b>«Molariteit»</b> mol per liter is.</div>",
     "sv": [
      {
       "v": "Welke variabele verandert de onderzoeker bewust in een experiment?",
       "o": [
-       "De onafhankelijke variabele",
-       "De afhankelijke variabele",
-       "De constante variabele",
-       "De storende variabele"
+       "de onafhankelijke variabele",
+       "de afhankelijke variabele",
+       "de storende variabele",
+       "de controlegroep"
       ],
       "c": 0,
-      "u": "Onafhankelijk = je past het zelf aan. Afhankelijk = je meet het resultaat. Constant = je houdt het gelijk. Storend = ongewenste invloed die je probeert uit te sluiten."
+      "d": 2,
+      "u": "De OV stel je zelf in.",
+      "uo": [
+       "Klopt: de OV stel je zelf in.",
+       "Nee, die meet je juist.",
+       "Nee, die houd je constant.",
+       "Nee, dat is een groep."
+      ],
+      "uh": "Onafhankelijke variabele: bewust veranderd."
      },
      {
       "v": "Wat is het doel van een controle-experiment in scheikundig onderzoek?",
       "o": [
-       "Meer meetpunten toevoegen aan de grafiek",
-       "Een referentie zonder de testvarabele om effecten te vergelijken",
-       "De nauwkeurigheid van de meetinstrumenten testen",
-       "De hypothese bevestigen voor de meting begint"
+       "de proef sneller maken",
+       "een referentie zonder de testvariabele bieden om effecten te vergelijken",
+       "de hypothese bewijzen",
+       "de gevaren vergroten"
       ],
       "c": 1,
-      "u": "Controle-experiment = identieke opzet, maar zonder de onafhankelijke variabele (of nulwaarde). Het laat zien wat er zonder behandeling gebeurt, zodat je het effect kunt isoleren."
+      "d": 2,
+      "u": "De controle is de vergelijkingsbasis.",
+      "uo": [
+       "Nee, dat is niet het doel.",
+       "Klopt: de controle is de vergelijkingsbasis.",
+       "Nee, je toetst.",
+       "Nee, dat is onzin."
+      ],
+      "uh": "Controle-experiment: referentie zonder testvariabele."
      },
      {
       "v": "Hoe formuleer je een goede scheikundige hypothese?",
       "o": [
-       "Een bewering zonder onderbouwing of verklaring",
-       "Als [onafh. variabele], dan [afh. variabele verandert zo], omdat [theorie]",
-       "Een samenvatting van de theorie uit het boek",
-       "Een lijst van benodigde materialen voor het experiment"
+       "de uitkomst achteraf opschrijven",
+       "gewoon een vraag stellen",
+       "als [OV], dan [AV verandert zo], omdat [theorie]",
+       "een mening geven"
       ],
-      "c": 1,
-      "u": "Goed hypotheseformaat: \"Als ik de temperatuur verhoog, dan neemt de reactiesnelheid toe, omdat hogere temperatuur leidt tot meer botsingen boven de activeringsenergie.\" Toetsbaar + verklaring."
+      "c": 2,
+      "d": 3,
+      "u": "Die vorm is toetsbaar en onderbouwd.",
+      "uo": [
+       "Nee, dat is niet vooraf.",
+       "Nee, een hypothese is een verwachting.",
+       "Klopt: die vorm is toetsbaar en onderbouwd.",
+       "Nee, een mening is niet toetsbaar."
+      ],
+      "uh": "Hypothese: als OV, dan AV, omdat theorie."
      },
      {
-      "v": "Wat betekent het GHS-pictogram met een vlam op een chemicaliën-etiket?",
+      "v": "Wat betekent een GHS-pictogram met een vlam?",
       "o": [
-       "De stof is giftig bij inslikken",
-       "De stof is ontvlambaar of brandbaar",
-       "De stof is bijtend voor huid of ogen",
-       "De stof veroorzaakt milieuschade"
+       "de stof is radioactief",
+       "de stof is bijtend",
+       "de stof is giftig",
+       "de stof is ontvlambaar of brandbaar"
       ],
-      "c": 1,
-      "u": "Vlam = ontvlambaar/brandbaar. Doodshoofd = acuut giftig. Corrosie-pictogram = bijtend. Uitroepteken = irriterend/schadelijk. Leer alle GHS-pictogrammen voor het CE."
+      "c": 3,
+      "d": 2,
+      "u": "Een vlam waarschuwt voor brandgevaar.",
+      "uo": [
+       "Nee, dat is een ander symbool.",
+       "Nee, dat is een ander symbool.",
+       "Nee, dat is een doodshoofd.",
+       "Klopt: een vlam waarschuwt voor brandgevaar."
+      ],
+      "uh": "GHS-vlam: ontvlambaar."
      },
      {
-      "v": "Een grafiek toont een rechte lijn door de oorsprong. Welk verband beschrijft dit?",
+      "v": "Een grafiek toont een rechte lijn door de oorsprong. Welk verband is dit?",
       "o": [
-       "Invers verband (y = a/x, hyperbolisch)",
-       "Lineair verband: y is evenredig met x (y = ax)",
-       "Exponentieel verband (y = a·bˣ, stijgend)",
-       "Geen verband (willekeurige spreiding)"
+       "een lineair verband: y is evenredig met x (y = ax)",
+       "een exponentieel verband",
+       "een omgekeerd evenredig verband",
+       "geen verband"
       ],
-      "c": 1,
-      "u": "Rechte lijn door de oorsprong = direct evenredig: y = ax. Helling = a = ΔY/ΔX. Bij invers verband (y=a/x) krijg je een hyperbool. Lineair maar niet door de oorsprong: y = ax + b."
+      "c": 0,
+      "d": 2,
+      "u": "Recht door de oorsprong is y = ax.",
+      "uo": [
+       "Klopt: recht door de oorsprong is y = ax.",
+       "Nee, dat is een kromme.",
+       "Nee, dat is een dalende kromme.",
+       "Nee, er is duidelijk verband."
+      ],
+      "uh": "Rechte lijn door de oorsprong: y = ax."
      },
      {
-      "v": "Bij welke handeling in het lab is het essentieel om zuur aan water toe te voegen en NIET andersom?",
+      "v": "Bij welke handeling voeg je zuur aan water toe en NIET andersom?",
       "o": [
-       "Bij het oplossen van keukenzout in water",
-       "Bij het verdunnen van geconcentreerd zwavelzuur",
-       "Bij het filtreren van een bezinksel",
-       "Bij het afwegen van poeders op een weegschaal"
+       "bij het opwarmen van water",
+       "bij het verdunnen van geconcentreerd zwavelzuur",
+       "bij het afkoelen van een oplossing",
+       "bij het wegen van een stof"
       ],
       "c": 1,
-      "u": "Geconcentreerd zuur aan water: de exotherme oplossing-reactie verwarmt het grote volume water geleidelijk. Andersom (water aan zuur): het kleine volume zuur verhit explosief - spatgevaar met bijtend zuur."
+      "d": 3,
+      "u": "Zuur bij water voorkomt spatten door de warmte.",
+      "uo": [
+       "Nee, dat heeft er niets mee te maken.",
+       "Klopt: zuur bij water voorkomt spatten door de warmte.",
+       "Nee, dat is niet relevant.",
+       "Nee, dat is geen menghandeling."
+      ],
+      "uh": "Verdunnen: zuur bij water."
      },
      {
       "v": "Welke eenheid gebruik je voor concentratie in scheikundige berekeningen?",
       "o": [
-       "g/L (gram per liter)",
-       "mol/L (molariteit, M)",
-       "mg/dL (medische eenheid)",
-       "g/mol (molaire massa)"
-      ],
-      "c": 1,
-      "u": "Concentratie c = n/V in mol/L (ook geschreven als M of molar). g/mol is de molaire massa. g/L is massa-concentratie, niet standaard in stoichiometrie."
-     },
-     {
-      "v": "Waarom is het essentieel om meerdere meetpunten te gebruiken bij het opstellen van een grafiek?",
-      "o": [
-       "Om de trend betrouwbaarder te bepalen en toevalsfouten te middelen",
-       "Om de grafiek mooier te maken",
-       "Eén meetpunt is voldoende als de hypothese klopt",
-       "Meer punten bewijzen de hypothese altijd juist"
-      ],
-      "c": 0,
-      "u": "Meer meetpunten → betrouwbaardere trendlijn. Toevalsfouten middelen uit. Een grafiek met slechts twee punten biedt geen inzicht in het verloop van het verband."
-     },
-     {
-      "v": "Wat is een significante cijfer en hoeveel significante cijfers heeft het getal 0,0340?",
-      "o": [
-       "3 significante cijfers (3, 4 en 0 achter het getal)",
-       "5 significante cijfers (alle cijfers inclusief nullen)",
-       "2 significante cijfers (3 en 4)",
-       "1 significant cijfer (de 3)"
-      ],
-      "c": 0,
-      "u": "Significante cijfers: tellen vanaf het eerste niet-nul cijfer. 0,0340: 3, 4, 0 = 3 sig. cijfers. De nullen voor de 3 zijn niet significant."
-     },
-     {
-      "v": "Wat betekent «Nauwkeurigheid»?",
-      "o": [
-       "zelfde formule, andere structuur",
-       "een geurstof uit een zuur en een alcohol",
-       "hoe dicht een meting bij de werkelijke waarde ligt",
-       "additie, substitutie, ester­vorming, hydrolyse"
+       "meter",
+       "gram",
+       "mol/L (molariteit)",
+       "graden Celsius"
       ],
       "c": 2,
-      "u": "«Nauwkeurigheid» betekent: hoe dicht een meting bij de werkelijke waarde ligt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hoe dicht een meting bij de werkelijke waarde ligt\"?",
-      "o": [
-       "Groene chemie",
-       "Exotherm",
-       "Nauwkeurigheid",
-       "Atoom"
+      "d": 2,
+      "u": "Concentratie is mol per liter.",
+      "uo": [
+       "Nee, dat is lengte.",
+       "Nee, dat is massa.",
+       "Klopt: concentratie is mol per liter.",
+       "Nee, dat is temperatuur."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Nauwkeurigheid»: hoe dicht een meting bij de werkelijke waarde ligt.",
-      "d": 2
+      "uh": "Concentratie: mol/L."
      },
      {
-      "v": "Welke term past bij: \"hoe dicht een meting bij de werkelijke waarde ligt\"?",
+      "v": "Waarom gebruik je meerdere meetpunten bij het opstellen van een grafiek?",
       "o": [
-       "Molaire massa",
-       "Nauwkeurigheid",
-       "Hypothese",
-       "Concentratie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Nauwkeurigheid»: hoe dicht een meting bij de werkelijke waarde ligt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Nauwkeurigheid» in?",
-      "o": [
-       "een toetsbare voorspelling",
-       "hoe dicht een meting bij de werkelijke waarde ligt",
-       "een combinatie van meerdere stoffen",
-       "het scheiden van vaste stof en vloeistof"
-      ],
-      "c": 1,
-      "u": "«Nauwkeurigheid» betekent: hoe dicht een meting bij de werkelijke waarde ligt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Hypothese»?",
-      "o": [
-       "toestand waarin heen- en terugreactie even snel gaan",
-       "geeft het aantal atomen per soort in een molecuul",
-       "onafhankelijk, afhankelijk, constant",
-       "een toetsbare voorspelling"
+       "omdat het verplicht is",
+       "om de proef sneller te maken",
+       "om minder te hoeven rekenen",
+       "om de trend betrouwbaarder te bepalen en toevalsfouten te middelen"
       ],
       "c": 3,
-      "u": "«Hypothese» betekent: een toetsbare voorspelling.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een toetsbare voorspelling\"?",
-      "o": [
-       "Mol",
-       "Mengsel",
-       "Hypothese",
-       "Alkeen"
+      "d": 3,
+      "u": "Meer punten geven een betrouwbaarder lijn.",
+      "uo": [
+       "Nee, er is een inhoudelijke reden.",
+       "Nee, het kost juist meer tijd.",
+       "Nee, je rekent juist meer.",
+       "Klopt: meer punten geven een betrouwbaarder lijn."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Hypothese»: een toetsbare voorspelling.",
-      "d": 2
+      "uh": "Meer meetpunten: betrouwbaarder trend."
      },
      {
-      "v": "Welke term past bij: \"een toetsbare voorspelling\"?",
+      "v": "Hoeveel significante cijfers heeft het getal 0,0340?",
       "o": [
-       "Hypothese",
-       "Molaire massa",
-       "Controle-experiment",
-       "Mengsel"
+       "3",
+       "2",
+       "4",
+       "5"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Hypothese»: een toetsbare voorspelling.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Hypothese» in?",
-      "o": [
-       "een toetsbare voorspelling",
-       "symbool dat het gevaar van een stof aangeeft",
-       "het scheiden van vaste stof en vloeistof",
-       "hoeveelheid opgeloste stof per liter (mol/L)"
+      "d": 3,
+      "u": "3, 4 en de afsluitende 0 tellen mee.",
+      "uo": [
+       "Klopt: 3, 4 en de afsluitende 0 tellen mee.",
+       "Nee, de laatste 0 telt ook.",
+       "Nee, de voorloopnullen tellen niet.",
+       "Nee, dat is te veel."
       ],
-      "c": 0,
-      "u": "«Hypothese» betekent: een toetsbare voorspelling.",
-      "d": 3
+      "uh": "0,0340: drie significante cijfers."
      },
      {
-      "v": "Wat betekent «Zuivere stof»?",
+      "v": "Wat is de afhankelijke variabele?",
       "o": [
-       "een stof met maar één soort deeltjes",
-       "kloppende vergelijkingen; mol, massa, concentratie",
-       "positieve ionen in een zee van vrije elektronen",
-       "reactie met zuurstof waarbij CO2 en water ontstaan"
-      ],
-      "c": 0,
-      "u": "«Zuivere stof» betekent: een stof met maar één soort deeltjes.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een stof met maar één soort deeltjes\"?",
-      "o": [
-       "Zure regen",
-       "Zuivere stof",
-       "Ester",
-       "Molverhouding"
+       "de variabele die je zelf instelt",
+       "de variabele die je meet",
+       "een gevaarsymbool",
+       "een controlegroep"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Zuivere stof»: een stof met maar één soort deeltjes.",
-      "d": 2
+      "d": 2,
+      "u": "De AV meet je als reactie.",
+      "uo": [
+       "Nee, dat is de OV.",
+       "Klopt: de AV meet je als reactie.",
+       "Nee, dat is een pictogram.",
+       "Nee, dat is een groep."
+      ],
+      "uh": "Afhankelijke variabele: gemeten reactie."
      },
      {
-      "v": "Welke term past bij: \"een stof met maar één soort deeltjes\"?",
+      "v": "Wat is molariteit?",
       "o": [
+       "het aantal deeltjes in een gram",
+       "de massa van een stof",
+       "het aantal mol opgeloste stof per liter oplossing",
+       "de temperatuur van een oplossing"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Molariteit is mol/L.",
+      "uo": [
+       "Nee, dat is iets anders.",
+       "Nee, dat is massa.",
+       "Klopt: molariteit is mol/L.",
+       "Nee, dat is temperatuur."
+      ],
+      "uh": "Molariteit: mol per liter."
+     },
+     {
+      "v": "Waarom voer je een controle-experiment uit?",
+      "o": [
+       "om de hypothese te verzinnen",
+       "om de proef gevaarlijker te maken",
+       "om tijd te besparen",
+       "om de effecten van de testvariabele te kunnen vergelijken"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Zonder referentie weet je niet wat het effect is.",
+      "uo": [
+       "Nee, de hypothese staat al vast.",
+       "Nee, dat is onzin.",
+       "Nee, het kost juist tijd.",
+       "Klopt: zonder referentie weet je niet wat het effect is."
+      ],
+      "uh": "Controle-experiment: effecten vergelijken."
+     },
+     {
+      "v": "De reactiesnelheid die je als resultaat meet. Welk begrip past hierbij?",
+      "o": [
+       "Afhankelijke variabele",
        "GHS-pictogram",
-       "Zuivere stof",
-       "Concentratie",
+       "Controle-experiment",
+       "Significante cijfers"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De reactiesnelheid die je als resultaat meet. Dat past bij Afhankelijke variabele: gemeten reactie.",
+      "uo": [
+       "Klopt: gemeten reactie.",
+       "Nee, dat hoort bij GHS-pictogram: gevaarsymbool.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder testvariabele.",
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid."
+      ],
+      "uh": "Afhankelijke variabele: gemeten reactie."
+     },
+     {
+      "v": "Het getal 0,0340 heeft drie betekenisvolle cijfers. Om welk begrip gaat het?",
+      "o": [
+       "Verdunnen",
+       "Significante cijfers",
+       "Hypothese",
+       "Controle-experiment"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het getal 0,0340 heeft drie betekenisvolle cijfers. Dat past bij Significante cijfers: nauwkeurigheid.",
+      "uo": [
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water.",
+       "Klopt: nauwkeurigheid.",
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder testvariabele."
+      ],
+      "uh": "Significante cijfers: nauwkeurigheid."
+     },
+     {
+      "v": "De cijfers die de nauwkeurigheid aangeven. Welk begrip herken je hier?",
+      "o": [
+       "Hypothese",
+       "Verdunnen",
+       "Significante cijfers",
+       "Controle-experiment"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De cijfers die de nauwkeurigheid aangeven. Dat past bij Significante cijfers: nauwkeurigheid.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water.",
+       "Klopt: nauwkeurigheid.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder testvariabele."
+      ],
+      "uh": "Significante cijfers: nauwkeurigheid."
+     },
+     {
+      "v": "De herhaalbaarheid van een meting. Wat is hier aan de hand?",
+      "o": [
+       "Hypothese",
+       "Verdunnen",
+       "Lineair verband",
+       "Betrouwbaarheid"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De herhaalbaarheid van een meting. Dat past bij Betrouwbaarheid: herhaalbaarheid.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water.",
+       "Nee, dat hoort bij Lineair verband: y = ax.",
+       "Klopt: herhaalbaarheid."
+      ],
+      "uh": "Betrouwbaarheid: herhaalbaarheid."
+     },
+     {
+      "v": "Herhaal je de meting, dan krijg je dezelfde uitkomst. Welk begrip past hierbij?",
+      "o": [
+       "Betrouwbaarheid",
+       "Verdunnen",
+       "Lineair verband",
        "Hypothese"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Zuivere stof»: een stof met maar één soort deeltjes.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Zuivere stof» in?",
-      "o": [
-       "een stof met maar één soort deeltjes",
-       "een combinatie van meerdere stoffen",
-       "hoe dicht een meting bij de werkelijke waarde ligt",
-       "de massa van één mol stof (g/mol)"
-      ],
       "c": 0,
-      "u": "«Zuivere stof» betekent: een stof met maar één soort deeltjes.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Mengsel»?",
-      "o": [
-       "een reactie die warmte afgeeft",
-       "reactie van een zuur met een base tot zout en water",
-       "een combinatie van meerdere stoffen",
-       "een atoom of groep wordt vervangen door een andere"
+      "d": 1,
+      "u": "Herhaal je de meting, dan krijg je dezelfde uitkomst. Dat past bij Betrouwbaarheid: herhaalbaarheid.",
+      "uo": [
+       "Klopt: herhaalbaarheid.",
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water.",
+       "Nee, dat hoort bij Lineair verband: y = ax.",
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting."
       ],
-      "c": 2,
-      "u": "«Mengsel» betekent: een combinatie van meerdere stoffen.",
-      "d": 1
+      "uh": "Betrouwbaarheid: herhaalbaarheid."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een combinatie van meerdere stoffen\"?",
+      "v": "De concentratie in mol per liter. Om welk begrip gaat het?",
       "o": [
-       "Zuur",
-       "Circulaire economie",
-       "Milieu",
-       "Mengsel"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Mengsel»: een combinatie van meerdere stoffen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een combinatie van meerdere stoffen\"?",
-      "o": [
-       "Molaire massa",
-       "Mengsel",
-       "Filtratie",
-       "Herhaalmetingen"
+       "Hypothese",
+       "Molariteit",
+       "Verdunnen",
+       "Afhankelijke variabele"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Mengsel»: een combinatie van meerdere stoffen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Mengsel» in?",
-      "o": [
-       "hoeveelheid opgeloste stof per liter (mol/L)",
-       "een combinatie van meerdere stoffen",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
-       "gemiddelde; betrouwbaarheid"
+      "d": 1,
+      "u": "De concentratie in mol per liter. Dat past bij Molariteit: mol per liter.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Klopt: mol per liter.",
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water.",
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie."
       ],
-      "c": 1,
-      "u": "«Mengsel» betekent: een combinatie van meerdere stoffen.",
-      "d": 3
+      "uh": "Molariteit: mol per liter."
      },
      {
-      "v": "Wat betekent «Filtratie»?",
+      "v": "Een recht evenredig verband. Welk begrip herken je hier?",
       "o": [
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "aminogroepamine",
-       "positieve ionen in een zee van vrije elektronen",
-       "het scheiden van vaste stof en vloeistof"
-      ],
-      "c": 3,
-      "u": "«Filtratie» betekent: het scheiden van vaste stof en vloeistof.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het scheiden van vaste stof en vloeistof\"?",
-      "o": [
-       "Filtratie",
-       "Veiligheid",
-       "Molecuulformule",
-       "Concentratie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Filtratie»: het scheiden van vaste stof en vloeistof.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het scheiden van vaste stof en vloeistof\"?",
-      "o": [
-       "Herhaalmetingen",
-       "Variabelen",
-       "Molaire massa",
-       "Filtratie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Filtratie»: het scheiden van vaste stof en vloeistof.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Filtratie» in?",
-      "o": [
-       "het scheiden van vaste stof en vloeistof",
-       "GHS-pictogrammen lezen",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
-       "een proef zonder de onderzochte factor, als referentie"
-      ],
-      "c": 0,
-      "u": "«Filtratie» betekent: het scheiden van vaste stof en vloeistof.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Mol»?",
-      "o": [
-       "reactie met zuurstof waarbij CO2 en water ontstaan",
-       "binding tussen tegengesteld geladen ionen",
-       "protonen, neutronen, elektronen; periodiek systeem",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)"
-      ],
-      "c": 3,
-      "u": "«Mol» betekent: rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)\"?",
-      "o": [
-       "Alkaan",
-       "Covalente binding",
-       "Biobrandstof",
-       "Mol"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Mol»: rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)\"?",
-      "o": [
-       "Mol",
-       "Concentratie",
-       "Filtratie",
-       "Nauwkeurigheid"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Mol»: rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Mol» in?",
-      "o": [
-       "een toetsbare voorspelling",
-       "GHS-pictogrammen lezen",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
-       "de massa van één mol stof (g/mol)"
+       "Significante cijfers",
+       "Molariteit",
+       "Lineair verband",
+       "Afhankelijke variabele"
       ],
       "c": 2,
-      "u": "«Mol» betekent: rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Molaire massa»?",
-      "o": [
-       "de massa van één mol stof (g/mol)",
-       "Haber-Bosch; compromis rendement/snelheid",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
-       "atomen worden aan een dubbele binding toegevoegd"
+      "d": 3,
+      "u": "Een recht evenredig verband. Dat past bij Lineair verband: y = ax.",
+      "uo": [
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid.",
+       "Nee, dat hoort bij Molariteit: mol per liter.",
+       "Klopt: y = ax.",
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie."
       ],
-      "c": 0,
-      "u": "«Molaire massa» betekent: de massa van één mol stof (g/mol).",
-      "d": 1
+      "uh": "Lineair verband: y = ax."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de massa van één mol stof (g/mol)\"?",
-      "o": [
-       "Reactietypen",
-       "Zuivere stof",
-       "Molaire massa",
-       "Biobrandstof"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Molaire massa»: de massa van één mol stof (g/mol).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de massa van één mol stof (g/mol)\"?",
+      "v": "Een rechte lijn door de oorsprong: y is evenredig met x. Wat is hier aan de hand?",
       "o": [
        "Controle-experiment",
+       "Verdunnen",
        "GHS-pictogram",
-       "Filtratie",
-       "Molaire massa"
+       "Lineair verband"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Molaire massa»: de massa van één mol stof (g/mol).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Molaire massa» in?",
-      "o": [
-       "GHS-pictogrammen lezen",
-       "een toetsbare voorspelling",
-       "symbool dat het gevaar van een stof aangeeft",
-       "de massa van één mol stof (g/mol)"
+      "d": 1,
+      "u": "Een rechte lijn door de oorsprong: y is evenredig met x. Dat past bij Lineair verband: y = ax.",
+      "uo": [
+       "Nee, dat hoort bij Controle-experiment: referentie zonder testvariabele.",
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water.",
+       "Nee, dat hoort bij GHS-pictogram: gevaarsymbool.",
+       "Klopt: y = ax."
       ],
-      "c": 3,
-      "u": "«Molaire massa» betekent: de massa van één mol stof (g/mol).",
-      "d": 3
+      "uh": "Lineair verband: y = ax."
      },
      {
-      "v": "Wat betekent «Concentratie»?",
+      "v": "Een toetsbare verwachting vooraf. Welk begrip past hierbij?",
       "o": [
-       "hoeveelheid opgeloste stof per liter (mol/L)",
-       "een stof die met kleur de zuurgraad aangeeft",
-       "CO₂ (verbranding fossiel)opwarming klimaat",
-       "additie, substitutie, ester­vorming, hydrolyse"
+       "Hypothese",
+       "Controle-experiment",
+       "Onafhankelijke variabele",
+       "Verdunnen"
       ],
       "c": 0,
-      "u": "«Concentratie» betekent: hoeveelheid opgeloste stof per liter (mol/L).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hoeveelheid opgeloste stof per liter (mol/L)\"?",
-      "o": [
-       "Concentratie",
-       "Oplossing",
-       "Substitutiereactie",
-       "Isomeren"
+      "d": 3,
+      "u": "Een toetsbare verwachting vooraf. Dat past bij Hypothese: toetsbare verwachting.",
+      "uo": [
+       "Klopt: toetsbare verwachting.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder testvariabele.",
+       "Nee, dat hoort bij Onafhankelijke variabele: bewust veranderd.",
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Concentratie»: hoeveelheid opgeloste stof per liter (mol/L).",
-      "d": 2
+      "uh": "Hypothese: toetsbare verwachting."
      },
      {
-      "v": "Welke term past bij: \"hoeveelheid opgeloste stof per liter (mol/L)\"?",
+      "v": "Je verwacht: als de temperatuur stijgt, dan gaat de reactie sneller. Om welk begrip gaat het?",
       "o": [
-       "Herhaalmetingen",
-       "Controle-experiment",
-       "Concentratie",
-       "Mengsel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Concentratie»: hoeveelheid opgeloste stof per liter (mol/L).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Concentratie» in?",
-      "o": [
-       "onafhankelijk, afhankelijk, constant",
-       "een toetsbare voorspelling",
-       "symbool dat het gevaar van een stof aangeeft",
-       "hoeveelheid opgeloste stof per liter (mol/L)"
-      ],
-      "c": 3,
-      "u": "«Concentratie» betekent: hoeveelheid opgeloste stof per liter (mol/L).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Controle-experiment»?",
-      "o": [
-       "GHS-pictogrammen lezen",
-       "thermoplast vs. thermoharder; recyclen",
-       "een proef zonder de onderzochte factor, als referentie",
-       "een geurstof uit een zuur en een alcohol"
-      ],
-      "c": 2,
-      "u": "«Controle-experiment» betekent: een proef zonder de onderzochte factor, als referentie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een proef zonder de onderzochte factor, als referentie\"?",
-      "o": [
-       "Reactiesnelheid",
-       "Mengsel",
-       "Controle-experiment",
-       "Molverhouding"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Controle-experiment»: een proef zonder de onderzochte factor, als referentie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een proef zonder de onderzochte factor, als referentie\"?",
-      "o": [
-       "Herhaalmetingen",
-       "Mengsel",
-       "Controle-experiment",
-       "Hypothese"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Controle-experiment»: een proef zonder de onderzochte factor, als referentie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Controle-experiment» in?",
-      "o": [
-       "gemiddelde; betrouwbaarheid",
-       "een proef zonder de onderzochte factor, als referentie",
-       "symbool dat het gevaar van een stof aangeeft",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)"
-      ],
-      "c": 1,
-      "u": "«Controle-experiment» betekent: een proef zonder de onderzochte factor, als referentie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «GHS-pictogram»?",
-      "o": [
-       "een stof met maar één soort deeltjes",
-       "symbool dat het gevaar van een stof aangeeft",
-       "een groot molecuul uit vele monomeren",
-       "een koolstofverbinding met een OH-groep"
-      ],
-      "c": 1,
-      "u": "«GHS-pictogram» betekent: symbool dat het gevaar van een stof aangeeft.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"symbool dat het gevaar van een stof aangeeft\"?",
-      "o": [
-       "Grotere verdelingsgraad",
-       "Grondstof",
        "GHS-pictogram",
-       "Veiligheid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «GHS-pictogram»: symbool dat het gevaar van een stof aangeeft.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"symbool dat het gevaar van een stof aangeeft\"?",
-      "o": [
-       "Concentratie",
-       "Mengsel",
-       "GHS-pictogram",
-       "Hypothese"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «GHS-pictogram»: symbool dat het gevaar van een stof aangeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «GHS-pictogram» in?",
-      "o": [
-       "GHS-pictogrammen lezen",
-       "hoeveelheid opgeloste stof per liter (mol/L)",
-       "symbool dat het gevaar van een stof aangeeft",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)"
-      ],
-      "c": 2,
-      "u": "«GHS-pictogram» betekent: symbool dat het gevaar van een stof aangeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Variabelen»?",
-      "o": [
-       "een atoom of groep wordt vervangen door een andere",
-       "onafhankelijk, afhankelijk, constant",
-       "aminogroepamine",
-       "een groepje gebonden atomen"
+       "Hypothese",
+       "Onafhankelijke variabele",
+       "Verdunnen"
       ],
       "c": 1,
-      "u": "«Variabelen» betekent: onafhankelijk, afhankelijk, constant.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"onafhankelijk, afhankelijk, constant\"?",
-      "o": [
-       "Industriële chemie",
-       "Variabelen",
-       "Grondstof",
-       "Functionele groep"
+      "d": 1,
+      "u": "Je verwacht: als de temperatuur stijgt, dan gaat de reactie sneller. Dat past bij Hypothese: toetsbare verwachting.",
+      "uo": [
+       "Nee, dat hoort bij GHS-pictogram: gevaarsymbool.",
+       "Klopt: toetsbare verwachting.",
+       "Nee, dat hoort bij Onafhankelijke variabele: bewust veranderd.",
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Variabelen»: onafhankelijk, afhankelijk, constant.",
-      "d": 2
+      "uh": "Hypothese: toetsbare verwachting."
      },
      {
-      "v": "Welke term past bij: \"onafhankelijk, afhankelijk, constant\"?",
+      "v": "Een referentie zonder de testvariabele. Welk begrip herken je hier?",
       "o": [
-       "Zuivere stof",
-       "Variabelen",
-       "Herhaalmetingen",
-       "Nauwkeurigheid"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Variabelen»: onafhankelijk, afhankelijk, constant.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Variabelen» in?",
-      "o": [
-       "een combinatie van meerdere stoffen",
-       "het scheiden van vaste stof en vloeistof",
-       "onafhankelijk, afhankelijk, constant",
-       "hoeveelheid opgeloste stof per liter (mol/L)"
-      ],
-      "c": 2,
-      "u": "«Variabelen» betekent: onafhankelijk, afhankelijk, constant.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Herhaalmetingen»?",
-      "o": [
-       "de verhouding waarin stoffen reageren",
-       "stoffen met dezelfde molecuulformule maar andere structuur",
-       "gemiddelde; betrouwbaarheid",
-       "een koolwaterstof met een dubbele binding"
-      ],
-      "c": 2,
-      "u": "«Herhaalmetingen» betekent: gemiddelde; betrouwbaarheid.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gemiddelde; betrouwbaarheid\"?",
-      "o": [
-       "Voedsel",
-       "Reactievergelijking",
-       "Herhaalmetingen",
-       "Hogere temperatuur"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Herhaalmetingen»: gemiddelde; betrouwbaarheid.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gemiddelde; betrouwbaarheid\"?",
-      "o": [
-       "Filtratie",
-       "Herhaalmetingen",
-       "Mol",
-       "Zuivere stof"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Herhaalmetingen»: gemiddelde; betrouwbaarheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Herhaalmetingen» in?",
-      "o": [
-       "gemiddelde; betrouwbaarheid",
-       "GHS-pictogrammen lezen",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
-       "een toetsbare voorspelling"
-      ],
-      "c": 0,
-      "u": "«Herhaalmetingen» betekent: gemiddelde; betrouwbaarheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Veiligheid»?",
-      "o": [
-       "een reactie die warmte opneemt",
-       "alkanen, alkenen, alkynen",
-       "GHS-pictogrammen lezen",
-       "stoffen met dezelfde molecuulformule maar andere structuur"
-      ],
-      "c": 2,
-      "u": "«Veiligheid» betekent: GHS-pictogrammen lezen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"GHS-pictogrammen lezen\"?",
-      "o": [
-       "Veiligheid",
-       "Homologe reeksen",
-       "Element",
-       "Voedsel"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Veiligheid»: GHS-pictogrammen lezen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"GHS-pictogrammen lezen\"?",
-      "o": [
-       "Concentratie",
-       "Filtratie",
+       "Onafhankelijke variabele",
+       "Hypothese",
        "Controle-experiment",
-       "Veiligheid"
+       "Molariteit"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een referentie zonder de testvariabele. Dat past bij Controle-experiment: referentie zonder testvariabele.",
+      "uo": [
+       "Nee, dat hoort bij Onafhankelijke variabele: bewust veranderd.",
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Klopt: referentie zonder testvariabele.",
+       "Nee, dat hoort bij Molariteit: mol per liter."
+      ],
+      "uh": "Controle-experiment: referentie zonder testvariabele."
+     },
+     {
+      "v": "De concentratie verlagen met water. Wat is hier aan de hand?",
+      "o": [
+       "Betrouwbaarheid",
+       "Molariteit",
+       "Onafhankelijke variabele",
+       "Verdunnen"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Veiligheid»: GHS-pictogrammen lezen.",
-      "d": 3
+      "d": 3,
+      "u": "De concentratie verlagen met water. Dat past bij Verdunnen: concentratie verlagen met water.",
+      "uo": [
+       "Nee, dat hoort bij Betrouwbaarheid: herhaalbaarheid.",
+       "Nee, dat hoort bij Molariteit: mol per liter.",
+       "Nee, dat hoort bij Onafhankelijke variabele: bewust veranderd.",
+       "Klopt: concentratie verlagen met water."
+      ],
+      "uh": "Verdunnen: concentratie verlagen met water."
      },
      {
-      "v": "Wat houdt «Veiligheid» in?",
+      "v": "De grootheid die je bewust verandert. Welk begrip past hierbij?",
       "o": [
-       "GHS-pictogrammen lezen",
-       "hoeveelheid opgeloste stof per liter (mol/L)",
-       "een proef zonder de onderzochte factor, als referentie",
-       "een combinatie van meerdere stoffen"
+       "Onafhankelijke variabele",
+       "GHS-pictogram",
+       "Lineair verband",
+       "Verdunnen"
       ],
       "c": 0,
-      "u": "«Veiligheid» betekent: GHS-pictogrammen lezen.",
-      "d": 3
+      "d": 1,
+      "u": "De grootheid die je bewust verandert. Dat past bij Onafhankelijke variabele: bewust veranderd.",
+      "uo": [
+       "Klopt: bewust veranderd.",
+       "Nee, dat hoort bij GHS-pictogram: gevaarsymbool.",
+       "Nee, dat hoort bij Lineair verband: y = ax.",
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water."
+      ],
+      "uh": "Onafhankelijke variabele: bewust veranderd."
+     },
+     {
+      "v": "De concentratie in mol opgeloste stof per liter. Om welk begrip gaat het?",
+      "o": [
+       "Significante cijfers",
+       "Molariteit",
+       "GHS-pictogram",
+       "Controle-experiment"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De concentratie in mol opgeloste stof per liter. Dat past bij Molariteit: mol per liter.",
+      "uo": [
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid.",
+       "Klopt: mol per liter.",
+       "Nee, dat hoort bij GHS-pictogram: gevaarsymbool.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder testvariabele."
+      ],
+      "uh": "Molariteit: mol per liter."
+     },
+     {
+      "v": "De grootheid die je meet als reactie. Welk begrip herken je hier?",
+      "o": [
+       "GHS-pictogram",
+       "Onafhankelijke variabele",
+       "Afhankelijke variabele",
+       "Lineair verband"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "De grootheid die je meet als reactie. Dat past bij Afhankelijke variabele: gemeten reactie.",
+      "uo": [
+       "Nee, dat hoort bij GHS-pictogram: gevaarsymbool.",
+       "Nee, dat hoort bij Onafhankelijke variabele: bewust veranderd.",
+       "Klopt: gemeten reactie.",
+       "Nee, dat hoort bij Lineair verband: y = ax."
+      ],
+      "uh": "Afhankelijke variabele: gemeten reactie."
+     },
+     {
+      "v": "Een gevaarsymbool op een chemicaliën-etiket. Wat is hier aan de hand?",
+      "o": [
+       "Hypothese",
+       "Controle-experiment",
+       "Lineair verband",
+       "GHS-pictogram"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een gevaarsymbool op een chemicaliën-etiket. Dat past bij GHS-pictogram: gevaarsymbool.",
+      "uo": [
+       "Nee, dat hoort bij Hypothese: toetsbare verwachting.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder testvariabele.",
+       "Nee, dat hoort bij Lineair verband: y = ax.",
+       "Klopt: gevaarsymbool."
+      ],
+      "uh": "GHS-pictogram: gevaarsymbool."
+     },
+     {
+      "v": "De concentratie die je zelf per proef instelt. Welk begrip past hierbij?",
+      "o": [
+       "Onafhankelijke variabele",
+       "Afhankelijke variabele",
+       "Molariteit",
+       "Controle-experiment"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De concentratie die je zelf per proef instelt. Dat past bij Onafhankelijke variabele: bewust veranderd.",
+      "uo": [
+       "Klopt: bewust veranderd.",
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie.",
+       "Nee, dat hoort bij Molariteit: mol per liter.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder testvariabele."
+      ],
+      "uh": "Onafhankelijke variabele: bewust veranderd."
+     },
+     {
+      "v": "Een vlamsymbool op het etiket waarschuwt voor brandgevaar. Om welk begrip gaat het?",
+      "o": [
+       "Molariteit",
+       "GHS-pictogram",
+       "Verdunnen",
+       "Lineair verband"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een vlamsymbool op het etiket waarschuwt voor brandgevaar. Dat past bij GHS-pictogram: gevaarsymbool.",
+      "uo": [
+       "Nee, dat hoort bij Molariteit: mol per liter.",
+       "Klopt: gevaarsymbool.",
+       "Nee, dat hoort bij Verdunnen: concentratie verlagen met water.",
+       "Nee, dat hoort bij Lineair verband: y = ax."
+      ],
+      "uh": "GHS-pictogram: gevaarsymbool."
+     },
+     {
+      "v": "Een proef zonder de testvariabele, als vergelijking. Welk begrip herken je hier?",
+      "o": [
+       "Molariteit",
+       "Afhankelijke variabele",
+       "Controle-experiment",
+       "Significante cijfers"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een proef zonder de testvariabele, als vergelijking. Dat past bij Controle-experiment: referentie zonder testvariabele.",
+      "uo": [
+       "Nee, dat hoort bij Molariteit: mol per liter.",
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten reactie.",
+       "Klopt: referentie zonder testvariabele.",
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid."
+      ],
+      "uh": "Controle-experiment: referentie zonder testvariabele."
+     },
+     {
+      "v": "Je voegt water toe om de concentratie te verlagen. Wat is hier aan de hand?",
+      "o": [
+       "GHS-pictogram",
+       "Molariteit",
+       "Controle-experiment",
+       "Verdunnen"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Je voegt water toe om de concentratie te verlagen. Dat past bij Verdunnen: concentratie verlagen met water.",
+      "uo": [
+       "Nee, dat hoort bij GHS-pictogram: gevaarsymbool.",
+       "Nee, dat hoort bij Molariteit: mol per liter.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder testvariabele.",
+       "Klopt: concentratie verlagen met water."
+      ],
+      "uh": "Verdunnen: concentratie verlagen met water."
      }
     ],
     "oe": [
@@ -27965,56 +27850,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Nauwkeurigheid",
-      "d": "hoe dicht een meting bij de werkelijke waarde ligt"
+      "t": "Onafhankelijke variabele",
+      "d": "de variabele die de onderzoeker bewust verandert"
      },
      {
-      "t": "Hypothese",
-      "d": "een toetsbare voorspelling"
-     },
-     {
-      "t": "Zuivere stof",
-      "d": "een stof met maar één soort deeltjes"
-     },
-     {
-      "t": "Mengsel",
-      "d": "een combinatie van meerdere stoffen"
-     },
-     {
-      "t": "Filtratie",
-      "d": "het scheiden van vaste stof en vloeistof"
-     },
-     {
-      "t": "Mol",
-      "d": "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)"
-     },
-     {
-      "t": "Molaire massa",
-      "d": "de massa van één mol stof (g/mol)"
-     },
-     {
-      "t": "Concentratie",
-      "d": "hoeveelheid opgeloste stof per liter (mol/L)"
+      "t": "Afhankelijke variabele",
+      "d": "de variabele die je meet als reactie"
      },
      {
       "t": "Controle-experiment",
-      "d": "een proef zonder de onderzochte factor, als referentie"
+      "d": "een referentie zonder de testvariabele om effecten te vergelijken"
+     },
+     {
+      "t": "Hypothese",
+      "d": "een toetsbare verwachting: als OV, dan AV, omdat theorie"
      },
      {
       "t": "GHS-pictogram",
-      "d": "symbool dat het gevaar van een stof aangeeft"
+      "d": "een gevaarsymbool op een etiket, zoals een vlam voor ontvlambaar"
      },
      {
-      "t": "Variabelen",
-      "d": "onafhankelijk, afhankelijk, constant"
+      "t": "Lineair verband",
+      "d": "een rechte lijn door de oorsprong: y is evenredig met x"
      },
      {
-      "t": "Herhaalmetingen",
-      "d": "gemiddelde; betrouwbaarheid"
+      "t": "Molariteit",
+      "d": "de concentratie in mol opgeloste stof per liter (mol/L)"
      },
      {
-      "t": "Veiligheid",
-      "d": "GHS-pictogrammen lezen"
+      "t": "Significante cijfers",
+      "d": "de cijfers die de nauwkeurigheid van een meetwaarde aangeven"
+     },
+     {
+      "t": "Betrouwbaarheid",
+      "d": "de mate waarin herhaling dezelfde uitkomst geeft"
+     },
+     {
+      "t": "Verdunnen",
+      "d": "het verlagen van de concentratie door water toe te voegen"
      }
     ]
    },
@@ -28046,977 +27919,634 @@ var VAKKEN = [
      "Molecuulpolairiteit en geometrie",
      "Oplossen van stoffen (like dissolves like)"
     ],
-    "sam": "<div class=\"sam-head\">Atoomstructuur en het periodiek systeem</div><ul><li><strong>Periodiek systeem</strong>: geordend op atoomnummer Z (= aantal protonen). Periode = rij = aantal elektronenschillen. Groep = kolom = aantal valentie-elektronen.</li><li><strong>Valentie-elektronen</strong>: bepalen het chemisch gedrag en het type binding. Elementen in dezelfde groep hebben vergelijkbare eigenschappen.</li><li><strong>Elektronegativiteit (EN)</strong>: maat voor hoe sterk een atoom elektronen naar zich toe trekt. Hoog in rechts-boven van PSE (F het hoogst). Verschil in EN bepaalt de polairheid van een binding.</li></ul><div class=\"sam-head\">Chemische bindingen</div><ul><li><strong>Ionbinding</strong>: metaal geeft valentie-elektronen af aan niet-metaal → positief metaalion + negatief niet-metaalion. Hoog smeltpunt, geleidt stroom als vloeistof of in oplossing, broze kristalstructuur.</li><li><strong>Covalente binding</strong>: twee niet-metalen delen een elektronenpaar. Polair covalent: ongelijke EN → partiële ladingen δ+/δ⁻. Apolair covalent: gelijke EN, gelijke verdeling.</li><li><strong>Molecuulpolairiteit</strong>: hangt af van geometrie. CO₂ is lineair → dipolenvectoren heffen elkaar op → apolair molecuul. H₂O is hoekig → dipolenvectoren heffen elkaar niet op → polair molecuul.</li></ul><div class=\"sam-head\">Intermoleculaire krachten en oplosbaarheid</div><ul><li><strong>Waterstofbruggen</strong>: sterke intermoleculaire aantrekking tussen polair H-atoom en vrij elektronenpaar op N, O of F van een naburig molecuul. Verklaren het hoge kookpunt van water (100°C vs. verwacht −80°C).</li><li><strong>Dipoolkrachten</strong>: permanente aantrekking tussen polaire moleculen. Zwakker dan waterstofbruggen.</li><li><strong>Van der Waalskrachten</strong>: tijdelijke dipolen door elektronenbeweging. Aanwezig in alle moleculen. Sterker bij grotere moleculen (meer elektronen = grotere tijdelijke dipolen).</li><li><strong>Kookpuntvolgorde</strong> (laag → hoog): Van der Waals &lt; dipoolkrachten &lt; waterstofbruggen. Meer/sterkere krachten = meer energie nodig om moleculen te scheiden.</li><li><strong>Like dissolves like</strong>: polaire stoffen lossen op in polaire oplosmiddelen (NaCl in water: hydratatie-energie compenseert roosterenergie). Apolaire stoffen lossen op in apolaire oplosmiddelen (vet in hexaan). Mengsel van beide werkt niet.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Atomen binden via <strong>ionbinding</strong>, <strong>covalente binding</strong> of het <strong>metaalrooster</strong>. Tussen moleculen werken <strong>Van der Waalskrachten</strong> en <strong>waterstofbruggen</strong>. Of een stof <strong>polair</strong> of <strong>apolair</strong> is, bepaalt de oplosbaarheid (like dissolves like). Het <strong>periodiek systeem</strong> ordent op <strong>valentie-elektronen</strong>.</div><div class=\"sam-head\">1. Bindingen</div><p>Een <strong>ionbinding</strong> ontstaat als een metaal elektronen overdraagt aan een niet-metaal. Een <strong>covalente binding</strong> deelt elektronen; bij gelijke <strong>elektronegativiteit</strong> is die apolair (H₂, N₂). Een drievoudige binding is sterker dan een dubbele of enkele. In een <strong>metaalrooster</strong> bewegen elektronen vrij, wat geleiding en smeedbaarheid verklaart.</p><div class=\"sam-head\">2. Moleculen en het periodiek systeem</div><p>Tussen moleculen werken zwakke <strong>Van der Waalskrachten</strong> (sterker bij grotere massa) en sterke <strong>waterstofbruggen</strong> (tussen polair H en N, O of F). Daardoor heeft water een hoog kookpunt. <strong>Like dissolves like</strong>: polair lost op in polair, apolair in apolair. De kolom in het <strong>periodiek systeem</strong> volgt uit het aantal <strong>valentie-elektronen</strong>.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ionbinding</div><div class=\"sam-definitie-body\">de binding waarbij een metaal elektronen overdraagt aan een niet-metaal.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Covalente binding</div><div class=\"sam-definitie-body\">een binding waarbij atomen elektronen delen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Waterstofbrug</div><div class=\"sam-definitie-body\">de sterke kracht tussen polair H en een vrij paar op N, O of F.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Van der Waalskrachten</div><div class=\"sam-definitie-body\">zwakke krachten tussen moleculen, sterker bij grotere massa.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Polair molecuul</div><div class=\"sam-definitie-body\">een molecuul met een netto-dipoolmoment.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Apolair molecuul</div><div class=\"sam-definitie-body\">een molecuul zonder netto-dipoolmoment.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Valentie-elektronen</div><div class=\"sam-definitie-body\">de elektronen in de buitenste schil die het chemisch gedrag bepalen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Periodiek systeem</div><div class=\"sam-definitie-body\">de ordening van elementen op atoomnummer en valentie-elektronen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Elektronegativiteit</div><div class=\"sam-definitie-body\">de mate waarin een atoom elektronen naar zich toe trekt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Roosterenergie</div><div class=\"sam-definitie-body\">de energie die vrijkomt bij het vormen van een ionrooster uit gasionen.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Ionbinding»</b> is metaal geeft, niet-metaal neemt, terwijl <b>«Covalente binding»</b> elektronen delen is. <b>«Waterstofbrug»</b> is H met N, O of F, terwijl <b>«Van der Waalskrachten»</b> zwakke molecuulkrachten is. <b>«Polair molecuul»</b> is ongelijke ladingsverdeling, terwijl <b>«Apolair molecuul»</b> gelijke ladingsverdeling is. <b>«Valentie-elektronen»</b> is buitenste elektronen, terwijl <b>«Periodiek systeem»</b> ordening van elementen is.</div>",
     "sv": [
      {
-      "v": "Welk bindingstype ontstaat wanneer een metaal elektronen overdraagt aan een niet-metaal, waardoor ionen ontstaan?",
+      "v": "Welk bindingstype ontstaat als een metaal elektronen overdraagt aan een niet-metaal?",
       "o": [
-       "Ionbinding (metaal → niet-metaal, ionen)",
-       "Covalente binding (deling van elektronenpaar)",
-       "Metallische binding (gedeeld elektronenwolk in metalen)",
-       "Waterstofbrug (intermoleculaire aantrekking)"
+       "een ionbinding",
+       "een covalente binding",
+       "een waterstofbrug",
+       "een van der Waalskracht"
       ],
       "c": 0,
-      "u": "Ionbinding geeft tegengesteld geladen ionen. Covalente binding geeft gedeelde elektronenparen in moleculen."
+      "d": 3,
+      "u": "Overdracht van elektronen geeft ionen en een ionbinding.",
+      "uo": [
+       "Klopt: overdracht van elektronen geeft ionen en een ionbinding.",
+       "Nee, daarbij worden elektronen gedeeld.",
+       "Nee, dat is een intermoleculaire kracht.",
+       "Nee, dat is een zwakke molecuulkracht."
+      ],
+      "uh": "Ionbinding: metaal geeft elektronen aan niet-metaal."
      },
      {
       "v": "Waarom is CO₂ apolair ondanks twee polaire C=O bindingen?",
       "o": [
-       "Lineaire geometrie: dipoolvectoren heffen elkaar op (nettodipoolmoment = 0)",
-       "CO₂ heeft geen polaire bindingen (gelijke elektronegativiteit)",
-       "Alle lineaire moleculen zijn per definitie polair",
-       "CO₂ heeft maar één zuurstofatoom waardoor er asymmetrie is"
+       "de bindingen zijn eigenlijk apolair",
+       "de lineaire vorm laat de dipoolvectoren elkaar opheffen",
+       "koolstof is een metaal",
+       "er zijn geen bindingen"
       ],
-      "c": 0,
-      "u": "Molecuulpolairiteit hangt af van geometrie. Symmetrische moleculen zoals CO2 zijn apolair ondanks polaire bindingen."
+      "c": 1,
+      "d": 3,
+      "u": "Door de symmetrie is het netto-dipoolmoment 0.",
+      "uo": [
+       "Nee, de bindingen zijn wel polair.",
+       "Klopt: door de symmetrie is het netto-dipoolmoment 0.",
+       "Nee, koolstof is een niet-metaal.",
+       "Nee, er zijn wel bindingen."
+      ],
+      "uh": "CO₂: lineair, dipolen heffen elkaar op."
      },
      {
-      "v": "Welk type intermoleculaire kracht ontstaat tussen een polair H-atoom en een vrij elektronenpaar op N, O of F?",
+      "v": "Welke kracht ontstaat tussen een polair H-atoom en een vrij elektronenpaar op N, O of F?",
       "o": [
-       "Waterstofbrug (sterkste intermoleculaire kracht)",
-       "Van der Waalskracht (zwakste, tijdelijk dipool)",
-       "Dipoolkracht (permanente aantrekking polaire moleculen)",
-       "Ionbinding (overdracht elektronen)"
+       "een ionbinding",
+       "een van der Waalskracht",
+       "een waterstofbrug",
+       "een metaalbinding"
       ],
-      "c": 0,
-      "u": "Waterstofbruggen zijn de sterkste intermoleculaire krachten. Ze verklaren het hoge kookpunt van water, ammonia en waterstoffluoride."
+      "c": 2,
+      "d": 3,
+      "u": "Dat is de sterke waterstofbrug.",
+      "uo": [
+       "Nee, dat is een binding binnen een rooster.",
+       "Nee, die is zwakker.",
+       "Klopt: dat is de sterke waterstofbrug.",
+       "Nee, dat is in metalen."
+      ],
+      "uh": "Waterstofbrug: H met N, O of F."
      },
      {
       "v": "Wat bepaalt de groepsindeling (kolom) in het periodiek systeem?",
       "o": [
-       "Het aantal valentie-elektronen (bepaalt chemisch gedrag)",
-       "Het atoomnummer (aantal protonen in de kern)",
-       "Het aantal elektronenschillen (bepaalt de periode)",
-       "De atoomstraal (grootte van het atoom)"
+       "de smelttemperatuur",
+       "de massa van het atoom",
+       "de kleur van het element",
+       "het aantal valentie-elektronen"
       ],
-      "c": 0,
-      "u": "Groepen zijn de kolommen. Elementen in dezelfde groep hebben hetzelfde aantal valentie-elektronen en vergelijkbare chemische eigenschappen."
+      "c": 3,
+      "d": 3,
+      "u": "De kolom volgt uit de valentie-elektronen.",
+      "uo": [
+       "Nee, dat is een eigenschap, geen ordening.",
+       "Nee, dat bepaalt niet de groep.",
+       "Nee, kleur is irrelevant.",
+       "Klopt: de kolom volgt uit de valentie-elektronen."
+      ],
+      "uh": "Groep: aantal valentie-elektronen."
      },
      {
-      "v": "Welk oplosbaarheidsbeginsel verklaart dat NaCl goed oplost in water maar niet in hexaan?",
+      "v": "Waarom lost NaCl goed op in water maar niet in hexaan?",
       "o": [
-       "Like dissolves like (polair ↔ polair, apolair ↔ apolair)",
-       "Wet van Le Chatelier (evenwicht past zich aan)",
-       "Raoults wet (dampdruk oplossingen)",
-       "Henderson-Hasselbalch (pH van buffers)"
+       "like dissolves like: polair lost op in polair",
+       "NaCl is apolair",
+       "hexaan is polair",
+       "water is apolair"
       ],
       "c": 0,
-      "u": "NaCl (ionisch, polair) lost op in water (polair): hydratatie-energie compenseert de roosterenergie. In hexaan (apolair) ontbreekt die hydratatie-energie."
+      "d": 3,
+      "u": "Polair NaCl past bij polair water.",
+      "uo": [
+       "Klopt: polair NaCl past bij polair water.",
+       "Nee, NaCl is juist polair (ionisch).",
+       "Nee, hexaan is apolair.",
+       "Nee, water is polair."
+      ],
+      "uh": "Like dissolves like: polair bij polair."
      },
      {
-      "v": "Welke eigenschap van metalen wordt verklaard door de aanwezigheid van vrij bewegende elektronen in het metaalrooster?",
+      "v": "Welke eigenschap van metalen verklaar je met vrij bewegende elektronen?",
       "o": [
-       "Elektrisch geleidingsvermogen en smeedbaarheid",
-       "Hoog smeltpunt en broosheid (zoals ionroosters)",
-       "Slecht geleidingsvermogen zoals covalente stoffen",
-       "Oplossen in water zoals zouten"
+       "de kleur van roest",
+       "elektrisch geleidingsvermogen en smeedbaarheid",
+       "de geur van het metaal",
+       "de smaak"
       ],
-      "c": 0,
-      "u": "Metaalbinding: positieve ionen in een zee van vrije elektronen. Vrije elektronen geleiden elektriciteit en warmte. De ionen kunnen van positie veranderen → ductiliteit en smeedbaarheid."
+      "c": 1,
+      "d": 3,
+      "u": "De vrije elektronen geleiden en laten vervorming toe.",
+      "uo": [
+       "Nee, dat is een reactieproduct.",
+       "Klopt: de vrije elektronen geleiden en laten vervorming toe.",
+       "Nee, geur is irrelevant.",
+       "Nee, smaak is irrelevant."
+      ],
+      "uh": "Vrije elektronen: geleiding en smeedbaarheid."
      },
      {
       "v": "Hoe neemt de atoomstraal toe in het periodiek systeem?",
       "o": [
-       "Van rechts naar links in een periode en van boven naar beneden in een groep (extra schillen)",
-       "Van links naar rechts in een periode en van onder naar boven in een groep",
-       "De atoomstraal is constant per periode",
-       "De atoomstraal hangt alleen af van het atoomnummer"
+       "alleen naar rechts",
+       "van links naar rechts en van beneden naar boven",
+       "van rechts naar links in een periode en van boven naar beneden in een groep",
+       "de atoomstraal verandert niet"
       ],
-      "c": 0,
-      "u": "In een periode neemt Z toe maar het aantal schillen niet → straal neemt af (naar rechts). In een groep neemt het aantal elektronenschillen toe → straal neemt toe (naar beneden)."
+      "c": 2,
+      "d": 3,
+      "u": "Naar links en naar beneden worden atomen groter.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat is precies omgedraaid.",
+       "Klopt: naar links en naar beneden worden atomen groter.",
+       "Nee, hij verandert wel."
+      ],
+      "uh": "Atoomstraal: groter naar links en naar beneden."
      },
      {
-      "v": "Welk begrip beschrijft de energie die vrijkomt bij het vormen van 1 mol ionrooster uit de vrije gasionen?",
+      "v": "Welke covalente binding is het sterkst?",
       "o": [
-       "Roosterenergie (lattice energy)",
-       "Ionisatie-energie (elektron losrukken)",
-       "Elektronenaffiniteit (elektron opnemen)",
-       "Hydratatie-energie (ion omgeven door water)"
+       "ze zijn even sterk",
+       "de dubbele binding",
+       "de enkele binding",
+       "de drievoudige binding"
       ],
-      "c": 0,
-      "u": "Roosterenergie is de stabiliserende kracht van een ionrooster. Hoe hoger de lading en kleiner de ionstraal, hoe hoger de roosterenergie en het smeltpunt van het zout."
+      "c": 3,
+      "d": 3,
+      "u": "Drie gedeelde paren is het sterkst (N≡N).",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Nee, die is minder sterk.",
+       "Nee, die is het zwakst.",
+       "Klopt: drie gedeelde paren is het sterkst (N≡N)."
+      ],
+      "uh": "Sterkste covalente binding: drievoudig."
      },
      {
-      "v": "Welk type covalente binding heeft de grootste bindingssterkte: enkel-, dubbel- of drievoudig?",
+      "v": "Welk type binding hebben twee atomen met gelijke elektronegativiteit (H₂, N₂)?",
       "o": [
-       "Drievoudige binding (sterkst, N≡N)",
-       "Dubbele binding",
-       "Enkelvoudige binding (zwakst)",
-       "Ze hebben alle drie dezelfde bindingssterkte"
+       "een apolaire covalente binding",
+       "een polaire covalente binding",
+       "een ionbinding",
+       "een waterstofbrug"
       ],
       "c": 0,
-      "u": "Meer gedeelde elektronenparen = sterkere binding. N≡N (stikstofmolecuul) heeft een drievoudige binding en is zeer stabiel (D = 945 kJ/mol). Enkel: ~345 kJ/mol voor C-C."
-     },
-     {
-      "v": "Welk type binding hebben twee atomen met gelijk hoge elektronegativiteit (bijv. H₂ of N₂)?",
-      "o": [
-       "Apolaire covalente binding (gelijke elektronenverdeling)",
-       "Polaire covalente binding (ongelijke verdeling)",
-       "Ionbinding (elektronen overgedragen)",
-       "Metaalbinding (vrije elektronenwolk)"
+      "d": 3,
+      "u": "Gelijke EN geeft een gelijke elektronenverdeling.",
+      "uo": [
+       "Klopt: gelijke EN geeft een gelijke elektronenverdeling.",
+       "Nee, dan zou de EN verschillen.",
+       "Nee, dat is bij metaal + niet-metaal.",
+       "Nee, dat is intermoleculair."
       ],
-      "c": 0,
-      "u": "Bij gelijke EN delen de atomen de elektronen gelijkmatig: apolair covalent. Bij ongelijke EN trekt het atoom met hogere EN meer aan de elektronen: polair covalent."
+      "uh": "Gelijke EN: apolaire covalente binding."
      },
      {
       "v": "Waarom heeft water een relatief hoog kookpunt vergeleken met andere kleine moleculen?",
       "o": [
-       "Door sterke waterstofbruggen tussen de polaire OH-groepen",
-       "Door de lage molecuulmassa",
-       "Door ionbindingen in water",
-       "Door Van der Waalskrachten die even sterk zijn als in grotere moleculen"
+       "omdat water heel zwaar is",
+       "door sterke waterstofbruggen tussen de polaire OH-groepen",
+       "door ionbindingen in het water",
+       "omdat water apolair is"
       ],
-      "c": 0,
-      "u": "Water vormt maximaal vier waterstofbruggen per molecuul. Deze relatief sterke intermoleculaire krachten vereisen veel energie om te verbreken, vandaar het hoge kookpunt (100°C vs. verwacht −80°C)."
+      "c": 1,
+      "d": 3,
+      "u": "Waterstofbruggen moet je verbreken om te koken.",
+      "uo": [
+       "Nee, water is juist licht.",
+       "Klopt: waterstofbruggen moet je verbreken om te koken.",
+       "Nee, water heeft geen ionbindingen.",
+       "Nee, water is polair."
+      ],
+      "uh": "Water: waterstofbruggen, hoog kookpunt."
      },
      {
-      "v": "Welke eigenschap van ionverbindingen verklaar je met het feit dat ionen kunnen bewegen in de smelt?",
+      "v": "In welk oplosmiddel lost een apolair molecuul op?",
       "o": [
-       "Geleidingsvermogen in gesmolten toestand of oplossing",
-       "Hardheid en broosheid van het kristal",
-       "Hoge oplosbaarheid in apolaire oplosmiddelen",
-       "Lage smeltpunten"
+       "in elk oplosmiddel",
+       "alleen in water",
+       "in een apolair oplosmiddel, niet in water",
+       "in geen enkel oplosmiddel"
       ],
-      "c": 0,
-      "u": "In vaste toestand zijn ionen gefixeerd: slechte geleider. In gesmolten toestand of waterige oplossing kunnen ionen bewegen: goede elektrische geleiding."
-     },
-     {
-      "v": "Wat is het kenmerk van een apolair molecuul met betrekking tot oplosbaarheid?",
-      "o": [
-       "Apolair molecuul lost op in apolaire oplosmiddelen maar niet in water",
-       "Apolair molecuul lost goed op in water",
-       "Apolair molecuul lost op in alle oplosmiddelen",
-       "Apolair molecuul heeft geen invloed op de oplosbaarheid"
+      "c": 2,
+      "d": 3,
+      "u": "Apolair past bij apolair, niet bij polair water.",
+      "uo": [
+       "Nee, oplosbaarheid is selectief.",
+       "Nee, juist niet in water.",
+       "Klopt: apolair past bij apolair, niet bij polair water.",
+       "Nee, in apolaire oplosmiddelen wel."
       ],
-      "c": 0,
-      "u": "Like dissolves like: apolaire stoffen (bijv. vetten, hexaan) lossen op in apolaire oplosmiddelen. Ze zijn slecht oplosbaar in water (polair) omdat er geen hydratatie-energie is."
+      "uh": "Apolair lost op in apolair."
      },
      {
       "v": "Hoe neemt de sterkte van Van der Waalskrachten toe?",
       "o": [
-       "Met toenemende molecuulmassa (meer elektronen = grotere tijdelijke dipolen)",
-       "Met afnemende molecuulmassa",
-       "Ze zijn constant voor alle moleculen",
-       "Ze zijn sterker in polaire dan in apolaire moleculen"
-      ],
-      "c": 0,
-      "u": "Grotere moleculen hebben meer elektronen en een groter polariseerbaar elektronenwolk → sterkere tijdelijke dipolen → sterkere Van der Waalskrachten → hoger kookpunt."
-     },
-     {
-      "v": "Wat betekent «Atoom»?",
-      "o": [
-       "meer deeltjes → meer botsingen",
-       "de kleinste bouwsteen van een element",
-       "het afstaan van elektronen",
-       "de massa van één mol stof (g/mol)"
-      ],
-      "c": 1,
-      "u": "«Atoom» betekent: de kleinste bouwsteen van een element.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de kleinste bouwsteen van een element\"?",
-      "o": [
-       "Mol",
-       "−OH",
-       "Atoom",
-       "Isomeren"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Atoom»: de kleinste bouwsteen van een element.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de kleinste bouwsteen van een element\"?",
-      "o": [
-       "Atoombouw",
-       "Atoom",
-       "Element",
-       "Oplossing"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Atoom»: de kleinste bouwsteen van een element.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Atoom» in?",
-      "o": [
-       "protonen, neutronen, elektronen; periodiek systeem",
-       "een combinatie van meerdere stoffen",
-       "de kleinste bouwsteen van een element",
-       "positieve ionen in een zee van vrije elektronen"
-      ],
-      "c": 2,
-      "u": "«Atoom» betekent: de kleinste bouwsteen van een element.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Molecuul»?",
-      "o": [
-       "een groepje gebonden atomen",
-       "een toetsbare voorspelling",
-       "een geladen atoom of groep atomen",
-       "binding tussen tegengesteld geladen ionen"
-      ],
-      "c": 0,
-      "u": "«Molecuul» betekent: een groepje gebonden atomen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een groepje gebonden atomen\"?",
-      "o": [
-       "Chemische reactie",
-       "Molverhouding",
-       "Ion",
-       "Molecuul"
+       "ze veranderen niet",
+       "met afnemende massa",
+       "met de kleur van de stof",
+       "met toenemende molecuulmassa (meer elektronen)"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Molecuul»: een groepje gebonden atomen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een groepje gebonden atomen\"?",
-      "o": [
-       "Metaalbinding",
-       "Oplosbaarheid",
-       "Molecuul",
-       "Intermoleculaire krachten"
+      "d": 3,
+      "u": "Meer elektronen geven grotere tijdelijke dipolen.",
+      "uo": [
+       "Nee, ze veranderen wel.",
+       "Nee, dat is omgekeerd.",
+       "Nee, kleur is irrelevant.",
+       "Klopt: meer elektronen geven grotere tijdelijke dipolen."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Molecuul»: een groepje gebonden atomen.",
-      "d": 3
+      "uh": "Van der Waals: sterker bij grotere massa."
      },
      {
-      "v": "Wat houdt «Molecuul» in?",
+      "v": "Wat zijn valentie-elektronen?",
       "o": [
-       "een geladen atoom of groep atomen",
-       "een groepje gebonden atomen",
-       "de kleinste bouwsteen van een element",
-       "een mengsel van metalen"
+       "de elektronen in de buitenste schil die het chemisch gedrag bepalen",
+       "de elektronen in de kern",
+       "de neutronen van een atoom",
+       "de protonen van een atoom"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De buitenste elektronen doen mee aan reacties.",
+      "uo": [
+       "Klopt: de buitenste elektronen doen mee aan reacties.",
+       "Nee, in de kern zitten geen elektronen.",
+       "Nee, dat zijn geen elektronen.",
+       "Nee, dat zijn geen elektronen."
+      ],
+      "uh": "Valentie-elektronen: buitenste schil."
+     },
+     {
+      "v": "Twee niet-metalen delen elektronen, zoals in H2. Welk begrip past hierbij?",
+      "o": [
+       "Periodiek systeem",
+       "Covalente binding",
+       "Van der Waalskrachten",
+       "Elektronegativiteit"
       ],
       "c": 1,
-      "u": "«Molecuul» betekent: een groepje gebonden atomen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Polair»?",
-      "o": [
-       "met een ongelijke ladingsverdeling",
-       "een uitgangsmateriaal voor productie",
-       "een geladen atoom of groep atomen",
-       "binding tussen tegengesteld geladen ionen"
+      "d": 1,
+      "u": "Twee niet-metalen delen elektronen, zoals in H2. Dat past bij Covalente binding: elektronen delen.",
+      "uo": [
+       "Nee, dat hoort bij Periodiek systeem: ordening van elementen.",
+       "Klopt: elektronen delen.",
+       "Nee, dat hoort bij Van der Waalskrachten: zwakke molecuulkrachten.",
+       "Nee, dat hoort bij Elektronegativiteit: aantrekkingskracht op elektronen."
       ],
-      "c": 0,
-      "u": "«Polair» betekent: met een ongelijke ladingsverdeling.",
-      "d": 1
+      "uh": "Covalente binding: elektronen delen."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"met een ongelijke ladingsverdeling\"?",
+      "v": "De ordening van de elementen op atoomnummer en groep. Om welk begrip gaat het?",
       "o": [
-       "Additiereactie",
-       "Concentratie",
-       "Polair",
-       "Broeikaseffect"
+       "Covalente binding",
+       "Apolair molecuul",
+       "Periodiek systeem",
+       "Elektronegativiteit"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Polair»: met een ongelijke ladingsverdeling.",
-      "d": 2
+      "d": 1,
+      "u": "De ordening van de elementen op atoomnummer en groep. Dat past bij Periodiek systeem: ordening van elementen.",
+      "uo": [
+       "Nee, dat hoort bij Covalente binding: elektronen delen.",
+       "Nee, dat hoort bij Apolair molecuul: gelijke ladingsverdeling.",
+       "Klopt: ordening van elementen.",
+       "Nee, dat hoort bij Elektronegativiteit: aantrekkingskracht op elektronen."
+      ],
+      "uh": "Periodiek systeem: ordening van elementen."
      },
      {
-      "v": "Welke term past bij: \"met een ongelijke ladingsverdeling\"?",
+      "v": "De tabel die de elementen ordent. Welk begrip herken je hier?",
       "o": [
-       "Polair",
-       "Atoombouw",
-       "Oplossen",
-       "Intermoleculaire krachten"
+       "Roosterenergie",
+       "Valentie-elektronen",
+       "Van der Waalskrachten",
+       "Periodiek systeem"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De tabel die de elementen ordent. Dat past bij Periodiek systeem: ordening van elementen.",
+      "uo": [
+       "Nee, dat hoort bij Roosterenergie: energie van roostervorming.",
+       "Nee, dat hoort bij Valentie-elektronen: buitenste elektronen.",
+       "Nee, dat hoort bij Van der Waalskrachten: zwakke molecuulkrachten.",
+       "Klopt: ordening van elementen."
+      ],
+      "uh": "Periodiek systeem: ordening van elementen."
+     },
+     {
+      "v": "De aantrekkingskracht op bindingselektronen. Wat is hier aan de hand?",
+      "o": [
+       "Elektronegativiteit",
+       "Covalente binding",
+       "Polair molecuul",
+       "Apolair molecuul"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Polair»: met een ongelijke ladingsverdeling.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Polair» in?",
-      "o": [
-       "met een ongelijke ladingsverdeling",
-       "de mate waarin een stof oplost",
-       "geeft het aantal atomen per soort in een molecuul",
-       "binding met een gedeeld elektronenpaar tussen niet-metalen"
+      "d": 1,
+      "u": "De aantrekkingskracht op bindingselektronen. Dat past bij Elektronegativiteit: aantrekkingskracht op elektronen.",
+      "uo": [
+       "Klopt: aantrekkingskracht op elektronen.",
+       "Nee, dat hoort bij Covalente binding: elektronen delen.",
+       "Nee, dat hoort bij Polair molecuul: ongelijke ladingsverdeling.",
+       "Nee, dat hoort bij Apolair molecuul: gelijke ladingsverdeling."
       ],
-      "c": 0,
-      "u": "«Polair» betekent: met een ongelijke ladingsverdeling.",
-      "d": 3
+      "uh": "Elektronegativiteit: aantrekkingskracht op elektronen."
      },
      {
-      "v": "Wat betekent «Oplosbaarheid»?",
+      "v": "De mate waarin een atoom elektronen naar zich toe trekt. Welk begrip past hierbij?",
       "o": [
-       "de mate waarin een stof oplost",
-       "een stof die met kleur de zuurgraad aangeeft",
-       "de uitstoot van stoffen naar het milieu",
-       "een proef zonder de onderzochte factor, als referentie"
+       "Roosterenergie",
+       "Elektronegativiteit",
+       "Ionbinding",
+       "Polair molecuul"
       ],
-      "c": 0,
-      "u": "«Oplosbaarheid» betekent: de mate waarin een stof oplost.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin een stof oplost\"?",
-      "o": [
-       "Oplosbaarheid",
-       "−COOH",
-       "Recycling",
-       "Evenwicht"
+      "c": 1,
+      "d": 2,
+      "u": "De mate waarin een atoom elektronen naar zich toe trekt. Dat past bij Elektronegativiteit: aantrekkingskracht op elektronen.",
+      "uo": [
+       "Nee, dat hoort bij Roosterenergie: energie van roostervorming.",
+       "Klopt: aantrekkingskracht op elektronen.",
+       "Nee, dat hoort bij Ionbinding: metaal geeft, niet-metaal neemt.",
+       "Nee, dat hoort bij Polair molecuul: ongelijke ladingsverdeling."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Oplosbaarheid»: de mate waarin een stof oplost.",
-      "d": 2
+      "uh": "Elektronegativiteit: aantrekkingskracht op elektronen."
      },
      {
-      "v": "Welke term past bij: \"de mate waarin een stof oplost\"?",
+      "v": "De elektronen in de buitenste schil. Om welk begrip gaat het?",
       "o": [
-       "Element",
-       "Oplosbaarheid",
-       "Atoombinding",
+       "Polair molecuul",
+       "Covalente binding",
+       "Valentie-elektronen",
+       "Apolair molecuul"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De elektronen in de buitenste schil. Dat past bij Valentie-elektronen: buitenste elektronen.",
+      "uo": [
+       "Nee, dat hoort bij Polair molecuul: ongelijke ladingsverdeling.",
+       "Nee, dat hoort bij Covalente binding: elektronen delen.",
+       "Klopt: buitenste elektronen.",
+       "Nee, dat hoort bij Apolair molecuul: gelijke ladingsverdeling."
+      ],
+      "uh": "Valentie-elektronen: buitenste elektronen."
+     },
+     {
+      "v": "Een molecuul zonder netto-dipoolmoment. Welk begrip herken je hier?",
+      "o": [
+       "Van der Waalskrachten",
+       "Polair molecuul",
+       "Roosterenergie",
+       "Apolair molecuul"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een molecuul zonder netto-dipoolmoment. Dat past bij Apolair molecuul: gelijke ladingsverdeling.",
+      "uo": [
+       "Nee, dat hoort bij Van der Waalskrachten: zwakke molecuulkrachten.",
+       "Nee, dat hoort bij Polair molecuul: ongelijke ladingsverdeling.",
+       "Nee, dat hoort bij Roosterenergie: energie van roostervorming.",
+       "Klopt: gelijke ladingsverdeling."
+      ],
+      "uh": "Apolair molecuul: gelijke ladingsverdeling."
+     },
+     {
+      "v": "CO2 is lineair, de dipolen heffen elkaar op. Wat is hier aan de hand?",
+      "o": [
+       "Apolair molecuul",
+       "Waterstofbrug",
+       "Covalente binding",
        "Ionbinding"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Oplosbaarheid»: de mate waarin een stof oplost.",
-      "d": 3
+      "c": 0,
+      "d": 1,
+      "u": "CO2 is lineair, de dipolen heffen elkaar op. Dat past bij Apolair molecuul: gelijke ladingsverdeling.",
+      "uo": [
+       "Klopt: gelijke ladingsverdeling.",
+       "Nee, dat hoort bij Waterstofbrug: H met N, O of F.",
+       "Nee, dat hoort bij Covalente binding: elektronen delen.",
+       "Nee, dat hoort bij Ionbinding: metaal geeft, niet-metaal neemt."
+      ],
+      "uh": "Apolair molecuul: gelijke ladingsverdeling."
      },
      {
-      "v": "Wat houdt «Oplosbaarheid» in?",
+      "v": "Zwakke krachten tussen moleculen. Welk begrip past hierbij?",
       "o": [
-       "een homogeen mengsel van opgeloste stof en oplosmiddel",
-       "de mate waarin een stof oplost",
-       "waterstofbruggen en vanderwaalskrachten",
-       "binding tussen tegengesteld geladen ionen"
+       "Waterstofbrug",
+       "Van der Waalskrachten",
+       "Roosterenergie",
+       "Elektronegativiteit"
       ],
       "c": 1,
-      "u": "«Oplosbaarheid» betekent: de mate waarin een stof oplost.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Legering»?",
-      "o": [
-       "brandstof gemaakt uit biomassa",
-       "een mengsel van metalen",
-       "een groepje gebonden atomen",
-       "het scheiden van vaste stof en vloeistof"
+      "d": 2,
+      "u": "Zwakke krachten tussen moleculen. Dat past bij Van der Waalskrachten: zwakke molecuulkrachten.",
+      "uo": [
+       "Nee, dat hoort bij Waterstofbrug: H met N, O of F.",
+       "Klopt: zwakke molecuulkrachten.",
+       "Nee, dat hoort bij Roosterenergie: energie van roostervorming.",
+       "Nee, dat hoort bij Elektronegativiteit: aantrekkingskracht op elektronen."
       ],
-      "c": 1,
-      "u": "«Legering» betekent: een mengsel van metalen.",
-      "d": 1
+      "uh": "Van der Waalskrachten: zwakke molecuulkrachten."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een mengsel van metalen\"?",
+      "v": "Tussen apolaire moleculen werken zwakke, tijdelijke krachten. Om welk begrip gaat het?",
       "o": [
-       "Base",
-       "Legering",
-       "Isomeren",
-       "−OH"
+       "Roosterenergie",
+       "Apolair molecuul",
+       "Van der Waalskrachten",
+       "Periodiek systeem"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Legering»: een mengsel van metalen.",
-      "d": 2
+      "c": 2,
+      "d": 1,
+      "u": "Tussen apolaire moleculen werken zwakke, tijdelijke krachten. Dat past bij Van der Waalskrachten: zwakke molecuulkrachten.",
+      "uo": [
+       "Nee, dat hoort bij Roosterenergie: energie van roostervorming.",
+       "Nee, dat hoort bij Apolair molecuul: gelijke ladingsverdeling.",
+       "Klopt: zwakke molecuulkrachten.",
+       "Nee, dat hoort bij Periodiek systeem: ordening van elementen."
+      ],
+      "uh": "Van der Waalskrachten: zwakke molecuulkrachten."
      },
      {
-      "v": "Welke term past bij: \"een mengsel van metalen\"?",
+      "v": "De sterke kracht tussen H en N, O of F. Welk begrip herken je hier?",
       "o": [
        "Covalente binding",
-       "Atoombouw",
-       "Legering",
-       "Mengsel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Legering»: een mengsel van metalen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Legering» in?",
-      "o": [
-       "waterstofbruggen en vanderwaalskrachten",
-       "binding tussen tegengesteld geladen ionen",
-       "een combinatie van meerdere stoffen",
-       "een mengsel van metalen"
+       "Van der Waalskrachten",
+       "Periodiek systeem",
+       "Waterstofbrug"
       ],
       "c": 3,
-      "u": "«Legering» betekent: een mengsel van metalen.",
-      "d": 3
+      "d": 2,
+      "u": "De sterke kracht tussen H en N, O of F. Dat past bij Waterstofbrug: H met N, O of F.",
+      "uo": [
+       "Nee, dat hoort bij Covalente binding: elektronen delen.",
+       "Nee, dat hoort bij Van der Waalskrachten: zwakke molecuulkrachten.",
+       "Nee, dat hoort bij Periodiek systeem: ordening van elementen.",
+       "Klopt: H met N, O of F."
+      ],
+      "uh": "Waterstofbrug: H met N, O of F."
      },
      {
-      "v": "Wat betekent «Element»?",
+      "v": "De energie van roostervorming. Wat is hier aan de hand?",
       "o": [
-       "een stof die uit één soort atomen bestaat",
-       "binding tussen tegengesteld geladen ionen",
-       "het afstaan van elektronen",
-       "GHS-pictogrammen lezen"
+       "Roosterenergie",
+       "Polair molecuul",
+       "Waterstofbrug",
+       "Periodiek systeem"
       ],
       "c": 0,
-      "u": "«Element» betekent: een stof die uit één soort atomen bestaat.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die uit één soort atomen bestaat\"?",
-      "o": [
-       "Veiligheid",
-       "Element",
-       "Isomeren",
-       "Broeikasgas"
+      "d": 1,
+      "u": "De energie van roostervorming. Dat past bij Roosterenergie: energie van roostervorming.",
+      "uo": [
+       "Klopt: energie van roostervorming.",
+       "Nee, dat hoort bij Polair molecuul: ongelijke ladingsverdeling.",
+       "Nee, dat hoort bij Waterstofbrug: H met N, O of F.",
+       "Nee, dat hoort bij Periodiek systeem: ordening van elementen."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Element»: een stof die uit één soort atomen bestaat.",
-      "d": 2
+      "uh": "Roosterenergie: energie van roostervorming."
      },
      {
-      "v": "Welke term past bij: \"een stof die uit één soort atomen bestaat\"?",
+      "v": "De binding tussen metaal- en niet-metaalionen. Welk begrip past hierbij?",
       "o": [
-       "Element",
-       "Ion",
-       "Atoom",
-       "Intermoleculaire krachten"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Element»: een stof die uit één soort atomen bestaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Element» in?",
-      "o": [
-       "binding tussen tegengesteld geladen ionen",
-       "een stof die uit één soort atomen bestaat",
-       "waterstofbruggen en vanderwaalskrachten",
-       "een groepje gebonden atomen"
-      ],
-      "c": 1,
-      "u": "«Element» betekent: een stof die uit één soort atomen bestaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ion»?",
-      "o": [
-       "meer deeltjes → meer botsingen",
-       "een toetsbare voorspelling",
-       "een geladen atoom of groep atomen",
-       "stoffen met dezelfde molecuulformule maar andere structuur"
-      ],
-      "c": 2,
-      "u": "«Ion» betekent: een geladen atoom of groep atomen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een geladen atoom of groep atomen\"?",
-      "o": [
-       "Reacties & rekenen",
-       "Ion",
-       "Biobrandstof",
-       "Groene chemie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ion»: een geladen atoom of groep atomen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een geladen atoom of groep atomen\"?",
-      "o": [
-       "Metaalbinding",
-       "Polair",
-       "Ion",
-       "Molecuulformule"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Ion»: een geladen atoom of groep atomen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ion» in?",
-      "o": [
-       "positieve ionen in een zee van vrije elektronen",
-       "een groepje gebonden atomen",
-       "geeft het aantal atomen per soort in een molecuul",
-       "een geladen atoom of groep atomen"
-      ],
-      "c": 3,
-      "u": "«Ion» betekent: een geladen atoom of groep atomen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ionbinding»?",
-      "o": [
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "binding tussen tegengesteld geladen ionen",
-       "de uitstoot van stoffen naar het milieu",
-       "broeikaseffect, zure regen, ozonafbraak"
-      ],
-      "c": 1,
-      "u": "«Ionbinding» betekent: binding tussen tegengesteld geladen ionen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"binding tussen tegengesteld geladen ionen\"?",
-      "o": [
-       "Circulaire economie",
-       "Ester",
-       "Mol",
-       "Ionbinding"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Ionbinding»: binding tussen tegengesteld geladen ionen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"binding tussen tegengesteld geladen ionen\"?",
-      "o": [
-       "Atoombinding",
-       "Atoombouw",
-       "Ionbinding",
-       "Mengsel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Ionbinding»: binding tussen tegengesteld geladen ionen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ionbinding» in?",
-      "o": [
-       "met een ongelijke ladingsverdeling",
-       "de mate waarin een stof oplost",
-       "een geladen atoom of groep atomen",
-       "binding tussen tegengesteld geladen ionen"
-      ],
-      "c": 3,
-      "u": "«Ionbinding» betekent: binding tussen tegengesteld geladen ionen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Atoombinding»?",
-      "o": [
-       "binding met een gedeeld elektronenpaar tussen niet-metalen",
-       "een koolwaterstof met een dubbele binding",
-       "een homogeen mengsel van opgeloste stof en oplosmiddel",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)"
-      ],
-      "c": 0,
-      "u": "«Atoombinding» betekent: binding met een gedeeld elektronenpaar tussen niet-metalen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"binding met een gedeeld elektronenpaar tussen niet-metalen\"?",
-      "o": [
-       "Ionbinding",
-       "Atoombinding",
-       "Element",
-       "Katalysator"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Atoombinding»: binding met een gedeeld elektronenpaar tussen niet-metalen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"binding met een gedeeld elektronenpaar tussen niet-metalen\"?",
-      "o": [
-       "Ion",
-       "Polair",
-       "Oplossen",
-       "Atoombinding"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Atoombinding»: binding met een gedeeld elektronenpaar tussen niet-metalen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Atoombinding» in?",
-      "o": [
-       "een stof die uit één soort atomen bestaat",
-       "waterstofbruggen en vanderwaalskrachten",
-       "een geladen atoom of groep atomen",
-       "binding met een gedeeld elektronenpaar tussen niet-metalen"
-      ],
-      "c": 3,
-      "u": "«Atoombinding» betekent: binding met een gedeeld elektronenpaar tussen niet-metalen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Molecuulformule»?",
-      "o": [
-       "niet-metalen; gedeelde elektronenparen; polair/apolair",
-       "geeft het aantal atomen per soort in een molecuul",
-       "zelfde formule, andere structuur",
-       "additie- en condensatiepolymerisatie"
-      ],
-      "c": 1,
-      "u": "«Molecuulformule» betekent: geeft het aantal atomen per soort in een molecuul.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"geeft het aantal atomen per soort in een molecuul\"?",
-      "o": [
-       "Chemische reactie",
-       "Molecuulformule",
-       "Circulaire economie",
-       "Polair"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Molecuulformule»: geeft het aantal atomen per soort in een molecuul.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"geeft het aantal atomen per soort in een molecuul\"?",
-      "o": [
-       "Atoombouw",
-       "Molecuulformule",
-       "Intermoleculaire krachten",
-       "Legering"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Molecuulformule»: geeft het aantal atomen per soort in een molecuul.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Molecuulformule» in?",
-      "o": [
-       "binding tussen tegengesteld geladen ionen",
-       "geeft het aantal atomen per soort in een molecuul",
-       "een combinatie van meerdere stoffen",
-       "binding met een gedeeld elektronenpaar tussen niet-metalen"
-      ],
-      "c": 1,
-      "u": "«Molecuulformule» betekent: geeft het aantal atomen per soort in een molecuul.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Mengsel»?",
-      "o": [
-       "een combinatie van meerdere stoffen",
-       "milieubeoordeling van grondstof tot afval",
-       "het scheiden van vaste stof en vloeistof",
-       "toestand waarin heen- en terugreactie even snel gaan"
-      ],
-      "c": 0,
-      "u": "«Mengsel» betekent: een combinatie van meerdere stoffen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een combinatie van meerdere stoffen\"?",
-      "o": [
-       "Grondstof",
-       "Gat in ozonlaag",
-       "Mengsel",
-       "Additiereactie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Mengsel»: een combinatie van meerdere stoffen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een combinatie van meerdere stoffen\"?",
-      "o": [
-       "Oplossing",
-       "Mengsel",
-       "Element",
-       "Atoom"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Mengsel»: een combinatie van meerdere stoffen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Mengsel» in?",
-      "o": [
-       "een stof die uit één soort atomen bestaat",
-       "een groepje gebonden atomen",
-       "een combinatie van meerdere stoffen",
-       "geeft het aantal atomen per soort in een molecuul"
-      ],
-      "c": 2,
-      "u": "«Mengsel» betekent: een combinatie van meerdere stoffen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Oplossing»?",
-      "o": [
-       "een reactie met overdracht van elektronen",
-       "reactie van een zuur met een base tot zout en water",
-       "omzetting van stoffen tot nieuwe stoffen",
-       "een homogeen mengsel van opgeloste stof en oplosmiddel"
-      ],
-      "c": 3,
-      "u": "«Oplossing» betekent: een homogeen mengsel van opgeloste stof en oplosmiddel.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een homogeen mengsel van opgeloste stof en oplosmiddel\"?",
-      "o": [
-       "Evenwicht",
-       "Duurzaamheid",
-       "Oplossing",
-       "Substitutiereactie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Oplossing»: een homogeen mengsel van opgeloste stof en oplosmiddel.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een homogeen mengsel van opgeloste stof en oplosmiddel\"?",
-      "o": [
-       "Molecuul",
-       "Atoom",
-       "Oplossing",
-       "Intermoleculaire krachten"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Oplossing»: een homogeen mengsel van opgeloste stof en oplosmiddel.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Oplossing» in?",
-      "o": [
-       "binding tussen tegengesteld geladen ionen",
-       "\"like dissolves like\"",
-       "een homogeen mengsel van opgeloste stof en oplosmiddel",
-       "de mate waarin een stof oplost"
-      ],
-      "c": 2,
-      "u": "«Oplossing» betekent: een homogeen mengsel van opgeloste stof en oplosmiddel.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Metaalbinding»?",
-      "o": [
-       "protonen, neutronen, elektronen; periodiek systeem",
-       "een koolstofverbinding met een OH-groep",
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "positieve ionen in een zee van vrije elektronen"
-      ],
-      "c": 3,
-      "u": "«Metaalbinding» betekent: positieve ionen in een zee van vrije elektronen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"positieve ionen in een zee van vrije elektronen\"?",
-      "o": [
-       "Molaire massa",
-       "Hogere temperatuur",
-       "Levenscyclusanalyse",
-       "Metaalbinding"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Metaalbinding»: positieve ionen in een zee van vrije elektronen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"positieve ionen in een zee van vrije elektronen\"?",
-      "o": [
-       "Metaalbinding",
-       "Polair",
-       "Ionbinding",
-       "Atoombouw"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Metaalbinding»: positieve ionen in een zee van vrije elektronen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Metaalbinding» in?",
-      "o": [
-       "positieve ionen in een zee van vrije elektronen",
-       "een geladen atoom of groep atomen",
-       "\"like dissolves like\"",
-       "geeft het aantal atomen per soort in een molecuul"
-      ],
-      "c": 0,
-      "u": "«Metaalbinding» betekent: positieve ionen in een zee van vrije elektronen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Atoombouw»?",
-      "o": [
-       "Brønsted-Lowry; pH; sterk vs. zwak",
-       "het opnemen van elektronen",
-       "protonen, neutronen, elektronen; periodiek systeem",
-       "een reactie die warmte opneemt"
-      ],
-      "c": 2,
-      "u": "«Atoombouw» betekent: protonen, neutronen, elektronen; periodiek systeem.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"protonen, neutronen, elektronen; periodiek systeem\"?",
-      "o": [
-       "Atoombouw",
-       "Duurzaamheid",
-       "Milieu",
-       "Veiligheid"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Atoombouw»: protonen, neutronen, elektronen; periodiek systeem.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"protonen, neutronen, elektronen; periodiek systeem\"?",
-      "o": [
-       "Atoombouw",
-       "Atoombinding",
-       "Molecuul",
-       "Mengsel"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Atoombouw»: protonen, neutronen, elektronen; periodiek systeem.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Atoombouw» in?",
-      "o": [
-       "protonen, neutronen, elektronen; periodiek systeem",
-       "een stof die uit één soort atomen bestaat",
-       "de mate waarin een stof oplost",
-       "binding met een gedeeld elektronenpaar tussen niet-metalen"
-      ],
-      "c": 0,
-      "u": "«Atoombouw» betekent: protonen, neutronen, elektronen; periodiek systeem.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Covalente binding»?",
-      "o": [
-       "niet-metalen; gedeelde elektronenparen; polair/apolair",
-       "atomen worden aan een dubbele binding toegevoegd",
-       "een koolwaterstof met een dubbele binding",
-       "hydroxylgroepalcohol"
-      ],
-      "c": 0,
-      "u": "«Covalente binding» betekent: niet-metalen; gedeelde elektronenparen; polair/apolair.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"niet-metalen; gedeelde elektronenparen; polair/apolair\"?",
-      "o": [
-       "Intermoleculaire krachten",
-       "Zuur",
        "Covalente binding",
-       "Alkaan"
+       "Ionbinding",
+       "Valentie-elektronen",
+       "Polair molecuul"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Covalente binding»: niet-metalen; gedeelde elektronenparen; polair/apolair.",
-      "d": 2
+      "c": 1,
+      "d": 2,
+      "u": "De binding tussen metaal- en niet-metaalionen. Dat past bij Ionbinding: metaal geeft, niet-metaal neemt.",
+      "uo": [
+       "Nee, dat hoort bij Covalente binding: elektronen delen.",
+       "Klopt: metaal geeft, niet-metaal neemt.",
+       "Nee, dat hoort bij Valentie-elektronen: buitenste elektronen.",
+       "Nee, dat hoort bij Polair molecuul: ongelijke ladingsverdeling."
+      ],
+      "uh": "Ionbinding: metaal geeft, niet-metaal neemt."
      },
      {
-      "v": "Welke term past bij: \"niet-metalen; gedeelde elektronenparen; polair/apolair\"?",
+      "v": "De buitenste elektronen die het chemisch gedrag bepalen. Om welk begrip gaat het?",
       "o": [
-       "Ion",
-       "Atoombouw",
+       "Polair molecuul",
        "Covalente binding",
-       "Molecuulformule"
+       "Valentie-elektronen",
+       "Apolair molecuul"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Covalente binding»: niet-metalen; gedeelde elektronenparen; polair/apolair.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Covalente binding» in?",
-      "o": [
-       "een combinatie van meerdere stoffen",
-       "niet-metalen; gedeelde elektronenparen; polair/apolair",
-       "de mate waarin een stof oplost",
-       "met een ongelijke ladingsverdeling"
+      "d": 1,
+      "u": "De buitenste elektronen die het chemisch gedrag bepalen. Dat past bij Valentie-elektronen: buitenste elektronen.",
+      "uo": [
+       "Nee, dat hoort bij Polair molecuul: ongelijke ladingsverdeling.",
+       "Nee, dat hoort bij Covalente binding: elektronen delen.",
+       "Klopt: buitenste elektronen.",
+       "Nee, dat hoort bij Apolair molecuul: gelijke ladingsverdeling."
       ],
-      "c": 1,
-      "u": "«Covalente binding» betekent: niet-metalen; gedeelde elektronenparen; polair/apolair.",
-      "d": 3
+      "uh": "Valentie-elektronen: buitenste elektronen."
      },
      {
-      "v": "Wat betekent «Intermoleculaire krachten»?",
+      "v": "Een binding waarbij atomen elektronen delen. Welk begrip herken je hier?",
       "o": [
-       "binding met een gedeeld elektronenpaar tussen niet-metalen",
-       "waterstofbruggen en vanderwaalskrachten",
-       "de massa van één mol stof (g/mol)",
-       "positieve ionen in een zee van vrije elektronen"
-      ],
-      "c": 1,
-      "u": "«Intermoleculaire krachten» betekent: waterstofbruggen en vanderwaalskrachten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"waterstofbruggen en vanderwaalskrachten\"?",
-      "o": [
-       "Intermoleculaire krachten",
-       "Mengsel",
-       "Filtratie",
-       "Emissie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Intermoleculaire krachten»: waterstofbruggen en vanderwaalskrachten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"waterstofbruggen en vanderwaalskrachten\"?",
-      "o": [
-       "Intermoleculaire krachten",
-       "Legering",
-       "Atoombinding",
-       "Molecuulformule"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Intermoleculaire krachten»: waterstofbruggen en vanderwaalskrachten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Intermoleculaire krachten» in?",
-      "o": [
-       "een homogeen mengsel van opgeloste stof en oplosmiddel",
-       "waterstofbruggen en vanderwaalskrachten",
-       "de mate waarin een stof oplost",
-       "met een ongelijke ladingsverdeling"
-      ],
-      "c": 1,
-      "u": "«Intermoleculaire krachten» betekent: waterstofbruggen en vanderwaalskrachten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Oplossen»?",
-      "o": [
-       "omzetting van stoffen tot nieuwe stoffen",
-       "\"like dissolves like\"",
-       "een reactie met overdracht van elektronen",
-       "symbool dat het gevaar van een stof aangeeft"
-      ],
-      "c": 1,
-      "u": "«Oplossen» betekent: \"like dissolves like\".",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"like dissolves like\"\"?",
-      "o": [
-       "Levenscyclusanalyse",
-       "−NH₂",
-       "Variabelen",
-       "Oplossen"
+       "Roosterenergie",
+       "Ionbinding",
+       "Apolair molecuul",
+       "Covalente binding"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Oplossen»: \"like dissolves like\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"\"like dissolves like\"\"?",
-      "o": [
-       "Polair",
-       "Metaalbinding",
-       "Molecuul",
-       "Oplossen"
+      "d": 2,
+      "u": "Een binding waarbij atomen elektronen delen. Dat past bij Covalente binding: elektronen delen.",
+      "uo": [
+       "Nee, dat hoort bij Roosterenergie: energie van roostervorming.",
+       "Nee, dat hoort bij Ionbinding: metaal geeft, niet-metaal neemt.",
+       "Nee, dat hoort bij Apolair molecuul: gelijke ladingsverdeling.",
+       "Klopt: elektronen delen."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Oplossen»: \"like dissolves like\".",
-      "d": 3
+      "uh": "Covalente binding: elektronen delen."
      },
      {
-      "v": "Wat houdt «Oplossen» in?",
+      "v": "Een molecuul met een netto-dipoolmoment. Wat is hier aan de hand?",
       "o": [
-       "\"like dissolves like\"",
-       "waterstofbruggen en vanderwaalskrachten",
-       "een mengsel van metalen",
-       "de mate waarin een stof oplost"
+       "Polair molecuul",
+       "Roosterenergie",
+       "Valentie-elektronen",
+       "Waterstofbrug"
       ],
       "c": 0,
-      "u": "«Oplossen» betekent: \"like dissolves like\".",
-      "d": 3
+      "d": 1,
+      "u": "Een molecuul met een netto-dipoolmoment. Dat past bij Polair molecuul: ongelijke ladingsverdeling.",
+      "uo": [
+       "Klopt: ongelijke ladingsverdeling.",
+       "Nee, dat hoort bij Roosterenergie: energie van roostervorming.",
+       "Nee, dat hoort bij Valentie-elektronen: buitenste elektronen.",
+       "Nee, dat hoort bij Waterstofbrug: H met N, O of F."
+      ],
+      "uh": "Polair molecuul: ongelijke ladingsverdeling."
+     },
+     {
+      "v": "Een metaal geeft elektronen aan een niet-metaal, er ontstaan ionen. Welk begrip past hierbij?",
+      "o": [
+       "Covalente binding",
+       "Ionbinding",
+       "Valentie-elektronen",
+       "Polair molecuul"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een metaal geeft elektronen aan een niet-metaal, er ontstaan ionen. Dat past bij Ionbinding: metaal geeft, niet-metaal neemt.",
+      "uo": [
+       "Nee, dat hoort bij Covalente binding: elektronen delen.",
+       "Klopt: metaal geeft, niet-metaal neemt.",
+       "Nee, dat hoort bij Valentie-elektronen: buitenste elektronen.",
+       "Nee, dat hoort bij Polair molecuul: ongelijke ladingsverdeling."
+      ],
+      "uh": "Ionbinding: metaal geeft, niet-metaal neemt."
+     },
+     {
+      "v": "Water heeft een plus- en een minkant: een netto dipool. Om welk begrip gaat het?",
+      "o": [
+       "Valentie-elektronen",
+       "Roosterenergie",
+       "Polair molecuul",
+       "Waterstofbrug"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Water heeft een plus- en een minkant: een netto dipool. Dat past bij Polair molecuul: ongelijke ladingsverdeling.",
+      "uo": [
+       "Nee, dat hoort bij Valentie-elektronen: buitenste elektronen.",
+       "Nee, dat hoort bij Roosterenergie: energie van roostervorming.",
+       "Klopt: ongelijke ladingsverdeling.",
+       "Nee, dat hoort bij Waterstofbrug: H met N, O of F."
+      ],
+      "uh": "Polair molecuul: ongelijke ladingsverdeling."
+     },
+     {
+      "v": "Tussen de OH-groepen van water werkt een sterke aantrekking. Welk begrip herken je hier?",
+      "o": [
+       "Covalente binding",
+       "Van der Waalskrachten",
+       "Periodiek systeem",
+       "Waterstofbrug"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Tussen de OH-groepen van water werkt een sterke aantrekking. Dat past bij Waterstofbrug: H met N, O of F.",
+      "uo": [
+       "Nee, dat hoort bij Covalente binding: elektronen delen.",
+       "Nee, dat hoort bij Van der Waalskrachten: zwakke molecuulkrachten.",
+       "Nee, dat hoort bij Periodiek systeem: ordening van elementen.",
+       "Klopt: H met N, O of F."
+      ],
+      "uh": "Waterstofbrug: H met N, O of F."
+     },
+     {
+      "v": "De energie die vrijkomt als gasionen een ionrooster vormen. Wat is hier aan de hand?",
+      "o": [
+       "Roosterenergie",
+       "Polair molecuul",
+       "Waterstofbrug",
+       "Periodiek systeem"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De energie die vrijkomt als gasionen een ionrooster vormen. Dat past bij Roosterenergie: energie van roostervorming.",
+      "uo": [
+       "Klopt: energie van roostervorming.",
+       "Nee, dat hoort bij Polair molecuul: ongelijke ladingsverdeling.",
+       "Nee, dat hoort bij Waterstofbrug: H met N, O of F.",
+       "Nee, dat hoort bij Periodiek systeem: ordening van elementen."
+      ],
+      "uh": "Roosterenergie: energie van roostervorming."
      }
     ],
     "oe": [
@@ -29063,72 +28593,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Atoom",
-      "d": "de kleinste bouwsteen van een element"
-     },
-     {
-      "t": "Molecuul",
-      "d": "een groepje gebonden atomen"
-     },
-     {
-      "t": "Polair",
-      "d": "met een ongelijke ladingsverdeling"
-     },
-     {
-      "t": "Oplosbaarheid",
-      "d": "de mate waarin een stof oplost"
-     },
-     {
-      "t": "Legering",
-      "d": "een mengsel van metalen"
-     },
-     {
-      "t": "Element",
-      "d": "een stof die uit één soort atomen bestaat"
-     },
-     {
-      "t": "Ion",
-      "d": "een geladen atoom of groep atomen"
-     },
-     {
       "t": "Ionbinding",
-      "d": "binding tussen tegengesteld geladen ionen"
-     },
-     {
-      "t": "Atoombinding",
-      "d": "binding met een gedeeld elektronenpaar tussen niet-metalen"
-     },
-     {
-      "t": "Molecuulformule",
-      "d": "geeft het aantal atomen per soort in een molecuul"
-     },
-     {
-      "t": "Mengsel",
-      "d": "een combinatie van meerdere stoffen"
-     },
-     {
-      "t": "Oplossing",
-      "d": "een homogeen mengsel van opgeloste stof en oplosmiddel"
-     },
-     {
-      "t": "Metaalbinding",
-      "d": "positieve ionen in een zee van vrije elektronen"
-     },
-     {
-      "t": "Atoombouw",
-      "d": "protonen, neutronen, elektronen; periodiek systeem"
+      "d": "de binding waarbij een metaal elektronen overdraagt aan een niet-metaal"
      },
      {
       "t": "Covalente binding",
-      "d": "niet-metalen; gedeelde elektronenparen; polair/apolair"
+      "d": "een binding waarbij atomen elektronen delen"
      },
      {
-      "t": "Intermoleculaire krachten",
-      "d": "waterstofbruggen en vanderwaalskrachten"
+      "t": "Waterstofbrug",
+      "d": "de sterke kracht tussen polair H en een vrij paar op N, O of F"
      },
      {
-      "t": "Oplossen",
-      "d": "\"like dissolves like\""
+      "t": "Van der Waalskrachten",
+      "d": "zwakke krachten tussen moleculen, sterker bij grotere massa"
+     },
+     {
+      "t": "Polair molecuul",
+      "d": "een molecuul met een netto-dipoolmoment"
+     },
+     {
+      "t": "Apolair molecuul",
+      "d": "een molecuul zonder netto-dipoolmoment"
+     },
+     {
+      "t": "Valentie-elektronen",
+      "d": "de elektronen in de buitenste schil die het chemisch gedrag bepalen"
+     },
+     {
+      "t": "Periodiek systeem",
+      "d": "de ordening van elementen op atoomnummer en valentie-elektronen"
+     },
+     {
+      "t": "Elektronegativiteit",
+      "d": "de mate waarin een atoom elektronen naar zich toe trekt"
+     },
+     {
+      "t": "Roosterenergie",
+      "d": "de energie die vrijkomt bij het vormen van een ionrooster uit gasionen"
      }
     ]
    },
@@ -29168,1151 +28670,615 @@ var VAKKEN = [
      "Mol, concentratie en stoichiometrie",
      "Verdunning en titratie"
     ],
-    "sam": "<div class=\"sam-head\">Zuren en basen (Brønsted-Lowry)</div><ul><li><strong>Zuur</strong>: protondonor - staat H⁺ af aan een base. Bijv. HCl, HNO₃, CH₃COOH.</li><li><strong>Base</strong>: protonacceptor - neemt H⁺ op. Bijv. NaOH, NH₃, Na₂CO₃.</li><li><strong>Sterk vs. zwak zuur</strong>: sterk (HCl, HNO₃, H₂SO₄) → volledig gedissocieerd in water. Zwak (CH₃COOH, H₂CO₃) → gedeeltelijk gedissocieerd, evenwicht aanwezig.</li><li><strong>Amfoteer</strong>: kan zowel als zuur als base fungeren. Water: H₂O geeft H⁺ (zuur) of neemt H⁺ op (base). Ook HCO₃⁻ en HSO₄⁻ zijn amfoteer.</li><li><strong>pH</strong>: <span class=\"fm\">pH = −log[H₃O⁺]</span>. Elke eenheid pH = factor 10 in [H⁺]. pH &lt; 7 = zuur, pH 7 = neutraal, pH > 7 = basisch. pH + pOH = 14.</li><li><strong>pH berekening sterk zuur</strong>: bijv. 0,01 mol/L HCl → [H⁺] = 0,01 → pH = −log(0,01) = 2.</li><li><strong>Neutralisatie</strong>: zuur + base → zout + water. Bijv. HCl + NaOH → NaCl + H₂O. Equivalentiepunt: n(zuur) = n(base).</li></ul><div class=\"sam-head\">Chemisch evenwicht</div><ul><li><strong>Le Chatelier-principe</strong>: verstoring → evenwicht verschuift om verstoring te compenseren. Meer reactant → meer product. Hogere druk → kant met minder gasmol. Hogere T → richting endotherm. Katalysator: evenwichtsligging verandert NIET, alleen bereikingssnelheid.</li><li><strong>Evenwichtsconstante Kc</strong>: voor A + B ⇌ C + D: <span class=\"fm\">Kc = [C][D] / [A][B]</span>. Groot Kc = evenwicht ligt rechts (veel product). Klein Kc = links (weinig product).</li><li><strong>Katalysator</strong>: verlaagt activeringsenergie voor zowel heen- als terugrichting. Sneller evenwicht bereiken. Reactie-opbrengst verandert niet.</li></ul><div class=\"sam-head\">Reactiesnelheid</div><ul><li><strong>Botsingstheorie</strong>: reactie vindt plaats bij botsing met voldoende energie (≥ activeringsenergie Ea) en juiste oriëntatie.</li><li><strong>Factoren die snelheid verhogen</strong>: hogere T (meer kinetische energie, meer effectieve botsingen), hogere concentratie (meer botsingen per seconde), kleiner deeltjesgrootte (groter reactieoppervlak), katalysator (lagere Ea).</li><li><strong>Reactiediagram</strong>: energiediagram toont reactanten, activeringsenergie (Ea), overgangscomplex (piek) en producten. Exotherm: producten lager dan reactanten (warmte vrij). Endotherm: producten hoger (warmte vereist).</li></ul><div class=\"sam-head\">Redoxreacties</div><ul><li><strong>Oxidatie</strong>: verlies van elektronen (of toename oxidatiegetal). OIL = Oxidation Is Loss.</li><li><strong>Reductie</strong>: opname van elektronen (of afname oxidatiegetal). RIG = Reduction Is Gain.</li><li><strong>Oxidator vs. reductor</strong>: oxidator neemt elektronen op (wordt zelf gereduceerd). Reductor geeft elektronen af (wordt zelf geoxideerd). Ze reageren altijd samen.</li><li><strong>Halfvergelijkingen</strong>: oxidatie en reductie apart uitschrijven. Optellen geeft de nettovergelijking. Elektronen moeten wegvallen.</li><li><strong>Roestvorming</strong>: Fe → Fe²⁺ + 2e⁻ (oxidatie) | O₂ + 4H⁺ + 4e⁻ → 2H₂O (reductie). IJzer is reductor, O₂ is oxidator.</li></ul><div class=\"sam-head\">Stoichiometrie en berekeningen</div><ul><li><strong>Mol</strong>: <span class=\"fm\">n = m / M</span>. Molaire massa M in g/mol (optellen uit PSE).</li><li><strong>Concentratie</strong>: <span class=\"fm\">c = n / V</span>. c in mol/L (M), V in L.</li><li><strong>Verdunning</strong>: <span class=\"fm\">c₁V₁ = c₂V₂</span>. Aantal mol blijft gelijk.</li><li><strong>Stoichiometrie</strong>: coëfficiënten = molverhoudingen. Bijv. N₂ + 3H₂ → 2NH₃: 1 mol N₂ + 3 mol H₂ geeft 2 mol NH₃.</li><li><strong>Rendement</strong>: <span class=\"fm\">η = (werkelijk / theoretisch) × 100%</span>. Oorzaken laag rendement: onvolledige reactie, bijreacties, verlies bij bereiding.</li><li><strong>Titratie</strong>: n(zuur) = c(zuur) × V(zuur). Bij equivalentiepunt: n(zuur) = n(base). Gebruik S-curve om equivalentiepunt te bepalen.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Een omkeerbare reactie stelt zich in op een <strong>chemisch evenwicht</strong>. Het <strong>Le Chatelier-principe</strong> voorspelt hoe het evenwicht op een verstoring reageert. Een <strong>katalysator</strong> versnelt zonder de evenwichtsligging te veranderen. Bij een <strong>redoxreactie</strong> verschuiven elektronen (<strong>oxidatie</strong> en <strong>reductie</strong>); zuren verschillen in <strong>sterk</strong> of <strong>zwak</strong>.</div><div class=\"sam-head\">1. Evenwicht en katalyse</div><p>Bij een <strong>chemisch evenwicht</strong> zijn de voorwaartse en terugreactie even snel. Het <strong>Le Chatelier-principe</strong>: bij een verstoring verschuift het evenwicht om die te compenseren. Een <strong>katalysator</strong> verlaagt de activeringsenergie en versnelt de reactie, maar verandert de evenwichtsligging niet.</p><div class=\"sam-head\">2. Zuren en redox</div><p>Een <strong>sterk zuur</strong> dissocieert volledig, een <strong>zwak zuur</strong> maar gedeeltelijk (hogere pH bij gelijke concentratie). Een <strong>amfotere</strong> stof kan zowel als zuur als base reageren. Bij <strong>oxidatie</strong> staat een deeltje elektronen af (oxidatiegetal stijgt), bij <strong>reductie</strong> neemt het ze op. De <strong>stoichiometrie</strong> geeft de molverhoudingen: N₂ + 3H₂ → 2NH₃.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Le Chatelier-principe</div><div class=\"sam-definitie-body\">een verstoord evenwicht verschuift zo dat de verstoring wordt gecompenseerd.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Chemisch evenwicht</div><div class=\"sam-definitie-body\">de toestand waarin voorwaartse en terugreactie even snel zijn.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Katalysator</div><div class=\"sam-definitie-body\">een stof die de reactie versnelt zonder zelf verbruikt te worden.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zwak zuur</div><div class=\"sam-definitie-body\">een zuur dat maar gedeeltelijk dissocieert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sterk zuur</div><div class=\"sam-definitie-body\">een zuur dat volledig dissocieert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Oxidatie</div><div class=\"sam-definitie-body\">het afstaan van elektronen, waardoor het oxidatiegetal stijgt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Reductie</div><div class=\"sam-definitie-body\">het opnemen van elektronen, waardoor het oxidatiegetal daalt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stoichiometrie</div><div class=\"sam-definitie-body\">de molverhoudingen tussen stoffen in een reactie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Amfoteer</div><div class=\"sam-definitie-body\">een stof die zowel als zuur als als base kan reageren.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">pH</div><div class=\"sam-definitie-body\">een maat voor de zuurgraad: lage pH is zuur, hoge pH is basisch.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Le Chatelier-principe»</b> is verstoring compenseren, terwijl <b>«Chemisch evenwicht»</b> reacties even snel is. <b>«Katalysator»</b> is versnelt zonder verbruik, terwijl <b>«Amfoteer»</b> zuur én base is. <b>«Zwak zuur»</b> is deels gedissocieerd, terwijl <b>«Sterk zuur»</b> volledig gedissocieerd is. <b>«Oxidatie»</b> is elektronen afstaan, terwijl <b>«Reductie»</b> elektronen opnemen is.</div>",
     "sv": [
      {
-      "v": "Welk principe voorspelt dat een evenwicht bij verstoring verschuift om die verstoring te compenseren?",
+      "v": "Welk principe voorspelt dat een evenwicht bij verstoring verschuift om die te compenseren?",
       "o": [
-       "Le Chatelier-principe",
-       "Wet van Hess (enthalpie is padsonafhankelijk)",
-       "Arrhenius-vergelijking (reactiesnelheid en temperatuur)",
-       "Massawerkingsrelatie (evenwichtsconstante Kc)"
+       "het Le Chatelier-principe",
+       "de wet van behoud van massa",
+       "het principe van Avogadro",
+       "de wet van Hess"
       ],
       "c": 0,
-      "u": "Le Chatelier: het systeem past zich aan om de stoornis te verminderen. Hogere concentratie reactant geeft meer product gevormd."
+      "d": 3,
+      "u": "Dat is het principe van Le Chatelier.",
+      "uo": [
+       "Klopt: dat is het principe van Le Chatelier.",
+       "Nee, dat gaat over massabalans.",
+       "Nee, dat gaat over gasvolumes.",
+       "Nee, dat gaat over reactie-energie."
+      ],
+      "uh": "Le Chatelier: evenwicht compenseert de verstoring."
      },
      {
-      "v": "Welk zuur dissocieert slechts gedeeltelijk in water en stelt daarmee een zuur-base evenwicht in?",
+      "v": "Welk zuur dissocieert slechts gedeeltelijk in water?",
       "o": [
-       "Zwak zuur (bijv. azijnzuur, deels gedissocieerd)",
-       "Sterk zuur (bijv. HCl, volledig gedissocieerd)",
-       "Amfoteer zuur (kan zowel H⁺ afstaan als opnemen)",
-       "Geconcentreerd zuur (hoge concentratie, los van dissociatie)"
+       "een sterk zuur",
+       "een zwak zuur (zoals azijnzuur)",
+       "een base",
+       "een zout"
       ],
-      "c": 0,
-      "u": "Sterk: HCl, HNO3, H2SO4 zijn 100% gedissocieerd. Zwak: azijnzuur heeft een evenwicht en is slechts gedeeltelijk gedissocieerd."
+      "c": 1,
+      "d": 3,
+      "u": "Een zwak zuur splitst maar deels.",
+      "uo": [
+       "Nee, dat dissocieert volledig.",
+       "Klopt: een zwak zuur splitst maar deels.",
+       "Nee, dat is geen zuur.",
+       "Nee, dat is geen zuur."
+      ],
+      "uh": "Zwak zuur: gedeeltelijk gedissocieerd."
      },
      {
       "v": "Wat doet een katalysator met de activeringsenergie en de evenwichtsligging?",
       "o": [
-       "Verlaagt activeringsenergie, evenwichtsligging onveranderd",
-       "Verhoogt activeringsenergie, evenwicht naar rechts",
-       "Verschuift evenwicht naar rechts, activeringsenergie onveranderd",
-       "Wordt verbruikt in de reactie en verhoogt de opbrengst"
+       "hij verschuift het evenwicht naar rechts",
+       "hij verhoogt de activeringsenergie",
+       "hij verlaagt de activeringsenergie, de evenwichtsligging blijft gelijk",
+       "hij stopt de reactie"
       ],
-      "c": 0,
-      "u": "Katalysator: lagere energiebarriere geeft meer moleculen die kunnen reageren. De evenwichtsligging zelf verandert niet."
+      "c": 2,
+      "d": 3,
+      "u": "Sneller evenwicht, maar niet op een andere plek.",
+      "uo": [
+       "Nee, de ligging blijft gelijk.",
+       "Nee, hij verlaagt die juist.",
+       "Klopt: sneller evenwicht, maar niet op een andere plek.",
+       "Nee, hij versnelt juist."
+      ],
+      "uh": "Katalysator: lagere Ea, ligging onveranderd."
      },
      {
       "v": "Welke factor heeft GEEN invloed op de ligging van een evenwicht?",
       "o": [
-       "Toevoeging van een katalysator",
-       "Temperatuurverandering",
-       "Concentratieverandering van een reactant of product",
-       "Drukverandering bij gasvormige reactanten"
+       "de druk (bij gassen)",
+       "de temperatuur",
+       "de concentratie",
+       "het toevoegen van een katalysator"
       ],
-      "c": 0,
-      "u": "Een katalysator verlaagt de activeringsenergie voor zowel de heen- als terugreactie. De evenwichtsligging verandert niet, maar het evenwicht wordt sneller bereikt."
+      "c": 3,
+      "d": 3,
+      "u": "Een katalysator verandert de snelheid, niet de ligging.",
+      "uo": [
+       "Nee, druk ook (bij gassen).",
+       "Nee, temperatuur verschuift het evenwicht.",
+       "Nee, concentratie ook.",
+       "Klopt: een katalysator verandert de snelheid, niet de ligging."
+      ],
+      "uh": "Katalysator: geen invloed op de ligging."
      },
      {
-      "v": "Welk type reactie vindt plaats wanneer een atoom elektronen afgeeft en zijn oxidatiegetal stijgt?",
+      "v": "Welk type reactie vindt plaats als een atoom elektronen afstaat en zijn oxidatiegetal stijgt?",
       "o": [
-       "Oxidatie (elektronen afstaan, oxidatiegetal stijgt)",
-       "Reductie (elektronen opnemen, oxidatiegetal daalt)",
-       "Precipitatie (neerslag vormen)",
-       "Hydrolyse (reactie met water)"
+       "oxidatie",
+       "reductie",
+       "neutralisatie",
+       "condensatie"
       ],
       "c": 0,
-      "u": "Oxidatie = verlies van elektronen = stijging oxidatiegetal. Reductie = opname van elektronen = daling oxidatiegetal. OILRIG: Oxidation Is Loss, Reduction Is Gain."
+      "d": 3,
+      "u": "Elektronen afstaan is oxidatie.",
+      "uo": [
+       "Klopt: elektronen afstaan is oxidatie.",
+       "Nee, dat is elektronen opnemen.",
+       "Nee, dat is zuur + base.",
+       "Nee, dat is een organische reactie."
+      ],
+      "uh": "Oxidatie: elektronen afstaan, oxidatiegetal stijgt."
      },
      {
-      "v": "Wat is het verschil tussen een sterk en een zwak zuur?",
+      "v": "Wat is het verschil tussen een sterk en een zwak zuur bij gelijke concentratie?",
       "o": [
-       "Sterk: volledig gedissocieerd in water. Zwak: gedeeltelijk gedissocieerd (evenwicht).",
-       "Sterk is meer geconcentreerd",
-       "Zwak heeft een hogere pH dan sterk bij gelijke concentratie",
-       "Ze zijn identiek"
+       "ze hebben dezelfde pH",
+       "een zwak zuur heeft een hogere pH dan een sterk zuur",
+       "een zwak zuur heeft een lagere pH",
+       "een sterk zuur dissocieert niet"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Minder dissociatie geeft minder H⁺ en dus hogere pH.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Klopt: minder dissociatie geeft minder H⁺ en dus hogere pH.",
+       "Nee, dat is omgedraaid.",
+       "Nee, een sterk zuur dissocieert juist volledig."
+      ],
+      "uh": "Zwak zuur: hogere pH bij gelijke concentratie."
+     },
+     {
+      "v": "Wat houdt de stoichiometrie in bij N₂ + 3H₂ → 2NH₃?",
+      "o": [
+       "3 mol N₂ met 1 mol H₂",
+       "1 mol N₂ reageert met 1 mol H₂",
+       "1 mol N₂ reageert met 3 mol H₂ tot 2 mol NH₃",
+       "de verhoudingen doen er niet toe"
       ],
       "c": 2,
-      "u": "Sterk zuur (HCl, H₂SO₄): 100% gedissocieerd, [H⁺] = concentratie. Zwak zuur (CH₃COOH): deels gedissocieerd, [H⁺] < concentratie, lagere H⁺ concentratie = hogere pH bij gelijke concentratie."
+      "d": 3,
+      "u": "De coëfficiënten geven de molverhoudingen.",
+      "uo": [
+       "Nee, dat is omgedraaid.",
+       "Nee, dat klopt niet met de vergelijking.",
+       "Klopt: de coëfficiënten geven de molverhoudingen.",
+       "Nee, de verhoudingen zijn juist essentieel."
+      ],
+      "uh": "Stoichiometrie: molverhoudingen uit de reactievergelijking."
      },
      {
-      "v": "Wat houdt de stoichiometrie in bij de reactie: N₂ + 3H₂ → 2NH₃?",
+      "v": "Welk begrip beschrijft een stof die zowel als zuur als als base kan reageren?",
       "o": [
-       "1 mol N₂ reageert met 3 mol H₂ tot 2 mol NH₃",
-       "1 g N₂ reageert met 3 g H₂",
-       "1 liter N₂ reageert met 3 liter H₂ ongeacht druk",
-       "Gelijke massa's van elk reactant worden gebruikt"
+       "covalent",
+       "katalytisch",
+       "apolair",
+       "amfoteer (bijvoorbeeld water)"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Een amfotere stof reageert beide kanten op.",
+      "uo": [
+       "Nee, dat is een bindingstype.",
+       "Nee, dat gaat over versnellen.",
+       "Nee, dat gaat over polariteit.",
+       "Klopt: een amfotere stof reageert beide kanten op."
+      ],
+      "uh": "Amfoteer: kan zuur én base zijn."
+     },
+     {
+      "v": "Wat is een katalysator?",
+      "o": [
+       "een stof die de reactie versnelt zonder zelf verbruikt te worden",
+       "een stof die de reactie stopt",
+       "een sterk zuur",
+       "een reactieproduct"
       ],
       "c": 0,
-      "u": "Coëfficiënten zijn molverhoudingen. N₂:H₂:NH₃ = 1:3:2. Voor 2 mol N₂ zijn 6 mol H₂ nodig en ontstaan 4 mol NH₃."
+      "d": 2,
+      "u": "Een katalysator versnelt en blijft over.",
+      "uo": [
+       "Klopt: een katalysator versnelt en blijft over.",
+       "Nee, hij versnelt juist.",
+       "Nee, dat is iets anders.",
+       "Nee, hij wordt niet verbruikt."
+      ],
+      "uh": "Katalysator: versnelt zonder te worden verbruikt."
      },
      {
-      "v": "Welk begrip beschrijft een stof die zowel als zuur als base kan reageren, afhankelijk van de reactionele partner?",
+      "v": "Wat gebeurt er bij reductie?",
       "o": [
-       "Amfoteer (bijv. water, aminozuren)",
-       "Geconjugeerd zuur-base paar",
-       "Bufferoplossing",
+       "een deeltje staat elektronen af",
+       "een deeltje neemt elektronen op, het oxidatiegetal daalt",
+       "er ontstaat een zuur",
+       "er komt water vrij"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Reductie is elektronen opnemen.",
+      "uo": [
+       "Nee, dat is oxidatie.",
+       "Klopt: reductie is elektronen opnemen.",
+       "Nee, dat is een zuur-basereactie.",
+       "Nee, dat is iets anders."
+      ],
+      "uh": "Reductie: elektronen opnemen, oxidatiegetal daalt."
+     },
+     {
+      "v": "Wat betekent een lage pH?",
+      "o": [
+       "de oplossing is neutraal",
+       "de oplossing is basisch",
+       "de oplossing is zuur",
+       "de oplossing is een katalysator"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Lage pH betekent veel H⁺, dus zuur.",
+      "uo": [
+       "Nee, neutraal is pH 7.",
+       "Nee, dat is een hoge pH.",
+       "Klopt: lage pH betekent veel H⁺, dus zuur.",
+       "Nee, dat is geen pH-begrip."
+      ],
+      "uh": "Lage pH: zuur."
+     },
+     {
+      "v": "Wat kenmerkt een chemisch evenwicht?",
+      "o": [
+       "alle beginstof is verdwenen",
+       "de reactie is helemaal gestopt",
+       "er is geen terugreactie",
+       "de voorwaartse en terugreactie zijn even snel"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Bij evenwicht lopen beide reacties even snel door.",
+      "uo": [
+       "Nee, er blijft beginstof over.",
+       "Nee, de reacties gaan door.",
+       "Nee, er is juist een terugreactie.",
+       "Klopt: bij evenwicht lopen beide reacties even snel door."
+      ],
+      "uh": "Evenwicht: heen- en terugreactie even snel."
+     },
+     {
+      "v": "De heen- en terugreactie lopen even snel door. Welk begrip past hierbij?",
+      "o": [
+       "Chemisch evenwicht",
+       "pH",
+       "Katalysator",
+       "Stoichiometrie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De heen- en terugreactie lopen even snel door. Dat past bij Chemisch evenwicht: reacties even snel.",
+      "uo": [
+       "Klopt: reacties even snel.",
+       "Nee, dat hoort bij pH: maat voor zuurgraad.",
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik.",
+       "Nee, dat hoort bij Stoichiometrie: molverhoudingen."
+      ],
+      "uh": "Chemisch evenwicht: reacties even snel."
+     },
+     {
+      "v": "In N2 plus 3H2 reageert 1 mol met 3 mol tot 2 mol NH3. Om welk begrip gaat het?",
+      "o": [
+       "Oxidatie",
+       "Stoichiometrie",
+       "Zwak zuur",
+       "pH"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "In N2 plus 3H2 reageert 1 mol met 3 mol tot 2 mol NH3. Dat past bij Stoichiometrie: molverhoudingen.",
+      "uo": [
+       "Nee, dat hoort bij Oxidatie: elektronen afstaan.",
+       "Klopt: molverhoudingen.",
+       "Nee, dat hoort bij Zwak zuur: deels gedissocieerd.",
+       "Nee, dat hoort bij pH: maat voor zuurgraad."
+      ],
+      "uh": "Stoichiometrie: molverhoudingen."
+     },
+     {
+      "v": "De molverhoudingen in een reactie. Welk begrip herken je hier?",
+      "o": [
+       "Zwak zuur",
+       "Oxidatie",
+       "Stoichiometrie",
+       "pH"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De molverhoudingen in een reactie. Dat past bij Stoichiometrie: molverhoudingen.",
+      "uo": [
+       "Nee, dat hoort bij Zwak zuur: deels gedissocieerd.",
+       "Nee, dat hoort bij Oxidatie: elektronen afstaan.",
+       "Klopt: molverhoudingen.",
+       "Nee, dat hoort bij pH: maat voor zuurgraad."
+      ],
+      "uh": "Stoichiometrie: molverhoudingen."
+     },
+     {
+      "v": "Een stof die zuur én base kan zijn. Wat is hier aan de hand?",
+      "o": [
+       "Oxidatie",
+       "Katalysator",
+       "Zwak zuur",
+       "Amfoteer"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een stof die zuur én base kan zijn. Dat past bij Amfoteer: zuur én base.",
+      "uo": [
+       "Nee, dat hoort bij Oxidatie: elektronen afstaan.",
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik.",
+       "Nee, dat hoort bij Zwak zuur: deels gedissocieerd.",
+       "Klopt: zuur én base."
+      ],
+      "uh": "Amfoteer: zuur én base."
+     },
+     {
+      "v": "Water kan als zuur én als base reageren. Welk begrip past hierbij?",
+      "o": [
+       "Amfoteer",
+       "Le Chatelier-principe",
+       "Sterk zuur",
+       "Stoichiometrie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Water kan als zuur én als base reageren. Dat past bij Amfoteer: zuur én base.",
+      "uo": [
+       "Klopt: zuur én base.",
+       "Nee, dat hoort bij Le Chatelier-principe: verstoring compenseren.",
+       "Nee, dat hoort bij Sterk zuur: volledig gedissocieerd.",
+       "Nee, dat hoort bij Stoichiometrie: molverhoudingen."
+      ],
+      "uh": "Amfoteer: zuur én base."
+     },
+     {
+      "v": "Het opnemen van elektronen. Om welk begrip gaat het?",
+      "o": [
+       "Oxidatie",
+       "Reductie",
+       "Katalysator",
        "Sterk zuur"
       ],
-      "c": 0,
-      "u": "Amfoteer: water kan H⁺ afstaan (zuur) of opnemen (base). Aminozuren zijn ook amfoteer: ze bezitten zowel een zure COOH als een basische NH₂ groep."
-     },
-     {
-      "v": "Wat betekent «Katalysator»?",
-      "o": [
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "de uitstoot van stoffen naar het milieu",
-       "reactie met zuurstof waarbij CO2 en water ontstaan",
-       "een stof die H⁺-ionen opneemt"
-      ],
-      "c": 0,
-      "u": "«Katalysator» betekent: stof die een reactie versnelt zonder verbruikt te worden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"stof die een reactie versnelt zonder verbruikt te worden\"?",
-      "o": [
-       "Materialen",
-       "Katalysator",
-       "−OH",
-       "Alkaan"
-      ],
       "c": 1,
-      "u": "Het juiste begrip is «Katalysator»: stof die een reactie versnelt zonder verbruikt te worden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"stof die een reactie versnelt zonder verbruikt te worden\"?",
-      "o": [
-       "Neutralisatie",
-       "Katalysator",
-       "Endotherm",
-       "Reacties & rekenen"
+      "d": 2,
+      "u": "Het opnemen van elektronen. Dat past bij Reductie: elektronen opnemen.",
+      "uo": [
+       "Nee, dat hoort bij Oxidatie: elektronen afstaan.",
+       "Klopt: elektronen opnemen.",
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik.",
+       "Nee, dat hoort bij Sterk zuur: volledig gedissocieerd."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Katalysator»: stof die een reactie versnelt zonder verbruikt te worden.",
-      "d": 3
+      "uh": "Reductie: elektronen opnemen."
      },
      {
-      "v": "Wat houdt «Katalysator» in?",
+      "v": "Het afstaan van elektronen. Welk begrip herken je hier?",
       "o": [
-       "een reactie die warmte afgeeft",
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "meer deeltjes → meer botsingen",
-       "een reactie met overdracht van elektronen"
-      ],
-      "c": 1,
-      "u": "«Katalysator» betekent: stof die een reactie versnelt zonder verbruikt te worden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Evenwicht»?",
-      "o": [
-       "toestand waarin heen- en terugreactie even snel gaan",
-       "kloppende weergave met formules en coëfficiënten",
-       "een mengsel van metalen",
-       "reactie met zuurstof waarbij CO2 en water ontstaan"
-      ],
-      "c": 0,
-      "u": "«Evenwicht» betekent: toestand waarin heen- en terugreactie even snel gaan.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"toestand waarin heen- en terugreactie even snel gaan\"?",
-      "o": [
-       "Alcohol",
-       "−OH",
-       "Evenwicht",
-       "Veiligheid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Evenwicht»: toestand waarin heen- en terugreactie even snel gaan.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"toestand waarin heen- en terugreactie even snel gaan\"?",
-      "o": [
+       "Zwak zuur",
+       "Le Chatelier-principe",
        "Oxidatie",
-       "Indicator",
-       "Evenwicht",
-       "Katalysator"
+       "Amfoteer"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Evenwicht»: toestand waarin heen- en terugreactie even snel gaan.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Evenwicht» in?",
-      "o": [
-       "deeltjes sneller → vaker én harder botsen",
-       "Brønsted-Lowry; pH; sterk vs. zwak",
-       "een reactie die warmte opneemt",
-       "toestand waarin heen- en terugreactie even snel gaan"
+      "d": 1,
+      "u": "Het afstaan van elektronen. Dat past bij Oxidatie: elektronen afstaan.",
+      "uo": [
+       "Nee, dat hoort bij Zwak zuur: deels gedissocieerd.",
+       "Nee, dat hoort bij Le Chatelier-principe: verstoring compenseren.",
+       "Klopt: elektronen afstaan.",
+       "Nee, dat hoort bij Amfoteer: zuur én base."
       ],
-      "c": 3,
-      "u": "«Evenwicht» betekent: toestand waarin heen- en terugreactie even snel gaan.",
-      "d": 3
+      "uh": "Oxidatie: elektronen afstaan."
      },
      {
-      "v": "Wat betekent «pH»?",
+      "v": "Een atoom staat elektronen af en het oxidatiegetal stijgt. Wat is hier aan de hand?",
       "o": [
-       "een maat voor de zuurgraad",
-       "conserveren, emulgatoren",
-       "waterstofbruggen en vanderwaalskrachten",
-       "geeft het aantal atomen per soort in een molecuul"
-      ],
-      "c": 0,
-      "u": "«pH» betekent: een maat voor de zuurgraad.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een maat voor de zuurgraad\"?",
-      "o": [
-       "Mol",
-       "pH",
-       "Polymeren",
-       "Isomerie & naamgeving"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «pH»: een maat voor de zuurgraad.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een maat voor de zuurgraad\"?",
-      "o": [
-       "pH",
-       "Zuur",
-       "Grotere verdelingsgraad",
-       "Hogere concentratie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «pH»: een maat voor de zuurgraad.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «pH» in?",
-      "o": [
-       "een maat voor de zuurgraad",
-       "Brønsted-Lowry; pH; sterk vs. zwak",
-       "een stof die H⁺-ionen afstaat",
-       "de verhouding waarin stoffen reageren"
-      ],
-      "c": 0,
-      "u": "«pH» betekent: een maat voor de zuurgraad.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Indicator»?",
-      "o": [
-       "met een ongelijke ladingsverdeling",
-       "een stof die met kleur de zuurgraad aangeeft",
-       "deeltjes sneller → vaker én harder botsen",
-       "materialen blijven in de kringloop"
-      ],
-      "c": 1,
-      "u": "«Indicator» betekent: een stof die met kleur de zuurgraad aangeeft.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die met kleur de zuurgraad aangeeft\"?",
-      "o": [
-       "Oplosbaarheid",
-       "Alkeen",
-       "Indicator",
-       "Katalysator"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Indicator»: een stof die met kleur de zuurgraad aangeeft.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een stof die met kleur de zuurgraad aangeeft\"?",
-      "o": [
-       "Indicator",
-       "Oxidatie",
-       "Hogere concentratie",
-       "Endotherm"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Indicator»: een stof die met kleur de zuurgraad aangeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Indicator» in?",
-      "o": [
-       "toestand waarin heen- en terugreactie even snel gaan",
-       "een reactie die warmte opneemt",
-       "een stof die met kleur de zuurgraad aangeeft",
-       "deeltjes sneller → vaker én harder botsen"
-      ],
-      "c": 2,
-      "u": "«Indicator» betekent: een stof die met kleur de zuurgraad aangeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Molverhouding»?",
-      "o": [
-       "een reactie die warmte afgeeft",
-       "meer contactoppervlak (poeder i.p.v. brok)",
-       "onafhankelijk, afhankelijk, constant",
-       "de verhouding waarin stoffen reageren"
-      ],
-      "c": 3,
-      "u": "«Molverhouding» betekent: de verhouding waarin stoffen reageren.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de verhouding waarin stoffen reageren\"?",
-      "o": [
-       "Atoombinding",
-       "Reactietypen",
-       "Filtratie",
-       "Molverhouding"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Molverhouding»: de verhouding waarin stoffen reageren.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de verhouding waarin stoffen reageren\"?",
-      "o": [
+       "Sterk zuur",
+       "Reductie",
        "Katalysator",
-       "Hogere concentratie",
-       "Evenwicht",
-       "Molverhouding"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Molverhouding»: de verhouding waarin stoffen reageren.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Molverhouding» in?",
-      "o": [
-       "omzetting van stoffen tot nieuwe stoffen",
-       "getal dat de molverhouding in een reactie aangeeft",
-       "de verhouding waarin stoffen reageren",
-       "een maat voor de zuurgraad"
-      ],
-      "c": 2,
-      "u": "«Molverhouding» betekent: de verhouding waarin stoffen reageren.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Chemische reactie»?",
-      "o": [
-       "omzetting van stoffen tot nieuwe stoffen",
-       "binding tussen tegengesteld geladen ionen",
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "een uitgangsmateriaal voor productie"
-      ],
-      "c": 0,
-      "u": "«Chemische reactie» betekent: omzetting van stoffen tot nieuwe stoffen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"omzetting van stoffen tot nieuwe stoffen\"?",
-      "o": [
-       "Chemische reactie",
-       "−OH",
-       "Zuren en basen",
-       "Recycling"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Chemische reactie»: omzetting van stoffen tot nieuwe stoffen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"omzetting van stoffen tot nieuwe stoffen\"?",
-      "o": [
-       "Hogere concentratie",
-       "Chemische reactie",
-       "Endotherm",
-       "Coëfficiënt"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Chemische reactie»: omzetting van stoffen tot nieuwe stoffen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Chemische reactie» in?",
-      "o": [
-       "omzetting van stoffen tot nieuwe stoffen",
-       "botsingstheorie, activeringsenergie, katalyse",
-       "een reactie met overdracht van elektronen",
-       "een stof die met kleur de zuurgraad aangeeft"
-      ],
-      "c": 0,
-      "u": "«Chemische reactie» betekent: omzetting van stoffen tot nieuwe stoffen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Reactievergelijking»?",
-      "o": [
-       "gebruik zonder uitputting voor de toekomst",
-       "met een ongelijke ladingsverdeling",
-       "kloppende weergave met formules en coëfficiënten",
-       "alkanen, alkenen, alkynen"
-      ],
-      "c": 2,
-      "u": "«Reactievergelijking» betekent: kloppende weergave met formules en coëfficiënten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"kloppende weergave met formules en coëfficiënten\"?",
-      "o": [
-       "Zuivere stof",
-       "Exotherm",
-       "−OH",
-       "Reactievergelijking"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Reactievergelijking»: kloppende weergave met formules en coëfficiënten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"kloppende weergave met formules en coëfficiënten\"?",
-      "o": [
-       "Hogere concentratie",
-       "Zuren en basen",
-       "Reactievergelijking",
-       "Indicator"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Reactievergelijking»: kloppende weergave met formules en coëfficiënten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Reactievergelijking» in?",
-      "o": [
-       "kloppende vergelijkingen; mol, massa, concentratie",
-       "botsingstheorie, activeringsenergie, katalyse",
-       "getal dat de molverhouding in een reactie aangeeft",
-       "kloppende weergave met formules en coëfficiënten"
-      ],
-      "c": 3,
-      "u": "«Reactievergelijking» betekent: kloppende weergave met formules en coëfficiënten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Coëfficiënt»?",
-      "o": [
-       "aminogroepamine",
-       "gebruik zonder uitputting voor de toekomst",
-       "een reactie die warmte afgeeft",
-       "getal dat de molverhouding in een reactie aangeeft"
-      ],
-      "c": 3,
-      "u": "«Coëfficiënt» betekent: getal dat de molverhouding in een reactie aangeeft.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"getal dat de molverhouding in een reactie aangeeft\"?",
-      "o": [
-       "Coëfficiënt",
-       "Metaalbinding",
-       "Base",
-       "Recycling"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Coëfficiënt»: getal dat de molverhouding in een reactie aangeeft.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"getal dat de molverhouding in een reactie aangeeft\"?",
-      "o": [
-       "Oxidatie",
-       "Endotherm",
-       "Coëfficiënt",
-       "Zuur"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Coëfficiënt»: getal dat de molverhouding in een reactie aangeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Coëfficiënt» in?",
-      "o": [
-       "deeltjes sneller → vaker én harder botsen",
-       "getal dat de molverhouding in een reactie aangeeft",
-       "een stof die H⁺-ionen afstaat",
-       "het opnemen van elektronen"
-      ],
-      "c": 1,
-      "u": "«Coëfficiënt» betekent: getal dat de molverhouding in een reactie aangeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Exotherm»?",
-      "o": [
-       "de massa van één mol stof (g/mol)",
-       "een reactie die warmte afgeeft",
-       "positieve ionen in een zee van vrije elektronen",
-       "reactieve groep die de eigenschappen bepaalt"
-      ],
-      "c": 1,
-      "u": "«Exotherm» betekent: een reactie die warmte afgeeft. Tegenover endotherm: exotherm geeft warmte áf (ΔH < 0).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een reactie die warmte afgeeft\"?",
-      "o": [
-       "Reductie",
-       "Substitutiereactie",
-       "Exotherm",
-       "Herhaalmetingen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Exotherm»: een reactie die warmte afgeeft. Tegenover endotherm: exotherm geeft warmte áf (ΔH < 0).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een reactie die warmte afgeeft\"?",
-      "o": [
-       "Exotherm",
-       "Hogere concentratie",
-       "Reacties & rekenen",
-       "Zuren en basen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Exotherm»: een reactie die warmte afgeeft. Tegenover endotherm: exotherm geeft warmte áf (ΔH < 0).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Exotherm» in?",
-      "o": [
-       "botsingstheorie, activeringsenergie, katalyse",
-       "een stof die H⁺-ionen afstaat",
-       "een reactie die warmte afgeeft",
-       "meer contactoppervlak (poeder i.p.v. brok)"
-      ],
-      "c": 2,
-      "u": "«Exotherm» betekent: een reactie die warmte afgeeft. Tegenover endotherm: exotherm geeft warmte áf (ΔH < 0).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Endotherm»?",
-      "o": [
-       "additie- en condensatiepolymerisatie",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
-       "positieve ionen in een zee van vrije elektronen",
-       "een reactie die warmte opneemt"
-      ],
-      "c": 3,
-      "u": "«Endotherm» betekent: een reactie die warmte opneemt. Tegenover exotherm: endotherm neemt warmte óp (ΔH > 0).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een reactie die warmte opneemt\"?",
-      "o": [
-       "Veiligheid",
-       "Industriële chemie",
-       "Endotherm",
-       "Hypothese"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Endotherm»: een reactie die warmte opneemt. Tegenover exotherm: endotherm neemt warmte óp (ΔH > 0).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een reactie die warmte opneemt\"?",
-      "o": [
-       "Reacties & rekenen",
-       "pH",
-       "Redoxreactie",
-       "Endotherm"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Endotherm»: een reactie die warmte opneemt. Tegenover exotherm: endotherm neemt warmte óp (ΔH > 0).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Endotherm» in?",
-      "o": [
-       "een reactie met overdracht van elektronen",
-       "een stof die H⁺-ionen opneemt",
-       "toestand waarin heen- en terugreactie even snel gaan",
-       "een reactie die warmte opneemt"
-      ],
-      "c": 3,
-      "u": "«Endotherm» betekent: een reactie die warmte opneemt. Tegenover exotherm: endotherm neemt warmte óp (ΔH > 0).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Zuur»?",
-      "o": [
-       "meer contactoppervlak (poeder i.p.v. brok)",
-       "geeft het aantal atomen per soort in een molecuul",
-       "een stof die H⁺-ionen afstaat",
-       "hoeveelheid opgeloste stof per liter (mol/L)"
-      ],
-      "c": 2,
-      "u": "«Zuur» betekent: een stof die H⁺-ionen afstaat.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die H⁺-ionen afstaat\"?",
-      "o": [
-       "Recycling",
-       "Reductie",
-       "Zuur",
-       "Grondstof"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Zuur»: een stof die H⁺-ionen afstaat.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een stof die H⁺-ionen afstaat\"?",
-      "o": [
-       "Molverhouding",
-       "Zuur",
-       "Indicator",
-       "Redoxreactie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Zuur»: een stof die H⁺-ionen afstaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Zuur» in?",
-      "o": [
-       "getal dat de molverhouding in een reactie aangeeft",
-       "omzetting van stoffen tot nieuwe stoffen",
-       "een reactie die warmte opneemt",
-       "een stof die H⁺-ionen afstaat"
-      ],
-      "c": 3,
-      "u": "«Zuur» betekent: een stof die H⁺-ionen afstaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Base»?",
-      "o": [
-       "een stof die H⁺-ionen opneemt",
-       "een verzadigde koolwaterstof",
-       "een gas dat warmte vasthoudt, zoals CO2",
-       "meer deeltjes → meer botsingen"
-      ],
-      "c": 0,
-      "u": "«Base» betekent: een stof die H⁺-ionen opneemt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die H⁺-ionen opneemt\"?",
-      "o": [
-       "Atoombinding",
-       "Base",
-       "Alcohol",
-       "Materialen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Base»: een stof die H⁺-ionen opneemt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een stof die H⁺-ionen opneemt\"?",
-      "o": [
-       "Hogere temperatuur",
-       "Reductie",
-       "Reactiesnelheid",
-       "Base"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Base»: een stof die H⁺-ionen opneemt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Base» in?",
-      "o": [
-       "botsingstheorie, activeringsenergie, katalyse",
-       "een stof die H⁺-ionen opneemt",
-       "een reactie met overdracht van elektronen",
-       "een stof die met kleur de zuurgraad aangeeft"
-      ],
-      "c": 1,
-      "u": "«Base» betekent: een stof die H⁺-ionen opneemt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Neutralisatie»?",
-      "o": [
-       "de −COOH-groep die kenmerkend is voor carbonzuren",
-       "reactie van een zuur met een base tot zout en water",
-       "positieve ionen in een zee van vrije elektronen",
-       "de mate waarin een stof oplost"
-      ],
-      "c": 1,
-      "u": "«Neutralisatie» betekent: reactie van een zuur met een base tot zout en water.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"reactie van een zuur met een base tot zout en water\"?",
-      "o": [
-       "Veiligheid",
-       "Voedsel",
-       "Coëfficiënt",
-       "Neutralisatie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Neutralisatie»: reactie van een zuur met een base tot zout en water.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"reactie van een zuur met een base tot zout en water\"?",
-      "o": [
-       "pH",
-       "Katalysator",
-       "Neutralisatie",
-       "Reductie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Neutralisatie»: reactie van een zuur met een base tot zout en water.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Neutralisatie» in?",
-      "o": [
-       "Brønsted-Lowry; pH; sterk vs. zwak",
-       "kloppende weergave met formules en coëfficiënten",
-       "meer contactoppervlak (poeder i.p.v. brok)",
-       "reactie van een zuur met een base tot zout en water"
-      ],
-      "c": 3,
-      "u": "«Neutralisatie» betekent: reactie van een zuur met een base tot zout en water.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Redoxreactie»?",
-      "o": [
-       "een reactie met overdracht van elektronen",
-       "symbool dat het gevaar van een stof aangeeft",
-       "een verzadigde koolwaterstof",
-       "additie- en condensatiepolymerisatie"
-      ],
-      "c": 0,
-      "u": "«Redoxreactie» betekent: een reactie met overdracht van elektronen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een reactie met overdracht van elektronen\"?",
-      "o": [
-       "Ester",
-       "Legering",
-       "Redoxreactie",
-       "Polymeer"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Redoxreactie»: een reactie met overdracht van elektronen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een reactie met overdracht van elektronen\"?",
-      "o": [
-       "Indicator",
-       "Redoxreactie",
-       "Reacties & rekenen",
-       "Zuren en basen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Redoxreactie»: een reactie met overdracht van elektronen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Redoxreactie» in?",
-      "o": [
-       "een reactie met overdracht van elektronen",
-       "het opnemen van elektronen",
-       "de verhouding waarin stoffen reageren",
-       "stof die een reactie versnelt zonder verbruikt te worden"
-      ],
-      "c": 0,
-      "u": "«Redoxreactie» betekent: een reactie met overdracht van elektronen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Oxidatie»?",
-      "o": [
-       "de verhouding waarin stoffen reageren",
-       "stoffen met dezelfde molecuulformule maar andere structuur",
-       "het afstaan van elektronen",
-       "een groepje gebonden atomen"
-      ],
-      "c": 2,
-      "u": "«Oxidatie» betekent: het afstaan van elektronen. Ezelsbruggetje OIL RIG: Oxidation Is Loss van elektronen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het afstaan van elektronen\"?",
-      "o": [
-       "pH",
-       "Hypothese",
-       "Atoombinding",
        "Oxidatie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Oxidatie»: het afstaan van elektronen. Ezelsbruggetje OIL RIG: Oxidation Is Loss van elektronen.",
-      "d": 2
+      "d": 2,
+      "u": "Een atoom staat elektronen af en het oxidatiegetal stijgt. Dat past bij Oxidatie: elektronen afstaan.",
+      "uo": [
+       "Nee, dat hoort bij Sterk zuur: volledig gedissocieerd.",
+       "Nee, dat hoort bij Reductie: elektronen opnemen.",
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik.",
+       "Klopt: elektronen afstaan."
+      ],
+      "uh": "Oxidatie: elektronen afstaan."
      },
      {
-      "v": "Welke term past bij: \"het afstaan van elektronen\"?",
+      "v": "Een zuur dat maar gedeeltelijk dissocieert. Welk begrip past hierbij?",
+      "o": [
+       "Zwak zuur",
+       "Katalysator",
+       "Le Chatelier-principe",
+       "pH"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een zuur dat maar gedeeltelijk dissocieert. Dat past bij Zwak zuur: deels gedissocieerd.",
+      "uo": [
+       "Klopt: deels gedissocieerd.",
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik.",
+       "Nee, dat hoort bij Le Chatelier-principe: verstoring compenseren.",
+       "Nee, dat hoort bij pH: maat voor zuurgraad."
+      ],
+      "uh": "Zwak zuur: deels gedissocieerd."
+     },
+     {
+      "v": "Azijnzuur splitst maar deels in water. Om welk begrip gaat het?",
+      "o": [
+       "Sterk zuur",
+       "Zwak zuur",
+       "Katalysator",
+       "Reductie"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Azijnzuur splitst maar deels in water. Dat past bij Zwak zuur: deels gedissocieerd.",
+      "uo": [
+       "Nee, dat hoort bij Sterk zuur: volledig gedissocieerd.",
+       "Klopt: deels gedissocieerd.",
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik.",
+       "Nee, dat hoort bij Reductie: elektronen opnemen."
+      ],
+      "uh": "Zwak zuur: deels gedissocieerd."
+     },
+     {
+      "v": "Een stof die een reactie versnelt zonder verbruik. Welk begrip herken je hier?",
+      "o": [
+       "pH",
+       "Le Chatelier-principe",
+       "Katalysator",
+       "Oxidatie"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een stof die een reactie versnelt zonder verbruik. Dat past bij Katalysator: versnelt zonder verbruik.",
+      "uo": [
+       "Nee, dat hoort bij pH: maat voor zuurgraad.",
+       "Nee, dat hoort bij Le Chatelier-principe: verstoring compenseren.",
+       "Klopt: versnelt zonder verbruik.",
+       "Nee, dat hoort bij Oxidatie: elektronen afstaan."
+      ],
+      "uh": "Katalysator: versnelt zonder verbruik."
+     },
+     {
+      "v": "Een maat voor de zuurgraad. Wat is hier aan de hand?",
+      "o": [
+       "Amfoteer",
+       "Zwak zuur",
+       "Stoichiometrie",
+       "pH"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een maat voor de zuurgraad. Dat past bij pH: maat voor zuurgraad.",
+      "uo": [
+       "Nee, dat hoort bij Amfoteer: zuur én base.",
+       "Nee, dat hoort bij Zwak zuur: deels gedissocieerd.",
+       "Nee, dat hoort bij Stoichiometrie: molverhoudingen.",
+       "Klopt: maat voor zuurgraad."
+      ],
+      "uh": "pH: maat voor zuurgraad."
+     },
+     {
+      "v": "Een verstoord evenwicht compenseert de verstoring. Welk begrip past hierbij?",
+      "o": [
+       "Le Chatelier-principe",
+       "Oxidatie",
+       "pH",
+       "Stoichiometrie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een verstoord evenwicht compenseert de verstoring. Dat past bij Le Chatelier-principe: verstoring compenseren.",
+      "uo": [
+       "Klopt: verstoring compenseren.",
+       "Nee, dat hoort bij Oxidatie: elektronen afstaan.",
+       "Nee, dat hoort bij pH: maat voor zuurgraad.",
+       "Nee, dat hoort bij Stoichiometrie: molverhoudingen."
+      ],
+      "uh": "Le Chatelier-principe: verstoring compenseren."
+     },
+     {
+      "v": "Een atoom neemt elektronen op en het oxidatiegetal daalt. Om welk begrip gaat het?",
       "o": [
        "Oxidatie",
-       "Evenwicht",
-       "Coëfficiënt",
-       "Reactievergelijking"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Oxidatie»: het afstaan van elektronen. Ezelsbruggetje OIL RIG: Oxidation Is Loss van elektronen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Oxidatie» in?",
-      "o": [
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "een stof die H⁺-ionen opneemt",
-       "meer contactoppervlak (poeder i.p.v. brok)",
-       "het afstaan van elektronen"
-      ],
-      "c": 3,
-      "u": "«Oxidatie» betekent: het afstaan van elektronen. Ezelsbruggetje OIL RIG: Oxidation Is Loss van elektronen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Reductie»?",
-      "o": [
-       "het opnemen van elektronen",
-       "zelfde formule, andere structuur",
-       "een koolstofverbinding met een OH-groep",
-       "geeft het aantal atomen per soort in een molecuul"
-      ],
-      "c": 0,
-      "u": "«Reductie» betekent: het opnemen van elektronen. Ezelsbruggetje OIL RIG: Reduction Is Gain van elektronen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het opnemen van elektronen\"?",
-      "o": [
-       "Voedsel",
-       "Hypothese",
        "Reductie",
-       "Atoombouw"
+       "Katalysator",
+       "Sterk zuur"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Een atoom neemt elektronen op en het oxidatiegetal daalt. Dat past bij Reductie: elektronen opnemen.",
+      "uo": [
+       "Nee, dat hoort bij Oxidatie: elektronen afstaan.",
+       "Klopt: elektronen opnemen.",
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik.",
+       "Nee, dat hoort bij Sterk zuur: volledig gedissocieerd."
+      ],
+      "uh": "Reductie: elektronen opnemen."
+     },
+     {
+      "v": "De toestand waarin beide reacties even snel zijn. Welk begrip herken je hier?",
+      "o": [
+       "Katalysator",
+       "pH",
+       "Chemisch evenwicht",
+       "Stoichiometrie"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Reductie»: het opnemen van elektronen. Ezelsbruggetje OIL RIG: Reduction Is Gain van elektronen.",
-      "d": 2
+      "d": 1,
+      "u": "De toestand waarin beide reacties even snel zijn. Dat past bij Chemisch evenwicht: reacties even snel.",
+      "uo": [
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik.",
+       "Nee, dat hoort bij pH: maat voor zuurgraad.",
+       "Klopt: reacties even snel.",
+       "Nee, dat hoort bij Stoichiometrie: molverhoudingen."
+      ],
+      "uh": "Chemisch evenwicht: reacties even snel."
      },
      {
-      "v": "Welke term past bij: \"het opnemen van elektronen\"?",
+      "v": "Een zuur dat volledig dissocieert. Wat is hier aan de hand?",
       "o": [
+       "Katalysator",
+       "Zwak zuur",
        "Reductie",
-       "Exotherm",
-       "Reacties & rekenen",
-       "Base"
+       "Sterk zuur"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een zuur dat volledig dissocieert. Dat past bij Sterk zuur: volledig gedissocieerd.",
+      "uo": [
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik.",
+       "Nee, dat hoort bij Zwak zuur: deels gedissocieerd.",
+       "Nee, dat hoort bij Reductie: elektronen opnemen.",
+       "Klopt: volledig gedissocieerd."
+      ],
+      "uh": "Sterk zuur: volledig gedissocieerd."
+     },
+     {
+      "v": "Verstoor je een evenwicht, dan verschuift het om dat te compenseren. Welk begrip past hierbij?",
+      "o": [
+       "Le Chatelier-principe",
+       "Oxidatie",
+       "pH",
+       "Stoichiometrie"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Reductie»: het opnemen van elektronen. Ezelsbruggetje OIL RIG: Reduction Is Gain van elektronen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Reductie» in?",
-      "o": [
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "Brønsted-Lowry; pH; sterk vs. zwak",
-       "het opnemen van elektronen",
-       "kloppende weergave met formules en coëfficiënten"
+      "d": 1,
+      "u": "Verstoor je een evenwicht, dan verschuift het om dat te compenseren. Dat past bij Le Chatelier-principe: verstoring compenseren.",
+      "uo": [
+       "Klopt: verstoring compenseren.",
+       "Nee, dat hoort bij Oxidatie: elektronen afstaan.",
+       "Nee, dat hoort bij pH: maat voor zuurgraad.",
+       "Nee, dat hoort bij Stoichiometrie: molverhoudingen."
       ],
-      "c": 2,
-      "u": "«Reductie» betekent: het opnemen van elektronen. Ezelsbruggetje OIL RIG: Reduction Is Gain van elektronen.",
-      "d": 3
+      "uh": "Le Chatelier-principe: verstoring compenseren."
      },
      {
-      "v": "Wat betekent «Reacties & rekenen»?",
+      "v": "Zoutzuur splitst volledig in water. Om welk begrip gaat het?",
       "o": [
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "kloppende weergave met formules en coëfficiënten",
-       "de uitstoot van stoffen naar het milieu",
-       "kloppende vergelijkingen; mol, massa, concentratie"
-      ],
-      "c": 3,
-      "u": "«Reacties & rekenen» betekent: kloppende vergelijkingen; mol, massa, concentratie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"kloppende vergelijkingen; mol, massa, concentratie\"?",
-      "o": [
+       "Zwak zuur",
+       "Sterk zuur",
        "Reductie",
-       "Oplossing",
-       "Duurzaamheid",
-       "Reacties & rekenen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Reacties & rekenen»: kloppende vergelijkingen; mol, massa, concentratie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"kloppende vergelijkingen; mol, massa, concentratie\"?",
-      "o": [
-       "Reacties & rekenen",
-       "Hogere temperatuur",
-       "Coëfficiënt",
        "Katalysator"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Reacties & rekenen»: kloppende vergelijkingen; mol, massa, concentratie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Reacties & rekenen» in?",
-      "o": [
-       "kloppende vergelijkingen; mol, massa, concentratie",
-       "getal dat de molverhouding in een reactie aangeeft",
-       "een stof die H⁺-ionen opneemt",
-       "deeltjes sneller → vaker én harder botsen"
+      "c": 1,
+      "d": 2,
+      "u": "Zoutzuur splitst volledig in water. Dat past bij Sterk zuur: volledig gedissocieerd.",
+      "uo": [
+       "Nee, dat hoort bij Zwak zuur: deels gedissocieerd.",
+       "Klopt: volledig gedissocieerd.",
+       "Nee, dat hoort bij Reductie: elektronen opnemen.",
+       "Nee, dat hoort bij Katalysator: versnelt zonder verbruik."
       ],
-      "c": 0,
-      "u": "«Reacties & rekenen» betekent: kloppende vergelijkingen; mol, massa, concentratie.",
-      "d": 3
+      "uh": "Sterk zuur: volledig gedissocieerd."
      },
      {
-      "v": "Wat betekent «Zuren en basen»?",
+      "v": "Een stof versnelt de reactie zonder zelf te worden verbruikt. Welk begrip herken je hier?",
       "o": [
-       "Brønsted-Lowry; pH; sterk vs. zwak",
-       "GHS-pictogrammen lezen",
-       "brandstof gemaakt uit biomassa",
-       "additie- en condensatiepolymerisatie"
-      ],
-      "c": 0,
-      "u": "«Zuren en basen» betekent: Brønsted-Lowry; pH; sterk vs. zwak.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"Brønsted-Lowry; pH; sterk vs. zwak\"?",
-      "o": [
-       "Chemische reactie",
-       "Additiereactie",
-       "Zuren en basen",
-       "Controle-experiment"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Zuren en basen»: Brønsted-Lowry; pH; sterk vs. zwak.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"Brønsted-Lowry; pH; sterk vs. zwak\"?",
-      "o": [
-       "Reacties & rekenen",
-       "Zuren en basen",
        "pH",
-       "Neutralisatie"
+       "Le Chatelier-principe",
+       "Katalysator",
+       "Oxidatie"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Zuren en basen»: Brønsted-Lowry; pH; sterk vs. zwak.",
-      "d": 3
+      "c": 2,
+      "d": 1,
+      "u": "Een stof versnelt de reactie zonder zelf te worden verbruikt. Dat past bij Katalysator: versnelt zonder verbruik.",
+      "uo": [
+       "Nee, dat hoort bij pH: maat voor zuurgraad.",
+       "Nee, dat hoort bij Le Chatelier-principe: verstoring compenseren.",
+       "Klopt: versnelt zonder verbruik.",
+       "Nee, dat hoort bij Oxidatie: elektronen afstaan."
+      ],
+      "uh": "Katalysator: versnelt zonder verbruik."
      },
      {
-      "v": "Wat houdt «Zuren en basen» in?",
+      "v": "Een lage pH betekent een zure oplossing. Wat is hier aan de hand?",
       "o": [
-       "getal dat de molverhouding in een reactie aangeeft",
-       "een stof die met kleur de zuurgraad aangeeft",
-       "een reactie met overdracht van elektronen",
-       "Brønsted-Lowry; pH; sterk vs. zwak"
+       "Amfoteer",
+       "Zwak zuur",
+       "Stoichiometrie",
+       "pH"
       ],
       "c": 3,
-      "u": "«Zuren en basen» betekent: Brønsted-Lowry; pH; sterk vs. zwak.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Reactiesnelheid»?",
-      "o": [
-       "botsingstheorie, activeringsenergie, katalyse",
-       "een maat voor de zuurgraad",
-       "een geladen atoom of groep atomen",
-       "additie- en condensatiepolymerisatie"
+      "d": 2,
+      "u": "Een lage pH betekent een zure oplossing. Dat past bij pH: maat voor zuurgraad.",
+      "uo": [
+       "Nee, dat hoort bij Amfoteer: zuur én base.",
+       "Nee, dat hoort bij Zwak zuur: deels gedissocieerd.",
+       "Nee, dat hoort bij Stoichiometrie: molverhoudingen.",
+       "Klopt: maat voor zuurgraad."
       ],
-      "c": 0,
-      "u": "«Reactiesnelheid» betekent: botsingstheorie, activeringsenergie, katalyse.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"botsingstheorie, activeringsenergie, katalyse\"?",
-      "o": [
-       "Reacties & rekenen",
-       "Mengsel",
-       "Reactiesnelheid",
-       "Alcohol"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Reactiesnelheid»: botsingstheorie, activeringsenergie, katalyse.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"botsingstheorie, activeringsenergie, katalyse\"?",
-      "o": [
-       "Indicator",
-       "Reactiesnelheid",
-       "Reductie",
-       "Endotherm"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Reactiesnelheid»: botsingstheorie, activeringsenergie, katalyse.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Reactiesnelheid» in?",
-      "o": [
-       "botsingstheorie, activeringsenergie, katalyse",
-       "een reactie met overdracht van elektronen",
-       "deeltjes sneller → vaker én harder botsen",
-       "het opnemen van elektronen"
-      ],
-      "c": 0,
-      "u": "«Reactiesnelheid» betekent: botsingstheorie, activeringsenergie, katalyse.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Hogere concentratie»?",
-      "o": [
-       "meer deeltjes → meer botsingen",
-       "een maat voor de zuurgraad",
-       "een stof die uit één soort atomen bestaat",
-       "niet-metalen; gedeelde elektronenparen; polair/apolair"
-      ],
-      "c": 0,
-      "u": "«Hogere concentratie» betekent: meer deeltjes → meer botsingen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"meer deeltjes → meer botsingen\"?",
-      "o": [
-       "Emissie",
-       "Hogere concentratie",
-       "Molecuulformule",
-       "Oplossen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Hogere concentratie»: meer deeltjes → meer botsingen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"meer deeltjes → meer botsingen\"?",
-      "o": [
-       "Hogere concentratie",
-       "Coëfficiënt",
-       "Oxidatie",
-       "Reactievergelijking"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Hogere concentratie»: meer deeltjes → meer botsingen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Hogere concentratie» in?",
-      "o": [
-       "getal dat de molverhouding in een reactie aangeeft",
-       "het afstaan van elektronen",
-       "meer deeltjes → meer botsingen",
-       "toestand waarin heen- en terugreactie even snel gaan"
-      ],
-      "c": 2,
-      "u": "«Hogere concentratie» betekent: meer deeltjes → meer botsingen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Hogere temperatuur»?",
-      "o": [
-       "atoomeconomie, minder afval, duurzaam",
-       "deeltjes sneller → vaker én harder botsen",
-       "zelfde formule, andere structuur",
-       "Brønsted-Lowry; pH; sterk vs. zwak"
-      ],
-      "c": 1,
-      "u": "«Hogere temperatuur» betekent: deeltjes sneller → vaker én harder botsen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"deeltjes sneller → vaker én harder botsen\"?",
-      "o": [
-       "Hogere temperatuur",
-       "Isomerie & naamgeving",
-       "Herhaalmetingen",
-       "Concentratie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Hogere temperatuur»: deeltjes sneller → vaker én harder botsen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"deeltjes sneller → vaker én harder botsen\"?",
-      "o": [
-       "Hogere temperatuur",
-       "Hogere concentratie",
-       "Zuren en basen",
-       "Zuur"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Hogere temperatuur»: deeltjes sneller → vaker én harder botsen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Hogere temperatuur» in?",
-      "o": [
-       "deeltjes sneller → vaker én harder botsen",
-       "reactie van een zuur met een base tot zout en water",
-       "een reactie die warmte afgeeft",
-       "meer deeltjes → meer botsingen"
-      ],
-      "c": 0,
-      "u": "«Hogere temperatuur» betekent: deeltjes sneller → vaker én harder botsen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Grotere verdelingsgraad»?",
-      "o": [
-       "protonen, neutronen, elektronen; periodiek systeem",
-       "\"like dissolves like\"",
-       "meer contactoppervlak (poeder i.p.v. brok)",
-       "het afstaan van elektronen"
-      ],
-      "c": 2,
-      "u": "«Grotere verdelingsgraad» betekent: meer contactoppervlak (poeder i.p.v. brok).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"meer contactoppervlak (poeder i.p.v. brok)\"?",
-      "o": [
-       "Mol",
-       "−COOH",
-       "Grotere verdelingsgraad",
-       "Isomeren"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Grotere verdelingsgraad»: meer contactoppervlak (poeder i.p.v. brok).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"meer contactoppervlak (poeder i.p.v. brok)\"?",
-      "o": [
-       "Oxidatie",
-       "Hogere temperatuur",
-       "Grotere verdelingsgraad",
-       "Hogere concentratie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Grotere verdelingsgraad»: meer contactoppervlak (poeder i.p.v. brok).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Grotere verdelingsgraad» in?",
-      "o": [
-       "botsingstheorie, activeringsenergie, katalyse",
-       "getal dat de molverhouding in een reactie aangeeft",
-       "reactie van een zuur met een base tot zout en water",
-       "meer contactoppervlak (poeder i.p.v. brok)"
-      ],
-      "c": 3,
-      "u": "«Grotere verdelingsgraad» betekent: meer contactoppervlak (poeder i.p.v. brok).",
-      "d": 3
+      "uh": "pH: maat voor zuurgraad."
      }
     ],
     "oe": [
@@ -30399,92 +29365,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
+      "t": "Le Chatelier-principe",
+      "d": "een verstoord evenwicht verschuift zo dat de verstoring wordt gecompenseerd"
+     },
+     {
+      "t": "Chemisch evenwicht",
+      "d": "de toestand waarin voorwaartse en terugreactie even snel zijn"
+     },
+     {
       "t": "Katalysator",
-      "d": "stof die een reactie versnelt zonder verbruikt te worden"
+      "d": "een stof die de reactie versnelt zonder zelf verbruikt te worden"
      },
      {
-      "t": "Evenwicht",
-      "d": "toestand waarin heen- en terugreactie even snel gaan"
+      "t": "Zwak zuur",
+      "d": "een zuur dat maar gedeeltelijk dissocieert"
      },
      {
-      "t": "pH",
-      "d": "een maat voor de zuurgraad"
-     },
-     {
-      "t": "Indicator",
-      "d": "een stof die met kleur de zuurgraad aangeeft"
-     },
-     {
-      "t": "Molverhouding",
-      "d": "de verhouding waarin stoffen reageren"
-     },
-     {
-      "t": "Chemische reactie",
-      "d": "omzetting van stoffen tot nieuwe stoffen"
-     },
-     {
-      "t": "Reactievergelijking",
-      "d": "kloppende weergave met formules en coëfficiënten"
-     },
-     {
-      "t": "Coëfficiënt",
-      "d": "getal dat de molverhouding in een reactie aangeeft"
-     },
-     {
-      "t": "Exotherm",
-      "d": "een reactie die warmte afgeeft"
-     },
-     {
-      "t": "Endotherm",
-      "d": "een reactie die warmte opneemt"
-     },
-     {
-      "t": "Zuur",
-      "d": "een stof die H⁺-ionen afstaat"
-     },
-     {
-      "t": "Base",
-      "d": "een stof die H⁺-ionen opneemt"
-     },
-     {
-      "t": "Neutralisatie",
-      "d": "reactie van een zuur met een base tot zout en water"
-     },
-     {
-      "t": "Redoxreactie",
-      "d": "een reactie met overdracht van elektronen"
+      "t": "Sterk zuur",
+      "d": "een zuur dat volledig dissocieert"
      },
      {
       "t": "Oxidatie",
-      "d": "het afstaan van elektronen"
+      "d": "het afstaan van elektronen, waardoor het oxidatiegetal stijgt"
      },
      {
       "t": "Reductie",
-      "d": "het opnemen van elektronen"
+      "d": "het opnemen van elektronen, waardoor het oxidatiegetal daalt"
      },
      {
-      "t": "Reacties & rekenen",
-      "d": "kloppende vergelijkingen; mol, massa, concentratie"
+      "t": "Stoichiometrie",
+      "d": "de molverhoudingen tussen stoffen in een reactie"
      },
      {
-      "t": "Zuren en basen",
-      "d": "Brønsted-Lowry; pH; sterk vs. zwak"
+      "t": "Amfoteer",
+      "d": "een stof die zowel als zuur als als base kan reageren"
      },
      {
-      "t": "Reactiesnelheid",
-      "d": "botsingstheorie, activeringsenergie, katalyse"
-     },
-     {
-      "t": "Hogere concentratie",
-      "d": "meer deeltjes → meer botsingen"
-     },
-     {
-      "t": "Hogere temperatuur",
-      "d": "deeltjes sneller → vaker én harder botsen"
-     },
-     {
-      "t": "Grotere verdelingsgraad",
-      "d": "meer contactoppervlak (poeder i.p.v. brok)"
+      "t": "pH",
+      "d": "een maat voor de zuurgraad: lage pH is zuur, hoge pH is basisch"
      }
     ]
    },
@@ -30511,1099 +29429,634 @@ var VAKKEN = [
      "Reactietypen: additie, substitutie, esterificatie, hydrolyse",
      "Polymeren (additie- en condensatiepolymerisatie)"
     ],
-    "sam": "<div class=\"sam-head\">Koolwaterstoffen</div><ul><li><strong>Alkanen</strong>: CₙH₂ₙ₊₂, volledig verzadigd (alleen C−C enkelvoudige bindingen). Reactief via substitutie bij UV-licht. Bijv. methaan (CH₄), ethaan (C₂H₆), propaan (C₃H₈).</li><li><strong>Alkenen</strong>: CₙH₂ₙ, bevatten één C=C dubbele binding. Reactief via additie. Bijv. etheen (CH₂=CH₂). Test: broomwater ontkleurt bij additie van Br₂.</li><li><strong>IUPAC-naamgeving</strong>: (1) langste keten = stamnaam, (2) nummer koolstofatomen zodat substituenten laagst mogelijk genummerd zijn, (3) noem substituenten alfabetisch als prefix.</li><li><strong>Structuurisomerie</strong>: zelfde molecuulformule, andere rangschikking van atomen. Bijv. butaan en methylpropaan, beide C₄H₁₀. Andere structuur = andere eigenschappen.</li></ul><div class=\"sam-head\">Functionele groepen</div><ul><li><strong>Alcohol (−OH)</strong>: hogere kookpunten dan alkanen door waterstofbruggen. Primair, secundair, tertiair afhankelijk van positie −OH.</li><li><strong>Carbonzuur (−COOH)</strong>: zuur, protondonor. Bijv. azijnzuur (CH₃COOH). Reageert met alcohol tot ester.</li><li><strong>Amine (−NH₂)</strong>: base, protonacceptor. Bijv. methylamine.</li><li><strong>Ester (−COO−)</strong>: ruiken fruitig. Gevormd via esterificatie van carbonzuur + alcohol.</li><li><strong>Aldehyde (−CHO)</strong>: kan worden geoxideerd tot carbonzuur.</li></ul><div class=\"sam-head\">Reactietypen</div><ul><li><strong>Additie</strong>: reagens wordt toegevoegd aan de dubbele binding. Product is verzadigd. Bijv. CH₂=CH₂ + Br₂ → CH₂Br−CH₂Br.</li><li><strong>Substitutie</strong>: H-atoom vervangen door een ander atoom (bijv. halogeen). Alkanen reageren zo bij UV-licht.</li><li><strong>Esterificatie</strong>: −COOH + −OH ⇌ ester + H₂O. Katalysator H⁺. Omkeerbare reactie - opbrengst verhogen via Le Chatelier (overmaat reactant of water verwijderen).</li><li><strong>Additiepolymerisatie</strong>: alkenen koppelen aaneen door opening van C=C binding. Geen bijproduct. Bijv. etheen → polyetheen (PE).</li><li><strong>Condensatiepolymerisatie</strong>: twee monomeertypen reageren met vorming van een bindend bijproduct (water of HCl). Bijv. nylon (amidebinding), PET (esterbinding).</li></ul>",
+    "sam": "<div class=\"sam-intro\">Organische stoffen herken je aan hun <strong>functionele groep</strong>: de <strong>hydroxylgroep</strong> (alcohol) en de <strong>carboxylgroep</strong> (carbonzuur). Reacties zijn onder meer <strong>verbranding</strong>, <strong>substitutie</strong> en <strong>esterificatie</strong>. Kunststoffen ontstaan via <strong>additie-</strong> of <strong>condensatiepolymerisatie</strong>.</div><div class=\"sam-head\">1. Functionele groepen en reacties</div><p>Een <strong>alcohol</strong> heeft een <strong>hydroxylgroep</strong> (−OH), een <strong>carbonzuur</strong> een <strong>carboxylgroep</strong> (−COOH). Bij <strong>esterificatie</strong> reageren een carbonzuur en een alcohol tot een ester en water. <strong>Alkanen</strong> verbranden (CH₄ + 2O₂ → CO₂ + 2H₂O) en ondergaan <strong>substitutie</strong> met chloor onder UV-licht. In de <strong>homologe reeks</strong> stijgt het kookpunt met de ketenlengte.</p><div class=\"sam-head\">2. Polymeren</div><p>Bij <strong>additiepolymerisatie</strong> komt geen bijproduct vrij; bij <strong>condensatiepolymerisatie</strong> wel (water of HCl), zoals bij nylon, PET en eiwitten (aminozuren via peptidebindingen). De <strong>IUPAC-naam</strong> van CH₃−CH₂−CH₂−OH is propaan-1-ol.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Esterificatie</div><div class=\"sam-definitie-body\">de omkeerbare reactie van een carbonzuur en een alcohol tot een ester en water.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Condensatiepolymerisatie</div><div class=\"sam-definitie-body\">polymerisatie waarbij per koppeling een bijproduct (water) vrijkomt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Additiepolymerisatie</div><div class=\"sam-definitie-body\">polymerisatie waarbij geen bijproduct vrijkomt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Hydroxylgroep</div><div class=\"sam-definitie-body\">de −OH-groep die een alcohol kenmerkt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Carboxylgroep</div><div class=\"sam-definitie-body\">de −COOH-groep die een carbonzuur kenmerkt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Alkaan</div><div class=\"sam-definitie-body\">een verzadigde koolwaterstof met alleen enkele bindingen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Substitutie</div><div class=\"sam-definitie-body\">een reactie waarbij een atoom door een ander wordt vervangen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Verbranding</div><div class=\"sam-definitie-body\">de reactie van een stof met zuurstof, met CO₂ en water als producten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Homologe reeks</div><div class=\"sam-definitie-body\">een reeks verbindingen die per stap met een CH₂-groep verschilt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Functionele groep</div><div class=\"sam-definitie-body\">de atoomgroep die de eigenschappen van een organische stof bepaalt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Esterificatie»</b> is carbonzuur + alcohol → ester, terwijl <b>«Substitutie»</b> atoom vervangen is. <b>«Condensatiepolymerisatie»</b> is polymeriseren met bijproduct, terwijl <b>«Additiepolymerisatie»</b> polymeriseren zonder bijproduct is. <b>«Hydroxylgroep»</b> is −OH, alcohol, terwijl <b>«Carboxylgroep»</b> −COOH, carbonzuur is. <b>«Alkaan»</b> is verzadigde koolwaterstof, terwijl <b>«Functionele groep»</b> bepaalt de eigenschappen is.</div>",
     "sv": [
      {
-      "v": "Welke omkeerbare reactie vindt plaats tussen een carbonzuur en een alcohol onder vorming van een ester en water?",
+      "v": "Welke omkeerbare reactie tussen een carbonzuur en een alcohol vormt een ester en water?",
       "o": [
-       "Esterificatie (RCOOH + ROH ⇌ RCOOR + H₂O)",
-       "Additie (reagens aan dubbele binding)",
-       "Substitutie (H vervangen door halogeen)",
-       "Eliminatie (H en OH worden afgesplitst als water)"
+       "esterificatie",
+       "verbranding",
+       "substitutie",
+       "additie"
       ],
       "c": 0,
-      "u": "R-COOH + R-OH is in evenwicht met R-COO-R + H2O. Katalysator H+. Esters ruiken fruitig."
+      "d": 3,
+      "u": "RCOOH + ROH ⇌ ester + water.",
+      "uo": [
+       "Klopt: RCOOH + ROH ⇌ ester + water.",
+       "Nee, dat is reactie met zuurstof.",
+       "Nee, dat vervangt een atoom.",
+       "Nee, dat koppelt zonder bijproduct."
+      ],
+      "uh": "Esterificatie: carbonzuur + alcohol → ester + water."
      },
      {
-      "v": "Welk polymerisatietype produceert bij elke koppelingstap een bijproduct (water of HCl)?",
+      "v": "Welk polymerisatietype produceert bij elke koppeling een bijproduct zoals water?",
       "o": [
-       "Condensatiepolymerisatie (bijv. nylon, PET - bijproduct H₂O)",
-       "Additiepolymerisatie (bijv. PE, PVC - geen bijproduct)",
-       "Radicaalpolymerisatie (vrije radicalen, geen bijproduct)",
-       "Ringopening-polymerisatie (cyclisch monomeer opent)"
+       "additiepolymerisatie",
+       "condensatiepolymerisatie",
+       "verbranding",
+       "substitutie"
       ],
-      "c": 0,
-      "u": "Additiepoly: opening van C=C, geen bijproduct. Condensatiepoly: twee monomeertypen, water of HCl als bijproduct."
+      "c": 1,
+      "d": 3,
+      "u": "Bij condensatie komt water of HCl vrij.",
+      "uo": [
+       "Nee, daarbij komt geen bijproduct vrij.",
+       "Klopt: bij condensatie komt water of HCl vrij.",
+       "Nee, dat is geen polymerisatie.",
+       "Nee, dat is een andere reactie."
+      ],
+      "uh": "Condensatiepolymerisatie: met bijproduct."
      },
      {
       "v": "Welke functionele groep kenmerkt een alcohol?",
       "o": [
-       "Hydroxylgroep (−OH)",
-       "Carboxylgroep (−COOH)",
-       "Aminogroep (−NH₂)",
-       "Aldehydegroep (−CHO)"
-      ],
-      "c": 0,
-      "u": "Alcoholen bevatten een hydroxylgroep (−OH) gebonden aan een koolstofatoom. Bijv. ethanol (CH₃CH₂OH). Ze kunnen waterstofbruggen vormen waardoor ze hogere kookpunten hebben dan alkanen."
-     },
-     {
-      "v": "Welk polymeer is een condensatiepolymeer dat bestaat uit aminozuren en is gevormd via peptidebindingen?",
-      "o": [
-       "Eiwit (polypeptide)",
-       "Polyetheen (PE) - additiepolymeer",
-       "PVC (polyvinylchloride) - additiepolymeer",
-       "Cellulose - polysaccharide (suikerenopolymeer)"
-      ],
-      "c": 0,
-      "u": "Eiwitten zijn natuurlijke condensatiepolymeren. Aminozuren worden verbonden via peptidebindingen (−CO−NH−) waarbij water als bijproduct vrijkomt."
-     },
-     {
-      "v": "Welke reactie beschrijft de verbranding van een alkaan zoals methaan (CH₄)?",
-      "o": [
-       "CH₄ + 2O₂ → CO₂ + 2H₂O (volledige verbranding)",
-       "CH₄ + O₂ → CO + H₂O (onvolledige verbranding)",
-       "CH₄ → C + 2H₂ (pyrolyse)",
-       "CH₄ + Cl₂ → CH₃Cl + HCl (substitutie)"
-      ],
-      "c": 0,
-      "u": "Volledige verbranding van koolwaterstoffen: koolstof → CO₂, waterstof → H₂O. Bij onvoldoende zuurstof: CO vorming (gevaarlijk). Methaanverbranding levert veel warmte (aardgas)."
-     },
-     {
-      "v": "Welke naam heeft het organisme dat bij de fermentatie (gisting) van suiker ethanol en CO₂ produceert?",
-      "o": [
-       "Gist (Saccharomyces cerevisiae)",
-       "Coli-bacterie (Escherichia coli)",
-       "Melkzuurbacterie (Lactobacillus)",
-       "Schimmel (Penicillium)"
-      ],
-      "c": 0,
-      "u": "Gist voert alcoholische fermentatie uit: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂. Gebruikt bij brood, bier en wijn. Melkzuurbacterien produceren melkzuur, niet ethanol."
-     },
-     {
-      "v": "Welke functionele groep kenmerkt een carbonzuur (organisch zuur)?",
-      "o": [
-       "Carboxylgroep (−COOH)",
-       "Hydroxylgroep (−OH) bij alcoholen",
-       "Aldehydegroep (−CHO) bij aldehyden",
-       "Ketogroep (C=O) bij ketonen"
-      ],
-      "c": 0,
-      "u": "Carbonzuren bevatten de carboxylgroep (−COOH). Bijv. azijnzuur (CH₃COOH). Ze zijn zwak zuur: −COOH ⇌ −COO⁻ + H⁺. Reageren met alcoholen tot esters (esterificatie) en met basen tot zouten. Herkenbaar aan de geur van azijn en boterzuur."
-     },
-     {
-      "v": "Welke IUPAC-naam heeft de verbinding CH₃−CH₂−CH₂−OH?",
-      "o": [
-       "Propaan-1-ol",
-       "Propaan-2-ol",
-       "Butaan-1-ol",
-       "Ethanol"
-      ],
-      "c": 0,
-      "u": "De langste keten heeft 3 C-atomen → propaan. De −OH groep zit aan C-1 → propaan-1-ol. Bij propaan-2-ol zit −OH aan C-2. Naamgeving: keten + positie + functionele groep."
-     },
-     {
-      "v": "Wat is het kenmerkende verschil tussen een additiepolymeer en een condensatiepolymeer?",
-      "o": [
-       "Additiepolymeren hebben kortere ketens dan condensatiepolymeren",
-       "Bij additiepolymerisatie komt geen bijproduct vrij; bij condensatie wel (bijv. water)",
-       "Additiepolymeren zijn altijd biologisch afbreekbaar",
-       "Condensatiepolymeren bevatten altijd stikstof in de hoofdketen"
-      ],
-      "c": 1,
-      "u": "Additiepoly (bijv. PE, PP): C=C opent en monomeren koppelen zonder bijproduct. Condensatiepoly (bijv. nylon, PET): twee functionele groepen reageren met vorming van water of HCl als bijproduct per koppeling."
-     },
-     {
-      "v": "Welk type reactie ondergaan alkanen met chloorgas bij UV-licht?",
-      "o": [
-       "Additie: chloor wordt toegevoegd aan de dubbele binding",
-       "Substitutie: een H-atoom wordt vervangen door een Cl-atoom",
-       "Eliminatie: HCl wordt afgesplitst",
-       "Esterificatie: chloor reageert met de hydroxylgroep"
-      ],
-      "c": 1,
-      "u": "Alkanen zijn verzadigd en reageren via substitutie. Bij UV-licht wordt Cl₂ gesplitst in radicalen: CH₄ + Cl• → CH₃• + HCl, CH₃• + Cl₂ → CH₃Cl + Cl•. Dit is een radicaalsubstitutie."
-     },
-     {
-      "v": "Welke verbinding wordt gevormd bij de reactie van ethanol met azijnzuur in aanwezigheid van een zuurkatalysator?",
-      "o": [
-       "Ethylacetaat (ester) + water",
-       "Ethylamine (amine) + water",
-       "Ethaanzuur (carbonzuur) + etheen",
-       "Diethylether + zuurstof"
-      ],
-      "c": 0,
-      "u": "Esterificatie: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O. Het product ethylacetaat (ethylethanoaat) is een ester met fruitige geur. Reactie is omkeerbaar; H⁺ is katalysator."
-     },
-     {
-      "v": "Hoe verandert het kookpunt als men van methaan (CH₄) naar butaan (C₄H₁₀) gaat in de homologe reeks van alkanen?",
-      "o": [
-       "Het kookpunt daalt omdat grotere moleculen lichter zijn",
-       "Het kookpunt stijgt omdat grotere moleculen sterkere Van der Waalskrachten hebben",
-       "Het kookpunt blijft gelijk - alleen de viscositeit neemt toe",
-       "Het kookpunt stijgt omdat grotere moleculen waterstofbruggen kunnen vormen"
-      ],
-      "c": 1,
-      "u": "In de homologe reeks nemen de Van der Waalskrachten toe met het aantal elektronen (groter molecuul). Meer energie nodig om te verdampen → hoger kookpunt. Alkanen vormen geen waterstofbruggen - dat doen alcoholen wel."
-     },
-     {
-      "v": "Wat betekent «Alkaan»?",
-      "o": [
-       "alcohol, carbonzuur, amine, ester",
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "een verzadigde koolwaterstof",
-       "een reactie met overdracht van elektronen"
+       "de aminogroep (−NH₂)",
+       "de carboxylgroep (−COOH)",
+       "de hydroxylgroep (−OH)",
+       "de estergroep"
       ],
       "c": 2,
-      "u": "«Alkaan» betekent: een verzadigde koolwaterstof.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een verzadigde koolwaterstof\"?",
-      "o": [
-       "Molecuulformule",
-       "Alkaan",
-       "Recycling",
-       "Intermoleculaire krachten"
+      "d": 2,
+      "u": "Een alcohol heeft een −OH-groep.",
+      "uo": [
+       "Nee, dat is een amine.",
+       "Nee, dat is een carbonzuur.",
+       "Klopt: een alcohol heeft een −OH-groep.",
+       "Nee, dat is een ester."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Alkaan»: een verzadigde koolwaterstof.",
-      "d": 2
+      "uh": "Alcohol: hydroxylgroep (−OH)."
      },
      {
-      "v": "Welke term past bij: \"een verzadigde koolwaterstof\"?",
+      "v": "Welk condensatiepolymeer bestaat uit aminozuren, gekoppeld via peptidebindingen?",
       "o": [
-       "−COOH",
-       "Alkaan",
-       "Verbranding",
-       "−COO−"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Alkaan»: een verzadigde koolwaterstof.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alkaan» in?",
-      "o": [
-       "atomen worden aan een dubbele binding toegevoegd",
-       "reactie met zuurstof waarbij CO2 en water ontstaan",
-       "alkanen, alkenen, alkynen",
-       "een verzadigde koolwaterstof"
+       "rubber",
+       "polyetheen",
+       "PVC",
+       "een eiwit (polypeptide)"
       ],
       "c": 3,
-      "u": "«Alkaan» betekent: een verzadigde koolwaterstof.",
-      "d": 3
+      "d": 3,
+      "u": "Eiwitten zijn condensatiepolymeren van aminozuren.",
+      "uo": [
+       "Nee, dat is iets anders.",
+       "Nee, dat is een additiepolymeer.",
+       "Nee, dat is een additiepolymeer.",
+       "Klopt: eiwitten zijn condensatiepolymeren van aminozuren."
+      ],
+      "uh": "Eiwit: condensatiepolymeer van aminozuren."
      },
      {
-      "v": "Wat betekent «Alkeen»?",
+      "v": "Welke reactie beschrijft de volledige verbranding van methaan?",
       "o": [
-       "een stof die H⁺-ionen opneemt",
-       "een koolwaterstof met een dubbele binding",
-       "een stof met maar één soort deeltjes",
-       "milieubeoordeling van grondstof tot afval"
+       "CH₄ + 2O₂ → CO₂ + 2H₂O",
+       "CH₄ → C + 2H₂",
+       "CH₄ + Cl₂ → CH₃Cl + HCl",
+       "CH₄ + H₂O → CO + 3H₂"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Methaan plus zuurstof geeft CO₂ en water.",
+      "uo": [
+       "Klopt: methaan plus zuurstof geeft CO₂ en water.",
+       "Nee, dat is ontleding, geen verbranding.",
+       "Nee, dat is substitutie.",
+       "Nee, dat is een andere reactie."
+      ],
+      "uh": "Verbranding methaan: CH₄ + 2O₂ → CO₂ + 2H₂O."
+     },
+     {
+      "v": "Welk organisme produceert bij de gisting van suiker ethanol en CO₂?",
+      "o": [
+       "een bacterie in de darm",
+       "gist (Saccharomyces cerevisiae)",
+       "een schimmel op brood",
+       "een alg"
       ],
       "c": 1,
-      "u": "«Alkeen» betekent: een koolwaterstof met een dubbele binding.",
-      "d": 1
+      "d": 2,
+      "u": "Gist zet suiker om in ethanol en CO₂.",
+      "uo": [
+       "Nee, dat is niet de gistingsorganisme.",
+       "Klopt: gist zet suiker om in ethanol en CO₂.",
+       "Nee, dat is een andere schimmel.",
+       "Nee, algen doen fotosynthese."
+      ],
+      "uh": "Gisting: gist maakt ethanol en CO₂."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een koolwaterstof met een dubbele binding\"?",
+      "v": "Welke functionele groep kenmerkt een carbonzuur?",
+      "o": [
+       "de aminogroep (−NH₂)",
+       "de hydroxylgroep (−OH)",
+       "de carboxylgroep (−COOH)",
+       "de aldehydegroep"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een carbonzuur heeft een −COOH-groep.",
+      "uo": [
+       "Nee, dat is een amine.",
+       "Nee, dat is een alcohol.",
+       "Klopt: een carbonzuur heeft een −COOH-groep.",
+       "Nee, dat is een aldehyde."
+      ],
+      "uh": "Carbonzuur: carboxylgroep (−COOH)."
+     },
+     {
+      "v": "Welke IUPAC-naam heeft CH₃−CH₂−CH₂−OH?",
+      "o": [
+       "butaan-1-ol",
+       "ethanol",
+       "propaanzuur",
+       "propaan-1-ol"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Drie koolstofatomen met een OH aan het uiteinde.",
+      "uo": [
+       "Nee, dat heeft vier koolstofatomen.",
+       "Nee, dat heeft twee koolstofatomen.",
+       "Nee, dat is een zuur.",
+       "Klopt: drie koolstofatomen met een OH aan het uiteinde."
+      ],
+      "uh": "Propaan-1-ol: drie C, OH op plaats 1."
+     },
+     {
+      "v": "Wat is het verschil tussen een additie- en een condensatiepolymeer?",
+      "o": [
+       "bij additie komt geen bijproduct vrij, bij condensatie wel",
+       "ze zijn hetzelfde",
+       "bij additie komt water vrij",
+       "bij condensatie komt niets vrij"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het bijproduct maakt het verschil.",
+      "uo": [
+       "Klopt: het bijproduct maakt het verschil.",
+       "Nee, ze verschillen.",
+       "Nee, dat is bij condensatie.",
+       "Nee, daar komt juist water vrij."
+      ],
+      "uh": "Additie: geen bijproduct; condensatie: wel."
+     },
+     {
+      "v": "Welk type reactie ondergaan alkanen met chloorgas onder UV-licht?",
+      "o": [
+       "additie",
+       "substitutie: een H-atoom wordt vervangen door Cl",
+       "verbranding",
+       "esterificatie"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Onder UV vervangt Cl een waterstofatoom.",
+      "uo": [
+       "Nee, alkanen zijn verzadigd, geen additie.",
+       "Klopt: onder UV vervangt Cl een waterstofatoom.",
+       "Nee, dat is met zuurstof.",
+       "Nee, dat is met een alcohol en zuur."
+      ],
+      "uh": "Alkaan + Cl₂ (UV): substitutie."
+     },
+     {
+      "v": "Welke verbinding ontstaat bij de reactie van ethanol met azijnzuur (met zuurkatalysator)?",
+      "o": [
+       "zout en water",
+       "methaan en waterstof",
+       "ethylacetaat (een ester) en water",
+       "koolstofdioxide en zuurstof"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Alcohol + carbonzuur geeft een ester.",
+      "uo": [
+       "Nee, dat is neutralisatie.",
+       "Nee, dat is geen esterificatie.",
+       "Klopt: alcohol + carbonzuur geeft een ester.",
+       "Nee, dat is verbranding."
+      ],
+      "uh": "Ethanol + azijnzuur: ethylacetaat + water."
+     },
+     {
+      "v": "Hoe verandert het kookpunt van methaan naar butaan in de homologe reeks?",
+      "o": [
+       "het wordt nul",
+       "het daalt",
+       "het blijft gelijk",
+       "het stijgt, omdat grotere moleculen sterkere Van der Waalskrachten hebben"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Langere ketens hebben sterkere molecuulkrachten.",
+      "uo": [
+       "Nee, dat kan niet.",
+       "Nee, het stijgt juist.",
+       "Nee, het verandert wel.",
+       "Klopt: langere ketens hebben sterkere molecuulkrachten."
+      ],
+      "uh": "Homologe reeks: langer molecuul, hoger kookpunt."
+     },
+     {
+      "v": "Wat is een functionele groep?",
+      "o": [
+       "de atoomgroep die de eigenschappen van een organische stof bepaalt",
+       "de hele koolstofketen",
+       "een bindingstype tussen metalen",
+       "een katalysator"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De functionele groep bepaalt de reacties.",
+      "uo": [
+       "Klopt: de functionele groep bepaalt de reacties.",
+       "Nee, dat is de keten, niet de groep.",
+       "Nee, dat is een binding.",
+       "Nee, dat is iets anders."
+      ],
+      "uh": "Functionele groep: bepaalt de eigenschappen."
+     },
+     {
+      "v": "Bij het koppelen komt telkens water vrij, zoals bij nylon. Welk begrip past hierbij?",
       "o": [
        "Carboxylgroep",
-       "Alcohol",
-       "Intermoleculaire krachten",
-       "Alkeen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Alkeen»: een koolwaterstof met een dubbele binding.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een koolwaterstof met een dubbele binding\"?",
-      "o": [
-       "Alkeen",
-       "−NH₂",
-       "Verbranding",
+       "Condensatiepolymerisatie",
+       "Alkaan",
        "Functionele groep"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Alkeen»: een koolwaterstof met een dubbele binding.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alkeen» in?",
-      "o": [
-       "alcohol, carbonzuur, amine, ester",
-       "een koolwaterstof met een dubbele binding",
-       "estergroepester",
-       "een geurstof uit een zuur en een alcohol"
-      ],
       "c": 1,
-      "u": "«Alkeen» betekent: een koolwaterstof met een dubbele binding.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Alcohol»?",
-      "o": [
-       "kloppende vergelijkingen; mol, massa, concentratie",
-       "CO₂ (verbranding fossiel)opwarming klimaat",
-       "een toetsbare voorspelling",
-       "een koolstofverbinding met een OH-groep"
+      "d": 1,
+      "u": "Bij het koppelen komt telkens water vrij, zoals bij nylon. Dat past bij Condensatiepolymerisatie: polymeriseren met bijproduct.",
+      "uo": [
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur.",
+       "Klopt: polymeriseren met bijproduct.",
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof.",
+       "Nee, dat hoort bij Functionele groep: bepaalt de eigenschappen."
       ],
-      "c": 3,
-      "u": "«Alcohol» betekent: een koolstofverbinding met een OH-groep.",
-      "d": 1
+      "uh": "Condensatiepolymerisatie: polymeriseren met bijproduct."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een koolstofverbinding met een OH-groep\"?",
-      "o": [
-       "Alcohol",
-       "−COOH",
-       "Broeikaseffect",
-       "Base"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Alcohol»: een koolstofverbinding met een OH-groep.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een koolstofverbinding met een OH-groep\"?",
-      "o": [
-       "Polymeren",
-       "Ester",
-       "Alkeen",
-       "Alcohol"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Alcohol»: een koolstofverbinding met een OH-groep.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alcohol» in?",
-      "o": [
-       "een koolstofverbinding met een OH-groep",
-       "een koolwaterstof met een dubbele binding",
-       "stoffen met dezelfde molecuulformule maar andere structuur",
-       "een verzadigde koolwaterstof"
-      ],
-      "c": 0,
-      "u": "«Alcohol» betekent: een koolstofverbinding met een OH-groep.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ester»?",
-      "o": [
-       "een geurstof uit een zuur en een alcohol",
-       "aminogroepamine",
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "GHS-pictogrammen lezen"
-      ],
-      "c": 0,
-      "u": "«Ester» betekent: een geurstof uit een zuur en een alcohol.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een geurstof uit een zuur en een alcohol\"?",
-      "o": [
-       "Polymeer",
-       "Ionbinding",
-       "Ester",
-       "Alkaan"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Ester»: een geurstof uit een zuur en een alcohol.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een geurstof uit een zuur en een alcohol\"?",
+      "v": "Methaan reageert met zuurstof tot CO2 en water. Om welk begrip gaat het?",
       "o": [
        "Functionele groep",
-       "Functionele groepen",
-       "−NH₂",
-       "Ester"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Ester»: een geurstof uit een zuur en een alcohol.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ester» in?",
-      "o": [
-       "een geurstof uit een zuur en een alcohol",
-       "een koolwaterstof met een dubbele binding",
-       "hydroxylgroepalcohol",
-       "additie, substitutie, ester­vorming, hydrolyse"
-      ],
-      "c": 0,
-      "u": "«Ester» betekent: een geurstof uit een zuur en een alcohol.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Polymeer»?",
-      "o": [
-       "een groot molecuul uit vele monomeren",
-       "Haber-Bosch; compromis rendement/snelheid",
-       "een stof die met kleur de zuurgraad aangeeft",
-       "de kleinste bouwsteen van een element"
-      ],
-      "c": 0,
-      "u": "«Polymeer» betekent: een groot molecuul uit vele monomeren.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een groot molecuul uit vele monomeren\"?",
-      "o": [
-       "Duurzaamheid",
-       "Broeikasgas",
-       "Polymeer",
-       "Materialen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Polymeer»: een groot molecuul uit vele monomeren.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een groot molecuul uit vele monomeren\"?",
-      "o": [
-       "Alkeen",
-       "Homologe reeksen",
-       "Isomeren",
-       "Polymeer"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Polymeer»: een groot molecuul uit vele monomeren.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Polymeer» in?",
-      "o": [
-       "de carboxylgroep, kenmerkend voor carbonzuren",
-       "een groot molecuul uit vele monomeren",
-       "atomen worden aan een dubbele binding toegevoegd",
-       "alkanen, alkenen, alkynen"
-      ],
-      "c": 1,
-      "u": "«Polymeer» betekent: een groot molecuul uit vele monomeren.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Carboxylgroep»?",
-      "o": [
-       "onafhankelijk, afhankelijk, constant",
-       "de −COOH-groep die kenmerkend is voor carbonzuren",
-       "een maat voor de zuurgraad",
-       "reactie van een zuur met een base tot zout en water"
-      ],
-      "c": 1,
-      "u": "«Carboxylgroep» betekent: de −COOH-groep die kenmerkend is voor carbonzuren.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de −COOH-groep die kenmerkend is voor carbonzuren\"?",
-      "o": [
-       "Chemische reactie",
-       "Carboxylgroep",
-       "Zuivere stof",
-       "Indicator"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Carboxylgroep»: de −COOH-groep die kenmerkend is voor carbonzuren.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de −COOH-groep die kenmerkend is voor carbonzuren\"?",
-      "o": [
-       "Isomerie & naamgeving",
-       "Carboxylgroep",
-       "Ester",
-       "Alkaan"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Carboxylgroep»: de −COOH-groep die kenmerkend is voor carbonzuren.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Carboxylgroep» in?",
-      "o": [
-       "een geurstof uit een zuur en een alcohol",
-       "de −COOH-groep die kenmerkend is voor carbonzuren",
-       "een koolwaterstof met een dubbele binding",
-       "reactie met zuurstof waarbij CO2 en water ontstaan"
-      ],
-      "c": 1,
-      "u": "«Carboxylgroep» betekent: de −COOH-groep die kenmerkend is voor carbonzuren.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «−COOH»?",
-      "o": [
-       "binding tussen tegengesteld geladen ionen",
-       "een groot molecuul uit vele monomeren",
-       "onafhankelijk, afhankelijk, constant",
-       "de carboxylgroep, kenmerkend voor carbonzuren"
-      ],
-      "c": 3,
-      "u": "«−COOH» betekent: de carboxylgroep, kenmerkend voor carbonzuren.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de carboxylgroep, kenmerkend voor carbonzuren\"?",
-      "o": [
-       "Broeikasgas",
-       "Functionele groep",
-       "Molverhouding",
-       "−COOH"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «−COOH»: de carboxylgroep, kenmerkend voor carbonzuren.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de carboxylgroep, kenmerkend voor carbonzuren\"?",
-      "o": [
-       "Homologe reeksen",
-       "−COOH",
-       "Ester",
-       "Polymeer"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «−COOH»: de carboxylgroep, kenmerkend voor carbonzuren.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «−COOH» in?",
-      "o": [
-       "alcohol, carbonzuur, amine, ester",
-       "de carboxylgroep, kenmerkend voor carbonzuren",
-       "hydroxylgroepalcohol",
-       "atomen worden aan een dubbele binding toegevoegd"
-      ],
-      "c": 1,
-      "u": "«−COOH» betekent: de carboxylgroep, kenmerkend voor carbonzuren.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Functionele groep»?",
-      "o": [
-       "materialen blijven in de kringloop",
-       "een stof die uit één soort atomen bestaat",
-       "reactieve groep die de eigenschappen bepaalt",
-       "het hergebruiken van materialen"
-      ],
-      "c": 2,
-      "u": "«Functionele groep» betekent: reactieve groep die de eigenschappen bepaalt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"reactieve groep die de eigenschappen bepaalt\"?",
-      "o": [
-       "Groene chemie",
-       "Polymeren",
-       "Functionele groep",
-       "Oplossing"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Functionele groep»: reactieve groep die de eigenschappen bepaalt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"reactieve groep die de eigenschappen bepaalt\"?",
-      "o": [
-       "−NH₂",
-       "Substitutiereactie",
-       "Functionele groep",
-       "Verbranding"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Functionele groep»: reactieve groep die de eigenschappen bepaalt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Functionele groep» in?",
-      "o": [
-       "een koolstofverbinding met een OH-groep",
-       "reactieve groep die de eigenschappen bepaalt",
-       "estergroepester",
-       "de carboxylgroep, kenmerkend voor carbonzuren"
-      ],
-      "c": 1,
-      "u": "«Functionele groep» betekent: reactieve groep die de eigenschappen bepaalt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Isomeren»?",
-      "o": [
-       "de carboxylgroep, kenmerkend voor carbonzuren",
-       "stoffen met dezelfde molecuulformule maar andere structuur",
-       "atomen worden aan een dubbele binding toegevoegd",
-       "CFK's (drijfgassen)meer uv-straling"
-      ],
-      "c": 1,
-      "u": "«Isomeren» betekent: stoffen met dezelfde molecuulformule maar andere structuur.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"stoffen met dezelfde molecuulformule maar andere structuur\"?",
-      "o": [
-       "Hogere concentratie",
-       "Isomeren",
-       "−NH₂",
-       "Recycling"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Isomeren»: stoffen met dezelfde molecuulformule maar andere structuur.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"stoffen met dezelfde molecuulformule maar andere structuur\"?",
-      "o": [
-       "Additiereactie",
-       "Functionele groep",
-       "Isomeren",
-       "Alkaan"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Isomeren»: stoffen met dezelfde molecuulformule maar andere structuur.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Isomeren» in?",
-      "o": [
-       "estergroepester",
-       "stoffen met dezelfde molecuulformule maar andere structuur",
-       "aminogroepamine",
-       "een groot molecuul uit vele monomeren"
-      ],
-      "c": 1,
-      "u": "«Isomeren» betekent: stoffen met dezelfde molecuulformule maar andere structuur.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Additiereactie»?",
-      "o": [
-       "een groot molecuul uit vele monomeren",
-       "atomen worden aan een dubbele binding toegevoegd",
-       "getal dat de molverhouding in een reactie aangeeft",
-       "GHS-pictogrammen lezen"
-      ],
-      "c": 1,
-      "u": "«Additiereactie» betekent: atomen worden aan een dubbele binding toegevoegd.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"atomen worden aan een dubbele binding toegevoegd\"?",
-      "o": [
-       "Evenwicht",
-       "Mengsel",
-       "−COOH",
-       "Additiereactie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Additiereactie»: atomen worden aan een dubbele binding toegevoegd.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"atomen worden aan een dubbele binding toegevoegd\"?",
-      "o": [
-       "Additiereactie",
-       "Verbranding",
-       "Isomerie & naamgeving",
-       "Functionele groep"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Additiereactie»: atomen worden aan een dubbele binding toegevoegd.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Additiereactie» in?",
-      "o": [
-       "een verzadigde koolwaterstof",
-       "atomen worden aan een dubbele binding toegevoegd",
-       "een geurstof uit een zuur en een alcohol",
-       "een groot molecuul uit vele monomeren"
-      ],
-      "c": 1,
-      "u": "«Additiereactie» betekent: atomen worden aan een dubbele binding toegevoegd.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Substitutiereactie»?",
-      "o": [
-       "gebruik zonder uitputting voor de toekomst",
-       "rekeneenheid voor hoeveelheid stof (6,02·10²³ deeltjes)",
-       "een atoom of groep wordt vervangen door een andere",
-       "geeft het aantal atomen per soort in een molecuul"
-      ],
-      "c": 2,
-      "u": "«Substitutiereactie» betekent: een atoom of groep wordt vervangen door een andere.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een atoom of groep wordt vervangen door een andere\"?",
-      "o": [
-       "GHS-pictogram",
-       "Substitutiereactie",
-       "Molecuulformule",
-       "Mengsel"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Substitutiereactie»: een atoom of groep wordt vervangen door een andere.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een atoom of groep wordt vervangen door een andere\"?",
-      "o": [
-       "−COOH",
-       "−COO−",
-       "Functionele groep",
-       "Substitutiereactie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Substitutiereactie»: een atoom of groep wordt vervangen door een andere.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Substitutiereactie» in?",
-      "o": [
-       "stoffen met dezelfde molecuulformule maar andere structuur",
-       "atomen worden aan een dubbele binding toegevoegd",
-       "reactie met zuurstof waarbij CO2 en water ontstaan",
-       "een atoom of groep wordt vervangen door een andere"
-      ],
-      "c": 3,
-      "u": "«Substitutiereactie» betekent: een atoom of groep wordt vervangen door een andere.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Verbranding»?",
-      "o": [
-       "de massa van één mol stof (g/mol)",
-       "een uitgangsmateriaal voor productie",
-       "reactie met zuurstof waarbij CO2 en water ontstaan",
-       "een proef zonder de onderzochte factor, als referentie"
-      ],
-      "c": 2,
-      "u": "«Verbranding» betekent: reactie met zuurstof waarbij CO2 en water ontstaan.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"reactie met zuurstof waarbij CO2 en water ontstaan\"?",
-      "o": [
-       "Zuren en basen",
-       "Additiereactie",
-       "Chemische reactie",
-       "Verbranding"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Verbranding»: reactie met zuurstof waarbij CO2 en water ontstaan.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"reactie met zuurstof waarbij CO2 en water ontstaan\"?",
-      "o": [
-       "Ester",
-       "Polymeer",
-       "Functionele groepen",
-       "Verbranding"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Verbranding»: reactie met zuurstof waarbij CO2 en water ontstaan.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Verbranding» in?",
-      "o": [
-       "de −COOH-groep die kenmerkend is voor carbonzuren",
-       "zelfde formule, andere structuur",
-       "reactie met zuurstof waarbij CO2 en water ontstaan",
-       "hydroxylgroepalcohol"
-      ],
-      "c": 2,
-      "u": "«Verbranding» betekent: reactie met zuurstof waarbij CO2 en water ontstaan.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Homologe reeksen»?",
-      "o": [
-       "een stof die met kleur de zuurgraad aangeeft",
-       "thermoplast vs. thermoharder; recyclen",
-       "alkanen, alkenen, alkynen",
-       "toestand waarin heen- en terugreactie even snel gaan"
-      ],
-      "c": 2,
-      "u": "«Homologe reeksen» betekent: alkanen, alkenen, alkynen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"alkanen, alkenen, alkynen\"?",
-      "o": [
-       "Evenwicht",
-       "Homologe reeksen",
-       "Milieu",
-       "Oplossen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Homologe reeksen»: alkanen, alkenen, alkynen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"alkanen, alkenen, alkynen\"?",
-      "o": [
-       "Homologe reeksen",
-       "Functionele groep",
-       "Functionele groepen",
-       "Alkaan"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Homologe reeksen»: alkanen, alkenen, alkynen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Homologe reeksen» in?",
-      "o": [
-       "alkanen, alkenen, alkynen",
-       "estergroepester",
-       "de −COOH-groep die kenmerkend is voor carbonzuren",
-       "een groot molecuul uit vele monomeren"
-      ],
-      "c": 0,
-      "u": "«Homologe reeksen» betekent: alkanen, alkenen, alkynen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Functionele groepen»?",
-      "o": [
-       "alcohol, carbonzuur, amine, ester",
-       "additie, substitutie, ester­vorming, hydrolyse",
-       "CFK's (drijfgassen)meer uv-straling",
-       "positieve ionen in een zee van vrije elektronen"
-      ],
-      "c": 0,
-      "u": "«Functionele groepen» betekent: alcohol, carbonzuur, amine, ester.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"alcohol, carbonzuur, amine, ester\"?",
-      "o": [
-       "Ion",
-       "Molecuul",
-       "Levenscyclusanalyse",
-       "Functionele groepen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Functionele groepen»: alcohol, carbonzuur, amine, ester.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"alcohol, carbonzuur, amine, ester\"?",
-      "o": [
-       "Functionele groepen",
-       "−COO−",
-       "Homologe reeksen",
-       "Additiereactie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Functionele groepen»: alcohol, carbonzuur, amine, ester.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Functionele groepen» in?",
-      "o": [
-       "hydroxylgroepalcohol",
-       "de −COOH-groep die kenmerkend is voor carbonzuren",
-       "een verzadigde koolwaterstof",
-       "alcohol, carbonzuur, amine, ester"
-      ],
-      "c": 3,
-      "u": "«Functionele groepen» betekent: alcohol, carbonzuur, amine, ester.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Isomerie & naamgeving»?",
-      "o": [
-       "reactie met zuurstof waarbij CO2 en water ontstaan",
-       "reactie van een zuur met een base tot zout en water",
-       "een verzadigde koolwaterstof",
-       "zelfde formule, andere structuur"
-      ],
-      "c": 3,
-      "u": "«Isomerie & naamgeving» betekent: zelfde formule, andere structuur.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zelfde formule, andere structuur\"?",
-      "o": [
-       "Groene chemie",
-       "Isomerie & naamgeving",
-       "Evenwicht",
-       "Herhaalmetingen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Isomerie & naamgeving»: zelfde formule, andere structuur.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"zelfde formule, andere structuur\"?",
-      "o": [
-       "Additiereactie",
-       "Isomerie & naamgeving",
+       "Esterificatie",
        "Verbranding",
        "Carboxylgroep"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Isomerie & naamgeving»: zelfde formule, andere structuur.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Isomerie & naamgeving» in?",
-      "o": [
-       "zelfde formule, andere structuur",
-       "hydroxylgroepalcohol",
-       "reactieve groep die de eigenschappen bepaalt",
-       "de carboxylgroep, kenmerkend voor carbonzuren"
-      ],
-      "c": 0,
-      "u": "«Isomerie & naamgeving» betekent: zelfde formule, andere structuur.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Reactietypen»?",
-      "o": [
-       "alcohol, carbonzuur, amine, ester",
-       "een combinatie van meerdere stoffen",
-       "additie, substitutie, ester­vorming, hydrolyse",
-       "waterstofbruggen en vanderwaalskrachten"
-      ],
       "c": 2,
-      "u": "«Reactietypen» betekent: additie, substitutie, ester­vorming, hydrolyse.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"additie, substitutie, ester­vorming, hydrolyse\"?",
-      "o": [
-       "Indicator",
-       "Broeikaseffect",
-       "Reactietypen",
-       "Isomerie & naamgeving"
+      "d": 1,
+      "u": "Methaan reageert met zuurstof tot CO2 en water. Dat past bij Verbranding: reactie met zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Functionele groep: bepaalt de eigenschappen.",
+       "Nee, dat hoort bij Esterificatie: carbonzuur + alcohol → ester.",
+       "Klopt: reactie met zuurstof.",
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Reactietypen»: additie, substitutie, ester­vorming, hydrolyse.",
-      "d": 2
+      "uh": "Verbranding: reactie met zuurstof."
      },
      {
-      "v": "Welke term past bij: \"additie, substitutie, ester­vorming, hydrolyse\"?",
-      "o": [
-       "Reactietypen",
-       "Isomerie & naamgeving",
-       "Additiereactie",
-       "Isomeren"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Reactietypen»: additie, substitutie, ester­vorming, hydrolyse.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Reactietypen» in?",
-      "o": [
-       "een geurstof uit een zuur en een alcohol",
-       "een verzadigde koolwaterstof",
-       "additie, substitutie, ester­vorming, hydrolyse",
-       "een atoom of groep wordt vervangen door een andere"
-      ],
-      "c": 2,
-      "u": "«Reactietypen» betekent: additie, substitutie, ester­vorming, hydrolyse.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Polymeren»?",
-      "o": [
-       "de carboxylgroep, kenmerkend voor carbonzuren",
-       "additie- en condensatiepolymerisatie",
-       "atoomeconomie, minder afval, duurzaam",
-       "een koolwaterstof met een dubbele binding"
-      ],
-      "c": 1,
-      "u": "«Polymeren» betekent: additie- en condensatiepolymerisatie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"additie- en condensatiepolymerisatie\"?",
-      "o": [
-       "Controle-experiment",
-       "Polymeren",
-       "Molaire massa",
-       "Zuur"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Polymeren»: additie- en condensatiepolymerisatie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"additie- en condensatiepolymerisatie\"?",
+      "v": "De reactie van een stof met zuurstof. Welk begrip herken je hier?",
       "o": [
        "Carboxylgroep",
-       "Functionele groepen",
-       "Polymeren",
-       "Homologe reeksen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Polymeren»: additie- en condensatiepolymerisatie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Polymeren» in?",
-      "o": [
-       "stoffen met dezelfde molecuulformule maar andere structuur",
-       "een atoom of groep wordt vervangen door een andere",
-       "een koolwaterstof met een dubbele binding",
-       "additie- en condensatiepolymerisatie"
+       "Esterificatie",
+       "Functionele groep",
+       "Verbranding"
       ],
       "c": 3,
-      "u": "«Polymeren» betekent: additie- en condensatiepolymerisatie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «−OH»?",
-      "o": [
-       "SO₂ en NOxverzuring bodem/water",
-       "hydroxylgroepalcohol",
-       "toestand waarin heen- en terugreactie even snel gaan",
-       "meer contactoppervlak (poeder i.p.v. brok)"
+      "d": 1,
+      "u": "De reactie van een stof met zuurstof. Dat past bij Verbranding: reactie met zuurstof.",
+      "uo": [
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur.",
+       "Nee, dat hoort bij Esterificatie: carbonzuur + alcohol → ester.",
+       "Nee, dat hoort bij Functionele groep: bepaalt de eigenschappen.",
+       "Klopt: reactie met zuurstof."
       ],
-      "c": 1,
-      "u": "«−OH» betekent: hydroxylgroepalcohol.",
-      "d": 1
+      "uh": "Verbranding: reactie met zuurstof."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hydroxylgroepalcohol\"?",
+      "v": "Een reeks met een vaste stap. Wat is hier aan de hand?",
       "o": [
-       "Reactietypen",
-       "Circulaire economie",
-       "Veiligheid",
-       "−OH"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «−OH»: hydroxylgroepalcohol.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"hydroxylgroepalcohol\"?",
-      "o": [
-       "−OH",
-       "Alkaan",
-       "Alkeen",
-       "−COO−"
+       "Homologe reeks",
+       "Carboxylgroep",
+       "Additiepolymerisatie",
+       "Verbranding"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «−OH»: hydroxylgroepalcohol.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «−OH» in?",
-      "o": [
-       "de carboxylgroep, kenmerkend voor carbonzuren",
-       "hydroxylgroepalcohol",
-       "additie, substitutie, ester­vorming, hydrolyse",
-       "zelfde formule, andere structuur"
+      "d": 1,
+      "u": "Een reeks met een vaste stap. Dat past bij Homologe reeks: reeks met vaste stap.",
+      "uo": [
+       "Klopt: reeks met vaste stap.",
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur.",
+       "Nee, dat hoort bij Additiepolymerisatie: polymeriseren zonder bijproduct.",
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof."
       ],
-      "c": 1,
-      "u": "«−OH» betekent: hydroxylgroepalcohol.",
-      "d": 3
+      "uh": "Homologe reeks: reeks met vaste stap."
      },
      {
-      "v": "Wat betekent «−NH₂»?",
-      "o": [
-       "atomen worden aan een dubbele binding toegevoegd",
-       "aminogroepamine",
-       "een combinatie van meerdere stoffen",
-       "omzetting van stoffen tot nieuwe stoffen"
-      ],
-      "c": 1,
-      "u": "«−NH₂» betekent: aminogroepamine.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"aminogroepamine\"?",
-      "o": [
-       "Reductie",
-       "Legering",
-       "−NH₂",
-       "Reacties & rekenen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «−NH₂»: aminogroepamine.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"aminogroepamine\"?",
-      "o": [
-       "Isomeren",
-       "Carboxylgroep",
-       "Substitutiereactie",
-       "−NH₂"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «−NH₂»: aminogroepamine.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «−NH₂» in?",
-      "o": [
-       "additie, substitutie, ester­vorming, hydrolyse",
-       "aminogroepamine",
-       "de −COOH-groep die kenmerkend is voor carbonzuren",
-       "alcohol, carbonzuur, amine, ester"
-      ],
-      "c": 1,
-      "u": "«−NH₂» betekent: aminogroepamine.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «−COO−»?",
-      "o": [
-       "symbool dat het gevaar van een stof aangeeft",
-       "deeltjes sneller → vaker én harder botsen",
-       "de uitstoot van stoffen naar het milieu",
-       "estergroepester"
-      ],
-      "c": 3,
-      "u": "«−COO−» betekent: estergroepester.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"estergroepester\"?",
-      "o": [
-       "Atoombinding",
-       "Chemische reactie",
-       "Homologe reeksen",
-       "−COO−"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «−COO−»: estergroepester.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"estergroepester\"?",
+      "v": "Methaan, ethaan en propaan verschillen telkens een CH2-groep. Welk begrip past hierbij?",
       "o": [
        "Carboxylgroep",
-       "Ester",
-       "−COO−",
+       "Homologe reeks",
+       "Additiepolymerisatie",
+       "Verbranding"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Methaan, ethaan en propaan verschillen telkens een CH2-groep. Dat past bij Homologe reeks: reeks met vaste stap.",
+      "uo": [
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur.",
+       "Klopt: reeks met vaste stap.",
+       "Nee, dat hoort bij Additiepolymerisatie: polymeriseren zonder bijproduct.",
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof."
+      ],
+      "uh": "Homologe reeks: reeks met vaste stap."
+     },
+     {
+      "v": "Een reactie waarbij een atoom wordt vervangen. Om welk begrip gaat het?",
+      "o": [
+       "Functionele groep",
+       "Esterificatie",
+       "Substitutie",
        "Alkaan"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «−COO−»: estergroepester.",
-      "d": 3
+      "d": 2,
+      "u": "Een reactie waarbij een atoom wordt vervangen. Dat past bij Substitutie: atoom vervangen.",
+      "uo": [
+       "Nee, dat hoort bij Functionele groep: bepaalt de eigenschappen.",
+       "Nee, dat hoort bij Esterificatie: carbonzuur + alcohol → ester.",
+       "Klopt: atoom vervangen.",
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof."
+      ],
+      "uh": "Substitutie: atoom vervangen."
      },
      {
-      "v": "Wat houdt «−COO−» in?",
+      "v": "Een verzadigde koolwaterstof. Welk begrip herken je hier?",
       "o": [
-       "reactie met zuurstof waarbij CO2 en water ontstaan",
-       "atomen worden aan een dubbele binding toegevoegd",
-       "estergroepester",
-       "reactieve groep die de eigenschappen bepaalt"
+       "Esterificatie",
+       "Verbranding",
+       "Homologe reeks",
+       "Alkaan"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een verzadigde koolwaterstof. Dat past bij Alkaan: verzadigde koolwaterstof.",
+      "uo": [
+       "Nee, dat hoort bij Esterificatie: carbonzuur + alcohol → ester.",
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof.",
+       "Nee, dat hoort bij Homologe reeks: reeks met vaste stap.",
+       "Klopt: verzadigde koolwaterstof."
+      ],
+      "uh": "Alkaan: verzadigde koolwaterstof."
+     },
+     {
+      "v": "Methaan en butaan zijn verzadigde koolwaterstoffen. Wat is hier aan de hand?",
+      "o": [
+       "Alkaan",
+       "Functionele groep",
+       "Hydroxylgroep",
+       "Homologe reeks"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Methaan en butaan zijn verzadigde koolwaterstoffen. Dat past bij Alkaan: verzadigde koolwaterstof.",
+      "uo": [
+       "Klopt: verzadigde koolwaterstof.",
+       "Nee, dat hoort bij Functionele groep: bepaalt de eigenschappen.",
+       "Nee, dat hoort bij Hydroxylgroep: −OH, alcohol.",
+       "Nee, dat hoort bij Homologe reeks: reeks met vaste stap."
+      ],
+      "uh": "Alkaan: verzadigde koolwaterstof."
+     },
+     {
+      "v": "De −OH-groep. Welk begrip past hierbij?",
+      "o": [
+       "Additiepolymerisatie",
+       "Hydroxylgroep",
+       "Substitutie",
+       "Alkaan"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De −OH-groep. Dat past bij Hydroxylgroep: −OH, alcohol.",
+      "uo": [
+       "Nee, dat hoort bij Additiepolymerisatie: polymeriseren zonder bijproduct.",
+       "Klopt: −OH, alcohol.",
+       "Nee, dat hoort bij Substitutie: atoom vervangen.",
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof."
+      ],
+      "uh": "Hydroxylgroep: −OH, alcohol."
+     },
+     {
+      "v": "De OH-groep die een alcohol kenmerkt. Om welk begrip gaat het?",
+      "o": [
+       "Verbranding",
+       "Carboxylgroep",
+       "Hydroxylgroep",
+       "Condensatiepolymerisatie"
       ],
       "c": 2,
-      "u": "«−COO−» betekent: estergroepester.",
-      "d": 3
+      "d": 2,
+      "u": "De OH-groep die een alcohol kenmerkt. Dat past bij Hydroxylgroep: −OH, alcohol.",
+      "uo": [
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof.",
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur.",
+       "Klopt: −OH, alcohol.",
+       "Nee, dat hoort bij Condensatiepolymerisatie: polymeriseren met bijproduct."
+      ],
+      "uh": "Hydroxylgroep: −OH, alcohol."
+     },
+     {
+      "v": "Polymerisatie zonder bijproduct. Welk begrip herken je hier?",
+      "o": [
+       "Carboxylgroep",
+       "Functionele groep",
+       "Alkaan",
+       "Additiepolymerisatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Polymerisatie zonder bijproduct. Dat past bij Additiepolymerisatie: polymeriseren zonder bijproduct.",
+      "uo": [
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur.",
+       "Nee, dat hoort bij Functionele groep: bepaalt de eigenschappen.",
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof.",
+       "Klopt: polymeriseren zonder bijproduct."
+      ],
+      "uh": "Additiepolymerisatie: polymeriseren zonder bijproduct."
+     },
+     {
+      "v": "De groep die de reacties bepaalt. Wat is hier aan de hand?",
+      "o": [
+       "Functionele groep",
+       "Homologe reeks",
+       "Hydroxylgroep",
+       "Verbranding"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De groep die de reacties bepaalt. Dat past bij Functionele groep: bepaalt de eigenschappen.",
+      "uo": [
+       "Klopt: bepaalt de eigenschappen.",
+       "Nee, dat hoort bij Homologe reeks: reeks met vaste stap.",
+       "Nee, dat hoort bij Hydroxylgroep: −OH, alcohol.",
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof."
+      ],
+      "uh": "Functionele groep: bepaalt de eigenschappen."
+     },
+     {
+      "v": "De reactie van carbonzuur en alcohol tot een ester. Welk begrip past hierbij?",
+      "o": [
+       "Hydroxylgroep",
+       "Esterificatie",
+       "Alkaan",
+       "Carboxylgroep"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "De reactie van carbonzuur en alcohol tot een ester. Dat past bij Esterificatie: carbonzuur + alcohol → ester.",
+      "uo": [
+       "Nee, dat hoort bij Hydroxylgroep: −OH, alcohol.",
+       "Klopt: carbonzuur + alcohol → ester.",
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof.",
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur."
+      ],
+      "uh": "Esterificatie: carbonzuur + alcohol → ester."
+     },
+     {
+      "v": "Onder UV vervangt chloor een waterstofatoom in een alkaan. Om welk begrip gaat het?",
+      "o": [
+       "Functionele groep",
+       "Esterificatie",
+       "Substitutie",
+       "Alkaan"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Onder UV vervangt chloor een waterstofatoom in een alkaan. Dat past bij Substitutie: atoom vervangen.",
+      "uo": [
+       "Nee, dat hoort bij Functionele groep: bepaalt de eigenschappen.",
+       "Nee, dat hoort bij Esterificatie: carbonzuur + alcohol → ester.",
+       "Klopt: atoom vervangen.",
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof."
+      ],
+      "uh": "Substitutie: atoom vervangen."
+     },
+     {
+      "v": "Polymerisatie met een bijproduct. Welk begrip herken je hier?",
+      "o": [
+       "Functionele groep",
+       "Carboxylgroep",
+       "Alkaan",
+       "Condensatiepolymerisatie"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Polymerisatie met een bijproduct. Dat past bij Condensatiepolymerisatie: polymeriseren met bijproduct.",
+      "uo": [
+       "Nee, dat hoort bij Functionele groep: bepaalt de eigenschappen.",
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur.",
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof.",
+       "Klopt: polymeriseren met bijproduct."
+      ],
+      "uh": "Condensatiepolymerisatie: polymeriseren met bijproduct."
+     },
+     {
+      "v": "De −COOH-groep. Wat is hier aan de hand?",
+      "o": [
+       "Carboxylgroep",
+       "Hydroxylgroep",
+       "Verbranding",
+       "Condensatiepolymerisatie"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De −COOH-groep. Dat past bij Carboxylgroep: −COOH, carbonzuur.",
+      "uo": [
+       "Klopt: −COOH, carbonzuur.",
+       "Nee, dat hoort bij Hydroxylgroep: −OH, alcohol.",
+       "Nee, dat hoort bij Verbranding: reactie met zuurstof.",
+       "Nee, dat hoort bij Condensatiepolymerisatie: polymeriseren met bijproduct."
+      ],
+      "uh": "Carboxylgroep: −COOH, carbonzuur."
+     },
+     {
+      "v": "Een carbonzuur en een alcohol vormen samen een ester en water. Welk begrip past hierbij?",
+      "o": [
+       "Substitutie",
+       "Esterificatie",
+       "Functionele groep",
+       "Alkaan"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een carbonzuur en een alcohol vormen samen een ester en water. Dat past bij Esterificatie: carbonzuur + alcohol → ester.",
+      "uo": [
+       "Nee, dat hoort bij Substitutie: atoom vervangen.",
+       "Klopt: carbonzuur + alcohol → ester.",
+       "Nee, dat hoort bij Functionele groep: bepaalt de eigenschappen.",
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof."
+      ],
+      "uh": "Esterificatie: carbonzuur + alcohol → ester."
+     },
+     {
+      "v": "De COOH-groep die een carbonzuur kenmerkt. Om welk begrip gaat het?",
+      "o": [
+       "Substitutie",
+       "Additiepolymerisatie",
+       "Carboxylgroep",
+       "Alkaan"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De COOH-groep die een carbonzuur kenmerkt. Dat past bij Carboxylgroep: −COOH, carbonzuur.",
+      "uo": [
+       "Nee, dat hoort bij Substitutie: atoom vervangen.",
+       "Nee, dat hoort bij Additiepolymerisatie: polymeriseren zonder bijproduct.",
+       "Klopt: −COOH, carbonzuur.",
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof."
+      ],
+      "uh": "Carboxylgroep: −COOH, carbonzuur."
+     },
+     {
+      "v": "De monomeren koppelen zonder dat er een bijproduct vrijkomt. Welk begrip herken je hier?",
+      "o": [
+       "Alkaan",
+       "Condensatiepolymerisatie",
+       "Carboxylgroep",
+       "Additiepolymerisatie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De monomeren koppelen zonder dat er een bijproduct vrijkomt. Dat past bij Additiepolymerisatie: polymeriseren zonder bijproduct.",
+      "uo": [
+       "Nee, dat hoort bij Alkaan: verzadigde koolwaterstof.",
+       "Nee, dat hoort bij Condensatiepolymerisatie: polymeriseren met bijproduct.",
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur.",
+       "Klopt: polymeriseren zonder bijproduct."
+      ],
+      "uh": "Additiepolymerisatie: polymeriseren zonder bijproduct."
+     },
+     {
+      "v": "De atoomgroep die de eigenschappen van een stof bepaalt. Wat is hier aan de hand?",
+      "o": [
+       "Functionele groep",
+       "Homologe reeks",
+       "Condensatiepolymerisatie",
+       "Carboxylgroep"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "De atoomgroep die de eigenschappen van een stof bepaalt. Dat past bij Functionele groep: bepaalt de eigenschappen.",
+      "uo": [
+       "Klopt: bepaalt de eigenschappen.",
+       "Nee, dat hoort bij Homologe reeks: reeks met vaste stap.",
+       "Nee, dat hoort bij Condensatiepolymerisatie: polymeriseren met bijproduct.",
+       "Nee, dat hoort bij Carboxylgroep: −COOH, carbonzuur."
+      ],
+      "uh": "Functionele groep: bepaalt de eigenschappen."
      }
     ],
     "oe": [
@@ -31670,84 +30123,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Alkaan",
-      "d": "een verzadigde koolwaterstof"
+      "t": "Esterificatie",
+      "d": "de omkeerbare reactie van een carbonzuur en een alcohol tot een ester en water"
      },
      {
-      "t": "Alkeen",
-      "d": "een koolwaterstof met een dubbele binding"
+      "t": "Condensatiepolymerisatie",
+      "d": "polymerisatie waarbij per koppeling een bijproduct (water) vrijkomt"
      },
      {
-      "t": "Alcohol",
-      "d": "een koolstofverbinding met een OH-groep"
+      "t": "Additiepolymerisatie",
+      "d": "polymerisatie waarbij geen bijproduct vrijkomt"
      },
      {
-      "t": "Ester",
-      "d": "een geurstof uit een zuur en een alcohol"
-     },
-     {
-      "t": "Polymeer",
-      "d": "een groot molecuul uit vele monomeren"
+      "t": "Hydroxylgroep",
+      "d": "de −OH-groep die een alcohol kenmerkt"
      },
      {
       "t": "Carboxylgroep",
-      "d": "de −COOH-groep die kenmerkend is voor carbonzuren"
+      "d": "de −COOH-groep die een carbonzuur kenmerkt"
      },
      {
-      "t": "−COOH",
-      "d": "de carboxylgroep, kenmerkend voor carbonzuren"
+      "t": "Alkaan",
+      "d": "een verzadigde koolwaterstof met alleen enkele bindingen"
      },
      {
-      "t": "Functionele groep",
-      "d": "reactieve groep die de eigenschappen bepaalt"
-     },
-     {
-      "t": "Isomeren",
-      "d": "stoffen met dezelfde molecuulformule maar andere structuur"
-     },
-     {
-      "t": "Additiereactie",
-      "d": "atomen worden aan een dubbele binding toegevoegd"
-     },
-     {
-      "t": "Substitutiereactie",
-      "d": "een atoom of groep wordt vervangen door een andere"
+      "t": "Substitutie",
+      "d": "een reactie waarbij een atoom door een ander wordt vervangen"
      },
      {
       "t": "Verbranding",
-      "d": "reactie met zuurstof waarbij CO2 en water ontstaan"
+      "d": "de reactie van een stof met zuurstof, met CO₂ en water als producten"
      },
      {
-      "t": "Homologe reeksen",
-      "d": "alkanen, alkenen, alkynen"
+      "t": "Homologe reeks",
+      "d": "een reeks verbindingen die per stap met een CH₂-groep verschilt"
      },
      {
-      "t": "Functionele groepen",
-      "d": "alcohol, carbonzuur, amine, ester"
-     },
-     {
-      "t": "Isomerie & naamgeving",
-      "d": "zelfde formule, andere structuur"
-     },
-     {
-      "t": "Reactietypen",
-      "d": "additie, substitutie, ester­vorming, hydrolyse"
-     },
-     {
-      "t": "Polymeren",
-      "d": "additie- en condensatiepolymerisatie"
-     },
-     {
-      "t": "−OH",
-      "d": "hydroxylgroepalcohol"
-     },
-     {
-      "t": "−NH₂",
-      "d": "aminogroepamine"
-     },
-     {
-      "t": "−COO−",
-      "d": "estergroepester"
+      "t": "Functionele groep",
+      "d": "de atoomgroep die de eigenschappen van een organische stof bepaalt"
      }
     ]
    },
@@ -31773,918 +30186,615 @@ var VAKKEN = [
      "Medicijnen en farmaceutische chemie",
      "Voedselchemie (conservering, additieven)"
     ],
-    "sam": "<div class=\"sam-head\">Industrie en duurzaamheid</div><ul><li><strong>Haber-Bosch</strong>: N₂ + 3H₂ ⇌ 2NH₃. Condities: hoge druk (~200 atm), matige temperatuur (450°C), ijzerkatalysator. Compromis: hoge druk verhoogt opbrengst (Le Chatelier: minder mol gas rechts), maar is duur. Lagere T verhoogt opbrengst maar verlaagt reactiesnelheid - ijzer compenseert.</li><li><strong>Groene chemie (12 principes)</strong>: preventie van afval, atoomeconomie (gebruik alle atomen), minder gevaarlijke stoffen, energie-efficiëntie, hernieuwbare grondstoffen, katalyse.</li><li><strong>Kunststoffen</strong>: thermoplasten (PP, PE, PET) - smeltbaar, recycleerbaar door ↑T. Thermoharders (bakeliet, epoxyhars) - vernetwerkt, niet smeltbaar. Bioplastics uit hernieuwbare grondstoffen (PLA uit maïszetmeel).</li></ul><div class=\"sam-head\">Milieu</div><ul><li><strong>Zuur regen</strong>: SO₂ (verbranding fossiele brandstoffen) en NOₓ (verbrandingsmotoren) reageren in de atmosfeer met water tot H₂SO₃/H₂SO₄ en HNO₃. Schade: verzuring bossen, corrosie gebouwen, verzuring beken.</li><li><strong>Ozonlaag</strong>: O₃ absorbeert UV-B en UV-C straling. CFK's (chloorfluorkoolstofverbindingen) katalytisch afbraak van ozon → ozonlaag wordt dunner → meer UV-B op aardoppervlak → meer huidkanker.</li><li><strong>Broeikasgassen</strong>: CO₂, CH₄, N₂O, waterdamp absorberen infraroodstraling en geven die deels terug naar aarde → opwarming aarde.</li></ul><div class=\"sam-head\">Voedsel en gezondheid</div><ul><li><strong>Conservering</strong>: zout (osmose), suiker (osmose), azijn (lage pH remt bacteriegroei), roken (antimicrobiële verbindingen), diepvriezen (remming enzymactiviteit).</li><li><strong>Additieven</strong>: E-nummers - conserveringsmiddelen (E200-299), antioxidanten (E300-399), emulgatoren (E400-499). Emulgatoren verbinden water en vet via een hydrofiel en hydrofoob deel in dezelfde molecule.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Chemie speelt in de maatschappij: het <strong>Haber-Bosch-proces</strong> maakt kunstmest, <strong>CFK's</strong> tasten de <strong>ozonlaag</strong> aan en <strong>CO₂</strong> versterkt het <strong>broeikaseffect</strong>. Groene chemie kijkt naar <strong>atoomeconomie</strong> en <strong>bioplastics</strong> zoals <strong>PLA</strong>. <strong>Thermoplasten</strong> en <strong>thermoharders</strong> verschillen in hergebruik.</div><div class=\"sam-head\">1. Milieu en atmosfeer</div><p><strong>CFK's</strong> breken in de stratosfeer katalytisch <strong>ozon</strong> af, waardoor meer UV-B de aarde bereikt; de <strong>ozonlaag</strong> beschermt juist tegen UV. <strong>CO₂</strong> absorbeert infraroodstraling en straalt die terug (broeikaseffect). <strong>Zure regen</strong> komt vooral door SO₂ en NOₓ.</p><div class=\"sam-head\">2. Materialen en groene chemie</div><p>Een <strong>thermoplast</strong> wordt zacht bij verhitting en is recyclebaar; een <strong>thermoharder</strong> is vernetwerkt en niet smeltbaar. In de groene chemie meet de <strong>atoomeconomie</strong> het aandeel nuttig product. <strong>PLA</strong> is een composteerbaar bioplastic uit hernieuwbare grondstoffen. Een <strong>emulgator</strong> houdt water en vet gemengd; zout conserveert via <strong>osmose</strong>.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Haber-Bosch-proces</div><div class=\"sam-definitie-body\">het industriële proces dat ammoniak maakt uit stikstof en waterstof.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Thermoplast</div><div class=\"sam-definitie-body\">een kunststof die zacht wordt bij verhitting en recyclebaar is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Thermoharder</div><div class=\"sam-definitie-body\">een vernetwerkte kunststof die niet smelt en niet hervormbaar is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Emulgator</div><div class=\"sam-definitie-body\">een stof met een hydrofiel én hydrofoob deel die water en vet mengt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Atoomeconomie</div><div class=\"sam-definitie-body\">de verhouding nuttig product ten opzichte van alle gevormde producten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ozonlaag</div><div class=\"sam-definitie-body\">de laag in de stratosfeer die schadelijke UV-straling absorbeert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Broeikaseffect</div><div class=\"sam-definitie-body\">het vasthouden van warmte doordat gassen infraroodstraling terugkaatsen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zure regen</div><div class=\"sam-definitie-body\">neerslag die zuur is door SO₂ en NOₓ in de lucht.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">PLA</div><div class=\"sam-definitie-body\">een composteerbaar bioplastic uit hernieuwbare grondstoffen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Osmose</div><div class=\"sam-definitie-body\">de verplaatsing van water door een membraan naar de hoogste concentratie.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Haber-Bosch-proces»</b> is ammoniak uit N₂ en H₂, terwijl <b>«Atoomeconomie»</b> aandeel nuttig product is. <b>«Thermoplast»</b> is zacht bij verhitting, terwijl <b>«Thermoharder»</b> niet smeltbaar is. <b>«Emulgator»</b> is mengt water en vet, terwijl <b>«Osmose»</b> water door een membraan is. <b>«Ozonlaag»</b> is absorbeert UV, terwijl <b>«Broeikaseffect»</b> warmte vasthouden is.</div>",
     "sv": [
      {
-      "v": "Welk compromis wordt in het Haber-Bosch-proces gemaakt ten aanzien van temperatuur?",
+      "v": "Welk compromis wordt in het Haber-Bosch-proces gemaakt bij de temperatuur?",
       "o": [
-       "Hoge T geeft hogere opbrengst en snellere reactie - geen compromis nodig",
-       "Lage T geeft hogere opbrengst maar langzamere reactie - 450°C is een compromis",
-       "Hoge T is nodig voor Le Chatelier maar maakt de katalysator kapot",
-       "Temperatuur heeft geen effect op het evenwicht bij NH3-synthese"
+       "een lage temperatuur geeft meer opbrengst maar een tragere reactie, 450 °C is een compromis",
+       "hoe hoger de temperatuur, hoe beter altijd",
+       "de temperatuur maakt niet uit",
+       "een lage temperatuur is altijd het beste"
       ],
-      "c": 1,
-      "u": "Ammoniaksynthese is exotherm: lage T verhoogt evenwichtsopbrengst (Le Chatelier). Maar lagere T = minder kinetische energie = langzamere reactie. Compromis: 450°C + ijzerkatalysator verlaagt de activeringsenergie zodat de reactie voldoende snel verloopt."
+      "c": 0,
+      "d": 3,
+      "u": "Men zoekt de balans tussen opbrengst en snelheid.",
+      "uo": [
+       "Klopt: men zoekt de balans tussen opbrengst en snelheid.",
+       "Nee, hoog geeft snelheid maar minder opbrengst.",
+       "Nee, temperatuur is juist cruciaal.",
+       "Nee, dan is de reactie te traag."
+      ],
+      "uh": "Haber-Bosch: 450 °C als compromis."
      },
      {
       "v": "Wat is het milieugevolg van CFK-verbindingen in de stratosfeer?",
       "o": [
-       "Ze versterken het broeikaseffect door IR-straling te absorberen",
-       "Ze breken katalytisch ozon (O3) af, waardoor de UV-B straling die de aarde bereikt toeneemt",
-       "Ze reageren met waterdamp tot zure regen",
-       "Ze veroorzaken smog door reactie met NOx"
+       "ze versterken de ozonlaag",
+       "ze breken katalytisch ozon af, waardoor meer UV-B de aarde bereikt",
+       "ze verwarmen de oceanen direct",
+       "ze hebben geen effect"
       ],
       "c": 1,
-      "u": "CFK's (chloorfluorkoolstoffen) zijn stabiel en stijgen op naar de stratosfeer. Daar worden ze door UV-licht gesplitst en komen chloorradicalen vrij die katalytisch ozon afbreken: Cl• + O3 → ClO + O2."
+      "d": 3,
+      "u": "CFK's tasten de ozonlaag aan.",
+      "uo": [
+       "Nee, ze breken die juist af.",
+       "Klopt: CFK's tasten de ozonlaag aan.",
+       "Nee, dat is niet het directe effect.",
+       "Nee, ze hebben een groot effect."
+      ],
+      "uh": "CFK's: breken ozon af, meer UV-B."
      },
      {
       "v": "Wat is het verschil tussen een thermoplast en een thermoharder?",
       "o": [
-       "Thermoplasten zijn altijd doorzichtig; thermoharders zijn altijd gekleurd",
-       "Thermoplasten worden zacht bij verhitting en zijn recycleerbaar; thermoharders zijn vernetwerkt en niet smeltbaar",
-       "Thermoplasten zijn bioplastics; thermoharders zijn altijd van fossiele grondstoffen",
-       "Er is geen chemisch verschil - alleen de naam verschilt"
+       "een thermoplast is niet smeltbaar",
+       "ze zijn hetzelfde",
+       "een thermoplast wordt zacht bij verhitting en is recyclebaar, een thermoharder niet",
+       "een thermoharder is recyclebaar"
       ],
-      "c": 1,
-      "u": "Thermoplast (PE, PP, PET): lineaire ketens, smelt bij verhitting → recycleerbaar. Thermoharder (bakeliet, epoxyhars): sterke covalente dwarsverbindingen (vernetting) → smelt niet, alleen verbrandt/verkoolst."
+      "c": 2,
+      "d": 3,
+      "u": "Smeltbaar en recyclebaar tegenover vernetwerkt.",
+      "uo": [
+       "Nee, die is juist smeltbaar.",
+       "Nee, ze verschillen.",
+       "Klopt: smeltbaar en recyclebaar tegenover vernetwerkt.",
+       "Nee, die is juist niet recyclebaar."
+      ],
+      "uh": "Thermoplast: smeltbaar/recyclebaar; thermoharder: niet."
      },
      {
       "v": "Door welk mechanisme conserveert keukenzout voedsel?",
       "o": [
-       "Zout verlaagt de pH waardoor bacteriën niet kunnen groeien",
-       "Osmose: zout onttrekt water aan bacteriën waardoor ze uitdrogen en afsterven",
-       "Zout bindt zuurstof zodat oxidatieve bederf wordt voorkomen",
-       "Zout verhoogt de activeringsenergie van bacteriële enzymen"
+       "het zout voegt zuurstof toe",
+       "het zout verbrandt de bacteriën",
+       "het zout verlaagt de temperatuur",
+       "osmose: zout onttrekt water aan bacteriën, die uitdrogen"
       ],
-      "c": 1,
-      "u": "Osmose: hoge zoutconcentratie buiten de bacterie → water stroomt via osmose de cel uit → bacteriën raken uitgedroogd en kunnen zich niet vermenigvuldigen. Hetzelfde principe geldt voor suiker."
+      "c": 3,
+      "d": 3,
+      "u": "Door osmose drogen de bacteriën uit.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, er is geen verbranding.",
+       "Nee, zout koelt niet.",
+       "Klopt: door osmose drogen de bacteriën uit."
+      ],
+      "uh": "Zout conserveert via osmose."
      },
      {
       "v": "Wat is de functie van een emulgator in voedsel?",
       "o": [
-       "Een emulgator verhoogt de pH om bacteriegroei te remmen",
-       "Een emulgator heeft een hydrofiel én hydrofoob deel en houdt water en vet gemengd",
-       "Een emulgator geeft kleur en geur aan voedsel",
-       "Een emulgator voorkomt oxidatie en verlengt de houdbaarheid"
+       "met een hydrofiel én hydrofoob deel houdt hij water en vet gemengd",
+       "hij verhoogt de temperatuur",
+       "hij doodt alle bacteriën",
+       "hij verlaagt de pH"
       ],
-      "c": 1,
-      "u": "Emulgator heeft een hydrofiel (waterliefdevend) en een hydrofoob (waterafstotend/vetliefdevend) deel. Het oriënteert zich op de grens water-vet en verhindert dat de fases scheiden. Bijv. lecithine in mayonaise (E322)."
+      "c": 0,
+      "d": 3,
+      "u": "Een emulgator overbrugt water en vet.",
+      "uo": [
+       "Klopt: een emulgator overbrugt water en vet.",
+       "Nee, dat doet hij niet.",
+       "Nee, dat is een conserveermiddel.",
+       "Nee, dat is een zuur."
+      ],
+      "uh": "Emulgator: mengt water en vet."
      },
      {
-      "v": "Wat is de atoomeconomie in het kader van groene chemie?",
+      "v": "Wat is de atoomeconomie in de groene chemie?",
       "o": [
-       "De hoeveelheid energie die vrijkomt bij een reactie",
-       "De verhouding nuttig product ten opzichte van alle gevormde producten",
-       "De snelheid waarmee atomen botsen in de reactie",
-       "Het aantal atomen in het molecuul van het product"
+       "de prijs van de grondstoffen",
+       "de verhouding nuttig product ten opzichte van alle gevormde producten",
+       "het aantal atomen in een molecuul",
+       "de winst van een fabriek"
       ],
       "c": 1,
-      "u": "Atoomeconomie = (molaire massa gewenst product / som molaire massa alle producten) × 100%. Hoge atoomeconomie = bijna alle atomen landen in het gewenste product = minder afval. Additiereacties hebben 100% atoomeconomie."
+      "d": 3,
+      "u": "Hoe meer nuttig product, hoe groener.",
+      "uo": [
+       "Nee, dat is economie, geen atoomeconomie.",
+       "Klopt: hoe meer nuttig product, hoe groener.",
+       "Nee, dat is een molecuulgrootte.",
+       "Nee, dat is bedrijfswinst."
+      ],
+      "uh": "Atoomeconomie: aandeel nuttig product."
      },
      {
-      "v": "Welk effect heeft een toename van CO₂ in de atmosfeer op het klimaat?",
+      "v": "Welk effect heeft meer CO₂ in de atmosfeer op het klimaat?",
       "o": [
-       "CO2 absorbeert UV-straling en verkoelt de aarde",
-       "CO2 absorbeert infraroodstraling en straalt die terug naar het aardoppervlak",
-       "CO2 reageert met water tot koolzuur dat neerslaat als regen",
-       "CO2 breekt ozon af in de stratosfeer"
+       "CO₂ breekt de ozonlaag af",
+       "CO₂ koelt de aarde af",
+       "CO₂ absorbeert infraroodstraling en straalt die terug naar het aardoppervlak",
+       "CO₂ heeft geen effect"
       ],
-      "c": 1,
-      "u": "CO2 is een broeikasgas: het absorbeert infraroodstraling (warmtestraling) die de aarde uitzendt en stuurt een deel terug naar het aardoppervlak. Meer CO2 = meer warmte vastgehouden = hogere gemiddelde temperatuur."
+      "c": 2,
+      "d": 3,
+      "u": "Dat versterkt het broeikaseffect.",
+      "uo": [
+       "Nee, dat doen CFK's.",
+       "Nee, het warmt juist op.",
+       "Klopt: dat versterkt het broeikaseffect.",
+       "Nee, het heeft een groot effect."
+      ],
+      "uh": "CO₂: houdt warmte vast (broeikaseffect)."
      },
      {
-      "v": "Wat is PLA en waarom is het een duurzamere keuze dan conventioneel plastic?",
+      "v": "Wat is PLA en waarom is het duurzamer dan gewoon plastic?",
       "o": [
-       "PLA is een thermohardend plastic dat niet recyclebaar is maar lang meegaat",
-       "PLA (polylactide) is een bioplastic gemaakt van hernieuwbare grondstoffen (bijv. maïs) en is composteerbaar",
-       "PLA is een copolymeer van etheen en propeen met hogere sterkte",
-       "PLA is identiek aan PET maar heeft een andere kleur"
+       "een broeikasgas",
+       "een metaal",
+       "een fossiele brandstof",
+       "een bioplastic uit hernieuwbare grondstoffen dat composteerbaar is"
       ],
-      "c": 1,
-      "u": "PLA = polylactide, gemaakt via ringopening- of condensatiepolymerisatie van melkzuur (uit fermentatie van maïs/suikerbieten). Hernieuwbare grondstof + composteerbaar onder industriële condities. Nadeel: lagere smelttemperatuur dan PET."
+      "c": 3,
+      "d": 3,
+      "u": "PLA komt uit bijvoorbeeld maïs en is composteerbaar.",
+      "uo": [
+       "Nee, het is een materiaal.",
+       "Nee, het is een kunststof.",
+       "Nee, juist niet fossiel.",
+       "Klopt: PLA komt uit bijvoorbeeld maïs en is composteerbaar."
+      ],
+      "uh": "PLA: composteerbaar bioplastic."
      },
      {
       "v": "Welke twee gassen veroorzaken hoofdzakelijk zure regen?",
       "o": [
-       "CO₂ en O₃",
        "SO₂ en NOₓ",
-       "CH₄ en CFK's",
-       "CO en H₂S"
+       "CO₂ en O₂",
+       "H₂ en He",
+       "N₂ en Ar"
       ],
-      "c": 1,
-      "u": "SO₂ (uit verbranding zwavelhoudende brandstoffen) en NOₓ (uit verbrandingsmotoren) reageren in de atmosfeer met water en zuurstof tot zwavelzuur en salpeterzuur → neerslag met lage pH → verzuring bossen en wateren."
+      "c": 0,
+      "d": 3,
+      "u": "Zwavel- en stikstofoxiden geven zure regen.",
+      "uo": [
+       "Klopt: zwavel- en stikstofoxiden geven zure regen.",
+       "Nee, die geven geen zure regen.",
+       "Nee, dat zijn onschadelijke gassen.",
+       "Nee, dat zijn luchtbestanddelen."
+      ],
+      "uh": "Zure regen: SO₂ en NOₓ."
      },
      {
       "v": "Wat is de hoofdfunctie van de ozonlaag in de stratosfeer?",
       "o": [
-       "CO₂ absorberen om het broeikaseffect te verminderen",
-       "UV-B en UV-C straling absorberen zodat die het aardoppervlak niet bereiken",
-       "Zuurstof produceren voor de biosfeer via fotosynthese",
-       "Stikstof binden voor de stikstofkringloop"
+       "zuurstof produceren",
+       "schadelijke UV-straling absorberen",
+       "CO₂ opslaan",
+       "de aarde verwarmen"
       ],
       "c": 1,
-      "u": "Ozon (O₃) in de stratosfeer absorbeert schadelijke UV-B en UV-C straling. Zonder ozonlaag zou meer UV-B het aardoppervlak bereiken → verhoogd risico op huidkanker en schade aan ecosystemen."
-     },
-     {
-      "v": "Welke eigenschap onderscheidt een thermoplast van een thermoharder?",
-      "o": [
-       "Thermoplasten zijn altijd transparant; thermoharders zijn altijd gekleurd",
-       "Thermoplasten worden zacht bij verhitting en kunnen worden hervormd; thermoharders niet",
-       "Thermoplasten zijn bioplastics; thermoharders zijn fossiele kunststoffen",
-       "Thermoplasten bevatten altijd esterbindingen; thermoharders amidebindingen"
+      "d": 2,
+      "u": "De ozonlaag houdt UV tegen.",
+      "uo": [
+       "Nee, dat doen planten.",
+       "Klopt: de ozonlaag houdt UV tegen.",
+       "Nee, dat is iets anders.",
+       "Nee, dat is het broeikaseffect."
       ],
-      "c": 1,
-      "u": "Thermoplast (PE, PP, PET): lineaire of licht vertakte polymeerketens die bij verhitting glijden → smelt en hervormt → recycleerbaar. Thermoharder (epoxyhars, bakeliet): driedimensionaal covalent verknopt netwerk → kan niet smelten, verbrandt bij hoge T."
+      "uh": "Ozonlaag: absorbeert UV."
      },
      {
-      "v": "Wat verstaat men onder de koolstofkringloop en welke rol speelt fotosynthese daarin?",
+      "v": "Wat verstaat men onder de koolstofkringloop, en welke rol speelt fotosynthese daarin?",
       "o": [
-       "CO₂ wordt omgezet in O₂ door verbranding; fotosynthese heeft geen rol",
-       "CO₂ wordt door fotosynthese opgenomen en omgezet in glucose; verbranding en ademhaling geven het terug",
-       "Koolstof wordt uitsluitend via vulkanen aan de atmosfeer toegevoegd",
-       "Fotosynthese breekt CO₂ af tot koolstof en zuurstofgas"
-      ],
-      "c": 1,
-      "u": "Koolstofkringloop: planten nemen CO₂ op via fotosynthese (6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂). Dieren eten planten en ademen CO₂ uit. Verbranding van fossiele brandstoffen voegt extra CO₂ toe - dit verstoort de balans en leidt tot klimaatverandering."
-     },
-     {
-      "v": "Welk conserveringsmethode werkt via osmose om bacteriën te doden?",
-      "o": [
-       "Verhitting (pasteurisatie) - hoge temperatuur doodt bacteriën",
-       "Toevoegen van zout of suiker - osmose onttrekt water aan bacteriën",
-       "Bestraling met UV-licht - DNA-schade in bacteriën",
-       "Toevoegen van antioxidanten - vrije radicalen worden gebonden"
-      ],
-      "c": 1,
-      "u": "Osmose: hoge zout- of suikerconcentratie in het voedsel → waterconcentratie buiten bacteriën is lager dan erin → water stroomt de cel uit → bacteriën plasmolyseren (krimpen) en sterven. Pasteurisatie werkt via hitte, niet osmose."
-     },
-     {
-      "v": "Wat betekent «Duurzaamheid»?",
-      "o": [
-       "een homogeen mengsel van opgeloste stof en oplosmiddel",
-       "een reactie met overdracht van elektronen",
-       "gebruik zonder uitputting voor de toekomst",
-       "broeikaseffect, zure regen, ozonafbraak"
+       "fotosynthese speelt er geen rol in",
+       "koolstof verdwijnt uit de natuur",
+       "CO₂ wordt door fotosynthese tot glucose omgezet; ademhaling en verbranding geven het terug",
+       "de kringloop draait om zuurstof alleen"
       ],
       "c": 2,
-      "u": "«Duurzaamheid» betekent: gebruik zonder uitputting voor de toekomst.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gebruik zonder uitputting voor de toekomst\"?",
-      "o": [
-       "−COOH",
-       "Duurzaamheid",
-       "Molecuulformule",
-       "Mengsel"
+      "d": 3,
+      "u": "Fotosynthese neemt CO₂ op, verbranding geeft het terug.",
+      "uo": [
+       "Nee, fotosynthese is juist centraal.",
+       "Nee, koolstof blijft in de kringloop.",
+       "Klopt: fotosynthese neemt CO₂ op, verbranding geeft het terug.",
+       "Nee, het draait om koolstof."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Duurzaamheid»: gebruik zonder uitputting voor de toekomst.",
-      "d": 2
+      "uh": "Koolstofkringloop: fotosynthese neemt CO₂ op, verbranding geeft terug."
      },
      {
-      "v": "Welke term past bij: \"gebruik zonder uitputting voor de toekomst\"?",
+      "v": "Welke eigenschap onderscheidt een thermoharder van een thermoplast?",
       "o": [
-       "Levenscyclusanalyse",
-       "Emissie",
-       "Gat in ozonlaag",
-       "Duurzaamheid"
+       "een thermoharder is een metaal",
+       "een thermoharder is altijd recyclebaar",
+       "een thermoharder smelt makkelijk",
+       "een thermoharder kan na uitharden niet meer worden hervormd"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Duurzaamheid»: gebruik zonder uitputting voor de toekomst.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Duurzaamheid» in?",
-      "o": [
-       "Haber-Bosch; compromis rendement/snelheid",
-       "conserveren, emulgatoren",
-       "een uitgangsmateriaal voor productie",
-       "gebruik zonder uitputting voor de toekomst"
+      "d": 2,
+      "u": "Een thermoharder is vernetwerkt en niet hervormbaar.",
+      "uo": [
+       "Nee, het is een kunststof.",
+       "Nee, juist niet recyclebaar.",
+       "Nee, hij smelt niet.",
+       "Klopt: een thermoharder is vernetwerkt en niet hervormbaar."
       ],
-      "c": 3,
-      "u": "«Duurzaamheid» betekent: gebruik zonder uitputting voor de toekomst.",
-      "d": 3
+      "uh": "Thermoharder: niet meer hervormbaar."
      },
      {
-      "v": "Wat betekent «Recycling»?",
+      "v": "Deze kunststof wordt zacht bij verhitting en is recyclebaar. Welk begrip past hierbij?",
       "o": [
-       "brandstof gemaakt uit biomassa",
-       "het afstaan van elektronen",
-       "het hergebruiken van materialen",
-       "stof die een reactie versnelt zonder verbruikt te worden"
-      ],
-      "c": 2,
-      "u": "«Recycling» betekent: het hergebruiken van materialen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het hergebruiken van materialen\"?",
-      "o": [
-       "Recycling",
-       "Exotherm",
-       "GHS-pictogram",
-       "Element"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Recycling»: het hergebruiken van materialen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het hergebruiken van materialen\"?",
-      "o": [
-       "Groene chemie",
-       "Industriële chemie",
-       "Recycling",
-       "Duurzaamheid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Recycling»: het hergebruiken van materialen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Recycling» in?",
-      "o": [
-       "conserveren, emulgatoren",
-       "een uitgangsmateriaal voor productie",
-       "een gas dat warmte vasthoudt, zoals CO2",
-       "het hergebruiken van materialen"
-      ],
-      "c": 3,
-      "u": "«Recycling» betekent: het hergebruiken van materialen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Biobrandstof»?",
-      "o": [
-       "gemiddelde; betrouwbaarheid",
-       "de kleinste bouwsteen van een element",
-       "brandstof gemaakt uit biomassa",
-       "botsingstheorie, activeringsenergie, katalyse"
-      ],
-      "c": 2,
-      "u": "«Biobrandstof» betekent: brandstof gemaakt uit biomassa.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"brandstof gemaakt uit biomassa\"?",
-      "o": [
-       "Duurzaamheid",
-       "Biobrandstof",
-       "Metaalbinding",
-       "Herhaalmetingen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Biobrandstof»: brandstof gemaakt uit biomassa.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"brandstof gemaakt uit biomassa\"?",
-      "o": [
-       "Broeikasgas",
-       "Voedsel",
-       "Biobrandstof",
-       "Zure regen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Biobrandstof»: brandstof gemaakt uit biomassa.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Biobrandstof» in?",
-      "o": [
-       "milieubeoordeling van grondstof tot afval",
-       "thermoplast vs. thermoharder; recyclen",
-       "brandstof gemaakt uit biomassa",
-       "een uitgangsmateriaal voor productie"
-      ],
-      "c": 2,
-      "u": "«Biobrandstof» betekent: brandstof gemaakt uit biomassa.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Emissie»?",
-      "o": [
-       "GHS-pictogrammen lezen",
-       "binding met een gedeeld elektronenpaar tussen niet-metalen",
-       "de uitstoot van stoffen naar het milieu",
-       "met een ongelijke ladingsverdeling"
-      ],
-      "c": 2,
-      "u": "«Emissie» betekent: de uitstoot van stoffen naar het milieu.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de uitstoot van stoffen naar het milieu\"?",
-      "o": [
-       "Alkaan",
-       "Emissie",
-       "Ionbinding",
-       "Katalysator"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Emissie»: de uitstoot van stoffen naar het milieu.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de uitstoot van stoffen naar het milieu\"?",
-      "o": [
-       "Broeikasgas",
-       "Emissie",
-       "Milieu",
-       "Gat in ozonlaag"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Emissie»: de uitstoot van stoffen naar het milieu.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Emissie» in?",
-      "o": [
-       "gebruik zonder uitputting voor de toekomst",
-       "Haber-Bosch; compromis rendement/snelheid",
-       "brandstof gemaakt uit biomassa",
-       "de uitstoot van stoffen naar het milieu"
-      ],
-      "c": 3,
-      "u": "«Emissie» betekent: de uitstoot van stoffen naar het milieu.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Grondstof»?",
-      "o": [
-       "de −COOH-groep die kenmerkend is voor carbonzuren",
-       "een uitgangsmateriaal voor productie",
-       "alcohol, carbonzuur, amine, ester",
-       "een geurstof uit een zuur en een alcohol"
-      ],
-      "c": 1,
-      "u": "«Grondstof» betekent: een uitgangsmateriaal voor productie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een uitgangsmateriaal voor productie\"?",
-      "o": [
-       "GHS-pictogram",
-       "Grondstof",
-       "Homologe reeksen",
-       "−COOH"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Grondstof»: een uitgangsmateriaal voor productie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een uitgangsmateriaal voor productie\"?",
-      "o": [
-       "Groene chemie",
-       "Grondstof",
-       "Recycling",
-       "Voedsel"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Grondstof»: een uitgangsmateriaal voor productie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Grondstof» in?",
-      "o": [
-       "een uitgangsmateriaal voor productie",
-       "de uitstoot van stoffen naar het milieu",
-       "Haber-Bosch; compromis rendement/snelheid",
-       "materialen blijven in de kringloop"
-      ],
-      "c": 0,
-      "u": "«Grondstof» betekent: een uitgangsmateriaal voor productie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Broeikasgas»?",
-      "o": [
-       "Haber-Bosch; compromis rendement/snelheid",
-       "stof die een reactie versnelt zonder verbruikt te worden",
-       "een gas dat warmte vasthoudt, zoals CO2",
-       "brandstof gemaakt uit biomassa"
-      ],
-      "c": 2,
-      "u": "«Broeikasgas» betekent: een gas dat warmte vasthoudt, zoals CO2.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een gas dat warmte vasthoudt, zoals CO2\"?",
-      "o": [
-       "Reactiesnelheid",
-       "Broeikasgas",
-       "Ion",
-       "Zuivere stof"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Broeikasgas»: een gas dat warmte vasthoudt, zoals CO2.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een gas dat warmte vasthoudt, zoals CO2\"?",
-      "o": [
-       "Broeikasgas",
-       "Levenscyclusanalyse",
-       "Circulaire economie",
-       "Zure regen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Broeikasgas»: een gas dat warmte vasthoudt, zoals CO2.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Broeikasgas» in?",
-      "o": [
-       "de uitstoot van stoffen naar het milieu",
-       "een gas dat warmte vasthoudt, zoals CO2",
-       "CO₂ (verbranding fossiel)opwarming klimaat",
-       "milieubeoordeling van grondstof tot afval"
-      ],
-      "c": 1,
-      "u": "«Broeikasgas» betekent: een gas dat warmte vasthoudt, zoals CO2.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Levenscyclusanalyse»?",
-      "o": [
-       "conserveren, emulgatoren",
-       "een combinatie van meerdere stoffen",
-       "zelfde formule, andere structuur",
-       "milieubeoordeling van grondstof tot afval"
-      ],
-      "c": 3,
-      "u": "«Levenscyclusanalyse» betekent: milieubeoordeling van grondstof tot afval.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"milieubeoordeling van grondstof tot afval\"?",
-      "o": [
-       "Levenscyclusanalyse",
-       "Legering",
-       "Intermoleculaire krachten",
-       "Recycling"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Levenscyclusanalyse»: milieubeoordeling van grondstof tot afval.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"milieubeoordeling van grondstof tot afval\"?",
-      "o": [
-       "Groene chemie",
-       "Materialen",
-       "Levenscyclusanalyse",
-       "Grondstof"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Levenscyclusanalyse»: milieubeoordeling van grondstof tot afval.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Levenscyclusanalyse» in?",
-      "o": [
-       "milieubeoordeling van grondstof tot afval",
-       "gebruik zonder uitputting voor de toekomst",
-       "SO₂ en NOxverzuring bodem/water",
-       "CO₂ (verbranding fossiel)opwarming klimaat"
-      ],
-      "c": 0,
-      "u": "«Levenscyclusanalyse» betekent: milieubeoordeling van grondstof tot afval.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Circulaire economie»?",
-      "o": [
-       "een gas dat warmte vasthoudt, zoals CO2",
-       "materialen blijven in de kringloop",
-       "niet-metalen; gedeelde elektronenparen; polair/apolair",
-       "meer contactoppervlak (poeder i.p.v. brok)"
-      ],
-      "c": 1,
-      "u": "«Circulaire economie» betekent: materialen blijven in de kringloop.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"materialen blijven in de kringloop\"?",
-      "o": [
-       "Circulaire economie",
-       "Groene chemie",
-       "Controle-experiment",
-       "Reacties & rekenen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Circulaire economie»: materialen blijven in de kringloop.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"materialen blijven in de kringloop\"?",
-      "o": [
-       "Broeikaseffect",
-       "Materialen",
-       "Circulaire economie",
-       "Voedsel"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Circulaire economie»: materialen blijven in de kringloop.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Circulaire economie» in?",
-      "o": [
-       "een gas dat warmte vasthoudt, zoals CO2",
-       "materialen blijven in de kringloop",
-       "gebruik zonder uitputting voor de toekomst",
-       "de uitstoot van stoffen naar het milieu"
-      ],
-      "c": 1,
-      "u": "«Circulaire economie» betekent: materialen blijven in de kringloop.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Industriële chemie»?",
-      "o": [
-       "binding tussen tegengesteld geladen ionen",
-       "een reactie die warmte opneemt",
-       "Haber-Bosch; compromis rendement/snelheid",
-       "atoomeconomie, minder afval, duurzaam"
-      ],
-      "c": 2,
-      "u": "«Industriële chemie» betekent: Haber-Bosch; compromis rendement/snelheid.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"Haber-Bosch; compromis rendement/snelheid\"?",
-      "o": [
-       "GHS-pictogram",
-       "Industriële chemie",
-       "−OH",
-       "Intermoleculaire krachten"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Industriële chemie»: Haber-Bosch; compromis rendement/snelheid.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"Haber-Bosch; compromis rendement/snelheid\"?",
-      "o": [
-       "Groene chemie",
-       "Broeikaseffect",
-       "Broeikasgas",
-       "Industriële chemie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Industriële chemie»: Haber-Bosch; compromis rendement/snelheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Industriële chemie» in?",
-      "o": [
-       "de uitstoot van stoffen naar het milieu",
-       "Haber-Bosch; compromis rendement/snelheid",
-       "milieubeoordeling van grondstof tot afval",
-       "thermoplast vs. thermoharder; recyclen"
-      ],
-      "c": 1,
-      "u": "«Industriële chemie» betekent: Haber-Bosch; compromis rendement/snelheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Groene chemie»?",
-      "o": [
-       "de −COOH-groep die kenmerkend is voor carbonzuren",
-       "een geurstof uit een zuur en een alcohol",
-       "atoomeconomie, minder afval, duurzaam",
-       "het scheiden van vaste stof en vloeistof"
-      ],
-      "c": 2,
-      "u": "«Groene chemie» betekent: atoomeconomie, minder afval, duurzaam.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"atoomeconomie, minder afval, duurzaam\"?",
-      "o": [
-       "Circulaire economie",
-       "Groene chemie",
-       "Reactiesnelheid",
-       "Polair"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Groene chemie»: atoomeconomie, minder afval, duurzaam.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"atoomeconomie, minder afval, duurzaam\"?",
-      "o": [
-       "Duurzaamheid",
-       "Materialen",
-       "Broeikasgas",
-       "Groene chemie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Groene chemie»: atoomeconomie, minder afval, duurzaam.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Groene chemie» in?",
-      "o": [
-       "materialen blijven in de kringloop",
-       "atoomeconomie, minder afval, duurzaam",
-       "de uitstoot van stoffen naar het milieu",
-       "CO₂ (verbranding fossiel)opwarming klimaat"
-      ],
-      "c": 1,
-      "u": "«Groene chemie» betekent: atoomeconomie, minder afval, duurzaam.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Milieu»?",
-      "o": [
-       "hydroxylgroepalcohol",
-       "broeikaseffect, zure regen, ozonafbraak",
-       "een stof met maar één soort deeltjes",
-       "atoomeconomie, minder afval, duurzaam"
-      ],
-      "c": 1,
-      "u": "«Milieu» betekent: broeikaseffect, zure regen, ozonafbraak.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"broeikaseffect, zure regen, ozonafbraak\"?",
-      "o": [
-       "Mengsel",
-       "Milieu",
-       "Oplosbaarheid",
-       "Verbranding"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Milieu»: broeikaseffect, zure regen, ozonafbraak.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"broeikaseffect, zure regen, ozonafbraak\"?",
-      "o": [
-       "Milieu",
-       "Broeikasgas",
-       "Recycling",
-       "Gat in ozonlaag"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Milieu»: broeikaseffect, zure regen, ozonafbraak.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Milieu» in?",
-      "o": [
-       "broeikaseffect, zure regen, ozonafbraak",
-       "het hergebruiken van materialen",
-       "brandstof gemaakt uit biomassa",
-       "CO₂ (verbranding fossiel)opwarming klimaat"
-      ],
-      "c": 0,
-      "u": "«Milieu» betekent: broeikaseffect, zure regen, ozonafbraak.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Materialen»?",
-      "o": [
-       "hoe dicht een meting bij de werkelijke waarde ligt",
-       "additie, substitutie, ester­vorming, hydrolyse",
-       "thermoplast vs. thermoharder; recyclen",
-       "een stof die met kleur de zuurgraad aangeeft"
-      ],
-      "c": 2,
-      "u": "«Materialen» betekent: thermoplast vs. thermoharder; recyclen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"thermoplast vs. thermoharder; recyclen\"?",
-      "o": [
-       "Materialen",
-       "Reactiesnelheid",
-       "Zuivere stof",
-       "−OH"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Materialen»: thermoplast vs. thermoharder; recyclen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"thermoplast vs. thermoharder; recyclen\"?",
-      "o": [
-       "Milieu",
-       "Circulaire economie",
-       "Zure regen",
-       "Materialen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Materialen»: thermoplast vs. thermoharder; recyclen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Materialen» in?",
-      "o": [
-       "thermoplast vs. thermoharder; recyclen",
-       "SO₂ en NOxverzuring bodem/water",
-       "atoomeconomie, minder afval, duurzaam",
-       "het hergebruiken van materialen"
-      ],
-      "c": 0,
-      "u": "«Materialen» betekent: thermoplast vs. thermoharder; recyclen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Voedsel»?",
-      "o": [
-       "conserveren, emulgatoren",
-       "een koolstofverbinding met een OH-groep",
-       "additie, substitutie, ester­vorming, hydrolyse",
-       "een maat voor de zuurgraad"
-      ],
-      "c": 0,
-      "u": "«Voedsel» betekent: conserveren, emulgatoren.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"conserveren, emulgatoren\"?",
-      "o": [
-       "pH",
-       "Neutralisatie",
-       "Voedsel",
-       "Variabelen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Voedsel»: conserveren, emulgatoren.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"conserveren, emulgatoren\"?",
-      "o": [
-       "Circulaire economie",
-       "Voedsel",
-       "Broeikaseffect",
-       "Recycling"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Voedsel»: conserveren, emulgatoren.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Voedsel» in?",
-      "o": [
-       "Haber-Bosch; compromis rendement/snelheid",
-       "CFK's (drijfgassen)meer uv-straling",
-       "conserveren, emulgatoren",
-       "atoomeconomie, minder afval, duurzaam"
-      ],
-      "c": 2,
-      "u": "«Voedsel» betekent: conserveren, emulgatoren.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Broeikaseffect»?",
-      "o": [
-       "de mate waarin een stof oplost",
-       "een stof die met kleur de zuurgraad aangeeft",
-       "CO₂ (verbranding fossiel)opwarming klimaat",
-       "thermoplast vs. thermoharder; recyclen"
-      ],
-      "c": 2,
-      "u": "«Broeikaseffect» betekent: CO₂ (verbranding fossiel)opwarming klimaat.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"CO₂ (verbranding fossiel)opwarming klimaat\"?",
-      "o": [
-       "−COO−",
-       "Intermoleculaire krachten",
-       "Atoombouw",
+       "Thermoplast",
+       "Haber-Bosch-proces",
+       "Osmose",
        "Broeikaseffect"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Broeikaseffect»: CO₂ (verbranding fossiel)opwarming klimaat.",
-      "d": 2
+      "c": 0,
+      "d": 1,
+      "u": "Deze kunststof wordt zacht bij verhitting en is recyclebaar. Dat past bij Thermoplast: zacht bij verhitting.",
+      "uo": [
+       "Klopt: zacht bij verhitting.",
+       "Nee, dat hoort bij Haber-Bosch-proces: ammoniak uit N₂ en H₂.",
+       "Nee, dat hoort bij Osmose: water door een membraan.",
+       "Nee, dat hoort bij Broeikaseffect: warmte vasthouden."
+      ],
+      "uh": "Thermoplast: zacht bij verhitting."
      },
      {
-      "v": "Welke term past bij: \"CO₂ (verbranding fossiel)opwarming klimaat\"?",
+      "v": "Zwaveldioxide en stikstofoxiden maken de regen zuur. Om welk begrip gaat het?",
+      "o": [
+       "Emulgator",
+       "Zure regen",
+       "Osmose",
+       "Thermoplast"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Zwaveldioxide en stikstofoxiden maken de regen zuur. Dat past bij Zure regen: door SO₂ en NOₓ.",
+      "uo": [
+       "Nee, dat hoort bij Emulgator: mengt water en vet.",
+       "Klopt: door SO₂ en NOₓ.",
+       "Nee, dat hoort bij Osmose: water door een membraan.",
+       "Nee, dat hoort bij Thermoplast: zacht bij verhitting."
+      ],
+      "uh": "Zure regen: door SO₂ en NOₓ."
+     },
+     {
+      "v": "Zure neerslag door SO2 en NOx. Welk begrip herken je hier?",
+      "o": [
+       "Osmose",
+       "Emulgator",
+       "Zure regen",
+       "Thermoplast"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Zure neerslag door SO2 en NOx. Dat past bij Zure regen: door SO₂ en NOₓ.",
+      "uo": [
+       "Nee, dat hoort bij Osmose: water door een membraan.",
+       "Nee, dat hoort bij Emulgator: mengt water en vet.",
+       "Klopt: door SO₂ en NOₓ.",
+       "Nee, dat hoort bij Thermoplast: zacht bij verhitting."
+      ],
+      "uh": "Zure regen: door SO₂ en NOₓ."
+     },
+     {
+      "v": "Een bioplastic uit hernieuwbare grondstoffen. Wat is hier aan de hand?",
       "o": [
        "Broeikaseffect",
+       "Thermoharder",
+       "Ozonlaag",
+       "PLA"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een bioplastic uit hernieuwbare grondstoffen. Dat past bij PLA: bioplastic, composteerbaar.",
+      "uo": [
+       "Nee, dat hoort bij Broeikaseffect: warmte vasthouden.",
+       "Nee, dat hoort bij Thermoharder: niet smeltbaar.",
+       "Nee, dat hoort bij Ozonlaag: absorbeert UV.",
+       "Klopt: bioplastic, composteerbaar."
+      ],
+      "uh": "PLA: bioplastic, composteerbaar."
+     },
+     {
+      "v": "Een composteerbaar bioplastic gemaakt van bijvoorbeeld maïs. Welk begrip past hierbij?",
+      "o": [
+       "PLA",
+       "Ozonlaag",
        "Zure regen",
-       "Voedsel",
-       "Emissie"
+       "Thermoplast"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Broeikaseffect»: CO₂ (verbranding fossiel)opwarming klimaat.",
-      "d": 3
+      "d": 1,
+      "u": "Een composteerbaar bioplastic gemaakt van bijvoorbeeld maïs. Dat past bij PLA: bioplastic, composteerbaar.",
+      "uo": [
+       "Klopt: bioplastic, composteerbaar.",
+       "Nee, dat hoort bij Ozonlaag: absorbeert UV.",
+       "Nee, dat hoort bij Zure regen: door SO₂ en NOₓ.",
+       "Nee, dat hoort bij Thermoplast: zacht bij verhitting."
+      ],
+      "uh": "PLA: bioplastic, composteerbaar."
      },
      {
-      "v": "Wat houdt «Broeikaseffect» in?",
+      "v": "Het vasthouden van warmte door gassen. Om welk begrip gaat het?",
       "o": [
-       "een uitgangsmateriaal voor productie",
-       "CO₂ (verbranding fossiel)opwarming klimaat",
-       "gebruik zonder uitputting voor de toekomst",
-       "milieubeoordeling van grondstof tot afval"
+       "Ozonlaag",
+       "Broeikaseffect",
+       "Osmose",
+       "Haber-Bosch-proces"
       ],
       "c": 1,
-      "u": "«Broeikaseffect» betekent: CO₂ (verbranding fossiel)opwarming klimaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Zure regen»?",
-      "o": [
-       "een verzadigde koolwaterstof",
-       "waterstofbruggen en vanderwaalskrachten",
-       "meer contactoppervlak (poeder i.p.v. brok)",
-       "SO₂ en NOxverzuring bodem/water"
+      "d": 2,
+      "u": "Het vasthouden van warmte door gassen. Dat past bij Broeikaseffect: warmte vasthouden.",
+      "uo": [
+       "Nee, dat hoort bij Ozonlaag: absorbeert UV.",
+       "Klopt: warmte vasthouden.",
+       "Nee, dat hoort bij Osmose: water door een membraan.",
+       "Nee, dat hoort bij Haber-Bosch-proces: ammoniak uit N₂ en H₂."
       ],
-      "c": 3,
-      "u": "«Zure regen» betekent: SO₂ en NOxverzuring bodem/water.",
-      "d": 1
+      "uh": "Broeikaseffect: warmte vasthouden."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"SO₂ en NOxverzuring bodem/water\"?",
+      "v": "De laag die UV-straling absorbeert. Welk begrip herken je hier?",
       "o": [
-       "Mol",
-       "Endotherm",
-       "Zure regen",
-       "Metaalbinding"
+       "Emulgator",
+       "Haber-Bosch-proces",
+       "Ozonlaag",
+       "PLA"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Zure regen»: SO₂ en NOxverzuring bodem/water.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"SO₂ en NOxverzuring bodem/water\"?",
-      "o": [
-       "Grondstof",
-       "Groene chemie",
-       "Zure regen",
-       "Broeikasgas"
+      "d": 1,
+      "u": "De laag die UV-straling absorbeert. Dat past bij Ozonlaag: absorbeert UV.",
+      "uo": [
+       "Nee, dat hoort bij Emulgator: mengt water en vet.",
+       "Nee, dat hoort bij Haber-Bosch-proces: ammoniak uit N₂ en H₂.",
+       "Klopt: absorbeert UV.",
+       "Nee, dat hoort bij PLA: bioplastic, composteerbaar."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Zure regen»: SO₂ en NOxverzuring bodem/water.",
-      "d": 3
+      "uh": "Ozonlaag: absorbeert UV."
      },
      {
-      "v": "Wat houdt «Zure regen» in?",
+      "v": "De laag in de stratosfeer die schadelijke UV-straling tegenhoudt. Wat is hier aan de hand?",
       "o": [
-       "thermoplast vs. thermoharder; recyclen",
-       "SO₂ en NOxverzuring bodem/water",
-       "CO₂ (verbranding fossiel)opwarming klimaat",
-       "Haber-Bosch; compromis rendement/snelheid"
-      ],
-      "c": 1,
-      "u": "«Zure regen» betekent: SO₂ en NOxverzuring bodem/water.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Gat in ozonlaag»?",
-      "o": [
-       "het scheiden van vaste stof en vloeistof",
-       "een atoom of groep wordt vervangen door een andere",
-       "de verhouding waarin stoffen reageren",
-       "CFK's (drijfgassen)meer uv-straling"
+       "Atoomeconomie",
+       "Broeikaseffect",
+       "Thermoharder",
+       "Ozonlaag"
       ],
       "c": 3,
-      "u": "«Gat in ozonlaag» betekent: CFK's (drijfgassen)meer uv-straling.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"CFK's (drijfgassen)meer uv-straling\"?",
-      "o": [
-       "Indicator",
-       "Verbranding",
-       "Molaire massa",
-       "Gat in ozonlaag"
+      "d": 2,
+      "u": "De laag in de stratosfeer die schadelijke UV-straling tegenhoudt. Dat past bij Ozonlaag: absorbeert UV.",
+      "uo": [
+       "Nee, dat hoort bij Atoomeconomie: aandeel nuttig product.",
+       "Nee, dat hoort bij Broeikaseffect: warmte vasthouden.",
+       "Nee, dat hoort bij Thermoharder: niet smeltbaar.",
+       "Klopt: absorbeert UV."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Gat in ozonlaag»: CFK's (drijfgassen)meer uv-straling.",
-      "d": 2
+      "uh": "Ozonlaag: absorbeert UV."
      },
      {
-      "v": "Welke term past bij: \"CFK's (drijfgassen)meer uv-straling\"?",
+      "v": "Een stof die water en vet mengt. Welk begrip past hierbij?",
       "o": [
-       "Recycling",
-       "Biobrandstof",
-       "Broeikasgas",
-       "Gat in ozonlaag"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Gat in ozonlaag»: CFK's (drijfgassen)meer uv-straling.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Gat in ozonlaag» in?",
-      "o": [
-       "CFK's (drijfgassen)meer uv-straling",
-       "brandstof gemaakt uit biomassa",
-       "de uitstoot van stoffen naar het milieu",
-       "een gas dat warmte vasthoudt, zoals CO2"
+       "Emulgator",
+       "Thermoharder",
+       "Haber-Bosch-proces",
+       "PLA"
       ],
       "c": 0,
-      "u": "«Gat in ozonlaag» betekent: CFK's (drijfgassen)meer uv-straling.",
-      "d": 3
+      "d": 1,
+      "u": "Een stof die water en vet mengt. Dat past bij Emulgator: mengt water en vet.",
+      "uo": [
+       "Klopt: mengt water en vet.",
+       "Nee, dat hoort bij Thermoharder: niet smeltbaar.",
+       "Nee, dat hoort bij Haber-Bosch-proces: ammoniak uit N₂ en H₂.",
+       "Nee, dat hoort bij PLA: bioplastic, composteerbaar."
+      ],
+      "uh": "Emulgator: mengt water en vet."
+     },
+     {
+      "v": "Met een water- én vetminnend deel houdt hij water en vet gemengd. Om welk begrip gaat het?",
+      "o": [
+       "Osmose",
+       "Emulgator",
+       "Thermoharder",
+       "Ozonlaag"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Met een water- én vetminnend deel houdt hij water en vet gemengd. Dat past bij Emulgator: mengt water en vet.",
+      "uo": [
+       "Nee, dat hoort bij Osmose: water door een membraan.",
+       "Klopt: mengt water en vet.",
+       "Nee, dat hoort bij Thermoharder: niet smeltbaar.",
+       "Nee, dat hoort bij Ozonlaag: absorbeert UV."
+      ],
+      "uh": "Emulgator: mengt water en vet."
+     },
+     {
+      "v": "Een niet-smeltbare kunststof. Welk begrip herken je hier?",
+      "o": [
+       "Broeikaseffect",
+       "Atoomeconomie",
+       "Thermoharder",
+       "Osmose"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een niet-smeltbare kunststof. Dat past bij Thermoharder: niet smeltbaar.",
+      "uo": [
+       "Nee, dat hoort bij Broeikaseffect: warmte vasthouden.",
+       "Nee, dat hoort bij Atoomeconomie: aandeel nuttig product.",
+       "Klopt: niet smeltbaar.",
+       "Nee, dat hoort bij Osmose: water door een membraan."
+      ],
+      "uh": "Thermoharder: niet smeltbaar."
+     },
+     {
+      "v": "De verplaatsing van water door een membraan. Wat is hier aan de hand?",
+      "o": [
+       "PLA",
+       "Emulgator",
+       "Atoomeconomie",
+       "Osmose"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De verplaatsing van water door een membraan. Dat past bij Osmose: water door een membraan.",
+      "uo": [
+       "Nee, dat hoort bij PLA: bioplastic, composteerbaar.",
+       "Nee, dat hoort bij Emulgator: mengt water en vet.",
+       "Nee, dat hoort bij Atoomeconomie: aandeel nuttig product.",
+       "Klopt: water door een membraan."
+      ],
+      "uh": "Osmose: water door een membraan."
+     },
+     {
+      "v": "Het proces dat ammoniak maakt. Welk begrip past hierbij?",
+      "o": [
+       "Haber-Bosch-proces",
+       "Osmose",
+       "Thermoplast",
+       "Zure regen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Het proces dat ammoniak maakt. Dat past bij Haber-Bosch-proces: ammoniak uit N₂ en H₂.",
+      "uo": [
+       "Klopt: ammoniak uit N₂ en H₂.",
+       "Nee, dat hoort bij Osmose: water door een membraan.",
+       "Nee, dat hoort bij Thermoplast: zacht bij verhitting.",
+       "Nee, dat hoort bij Zure regen: door SO₂ en NOₓ."
+      ],
+      "uh": "Haber-Bosch-proces: ammoniak uit N₂ en H₂."
+     },
+     {
+      "v": "Gassen houden warmte vast en de aarde warmt op. Om welk begrip gaat het?",
+      "o": [
+       "Ozonlaag",
+       "Broeikaseffect",
+       "Osmose",
+       "Haber-Bosch-proces"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Gassen houden warmte vast en de aarde warmt op. Dat past bij Broeikaseffect: warmte vasthouden.",
+      "uo": [
+       "Nee, dat hoort bij Ozonlaag: absorbeert UV.",
+       "Klopt: warmte vasthouden.",
+       "Nee, dat hoort bij Osmose: water door een membraan.",
+       "Nee, dat hoort bij Haber-Bosch-proces: ammoniak uit N₂ en H₂."
+      ],
+      "uh": "Broeikaseffect: warmte vasthouden."
+     },
+     {
+      "v": "Een kunststof die smelt bij verhitting. Welk begrip herken je hier?",
+      "o": [
+       "Osmose",
+       "Haber-Bosch-proces",
+       "Thermoplast",
+       "Broeikaseffect"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een kunststof die smelt bij verhitting. Dat past bij Thermoplast: zacht bij verhitting.",
+      "uo": [
+       "Nee, dat hoort bij Osmose: water door een membraan.",
+       "Nee, dat hoort bij Haber-Bosch-proces: ammoniak uit N₂ en H₂.",
+       "Klopt: zacht bij verhitting.",
+       "Nee, dat hoort bij Broeikaseffect: warmte vasthouden."
+      ],
+      "uh": "Thermoplast: zacht bij verhitting."
+     },
+     {
+      "v": "Het aandeel nuttig product. Wat is hier aan de hand?",
+      "o": [
+       "Thermoharder",
+       "Haber-Bosch-proces",
+       "Zure regen",
+       "Atoomeconomie"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het aandeel nuttig product. Dat past bij Atoomeconomie: aandeel nuttig product.",
+      "uo": [
+       "Nee, dat hoort bij Thermoharder: niet smeltbaar.",
+       "Nee, dat hoort bij Haber-Bosch-proces: ammoniak uit N₂ en H₂.",
+       "Nee, dat hoort bij Zure regen: door SO₂ en NOₓ.",
+       "Klopt: aandeel nuttig product."
+      ],
+      "uh": "Atoomeconomie: aandeel nuttig product."
+     },
+     {
+      "v": "Uit stikstof en waterstof wordt onder hoge druk ammoniak gemaakt. Welk begrip past hierbij?",
+      "o": [
+       "Haber-Bosch-proces",
+       "Osmose",
+       "Thermoplast",
+       "Zure regen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Uit stikstof en waterstof wordt onder hoge druk ammoniak gemaakt. Dat past bij Haber-Bosch-proces: ammoniak uit N₂ en H₂.",
+      "uo": [
+       "Klopt: ammoniak uit N₂ en H₂.",
+       "Nee, dat hoort bij Osmose: water door een membraan.",
+       "Nee, dat hoort bij Thermoplast: zacht bij verhitting.",
+       "Nee, dat hoort bij Zure regen: door SO₂ en NOₓ."
+      ],
+      "uh": "Haber-Bosch-proces: ammoniak uit N₂ en H₂."
+     },
+     {
+      "v": "Hoeveel van de gevormde stof echt nuttig product is. Om welk begrip gaat het?",
+      "o": [
+       "Haber-Bosch-proces",
+       "Atoomeconomie",
+       "Zure regen",
+       "Thermoharder"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Hoeveel van de gevormde stof echt nuttig product is. Dat past bij Atoomeconomie: aandeel nuttig product.",
+      "uo": [
+       "Nee, dat hoort bij Haber-Bosch-proces: ammoniak uit N₂ en H₂.",
+       "Klopt: aandeel nuttig product.",
+       "Nee, dat hoort bij Zure regen: door SO₂ en NOₓ.",
+       "Nee, dat hoort bij Thermoharder: niet smeltbaar."
+      ],
+      "uh": "Atoomeconomie: aandeel nuttig product."
+     },
+     {
+      "v": "Deze kunststof is vernetwerkt en kan niet meer smelten. Welk begrip herken je hier?",
+      "o": [
+       "Broeikaseffect",
+       "Atoomeconomie",
+       "Thermoharder",
+       "Osmose"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Deze kunststof is vernetwerkt en kan niet meer smelten. Dat past bij Thermoharder: niet smeltbaar.",
+      "uo": [
+       "Nee, dat hoort bij Broeikaseffect: warmte vasthouden.",
+       "Nee, dat hoort bij Atoomeconomie: aandeel nuttig product.",
+       "Klopt: niet smeltbaar.",
+       "Nee, dat hoort bij Osmose: water door een membraan."
+      ],
+      "uh": "Thermoharder: niet smeltbaar."
+     },
+     {
+      "v": "Zout onttrekt water aan bacteriën, die daardoor uitdrogen. Wat is hier aan de hand?",
+      "o": [
+       "PLA",
+       "Emulgator",
+       "Atoomeconomie",
+       "Osmose"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Zout onttrekt water aan bacteriën, die daardoor uitdrogen. Dat past bij Osmose: water door een membraan.",
+      "uo": [
+       "Nee, dat hoort bij PLA: bioplastic, composteerbaar.",
+       "Nee, dat hoort bij Emulgator: mengt water en vet.",
+       "Nee, dat hoort bij Atoomeconomie: aandeel nuttig product.",
+       "Klopt: water door een membraan."
+      ],
+      "uh": "Osmose: water door een membraan."
      }
     ],
     "oe": [
@@ -32727,68 +30837,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Duurzaamheid",
-      "d": "gebruik zonder uitputting voor de toekomst"
+      "t": "Haber-Bosch-proces",
+      "d": "het industriële proces dat ammoniak maakt uit stikstof en waterstof"
      },
      {
-      "t": "Recycling",
-      "d": "het hergebruiken van materialen"
+      "t": "Thermoplast",
+      "d": "een kunststof die zacht wordt bij verhitting en recyclebaar is"
      },
      {
-      "t": "Biobrandstof",
-      "d": "brandstof gemaakt uit biomassa"
+      "t": "Thermoharder",
+      "d": "een vernetwerkte kunststof die niet smelt en niet hervormbaar is"
      },
      {
-      "t": "Emissie",
-      "d": "de uitstoot van stoffen naar het milieu"
+      "t": "Emulgator",
+      "d": "een stof met een hydrofiel én hydrofoob deel die water en vet mengt"
      },
      {
-      "t": "Grondstof",
-      "d": "een uitgangsmateriaal voor productie"
+      "t": "Atoomeconomie",
+      "d": "de verhouding nuttig product ten opzichte van alle gevormde producten"
      },
      {
-      "t": "Broeikasgas",
-      "d": "een gas dat warmte vasthoudt, zoals CO2"
-     },
-     {
-      "t": "Levenscyclusanalyse",
-      "d": "milieubeoordeling van grondstof tot afval"
-     },
-     {
-      "t": "Circulaire economie",
-      "d": "materialen blijven in de kringloop"
-     },
-     {
-      "t": "Industriële chemie",
-      "d": "Haber-Bosch; compromis rendement/snelheid"
-     },
-     {
-      "t": "Groene chemie",
-      "d": "atoomeconomie, minder afval, duurzaam"
-     },
-     {
-      "t": "Milieu",
-      "d": "broeikaseffect, zure regen, ozonafbraak"
-     },
-     {
-      "t": "Materialen",
-      "d": "thermoplast vs. thermoharder; recyclen"
-     },
-     {
-      "t": "Voedsel",
-      "d": "conserveren, emulgatoren"
+      "t": "Ozonlaag",
+      "d": "de laag in de stratosfeer die schadelijke UV-straling absorbeert"
      },
      {
       "t": "Broeikaseffect",
-      "d": "CO₂ (verbranding fossiel)opwarming klimaat"
+      "d": "het vasthouden van warmte doordat gassen infraroodstraling terugkaatsen"
      },
      {
       "t": "Zure regen",
-      "d": "SO₂ en NOxverzuring bodem/water"
+      "d": "neerslag die zuur is door SO₂ en NOₓ in de lucht"
      },
      {
-      "t": "Gat in ozonlaag",
-      "d": "CFK's (drijfgassen)meer uv-straling"
+      "t": "PLA",
+      "d": "een composteerbaar bioplastic uit hernieuwbare grondstoffen"
+     },
+     {
+      "t": "Osmose",
+      "d": "de verplaatsing van water door een membraan naar de hoogste concentratie"
      }
     ]
    }

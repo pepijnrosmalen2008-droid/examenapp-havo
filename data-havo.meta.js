@@ -879,9 +879,9 @@ var VAKKEN = [
      "Veiligheid in het laboratorium",
      "Mol-berekeningen in onderzoekscontext"
     ],
-    "nSv": 61,
+    "nSv": 32,
     "nOe": 3,
-    "nBeg": 13,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -912,9 +912,9 @@ var VAKKEN = [
      "Molecuulpolairiteit en geometrie",
      "Oplossen van stoffen (like dissolves like)"
     ],
-    "nSv": 82,
+    "nSv": 33,
     "nOe": 4,
-    "nBeg": 17,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -953,9 +953,9 @@ var VAKKEN = [
      "Mol, concentratie en stoichiometrie",
      "Verdunning en titratie"
     ],
-    "nSv": 96,
+    "nSv": 32,
     "nOe": 8,
-    "nBeg": 22,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -981,9 +981,9 @@ var VAKKEN = [
      "Reactietypen: additie, substitutie, esterificatie, hydrolyse",
      "Polymeren (additie- en condensatiepolymerisatie)"
     ],
-    "nSv": 92,
+    "nSv": 33,
     "nOe": 6,
-    "nBeg": 20,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1008,9 +1008,9 @@ var VAKKEN = [
      "Medicijnen en farmaceutische chemie",
      "Voedselchemie (conservering, additieven)"
     ],
-    "nSv": 77,
+    "nSv": 32,
     "nOe": 3,
-    "nBeg": 16,
+    "nBeg": 10,
     "hasSam": true
    }
   ]
