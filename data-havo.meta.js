@@ -1046,9 +1046,9 @@ var VAKKEN = [
      "Meten en meetonzekerheid: nauwkeurigheid en precisie",
      "Grafieken: assen, schaal, lijnvorm en verband bepalen"
     ],
-    "nSv": 57,
+    "nSv": 33,
     "nOe": 3,
-    "nBeg": 9,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1070,9 +1070,9 @@ var VAKKEN = [
      "Brekingsindex",
      "Golflengte en kleur van licht"
     ],
-    "nSv": 104,
+    "nSv": 33,
     "nOe": 9,
-    "nBeg": 19,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1110,9 +1110,9 @@ var VAKKEN = [
      "Kinetische en potentiele energie",
      "Wet van behoud van energie"
     ],
-    "nSv": 135,
+    "nSv": 33,
     "nOe": 12,
-    "nBeg": 27,
+    "nBeg": 10,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -1249,9 +1249,9 @@ var VAKKEN = [
      "Transformator (U1/U2 = n1/n2)",
      "Elektromagnetische inductie"
     ],
-    "nSv": 112,
+    "nSv": 32,
     "nOe": 11,
-    "nBeg": 21,
+    "nBeg": 10,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -1387,9 +1387,9 @@ var VAKKEN = [
      "Ioniserende straling en gezondheid",
      "Elektromagnetische straling en materie (fotonenergie)"
     ],
-    "nSv": 136,
+    "nSv": 32,
     "nOe": 11,
-    "nBeg": 27,
+    "nBeg": 10,
     "hasSam": true
    }
   ]

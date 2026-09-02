@@ -30911,205 +30911,235 @@ var VAKKEN = [
      "Meten en meetonzekerheid: nauwkeurigheid en precisie",
      "Grafieken: assen, schaal, lijnvorm en verband bepalen"
     ],
-    "sam": "<div class=\"sam-head\">Domein A - Vaardigheden</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Natuurkunde draait om meten, beschrijven en voorspellen met grootheden, eenheden en formules.</li><li>Een goede meting is reproduceerbaar; een goede grafiek laat het verband tussen twee grootheden direct zien.</li></ul></div><div class=\"sam-section\"><h3>Grootheden, eenheden en SI</h3><ul><li><strong>Grootheid</strong>: een meetbare eigenschap (afstand, massa, tijd). <strong>Eenheid</strong>: de vaste maat ervan (m, kg, s).</li><li><strong>SI-stelsel</strong> - zeven basiseenheden: meter (lengte), kilogram (massa), seconde (tijd), ampère (stroomsterkte), kelvin (temperatuur), mol (hoeveelheid stof) en candela (lichtsterkte).</li><li><strong>Voorvoegsels</strong> staan voor machten van tien: k = 10³, M = 10⁶, m = 10⁻³, µ = 10⁻⁶. Zo is 2,5 km = 2,5·10³ m = 2500 m.</li><li><strong>Wetenschappelijke notatie</strong>: één cijfer vóór de komma maal een macht van tien. Bijvoorbeeld 5 430 000 m = 5,43·10⁶ m en 0,00000341 s = 3,41·10⁻⁶ s.</li></ul></div><div class=\"sam-section\"><h3>Significante cijfers</h3><ul><li>Het aantal significante cijfers geeft de nauwkeurigheid van een meting weer; voorloopnullen tellen niet mee (0,0047 heeft er twee).</li><li><strong>Vermenigvuldigen en delen</strong>: het antwoord krijgt evenveel significante cijfers als de minst nauwkeurige waarde.</li><li><strong>Optellen en aftrekken</strong>: het antwoord krijgt evenveel decimalen als de waarde met de minste decimalen. Zo wordt 2,45 + 3,1 = 5,55 afgerond op 5,6.</li><li>Op het examen telt significantie alleen mee als er expliciet om gevraagd wordt.</li></ul></div><div class=\"sam-section\"><h3>Grafieken en verbanden</h3><ul><li>In een (A,B)-diagram staat A op de verticale as en B op de horizontale as. De <strong>helling</strong> is de verandering van de ene grootheid per eenheid van de andere: in een (x,t)-diagram is de helling de snelheid v = Δx/Δt.</li><li>De <strong>oppervlakte onder de grafiek</strong> heeft betekenis: onder een (v,t)-diagram is dat de afgelegde afstand (x = v·t).</li><li>Veelvoorkomende verbanden: recht evenredig (y = a·x, lijn door de oorsprong), lineair (y = a·x + b), omgekeerd evenredig (y = a/x, hyperbool), kwadratisch (y = a·x², parabool), omgekeerd kwadratisch (y = a/x²) en wortelverband (y = a·√x).</li><li><strong>Coördinatentransformatie</strong>: zet je bijvoorbeeld √x of 1/x op een as, dan wordt een krom verband een rechte lijn - handig om het type verband te bevestigen.</li></ul></div><div class=\"sam-section\"><h3>Onderzoeken en ontwerpen</h3><ul><li><strong>Onderzoekscyclus</strong>: onderzoeksvraag → hypothese → werkplan → meting → verwerking → conclusie die de hypothese toetst. Een onderzoek moet reproduceerbaar zijn.</li><li><strong>Ontwerpcyclus</strong>: ontwerpvraag → programma van eisen → ontwerp en prototype → testen → evalueren en verbeteren (zo nodig opnieuw doorlopen).</li><li><strong>Variabelen</strong>: de onafhankelijke variabele stel je in, de afhankelijke variabele meet je; storende variabelen houd je constant.</li></ul></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Eenheid vergeten of niet eerst omrekenen naar SI-eenheden vóór je rekent.</li><li>Significantie toepassen terwijl er niet om gevraagd is - of juist vergeten als het wél gevraagd wordt.</li><li>Helling en oppervlakte onder een grafiek door elkaar halen.</li></ul></div>",
+    "sam": "<div class=\"sam-intro\">Bij natuurkundig onderzoek stel je de <strong>onafhankelijke variabele</strong> in (op de x-as) en meet je de <strong>afhankelijke</strong>. Je herkent <strong>verbanden</strong> aan de grafiekvorm, onderscheidt <strong>nauwkeurigheid</strong> van <strong>precisie</strong> en <strong>systematische</strong> van <strong>toevallige fouten</strong>, en rekent met <strong>significante cijfers</strong>.</div><div class=\"sam-head\">1. Variabelen en verbanden</div><p>De <strong>onafhankelijke variabele</strong> (OV) stel je in als oorzaak en zet je op de x-as; de <strong>afhankelijke variabele</strong> (AV) meet je als gevolg. Een recht evenredig verband geeft een rechte lijn door de oorsprong; een omgekeerd evenredig verband een <strong>hyperbool</strong>; een kwadratisch verband een parabool. De <strong>helling</strong> van een rechte grafiek is Δy/Δx.</p><div class=\"sam-head\">2. Meetkwaliteit</div><p><strong>Nauwkeurigheid</strong> is dicht bij de ware waarde zitten, <strong>precisie</strong> een kleine spreiding. Een <strong>systematische fout</strong> wijst altijd dezelfde kant op, een <strong>toevallige fout</strong> is willekeurig. <strong>Interpoleren</strong> is schatten binnen het meetbereik, <strong>extrapoleren</strong> erbuiten. De SI-basiseenheid van massa is de kilogram; het aantal <strong>significante cijfers</strong> zegt hoe nauwkeurig een getal is.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Onafhankelijke variabele</div><div class=\"sam-definitie-body\">de variabele die je zelf instelt, op de x-as.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Afhankelijke variabele</div><div class=\"sam-definitie-body\">de variabele die je meet als gevolg.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Controle-experiment</div><div class=\"sam-definitie-body\">een vergelijkingspunt zonder de onafhankelijke variabele.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Nauwkeurigheid</div><div class=\"sam-definitie-body\">hoe dicht een meting bij de ware waarde ligt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Precisie</div><div class=\"sam-definitie-body\">hoe klein de spreiding tussen metingen is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Systematische fout</div><div class=\"sam-definitie-body\">een fout die steeds dezelfde kant op wijst.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Toevallige fout</div><div class=\"sam-definitie-body\">een fout die willekeurig verspreid is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Interpoleren</div><div class=\"sam-definitie-body\">een waarde schatten binnen het meetbereik.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Extrapoleren</div><div class=\"sam-definitie-body\">een waarde schatten buiten het meetbereik.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Significante cijfers</div><div class=\"sam-definitie-body\">de cijfers die de nauwkeurigheid van een meetwaarde aangeven.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Onafhankelijke variabele»</b> is zelf ingesteld, x-as, terwijl <b>«Afhankelijke variabele»</b> gemeten gevolg is. <b>«Controle-experiment»</b> is referentie zonder OV, terwijl <b>«Systematische fout»</b> altijd dezelfde richting is. <b>«Nauwkeurigheid»</b> is dicht bij de ware waarde, terwijl <b>«Precisie»</b> kleine spreiding is. <b>«Systematische fout»</b> is altijd dezelfde richting, terwijl <b>«Toevallige fout»</b> willekeurig verspreid is.</div>",
     "sv": [
      {
       "v": "Wat is het verschil tussen een onafhankelijke en een afhankelijke variabele?",
       "o": [
-       "OV stel je in als oorzaak, AV meet je als gevolg",
-       "OV meet je en de AV stel je vooraf zelf in",
-       "de OV en de AV betekenen precies hetzelfde begrip",
-       "de OV is in elk experiment altijd de temperatuur"
+       "de OV stel je in als oorzaak, de AV meet je als gevolg",
+       "ze zijn hetzelfde",
+       "de OV meet je, de AV stel je in",
+       "beide meet je"
       ],
       "c": 0,
-      "u": "OV = onafhankelijke variabele: jij bepaalt de waarde. AV = afhankelijke variabele: de waarde is het gevolg van de OV. In een grafiek staat OV op de x-as en AV op de y-as."
+      "d": 2,
+      "u": "OV instellen, AV meten.",
+      "uo": [
+       "Klopt: OV instellen, AV meten.",
+       "Nee, ze verschillen.",
+       "Nee, dat is omgedraaid.",
+       "Nee, de OV stel je juist in."
+      ],
+      "uh": "OV: oorzaak instellen; AV: gevolg meten."
      },
      {
       "v": "Wat is het doel van een controle-experiment?",
       "o": [
-       "een vergelijkingspunt zonder de OV om het effect ervan te isoleren",
-       "het bewijst direct en zonder twijfel de gestelde hypothese",
-       "het meet de afhankelijke variabele simpelweg een tweede keer",
-       "het verwijdert de onafhankelijke variabele volledig uit de proef"
+       "de proef sneller maken",
+       "een vergelijkingspunt bieden zonder de OV, om het effect te isoleren",
+       "de meetfout vergroten",
+       "de hypothese verzinnen"
       ],
-      "c": 0,
-      "u": "In een controle-experiment is de OV op nulwaarde (of standaardwaarde). Het laat zien wat er zonder de OV zou gebeuren zodat je het effect van de OV kunt aantonen."
+      "c": 1,
+      "d": 2,
+      "u": "Zonder OV zie je het zuivere effect.",
+      "uo": [
+       "Nee, dat is niet het doel.",
+       "Klopt: zonder OV zie je het zuivere effect.",
+       "Nee, juist niet.",
+       "Nee, de hypothese staat al vast."
+      ],
+      "uh": "Controle-experiment: referentie zonder OV."
      },
      {
       "v": "Op welke as zet je de onafhankelijke variabele in een grafiek?",
       "o": [
-       "Horizontale as (x-as)",
-       "Verticale as (y-as)",
-       "Diagonale as",
-       "Op geen van beide assen"
+       "het maakt niet uit",
+       "de verticale as (y-as)",
+       "de horizontale as (x-as)",
+       "op geen enkele as"
       ],
-      "c": 0,
-      "u": "Conventie: OV staat op de x-as (horizontaal), AV op de y-as (verticaal). De helling van de grafiek geeft het verband weer tussen OV en AV."
+      "c": 2,
+      "d": 2,
+      "u": "De OV komt op de x-as.",
+      "uo": [
+       "Nee, er is een afspraak.",
+       "Nee, daar komt de AV.",
+       "Klopt: de OV komt op de x-as.",
+       "Nee, ze komt op de x-as."
+      ],
+      "uh": "OV: horizontale as."
      },
      {
       "v": "Wat is het verschil tussen nauwkeurigheid en precisie?",
       "o": [
-       "nauwkeurigheid = dicht bij de ware waarde, precisie = kleine spreiding",
-       "precisie = dicht bij de ware waarde, nauwkeurigheid = kleine spreiding",
-       "nauwkeurigheid en precisie betekenen in de natuurkunde hetzelfde",
-       "precisie gaat alleen over het aantal decimalen achter de komma"
+       "precisie is de ware waarde",
+       "ze zijn hetzelfde",
+       "nauwkeurigheid is de spreiding",
+       "nauwkeurigheid is dicht bij de ware waarde, precisie is een kleine spreiding"
       ],
-      "c": 0,
-      "u": "Je kunt precies maar onnauwkeurig zijn (altijd dezelfde fout). Of nauwkeurig maar niet precies (gemiddeld goed, maar met veel spreiding). Ideaal: beide hoog."
+      "c": 3,
+      "d": 3,
+      "u": "Dicht bij waar tegenover weinig spreiding.",
+      "uo": [
+       "Nee, dat is nauwkeurigheid.",
+       "Nee, ze verschillen.",
+       "Nee, dat is precisie.",
+       "Klopt: dicht bij waar tegenover weinig spreiding."
+      ],
+      "uh": "Nauwkeurig: dicht bij waar; precies: kleine spreiding."
      },
      {
-      "v": "Welk grafiektype hoort bij een recht evenredig verband (y evenredig met x)?",
+      "v": "Welk grafiektype hoort bij een recht evenredig verband?",
       "o": [
-       "Rechte lijn door de oorsprong",
-       "Parabool (kwadratisch)",
-       "Afvlakkende curve (hyperbool)",
-       "S-vormige curve"
+       "een rechte lijn door de oorsprong",
+       "een hyperbool",
+       "een parabool",
+       "een horizontale lijn"
       ],
       "c": 0,
-      "u": "y = kx geeft een rechte lijn door de oorsprong. De helling k = Δy/Δx. Als de lijn niet door de oorsprong gaat is er een constante offset (y = kx + b)."
+      "d": 2,
+      "u": "Y = ax gaat recht door de oorsprong.",
+      "uo": [
+       "Klopt: y = ax gaat recht door de oorsprong.",
+       "Nee, dat is omgekeerd evenredig.",
+       "Nee, dat is kwadratisch.",
+       "Nee, dat is geen verband."
+      ],
+      "uh": "Recht evenredig: rechte door de oorsprong."
      },
      {
       "v": "Hoe formuleer je een goede hypothese?",
       "o": [
-       "Als [OV] dan [AV] want [theorie]",
-       "De meting zal waarschijnlijk kloppen",
-       "Er is een verband tussen de variabelen",
-       "De uitkomst wordt hoger bij meer stof"
+       "gewoon een vraag",
+       "als [OV] dan [AV] want [theorie]",
+       "de uitkomst achteraf",
+       "een mening"
       ],
-      "c": 0,
-      "u": "Een goede hypothese is falsifieerbaar en gebaseerd op theorie. Formuleer als: \"Als X toeneemt, dan neemt Y toe/af, want [mechanisme]\". Koppel achteraf de conclusie hieraan."
+      "c": 1,
+      "d": 2,
+      "u": "Die vorm is toetsbaar en onderbouwd.",
+      "uo": [
+       "Nee, een hypothese is een verwachting.",
+       "Klopt: die vorm is toetsbaar en onderbouwd.",
+       "Nee, dat is niet vooraf.",
+       "Nee, dat is niet toetsbaar."
+      ],
+      "uh": "Hypothese: als OV, dan AV, want theorie."
      },
      {
       "v": "Wat is het verschil tussen systematische en toevallige fouten?",
       "o": [
-       "systematisch: altijd dezelfde richting; toevallig: willekeurig verspreid",
-       "systematisch: willekeurig verspreid; toevallig: altijd dezelfde richting",
-       "beide zijn precies hetzelfde type meetfout met dezelfde oorzaak",
-       "toevallige fouten zijn altijd veel groter dan systematische fouten"
+       "systematisch is willekeurig",
+       "ze zijn hetzelfde",
+       "systematisch wijst altijd dezelfde kant op, toevallig is willekeurig",
+       "toevallig is altijd dezelfde kant"
       ],
-      "c": 0,
-      "u": "Systematische fout: bijv. een weegschaal die altijd 5 gram te hoog aangeeft. Herhalen helpt niet. Toevallige fout: spreiding door afleesfout of trillingen. Gemiddeld nemen van meerdere metingen helpt."
+      "c": 2,
+      "d": 3,
+      "u": "Één richting tegenover willekeurig.",
+      "uo": [
+       "Nee, dat is toevallig.",
+       "Nee, ze verschillen.",
+       "Klopt: één richting tegenover willekeurig.",
+       "Nee, dat is systematisch."
+      ],
+      "uh": "Systematisch: één richting; toevallig: willekeurig."
      },
      {
       "v": "Wat is het verschil tussen interpoleren en extrapoleren?",
       "o": [
-       "interpoleren: schatten binnen het meetbereik; extrapoleren: erbuiten",
-       "extrapoleren: schatten binnen het meetbereik; interpoleren: erbuiten",
-       "interpoleren en extrapoleren zijn even betrouwbare schattingen",
-       "extrapoleren buiten het bereik is altijd nauwkeuriger dan binnenin"
+       "extrapoleren is binnen het bereik",
+       "ze zijn hetzelfde",
+       "interpoleren is buiten het bereik",
+       "interpoleren is schatten binnen het meetbereik, extrapoleren erbuiten"
       ],
-      "c": 0,
-      "u": "Interpoleren is betrouwbaarder: je gebruikt het bekende patroon binnen gemeten waarden. Extrapoleren is risicovol want het model kan buiten het meetbereik anders gedragen."
+      "c": 3,
+      "d": 3,
+      "u": "Binnen tegenover buiten het bereik.",
+      "uo": [
+       "Nee, dat is interpoleren.",
+       "Nee, ze verschillen.",
+       "Nee, dat is extrapoleren.",
+       "Klopt: binnen tegenover buiten het bereik."
+      ],
+      "uh": "Interpoleren: binnen; extrapoleren: buiten."
      },
      {
-      "v": "Wat meet de helling (rico) van een rechte grafiek?",
+      "v": "Wat meet de helling van een rechte grafiek?",
       "o": [
-       "Δy/Δx: de verandering van AV per eenheid OV",
-       "Δx/Δy: de verandering van OV per eenheid AV",
-       "De oppervlakte onder de grafiek",
-       "De intercept met de y-as"
+       "Δy/Δx: de verandering van de AV per eenheid OV",
+       "de oppervlakte onder de grafiek",
+       "het snijpunt met de y-as",
+       "de totale meettijd"
       ],
       "c": 0,
-      "u": "Helling = Δy/Δx. Eenheid = eenheid van y gedeeld door eenheid van x. Bijv. als y in m/s en x in s dan heeft de helling eenheid m/s²."
-     },
-     {
-      "v": "Welke stap in de onderzoekscyclus volgt direct na de conclusie?",
-      "o": [
-       "evalueren en eventueel een nieuwe vraag opstellen",
-       "opnieuw een toetsbare hypothese vooraf formuleren",
-       "de meetgegevens verzamelen tijdens het experiment",
-       "de opzet en het werkplan van het onderzoek bepalen"
+      "d": 3,
+      "u": "De helling is de verandering per eenheid.",
+      "uo": [
+       "Klopt: de helling is de verandering per eenheid.",
+       "Nee, dat is de oppervlakte.",
+       "Nee, dat is de startwaarde.",
+       "Nee, dat is geen helling."
       ],
-      "c": 0,
-      "u": "Na de conclusie evalueer je het onderzoek: waren er fouten, wat kan beter, roept de conclusie nieuwe vragen op? Dit leidt tot een nieuwe onderzoekscyclus (iteratief proces)."
+      "uh": "Helling: Δy/Δx."
      },
      {
       "v": "Wat is de SI-basiseenheid van massa?",
       "o": [
-       "kilogram (kg)",
-       "gram (g)",
-       "newton (N)",
-       "mol"
+       "de newton (N)",
+       "de kilogram (kg)",
+       "de gram (g)",
+       "de liter (L)"
       ],
-      "c": 0,
-      "u": "Massa heeft als SI-basiseenheid de kilogram. De gram is geen basiseenheid, de newton is de eenheid van kracht en de mol is de eenheid van hoeveelheid stof."
-     },
-     {
-      "v": "Welke grootheid heeft de SI-eenheid kelvin?",
-      "o": [
-       "temperatuur",
-       "warmte",
-       "druk",
-       "energie"
+      "c": 1,
+      "d": 2,
+      "u": "De SI-eenheid van massa is de kilogram.",
+      "uo": [
+       "Nee, dat is de eenheid van kracht.",
+       "Klopt: de SI-eenheid van massa is de kilogram.",
+       "Nee, dat is geen basiseenheid.",
+       "Nee, dat is een volume-eenheid."
       ],
-      "c": 0,
-      "u": "De kelvin (K) is de SI-basiseenheid van temperatuur. Warmte en energie worden in joule gemeten, druk in pascal."
-     },
-     {
-      "v": "Bij vermenigvuldigen of delen krijgt de uitkomst evenveel ... als de minst nauwkeurige waarde.",
-      "o": [
-       "significante cijfers",
-       "decimalen",
-       "cijfers achter de komma",
-       "termen"
-      ],
-      "c": 0,
-      "u": "Bij vermenigvuldigen en delen telt het aantal significante cijfers van de minst nauwkeurige waarde. Bij optellen en aftrekken kijk je juist naar het aantal decimalen."
+      "uh": "Massa: kilogram (kg)."
      },
      {
       "v": "Hoeveel significante cijfers heeft het getal 0,0047?",
       "o": [
-       "twee",
-       "vier",
        "drie",
-       "één"
+       "vier",
+       "twee",
+       "vijf"
       ],
-      "c": 0,
-      "u": "Voorloopnullen tellen niet mee als significante cijfers. Alleen de 4 en de 7 tellen, dus 0,0047 heeft twee significante cijfers."
+      "c": 2,
+      "d": 3,
+      "u": "Alleen 4 en 7 tellen mee.",
+      "uo": [
+       "Nee, dat is te veel.",
+       "Nee, de voorloopnullen tellen niet.",
+       "Klopt: alleen 4 en 7 tellen mee.",
+       "Nee, dat is te veel."
+      ],
+      "uh": "0,0047: twee significante cijfers."
      },
      {
       "v": "Welke grafiekvorm hoort bij een omgekeerd evenredig verband (y = a/x)?",
       "o": [
-       "een hyperbool",
+       "een sinus",
+       "een rechte door de oorsprong",
        "een parabool",
-       "een rechte lijn door de oorsprong",
-       "een rechte lijn naast de oorsprong"
+       "een hyperbool"
       ],
-      "c": 0,
-      "u": "Bij y = a/x daalt y als x stijgt; de grafiek is een hyperbool. Een parabool hoort bij een kwadratisch verband, een rechte lijn door de oorsprong bij recht evenredig."
-     },
-     {
-      "v": "Welk verband hoort bij een parabool door de oorsprong?",
-      "o": [
-       "kwadratisch verband (y = a·x²)",
-       "lineair verband (y = a·x + b)",
-       "wortelverband (y = a·√x)",
-       "omgekeerd evenredig verband (y = a/x)"
+      "c": 3,
+      "d": 3,
+      "u": "Y = a/x geeft een hyperbool.",
+      "uo": [
+       "Nee, dat is een trilling.",
+       "Nee, dat is recht evenredig.",
+       "Nee, dat is kwadratisch.",
+       "Klopt: y = a/x geeft een hyperbool."
       ],
-      "c": 0,
-      "u": "Een parabool hoort bij een kwadratisch verband y = a·x². Bij een wortelverband krijg je een afvlakkende kromme en bij omgekeerd evenredig een hyperbool."
-     },
-     {
-      "v": "Welk verband geeft een afvlakkende kromme die steeds minder snel stijgt?",
-      "o": [
-       "wortelverband (y = a·√x)",
-       "kwadratisch verband (y = a·x²)",
-       "recht evenredig verband (y = a·x)",
-       "lineair verband (y = a·x + b)"
-      ],
-      "c": 0,
-      "u": "Bij een wortelverband y = a·√x stijgt y eerst snel en daarna steeds langzamer: een afvlakkende kromme. Een kwadratisch verband stijgt juist steeds sneller."
-     },
-     {
-      "v": "Welk verband geeft een rechte lijn die niet door de oorsprong gaat?",
-      "o": [
-       "lineair verband (y = a·x + b)",
-       "recht evenredig verband (y = a·x)",
-       "omgekeerd evenredig verband (y = a/x)",
-       "kwadratisch verband (y = a·x²)"
-      ],
-      "c": 0,
-      "u": "Bij een lineair verband y = a·x + b snijdt de lijn de y-as op hoogte b en gaat dus niet door de oorsprong. Recht evenredig (y = a·x) gaat wél door de oorsprong."
+      "uh": "Omgekeerd evenredig: hyperbool."
      },
      {
       "v": "Wat stelt de oppervlakte onder een (v,t)-diagram voor?",
@@ -31117,464 +31147,398 @@ var VAKKEN = [
        "de afgelegde afstand",
        "de snelheid",
        "de versnelling",
-       "de kracht"
+       "de tijd"
       ],
       "c": 0,
-      "u": "De oppervlakte onder een snelheid-tijddiagram is de afgelegde afstand (x = v·t). De helling van datzelfde diagram zou de versnelling zijn."
-     },
-     {
-      "v": "Waarom pas je een coördinatentransformatie toe op een grafiek?",
-      "o": [
-       "om een krom verband om te zetten in een rechte lijn",
-       "om de grafiek er overzichtelijker en mooier uit te laten zien",
-       "om de eenheden van de assen om te rekenen naar SI-eenheden",
-       "om de helling van de grafiek automatisch te laten vergroten"
+      "d": 3,
+      "u": "Snelheid maal tijd is afstand.",
+      "uo": [
+       "Klopt: snelheid maal tijd is afstand.",
+       "Nee, dat lees je op de as af.",
+       "Nee, dat is de helling.",
+       "Nee, dat is de horizontale as."
       ],
-      "c": 0,
-      "u": "Door bijvoorbeeld √x of 1/x op een as te zetten wordt een krom verband een rechte lijn. Ontstaat er een rechte lijn, dan is het vermoeden over het verband bevestigd."
+      "uh": "Oppervlakte (v,t)-diagram: afgelegde afstand."
      },
      {
-      "v": "Welke stap hoort bij de ontwerpcyclus en niet bij de onderzoekscyclus?",
+      "v": "De grootheid die je meet als gevolg, op de y-as. Welk begrip past hierbij?",
       "o": [
-       "een programma van eisen opstellen",
-       "een hypothese formuleren",
-       "meetresultaten verwerken in een grafiek",
-       "een conclusie koppelen aan de hypothese"
-      ],
-      "c": 0,
-      "u": "De ontwerpcyclus begint met een ontwerpvraag en een programma van eisen, gevolgd door ontwerpen, testen en evalueren. Hypothese, meten en conclusie horen bij de onderzoekscyclus."
-     },
-     {
-      "v": "Wat betekent «Grootheid»?",
-      "o": [
-       "een meetbare eigenschap zoals massa of tijd",
-       "uitzending van straling door onstabiele kernen",
-       "atoomsoort met gelijk aantal protonen, ander aantal neutronen",
-       "evenveel significante cijfers als de minst nauwkeurige waarde"
-      ],
-      "c": 0,
-      "u": "«Grootheid» betekent: een meetbare eigenschap zoals massa of tijd.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een meetbare eigenschap zoals massa of tijd\"?",
-      "o": [
-       "Normaalkracht",
-       "Grootheid",
-       "Echografie",
-       "Aardlekschakelaar"
+       "Precisie",
+       "Afhankelijke variabele",
+       "Controle-experiment",
+       "Interpoleren"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Grootheid»: een meetbare eigenschap zoals massa of tijd.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een meetbare eigenschap zoals massa of tijd\"?",
-      "o": [
-       "Vermenigvuldigen / delen",
-       "Grootheid",
-       "Recht evenredig",
-       "Omgekeerd evenredig"
+      "d": 1,
+      "u": "De grootheid die je meet als gevolg, op de y-as. Dat past bij Afhankelijke variabele: gemeten gevolg.",
+      "uo": [
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Klopt: gemeten gevolg.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Nee, dat hoort bij Interpoleren: schatten binnen het bereik."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Grootheid»: een meetbare eigenschap zoals massa of tijd.",
-      "d": 3
+      "uh": "Afhankelijke variabele: gemeten gevolg."
      },
      {
-      "v": "Wat houdt «Grootheid» in?",
+      "v": "Je schat een waarde tussen twee meetpunten in. Om welk begrip gaat het?",
       "o": [
-       "een meetbare eigenschap zoals massa of tijd",
-       "y = a/x; het product blijft constant",
-       "evenveel decimalen als de waarde met de minste decimalen",
-       "de betekenisvolle cijfers in een meetwaarde"
-      ],
-      "c": 0,
-      "u": "«Grootheid» betekent: een meetbare eigenschap zoals massa of tijd.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «SI-eenheid»?",
-      "o": [
-       "een reactie waarbij atoomkernen veranderen",
-       "een internationale standaardeenheid",
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.",
-       "componenten achter elkaar; de stroom is overal gelijk"
-      ],
-      "c": 1,
-      "u": "«SI-eenheid» betekent: een internationale standaardeenheid.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een internationale standaardeenheid\"?",
-      "o": [
-       "Elektrische lading",
-       "SI-eenheid",
-       "Alfa (α)",
-       "Wrijvingskracht"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «SI-eenheid»: een internationale standaardeenheid.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een internationale standaardeenheid\"?",
-      "o": [
-       "IJken",
-       "Omgekeerd evenredig",
-       "Optellen / aftrekken",
-       "SI-eenheid"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «SI-eenheid»: een internationale standaardeenheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «SI-eenheid» in?",
-      "o": [
-       "de marge waarbinnen de echte waarde ligt",
-       "een internationale standaardeenheid",
-       "evenveel decimalen als de waarde met de minste decimalen",
-       "de grafiek is een rechte lijn door de oorsprong"
-      ],
-      "c": 1,
-      "u": "«SI-eenheid» betekent: een internationale standaardeenheid.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Recht evenredig»?",
-      "o": [
-       "de tijd waarin de activiteit halveert",
-       "de grafiek is een rechte lijn door de oorsprong",
-       "eigenschap die elektrische krachten veroorzaakt (C)",
-       "elektronen; matig doordringend"
-      ],
-      "c": 1,
-      "u": "«Recht evenredig» betekent: de grafiek is een rechte lijn door de oorsprong.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de grafiek is een rechte lijn door de oorsprong\"?",
-      "o": [
-       "Nucleair (PET)",
-       "Recht evenredig",
-       "Derde wet van Newton",
-       "Stroming"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Recht evenredig»: de grafiek is een rechte lijn door de oorsprong.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de grafiek is een rechte lijn door de oorsprong\"?",
-      "o": [
-       "Optellen / aftrekken",
-       "Recht evenredig",
-       "Vermenigvuldigen / delen",
-       "SI-eenheid"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Recht evenredig»: de grafiek is een rechte lijn door de oorsprong.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Recht evenredig» in?",
-      "o": [
-       "y = a/x; het product blijft constant",
-       "de grafiek is een rechte lijn door de oorsprong",
-       "evenveel decimalen als de waarde met de minste decimalen",
-       "een instrument afstellen op een bekende standaard"
-      ],
-      "c": 1,
-      "u": "«Recht evenredig» betekent: de grafiek is een rechte lijn door de oorsprong.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Meetonzekerheid»?",
-      "o": [
-       "gebruik de stelling van Pythagoras voor de resultante.",
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht.",
-       "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "de marge waarbinnen de echte waarde ligt"
-      ],
-      "c": 3,
-      "u": "«Meetonzekerheid» betekent: de marge waarbinnen de echte waarde ligt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de marge waarbinnen de echte waarde ligt\"?",
-      "o": [
-       "Elektrische lading",
-       "Wet van Ohm",
-       "Meetonzekerheid",
-       "SI-eenheid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Meetonzekerheid»: de marge waarbinnen de echte waarde ligt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de marge waarbinnen de echte waarde ligt\"?",
-      "o": [
-       "Significante cijfers",
-       "Vermenigvuldigen / delen",
-       "Omgekeerd evenredig",
-       "Meetonzekerheid"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Meetonzekerheid»: de marge waarbinnen de echte waarde ligt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Meetonzekerheid» in?",
-      "o": [
-       "een instrument afstellen op een bekende standaard",
-       "de marge waarbinnen de echte waarde ligt",
-       "evenveel decimalen als de waarde met de minste decimalen",
-       "een meetbare eigenschap zoals massa of tijd"
-      ],
-      "c": 1,
-      "u": "«Meetonzekerheid» betekent: de marge waarbinnen de echte waarde ligt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «IJken»?",
-      "o": [
-       "v = f·λ, de snelheid van de golf (m/s)",
-       "de marge waarbinnen de echte waarde ligt",
-       "een instrument afstellen op een bekende standaard",
-       "aantal trillingen per seconde (Hz)"
-      ],
-      "c": 2,
-      "u": "«IJken» betekent: een instrument afstellen op een bekende standaard.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een instrument afstellen op een bekende standaard\"?",
-      "o": [
-       "Zwaartekracht",
-       "IJken",
-       "Alfaverval",
-       "Elektrische lading"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «IJken»: een instrument afstellen op een bekende standaard.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een instrument afstellen op een bekende standaard\"?",
-      "o": [
-       "Grootheid",
-       "Significante cijfers",
-       "IJken",
-       "Recht evenredig"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «IJken»: een instrument afstellen op een bekende standaard.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «IJken» in?",
-      "o": [
-       "de grafiek is een rechte lijn door de oorsprong",
-       "de marge waarbinnen de echte waarde ligt",
-       "een instrument afstellen op een bekende standaard",
-       "evenveel significante cijfers als de minst nauwkeurige waarde"
-      ],
-      "c": 2,
-      "u": "«IJken» betekent: een instrument afstellen op een bekende standaard.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Significante cijfers»?",
-      "o": [
-       "de altijd aanwezige straling om ons heen",
-       "de betekenisvolle cijfers in een meetwaarde",
-       "straling die atomen ioniseert en cellen kan beschadigen",
-       "laat stroom maar in één richting door; een led geeft daarbij licht"
-      ],
-      "c": 1,
-      "u": "«Significante cijfers» betekent: de betekenisvolle cijfers in een meetwaarde.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de betekenisvolle cijfers in een meetwaarde\"?",
-      "o": [
-       "Recht evenredig",
-       "Niet-ohmse weerstand",
-       "Alfastraling",
+       "Precisie",
+       "Controle-experiment",
+       "Interpoleren",
        "Significante cijfers"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Significante cijfers»: de betekenisvolle cijfers in een meetwaarde.",
-      "d": 2
+      "c": 2,
+      "d": 1,
+      "u": "Je schat een waarde tussen twee meetpunten in. Dat past bij Interpoleren: schatten binnen het bereik.",
+      "uo": [
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Klopt: schatten binnen het bereik.",
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid van een getal."
+      ],
+      "uh": "Interpoleren: schatten binnen het bereik."
      },
      {
-      "v": "Welke term past bij: \"de betekenisvolle cijfers in een meetwaarde\"?",
+      "v": "Schatten binnen het meetbereik. Welk begrip herken je hier?",
       "o": [
        "Significante cijfers",
-       "Recht evenredig",
-       "Meetonzekerheid",
-       "Optellen / aftrekken"
+       "Controle-experiment",
+       "Precisie",
+       "Interpoleren"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Schatten binnen het meetbereik. Dat past bij Interpoleren: schatten binnen het bereik.",
+      "uo": [
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid van een getal.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Klopt: schatten binnen het bereik."
+      ],
+      "uh": "Interpoleren: schatten binnen het bereik."
+     },
+     {
+      "v": "Schatten buiten het meetbereik. Wat is hier aan de hand?",
+      "o": [
+       "Extrapoleren",
+       "Controle-experiment",
+       "Precisie",
+       "Significante cijfers"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Significante cijfers»: de betekenisvolle cijfers in een meetwaarde.",
-      "d": 3
+      "d": 1,
+      "u": "Schatten buiten het meetbereik. Dat past bij Extrapoleren: schatten buiten het bereik.",
+      "uo": [
+       "Klopt: schatten buiten het bereik.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid van een getal."
+      ],
+      "uh": "Extrapoleren: schatten buiten het bereik."
      },
      {
-      "v": "Wat houdt «Significante cijfers» in?",
+      "v": "Je schat een waarde buiten het gemeten bereik. Welk begrip past hierbij?",
       "o": [
-       "y = a/x; het product blijft constant",
-       "de betekenisvolle cijfers in een meetwaarde",
-       "een internationale standaardeenheid",
-       "een meetbare eigenschap zoals massa of tijd"
+       "Controle-experiment",
+       "Extrapoleren",
+       "Precisie",
+       "Significante cijfers"
       ],
       "c": 1,
-      "u": "«Significante cijfers» betekent: de betekenisvolle cijfers in een meetwaarde.",
-      "d": 3
+      "d": 1,
+      "u": "Je schat een waarde buiten het gemeten bereik. Dat past bij Extrapoleren: schatten buiten het bereik.",
+      "uo": [
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Klopt: schatten buiten het bereik.",
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid van een getal."
+      ],
+      "uh": "Extrapoleren: schatten buiten het bereik."
      },
      {
-      "v": "Wat betekent «Omgekeerd evenredig»?",
+      "v": "Een fout die willekeurig verspreid is. Om welk begrip gaat het?",
       "o": [
-       "y = a/x; het product blijft constant",
-       "de zwaartekracht op een voorwerp",
-       "R verandert met spanning of temperatuur.",
-       "de maximale uitwijking van een trilling"
+       "Precisie",
+       "Significante cijfers",
+       "Toevallige fout",
+       "Controle-experiment"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een fout die willekeurig verspreid is. Dat past bij Toevallige fout: willekeurig verspreid.",
+      "uo": [
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid van een getal.",
+       "Klopt: willekeurig verspreid.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV."
+      ],
+      "uh": "Toevallige fout: willekeurig verspreid."
+     },
+     {
+      "v": "Een fout die steeds dezelfde kant op wijst. Welk begrip herken je hier?",
+      "o": [
+       "Interpoleren",
+       "Significante cijfers",
+       "Onafhankelijke variabele",
+       "Systematische fout"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Een fout die steeds dezelfde kant op wijst. Dat past bij Systematische fout: altijd dezelfde richting.",
+      "uo": [
+       "Nee, dat hoort bij Interpoleren: schatten binnen het bereik.",
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid van een getal.",
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld, x-as.",
+       "Klopt: altijd dezelfde richting."
+      ],
+      "uh": "Systematische fout: altijd dezelfde richting."
+     },
+     {
+      "v": "Een verkeerd geijkte meetlat meet altijd te veel. Wat is hier aan de hand?",
+      "o": [
+       "Systematische fout",
+       "Toevallige fout",
+       "Controle-experiment",
+       "Onafhankelijke variabele"
       ],
       "c": 0,
-      "u": "«Omgekeerd evenredig» betekent: y = a/x; het product blijft constant.",
-      "d": 1
+      "d": 2,
+      "u": "Een verkeerd geijkte meetlat meet altijd te veel. Dat past bij Systematische fout: altijd dezelfde richting.",
+      "uo": [
+       "Klopt: altijd dezelfde richting.",
+       "Nee, dat hoort bij Toevallige fout: willekeurig verspreid.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld, x-as."
+      ],
+      "uh": "Systematische fout: altijd dezelfde richting."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"y = a/x; het product blijft constant\"?",
+      "v": "Hoe dicht een meting bij de ware waarde ligt. Welk begrip past hierbij?",
       "o": [
-       "Alfaverval",
-       "Eerste wet van Newton",
-       "Vermogen",
-       "Omgekeerd evenredig"
+       "Toevallige fout",
+       "Nauwkeurigheid",
+       "Controle-experiment",
+       "Significante cijfers"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Hoe dicht een meting bij de ware waarde ligt. Dat past bij Nauwkeurigheid: dicht bij de ware waarde.",
+      "uo": [
+       "Nee, dat hoort bij Toevallige fout: willekeurig verspreid.",
+       "Klopt: dicht bij de ware waarde.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid van een getal."
+      ],
+      "uh": "Nauwkeurigheid: dicht bij de ware waarde."
+     },
+     {
+      "v": "Je meting ligt dicht bij de echte waarde. Om welk begrip gaat het?",
+      "o": [
+       "Significante cijfers",
+       "Precisie",
+       "Nauwkeurigheid",
+       "Onafhankelijke variabele"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Je meting ligt dicht bij de echte waarde. Dat past bij Nauwkeurigheid: dicht bij de ware waarde.",
+      "uo": [
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid van een getal.",
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Klopt: dicht bij de ware waarde.",
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld, x-as."
+      ],
+      "uh": "Nauwkeurigheid: dicht bij de ware waarde."
+     },
+     {
+      "v": "Een referentie zonder de OV. Welk begrip herken je hier?",
+      "o": [
+       "Significante cijfers",
+       "Systematische fout",
+       "Precisie",
+       "Controle-experiment"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Omgekeerd evenredig»: y = a/x; het product blijft constant.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"y = a/x; het product blijft constant\"?",
-      "o": [
-       "Grootheid",
-       "Omgekeerd evenredig",
-       "Meetonzekerheid",
-       "SI-eenheid"
+      "d": 3,
+      "u": "Een referentie zonder de OV. Dat past bij Controle-experiment: referentie zonder OV.",
+      "uo": [
+       "Nee, dat hoort bij Significante cijfers: nauwkeurigheid van een getal.",
+       "Nee, dat hoort bij Systematische fout: altijd dezelfde richting.",
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Klopt: referentie zonder OV."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Omgekeerd evenredig»: y = a/x; het product blijft constant.",
-      "d": 3
+      "uh": "Controle-experiment: referentie zonder OV."
      },
      {
-      "v": "Wat houdt «Omgekeerd evenredig» in?",
+      "v": "De cijfers die de nauwkeurigheid aangeven. Wat is hier aan de hand?",
       "o": [
-       "de betekenisvolle cijfers in een meetwaarde",
-       "y = a/x; het product blijft constant",
-       "de grafiek is een rechte lijn door de oorsprong",
-       "een instrument afstellen op een bekende standaard"
-      ],
-      "c": 1,
-      "u": "«Omgekeerd evenredig» betekent: y = a/x; het product blijft constant.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vermenigvuldigen / delen»?",
-      "o": [
-       "onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken.",
-       "evenveel significante cijfers als de minst nauwkeurige waarde",
-       "een kracht die beweging tegenwerkt",
-       "zonder resulterende kracht blijft de snelheid gelijk"
-      ],
-      "c": 1,
-      "u": "«Vermenigvuldigen / delen» betekent: evenveel significante cijfers als de minst nauwkeurige waarde.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"evenveel significante cijfers als de minst nauwkeurige waarde\"?",
-      "o": [
-       "Weerstand",
-       "Echografie",
-       "Willekeurige hoek",
-       "Vermenigvuldigen / delen"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Vermenigvuldigen / delen»: evenveel significante cijfers als de minst nauwkeurige waarde.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"evenveel significante cijfers als de minst nauwkeurige waarde\"?",
-      "o": [
-       "Vermenigvuldigen / delen",
-       "Recht evenredig",
-       "Optellen / aftrekken",
-       "SI-eenheid"
+       "Significante cijfers",
+       "Extrapoleren",
+       "Nauwkeurigheid",
+       "Controle-experiment"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Vermenigvuldigen / delen»: evenveel significante cijfers als de minst nauwkeurige waarde.",
-      "d": 3
+      "d": 1,
+      "u": "De cijfers die de nauwkeurigheid aangeven. Dat past bij Significante cijfers: nauwkeurigheid van een getal.",
+      "uo": [
+       "Klopt: nauwkeurigheid van een getal.",
+       "Nee, dat hoort bij Extrapoleren: schatten buiten het bereik.",
+       "Nee, dat hoort bij Nauwkeurigheid: dicht bij de ware waarde.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV."
+      ],
+      "uh": "Significante cijfers: nauwkeurigheid van een getal."
      },
      {
-      "v": "Wat houdt «Vermenigvuldigen / delen» in?",
+      "v": "De grootheid die je bewust verandert. Welk begrip past hierbij?",
       "o": [
-       "een internationale standaardeenheid",
-       "evenveel significante cijfers als de minst nauwkeurige waarde",
-       "een meetbare eigenschap zoals massa of tijd",
-       "y = a/x; het product blijft constant"
+       "Afhankelijke variabele",
+       "Onafhankelijke variabele",
+       "Toevallige fout",
+       "Controle-experiment"
       ],
       "c": 1,
-      "u": "«Vermenigvuldigen / delen» betekent: evenveel significante cijfers als de minst nauwkeurige waarde.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Optellen / aftrekken»?",
-      "o": [
-       "onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken.",
-       "evenveel decimalen als de waarde met de minste decimalen",
-       "de rustpositie van het systeem",
-       "de opeenvolging van kernvervallen"
+      "d": 2,
+      "u": "De grootheid die je bewust verandert. Dat past bij Onafhankelijke variabele: zelf ingesteld, x-as.",
+      "uo": [
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten gevolg.",
+       "Klopt: zelf ingesteld, x-as.",
+       "Nee, dat hoort bij Toevallige fout: willekeurig verspreid.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV."
       ],
-      "c": 1,
-      "u": "«Optellen / aftrekken» betekent: evenveel decimalen als de waarde met de minste decimalen.",
-      "d": 1
+      "uh": "Onafhankelijke variabele: zelf ingesteld, x-as."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"evenveel decimalen als de waarde met de minste decimalen\"?",
+      "v": "Kleine willekeurige afwijkingen bij elke meting. Om welk begrip gaat het?",
       "o": [
-       "Spanning",
-       "Vervalreeks",
-       "Spankracht",
-       "Optellen / aftrekken"
+       "Interpoleren",
+       "Systematische fout",
+       "Toevallige fout",
+       "Afhankelijke variabele"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Kleine willekeurige afwijkingen bij elke meting. Dat past bij Toevallige fout: willekeurig verspreid.",
+      "uo": [
+       "Nee, dat hoort bij Interpoleren: schatten binnen het bereik.",
+       "Nee, dat hoort bij Systematische fout: altijd dezelfde richting.",
+       "Klopt: willekeurig verspreid.",
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten gevolg."
+      ],
+      "uh": "Toevallige fout: willekeurig verspreid."
+     },
+     {
+      "v": "De grootheid die je meet als reactie. Welk begrip herken je hier?",
+      "o": [
+       "Interpoleren",
+       "Precisie",
+       "Controle-experiment",
+       "Afhankelijke variabele"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Optellen / aftrekken»: evenveel decimalen als de waarde met de minste decimalen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"evenveel decimalen als de waarde met de minste decimalen\"?",
-      "o": [
-       "Vermenigvuldigen / delen",
-       "Recht evenredig",
-       "Grootheid",
-       "Optellen / aftrekken"
+      "d": 1,
+      "u": "De grootheid die je meet als reactie. Dat past bij Afhankelijke variabele: gemeten gevolg.",
+      "uo": [
+       "Nee, dat hoort bij Interpoleren: schatten binnen het bereik.",
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Klopt: gemeten gevolg."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Optellen / aftrekken»: evenveel decimalen als de waarde met de minste decimalen.",
-      "d": 3
+      "uh": "Afhankelijke variabele: gemeten gevolg."
      },
      {
-      "v": "Wat houdt «Optellen / aftrekken» in?",
+      "v": "Hoe klein de spreiding tussen metingen is. Wat is hier aan de hand?",
       "o": [
-       "y = a/x; het product blijft constant",
-       "evenveel decimalen als de waarde met de minste decimalen",
-       "de grafiek is een rechte lijn door de oorsprong",
-       "evenveel significante cijfers als de minst nauwkeurige waarde"
+       "Precisie",
+       "Nauwkeurigheid",
+       "Controle-experiment",
+       "Toevallige fout"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Hoe klein de spreiding tussen metingen is. Dat past bij Precisie: kleine spreiding.",
+      "uo": [
+       "Klopt: kleine spreiding.",
+       "Nee, dat hoort bij Nauwkeurigheid: dicht bij de ware waarde.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Nee, dat hoort bij Toevallige fout: willekeurig verspreid."
+      ],
+      "uh": "Precisie: kleine spreiding."
+     },
+     {
+      "v": "De grootheid die je zelf instelt en op de x-as zet. Welk begrip past hierbij?",
+      "o": [
+       "Afhankelijke variabele",
+       "Onafhankelijke variabele",
+       "Nauwkeurigheid",
+       "Precisie"
       ],
       "c": 1,
-      "u": "«Optellen / aftrekken» betekent: evenveel decimalen als de waarde met de minste decimalen.",
-      "d": 3
+      "d": 3,
+      "u": "De grootheid die je zelf instelt en op de x-as zet. Dat past bij Onafhankelijke variabele: zelf ingesteld, x-as.",
+      "uo": [
+       "Nee, dat hoort bij Afhankelijke variabele: gemeten gevolg.",
+       "Klopt: zelf ingesteld, x-as.",
+       "Nee, dat hoort bij Nauwkeurigheid: dicht bij de ware waarde.",
+       "Nee, dat hoort bij Precisie: kleine spreiding."
+      ],
+      "uh": "Onafhankelijke variabele: zelf ingesteld, x-as."
+     },
+     {
+      "v": "Je metingen liggen dicht bij elkaar, met kleine spreiding. Om welk begrip gaat het?",
+      "o": [
+       "Systematische fout",
+       "Onafhankelijke variabele",
+       "Precisie",
+       "Extrapoleren"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Je metingen liggen dicht bij elkaar, met kleine spreiding. Dat past bij Precisie: kleine spreiding.",
+      "uo": [
+       "Nee, dat hoort bij Systematische fout: altijd dezelfde richting.",
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld, x-as.",
+       "Klopt: kleine spreiding.",
+       "Nee, dat hoort bij Extrapoleren: schatten buiten het bereik."
+      ],
+      "uh": "Precisie: kleine spreiding."
+     },
+     {
+      "v": "Een meting zonder de onafhankelijke variabele als vergelijking. Welk begrip herken je hier?",
+      "o": [
+       "Toevallige fout",
+       "Systematische fout",
+       "Onafhankelijke variabele",
+       "Controle-experiment"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een meting zonder de onafhankelijke variabele als vergelijking. Dat past bij Controle-experiment: referentie zonder OV.",
+      "uo": [
+       "Nee, dat hoort bij Toevallige fout: willekeurig verspreid.",
+       "Nee, dat hoort bij Systematische fout: altijd dezelfde richting.",
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld, x-as.",
+       "Klopt: referentie zonder OV."
+      ],
+      "uh": "Controle-experiment: referentie zonder OV."
+     },
+     {
+      "v": "Het getal 0,0047 heeft twee betekenisvolle cijfers. Wat is hier aan de hand?",
+      "o": [
+       "Significante cijfers",
+       "Precisie",
+       "Controle-experiment",
+       "Onafhankelijke variabele"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Het getal 0,0047 heeft twee betekenisvolle cijfers. Dat past bij Significante cijfers: nauwkeurigheid van een getal.",
+      "uo": [
+       "Klopt: nauwkeurigheid van een getal.",
+       "Nee, dat hoort bij Precisie: kleine spreiding.",
+       "Nee, dat hoort bij Controle-experiment: referentie zonder OV.",
+       "Nee, dat hoort bij Onafhankelijke variabele: zelf ingesteld, x-as."
+      ],
+      "uh": "Significante cijfers: nauwkeurigheid van een getal."
      }
     ],
     "oe": [
@@ -31611,40 +31575,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Grootheid",
-      "d": "een meetbare eigenschap zoals massa of tijd"
+      "t": "Onafhankelijke variabele",
+      "d": "de variabele die je zelf instelt, op de x-as"
      },
      {
-      "t": "SI-eenheid",
-      "d": "een internationale standaardeenheid"
+      "t": "Afhankelijke variabele",
+      "d": "de variabele die je meet als gevolg"
      },
      {
-      "t": "Recht evenredig",
-      "d": "de grafiek is een rechte lijn door de oorsprong"
+      "t": "Controle-experiment",
+      "d": "een vergelijkingspunt zonder de onafhankelijke variabele"
      },
      {
-      "t": "Meetonzekerheid",
-      "d": "de marge waarbinnen de echte waarde ligt"
+      "t": "Nauwkeurigheid",
+      "d": "hoe dicht een meting bij de ware waarde ligt"
      },
      {
-      "t": "IJken",
-      "d": "een instrument afstellen op een bekende standaard"
+      "t": "Precisie",
+      "d": "hoe klein de spreiding tussen metingen is"
+     },
+     {
+      "t": "Systematische fout",
+      "d": "een fout die steeds dezelfde kant op wijst"
+     },
+     {
+      "t": "Toevallige fout",
+      "d": "een fout die willekeurig verspreid is"
+     },
+     {
+      "t": "Interpoleren",
+      "d": "een waarde schatten binnen het meetbereik"
+     },
+     {
+      "t": "Extrapoleren",
+      "d": "een waarde schatten buiten het meetbereik"
      },
      {
       "t": "Significante cijfers",
-      "d": "de betekenisvolle cijfers in een meetwaarde"
-     },
-     {
-      "t": "Omgekeerd evenredig",
-      "d": "y = a/x; het product blijft constant"
-     },
-     {
-      "t": "Vermenigvuldigen / delen",
-      "d": "evenveel significante cijfers als de minst nauwkeurige waarde"
-     },
-     {
-      "t": "Optellen / aftrekken",
-      "d": "evenveel decimalen als de waarde met de minste decimalen"
+      "d": "de cijfers die de nauwkeurigheid van een meetwaarde aangeven"
      }
     ]
    },
@@ -31667,249 +31635,235 @@ var VAKKEN = [
      "Brekingsindex",
      "Golflengte en kleur van licht"
     ],
-    "sam": "<div class=\"sam-head\">Domein B - Golven</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Golven transporteren energie zonder dat materie meebeweegt.</li><li>Frequentie bepaalt toonhoogte; amplitude bepaalt volume of intensiteit.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Golfsnelheid: <span class=\"fm\">v = f·λ</span></li><li>Interferentie: golven versterken of verzwakken elkaar.</li><li>Reflectie, breking en absorptie bepalen hoe golven zich voortplanten.</li><li>Resonantie: sterke versterking bij gelijke frequentie.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Golfsnelheid (v)</strong>: afstand die een golf per seconde aflegt; v = f·λ, eenheid m/s</li><li><strong>Frequentie (f)</strong>: aantal trillingen per seconde, eenheid Hz</li><li><strong>Golflengte (λ)</strong>: afstand tussen twee opeenvolgende golftoppen, eenheid m</li><li><strong>Amplitude</strong>: maximale uitwijking van een trilling</li><li><strong>Interferentie</strong>: versterking of verzwakking van golven die elkaar overlappen</li><li><strong>Resonantie</strong>: sterke versterking als de aangedreven frequentie gelijk is aan de eigenfrequentie</li><li><strong>Doppler-effect</strong>: frequentieverandering doordat bron of waarnemer beweegt</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> Doppler-effect: frequentie verandert door beweging van bron of waarnemer.</p><p><strong>Toepassen:</strong> f = 200 Hz, λ = 1,5 m → v = 300 m/s.</p><p><strong>Analyseren:</strong> Bij resonantie neemt amplitude sterk toe.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Frequentie verwarren met golfsnelheid.</li><li>Amplitude verwarren met energie.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is interferentie?</li><li>Hoe bereken je golfsnelheid?</li><li>Wat gebeurt er bij resonantie?</li></ul></div>",
+    "sam": "<div class=\"sam-intro\">Een <strong>golf</strong> vervoert energie; de <strong>golfvergelijking</strong> is v = f·λ. Golven zijn <strong>transversaal</strong> of <strong>longitudinaal</strong> en vertonen <strong>reflectie</strong>, <strong>breking</strong> (brekingsindex n = c/v) en <strong>diffractie</strong>. Bij <strong>resonantie</strong> trilt een systeem op zijn <strong>eigenfrequentie</strong>.</div><div class=\"sam-head\">1. Golven en trillingen</div><p>De <strong>golfvergelijking</strong> luidt v = f·λ. De <strong>frequentie</strong> (in hertz) is f = 1/T. De <strong>amplitude</strong> is de maximale uitwijking. Een <strong>transversale golf</strong> trilt loodrecht op de richting (licht, kan door vacuüm); een <strong>longitudinale golf</strong> trilt in de richting en heeft een medium nodig (geluid).</p><div class=\"sam-head\">2. Golfverschijnselen</div><p>Bij <strong>reflectie</strong> is de hoek van inval gelijk aan de hoek van terugkaatsing. Bij <strong>breking</strong> geldt de <strong>brekingsindex</strong> n = c/v; de <strong>frequentie</strong> blijft daarbij gelijk, de golflengte verandert. Bij <strong>diffractie</strong> waaieren golven uit na een smalle opening. <strong>Resonantie</strong> treedt op als de aandrijffrequentie gelijk is aan de <strong>eigenfrequentie</strong>.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Golfvergelijking</div><div class=\"sam-formula-eq\">v = f · λ</div><div class=\"sam-formula-note\">Golfsnelheid = frequentie × golflengte.</div></div><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Golfvergelijking</div><div class=\"sam-definitie-body\">de relatie v = f·λ tussen snelheid, frequentie en golflengte.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Transversale golf</div><div class=\"sam-definitie-body\">een golf die loodrecht op de voortplantingsrichting trilt, kan door vacuüm.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Longitudinale golf</div><div class=\"sam-definitie-body\">een golf die in de voortplantingsrichting trilt en een medium nodig heeft.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Brekingsindex</div><div class=\"sam-definitie-body\">n = c/v, de verhouding van de lichtsnelheid in vacuüm en in het medium.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Frequentie</div><div class=\"sam-definitie-body\">het aantal trillingen per seconde, in hertz, f = 1/T.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Amplitude</div><div class=\"sam-definitie-body\">de maximale uitwijking ten opzichte van de evenwichtsstand.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Diffractie</div><div class=\"sam-definitie-body\">het uitwaaieren van golven na een smalle opening.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Resonantie</div><div class=\"sam-definitie-body\">het meetrillen als de aandrijffrequentie gelijk is aan de eigenfrequentie.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Eigenfrequentie</div><div class=\"sam-definitie-body\">de frequentie waarmee een systeem uit zichzelf trilt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Staande golf</div><div class=\"sam-definitie-body\">een golf met vaste knopen en buiken door superpositie.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Golfvergelijking»</b> is v = f·λ, terwijl <b>«Brekingsindex»</b> n = c/v is. <b>«Transversale golf»</b> is trilling loodrecht op richting, terwijl <b>«Longitudinale golf»</b> trilling in de richting is. <b>«Frequentie»</b> is trillingen per seconde, terwijl <b>«Amplitude»</b> maximale uitwijking is. <b>«Diffractie»</b> is uitwaaieren, buiging, terwijl <b>«Resonantie»</b> aandrijf = eigenfrequentie is.</div>",
     "sv": [
      {
       "v": "Wat is de golfvergelijking?",
       "o": [
        "v = f·λ",
-       "v = λ gedeeld door f",
-       "f = v·λ",
-       "v = λ·T"
+       "v = a·t",
+       "F = m·a",
+       "U = I·R"
       ],
       "c": 0,
-      "u": "v = f·λ. Licht: v = 3·10⁸ m/s. Geluid: circa 340 m/s in lucht bij kamertemperatuur."
+      "d": 2,
+      "u": "Snelheid = frequentie × golflengte.",
+      "uo": [
+       "Klopt: snelheid = frequentie × golflengte.",
+       "Nee, dat is een bewegingsformule.",
+       "Nee, dat is Newton.",
+       "Nee, dat is de wet van Ohm."
+      ],
+      "uh": "Golfvergelijking: v = f·λ."
      },
      {
       "v": "Welke elektromagnetische straling heeft de kortste golflengte?",
       "o": [
-       "Gammastraling",
-       "Radiogolven",
-       "Infrarood",
-       "Zichtbaar licht"
+       "radiogolven",
+       "gammastraling",
+       "infrarood",
+       "zichtbaar licht"
       ],
-      "c": 0,
-      "u": "Gamma heeft de kortste golflengte, dan rontgen, UV, zichtbaar, IR, microgolf, radio. Kortere golflengte is hogere frequentie en meer energie per foton."
+      "c": 1,
+      "d": 3,
+      "u": "Gammastraling heeft de kortste golflengte.",
+      "uo": [
+       "Nee, die hebben de langste.",
+       "Klopt: gammastraling heeft de kortste golflengte.",
+       "Nee, dat is langer dan licht.",
+       "Nee, dat is langer dan gamma."
+      ],
+      "uh": "Kortste golflengte: gammastraling."
      },
      {
-      "v": "Welk golftype heeft de trilling loodrecht op de voortplantingsrichting en kan door het vacuüm?",
+      "v": "Welk golftype trilt loodrecht op de richting en kan door vacuüm?",
       "o": [
-       "Transversale golf (bijv. licht - trilling ⊥ richting)",
-       "Longitudinale golf (bijv. geluid - trilling ‖ richting)",
-       "Staande golf (superpositie van twee golven)",
-       "Dempende golf (amplitude neemt af)"
+       "een geluidsgolf",
+       "een longitudinale golf",
+       "een transversale golf (bijvoorbeeld licht)",
+       "een staande golf"
       ],
-      "c": 0,
-      "u": "Licht is transversaal. Geluid is longitudinaal. Alleen transversale golven kunnen door vacuüm."
+      "c": 2,
+      "d": 3,
+      "u": "Licht is transversaal en heeft geen medium nodig.",
+      "uo": [
+       "Nee, die heeft een medium nodig.",
+       "Nee, die trilt in de richting.",
+       "Klopt: licht is transversaal en heeft geen medium nodig.",
+       "Nee, dat is een verschijnsel, geen type."
+      ],
+      "uh": "Transversaal: trilling loodrecht, kan door vacuüm."
      },
      {
       "v": "Wat is de formule voor de brekingsindex n van een materiaal?",
       "o": [
-       "n = c/v (vacuüm gedeeld door medium)",
-       "n = v/c (medium gedeeld door vacuüm)",
-       "n = f × λ (frequentie maal golflengte)",
-       "n = λ_vacuüm × λ_medium (product van golflengten)"
+       "n = m·a",
+       "n = v/c",
+       "n = f·λ",
+       "n = c/v"
       ],
-      "c": 0,
-      "u": "Hoe hoger de brekingsindex, hoe langzamer het licht in het materiaal en hoe sterker het buigt bij refractie."
+      "c": 3,
+      "d": 3,
+      "u": "N is de lichtsnelheid in vacuüm gedeeld door die in het medium.",
+      "uo": [
+       "Nee, dat is Newton.",
+       "Nee, dat is omgekeerd.",
+       "Nee, dat is de golfvergelijking.",
+       "Klopt: n is de lichtsnelheid in vacuüm gedeeld door die in het medium."
+      ],
+      "uh": "Brekingsindex: n = c/v."
      },
      {
-      "v": "Welke golfgrootheid blijft onveranderd bij refractie (lichtbreking) bij overgang naar een ander medium?",
+      "v": "Welke golfgrootheid blijft onveranderd bij lichtbreking naar een ander medium?",
       "o": [
-       "Frequentie",
-       "Golfsnelheid",
-       "Golflengte",
-       "Richting"
+       "de frequentie",
+       "de golflengte",
+       "de golfsnelheid",
+       "de amplitude"
       ],
       "c": 0,
-      "u": "Bij refractie verandert de golfsnelheid in het nieuwe medium, wat de richting doet veranderen. De frequentie blijft gelijk; de golflengte verandert."
-     },
-     {
-      "v": "Een staande golf ontstaat door superpositie van twee golven. Welke posities hebben altijd amplitude nul?",
-      "o": [
-       "Knopen (nodes) - punten met altijd nul amplitude",
-       "Buiken (antinodes) - punten met maximale amplitude",
-       "Golfbuiken - punten in de richting van de golf",
-       "Golftoppen - de hoogste punten van de golf"
+      "d": 3,
+      "u": "De frequentie blijft gelijk bij breking.",
+      "uo": [
+       "Klopt: de frequentie blijft gelijk bij breking.",
+       "Nee, die verandert.",
+       "Nee, die verandert ook.",
+       "Nee, die kan veranderen."
       ],
-      "c": 0,
-      "u": "In een staande golf zijn knopen vaste punten met nul uitwijking (de twee golven heffen elkaar altijd op). Buiken zijn posities met maximale uitwijking."
+      "uh": "Bij breking: frequentie blijft gelijk."
      },
      {
-      "v": "Wat beschrijft het doppler-effect bij geluid?",
+      "v": "Welke posities in een staande golf hebben altijd amplitude nul?",
       "o": [
+       "de buiken",
+       "de knopen",
+       "de toppen",
+       "overal even veel"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Knopen staan stil (amplitude nul).",
+      "uo": [
+       "Nee, daar is de uitwijking maximaal.",
+       "Klopt: knopen staan stil (amplitude nul).",
+       "Nee, dat is bij een gewone golf.",
+       "Nee, het verschilt per punt."
+      ],
+      "uh": "Knopen: altijd amplitude nul."
+     },
+     {
+      "v": "Wat beschrijft het dopplereffect bij geluid?",
+      "o": [
+       "geluid kaatst terug als een echo",
+       "geluid gaat sneller in warme lucht",
        "de waargenomen frequentie verandert als bron en waarnemer bewegen",
-       "de amplitude van het geluid neemt sterk af met de afstand tot de bron",
-       "geluid buigt om hoeken heen en verspreidt zich (diffractie)",
-       "geluid kaatst terug zodra het een hard oppervlak raakt (echo)"
+       "geluid buigt om een hoek"
       ],
-      "c": 0,
-      "u": "Doppler: bron nadert → golven worden samengeperst → hogere frequentie (hogere toon). Bron verwijdert → golven worden uitgerekt → lagere frequentie. Gebruikt bij radar en echografie."
-     },
-     {
-      "v": "Welke wet beschrijft de relatie tussen de hoek van inval en de hoek van weerkaatsing bij reflectie?",
-      "o": [
-       "Wet van reflectie: hoek van inval = hoek van terugkaatsing (t.o.v. normaal)",
-       "Wet van Snellius: n₁ sin θ₁ = n₂ sin θ₂ (voor breking)",
-       "Huygens' principe: elk punt op een golffront is bron van nieuwe golf",
-       "Wet van diffractie: buiging om hindernissen"
+      "c": 2,
+      "d": 3,
+      "u": "Beweging verandert de waargenomen toonhoogte.",
+      "uo": [
+       "Nee, dat is een echo.",
+       "Nee, dat is een ander effect.",
+       "Klopt: beweging verandert de waargenomen toonhoogte.",
+       "Nee, dat is diffractie."
       ],
-      "c": 0,
-      "u": "Wet van reflectie: de hoek van inval is altijd gelijk aan de hoek van weerkaatsing, beide gemeten ten opzichte van de normaal op het reflecterend oppervlak."
-     },
-     {
-      "v": "Een lichtstraal gaat van glas (n = 1,5) naar lucht (n = 1). Bij welke hoek van inval treedt totale interne reflectie op?",
-      "o": [
-       "boven de kritische hoek θc = arcsin(1/1,5) ≈ 41,8°",
-       "bij elke hoek van inval die groter is dan 45 graden",
-       "alleen wanneer het licht precies loodrecht invalt",
-       "bij een invalshoek van precies 90 graden op het glas"
-      ],
-      "c": 0,
-      "u": "Totale interne reflectie: als de hoek van inval groter is dan de kritische hoek θc. sin(θc) = n₂/n₁ = 1/1,5 → θc ≈ 41,8°. Basis van glasvezelkabels."
+      "uh": "Dopplereffect: waargenomen frequentie verandert bij beweging."
      },
      {
       "v": "Wat is de amplitude van een golf?",
       "o": [
-       "de maximale uitwijking ten opzichte van de evenwichtsstand",
-       "de afstand tussen twee opeenvolgende toppen van de golf",
-       "de tijd die nodig is voor één volledige trilling",
-       "de snelheid waarmee de golf zich door het medium voortplant"
+       "de golfsnelheid",
+       "het aantal trillingen per seconde",
+       "de tijd van één trilling",
+       "de maximale uitwijking ten opzichte van de evenwichtsstand"
       ],
-      "c": 0,
-      "u": "Amplitude A: de maximale afwijking van de evenwichtspositie. Grotere amplitude = meer energie in de golf. Golflengte λ is de afstand tussen twee toppen. Periode T is de tijd per trilling."
+      "c": 3,
+      "d": 2,
+      "u": "De amplitude is de grootste uitwijking.",
+      "uo": [
+       "Nee, dat is de snelheid.",
+       "Nee, dat is de frequentie.",
+       "Nee, dat is de trillingstijd.",
+       "Klopt: de amplitude is de grootste uitwijking."
+      ],
+      "uh": "Amplitude: maximale uitwijking."
      },
      {
-      "v": "Welke golfsoort heeft het medium nodig en kan NIET door vacuüm reizen?",
+      "v": "Welke golfsoort heeft een medium nodig en kan NIET door vacuüm?",
       "o": [
-       "Geluidsgolf (longitudinale mechanische golf)",
-       "Lichtgolf (transversale elektromagnetische golf)",
-       "Röntgenstraling (elektromagnetische golf)",
-       "Radiogolf (elektromagnetische golf)"
+       "een geluidsgolf (longitudinaal)",
+       "licht",
+       "gammastraling",
+       "radiogolven"
       ],
       "c": 0,
-      "u": "Geluid is een mechanische golf en heeft een medium nodig (lucht, water, vaste stof). Elektromagnetische golven (licht, radio, röntgen) kunnen door het vacuüm reizen omdat ze geen medium nodig hebben."
-     },
-     {
-      "v": "Hoe verandert de golflengte van licht als het van lucht naar water gaat? (de frequentie blijft gelijk)",
-      "o": [
-       "De golflengte wordt kleiner omdat de lichtsnelheid afneemt",
-       "De golflengte wordt groter omdat de frequentie daalt",
-       "De golflengte blijft gelijk want licht buigt niet in water",
-       "De golflengte neemt toe omdat er meer energie is"
+      "d": 3,
+      "u": "Geluid heeft een medium nodig.",
+      "uo": [
+       "Klopt: geluid heeft een medium nodig.",
+       "Nee, licht kan door vacuüm.",
+       "Nee, die kan door vacuüm.",
+       "Nee, die ook."
       ],
-      "c": 0,
-      "u": "v = f·λ. Bij overgang naar water daalt v (n_water > n_lucht), f blijft gelijk, dus λ = v/f daalt ook. Minder snelheid = kleinere golflengte in het dichtere medium."
-     },
-     {
-      "v": "Welk verschijnsel treedt op als golven een smalle opening passeren en uitwaaieren?",
-      "o": [
-       "Diffractie (buiging)",
-       "Reflectie (weerkaatsing)",
-       "Refractie (breking)",
-       "Absorptie (opname)"
-      ],
-      "c": 0,
-      "u": "Diffractie: golven buigen om hindernissen of waaieren uit na een smalle opening. Het effect is het sterkst als de opening even groot is als de golflengte. Licht difracteert bij smalle spleten (splitsingpatroon)."
+      "uh": "Geluid: medium nodig, niet door vacuüm."
      },
      {
       "v": "Wat is de eenheid van frequentie?",
       "o": [
+       "meter (m)",
        "hertz (Hz)",
        "seconde (s)",
-       "meter (m)",
        "watt (W)"
       ],
-      "c": 0,
-      "u": "Frequentie wordt gemeten in hertz: het aantal trillingen per seconde. Er geldt f = 1/T."
+      "c": 1,
+      "d": 1,
+      "u": "Frequentie meet je in hertz.",
+      "uo": [
+       "Nee, dat is lengte.",
+       "Klopt: frequentie meet je in hertz.",
+       "Nee, dat is tijd.",
+       "Nee, dat is vermogen."
+      ],
+      "uh": "Frequentie: hertz (Hz)."
      },
      {
       "v": "Wat is het verband tussen frequentie f en trillingstijd T?",
       "o": [
-       "f = 1/T",
+       "f = T²",
        "f = T",
-       "f = 2π·T",
-       "f = T²"
+       "f = 1/T",
+       "f = 2T"
       ],
-      "c": 0,
-      "u": "Frequentie en trillingstijd zijn omgekeerd evenredig: f = 1/T. Een kortere periode betekent een hogere frequentie."
-     },
-     {
-      "v": "Wat is de trillingstijd (periode) van een trilling?",
-      "o": [
-       "de tijd van één volledige trilling",
-       "de maximale uitwijking",
-       "het aantal trillingen per seconde",
-       "de afstand tot de evenwichtsstand"
+      "c": 2,
+      "d": 2,
+      "u": "Frequentie is 1 gedeeld door de trillingstijd.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, ze zijn elkaars omgekeerde.",
+       "Klopt: frequentie is 1 gedeeld door de trillingstijd.",
+       "Nee, dat klopt niet."
       ],
-      "c": 0,
-      "u": "De trillingstijd T is de tijd die één complete trilling duurt. Het aantal trillingen per seconde is juist de frequentie."
-     },
-     {
-      "v": "Wat is de evenwichtsstand bij een trilling?",
-      "o": [
-       "de rustpositie waaromheen het voorwerp heen en weer trilt",
-       "de stand van de maximale uitwijking van het voorwerp",
-       "het punt waar de trilling volledig tot stilstand komt",
-       "de afstand tot de dichtstbijzijnde buik van de golf"
-      ],
-      "c": 0,
-      "u": "De evenwichtsstand is de stabiele rustpositie. De maximale uitwijking ten opzichte daarvan heet de amplitude."
-     },
-     {
-      "v": "Welke vorm heeft het (u,t)-diagram van een harmonische trilling?",
-      "o": [
-       "een sinus",
-       "een rechte lijn",
-       "een parabool",
-       "een blokgolf"
-      ],
-      "c": 0,
-      "u": "Bij een harmonische trilling is de uitwijking recht evenredig met de terugwerkende kracht; het diagram heeft de vorm van een sinus."
-     },
-     {
-      "v": "Wat gebeurt er met de trillingstijd van een massa-veersysteem bij een zwaardere massa?",
-      "o": [
-       "de trillingstijd wordt groter",
-       "de trillingstijd wordt kleiner",
-       "de trillingstijd blijft gelijk",
-       "de trillingstijd wordt nul"
-      ],
-      "c": 0,
-      "u": "Volgens T = 2π·√(m/C) geeft een grotere massa m een grotere trillingstijd."
-     },
-     {
-      "v": "Wat gebeurt er met de trillingstijd als de veer stugger wordt (grotere veerconstante C)?",
-      "o": [
-       "de trillingstijd wordt kleiner",
-       "de trillingstijd wordt groter",
-       "de trillingstijd blijft gelijk",
-       "de trillingstijd wordt oneindig"
-      ],
-      "c": 0,
-      "u": "Volgens T = 2π·√(m/C) geeft een grotere veerconstante C een kleinere trillingstijd."
-     },
-     {
-      "v": "Wat is de eigenfrequentie van een systeem?",
-      "o": [
-       "de frequentie waarmee het systeem uit zichzelf trilt",
-       "de hoogst mogelijke frequentie die het systeem kan halen",
-       "de frequentie van de kracht die het systeem aandrijft",
-       "de frequentie van het omgevingsgeluid om het systeem heen"
-      ],
-      "c": 0,
-      "u": "De eigenfrequentie is de frequentie van de eigen (vrije) trilling van het systeem, bepaald door massa en veerconstante."
+      "uh": "f = 1/T."
      },
      {
       "v": "Wanneer treedt resonantie op?",
       "o": [
-       "als de aandrijffrequentie gelijk is aan de eigenfrequentie",
-       "als de amplitude van de trilling precies nul is geworden",
-       "als de frequentie van de trilling heel erg hoog wordt",
-       "als het trillende systeem volledig tot stilstand is gekomen"
+       "als het geluid terugkaatst",
+       "als de amplitude nul is",
+       "als de golf door vacuüm gaat",
+       "als de aandrijffrequentie gelijk is aan de eigenfrequentie"
       ],
-      "c": 0,
-      "u": "Bij resonantie valt de gedwongen trilling samen met de eigenfrequentie; de amplitude loopt sterk op (bijv. de Tacoma Narrows Bridge)."
+      "c": 3,
+      "d": 3,
+      "u": "Bij gelijke frequenties gaat het systeem hevig meetrillen.",
+      "uo": [
+       "Nee, dat is een echo.",
+       "Nee, dan is er geen trilling.",
+       "Nee, dat is niet nodig.",
+       "Klopt: bij gelijke frequenties gaat het systeem hevig meetrillen."
+      ],
+      "uh": "Resonantie: aandrijf = eigenfrequentie."
      },
      {
       "v": "Geluid is een ... golf.",
@@ -31920,974 +31874,395 @@ var VAKKEN = [
        "staande"
       ],
       "c": 0,
-      "u": "Bij geluid trilt het medium in dezelfde richting als de voortplanting: een longitudinale golf met verdichtingen en verdunningen."
-     },
-     {
-      "v": "Wat is een echo?",
-      "o": [
-       "teruggekaatst geluid",
-       "heel hard geluid",
-       "geluid in vacuüm",
-       "een trilling van een snaar"
+      "d": 2,
+      "u": "Geluid trilt in de voortplantingsrichting.",
+      "uo": [
+       "Klopt: geluid trilt in de voortplantingsrichting.",
+       "Nee, dat is licht.",
+       "Nee, geluid is mechanisch.",
+       "Nee, dat is een verschijnsel."
       ],
-      "c": 0,
-      "u": "Een echo ontstaat als geluid terugkaatst tegen een oppervlak en je het opnieuw hoort."
+      "uh": "Geluid: longitudinale golf."
      },
      {
-      "v": "Waarvan hangt de geluidssnelheid af?",
+      "v": "Licht trilt loodrecht op de richting en gaat door vacuüm. Welk begrip past hierbij?",
       "o": [
-       "van het medium en de temperatuur ervan",
-       "alleen van de frequentie van het geluid",
-       "alleen van de amplitude van het geluid",
-       "van de kleur van de geluidsbron"
+       "Resonantie",
+       "Transversale golf",
+       "Brekingsindex",
+       "Eigenfrequentie"
       ],
-      "c": 0,
-      "u": "De geluidssnelheid verschilt per medium en hangt af van de temperatuur; je zoekt waarden op in BiNaS."
-     },
-     {
-      "v": "Wat is een knoop in een staande golf?",
-      "o": [
-       "een punt dat stilstaat",
-       "een punt met maximale uitwijking",
-       "het hoogste punt van de golf",
-       "de plek van de bron"
+      "c": 1,
+      "d": 1,
+      "u": "Licht trilt loodrecht op de richting en gaat door vacuüm. Dat past bij Transversale golf: trilling loodrecht op richting.",
+      "uo": [
+       "Nee, dat hoort bij Resonantie: aandrijf = eigenfrequentie.",
+       "Klopt: trilling loodrecht op richting.",
+       "Nee, dat hoort bij Brekingsindex: n = c/v.",
+       "Nee, dat hoort bij Eigenfrequentie: trilt uit zichzelf."
       ],
-      "c": 0,
-      "u": "Een knoop is een punt dat niet beweegt. Een punt met maximale uitwijking heet juist een buik."
+      "uh": "Transversale golf: trilling loodrecht op richting."
      },
      {
-      "v": "Hoeveel knopen en buiken heeft de grondtoon van een snaar die aan beide kanten vastzit?",
+      "v": "Een schommel gaat steeds hoger als je op zijn eigen ritme duwt. Om welk begrip gaat het?",
       "o": [
-       "twee knopen en één buik",
-       "één knoop en twee buiken",
-       "drie knopen en twee buiken",
-       "geen knopen en één buik"
-      ],
-      "c": 0,
-      "u": "Bij de grondtoon staan de twee vaste uiteinden stil (knopen) en trilt het midden het sterkst (één buik)."
-     },
-     {
-      "v": "Wat geldt voor een boventoon vergeleken met de grondtoon?",
-      "o": [
-       "kleinere golflengte en hogere frequentie",
-       "grotere golflengte en lagere frequentie",
-       "dezelfde frequentie",
-       "altijd geen knopen"
-      ],
-      "c": 0,
-      "u": "Een boventoon heeft meer knopen en buiken, dus een kleinere golflengte en (via v = f·λ) een hogere frequentie."
-     },
-     {
-      "v": "Wat betekent «Trilling»?",
-      "o": [
-       "radioactieve tracer; tijdelijke besmetting van het lichaam",
-       "kracht maal verplaatsing (W = F·s)",
-       "de lading per tijd (I = Q/t, ampère)",
-       "een heen-en-weer beweging om een evenwichtsstand"
-      ],
-      "c": 3,
-      "u": "«Trilling» betekent: een heen-en-weer beweging om een evenwichtsstand.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een heen-en-weer beweging om een evenwichtsstand\"?",
-      "o": [
-       "Golflengte",
-       "Golfsnelheid",
-       "Trilling",
-       "Willekeurige hoek"
+       "Staande golf",
+       "Brekingsindex",
+       "Resonantie",
+       "Transversale golf"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Trilling»: een heen-en-weer beweging om een evenwichtsstand.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een heen-en-weer beweging om een evenwichtsstand\"?",
-      "o": [
-       "Uitwijking (u)",
-       "Amplitude",
-       "Trilling",
-       "Boventonen"
+      "d": 1,
+      "u": "Een schommel gaat steeds hoger als je op zijn eigen ritme duwt. Dat past bij Resonantie: aandrijf = eigenfrequentie.",
+      "uo": [
+       "Nee, dat hoort bij Staande golf: knopen en buiken.",
+       "Nee, dat hoort bij Brekingsindex: n = c/v.",
+       "Klopt: aandrijf = eigenfrequentie.",
+       "Nee, dat hoort bij Transversale golf: trilling loodrecht op richting."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Trilling»: een heen-en-weer beweging om een evenwichtsstand.",
-      "d": 3
+      "uh": "Resonantie: aandrijf = eigenfrequentie."
      },
      {
-      "v": "Wat houdt «Trilling» in?",
+      "v": "Meetrillen als de aandrijffrequentie de eigenfrequentie raakt. Welk begrip herken je hier?",
       "o": [
-       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
-       "een heen-en-weer beweging om een evenwichtsstand",
-       "het aantal trillingen per seconde (Hz)",
-       "de snelheid waarmee geluid zich voortplant"
-      ],
-      "c": 1,
-      "u": "«Trilling» betekent: een heen-en-weer beweging om een evenwichtsstand.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Boventoon»?",
-      "o": [
-       "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element.",
-       "een trilling met een veelvoud van de grondfrequentie",
-       "elektronmiddelmatig",
-       "richtingverandering van een golf bij een grensvlak"
-      ],
-      "c": 1,
-      "u": "«Boventoon» betekent: een trilling met een veelvoud van de grondfrequentie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een trilling met een veelvoud van de grondfrequentie\"?",
-      "o": [
-       "Spanning",
-       "Parallelschakeling",
-       "Gammastraling",
-       "Boventoon"
+       "Transversale golf",
+       "Brekingsindex",
+       "Staande golf",
+       "Resonantie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Boventoon»: een trilling met een veelvoud van de grondfrequentie.",
-      "d": 2
+      "d": 1,
+      "u": "Meetrillen als de aandrijffrequentie de eigenfrequentie raakt. Dat past bij Resonantie: aandrijf = eigenfrequentie.",
+      "uo": [
+       "Nee, dat hoort bij Transversale golf: trilling loodrecht op richting.",
+       "Nee, dat hoort bij Brekingsindex: n = c/v.",
+       "Nee, dat hoort bij Staande golf: knopen en buiken.",
+       "Klopt: aandrijf = eigenfrequentie."
+      ],
+      "uh": "Resonantie: aandrijf = eigenfrequentie."
      },
      {
-      "v": "Welke term past bij: \"een trilling met een veelvoud van de grondfrequentie\"?",
+      "v": "De natuurlijke trillingsfrequentie. Wat is hier aan de hand?",
       "o": [
-       "Boventoon",
-       "Geluidssnelheid",
-       "Interferentie",
-       "Spiegeling"
+       "Eigenfrequentie",
+       "Staande golf",
+       "Frequentie",
+       "Longitudinale golf"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Boventoon»: een trilling met een veelvoud van de grondfrequentie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Boventoon» in?",
-      "o": [
-       "een trilling met een veelvoud van de grondfrequentie",
-       "een trilling die energie transporteert zonder massatransport",
-       "een heen-en-weer beweging om een evenwichtsstand",
-       "de afstand tussen twee opeenvolgende toppen (m)"
+      "d": 1,
+      "u": "De natuurlijke trillingsfrequentie. Dat past bij Eigenfrequentie: trilt uit zichzelf.",
+      "uo": [
+       "Klopt: trilt uit zichzelf.",
+       "Nee, dat hoort bij Staande golf: knopen en buiken.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Nee, dat hoort bij Longitudinale golf: trilling in de richting."
       ],
-      "c": 0,
-      "u": "«Boventoon» betekent: een trilling met een veelvoud van de grondfrequentie.",
-      "d": 3
+      "uh": "Eigenfrequentie: trilt uit zichzelf."
      },
      {
-      "v": "Wat betekent «Geluidssnelheid»?",
+      "v": "De frequentie waarmee een systeem uit zichzelf trilt. Welk begrip past hierbij?",
       "o": [
-       "actie en reactie zijn even groot en tegengesteld",
-       "de snelheid waarmee geluid zich voortplant",
-       "atoomsoort met gelijk aantal protonen, ander aantal neutronen",
-       "frequentieverandering door beweging van bron of waarnemer"
-      ],
-      "c": 1,
-      "u": "«Geluidssnelheid» betekent: de snelheid waarmee geluid zich voortplant.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de snelheid waarmee geluid zich voortplant\"?",
-      "o": [
-       "Weerstand",
-       "Zwaartekracht",
-       "Ohmse weerstand",
-       "Geluidssnelheid"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Geluidssnelheid»: de snelheid waarmee geluid zich voortplant.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de snelheid waarmee geluid zich voortplant\"?",
-      "o": [
-       "Geluidssnelheid",
-       "Golflengte",
-       "Boventonen",
+       "Resonantie",
+       "Eigenfrequentie",
+       "Transversale golf",
        "Frequentie"
       ],
+      "c": 1,
+      "d": 2,
+      "u": "De frequentie waarmee een systeem uit zichzelf trilt. Dat past bij Eigenfrequentie: trilt uit zichzelf.",
+      "uo": [
+       "Nee, dat hoort bij Resonantie: aandrijf = eigenfrequentie.",
+       "Klopt: trilt uit zichzelf.",
+       "Nee, dat hoort bij Transversale golf: trilling loodrecht op richting.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde."
+      ],
+      "uh": "Eigenfrequentie: trilt uit zichzelf."
+     },
+     {
+      "v": "Het uitwaaieren van golven na een opening. Om welk begrip gaat het?",
+      "o": [
+       "Staande golf",
+       "Brekingsindex",
+       "Diffractie",
+       "Transversale golf"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Het uitwaaieren van golven na een opening. Dat past bij Diffractie: uitwaaieren, buiging.",
+      "uo": [
+       "Nee, dat hoort bij Staande golf: knopen en buiken.",
+       "Nee, dat hoort bij Brekingsindex: n = c/v.",
+       "Klopt: uitwaaieren, buiging.",
+       "Nee, dat hoort bij Transversale golf: trilling loodrecht op richting."
+      ],
+      "uh": "Diffractie: uitwaaieren, buiging."
+     },
+     {
+      "v": "De maximale uitwijking uit de evenwichtsstand. Welk begrip herken je hier?",
+      "o": [
+       "Diffractie",
+       "Frequentie",
+       "Longitudinale golf",
+       "Amplitude"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "De maximale uitwijking uit de evenwichtsstand. Dat past bij Amplitude: maximale uitwijking.",
+      "uo": [
+       "Nee, dat hoort bij Diffractie: uitwaaieren, buiging.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Nee, dat hoort bij Longitudinale golf: trilling in de richting.",
+       "Klopt: maximale uitwijking."
+      ],
+      "uh": "Amplitude: maximale uitwijking."
+     },
+     {
+      "v": "De maximale uitwijking van een trilling uit de rust. Wat is hier aan de hand?",
+      "o": [
+       "Amplitude",
+       "Longitudinale golf",
+       "Golfvergelijking",
+       "Staande golf"
+      ],
       "c": 0,
-      "u": "Het juiste begrip is «Geluidssnelheid»: de snelheid waarmee geluid zich voortplant.",
-      "d": 3
+      "d": 1,
+      "u": "De maximale uitwijking van een trilling uit de rust. Dat past bij Amplitude: maximale uitwijking.",
+      "uo": [
+       "Klopt: maximale uitwijking.",
+       "Nee, dat hoort bij Longitudinale golf: trilling in de richting.",
+       "Nee, dat hoort bij Golfvergelijking: v = f·λ.",
+       "Nee, dat hoort bij Staande golf: knopen en buiken."
+      ],
+      "uh": "Amplitude: maximale uitwijking."
      },
      {
-      "v": "Wat houdt «Geluidssnelheid» in?",
+      "v": "De verhouding n = c gedeeld door v. Welk begrip past hierbij?",
       "o": [
-       "het terugkaatsen van een golf tegen een oppervlak",
-       "een trilling die energie transporteert zonder massatransport",
-       "de snelheid waarmee geluid zich voortplant",
-       "aantal trillingen per seconde (Hz)"
+       "Golfvergelijking",
+       "Brekingsindex",
+       "Resonantie",
+       "Longitudinale golf"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De verhouding n = c gedeeld door v. Dat past bij Brekingsindex: n = c/v.",
+      "uo": [
+       "Nee, dat hoort bij Golfvergelijking: v = f·λ.",
+       "Klopt: n = c/v.",
+       "Nee, dat hoort bij Resonantie: aandrijf = eigenfrequentie.",
+       "Nee, dat hoort bij Longitudinale golf: trilling in de richting."
+      ],
+      "uh": "Brekingsindex: n = c/v."
+     },
+     {
+      "v": "De lichtsnelheid in vacuüm gedeeld door die in het glas. Om welk begrip gaat het?",
+      "o": [
+       "Diffractie",
+       "Frequentie",
+       "Brekingsindex",
+       "Amplitude"
       ],
       "c": 2,
-      "u": "«Geluidssnelheid» betekent: de snelheid waarmee geluid zich voortplant.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Spiegeling»?",
-      "o": [
-       "y = a/x; het product blijft constant",
-       "versterking of verzwakking van overlappende golven",
-       "het terugkaatsen van een golf tegen een oppervlak",
-       "de vectorsom van alle krachten op een object"
+      "d": 1,
+      "u": "De lichtsnelheid in vacuüm gedeeld door die in het glas. Dat past bij Brekingsindex: n = c/v.",
+      "uo": [
+       "Nee, dat hoort bij Diffractie: uitwaaieren, buiging.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Klopt: n = c/v.",
+       "Nee, dat hoort bij Amplitude: maximale uitwijking."
       ],
-      "c": 2,
-      "u": "«Spiegeling» betekent: het terugkaatsen van een golf tegen een oppervlak.",
-      "d": 1
+      "uh": "Brekingsindex: n = c/v."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het terugkaatsen van een golf tegen een oppervlak\"?",
+      "v": "Een golf die in de richting trilt. Welk begrip herken je hier?",
       "o": [
-       "Gammastraling",
-       "Loodrecht",
-       "Spiegeling",
-       "Golflengte"
+       "Golfvergelijking",
+       "Transversale golf",
+       "Frequentie",
+       "Longitudinale golf"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Spiegeling»: het terugkaatsen van een golf tegen een oppervlak.",
-      "d": 2
+      "c": 3,
+      "d": 2,
+      "u": "Een golf die in de richting trilt. Dat past bij Longitudinale golf: trilling in de richting.",
+      "uo": [
+       "Nee, dat hoort bij Golfvergelijking: v = f·λ.",
+       "Nee, dat hoort bij Transversale golf: trilling loodrecht op richting.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Klopt: trilling in de richting."
+      ],
+      "uh": "Longitudinale golf: trilling in de richting."
      },
      {
-      "v": "Welke term past bij: \"het terugkaatsen van een golf tegen een oppervlak\"?",
+      "v": "Een golf met vaste knopen en buiken. Wat is hier aan de hand?",
       "o": [
-       "Trillingstijd / periode (T)",
-       "Spiegeling",
-       "Breking",
+       "Staande golf",
+       "Longitudinale golf",
+       "Frequentie",
+       "Eigenfrequentie"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een golf met vaste knopen en buiken. Dat past bij Staande golf: knopen en buiken.",
+      "uo": [
+       "Klopt: knopen en buiken.",
+       "Nee, dat hoort bij Longitudinale golf: trilling in de richting.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Nee, dat hoort bij Eigenfrequentie: trilt uit zichzelf."
+      ],
+      "uh": "Staande golf: knopen en buiken."
+     },
+     {
+      "v": "De relatie v = f keer lambda. Welk begrip past hierbij?",
+      "o": [
+       "Brekingsindex",
+       "Golfvergelijking",
+       "Staande golf",
        "Amplitude"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Spiegeling»: het terugkaatsen van een golf tegen een oppervlak.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Spiegeling» in?",
-      "o": [
-       "de maximale uitwijking van een trilling",
-       "het terugkaatsen van een golf tegen een oppervlak",
-       "een trilling met een veelvoud van de grondfrequentie",
-       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte."
+      "d": 2,
+      "u": "De relatie v = f keer lambda. Dat past bij Golfvergelijking: v = f·λ.",
+      "uo": [
+       "Nee, dat hoort bij Brekingsindex: n = c/v.",
+       "Klopt: v = f·λ.",
+       "Nee, dat hoort bij Staande golf: knopen en buiken.",
+       "Nee, dat hoort bij Amplitude: maximale uitwijking."
       ],
-      "c": 1,
-      "u": "«Spiegeling» betekent: het terugkaatsen van een golf tegen een oppervlak.",
-      "d": 3
+      "uh": "Golfvergelijking: v = f·λ."
      },
      {
-      "v": "Wat betekent «Golf»?",
+      "v": "Golven waaieren uit nadat ze een smalle opening passeren. Om welk begrip gaat het?",
       "o": [
-       "evenveel significante cijfers als de minst nauwkeurige waarde",
-       "een trilling die energie transporteert zonder massatransport",
-       "de snelheidsverandering per tijd (a = Δv/Δt)",
-       "het vermogen om arbeid te verrichten (joule)"
-      ],
-      "c": 1,
-      "u": "«Golf» betekent: een trilling die energie transporteert zonder massatransport.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een trilling die energie transporteert zonder massatransport\"?",
-      "o": [
-       "Golf",
-       "Gewicht",
-       "Niet-ohmse weerstand",
-       "Resonantie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Golf»: een trilling die energie transporteert zonder massatransport.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een trilling die energie transporteert zonder massatransport\"?",
-      "o": [
-       "Evenwichtsstand",
-       "Amplitude",
-       "Golf",
-       "Boventonen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Golf»: een trilling die energie transporteert zonder massatransport.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Golf» in?",
-      "o": [
-       "het aantal trillingen per seconde (Hz)",
-       "de rustpositie van het systeem",
-       "een trilling die energie transporteert zonder massatransport",
-       "v = f·λ, de snelheid van de golf (m/s)"
-      ],
-      "c": 2,
-      "u": "«Golf» betekent: een trilling die energie transporteert zonder massatransport.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Frequentie»?",
-      "o": [
-       "elektronmiddelmatig",
-       "gedetailleerd 3D-beeld; hogere stralingsdosis",
-       "het vermogen om arbeid te verrichten (joule)",
-       "het aantal trillingen per seconde (Hz)"
-      ],
-      "c": 3,
-      "u": "«Frequentie» betekent: het aantal trillingen per seconde (Hz).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het aantal trillingen per seconde (Hz)\"?",
-      "o": [
-       "Wrijvingskracht",
-       "Weerstand",
-       "Frequentie",
-       "Meetonzekerheid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Frequentie»: het aantal trillingen per seconde (Hz).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het aantal trillingen per seconde (Hz)\"?",
-      "o": [
-       "Uitwijking (u)",
-       "Boventoon",
-       "Grondtoon",
+       "Longitudinale golf",
+       "Resonantie",
+       "Diffractie",
        "Frequentie"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Frequentie»: het aantal trillingen per seconde (Hz).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Frequentie» in?",
-      "o": [
-       "het aantal trillingen per seconde (Hz)",
-       "de afstand tot de evenwichtsstand",
-       "v = f·λ, de snelheid van de golf (m/s)",
-       "de rustpositie van het systeem"
-      ],
-      "c": 0,
-      "u": "«Frequentie» betekent: het aantal trillingen per seconde (Hz).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Golflengte»?",
-      "o": [
-       "gedetailleerd 3D-beeld; hogere stralingsdosis",
-       "de afstand tussen twee opeenvolgende toppen (m)",
-       "zelfde richting optellen, tegengestelde richting aftrekken.",
-       "zonnestraling"
-      ],
-      "c": 1,
-      "u": "«Golflengte» betekent: de afstand tussen twee opeenvolgende toppen (m).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de afstand tussen twee opeenvolgende toppen (m)\"?",
-      "o": [
-       "Alfa (α)",
-       "Stroming",
-       "Golflengte",
-       "Vermogen"
-      ],
       "c": 2,
-      "u": "Het juiste begrip is «Golflengte»: de afstand tussen twee opeenvolgende toppen (m).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de afstand tussen twee opeenvolgende toppen (m)\"?",
-      "o": [
-       "Grondtoon",
-       "Trilling",
-       "Trillingstijd / periode (T)",
-       "Golflengte"
+      "d": 3,
+      "u": "Golven waaieren uit nadat ze een smalle opening passeren. Dat past bij Diffractie: uitwaaieren, buiging.",
+      "uo": [
+       "Nee, dat hoort bij Longitudinale golf: trilling in de richting.",
+       "Nee, dat hoort bij Resonantie: aandrijf = eigenfrequentie.",
+       "Klopt: uitwaaieren, buiging.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Golflengte»: de afstand tussen twee opeenvolgende toppen (m).",
-      "d": 3
+      "uh": "Diffractie: uitwaaieren, buiging."
      },
      {
-      "v": "Wat houdt «Golflengte» in?",
+      "v": "Een golf die loodrecht op de richting trilt. Welk begrip herken je hier?",
       "o": [
-       "frequentieverandering door beweging van bron of waarnemer",
-       "de rustpositie van het systeem",
-       "versterking of verzwakking van overlappende golven",
-       "de afstand tussen twee opeenvolgende toppen (m)"
-      ],
-      "c": 3,
-      "u": "«Golflengte» betekent: de afstand tussen twee opeenvolgende toppen (m).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Amplitude»?",
-      "o": [
-       "het vermogen om arbeid te verrichten (joule)",
-       "snel, vooral botten en longen; stralingsrisico",
-       "de maximale uitwijking van een trilling",
-       "medische scans"
-      ],
-      "c": 2,
-      "u": "«Amplitude» betekent: de maximale uitwijking van een trilling.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de maximale uitwijking van een trilling\"?",
-      "o": [
-       "Halveringstijd",
-       "Amplitude",
-       "Bèta (β)",
-       "Optellen / aftrekken"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Amplitude»: de maximale uitwijking van een trilling.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de maximale uitwijking van een trilling\"?",
-      "o": [
-       "Golfsnelheid",
-       "Evenwichtsstand",
-       "Amplitude",
-       "Geluidssnelheid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Amplitude»: de maximale uitwijking van een trilling.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Amplitude» in?",
-      "o": [
-       "de maximale uitwijking van een trilling",
-       "een trilling die energie transporteert zonder massatransport",
-       "meer knopen en buiken en een kleinere golflengte (hogere frequentie).",
-       "het aantal trillingen per seconde (Hz)"
-      ],
-      "c": 0,
-      "u": "«Amplitude» betekent: de maximale uitwijking van een trilling.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Golfsnelheid»?",
-      "o": [
-       "een reactie waarbij atoomkernen veranderen",
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit",
-       "v = f·λ, de snelheid van de golf (m/s)",
-       "de opeenvolging van kernvervallen"
-      ],
-      "c": 2,
-      "u": "«Golfsnelheid» betekent: v = f·λ, de snelheid van de golf (m/s).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"v = f·λ, de snelheid van de golf (m/s)\"?",
-      "o": [
-       "Stroming",
-       "Golfsnelheid",
-       "Gamma (γ)",
-       "Grondtoon"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Golfsnelheid»: v = f·λ, de snelheid van de golf (m/s).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"v = f·λ, de snelheid van de golf (m/s)\"?",
-      "o": [
-       "Doppler-effect",
-       "Golfsnelheid",
-       "Trilling",
-       "Frequentie (f)"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Golfsnelheid»: v = f·λ, de snelheid van de golf (m/s).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Golfsnelheid» in?",
-      "o": [
-       "het terugkaatsen van een golf tegen een oppervlak",
-       "aantal trillingen per seconde (Hz)",
-       "v = f·λ, de snelheid van de golf (m/s)",
-       "sterke versterking bij de eigenfrequentie"
-      ],
-      "c": 2,
-      "u": "«Golfsnelheid» betekent: v = f·λ, de snelheid van de golf (m/s).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Interferentie»?",
-      "o": [
-       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
-       "weerstand daalt bij meer licht",
-       "een heen-en-weer beweging om een evenwichtsstand",
-       "versterking of verzwakking van overlappende golven"
-      ],
-      "c": 3,
-      "u": "«Interferentie» betekent: versterking of verzwakking van overlappende golven.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"versterking of verzwakking van overlappende golven\"?",
-      "o": [
-       "IJken",
-       "Infrarood",
-       "Interferentie",
-       "Geleiding"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Interferentie»: versterking of verzwakking van overlappende golven.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"versterking of verzwakking van overlappende golven\"?",
-      "o": [
-       "Grondtoon",
-       "Geluidssnelheid",
-       "Frequentie (f)",
-       "Interferentie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Interferentie»: versterking of verzwakking van overlappende golven.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Interferentie» in?",
-      "o": [
-       "v = f·λ, de snelheid van de golf (m/s)",
-       "versterking of verzwakking van overlappende golven",
-       "sterke versterking bij de eigenfrequentie",
-       "een heen-en-weer beweging om een evenwichtsstand"
-      ],
-      "c": 1,
-      "u": "«Interferentie» betekent: versterking of verzwakking van overlappende golven.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Resonantie»?",
-      "o": [
-       "elektronmiddelmatig",
-       "sterke versterking bij de eigenfrequentie",
-       "kracht maal verplaatsing (W = F·s)",
-       "een heen-en-weer beweging om een evenwichtsstand"
-      ],
-      "c": 1,
-      "u": "«Resonantie» betekent: sterke versterking bij de eigenfrequentie.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"sterke versterking bij de eigenfrequentie\"?",
-      "o": [
-       "Boventonen",
+       "Eigenfrequentie",
        "Resonantie",
-       "Diode / LED",
-       "PTC"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Resonantie»: sterke versterking bij de eigenfrequentie.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"sterke versterking bij de eigenfrequentie\"?",
-      "o": [
-       "Boventoon",
-       "Resonantie",
-       "Breking",
-       "Interferentie"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Resonantie»: sterke versterking bij de eigenfrequentie.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Resonantie» in?",
-      "o": [
-       "frequentieverandering door beweging van bron of waarnemer",
-       "een trilling met een veelvoud van de grondfrequentie",
-       "richtingverandering van een golf bij een grensvlak",
-       "sterke versterking bij de eigenfrequentie"
+       "Brekingsindex",
+       "Transversale golf"
       ],
       "c": 3,
-      "u": "«Resonantie» betekent: sterke versterking bij de eigenfrequentie.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Doppler-effect»?",
-      "o": [
-       "parallellogrammethode; de diagonaal is de resultante Fres.",
-       "frequentieverandering door beweging van bron of waarnemer",
-       "een verbinding met vrijwel geen weerstand",
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen."
+      "d": 1,
+      "u": "Een golf die loodrecht op de richting trilt. Dat past bij Transversale golf: trilling loodrecht op richting.",
+      "uo": [
+       "Nee, dat hoort bij Eigenfrequentie: trilt uit zichzelf.",
+       "Nee, dat hoort bij Resonantie: aandrijf = eigenfrequentie.",
+       "Nee, dat hoort bij Brekingsindex: n = c/v.",
+       "Klopt: trilling loodrecht op richting."
       ],
-      "c": 1,
-      "u": "«Doppler-effect» betekent: frequentieverandering door beweging van bron of waarnemer.",
-      "d": 1
+      "uh": "Transversale golf: trilling loodrecht op richting."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"frequentieverandering door beweging van bron of waarnemer\"?",
+      "v": "Het aantal trillingen per seconde. Wat is hier aan de hand?",
       "o": [
-       "Doppler-effect",
-       "Vrije val",
-       "Interferentie",
-       "Resonantie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Doppler-effect»: frequentieverandering door beweging van bron of waarnemer.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"frequentieverandering door beweging van bron of waarnemer\"?",
-      "o": [
-       "Breking",
-       "Resonantie",
-       "Amplitude",
-       "Doppler-effect"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Doppler-effect»: frequentieverandering door beweging van bron of waarnemer.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Doppler-effect» in?",
-      "o": [
-       "frequentieverandering door beweging van bron of waarnemer",
-       "de maximale uitwijking van een trilling",
-       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
-       "een trilling met een veelvoud van de grondfrequentie"
-      ],
-      "c": 0,
-      "u": "«Doppler-effect» betekent: frequentieverandering door beweging van bron of waarnemer.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Breking»?",
-      "o": [
-       "y = a/x; het product blijft constant",
-       "U = I·R",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "richtingverandering van een golf bij een grensvlak"
-      ],
-      "c": 3,
-      "u": "«Breking» betekent: richtingverandering van een golf bij een grensvlak.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"richtingverandering van een golf bij een grensvlak\"?",
-      "o": [
-       "Gamma (γ)",
-       "Breking",
-       "Alfastraling",
-       "Nucleair (PET)"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Breking»: richtingverandering van een golf bij een grensvlak.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"richtingverandering van een golf bij een grensvlak\"?",
-      "o": [
-       "Breking",
-       "Trillingstijd / periode (T)",
-       "Interferentie",
-       "Golfsnelheid"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Breking»: richtingverandering van een golf bij een grensvlak.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Breking» in?",
-      "o": [
-       "de afstand tot de evenwichtsstand",
-       "een heen-en-weer beweging om een evenwichtsstand",
-       "v = f·λ, de snelheid van de golf (m/s)",
-       "richtingverandering van een golf bij een grensvlak"
-      ],
-      "c": 3,
-      "u": "«Breking» betekent: richtingverandering van een golf bij een grensvlak.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Evenwichtsstand»?",
-      "o": [
-       "de rustpositie van het systeem",
-       "F = m·a",
-       "eigenschap die elektrische krachten veroorzaakt (C)",
-       "onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken."
-      ],
-      "c": 0,
-      "u": "«Evenwichtsstand» betekent: de rustpositie van het systeem.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de rustpositie van het systeem\"?",
-      "o": [
-       "Evenwichtsstand",
-       "LDR",
        "Frequentie",
-       "Frequentie (f)"
+       "Amplitude",
+       "Diffractie",
+       "Longitudinale golf"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Evenwichtsstand»: de rustpositie van het systeem.",
-      "d": 2
+      "d": 2,
+      "u": "Het aantal trillingen per seconde. Dat past bij Frequentie: trillingen per seconde.",
+      "uo": [
+       "Klopt: trillingen per seconde.",
+       "Nee, dat hoort bij Amplitude: maximale uitwijking.",
+       "Nee, dat hoort bij Diffractie: uitwaaieren, buiging.",
+       "Nee, dat hoort bij Longitudinale golf: trilling in de richting."
+      ],
+      "uh": "Frequentie: trillingen per seconde."
      },
      {
-      "v": "Welke term past bij: \"de rustpositie van het systeem\"?",
+      "v": "De snelheid is de frequentie maal de golflengte, v is f maal lambda. Welk begrip past hierbij?",
       "o": [
-       "Golfsnelheid",
-       "Evenwichtsstand",
-       "Amplitude",
-       "Trilling"
+       "Brekingsindex",
+       "Golfvergelijking",
+       "Staande golf",
+       "Transversale golf"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Evenwichtsstand»: de rustpositie van het systeem.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Evenwichtsstand» in?",
-      "o": [
-       "de rustpositie van het systeem",
-       "frequentieverandering door beweging van bron of waarnemer",
-       "het terugkaatsen van een golf tegen een oppervlak",
-       "een trilling die energie transporteert zonder massatransport"
+      "d": 3,
+      "u": "De snelheid is de frequentie maal de golflengte, v is f maal lambda. Dat past bij Golfvergelijking: v = f·λ.",
+      "uo": [
+       "Nee, dat hoort bij Brekingsindex: n = c/v.",
+       "Klopt: v = f·λ.",
+       "Nee, dat hoort bij Staande golf: knopen en buiken.",
+       "Nee, dat hoort bij Transversale golf: trilling loodrecht op richting."
       ],
-      "c": 0,
-      "u": "«Evenwichtsstand» betekent: de rustpositie van het systeem.",
-      "d": 3
+      "uh": "Golfvergelijking: v = f·λ."
      },
      {
-      "v": "Wat betekent «Uitwijking (u)»?",
+      "v": "Het aantal trillingen per seconde, gemeten in hertz. Om welk begrip gaat het?",
       "o": [
-       "de afstand tot de evenwichtsstand",
-       "snel, vooral botten en longen; stralingsrisico",
-       "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A.",
-       "de tijd van één volledige trilling"
-      ],
-      "c": 0,
-      "u": "«Uitwijking (u)» betekent: de afstand tot de evenwichtsstand.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de afstand tot de evenwichtsstand\"?",
-      "o": [
-       "Uitwijking (u)",
-       "Gammastraling",
-       "Golfsnelheid",
-       "Optellen / aftrekken"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Uitwijking (u)»: de afstand tot de evenwichtsstand.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de afstand tot de evenwichtsstand\"?",
-      "o": [
-       "Trilling",
-       "Doppler-effect",
-       "Frequentie (f)",
-       "Uitwijking (u)"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Uitwijking (u)»: de afstand tot de evenwichtsstand.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Uitwijking (u)» in?",
-      "o": [
-       "een trilling die energie transporteert zonder massatransport",
-       "een heen-en-weer beweging om een evenwichtsstand",
-       "het aantal trillingen per seconde (Hz)",
-       "de afstand tot de evenwichtsstand"
-      ],
-      "c": 3,
-      "u": "«Uitwijking (u)» betekent: de afstand tot de evenwichtsstand.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Trillingstijd / periode (T)»?",
-      "o": [
-       "de tijd van één volledige trilling",
-       "frequentieverandering door beweging van bron of waarnemer",
-       "de omgezette energie per tijd",
-       "een heen-en-weer beweging om een evenwichtsstand"
-      ],
-      "c": 0,
-      "u": "«Trillingstijd / periode (T)» betekent: de tijd van één volledige trilling.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de tijd van één volledige trilling\"?",
-      "o": [
-       "Trillingstijd / periode (T)",
-       "Elektrische lading",
-       "Willekeurige hoek",
-       "Eerste wet (traagheid)"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Trillingstijd / periode (T)»: de tijd van één volledige trilling.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de tijd van één volledige trilling\"?",
-      "o": [
-       "Trillingstijd / periode (T)",
-       "Uitwijking (u)",
-       "Boventonen",
-       "Frequentie (f)"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Trillingstijd / periode (T)»: de tijd van één volledige trilling.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Trillingstijd / periode (T)» in?",
-      "o": [
-       "het aantal trillingen per seconde (Hz)",
-       "het terugkaatsen van een golf tegen een oppervlak",
-       "de tijd van één volledige trilling",
-       "de rustpositie van het systeem"
-      ],
-      "c": 2,
-      "u": "«Trillingstijd / periode (T)» betekent: de tijd van één volledige trilling.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Frequentie (f)»?",
-      "o": [
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.",
-       "componenten naast elkaar; de spanning is gelijk",
-       "heliumkern (2 p + 2 n)gering (sterk ioniserend)",
-       "aantal trillingen per seconde (Hz)"
-      ],
-      "c": 3,
-      "u": "«Frequentie (f)» betekent: aantal trillingen per seconde (Hz).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"aantal trillingen per seconde (Hz)\"?",
-      "o": [
-       "Frequentie (f)",
-       "Evenwichtsstand",
-       "Tweede wet",
-       "Boventonen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Frequentie (f)»: aantal trillingen per seconde (Hz).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"aantal trillingen per seconde (Hz)\"?",
-      "o": [
-       "Evenwichtsstand",
-       "Doppler-effect",
-       "Trilling",
-       "Frequentie (f)"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Frequentie (f)»: aantal trillingen per seconde (Hz).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Frequentie (f)» in?",
-      "o": [
-       "de rustpositie van het systeem",
-       "de snelheid waarmee geluid zich voortplant",
-       "aantal trillingen per seconde (Hz)",
-       "versterking of verzwakking van overlappende golven"
-      ],
-      "c": 2,
-      "u": "«Frequentie (f)» betekent: aantal trillingen per seconde (Hz).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Grondtoon»?",
-      "o": [
-       "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging.",
-       "medische scans",
-       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
-       "laat stroom maar in één richting door; een led geeft daarbij licht"
-      ],
-      "c": 2,
-      "u": "«Grondtoon» betekent: de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.\"?",
-      "o": [
-       "Amplitude",
-       "Doppler-effect",
-       "Grondtoon",
-       "Ioniserende straling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Grondtoon»: de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.\"?",
-      "o": [
-       "Evenwichtsstand",
+       "Staande golf",
+       "Brekingsindex",
        "Frequentie",
-       "Grondtoon",
-       "Geluidssnelheid"
+       "Transversale golf"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Grondtoon»: de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Grondtoon» in?",
-      "o": [
-       "de snelheid waarmee geluid zich voortplant",
-       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
-       "meer knopen en buiken en een kleinere golflengte (hogere frequentie).",
-       "v = f·λ, de snelheid van de golf (m/s)"
+      "d": 1,
+      "u": "Het aantal trillingen per seconde, gemeten in hertz. Dat past bij Frequentie: trillingen per seconde.",
+      "uo": [
+       "Nee, dat hoort bij Staande golf: knopen en buiken.",
+       "Nee, dat hoort bij Brekingsindex: n = c/v.",
+       "Klopt: trillingen per seconde.",
+       "Nee, dat hoort bij Transversale golf: trilling loodrecht op richting."
       ],
-      "c": 1,
-      "u": "«Grondtoon» betekent: de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte..",
-      "d": 3
+      "uh": "Frequentie: trillingen per seconde."
      },
      {
-      "v": "Wat betekent «Boventonen»?",
+      "v": "Geluid trilt in de richting en heeft een medium nodig. Welk begrip herken je hier?",
       "o": [
-       "frequentieverandering door beweging van bron of waarnemer",
-       "meer knopen en buiken en een kleinere golflengte (hogere frequentie).",
-       "de afstand tussen twee opeenvolgende toppen (m)",
-       "materiaal dat straling tegenhoudt"
+       "Golfvergelijking",
+       "Transversale golf",
+       "Frequentie",
+       "Longitudinale golf"
       ],
-      "c": 1,
-      "u": "«Boventonen» betekent: meer knopen en buiken en een kleinere golflengte (hogere frequentie)..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"meer knopen en buiken en een kleinere golflengte (hogere frequentie).\"?",
-      "o": [
-       "Boventonen",
-       "Gewicht",
-       "Significante cijfers",
-       "Recht evenredig"
+      "c": 3,
+      "d": 2,
+      "u": "Geluid trilt in de richting en heeft een medium nodig. Dat past bij Longitudinale golf: trilling in de richting.",
+      "uo": [
+       "Nee, dat hoort bij Golfvergelijking: v = f·λ.",
+       "Nee, dat hoort bij Transversale golf: trilling loodrecht op richting.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Klopt: trilling in de richting."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Boventonen»: meer knopen en buiken en een kleinere golflengte (hogere frequentie)..",
-      "d": 2
+      "uh": "Longitudinale golf: trilling in de richting."
      },
      {
-      "v": "Welke term past bij: \"meer knopen en buiken en een kleinere golflengte (hogere frequentie).\"?",
+      "v": "Een snaar trilt met vaste knopen en buiken. Wat is hier aan de hand?",
       "o": [
-       "Boventonen",
-       "Doppler-effect",
-       "Uitwijking (u)",
-       "Trillingstijd / periode (T)"
+       "Staande golf",
+       "Diffractie",
+       "Frequentie",
+       "Longitudinale golf"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Boventonen»: meer knopen en buiken en een kleinere golflengte (hogere frequentie)..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Boventonen» in?",
-      "o": [
-       "meer knopen en buiken en een kleinere golflengte (hogere frequentie).",
-       "de tijd van één volledige trilling",
-       "de rustpositie van het systeem",
-       "het aantal trillingen per seconde (Hz)"
+      "d": 3,
+      "u": "Een snaar trilt met vaste knopen en buiken. Dat past bij Staande golf: knopen en buiken.",
+      "uo": [
+       "Klopt: knopen en buiken.",
+       "Nee, dat hoort bij Diffractie: uitwaaieren, buiging.",
+       "Nee, dat hoort bij Frequentie: trillingen per seconde.",
+       "Nee, dat hoort bij Longitudinale golf: trilling in de richting."
       ],
-      "c": 0,
-      "u": "«Boventonen» betekent: meer knopen en buiken en een kleinere golflengte (hogere frequentie)..",
-      "d": 3
+      "uh": "Staande golf: knopen en buiken."
      }
     ],
     "oe": [
@@ -32984,80 +32359,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Trilling",
-      "d": "een heen-en-weer beweging om een evenwichtsstand"
+      "t": "Golfvergelijking",
+      "d": "de relatie v = f·λ tussen snelheid, frequentie en golflengte"
      },
      {
-      "t": "Boventoon",
-      "d": "een trilling met een veelvoud van de grondfrequentie"
+      "t": "Transversale golf",
+      "d": "een golf die loodrecht op de voortplantingsrichting trilt, kan door vacuüm"
      },
      {
-      "t": "Geluidssnelheid",
-      "d": "de snelheid waarmee geluid zich voortplant"
+      "t": "Longitudinale golf",
+      "d": "een golf die in de voortplantingsrichting trilt en een medium nodig heeft"
      },
      {
-      "t": "Spiegeling",
-      "d": "het terugkaatsen van een golf tegen een oppervlak"
-     },
-     {
-      "t": "Golf",
-      "d": "een trilling die energie transporteert zonder massatransport"
+      "t": "Brekingsindex",
+      "d": "n = c/v, de verhouding van de lichtsnelheid in vacuüm en in het medium"
      },
      {
       "t": "Frequentie",
-      "d": "het aantal trillingen per seconde (Hz)"
-     },
-     {
-      "t": "Golflengte",
-      "d": "de afstand tussen twee opeenvolgende toppen (m)"
+      "d": "het aantal trillingen per seconde, in hertz, f = 1/T"
      },
      {
       "t": "Amplitude",
-      "d": "de maximale uitwijking van een trilling"
+      "d": "de maximale uitwijking ten opzichte van de evenwichtsstand"
      },
      {
-      "t": "Golfsnelheid",
-      "d": "v = f·λ, de snelheid van de golf (m/s)"
-     },
-     {
-      "t": "Interferentie",
-      "d": "versterking of verzwakking van overlappende golven"
+      "t": "Diffractie",
+      "d": "het uitwaaieren van golven na een smalle opening"
      },
      {
       "t": "Resonantie",
-      "d": "sterke versterking bij de eigenfrequentie"
+      "d": "het meetrillen als de aandrijffrequentie gelijk is aan de eigenfrequentie"
      },
      {
-      "t": "Doppler-effect",
-      "d": "frequentieverandering door beweging van bron of waarnemer"
+      "t": "Eigenfrequentie",
+      "d": "de frequentie waarmee een systeem uit zichzelf trilt"
      },
      {
-      "t": "Breking",
-      "d": "richtingverandering van een golf bij een grensvlak"
-     },
-     {
-      "t": "Evenwichtsstand",
-      "d": "de rustpositie van het systeem"
-     },
-     {
-      "t": "Uitwijking (u)",
-      "d": "de afstand tot de evenwichtsstand"
-     },
-     {
-      "t": "Trillingstijd / periode (T)",
-      "d": "de tijd van één volledige trilling"
-     },
-     {
-      "t": "Frequentie (f)",
-      "d": "aantal trillingen per seconde (Hz)"
-     },
-     {
-      "t": "Grondtoon",
-      "d": "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte."
-     },
-     {
-      "t": "Boventonen",
-      "d": "meer knopen en buiken en een kleinere golflengte (hogere frequentie)."
+      "t": "Staande golf",
+      "d": "een golf met vaste knopen en buiken door superpositie"
      }
     ]
    },
@@ -36482,1600 +35821,634 @@ var VAKKEN = [
      "Kinetische en potentiele energie",
      "Wet van behoud van energie"
     ],
-    "sam": "<div class=\"sam-head\">Domein C - Beweging en wisselwerking</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Beweging beschrijf je met snelheid en versnelling.</li><li>Krachten veroorzaken veranderingen in beweging.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Snelheid: <span class=\"fm\">v = s / t</span></li><li>Versnelling: <span class=\"fm\">a = Δv / Δt</span></li><li>Newton 2: <span class=\"fm\">F = m·a</span></li><li>Actie-reactie: krachten komen altijd in paren.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Snelheid (v)</strong>: afgelegde weg per tijdseenheid; v = s/t, eenheid m/s</li><li><strong>Versnelling (a)</strong>: snelheidsverandering per tijdseenheid; a = Δv/Δt, eenheid m/s²</li><li><strong>Resulterende kracht</strong>: vectorsom van alle krachten op een object</li><li><strong>Newton 1</strong>: een object beweegt eenparig als de resulterende kracht nul is</li><li><strong>Newton 2</strong>: F = m·a - versnelling evenredig met kracht, omgekeerd evenredig met massa</li><li><strong>Newton 3</strong>: actie en reactie zijn even groot en tegengesteld gericht</li><li><strong>Traagheid</strong>: neiging van een object om zijn bewegingstoestand te behouden</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> Geen resulterende kracht → constante snelheid.</p><p><strong>Toepassen:</strong> m = 5 kg, a = 2 m/s² → F = 10 N.</p><p><strong>Analyseren:</strong> In een v-t grafiek is de helling gelijk aan de versnelling.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Massa verwarren met gewicht.</li><li>Versnelling verwarren met snelheid.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is de resulterende kracht?</li><li>Hoe lees je versnelling af?</li><li>Wat zegt Newton 2?</li></ul></div>",
+    "sam": "<div class=\"sam-intro\">Bewegingen beschrijf je met snelheid, <strong>versnelling</strong> en de wetten van <strong>Newton</strong> (F = m·a). Krachten verrichten <strong>arbeid</strong> (W = F·s) en veranderen de <strong>energie</strong>. In een gesloten systeem gelden <strong>behoud van energie</strong> en <strong>behoud van impuls</strong>. De <strong>zwaartekracht</strong> is Fg = m·g.</div><div class=\"sam-head\">1. Kracht en beweging</div><p>De <strong>eerste wet van Newton</strong>: zonder resulterende kracht blijft de snelheid gelijk. De <strong>tweede wet</strong>: F = m·a. Bij een <strong>actie-reactiepaar</strong> zijn de krachten even groot, tegengesteld en op verschillende objecten. De <strong>versnelling</strong> is a = Δv/Δt (m/s²); de helling van een (x,t)-diagram geeft de snelheid.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Tweede wet van Newton</div><div class=\"sam-formula-eq\">F = m · a</div><div class=\"sam-formula-note\">Nettokracht = massa × versnelling.</div></div><div class=\"sam-head\">2. Energie, arbeid en behoud</div><p><strong>Arbeid</strong> is W = F·s, <strong>vermogen</strong> P = W/t (watt). De <strong>kinetische energie</strong> hangt af van de beweging, de <strong>potentiële energie</strong> van massa, hoogte en g (Ep = m·g·h). Zonder wrijving is Ek + Ep constant (<strong>behoud van mechanische energie</strong>). In een gesloten systeem blijft de totale <strong>impuls</strong> constant. De <strong>zwaartekracht</strong> tussen massa's neemt af met het kwadraat van de afstand.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Tweede wet van Newton</div><div class=\"sam-definitie-body\">de nettokracht is massa maal versnelling: F = m·a.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Actie-reactieprincipe</div><div class=\"sam-definitie-body\">krachten zijn even groot, tegengesteld en op verschillende objecten.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kinetische energie</div><div class=\"sam-definitie-body\">de energie die een voorwerp heeft door zijn beweging.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Potentiële energie</div><div class=\"sam-definitie-body\">de energie door de hoogte: Ep = m·g·h.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Versnelling</div><div class=\"sam-definitie-body\">de verandering van snelheid per tijd: a = Δv/Δt (m/s²).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Arbeid</div><div class=\"sam-definitie-body\">kracht maal verplaatsing in de richting van de kracht: W = F·s.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Vermogen</div><div class=\"sam-definitie-body\">de arbeid per tijdseenheid: P = W/t (watt).</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Zwaartekracht</div><div class=\"sam-definitie-body\">de kracht Fg = m·g die massa's naar de aarde trekt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Impuls</div><div class=\"sam-definitie-body\">het product van massa en snelheid, behouden in een gesloten systeem.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Middelpuntzoekende kracht</div><div class=\"sam-definitie-body\">de kracht die een voorwerp in een cirkelbaan houdt.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Tweede wet van Newton»</b> is F = m·a, terwijl <b>«Actie-reactieprincipe»</b> gelijk, tegengesteld, andere objecten is. <b>«Kinetische energie»</b> is energie door beweging, terwijl <b>«Potentiële energie»</b> energie door hoogte is. <b>«Versnelling»</b> is Δv/Δt, terwijl <b>«Vermogen»</b> W/t, watt is. <b>«Arbeid»</b> is W = F·s, terwijl <b>«Vermogen»</b> W/t, watt is.</div>",
     "sv": [
      {
       "v": "Wat is de formule van de tweede wet van Newton?",
       "o": [
-       "F = m·a (nettokracht = massa × versnelling)",
-       "F = m·v (kracht = massa × snelheid)",
-       "a = F/v (versnelling = kracht gedeeld door snelheid)",
-       "p = m·v (impuls = massa × snelheid)"
+       "F = m·a",
+       "W = F·s",
+       "P = U·I",
+       "v = f·λ"
       ],
       "c": 0,
-      "u": "F = ma in newton = kilogram·meter per seconde². Hoe groter de massa, hoe meer kracht nodig voor dezelfde versnelling."
+      "d": 2,
+      "u": "Nettokracht = massa × versnelling.",
+      "uo": [
+       "Klopt: nettokracht = massa × versnelling.",
+       "Nee, dat is arbeid.",
+       "Nee, dat is elektrisch vermogen.",
+       "Nee, dat is de golfvergelijking."
+      ],
+      "uh": "Tweede wet: F = m·a."
      },
      {
-      "v": "Wat is het kenmerk van een actie-reactiepaar (derde wet van Newton)?",
+      "v": "Wat kenmerkt een actie-reactiepaar (derde wet van Newton)?",
       "o": [
-       "Gelijke grootte, tegengestelde richting, op VERSCHILLENDE objecten",
-       "Gelijke grootte, zelfde richting, op hetzelfde object",
-       "Gelijke grootte, tegengestelde richting, op hetzelfde object",
-       "Ongelijke grootte, tegengestelde richting, op verschillende objecten"
+       "gelijke grootte op hetzelfde object",
+       "gelijke grootte, tegengestelde richting, op verschillende objecten",
+       "verschillende grootte, zelfde richting",
+       "ze heffen elkaar altijd op"
       ],
-      "c": 0,
-      "u": "Actie-reactiepaar: gelijke grootte, tegengestelde richting, maar op VERSCHILLENDE voorwerpen. Beide krachten zijn even groot maar werken op andere objecten."
+      "c": 1,
+      "d": 3,
+      "u": "De krachten werken op verschillende voorwerpen.",
+      "uo": [
+       "Nee, juist op verschillende objecten.",
+       "Klopt: de krachten werken op verschillende voorwerpen.",
+       "Nee, ze zijn even groot en tegengesteld.",
+       "Nee, ze werken op verschillende objecten en heffen elkaar niet op."
+      ],
+      "uh": "Actie-reactie: gelijk, tegengesteld, andere objecten."
      },
      {
       "v": "Wat is kinetische energie?",
       "o": [
+       "de energie in een veer",
+       "de energie door de hoogte",
        "de energie die een voorwerp heeft door zijn beweging",
-       "de energie die een voorwerp heeft door zijn hoogte",
-       "de energie die vrijkomt bij het verbranden van een stof",
-       "de energie die is opgeslagen in chemische bindingen"
+       "de warmte van een stof"
       ],
-      "c": 0,
-      "u": "Ek = ½·m·v². Verdubbel de snelheid: Ek verviervoudigt want het verband is kwadratisch."
+      "c": 2,
+      "d": 2,
+      "u": "Bewegingsenergie is kinetische energie.",
+      "uo": [
+       "Nee, dat is veerenergie.",
+       "Nee, dat is potentiële energie.",
+       "Klopt: bewegingsenergie is kinetische energie.",
+       "Nee, dat is warmte."
+      ],
+      "uh": "Kinetische energie: energie door beweging."
      },
      {
-      "v": "Wat geldt voor de som van kinetische en potentiële energie in een systeem zonder wrijving?",
+      "v": "Wat geldt voor Ek + Ep in een systeem zonder wrijving?",
       "o": [
-       "Ek + Ep = constant (behoud van mechanische energie)",
-       "Ek = Ep (kinetisch altijd gelijk aan potentieel)",
-       "Energie neemt toe bij elke omzetting",
-       "Ek + Ep = 0 in gesloten systeem"
+       "Ek + Ep is altijd nul",
+       "Ek + Ep neemt steeds toe",
+       "Ek + Ep neemt steeds af",
+       "Ek + Ep is constant (behoud van mechanische energie)"
       ],
-      "c": 0,
-      "u": "Bij een vallend voorwerp daalt Ep en stijgt Ek maar de som blijft gelijk. Wrijving zet mechanische energie om in warmte."
+      "c": 3,
+      "d": 3,
+      "u": "Zonder wrijving blijft de som gelijk.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, energie ontstaat niet zomaar.",
+       "Nee, zonder wrijving verdwijnt die niet.",
+       "Klopt: zonder wrijving blijft de som gelijk."
+      ],
+      "uh": "Zonder wrijving: Ek + Ep constant."
      },
      {
-      "v": "Welke grootheid beschrijft de verandering van snelheid per tijdseenheid (eenheid: m/s²)?",
+      "v": "Welke grootheid is de verandering van snelheid per tijd (m/s²)?",
       "o": [
-       "Versnelling (a = Δv/Δt)",
-       "Snelheid (v = Δx/Δt)",
-       "Impuls (p = m·v)",
-       "Kracht (F = m·a)"
+       "de versnelling",
+       "de snelheid",
+       "de impuls",
+       "de arbeid"
       ],
       "c": 0,
-      "u": "v = Δx gedeeld door Δt. a = Δv gedeeld door Δt. Een auto met constante snelheid heeft een grote v maar a = 0."
+      "d": 2,
+      "u": "Het juiste antwoord is: de versnelling.",
+      "uo": [
+       "Klopt: a = Δv/Δt.",
+       "Nee, dat is v zelf.",
+       "Nee, dat is massa × snelheid.",
+       "Nee, dat is F·s."
+      ],
+      "uh": "Versnelling: Δv/Δt."
      },
      {
       "v": "Waarvan hangt de potentiële energie van een voorwerp af?",
       "o": [
-       "Massa, hoogte en valversnelling (Ep = m·g·h)",
-       "Alleen van de massa van het voorwerp",
-       "Massa en snelheid (net als kinetische energie)",
-       "Alleen van de hoogte boven de grond"
+       "alleen de snelheid",
+       "massa, hoogte en valversnelling (Ep = m·g·h)",
+       "alleen de massa",
+       "de kleur van het voorwerp"
       ],
-      "c": 0,
-      "u": "Potentiële energie Ep = m·g·h. Hoe groter de massa of hoogte, hoe meer potentiële energie. Bij een vrije val wordt Ep volledig omgezet in kinetische energie Ek = ½mv² (zonder wrijving)."
+      "c": 1,
+      "d": 3,
+      "u": "Het juiste antwoord is: massa, hoogte en valversnelling (Ep = m·g·h).",
+      "uo": [
+       "Nee, dat is kinetische energie.",
+       "Klopt: Ep = m·g·h.",
+       "Nee, hoogte en g tellen ook mee.",
+       "Nee, kleur is irrelevant."
+      ],
+      "uh": "Ep = m·g·h."
      },
      {
       "v": "Wat zegt de impulsstelling (F·Δt = Δp)?",
       "o": [
+       "energie blijft behouden",
+       "kracht is massa maal versnelling",
        "een kracht gedurende een tijd veroorzaakt een impulsverandering",
-       "de impuls is in elk denkbaar systeem altijd precies constant",
-       "impuls en kinetische energie zijn in feite hetzelfde begrip",
-       "kracht en impuls hebben in het SI-stelsel dezelfde eenheid"
+       "de snelheid is constant"
       ],
-      "c": 0,
-      "u": "Impulsstelling: F·Δt = Δp = m·Δv. Grote kracht gedurende korte tijd geeft dezelfde impulsverandering als kleine kracht over langere tijd. Toepassingen: airbag (verlengt Δt → vermindert F), schieten (korte Δt → grote F)."
-     },
-     {
-      "v": "Welke kracht trekt alle massa's aan en heeft een reikwijdte die zich uitstrekt tot in het heelal?",
-      "o": [
-       "Zwaartekracht (gravitatie)",
-       "Elektrostatische kracht",
-       "Magneetkracht",
-       "Wrijvingskracht"
+      "c": 2,
+      "d": 3,
+      "u": "F·Δt geeft de verandering van de impuls.",
+      "uo": [
+       "Nee, dat is energiebehoud.",
+       "Nee, dat is de tweede wet.",
+       "Klopt: F·Δt geeft de verandering van de impuls.",
+       "Nee, dat is de eerste wet."
       ],
-      "c": 0,
-      "u": "Zwaartekracht: F = G·m₁·m₂/r². Altijd aantrekkend. Werkt over enorme afstanden. Op aarde: Fg = m·g (g ≈ 9,81 m/s²). De zwakste van de vier fundamentele krachten."
-     },
-     {
-      "v": "Wat geldt voor de totale impuls van een gesloten systeem (zonder externe krachten)?",
-      "o": [
-       "de totale impuls blijft constant (behoud van impuls)",
-       "de totale impuls van het systeem neemt voortdurend toe",
-       "de totale impuls neemt af bij elke onderlinge botsing",
-       "de totale impuls van het systeem is altijd gelijk aan nul"
-      ],
-      "c": 0,
-      "u": "Behoud van impuls: bij een gesloten systeem (geen externe krachten) is de totale impuls voor en na een botsing gelijk. Gebruikt bij explosies, raketaandrijving en botsingen."
-     },
-     {
-      "v": "Welke formule geeft de arbeid die door een constante kracht F wordt verricht bij verplaatsing s in de richting van de kracht?",
-      "o": [
-       "W = F·s (kracht maal verplaatsing)",
-       "W = F/s (kracht gedeeld door afstand)",
-       "W = m·g·s (gewicht maal de afstand)",
-       "W = ½·F·s² (halve kracht maal afstand²)"
-      ],
-      "c": 0,
-      "u": "Arbeid W = F·s (in joule). Als de kracht een hoek θ maakt met de verplaatsing: W = F·s·cos(θ). Loodrechte kracht verricht geen arbeid."
+      "uh": "Impulsstelling: F·Δt = Δp."
      },
      {
       "v": "Wat beschrijft de eerste wet van Newton?",
       "o": [
-       "zonder resulterende kracht blijft de snelheid onveranderd",
-       "een object versnelt altijd zodra er een kracht op werkt",
-       "actie en reactie zijn even groot maar tegengesteld gericht",
-       "een groter object heeft altijd meer traagheid dan een klein object"
+       "energie is behouden",
+       "F = m·a",
+       "actie is min reactie",
+       "zonder resulterende kracht blijft de snelheid onveranderd"
       ],
-      "c": 0,
-      "u": "Newton 1 (traagheid): als F_res = 0, verandert de bewegingstoestand niet. Een object in rust blijft in rust; een bewegend object behoudt richting en snelheid. Traagheid is de weerstand tegen verandering van bewegingstoestand."
+      "c": 3,
+      "d": 3,
+      "u": "De traagheidswet.",
+      "uo": [
+       "Nee, dat is energiebehoud.",
+       "Nee, dat is de tweede wet.",
+       "Nee, dat is de derde wet.",
+       "Klopt: de traagheidswet."
+      ],
+      "uh": "Eerste wet: zonder nettokracht blijft v gelijk."
      },
      {
-      "v": "Wat is het verband tussen de grootte van de zwaartekracht en de massa van een voorwerp op aarde?",
+      "v": "Welke formule geeft de arbeid door een constante kracht bij verplaatsing in de richting van de kracht?",
       "o": [
-       "Fg = m·g (massa maal valversnelling)",
-       "Fg = m/g (massa gedeeld door versnelling)",
-       "Fg = g/m (versnelling gedeeld door massa)",
-       "Fg = m + g (massa opgeteld bij versnelling)"
+       "W = F·s",
+       "W = m·a",
+       "W = U·I",
+       "W = ½·m·v²"
       ],
       "c": 0,
-      "u": "De zwaartekracht op aarde: Fg = m·g, met g ≈ 10 m/s². Een massa van 10 kg heeft een gewicht van 100 N. Massa (kg) is een intrinsieke eigenschap; gewicht (N) hangt af van het zwaarteveld."
+      "d": 2,
+      "u": "Arbeid = kracht × verplaatsing.",
+      "uo": [
+       "Klopt: arbeid = kracht × verplaatsing.",
+       "Nee, dat is kracht.",
+       "Nee, dat is elektrisch vermogen.",
+       "Nee, dat is kinetische energie."
+      ],
+      "uh": "Arbeid: W = F·s."
      },
      {
-      "v": "Wat zijn de kenmerken van een vrije val?",
+      "v": "Welke grootheid geeft de arbeid per tijdseenheid (watt)?",
       "o": [
-       "alleen zwaartekracht, beginsnelheid nul, constante versnelling g",
-       "de luchtweerstand is juist de overheersende kracht bij het vallen",
-       "de versnelling wordt steeds kleiner naarmate het object sneller valt",
-       "de snelheid blijft constant gedurende de gehele val omlaag"
+       "de arbeid",
+       "het vermogen (P = W/t)",
+       "de kracht",
+       "de energie"
       ],
-      "c": 0,
-      "u": "Vrije val: alleen zwaartekracht werkt (geen luchtweerstand). Beginsnelheid v₀ = 0. Versnelling constant a = g ≈ 10 m/s². Formules: v = g·t en s = ½g·t². Na elke seconde neemt de snelheid toe met 10 m/s."
-     },
-     {
-      "v": "Welke grootheid beschrijft hoeveel arbeid per tijdseenheid wordt verricht (eenheid: watt)?",
-      "o": [
-       "Vermogen (P = W/t)",
-       "Energie (E = m·c²)",
-       "Impuls (p = m·v)",
-       "Kracht (F = m·a)"
+      "c": 1,
+      "d": 2,
+      "u": "Vermogen is arbeid per tijd.",
+      "uo": [
+       "Nee, dat is arbeid zelf.",
+       "Klopt: vermogen is arbeid per tijd.",
+       "Nee, dat is kracht.",
+       "Nee, dat is energie."
       ],
-      "c": 0,
-      "u": "Vermogen P = W/t = F·v (in watt = joule per seconde). Een motor met vermogen 100 W levert 100 joule arbeid per seconde. Groter vermogen = sneller werk verrichten."
-     },
-     {
-      "v": "Wat geldt voor de snelheid bij een eenparige rechtlijnige beweging?",
-      "o": [
-       "de snelheid is constant",
-       "de snelheid neemt steeds toe",
-       "de versnelling is constant maar niet nul",
-       "de snelheid is nul"
-      ],
-      "c": 0,
-      "u": "Bij een eenparige rechtlijnige beweging is de snelheid constant en de versnelling dus nul."
-     },
-     {
-      "v": "Welke formule geeft de afgelegde afstand bij een eenparige beweging?",
-      "o": [
-       "s = v · t",
-       "s = ½ · a · t²",
-       "s = v / t",
-       "s = a · t"
-      ],
-      "c": 0,
-      "u": "Bij constante snelheid geldt s = v · t. De formule met ½·a·t² hoort bij een eenparig versnelde beweging."
+      "uh": "Vermogen: P = W/t."
      },
      {
       "v": "Wat lees je af aan de helling van een (x,t)-diagram?",
       "o": [
-       "de snelheid",
-       "de versnelling",
        "de afgelegde afstand",
-       "de tijd"
+       "de versnelling",
+       "de snelheid",
+       "de kracht"
       ],
-      "c": 0,
-      "u": "De helling van een plaats-tijddiagram is de snelheid (v = Δx/Δt). De oppervlakte eronder heeft geen directe betekenis."
+      "c": 2,
+      "d": 2,
+      "u": "De helling van plaats-tijd is de snelheid.",
+      "uo": [
+       "Nee, dat is de x-waarde zelf.",
+       "Nee, dat lees je uit een (v,t)-diagram.",
+       "Klopt: de helling van plaats-tijd is de snelheid.",
+       "Nee, dat lees je hier niet af."
+      ],
+      "uh": "Helling (x,t)-diagram: snelheid."
      },
      {
       "v": "Welke formule geeft de afstand bij een eenparig versnelde beweging vanuit stilstand?",
       "o": [
-       "s = ½ · a · t²",
-       "s = v · t",
-       "s = a · t",
-       "s = ½ · v · t²"
+       "s = a·t",
+       "s = v·t",
+       "s = F·t",
+       "s = ½·a·t²"
       ],
-      "c": 0,
-      "u": "Vanuit stilstand geldt s = ½·a·t², af te leiden uit de driehoekige oppervlakte onder het (v,t)-diagram."
-     },
-     {
-      "v": "Wat is de normaalkracht?",
-      "o": [
-       "een steunkracht loodrecht op het oppervlak",
-       "de kracht waarmee de aarde aan een voorwerp trekt",
-       "de wrijvingskracht tegen de beweging in",
-       "de kracht van een ingedrukte veer"
+      "c": 3,
+      "d": 3,
+      "u": "Vanuit stilstand is s = ½·a·t².",
+      "uo": [
+       "Nee, dat is een snelheid.",
+       "Nee, dat geldt bij constante snelheid.",
+       "Nee, dat klopt niet.",
+       "Klopt: vanuit stilstand is s = ½·a·t²."
       ],
-      "c": 0,
-      "u": "De normaalkracht staat loodrecht op het steunoppervlak en compenseert (deels) andere krachten zoals de zwaartekracht."
-     },
-     {
-      "v": "In welke richting werkt de wrijvingskracht?",
-      "o": [
-       "tegen de bewegingsrichting in",
-       "in de bewegingsrichting mee",
-       "altijd loodrecht omhoog",
-       "naar het middelpunt van de baan"
-      ],
-      "c": 0,
-      "u": "Wrijving werkt de beweging tegen en levert daardoor negatieve arbeid."
-     },
-     {
-      "v": "Welke formule geeft de veerkracht?",
-      "o": [
-       "F = C · u",
-       "F = ½ · C · u²",
-       "F = m · g",
-       "F = C / u"
-      ],
-      "c": 0,
-      "u": "De veerkracht is F = C·u, met C de veerconstante (N/m) en u de uitwijking. ½·C·u² is juist de veerenergie."
-     },
-     {
-      "v": "Wanneer is een hefboom in evenwicht?",
-      "o": [
-       "als F1·r1 gelijk is aan F2·r2",
-       "als F1 gelijk is aan F2",
-       "als r1 gelijk is aan r2",
-       "als beide massa's gelijk zijn"
-      ],
-      "c": 0,
-      "u": "Volgens de hefboomwet is een hefboom in evenwicht als de momenten links en rechts gelijk zijn: F1·r1 = F2·r2."
-     },
-     {
-      "v": "Welke formule geeft de energie die in een ingedrukte of uitgerekte veer is opgeslagen?",
-      "o": [
-       "E = ½ · C · u²",
-       "E = C · u",
-       "E = ½ · m · v²",
-       "E = m · g · h"
-      ],
-      "c": 0,
-      "u": "De veerenergie is E = ½·C·u². ½·m·v² is de kinetische energie en m·g·h de zwaarte-energie."
-     },
-     {
-      "v": "Welke formule geeft de warmte die nodig is om een stof op te warmen?",
-      "o": [
-       "Q = c · m · ΔT",
-       "Q = m · ΔT",
-       "Q = c / m",
-       "Q = c · ΔT"
-      ],
-      "c": 0,
-      "u": "De warmte is Q = c·m·ΔT, met c de soortelijke warmte (J·kg⁻¹·K⁻¹), m de massa en ΔT het temperatuurverschil."
-     },
-     {
-      "v": "Welke vorm van warmtetransport verloopt zonder tussenstof?",
-      "o": [
-       "straling",
-       "geleiding",
-       "stroming",
-       "convectie"
-      ],
-      "c": 0,
-      "u": "Straling (zoals zonnestraling) heeft geen medium nodig. Geleiding en stroming hebben wel een stof nodig."
-     },
-     {
-      "v": "Welke kracht houdt een voorwerp in een cirkelbaan?",
-      "o": [
-       "de middelpuntzoekende kracht",
-       "een middelpuntvliedende kracht naar buiten",
-       "alleen de zwaartekracht",
-       "de normaalkracht"
-      ],
-      "c": 0,
-      "u": "De middelpuntzoekende kracht is naar het middelpunt gericht: Fmpz = m·v²/r."
+      "uh": "Vanuit stilstand: s = ½·a·t²."
      },
      {
       "v": "Wat gebeurt er met de gravitatiekracht tussen twee massa's als de afstand verdubbelt?",
       "o": [
        "die wordt vier keer zo klein",
        "die wordt twee keer zo klein",
-       "die wordt twee keer zo groot",
+       "die verdubbelt",
        "die blijft gelijk"
       ],
       "c": 0,
-      "u": "De gravitatiekracht is omgekeerd kwadratisch met de afstand (FG ~ 1/r²). Bij een dubbele afstand wordt de kracht 2² = 4 keer zo klein."
-     },
-     {
-      "v": "Wat betekent «Zwaartekracht»?",
-      "o": [
-       "de aantrekkingskracht van de aarde op massa",
-       "actie en reactie zijn even groot en tegengesteld",
-       "de maximale uitwijking van een trilling",
-       "frequentieverandering door beweging van bron of waarnemer"
+      "d": 3,
+      "u": "De kracht neemt af met het kwadraat van de afstand.",
+      "uo": [
+       "Klopt: de kracht neemt af met het kwadraat van de afstand.",
+       "Nee, het is een kwadratisch verband.",
+       "Nee, hij neemt juist af.",
+       "Nee, hij verandert wel."
       ],
-      "c": 0,
-      "u": "«Zwaartekracht» betekent: de aantrekkingskracht van de aarde op massa.",
-      "d": 1
+      "uh": "Gravitatie: kwadratisch met de afstand."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de aantrekkingskracht van de aarde op massa\"?",
+      "v": "Duw je tegen een muur, dan duwt de muur even hard terug. Welk begrip past hierbij?",
       "o": [
-       "SI-eenheid",
-       "Zwaartekracht",
-       "Elektrische lading",
-       "Dosis"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Zwaartekracht»: de aantrekkingskracht van de aarde op massa.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de aantrekkingskracht van de aarde op massa\"?",
-      "o": [
-       "Zwaartekracht",
-       "Versnelling",
-       "Geleiding",
-       "Gewicht"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Zwaartekracht»: de aantrekkingskracht van de aarde op massa.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Zwaartekracht» in?",
-      "o": [
-       "de aantrekkingskracht van de aarde op massa",
-       "zelfde richting optellen, tegengestelde richting aftrekken.",
-       "F = m·a",
-       "een resulterende kracht geeft een versnelling."
-      ],
-      "c": 0,
-      "u": "«Zwaartekracht» betekent: de aantrekkingskracht van de aarde op massa.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Wrijvingskracht»?",
-      "o": [
-       "in een gespannen touw of kabel.",
-       "het aantal trillingen per seconde (Hz)",
-       "aantal trillingen per seconde (Hz)",
-       "een kracht die beweging tegenwerkt"
-      ],
-      "c": 3,
-      "u": "«Wrijvingskracht» betekent: een kracht die beweging tegenwerkt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een kracht die beweging tegenwerkt\"?",
-      "o": [
-       "Wrijvingskracht",
-       "Stroming",
-       "Elektrisch vermogen",
-       "Afscherming"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Wrijvingskracht»: een kracht die beweging tegenwerkt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een kracht die beweging tegenwerkt\"?",
-      "o": [
-       "Resulterende kracht",
-       "Wrijvingskracht",
-       "Ontbinden",
-       "Vrije val"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Wrijvingskracht»: een kracht die beweging tegenwerkt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Wrijvingskracht» in?",
-      "o": [
-       "de vectorsom van alle krachten op een object",
-       "een kracht die beweging tegenwerkt",
-       "de arbeid per tijd (P = W/t)",
-       "kracht maal verplaatsing (W = F·s)"
-      ],
-      "c": 1,
-      "u": "«Wrijvingskracht» betekent: een kracht die beweging tegenwerkt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Massa»?",
-      "o": [
-       "uitzending van straling door onstabiele kernen",
-       "de hoeveelheid materie in een voorwerp",
-       "zelfde richting optellen, tegengestelde richting aftrekken.",
-       "de omgezette energie per tijd"
-      ],
-      "c": 1,
-      "u": "«Massa» betekent: de hoeveelheid materie in een voorwerp.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de hoeveelheid materie in een voorwerp\"?",
-      "o": [
-       "Röntgenstraling",
-       "Energie",
-       "Massa",
-       "Evenwichtsstand"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Massa»: de hoeveelheid materie in een voorwerp.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de hoeveelheid materie in een voorwerp\"?",
-      "o": [
-       "Derde wet (actie = reactie)",
-       "Massa",
-       "Gewicht",
-       "Tweede wet"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Massa»: de hoeveelheid materie in een voorwerp.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Massa» in?",
-      "o": [
-       "de vectorsom van alle krachten op een object",
-       "de afgelegde weg per tijd (v = s/t)",
-       "een kracht die beweging tegenwerkt",
-       "de hoeveelheid materie in een voorwerp"
-      ],
-      "c": 3,
-      "u": "«Massa» betekent: de hoeveelheid materie in een voorwerp.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Gewicht»?",
-      "o": [
-       "elektronen; matig doordringend",
-       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte.",
-       "aantal trillingen per seconde (Hz)",
-       "de zwaartekracht op een voorwerp"
-      ],
-      "c": 3,
-      "u": "«Gewicht» betekent: de zwaartekracht op een voorwerp.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de zwaartekracht op een voorwerp\"?",
-      "o": [
-       "Gewicht",
-       "Trilling",
-       "Vermogen",
-       "Weerstand"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Gewicht»: de zwaartekracht op een voorwerp.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de zwaartekracht op een voorwerp\"?",
-      "o": [
-       "Spankracht",
-       "Energie",
-       "Willekeurige hoek",
-       "Gewicht"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Gewicht»: de zwaartekracht op een voorwerp.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Gewicht» in?",
-      "o": [
-       "de aantrekkingskracht van de aarde op massa",
-       "de neiging om de bewegingstoestand te behouden",
-       "de zwaartekracht op een voorwerp",
-       "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging."
-      ],
-      "c": 2,
-      "u": "«Gewicht» betekent: de zwaartekracht op een voorwerp.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Snelheid»?",
-      "o": [
-       "de zwaartekracht op een voorwerp",
-       "gebruik de stelling van Pythagoras voor de resultante.",
-       "de afstand tot de evenwichtsstand",
-       "de afgelegde weg per tijd (v = s/t)"
-      ],
-      "c": 3,
-      "u": "«Snelheid» betekent: de afgelegde weg per tijd (v = s/t).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de afgelegde weg per tijd (v = s/t)\"?",
-      "o": [
-       "Snelheid",
-       "Halveringstijd",
-       "Geluidssnelheid",
-       "Tweede wet"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Snelheid»: de afgelegde weg per tijd (v = s/t).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de afgelegde weg per tijd (v = s/t)\"?",
-      "o": [
-       "Eerste wet van Newton",
-       "Energie",
-       "Eerste wet (traagheid)",
-       "Snelheid"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Snelheid»: de afgelegde weg per tijd (v = s/t).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Snelheid» in?",
-      "o": [
-       "de afgelegde weg per tijd (v = s/t)",
-       "de snelheidsverandering per tijd (a = Δv/Δt)",
-       "parallellogrammethode; de diagonaal is de resultante Fres.",
-       "zelfde richting optellen, tegengestelde richting aftrekken."
-      ],
-      "c": 0,
-      "u": "«Snelheid» betekent: de afgelegde weg per tijd (v = s/t).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Versnelling»?",
-      "o": [
-       "heliumkernen; sterk ioniserend, weinig doordringend",
-       "de grafiek is een rechte lijn door de oorsprong",
-       "de snelheidsverandering per tijd (a = Δv/Δt)",
-       "gebied waarin een lading een kracht ondervindt"
-      ],
-      "c": 2,
-      "u": "«Versnelling» betekent: de snelheidsverandering per tijd (a = Δv/Δt).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de snelheidsverandering per tijd (a = Δv/Δt)\"?",
-      "o": [
-       "Kernreactie",
-       "Versnelling",
-       "Golfsnelheid",
-       "Ioniserende straling"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Versnelling»: de snelheidsverandering per tijd (a = Δv/Δt).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de snelheidsverandering per tijd (a = Δv/Δt)\"?",
-      "o": [
-       "Straling",
-       "Stroming",
-       "Vrije val",
-       "Versnelling"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Versnelling»: de snelheidsverandering per tijd (a = Δv/Δt).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Versnelling» in?",
-      "o": [
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht.",
-       "de vectorsom van alle krachten op een object",
-       "parallellogrammethode; de diagonaal is de resultante Fres.",
-       "de snelheidsverandering per tijd (a = Δv/Δt)"
-      ],
-      "c": 3,
-      "u": "«Versnelling» betekent: de snelheidsverandering per tijd (a = Δv/Δt).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Resulterende kracht»?",
-      "o": [
-       "de zwaartekracht op een voorwerp",
-       "de omgezette energie per tijd",
-       "een meetbare eigenschap zoals massa of tijd",
-       "de vectorsom van alle krachten op een object"
-      ],
-      "c": 3,
-      "u": "«Resulterende kracht» betekent: de vectorsom van alle krachten op een object.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de vectorsom van alle krachten op een object\"?",
-      "o": [
-       "Resulterende kracht",
-       "Traagheid",
-       "Boventoon",
-       "Eerste wet van Newton"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Resulterende kracht»: de vectorsom van alle krachten op een object.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de vectorsom van alle krachten op een object\"?",
-      "o": [
-       "Normaalkracht",
        "Arbeid",
-       "Resulterende kracht",
-       "Eerste wet (traagheid)"
+       "Actie-reactieprincipe",
+       "Middelpuntzoekende kracht",
+       "Zwaartekracht"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Duw je tegen een muur, dan duwt de muur even hard terug. Dat past bij Actie-reactieprincipe: gelijk, tegengesteld, andere objecten.",
+      "uo": [
+       "Nee, dat hoort bij Arbeid: W = F·s.",
+       "Klopt: gelijk, tegengesteld, andere objecten.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Nee, dat hoort bij Zwaartekracht: Fg = m·g."
+      ],
+      "uh": "Actie-reactieprincipe: gelijk, tegengesteld, andere objecten."
+     },
+     {
+      "v": "De aarde trekt alle massa naar beneden, Fz is m keer g. Om welk begrip gaat het?",
+      "o": [
+       "Versnelling",
+       "Kinetische energie",
+       "Zwaartekracht",
+       "Potentiële energie"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Resulterende kracht»: de vectorsom van alle krachten op een object.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Resulterende kracht» in?",
-      "o": [
-       "F = m·a",
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht.",
-       "de vectorsom van alle krachten op een object",
-       "zelfde richting optellen, tegengestelde richting aftrekken."
+      "d": 1,
+      "u": "De aarde trekt alle massa naar beneden, Fz is m keer g. Dat past bij Zwaartekracht: Fg = m·g.",
+      "uo": [
+       "Nee, dat hoort bij Versnelling: Δv/Δt.",
+       "Nee, dat hoort bij Kinetische energie: energie door beweging.",
+       "Klopt: Fg = m·g.",
+       "Nee, dat hoort bij Potentiële energie: energie door hoogte."
       ],
-      "c": 2,
-      "u": "«Resulterende kracht» betekent: de vectorsom van alle krachten op een object.",
-      "d": 3
+      "uh": "Zwaartekracht: Fg = m·g."
      },
      {
-      "v": "Wat betekent «Eerste wet van Newton»?",
+      "v": "De kracht Fg = m keer g. Welk begrip herken je hier?",
       "o": [
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "een verbinding met vrijwel geen weerstand",
-       "zonder resulterende kracht blijft de snelheid gelijk",
-       "heliumkernen; sterk ioniserend, weinig doordringend"
+       "Potentiële energie",
+       "Kinetische energie",
+       "Versnelling",
+       "Zwaartekracht"
       ],
-      "c": 2,
-      "u": "«Eerste wet van Newton» betekent: zonder resulterende kracht blijft de snelheid gelijk.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zonder resulterende kracht blijft de snelheid gelijk\"?",
-      "o": [
-       "Eerste wet van Newton",
-       "Op één lijn",
-       "Röntgenstraling",
-       "Gamma (γ)"
+      "c": 3,
+      "d": 1,
+      "u": "De kracht Fg = m keer g. Dat past bij Zwaartekracht: Fg = m·g.",
+      "uo": [
+       "Nee, dat hoort bij Potentiële energie: energie door hoogte.",
+       "Nee, dat hoort bij Kinetische energie: energie door beweging.",
+       "Nee, dat hoort bij Versnelling: Δv/Δt.",
+       "Klopt: Fg = m·g."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Eerste wet van Newton»: zonder resulterende kracht blijft de snelheid gelijk.",
-      "d": 2
+      "uh": "Zwaartekracht: Fg = m·g."
      },
      {
-      "v": "Welke term past bij: \"zonder resulterende kracht blijft de snelheid gelijk\"?",
+      "v": "Massa maal snelheid. Wat is hier aan de hand?",
       "o": [
-       "Tweede wet van Newton",
-       "Ontbinden",
-       "Eerste wet van Newton",
-       "Massa"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Eerste wet van Newton»: zonder resulterende kracht blijft de snelheid gelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Eerste wet van Newton» in?",
-      "o": [
-       "in een gespannen touw of kabel.",
-       "gebruik de stelling van Pythagoras voor de resultante.",
-       "zonder resulterende kracht blijft de snelheid gelijk",
-       "het vermogen om arbeid te verrichten (joule)"
-      ],
-      "c": 2,
-      "u": "«Eerste wet van Newton» betekent: zonder resulterende kracht blijft de snelheid gelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Tweede wet van Newton»?",
-      "o": [
-       "weerstand daalt bij meer licht",
-       "frequentieverandering door beweging van bron of waarnemer",
-       "F = m·a",
-       "de altijd aanwezige straling om ons heen"
-      ],
-      "c": 2,
-      "u": "«Tweede wet van Newton» betekent: F = m·a.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"F = m·a\"?",
-      "o": [
-       "Interferentie",
-       "Elektrisch veld",
-       "Significante cijfers",
+       "Impuls",
+       "Zwaartekracht",
+       "Middelpuntzoekende kracht",
        "Tweede wet van Newton"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Tweede wet van Newton»: F = m·a.",
-      "d": 2
+      "c": 0,
+      "d": 1,
+      "u": "Massa maal snelheid. Dat past bij Impuls: massa × snelheid.",
+      "uo": [
+       "Klopt: massa × snelheid.",
+       "Nee, dat hoort bij Zwaartekracht: Fg = m·g.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Nee, dat hoort bij Tweede wet van Newton: F = m·a."
+      ],
+      "uh": "Impuls: massa × snelheid."
      },
      {
-      "v": "Welke term past bij: \"F = m·a\"?",
+      "v": "Het product van massa en snelheid, behouden in een botsing. Welk begrip past hierbij?",
       "o": [
-       "Normaalkracht",
-       "Wrijvingskracht",
+       "Zwaartekracht",
+       "Impuls",
+       "Middelpuntzoekende kracht",
+       "Tweede wet van Newton"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het product van massa en snelheid, behouden in een botsing. Dat past bij Impuls: massa × snelheid.",
+      "uo": [
+       "Nee, dat hoort bij Zwaartekracht: Fg = m·g.",
+       "Klopt: massa × snelheid.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Nee, dat hoort bij Tweede wet van Newton: F = m·a."
+      ],
+      "uh": "Impuls: massa × snelheid."
+     },
+     {
+      "v": "De arbeid per tijdseenheid. Om welk begrip gaat het?",
+      "o": [
+       "Potentiële energie",
        "Tweede wet van Newton",
-       "Massa"
+       "Vermogen",
+       "Impuls"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Tweede wet van Newton»: F = m·a.",
-      "d": 3
+      "d": 1,
+      "u": "De arbeid per tijdseenheid. Dat past bij Vermogen: W/t, watt.",
+      "uo": [
+       "Nee, dat hoort bij Potentiële energie: energie door hoogte.",
+       "Nee, dat hoort bij Tweede wet van Newton: F = m·a.",
+       "Klopt: W/t, watt.",
+       "Nee, dat hoort bij Impuls: massa × snelheid."
+      ],
+      "uh": "Vermogen: W/t, watt."
      },
      {
-      "v": "Wat houdt «Tweede wet van Newton» in?",
+      "v": "Kracht maal verplaatsing, W = F keer s. Welk begrip herken je hier?",
       "o": [
-       "F = m·a",
-       "zonder resulterende kracht blijft de snelheid gelijk",
-       "de zwaartekracht op een voorwerp",
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht."
+       "Tweede wet van Newton",
+       "Impuls",
+       "Middelpuntzoekende kracht",
+       "Arbeid"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Kracht maal verplaatsing, W = F keer s. Dat past bij Arbeid: W = F·s.",
+      "uo": [
+       "Nee, dat hoort bij Tweede wet van Newton: F = m·a.",
+       "Nee, dat hoort bij Impuls: massa × snelheid.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Klopt: W = F·s."
+      ],
+      "uh": "Arbeid: W = F·s."
+     },
+     {
+      "v": "Je verricht arbeid door een kracht over een afstand uit te oefenen. Wat is hier aan de hand?",
+      "o": [
+       "Arbeid",
+       "Vermogen",
+       "Potentiële energie",
+       "Middelpuntzoekende kracht"
       ],
       "c": 0,
-      "u": "«Tweede wet van Newton» betekent: F = m·a.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Derde wet van Newton»?",
-      "o": [
-       "de geabsorbeerde energie per kilogram (gray)",
-       "gebied waarin een lading een kracht ondervindt",
-       "actie en reactie zijn even groot en tegengesteld",
-       "warmtestraling / warmtecamera"
+      "d": 2,
+      "u": "Je verricht arbeid door een kracht over een afstand uit te oefenen. Dat past bij Arbeid: W = F·s.",
+      "uo": [
+       "Klopt: W = F·s.",
+       "Nee, dat hoort bij Vermogen: W/t, watt.",
+       "Nee, dat hoort bij Potentiële energie: energie door hoogte.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan."
       ],
-      "c": 2,
-      "u": "«Derde wet van Newton» betekent: actie en reactie zijn even groot en tegengesteld.",
-      "d": 1
+      "uh": "Arbeid: W = F·s."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"actie en reactie zijn even groot en tegengesteld\"?",
+      "v": "De energie door de hoogte, m keer g keer h. Welk begrip past hierbij?",
       "o": [
-       "IJken",
-       "Derde wet van Newton",
-       "Achtergrondstraling",
-       "Doppler-effect"
+       "Middelpuntzoekende kracht",
+       "Potentiële energie",
+       "Tweede wet van Newton",
+       "Zwaartekracht"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Derde wet van Newton»: actie en reactie zijn even groot en tegengesteld.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"actie en reactie zijn even groot en tegengesteld\"?",
-      "o": [
-       "Energie",
-       "Zwaartekracht",
-       "Ontbinden",
-       "Derde wet van Newton"
+      "d": 1,
+      "u": "De energie door de hoogte, m keer g keer h. Dat past bij Potentiële energie: energie door hoogte.",
+      "uo": [
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Klopt: energie door hoogte.",
+       "Nee, dat hoort bij Tweede wet van Newton: F = m·a.",
+       "Nee, dat hoort bij Zwaartekracht: Fg = m·g."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Derde wet van Newton»: actie en reactie zijn even groot en tegengesteld.",
-      "d": 3
+      "uh": "Potentiële energie: energie door hoogte."
      },
      {
-      "v": "Wat houdt «Derde wet van Newton» in?",
-      "o": [
-       "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A.",
-       "actie en reactie zijn even groot en tegengesteld",
-       "de vectorsom van alle krachten op een object",
-       "het vermogen om arbeid te verrichten (joule)"
-      ],
-      "c": 1,
-      "u": "«Derde wet van Newton» betekent: actie en reactie zijn even groot en tegengesteld.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Traagheid»?",
-      "o": [
-       "sterke versterking bij de eigenfrequentie",
-       "de neiging om de bewegingstoestand te behouden",
-       "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging.",
-       "weerstand daalt bij meer licht"
-      ],
-      "c": 1,
-      "u": "«Traagheid» betekent: de neiging om de bewegingstoestand te behouden.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de neiging om de bewegingstoestand te behouden\"?",
-      "o": [
-       "Radiogolven",
-       "Traagheid",
-       "Stroomsterkte",
-       "Ioniserende straling"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Traagheid»: de neiging om de bewegingstoestand te behouden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de neiging om de bewegingstoestand te behouden\"?",
+      "v": "Een steen hoog op een berg heeft energie door zijn hoogte. Om welk begrip gaat het?",
       "o": [
        "Versnelling",
-       "Traagheid",
-       "Zwaartekracht",
-       "Straling"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Traagheid»: de neiging om de bewegingstoestand te behouden.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Traagheid» in?",
-      "o": [
-       "zonder resulterende kracht blijft de snelheid gelijk",
-       "F = m·a",
-       "de neiging om de bewegingstoestand te behouden",
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht."
+       "Kinetische energie",
+       "Potentiële energie",
+       "Tweede wet van Newton"
       ],
       "c": 2,
-      "u": "«Traagheid» betekent: de neiging om de bewegingstoestand te behouden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Arbeid»?",
-      "o": [
-       "een resulterende kracht geeft een versnelling.",
-       "kracht maal verplaatsing (W = F·s)",
-       "de arbeid per tijd (P = W/t)",
-       "de opeenvolging van kernvervallen"
+      "d": 2,
+      "u": "Een steen hoog op een berg heeft energie door zijn hoogte. Dat past bij Potentiële energie: energie door hoogte.",
+      "uo": [
+       "Nee, dat hoort bij Versnelling: Δv/Δt.",
+       "Nee, dat hoort bij Kinetische energie: energie door beweging.",
+       "Klopt: energie door hoogte.",
+       "Nee, dat hoort bij Tweede wet van Newton: F = m·a."
       ],
-      "c": 1,
-      "u": "«Arbeid» betekent: kracht maal verplaatsing (W = F·s).",
-      "d": 1
+      "uh": "Potentiële energie: energie door hoogte."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"kracht maal verplaatsing (W = F·s)\"?",
+      "v": "De energie die een voorwerp heeft door beweging. Welk begrip herken je hier?",
       "o": [
-       "Bètaverval",
-       "Afscherming",
        "Arbeid",
-       "Bèta (β)"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Arbeid»: kracht maal verplaatsing (W = F·s).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"kracht maal verplaatsing (W = F·s)\"?",
-      "o": [
-       "Energie",
-       "Loodrecht",
-       "Arbeid",
-       "Straling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Arbeid»: kracht maal verplaatsing (W = F·s).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Arbeid» in?",
-      "o": [
-       "warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug.",
-       "de zwaartekracht op een voorwerp",
-       "kracht maal verplaatsing (W = F·s)",
-       "steunkracht loodrecht op een oppervlak."
-      ],
-      "c": 2,
-      "u": "«Arbeid» betekent: kracht maal verplaatsing (W = F·s).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Energie»?",
-      "o": [
-       "de vectorsom van alle krachten op een object",
-       "richtingverandering van een golf bij een grensvlak",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "het vermogen om arbeid te verrichten (joule)"
+       "Potentiële energie",
+       "Middelpuntzoekende kracht",
+       "Kinetische energie"
       ],
       "c": 3,
-      "u": "«Energie» betekent: het vermogen om arbeid te verrichten (joule).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het vermogen om arbeid te verrichten (joule)\"?",
-      "o": [
-       "Energie",
-       "Straling",
-       "Arbeid",
-       "Vermenigvuldigen / delen"
+      "d": 3,
+      "u": "De energie die een voorwerp heeft door beweging. Dat past bij Kinetische energie: energie door beweging.",
+      "uo": [
+       "Nee, dat hoort bij Arbeid: W = F·s.",
+       "Nee, dat hoort bij Potentiële energie: energie door hoogte.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Klopt: energie door beweging."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Energie»: het vermogen om arbeid te verrichten (joule).",
-      "d": 2
+      "uh": "Kinetische energie: energie door beweging."
      },
      {
-      "v": "Welke term past bij: \"het vermogen om arbeid te verrichten (joule)\"?",
+      "v": "De kracht naar het middelpunt van een cirkelbaan. Wat is hier aan de hand?",
       "o": [
-       "Energie",
-       "Geleiding",
-       "Op één lijn",
-       "Spankracht"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Energie»: het vermogen om arbeid te verrichten (joule).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Energie» in?",
-      "o": [
-       "warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug.",
-       "de zwaartekracht op een voorwerp",
-       "het vermogen om arbeid te verrichten (joule)",
-       "steunkracht loodrecht op een oppervlak."
-      ],
-      "c": 2,
-      "u": "«Energie» betekent: het vermogen om arbeid te verrichten (joule).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vermogen»?",
-      "o": [
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit",
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.",
-       "de arbeid per tijd (P = W/t)",
-       "F = m·a"
-      ],
-      "c": 2,
-      "u": "«Vermogen» betekent: de arbeid per tijd (P = W/t).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de arbeid per tijd (P = W/t)\"?",
-      "o": [
-       "Achtergrondstraling",
-       "PTC",
+       "Middelpuntzoekende kracht",
+       "Impuls",
        "Vermogen",
-       "Ioniserende straling"
+       "Versnelling"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Vermogen»: de arbeid per tijd (P = W/t).",
-      "d": 2
+      "c": 0,
+      "d": 1,
+      "u": "De kracht naar het middelpunt van een cirkelbaan. Dat past bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+      "uo": [
+       "Klopt: houdt in cirkelbaan.",
+       "Nee, dat hoort bij Impuls: massa × snelheid.",
+       "Nee, dat hoort bij Vermogen: W/t, watt.",
+       "Nee, dat hoort bij Versnelling: Δv/Δt."
+      ],
+      "uh": "Middelpuntzoekende kracht: houdt in cirkelbaan."
      },
      {
-      "v": "Welke term past bij: \"de arbeid per tijd (P = W/t)\"?",
+      "v": "De wet F = m keer a. Welk begrip past hierbij?",
       "o": [
-       "Derde wet (actie = reactie)",
-       "Loodrecht",
-       "Snelheid",
+       "Actie-reactieprincipe",
+       "Tweede wet van Newton",
+       "Middelpuntzoekende kracht",
+       "Impuls"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De wet F = m keer a. Dat past bij Tweede wet van Newton: F = m·a.",
+      "uo": [
+       "Nee, dat hoort bij Actie-reactieprincipe: gelijk, tegengesteld, andere objecten.",
+       "Klopt: F = m·a.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Nee, dat hoort bij Impuls: massa × snelheid."
+      ],
+      "uh": "Tweede wet van Newton: F = m·a."
+     },
+     {
+      "v": "Hoeveel arbeid per seconde wordt geleverd, in watt. Om welk begrip gaat het?",
+      "o": [
+       "Potentiële energie",
+       "Arbeid",
+       "Vermogen",
+       "Middelpuntzoekende kracht"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Hoeveel arbeid per seconde wordt geleverd, in watt. Dat past bij Vermogen: W/t, watt.",
+      "uo": [
+       "Nee, dat hoort bij Potentiële energie: energie door hoogte.",
+       "Nee, dat hoort bij Arbeid: W = F·s.",
+       "Klopt: W/t, watt.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan."
+      ],
+      "uh": "Vermogen: W/t, watt."
+     },
+     {
+      "v": "Krachten even groot en tegengesteld op twee objecten. Welk begrip herken je hier?",
+      "o": [
+       "Zwaartekracht",
+       "Arbeid",
+       "Middelpuntzoekende kracht",
+       "Actie-reactieprincipe"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "Krachten even groot en tegengesteld op twee objecten. Dat past bij Actie-reactieprincipe: gelijk, tegengesteld, andere objecten.",
+      "uo": [
+       "Nee, dat hoort bij Zwaartekracht: Fg = m·g.",
+       "Nee, dat hoort bij Arbeid: W = F·s.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Klopt: gelijk, tegengesteld, andere objecten."
+      ],
+      "uh": "Actie-reactieprincipe: gelijk, tegengesteld, andere objecten."
+     },
+     {
+      "v": "De verandering van snelheid per tijd. Wat is hier aan de hand?",
+      "o": [
+       "Versnelling",
+       "Vermogen",
+       "Middelpuntzoekende kracht",
+       "Arbeid"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De verandering van snelheid per tijd. Dat past bij Versnelling: Δv/Δt.",
+      "uo": [
+       "Klopt: Δv/Δt.",
+       "Nee, dat hoort bij Vermogen: W/t, watt.",
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Nee, dat hoort bij Arbeid: W = F·s."
+      ],
+      "uh": "Versnelling: Δv/Δt."
+     },
+     {
+      "v": "De nettokracht is de massa maal de versnelling, F is m maal a. Welk begrip past hierbij?",
+      "o": [
+       "Actie-reactieprincipe",
+       "Tweede wet van Newton",
+       "Kinetische energie",
        "Vermogen"
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Vermogen»: de arbeid per tijd (P = W/t).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vermogen» in?",
-      "o": [
-       "het vermogen om arbeid te verrichten (joule)",
-       "parallellogrammethode; de diagonaal is de resultante Fres.",
-       "eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g.",
-       "de arbeid per tijd (P = W/t)"
+      "c": 1,
+      "d": 3,
+      "u": "De nettokracht is de massa maal de versnelling, F is m maal a. Dat past bij Tweede wet van Newton: F = m·a.",
+      "uo": [
+       "Nee, dat hoort bij Actie-reactieprincipe: gelijk, tegengesteld, andere objecten.",
+       "Klopt: F = m·a.",
+       "Nee, dat hoort bij Kinetische energie: energie door beweging.",
+       "Nee, dat hoort bij Vermogen: W/t, watt."
       ],
-      "c": 3,
-      "u": "«Vermogen» betekent: de arbeid per tijd (P = W/t).",
-      "d": 3
+      "uh": "Tweede wet van Newton: F = m·a."
      },
      {
-      "v": "Wat betekent «Normaalkracht»?",
+      "v": "De snelheid neemt met een bepaalde waarde per seconde toe. Om welk begrip gaat het?",
       "o": [
-       "foton (EM-straling)groot (zwak ioniserend)",
-       "de energie per lading (volt)",
-       "steunkracht loodrecht op een oppervlak.",
-       "materiaal dat straling tegenhoudt"
-      ],
-      "c": 2,
-      "u": "«Normaalkracht» betekent: steunkracht loodrecht op een oppervlak..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"steunkracht loodrecht op een oppervlak.\"?",
-      "o": [
-       "Normaalkracht",
-       "Halveringstijd",
-       "Gamma (γ)",
-       "Geluidssnelheid"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Normaalkracht»: steunkracht loodrecht op een oppervlak..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"steunkracht loodrecht op een oppervlak.\"?",
-      "o": [
-       "Vrije val",
+       "Middelpuntzoekende kracht",
        "Tweede wet van Newton",
-       "Geleiding",
-       "Normaalkracht"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Normaalkracht»: steunkracht loodrecht op een oppervlak..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Normaalkracht» in?",
-      "o": [
-       "steunkracht loodrecht op een oppervlak.",
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.",
-       "een kracht die beweging tegenwerkt",
-       "eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g."
-      ],
-      "c": 0,
-      "u": "«Normaalkracht» betekent: steunkracht loodrecht op een oppervlak..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Spankracht»?",
-      "o": [
-       "in een gespannen touw of kabel.",
-       "uitzending van straling door onstabiele kernen",
-       "versterking of verzwakking van overlappende golven",
-       "y = a/x; het product blijft constant"
-      ],
-      "c": 0,
-      "u": "«Spankracht» betekent: in een gespannen touw of kabel..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"in een gespannen touw of kabel.\"?",
-      "o": [
-       "Radiogolven",
-       "PTC",
-       "Spankracht",
-       "Röntgenstraling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Spankracht»: in een gespannen touw of kabel..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"in een gespannen touw of kabel.\"?",
-      "o": [
-       "Willekeurige hoek",
-       "Spankracht",
-       "Vermogen",
-       "Traagheid"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Spankracht»: in een gespannen touw of kabel..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Spankracht» in?",
-      "o": [
-       "in een gespannen touw of kabel.",
-       "F = m·a",
-       "warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.",
-       "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging."
-      ],
-      "c": 0,
-      "u": "«Spankracht» betekent: in een gespannen touw of kabel..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Vrije val»?",
-      "o": [
-       "een trilling met een veelvoud van de grondfrequentie",
-       "een internationale standaardeenheid",
-       "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging.",
-       "eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g."
-      ],
-      "c": 3,
-      "u": "«Vrije val» betekent: eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g.\"?",
-      "o": [
-       "Geluidssnelheid",
-       "Vrije val",
-       "Derde wet van Newton",
-       "Golflengte"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Vrije val»: eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g.\"?",
-      "o": [
-       "Vrije val",
-       "Normaalkracht",
-       "Arbeid",
-       "Energie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vrije val»: eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vrije val» in?",
-      "o": [
-       "kracht maal verplaatsing (W = F·s)",
-       "eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g.",
-       "de snelheidsverandering per tijd (a = Δv/Δt)",
-       "de zwaartekracht op een voorwerp"
-      ],
-      "c": 1,
-      "u": "«Vrije val» betekent: eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Op één lijn»?",
-      "o": [
-       "U = I·R",
-       "de zwaartekracht op een voorwerp",
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.",
-       "zelfde richting optellen, tegengestelde richting aftrekken."
-      ],
-      "c": 3,
-      "u": "«Op één lijn» betekent: zelfde richting optellen, tegengestelde richting aftrekken..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zelfde richting optellen, tegengestelde richting aftrekken.\"?",
-      "o": [
-       "Isotoop",
-       "Op één lijn",
-       "Derde wet van Newton",
-       "Eerste wet (traagheid)"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Op één lijn»: zelfde richting optellen, tegengestelde richting aftrekken..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"zelfde richting optellen, tegengestelde richting aftrekken.\"?",
-      "o": [
-       "Ontbinden",
-       "Spankracht",
-       "Op één lijn",
+       "Versnelling",
        "Arbeid"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Op één lijn»: zelfde richting optellen, tegengestelde richting aftrekken..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Op één lijn» in?",
-      "o": [
-       "de neiging om de bewegingstoestand te behouden",
-       "de arbeid per tijd (P = W/t)",
-       "zelfde richting optellen, tegengestelde richting aftrekken.",
-       "warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit."
+      "d": 1,
+      "u": "De snelheid neemt met een bepaalde waarde per seconde toe. Dat past bij Versnelling: Δv/Δt.",
+      "uo": [
+       "Nee, dat hoort bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+       "Nee, dat hoort bij Tweede wet van Newton: F = m·a.",
+       "Klopt: Δv/Δt.",
+       "Nee, dat hoort bij Arbeid: W = F·s."
       ],
-      "c": 2,
-      "u": "«Op één lijn» betekent: zelfde richting optellen, tegengestelde richting aftrekken..",
-      "d": 3
+      "uh": "Versnelling: Δv/Δt."
      },
      {
-      "v": "Wat betekent «Loodrecht»?",
+      "v": "Een rijdende auto heeft energie door zijn beweging. Welk begrip herken je hier?",
       "o": [
-       "gebruik de stelling van Pythagoras voor de resultante.",
-       "de geabsorbeerde energie per kilogram",
-       "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A.",
-       "gebied waarin een lading een kracht ondervindt"
-      ],
-      "c": 0,
-      "u": "«Loodrecht» betekent: gebruik de stelling van Pythagoras voor de resultante..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gebruik de stelling van Pythagoras voor de resultante.\"?",
-      "o": [
-       "Eerste wet (traagheid)",
-       "Loodrecht",
-       "Ohmse weerstand",
-       "Evenwichtsstand"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Loodrecht»: gebruik de stelling van Pythagoras voor de resultante..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gebruik de stelling van Pythagoras voor de resultante.\"?",
-      "o": [
-       "Gewicht",
-       "Loodrecht",
-       "Resulterende kracht",
-       "Geleiding"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Loodrecht»: gebruik de stelling van Pythagoras voor de resultante..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Loodrecht» in?",
-      "o": [
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht.",
-       "actie en reactie zijn even groot en tegengesteld",
-       "de neiging om de bewegingstoestand te behouden",
-       "gebruik de stelling van Pythagoras voor de resultante."
-      ],
-      "c": 3,
-      "u": "«Loodrecht» betekent: gebruik de stelling van Pythagoras voor de resultante..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Willekeurige hoek»?",
-      "o": [
-       "heliumkern (2 p + 2 n)gering (sterk ioniserend)",
-       "evenveel decimalen als de waarde met de minste decimalen",
-       "parallellogrammethode; de diagonaal is de resultante Fres.",
-       "het aantal trillingen per seconde (Hz)"
-      ],
-      "c": 2,
-      "u": "«Willekeurige hoek» betekent: parallellogrammethode; de diagonaal is de resultante Fres..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"parallellogrammethode; de diagonaal is de resultante Fres.\"?",
-      "o": [
-       "Radiogolven",
-       "Röntgenstraling",
-       "Ohmse weerstand",
-       "Willekeurige hoek"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Willekeurige hoek»: parallellogrammethode; de diagonaal is de resultante Fres..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"parallellogrammethode; de diagonaal is de resultante Fres.\"?",
-      "o": [
-       "Vrije val",
-       "Willekeurige hoek",
-       "Resulterende kracht",
-       "Op één lijn"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Willekeurige hoek»: parallellogrammethode; de diagonaal is de resultante Fres..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Willekeurige hoek» in?",
-      "o": [
-       "kracht maal verplaatsing (W = F·s)",
-       "de snelheidsverandering per tijd (a = Δv/Δt)",
-       "de zwaartekracht op een voorwerp",
-       "parallellogrammethode; de diagonaal is de resultante Fres."
-      ],
-      "c": 3,
-      "u": "«Willekeurige hoek» betekent: parallellogrammethode; de diagonaal is de resultante Fres..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ontbinden»?",
-      "o": [
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.",
-       "gebied waarin een lading een kracht ondervindt",
-       "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "atoomsoort met gelijk aantal protonen, ander aantal neutronen"
-      ],
-      "c": 0,
-      "u": "«Ontbinden» betekent: omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.\"?",
-      "o": [
-       "Ontbinden",
-       "Grondtoon",
-       "Derde wet (actie = reactie)",
-       "Op één lijn"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ontbinden»: omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.\"?",
-      "o": [
-       "Ontbinden",
-       "Loodrecht",
-       "Massa",
-       "Vermogen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ontbinden»: omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ontbinden» in?",
-      "o": [
-       "het vermogen om arbeid te verrichten (joule)",
-       "parallellogrammethode; de diagonaal is de resultante Fres.",
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.",
-       "de vectorsom van alle krachten op een object"
-      ],
-      "c": 2,
-      "u": "«Ontbinden» betekent: omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Eerste wet (traagheid)»?",
-      "o": [
-       "U = I·R",
-       "de marge waarbinnen de echte waarde ligt",
-       "de zwaartekracht op een voorwerp",
-       "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging."
-      ],
-      "c": 3,
-      "u": "«Eerste wet (traagheid)» betekent: zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging.\"?",
-      "o": [
-       "Vervalreeks",
-       "Eerste wet (traagheid)",
-       "Zekering",
-       "Boventoon"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Eerste wet (traagheid)»: zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging.\"?",
-      "o": [
-       "Spankracht",
-       "Normaalkracht",
-       "Eerste wet (traagheid)",
-       "Loodrecht"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Eerste wet (traagheid)»: zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Eerste wet (traagheid)» in?",
-      "o": [
-       "het vermogen om arbeid te verrichten (joule)",
-       "een kracht die beweging tegenwerkt",
-       "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging.",
-       "de aantrekkingskracht van de aarde op massa"
-      ],
-      "c": 2,
-      "u": "«Eerste wet (traagheid)» betekent: zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Tweede wet»?",
-      "o": [
-       "zonder resulterende kracht blijft de snelheid gelijk",
-       "een resulterende kracht geeft een versnelling.",
-       "evenveel significante cijfers als de minst nauwkeurige waarde",
-       "weerstand daalt bij meer licht"
-      ],
-      "c": 1,
-      "u": "«Tweede wet» betekent: een resulterende kracht geeft een versnelling..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een resulterende kracht geeft een versnelling.\"?",
-      "o": [
-       "Straling",
-       "Tweede wet",
-       "Niet-ohmse weerstand",
-       "Geleiding"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Tweede wet»: een resulterende kracht geeft een versnelling..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een resulterende kracht geeft een versnelling.\"?",
-      "o": [
-       "Willekeurige hoek",
-       "Massa",
-       "Tweede wet",
-       "Arbeid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Tweede wet»: een resulterende kracht geeft een versnelling..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Tweede wet» in?",
-      "o": [
-       "kracht maal verplaatsing (W = F·s)",
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen.",
-       "in een gespannen touw of kabel.",
-       "een resulterende kracht geeft een versnelling."
-      ],
-      "c": 3,
-      "u": "«Tweede wet» betekent: een resulterende kracht geeft een versnelling..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Derde wet (actie = reactie)»?",
-      "o": [
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit",
-       "een trilling die energie transporteert zonder massatransport",
-       "de hoeveelheid materie in een voorwerp",
-       "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A."
-      ],
-      "c": 3,
-      "u": "«Derde wet (actie = reactie)» betekent: oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A.\"?",
-      "o": [
-       "Derde wet (actie = reactie)",
-       "Röntgenfoto",
-       "Tweede wet",
-       "Derde wet van Newton"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Derde wet (actie = reactie)»: oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A.\"?",
-      "o": [
-       "Stroming",
-       "Wrijvingskracht",
-       "Tweede wet",
-       "Derde wet (actie = reactie)"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Derde wet (actie = reactie)»: oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Derde wet (actie = reactie)» in?",
-      "o": [
-       "de aantrekkingskracht van de aarde op massa",
-       "zonder resulterende kracht blijft de snelheid gelijk",
-       "in een gespannen touw of kabel.",
-       "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A."
-      ],
-      "c": 3,
-      "u": "«Derde wet (actie = reactie)» betekent: oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Geleiding»?",
-      "o": [
-       "een resulterende kracht geeft een versnelling.",
-       "de geabsorbeerde energie per kilogram (gray)",
-       "componenten naast elkaar; de spanning is gelijk",
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht."
-      ],
-      "c": 3,
-      "u": "«Geleiding» betekent: warmte door een vaste stof; metalen geleiden goed, isolatoren slecht..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"warmte door een vaste stof; metalen geleiden goed, isolatoren slecht.\"?",
-      "o": [
-       "Geleiding",
-       "Meetonzekerheid",
-       "Wet van Ohm",
-       "Spankracht"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Geleiding»: warmte door een vaste stof; metalen geleiden goed, isolatoren slecht..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"warmte door een vaste stof; metalen geleiden goed, isolatoren slecht.\"?",
-      "o": [
-       "Straling",
-       "Geleiding",
-       "Wrijvingskracht",
-       "Willekeurige hoek"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Geleiding»: warmte door een vaste stof; metalen geleiden goed, isolatoren slecht..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Geleiding» in?",
-      "o": [
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht.",
-       "de afgelegde weg per tijd (v = s/t)",
-       "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A.",
-       "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen."
-      ],
-      "c": 0,
-      "u": "«Geleiding» betekent: warmte door een vaste stof; metalen geleiden goed, isolatoren slecht..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Stroming»?",
-      "o": [
-       "elektronen; matig doordringend",
-       "warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.",
-       "snel, vooral botten en longen; stralingsrisico",
-       "foton (EM-straling)groot (zwak ioniserend)"
-      ],
-      "c": 1,
-      "u": "«Stroming» betekent: warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.\"?",
-      "o": [
-       "Alfa (α)",
-       "Stroming",
-       "Afscherming",
-       "Evenwichtsstand"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Stroming»: warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.\"?",
-      "o": [
-       "Vrije val",
-       "Stroming",
+       "Tweede wet van Newton",
+       "Potentiële energie",
        "Versnelling",
-       "Willekeurige hoek"
+       "Kinetische energie"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Stroming»: warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit..",
-      "d": 3
+      "c": 3,
+      "d": 2,
+      "u": "Een rijdende auto heeft energie door zijn beweging. Dat past bij Kinetische energie: energie door beweging.",
+      "uo": [
+       "Nee, dat hoort bij Tweede wet van Newton: F = m·a.",
+       "Nee, dat hoort bij Potentiële energie: energie door hoogte.",
+       "Nee, dat hoort bij Versnelling: Δv/Δt.",
+       "Klopt: energie door beweging."
+      ],
+      "uh": "Kinetische energie: energie door beweging."
      },
      {
-      "v": "Wat houdt «Stroming» in?",
+      "v": "De kracht die een voorwerp in een cirkelbaan houdt. Wat is hier aan de hand?",
       "o": [
-       "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging.",
-       "warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.",
-       "een resulterende kracht geeft een versnelling.",
-       "zonder resulterende kracht blijft de snelheid gelijk"
-      ],
-      "c": 1,
-      "u": "«Stroming» betekent: warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Straling»?",
-      "o": [
-       "R verandert met spanning of temperatuur.",
-       "warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug.",
-       "de afstand tussen twee opeenvolgende toppen (m)",
-       "een trilling met een veelvoud van de grondfrequentie"
-      ],
-      "c": 1,
-      "u": "«Straling» betekent: warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug.\"?",
-      "o": [
-       "Straling",
-       "NTC",
-       "Dosis",
-       "Breking"
+       "Middelpuntzoekende kracht",
+       "Zwaartekracht",
+       "Vermogen",
+       "Versnelling"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Straling»: warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug.\"?",
-      "o": [
-       "Loodrecht",
-       "Arbeid",
-       "Straling",
-       "Wrijvingskracht"
+      "d": 3,
+      "u": "De kracht die een voorwerp in een cirkelbaan houdt. Dat past bij Middelpuntzoekende kracht: houdt in cirkelbaan.",
+      "uo": [
+       "Klopt: houdt in cirkelbaan.",
+       "Nee, dat hoort bij Zwaartekracht: Fg = m·g.",
+       "Nee, dat hoort bij Vermogen: W/t, watt.",
+       "Nee, dat hoort bij Versnelling: Δv/Δt."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Straling»: warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Straling» in?",
-      "o": [
-       "warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug.",
-       "parallellogrammethode; de diagonaal is de resultante Fres.",
-       "zelfde richting optellen, tegengestelde richting aftrekken.",
-       "gebruik de stelling van Pythagoras voor de resultante."
-      ],
-      "c": 0,
-      "u": "«Straling» betekent: warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug..",
-      "d": 3
+      "uh": "Middelpuntzoekende kracht: houdt in cirkelbaan."
      }
     ],
     "oe": [
@@ -38202,112 +36575,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Zwaartekracht",
-      "d": "de aantrekkingskracht van de aarde op massa"
+      "t": "Tweede wet van Newton",
+      "d": "de nettokracht is massa maal versnelling: F = m·a"
      },
      {
-      "t": "Wrijvingskracht",
-      "d": "een kracht die beweging tegenwerkt"
+      "t": "Actie-reactieprincipe",
+      "d": "krachten zijn even groot, tegengesteld en op verschillende objecten"
      },
      {
-      "t": "Massa",
-      "d": "de hoeveelheid materie in een voorwerp"
+      "t": "Kinetische energie",
+      "d": "de energie die een voorwerp heeft door zijn beweging"
      },
      {
-      "t": "Gewicht",
-      "d": "de zwaartekracht op een voorwerp"
-     },
-     {
-      "t": "Snelheid",
-      "d": "de afgelegde weg per tijd (v = s/t)"
+      "t": "Potentiële energie",
+      "d": "de energie door de hoogte: Ep = m·g·h"
      },
      {
       "t": "Versnelling",
-      "d": "de snelheidsverandering per tijd (a = Δv/Δt)"
-     },
-     {
-      "t": "Resulterende kracht",
-      "d": "de vectorsom van alle krachten op een object"
-     },
-     {
-      "t": "Eerste wet van Newton",
-      "d": "zonder resulterende kracht blijft de snelheid gelijk"
-     },
-     {
-      "t": "Tweede wet van Newton",
-      "d": "F = m·a"
-     },
-     {
-      "t": "Derde wet van Newton",
-      "d": "actie en reactie zijn even groot en tegengesteld"
-     },
-     {
-      "t": "Traagheid",
-      "d": "de neiging om de bewegingstoestand te behouden"
+      "d": "de verandering van snelheid per tijd: a = Δv/Δt (m/s²)"
      },
      {
       "t": "Arbeid",
-      "d": "kracht maal verplaatsing (W = F·s)"
-     },
-     {
-      "t": "Energie",
-      "d": "het vermogen om arbeid te verrichten (joule)"
+      "d": "kracht maal verplaatsing in de richting van de kracht: W = F·s"
      },
      {
       "t": "Vermogen",
-      "d": "de arbeid per tijd (P = W/t)"
+      "d": "de arbeid per tijdseenheid: P = W/t (watt)"
      },
      {
-      "t": "Normaalkracht",
-      "d": "steunkracht loodrecht op een oppervlak."
+      "t": "Zwaartekracht",
+      "d": "de kracht Fg = m·g die massa's naar de aarde trekt"
      },
      {
-      "t": "Spankracht",
-      "d": "in een gespannen touw of kabel."
+      "t": "Impuls",
+      "d": "het product van massa en snelheid, behouden in een gesloten systeem"
      },
      {
-      "t": "Vrije val",
-      "d": "eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g."
-     },
-     {
-      "t": "Op één lijn",
-      "d": "zelfde richting optellen, tegengestelde richting aftrekken."
-     },
-     {
-      "t": "Loodrecht",
-      "d": "gebruik de stelling van Pythagoras voor de resultante."
-     },
-     {
-      "t": "Willekeurige hoek",
-      "d": "parallellogrammethode; de diagonaal is de resultante Fres."
-     },
-     {
-      "t": "Ontbinden",
-      "d": "omgekeerde van de parallellogrammethode; gebruik sin/cos (zie domein A) om de componenten te berekenen."
-     },
-     {
-      "t": "Eerste wet (traagheid)",
-      "d": "zonder resulterende kracht blijft een voorwerp in rust of in eenparige beweging."
-     },
-     {
-      "t": "Tweede wet",
-      "d": "een resulterende kracht geeft een versnelling."
-     },
-     {
-      "t": "Derde wet (actie = reactie)",
-      "d": "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A."
-     },
-     {
-      "t": "Geleiding",
-      "d": "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht."
-     },
-     {
-      "t": "Stroming",
-      "d": "warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit."
-     },
-     {
-      "t": "Straling",
-      "d": "warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug."
+      "t": "Middelpuntzoekende kracht",
+      "d": "de kracht die een voorwerp in een cirkelbaan houdt"
      }
     ]
    },
@@ -41721,1323 +40026,615 @@ var VAKKEN = [
      "Transformator (U1/U2 = n1/n2)",
      "Elektromagnetische inductie"
     ],
-    "sam": "<div class=\"sam-head\">Domein D - Lading en veld</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Elektrische lading veroorzaakt elektrische krachten.</li><li>Een elektrisch veld geeft aan welke kracht een lading ondervindt.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Lading Q in coulomb.</li><li>Stroom: <span class=\"fm\">I = Q / t</span></li><li>Elektrisch veld: kracht per coulomb.</li><li>Spanning: energie per coulomb.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Elektrische lading (Q)</strong>: eigenschap van materie die elektrische krachten veroorzaakt; eenheid coulomb (C)</li><li><strong>Elektrische stroom (I)</strong>: lading per tijdseenheid; I = Q/t, eenheid ampère (A)</li><li><strong>Spanning (U)</strong>: elektrisch potentiaalverschil; energie per coulomb, eenheid volt (V)</li><li><strong>Weerstand (R)</strong>: mate waarin een geleider de stroom tegenwerkt; R = U/I, eenheid ohm (Ω)</li><li><strong>Wet van Ohm</strong>: U = I·R - spanning is product van stroom en weerstand</li><li><strong>Elektrisch veld</strong>: ruimte rondom een lading waar een kracht werkt op andere ladingen</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> Elektronen bewegen naar de pluspool door aantrekkingskracht.</p><p><strong>Toepassen:</strong> 6 C in 3 s → I = 2 A.</p><p><strong>Analyseren:</strong> In een homogeen veld zijn veldlijnen evenwijdig.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Plus en min omdraaien.</li><li>Stroomrichting verwarren met elektronenstroom.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is elektrische lading?</li><li>Wat is spanning?</li><li>Hoe ziet een homogeen veld eruit?</li></ul></div>",
+    "sam": "<div class=\"sam-intro\">In een stroomkring geldt de <strong>wet van Ohm</strong> (U = I·R). De <strong>schakeling</strong> is serie (stroom overal gelijk) of parallel (spanning overal gelijk). Het elektrisch <strong>vermogen</strong> is P = U·I. Een bewegende lading in een magneetveld voelt de <strong>Lorentzkracht</strong>; een <strong>transformator</strong> werkt op <strong>inductie</strong>.</div><div class=\"sam-head\">1. Stroom, spanning en weerstand</div><p>De <strong>wet van Ohm</strong>: U = I·R (ook I = U/R en R = U/I). In een <strong>serieschakeling</strong> is de stroom overal gelijk; in een <strong>parallelschakeling</strong> de spanning, en is de totale <strong>weerstand</strong> kleiner dan de kleinste afzonderlijke. Het elektrisch <strong>vermogen</strong> is P = U·I. De batterij is de bron, de weerstand de verbruiker.</p><div class=\"sam-formula-box\"><div class=\"sam-formula-label\">Wet van Ohm</div><div class=\"sam-formula-eq\">U = I · R</div><div class=\"sam-formula-note\">Spanning = stroomsterkte × weerstand.</div></div><div class=\"sam-head\">2. Magnetisme en inductie</div><p>Een bewegende lading in een magneetveld ondervindt de <strong>Lorentzkracht</strong> (F = q·v·B·sin θ), loodrecht op v en B. Een <strong>transformator</strong> werkt op <strong>elektromagnetische inductie</strong>: een wisselend magneetveld wekt spanning op. Daarom transporteert men elektriciteit op hoge spanning: een hoge U geeft een kleine I en dus veel minder verlies (I²R).</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Wet van Ohm</div><div class=\"sam-definitie-body\">de relatie U = I·R tussen spanning, stroom en weerstand.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Serieschakeling</div><div class=\"sam-definitie-body\">een schakeling waarin de stroom overal gelijk is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Parallelschakeling</div><div class=\"sam-definitie-body\">een schakeling waarin de spanning overal gelijk is.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Elektrisch vermogen</div><div class=\"sam-definitie-body\">het vermogen P = U·I in watt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Elektromagnetische inductie</div><div class=\"sam-definitie-body\">het opwekken van spanning door een wisselend magneetveld.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Weerstand</div><div class=\"sam-definitie-body\">de mate waarin een component de stroom tegenwerkt, in ohm.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Stroomsterkte</div><div class=\"sam-definitie-body\">de hoeveelheid lading per tijd, in ampère.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Spanning</div><div class=\"sam-definitie-body\">het verschil in elektrische potentiaal, in volt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Lorentzkracht</div><div class=\"sam-definitie-body\">de kracht op een bewegende lading in een magneetveld, F = q·v·B·sin θ.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Transformator</div><div class=\"sam-definitie-body\">een apparaat dat via inductie de spanning omhoog of omlaag transformeert.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Wet van Ohm»</b> is U = I·R, terwijl <b>«Elektrisch vermogen»</b> P = U·I is. <b>«Serieschakeling»</b> is stroom overal gelijk, terwijl <b>«Parallelschakeling»</b> spanning overal gelijk is. <b>«Elektromagnetische inductie»</b> is spanning uit wisselend veld, terwijl <b>«Lorentzkracht»</b> kracht op bewegende lading is. <b>«Weerstand»</b> is tegenwerking van stroom, terwijl <b>«Stroomsterkte»</b> lading per tijd is.</div>",
     "sv": [
      {
       "v": "Wat zegt de wet van Ohm?",
       "o": [
        "U = I·R",
-       "I = U·R",
-       "R = U·I",
-       "U = I gedeeld door R"
+       "F = m·a",
+       "P = W/t",
+       "v = f·λ"
       ],
       "c": 0,
-      "u": "Wet van Ohm: U in volt = I in ampere·R in ohm. Meer spanning bij gelijke weerstand geeft meer stroom."
+      "d": 2,
+      "u": "Spanning = stroom × weerstand.",
+      "uo": [
+       "Klopt: spanning = stroom × weerstand.",
+       "Nee, dat is Newton.",
+       "Nee, dat is vermogen.",
+       "Nee, dat is de golfvergelijking."
+      ],
+      "uh": "Wet van Ohm: U = I·R."
      },
      {
-      "v": "Wat is het verschil tussen serie- en parallelschakeling?",
+      "v": "Wat is het verschil tussen een serie- en een parallelschakeling?",
       "o": [
+       "ze zijn hetzelfde",
        "serie: stroom overal gelijk; parallel: spanning overal gelijk",
-       "serie: spanning overal gelijk; parallel: stroom overal gelijk",
-       "in zowel serie als parallel is de stroom overal even groot",
-       "tussen serie en parallel bestaat geen praktisch verschil"
+       "serie: spanning overal gelijk",
+       "parallel: stroom overal gelijk"
       ],
-      "c": 0,
-      "u": "Serie: R_tot = som van weerstanden. Parallel: 1 gedeeld door R_tot = som van 1/R. Parallelweerstand is altijd kleiner dan de kleinste individuele weerstand."
+      "c": 1,
+      "d": 3,
+      "u": "Stroom gelijk in serie, spanning gelijk parallel.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Klopt: stroom gelijk in serie, spanning gelijk parallel.",
+       "Nee, dat is parallel.",
+       "Nee, dat is serie."
+      ],
+      "uh": "Serie: stroom gelijk; parallel: spanning gelijk."
      },
      {
       "v": "Welke formule beschrijft elektrisch vermogen in watt?",
       "o": [
-       "P = U·I (spanning × stroom)",
-       "P = U/I (spanning gedeeld door stroom)",
-       "P = I·R (stroom × weerstand)",
-       "P = U²·I (spanning² × stroom)"
+       "P = U/R",
+       "P = I·R",
+       "P = U·I",
+       "P = U + I"
       ],
-      "c": 0,
-      "u": "P = UI = I² R = U² gedeeld door R. Energie = P·t in joule of kWh."
+      "c": 2,
+      "d": 2,
+      "u": "Vermogen = spanning × stroom.",
+      "uo": [
+       "Nee, dat klopt niet.",
+       "Nee, dat klopt niet.",
+       "Klopt: vermogen = spanning × stroom.",
+       "Nee, je telt niet op."
+      ],
+      "uh": "Elektrisch vermogen: P = U·I."
      },
      {
       "v": "Welk principe ligt ten grondslag aan de werking van een transformator?",
       "o": [
-       "elektromagnetische inductie (een wisselend magneetveld)",
-       "galvanische werking (een chemische reactie wekt spanning op)",
-       "het piëzo-elektrisch effect (druk wekt een spanning op)",
-       "het foto-elektrisch effect (licht wekt een spanning op)"
+       "de Lorentzkracht op een snaar",
+       "de wet van Ohm",
+       "de zwaartekracht",
+       "elektromagnetische inductie (een wisselend magneetveld)"
       ],
-      "c": 0,
-      "u": "Inductieprincipe van Faraday: veranderend magneetveld induceert spanning. Verliesvrij: P1 = P2. Werkt alleen op wisselstroom."
+      "c": 3,
+      "d": 3,
+      "u": "Een wisselend veld wekt spanning op.",
+      "uo": [
+       "Nee, dat is een andere kracht.",
+       "Nee, dat gaat over stroom en weerstand.",
+       "Nee, dat is mechanica.",
+       "Klopt: een wisselend veld wekt spanning op."
+      ],
+      "uh": "Transformator: elektromagnetische inductie."
      },
      {
-      "v": "Waarom wordt elektriciteit via hoogspanningsmasten getransporteerd op hoge spanning?",
+      "v": "Waarom transporteert men elektriciteit op hoge spanning?",
       "o": [
-       "hoge U geeft kleine I, dus het P-verlies (I²R) wordt veel kleiner",
-       "hoge U geeft grote I en dus snellere levering aan de afnemer",
-       "hoge U verlaagt de weerstand R van de transportkabels",
-       "hoge U is eenvoudiger op te wekken in de centrale zelf"
+       "een hoge U geeft een kleine I, dus veel minder verlies (I²R)",
+       "hoge spanning is goedkoper op te wekken",
+       "lage stroom is gevaarlijker",
+       "het maakt niet uit"
       ],
       "c": 0,
-      "u": "P = UI: voor hetzelfde vermogen bij hoge U is I klein. Warmteverlies = I² R, dus kleine stroom geeft kwadratisch minder verlies."
+      "d": 3,
+      "u": "Minder stroom betekent minder warmteverlies.",
+      "uo": [
+       "Klopt: minder stroom betekent minder warmteverlies.",
+       "Nee, dat is niet de reden.",
+       "Nee, juist veiliger qua verlies.",
+       "Nee, het scheelt veel."
+      ],
+      "uh": "Hoogspanning: kleine I, minder I²R-verlies."
      },
      {
       "v": "Wat geldt voor de totale weerstand in een parallelschakeling?",
       "o": [
-       "altijd kleiner dan de kleinste afzonderlijke weerstand",
-       "gelijk aan de som van alle afzonderlijke weerstanden",
-       "gelijk aan het gemiddelde van alle weerstanden samen",
-       "groter dan de grootste afzonderlijke weerstand erin"
+       "die is de som van alle weerstanden",
+       "die is altijd kleiner dan de kleinste afzonderlijke weerstand",
+       "die is altijd de grootste weerstand",
+       "die is nul"
       ],
-      "c": 0,
-      "u": "Parallel: 1/R_tot = 1/R₁ + 1/R₂ + … Meer stroomwegen → lagere totale weerstand. Bij twee gelijke weerstanden R is R_tot = R/2. Altijd kleiner dan de kleinste individuele weerstand."
+      "c": 1,
+      "d": 3,
+      "u": "Parallel verlaagt de totale weerstand.",
+      "uo": [
+       "Nee, dat geldt bij serie.",
+       "Klopt: parallel verlaagt de totale weerstand.",
+       "Nee, juist kleiner.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Parallel: totale weerstand kleiner dan de kleinste."
      },
      {
-      "v": "Welk element in een gelijkstroom circuit werkt als energiebron en welk element als energieverbruiker?",
+      "v": "Welk element is in een gelijkstroomkring de energiebron en welk de verbruiker?",
       "o": [
-       "de batterij is de energiebron en de weerstand de verbruiker",
-       "de weerstand is de energiebron en de batterij de verbruiker",
-       "beide componenten werken in het circuit als energiebron",
-       "beide componenten werken in het circuit als energieverbruiker"
+       "de draad is de bron",
+       "de weerstand is de bron",
+       "de batterij is de bron, de weerstand de verbruiker",
+       "er is geen bron"
       ],
-      "c": 0,
-      "u": "De batterij zet chemische energie om in elektrische energie (bron). De weerstand of lamp zet elektrische energie om in warmte of licht (verbruiker). De spanning van de bron drijft de stroom."
+      "c": 2,
+      "d": 2,
+      "u": "De batterij levert, de weerstand verbruikt.",
+      "uo": [
+       "Nee, de draad geleidt alleen.",
+       "Nee, die verbruikt juist.",
+       "Klopt: de batterij levert, de weerstand verbruikt.",
+       "Nee, er is een bron."
+      ],
+      "uh": "Batterij: bron; weerstand: verbruiker."
      },
      {
-      "v": "Wat is de Lorentzkracht op een elektrisch geladen deeltje dat beweegt in een magneetveld?",
+      "v": "Wat is de Lorentzkracht op een geladen deeltje dat in een magneetveld beweegt?",
       "o": [
-       "F = q·v·B·sin(θ) - kracht loodrecht op v en B",
-       "F = q·E - kracht in richting van het elektrisch veld",
-       "F = m·a - kracht door versnelling",
-       "F = q·v·B·cos(θ) - kracht evenwijdig aan v"
+       "F = C·u",
+       "F = m·a",
+       "F = U·I",
+       "F = q·v·B·sin θ, loodrecht op v en B"
       ],
-      "c": 0,
-      "u": "Lorentzkracht: F = qvB·sin(θ). De kracht staat altijd loodrecht op de snelheid en het magneetveld. Dit veroorzaakt een cirkelbaan. Bij θ = 90°: F = qvB (maximaal)."
+      "c": 3,
+      "d": 3,
+      "u": "De Lorentzkracht staat loodrecht op v en B.",
+      "uo": [
+       "Nee, dat is veerkracht.",
+       "Nee, dat is Newton.",
+       "Nee, dat is vermogen.",
+       "Klopt: de Lorentzkracht staat loodrecht op v en B."
+      ],
+      "uh": "Lorentzkracht: F = q·v·B·sin θ."
      },
      {
-      "v": "Welke wet van Kirchhoff stelt dat de som van alle spanningsverschillen in een gesloten lus gelijk is aan nul?",
+      "v": "Wat stelt de tweede wet van Kirchhoff (de spanningswet)?",
       "o": [
-       "Tweede wet van Kirchhoff (spanningswet - KVL)",
-       "Eerste wet van Kirchhoff (stroomwet - KCL)",
-       "Wet van Ohm (U = IR)",
-       "Wet van Faraday (inductiewet)"
+       "de som van alle spanningsverschillen in een gesloten lus is nul",
+       "de stroom is overal gelijk",
+       "de weerstand is de som",
+       "het vermogen is constant"
       ],
       "c": 0,
-      "u": "KVL (Kirchhoffs Voltage Law): in een gesloten lus is de som van alle EMK's gelijk aan de som van alle spanningsdalingen. KCL: de som van stromen naar een knooppunt = 0."
+      "d": 3,
+      "u": "In een lus tellen de spanningen op tot nul.",
+      "uo": [
+       "Klopt: in een lus tellen de spanningen op tot nul.",
+       "Nee, dat is bij serie, geen wet van Kirchhoff hierover.",
+       "Nee, dat geldt bij serie.",
+       "Nee, dat is iets anders."
+      ],
+      "uh": "Kirchhoff-spanningswet: som spanningen in lus = 0."
      },
      {
       "v": "Wat zijn de drie vormen van de wet van Ohm?",
       "o": [
-       "U = I·R, I = U/R en R = U/I - spanning, stroom en weerstand",
-       "U = I·R is de enige vorm; de andere volgen niet",
-       "P = U·I is een alternatieve vorm van de wet van Ohm",
-       "Ohm geldt alleen bij gelijkstroom, niet bij wisselstroom"
-      ],
-      "c": 0,
-      "u": "Wet van Ohm: U = I·R. Herleid naar I = U/R en R = U/I. Meer spanning bij gelijke weerstand → meer stroom. Grotere weerstand bij gelijke spanning → minder stroom."
-     },
-     {
-      "v": "Wat is elektrische spanning (uitgedrukt als definitie)?",
-      "o": [
-       "Spanning is de hoeveelheid energie per eenheidslading (U = W/Q, in volt)",
-       "Spanning is de hoeveelheid lading per tijdseenheid",
-       "Spanning is het product van stroom en weerstand (alternatieve definitie)",
-       "Spanning is de kracht per eenheidslading in een elektrisch veld"
-      ],
-      "c": 0,
-      "u": "Spanning U = W/Q (joule per coulomb = volt). Het is het energieverschil per eenheidslading tussen twee punten. 1 V = 1 J/C. Hogere spanning = meer energie beschikbaar per coulomb lading."
-     },
-     {
-      "v": "Wat beschrijft de verhouding U₁/U₂ = n₁/n₂ bij een transformator?",
-      "o": [
-       "Meer windingen in de secundaire spoel geeft een hogere uitgangsspanning",
-       "Meer windingen verlagen altijd de spanning",
-       "Het aantal windingen beïnvloedt alleen de stroom, niet de spanning",
-       "Beide spoelen hebben altijd gelijke spanning"
-      ],
-      "c": 0,
-      "u": "U₁/U₂ = n₁/n₂: meer wikkelingen in secundaire spoel → hogere spanning (ophoogtransformator). Minder → lagere spanning (verlaagTransformator). Verliesvrij: P₁ = P₂ dus U₁·I₁ = U₂·I₂."
-     },
-     {
-      "v": "Wat is het verschil tussen gelijkstroom (DC) en wisselstroom (AC)?",
-      "o": [
-       "DC stroomt in één richting; AC wisselt periodiek van richting",
-       "DC heeft altijd een hogere spanning dan wisselstroom AC",
-       "gelijkstroom DC kan worden getransformeerd en wisselstroom niet",
-       "DC en AC zijn gelijk maar verschillen alleen in hun frequentie"
-      ],
-      "c": 0,
-      "u": "Gelijkstroom (DC): richting en grootte zijn constant (batterij). Wisselstroom (AC): richting wisselt periodiek (in Nederland 50 Hz). Transformatoren werken alleen op AC omdat ze een veranderend magneetveld nodig hebben."
-     },
-     {
-      "v": "Welke formule geeft de elektrische stroomsterkte?",
-      "o": [
-       "I = Q / t",
-       "I = Q · t",
-       "I = U · t",
-       "I = R / U"
-      ],
-      "c": 0,
-      "u": "De stroomsterkte is I = Q/t: de lading Q (in coulomb) die per seconde voorbijkomt, gemeten in ampère."
-     },
-     {
-      "v": "In welke richting loopt de afgesproken stroomrichting?",
-      "o": [
-       "van de pluspool naar de minpool",
-       "van de minpool naar de pluspool",
-       "dezelfde kant op als de elektronen",
-       "in willekeurige richting"
-      ],
-      "c": 0,
-      "u": "De afgesproken stroomrichting gaat van plus naar min. De elektronen zelf bewegen juist van min naar plus."
-     },
-     {
-      "v": "Hoe sluit je een ampèremeter aan in een schakeling?",
-      "o": [
-       "in serie",
-       "parallel aan het onderdeel",
-       "het maakt niet uit",
-       "in serie met de aardleiding"
-      ],
-      "c": 0,
-      "u": "Een ampèremeter meet de stroom en staat in serie. Een voltmeter staat juist parallel."
-     },
-     {
-      "v": "Hoe sluit je een voltmeter aan?",
-      "o": [
-       "parallel aan het onderdeel",
-       "in serie met het onderdeel",
-       "in de aardleiding",
-       "in serie met de spanningsbron"
-      ],
-      "c": 0,
-      "u": "Een voltmeter meet het spanningsverschil over een onderdeel en staat er parallel aan."
-     },
-     {
-      "v": "Wat is een eigenschap van een isolator?",
-      "o": [
-       "hij laat stroom nauwelijks door",
-       "hij heeft veel vrije elektronen",
-       "hij geleidt stroom goed",
-       "hij is altijd een metaal"
-      ],
-      "c": 0,
-      "u": "Een isolator (hout, kunststof) heeft nauwelijks vrije elektronen en geleidt stroom slecht; een geleider juist wel."
-     },
-     {
-      "v": "Wat geldt voor de vervangingsweerstand in een serieschakeling?",
-      "o": [
-       "Rtot = R1 + R2 + …",
-       "1/Rtot = 1/R1 + 1/R2 + …",
-       "Rtot = R1 · R2",
-       "Rtot is gelijk aan de kleinste weerstand"
-      ],
-      "c": 0,
-      "u": "In serie tel je de weerstanden op: Rtot = R1 + R2 + … De formule met 1/R hoort bij een parallelschakeling."
-     },
-     {
-      "v": "Wat geldt voor de stroomsterkte in een serieschakeling?",
-      "o": [
-       "overal even groot",
-       "splitst zich over de takken",
-       "is overal nul",
-       "verschilt per component"
-      ],
-      "c": 0,
-      "u": "In een serieschakeling is de stroom overal gelijk; de spanning wordt verdeeld over de componenten."
-     },
-     {
-      "v": "Wat geldt voor de spanning over de componenten in een parallelschakeling?",
-      "o": [
-       "over elk component even groot",
-       "verdeeld over de componenten",
-       "alleen samen gelijk aan de bron",
-       "overal nul"
-      ],
-      "c": 0,
-      "u": "In een parallelschakeling staat over elke tak dezelfde spanning; de stroom splitst zich juist."
-     },
-     {
-      "v": "Welke formule geeft de verbruikte elektrische energie?",
-      "o": [
-       "E = P · t",
-       "E = P / t",
-       "E = U / I",
-       "E = I · t"
-      ],
-      "c": 0,
-      "u": "Elektrische energie is E = P·t (vermogen maal tijd). In kilowattuur: 1 kWh = 1 kW gedurende 1 uur."
-     },
-     {
-      "v": "Wat is 1 kilowattuur (kWh)?",
-      "o": [
-       "het verbruik van 1 kW gedurende één uur",
-       "een vermogen van 1000 watt per seconde",
-       "een vermogen van 1 watt gedurende één uur",
-       "een vermogen van 1 kW gedurende één minuut"
-      ],
-      "c": 0,
-      "u": "1 kWh is de energie die een vermogen van 1 kW in 1 uur verbruikt - een handige eenheid voor elektriciteitsverbruik."
-     },
-     {
-      "v": "Hoe wekt een generator elektriciteit op?",
-      "o": [
-       "een spoel beweegt door een magneetveld",
-       "twee draden worden met elkaar verbonden",
-       "een lege batterij wordt weer opgeladen",
-       "licht valt op een halfgeleidend materiaal"
-      ],
-      "c": 0,
-      "u": "In een generator beweegt een spoel door een magneetveld, waardoor elektrische energie wordt opgewekt (inductie)."
-     },
-     {
-      "v": "Hoe wekt een zonnecel elektriciteit op?",
-      "o": [
-       "zonlicht wordt direct omgezet in elektrische energie",
-       "een turbine wordt door de zon in beweging gebracht",
-       "een spoel wordt door zonnewarmte rondgedraaid",
-       "water wordt door de zon verhit tot stoom"
-      ],
-      "c": 0,
-      "u": "Een zonnecel zet stralingsenergie van zonlicht direct om in elektriciteit, zonder bewegende delen."
-     },
-     {
-      "v": "Wat gebeurt er met een zekering bij een te hoge stroom?",
-      "o": [
-       "de zekering smelt en onderbreekt de stroomkring",
-       "de spanning in de kring stijgt plotseling sterk",
-       "de stroom door de kring wordt nog veel groter",
-       "er gebeurt helemaal niets met de stroomkring"
-      ],
-      "c": 0,
-      "u": "Een zekering smelt bij te hoge stroom (bijv. kortsluiting) en onderbreekt zo de kring ter beveiliging."
-     },
-     {
-      "v": "Wat gebeurt er met de weerstand van een draad als hij langer wordt?",
-      "o": [
-       "de weerstand wordt groter",
-       "de weerstand wordt kleiner",
-       "de weerstand blijft gelijk",
-       "de weerstand wordt nul"
-      ],
-      "c": 0,
-      "u": "Volgens ρ = R·A/l is de weerstand recht evenredig met de lengte: een langere draad heeft meer weerstand."
-     },
-     {
-      "v": "Wat doet de weerstand van een NTC als de temperatuur stijgt?",
-      "o": [
-       "die wordt kleiner",
-       "die wordt groter",
-       "die blijft gelijk",
-       "die wordt oneindig"
-      ],
-      "c": 0,
-      "u": "Bij een NTC (Negative Temperature Coefficient) daalt de weerstand bij hogere temperatuur; daarom gebruikt men hem in thermometers."
-     },
-     {
-      "v": "Wat betekent «Vermogen»?",
-      "o": [
-       "medische scans",
-       "de omgezette energie per tijd",
-       "F = m·a",
-       "de tijd waarin de activiteit halveert"
+       "U = I + R, I = U + R en R = U + I",
+       "U = I·R, I = U/R en R = U/I",
+       "U = I², I = R² en R = U²",
+       "ze bestaan niet"
       ],
       "c": 1,
-      "u": "«Vermogen» betekent: de omgezette energie per tijd.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de omgezette energie per tijd\"?",
-      "o": [
-       "Vermogen",
-       "Nucleair (PET)",
-       "Ultraviolet",
-       "Energie"
+      "d": 2,
+      "u": "Dezelfde relatie, drie keer omgeschreven.",
+      "uo": [
+       "Nee, je telt niet op.",
+       "Klopt: dezelfde relatie, drie keer omgeschreven.",
+       "Nee, er zijn geen kwadraten.",
+       "Nee, ze bestaan wel."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vermogen»: de omgezette energie per tijd.",
-      "d": 2
+      "uh": "Wet van Ohm: U=I·R, I=U/R, R=U/I."
      },
      {
-      "v": "Welke term past bij: \"de omgezette energie per tijd\"?",
+      "v": "Wat is de eenheid van stroomsterkte?",
       "o": [
-       "Vermogen",
-       "Stroomsterkte",
-       "Elektrisch veld",
-       "Wet van Ohm"
+       "de ohm (Ω)",
+       "de volt (V)",
+       "de ampère (A)",
+       "de watt (W)"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Vermogen»: de omgezette energie per tijd.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vermogen» in?",
-      "o": [
-       "een stof die stroom goed doorlaat",
-       "de omgezette energie per tijd",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "U = I·R"
+      "c": 2,
+      "d": 2,
+      "u": "Stroomsterkte meet je in ampère.",
+      "uo": [
+       "Nee, dat is weerstand.",
+       "Nee, dat is spanning.",
+       "Klopt: stroomsterkte meet je in ampère.",
+       "Nee, dat is vermogen."
       ],
-      "c": 1,
-      "u": "«Vermogen» betekent: de omgezette energie per tijd.",
-      "d": 3
+      "uh": "Stroomsterkte: ampère."
      },
      {
-      "v": "Wat betekent «Kortsluiting»?",
+      "v": "Wat is elektrische weerstand?",
       "o": [
-       "een verbinding met vrijwel geen weerstand",
-       "materiaal dat straling tegenhoudt",
-       "de afstand tussen twee opeenvolgende toppen (m)",
-       "een stof die stroom nauwelijks doorlaat"
-      ],
-      "c": 0,
-      "u": "«Kortsluiting» betekent: een verbinding met vrijwel geen weerstand.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een verbinding met vrijwel geen weerstand\"?",
-      "o": [
-       "Interferentie",
-       "Recht evenredig",
-       "Loodrecht",
-       "Kortsluiting"
+       "het vermogen",
+       "de hoeveelheid lading per tijd",
+       "het potentiaalverschil",
+       "de mate waarin een component de stroom tegenwerkt, in ohm"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Kortsluiting»: een verbinding met vrijwel geen weerstand.",
-      "d": 2
+      "d": 2,
+      "u": "Weerstand belemmert de stroom.",
+      "uo": [
+       "Nee, dat is P.",
+       "Nee, dat is de stroomsterkte.",
+       "Nee, dat is de spanning.",
+       "Klopt: weerstand belemmert de stroom."
+      ],
+      "uh": "Weerstand: tegenwerking van de stroom (ohm)."
      },
      {
-      "v": "Welke term past bij: \"een verbinding met vrijwel geen weerstand\"?",
+      "v": "In een reeks lampjes is de stroom overal even groot. Welk begrip past hierbij?",
       "o": [
-       "Kortsluiting",
-       "Aardlekschakelaar",
-       "PTC",
-       "Vermogen"
+       "Serieschakeling",
+       "Transformator",
+       "Stroomsterkte",
+       "Elektromagnetische inductie"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Kortsluiting»: een verbinding met vrijwel geen weerstand.",
-      "d": 3
+      "d": 1,
+      "u": "In een reeks lampjes is de stroom overal even groot. Dat past bij Serieschakeling: stroom overal gelijk.",
+      "uo": [
+       "Klopt: stroom overal gelijk.",
+       "Nee, dat hoort bij Transformator: transformeert de spanning.",
+       "Nee, dat hoort bij Stroomsterkte: lading per tijd.",
+       "Nee, dat hoort bij Elektromagnetische inductie: spanning uit wisselend veld."
+      ],
+      "uh": "Serieschakeling: stroom overal gelijk."
      },
      {
-      "v": "Wat houdt «Kortsluiting» in?",
+      "v": "Het verschil in elektrische potentiaal, gemeten in volt. Om welk begrip gaat het?",
       "o": [
-       "de omgezette energie per tijd",
-       "R is constant; U en I zijn recht evenredig.",
-       "een verbinding met vrijwel geen weerstand",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)"
+       "Wet van Ohm",
+       "Spanning",
+       "Elektrisch vermogen",
+       "Lorentzkracht"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Het verschil in elektrische potentiaal, gemeten in volt. Dat past bij Spanning: potentiaalverschil.",
+      "uo": [
+       "Nee, dat hoort bij Wet van Ohm: U = I·R.",
+       "Klopt: potentiaalverschil.",
+       "Nee, dat hoort bij Elektrisch vermogen: P = U·I.",
+       "Nee, dat hoort bij Lorentzkracht: kracht op bewegende lading."
+      ],
+      "uh": "Spanning: potentiaalverschil."
+     },
+     {
+      "v": "Het potentiaalverschil. Welk begrip herken je hier?",
+      "o": [
+       "Elektrisch vermogen",
+       "Wet van Ohm",
+       "Spanning",
+       "Lorentzkracht"
       ],
       "c": 2,
-      "u": "«Kortsluiting» betekent: een verbinding met vrijwel geen weerstand.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Geleider»?",
-      "o": [
-       "snel, vooral botten en longen; stralingsrisico",
-       "elektronen; matig doordringend",
-       "een stof die stroom goed doorlaat",
-       "richtingverandering van een golf bij een grensvlak"
+      "d": 1,
+      "u": "Het potentiaalverschil. Dat past bij Spanning: potentiaalverschil.",
+      "uo": [
+       "Nee, dat hoort bij Elektrisch vermogen: P = U·I.",
+       "Nee, dat hoort bij Wet van Ohm: U = I·R.",
+       "Klopt: potentiaalverschil.",
+       "Nee, dat hoort bij Lorentzkracht: kracht op bewegende lading."
       ],
-      "c": 2,
-      "u": "«Geleider» betekent: een stof die stroom goed doorlaat.",
-      "d": 1
+      "uh": "Spanning: potentiaalverschil."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die stroom goed doorlaat\"?",
+      "v": "De kracht op een bewegende lading in een magneetveld. Wat is hier aan de hand?",
+      "o": [
+       "Elektrisch vermogen",
+       "Parallelschakeling",
+       "Weerstand",
+       "Lorentzkracht"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "De kracht op een bewegende lading in een magneetveld. Dat past bij Lorentzkracht: kracht op bewegende lading.",
+      "uo": [
+       "Nee, dat hoort bij Elektrisch vermogen: P = U·I.",
+       "Nee, dat hoort bij Parallelschakeling: spanning overal gelijk.",
+       "Nee, dat hoort bij Weerstand: tegenwerking van stroom.",
+       "Klopt: kracht op bewegende lading."
+      ],
+      "uh": "Lorentzkracht: kracht op bewegende lading."
+     },
+     {
+      "v": "Een geladen deeltje in een magneetveld voelt een zijwaartse kracht. Welk begrip past hierbij?",
+      "o": [
+       "Lorentzkracht",
+       "Parallelschakeling",
+       "Weerstand",
+       "Elektrisch vermogen"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Een geladen deeltje in een magneetveld voelt een zijwaartse kracht. Dat past bij Lorentzkracht: kracht op bewegende lading.",
+      "uo": [
+       "Klopt: kracht op bewegende lading.",
+       "Nee, dat hoort bij Parallelschakeling: spanning overal gelijk.",
+       "Nee, dat hoort bij Weerstand: tegenwerking van stroom.",
+       "Nee, dat hoort bij Elektrisch vermogen: P = U·I."
+      ],
+      "uh": "Lorentzkracht: kracht op bewegende lading."
+     },
+     {
+      "v": "De lading per tijd. Om welk begrip gaat het?",
       "o": [
        "Parallelschakeling",
-       "Geleider",
-       "Röntgenfoto",
+       "Stroomsterkte",
+       "Elektromagnetische inductie",
        "Elektrisch vermogen"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Geleider»: een stof die stroom goed doorlaat.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een stof die stroom goed doorlaat\"?",
-      "o": [
-       "Geleider",
-       "Elektrisch vermogen",
-       "Kortsluiting",
-       "Parallelschakeling"
+      "d": 1,
+      "u": "De lading per tijd. Dat past bij Stroomsterkte: lading per tijd.",
+      "uo": [
+       "Nee, dat hoort bij Parallelschakeling: spanning overal gelijk.",
+       "Klopt: lading per tijd.",
+       "Nee, dat hoort bij Elektromagnetische inductie: spanning uit wisselend veld.",
+       "Nee, dat hoort bij Elektrisch vermogen: P = U·I."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Geleider»: een stof die stroom goed doorlaat.",
-      "d": 3
+      "uh": "Stroomsterkte: lading per tijd."
      },
      {
-      "v": "Wat houdt «Geleider» in?",
+      "v": "De tegenwerking van de stroom. Welk begrip herken je hier?",
       "o": [
-       "een stof die stroom goed doorlaat",
-       "componenten achter elkaar; de stroom is overal gelijk",
-       "de energie per lading (volt)",
-       "eigenschap die elektrische krachten veroorzaakt (C)"
-      ],
-      "c": 0,
-      "u": "«Geleider» betekent: een stof die stroom goed doorlaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Isolator»?",
-      "o": [
-       "een heen-en-weer beweging om een evenwichtsstand",
-       "de rustpositie van het systeem",
-       "zenders (laagste energie, langste golflengte)",
-       "een stof die stroom nauwelijks doorlaat"
-      ],
-      "c": 3,
-      "u": "«Isolator» betekent: een stof die stroom nauwelijks doorlaat.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een stof die stroom nauwelijks doorlaat\"?",
-      "o": [
-       "Isolator",
-       "Doppler-effect",
-       "NTC",
-       "Dosis"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Isolator»: een stof die stroom nauwelijks doorlaat.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een stof die stroom nauwelijks doorlaat\"?",
-      "o": [
-       "Serieschakeling",
-       "Vermogen",
-       "Isolator",
-       "Wet van Ohm"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Isolator»: een stof die stroom nauwelijks doorlaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Isolator» in?",
-      "o": [
-       "eigenschap die elektrische krachten veroorzaakt (C)",
-       "een stof die stroom nauwelijks doorlaat",
-       "componenten naast elkaar; de spanning is gelijk",
-       "gebied waarin een lading een kracht ondervindt"
-      ],
-      "c": 1,
-      "u": "«Isolator» betekent: een stof die stroom nauwelijks doorlaat.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Zekering»?",
-      "o": [
-       "een beveiliging die de stroom onderbreekt bij overbelasting",
-       "het vermogen om arbeid te verrichten (joule)",
-       "de snelheidsverandering per tijd (a = Δv/Δt)",
-       "de grafiek is een rechte lijn door de oorsprong"
-      ],
-      "c": 0,
-      "u": "«Zekering» betekent: een beveiliging die de stroom onderbreekt bij overbelasting.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een beveiliging die de stroom onderbreekt bij overbelasting\"?",
-      "o": [
-       "Serieschakeling",
-       "Zekering",
-       "Diode / LED",
-       "Versnelling"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Zekering»: een beveiliging die de stroom onderbreekt bij overbelasting.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een beveiliging die de stroom onderbreekt bij overbelasting\"?",
-      "o": [
-       "Weerstand",
-       "Zekering",
-       "Isolator",
-       "PTC"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Zekering»: een beveiliging die de stroom onderbreekt bij overbelasting.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Zekering» in?",
-      "o": [
-       "componenten achter elkaar; de stroom is overal gelijk",
-       "een beveiliging die de stroom onderbreekt bij overbelasting",
-       "eigenschap die elektrische krachten veroorzaakt (C)",
-       "de energie per lading (volt)"
-      ],
-      "c": 1,
-      "u": "«Zekering» betekent: een beveiliging die de stroom onderbreekt bij overbelasting.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Elektrische lading»?",
-      "o": [
-       "aantal trillingen per seconde (Hz)",
-       "eigenschap die elektrische krachten veroorzaakt (C)",
-       "evenveel decimalen als de waarde met de minste decimalen",
-       "de energie per lading (volt)"
-      ],
-      "c": 1,
-      "u": "«Elektrische lading» betekent: eigenschap die elektrische krachten veroorzaakt (C).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"eigenschap die elektrische krachten veroorzaakt (C)\"?",
-      "o": [
-       "Parallelschakeling",
-       "Röntgenstraling",
        "Wet van Ohm",
-       "Elektrische lading"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Elektrische lading»: eigenschap die elektrische krachten veroorzaakt (C).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"eigenschap die elektrische krachten veroorzaakt (C)\"?",
-      "o": [
-       "PTC",
-       "Spanning",
-       "Geleider",
-       "Elektrische lading"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Elektrische lading»: eigenschap die elektrische krachten veroorzaakt (C).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Elektrische lading» in?",
-      "o": [
-       "onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken.",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "P = U·I",
-       "eigenschap die elektrische krachten veroorzaakt (C)"
-      ],
-      "c": 3,
-      "u": "«Elektrische lading» betekent: eigenschap die elektrische krachten veroorzaakt (C).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Stroomsterkte»?",
-      "o": [
-       "de lading per tijd (I = Q/t, ampère)",
-       "sterke versterking bij de eigenfrequentie",
-       "evenveel significante cijfers als de minst nauwkeurige waarde",
-       "een instrument afstellen op een bekende standaard"
-      ],
-      "c": 0,
-      "u": "«Stroomsterkte» betekent: de lading per tijd (I = Q/t, ampère).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de lading per tijd (I = Q/t, ampère)\"?",
-      "o": [
-       "Resonantie",
-       "Trillingstijd / periode (T)",
-       "Derde wet van Newton",
-       "Stroomsterkte"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Stroomsterkte»: de lading per tijd (I = Q/t, ampère).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de lading per tijd (I = Q/t, ampère)\"?",
-      "o": [
-       "Elektrisch veld",
-       "Stroomsterkte",
-       "PTC",
-       "Spanning"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Stroomsterkte»: de lading per tijd (I = Q/t, ampère).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Stroomsterkte» in?",
-      "o": [
-       "R is constant; U en I zijn recht evenredig.",
-       "gebied waarin een lading een kracht ondervindt",
-       "de lading per tijd (I = Q/t, ampère)",
-       "R verandert met spanning of temperatuur."
+       "Parallelschakeling",
+       "Weerstand",
+       "Transformator"
       ],
       "c": 2,
-      "u": "«Stroomsterkte» betekent: de lading per tijd (I = Q/t, ampère).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Spanning»?",
-      "o": [
-       "zelfde richting optellen, tegengestelde richting aftrekken.",
-       "de energie per lading (volt)",
-       "de vectorsom van alle krachten op een object",
-       "aantal trillingen per seconde (Hz)"
+      "d": 1,
+      "u": "De tegenwerking van de stroom. Dat past bij Weerstand: tegenwerking van stroom.",
+      "uo": [
+       "Nee, dat hoort bij Wet van Ohm: U = I·R.",
+       "Nee, dat hoort bij Parallelschakeling: spanning overal gelijk.",
+       "Klopt: tegenwerking van stroom.",
+       "Nee, dat hoort bij Transformator: transformeert de spanning."
       ],
-      "c": 1,
-      "u": "«Spanning» betekent: de energie per lading (volt).",
-      "d": 1
+      "uh": "Weerstand: tegenwerking van stroom."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de energie per lading (volt)\"?",
+      "v": "Een component werkt de stroom tegen, gemeten in ohm. Wat is hier aan de hand?",
       "o": [
-       "Spanning",
-       "Significante cijfers",
-       "Afscherming",
-       "Gewicht"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Spanning»: de energie per lading (volt).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de energie per lading (volt)\"?",
-      "o": [
-       "PTC",
-       "Serieschakeling",
-       "Aardlekschakelaar",
-       "Spanning"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Spanning»: de energie per lading (volt).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Spanning» in?",
-      "o": [
-       "de energie per lading (volt)",
-       "een stof die stroom nauwelijks doorlaat",
-       "R is constant; U en I zijn recht evenredig.",
-       "componenten naast elkaar; de spanning is gelijk"
-      ],
-      "c": 0,
-      "u": "«Spanning» betekent: de energie per lading (volt).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Weerstand»?",
-      "o": [
-       "steunkracht loodrecht op een oppervlak.",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element.",
-       "de altijd aanwezige straling om ons heen"
-      ],
-      "c": 1,
-      "u": "«Weerstand» betekent: de mate waarin een geleider de stroom tegenwerkt (ohm).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de mate waarin een geleider de stroom tegenwerkt (ohm)\"?",
-      "o": [
-       "Alfaverval",
-       "Geleider",
-       "Versnelling",
+       "Elektromagnetische inductie",
+       "Stroomsterkte",
+       "Parallelschakeling",
        "Weerstand"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Weerstand»: de mate waarin een geleider de stroom tegenwerkt (ohm).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de mate waarin een geleider de stroom tegenwerkt (ohm)\"?",
-      "o": [
-       "Weerstand",
-       "PTC",
-       "Isolator",
-       "Wet van Ohm"
+      "d": 2,
+      "u": "Een component werkt de stroom tegen, gemeten in ohm. Dat past bij Weerstand: tegenwerking van stroom.",
+      "uo": [
+       "Nee, dat hoort bij Elektromagnetische inductie: spanning uit wisselend veld.",
+       "Nee, dat hoort bij Stroomsterkte: lading per tijd.",
+       "Nee, dat hoort bij Parallelschakeling: spanning overal gelijk.",
+       "Klopt: tegenwerking van stroom."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Weerstand»: de mate waarin een geleider de stroom tegenwerkt (ohm).",
-      "d": 3
+      "uh": "Weerstand: tegenwerking van stroom."
      },
      {
-      "v": "Wat houdt «Weerstand» in?",
+      "v": "Het vermogen P = U keer I. Welk begrip past hierbij?",
       "o": [
-       "R is constant; U en I zijn recht evenredig.",
-       "een verbinding met vrijwel geen weerstand",
-       "de omgezette energie per tijd",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)"
-      ],
-      "c": 3,
-      "u": "«Weerstand» betekent: de mate waarin een geleider de stroom tegenwerkt (ohm).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Wet van Ohm»?",
-      "o": [
-       "U = I·R",
-       "gebied waarin een lading een kracht ondervindt",
-       "de tijd waarin de activiteit halveert",
-       "weerstand stijgt bij hogere temperatuur"
-      ],
-      "c": 0,
-      "u": "«Wet van Ohm» betekent: U = I·R.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"U = I·R\"?",
-      "o": [
-       "Versnelling",
-       "Elektrische lading",
+       "Elektrisch vermogen",
        "Wet van Ohm",
-       "Meetonzekerheid"
+       "Weerstand",
+       "Transformator"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Wet van Ohm»: U = I·R.",
-      "d": 2
+      "c": 0,
+      "d": 3,
+      "u": "Het vermogen P = U keer I. Dat past bij Elektrisch vermogen: P = U·I.",
+      "uo": [
+       "Klopt: P = U·I.",
+       "Nee, dat hoort bij Wet van Ohm: U = I·R.",
+       "Nee, dat hoort bij Weerstand: tegenwerking van stroom.",
+       "Nee, dat hoort bij Transformator: transformeert de spanning."
+      ],
+      "uh": "Elektrisch vermogen: P = U·I."
      },
      {
-      "v": "Welke term past bij: \"U = I·R\"?",
+      "v": "Het vermogen is de spanning maal de stroom, P is U maal I. Om welk begrip gaat het?",
       "o": [
        "Parallelschakeling",
        "Elektrisch vermogen",
-       "Elektrische lading",
-       "Wet van Ohm"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Wet van Ohm»: U = I·R.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Wet van Ohm» in?",
-      "o": [
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "R verandert met spanning of temperatuur.",
-       "U = I·R",
-       "laat stroom maar in één richting door; een led geeft daarbij licht"
-      ],
-      "c": 2,
-      "u": "«Wet van Ohm» betekent: U = I·R.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Serieschakeling»?",
-      "o": [
-       "een heen-en-weer beweging om een evenwichtsstand",
-       "componenten achter elkaar; de stroom is overal gelijk",
-       "onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken.",
-       "een trilling die energie transporteert zonder massatransport"
-      ],
-      "c": 1,
-      "u": "«Serieschakeling» betekent: componenten achter elkaar; de stroom is overal gelijk.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"componenten achter elkaar; de stroom is overal gelijk\"?",
-      "o": [
-       "Serieschakeling",
-       "Elektrisch veld",
-       "Bètaverval",
+       "Stroomsterkte",
        "Spanning"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Serieschakeling»: componenten achter elkaar; de stroom is overal gelijk.",
-      "d": 2
+      "c": 1,
+      "d": 1,
+      "u": "Het vermogen is de spanning maal de stroom, P is U maal I. Dat past bij Elektrisch vermogen: P = U·I.",
+      "uo": [
+       "Nee, dat hoort bij Parallelschakeling: spanning overal gelijk.",
+       "Klopt: P = U·I.",
+       "Nee, dat hoort bij Stroomsterkte: lading per tijd.",
+       "Nee, dat hoort bij Spanning: potentiaalverschil."
+      ],
+      "uh": "Elektrisch vermogen: P = U·I."
      },
      {
-      "v": "Welke term past bij: \"componenten achter elkaar; de stroom is overal gelijk\"?",
+      "v": "Een schakeling met overal dezelfde spanning. Welk begrip herken je hier?",
       "o": [
+       "Elektromagnetische inductie",
        "Serieschakeling",
-       "Elektrische lading",
-       "NTC",
+       "Parallelschakeling",
+       "Wet van Ohm"
+      ],
+      "c": 2,
+      "d": 2,
+      "u": "Een schakeling met overal dezelfde spanning. Dat past bij Parallelschakeling: spanning overal gelijk.",
+      "uo": [
+       "Nee, dat hoort bij Elektromagnetische inductie: spanning uit wisselend veld.",
+       "Nee, dat hoort bij Serieschakeling: stroom overal gelijk.",
+       "Klopt: spanning overal gelijk.",
+       "Nee, dat hoort bij Wet van Ohm: U = I·R."
+      ],
+      "uh": "Parallelschakeling: spanning overal gelijk."
+     },
+     {
+      "v": "Het apparaat dat de spanning transformeert. Wat is hier aan de hand?",
+      "o": [
+       "Weerstand",
+       "Elektromagnetische inductie",
+       "Lorentzkracht",
+       "Transformator"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Het apparaat dat de spanning transformeert. Dat past bij Transformator: transformeert de spanning.",
+      "uo": [
+       "Nee, dat hoort bij Weerstand: tegenwerking van stroom.",
+       "Nee, dat hoort bij Elektromagnetische inductie: spanning uit wisselend veld.",
+       "Nee, dat hoort bij Lorentzkracht: kracht op bewegende lading.",
+       "Klopt: transformeert de spanning."
+      ],
+      "uh": "Transformator: transformeert de spanning."
+     },
+     {
+      "v": "De relatie U = I keer R. Welk begrip past hierbij?",
+      "o": [
+       "Wet van Ohm",
+       "Serieschakeling",
+       "Transformator",
+       "Stroomsterkte"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "De relatie U = I keer R. Dat past bij Wet van Ohm: U = I·R.",
+      "uo": [
+       "Klopt: U = I·R.",
+       "Nee, dat hoort bij Serieschakeling: stroom overal gelijk.",
+       "Nee, dat hoort bij Transformator: transformeert de spanning.",
+       "Nee, dat hoort bij Stroomsterkte: lading per tijd."
+      ],
+      "uh": "Wet van Ohm: U = I·R."
+     },
+     {
+      "v": "De hoeveelheid lading die per seconde voorbijkomt, in ampère. Om welk begrip gaat het?",
+      "o": [
+       "Spanning",
+       "Stroomsterkte",
+       "Weerstand",
+       "Serieschakeling"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "De hoeveelheid lading die per seconde voorbijkomt, in ampère. Dat past bij Stroomsterkte: lading per tijd.",
+      "uo": [
+       "Nee, dat hoort bij Spanning: potentiaalverschil.",
+       "Klopt: lading per tijd.",
+       "Nee, dat hoort bij Weerstand: tegenwerking van stroom.",
+       "Nee, dat hoort bij Serieschakeling: stroom overal gelijk."
+      ],
+      "uh": "Stroomsterkte: lading per tijd."
+     },
+     {
+      "v": "Een schakeling met overal dezelfde stroom. Welk begrip herken je hier?",
+      "o": [
+       "Spanning",
+       "Parallelschakeling",
+       "Serieschakeling",
        "Elektrisch vermogen"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Serieschakeling»: componenten achter elkaar; de stroom is overal gelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Serieschakeling» in?",
-      "o": [
-       "een stof die stroom goed doorlaat",
-       "componenten naast elkaar; de spanning is gelijk",
-       "weerstand daalt bij hogere temperatuur (thermometer)",
-       "componenten achter elkaar; de stroom is overal gelijk"
-      ],
-      "c": 3,
-      "u": "«Serieschakeling» betekent: componenten achter elkaar; de stroom is overal gelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Parallelschakeling»?",
-      "o": [
-       "een kracht die beweging tegenwerkt",
-       "de afgelegde weg per tijd (v = s/t)",
-       "componenten naast elkaar; de spanning is gelijk",
-       "warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit."
-      ],
       "c": 2,
-      "u": "«Parallelschakeling» betekent: componenten naast elkaar; de spanning is gelijk.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"componenten naast elkaar; de spanning is gelijk\"?",
-      "o": [
-       "Parallelschakeling",
-       "Radiogolven",
-       "Kortsluiting",
-       "Gamma (γ)"
+      "d": 3,
+      "u": "Een schakeling met overal dezelfde stroom. Dat past bij Serieschakeling: stroom overal gelijk.",
+      "uo": [
+       "Nee, dat hoort bij Spanning: potentiaalverschil.",
+       "Nee, dat hoort bij Parallelschakeling: spanning overal gelijk.",
+       "Klopt: stroom overal gelijk.",
+       "Nee, dat hoort bij Elektrisch vermogen: P = U·I."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Parallelschakeling»: componenten naast elkaar; de spanning is gelijk.",
-      "d": 2
+      "uh": "Serieschakeling: stroom overal gelijk."
      },
      {
-      "v": "Welke term past bij: \"componenten naast elkaar; de spanning is gelijk\"?",
-      "o": [
-       "Diode / LED",
-       "Parallelschakeling",
-       "Elektrisch vermogen",
-       "Vermogen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Parallelschakeling»: componenten naast elkaar; de spanning is gelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Parallelschakeling» in?",
-      "o": [
-       "weerstand daalt bij meer licht",
-       "de lading per tijd (I = Q/t, ampère)",
-       "weerstand daalt bij hogere temperatuur (thermometer)",
-       "componenten naast elkaar; de spanning is gelijk"
-      ],
-      "c": 3,
-      "u": "«Parallelschakeling» betekent: componenten naast elkaar; de spanning is gelijk.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Elektrisch veld»?",
-      "o": [
-       "foton (EM-straling)groot (zwak ioniserend)",
-       "gebied waarin een lading een kracht ondervindt",
-       "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element.",
-       "zonder resulterende kracht blijft de snelheid gelijk"
-      ],
-      "c": 1,
-      "u": "«Elektrisch veld» betekent: gebied waarin een lading een kracht ondervindt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gebied waarin een lading een kracht ondervindt\"?",
-      "o": [
-       "Optellen / aftrekken",
-       "Elektrisch veld",
-       "Weerstand",
-       "Ontbinden"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Elektrisch veld»: gebied waarin een lading een kracht ondervindt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gebied waarin een lading een kracht ondervindt\"?",
-      "o": [
-       "Elektrisch veld",
-       "Niet-ohmse weerstand",
-       "Isolator",
-       "Vermogen"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Elektrisch veld»: gebied waarin een lading een kracht ondervindt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Elektrisch veld» in?",
-      "o": [
-       "componenten naast elkaar; de spanning is gelijk",
-       "een stof die stroom goed doorlaat",
-       "R verandert met spanning of temperatuur.",
-       "gebied waarin een lading een kracht ondervindt"
-      ],
-      "c": 3,
-      "u": "«Elektrisch veld» betekent: gebied waarin een lading een kracht ondervindt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Elektrisch vermogen»?",
-      "o": [
-       "de snelheid waarmee geluid zich voortplant",
-       "P = U·I",
-       "eenparig versnelde beweging door de zwaartekracht (luchtweerstand verwaarloosd); alle massa's versnellen met g.",
-       "weerstand daalt bij meer licht"
-      ],
-      "c": 1,
-      "u": "«Elektrisch vermogen» betekent: P = U·I.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"P = U·I\"?",
-      "o": [
-       "Elektrisch vermogen",
-       "Activiteit",
-       "Röntgenfoto",
-       "Aardlekschakelaar"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Elektrisch vermogen»: P = U·I.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"P = U·I\"?",
-      "o": [
-       "Isolator",
-       "Elektrisch vermogen",
-       "NTC",
-       "Zekering"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Elektrisch vermogen»: P = U·I.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Elektrisch vermogen» in?",
-      "o": [
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "een beveiliging die de stroom onderbreekt bij overbelasting",
-       "P = U·I",
-       "R is constant; U en I zijn recht evenredig."
-      ],
-      "c": 2,
-      "u": "«Elektrisch vermogen» betekent: P = U·I.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «PTC»?",
-      "o": [
-       "een reactie waarbij atoomkernen veranderen",
-       "aantal trillingen per seconde (Hz)",
-       "de snelheidsverandering per tijd (a = Δv/Δt)",
-       "weerstand stijgt bij hogere temperatuur"
-      ],
-      "c": 3,
-      "u": "«PTC» betekent: weerstand stijgt bij hogere temperatuur.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"weerstand stijgt bij hogere temperatuur\"?",
-      "o": [
-       "Gewicht",
-       "Alfastraling",
-       "Tweede wet",
-       "PTC"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «PTC»: weerstand stijgt bij hogere temperatuur.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"weerstand stijgt bij hogere temperatuur\"?",
-      "o": [
-       "PTC",
-       "LDR",
-       "Elektrisch veld",
-       "Spanning"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «PTC»: weerstand stijgt bij hogere temperatuur.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «PTC» in?",
-      "o": [
-       "weerstand stijgt bij hogere temperatuur",
-       "P = U·I",
-       "een verbinding met vrijwel geen weerstand",
-       "gebied waarin een lading een kracht ondervindt"
-      ],
-      "c": 0,
-      "u": "«PTC» betekent: weerstand stijgt bij hogere temperatuur.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «NTC»?",
-      "o": [
-       "de snelheidsverandering per tijd (a = Δv/Δt)",
-       "warmtestraling / warmtecamera",
-       "weerstand daalt bij hogere temperatuur (thermometer)",
-       "weerstand stijgt bij hogere temperatuur"
-      ],
-      "c": 2,
-      "u": "«NTC» betekent: weerstand daalt bij hogere temperatuur (thermometer).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"weerstand daalt bij hogere temperatuur (thermometer)\"?",
-      "o": [
-       "Omgekeerd evenredig",
-       "Trillingstijd / periode (T)",
-       "Isolator",
-       "NTC"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «NTC»: weerstand daalt bij hogere temperatuur (thermometer).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"weerstand daalt bij hogere temperatuur (thermometer)\"?",
-      "o": [
-       "Vermogen",
-       "LDR",
-       "Isolator",
-       "NTC"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «NTC»: weerstand daalt bij hogere temperatuur (thermometer).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «NTC» in?",
-      "o": [
-       "de energie per lading (volt)",
-       "weerstand daalt bij hogere temperatuur (thermometer)",
-       "gebied waarin een lading een kracht ondervindt",
-       "R is constant; U en I zijn recht evenredig."
-      ],
-      "c": 1,
-      "u": "«NTC» betekent: weerstand daalt bij hogere temperatuur (thermometer).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «LDR»?",
-      "o": [
-       "weerstand daalt bij meer licht",
-       "snel, vooral botten en longen; stralingsrisico",
-       "gebied waarin een lading een kracht ondervindt",
-       "het terugkaatsen van een golf tegen een oppervlak"
-      ],
-      "c": 0,
-      "u": "«LDR» betekent: weerstand daalt bij meer licht.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"weerstand daalt bij meer licht\"?",
-      "o": [
-       "Ontbinden",
-       "Echografie",
-       "LDR",
-       "Geleiding"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «LDR»: weerstand daalt bij meer licht.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"weerstand daalt bij meer licht\"?",
-      "o": [
-       "Elektrische lading",
-       "Diode / LED",
-       "Serieschakeling",
-       "LDR"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «LDR»: weerstand daalt bij meer licht.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «LDR» in?",
-      "o": [
-       "weerstand daalt bij meer licht",
-       "componenten achter elkaar; de stroom is overal gelijk",
-       "P = U·I",
-       "de energie per lading (volt)"
-      ],
-      "c": 0,
-      "u": "«LDR» betekent: weerstand daalt bij meer licht.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Diode / LED»?",
-      "o": [
-       "steunkracht loodrecht op een oppervlak.",
-       "de afstand tussen twee opeenvolgende toppen (m)",
-       "U = I·R",
-       "laat stroom maar in één richting door; een led geeft daarbij licht"
-      ],
-      "c": 3,
-      "u": "«Diode / LED» betekent: laat stroom maar in één richting door; een led geeft daarbij licht.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"laat stroom maar in één richting door; een led geeft daarbij licht\"?",
-      "o": [
-       "Significante cijfers",
-       "Diode / LED",
-       "CT-scan",
-       "Boventonen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Diode / LED»: laat stroom maar in één richting door; een led geeft daarbij licht.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"laat stroom maar in één richting door; een led geeft daarbij licht\"?",
-      "o": [
-       "Niet-ohmse weerstand",
-       "Diode / LED",
-       "Elektrische lading",
-       "Vermogen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Diode / LED»: laat stroom maar in één richting door; een led geeft daarbij licht.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Diode / LED» in?",
-      "o": [
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "laat stroom maar in één richting door; een led geeft daarbij licht",
-       "de omgezette energie per tijd",
-       "U = I·R"
-      ],
-      "c": 1,
-      "u": "«Diode / LED» betekent: laat stroom maar in één richting door; een led geeft daarbij licht.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ohmse weerstand»?",
-      "o": [
-       "heliumkern (2 p + 2 n)gering (sterk ioniserend)",
-       "de omgezette energie per tijd",
-       "R is constant; U en I zijn recht evenredig.",
-       "gebied waarin een lading een kracht ondervindt"
-      ],
-      "c": 2,
-      "u": "«Ohmse weerstand» betekent: R is constant; U en I zijn recht evenredig..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"R is constant; U en I zijn recht evenredig.\"?",
-      "o": [
-       "Ohmse weerstand",
-       "Resonantie",
-       "Wrijvingskracht",
-       "Röntgenstraling"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ohmse weerstand»: R is constant; U en I zijn recht evenredig..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"R is constant; U en I zijn recht evenredig.\"?",
-      "o": [
-       "Diode / LED",
-       "PTC",
-       "Isolator",
-       "Ohmse weerstand"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Ohmse weerstand»: R is constant; U en I zijn recht evenredig..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ohmse weerstand» in?",
-      "o": [
-       "weerstand daalt bij meer licht",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "R is constant; U en I zijn recht evenredig.",
-       "componenten naast elkaar; de spanning is gelijk"
-      ],
-      "c": 2,
-      "u": "«Ohmse weerstand» betekent: R is constant; U en I zijn recht evenredig..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Niet-ohmse weerstand»?",
-      "o": [
-       "R is constant; U en I zijn recht evenredig.",
-       "aantal trillingen per seconde (Hz)",
-       "R verandert met spanning of temperatuur.",
-       "de afgelegde weg per tijd (v = s/t)"
-      ],
-      "c": 2,
-      "u": "«Niet-ohmse weerstand» betekent: R verandert met spanning of temperatuur..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"R verandert met spanning of temperatuur.\"?",
-      "o": [
-       "Niet-ohmse weerstand",
-       "Golfsnelheid",
-       "Ohmse weerstand",
-       "Doppler-effect"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Niet-ohmse weerstand»: R verandert met spanning of temperatuur..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"R verandert met spanning of temperatuur.\"?",
-      "o": [
-       "Niet-ohmse weerstand",
-       "Zekering",
-       "Elektrisch veld",
-       "Ohmse weerstand"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Niet-ohmse weerstand»: R verandert met spanning of temperatuur..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Niet-ohmse weerstand» in?",
-      "o": [
-       "R verandert met spanning of temperatuur.",
-       "componenten naast elkaar; de spanning is gelijk",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "weerstand stijgt bij hogere temperatuur"
-      ],
-      "c": 0,
-      "u": "«Niet-ohmse weerstand» betekent: R verandert met spanning of temperatuur..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Aardlekschakelaar»?",
-      "o": [
-       "zonnestraling",
-       "onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken.",
-       "het vermogen om arbeid te verrichten (joule)",
-       "gedetailleerd 3D-beeld; hogere stralingsdosis"
-      ],
-      "c": 1,
-      "u": "«Aardlekschakelaar» betekent: onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken.\"?",
-      "o": [
-       "Aardlekschakelaar",
-       "Kernreactie",
-       "Zekering",
-       "Golflengte"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Aardlekschakelaar»: onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken.\"?",
+      "v": "Het opwekken van spanning door een wisselend veld. Wat is hier aan de hand?",
       "o": [
        "Stroomsterkte",
-       "Diode / LED",
-       "Aardlekschakelaar",
-       "Elektrisch vermogen"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Aardlekschakelaar»: onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Aardlekschakelaar» in?",
-      "o": [
-       "weerstand daalt bij hogere temperatuur (thermometer)",
-       "de energie per lading (volt)",
-       "U = I·R",
-       "onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken."
+       "Spanning",
+       "Weerstand",
+       "Elektromagnetische inductie"
       ],
       "c": 3,
-      "u": "«Aardlekschakelaar» betekent: onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken..",
-      "d": 3
+      "d": 1,
+      "u": "Het opwekken van spanning door een wisselend veld. Dat past bij Elektromagnetische inductie: spanning uit wisselend veld.",
+      "uo": [
+       "Nee, dat hoort bij Stroomsterkte: lading per tijd.",
+       "Nee, dat hoort bij Spanning: potentiaalverschil.",
+       "Nee, dat hoort bij Weerstand: tegenwerking van stroom.",
+       "Klopt: spanning uit wisselend veld."
+      ],
+      "uh": "Elektromagnetische inductie: spanning uit wisselend veld."
+     },
+     {
+      "v": "De spanning is de stroom maal de weerstand, U is I maal R. Welk begrip past hierbij?",
+      "o": [
+       "Wet van Ohm",
+       "Elektrisch vermogen",
+       "Transformator",
+       "Stroomsterkte"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "De spanning is de stroom maal de weerstand, U is I maal R. Dat past bij Wet van Ohm: U = I·R.",
+      "uo": [
+       "Klopt: U = I·R.",
+       "Nee, dat hoort bij Elektrisch vermogen: P = U·I.",
+       "Nee, dat hoort bij Transformator: transformeert de spanning.",
+       "Nee, dat hoort bij Stroomsterkte: lading per tijd."
+      ],
+      "uh": "Wet van Ohm: U = I·R."
+     },
+     {
+      "v": "Een wisselend magneetveld wekt in een spoel spanning op. Om welk begrip gaat het?",
+      "o": [
+       "Lorentzkracht",
+       "Elektromagnetische inductie",
+       "Transformator",
+       "Weerstand"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "Een wisselend magneetveld wekt in een spoel spanning op. Dat past bij Elektromagnetische inductie: spanning uit wisselend veld.",
+      "uo": [
+       "Nee, dat hoort bij Lorentzkracht: kracht op bewegende lading.",
+       "Klopt: spanning uit wisselend veld.",
+       "Nee, dat hoort bij Transformator: transformeert de spanning.",
+       "Nee, dat hoort bij Weerstand: tegenwerking van stroom."
+      ],
+      "uh": "Elektromagnetische inductie: spanning uit wisselend veld."
+     },
+     {
+      "v": "Naast elkaar geschakelde lampjes hebben dezelfde spanning. Welk begrip herken je hier?",
+      "o": [
+       "Wet van Ohm",
+       "Transformator",
+       "Parallelschakeling",
+       "Spanning"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Naast elkaar geschakelde lampjes hebben dezelfde spanning. Dat past bij Parallelschakeling: spanning overal gelijk.",
+      "uo": [
+       "Nee, dat hoort bij Wet van Ohm: U = I·R.",
+       "Nee, dat hoort bij Transformator: transformeert de spanning.",
+       "Klopt: spanning overal gelijk.",
+       "Nee, dat hoort bij Spanning: potentiaalverschil."
+      ],
+      "uh": "Parallelschakeling: spanning overal gelijk."
+     },
+     {
+      "v": "Een apparaat maakt de spanning hoger of lager via inductie. Wat is hier aan de hand?",
+      "o": [
+       "Serieschakeling",
+       "Elektromagnetische inductie",
+       "Stroomsterkte",
+       "Transformator"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Een apparaat maakt de spanning hoger of lager via inductie. Dat past bij Transformator: transformeert de spanning.",
+      "uo": [
+       "Nee, dat hoort bij Serieschakeling: stroom overal gelijk.",
+       "Nee, dat hoort bij Elektromagnetische inductie: spanning uit wisselend veld.",
+       "Nee, dat hoort bij Stroomsterkte: lading per tijd.",
+       "Klopt: transformeert de spanning."
+      ],
+      "uh": "Transformator: transformeert de spanning."
      }
     ],
     "oe": [
@@ -43154,88 +40751,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Vermogen",
-      "d": "de omgezette energie per tijd"
-     },
-     {
-      "t": "Kortsluiting",
-      "d": "een verbinding met vrijwel geen weerstand"
-     },
-     {
-      "t": "Geleider",
-      "d": "een stof die stroom goed doorlaat"
-     },
-     {
-      "t": "Isolator",
-      "d": "een stof die stroom nauwelijks doorlaat"
-     },
-     {
-      "t": "Zekering",
-      "d": "een beveiliging die de stroom onderbreekt bij overbelasting"
-     },
-     {
-      "t": "Elektrische lading",
-      "d": "eigenschap die elektrische krachten veroorzaakt (C)"
-     },
-     {
-      "t": "Stroomsterkte",
-      "d": "de lading per tijd (I = Q/t, ampère)"
-     },
-     {
-      "t": "Spanning",
-      "d": "de energie per lading (volt)"
-     },
-     {
-      "t": "Weerstand",
-      "d": "de mate waarin een geleider de stroom tegenwerkt (ohm)"
-     },
-     {
       "t": "Wet van Ohm",
-      "d": "U = I·R"
+      "d": "de relatie U = I·R tussen spanning, stroom en weerstand"
      },
      {
       "t": "Serieschakeling",
-      "d": "componenten achter elkaar; de stroom is overal gelijk"
+      "d": "een schakeling waarin de stroom overal gelijk is"
      },
      {
       "t": "Parallelschakeling",
-      "d": "componenten naast elkaar; de spanning is gelijk"
-     },
-     {
-      "t": "Elektrisch veld",
-      "d": "gebied waarin een lading een kracht ondervindt"
+      "d": "een schakeling waarin de spanning overal gelijk is"
      },
      {
       "t": "Elektrisch vermogen",
-      "d": "P = U·I"
+      "d": "het vermogen P = U·I in watt"
      },
      {
-      "t": "PTC",
-      "d": "weerstand stijgt bij hogere temperatuur"
+      "t": "Elektromagnetische inductie",
+      "d": "het opwekken van spanning door een wisselend magneetveld"
      },
      {
-      "t": "NTC",
-      "d": "weerstand daalt bij hogere temperatuur (thermometer)"
+      "t": "Weerstand",
+      "d": "de mate waarin een component de stroom tegenwerkt, in ohm"
      },
      {
-      "t": "LDR",
-      "d": "weerstand daalt bij meer licht"
+      "t": "Stroomsterkte",
+      "d": "de hoeveelheid lading per tijd, in ampère"
      },
      {
-      "t": "Diode / LED",
-      "d": "laat stroom maar in één richting door; een led geeft daarbij licht"
+      "t": "Spanning",
+      "d": "het verschil in elektrische potentiaal, in volt"
      },
      {
-      "t": "Ohmse weerstand",
-      "d": "R is constant; U en I zijn recht evenredig."
+      "t": "Lorentzkracht",
+      "d": "de kracht op een bewegende lading in een magneetveld, F = q·v·B·sin θ"
      },
      {
-      "t": "Niet-ohmse weerstand",
-      "d": "R verandert met spanning of temperatuur."
-     },
-     {
-      "t": "Aardlekschakelaar",
-      "d": "onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken."
+      "t": "Transformator",
+      "d": "een apparaat dat via inductie de spanning omhoog of omlaag transformeert"
      }
     ]
    },
@@ -43262,1611 +40815,615 @@ var VAKKEN = [
      "Ioniserende straling en gezondheid",
      "Elektromagnetische straling en materie (fotonenergie)"
     ],
-    "sam": "<div class=\"sam-head\">Domein E - Straling en materie</div><div class=\"sam-section\"><h3>Intuïtieve kern</h3><ul><li>Straling draagt energie over.</li><li>Ioniserende straling kan cellen beschadigen.</li></ul></div><div class=\"sam-section\"><h3>Conceptueel model</h3><ul><li>Soorten straling: α, β, γ.</li><li>Halveringstijd: tijd waarin activiteit halveert.</li><li>Activiteit: <span class=\"fm\">A = ΔN / Δt</span></li><li>Dosis: energie per kg weefsel.</li></ul></div><div class=\"sam-section\"><h3>Sleutelbegrippen</h3><ul><li><strong>Halveringstijd (T½)</strong>: tijd waarin de activiteit van een radioactieve stof halveert</li><li><strong>Activiteit (A)</strong>: aantal kernontvallen per seconde; eenheid becquerel (Bq)</li><li><strong>Alfa-straling (α)</strong>: heliumkernen; sterk ioniserend, weinig doordringend, gestopt door papier</li><li><strong>Bèta-straling (β)</strong>: elektronen; matig ioniserend, gestopt door aluminium</li><li><strong>Gammastraling (γ)</strong>: elektromagnetische straling; sterk doordringend, weinig ioniserend</li><li><strong>Ioniserende straling</strong>: straling die atomen ioniseert en celbeschadiging kan veroorzaken</li><li><strong>Absorbed dose</strong>: geabsorbeerde energie per kilogram weefsel; eenheid gray (Gy)</li></ul></div><div class=\"sam-section\"><h3>CE-laag</h3><p><strong>Verklaren:</strong> α-straling heeft grote ioniserende werking.</p><p><strong>Toepassen:</strong> Halveringstijd 8 uur → na 16 uur 25% over.</p><p><strong>Analyseren:</strong> γ-straling dringt dieper door dan α en β.</p></div><div class=\"sam-section\"><h3>Examenvallen</h3><ul><li>Halveringstijd verkeerd interpreteren.</li><li>Doordringend vermogen omdraaien.</li></ul></div><div class=\"sam-section\"><h3>Active recall</h3><ul><li>Wat is halveringstijd?</li><li>Wat is het verschil tussen α, β en γ?</li><li>Waarom is ioniserende straling gevaarlijk?</li></ul></div>",
+    "sam": "<div class=\"sam-intro\"><strong>Ioniserende straling</strong> slaat elektronen uit atomen. De drie soorten zijn <strong>alfa</strong>, <strong>bèta</strong> en <strong>gamma</strong>, met een oplopend <strong>doordringend vermogen</strong>. De <strong>halveringstijd</strong> is de tijd waarin de helft vervalt; de <strong>activiteit</strong> meet je in becquerel en de <strong>dosis</strong> in gray of sievert.</div><div class=\"sam-head\">1. Soorten straling</div><p><strong>Alfastraling</strong> is een heliumkern, zwaar en weinig doordringend (papier stopt het). <strong>Bètastraling</strong> is een snel elektron, doordringender. <strong>Gammastraling</strong> is elektromagnetische straling met het grootste doordringend vermogen (lood nodig). Een <strong>isotoop</strong> is dezelfde soort atoom met een ander aantal neutronen; een instabiele kern vervalt onder uitzending van straling.</p><div class=\"sam-head\">2. Verval en dosis</div><p>De <strong>halveringstijd</strong> is de tijd waarin de helft van de kernen vervalt. De <strong>activiteit</strong> (aantal vervallen per seconde) meet je in becquerel. De opgenomen <strong>dosis</strong> straling meet je in gray, de effectieve dosis in sievert. Overal om ons heen is er <strong>achtergrondstraling</strong> van natuurlijke bronnen.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Ioniserende straling</div><div class=\"sam-definitie-body\">straling met genoeg energie om elektronen uit atomen te slaan.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Alfastraling</div><div class=\"sam-definitie-body\">een heliumkern: zwaar en weinig doordringend.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Bètastraling</div><div class=\"sam-definitie-body\">een snel elektron met een middelmatig doordringend vermogen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gammastraling</div><div class=\"sam-definitie-body\">elektromagnetische straling met het grootste doordringend vermogen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Halveringstijd</div><div class=\"sam-definitie-body\">de tijd waarin de helft van de kernen vervalt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Activiteit</div><div class=\"sam-definitie-body\">het aantal vervallen kernen per seconde, in becquerel.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Dosis</div><div class=\"sam-definitie-body\">de opgenomen hoeveelheid straling, in gray of sievert.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Isotoop</div><div class=\"sam-definitie-body\">een atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Kernreactie</div><div class=\"sam-definitie-body\">een verandering in de atoomkern waarbij straling of energie vrijkomt.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Achtergrondstraling</div><div class=\"sam-definitie-body\">de natuurlijke straling die overal in onze omgeving aanwezig is.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Ioniserende straling»</b> is slaat elektronen los, terwijl <b>«Achtergrondstraling»</b> natuurlijke straling is. <b>«Alfastraling»</b> is heliumkern, weinig doordringend, terwijl <b>«Bètastraling»</b> snel elektron is. <b>«Bètastraling»</b> is snel elektron, terwijl <b>«Gammastraling»</b> EM-straling, zeer doordringend is. <b>«Gammastraling»</b> is EM-straling, zeer doordringend, terwijl <b>«Alfastraling»</b> heliumkern, weinig doordringend is.</div>",
     "sv": [
      {
-      "v": "Wat is het verschil tussen alfa- beta- en gammastraling?",
+      "v": "Wat is ioniserende straling?",
       "o": [
-       "alfa = heliumkern, bèta = elektron, gamma = foton",
-       "alfastraling heeft van de drie het hoogste doordringend vermogen",
-       "bètastraling verandert het massagetal van de kern",
-       "gammastraling verandert het atoomnummer van de kern"
+       "straling die genoeg energie heeft om elektronen uit atomen te slaan",
+       "straling die alleen opwarmt",
+       "gewoon zichtbaar licht",
+       "geluid met hoge energie"
       ],
       "c": 0,
-      "u": "Doordringvermogen: alfa is het kleinst en stopt in papier. Beta stopt in aluminium. Gamma stopt in lood of beton en heeft het hoogste doordringvermogen."
+      "d": 2,
+      "u": "Ze ioniseert atomen.",
+      "uo": [
+       "Klopt: ze ioniseert atomen.",
+       "Nee, dat is niet-ioniserend.",
+       "Nee, licht ioniseert meestal niet.",
+       "Nee, geluid is geen straling."
+      ],
+      "uh": "Ioniserende straling: slaat elektronen los."
      },
      {
-      "v": "Wat is de wet van radioactief verval?",
+      "v": "Wat is alfastraling?",
       "o": [
-       "N = N0·(½)^(t/t½): exponentieel verval per halveringstijd",
-       "N = N0 − k·t: een lineaire afname van het aantal kernen",
-       "de activiteit van de bron neemt juist toe in de tijd",
-       "alle straling stopt volledig na drie halveringstijden"
+       "een snel elektron",
+       "een heliumkern, zwaar en weinig doordringend",
+       "elektromagnetische straling",
+       "een geluidsgolf"
       ],
-      "c": 0,
-      "u": "Na 1 halveringstijd is 50% over. Na 2 is 25% over. Na n halveringstijden is (half) tot de n·N0."
+      "c": 1,
+      "d": 3,
+      "u": "Een alfadeeltje is een heliumkern.",
+      "uo": [
+       "Nee, dat is bètastraling.",
+       "Klopt: een alfadeeltje is een heliumkern.",
+       "Nee, dat is gammastraling.",
+       "Nee, dat is geen straling van de kern."
+      ],
+      "uh": "Alfa: heliumkern, weinig doordringend."
      },
      {
-      "v": "Bij beta-min-verval verandert het atoomnummer Z met:",
+      "v": "Wat is bètastraling?",
       "o": [
-       "Z stijgt met 1: een neutron wordt een proton",
-       "Z daalt met 1 bij dit soort kernverval",
-       "Z daalt met 2 bij dit soort kernverval",
-       "Z blijft bij bètaverval precies gelijk"
+       "zichtbaar licht",
+       "een heliumkern",
+       "een snel elektron",
+       "een proton in rust"
       ],
-      "c": 0,
-      "u": "Beta-min verval: n geeft p plus e min plus antineutrino. Het massagetal A blijft gelijk, Z stijgt met 1."
+      "c": 2,
+      "d": 3,
+      "u": "Bètastraling is een snel elektron.",
+      "uo": [
+       "Nee, dat is geen kernstraling.",
+       "Nee, dat is alfastraling.",
+       "Klopt: bètastraling is een snel elektron.",
+       "Nee, dat klopt niet."
+      ],
+      "uh": "Bèta: snel elektron."
      },
      {
-      "v": "Wat is de fotonenergie en hoe hangt die af van de frequentie?",
+      "v": "Wat is gammastraling?",
       "o": [
-       "E = h·f: hogere frequentie geeft meer energie per foton",
-       "E = h gedeeld door f: hogere frequentie geeft minder energie",
-       "Fotonenergie is onafhankelijk van frequentie",
-       "Fotonenergie hangt alleen af van de golflengte"
+       "een geluidsgolf",
+       "een heliumkern",
+       "een snel elektron",
+       "elektromagnetische straling met het grootste doordringend vermogen"
       ],
-      "c": 0,
-      "u": "E = h·f. Hogere frequentie (kortere golflengte) geeft meer energie per foton. Gamma heeft de hoogste energie; radiogolven de laagste."
+      "c": 3,
+      "d": 3,
+      "u": "Gamma is EM-straling en zeer doordringend.",
+      "uo": [
+       "Nee, geluid is geen straling.",
+       "Nee, dat is alfa.",
+       "Nee, dat is bèta.",
+       "Klopt: gamma is EM-straling en zeer doordringend."
+      ],
+      "uh": "Gamma: EM-straling, zeer doordringend."
      },
      {
-      "v": "Waarom is ioniserende straling gevaarlijk voor levend weefsel?",
+      "v": "Wat is de halveringstijd?",
       "o": [
-       "het slaat elektronen los uit atomen en kan zo DNA beschadigen",
-       "het verwarmt het levende weefsel alleen maar een beetje",
-       "het veroorzaakt uitsluitend oppervlakkige brandwonden op de huid",
-       "het werkt alleen in op cellen die toch al dood zijn"
+       "de tijd waarin de helft van de kernen vervalt",
+       "de tijd van één trilling",
+       "de tijd tot alle kernen vervallen zijn",
+       "de tijd om op te warmen"
       ],
       "c": 0,
-      "u": "Ioniserende straling (gamma, rontgen, alfa en beta) kan DNA in cellen beschadigen wat kan leiden tot mutaties, kanker of celdood. Alfastraling is intern het gevaarlijkst hoewel het extern weinig doordringing heeft."
+      "d": 3,
+      "u": "Per halveringstijd halveert het aantal kernen.",
+      "uo": [
+       "Klopt: per halveringstijd halveert het aantal kernen.",
+       "Nee, dat is de trillingstijd.",
+       "Nee, dat duurt oneindig lang.",
+       "Nee, dat is iets anders."
+      ],
+      "uh": "Halveringstijd: de helft vervalt."
      },
      {
-      "v": "Wat is de atoommassa van een element en waaruit bestaat het?",
+      "v": "In welke eenheid meet je de activiteit van een bron?",
       "o": [
-       "de totale massa van de protonen en neutronen in de kern",
-       "de massa van uitsluitend de elektronen om de kern heen",
-       "de massa van de protonen minus de massa van de neutronen",
-       "de gemiddelde massa van alle isotopen van dat element"
+       "gray (Gy)",
+       "becquerel (Bq)",
+       "hertz (Hz)",
+       "newton (N)"
       ],
-      "c": 0,
-      "u": "Massagetal A = aantal protonen (Z) + aantal neutronen (N). Atoomgetal Z bepaalt het element. Isotopen hebben hetzelfde Z maar verschillend N en dus verschillend A."
+      "c": 1,
+      "d": 2,
+      "u": "Activiteit is vervallen per seconde, in becquerel.",
+      "uo": [
+       "Nee, dat is de dosis.",
+       "Klopt: activiteit is vervallen per seconde, in becquerel.",
+       "Nee, dat is frequentie.",
+       "Nee, dat is kracht."
+      ],
+      "uh": "Activiteit: becquerel."
      },
      {
-      "v": "Welke kernreactie vindt plaats bij alfaverval? Wat verandert er aan het nuclide?",
+      "v": "In welke eenheid meet je de opgenomen stralingsdosis?",
       "o": [
-       "A daalt met 4 en Z met 2, naar een lichter element",
-       "A daalt met 1 en Z daalt eveneens met precies 1",
-       "A blijft gelijk terwijl Z met 1 toeneemt naar rechts",
-       "A stijgt met 4 en Z stijgt eveneens met 2 omhoog"
+       "ampère",
+       "becquerel",
+       "gray of sievert",
+       "watt"
       ],
-      "c": 0,
-      "u": "Alfaverval: de kern zendt een heliumkern ⁴₂He uit. A − 4, Z − 2. Het moederatoom transformeert naar een ander element. Bijv. ²³⁸U → ²³⁴Th + ⁴He."
-     },
-     {
-      "v": "Hoe werkt een Geiger-Müller teller bij het meten van radioactiviteit?",
-      "o": [
-       "straling ioniseert gas in een buis, wat een telbare puls geeft",
-       "het meet de temperatuur die de straling in de buis veroorzaakt",
-       "het absorbeert de straling volledig en weegt vervolgens de massa",
-       "het fotografeert het spoor van de straling, zoals een nevelvat"
+      "c": 2,
+      "d": 3,
+      "u": "De dosis meet je in gray (of sievert).",
+      "uo": [
+       "Nee, dat is stroom.",
+       "Nee, dat is de activiteit.",
+       "Klopt: de dosis meet je in gray (of sievert).",
+       "Nee, dat is vermogen."
       ],
-      "c": 0,
-      "u": "GM-teller: een metalen buis gevuld met edelgas bij lage druk. Ioniserende straling ioniseert het gas en veroorzaakt een elektrische puls. De pulsen worden per seconde geteld (activiteit in Bq)."
-     },
-     {
-      "v": "Wat is de eenheid van radioactiviteit en wat geeft ze aan?",
-      "o": [
-       "Becquerel (Bq) - het aantal kerntransformaties per seconde",
-       "Gray (Gy) - geabsorbeerde stralingsdosis per kg weefsel",
-       "Sievert (Sv) - effectieve dosis rekening houdend met stralingskwaliteit",
-       "Curie (Ci) - verouderde eenheid voor radioactief verval"
-      ],
-      "c": 0,
-      "u": "Activiteit in Bq: 1 Bq = 1 kernverval per seconde. Hoe hoger de activiteit, hoe meer straling per seconde. Gray en sievert meten de biologische effecten van straling."
-     },
-     {
-      "v": "Bij welk proces wordt massa direct omgezet in energie volgens E = mc²?",
-      "o": [
-       "Kernfusie en kernsplijting (massa-energiedefect)",
-       "Chemische verbranding (breking van chemische bindingen)",
-       "Foto-elektrisch effect (foton geeft energie aan elektron)",
-       "Radioactief verval (onveranderde massa)"
-      ],
-      "c": 0,
-      "u": "E = mc²: kernfusie (atoomkern vormt) en kernsplijting (kern splitst) gaan gepaard met massaverlies. Dit masserdefect wordt omgezet in enorme hoeveelheden energie."
-     },
-     {
-      "v": "Welk type straling stopt al in een vel papier of in de dode huidlaag?",
-      "o": [
-       "Alfastraling (α - heliumkern, zwaarste deeltje)",
-       "Betastraling (β - elektron, stopt in aluminium)",
-       "Gammastraling (γ - foton, stopt in lood)",
-       "Röntgenstraling (stopt in bot of lood)"
-      ],
-      "c": 0,
-      "u": "Alfadeeltjes zijn groot en zwaar (heliumkern) en ioniseren heel sterk maar kunnen niet door papier heen. Ze zijn gevaarlijk als bron intern wordt ingenomen (ingeademd of opgegeten). Extern vormen ze nauwelijks gevaar voor de mens."
+      "uh": "Dosis: gray/sievert."
      },
      {
       "v": "Wat is een isotoop?",
       "o": [
-       "zelfde element, ander aantal neutronen (zelfde Z, ander A)",
-       "een kern van een ander element met hetzelfde massagetal",
-       "een stabiele variant van een instabiel radioactief atoom",
-       "een atoom dat een of meer elektronen heeft afgestaan"
+       "een vorm van straling",
+       "een atoom met een andere lading",
+       "een molecuul met twee atomen",
+       "een atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen"
       ],
-      "c": 0,
-      "u": "Isotopen: zelfde atoomnummer Z (dus zelfde element), maar ander massagetal A (ander aantal neutronen). Bijv. ¹²C en ¹⁴C zijn beide koolstof maar ¹⁴C is radioactief. Isotopen hebben vrijwel dezelfde chemische eigenschappen."
+      "c": 3,
+      "d": 3,
+      "u": "Isotopen verschillen in aantal neutronen.",
+      "uo": [
+       "Nee, een isotoop is geen straling.",
+       "Nee, dat is een ion.",
+       "Nee, dat is een molecuul.",
+       "Klopt: isotopen verschillen in aantal neutronen."
+      ],
+      "uh": "Isotoop: zelfde element, ander aantal neutronen."
      },
      {
-      "v": "Welke medische toepassing maakt gebruik van gammastraling die door het lichaam heen kan dringen?",
+      "v": "Welke straling wordt al door een vel papier tegengehouden?",
       "o": [
-       "PET-scan en scintigrafie met radioactieve tracers",
-       "echografie, dat met geluidsgolven werkt in plaats van straling",
-       "MRI, dat gebruikmaakt van sterke magneetvelden en radiogolven",
-       "een röntgenfoto, die röntgenstraling gebruikt en geen gamma"
+       "alfastraling",
+       "gammastraling",
+       "röntgenstraling",
+       "geen enkele"
       ],
       "c": 0,
-      "u": "PET-scan: radioactief glucose (FDG) wordt opgenomen door actieve cellen (bijv. tumoren). β⁺-verval geeft gammastraling die buiten het lichaam wordt gemeten. Vereist korte T½ zodat de straling snel afneemt na de scan."
+      "d": 3,
+      "u": "Alfastraling is het minst doordringend.",
+      "uo": [
+       "Klopt: alfastraling is het minst doordringend.",
+       "Nee, die heeft juist lood nodig.",
+       "Nee, die is sterk doordringend.",
+       "Nee, alfa wordt wel gestopt."
+      ],
+      "uh": "Papier stopt alfastraling."
      },
      {
-      "v": "Welke elektromagnetische straling heeft méér energie dan zichtbaar licht?",
+      "v": "Wat is een kernreactie?",
       "o": [
-       "ultraviolet",
-       "infrarood",
-       "radiogolven",
-       "microgolven"
+       "een reactie tussen twee moleculen",
+       "een verandering in de atoomkern waarbij straling of energie vrijkomt",
+       "het oplossen van een zout",
+       "het opwarmen van een stof"
       ],
-      "c": 0,
-      "u": "Hogere energie betekent kortere golflengte. Ultraviolet, röntgen en gamma zitten aan de energierijke kant; infrarood, micro en radio aan de energiearme kant."
+      "c": 1,
+      "d": 2,
+      "u": "Bij een kernreactie verandert de kern.",
+      "uo": [
+       "Nee, dat is een chemische reactie.",
+       "Klopt: bij een kernreactie verandert de kern.",
+       "Nee, dat is een oplosproces.",
+       "Nee, dat is opwarmen."
+      ],
+      "uh": "Kernreactie: verandering in de kern."
      },
      {
-      "v": "Wat geldt voor een foton met een kortere golflengte?",
+      "v": "Wat is achtergrondstraling?",
       "o": [
-       "het heeft meer energie",
-       "het heeft minder energie",
-       "het heeft dezelfde energie",
-       "het heeft geen energie"
+       "het licht van een lamp",
+       "straling uit een röntgenapparaat",
+       "de natuurlijke straling die overal om ons heen aanwezig is",
+       "geluid van het verkeer"
       ],
-      "c": 0,
-      "u": "Volgens E = h·c/λ heeft een foton met een kleinere golflengte meer energie."
-     },
-     {
-      "v": "Wat is een elektronvolt (eV)?",
-      "o": [
-       "een energie-eenheid",
-       "een eenheid van lading",
-       "een eenheid van spanning",
-       "een eenheid van massa"
+      "c": 2,
+      "d": 2,
+      "u": "Achtergrondstraling komt van natuurlijke bronnen.",
+      "uo": [
+       "Nee, dat is licht.",
+       "Nee, dat is een kunstmatige bron.",
+       "Klopt: achtergrondstraling komt van natuurlijke bronnen.",
+       "Nee, dat is geluid."
       ],
-      "c": 0,
-      "u": "De elektronvolt is een handige energie-eenheid op atoomschaal: 1 eV = 1,602·10⁻¹⁹ J."
+      "uh": "Achtergrondstraling: natuurlijke straling om ons heen."
      },
      {
       "v": "Welke straling heeft het grootste doordringend vermogen?",
       "o": [
-       "gammastraling",
+       "ze zijn gelijk",
        "alfastraling",
        "bètastraling",
-       "ze zijn alle drie gelijk"
+       "gammastraling"
       ],
-      "c": 0,
-      "u": "Gammastraling dringt het diepst door (loodscherm nodig). Alfastraling wordt al door een vel papier of de huid tegengehouden."
+      "c": 3,
+      "d": 3,
+      "u": "Gamma dringt het diepst door, lood is nodig.",
+      "uo": [
+       "Nee, ze verschillen.",
+       "Nee, alfa is het minst doordringend.",
+       "Nee, bèta is middelmatig.",
+       "Klopt: gamma dringt het diepst door, lood is nodig."
+      ],
+      "uh": "Gamma: grootste doordringend vermogen."
      },
      {
-      "v": "Wat is het massagetal A van een atoomkern?",
+      "v": "Een zware heliumkern die al door papier wordt tegengehouden. Welk begrip past hierbij?",
       "o": [
-       "het aantal protonen plus neutronen",
-       "alleen het aantal protonen",
-       "alleen het aantal neutronen",
-       "het aantal elektronen"
+       "Alfastraling",
+       "Halveringstijd",
+       "Dosis",
+       "Achtergrondstraling"
       ],
       "c": 0,
-      "u": "Het massagetal A = Z + N: protonen plus neutronen. Het atoomnummer Z telt alleen de protonen."
-     },
-     {
-      "v": "Wat blijft behouden bij een radioactieve vervalreactie?",
-      "o": [
-       "de lading en het massagetal",
-       "alleen de massa",
-       "alleen de lading",
-       "het aantal elektronen"
+      "d": 1,
+      "u": "Een zware heliumkern die al door papier wordt tegengehouden. Dat past bij Alfastraling: heliumkern, weinig doordringend.",
+      "uo": [
+       "Klopt: heliumkern, weinig doordringend.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt.",
+       "Nee, dat hoort bij Dosis: opgenomen straling.",
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling."
       ],
-      "c": 0,
-      "u": "Bij verval blijven zowel de lading (onder) als het massagetal (boven) behouden: de som links is gelijk aan de som rechts."
+      "uh": "Alfastraling: heliumkern, weinig doordringend."
      },
      {
-      "v": "Wat is de halveringstijd van een radioactieve stof?",
+      "v": "Dezelfde soort atoom, maar met een ander aantal neutronen. Om welk begrip gaat het?",
       "o": [
-       "de tijd waarin de helft van de stof vervalt",
-       "de tijd totdat de hele stof volledig is vervallen",
-       "de tijd die nodig is voor één enkel kernverval",
-       "de totale levensduur van één afzonderlijke kern"
-      ],
-      "c": 0,
-      "u": "Na één halveringstijd is de helft van de kernen vervallen; na twee halveringstijden nog een kwart over, enzovoort."
-     },
-     {
-      "v": "Wat is de halveringsdikte van een materiaal?",
-      "o": [
-       "de dikte waarna nog de helft van de straling over is",
-       "de dikte waarna alle straling is tegengehouden",
-       "de dikte van de stralingsbron",
-       "de afstand tot de bron"
-      ],
-      "c": 0,
-      "u": "De halveringsdikte is de materiaaldikte die de stralingsintensiteit halveert; ze hangt af van de energie en de dichtheid."
-     },
-     {
-      "v": "Wat is het verschil tussen besmetting en bestraling?",
-      "o": [
-       "besmetting: stof op of in het lichaam; bestraling: van buitenaf",
-       "besmetting en bestraling betekenen in de praktijk precies hetzelfde",
-       "bij besmetting komt de straling altijd volledig van buitenaf",
-       "bestraling van buitenaf is altijd onmiddellijk dodelijk"
-      ],
-      "c": 0,
-      "u": "Besmetting (stof in/op het lichaam) blijft doorstralen; bestraling van buitenaf stopt zodra de bron weg is."
-     },
-     {
-      "v": "Welke formule geeft de stralingsdosis?",
-      "o": [
-       "D = E / m",
-       "D = E · m",
-       "D = m / E",
-       "D = wR · E"
-      ],
-      "c": 0,
-      "u": "De stralingsdosis is D = E/m: geabsorbeerde energie per kilogram, in gray (Gy)."
-     },
-     {
-      "v": "Waarmee houdt het dosisequivalent rekening, in tegenstelling tot de gewone dosis?",
-      "o": [
-       "met de soort straling, via een weegfactor",
-       "met de afstand tot de stralingsbron toe",
-       "met de duur van de blootstelling aan straling",
-       "met de totale massa van het bestraalde lichaam"
-      ],
-      "c": 0,
-      "u": "Het dosisequivalent H = wR·D weegt mee hoe schadelijk de stralingssoort is; het wordt uitgedrukt in sievert (Sv)."
-     },
-     {
-      "v": "Welke straling is per gray het schadelijkst (hoogste weegfactor)?",
-      "o": [
-       "alfastraling",
-       "bètastraling",
-       "gammastraling",
-       "röntgenstraling"
-      ],
-      "c": 0,
-      "u": "Alfastraling heeft een weegfactor van 20, bèta- en gammastraling slechts 1: alfastraling is binnen het lichaam het gevaarlijkst."
-     },
-     {
-      "v": "Wat is GEEN goede manier om je tegen straling te beschermen?",
-      "o": [
-       "dichter bij de bron gaan staan",
-       "de afstand tot de bron vergroten",
-       "de blootstellingstijd verkorten",
-       "je afschermen met lood"
-      ],
-      "c": 0,
-      "u": "Bescherming berust op afstand, tijd en afscherming. Dichter bij de bron gaan staan verhoogt juist de dosis."
-     },
-     {
-      "v": "Waarvoor wordt een röntgenfoto vooral gebruikt?",
-      "o": [
-       "om botten en longen te bekijken",
-       "om zachte weefsels in beeld te brengen",
-       "om geluid te meten",
-       "om de temperatuur te bepalen"
-      ],
-      "c": 0,
-      "u": "Röntgenstraling is snel en geschikt voor botten en longen, maar brengt stralingsrisico met zich mee."
-     },
-     {
-      "v": "Welke medische techniek gebruikt GEEN ioniserende straling?",
-      "o": [
-       "echografie",
-       "röntgenfoto",
-       "CT-scan",
-       "PET-scan"
-      ],
-      "c": 0,
-      "u": "Echografie werkt met geluidsgolven en is daardoor veilig (geen ioniserende straling), al is de beeldkwaliteit lager."
-     },
-     {
-      "v": "Wat betekent «Kernreactie»?",
-      "o": [
-       "zonder resulterende kracht blijft de snelheid gelijk",
-       "een reactie waarbij atoomkernen veranderen",
-       "medische scans",
-       "y = a/x; het product blijft constant"
+       "Halveringstijd",
+       "Isotoop",
+       "Activiteit",
+       "Achtergrondstraling"
       ],
       "c": 1,
-      "u": "«Kernreactie» betekent: een reactie waarbij atoomkernen veranderen.",
-      "d": 1
+      "d": 1,
+      "u": "Dezelfde soort atoom, maar met een ander aantal neutronen. Dat past bij Isotoop: zelfde element, andere neutronen.",
+      "uo": [
+       "Nee, dat hoort bij Halveringstijd: helft vervalt.",
+       "Klopt: zelfde element, andere neutronen.",
+       "Nee, dat hoort bij Activiteit: vervallen per seconde.",
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling."
+      ],
+      "uh": "Isotoop: zelfde element, andere neutronen."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een reactie waarbij atoomkernen veranderen\"?",
+      "v": "Een variant met een ander aantal neutronen. Welk begrip herken je hier?",
       "o": [
-       "Versnelling",
-       "Trillingstijd / periode (T)",
-       "Echografie",
+       "Activiteit",
+       "Halveringstijd",
+       "Isotoop",
+       "Achtergrondstraling"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Een variant met een ander aantal neutronen. Dat past bij Isotoop: zelfde element, andere neutronen.",
+      "uo": [
+       "Nee, dat hoort bij Activiteit: vervallen per seconde.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt.",
+       "Klopt: zelfde element, andere neutronen.",
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling."
+      ],
+      "uh": "Isotoop: zelfde element, andere neutronen."
+     },
+     {
+      "v": "Een verandering in de kern. Wat is hier aan de hand?",
+      "o": [
+       "Halveringstijd",
+       "Ioniserende straling",
+       "Achtergrondstraling",
        "Kernreactie"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Kernreactie»: een reactie waarbij atoomkernen veranderen.",
-      "d": 2
+      "d": 1,
+      "u": "Een verandering in de kern. Dat past bij Kernreactie: verandering in de kern.",
+      "uo": [
+       "Nee, dat hoort bij Halveringstijd: helft vervalt.",
+       "Nee, dat hoort bij Ioniserende straling: slaat elektronen los.",
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling.",
+       "Klopt: verandering in de kern."
+      ],
+      "uh": "Kernreactie: verandering in de kern."
      },
      {
-      "v": "Welke term past bij: \"een reactie waarbij atoomkernen veranderen\"?",
+      "v": "Een verandering in de atoomkern waarbij energie vrijkomt. Welk begrip past hierbij?",
       "o": [
        "Kernreactie",
-       "Röntgenstraling",
-       "Gamma (γ)",
-       "Radioactiviteit"
+       "Ioniserende straling",
+       "Achtergrondstraling",
+       "Halveringstijd"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Kernreactie»: een reactie waarbij atoomkernen veranderen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Kernreactie» in?",
-      "o": [
-       "foton (EM-straling)groot (zwak ioniserend)",
-       "de geabsorbeerde energie per kilogram (gray)",
-       "uitzending van straling door onstabiele kernen",
-       "een reactie waarbij atoomkernen veranderen"
+      "d": 1,
+      "u": "Een verandering in de atoomkern waarbij energie vrijkomt. Dat past bij Kernreactie: verandering in de kern.",
+      "uo": [
+       "Klopt: verandering in de kern.",
+       "Nee, dat hoort bij Ioniserende straling: slaat elektronen los.",
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt."
       ],
-      "c": 3,
-      "u": "«Kernreactie» betekent: een reactie waarbij atoomkernen veranderen.",
-      "d": 3
+      "uh": "Kernreactie: verandering in de kern."
      },
      {
-      "v": "Wat betekent «Vervalreeks»?",
+      "v": "De opgenomen hoeveelheid straling. Om welk begrip gaat het?",
       "o": [
-       "de opeenvolging van kernvervallen",
-       "de omgezette energie per tijd",
-       "gedetailleerd 3D-beeld; hogere stralingsdosis",
-       "de eenvoudigste trilling - één buik en twee knopen, de grootste golflengte."
-      ],
-      "c": 0,
-      "u": "«Vervalreeks» betekent: de opeenvolging van kernvervallen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de opeenvolging van kernvervallen\"?",
-      "o": [
-       "Alfa (α)",
-       "Vervalreeks",
-       "Tweede wet van Newton",
-       "Gewicht"
+       "Activiteit",
+       "Dosis",
+       "Bètastraling",
+       "Ioniserende straling"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Vervalreeks»: de opeenvolging van kernvervallen.",
-      "d": 2
+      "d": 2,
+      "u": "De opgenomen hoeveelheid straling. Dat past bij Dosis: opgenomen straling.",
+      "uo": [
+       "Nee, dat hoort bij Activiteit: vervallen per seconde.",
+       "Klopt: opgenomen straling.",
+       "Nee, dat hoort bij Bètastraling: snel elektron.",
+       "Nee, dat hoort bij Ioniserende straling: slaat elektronen los."
+      ],
+      "uh": "Dosis: opgenomen straling."
      },
      {
-      "v": "Welke term past bij: \"de opeenvolging van kernvervallen\"?",
+      "v": "De vervalsnelheid in becquerel. Welk begrip herken je hier?",
+      "o": [
+       "Achtergrondstraling",
+       "Gammastraling",
+       "Activiteit",
+       "Alfastraling"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "De vervalsnelheid in becquerel. Dat past bij Activiteit: vervallen per seconde.",
+      "uo": [
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling.",
+       "Nee, dat hoort bij Gammastraling: EM-straling, zeer doordringend.",
+       "Klopt: vervallen per seconde.",
+       "Nee, dat hoort bij Alfastraling: heliumkern, weinig doordringend."
+      ],
+      "uh": "Activiteit: vervallen per seconde."
+     },
+     {
+      "v": "Het aantal kernen dat per seconde vervalt, in becquerel. Wat is hier aan de hand?",
+      "o": [
+       "Bètastraling",
+       "Dosis",
+       "Halveringstijd",
+       "Activiteit"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Het aantal kernen dat per seconde vervalt, in becquerel. Dat past bij Activiteit: vervallen per seconde.",
+      "uo": [
+       "Nee, dat hoort bij Bètastraling: snel elektron.",
+       "Nee, dat hoort bij Dosis: opgenomen straling.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt.",
+       "Klopt: vervallen per seconde."
+      ],
+      "uh": "Activiteit: vervallen per seconde."
+     },
+     {
+      "v": "Zeer doordringende elektromagnetische straling. Welk begrip past hierbij?",
+      "o": [
+       "Gammastraling",
+       "Halveringstijd",
+       "Dosis",
+       "Activiteit"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Zeer doordringende elektromagnetische straling. Dat past bij Gammastraling: EM-straling, zeer doordringend.",
+      "uo": [
+       "Klopt: EM-straling, zeer doordringend.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt.",
+       "Nee, dat hoort bij Dosis: opgenomen straling.",
+       "Nee, dat hoort bij Activiteit: vervallen per seconde."
+      ],
+      "uh": "Gammastraling: EM-straling, zeer doordringend."
+     },
+     {
+      "v": "Elektromagnetische straling die pas door lood wordt gestopt. Om welk begrip gaat het?",
       "o": [
        "Alfastraling",
-       "Radiogolven",
-       "Afscherming",
-       "Vervalreeks"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Vervalreeks»: de opeenvolging van kernvervallen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Vervalreeks» in?",
-      "o": [
-       "de opeenvolging van kernvervallen",
-       "een reactie waarbij atoomkernen veranderen",
-       "zenders (laagste energie, langste golflengte)",
-       "de tijd waarin de activiteit halveert"
-      ],
-      "c": 0,
-      "u": "«Vervalreeks» betekent: de opeenvolging van kernvervallen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Achtergrondstraling»?",
-      "o": [
-       "zenders (laagste energie, langste golflengte)",
-       "de altijd aanwezige straling om ons heen",
-       "y = a/x; het product blijft constant",
-       "in een gespannen touw of kabel."
+       "Gammastraling",
+       "Isotoop",
+       "Bètastraling"
       ],
       "c": 1,
-      "u": "«Achtergrondstraling» betekent: de altijd aanwezige straling om ons heen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de altijd aanwezige straling om ons heen\"?",
-      "o": [
-       "Vermogen",
-       "Achtergrondstraling",
-       "Tweede wet",
-       "Weerstand"
+      "d": 2,
+      "u": "Elektromagnetische straling die pas door lood wordt gestopt. Dat past bij Gammastraling: EM-straling, zeer doordringend.",
+      "uo": [
+       "Nee, dat hoort bij Alfastraling: heliumkern, weinig doordringend.",
+       "Klopt: EM-straling, zeer doordringend.",
+       "Nee, dat hoort bij Isotoop: zelfde element, andere neutronen.",
+       "Nee, dat hoort bij Bètastraling: snel elektron."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Achtergrondstraling»: de altijd aanwezige straling om ons heen.",
-      "d": 2
+      "uh": "Gammastraling: EM-straling, zeer doordringend."
      },
      {
-      "v": "Welke term past bij: \"de altijd aanwezige straling om ons heen\"?",
+      "v": "Een snel uitgezonden elektron. Welk begrip herken je hier?",
       "o": [
-       "Bètaverval",
-       "Bèta (β)",
-       "Röntgenfoto",
-       "Achtergrondstraling"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Achtergrondstraling»: de altijd aanwezige straling om ons heen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Achtergrondstraling» in?",
-      "o": [
-       "de opeenvolging van kernvervallen",
-       "heliumkern (2 p + 2 n)gering (sterk ioniserend)",
-       "de geabsorbeerde energie per kilogram",
-       "de altijd aanwezige straling om ons heen"
-      ],
-      "c": 3,
-      "u": "«Achtergrondstraling» betekent: de altijd aanwezige straling om ons heen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Stralingsdosis»?",
-      "o": [
-       "zonder resulterende kracht blijft de snelheid gelijk",
-       "versterking of verzwakking van overlappende golven",
-       "de vectorsom van alle krachten op een object",
-       "de geabsorbeerde energie per kilogram"
-      ],
-      "c": 3,
-      "u": "«Stralingsdosis» betekent: de geabsorbeerde energie per kilogram.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de geabsorbeerde energie per kilogram\"?",
-      "o": [
-       "Tweede wet",
-       "Stralingsdosis",
-       "Interferentie",
-       "Elektrisch veld"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Stralingsdosis»: de geabsorbeerde energie per kilogram.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de geabsorbeerde energie per kilogram\"?",
-      "o": [
-       "Alfaverval",
-       "Stralingsdosis",
+       "Dosis",
+       "Halveringstijd",
        "Bètastraling",
        "Achtergrondstraling"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Stralingsdosis»: de geabsorbeerde energie per kilogram.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Stralingsdosis» in?",
-      "o": [
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit",
-       "snel, vooral botten en longen; stralingsrisico",
-       "straling die atomen ioniseert en cellen kan beschadigen",
-       "de geabsorbeerde energie per kilogram"
-      ],
-      "c": 3,
-      "u": "«Stralingsdosis» betekent: de geabsorbeerde energie per kilogram.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Afscherming»?",
-      "o": [
-       "zonnestraling",
-       "materiaal dat straling tegenhoudt",
-       "warmtestraling / warmtecamera",
-       "de energie per lading (volt)"
-      ],
-      "c": 1,
-      "u": "«Afscherming» betekent: materiaal dat straling tegenhoudt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"materiaal dat straling tegenhoudt\"?",
-      "o": [
-       "Afscherming",
-       "Gammastraling",
-       "Wet van Ohm",
-       "Normaalkracht"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Afscherming»: materiaal dat straling tegenhoudt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"materiaal dat straling tegenhoudt\"?",
-      "o": [
-       "Afscherming",
-       "Vervalreeks",
-       "Nucleair (PET)",
-       "Bètaverval"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Afscherming»: materiaal dat straling tegenhoudt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Afscherming» in?",
-      "o": [
-       "de tijd waarin de activiteit halveert",
-       "uitzending van straling door onstabiele kernen",
-       "materiaal dat straling tegenhoudt",
-       "medische scans"
-      ],
       "c": 2,
-      "u": "«Afscherming» betekent: materiaal dat straling tegenhoudt.",
-      "d": 3
+      "d": 1,
+      "u": "Een snel uitgezonden elektron. Dat past bij Bètastraling: snel elektron.",
+      "uo": [
+       "Nee, dat hoort bij Dosis: opgenomen straling.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt.",
+       "Klopt: snel elektron.",
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling."
+      ],
+      "uh": "Bètastraling: snel elektron."
      },
      {
-      "v": "Wat betekent «Radioactiviteit»?",
+      "v": "De natuurlijke straling in onze omgeving. Wat is hier aan de hand?",
       "o": [
-       "evenveel significante cijfers als de minst nauwkeurige waarde",
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit",
-       "meer knopen en buiken en een kleinere golflengte (hogere frequentie).",
-       "uitzending van straling door onstabiele kernen"
+       "Activiteit",
+       "Ioniserende straling",
+       "Alfastraling",
+       "Achtergrondstraling"
       ],
       "c": 3,
-      "u": "«Radioactiviteit» betekent: uitzending van straling door onstabiele kernen.",
-      "d": 1
+      "d": 2,
+      "u": "De natuurlijke straling in onze omgeving. Dat past bij Achtergrondstraling: natuurlijke straling.",
+      "uo": [
+       "Nee, dat hoort bij Activiteit: vervallen per seconde.",
+       "Nee, dat hoort bij Ioniserende straling: slaat elektronen los.",
+       "Nee, dat hoort bij Alfastraling: heliumkern, weinig doordringend.",
+       "Klopt: natuurlijke straling."
+      ],
+      "uh": "Achtergrondstraling: natuurlijke straling."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"uitzending van straling door onstabiele kernen\"?",
+      "v": "Straling die atomen ioniseert. Welk begrip past hierbij?",
       "o": [
-       "Röntgenfoto",
-       "Radioactiviteit",
-       "Tweede wet",
-       "Energie"
+       "Ioniserende straling",
+       "Kernreactie",
+       "Halveringstijd",
+       "Gammastraling"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Straling die atomen ioniseert. Dat past bij Ioniserende straling: slaat elektronen los.",
+      "uo": [
+       "Klopt: slaat elektronen los.",
+       "Nee, dat hoort bij Kernreactie: verandering in de kern.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt.",
+       "Nee, dat hoort bij Gammastraling: EM-straling, zeer doordringend."
+      ],
+      "uh": "Ioniserende straling: slaat elektronen los."
+     },
+     {
+      "v": "De hoeveelheid straling die je lichaam opneemt, in gray of sievert. Om welk begrip gaat het?",
+      "o": [
+       "Activiteit",
+       "Dosis",
+       "Bètastraling",
+       "Ioniserende straling"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Radioactiviteit»: uitzending van straling door onstabiele kernen.",
-      "d": 2
+      "d": 2,
+      "u": "De hoeveelheid straling die je lichaam opneemt, in gray of sievert. Dat past bij Dosis: opgenomen straling.",
+      "uo": [
+       "Nee, dat hoort bij Activiteit: vervallen per seconde.",
+       "Klopt: opgenomen straling.",
+       "Nee, dat hoort bij Bètastraling: snel elektron.",
+       "Nee, dat hoort bij Ioniserende straling: slaat elektronen los."
+      ],
+      "uh": "Dosis: opgenomen straling."
      },
      {
-      "v": "Welke term past bij: \"uitzending van straling door onstabiele kernen\"?",
+      "v": "Een heliumkern met weinig doordringend vermogen. Welk begrip herken je hier?",
       "o": [
        "Dosis",
-       "Isotoop",
-       "Echografie",
-       "Radioactiviteit"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Radioactiviteit»: uitzending van straling door onstabiele kernen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Radioactiviteit» in?",
-      "o": [
-       "materiaal dat straling tegenhoudt",
-       "de altijd aanwezige straling om ons heen",
-       "gedetailleerd 3D-beeld; hogere stralingsdosis",
-       "uitzending van straling door onstabiele kernen"
-      ],
-      "c": 3,
-      "u": "«Radioactiviteit» betekent: uitzending van straling door onstabiele kernen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Halveringstijd»?",
-      "o": [
-       "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A.",
-       "warmtestraling / warmtecamera",
-       "de tijd waarin de activiteit halveert",
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht."
+       "Bètastraling",
+       "Alfastraling",
+       "Halveringstijd"
       ],
       "c": 2,
-      "u": "«Halveringstijd» betekent: de tijd waarin de activiteit halveert.",
-      "d": 1
+      "d": 3,
+      "u": "Een heliumkern met weinig doordringend vermogen. Dat past bij Alfastraling: heliumkern, weinig doordringend.",
+      "uo": [
+       "Nee, dat hoort bij Dosis: opgenomen straling.",
+       "Nee, dat hoort bij Bètastraling: snel elektron.",
+       "Klopt: heliumkern, weinig doordringend.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt."
+      ],
+      "uh": "Alfastraling: heliumkern, weinig doordringend."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de tijd waarin de activiteit halveert\"?",
+      "v": "De tijd waarna nog de helft over is. Wat is hier aan de hand?",
       "o": [
-       "Frequentie (f)",
-       "PTC",
-       "Geluidssnelheid",
+       "Achtergrondstraling",
+       "Dosis",
+       "Bètastraling",
        "Halveringstijd"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Halveringstijd»: de tijd waarin de activiteit halveert.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de tijd waarin de activiteit halveert\"?",
-      "o": [
-       "Radiogolven",
-       "Alfa (α)",
-       "Halveringstijd",
-       "Alfastraling"
+      "d": 1,
+      "u": "De tijd waarna nog de helft over is. Dat past bij Halveringstijd: helft vervalt.",
+      "uo": [
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling.",
+       "Nee, dat hoort bij Dosis: opgenomen straling.",
+       "Nee, dat hoort bij Bètastraling: snel elektron.",
+       "Klopt: helft vervalt."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Halveringstijd»: de tijd waarin de activiteit halveert.",
-      "d": 3
+      "uh": "Halveringstijd: helft vervalt."
      },
      {
-      "v": "Wat houdt «Halveringstijd» in?",
+      "v": "Straling met genoeg energie om elektronen uit atomen te slaan. Welk begrip past hierbij?",
       "o": [
-       "de tijd waarin de activiteit halveert",
-       "een reactie waarbij atoomkernen veranderen",
-       "heliumkern (2 p + 2 n)gering (sterk ioniserend)",
-       "de opeenvolging van kernvervallen"
-      ],
-      "c": 0,
-      "u": "«Halveringstijd» betekent: de tijd waarin de activiteit halveert.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Activiteit»?",
-      "o": [
-       "straling die atomen ioniseert en cellen kan beschadigen",
-       "eigenschap die elektrische krachten veroorzaakt (C)",
-       "zonder resulterende kracht blijft de snelheid gelijk",
-       "het aantal kernontvallen per seconde (becquerel)"
-      ],
-      "c": 3,
-      "u": "«Activiteit» betekent: het aantal kernontvallen per seconde (becquerel).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het aantal kernontvallen per seconde (becquerel)\"?",
-      "o": [
-       "Stralingsdosis",
-       "Activiteit",
-       "Röntgenfoto",
-       "Optellen / aftrekken"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Activiteit»: het aantal kernontvallen per seconde (becquerel).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"het aantal kernontvallen per seconde (becquerel)\"?",
-      "o": [
+       "Ioniserende straling",
        "Achtergrondstraling",
-       "Activiteit",
-       "Isotoop",
-       "Radiogolven"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Activiteit»: het aantal kernontvallen per seconde (becquerel).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Activiteit» in?",
-      "o": [
-       "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element.",
-       "het aantal kernontvallen per seconde (becquerel)",
-       "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "heliumkern (2 p + 2 n)gering (sterk ioniserend)"
-      ],
-      "c": 1,
-      "u": "«Activiteit» betekent: het aantal kernontvallen per seconde (becquerel).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Alfastraling»?",
-      "o": [
-       "weerstand daalt bij meer licht",
-       "medische scans",
-       "heliumkernen; sterk ioniserend, weinig doordringend",
-       "laat stroom maar in één richting door; een led geeft daarbij licht"
-      ],
-      "c": 2,
-      "u": "«Alfastraling» betekent: heliumkernen; sterk ioniserend, weinig doordringend.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"heliumkernen; sterk ioniserend, weinig doordringend\"?",
-      "o": [
-       "Eerste wet (traagheid)",
-       "Bèta (β)",
-       "Alfastraling",
-       "IJken"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Alfastraling»: heliumkernen; sterk ioniserend, weinig doordringend.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"heliumkernen; sterk ioniserend, weinig doordringend\"?",
-      "o": [
-       "Röntgenstraling",
-       "Halveringstijd",
        "Gammastraling",
-       "Alfastraling"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Alfastraling»: heliumkernen; sterk ioniserend, weinig doordringend.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alfastraling» in?",
-      "o": [
-       "heliumkernen; sterk ioniserend, weinig doordringend",
-       "medische scans",
-       "uitzending van straling door onstabiele kernen",
-       "de altijd aanwezige straling om ons heen"
+       "Halveringstijd"
       ],
       "c": 0,
-      "u": "«Alfastraling» betekent: heliumkernen; sterk ioniserend, weinig doordringend.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Bètastraling»?",
-      "o": [
-       "de altijd aanwezige straling om ons heen",
-       "elektronen; matig doordringend",
-       "een resulterende kracht geeft een versnelling.",
-       "oefent A een kracht uit op B, dan oefent B een even grote, tegengestelde kracht uit op A."
+      "d": 2,
+      "u": "Straling met genoeg energie om elektronen uit atomen te slaan. Dat past bij Ioniserende straling: slaat elektronen los.",
+      "uo": [
+       "Klopt: slaat elektronen los.",
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling.",
+       "Nee, dat hoort bij Gammastraling: EM-straling, zeer doordringend.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt."
       ],
-      "c": 1,
-      "u": "«Bètastraling» betekent: elektronen; matig doordringend.",
-      "d": 1
+      "uh": "Ioniserende straling: slaat elektronen los."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"elektronen; matig doordringend\"?",
+      "v": "De tijd waarin de helft van de kernen vervalt. Om welk begrip gaat het?",
       "o": [
-       "Alfaverval",
-       "Bètastraling",
-       "Loodrecht",
-       "Tweede wet"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Bètastraling»: elektronen; matig doordringend.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"elektronen; matig doordringend\"?",
-      "o": [
-       "Alfa (α)",
-       "Gammastraling",
+       "Activiteit",
+       "Halveringstijd",
        "Bètastraling",
        "Alfastraling"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Bètastraling»: elektronen; matig doordringend.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Bètastraling» in?",
-      "o": [
-       "de altijd aanwezige straling om ons heen",
-       "elektronen; matig doordringend",
-       "zonnestraling",
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit"
-      ],
       "c": 1,
-      "u": "«Bètastraling» betekent: elektronen; matig doordringend.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Gammastraling»?",
-      "o": [
-       "een resulterende kracht geeft een versnelling.",
-       "een trilling die energie transporteert zonder massatransport",
-       "EM-straling; sterk doordringend, weinig ioniserend",
-       "de zwaartekracht op een voorwerp"
+      "d": 3,
+      "u": "De tijd waarin de helft van de kernen vervalt. Dat past bij Halveringstijd: helft vervalt.",
+      "uo": [
+       "Nee, dat hoort bij Activiteit: vervallen per seconde.",
+       "Klopt: helft vervalt.",
+       "Nee, dat hoort bij Bètastraling: snel elektron.",
+       "Nee, dat hoort bij Alfastraling: heliumkern, weinig doordringend."
       ],
-      "c": 2,
-      "u": "«Gammastraling» betekent: EM-straling; sterk doordringend, weinig ioniserend.",
-      "d": 1
+      "uh": "Halveringstijd: helft vervalt."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"EM-straling; sterk doordringend, weinig ioniserend\"?",
+      "v": "Een snel elektron dat verder doordringt dan alfa. Welk begrip herken je hier?",
       "o": [
-       "Versnelling",
-       "Gewicht",
-       "Gammastraling",
-       "Snelheid"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Gammastraling»: EM-straling; sterk doordringend, weinig ioniserend.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"EM-straling; sterk doordringend, weinig ioniserend\"?",
-      "o": [
-       "Alfastraling",
-       "Röntgenfoto",
-       "Gammastraling",
-       "Alfa (α)"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Gammastraling»: EM-straling; sterk doordringend, weinig ioniserend.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Gammastraling» in?",
-      "o": [
-       "EM-straling; sterk doordringend, weinig ioniserend",
-       "atoomsoort met gelijk aantal protonen, ander aantal neutronen",
-       "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element."
-      ],
-      "c": 0,
-      "u": "«Gammastraling» betekent: EM-straling; sterk doordringend, weinig ioniserend.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ioniserende straling»?",
-      "o": [
-       "straling die atomen ioniseert en cellen kan beschadigen",
-       "kracht maal verplaatsing (W = F·s)",
-       "evenveel decimalen als de waarde met de minste decimalen",
-       "uitzending van straling door onstabiele kernen"
-      ],
-      "c": 0,
-      "u": "«Ioniserende straling» betekent: straling die atomen ioniseert en cellen kan beschadigen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"straling die atomen ioniseert en cellen kan beschadigen\"?",
-      "o": [
-       "Ioniserende straling",
-       "Nucleair (PET)",
-       "Eerste wet (traagheid)",
-       "Omgekeerd evenredig"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Ioniserende straling»: straling die atomen ioniseert en cellen kan beschadigen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"straling die atomen ioniseert en cellen kan beschadigen\"?",
-      "o": [
-       "Stralingsdosis",
-       "Ioniserende straling",
-       "Afscherming",
-       "Radioactiviteit"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ioniserende straling»: straling die atomen ioniseert en cellen kan beschadigen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ioniserende straling» in?",
-      "o": [
-       "de opeenvolging van kernvervallen",
-       "de tijd waarin de activiteit halveert",
-       "zenders (laagste energie, langste golflengte)",
-       "straling die atomen ioniseert en cellen kan beschadigen"
-      ],
-      "c": 3,
-      "u": "«Ioniserende straling» betekent: straling die atomen ioniseert en cellen kan beschadigen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Dosis»?",
-      "o": [
-       "actie en reactie zijn even groot en tegengesteld",
-       "onderbreekt de stroom bij een lekstroom (verschil tussen in- en uitgaande stroom) en beschermt tegen schokken.",
-       "de geabsorbeerde energie per kilogram (gray)",
-       "een trilling die energie transporteert zonder massatransport"
-      ],
-      "c": 2,
-      "u": "«Dosis» betekent: de geabsorbeerde energie per kilogram (gray).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de geabsorbeerde energie per kilogram (gray)\"?",
-      "o": [
-       "Geluidssnelheid",
-       "Straling",
-       "Gamma (γ)",
-       "Dosis"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Dosis»: de geabsorbeerde energie per kilogram (gray).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de geabsorbeerde energie per kilogram (gray)\"?",
-      "o": [
-       "Alfa (α)",
-       "Achtergrondstraling",
        "Dosis",
-       "Infrarood"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Dosis»: de geabsorbeerde energie per kilogram (gray).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Dosis» in?",
-      "o": [
-       "de geabsorbeerde energie per kilogram (gray)",
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit",
-       "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element.",
-       "de tijd waarin de activiteit halveert"
-      ],
-      "c": 0,
-      "u": "«Dosis» betekent: de geabsorbeerde energie per kilogram (gray).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Isotoop»?",
-      "o": [
-       "parallellogrammethode; de diagonaal is de resultante Fres.",
-       "de mate waarin een geleider de stroom tegenwerkt (ohm)",
-       "atoomsoort met gelijk aantal protonen, ander aantal neutronen",
-       "kracht maal verplaatsing (W = F·s)"
-      ],
-      "c": 2,
-      "u": "«Isotoop» betekent: atoomsoort met gelijk aantal protonen, ander aantal neutronen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"atoomsoort met gelijk aantal protonen, ander aantal neutronen\"?",
-      "o": [
-       "Isotoop",
-       "Wet van Ohm",
+       "Halveringstijd",
        "Bètastraling",
-       "Alfa (α)"
+       "Achtergrondstraling"
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Isotoop»: atoomsoort met gelijk aantal protonen, ander aantal neutronen.",
-      "d": 2
+      "c": 2,
+      "d": 1,
+      "u": "Een snel elektron dat verder doordringt dan alfa. Dat past bij Bètastraling: snel elektron.",
+      "uo": [
+       "Nee, dat hoort bij Dosis: opgenomen straling.",
+       "Nee, dat hoort bij Halveringstijd: helft vervalt.",
+       "Klopt: snel elektron.",
+       "Nee, dat hoort bij Achtergrondstraling: natuurlijke straling."
+      ],
+      "uh": "Bètastraling: snel elektron."
      },
      {
-      "v": "Welke term past bij: \"atoomsoort met gelijk aantal protonen, ander aantal neutronen\"?",
+      "v": "De natuurlijke straling die overal om ons heen aanwezig is. Wat is hier aan de hand?",
       "o": [
+       "Activiteit",
+       "Ioniserende straling",
        "Alfastraling",
-       "Isotoop",
-       "Radioactiviteit",
-       "Gammastraling"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Isotoop»: atoomsoort met gelijk aantal protonen, ander aantal neutronen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Isotoop» in?",
-      "o": [
-       "atoomsoort met gelijk aantal protonen, ander aantal neutronen",
-       "gedetailleerd 3D-beeld; hogere stralingsdosis",
-       "een reactie waarbij atoomkernen veranderen",
-       "foton (EM-straling)groot (zwak ioniserend)"
-      ],
-      "c": 0,
-      "u": "«Isotoop» betekent: atoomsoort met gelijk aantal protonen, ander aantal neutronen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Röntgenstraling»?",
-      "o": [
-       "medische scans",
-       "kracht maal verplaatsing (W = F·s)",
-       "de rustpositie van het systeem",
-       "de arbeid per tijd (P = W/t)"
-      ],
-      "c": 0,
-      "u": "«Röntgenstraling» betekent: medische scans.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"medische scans\"?",
-      "o": [
-       "Halveringstijd",
-       "Röntgenstraling",
-       "Versnelling",
-       "Vrije val"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Röntgenstraling»: medische scans.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"medische scans\"?",
-      "o": [
-       "Nucleair (PET)",
-       "Röntgenstraling",
-       "Echografie",
-       "Gamma (γ)"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Röntgenstraling»: medische scans.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Röntgenstraling» in?",
-      "o": [
-       "elektronmiddelmatig",
-       "medische scans",
-       "foton (EM-straling)groot (zwak ioniserend)",
-       "gedetailleerd 3D-beeld; hogere stralingsdosis"
-      ],
-      "c": 1,
-      "u": "«Röntgenstraling» betekent: medische scans.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ultraviolet»?",
-      "o": [
-       "zonnestraling",
-       "de zwaartekracht op een voorwerp",
-       "frequentieverandering door beweging van bron of waarnemer",
-       "een meetbare eigenschap zoals massa of tijd"
-      ],
-      "c": 0,
-      "u": "«Ultraviolet» betekent: zonnestraling.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zonnestraling\"?",
-      "o": [
-       "Zekering",
-       "LDR",
-       "Derde wet (actie = reactie)",
-       "Ultraviolet"
+       "Achtergrondstraling"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Ultraviolet»: zonnestraling.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"zonnestraling\"?",
-      "o": [
-       "Infrarood",
-       "Bètastraling",
-       "CT-scan",
-       "Ultraviolet"
+      "d": 2,
+      "u": "De natuurlijke straling die overal om ons heen aanwezig is. Dat past bij Achtergrondstraling: natuurlijke straling.",
+      "uo": [
+       "Nee, dat hoort bij Activiteit: vervallen per seconde.",
+       "Nee, dat hoort bij Ioniserende straling: slaat elektronen los.",
+       "Nee, dat hoort bij Alfastraling: heliumkern, weinig doordringend.",
+       "Klopt: natuurlijke straling."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Ultraviolet»: zonnestraling.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Ultraviolet» in?",
-      "o": [
-       "zonnestraling",
-       "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element.",
-       "gedetailleerd 3D-beeld; hogere stralingsdosis",
-       "foton (EM-straling)groot (zwak ioniserend)"
-      ],
-      "c": 0,
-      "u": "«Ultraviolet» betekent: zonnestraling.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Infrarood»?",
-      "o": [
-       "de geabsorbeerde energie per kilogram",
-       "de vectorsom van alle krachten op een object",
-       "warmtestraling / warmtecamera",
-       "een trilling die energie transporteert zonder massatransport"
-      ],
-      "c": 2,
-      "u": "«Infrarood» betekent: warmtestraling / warmtecamera.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"warmtestraling / warmtecamera\"?",
-      "o": [
-       "Alfaverval",
-       "Infrarood",
-       "Serieschakeling",
-       "Vervalreeks"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Infrarood»: warmtestraling / warmtecamera.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"warmtestraling / warmtecamera\"?",
-      "o": [
-       "Halveringstijd",
-       "Bètastraling",
-       "Isotoop",
-       "Infrarood"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Infrarood»: warmtestraling / warmtecamera.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Infrarood» in?",
-      "o": [
-       "radioactieve tracer; tijdelijke besmetting van het lichaam",
-       "warmtestraling / warmtecamera",
-       "het aantal kernontvallen per seconde (becquerel)",
-       "de altijd aanwezige straling om ons heen"
-      ],
-      "c": 1,
-      "u": "«Infrarood» betekent: warmtestraling / warmtecamera.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Radiogolven»?",
-      "o": [
-       "weerstand daalt bij meer licht",
-       "zenders (laagste energie, langste golflengte)",
-       "het terugkaatsen van een golf tegen een oppervlak",
-       "de arbeid per tijd (P = W/t)"
-      ],
-      "c": 1,
-      "u": "«Radiogolven» betekent: zenders (laagste energie, langste golflengte).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"zenders (laagste energie, langste golflengte)\"?",
-      "o": [
-       "Achtergrondstraling",
-       "Radioactiviteit",
-       "Stroomsterkte",
-       "Radiogolven"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Radiogolven»: zenders (laagste energie, langste golflengte).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"zenders (laagste energie, langste golflengte)\"?",
-      "o": [
-       "Afscherming",
-       "Bètaverval",
-       "Alfastraling",
-       "Radiogolven"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Radiogolven»: zenders (laagste energie, langste golflengte).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Radiogolven» in?",
-      "o": [
-       "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "zenders (laagste energie, langste golflengte)",
-       "de geabsorbeerde energie per kilogram",
-       "snel, vooral botten en longen; stralingsrisico"
-      ],
-      "c": 1,
-      "u": "«Radiogolven» betekent: zenders (laagste energie, langste golflengte).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Alfa (α)»?",
-      "o": [
-       "heliumkern (2 p + 2 n)gering (sterk ioniserend)",
-       "een stof die stroom goed doorlaat",
-       "de tijd van één volledige trilling",
-       "versterking of verzwakking van overlappende golven"
-      ],
-      "c": 0,
-      "u": "«Alfa (α)» betekent: heliumkern (2 p + 2 n)gering (sterk ioniserend).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"heliumkern (2 p + 2 n)gering (sterk ioniserend)\"?",
-      "o": [
-       "Achtergrondstraling",
-       "Alfa (α)",
-       "Bètastraling",
-       "Vermogen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Alfa (α)»: heliumkern (2 p + 2 n)gering (sterk ioniserend).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"heliumkern (2 p + 2 n)gering (sterk ioniserend)\"?",
-      "o": [
-       "Alfa (α)",
-       "Gamma (γ)",
-       "Activiteit",
-       "Kernreactie"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Alfa (α)»: heliumkern (2 p + 2 n)gering (sterk ioniserend).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alfa (α)» in?",
-      "o": [
-       "heliumkern (2 p + 2 n)gering (sterk ioniserend)",
-       "foton (EM-straling)groot (zwak ioniserend)",
-       "zonnestraling",
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit"
-      ],
-      "c": 0,
-      "u": "«Alfa (α)» betekent: heliumkern (2 p + 2 n)gering (sterk ioniserend).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Bèta (β)»?",
-      "o": [
-       "warmte verplaatst met een bewegend gas of vloeistof; een vacuüm (dubbel glas) voorkomt dit.",
-       "de arbeid per tijd (P = W/t)",
-       "elektronmiddelmatig",
-       "R is constant; U en I zijn recht evenredig."
-      ],
-      "c": 2,
-      "u": "«Bèta (β)» betekent: elektronmiddelmatig.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"elektronmiddelmatig\"?",
-      "o": [
-       "Spankracht",
-       "Achtergrondstraling",
-       "Vervalreeks",
-       "Bèta (β)"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Bèta (β)»: elektronmiddelmatig.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"elektronmiddelmatig\"?",
-      "o": [
-       "Ioniserende straling",
-       "Activiteit",
-       "Bèta (β)",
-       "CT-scan"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Bèta (β)»: elektronmiddelmatig.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Bèta (β)» in?",
-      "o": [
-       "de tijd waarin de activiteit halveert",
-       "EM-straling; sterk doordringend, weinig ioniserend",
-       "elektronmiddelmatig",
-       "foton (EM-straling)groot (zwak ioniserend)"
-      ],
-      "c": 2,
-      "u": "«Bèta (β)» betekent: elektronmiddelmatig.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Gamma (γ)»?",
-      "o": [
-       "aantal trillingen per seconde (Hz)",
-       "foton (EM-straling)groot (zwak ioniserend)",
-       "warmte zonder tussenstof, zoals zonnestraling; reflecterende oppervlakken kaatsen die terug.",
-       "versterking of verzwakking van overlappende golven"
-      ],
-      "c": 1,
-      "u": "«Gamma (γ)» betekent: foton (EM-straling)groot (zwak ioniserend).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"foton (EM-straling)groot (zwak ioniserend)\"?",
-      "o": [
-       "Gamma (γ)",
-       "Eerste wet van Newton",
-       "Spankracht",
-       "Ioniserende straling"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Gamma (γ)»: foton (EM-straling)groot (zwak ioniserend).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"foton (EM-straling)groot (zwak ioniserend)\"?",
-      "o": [
-       "Bètastraling",
-       "Gamma (γ)",
-       "Vervalreeks",
-       "Röntgenfoto"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Gamma (γ)»: foton (EM-straling)groot (zwak ioniserend).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Gamma (γ)» in?",
-      "o": [
-       "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "heliumkernen; sterk ioniserend, weinig doordringend",
-       "uitzending van straling door onstabiele kernen",
-       "foton (EM-straling)groot (zwak ioniserend)"
-      ],
-      "c": 3,
-      "u": "«Gamma (γ)» betekent: foton (EM-straling)groot (zwak ioniserend).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Röntgenfoto»?",
-      "o": [
-       "zonnestraling",
-       "snel, vooral botten en longen; stralingsrisico",
-       "zelfde richting optellen, tegengestelde richting aftrekken.",
-       "een trilling die energie transporteert zonder massatransport"
-      ],
-      "c": 1,
-      "u": "«Röntgenfoto» betekent: snel, vooral botten en longen; stralingsrisico.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"snel, vooral botten en longen; stralingsrisico\"?",
-      "o": [
-       "Boventoon",
-       "Geleider",
-       "Serieschakeling",
-       "Röntgenfoto"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Röntgenfoto»: snel, vooral botten en longen; stralingsrisico.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"snel, vooral botten en longen; stralingsrisico\"?",
-      "o": [
-       "Röntgenfoto",
-       "Activiteit",
-       "Radioactiviteit",
-       "Gamma (γ)"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Röntgenfoto»: snel, vooral botten en longen; stralingsrisico.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Röntgenfoto» in?",
-      "o": [
-       "het aantal kernontvallen per seconde (becquerel)",
-       "radioactieve tracer; tijdelijke besmetting van het lichaam",
-       "snel, vooral botten en longen; stralingsrisico",
-       "een reactie waarbij atoomkernen veranderen"
-      ],
-      "c": 2,
-      "u": "«Röntgenfoto» betekent: snel, vooral botten en longen; stralingsrisico.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «CT-scan»?",
-      "o": [
-       "warmte door een vaste stof; metalen geleiden goed, isolatoren slecht.",
-       "de marge waarbinnen de echte waarde ligt",
-       "een beveiliging die de stroom onderbreekt bij overbelasting",
-       "gedetailleerd 3D-beeld; hogere stralingsdosis"
-      ],
-      "c": 3,
-      "u": "«CT-scan» betekent: gedetailleerd 3D-beeld; hogere stralingsdosis.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gedetailleerd 3D-beeld; hogere stralingsdosis\"?",
-      "o": [
-       "Spiegeling",
-       "CT-scan",
-       "Geleider",
-       "Zekering"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «CT-scan»: gedetailleerd 3D-beeld; hogere stralingsdosis.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gedetailleerd 3D-beeld; hogere stralingsdosis\"?",
-      "o": [
-       "Ioniserende straling",
-       "CT-scan",
-       "Activiteit",
-       "Röntgenfoto"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «CT-scan»: gedetailleerd 3D-beeld; hogere stralingsdosis.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «CT-scan» in?",
-      "o": [
-       "een reactie waarbij atoomkernen veranderen",
-       "zonnestraling",
-       "gedetailleerd 3D-beeld; hogere stralingsdosis",
-       "de altijd aanwezige straling om ons heen"
-      ],
-      "c": 2,
-      "u": "«CT-scan» betekent: gedetailleerd 3D-beeld; hogere stralingsdosis.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Echografie»?",
-      "o": [
-       "U = I·R",
-       "de neiging om de bewegingstoestand te behouden",
-       "de afgelegde weg per tijd (v = s/t)",
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit"
-      ],
-      "c": 3,
-      "u": "«Echografie» betekent: geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit\"?",
-      "o": [
-       "Isotoop",
-       "Niet-ohmse weerstand",
-       "Radiogolven",
-       "Echografie"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Echografie»: geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit\"?",
-      "o": [
-       "Echografie",
-       "Vervalreeks",
-       "Ioniserende straling",
-       "Röntgenfoto"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Echografie»: geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Echografie» in?",
-      "o": [
-       "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit",
-       "uitzending van straling door onstabiele kernen",
-       "het aantal kernontvallen per seconde (becquerel)",
-       "medische scans"
-      ],
-      "c": 0,
-      "u": "«Echografie» betekent: geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Nucleair (PET)»?",
-      "o": [
-       "radioactieve tracer; tijdelijke besmetting van het lichaam",
-       "een verbinding met vrijwel geen weerstand",
-       "elektronen; matig doordringend",
-       "P = U·I"
-      ],
-      "c": 0,
-      "u": "«Nucleair (PET)» betekent: radioactieve tracer; tijdelijke besmetting van het lichaam.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"radioactieve tracer; tijdelijke besmetting van het lichaam\"?",
-      "o": [
-       "Wrijvingskracht",
-       "Energie",
-       "Nucleair (PET)",
-       "Röntgenstraling"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Nucleair (PET)»: radioactieve tracer; tijdelijke besmetting van het lichaam.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"radioactieve tracer; tijdelijke besmetting van het lichaam\"?",
-      "o": [
-       "Nucleair (PET)",
-       "Radioactiviteit",
-       "Alfa (α)",
-       "Bètaverval"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Nucleair (PET)»: radioactieve tracer; tijdelijke besmetting van het lichaam.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Nucleair (PET)» in?",
-      "o": [
-       "medische scans",
-       "radioactieve tracer; tijdelijke besmetting van het lichaam",
-       "zonnestraling",
-       "de altijd aanwezige straling om ons heen"
-      ],
-      "c": 1,
-      "u": "«Nucleair (PET)» betekent: radioactieve tracer; tijdelijke besmetting van het lichaam.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Alfaverval»?",
-      "o": [
-       "de rustpositie van het systeem",
-       "een meetbare eigenschap zoals massa of tijd",
-       "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "de aantrekkingskracht van de aarde op massa"
-      ],
-      "c": 2,
-      "u": "«Alfaverval» betekent: de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.\"?",
-      "o": [
-       "Radioactiviteit",
-       "Alfaverval",
-       "Resulterende kracht",
-       "Vermenigvuldigen / delen"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Alfaverval»: de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.\"?",
-      "o": [
-       "Nucleair (PET)",
-       "Halveringstijd",
-       "Alfaverval",
-       "Afscherming"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Alfaverval»: de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Alfaverval» in?",
-      "o": [
-       "foton (EM-straling)groot (zwak ioniserend)",
-       "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element.",
-       "medische scans",
-       "straling die atomen ioniseert en cellen kan beschadigen"
-      ],
-      "c": 1,
-      "u": "«Alfaverval» betekent: de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element..",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Bètaverval»?",
-      "o": [
-       "een trilling met een veelvoud van de grondfrequentie",
-       "aantal trillingen per seconde (Hz)",
-       "de geabsorbeerde energie per kilogram",
-       "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element."
-      ],
-      "c": 3,
-      "u": "«Bètaverval» betekent: een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element..",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element.\"?",
-      "o": [
-       "Vervalreeks",
-       "Bètaverval",
-       "Massa",
-       "Dosis"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Bètaverval»: een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element..",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element.\"?",
-      "o": [
-       "Gamma (γ)",
-       "Echografie",
-       "Bètaverval",
-       "Afscherming"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Bètaverval»: een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element..",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Bètaverval» in?",
-      "o": [
-       "atoomsoort met gelijk aantal protonen, ander aantal neutronen",
-       "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element.",
-       "foton (EM-straling)groot (zwak ioniserend)",
-       "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element."
-      ],
-      "c": 1,
-      "u": "«Bètaverval» betekent: een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element..",
-      "d": 3
+      "uh": "Achtergrondstraling: natuurlijke straling."
      }
     ],
     "oe": [
@@ -44983,112 +41540,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Kernreactie",
-      "d": "een reactie waarbij atoomkernen veranderen"
-     },
-     {
-      "t": "Vervalreeks",
-      "d": "de opeenvolging van kernvervallen"
-     },
-     {
-      "t": "Achtergrondstraling",
-      "d": "de altijd aanwezige straling om ons heen"
-     },
-     {
-      "t": "Stralingsdosis",
-      "d": "de geabsorbeerde energie per kilogram"
-     },
-     {
-      "t": "Afscherming",
-      "d": "materiaal dat straling tegenhoudt"
-     },
-     {
-      "t": "Radioactiviteit",
-      "d": "uitzending van straling door onstabiele kernen"
-     },
-     {
-      "t": "Halveringstijd",
-      "d": "de tijd waarin de activiteit halveert"
-     },
-     {
-      "t": "Activiteit",
-      "d": "het aantal kernontvallen per seconde (becquerel)"
+      "t": "Ioniserende straling",
+      "d": "straling met genoeg energie om elektronen uit atomen te slaan"
      },
      {
       "t": "Alfastraling",
-      "d": "heliumkernen; sterk ioniserend, weinig doordringend"
+      "d": "een heliumkern: zwaar en weinig doordringend"
      },
      {
       "t": "Bètastraling",
-      "d": "elektronen; matig doordringend"
+      "d": "een snel elektron met een middelmatig doordringend vermogen"
      },
      {
       "t": "Gammastraling",
-      "d": "EM-straling; sterk doordringend, weinig ioniserend"
+      "d": "elektromagnetische straling met het grootste doordringend vermogen"
      },
      {
-      "t": "Ioniserende straling",
-      "d": "straling die atomen ioniseert en cellen kan beschadigen"
+      "t": "Halveringstijd",
+      "d": "de tijd waarin de helft van de kernen vervalt"
+     },
+     {
+      "t": "Activiteit",
+      "d": "het aantal vervallen kernen per seconde, in becquerel"
      },
      {
       "t": "Dosis",
-      "d": "de geabsorbeerde energie per kilogram (gray)"
+      "d": "de opgenomen hoeveelheid straling, in gray of sievert"
      },
      {
       "t": "Isotoop",
-      "d": "atoomsoort met gelijk aantal protonen, ander aantal neutronen"
+      "d": "een atoomsoort met hetzelfde aantal protonen maar een ander aantal neutronen"
      },
      {
-      "t": "Röntgenstraling",
-      "d": "medische scans"
+      "t": "Kernreactie",
+      "d": "een verandering in de atoomkern waarbij straling of energie vrijkomt"
      },
      {
-      "t": "Ultraviolet",
-      "d": "zonnestraling"
-     },
-     {
-      "t": "Infrarood",
-      "d": "warmtestraling / warmtecamera"
-     },
-     {
-      "t": "Radiogolven",
-      "d": "zenders (laagste energie, langste golflengte)"
-     },
-     {
-      "t": "Alfa (α)",
-      "d": "heliumkern (2 p + 2 n)gering (sterk ioniserend)"
-     },
-     {
-      "t": "Bèta (β)",
-      "d": "elektronmiddelmatig"
-     },
-     {
-      "t": "Gamma (γ)",
-      "d": "foton (EM-straling)groot (zwak ioniserend)"
-     },
-     {
-      "t": "Röntgenfoto",
-      "d": "snel, vooral botten en longen; stralingsrisico"
-     },
-     {
-      "t": "CT-scan",
-      "d": "gedetailleerd 3D-beeld; hogere stralingsdosis"
-     },
-     {
-      "t": "Echografie",
-      "d": "geluidsgolven; veilig (geen ioniserende straling), lagere beeldkwaliteit"
-     },
-     {
-      "t": "Nucleair (PET)",
-      "d": "radioactieve tracer; tijdelijke besmetting van het lichaam"
-     },
-     {
-      "t": "Alfaverval",
-      "d": "de kern stoot een heliumkern uit; Z daalt met 2, A met 4 → ander element."
-     },
-     {
-      "t": "Bètaverval",
-      "d": "een neutron wordt een proton plus een elektron (dat wordt uitgezonden); Z stijgt met 1, A blijft gelijk → ander element."
+      "t": "Achtergrondstraling",
+      "d": "de natuurlijke straling die overal in onze omgeving aanwezig is"
      }
     ]
    }
