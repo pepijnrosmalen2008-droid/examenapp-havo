@@ -1945,9 +1945,9 @@ var VAKKEN = [
      "Bruto Binnenlands Product (BBP) en BBP per hoofd",
      "Lekken en injecties"
     ],
-    "nSv": 148,
+    "nSv": 34,
     "nOe": 7,
-    "nBeg": 32,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1964,9 +1964,9 @@ var VAKKEN = [
      "Marktfalen: externe effecten en collectieve goederen",
      "Minimumloon en maximumprijs"
     ],
-    "nSv": 176,
+    "nSv": 34,
     "nOe": 22,
-    "nBeg": 39,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1983,9 +1983,9 @@ var VAKKEN = [
      "Overheidsbegroting: begrotingstekort en staatsschuld",
      "Conjunctuurbeleid en automatische stabilisatoren"
     ],
-    "nSv": 168,
+    "nSv": 33,
     "nOe": 16,
-    "nBeg": 37,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -2002,9 +2002,9 @@ var VAKKEN = [
      "Monetair beleid: ECB en rente",
      "Wisselkoersen en internationale handel"
     ],
-    "nSv": 181,
+    "nSv": 34,
     "nOe": 13,
-    "nBeg": 40,
+    "nBeg": 10,
     "hasSam": true
    }
   ]
