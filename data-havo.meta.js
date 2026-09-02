@@ -1527,9 +1527,9 @@ var VAKKEN = [
      "Synoniem en antonym",
      "Formeel vs. informeel woordgebruik"
     ],
-    "nSv": 76,
+    "nSv": 31,
     "nOe": 7,
-    "nBeg": 16,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1546,9 +1546,9 @@ var VAKKEN = [
      "Reference words (pronouns, this/that/these)",
      "Summary and paraphrase skills"
     ],
-    "nSv": 69,
+    "nSv": 30,
     "nOe": 7,
-    "nBeg": 15,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1565,9 +1565,9 @@ var VAKKEN = [
      "Nieuws, documentaires en vlogs volgen",
      "Instructies correct uitvoeren"
     ],
-    "nSv": 55,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 11,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1584,9 +1584,9 @@ var VAKKEN = [
      "Vragen stellen en verduidelijking vragen",
      "Vloeiendheid en uitspraak"
     ],
-    "nSv": 55,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 12,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1603,9 +1603,9 @@ var VAKKEN = [
      "Revideren en proeflezen",
      "Formeel vs. informeel register"
     ],
-    "nSv": 44,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 9,
+    "nBeg": 10,
     "hasSam": true
    },
    {
@@ -1622,9 +1622,9 @@ var VAKKEN = [
      "Historische en culturele context",
      "Leeslijst Engelstalige werken"
     ],
-    "nSv": 87,
+    "nSv": 30,
     "nOe": 3,
-    "nBeg": 20,
+    "nBeg": 10,
     "hasSam": true
    }
   ]

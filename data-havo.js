@@ -43082,907 +43082,596 @@ var VAKKEN = [
      "Synoniem en antonym",
      "Formeel vs. informeel woordgebruik"
     ],
-    "sam": "<div class=\"sam-head\">Woordenschat (B1)</div><ul><li><strong>Context afleiden</strong>: gebruik omringende zinnen om onbekende woorden te begrijpen. Let op signaalwoorden: \"such as\", \"for example\", \"in other words\" = definitie volgt. \"However\", \"but\" = tegenstelling.</li><li><strong>Collocaties</strong>: woorden die vaak samen voorkomen - \"make a decision\" (niet \"do\"), \"do research\" (niet \"make\"), \"take part in\". Leer woorden in combinatie.</li><li><strong>Prefix/suffix</strong>: un- (niet: unhappy), -ful (vol: hopeful), -less (zonder: careless), dis- (niet/het tegenovergestelde: disagree), re- (opnieuw: rebuild), -tion/-sion (zelfstandig naamwoord: decision, nation).</li></ul><div class=\"sam-head\">Grammatica (B1)</div><ul><li><strong>Present perfect vs. simple past</strong>: \"I have seen\" (verleden met verband met nu, resultaat) vs. \"I saw yesterday\" (afgerond moment). Signalen: \"just, already, yet, ever, never, since, for\" = present perfect.</li><li><strong>Conditionals</strong>: type 1 = realistisch (\"If it rains, I will stay home\"). Type 2 = onrealistisch/hypothetisch (\"If I were rich, I would travel\"). Type 3 = verleden hypothetisch (\"If I had studied, I would have passed\").</li><li><strong>Passief</strong>: be + past participle. \"The book was written in 1900.\" Gebruik: als de uitvoerder onbekend of onbelangrijk is, of voor formele/academische stijl.</li><li><strong>Modale werkwoorden</strong>: must/have to (verplichting), should (advies), can/could (vermogen/mogelijkheid), may/might (toestemming/kans), will/would (toekomst/voorwaarde).</li></ul>",
+    "sam": "<div class=\"sam-intro\">You build words with <strong>prefixes</strong> and <strong>suffixes</strong>, choose the right <strong>tense</strong> (present perfect, past simple), and use <strong>conditionals</strong>, the <strong>passive voice</strong>, <strong>modal verbs</strong> and the correct <strong>prepositions</strong>.</div><div class=\"sam-head\">1. Word building and tenses</div><p>A <strong>prefix</strong> comes before a word and changes its meaning (\"un-\" = not); a <strong>suffix</strong> comes after. The <strong>present perfect</strong> links past and present (\"She has just finished\"); the <strong>past simple</strong> describes a finished action. A <strong>conditional</strong> like \"If I had money, I would buy…\" pairs a past tense with \"would\".</p><div class=\"sam-head\">2. Passive, modals and prepositions</div><p>The <strong>passive voice</strong> puts the object first: \"A new planet was discovered by the scientists.\" <strong>Modal verbs</strong> add meaning: \"should\" gives advice, \"can\" shows ability. Verbs and adjectives often take a fixed <strong>preposition</strong>: \"interested in\".</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Prefix</div><div class=\"sam-definitie-body\">letters added before a word that change its meaning, such as \"un-\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Present perfect</div><div class=\"sam-definitie-body\">the tense that links a past action to the present, \"have/has + past participle\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Conditional</div><div class=\"sam-definitie-body\">an \"if\"-sentence that pairs a past tense with \"would\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Passive voice</div><div class=\"sam-definitie-body\">a construction that puts the object first: \"was discovered\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Modal verb</div><div class=\"sam-definitie-body\">a helping verb like should or can that adds meaning.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Preposition</div><div class=\"sam-definitie-body\">a linking word like in, on or at that often follows a fixed verb.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Suffix</div><div class=\"sam-definitie-body\">letters added after a word that change its meaning or word class.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Past simple</div><div class=\"sam-definitie-body\">the tense for a finished action in the past.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Comparative</div><div class=\"sam-definitie-body\">the form that compares two things, such as \"bigger\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Article</div><div class=\"sam-definitie-body\">a word like a, an or the that comes before a noun.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Prefix»</b> is before a word, terwijl <b>«Suffix»</b> after a word is. <b>«Present perfect»</b> is links past and present, terwijl <b>«Past simple»</b> finished past action is. <b>«Conditional»</b> is if + past, would, terwijl <b>«Passive voice»</b> object first is. <b>«Passive voice»</b> is object first, terwijl <b>«Modal verb»</b> should, can is.</div>",
     "sv": [
      {
       "v": "What does the prefix \"un-\" mean in words like \"unhappy\" or \"unusual\"?",
       "o": [
-       "Not or the opposite of",
-       "Again or back",
-       "Without a specific quality",
-       "More than usual"
+       "not or the opposite of",
+       "very much",
+       "again",
+       "before"
       ],
       "c": 0,
-      "u": "\"Un-\" means not or opposite. Unhappy = not happy. Compare: re- = again (redo), -less = without (careless), over- = too much (overdo)."
+      "d": 2,
+      "u": "Correct: \"un-\" makes a word negative.",
+      "uo": [
+       "Correct: \"un-\" makes a word negative.",
+       "No, that would be \"very\".",
+       "No, that is \"re-\".",
+       "No, that is \"pre-\"."
+      ],
+      "uh": "The prefix \"un-\" means not or the opposite of."
      },
      {
       "v": "Which sentence uses the present perfect correctly?",
       "o": [
-       "I have visited Paris last year.",
+       "She have finish her homework.",
        "She has just finished her homework.",
-       "They have arrived yesterday.",
-       "He have never been to London."
+       "She just finished her homework yesterday.",
+       "She is finish her homework."
       ],
       "c": 1,
-      "u": "\"She has just finished\" is correct - just, already, yet, ever, never, since, for signal the present perfect. \"Last year\" and \"yesterday\" are finished time markers → simple past: \"I visited Paris last year.\""
+      "d": 3,
+      "u": "Correct: has + past participle.",
+      "uo": [
+       "No, \"have\" is wrong for \"she\".",
+       "Correct: has + past participle.",
+       "No, that is past simple with a time marker.",
+       "No, that is not a correct form."
+      ],
+      "uh": "Present perfect: has/have + past participle."
      },
      {
       "v": "Choose the correct conditional: \"If I __ enough money, I __ a new phone.\"",
       "o": [
+       "had / will buy",
        "have / will buy",
        "had / would buy",
-       "have / would buy",
-       "had / will buy"
+       "have / would buy"
       ],
-      "c": 1,
-      "u": "Type 2 conditional (unreal/hypothetical present): If + past simple → would + base verb. \"If I had enough money, I would buy a new phone.\" Type 1 (realistic): If I have → I will buy."
+      "c": 2,
+      "d": 3,
+      "u": "Correct: past tense in the if-clause, \"would\" in the main clause.",
+      "uo": [
+       "No, \"will\" does not fit \"had\".",
+       "No, that mixes the forms.",
+       "Correct: past tense in the if-clause, \"would\" in the main clause.",
+       "No, \"would\" does not fit \"have\"."
+      ],
+      "uh": "Conditional: if + past tense, then \"would\"."
      },
      {
       "v": "What is the passive form of \"The scientists discovered a new planet\"?",
       "o": [
-       "A new planet is discovered by the scientists.",
-       "A new planet was discovered by the scientists.",
-       "A new planet has been discover by the scientists.",
-       "A new planet discovered by scientists."
+       "A new planet is discovering by the scientists.",
+       "A new planet discovered the scientists.",
+       "The scientists were discovered a new planet.",
+       "A new planet was discovered by the scientists."
       ],
-      "c": 1,
-      "u": "Passive: be (in the correct tense) + past participle. The original verb \"discovered\" is past simple → \"was discovered\". \"By the scientists\" is the agent (optional in the passive)."
+      "c": 3,
+      "d": 3,
+      "u": "Correct: the object comes first with \"was + past participle\".",
+      "uo": [
+       "No, that tense is wrong.",
+       "No, that changes the meaning.",
+       "No, that is not passive.",
+       "Correct: the object comes first with \"was + past participle\"."
+      ],
+      "uh": "Passive: object + was/were + past participle."
      },
      {
       "v": "Which modal verb expresses advice?",
       "o": [
-       "must",
        "should",
        "can",
+       "must",
        "will"
       ],
-      "c": 1,
-      "u": "\"Should\" expresses advice or recommendation: \"You should revise your notes.\" \"Must\" = strong obligation. \"Can\" = ability/possibility. \"Will\" = future or intention."
+      "c": 0,
+      "d": 2,
+      "u": "Correct: \"should\" gives advice.",
+      "uo": [
+       "Correct: \"should\" gives advice.",
+       "No, \"can\" shows ability.",
+       "No, \"must\" is obligation.",
+       "No, \"will\" is future."
+      ],
+      "uh": "Modal \"should\": advice."
      },
      {
       "v": "\"She is very interested __ learning English.\" Which preposition is correct?",
       "o": [
-       "at",
-       "in",
        "on",
+       "in",
+       "at",
        "for"
       ],
       "c": 1,
-      "u": "Interested IN is a fixed collocation. Other fixed prepositions: good at, responsible for, proud of, depend on, looking forward to. Learn adjective + preposition combinations."
-     },
-     {
-      "v": "What does the suffix \"-tion\" or \"-sion\" indicate about a word?",
-      "o": [
-       "It makes the word an adjective",
-       "It makes the word a noun",
-       "It makes the word negative",
-       "It indicates the word is a verb in past tense"
+      "d": 2,
+      "u": "Correct: \"interested in\" is fixed.",
+      "uo": [
+       "No, that does not fit.",
+       "Correct: \"interested in\" is fixed.",
+       "No, that does not fit.",
+       "No, that does not fit."
       ],
-      "c": 1,
-      "u": "\"-tion\"/\"-sion\" creates nouns from verbs: decide → decision, communicate → communication, discuss → discussion. Recognising this helps you understand unfamiliar words."
+      "uh": "\"Interested in\": fixed preposition."
      },
      {
-      "v": "Which sentence is in a formal register?",
+      "v": "What is a prefix?",
       "o": [
-       "\"Gonna send you the info ASAP.\"",
-       "\"I would like to inform you that the report has been submitted.\"",
-       "\"Hey, just letting you know the report's done.\"",
-       "\"FYI the report is sent."
-      ],
-      "c": 1,
-      "u": "Formal register: full sentences, no contractions (I would, not I'd), no slang (gonna, ASAP, FYI), passive and polite constructions. Used in letters, reports, presentations."
-     },
-     {
-      "v": "Choose the correct sentence using the third conditional.",
-      "o": [
-       "\"If I studied harder, I will pass.\"",
-       "\"If I had studied harder, I would have passed.\"",
-       "\"If I would study harder, I passed.\"",
-       "\"If I had studied harder, I would pass.\""
-      ],
-      "c": 1,
-      "u": "Third conditional: If + past perfect → would have + past participle. Used for unreal past situations and their imagined results. \"If I had studied harder, I would have passed.\" (but I didn't → I failed)."
-     },
-     {
-      "v": "What does the word \"consequently\" signal?",
-      "o": [
-       "A contrast between two ideas",
-       "A result or consequence of what was stated before",
-       "An example or illustration",
-       "An addition to the previous point"
-      ],
-      "c": 1,
-      "u": "\"Consequently\" = as a result. Like: \"therefore\", \"thus\", \"as a result\", \"hence\". Compare: \"however/nevertheless\" = contrast; \"moreover/furthermore\" = addition; \"for example\" = illustration."
-     },
-     {
-      "v": "What is a synonym of \"important\"?",
-      "o": [
-       "trivial",
-       "significant",
-       "irrelevant",
-       "basic"
-      ],
-      "c": 1,
-      "u": "\"Significant\" is a synonym for important. \"Trivial\" = unimportant. \"Irrelevant\" = not related. At B1 level, knowing synonyms helps with both reading comprehension and writing variety."
-     },
-     {
-      "v": "Which sentence uses the passive voice correctly?",
-      "o": [
-       "\"The manager decided the policy.\"",
-       "\"The policy was decided by the manager.\"",
-       "\"The policy decided by the manager.\"",
-       "\"Was decided the policy by the manager.\""
-      ],
-      "c": 1,
-      "u": "Passive: subject + be + past participle (+ by agent). \"The policy was decided by the manager.\" Use passive when the action is more important than who did it, or when the agent is unknown."
-     },
-     {
-      "v": "Wat betekent «Tense»?",
-      "o": [
-       "de tijd en plaats van een verhaal",
-       "verbinden en structureren",
-       "de tijd van een werkwoord",
-       "\"I would be grateful if…\""
+       "the ending of a sentence",
+       "letters added after a word",
+       "letters added before a word that change its meaning",
+       "a punctuation mark"
       ],
       "c": 2,
-      "u": "«Tense» betekent: de tijd van een werkwoord.",
-      "d": 1
+      "d": 2,
+      "u": "Correct: a prefix comes before the word.",
+      "uo": [
+       "No, that is not a prefix.",
+       "No, that is a suffix.",
+       "Correct: a prefix comes before the word.",
+       "No, that is punctuation."
+      ],
+      "uh": "Prefix: added before a word."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de tijd van een werkwoord\"?",
+      "v": "What is a suffix?",
       "o": [
-       "Signal words",
-       "Conflict",
-       "Tone",
-       "Tense"
+       "a linking word",
+       "letters added before a word",
+       "the first word of a sentence",
+       "letters added after a word"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Tense»: de tijd van een werkwoord.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de tijd van een werkwoord\"?",
-      "o": [
-       "Word formation",
-       "Present perfect",
-       "Tense",
-       "Collocation"
+      "d": 2,
+      "u": "Correct: a suffix comes after the word.",
+      "uo": [
+       "No, that is a conjunction.",
+       "No, that is a prefix.",
+       "No, that is position, not a suffix.",
+       "Correct: a suffix comes after the word."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Tense»: de tijd van een werkwoord.",
-      "d": 3
+      "uh": "Suffix: added after a word."
      },
      {
-      "v": "Wat houdt «Tense» in?",
+      "v": "When do you use the past simple?",
       "o": [
-       "vol van / zonderuseful, useless",
-       "maakt zelfstandig nw.happiness, ability",
-       "de tijd van een werkwoord",
-       "de mate van formeel taalgebruik"
-      ],
-      "c": 2,
-      "u": "«Tense» betekent: de tijd van een werkwoord.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Irregular verb»?",
-      "o": [
-       "tijd voor iets dat nu bezig is",
-       "vloeiend genoeg over bekende onderwerpen",
-       "in short, to sum up, all in all",
-       "een werkwoord met een onregelmatige vervoeging"
-      ],
-      "c": 3,
-      "u": "«Irregular verb» betekent: een werkwoord met een onregelmatige vervoeging.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een werkwoord met een onregelmatige vervoeging\"?",
-      "o": [
-       "Samenvatting",
-       "Irregular verb",
-       "Signal phrases",
-       "Useful phrases"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Irregular verb»: een werkwoord met een onregelmatige vervoeging.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een werkwoord met een onregelmatige vervoeging\"?",
-      "o": [
-       "Irregular verb",
-       "Present continuous",
-       "Tenses",
-       "-ful, -less"
+       "for a finished action in the past",
+       "for an action that still continues",
+       "for the future",
+       "for advice"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Irregular verb»: een werkwoord met een onregelmatige vervoeging.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Irregular verb» in?",
-      "o": [
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
-       "vaste woordcombinaties (make/do)",
-       "prefixes en suffixes",
-       "een werkwoord met een onregelmatige vervoeging"
+      "d": 2,
+      "u": "Correct: the past simple describes a completed action.",
+      "uo": [
+       "Correct: the past simple describes a completed action.",
+       "No, that is the present perfect or continuous.",
+       "No, that uses \"will\".",
+       "No, that uses \"should\"."
       ],
-      "c": 3,
-      "u": "«Irregular verb» betekent: een werkwoord met een onregelmatige vervoeging.",
-      "d": 3
+      "uh": "Past simple: finished action in the past."
      },
      {
-      "v": "Wat betekent «Collocation»?",
+      "v": "Which modal verb expresses ability?",
       "o": [
-       "de tijd van een werkwoord",
-       "woorden die vaak samen voorkomen",
-       "de houding van de spreker",
-       "wat bedoeld wordt zonder het te zeggen"
+       "should",
+       "can",
+       "must",
+       "may"
       ],
       "c": 1,
-      "u": "«Collocation» betekent: woorden die vaak samen voorkomen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"woorden die vaak samen voorkomen\"?",
-      "o": [
-       "Collocation",
-       "Contrast",
-       "Cause/effect",
-       "Salutation & closing"
+      "d": 2,
+      "u": "Correct: \"can\" shows ability.",
+      "uo": [
+       "No, \"should\" is advice.",
+       "Correct: \"can\" shows ability.",
+       "No, \"must\" is obligation.",
+       "No, \"may\" is permission or possibility."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Collocation»: woorden die vaak samen voorkomen.",
-      "d": 2
+      "uh": "Modal \"can\": ability."
      },
      {
-      "v": "Welke term past bij: \"woorden die vaak samen voorkomen\"?",
+      "v": "What is the comparative of \"big\"?",
       "o": [
-       "Collocation",
-       "Present perfect",
-       "Tenses",
-       "re-"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Collocation»: woorden die vaak samen voorkomen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Collocation» in?",
-      "o": [
-       "de mate van formeel taalgebruik",
-       "woorden die vaak samen voorkomen",
-       "if-zinnen: type 0, 1, 2",
-       "vol van / zonderuseful, useless"
-      ],
-      "c": 1,
-      "u": "«Collocation» betekent: woorden die vaak samen voorkomen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Register»?",
-      "o": [
-       "hint naar wat later gebeurtdark clouds gathering",
-       "om verduidelijking vragen",
-       "de mate van formeel taalgebruik",
-       "vloeiend genoeg over bekende onderwerpen"
+       "more big",
+       "biggest",
+       "bigger",
+       "the big"
       ],
       "c": 2,
-      "u": "«Register» betekent: de mate van formeel taalgebruik.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de mate van formeel taalgebruik\"?",
-      "o": [
-       "Register",
-       "Contrast",
-       "re-",
-       "Signal words"
+      "d": 2,
+      "u": "Correct: short adjectives add \"-er\".",
+      "uo": [
+       "No, short adjectives do not use \"more\".",
+       "No, that is the superlative.",
+       "Correct: short adjectives add \"-er\".",
+       "No, that is not a comparison."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Register»: de mate van formeel taalgebruik.",
-      "d": 2
+      "uh": "Comparative of short adjectives: add \"-er\"."
      },
      {
-      "v": "Welke term past bij: \"de mate van formeel taalgebruik\"?",
+      "v": "She has just finished her homework, linking past and now. Welk begrip past hierbij?",
       "o": [
-       "Register",
-       "Irregular verb",
-       "Conditionals",
-       "False friend"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Register»: de mate van formeel taalgebruik.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Register» in?",
-      "o": [
-       "tijd voor iets dat nu bezig is",
-       "tijd voor gewoontes en feiten",
-       "maakt zelfstandig nw.happiness, ability",
-       "de mate van formeel taalgebruik"
-      ],
-      "c": 3,
-      "u": "«Register» betekent: de mate van formeel taalgebruik.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «False friend»?",
-      "o": [
-       "maakt zelfstandig nw.happiness, ability",
-       "woorden die vaak samen voorkomen",
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
-       "however, but, although, whereas, on the other hand"
-      ],
-      "c": 2,
-      "u": "«False friend» betekent: een woord dat op een Nederlands woord lijkt maar anders betekent.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een woord dat op een Nederlands woord lijkt maar anders betekent\"?",
-      "o": [
-       "Fast speech",
-       "-ness, -ity",
-       "static",
-       "False friend"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «False friend»: een woord dat op een Nederlands woord lijkt maar anders betekent.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een woord dat op een Nederlands woord lijkt maar anders betekent\"?",
-      "o": [
-       "Collocations",
-       "Register",
-       "False friend",
-       "-ness, -ity"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «False friend»: een woord dat op een Nederlands woord lijkt maar anders betekent.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «False friend» in?",
-      "o": [
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
-       "if-zinnen: type 0, 1, 2",
-       "de tijd van een werkwoord",
-       "woorden die vaak samen voorkomen"
-      ],
-      "c": 0,
-      "u": "«False friend» betekent: een woord dat op een Nederlands woord lijkt maar anders betekent.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Present simple»?",
-      "o": [
-       "verandert door het verhaal",
-       "betekenis raden uit de context",
-       "tijd voor gewoontes en feiten",
-       "een conclusie afleiden uit aanwijzingen"
-      ],
-      "c": 2,
-      "u": "«Present simple» betekent: tijd voor gewoontes en feiten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"tijd voor gewoontes en feiten\"?",
-      "o": [
-       "Metaphor",
-       "Present simple",
-       "Narrative perspective",
-       "Addition"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Present simple»: tijd voor gewoontes en feiten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"tijd voor gewoontes en feiten\"?",
-      "o": [
-       "Present simple",
-       "Present perfect",
-       "Passive",
-       "False friend"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Present simple»: tijd voor gewoontes en feiten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Present simple» in?",
-      "o": [
-       "de mate van formeel taalgebruik",
-       "tijd voor gewoontes en feiten",
-       "een werkwoord met een onregelmatige vervoeging",
-       "maakt zelfstandig nw.happiness, ability"
-      ],
-      "c": 1,
-      "u": "«Present simple» betekent: tijd voor gewoontes en feiten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Present continuous»?",
-      "o": [
-       "introduction, body, conclusion",
-       "de mate van formeel taalgebruik",
-       "tijd voor iets dat nu bezig is",
-       "metaphor, simile, foreshadowing"
-      ],
-      "c": 2,
-      "u": "«Present continuous» betekent: tijd voor iets dat nu bezig is.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"tijd voor iets dat nu bezig is\"?",
-      "o": [
-       "Skimming & scanning",
-       "Gist first",
-       "Present continuous",
-       "Signal phrase"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Present continuous»: tijd voor iets dat nu bezig is.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"tijd voor iets dat nu bezig is\"?",
-      "o": [
-       "Present continuous",
-       "Collocation",
-       "re-",
-       "False friend"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Present continuous»: tijd voor iets dat nu bezig is.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Present continuous» in?",
-      "o": [
-       "opnieuwrewrite, rebuild",
-       "tijd voor iets dat nu bezig is",
-       "vaste woordcombinaties (make/do)",
-       "vol van / zonderuseful, useless"
-      ],
-      "c": 1,
-      "u": "«Present continuous» betekent: tijd voor iets dat nu bezig is.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Present perfect»?",
-      "o": [
-       "for example, such as, for instance",
-       "wat bedoeld wordt zonder het te zeggen",
-       "tijd voor het verleden met een gevolg voor nu",
-       "hint naar wat later gebeurtdark clouds gathering"
-      ],
-      "c": 2,
-      "u": "«Present perfect» betekent: tijd voor het verleden met een gevolg voor nu.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"tijd voor het verleden met een gevolg voor nu\"?",
-      "o": [
-       "Conclusion",
-       "Present perfect",
-       "dynamic",
-       "Presentatiestructuur"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Present perfect»: tijd voor het verleden met een gevolg voor nu.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"tijd voor het verleden met een gevolg voor nu\"?",
-      "o": [
-       "Present perfect",
-       "Register",
-       "Conditionals",
-       "Collocations"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Present perfect»: tijd voor het verleden met een gevolg voor nu.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Present perfect» in?",
-      "o": [
-       "present simple, continuous, perfect",
-       "tijd voor het verleden met een gevolg voor nu",
-       "if-zinnen: type 0, 1, 2",
-       "tijd voor gewoontes en feiten"
-      ],
-      "c": 1,
-      "u": "«Present perfect» betekent: tijd voor het verleden met een gevolg voor nu.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Tenses»?",
-      "o": [
-       "een personage vertelt; beperkt tot eigen kennis",
-       "present simple, continuous, perfect",
-       "de centrale boodschap/idee",
-       "beleefd, geen spreektaal"
-      ],
-      "c": 1,
-      "u": "«Tenses» betekent: present simple, continuous, perfect.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"present simple, continuous, perfect\"?",
-      "o": [
-       "Collocations",
-       "Word formation",
-       "Passive",
-       "Tenses"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Tenses»: present simple, continuous, perfect.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"present simple, continuous, perfect\"?",
-      "o": [
-       "Present perfect",
-       "Tenses",
-       "-ful, -less",
-       "re-"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Tenses»: present simple, continuous, perfect.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Tenses» in?",
-      "o": [
-       "vol van / zonderuseful, useless",
-       "opnieuwrewrite, rebuild",
-       "maakt zelfstandig nw.happiness, ability",
-       "present simple, continuous, perfect"
-      ],
-      "c": 3,
-      "u": "«Tenses» betekent: present simple, continuous, perfect.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Conditionals»?",
-      "o": [
-       "a word that resembles a Dutch word",
-       "waar verwijst \"it/this/they\" naar?",
-       "\"he/she\"; volgt één personage",
-       "if-zinnen: type 0, 1, 2"
-      ],
-      "c": 3,
-      "u": "«Conditionals» betekent: if-zinnen: type 0, 1, 2.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"if-zinnen: type 0, 1, 2\"?",
-      "o": [
-       "Word formation",
-       "Foreshadowing",
-       "static",
-       "Conditionals"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Conditionals»: if-zinnen: type 0, 1, 2.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"if-zinnen: type 0, 1, 2\"?",
-      "o": [
-       "Present perfect",
-       "Register",
-       "-ful, -less",
-       "Conditionals"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Conditionals»: if-zinnen: type 0, 1, 2.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Conditionals» in?",
-      "o": [
-       "vaste woordcombinaties (make/do)",
-       "opnieuwrewrite, rebuild",
-       "if-zinnen: type 0, 1, 2",
-       "een woord dat op een Nederlands woord lijkt maar anders betekent"
-      ],
-      "c": 2,
-      "u": "«Conditionals» betekent: if-zinnen: type 0, 1, 2.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Passive»?",
-      "o": [
-       "because, therefore, so, as a result, since",
-       "gericht zoeken naar een detail",
-       "de handeling ondergaan i.p.v. doen",
-       "alwetend; kent ieders gedachten"
-      ],
-      "c": 2,
-      "u": "«Passive» betekent: de handeling ondergaan i.p.v. doen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de handeling ondergaan i.p.v. doen\"?",
-      "o": [
-       "Fluency",
-       "Implicit meaning",
-       "False friend",
-       "Passive"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Passive»: de handeling ondergaan i.p.v. doen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de handeling ondergaan i.p.v. doen\"?",
-      "o": [
-       "re-",
-       "Tenses",
-       "Word formation",
-       "Passive"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Passive»: de handeling ondergaan i.p.v. doen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Passive» in?",
-      "o": [
-       "woorden die vaak samen voorkomen",
-       "de handeling ondergaan i.p.v. doen",
-       "prefixes en suffixes",
-       "maakt zelfstandig nw.happiness, ability"
-      ],
-      "c": 1,
-      "u": "«Passive» betekent: de handeling ondergaan i.p.v. doen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Word formation»?",
-      "o": [
-       "prefixes en suffixes",
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "\"I completely agree\", \"That's a good point\""
-      ],
-      "c": 0,
-      "u": "«Word formation» betekent: prefixes en suffixes.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"prefixes en suffixes\"?",
-      "o": [
-       "Irregular verb",
-       "Word formation",
-       "Passive",
-       "Gist first"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Word formation»: prefixes en suffixes.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"prefixes en suffixes\"?",
-      "o": [
-       "Passive",
-       "Word formation",
-       "False friend",
-       "-ness, -ity"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Word formation»: prefixes en suffixes.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Word formation» in?",
-      "o": [
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
-       "opnieuwrewrite, rebuild",
-       "prefixes en suffixes",
-       "de handeling ondergaan i.p.v. doen"
-      ],
-      "c": 2,
-      "u": "«Word formation» betekent: prefixes en suffixes.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Collocations»?",
-      "o": [
-       "de opeenvolging van gebeurtenissen",
-       "vaste woordcombinaties (make/do)",
-       "\"that's why\", \"as a result\"",
-       "complex, meerdere kanten"
-      ],
-      "c": 1,
-      "u": "«Collocations» betekent: vaste woordcombinaties (make/do).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vaste woordcombinaties (make/do)\"?",
-      "o": [
-       "Collocations",
-       "Accent",
-       "Cause/effect",
-       "Useful phrases"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Collocations»: vaste woordcombinaties (make/do).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"vaste woordcombinaties (make/do)\"?",
-      "o": [
-       "Tenses",
-       "Collocations",
-       "-ness, -ity",
+       "Passive voice",
+       "Article",
+       "Preposition",
        "Present perfect"
       ],
+      "c": 3,
+      "d": 1,
+      "u": "She has just finished her homework, linking past and now. Dat past bij Present perfect: links past and present.",
+      "uo": [
+       "Nee, dat hoort bij Passive voice: object first.",
+       "Nee, dat hoort bij Article: a, an, the.",
+       "Nee, dat hoort bij Preposition: in, on, at.",
+       "Klopt: links past and present."
+      ],
+      "uh": "Present perfect: links past and present."
+     },
+     {
+      "v": "Yesterday I walked to school, a finished action. Om welk begrip gaat het?",
+      "o": [
+       "Past simple",
+       "Prefix",
+       "Article",
+       "Preposition"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Yesterday I walked to school, a finished action. Dat past bij Past simple: finished past action.",
+      "uo": [
+       "Klopt: finished past action.",
+       "Nee, dat hoort bij Prefix: before a word.",
+       "Nee, dat hoort bij Article: a, an, the.",
+       "Nee, dat hoort bij Preposition: in, on, at."
+      ],
+      "uh": "Past simple: finished past action."
+     },
+     {
+      "v": "The tense for a finished past action. Welk begrip herken je hier?",
+      "o": [
+       "Prefix",
+       "Past simple",
+       "Article",
+       "Preposition"
+      ],
       "c": 1,
-      "u": "Het juiste begrip is «Collocations»: vaste woordcombinaties (make/do).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Collocations» in?",
-      "o": [
-       "vaste woordcombinaties (make/do)",
-       "woorden die vaak samen voorkomen",
-       "if-zinnen: type 0, 1, 2",
-       "present simple, continuous, perfect"
+      "d": 1,
+      "u": "The tense for a finished past action. Dat past bij Past simple: finished past action.",
+      "uo": [
+       "Nee, dat hoort bij Prefix: before a word.",
+       "Klopt: finished past action.",
+       "Nee, dat hoort bij Article: a, an, the.",
+       "Nee, dat hoort bij Preposition: in, on, at."
       ],
-      "c": 0,
-      "u": "«Collocations» betekent: vaste woordcombinaties (make/do).",
-      "d": 3
+      "uh": "Past simple: finished past action."
      },
      {
-      "v": "Wat betekent «re-»?",
+      "v": "The form that compares two things. Wat is hier aan de hand?",
       "o": [
-       "if-zinnen: type 0, 1, 2",
-       "\"I would be grateful if…\"",
-       "een voorwerp dat een idee weergeeft",
-       "opnieuwrewrite, rebuild"
-      ],
-      "c": 3,
-      "u": "«re-» betekent: opnieuwrewrite, rebuild.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"opnieuwrewrite, rebuild\"?",
-      "o": [
-       "Conclusion",
-       "Unknown words",
-       "dynamic",
-       "re-"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «re-»: opnieuwrewrite, rebuild.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"opnieuwrewrite, rebuild\"?",
-      "o": [
-       "Word formation",
-       "Tense",
-       "re-",
-       "Present continuous"
+       "Past simple",
+       "Prefix",
+       "Comparative",
+       "Modal verb"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «re-»: opnieuwrewrite, rebuild.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «re-» in?",
-      "o": [
-       "vaste woordcombinaties (make/do)",
-       "tijd voor iets dat nu bezig is",
-       "opnieuwrewrite, rebuild",
-       "tijd voor gewoontes en feiten"
+      "d": 1,
+      "u": "The form that compares two things. Dat past bij Comparative: compares two things.",
+      "uo": [
+       "Nee, dat hoort bij Past simple: finished past action.",
+       "Nee, dat hoort bij Prefix: before a word.",
+       "Klopt: compares two things.",
+       "Nee, dat hoort bij Modal verb: should, can."
       ],
-      "c": 2,
-      "u": "«re-» betekent: opnieuwrewrite, rebuild.",
-      "d": 3
+      "uh": "Comparative: compares two things."
      },
      {
-      "v": "Wat betekent «-ness, -ity»?",
+      "v": "This box is bigger than that one. Welk begrip past hierbij?",
       "o": [
-       "maakt zelfstandig nw.happiness, ability",
-       "for example, such as, for instance",
-       "therefore, as a result, because",
-       "moreover, furthermore, in addition, also"
-      ],
-      "c": 0,
-      "u": "«-ness, -ity» betekent: maakt zelfstandig nw.happiness, ability.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"maakt zelfstandig nw.happiness, ability\"?",
-      "o": [
-       "Metaphor",
-       "Protagonist",
-       "-ful, -less",
-       "-ness, -ity"
+       "Modal verb",
+       "Article",
+       "Conditional",
+       "Comparative"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «-ness, -ity»: maakt zelfstandig nw.happiness, ability.",
-      "d": 2
+      "d": 3,
+      "u": "This box is bigger than that one. Dat past bij Comparative: compares two things.",
+      "uo": [
+       "Nee, dat hoort bij Modal verb: should, can.",
+       "Nee, dat hoort bij Article: a, an, the.",
+       "Nee, dat hoort bij Conditional: if + past, would.",
+       "Klopt: compares two things."
+      ],
+      "uh": "Comparative: compares two things."
      },
      {
-      "v": "Welke term past bij: \"maakt zelfstandig nw.happiness, ability\"?",
+      "v": "Letters added after a word. Om welk begrip gaat het?",
       "o": [
-       "-ness, -ity",
-       "Tenses",
-       "Collocations",
-       "Present simple"
+       "Suffix",
+       "Comparative",
+       "Article",
+       "Present perfect"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «-ness, -ity»: maakt zelfstandig nw.happiness, ability.",
-      "d": 3
+      "d": 1,
+      "u": "Letters added after a word. Dat past bij Suffix: after a word.",
+      "uo": [
+       "Klopt: after a word.",
+       "Nee, dat hoort bij Comparative: compares two things.",
+       "Nee, dat hoort bij Article: a, an, the.",
+       "Nee, dat hoort bij Present perfect: links past and present."
+      ],
+      "uh": "Suffix: after a word."
      },
      {
-      "v": "Wat houdt «-ness, -ity» in?",
+      "v": "A linking word like in, on or at. Welk begrip herken je hier?",
       "o": [
-       "tijd voor het verleden met een gevolg voor nu",
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
-       "maakt zelfstandig nw.happiness, ability",
-       "tijd voor gewoontes en feiten"
+       "Modal verb",
+       "Preposition",
+       "Conditional",
+       "Suffix"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "A linking word like in, on or at. Dat past bij Preposition: in, on, at.",
+      "uo": [
+       "Nee, dat hoort bij Modal verb: should, can.",
+       "Klopt: in, on, at.",
+       "Nee, dat hoort bij Conditional: if + past, would.",
+       "Nee, dat hoort bij Suffix: after a word."
+      ],
+      "uh": "Preposition: in, on, at."
+     },
+     {
+      "v": "She is interested in learning English. Wat is hier aan de hand?",
+      "o": [
+       "Article",
+       "Prefix",
+       "Preposition",
+       "Suffix"
       ],
       "c": 2,
-      "u": "«-ness, -ity» betekent: maakt zelfstandig nw.happiness, ability.",
-      "d": 3
+      "d": 1,
+      "u": "She is interested in learning English. Dat past bij Preposition: in, on, at.",
+      "uo": [
+       "Nee, dat hoort bij Article: a, an, the.",
+       "Nee, dat hoort bij Prefix: before a word.",
+       "Klopt: in, on, at.",
+       "Nee, dat hoort bij Suffix: after a word."
+      ],
+      "uh": "Preposition: in, on, at."
      },
      {
-      "v": "Wat betekent «-ful, -less»?",
+      "v": "A construction that puts the object first. Welk begrip past hierbij?",
       "o": [
-       "vol van / zonderuseful, useless",
-       "moreover, furthermore, in addition, also",
-       "complex, meerdere kanten",
-       "maakt zelfstandig nw.happiness, ability"
+       "Suffix",
+       "Modal verb",
+       "Article",
+       "Passive voice"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "A construction that puts the object first. Dat past bij Passive voice: object first.",
+      "uo": [
+       "Nee, dat hoort bij Suffix: after a word.",
+       "Nee, dat hoort bij Modal verb: should, can.",
+       "Nee, dat hoort bij Article: a, an, the.",
+       "Klopt: object first."
+      ],
+      "uh": "Passive voice: object first."
+     },
+     {
+      "v": "A new planet was discovered by the scientists. Om welk begrip gaat het?",
+      "o": [
+       "Passive voice",
+       "Conditional",
+       "Suffix",
+       "Preposition"
       ],
       "c": 0,
-      "u": "«-ful, -less» betekent: vol van / zonderuseful, useless.",
-      "d": 1
+      "d": 1,
+      "u": "A new planet was discovered by the scientists. Dat past bij Passive voice: object first.",
+      "uo": [
+       "Klopt: object first.",
+       "Nee, dat hoort bij Conditional: if + past, would.",
+       "Nee, dat hoort bij Suffix: after a word.",
+       "Nee, dat hoort bij Preposition: in, on, at."
+      ],
+      "uh": "Passive voice: object first."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vol van / zonderuseful, useless\"?",
+      "v": "An if-sentence pairing a past tense with would. Welk begrip herken je hier?",
       "o": [
-       "-ful, -less",
+       "Passive voice",
+       "Conditional",
+       "Modal verb",
+       "Suffix"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "An if-sentence pairing a past tense with would. Dat past bij Conditional: if + past, would.",
+      "uo": [
+       "Nee, dat hoort bij Passive voice: object first.",
+       "Klopt: if + past, would.",
+       "Nee, dat hoort bij Modal verb: should, can.",
+       "Nee, dat hoort bij Suffix: after a word."
+      ],
+      "uh": "Conditional: if + past, would."
+     },
+     {
+      "v": "A word like a, an or the. Wat is hier aan de hand?",
+      "o": [
+       "Suffix",
+       "Modal verb",
+       "Article",
+       "Comparative"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "A word like a, an or the. Dat past bij Article: a, an, the.",
+      "uo": [
+       "Nee, dat hoort bij Suffix: after a word.",
+       "Nee, dat hoort bij Modal verb: should, can.",
+       "Klopt: a, an, the.",
+       "Nee, dat hoort bij Comparative: compares two things."
+      ],
+      "uh": "Article: a, an, the."
+     },
+     {
+      "v": "Letters added before a word that change its meaning. Welk begrip past hierbij?",
+      "o": [
+       "Modal verb",
+       "Suffix",
        "Present perfect",
-       "Gist",
-       "Om herhaling vragen"
+       "Prefix"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "Letters added before a word that change its meaning. Dat past bij Prefix: before a word.",
+      "uo": [
+       "Nee, dat hoort bij Modal verb: should, can.",
+       "Nee, dat hoort bij Suffix: after a word.",
+       "Nee, dat hoort bij Present perfect: links past and present.",
+       "Klopt: before a word."
+      ],
+      "uh": "Prefix: before a word."
+     },
+     {
+      "v": "The \"-ness\" in happiness comes after the word. Om welk begrip gaat het?",
+      "o": [
+       "Suffix",
+       "Comparative",
+       "Article",
+       "Present perfect"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «-ful, -less»: vol van / zonderuseful, useless.",
-      "d": 2
+      "d": 1,
+      "u": "The \"-ness\" in happiness comes after the word. Dat past bij Suffix: after a word.",
+      "uo": [
+       "Klopt: after a word.",
+       "Nee, dat hoort bij Comparative: compares two things.",
+       "Nee, dat hoort bij Article: a, an, the.",
+       "Nee, dat hoort bij Present perfect: links past and present."
+      ],
+      "uh": "Suffix: after a word."
      },
      {
-      "v": "Welke term past bij: \"vol van / zonderuseful, useless\"?",
+      "v": "The tense with have or has plus a past participle. Welk begrip herken je hier?",
       "o": [
-       "Tenses",
-       "Conditionals",
-       "-ful, -less",
-       "Passive"
+       "Past simple",
+       "Present perfect",
+       "Conditional",
+       "Preposition"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «-ful, -less»: vol van / zonderuseful, useless.",
-      "d": 3
+      "c": 1,
+      "d": 2,
+      "u": "The tense with have or has plus a past participle. Dat past bij Present perfect: links past and present.",
+      "uo": [
+       "Nee, dat hoort bij Past simple: finished past action.",
+       "Klopt: links past and present.",
+       "Nee, dat hoort bij Conditional: if + past, would.",
+       "Nee, dat hoort bij Preposition: in, on, at."
+      ],
+      "uh": "Present perfect: links past and present."
      },
      {
-      "v": "Wat houdt «-ful, -less» in?",
+      "v": "A helping verb like should or can. Wat is hier aan de hand?",
       "o": [
-       "tijd voor gewoontes en feiten",
-       "present simple, continuous, perfect",
-       "vol van / zonderuseful, useless",
-       "prefixes en suffixes"
+       "Conditional",
+       "Preposition",
+       "Modal verb",
+       "Suffix"
       ],
       "c": 2,
-      "u": "«-ful, -less» betekent: vol van / zonderuseful, useless.",
-      "d": 3
+      "d": 3,
+      "u": "A helping verb like should or can. Dat past bij Modal verb: should, can.",
+      "uo": [
+       "Nee, dat hoort bij Conditional: if + past, would.",
+       "Nee, dat hoort bij Preposition: in, on, at.",
+       "Klopt: should, can.",
+       "Nee, dat hoort bij Suffix: after a word."
+      ],
+      "uh": "Modal verb: should, can."
+     },
+     {
+      "v": "The \"un-\" in unhappy turns the word into its opposite. Welk begrip past hierbij?",
+      "o": [
+       "Present perfect",
+       "Comparative",
+       "Article",
+       "Prefix"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "The \"un-\" in unhappy turns the word into its opposite. Dat past bij Prefix: before a word.",
+      "uo": [
+       "Nee, dat hoort bij Present perfect: links past and present.",
+       "Nee, dat hoort bij Comparative: compares two things.",
+       "Nee, dat hoort bij Article: a, an, the.",
+       "Klopt: before a word."
+      ],
+      "uh": "Prefix: before a word."
+     },
+     {
+      "v": "You should see a doctor is advice with a modal. Om welk begrip gaat het?",
+      "o": [
+       "Modal verb",
+       "Preposition",
+       "Suffix",
+       "Conditional"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "You should see a doctor is advice with a modal. Dat past bij Modal verb: should, can.",
+      "uo": [
+       "Klopt: should, can.",
+       "Nee, dat hoort bij Preposition: in, on, at.",
+       "Nee, dat hoort bij Suffix: after a word.",
+       "Nee, dat hoort bij Conditional: if + past, would."
+      ],
+      "uh": "Modal verb: should, can."
+     },
+     {
+      "v": "If I had more money, I would buy a phone. Welk begrip herken je hier?",
+      "o": [
+       "Passive voice",
+       "Conditional",
+       "Modal verb",
+       "Suffix"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "If I had more money, I would buy a phone. Dat past bij Conditional: if + past, would.",
+      "uo": [
+       "Nee, dat hoort bij Passive voice: object first.",
+       "Klopt: if + past, would.",
+       "Nee, dat hoort bij Modal verb: should, can.",
+       "Nee, dat hoort bij Suffix: after a word."
+      ],
+      "uh": "Conditional: if + past, would."
+     },
+     {
+      "v": "The word \"the\" comes before a noun. Wat is hier aan de hand?",
+      "o": [
+       "Suffix",
+       "Modal verb",
+       "Article",
+       "Comparative"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "The word \"the\" comes before a noun. Dat past bij Article: a, an, the.",
+      "uo": [
+       "Nee, dat hoort bij Suffix: after a word.",
+       "Nee, dat hoort bij Modal verb: should, can.",
+       "Klopt: a, an, the.",
+       "Nee, dat hoort bij Comparative: compares two things."
+      ],
+      "uh": "Article: a, an, the."
      }
     ],
     "oe": [
@@ -44065,68 +43754,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Tense",
-      "d": "de tijd van een werkwoord"
-     },
-     {
-      "t": "Irregular verb",
-      "d": "een werkwoord met een onregelmatige vervoeging"
-     },
-     {
-      "t": "Collocation",
-      "d": "woorden die vaak samen voorkomen"
-     },
-     {
-      "t": "Register",
-      "d": "de mate van formeel taalgebruik"
-     },
-     {
-      "t": "False friend",
-      "d": "een woord dat op een Nederlands woord lijkt maar anders betekent"
-     },
-     {
-      "t": "Present simple",
-      "d": "tijd voor gewoontes en feiten"
-     },
-     {
-      "t": "Present continuous",
-      "d": "tijd voor iets dat nu bezig is"
+      "t": "Prefix",
+      "d": "letters added before a word that change its meaning, such as \"un-\""
      },
      {
       "t": "Present perfect",
-      "d": "tijd voor het verleden met een gevolg voor nu"
+      "d": "the tense that links a past action to the present, \"have/has + past participle\""
      },
      {
-      "t": "Tenses",
-      "d": "present simple, continuous, perfect"
+      "t": "Conditional",
+      "d": "an \"if\"-sentence that pairs a past tense with \"would\""
      },
      {
-      "t": "Conditionals",
-      "d": "if-zinnen: type 0, 1, 2"
+      "t": "Passive voice",
+      "d": "a construction that puts the object first: \"was discovered\""
      },
      {
-      "t": "Passive",
-      "d": "de handeling ondergaan i.p.v. doen"
+      "t": "Modal verb",
+      "d": "a helping verb like should or can that adds meaning"
      },
      {
-      "t": "Word formation",
-      "d": "prefixes en suffixes"
+      "t": "Preposition",
+      "d": "a linking word like in, on or at that often follows a fixed verb"
      },
      {
-      "t": "Collocations",
-      "d": "vaste woordcombinaties (make/do)"
+      "t": "Suffix",
+      "d": "letters added after a word that change its meaning or word class"
      },
      {
-      "t": "re-",
-      "d": "opnieuwrewrite, rebuild"
+      "t": "Past simple",
+      "d": "the tense for a finished action in the past"
      },
      {
-      "t": "-ness, -ity",
-      "d": "maakt zelfstandig nw.happiness, ability"
+      "t": "Comparative",
+      "d": "the form that compares two things, such as \"bigger\""
      },
      {
-      "t": "-ful, -less",
-      "d": "vol van / zonderuseful, useless"
+      "t": "Article",
+      "d": "a word like a, an or the that comes before a noun"
      }
     ]
    },
@@ -44144,826 +43809,577 @@ var VAKKEN = [
      "Reference words (pronouns, this/that/these)",
      "Summary and paraphrase skills"
     ],
-    "sam": "<div class=\"sam-head\">Text Comprehension</div><ul><li><strong>Main idea</strong>: the central message or argument of the entire text - not just one paragraph. Often signalled in the title, first paragraph, or final conclusion. Ask: what does the writer want the reader to take away?</li><li><strong>Supporting details</strong>: examples, statistics, expert quotes, anecdotes that back up the main idea. Distinguish between detail (specific) and main idea (general).</li><li><strong>Inference</strong>: reading between the lines. The author implies something without stating it explicitly; the reader uses context and prior knowledge to infer the meaning.</li><li><strong>Skimming vs. scanning</strong>: skimming = reading quickly for general meaning (main idea). Scanning = looking for specific information (a date, a name).</li></ul><div class=\"sam-head\">Writer's Craft</div><ul><li><strong>Tone</strong>: the writer's attitude toward the subject (serious, ironic, humorous, critical, sceptical, sympathetic). Revealed through word choice, not the topic itself.</li><li><strong>Purpose</strong>: what the writer intends to achieve - to inform, to persuade, to entertain, to instruct, or a combination.</li><li><strong>Audience</strong>: who the text is written for. Affects vocabulary level, examples used, and assumed knowledge.</li><li><strong>Hedging language</strong>: writers use \"may\", \"might\", \"could\", \"seems to\", \"suggests\" to indicate uncertainty. This is especially common in academic and scientific texts.</li></ul><div class=\"sam-head\">Language and Structure</div><ul><li><strong>Reference words</strong>: pronouns and phrases that refer to an earlier noun or idea (it, they, this, these, the former, the latter). Always identify what they refer to - this is frequently tested.</li><li><strong>Cohesion markers</strong>: however (contrast) | moreover/furthermore (addition) | therefore/thus (result) | although/even though (concession) | for example/such as (illustration)</li><li><strong>Vocabulary in context</strong>: use surrounding sentences to deduce the meaning of unknown words. Look for synonyms, antonyms, examples, or definitions in the same or nearby sentences.</li><li><strong>Paragraph structure</strong>: topic sentence (main point) + supporting sentences + sometimes a concluding or linking sentence. Identifying topic sentences helps map the whole text quickly.</li></ul>",
+    "sam": "<div class=\"sam-intro\">Reading strategies help you handle texts: <strong>skimming</strong> for the gist, <strong>scanning</strong> for detail, and using <strong>context clues</strong> for unknown words. You recognise <strong>text structures</strong> (such as problem-solution), the <strong>topic sentence</strong> and the difference between <strong>explicit</strong> and <strong>implicit</strong> information.</div><div class=\"sam-head\">1. Strategies</div><p><strong>Skimming</strong> gives you the general idea, <strong>scanning</strong> finds a specific detail. For an unknown word, use the <strong>context clues</strong>. An <strong>inference</strong> is a conclusion you draw from clues rather than a stated fact.</p><div class=\"sam-head\">2. Structure and meaning</div><p>A <strong>topic sentence</strong> states the main point of a paragraph, usually at the start. A <strong>problem-solution structure</strong> introduces a difficulty and then a resolution. <strong>Explicit</strong> information is clearly stated; <strong>implicit</strong> information is implied and must be inferred. \"However\" signals a <strong>contrast</strong>.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Skimming</div><div class=\"sam-definitie-body\">reading quickly to get the general idea.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Scanning</div><div class=\"sam-definitie-body\">reading quickly to find a specific detail.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Topic sentence</div><div class=\"sam-definitie-body\">the sentence that states the main point of a paragraph.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Context clues</div><div class=\"sam-definitie-body\">hints in the surrounding text that reveal an unknown word.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Explicit information</div><div class=\"sam-definitie-body\">information that is clearly stated in the text.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Implicit information</div><div class=\"sam-definitie-body\">information that is implied and must be inferred.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Problem-solution structure</div><div class=\"sam-definitie-body\">a structure that introduces a difficulty and then a resolution.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Contrast signal</div><div class=\"sam-definitie-body\">a word like \"however\" that marks a contrast.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Inference</div><div class=\"sam-definitie-body\">a conclusion drawn from clues rather than a stated fact.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Main idea</div><div class=\"sam-definitie-body\">the central message of a text.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Skimming»</b> is general idea, terwijl <b>«Scanning»</b> specific detail is. <b>«Topic sentence»</b> is main point of a paragraph, terwijl <b>«Context clues»</b> hints around a word is. <b>«Explicit information»</b> is clearly stated, terwijl <b>«Implicit information»</b> implied, inferred is. <b>«Problem-solution structure»</b> is difficulty then resolution, terwijl <b>«Contrast signal»</b> marks a contrast is.</div>",
     "sv": [
      {
       "v": "Which word signals a contrast in English?",
       "o": [
-       "However",
-       "Moreover",
-       "Therefore",
-       "Furthermore"
+       "however",
+       "therefore",
+       "moreover",
+       "for example"
       ],
       "c": 0,
-      "u": "However signals a contrast or opposition. Moreover and furthermore signal addition. Therefore signals a result or consequence."
+      "d": 2,
+      "u": "Correct: \"however\" marks a contrast.",
+      "uo": [
+       "Correct: \"however\" marks a contrast.",
+       "No, that signals a consequence.",
+       "No, that adds a point.",
+       "No, that introduces an example."
+      ],
+      "uh": "\"However\": contrast."
      },
      {
       "v": "What should you do when you encounter an unknown word?",
       "o": [
-       "Use the surrounding context to determine its meaning",
-       "Skip the word entirely",
-       "Always look it up in a dictionary during the exam",
-       "Guess randomly based on the first letter"
+       "skip the whole text",
+       "use the surrounding context to determine its meaning",
+       "stop reading",
+       "translate every letter"
       ],
-      "c": 0,
-      "u": "Context clues: look at the sentence before and after. Synonyms, antonyms, examples or definitions nearby often reveal the meaning."
+      "c": 1,
+      "d": 2,
+      "u": "Correct: context clues reveal the meaning.",
+      "uo": [
+       "No, that loses the message.",
+       "Correct: context clues reveal the meaning.",
+       "No, one word is rarely decisive.",
+       "No, that does not help."
+      ],
+      "uh": "Unknown word: use context clues."
      },
      {
       "v": "Which text structure introduces a difficulty and then proposes a resolution?",
       "o": [
-       "Problem-solution structure",
-       "Cause-effect structure",
-       "Compare-contrast structure",
-       "Chronological structure"
+       "compare-contrast structure",
+       "chronological structure",
+       "problem-solution structure",
+       "cause-effect structure"
       ],
-      "c": 0,
-      "u": "Problem-solution: paragraph 1 describes the problem, paragraph 2 offers the solution. Cause-effect: one event leads to another. Compare-contrast: similarities and differences between two subjects."
+      "c": 2,
+      "d": 3,
+      "u": "Correct: a problem followed by a solution.",
+      "uo": [
+       "No, that weighs similarities and differences.",
+       "No, that follows time order.",
+       "Correct: a problem followed by a solution.",
+       "No, that links causes to effects."
+      ],
+      "uh": "Problem-solution: difficulty then resolution."
      },
      {
       "v": "What is the function of a topic sentence in a paragraph?",
       "o": [
-       "It states the main point of the paragraph, usually at the beginning",
-       "It provides supporting evidence for the thesis",
-       "It summarises the entire text in one sentence",
-       "It introduces a counter-argument"
-      ],
-      "c": 0,
-      "u": "Topic sentence = the controlling idea of the paragraph. All other sentences support or explain it. Reading only the topic sentences gives a quick summary of the text structure."
-     },
-     {
-      "v": "What is the difference between explicit and implicit information in a text?",
-      "o": [
-       "Explicit: clearly stated. Implicit: implied, must be inferred from context.",
-       "Explicit: found at the end of the text. Implicit: found at the beginning.",
-       "There is no difference; both mean the same thing.",
-       "Explicit: incorrect information. Implicit: correct information."
-      ],
-      "c": 0,
-      "u": "Explicit information is directly stated. Implicit information requires inference - the writer hints at something without stating it outright. CE questions often ask about implied meaning."
-     },
-     {
-      "v": "What does the word \"however\" at the beginning of a sentence indicate?",
-      "o": [
-       "A result of the previous statement",
-       "A contrast or limitation to what was just said",
-       "An additional supporting point",
-       "A specific example of the main idea"
-      ],
-      "c": 1,
-      "u": "\"However\" signals contrast: the sentence that follows contradicts or limits what came before. Synonyms: \"Nevertheless\", \"On the other hand\", \"Yet\", \"Nonetheless\". Contrast words are frequently tested in reading comprehension."
-     },
-     {
-      "v": "A writer states: \"Many experts believe climate action is urgent.\" What does \"many\" suggest?",
-      "o": [
-       "All experts agree - this is a proven fact",
-       "Not all experts agree - the claim is qualified and not absolute",
-       "The writer has personally interviewed all experts",
-       "The statement has been proven by scientific research"
-      ],
-      "c": 1,
-      "u": "\"Many\" is a quantifier that qualifies the claim: not all, but a significant number. Similarly: \"some\", \"several\", \"most\", \"a growing number of\" all soften absolute claims. Exam questions often ask you to recognise this."
-     },
-     {
-      "v": "What is \"skimming\" in reading comprehension?",
-      "o": [
-       "Reading every word slowly for full detail",
-       "Reading quickly to get a general overview of the text",
-       "Looking for one specific piece of information",
-       "Reading only the introduction and conclusion"
-      ],
-      "c": 1,
-      "u": "Skimming = reading fast for the general idea: title, headings, first and last sentences. Scanning = searching for specific information (a date, a name). Both are tested in HAVO reading comprehension."
-     },
-     {
-      "v": "Which of the following is an example of a fact, not an opinion?",
-      "o": [
-       "\"The government should invest more in renewable energy.\"",
-       "\"In 2022, the Netherlands generated 15% of its electricity from wind power.\"",
-       "\"Solar panels are the best solution to climate change.\"",
-       "\"Everyone agrees that public transport should be free.\""
-      ],
-      "c": 1,
-      "u": "A fact can be checked and verified. An opinion expresses a personal view. \"15% from wind power in 2022\" is verifiable data = fact. \"Should\", \"best solution\", \"everyone agrees\" signal opinions or normative statements."
-     },
-     {
-      "v": "Wat betekent «Skimming»?",
-      "o": [
-       "tijd voor iets dat nu bezig is",
-       "globaal lezen voor de hoofdlijn",
-       "\"to sum up\", \"in short\", \"so basically\"",
-       "metaphor, simile, foreshadowing"
-      ],
-      "c": 1,
-      "u": "«Skimming» betekent: globaal lezen voor de hoofdlijn.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"globaal lezen voor de hoofdlijn\"?",
-      "o": [
-       "Cause/effect",
-       "Fast speech",
-       "Skimming",
-       "Tenses"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Skimming»: globaal lezen voor de hoofdlijn.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"globaal lezen voor de hoofdlijn\"?",
-      "o": [
-       "Tone & purpose",
-       "Inference",
-       "Example",
-       "Skimming"
+       "it repeats the title",
+       "it gives the final example",
+       "it lists the sources",
+       "it states the main point, usually at the beginning"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Skimming»: globaal lezen voor de hoofdlijn.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Skimming» in?",
-      "o": [
-       "gericht zoeken naar een detail",
-       "globaal lezen vs. gericht zoeken",
-       "betekenis raden uit de context",
-       "globaal lezen voor de hoofdlijn"
+      "d": 2,
+      "u": "Correct: the topic sentence carries the main point.",
+      "uo": [
+       "No, that is the heading.",
+       "No, that is a supporting detail.",
+       "No, that is a reference.",
+       "Correct: the topic sentence carries the main point."
       ],
-      "c": 3,
-      "u": "«Skimming» betekent: globaal lezen voor de hoofdlijn.",
-      "d": 3
+      "uh": "Topic sentence: main point of a paragraph."
      },
      {
-      "v": "Wat betekent «Scanning»?",
+      "v": "What is the difference between explicit and implicit information?",
       "o": [
-       "in short, to sum up, all in all",
-       "vaste zinnen om vloeiend te spreken",
-       "gericht zoeken naar een detail",
-       "de opeenvolging van gebeurtenissen"
+       "explicit is clearly stated, implicit is implied and must be inferred",
+       "they are the same",
+       "explicit is implied",
+       "implicit is clearly stated"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Correct: stated versus implied.",
+      "uo": [
+       "Correct: stated versus implied.",
+       "No, they differ.",
+       "No, that is reversed.",
+       "No, that is reversed."
+      ],
+      "uh": "Explicit: stated; implicit: implied."
+     },
+     {
+      "v": "What does \"however\" at the beginning of a sentence indicate?",
+      "o": [
+       "an added example",
+       "a contrast or limitation to what was just said",
+       "a conclusion",
+       "a cause"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Correct: it limits or contrasts the previous idea.",
+      "uo": [
+       "No, that is \"for example\".",
+       "Correct: it limits or contrasts the previous idea.",
+       "No, that is \"in conclusion\".",
+       "No, that is \"because\"."
+      ],
+      "uh": "\"However\": contrast or limitation."
+     },
+     {
+      "v": "What is the purpose of skimming?",
+      "o": [
+       "to memorise the text",
+       "to find one specific fact",
+       "to get the general idea quickly",
+       "to check the spelling"
       ],
       "c": 2,
-      "u": "«Scanning» betekent: gericht zoeken naar een detail.",
-      "d": 1
+      "d": 2,
+      "u": "Correct: skimming gives you the gist.",
+      "uo": [
+       "No, skimming is not close reading.",
+       "No, that is scanning.",
+       "Correct: skimming gives you the gist.",
+       "No, that is proofreading."
+      ],
+      "uh": "Skimming: quick general idea."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"gericht zoeken naar een detail\"?",
+      "v": "What is the purpose of scanning?",
       "o": [
-       "B1-niveau",
+       "to learn every word",
+       "to get the general idea",
+       "to enjoy the story",
+       "to find a specific detail quickly"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Correct: scanning finds a detail fast.",
+      "uo": [
+       "No, scanning skips most of the text.",
+       "No, that is skimming.",
+       "No, that is reading for pleasure.",
+       "Correct: scanning finds a detail fast."
+      ],
+      "uh": "Scanning: quickly find a detail."
+     },
+     {
+      "v": "What is an inference?",
+      "o": [
+       "a conclusion drawn from clues, not stated directly",
+       "a word's dictionary meaning",
+       "the title of a text",
+       "a spelling rule"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "Correct: you infer what the text implies.",
+      "uo": [
+       "Correct: you infer what the text implies.",
+       "No, that is a definition.",
+       "No, that is the heading.",
+       "No, that is grammar."
+      ],
+      "uh": "Inference: reading between the lines."
+     },
+     {
+      "v": "What is the main idea of a text?",
+      "o": [
+       "the first word",
+       "the central message",
+       "a small detail",
+       "the page number"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Correct: the main idea sums up the core.",
+      "uo": [
+       "No, that says little.",
+       "Correct: the main idea sums up the core.",
+       "No, a detail is minor.",
+       "No, that is layout."
+      ],
+      "uh": "Main idea: the central message."
+     },
+     {
+      "v": "You run your eyes over the page to find one date. Welk begrip past hierbij?",
+      "o": [
+       "Implicit information",
+       "Topic sentence",
        "Scanning",
-       "Accent",
-       "Conclusion"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Scanning»: gericht zoeken naar een detail.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"gericht zoeken naar een detail\"?",
-      "o": [
-       "Scanning",
-       "Skimming",
-       "Tone & purpose",
-       "Example"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Scanning»: gericht zoeken naar een detail.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Scanning» in?",
-      "o": [
-       "betekenis raden uit de context",
-       "globaal lezen voor de hoofdlijn",
-       "gericht zoeken naar een detail",
-       "for example, such as, for instance"
-      ],
-      "c": 2,
-      "u": "«Scanning» betekent: gericht zoeken naar een detail.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Inference»?",
-      "o": [
-       "a comparison using like or as",
-       "\"Could you repeat that, please?\"",
-       "een conclusie afleiden uit aanwijzingen",
-       "present simple, continuous, perfect"
-      ],
-      "c": 2,
-      "u": "«Inference» betekent: een conclusie afleiden uit aanwijzingen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een conclusie afleiden uit aanwijzingen\"?",
-      "o": [
-       "Omniscient",
-       "Polite requests",
-       "Inference",
-       "Contrast"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Inference»: een conclusie afleiden uit aanwijzingen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een conclusie afleiden uit aanwijzingen\"?",
-      "o": [
-       "Unknown words",
-       "Inference",
-       "Conclusion",
-       "Reference words"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Inference»: een conclusie afleiden uit aanwijzingen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Inference» in?",
-      "o": [
-       "because, therefore, so, as a result, since",
-       "een conclusie afleiden uit aanwijzingen",
-       "moreover, furthermore, in addition, also",
-       "for example, such as, for instance"
-      ],
-      "c": 1,
-      "u": "«Inference» betekent: een conclusie afleiden uit aanwijzingen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Cognate»?",
-      "o": [
-       "a word that resembles a Dutch word",
-       "\"I see your point, but…\", \"I'm not so sure\"",
-       "verbinden en structureren",
-       "een aanwijzing in de tekst voor een woordbetekenis"
-      ],
-      "c": 0,
-      "u": "«Cognate» betekent: a word that resembles a Dutch word.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"a word that resembles a Dutch word\"?",
-      "o": [
-       "Cognate",
-       "Contrast",
-       "-ness, -ity",
-       "static"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Cognate»: a word that resembles a Dutch word.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"a word that resembles a Dutch word\"?",
-      "o": [
-       "Cognate",
-       "Signal words",
-       "Example",
-       "Contrast"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Cognate»: a word that resembles a Dutch word.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Cognate» in?",
-      "o": [
-       "een aanwijzing in de tekst voor een woordbetekenis",
-       "a word that resembles a Dutch word",
-       "gericht zoeken naar een detail",
-       "for example, such as, for instance"
-      ],
-      "c": 1,
-      "u": "«Cognate» betekent: a word that resembles a Dutch word.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Context clue»?",
-      "o": [
-       "\"Could you repeat that, please?\"",
-       "woordjes om bedenktijd te winnen",
-       "een aanwijzing in de tekst voor een woordbetekenis",
-       "\"to sum up\", \"in short\", \"so basically\""
-      ],
-      "c": 2,
-      "u": "«Context clue» betekent: een aanwijzing in de tekst voor een woordbetekenis.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een aanwijzing in de tekst voor een woordbetekenis\"?",
-      "o": [
-       "Fluency",
-       "False friend",
-       "Context clue",
-       "Conclusie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Context clue»: een aanwijzing in de tekst voor een woordbetekenis.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een aanwijzing in de tekst voor een woordbetekenis\"?",
-      "o": [
-       "Tone & purpose",
-       "Skimming",
-       "Unknown words",
-       "Context clue"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Context clue»: een aanwijzing in de tekst voor een woordbetekenis.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Context clue» in?",
-      "o": [
-       "een aanwijzing in de tekst voor een woordbetekenis",
-       "globaal lezen vs. gericht zoeken",
-       "houding vs. doel van de schrijver",
-       "in short, to sum up, all in all"
-      ],
-      "c": 0,
-      "u": "«Context clue» betekent: een aanwijzing in de tekst voor een woordbetekenis.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Skimming & scanning»?",
-      "o": [
-       "globaal lezen vs. gericht zoeken",
-       "if-zinnen: type 0, 1, 2",
-       "Dear Sir/Madam … Yours faithfully",
-       "introduction, body, conclusion"
-      ],
-      "c": 0,
-      "u": "«Skimming & scanning» betekent: globaal lezen vs. gericht zoeken.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"globaal lezen vs. gericht zoeken\"?",
-      "o": [
-       "Narrative perspective",
-       "Gist",
-       "Skimming & scanning",
-       "Conflict"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Skimming & scanning»: globaal lezen vs. gericht zoeken.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"globaal lezen vs. gericht zoeken\"?",
-      "o": [
-       "Cognate",
-       "Skimming & scanning",
-       "Signal words",
-       "Tone & purpose"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Skimming & scanning»: globaal lezen vs. gericht zoeken.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Skimming & scanning» in?",
-      "o": [
-       "een conclusie afleiden uit aanwijzingen",
-       "linking words wijzen het verband",
-       "globaal lezen vs. gericht zoeken",
-       "waar verwijst \"it/this/they\" naar?"
-      ],
-      "c": 2,
-      "u": "«Skimming & scanning» betekent: globaal lezen vs. gericht zoeken.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Unknown words»?",
-      "o": [
-       "betekenis raden uit de context",
-       "maakt zelfstandig nw.happiness, ability",
-       "de mate van formeel taalgebruik",
-       "moreover, furthermore, in addition, also"
-      ],
-      "c": 0,
-      "u": "«Unknown words» betekent: betekenis raden uit de context.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"betekenis raden uit de context\"?",
-      "o": [
-       "Unknown words",
-       "Om herhaling vragen",
-       "Fast speech",
-       "Present perfect"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Unknown words»: betekenis raden uit de context.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"betekenis raden uit de context\"?",
-      "o": [
-       "Example",
-       "Unknown words",
-       "Signal words",
        "Inference"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Unknown words»: betekenis raden uit de context.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Unknown words» in?",
-      "o": [
-       "betekenis raden uit de context",
-       "globaal lezen vs. gericht zoeken",
-       "linking words wijzen het verband",
-       "een aanwijzing in de tekst voor een woordbetekenis"
+      "c": 2,
+      "d": 1,
+      "u": "You run your eyes over the page to find one date. Dat past bij Scanning: specific detail.",
+      "uo": [
+       "Nee, dat hoort bij Implicit information: implied, inferred.",
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph.",
+       "Klopt: specific detail.",
+       "Nee, dat hoort bij Inference: conclusion from clues."
       ],
-      "c": 0,
-      "u": "«Unknown words» betekent: betekenis raden uit de context.",
-      "d": 3
+      "uh": "Scanning: specific detail."
      },
      {
-      "v": "Wat betekent «Signal words»?",
+      "v": "The word however shows a contrast is coming. Om welk begrip gaat het?",
       "o": [
-       "linking words wijzen het verband",
-       "\"that's why\", \"as a result\"",
-       "eenvoudig, één trek",
-       "moreover, furthermore, in addition, also"
-      ],
-      "c": 0,
-      "u": "«Signal words» betekent: linking words wijzen het verband.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"linking words wijzen het verband\"?",
-      "o": [
-       "Signal words",
-       "Signal phrases",
-       "-ness, -ity",
-       "Irregular verb"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Signal words»: linking words wijzen het verband.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"linking words wijzen het verband\"?",
-      "o": [
-       "Contrast",
-       "Tone & purpose",
-       "Cognate",
-       "Signal words"
+       "Topic sentence",
+       "Main idea",
+       "Explicit information",
+       "Contrast signal"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Signal words»: linking words wijzen het verband.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Signal words» in?",
-      "o": [
-       "a word that resembles a Dutch word",
-       "gericht zoeken naar een detail",
-       "een aanwijzing in de tekst voor een woordbetekenis",
-       "linking words wijzen het verband"
+      "d": 1,
+      "u": "The word however shows a contrast is coming. Dat past bij Contrast signal: marks a contrast.",
+      "uo": [
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph.",
+       "Nee, dat hoort bij Main idea: central message.",
+       "Nee, dat hoort bij Explicit information: clearly stated.",
+       "Klopt: marks a contrast."
       ],
-      "c": 3,
-      "u": "«Signal words» betekent: linking words wijzen het verband.",
-      "d": 3
+      "uh": "Contrast signal: marks a contrast."
      },
      {
-      "v": "Wat betekent «Reference words»?",
+      "v": "A word that marks a contrast. Welk begrip herken je hier?",
       "o": [
-       "linking words wijzen het verband",
-       "de strijd die het verhaal drijft",
-       "if-zinnen: type 0, 1, 2",
-       "waar verwijst \"it/this/they\" naar?"
+       "Contrast signal",
+       "Main idea",
+       "Explicit information",
+       "Topic sentence"
       ],
-      "c": 3,
-      "u": "«Reference words» betekent: waar verwijst \"it/this/they\" naar?.",
-      "d": 1
+      "c": 0,
+      "d": 1,
+      "u": "A word that marks a contrast. Dat past bij Contrast signal: marks a contrast.",
+      "uo": [
+       "Klopt: marks a contrast.",
+       "Nee, dat hoort bij Main idea: central message.",
+       "Nee, dat hoort bij Explicit information: clearly stated.",
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph."
+      ],
+      "uh": "Contrast signal: marks a contrast."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"waar verwijst \"it/this/they\" naar?\"?",
+      "v": "A conclusion drawn from clues. Wat is hier aan de hand?",
       "o": [
-       "Unknown words",
-       "Reference words",
-       "Present continuous",
-       "Presentatiestructuur"
+       "Main idea",
+       "Inference",
+       "Skimming",
+       "Contrast signal"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Reference words»: waar verwijst \"it/this/they\" naar?.",
-      "d": 2
+      "d": 3,
+      "u": "A conclusion drawn from clues. Dat past bij Inference: conclusion from clues.",
+      "uo": [
+       "Nee, dat hoort bij Main idea: central message.",
+       "Klopt: conclusion from clues.",
+       "Nee, dat hoort bij Skimming: general idea.",
+       "Nee, dat hoort bij Contrast signal: marks a contrast."
+      ],
+      "uh": "Inference: conclusion from clues."
      },
      {
-      "v": "Welke term past bij: \"waar verwijst \"it/this/they\" naar?\"?",
+      "v": "The text does not state it, but you conclude the character is nervous. Welk begrip past hierbij?",
       "o": [
        "Skimming",
+       "Topic sentence",
        "Inference",
-       "Reference words",
-       "Contrast"
+       "Contrast signal"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Reference words»: waar verwijst \"it/this/they\" naar?.",
-      "d": 3
+      "d": 1,
+      "u": "The text does not state it, but you conclude the character is nervous. Dat past bij Inference: conclusion from clues.",
+      "uo": [
+       "Nee, dat hoort bij Skimming: general idea.",
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph.",
+       "Klopt: conclusion from clues.",
+       "Nee, dat hoort bij Contrast signal: marks a contrast."
+      ],
+      "uh": "Inference: conclusion from clues."
      },
      {
-      "v": "Wat houdt «Reference words» in?",
+      "v": "A structure of difficulty then resolution. Om welk begrip gaat het?",
       "o": [
-       "moreover, furthermore, in addition, also",
-       "een conclusie afleiden uit aanwijzingen",
-       "een aanwijzing in de tekst voor een woordbetekenis",
-       "waar verwijst \"it/this/they\" naar?"
+       "Skimming",
+       "Contrast signal",
+       "Explicit information",
+       "Problem-solution structure"
       ],
       "c": 3,
-      "u": "«Reference words» betekent: waar verwijst \"it/this/they\" naar?.",
-      "d": 3
+      "d": 3,
+      "u": "A structure of difficulty then resolution. Dat past bij Problem-solution structure: difficulty then resolution.",
+      "uo": [
+       "Nee, dat hoort bij Skimming: general idea.",
+       "Nee, dat hoort bij Contrast signal: marks a contrast.",
+       "Nee, dat hoort bij Explicit information: clearly stated.",
+       "Klopt: difficulty then resolution."
+      ],
+      "uh": "Problem-solution structure: difficulty then resolution."
      },
      {
-      "v": "Wat betekent «Tone & purpose»?",
+      "v": "Information that is implied. Welk begrip herken je hier?",
       "o": [
-       "houding vs. doel van de schrijver",
-       "maakt zelfstandig nw.happiness, ability",
-       "\"I see your point, but…\", \"I'm not so sure\"",
-       "de vlotheid waarmee je spreekt"
+       "Implicit information",
+       "Main idea",
+       "Context clues",
+       "Topic sentence"
       ],
       "c": 0,
-      "u": "«Tone & purpose» betekent: houding vs. doel van de schrijver.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"houding vs. doel van de schrijver\"?",
-      "o": [
-       "Tone & purpose",
-       "Addition",
-       "Conflict",
-       "Fast speech"
+      "d": 1,
+      "u": "Information that is implied. Dat past bij Implicit information: implied, inferred.",
+      "uo": [
+       "Klopt: implied, inferred.",
+       "Nee, dat hoort bij Main idea: central message.",
+       "Nee, dat hoort bij Context clues: hints around a word.",
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Tone & purpose»: houding vs. doel van de schrijver.",
-      "d": 2
+      "uh": "Implicit information: implied, inferred."
      },
      {
-      "v": "Welke term past bij: \"houding vs. doel van de schrijver\"?",
+      "v": "The text does not say it, but you can infer it. Wat is hier aan de hand?",
       "o": [
-       "Context clue",
-       "Tone & purpose",
-       "Conclusion",
+       "Explicit information",
+       "Implicit information",
+       "Topic sentence",
        "Skimming"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Tone & purpose»: houding vs. doel van de schrijver.",
-      "d": 3
+      "d": 3,
+      "u": "The text does not say it, but you can infer it. Dat past bij Implicit information: implied, inferred.",
+      "uo": [
+       "Nee, dat hoort bij Explicit information: clearly stated.",
+       "Klopt: implied, inferred.",
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph.",
+       "Nee, dat hoort bij Skimming: general idea."
+      ],
+      "uh": "Implicit information: implied, inferred."
      },
      {
-      "v": "Wat houdt «Tone & purpose» in?",
+      "v": "Hints in the surrounding text. Welk begrip past hierbij?",
       "o": [
-       "moreover, furthermore, in addition, also",
-       "linking words wijzen het verband",
-       "houding vs. doel van de schrijver",
-       "een aanwijzing in de tekst voor een woordbetekenis"
+       "Problem-solution structure",
+       "Explicit information",
+       "Context clues",
+       "Implicit information"
       ],
       "c": 2,
-      "u": "«Tone & purpose» betekent: houding vs. doel van de schrijver.",
-      "d": 3
+      "d": 1,
+      "u": "Hints in the surrounding text. Dat past bij Context clues: hints around a word.",
+      "uo": [
+       "Nee, dat hoort bij Problem-solution structure: difficulty then resolution.",
+       "Nee, dat hoort bij Explicit information: clearly stated.",
+       "Klopt: hints around a word.",
+       "Nee, dat hoort bij Implicit information: implied, inferred."
+      ],
+      "uh": "Context clues: hints around a word."
      },
      {
-      "v": "Wat betekent «Contrast»?",
+      "v": "You do not know the word, but the sentence around it makes it clear. Om welk begrip gaat het?",
       "o": [
-       "however, but, although, whereas, on the other hand",
-       "de grote lijn van wat gezegd wordt",
-       "opnieuwrewrite, rebuild",
-       "een personage vertelt; beperkt tot eigen kennis"
+       "Scanning",
+       "Topic sentence",
+       "Contrast signal",
+       "Context clues"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "You do not know the word, but the sentence around it makes it clear. Dat past bij Context clues: hints around a word.",
+      "uo": [
+       "Nee, dat hoort bij Scanning: specific detail.",
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph.",
+       "Nee, dat hoort bij Contrast signal: marks a contrast.",
+       "Klopt: hints around a word."
+      ],
+      "uh": "Context clues: hints around a word."
+     },
+     {
+      "v": "The sentence with the main point of a paragraph. Welk begrip herken je hier?",
+      "o": [
+       "Topic sentence",
+       "Context clues",
+       "Explicit information",
+       "Scanning"
       ],
       "c": 0,
-      "u": "«Contrast» betekent: however, but, although, whereas, on the other hand.",
-      "d": 1
+      "d": 3,
+      "u": "The sentence with the main point of a paragraph. Dat past bij Topic sentence: main point of a paragraph.",
+      "uo": [
+       "Klopt: main point of a paragraph.",
+       "Nee, dat hoort bij Context clues: hints around a word.",
+       "Nee, dat hoort bij Explicit information: clearly stated.",
+       "Nee, dat hoort bij Scanning: specific detail."
+      ],
+      "uh": "Topic sentence: main point of a paragraph."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"however, but, although, whereas, on the other hand\"?",
+      "v": "The central message of a text. Wat is hier aan de hand?",
       "o": [
+       "Topic sentence",
+       "Main idea",
        "Skimming",
-       "False friend",
-       "Contrast",
-       "Conclusion"
+       "Contrast signal"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "The central message of a text. Dat past bij Main idea: central message.",
+      "uo": [
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph.",
+       "Klopt: central message.",
+       "Nee, dat hoort bij Skimming: general idea.",
+       "Nee, dat hoort bij Contrast signal: marks a contrast."
+      ],
+      "uh": "Main idea: central message."
+     },
+     {
+      "v": "Reading quickly for the general idea. Welk begrip past hierbij?",
+      "o": [
+       "Explicit information",
+       "Scanning",
+       "Skimming",
+       "Problem-solution structure"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Contrast»: however, but, although, whereas, on the other hand.",
-      "d": 2
+      "d": 2,
+      "u": "Reading quickly for the general idea. Dat past bij Skimming: general idea.",
+      "uo": [
+       "Nee, dat hoort bij Explicit information: clearly stated.",
+       "Nee, dat hoort bij Scanning: specific detail.",
+       "Klopt: general idea.",
+       "Nee, dat hoort bij Problem-solution structure: difficulty then resolution."
+      ],
+      "uh": "Skimming: general idea."
      },
      {
-      "v": "Welke term past bij: \"however, but, although, whereas, on the other hand\"?",
+      "v": "First a difficulty is described, then a resolution. Om welk begrip gaat het?",
       "o": [
-       "Cause/effect",
-       "Contrast",
-       "Skimming & scanning",
+       "Skimming",
+       "Contrast signal",
+       "Explicit information",
+       "Problem-solution structure"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "First a difficulty is described, then a resolution. Dat past bij Problem-solution structure: difficulty then resolution.",
+      "uo": [
+       "Nee, dat hoort bij Skimming: general idea.",
+       "Nee, dat hoort bij Contrast signal: marks a contrast.",
+       "Nee, dat hoort bij Explicit information: clearly stated.",
+       "Klopt: difficulty then resolution."
+      ],
+      "uh": "Problem-solution structure: difficulty then resolution."
+     },
+     {
+      "v": "Reading quickly to find a specific detail. Welk begrip herken je hier?",
+      "o": [
+       "Scanning",
+       "Topic sentence",
+       "Implicit information",
        "Inference"
       ],
+      "c": 0,
+      "d": 1,
+      "u": "Reading quickly to find a specific detail. Dat past bij Scanning: specific detail.",
+      "uo": [
+       "Klopt: specific detail.",
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph.",
+       "Nee, dat hoort bij Implicit information: implied, inferred.",
+       "Nee, dat hoort bij Inference: conclusion from clues."
+      ],
+      "uh": "Scanning: specific detail."
+     },
+     {
+      "v": "Information that is clearly stated. Wat is hier aan de hand?",
+      "o": [
+       "Implicit information",
+       "Explicit information",
+       "Topic sentence",
+       "Context clues"
+      ],
       "c": 1,
-      "u": "Het juiste begrip is «Contrast»: however, but, although, whereas, on the other hand.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Contrast» in?",
-      "o": [
-       "moreover, furthermore, in addition, also",
-       "in short, to sum up, all in all",
-       "however, but, although, whereas, on the other hand",
-       "globaal lezen voor de hoofdlijn"
+      "d": 2,
+      "u": "Information that is clearly stated. Dat past bij Explicit information: clearly stated.",
+      "uo": [
+       "Nee, dat hoort bij Implicit information: implied, inferred.",
+       "Klopt: clearly stated.",
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph.",
+       "Nee, dat hoort bij Context clues: hints around a word."
       ],
-      "c": 2,
-      "u": "«Contrast» betekent: however, but, although, whereas, on the other hand.",
-      "d": 3
+      "uh": "Explicit information: clearly stated."
      },
      {
-      "v": "Wat betekent «Cause/effect»?",
+      "v": "You read the first lines fast to see what it is about. Welk begrip past hierbij?",
       "o": [
-       "because, therefore, so, as a result, since",
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "\"to sum up\", \"in short\", \"so basically\"",
-       "\"on the other hand\", \"however\""
-      ],
-      "c": 0,
-      "u": "«Cause/effect» betekent: because, therefore, so, as a result, since.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"because, therefore, so, as a result, since\"?",
-      "o": [
-       "Cause/effect",
-       "Presentatiestructuur",
-       "Samenvatting",
-       "Tone"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Cause/effect»: because, therefore, so, as a result, since.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"because, therefore, so, as a result, since\"?",
-      "o": [
-       "Tone & purpose",
-       "Contrast",
+       "Implicit information",
+       "Scanning",
        "Skimming",
-       "Cause/effect"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Cause/effect»: because, therefore, so, as a result, since.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Cause/effect» in?",
-      "o": [
-       "for example, such as, for instance",
-       "however, but, although, whereas, on the other hand",
-       "because, therefore, so, as a result, since",
-       "in short, to sum up, all in all"
+       "Main idea"
       ],
       "c": 2,
-      "u": "«Cause/effect» betekent: because, therefore, so, as a result, since.",
-      "d": 3
+      "d": 3,
+      "u": "You read the first lines fast to see what it is about. Dat past bij Skimming: general idea.",
+      "uo": [
+       "Nee, dat hoort bij Implicit information: implied, inferred.",
+       "Nee, dat hoort bij Scanning: specific detail.",
+       "Klopt: general idea.",
+       "Nee, dat hoort bij Main idea: central message."
+      ],
+      "uh": "Skimming: general idea."
      },
      {
-      "v": "Wat betekent «Addition»?",
+      "v": "The text says it in so many words. Om welk begrip gaat het?",
       "o": [
-       "eenvoudig, één trek",
-       "introduction, body, conclusion",
-       "maakt zelfstandig nw.happiness, ability",
-       "moreover, furthermore, in addition, also"
+       "Topic sentence",
+       "Main idea",
+       "Context clues",
+       "Explicit information"
       ],
       "c": 3,
-      "u": "«Addition» betekent: moreover, furthermore, in addition, also.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"moreover, furthermore, in addition, also\"?",
-      "o": [
-       "Collocation",
-       "Conflict",
-       "Cause/effect",
-       "Addition"
+      "d": 1,
+      "u": "The text says it in so many words. Dat past bij Explicit information: clearly stated.",
+      "uo": [
+       "Nee, dat hoort bij Topic sentence: main point of a paragraph.",
+       "Nee, dat hoort bij Main idea: central message.",
+       "Nee, dat hoort bij Context clues: hints around a word.",
+       "Klopt: clearly stated."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Addition»: moreover, furthermore, in addition, also.",
-      "d": 2
+      "uh": "Explicit information: clearly stated."
      },
      {
-      "v": "Welke term past bij: \"moreover, furthermore, in addition, also\"?",
+      "v": "The opening sentence states what the paragraph is about. Welk begrip herken je hier?",
       "o": [
-       "Addition",
-       "Example",
-       "Cause/effect",
-       "Conclusion"
+       "Topic sentence",
+       "Context clues",
+       "Main idea",
+       "Skimming"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Addition»: moreover, furthermore, in addition, also.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Addition» in?",
-      "o": [
-       "globaal lezen voor de hoofdlijn",
-       "because, therefore, so, as a result, since",
-       "houding vs. doel van de schrijver",
-       "moreover, furthermore, in addition, also"
+      "d": 2,
+      "u": "The opening sentence states what the paragraph is about. Dat past bij Topic sentence: main point of a paragraph.",
+      "uo": [
+       "Klopt: main point of a paragraph.",
+       "Nee, dat hoort bij Context clues: hints around a word.",
+       "Nee, dat hoort bij Main idea: central message.",
+       "Nee, dat hoort bij Skimming: general idea."
       ],
-      "c": 3,
-      "u": "«Addition» betekent: moreover, furthermore, in addition, also.",
-      "d": 3
+      "uh": "Topic sentence: main point of a paragraph."
      },
      {
-      "v": "Wat betekent «Example»?",
+      "v": "The single sentence that sums up the whole text. Wat is hier aan de hand?",
       "o": [
-       "de tijd van een werkwoord",
-       "because, therefore, so, as a result, since",
-       "for example, such as, for instance",
-       "de opeenvolging van gebeurtenissen"
-      ],
-      "c": 2,
-      "u": "«Example» betekent: for example, such as, for instance.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"for example, such as, for instance\"?",
-      "o": [
-       "Example",
-       "Gist first",
-       "Setting",
-       "-ness, -ity"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Example»: for example, such as, for instance.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"for example, such as, for instance\"?",
-      "o": [
-       "Contrast",
        "Inference",
-       "Example",
-       "Cause/effect"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Example»: for example, such as, for instance.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Example» in?",
-      "o": [
-       "globaal lezen vs. gericht zoeken",
-       "betekenis raden uit de context",
-       "for example, such as, for instance",
-       "houding vs. doel van de schrijver"
-      ],
-      "c": 2,
-      "u": "«Example» betekent: for example, such as, for instance.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Conclusion»?",
-      "o": [
-       "in short, to sum up, all in all",
-       "hint naar wat later gebeurtdark clouds gathering",
-       "een aanwijzing in de tekst voor een woordbetekenis",
-       "\"on the other hand\", \"however\""
-      ],
-      "c": 0,
-      "u": "«Conclusion» betekent: in short, to sum up, all in all.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"in short, to sum up, all in all\"?",
-      "o": [
-       "Example",
-       "Conclusion",
-       "Context clue",
-       "Implicit meaning"
+       "Main idea",
+       "Skimming",
+       "Contrast signal"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Conclusion»: in short, to sum up, all in all.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"in short, to sum up, all in all\"?",
-      "o": [
-       "Tone & purpose",
-       "Addition",
-       "Reference words",
-       "Conclusion"
+      "d": 3,
+      "u": "The single sentence that sums up the whole text. Dat past bij Main idea: central message.",
+      "uo": [
+       "Nee, dat hoort bij Inference: conclusion from clues.",
+       "Klopt: central message.",
+       "Nee, dat hoort bij Skimming: general idea.",
+       "Nee, dat hoort bij Contrast signal: marks a contrast."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Conclusion»: in short, to sum up, all in all.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Conclusion» in?",
-      "o": [
-       "in short, to sum up, all in all",
-       "linking words wijzen het verband",
-       "waar verwijst \"it/this/they\" naar?",
-       "gericht zoeken naar een detail"
-      ],
-      "c": 0,
-      "u": "«Conclusion» betekent: in short, to sum up, all in all.",
-      "d": 3
+      "uh": "Main idea: central message."
      }
     ],
     "oe": [
@@ -45041,63 +44457,43 @@ var VAKKEN = [
     "begrippen": [
      {
       "t": "Skimming",
-      "d": "globaal lezen voor de hoofdlijn"
+      "d": "reading quickly to get the general idea"
      },
      {
       "t": "Scanning",
-      "d": "gericht zoeken naar een detail"
+      "d": "reading quickly to find a specific detail"
+     },
+     {
+      "t": "Topic sentence",
+      "d": "the sentence that states the main point of a paragraph"
+     },
+     {
+      "t": "Context clues",
+      "d": "hints in the surrounding text that reveal an unknown word"
+     },
+     {
+      "t": "Explicit information",
+      "d": "information that is clearly stated in the text"
+     },
+     {
+      "t": "Implicit information",
+      "d": "information that is implied and must be inferred"
+     },
+     {
+      "t": "Problem-solution structure",
+      "d": "a structure that introduces a difficulty and then a resolution"
+     },
+     {
+      "t": "Contrast signal",
+      "d": "a word like \"however\" that marks a contrast"
      },
      {
       "t": "Inference",
-      "d": "een conclusie afleiden uit aanwijzingen"
+      "d": "a conclusion drawn from clues rather than a stated fact"
      },
      {
-      "t": "Cognate",
-      "d": "a word that resembles a Dutch word"
-     },
-     {
-      "t": "Context clue",
-      "d": "een aanwijzing in de tekst voor een woordbetekenis"
-     },
-     {
-      "t": "Skimming & scanning",
-      "d": "globaal lezen vs. gericht zoeken"
-     },
-     {
-      "t": "Unknown words",
-      "d": "betekenis raden uit de context"
-     },
-     {
-      "t": "Signal words",
-      "d": "linking words wijzen het verband"
-     },
-     {
-      "t": "Reference words",
-      "d": "waar verwijst \"it/this/they\" naar?"
-     },
-     {
-      "t": "Tone & purpose",
-      "d": "houding vs. doel van de schrijver"
-     },
-     {
-      "t": "Contrast",
-      "d": "however, but, although, whereas, on the other hand"
-     },
-     {
-      "t": "Cause/effect",
-      "d": "because, therefore, so, as a result, since"
-     },
-     {
-      "t": "Addition",
-      "d": "moreover, furthermore, in addition, also"
-     },
-     {
-      "t": "Example",
-      "d": "for example, such as, for instance"
-     },
-     {
-      "t": "Conclusion",
-      "d": "in short, to sum up, all in all"
+      "t": "Main idea",
+      "d": "the central message of a text"
      }
     ]
    },
@@ -45115,656 +44511,577 @@ var VAKKEN = [
      "Nieuws, documentaires en vlogs volgen",
      "Instructies correct uitvoeren"
     ],
-    "sam": "<div class=\"sam-head\">Luistervaardigheid (B1)</div><ul><li><strong>Eerste luisterbeurt</strong>: luister voor de globale structuur en het onderwerp. Vraag jezelf: wat is het onderwerp? Wat is de mening/toon van de spreker?</li><li><strong>Tweede luisterbeurt</strong>: zoek specifieke details, feiten, cijfers, namen. Maak trefwoordaantekeningen.</li><li><strong>Signaalwoorden gesproken taal</strong>: \"First of all…\", \"Moving on…\", \"However,\", \"What I mean is…\", \"To sum up…\", \"The point is…\"</li><li><strong>Toon herkennen</strong>: positief (enthusiastic, hopeful), negatief (critical, sceptical, frustrated), neutraal (factual, balanced). Let op: intonatie, woordkeuze, pauzes.</li></ul><div class=\"sam-head\">Kijkvaardigheid</div><ul><li><strong>Visuele context</strong>: beeldmateriaal (grafieken, foto's, vlogs) geeft context die het begrip ondersteunt. Combineer wat je ziet met wat je hoort.</li><li><strong>Impliciete boodschap</strong>: wat zegt de spreker niet letterlijk, maar wat volgt uit toon en woordkeuze? Bijv. ironie, sarcasme, overdrijving.</li><li><strong>Soorten teksten</strong>: nieuws, documentaire, vlog, presentatie, interview, instructievideo. Elk heeft een eigen structuur en doel.</li></ul>",
+    "sam": "<div class=\"sam-intro\">When listening, the <strong>first listening</strong> is for the general topic and main point, later ones for detail. You recognise <strong>signposting</strong> phrases, the speaker's <strong>tone</strong> (including <strong>sarcasm</strong>) and <strong>uncertainty markers</strong> like \"may\". You tell a <strong>documentary</strong> from a <strong>news report</strong>.</div><div class=\"sam-head\">1. Listening strategy</div><p>During the <strong>first listening</strong>, focus on the general topic, structure and the speaker's main point. <strong>Signposting</strong> phrases guide you: \"To sum up / In conclusion…\" signals a summary. You can <strong>predict</strong> content from the title and images.</p><div class=\"sam-head\">2. Tone and text type</div><p>The <strong>tone</strong> is the speaker's attitude; <strong>sarcasm</strong> says the opposite of what is meant for effect (\"just brilliant – if you enjoy waiting five years\"). <strong>Uncertainty markers</strong> like \"may\" show something is not certain. A <strong>documentary</strong> explores a topic in depth; a <strong>news report</strong> summarises recent events concisely.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Gist</div><div class=\"sam-definitie-body\">the overall topic and main point of what is said.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Detail</div><div class=\"sam-definitie-body\">a specific piece of information in a fragment.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Tone</div><div class=\"sam-definitie-body\">the attitude of the speaker towards the subject.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Sarcasm</div><div class=\"sam-definitie-body\">saying the opposite of what is meant, for critical effect.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Signposting</div><div class=\"sam-definitie-body\">phrases that guide the listener through the structure.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Uncertainty markers</div><div class=\"sam-definitie-body\">words like \"may\" or \"might\" that show something is not certain.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Documentary</div><div class=\"sam-definitie-body\">a spoken text that explores a topic in depth.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">News report</div><div class=\"sam-definitie-body\">a spoken text that summarises recent events concisely.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Listening for gist</div><div class=\"sam-definitie-body\">listening to grasp the overall topic.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Prediction</div><div class=\"sam-definitie-body\">guessing the content beforehand from title and images.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Gist»</b> is overall topic, terwijl <b>«Detail»</b> specific information is. <b>«Tone»</b> is speaker's attitude, terwijl <b>«Sarcasm»</b> opposite for effect is. <b>«Signposting»</b> is guides the listener, terwijl <b>«Uncertainty markers»</b> may, might is. <b>«Documentary»</b> is in-depth topic, terwijl <b>«News report»</b> recent events, concise is.</div>",
     "sv": [
      {
       "v": "What should you focus on during the FIRST listening of a spoken text?",
       "o": [
-       "Every word and detail",
-       "The general topic, structure and speaker's main point",
-       "Writing down exact numbers and names",
-       "Translating every sentence into Dutch"
+       "the general topic, structure and speaker's main point",
+       "every exact number",
+       "the spelling of names",
+       "the background music"
       ],
-      "c": 1,
-      "u": "First listen = global comprehension: what is the topic? What does the speaker want to say? Second listen = details, specific facts, numbers. Never try to understand everything on the first listen."
+      "c": 0,
+      "d": 2,
+      "u": "Correct: first the big picture.",
+      "uo": [
+       "Correct: first the big picture.",
+       "No, details come later.",
+       "No, that is not the goal.",
+       "No, that is not language."
+      ],
+      "uh": "First listening: general topic and main point."
      },
      {
       "v": "Which phrase signals that a speaker is about to summarise?",
       "o": [
-       "Moving on to my next point…",
-       "To sum up / In conclusion…",
        "For example…",
-       "On the other hand…"
+       "To sum up / In conclusion…",
+       "On the contrary…",
+       "Once upon a time…"
       ],
       "c": 1,
-      "u": "\"To sum up\", \"In conclusion\", \"To wrap up\" signal the end/summary. \"Moving on\" = next topic. \"For example\" = illustration. \"On the other hand\" = contrast."
+      "d": 2,
+      "u": "Correct: these phrases introduce a summary.",
+      "uo": [
+       "No, that introduces an example.",
+       "Correct: these phrases introduce a summary.",
+       "No, that signals a contrast.",
+       "No, that opens a story."
+      ],
+      "uh": "\"To sum up / In conclusion\": a summary."
      },
      {
-      "v": "A speaker says: \"Well, the government's plan is just brilliant - if you enjoy waiting five years for results.\" What is the tone?",
+      "v": "\"The government's plan is just brilliant – if you enjoy waiting five years.\" What is the tone?",
       "o": [
-       "Enthusiastic and supportive",
-       "Sarcastic and critical",
-       "Neutral and factual",
-       "Confused and uncertain"
+       "neutral and factual",
+       "genuinely positive",
+       "sarcastic and critical",
+       "confused"
       ],
-      "c": 1,
-      "u": "Sarcasm: saying the opposite of what you mean for effect. \"Just brilliant\" combined with the negative qualifier signals that the speaker is actually being critical of the government's plan."
+      "c": 2,
+      "d": 3,
+      "u": "Correct: the speaker means the opposite, which is sarcasm.",
+      "uo": [
+       "No, it carries an opinion.",
+       "No, it only seems positive.",
+       "Correct: the speaker means the opposite, which is sarcasm.",
+       "No, the meaning is clear."
+      ],
+      "uh": "Saying the opposite for effect: sarcasm."
      },
      {
       "v": "What type of spoken text presents two sides of an issue and tries to persuade?",
       "o": [
-       "An instruction video",
-       "A debate or opinion speech",
-       "A weather report",
-       "A shopping list dictation"
+       "a train announcement",
+       "a weather forecast",
+       "a recipe",
+       "a debate or opinion speech"
       ],
-      "c": 1,
-      "u": "A debate or opinion speech aims to persuade: one or more sides argue their case. Compare: instruction video = \"how to do something\", weather report = factual information."
+      "c": 3,
+      "d": 2,
+      "u": "Correct: it argues a case.",
+      "uo": [
+       "No, that is a notice.",
+       "No, that just gives information.",
+       "No, that gives instructions.",
+       "Correct: it argues a case."
+      ],
+      "uh": "Debate or opinion speech: two sides, persuade."
      },
      {
-      "v": "You hear: \"Studies suggest that screen time may affect sleep quality.\" Which word indicates uncertainty?",
+      "v": "\"Studies suggest that screen time may affect sleep quality.\" Which word shows uncertainty?",
       "o": [
-       "Studies",
-       "May",
-       "Affect",
-       "Quality"
+       "may",
+       "studies",
+       "affect",
+       "quality"
       ],
-      "c": 1,
-      "u": "\"May\" is a modal of possibility - the speaker is not certain. Other hedging words: might, could, seems to, appears to, is believed to. This hedging language is especially common in scientific and journalistic speech."
+      "c": 0,
+      "d": 3,
+      "u": "Correct: \"may\" shows it is not certain.",
+      "uo": [
+       "Correct: \"may\" shows it is not certain.",
+       "No, that is a noun.",
+       "No, that is the verb.",
+       "No, that is a noun."
+      ],
+      "uh": "\"May\": an uncertainty marker."
      },
      {
       "v": "What is a key difference between a documentary and a news report?",
       "o": [
-       "A news report is always longer than a documentary",
-       "A documentary explores a topic in depth; a news report summarises recent events concisely",
-       "A documentary is always presented by a single person",
-       "News reports always include interviews, documentaries never do"
+       "they are the same",
+       "a documentary explores a topic in depth, a news report is concise about recent events",
+       "a documentary is always live",
+       "a news report is fictional"
       ],
       "c": 1,
-      "u": "Documentary = in-depth exploration of a topic (often with a viewpoint). News report = concise, factual summary of recent events, aims for objectivity. Both may include interviews, but the depth and purpose differ."
-     },
-     {
-      "v": "While taking notes during a listening exercise, which technique is most effective?",
-      "o": [
-       "Write full sentences in English",
-       "Use keywords, abbreviations and arrows to show connections",
-       "Write the Dutch translation of every sentence",
-       "Draw a picture of the speaker"
+      "d": 3,
+      "u": "Correct: depth versus concise recent events.",
+      "uo": [
+       "No, they differ.",
+       "Correct: depth versus concise recent events.",
+       "No, documentaries are usually recorded.",
+       "No, news is factual."
       ],
-      "c": 1,
-      "u": "Effective note-taking: keywords (nouns, verbs, numbers), abbreviations (→, =, +, e.g., v.s.), arrows for cause/effect. Full sentences take too long and cause you to miss the next idea."
+      "uh": "Documentary: in depth; news report: concise."
      },
      {
-      "v": "What does it mean when a speaker uses rising intonation at the end of a statement?",
+      "v": "What does listening for gist mean?",
       "o": [
-       "They are ending their speech",
-       "They are asking a question or expressing uncertainty",
-       "They are emphasising an important word",
-       "They are speaking in an informal register"
+       "copying every word",
+       "catching every exact number",
+       "listening to grasp the overall topic",
+       "checking pronunciation"
       ],
-      "c": 1,
-      "u": "Rising intonation at the end of a statement often signals a question (in English) or uncertainty/tentativeness. Falling intonation usually signals a completed statement or command."
-     },
-     {
-      "v": "A speaker says \"To be perfectly honest...\" before making a comment. What does this phrase signal?",
-      "o": [
-       "The speaker is about to agree with the previous point",
-       "The speaker is about to make a frank or possibly critical comment",
-       "The speaker is summarising",
-       "The speaker is introducing a new topic"
+      "c": 2,
+      "d": 2,
+      "u": "Correct: gist is the general meaning.",
+      "uo": [
+       "No, that is impossible in real time.",
+       "No, that is listening for detail.",
+       "Correct: gist is the general meaning.",
+       "No, that is a speaking focus."
       ],
-      "c": 1,
-      "u": "\"To be honest\", \"Frankly\", \"To tell you the truth\" signal that the speaker is about to say something direct, possibly critical or unexpected. These phrases prime the listener for an unfiltered opinion."
+      "uh": "Listening for gist: the general meaning."
      },
      {
-      "v": "Which type of text is most likely to use a formal, objective tone and precise technical language?",
+      "v": "What is the tone of a spoken text?",
       "o": [
-       "A personal vlog about daily life",
-       "A scientific documentary about climate change",
-       "A comedy podcast between friends",
-       "A popular music chart show"
+       "the length of the text",
+       "the number of words",
+       "the volume only",
+       "the attitude of the speaker towards the subject"
       ],
-      "c": 1,
-      "u": "Scientific and academic texts use objective, precise, hedged language. Personal vlogs, comedy podcasts, and chat shows use informal, conversational, subjective language. Tone recognition is key in listening comprehension."
-     },
-     {
-      "v": "What is the purpose of a \"hook\" at the beginning of a spoken presentation?",
-      "o": [
-       "To summarise the conclusion of the talk",
-       "To grab the audience's attention with a question, fact or story",
-       "To list the main points of the presentation",
-       "To thank the audience for listening"
+      "c": 3,
+      "d": 2,
+      "u": "Correct: tone reflects the speaker's attitude.",
+      "uo": [
+       "No, that is duration.",
+       "No, that is length.",
+       "No, volume is separate.",
+       "Correct: tone reflects the speaker's attitude."
       ],
-      "c": 1,
-      "u": "A hook = an attention-grabbing opening: a rhetorical question, shocking statistic, or personal story. Purpose: engage the audience immediately. The hook is followed by the introduction of the topic."
+      "uh": "Tone: the speaker's attitude."
      },
      {
-      "v": "Wat betekent «Gist»?",
+      "v": "What do signposting phrases do?",
       "o": [
-       "de grote lijn van wat gezegd wordt",
-       "introduction, body, conclusion",
-       "om verduidelijking vragen",
-       "blijft hetzelfde"
+       "they guide the listener through the structure of the talk",
+       "they translate the text",
+       "they add background music",
+       "they correct grammar"
       ],
       "c": 0,
-      "u": "«Gist» betekent: de grote lijn van wat gezegd wordt.",
-      "d": 1
+      "d": 3,
+      "u": "Correct: they mark the parts of the talk.",
+      "uo": [
+       "Correct: they mark the parts of the talk.",
+       "No, they do not translate.",
+       "No, that is unrelated.",
+       "No, that is not their function."
+      ],
+      "uh": "Signposting: guides the listener through the structure."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de grote lijn van wat gezegd wordt\"?",
+      "v": "What helps you predict content before listening?",
       "o": [
-       "Ophelderen",
+       "the last word only",
+       "the title and images",
+       "the file size",
+       "the speaker's name"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Correct: title and images set expectations.",
+      "uo": [
+       "No, you have not heard it yet.",
+       "Correct: title and images set expectations.",
+       "No, that is irrelevant.",
+       "No, a name reveals little."
+      ],
+      "uh": "Predict from title and images."
+     },
+     {
+      "v": "You pick out the exact year the speaker mentions. Welk begrip past hierbij?",
+      "o": [
+       "Prediction",
+       "Listening for gist",
+       "Detail",
+       "Tone"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "You pick out the exact year the speaker mentions. Dat past bij Detail: specific information.",
+      "uo": [
+       "Nee, dat hoort bij Prediction: guessing beforehand.",
+       "Nee, dat hoort bij Listening for gist: grasp the main idea.",
+       "Klopt: specific information.",
+       "Nee, dat hoort bij Tone: speaker's attitude."
+      ],
+      "uh": "Detail: specific information."
+     },
+     {
+      "v": "A short item that summarises the events of today. Om welk begrip gaat het?",
+      "o": [
+       "Signposting",
        "Gist",
-       "Fluency",
-       "round"
+       "Prediction",
+       "News report"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Gist»: de grote lijn van wat gezegd wordt.",
-      "d": 2
+      "c": 3,
+      "d": 1,
+      "u": "A short item that summarises the events of today. Dat past bij News report: recent events, concise.",
+      "uo": [
+       "Nee, dat hoort bij Signposting: guides the listener.",
+       "Nee, dat hoort bij Gist: overall topic.",
+       "Nee, dat hoort bij Prediction: guessing beforehand.",
+       "Klopt: recent events, concise."
+      ],
+      "uh": "News report: recent events, concise."
      },
      {
-      "v": "Welke term past bij: \"de grote lijn van wat gezegd wordt\"?",
+      "v": "A concise summary of recent events. Welk begrip herken je hier?",
       "o": [
-       "Accent",
-       "Implicit meaning",
+       "News report",
        "Gist",
-       "Gist first"
+       "Prediction",
+       "Signposting"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Gist»: de grote lijn van wat gezegd wordt.",
-      "d": 3
+      "c": 0,
+      "d": 1,
+      "u": "A concise summary of recent events. Dat past bij News report: recent events, concise.",
+      "uo": [
+       "Klopt: recent events, concise.",
+       "Nee, dat hoort bij Gist: overall topic.",
+       "Nee, dat hoort bij Prediction: guessing beforehand.",
+       "Nee, dat hoort bij Signposting: guides the listener."
+      ],
+      "uh": "News report: recent events, concise."
      },
      {
-      "v": "Wat houdt «Gist» in?",
+      "v": "Listening to understand the main idea. Wat is hier aan de hand?",
       "o": [
-       "focus op kernwoorden",
-       "een uitdrukking die de structuur markeert",
-       "\"on the other hand\", \"however\"",
-       "de grote lijn van wat gezegd wordt"
-      ],
-      "c": 3,
-      "u": "«Gist» betekent: de grote lijn van wat gezegd wordt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Signal phrase»?",
-      "o": [
-       "markeren structuur (samenvatting, contrast)",
-       "de grote lijn van wat gezegd wordt",
-       "\"I see your point, but…\", \"I'm not so sure\"",
-       "een uitdrukking die de structuur markeert"
-      ],
-      "c": 3,
-      "u": "«Signal phrase» betekent: een uitdrukking die de structuur markeert.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een uitdrukking die de structuur markeert\"?",
-      "o": [
-       "B1-niveau",
-       "Signal phrase",
-       "Simile",
-       "Fast speech"
+       "Prediction",
+       "Listening for gist",
+       "Gist",
+       "Documentary"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Signal phrase»: een uitdrukking die de structuur markeert.",
-      "d": 2
+      "d": 1,
+      "u": "Listening to understand the main idea. Dat past bij Listening for gist: grasp the main idea.",
+      "uo": [
+       "Nee, dat hoort bij Prediction: guessing beforehand.",
+       "Klopt: grasp the main idea.",
+       "Nee, dat hoort bij Gist: overall topic.",
+       "Nee, dat hoort bij Documentary: in-depth topic."
+      ],
+      "uh": "Listening for gist: grasp the main idea."
      },
      {
-      "v": "Welke term past bij: \"een uitdrukking die de structuur markeert\"?",
+      "v": "You listen to grasp roughly what the talk is about. Welk begrip past hierbij?",
+      "o": [
+       "Gist",
+       "Prediction",
+       "Listening for gist",
+       "Documentary"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "You listen to grasp roughly what the talk is about. Dat past bij Listening for gist: grasp the main idea.",
+      "uo": [
+       "Nee, dat hoort bij Gist: overall topic.",
+       "Nee, dat hoort bij Prediction: guessing beforehand.",
+       "Klopt: grasp the main idea.",
+       "Nee, dat hoort bij Documentary: in-depth topic."
+      ],
+      "uh": "Listening for gist: grasp the main idea."
+     },
+     {
+      "v": "A spoken text that explores a topic in depth. Om welk begrip gaat het?",
+      "o": [
+       "Signposting",
+       "News report",
+       "Tone",
+       "Documentary"
+      ],
+      "c": 3,
+      "d": 3,
+      "u": "A spoken text that explores a topic in depth. Dat past bij Documentary: in-depth topic.",
+      "uo": [
+       "Nee, dat hoort bij Signposting: guides the listener.",
+       "Nee, dat hoort bij News report: recent events, concise.",
+       "Nee, dat hoort bij Tone: speaker's attitude.",
+       "Klopt: in-depth topic."
+      ],
+      "uh": "Documentary: in-depth topic."
+     },
+     {
+      "v": "Words like may or might. Welk begrip herken je hier?",
+      "o": [
+       "Uncertainty markers",
+       "Detail",
+       "Documentary",
+       "News report"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "Words like may or might. Dat past bij Uncertainty markers: may, might.",
+      "uo": [
+       "Klopt: may, might.",
+       "Nee, dat hoort bij Detail: specific information.",
+       "Nee, dat hoort bij Documentary: in-depth topic.",
+       "Nee, dat hoort bij News report: recent events, concise."
+      ],
+      "uh": "Uncertainty markers: may, might."
+     },
+     {
+      "v": "The word may shows the claim is not certain. Wat is hier aan de hand?",
+      "o": [
+       "Signposting",
+       "Uncertainty markers",
+       "Sarcasm",
+       "Prediction"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "The word may shows the claim is not certain. Dat past bij Uncertainty markers: may, might.",
+      "uo": [
+       "Nee, dat hoort bij Signposting: guides the listener.",
+       "Klopt: may, might.",
+       "Nee, dat hoort bij Sarcasm: opposite for effect.",
+       "Nee, dat hoort bij Prediction: guessing beforehand."
+      ],
+      "uh": "Uncertainty markers: may, might."
+     },
+     {
+      "v": "Saying the opposite for critical effect. Welk begrip past hierbij?",
+      "o": [
+       "News report",
+       "Documentary",
+       "Sarcasm",
+       "Prediction"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Saying the opposite for critical effect. Dat past bij Sarcasm: opposite for effect.",
+      "uo": [
+       "Nee, dat hoort bij News report: recent events, concise.",
+       "Nee, dat hoort bij Documentary: in-depth topic.",
+       "Klopt: opposite for effect.",
+       "Nee, dat hoort bij Prediction: guessing beforehand."
+      ],
+      "uh": "Sarcasm: opposite for effect."
+     },
+     {
+      "v": "Just brilliant, the speaker says, meaning the opposite. Om welk begrip gaat het?",
+      "o": [
+       "Prediction",
+       "Tone",
+       "Gist",
+       "Sarcasm"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Just brilliant, the speaker says, meaning the opposite. Dat past bij Sarcasm: opposite for effect.",
+      "uo": [
+       "Nee, dat hoort bij Prediction: guessing beforehand.",
+       "Nee, dat hoort bij Tone: speaker's attitude.",
+       "Nee, dat hoort bij Gist: overall topic.",
+       "Klopt: opposite for effect."
+      ],
+      "uh": "Sarcasm: opposite for effect."
+     },
+     {
+      "v": "The attitude of the speaker. Welk begrip herken je hier?",
       "o": [
        "Tone",
-       "Signal phrase",
-       "Contrast",
-       "Samenvatting"
+       "Sarcasm",
+       "Listening for gist",
+       "Prediction"
+      ],
+      "c": 0,
+      "d": 3,
+      "u": "The attitude of the speaker. Dat past bij Tone: speaker's attitude.",
+      "uo": [
+       "Klopt: speaker's attitude.",
+       "Nee, dat hoort bij Sarcasm: opposite for effect.",
+       "Nee, dat hoort bij Listening for gist: grasp the main idea.",
+       "Nee, dat hoort bij Prediction: guessing beforehand."
+      ],
+      "uh": "Tone: speaker's attitude."
+     },
+     {
+      "v": "Guessing the content beforehand. Wat is hier aan de hand?",
+      "o": [
+       "Sarcasm",
+       "Prediction",
+       "Listening for gist",
+       "Detail"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Signal phrase»: een uitdrukking die de structuur markeert.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Signal phrase» in?",
-      "o": [
-       "\"that's why\", \"as a result\"",
-       "de houding van de spreker",
-       "de uitspraak die bij een streek of land hoort",
-       "een uitdrukking die de structuur markeert"
+      "d": 1,
+      "u": "Guessing the content beforehand. Dat past bij Prediction: guessing beforehand.",
+      "uo": [
+       "Nee, dat hoort bij Sarcasm: opposite for effect.",
+       "Klopt: guessing beforehand.",
+       "Nee, dat hoort bij Listening for gist: grasp the main idea.",
+       "Nee, dat hoort bij Detail: specific information."
       ],
-      "c": 3,
-      "u": "«Signal phrase» betekent: een uitdrukking die de structuur markeert.",
-      "d": 3
+      "uh": "Prediction: guessing beforehand."
      },
      {
-      "v": "Wat betekent «Tone»?",
-      "o": [
-       "de opeenvolging van gebeurtenissen",
-       "vloeiend genoeg over bekende onderwerpen",
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "de houding van de spreker"
-      ],
-      "c": 3,
-      "u": "«Tone» betekent: de houding van de spreker.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de houding van de spreker\"?",
-      "o": [
-       "Samenvatting",
-       "Polite requests",
-       "Tone",
-       "Character"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Tone»: de houding van de spreker.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de houding van de spreker\"?",
+      "v": "The overall topic of what is said. Welk begrip past hierbij?",
       "o": [
        "Tone",
-       "Implicit meaning",
-       "Gist first",
-       "Contrast"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Tone»: de houding van de spreker.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Tone» in?",
-      "o": [
-       "de houding van de spreker",
-       "de grote lijn van wat gezegd wordt",
-       "eerste keer: grote lijn, niet elk woord",
-       "focus op kernwoorden"
-      ],
-      "c": 0,
-      "u": "«Tone» betekent: de houding van de spreker.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Accent»?",
-      "o": [
-       "een personage vertelt; beperkt tot eigen kennis",
-       "een conclusie afleiden uit aanwijzingen",
-       "de uitspraak die bij een streek of land hoort",
-       "tijd voor het verleden met een gevolg voor nu"
+       "Detail",
+       "Gist",
+       "Uncertainty markers"
       ],
       "c": 2,
-      "u": "«Accent» betekent: de uitspraak die bij een streek of land hoort.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de uitspraak die bij een streek of land hoort\"?",
-      "o": [
-       "Implicit meaning",
-       "Reference words",
-       "Accent",
-       "Gist first"
+      "d": 2,
+      "u": "The overall topic of what is said. Dat past bij Gist: overall topic.",
+      "uo": [
+       "Nee, dat hoort bij Tone: speaker's attitude.",
+       "Nee, dat hoort bij Detail: specific information.",
+       "Klopt: overall topic.",
+       "Nee, dat hoort bij Uncertainty markers: may, might."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Accent»: de uitspraak die bij een streek of land hoort.",
-      "d": 2
+      "uh": "Gist: overall topic."
      },
      {
-      "v": "Welke term past bij: \"de uitspraak die bij een streek of land hoort\"?",
+      "v": "A long programme that explores climate change in depth. Om welk begrip gaat het?",
       "o": [
-       "Accent",
-       "Contrast",
-       "Signal phrases",
-       "Signal phrase"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Accent»: de uitspraak die bij een streek of land hoort.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Accent» in?",
-      "o": [
-       "de houding van de spreker",
-       "wat bedoeld wordt zonder het te zeggen",
-       "eerste keer: grote lijn, niet elk woord",
-       "de uitspraak die bij een streek of land hoort"
-      ],
-      "c": 3,
-      "u": "«Accent» betekent: de uitspraak die bij een streek of land hoort.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Implicit meaning»?",
-      "o": [
-       "alwetend; kent ieders gedachten",
-       "present simple, continuous, perfect",
-       "wat bedoeld wordt zonder het te zeggen",
-       "maakt zelfstandig nw.happiness, ability"
-      ],
-      "c": 2,
-      "u": "«Implicit meaning» betekent: wat bedoeld wordt zonder het te zeggen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"wat bedoeld wordt zonder het te zeggen\"?",
-      "o": [
-       "Ophelderen",
-       "Cognate",
-       "Implicit meaning",
-       "Present continuous"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Implicit meaning»: wat bedoeld wordt zonder het te zeggen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"wat bedoeld wordt zonder het te zeggen\"?",
-      "o": [
-       "Fast speech",
-       "Implicit meaning",
-       "Signal phrases",
-       "Accent"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Implicit meaning»: wat bedoeld wordt zonder het te zeggen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Implicit meaning» in?",
-      "o": [
-       "een uitdrukking die de structuur markeert",
-       "markeren structuur (samenvatting, contrast)",
-       "de grote lijn van wat gezegd wordt",
-       "wat bedoeld wordt zonder het te zeggen"
-      ],
-      "c": 3,
-      "u": "«Implicit meaning» betekent: wat bedoeld wordt zonder het te zeggen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Gist first»?",
-      "o": [
-       "eerste keer: grote lijn, niet elk woord",
-       "beeld zónder \"like\"/\"as\"time is a thief",
-       "woorden die vaak samen voorkomen",
-       "om verduidelijking vragen"
-      ],
-      "c": 0,
-      "u": "«Gist first» betekent: eerste keer: grote lijn, niet elk woord.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"eerste keer: grote lijn, niet elk woord\"?",
-      "o": [
-       "Irregular verb",
-       "False friend",
-       "Conclusion",
-       "Gist first"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Gist first»: eerste keer: grote lijn, niet elk woord.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"eerste keer: grote lijn, niet elk woord\"?",
-      "o": [
+       "Signposting",
+       "News report",
        "Tone",
-       "Signal phrases",
-       "Gist first",
-       "Accent"
+       "Documentary"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Gist first»: eerste keer: grote lijn, niet elk woord.",
-      "d": 3
+      "c": 3,
+      "d": 3,
+      "u": "A long programme that explores climate change in depth. Dat past bij Documentary: in-depth topic.",
+      "uo": [
+       "Nee, dat hoort bij Signposting: guides the listener.",
+       "Nee, dat hoort bij News report: recent events, concise.",
+       "Nee, dat hoort bij Tone: speaker's attitude.",
+       "Klopt: in-depth topic."
+      ],
+      "uh": "Documentary: in-depth topic."
      },
      {
-      "v": "Wat houdt «Gist first» in?",
+      "v": "A specific piece of information. Welk begrip herken je hier?",
       "o": [
-       "\"that's why\", \"as a result\"",
-       "eerste keer: grote lijn, niet elk woord",
-       "de houding van de spreker",
-       "\"on the other hand\", \"however\""
-      ],
-      "c": 1,
-      "u": "«Gist first» betekent: eerste keer: grote lijn, niet elk woord.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Signal phrases»?",
-      "o": [
-       "markeren structuur (samenvatting, contrast)",
-       "vaste zinnen om vloeiend te spreken",
-       "introduction, body, conclusion",
-       "globaal lezen vs. gericht zoeken"
-      ],
-      "c": 0,
-      "u": "«Signal phrases» betekent: markeren structuur (samenvatting, contrast).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"markeren structuur (samenvatting, contrast)\"?",
-      "o": [
-       "Skimming & scanning",
-       "Signal phrases",
-       "Tone & purpose",
-       "Contrast"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Signal phrases»: markeren structuur (samenvatting, contrast).",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"markeren structuur (samenvatting, contrast)\"?",
-      "o": [
-       "Signal phrases",
-       "Fast speech",
-       "Accent",
+       "Detail",
+       "Listening for gist",
+       "Prediction",
        "Tone"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Signal phrases»: markeren structuur (samenvatting, contrast).",
-      "d": 3
+      "d": 1,
+      "u": "A specific piece of information. Dat past bij Detail: specific information.",
+      "uo": [
+       "Klopt: specific information.",
+       "Nee, dat hoort bij Listening for gist: grasp the main idea.",
+       "Nee, dat hoort bij Prediction: guessing beforehand.",
+       "Nee, dat hoort bij Tone: speaker's attitude."
+      ],
+      "uh": "Detail: specific information."
      },
      {
-      "v": "Wat houdt «Signal phrases» in?",
+      "v": "Phrases that guide the listener. Wat is hier aan de hand?",
       "o": [
-       "de uitspraak die bij een streek of land hoort",
-       "markeren structuur (samenvatting, contrast)",
-       "\"on the other hand\", \"however\"",
-       "\"that's why\", \"as a result\""
+       "Uncertainty markers",
+       "Signposting",
+       "Prediction",
+       "Documentary"
       ],
       "c": 1,
-      "u": "«Signal phrases» betekent: markeren structuur (samenvatting, contrast).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Fast speech»?",
-      "o": [
-       "een aanwijzing in de tekst voor een woordbetekenis",
-       "round/flat, dynamic/static",
-       "in short, to sum up, all in all",
-       "focus op kernwoorden"
+      "d": 2,
+      "u": "Phrases that guide the listener. Dat past bij Signposting: guides the listener.",
+      "uo": [
+       "Nee, dat hoort bij Uncertainty markers: may, might.",
+       "Klopt: guides the listener.",
+       "Nee, dat hoort bij Prediction: guessing beforehand.",
+       "Nee, dat hoort bij Documentary: in-depth topic."
       ],
-      "c": 3,
-      "u": "«Fast speech» betekent: focus op kernwoorden.",
-      "d": 1
+      "uh": "Signposting: guides the listener."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"focus op kernwoorden\"?",
+      "v": "You catch that the fragment is about climate change in general. Welk begrip past hierbij?",
       "o": [
-       "Signal words",
-       "B1-niveau",
-       "Fast speech",
-       "Presentatiestructuur"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Fast speech»: focus op kernwoorden.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"focus op kernwoorden\"?",
-      "o": [
-       "Gist first",
-       "Signal phrase",
-       "Fast speech",
-       "Contrast"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Fast speech»: focus op kernwoorden.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Fast speech» in?",
-      "o": [
-       "focus op kernwoorden",
-       "markeren structuur (samenvatting, contrast)",
-       "wat bedoeld wordt zonder het te zeggen",
-       "de uitspraak die bij een streek of land hoort"
-      ],
-      "c": 0,
-      "u": "«Fast speech» betekent: focus op kernwoorden.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Samenvatting»?",
-      "o": [
-       "\"to sum up\", \"in short\", \"so basically\"",
-       "om herhaling vragen",
-       "beleefd, geen spreektaal",
-       "een voorwerp dat een idee weergeeft"
-      ],
-      "c": 0,
-      "u": "«Samenvatting» betekent: \"to sum up\", \"in short\", \"so basically\".",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"to sum up\", \"in short\", \"so basically\"\"?",
-      "o": [
-       "Contrast",
-       "Reference words",
-       "First person (\"I\")",
-       "Samenvatting"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Samenvatting»: \"to sum up\", \"in short\", \"so basically\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"\"to sum up\", \"in short\", \"so basically\"\"?",
-      "o": [
-       "Implicit meaning",
-       "Samenvatting",
+       "Listening for gist",
+       "Detail",
        "Gist",
-       "Conclusie"
+       "Prediction"
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Samenvatting»: \"to sum up\", \"in short\", \"so basically\".",
-      "d": 3
+      "c": 2,
+      "d": 3,
+      "u": "You catch that the fragment is about climate change in general. Dat past bij Gist: overall topic.",
+      "uo": [
+       "Nee, dat hoort bij Listening for gist: grasp the main idea.",
+       "Nee, dat hoort bij Detail: specific information.",
+       "Klopt: overall topic.",
+       "Nee, dat hoort bij Prediction: guessing beforehand."
+      ],
+      "uh": "Gist: overall topic."
      },
      {
-      "v": "Wat houdt «Samenvatting» in?",
+      "v": "To sum up tells you a summary is coming. Om welk begrip gaat het?",
       "o": [
-       "eerste keer: grote lijn, niet elk woord",
-       "\"to sum up\", \"in short\", \"so basically\"",
-       "de uitspraak die bij een streek of land hoort",
-       "de grote lijn van wat gezegd wordt"
-      ],
-      "c": 1,
-      "u": "«Samenvatting» betekent: \"to sum up\", \"in short\", \"so basically\".",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Contrast»?",
-      "o": [
-       "waar verwijst \"it/this/they\" naar?",
-       "\"on the other hand\", \"however\"",
-       "tijd voor het verleden met een gevolg voor nu",
-       "globaal lezen vs. gericht zoeken"
-      ],
-      "c": 1,
-      "u": "«Contrast» betekent: \"on the other hand\", \"however\".",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"on the other hand\", \"however\"\"?",
-      "o": [
-       "Unknown words",
-       "Presentatiestructuur",
-       "Conclusie",
-       "Contrast"
+       "Documentary",
+       "Gist",
+       "Prediction",
+       "Signposting"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Contrast»: \"on the other hand\", \"however\".",
-      "d": 2
+      "d": 1,
+      "u": "To sum up tells you a summary is coming. Dat past bij Signposting: guides the listener.",
+      "uo": [
+       "Nee, dat hoort bij Documentary: in-depth topic.",
+       "Nee, dat hoort bij Gist: overall topic.",
+       "Nee, dat hoort bij Prediction: guessing beforehand.",
+       "Klopt: guides the listener."
+      ],
+      "uh": "Signposting: guides the listener."
      },
      {
-      "v": "Welke term past bij: \"\"on the other hand\", \"however\"\"?",
+      "v": "The angry, critical attitude you sense from the speaker. Welk begrip herken je hier?",
       "o": [
-       "Contrast",
-       "Conclusie",
-       "Implicit meaning",
-       "Accent"
+       "Tone",
+       "Sarcasm",
+       "Gist",
+       "Uncertainty markers"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Contrast»: \"on the other hand\", \"however\".",
-      "d": 3
+      "d": 2,
+      "u": "The angry, critical attitude you sense from the speaker. Dat past bij Tone: speaker's attitude.",
+      "uo": [
+       "Klopt: speaker's attitude.",
+       "Nee, dat hoort bij Sarcasm: opposite for effect.",
+       "Nee, dat hoort bij Gist: overall topic.",
+       "Nee, dat hoort bij Uncertainty markers: may, might."
+      ],
+      "uh": "Tone: speaker's attitude."
      },
      {
-      "v": "Wat houdt «Contrast» in?",
+      "v": "From the title and photo you guess the topic before it starts. Wat is hier aan de hand?",
       "o": [
-       "\"that's why\", \"as a result\"",
-       "\"on the other hand\", \"however\"",
-       "een uitdrukking die de structuur markeert",
-       "markeren structuur (samenvatting, contrast)"
+       "Signposting",
+       "Prediction",
+       "Tone",
+       "Uncertainty markers"
       ],
       "c": 1,
-      "u": "«Contrast» betekent: \"on the other hand\", \"however\".",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Conclusie»?",
-      "o": [
-       "\"that's why\", \"as a result\"",
-       "\"I completely agree\", \"That's a good point\"",
-       "de centrale boodschap/idee",
-       "\"to sum up\", \"in short\", \"so basically\""
+      "d": 3,
+      "u": "From the title and photo you guess the topic before it starts. Dat past bij Prediction: guessing beforehand.",
+      "uo": [
+       "Nee, dat hoort bij Signposting: guides the listener.",
+       "Klopt: guessing beforehand.",
+       "Nee, dat hoort bij Tone: speaker's attitude.",
+       "Nee, dat hoort bij Uncertainty markers: may, might."
       ],
-      "c": 0,
-      "u": "«Conclusie» betekent: \"that's why\", \"as a result\".",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"that's why\", \"as a result\"\"?",
-      "o": [
-       "Conclusie",
-       "Contrast",
-       "First person (\"I\")",
-       "re-"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Conclusie»: \"that's why\", \"as a result\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"\"that's why\", \"as a result\"\"?",
-      "o": [
-       "Implicit meaning",
-       "Conclusie",
-       "Fast speech",
-       "Tone"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Conclusie»: \"that's why\", \"as a result\".",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Conclusie» in?",
-      "o": [
-       "\"that's why\", \"as a result\"",
-       "een uitdrukking die de structuur markeert",
-       "de grote lijn van wat gezegd wordt",
-       "\"on the other hand\", \"however\""
-      ],
-      "c": 0,
-      "u": "«Conclusie» betekent: \"that's why\", \"as a result\".",
-      "d": 3
+      "uh": "Prediction: guessing beforehand."
      }
     ],
     "oe": [
@@ -45808,47 +45125,43 @@ var VAKKEN = [
     "begrippen": [
      {
       "t": "Gist",
-      "d": "de grote lijn van wat gezegd wordt"
+      "d": "the overall topic and main point of what is said"
      },
      {
-      "t": "Signal phrase",
-      "d": "een uitdrukking die de structuur markeert"
+      "t": "Detail",
+      "d": "a specific piece of information in a fragment"
      },
      {
       "t": "Tone",
-      "d": "de houding van de spreker"
+      "d": "the attitude of the speaker towards the subject"
      },
      {
-      "t": "Accent",
-      "d": "de uitspraak die bij een streek of land hoort"
+      "t": "Sarcasm",
+      "d": "saying the opposite of what is meant, for critical effect"
      },
      {
-      "t": "Implicit meaning",
-      "d": "wat bedoeld wordt zonder het te zeggen"
+      "t": "Signposting",
+      "d": "phrases that guide the listener through the structure"
      },
      {
-      "t": "Gist first",
-      "d": "eerste keer: grote lijn, niet elk woord"
+      "t": "Uncertainty markers",
+      "d": "words like \"may\" or \"might\" that show something is not certain"
      },
      {
-      "t": "Signal phrases",
-      "d": "markeren structuur (samenvatting, contrast)"
+      "t": "Documentary",
+      "d": "a spoken text that explores a topic in depth"
      },
      {
-      "t": "Fast speech",
-      "d": "focus op kernwoorden"
+      "t": "News report",
+      "d": "a spoken text that summarises recent events concisely"
      },
      {
-      "t": "Samenvatting",
-      "d": "\"to sum up\", \"in short\", \"so basically\""
+      "t": "Listening for gist",
+      "d": "listening to grasp the overall topic"
      },
      {
-      "t": "Contrast",
-      "d": "\"on the other hand\", \"however\""
-     },
-     {
-      "t": "Conclusie",
-      "d": "\"that's why\", \"as a result\""
+      "t": "Prediction",
+      "d": "guessing the content beforehand from title and images"
      }
     ]
    },
@@ -45866,660 +45179,577 @@ var VAKKEN = [
      "Vragen stellen en verduidelijking vragen",
      "Vloeiendheid en uitspraak"
     ],
-    "sam": "<div class=\"sam-head\">Spreken (B1)</div><ul><li><strong>Mening geven</strong>: \"I think / I believe / In my opinion / I would argue that…\" Onderbouw altijd: standpunt + reden + voorbeeld.</li><li><strong>Reageren op een argument</strong>: \"That's a good point, but…\" / \"I see what you mean, however…\" / \"I partially agree, although…\" / \"I'm not sure that's the case because…\"</li><li><strong>Vragen stellen</strong>: \"Could you explain what you mean by…?\" / \"Do you mean that…?\" / \"I'm not sure I follow - could you give an example?\"</li><li><strong>Structuur presentatie</strong>: opening (introduce yourself + topic) → kern (3 punten, elk met voorbeeld) → conclusie (samenvatting + eigen mening) → vragen welkom.</li></ul><div class=\"sam-head\">Register en vloeiendheid</div><ul><li><strong>Formeel</strong>: \"I would like to present…\", \"This suggests that…\", geen contracties in formele context.</li><li><strong>Informeel</strong>: \"So basically…\", \"You know what I mean?\", contracties (I'd, you're) OK.</li><li><strong>Vloeiendheid</strong>: gebruik fillers strategisch: \"Well…\", \"Let me think for a moment…\", \"What I'm trying to say is…\". Vermijd lange stiltes.</li><li><strong>Uitspraak tips</strong>: th-klank (think, this), onderscheid tussen short i (sit) en long ee (seat), eindmedeklinkers duidelijk uitspreken.</li></ul>",
+    "sam": "<div class=\"sam-intro\">A good spoken presentation has a clear <strong>structure</strong> (introduction, main points, conclusion) and a <strong>formal opening</strong>. You use <strong>contrast phrases</strong>, <strong>persuasive techniques</strong> and <strong>counter-arguments</strong>, and you invite others to speak (<strong>turn-taking</strong>).</div><div class=\"sam-head\">1. Presenting</div><p>Structure a talk as introduction → 2–3 main points with examples → conclusion. A <strong>formal opening</strong> is polite: \"Good morning. Today I would like to present…\". A <strong>persuasive technique</strong> such as a <strong>rhetorical question</strong>, a statistic or a personal anecdote grabs attention.</p><div class=\"sam-head\">2. Interacting</div><p>Use a <strong>contrast phrase</strong> (\"However, / On the other hand,\") to introduce another view, and a <strong>counter-argument</strong> opener (\"While I understand your point, I would argue that…\"). Invite others with <strong>turn-taking</strong> phrases (\"What do you think?\"). Match your <strong>register</strong> to the situation.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Presentation structure</div><div class=\"sam-definitie-body\">introduction, 2-3 main points with examples, and a conclusion.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Formal opening</div><div class=\"sam-definitie-body\">a polite opening such as \"Good morning. Today I would like to present…\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Contrast phrase</div><div class=\"sam-definitie-body\">a phrase like \"However / On the other hand\" that introduces another view.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Persuasive technique</div><div class=\"sam-definitie-body\">a rhetorical question, statistic or anecdote that grabs attention.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Turn-taking</div><div class=\"sam-definitie-body\">inviting others to speak, for example \"What do you think?\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Counter-argument</div><div class=\"sam-definitie-body\">a response that opposes a point, \"While I understand your point, I would argue…\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Rhetorical question</div><div class=\"sam-definitie-body\">a question asked for effect, not for a real answer.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Register</div><div class=\"sam-definitie-body\">the level of formality of your speech.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Fluency</div><div class=\"sam-definitie-body\">the smoothness and ease with which you speak.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Clarification</div><div class=\"sam-definitie-body\">asking someone to explain what they mean.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Presentation structure»</b> is intro, points, conclusion, terwijl <b>«Formal opening»</b> polite opening is. <b>«Contrast phrase»</b> is introduces another view, terwijl <b>«Counter-argument»</b> opposes a point is. <b>«Persuasive technique»</b> is grabs attention, terwijl <b>«Rhetorical question»</b> asked for effect is. <b>«Turn-taking»</b> is inviting others to speak, terwijl <b>«Clarification»</b> ask to explain is.</div>",
     "sv": [
      {
       "v": "How should you structure a short English presentation?",
       "o": [
-       "Conclusion first, then evidence, then introduction",
-       "Introduction → 2-3 main points with examples → Conclusion",
-       "Only state your opinion without supporting arguments",
-       "Start with questions, end with the topic"
+       "introduction → 2-3 main points with examples → conclusion",
+       "conclusion → introduction → questions",
+       "just one long paragraph",
+       "random points in any order"
       ],
-      "c": 1,
-      "u": "Structure: 1. Opening (introduce yourself and topic). 2. Body (2-3 points, each with example/evidence). 3. Conclusion (summarise + your view). This is the standard for HAVO oral exams."
+      "c": 0,
+      "d": 2,
+      "u": "Correct: a clear beginning, middle and end.",
+      "uo": [
+       "Correct: a clear beginning, middle and end.",
+       "No, that is out of order.",
+       "No, a talk needs structure.",
+       "No, order matters."
+      ],
+      "uh": "Presentation: intro, main points, conclusion."
      },
      {
       "v": "In a formal presentation, which opening is most appropriate?",
       "o": [
-       "\"Hey guys, so today I'm gonna talk about climate change.\"",
+       "\"Hey guys, so like, climate stuff.\"",
        "\"Good morning. Today I would like to present my findings on climate change.\"",
-       "\"Climate change, right, so basically it's bad.\"",
-       "\"You probably know about climate change already, so I'll be brief.\""
+       "\"I dunno where to start.\"",
+       "\"Boring topic, sorry.\""
       ],
       "c": 1,
-      "u": "Formal opening: greet the audience, introduce yourself (if needed), state the topic clearly. \"I would like to present\" is formal. Avoid: slang (gonna), contractions in very formal contexts, assuming the audience's knowledge."
+      "d": 2,
+      "u": "Correct: polite and clear.",
+      "uo": [
+       "No, that is too informal.",
+       "Correct: polite and clear.",
+       "No, that is unprepared.",
+       "No, that undermines your talk."
+      ],
+      "uh": "Formal opening: polite and clear."
      },
      {
       "v": "Which phrase correctly introduces a contrast or counter-argument in spoken English?",
       "o": [
-       "\"Furthermore, / In addition,\"",
+       "\"To sum up,\"",
+       "\"For example,\"",
        "\"However, / On the other hand,\"",
-       "\"For example, / Such as,\"",
-       "\"Therefore, / As a result,\""
+       "\"First of all,\""
       ],
-      "c": 1,
-      "u": "\"However\" / \"On the other hand\" = contrast. \"Furthermore/In addition\" = adding a point. \"For example\" = illustration. \"Therefore\" = result/conclusion. Using these connectors in speaking shows B1+ proficiency."
+      "c": 2,
+      "d": 2,
+      "u": "Correct: these signal a contrast.",
+      "uo": [
+       "No, that signals a summary.",
+       "No, that introduces an example.",
+       "Correct: these signal a contrast.",
+       "No, that opens a list."
+      ],
+      "uh": "Contrast: \"However / On the other hand\"."
      },
      {
       "v": "Which technique makes a presentation more persuasive and engaging?",
       "o": [
-       "Read directly from your notes without looking up",
-       "Use a rhetorical question, statistic or personal anecdote to open",
-       "Speak as fast as possible to cover more points",
-       "Avoid making eye contact to stay focused"
+       "avoid eye contact",
+       "read the slides word for word",
+       "speak in a monotone",
+       "open with a rhetorical question, statistic or personal anecdote"
       ],
-      "c": 1,
-      "u": "Engaging openings: rhetorical question (\"Have you ever wondered…?\"), surprising statistic, or brief personal story. These activate the audience's attention. Eye contact, varied pace, and clear structure also help."
+      "c": 3,
+      "d": 3,
+      "u": "Correct: a strong hook draws the audience in.",
+      "uo": [
+       "No, eye contact helps.",
+       "No, that is dull.",
+       "No, monotone loses listeners.",
+       "Correct: a strong hook draws the audience in."
+      ],
+      "uh": "Persuasive opening: question, statistic or anecdote."
      },
      {
-      "v": "Which phrase is best to use when you want to give another person the chance to speak?",
+      "v": "Which phrase is best to give another person the chance to speak?",
       "o": [
-       "\"I will keep talking until you interrupt me.\"",
-       "\"What do you think about that?\" or \"Do you agree?\"",
-       "\"I'm not finished - let me continue.\"",
-       "\"The answer is obvious and I've already explained it.\""
+       "\"What do you think about that?\"",
+       "\"Let me continue for an hour.\"",
+       "\"That is not important.\"",
+       "saying nothing"
       ],
-      "c": 1,
-      "u": "Inviting others: \"What do you think?\", \"Would you like to add something?\", \"Do you agree?\" These show collaborative conversation skills, which are assessed in HAVO oral exams."
+      "c": 0,
+      "d": 2,
+      "u": "Correct: this invites the other to respond.",
+      "uo": [
+       "Correct: this invites the other to respond.",
+       "No, that blocks turn-taking.",
+       "No, that is dismissive.",
+       "No, silence does not invite anyone."
+      ],
+      "uh": "Invite others: \"What do you think?\""
      },
      {
       "v": "What is the correct way to begin a counter-argument in English?",
       "o": [
-       "\"That's totally wrong because you haven't thought this through.\"",
+       "\"You are completely stupid.\"",
        "\"While I understand your point, I would argue that…\"",
-       "\"No. My opinion is different.\"",
-       "\"You are incorrect. The right answer is…\""
+       "\"Whatever.\"",
+       "by interrupting loudly"
       ],
       "c": 1,
-      "u": "\"While I understand your point…\", \"I see what you're saying, but…\", \"That's a valid argument; however…\" These phrases acknowledge the other speaker before contrasting - a key B1 conversation skill."
-     },
-     {
-      "v": "A friend says something in English and you didn't catch it. Which response is most appropriate?",
-      "o": [
-       "\"What?\"",
-       "I'm sorry, could you repeat that more slowly, please?",
-       "Pretend you understood and hope for the best.",
-       "Say nothing and wait for someone else to answer."
+      "d": 3,
+      "u": "Correct: acknowledge, then differ politely.",
+      "uo": [
+       "No, that is an insult.",
+       "Correct: acknowledge, then differ politely.",
+       "No, that is dismissive.",
+       "No, interrupting is rude."
       ],
-      "c": 1,
-      "u": "\"I'm sorry, could you repeat that?\" / \"Could you say that a bit more slowly?\" / \"I beg your pardon?\" These are polite clarification requests. Using them demonstrates active communication - not weakness."
+      "uh": "Counter-argument: acknowledge, then differ."
      },
      {
-      "v": "Wat betekent «Fillers»?",
+      "v": "What is a rhetorical question?",
       "o": [
-       "woordjes om bedenktijd te winnen",
-       "Point, Illustration, Explanation",
-       "a comparison using like or as",
-       "vloeiend genoeg over bekende onderwerpen"
-      ],
-      "c": 0,
-      "u": "«Fillers» betekent: woordjes om bedenktijd te winnen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"woordjes om bedenktijd te winnen\"?",
-      "o": [
-       "Fillers",
-       "Present simple",
-       "Narrative perspective",
-       "Foreshadowing"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Fillers»: woordjes om bedenktijd te winnen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"woordjes om bedenktijd te winnen\"?",
-      "o": [
-       "Fillers",
-       "Ophelderen",
-       "Opinion",
-       "Beleefd oneens"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Fillers»: woordjes om bedenktijd te winnen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Fillers» in?",
-      "o": [
-       "\"In my opinion…\", \"I think that…\"",
-       "woordjes om bedenktijd te winnen",
-       "om herhaling vragen",
-       "om verduidelijking vragen"
-      ],
-      "c": 1,
-      "u": "«Fillers» betekent: woordjes om bedenktijd te winnen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Useful phrases»?",
-      "o": [
-       "om verduidelijking vragen",
-       "het hoofdpersonage",
-       "vaste zinnen om vloeiend te spreken",
-       "wat bedoeld wordt zonder het te zeggen"
+       "a request for the time",
+       "a question the audience must answer",
+       "a question asked for effect, not for a real answer",
+       "a spelling question"
       ],
       "c": 2,
-      "u": "«Useful phrases» betekent: vaste zinnen om vloeiend te spreken.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vaste zinnen om vloeiend te spreken\"?",
-      "o": [
-       "Conclusion",
-       "Narrative perspective",
-       "Useful phrases",
-       "flat"
+      "d": 2,
+      "u": "Correct: it engages without needing an answer.",
+      "uo": [
+       "No, that is a genuine question.",
+       "No, no real answer is expected.",
+       "Correct: it engages without needing an answer.",
+       "No, that is unrelated."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Useful phrases»: vaste zinnen om vloeiend te spreken.",
-      "d": 2
+      "uh": "Rhetorical question: asked for effect."
      },
      {
-      "v": "Welke term past bij: \"vaste zinnen om vloeiend te spreken\"?",
+      "v": "What does a formal register involve?",
       "o": [
-       "Om herhaling vragen",
-       "Useful phrases",
-       "Instemmen",
-       "Opinion"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Useful phrases»: vaste zinnen om vloeiend te spreken.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Useful phrases» in?",
-      "o": [
-       "om verduidelijking vragen",
-       "woordjes om bedenktijd te winnen",
-       "vaste zinnen om vloeiend te spreken",
-       "\"I see your point, but…\", \"I'm not so sure\""
-      ],
-      "c": 2,
-      "u": "«Useful phrases» betekent: vaste zinnen om vloeiend te spreken.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Opinion»?",
-      "o": [
-       "however, but, although, whereas, on the other hand",
-       "vol van / zonderuseful, useless",
-       "eenvoudig, één trek",
-       "een mening of standpunt"
+       "shouting",
+       "slang and abbreviations",
+       "text-message style",
+       "polite language with full sentences and no contractions"
       ],
       "c": 3,
-      "u": "«Opinion» betekent: een mening of standpunt.",
-      "d": 1
+      "d": 2,
+      "u": "Correct: formal is polite and full-form.",
+      "uo": [
+       "No, volume is not register.",
+       "No, that is informal.",
+       "No, that is very informal.",
+       "Correct: formal is polite and full-form."
+      ],
+      "uh": "Formal register: polite, full sentences."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een mening of standpunt\"?",
+      "v": "What is fluency?",
       "o": [
-       "Opinion",
-       "flat",
-       "Reference words",
-       "Signal phrases"
+       "the smoothness and ease with which you speak",
+       "the number of words you know",
+       "your accent",
+       "your reading speed"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Opinion»: een mening of standpunt.",
-      "d": 2
+      "d": 2,
+      "u": "Correct: fluency is smooth, easy speaking.",
+      "uo": [
+       "Correct: fluency is smooth, easy speaking.",
+       "No, that is vocabulary.",
+       "No, that is pronunciation-related.",
+       "No, that is reading."
+      ],
+      "uh": "Fluency: smooth, easy speaking."
      },
      {
-      "v": "Welke term past bij: \"een mening of standpunt\"?",
+      "v": "How do you ask for clarification?",
       "o": [
-       "Opinion",
+       "\"I already know that.\"",
+       "\"Could you explain what you mean?\"",
+       "\"Let's move on.\"",
+       "by saying nothing"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Correct: this asks the speaker to explain.",
+      "uo": [
+       "No, that closes the topic.",
+       "Correct: this asks the speaker to explain.",
+       "No, that skips it.",
+       "No, silence does not clarify."
+      ],
+      "uh": "Clarification: \"Could you explain what you mean?\""
+     },
+     {
+      "v": "Good morning. Today I would like to present my findings. Welk begrip past hierbij?",
+      "o": [
+       "Turn-taking",
+       "Rhetorical question",
+       "Formal opening",
+       "Clarification"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "Good morning. Today I would like to present my findings. Dat past bij Formal opening: polite opening.",
+      "uo": [
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Nee, dat hoort bij Rhetorical question: asked for effect.",
+       "Klopt: polite opening.",
+       "Nee, dat hoort bij Clarification: ask to explain."
+      ],
+      "uh": "Formal opening: polite opening."
+     },
+     {
+      "v": "You speak more formally to the jury than to a friend. Om welk begrip gaat het?",
+      "o": [
+       "Rhetorical question",
+       "Presentation structure",
+       "Persuasive technique",
+       "Register"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "You speak more formally to the jury than to a friend. Dat past bij Register: level of formality.",
+      "uo": [
+       "Nee, dat hoort bij Rhetorical question: asked for effect.",
+       "Nee, dat hoort bij Presentation structure: intro, points, conclusion.",
+       "Nee, dat hoort bij Persuasive technique: grabs attention.",
+       "Klopt: level of formality."
+      ],
+      "uh": "Register: level of formality."
+     },
+     {
+      "v": "The level of formality of your speech. Welk begrip herken je hier?",
+      "o": [
+       "Register",
+       "Presentation structure",
+       "Persuasive technique",
+       "Rhetorical question"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "The level of formality of your speech. Dat past bij Register: level of formality.",
+      "uo": [
+       "Klopt: level of formality.",
+       "Nee, dat hoort bij Presentation structure: intro, points, conclusion.",
+       "Nee, dat hoort bij Persuasive technique: grabs attention.",
+       "Nee, dat hoort bij Rhetorical question: asked for effect."
+      ],
+      "uh": "Register: level of formality."
+     },
+     {
+      "v": "The smoothness of speaking. Wat is hier aan de hand?",
+      "o": [
+       "Register",
        "Fluency",
-       "Mening geven",
-       "B1-niveau"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Opinion»: een mening of standpunt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Opinion» in?",
-      "o": [
-       "een mening of standpunt",
-       "woordjes om bedenktijd te winnen",
-       "introduction, body, conclusion",
-       "\"Could you repeat that, please?\""
-      ],
-      "c": 0,
-      "u": "«Opinion» betekent: een mening of standpunt.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Clarify»?",
-      "o": [
-       "because, therefore, so, as a result, since",
-       "round/flat, dynamic/static",
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "om verduidelijking vragen"
-      ],
-      "c": 3,
-      "u": "«Clarify» betekent: om verduidelijking vragen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"om verduidelijking vragen\"?",
-      "o": [
-       "Clarify",
-       "Conditionals",
-       "Tenses",
-       "Character"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Clarify»: om verduidelijking vragen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"om verduidelijking vragen\"?",
-      "o": [
-       "Instemmen",
-       "Clarify",
-       "B1-niveau",
-       "Fluency"
+       "Contrast phrase",
+       "Presentation structure"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Clarify»: om verduidelijking vragen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Clarify» in?",
-      "o": [
-       "de vlotheid waarmee je spreekt",
-       "\"Could you repeat that, please?\"",
-       "om verduidelijking vragen",
-       "\"I see your point, but…\", \"I'm not so sure\""
+      "d": 3,
+      "u": "The smoothness of speaking. Dat past bij Fluency: smooth speaking.",
+      "uo": [
+       "Nee, dat hoort bij Register: level of formality.",
+       "Klopt: smooth speaking.",
+       "Nee, dat hoort bij Contrast phrase: introduces another view.",
+       "Nee, dat hoort bij Presentation structure: intro, points, conclusion."
       ],
-      "c": 2,
-      "u": "«Clarify» betekent: om verduidelijking vragen.",
-      "d": 3
+      "uh": "Fluency: smooth speaking."
      },
      {
-      "v": "Wat betekent «Fluency»?",
+      "v": "You speak on smoothly without stopping at every error. Welk begrip past hierbij?",
       "o": [
-       "vaste woordcombinaties (make/do)",
-       "Dear Sir/Madam … Yours faithfully",
-       "de vlotheid waarmee je spreekt",
-       "beleefd, geen spreektaal"
-      ],
-      "c": 2,
-      "u": "«Fluency» betekent: de vlotheid waarmee je spreekt.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de vlotheid waarmee je spreekt\"?",
-      "o": [
-       "Narrative perspective",
+       "Counter-argument",
+       "Turn-taking",
        "Fluency",
-       "Protagonist",
-       "Conditionals"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Fluency»: de vlotheid waarmee je spreekt.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de vlotheid waarmee je spreekt\"?",
-      "o": [
-       "Presentatiestructuur",
-       "Om herhaling vragen",
-       "Fluency",
-       "Useful phrases"
+       "Clarification"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Fluency»: de vlotheid waarmee je spreekt.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Fluency» in?",
-      "o": [
-       "om verduidelijking vragen",
-       "de vlotheid waarmee je spreekt",
-       "\"I see your point, but…\", \"I'm not so sure\"",
-       "introduction, body, conclusion"
+      "d": 1,
+      "u": "You speak on smoothly without stopping at every error. Dat past bij Fluency: smooth speaking.",
+      "uo": [
+       "Nee, dat hoort bij Counter-argument: opposes a point.",
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Klopt: smooth speaking.",
+       "Nee, dat hoort bij Clarification: ask to explain."
       ],
-      "c": 1,
-      "u": "«Fluency» betekent: de vlotheid waarmee je spreekt.",
-      "d": 3
+      "uh": "Fluency: smooth speaking."
      },
      {
-      "v": "Wat betekent «Presentatiestructuur»?",
+      "v": "A question asked for effect. Om welk begrip gaat het?",
       "o": [
-       "een voorwerp dat een idee weergeeft",
-       "in conclusion, to sum up",
-       "introduction, body, conclusion",
-       "metaphor, simile, foreshadowing"
-      ],
-      "c": 2,
-      "u": "«Presentatiestructuur» betekent: introduction, body, conclusion.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"introduction, body, conclusion\"?",
-      "o": [
-       "Cognate",
-       "B1-niveau",
-       "Ophelderen",
-       "Presentatiestructuur"
+       "Clarification",
+       "Persuasive technique",
+       "Turn-taking",
+       "Rhetorical question"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Presentatiestructuur»: introduction, body, conclusion.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"introduction, body, conclusion\"?",
-      "o": [
-       "Om herhaling vragen",
-       "Fluency",
-       "B1-niveau",
-       "Presentatiestructuur"
+      "d": 3,
+      "u": "A question asked for effect. Dat past bij Rhetorical question: asked for effect.",
+      "uo": [
+       "Nee, dat hoort bij Clarification: ask to explain.",
+       "Nee, dat hoort bij Persuasive technique: grabs attention.",
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Klopt: asked for effect."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Presentatiestructuur»: introduction, body, conclusion.",
-      "d": 3
+      "uh": "Rhetorical question: asked for effect."
      },
      {
-      "v": "Wat houdt «Presentatiestructuur» in?",
+      "v": "A response that opposes a point. Welk begrip herken je hier?",
       "o": [
-       "\"In my opinion…\", \"I think that…\"",
-       "\"I completely agree\", \"That's a good point\"",
-       "om verduidelijking vragen",
-       "introduction, body, conclusion"
-      ],
-      "c": 3,
-      "u": "«Presentatiestructuur» betekent: introduction, body, conclusion.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «B1-niveau»?",
-      "o": [
-       "\"that's why\", \"as a result\"",
-       "vloeiend genoeg over bekende onderwerpen",
-       "in short, to sum up, all in all",
-       "introduction, body, conclusion"
-      ],
-      "c": 1,
-      "u": "«B1-niveau» betekent: vloeiend genoeg over bekende onderwerpen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"vloeiend genoeg over bekende onderwerpen\"?",
-      "o": [
-       "Ophelderen",
-       "Gist",
-       "Addition",
-       "B1-niveau"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «B1-niveau»: vloeiend genoeg over bekende onderwerpen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"vloeiend genoeg over bekende onderwerpen\"?",
-      "o": [
-       "Om herhaling vragen",
-       "B1-niveau",
-       "Beleefd oneens",
-       "Opinion"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «B1-niveau»: vloeiend genoeg over bekende onderwerpen.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «B1-niveau» in?",
-      "o": [
-       "introduction, body, conclusion",
-       "woordjes om bedenktijd te winnen",
-       "vloeiend genoeg over bekende onderwerpen",
-       "\"I completely agree\", \"That's a good point\""
-      ],
-      "c": 2,
-      "u": "«B1-niveau» betekent: vloeiend genoeg over bekende onderwerpen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Ophelderen»?",
-      "o": [
-       "om herhaling vragen",
-       "in conclusion, to sum up",
-       "maakt zelfstandig nw.happiness, ability",
-       "beeld zónder \"like\"/\"as\"time is a thief"
+       "Counter-argument",
+       "Persuasive technique",
+       "Formal opening",
+       "Presentation structure"
       ],
       "c": 0,
-      "u": "«Ophelderen» betekent: om herhaling vragen.",
-      "d": 1
+      "d": 1,
+      "u": "A response that opposes a point. Dat past bij Counter-argument: opposes a point.",
+      "uo": [
+       "Klopt: opposes a point.",
+       "Nee, dat hoort bij Persuasive technique: grabs attention.",
+       "Nee, dat hoort bij Formal opening: polite opening.",
+       "Nee, dat hoort bij Presentation structure: intro, points, conclusion."
+      ],
+      "uh": "Counter-argument: opposes a point."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"om herhaling vragen\"?",
+      "v": "While I understand your point, I would argue otherwise. Wat is hier aan de hand?",
       "o": [
-       "Omniscient",
-       "Ophelderen",
-       "Cause/effect",
-       "Linking words"
+       "Contrast phrase",
+       "Counter-argument",
+       "Clarification",
+       "Presentation structure"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Ophelderen»: om herhaling vragen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"om herhaling vragen\"?",
-      "o": [
-       "Instemmen",
-       "Ophelderen",
-       "Beleefd oneens",
-       "Mening geven"
+      "d": 3,
+      "u": "While I understand your point, I would argue otherwise. Dat past bij Counter-argument: opposes a point.",
+      "uo": [
+       "Nee, dat hoort bij Contrast phrase: introduces another view.",
+       "Klopt: opposes a point.",
+       "Nee, dat hoort bij Clarification: ask to explain.",
+       "Nee, dat hoort bij Presentation structure: intro, points, conclusion."
       ],
-      "c": 1,
-      "u": "Het juiste begrip is «Ophelderen»: om herhaling vragen.",
-      "d": 3
+      "uh": "Counter-argument: opposes a point."
      },
      {
-      "v": "Wat houdt «Ophelderen» in?",
+      "v": "A device that grabs the audience. Welk begrip past hierbij?",
       "o": [
-       "een mening of standpunt",
-       "vloeiend genoeg over bekende onderwerpen",
-       "woordjes om bedenktijd te winnen",
-       "om herhaling vragen"
+       "Turn-taking",
+       "Clarification",
+       "Persuasive technique",
+       "Contrast phrase"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "A device that grabs the audience. Dat past bij Persuasive technique: grabs attention.",
+      "uo": [
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Nee, dat hoort bij Clarification: ask to explain.",
+       "Klopt: grabs attention.",
+       "Nee, dat hoort bij Contrast phrase: introduces another view."
+      ],
+      "uh": "Persuasive technique: grabs attention."
+     },
+     {
+      "v": "You open with a striking statistic to grab attention. Om welk begrip gaat het?",
+      "o": [
+       "Presentation structure",
+       "Rhetorical question",
+       "Contrast phrase",
+       "Persuasive technique"
       ],
       "c": 3,
-      "u": "«Ophelderen» betekent: om herhaling vragen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Mening geven»?",
-      "o": [
-       "beleefd, geen spreektaal",
-       "beeld zónder \"like\"/\"as\"time is a thief",
-       "\"In my opinion…\", \"I think that…\"",
-       "Dear Sir/Madam … Yours faithfully"
+      "d": 3,
+      "u": "You open with a striking statistic to grab attention. Dat past bij Persuasive technique: grabs attention.",
+      "uo": [
+       "Nee, dat hoort bij Presentation structure: intro, points, conclusion.",
+       "Nee, dat hoort bij Rhetorical question: asked for effect.",
+       "Nee, dat hoort bij Contrast phrase: introduces another view.",
+       "Klopt: grabs attention."
       ],
-      "c": 2,
-      "u": "«Mening geven» betekent: \"In my opinion…\", \"I think that…\".",
-      "d": 1
+      "uh": "Persuasive technique: grabs attention."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"In my opinion…\", \"I think that…\"\"?",
+      "v": "A phrase that introduces another view. Welk begrip herken je hier?",
       "o": [
-       "Omniscient",
-       "Mening geven",
-       "Polite requests",
-       "Salutation & closing"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Mening geven»: \"In my opinion…\", \"I think that…\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"\"In my opinion…\", \"I think that…\"\"?",
-      "o": [
-       "Mening geven",
-       "Fillers",
-       "Clarify",
-       "Opinion"
+       "Contrast phrase",
+       "Clarification",
+       "Rhetorical question",
+       "Persuasive technique"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Mening geven»: \"In my opinion…\", \"I think that…\".",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Mening geven» in?",
-      "o": [
-       "introduction, body, conclusion",
-       "om verduidelijking vragen",
-       "\"In my opinion…\", \"I think that…\"",
-       "woordjes om bedenktijd te winnen"
+      "d": 1,
+      "u": "A phrase that introduces another view. Dat past bij Contrast phrase: introduces another view.",
+      "uo": [
+       "Klopt: introduces another view.",
+       "Nee, dat hoort bij Clarification: ask to explain.",
+       "Nee, dat hoort bij Rhetorical question: asked for effect.",
+       "Nee, dat hoort bij Persuasive technique: grabs attention."
       ],
-      "c": 2,
-      "u": "«Mening geven» betekent: \"In my opinion…\", \"I think that…\".",
-      "d": 3
+      "uh": "Contrast phrase: introduces another view."
      },
      {
-      "v": "Wat betekent «Instemmen»?",
+      "v": "Asking someone to explain. Wat is hier aan de hand?",
       "o": [
-       "de vlotheid waarmee je spreekt",
-       "if-zinnen: type 0, 1, 2",
-       "\"I completely agree\", \"That's a good point\"",
-       "moreover, furthermore, in addition, also"
+       "Turn-taking",
+       "Clarification",
+       "Fluency",
+       "Counter-argument"
       ],
-      "c": 2,
-      "u": "«Instemmen» betekent: \"I completely agree\", \"That's a good point\".",
-      "d": 1
+      "c": 1,
+      "d": 3,
+      "u": "Asking someone to explain. Dat past bij Clarification: ask to explain.",
+      "uo": [
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Klopt: ask to explain.",
+       "Nee, dat hoort bij Fluency: smooth speaking.",
+       "Nee, dat hoort bij Counter-argument: opposes a point."
+      ],
+      "uh": "Clarification: ask to explain."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"I completely agree\", \"That's a good point\"\"?",
+      "v": "Introduction, main points and conclusion. Welk begrip past hierbij?",
       "o": [
-       "Metaphor",
-       "Collocation",
-       "Instemmen",
+       "Contrast phrase",
+       "Turn-taking",
+       "Presentation structure",
        "Register"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Instemmen»: \"I completely agree\", \"That's a good point\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"\"I completely agree\", \"That's a good point\"\"?",
-      "o": [
-       "Presentatiestructuur",
-       "Opinion",
-       "Instemmen",
-       "Useful phrases"
+      "d": 1,
+      "u": "Introduction, main points and conclusion. Dat past bij Presentation structure: intro, points, conclusion.",
+      "uo": [
+       "Nee, dat hoort bij Contrast phrase: introduces another view.",
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Klopt: intro, points, conclusion.",
+       "Nee, dat hoort bij Register: level of formality."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Instemmen»: \"I completely agree\", \"That's a good point\".",
-      "d": 3
+      "uh": "Presentation structure: intro, points, conclusion."
      },
      {
-      "v": "Wat houdt «Instemmen» in?",
+      "v": "Who does not want a cleaner world? asked for effect. Om welk begrip gaat het?",
       "o": [
-       "introduction, body, conclusion",
-       "de vlotheid waarmee je spreekt",
-       "\"I completely agree\", \"That's a good point\"",
-       "om verduidelijking vragen"
-      ],
-      "c": 2,
-      "u": "«Instemmen» betekent: \"I completely agree\", \"That's a good point\".",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Beleefd oneens»?",
-      "o": [
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "present simple, continuous, perfect",
-       "\"I see your point, but…\", \"I'm not so sure\"",
-       "een conclusie afleiden uit aanwijzingen"
-      ],
-      "c": 2,
-      "u": "«Beleefd oneens» betekent: \"I see your point, but…\", \"I'm not so sure\".",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"I see your point, but…\", \"I'm not so sure\"\"?",
-      "o": [
-       "First person (\"I\")",
-       "Skimming & scanning",
-       "Mening geven",
-       "Beleefd oneens"
+       "Clarification",
+       "Persuasive technique",
+       "Turn-taking",
+       "Rhetorical question"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Beleefd oneens»: \"I see your point, but…\", \"I'm not so sure\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"\"I see your point, but…\", \"I'm not so sure\"\"?",
-      "o": [
-       "Ophelderen",
-       "Instemmen",
-       "Beleefd oneens",
-       "Useful phrases"
+      "d": 3,
+      "u": "Who does not want a cleaner world? asked for effect. Dat past bij Rhetorical question: asked for effect.",
+      "uo": [
+       "Nee, dat hoort bij Clarification: ask to explain.",
+       "Nee, dat hoort bij Persuasive technique: grabs attention.",
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Klopt: asked for effect."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Beleefd oneens»: \"I see your point, but…\", \"I'm not so sure\".",
-      "d": 3
+      "uh": "Rhetorical question: asked for effect."
      },
      {
-      "v": "Wat houdt «Beleefd oneens» in?",
+      "v": "A polite opening of a presentation. Welk begrip herken je hier?",
       "o": [
-       "om verduidelijking vragen",
-       "\"I see your point, but…\", \"I'm not so sure\"",
-       "de vlotheid waarmee je spreekt",
-       "een mening of standpunt"
+       "Formal opening",
+       "Rhetorical question",
+       "Turn-taking",
+       "Clarification"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "A polite opening of a presentation. Dat past bij Formal opening: polite opening.",
+      "uo": [
+       "Klopt: polite opening.",
+       "Nee, dat hoort bij Rhetorical question: asked for effect.",
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Nee, dat hoort bij Clarification: ask to explain."
+      ],
+      "uh": "Formal opening: polite opening."
+     },
+     {
+      "v": "Inviting others to speak. Wat is hier aan de hand?",
+      "o": [
+       "Clarification",
+       "Turn-taking",
+       "Fluency",
+       "Counter-argument"
       ],
       "c": 1,
-      "u": "«Beleefd oneens» betekent: \"I see your point, but…\", \"I'm not so sure\".",
-      "d": 3
+      "d": 2,
+      "u": "Inviting others to speak. Dat past bij Turn-taking: inviting others to speak.",
+      "uo": [
+       "Nee, dat hoort bij Clarification: ask to explain.",
+       "Klopt: inviting others to speak.",
+       "Nee, dat hoort bij Fluency: smooth speaking.",
+       "Nee, dat hoort bij Counter-argument: opposes a point."
+      ],
+      "uh": "Turn-taking: inviting others to speak."
      },
      {
-      "v": "Wat betekent «Om herhaling vragen»?",
+      "v": "You open, give two or three main points, then conclude. Welk begrip past hierbij?",
       "o": [
-       "een personage vertelt; beperkt tot eigen kennis",
-       "om verduidelijking vragen",
-       "\"Could you repeat that, please?\"",
-       "markeren structuur (samenvatting, contrast)"
+       "Turn-taking",
+       "Formal opening",
+       "Presentation structure",
+       "Counter-argument"
       ],
       "c": 2,
-      "u": "«Om herhaling vragen» betekent: \"Could you repeat that, please?\".",
-      "d": 1
+      "d": 3,
+      "u": "You open, give two or three main points, then conclude. Dat past bij Presentation structure: intro, points, conclusion.",
+      "uo": [
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Nee, dat hoort bij Formal opening: polite opening.",
+       "Klopt: intro, points, conclusion.",
+       "Nee, dat hoort bij Counter-argument: opposes a point."
+      ],
+      "uh": "Presentation structure: intro, points, conclusion."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"Could you repeat that, please?\"\"?",
+      "v": "What do you think about that? invites the other to speak. Om welk begrip gaat het?",
       "o": [
-       "Register",
-       "Narrative perspective",
-       "Simile",
-       "Om herhaling vragen"
+       "Counter-argument",
+       "Presentation structure",
+       "Fluency",
+       "Turn-taking"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Om herhaling vragen»: \"Could you repeat that, please?\".",
-      "d": 2
+      "d": 1,
+      "u": "What do you think about that? invites the other to speak. Dat past bij Turn-taking: inviting others to speak.",
+      "uo": [
+       "Nee, dat hoort bij Counter-argument: opposes a point.",
+       "Nee, dat hoort bij Presentation structure: intro, points, conclusion.",
+       "Nee, dat hoort bij Fluency: smooth speaking.",
+       "Klopt: inviting others to speak."
+      ],
+      "uh": "Turn-taking: inviting others to speak."
      },
      {
-      "v": "Welke term past bij: \"\"Could you repeat that, please?\"\"?",
+      "v": "However, some people disagree with this view. Welk begrip herken je hier?",
       "o": [
-       "Beleefd oneens",
-       "Presentatiestructuur",
-       "Om herhaling vragen",
-       "Ophelderen"
+       "Contrast phrase",
+       "Counter-argument",
+       "Formal opening",
+       "Rhetorical question"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Om herhaling vragen»: \"Could you repeat that, please?\".",
-      "d": 3
+      "c": 0,
+      "d": 2,
+      "u": "However, some people disagree with this view. Dat past bij Contrast phrase: introduces another view.",
+      "uo": [
+       "Klopt: introduces another view.",
+       "Nee, dat hoort bij Counter-argument: opposes a point.",
+       "Nee, dat hoort bij Formal opening: polite opening.",
+       "Nee, dat hoort bij Rhetorical question: asked for effect."
+      ],
+      "uh": "Contrast phrase: introduces another view."
      },
      {
-      "v": "Wat houdt «Om herhaling vragen» in?",
+      "v": "Could you explain what you mean? when unsure. Wat is hier aan de hand?",
       "o": [
-       "de vlotheid waarmee je spreekt",
-       "\"In my opinion…\", \"I think that…\"",
-       "woordjes om bedenktijd te winnen",
-       "\"Could you repeat that, please?\""
+       "Turn-taking",
+       "Clarification",
+       "Fluency",
+       "Counter-argument"
       ],
-      "c": 3,
-      "u": "«Om herhaling vragen» betekent: \"Could you repeat that, please?\".",
-      "d": 3
+      "c": 1,
+      "d": 3,
+      "u": "Could you explain what you mean? when unsure. Dat past bij Clarification: ask to explain.",
+      "uo": [
+       "Nee, dat hoort bij Turn-taking: inviting others to speak.",
+       "Klopt: ask to explain.",
+       "Nee, dat hoort bij Fluency: smooth speaking.",
+       "Nee, dat hoort bij Counter-argument: opposes a point."
+      ],
+      "uh": "Clarification: ask to explain."
      }
     ],
     "oe": [
@@ -46562,52 +45792,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Fillers",
-      "d": "woordjes om bedenktijd te winnen"
+      "t": "Presentation structure",
+      "d": "introduction, 2-3 main points with examples, and a conclusion"
      },
      {
-      "t": "Useful phrases",
-      "d": "vaste zinnen om vloeiend te spreken"
+      "t": "Formal opening",
+      "d": "a polite opening such as \"Good morning. Today I would like to present…\""
      },
      {
-      "t": "Opinion",
-      "d": "een mening of standpunt"
+      "t": "Contrast phrase",
+      "d": "a phrase like \"However / On the other hand\" that introduces another view"
      },
      {
-      "t": "Clarify",
-      "d": "om verduidelijking vragen"
+      "t": "Persuasive technique",
+      "d": "a rhetorical question, statistic or anecdote that grabs attention"
+     },
+     {
+      "t": "Turn-taking",
+      "d": "inviting others to speak, for example \"What do you think?\""
+     },
+     {
+      "t": "Counter-argument",
+      "d": "a response that opposes a point, \"While I understand your point, I would argue…\""
+     },
+     {
+      "t": "Rhetorical question",
+      "d": "a question asked for effect, not for a real answer"
+     },
+     {
+      "t": "Register",
+      "d": "the level of formality of your speech"
      },
      {
       "t": "Fluency",
-      "d": "de vlotheid waarmee je spreekt"
+      "d": "the smoothness and ease with which you speak"
      },
      {
-      "t": "Presentatiestructuur",
-      "d": "introduction, body, conclusion"
-     },
-     {
-      "t": "B1-niveau",
-      "d": "vloeiend genoeg over bekende onderwerpen"
-     },
-     {
-      "t": "Ophelderen",
-      "d": "om herhaling vragen"
-     },
-     {
-      "t": "Mening geven",
-      "d": "\"In my opinion…\", \"I think that…\""
-     },
-     {
-      "t": "Instemmen",
-      "d": "\"I completely agree\", \"That's a good point\""
-     },
-     {
-      "t": "Beleefd oneens",
-      "d": "\"I see your point, but…\", \"I'm not so sure\""
-     },
-     {
-      "t": "Om herhaling vragen",
-      "d": "\"Could you repeat that, please?\""
+      "t": "Clarification",
+      "d": "asking someone to explain what they mean"
      }
     ]
    },
@@ -46625,527 +45847,577 @@ var VAKKEN = [
      "Revideren en proeflezen",
      "Formeel vs. informeel register"
     ],
-    "sam": "<div class=\"sam-head\">Tekststructuur</div><ul><li><strong>Argumentatief essay</strong>: Introduction (thesis) → Body paragraph 1 (argument + example) → Body paragraph 2 (counter-argument + rebuttal) → Conclusion (samenvatting + herhaalde mening).</li><li><strong>Topic sentence</strong>: eerste zin van een alinea = de hoofdgedachte. Gevolgd door: supporting evidence → explanation → link to thesis.</li><li><strong>Alinea = PIE</strong>: Point (topic sentence), Illustration (example/evidence), Explanation (so what? link to thesis).</li></ul><div class=\"sam-head\">Formele brief / e-mail</div><ul><li><strong>Formele brief</strong>: Dear Sir/Madam → body → Yours faithfully (onbekend). Dear Mr Smith → Yours sincerely (naam bekend).</li><li><strong>E-mail formeel</strong>: Subject line clear. \"I am writing to enquire about…\" / \"I would be grateful if you could…\" / \"I look forward to hearing from you.\"</li></ul><div class=\"sam-head\">Linking words</div><ul><li><strong>Toevoeging</strong>: Furthermore, Moreover, In addition, Besides</li><li><strong>Contrast</strong>: However, Nevertheless, On the other hand, Although, Despite</li><li><strong>Resultaat</strong>: Therefore, Consequently, As a result, Thus</li><li><strong>Voorbeeld</strong>: For example, For instance, Such as, Namely</li><li><strong>Conclusie</strong>: In conclusion, To sum up, Overall, All in all</li></ul>",
+    "sam": "<div class=\"sam-intro\">Good writing uses <strong>linking words</strong> for contrast, addition and consequence, a clear <strong>topic sentence</strong> and a <strong>PIE paragraph</strong> (Point, Illustration, Explanation). You choose the right <strong>salutation</strong> and <strong>closing</strong> for a formal letter and keep the text <strong>cohesive</strong>.</div><div class=\"sam-head\">1. Paragraphs and linking words</div><p>A <strong>topic sentence</strong> introduces the main idea of a paragraph. A <strong>PIE paragraph</strong> follows Point, Illustration, Explanation. <strong>Linking words</strong> mark relations: \"however\" (contrast), \"moreover\" (addition), \"therefore\" (consequence). <strong>Cohesion</strong> is the linguistic links that hold sentences together.</p><div class=\"sam-head\">2. Formal letters</div><p>In a formal letter you open with <strong>\"Dear Sir/Madam,\"</strong> if you do not know the name and <strong>\"Dear Mr/Ms …,\"</strong> if you do. You close with <strong>\"Yours faithfully,\"</strong> (unknown name) or <strong>\"Yours sincerely,\"</strong> (known name). Constructions like \"Although the weather was bad, we still went outside\" join a concession to a main clause.</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Salutation</div><div class=\"sam-definitie-body\">the opening greeting of a letter, such as \"Dear Sir/Madam,\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Linking word</div><div class=\"sam-definitie-body\">a word that connects ideas and shows their relation.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Topic sentence</div><div class=\"sam-definitie-body\">the sentence that introduces the main idea of a paragraph.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">PIE paragraph</div><div class=\"sam-definitie-body\">a paragraph built as Point, Illustration, Explanation.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Formal register</div><div class=\"sam-definitie-body\">polite language without contractions or slang.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Cohesion</div><div class=\"sam-definitie-body\">the linguistic links that hold sentences together.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Coherence</div><div class=\"sam-definitie-body\">the logical flow of ideas in a text.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Closing phrase</div><div class=\"sam-definitie-body\">the sign-off of a letter, such as \"Yours sincerely,\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Paragraph</div><div class=\"sam-definitie-body\">a block of text about one idea.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Contrast</div><div class=\"sam-definitie-body\">a relation signalled by words like \"however\" or \"although\".</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Salutation»</b> is letter greeting, terwijl <b>«Closing phrase»</b> letter sign-off is. <b>«Linking word»</b> is connects ideas, terwijl <b>«Topic sentence»</b> main idea of a paragraph is. <b>«Topic sentence»</b> is main idea of a paragraph, terwijl <b>«Paragraph»</b> one idea is. <b>«PIE paragraph»</b> is Point, Illustration, Explanation, terwijl <b>«Topic sentence»</b> main idea of a paragraph is.</div>",
     "sv": [
      {
       "v": "Which salutation is used in a formal letter when you do NOT know the recipient's name?",
       "o": [
-       "Dear Friend,",
        "Dear Sir/Madam,",
-       "Hello there,",
-       "Dear Mr Smith,"
+       "Hi there,",
+       "Dear John,",
+       "Hey!"
       ],
-      "c": 1,
-      "u": "\"Dear Sir/Madam\" is the standard British formal salutation when the name is unknown → close with \"Yours faithfully\". If you know the name: \"Dear Mr/Ms Smith\" → \"Yours sincerely\"."
+      "c": 0,
+      "d": 3,
+      "u": "Correct: an unknown name gets \"Dear Sir/Madam,\".",
+      "uo": [
+       "Correct: an unknown name gets \"Dear Sir/Madam,\".",
+       "No, that is informal.",
+       "No, that uses a name you do not have.",
+       "No, far too informal."
+      ],
+      "uh": "Unknown name: \"Dear Sir/Madam,\"."
      },
      {
       "v": "Which linking word introduces a CONTRAST?",
       "o": [
-       "Furthermore",
-       "However",
-       "Therefore",
-       "For instance"
+       "moreover",
+       "however",
+       "therefore",
+       "for example"
       ],
       "c": 1,
-      "u": "\"However\" = contrast. Furthermore/Moreover/In addition = adding a point. Therefore/Consequently = result. For instance/For example = illustration."
+      "d": 2,
+      "u": "Correct: \"however\" signals a contrast.",
+      "uo": [
+       "No, that adds a point.",
+       "Correct: \"however\" signals a contrast.",
+       "No, that signals a consequence.",
+       "No, that introduces an example."
+      ],
+      "uh": "\"However\": contrast."
      },
      {
       "v": "What is the function of a topic sentence?",
       "o": [
-       "To end a paragraph with a conclusion",
-       "To introduce the main idea of a paragraph",
-       "To provide a statistic or example",
-       "To link to the next paragraph only"
+       "to list the sources",
+       "to give the last example",
+       "to introduce the main idea of a paragraph",
+       "to close the letter"
       ],
-      "c": 1,
-      "u": "Topic sentence = first sentence of a paragraph, stating its main idea. Supported by: evidence, explanation, example. The last sentence often links to the next paragraph or to the thesis."
+      "c": 2,
+      "d": 2,
+      "u": "Correct: it carries the paragraph's main idea.",
+      "uo": [
+       "No, that is a reference.",
+       "No, that is a detail.",
+       "Correct: it carries the paragraph's main idea.",
+       "No, that is a closing."
+      ],
+      "uh": "Topic sentence: main idea of a paragraph."
      },
      {
       "v": "What is a PIE paragraph?",
       "o": [
-       "Preparation, Implementation, Evaluation",
-       "Point, Illustration, Explanation",
-       "Purpose, Idea, Expression",
-       "Problem, Investigation, Evidence"
+       "Plan, Improve, Edit",
+       "Problem, Idea, Ending",
+       "Present, Inform, Explain",
+       "Point, Illustration, Explanation"
       ],
-      "c": 1,
-      "u": "PIE = Point (topic sentence/claim), Illustration (example, quote, statistic), Explanation (so what? - link back to your thesis). A standard HAVO essay paragraph follows this structure."
+      "c": 3,
+      "d": 3,
+      "u": "Correct: PIE stands for Point, Illustration, Explanation.",
+      "uo": [
+       "No, that is a writing process.",
+       "No, that is not PIE.",
+       "No, that is not the model.",
+       "Correct: PIE stands for Point, Illustration, Explanation."
+      ],
+      "uh": "PIE: Point, Illustration, Explanation."
      },
      {
       "v": "Which sentence uses a correct \"although\" construction?",
       "o": [
-       "Although, the weather was bad, we went outside.",
        "Although the weather was bad, we still went outside.",
-       "Although we went outside, however the weather was bad.",
-       "The weather was bad although, we went outside."
+       "Although the weather was bad, but we went outside.",
+       "The weather was bad, although we went outside so.",
+       "Although, the weather bad was."
       ],
-      "c": 1,
-      "u": "\"Although + clause, main clause.\" No comma after \"Although\". Do NOT combine \"although\" with \"but\" or \"however\" in the same sentence - that is a double connector error."
+      "c": 0,
+      "d": 3,
+      "u": "Correct: \"although\" + clause, then a main clause.",
+      "uo": [
+       "Correct: \"although\" + clause, then a main clause.",
+       "No, you cannot use \"although\" and \"but\" together.",
+       "No, that word order is wrong.",
+       "No, that is ungrammatical."
+      ],
+      "uh": "\"Although\" + clause, then a main clause (no \"but\")."
      },
      {
-      "v": "Which closing phrase is correct for a formal letter where you know the name?",
+      "v": "Which closing is correct for a formal letter where you know the name?",
       "o": [
        "Yours faithfully, [name]",
        "Yours sincerely, [name]",
-       "Best wishes",
-       "Kind regards (semi-formal/email)"
+       "Cheers,",
+       "Bye!"
       ],
       "c": 1,
-      "u": "\"Yours sincerely\" = formal letter when you know the name (Dear Mr Smith → Yours sincerely). \"Yours faithfully\" = when name is unknown (Dear Sir/Madam → Yours faithfully). \"Kind regards\" = semi-formal email."
-     },
-     {
-      "v": "What is the main purpose of the introduction in an essay?",
-      "o": [
-       "To list all the evidence you will use",
-       "To introduce the topic and state your thesis",
-       "To summarise your conclusion before you write it",
-       "To define every difficult word in the essay"
+      "d": 3,
+      "u": "Correct: a known name goes with \"Yours sincerely,\".",
+      "uo": [
+       "No, that is for an unknown name.",
+       "Correct: a known name goes with \"Yours sincerely,\".",
+       "No, too informal.",
+       "No, too informal."
       ],
-      "c": 1,
-      "u": "Introduction: (1) engage the reader with a hook, (2) introduce the topic briefly, (3) state your thesis - the main argument that the essay will develop and defend. Without a clear thesis, the reader does not know what to expect."
+      "uh": "Known name: \"Yours sincerely,\"."
      },
      {
-      "v": "Which is the correct format for a formal English email opening?",
+      "v": "Which closing is correct for a formal letter where you do NOT know the name?",
       "o": [
-       "\"Dear friend, I hope you are well. Just wanted to ask you...\"",
-       "\"Dear Mr Johnson, I am writing to enquire about the availability of...\"",
-       "\"Hey! Quick question about...\"",
-       "\"To: Mr Johnson. What are your prices?\""
+       "Love,",
+       "Yours sincerely,",
+       "Yours faithfully,",
+       "See you,"
       ],
-      "c": 1,
-      "u": "Formal email: \"Dear [Title + Surname],\" → then a polite opening sentence stating your purpose: \"I am writing to…\" / \"I would like to enquire about…\" Avoid informal greetings, contractions, and direct demands in formal correspondence."
+      "c": 2,
+      "d": 3,
+      "u": "Correct: an unknown name goes with \"Yours faithfully,\".",
+      "uo": [
+       "No, too informal.",
+       "No, that is for a known name.",
+       "Correct: an unknown name goes with \"Yours faithfully,\".",
+       "No, too informal."
+      ],
+      "uh": "Unknown name: \"Yours faithfully,\"."
      },
      {
-      "v": "Wat betekent «Formal register»?",
+      "v": "Which linking word signals ADDITION?",
       "o": [
-       "beleefd, geen spreektaal",
-       "\"on the other hand\", \"however\"",
-       "vloeiend genoeg over bekende onderwerpen",
-       "de centrale boodschap/idee"
+       "in conclusion",
+       "however",
+       "therefore",
+       "moreover / furthermore"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "Correct: these add to a point.",
+      "uo": [
+       "No, that is a summary.",
+       "No, that is a contrast.",
+       "No, that is a consequence.",
+       "Correct: these add to a point."
+      ],
+      "uh": "\"Moreover/furthermore\": addition."
+     },
+     {
+      "v": "What is cohesion in writing?",
+      "o": [
+       "the linguistic links that hold sentences together",
+       "the logical flow of ideas",
+       "the number of paragraphs",
+       "the length of the text"
       ],
       "c": 0,
-      "u": "«Formal register» betekent: beleefd, geen spreektaal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"beleefd, geen spreektaal\"?",
-      "o": [
-       "Gist",
-       "Word formation",
-       "Omniscient",
-       "Formal register"
+      "d": 3,
+      "u": "Correct: cohesion is the connecting devices.",
+      "uo": [
+       "Correct: cohesion is the connecting devices.",
+       "No, that is coherence.",
+       "No, that is structure.",
+       "No, that is length."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Formal register»: beleefd, geen spreektaal.",
-      "d": 2
+      "uh": "Cohesion: the linguistic links between sentences."
      },
      {
-      "v": "Welke term past bij: \"beleefd, geen spreektaal\"?",
+      "v": "What is a paragraph?",
       "o": [
-       "Addition",
+       "a single sentence",
+       "a block of text about one idea",
+       "the title",
+       "a list of words"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Correct: a paragraph covers one idea.",
+      "uo": [
+       "No, a paragraph has several sentences.",
+       "Correct: a paragraph covers one idea.",
+       "No, that is the heading.",
+       "No, that is a list."
+      ],
+      "uh": "Paragraph: a block of text about one idea."
+     },
+     {
+      "v": "The word however connects two contrasting ideas. Welk begrip past hierbij?",
+      "o": [
+       "Coherence",
        "Formal register",
-       "Contrast",
-       "Conclusion"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Formal register»: beleefd, geen spreektaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Formal register» in?",
-      "o": [
-       "therefore, as a result, because",
-       "beleefd, geen spreektaal",
-       "verbinden en structureren",
-       "however, although, on the other hand"
-      ],
-      "c": 1,
-      "u": "«Formal register» betekent: beleefd, geen spreektaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Salutation & closing»?",
-      "o": [
-       "vol van / zonderuseful, useless",
-       "een uitdrukking die de structuur markeert",
-       "een aanwijzing in de tekst voor een woordbetekenis",
-       "Dear Sir/Madam … Yours faithfully"
-      ],
-      "c": 3,
-      "u": "«Salutation & closing» betekent: Dear Sir/Madam … Yours faithfully.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"Dear Sir/Madam … Yours faithfully\"?",
-      "o": [
-       "False friend",
-       "Salutation & closing",
-       "First person (\"I\")",
-       "Fluency"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Salutation & closing»: Dear Sir/Madam … Yours faithfully.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"Dear Sir/Madam … Yours faithfully\"?",
-      "o": [
-       "Contrast",
-       "Formal register",
-       "Salutation & closing",
-       "Addition"
+       "Linking word",
+       "Contrast"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Salutation & closing»: Dear Sir/Madam … Yours faithfully.",
-      "d": 3
+      "d": 1,
+      "u": "The word however connects two contrasting ideas. Dat past bij Linking word: connects ideas.",
+      "uo": [
+       "Nee, dat hoort bij Coherence: logical flow.",
+       "Nee, dat hoort bij Formal register: polite, no contractions.",
+       "Klopt: connects ideas.",
+       "Nee, dat hoort bij Contrast: however, although."
+      ],
+      "uh": "Linking word: connects ideas."
      },
      {
-      "v": "Wat houdt «Salutation & closing» in?",
+      "v": "Yours sincerely closes a letter to a known person. Om welk begrip gaat het?",
       "o": [
-       "however, although, on the other hand",
-       "verbinden en structureren",
-       "beleefd, geen spreektaal",
-       "Dear Sir/Madam … Yours faithfully"
+       "Contrast",
+       "Cohesion",
+       "PIE paragraph",
+       "Closing phrase"
       ],
       "c": 3,
-      "u": "«Salutation & closing» betekent: Dear Sir/Madam … Yours faithfully.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Polite requests»?",
-      "o": [
-       "betekenis raden uit de context",
-       "vol van / zonderuseful, useless",
-       "\"I would be grateful if…\"",
-       "complex, meerdere kanten"
+      "d": 1,
+      "u": "Yours sincerely closes a letter to a known person. Dat past bij Closing phrase: letter sign-off.",
+      "uo": [
+       "Nee, dat hoort bij Contrast: however, although.",
+       "Nee, dat hoort bij Cohesion: linguistic links.",
+       "Nee, dat hoort bij PIE paragraph: Point, Illustration, Explanation.",
+       "Klopt: letter sign-off."
       ],
-      "c": 2,
-      "u": "«Polite requests» betekent: \"I would be grateful if…\".",
-      "d": 1
+      "uh": "Closing phrase: letter sign-off."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"I would be grateful if…\"\"?",
+      "v": "The sign-off of a letter. Welk begrip herken je hier?",
       "o": [
-       "Polite requests",
-       "Narrative perspective",
-       "Irregular verb",
-       "Setting"
+       "Closing phrase",
+       "Cohesion",
+       "PIE paragraph",
+       "Contrast"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Polite requests»: \"I would be grateful if…\".",
-      "d": 2
+      "d": 1,
+      "u": "The sign-off of a letter. Dat past bij Closing phrase: letter sign-off.",
+      "uo": [
+       "Klopt: letter sign-off.",
+       "Nee, dat hoort bij Cohesion: linguistic links.",
+       "Nee, dat hoort bij PIE paragraph: Point, Illustration, Explanation.",
+       "Nee, dat hoort bij Contrast: however, although."
+      ],
+      "uh": "Closing phrase: letter sign-off."
      },
      {
-      "v": "Welke term past bij: \"\"I would be grateful if…\"\"?",
+      "v": "A text part about one idea. Wat is hier aan de hand?",
       "o": [
-       "Polite requests",
-       "Paragraph (PIE)",
-       "Salutation & closing",
-       "Conclusion"
+       "Topic sentence",
+       "Paragraph",
+       "PIE paragraph",
+       "Cohesion"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "A text part about one idea. Dat past bij Paragraph: one idea.",
+      "uo": [
+       "Nee, dat hoort bij Topic sentence: main idea of a paragraph.",
+       "Klopt: one idea.",
+       "Nee, dat hoort bij PIE paragraph: Point, Illustration, Explanation.",
+       "Nee, dat hoort bij Cohesion: linguistic links."
+      ],
+      "uh": "Paragraph: one idea."
+     },
+     {
+      "v": "A block of text dealing with one idea. Welk begrip past hierbij?",
+      "o": [
+       "Salutation",
+       "PIE paragraph",
+       "Paragraph",
+       "Contrast"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "A block of text dealing with one idea. Dat past bij Paragraph: one idea.",
+      "uo": [
+       "Nee, dat hoort bij Salutation: letter greeting.",
+       "Nee, dat hoort bij PIE paragraph: Point, Illustration, Explanation.",
+       "Klopt: one idea.",
+       "Nee, dat hoort bij Contrast: however, although."
+      ],
+      "uh": "Paragraph: one idea."
+     },
+     {
+      "v": "The logical flow of ideas. Om welk begrip gaat het?",
+      "o": [
+       "Formal register",
+       "Cohesion",
+       "Topic sentence",
+       "Coherence"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "The logical flow of ideas. Dat past bij Coherence: logical flow.",
+      "uo": [
+       "Nee, dat hoort bij Formal register: polite, no contractions.",
+       "Nee, dat hoort bij Cohesion: linguistic links.",
+       "Nee, dat hoort bij Topic sentence: main idea of a paragraph.",
+       "Klopt: logical flow."
+      ],
+      "uh": "Coherence: logical flow."
+     },
+     {
+      "v": "The linguistic links between sentences. Welk begrip herken je hier?",
+      "o": [
+       "Cohesion",
+       "Salutation",
+       "PIE paragraph",
+       "Paragraph"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Polite requests»: \"I would be grateful if…\".",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Polite requests» in?",
-      "o": [
-       "moreover, in addition, furthermore",
-       "verbinden en structureren",
-       "Point, Illustration, Explanation",
-       "\"I would be grateful if…\""
+      "d": 1,
+      "u": "The linguistic links between sentences. Dat past bij Cohesion: linguistic links.",
+      "uo": [
+       "Klopt: linguistic links.",
+       "Nee, dat hoort bij Salutation: letter greeting.",
+       "Nee, dat hoort bij PIE paragraph: Point, Illustration, Explanation.",
+       "Nee, dat hoort bij Paragraph: one idea."
       ],
-      "c": 3,
-      "u": "«Polite requests» betekent: \"I would be grateful if…\".",
-      "d": 3
+      "uh": "Cohesion: linguistic links."
      },
      {
-      "v": "Wat betekent «Paragraph (PIE)»?",
+      "v": "Linking words and pronouns tie your sentences together. Wat is hier aan de hand?",
       "o": [
-       "\"I would be grateful if…\"",
-       "de opeenvolging van gebeurtenissen",
-       "Point, Illustration, Explanation",
-       "\"he/she\"; volgt één personage"
-      ],
-      "c": 2,
-      "u": "«Paragraph (PIE)» betekent: Point, Illustration, Explanation.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"Point, Illustration, Explanation\"?",
-      "o": [
-       "False friend",
-       "Paragraph (PIE)",
-       "-ful, -less",
-       "dynamic"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Paragraph (PIE)»: Point, Illustration, Explanation.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"Point, Illustration, Explanation\"?",
-      "o": [
-       "Contrast",
-       "Cause/effect",
-       "Paragraph (PIE)",
-       "Conclusion"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Paragraph (PIE)»: Point, Illustration, Explanation.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Paragraph (PIE)» in?",
-      "o": [
-       "however, although, on the other hand",
-       "\"I would be grateful if…\"",
-       "Point, Illustration, Explanation",
-       "verbinden en structureren"
-      ],
-      "c": 2,
-      "u": "«Paragraph (PIE)» betekent: Point, Illustration, Explanation.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Linking words»?",
-      "o": [
-       "een aanwijzing in de tekst voor een woordbetekenis",
-       "verbinden en structureren",
-       "however, although, on the other hand",
-       "beleefd, geen spreektaal"
-      ],
-      "c": 1,
-      "u": "«Linking words» betekent: verbinden en structureren.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"verbinden en structureren\"?",
-      "o": [
-       "round",
-       "Linking words",
-       "Conditionals",
-       "dynamic"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Linking words»: verbinden en structureren.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"verbinden en structureren\"?",
-      "o": [
-       "Addition",
-       "Formal register",
-       "Linking words",
-       "Conclusion"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Linking words»: verbinden en structureren.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Linking words» in?",
-      "o": [
-       "in conclusion, to sum up",
-       "Dear Sir/Madam … Yours faithfully",
-       "\"I would be grateful if…\"",
-       "verbinden en structureren"
-      ],
-      "c": 3,
-      "u": "«Linking words» betekent: verbinden en structureren.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Contrast»?",
-      "o": [
-       "vol van / zonderuseful, useless",
-       "however, but, although, whereas, on the other hand",
-       "however, although, on the other hand",
-       "moreover, in addition, furthermore"
-      ],
-      "c": 2,
-      "u": "«Contrast» betekent: however, although, on the other hand.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"however, although, on the other hand\"?",
-      "o": [
-       "Passive",
-       "Contrast",
-       "Third person limited",
-       "Conditionals"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Contrast»: however, although, on the other hand.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"however, although, on the other hand\"?",
-      "o": [
-       "Paragraph (PIE)",
-       "Contrast",
-       "Conclusion",
+       "Coherence",
+       "Cohesion",
+       "Topic sentence",
        "Formal register"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Contrast»: however, although, on the other hand.",
-      "d": 3
+      "d": 2,
+      "u": "Linking words and pronouns tie your sentences together. Dat past bij Cohesion: linguistic links.",
+      "uo": [
+       "Nee, dat hoort bij Coherence: logical flow.",
+       "Klopt: linguistic links.",
+       "Nee, dat hoort bij Topic sentence: main idea of a paragraph.",
+       "Nee, dat hoort bij Formal register: polite, no contractions."
+      ],
+      "uh": "Cohesion: linguistic links."
      },
      {
-      "v": "Wat houdt «Contrast» in?",
+      "v": "A paragraph as Point, Illustration, Explanation. Welk begrip past hierbij?",
       "o": [
-       "however, although, on the other hand",
-       "beleefd, geen spreektaal",
-       "Point, Illustration, Explanation",
-       "Dear Sir/Madam … Yours faithfully"
+       "Coherence",
+       "Formal register",
+       "PIE paragraph",
+       "Cohesion"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "A paragraph as Point, Illustration, Explanation. Dat past bij PIE paragraph: Point, Illustration, Explanation.",
+      "uo": [
+       "Nee, dat hoort bij Coherence: logical flow.",
+       "Nee, dat hoort bij Formal register: polite, no contractions.",
+       "Klopt: Point, Illustration, Explanation.",
+       "Nee, dat hoort bij Cohesion: linguistic links."
+      ],
+      "uh": "PIE paragraph: Point, Illustration, Explanation."
+     },
+     {
+      "v": "You give a Point, an Illustration and an Explanation. Om welk begrip gaat het?",
+      "o": [
+       "Linking word",
+       "Topic sentence",
+       "Closing phrase",
+       "PIE paragraph"
+      ],
+      "c": 3,
+      "d": 2,
+      "u": "You give a Point, an Illustration and an Explanation. Dat past bij PIE paragraph: Point, Illustration, Explanation.",
+      "uo": [
+       "Nee, dat hoort bij Linking word: connects ideas.",
+       "Nee, dat hoort bij Topic sentence: main idea of a paragraph.",
+       "Nee, dat hoort bij Closing phrase: letter sign-off.",
+       "Klopt: Point, Illustration, Explanation."
+      ],
+      "uh": "PIE paragraph: Point, Illustration, Explanation."
+     },
+     {
+      "v": "The sentence with the main idea. Welk begrip herken je hier?",
+      "o": [
+       "Topic sentence",
+       "Paragraph",
+       "PIE paragraph",
+       "Linking word"
       ],
       "c": 0,
-      "u": "«Contrast» betekent: however, although, on the other hand.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Addition»?",
-      "o": [
-       "moreover, in addition, furthermore",
-       "de tijd en plaats van een verhaal",
-       "de mate van formeel taalgebruik",
-       "blijft hetzelfde"
+      "d": 3,
+      "u": "The sentence with the main idea. Dat past bij Topic sentence: main idea of a paragraph.",
+      "uo": [
+       "Klopt: main idea of a paragraph.",
+       "Nee, dat hoort bij Paragraph: one idea.",
+       "Nee, dat hoort bij PIE paragraph: Point, Illustration, Explanation.",
+       "Nee, dat hoort bij Linking word: connects ideas."
       ],
-      "c": 0,
-      "u": "«Addition» betekent: moreover, in addition, furthermore.",
-      "d": 1
+      "uh": "Topic sentence: main idea of a paragraph."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"moreover, in addition, furthermore\"?",
+      "v": "A relation marked by however or although. Wat is hier aan de hand?",
       "o": [
-       "Tenses",
-       "Addition",
-       "Skimming & scanning",
-       "Useful phrases"
+       "Salutation",
+       "Contrast",
+       "Formal register",
+       "Closing phrase"
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Addition»: moreover, in addition, furthermore.",
-      "d": 2
+      "d": 1,
+      "u": "A relation marked by however or although. Dat past bij Contrast: however, although.",
+      "uo": [
+       "Nee, dat hoort bij Salutation: letter greeting.",
+       "Klopt: however, although.",
+       "Nee, dat hoort bij Formal register: polite, no contractions.",
+       "Nee, dat hoort bij Closing phrase: letter sign-off."
+      ],
+      "uh": "Contrast: however, although."
      },
      {
-      "v": "Welke term past bij: \"moreover, in addition, furthermore\"?",
+      "v": "The opening greeting of a letter. Welk begrip past hierbij?",
       "o": [
-       "Cause/effect",
-       "Paragraph (PIE)",
-       "Addition",
-       "Salutation & closing"
+       "Cohesion",
+       "Closing phrase",
+       "Salutation",
+       "PIE paragraph"
       ],
       "c": 2,
-      "u": "Het juiste begrip is «Addition»: moreover, in addition, furthermore.",
-      "d": 3
+      "d": 2,
+      "u": "The opening greeting of a letter. Dat past bij Salutation: letter greeting.",
+      "uo": [
+       "Nee, dat hoort bij Cohesion: linguistic links.",
+       "Nee, dat hoort bij Closing phrase: letter sign-off.",
+       "Klopt: letter greeting.",
+       "Nee, dat hoort bij PIE paragraph: Point, Illustration, Explanation."
+      ],
+      "uh": "Salutation: letter greeting."
      },
      {
-      "v": "Wat houdt «Addition» in?",
+      "v": "Your ideas follow each other in a logical order. Om welk begrip gaat het?",
       "o": [
-       "in conclusion, to sum up",
-       "verbinden en structureren",
-       "\"I would be grateful if…\"",
-       "moreover, in addition, furthermore"
+       "Contrast",
+       "Cohesion",
+       "Salutation",
+       "Coherence"
       ],
       "c": 3,
-      "u": "«Addition» betekent: moreover, in addition, furthermore.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Cause/effect»?",
-      "o": [
-       "de tijd en plaats van een verhaal",
-       "de uitspraak die bij een streek of land hoort",
-       "therefore, as a result, because",
-       "round/flat, dynamic/static"
+      "d": 3,
+      "u": "Your ideas follow each other in a logical order. Dat past bij Coherence: logical flow.",
+      "uo": [
+       "Nee, dat hoort bij Contrast: however, although.",
+       "Nee, dat hoort bij Cohesion: linguistic links.",
+       "Nee, dat hoort bij Salutation: letter greeting.",
+       "Klopt: logical flow."
       ],
-      "c": 2,
-      "u": "«Cause/effect» betekent: therefore, as a result, because.",
-      "d": 1
+      "uh": "Coherence: logical flow."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"therefore, as a result, because\"?",
+      "v": "A word that connects ideas. Welk begrip herken je hier?",
       "o": [
-       "Character",
-       "Word formation",
-       "Cause/effect",
-       "Conclusie"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Cause/effect»: therefore, as a result, because.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"therefore, as a result, because\"?",
-      "o": [
-       "Cause/effect",
-       "Addition",
-       "Linking words",
-       "Salutation & closing"
+       "Linking word",
+       "Formal register",
+       "Coherence",
+       "Contrast"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Cause/effect»: therefore, as a result, because.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Cause/effect» in?",
-      "o": [
-       "\"I would be grateful if…\"",
-       "in conclusion, to sum up",
-       "beleefd, geen spreektaal",
-       "therefore, as a result, because"
+      "d": 1,
+      "u": "A word that connects ideas. Dat past bij Linking word: connects ideas.",
+      "uo": [
+       "Klopt: connects ideas.",
+       "Nee, dat hoort bij Formal register: polite, no contractions.",
+       "Nee, dat hoort bij Coherence: logical flow.",
+       "Nee, dat hoort bij Contrast: however, although."
       ],
-      "c": 3,
-      "u": "«Cause/effect» betekent: therefore, as a result, because.",
-      "d": 3
+      "uh": "Linking word: connects ideas."
      },
      {
-      "v": "Wat betekent «Conclusion»?",
+      "v": "Polite language without contractions. Wat is hier aan de hand?",
       "o": [
-       "focus op kernwoorden",
-       "in conclusion, to sum up",
-       "de uitspraak die bij een streek of land hoort",
-       "opnieuwrewrite, rebuild"
+       "Cohesion",
+       "Formal register",
+       "Linking word",
+       "Coherence"
       ],
       "c": 1,
-      "u": "«Conclusion» betekent: in conclusion, to sum up.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"in conclusion, to sum up\"?",
-      "o": [
-       "Gist",
-       "-ness, -ity",
-       "Collocation",
-       "Conclusion"
+      "d": 2,
+      "u": "Polite language without contractions. Dat past bij Formal register: polite, no contractions.",
+      "uo": [
+       "Nee, dat hoort bij Cohesion: linguistic links.",
+       "Klopt: polite, no contractions.",
+       "Nee, dat hoort bij Linking word: connects ideas.",
+       "Nee, dat hoort bij Coherence: logical flow."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Conclusion»: in conclusion, to sum up.",
-      "d": 2
+      "uh": "Formal register: polite, no contractions."
      },
      {
-      "v": "Welke term past bij: \"in conclusion, to sum up\"?",
+      "v": "Dear Sir or Madam opens a letter to an unknown person. Welk begrip past hierbij?",
       "o": [
-       "Conclusion",
-       "Salutation & closing",
-       "Paragraph (PIE)",
-       "Addition"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Conclusion»: in conclusion, to sum up.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Conclusion» in?",
-      "o": [
-       "therefore, as a result, because",
-       "verbinden en structureren",
-       "in conclusion, to sum up",
-       "Point, Illustration, Explanation"
+       "PIE paragraph",
+       "Closing phrase",
+       "Salutation",
+       "Cohesion"
       ],
       "c": 2,
-      "u": "«Conclusion» betekent: in conclusion, to sum up.",
-      "d": 3
+      "d": 3,
+      "u": "Dear Sir or Madam opens a letter to an unknown person. Dat past bij Salutation: letter greeting.",
+      "uo": [
+       "Nee, dat hoort bij PIE paragraph: Point, Illustration, Explanation.",
+       "Nee, dat hoort bij Closing phrase: letter sign-off.",
+       "Klopt: letter greeting.",
+       "Nee, dat hoort bij Cohesion: linguistic links."
+      ],
+      "uh": "Salutation: letter greeting."
+     },
+     {
+      "v": "In a business letter you write full forms and stay polite. Om welk begrip gaat het?",
+      "o": [
+       "Topic sentence",
+       "Contrast",
+       "Coherence",
+       "Formal register"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "In a business letter you write full forms and stay polite. Dat past bij Formal register: polite, no contractions.",
+      "uo": [
+       "Nee, dat hoort bij Topic sentence: main idea of a paragraph.",
+       "Nee, dat hoort bij Contrast: however, although.",
+       "Nee, dat hoort bij Coherence: logical flow.",
+       "Klopt: polite, no contractions."
+      ],
+      "uh": "Formal register: polite, no contractions."
+     },
+     {
+      "v": "The opening sentence states the paragraph's main idea. Welk begrip herken je hier?",
+      "o": [
+       "Topic sentence",
+       "Paragraph",
+       "Contrast",
+       "Salutation"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "The opening sentence states the paragraph's main idea. Dat past bij Topic sentence: main idea of a paragraph.",
+      "uo": [
+       "Klopt: main idea of a paragraph.",
+       "Nee, dat hoort bij Paragraph: one idea.",
+       "Nee, dat hoort bij Contrast: however, although.",
+       "Nee, dat hoort bij Salutation: letter greeting."
+      ],
+      "uh": "Topic sentence: main idea of a paragraph."
+     },
+     {
+      "v": "The word although joins a concession to the main clause. Wat is hier aan de hand?",
+      "o": [
+       "Linking word",
+       "Contrast",
+       "Formal register",
+       "Paragraph"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "The word although joins a concession to the main clause. Dat past bij Contrast: however, although.",
+      "uo": [
+       "Nee, dat hoort bij Linking word: connects ideas.",
+       "Klopt: however, although.",
+       "Nee, dat hoort bij Formal register: polite, no contractions.",
+       "Nee, dat hoort bij Paragraph: one idea."
+      ],
+      "uh": "Contrast: however, although."
      }
     ],
     "oe": [
@@ -47188,40 +46460,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
+      "t": "Salutation",
+      "d": "the opening greeting of a letter, such as \"Dear Sir/Madam,\""
+     },
+     {
+      "t": "Linking word",
+      "d": "a word that connects ideas and shows their relation"
+     },
+     {
+      "t": "Topic sentence",
+      "d": "the sentence that introduces the main idea of a paragraph"
+     },
+     {
+      "t": "PIE paragraph",
+      "d": "a paragraph built as Point, Illustration, Explanation"
+     },
+     {
       "t": "Formal register",
-      "d": "beleefd, geen spreektaal"
+      "d": "polite language without contractions or slang"
      },
      {
-      "t": "Salutation & closing",
-      "d": "Dear Sir/Madam … Yours faithfully"
+      "t": "Cohesion",
+      "d": "the linguistic links that hold sentences together"
      },
      {
-      "t": "Polite requests",
-      "d": "\"I would be grateful if…\""
+      "t": "Coherence",
+      "d": "the logical flow of ideas in a text"
      },
      {
-      "t": "Paragraph (PIE)",
-      "d": "Point, Illustration, Explanation"
+      "t": "Closing phrase",
+      "d": "the sign-off of a letter, such as \"Yours sincerely,\""
      },
      {
-      "t": "Linking words",
-      "d": "verbinden en structureren"
+      "t": "Paragraph",
+      "d": "a block of text about one idea"
      },
      {
       "t": "Contrast",
-      "d": "however, although, on the other hand"
-     },
-     {
-      "t": "Addition",
-      "d": "moreover, in addition, furthermore"
-     },
-     {
-      "t": "Cause/effect",
-      "d": "therefore, as a result, because"
-     },
-     {
-      "t": "Conclusion",
-      "d": "in conclusion, to sum up"
+      "d": "a relation signalled by words like \"however\" or \"although\""
      }
     ]
    },
@@ -47239,1044 +46515,577 @@ var VAKKEN = [
      "Historische en culturele context",
      "Leeslijst Engelstalige werken"
     ],
-    "sam": "<div class=\"sam-head\">Literaire begrippen (B1/B2)</div><ul><li><strong>Plot</strong>: the sequence of events. Structure: exposition (intro) → rising action → climax (turning point) → falling action → resolution.</li><li><strong>Setting</strong>: time and place of the story. Can reflect mood, theme, or character state. A dark forest = danger/unknown.</li><li><strong>Character</strong>: protagonist (main), antagonist (opposition). Round characters = complex, change; flat characters = one-dimensional. Dynamic = changes through the story; static = stays the same.</li><li><strong>Theme</strong>: the central message or idea - not the plot summary. E.g. \"the destructive power of ambition\" (Macbeth), \"loss of innocence\" (Lord of the Flies).</li><li><strong>Conflict</strong>: man vs. man, man vs. society, man vs. nature, man vs. himself. Conflict drives the plot forward.</li></ul><div class=\"sam-head\">Narratief en stijl</div><ul><li><strong>Narrative perspective</strong>: first person (I - subjective, limited) vs. third person limited (he/she - focuses on one character) vs. third person omniscient (narrator knows all).</li><li><strong>Tone</strong>: the author's attitude to the subject - melancholic, ironic, optimistic, angry, nostalgic.</li><li><strong>Metaphor</strong>: \"Life is a journey.\" Simile: \"She ran like the wind.\" Personification: \"The wind howled.\" Symbolism: an object representing an idea (e.g. green light in Gatsby = hope/the American Dream).</li><li><strong>Imagery</strong>: language that creates a vivid mental picture using the senses.</li></ul><div class=\"sam-head\">Leeslijst tips</div><ul><li>Make notes per chapter: plot summary, character development, quotes, themes.</li><li>Spot literary devices as you read - annotate your copy if allowed.</li><li>Know the historical/cultural context: when was it written? What events influenced it?</li></ul>",
+    "sam": "<div class=\"sam-intro\">Literary analysis uses terms for character and structure: a <strong>dynamic character</strong> changes, a <strong>static</strong> one does not. You recognise devices such as <strong>foreshadowing</strong>, the <strong>metaphor</strong> and the <strong>simile</strong>, and structural concepts like the <strong>climax</strong> and the <strong>theme</strong>.</div><div class=\"sam-head\">1. Character and structure</div><p>The <strong>theme</strong> is the central idea a work explores; the <strong>plot</strong> is the sequence of events. A <strong>dynamic character</strong> changes significantly during the story; a <strong>static character</strong> stays the same. <strong>Foreshadowing</strong> gives hints about what will happen; the <strong>climax</strong> is the turning point of highest tension.</p><div class=\"sam-head\">2. Style</div><p>A <strong>metaphor</strong> states that one thing is another (\"The classroom was a zoo\"); a <strong>simile</strong> compares with \"like\" or \"as\". <strong>Symbolism</strong> uses an object to represent an idea. The <strong>narrator</strong> is the voice telling the story. To find the theme, ask: \"What central idea about human life does this work explore?\".</p><div class=\"sam-head\">Begrippen op een rij</div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Theme</div><div class=\"sam-definitie-body\">the central idea or message explored in a work.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Dynamic character</div><div class=\"sam-definitie-body\">a character who changes significantly during the story.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Static character</div><div class=\"sam-definitie-body\">a character who stays the same throughout the story.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Foreshadowing</div><div class=\"sam-definitie-body\">hints or clues about what will happen later in the story.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Metaphor</div><div class=\"sam-definitie-body\">a device that states one thing is another, without \"like\" or \"as\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Simile</div><div class=\"sam-definitie-body\">a comparison using \"like\" or \"as\".</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Climax</div><div class=\"sam-definitie-body\">the turning point of highest tension in a story.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Plot</div><div class=\"sam-definitie-body\">the sequence of events in a story.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Narrator</div><div class=\"sam-definitie-body\">the voice that tells the story.</div></div><div class=\"sam-definitie\"><div class=\"sam-definitie-term\">Symbolism</div><div class=\"sam-definitie-body\">using an object to represent a larger idea.</div></div><div class=\"sam-onthoud\"><b>Let op de verschillen.</b> <b>«Theme»</b> is central idea, terwijl <b>«Plot»</b> sequence of events is. <b>«Dynamic character»</b> is changes during the story, terwijl <b>«Static character»</b> stays the same is. <b>«Foreshadowing»</b> is hints about what comes, terwijl <b>«Metaphor»</b> one thing is another is. <b>«Metaphor»</b> is one thing is another, terwijl <b>«Simile»</b> with \"like\" or \"as\" is.</div>",
     "sv": [
      {
       "v": "What is the \"theme\" of a literary work?",
       "o": [
-       "A summary of what happens in the plot",
-       "The central idea or message explored in the work",
-       "The name of the main character",
-       "The time and place in which the story is set"
+       "the central idea or message explored in the work",
+       "the main character",
+       "the final chapter",
+       "the rhyme scheme"
       ],
-      "c": 1,
-      "u": "Theme = the central message or idea (e.g. \"the corrupting power of ambition\", \"loss of innocence\"). NOT the plot summary. Setting = time/place. Protagonist = main character."
+      "c": 0,
+      "d": 2,
+      "u": "Correct: the theme is the underlying idea.",
+      "uo": [
+       "Correct: the theme is the underlying idea.",
+       "No, that is a character.",
+       "No, that is structure.",
+       "No, that is form."
+      ],
+      "uh": "Theme: the central idea of a work."
      },
      {
-      "v": "A character who changes significantly during the course of a story is called:",
+      "v": "A character who changes significantly during the story is called:",
       "o": [
-       "A static character",
-       "A dynamic character",
-       "An antagonist",
-       "A flat character"
+       "a static character",
+       "a dynamic character",
+       "a narrator",
+       "an author"
       ],
       "c": 1,
-      "u": "Dynamic character = changes (grows, learns, deteriorates) during the story. Static character = stays the same. Round character = complex, realistic (can be static or dynamic). Flat character = one-dimensional, serves a simple function."
+      "d": 3,
+      "u": "Correct: a dynamic character develops.",
+      "uo": [
+       "No, that one stays the same.",
+       "Correct: a dynamic character develops.",
+       "No, that is the storytelling voice.",
+       "No, that is the writer."
+      ],
+      "uh": "Dynamic character: changes during the story."
      },
      {
       "v": "In literature, what is \"foreshadowing\"?",
       "o": [
-       "A flashback to an earlier event",
-       "Hints or clues about what will happen later in the story",
-       "A symbol representing an abstract idea",
-       "The resolution of the main conflict"
+       "the main idea",
+       "a flashback to the past",
+       "hints or clues about what will happen later",
+       "a rhyme"
       ],
-      "c": 1,
-      "u": "Foreshadowing = early clues that hint at future events. Creates suspense and makes the ending feel inevitable. Example: in Romeo and Juliet, Romeo says \"my grave is like to be my wedding bed\" early on - foreshadowing his death."
+      "c": 2,
+      "d": 2,
+      "u": "Correct: foreshadowing hints at future events.",
+      "uo": [
+       "No, that is the theme.",
+       "No, that is a flashback.",
+       "Correct: foreshadowing hints at future events.",
+       "No, that is form."
+      ],
+      "uh": "Foreshadowing: hints about what will happen."
      },
      {
-      "v": "Which literary device is used in: \"The classroom was a zoo\"?",
+      "v": "Which literary device is used in \"The classroom was a zoo\"?",
       "o": [
-       "Simile",
-       "Metaphor",
-       "Personification",
-       "Alliteration"
+       "a flashback",
+       "a simile",
+       "foreshadowing",
+       "a metaphor"
       ],
-      "c": 1,
-      "u": "\"The classroom was a zoo\" is a metaphor - it directly states one thing IS another (without using \"like/as\"). It implies the classroom was chaotic and noisy. A simile would be: \"The classroom was like a zoo.\""
+      "c": 3,
+      "d": 2,
+      "u": "Correct: it states one thing is another, without \"like\".",
+      "uo": [
+       "No, that is a look back.",
+       "No, a simile would use \"like\" or \"as\".",
+       "No, that hints at the future.",
+       "Correct: it states one thing is another, without \"like\"."
+      ],
+      "uh": "Metaphor: one thing stated as another."
      },
      {
       "v": "In a story, what is the \"climax\"?",
       "o": [
-       "The opening scene that introduces the characters",
-       "The turning point of highest tension - the decisive moment",
-       "The final paragraph where everything is resolved",
-       "A technique for describing characters in detail"
-      ],
-      "c": 1,
-      "u": "Climax = the turning point of highest tension, where the main conflict reaches its peak. After the climax: falling action and resolution. Example: in Romeo and Juliet, the deaths in the tomb = climax."
-     },
-     {
-      "v": "What question should you ask to identify the THEME of a literary work?",
-      "o": [
-       "\"Where and when does this story take place?\"",
-       "\"What central idea about human life does this work explore?\"",
-       "\"Who is the main character?\"",
-       "\"How many chapters does this book have?\""
-      ],
-      "c": 1,
-      "u": "Theme = big picture idea about life. Ask: \"What is the author saying about human nature, society, or the human condition?\" Examples: identity, power, freedom, love, injustice. Theme is NOT the topic but the MESSAGE about it."
-     },
-     {
-      "v": "What does \"first person narrative\" mean and what is its main limitation?",
-      "o": [
-       "The narrator knows everything about all characters - no limitation",
-       "The story is told using \"I\" - the narrator can only tell what they personally experience or know",
-       "The story is told in chronological order - so flashbacks are not allowed",
-       "The narrator is always the author of the book"
-      ],
-      "c": 1,
-      "u": "First person narrator (I): subjective, limited to what \"I\" can see and know. Creates intimacy and reader empathy, but the narrator may be unreliable or unaware of the full picture. Contrast: third person omniscient knows all characters' thoughts and feelings."
-     },
-     {
-      "v": "Wat betekent «Plot»?",
-      "o": [
-       "moreover, in addition, furthermore",
-       "in conclusion, to sum up",
-       "\"on the other hand\", \"however\"",
-       "de opeenvolging van gebeurtenissen"
-      ],
-      "c": 3,
-      "u": "«Plot» betekent: de opeenvolging van gebeurtenissen.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de opeenvolging van gebeurtenissen\"?",
-      "o": [
-       "Plot",
-       "Polite requests",
-       "Signal phrase",
-       "static"
+       "the turning point of highest tension",
+       "the opening scene",
+       "a recurring symbol",
+       "the list of characters"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «Plot»: de opeenvolging van gebeurtenissen.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de opeenvolging van gebeurtenissen\"?",
-      "o": [
-       "Narrative perspective",
-       "Protagonist",
-       "Plot",
-       "Third person limited"
+      "d": 2,
+      "u": "Correct: the climax is the decisive high-tension moment.",
+      "uo": [
+       "Correct: the climax is the decisive high-tension moment.",
+       "No, that is the exposition.",
+       "No, that is a motif.",
+       "No, that is a cast list."
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Plot»: de opeenvolging van gebeurtenissen.",
-      "d": 3
+      "uh": "Climax: the turning point of highest tension."
      },
      {
-      "v": "Wat houdt «Plot» in?",
+      "v": "What question helps you identify the THEME of a literary work?",
       "o": [
-       "round/flat, dynamic/static",
-       "\"he/she\"; volgt één personage",
-       "de strijd die het verhaal drijft",
-       "de opeenvolging van gebeurtenissen"
-      ],
-      "c": 3,
-      "u": "«Plot» betekent: de opeenvolging van gebeurtenissen.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Setting»?",
-      "o": [
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
-       "complex, meerdere kanten",
-       "om verduidelijking vragen",
-       "de tijd en plaats van een verhaal"
-      ],
-      "c": 3,
-      "u": "«Setting» betekent: de tijd en plaats van een verhaal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de tijd en plaats van een verhaal\"?",
-      "o": [
-       "Paragraph (PIE)",
-       "Setting",
-       "Conclusion",
-       "-ful, -less"
+       "\"How many pages does it have?\"",
+       "\"What central idea about human life does this work explore?\"",
+       "\"When was it published?\"",
+       "\"Who is the narrator?\""
       ],
       "c": 1,
-      "u": "Het juiste begrip is «Setting»: de tijd en plaats van een verhaal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de tijd en plaats van een verhaal\"?",
-      "o": [
-       "Plot",
-       "Omniscient",
-       "flat",
-       "Setting"
+      "d": 3,
+      "u": "Correct: the theme is the central idea about life.",
+      "uo": [
+       "No, that is about length.",
+       "Correct: the theme is the central idea about life.",
+       "No, that is about date.",
+       "No, that is about the voice."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «Setting»: de tijd en plaats van een verhaal.",
-      "d": 3
+      "uh": "Theme question: which central idea about life?"
      },
      {
-      "v": "Wat houdt «Setting» in?",
+      "v": "What is a static character?",
       "o": [
-       "metaphor, simile, foreshadowing",
-       "eenvoudig, één trek",
-       "een personage vertelt; beperkt tot eigen kennis",
-       "de tijd en plaats van een verhaal"
-      ],
-      "c": 3,
-      "u": "«Setting» betekent: de tijd en plaats van een verhaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Protagonist»?",
-      "o": [
-       "om herhaling vragen",
-       "Point, Illustration, Explanation",
-       "het hoofdpersonage",
-       "woordjes om bedenktijd te winnen"
+       "the narrator",
+       "a character who changes a lot",
+       "a character who stays the same throughout the story",
+       "the author"
       ],
       "c": 2,
-      "u": "«Protagonist» betekent: het hoofdpersonage.",
-      "d": 1
+      "d": 3,
+      "u": "Correct: a static character does not develop.",
+      "uo": [
+       "No, that is the storytelling voice.",
+       "No, that is a dynamic character.",
+       "Correct: a static character does not develop.",
+       "No, that is the writer."
+      ],
+      "uh": "Static character: stays the same."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"het hoofdpersonage\"?",
+      "v": "What is a simile?",
       "o": [
-       "Context clue",
-       "Gist",
-       "Cognate",
-       "Protagonist"
+       "a turning point",
+       "a comparison stating one thing is another",
+       "a recurring symbol",
+       "a comparison using \"like\" or \"as\""
       ],
       "c": 3,
-      "u": "Het juiste begrip is «Protagonist»: het hoofdpersonage.",
-      "d": 2
+      "d": 2,
+      "u": "Correct: a simile uses \"like\" or \"as\".",
+      "uo": [
+       "No, that is the climax.",
+       "No, that is a metaphor.",
+       "No, that is a motif.",
+       "Correct: a simile uses \"like\" or \"as\"."
+      ],
+      "uh": "Simile: comparison with \"like\" or \"as\"."
      },
      {
-      "v": "Welke term past bij: \"het hoofdpersonage\"?",
+      "v": "What is the narrator of a story?",
+      "o": [
+       "the voice that tells the story",
+       "the author's real name",
+       "the main conflict",
+       "the setting"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "Correct: the narrator is the storytelling voice.",
+      "uo": [
+       "Correct: the narrator is the storytelling voice.",
+       "No, the narrator can differ from the author.",
+       "No, that is the conflict.",
+       "No, that is place and time."
+      ],
+      "uh": "Narrator: the voice telling the story."
+     },
+     {
+      "v": "What is symbolism?",
+      "o": [
+       "the sequence of events",
+       "using an object to represent a larger idea",
+       "the rhyme of a poem",
+       "the main character"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "Correct: a symbol stands for an idea.",
+      "uo": [
+       "No, that is plot.",
+       "Correct: a symbol stands for an idea.",
+       "No, that is form.",
+       "No, that is the protagonist."
+      ],
+      "uh": "Symbolism: an object represents an idea."
+     },
+     {
+      "v": "The hero grows and changes over the course of the story. Welk begrip past hierbij?",
+      "o": [
+       "Foreshadowing",
+       "Plot",
+       "Dynamic character",
+       "Narrator"
+      ],
+      "c": 2,
+      "d": 1,
+      "u": "The hero grows and changes over the course of the story. Dat past bij Dynamic character: changes during the story.",
+      "uo": [
+       "Nee, dat hoort bij Foreshadowing: hints about what comes.",
+       "Nee, dat hoort bij Plot: sequence of events.",
+       "Klopt: changes during the story.",
+       "Nee, dat hoort bij Narrator: the storytelling voice."
+      ],
+      "uh": "Dynamic character: changes during the story."
+     },
+     {
+      "v": "The sequence of events, what actually happens. Om welk begrip gaat het?",
+      "o": [
+       "Static character",
+       "Dynamic character",
+       "Climax",
+       "Plot"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "The sequence of events, what actually happens. Dat past bij Plot: sequence of events.",
+      "uo": [
+       "Nee, dat hoort bij Static character: stays the same.",
+       "Nee, dat hoort bij Dynamic character: changes during the story.",
+       "Nee, dat hoort bij Climax: turning point, highest tension.",
+       "Klopt: sequence of events."
+      ],
+      "uh": "Plot: sequence of events."
+     },
+     {
+      "v": "The sequence of events in a story. Welk begrip herken je hier?",
+      "o": [
+       "Plot",
+       "Dynamic character",
+       "Climax",
+       "Static character"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "The sequence of events in a story. Dat past bij Plot: sequence of events.",
+      "uo": [
+       "Klopt: sequence of events.",
+       "Nee, dat hoort bij Dynamic character: changes during the story.",
+       "Nee, dat hoort bij Climax: turning point, highest tension.",
+       "Nee, dat hoort bij Static character: stays the same."
+      ],
+      "uh": "Plot: sequence of events."
+     },
+     {
+      "v": "The storytelling voice. Wat is hier aan de hand?",
+      "o": [
+       "Dynamic character",
+       "Narrator",
+       "Metaphor",
+       "Plot"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "The storytelling voice. Dat past bij Narrator: the storytelling voice.",
+      "uo": [
+       "Nee, dat hoort bij Dynamic character: changes during the story.",
+       "Klopt: the storytelling voice.",
+       "Nee, dat hoort bij Metaphor: one thing is another.",
+       "Nee, dat hoort bij Plot: sequence of events."
+      ],
+      "uh": "Narrator: the storytelling voice."
+     },
+     {
+      "v": "The voice that tells you the story, not the author. Welk begrip past hierbij?",
       "o": [
        "Metaphor",
        "Theme",
-       "Setting",
-       "Protagonist"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Protagonist»: het hoofdpersonage.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Protagonist» in?",
-      "o": [
-       "het hoofdpersonage",
-       "de centrale boodschap/idee",
-       "alwetend; kent ieders gedachten",
-       "hint naar wat later gebeurtdark clouds gathering"
-      ],
-      "c": 0,
-      "u": "«Protagonist» betekent: het hoofdpersonage.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Simile»?",
-      "o": [
-       "globaal lezen voor de hoofdlijn",
-       "de vlotheid waarmee je spreekt",
-       "a comparison using like or as",
-       "because, therefore, so, as a result, since"
+       "Narrator",
+       "Symbolism"
       ],
       "c": 2,
-      "u": "«Simile» betekent: a comparison using like or as. Anders dan een metaphor: a simile uses \"like\"/\"as\".",
-      "d": 1
+      "d": 3,
+      "u": "The voice that tells you the story, not the author. Dat past bij Narrator: the storytelling voice.",
+      "uo": [
+       "Nee, dat hoort bij Metaphor: one thing is another.",
+       "Nee, dat hoort bij Theme: central idea.",
+       "Klopt: the storytelling voice.",
+       "Nee, dat hoort bij Symbolism: object stands for an idea."
+      ],
+      "uh": "Narrator: the storytelling voice."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"a comparison using like or as\"?",
+      "v": "The turning point of highest tension. Om welk begrip gaat het?",
       "o": [
-       "Collocations",
-       "Conclusie",
+       "Theme",
+       "Narrator",
+       "Symbolism",
+       "Climax"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "The turning point of highest tension. Dat past bij Climax: turning point, highest tension.",
+      "uo": [
+       "Nee, dat hoort bij Theme: central idea.",
+       "Nee, dat hoort bij Narrator: the storytelling voice.",
+       "Nee, dat hoort bij Symbolism: object stands for an idea.",
+       "Klopt: turning point, highest tension."
+      ],
+      "uh": "Climax: turning point, highest tension."
+     },
+     {
+      "v": "A comparison with like or as. Welk begrip herken je hier?",
+      "o": [
        "Simile",
-       "Symbolism"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Simile»: a comparison using like or as. Anders dan een metaphor: a simile uses \"like\"/\"as\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"a comparison using like or as\"?",
-      "o": [
-       "Conflict",
-       "Third person limited",
-       "Foreshadowing",
-       "Simile"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Simile»: a comparison using like or as. Anders dan een metaphor: a simile uses \"like\"/\"as\".",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Simile» in?",
-      "o": [
-       "de opeenvolging van gebeurtenissen",
-       "beeld zónder \"like\"/\"as\"time is a thief",
-       "het hoofdpersonage",
-       "a comparison using like or as"
-      ],
-      "c": 3,
-      "u": "«Simile» betekent: a comparison using like or as. Anders dan een metaphor: a simile uses \"like\"/\"as\".",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Symbolism»?",
-      "o": [
-       "\"Could you repeat that, please?\"",
-       "focus op kernwoorden",
-       "de opeenvolging van gebeurtenissen",
-       "een voorwerp dat een idee weergeeft"
-      ],
-      "c": 3,
-      "u": "«Symbolism» betekent: een voorwerp dat een idee weergeeft.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een voorwerp dat een idee weergeeft\"?",
-      "o": [
-       "Skimming & scanning",
-       "Foreshadowing",
-       "Symbolism",
-       "Reference words"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Symbolism»: een voorwerp dat een idee weergeeft.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een voorwerp dat een idee weergeeft\"?",
-      "o": [
-       "round",
-       "dynamic",
-       "First person (\"I\")",
-       "Symbolism"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Symbolism»: een voorwerp dat een idee weergeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Symbolism» in?",
-      "o": [
-       "blijft hetzelfde",
-       "de opeenvolging van gebeurtenissen",
-       "alwetend; kent ieders gedachten",
-       "een voorwerp dat een idee weergeeft"
-      ],
-      "c": 3,
-      "u": "«Symbolism» betekent: een voorwerp dat een idee weergeeft.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Theme»?",
-      "o": [
-       "de centrale boodschap/idee",
-       "een uitdrukking die de structuur markeert",
-       "\"to sum up\", \"in short\", \"so basically\"",
-       "de tijd en plaats van een verhaal"
-      ],
-      "c": 0,
-      "u": "«Theme» betekent: de centrale boodschap/idee.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de centrale boodschap/idee\"?",
-      "o": [
+       "Metaphor",
        "Theme",
-       "Implicit meaning",
-       "Context clue",
-       "Gist"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Theme»: de centrale boodschap/idee.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de centrale boodschap/idee\"?",
-      "o": [
-       "Foreshadowing",
-       "Symbolism",
-       "Theme",
-       "Conflict"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Theme»: de centrale boodschap/idee.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Theme» in?",
-      "o": [
-       "een personage vertelt; beperkt tot eigen kennis",
-       "de centrale boodschap/idee",
-       "metaphor, simile, foreshadowing",
-       "blijft hetzelfde"
-      ],
-      "c": 1,
-      "u": "«Theme» betekent: de centrale boodschap/idee.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Character»?",
-      "o": [
-       "round/flat, dynamic/static",
-       "moreover, in addition, furthermore",
-       "de uitspraak die bij een streek of land hoort",
-       "woordjes om bedenktijd te winnen"
-      ],
-      "c": 0,
-      "u": "«Character» betekent: round/flat, dynamic/static.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"round/flat, dynamic/static\"?",
-      "o": [
-       "Fluency",
-       "Salutation & closing",
-       "Omniscient",
-       "Character"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Character»: round/flat, dynamic/static.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"round/flat, dynamic/static\"?",
-      "o": [
-       "Literary devices",
-       "round",
-       "Character",
        "Foreshadowing"
       ],
-      "c": 2,
-      "u": "Het juiste begrip is «Character»: round/flat, dynamic/static.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Character» in?",
-      "o": [
-       "door wiens ogen (first/third person)",
-       "complex, meerdere kanten",
-       "een voorwerp dat een idee weergeeft",
-       "round/flat, dynamic/static"
-      ],
-      "c": 3,
-      "u": "«Character» betekent: round/flat, dynamic/static.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Narrative perspective»?",
-      "o": [
-       "door wiens ogen (first/third person)",
-       "\"that's why\", \"as a result\"",
-       "Point, Illustration, Explanation",
-       "een uitdrukking die de structuur markeert"
-      ],
       "c": 0,
-      "u": "«Narrative perspective» betekent: door wiens ogen (first/third person).",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"door wiens ogen (first/third person)\"?",
-      "o": [
-       "Narrative perspective",
-       "Theme",
-       "Signal phrases",
-       "round"
+      "d": 3,
+      "u": "A comparison with like or as. Dat past bij Simile: with \"like\" or \"as\".",
+      "uo": [
+       "Klopt: with \"like\" or \"as\".",
+       "Nee, dat hoort bij Metaphor: one thing is another.",
+       "Nee, dat hoort bij Theme: central idea.",
+       "Nee, dat hoort bij Foreshadowing: hints about what comes."
       ],
-      "c": 0,
-      "u": "Het juiste begrip is «Narrative perspective»: door wiens ogen (first/third person).",
-      "d": 2
+      "uh": "Simile: with \"like\" or \"as\"."
      },
      {
-      "v": "Welke term past bij: \"door wiens ogen (first/third person)\"?",
+      "v": "She was as brave as a lion, using the word as. Wat is hier aan de hand?",
       "o": [
-       "Literary devices",
-       "Narrative perspective",
-       "flat",
-       "Conflict"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Narrative perspective»: door wiens ogen (first/third person).",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Narrative perspective» in?",
-      "o": [
-       "de tijd en plaats van een verhaal",
-       "een personage vertelt; beperkt tot eigen kennis",
-       "metaphor, simile, foreshadowing",
-       "door wiens ogen (first/third person)"
-      ],
-      "c": 3,
-      "u": "«Narrative perspective» betekent: door wiens ogen (first/third person).",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Conflict»?",
-      "o": [
-       "de strijd die het verhaal drijft",
-       "eenvoudig, één trek",
-       "de houding van de spreker",
-       "een mening of standpunt"
-      ],
-      "c": 0,
-      "u": "«Conflict» betekent: de strijd die het verhaal drijft.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"de strijd die het verhaal drijft\"?",
-      "o": [
-       "flat",
-       "Paragraph (PIE)",
-       "re-",
-       "Conflict"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Conflict»: de strijd die het verhaal drijft.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"de strijd die het verhaal drijft\"?",
-      "o": [
-       "Personification",
-       "flat",
-       "Conflict",
-       "Narrative perspective"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Conflict»: de strijd die het verhaal drijft.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Conflict» in?",
-      "o": [
-       "alwetend; kent ieders gedachten",
-       "de strijd die het verhaal drijft",
-       "\"he/she\"; volgt één personage",
-       "de centrale boodschap/idee"
-      ],
-      "c": 1,
-      "u": "«Conflict» betekent: de strijd die het verhaal drijft.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Literary devices»?",
-      "o": [
-       "waar verwijst \"it/this/they\" naar?",
-       "\"Could you repeat that, please?\"",
-       "metaphor, simile, foreshadowing",
-       "verbinden en structureren"
-      ],
-      "c": 2,
-      "u": "«Literary devices» betekent: metaphor, simile, foreshadowing.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"metaphor, simile, foreshadowing\"?",
-      "o": [
-       "Unknown words",
-       "Cause/effect",
-       "Gist",
-       "Literary devices"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Literary devices»: metaphor, simile, foreshadowing.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"metaphor, simile, foreshadowing\"?",
-      "o": [
-       "Protagonist",
-       "flat",
-       "Literary devices",
-       "Third person limited"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Literary devices»: metaphor, simile, foreshadowing.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Literary devices» in?",
-      "o": [
-       "complex, meerdere kanten",
-       "round/flat, dynamic/static",
-       "blijft hetzelfde",
-       "metaphor, simile, foreshadowing"
-      ],
-      "c": 3,
-      "u": "«Literary devices» betekent: metaphor, simile, foreshadowing.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «First person (\"I\")»?",
-      "o": [
-       "blijft hetzelfde",
-       "de centrale boodschap/idee",
-       "woordjes om bedenktijd te winnen",
-       "een personage vertelt; beperkt tot eigen kennis"
-      ],
-      "c": 3,
-      "u": "«First person (\"I\")» betekent: een personage vertelt; beperkt tot eigen kennis.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"een personage vertelt; beperkt tot eigen kennis\"?",
-      "o": [
-       "Present perfect",
-       "Scanning",
-       "Word formation",
-       "First person (\"I\")"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «First person (\"I\")»: een personage vertelt; beperkt tot eigen kennis.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"een personage vertelt; beperkt tot eigen kennis\"?",
-      "o": [
-       "Narrative perspective",
-       "Symbolism",
-       "First person (\"I\")",
-       "Conflict"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «First person (\"I\")»: een personage vertelt; beperkt tot eigen kennis.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «First person (\"I\")» in?",
-      "o": [
-       "a comparison using like or as",
-       "round/flat, dynamic/static",
-       "door wiens ogen (first/third person)",
-       "een personage vertelt; beperkt tot eigen kennis"
-      ],
-      "c": 3,
-      "u": "«First person (\"I\")» betekent: een personage vertelt; beperkt tot eigen kennis.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Third person limited»?",
-      "o": [
-       "vaste woordcombinaties (make/do)",
-       "de strijd die het verhaal drijft",
-       "tijd voor gewoontes en feiten",
-       "\"he/she\"; volgt één personage"
-      ],
-      "c": 3,
-      "u": "«Third person limited» betekent: \"he/she\"; volgt één personage.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"\"he/she\"; volgt één personage\"?",
-      "o": [
-       "Theme",
-       "Third person limited",
-       "Tone & purpose",
-       "Protagonist"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «Third person limited»: \"he/she\"; volgt één personage.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"\"he/she\"; volgt één personage\"?",
-      "o": [
-       "Character",
-       "Omniscient",
-       "Metaphor",
-       "Third person limited"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Third person limited»: \"he/she\"; volgt één personage.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Third person limited» in?",
-      "o": [
-       "blijft hetzelfde",
-       "\"he/she\"; volgt één personage",
-       "alwetend; kent ieders gedachten",
-       "het hoofdpersonage"
-      ],
-      "c": 1,
-      "u": "«Third person limited» betekent: \"he/she\"; volgt één personage.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Omniscient»?",
-      "o": [
-       "alwetend; kent ieders gedachten",
-       "een uitdrukking die de structuur markeert",
-       "houding vs. doel van de schrijver",
-       "de grote lijn van wat gezegd wordt"
-      ],
-      "c": 0,
-      "u": "«Omniscient» betekent: alwetend; kent ieders gedachten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"alwetend; kent ieders gedachten\"?",
-      "o": [
-       "Theme",
-       "Character",
-       "Omniscient",
-       "Register"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Omniscient»: alwetend; kent ieders gedachten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"alwetend; kent ieders gedachten\"?",
-      "o": [
-       "Omniscient",
-       "Personification",
-       "round",
-       "Setting"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Omniscient»: alwetend; kent ieders gedachten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Omniscient» in?",
-      "o": [
-       "alwetend; kent ieders gedachten",
-       "\"he/she\"; volgt één personage",
-       "de strijd die het verhaal drijft",
-       "blijft hetzelfde"
-      ],
-      "c": 0,
-      "u": "«Omniscient» betekent: alwetend; kent ieders gedachten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Metaphor»?",
-      "o": [
-       "\"I see your point, but…\", \"I'm not so sure\"",
-       "moreover, furthermore, in addition, also",
-       "het hoofdpersonage",
-       "beeld zónder \"like\"/\"as\"time is a thief"
-      ],
-      "c": 3,
-      "u": "«Metaphor» betekent: beeld zónder \"like\"/\"as\"time is a thief. Anders dan een simile: a metaphor omits \"like\"/\"as\".",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"beeld zónder \"like\"/\"as\"time is a thief\"?",
-      "o": [
-       "Implicit meaning",
-       "Contrast",
-       "Metaphor",
-       "re-"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «Metaphor»: beeld zónder \"like\"/\"as\"time is a thief. Anders dan een simile: a metaphor omits \"like\"/\"as\".",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"beeld zónder \"like\"/\"as\"time is a thief\"?",
-      "o": [
-       "Metaphor",
-       "Simile",
-       "Theme",
-       "Third person limited"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Metaphor»: beeld zónder \"like\"/\"as\"time is a thief. Anders dan een simile: a metaphor omits \"like\"/\"as\".",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Metaphor» in?",
-      "o": [
-       "een personage vertelt; beperkt tot eigen kennis",
-       "beeld zónder \"like\"/\"as\"time is a thief",
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "round/flat, dynamic/static"
-      ],
-      "c": 1,
-      "u": "«Metaphor» betekent: beeld zónder \"like\"/\"as\"time is a thief. Anders dan een simile: a metaphor omits \"like\"/\"as\".",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Personification»?",
-      "o": [
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "beeld zónder \"like\"/\"as\"time is a thief",
-       "prefixes en suffixes",
-       "gericht zoeken naar een detail"
-      ],
-      "c": 0,
-      "u": "«Personification» betekent: menselijke trekken aan iets levenloosthe wind whispered.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"menselijke trekken aan iets levenloosthe wind whispered\"?",
-      "o": [
-       "Personification",
-       "Accent",
-       "Paragraph (PIE)",
-       "Mening geven"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Personification»: menselijke trekken aan iets levenloosthe wind whispered.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"menselijke trekken aan iets levenloosthe wind whispered\"?",
-      "o": [
-       "Foreshadowing",
-       "Third person limited",
-       "static",
-       "Personification"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «Personification»: menselijke trekken aan iets levenloosthe wind whispered.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Personification» in?",
-      "o": [
-       "een voorwerp dat een idee weergeeft",
-       "de centrale boodschap/idee",
-       "alwetend; kent ieders gedachten",
-       "menselijke trekken aan iets levenloosthe wind whispered"
-      ],
-      "c": 3,
-      "u": "«Personification» betekent: menselijke trekken aan iets levenloosthe wind whispered.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «Foreshadowing»?",
-      "o": [
-       "hint naar wat later gebeurtdark clouds gathering",
-       "moreover, in addition, furthermore",
-       "\"on the other hand\", \"however\"",
-       "globaal lezen vs. gericht zoeken"
-      ],
-      "c": 0,
-      "u": "«Foreshadowing» betekent: hint naar wat later gebeurtdark clouds gathering.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"hint naar wat later gebeurtdark clouds gathering\"?",
-      "o": [
-       "Foreshadowing",
-       "Conclusion",
-       "B1-niveau",
-       "Fast speech"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Foreshadowing»: hint naar wat later gebeurtdark clouds gathering.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"hint naar wat later gebeurtdark clouds gathering\"?",
-      "o": [
-       "Foreshadowing",
-       "Simile",
-       "Protagonist",
-       "First person (\"I\")"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «Foreshadowing»: hint naar wat later gebeurtdark clouds gathering.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «Foreshadowing» in?",
-      "o": [
-       "een voorwerp dat een idee weergeeft",
-       "\"he/she\"; volgt één personage",
-       "hint naar wat later gebeurtdark clouds gathering",
-       "alwetend; kent ieders gedachten"
-      ],
-      "c": 2,
-      "u": "«Foreshadowing» betekent: hint naar wat later gebeurtdark clouds gathering.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «round»?",
-      "o": [
-       "present simple, continuous, perfect",
-       "de uitspraak die bij een streek of land hoort",
-       "complex, meerdere kanten",
-       "houding vs. doel van de schrijver"
-      ],
-      "c": 2,
-      "u": "«round» betekent: complex, meerdere kanten.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"complex, meerdere kanten\"?",
-      "o": [
-       "Tone & purpose",
-       "round",
-       "Implicit meaning",
-       "Presentatiestructuur"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «round»: complex, meerdere kanten.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"complex, meerdere kanten\"?",
-      "o": [
-       "Narrative perspective",
-       "dynamic",
-       "round",
-       "Literary devices"
-      ],
-      "c": 2,
-      "u": "Het juiste begrip is «round»: complex, meerdere kanten.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «round» in?",
-      "o": [
-       "de tijd en plaats van een verhaal",
-       "complex, meerdere kanten",
-       "de opeenvolging van gebeurtenissen",
-       "metaphor, simile, foreshadowing"
-      ],
-      "c": 1,
-      "u": "«round» betekent: complex, meerdere kanten.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «flat»?",
-      "o": [
-       "een woord dat op een Nederlands woord lijkt maar anders betekent",
-       "focus op kernwoorden",
-       "eenvoudig, één trek",
-       "eerste keer: grote lijn, niet elk woord"
-      ],
-      "c": 2,
-      "u": "«flat» betekent: eenvoudig, één trek.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"eenvoudig, één trek\"?",
-      "o": [
-       "Addition",
-       "Clarify",
-       "Literary devices",
-       "flat"
-      ],
-      "c": 3,
-      "u": "Het juiste begrip is «flat»: eenvoudig, één trek.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"eenvoudig, één trek\"?",
-      "o": [
-       "flat",
-       "Narrative perspective",
-       "Character",
-       "First person (\"I\")"
-      ],
-      "c": 0,
-      "u": "Het juiste begrip is «flat»: eenvoudig, één trek.",
-      "d": 3
-     },
-     {
-      "v": "Wat houdt «flat» in?",
-      "o": [
-       "eenvoudig, één trek",
-       "complex, meerdere kanten",
-       "een personage vertelt; beperkt tot eigen kennis",
-       "beeld zónder \"like\"/\"as\"time is a thief"
-      ],
-      "c": 0,
-      "u": "«flat» betekent: eenvoudig, één trek.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «dynamic»?",
-      "o": [
-       "een personage vertelt; beperkt tot eigen kennis",
-       "verandert door het verhaal",
-       "globaal lezen vs. gericht zoeken",
-       "om herhaling vragen"
-      ],
-      "c": 1,
-      "u": "«dynamic» betekent: verandert door het verhaal.",
-      "d": 1
-     },
-     {
-      "v": "Welk begrip hoort bij deze omschrijving: \"verandert door het verhaal\"?",
-      "o": [
-       "Tenses",
-       "dynamic",
-       "Cause/effect",
-       "Conditionals"
-      ],
-      "c": 1,
-      "u": "Het juiste begrip is «dynamic»: verandert door het verhaal.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"verandert door het verhaal\"?",
-      "o": [
-       "dynamic",
+       "Narrator",
        "Simile",
        "Symbolism",
-       "Character"
+       "Theme"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "She was as brave as a lion, using the word as. Dat past bij Simile: with \"like\" or \"as\".",
+      "uo": [
+       "Nee, dat hoort bij Narrator: the storytelling voice.",
+       "Klopt: with \"like\" or \"as\".",
+       "Nee, dat hoort bij Symbolism: object stands for an idea.",
+       "Nee, dat hoort bij Theme: central idea."
+      ],
+      "uh": "Simile: with \"like\" or \"as\"."
+     },
+     {
+      "v": "Hints about what will happen later. Welk begrip past hierbij?",
+      "o": [
+       "Symbolism",
+       "Metaphor",
+       "Foreshadowing",
+       "Climax"
+      ],
+      "c": 2,
+      "d": 3,
+      "u": "Hints about what will happen later. Dat past bij Foreshadowing: hints about what comes.",
+      "uo": [
+       "Nee, dat hoort bij Symbolism: object stands for an idea.",
+       "Nee, dat hoort bij Metaphor: one thing is another.",
+       "Klopt: hints about what comes.",
+       "Nee, dat hoort bij Climax: turning point, highest tension."
+      ],
+      "uh": "Foreshadowing: hints about what comes."
+     },
+     {
+      "v": "An early hint quietly warns of the tragedy to come. Om welk begrip gaat het?",
+      "o": [
+       "Simile",
+       "Static character",
+       "Climax",
+       "Foreshadowing"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "An early hint quietly warns of the tragedy to come. Dat past bij Foreshadowing: hints about what comes.",
+      "uo": [
+       "Nee, dat hoort bij Simile: with \"like\" or \"as\".",
+       "Nee, dat hoort bij Static character: stays the same.",
+       "Nee, dat hoort bij Climax: turning point, highest tension.",
+       "Klopt: hints about what comes."
+      ],
+      "uh": "Foreshadowing: hints about what comes."
+     },
+     {
+      "v": "A character who stays the same. Welk begrip herken je hier?",
+      "o": [
+       "Static character",
+       "Dynamic character",
+       "Symbolism",
+       "Theme"
       ],
       "c": 0,
-      "u": "Het juiste begrip is «dynamic»: verandert door het verhaal.",
-      "d": 3
+      "d": 3,
+      "u": "A character who stays the same. Dat past bij Static character: stays the same.",
+      "uo": [
+       "Klopt: stays the same.",
+       "Nee, dat hoort bij Dynamic character: changes during the story.",
+       "Nee, dat hoort bij Symbolism: object stands for an idea.",
+       "Nee, dat hoort bij Theme: central idea."
+      ],
+      "uh": "Static character: stays the same."
      },
      {
-      "v": "Wat houdt «dynamic» in?",
+      "v": "Using an object to represent an idea. Wat is hier aan de hand?",
       "o": [
-       "hint naar wat later gebeurtdark clouds gathering",
-       "beeld zónder \"like\"/\"as\"time is a thief",
-       "verandert door het verhaal",
-       "de strijd die het verhaal drijft"
+       "Static character",
+       "Symbolism",
+       "Theme",
+       "Narrator"
+      ],
+      "c": 1,
+      "d": 1,
+      "u": "Using an object to represent an idea. Dat past bij Symbolism: object stands for an idea.",
+      "uo": [
+       "Nee, dat hoort bij Static character: stays the same.",
+       "Klopt: object stands for an idea.",
+       "Nee, dat hoort bij Theme: central idea.",
+       "Nee, dat hoort bij Narrator: the storytelling voice."
+      ],
+      "uh": "Symbolism: object stands for an idea."
+     },
+     {
+      "v": "The central idea a work explores. Welk begrip past hierbij?",
+      "o": [
+       "Foreshadowing",
+       "Plot",
+       "Theme",
+       "Dynamic character"
       ],
       "c": 2,
-      "u": "«dynamic» betekent: verandert door het verhaal.",
-      "d": 3
-     },
-     {
-      "v": "Wat betekent «static»?",
-      "o": [
-       "menselijke trekken aan iets levenloosthe wind whispered",
-       "vaste zinnen om vloeiend te spreken",
-       "blijft hetzelfde",
-       "woordjes om bedenktijd te winnen"
+      "d": 2,
+      "u": "The central idea a work explores. Dat past bij Theme: central idea.",
+      "uo": [
+       "Nee, dat hoort bij Foreshadowing: hints about what comes.",
+       "Nee, dat hoort bij Plot: sequence of events.",
+       "Klopt: central idea.",
+       "Nee, dat hoort bij Dynamic character: changes during the story."
       ],
-      "c": 2,
-      "u": "«static» betekent: blijft hetzelfde.",
-      "d": 1
+      "uh": "Theme: central idea."
      },
      {
-      "v": "Welk begrip hoort bij deze omschrijving: \"blijft hetzelfde\"?",
+      "v": "The decisive moment where the tension is highest. Om welk begrip gaat het?",
       "o": [
-       "Narrative perspective",
-       "Conclusion",
-       "dynamic",
-       "static"
+       "Foreshadowing",
+       "Plot",
+       "Theme",
+       "Climax"
       ],
       "c": 3,
-      "u": "Het juiste begrip is «static»: blijft hetzelfde.",
-      "d": 2
-     },
-     {
-      "v": "Welke term past bij: \"blijft hetzelfde\"?",
-      "o": [
-       "Personification",
-       "Conflict",
-       "First person (\"I\")",
-       "static"
+      "d": 3,
+      "u": "The decisive moment where the tension is highest. Dat past bij Climax: turning point, highest tension.",
+      "uo": [
+       "Nee, dat hoort bij Foreshadowing: hints about what comes.",
+       "Nee, dat hoort bij Plot: sequence of events.",
+       "Nee, dat hoort bij Theme: central idea.",
+       "Klopt: turning point, highest tension."
       ],
-      "c": 3,
-      "u": "Het juiste begrip is «static»: blijft hetzelfde.",
-      "d": 3
+      "uh": "Climax: turning point, highest tension."
      },
      {
-      "v": "Wat houdt «static» in?",
+      "v": "A character who changes significantly. Welk begrip herken je hier?",
       "o": [
-       "hint naar wat later gebeurtdark clouds gathering",
-       "verandert door het verhaal",
-       "blijft hetzelfde",
-       "round/flat, dynamic/static"
+       "Dynamic character",
+       "Plot",
+       "Foreshadowing",
+       "Narrator"
+      ],
+      "c": 0,
+      "d": 1,
+      "u": "A character who changes significantly. Dat past bij Dynamic character: changes during the story.",
+      "uo": [
+       "Klopt: changes during the story.",
+       "Nee, dat hoort bij Plot: sequence of events.",
+       "Nee, dat hoort bij Foreshadowing: hints about what comes.",
+       "Nee, dat hoort bij Narrator: the storytelling voice."
+      ],
+      "uh": "Dynamic character: changes during the story."
+     },
+     {
+      "v": "A comparison stating one thing is another. Wat is hier aan de hand?",
+      "o": [
+       "Simile",
+       "Metaphor",
+       "Static character",
+       "Climax"
+      ],
+      "c": 1,
+      "d": 2,
+      "u": "A comparison stating one thing is another. Dat past bij Metaphor: one thing is another.",
+      "uo": [
+       "Nee, dat hoort bij Simile: with \"like\" or \"as\".",
+       "Klopt: one thing is another.",
+       "Nee, dat hoort bij Static character: stays the same.",
+       "Nee, dat hoort bij Climax: turning point, highest tension."
+      ],
+      "uh": "Metaphor: one thing is another."
+     },
+     {
+      "v": "The novel is really about friendship and loss. Welk begrip past hierbij?",
+      "o": [
+       "Simile",
+       "Plot",
+       "Theme",
+       "Climax"
       ],
       "c": 2,
-      "u": "«static» betekent: blijft hetzelfde.",
-      "d": 3
+      "d": 3,
+      "u": "The novel is really about friendship and loss. Dat past bij Theme: central idea.",
+      "uo": [
+       "Nee, dat hoort bij Simile: with \"like\" or \"as\".",
+       "Nee, dat hoort bij Plot: sequence of events.",
+       "Klopt: central idea.",
+       "Nee, dat hoort bij Climax: turning point, highest tension."
+      ],
+      "uh": "Theme: central idea."
+     },
+     {
+      "v": "The classroom was a zoo, one thing stated as another. Om welk begrip gaat het?",
+      "o": [
+       "Narrator",
+       "Theme",
+       "Foreshadowing",
+       "Metaphor"
+      ],
+      "c": 3,
+      "d": 1,
+      "u": "The classroom was a zoo, one thing stated as another. Dat past bij Metaphor: one thing is another.",
+      "uo": [
+       "Nee, dat hoort bij Narrator: the storytelling voice.",
+       "Nee, dat hoort bij Theme: central idea.",
+       "Nee, dat hoort bij Foreshadowing: hints about what comes.",
+       "Klopt: one thing is another."
+      ],
+      "uh": "Metaphor: one thing is another."
+     },
+     {
+      "v": "The sidekick stays exactly the same throughout. Welk begrip herken je hier?",
+      "o": [
+       "Static character",
+       "Dynamic character",
+       "Symbolism",
+       "Simile"
+      ],
+      "c": 0,
+      "d": 2,
+      "u": "The sidekick stays exactly the same throughout. Dat past bij Static character: stays the same.",
+      "uo": [
+       "Klopt: stays the same.",
+       "Nee, dat hoort bij Dynamic character: changes during the story.",
+       "Nee, dat hoort bij Symbolism: object stands for an idea.",
+       "Nee, dat hoort bij Simile: with \"like\" or \"as\"."
+      ],
+      "uh": "Static character: stays the same."
+     },
+     {
+      "v": "A white dove in the text stands for peace. Wat is hier aan de hand?",
+      "o": [
+       "Metaphor",
+       "Symbolism",
+       "Theme",
+       "Narrator"
+      ],
+      "c": 1,
+      "d": 3,
+      "u": "A white dove in the text stands for peace. Dat past bij Symbolism: object stands for an idea.",
+      "uo": [
+       "Nee, dat hoort bij Metaphor: one thing is another.",
+       "Klopt: object stands for an idea.",
+       "Nee, dat hoort bij Theme: central idea.",
+       "Nee, dat hoort bij Narrator: the storytelling voice."
+      ],
+      "uh": "Symbolism: object stands for an idea."
      }
     ],
     "oe": [
@@ -48319,84 +47128,44 @@ var VAKKEN = [
     ],
     "begrippen": [
      {
-      "t": "Plot",
-      "d": "de opeenvolging van gebeurtenissen"
-     },
-     {
-      "t": "Setting",
-      "d": "de tijd en plaats van een verhaal"
-     },
-     {
-      "t": "Protagonist",
-      "d": "het hoofdpersonage"
-     },
-     {
-      "t": "Simile",
-      "d": "a comparison using like or as"
-     },
-     {
-      "t": "Symbolism",
-      "d": "een voorwerp dat een idee weergeeft"
-     },
-     {
       "t": "Theme",
-      "d": "de centrale boodschap/idee"
+      "d": "the central idea or message explored in a work"
      },
      {
-      "t": "Character",
-      "d": "round/flat, dynamic/static"
+      "t": "Dynamic character",
+      "d": "a character who changes significantly during the story"
      },
      {
-      "t": "Narrative perspective",
-      "d": "door wiens ogen (first/third person)"
-     },
-     {
-      "t": "Conflict",
-      "d": "de strijd die het verhaal drijft"
-     },
-     {
-      "t": "Literary devices",
-      "d": "metaphor, simile, foreshadowing"
-     },
-     {
-      "t": "First person (\"I\")",
-      "d": "een personage vertelt; beperkt tot eigen kennis"
-     },
-     {
-      "t": "Third person limited",
-      "d": "\"he/she\"; volgt één personage"
-     },
-     {
-      "t": "Omniscient",
-      "d": "alwetend; kent ieders gedachten"
-     },
-     {
-      "t": "Metaphor",
-      "d": "beeld zónder \"like\"/\"as\"time is a thief"
-     },
-     {
-      "t": "Personification",
-      "d": "menselijke trekken aan iets levenloosthe wind whispered"
+      "t": "Static character",
+      "d": "a character who stays the same throughout the story"
      },
      {
       "t": "Foreshadowing",
-      "d": "hint naar wat later gebeurtdark clouds gathering"
+      "d": "hints or clues about what will happen later in the story"
      },
      {
-      "t": "round",
-      "d": "complex, meerdere kanten"
+      "t": "Metaphor",
+      "d": "a device that states one thing is another, without \"like\" or \"as\""
      },
      {
-      "t": "flat",
-      "d": "eenvoudig, één trek"
+      "t": "Simile",
+      "d": "a comparison using \"like\" or \"as\""
      },
      {
-      "t": "dynamic",
-      "d": "verandert door het verhaal"
+      "t": "Climax",
+      "d": "the turning point of highest tension in a story"
      },
      {
-      "t": "static",
-      "d": "blijft hetzelfde"
+      "t": "Plot",
+      "d": "the sequence of events in a story"
+     },
+     {
+      "t": "Narrator",
+      "d": "the voice that tells the story"
+     },
+     {
+      "t": "Symbolism",
+      "d": "using an object to represent a larger idea"
      }
     ]
    }
