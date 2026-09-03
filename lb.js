@@ -790,6 +790,91 @@ function getVakCoverage(vakId){
   return {pct:sum/vak.domeinen.length,hasData:any,done,started,total:vak.domeinen.length};
 }
 
+// ═══════ LEERDOEL-MASTERY (gedeelde datalaag) ═══════
+// De linchpin uit docs/SLAGIO-PRODUCT-VISION.md: één beheersings-model per
+// LEERDOEL dat tegelijk de student-"vandaag", de docentenradar én de AI-context
+// voedt. Pure functies bovenop de bestaande, cloud-gesyncte data (progress =
+// beste score per leerdoel-id, decay = recency). Géén nieuwe opslag nodig.
+//
+// mastery-object: {hasData, raw (0-1 beste score), score (0-1 na recency-correctie),
+//   band ('green'|'yellow'|'orange'|'red'|'none'), color, label, attempts, decayDays}
+const _MB_BANDS=[
+  {band:'green', min:0.80, color:'#22c55e', label:'Goed beheerst'},
+  {band:'yellow',min:0.65, color:'#facc15', label:'Bijna op niveau'},
+  {band:'orange',min:0.45, color:'#f97316', label:'Aandacht nodig'},
+  {band:'red',   min:0,    color:'#ef4444', label:'Kritisch'}
+];
+function _masteryBand(score){for(const b of _MB_BANDS){if(score>=b.min)return b;}return _MB_BANDS[_MB_BANDS.length-1];}
+// Recency-correctie: kennis die lang niet geoefend is, telt iets lager mee
+// (retentie). Bewust mild zodat één oude topscore niet ineens 'kritisch' wordt.
+function _recencyFactor(days){if(days==null)return 1;if(days<7)return 1;if(days<21)return .92;if(days<42)return .84;return .76;}
+function _decayDays(vakId,ldId){try{const ts=getDecay()[`${vakId}_${ldId}`];return ts?((Date.now()-ts)/(1000*60*60*24)):null;}catch(e){return null;}}
+// Beheersing van één leerdoel (of, als fallback, een domein zonder leerdoelen).
+function ldMastery(vakId,ld){
+  const id=(ld&&ld.id)||ld;
+  const r=getDomeinBestPct(vakId,id);
+  if(!r.hasData)return {hasData:false,raw:0,score:0,band:'none',color:'var(--mu)',label:'Nog niet geoefend',attempts:0,decayDays:null,vakId,ldId:id,naam:(ld&&ld.naam)||''};
+  let attempts=0;try{const p=getProgress();['snel','oud'].forEach(m=>{const k=`${vakId}_${id}_${m}`;if(p[k])attempts+=(p[k].attempts||0);});}catch(e){}
+  const decayDays=_decayDays(vakId,id);
+  const score=Math.max(0,Math.min(1,r.pct*_recencyFactor(decayDays)));
+  const b=_masteryBand(score);
+  let label=b.label;
+  if(decayDays!=null&&decayDays>=21&&r.pct>=0.65)label='Zakt weg - herhalen';
+  return {hasData:true,raw:r.pct,score,band:b.band,color:b.color,label,attempts,decayDays,vakId,ldId:id,naam:(ld&&ld.naam)||''};
+}
+// Rollup over een domein: gemiddelde beheersing + tellingen per signaal + zwakste
+// leerdoel. Domeinen zonder leerdoelen vallen terug op het domein zelf.
+function domeinMastery(vakId,domein){
+  const lds=(domein&&domein.leerdoelen&&domein.leerdoelen.length)?domein.leerdoelen:[{id:domein.id,naam:domein.naam}];
+  const items=lds.map(ld=>ldMastery(vakId,ld));
+  const done=items.filter(m=>m.hasData);
+  const counts={green:0,yellow:0,orange:0,red:0,none:0};
+  items.forEach(m=>{counts[m.band]=(counts[m.band]||0)+1;});
+  const avg=done.length?done.reduce((s,m)=>s+m.score,0)/done.length:0;
+  let weakest=null;done.forEach(m=>{if(!weakest||m.score<weakest.score)weakest=m;});
+  return {hasData:done.length>0,score:avg,band:_masteryBand(avg).band,counts,items,weakest,
+    attention:counts.orange+counts.red,critical:counts.red,total:items.length,started:done.length};
+}
+// Rollup over een heel vak (over de domeinen heen).
+function vakMasteryRollup(vakId){
+  const vak=getVK().find(v=>v.id===vakId);
+  if(!vak)return {hasData:false,score:0,attention:0,critical:0,doms:[]};
+  const doms=vak.domeinen.map(d=>Object.assign({domId:d.id,domNaam:d.naam},domeinMastery(vakId,d)));
+  const started=doms.filter(d=>d.hasData);
+  const avg=started.length?started.reduce((s,d)=>s+d.score,0)/started.length:0;
+  const attention=doms.reduce((s,d)=>s+d.attention,0);
+  const critical=doms.reduce((s,d)=>s+d.critical,0);
+  return {hasData:started.length>0,score:avg,attention,critical,doms,vakId,vakNaam:vak.naam};
+}
+// De zwakste leerdoelen over (de opgegeven, of alle) vakken - voedt "Dit heb je
+// nu nodig" (student) en straks de docenten-toewijzing. Default: alleen leerdoelen
+// waar al mee geoefend is én die aandacht nodig hebben (oranje/rood), zwakste eerst.
+function weakestLeerdoelen(opts){
+  opts=opts||{};
+  const vakIds=opts.vakIds||getVK().map(v=>v.id);
+  const limit=opts.limit||5;
+  const includeUnpracticed=!!opts.includeUnpracticed;
+  const maxScore=(opts.maxScore!=null)?opts.maxScore:0.65; // t/m 'geel': ruimte om te groeien
+  const out=[];
+  vakIds.forEach(vid=>{
+    const vak=getVK().find(v=>v.id===vid);if(!vak)return;
+    vak.domeinen.forEach(dom=>{
+      const lds=(dom.leerdoelen&&dom.leerdoelen.length)?dom.leerdoelen:[{id:dom.id,naam:dom.naam}];
+      lds.forEach(ld=>{
+        const m=ldMastery(vid,ld);
+        if(!m.hasData){if(includeUnpracticed)out.push(Object.assign({},m,{vakNaam:vak.naam,domId:dom.id,domNaam:dom.naam,unpracticed:true}));return;}
+        if(m.score>maxScore)return;
+        out.push(Object.assign({},m,{vakNaam:vak.naam,domId:dom.id,domNaam:dom.naam}));
+      });
+    });
+  });
+  // Zwakste eerst; bij gelijke score: langer niet geoefend eerst.
+  out.sort((a,b)=>(a.score-b.score)||((b.decayDays||0)-(a.decayDays||0)));
+  return out.slice(0,limit);
+}
+// Convenience: het ene leerdoel dat de leerling nú het beste kan oppakken.
+function nextBestLeerdoel(vakIds){return weakestLeerdoelen({vakIds,limit:1})[0]||null;}
+
 // ═══════ EXAMENCOACH ═══════
 // Eerlijke, transparante indicatie op basis van je oefenscores per domein.
 // cijfer = 1 + 9·(gem. beheersing) - géén N-term, dus bewust aan de voorzichtige kant.

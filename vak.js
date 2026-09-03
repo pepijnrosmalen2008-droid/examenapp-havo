@@ -721,7 +721,10 @@ function openLeerdoelen(domId,_noHash){
   let html='';
   d.leerdoelen.forEach(ld=>{
     const s=_ldStatus(ld);
-    const pct=(typeof getDomeinBestPct==='function')?getDomeinBestPct(v.id,ld.id):0;
+    const m=(typeof ldMastery==='function')?ldMastery(v.id,ld):null;
+    // Beheersingssignaal per leerdoel (gedeelde mastery-spine): kleurstip + label.
+    const signal=m?`<div class="ld-signal" title="${m.hasData?Math.round(m.raw*100)+'% beste score':'Nog niet geoefend'}"><span class="ld-sig-dot" style="background:${m.color}"></span><span class="ld-sig-lbl" style="color:${m.hasData?m.color:'var(--mu)'}">${m.hasData?Math.round(m.score*100)+'% · '+m.label:'Nog niet geoefend'}</span></div>`:'';
+    const bar=(m&&m.hasData)?`<div class="ld-prog"><div class="ld-prog-bar" style="width:${Math.round(m.score*100)}%;background:${m.color}"></div></div>`:'';
     html+=`<div class="ld-card${s.gold?' gold':''}" onclick="openDomein('${ld.id}')">
       <div class="ld-card-head">
         <div class="ld-card-id" style="background:${v.kleur}22;color:${v.kleur}">${ld.id}</div>
@@ -730,8 +733,9 @@ function openLeerdoelen(domId,_noHash){
           <p>${ld.beschrijving||''}</p>
         </div>
       </div>
+      ${signal}
       <div class="ld-pills">${_ldPill(s.content,'Uitleg')}${_ldPill(s.vragen,s.nSv+' vragen')}${_ldPill(s.begrippen,s.nBeg+' begrippen')}${_ldPill(s.examen,'Oud-examen')}</div>
-      ${pct>0?`<div class="ld-prog"><div class="ld-prog-bar" style="width:${pct}%"></div></div>`:''}
+      ${bar}
     </div>`;
   });
   // "hele domein gemengd oefenen" (de bestaande bulk-bank van het domein zelf)
