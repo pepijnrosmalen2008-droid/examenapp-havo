@@ -1545,7 +1545,9 @@ function toonRes(){
   }catch(e){console.warn('toonRes LB error:',e);}
   // Dagmissie voltooid: elke afgeronde snelle quiz telt als dagmissie van vandaag.
   // Stil afhandelen: de viering speelt ná het resultaat via de wachtrij (geen overlap).
-  try{if(ST.mode==='snel'&&typeof markDagmissieDone==='function'){const _dm=markDagmissieDone(true);if(_dm)_RC.dagmissie=_dm;}}catch(e){}
+  // Dagmissie telt na een oefening in snel óf oud; de beloning is weer een échte
+  // kist om te openen (naast de XP-boost) - dat was juist het leuke.
+  try{if((ST.mode==='snel'||ST.mode==='oud')&&typeof markDagmissieDone==='function'){const _dm=markDagmissieDone(true);if(_dm){_RC.dagmissie=_dm;_RC.chest={dagmissie:true,kicker:'Dagmissie voltooid! 🎯'};}}}catch(e){}
   // Examencoach hoort NIET in het finish-moment (concurreert met de kern).
   // Weggehaald uit de gelijktijdige laag; leeg laten.
   try{const _rc=document.getElementById('res-coach');if(_rc)_rc.innerHTML='';}catch(e){}
@@ -1556,7 +1558,7 @@ function toonRes(){
     }
   }catch(e){}
   // Kistje = beloning voor het behalen van je DAGDOEL (Duolingo-stijl doelbeloning).
-  try{ if(_dgJustDone && ST.mode==='snel' && !ST.isFoutenboek) _RC.chest={goal:true}; }catch(e){}
+  try{ if(_dgJustDone && (ST.mode==='snel'||ST.mode==='oud') && !ST.isFoutenboek && !_RC.chest) _RC.chest={goal:true}; }catch(e){}
   // "Volgende domein"-kaart verwijderd op verzoek - minder tegels op het resultaatscherm.
   try{const omBox=document.getElementById('one-more-wrap');if(omBox)omBox.innerHTML='';}catch(e){}
   try{renderAdaptiveResults();}catch(e){}

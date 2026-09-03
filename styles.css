@@ -7507,7 +7507,19 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .chest-item-sub{font-size:13px;color:rgba(255,255,255,.6);line-height:1.4;max-width:280px}
 .chest-cta{margin-top:16px;width:100%;max-width:280px;padding:15px;background:linear-gradient(135deg,#fb8c3e,#e8580c);border:none;border-radius:16px;color:#fff;font-family:var(--font-head);font-weight:900;font-size:16px;cursor:pointer;box-shadow:0 6px 20px rgba(232,88,12,.4);-webkit-tap-highlight-color:transparent;transition:transform .12s}
 .chest-cta:active{transform:scale(.97)}
-@media(prefers-reduced-motion:reduce){.chest-glow,.chest-box.chest-wobble,.chest-inner,.chest-reveal,.chest-lid,.chest-inglow,.chest-sparkles .cs{animation:none!important;transition:none!important}.chest-inner,.chest-reveal,.chest-inside{transform:none;opacity:1}.chest-opened .chest-lid{transform:perspective(340px) rotateX(-128deg)}}
+/* ── Dopamine-burst bij het openen ── */
+.chest-flash{position:absolute;left:50%;top:50%;width:180px;height:180px;border-radius:50%;transform:translate(-50%,-50%) scale(.2);background:radial-gradient(circle,#fffdf3 0%,#fff2b0 34%,rgba(255,242,176,0) 70%);pointer-events:none;z-index:5;animation:chestFlash .5s ease-out forwards}
+@keyframes chestFlash{0%{opacity:0;transform:translate(-50%,-50%) scale(.2)}18%{opacity:1}100%{opacity:0;transform:translate(-50%,-50%) scale(2.4)}}
+.chest-shock{position:absolute;left:50%;top:50%;width:120px;height:120px;border-radius:50%;transform:translate(-50%,-50%) scale(.3);border:3px solid rgba(255,225,130,.9);pointer-events:none;z-index:5;animation:chestShock .62s cubic-bezier(.2,.7,.3,1) forwards}
+@keyframes chestShock{0%{opacity:.9;transform:translate(-50%,-50%) scale(.3)}100%{opacity:0;transform:translate(-50%,-50%) scale(3.1);border-width:1px}}
+.chest-burstrays{position:absolute;left:50%;top:50%;width:340px;height:340px;transform:translate(-50%,-50%) scale(.4) rotate(0deg);pointer-events:none;z-index:4;opacity:0;background:repeating-conic-gradient(from 0deg,rgba(255,240,170,.55) 0deg 8deg,transparent 8deg 22deg);-webkit-mask:radial-gradient(circle,#000 22%,transparent 62%);mask:radial-gradient(circle,#000 22%,transparent 62%);animation:chestRays .8s ease-out forwards}
+@keyframes chestRays{0%{opacity:0;transform:translate(-50%,-50%) scale(.4) rotate(0deg)}25%{opacity:.9}100%{opacity:0;transform:translate(-50%,-50%) scale(1.5) rotate(32deg)}}
+.chest-box.chest-pop{animation:chestPop .5s cubic-bezier(.34,1.7,.4,1)}
+@keyframes chestPop{0%{transform:scale(1)}30%{transform:scale(1.22)}55%{transform:scale(.96)}100%{transform:scale(1.04)}}
+.chest-overlay.chest-shake{animation:chestShake .4s cubic-bezier(.36,.07,.19,.97)}
+@keyframes chestShake{0%,100%{transform:translate(0,0)}20%{transform:translate(-6px,3px)}40%{transform:translate(6px,-3px)}60%{transform:translate(-4px,2px)}80%{transform:translate(4px,-1px)}}
+.chest-sparkle-bit{position:fixed;z-index:9521;pointer-events:none;color:#ffe36b;text-shadow:0 0 10px rgba(255,213,74,.9);opacity:1;transition:transform .9s cubic-bezier(.2,.7,.3,1),opacity .9s ease .1s;will-change:transform,opacity}
+@media(prefers-reduced-motion:reduce){.chest-glow,.chest-box.chest-wobble,.chest-box.chest-pop,.chest-overlay.chest-shake,.chest-flash,.chest-shock,.chest-burstrays,.chest-inner,.chest-reveal,.chest-lid,.chest-inglow,.chest-sparkles .cs{animation:none!important;transition:none!important}.chest-inner,.chest-reveal,.chest-inside{transform:none;opacity:1}.chest-flash,.chest-shock,.chest-burstrays{display:none!important}.chest-opened .chest-lid{transform:perspective(340px) rotateX(-128deg)}}
 
 /* ═══ Divisie-stijging: geanimeerd leaderboard-stuk (jij stijgt, rest zakt) ═══ */
 .lru-card{max-width:400px!important}

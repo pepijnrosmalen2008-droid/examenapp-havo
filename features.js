@@ -916,7 +916,7 @@ function _chestCoinBurst(box,rare){
     const r=box.getBoundingClientRect();
     const cx=r.left+r.width/2, cy=r.top+r.height*0.42;
     const ic=(typeof _ico==='function')?_ico('coin',20):'🪙';
-    const N=rare?12:9;
+    const N=rare?20:15;
     for(let i=0;i<N;i++){
       const s=document.createElement('div');s.className='chest-pop-coin';s.innerHTML=ic;
       s.style.left=cx+'px';s.style.top=cy+'px';
@@ -926,6 +926,27 @@ function _chestCoinBurst(box,rare){
       const delay=i*22;
       setTimeout(()=>{ s.style.transform='translate('+dx.toFixed(0)+'px,'+dy.toFixed(0)+'px) rotate('+Math.floor(Math.random()*360)+'deg)'; s.style.opacity='0'; },delay+20);
       setTimeout(()=>s.remove(),delay+720);
+    }
+  }catch(e){}
+}
+// Gouden sterren die vanuit de kist naar boven regenen (extra feestgevoel).
+function _chestSparkleRain(ov,premium){
+  try{
+    const stage=ov.querySelector('#chest-stage')||ov;
+    const r=stage.getBoundingClientRect();
+    const cx=r.left+r.width/2, cy=r.top+r.height*0.5;
+    const N=premium?18:12;
+    const glyphs=premium?['✦','✧','★','⭐','💛']:['✦','✧','★','⭐'];
+    for(let i=0;i<N;i++){
+      const s=document.createElement('div');s.className='chest-sparkle-bit';
+      s.textContent=glyphs[Math.floor(Math.random()*glyphs.length)];
+      s.style.left=(cx+(Math.random()-0.5)*70)+'px';s.style.top=(cy+(Math.random()-0.5)*30)+'px';
+      s.style.fontSize=(12+Math.random()*16)+'px';
+      document.body.appendChild(s);
+      const dx=(Math.random()-0.5)*220, dy=-90-Math.random()*180, rot=(Math.random()-0.5)*220;
+      const delay=i*20;
+      setTimeout(()=>{s.style.transform='translate('+dx.toFixed(0)+'px,'+dy.toFixed(0)+'px) rotate('+rot.toFixed(0)+'deg)';s.style.opacity='0';},delay+20);
+      setTimeout(()=>{try{s.remove();}catch(e){}},delay+950);
     }
   }catch(e){}
 }
@@ -1018,8 +1039,20 @@ function _chestBurst(ov,reward,close,hint,box){
     try{playSound(_premium?'evolve':'levelup');}catch(e){}
     // Krachtige openings-haptiek (langere, opbouwende buzz).
     try{haptic(_premium?[60,30,80,30,120,30,220]:[50,30,90,30,170]);}catch(e){}
+    // ── Dopamine-burst: witte flits + uitdijende schokgolf + lichtstralen + korte shake ──
+    try{
+      const stage=ov.querySelector('#chest-stage')||ov;
+      const flash=document.createElement('div');flash.className='chest-flash';stage.appendChild(flash);
+      const shock=document.createElement('div');shock.className='chest-shock';stage.appendChild(shock);
+      const rays=document.createElement('div');rays.className='chest-burstrays';stage.appendChild(rays);
+      setTimeout(()=>{[flash,shock,rays].forEach(el=>{try{el.remove();}catch(e){}});},1100);
+      const bx=ov.querySelector('#chest-box');
+      if(bx){bx.classList.remove('chest-pop');void bx.offsetWidth;bx.classList.add('chest-pop');}
+      ov.classList.remove('chest-shake');void ov.offsetWidth;ov.classList.add('chest-shake');
+    }catch(e){}
     try{const bx=ov.querySelector('#chest-box');if(bx)_chestCoinBurst(bx,_premium);}catch(e){}
-    try{if(typeof launchConfetti==='function')launchConfetti(_premium?'gold':undefined);}catch(e){}
+    try{_chestSparkleRain(ov,_premium);}catch(e){}
+    try{if(typeof launchConfetti==='function'){launchConfetti(_premium?'gold':undefined);setTimeout(()=>{try{launchConfetti(_premium?'gold':undefined);}catch(e){}},260);}}catch(e){}
     let revealHtml='';
     if(reward.league){
       revealHtml=_leagueReveal(reward);   // munten + item/power (al toegekend)
