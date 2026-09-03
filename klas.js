@@ -275,9 +275,9 @@ function renderKlasHome(){
 let _klasHw = [];
 function _hwList(key){try{return JSON.parse(localStorage.getItem(key)||'[]');}catch(e){return [];}}
 function getDemoHw(){try{return JSON.parse(localStorage.getItem('slagio_hw_demo')||'null');}catch(e){return null;}}
-// Huiswerk starten: zorg dat het vak gehydrateerd is (anders is domein.sv leeg en
-// belandt de leerling op de vakpagina), start dan direct de snelle quiz op het
-// opgegeven domein.
+// Huiswerk starten: zorg dat het vak gehydrateerd is (anders is de vragenbank leeg),
+// zoek het domein OF leerdoel op (duFind pakt ook geneste leerdoelen — goToDomein
+// niet, die valt daarop terug op de vakpagina), en start dan direct de snelle quiz.
 function hwStart(vakId, domId){
   try{
     if(typeof ensureVakData==='function' && typeof vakHydrated==='function' && typeof APP_LEVEL!=='undefined' && !vakHydrated(APP_LEVEL,vakId)){
@@ -286,8 +286,17 @@ function hwStart(vakId, domId){
       return;
     }
     try{ if(typeof vonkLoadingHide==='function') vonkLoadingHide(); }catch(e){}
-    if(domId && typeof goToDomein==='function'){ goToDomein(vakId, domId, 'snel'); return; }
-    if(typeof openVak==='function') openVak(vakId);
+    const vak=(typeof getVK==='function')?getVK().find(v=>v.id===vakId):null;
+    if(!vak){ if(typeof openVak==='function')openVak(vakId); return; }
+    ST.vak=vak;
+    let dom = domId && ((typeof duFind==='function')?duFind(vak,domId):(vak.domeinen||[]).find(d=>d.id===domId));
+    if(!dom){ if(typeof openVak==='function')openVak(vakId); return; }
+    // Kies een onderdeel met vragen: het domein zelf, anders het rijkste leerdoel.
+    if(dom.sv && dom.sv.length){ ST.domein=dom; if(typeof startQ==='function'){startQ('snel');return;} }
+    const lds=(dom.leerdoelen||[]).filter(l=>l.sv&&l.sv.length).sort((a,b)=>b.sv.length-a.sv.length);
+    if(lds.length){ ST.domein=lds[0]; if(typeof startQ==='function'){startQ('snel');return;} }
+    if(dom.sv && dom.sv.length){ ST.domein=dom; if(typeof startQ==='function'){startQ('snel');return;} }
+    if(typeof openVak==='function')openVak(vakId);
   }catch(e){ try{ if(typeof openVak==='function') openVak(vakId); }catch(_){} }
 }
 async function renderKlasHuiswerk(){
@@ -304,11 +313,15 @@ async function renderKlasHuiswerk(){
     if(!list.length){ el.innerHTML=''; _klasHw=[]; return; }
     const vakken = (typeof getVK==='function')?getVK():[];
     const done=_hwList('slagio_hw_done'), seen=_hwList('slagio_hw_seen');
+    const nrm=s=>String(s||'').toLowerCase().replace(/\s+/g,' ').trim();
     _klasHw = list.map(hw=>{
       const key=(hw.vak||'')+'|'+(hw.domein||'')+'|'+(hw.created_at||'');
       let vakId=null,domId=null,act='openKlas()';
-      const vak = vakken.find(v=>v.naam===hw.vak) || (k && vakken.find(v=>v.id===k.vakId));
-      if(vak){ vakId=vak.id; const dom=(vak.domeinen||[]).find(d=>d.naam===hw.domein);
+      const vak = vakken.find(v=>v.naam===hw.vak) || vakken.find(v=>nrm(v.naam)===nrm(hw.vak)) || (k && vakken.find(v=>v.id===k.vakId));
+      if(vak){ vakId=vak.id;
+        // Domein OF leerdoel opzoeken op naam, id of genormaliseerde naam.
+        let dom=(vak.domeinen||[]).find(d=>d.naam===hw.domein) || (vak.domeinen||[]).find(d=>d.id===hw.domein) || (vak.domeinen||[]).find(d=>nrm(d.naam)===nrm(hw.domein));
+        if(!dom){ for(const d of (vak.domeinen||[])){ const l=(d.leerdoelen||[]).find(x=>x.naam===hw.domein||x.id===hw.domein||nrm(x.naam)===nrm(hw.domein)); if(l){dom=l;break;} } }
         // Klik op huiswerk → meteen de snelle quiz (hwStart hydrateert eerst het vak).
         if(dom){ domId=dom.id; act=`hwStart('${vak.id}','${dom.id}')`; }
         else act=`hwStart('${vak.id}','')`; }
@@ -341,7 +354,10 @@ function hwOnQuizDone(vakId, domId){
   try{
     if(!_klasHw || !_klasHw.length) return null;
     const done=_hwList('slagio_hw_done');
-    const m=_klasHw.find(h=>!h.isDone && !done.includes(h.key) && h.vakId===vakId && (h.domId==null || h.domId===domId));
+    const vak=(typeof getVK==='function')?getVK().find(v=>v.id===vakId):null;
+    const parId=(vak && typeof duParent==='function')?((duParent(vak,domId)||{}).id||null):null; // ouderdomein van een leerdoel
+    const m=_klasHw.find(h=>!h.isDone && !done.includes(h.key) && h.vakId===vakId &&
+      (h.domId==null || h.domId===domId || (parId && h.domId===parId)));
     if(!m) return null;
     done.push(m.key); try{localStorage.setItem('slagio_hw_done',JSON.stringify(done.slice(-120)));}catch(e){}
     m.isDone=true;
