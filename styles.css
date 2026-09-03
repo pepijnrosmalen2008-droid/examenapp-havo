@@ -1749,7 +1749,7 @@ html.dark .qb{background:#2e3550}
 .badge.earned:hover{transform:scale(1.18) rotate(-5deg)}
 .badge.unearned{filter:grayscale(1);opacity:.22}
 .badge-tooltip{position:relative}
-.badge-tooltip::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--dk);color:var(--bg);font-size:11px;font-weight:600;padding:4px 10px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:.18s;font-family:var(--font);z-index:10}
+.badge-tooltip::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--dk);color:var(--bg);font-size:11px;font-weight:600;padding:6px 11px;border-radius:8px;white-space:normal;width:max-content;max-width:min(210px,72vw);text-align:center;line-height:1.4;opacity:0;pointer-events:none;transition:.18s;font-family:var(--font);z-index:10;box-shadow:0 6px 20px rgba(0,0,0,.28)}
 .badge-tooltip:hover::after{opacity:1}
 /* Profile badge section */
 .prof-badges-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:12px;margin-top:4px}
@@ -2104,6 +2104,7 @@ html.dark .qb{background:#2e3550}
 .zq-lbl{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--mu);margin:0 0 6px}
 .zq-sel{width:100%;padding:12px 13px;border:1px solid var(--bo);border-radius:12px;background:var(--bg,var(--s));color:var(--dk);font-family:var(--font);font-size:14.5px;font-weight:600;outline:none;margin-bottom:16px;-webkit-appearance:none;appearance:none}
 .zq-sel:focus{border-color:rgba(var(--or-rgb),.5)}
+.zq-fixed{padding:12px 13px;border:1px solid var(--bo);border-radius:12px;background:rgba(var(--or-rgb),.08);color:var(--dk);font-weight:800;font-size:14.5px;margin-bottom:16px}
 .zq-btn{width:100%;padding:14px;border:none;border-radius:14px;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;font-family:var(--font-head);font-weight:900;font-size:15px;cursor:pointer;box-shadow:0 6px 18px rgba(var(--or-rgb),.3);-webkit-tap-highlight-color:transparent;transition:transform .12s}
 .zq-btn:active{transform:scale(.98)}
 .zq-btn-2{margin-top:12px;background:linear-gradient(135deg,#22c55e,#16a34a);box-shadow:0 6px 18px rgba(34,197,94,.3)}
@@ -2230,6 +2231,8 @@ html.dark .calc-btn{background:#2e3550}
 .surge-txt{font-size:12.5px;font-weight:800;letter-spacing:.1px;overflow:hidden;text-overflow:ellipsis}
 .surge-count{background:rgba(255,255,255,.28);border-radius:999px;min-width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;padding:0 7px;font-size:14px;font-weight:900;flex-shrink:0;box-shadow:0 0 0 1px rgba(255,255,255,.25) inset}
 html.pwa-standalone .surge-badge{top:calc(64px + env(safe-area-inset-top,0px))}
+/* Als de surge-pill zweeft, schuift de timer-ring omlaag zodat ze elkaar niet raken. */
+#sc-quiz.surge-active #qring{margin-top:46px!important;transition:margin-top .2s ease}
 /* ── DECAY DOT ──────────────────────────────────── */
 .decay-dot{display:inline-block;width:9px;height:9px;border-radius:50%;flex-shrink:0;vertical-align:middle;margin-left:4px;box-shadow:0 0 6px currentColor}
 /* ── DECAY ALERT (home) ─────────────────────────── */

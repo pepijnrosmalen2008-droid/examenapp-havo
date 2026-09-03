@@ -943,6 +943,12 @@ function _focusVakIds(){
 function renderFocusLeerdoel(){
   const box=document.getElementById('hm-focus-ld');
   if(!box)return;
+  // Rust op home: nooit twee grote blokken tegelijk. Staat de context-/fouten-kaart
+  // er al (comeback of feature-discovery), dan wijkt "Dit heb je nu nodig".
+  try{
+    const big1=document.getElementById('comeback-card-home'), big2=document.getElementById('feat-disc-home');
+    if((big1&&big1.innerHTML.trim())||(big2&&big2.innerHTML.trim())){ box.style.display='none'; box.innerHTML=''; return; }
+  }catch(e){}
   let top=null;
   try{top=weakestLeerdoelen({vakIds:_focusVakIds(),limit:1})[0]||null;}catch(e){}
   if(!top){box.style.display='none';box.innerHTML='';return;}

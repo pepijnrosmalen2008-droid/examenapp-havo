@@ -672,6 +672,7 @@ function _showSurgeBadge(){
   el.id='surge-badge-el';el.className='surge-badge';
   el.innerHTML=`<span class="surge-fire">🔥</span><span class="surge-txt">XP&nbsp;Surge · dubbele&nbsp;XP</span><span class="surge-count" id="surge-count">${_surgeLeft}</span>`;
   document.body.appendChild(el);
+  try{document.getElementById('sc-quiz').classList.add('surge-active');}catch(e){}
 }
 function _updateSurgeBadge(){
   const cnt=document.getElementById('surge-count');
@@ -680,6 +681,7 @@ function _updateSurgeBadge(){
 function _removeSurgeBadge(){
   const old=document.getElementById('surge-badge-el');
   if(old)old.remove();
+  try{document.getElementById('sc-quiz').classList.remove('surge-active');}catch(e){}
 }
 
 // ═══════ COMEBACK ═══════

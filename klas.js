@@ -286,7 +286,7 @@ function hwStart(vakId, domId){
       return;
     }
     try{ if(typeof vonkLoadingHide==='function') vonkLoadingHide(); }catch(e){}
-    const _fail=(why)=>{ try{ if(typeof showToast==='function') showToast('Huiswerk kon niet starten ('+why+')','#f97316',4500); }catch(e){} try{ if(typeof openVak==='function') openVak(vakId); }catch(e){} };
+    const _fail=(why)=>{ try{ if(typeof showToast==='function') showToast('Dit onderwerp is niet meer beschikbaar — kies een vak om te oefenen.','#64748b',3200); }catch(e){} try{ if(typeof openVak==='function') openVak(vakId); }catch(e){} };
     const vak=(typeof getVK==='function')?getVK().find(v=>v.id===vakId):null;
     if(!vak){ _fail('vak '+vakId+' niet gevonden'); return; }
     ST.vak=vak;
@@ -413,18 +413,27 @@ function hwSetLocal(vakNaam, domNaam, vakId, domId){
   }catch(e){}
 }
 let _zqOpened=false;
+let _zqVakList=[];
 function openZetQuiz(){
-  const vakken=(typeof getVK==='function')?getVK():[];
-  if(!vakken.length){try{if(typeof showToast==='function')showToast('Kies eerst een niveau, dan kun je een quiz klaarzetten.','#f97316');}catch(e){}return;}
+  const alle=(typeof getVK==='function')?getVK():[];
+  if(!alle.length){try{if(typeof showToast==='function')showToast('Kies eerst een niveau, dan kun je een quiz klaarzetten.','#f97316');}catch(e){}return;}
+  // Een klas is voor één vak op één niveau: beperk de keuze tot dat vak.
+  const k=(typeof getActiveKlas==='function')?getActiveKlas():null;
+  let locked=null;
+  if(k&&k.vakId){ locked=alle.find(v=>v.id===k.vakId)||null; }
+  _zqVakList = locked?[locked]:alle;
   let ov=document.getElementById('zetquiz-ov');
   if(!ov){ov=document.createElement('div');ov.id='zetquiz-ov';ov.className='zq-ov';ov.addEventListener('click',e=>{if(e.target===ov)closeZetQuiz();});document.body.appendChild(ov);}
-  const vakOpts=vakken.map((v,i)=>`<option value="${i}">${_esc(v.naam)}</option>`).join('');
+  const niv=(k&&k.niveau?k.niveau.toUpperCase():((typeof APP_LEVEL!=='undefined'?APP_LEVEL:'')||'').toUpperCase());
+  const vakOpts=_zqVakList.map((v,i)=>`<option value="${i}">${_esc(v.naam)}</option>`).join('');
+  const vakField = locked
+    ? `<div class="zq-fixed">${_esc(locked.naam)}${niv?` · ${niv}`:''}</div><input type="hidden" id="zq-vak" value="0">`
+    : `<label class="zq-lbl">Vak</label><select class="zq-sel" id="zq-vak" onchange="_zqFillDom()">${vakOpts}</select>`;
   ov.innerHTML=`<div class="zq-card">
     <button class="zq-x" onclick="closeZetQuiz()" aria-label="Sluiten">✕</button>
     <div class="zq-title">📌 Zet een oefenquiz klaar</div>
-    <div class="zq-sub">Kies een vak en onderwerp. De leerling ziet het meteen op de startpagina en kan de quiz direct maken — met een beloning als hij 'm afrondt.</div>
-    <label class="zq-lbl">Vak</label>
-    <select class="zq-sel" id="zq-vak" onchange="_zqFillDom()">${vakOpts}</select>
+    <div class="zq-sub">${locked?'Voor je klas ('+_esc(locked.naam)+'). ':'Kies een vak en onderwerp. '}De leerling ziet het meteen op de startpagina en kan de quiz direct maken — met een beloning als hij 'm afrondt.</div>
+    ${locked?'<label class="zq-lbl">Vak van je klas</label>':''}${vakField}
     <label class="zq-lbl">Onderwerp</label>
     <select class="zq-sel" id="zq-dom"></select>
     <button class="zq-btn" id="zq-go" onclick="_zqSet()">Zet klaar voor de klas →</button>
@@ -434,13 +443,15 @@ function openZetQuiz(){
   requestAnimationFrame(()=>ov.classList.add('on'));
 }
 function _zqFillDom(){
-  const vakken=getVK();const vi=+document.getElementById('zq-vak').value;const vak=vakken[vi]||vakken[0];
+  const vakken=_zqVakList.length?_zqVakList:((typeof getVK==='function')?getVK():[]);
+  const vi=+document.getElementById('zq-vak').value;const vak=vakken[vi]||vakken[0];
   const doms=(vak.domeinen||[]).filter(_hwHasQ);
   const sel=document.getElementById('zq-dom');
   sel.innerHTML=doms.length?doms.map(d=>`<option value="${d.id}">${_esc(d.naam)} · ${(d.nSv||(d.sv&&d.sv.length)||0)} vragen</option>`).join(''):'<option value="">Nog geen onderwerpen met vragen</option>';
 }
 function _zqSet(){
-  const vakken=getVK();const vi=+document.getElementById('zq-vak').value;const vak=vakken[vi]||vakken[0];
+  const vakken=_zqVakList.length?_zqVakList:((typeof getVK==='function')?getVK():[]);
+  const vi=+document.getElementById('zq-vak').value;const vak=vakken[vi]||vakken[0];
   const domId=document.getElementById('zq-dom').value; if(!domId)return;
   const dom=(vak.domeinen||[]).find(d=>d.id===domId); if(!dom)return;
   hwSetLocal(vak.naam, dom.naam, vak.id, dom.id);
