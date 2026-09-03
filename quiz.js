@@ -213,8 +213,8 @@ function toonV(){
   if(hasCtxNow){ctx.style.display='block';ctx.textContent=q.ctx;}
   else{ctx.style.display='none';}
   // figuur bij de vraag (echte CE-figuur, footer-vrij)
-  const figEl=document.getElementById('qfig');
-  if(figEl){if(hasFig){figEl.src='figuren/'+q.img;figEl.style.display='';}else{figEl.style.display='none';figEl.removeAttribute('src');}}
+  const figEl=document.getElementById('qfig'),figWrap=document.getElementById('qfig-wrap');
+  if(figEl){if(hasFig){figEl.src='figuren/'+q.img;if(figWrap)figWrap.style.display='';}else{if(figWrap)figWrap.style.display='none';figEl.removeAttribute('src');}}
 
   // vraagstelling
   document.getElementById('qq').textContent=q.v;
@@ -275,15 +275,30 @@ function toonV(){
 
     // Reset oud-area volledig voor elke nieuwe vraag
     document.getElementById('oud-area').style.display='block';
-    document.getElementById('oa-input').value='';
-    document.getElementById('oa-input').disabled=false;
+    const _oa=document.getElementById('oa-input');
+    _oa.value='';_oa.disabled=false;
     document.getElementById('nakijk-btn').style.display='block';
-    document.getElementById('nakijk-btn').disabled=false;
     document.getElementById('model-blok').style.display='none';
     document.getElementById('ma-text').textContent=q.u;
     // Heractiveer de beoordelingsknopppen voor elke nieuwe vraag
     document.querySelectorAll('.assess-btn').forEach(b=>{b.disabled=false;});
+    // Nakijken pas beschikbaar nadat er iets is ingevuld.
+    _wireOaGate();_syncNakijkGate();
   }
+}
+// Nakijk-knop gated op input: pas actief zodra de leerling iets heeft geschreven.
+function _syncNakijkGate(){
+  const oa=document.getElementById('oa-input'),btn=document.getElementById('nakijk-btn'),hint=document.getElementById('oa-hint');
+  if(!oa||!btn)return;
+  const has=oa.value.trim().length>0;
+  btn.disabled=!has;btn.classList.toggle('is-ready',has);
+  if(hint)hint.style.display=has?'none':'block';
+}
+let _oaGateWired=false;
+function _wireOaGate(){
+  if(_oaGateWired)return;_oaGateWired=true;
+  const oa=document.getElementById('oa-input');
+  if(oa)oa.addEventListener('input',_syncNakijkGate);
 }
 
 // ═══════ QUIZ KEYBOARD SHORTCUTS ═══════
@@ -443,9 +458,34 @@ function tijdOp(){
 }
 
 function nakijken(){
-  document.getElementById('oa-input').disabled=true;
+  const oa=document.getElementById('oa-input');
+  if(!oa.value.trim()){_syncNakijkGate();try{oa.focus();}catch(e){}return;} // pas nakijken na invullen
+  oa.disabled=true;
   document.getElementById('nakijk-btn').style.display='none';
+  const hint=document.getElementById('oa-hint');if(hint)hint.style.display='none';
   document.getElementById('model-blok').style.display='block';
+  // Rustig naar het modelantwoord scrollen zodat de leerling het meteen ziet.
+  try{document.getElementById('model-blok').scrollIntoView({behavior:'smooth',block:'nearest'});}catch(e){}
+}
+
+// Figuur vergroten (examen-figuren zijn vaak klein/gedetailleerd): tik opent een
+// rustige fullscreen-lightbox, nog eens tikken sluit hem.
+function openFigZoom(src){
+  if(!src)return;
+  let ov=document.getElementById('fig-zoom-ov');
+  if(!ov){
+    ov=document.createElement('div');ov.id='fig-zoom-ov';ov.className='fig-zoom-ov';
+    ov.innerHTML='<button class="fig-zoom-close" aria-label="Sluiten">✕</button><img class="fig-zoom-img" alt="Figuur bij de examenvraag">';
+    ov.addEventListener('click',closeFigZoom);
+    document.body.appendChild(ov);
+  }
+  ov.querySelector('.fig-zoom-img').src=src;
+  requestAnimationFrame(()=>ov.classList.add('on'));
+  try{haptic(8);}catch(e){}
+}
+function closeFigZoom(){
+  const ov=document.getElementById('fig-zoom-ov');
+  if(ov){ov.classList.remove('on');setTimeout(()=>{if(ov&&!ov.classList.contains('on'))ov.remove();},260);}
 }
 
 function beoordeel(pts){
@@ -612,8 +652,9 @@ function maybeSurge(){
   if(_surgeActive)return;
   if(Math.random()<(1/5)){
     _surgeActive=true;_surgeLeft=3;
+    // Eén duidelijke melding: de persistente surge-pill met afteller (geen aparte
+    // toast er bovenop meer, die overlapten elkaar).
     _showSurgeBadge();
-    showToast('🔥 XP SURGE! Volgende 3 vragen ×2 XP!','#f59e0b',2500);
     haptic([25,10,45,10,25]);
     playSound('combo');
   }
@@ -622,7 +663,7 @@ function _showSurgeBadge(){
   _removeSurgeBadge();
   const el=document.createElement('div');
   el.id='surge-badge-el';el.className='surge-badge';
-  el.innerHTML=`🔥 SURGE <span class="surge-count" id="surge-count">${_surgeLeft}</span> ×2 XP`;
+  el.innerHTML=`<span class="surge-fire">🔥</span><span class="surge-txt">XP&nbsp;Surge · dubbele&nbsp;XP</span><span class="surge-count" id="surge-count">${_surgeLeft}</span>`;
   document.body.appendChild(el);
 }
 function _updateSurgeBadge(){
@@ -1318,8 +1359,11 @@ function toonRes(){
   let _recordResult=null;
   try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
   try{recordPractice();}catch(e){}
-  // Munten belonen (basis + prestatie + perfect-bonus) + korte feedback
-  try{if(typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;
+  // Munten belonen (basis + prestatie + perfect-bonus) + korte feedback.
+  // Oud-examen bewust zonder munten/vlucht: daar houden we de gamificatie minimaal
+  // (dat hoort bij de snelle quiz). Alleen een rustige zelf-nakijk-samenvatting.
+  window._coinsWon=0;window._coinFlyN=0;
+  try{if(ST.mode==='snel'&&typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;
     // Muntenknop in de resultaat-topbar op het PRE-award aantal zetten...
     try{if(typeof renderCoinBtns==='function')renderCoinBtns();const _rn=document.getElementById('res-coin-n');if(_rn&&typeof getCoins==='function')_rn.textContent=Math.max(0,getCoins()-_cw);}catch(e){}
     // ...en de munten laten opvliegen naar de topbar (Duolingo-stijl). Dit
