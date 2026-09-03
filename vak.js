@@ -724,6 +724,9 @@ function openLeerdoelen(domId,_noHash){
     const m=(typeof ldMastery==='function')?ldMastery(v.id,ld):null;
     // Beheersingssignaal per leerdoel (gedeelde mastery-spine): kleurstip + label.
     const signal=m?`<div class="ld-signal" title="${m.hasData?Math.round(m.raw*100)+'% beste score':'Nog niet geoefend'}"><span class="ld-sig-dot" style="background:${m.color}"></span><span class="ld-sig-lbl" style="color:${m.hasData?m.color:'var(--mu)'}">${m.hasData?Math.round(m.score*100)+'% · '+m.label:'Nog niet geoefend'}</span></div>`:'';
+    // Veelgemaakte eigen fout binnen dit leerdoel (afleider-telemetrie, slice 3).
+    let misc='';
+    try{const mc=(typeof ldTopMisconception==='function')?ldTopMisconception(v.id,ld):null;if(mc&&mc.why)misc=`<div class="ld-misc"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg><span><b>Vaak fout:</b> ${_esc(mc.why)}</span></div>`;}catch(e){}
     const bar=(m&&m.hasData)?`<div class="ld-prog"><div class="ld-prog-bar" style="width:${Math.round(m.score*100)}%;background:${m.color}"></div></div>`:'';
     html+=`<div class="ld-card${s.gold?' gold':''}" onclick="openDomein('${ld.id}')">
       <div class="ld-card-head">
@@ -734,6 +737,7 @@ function openLeerdoelen(domId,_noHash){
         </div>
       </div>
       ${signal}
+      ${misc}
       <div class="ld-pills">${_ldPill(s.content,'Uitleg')}${_ldPill(s.vragen,s.nSv+' vragen')}${_ldPill(s.begrippen,s.nBeg+' begrippen')}${_ldPill(s.examen,'Oud-examen')}</div>
       ${bar}
     </div>`;

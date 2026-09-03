@@ -116,6 +116,27 @@ function logQuestion(vakId,domeinId,mode,vraagNr,isCorrect,responsMs){
   if(!vakId||!domeinId)return;
   try{ _qBatch.push({vakId,domeinId,isCorrect}); }catch(e){}
 }
+// ── Afleider-telemetrie (slice 3): welke fóute optie kiest de leerling? ──
+// De enabler voor de misconcept-radar (docent) en de "waarom is dit fout"-uitleg
+// (AI). De uitleg per afleider staat al in de content (q.uo[idx]); we hoeven dus
+// alleen te tellen wélke afleider bij een fout gekozen is, per vraag per leerdoel.
+function _qHash(s){s=String(s||'');let h=0;for(let i=0;i<s.length;i++)h=((h<<5)-h+s.charCodeAt(i))|0;return (h>>>0).toString(36);}
+function logAfleider(vakId,ldId,q,optIdx){
+  if(!vakId||!ldId||!q||optIdx==null)return;
+  try{
+    const A=JSON.parse(localStorage.getItem('slagio_afleiders')||'{}');
+    if(!A[vakId])A[vakId]={};
+    if(!A[vakId][ldId])A[vakId][ldId]={};
+    const m=A[vakId][ldId];
+    const key=_qHash(q.v);
+    if(!m[key])m[key]={v:String(q.v||'').slice(0,90),n:0,p:{}};
+    m[key].n++;
+    m[key].p[optIdx]=(m[key].p[optIdx]||0)+1;
+    const keys=Object.keys(m);           // bound: max 80 vragen per leerdoel
+    if(keys.length>80){let lo=keys[0];keys.forEach(k=>{if(m[k].n<m[lo].n)lo=k;});delete m[lo];}
+    localStorage.setItem('slagio_afleiders',JSON.stringify(A));
+  }catch(e){}
+}
 function _flushQBatch(){
   if(!_qBatch.length)return;
   const batch=[..._qBatch]; _qBatch=[];

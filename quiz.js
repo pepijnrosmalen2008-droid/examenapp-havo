@@ -363,6 +363,8 @@ function _kiesReveal(gekozen,correct,btns){
   ST.score+=ok?1:0;
   // Log per-vraag data voor adaptive engine
   try{const ms=ST._vraagStartMs?Date.now()-ST._vraagStartMs:null;logQuestion(ST.vak?.id,ST.domein?.id,ST.mode,ST.idx,ok,ms);}catch(e){}
+  // Afleider-telemetrie (slice 3): bij een fout onthouden wélke afleider gekozen is.
+  if(!ok&&ST.mode==='snel'){try{const q=ST.vragen[ST.idx];const chosenOrig=(ST.shuffleMap&&ST.shuffleMap[gekozen]!=null)?ST.shuffleMap[gekozen]:gekozen;if(typeof logAfleider==='function')logAfleider(ST.vak?.id,ST.domein?.id,q,chosenOrig);}catch(e){}}
   if(ok){ST.combo=(ST.combo||0)+1;playSound('correct');haptic([14,32,60]);}   // bevredigende oplopende tik
   else{ST.combo=0;playSound('wrong');haptic([90,45,90]);}                      // stevige fout-buzz
   // Voed de emotion engine (stemming loopt door de sessie; stuurt latere reacties).

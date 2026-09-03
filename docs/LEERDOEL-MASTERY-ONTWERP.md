@@ -118,7 +118,14 @@ bovenop Slagio's kennisstructuur i.p.v. ernaast.
   favoriete/examenvakken, met `focusStartLeerdoel()` die naar het zwakste leerdoel
   routet. Rendert via de `show()`-wrapper bij elke home-navigatie. (Dagmissie op
   leerdoel-niveau kan later meeliften op dezelfde spine.)
-- **Slice 3 — foutcategorie-tagging + fout-tellingen** (enabler voor radar & AI).
+- **Slice 3 — afleider-telemetrie + misconcept-aggregatie (KLAAR).** Geen
+  hand-tagging nodig: de uitleg per afleider staat al in de content (`q.uo[idx]`).
+  `logAfleider()` (`cloud.js`) telt bij elke fout wélke afleider gekozen is per
+  vraag per leerdoel (localStorage `slagio_afleiders`, begrensd). `afleiderStats()`
+  / `ldTopMisconception()` / `questionMisconception()` (`lb.js`) aggregeren dit en
+  leveren het AI-/uitleg-primitief. Zichtbare payoff: "Vaak fout: …"-regel op de
+  leerdoelkaart (de misconcept-radar in het klein, per leerling). Server-side
+  klas-aggregatie volgt in slice 4.
 - **Slice 4 — Slagio School cockpit.** Klas-aggregatie server-side; leerdoel-
   radar + toewijzen in het docentendashboard.
 - **Slice 5 — Slagio AI.** Context-payload → uitleg-bij-fout (3/dag gratis,

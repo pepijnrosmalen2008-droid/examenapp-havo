@@ -875,6 +875,39 @@ function weakestLeerdoelen(opts){
 // Convenience: het ene leerdoel dat de leerling nú het beste kan oppakken.
 function nextBestLeerdoel(vakIds){return weakestLeerdoelen({vakIds,limit:1})[0]||null;}
 
+// ── Afleider-/misconcept-aggregatie (slice 3) ──
+// Per leerdoel: bij welke vragen ging het het vaakst mis en welke afleider koos
+// de leerling dan. Voedt straks de klas-radar (docent) en de AI-context.
+function afleiderStats(vakId,ldId){
+  try{
+    const A=JSON.parse(localStorage.getItem('slagio_afleiders')||'{}');
+    const m=(A[vakId]||{})[ldId]||{};
+    return Object.values(m).map(e=>{
+      let topIdx=null,topN=0;
+      Object.keys(e.p||{}).forEach(k=>{if(e.p[k]>topN){topN=e.p[k];topIdx=+k;}});
+      return {v:e.v,n:e.n,topIdx,topN,picks:e.p};
+    }).sort((a,b)=>b.n-a.n);
+  }catch(e){return [];}
+}
+// De meest voorkomende eigen fout binnen een leerdoel, mét de afleider-uitleg
+// (uo) uit de live content. null als er nog te weinig fouten zijn.
+function ldTopMisconception(vakId,ld){
+  const id=(ld&&ld.id)||ld;
+  const stats=afleiderStats(vakId,id);
+  if(!stats.length||stats[0].n<2)return null; // pas tonen vanaf 2 keer fout
+  const top=stats[0];
+  let why='';
+  try{if(ld&&ld.sv&&top.topIdx!=null){const q=ld.sv.find(x=>x&&x.v&&x.v.slice(0,90)===top.v);if(q&&q.uo)why=q.uo[top.topIdx]||'';}}catch(e){}
+  return {v:top.v,n:top.n,why};
+}
+// AI-/uitleg-primitief: waarom klopt het gekozen antwoord niet? Pure functie over
+// de vraag; de bron van waarheid (uo/uh) staat al in de content.
+function questionMisconception(q,idx){
+  if(!q)return null;
+  return {chosen:(q.o&&q.o[idx]!=null)?q.o[idx]:'',correct:(q.o&&typeof q.c==='number')?q.o[q.c]:'',
+    why:(q.uo&&q.uo[idx])||'',onthoud:q.uh||''};
+}
+
 // Scope: favoriete vakken (de examenvakken van de leerling); anders alle.
 function _focusVakIds(){
   try{const fav=[...new Set(getFavs().map(k=>k.split('_')[0]))];if(fav.length)return fav;}catch(e){}
