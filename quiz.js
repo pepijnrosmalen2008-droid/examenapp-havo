@@ -492,14 +492,19 @@ function beoordeel(pts){
   ST.score+=pts;
   const userText=document.getElementById('oa-input').value||'(geen antwoord ingevuld)';
   ST.antwrd.push({pts,userText});
+  // Oud-examen is fors moeilijker dan de snelle quiz → royale XP per goed
+  // beoordeeld open antwoord. Wordt bij het resultaat opgeteld en uitgekeerd.
+  const oudXp=pts>=1?100:(pts>=0.5?50:0);
+  if(oudXp>0)ST.xpThisRound=(ST.xpThisRound||0)+oudXp;
   saveQuizDraft();
   document.querySelectorAll('.assess-btn').forEach(b=>b.disabled=true);
   const colors={1:'#4ADE80',0.5:'#FCD34D',0:'#F87171'};
+  const xpTag=oudXp>0?` <span class="fb-xp">+${oudXp} XP</span>`:'';
   const labels={1:'✓ Goed genoteerd',0.5:'~ Deels goed genoteerd',0:'✗ Fout genoteerd'};
   const fb=document.getElementById('qfb');
   fb.style.display='block';
   fb.className='qfb';
-  fb.innerHTML=`<div class="fbt" style="color:${colors[pts]}">${labels[pts]}</div>`;
+  fb.innerHTML=`<div class="fbt" style="color:${colors[pts]}">${labels[pts]}${xpTag}</div>`;
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
   nxt.textContent=ST.idx<ST.vragen.length-1?'Volgende vraag →':'Bekijk resultaat →';
@@ -1360,10 +1365,9 @@ function toonRes(){
   try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
   try{recordPractice();}catch(e){}
   // Munten belonen (basis + prestatie + perfect-bonus) + korte feedback.
-  // Oud-examen bewust zonder munten/vlucht: daar houden we de gamificatie minimaal
-  // (dat hoort bij de snelle quiz). Alleen een rustige zelf-nakijk-samenvatting.
+  // Geldt voor beide modi: XP en munten zijn platformbreed handig.
   window._coinsWon=0;window._coinFlyN=0;
-  try{if(ST.mode==='snel'&&typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;
+  try{if(typeof awardQuizCoins==='function'){const _cw=awardQuizCoins(pct,pct>=0.999);window._coinsWon=_cw;
     // Muntenknop in de resultaat-topbar op het PRE-award aantal zetten...
     try{if(typeof renderCoinBtns==='function')renderCoinBtns();const _rn=document.getElementById('res-coin-n');if(_rn&&typeof getCoins==='function')_rn.textContent=Math.max(0,getCoins()-_cw);}catch(e){}
     // ...en de munten laten opvliegen naar de topbar (Duolingo-stijl). Dit
@@ -1473,8 +1477,10 @@ function toonRes(){
     const xpEl=document.getElementById('res-xp-card');
     if(xpEl)xpEl.remove();
     const _rlEl0=document.getElementById('res-league');if(_rlEl0)_rlEl0.innerHTML='';
-    if(ST.mode==='snel'&&ST.xpThisRound>0){
-      if(isPerfect)ST.xpThisRound=Math.round(ST.xpThisRound*1.5);
+    if(ST.xpThisRound>0){
+      // Perfect-bonus: snelle quiz (isPerfect) óf oud-examen volledig goed.
+      const _oudPerfect=ST.mode==='oud'&&tot>=1&&sc>=tot;
+      if(isPerfect||_oudPerfect)ST.xpThisRound=Math.round(ST.xpThisRound*1.5);
       // Dubbele-XP-boost verzilveren: 24u-boost heeft voorrang, anders een los token.
       let _boosted=false;try{
         if(typeof xpBoostDayActive==='function'&&xpBoostDayActive()){ST.xpThisRound*=2;_boosted=true;}
