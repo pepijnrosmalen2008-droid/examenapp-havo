@@ -961,7 +961,7 @@ function renderProfileBadges(){
           const dateStr=isEarned?new Date(ach[b.id]).toLocaleDateString('nl-NL',{day:'numeric',month:'short',year:'numeric'}):'';
           const rarityLabel=RARITY_LABEL[b.rarity]||'';
           const tip=isEarned?`${b.tip} · ${dateStr} · ${rarityLabel}${isSelected?' · ✓ op avatar':''}`:b.tip+' · Nog niet behaald';
-          const clickAttr=isEarned?`onclick="selectFeaturedBadge('${b.id}')" style="cursor:pointer"`:'';
+          const clickAttr=isEarned?`onclick="selectFeaturedBadge('${b.id}');try{showToast(this.getAttribute('data-tip'),'#334155',3400)}catch(e){}" style="cursor:pointer"`:`onclick="try{showToast(this.getAttribute('data-tip'),'#334155',3400)}catch(e){}" style="cursor:pointer"`;
           // Feature 6: progress bar for unearned badges
           let progHtml='';
           if(!isEarned){

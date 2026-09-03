@@ -1749,8 +1749,8 @@ html.dark .qb{background:#2e3550}
 .badge.earned:hover{transform:scale(1.18) rotate(-5deg)}
 .badge.unearned{filter:grayscale(1);opacity:.22}
 .badge-tooltip{position:relative}
-.badge-tooltip::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--dk);color:var(--bg);font-size:11px;font-weight:600;padding:6px 11px;border-radius:8px;white-space:normal;width:max-content;max-width:min(210px,72vw);text-align:center;line-height:1.4;opacity:0;pointer-events:none;transition:.18s;font-family:var(--font);z-index:10;box-shadow:0 6px 20px rgba(0,0,0,.28)}
-.badge-tooltip:hover::after{opacity:1}
+/* Badge-info wordt bij een tik als gecentreerde toast getoond (zie quiz.js),
+   zodat de tekst nooit meer buiten het scherm valt. De oude hover-tooltip is uit. */
 /* Profile badge section */
 .prof-badges-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:12px;margin-top:4px}
 .prof-badge-cat{margin-bottom:20px}
@@ -4818,8 +4818,14 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   .bnav-fab{width:46px!important;height:46px!important;top:-6px!important}
 
   /* ── QUIZ: native app schermvullend gevoel ── */
-  .qtb{padding:8px 14px 0!important;gap:8px!important}
-  .qstp{padding:6px 12px!important;font-size:12px!important;border-radius:10px!important}
+  .qtb{padding:8px 12px 0!important;gap:6px!important}
+  .qstp{padding:6px 11px!important;font-size:12px!important;border-radius:10px!important;flex-shrink:0}
+  /* Ruimte vrijmaken zodat de Stop-knop altijd past: "Adaptief" wordt icoon-only,
+     de muntenknop en meta compacter. */
+  .adapt-lbl{display:none}
+  .adapt-pill{margin-left:0!important;padding:3px 6px!important}
+  .coin-btn-qtb{padding:5px 9px 5px 6px!important;font-size:12.5px!important}
+  .qmeta{display:none}
   .qpb{margin:6px 14px!important;height:9px!important;border-radius:99px!important}
   .qbody{padding:14px 14px 18px!important;border-radius:22px!important;margin:6px 10px 0!important}
   .qring{width:52px!important;height:52px!important;flex-shrink:0!important}
@@ -5037,6 +5043,15 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   #sc-race .race-pu-title{font-size:11px!important;margin-bottom:6px!important}
   #sc-race .race-pu-btn{padding:10px 6px!important;font-size:10px!important;border-radius:10px!important}
   #sc-race .nxt{padding:13px!important;font-size:15px!important;border-radius:15px!important;margin-top:0!important}
+  /* Race-resultaat: twee kolommen naast elkaar houden en compacter, zodat alles
+     op één scherm past. */
+  #sc-race-res .rb{padding:24px 16px 18px!important}
+  #sc-race-res .race-res-vs{gap:9px!important;flex-wrap:nowrap!important;margin:16px 0!important}
+  #sc-race-res .race-res-col{min-width:0!important;flex:1 1 0!important;padding:14px 8px!important;border-radius:18px!important}
+  #sc-race-res .race-res-col .res-emo{font-size:30px!important;margin-bottom:5px!important}
+  #sc-race-res .race-res-col .res-sc{font-size:26px!important;margin:4px 0 1px!important}
+  #sc-race-res .rbd{padding:13px 14px!important;margin-bottom:16px!important}
+  #sc-race-res .rb-row{font-size:13px!important}
 }
 /* ── PREMIUM AVATAR RING + FILTER ────────────────────────────── */
 /* Gelaagde ring: box-shadow band + draaiend lichtpunt + specular  */
