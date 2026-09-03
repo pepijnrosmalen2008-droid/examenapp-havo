@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Slagio (slagio.nl) is a free Dutch HAVO/VWO exam preparation PWA. It is a **static site with no build step** - all code is vanilla HTML/CSS/JS, deployed via GitHub Pages.
+Slagio (slagio.nl) is a free Dutch HAVO/VWO/VMBO exam preparation PWA. It is a **static site with no build step** - all code is vanilla HTML/CSS/JS, deployed via GitHub Pages.
+
+> **Product north-star / canon:** [`docs/SLAGIO-PRODUCT-VISION.md`](docs/SLAGIO-PRODUCT-VISION.md) — three layers of one product (Student, Slagio School, Slagio AI), all serving one question: *"what does this learner need now to get better?"* Read it before larger product decisions. The linchpin it names is **leerdoel-level mastery** as the shared data spine.
 
 - **Live URL**: https://slagio.nl (`/havo` and `/vwo` are SPA routes)
 - **Deployment**: `git push origin main` → auto-deploys via GitHub Pages
