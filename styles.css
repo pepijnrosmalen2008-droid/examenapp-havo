@@ -2093,6 +2093,21 @@ html.dark .qb{background:#2e3550}
 .klas-home-hw{border-color:rgba(var(--or-rgb),.45);background:linear-gradient(135deg,rgba(var(--or-rgb),.14),rgba(var(--or-rgb),.04));box-shadow:0 4px 18px rgba(var(--or-rgb),.14)}
 .klas-home-hw .klas-home-ico{filter:none;background:rgba(var(--or-rgb),.18)}
 .hw-badge{display:inline-block;margin-left:6px;font-size:10.5px;font-weight:800;letter-spacing:.2px;color:#fff;background:var(--or);border-radius:999px;padding:2px 8px;vertical-align:middle}
+/* Docent: "zet een oefenquiz klaar"-picker */
+.zq-ov{position:fixed;inset:0;z-index:9600;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(10,14,22,.6);opacity:0;transition:opacity .2s;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
+.zq-ov.on{opacity:1}
+.zq-card{position:relative;width:min(440px,96vw);background:var(--s);border:1px solid var(--bo);border-radius:20px;padding:24px 22px;box-shadow:0 30px 80px rgba(0,0,0,.4);transform:translateY(10px) scale(.98);transition:transform .22s cubic-bezier(.34,1.3,.64,1)}
+.zq-ov.on .zq-card{transform:none}
+.zq-x{position:absolute;top:13px;right:14px;width:34px;height:34px;border-radius:50%;border:1px solid var(--bo);background:var(--bg2,rgba(127,127,127,.08));color:var(--mu);font-size:15px;cursor:pointer}
+.zq-title{font-family:var(--font-head);font-size:20px;font-weight:900;letter-spacing:-.3px;color:var(--dk);margin-bottom:6px}
+.zq-sub{font-size:13px;color:var(--mu);line-height:1.55;margin-bottom:18px}
+.zq-lbl{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--mu);margin:0 0 6px}
+.zq-sel{width:100%;padding:12px 13px;border:1px solid var(--bo);border-radius:12px;background:var(--bg,var(--s));color:var(--dk);font-family:var(--font);font-size:14.5px;font-weight:600;outline:none;margin-bottom:16px;-webkit-appearance:none;appearance:none}
+.zq-sel:focus{border-color:rgba(var(--or-rgb),.5)}
+.zq-btn{width:100%;padding:14px;border:none;border-radius:14px;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;font-family:var(--font-head);font-weight:900;font-size:15px;cursor:pointer;box-shadow:0 6px 18px rgba(var(--or-rgb),.3);-webkit-tap-highlight-color:transparent;transition:transform .12s}
+.zq-btn:active{transform:scale(.98)}
+.zq-btn-2{margin-top:12px;background:linear-gradient(135deg,#22c55e,#16a34a);box-shadow:0 6px 18px rgba(34,197,94,.3)}
+.zq-done{margin-top:16px;padding:14px;border-radius:12px;background:rgba(34,197,94,.09);border:1px solid rgba(34,197,94,.25);font-size:14px;line-height:1.6;color:var(--dk);text-align:center}
 .klas-home-hw.hw-done{border-color:rgba(34,197,94,.4);background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(34,197,94,.03));cursor:default}
 .klas-home-hw.hw-done .klas-home-ico{background:rgba(34,197,94,.16)}
 .klas-home-ico{flex-shrink:0;width:42px;height:42px;border-radius:11px;background:rgba(var(--or-rgb),.12);display:flex;align-items:center;justify-content:center;font-size:21px}

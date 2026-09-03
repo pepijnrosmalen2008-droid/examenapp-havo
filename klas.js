@@ -65,7 +65,7 @@ function _klasStartHtml(){
     <button class="klas-btn klas-btn-primary" onclick="klasDoeMee()">Meedoen →</button>
     <div id="klas-join-err" class="klas-err"></div>
   </div>
-  <p class="klas-doc-link">Ben je docent en wil je een klas aanmaken? Dat regel je op <a href="/vakken/slagio-school.html">Slagio School</a>, daar open je het docentenportaal en maak je gratis een klas aan.</p>`;
+  <p class="klas-doc-link">Ben je docent en wil je een klas aanmaken? Dat regel je op <a href="/vakken/slagio-school.html">Slagio School</a>, daar open je het docentenportaal en maak je gratis een klas aan.<br><a onclick="openZetQuiz()" style="cursor:pointer;color:var(--or);font-weight:700">📌 Of zet nu snel een oefenquiz klaar →</a></p>`;
 }
 
 // ── Leerling sluit zich aan ───────────────────────────────────
@@ -244,6 +244,8 @@ function renderKlasHome(){
   try{
     if(location.search.indexOf('hwdemo=0')>=0){ if(getDemoHw())localStorage.removeItem('slagio_hw_demo'); }
     else if(location.search.indexOf('hwdemo=1')>=0 && !getDemoHw() && typeof getVK==='function' && getVK().length){ _setDemoHw(); }
+    // ?docent=1 → open de heldere "zet een quiz klaar"-picker (één keer).
+    if(location.search.indexOf('docent=1')>=0 && !_zqOpened && typeof getVK==='function' && getVK().length){ _zqOpened=true; setTimeout(function(){try{openZetQuiz();}catch(e){}},350); }
   }catch(e){}
   try{ renderKlasHuiswerk(); }catch(e){}
   const el = document.getElementById('klas-home');
@@ -382,5 +384,57 @@ function enableHuiswerkDemo(){
   return true;
 }
 function disableHuiswerkDemo(){try{localStorage.removeItem('slagio_hw_demo');}catch(e){}try{renderKlasHome();}catch(e){}}
+
+// ── DOCENT: zet een oefenquiz klaar (heldere picker, werkt ook zonder Supabase) ──
+// Schrijft het huiswerk lokaal (zelfde bridge als de leerling leest) én, als je in
+// een echte klas als docent zit, via de Supabase-RPC. Zo kan een docent op één
+// apparaat een echte quiz klaarzetten die de leerling meteen kan doen.
+function _hwHasQ(d){return ((d.nSv||(d.sv&&d.sv.length)||0)>0);}
+function hwSetLocal(vakNaam, domNaam){
+  const rec={vak:vakNaam,domein:domNaam,created_at:new Date().toISOString()};
+  try{localStorage.setItem('slagio_hw_demo',JSON.stringify(rec));}catch(e){}
+  try{const pre=vakNaam+'|'+domNaam+'|';
+    localStorage.setItem('slagio_hw_seen',JSON.stringify(_hwList('slagio_hw_seen').filter(k=>k.indexOf(pre)!==0)));
+    localStorage.setItem('slagio_hw_done',JSON.stringify(_hwList('slagio_hw_done').filter(k=>k.indexOf(pre)!==0)));
+  }catch(e){}
+}
+let _zqOpened=false;
+function openZetQuiz(){
+  const vakken=(typeof getVK==='function')?getVK():[];
+  if(!vakken.length){try{if(typeof showToast==='function')showToast('Kies eerst een niveau, dan kun je een quiz klaarzetten.','#f97316');}catch(e){}return;}
+  let ov=document.getElementById('zetquiz-ov');
+  if(!ov){ov=document.createElement('div');ov.id='zetquiz-ov';ov.className='zq-ov';ov.addEventListener('click',e=>{if(e.target===ov)closeZetQuiz();});document.body.appendChild(ov);}
+  const vakOpts=vakken.map((v,i)=>`<option value="${i}">${_esc(v.naam)}</option>`).join('');
+  ov.innerHTML=`<div class="zq-card">
+    <button class="zq-x" onclick="closeZetQuiz()" aria-label="Sluiten">✕</button>
+    <div class="zq-title">📌 Zet een oefenquiz klaar</div>
+    <div class="zq-sub">Kies een vak en onderwerp. De leerling ziet het meteen op de startpagina en kan de quiz direct maken — met een beloning als hij 'm afrondt.</div>
+    <label class="zq-lbl">Vak</label>
+    <select class="zq-sel" id="zq-vak" onchange="_zqFillDom()">${vakOpts}</select>
+    <label class="zq-lbl">Onderwerp</label>
+    <select class="zq-sel" id="zq-dom"></select>
+    <button class="zq-btn" id="zq-go" onclick="_zqSet()">Zet klaar voor de klas →</button>
+    <div class="zq-done" id="zq-done" hidden></div>
+  </div>`;
+  _zqFillDom();
+  requestAnimationFrame(()=>ov.classList.add('on'));
+}
+function _zqFillDom(){
+  const vakken=getVK();const vi=+document.getElementById('zq-vak').value;const vak=vakken[vi]||vakken[0];
+  const doms=(vak.domeinen||[]).filter(_hwHasQ);
+  const sel=document.getElementById('zq-dom');
+  sel.innerHTML=doms.length?doms.map(d=>`<option value="${d.id}">${_esc(d.naam)} · ${(d.nSv||(d.sv&&d.sv.length)||0)} vragen</option>`).join(''):'<option value="">Nog geen onderwerpen met vragen</option>';
+}
+function _zqSet(){
+  const vakken=getVK();const vi=+document.getElementById('zq-vak').value;const vak=vakken[vi]||vakken[0];
+  const domId=document.getElementById('zq-dom').value; if(!domId)return;
+  const dom=(vak.domeinen||[]).find(d=>d.id===domId); if(!dom)return;
+  hwSetLocal(vak.naam, dom.naam);
+  try{const k=getActiveKlas();if(k&&k.role==='docent'&&k.code){_klasRpc('klas_huiswerk_set',{p_code:k.code,p_vak:vak.naam,p_domein:dom.naam}).catch(function(){});}}catch(e){}
+  const d=document.getElementById('zq-done');
+  if(d){d.hidden=false;d.innerHTML=`✅ <b>${_esc(dom.naam)}</b> staat klaar voor de klas.<br><button class="zq-btn zq-btn-2" onclick="closeZetQuiz();try{show('sc-home')}catch(e){};try{renderKlasHome()}catch(e){}">Bekijk als leerling →</button>`;}
+  const go=document.getElementById('zq-go');if(go)go.style.display='none';
+}
+function closeZetQuiz(){const ov=document.getElementById('zetquiz-ov');if(ov){ov.classList.remove('on');setTimeout(function(){if(ov&&!ov.classList.contains('on'))ov.remove();},220);}}
 
 function _esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
