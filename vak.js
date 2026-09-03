@@ -146,22 +146,8 @@ function openVak(id,_noHash){
     document.querySelector('.exam-meta').insertAdjacentHTML('afterend',gpHtml);
   }
 
-  // Progress overview
-  const poGrid=document.getElementById('po-grid');
-  const poBox=document.getElementById('progress-overview');
-  poGrid.innerHTML='';
-  let hasAnyProgress=false;
-  ST.vak.domeinen.forEach(d=>{
-    const r=getDomeinBestPct(ST.vak.id,d.id);
-    if(r.hasData)hasAnyProgress=true;
-    const pctVal=Math.round(r.pct*100);
-    const scoreColor=pctVal>=70?'#4ADE80':pctVal>=50?'#FCD34D':'var(--mu)';
-    poGrid.innerHTML+=`<div class="po-item">
-      <div class="po-letter" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
-      <div class="po-info"><div class="po-name">${d.naam}</div><div class="po-score" style="color:${r.hasData?scoreColor:'var(--mu)'}">${r.hasData?pctVal+'% beste score':'Nog niet geoefend'}</div></div>
-    </div>`;
-  });
-  poBox.style.display=hasAnyProgress?'block':'none';
+  // "Jouw voortgang"-overzicht verwijderd: dezelfde beste-score-info staat al per
+  // domein in de domeinlijst hieronder, dus dit blok nam alleen ruimte in.
 
   const dl=document.getElementById('dlist');
   dl.innerHTML='';
