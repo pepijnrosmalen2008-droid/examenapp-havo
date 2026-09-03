@@ -455,7 +455,11 @@
 (function(){
   var s=document.getElementById('splash-screen');
   var standalone=window.matchMedia('(display-mode:standalone)').matches||!!navigator.standalone;
-  if(!standalone){s.remove();return;}
+  // Bij een vak-deeplink (landingspagina → app, bv. ?niveau=vmbo&vak=bi) tonen we
+  // niet de Slagio-logo-splash maar laten we het Vonk-laadscherm van de app het
+  // laden verzorgen. Zo landt de gebruiker met Vonk op de juiste vakpagina.
+  var vakDeepLink=/[?&]vak=/.test(location.search)||/^\/vakken\/(havo|vwo|vmbo)-/.test(location.pathname);
+  if(!standalone||vakDeepLink){s.remove();return;}
   setTimeout(function(){
     s.classList.add('spl-out');
     setTimeout(function(){s.remove();},480);

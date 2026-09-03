@@ -8,14 +8,14 @@ let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer
 // ═══════ HASH ROUTING ═══════
 const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-studieplan':'studieplan','sc-calc':'rekenmachine','sc-streak':'streaks','sc-zoek':'zoek'};
 // Vak ID → URL-slug (volledige naam)
-const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',be:'bedrijfseconomie',en:'engels',ec:'economie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',du:'duits',fr:'frans',la:'latijn',gr:'grieks',in:'informatica'};
+const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',be:'bedrijfseconomie',en:'engels',ec:'economie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',du:'duits',fr:'frans',la:'latijn',gr:'grieks',in:'informatica',wi:'wiskunde',na1:'natuur-scheikunde-1',na2:'natuur-scheikunde-2',ma:'maatschappijkunde'};
 const _SLUG_VAK=Object.fromEntries(Object.entries(_VAK_SLUG).map(([k,v])=>[v,k]));
 function _pushHash(h){if((location.hash||'#').slice(1)!==h)history.pushState(null,'',h?'#'+h:location.pathname+location.search);}
 function _routeFromHash(){
   const h=(location.hash||'').slice(1);
   if(!h){show('sc-home');return;}
   // vak: #havo-biologie of #vwo-wiskunde-a; domein: #havo-biologie-a
-  const vm=h.match(/^(havo|vwo)-(.+)$/);
+  const vm=h.match(/^(havo|vwo|vmbo)-(.+)$/);
   if(vm){
     const [,niv,rest]=vm;
     let id=_SLUG_VAK[rest],domLetter=null;
@@ -67,21 +67,25 @@ function _routeFromPath(){
 // popstate (terug/vooruit) én door de query-param deep-link in init.js, zodat
 // de in-app URL exact samenvalt met de statische SEO-pagina.
 function _routeVakkenPath(path){
-  const dm=path.match(/^\/vakken\/(havo|vwo)-(.+)-domein-([a-z])\.html$/);
-  const vm=!dm&&path.match(/^\/vakken\/(havo|vwo)-(.+)\.html$/);
+  const dm=path.match(/^\/vakken\/(havo|vwo|vmbo)-(.+)-domein-([a-z])\.html$/);
+  const vm=!dm&&path.match(/^\/vakken\/(havo|vwo|vmbo)-(.+)\.html$/);
   const m=dm||vm;
   if(!m)return false;
   const niv=m[1],id=_SLUG_VAK[m[2]],letter=dm?dm[3].toUpperCase():null;
   if(!id)return false;
+  // Vonk-laadscherm terwijl de niveau-data (en straks het vak) laadt; openVak
+  // verbergt hem weer zodra alles klaar is.
+  try{if(typeof vonkLoading==='function')vonkLoading('Vak laden…');}catch(e){}
   const go=()=>{
     if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
     const vak=getVK().find(v=>v.id===id);
-    if(!vak)return;
+    if(!vak){try{if(typeof vonkLoadingHide==='function')vonkLoadingHide();}catch(e){}return;}
     // Deze route opent het vak rechtstreeks (buiten chooseLevel() om), dus de
     // vaktegel-grid is nog niet (opnieuw) opgebouwd met de zojuist geladen data.
     // Zonder dit blijft #vakgrid leeg zodra de gebruiker terug naar Home gaat.
     if(typeof buildGrid==='function')try{buildGrid();}catch(e){}
     if(!ST.vak||ST.vak.id!==id)openVak(id,true);
+    else{try{if(typeof vonkLoadingHide==='function')vonkLoadingHide();}catch(e){}} // al op dit vak: laadscherm weg
     if(letter){if(vak.domeinen.some(d=>d.id===letter))openDomein(letter,true);}
     else show('sc-detail',true); // vak-URL zonder domein → toon (of blijf op) detail
   };

@@ -509,7 +509,7 @@ window.addEventListener('load',()=>{
   // Echte vak-/domein-URL (/vakken/<niveau>-<vak>[-domein-<x>].html): een
   // terugkerende gebruiker die zo'n statische SEO-pagina boot in de SPA laadt,
   // landt direct op het juiste in-app scherm (met oefeningen en samenvatting).
-  if(/^\/vakken\/(havo|vwo)-/.test(_path)&&typeof _routeVakkenPath==='function'){
+  if(/^\/vakken\/(havo|vwo|vmbo)-/.test(_path)&&typeof _routeVakkenPath==='function'){
     setTimeout(()=>_routeVakkenPath(_path),80);
     return;
   }
