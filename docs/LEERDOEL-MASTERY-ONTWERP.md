@@ -126,8 +126,14 @@ bovenop Slagio's kennisstructuur i.p.v. ernaast.
   leveren het AI-/uitleg-primitief. Zichtbare payoff: "Vaak fout: …"-regel op de
   leerdoelkaart (de misconcept-radar in het klein, per leerling). Server-side
   klas-aggregatie volgt in slice 4.
-- **Slice 4 — Slagio School cockpit.** Klas-aggregatie server-side; leerdoel-
-  radar + toewijzen in het docentendashboard.
+- **Slice 4 — Slagio School: leerdoel-radar (KLAAR, zonder nieuwe DB-infra).**
+  Leerlingen sturen na een quiz een `mastery_snapshot`-event (`emitMasterySnapshot`
+  in `lb.js`) met per-leerdoel beheersing + top-misconceptie, getagd met `klas_id`.
+  `docent.html` leest die events direct (zoals `admin.html`) en aggregeert per
+  leerdoel via `_schoolAggregate` → een "Leerdoel-radar" (beheersing, signaal,
+  "X onder 55%", "Vaak fout: …"). Demo-modus toont voorbeelddata (testbaar zónder
+  Supabase). Nog te doen (vergt Supabase-RPC): per-leerdoel toewijzen en een
+  server-side rollup i.p.v. events client-side aggregeren bij grote klassen.
 - **Slice 5 — Slagio AI.** Context-payload → uitleg-bij-fout (3/dag gratis,
   Slagio+ limiet), "leg dit onderwerp uit" → Test me, hint-eerst-pedagogiek.
 

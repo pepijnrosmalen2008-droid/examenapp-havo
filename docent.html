@@ -170,6 +170,9 @@ select.in{appearance:none;-webkit-appearance:none;background-image:url("data:ima
 .dom-info{flex:1;min-width:0}
 .dom-naam{font-size:13.5px;font-weight:700;letter-spacing:-.1px}
 .dom-meta{font-size:11.5px;color:var(--mu);margin-top:1px}
+#ld-radar .dom-row{align-items:flex-start}
+.ld-radar-mis{margin-top:6px;padding:7px 10px;border-radius:9px;background:rgba(240,140,40,.09);border:1px solid rgba(240,140,40,.22);font-size:12px;line-height:1.45;color:var(--dk)}
+.ld-radar-mis b{color:#e07a12;font-weight:800}
 .dom-pct{font-weight:800;font-size:15px;flex-shrink:0}
 .tbl-wrap{overflow-x:auto;margin:0 -3px}
 table{width:100%;border-collapse:collapse;font-size:13.5px}
@@ -318,6 +321,12 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
           <div class="dom" id="dom"></div>
         </div>
       </div>
+    </div>
+
+    <div class="card glass">
+      <h2>Leerdoel-radar</h2>
+      <div class="sub">Zoom in van domein naar leerdoel: per leerdoel de beheersing én de fout die je klas het vaakst maakt.</div>
+      <div class="dom" id="ld-radar"></div>
     </div>
 
     <div class="footer">Alleen voornamen en klasgemiddelden. Slagio · <a href="/vakken/slagio-school.html">Over Slagio School</a></div>
@@ -535,6 +544,51 @@ function render(d){
       <td>${growHtml(s.groei)}</td>
       <td class="num" style="${s.laatst_actief_dagen>=7||s.laatst_actief_dagen==null?'color:var(--red);font-weight:600':''}">${agoTxt(s.laatst_actief_dagen)}</td></tr>`;
   }).join(''):'<tr><td colspan="5" class="empty">Nog geen leerlingen actief.</td></tr>';
+  try{renderLeerdoelRadar(d);}catch(e){}
+}
+
+// ══ LEERDOEL-RADAR ══
+// Leest de per-leerling mastery_snapshots uit events (leerlingen sturen die na een
+// quiz) en aggregeert ze per leerdoel. Geen aparte tabel/RPC nodig - dezelfde
+// events-tabel die het analytics-dashboard ook leest. Demo-modus toont voorbeelddata.
+function _schoolAggregate(rows){
+  const latest={};
+  rows.forEach(r=>{const id=(r.meta&&(r.meta.did||r.naam))||'?';if(!latest[id])latest[id]=r;}); // events zijn al nieuw→oud gesorteerd
+  const byLd={};
+  Object.values(latest).forEach(r=>{
+    (r.meta.lds||[]).forEach(l=>{const k=l.i;if(!byLd[k])byLd[k]={naam:l.n||k,scores:[],mis:{}};byLd[k].scores.push((l.s||0)/100);});
+    (r.meta.mis||[]).forEach(mm=>{if(!byLd[mm.i])return;byLd[mm.i].mis[mm.w]=(byLd[mm.i].mis[mm.w]||0)+(mm.n||1);});
+  });
+  return Object.values(byLd).map(e=>{
+    const gem=e.scores.length?e.scores.reduce((a,b)=>a+b,0)/e.scores.length:0;
+    let topMis=null,topN=0;Object.keys(e.mis).forEach(w=>{if(e.mis[w]>topN){topN=e.mis[w];topMis=w;}});
+    return {naam:e.naam,gem,under55:e.scores.filter(s=>s<0.55).length,students:e.scores.length,topMis};
+  });
+}
+async function renderLeerdoelRadar(d){
+  const wrap=document.getElementById('ld-radar');if(!wrap)return;
+  let rows=null;
+  if(_demo){rows=d.leerdoelen||[];}
+  else{
+    const kid=d.klas&&d.klas.id;
+    if(!kid){wrap.innerHTML='<p class="empty">Leerdoel-radar activeert zodra je leerlingen leerdoelen oefenen.</p>';return;}
+    wrap.innerHTML='<p class="empty">Leerdoel-data laden…</p>';
+    try{
+      const {data,error}=await SB.from('events').select('naam,meta,created_at').eq('event_type','mastery_snapshot').order('created_at',{ascending:false}).limit(4000);
+      if(error)throw error;
+      rows=_schoolAggregate((data||[]).filter(r=>r.meta&&r.meta.klas_id===kid));
+    }catch(e){wrap.innerHTML='<p class="empty">Kon leerdoel-data niet laden.</p>';return;}
+  }
+  if(!rows||!rows.length){wrap.innerHTML='<p class="empty">Nog geen leerdoel-data. Zodra leerlingen oefenen zie je hier per leerdoel de beheersing en de fout die de klas het vaakst maakt.</p>';return;}
+  rows.sort((a,b)=>a.gem-b.gem);
+  wrap.innerHTML=rows.map(r=>{
+    const dc=r.gem>=0.7?'dg':r.gem>=0.5?'da':'dr';
+    const mis=r.topMis?`<div class="ld-radar-mis"><b>Vaak fout:</b> ${esc(r.topMis)}</div>`:'';
+    return `<div class="dom-row"><span class="dot ${dc}"></span>
+      <div class="dom-info"><div class="dom-naam">${esc(r.naam)}</div><div class="dom-meta">${r.under55||0} onder 55%${r.students?` · ${r.students} leerling${r.students===1?'':'en'}`:''}</div>${mis}</div>
+      <div class="dom-pct num" style="color:${pctCol(r.gem)}">${Math.round(r.gem*100)}%</div>
+    </div>`;
+  }).join('');
 }
 
 async function assign(btn,vak,domein){
@@ -564,7 +618,15 @@ function loadDemo(){
     {vak:'Wiskunde A',domein:'Algebra',gem:.82,zwak:2},
     {vak:'Wiskunde A',domein:'Formules',gem:.88,zwak:1}
   ];
-  render({klas:{naam:'4 HAVO Wiskunde A',niveau:'havo',vak:'Wiskunde A',code:'DEMO',leden:namen.length},leerlingen:ll,domeinen:doms});
+  const leerdoelen=[
+    {naam:'Normale verdeling aflezen',gem:.38,under55:19,students:27,topMis:'Verwart het gemiddelde met de standaardafwijking bij het aflezen van de grafiek.'},
+    {naam:'Kansboom opstellen',gem:.44,under55:16,students:26,topMis:'Telt de takken op i.p.v. de kansen te vermenigvuldigen.'},
+    {naam:'Somregel vs. productregel',gem:.52,under55:13,students:27,topMis:'Gebruikt de somregel waar de gebeurtenissen juist afhankelijk zijn.'},
+    {naam:'Afgeleide van een machtsfunctie',gem:.63,under55:9,students:25,topMis:'Vergeet de exponent als factor mee naar voren te halen.'},
+    {naam:'Exponentiële groeifactor',gem:.71,under55:6,students:26,topMis:'Rekent met het groeipercentage i.p.v. de groeifactor (1+p).'},
+    {naam:'Herleiden met machten',gem:.85,under55:2,students:27,topMis:null}
+  ];
+  render({klas:{naam:'4 HAVO Wiskunde A',niveau:'havo',vak:'Wiskunde A',code:'DEMO',leden:namen.length},leerlingen:ll,domeinen:doms,leerdoelen});
 }
 
 /* ══ BOOT ══ */

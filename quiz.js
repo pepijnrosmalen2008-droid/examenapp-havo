@@ -1366,6 +1366,8 @@ function toonRes(){
   let _recordResult=null;
   try{_recordResult=saveProgress(ST.vak.id,ST.domein.id,ST.mode,sc,tot);}catch(e){}
   try{recordPractice();}catch(e){}
+  // Docent-snapshot (slice 4): stuur de leerdoel-beheersing naar het klas-dashboard.
+  try{if(typeof emitMasterySnapshot==='function')emitMasterySnapshot(ST.vak.id);}catch(e){}
   // Munten belonen (basis + prestatie + perfect-bonus) + korte feedback.
   // Geldt voor beide modi: XP en munten zijn platformbreed handig.
   window._coinsWon=0;window._coinFlyN=0;

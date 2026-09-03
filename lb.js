@@ -907,6 +907,30 @@ function questionMisconception(q,idx){
   return {chosen:(q.o&&q.o[idx]!=null)?q.o[idx]:'',correct:(q.o&&typeof q.c==='number')?q.o[q.c]:'',
     why:(q.uo&&q.uo[idx])||'',onthoud:q.uh||''};
 }
+// Snapshot van de leerdoel-beheersing naar de docent (slice 4). Alleen als de
+// leerling in een klas zit; gaat via de bestaande events-tabel (geen nieuwe RPC/
+// tabel), zodat het docentendashboard (docent.html) het per klas kan aggregeren.
+function emitMasterySnapshot(vakId){
+  try{
+    if(typeof getActiveKlas!=='function')return;
+    const k=getActiveKlas();if(!k||!k.id||k.role==='docent')return;
+    const roll=vakMasteryRollup(vakId);if(!roll||!roll.hasData)return;
+    const vak=getVK().find(v=>v.id===vakId);
+    const lds=[],mis=[];
+    (roll.doms||[]).forEach(dm=>{(dm.items||[]).forEach(m=>{
+      if(!m.hasData)return;
+      lds.push({v:vakId,d:dm.domId,i:m.ldId,n:m.naam,s:Math.round(m.score*100),b:m.band});
+      try{
+        const dom=vak&&vak.domeinen.find(x=>x.id===dm.domId);
+        const ld=dom&&dom.leerdoelen&&dom.leerdoelen.find(x=>x.id===m.ldId);
+        const mc=ld?ldTopMisconception(vakId,ld):null;
+        if(mc&&mc.why)mis.push({i:m.ldId,w:mc.why,n:mc.n});
+      }catch(e){}
+    });});
+    if(!lds.length)return;
+    if(typeof trackEvent==='function')trackEvent('mastery_snapshot',{klas_id:k.id,vak_id:vakId,niveau:(typeof APP_LEVEL!=='undefined'?APP_LEVEL:null),lds,mis});
+  }catch(e){}
+}
 
 // Scope: favoriete vakken (de examenvakken van de leerling); anders alle.
 function _focusVakIds(){
