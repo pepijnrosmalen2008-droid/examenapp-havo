@@ -2090,8 +2090,11 @@ html.dark .qb{background:#2e3550}
 .klas-empty{color:var(--mu);font-size:13.5px;text-align:center;padding:24px 16px;background:var(--s);border:1px dashed var(--bo);border-radius:12px;line-height:1.6}
 .klas-home-card{display:flex;align-items:center;gap:13px;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:14px 16px;cursor:pointer;box-shadow:var(--rd-shadow-1);transition:transform .18s var(--ease-out),border-color .18s;margin:10px 0}
 .klas-home-card:hover{transform:translateY(-1px);border-color:rgba(var(--or-rgb),.4)}
-.klas-home-hw{border-color:rgba(var(--or-rgb),.35);background:linear-gradient(135deg,rgba(var(--or-rgb),.10),rgba(var(--or-rgb),.03))}
-.klas-home-hw .klas-home-ico{filter:none}
+.klas-home-hw{border-color:rgba(var(--or-rgb),.45);background:linear-gradient(135deg,rgba(var(--or-rgb),.14),rgba(var(--or-rgb),.04));box-shadow:0 4px 18px rgba(var(--or-rgb),.14)}
+.klas-home-hw .klas-home-ico{filter:none;background:rgba(var(--or-rgb),.18)}
+.hw-badge{display:inline-block;margin-left:6px;font-size:10.5px;font-weight:800;letter-spacing:.2px;color:#fff;background:var(--or);border-radius:999px;padding:2px 8px;vertical-align:middle}
+.klas-home-hw.hw-done{border-color:rgba(34,197,94,.4);background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(34,197,94,.03));cursor:default}
+.klas-home-hw.hw-done .klas-home-ico{background:rgba(34,197,94,.16)}
 .klas-home-ico{flex-shrink:0;width:42px;height:42px;border-radius:11px;background:rgba(var(--or-rgb),.12);display:flex;align-items:center;justify-content:center;font-size:21px}
 .klas-home-txt{flex:1;min-width:0}
 .klas-home-t{font-weight:700;font-size:15px;color:var(--dk);line-height:1.2}

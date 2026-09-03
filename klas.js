@@ -263,27 +263,64 @@ function renderKlasHome(){
 }
 
 // ── Huiswerk van de docent (één-klik oefenset) op de home ────────────
+// Cache van het actuele huiswerk (resolved naar vak/domein-id's), zodat de quiz
+// bij afronding synchroon kan checken of een opdracht is voltooid → beloning.
+let _klasHw = [];
+function _hwList(key){try{return JSON.parse(localStorage.getItem(key)||'[]');}catch(e){return [];}}
 async function renderKlasHuiswerk(){
   const el = document.getElementById('klas-huiswerk-home');
   if(!el) return;
   const k = getActiveKlas();
-  if(!k || !k.id || _klasEnabled===false){ el.innerHTML=''; return; }
+  if(!k || !k.id || _klasEnabled===false){ el.innerHTML=''; _klasHw=[]; return; }
   try{
     const rows = await _klasRpc('klas_huiswerk_get', { p_klas_id:k.id });
-    if(!rows || !rows.length){ el.innerHTML=''; return; }
-    const hw = Array.isArray(rows)?rows[0]:rows;
-    let act = 'openKlas()';
+    const list = Array.isArray(rows)?rows:(rows?[rows]:[]);
+    if(!list.length){ el.innerHTML=''; _klasHw=[]; return; }
     const vakken = (typeof getVK==='function')?getVK():[];
-    const vak = vakken.find(v=>v.naam===hw.vak) || vakken.find(v=>v.id===k.vakId);
-    if(vak){
-      const dom = (vak.domeinen||[]).find(d=>d.naam===hw.domein);
-      act = (dom && typeof goToDomein==='function') ? `goToDomein('${vak.id}','${dom.id}','snel')` : `openVak('${vak.id}')`;
+    const done=_hwList('slagio_hw_done'), seen=_hwList('slagio_hw_seen');
+    _klasHw = list.map(hw=>{
+      const key=(hw.vak||'')+'|'+(hw.domein||'')+'|'+(hw.created_at||'');
+      let vakId=null,domId=null,act='openKlas()';
+      const vak = vakken.find(v=>v.naam===hw.vak) || vakken.find(v=>v.id===k.vakId);
+      if(vak){ vakId=vak.id; const dom=(vak.domeinen||[]).find(d=>d.naam===hw.domein);
+        if(dom && typeof goToDomein==='function'){ domId=dom.id; act=`goToDomein('${vak.id}','${dom.id}','snel')`; }
+        else act=`openVak('${vak.id}')`; }
+      return {vak:hw.vak, domein:hw.domein, key, vakId, domId, act, isDone:done.includes(key)};
+    });
+    // Nieuw huiswerk? → duidelijke, eenmalige melding.
+    const fresh=_klasHw.filter(h=>!seen.includes(h.key));
+    if(fresh.length){
+      fresh.forEach(h=>seen.push(h.key));
+      try{localStorage.setItem('slagio_hw_seen',JSON.stringify(seen.slice(-60)));}catch(e){}
+      try{ if(typeof showToast==='function') showToast('📌 Nieuw huiswerk van je docent!','#f59e0b',3400); }catch(e){}
+      try{ if(typeof haptic==='function') haptic([20,45,20,45,20]); }catch(e){}
     }
-    el.innerHTML = `<div class="klas-home-card klas-home-hw" onclick="${act}" role="button" tabindex="0">
-      <div class="klas-home-ico">📌</div>
-      <div class="klas-home-txt"><div class="klas-home-t">Huiswerk van je docent</div><div class="klas-home-s">Oefen ${_esc(hw.domein||hw.vak||'de opgegeven stof')} →</div></div>
-      <div class="klas-home-arr">→</div></div>`;
-  }catch(e){ el.innerHTML=''; }
+    const open=_klasHw.filter(h=>!h.isDone);
+    const show=open[0]||_klasHw[0];
+    if(show.isDone){
+      el.innerHTML=`<div class="klas-home-card klas-home-hw hw-done"><div class="klas-home-ico">✅</div><div class="klas-home-txt"><div class="klas-home-t">Huiswerk gedaan — top!</div><div class="klas-home-s">${_esc(show.domein||show.vak||'')} afgerond en beloond</div></div></div>`;
+    }else{
+      el.innerHTML=`<div class="klas-home-card klas-home-hw" onclick="${show.act}" role="button" tabindex="0">
+        <div class="klas-home-ico">📌</div>
+        <div class="klas-home-txt"><div class="klas-home-t">Huiswerk van je docent <span class="hw-badge">+ beloning</span></div><div class="klas-home-s">Oefen ${_esc(show.domein||show.vak||'de opgegeven stof')} → verdien extra XP én een kist</div></div>
+        <div class="klas-home-arr">→</div></div>`;
+    }
+  }catch(e){ el.innerHTML=''; _klasHw=[]; }
+}
+// Aangeroepen door de quiz bij afronding: is er een openstaand huiswerk dat met
+// deze oefening is voltooid? Zo ja: markeer als gedaan en geef het terug (de quiz
+// kent de beloning toe). Rond hooguit één opdracht per keer af.
+function hwOnQuizDone(vakId, domId){
+  try{
+    if(!_klasHw || !_klasHw.length) return null;
+    const done=_hwList('slagio_hw_done');
+    const m=_klasHw.find(h=>!h.isDone && !done.includes(h.key) && h.vakId===vakId && (h.domId==null || h.domId===domId));
+    if(!m) return null;
+    done.push(m.key); try{localStorage.setItem('slagio_hw_done',JSON.stringify(done.slice(-120)));}catch(e){}
+    m.isDone=true;
+    try{ if(typeof trackEvent==='function') trackEvent('huiswerk_done',{vak:m.vak,domein:m.domein}); }catch(e){}
+    return {onderwerp:m.domein||m.vak||'het huiswerk'};
+  }catch(e){ return null; }
 }
 
 function _esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }

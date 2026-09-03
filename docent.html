@@ -165,7 +165,37 @@ select.in{appearance:none;-webkit-appearance:none;background-image:url("data:ima
 .grid{display:grid;grid-template-columns:1.55fr 1fr;gap:14px;align-items:start}
 .col{display:flex;flex-direction:column;gap:14px}
 .risk{display:flex;flex-direction:column;gap:8px}
-.risk-row{display:flex;align-items:center;gap:12px;padding:12px 13px;border-radius:14px;background:var(--soft);border:1px solid var(--stroke)}
+.risk-row{display:flex;align-items:center;gap:12px;padding:12px 13px;border-radius:14px;background:var(--soft);border:1px solid var(--stroke);cursor:pointer;transition:border-color .15s,transform .12s}
+.risk-row:hover{border-color:rgba(var(--or-rgb),.4);transform:translateY(-1px)}
+.ro-row{cursor:pointer;transition:background .12s}
+.ro-row:hover td{background:var(--soft)}
+/* per-leerling drill-down modal */
+.sd-ov{position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(10,14,22,.55);opacity:0;transition:opacity .2s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.sd-ov.on{opacity:1}
+.sd-card{position:relative;width:min(560px,96vw);max-height:88vh;overflow-y:auto;background:var(--bg-a);border:1px solid var(--glass-bd);border-radius:20px;padding:22px;box-shadow:0 30px 80px rgba(0,0,0,.35);transform:translateY(10px) scale(.98);transition:transform .22s cubic-bezier(.34,1.3,.64,1)}
+.sd-ov.on .sd-card{transform:none}
+.sd-x{position:absolute;top:13px;right:14px;width:34px;height:34px;border-radius:50%;border:1px solid var(--stroke);background:var(--soft);color:var(--mu);font-size:15px;cursor:pointer}
+.sd-head{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
+.sd-name{font-family:var(--font-head,inherit);font-size:21px;font-weight:800;letter-spacing:-.3px}
+.sd-sub{font-size:12.5px;color:var(--mu);margin:3px 0 16px}
+.sd-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:18px}
+.sd-stat{border:1px solid var(--stroke);background:var(--soft);border-radius:13px;padding:12px 8px;text-align:center}
+.sd-stat-v{font-size:19px;font-weight:800;line-height:1;letter-spacing:-.5px}
+.sd-stat-l{font-size:10.5px;font-weight:700;color:var(--mu);margin-top:6px}
+.sd-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.sd-chip{font-size:11.5px;font-weight:700;border-radius:999px;padding:5px 11px;border:1px solid var(--stroke)}
+.sd-chip-g{color:var(--green);background:rgba(43,165,91,.08)}
+.sd-chip-r{color:var(--red);background:rgba(220,60,60,.08)}
+.sd-h{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--mu);margin:0 0 10px}
+.sd-lds{display:flex;flex-direction:column;gap:11px}
+.sd-ld-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;font-weight:600}
+.sd-ld-nm small{color:var(--mu);font-weight:500}
+.sd-bar{height:7px;border-radius:5px;background:var(--soft);overflow:hidden;margin-top:5px}
+.sd-bar i{display:block;height:100%;border-radius:5px}
+.sd-mis{margin-top:6px;font-size:12px;line-height:1.45;color:var(--dk);background:rgba(240,140,40,.09);border:1px solid rgba(240,140,40,.2);border-radius:8px;padding:6px 9px}
+.sd-mis b{color:#e07a12}
+.sd-note{font-size:13px;color:var(--mu);padding:14px;background:var(--soft);border-radius:12px;text-align:center}
+@media(max-width:520px){.sd-stats{grid-template-columns:repeat(2,1fr)}}
 .risk-info{flex:1;min-width:0}
 .risk-naam{font-weight:800;font-size:14px;letter-spacing:-.1px}
 .risk-reason{font-size:12px;color:var(--mu);margin-top:1px}
@@ -518,6 +548,7 @@ function refresh(){ if(_demo){loadDemo();return;} if(_last)connectCode(_last); }
 
 function render(d){
   showScreen('dash');
+  window._dashD=d; // bewaren voor de per-leerling drill-down
   document.getElementById('demo-note').classList.toggle('hidden',!_demo);
   const k=d.klas;
   document.getElementById('klas-pill').innerHTML=`${esc(k.naam)} · <b>${esc(k.code||'')}</b>`;
@@ -538,7 +569,7 @@ function render(d){
   } else adv.classList.add('hidden');
   const risk=ll.filter(s=>s.status!=='g').sort((a,b)=>a.score-b.score).slice(0,8);
   document.getElementById('risk').innerHTML=risk.length?risk.map(s=>`
-    <div class="risk-row"><span class="dot d${s.status}"></span>
+    <div class="risk-row" onclick="openStudent('${esc(s.naam)}')" role="button" tabindex="0"><span class="dot d${s.status}"></span>
       <div class="risk-info"><div class="risk-naam">${esc(s.naam)}</div><div class="risk-reason">${esc(s.reason)}</div></div>
       <div class="risk-metric"><div class="risk-gem num" style="color:${pctCol(s.gem||0)}">${s.gem!=null?Math.round(s.gem*100)+'%':'-'}</div>${growHtml(s.groei)}</div>
     </div>`).join(''):'<p class="empty">Geen risicoleerlingen - de hele klas zit op koers.</p>';
@@ -547,7 +578,7 @@ function render(d){
     return `<div class="dom-row"><span class="dot ${dc}"></span>
       <div class="dom-info"><div class="dom-naam">${esc(dm.domein)}</div><div class="dom-meta">${esc(dm.vak)} · ${dm.zwak||0} onder 55%</div></div>
       <div class="dom-pct num" style="color:${pctCol(dm.gem)}">${Math.round(dm.gem*100)}%</div>
-      <button class="btn btn-p btn-sm" onclick="assign(this,'${esc(dm.vak)}','${esc(dm.domein)}')">Zet klaar</button>
+      <button class="btn btn-p btn-sm" onclick="assign(this,'${esc(dm.vak)}','${esc(dm.domein)}')">Oefentoets →</button>
     </div>`;
   }).join(''):'<p class="empty">Nog geen oefendata.</p>';
   const rr=ll.slice().sort((a,b)=>a.score-b.score);
@@ -555,7 +586,7 @@ function render(d){
     const chip=s.status==='g'?'ch-g':s.status==='a'?'ch-a':'ch-r';
     const dotc=s.status==='g'?'dg':s.status==='a'?'da':'dr';
     const lbl=s.status==='g'?'Klaar':s.status==='a'?'Let op':'Risico';
-    return `<tr><td style="font-weight:700">${esc(s.naam)}</td>
+    return `<tr class="ro-row" onclick="openStudent('${esc(s.naam)}')"><td style="font-weight:700">${esc(s.naam)}</td>
       <td><span class="chip ${chip}"><span class="dot ${dotc}"></span>${lbl}</span></td>
       <td class="num" style="font-weight:700;color:${pctCol(s.gem||0)}">${s.gem!=null?Math.round(s.gem*100)+'%':'-'}</td>
       <td>${growHtml(s.groei)}</td>
@@ -598,12 +629,15 @@ async function renderLeerdoelRadar(d){
   }
   if(!rows||!rows.length){wrap.innerHTML='<p class="empty">Nog geen leerdoel-data. Zodra leerlingen oefenen zie je hier per leerdoel de beheersing en de fout die de klas het vaakst maakt.</p>';return;}
   rows.sort((a,b)=>a.gem-b.gem);
+  const vaknaam=(d.klas&&d.klas.vak)||'';
   wrap.innerHTML=rows.map(r=>{
     const dc=r.gem>=0.7?'dg':r.gem>=0.5?'da':'dr';
     const mis=r.topMis?`<div class="ld-radar-mis"><b>Vaak fout:</b> ${esc(r.topMis)}</div>`:'';
+    // "Oefentoets klaarzetten" op het bovenliggende domein (r.dom aanwezig in de demo).
+    const act=r.dom?`<button class="btn btn-p btn-sm" onclick="assign(this,'${esc(vaknaam)}','${esc(r.dom)}')">Oefentoets →</button>`:'';
     return `<div class="dom-row"><span class="dot ${dc}"></span>
       <div class="dom-info"><div class="dom-naam">${esc(r.naam)}</div><div class="dom-meta">${r.under55||0} onder 55%${r.students?` · ${r.students} leerling${r.students===1?'':'en'}`:''}</div>${mis}</div>
-      <div class="dom-pct num" style="color:${pctCol(r.gem)}">${Math.round(r.gem*100)}%</div>
+      <div class="dom-pct num" style="color:${pctCol(r.gem)}">${Math.round(r.gem*100)}%</div>${act}
     </div>`;
   }).join('');
 }
@@ -617,6 +651,42 @@ async function assign(btn,vak,domein){
     btn.textContent='Klaargezet ✓';btn.classList.remove('btn-p');btn.classList.add('btn-glass');
   }catch(e){btn.disabled=false;btn.textContent=old;alert('Kon niet klaarzetten. Draai eerst sql/klas-setup.sql (bevat ook klas_huiswerk_set).');}
 }
+
+// ══ PER-LEERLING DRILL-DOWN ══
+function openStudent(naam){
+  const d=window._dashD; if(!d) return;
+  const s=(d.leerlingen||[]).find(x=>x.naam===naam); if(!s) return;
+  const r=readiness(s);
+  const stLbl={g:'Examenklaar',a:'Let op',r:'Risico'}[r.status];
+  const stChip={g:'ch-g',a:'ch-a',r:'ch-r'}[r.status];
+  const stu=(d._students||[]).find(x=>x.naam===naam);
+  const stat=(lbl,val,style)=>`<div class="sd-stat"><div class="sd-stat-v"${style?' style="'+style+'"':''}>${val}</div><div class="sd-stat-l">${lbl}</div></div>`;
+  let body;
+  if(stu && d._lds){
+    const lds=d._lds.map(l=>({naam:l.naam,dom:l.dom,mis:l.mis,sc:stu.scores[l.dom+'|'+l.naam]||0})).sort((a,b)=>a.sc-b.sc);
+    const strong=lds[lds.length-1], weak=lds[0];
+    body=`<div class="sd-chips"><span class="sd-chip sd-chip-g">Sterkste · ${esc(strong.naam)} · ${Math.round(strong.sc*100)}%</span><span class="sd-chip sd-chip-r">Zwakste · ${esc(weak.naam)} · ${Math.round(weak.sc*100)}%</span></div>`
+      +`<div class="sd-h">Beheersing per leerdoel</div><div class="sd-lds">`+lds.map(l=>{const p=Math.round(l.sc*100);return `<div class="sd-ld"><div class="sd-ld-top"><span class="sd-ld-nm">${esc(l.naam)} <small>· ${esc(l.dom)}</small></span><span class="num" style="color:${pctCol(l.sc)};font-weight:800">${p}%</span></div><div class="sd-bar"><i style="width:${p}%;background:${pctCol(l.sc)}"></i></div>${l.sc<0.55?`<div class="sd-mis"><b>Vaak fout:</b> ${esc(l.mis)}</div>`:''}</div>`;}).join('')+`</div>`;
+  } else {
+    body=`<div class="sd-note">Beheersing per leerdoel verschijnt hier zodra deze leerling meer oefent.</div>`;
+  }
+  let ov=document.getElementById('student-modal');
+  if(!ov){ov=document.createElement('div');ov.id='student-modal';ov.className='sd-ov';ov.addEventListener('click',e=>{if(e.target===ov)closeStudent();});document.body.appendChild(ov);}
+  ov.innerHTML=`<div class="sd-card">
+    <button class="sd-x" onclick="closeStudent()" aria-label="Sluiten">✕</button>
+    <div class="sd-head"><div class="sd-name">${esc(naam)}</div><span class="chip ${stChip}"><span class="dot d${r.status}"></span>${stLbl}</span></div>
+    <div class="sd-sub">${esc(r.reason)}</div>
+    <div class="sd-stats">
+      ${stat('Beheersing', (s.gem!=null?Math.round(s.gem*100)+'%':'-'), 'color:'+pctCol(s.gem||0))}
+      ${stat('Sessies', (s.sessies!=null?s.sessies:'-'))}
+      ${stat('Laatst actief', agoTxt(s.laatst_actief_dagen))}
+      ${stat('Groei (2 wk)', growHtml(s.groei))}
+    </div>
+    ${body}
+  </div>`;
+  requestAnimationFrame(()=>ov.classList.add('on'));
+}
+function closeStudent(){const ov=document.getElementById('student-modal');if(ov){ov.classList.remove('on');setTimeout(()=>{if(ov&&!ov.classList.contains('on'))ov.remove();},220);}}
 
 function loadDemo(){
   _demo=true;_viewingDash=true;
@@ -682,7 +752,9 @@ function genDemoClass(){
     return {naam:s.naam,gem:vals.reduce((a,b)=>a+b,0)/vals.length,sessies:s.sessies,laatst_actief_dagen:s.dagen,groei:s.groei};
   });
 
-  return {klas:{naam:'5 HAVO Biologie',niveau:'havo',vak:'Biologie',code:'DEMO',leden:N},leerlingen,domeinen,leerdoelen};
+  return {klas:{naam:'5 HAVO Biologie',niveau:'havo',vak:'Biologie',code:'DEMO',leden:N},leerlingen,domeinen,leerdoelen,
+    _students:students.map(s=>({naam:s.naam,scores:s.scores,sessies:s.sessies,dagen:s.dagen,groei:s.groei})),
+    _lds:allLds.map(x=>({naam:x.l.naam,dom:x.dom,mis:x.l.mis}))};
 }
 
 /* ══ BOOT ══ */

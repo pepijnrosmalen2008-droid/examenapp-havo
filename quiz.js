@@ -1368,6 +1368,11 @@ function toonRes(){
   try{recordPractice();}catch(e){}
   // Docent-snapshot (slice 4): stuur de leerdoel-beheersing naar het klas-dashboard.
   try{if(typeof emitMasterySnapshot==='function')emitMasterySnapshot(ST.vak.id);}catch(e){}
+  // Huiswerk van de docent afgerond? Extra beloning. Bonus-XP hier optellen (vóór
+  // de XP-uitkering hieronder); de kist/munten worden in de reward-chain gezet.
+  let _hwR=null;
+  try{if(typeof hwOnQuizDone==='function')_hwR=hwOnQuizDone(ST.vak.id,ST.domein.id);}catch(e){}
+  if(_hwR){ST.xpThisRound=(ST.xpThisRound||0)+150;}
   // Munten belonen (basis + prestatie + perfect-bonus) + korte feedback.
   // Geldt voor beide modi: XP en munten zijn platformbreed handig.
   window._coinsWon=0;window._coinFlyN=0;
@@ -1563,6 +1568,13 @@ function toonRes(){
   }catch(e){}
   // Kistje = beloning voor het behalen van je DAGDOEL (Duolingo-stijl doelbeloning).
   try{ if(_dgJustDone && (ST.mode==='snel'||ST.mode==='oud') && !ST.isFoutenboek && !_RC.chest) _RC.chest={goal:true}; }catch(e){}
+  // Huiswerk-beloning heeft voorrang: munten + een huiswerk-kist + duidelijke melding.
+  if(_hwR){
+    try{if(typeof addCoins==='function')addCoins(30);}catch(e){}
+    _RC.chest={kicker:'📌 Huiswerk voltooid! Van je docent.'};
+    try{if(typeof showToast==='function')showToast('📌 Huiswerk gedaan — +150 XP, +30 munten en een kist!','#22c55e',3400);}catch(e){}
+    try{if(typeof renderKlasHome==='function')renderKlasHome();}catch(e){}
+  }
   // "Volgende domein"-kaart verwijderd op verzoek - minder tegels op het resultaatscherm.
   try{const omBox=document.getElementById('one-more-wrap');if(omBox)omBox.innerHTML='';}catch(e){}
   try{renderAdaptiveResults();}catch(e){}
