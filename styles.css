@@ -4365,6 +4365,17 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .vlag-reduce .vlag-vonk{animation:none}
 
 /* ── Dagmissie van Vonk (home) ── */
+/* "Dit heb je nu nodig" - focus-kaart (leerdoel-mastery spine) */
+.focus-card{position:relative;margin:10px 0;padding:16px 18px;border-radius:18px;background:var(--s);border:1px solid var(--bo);border-left:4px solid var(--fc,var(--or));box-shadow:var(--rd-shadow-1);cursor:pointer;overflow:hidden;transition:transform .12s ease,box-shadow .12s ease}
+.focus-card::after{content:'';position:absolute;inset:0;background:var(--fc,var(--or));opacity:.05;pointer-events:none}
+.focus-card:hover{transform:translateY(-1px);box-shadow:0 6px 22px rgba(0,0,0,.10)}
+.focus-card:active{transform:scale(.99)}
+.focus-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.focus-kicker{font-size:11.5px;font-weight:800;letter-spacing:.3px;text-transform:uppercase;color:var(--mu)}
+.focus-band{flex-shrink:0;font-family:var(--font-head);font-weight:900;font-size:13px;color:#fff;padding:3px 11px;border-radius:999px}
+.focus-title{font-family:var(--font-head);font-weight:900;font-size:17px;color:var(--dk);letter-spacing:-.2px;line-height:1.25}
+.focus-sub{font-size:13px;color:var(--mu);margin-top:3px;font-weight:600}
+.focus-cta{display:inline-flex;align-items:center;margin-top:12px;padding:9px 16px;border-radius:12px;background:var(--fc,var(--or));color:#fff;font-family:var(--font-head);font-weight:800;font-size:13.5px;box-shadow:0 3px 12px color-mix(in srgb,var(--fc,var(--or)) 40%,transparent)}
 .dm-card{display:flex;align-items:center;gap:13px;padding:14px 16px;margin:10px 0;border-radius:14px;
   background:var(--s);border:1px solid var(--bo);box-shadow:var(--rd-shadow-1)}
 .dm-vonk{flex-shrink:0;width:46px;height:46px}

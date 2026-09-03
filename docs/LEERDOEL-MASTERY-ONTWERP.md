@@ -113,8 +113,11 @@ bovenop Slagio's kennisstructuur i.p.v. ernaast.
 - **Slice 1 — spine + eerste zichtbare payoff (KLAAR).** `ldMastery` /
   `domeinMastery` / `vakMasteryRollup` / `weakestLeerdoelen` in `lb.js`;
   signaal-stip (🟢🟡🟠🔴) per leerdoel op het leerdoel-scherm (`vak.js`).
-- **Slice 2 — Student "Vandaag"-kaart.** `nextBestLeerdoel` → "Dit heb je nu
-  nodig" op home; dagmissie op leerdoel-niveau.
+- **Slice 2 — Student "Vandaag"-kaart (KLAAR).** `renderFocusLeerdoel()` in
+  `lb.js` → "Dit heb je nu nodig"-kaart op home (`#hm-focus-ld`), gescoped op de
+  favoriete/examenvakken, met `focusStartLeerdoel()` die naar het zwakste leerdoel
+  routet. Rendert via de `show()`-wrapper bij elke home-navigatie. (Dagmissie op
+  leerdoel-niveau kan later meeliften op dezelfde spine.)
 - **Slice 3 — foutcategorie-tagging + fout-tellingen** (enabler voor radar & AI).
 - **Slice 4 — Slagio School cockpit.** Klas-aggregatie server-side; leerdoel-
   radar + toewijzen in het docentendashboard.

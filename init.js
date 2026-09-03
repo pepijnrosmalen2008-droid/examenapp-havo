@@ -473,7 +473,7 @@ function openNavSheet(){
 function closeNavSheet(){var ov=document.getElementById('nav-sheet-ov');if(ov)ov.classList.remove('open');}
 // Patch show() to update bottom nav (pass all args through)
 const _origShow=show;
-window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);};
+window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);if(id==='sc-home'){try{renderFocusLeerdoel();}catch(e){}}};
 
 // Activeer routing na volledig laden
 window.addEventListener('load',()=>{

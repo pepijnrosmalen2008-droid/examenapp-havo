@@ -875,6 +875,44 @@ function weakestLeerdoelen(opts){
 // Convenience: het ene leerdoel dat de leerling nú het beste kan oppakken.
 function nextBestLeerdoel(vakIds){return weakestLeerdoelen({vakIds,limit:1})[0]||null;}
 
+// Scope: favoriete vakken (de examenvakken van de leerling); anders alle.
+function _focusVakIds(){
+  try{const fav=[...new Set(getFavs().map(k=>k.split('_')[0]))];if(fav.length)return fav;}catch(e){}
+  return getVK().map(v=>v.id);
+}
+// "Dit heb je nu nodig"-kaart op home: stuurt de leerling naar het zwakste
+// leerdoel. Verschijnt alleen als er een leerdoel met data is dat ruimte heeft
+// om te groeien (nieuwe/alles-groen gebruikers zien 'm niet; dagmissie dekt die).
+function renderFocusLeerdoel(){
+  const box=document.getElementById('hm-focus-ld');
+  if(!box)return;
+  let top=null;
+  try{top=weakestLeerdoelen({vakIds:_focusVakIds(),limit:1})[0]||null;}catch(e){}
+  if(!top){box.style.display='none';box.innerHTML='';return;}
+  const pct=Math.round(top.score*100);
+  const stale=(top.decayDays!=null&&top.decayDays>=14)?` · ${Math.floor(top.decayDays)}d niet geoefend`:'';
+  box.style.display='block';
+  box.innerHTML=`<div class="focus-card" style="--fc:${top.color}" role="button" tabindex="0" onclick="focusStartLeerdoel('${top.vakId}','${_esc(top.ldId)}')">
+    <div class="focus-top"><span class="focus-kicker">🎯 Dit heb je nu nodig</span><span class="focus-band" style="background:${top.color}">${pct}%</span></div>
+    <div class="focus-title">${_esc(top.vakNaam)} · ${_esc(top.naam)}</div>
+    <div class="focus-sub">${_esc(top.label)}${stale}</div>
+    <div class="focus-cta">Start oefenen →</div>
+  </div>`;
+}
+// Open een vak en daarna direct het opgegeven leerdoel. openVak zet ST.vak pas
+// ná hydratie, dus we pollen kort tot het vak klaar is voor we het leerdoel openen.
+function focusStartLeerdoel(vakId,ldId){
+  try{if(typeof openVak==='function')openVak(vakId);}catch(e){}
+  let tries=0;
+  const go=()=>{
+    tries++;
+    const ready=(typeof ST!=='undefined')&&ST.vak&&ST.vak.id===vakId&&(typeof vakHydrated!=='function'||vakHydrated(APP_LEVEL,vakId));
+    if(ready){try{openDomein(ldId);}catch(e){}}
+    else if(tries<25)setTimeout(go,120);
+  };
+  setTimeout(go,140);
+}
+
 // ═══════ EXAMENCOACH ═══════
 // Eerlijke, transparante indicatie op basis van je oefenscores per domein.
 // cijfer = 1 + 9·(gem. beheersing) - géén N-term, dus bewust aan de voorzichtige kant.
