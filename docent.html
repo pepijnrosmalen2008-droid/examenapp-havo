@@ -131,9 +131,17 @@ select.in{appearance:none;-webkit-appearance:none;background-image:url("data:ima
 .dr{background:var(--red);box-shadow:0 0 0 3px rgba(229,72,77,.16)}
 
 /* dashboard */
-.card{padding:21px}
+.card{padding:21px;margin-bottom:14px}
 .card h2{font-size:15px;font-weight:800;letter-spacing:-.2px;margin:0 0 2px}
 .card .sub{font-size:12.5px;color:var(--mu);margin:0 0 15px;line-height:1.45}
+/* Genummerde stap-labels: geven het dashboard een logische leesvolgorde */
+.dash-steplbl{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--mu);margin:22px 2px 11px}
+.dash-stepn{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--or);color:#fff;font-size:12px;font-weight:900;flex-shrink:0}
+/* De leerdoel-radar is de kern → krachtig accent */
+.card-focus{border:1px solid rgba(var(--or-rgb),.32);box-shadow:0 10px 30px rgba(var(--or-rgb),.1),0 1px 0 rgba(255,255,255,.3) inset}
+.card-h{display:flex;align-items:center;gap:10px;margin-bottom:2px}
+.card-h h2{margin:0}
+.card-tag{font-size:11px;font-weight:800;letter-spacing:.3px;color:var(--or);background:rgba(var(--or-rgb),.12);border:1px solid rgba(var(--or-rgb),.25);border-radius:999px;padding:2px 10px}
 .hero{display:grid;grid-template-columns:1.55fr 1fr;gap:14px;margin-bottom:14px}
 .gereed{padding:21px}
 .gereed h2{font-size:15px;font-weight:800;letter-spacing:-.2px;margin:0}
@@ -283,8 +291,8 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
       <b>Voorbeeldweergave</b> met verzonnen data - zo werkt je dashboard zodra je klas oefent.
     </div>
 
-    <div id="advies" class="advies glass hidden"><div class="advies-bar"></div><div class="advies-tx" id="advies-tx"></div></div>
-
+    <!-- 1 · WAAR STAAT DE KLAS -->
+    <div class="dash-steplbl"><span class="dash-stepn">1</span> Waar staat de klas?</div>
     <div class="hero">
       <div class="gereed glass">
         <h2>Examen-gereedheid van de klas</h2>
@@ -299,34 +307,43 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
       </div>
     </div>
 
+    <!-- 2 · WAT NU (advies) -->
+    <div id="advies" class="advies glass hidden"><div class="advies-bar"></div><div class="advies-tx" id="advies-tx"></div></div>
+
+    <!-- 3 · WAAR HET MISGAAT (leerdoel-radar, de kern) -->
+    <div class="dash-steplbl"><span class="dash-stepn">2</span> Waar gaat het mis?</div>
+    <div class="card glass card-focus">
+      <div class="card-h"><h2>Waar je klas de fout ingaat</h2><span class="card-tag">per leerdoel</span></div>
+      <div class="sub">Per leerdoel de beheersing én de fout die de klas het vaakst maakt — zwakste bovenaan.</div>
+      <div class="dom" id="ld-radar"></div>
+    </div>
+
+    <!-- 4 · WAT NU DOEN + WIE -->
+    <div class="dash-steplbl"><span class="dash-stepn">3</span> Wat nu doen?</div>
     <div class="grid">
       <div class="col">
         <div class="card glass">
-          <h2>Wie heeft hulp nodig?</h2>
-          <div class="sub">Automatisch bovenaan: laag, weinig geoefend of dalende trend.</div>
-          <div class="risk" id="risk"></div>
-        </div>
-        <div class="card glass">
-          <h2>Alle leerlingen</h2>
-          <div class="tbl-wrap"><table>
-            <thead><tr><th>Leerling</th><th>Status</th><th>Beheersing</th><th>Groei</th><th>Laatst actief</th></tr></thead>
-            <tbody id="roster"></tbody>
-          </table></div>
+          <h2>Zet dit als eerste klaar</h2>
+          <div class="sub">De domeinen waar de klas het meest vastloopt — met één tik klaarzetten.</div>
+          <div class="dom" id="dom"></div>
         </div>
       </div>
       <div class="col">
         <div class="card glass">
-          <h2>Behandel dit als eerste</h2>
-          <div class="sub">De domeinen waar je klas het meest vastloopt.</div>
-          <div class="dom" id="dom"></div>
+          <h2>Wie heeft nu hulp nodig?</h2>
+          <div class="sub">Laag, weinig geoefend of dalende trend — automatisch bovenaan.</div>
+          <div class="risk" id="risk"></div>
         </div>
       </div>
     </div>
 
+    <!-- 5 · ALLE LEERLINGEN -->
     <div class="card glass">
-      <h2>Leerdoel-radar</h2>
-      <div class="sub">Zoom in van domein naar leerdoel: per leerdoel de beheersing én de fout die je klas het vaakst maakt.</div>
-      <div class="dom" id="ld-radar"></div>
+      <h2>Alle leerlingen</h2>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Leerling</th><th>Status</th><th>Beheersing</th><th>Groei</th><th>Laatst actief</th></tr></thead>
+        <tbody id="roster"></tbody>
+      </table></div>
     </div>
 
     <div class="footer">Alleen voornamen en klasgemiddelden. Slagio · <a href="/vakken/slagio-school.html">Over Slagio School</a></div>

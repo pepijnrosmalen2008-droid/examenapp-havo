@@ -49,6 +49,22 @@
     .ss-h2{font-family:var(--font-head);font-size:25px;font-weight:800;letter-spacing:-.3px;margin:56px 0 6px}
     .ss-h2-sub{color:var(--mu);font-size:15px;margin:0 0 26px;max-width:620px}
 
+    /* échte live-preview van het dashboard (iframe van /docent.html?demo) */
+    .ss-preview{max-width:1000px;margin:6px auto 0;border-radius:18px;overflow:hidden;border:1px solid var(--bo);box-shadow:0 28px 70px rgba(0,0,0,.16);background:var(--s)}
+    .ss-pv-bar{display:flex;align-items:center;gap:7px;padding:11px 15px;background:var(--bg2,rgba(120,130,150,.08));border-bottom:1px solid var(--bo)}
+    .ss-pv-dot{width:11px;height:11px;border-radius:50%;background:rgba(130,140,160,.4)}
+    .ss-pv-url{margin-left:12px;font-size:12.5px;color:var(--mu);font-weight:600}
+    .ss-pv-live{margin-left:auto;font-size:11px;font-weight:800;letter-spacing:.3px;color:#e0567a;text-transform:uppercase}
+    .ss-pv-frame{width:100%;height:72vh;max-height:760px;min-height:540px;background:var(--s)}
+    .ss-pv-frame iframe{width:100%;height:100%;border:0;display:block}
+    /* strakke feature-kaarten (geen neppe mockups meer) */
+    .ss-feat3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:36px 0 8px}
+    .ss-fc{padding:22px;border-radius:16px;border:1px solid var(--bo);background:var(--s)}
+    .ss-fc-ic{font-size:26px;margin-bottom:9px;line-height:1}
+    .ss-fc h3{font-family:var(--font-head);font-size:16.5px;font-weight:800;margin:0 0 6px;letter-spacing:-.2px}
+    .ss-fc p{font-size:13.5px;color:var(--mu);line-height:1.6;margin:0}
+    @media(max-width:760px){.ss-feat3{grid-template-columns:1fr}.ss-pv-frame{height:82vh;min-height:460px}.ss-pv-url{font-size:11px}}
+
     /* feature + mockup rijen */
     .ss-feature{display:grid;grid-template-columns:1fr 1.15fr;gap:34px;align-items:center;margin:0 0 22px;padding:26px 0;border-top:1px solid var(--bo)}
     .ss-feature:first-of-type{border-top:none}
@@ -161,82 +177,31 @@
   </div>
 
   <h2 class="ss-h2">Wat de docent ziet</h2>
-  <p class="ss-h2-sub">Een impressie van het dashboard. De docentenlaag is in ontwikkeling; onderstaande voorbeelden gebruiken fictieve gegevens.</p>
+  <p class="ss-h2-sub">Een échte, werkende preview van het dashboard — met fictieve gegevens. Precies dit zie je zodra je klas oefent.</p>
 
-  <div class="ss-feature">
-    <div class="ss-copy">
+  <div class="ss-preview">
+    <div class="ss-pv-bar"><span class="ss-pv-dot"></span><span class="ss-pv-dot"></span><span class="ss-pv-dot"></span><span class="ss-pv-url">slagio.nl/docent.html</span><span class="ss-pv-live">● live voorbeeld</span></div>
+    <div class="ss-pv-frame">
+      <iframe src="/docent.html?demo" title="Live voorbeeld van het Slagio-docentendashboard" loading="lazy"></iframe>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:14px"><a class="btn-ghost" href="/docent.html?demo" target="_blank" rel="noopener">Open de preview op volledig scherm →</a></div>
+
+  <div class="ss-feat3">
+    <div class="ss-fc">
+      <div class="ss-fc-ic">👥</div>
       <h3>Voortgang per leerling</h3>
-      <p>Eén overzicht van je klas: wie oefent, hoe goed de stof beheerst wordt en waar iemand blijft hangen. Handig voor je mentoruur en voor een gericht gesprek.</p>
-      <ul>
-        <li>Beheersing per leerling, opgebouwd uit echte oefensessies</li>
-        <li>Laatste activiteit, zodat je ziet wie stilvalt</li>
-        <li>Zwakste domein per leerling in één klik</li>
-      </ul>
+      <p>Wie oefent, hoe goed de stof beheerst wordt en waar iemand blijft hangen — met de laatste activiteit, zodat je ziet wie stilvalt.</p>
     </div>
-    <div class="mock">
-      <div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-label">Voorbeeld</span></div>
-      <div class="mock-body">
-        <table class="mt">
-          <thead><tr><th>Leerling</th><th>Beheersing</th><th>Laatst</th><th>Zwakste domein</th></tr></thead>
-          <tbody>
-            <tr><td class="nm">Sanne V.</td><td><div class="bar"><i class="mg" style="width:86%"></i></div></td><td class="pct">1 dag</td><td class="tag-g">Erfelijkheid</td></tr>
-            <tr><td class="nm">Daan K.</td><td><div class="bar"><i class="ma" style="width:61%"></i></div></td><td class="pct">2 dagen</td><td class="tag-a">Evolutie</td></tr>
-            <tr><td class="nm">Iris M.</td><td><div class="bar"><i class="mr" style="width:38%"></i></div></td><td class="pct">6 dagen</td><td class="tag-r">Stofwisseling</td></tr>
-            <tr><td class="nm">Youssef B.</td><td><div class="bar"><i class="mg" style="width:79%"></i></div></td><td class="pct">vandaag</td><td class="tag-g">Ecologie</td></tr>
-            <tr><td class="nm">Lotte D.</td><td><div class="bar"><i class="ma" style="width:54%"></i></div></td><td class="pct">3 dagen</td><td class="tag-a">Stofwisseling</td></tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="ss-fc">
+      <div class="ss-fc-ic">🎯</div>
+      <h3>Waar het misgaat, per leerdoel</h3>
+      <p>Niet alleen "domein 3 = 62%", maar per leerdoel de beheersing én de fout die de klas het vaakst maakt. Precies waar je je les op stuurt.</p>
     </div>
-  </div>
-
-  <div class="ss-feature flip">
-    <div class="ss-copy">
-      <h3>Waar loopt de klas vast?</h3>
-      <p>Een kaart van alle examendomeinen, gekleurd naar beheersing van de klas. Rood springt eruit: precies daar plan je je volgende les of oefensessie.</p>
-      <ul>
-        <li>Beheersing per domein, gemiddeld over de hele klas</li>
-        <li>Meteen zichtbaar welk onderwerp aandacht nodig heeft</li>
-        <li>Werkt per klas én per lesgroep</li>
-      </ul>
-    </div>
-    <div class="mock">
-      <div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-label">Voorbeeld</span></div>
-      <div class="mock-body">
-        <div class="hm">
-          <div class="hm-h"></div><div class="hm-h">A</div><div class="hm-h">B</div><div class="hm-h">C</div><div class="hm-h">D</div><div class="hm-h">E</div><div class="hm-h">F</div>
-          <div class="hm-rl">5 havo 2</div><div class="cell mg">82</div><div class="cell mg">76</div><div class="cell ma">58</div><div class="cell mr">41</div><div class="cell ma">63</div><div class="cell mg">71</div>
-          <div class="hm-rl">5 havo 4</div><div class="cell mg">79</div><div class="cell ma">64</div><div class="cell mr">44</div><div class="cell mr">38</div><div class="cell ma">55</div><div class="cell mg">73</div>
-          <div class="hm-rl">6 vwo 1</div><div class="cell mg">88</div><div class="cell mg">81</div><div class="cell ma">67</div><div class="cell ma">59</div><div class="cell mg">74</div><div class="cell mg">80</div>
-        </div>
-        <div class="mock-cap">Groen = beheerst · oranje = wisselend · rood = aandacht nodig</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ss-feature">
-    <div class="ss-copy">
+    <div class="ss-fc">
+      <div class="ss-fc-ic">📈</div>
       <h3>Examen-gereedheid per klas</h3>
-      <p>Eén cijfer dat zegt hoe ver de klas is richting het CE, opgebouwd uit beheersing over alle CE-domeinen. Volg het in de weken voor het examen en zie het stijgen.</p>
-      <ul>
-        <li>Gereedheid per klas, met de zwakste domeinen eronder</li>
-        <li>Gebaseerd op echte oefenresultaten, niet op een inschatting</li>
-        <li>Exporteerbaar als sectie- en mentorrapport (PDF)</li>
-      </ul>
-    </div>
-    <div class="mock">
-      <div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-label">Voorbeeld</span></div>
-      <div class="mock-body">
-        <div class="rd">
-          <div class="rd-ring" style="position:relative"><b>68<span>%</span></b></div>
-          <div class="rd-list">
-            <div class="rd-row"><span class="lbl">Examen-gereed · 5 havo 2</span><span class="v">68%</span><div class="rd-bar"><i class="ma" style="width:68%"></i></div></div>
-            <div class="rd-row"><span class="lbl">Zwakste: Stofwisseling</span><span class="v">41%</span><div class="rd-bar"><i class="mr" style="width:41%"></i></div></div>
-            <div class="rd-row"><span class="lbl">Zwakste: Evolutie</span><span class="v">58%</span><div class="rd-bar"><i class="ma" style="width:58%"></i></div></div>
-            <div class="rd-row"><span class="lbl">Sterkste: Erfelijkheid</span><span class="v">82%</span><div class="rd-bar"><i class="mg" style="width:82%"></i></div></div>
-          </div>
-        </div>
-      </div>
+      <p>Eén indicatie richting het CE, opgebouwd uit echte oefenresultaten. Volg het in de weken voor het examen en zie het stijgen.</p>
     </div>
   </div>
 
@@ -279,7 +244,7 @@
   <div class="faq">
     <details open><summary>Blijft het voor leerlingen gratis?</summary><div class="a">Ja. Alle oefenfuncties zijn en blijven gratis voor leerlingen, met of zonder schoollicentie. Slagio School voegt alleen een dashboard voor de docent toe.</div></details>
     <details><summary>Waar komt de data vandaan?</summary><div class="a">Uit de echte oefensessies van leerlingen in de gekoppelde klas: beheersing per domein, gemaakte quizzen en resultaten. Geen inschattingen, geen extra toetsen.</div></details>
-    <details><summary>Is het dashboard al beschikbaar?</summary><div class="a">De docentenlaag is in ontwikkeling. De voorbeelden op deze pagina zijn impressies met fictieve gegevens. Als pilotschool denk je mee en krijg je 'm als eerste, gratis.</div></details>
+    <details><summary>Is het dashboard al beschikbaar?</summary><div class="a">Ja — de preview op deze pagina is het échte dashboard, met fictieve gegevens. Maak een gratis klas aan in het <a href="/docent.html">docentenportaal</a> en het vult zich met de resultaten van je eigen klas. Als pilotschool denk je mee en krijg je nieuwe functies als eerste.</div></details>
     <details><summary>Wat kost het na de pilot?</summary><div class="a">Eén schoolbrede jaarlicentie zonder kosten per leerling: vanaf €500 per jaar voor een kleine school tot €1.500 voor een grote scholengemeenschap. Per schooljaar opzegbaar.</div></details>
   </div>
 
