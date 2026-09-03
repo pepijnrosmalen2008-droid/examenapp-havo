@@ -262,7 +262,7 @@ begin
   )
   select jsonb_build_object(
     'klas', jsonb_build_object(
-      'naam', v_klas.naam, 'niveau', v_klas.niveau, 'vak', v_klas.vak_id, 'code', v_klas.code,
+      'id', v_klas.id, 'naam', v_klas.naam, 'niveau', v_klas.niveau, 'vak', v_klas.vak_id, 'code', v_klas.code,
       'leden',          (select count(*) from public.klas_leden where klas_id = v_klas.id),
       'sessies_week',   (select count(*) from s where created_at > now()-interval '7 day'),
       'gem_beheersing', (select round((avg(score)/1000.0)::numeric,3) from s)
