@@ -2485,6 +2485,12 @@ html.dark .calc-btn{background:#2e3550}
   .nav{height:52px;box-shadow:0 1px 8px rgba(0,0,0,.03)}
   .nav-inner{gap:8px;padding:0 16px}
   .logo{font-size:16px;gap:6px}
+  /* ── PREVIEW: liquid-glass zweef-topbar op álle .nav-schermen (net als home) ──
+     Herstijlt alleen de bestaande .nav/.nav-inner; geen markup-wijziging, dus in
+     één klap terug te draaien als het toch niet bevalt. */
+  .nav{height:auto;background:transparent!important;border:none!important;box-shadow:none!important;padding:10px 12px 0}
+  .nav::after{display:none}
+  .nav-inner{height:52px;gap:8px;padding:0 8px 0 14px;border-radius:22px;background:color-mix(in srgb,var(--bg) 58%,transparent);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);border:1px solid rgba(255,255,255,.2);box-shadow:0 8px 30px rgba(0,0,0,.10),0 1.5px 0 rgba(255,255,255,.4) inset}
   .logo-dot{width:8px;height:8px}
   .theme-btn{width:36px;height:36px;font-size:15px;border-radius:8px}
 
