@@ -8,7 +8,11 @@ let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer
 // ═══════ HASH ROUTING ═══════
 const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-studieplan':'studieplan','sc-calc':'rekenmachine','sc-streak':'streaks','sc-zoek':'zoek'};
 // Vak ID → URL-slug (volledige naam)
-const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',be:'bedrijfseconomie',en:'engels',ec:'economie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',du:'duits',fr:'frans',la:'latijn',gr:'grieks',in:'informatica',wi:'wiskunde',na1:'natuur-scheikunde-1',na2:'natuur-scheikunde-2',ma:'maatschappijkunde'};
+const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',be:'bedrijfseconomie',en:'engels',ec:'economie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',du:'duits',fr:'frans',la:'latijn',gr:'grieks',in:'informatica',wi:'wiskunde',na1:'natuur-scheikunde-1',na2:'natuur-scheikunde-2',ma:'maatschappijkunde',fa:'frans'};
+// Zoek de vak-id binnen één niveau op basis van de URL-slug. Nodig omdat dezelfde
+// slug per niveau een andere id kan hebben (bv. Frans = 'fr' op havo/vwo maar 'fa'
+// op vmbo), dus een globale slug→id-tabel volstaat niet.
+function _vakIdFromSlug(slug){try{return (getVK().find(v=>(_VAK_SLUG[v.id]||v.id)===slug)||{}).id||null;}catch(e){return null;}}
 const _SLUG_VAK=Object.fromEntries(Object.entries(_VAK_SLUG).map(([k,v])=>[v,k]));
 function _pushHash(h){if((location.hash||'#').slice(1)!==h)history.pushState(null,'',h?'#'+h:location.pathname+location.search);}
 function _routeFromHash(){
@@ -17,18 +21,19 @@ function _routeFromHash(){
   // vak: #havo-biologie of #vwo-wiskunde-a; domein: #havo-biologie-a
   const vm=h.match(/^(havo|vwo|vmbo)-(.+)$/);
   if(vm){
-    const [,niv,rest]=vm;
-    let id=_SLUG_VAK[rest],domLetter=null;
+    const niv=vm[1],rest=vm[2];
+    // Zorg éérst dat de niveau-data geladen is; daarna kunnen we de slug binnen
+    // dít niveau naar een vak-id resolven (id's verschillen per niveau).
+    if(typeof ensureLevelData==='function'&&typeof _levelLoaded==='function'&&!_levelLoaded(niv)){
+      ensureLevelData(niv,()=>_routeFromHash());return;
+    }
+    if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
+    let id=_vakIdFromSlug(rest),domLetter=null;
     if(!id){
       const dm=rest.match(/^(.+)-([a-z])$/);
-      if(dm&&_SLUG_VAK[dm[1]]){id=_SLUG_VAK[dm[1]];domLetter=dm[2].toUpperCase();}
+      if(dm){const cand=_vakIdFromSlug(dm[1]);if(cand){id=cand;domLetter=dm[2].toUpperCase();}}
     }
     if(id){
-      // Zorg dat de niveau-data geladen is voordat we het vak openen
-      if(typeof ensureLevelData==='function'&&typeof _levelLoaded==='function'&&!_levelLoaded(niv)){
-        ensureLevelData(niv,()=>_routeFromHash());return;
-      }
-      if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
       const vak=getVK().find(v=>v.id===id);
       if(vak){
         // Deze route opent het vak rechtstreeks (buiten chooseLevel() om), dus de
@@ -71,14 +76,16 @@ function _routeVakkenPath(path){
   const vm=!dm&&path.match(/^\/vakken\/(havo|vwo|vmbo)-(.+)\.html$/);
   const m=dm||vm;
   if(!m)return false;
-  const niv=m[1],id=_SLUG_VAK[m[2]],letter=dm?dm[3].toUpperCase():null;
-  if(!id)return false;
+  const niv=m[1],slug=m[2],letter=dm?dm[3].toUpperCase():null;
   // Vonk-laadscherm terwijl de niveau-data (en straks het vak) laadt; openVak
   // verbergt hem weer zodra alles klaar is.
   try{if(typeof vonkLoading==='function')vonkLoading('Vak laden…');}catch(e){}
   const go=()=>{
     if(niv!==APP_LEVEL){APP_LEVEL=niv;localStorage.setItem('examenapp_level',niv);applyLevelTheme(niv);}
-    const vak=getVK().find(v=>v.id===id);
+    // Id pas nu resolven: binnen dít niveau, want dezelfde slug kan per niveau een
+    // andere id hebben (Frans = 'fr' op havo/vwo, 'fa' op vmbo).
+    const id=_vakIdFromSlug(slug);
+    const vak=id&&getVK().find(v=>v.id===id);
     if(!vak){try{if(typeof vonkLoadingHide==='function')vonkLoadingHide();}catch(e){}return;}
     // Deze route opent het vak rechtstreeks (buiten chooseLevel() om), dus de
     // vaktegel-grid is nog niet (opnieuw) opgebouwd met de zojuist geladen data.
