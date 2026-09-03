@@ -1749,8 +1749,11 @@ html.dark .qb{background:#2e3550}
 .badge.earned:hover{transform:scale(1.18) rotate(-5deg)}
 .badge.unearned{filter:grayscale(1);opacity:.22}
 .badge-tooltip{position:relative}
-/* Badge-info wordt bij een tik als gecentreerde toast getoond (zie quiz.js),
-   zodat de tekst nooit meer buiten het scherm valt. De oude hover-tooltip is uit. */
+/* Badge-info verschijnt net boven de aangetikte badge; positie wordt in JS
+   horizontaal geklemd (zie _badgeTip) zodat de tekst nooit buiten beeld valt. */
+.badge-tip-pop{position:fixed;z-index:9999;max-width:min(240px,86vw);background:var(--dk);color:var(--bg);font-size:11.5px;font-weight:600;line-height:1.45;padding:8px 12px;border-radius:10px;text-align:center;pointer-events:none;opacity:0;transition:opacity .16s;box-shadow:0 8px 26px rgba(0,0,0,.35);font-family:var(--font)}
+.badge-tip-pop::after{content:'';position:absolute;left:var(--ax,50%);bottom:-5px;transform:translateX(-50%) rotate(45deg);width:10px;height:10px;background:var(--dk);border-radius:2px}
+.badge-tip-pop.below::after{bottom:auto;top:-5px}
 /* Profile badge section */
 .prof-badges-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:12px;margin-top:4px}
 .prof-badge-cat{margin-bottom:20px}
@@ -2087,6 +2090,17 @@ html.dark .qb{background:#2e3550}
 .klas-rank{font-family:var(--font-head);font-weight:800;font-size:14px;color:var(--mu)}
 .klas-lb-naam{flex:1;font-weight:700;font-size:14.5px;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .klas-lb-pts{flex-shrink:0;font-family:var(--font-head);font-weight:800;font-size:14.5px;color:var(--or);font-variant-numeric:tabular-nums}
+/* Klasgenoot aanmoedigen (interactief) */
+.klas-lb-tap{cursor:pointer;transition:transform .12s,border-color .15s,background .15s;-webkit-tap-highlight-color:transparent}
+.klas-lb-tap:hover{border-color:rgba(139,92,246,.4)}
+.klas-lb-tap:active{transform:scale(.985)}
+.klas-lb-row.cheered{animation:klasCheerPulse .5s ease}
+@keyframes klasCheerPulse{0%{transform:scale(1)}30%{transform:scale(1.03);border-color:rgba(139,92,246,.6)}100%{transform:scale(1)}}
+.klas-cheer-ic{flex-shrink:0;font-size:15px;opacity:.35;transition:opacity .15s,transform .15s}
+.klas-lb-tap:hover .klas-cheer-ic,.klas-lb-tap:active .klas-cheer-ic{opacity:1;transform:scale(1.15)}
+.klas-cheer-hint{font-size:12px;color:var(--mu);margin:-2px 2px 10px;display:flex;align-items:center;gap:5px}
+.klas-cheer-pop{position:fixed;z-index:9999;font-size:22px;pointer-events:none;animation:klasCheerFly .9s cubic-bezier(.3,.7,.4,1) forwards;will-change:transform,opacity}
+@keyframes klasCheerFly{0%{opacity:0;transform:translate(0,0) scale(.6)}20%{opacity:1}100%{opacity:0;transform:translate(var(--dx,0),-70px) rotate(var(--rot,0)) scale(1.1)}}
 .klas-empty{color:var(--mu);font-size:13.5px;text-align:center;padding:24px 16px;background:var(--s);border:1px dashed var(--bo);border-radius:12px;line-height:1.6}
 .klas-home-card{display:flex;align-items:center;gap:13px;background:var(--s);border:1px solid var(--bo);border-radius:14px;padding:14px 16px;cursor:pointer;box-shadow:var(--rd-shadow-1);transition:transform .18s var(--ease-out),border-color .18s;margin:10px 0}
 .klas-home-card:hover{transform:translateY(-1px);border-color:rgba(var(--or-rgb),.4)}
@@ -5052,6 +5066,11 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
   #sc-race-res .race-res-col .res-sc{font-size:26px!important;margin:4px 0 1px!important}
   #sc-race-res .rbd{padding:13px 14px!important;margin-bottom:16px!important}
   #sc-race-res .rb-row{font-size:13px!important}
+  /* Finish-overlay ("JIJ WINT!") volledig binnen beeld houden. */
+  .rfo-inner{max-width:92vw!important;padding:0 18px!important;box-sizing:border-box!important}
+  .rfo-flag{font-size:56px!important;margin-bottom:12px!important}
+  .rfo-title{font-size:32px!important;letter-spacing:1px!important;line-height:1.15!important;word-break:break-word!important}
+  .rfo-sub{font-size:15px!important;line-height:1.4!important}
 }
 /* ── PREMIUM AVATAR RING + FILTER ────────────────────────────── */
 /* Gelaagde ring: box-shadow band + draaiend lichtpunt + specular  */
@@ -5881,6 +5900,9 @@ html.pwa-standalone .nav,html.pwa-standalone .ex-nav,html.pwa-standalone .lp-nav
 html.pwa-standalone .hnav,html.pwa-standalone .wlc-bar,html.pwa-standalone .grp-nav{padding-top:calc(10px + env(safe-area-inset-top,0px))!important}
 html.pwa-standalone #sc-quiz .qtb,html.pwa-standalone #sc-flash .qtb,html.pwa-standalone .qtb{padding-top:calc(12px + env(safe-area-inset-top,0px))!important}
 html.pwa-standalone .race-tb{padding-top:calc(12px + env(safe-area-inset-top,0px))!important}
+/* Hogere specificiteit dan de mobiele #sc-race .race-tb-regel, zodat de topbalk
+   (vak · bot race · timer) niet onder de notch valt maar netjes eronder. */
+html.pwa-standalone #sc-race .race-tb{padding-top:calc(10px + env(safe-area-inset-top,0px))!important}
 html.pwa-standalone .res-topbar{padding-top:calc(8px + env(safe-area-inset-top,0px))!important}
 html.pwa-standalone #sc-qmode .tb{padding-top:calc(6px + env(safe-area-inset-top,0px))!important}
 html.pwa-standalone #sc-review .review-wrap,html.pwa-standalone #sc-race-res .rb{padding-top:calc(28px + env(safe-area-inset-top,0px))!important}

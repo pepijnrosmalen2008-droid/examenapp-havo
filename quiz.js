@@ -961,7 +961,7 @@ function renderProfileBadges(){
           const dateStr=isEarned?new Date(ach[b.id]).toLocaleDateString('nl-NL',{day:'numeric',month:'short',year:'numeric'}):'';
           const rarityLabel=RARITY_LABEL[b.rarity]||'';
           const tip=isEarned?`${b.tip} · ${dateStr} · ${rarityLabel}${isSelected?' · ✓ op avatar':''}`:b.tip+' · Nog niet behaald';
-          const clickAttr=isEarned?`onclick="selectFeaturedBadge('${b.id}');try{showToast(this.getAttribute('data-tip'),'#334155',3400)}catch(e){}" style="cursor:pointer"`:`onclick="try{showToast(this.getAttribute('data-tip'),'#334155',3400)}catch(e){}" style="cursor:pointer"`;
+          const clickAttr=isEarned?`onclick="selectFeaturedBadge('${b.id}');_badgeTip(this)" style="cursor:pointer"`:`onclick="_badgeTip(this)" style="cursor:pointer"`;
           // Feature 6: progress bar for unearned badges
           let progHtml='';
           if(!isEarned){
@@ -982,6 +982,33 @@ function renderProfileBadges(){
       </div>
     </div>`;
   }).join('');
+}
+// Badge-info net boven de aangetikte badge, maar horizontaal geklemd zodat de
+// tekst altijd volledig binnen het scherm valt (ook bij hoek-badges).
+let _badgeTipT=null;
+function _badgeTip(el){
+  try{
+    const text=el.getAttribute('data-tip')||'';
+    let tip=document.getElementById('badge-tip-pop');
+    if(!tip){tip=document.createElement('div');tip.id='badge-tip-pop';tip.className='badge-tip-pop';document.body.appendChild(tip);}
+    tip.textContent=text;
+    tip.style.opacity='0';tip.style.left='0px';tip.style.top='0px';
+    // meet en klem na render
+    requestAnimationFrame(()=>{
+      const r=el.getBoundingClientRect();
+      const tw=tip.offsetWidth, th=tip.offsetHeight, m=8;
+      let left=r.left+r.width/2-tw/2;
+      left=Math.max(m,Math.min(left,window.innerWidth-tw-m));
+      let top=r.top-th-9;
+      const below=top<m; if(below)top=r.bottom+9;
+      tip.classList.toggle('below',below);
+      // pijl wijst naar het badge-midden
+      const cx=r.left+r.width/2-left;
+      tip.style.setProperty('--ax',Math.max(14,Math.min(cx,tw-14))+'px');
+      tip.style.left=left+'px';tip.style.top=top+'px';tip.style.opacity='1';
+    });
+    clearTimeout(_badgeTipT);_badgeTipT=setTimeout(()=>{if(tip)tip.style.opacity='0';},3200);
+  }catch(e){}
 }
 // Prestatie-toasts spelen één voor één (nooit meer een stapel tegelijk op het
 // finish-scherm). Ze wachten netjes op elkaar via een kleine eigen wachtrij.

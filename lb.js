@@ -965,6 +965,9 @@ function renderFocusLeerdoel(){
 // Open een vak en daarna direct het opgegeven leerdoel. openVak zet ST.vak pas
 // ná hydratie, dus we pollen kort tot het vak klaar is voor we het leerdoel openen.
 function focusStartLeerdoel(vakId,ldId){
+  // Net als huiswerk: meteen de snelle quiz starten op dit leerdoel (hwStart
+  // hydrateert het vak en start de quiz direct, i.p.v. de leerstofpagina te tonen).
+  if(typeof hwStart==='function'){ hwStart(vakId,ldId); return; }
   try{if(typeof openVak==='function')openVak(vakId);}catch(e){}
   let tries=0;
   const go=()=>{

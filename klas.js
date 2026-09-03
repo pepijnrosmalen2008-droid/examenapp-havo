@@ -137,6 +137,7 @@ function _klasSkeleton(k){
   ${codeBlok}
   <div id="klas-week"></div>
   <div class="klas-lb-head"><span>🏆 Klas-ranglijst</span><span class="klas-lb-sub" id="klas-leden-count"></span></div>
+  ${isDoc?'':'<div class="klas-cheer-hint">👏 Tik op een klasgenoot om ze aan te moedigen</div>'}
   <div id="klas-lb" class="klas-lb"><div class="klas-empty">Laden…</div></div>`;
 }
 
@@ -157,8 +158,12 @@ async function _klasLoadDetail(k){
     const mij = (k.naamInKlas||'').toLowerCase();
     lb.innerHTML = rows.map((r,i)=>{
       const medal = i===0?'🥇':i===1?'🥈':i===2?'🥉':`<span class="klas-rank">${i+1}</span>`;
-      const me = r.naam && r.naam.toLowerCase()===mij ? ' klas-me':'';
-      return `<div class="klas-lb-row${me}"><span class="klas-lb-pos">${medal}</span><span class="klas-lb-naam">${_esc(r.naam||'Leerling')}</span><span class="klas-lb-pts">${r.totaal} pt</span></div>`;
+      const isMe = r.naam && r.naam.toLowerCase()===mij;
+      const me = isMe ? ' klas-me':'';
+      const nm=_esc(r.naam||'Leerling');
+      const tap = isMe?'':` klas-lb-tap" data-nm="${nm}" onclick="klasCheer(this)`;
+      const cheer = isMe?'':'<span class="klas-cheer-ic" aria-hidden="true">👏</span>';
+      return `<div class="klas-lb-row${me}${tap}"><span class="klas-lb-pos">${medal}</span><span class="klas-lb-naam">${nm}</span>${cheer}<span class="klas-lb-pts">${r.totaal} pt</span></div>`;
     }).join('');
   }catch(e){
     if(e._disabled){ lb.innerHTML = _klasBinnenkort(); return; }
@@ -461,5 +466,29 @@ function _zqSet(){
   const go=document.getElementById('zq-go');if(go)go.style.display='none';
 }
 function closeZetQuiz(){const ov=document.getElementById('zetquiz-ov');if(ov){ov.classList.remove('on');setTimeout(function(){if(ov&&!ov.classList.contains('on'))ov.remove();},220);}}
+
+// Een klasgenoot aanmoedigen: kleine, blije micro-interactie (zwevende emoji +
+// felicitatie + haptiek). Maakt de klas socialer dan alleen een puntenlijst.
+let _cheerCount=0;
+function klasCheer(el){
+  const naam=(el&&el.dataset&&el.dataset.nm)||'je klasgenoot';
+  const emos=['👏','💪','🔥','🎉','⭐','🙌','🚀'];
+  const e=emos[Math.floor(Math.random()*emos.length)];
+  try{
+    const r=el.getBoundingClientRect();
+    for(let i=0;i<6;i++){
+      const d=document.createElement('div');d.className='klas-cheer-pop';d.textContent=e;
+      d.style.left=(r.right-70+Math.random()*50)+'px';d.style.top=(r.top+6)+'px';
+      d.style.setProperty('--dx',((Math.random()-0.5)*70).toFixed(0)+'px');
+      d.style.setProperty('--rot',((Math.random()-0.5)*60).toFixed(0)+'deg');
+      document.body.appendChild(d);setTimeout(()=>{try{d.remove();}catch(err){}},950);
+    }
+  }catch(err){}
+  try{if(typeof haptic==='function')haptic([12,22,12]);}catch(e){}
+  try{if(typeof showToast==='function')showToast(e+' Je moedigt '+naam+' aan!','#8b5cf6',2000);}catch(e){}
+  try{el.classList.remove('cheered');void el.offsetWidth;el.classList.add('cheered');}catch(e){}
+  _cheerCount++;
+  try{if(_cheerCount===5&&typeof showToast==='function')setTimeout(()=>showToast('🌟 Klasheld! Je hebt de hele klas aangemoedigd.','#f59e0b',2600),700);}catch(e){}
+}
 
 function _esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
