@@ -286,18 +286,19 @@ function hwStart(vakId, domId){
       return;
     }
     try{ if(typeof vonkLoadingHide==='function') vonkLoadingHide(); }catch(e){}
+    const _fail=(why)=>{ try{ if(typeof showToast==='function') showToast('Huiswerk kon niet starten ('+why+')','#f97316',4500); }catch(e){} try{ if(typeof openVak==='function') openVak(vakId); }catch(e){} };
     const vak=(typeof getVK==='function')?getVK().find(v=>v.id===vakId):null;
-    if(!vak){ if(typeof openVak==='function')openVak(vakId); return; }
+    if(!vak){ _fail('vak '+vakId+' niet gevonden'); return; }
     ST.vak=vak;
     let dom = domId && ((typeof duFind==='function')?duFind(vak,domId):(vak.domeinen||[]).find(d=>d.id===domId));
-    if(!dom){ if(typeof openVak==='function')openVak(vakId); return; }
+    if(!dom){ _fail('onderwerp "'+(domId||'?')+'" niet gevonden'); return; }
     // Kies een onderdeel met vragen: het domein zelf, anders het rijkste leerdoel.
     if(dom.sv && dom.sv.length){ ST.domein=dom; if(typeof startQ==='function'){startQ('snel');return;} }
     const lds=(dom.leerdoelen||[]).filter(l=>l.sv&&l.sv.length).sort((a,b)=>b.sv.length-a.sv.length);
     if(lds.length){ ST.domein=lds[0]; if(typeof startQ==='function'){startQ('snel');return;} }
-    if(dom.sv && dom.sv.length){ ST.domein=dom; if(typeof startQ==='function'){startQ('snel');return;} }
-    if(typeof openVak==='function')openVak(vakId);
-  }catch(e){ try{ if(typeof openVak==='function') openVak(vakId); }catch(_){} }
+    _fail('geen vragen bij "'+((dom&&dom.naam)||domId)+'"');
+  }catch(e){ try{ if(typeof showToast==='function')showToast('Huiswerk-fout: '+(e&&e.message||e),'#ef4444',4500);}catch(_){}
+    try{ if(typeof openVak==='function') openVak(vakId); }catch(_){} }
 }
 async function renderKlasHuiswerk(){
   const el = document.getElementById('klas-huiswerk-home');
@@ -317,10 +318,13 @@ async function renderKlasHuiswerk(){
     _klasHw = list.map(hw=>{
       const key=(hw.vak||'')+'|'+(hw.domein||'')+'|'+(hw.created_at||'');
       let vakId=null,domId=null,act='openKlas()';
-      const vak = vakken.find(v=>v.naam===hw.vak) || vakken.find(v=>nrm(v.naam)===nrm(hw.vak)) || (k && vakken.find(v=>v.id===k.vakId));
+      // 1) Voorkeur: de opgeslagen id's (picker/demo) — geen naam-matching nodig.
+      let vak = (hw.vakId && vakken.find(v=>v.id===hw.vakId)) || null;
+      if(!vak) vak = vakken.find(v=>v.naam===hw.vak) || vakken.find(v=>nrm(v.naam)===nrm(hw.vak)) || (k && vakken.find(v=>v.id===k.vakId));
       if(vak){ vakId=vak.id;
-        // Domein OF leerdoel opzoeken op naam, id of genormaliseerde naam.
-        let dom=(vak.domeinen||[]).find(d=>d.naam===hw.domein) || (vak.domeinen||[]).find(d=>d.id===hw.domein) || (vak.domeinen||[]).find(d=>nrm(d.naam)===nrm(hw.domein));
+        let dom = (hw.domId && ((typeof duFind==='function')?duFind(vak,hw.domId):(vak.domeinen||[]).find(d=>d.id===hw.domId))) || null;
+        // 2) Fallback: domein OF leerdoel op naam, id of genormaliseerde naam.
+        if(!dom) dom=(vak.domeinen||[]).find(d=>d.naam===hw.domein) || (vak.domeinen||[]).find(d=>d.id===hw.domein) || (vak.domeinen||[]).find(d=>nrm(d.naam)===nrm(hw.domein));
         if(!dom){ for(const d of (vak.domeinen||[])){ const l=(d.leerdoelen||[]).find(x=>x.naam===hw.domein||x.id===hw.domein||nrm(x.naam)===nrm(hw.domein)); if(l){dom=l;break;} } }
         // Klik op huiswerk → meteen de snelle quiz (hwStart hydrateert eerst het vak).
         if(dom){ domId=dom.id; act=`hwStart('${vak.id}','${dom.id}')`; }
@@ -379,18 +383,12 @@ function _pickDemoDomein(){
     const vak=vakken.find(v=>(v.domeinen||[]).some(hasQ))||vakken[0];
     const dom=(vak.domeinen||[]).find(hasQ)||(vak.domeinen||[])[0];
     if(!vak||!dom)return null;
-    return {vak:vak.naam,domein:dom.naam};
+    return {vak:vak.naam,domein:dom.naam,vakId:vak.id,domId:dom.id};
   }catch(e){return null;}
 }
 function _setDemoHw(){
   const pick=_pickDemoDomein(); if(!pick)return false;
-  const rec={vak:pick.vak,domein:pick.domein,created_at:new Date().toISOString()};
-  try{localStorage.setItem('slagio_hw_demo',JSON.stringify(rec));}catch(e){}
-  // seen/done voor dit onderwerp wissen zodat de melding vers is en de beloning opnieuw kan.
-  try{const pre=pick.vak+'|'+pick.domein+'|';
-    localStorage.setItem('slagio_hw_seen',JSON.stringify(_hwList('slagio_hw_seen').filter(k=>k.indexOf(pre)!==0)));
-    localStorage.setItem('slagio_hw_done',JSON.stringify(_hwList('slagio_hw_done').filter(k=>k.indexOf(pre)!==0)));
-  }catch(e){}
+  hwSetLocal(pick.vak,pick.domein,pick.vakId,pick.domId);
   return true;
 }
 function enableHuiswerkDemo(){
@@ -406,8 +404,8 @@ function disableHuiswerkDemo(){try{localStorage.removeItem('slagio_hw_demo');}ca
 // een echte klas als docent zit, via de Supabase-RPC. Zo kan een docent op één
 // apparaat een echte quiz klaarzetten die de leerling meteen kan doen.
 function _hwHasQ(d){return ((d.nSv||(d.sv&&d.sv.length)||0)>0);}
-function hwSetLocal(vakNaam, domNaam){
-  const rec={vak:vakNaam,domein:domNaam,created_at:new Date().toISOString()};
+function hwSetLocal(vakNaam, domNaam, vakId, domId){
+  const rec={vak:vakNaam,domein:domNaam,vakId:vakId||null,domId:domId||null,created_at:new Date().toISOString()};
   try{localStorage.setItem('slagio_hw_demo',JSON.stringify(rec));}catch(e){}
   try{const pre=vakNaam+'|'+domNaam+'|';
     localStorage.setItem('slagio_hw_seen',JSON.stringify(_hwList('slagio_hw_seen').filter(k=>k.indexOf(pre)!==0)));
@@ -445,7 +443,7 @@ function _zqSet(){
   const vakken=getVK();const vi=+document.getElementById('zq-vak').value;const vak=vakken[vi]||vakken[0];
   const domId=document.getElementById('zq-dom').value; if(!domId)return;
   const dom=(vak.domeinen||[]).find(d=>d.id===domId); if(!dom)return;
-  hwSetLocal(vak.naam, dom.naam);
+  hwSetLocal(vak.naam, dom.naam, vak.id, dom.id);
   try{const k=getActiveKlas();if(k&&k.role==='docent'&&k.code){_klasRpc('klas_huiswerk_set',{p_code:k.code,p_vak:vak.naam,p_domein:dom.naam}).catch(function(){});}}catch(e){}
   const d=document.getElementById('zq-done');
   if(d){d.hidden=false;d.innerHTML=`✅ <b>${_esc(dom.naam)}</b> staat klaar voor de klas.<br><button class="zq-btn zq-btn-2" onclick="closeZetQuiz();try{show('sc-home')}catch(e){};try{renderKlasHome()}catch(e){}">Bekijk als leerling →</button>`;}
