@@ -240,6 +240,11 @@ async function _klasProbe(){
   try{ renderKlasHome(); }catch(e){}
 }
 function renderKlasHome(){
+  // Demo-huiswerk aan/uit via ?hwdemo=1 / ?hwdemo=0 (om de leerling-flow te bekijken).
+  try{
+    if(location.search.indexOf('hwdemo=0')>=0){ if(getDemoHw())localStorage.removeItem('slagio_hw_demo'); }
+    else if(location.search.indexOf('hwdemo=1')>=0 && !getDemoHw() && typeof getVK==='function' && getVK().length){ _setDemoHw(); }
+  }catch(e){}
   try{ renderKlasHuiswerk(); }catch(e){}
   const el = document.getElementById('klas-home');
   if(!el) return;
@@ -267,21 +272,25 @@ function renderKlasHome(){
 // bij afronding synchroon kan checken of een opdracht is voltooid → beloning.
 let _klasHw = [];
 function _hwList(key){try{return JSON.parse(localStorage.getItem(key)||'[]');}catch(e){return [];}}
+function getDemoHw(){try{return JSON.parse(localStorage.getItem('slagio_hw_demo')||'null');}catch(e){return null;}}
 async function renderKlasHuiswerk(){
   const el = document.getElementById('klas-huiswerk-home');
   if(!el) return;
   const k = getActiveKlas();
-  if(!k || !k.id || _klasEnabled===false){ el.innerHTML=''; _klasHw=[]; return; }
+  const demoHw = getDemoHw();
+  const inKlas = !!(k && k.id && _klasEnabled!==false);
+  if(!inKlas && !demoHw){ el.innerHTML=''; _klasHw=[]; return; }
   try{
-    const rows = await _klasRpc('klas_huiswerk_get', { p_klas_id:k.id });
-    const list = Array.isArray(rows)?rows:(rows?[rows]:[]);
+    let rpcRows=[];
+    if(inKlas){ const rows = await _klasRpc('klas_huiswerk_get', { p_klas_id:k.id }); rpcRows = Array.isArray(rows)?rows:(rows?[rows]:[]); }
+    const list=[...(demoHw?[demoHw]:[]), ...rpcRows];
     if(!list.length){ el.innerHTML=''; _klasHw=[]; return; }
     const vakken = (typeof getVK==='function')?getVK():[];
     const done=_hwList('slagio_hw_done'), seen=_hwList('slagio_hw_seen');
     _klasHw = list.map(hw=>{
       const key=(hw.vak||'')+'|'+(hw.domein||'')+'|'+(hw.created_at||'');
       let vakId=null,domId=null,act='openKlas()';
-      const vak = vakken.find(v=>v.naam===hw.vak) || vakken.find(v=>v.id===k.vakId);
+      const vak = vakken.find(v=>v.naam===hw.vak) || (k && vakken.find(v=>v.id===k.vakId));
       if(vak){ vakId=vak.id; const dom=(vak.domeinen||[]).find(d=>d.naam===hw.domein);
         if(dom && typeof goToDomein==='function'){ domId=dom.id; act=`goToDomein('${vak.id}','${dom.id}','snel')`; }
         else act=`openVak('${vak.id}')`; }
@@ -322,5 +331,40 @@ function hwOnQuizDone(vakId, domId){
     return {onderwerp:m.domein||m.vak||'het huiswerk'};
   }catch(e){ return null; }
 }
+
+// ── DEMO-HUISWERK (zonder Supabase) ──────────────────────────────────
+// Injecteert lokaal een nep-huiswerk zodat een docent/eigenaar zelf de hele
+// leerling-flow kan zien: de melding, de kaart en de beloning bij voltooien.
+// Aanzetten: open de app met ?hwdemo=1 (of roep enableHuiswerkDemo() aan in de
+// console). Uitzetten: ?hwdemo=0 of disableHuiswerkDemo().
+function _pickDemoDomein(){
+  try{
+    const vakken=(typeof getVK==='function')?getVK():[];
+    if(!vakken.length)return null;
+    const hasQ=d=>((d.nSv||(d.sv&&d.sv.length)||0)>0);
+    const vak=vakken.find(v=>(v.domeinen||[]).some(hasQ))||vakken[0];
+    const dom=(vak.domeinen||[]).find(hasQ)||(vak.domeinen||[])[0];
+    if(!vak||!dom)return null;
+    return {vak:vak.naam,domein:dom.naam};
+  }catch(e){return null;}
+}
+function _setDemoHw(){
+  const pick=_pickDemoDomein(); if(!pick)return false;
+  const rec={vak:pick.vak,domein:pick.domein,created_at:new Date().toISOString()};
+  try{localStorage.setItem('slagio_hw_demo',JSON.stringify(rec));}catch(e){}
+  // seen/done voor dit onderwerp wissen zodat de melding vers is en de beloning opnieuw kan.
+  try{const pre=pick.vak+'|'+pick.domein+'|';
+    localStorage.setItem('slagio_hw_seen',JSON.stringify(_hwList('slagio_hw_seen').filter(k=>k.indexOf(pre)!==0)));
+    localStorage.setItem('slagio_hw_done',JSON.stringify(_hwList('slagio_hw_done').filter(k=>k.indexOf(pre)!==0)));
+  }catch(e){}
+  return true;
+}
+function enableHuiswerkDemo(){
+  if(!_setDemoHw()){try{if(typeof showToast==='function')showToast('Kies eerst een niveau/vak, dan werkt de demo.','#f97316');}catch(e){}return false;}
+  try{if(typeof show==='function')show('sc-home');}catch(e){}
+  try{renderKlasHome();}catch(e){}
+  return true;
+}
+function disableHuiswerkDemo(){try{localStorage.removeItem('slagio_hw_demo');}catch(e){}try{renderKlasHome();}catch(e){}}
 
 function _esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
