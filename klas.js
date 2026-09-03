@@ -273,6 +273,21 @@ function renderKlasHome(){
 let _klasHw = [];
 function _hwList(key){try{return JSON.parse(localStorage.getItem(key)||'[]');}catch(e){return [];}}
 function getDemoHw(){try{return JSON.parse(localStorage.getItem('slagio_hw_demo')||'null');}catch(e){return null;}}
+// Huiswerk starten: zorg dat het vak gehydrateerd is (anders is domein.sv leeg en
+// belandt de leerling op de vakpagina), start dan direct de snelle quiz op het
+// opgegeven domein.
+function hwStart(vakId, domId){
+  try{
+    if(typeof ensureVakData==='function' && typeof vakHydrated==='function' && typeof APP_LEVEL!=='undefined' && !vakHydrated(APP_LEVEL,vakId)){
+      try{ if(typeof vonkLoading==='function') vonkLoading('Quiz laden…'); }catch(e){}
+      ensureVakData(APP_LEVEL, vakId, function(){ hwStart(vakId, domId); });
+      return;
+    }
+    try{ if(typeof vonkLoadingHide==='function') vonkLoadingHide(); }catch(e){}
+    if(domId && typeof goToDomein==='function'){ goToDomein(vakId, domId, 'snel'); return; }
+    if(typeof openVak==='function') openVak(vakId);
+  }catch(e){ try{ if(typeof openVak==='function') openVak(vakId); }catch(_){} }
+}
 async function renderKlasHuiswerk(){
   const el = document.getElementById('klas-huiswerk-home');
   if(!el) return;
@@ -292,8 +307,9 @@ async function renderKlasHuiswerk(){
       let vakId=null,domId=null,act='openKlas()';
       const vak = vakken.find(v=>v.naam===hw.vak) || (k && vakken.find(v=>v.id===k.vakId));
       if(vak){ vakId=vak.id; const dom=(vak.domeinen||[]).find(d=>d.naam===hw.domein);
-        if(dom && typeof goToDomein==='function'){ domId=dom.id; act=`goToDomein('${vak.id}','${dom.id}','snel')`; }
-        else act=`openVak('${vak.id}')`; }
+        // Klik op huiswerk → meteen de snelle quiz (hwStart hydrateert eerst het vak).
+        if(dom){ domId=dom.id; act=`hwStart('${vak.id}','${dom.id}')`; }
+        else act=`hwStart('${vak.id}','')`; }
       return {vak:hw.vak, domein:hw.domein, key, vakId, domId, act, isDone:done.includes(key)};
     });
     // Nieuw huiswerk? → duidelijke, eenmalige melding.
