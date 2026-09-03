@@ -239,7 +239,7 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
       </div>
     </div>
     <div class="gate-foot">
-      <a onclick="loadDemo()" style="cursor:pointer">Bekijk een voorbeeld</a>
+      <a onclick="loadDemo()" style="cursor:pointer">Probeer een demoklas →</a>
       <span class="sep">·</span>
       <a href="/vakken/slagio-school.html">Wat is Slagio School? →</a>
     </div>
@@ -288,7 +288,7 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
       </div>
     </div>
     <div id="demo-note" class="glass hidden" style="padding:12px 16px;font-size:13px;margin-bottom:16px">
-      <b>Voorbeeldweergave</b> met verzonnen data - zo werkt je dashboard zodra je klas oefent.
+      <b>Demoklas met bot-leerlingen.</b> Een volledig werkend dashboard om alles uit te proberen — klik rond, sorteer, zet oefeningen klaar. Klik <b>Vernieuwen</b> voor een nieuwe lichting leerlingen. Bij je eigen klas komt hier je échte data.
     </div>
 
     <!-- 1 · WAAR STAAT DE KLAS -->
@@ -620,30 +620,69 @@ async function assign(btn,vak,domein){
 
 function loadDemo(){
   _demo=true;_viewingDash=true;
+  render(genDemoClass());
+}
+
+// Echte demo-klas met bot-leerlingen. Elke bot heeft een eigen niveau en per-
+// leerdoel scores; radar, domeinen, risico en roster worden hieruit geaggregeerd —
+// precies zoals bij een echte klas. "Vernieuwen" maakt een nieuwe lichting, zodat
+// een docent het hele dashboard interactief kan uitproberen zonder Supabase.
+function genDemoClass(){
   const namen=['Sanne','Daan','Fenna','Lucas','Noor','Sem','Julia','Bram','Milan','Yara','Tess','Sven','Lars','Isa','Roos','Thijs','Evi','Guus','Nora','Jesse','Kiki','Bas','Lieke','Tijn','Mees','Loïs','Guusje','Finn','Amber'];
-  const ll=namen.map((n,i)=>{
-    const base=Math.max(.26,Math.min(.94,.82-i*0.021+Math.sin(i*1.7)*0.06));
-    const inact=i>=23;
-    return {naam:n,gem:base,sessies:inact?(i%3):Math.max(2,Math.round(20-i*0.55)),
-      laatst_actief_dagen:inact?(9+i%9):(i%6),groei:(Math.sin(i*0.9)*0.16)-(i>20?0.06:0)};
+  const letters=['V','K','M','B','D','J','S','T','R','P','L','H','W','G','N','C'];
+  const DOMS=[
+    {vak:'Biologie',domein:'Cellen',lds:[
+      {naam:'Celorganellen herkennen',diff:.30,mis:'Verwart mitochondriën en chloroplasten als plek van de fotosynthese.'},
+      {naam:'Diffusie en osmose',diff:.46,mis:'Denkt dat water van lage naar hoge concentratie stroomt.'},
+      {naam:'Actief transport',diff:.58,mis:'Vergeet dat actief transport energie (ATP) kost.'}]},
+    {vak:'Biologie',domein:'Stofwisseling',lds:[
+      {naam:'Enzymwerking',diff:.42,mis:'Denkt dat een enzym bij hoge temperatuur altijd sneller werkt.'},
+      {naam:'Fotosynthese vs. verbranding',diff:.60,mis:'Wisselt de reactanten en producten van de twee processen om.'},
+      {naam:'ATP als energiedrager',diff:.68,mis:'Ziet ATP als voedingsstof in plaats van energiedrager.'}]},
+    {vak:'Biologie',domein:'Erfelijkheid',lds:[
+      {naam:'Dominant vs. recessief',diff:.34,mis:'Noemt een kenmerk dominant omdat het vaker voorkomt.'},
+      {naam:'Kruisingsschema opstellen',diff:.50,mis:'Zet de allelen van één ouder verkeerd in het schema.'},
+      {naam:'Geslachtsgebonden overerving',diff:.64,mis:'Vergeet dat mannen maar één X-chromosoom hebben.'}]},
+    {vak:'Biologie',domein:'Ecologie',lds:[
+      {naam:'Voedselweb interpreteren',diff:.30,mis:'Keert de pijlrichting in het voedselweb om.'},
+      {naam:'Koolstofkringloop',diff:.52,mis:'Vergeet de rol van verbranding van fossiele brandstoffen.'}]}
+  ];
+  const clip=(v,a,b)=>Math.max(a,Math.min(b,v));
+  const rnd=(m,s)=>{let x=0;for(let i=0;i<3;i++)x+=Math.random();return m+(x/3-0.5)*2*s;}; // ~normaal
+  const allLds=[];DOMS.forEach(d=>d.lds.forEach(l=>allLds.push({dom:d.domein,l})));
+  const N=namen.length;
+
+  const students=namen.map((n,i)=>{
+    const ability=clip(rnd(0.63,0.17),0.24,0.97);
+    const inact=Math.random()<0.18;
+    const dagen=inact?(10+Math.floor(Math.random()*16)):Math.floor(Math.random()*6);
+    const sessies=inact?(1+Math.floor(Math.random()*3)):(6+Math.floor(Math.random()*18));
+    const groei=clip(rnd((ability-0.55)*0.18,0.06),-0.22,0.22);
+    const scores={};
+    allLds.forEach(x=>{scores[x.dom+'|'+x.l.naam]=clip(ability+(0.46-x.l.diff)+rnd(0,0.10)-(inact?0.06:0),0.05,0.99);});
+    return {naam:n+' '+letters[i%letters.length]+'.',dagen,sessies,groei,scores};
   });
-  const doms=[
-    {vak:'Wiskunde A',domein:'Statistiek',gem:.41,zwak:17},
-    {vak:'Wiskunde A',domein:'Kansrekening',gem:.58,zwak:11},
-    {vak:'Wiskunde A',domein:'Differentiëren',gem:.68,zwak:7},
-    {vak:'Wiskunde A',domein:'Exponenten',gem:.74,zwak:4},
-    {vak:'Wiskunde A',domein:'Algebra',gem:.82,zwak:2},
-    {vak:'Wiskunde A',domein:'Formules',gem:.88,zwak:1}
-  ];
-  const leerdoelen=[
-    {naam:'Normale verdeling aflezen',gem:.38,under55:19,students:27,topMis:'Verwart het gemiddelde met de standaardafwijking bij het aflezen van de grafiek.'},
-    {naam:'Kansboom opstellen',gem:.44,under55:16,students:26,topMis:'Telt de takken op i.p.v. de kansen te vermenigvuldigen.'},
-    {naam:'Somregel vs. productregel',gem:.52,under55:13,students:27,topMis:'Gebruikt de somregel waar de gebeurtenissen juist afhankelijk zijn.'},
-    {naam:'Afgeleide van een machtsfunctie',gem:.63,under55:9,students:25,topMis:'Vergeet de exponent als factor mee naar voren te halen.'},
-    {naam:'Exponentiële groeifactor',gem:.71,under55:6,students:26,topMis:'Rekent met het groeipercentage i.p.v. de groeifactor (1+p).'},
-    {naam:'Herleiden met machten',gem:.85,under55:2,students:27,topMis:null}
-  ];
-  render({klas:{naam:'4 HAVO Wiskunde A',niveau:'havo',vak:'Wiskunde A',code:'DEMO',leden:namen.length},leerlingen:ll,domeinen:doms,leerdoelen});
+
+  const leerdoelen=allLds.map(x=>{
+    const vals=students.map(s=>s.scores[x.dom+'|'+x.l.naam]);
+    const gem=vals.reduce((a,b)=>a+b,0)/vals.length;
+    const under55=vals.filter(v=>v<0.55).length;
+    return {naam:x.l.naam,dom:x.dom,gem,under55,students:vals.length,
+      topMis:under55>=Math.max(4,Math.round(N*0.22))?x.l.mis:null};
+  });
+
+  const domeinen=DOMS.map(d=>{
+    let sum=0,zwak=0;
+    students.forEach(s=>{const keys=d.lds.map(l=>d.domein+'|'+l.naam);const avg=keys.reduce((a,k)=>a+s.scores[k],0)/keys.length;sum+=avg;if(avg<0.55)zwak++;});
+    return {vak:d.vak,domein:d.domein,gem:sum/N,zwak};
+  });
+
+  const leerlingen=students.map(s=>{
+    const vals=allLds.map(x=>s.scores[x.dom+'|'+x.l.naam]);
+    return {naam:s.naam,gem:vals.reduce((a,b)=>a+b,0)/vals.length,sessies:s.sessies,laatst_actief_dagen:s.dagen,groei:s.groei};
+  });
+
+  return {klas:{naam:'5 HAVO Biologie',niveau:'havo',vak:'Biologie',code:'DEMO',leden:N},leerlingen,domeinen,leerdoelen};
 }
 
 /* ══ BOOT ══ */
