@@ -1,3 +1,28 @@
+// ═══════ SLAGIO AI (slice 5) ═══════
+// Client-seam naar de AI-uitleg. LEEG = uit: de app valt dan terug op de al
+// aanwezige, voorgegenereerde uo/uh-uitleg (werkt, gratis). Zet dit ná het
+// deployen van de Edge Function op de functie-URL, dan lichten de AI-knoppen op:
+//   const SLAGIO_AI_ENDPOINT='https://wcfenegohryxhatzxvtw.supabase.co/functions/v1/slagio-ai';
+const SLAGIO_AI_ENDPOINT='';
+const AI_DAILY=3; // gratis AI-uitleggen per dag (client-side; server enforced later)
+function aiEnabled(){return !!SLAGIO_AI_ENDPOINT;}
+function _aiDayKey(){return 'slagio_ai_'+new Date().toISOString().slice(0,10);}
+function aiQuotaLeft(){try{const n=parseInt(localStorage.getItem(_aiDayKey())||'0',10);return Math.max(0,AI_DAILY-(isNaN(n)?0:n));}catch(e){return AI_DAILY;}}
+function _aiConsume(){try{const k=_aiDayKey();const n=parseInt(localStorage.getItem(k)||'0',10);localStorage.setItem(k,String((isNaN(n)?0:n)+1));}catch(e){}}
+// Vraagt de AI om een persoonlijke uitleg. Geeft {text} bij succes, {limit:true}
+// als de dag-limiet op is, of null (→ de aanroeper gebruikt de content-fallback).
+async function callSlagioAI(payload){
+  if(!SLAGIO_AI_ENDPOINT)return null;
+  if(aiQuotaLeft()<=0)return {limit:true};
+  try{
+    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','authorization':'Bearer '+SUPABASE_KEY},body:JSON.stringify(payload||{})});
+    if(!r.ok)return null;
+    const j=await r.json().catch(()=>null);
+    if(j&&j.text){_aiConsume();try{trackEvent('ai_uitleg',{vak:payload&&payload.vak,domein:payload&&payload.domein});}catch(e){}return {text:String(j.text)};}
+    return null;
+  }catch(e){return null;}
+}
+
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';

@@ -6999,6 +6999,13 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .vc-why{background:var(--soft,rgba(127,127,127,.06));border-left:3px solid var(--or);border-radius:0 12px 12px 0;padding:11px 14px;margin-bottom:16px}
 .vc-why-lbl{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--or);margin-bottom:4px}
 .vc-why-tx{font-size:13.5px;color:var(--dk);line-height:1.55}
+/* AI-uitleg in de Vonk-coach (slice 5) */
+.vc-ai-btn{display:inline-flex;align-items:center;gap:7px;width:100%;justify-content:center;margin-bottom:14px;padding:11px 14px;border-radius:12px;border:1px solid rgba(139,92,246,.32);background:linear-gradient(135deg,rgba(139,92,246,.14),rgba(96,165,250,.12));color:#8b5cf6;font-family:var(--font);font-weight:800;font-size:13.5px;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:all .18s}
+.vc-ai-btn:hover:not(:disabled){background:linear-gradient(135deg,rgba(139,92,246,.22),rgba(96,165,250,.18));border-color:rgba(139,92,246,.5)}
+.vc-ai-btn:disabled{opacity:.55;cursor:default}
+.vc-ai-left{font-size:11px;font-weight:700;color:#8b5cf6;background:rgba(139,92,246,.14);border-radius:999px;padding:2px 8px}
+.vc-ai-out{background:rgba(139,92,246,.07);border:1px solid rgba(139,92,246,.2);border-radius:12px;padding:12px 14px;margin-bottom:16px;font-size:13.5px;line-height:1.6;color:var(--dk)}
+.vc-ai-load{color:#8b5cf6;font-weight:700}
 .vc-cta{width:100%;padding:14px;border:none;border-radius:14px;background:linear-gradient(180deg,#fb8c3e,var(--or));color:#fff;font-family:var(--font);font-weight:800;font-size:14.5px;cursor:pointer;box-shadow:0 6px 18px rgba(var(--or-rgb),.3);-webkit-tap-highlight-color:transparent}
 .vc-cta:active{transform:scale(.98)}
 .vc-practice-lbl{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--or);margin-bottom:8px}

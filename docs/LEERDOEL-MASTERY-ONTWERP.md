@@ -134,8 +134,14 @@ bovenop Slagio's kennisstructuur i.p.v. ernaast.
   "X onder 55%", "Vaak fout: …"). Demo-modus toont voorbeelddata (testbaar zónder
   Supabase). Nog te doen (vergt Supabase-RPC): per-leerdoel toewijzen en een
   server-side rollup i.p.v. events client-side aggregeren bij grote klassen.
-- **Slice 5 — Slagio AI.** Context-payload → uitleg-bij-fout (3/dag gratis,
-  Slagio+ limiet), "leg dit onderwerp uit" → Test me, hint-eerst-pedagogiek.
+- **Slice 5 — Slagio AI (client + Edge Function KLAAR; deploy openstaand).**
+  `callSlagioAI()` (`cloud.js`) stuurt de `questionMisconception`-payload naar een
+  Edge Function; de fout-coach (`foutenboek.js`) krijgt een "Laat Vonk het écht
+  uitleggen"-knop met 3/dag-limiet en nette fallback naar de canonieke uo/uh-uitleg.
+  De Edge Function (`supabase/functions/slagio-ai/`) is geschreven (hint-eerst,
+  `claude-opus-5`, server-side sleutel). Aanzetten = deployen + `SLAGIO_AI_ENDPOINT`
+  in `cloud.js` invullen (zie de function-README). Nog te doen: "leg dit onderwerp
+  uit" → Test me, en server-side limiet.
 
 Elke slice is los te releasen en versterkt dezelfde kern. De volgorde is bewust:
 niets bovenop bouwen vóór de spine (slice 1) en de foutsignalen (slice 3) er zijn.

@@ -415,7 +415,10 @@ function openVonkCoach(ctx) {
   const uit = (typeof fbUitlegFor === 'function' && fbUitlegFor(ctx.vakId, ctx.domId, ctx.v)) || null;
   const enr = (typeof fbEnrich === 'function' && fbEnrich(ctx.vakId, ctx.domId, ctx.v)) || null;
   const why = uit || (enr && enr.m) || ctx.u || 'Kijk goed naar het juiste antwoord en waaróm dat klopt. Snap je die stap, dan pak je een vergelijkbare vraag zo.';
+  ctx.why = why; // bewaren zodat de AI-uitleg op de canonieke content kan voortbouwen
   const juist = ctx.o ? (ctx.o[ctx.c] || '') : '';
+  const aiOn = (typeof aiEnabled === 'function' && aiEnabled());
+  const aiBlok = aiOn ? `<button class="vc-ai-btn" id="vc-ai-btn" onclick="vonkCoachAI()"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M3 12h3M18 12h3M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg> Laat Vonk het écht uitleggen <span class="vc-ai-left">nog ${(typeof aiQuotaLeft==='function'?aiQuotaLeft():3)}</span></button><div class="vc-ai-out" id="vc-ai-out" hidden></div>` : '';
   const fox = (typeof mascotSVG === 'function') ? mascotSVG('kijk', 60) : '🦊';
   el.innerHTML = `<div class="vc-back" onclick="closeVonkCoach()"></div>
     <div class="vc-card" role="dialog">
@@ -429,11 +432,41 @@ function openVonkCoach(ctx) {
           <span class="vc-a vc-a-right"><b>Juist</b>${_fbEsc(juist)}</span>
         </div>
         <div class="vc-why"><span class="vc-why-lbl">Waarom ging dit fout?</span><span class="vc-why-tx">${_fbEsc(why)}</span></div>
+        ${aiBlok}
       </div>
       <button class="vc-cta" id="vc-cta" onclick="vonkCoachPractice()">Oefen een vergelijkbare vraag →</button>
     </div>`;
   requestAnimationFrame(() => el.classList.add('on'));
   try { trackEvent('vonk_coach_open', { dom: ctx.domId }); } catch (e) {}
+}
+
+// AI-uitleg (slice 5): Vonk legt persoonlijk uit waarom jóuw antwoord niet klopt,
+// voortbouwend op de canonieke uitleg. Valt netjes terug als de AI niet kan.
+async function vonkCoachAI() {
+  const ctx = _vcCtx; if (!ctx) return;
+  const btn = document.getElementById('vc-ai-btn'); const out = document.getElementById('vc-ai-out');
+  if (!btn || !out) return;
+  if (typeof aiQuotaLeft === 'function' && aiQuotaLeft() <= 0) {
+    out.hidden = false; out.innerHTML = 'Je gratis AI-uitleg van vandaag is op — morgen weer 3! ✨'; btn.disabled = true; return;
+  }
+  btn.disabled = true; out.hidden = false; out.innerHTML = '<span class="vc-ai-load">🦊 Vonk denkt na…</span>';
+  const juist = ctx.o ? (ctx.o[ctx.c] || '') : '';
+  const payload = {
+    niveau: (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : ''),
+    vak: ctx.vakNaam || '', domein: ctx.domNaam || '',
+    vraag: ctx.v || '', gekozen: ctx.chosen || '', juist: juist,
+    waarom: ctx.why || '', onthoud: ctx.u || ''
+  };
+  let res = null; try { res = await callSlagioAI(payload); } catch (e) {}
+  if (res && res.text) {
+    out.innerHTML = _fbEsc(res.text).replace(/\n/g, '<br>');
+    const l = btn.querySelector('.vc-ai-left'); if (l) l.textContent = 'nog ' + (typeof aiQuotaLeft === 'function' ? aiQuotaLeft() : 0);
+    if (typeof aiQuotaLeft === 'function' && aiQuotaLeft() <= 0) btn.disabled = true; else btn.disabled = false;
+  } else if (res && res.limit) {
+    out.innerHTML = 'Je gratis AI-uitleg van vandaag is op — morgen weer 3! ✨'; btn.disabled = true;
+  } else {
+    out.innerHTML = 'Vonk kon het nu even niet uitleggen. De uitleg hierboven brengt je ook op weg. 💪'; btn.disabled = false;
+  }
 }
 
 function vonkCoachPractice() {
