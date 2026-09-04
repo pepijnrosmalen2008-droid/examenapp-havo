@@ -65,6 +65,7 @@ a{color:var(--or);text-decoration:none}
 .btn-p{background:linear-gradient(180deg,var(--or-2),var(--or));color:#fff;box-shadow:0 6px 16px rgba(var(--or-rgb),.3),0 1px 0 rgba(255,255,255,.35) inset}
 .btn-p:hover{filter:brightness(1.03)}
 .btn-glass{background:var(--glass);border:1px solid var(--glass-bd);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.btn-ok{background:rgba(43,165,91,.14);border:1px solid rgba(43,165,91,.4);color:var(--green)}
 .btn-sm{padding:8px 13px;font-size:12.5px;border-radius:11px}
 
 .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
@@ -195,6 +196,14 @@ select.in{appearance:none;-webkit-appearance:none;background-image:url("data:ima
 .sd-mis{margin-top:6px;font-size:12px;line-height:1.45;color:var(--dk);background:rgba(240,140,40,.09);border:1px solid rgba(240,140,40,.2);border-radius:8px;padding:6px 9px}
 .sd-mis b{color:#e07a12}
 .sd-note{font-size:13px;color:var(--mu);padding:14px;background:var(--soft);border-radius:12px;text-align:center}
+.sd-hw{display:flex;flex-direction:column;gap:8px;margin-top:2px}
+.sd-hw-lead{font-size:12.5px;color:var(--mu);margin:0 0 11px;line-height:1.45}
+.sd-hw-row{display:flex;align-items:center;gap:11px;border:1px solid var(--stroke);background:var(--soft);border-radius:12px;padding:9px 10px 9px 13px}
+.sd-hw-nm{flex:1;min-width:0;font-size:13.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sd-hw-nm small{font-weight:700;font-variant-numeric:tabular-nums}
+.sd-hw-row .btn{flex:none}
+.sd-ld-assign{margin-top:7px;padding:5px 11px;font-size:11.5px;font-weight:700;border-radius:9px;border:1px solid rgba(var(--or-rgb),.4);background:rgba(var(--or-rgb),.08);color:var(--or);cursor:pointer}
+.sd-ld-assign.done{border-color:rgba(43,165,91,.4);background:rgba(43,165,91,.12);color:var(--green)}
 @media(max-width:520px){.sd-stats{grid-template-columns:repeat(2,1fr)}}
 .risk-info{flex:1;min-width:0}
 .risk-naam{font-weight:800;font-size:14px;letter-spacing:-.1px}
@@ -652,6 +661,18 @@ async function assign(btn,vak,domein){
   }catch(e){btn.disabled=false;btn.textContent=old;alert('Kon niet klaarzetten. Draai eerst sql/klas-setup.sql (bevat ook klas_huiswerk_set).');}
 }
 
+// Persoonlijk huiswerk: gericht aan één leerling (p_doel_naam). Alleen die
+// leerling ziet het als "🎯 Persoonlijk huiswerk" en krijgt de beloning.
+async function assignStu(btn,naam,vak,domein){
+  btn.disabled=true;const old=btn.textContent;btn.textContent='…';
+  if(_demo){btn.textContent='Klaargezet ✓';btn.classList.remove('btn-p');btn.classList.add('btn-ok');return;}
+  try{
+    const {error}=await SB.rpc('klas_huiswerk_set',{p_code:_last,p_vak:vak,p_domein:domein,p_doel_naam:naam});
+    if(error)throw error;
+    btn.textContent='Klaargezet ✓';btn.classList.remove('btn-p');btn.classList.add('btn-ok');
+  }catch(e){btn.disabled=false;btn.textContent=old;alert('Kon niet klaarzetten. Draai eerst de nieuwste sql/klas-setup.sql (klas_huiswerk_set met doel_naam).');}
+}
+
 // ══ PER-LEERLING DRILL-DOWN ══
 function openStudent(naam){
   const d=window._dashD; if(!d) return;
@@ -661,15 +682,23 @@ function openStudent(naam){
   const stChip={g:'ch-g',a:'ch-a',r:'ch-r'}[r.status];
   const stu=(d._students||[]).find(x=>x.naam===naam);
   const stat=(lbl,val,style)=>`<div class="sd-stat"><div class="sd-stat-v"${style?' style="'+style+'"':''}>${val}</div><div class="sd-stat-l">${lbl}</div></div>`;
+  const vaknaam=(d.klas&&d.klas.vak)||'';
   let body;
   if(stu && d._lds){
     const lds=d._lds.map(l=>({naam:l.naam,dom:l.dom,mis:l.mis,sc:stu.scores[l.dom+'|'+l.naam]||0})).sort((a,b)=>a.sc-b.sc);
     const strong=lds[lds.length-1], weak=lds[0];
     body=`<div class="sd-chips"><span class="sd-chip sd-chip-g">Sterkste · ${esc(strong.naam)} · ${Math.round(strong.sc*100)}%</span><span class="sd-chip sd-chip-r">Zwakste · ${esc(weak.naam)} · ${Math.round(weak.sc*100)}%</span></div>`
-      +`<div class="sd-h">Beheersing per leerdoel</div><div class="sd-lds">`+lds.map(l=>{const p=Math.round(l.sc*100);return `<div class="sd-ld"><div class="sd-ld-top"><span class="sd-ld-nm">${esc(l.naam)} <small>· ${esc(l.dom)}</small></span><span class="num" style="color:${pctCol(l.sc)};font-weight:800">${p}%</span></div><div class="sd-bar"><i style="width:${p}%;background:${pctCol(l.sc)}"></i></div>${l.sc<0.55?`<div class="sd-mis"><b>Vaak fout:</b> ${esc(l.mis)}</div>`:''}</div>`;}).join('')+`</div>`;
+      +`<div class="sd-h">Beheersing per leerdoel</div><div class="sd-lds">`+lds.map(l=>{const p=Math.round(l.sc*100);return `<div class="sd-ld"><div class="sd-ld-top"><span class="sd-ld-nm">${esc(l.naam)} <small>· ${esc(l.dom)}</small></span><span class="num" style="color:${pctCol(l.sc)};font-weight:800">${p}%</span></div><div class="sd-bar"><i style="width:${p}%;background:${pctCol(l.sc)}"></i></div>${l.sc<0.55?`<div class="sd-mis"><b>Vaak fout:</b> ${esc(l.mis)}</div><button class="sd-ld-assign" onclick="assignStu(this,'${esc(naam)}','${esc(vaknaam)}','${esc(l.dom)}')">📌 Zet ${esc(l.dom)} klaar voor ${esc(naam)} →</button>`:''}</div>`;}).join('')+`</div>`;
   } else {
     body=`<div class="sd-note">Beheersing per leerdoel verschijnt hier zodra deze leerling meer oefent.</div>`;
   }
+  // Persoonlijk huiswerk: elk domein van dit vak gericht aan déze leerling.
+  const homs=(d.domeinen||[]).slice().sort((a,b)=>a.gem-b.gem);
+  const hwSection = homs.length
+    ? `<div class="sd-h">📌 Persoonlijk huiswerk voor ${esc(naam)}</div>`
+      +`<p class="sd-hw-lead">Alleen ${esc(naam)} ziet dit als persoonlijk huiswerk op de startpagina — en verdient er extra XP + een kist mee. Zwakste onderwerpen bovenaan.</p>`
+      +`<div class="sd-hw">`+homs.map(dm=>`<div class="sd-hw-row"><div class="sd-hw-nm">${esc(dm.domein)} <small style="color:${pctCol(dm.gem)}">${Math.round(dm.gem*100)}%</small></div><button class="btn btn-p btn-sm" onclick="assignStu(this,'${esc(naam)}','${esc(dm.vak||vaknaam)}','${esc(dm.domein)}')">Zet klaar →</button></div>`).join('')+`</div>`
+    : '';
   let ov=document.getElementById('student-modal');
   if(!ov){ov=document.createElement('div');ov.id='student-modal';ov.className='sd-ov';ov.addEventListener('click',e=>{if(e.target===ov)closeStudent();});document.body.appendChild(ov);}
   ov.innerHTML=`<div class="sd-card">
@@ -683,6 +712,7 @@ function openStudent(naam){
       ${stat('Groei (2 wk)', growHtml(s.groei))}
     </div>
     ${body}
+    ${hwSection}
   </div>`;
   requestAnimationFrame(()=>ov.classList.add('on'));
 }

@@ -378,14 +378,15 @@ async function renderKlasHuiswerk(){
   if(!inKlas && !demoHw){ el.innerHTML=''; _klasHw=[]; return; }
   try{
     let rpcRows=[];
-    if(inKlas){ const rows = await _klasRpc('klas_huiswerk_get', { p_klas_id:k.id }); rpcRows = Array.isArray(rows)?rows:(rows?[rows]:[]); }
+    if(inKlas){ const rows = await _klasRpc('klas_huiswerk_get', { p_klas_id:k.id, p_naam:(k.naamInKlas||null) }); rpcRows = Array.isArray(rows)?rows:(rows?[rows]:[]); }
     const list=[...(demoHw?[demoHw]:[]), ...rpcRows];
     if(!list.length){ el.innerHTML=''; _klasHw=[]; return; }
     const vakken = (typeof getVK==='function')?getVK():[];
     const done=_hwList('slagio_hw_done'), seen=_hwList('slagio_hw_seen');
     const nrm=s=>String(s||'').toLowerCase().replace(/\s+/g,' ').trim();
     _klasHw = list.map(hw=>{
-      const key=(hw.vak||'')+'|'+(hw.domein||'')+'|'+(hw.created_at||'');
+      const persoonlijk=!!(hw.doel_naam);
+      const key=(hw.vak||'')+'|'+(hw.domein||'')+'|'+(hw.doel_naam||'')+'|'+(hw.created_at||'');
       let vakId=null,domId=null,act='openKlas()';
       // 1) Voorkeur: de opgeslagen id's (picker/demo) — geen naam-matching nodig.
       let vak = (hw.vakId && vakken.find(v=>v.id===hw.vakId)) || null;
@@ -398,24 +399,31 @@ async function renderKlasHuiswerk(){
         // Klik op huiswerk → meteen de snelle quiz (hwStart hydrateert eerst het vak).
         if(dom){ domId=dom.id; act=`hwStart('${vak.id}','${dom.id}')`; }
         else act=`hwStart('${vak.id}','')`; }
-      return {vak:hw.vak, domein:hw.domein, key, vakId, domId, act, isDone:done.includes(key)};
+      return {vak:hw.vak, domein:hw.domein, persoonlijk, key, vakId, domId, act, isDone:done.includes(key)};
     });
-    // Nieuw huiswerk? → duidelijke, eenmalige melding.
+    // Nieuw huiswerk? → duidelijke, eenmalige melding (persoonlijk = extra nadruk).
     const fresh=_klasHw.filter(h=>!seen.includes(h.key));
     if(fresh.length){
       fresh.forEach(h=>seen.push(h.key));
       try{localStorage.setItem('slagio_hw_seen',JSON.stringify(seen.slice(-60)));}catch(e){}
-      try{ if(typeof showToast==='function') showToast('📌 Nieuw huiswerk van je docent!','#f59e0b',3400); }catch(e){}
+      const pers=fresh.some(h=>h.persoonlijk);
+      try{ if(typeof showToast==='function') showToast(pers?'🎯 Persoonlijk huiswerk van je docent — speciaal voor jou!':'📌 Nieuw huiswerk van je docent!','#f59e0b',3600); }catch(e){}
       try{ if(typeof haptic==='function') haptic([20,45,20,45,20]); }catch(e){}
     }
     const open=_klasHw.filter(h=>!h.isDone);
-    const show=open[0]||_klasHw[0];
+    // Persoonlijk huiswerk krijgt voorrang boven klas-breed.
+    const show=open.find(h=>h.persoonlijk)||open[0]||_klasHw[0];
     if(show.isDone){
       el.innerHTML=`<div class="klas-home-card klas-home-hw hw-done"><div class="klas-home-ico">✅</div><div class="klas-home-txt"><div class="klas-home-t">Huiswerk gedaan — top!</div><div class="klas-home-s">${_esc(show.domein||show.vak||'')} afgerond en beloond</div></div></div>`;
     }else{
-      el.innerHTML=`<div class="klas-home-card klas-home-hw" onclick="${show.act}" role="button" tabindex="0">
-        <div class="klas-home-ico">📌</div>
-        <div class="klas-home-txt"><div class="klas-home-t">Huiswerk van je docent <span class="hw-badge">+ beloning</span></div><div class="klas-home-s">Oefen ${_esc(show.domein||show.vak||'de opgegeven stof')} → verdien extra XP én een kist</div></div>
+      const titel=show.persoonlijk?'Persoonlijk huiswerk':'Huiswerk van je docent';
+      const ico=show.persoonlijk?'🎯':'📌';
+      const sub=show.persoonlijk
+        ? `Speciaal voor jou: oefen ${_esc(show.domein||show.vak||'de opgegeven stof')} → extra XP én een kist`
+        : `Oefen ${_esc(show.domein||show.vak||'de opgegeven stof')} → verdien extra XP én een kist`;
+      el.innerHTML=`<div class="klas-home-card klas-home-hw${show.persoonlijk?' klas-home-hw-pers':''}" onclick="${show.act}" role="button" tabindex="0">
+        <div class="klas-home-ico">${ico}</div>
+        <div class="klas-home-txt"><div class="klas-home-t">${titel} <span class="hw-badge">+ beloning</span></div><div class="klas-home-s">${sub}</div></div>
         <div class="klas-home-arr">→</div></div>`;
     }
   }catch(e){ el.innerHTML=''; _klasHw=[]; }

@@ -66,9 +66,12 @@ create table if not exists public.klas_huiswerk(
   klas_id    uuid not null references public.klassen(id) on delete cascade,
   vak        text,
   domein     text,
+  doel_naam  text,   -- null = hele klas; anders gericht aan die ene leerling (voornaam)
   created_at timestamptz not null default now()
 );
 create index if not exists klas_huiswerk_klas_idx on public.klas_huiswerk(klas_id, created_at desc);
+-- Voor bestaande installaties waar de tabel al bestond zonder deze kolom:
+alter table public.klas_huiswerk add column if not exists doel_naam text;
 
 -- Weekuitdaging: welk klasdoel (tier 0=brons,1=zilver,2=goud) heeft een leerling
 -- (per device) al opgehaald in welke week. Zo krijgt elke leerling de beloning
@@ -291,32 +294,40 @@ grant execute on function public.klas_dashboard(text) to anon, authenticated;
 
 
 -- ─── 10) ÉÉN-KLIK HUISWERK: docent zet oefenset klaar, leerling ziet 'm ───
--- Docent (via klascode) zet huiswerk klaar. Zelfde onderwerp binnen 12u = geen dubbele.
-create or replace function public.klas_huiswerk_set(p_code text, p_vak text, p_domein text)
+-- Docent (via klascode) zet huiswerk klaar — voor de hele klas (p_doel_naam null)
+-- of gericht aan één leerling (p_doel_naam = voornaam). Zelfde onderwerp voor
+-- hetzelfde doel binnen 12u = geen dubbele.
+create or replace function public.klas_huiswerk_set(
+  p_code text, p_vak text, p_domein text, p_doel_naam text default null)
 returns void language plpgsql security definer set search_path = public as $$
-declare v_id uuid;
+declare v_id uuid; v_doel text;
 begin
   select id into v_id from public.klassen where upper(code)=upper(p_code) limit 1;
   if v_id is null then raise exception 'klas_niet_gevonden'; end if;
+  v_doel := nullif(trim(coalesce(p_doel_naam,'')),'');
   if exists(select 1 from public.klas_huiswerk
              where klas_id=v_id and vak=p_vak and domein=p_domein
+               and coalesce(lower(doel_naam),'') = coalesce(lower(v_doel),'')
                and created_at > now()-interval '12 hour') then
     return;
   end if;
-  insert into public.klas_huiswerk(klas_id, vak, domein) values (v_id, p_vak, p_domein);
+  insert into public.klas_huiswerk(klas_id, vak, domein, doel_naam)
+    values (v_id, p_vak, p_domein, v_doel);
 end;
 $$;
-grant execute on function public.klas_huiswerk_set(text,text,text) to anon, authenticated;
+grant execute on function public.klas_huiswerk_set(text,text,text,text) to anon, authenticated;
 
--- Leerling haalt het actuele huiswerk op (laatste 7 dagen, nieuwste eerst).
-create or replace function public.klas_huiswerk_get(p_klas_id uuid)
-returns table(vak text, domein text, created_at timestamptz)
+-- Leerling haalt het actuele huiswerk op (laatste 7 dagen, nieuwste eerst):
+-- klas-breed huiswerk (doel_naam null) + het huiswerk dat op zíjn voornaam staat.
+create or replace function public.klas_huiswerk_get(p_klas_id uuid, p_naam text default null)
+returns table(vak text, domein text, doel_naam text, created_at timestamptz)
 language sql security definer set search_path = public as $$
-  select vak, domein, created_at from public.klas_huiswerk
+  select vak, domein, doel_naam, created_at from public.klas_huiswerk
    where klas_id = p_klas_id and created_at > now()-interval '7 day'
-   order by created_at desc limit 5;
+     and (doel_naam is null or lower(doel_naam) = lower(coalesce(p_naam,'')))
+   order by created_at desc limit 8;
 $$;
-grant execute on function public.klas_huiswerk_get(uuid) to anon, authenticated;
+grant execute on function public.klas_huiswerk_get(uuid, text) to anon, authenticated;
 
 
 -- "Klas deze week": gezamenlijke week-XP (sinds maandag), aantal actieve leden

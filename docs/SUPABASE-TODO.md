@@ -14,7 +14,9 @@ Project: `wcfenegohryxhatzxvtw` (Dashboard → https://supabase.com/dashboard).
 **Wat**: maakt/actualiseert alle klas-tabellen en RPC's — inclusief de **nieuwe
 weekuitdaging-beloning** (`klas_challenge_claims` + `klas_challenge_claim`), zodat
 een leerling de klasdoel-munten exact één keer per week krijgt, ook op een ander
-apparaat.
+apparaat, én **huiswerk op individueel niveau** (`klas_huiswerk` krijgt een
+`doel_naam`-kolom; `klas_huiswerk_set`/`klas_huiswerk_get` zijn bijgewerkt) zodat
+de docent een oefenset aan één specifieke leerling kan geven.
 
 **Hoe**:
 1. Supabase Dashboard → **SQL Editor** → **New query**.
