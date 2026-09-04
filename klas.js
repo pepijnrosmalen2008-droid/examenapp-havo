@@ -175,31 +175,82 @@ function _klasBinnenkort(){
   return '<div class="klas-empty">De klasfunctie wordt binnenkort geactiveerd. Kom snel terug!</div>';
 }
 
-// ── "Klas deze week": gezamenlijke week-XP + collectief doel + klas-streak ──
+// ── "Klasuitdaging deze week": vak-specifiek, gezamenlijk, met getrapte doelen ──
+// Een klas is voor één vak op één niveau; de weekuitdaging is dus altijd dat vak.
+// Drie klasniveaus (brons/zilver/goud) schalen mee met de klasgrootte. Zodra de
+// klas samen een niveau haalt, krijgt élke leerling (die het scherm opent) een
+// eenmalige beloning voor dat weeknummer — echt teamgevoel, echt dopamine.
+function _klasWeekKey(){
+  const d=new Date(); const day=(d.getDay()+6)%7; // maandag=0
+  const monday=new Date(d); monday.setDate(d.getDate()-day); monday.setHours(0,0,0,0);
+  return monday.getFullYear()+'-'+Math.floor(monday.getTime()/6048e5); // uniek per ISO-week
+}
+function _klasVakNaam(k){
+  try{ if(k&&k.vakId&&typeof getVK==='function'){ const v=getVK().find(x=>x.id===k.vakId); if(v) return v.naam; } }catch(e){}
+  return null;
+}
 function _klasRenderWeek(week, leden){
   const box = document.getElementById('klas-week'); if(!box) return;
   let w = week; if(Array.isArray(w)) w = w[0];
   if(!w || typeof w !== 'object'){ box.innerHTML=''; return; }
+  const k = getActiveKlas();
+  const vakNaam = _klasVakNaam(k);
   const total = Math.max(0, parseInt(w.total)||0);
   const streak = Math.max(0, parseInt(w.streak)||0);
   const ledenWeek = Math.max(0, parseInt(w.leden_week)||0);
   const n = Math.max(1, parseInt(leden)||ledenWeek||1);
-  const goal = Math.max(1000, n*600);
-  const pct = Math.min(100, Math.round(total/goal*100));
   const fmt = x => x.toLocaleString('nl-NL');
+  // Drie getrapte klasdoelen (schalen met klasgrootte).
+  const TIERS = [
+    { naam:'Brons',  ico:'🥉', goal:Math.max(1200, n*400),  munt:40  },
+    { naam:'Zilver', ico:'🥈', goal:Math.max(2600, n*900),  munt:80  },
+    { naam:'Goud',   ico:'🥇', goal:Math.max(4600, n*1700), munt:150 }
+  ];
+  let reachedIdx = -1;
+  for(let i=0;i<TIERS.length;i++){ if(total>=TIERS[i].goal) reachedIdx=i; }
+  const next = TIERS[reachedIdx+1] || null;
+  const prevGoal = reachedIdx>=0 ? TIERS[reachedIdx].goal : 0;
+  const segGoal = next ? next.goal : TIERS[TIERS.length-1].goal;
+  const pct = next ? Math.min(100, Math.round((total-prevGoal)/Math.max(1,(next.goal-prevGoal))*100)) : 100;
+  const titel = vakNaam ? `Klasuitdaging · ${_esc(vakNaam)}` : 'Klasuitdaging deze week';
+  const doelLine = next
+    ? `Nog <b>${fmt(next.goal-total)} XP</b> samen tot ${next.ico} ${next.naam} <span class="klas-week-rew">→ +${next.munt} munten p.p.</span>`
+    : `🎉 <b>Goud gehaald!</b> De hele klas is deze week op stoom.`;
+  const pips = TIERS.map((t,i)=>`<span class="klas-week-pip${i<=reachedIdx?' on':''}" title="${t.naam} · ${fmt(t.goal)} XP">${t.ico}</span>`).join('');
   const streakLine = streak>0
-    ? `<div class="klas-week-streak"><span class="klas-week-flame">🔥</span> De klas oefende <b>${streak} dag${streak===1?'':'en'}</b> op rij</div>`
-    : `<div class="klas-week-streak klas-week-off">Nog geen klas-streak - laat vandaag iemand oefenen om 'm te starten</div>`;
+    ? `<div class="klas-week-streak"><span class="klas-week-flame">🔥</span> De klas oefende <b>${streak} dag${streak===1?'':'en'}</b> op rij ${vakNaam?_esc(vakNaam):''}</div>`
+    : `<div class="klas-week-streak klas-week-off">Nog geen klas-streak — laat vandaag iemand ${vakNaam?_esc(vakNaam):'dit vak'} oefenen om 'm te starten</div>`;
   box.innerHTML = `
   <div class="klas-week-card">
     <div class="klas-week-top">
-      <span class="klas-week-title">Klas deze week</span>
+      <span class="klas-week-title">${titel}</span>
       <span class="klas-week-xp">${fmt(total)}<span> XP</span></span>
     </div>
+    <div class="klas-week-tiers">${pips}</div>
     <div class="klas-week-bar"><div class="klas-week-fill" style="width:${pct}%"></div></div>
-    <div class="klas-week-sub">${pct}% van het weekdoel (${fmt(goal)} XP) · ${ledenWeek} actief deze week</div>
+    <div class="klas-week-sub">${doelLine} · ${ledenWeek} actief deze week</div>
     ${streakLine}
   </div>`;
+  // Beloning: leerling die het scherm opent en waarvoor de klas een (nieuw)
+  // niveau heeft gehaald, krijgt eenmalig per week de munten voor dat niveau.
+  try{ if(k && k.role!=='docent' && k.id && reachedIdx>=0) _klasChallengeReward(k.id, reachedIdx, TIERS); }catch(e){}
+}
+function _klasChallengeReward(klasId, reachedIdx, TIERS){
+  let store={}; try{ store=JSON.parse(localStorage.getItem('slagio_klas_ch')||'{}'); }catch(e){}
+  const key=klasId+'|'+_klasWeekKey();
+  const claimed = Number.isFinite(store[key]) ? store[key] : -1;
+  if(reachedIdx<=claimed) return;
+  let munt=0, top=null;
+  for(let i=claimed+1;i<=reachedIdx;i++){ munt+=TIERS[i].munt; top=TIERS[i]; }
+  store[key]=reachedIdx;
+  try{ localStorage.setItem('slagio_klas_ch', JSON.stringify(store)); }catch(e){}
+  if(munt<=0||!top) return;
+  try{ if(typeof addCoins==='function') addCoins(munt); }catch(e){}
+  try{ if(typeof haptic==='function') haptic([25,50,25,50,40]); }catch(e){}
+  setTimeout(()=>{
+    try{ if(typeof showToast==='function') showToast(`${top.ico} Klasdoel ${top.naam} gehaald! Jij en je klas verdienen +${munt} munten`, '#f59e0b', 4200); }catch(e){}
+    try{ if(typeof launchConfetti==='function') launchConfetti('gold'); }catch(e){}
+  }, 600);
 }
 
 // ── Delen / verlaten ─────────────────────────────────────────

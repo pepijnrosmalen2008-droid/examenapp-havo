@@ -6844,6 +6844,10 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .klas-week-streak b{font-weight:800;color:var(--or)}
 .klas-week-flame{font-size:16px;line-height:1}
 .klas-week-off{color:var(--mu);font-weight:500}
+.klas-week-tiers{display:flex;justify-content:space-between;gap:8px;margin:12px 2px 2px}
+.klas-week-pip{flex:1;text-align:center;font-size:17px;line-height:1;filter:grayscale(1);opacity:.4;transition:filter .3s,opacity .3s,transform .3s}
+.klas-week-pip.on{filter:none;opacity:1;transform:scale(1.12)}
+.klas-week-rew{color:var(--or);font-weight:800;white-space:nowrap}
 /* Bord */
 .lg-wrap{max-width:640px;margin:0 auto;padding:12px 14px 90px}
 .lg-intro{text-align:center;margin:6px 0 16px}
