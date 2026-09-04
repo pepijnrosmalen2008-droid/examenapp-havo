@@ -196,6 +196,13 @@ select.in{appearance:none;-webkit-appearance:none;background-image:url("data:ima
 .sd-mis{margin-top:6px;font-size:12px;line-height:1.45;color:var(--dk);background:rgba(240,140,40,.09);border:1px solid rgba(240,140,40,.2);border-radius:8px;padding:6px 9px}
 .sd-mis b{color:#e07a12}
 .sd-note{font-size:13px;color:var(--mu);padding:14px;background:var(--soft);border-radius:12px;text-align:center}
+.sd-hwc{margin:0 0 14px}
+.sd-hwc-empty{font-size:12.5px;color:var(--mu);padding:10px 12px;background:var(--soft);border-radius:11px}
+.sd-hwc-lbl{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--mu);margin:0 0 7px}
+.sd-hwc-row{display:flex;align-items:center;gap:10px;border:1px solid rgba(139,92,246,.35);background:rgba(139,92,246,.07);border-radius:11px;padding:8px 8px 8px 12px;margin-bottom:7px}
+.sd-hwc-nm{flex:1;min-width:0;font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sd-hwc-x{flex:none;padding:6px 11px;font-size:11.5px;font-weight:700;border-radius:9px;border:1px solid var(--stroke);background:var(--soft);color:var(--mu);cursor:pointer}
+.sd-hwc-x:hover{color:var(--red);border-color:rgba(220,60,60,.4)}
 .sd-hw{display:flex;flex-direction:column;gap:8px;margin-top:2px}
 .sd-hw-lead{font-size:12.5px;color:var(--mu);margin:0 0 11px;line-height:1.45}
 .sd-hw-row{display:flex;align-items:center;gap:11px;border:1px solid var(--stroke);background:var(--soft);border-radius:12px;padding:9px 10px 9px 13px}
@@ -665,11 +672,18 @@ async function assign(btn,vak,domein){
 // leerling ziet het als "🎯 Persoonlijk huiswerk" en krijgt de beloning.
 async function assignStu(btn,naam,vak,domein){
   btn.disabled=true;const old=btn.textContent;btn.textContent='…';
-  if(_demo){btn.textContent='Klaargezet ✓';btn.classList.remove('btn-p');btn.classList.add('btn-ok');return;}
+  if(_demo){
+    _stuAssigned[naam]=_stuAssigned[naam]||[];
+    if(!_stuAssigned[naam].some(x=>x.domein===domein)) _stuAssigned[naam].push({uid:'d'+Date.now()+Math.round(Math.random()*1e4),vak,domein});
+    btn.textContent='Klaargezet ✓';btn.classList.remove('btn-p');btn.classList.add('btn-ok');
+    try{renderStuHw(naam);}catch(e){}
+    return;
+  }
   try{
     const {error}=await SB.rpc('klas_huiswerk_set',{p_code:_last,p_vak:vak,p_domein:domein,p_doel_naam:naam});
     if(error)throw error;
     btn.textContent='Klaargezet ✓';btn.classList.remove('btn-p');btn.classList.add('btn-ok');
+    try{renderStuHw(naam);}catch(e){}
   }catch(e){btn.disabled=false;btn.textContent=old;alert('Kon niet klaarzetten. Draai eerst de nieuwste sql/klas-setup.sql (klas_huiswerk_set met doel_naam).');}
 }
 
@@ -696,6 +710,7 @@ function openStudent(naam){
   const homs=(d.domeinen||[]).slice().sort((a,b)=>a.gem-b.gem);
   const hwSection = homs.length
     ? `<div class="sd-h">📌 Persoonlijk huiswerk voor ${esc(naam)}</div>`
+      +`<div id="sd-hw-current" class="sd-hwc"></div>`
       +`<p class="sd-hw-lead">Alleen ${esc(naam)} ziet dit als persoonlijk huiswerk op de startpagina — en verdient er extra XP + een kist mee. Zwakste onderwerpen bovenaan.</p>`
       +`<div class="sd-hw">`+homs.map(dm=>`<div class="sd-hw-row"><div class="sd-hw-nm">${esc(dm.domein)} <small style="color:${pctCol(dm.gem)}">${Math.round(dm.gem*100)}%</small></div><button class="btn btn-p btn-sm" onclick="assignStu(this,'${esc(naam)}','${esc(dm.vak||vaknaam)}','${esc(dm.domein)}')">Zet klaar →</button></div>`).join('')+`</div>`
     : '';
@@ -715,8 +730,42 @@ function openStudent(naam){
     ${hwSection}
   </div>`;
   requestAnimationFrame(()=>ov.classList.add('on'));
+  try{renderStuHw(naam);}catch(e){}
 }
 function closeStudent(){const ov=document.getElementById('student-modal');if(ov){ov.classList.remove('on');setTimeout(()=>{if(ov&&!ov.classList.contains('on'))ov.remove();},220);}}
+
+// Wat staat er nú persoonlijk klaar voor deze leerling (met intrekken)?
+let _stuAssigned={}; // demo-tracker: naam → [{uid,vak,domein}]
+async function renderStuHw(naam){
+  const box=document.getElementById('sd-hw-current'); if(!box) return;
+  let rows=[];
+  if(_demo){
+    rows=(_stuAssigned[naam]||[]).map(x=>({id:x.uid,domein:x.domein}));
+  } else {
+    const d=window._dashD; const kid=d&&d.klas&&d.klas.id;
+    if(!kid){box.innerHTML='';return;}
+    box.innerHTML='<div class="sd-hwc-empty">Laden…</div>';
+    try{
+      const {data,error}=await SB.rpc('klas_huiswerk_get',{p_klas_id:kid,p_naam:naam});
+      if(error)throw error;
+      rows=(data||[]).filter(r=>r.doel_naam && r.doel_naam.toLowerCase()===naam.toLowerCase())
+                     .map(r=>({id:r.id,domein:r.domein}));
+    }catch(e){ box.innerHTML=''; return; }
+  }
+  if(!rows.length){ box.innerHTML=`<div class="sd-hwc-empty">Nog niets persoonlijk klaargezet voor ${esc(naam)}.</div>`; return; }
+  box.innerHTML=`<div class="sd-hwc-lbl">Staat nu klaar voor ${esc(naam)}</div>`+rows.map(r=>
+    `<div class="sd-hwc-row"><span class="sd-hwc-nm">🎯 ${esc(r.domein)}</span><button class="sd-hwc-x" onclick="withdrawStu(this,'${esc(String(r.id))}','${esc(naam)}')">Intrekken</button></div>`
+  ).join('');
+}
+async function withdrawStu(btn,id,naam){
+  btn.disabled=true;const old=btn.textContent;btn.textContent='…';
+  if(_demo){ _stuAssigned[naam]=(_stuAssigned[naam]||[]).filter(x=>x.uid!==id); renderStuHw(naam); return; }
+  try{
+    const {error}=await SB.rpc('klas_huiswerk_del',{p_code:_last,p_id:Number(id)});
+    if(error)throw error;
+    renderStuHw(naam);
+  }catch(e){ btn.disabled=false;btn.textContent=old;alert('Kon niet intrekken. Draai de nieuwste sql/klas-setup.sql (bevat klas_huiswerk_del).'); }
+}
 
 function loadDemo(){
   _demo=true;_viewingDash=true;

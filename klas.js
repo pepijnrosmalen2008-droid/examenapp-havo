@@ -413,19 +413,37 @@ async function renderKlasHuiswerk(){
     const open=_klasHw.filter(h=>!h.isDone);
     // Persoonlijk huiswerk krijgt voorrang boven klas-breed.
     const show=open.find(h=>h.persoonlijk)||open[0]||_klasHw[0];
+    let cardHtml;
     if(show.isDone){
-      el.innerHTML=`<div class="klas-home-card klas-home-hw hw-done"><div class="klas-home-ico">✅</div><div class="klas-home-txt"><div class="klas-home-t">Huiswerk gedaan — top!</div><div class="klas-home-s">${_esc(show.domein||show.vak||'')} afgerond en beloond</div></div></div>`;
+      cardHtml=`<div class="klas-home-card klas-home-hw hw-done"><div class="klas-home-ico">✅</div><div class="klas-home-txt"><div class="klas-home-t">Huiswerk gedaan — top!</div><div class="klas-home-s">${_esc(show.domein||show.vak||'')} afgerond en beloond</div></div></div>`;
     }else{
       const titel=show.persoonlijk?'Persoonlijk huiswerk':'Huiswerk van je docent';
       const ico=show.persoonlijk?'🎯':'📌';
       const sub=show.persoonlijk
         ? `Speciaal voor jou: oefen ${_esc(show.domein||show.vak||'de opgegeven stof')} → extra XP én een kist`
         : `Oefen ${_esc(show.domein||show.vak||'de opgegeven stof')} → verdien extra XP én een kist`;
-      el.innerHTML=`<div class="klas-home-card klas-home-hw${show.persoonlijk?' klas-home-hw-pers':''}" onclick="${show.act}" role="button" tabindex="0">
+      cardHtml=`<div class="klas-home-card klas-home-hw${show.persoonlijk?' klas-home-hw-pers':''}" onclick="${show.act}" role="button" tabindex="0">
         <div class="klas-home-ico">${ico}</div>
         <div class="klas-home-txt"><div class="klas-home-t">${titel} <span class="hw-badge">+ beloning</span></div><div class="klas-home-s">${sub}</div></div>
         <div class="klas-home-arr">→</div></div>`;
     }
+    // Volledige lijst: álle opdrachten, niet alleen de eerste. De rest komt onder
+    // de grote kaart in een compacte lijst (open bovenaan, gedaan onderaan).
+    const rest=_klasHw.filter(h=>h!==show);
+    let listHtml='';
+    if(rest.length){
+      const nOpen=open.length;
+      const rows=rest.slice().sort((a,b)=>(a.isDone?1:0)-(b.isDone?1:0)).map(h=>{
+        const ic=h.isDone?'✅':(h.persoonlijk?'🎯':'📌');
+        const nm=_esc(h.domein||h.vak||'Opdracht');
+        const tag=h.persoonlijk&&!h.isDone?'<span class="hw-li-tag">voor jou</span>':'';
+        const cls='hw-li-row'+(h.isDone?' done':'');
+        const onclick=h.isDone?'':` onclick="${h.act}" role="button" tabindex="0"`;
+        return `<div class="${cls}"${onclick}><span class="hw-li-ic">${ic}</span><span class="hw-li-nm">${nm}${tag}</span>${h.isDone?'<span class="hw-li-done">gedaan</span>':'<span class="hw-li-arr">→</span>'}</div>`;
+      }).join('');
+      listHtml=`<div class="hw-list"><div class="hw-list-head">📋 Al je huiswerk${nOpen>0?` · <b>${nOpen}</b> te doen`:''}</div>${rows}</div>`;
+    }
+    el.innerHTML=cardHtml+listHtml;
   }catch(e){ el.innerHTML=''; _klasHw=[]; }
 }
 // Aangeroepen door de quiz bij afronding: is er een openstaand huiswerk dat met

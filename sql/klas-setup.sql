@@ -111,7 +111,7 @@ begin
        and p.proname in (
          '_klas_gen_code','klas_create','klas_join','klas_info','klas_leaderboard',
          'klas_score_add','klas_mine','klas_dashboard','klas_huiswerk_set','klas_huiswerk_get',
-         'klas_week','klas_challenge_claim'
+         'klas_huiswerk_del','klas_week','klas_challenge_claim'
        )
   loop
     execute 'drop function if exists ' || r.sig || ' cascade';
@@ -320,14 +320,27 @@ grant execute on function public.klas_huiswerk_set(text,text,text,text) to anon,
 -- Leerling haalt het actuele huiswerk op (laatste 7 dagen, nieuwste eerst):
 -- klas-breed huiswerk (doel_naam null) + het huiswerk dat op zíjn voornaam staat.
 create or replace function public.klas_huiswerk_get(p_klas_id uuid, p_naam text default null)
-returns table(vak text, domein text, doel_naam text, created_at timestamptz)
+returns table(id bigint, vak text, domein text, doel_naam text, created_at timestamptz)
 language sql security definer set search_path = public as $$
-  select vak, domein, doel_naam, created_at from public.klas_huiswerk
+  select id, vak, domein, doel_naam, created_at from public.klas_huiswerk
    where klas_id = p_klas_id and created_at > now()-interval '7 day'
      and (doel_naam is null or lower(doel_naam) = lower(coalesce(p_naam,'')))
-   order by created_at desc limit 8;
+   order by created_at desc limit 20;
 $$;
 grant execute on function public.klas_huiswerk_get(uuid, text) to anon, authenticated;
+
+-- Docent trekt een klaargezette opdracht weer in (op id; alleen binnen de klas
+-- die bij de code hoort). Zo kan een docent per leerling bijsturen.
+create or replace function public.klas_huiswerk_del(p_code text, p_id bigint)
+returns void language plpgsql security definer set search_path = public as $$
+declare v_id uuid;
+begin
+  select id into v_id from public.klassen where upper(code)=upper(p_code) limit 1;
+  if v_id is null then raise exception 'klas_niet_gevonden'; end if;
+  delete from public.klas_huiswerk where id = p_id and klas_id = v_id;
+end;
+$$;
+grant execute on function public.klas_huiswerk_del(text, bigint) to anon, authenticated;
 
 
 -- "Klas deze week": gezamenlijke week-XP (sinds maandag), aantal actieve leden

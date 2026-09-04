@@ -2127,6 +2127,19 @@ html.dark .qb{background:#2e3550}
 .klas-home-hw-pers .klas-home-ico{background:rgba(139,92,246,.18)}
 .klas-home-hw-pers .hw-badge{background:#8b5cf6}
 .klas-home-hw.hw-done{border-color:rgba(34,197,94,.4);background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(34,197,94,.03));cursor:default}
+/* Volledige huiswerklijst onder de grote kaart */
+.hw-list{margin-top:9px;border:1px solid var(--bo);border-radius:14px;overflow:hidden;background:var(--card,var(--bg))}
+.hw-list-head{font-size:12px;font-weight:800;color:var(--mu);padding:9px 13px;border-bottom:1px solid var(--bo)}
+.hw-list-head b{color:var(--or)}
+.hw-li-row{display:flex;align-items:center;gap:10px;padding:10px 13px;border-bottom:1px solid var(--bo);cursor:pointer}
+.hw-li-row:last-child{border-bottom:0}
+.hw-li-row:active{background:color-mix(in srgb,var(--or) 8%,transparent)}
+.hw-li-row.done{cursor:default;opacity:.62}
+.hw-li-ic{font-size:15px;line-height:1;flex:none}
+.hw-li-nm{flex:1;min-width:0;font-size:13.5px;font-weight:600;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hw-li-tag{margin-left:7px;font-size:10px;font-weight:800;color:#fff;background:#8b5cf6;border-radius:999px;padding:1px 7px;vertical-align:middle}
+.hw-li-arr{color:var(--or);font-weight:800;flex:none}
+.hw-li-done{font-size:11px;font-weight:700;color:var(--green,#22c55e);flex:none}
 .klas-home-hw.hw-done .klas-home-ico{background:rgba(34,197,94,.16)}
 .klas-home-ico{flex-shrink:0;width:42px;height:42px;border-radius:11px;background:rgba(var(--or-rgb),.12);display:flex;align-items:center;justify-content:center;font-size:21px}
 .klas-home-txt{flex:1;min-width:0}
