@@ -235,22 +235,35 @@ function _klasRenderWeek(week, leden){
   // niveau heeft gehaald, krijgt eenmalig per week de munten voor dat niveau.
   try{ if(k && k.role!=='docent' && k.id && reachedIdx>=0) _klasChallengeReward(k.id, reachedIdx, TIERS); }catch(e){}
 }
-function _klasChallengeReward(klasId, reachedIdx, TIERS){
-  let store={}; try{ store=JSON.parse(localStorage.getItem('slagio_klas_ch')||'{}'); }catch(e){}
-  const key=klasId+'|'+_klasWeekKey();
-  const claimed = Number.isFinite(store[key]) ? store[key] : -1;
-  if(reachedIdx<=claimed) return;
-  let munt=0, top=null;
-  for(let i=claimed+1;i<=reachedIdx;i++){ munt+=TIERS[i].munt; top=TIERS[i]; }
-  store[key]=reachedIdx;
-  try{ localStorage.setItem('slagio_klas_ch', JSON.stringify(store)); }catch(e){}
-  if(munt<=0||!top) return;
-  try{ if(typeof addCoins==='function') addCoins(munt); }catch(e){}
-  try{ if(typeof haptic==='function') haptic([25,50,25,50,40]); }catch(e){}
-  setTimeout(()=>{
-    try{ if(typeof showToast==='function') showToast(`${top.ico} Klasdoel ${top.naam} gehaald! Jij en je klas verdienen +${munt} munten`, '#f59e0b', 4200); }catch(e){}
-    try{ if(typeof launchConfetti==='function') launchConfetti('gold'); }catch(e){}
-  }, 600);
+let _klasChBusy=false;
+async function _klasChallengeReward(klasId, reachedIdx, TIERS){
+  if(_klasChBusy) return; _klasChBusy=true;
+  try{
+    const weekKey=_klasWeekKey();
+    let store={}; try{ store=JSON.parse(localStorage.getItem('slagio_klas_ch')||'{}'); }catch(e){}
+    const lkey=klasId+'|'+weekKey;
+    let claimed = Number.isFinite(store[lkey]) ? store[lkey] : -1;
+    // Offline-guard: al geclaimd op dit apparaat → niets te doen.
+    if(reachedIdx<=claimed) return;
+    // Backend als bron van waarheid (idempotent per week, ook cross-device).
+    // De RPC geeft het VORIGE niveau terug en zet meteen het nieuwe vast.
+    try{
+      const prev = await _klasRpc('klas_challenge_claim', { p_klas_id:klasId, p_did:_DID, p_week_key:weekKey, p_tier:reachedIdx });
+      const pv = Array.isArray(prev)?prev[0]:prev;
+      if(Number.isFinite(pv)) claimed = Math.max(claimed, pv);
+    }catch(e){ /* RPC nog niet gedeployd of offline → localStorage-fallback */ }
+    // Onthoud lokaal het (nu) hoogst geclaimde niveau.
+    store[lkey]=reachedIdx; try{ localStorage.setItem('slagio_klas_ch', JSON.stringify(store)); }catch(e){}
+    let munt=0, top=null;
+    for(let i=claimed+1;i<=reachedIdx;i++){ if(TIERS[i]){ munt+=TIERS[i].munt; top=TIERS[i]; } }
+    if(munt<=0||!top) return;
+    try{ if(typeof addCoins==='function') addCoins(munt); }catch(e){}
+    try{ if(typeof haptic==='function') haptic([25,50,25,50,40]); }catch(e){}
+    setTimeout(()=>{
+      try{ if(typeof showToast==='function') showToast(`${top.ico} Klasdoel ${top.naam} gehaald! Jij en je klas verdienen +${munt} munten`, '#f59e0b', 4200); }catch(e){}
+      try{ if(typeof launchConfetti==='function') launchConfetti('gold'); }catch(e){}
+    }, 600);
+  } finally { _klasChBusy=false; }
 }
 
 // ── Delen / verlaten ─────────────────────────────────────────

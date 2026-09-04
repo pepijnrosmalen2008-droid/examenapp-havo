@@ -70,12 +70,26 @@ create table if not exists public.klas_huiswerk(
 );
 create index if not exists klas_huiswerk_klas_idx on public.klas_huiswerk(klas_id, created_at desc);
 
+-- Weekuitdaging: welk klasdoel (tier 0=brons,1=zilver,2=goud) heeft een leerling
+-- (per device) al opgehaald in welke week. Zo krijgt elke leerling de beloning
+-- exact één keer per behaald niveau — ook op een ander apparaat/na herinstalleren.
+create table if not exists public.klas_challenge_claims(
+  klas_id    uuid not null references public.klassen(id) on delete cascade,
+  did        text not null,
+  week_key   text not null,
+  tier       int  not null default -1,   -- hoogst opgehaalde niveau (-1=nog niets)
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  primary key(klas_id, did, week_key)
+);
+
 -- RLS aan, geen policies → geen enkele directe toegang; alleen de RPC's
 -- hieronder (SECURITY DEFINER) mogen erbij.
 alter table public.klassen      enable row level security;
 alter table public.klas_leden   enable row level security;
 alter table public.klas_scores  enable row level security;
 alter table public.klas_huiswerk enable row level security;
+alter table public.klas_challenge_claims enable row level security;
 
 
 -- ─── 1b) OUDE FUNCTIES OPRUIMEN ──────────────────────────────────────────
@@ -94,7 +108,7 @@ begin
        and p.proname in (
          '_klas_gen_code','klas_create','klas_join','klas_info','klas_leaderboard',
          'klas_score_add','klas_mine','klas_dashboard','klas_huiswerk_set','klas_huiswerk_get',
-         'klas_week'
+         'klas_week','klas_challenge_claim'
        )
   loop
     execute 'drop function if exists ' || r.sig || ' cascade';
@@ -335,6 +349,36 @@ returns jsonb language sql stable security definer set search_path = public as $
   );
 $$;
 grant execute on function public.klas_week(uuid) to anon, authenticated;
+
+
+-- ─── 12) WEEKUITDAGING: klasdoel-beloning ophalen (idempotent per week) ───
+-- De leerling meldt het niveau dat de klas deze week samen heeft gehaald
+-- (p_tier: 0=brons, 1=zilver, 2=goud). De functie geeft het VORIGE hoogst
+-- opgehaalde niveau van deze leerling terug (-1 als er nog niets was) en zet
+-- het nieuwe niveau vast. De app kent daarna de munten toe voor elk niveau
+-- tussen (vorige+1) en p_tier — dus nooit dubbel, ook niet op een ander
+-- apparaat. week_key is een ondoorzichtige weeksleutel die de app aanlevert.
+create or replace function public.klas_challenge_claim(
+  p_klas_id uuid, p_did text, p_week_key text, p_tier int)
+returns int language plpgsql security definer set search_path = public as $$
+declare v_prev int;
+begin
+  if p_klas_id is null or p_did is null or p_did = '' or p_week_key is null then
+    return -1;
+  end if;
+  select tier into v_prev from public.klas_challenge_claims
+    where klas_id = p_klas_id and did = p_did and week_key = p_week_key;
+  if v_prev is null then v_prev := -1; end if;
+  -- Niets nieuws → geef het huidige niveau terug, laat de rij ongemoeid.
+  if coalesce(p_tier,-1) <= v_prev then return v_prev; end if;
+  insert into public.klas_challenge_claims(klas_id, did, week_key, tier)
+    values (p_klas_id, p_did, p_week_key, p_tier)
+    on conflict (klas_id, did, week_key)
+      do update set tier = excluded.tier, updated_at = now();
+  return v_prev;
+end;
+$$;
+grant execute on function public.klas_challenge_claim(uuid,text,text,int) to anon, authenticated;
 
 
 -- ─── KLAAR ───────────────────────────────────────────────────────────────
