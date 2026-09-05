@@ -4,6 +4,56 @@
 > Drie lagen van **één** product — nooit losse producten bovenop Slagio.
 > De docentenlaag en de AI-laag versterken allebei dezelfde kern:
 > **de leerling beter laten leren en de docent beter laten zien wat er gebeurt.**
+>
+> **Volledige strategie (product + business):** de deelbare pagina "Slagio Strategie"
+> (Learning Intelligence-platform). Dit doc bevat de harde regels die bouwsessies volgen.
+
+---
+
+## Canon — de harde regels (sep 2026)
+
+Slagio is geen vragenbank; het is een **Learning Intelligence-platform**: content + leerlinggedrag
++ adaptatie bepalen samen wat iemand moet leren, terwijl Vonk de menselijke laag is.
+
+**Ontwerpregel (bouw hiervandaan, niet vanuit features):**
+> "Welke beslissing kan Slagio voor de leerling of docent beter maken dankzij alle kennis
+> die het al over leren heeft?"
+
+1. **Bronhiërarchie — AI is NOOIT de bron van waarheid.** Volgorde van waarheid:
+   `1 Curriculum → 2 Canonieke kennis → 3 Content Engine → 4 Learning Engine → 5 AI → 6 Vonk`.
+   AI (niveau 5) interpreteert en legt uit; het bepaalt niet wat waar is.
+2. **VERIFY-regel.** Als de canonieke kennis het antwoord al bevat, haalt AI nooit zelf een
+   feit uit modelkennis. AI krijgt vraag/opties/juist/gekozen/uo/uh/leerdoel/canonieke feiten/
+   misconceptie/eerdere fouten/beheersing en maakt daar een leerlingvriendelijke uitleg van.
+3. **AI is contextueel, geen chatbot.** Geen "vraag Vonk alles". AI verschijnt waar het waarde
+   toevoegt: na een fout, na 3 fouten op één leerdoel, na een examen, vóór een toets, bij een
+   samenvatting/begrip. Vermogens: **Explain · Diagnose · Prescribe · Verify**.
+4. **Twee producten, één engine.** Leerling = **Personal Intelligence** ("wat moet IK leren?");
+   docent = **Class Intelligence** ("wat moet MIJN KLAS leren?"). Beide uit de Learning Engine
+   op de Content Engine.
+5. **Docent = onderwijsassistent, niet dashboard.** Kernvraag: "wat moet ik morgen doen?".
+   Elke aanbeveling is **onderbouwd** (aantallen, gekozen afleiders, patroon over tijd),
+   **assembleert uit gevalideerde content** (geen willekeurige AI-vragen), en mag zeggen
+   **"hier hoef je niets mee te doen"**. Naar scholen: "Slagio Onderwijsassistent" (AI erachter).
+6. **Gratis = leren · Plus = jezelf beter begrijpen.** Premium geeft méér/dieper, nooit terug
+   wat gratis was. Het **examen zelf is gratis** (echt examen, tijd, bijlagen, cijfer); de
+   **analyse/remediatie erna is Plus**. School-leerling = **Free + Personal Intelligence**.
+7. **Geen "onbeperkte AI".** Extern: "ruime AI-toegang". Intern hard begrensd (berichten/dag+maand,
+   tokenlimiet). Free = 3 AI-uitleg/dag.
+8. **Content Trust Layer.** Elke vraag kent zijn lineage (curriculumcode, niveau, vak, domein,
+   leerdoel, concepten, leerhandeling, moeilijkheid, misconceptie, juist antwoord, afleiderstype,
+   bron, examenrelevantie, uitleg, visuele component, status, reviewstatus, versie).
+   **Geen vraag live zonder bewezen lineage.**
+9. **Examen-integriteit.** Herkomst zichtbaar: 🟦 echt examen · 🟧 Slagio-examenstijl · 🟪 trainingsvraag.
+   Een leerling mag nooit denken dat een trainings-/AI-vraag een officiële opgave is.
+10. **Noordster-KPI's:** **Learning Progress** (% leerdoelen met aantoonbaar stijgende beheersing)
+    en **Learning Efficiency** (beheersingstoename per oefentijd) — boven DAU/minuten/streaks.
+11. **Datamoat pas als hij meetbaar is.** Data ≠ moat; bewijs vereist (bv. betere fout-voorspelling
+    dan vorige versie; aanbevolen remediatie > willekeurig oefenen).
+12. **Toon per laag.** Leerling = energie (Vonk/XP prominent); docent = helderheid & rust
+    (Vonk ingetogen, geen confetti bij 73%); AI = context & next actions.
+13. **Bron voor alle content: de officiële 2027-syllabi** (zie `docs/SYLLABI-2027.md`).
+14. **Later reserveren:** Parent View (zeer beperkt, geen surveillance) als derde laag.
 
 ---
 
