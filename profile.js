@@ -830,6 +830,7 @@ function openProfiel(){
     return;
   }
   loadProfile();
+  try{const ch=document.getElementById('prof-niv-chip'); if(ch&&typeof APP_LEVEL!=='undefined'&&APP_LEVEL){ch.textContent=APP_LEVEL.toUpperCase();ch.hidden=false;}}catch(e){}
   buildCijferGrid();
   updateCloudStatusBar();
   buildMijnStats();

@@ -23,6 +23,9 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--or,#e8580c);outline
   /* Neutral accent (no level chosen - welcome screen) */
   --or:#64748b;--orl:#f1f5f9;--bl:#2563eb;--r:14px;
   --or-rgb:100,116,139;
+  /* Ware niveau-kleur — onafhankelijk van een gekozen winkel-thema. Gebruik
+     dit waar de niveau-identiteit altijd moet tellen (bv. de profielpagina). */
+  --niv:#64748b;--niv-rgb:100,116,139;
   --cd-bg1:#0f1118;--cd-bg2:#181c28;--cd-bg3:#141820;
   /* Beloningsgoud — niveau-onafhankelijk. XP, munten, streak, kist, level-ups.
      Voelt universeel als "beloning"; los van de niveau-merkkleur (--or). */
@@ -55,31 +58,38 @@ html.dark{
    ══════════════════════════════════════════════ */
 /* Welcome screen - own indigo accent, dual-aura BG handled in #sc-welcome CSS */
 html.level-welcome{
-  --or:#6366f1;--orl:rgba(99,102,241,.18);--or-rgb:99,102,241
+  --or:#6366f1;--orl:rgba(99,102,241,.18);--or-rgb:99,102,241;
+  --niv:#6366f1;--niv-rgb:99,102,241
 }
 /* HAVO — koningsblauw: vertrouwd, kalm, koersvast. */
 html.level-havo{
   --or:#1d4ed8;--orl:#eaf0ff;--or-rgb:29,78,216;
+  --niv:#1d4ed8;--niv-rgb:29,78,216;
   --cd-bg1:#030a1e;--cd-bg2:#061436;--cd-bg3:#040f28
 }
 html.dark.level-havo{
-  --or:#4c8dff;--orl:#111f45;--or-rgb:76,141,255
+  --or:#4c8dff;--orl:#111f45;--or-rgb:76,141,255;
+  --niv:#4c8dff;--niv-rgb:76,141,255
 }
 /* VWO — diep indigo-violet: premium, het hoogste niveau. */
 html.level-vwo{
   --or:#6d28d9;--orl:#f3efff;--or-rgb:109,40,217;
+  --niv:#6d28d9;--niv-rgb:109,40,217;
   --cd-bg1:#0e0126;--cd-bg2:#1c0847;--cd-bg3:#140334
 }
 html.dark.level-vwo{
-  --or:#a78bfa;--orl:#241452;--or-rgb:167,139,250
+  --or:#a78bfa;--orl:#241452;--or-rgb:167,139,250;
+  --niv:#a78bfa;--niv-rgb:167,139,250
 }
 /* VMBO — teal-groen: praktisch, fris, in beweging. */
 html.level-vmbo{
   --or:#0d9488;--orl:#e5faf6;--or-rgb:13,148,136;
+  --niv:#0d9488;--niv-rgb:13,148,136;
   --cd-bg1:#021b17;--cd-bg2:#053029;--cd-bg3:#04231e
 }
 html.dark.level-vmbo{
-  --or:#2dd4bf;--orl:#06312c;--or-rgb:45,212,191
+  --or:#2dd4bf;--orl:#06312c;--or-rgb:45,212,191;
+  --niv:#2dd4bf;--niv-rgb:45,212,191
 }
 /* Root-achtergrond: voorkomt witte randen bij snel scrollen / overscroll-bounce
    (de body dekt niet de overscroll-zone; html wél). */
@@ -3217,6 +3227,15 @@ html.dark .auth-ok{background:#0F2D1C;border-color:#166534;color:#86EFAC}
 .prof-page-header{margin-bottom:32px}
 .prof-page-header h2{font-size:28px;font-weight:800;margin-bottom:6px}
 .prof-page-header p{color:var(--mu);font-size:15px}
+/* De profielpagina draagt ALTIJD de niveau-kleur — ook als er een winkel-thema
+   actief is dat --or elders overschrijft. Binnen #sc-profiel verwijst --or naar
+   de echte niveau-kleur (--niv), dus elk accent op deze pagina volgt het niveau. */
+#sc-profiel{--or:var(--niv);--or-rgb:var(--niv-rgb)}
+#sc-profiel .prof-page-header{position:relative;padding:20px 22px;border-radius:20px;background:linear-gradient(135deg,rgba(var(--or-rgb),.16),rgba(var(--or-rgb),.045));border:1px solid rgba(var(--or-rgb),.22);overflow:hidden}
+#sc-profiel .prof-page-header::after{content:'';position:absolute;top:-40%;right:-10%;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(var(--or-rgb),.22),transparent 68%);pointer-events:none}
+#sc-profiel .prof-page-header>*{position:relative;z-index:1}
+.prof-niv-chip{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:#fff;background:var(--or);border-radius:999px;padding:4px 12px;margin-bottom:11px;box-shadow:0 3px 12px rgba(var(--or-rgb),.4)}
+.prof-niv-chip::before{content:'';width:6px;height:6px;border-radius:50%;background:#fff;opacity:.9}
 /* Profiel sub-navigatie (Ik / Cijfers / Gegevens) */
 .prof-tabs{display:flex;gap:6px;padding:5px;margin:0 0 22px;background:color-mix(in srgb,var(--dk) 6%,var(--s));border:1px solid var(--bo);border-radius:15px;position:sticky;top:8px;z-index:5;backdrop-filter:blur(8px)}
 .prof-tab{flex:1;padding:10px 8px;border:none;border-radius:11px;background:transparent;color:var(--mu);font-family:var(--font-head);font-weight:700;font-size:14px;cursor:pointer;transition:all .18s cubic-bezier(.34,1.2,.64,1);-webkit-tap-highlight-color:transparent}
