@@ -1701,6 +1701,10 @@ html.dark .qb{background:#2e3550}
 .dp-bar{flex:1;height:5px;border-radius:3px;background:var(--bo);overflow:hidden;max-width:90px}
 .dp-fill{height:100%;border-radius:3px;background:var(--or);transition:width .4s}
 .dp-txt{font-size:11px;color:var(--mu);font-weight:600}
+/* Vakpagina (domeinlijst): de per-domein voortgangsbalk weglaten — dezelfde
+   beste-score/PB-info staat al op de domein-detailpagina. Houdt de vakpagina
+   rustig, op laptop én mobiel. (De domein-detailpagina houdt zijn balk.) */
+#dlist .dom-progress{display:none}
 
 /* ── PROGRESS OVERVIEW ON DETAIL ─────────────── */
 .progress-overview{border:1px solid var(--bo);border-radius:16px;padding:20px 22px;margin-bottom:24px;background:var(--s)}

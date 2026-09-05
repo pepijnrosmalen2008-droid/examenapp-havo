@@ -44,7 +44,7 @@ function extract(html){
   let m,re;
   re=/<div class="sam-definitie-term">(.*?)<\/div><div class="sam-definitie-body">(.*?)<\/div>/g;while(m=re.exec(html))add(m[1],m[2]);
   re=/<tr><td>(.*?)<\/td><td>(.*?)<\/td><\/tr>/g;while(m=re.exec(html))add(m[1],m[2]);
-  re=/<li><strong>(.*?)<\/strong>\s*[:--]\s*(.*?)<\/li>/g;while(m=re.exec(html))add(m[1],m[2]);
+  re=/<li><strong>(.*?)<\/strong>\s*[:\-–—]\s*(.*?)<\/li>/g;while(m=re.exec(html))add(m[1],m[2]);
   return pairs;
 }
 
