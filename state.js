@@ -152,13 +152,13 @@ function show(id,_noHash){
   if(id==='sc-studieplan'){try{spInitPrefs();}catch(e){}if(localStorage.getItem('slagio_plan_generated')){try{renderStudieplan();}catch(e){}}try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){}try{setTimeout(()=>{if(typeof vonkOnboard==='function')vonkOnboard('studieplan');},900);}catch(e){}}
   // Welcome screen gets its own indigo theme; level pages get their own theme
   if(id==='sc-welcome'){
-    document.documentElement.classList.remove('level-havo','level-vwo');
+    document.documentElement.classList.remove('level-havo','level-vwo','level-vmbo');
     document.documentElement.classList.add('level-welcome');
     if(!_noHash&&location.pathname!=='/')history.pushState({},'','/');
     _updatePageSEO(null);
   } else {
     document.documentElement.classList.remove('level-welcome');
-    if(!document.documentElement.classList.contains('level-havo')&&!document.documentElement.classList.contains('level-vwo')){
+    if(!document.documentElement.classList.contains('level-havo')&&!document.documentElement.classList.contains('level-vwo')&&!document.documentElement.classList.contains('level-vmbo')){
       applyLevelTheme(APP_LEVEL);
     }
   }
