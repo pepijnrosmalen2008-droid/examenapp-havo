@@ -1507,7 +1507,7 @@ function buyMysteryBox(){
 // bepaalt de niveau-kleur (html.level-* in styles.css) het accent. Een gekozen
 // thema zet --or inline en overschrijft dat bewust.
 const THEMES=[
-  {id:'niveau',naam:'Volg je niveau',hex:'var(--or)',rgb:'',prijs:0},
+  {id:'niveau',naam:'Volg je niveau',hex:'var(--niv)',rgb:'',prijs:0},
   {id:'oranje',naam:'Klassiek oranje',hex:'#f2760c',rgb:'242,118,12',prijs:0},
   {id:'paars', naam:'Paars',         hex:'#8b5cf6',rgb:'139,92,246',prijs:300},
   {id:'blauw', naam:'Oceaanblauw',   hex:'#2f7ff2',rgb:'47,127,242', prijs:300},
@@ -1519,7 +1519,19 @@ const THEMES=[
 function getOwnedThemes(){try{const a=JSON.parse(localStorage.getItem('slagio_themes')||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
 function themeOwned(id){return id==='niveau'||id==='oranje'||getOwnedThemes().includes(id);}
 function getSelectedTheme(){try{return localStorage.getItem('slagio_theme_sel')||'niveau';}catch(e){return 'niveau';}}
+// Eenmalige migratie: het oude standaardthema was 'oranje' (zette --or inline
+// oranje en sloeg het niveau-accent plat). Wie nog op dat oude standaard staat
+// (geen keuze opgeslagen, of expliciet 'oranje') verhuist één keer naar
+// 'niveau' = "Volg je niveau". De flag zorgt dat een latere bewuste
+// oranje-keuze niet opnieuw wordt omgezet.
+function _migrateThemeToNiveau(){try{
+  if(localStorage.getItem('slagio_theme_migrated_niv'))return;
+  const sel=localStorage.getItem('slagio_theme_sel');
+  if(!sel||sel==='oranje') localStorage.setItem('slagio_theme_sel','niveau');
+  localStorage.setItem('slagio_theme_migrated_niv','1');
+}catch(e){}}
 function applyTheme(){try{
+  _migrateThemeToNiveau();
   const root=document.documentElement.style;
   const sel=getSelectedTheme();
   const t=THEMES.find(x=>x.id===sel);
