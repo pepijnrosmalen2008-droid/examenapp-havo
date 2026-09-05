@@ -1503,8 +1503,11 @@ function buyMysteryBox(){
   try{trackEvent('shop_buy',{item:'mystery'});}catch(e){}
   renderEconHome();renderShop();
 }
-// Thema's: accentkleur van de hele app
+// Thema's: accentkleur van de hele app. Standaard = "Volg je niveau": dan
+// bepaalt de niveau-kleur (html.level-* in styles.css) het accent. Een gekozen
+// thema zet --or inline en overschrijft dat bewust.
 const THEMES=[
+  {id:'niveau',naam:'Volg je niveau',hex:'var(--or)',rgb:'',prijs:0},
   {id:'oranje',naam:'Klassiek oranje',hex:'#f2760c',rgb:'242,118,12',prijs:0},
   {id:'paars', naam:'Paars',         hex:'#8b5cf6',rgb:'139,92,246',prijs:300},
   {id:'blauw', naam:'Oceaanblauw',   hex:'#2f7ff2',rgb:'47,127,242', prijs:300},
@@ -1514,9 +1517,17 @@ const THEMES=[
   {id:'goud',  naam:'Goud',          hex:'#d4a017',rgb:'212,160,23', prijs:600},
 ];
 function getOwnedThemes(){try{const a=JSON.parse(localStorage.getItem('slagio_themes')||'[]');return Array.isArray(a)?a:[];}catch(e){return [];}}
-function themeOwned(id){return id==='oranje'||getOwnedThemes().includes(id);}
-function getSelectedTheme(){try{return localStorage.getItem('slagio_theme_sel')||'oranje';}catch(e){return 'oranje';}}
-function applyTheme(){try{const t=THEMES.find(x=>x.id===getSelectedTheme())||THEMES[0];document.documentElement.style.setProperty('--or',t.hex);document.documentElement.style.setProperty('--or-rgb',t.rgb);}catch(e){}}
+function themeOwned(id){return id==='niveau'||id==='oranje'||getOwnedThemes().includes(id);}
+function getSelectedTheme(){try{return localStorage.getItem('slagio_theme_sel')||'niveau';}catch(e){return 'niveau';}}
+function applyTheme(){try{
+  const root=document.documentElement.style;
+  const sel=getSelectedTheme();
+  const t=THEMES.find(x=>x.id===sel);
+  // "Volg je niveau" (of onbekend/leeg): inline override weghalen zodat de
+  // html.level-*-CSS de niveau-kleur bepaalt.
+  if(!t||sel==='niveau'||!t.rgb){ root.removeProperty('--or'); root.removeProperty('--or-rgb'); return; }
+  root.setProperty('--or',t.hex); root.setProperty('--or-rgb',t.rgb);
+}catch(e){}}
 function selectTheme(id){if(!themeOwned(id))return;try{localStorage.setItem('slagio_theme_sel',id);}catch(e){}applyTheme();try{renderShop();}catch(e){}}
 function buyTheme(id){
   const t=THEMES.find(x=>x.id===id);if(!t)return;
@@ -1647,7 +1658,8 @@ function _shopMeta(id){
   if(id==='boost24')return{cat:'power',naam:'24u dubbele XP',prijs:PRICE_BOOST_DAY,ico:_ico('rocket',38),bigIco:'rocket',desc:'Alle XP telt 24 uur lang dubbel. Ideaal op een oefendag.',active:xpBoostDayActive(),have:xpBoostDayActive()?'Actief':'',buy:'buyXpBoostDay()',canBuy:!xpBoostDayActive()&&coins>=PRICE_BOOST_DAY};
   if(id==='mystery')return{cat:'power',naam:'Mystery box',prijs:PRICE_MYSTERY,ico:_ico('gift',38),bigIco:'gift',desc:'Een verrassing: munten, een boost of zelfs een streak-freeze.',buy:'buyMysteryBox()',canBuy:coins>=PRICE_MYSTERY};
   const t=THEMES.find(x=>x.id===id);
-  if(t)return{cat:'theme',naam:t.naam,prijs:t.prijs,hex:t.hex,ico:'<span class="sw-ico" style="background:'+t.hex+'"></span>',desc:'Kleurt de hele app in de kleur '+t.naam.toLowerCase()+'.',owned:themeOwned(id),active:getSelectedTheme()===id,buy:"buyTheme('"+id+"')",canBuy:themeOwned(id)||coins>=t.prijs};
+  if(t){const desc=id==='niveau'?'Kleurt de app automatisch in de kleur van je niveau (havo blauw, vwo paars, vmbo teal).':'Kleurt de hele app in de kleur '+t.naam.toLowerCase()+'.';
+    return{cat:'theme',naam:t.naam,prijs:t.prijs,hex:t.hex,ico:'<span class="sw-ico" style="background:'+t.hex+'"></span>',desc,owned:themeOwned(id),active:getSelectedTheme()===id,buy:"buyTheme('"+id+"')",canBuy:themeOwned(id)||coins>=t.prijs};}
   const c=_cosmeticById(id);
   if(c){const isVk=id.indexOf('vk_')===0;
     const ico=isVk?('<svg class="cos-ico no-ico" viewBox="2 8 56 44">'+_VK_ICON[id]+'</svg>'):('<svg class="cos-ico no-ico" viewBox="8 10 84 66">'+_AV_SKIN_SVG[id]+'</svg>');
