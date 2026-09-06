@@ -831,6 +831,7 @@ function openProfiel(){
   }
   loadProfile();
   try{const ch=document.getElementById('prof-niv-chip'); if(ch&&typeof APP_LEVEL!=='undefined'&&APP_LEVEL){ch.textContent=APP_LEVEL.toUpperCase();ch.hidden=false;}}catch(e){}
+  try{const db=document.getElementById('pf-del-account'); if(db)db.hidden=!currentUser;}catch(e){}
   buildCijferGrid();
   updateCloudStatusBar();
   buildMijnStats();
@@ -845,6 +846,40 @@ function openProfiel(){
   });
   show('sc-profiel');
 }
+// ── Account & gegevens verwijderen (AVG-recht op vergetelheid + App Store-eis) ──
+// Slagio is grotendeels lokaal: het wissen van localStorage is de kern-actie.
+// Voor ingelogde gebruikers verwijdert deze flow ook de cloud-gegevens + het account.
+function _wipeSlagioLocal(){
+  try{
+    const kill=[];
+    for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i);
+      if(k && (k.indexOf('slagio_')===0 || k.indexOf('examenapp_')===0)) kill.push(k); }
+    kill.forEach(k=>{ try{localStorage.removeItem(k);}catch(e){} });
+  }catch(e){}
+}
+async function deleteAllLocalData(){
+  if(!confirm('Weet je het zeker? Al je voortgang, cijfers, streaks en instellingen op dit apparaat worden gewist. Dit kan niet ongedaan worden gemaakt.')) return;
+  _wipeSlagioLocal();
+  try{ if(typeof showToast==='function') showToast('Alle lokale gegevens verwijderd.','#22c55e',2400); }catch(e){}
+  setTimeout(()=>{ try{location.href='/';}catch(e){location.reload();} }, 900);
+}
+async function deleteAccount(){
+  if(!confirm('Je account en alle bijbehorende gegevens (voortgang, leaderboard, profiel) worden permanent verwijderd. Dit kan niet ongedaan worden gemaakt. Doorgaan?')) return;
+  let cloudOk=false;
+  try{
+    if(typeof SB!=='undefined' && SB.rpc){
+      const {error}=await SB.rpc('account_delete',{ p_did:(typeof _DID!=='undefined'?_DID:null) });
+      if(!error) cloudOk=true;
+    }
+  }catch(e){}
+  try{ if(typeof SB!=='undefined' && SB.auth && SB.auth.signOut) await SB.auth.signOut(); }catch(e){}
+  _wipeSlagioLocal();
+  try{ if(typeof showToast==='function') showToast(cloudOk
+      ? 'Account en alle gegevens verwijderd.'
+      : 'Uitgelogd en lokale gegevens gewist. Lukte de cloud-verwijdering niet? Mail slagiocompany@gmail.com.', '#22c55e', 3600); }catch(e){}
+  setTimeout(()=>{ try{location.href='/';}catch(e){location.reload();} }, 1200);
+}
+
 // Profiel sub-tabs: houdt elke weergave kort i.p.v. één eindeloze scroll.
 function profTab(name){
   const groups={ik:'prof-grp-ik',cijfers:'prof-grp-cijfers',gegevens:'prof-grp-gegevens'};

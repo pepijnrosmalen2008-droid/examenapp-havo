@@ -3250,6 +3250,12 @@ html.dark .prof-tab.on{background:color-mix(in srgb,var(--or) 16%,var(--s));box-
 .prof-grp.on{display:block}
 @keyframes profGrpIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.prof-grp{animation:none}}
+/* Privacy & gegevens: verwijder-knoppen (AVG) */
+.pf-danger-btn{display:block;width:100%;margin-top:10px;padding:13px 16px;border-radius:12px;font-family:var(--font-head,inherit);font-size:14px;font-weight:700;cursor:pointer;border:1px solid var(--red,#ef4444);background:var(--red,#ef4444);color:#fff;transition:filter .15s,transform .1s}
+.pf-danger-btn:hover{filter:brightness(1.05)}
+.pf-danger-btn:active{transform:scale(.99)}
+.pf-danger-btn.ghost{background:transparent;color:var(--mu);border-color:var(--bo)}
+.pf-danger-btn.ghost:hover{border-color:var(--red,#ef4444);color:var(--red,#ef4444);filter:none}
 /* Cijfercalculator-snelkoppeling in de Cijfers-tab */
 .prof-calc-link{display:flex;align-items:center;gap:14px;width:100%;padding:16px 18px;border:1px solid var(--bo);border-radius:18px;background:var(--s);color:var(--dk);cursor:pointer;text-align:left;box-shadow:0 1px 3px rgba(16,24,40,.05),0 6px 20px rgba(16,24,40,.04);transition:all .2s cubic-bezier(.34,1.2,.64,1);-webkit-tap-highlight-color:transparent}
 .prof-calc-link:hover{transform:translateY(-2px);border-color:#8b5cf6;box-shadow:0 8px 22px rgba(139,92,246,.18)}
