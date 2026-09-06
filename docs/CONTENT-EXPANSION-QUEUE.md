@@ -20,7 +20,24 @@ Elke dag pakt een verse sessie **het bovenste openstaande domein** (`- [ ]`) en:
    **Bij een rode poort: niet pushen, wél melden.**
 
 > Volgorde: grootste examenvakken eerst (per vak: havo → vwo → vmbo).
-> Voortgang: **4 / 220** klaar (gouden referentie). Pas dit blok bij elke afronding aan.
+> Voortgang: **4 / 220** volledig "goud" (leerdoelen + rijke samenvatting; gouden referentie). Pas dit blok bij elke afronding aan.
+
+### Tussenstap — brede begrippen-verrijkingsronde (sep 2026)
+Los van de per-domein gouden afronding is er een **horizontale begrippen-pass**
+gedaan over ~30 havo/vwo-domeinen in álle grote factuele en literaire
+examenvakken (be, gs, ak, mw, ec, na, sk, bi, nl, en, gr, la). ~650 nieuwe,
+curriculumgerichte term→definitie-paren via `scripts/begrippen.js` → de
+vragen-engine genereerde daaruit enkele duizenden extra oefenvragen +
+flashcards. Totaal nu **~3.435 begrippen / ~17.550 SV-vragen** (havo+vwo).
+Alle QA-poorten (build `--check`, validate-content, smoke incl. gouden-
+standaardpoort) groen; sidecar (bi/na/sk) telkens hertagd.
+
+> Dit is géén vervanging van de gouden afronding: **leerdoelen + rijke
+> samenvattingen** per domein blijven de echte "goud"-lat, en die moeten uit de
+> **2027-syllabi** komen (bronhiërarchie-canon). Zolang de syllabi niet lokaal
+> beschikbaar zijn of de AI-factory (`expand-leerdoelen.mjs`, vereist
+> `ANTHROPIC_API_KEY`) niet draait, blijft de leerdoelenlaag beperkt tot
+> havo bi/na/sk.
 
 ---
 
