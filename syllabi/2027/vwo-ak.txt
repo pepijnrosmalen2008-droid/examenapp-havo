@@ -1,0 +1,4680 @@
+AARDRIJKSKUNDE 
+VWO 
+
+SYLLABUS CENTRAAL EXAMEN 2027 
+NADERE VASTSTELLING 
+      Versie 4 april 2026 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+INHOUD 
+
+VOORWOORD 
+
+1 
+
+2 
+
+3 
+3.1 
+3.3 
+3.4 
+3.5 
+3.6 
+
+4 
+
+INLEIDING 
+
+VERDELING EXAMINERING CE/SE 
+
+SPECIFICATIE VAN DE GLOBALE EINDTERMEN VOOR HET CE 
+DOMEIN A:  VAARDIGHEDEN 
+DOMEIN B: WERELD 
+DOMEIN C: AARDE 
+DOMEIN D: GEBIEDEN (ZUID AMERIKA) 
+DOMEIN E: LEEFOMGEVING 
+
+HET CENTRAAL EXAMEN 
+
+BIJLAGE 1 EXAMENPROGRAMMA AARDRIJKSKUNDE VWO 
+
+BIJLAGE 2 TOELICHTING BIJ SUBDOMEIN A1: GEOGRAFISCHE BENADERING 
+
+4 
+
+5 
+
+6 
+
+7 
+7 
+11 
+18 
+24 
+29 
+
+36 
+
+37 
+
+40 
+
+BIJLAGE 3   VERANTWOORDING BIJ DE AANPASSINGEN SYLLABUS VWO 2026  50 
+
+Pagina 2 van 53 
+
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Toelichting bij de titel van de deze syllabus: 
+Deze syllabus aardrijkskunde vwo 2027 is nader vastgesteld. Deze syllabus vwo 2027 kent twee 
+wijzigingen vergeleken met de syllabus 2026. Deze wijzigingen zijn geel gearceerd en te vinden op 
+pagina 16 en 26. Bij de nadere vaststelling zijn de begrippen transformatie en herstructurering 
+inwisselbaar gemaakt en is het begrip stadsvernieuwing geschrapt op pagina 34 en 35. Deze wijzigingen 
+zijn met blauw gearceerd. 
+
+© 2025 College voor Toetsen en Examens, Utrecht 
+
+Alle rechten voorbehouden. Alles uit deze uitgave mag mits voorzien van een bronvermelding en zonder 
+enige wijziging worden verveelvoudigd, opgeslagen in een geautomatiseerd gegevensbestand, of 
+openbaar gemaakt, in enige vorm of op enige wijze, hetzij elektronisch, door fotokopieën, opnamen, of 
+enige andere manier zonder voorafgaande toestemming van het College. Het hergebruik van eventueel 
+auteursrechtelijk beschermd werk van derden in dit werk is niet nader geregeld door het CvTE. 
+
+Pagina 3 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+VOORWOORD 
+De minister heeft de examenprogramma's op hoofdlijnen vastgesteld. In het examenprogramma zijn de 
+exameneenheden aangewezen waarover het centraal examen (CE) zich uitstrekt: het CE-deel van het 
+examenprogramma.  
+
+Het College voor Toetsen en Examens (CvTE) geeft in een syllabus, die jaarlijks verschijnt, een 
+toelichting op het CE-deel van het examenprogramma. Behalve een beschrijving van de exameneisen 
+voor een centraal examen kan een syllabus verdere informatie over het centraal examen bevatten. 
+Bijvoorbeeld over een of meer van de volgende onderwerpen: specificaties van examenstof, 
+begrippenlijsten, bekend veronderstelde onderdelen van domeinen of exameneenheden die verplicht zijn 
+op het schoolexamen, bekend veronderstelde voorkennis uit de onderbouw, bijzondere vormen van 
+examinering (zoals computerexamens), voorbeeldopgaven, toelichting op de vraagstelling, toegestane 
+hulpmiddelen. 
+
+De functie van een syllabus is een leraar in staat te stellen zich een goed beeld te vormen van wat in het 
+centraal examen wel en niet gevraagd kan worden. Naar zijn aard is een syllabus dus niet een volledig 
+gesloten en afgebakende beschrijving van alles wat op een examen zou kunnen voorkomen. Het is 
+mogelijk, al zal dat maar in beperkte mate voorkomen, dat op een CE ook iets aan de orde komt dat niet 
+met zo veel woorden in deze syllabus staat, maar dat naar het algemeen gevoelen in het verlengde 
+daarvan ligt. 
+
+Een syllabus is ook een hulpmiddel voor degenen die zichzelf op een centraal examen voorbereiden. Een 
+syllabus kan ook behulpzaam zijn voor de producenten van leermiddelen en voor nascholingsinstanties. 
+De syllabus is niet van belang voor het schoolexamen. Daarvoor zijn door de SLO handreikingen 
+geproduceerd die niet in deze uitgave zijn opgenomen. 
+
+Deze syllabus geldt voor het examenjaar 2027. Syllabi van eerdere jaren zijn niet meer geldig en kunnen 
+van deze versie afwijken. Voor het examenjaar 2028 wordt een nieuwe syllabus vastgesteld. 
+Het CvTE publiceert uitsluitend digitale versies van de syllabi. Dit gebeurt via Examenblad.nl 
+(www.examenblad.nl), de officiële website voor de examens in het voortgezet onderwijs. 
+In de syllabi 2027 zijn de wijzigingen ten opzichte van de vorige syllabus voor het examenjaar 2026 
+duidelijk zichtbaar. De veranderingen zijn geel gemarkeerd. Er zijn diverse vakken waarbij de syllabus 
+2027 geen inhoudelijke veranderingen heeft ondergaan.  
+
+Een syllabus kan ook tussentijds worden aangepast, bijvoorbeeld als een in de syllabus beschreven 
+situatie feitelijk veranderd is. De aan een centraal examen voorafgaande Septembermededeling is dan 
+het moment waarop dergelijke veranderingen bekendgemaakt worden. Kijkt u voor alle zekerheid 
+jaarlijks in september op Examenblad.nl. 
+
+Het CvTE stelt het aantal en de tijdsduur van de toetsen van het centraal examen vast en de wijze 
+waarop het centraal examen wordt afgenomen. Deze vaststelling wordt gepubliceerd in het rooster voor 
+de centrale examens en in de Septembermededeling. 
+
+Voor opmerkingen over syllabi houdt het CvTE zich steeds aanbevolen. U kunt die zenden aan 
+info@cvte.nl of aan CvTE, Postbus 315, 3500 AH Utrecht. 
+
+De voorzitter van het College voor Toetsen en Examens, 
+Drs. J.H. (John) van der Vegt MPM 
+
+Pagina 4 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+1 
+
+INLEIDING 
+
+De basis voor het examenprogramma aardrijkskunde vwo is gelegd in het rapport Gebieden in perspectief 
+van de Commissie Aardrijkskunde Tweede Fase onder voorzitterschap van prof. dr. J. Terwindt, dat 
+medio 2003 aan de minister van Onderwijs is aangeboden. Een syllabuscommissie o.l.v. prof. dr. R. van 
+der Vaart bracht vervolgens een syllabus tot stand, als specificatie van het CE-gedeelte van dit 
+examenprogramma.  In 2007 werd het examenprogramma ingevoerd in de vierde klassen van havo en 
+vwo. 
+
+Het examenprogramma aardrijkskunde voor vwo heeft de volgende structuur: 
+In domein A worden de vaardigheden beschreven: de geografische werkwijzen en geografisch onderzoek. 
+De geografische benadering handelt over het omgaan met geografische informatie, over het stellen van 
+geografische vragen en het hanteren van geografische werkwijzen. Deze vaardigheden komen in alle 
+andere domeinen terug door ze te verweven met inhouden.  
+De domeinen 'Wereld' (B) en 'Aarde' (C) bieden het mondiale perspectief met regionale uitwerkingen 
+vanuit respectievelijk het sociaalgeografische en het fysisch-geografisch oogpunt. Dat vindt een 
+uitwerking in een thema dat een relatie legt tussen 'natuur' en 'samenleving'. 
+In domein D staat één gebied centraal met zijn unieke kenmerken én in het perspectief van 'wereld' en 
+'aarde'. Sinds 2020 is dit Zuid-Amerika. 
+Domein E is geschreven vanuit een andere invalshoek: het behandelt enkele actuele ruimtelijke 
+vraagstukken in de leefomgeving van de leerlingen. De schaal waarop de vraagstukken betrekking 
+hebben kunnen lokaal, regionaal of nationaal zijn, met (waar nodig) relevante internationale kaders. Het 
+aardrijkskundig onderzoek heeft ook op de leefomgeving betrekking: dit is het gebied dat de leerlingen 
+uit eigen ervaring kennen en waar ze waarnemingen aan de werkelijkheid kunnen doen. 
+
+De verdeling van de eindtermen over centraal examen en schoolexamen wordt gemaakt op het niveau 
+van de subdomeinen. Alleen de subdomeinen voor het CE worden in deze syllabus geëxpliciteerd.  
+Per subdomein is een specificatie van de leerstof gemaakt en zijn de te hanteren begrippen aangegeven. 
+De overige subdomeinen, die onder het schoolexamen (SE) vallen, kunnen door de school zelf 
+geïnterpreteerd worden; door SLO is in een aparte handreiking voorbeeldmatig geïllustreerd hoe zo'n 
+interpretatie eruit kan zien. 
+
+In 2012 heeft het College voor Toetsen en Examens (CvTE) een commissie ingesteld om nieuwe syllabi te 
+schrijven voor het Centraal Examen aardrijkskunde havo en vwo. Van eind 2012 tot de zomer van 2014 
+heeft deze commissie hieraan gewerkt. Aanpassen vonden voornamelijk plaats in de domeinen D en E. 
+De commissie oordeelde dat deze regio’s vanaf het havo-examen in 2019 en het vwo-examen van 2020 
+vervangen moeten worden door Brazilië (havo) en Zuid-Amerika (vwo). In het tijdschrift Geografie (april 
+2014) is de motivatie voor de keuze voor Zuid-Amerika (vwo) en Brazilië (havo) beschreven. 
+
+In 2021 heeft het CvTE opnieuw een syllabuscommissie ingesteld om de syllabi havo en vwo te 
+actualiseren, vooruitlopend op een verwachte aanpassing van het examenprogramma. Deze actualisatie 
+is nodig voor alle domeinen, met name de domeinen B en E. De keuze voor Brazilië (havo) en Zuid-
+Amerika (vwo) als regio’s bleef ongewijzigd, al zijn ook in dit domein D aanpassingen nodig gebleken. De 
+syllabuscommissie heeft een verantwoording geschreven bij de gemaakte keuzes. Die is als bijlage 
+opgenomen in deze syllabus. 
+
+Pagina 5 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+2 
+
+VERDELING EXAMINERING CE/SE 
+
+Het domein A, subdomein A1  'Vaardigheden' wordt steeds geëxamineerd in combinatie met de 
+vakinhoudelijke eindtermen. Daarbij wordt niet afgeweken van de huidige interpretatie van dit domein in 
+het vigerende centrale examenprogramma aardrijkskunde. 
+
+De verdeling van de examenstof is in de volgende tabel zichtbaar gemaakt. 
+
+Tabel 1: Verdeling van de examenstof aardrijkskunde vwo over centraal examen en schoolexamen. 
+
+Domein 
+
+A 
+
+Vaardigheden 
+
+−  Subdomein A1 
+
+Geografische benadering 
+
+−  Subdomein A2 
+
+Geografisch onderzoek 
+
+B 
+
+Wereld 
+
+−  Subdomein B1 
+
+Samenhang en verscheidenheid in de wereld 
+
+−  Subdomein B2 
+
+Mondiaal verdelingsvraagstuk 
+
+C 
+
+Aarde 
+
+−  Subdomein C1 
+
+De aarde als natuurlijk systeem; samenhangen en 
+
+diversiteit 
+
+−  Subdomein C2 
+
+Mondiaal milieuvraagstuk 
+
+D 
+
+Gebieden 
+
+−  Subdomein D1 
+
+Afbakening en gebiedskenmerken 
+
+−  Subdomein D2 
+
+Actuele vraagstukken 
+
+E 
+
+Leefomgeving 
+
+−  Subdomein E1 
+
+Nationale en regionale vraagstukken 
+
+−  Subdomein E2 
+
+Regionale en lokale vraagstukken 
+
+n moet worden getoetst 
+
+o mag worden getoetst 
+
+Centraal 
+Examen 
+
+School- 
+
+examen 
+
+n 
+
+n 
+
+n 
+
+n 
+
+n 
+
+n 
+
+n 
+
+o 
+
+n 
+
+o 
+
+n 
+
+o 
+
+n 
+
+o 
+
+n 
+
+Het schoolexamen heeft betrekking op: 
+–  domein A en ten minste die subdomeinen die niet in het CE worden getoetst; 
+– 
+
+indien het bevoegd gezag daarvoor kiest: aangevuld met een of meer subdomeinen uit het CE, of met 
+andere vakonderdelen, die per kandidaat kunnen verschillen. 
+
+Pagina 6 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+3 
+
+SPECIFICATIE VAN DE GLOBALE EINDTERMEN VOOR HET CE 
+
+3.1 
+
+DOMEIN A:  VAARDIGHEDEN 
+
+Subdomein A1: Geografische benadering  
+
+1  De kandidaat kan de geografische benadering adequaat hanteren. Hij kan in dit verband: 
+
+a  geografische informatie selecteren, verwerken en weergeven; 
+b  geografische vragen herkennen en zelf formuleren; 
+c  de geografische werkwijzen toepassen bij het formuleren en beantwoorden van geografische 
+
+vragen. 
+
+1a.  De kandidaat kan geografische informatie selecteren, verwerken en weergeven 
+
+Het betreft: 
+
+1a.1 Kaarten selecteren, lezen, analyseren, interpreteren en produceren bij het beantwoorden 
+van geografische vragen 
+
+In dit verband kan 
+de kandidaat: 
+
+Specificatie: 
+
+Kaarten selecteren 
+
+De leerling kan kaarten zoeken en de juiste kaart kiezen door de geografische 
+informatiewaarde en cartografische geschiktheid van de kaart te beoordelen. Bij 
+het beoordelen van de cartografische geschiktheid betrekt de leerling de projectie, 
+schaal en de mate en wijze van generalisatie en symbolisatie. 
+
+Kaarten lezen 
+
+De leerling kan elementen in de kaart identificeren en benoemen, en de 
+kenmerken van de elementen beschrijven. De leerling kan ook de kaarten 
+bevragen: hij kan zoeken welke kenmerken bepaalde elementen bezitten en welke 
+elementen bepaalde kenmerken bezitten. 
+
+Kaarten analyseren  De leerling kan patronen (spreidingen en geledingen) in de kaart herkennen en 
+
+beschrijven, en kan correlaties tussen twee patronen herkennen en beschrijven. 
+
+Kaarten 
+interpreteren 
+
+De leerling kan verklaringen geven voor de kenmerken en patronen van 
+elementen en de aanwezigheid van correlaties, en kan voorspellingen doen voor 
+veranderingen in de kenmerken en patronen van elementen. Hierbij maakt de 
+leerling gebruik van achtergrondkennis. 
+
+Kaarten maken 
+
+De leerlingen kan geografische informatie verwerken tot een kaart. Hierbij: 
+
+-  kiest de leerling de geschikte projectie en schaal; 
+-  kiest de leerlingen voor het geschikte type elementen: punten, lijnen, vlakken 
+
+of stroompijlen; 
+
+-  kiest de leerling voor een geschikte klassenindeling; 
+-  kiest de leerling welke informatie (welke elementen en attributen) wordt 
+
+opgenomen, en hoe die informatie wordt gegeneraliseerd; 
+
+-  kiest de leerling voor de geschikte cartografische variabele zoals grootte, vorm, 
+
+richting, kleur en /of grijswaarden.  
+
+De keuze hangt af van het doel van de kaart, en de kenmerken van de informatie. 
+Afhankelijk van de keuze van het type elementen ontstaan verschillende soorten 
+kaarten zoals stippenkaarten, isolijnenkaarten, anamorfosekaarten.  
+
+Pagina 7 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+1a.2  Geo-ICT applicaties gebruiken bij het beantwoorden van geografische vragen, waarbij 
+leerlingen geografische gegevens onder andere van digitale kaarten en satellietbeelden 
+selecteren, lezen, analyseren, bewerken en presenteren 
+
+In dit verband kan de kandidaat: 
+
+Specificatie: 
+
+Verschillende typen Geo-ICT applicaties als 
+informatiebron benutten 
+
+Het gaat bijvoorbeeld om virtuele globes, educatieve web-
+atlassen, web GIS applicaties en serious geogames.  
+
+GPS applicaties gebruiken om geografische 
+gegevens te verzamelen. 
+
+Het gaat om het kunnen vinden van locaties en routes en 
+het digitaal vastleggen van waarnemingen / 
+omgevingskenmerken met behulp van GPS. 
+
+Eenvoudige GIS software hanteren bij het 
+werken met digitale kaarten 
+
+Het gaat om het bewerken, analyseren, interpreteren en 
+produceren van digitale kaarten, vaak in combinatie met 
+tabellen en figuren, gegeven een bepaalde geografische 
+onderzoeksvraag. 
+
+1a.3  informatie in teksten, beelden en cijfers hanteren bij het beantwoorden van 
+geografische vragen1 
+
+In dit verband kan de kandidaat: 
+
+Specificatie: 
+
+Relevante informatie selecteren, 
+analyseren, interpreteren en produceren bij 
+gegeven geografische vragen. 
+
+Het gaat om informatie in teksten, beelden en cijfers (en 
+combinaties daarvan) in (vak)literatuur en (massa)media. 
+Denk aan: video, film, (interactieve) animaties, 
+(lucht)foto's, tabellen, grafieken, diagrammen en cartoons. 
+
+1b. 
+
+De kandidaat kan geografische vragen herkennen en zelf formuleren  
+
+Het betreft: 
+
+1b.  geografische vragen herkennen en zelf formuleren  
+
+In dit verband kan de kandidaat:  
+
+Specificatie:  
+
+1.  Aangeven waarover geografische vragen 
+
+Geografische vragen zijn vragen over: 
+
+gaan. 
+
+−  verschillen tussen verschijnselen op aarde plus de 
+
+relaties daartussen en verschillen binnen gebieden en 
+tussen gebieden plus relaties binnen en tussen 
+gebieden (kennis over het aardrijk) 
+
+−  de manier waarop geografische kennis wordt 
+verworven en weergegeven (aardrijkskundige 
+kennisverwerving of werkwijzen) 
+
+−  ruimtelijke vraagstukken waarvoor mensen, die in een 
+specifiek gebied leven, zich geplaatst zien (toepassing 
+van kennis en werkwijzen). 
+
+2.  De volgende typen geografische vragen 
+
+herkennen en formuleren: 
+
+• 
+
+beschrijvende vragen 
+
+−  Een beschrijving bevat een (stapsgewijze) weergave 
+
+van een locatie, kenmerk, proces of patroon. 
+
+1 De waarneembare werkelijkheid als informatiebron (veldwerk) is alleen van belang in het schoolexamen. 
+
+Pagina 8 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+• 
+
+verklarende vragen 
+
+−  Een verklaring of een uitleg bevat een weergave van 
+
+een relatie tussen twee of meer gegevens of 
+verschijnselen bijvoorbeeld in de vorm van een 
+oorzaak-gevolgrelatie. 
+
+• 
+
+voorspellende vragen 
+
+−  Een voorspelling bevat een onderbouwd toekomstbeeld 
+dat is samengesteld op basis van een verwachting. 
+
+•  waarderende vragen 
+
+−  Een waardering bevat een onderbouwd oordeel over 
+
+een keuze of een beslissing. 
+
+• 
+
+vragen gericht op het maken van 
+keuzes en het oplossen van 
+problemen 
+
+−  Een oplossing bevat een mogelijke uitkomst voor een 
+
+vraagstuk. 
+
+De kandidaat kan de geografische werkwijzen toepassen bij het formuleren en 
+
+1c. 
+beantwoorden van geografische vragen  
+
+Het betreft: 
+
+1c. geografische werkwijzen toepassen bij het formuleren en beantwoorden van geografische 
+vragen 
+
+In dat verband kan de kandidaat: 
+
+Specificatie: 
+
+Geografische werkwijzen worden gebruikt om 
+geografische vragen te stellen en te beantwoorden. 
+Hieronder wordt bij elke geografische werkwijze 
+aangegeven wat de functie ervan is en op welke 
+denkvaardigheden een beroep wordt gedaan. Daarbij gaat 
+het steeds om twee denkvaardigheden: het maken van 
+onderscheid en het opsporen van samenhangen. 
+
+De kandidaat moeten de geografische werkwijzen kunnen 
+gebruiken en weten wanneer en waarom bepaalde 
+geografische werkwijzen gebruikt moeten worden. 
+
+1.  Verschijnselen en gebieden vergelijken 
+
+in ruimte en tijd. 
+
+Het vergelijken van verschijnselen en gebieden in ruimte 
+en tijd. 
+
+2.  Relaties leggen binnen een gebied en 
+
+tussen gebieden. 
+
+Het gaat daarbij om het maken van vergelijkingen door 
+het aangeven van overeenkomsten en verschillen tussen 
+gebieden, en tussen verschijnselen en tussen verleden, 
+heden en toekomst. De denkvaardigheid die daarbij wordt 
+gehanteerd is: het onderscheiden van overeenkomsten en 
+verschillen. 
+
+Bij het leggen van relaties gaat het om het aangeven van 
+samenhangen tussen verschijnselen binnen een gebied 
+(verticaal), met name tussen natuur en samenleving en 
+tussen ruimtelijke structuur en gedrag, en om het 
+aangeven van samenhangen tussen gebieden 
+(horizontaal). 
+
+Relaties worden gelegd om een samenhangend 
+geografisch (wereld)beeld op te bouwen. De betreffende 
+denkvaardigheid is: verbanden opsporen tussen gebieden 
+(horizontale relaties) en tussen verschijnselen binnen 
+gebieden (verticale relaties). 
+
+Pagina 9 van 53 
+
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+3.  Verschijnselen en gebieden vanuit 
+
+verschillende dimensies beschrijven en 
+analyseren (natuur, economie, politiek, 
+sociaal-cultureel en demografie). 
+
+4.  Verschijnselen en gebieden in hun 
+geografische context plaatsen. 
+
+5.  Verschijnselen en gebieden op 
+
+verschillende ruimtelijke schalen 
+beschrijven en analyseren. 
+
+6.  Verschijnselen en gebieden beschrijven 
+en analyseren door relaties te leggen 
+tussen het bijzondere en het algemene. 
+
+Het beschrijven en analyseren van verschijnselen en 
+gebieden vanuit verschillende dimensies wordt gebruikt 
+om een kritische beschouwing te geven. 
+
+De denkvaardigheid is: verschillende aspecten aan een 
+verschijnsel of gebied onderscheiden (natuur, economie, 
+politiek, sociaal-cultureel en demografie) en de 
+samenhangen daartussen opsporen. 
+
+Verschijnselen in hun geografische context plaatsen doe je 
+door van verschijnselen en gebieden aan te geven uit 
+welke delen ze bestaan en tot welke grotere gehelen ze 
+behoren (wisselen van analyseniveau). 
+
+De betreffende denkvaardigheden zijn: de structuur van 
+een gebied beter begrijpen door een onderscheid te 
+maken tussen deelgebieden van een groter gebied 
+(indelen) en samenhangen opsporen door na te gaan tot 
+welk groter geheel een gebied behoort (toedelen). 
+
+Het op verschillende schaal beschrijven en analyseren van 
+verschijnselen en gebieden (veranderen van ruimtelijke 
+schaal). 
+
+Veranderen van ruimtelijke schaal wordt gebruikt om 
+globale geografische beelden te detailleren (concretiseren) 
+en om van gedetailleerde geografische beelden de 
+essentie weer te geven (abstraheren). De betreffende 
+denkvaardigheid is: een onderscheid maken tussen 
+globale en gedetailleerde ruimtelijke patronen. 
+
+Verschijnselen en gebieden beschrijven en analyseren 
+door het bijzondere en algemene te onderscheiden en 
+relaties daartussen te leggen (inductief en deductief 
+redeneren), om te zien hoe algemene processen een 
+specifieke vorm krijgen afhankelijk van het land of de 
+regio waarin zij zich afspelen. De denkvaardigheid is: het 
+algemene en bijzondere van een verschijnsel of gebied 
+onderscheiden en de samenhangen daartussen opsporen. 
+
+Pagina 10 van 53 
+
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+3.3 
+
+DOMEIN B: WERELD 
+Subdomein B1: Samenhang en verscheidenheid in de wereld 
+
+3a.   De begrippen mondialisering en tijdruimtecompressie in onderling verband en vanuit een 
+
+geografisch perspectief analyseren 
+
+Het betreft:  
+
+3a.1 de geschiedenis van mondialisering/globalisering en de rol die hegemoniale staten 
+daarin hebben gespeeld 
+In dit verband kan de kandidaat:  
+
+-  Globaliseringsprocessen sinds de koloniale periode beschrijven en analyseren 
+-  de rol van hegemoniale staten in globaliseringsprocessen en in mondiale centrum-
+
+periferieverhoudingen beschrijven. 
+
+Aandachtspunten: 
+
+•  Het centrum-periferiemodel is toepasbaar op alle 
+schaalniveaus: binnen centrumlanden zijn er ook 
+(semi)perifere gebieden en binnen (semi)perifere landen zijn 
+er ook centrumgebieden. 
+
+• 
+
+•  De koloniale grootmachten hebben in de koloniale periode de 
+basis gelegd van de huidige mondiale centrum-periferie 
+verhoudingen.  
+Tot de jaren 1980 vond globalisering vooral plaats in de 
+context van (post)koloniale machtsrelaties. Vanaf de jaren 
+1980 maakten vrijhandelsverdragen en offshoring van 
+productieketens globalisering verder mogelijk waardoor er 
+een verschuiving in de internationale arbeidsverdeling 
+plaatsvond. Vanaf de jaren 2010 speelden de opkomst van 
+China en de opkomst van nationalistische bewegingen een 
+steeds grotere rol in globaliseringsprocessen en kwam er 
+meer aandacht voor de negatieve effecten van globalisering. 
+Internationale handels- en investeringsstromen voltrekken 
+zich in grote mate binnen en tussen de drie mondiale 
+centrumgebieden. 
+
+• 
+
+•  Opkomende economieën - met name China – en 
+
+multinationale ondernemeningen (MNO’s) uit deze landen 
+spelen een steeds grotere rol in internationale handels- en 
+investeringsstromen en in de mondiale economie en politiek. 
+
+•  De (regionale) grootmachten zetten economische, politieke 
+
+en militaire middelen in om hun invloed op bepaalde gebieden 
+te vergroten. Dat wordt geopolitiek genoemd.  
+
+•  De Europese Unie zoekt positie tussen de grootmachten 
+
+China, Rusland en de Verenigde Staten.  
+
+•  De (veranderende) posities van landen in het wereldsysteem 
+
+vergelijken en relateren aan politieke, economische en sociaal-
+culturele machtsverhoudingen.   
+
+•  Relaties leggen tussen internationale ontwikkelingen en de 
+
+wisseling van hegemoniale staten vanaf de koloniale periode. 
+
+Belangrijke werkwijzen: 
+
+Belangrijke begrippen: 
+
+wereldsysteem: 
+
+centrum 
+semi-periferie 
+periferie 
+
+hegemoniale staat  
+
+geopolitiek  
+internationale arbeidsverdeling 
+
+Pagina 11 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Tot de jaren 1980:  
+
+Vanaf de jaren 1980: 
+
+Vanaf de jaren 2010: 
+
+imperialisme 
+Europeanisering  
+kolonialisme  
+dekolonisatie 
+bipolaire wereld 
+
+nieuwe industrielanden 
+offshoring  
+outsourcing 
+de-industrialisatie 
+Global shift 
+Pacific Rim  
+neoliberalisme 
+neokolonialisme 
+vrijhandel 
+unipolaire wereld 
+
+handelsbelemmeringen 
+reshoring 
+Nieuwe Zijderoute 
+multipolaire wereld 
+
+3a.2 De rol van technologische ontwikkeling in het proces van tijdruimtecompressie 
+In dit verband kan de kandidaat: 
+- Technologische ontwikkelingen, tijdruimtecompressie en globalisering aan elkaar relateren. 
+Aandachtspunten: 
+
+• 
+
+Technologische ontwikkelingen en schaalvergroting op het 
+gebied van transport en ict maken tijdruimtecompressie en 
+globalisering mogelijk. 
+
+Belangrijke werkwijzen: 
+
+Het relateren van technologische ontwikkelingen aan 
+tijdruimtecompressie. 
+
+Belangrijke begrippen: 
+
+tijdruimtecompressie:  
+
+absolute en relatieve afstand  
+absolute en relatieve ligging  
+
+afstandsverval  
+transporttechnologie   
+transportnetwerk  
+informatie- en 
+communicatietechnologie (ict) 
+
+3a.3 De economische, politieke, demografische en sociaal-culturele dimensies van 
+globalisering 
+In dit verband kan de kandidaat: 
+- Huidige globaliseringprocessen beschrijven en verklaren vanuit de economische, de politieke, 
+demografische en de sociaal-culturele dimensies en die dimensies aan elkaar relateren. 
+
+Aandachtspunten: 
+
+•  De staten uit de centrumgebieden geven globalisering politiek en 
+economisch vorm door samenwerkingsverbanden en verdragen. 
+•  Netwerken (van bedrijven, instellingen, migranten) omspannen de 
+wereld en oefenen hun invloed uit op steden en gebieden, op 
+sociale groepen en op individuen. 
+
+•  Globalisering leidt niet alleen tot integratie van gebieden en 
+
+samenlevingen, maar ook tot concurrentie tussen gebieden en 
+groepen mensen.  
+
+Pagina 12 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+• 
+
+Economische globalisering heeft geleid tot mondiale stijging van 
+welvaart én uitvergroting van bestaande economische 
+ongelijkheid. 
+
+•  Culturele globalisering leidt tot een toename van culturele 
+diversiteit en tegelijkertijd tot een toename van culturele 
+uniformiteit. Ook roept culturele globalisering tegenreacties op, 
+zoals de herwaardering van regionale (en nationale) identiteiten. 
+•  Migratie en mobiliteit zijn onlosmakelijke delen van globalisering, 
+
+• 
+
+waarbij mobiliteit makkelijker is voor mensen uit centrum 
+gebieden en moeilijker voor mensen uit periferiegebieden. 
+Politieke migratie vindt vooral plaats binnen de regio van 
+herkomst. Economische migratie vindt vooral plaats richting 
+economische centrumgebieden, ook naar de centrumgebieden in 
+opkomende economieën. 
+
+•  Staten proberen migratie te reguleren met beleid en vergunningen. 
+Binnen de belemmeringen en mogelijkheden die voortkomen uit dit 
+beleid, bepalen economische, politieke en sociaal-culturele 
+ervaringen en motieven van de migrant en van diens gemeenschap 
+de keuzes bij migratie. 
+
+Belangrijke werkwijzen:   Het proces van globalisering vanuit verschillende dimensies beschrijven 
+
+en analyseren en relaties leggen tussen de verschillende dimensies. 
+
+Belangrijke begrippen:  mondiale en transnationale 
+
+netwerken 
+
+economische globalisering:  
+
+kapitaalstromen  
+
+• 
+•  multinationale onderneming 
+
+culturele globalisering:  
+
+politieke globalisering: 
+
+ migratie: 
+
+(MNO) 
+productieketen  
+
+• 
+•  Wereldhandelsorganisatie (WTO) 
+• 
+
+buitenlandse investeringen 
+(Foreign Direct Investment, FDI) 
+ruilvoet 
+belastingtarieven 
+
+• 
+• 
+
+• 
+• 
+• 
+• 
+
+• 
+
+culturele diffusie 
+lingua franca  
+amerikanisering 
+culturele diversiteit en 
+uniformiteit 
+culturele identiteit  
+
+blokvorming, zoals de EU 
+• 
+(regionale) grootmachten 
+• 
+regionalisme  
+• 
+•  wereldburgerschap 
+anders-globalisten 
+• 
+
+(im)mobiliteit 
+• 
+•  migratienetwerken 
+selectieve migratie 
+• 
+push- en pullfactoren 
+• 
+
+Pagina 13 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+3a.4 de uitwerking van het proces van globalisering in verschillende gebieden 
+In dit verband kan de kandidaat: 
+- Aan de hand van voorbeelden aangeven wat de effecten zijn van en de reacties zijn op 
+globalisering in verschillende gebieden: een centrumgebied, een semi-perifeer gebied en een 
+perifeer gebied.2 
+Aandachtspunten: 
+
+•  Globalisering werkt in verschillende gebieden anders uit 
+
+wegens de mondiale machtsverhoudingen en de specifieke 
+regionale context. 
+
+Belangrijke werkwijzen: 
+
+•  Gebieden analyseren door relaties te leggen tussen bijzondere 
+
+regionale omstandigheden en het algemene proces van 
+globalisering.  
+
+•  Vergelijken van gebieden wat betreft de effecten van en 
+
+reacties op globalisering. 
+
+•  Het centrum-periferiemodel toepassen op verschillende 
+
+Belangrijke begrippen: 
+
+schaalniveaus. 
+
+fragmentarische modernisering  
+sociale ongelijkheid 
+ruimtelijke ongelijkheid  
+afwenteling in ruimte en tijd 
+ spread-effecten  
+backwash-effecten 
+
+3b.  Mondiale spreidingspatronen van economische, culturele, demografische, sociale en 
+politieke verschijnselen beschrijven, in hoofdlijnen verklaren en aan elkaar relateren 
+
+Het betreft: 
+
+3b.1  Het vergelijken van landen aan de hand van economische, demografische, sociaal-
+culturele en politieke indicatoren3 
+In dit verband kan de kandidaat:  
+
+−  Aan de hand van verschillende indicatoren de wereld indelen en landen met elkaar vergelijken. 
+−  Mondiale spreidingspatronen van economische, demografische, sociaal-culturele en politieke 
+
+indicatoren beschrijven en verklaren. 
+
+Aandachtspunten: 
+
+• 
+
+Indicatoren maken het vergelijken en categoriseren van landen 
+mogelijk. 
+
+•  Op basis van demografische indicatoren kan de wereld ingedeeld 
+
+worden naar fasen in het demografisch transitiemodel. 
+
+•  Demografische transities zijn vaak gerelateerd aan economische en 
+
+sociaal-culturele ontwikkelingen. 
+
+•  Op basis van culturele indicatoren kan de wereld ingedeeld worden in 
+
+cultuurgebieden. Maar grenzen tussen die cultuurgebieden zijn door 
+migratie en culturele uitwisseling moeilijk te trekken. 
+
+• 
+
+Talen, godsdiensten en andere cultuurverschijnselen zijn door 
+kolonialisme, militaire veroveringen, handelscontacten en migratie 
+verspreid (culturele diffusie). Bij diffusie van cultuurelementen spelen 
+tegenwoordig ook sociale media en toerisme een belangrijke rol. 
+
+2 De keuze van landen wordt vrijgelaten. 
+3 Het gaat bij deze eindterm om het verankeren en verdiepen van een mentale kaart van de wereld en om het kritisch 
+leren beschouwen en onderling relateren van wereldkaarten. In dit verband wordt ook verwacht dat de leerling de 
+basale topografische kennis van de wereld beheerst. De ‘basale topografische kennis’ betreft ten minste de ‘lijst van 
+300 namen’ die ook voor het basisonderwijs als richtsnoer geldt.  
+
+Pagina 14 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Belangrijke 
+werkwijzen: 
+
+•  Geografische verschijnselen op nationale schaal vanuit verschillende 
+
+dimensies beschrijven. 
+Landen en indicatoren vergelijken. 
+
+• 
+•  Ruimtelijke spreidingspatronen aan elkaar relateren. 
+
+Belangrijke 
+begrippen: 
+
+economisch:  
+
+demografisch:  
+
+politiek:  
+
+sociaal-cultureel:  
+
+analfabetisme  
+verstedelijkingsgraad 
+verstedelijkingstempo 
+VN-ontwikkelingsindex / Human 
+Development Index 
+
+bnp / bbp / brp (per hoofd) 
+inkomen (per hoofd) 
+koopkracht  
+beroepsbevolking  
+
+ bevolkingsdichtheid 
+bevolkingsspreiding 
+bevolkingsgroei 
+demografisch transitiemodel 
+demografische druk 
+leeftijdsopbouw  
+kindersterfte 
+vruchtbaarheidscijfer 
+
+democratisch gehalte  
+mensenrechten  
+samenwerkingsverbanden  
+
+taal 
+godsdienst 
+cultuurgebieden  
+
+3b.2  de waarde en beperkingen van indicatoren op nationale schaal 
+In dit verband kan de kandidaat: 
+- De waarden en beperkingen van de in 3b.1 genoemde indicatoren voor gebruik op nationale schaal 
+beschrijven. 
+Aandachtspunten: 
+
+Belangrijke werkwijzen: 
+
+• 
+
+• 
+
+• 
+
+Indicatoren maken het vergelijken en het indelen van landen 
+mogelijk. 
+Indicatoren op nationale schaal verhullen ruimtelijke en 
+sociale verschillen op een lagere ruimtelijke schaal. 
+
+Evalueren van de geschiktheid van indicatoren om landen in te 
+delen. 
+
+•  Onderscheid maken in spreidingspatronen op verschillende 
+
+ruimtelijke schalen. 
+
+Pagina 15 van 53 
+
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+3b.3  het verband tussen het economisch ontwikkelingspeil van een gebied en de mate 
+van verstedelijking, demografische kenmerken en verdeling van de werkgelegenheid 
+In dit verband kan de kandidaat:  
+- Verklaren hoe demografische kenmerken en verstedelijking samenhangen met het sociaal 
+economisch ontwikkelingspeil van een gebied.  
+- Deze samenhang toepassen op drie typen gebieden: een centrumgebied, een semiperifeer gebied 
+en een perifeer gebied. 
+Aandachtspunten: 
+
+• 
+
+• 
+
+• 
+
+In het algemeen geldt: hoe hoger het economische 
+ontwikkelingspeil van een gebied is, des te hoger is de 
+verstedelijkingsgraad en des te lager het 
+verstedelijkingstempo.  
+In het algemeen geldt dat bij een toename van het economisch 
+ontwikkelingspeil van een gebied het geboortecijfer daalt, 
+terwijl het sterftecijfer eerst daalt en vervolgens weer 
+toeneemt, door vergrijzing. hoe hoger het economisch 
+ontwikkelingspeil van een gebied is, des te lager zijn de 
+geboorte- en sterftecijfers.  
+In het algemeen geldt: naarmate het economisch 
+ontwikkelingspeil van een gebied hoger is, werkt een kleiner 
+deel van de beroepsbevolking in de landbouw en een groter 
+deel in de formele dienstensector. 
+
+Belangrijke werkwijzen: 
+
+Relaties leggen tussen het economisch ontwikkelingspeil en andere  
+
+relevante indicatoren 
+
+3c.   Grootstedelijke gebieden in een nader aan te wijzen postindustrieel land analyseren in 
+het licht van processen van mondialisering 
+
+Het betreft:  
+
+3c.1  Wereldsteden in mondiale netwerken en hun ruimtelijke kenmerken4  
+
+In dit verband kan de kandidaat:  
+- De posities van New York, Washington en Los Angeles als machtscentra en als knooppunten van 
+informatie-, geld- en goederenstromen beschrijven en verklaren.  
+- Ruimtelijke kenmerken van deze steden benoemen die samenhangen met hun positie als mondiaal 
+knooppunt. 
+Aandachtspunten: 
+
+•  Wereldsteden zijn belangrijke mondiale knooppunten vanuit de 
+
+economische, sociaal-culturele en/of politieke dimensie.  
+
+•  Veranderingen, vernieuwingen en trends vinden hun oorsprong 
+
+vrijwel altijd in grote steden. 
+
+•  New York is een mondiaal knooppunt vanuit economische, 
+sociaal-culturele en politieke dimensie. Los Angeles is dat 
+vanuit de economische en sociaal-culturele dimensie. 
+Washington is dat vanuit de politieke dimensie. 
+
+Belangrijke werkwijzen: 
+
+•  De drie genoemde wereldsteden vanuit verschillende dimensies 
+
+vergelijken. 
+
+•  Relaties leggen tussen de belangrijke functies en de ruimtelijke 
+
+geleding van de drie genoemde wereldsteden. 
+
+Belangrijke begrippen: 
+
+megalopolis  
+wereldstad/metropool 
+stedelijk netwerk 
+hub en spoke-netwerk  
+mainportregio  
+
+4 Als land wordt aangewezen: de Verenigde Staten. Als stedelijke knooppunten worden aangewezen: New York, 
+Washington en Los Angeles. 
+
+Pagina 16 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+achterland 
+
+(economisch) cluster  
+internationale dienstverlening  
+mondiale financiële markten  
+innovatie  
+kosmopolitisme   
+
+ruimtelijke geleding:  
+
+edge city  
+Central Business District 
+(CBD)  
+
+internationale migratie naar en sociale polarisatie binnen de drie genoemde 
+
+3c.2 
+wereldsteden 
+In dit verband kan de kandidaat:  
+- Het patroon van internationale migratie naar de drie genoemde wereldsteden beschrijven.  
+- De sociale polarisatie binnen de drie wereldsteden analyseren vooral gelet op de etnische 
+samenstelling van de bevolking en ruimtelijke en sociale in/uitsluitingsmechanismen. 
+Aandachtspunten: 
+
+•  Ruimtelijke en sociale in/uitsluitingsmechanismen dragen bij aan 
+
+Belangrijke werkwijzen: 
+
+Belangrijke begrippen: 
+
+een sterke ruimtelijke segregatie en sociale polarisatie in 
+wereldsteden in de VS. 
+
+•  Voor migranten voor wie de formele sector niet toegankelijk is, 
+
+biedt de informele sector in wereldsteden mogelijkheden om werk 
+en onderdak te vinden. 
+
+Relaties leggen tussen de ruimtelijke geleding van een wereldstad en 
+het ruimtelijk gedrag van verschillende etnische en sociale groepen. 
+
+ruimtelijke segregatie  
+sociale polarisatie 
+getto 
+gated community 
+kettingmigratie 
+racisme 
+
+Pagina 17 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+3.4 
+
+DOMEIN C: AARDE 
+
+Subdomein C1: De aarde als natuurlijk systeem; samenhangen en diversiteit 
+
+5.  De kandidaat kan met betrekking tot de aarde als natuurlijk systeem: 
+
+5a.  De aarde als een uniek natuurlijk systeem beschrijven en deze kennis toepassen bij het 
+
+analyseren van veranderingen aan het aardoppervlak op verschillende tijd- en 
+ruimteschalen 
+
+Het betreft:  
+
+5a.1  Het interne systeem van de aarde en de betekenis van endogene processen voor de 
+vorming van reliëf aan het aardoppervlak 
+
+In dat verband kan de kandidaat: 
+
+- Endogene processen die samenhangen met de platentektoniek beschrijven en verklaren en aan 
+elkaar relateren. 
+
+Aandachtspunten: 
+
+Belangrijke 
+werkwijzen: 
+
+Belangrijke 
+begrippen: 
+
+•  Aardwetenschappen is de tak van wetenschap die de samenstelling 
+van de aarde en de atmosfeer en de daarin spelende processen 
+bestudeert.   
+
+•  Het actualiteitsprincipe is het uitgangspunt binnen de 
+
+• 
+
+• 
+
+• 
+
+aardwetenschappen dat fysische processen in het verleden op dezelfde 
+tijd- en ruimteschalen plaatsvonden als tegenwoordig. 
+Platentektoniek is het systeem van interacties tussen delen van de 
+aardkorst. Bewegingen in de mantel door hitte spelen een beperkte 
+rol. 
+Plaatbewegingen zijn vooral het resultaat van slab pull (trekkracht) als 
+gevolg van het wegduiken van de oceanische korst bij een 
+subductiezone en in mindere mate het resultaat van ridge push 
+(duwkracht) vanuit de (mid)oceanische rug. 
+Plaatbewegingen vormen  gebergten door compressie 
+(plooiingsgebergten) en rek (riftschouders, riftvalleien, horsten en 
+slenken). 
+
+•  Het bewegen van platen ten opzichte van elkaar veroorzaakt 
+
+aardbevingen. Ook vulkanisme gaat gepaard met seismische activiteit. 
+
+•  Het eruptietype en de vulkaanvorm zijn afhankelijk van het type 
+
+plaatgrens en de samenstelling van het magma. Daarnaast spelen 
+lokale factoren en de duur van een uitbarsting een rol. 
+•  Bij subductiezones smelt gesteente door de toevoeging van 
+
+(zee)water, bij divergente plaatgrenzen door afnemende druk en bij 
+mantelpluimen / hotspots door hitte. 
+
+•  Geomorfologische verschijnselen zijn vaak te relateren aan 
+
+paleogeografische hoogte- en breedteligging. 
+
+Endogene processen aan elkaar relateren. 
+
+• 
+•  Geomorfologische verschijnselen relateren aan endogene processen.  
+Typeren en indelen van vulkanisme, aardbevingen en gebergten. 
+• 
+•  Relateren van kaarten aan (geologische) dwarsdoorsnedes. 
+
+actualiteitsprincipe 
+geologische tijdschaal 
+geomorfologie 
+paleogeografie 
+
+Pagina 18 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+platentektoniek:  
+
+vulkanisme: 
+
+aardbevingen: 
+
+gebergtevorming: 
+
+asthenosfeer 
+lithosfeer 
+divergente plaatgrenzen 
+convergente plaatgrenzen 
+transforme plaatgrenzen 
+(mid)oceanische rug 
+slab pull 
+ridge push 
+subductie 
+trog 
+
+viscositeit 
+explosieve eruptie 
+effusieve eruptie 
+stratovulkaan 
+schildvulkaan 
+caldera 
+pyroklastica 
+basaltstromen 
+mantelpluim en hotspot 
+
+seismologie 
+momentmagnitudeschaal 
+tsunami 
+
+plooiingsgebergte 
+riftschouders en riftvalleien 
+horsten en slenken 
+bekken 
+
+5a.2  Exogene processen aan het aardoppervlak en hun betekenis voor de vorming van 
+het aardoppervlak 
+
+In dat verband kan de kandidaat: 
+
+−  Exogene processen beschrijven en hun invloed op de vorming van het aardoppervlak 
+
+verklaren.  
+
+−  Deze exogene processen in twee stroomgebieden ( in de gematigde en de aride zone) 
+
+vergelijken en de verschillen verklaren. 
+
+Aandachtspunten: 
+
+•  Door verwering en erosie worden gesteenten afgebroken. Het 
+
+verweringsmateriaal wordt getransporteerd en elders gesedimenteerd. 
+
+•  De verweringsvorm die overheerst in een gebied wordt hoofdzakelijk 
+
+• 
+• 
+
+bepaald door de klimatologische omstandigheden. 
+In de aride zone overheerst in het algemeen mechanische verwering.  
+In de aride zone wordt verweringsmateriaal door gebrek aan vegetatie 
+minder goed vastgehouden dan in de gematigde zone. 
+
+•  Stroomsnelheid en transportmechanisme bepalen de 
+
+korrelgrootte(verdeling) van het sediment. 
+
+Belangrijke 
+werkwijzen: 
+
+Exogene processen aan elkaar relateren. 
+
+• 
+•  Geomorfologische verschijnselen relateren aan exogene processen.  
+•  Vergelijken van exogene processen in twee stroomgebieden 
+
+Pagina 19 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Belangrijke 
+begrippen: 
+
+verwering: 
+
+erosie 
+transport 
+
+sedimentatie: 
+
+afzettingsmilieu 
+
+massabeweging: 
+
+rivierstelsel 
+stroomgebied 
+estuarium 
+
+mechanisch (fysisch) 
+chemisch  
+
+delta 
+morene 
+puinwaaier 
+
+aardverschuiving 
+puinhelling 
+
+5a.3  Kringlopen die van belang zijn voor veranderingen van het aardoppervlak 
+
+In dat verband kan de kandidaat: 
+
+De interactie tussen endogene en exogene processen beschrijven en verklaren (aan de hand van de 
+kringlopen). 
+
+Aandachtspunten: 
+
+• 
+
+Platentektoniek, de gesteentekringloop en de hydrologische kringloop 
+spelen zich af op verschillende tijd- en ruimteschalen. 
+
+•  Veranderingen van het aardoppervlak ontstaan door de opbouwende 
+
+werking van endogene processen en de afbrekende werking van exogene 
+processen. 
+
+•  Stollings- en sedimentgesteenten kunnen onder langdurige invloed van 
+hoge druk en/of warmte omgezet worden tot metamorfe gesteenten. 
+
+•  Verschillende gesteenten zijn te herkennen aan bijvoorbeeld kleur, 
+
+kristallen, gelaagdheid en de aanwezigheid van fossielen.  
+
+•  Het verweringsmateriaal uit gebergten wordt getransporteerd naar lager 
+
+gelegen gebieden en daar gesedimenteerd. 
+
+Belangrijke 
+werkwijzen: 
+
+•  Relateren van endogene en exogene processen. 
+•  Relateren van de gesteentekringloop en de hydrologische kringloop aan 
+
+elkaar en aan de endogene en exogene processen. 
+
+•  Relateren van kenmerken van gesteenten aan de ontstaanswijze ervan. 
+
+Belangrijke 
+begrippen: 
+
+hydrologische kringloop 
+gesteentekringloop 
+stollingsgesteenten: 
+
+sedimentgesteenten: 
+
+metamorfe gesteenten: 
+
+graniet 
+basalt 
+
+kalksteen 
+zandsteen 
+
+leisteen  
+marmer 
+
+Pagina 20 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+5a.4 de invloed van processen in de lithosfeer, atmosfeer en hydrosfeer op het 
+klimaatsysteem 
+
+In dat verband kan de kandidaat: 
+
+- de mondiale windsystemen en zeestromen beschrijven en analyseren welke invloed deze hebben 
+op de klimaatgebieden. 
+
+Aandachtspunten: 
+
+•  Op mondiale schaal is er een dynamisch evenwicht tussen inkomende 
+
+Belangrijke 
+werkwijzen: 
+
+Begrippen: 
+
+zonnestraling en uitgaande warmtestraling. 
+
+•  De mondiale windsystemen en zeestromingen worden aangedreven 
+
+door zonne-energie en aardrotatie. 
+
+•  Oceanische en atmosferische circulatie zorgen voor de verdeling van 
+
+koude en warmte over de aarde. 
+
+•  De ligging van oceanen, continenten en gebergten beïnvloedt het 
+
+klimaatsysteem op verschillende schaalniveaus. 
+
+•  Zeestromen worden aangedreven door de wind en door 
+
+thermohaliene circulatie. 
+
+•  Klimaten en klimaatpatronen op verschillende ruimte- en tijdschalen 
+
+beschrijven en analyseren. 
+
+•  Relateren van klimaatgebieden aan zee- en luchtstromen. 
+
+stralingsbalans 
+atmosferische circulatie / 
+mondiale windsystemen: 
+
+oceanische circulatie: 
+
+klimaten volgens Köppen 
+
+ hoge luchtdrukgebied  
+lage luchtdrukgebied  
+intertropische convergentiezone (ITCZ) 
+corioliseffect 
+wet van Buys Ballot 
+passaat 
+moesson 
+
+thermohaliene circulatie  
+diepwaterpomp 
+warme en koude zeestroom 
+
+Pagina 21 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+5b. de kenmerken van landschapszones op aarde en de veranderingen hierin beschrijven, 
+analyseren en aan elkaar relateren 
+
+Het betreft: 
+
+5b.1  De kenmerken van de landschapszones op aarde  
+
+In dat verband kan de kandidaat: 
+
+De landschapszones op aarde herkennen en beschrijven als dynamische systemen. 
+
+Relaties tussen geofactoren binnen landschapszones beschrijven en verklaren. 
+
+Aandachtspunten: 
+
+•  Het landschap is een dynamisch systeem: als één van de geofactoren 
+verandert, leidt dat tot veranderingen van de andere geofactoren. 
+•  Klimaatgebieden en landschapszones vallen niet altijd met elkaar 
+samen, waardoor de grenzen tussen de landschapszones in de 
+praktijk geleidelijke (diffuse) overgangen zijn. 
+
+Belangrijke 
+werkwijzen: 
+
+•  Relateren van de geofactoren binnen en tussen landschapszones.  
+•  Vergelijken en relateren van klimaatgebieden en landschapszones. 
+
+Belangrijke begrippen: 
+
+geofactoren:  
+
+Landschapszones: 
+
+gesteente en reliëf 
+klimaat en lucht 
+bodem 
+water 
+flora en fauna 
+de mens  
+
+polaire zone 
+boreale zone 
+gematigde zone 
+subtropische zone 
+(semi)aride zone 
+tropische zone 
+
+5b.2  Veranderingen in landschapszones door menselijke activiteiten  
+
+In dat verband kan de kandidaat: 
+
+De invloed van menselijke activiteiten op andere geofactoren in verschillende landschapszones 
+beschrijven en verklaren.  
+
+Aandachtspunten: 
+
+Landschapszones veranderen door (intensief) menselijk gebruik. 
+
+• 
+•  De gevoeligheid voor landdegradatie en ecologische draagkracht verschilt 
+
+per landschapszone. 
+
+•  Klimaatverandering kan processen van landdegradatie versterken. 
+
+Duurzaam landgebruik kan processen van landdegradatie tegengaan of 
+verminderen. 
+
+•  Klimaatgebieden en vegetatiezones verschuiven door 
+
+klimaatveranderingen. 
+
+•  Relateren van processen van landdegradatie aan menselijke activiteiten. 
+
+Belangrijke 
+werkwijzen: 
+
+Begrippen: 
+
+landdegradatie 
+
+vormen van 
+landdegradatie: 
+
+oorzaken van 
+landdegradatie: 
+
+• 
+• 
+• 
+
+• 
+• 
+
+(versnelde) bodemerosie 
+verzilting 
+verwoestijning 
+
+overbeweiding 
+ontbossing 
+
+Pagina 22 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+irrigatie 
+drainage 
+duurzaam landgebruik 
+ecologische draagkracht 
+
+5c. De natuurlijke en landschappelijke kenmerken van een nader aan te wijzen fysisch-
+geografische macroregio in onderlinge samenhang en in relatie tot de samenlevingen in de 
+betreffende macroregio analyseren 
+
+Het betreft: 
+
+5c. De relaties leggen tussen mens en natuur in een nader aan te wijzen fysisch-
+geografische macroregio  
+
+In dat verband kan de kandidaat: 
+
+De spreidingspatronen van fysisch geografische verschijnselen en processen in het Middellandse 
+Zeegebied beschrijven en verklaren. 
+
+De relaties tussen menselijk handelen en natuurlijke processen in het Middellandse Zeegebied 
+beschrijven en verklaren.  
+
+Aandachtspunten: 
+
+•  De plaattektonische situatie in het Middellandse Zeegebied is o.a. door 
+
+de aanwezigheid van microplaten complex. 
+
+•  De jaarlijkse verschuiving van de luchtdrukgebieden leidt tot een nat 
+
+en een droog seizoen. 
+
+•  De wederzijdse beïnvloeding tussen mens en natuur kan juist in deze 
+
+landschapszone leiden tot landdegradatie.  
+
+•  Duurzaam watergebruik kan zorgen voor een balans tussen de 
+
+beschikbare zoetwatervoorraden en het menselijke gebruik ervan. 
+
+•  Hazard management kan de negatieve gevolgen van natuur- en 
+
+milieurampen beperken. 
+
+Vergelijken van deelgebieden in het Middellandse Zeegebied wat betreft 
+platentektoniek, klimaat, landdegradatie of watergebruik.  
+
+alpine plooiingsgebied  
+mediterrane vegetatie 
+mediterrane landbouwtypen 
+(grond)waterproblematiek 
+waterbalans 
+duurzaam water- en landgebruik 
+natuurramp 
+milieuramp 
+hazard management 
+
+Belangrijke 
+werkwijzen: 
+
+Begrippen: 
+
+Pagina 23 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+3.5 
+
+DOMEIN D: GEBIEDEN (ZUID AMERIKA) 
+
+Subdomein D1: Afbakening en gebiedskenmerken 
+7.  De kandidaat kan ten aanzien van een nader aan te wijzen macroregio: 
+
+a.  de afbakening van de betreffende macroregio analyseren, gebruikmakend van combinaties van 
+
+relevante kenmerken; 
+
+b.  een geografische vergelijking maken tussen de betreffende macroregio en een andere 
+
+ontwikkelingsregio in de wereld op grond van relevante kenmerken; 
+
+c.  de ontwikkelingsprocessen in de betreffende macroregio in hoofdlijnen aangeven en verklaren 
+met gebruikmaking van economische, politieke, sociaal-culturele, demografische, fysisch-
+geografische, historische, interne en externe factoren. 
+
+7a. De afbakening van Zuid-Amerika analyseren, gebruikmakend van combinaties van 
+relevante kenmerken 
+
+Het betreft:  
+
+7a.1 Beeldvorming over de regio Zuid-Amerika 
+
+In dit verband kan de kandidaat: 
+
+-  Stereotiepe beelden van Zuid-Amerika beschrijven, aangeven hoe die beelden tot stand komen 
+
+en kritisch evalueren. 
+
+-  De invloed van beeldvorming op ruimtelijk handelen ten aanzien van Zuid-Amerika beschrijven 
+
+en verklaren. 
+
+Aandachtspunten: 
+
+•  Vanuit de culturele dimensie bepalen muziek, dans, sport, kleding en 
+
+religie in het stereotype beeld van Zuid-Amerika. Dit beeld wordt door 
+media en reizen vaak bevestigd. 
+
+•  Vanuit de dimensie natuur is het stereotiepe beeld dat Zuid-Amerika 
+
+een grote biodiversiteit kent en deze onder druk staat. 
+
+•  Vanuit de politieke dimensie wordt het stereotiepe beeld van Zuid-
+Amerikaanse democratieën bepaald door corruptie, ongelijkheid en 
+instabiliteit. 
+
+•  Het stereotiepe beeld van Zuid-Amerika kent grote tegenstellingen: 
+
+gated communities naast zelfbouwwijken, dictaturen naast 
+democratieën, ongelijkheid naast herverdeling. 
+
+•  De perceptie en de mental map van gebieden zijn gebaseerd op een 
+
+stereotiepe beeld en een geografisch beeld.  
+
+•  Zowel stereotype beelden als geografisch beelden van Zuid-Amerika 
+
+zijn van invloed op het ruimtelijk gedrag van bedrijven en 
+consumenten, politici en burgers. Dat blijkt onder andere uit 
+investeringsbeslissingen en de keuze voor toeristische bestemmingen. 
+
+•  Stereotiepe beelden van Zuid-Amerika vanuit verschillende dimensies 
+
+• 
+
+beschrijven en kritisch evalueren. 
+Evalueren van (stereotiepe) beelden van Zuid-Amerika in geografische 
+bronnen. 
+
+•  Uitzonderingen op het stereotiepe beeld van Zuid-Amerika beschrijven 
+
+en verklaren. 
+
+perceptie  
+mental map 
+stereotiepe beeld 
+geografisch beeld 
+
+Belangrijke 
+werkwijzen: 
+
+Belangrijke 
+begrippen: 
+
+Pagina 24 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+7a.2 Gebiedstypering van Zuid-Amerika op basis van spreidingspatronen en processen 
+
+In dit verband kan de kandidaat:  
+
+- 
+
+- 
+
+Fysisch- en sociaalgeografische spreidingspatronen en processen in Zuid-Amerika beschrijven en 
+verklaren. 
+
+Zuid-Amerika afbakenen als formele regio aan de hand van verschillende criteria. 
+
+Aandachtspunten: 
+
+•  Geologisch gezien omvat Zuid-Amerika meerdere tektonische platen met 
+
+actieve en passieve continentranden die invloed hebben op geologische 
+processen zoals de vorming van gebergteketens (cordillera’s), vulkanisme 
+en natuurlijke hulpbronnen. 
+In de delen van de Andes waar vlakke subductie plaatsvindt komt geen 
+actief vulkanisme voor. 
+
+• 
+
+•  Belangrijke geomorfologische regio’s in Zuid-Amerika zijn het Hoogland van 
+
+Guyana, het Hoogland van Brazilië, het Plateau van Patagonië, het 
+Andesgebergte, de Altiplano en de daar tussenliggende laaglanden waarin 
+de Orinico, de Amazone en de Paraná stromen. 
+
+•  De ligging van klimaatgebieden, vegetatiezones en landschapszones wordt 
+in Zuid-Amerika voor een groot deel bepaald door de breedteligging, de 
+nood-zuidoriëntatie van het Andesgebergte en de invloed van zee- en 
+windstromen.  
+Periodiek wordt het normale weerpatroon in Zuid-Amerika verstoord door El 
+Niño. Vooral aan de kust van Ecuador, Peru en Chili zijn de gevolgen van El 
+Niño duidelijk merkbaar. 
+
+• 
+
+•  Het regiem van de rivieren als de Orinoco, de Amazone en de Paraná, wordt 
+grotendeels bepaald door het neerslagregiem. Het verhang en de mate van 
+ontbossing bepalen de stroomsnelheid en de sedimentafvoer.  
+
+•  Het exportpakket van Zuid-Amerikaanse landen bestaat voor een heel groot 
+
+deel uit grondstoffen en daardoor zijn de economieën sterk afhankelijk van 
+de mondiale grondstofprijzen. Bij lage mondiale grondstofprijzen hebben 
+overheden minder belastinginkomsten. 
+
+•  De grote verschillen in de landbouw binnen Zuid-Amerika hangen samen 
+
+met de natuurlijke omstandigheden, mondiale vraag naar exportproducten, 
+het economisch ontwikkelingsniveau en de lokale machts- en 
+grondbezitsverhoudingen. 
+
+•  De tegenstellingen in welvaart en welzijn, zowel tussen landen als binnen 
+
+landen, zijn in Zuid-Amerika groot.  
+
+•  De contrasten binnen steden zijn groot met als uitersten de gated 
+
+communities en zelfbouwwijken. 
+
+•  De informele sector speelt in veel Zuid-Amerikaanse landen een grote rol. 
+•  Ondanks de toenemende sociale mobiliteit zijn er grote welvaartsverschillen 
+
+• 
+
+met bijbehorende verschillen in ontwikkelingskansen. 
+Polarisatie, corruptie en geweld vormen belemmeringen in de ontwikkeling 
+van Zuid-Amerikaanse landen. 
+
+•  De bevolking van Zuid-Amerika is in hoge mate divers. De bevolking bestaat 
+
+uit van oorsprong inheemse, Afrikaanse, Europese en Aziatische 
+bevolkingsgroepen. De grootte van die groepen en de mate waarin ze 
+onderling gemengd zijn, verschilt sterk per land. 
+In het dagelijks leven spelen sociale en etnische verschillen en racisme een 
+grote rol. 
+
+• 
+
+Belangrijke 
+werkwijzen: 
+
+•  Zuid-Amerika en haar deelgebieden vanuit verschillende dimensies 
+
+beschrijven en analyseren. 
+
+•  Relaties leggen tussen fysische, sociaal-culturele, economische, 
+
+demografische en politieke spreidingspatronen en processen in Zuid-
+Amerika.  
+
+Pagina 25 van 53 
+
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+• 
+
+fysisch: 
+
+Belangrijke 
+begrippen: 
+
+ertsen / ertsvorming 
+fossiele energiebronnen 
+mijnbouw 
+andesiet 
+schild 
+voorlandbekken 
+gebergteketen (cordillera) 
+hoogvlakte (altiplano) 
+hoogtezones 
+tropisch regenwoud (selva) 
+savanne (llanos, cerrado en caatinga) 
+steppe (pampa) 
+mangrove 
+El Niño 
+
+sociaal-cultureel: 
+
+politiek: 
+
+economisch:  
+
+sociale mobiliteit 
+
+ etniciteit 
+
+politieke polarisatie 
+cliëntelisme 
+
+Gini-coëfficiënt/Lorenzcurve 
+import- en exportpakket 
+handelsbalans 
+informele sector 
+grondbezitverhouding 
+zelfbouwwijken (favelas) 
+informal city 
+
+Pagina 26 van 53 
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+7b. De ontwikkelingsprocessen in Zuid-Amerika in hoofdlijnen aangeven en verklaren met 
+gebruikmaking van economische, politieke, sociaal-culturele, demografische, fysisch-
+geografische, historische, interne en externe factoren 
+
+Het betreft: 
+
+In dit verband kan de kandidaat:  
+
+- 
+
+- 
+
+Sociaalgeografische ontwikkelingen vanaf de jaren 1980 in Zuid Amerika vanuit verschillende 
+dimensies beschrijven en verklaren. 
+Verschillende toekomstscenario’s voor Zuid-Amerika beschrijven en beargumenteren op basis 
+van de bestudeerde ontwikkelingsprocessen.  
+
+Aandachtspunten: 
+
+•  De meeste landen in Zuid-Amerika ontwikkelen zich politiek gezien vanaf de 
+jaren 1980 tot democratieën waarin corruptie en polarisatie een grote rol 
+spelen. Sociale bewegingen proberen de politiek en samenleving in Zuid-
+Amerikaanse landen in de 21e eeuw van onderop verder te democratiseren.  
+
+•  Vanaf de jaren 1990 werd neoliberaal beleid gevoerd met als doel de 
+
+economie te moderniseren. Dat leidde tot een toename van de economische 
+ongelijkheid en als reactie daarop kwam er steeds meer politieke aandacht 
+voor de sociale problematiek en armoede. 
+
+•  Maatschappelijke problemen zoals sociale ongelijkheid, armoede, geweld en 
+
+uitsluiting zijn in de steden duidelijk terug te zien.  
+
+•  De mondiale vraag naar landbouwproducten en toegenomen buitenlandse 
+
+investeringen in de landbouw hebben geleid tot de-agrarisatie, urbanisatie, 
+schaalvergroting en landgrabbing. 
+
+•  Voor de ontginningen van landbouwgronden, mijnbouw en de aanleg van 
+
+nieuwe infrastructuur, waaronder waterkrachtcentrales, worden bossen 
+gekapt. Hierdoor worden het milieu en de leefgebieden van inheemse 
+volken aangetast. 
+
+•  De culturele diffusie en amerikanisering neemt in Zuid-Amerika toe door 
+
+• 
+
+• 
+
+televisie en sociale media. 
+Tussen Zuid-Amerikaanse landen bestaan er economische, politieke en 
+sociaal-culturele samenwerkingsverbanden, maar die zijn vaak instabiel en 
+afhankelijk van politieke en economische omstandigheden. 
+Investeringen vanuit en handel met Azië (met name China) spelen een 
+steeds grotere rol in de economieën van Zuid-Amerikaanse landen. 
+
+Belangrijke 
+werkwijzen: 
+
+•  Ontwikkelingen in Zuid-Amerika vergelijken in ruimte en tijd. 
+•  Ontwikkelingen in Zuid-Amerika analyseren vanuit verschillende dimensies. 
+•  Verschillende ontwikkelingen in Zuid-Amerika aan elkaar relateren. 
+•  De gevolgen van globalisering in Zuid-Amerika op verschillende 
+
+schaalniveaus. 
+
+Belangrijke 
+begrippen: 
+
+politiek : 
+
+economisch: 
+
+dictatuur 
+oligarchie 
+populisme 
+neoliberalisme  
+good governance 
+
+de-agrarisatie 
+industrialisatie 
+
+importsubstitutie 
+exportvalorisatie 
+tertiarisering 
+landgrabbing 
+
+ sociaal-cultureel: 
+
+etnische en culturele diversiteit 
+
+Pagina 27 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+7c. Een geografische vergelijking maken tussen Zuid-Amerika en een andere 
+ontwikkelingsregio in de wereld 
+Het staat docenten vrij zelf de andere ontwikkelingsregio te kiezen waarmee Zuid-Amerika wordt vergeleken. 
+Daarbij kan gedacht worden aan een vergelijking met één of meer van de volgende ontwikkelingsregio’s: 
+Zuidoost-Azië, Zuid-Azië, Midden Amerika of Sub-Sahara Afrika. 
+
+Het betreft: 
+
+In dit verband kan de kandidaat:  
+
+-  Natuurlijke, economische, demografische en sociaal-culturele spreidingspatronen en 
+
+processen in Zuid-Amerika op hoofdlijnen vergelijken met een andere ontwikkelingsregio. 
+Toekomstscenario’s voor Zuid-Amerika en een andere ontwikkelingsregio vergelijken. 
+
+- 
+
+Aandachtspunten: 
+
+•  Ontwikkelingsregio’s vertonen verschillen en overeenkomsten in 
+
+natuurlijke omstandigheden, relatieve ligging, aanwezige 
+energiebronnen en grondstoffen.  
+
+•  Ontwikkelingsregio’s vertonen verschillen en overeenkomsten in taal en 
+religie, bevolkingsgroei, verstedelijkingsgraad, welvaart, welzijn en het 
+belang van bepaalde economische sectoren. 
+Economische en sociaal-culturele verschillen tussen de 
+ontwikkelingsregio’s zijn te verklaren aan de hand van de geschiedenis 
+en vanuit verschillende dimensies.  
+
+• 
+
+•  Spreidingspatronen en processen in Zuid-Amerika en één of meer andere 
+
+ontwikkelingsregio’s vergelijken. 
+
+•  Bij de vergelijking van ontwikkelingsregio’s wisselen van schaalniveau. 
+•  Spreidingspatronen en processen in ontwikkelingsregio’s beschrijven en 
+
+analyseren door relaties te leggen tussen het bijzondere en het 
+algemene. 
+
+Belangrijke 
+werkwijzen: 
+
+Pagina 28 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+3.6 
+
+DOMEIN E: LEEFOMGEVING 
+Subdomein E1: Nationale en regionale vraagstukken 
+
+9.  De kandidaat kan zich een beargumenteerde mening vormen over:  
+
+a.  actuele vraagstukken van overstromingen en wateroverlast in Nederland;  
+b.  actuele ruimtelijke en sociaaleconomische vraagstukken van stedelijke gebieden in Nederland;  
+c.  en betrekt daarbij toekomstplannen van de overheid en het perspectief van duurzame 
+
+ontwikkeling.  
+
+9a.  De kandidaat kan zich een beargumenteerde mening vormen over actuele vraagstukken 
+
+van overstromingen en wateroverlast in Nederland 
+
+Het betreft: 
+
+9a.1 Nationale vraagstukken ten aanzien van overstromingsrisico’s en wateroverlast en 
+watertekorten 
+
+In dit verband kan de kandidaat:  
+
+−  De in Nederland aanwezige kusttypen beschrijven. 
+−  Beschrijven hoe zeestromingen, getijdenstroming en wind de Nederlandse kust als een 
+
+dynamisch systeem vormgeven. 
+
+−  Beschrijven hoe dynamische (zee)kusten veranderen als gevolg van zeespiegelstijging en/of 
+
+menselijk handelen. 
+
+−  Kenmerken van de stroomgebieden van Rijn en Maas beschrijven.  
+−  De invloed van het veranderende klimaat en menselijk handelen relateren aan de waterafvoer 
+
+van de Nederlandse rivieren. 
+
+−  Overstromingsrisico’s relateren aan ruimtelijke inrichting, zowel binnendijks als buitendijks. 
+−  De oorzaken en gevolgen van watertekorten in Nederland beschrijven en analyseren. 
+
+Aandachtspunten: 
+
+•  Natuurlijke kustprocessen dragen bij aan de opbouw/sedimentatie en 
+
+• 
+
+afbraak/erosie van de Nederlandse kust. 
+(Relatieve) zeespiegelstijging heeft invloed op de Nederlandse kust en 
+bemoeilijkt de afvoer van rivierwater en het spuien van water op zee. 
+
+•  Overstromingsrisico’s in Nederland ontstaan bij een combinatie van 
+
+• 
+
+springtij, (noord)westerstorm en piekafvoer van de rivieren. 
+In het IJsselmeergebied en in de Zuidwestelijke delta zijn er 
+overstromingsrisico’s als bij (noord)westerstorm het water wordt 
+opgestuwd. 
+
+•  Menselijk handelen in het stroomgebied heeft invloed op de 
+
+vertragingstijd, het regiem van rivieren en op de afvoer van water naar en 
+door rivieren.  
+
+•  Versnelde afvoer in een gebied kan leiden tot piekafvoeren in een meer 
+
+stroomafwaarts gelegen gebied. 
+
+•  Klimaatverandering draagt bij aan een onregelmatiger regiem van de 
+
+neerslag en de rivieren. Als gevolg daarvan neemt de kans op 
+wateroverlast of juist watertekorten toe. 
+
+- 
+
+Relaties leggen tussen klimaatverandering en het risico op 
+overstromingen, wateroverlast en watertekorten. 
+
+-  Relaties leggen tussen menselijk handelen en het risico op 
+
+overstromingen, wateroverlast en watertekorten. 
+
+-  Wisselen van schaalniveaus en relaties leggen binnen stroomgebieden 
+tussen verschillende factoren die overstromingen, wateroverlast en 
+watertekorten beïnvloeden. 
+
+-  Overstromingsrisico’s vanuit verschillende dimensies en op verschillende 
+
+ruimtelijke schalen analyseren. 
+
+Pagina 29 van 53 
+
+Belangrijke 
+werkwijzen: 
+
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Belangrijke 
+begrippen: 
+
+zachte kusten: 
+
+harde kusten: 
+
+kustprocessen (opbouw/ 
+sedimentatie, transport en 
+afbraak/erosie): 
+
+stroomgebied  
+stroomstelsel 
+waterscheiding 
+waterafvoer: 
+
+lengteprofiel rivieren: 
+
+dwarsprofiel rivieren 
+(benedenloop): 
+
+klimaatverandering: 
+
+menselijk handelen: 
+
+duin 
+wadden 
+estuarium 
+delta 
+
+zeedijk 
+waterkering 
+
+zeestroom 
+getijdenstroom 
+eb en vloed 
+springtij en doodtij 
+
+ infiltratie 
+ debiet 
+regiem 
+(verhoogde en versnelde) piekafvoer 
+vertragingstijd 
+verhang 
+verval 
+
+bovenloop 
+middenloop  
+benedenloop 
+
+uiterwaarden 
+zomerbed 
+winterbed 
+binnendijks 
+buitendijks  
+
+absolute zeespiegelstijging 
+relatieve zeespiegelstijging 
+temperatuurstijging 
+onregelmatiger neerslagregiem  
+
+verstening van het oppervlak 
+kanalisatie 
+stuw 
+krib 
+waterkering 
+
+ontwatering en grondwateronttrekking 
+
+9a.2 Het beleid om ten aanzien van overstromingen, wateroverlast en watertekorten in 
+Nederland 
+
+In dit verband kan de kandidaat: 
+
+Het integraal waterbeheer dat in Nederland wordt gevoerd beschrijven, evalueren en hierover een 
+beargumenteerde mening vormen. 
+
+Het beheer van de Nederlandse kust beschrijven en hierover een beargumenteerde mening vormen, 
+bezien vanuit de natuurlijke kustprocessen en vanuit ecologische en economische waarden van het 
+kustgebied. 
+
+Recent Nederlands en internationaal rivierbeleid beschrijven en hierover een beargumenteerde 
+mening vormen.  
+
+Pagina 30 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Aandachtspunten: 
+
+•  Na overstromingen in het rivierengebied startte in 1995 het 
+
+overheidsprogramma Ruimte voor de Rivier. De laatste werkzaamheden 
+werden in 2019 afgerond. 
+
+•  Het overstromingsgevoelige deel van Nederland is opgedeeld in 
+
+dijkringen. De waterveiligheid per dijkring wordt vastgesteld aan de 
+hand van een risicobenadering. Hieraan liggen politieke en economische 
+keuzes ten grondslag. 
+
+• 
+
+In het Deltaprogramma staan plannen om Nederland te beschermen 
+tegen overstromingen, een tekort aan zoetwater en de gevolgen van 
+extreem weer. Rijksoverheid, provincies, waterschappen en gemeenten 
+werken hierbij samen.  
+
+•  De keuzes in het Deltaprogramma zijn mede gemaakt op basis van 
+
+berekeningen en toekomstscenario’s van (inter-)nationale organisaties 
+als het IPCC en het KNMI en op het klimaatbeleid van de Europese Unie. 
+
+•  Droogte en verdroging in Nederland is een toenemend probleem, als 
+gevolg van klimaatverandering en menselijk handelen. Het integraal 
+waterbeheer is steeds meer gericht op bewustwording en bestrijding van 
+watertekorten. 
+
+•  Dynamisch kustbeheer maakt het mogelijk de kust te versterken en 
+
+tegelijkertijd de natuurlijke dynamiek te laten bestaan. 
+
+•  Het kustbeheer in Nederland is erop gericht om de Basiskustlijn te 
+
+handhaven. 
+
+•  Het waterpeil van het IJsselmeer wordt flexibel beheerd: in de winter 
+wordt het waterpeil lager gehouden om het overstromingsrisico te 
+verminderen, in de zomer wordt het waterpeil hoger gehouden om een 
+strategische zoetwatervoorraad te hebben in tijden van droogte.  
+
+•  Maatregelen ter beheersing van het regiem en de afvoer betreffen niet 
+alleen het rivierstelsel, maar omvatten het gehele stroomgebied. 
+
+•  Bergingsgebieden en afsluitbare waterkeringen zorgen bij extreme 
+
+omstandigheden voor lagere overstromingsrisico’s. De afsluitbare 
+waterkeringen kunnen tijdens normale omstandigheden geopend 
+worden, waardoor de afvoer van water niet wordt belemmerd. 
+
+Belangrijke 
+werkwijzen: 
+
+•  Verschillende onderdelen van het integraal waterbeheer relateren. 
+•  Beleid ten aanzien van kust- en rivieren vanuit verschillende dimensies 
+
+• 
+
+analyseren. 
+Ingrepen uit het integraal waterbeheer kunnen analyseren op 
+verschillende schaalniveaus tussen verschillende gebieden en vanuit 
+verschillende dimensies. 
+
+•  De effecten van verschillende onderdelen uit het integraal waterbeheer 
+
+in verschillende gebieden relateren en evalueren. 
+
+Belangrijke 
+begrippen: 
+
+Deltaprogramma 
+toekomstscenario’s IPCC en KNMI 
+Rijkswaterstaat 
+Waterschappen 
+primaire waterkering 
+dijkring 
+dynamisch kustbeheer: 
+
+Ruimte voor de Rivier 
+
+ Hoogwaterbeschermingsprogramma 
+
+zandsuppletie 
+zandmotor 
+bolwerkvorming  
+slufter 
+
+Pagina 31 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+integraal waterbeheer: 
+
+vasthouden (retentie) 
+bergen/opslaan 
+afvoer bevorderen 
+sparen (beperken van het verlies) 
+aanvoeren 
+spuien 
+ watertoets 
+
+overstromingsrisicobewustzijn 
+acceptatie en adaptatie 
+mitigatie 
+
+9a.3 Vraagstukken met betrekking tot wateroverlast en watertekorten op regionale schaal 
+
+In dit verband kan de kandidaat:  
+
+-  De invloed van het veranderende klimaat en menselijk handelen relateren aan wateroverlast 
+
+en watertekorten in laaggelegen en hooggelegen gebieden. 
+
+-  De invloed van het veranderende klimaat en menselijk handelen relateren aan wateroverlast 
+
+en watertekorten in stedelijke en landelijke gebieden. 
+
+-  Maatregelen beschrijven die wateroverlast en watertekorten op regionale schaal kunnen 
+
+beperken. 
+
+-  Manieren beschrijven waarop sprake is van adaptie aan water en/of acceptatie van leven met 
+
+risico’s op wateroverlast of watertekorten. 
+
+Aandachtspunten: 
+
+Belangrijke 
+werkwijzen: 
+
+Belangrijke 
+begrippen: 
+
+•  Als gevolg van ingrepen in het verleden zijn veel veengebieden onder 
+zeeniveau komen te liggen en deze zijn nu en in tijden van droogte 
+gevoelig voor verzilting, oxidatie en inklinking. 
+
+•  Zandgronden in hooggelegen gebieden in Nederland zijn gevoelig voor 
+
+droogte en verdroging. 
+
+•  Stedelijke gebieden en glastuinbouwgebieden zijn door een geringe 
+
+• 
+
+infiltratie kwetsbaar voor wateroverlast. 
+In steden die gevoelig zijn voor wateroverlast worden maatregelen 
+genomen om meer ruimte te maken voor water of om klimaatadaptief te 
+bouwen/in te richten. 
+
+•  Maatregelen als de ontkoppeling van het riool, de aanleg van groene 
+
+daken of waterpleinen en retentiebekkens dragen bij aan het tegengaan 
+van wateroverlast op lokale en regionale schaal. 
+
+•  Mondiale klimaatverandering en risico’s op wateroverlast of watertekorten 
+
+op lokale en regionale schaal. 
+
+•  Maatregelen om wateroverlast of watertekorten op lokale en regionale 
+schaal tegen te gaan en analyseren vanuit verschillende dimensies. 
+
+verzilting 
+
+droogte en verdroging 
+
+inklinking en oxidatie 
+
+klimaat adaptief bouwen en 
+inrichten: 
+
+groene daken 
+
+retentiebekkens 
+
+wadi’s waterpleinen 
+
+Pagina 32 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+9b. De kandidaat kan zich een beargumenteerde mening vormen over actuele ruimtelijke 
+
+en sociaaleconomische vraagstukken van stedelijke gebieden in Nederland 
+
+Het betreft:  
+
+9b.1 Ruimtelijke vraagstukken in stedelijke netwerken (met name de Randstad) en 
+(middel)grote steden en de gevolgen daarvan in landelijke gebieden 
+
+In dit verband kan de kandidaat:  
+
+- 
+
+- 
+
+- 
+
+Ruimtelijke vraagstukken in stedelijke gebieden analyseren en de gevolgen daarvan in landelijke 
+gebieden evalueren. 
+Aangeven dat de concurrentie(strijd) om de ruimte op verschillende schaalniveaus een complex 
+vraagstuk is waarbij meerdere actoren betrokken zijn. 
+Aangeven dat de Randstad concurreert met andere stedelijke gebieden in Europa waar het gaat 
+om het aantrekken van bedrijven, instellingen en bewoners. 
+
+-  De differentiatie binnen de Randstad, met name tussen Noord- en Zuidvleugel, beschrijven en 
+
+analyseren. 
+
+-  Het beleid van de overheid ten aanzien van de ruimtelijke vraagstukken in de Randstad 
+
+beschrijven en kritisch evalueren. 
+
+Aandachtspunten: 
+
+Belangrijke 
+werkwijzen: 
+
+• 
+
+• 
+
+Economische, demografische en ruimtelijke ontwikkelingen in de stad en in 
+het landelijk gebied zijn sterk met elkaar verbonden. 
+In steden en landelijke gebied spelen complexe vraagstukken rondom 
+klimaatverandering, duurzaamheid en leefbaarheid die met elkaar 
+samenhangen. 
+
+•  Ontwikkelingen in steden en landelijke gebieden vereisen onderlinge 
+
+samenwerking tussen politiek, bedrijfsleven en burgers. 
+
+•  Op nationaal, provinciaal en gemeentelijk niveau liggen beleids- en 
+
+visiestukken (bijvoorbeeld de Nationale omgevingsvisie, de Omgevingswet 
+en bestemmingsplannen) ten grondslag aan de ruimtelijke ordening. 
+
+•  Het ruimtelijk beleid ten aanzien van de Randstad is erop gericht deze 
+regio internationaal te laten concurreren met andere grootstedelijke 
+gebieden in Europa. 
+
+•  Het ruimtelijk beleid ten aanzien van de Randstad was tot ongeveer 1990 
+
+gericht op spreiding en daarna op concentratie. 
+
+•  Binnen de Randstad bestaan economische verschillen en verschillen in 
+ruimtegebruik tussen de Noord- en de Zuidvleugel en tussen de steden 
+onderling. 
+
+•  De kenniseconomie en de creatieve economie spelen zich grotendeels af in 
+
+• 
+
+steden. De belevingseconomie wordt steeds belangrijker. 
+In steden vinden vooral rondom stationsgebieden en oude haven- en 
+industrieterreinen vernieuwingen plaats. 
+
+•  Sociaaleconomische vraagstukken zijn in de stad zichtbaarder dan in 
+
+landelijk gebied. 
+
+•  Op verschillende schaalniveaus relaties leggen tussen ontwikkelingen in de 
+
+steden en de gevolgen daarvan in het landelijk gebied. 
+
+•  De Randstad vergelijken met andere stedelijke netwerken in Europa. 
+•  De positie van de Randstad binnen Nederland beschrijven en deelgebieden 
+
+binnen de Randstad onderscheiden. 
+
+Belangrijke 
+begrippen: 
+
+stedelijk netwerk 
+mainport 
+metropoolvorming 
+grootstedelijke functies:  
+
+voorzieningenniveau 
+drempelwaarde 
+reikwijdte 
+verzorgingsgebied 
+
+Pagina 33 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+de Randstad: 
+
+ruimtelijk beleid: 
+
+Noordvleugel 
+Zuidvleugel 
+Groene Hart 
+
+ruimtelijke ordening 
+groeikernen 
+VINEX 
+structuurvisies Randstad 
+
+kenniseconomie 
+circulaire economie 
+belevingseconomie 
+duurzame stad 
+science parks 
+creatieve stad 
+smart city 
+energietransitie 
+landschapsvervuiling 
+milieuvervuiling 
+(demografische) krimp 
+
+9b.2 leefbaarheid en stedelijk beleid op wijk- en buurtniveau in Nederlandse steden  
+
+In dit verband kan de kandidaat:  
+
+Aan de hand van de inrichting van de openbare ruimte, woningkenmerken en bewonerskenmerken 
+een wijk- en buurtprofiel opstellen en beargumenteerde uitspraken doen over leefbaarheid. 
+
+Beleid gericht op wijken en buurten beschrijven en evalueren.  
+
+Aandachtspunten: 
+
+• 
+
+Leefbaarheid van wijken en buurten hangt samen met de inrichting van de 
+openbare ruimte, woningkenmerken en bewonerskenmerken.  
+
+•  De sociale veiligheid in wijken en buurten hangt nauw samen met de 
+
+sociale cohesie en sociale netwerken.  
+
+•  Bij stadsvernieuwing is er sprake van het opknappen van de openbare 
+
+ruimte en de woningen. 
+
+•  Bij herstructurering en/transformatie is er sprake van een verandering van 
+
+het woningaanbod en/of een verandering naar een andere stedelijke 
+functie hetgeen kan leiden tot een verandering in de 
+bevolkingssamenstelling. 
+
+•  Gentrificatie is een sociaaleconomisch proces met positieve en negatieve 
+
+gevolgen op verschillende schaalniveaus.  
+
+•  Het vergelijken van wijken of buurten aan de hand van indicatoren als 
+woningkenmerken, bewonerskenmerken, de beleving van de openbare 
+ruimte en gevoerd beleid.  
+
+•  Het relateren van de leefbaarheid aan deze indicatoren. 
+•  Stedelijk beleid evalueren vanuit verschillende dimensies. 
+
+Belangrijke 
+werkwijzen: 
+
+Belangrijke 
+begrippen: 
+
+wijk- en buurtprofiel 
+openbare ruimte: 
+
+woningkenmerken: 
+
+onderhoud 
+overzichtelijkheid 
+toezicht 
+toegankelijkheid 
+
+naar ouderdom 
+naar eigendom 
+naar woningtype 
+
+bewonerskenmerken: 
+
+naar huishoudenstype 
+
+Pagina 34 van 53 
+
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+naar inkomen 
+naar leeftijd 
+
+objectieve (on)veiligheid 
+subjectieve (on)veiligheid 
+
+sociale cohesie 
+sociale veiligheid: 
+
+stadsvernieuwing 
+herstructurering/transformatie 
+transformatie 
+gentrificatie 
+
+Pagina 35 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+4 
+
+HET CENTRAAL EXAMEN 
+
+4.1 
+
+4.2 
+
+4.3 
+
+ZITTINGEN CENTRAAL EXAMEN 
+Raadpleeg hiervoor het Examenblad, www.examenblad.nl  
+
+VAKSPECIFIEKE REGELS CORRECTIEVOORSCHRIFT 
+Voor het vak aardrijkskunde zijn geen vakspecifieke regels in het correctievoorschrift vastgesteld. 
+
+TOEGESTANE HULPMIDDELEN 
+Raadpleeg hiervoor het Examenblad, www.examenblad.nl 
+
+Pagina 36 van 53 
+
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+BIJLAGE 1 EXAMENPROGRAMMA AARDRIJKSKUNDE VWO 
+
+Het eindexamen 
+Het eindexamen bestaat uit het centraal examen en het schoolexamen. 
+
+Het examenprogramma bestaat uit de volgende domeinen: 
+Vaardigheden 
+Domein A 
+Wereld 
+Domein B 
+Aarde 
+Domein C 
+Gebieden 
+Domein D 
+Leefomgeving 
+Domein E 
+Oriëntatie op studie en beroep. 
+Domein F 
+
+Het centraal examen 
+Het centraal examen heeft betrekking op de (sub)domeinen A1, B1, C1, D1 en E1. 
+De CVTE stelt het aantal en de tijdsduur van de zittingen van het centraal examen vast. 
+De CVTE maakt indien nodig een specificatie bekend van de examenstof van het centraal examen. 
+
+Het schoolexamen 
+Het schoolexamen heeft betrekking op domein A en: 
+–  ten minste de domeinen en subdomeinen waarop het centraal examen geen betrekking heeft; 
+– 
+
+indien het bevoegd gezag daarvoor kiest: een of meer domeinen of subdomeinen waarop het centraal 
+examen betrekking heeft; 
+indien het bevoegd gezag daarvoor kiest: andere vakonderdelen, die per kandidaat kunnen 
+verschillen. 
+
+– 
+
+De examenstof 
+
+Domein A: Vaardigheden 
+
+Subdomein A1: Geografische benadering 
+2  De kandidaat kan de geografische benadering adequaat hanteren: 
+–  geografische informatie selecteren, verwerken en weergeven; 
+–  geografische vragen herkennen en zelf formuleren; 
+–  de geografische werkwijzen toepassen bij het formuleren en beantwoorden van geografische vragen. 
+
+Subdomein A2: Geografisch onderzoek 
+3  De kandidaat kan een geografisch onderzoek opzetten, uitvoeren, presenteren en evalueren: 
+–  op basis van een geografische onderzoeksvraag en een gestructureerd plan van aanpak; 
+–  met gebruikmaking van de geografische werkwijzen en in elk geval zelf verzamelde primaire data; 
+–  zo mogelijk aansluitend op onderdelen van het examenprogramma, met name de domeinen B, C en E. 
+
+Domein B: Wereld 
+
+Subdomein B1: Samenhang en verscheidenheid in de wereld 
+4  De kandidaat kan ten aanzien van samenhang en verscheidenheid in de wereld: 
+–  de begrippen 'mondialisering' en 'tijdruimtecompressie' in onderling verband en vanuit een 
+
+geografisch perspectief analyseren; 
+
+–  mondiale spreidingspatronen van economische, culturele, demografische, sociale en politieke 
+
+verschijnselen beschrijven, in hoofdlijnen verklaren en aan elkaar relateren; 
+
+–  grootstedelijke gebieden in een nader aan te wijzen postindustrieel land analyseren in het licht van 
+
+processen van mondialisering. 
+
+Pagina 37 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Subdomein B2: Mondiaal verdelingsvraagstuk 
+5  De kandidaat kan met betrekking tot een nader door de school te kiezen verdelingsvraagstuk vanuit 
+
+het perspectief van het subdomein 'Samenhang en verscheidenheid in de wereld' (B1): 
+–  het vraagstuk beschrijven en analyseren als een maatschappelijk verdelingsvraagstuk; 
+–  actuele discussies over het vraagstuk kritisch beoordelen en relaties leggen met relevante natuurlijke 
+
+factoren; 
+
+–  beleid beoordelen dat is gericht op het oplossen van het vraagstuk op macroregionale schaal. 
+
+Domein C: Aarde 
+
+Subdomein C1: De aarde als natuurlijk systeem; samenhangen en diversiteit 
+6  De kandidaat kan met betrekking tot de aarde als natuurlijk systeem: 
+–  de aarde als een uniek natuurlijk systeem beschrijven en deze kennis toepassen bij het analyseren 
+
+van veranderingen aan het aardoppervlak op verschillende ruimte- en tijdschalen; 
+
+–  de kenmerken van landschapszones op aarde en de veranderingen hierin beschrijven, analyseren en 
+
+aan elkaar relateren; 
+
+–  de natuurlijke en landschappelijke kenmerken van een nader aan te wijzen fysisch-geografische 
+
+macroregio in onderlinge samenhang en in relatie tot de samenlevingen in de betreffende macroregio 
+analyseren. 
+
+Subdomein C2: Mondiaal milieuvraagstuk 
+7  De kandidaat kan met betrekking tot een nader door de school te kiezen  mondiaal milieuvraagstuk, 
+
+vanuit het perspectief van subdomein 'De aarde als natuurlijk systeem' (C1): 
+
+–  het vraagstuk beschrijven en analyseren als natuurlijk vraagstuk 
+–  actuele discussies over het vraagstuk kritisch beoordelen, daarbij onderscheid maken tussen oorzaken 
+
+en gevolgen en relaties leggen met relevante maatschappelijke factoren 
+
+–  beleid beoordelen dat is gericht op het oplossen van het vraagstuk op macroregionale schaal. 
+
+Domein D: Gebieden 
+
+Subdomein D1: Afbakening en gebiedskenmerken 
+8  De kandidaat kan ten aanzien van een nader aan te wijzen macroregio: 
+–  de afbakening van de betreffende macroregio analyseren, gebruikmakend van combinaties van 
+
+relevante kenmerken; 
+
+–  een geografische vergelijking maken tussen de betreffende macroregio en een andere 
+
+ontwikkelingsregio in de wereld op grond van relevante kenmerken; 
+
+–  de ontwikkelingsprocessen in de betreffende macroregio in hoofdlijnen aangeven en verklaren met 
+
+gebruikmaking van economische, politieke, sociaal-culturele, fysisch-geografische, historische, interne 
+en externe factoren. 
+
+Subdomein D2: Actuele vraagstukken 
+9  De kandidaat kan actuele vraagstukken in de in subdomein D1 aangewezen macroregio vanuit een 
+
+geografisch perspectief beschrijven, analyseren en verklaren. Het betreft: 
+
+–  milieuvraagstukken samenhangend met het gebruik van natuurlijke hulpbronnen en natuurlijke 
+
+gevaren samenhangend met natuurrampen; 
+
+–  kenmerken van de hedendaagse ontwikkeling in de steden en op het platteland van de betreffende 
+
+macroregio, samenhangend met het proces van mondialisering; 
+
+–  conflicten in de betreffende macroregio, voor zover ze verband houden met de etnische en culturele 
+
+diversiteit in de regio. 
+
+Domein E: Leefomgeving 
+
+Subdomein E1: Nationale en regionale vraagstukken 
+10 De kandidaat kan zich een beargumenteerde mening vormen over: 
+–  actuele vraagstukken van overstromingen en wateroverlast in Nederland; 
+–  actuele ruimtelijke en sociaal-economische vraagstukken van stedelijke gebieden in Nederland. 
+–  Hij betrekt bij beide soorten vraagstukken aspecten van duurzame ontwikkeling en plannen voor de 
+
+ruimtelijke inrichting van Nederland. 
+
+Pagina 38 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Subdomein E2: Regionale en lokale vraagstukken 
+11 De kandidaat kan lokale en regionale ruimtelijke vraagstukken beschrijven en analyseren en zich 
+
+daarover een beargumenteerde mening vormen.  
+
+Domein F: Oriëntatie op studie en beroep 
+
+Pagina 39 van 53 
+
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+BIJLAGE 2 TOELICHTING BIJ SUBDOMEIN A1: GEOGRAFISCHE BENADERING 
+
+GEOGRAFISCHE INFORMATIE SELECTEREN, VERWERKEN EN WEERGEVEN. 
+
+Een zelfstandig lerende leerling beschikt over voldoende vaardigheden om geografische 
+informatiebronnen kritisch te gebruiken. 
+
+In het aardrijkskundeonderwijs is een atlas een onmisbare informatiebron. ‘Kritisch gebruiken’ betekent 
+dat een leerling in staat is een geschikte kaart in een atlas te selecteren en zijn of haar keuze te 
+verantwoorden. Daarnaast kan de leerling alle kaartsoorten en -typen in een atlas lezen, analyseren en 
+interpreteren. Leerlingen  hoeven de benamingen van de kaarten niet te kennen. Ze moeten wel aan een 
+kaart kunnen zien of die bijvoorbeeld kwantitatieve of kwalitatieve gegevens bevat, wat de mate van 
+vereenvoudiging of vertekening is en hoe de informatie cartografisch is weergegeven. Met behulp van 
+deze kenmerken moeten ze immers verantwoorde conclusies kunnen trekken. Het centraal examen op 
+papier toetst niet het produceren van kaarten en slechts in beperkte mate het selecteren van kaarten. 
+Vanwege de beperkte tijd die beschikbaar is komen alleen deelvaardigheden van kaartproductie aan de 
+orde, zoals het maken van een legenda of een klassenindeling. Bij de computerversie van het CE en het 
+schoolexamen (SE) kan de kandidaten wél gevraagd worden een kaart te maken. 
+
+Het aardrijkskundeonderwijs maakt gebruik van de kaart als typisch geografisch medium, maar kent ook 
+andere bronnen: teksten, beelden en cijfers, te vinden in boeken, tijdschriften, film, video, DVD en op 
+internet. Een kritisch gebruik van teksten als geografische bron vereist dat de leerling in staat is de 
+essentie eruit te halen. Daarnaast moet hij of zij inzicht hebben in: 
+–  het doel van de tekst: is die informatief, instructief, betogend, overtuigend? 
+–  de zender: is de tekst opgesteld door een overheid, instelling, bedrijf, belangengroep of individu? 
+–  de doelgroep: richt de tekst zich op bewoners, bezoekers, klanten of bestuurders/beslissers? 
+–  de ‘standplaatsgebondenheid’: in hoeverre is de situatie waarin de zender zich bevindt van invloed op 
+
+de boodschap? 
+
+Leerlingen kunnen informatieve en instructieve teksten als bron gebruiken, maar ook geografische 
+informatie halen uit teksten die met een ander doel geschreven zijn. Denk aan reclameboodschappen die 
+mensen aansporen om in een bepaald gebied te gaan wonen, er een bedrijf te vestigen of er de vakantie 
+door te brengen. 
+
+Geografische beeldinformatie bestaat uit natuurgetrouwe beelden (foto, luchtfoto, film), 
+structuurgetrouwe beelden (doorsnede, schetsen) en analoge beelden (diagrammen, grafieken). Het 
+centraal examen gebruikt ze allemaal als informatiebron, met uitzondering van het medium ‘film’, tenzij 
+het een digitaal examen betreft. 
+
+Beelden die verkregen zijn via aardobservatietechnieken of remote-sensing noemen we ook wel 
+satellietbeelden. Deze beelden worden gemaakt met van het rode, het blauwe, het groene en het 
+infrarode licht. Door de vier met elkaar te combineren kan men true-colour beelden maken die eruit zien 
+als luchtfoto’s, genomen van grote hoogte. Van de true-colour beelden maakt men kaarten. Het is ook 
+mogelijk false-colour beelden te produceren waarop voor het menselijk oog onzichtbaar licht wordt 
+weergegeven. Door een kaartlaag aan deze false-colour beelden toe te voegen kan men er beschrijvende 
+en verklarende teksten in aanbrengen.  
+
+In het aardrijkskundeonderwijs wordt ICT gebruikt voor het verwerven, verwerken en presenteren van 
+geografische informatie. Specifiek geografisch is het bewerken van remote-sensing of RS-beelden en het 
+werken met Geografische Informatie systemen of GIS. 
+Veel informatie is beschikbaar via internet. Daarbij gaat het om gebiedsbeschrijvingen, fotomateriaal, 
+kaarten, RS-beelden en statistische data (bijv. CBS online). Alle schoolboeken voor de tweede fase 
+bieden extra informatie op hun website. Het ophalen van gegevens van internet en van een cd-rom 
+behoort tot de algemene ICT vaardigheden.  
+
+Leerlingen moeten in staat zijn teksten te ordenen en te verwerken met behulp van Word en eenvoudige 
+berekeningen uit te voeren met behulp van Excel. Verder moeten ze in staat zijn om statische gegevens 
+om te zetten in tabellen en grafieken. Naast deze algemene ICT vaardigheden kent aardrijkskunde twee 
+vakspecifieke toepassingen van ICT: het manipuleren en interpreteren van RS-beelden en het gebruik 
+
+Pagina 40 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+van Geografische Informatie Systemen. Door RS-beelden te manipuleren kan men bijvoorbeeld 
+waterkwaliteit, verdroging, verstedelijking en vegetatieontwikkeling zichtbaar maken. 
+Voor het presenteren van geografische informatie zijn eenvoudige GIS-programma’s onmisbaar. 
+Leerlingen moeten in staat zijn tabellen om te zetten in kaarten en zelf kaarten te maken op basis van 
+geautomatiseerde gegevens bestanden of bijvoorbeeld op basis van gegevens die ze in eigen omgeving 
+hebben verzameld. 
+Indien de CvTE besluit het centraal examen met de computer af te nemen, dan toetst dit ook deze 
+vakspecifieke ICT-vaardigheden. 
+
+GEOGRAFISCHE VRAGEN HERKENNEN EN FORMULEREN 
+De geografie bestudeert de aarde als woonplaats van de mens, maar bestudeert ook de mens als 
+bewoner van de aarde. Deze dualiteit vormt de leidraad in het examenprogramma. 
+
+Het stellen van goede vragen is een voorwaarde voor elk leerproces. Het stellen en beantwoorden van 
+geografische vragen is de kern van de geografie. Waar gaat zo’n vraag over, hoe ziet hij eruit? 
+De specificatie van de eindterm 1b geeft aan wat de structuur is van een beschrijvende, verklarende, 
+voorspellende of waarderende vraag of van een vraag gericht op keuzes of oplossingen. Waaraan moet 
+de beantwoording voldoen? Hieronder volgen enkele voorbeelden. 
+
+Beschrijvende geografische vragen 
+Dat zijn bijvoorbeeld: Waar is dat? Wat is daar? Hoe is dat daar? Hoe beleeft men dat daar? Een 
+geografische beschrijving bestaat minimaal uit: kenmerken van en relaties tussen verschijnselen en de 
+ruimtelijke of regionale context van verschijnselen. 
+
+Een voorbeeld van een beschrijvende vraag ziet er schematisch als volgt uit: 
+Kenmerk verschijnsel: 
+Zoals de aard van het verschijnsel 
+(wat?) bijv. een scheepswerf. 
+
+Kenmerk verschijnsel: 
+Zoals de ligging van het 
+verschijnsel (waar?). 
+Bijv. de ligging in de 
+Rotterdamse haven. 
+
+Context: 
+Zoals de regionale context, bijv. 
+deel uitmakend van wereldhaven 
+Rotterdam/ Europoort 
+
+Verklarende geografische vragen 
+Dat zijn bijvoorbeeld: Waarom is dat daar? Waarom is daar dat? Waarom is dat daar zo? Waarom beleeft 
+men dat daar zo? Een geografische verklaring bestaat minimaal uit: een oorzaak, een gevolg, een 
+verklarend principe en bijzondere ruimtelijke of regionale omstandigheden. 
+Een ‘verklarend principe’ is een generalisatie van de samenhang tussen oorzaak en gevolg. Een voorbeeld 
+ter illustratie. Op de vraag 'Waarom zijn er veel juweliers gevestigd in het stadscentrum?' is het 
+antwoord: 'Daar komen veel klanten' niet voldoende. Het antwoord moet een generalisatie bevatten over 
+de aard van de winkel en de daarmee samenhangende kenmerken van de locatie. Bijvoorbeeld: 'Functies 
+met een hoge drempelwaarde, zoals juwelierszaken, hebben een grote reikwijdte en hebben daarom een 
+goede bereikbaarheid nodig. In het stadscentrum wordt daaraan het best tegemoet gekomen. 
+
+Pagina 41 van 53 
+
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Een voorbeeld van een verklarende vraag ziet er schematisch als volgt uit: 
+Oorzaak: 
+Houtkap op hellingen. 
+
+Gevolg: 
+Bodemerosie. 
+
+Verklarend principe: 
+Het neerslagoverschot stroomt 
+langs de helling naar beneden en 
+neemt het onbedekte losse 
+bodemmateriaal mee. 
+
+Gegevens: 
+Over de aard van de begroeiing, 
+de bodem en het reliëf ter plaatse. 
+
+Omstandigheid: 
+Hoe meer water en hoe steiler 
+de helling, hoe sterker de 
+eroderende en transporterende 
+werking. 
+
+Voorspellende geografische vragen 
+Dat zijn bijvoorbeeld: Waar zal dat zijn? Waarom zal dat daar zijn? Waarom zal dat daar zo zijn? Hoe zal 
+men dat daar beleven? Een geografische voorspelling bestaat minimaal uit: een verschijnsel, een 
+verwachting, een voorspellend principe en een verwijzing naar ruimtelijke / regionale omstandigheden. 
+
+Een voorbeeld van een voorspellende vraag ziet er schematisch als volgt uit: 
+Verschijnsel: 
+Aanwezigheid van hoge-
+drukwaterkrachtcentrales. 
+
+Verwachting: 
+Ze zullen voorkomen in 
+regenrijke berggebieden. 
+
+Voorspellend principe: 
+Waterkracht kan pas renderend 
+opgewekt worden in hoge- 
+drukcentrales als er voldoende 
+neerslag en reliëf is. 
+
+Omstandigheid: 
+Er moet behoefte zijn aan 
+energie en kennis en kapitaal 
+moeten beschikbaar zijn. 
+
+Waarderende geografische vragen 
+Dat zijn bijvoorbeeld: Is dat daar gewenst? Is daar dat gewenst? Is dat daar zo gewenst? 
+Een waardering bestaat uit: een situatiebeschrijving, en eventuele verwijzing naar gegevens over de 
+situatie, een oordeel, een norm waarop het oordeel is gebaseerd, (eventueel) een achterliggende waarde 
+die de norm rechtvaardigt, (eventueel) een voorbehoud ten aanzien van de geldigheid van het oordeel. 
+
+Een voorbeeld van een waardering of standpuntbepaling ziet er schematisch als volgt uit: 
+Situatie: 
+Tracé A1 loopt door 
+het open landschap 
+
+Oordeel: 
+Tracé A1 is 
+onaanvaardbaar 
+
+Gegevens: 
+Zie plankaart 
+
+Norm: 
+Belevingswaarde van het landschap 
+handhaven 
+
+Voorbehoud: 
+Tenzij een deel verdiept 
+wordt aangelegd 
+
+Waarde: 
+Duurzaamheid 
+
+Pagina 42 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Geografische vragen gericht op keuzes, oplossingen en voorspellingen 
+Dat zijn bijvoorbeeld: Waar kan dat? Wat kan daar? Hoe zal dat daar zijn? Hoe zal men dat daar beleven? 
+Een geografische oplossing bestaat minimaal uit: een doelstelling, de beperkingen, normerende principes 
+(criteria), de mogelijke alternatieven, de keuze, de oplossing of het ontwerp. 
+Als in een bepaald gebied een bepaalde functie moet worden gerealiseerd, dan is een omschrijving van 
+dat doel de eerste stap. Vervolgens gaan we na waar in het gebied deze functie zeker niet kan komen. 
+Als we de criteria weten waaraan de oplossing moet voldoen, kunnen we de alternatieven in kaart 
+brengen en tenslotte een verantwoorde keuze maken. 
+
+Een voorbeeld van een probleemoplossende vraag is hieronder schematisch weergegeven: 
+
+Probleemanalyse: 
+(ongewenste situatie) 
+Natuurgebied X wordt 
+aangetast door recreatie. 
+
+Voorgestelde maatregelen: 
+Kwetsbare delen afsluiten in 
+andere delen alleen wandelen en 
+fietsen toestaan, verblijfsrecreatie 
+concentreren 
+
+Oplossing: 
+(gewenste situatie) 
+De functies natuur en recreatie 
+worden op elkaar afgestemd 
+d.m.v. zonering. 
+
+Gegevens: 
+Afname van flora en fauna 
+en toename van recreanten. 
+
+Doelen van beleid: 
+Natuurbescherming en recreatief 
+gebruik reguleren. 
+
+Voorbehoud: 
+Mits deze maatregel in dit gebied 
+te handhaven is. 
+
+Fundamentele keuze: 
+Natuur zo veel mogelijk sparen. 
+
+GEOGRAFISCHE WERKWIJZEN TOEPASSEN BIJ HET FORMULEREN EN BEANTWOORDEN 
+VAN GEOGRAFISCHE VRAGEN 
+Geografische werkwijzen vormen een belangrijk onderdeel van de schoolaardrijkskunde. Het is kennis 
+over de manier van werken bij aardrijkskunde. Leerlingen moeten de geografische werkwijzen kennen 
+om op een geografische manier informatie te kunnen verwerken en vragen te kunnen stellen. 
+Zelfs voor het beantwoorden van een schijnbaar eenvoudige beschrijvende vraag heb je meer dan één 
+geografische werkwijze nodig. Aan de hand van het thema 'toerisme in Spanje' wordt hier elk van de zes 
+geografische werkwijzen toegelicht. Uit de toelichting blijkt de meerwaarde van het toepassen van de 
+geografische werkwijzen. 
+We zullen in de tekst met een cijfer verwijzen naar de werkwijzen in eindterm 1c. 
+
+Ad 1.: Vergelijken van gebieden en verschijnselen (in ruimte en tijd) doen we om categorieën te vormen. 
+De denkvaardigheid is: het onderscheiden van overeenkomsten en verschillen. Je moet weten welke 
+overeenkomsten en verschillen er tussen gebieden en verschijnselen zijn om bijvoorbeeld antwoord te 
+kunnen geven op vragen als: 
+
+1. Wat voor soort toeristengebieden zijn er in Spanje? 
+Aanpak: We inventariseren verschijnselen als: ligging, klimaatgegevens, soort landschap, soort en niveau 
+van toeristische voorzieningen, 
+(zandstrand, hotels, appartementen en campings) en soort en niveau van de bezienswaardigheden. We 
+vergelijken de kenmerken van deze verschijnselen per gebied met elkaar. Via de overeenkomsten en 
+verschillen kunnen we diverse categorieën toeristische gebieden in Spanje onderscheiden. 
+
+2. Welke perioden en daarmee samenhangende vormen van toerisme zijn te onderscheiden in de 
+ontwikkeling van het toerisme in Spanje? 
+Aanpak: We inventariseren de verschillende kenmerken (seizoen, gebied, aantal toeristen, overheersende 
+activiteit) van het toerisme in Spanje in de 20e eeuw. Via deze verschillende kenmerken van het toerisme 
+komen we tot de volgende categorieën: ‘elitair wintertoerisme' [(al van vóór WO II: overwinteren aan de 
+kust en wintersport in de Sierra Nevada door m.n. Engelsen), ‘elitair zomertoerisme' (hotel- en 
+golftoerisme tot de jaren ’60 van de 20e eeuw (afkomstig uit een beperkt aantal landen) en 
+'massatoerisme' sinds de jaren ’60 (afkomstig uit heel Europa)]. 
+
+Pagina 43 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Ad 2.: Relaties leggen we om een samenhangend geografisch (wereld)beeld op te bouwen. De 
+denkvaardigheid is: verbanden opsporen tussen verschijnselen binnen gebieden (verticale relaties) en 
+tussen gebieden (horizontale relaties). 
+Je moet weten welke samenhangen er zijn tussen verschijnselen binnen een gebied om bijvoorbeeld 
+antwoord te kunnen geven op vragen als: 
+
+1. Hoe worden toeristische gebieden in Spanje beïnvloed door de omstandigheden ter plaatse? 
+Aanpak: We inventariseren de verschijnselen die daarvoor van belang zijn: de mate van ontbossing, de 
+mate van bodemaantasting, de aanwezigheid van wintersportfaciliteiten; en het verdrogingproces, de 
+vervuiling van het zeewater en de concentratie van zomertoerisme langs de kust. Ze hangen met elkaar 
+samen (verticale relatie). 
+Je moet weten welke samenhangen er zijn tussen gebieden om bijvoorbeeld antwoord te kunnen geven 
+op de vraag: 
+
+2. Hoe worden toeristische gebieden in Spanje beïnvloed door ontwikkelingen elders? 
+Aanpak: We inventariseren de verschijnselen die daarvoor van belang zijn: de gestegen welvaart, de 
+toegenomen vrije tijd, de vervroegde pensionering en de toegenomen (auto)mobiliteit in Europa. Deze 
+verschijnselen leiden tot massale toeristenstromen richting Spanje (horizontale relatie). Ook kunnen 
+elders nieuwe toeristische voorzieningen komen die sterk concurrerend zijn, zoals bijvoorbeeld de laatste 
+jaren in Turkije het geval is. 
+
+Ad 3.: Verschijnselen en gebieden vanuit meer dimensies beschrijven en analyseren, doen we om 
+onderscheid te maken en verbanden te leggen tussen verschijnselen en daarmee een kritische 
+beschouwing te geven. De denkvaardigheid is: verschillende aspecten aan verschijnselen onderscheiden 
+(bijvoorbeeld de dimensies natuur, economie, politiek, cultuur) en de samenhangen daartussen 
+opsporen. Je moet weten welke dimensies van een verschijnsel van belang zijn om bijvoorbeeld de vraag 
+te kunnen beantwoorden: 
+
+Heeft de ontwikkeling van het toerisme in Spanje het land meer voordelen dan nadelen gebracht? 
+Aanpak: We inventariseren de dimensies die van belang zijn voor deze vraag: natuur, economie en 
+cultuur. De natuurlijke dimensie bestaat uit: verdroging, vervuiling, vormen van landdegradatie. 
+De economische dimensie bestaat uit: de belangrijke bijdrage aan de betalingsbalans, de 
+werkgelegenheid en de economische groei. De culturele dimensie bestaat uit allerlei aspecten van het 
+Spaanse culturele erfgoed die het land aan de wereld kan tonen. 
+In een kritische beschouwing worden deze dimensies tegen elkaar afgewogen. 
+
+Ad 4.: Verschijnselen en gebieden in hun geografische context plaatsen, doen we om te ontdekken hoe 
+iets werkt. Hoe krijg je een integraal beeld van een gebied? Als je er van uit gaat dat de wereld 
+functioneert als een systeem, bestaande uit deelsystemen, dan is de vraag relevant: tot welk 
+deelsysteem behoort mijn studieobject? Het systeem waartoe het behoort, beïnvloedt de manier waarop 
+een verschijnsel functioneert en verandert. 
+De denkvaardigheden zijn: een onderscheid maken tussen deelgebieden en verbanden leggen met een 
+groter geheel. 
+Als je een idee hebt uit welke delen de Costa del Sol bestaat (badplaatsen, kuststrook, binnenland) en tot 
+welk groter geheel de Costa del Sol behoort (maakt het bijvoorbeeld deel uit van Andalusië of van de 
+toeristische Middellandse Zeekust of van een nog groter geheel?) dan kun je vragen stellen als: In welk 
+kader functioneert de Costa del Sol? Of: Welke deelgebieden functioneren als onderdelen van de Costa 
+del Sol? Een belangrijk deel van de gebouwen in het gebied vertoont Moorse trekken, maar toch 
+functioneert de Costa del Sol in het geheel niet als deel van de Maghreb. De Costa del Sol is pas te 
+begrijpen als je als het ware door die uiterlijke kenmerken heen kunt zien dat het functioneert als 
+toeristisch deel van West-Europa. Dan pas kun je vragen beantwoorden als: 
+Uit welke gebieden komen de meeste toeristen naar de Costa del Sol? 
+Welke andere gebieden zijn de belangrijkste toeristische concurrenten van de Costa del Sol? 
+Van welke gebieden is de ontwikkeling van de Costa del Sol het meest afhankelijk? 
+
+Ad 5.: Verschijnselen en gebieden op verschillende ruimtelijke schalen beschrijven en analyseren doen 
+we om globale geografische beelden te detailleren en omgekeerd. De denkvaardigheid is: een 
+onderscheid maken tussen globale en gedetailleerde ruimtelijke patronen. Je moet weten hoe 
+
+Pagina 44 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+verschijnselen op verschillende ruimtelijke schaal functioneren om bijvoorbeeld antwoord te kunnen 
+geven op de vraag: 
+
+Waar brengen veel toeristen uit Noordwest-Europa hun vakantie door? 
+Aanpak: We inventariseren de ruimtelijke schalen die voor deze vraag van belang zijn: de continentale, 
+de nationale en de regionale schaal. 
+Op continentale (Europese) schaal beweegt de toerist zich vooral naar de landen aan de Middellandse Zee 
+(criterium: grote kans op goed weer). 
+Op nationale schaal gaat de toerist vooral naar kustgebieden, berggebieden (wandelen en wintersport), 
+stedelijke gebieden, (criterium: seizoen). 
+Op regionale schaal gaat de toerist vooral naar bepaalde badplaatsen, golfbanen, cultuurhistorische 
+centra (criterium: de activiteit die men wil doen). 
+
+Ad 6.: Verschijnselen en gebieden beschrijven en analyseren door relaties te leggen tussen het 
+bijzondere en het algemene doen we om te zien hoe algemene processen een specifieke vorm krijgen 
+afhankelijk van het land of de regio waarin zij zich afspelen. De denkvaardigheid is onderscheid maken 
+en verbanden leggen tussen het bijzondere en het algemene. Je moet weten welke specifieke situatie van 
+invloed is op algemene processen om bijvoorbeeld de vraag te kunnen beantwoorden: 
+
+Welke algemene en bijzondere factoren hebben bijgedragen aan de opkomst van Marbella en Lloret de 
+Mar als badplaats aan de Spaanse Middellandse-Zeekust? 
+Aanpak: We inventariseren de algemene factoren: complementariteit t.o.v. Noordwest-Europa [(zonnig 
+klimaat met droge en warme zomers, mooie stranden, lage prijzen, groot aanbod van toeristische 
+voorzieningen (wat die twee plaatsen dus gemeen hebben met alle andere plaatsen aan de Costa's)]. 
+Welvaartsstijging in West-Europa en daardoor een grotere vraag en een grotere mobiliteit van toeristen. 
+Specifieke factoren t.a.v. Marbella: de burgemeester van Marbella die meer dan tien jaar een 
+buitengewoon corrupt bewind heeft gevoerd en door het aan zijn laars lappen van wet- en regelgeving 
+een ongebreidelde groei van dit toeristenoord heeft bewerkstelligd; mensen met geld en connecties; 
+Marbella is een elitebadplaats geworden en dank zij enorme investeringen dat ook gebleven. 
+Specifieke factoren t.a.v. Lloret de Mar: de plaats is goed bereikbaar (vanuit de belangrijkste 
+bezoekerslanden binnen 24 uur per auto(bus), de plaats had, vóór de opkomst van het massatoerisme, al 
+een lange toeristische traditie. 
+
+Ten slotte een en ander nog eens schematisch geordend: 
+
+Geografische 
+werkwijze: Wat 
+doe je? 
+
+Functie: 
+Waarom doe 
+je dit? 
+
+Denkvaardigheden: Hoe 
+doe je dit? 
+
+Aspecten / inhoud: 
+
+Waar let je op? 
+
+Mogelijke 
+aanpak: 
+
+1. Vergelijken van 
+
+Je zoekt 
+
+Door onderscheid te maken 
+
+Overeenkomsten en 
+
+1. relevante 
+
+verschijnselen en 
+gebieden in ruimte 
+en tijd 
+
+antwoord op de 
+vraag: Waar 
+hoort dit bij? 
+
+tussen soorten verschijnselen 
+en gebieden 
+
+verschillen 
+
+2. Relaties leggen 
+binnen een gebied 
+en tussen gebieden  
+
+Je zoekt 
+antwoord op de 
+vraag: Wat 
+beïnvloedt 
+elkaar? 
+
+Door verbanden te leggen 
+tussen verschijnselen binnen 
+en tussen gebieden 
+
+Interne, respectievelijk 
+externe factoren 
+
+kenmerken 
+noemen 
+
+2. verschillen en 
+overeenkomsten 
+zoeken 
+
+3. 
+verschijnselen 
+en gebieden 
+indelen in 
+categorieën 
+
+1. relevante 
+verschijnselen 
+noemen 
+
+2. verticale en 
+horizontale 
+associaties 
+inventariseren 
+
+Pagina 45 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Geografische 
+werkwijze: Wat 
+doe je? 
+
+Functie: 
+Waarom doe 
+je dit? 
+
+Denkvaardigheden: Hoe 
+doe je dit? 
+
+Aspecten / inhoud: 
+
+Waar let je op? 
+
+Mogelijke 
+aanpak: 
+
+3. interne en 
+externe 
+samenhangen 
+beschrijven 
+
+Door onderscheid te maken 
+en verbanden te leggen 
+tussen verschijnselen 
+
+Dimensies: natuur, 
+economie, politiek, 
+cultuur, demografisch 
+
+1. relevante 
+dimensies 
+beschrijven 
+
+3. Verschijnselen en 
+gebieden vanuit 
+meer dimensies 
+beschrijven en 
+analyseren  
+
+Je zoekt 
+antwoord op de 
+vraag: Welke 
+aspecten spelen 
+een rol? 
+
+4. Verschijnselen en 
+gebieden in hun 
+geografische 
+context plaatsen  
+
+Je zoekt 
+antwoord op de 
+vraag: In welke 
+ruimtelijke 
+context 
+functioneert dit? 
+
+Door onderscheid te maken 
+tussen deelgebieden en 
+verbanden te leggen met een 
+groter geheel 
+
+Onderdeel en geheel 
+
+2. wederzijdse 
+invloed van 
+dimensies 
+beschrijven 
+
+1. relevante 
+onderdelen 
+noemen 
+
+2. relevant 
+groter geheel 
+noemen 
+
+3. positie in 
+geografische 
+context 
+beschrijven 
+
+5. Verschijnselen en 
+
+Je zoekt 
+
+Door onderscheid te maken 
+
+Overzicht en detail 
+
+1. relevante 
+
+gebieden op 
+verschillende 
+ruimtelijke schaal 
+beschrijven en 
+analyseren 
+
+antwoord op de 
+vraag: Wat is de 
+grote lijn en wat 
+is detail? 
+
+tussen patronen en 
+processen op verschillende 
+schaal 
+
+Door onderscheid te maken 
+en verbanden te leggen 
+tussen het bijzondere en het 
+algemene 
+
+6. Verschijnselen en 
+gebieden 
+beschrijven en 
+analyseren door 
+relaties te leggen 
+tussen het 
+bijzondere en het 
+algemene 
+
+Je zoekt 
+antwoord op de 
+vraag: Hoe 
+werken 
+algemene 
+processen uit in 
+een specifieke 
+regionale 
+context? 
+
+ruimtelijke 
+schalen noemen 
+
+2. belangrijke 
+details 
+beschrijven 
+
+3. hoofdzaak / 
+ruimtelijk 
+overzicht 
+schetsen 
+
+4. ruimtelijk 
+patroon 
+beschrijven 
+
+Algemene processen 
+en bijzondere regionale 
+omstandigheden 
+
+1. het algemene 
+proces 
+benoemen 
+
+2. beschrijven 
+hoe dit proces 
+in een concreet 
+gebied uitwerkt 
+
+3. beschrijven 
+hoe er in het 
+gebied op de 
+gevolgen van 
+het algemene 
+proces 
+
+Pagina 46 van 53 
+
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Geografische 
+werkwijze: Wat 
+doe je? 
+
+Functie: 
+Waarom doe 
+je dit? 
+
+Denkvaardigheden: Hoe 
+doe je dit? 
+
+Aspecten / inhoud: 
+
+Waar let je op? 
+
+Mogelijke 
+aanpak: 
+
+gereageerd 
+wordt 
+
+TAXONOMIE 
+Voor het ordenen van leerdoelen, beheersingsniveaus en vragen worden taxonomieën gebruikt. Het 
+onderstaande schema is gebaseerd op de taxonomie van Bloom (1956) die gereviseerd is door  Anderson 
+en Krathwohl (2002). Het schema geeft een indruk van de verschillende beheersingsniveaus die van 
+kandidaten bij aardrijkskunde verwacht kunnen worden en de handelingen die daarbij in een toets of 
+examen terug kunnen komen. De beheersingsniveaus zijn hiërarchisch geordend. Het betreft hier een 
+vereenvoudiging van de oorspronkelijke taxonomie van Anderson en Krathwohl. 
+
+Pagina 47 van 53 
+
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Beheersings-
+niveau 
+
+Omschrijving 
+
+Memoriseren 
+
+Geleerde kennis 
+reproduceren of 
+herkennen in een 
+kaart, grafiek, tabel 
+of tekst 
+
+Handelingen waar 
+aan te denken 
+valt 
+
+geven/noemen, 
+invullen, definiëren, 
+kiezen, aanwijzen 
+
+Begrijpen 
+
+De betekenis van 
+informatie duiden en 
+deze informatie 
+verbinden met 
+geleerde kennis. 
+
+uitleggen/verklaren, 
+beschrijven, 
+verhelderen, 
+onderbouwen, 
+toelichten 
+voorbeelden geven 
+
+Toepassen 
+
+Geleerde kennis 
+inzetten in een 
+nieuwe situatie. 
+
+aantonen, 
+illustreren, 
+vergelijken 
+
+Analyseren 
+
+Evalueren 
+
+Informatie in delen 
+splitsen en deze delen  
+verbinden met elkaar 
+én met geleerde 
+kennis 
+
+De bruikbaar-heid en 
+de beperkingen van 
+indicatoren, methodes 
+en indelingen 
+beoordelen 
+
+structureren,  
+beschrijven van 
+patronen, 
+vergelijken, 
+classificeren,  
+bewijzen van 
+conclusies 
+
+beoordelen, 
+bekritiseren, 
+weerleggen,  
+
+Voorbeelden van 
+geografische vragen 
+
+Type vraagstelling 
+uit het A-domein 
+
+Geef de definitie van 
+gentrification. 
+
+Beschrijvende vragen 
+
+Beschrijvende vragen 
+
+Verklarende vragen 
+
+Verklarende vragen 
+
+Beschrijvende vragen 
+
+Verklarende vragen 
+
+Waarderende vragen 
+
+Noem de vier landen 
+met de grootste 
+bevolkingsomvang in 
+Zuid-Amerika. 
+
+Beschrijf de wijze 
+waarop kalksteen wordt 
+gevormd. 
+
+Geef twee voorbeelden 
+uit de bron waaruit 
+blijkt dat er 
+herstructurering heeft 
+plaatsgevonden. 
+
+Toon met behulp van 
+de wet van Buys Ballot 
+aan dat de getoonde 
+luchtdrukverdeling tot 
+westenwind leidt in 
+West-Europa. 
+
+Beschrijf het 
+spreidingspatroon van 
+de steden in Japan en 
+geef een fysisch-
+geografische oorzaak 
+voor dit 
+spreidingspatroon.  
+
+Beredeneer dat het bnp 
+per inwoner geen 
+geschikte maat is om te 
+bepalen of er armoede 
+in een land is. 
+
+Beredeneer welke 
+kritiek tegenstanders 
+van het afschaffen van 
+invoerbeperkingen 
+zullen geven. 
+
+Creëren  
+
+Kennis en informatie 
+
+ontwerpen, 
+
+Beredeneer dat er in de 
+
+Voorspellende vragen 
+
+bundelen tot een 
+nieuw product 
+
+adviseren, 
+construeren 
+
+toekomst twee 
+scenario’s denkbaar zijn 
+voor de spreiding van 
+de mode-industrie 
+
+In een examen komen zowel de lage denkvaardigheden (memoriseren, begrijpen) als de hogere 
+denkvaardigheden (analyseren, evalueren, creëren) aan bod.  De beheersingsniveaus memoriseren en 
+creëren komen alleen in beperkte mate voor in een examen.  
+In bovenstaande taxonomie wordt geen onderscheid gemaakt tussen feitenkennis, conceptuele kennis, 
+procedurele kennis en metacognitieve kennis. Door gebruik van deze typen kennis zou een derde 
+dimensie aan de tabel toegevoegd kunnen worden.  
+
+Pagina 48 van 53 
+
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Het indelen van denkvaardigheden is niet gemakkelijk. Het kan soms lastig zijn om een vraag in te delen 
+bij een bepaald beheersingsniveau. De lijnen in de tabel zijn dan ook geen harde grenzen. Verschillende 
+beoordelaars kunnen in principe tot een andere indeling komen. Een vraag kan bijvoorbeeld volgens de 
+opsteller behoren tot het beheersingsniveau evalueren. Als de kandidaat die de vraag maakt de 
+betreffende evaluatie echter uit het hoofd heeft geleerd (bijvoorbeeld omdat deze evaluatie in de syllabus 
+genoemd wordt) zal deze leerling de vraag indelen bij het beheersingsniveau memoriseren. 
+
+VRAAGSTELLING  
+
+Veel gebruikte vraagstellingen in examens aardrijkskunde zijn: 
+
+–  Geef oorzaken/redenen/argumenten/voorbeelden 
+–  De leerling moet een opsomming geven van losse antwoordelementen 
+–  Leg uit/Verklaar 
+–  De leerling moet meerdere antwoordelementen geven die in relatie tot elkaar staan. Bijvoorbeeld in de 
+
+vorm van een oorzaak-gevolgrelatie. 
+
+–  Beschrijf 
+–  De leerling moet een proces of een patroon in één of meerdere stappen beschrijven. 
+–  Beredeneer 
+–  De leerling moet een redenering opzetten, bijvoorbeeld door de gedachtegang van een persoon of 
+
+instantie te ontleden in stappen. 
+
+–  Beargumenteer 
+–  De leerling moet een argumentatie opstellen in stappen bij een stelling of een mening. 
+
+Pagina 49 van 53 
+
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+BIJLAGE 3   VERANTWOORDING BIJ DE AANPASSINGEN SYLLABUS VWO 2026 
+
+Inleiding 
+
+In september 2021 stelde het College voor Toetsen en Examens (CvTE) een syllabuscommissie in om 
+onderhoud te doen aan de syllabi havo en vwo. Voorafgaand vond in april 2021 overleg plaats met het 
+KNAG, SLO, Cito en de vaststellingscommissie aardrijkskunde van het CvTE. Aanleiding was dat de 
+ontwikkeling van de centrale examens in toenemende mate wordt gehinderd door de gedateerdheid van 
+onderdelen van de syllabi. Het KNAG gaf toen aan voorkeur te hebben voor een fundamentelere aanpak 
+van het examenprogramma maar ook een tussentijdse aanpassing van de syllabi te verwelkomen. Het 
+CvTE gaat alleen over syllabi. Besluiten over de examenprogramma’s worden door OCW genomen. 
+
+De syllabuscommissie aardrijkskunde havo/vwo bestond uit drie docentleden, waarvan twee afgevaardigd 
+door het KNAG. Cito en SLO namen deel in een adviesrol. Voorzitter van de commissie was Joost 
+Penninx, docent aan de Radboud Docenten Academie en het St. Bonifatiuscollege Utrecht. De commissie 
+heeft inhoudelijk advies gevraagd aan geografen werkzaam aan universiteiten of onderzoeksinstituten. 
+
+Het CvTE vroeg de syllabuscommissie om een beperkte herziening die op korte termijn (de syllabi 2024 
+of 2025)  door te voeren zou zijn. Het bleek echter dat de syllabi op veel punten verbetering nodig 
+hadden. De wijzigingsvoorstellen zijn in februari/maart in een digitale veldraadpleging voorgelegd aan 
+docenten. 139 docenten werkzaam in havo en vwo vulden de vragenlijst in. De inhoudelijke voorstellen 
+werden in overgrote meerderheid onderschreven. Ook zagen deze docenten de voorstellen niet als een 
+verzwaring van het programma. Alleen over het invoeringsjaar waren meningen verdeeld. Vanuit 
+leermiddelenontwikkelaars kwam de vraag naar een later invoeringsjaar dan 2024 en 2025. 
+
+Na de veldraadpleging is besloten om de wijzigingsvoorstellen door te voeren in de syllabus, waarbij nog 
+diverse inhoudelijke opmerkingen van docenten zijn verwerkt. Als invoeringsjaar is voor havo 2025 en 
+voor vwo 2026 gekozen. Het cohort havo en vwo dat start in september 2023 krijgt daarmee een 
+centraal examen gebaseerd op de gewijzigde syllabi. In de syllabi 2024 van zowel havo als vwo zijn in 
+domein A al twee wijzigingen gedaan, waarvan er één de afzonderlijke benoeming is van de 
+demografische dimensie als vijfde dimensie. 
+
+Nadat de syllabuscommissie de resultaten van de veldraadpleging had verwerkt, vond nog afstemming 
+plaats met het KNAG over de inhoudelijke wijzigingen, het invoeringsjaar voor de syllabi en het proces 
+van herziening. Alvorens de nieuwe syllabi op te nemen in de ministeriële regeling is het voor het CvTE 
+belangrijk dat het KNAG positief staat ten opzichte van de syllabi-aanpassingen. 
+
+Hierna is voor de syllabus vwo aangegeven wat de achtergrond is bij de belangrijkste syllabiwijzigingen. 
+
+domein A: vaardigheden  
+
+Subdomein 1c, geografische werkwijze 1  
+
+Aandacht voor toekomstgericht denken krijgt een zichtbaardere plaats in Verschijnselen en gebieden 
+vergelijken in tijd en ruimte waar toekomst wordt benoemd5. 
+
+Subdomein 1c, geografische werkwijze 3  
+
+Er is voor gekozen om de demografische indicatoren uit de sociaal-culturele dimensie te halen en als 
+aparte dimensie te beschouwen. Dat betekent dat bij de derde werkwijze van subdomein 1c voortaan vijf 
+dimensies worden genoemd: natuur, economie, politiek, sociaal-cultureel en demografie. In de 
+geactualiseerde syllabi worden deze dimensies eenduidig gebruikt. 
+
+Domein B: Wereld  
+
+Bij vwo zijn de subdomeinen onder 3a in een nieuwe, meer logische volgorde geplaatst. Het indelen van 
+de wereld naar centrum-, semiperifere- en perifere gebieden is niet alleen van toepassing op het niveau 
+van het wereldsysteem, maar ook op lagere schaalniveaus. Migratie is binnen dit domein van blijvend 
+belang en krijgt een bredere inbedding.6 
+
+5 https://geografie.nl/artikel/toekomstbestendig-aardrijkskundeonderwijs 
+6 https://geografie.nl/artikel/wen-er-maar-aan-migratie-en-ontwikkeling-een-ongemakkelijke-boodschap 
+https://geografie.nl/artikel/de-mobiliteitsarena 
+https://geografie.nl/artikel/regionale-ontwikkeling-in-sub-sahara-afrika 
+
+Pagina 50 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Politieke globalisering blijft een vwo-onderwerp, met meer aandacht voor de specifieke actoren hierin. De 
+geschiedenis van globalisering krijgt bij vwo een actueler vervolg, aangezien sinds 2010 de 
+globaliseringsprocessen minder vanzelfsprekend en minder eenduidig verlopen. De rol van China binnen 
+de globaliseringsprocessen specifieker benoemd.7 
+
+Domein C: Aarde  
+
+De actualiseringen in domein Aarde zijn vooral van toepassing in subdomein 7a.1. De nieuwste inzichten 
+rondom de theorie van de platentektoniek hebben een plek gekregen. De processen slab pull en ridge 
+push komen prominenter naar voren. 8 
+
+De verouderde terminologie zoals breukgebergte, convectiestromen en schaal van Richter zijn vervangen 
+door de terminologie die tegenwoordig binnen de aardwetenschappen gebruikt wordt.9  
+
+Bij subductiezones smelt gesteente door de toevoeging van (zee)water, bij divergente plaatgrenzen door 
+afnemende druk en bij mantelpluimen / hotspots door hitte10.  
+
+Domein D: regio Zuid-Amerika 
+
+In dit domein dienen leerlingen de begrippen, processen en patronen uit de domeinen B en C toe te 
+passen op Zuid-Amerika. De begrippen die al bij de domeinen B en C staan worden niet herhaald. 
+Daarnaast zijn de subdomeinen in domein D in logischer volgorde geplaatst. De ontwikkelingsprocessen 
+in Zuid-Amerika staan nu voor de geografische vergelijking tussen Zuid-Amerika en een andere 
+ontwikkelingsregio in de wereld. 
+
+Van leerlingen wordt verwacht dat ze stereotiepe beelden van Zuid-Amerika kritisch kunnen beoordelen 
+en kunnen bijstellen aan de hand van het geografisch beeld.  
+
+Het begrip krottenwijken is vervangen door zelfbouwwijken omdat dat beter de dynamiek van deze 
+wijken weergeeft.11  
+
+De veranderingen in de landbouw en (daarmee samenhangende) ontbossing en aantasting van de 
+leefomgeving van inheemse volken hebben een prominentere plaats gekregen.12 
+
+E: Eigen leefomgeving  
+
+Subdomein E1: Actuele vraagstukken van overstromingen en wateroverlast in Nederland 
+
+In domein E krijgen het Deltaprogramma en de effecten van klimaatverandering een duidelijke plek. Het 
+programma Ruimte voor de Rivier is afgerond en wordt nog wel genoemd maar niet meer behandeld. 
+
+Het Deltaprogramma gaat niet alleen over wateroverlast maar ook over watertekorten. Voor de landelijke 
+gebieden uit dit zich in o.a. droogte en verdroging. Dit speelt zowel voor lagere als hogere gebieden in 
+Nederland.13 
+
+Subdomein E2: Actuele ruimtelijke en sociaaleconomische vraagstukken van stedelijke 
+gebieden in Nederland 
+
+Ruimtelijke, demografische en economische en ruimtelijke vraagstukken in stedelijke gebieden zijn 
+sterker gerelateerd aan die in landelijke gebieden. Er wordt meer nadruk gelegd op de keuzes die 
+gemaakt worden bij geografisch complexe vraagstukken in stedelijke gebieden in relatie tot  landelijke 
+gebieden. Hierbij valt te denken aan de plaatsing van bijvoorbeeld windmolen- en zonnepaneelparken, 
+distributiecentra en woningen. Het gaat daarbij om de belangen die spelen en de keuzes die worden 
+gemaakt bij de inrichting van de openbare ruimte. Een aantal nieuwe begrippen (milieu- en 
+landschapsvervuiling, energietransitie) bieden houvast om de nieuwe aandachtspunten handen en voeten 
+te geven.14 
+
+https://www.oneworld.nl/lezen/politiek/migratie/globalisering-geldt-vooral-voor-onszelf-niet-voor-de-ander/ 
+https://www.clingendael.org/nl/publicatie/van-anti-migratiedeals-naar-beleid-om-te-blijven 
+7 https://geografie.nl/artikel/de-nieuwe-zijderoutes-tussen-china-en-europa 
+8 https://geografie.nl/artikel/nieuw-concept-in-plaattektoniek 
+https://geografie.nl/artikel/platentektoniek-in-het-onderwijs 
+9 https://geografie.nl/artikel/de-schaal-van-richter 
+10  https://geografie.nl/artikel/nee-de-mantel-is-niet-vloeibaar 
+11 Klaufus, C., & Van Lindert, P. (2016). Latijns-Amerika: een regio in beweging. VolendamLM Publishers; Koonings. 
+K.  & Kruit, D. (2007) (Eds.) Fractured Cities. Social Exclusion, Urban Violence and Contested Spaces in Latin America. 
+London: Zed Books. 
+12 https://geografie.nl/artikel/de-inheemse-bevolking-als-grootste-slachtoffer-van-een-nieuwe-economie 
+13 https://geografie.nl/artikel/zoet-water-in-tijden-van-droogte 
+https://www.nederlanddroogteland.nl/ 
+https://www.cultureelerfgoed.nl/publicaties/publicaties/2016/01/01/nederland-waterland 
+14 https://geografie.nl/artikel/transities-in-het-landschap 
+
+Pagina 51 van 53 
+
+ 
+ 
+ 
+AARDRIJKSKUNDE VWO | SYLLABUS CENTRAAL EXAMEN 2027 nadere vaststelling       
+Versie 4 
+
+Pagina 52 van 53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

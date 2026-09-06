@@ -1,0 +1,4507 @@
+WISKUNDE A VWO 
+
+SYLLABUS CENTRAAL EXAMEN 2027 
+
+Versie 2, juli 2025 
+
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027  
+Versie 2, juli 2025 
+
+Toelichting bij deze syllabus: 
+Deze conceptsyllabus geldt voor het centraal examen wiskunde A vwo 2027. Er zijn 
+geen wijzigingen ten opzichte van de syllabus 2026. 
+
+© 2025 College voor Toetsen en Examens, Utrecht 
+
+Alle rechten voorbehouden. Alles uit deze uitgave mag mits voorzien van een 
+bronvermelding en zonder enige wijziging worden verveelvoudigd, opgeslagen in een 
+geautomatiseerd gegevensbestand, of openbaar gemaakt, in enige vorm of op enige 
+wijze, hetzij elektronisch, door fotokopieën, opnamen, of enige andere manier zonder 
+voorafgaande toestemming van het College. Het hergebruik van eventueel 
+auteursrechtelijk beschermd werk van derden in dit werk is niet nader geregeld door 
+het CvTE. 
+
+pagina 1 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027  
+Versie 2, juli 2025 
+
+INHOUD 
+
+VOORWOORD 
+
+1 
+
+2 
+2.1 
+2.2 
+2.3 
+
+3 
+3.1 
+3.1.1 
+3.1.2 
+3.1.3 
+3.1.4 
+3.1.5 
+3.1.6 
+3.2 
+
+DRS. J.H. (JOHN) VAN DER VEGT MPM 
+
+INLEIDING 
+WISKUNDE A IN DE TWEEDE FASE 
+HET CENTRAAL EXAMEN 
+DOMEININDELING 
+
+SPECIFICATIES 
+TOELICHTING OP DE SPECIFICATIES 
+PARATE KENNIS, PARATE VAARDIGHEDEN EN PRODUCTIEVE VAARDIGHEDEN 
+NAUWKEURIGHEID EN AFRONDEN 
+VOORBEELD(EXAMEN)OPGAVEN 
+ALGEBRAÏSCHE VAARDIGHEDEN 
+ICT 
+FORMULELIJST 
+SPECIFICATIES 
+
+BIJLAGE 1 EXAMENPROGRAMMA 
+
+BIJLAGE 2 EXAMENWERKWOORDEN 
+
+BIJLAGE 3 BEGRIPPENLIJST 
+
+BIJLAGE 4ALGEBRAÏSCHE VAARDIGHEDEN 
+
+BIJLAGE 5LIJST VAN FORMULES DIE IN HET EXAMEN WORDT OPGENOMEN 
+
+BIJLAGE 6DE CORRECTIE VAN DE CENTRALE EXAMENS WISKUNDE 
+
+3 
+
+3 
+
+4 
+4 
+4 
+4 
+
+6 
+6 
+6 
+6 
+6 
+6 
+7 
+7 
+8 
+
+14 
+
+17 
+
+19 
+
+24 
+
+29 
+
+30 
+
+pagina 2 van 31 
+
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+VOORWOORD 
+De minister heeft de examenprogramma's op hoofdlijnen vastgesteld. In het 
+examenprogramma zijn de exameneenheden aangewezen waarover het centraal examen 
+(CE) zich uitstrekt: het CE-deel van het examenprogramma.  
+
+Het College voor Toetsen en Examens (CvTE) geeft in een syllabus, die jaarlijks 
+verschijnt, een toelichting op het CE-deel van het examenprogramma. Behalve een 
+beschrijving van de exameneisen voor een centraal examen kan een syllabus verdere 
+informatie over het centraal examen bevatten. Bijvoorbeeld over een of meer van de 
+volgende onderwerpen: specificaties van examenstof, begrippenlijsten, bekend 
+veronderstelde onderdelen van domeinen of exameneenheden die verplicht zijn op het 
+schoolexamen, bekend veronderstelde voorkennis uit de onderbouw, bijzondere vormen 
+van examinering (zoals computerexamens), voorbeeldopgaven, toelichting op de 
+vraagstelling, toegestane hulpmiddelen. 
+
+De functie van een syllabus is een leraar in staat te stellen zich een goed beeld te 
+vormen van wat in het centraal examen wel en niet gevraagd kan worden. Naar zijn aard 
+is een syllabus dus niet een volledig gesloten en afgebakende beschrijving van alles wat 
+op een examen zou kunnen voorkomen. Het is mogelijk, al zal dat maar in beperkte 
+mate voorkomen, dat op een CE ook iets aan de orde komt dat niet met zo veel woorden 
+in deze syllabus staat, maar dat naar het algemeen gevoelen in het verlengde daarvan 
+ligt. 
+
+Een syllabus is ook een hulpmiddel voor degenen die zichzelf op een centraal examen 
+voorbereiden. Een syllabus kan ook behulpzaam zijn voor de producenten van 
+leermiddelen en voor nascholingsinstanties. De syllabus is niet van belang voor het 
+schoolexamen. Daarvoor zijn door de SLO handreikingen geproduceerd die niet in deze 
+uitgave zijn opgenomen. 
+
+Het CvTE stelt het aantal en de tijdsduur van de toetsen van het centraal examen vast 
+en de wijze waarop het centraal examen wordt afgenomen. Deze vaststelling wordt 
+gepubliceerd in het rooster voor de centrale examens en in de Septembermededeling. 
+
+Voor opmerkingen over syllabi houdt het CvTE zich steeds aanbevolen. U kunt die 
+zenden aan info@cvte.nl of aan CvTE, Postbus 315, 3500 AH Utrecht. 
+
+De voorzitter van het College voor Toetsen en Examens, 
+Drs. J.H. (John) van der Vegt MPM 
+
+pagina 3 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+1 
+
+INLEIDING 
+Deze syllabus geldt voor het examenjaar 2027. In de syllabi 2027 zijn geen wijzigingen 
+ten opzichte van de vorige syllabus voor het examenjaar 2026. 
+Syllabi van eerdere jaren zijn niet meer geldig en kunnen van deze versie afwijken. Voor 
+het examenjaar 2028 wordt een nieuwe syllabus vastgesteld. 
+
+Een syllabus kan ook tussentijds worden aangepast, bijvoorbeeld als een in de syllabus 
+beschreven situatie feitelijk veranderd is. De aan een centraal examen voorafgaande 
+Septembermededeling is dan het moment waarop dergelijke veranderingen 
+bekendgemaakt worden. Kijkt u voor alle zekerheid jaarlijks in september op 
+Examenblad.nl. 
+
+Het CvTE publiceert uitsluitend digitale versies van de syllabi. Dit gebeurt via 
+Examenblad.nl (www.examenblad.nl), de officiële website voor de examens in het 
+voortgezet onderwijs. 
+
+1.1  WISKUNDE A IN DE TWEEDE FASE 
+
+Het vak wiskunde A is een verplicht profielvak in de profielen Economie & Maatschappij 
+en Natuur & Gezondheid. In beide profielen mogen de leerlingen in plaats van wiskunde 
+A ook wiskunde B als profielvak kiezen voor zover het bevoegd gezag dit vak als 
+onderdeel van dit profiel aanbiedt. Het is ook mogelijk wiskunde B te kiezen als extra 
+vak naast wiskunde A.1 In het profiel Cultuur & Maatschappij mogen de leerlingen in 
+plaats van wiskunde C ook wiskunde A als profielvak kiezen voor zover het bevoegd 
+gezag dit vak als onderdeel van dit profiel aanbiedt. 
+
+De omvang van het vak wiskunde A is voor het vwo 520 SLU. Hiervan beslaat het in 
+deze syllabus gespecificeerde CE-deel ongeveer 60%. 
+
+1.2 
+
+HET CENTRAAL EXAMEN 
+In bijlage 2 is een lijst opgenomen van de specifieke betekenissen van de in het centraal 
+examen gebruikte examenwerkwoorden voor alle wiskundevakken havo/vwo met een 
+centraal examen. Deze lijst is niet uitputtend.  
+
+In bijlage 6 van deze syllabus wordt informatie gegeven over de correctie van de 
+centrale examens wiskunde havo en vwo. 
+
+1.3 
+
+DOMEININDELING 
+Het examenprogramma staat in bijlage 1. Het betreft het programma met globale 
+eindtermen, waarvan het CE-deel in hoofdstuk 2 van deze syllabus wordt gespecificeerd. 
+Het SE-deel is nader gespecificeerd in een handreiking van SLO. In de handreiking zijn 
+suggesties opgenomen voor het SE-deel welke dus niet bindend zijn. 
+
+In de onderstaande tabel staat vermeld welke domeinen in het CE geëxamineerd kunnen 
+worden: 
+
+Domein 
+
+Subdomein 
+
+A Vaardigheden 
+B Algebra en tellen 
+
+C Verbanden  
+
+D Verandering 
+
+B1: Algebra 
+B2: Telproblemen 
+C1: Standaardfuncties 
+C2: Functies, grafieken, vergelijkingen en ongelijkheden 
+D1: Rijen 
+D2: Helling 
+
+in  
+C
+E 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+
+moet 
+in SE 
+
+mag 
+in SE 
+
+X 
+
+X 
+X 
+X 
+X 
+X 
+X 
+
+1 Voor meer informatie omtrent de procedure zie document ‘Veelgestelde vragen aan examenloket’. 
+
+pagina 4 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+E Statistiek en 
+kansrekening 
+
+F Keuzeonderwerpen 
+
+D3: Afgeleide 
+E1: Probleemstelling en onderzoeksontwerp 
+E2: Visualisatie van data 
+E3: Kwantificering 
+E4: Kansbegrip 
+E5: Kansverdelingen 
+E6: Verklarende statistiek 
+E7: Statistiek met ICT 
+
+X 
+
+X 
+
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+
+pagina 5 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+2 
+
+SPECIFICATIES 
+
+2.1 
+
+TOELICHTING OP DE SPECIFICATIES 
+
+2.1.1  Parate kennis, parate vaardigheden en productieve vaardigheden 
+
+Bij de specificatie van de globale eindtermen is onderscheid gemaakt tussen parate 
+vaardigheden en productieve vaardigheden. Bovendien is bij een aantal subdomeinen 
+opgenomen over welke parate kennis de kandidaat dient te beschikken. Deze indeling is 
+bedoeld om aan te geven wat het verwachte kennis- en beheersingsniveau van de 
+kandidaat is. 
+
+Met parate vaardigheden wordt hier bedoeld de wiskundige basistechnieken die de 
+kandidaat routinematig moet beheersen.  
+
+Bij productieve vaardigheden is het uitgangspunt dat de kandidaat beschikt over de 
+parate vaardigheden en deze in complexe probleemsituaties kan toepassen. De 
+productieve vaardigheden voert de kandidaat niet op routine uit. De kandidaat zal door 
+inzicht, overzicht, probleemaanpak en metacognitieve vaardigheden een strategie 
+moeten bedenken om het probleem op te lossen.  
+
+Bij parate kennis gaat het om kennis waarover de kandidaat dient te beschikken en die 
+niet uit de formuleringen van de parate en/of productieve vaardigheden blijkt. De 
+opsomming van parate kennis is daarmee een aanvulling op de parate en productieve 
+vaardigheden. Parate kennis die bij een subdomein wordt genoemd, kan ook bij andere 
+subdomeinen voorkomen en wordt dan ook binnen het totale CE-deel van het 
+examenprogramma als parate kennis beschouwd. 
+
+In bijlage 3 staat voor de verschillende wiskundevakken een overzicht van de wiskundige 
+begrippen die bekend verondersteld worden bij het centraal examen. De begrippen die in 
+dit overzicht aangegeven worden kunnen zonder toelichting worden gebruikt in het 
+centraal examen. Dit overzicht is niet uitputtend.  
+
+2.1.2  Nauwkeurigheid en afronden 
+
+Als in een examenopgave niet vermeld is in welke nauwkeurigheid het antwoord gegeven 
+dient te worden, dient de kandidaat die nauwkeurigheid uit de probleemsituatie af te 
+leiden. Het kiezen van een passende maateenheid valt hieronder. Als de 
+probleemsituatie dit toelaat, mag een nauwkeuriger antwoord gegeven worden dan de 
+nauwkeurigheid die de kandidaat uit de probleemsituatie afgeleid zou kunnen hebben. 
+Het correctievoorschrift geeft hier uitsluitsel over. 
+
+Een kandidaat kan uit de probleemsituatie afleiden wanneer afronden volgens de 
+gebruikelijke afrondingsregels (6,4 wordt 6 en 6,5 wordt 7) niet van toepassing is.  
+Een kandidaat moet weten dat tussentijds afronden gevolgen kan hebben voor het 
+eindantwoord en dient hiernaar te handelen. 
+
+2.1.3  Voorbeeld(examen)opgaven 
+
+De volgende opgaven kunnen gebruikt worden als voorbeeldmateriaal voor toekomstige 
+examens: 
+
+Examens die zijn afgenomen vanaf 2018 
+Pilotexamens die zijn afgenomen voor 2018 
+
+- 
+- 
+-  Voorbeeld(examen)opgaven die op Examenblad te vinden zijn in de jaarring 
+
+2018. 
+
+2.1.4  Algebraïsche vaardigheden 
+
+Bij de specificaties is ervan uitgegaan dat de kandidaten bekend zijn met de vereiste 
+algebraïsche vaardigheden. Voor alle wiskundevakken havo/vwo met een centraal 
+examen wordt een overzicht van deze algebraïsche vaardigheden gegeven in bijlage 4. 
+
+pagina 6 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+Hoewel bij het samenstellen van dit overzicht de grootst mogelijke nauwkeurigheid is 
+nagestreefd, kan niet gegarandeerd worden dat deze uitputtend is. 
+
+2.1.5  ICT 
+
+In het CE wordt met ICT de grafische rekenmachine bedoeld. Zie hiervoor te zijner tijd 
+de Mededeling Hulpmiddelen en Regeling toegestane hulpmiddelen. 
+
+2.1.6  Formulelijst 
+
+In bijlage 5 staat de lijst van formules die wordt opgenomen in het centraal examen. 
+
+pagina 7 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+2.2 
+
+SPECIFICATIES 
+
+Domein A 
+
+Vaardigheden 
+
+Subdomein A1 
+De kandidaat heeft kennis van de rol van wiskunde in de maatschappij, kan hierover 
+gericht informatie verzamelen en de resultaten communiceren met anderen. 
+
+Algemene vaardigheden 
+
+De kandidaat kan 
+1. 
+2. 
+
+doelgericht informatie zoeken, beoordelen, selecteren en verwerken; 
+adequaat schriftelijk, mondeling en digitaal communiceren over onderwerpen uit 
+de wiskunde; 
+bij het verwerven van vakkennis en vakvaardigheden reflecteren op eigen 
+belangstelling, motivatie en leerproces; 
+toepassingen en effecten van wiskunde in het dagelijks leven en in verschillende 
+vervolgopleidingen en beroepssituaties herkennen en benoemen. 
+
+Subdomein A2 
+De kandidaat kan profielspecifieke probleemsituaties in wiskundige termen analyseren, 
+oplossen en het resultaat naar de betrokken context terugvertalen. 
+
+Profielspecifieke vaardigheden 
+
+De kandidaat kan 
+1. 
+
+een probleemsituatie in de context interpreteren, structureren en vertalen naar 
+een model waarin wiskundig gereedschap kan worden ingezet; 
+wiskundige methoden toepassen op probleemsituaties, de resultaten van een 
+wiskundige handeling terugvertalen naar de context en daaruit conclusies 
+trekken. 
+
+3. 
+
+4. 
+
+2. 
+
+Subdomein A3 
+Wiskundige vaardigheden 
+De kandidaat beheerst de bij het examenprogramma passende wiskundige 
+vaardigheden, waaronder modelleren en algebraïseren, ordenen en structureren, 
+analytisch denken en probleemoplossen, formules manipuleren, abstraheren, en logisch 
+redeneren − en kan daarbij ICT functioneel gebruiken. 
+
+De kandidaat 
+1.  
+2.  
+3.  
+
+beheerst de rekenregels; 
+beheerst de specifieke algebraïsche vaardigheden; 
+heeft inzicht in wiskundige notaties en formules en kan daarmee kwalitatief 
+redeneren; 
+kan wiskundige informatie ordenen en in probleemsituaties de wiskundige 
+structuur onderkennen; 
+kan bij een gegeven probleemsituatie een model opstellen in wiskundige termen; 
+kan een oplossingsstrategie kiezen, deze correct toepassen en de gevonden 
+oplossing controleren binnen de context; 
+kan vakspecifieke taal interpreteren en gebruiken; 
+kan de correctheid van wiskundige redeneringen verifiëren; 
+kan eenvoudige wiskundige redeneringen correct onder woorden brengen; 
+kan bij het raadplegen van wiskundige informatie, bij het verkennen van 
+wiskundige situaties, bij het geven van wiskundige redeneringen en bij het 
+uitvoeren van wiskundige berekeningen gebruik maken van geschikte ICT-
+middelen; 
+kan antwoorden afronden op voorgeschreven nauwkeurigheid dan wel op een 
+nauwkeurigheid die past bij de probleemsituatie.2 
+
+4.  
+
+5.  
+6.  
+
+7.  
+8.  
+9.  
+10.  
+
+11. 
+
+Domein B 
+
+Algebra en tellen 
+
+Subdomein B1 
+De kandidaat kan berekeningen uitvoeren met getallen en variabelen, daarbij gebruik 
+maken van rekenkundige en algebraïsche basisbewerkingen en van het werken met 
+
+Algebra 
+
+2 Zie de toelichting in paragraaf 2.1.2. 
+
+pagina 8 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+haakjes. 
+
+Opmerking: 
+Rekenen met getallen is bij veel wiskundige handelingen een onderliggende 
+vaardigheid die essentieel is, ook in de centrale examens wiskunde. De 
+rekenvaardigheden, genoemd in subdomein B1, zullen hoofdzakelijk impliciet 
+worden getoetst. 
+In zogenaamde opstapvragen, de eerste vragen binnen een probleemsituatie, is 
+het echter denkbaar dat alleen een beroep wordt gedaan op rekenvaardigheden. 
+Deze vragen hebben als doel om een kandidaat vertrouwd te maken met de 
+probleemsituatie. Ook zijn grotere vragen denkbaar waar rekenen een 
+belangrijke rol speelt, maar dan altijd in relatie tot andere wiskundige 
+vaardigheden zoals beschreven in domein A.  
+
+Parate kennis 
+De kandidaat kent 
+• 
+
+de begrippen absoluut en relatief. 
+
+berekeningen maken met en zonder variabelen waarbij gebruik gemaakt wordt 
+van verschillende rekenregels, inclusief die van machten en wortels; 
+berekeningen maken met verhoudingen, percentages, breuken; 
+werken met haakjes en vereenvoudigen door haakjes weg te werken. 
+
+Parate vaardigheden 
+De kandidaat kan 
+1.  
+
+2. 
+3. 
+
+6. 
+
+Productieve vaardigheden 
+De kandidaat kan 
+4.  
+5.  
+
+rekenregels gebruiken om algebraïsche expressies te herleiden of te verifiëren; 
+berekeningen maken met verhoudingen, percentages en breuken met daarin al 
+dan niet een of meer variabelen; 
+werken met grootheden, samengestelde grootheden en maatsystemen, en 
+eenheden omrekenen. 
+
+Subdomein B2 
+De kandidaat kan telproblemen structureren en schematiseren en dat gebruiken bij 
+berekeningen en redeneringen. 
+
+Telproblemen 
+
+Parate vaardigheden 
+De kandidaat kan 
+1. 
+
+het aantal permutaties en het aantal combinaties berekenen. 
+
+Productieve vaardigheden 
+De kandidaat kan 
+2.  
+
+telproblemen structureren en schematiseren met behulp van boomdiagram, 
+wegendiagram of rooster; 
+gebruik maken van permutaties en combinaties; 
+een probleem als een telprobleem identificeren; 
+bij een telprobleem een strategie bedenken en daarmee het probleem oplossen. 
+
+3. 
+4.  
+5. 
+
+Domein C 
+
+Verbanden 
+
+Opmerking: 
+In de examenopgaven kunnen beide termen, verband en functie, worden 
+gebruikt. 
+
+Subdomein C1 
+De kandidaat kan van eerstegraadsfuncties, tweedegraadsfuncties, machtsfuncties, 
+goniometrische functies, exponentiële functies en logaritmische functies de kenmerken in 
+grafiek, tabel en formule herkennen en gebruiken. 
+
+Standaardfuncties 
+
+pagina 9 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+Parate kennis 
+De kandidaat kent  
+• 
+
+de volgende typen standaardfuncties inclusief de bijbehorende namen 
+
+ (lineaire of eerstegraadsfunctie), 
+
+ (kwadratische of tweedegraadsfunctie), 
+
+ (
+
+ rationaal) (machtsfunctie), 
+
+, ook 
+
+ (exponentiële functie),  
+
+ (logaritmische functie), ook 
+
+ (natuurlijke logaritme) 
+
+ (sinusfunctie); 
+
+• 
+
+• 
+
+• 
+
+• 
+
+(constant, toenemend of afnemend) stijgen, 
+(constant, toenemend of afnemend) dalen; 
+
+de volgende bij de genoemde standaardfuncties behorende karakteristieke 
+eigenschappen 
+-  maximum, 
+-  minimum, 
+- 
+- 
+de volgende bij de grafieken van de genoemde standaardfuncties behorende 
+karakteristieke eigenschappen 
+- 
+- 
+- 
+bij exponentiële functies de begrippen: grondtal, exponent, beginwaarde, 
+groeifactor, groeipercentage, halveringstijd en verdubbelingstijd; 
+bij de sinusfunctie de begrippen: amplitude, evenwichtsstand en periode. 
+
+snijpunt(en) met de 
+top(pen), 
+asymptotisch gedrag; 
+
+-as en met de 
+
+-as, 
+
+Parate vaardigheden 
+De kandidaat kan 
+1. 
+
+de standaardfuncties en hun grafieken herkennen en gebruiken met hun 
+karakteristieke eigenschappen. 
+
+Productieve vaardigheden 
+De kandidaat kan 
+2. 
+
+binnen een probleemsituatie de verschillende representaties van een functie, 
+namelijk formule, tabel, grafiek, tekst, doelgericht gebruiken. 
+
+Functies, grafieken, vergelijkingen en ongelijkheden 
+
+Subdomein C2 
+De kandidaat kan formules en functievoorschriften opstellen en bewerken, de 
+bijbehorende grafieken tekenen, vergelijkingen en ongelijkheden oplossen met 
+algebraïsche methoden zonder gebruik van ICT, en daar waar nodig met numerieke of 
+grafische methoden met inzet van ICT, en de uitkomst interpreteren in termen van een 
+context. 
+
+Parate vaardigheden 
+De kandidaat kan 
+1. 
+
+door substitutie in een formule waarden berekenen.  
+
+Productieve vaardigheden 
+De kandidaat kan 
+2. 
+
+3. 
+4. 
+5. 
+
+formules herleiden met behulp van de algebraïsche vaardigheden, genoemd in 
+bijlage 4;  
+rekenregels voor logaritmen gebruiken;  
+passend bij een probleemsituatie de formules van (standaard)functies opstellen; 
+op de grafiek van een standaardfunctie transformaties, namelijk verschuiven of 
+herschalen3, uitvoeren en daarbij de bijbehorende formule opstellen; 
+
+3 De syllabuscommissie heeft bij wiskunde A gekozen om bij transformaties met minder abstracte 
+termen te werken. Met termen als ‘verschuiven’ en ‘herschalen’ in plaats van ‘translatie’ en 
+‘vermenigvuldiging ten opzichte van de x-as of y-as’. De betekenis is hetzelfde. 
+
+pagina 10 van 31 
+
+()fxaxb2()fxaxbxc()nfxaxn()xfxbg()exfxb()log()gfxx()ln()fxx()sin()fxxxy 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+6. 
+
+verbanden van de vorm 
+
+ ((recht) evenredig) en van de vorm 
+
+7. 
+
+8. 
+
+9. 
+10. 
+
+(omgekeerd evenredig) herkennen en gebruiken; 
+een vergelijking of een ongelijkheid opstellen aan de hand van een tabel, 
+formule, grafiek of tekst; 
+vergelijkingen en ongelijkheden oplossen met behulp van numerieke of grafische 
+methoden; 
+waarden vinden door lineair interpoleren of lineair extrapoleren; 
+functievoorschriften opstellen door twee functies op te tellen 
+
+, af te 
+
+trekken 
+
+, te vermenigvuldigen 
+
+, te delen 
+
+ of samen 
+
+te stellen 
+
+; 
+
+11. 
+
+de grafiek tekenen van een functie die ontstaat door twee functies op te tellen 
+
+, af te trekken 
+
+, te vermenigvuldigen 
+
+, te 
+
+delen 
+
+ of samen te stellen 
+
+; 
+
+12. 
+13. 
+
+een logaritmische schaalverdeling gebruiken; 
+op basis van verbanden met meerdere variabelen kwalitatief redeneren. 
+
+pagina 11 van 31 
+
+yaxayx(()())fxgx(()())fxgx(()())fxgx()()()fxgx((()))gfx(()())fxgx(()())fxgx(()())fxgx()()()fxgx((()))gfx 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+Domein D. Verandering 
+
+Opmerking: 
+In de examenopgaven kunnen beide termen, verband en functie, worden 
+gebruikt. 
+
+Subdomein D1 
+De kandidaat kan het gedrag van een rij herkennen en beschrijven en berekeningen aan 
+een rij uitvoeren, ten minste in het geval van rekenkundige en meetkundige rijen. 
+
+Rijen 
+
+Parate kennis 
+De kandidaat kent: 
+
+• 
+
+de notaties voor rijen: 
+
+ en 
+
+, waarbij
+
+ zowel bij 0 als bij 1 kan beginnen. 
+
+Parate vaardigheden 
+De kandidaat kan 
+1. 
+2. 
+
+vaststellen of een rij getallen een rekenkundige of meetkundige rij is; 
+een directe of recursieve formule opstellen van een rekenkundige of meetkundige 
+rij. 
+
+Productieve vaardigheden 
+De kandidaat kan 
+3. 
+
+4. 
+5. 
+6. 
+
+7. 
+
+eigenschappen van de rij van verschillen van een rekenkundige en een 
+meetkundige rij beschrijven en gebruiken; 
+bij een rij getallen het begrip somrij gebruiken; 
+uitdrukkingen met het 
+-teken interpreteren; 
+met een gegeven recursieve formule en met een gegeven directe formule 
+werken; 
+binnen een probleemsituatie een recursieve formule herkennen, opstellen en 
+deze doorrekenen. 
+
+Subdomein D2 
+De kandidaat kan het veranderingsgedrag van grafieken of functies relateren aan 
+differentiequotiënten, toenamediagrammen en hellinggrafieken en daarbij een relatie 
+leggen met de probleemsituatie. 
+
+Helling 
+
+Parate kennis 
+De kandidaat kent  
+• 
+
+het verband tussen de helling van een grafiek en de bijbehorende raaklijn. 
+
+Parate vaardigheden 
+De kandidaat kan 
+1. 
+2. 
+
+vaststellen of een stijging/daling toenemend of afnemend is;  
+de helling van een grafiek in een punt berekenen. 
+
+Productieve vaardigheden 
+De kandidaat kan 
+3. 
+4. 
+
+de extreme waarden van een functie berekenen; 
+bij een grafiek of functie een toenamediagram tekenen en binnen de 
+probleemsituatie een relatie leggen tussen toenamediagram en grafiek of functie; 
+de gemiddelde verandering berekenen van een grafiek op een interval en de 
+uitkomst interpreteren; 
+het veranderingsgedrag van een functie interpreteren binnen de 
+probleemsituatie; 
+de helling van een grafiek in een punt interpreteren of toepassen binnen de 
+probleemsituatie;  
+bij een grafiek de hellinggrafiek schetsen. 
+
+5. 
+
+6. 
+
+7. 
+
+8. 
+
+pagina 12 van 31 
+
+na()ann 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+Afgeleide 
+
+Subdomein D3 
+De kandidaat kan van eerstegraadsfuncties, tweedegraadsfuncties, machtsfuncties, 
+exponentiële functies en logaritmische functies de afgeleide bepalen, de rekenregels voor 
+het differentiëren gebruiken en aan de hand van de afgeleide het veranderingsgedrag 
+van een functie beschrijven. 
+
+Parate kennis 
+De kandidaat kent: 
+
+• 
+
+de volgende notaties voor de afgeleide: 
+
+en 
+
+. 
+
+Parate vaardigheden 
+De kandidaat kan 
+1. 
+
+de afgeleide berekenen van de standaardfuncties, met uitzondering van 
+
+; 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+gebruik maken van de somregel, de verschilregel, de productregel en de 
+quotiëntregel; 
+gebruik maken van de kettingregel voor het differentiëren van functies van de 
+vorm 
+
+ standaardfuncties zijn; 
+
+, waarbij 
+
+ en 
+
+een verband leggen tussen de afgeleide van een functie en de helling van de 
+grafiek van die functie in een gegeven punt van de grafiek; 
+de afgeleide gebruiken om extreme waarden van een functie te vinden of te 
+controleren.  
+
+Productieve vaardigheden 
+De kandidaat kan 
+6. 
+
+7. 
+
+een optimaliseringsprobleem in een probleemsituatie oplossen met behulp van 
+differentiëren; 
+binnen een probleemsituatie betekenis geven aan de afgeleide en ermee 
+redeneren.  
+
+pagina 13 van 31 
+
+ddyx'()fx()sin()fxx(())gfxfg 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+BIJLAGE 1  EXAMENPROGRAMMA 
+
+Het eindexamen  
+Het eindexamen bestaat uit het centraal examen en het schoolexamen. 
+
+Het examenprogramma bestaat uit de volgende domeinen: 
+Domein A 
+Domein B 
+Domein C  
+Domein D 
+Domein E 
+Domein F  
+
+Vaardigheden 
+Algebra en tellen 
+Verbanden 
+Verandering 
+Statistiek en kansrekening 
+Keuzeonderwerpen 
+
+Het centraal examen  
+Het centraal examen heeft betrekking op domeinen B, C en D in combinatie met de 
+vaardigheden uit domein A.  
+Het CvTE stelt het aantal en de tijdsduur van de zittingen van het centraal examen vast.  
+Het CvTE maakt indien nodig een specificatie bekend van de examenstof van het 
+centraal examen.  
+
+Het schoolexamen  
+Het schoolexamen heeft betrekking op domein A en: 
+
+–  de domeinen E en F;  
+– 
+
+indien het bevoegd gezag daarvoor kiest: een of meer domeinen of subdomeinen 
+waarop het centraal examen betrekking heeft;  
+indien het bevoegd gezag daarvoor kiest: andere vakonderdelen, die per 
+kandidaat kunnen verschillen.  
+
+– 
+
+De examenstof  
+
+Domein A: Vaardigheden  
+
+Subdomein A1: Algemene vaardigheden 
+1.  De kandidaat heeft kennis van de rol van wiskunde in de maatschappij, kan hierover 
+
+gericht informatie verzamelen en de resultaten communiceren met anderen.  
+
+Subdomein A2: Profielspecifieke vaardigheden 
+2.  De kandidaat kan profielspecifieke probleemsituaties in wiskundige termen 
+
+analyseren, oplossen en het resultaat naar de betrokken context terugvertalen.  
+
+Subdomein A3: Wiskundige vaardigheden 
+3.  De kandidaat beheerst de bij het examenprogramma passende wiskundige 
+
+vaardigheden, waaronder modelleren en algebraïseren, ordenen en structureren, 
+analytisch denken en probleemoplossen, formules manipuleren, abstraheren, en 
+logisch redeneren – en kan daarbij ICT functioneel gebruiken.  
+
+pagina 14 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+Domein B: Algebra en tellen  
+
+Subdomein B1: Algebra 
+4.  De kandidaat kan berekeningen uitvoeren met getallen en variabelen, daarbij 
+
+gebruik maken van rekenkundige en algebraïsche basisbewerkingen en van het 
+werken met haakjes.  
+
+Subdomein B2: Telproblemen 
+5.  De kandidaat kan telproblemen structureren en schematiseren en dat gebruiken bij 
+
+berekeningen en redeneringen.  
+
+Domein C: Verbanden  
+
+Subdomein C1: Standaardfuncties 
+6.  De kandidaat kan van eerstegraadsfuncties, tweedegraadsfuncties, machtsfuncties, 
+
+goniometrische functies, exponentiële functies en logaritmische functies de 
+kenmerken in grafiek, tabel en formule herkennen en gebruiken.  
+
+Subdomein C2: Functies, grafieken, vergelijkingen en ongelijkheden 
+7.  De kandidaat kan formules en functievoorschriften opstellen en bewerken, de 
+
+bijbehorende grafieken tekenen, vergelijkingen en ongelijkheden oplossen met 
+algebraïsche methoden zonder gebruik van ICT, en daar waar nodig met numerieke 
+of grafische methoden met inzet van ICT, en de uitkomst interpreteren in termen 
+van een context.  
+
+Domein D: Verandering  
+
+Subdomein D1: Rijen 
+8.  De kandidaat kan het gedrag van een rij herkennen en beschrijven en berekeningen 
+aan een rij uitvoeren, ten minste in het geval van rekenkundige en meetkundige 
+rijen.  
+
+Subdomein D2: Helling 
+9.  De kandidaat kan het veranderingsgedrag van grafieken of functies relateren aan 
+differentiequotiënten, toenamediagrammen en hellinggrafieken en daarbij een 
+relatie leggen met de probleemsituatie.  
+
+Subdomein D3: Afgeleide 
+10.  De kandidaat kan van eerstegraadsfuncties, tweedegraadsfuncties, machtsfuncties, 
+exponentiële functies en logaritmische functies de afgeleide bepalen, de rekenregels 
+voor het differentiëren gebruiken en aan de hand van de afgeleide het 
+veranderingsgedrag van een functie beschrijven.  
+
+pagina 15 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+Domein E: Statistiek en kansrekening  
+
+Subdomein E1: Probleemstelling en onderzoeksontwerp 
+11.  De kandidaat kan bij een probleemstelling die zich leent voor een statistische 
+
+aanpak een plan maken om antwoord op de probleemstelling te verkrijgen, waarbij 
+geschikte variabelen worden gekozen.  
+
+Subdomein E2: Visualisatie van data 
+12.  De kandidaat kan verkregen data verwerken in een geschikte tabel of grafiek en 
+
+deze op waarde interpreteren.  
+
+Subdomein E3: Kwantificering 
+13.  De kandidaat kan de verkregen data samenvatten in voor de probleemstelling 
+
+geschikte maten en hieraan interpretaties verbinden.  
+
+Subdomein E4: Kansbegrip 
+14.  De kandidaat kan het kansbegrip gebruiken om bij een toevalsproces de kans op 
+een bepaalde uitkomst of gebeurtenis te bepalen aan de hand van een diagram, 
+combinatoriek, kansregels en simulatie.  
+
+Subdomein E5: Kansverdelingen 
+15.  De kandidaat kan aangeven in welke situatie een toevalsvariabele een bepaalde 
+
+kansverdeling bezit en van die verdeling de karakteristieken verwachtingswaarde en 
+standaardafwijking hanteren.  
+
+Subdomein E6: Verklarende statistiek 
+16.  De kandidaat kan in een probleemsituatie op basis van steekproefgegevens een 
+
+uitspraak doen over een populatie, de betrouwbaarheid daarvan kwantificeren en 
+het resultaat duiden in termen van de context.  
+
+Subdomein E7: Statistiek met ICT 
+17.  De kandidaat beheerst statistisch ICT-gebruik in relatie met de subdomeinen E1, E2, 
+
+E3, E4, E5 en E6 om grote datasets te interpreteren en te analyseren.  
+
+Domein F: Keuzeonderwerpen 
+
+pagina 16 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+BIJLAGE 2  EXAMENWERKWOORDEN 
+
+Er is een gecombineerde lijst voor examenwerkwoorden opgesteld voor natuur- en 
+wiskunde. Er is gestreefd naar maximale afstemming en overlap. De complete lijst voor 
+wis- en natuurkunde is omstreeks maart 2017 in een nieuwsbericht gepubliceerd op 
+Examenblad.nl. 
+
+In onderstaande lijst staan de relevante examenwerkwoorden voor wiskunde. Als in een 
+wiskunde-examen een van de woorden uit onderstaande lijst wordt gebruikt, geldt de 
+betekenis die hiervan in deze lijst is gegeven. Deze lijst met examenwerkwoorden is niet 
+uitputtend. 
+
+Algemeen:  
+Tenzij anders aangegeven, is de wijze waarop het antwoord 
+gevonden wordt vrij.   
+Alleen voor wiskunde B geldt:  de toevoeging ‘algebraïsch’ of 
+‘exact’ legt beperkingen op aan de wijze van beantwoorden.  
+
+Zonder gebruik te maken van specifieke opties van  de grafische 
+rekenmachine; tussenantwoorden en het eindantwoord mogen 
+benaderd opgeschreven worden.  
+
+Zonder gebruik te maken van specifieke opties* van de grafische 
+rekenmachine; tussenantwoorden en het eindantwoord mogen niet 
+benaderd opgeschreven worden.  
+------  
+*Als bijvoorbeeld gevraagd wordt de ongelijkheid  5/x<x exact op te 
+lossen, wordt verwacht dat de gelijkheid 5/x=x exact wordt opgelost. 
+De tekens in de oplossing van de ongelijkheid hoeven niet 
+verantwoord te worden.  
+Het geven van een redenering en/of bepaling en/of berekening 
+waaruit de juistheid van het gestelde blijkt. Uit de uitwerking moet 
+blijken welke stappen zijn gezet. In het algemeen geldt dat het 
+gestelde controleren door middel van een of meer voorbeelden niet 
+voldoet  
+Het geven van een redenering en/of berekening waaruit de juistheid 
+van de formule of eenheid volgt. Uit de uitwerking moet blijken  
+welke stappen zijn gezet. Tenzij anders aangegeven, geldt dat het 
+gestelde controleren door middel van een of meer voorbeelden niet 
+voldoet.   
+Het gevraagde vaststellen en/of uitrekenen.  
+Uit de uitwerking moet blijken welke stappen zijn gezet.  
+Het geven van een uitwerking waarin de denkstappen staan, waaruit 
+het gestelde/gevraagde blijkt.  
+Het gevraagde uitrekenen.  
+Uit de uitwerking moet blijken welke stappen zijn gezet.  
+
+Het geven van een redenering en/of exacte berekening waaruit de 
+juistheid van het gestelde blijkt.   
+Uit de uitwerking moet blijken welke stappen zijn gezet.  
+Het gestelde controleren door middel van een of meer voorbeelden 
+voldoet niet, tenzij het geven van een tegenvoorbeeld tot de juiste 
+conclusie leidt  
+Een formule stap voor stap herschrijven tot deze in de gevraagde 
+vorm staat, zonder gebruik te maken van specifieke opties van de 
+grafische rekenmachine.  
+Een eindantwoord geven. Een toelichting is niet vereist tenzij anders 
+is aangegeven.  
+
+Algebraïsch / op 
+algebraïsche wijze 
+(alleen wiskunde B)  
+Exact /   
+op exacte wijze 
+(alleen wiskunde B)  
+
+Aantonen dat, laten 
+zien dat  
+
+Afleiden van  
+bijvoorbeeld een 
+formule of een 
+eenheid  
+
+Bepalen  
+
+Beredeneren, 
+uitleggen  
+Berekenen  
+
+Bewijzen (dat)  
+(alleen wiskunde B)  
+
+Herleiden (van een 
+formule)  
+
+Noemen, (aan)geven 
+wat, welke, wanneer, 
+hoeveel  
+
+pagina 17 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+Onderzoeken of  
+
+Oplossen  
+
+Schetsen  
+
+Tekenen  
+
+Het geven van een redenering en/of bepaling en/of berekening 
+waaruit de (on)juistheid van het gestelde blijkt. Het antwoord moet 
+worden afgesloten met een conclusie.  
+Uit de uitwerking moet blijken welke stappen zijn gezet.  
+In het algemeen geldt dat het gestelde controleren door middel van 
+een of meer voorbeelden niet voldoet, tenzij het geven van een 
+tegenvoorbeeld tot de juiste conclusie leidt.  
+Het bepalen van de waarden van een of meer onbekenden die 
+voldoen aan de gegeven vergelijking of ongelijkheid.  
+Uit de uitwerking moet blijken welke stappen zijn gezet.  
+
+Het geven van een grafische voorstelling die de voor de 
+probleemsituatie relevante karakteristieke eigenschappen bevat.  
+Het geven van een grafische voorstelling die de voor de 
+probleemsituatie relevante karakteristieke eigenschappen bevat 
+en voldoende nauwkeurig is.  In het geval van een grafiek moet 
+een assenstelsel met schaalverdeling zijn weergegeven.  
+
+pagina 18 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+BIJLAGE 3  BEGRIPPENLIJST 
+
+De in deze lijst opgenomen begrippen worden bij de kandidaten van het betreffende 
+centraal examen wiskunde bekend verondersteld. Zij kunnen zonder nadere toelichting 
+in examenvragen worden gebruikt.  
+In deze lijst zijn die wiskundige begrippen opgenoemd die vermeld zijn onder de parate 
+kennis bij de specificaties of voortvloeien uit de parate en productieve vaardigheden.  
+Deze lijst met begrippen is niet uitputtend. Zo zijn begrippen die als voorkennis worden 
+beschouwd, niet opgenomen. 
+
+Bij de standaardfuncties moet de kandidaat de karakteristieke eigenschappen kennen.  
+Bij wiskunde A havo en wiskunde C vwo wordt in het examen niet over ‘functies’ maar 
+over ‘verbanden’ gesproken, de functienotaties 
+
+ worden hier ook 
+
+ of 
+
+niet gebruikt. 
+In onderstaande tabel dient voor wiskunde A havo en wiskunde C vwo dan ook overal 
+voor ‘functies’ ‘verbanden’ te worden gelezen. 
+
+havo 
+
+vwo 
+
+Functies/verbanden  variabele 
+
+grootheid, eenheid 
+absoluut, relatief 
+karakteristieke eigenschappen van 
+een functie 
+
+domein 
+bereik 
+nulpunt 
+extreem, extreme waarde 
+maximum(waarde) 
+minimum(waarde) 
+(constant, toenemend of 
+afnemend) stijgen  
+
+(constant, toenemend of 
+afnemend) dalen 
+
+karakteristieke eigenschappen van 
+een grafiek 
+
+snijpunt(en) met x- en y-as 
+top 
+buigpunt 
+randpunt 
+symmetrie 
+asymptotisch gedrag 
+verticale en horizontale asymptoot 
+scheve asymptoot 
+
+standaardfuncties 
+
+lineaire (of eerstegraads) functies 
+
+richtingscoëfficiënt 
+
+kwadratische (of tweedegraads) 
+functies 
+
+parabool 
+machtsfuncties 
+
+wortelfuncties 
+
+1 Termen hoeven niet gekend te worden, wel de bijbehorende activiteiten 
+2 Deze begrippen ook in relatie met limieten 
+
+wiA  wiB  wiC  wiA  wiB 
+x 
+
+x 
+
+x 
+
+x 
+x 
+
+x 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+
+x 
+x 
+x 
+
+x 
+
+x 
+
+x1 
+
+x 
+x 
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x2 
+x2 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+x 
+
+x 
+x 
+x 
+
+x 
+
+x 
+x 
+
+x1 
+
+x1 
+
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+
+x 
+
+x 
+
+pagina 19 van 31 
+
+...x()...fx 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+havo 
+
+vwo 
+
+wiA  wiB  wiC  wiA  wiB 
+x 
+
+exponentiële functies 
+
+grondtal 
+exponent 
+beginwaarde 
+groeifactor 
+groeipercentage 
+halveringstijd 
+verdubbelingstijd 
+logaritmische functies 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+logaritme 
+natuurlijke logaritme 
+logaritmische schaalverdeling 
+
+x 
+
+goniometrische functies 
+
+sinusoïde 
+radiaal 
+periodiek verschijnsel 
+periode 
+frequentie 
+trillingstijd 
+amplitude 
+evenwichtsstand 
+evenwichtswaarde 
+sinusmodel 
+harmonische trilling 
+som-, verschil en 
+verdubbelingsformules 
+
+x 
+x 
+
+x 
+
+gebroken lineaire functies 
+
+hyperbool 
+
+absolute-waarde-functies 
+vergelijkingen en ongelijkheden 
+
+lineaire of 
+eerstegraadsvergelijking 
+
+kwadratische of 
+tweedegraadsvergelijking 
+
+abc-formule 
+
+(lineair) interpoleren en extrapoleren 
+trend 
+somfunctie 
+verschilfunctie 
+productfunctie 
+quotiëntfunctie 
+samengestelde functie, ketting van 
+functies 
+
+inverse functie 
+transformaties 
+translatie 
+verschuiving 
+vermenigvuldiging t.o.v. x-as of  
+y-as 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x3 
+x 
+
+x 
+x 
+
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+x 
+
+x 
+
+x 
+
+x 
+x 
+
+x 
+x 
+
+x 
+x 
+x4 
+x4 
+x4 
+x5 
+x5 
+
+x 
+
+x4 
+x4 
+x4 
+x5 
+x5 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+
+x 
+x 
+
+x 
+x 
+
+x 
+
+x 
+
+x 
+x 
+
+x 
+
+x5 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+
+3 Alleen de sinusfunctie 
+4 Termen hoeven niet gekend te worden, wel de bijbehorende activiteiten 
+5 Termen hoeven niet gekend te worden, wel de bijbehorende activiteiten 
+
+pagina 20 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+Meetkunde 
+
+Veranderingen 
+
+havo 
+
+vwo 
+
+wiA  wiB  wiC  wiA  wiB 
+
+x 
+x 
+x 
+
+x 
+
+herschalen 
+
+evenredigheidsverbanden 
+
+recht evenredig, evenredig 
+omgekeerd evenredig 
+evenredig met een macht 
+evenredigheidsconstante 
+
+limieten 
+
+linker- en rechterlimiet 
+perforatie 
+
+parameter 
+aanzicht 
+perspectieftekening 
+
+éénpuntsperspectief 
+tweepuntsperspectief 
+
+horizon 
+verdwijnpunt 
+oogpunt 
+vergrotingsfactor 
+afstand 
+omgeschreven cirkel 
+regelmatige veelhoek 
+stelling van Pythagoras 
+gelijkvormigheid 
+symmetrie 
+gulden snede 
+goniometrische verhoudingen 
+sinusregel en cosinusregel 
+vergelijking van een lijn 
+vergelijking van een cirkel 
+stelsel vergelijkingen 
+strijdig stelsel 
+afhankelijk stelsel 
+parametervoorstelling van een lijn 
+parametervoorstelling van een cirkel 
+vector  
+
+lengte, richtingshoek, kentallen, 
+componenten van een vector 
+
+inproduct van twee vectoren 
+vectorvoorstelling van een lijn, 
+steunvector, richtingsvector 
+
+zwaartepunt 
+middelloodlijn 
+bissectrice (deellijn) 
+
+interval 
+intervalnotaties 
+de ∆-notatie voor een differentie 
+differentiequotiënt 
+gemiddelde verandering 
+toenamediagram 
+helling  
+steilheid 
+hellinggrafiek 
+
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+pagina 21 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+havo 
+
+vwo 
+
+wiA  wiB  wiC  wiA  wiB 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+
+x 
+
+x 
+
+x 
+x 
+
+rijen, inclusief notaties 
+rekenkundige rij 
+meetkundige rij 
+somrij 
+∑-teken 
+directe formule 
+recursieve formule 
+
+Differentiaal- en 
+integraalrekening 
+
+afgeleide (functie), inclusief notaties 
+
+Statistiek 
+
+tweede afgeleide, inclusief notaties 
+somregel en verschilregel 
+productregel 
+quotiëntregel 
+kettingregel 
+raaklijn 
+integraal, integrand, primitieve 
+omwentelingslichaam 
+(baan)snelheid,(baan)versnelling 
+betrouwbaarheid, 
+betrouwbaarheidsinterval 
+
+centrummaat, centrum 
+
+gemiddelde 
+mediaan 
+modus, modaal 
+
+data 
+
+discreet 
+continu 
+kwantitatief 
+kwalitatief 
+nominaal 
+ordinaal 
+absoluut 
+relatief 
+frequentie 
+groepen 
+kenmerk 
+klasse, klassenindeling 
+
+verdeling 
+
+klokvormig 
+meertoppig 
+uniform 
+scheef 
+staart 
+uitschieter 
+normale verdeling 
+de drie vuistregels van de 
+normale verdeling 
+
+populatie 
+
+populatiegemiddelde 
+populatieproportie 
+
+representatie / presentatie 
+
+dotplot 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+
+pagina 22 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+havo 
+
+vwo 
+
+wiA  wiB  wiC  wiA  wiB 
+
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+staafdiagram 
+cirkeldiagram 
+steelbladdiagram 
+lijndiagram 
+(cumulatief / relatief)  
+frequentiepolygoon 
+
+boxplot 
+(cumulatieve) frequentietabel 
+kruistabel 
+puntenwolk, spreidingsdiagram 
+
+spreidingsmaat, spreiding 
+interkwartielafstand 
+standaardafwijking 
+spreidingsbreedte 
+
+steekproef 
+aselect 
+representatief 
+steekproefomvang 
+steekproevenverdeling 
+steekproefgemiddelde 
+steekproefproportie 
+
+boomdiagram 
+wegendiagram 
+rooster 
+permutaties 
+combinaties 
+driehoek van Pascal 
+Venn-diagram 
+nodige, voldoende voorwaarde 
+contradictie 
+paradox 
+als-dan-redenering 
+hier-uit-volgt-conclusie 
+tegenvoorbeeld 
+
+x 
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+Combinatoriek 
+
+Logisch redeneren 
+
+pagina 23 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+BIJLAGE 4  ALGEBRAÏSCHE VAARDIGHEDEN 
+
+In deze bijlage worden de eisen wat betreft algebraïsche vaardigheden beschreven 
+voor alle wiskundevakken met een centraal examen. Algebraïsche vaardigheden zijn 
+geen doel op zichzelf, maar onderdeel van wiskundige activiteiten. De algebraïsche 
+vaardigheden moeten in samenhang met het betreffende programma worden gelezen.  
+Door algebraïsche expressies te bewerken kan bijvoorbeeld de juistheid van 
+beweringen worden aangetoond, het rekenwerk worden vereenvoudigd of 
+vergelijkingen zo herschreven worden dat ze exact zijn op te lossen. Deze algebraïsche 
+vaardigheden zijn onderverdeeld in specifieke en algemene algebraïsche vaardigheden. 
+
+Bij specifieke algebraïsche vaardigheden gaat het om parate kennis en het vlot kunnen 
+toepassen van de bijbehorende vaardigheden op de voorkomende algebraïsche 
+expressies. Deze vaardigheden hebben betrekking op algoritmisch werken en 
+algebraïsch rekenen. Het gaat hier bijvoorbeeld om kennis en gebruik van rekenregels, 
+inclusief het werken met haakjes, bij het invullen van getallen of variabelen in een 
+expressie en het gebruik van algoritmen om een vergelijking op te lossen. 
+
+Bij algemene algebraïsche vaardigheden spelen aspecten als aanpak, globale strategie, 
+het herkennen van structuren en methoden, en doelgerichtheid een rol. De kandidaten 
+moeten de structuur van een expressie kunnen herkennen, moeten kwalitatief kunnen 
+redeneren aan de hand van een formule (zoals stijgen/dalen, symmetrie en 
+asymptotisch gedrag), moeten een formule kunnen opstellen door het generaliseren 
+van getallenvoorbeelden of het combineren van bekende formules, moeten verbanden 
+zien tussen de verschillende representaties van een functie en moeten kunnen wisselen 
+tussen ‘betekenisloos manipuleren’ en betekenis toekennen aan de variabelen en 
+parameters. 
+
+Samenvattend zijn de specifieke vaardigheden die vaardigheden waarvan wordt 
+verwacht dat de kandidaat deze snel en geroutineerd kan uitvoeren, terwijl voor de 
+algemene vaardigheden de kandidaat in staat moet zijn met inzicht en vooruit denkend 
+te handelen. 
+
+Bij de onderstaande opsomming van specifieke vaardigheden geldt zeker dat een deel 
+(wellicht alleen in zijn grondvorm) reeds bekend verondersteld mag worden vanuit de 
+onderbouw. Denk bijvoorbeeld aan de voorrangsregels en het werken met haakjes, 
+eenvoudige breukvormen en wortels.  
+
+Op de plaats van 
+
+, 
+
+, 
+
+ en 
+
+ in de volgende tabellen kunnen ook eenvoudige 
+
+expressies staan, zoals 
+
+, 
+
+ en 
+
+. 
+
+Niet aan de orde komen de regels die horen bij het differentiëren.  
+
+De vaardigheden genoemd bij categorieën A t/m D moeten in beide richtingen kunnen 
+worden uitgevoerd, tenzij anders is vermeld. 
+Beperkende voorwaarden zoals bijvoorbeeld noemers van breuken zijn ongelijk 0, 
+worden niet vermeld. 
+
+Hoewel bij het samenstellen van de kruisjeslijst met de algebraïsche vaardigheden de 
+grootst mogelijke nauwkeurigheid is nagestreefd, kan niet gegarandeerd worden dat 
+deze volledig is. 
+
+pagina 24 van 31 
+
+ABCDaxbax2x 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+Specifieke vaardigheden 
+A.  
+Breukvormen 
+
+1. 
+
+B.  
+Wortelvormen 
+
+C.  
+Bijzondere 
+producten 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+1. 
+
+2. 
+
+1.  haakjes wegwerken en ontbinden in 
+
+factoren: 
+
+havo A, vwo A en vwo C: alleen haakjes 
+wegwerken 
+
+havo A, vwo A en vwo C: alleen haakjes 
+wegwerken 
+
+2.  
+
+3.  
+
+4.  
+
+5.   kwadraat afsplitsen: 
+
+schrijven in de vorm 
+
+havo 
+
+vwo 
+
+wiA  wiB  wiC  wiA  wiB 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+pagina 25 van 31 
+
+ACADBCBDBDAABCCBB1BABAABABCCCCACACBDBDBCAACB ABAB AABB2()()()xaxbxabxab()()ABCDACADBCBD2222()AABBAB22()()ABABAB2xpxq2()xrs 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+havo 
+
+vwo 
+
+Specifieke vaardigheden 
+D.  
+Machten en 
+logaritmen 
+
+1.  
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+8. 
+
+9. 
+
+10. 
+
+11. 
+
+ met 
+
+ positief en geheel 
+
+vwo C: alleen 
+
+voor formules zie betreffende domein 
+
+1.  via substitutie van getallen 
+2.  via substitutie van expressies 
+3.  via het omwerken van formules 
+
+havo A, vwo A en vwo C: 
+
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+E.  
+Goniometrie 
+F.  
+Herleidingen 
+uitvoeren aan de 
+hand van de 
+elementen 
+genoemd bij A tot 
+en met D 
+G.  
+Vergelijkingen 
+oplossen met 
+behulp van 
+algemene vormen 
+en formules 
+herleiden 
+
+(voor wiA en wiC 
+worden deze 
+vaardigheden 
+uitsluitend gebruikt 
+voor het herleiden van 
+formules) 
+
+wiA  wiB  wiC  wiA  wiB 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+
+x 
+
+x 
+
+ x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+ x 
+
+ x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+pagina 26 van 31 
+
+pqpqaaappqqaaa()pqpqaa()pppabab1ppaa1ppaaplog()log()log()gggabablog()log()log()gggabablog()log()gpgapalog()log()log()pgpaag10pln()log()ln()gaag000ABAofB0ABACAofBC,0ABACABCACABCB ACADBCBD22  ABABofAB2ABAB 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+havo 
+
+vwo 
+
+Specifieke vaardigheden 
+H.  
+Algoritmen t.b.v. 
+het oplossen van 
+vergelijkingen en 
+het herleiden van 
+formules 
+
+1.  eerstegraadsvergelijkingen 
+
+2.  tweedegraadsvergelijkingen 
+
+abc-formule 
+
+(voor wiA en wiC 
+worden deze 
+vaardigheden 
+uitsluitend gebruikt 
+voor het herleiden van 
+formules) 
+
+I.  
+Vergelijkingen 
+oplossen met 
+behulp van 
+standaardfuncties 
+J.  
+Vergelijkingen en 
+ongelijkheden 
+van het type 
+
+ resp. 
+
+oplossen 
+
+ als 
+
+ oneven is 
+
+ als 
+
+ even 
+
+is 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+8. 
+
+1. 
+
+2. 
+
+1.  grafisch, waaronder ICT 
+2.  vergelijkingen en ongelijkheden 
+
+algebraïsch dan wel exact, indien 
+algebraïsch/exact oplosbaar 
+
+wiA  wiB  wiC  wiA  wiB 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+
+pagina 27 van 31 
+
+cbaaxbcx22402bbacaxbxcxa1nnxcxcn11nnnxcxcofxcnlog()xggaxaln()xeaxalog()gbxbxgln()bxbxe  xcxcofxc()fAc()()fAfB()()fxgx()()fxgx 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+havo 
+
+vwo 
+
+Algemene vaardigheden 
+K.  
+Formules 
+opstellen 
+
+1.  door variabelen te kiezen bij een 
+
+probleemsituatie 
+2.  van standaardfuncties 
+
+wiA  wiB  wiC  wiA  wiB 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+L.  
+Expressies 
+herkennen 
+
+a.  eerstegraads/lineaire functie 
+b.  tweedegraadsfunctie 
+c.  exponentiële functie 
+d. 
+logaritmische functie 
+e.  goniometrische functie 
+f.  machtsfunctie 
+g.  absolute waarde functie 
+
+3.  door generaliseren via 
+getallenvoorbeelden 
+
+4.  door schakelen van formules 
+1.  vaststellen of een (deel)expressie 
+behoort tot een van de volgende 
+families 
+a.  eerstegraads/lineaire functies 
+b.  tweedegraadsfuncties 
+c.  exponentiële functies 
+d. 
+logaritmische functies 
+e.  goniometrische functies  
+f.  machtsfuncties 
+
+2.  structuur van een expressie 
+
+vaststellen 
+
+3.  rol van een voorkomende parameter 
+
+bepalen 
+
+M.  
+Karakteristieken 
+bepalen 
+
+kwalitatief redeneren over expressies of 
+delen daarvan met betrekking tot 
+karakteristieken als 
+
+a.  uiterste waarden 
+b.  stijgen of dalen 
+c.  asymptotisch gedrag 
+
+N.  
+Algebraïsche 
+expressies 
+reduceren en 
+representeren 
+
+1.  complexe delen van een expressie 
+vervangen door 'plaatsvervangers' 
+zodat herkenbare expressies ontstaan 
+
+2.  flexibel kunnen wisselen tussen 
+
+betekenis toekennen aan symbolen en 
+betekenisloos kunnen manipuleren 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+ x1 
+x 
+
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+x1 
+x 
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+x 
+x 
+x 
+
+x 
+
+x 
+x 
+x 
+x 
+
+x 
+
+3.  flexibel verschillende representaties 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+van functies (formule, tabel, grafiek) 
+kunnen inzetten en tussen deze 
+representaties kunnen wisselen 
+
+1 alleen de sinusfunctie 
+
+pagina 28 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+BIJLAGE 5  LIJST VAN FORMULES DIE IN HET EXAMEN WORDT 
+OPGENOMEN 
+
+De volgende lijst formules wordt afgedrukt op bladzijde 2 van het examen.  
+
+Differentiëren 
+
+naam van de regel 
+
+functie 
+
+afgeleide 
+
+somregel 
+
+verschilregel 
+
+productregel 
+
+quotiëntregel 
+
+kettingregel 
+
+Logaritmen 
+
+regel 
+
+voorwaarde 
+
+  of  
+
+pagina 29 van 31 
+
+()()()sxfxgx'()'()'()sxfxgx()()()vxfxgx'()'()'()vxfxgx()()()pxfxgx'()'()()()'()pxfxgxfxgx()()()fxqxgx2'()()()'()'()(())fxgxfxgxqxgx()(())kxfgx'()'(())'()kxfgxgxddddddkfgxgxlog()log()log()gggabab0,1,0,b0ggalog()log()log()gggabab0,1,0,b0ggalog()log()gpgapa0,1,0ggalog()log()log()pgpaag0,1,0,0,1ggapp 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WISKUNDE A VWO | syllabus centraal examen 2027 
+Versie 2, juli 2025 
+
+BIJLAGE 6  DE CORRECTIE VAN DE CENTRALE EXAMENS 
+WISKUNDE 
+Op examenblad op de vakspecifieke pagina voor vwo wiskunde A onder publicaties treft 
+u de eerder in Euclides en op Examenblad gepubliceerde artikelen ‘Gelijke monniken, 
+gelijke kappen’ (2014) en ‘Nieuwe vakspecifieke regel over afronden voor wiskunde A, 
+B en C havo en vwo’ (2016). De artikelen gaan over de correctie van de centrale 
+examens wiskunde havo en vwo. In de artikelen worden voorbeelden gebruikt. Enkele 
+voorbeelden zijn echter achterhaald als gevolg van wijzigingen in de 
+examenprogramma’s (zoals een voorbeeld over kansrekening). 
+
+pagina 30 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pagina 31 van 31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

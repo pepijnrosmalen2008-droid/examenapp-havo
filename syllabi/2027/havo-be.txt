@@ -1,0 +1,3608 @@
+BEDRIJFSECONOMIE 
+HAVO 
+
+SYLLABUS CENTRAAL EXAMEN 
+2027 
+
+Versie 2, juli 2025 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+INHOUD 
+
+INLEIDING 
+
+1 
+VAN M&O NAAR BEDRIJFSECONOMIE 
+HANDELINGSWERKWOORDEN 
+HANDELINGSWERKWOORD ‘BEREKENEN’ 
+WETSKENNIS 
+VERSCHIL HAVO EN VWO 
+
+2 
+
+3 
+3.1 
+3.2 
+3.3 
+3.4 
+3.5 
+3.6 
+3.7 
+
+4 
+4.1 
+4.2 
+4.3 
+
+EXAMENSTOF VAN CENTRAAL EXAMEN EN SCHOOLEXAMEN HAVO 
+
+SPECIFICATIE VAN DE EINDTERMEN VOOR HET CE 
+DOMEIN A: VAARDIGHEDEN 
+DOMEIN B: VAN PERSOON NAAR RECHTSPERSOON 
+DOMEIN C: INTERNE ORGANISATIE EN PERSONEELSBELEID 
+DOMEIN D: INVESTEREN EN FINANCIEREN 
+DOMEIN E: MARKETING 
+DOMEIN F: FINANCIEEL BELEID 
+DOMEIN G: VERSLAGGEVING 
+
+HET CENTRAAL EXAMEN 
+ZITTINGEN 
+VAKSPECIFIEKE REGELS CORRECTIEVOORSCHRIFT 
+HULPMIDDELEN 
+
+BIJLAGE 1 EXAMENPROGRAMMA BEDRIJFSECONOMIE, ONDERNEMERSCHAP  
+
+EN FINANCIËLE ZELFREDZAAMHEID HAVO 
+
+BIJLAGE 2 SCHEMA UIT HET RAPPORT VAN DE COMMISSIE BOOT 
+
+BIJLAGE 3 UITLEG BIJ DE HANDELINGSWERKWOORDEN 
+
+BIJLAGE 4 STANDAARDFORMULES IN HET CENTRAAL EXAMEN  
+
+BEDRIJFSECONOMIE HAVO/VWO 
+
+BIJLAGE 5 VERANTWOORDING BIJ DE AANPASSINGEN IN DE SYLLABI  
+
+HAVO VANAF 2025 
+
+5 
+5 
+5 
+5 
+5 
+5 
+
+5 
+
+7 
+7 
+10 
+16 
+18 
+20 
+21 
+24 
+
+26 
+26 
+26 
+26 
+
+27 
+
+30 
+
+31 
+
+32 
+
+34 
+
+Pagina 2 van 44 
+
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+Toelichting bij de titel van de deze syllabus: 
+
+Deze syllabus havo kent één wijziging ten opzichte van de syllabus 2026. In bijlage 4 over 
+standaardformules op pagina 34 vervalt het onderdeel DuPont schema en is daarom doorgestreept. Deze 
+wijziging betreft overigens het vwo omdat het DuPont schema geen onderdeel was van de examenstof 
+voor havo. 
+
+Bedrijfseconomie is de vakbenaming voor het examenprogramma Bedrijfseconomie, ondernemerschap en 
+financiële zelfredzaamheid. Het advies voor dit vak is in oktober 2014 verschenen onder de titel: ‘Van 
+M&O naar Bedrijfseconomie, ondernemerschap en financiële zelfredzaamheid’. Zie hiervoor de toelichting 
+bij de regeling. 
+
+© 2025 College voor Toetsen en Examens, Utrecht 
+
+Alle rechten voorbehouden. Alles uit deze uitgave mag mits voorzien van een bronvermelding en zonder 
+enige wijziging worden verveelvoudigd, opgeslagen in een geautomatiseerd gegevensbestand, of 
+openbaar gemaakt, in enige vorm of op enige wijze, hetzij elektronisch, door fotokopieën, opnamen, of 
+enige andere manier zonder voorafgaande toestemming van het College. Het hergebruik van eventueel 
+auteursrechtelijk beschermd werk van derden in dit werk is niet nader geregeld door het CvTE.
+
+Pagina 3 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+VOORWOORD 
+De minister heeft de examenprogramma's op hoofdlijnen vastgesteld. In het examenprogramma zijn de 
+exameneenheden aangewezen waarover het centraal examen (CE) zich uitstrekt: het CE-deel van het 
+examenprogramma.  
+
+Het College voor Toetsen en Examens (CvTE) geeft in een syllabus, die jaarlijks verschijnt, een 
+toelichting op het CE-deel van het examenprogramma. Behalve een beschrijving van de exameneisen 
+voor een centraal examen kan een syllabus verdere informatie over het centraal examen bevatten. 
+Bijvoorbeeld over een of meer van de volgende onderwerpen: specificaties van examenstof, 
+begrippenlijsten, bekend veronderstelde onderdelen van domeinen of exameneenheden die verplicht zijn 
+op het schoolexamen, bekend veronderstelde voorkennis uit de onderbouw, bijzondere vormen van 
+examinering (zoals computerexamens), voorbeeldopgaven, toelichting op de vraagstelling, toegestane 
+hulpmiddelen. 
+
+De functie van een syllabus is een leraar in staat te stellen zich een goed beeld te vormen van wat in het 
+centraal examen wel en niet gevraagd kan worden. Naar zijn aard is een syllabus dus niet een volledig 
+gesloten en afgebakende beschrijving van alles wat op een examen zou kunnen voorkomen. Het is 
+mogelijk, al zal dat maar in beperkte mate voorkomen, dat op een CE ook iets aan de orde komt dat niet 
+met zo veel woorden in deze syllabus staat, maar dat naar het algemeen gevoelen in het verlengde 
+daarvan ligt. 
+
+Een syllabus is ook een hulpmiddel voor degenen die zichzelf op een centraal examen voorbereiden. Een 
+syllabus kan ook behulpzaam zijn voor de producenten van leermiddelen en voor nascholingsinstanties. 
+De syllabus is niet van belang voor het schoolexamen. Daarvoor zijn door de SLO handreikingen 
+geproduceerd die niet in deze uitgave zijn opgenomen. 
+
+Deze syllabus geldt voor het examenjaar 2027. Syllabi van eerdere jaren zijn niet meer geldig en kunnen 
+van deze versie afwijken. Voor het examenjaar 2028 wordt een nieuwe syllabus vastgesteld. 
+Het CvTE publiceert uitsluitend digitale versies van de syllabi. Dit gebeurt via Examenblad.nl 
+(www.examenblad.nl), de officiële website voor de examens in het voortgezet onderwijs. 
+In de syllabi 2027 zijn de wijzigingen ten opzichte van de vorige syllabus voor het examenjaar 2026 
+duidelijk zichtbaar. De veranderingen zijn geel gemarkeerd. Er zijn diverse vakken waarbij de syllabus 
+2027 geen inhoudelijke veranderingen heeft ondergaan.  
+
+Een syllabus kan ook tussentijds worden aangepast, bijvoorbeeld als een in de syllabus beschreven 
+situatie feitelijk veranderd is. De aan een centraal examen voorafgaande Septembermededeling is dan 
+het moment waarop dergelijke veranderingen bekendgemaakt worden. Kijkt u voor alle zekerheid 
+jaarlijks in september op Examenblad.nl. 
+
+Het CvTE stelt het aantal en de tijdsduur van de toetsen van het centraal examen vast en de wijze 
+waarop het centraal examen wordt afgenomen. Deze vaststelling wordt gepubliceerd in het rooster voor 
+de centrale examens en in de Septembermededeling. 
+
+Voor opmerkingen over syllabi houdt het CvTE zich steeds aanbevolen. U kunt die zenden aan 
+info@cvte.nl of aan CvTE, Postbus 315, 3500 AH Utrecht. 
+
+De voorzitter van het College voor Toetsen en Examens, 
+Drs. J.H. (John) van der Vegt MPM 
+
+Pagina 4 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+1 
+
+2 
+
+INLEIDING 
+
+EXAMENSTOF VAN CENTRAAL EXAMEN EN SCHOOLEXAMEN HAVO 
+Het examenprogramma bestaat uit de volgende domeinen: 
+Domein A 
+Domein B  
+Domein C  
+Domein D  
+Domein E  
+Domein F  
+Domein G  
+Domein H  
+
+Vaardigheden 
+Van persoon naar rechtspersoon 
+Interne organisatie en personeelsbeleid 
+Investeren en financieren 
+Marketing 
+Financieel beleid 
+Verslaggeving 
+Keuzeonderwerpen 
+
+Het centraal examen 
+Het centraal examen heeft betrekking op de (sub)domeinen A, B, C2, D2, E2, F en G 
+zoals hieronder nader uitgewerkt. 
+
+Tabel: 
+Toedeling van de examenstof bedrijfseconomie voor havo en vwo aan centraal examen en schoolexamen.   
+
+Domein 
+
+Subdomein 
+
+in CE 
+
+  in SE 
+
+A 
+
+Vaardigheden 
+
+B 
+
+Van persoon naar rechtspersoon 
+
+B1  Persoonlijke financiële 
+zelfredzaamheid 
+
+B2  De oprichting van een eenmanszaak 
+
+B3  Van eenmanszaak naar rechtspersoon 
+
+B4  Perspectief op de organisatie 
+
+C 
+
+Interne organisatie en 
+personeelsbeleid 
+
+C1 
+
+Interne organisatie 
+
+C2  Personeelsbeleid 
+
+D 
+
+Investeren en financieren 
+
+D1 
+
+Investeren 
+
+E  Marketing 
+
+D2  Financieren 
+
+E1  Doel en organisatie van 
+
+marketingactiviteiten 
+
+E2  Marketingbeleid 
+
+F 
+
+Financieel beheer 
+
+F1  Vastleggen van financiële en niet-
+
+financiële informatie 
+
+F2  Kosten- en winstvraagstukken 
+
+G 
+
+Verslaggeving 
+
+H 
+
+Keuzeonderwerpen 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+Het schoolexamen heeft betrekking op: 
+–  de domeinen en subdomeinen waarop het centraal examen geen betrekking heeft; 
+– 
+
+indien het bevoegd gezag daarvoor kiest: een of meer domeinen of subdomeinen waarop het centraal 
+examen betrekking heeft; 
+indien het bevoegd gezag daarvoor kiest: andere vakonderdelen, die per kandidaat kunnen 
+verschillen. 
+
+– 
+
+Pagina 5 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+SLO ontwikkelde een handreiking voor het schoolexamen. Deze is te vinden op www.slo.nl. 
+
+Pagina 6 van 44 
+
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+3 
+
+SPECIFICATIE VAN DE EINDTERMEN VOOR HET CE 
+
+3.1 
+
+DOMEIN A: VAARDIGHEDEN 
+
+Domein A wordt in combinatie met domein B, C2, D2, E2, F en G in het CE getoetst.  
+
+Subdomein A1: Informatievaardigheden gebruiken 
+1. De kandidaat kan doelgericht informatie zoeken, interpreteren, selecteren en verwerken. 
+
+Voor het centraal examen betekent dit dat de kandidaat in gegeven (bedrijfseconomische) contexten 
+relevante informatie moet kunnen analyseren en beoordelen. 
+
+In dat verband kan de kandidaat 
+
+1.1 
+
+in relatie tot een gegeven (onderzoeks)vraag informatie beoordelen en daarbij:  
+
+(a)  de informatiebehoefte noemen 
+
+(b)  beschikbare en relevante informatiebronnen analyseren 
+
+1.2 
+
+verworven en/of gegeven informatie vanuit een gegeven (onderzoeks)vraag 
+analyseren en daarbij: 
+
+(a)  informatie beoordelen op bruikbaarheid, betrouwbaarheid en representativiteit 
+
+(b)  informatie analyseren (eventueel rekenkundig), mede met behulp van ICT. 
+
+Subdomein A5: Onderzoeken 
+5. De kandidaat kan in contexten onderzoek op basis van vraagstellingen uitvoeren en conclusies trekken 
+uit de onderzoeksresultaten. De kandidaat maakt daarbij gebruik van consistente redeneringen en 
+relevante rekenkundige en wiskundige vaardigheden. 
+Voor het centraal examen gaat het daarbij om het analyseren en adviseren op basis van de resultaten 
+van een voorgestructureerd bedrijfseconomisch onderzoek. 
+
+In dat verband kan de kandidaat 
+
+5.1 
+
+verschillende typen (onderzoeks)vragen noemen en zelfstandig (onderzoeks)vragen 
+opstellen en daarbij onderscheid maken tussen: 
+
+– beschrijvende/beeldvormende (onderzoeks)vragen 
+
+– analytisch/verklarende (onderzoeks)vragen 
+
+– (onderzoeks)vragen met het oog op waardering/standpuntbepaling; 
+
+5.2 
+
+op basis van consistente redeneringen: 
+
+(a)  conclusies opstellen ten aanzien van een (onderzoeks)vraag en deze uitleggen. 
+
+(b)  een advies uitbrengen en dit uitleggen en daarbij: 
+
+– onderscheid maken tussen 
+
+a  - gegevens (data) en informatie 
+
+b  - feiten en meningen 
+
+c  - oorzaak en gevolg 
+
+d  - probleem en oplossing 
+
+– in het geding zijnde waarden noemen 
+
+– eigen opvattingen analyseren 
+
+– mogelijke consequenties van een standpunt beoordelen 
+
+– een beargumenteerd standpunt opstellen 
+
+Pagina 7 van 44 
+
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+5.3 
+
+berekeningen maken met behulp van relevante rekenkundige en grafische 
+vaardigheden, rekening houdend met: 
+
+(a)  verbale, grafische tabellarische en wiskundige/rekenkundige gegevens 
+
+analyseren, mede met gebruikmaking van ICT. 
+
+(b)  de gegevens rekenkundig en/of grafisch uitleggen: 
+
+–  basisrekenvaardigheden in bedrijfseconomische vraagstukken zoals : 
+
+1. rekenregels optellen, aftrekken, vermenigvuldigen, delen 
+
+2. positieve en negatieve getallen/breuken/decimalen 
+
+3. procenten, promillen en percentages 
+
+4. onderscheid procentuele verandering en procentpunt verandering 
+
+–  vergelijkingen, beschrijvende statistiek en grafieken in bedrijfseconomische 
+
+vraagstukken zoals: 
+
+1. werken met eerstegraadsvergelijkingen 
+
+2. werken met assenstelsels (X en Y) 
+
+3. waarden bepalen en grafieken tekenen en/of bewerken 
+
+4. berekeningen maken op basis van grafieken 
+
+5. indexcijfers  
+
+6. diagrammen 
+
+7. tabellen: rijen/kolommen 
+
+8. machten 
+
+9. gemiddelden: gewogen en ongewogen. 
+
+Subdomein A6: Benaderingswijzen 
+6. De kandidaat kan relevante bedrijfseconomische en organisatorische aspecten van een probleem 
+herkennen, zowel binnen een organisatie als in het persoonlijk leven. 
+
+Voor het centraal examen betekent dit het noemen van bedrijfseconomische en organisatorische 
+aspecten van een probleem, zowel binnen een organisatie als in het persoonlijk leven. 
+
+7. De kandidaat kan bij de oplossing van een bedrijfseconomisch of organisatorisch probleem een 
+bedrijfseconomische denkwijze gebruiken.  
+
+Voor het centraal examen betekent dit het opstellen van een bedrijfseconomische denkwijze bij de 
+oplossing van een bedrijfseconomisch of organisatorisch probleem. 
+
+8. De kandidaat kan bij veel voorkomende vraagstukken binnen een organisatie op het gebied van: 
+–  de interne organisatie en personeelsbeleid 
+–  de investeringen en financiering 
+–  het marketingbeleid 
+–  het financieel beleid 
+–  de verslaggeving 
+de bedrijfseconomische en organisatorische dimensie vanuit het perspectief van het management 
+toepassen en analyseren.  
+
+Voor het centraal examen betekent dit het analyseren en beoordelen van de bedrijfseconomische en 
+organisatorische dimensie van deze vraagstukken. 
+
+Pagina 8 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+9. De kandidaat kan bedrijfseconomische en organisatorische perspectieven en daaruit voortvloeiende 
+belangen onderkennen van de diverse betrokkenen bij de organisatie. 
+
+Voor het centraal examen betekent dit dat de kandidaat deze perspectieven en belangen kan noemen. 
+
+In dat verband kan de kandidaat 
+
+9.1 
+
+9.2 
+
+bedrijfseconomische perspectieven noemen die de diverse betrokkenen bij de organisatie 
+kunnen hebben; 
+
+bedrijfseconomische belangen noemen die uit de verschillende perspectieven kunnen 
+voortvloeien. 
+
+10. De kandidaat kan: 
+–  bedrijfseconomische werkwijzen toepassen; 
+–  bedrijfseconomische begrippen gebruiken; 
+–  bedrijfseconomische grootheden gebruiken; 
+–  bedrijfseconomische relaties analyseren. 
+
+Voor het centraal examen gaat het daarbij om het toepassen van bedrijfseconomische werkwijzen, het 
+gebruiken van bedrijfseconomische begrippen en grootheden en het analyseren van bedrijfseconomische 
+relaties.  
+
+Pagina 9 van 44 
+
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+3.2 
+
+DOMEIN B: VAN PERSOON NAAR RECHTSPERSOON 
+
+De kandidaat kan (maatschappelijke) vraagstukken met persoonlijke financiële  
+consequenties herkennen en financieel onderbouwde keuzes maken. Hij kan  
+kenmerken van verschillende rechtsvormen beschrijven en, in het bijzonder, het proces  
+voor en rond de oprichting van een eenmanszaak beschrijven en de rol van de  
+ondernemer beoordelen. 
+
+Subdomein B1: Persoonlijke financiële zelfredzaamheid 
+11. De kandidaat kan vraagstukken met persoonlijke financiële consequenties herkennen en (financieel) 
+onderbouwde keuzes maken. 
+
+Voor het centraal examen betekent dit dat de kandidaat de financiële consequenties van keuzes bij 
+persoonlijke vraagstukken kan onderbouwen. 
+
+In dat verband kan de kandidaat  
+
+11.1 
+
+Bij de keuze voor een opleiding (niet-)financiële overwegingen uitleggen als  
+
+−  een opleiding is een investeringsvraagstuk;  
+
+−  het belang van een opleiding voor het individu en voor de samenleving.  
+
+11.2 
+
+financiële keuzes met betrekking tot verzekeren, lenen, sparen en beleggen 
+uitleggen en berekenen.  
+
+11.2.1 de voor- en nadelen van zich wel of niet verzekeren uitleggen. 
+
+11.2.2 de verschillen tussen een levensverzekering en een schadeverzekering 
+noemen.  
+
+11.2.3 de verschillen tussen consumptief krediet en hypothecair krediet noemen.  
+
+11.2.4 de financiële gevolgen van krediet voor de kredietnemer, noemen. 
+
+11.2.5 de periodieke interestbedragen, de periodieke aflossingsbedragen en de 
+schuldrest bij de vormen van consumptief krediet en hypothecair krediet    
+berekenen.  
+
+11.2.6 de verschillen tussen enkelvoudige en samengestelde interest uitleggen.  
+
+11.2.7 de interest op basis van enkelvoudige interest berekenen. 
+
+11.2.8 de contante waarde en de eindwaarde van een kapitaal berekenen op basis 
+van samengestelde interest 
+
+11.2.9 de verschillende vrijwillige spaarvormen als vrij opneembaar en niet vrij 
+opneembaar noemen.  
+
+11.2.10 de vermogenstitels waarin belegd kan worden zoals aandelen en obligaties 
+noemen. 
+
+11.2.11 de verschillen in risico en rendement tussen de aandelen, obligaties en 
+beleggingsfondsen uitleggen. 
+
+Belangrijkste 
+begrippen 
+
+• 
+
+• 
+
+verzekeren 
+
+lenen 
+
+• 
+
+• 
+
+consumptief krediet 
+
+o  persoonlijke lening 
+o  koop op afbetaling 
+
+Pagina 10 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+In dat verband kan de kandidaat  
+
+• 
+
+sparen 
+
+• 
+
+beleggen 
+
+o  huurkoop 
+o  private lease 
+o  doorlopend krediet 
+
+hypothecair krediet 
+interest- en aflossingsverplichtingen 
+financiële gevolgen 
+enkelvoudige en samengestelde interest 
+contante waarde 
+eindwaarde 
+
+aandelen 
+obligaties 
+beleggingsfondsen 
+effectenbeurs 
+koersverloop 
+
+• 
+• 
+• 
+• 
+• 
+• 
+
+• 
+• 
+• 
+• 
+• 
+
+11.3 
+
+de financiële gevolgen van de keuze voor het huren of kopen van een woonhuis 
+financieel uitleggen en berekenen. 
+
+11.3.1 de voor- en nadelen van huren vergeleken met kopen noemen.  
+
+11.3.2 de functie van de verschillende partijen op de hypotheekmarkt noemen. 
+
+11.3.3 de vormen van hypothecaire lening krediet: lineaire lening hypotheek en 
+annuïteitenlening noemen. 
+
+11.3.4 de interest- en aflossingsverplichting van de in 11.3.3 genoemde 
+hypotheekvormen voor de hypotheek gever noemen en berekenen.  
+
+11.3.5 de voor en nadelen, inclusief de fiscale, van de in 11.3.3 genoemde 
+hypotheekvormen voor de hypotheekgever uitleggen en berekenen. 
+
+Belangrijkste 
+begrippen 
+
+• 
+• 
+• 
+
+huren 
+kopen 
+
+partijen op hypotheekmarkt 
+
+• 
+
+hypothecaire lening krediet 
+
+hypotheeknemer 
+hypotheekgever 
+hypotheekadviseur 
+
+• 
+• 
+• 
+•  makelaar 
+notaris 
+• 
+lineaire lening 
+• 
+annuïteiten lening  
+• 
+recht van hypotheek 
+• 
+interestkosten 
+• 
+aflossingsbedrag 
+• 
+
+11.4 
+
+de financiële en wettelijke consequenties van samenwonen, trouwen en scheiden 
+noemen en berekenen. 
+
+11.4.1 de verschillen tussen “huwelijkse voorwaarden” / 
+“partnerschapsvoorwaarden”, “gemeenschap van goederen” en “in beperkte 
+gemeenschap van goederen” noemen.  
+
+11.4.2 de financiële consequenties van scheiden op het gebied van 
+scheidingsprocedure, partnerpensioenrechten, kinderalimentatie en 
+partneralimentatie noemen, gegeven de inhoud van de wet. 
+
+Belangrijkste 
+begrippen 
+
+• 
+
+• 
+
+samenwonen zonder 
+samenlevingscontract 
+samenwonen met 
+samenlevingscontract 
+
+Pagina 11 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+In dat verband kan de kandidaat  
+
+• 
+• 
+
+trouwen 
+geregistreerd partnerschap 
+
+• 
+
+scheiden 
+
+• 
+
+• 
+
+• 
+• 
+
+in (beperkte) gemeenschap van 
+goederen 
+op huwelijkse voorwaarden/ 
+partnerschapsvoorwaarden 
+partnerpensioenrechten 
+alimentatie 
+
+Subdomein B1 
+
+gekoppeld aan 
+
+11.2 
+
+D2 
+
+18 en 19 
+
+Pagina 12 van 44 
+
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+Subdomein B2: De oprichting van een eenmanszaak 
+12. De kandidaat kan het proces voor en rond de oprichting van een eenmanszaak beschrijven en in de 
+rol van ondernemer toepassen. 
+
+Voor het centraal examen betekent dit het uitleggen van het proces rond de oprichting van een 
+eenmanszaak en het beoordelen van de rol (en de keuzes) van de ondernemer hierin. 
+
+In dat verband kan de kandidaat 
+
+12.1 
+
+12.2 
+
+12.3 
+
+de voor- en nadelen van een arbeidsrelatie versus zelfstandig ondernemerschap 
+beoordelen.  
+
+de rol van de ondernemer bij het (creatieve) proces voor de oprichting van een 
+eenmanszaak uitleggen.  
+
+in de rol van ondernemer de verschillende onderdelen van een ondernemingsplan 
+opstellen. 
+
+12.3.1 een persoonlijk plan opstellen. 
+
+12.3.2 een marketingplan opstellen. 
+
+12.3.3 een financieel plan opstellen. 
+
+• 
+
+persoonlijk plan 
+
+Belangrijkste 
+begrippen 
+
+•  marketingplan 
+
+• 
+
+financieel plan 
+
+persoonlijke gegevens 
+persoonlijke motieven 
+persoonlijke kwaliteiten 
+
+• 
+• 
+• 
+•  marketingmix 
+•  marketingdoelstellingen 
+• 
+• 
+• 
+• 
+• 
+• 
+
+doelgroepen 
+concurrentie 
+investeringsbegroting 
+financieringsbegroting 
+exploitatiebegroting 
+liquiditeitsbegroting 
+
+12.4 
+
+de verschillende verplichtingen met betrekking tot de oprichting van een startende 
+eenmanszaak door een ondernemer noemen. 
+
+Belangrijkste 
+begrippen 
+
+• 
+
+oprichtingsverplichtingen 
+
+• 
+
+• 
+
+inschrijving bij Kamer van 
+Koophandel 
+vergunningen 
+
+Subdomein B2 
+
+gekoppeld aan 
+
+12.1 
+
+12.3.2 
+
+12.3.3 
+
+C2 
+
+E2 
+
+D2 
+
+F1 
+
+F2 
+
+16 
+
+22 
+
+18 
+
+23 
+
+25 
+
+Pagina 13 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+Subdomein B3: Van eenmanszaak naar rechtspersoon 
+13. De kandidaat kan de belangrijkste kenmerken van verschillende rechtsvormen beschrijven. 
+
+Voor het centraal examen betekent dit dat de kandidaat de verschillende rechtsvormen kan uitleggen 
+beschrijven. Aan de hand van de kenmerken kan de kandidaat bepalen welke rechtsvorm voor een 
+organisatie geschikt is en wat de consequenties van deze keuze zijn voor de organisatie. 
+
+In dat verband kan de kandidaat 
+
+13.1 
+
+De rol van ondernemer en/of de bestuurder bij de bepaling van de geschikte 
+rechtsvorm voor de eigen organisatie uitleggen 
+
+13.1.1 de verschillen tussen natuurlijk persoon en rechtspersoon uitleggen. 
+
+13.1.2 de verschillen uitleggen tussen een commerciële en een niet-commerciële 
+organisatie 
+
+13.1.3 de kenmerken van de rechtsvormen eenmanszaak, vennootschap onder 
+firma,  besloten vennootschap, naamloze vennootschap, stichting en vereniging 
+noemen met betrekking tot: 
+
+•  continuïteit,  
+
+•  financiering,  
+
+•  juridische aansprakelijkheid,  
+
+•  belastingen,  
+
+•  leiding, besluitvorming en zeggenschap. 
+
+13.1.4 de keuze voor een bepaalde rechtsvorm uitleggen. 
+
+13.1.5 de bevoegdheden van de organen binnen een organisatie: bestuur, raad van 
+commissarissen, raad van toezicht, ondernemingsraad, medezeggenschapsraad, 
+algemene ledenvergadering en algemene vergadering van aandeelhouders noemen. 
+
+13.1.6 de redenen tot het beëindigen van een organisatie uitleggen. 
+
+13.1.7 de gevolgen van een faillissement voor de stakeholders uitleggen. 
+
+• 
+
+rechtsvorm 
+
+• 
+
+natuurlijk persoon 
+
+o  eenmanszaak 
+o  vennootschap onder firma (openbare 
+
+Belangrijkste 
+begrippen 
+
+vennootschap) 
+
+• 
+
+rechtspersoon 
+
+o  besloten vennootschap 
+o  naamloze vennootschap 
+o  stichting 
+o  vereniging 
+
+• 
+
+organen binnen 
+organisatie 
+
+• 
+
+beëindigen 
+organisatie 
+
+bestuur 
+raad van commissarissen 
+raad van toezicht 
+ondernemingsraad 
+
+• 
+• 
+• 
+• 
+•  medezeggensschapsraad 
+• 
+• 
+• 
+• 
+
+algemene ledenvergadering 
+algemene vergadering van aandeelhouders 
+faillissement 
+zonder bedrijfsopvolging/verkoop 
+
+Subdomein B3 
+
+gekoppeld aan 
+
+13.1.5 
+
+G 
+
+26 
+
+Pagina 14 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+13.1.6 
+
+G 
+
+26 
+
+Subdomein B4: Perspectief op de organisatie 
+14. De kandidaat kan de plaats van de organisatie in de maatschappij beschrijven. 
+
+Voor het centraal examen betekent dit dat de kandidaat de rol en de plaats van de organisatie in de 
+maatschappij kan uitleggen. 
+
+In dat verband kan de kandidaat 
+
+14.1 
+
+het bestaansrecht van een organisatie uitleggen. 
+
+14.1.1 uitleggen in welke maatschappelijke behoeften de organisatie voorziet. 
+
+14.1.2 de betekenis van maatschappelijk verantwoord ondernemen (MVO) op een 
+organisatie uitleggen. 
+
+Belangrijkste 
+begrippen 
+
+•  maatschappelijke 
+
+behoeften 
+
+•  MVO 
+
+• 
+
+• 
+
+innovatie 
+belastingopbrengsten 
+inkomen 
+
+product of dienst 
+• 
+•  werkgelegenheid 
+• 
+• 
+• 
+•  milieu 
+• 
+• 
+• 
+
+sociale vraagstukken 
+people, planet, profit 
+
+• 
+
+Subdomein B4 
+
+gekoppeld aan 
+
+14.1.2 
+
+F1 
+
+24 
+
+Pagina 15 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+3.3 
+
+DOMEIN C: INTERNE ORGANISATIE EN PERSONEELSBELEID 
+
+De kandidaat kan de interne organisatie van een organisatie beschrijven en deze  
+relateren aan de doelstelling en aard van de organisatie. Hij kan personeelsbeleid  
+beschrijven en daarbij de relatie leggen met de doelstelling en de aard van de  
+organisatie. 
+
+Subdomein C2: Personeelsbeleid 
+16. De kandidaat kan personeelsbeleid/HRM beschrijven en daarbij de relatie leggen met de doelstelling 
+en de aard van de organisatie. 
+
+Voor het centraal examen betekent dit dat de kandidaat met behulp van concrete voorbeelden het 
+personeelsbeleid van een organisatie kan uitleggen evenals de relatie van dat personeelsbeleid met de 
+doelstelling en de aard van de organisatie, inclusief de relevante wet- en regelgeving. Daarbij kan de 
+leerling keuzes maken in belangrijke aspecten van personeelsbeleid, uitgaande van een bepaalde 
+gegeven personeelsbehoefte, het werven, selecteren en aannemen van personeel en het behouden, 
+motiveren, (bij-) scholen of eventueel afscheid nemen van personeel. 
+
+In dat verband kan de kandidaat 
+
+16.1 
+
+16.2 
+
+16.3 
+
+16.4 
+
+16.5 
+
+16.6 
+
+De betekenis van werving en selectie van personeel uitleggen in relatie tot de 
+doelstelling en de aard van de organisatie 
+
+de verschillende vormen van een arbeidsrelatie voor een organisatie noemen. 
+
+de verschillen tussen de overeenkomst van opdracht voor een ZZP’er en een 
+individuele arbeidsovereenkomst uitleggen. 
+
+de belangrijkste vormen van en voorwaarden aan een individuele 
+arbeidsovereenkomst noemen.  
+
+de verschillen tussen een cao en een individuele arbeidsovereenkomst noemen.  
+
+de gevolgen van wetgeving met betrekking tot ontslagrecht en Arbo voor de 
+organisatie uitleggen. 
+
+16.7 
+
+beloningsvormen noemen.  
+
+Belangrijkste 
+begrippen 
+
+• 
+
+arbeidsrelatie 
+
+• 
+• 
+
+•  werven en selecteren 
+
+• 
+
+• 
+
+voorwaarden aan individuele 
+arbeidsovereenkomst 
+
+vormen van individuele 
+arbeidsovereenkomst 
+
+• 
+
+ontslag wetgeving 
+
+• 
+
+collectieve 
+arbeidsovereenkomst 
+
+individuele arbeidsovereenkomst 
+zzp / freelance  / overeenkomst van 
+opdracht 
+personeelsbehoefte 
+functieprofielen 
+functiewaardering 
+sollicitatieprocedure 
+vacatures 
+gezagsverhouding 
+arbeidsverplichting 
+loon 
+voor onbepaalde tijd 
+voor bepaalde tijd 
+oproepcontract 
+ontslagrecht 
+arbowetgeving 
+ontslaggronden  
+transitievergoeding 
+ondernemingsraad 
+vakbond 
+
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+•  werknemersorganisatie 
+
+Pagina 16 van 44 
+
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+• 
+
+beloningsvormen 
+
+•  werkgeversorganisatie 
+• 
+• 
+• 
+•  mogelijk tot professionele ontwikkeling 
+
+in geld 
+in aandelen 
+carrièreperspectief 
+
+Pagina 17 van 44 
+
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+3.4 
+
+DOMEIN D: INVESTEREN EN FINANCIEREN  
+
+De kandidaat kan bij een investeringsvraagstuk noemen welke gegevens relevant zijn, uitleggen of een 
+investering economisch zinvol is en hierbij verschillende investeringsselectiemethoden analyseren en 
+beoordelen. Hij kan vanuit het perspectief van een organisatie de werking van de vermogensmarkt 
+uitleggen. De kandidaat kan in de context van een financieringsvraagstuk de redenen voor het 
+aantrekken van verschillende types vermogen noemen en uitleggen welke risico’s financiering met 
+vreemd vermogen met zich meebrengen.  
+
+Subdomein D2: Financieren 
+18. De kandidaat kan vanuit het perspectief van een organisatie de werking van de vermogensmarkt 
+beschrijven. 
+
+Voor het centraal examen betekent dit:  
+
+18.1.  dat de kandidaat de verschillende financieringsmogelijkheden voor een startende 
+
+eenmanszaak/vof kan begrijpen analyseren. 
+
+In dat verband kan de kandidaat 
+
+18.1.1 
+
+verschillende financieringsmogelijkheden wijzen in geval van startende 
+eenmanszaak/vof uitleggen noemen onderneming. 
+
+Belangrijkste 
+begrippen 
+
+• 
+
+Financieringsmogelijkheden 
+wijzen 
+
+• eigen middelen inbreng 
+• lening via banken 
+• crowdfunding 
+• lening overige vermogensverschaffers 
+
+18.2.   dat de kandidaat de verschillende financieringsmogelijkheden voor een bv en nv kan begrijpen. 
+
+vanuit het perspectief van een organisatie de werking van de vermogensmarkt kan uitleggen 
+
+In dat verband kan de kandidaat 
+
+18.2.1 
+
+verschillende financieringsmogelijkheden in geval van bv en nv uitleggen. 
+
+18.2.2 
+
+het belang van de vermogensmarkt voor een onderneming uitleggen 
+
+18.2.3 
+
+de belangrijkste toezichthouders op de vermogensmarkt noemen en hun rol in de 
+financiële sector uitleggen. 
+
+Belangrijkste 
+begrippen 
+
+• 
+
+financieringsmogelijkheden 
+
+• 
+
+• 
+
+vermogensmarkt 
+
+• 
+
+openbaar en onderhands vermogen 
+
+toezichthouders 
+
+•  Autoriteit Financiële Markten (AFM)  
+•  De Nederlandsche Bank (DNB)  
+•  Autoriteit Consument & Markt (ACM) 
+
+Pagina 18 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+19. De kandidaat kan in de context van een financieringsvraagstuk de redenen voor het aantrekken van 
+verschillende types vermogen onderscheiden. 
+
+Voor het centraal examen betekent dit dat de kandidaat in de context van een financieringsvraagstuk 
+vanuit het perspectief van een organisatie de keuze  voor een financieringsmogelijkheid kan uitleggen. 
+
+In dat verband kan de kandidaat  
+
+19.1 
+
+19.2 
+
+19.3 
+
+19.4 
+
+19.5 
+
+Belangrijkste 
+begrippen 
+
+de verschillen tussen beurskoers en emissiekoers uitleggen. 
+
+de invloed van het beursklimaat, de beurskoers en de toekomstverwachting op de 
+emissiekoers uitleggen. 
+
+de verschillen tussen de vormen van lang vreemd vermogen, i.c. hypothecaire lening, 
+obligatielening en onderhandse lening noemen.  
+
+de verschillen tussen vormen van kort vreemd vermogen, i.c. rekening-courant 
+krediet, leverancierskrediet en afnemerskrediet noemen.  
+
+de voor- en nadelen van de verschillende financieringsmogelijkheden voor de 
+organisatie die vermogen wil aantrekken uitleggen. 
+
+• 
+• 
+
+• 
+
+• 
+
+aandelenkapitaal 
+aandeel 
+
+lang vreemd 
+vermogen 
+
+kort vreemd 
+vermogen 
+
+• 
+• 
+• 
+
+• 
+• 
+• 
+• 
+• 
+• 
+
+emissiekoers  
+beurskoers  
+
+hypothecaire lening 
+onderhandse lening 
+obligatielening 
+rekening-courantkrediet 
+leverancierskrediet  
+afnemerskrediet 
+
+20. De kandidaat kan onderkennen welke risico’s financiering met vreemd vermogen met zich meebrengt. 
+
+Voor het centraal examen betekent dit dat de kandidaat kan analyseren welke risico’s financiering met 
+vreemd vermogen met zich meebrengt. 
+
+In dat verband kan de kandidaat  
+
+20.1 
+
+de gevolgen van de verhouding tussen eigen vermogen/vreemd vermogen voor het 
+interestpercentage op vreemd vermogen en het faillissementsrisico analyseren. 
+
+20.2 
+
+de voorwaarden die vermogensverschaffers stellen uitleggen 
+
+Belangrijkste 
+begrippen 
+
+• 
+• 
+• 
+• 
+
+rendementseis 
+solvabiliteiteis  
+liquiditeitseis 
+onderpand 
+
+Pagina 19 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+3.5 
+
+DOMEIN E: MARKETING  
+
+De kandidaat kan verklaren wat marketing inhoudt, kan marketingdoelstellingen uitleggen, en kan 
+uitleggen op welke wijze deze doelen gerealiseerd kunnen worden en de gevolgen beschrijven van 
+marketing voor  de consument en de maatschappij.  
+
+Subdomein E2: Marketingbeleid 
+22. De kandidaat kan het marketingbeleid van een organisatie beschrijven. 
+
+Voor het centraal examen betekent dit dat de kandidaat de marketingbesluiten van een bedrijf kan 
+beoordelen in relatie tot de realisatie van de beoogde marketingdoelstellingen met als vertrekpunt de 
+specifieke oplossing die een product biedt voor de klanten.  
+
+In dat verband kan de kandidaat 
+
+22.1 
+
+22.2  
+
+22.3  
+
+Belangrijkste 
+begrippen 
+
+ de marketingdoelstellingen in relatie tot de ondernemingsdoelstelling 
+uitleggen. 
+
+de vier instrumenten van de marketingmix noemen.  
+
+ de samenhang tussen de marketinginstrumenten uitleggen in relatie tot de 
+beoogde marketingdoelstelling. 
+
+•  marketingdoelstellingen 
+
+•  marktpositie 
+
+•  Marktomvang 
+
+•  marketingmix 
+instrumenten 
+
+• 
+
+productbeleid 
+
+• 
+
+prijsbeleid 
+
+• 
+
+plaatsbeleid 
+
+• 
+
+promotiebeleid 
+
+•  markt creëren 
+
+•  marktaandeel 
+
+• 
+
+• 
+
+• 
+
+klantbehoud 
+
+absoluut 
+
+relatief 
+
+•  marktaandeel 
+
+• 
+• 
+• 
+• 
+• 
+
+productbeleid 
+prijsbeleid 
+plaatsbeleid 
+promotiebeleid 
+soort en type product (materieel / 
+immaterieel) 
+kwaliteit van de producten 
+assortimentsgrootte (breed, diep) 
+
+• 
+• 
+•  merken 
+• 
+• 
+• 
+• 
+• 
+• 
+
+verpakking 
+service en garantie 
+afroompolitiek 
+penetratiepolitiek 
+psychologische prijzen 
+fysieke winkels en/of online 
+
+• 
+• 
+
+reclame  
+rol van social media  
+
+Pagina 20 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+3.6 
+
+DOMEIN F: FINANCIEEL BELEID  
+
+De kandidaat kan financiële feiten inventariseren en financiële overzichten opstellen. Hij kan financiële en 
+niet-financiële informatie analyseren en het belang van beide uitleggen voor het besturen van de 
+organisatie. Hij kan voor een dienstenonderneming, die soms ook producten inkoopt en verkoopt, de 
+verschillende kostensoorten noemen, het resultaat berekenen en de verschillen analyseren.  
+
+Subdomein F1: Vastleggen van financiële en niet-financiële informatie 
+23. De kandidaat kan financiële feiten inventariseren en verwerken tot financiële overzichten. 
+
+Voor het centraal examen betekent dit dat de kandidaat financiële overzichten kan opstellen en 
+analyseren. 
+
+In dat verband kan de kandidaat 
+
+23.1 
+
+de gevolgen van financiële feiten voor de balans en winst- en verliesrekening 
+analyseren. 
+
+NB 1 De kandidaat hoeft geen journaalposten op te stellen 
+
+NB 2 de kandidaat hoeft de gevolgen van financiële feiten voor overlopende posten 
+niet te analyseren. 
+
+de kosten op basis van gegeven uitgaven en de opbrengsten op basis van gegeven 
+ontvangsten en vice versa, berekenen ten dienste van de resultaat berekening 
+(periode toerekeningsstelsel). 
+
+het onderscheid uitleggen tussen het periodetoerekeningstelsel en het kasstelsel. 
+
+een beginbalans, een liquiditeitsbegroting, een exploitatiebegroting en een 
+geprognosticeerde eindbalans ten dienste van de interne verslaggeving opstellen. 
+
+de samenhang uitleggen tussen een exploitatiebegroting, een geprognosticeerde 
+eindbalans en een liquiditeitsbegroting gegeven de beginbalans. 
+
+23.2 
+
+23.3 
+
+23.4 
+
+23.5 
+
+Belangrijkste 
+begrippen 
+
+ financiële feiten 
+
+• 
+
+• 
+
+inkoop (en ontvangst) van goederen en diensten 
+(contant en op rekening)  
+verkoop (en aflevering) van goederen en diensten 
+(contant en op rekening) 
+aflossen van schulden 
+interest op schulden 
+afschrijving (op basis van aanschafwaarde) 
+
+• 
+• 
+• 
+•  btw aangifte verrekening 
+•  privéontvangsten en -uitgaven  
+•  overige ontvangsten per kas en bank 
+•  overige uitgaven per kas en bank 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+
+beginbalans 
+liquiditeitsbegroting 
+exploitatiebegroting 
+geprognosticeerde eindbalans 
+winst- en verliesrekening 
+gerealiseerde balans 
+overzicht ontvangsten en uitgaven 
+nog te betalen bedragen 
+nog te ontvangen bedragen 
+vooruit betaalde bedragen 
+vooruit ontvangen bedragen 
+
+Pagina 21 van 44 
+
+ financiële overzichten 
+
+ overlopende posten 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+• 
+
+• 
+
+periodetoerekenings
+telsel  
+kasstelsel 
+
+• 
+• 
+• 
+• 
+
+ontvangsten 
+opbrengsten 
+uitgaven 
+kosten 
+
+24. De kandidaat kan financiële en niet-financiële informatie onderscheiden en het belang van beide 
+uitleggen voor het besturen van de organisatie. 
+
+Voor het centraal examen betekent dit dat de kandidaat kan aangeven welke financiële en niet-financiële 
+informatiebehoefte voor het management van belang is om het functioneren van een organisatie te 
+analyseren.  
+
+In dat verband kan de kandidaat 
+
+24.1 
+
+de verschillen tussen financiële informatie en niet-financiële informatie uitleggen 
+
+Belangrijkste 
+begrippen 
+
+ niet-financiële informatie 
+
+innovatiekracht 
+• 
+•  personeelsverloop 
+ziekteverzuim 
+• 
+klanttevredenheid 
+• 
+imago 
+• 
+leveringstermijn 
+• 
+leveringsbetrouwbaarheid 
+• 
+•  dataveiligheid  
+•  werkgelegenheid 
+•  diversiteit en inclusie 
+
+Pagina 22 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+Subdomein F2: Kosten- en winstvraagstukken 
+25. De kandidaat kan voor een dienstverlenende onderneming de verschillende kostensoorten 
+onderscheiden, de winst bepalen en verschillen verklaren. 
+
+Voor het centraal examen betekent dit dat de kandidaat voor een dienstenonderneming, die soms ook 
+producten inkoopt en verkoopt, het behaalde resultaat / de winst1 kan vaststellen. 
+
+In dat verband kan de kandidaat 
+
+25.1 
+
+25.2 
+
+25.3 
+
+25.4 
+
+25.5 
+
+25.6 
+
+25.7 
+
+de omzet berekenen op basis van een gegeven verkoopprijs. 
+
+uitleggen wat de verschillen zijn tussen constante en variabele kosten. 
+
+de break-even afzet en de break-even omzet berekenen en grafisch toepassen.  
+
+berekenen hoe groot de verkoopprijs inclusief btw is bij een bekend zijnde 
+verkoopprijs exclusief btw en vice versa. 
+
+het begrote resultaat voor en na winstbelastingen berekenen   
+
+het gerealiseerde resultaat voor en na winstbelastingen berekenen   
+
+de invloed van een verandering van de prijzen, hoeveelheden en kosten op het 
+resultaat berekenen. 
+
+25.8 
+
+De resultaatverdeling/winstverdeling opstellen. 
+
+Belangrijkste 
+begrippen 
+
+• 
+• 
+• 
+• 
+
+• 
+• 
+
+• 
+• 
+• 
+
+opbrengsten 
+constante kosten 
+variabele kosten 
+btw 
+
+break even omzet 
+break even afzet* 
+
+resultaat voor winstbelasting 
+resultaat na winstbelasting 
+resultaatverdeling/ 
+winstverdeling 
+
+• 
+• 
+
+omzet 
+proportionele variabele kosten  
+
+te vorderen btw 
+te betalen btw 
+afzet 
+verkoopprijs 
+dekkingsbijdrage per product 
+vennootschapsbelasting 
+inkomstenbelasting 
+resultaat voor winstbelasting 
+dividend in euro’s 
+dividendbelasting 
+
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+•  winst reservering van het resultaat 
+
+1 In de syllabus worden ‘winst’ en ‘resultaat’ als synoniemen gezien. In de centrale examens wordt ‘resultaat’ gebruikt. 
+
+Pagina 23 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+3.7 
+
+DOMEIN G: VERSLAGGEVING 
+
+De kandidaat kan een eenvoudige jaarrekening van een organisatie analyseren. 
+
+26. De kandidaat kan de jaarrekening van een eenvoudige organisatie (zoals een MKB-bedrijf) 
+interpreteren en uitleggen. 
+
+Voor het centraal examen betekent dit dat de kandidaat op basis van de analyse van een eenvoudige 
+jaarrekening tot besluitvorming kan komen vanuit het perspectief van derden, bijvoorbeeld beleggers, 
+banken en investeerders. 
+
+In dat verband kan de kandidaat  
+
+26.1 
+
+26.2 
+
+26.3 
+
+26.4 
+
+26.5 
+
+uitleggen wat de verschillende posten op de balans en winst- en verliesrekening van de 
+jaarrekening inhouden. 
+
+uitleggen welke voor- en nadelen zijn verbonden van het hanteren van kengetallen.  
+Financiële kengetallen ter beoordeling van de onderneming door de stakeholder 
+berekenen: 
+
+- 
+- 
+- 
+
+   liquiditeitsratio’s: current ratio, quick ratio 
+   solvabiliteitsratio’s: EV/VV, VV/TV 
+   rentabiliteitsratio’s: REV, RTV, IVV 
+
+de ontwikkeling van de organisatie op het terrein van liquiditeit, solvabiliteit en 
+rentabiliteit aan de hand van kengetallen van twee opeenvolgende balansen en/of 
+winst- en verliesrekeningen- analyseren 
+
+de betekenis van de accountantsverklaring en de rol van de externe accountant in het 
+maatschappelijk verkeer uitleggen.  
+
+Belangrijkste 
+begrippen 
+
+• 
+
+jaarverslag  
+
+• 
+
+• 
+
+• 
+
+jaarrekening 
+
+vaste activa 
+
+vlottende activa 
+
+•  bestuursverslag 
+jaarrekening 
+• 
+accountantsverklaring 
+• 
+•  balans 
+•  winst- en verliesrekening 
+• 
+
+vaste activa 
+
+voorraad 
+
+• 
+•  debiteuren 
+• 
+• 
+• 
+
+overlopende posten 
+liquide middelen 
+te vorderen btw 
+
+• 
+
+eigen vermogen 
+
+• 
+
+lang vreemd vermogen 
+
+• 
+
+kort vreemd vermogen 
+
+•  winst- en 
+
+verliesrekening   
+
+• 
+• 
+• 
+
+eigen vermogen (bij eenmanszaak) 
+vermogen firmant (bij vof) 
+aandelenkapitaal, reserves en  resultaat (bij bv en 
+nv) 
+
+•  hypothecaire lening 
+onderhandse lening 
+• 
+obligatielening 
+• 
+crediteuren 
+• 
+rekening-courantkrediet 
+• 
+overlopende posten 
+• 
+te betalen btw 
+• 
+af te dragen btw 
+• 
+omzet 
+• 
+kosten 
+• 
+resultaat 
+• 
+
+Pagina 24 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+In dat verband kan de kandidaat  
+
+• 
+
+financiële kengetallen 
+
+• 
+
+liquiditeitsratio 
+
+o  current ratio 
+o  quick ratio 
+
+• 
+
+solvabiliteitsratio 
+
+o  EV/VV 
+o  VV/TV 
+
+• 
+
+rentabiliteitsratio 
+
+o  REV 
+o  RTV 
+o 
+IVV 
+
+• 
+
+belanghebbenden 
+
+• 
+
+• 
+
+controleverklaring van 
+de accountant 
+stakeholders 
+
+Pagina 25 van 44 
+
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+4 
+
+HET CENTRAAL EXAMEN 
+
+4.1 
+
+4.2 
+
+ZITTINGEN 
+Raadpleeg hiervoor Het Examenblad, www.examenblad.nl 
+
+VAKSPECIFIEKE REGELS CORRECTIEVOORSCHRIFT 
+Voor dit examen is de volgende vakspecifieke regel vastgesteld: voor rekenfouten worden geen punten 
+afgetrokken. Wanneer echter de kandidaat bij een berekening kennelijk verzuimd heeft door schatting 
+controle op het antwoord uit te oefenen, wordt voor deze fouten 1 punt afgetrokken tot een maximum 
+van 2 punten per opgave.  
+
+4.3 
+
+HULPMIDDELEN 
+Raadpleeg hiervoor Het Examenblad, www.examenblad.nl 
+
+Pagina 26 van 44 
+
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+BIJLAGE 1 EXAMENPROGRAMMA BEDRIJFSECONOMIE, ONDERNEMERSCHAP 
+EN FINANCIËLE ZELFREDZAAMHEID HAVO 
+
+Het eindexamen 
+Het eindexamen bestaat uit het centraal examen en het schoolexamen. 
+Het examenprogramma bestaat uit de volgende domeinen: 
+Domein A 
+Domein B 
+Domein C 
+Domein D 
+Domein E 
+Domein F 
+Domein G 
+Domein H 
+
+Vaardigheden 
+Van persoon naar rechtspersoon 
+Interne organisatie en personeelsbeleid 
+Investeren en financieren 
+Marketing 
+Financieel beleid 
+Verslaggeving 
+Keuze-onderwerpen 
+
+Het centraal examen 
+Het centraal examen heeft betrekking op de (sub)domeinen A, B, C2, D2, E2, F en G  zoals hieronder 
+nader uitgewerkt. 
+CvTE stelt het aantal en de tijdsduur van de zittingen van het centraal examen vast. 
+CvTE maakt indien nodig een specificatie bekend van de examenstof van het centraal examen. 
+
+Het schoolexamen 
+Het schoolexamen heeft betrekking op domein A, B en : 
+–  de domeinen en subdomeinen waarop het centraal examen geen betrekking  
+– 
+–  subdomeinen waarop het centraal examen betrekking heeft; 
+– 
+
+indien het bevoegd gezag daarvoor kiest: een of meer domeinen of 
+
+indien het bevoegd gezag daarvoor kiest: andere vakonderdelen, die per   kandidaat kunnen 
+verschillen. 
+
+heeft; 
+
+De examenstof 
+Domein A: Vaardigheden 
+Algemene vaardigheden 
+Subdomein A1: Informatie-vaardigheden gebruiken 
+1 
+
+De kandidaat kan doelgericht informatie zoeken, interpreteren, selecteren en verwerken. 
+
+Subdomein A2: Communiceren 
+2 
+communiceren over onderwerpen uit het desbetreffende vakgebied. 
+
+De kandidaat kan adequaat schriftelijk, mondeling en digitaal in het publieke domein 
+
+Subdomein A3: Reflecteren op leren 
+3 
+belangstelling, motivatie en leerproces. 
+
+De kandidaat kan bij het verwerven van vakkennis en vakvaardigheden reflecteren op eigen 
+
+De kandidaat kan aangeven op welke wijze bedrijfseconomische en organisatorische kennis in 
+
+Subdomein A4: Studie en beroep 
+4 
+studie en beroep wordt gebruikt en kan mede op basis daarvan zijn belangstelling voor studies en 
+beroepen onder woorden brengen. 
+
+Subdomein A5: Onderzoeken 
+5 
+trekken uit de onderzoeksresultaten. 
+
+De kandidaat kan in contexten onderzoek op basis van vraagstellingen uitvoeren en conclusies 
+
+De kandidaat maakt daarbij gebruik van consistente redeneringen en relevante rekenkundige en 
+wiskundige vaardigheden. 
+
+Vakspecifieke vaardigheden 
+Subdomein A6: Benaderingswijzen  
+
+Pagina 27 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+De kandidaat kan relevante bedrijfseconomische en organisatorische aspecten van een probleem 
+
+6 
+herkennen, zowel binnen een organisatie als in het persoonlijk leven. 
+
+De kandidaat kan bij de oplossing van een bedrijfseconomisch of organisatorisch probleem een 
+
+7 
+bedrijfseconomische denkwijze gebruiken. 
+
+8 
+
+De kandidaat kan bij veel voorkomende vraagstukken binnen een organisatie op het gebied van: 
+
+–  de interne organisatie en personeelsbeleid 
+–  de investeringen en financiering 
+–  het marketingbeleid 
+–  het financieel beheer 
+–  de verslaggeving 
+
+de bedrijfseconomische en organisatorische dimensie vanuit het perspectief van het management 
+toepassen en analyseren. 
+
+De kandidaat kan bedrijfseconomische en organisatorische perspectieven en daaruit 
+
+9 
+voortvloeiende belangen onderkennen van de diverse betrokkenen bij de organisatie. 
+
+10 
+
+De kandidaat kan: 
+
+–  bedrijfseconomische werkwijzen toepassen; 
+–  bedrijfseconomische begrippen gebruiken; 
+–  bedrijfseconomische grootheden gebruiken; 
+–  bedrijfseconomische relaties analyseren. 
+
+Domein B: Van persoon naar rechtspersoon 
+Subdomein B1: Persoonlijke financiële zelfredzaamheid 
+11 
+(financieel) onderbouwde keuzes maken. 
+
+De kandidaat kan vraagstukken met persoonlijke financiële consequenties herkennen en 
+
+Subdomein B2: De oprichting van een eenmanszaak 
+12 
+de rol van ondernemer toepassen. 
+
+De kandidaat kan het proces voor en rond de oprichting van een eenmanszaak beschrijven en in 
+
+Subdomein B3: Van eenmanszaak naar rechtspersoon 
+13 
+
+De kandidaat kan de belangrijkste kenmerken van verschillende rechtsvormen beschrijven. 
+
+Subdomein B4: Perspectief op de organisatie 
+14 
+
+De kandidaat kan de plaats van de organisatie in de maatschappij beschrijven. 
+
+Domein C: Interne organisatie en personeelsbeleid 
+Subdomein C1: Interne organisatie 
+De kandidaat kan de interne organisatie (inclusief de taken van het management en de stijlen 
+15 
+van leiderschap) van een organisatie beschrijven en deze relateren aan de doelstelling en aard van de 
+organisatie. 
+
+Subdomein C2: Personeelsbeleid 
+16 
+doelstelling en de aard van de organisatie. 
+
+De kandidaat kan personeelsbeleid/HRM beschrijven en daarbij de relatie leggen met de 
+
+Domein D: Investeren en financieren 
+Subdomein D1: Investeren 
+17 
+De kandidaat kan bij een investeringsvraagstuk beschrijven welke gegevens relevant zijn, 
+vaststellen of een investering economisch zinvol is en hierbij verschillende investeringsselectiemethoden 
+toepassen en analyseren. 
+
+Subdomein D2: Financieren 
+18 
+beschrijven. 
+
+De kandidaat kan vanuit het perspectief van een organisatie de werking van de vermogensmarkt 
+
+Pagina 28 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+De kandidaat kan in de context van een financieringsvraagstuk de redenen voor het aantrekken 
+
+19 
+van verschillende types vermogen onderscheiden. 
+
+De kandidaat kan onderkennen welke risico’s financiering met vreemd vermogen met zich 
+
+20 
+meebrengt. 
+
+Domein E: Marketing 
+Subdomein E1: Doel en organisatie van marketingactiviteiten 
+21 
+
+De kandidaat kan marketing beschrijven met het oog op de te onderscheiden doelgroepen. 
+
+Subdomein E2: Marketingbeleid 
+22 
+
+De kandidaat kan het marketingbeleid van een organisatie beschrijven.  
+
+Domein F: Financieel beleid 
+Subdomein F1: Vastleggen van financiële en niet-financiële informatie 
+23 
+
+De kandidaat kan financiële feiten inventariseren en verwerken tot financiële overzichten. 
+
+De kandidaat kan financiële en niet-financiële informatie onderscheiden en het belang van beide 
+
+24 
+uitleggen voor het besturen van de organisatie. 
+
+Subdomein F2: Kosten- en winstvraagstukken 
+25 
+onderscheiden, de winst bepalen en verschillen verklaren.  
+
+De kandidaat kan voor een dienstverlenende onderneming de verschillende kostensoorten 
+
+Domein G: Verslaggeving 
+26 
+interpreteren en uitleggen. 
+
+De kandidaat kan de jaarrekening van een eenvoudige organisatie (zoals een MKB-bedrijf) 
+
+Domein H: Keuze-onderwerpen
+
+Pagina 29 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+BIJLAGE 2 SCHEMA UIT HET RAPPORT VAN DE COMMISSIE BOOT 
+
+Pagina 30 van 44 
+
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+BIJLAGE 3 UITLEG BIJ DE HANDELINGSWERKWOORDEN  
+
+Beheersings-
+
+omschrijving 
+
+Samenvattend/ 
+
+staat voor de 
+
+niveau Bloom 
+
+handelingswerkwoorden 
+
+overkoepelend 
+handelingswerk- 
+
+woord in 
+gespecificeerde 
+eindterm 
+
+Memoriseren 
+
+Ophalen van relevante 
+
+Noemen 
+
+noemen, herkennen, aanwijzen, 
+
+Begrijpen 
+
+kennis uit het geheugen en 
+zowel mondeling, 
+geschreven als grafische 
+kunnen laten zien. 
+
+De betekenis achterhalen 
+van informatie, zowel 
+mondeling, geschreven als 
+grafische informatie. De 
+betekenis kunnen verbinden 
+met andere kennis, 
+voorbeelden geven etc. 
+
+definiëren, vinden, kiezen, 
+onderstrepen, invullen, citeren, 
+arceren 
+
+Uitleggen 
+
+verklaren, verhelderen, beschrijven, 
+voorbeelden geven, toelichten, 
+uitleggen, onderbouwen, aantonen 
+
+Toepassen 
+
+Elementen uit ‘memoriseren’ 
+en ‘begrijpen’ hanteren in 
+nieuwe situaties; 
+
+Berekenen 
+
+Opstellen 
+
+hanteren,  een overzicht geven, 
+schatten, voorspellen, vormgeven 
+vragen formuleren 
+
+Analyseren 
+
+Evalueren 
+
+Creëren  
+
+kiezen van de juiste  regels, 
+schema’s, begrippen enz. 
+
+Materiaal/bronnen in stukjes 
+verdelen en ontdekken hoe 
+de stukjes gerelateerd zijn 
+tot elkaar en tot en overall 
+structuur 
+
+Tot en afgewogen 
+eindoordeel komen, hier een 
+uitspraak over doen, een 
+besluit nemen 
+
+Analyseren 
+
+vergelijken, selecteren, indelen, 
+kenmerken bepalen, determineren, 
+structureren, ontleden 
+
+Beoordelen 
+
+bekritiseren, testen, beoordelen, 
+doorlichten 
+
+Elementen samenvoegen tot 
+een coherent geheel of een 
+origineel product 
+
+Adviseren 
+
+rapporteren, hypothese opstellen, 
+adviseren, ontwerpen, construeren, 
+maken 
+
+Pagina 31 van 44 
+
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+BIJLAGE 4 STANDAARDFORMULES IN HET CENTRAAL EXAMEN 
+BEDRIJFSECONOMIE HAVO/VWO 
+
+Onderstaande tabel bevat de standaardformules voor bedrijfseconomie havo/vwo die een leerling moet 
+kunnen gebruiken in het centraal examen. Deze formules worden niet gegeven in de examenopgaven. 
+
+Formules die je logischerwijs zelfstandig kunt beredeneren zijn niet opgenomen in de lijst. 
+
+Indien voor een examenopgave een andere formule dan een standaardformule nodig is, wordt deze 
+formule gegeven in de opgave. 
+
+Vwo-kandidaten dienen ook de somformule van een meetkundige reeks te kunnen gebruiken. Deze 
+formule wordt wel gegeven in examenopgaven. 
+
+Standaardformules 
+
+Liquiditeitsratio’s 
+
+quick ratio = 
+
+current ratio = 
+
+Solvabiliteitsratio’s 
+
+solvabiliteit = 
+
+ x 100% of 
+
+ x 100% 
+
+solvabiliteit:  elk verhoudingsgetal tussen EV/VV/TV 
+
+Rentabiliteitsratio’s 
+
+rentabiliteit van het totale vermogen = 
+
+ x 100% 
+
+Havo 
+
+vwo 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+%       rentabiliteit van het eigen vermogen = 
+
+x 
+
+x 
+
+x 100% 
+
+interestkosten van het vreemd vermogen = 
+
+x 
+
+x 
+
+x 100% 
+
+cashflow = resultaat + afschrijvingen 
+
+dividendrendement = 
+
+ x 100%   
+
+beleggersrendement = 
+
+x 100% 
+
+x 
+
+x 
+
+x 
+
+Pagina 32 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+Hefboomformule 
+
+REV voor belasting = RTV + (RTV - IVV) x 
+
+Break-even analyse 
+
+breakeven-omzet = 
+
+perunage = 
+
+breakeven-afzet = 
+
+Resultaat 
+
+Verkoopresultaat = afzet x (verkoopprijs – kostprijs) 
+
+ Budgetresultaat = gerealiseerde afzet x kostprijs – werkelijke kosten 
+
+x 
+
+x 
+
+x 
+
+Verschillenanalyse 
+
+ efficiencyresultaat = (sh – wh) x sp 
+
+prijsresultaat = (sp – wp) x wh 
+
+sh = standaardhoeveelheid  
+
+wh = werkelijke hoeveelheid  
+
+sp = standaardprijs  
+
+wp = werkelijke prijs 
+
+gerealiseerd bezettingsresultaat =  (W - N) x C/N 
+
+W = werkelijke bezetting 
+
+N = normale bezetting 
+
+C = totale constante kosten 
+
+begroot bezettingsresultaat = (B - N) x C/N 
+
+B = begrote bezetting 
+
+N = normale bezetting 
+
+C = totale constante kosten 
+
+prijsresultaat constante kosten = Cb – Cw 
+
+Cb = begrote constante kosten 
+
+Cw = werkelijke constante kosten 
+
+DuPont schema 
+
+omloopsnelheid van het gemiddeld totale vermogen = 
+
+resultaatmarge = 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+x 
+
+Pagina 33 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+BIJLAGE 5 VERANTWOORDING BIJ DE AANPASSINGEN IN DE SYLLABI HAVO 
+VANAF 2025 
+
+Inleiding 
+
+Het huidige examenprogramma bedrijfseconomie2 havo en vwo wordt vanaf september 2018 gedoceerd. 
+De eerste centrale examinering vond plaats in mei/juni 2021. Examenprogramma en syllabi houden een 
+grote verandering in, in verhouding tot het ‘oude vak’ management en organisatie. Deze verandering is 
+doorgevoerd zonder dat een pilot is gedaan. Monitoringonderzoek van SLO (Elzen 2020, 2021) laat zien 
+dat de implementatie en invoering overwegend succesvol is verlopen. Ook de ontwikkeling en afname 
+van de eerste centrale examens verliep positief. Niettemin werden ook knelpunten geconstateerd. In het 
+najaar van 2021 stelde het CvTE, na overleg met de Vecon, SLO, Cito en OCW, een syllabuscommissie3 in 
+om een oplossing te formuleren voor die knelpunten. 
+
+De syllabuscommissie richtte zich eerst op de syllabus havo, waarvan de leerstof voor het centraal 
+examen als overladen en te weinig samenhangend werd ervaren. Ook werd de uitwerking van domein B, 
+met name subdomein B1.4, als te gedetailleerd ervaren. 
+
+Werkwijze 
+
+De syllabuscommissie heeft eerst in enkele sessies wijzigingsvoorstellen besproken. Die werden 
+samengebracht in een conceptversie voor een nieuwe syllabus havo die in maart-april 2022 aan docenten 
+werd voorgelegd. Dit gebeurde via een door 59 docenten ingevulde digitale vragenlijst. Parallel werden 
+twee panelbijeenkomsten georganiseerd waaraan 11 docenten deelnamen. In april nam een afvaardiging 
+van de commissie ook deel aan een door de Vecon-sectie BE georganiseerd gesprek over de syllabus. De 
+opbrengst van de veldraadpleging is door de commissie in twee sessies besproken. Tot slot zijn de 
+uitkomsten van de veldraadpleging en de keuzes die de syllabuscommissie vervolgens heeft gemaakt nog 
+besproken met het BE-sectiebestuur van de Vecon. 
+
+Voornaamste conclusies uit de veldraadpleging 
+
+In de conceptsyllabus voor de veldraadpleging zette de commissie een aantal mogelijke keuzes scherp 
+aan. Dat leverde gevarieerd commentaar op van docenten zowel over generieke zaken als details. De 
+voornaamste opmerkingen van docenten gingen over: 
+
+-  De handelingswerkwoorden: het voorstel van de commissie om die niet langer gedetailleerd maar 
+
+meer generiek te vermelden kreeg geen goede ontvangst. Een flink deel van de docenten 
+gebruikt deze specificering in de lespraktijk omdat het een handvat is om grip te houden op de 
+omvang van de lesstof voor het centraal examen. De commissie heeft de specificatie van de 
+handelingswerkwoorden daarom gehandhaafd, zich realiserend dat de huidige systematiek 
+onvoldoende coherent is. Dit onderwerp zal op een later moment, bij de voorgenomen 
+actualisatie van het examenprogramma, opnieuw moeten worden opgepakt; 
+
+-  De omvang van de syllabus: een meerderheid zag in de voorstellen een verlichting, maar een 
+
+flinke minderheid was kritisch, bijvoorbeeld vanwege de omgang met de handelingswerkwoorden 
+en de omvang van domein B. 
+
+In de contacten van de commissie met docenten bleek dat voor sommige onderwerpen het schrappen 
+van begrippen tot discussie leidde. Soms werd dat bepaald door opvattingen over de aard van het vak 
+bedrijfseconomie, soms omdat een begrip zo aantrekkelijk is om uit te leggen in de klas en soms omdat 
+leerlingen zo’n begrip relatief gemakkelijk beheersen. Dat zijn alle valide argumenten voor leerstofkeuze. 
+Tegelijkertijd werd met name in de docentenpanels de commissie op het hart gedrukt toch vooral te 
+kiezen omdat de stof nu te omvangrijk is. 
+
+De commissie heeft uiteindelijk voor- en nadelen gewogen en keuzes gemaakt. Die keuzes kunnen nooit 
+elke docent tevreden stellen. De veldraadpleging borgt dat dit wel voor een grote groep docenten het 
+geval zal zijn. Daarbij is het belangrijk te beklemtonen dat het niet opnemen of schrappen van begrippen 
+in de syllabus niet betekent dat deze niet in het onderwijs mogen voorkomen. Het staat een docent vrij 
+
+2 Het schoolvak bedrijfseconomie heet voluit bedrijfseconomie, ondernemerschap en financiële zelfredzaamheid. In deze toelichting wordt de 
+benaming bedrijfseconomie gebruikt. 
+3 De syllabuscommissie bestond uit vier docenten bedrijfseconomie te weten: Anneloes Brentjes, Peter van den Berg (beiden vanuit de Vecon), 
+Minouche Boode en Wim Neervoort (vanuit de CvTE vaststellingscommissie). Voorzitter was dr. Quincy Elvira, vakdidacticus economie en 
+bedrijfseconomie aan de Universiteit van Amsterdam. De commissie werd geadviseerd door Jan Stevens (Cito) en Marc den Elzen (SLO). De laatste 
+was ook secretaris van de commissie. 
+
+Pagina 34 van 44 
+
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+om inhoudelijke keuzes te maken in het gegeven onderwijs en – eventueel – het schoolexamen. In het 
+centraal examen echter wordt alleen de syllabus getoetst. 
+
+Keuzes van de commissie per domein 
+
+Domein A 
+
+Samenhang binnen het schoolvak bedrijfseconomie 
+
+Een bedrijfseconoom stelt andere vragen dan een historicus of een socioloog. De benaderingswijze 
+(domein A) stuurt leerlingen met een schoolvakspecifiek perspectief waarmee ze de wereld kunnen 
+bekijken. Onderdeel van de benaderingswijze zijn het ervaringsobject (d.w.z. de verschijnselen die door 
+een bepaalde tak van wetenschap bestudeerd worden) en het kenobject (d.w.z. de wijze waarop het 
+ervaringsobject wordt beschouwd passend vanuit de gedachte van de bijbehorende wetenschappelijke 
+discipline). Binnen het schoolvak bedrijfseconomie is het ervaringsobject de bedrijfshuishouding/het 
+bedrijf i.e een financieel-economisch zelfstandige productorganisatie (of simpelweg een organisatie). Een 
+organisatie is een samenwerkingsverband  of coalitie van personen die met gebruikmaking van 
+productiemiddelen een bepaald doel nastreeft door deelname aan het maatschappelijk productieproces. 
+Het kenobject zorgt voor een inperking vanuit welk perspectief we naar het ervaringsobject (= het 
+bedrijf) kijken. Het kenobject van bedrijfseconomie is het bedrijfseconomisch aspect der verschijnselen 
+(i.e. financieringsbeslissingen; investeringsbeslissingen, marketingbeslissingen, beslissingen over het 
+personeel, beslissingen over de organisatiestructuur, beslissingen over de interne en externe 
+verslaggeving etc.). 
+
+Uitgangspunt bij het maken van keuzes tussen alternatieven is dat dit op basis van vooral financieel-
+economische afwegingen plaatsvindt. Dat betekent in dit verband vanuit een bedrijfseconomisch aspect. 
+Het bedrijfseconomisch aspect kenmerkt zich door het streven naar doelmatigheid, i.e. een gewenste 
+uitkomst steeds met een minimum aan ‘middelen’ te verkrijgen; of omgekeerd, dat men bij gegeven 
+middelen zal streven naar een maximale uitkomst. Dit bedrijfseconomisch aspect is het 
+vertrekpunt/zwaartepunt van het schoolvak bedrijfseconomie. Het bedrijfseconomische aspect moet 
+bezien worden in samenhang met ethische, psychologische, juridische en eventuele andere aspecten. 
+Immers domeinen zoals personeelsbeleid, marketing en externe financiële berichtgeving hebben een 
+multidisciplinair karakter. Bij personeelsbeleid komen bedrijfseconomie en gedrags- en 
+organisatiewetenschappen samen en bij externe financiële berichtgeving komen bedrijfseconomie 
+(“waarde en winst”) samen met recht (ondernemingsrecht) en informatie- en 
+communicatiewetenschappen. Marketing is ontleend aan economie, de sociologie en de psychologie.  
+
+Domein B 
+
+Achtergrond 
+
+Een aanleiding om het schoolvak management & organisatie te vernieuwen was onder andere de focus op 
+burgerschap. De vakvernieuwingscommissie (2014) schrijft daarover het volgende: ”Burgers worden 
+geacht ondernemend te zijn en initiatieven te nemen, in welke rol en positie dan ook. Burgers moeten 
+ook de toenemende complexiteit van de samenleving het hoofd kunnen bieden. Financiële 
+zelfredzaamheid neemt in belang toe” (Vakvernieuwingscommissie, 2014) Iemand is financieel 
+zelfredzaam “wanneer hij weloverwogen keuzes maakt zodanig dat zijn financiën in balans zijn, zowel op 
+de korte als op de lange termijn.”(Nibud 2012).  
+
+Zelfredzaamheid is een attitude; financiële zelfredzaamheid gaat over iemands gemoedstoestand, mening 
+en oordeel over financiën. Voor financiële zelfredzaamheid is financiële geletterdheid een 
+randvoorwaarde. Financiële geletterdheid kun je omschrijven als kennis van financiële begrippen en 
+risico's en de vaardigheid, motivatie en vertrouwen om die kennis toe te passen om doeltreffende 
+beslissingen (financiële zekerheid, stabiliteit en keuzevrijheid in het heden en in de toekomst) te nemen 
+op het gebied van financiële zekerheid, stabiliteit en behoud van keuzevrijheid in heden en toekomst in 
+een scala van financiële contexten. Financiële geletterdheid draagt bij aan verbetering van het financiële 
+welzijn van individuen en de samenleving en maakt deelname aan het economische leven mogelijk 
+(OECD, 2014). Financieel onderwijs kan ondersteunend zijn bij financiële zelfredzaamheid door aandacht 
+te besteden aan financiële planning, opstellen van een budget, stellen van financiële doelen en beheren 
+van schulden en beleggingen. Daarbij opgetekend dat beslissingsprocessen anders verlopen in geval van 
+het structureel uit de pas lopen van uitgaven die samenhangen met schuldverplichtingen en de vrij 
+besteedbare ruimte van de schuldenaar (WRR, 2016). 
+
+Pagina 35 van 44 
+
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+Anders dan het woord zelf misschien impliceert, werkt de vakvernieuwingscommissie  zelfredzaamheid 
+breed uit door aandacht te besteden aan de onderwerpen samenwonen, trouwen en scheiden. Feitelijk 
+van financiële zelfredzaamheid naar financiële samenredzaamheid. Hoewel onderbelicht in het huidige 
+programma, wil de huidige syllabuscommissie de aandacht graag vestigen op het feit dat het beheren 
+van financiën met zijn tweeën een veel grotere uitdaging is dan als individu. Elke partner heeft een 
+andere kijk op geld en vertoont verschillende gedragingen en houdingen ten opzichte van financiën. De 
+tevredenheid van een koppel over hun huwelijk/samenwonen hangt ten dele af van hun persoonlijke 
+praktijken op het gebied van financieel beheer (Britt & Huston, 2012). 
+
+Schenken en erven vanaf 2024 niet langer als CE-onderdeel - wetenschappelijke invalshoek 
+
+Amagir et al. (2018) baseerden zich in hun onderzoek  op zestig wetenschappelijke artikelen waarmee zij 
+onder andere de volgende vraag beantwoorden: welke inhoud bevatten de onderwijsprogramma's op het 
+gebied van financiële geletterdheid op school? Zij stellen vast dat het merendeel van de financiële 
+onderwijsprogramma's in het voortgezet onderwijs gericht is op uitgaven, krediet, sparen, beleggen en 
+budgetteringsconcepten. In mindere mate maar toch substantieel werd verzekeren gevonden. In dit 
+onderzoek naar de inhoud van financiële geletterdheid vindt de syllabuscommissie de rationale om 
+schenken en erven te schrappen als in het centraal examen te toetsen onderwerpen. 
+
+Relevantie als invalshoek 
+
+Een uitgangspunt van de vakvernieuwingscommissie was aansluiting bij de (financiële) belevingswereld 
+van leerlingen. Daarbij  gaat het om de keuze van onderwerpen of thema’s en in hoeverre die aansluit bij 
+het ontwikkelingsniveau (de denk- en ervaringswereld) van leerlingen. De commissie heeft zich hier laten 
+informeren door de data van het CBS. Schenken (waarvoor aangifte) en erven (waarvoor aangifte) 
+betreffen binnen de leeftijdscategorie 15-35 jaar een kleine groep binnen de Nederlandse bevolking 
+(bron: Statline). Zo klein dat de commissie van mening is dat leerlingen zich onvoldoende kunnen  
+identificeren met de onderwerpen schenken en erven. 
+
+De commissie behoudt de onderwerpen trouwen, samenwonen en scheiden. Deze  passen meer in de 
+belevingswereld van de leerlingen. Bijna elke leerling heeft direct of indirect met één van de 
+samenlevingsvormen of het uiteenvallen ervan te maken. In (recent) verschenen rapporten (van den 
+Brakel & Arts, 2017;van den Brakel, Herbers & Arts, 2020 ) zijn de financiële gevolgen van echtscheiding 
+bij trouwen en uit elkaar gaan bij samenwonen voor het voetlicht gebracht. Daarnaast geldt een parallel 
+met ondernemerschap. Je moet het goed regelen in goede tijden, zodat als het misgaat de ‘schade’ 
+beperkt blijft. Hierin mag niet ongenoemd blijven dat vanuit het oogpunt van emancipatie dit onderdeel 
+eveneens belangrijk is. Je neemt samen beslissingen, mogelijk ook als het gaat om de verdeling van 
+werk- en zorg en het is goed om op school aandacht te besteden aan hoe deze keuzes kunnen 
+doorwerken op een loopbaan en op ‘levensgeluk’, in goede en in slechte tijden. 
+
+De wijze van besturen 
+
+Besluitvorming heeft betrekking op het proces voor het kiezen van de meest logische keuze uit de 
+beschikbare opties om daarmee de meest optimale situatie te creëren. Het is voor leerlingen van belang 
+om te begrijpen dat er factoren zijn die besluitvorming beïnvloeden4, zoals de medezeggenschapsraad/ 
+ondernemingsraad en Raad van Toezicht (RVT)/ Raad van Commissarissen (RvC). Deze ‘gouden 
+driehoek’5 (bestuur, commissaris/ toezichthouder en medezeggenschap) moet gericht zijn om een dialoog 
+te stimuleren waarbij ze elkaar in evenwicht houden als het gaat om checks & balances, kracht en 
+tegenmacht. 
+
+Maatschappelijk verantwoorden ondernemen: een duidelijkere plek 
+
+De grote onvoorspelbaarheid die sommige klimaatgerelateerde risico’s (extremere hittegolven, 
+weersomstandigheden in bepaalde regio’s,  verlies van biodiversiteit, stijging van het zeeniveau, 
+zwaardere neerslag, grotere kans op droogte en neerslagtekorten in bepaalde regio’s) met zich 
+
+4 Smith, G.F. (2003). Beyond critical thinking and decision making: teaching business student show tot hink. Journal of Management Education, 27, 
+pp 24-51. 
+5 Van Hofwegen, L, & Hol, A. (2019). De gouden driehoek: het samenspel van bestuur, toezicht en medezeggenschap. OR/Magazine, 32-33. 
+Geraadpleegd op 03 september 2022, van https://www.arthurhol.nl/images/publicaties/2019_03_OR_Magazine.pdf 
+
+Pagina 36 van 44 
+
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+meebrengt, dwingt de onderneming om duurzamer te handelen6. Arnoud Boot, de voorzitter van de 
+vakvernieuwingscommissie van 2014, geeft in een recent interview aan dat iedere onderneming in 
+verbinding staat met de maatschappij7. Door de verwachting die de maatschappij heeft van 
+ondernemingen, passen ondernemingen duurzaamheid (geen kinderarbeid, afvalscheiding, 
+energiebesparing) toe in hun beleid. Daarmee raakt duurzaamheid aan het concept bestaansrecht van de 
+onderneming dat onderdeel is van domein B. Dit past bij één van de principiële leerdoelen van het 
+schoolvak: de leerling ontwikkelt een begrip over het functioneren van organisaties in een samenleving 
+waarin de meeste goederen en diensten in georganiseerd verband worden voortgebracht. Organisaties 
+worden in principe opgericht om permanent te blijven functioneren, met andere woorden: de leiding van 
+een organisatie zal streven naar continuïteit van haar organisatie. De continuïteit is niet per se 
+gerelateerd aan winst als wel aan het vermogen van het bedrijf om waarde te creëren op langere termijn 
+in de drie dimensies  people, planet en profit. De syllabuscommissie heeft daarom de rol van 
+maatschappelijk verantwoord ondernemen (mvo) benadrukt in de syllabus havo 2025.  
+
+SWOT uit de syllabus voor de samenhang 
+
+Het gebied van strategisch management concentreert zich op hoe bedrijven een duurzaam 
+concurrentievoordeel opbouwen om de bedrijfsprestatie op lange termijn te maximaliseren8. De SWOT-
+analyse is een strategisch managementinstrument. In domein F verdwijnen de kritische succesfactoren 
+als onderdeel van de syllabus. Succesfactoren (KSF) zijn van belang om te gebruiken in een SWOT 
+analyse. Immers, dit zijn de factoren waarmee een bedrijf zich onderscheidt ten opzichte van de 
+concurrentie. Recent onderzoek9 stelt dat studenten aan een universiteit dergelijke analyses al lastig 
+vinden door het gebrek aan praktijkkennis. Laat staan leerlingen in havo 4/5. 
+
+Causation en effectuation: mooi onderwerp voor het schoolexamen 
+
+Ondernemerschapsonderwijs  wordt  vaak  onderverdeeld  in  drie  benaderingen10.  Ten  eerste,  lesgeven 
+"over"  ondernemerschap  betekent  een  inhoudelijke  en  theoretische  benadering  die  gericht  is  op  het 
+geven  van  een  algemeen  begrip  van  het  fenomeen.  Lesgeven  "voor"  ondernemerschap  betekent  een 
+beroepsgerichte benadering die erop gericht is ondernemers in de dop de nodige kennis en vaardigheden 
+bij te brengen. Bij lesgeven "over" en "voor" ondernemerschap, waar de nadruk ligt op het overbrengen 
+van  theorie  en  vaardigheden,  past  een  traditionele  docentgerichte  ondernemerschapsonderwijs-
+benadering.  Tenslotte,  lesgeven  "door"  ondernemerschap  betekent  een  procesmatige  en  vaak 
+ervaringsgerichte aanpak waarbij leerlingen een daadwerkelijk ondernemend leerproces doorlopen .  De 
+passende didactiek bij deze laatste benadering is een studentgerichte, procesmatige didactische methode 
+die  leerlingen  voorbereiden  om  te  handelen  en  hun  ideeën  omzetten  in  een  product  en  vervolgens  het 
+product  op  de markt brengen11.  Wanneer  het  doel  is  om  leerlingen  vooraf  bepaalde  en  algemeen 
+aanvaarde  wetmatige  kennis  bij  te  brengen  en  over  te  dragen,  zou  het  proces  van  causation  kunnen 
+worden  gebruikt.  Wanneer  het  doel  is  dat  ondernemerschapsonderwijs  de  leerlingen  in  staat  stelt  om 
+ondernemingskansen  te  creëren  en  te  realiseren,  zou  het  proces  van  effectuation  moeten  worden 
+aanbevolen12.  Het  is  maar  de  vraag  of  subdomein  B2  deze  twee  doelen  voor  ogen  heeft.  De 
+syllabuscommissie stelt dat subdomein B2 zich beperkt tot lesgeven “over” ondernemerschap. Leerlingen 
+leren  over  het  starten  van  een  bedrijf,  over  juridische  en  zakelijke  kaders,  over  wat  het  betekent  om 
+ondernemend  te  zijn  en  over  hoe  ze  een  ondernemingsplan  moeten  opstellen.  Het  doel  van  dit  type 
+onderwijs is om leerlingen kennis te laten maken met vele aspecten van de ondernemerspraktijk en hun 
+
+6 Wiebes, D.M. (2022). Greenwashing in het voortgezet onderwijs? De behoefte aan een nieuw fundament van bedrijfseconomie. Amsterdam: 
+Interfacultaire Lerarenopleidingen UvA 
+7 den Elzen, M. (2022). Monitorrapport bedrijfseconomie. Arnoud Boot: 'Kijk breder naar de ondernemer'. Tijdschrift voor het Economisch 
+Onderwijs, 1(2022), 12-14. 
+
+8 Summer, C., Bettis, R., Duhaime, I., Grant, J., Hambrick, D., Snow, C., & Zeithaml, C. (1990). Doctoral education in the field of business policy and 
+strategy. Journal of Management, 16, 361–398. 
+9 Lohrke, F.T, Mazzei, M.J., & Frownfelter-Lohrke, C.. (2022). Should It Stay or Should It Go? Developing an Enhanced SWOT Framework for Teaching 
+Strategy Formulation. Journal of Management, 46(2), 345–382.  
+10 O'Connor, A. (2013). A conceptual framework for entrepreneurship education policy: Meeting government and economic purposes. Journal of 
+Business Venturing, 28, 546-563. 
+11 Sioukas, A. (2022). Effectuation and causation in the entrepreneurship classroom: learning obstacles of college students. Entrepreneurship 
+Education, 5, 1-19. 
+12 Mäkimurto-Koivumaa, S. and Puhakka, V. (2013). Effectuation and Causation in Entrepreneurship Education. International Journal of 
+Entrepreneurial Venturing, 5(1), 68-83.  
+
+Pagina 37 van 44 
+
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+inzicht daarin te vergroten. Zaken als causation en effectuation kunnen besproken worden door docenten 
+die bijvoorbeeld deelnemen aan business games waarbij authentiek ondernomen (geen simulaties) wordt 
+en sprake is van lesgeven “door” ondernemen. 
+
+Overladenheid als invalshoek 
+
+Wat betreft domein B1.4 geven docenten in de SLO monitorrapporten aan dat B1.4 een relevant domein 
+is, maar te uitgebreid. De commissie meent hieruit af te leiden dat de hoeveelheid inhoud niet in relatie 
+staat tot de beschikbare tijd. Op basis van de veldraadpleging is gekozen om erven en schenken samen 
+met de in de syllabus vermelde  subbegrippen, te schrappen. In de gesprekken kwam daarbij ook naar 
+voren dat financiële zelfredzaamheid te ruim aanwezig was, waarmee bedrijfseconomie zelf te laat aan 
+bod komt, wat het beklijven van de stof in de weg staat. De commissie heeft als het gaat om de diverse 
+domeinen dit nadrukkelijk meegewogen. Een te veel aan begrippen maakt het programma te 
+fragmentarisch. 
+
+Domein C 
+
+Achtergrond 
+
+“Het nieuwe domein C is, vergeleken met het huidige domein B, geactualiseerd mede vanwege 
+ontwikkelingen in de praktijk van ondernemen, in het bijzonder wat betreft de interne- en externe 
+arbeidsverhoudingen” (Vakvernieuwingscommissie, 2014). 
+
+Arbeidsverhoudingen refereren aan de formele en informele regels, de rechten en plichten, die 
+werkgevers en werknemers wederzijds hebben (Delsen, 2000). Hierbij worden externe en interne 
+arbeidsverhoudingen onderscheiden. Bij de externe arbeidsverhoudingen gaat het om de collectieve 
+onderhandelingen in het algemeen en de loonpolitiek in het bijzonder. Het betreft het overleg en de 
+regulering op landelijk- en bedrijfstakniveau. Bij de interne arbeidsverhoudingen gaat het naast de 
+directe en indirecte medezeggenschap voor werknemers in de onderneming of instelling om de wijze 
+waarop een bedrijf is georganiseerd en de daarmee samenhangende managementstijl (Albeda, Dercksen 
+en Tros, 1998). In het huidige examenprogramma bedrijfseconomie zijn zowel de interne als externe 
+arbeidsverhoudingen voldoende gedekt.  Echter, de doelstelling van subdomein C2 luidt als volgt: de 
+kandidaat kan personeelsbeleid/HRM beschrijven en daarbij de relatie leggen met de doelstelling en de 
+aard van de organisatie. Het aspect van HRM mag volgens de syllabuscommissie meer belicht worden, 
+omdat HRM en arbeidsverhoudingen beide betrekking hebben op hetzelfde onderwerp, namelijk het 
+organiseren of managen van de arbeidsrelatie tussen een werkgever en zijn/haar werknemers (Looise, 
+2018). 
+
+Instroom toevoegen en uitstroom benadrukken binnen domein C2 - wetenschappelijke 
+invalshoek 
+
+Boselie (2014, p. 5) beschrijft HRM als management-besluitvorming en concrete activiteiten ten aanzien 
+van management van arbeid en personeel gericht op het behalen van organisatiedoelstellingen, 
+maatschappelijke doelstellingen en doelstellingen van individuele medewerkers. Door de juiste 
+werknemers te kiezen, verbeteren organisaties hun mogelijkheden om (strategische) doelstellingen te 
+realiseren en toekomstige uitdagingen aan te gaan (Bolander & Sandberg, 2013). Deze instroom 
+(werving en selectie) is het begin van deze zogenaamde ‘employee journey’ (vrij vertaald 
+medewerkerreis). Dit wordt vervolgd door doorstroom (opleiding- zie ook domein B1;11.1), ontwikkeling,  
+beoordeling en beloning van werknemers. Tenslotte is er de uitstroom,  het laten gaan van werknemers, 
+vrijwillig of met een ontslag, pensionering, afvloeiing, en het vinden van een nieuwe baan). Met deze 
+achterliggende gedachte heeft de syllabuscommissie in C2 het onderdeel instroom toegevoegd en 
+uitstroom benadrukt.  Dit heeft uiteindelijk geleid tot de volgende zinsnede behorende bij domein C2: 
+Daarbij kan de leerling keuzes maken in belangrijke aspecten van personeelsbeleid, uitgaande van een 
+gegeven personeelsbehoefte, het werven, selecteren en aannemen van personeel en het behouden, 
+motiveren, (bij-) scholen of eventueel afscheid nemen van personeel. Hiermee is het ‘heel’ technisch-
+juridische deel meer op de achtergrond verdwenen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+
+Relevantie als invalshoek 
+
+Een uitgangspunt van de vakvernieuwingscommissie is de leerling voorbereiden op het werkzame leven 
+en begrip krijgen van het functioneren van organisaties. Hoe komt een bedrijf aan personeel? Hoeveel en 
+welk personeel heeft een bedrijf nodig? Hoe houdt het bedrijf zijn bestaand personeelsbestand 
+gemotiveerd en hoe gaat het om met het vrijwillig en gedwongen vertrek van personeel? Hoewel 
+personeelsbeleid beschreven is vanuit het bedrijf, kunnen leerlingen veel verbanden leggen met hun 
+
+Pagina 38 van 44 
+
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+eigen rol als werknemer of de rol van hun ouders als leidinggevende of werknemer binnen een bedrijf. 
+Waarom krijg ik als leerling dit loon? En waarom word ik uitbetaald bij ziekte? Waarom moet ik een 
+sollicitatiegesprek voeren?  
+
+Overladenheid als invalshoek 
+
+Het schrappen in C2 hield verband met mogelijke onduidelijkheid (16.2 - uitleggen dat het personeel tot 
+het human capital van de organisatie hoort) en het maken van keuzes om overladenheid te beperken, 
+waarbij 16.6 (de verschillen tussen een cao en individuele arbeidsovereenkomst noemen) en 16.6 (de 
+gevolgen van wetgeving met betrekking tot ontslagrecht en Arbo voor de organisatie uitleggen) als te 
+‘juridisch’ golden. De toevoeging van ‘Het werven en selecteren van personeel’ (16.1) en de daarbij 
+passende begrippen maakt het verhaal meer ‘rond’,  in lijn met de bedoeling van de  
+vakvernieuwingscommissie.  Er wordt zodoende recht  gedaan aan de rol van personeelsbeleid en de 
+beslissingen die daarin genomen moeten worden. Door het schrappen van 16.2, 16.3, 16.6 (deels) en 
+16.8 is per saldo de overladenheid van dit subdomein beperkt en hoeven de leerlingen richting het CE 
+minder technisch juridische begrippen en procedures te kennen. 
+
+Domein D 
+
+Achtergrond 
+Bij het financieringsvraagstuk (domein D2) gaat het om welke vermogensbronnen een organisatie moet 
+aanboren om zich te financieren, in welke onderlinge verhouding dat zou moeten en welke prijs de 
+organisatie daarvoor moet betalen (Vakvernieuwingscommissie, 2014). 
+
+De leerling leert relevante financieringsvragen te stellen en te beantwoorden, zoals: 
+•  Welke vermogensbronnen en -vormen kunnen worden onderscheiden?  
+•  Wat zijn de karakteristieken van de verschillende vermogensvormen?  
+•  Wat zijn de voor- en nadelen van de onderscheiden vermogensvormen vanuit het perspectief van 
+
+de organisatie en de verstrekker van vermogen?  
+
+Centraal staat vooral het verwerven en toepassen van conceptuele kennis. Procedurele kennis - met 
+ingewikkelde formules kunnen rekenen - doet er minder toe. 
+
+Samenhang: aantrekken van externe financiering als een proces 
+
+De syllabuscommissie benadert dit domein D2 vanuit vijf fasen van het aantrekken van financiering: a) 
+behoefte, b) oriëntatie, c) aanvraag, d) uitkomst en e) toekomst.13 
+
+De nadruk ligt op de eerste drie fasen.  
+
+a.  behoefte 
+
+De syllabuscommissie merkt op dat het formuleren van de behoefte naar (externe) financiering geen 
+aparte eindterm is in de syllabus. Oftewel is de behoefte van de (externe) financiering onder andere 
+gericht op groei of werkkapitaal of herstructurering? Bij de eindexamens wordt de financieringsbehoefte 
+over het algemeen vermeld. 
+
+b.  oriëntatie 
+
+Bedrijven met een serieuze behoefte zetten stappen om informatie in te winnen over hun 
+financieringsmogelijkheden (oriëntatie). Een gedeelte van de bedrijven kan de behoefte intern 
+financieren. Een ander gedeelte heeft behoefte aan externe financiering. Externe financiering zijn alle 
+vormen van vreemd vermogen en extern eigen vermogen. Bij het vreemd vermogen richt de 
+syllabuscommissie zich voornamelijk op (obligatie)leningen. Onderliggende vraag van bedriiven gaat over 
+de keuze van de financieringsvorm: kies ik optie a of optie b? Wat zijn de verschillen of voor- en nadelen 
+van optie a ten opzichte van optie b? Het gaat bij dit keuzeproces om het doen van een juiste 
+financieringsaanvraag, waarbij de voordelen groter zijn dan de nadelen. 
+
+c.  aanvraag 
+
+Bij de beoordeling van een financieringsaanvraag kijkt een financier naar harde en zachte onderdelen14 
+zoals”: de kwaliteit van de ondernemer, ondernemingsplan,  marktonderzoek, vermogensstructuur, 
+omzetprognoses en zekerheden (onderpand)15,16.  
+
+13 3. De zoektocht naar financiering (cbs.nl) 
+14 Financiering voorbereiden voor uw bedrijf | Ondernemersplein - KVK 
+15 Welke activa (= het geheel aan bezittingen in een onderneming) zijn in het bedrijf aanwezig en kunnen deze dienen als onderpand bij een 
+financieringsovereenkomst? 
+
+Pagina 39 van 44 
+
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+Eenvoud 
+
+Bij het aantrekken van eigen vermogen stelt de commissie dat de opbrengst van een emissie 
+(emissiekoers x geplaatste aandelen) centraal staat. Of een bedrijf aandelen verkoopt gelijk, boven of 
+onder de nominale waarde is minder van belang. Daarmee vervalt de noodzaak van het noemen van 
+agio. 
+
+Domein E 
+
+Achtergrond 
+
+Dit domein maakt de leerling vertrouwd met marketing en de functies daarvan. Marketing gaat over de 
+klantwaardepropositie van de organisatie waarin de meerwaarde voor de klant centraal staat 
+(Vakvernieuwingscommissie, 2014). Maar de vakvernieuwingscommissie noemt de 
+klantwaardepropositie, in tegenstelling tot bij het vwo, niet expliciet bij de eindtermen voor het havo. De 
+syllabuscommissie  heeft besloten aan te sluiten bij de globale doelen van het gehele domein E voor havo 
+(alleen E2 is leerstof voor het centraal examen) zoals geformuleerd in het rapport van de 
+vakvernieuwingscommissie:  
+
+E Marketing 
+
+•  E1 Doel en organisatie van marketingactiviteiten 
+
+- 
+
+21. De kandidaat kan marketing beschrijven met het oog op de te onderscheiden 
+doelgroepen. 
+
+•  E2 Marketingbeleid  
+
+- 
+
+22. De kandidaat kan het marketingbeleid van een organisatie beschrijven. 
+
+Samenhang binnen het domein marketing 
+
+“Dit domein laat de leerling inzien wat marketing inhoudt, welke instrumenten een organisatie kan 
+hanteren om haar marketingdoelstellingen te bereiken en hoe marketing uitwerkt op de consument en de 
+maatschappij” Vakvernieuwingscommissie, 2014, p.102). De vakvernieuwingscommissie stelde een 
+gecoördineerde marketingmix centraal. Bij een gecoördineerde marketingmix vullen 
+marketingbeslissingen elkaar aan om klanten een consistente boodschap over het product te geven. 
+Indien slechts één onderdeel van de marketinginstrumenten inconsistent is of niet met de rest integreert, 
+kan dit leiden tot het mislukken van zelfs het beste marketingplan. De meest geschikte marketingmix 
+beslissingen zullen daarom: 
+
+zijn gebaseerd op marketingdoelstellingen die betaalbaar zijn binnen het marketingbudget; 
+
+• 
+•  gecoördineerd en consistent met elkaar zijn; 
+•  gericht zijn op de juiste consumenten. 
+
+Bovenstaand is voor de commissie een reden geweest om doelstellingen een prominentere plek te geven 
+binnen het domein E2. Binnen het marketingbeleid van organisaties gaat het erom helder te hebben wat 
+het doel/de doelen zijn van dit marketingbeleid. Dit kan een zeer uiteenlopend scala aan doelen zijn, 
+bijvoorbeeld: verhogen van klantenbinding, vergroten van merkbewustzijn, meer omzet genereren, 
+imago oppoetsen en meer websiteverkeer genereren. Op basis van deze doelen wordt het 
+marketingbeleid vastgesteld en uitgevoerd. Bedrijfseconomie is bij uitstek een vak waarin het maken van 
+keuzes centraal staat, keuzes gebaseerd op een bepaald doel dat men voor ogen heeft.  Door de 
+subdomeinen E1 en E2 van elkaar los te halen, leren leerlingen bij E1 dus enkel wat voor doelen er 
+zouden kunnen zijn bij marketing, en bij E2 dus enkel het marketingbeleid zelf, terwijl ze, om juiste 
+keuzes te kunnen maken, deze twee in samenspel met elkaar zouden moeten zien. 
+
+Voor het subdomein E2 in de syllabus betekent dit dat, naast het schrappen van enkele eindtermen en 
+begrippen, er een nieuwe eindterm is toegevoegd over marketingdoelstellingen in relatie tot de 
+ondernemingsdoelstellingen en nieuwe begrippen zijn toegevoegd op de terreinen van 
+marketingdoelstellingen, marktomvang, productbeleid en prijsbeleid. 
+
+Relevantie als invalshoek: marketing in het vervolgonderwijs 
+
+De leerling is voorbereid op een voortgezette studie, respectievelijk het werkzame leven, of dit nu is als 
+zelfstandige, als ondernemer of als werknemer is één van de principiële doelen van het schoolvak 
+
+16 Rauwerda, K., de Graaf, F. J., van Teeffelen, L., & Abid, J. (2021). Gewoonten en tijdsdruk leidend bij keuzes voor mkb-financieringen. Maandblad 
+voor accountancy en bedrijfseconomie, 95(3/4), 137-150. https://doi.org/10.5117/mab.95.47817 
+
+Pagina 40 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+bedrijfseconomie, ondernemerschap en financiële zelfredzaamheid. Afgaande op de instroom bij een 
+opleiding zoals commerciële economie (Vereniging Hogescholen 2021) met duidelijke raakvlakken met 
+marketing is de syllabuscommissie van mening dat marketing een duidelijker profiel moet hebben binnen 
+de syllabus. Richting de toekomst zou een nieuwe vakvernieuwingscommissie nog eens kritisch naar het 
+marketingprogramma kunnen kijken door aan te sluiten op meer recente literatuur wat betreft 
+marketingonderwijs ,bijvoorbeeld de variant van de traditionele marketingmix 4 P’s zoals SIVA of 4C-
+model van Lauterborn. 
+
+Domein F 
+
+Achtergrond 
+
+‘Dit domein leert leerlingen nadenken over welke financiële en niet-financiële informatie voor het sturen 
+van een bepaald type organisatie nodig is en welke beheermaatregelen op basis daarvan genomen 
+kunnen worden (Vakvernieuwingscommissie, 2014, p. 110).  
+
+Samenhang met maatschappelijk verantwoord ondernemen 
+
+Bedrijven staan steeds meer voor de uitdaging om voor een bredere groep stakeholders relevante 
+informatie te verschaffen in het jaarverslag en inzicht te geven in zaken als de houdbaarheid van het 
+bedrijfsmodel en de risico's en prestaties17. Dat vereist naast financiële informatie ook betrouwbare niet-
+financiële informatie (NFI). Bijvoorbeeld over de ontwikkeling van inclusie en diversiteit,  CO2-emissies, 
+risicomanagement of klanttevredenheid. De syllabuscommissie sluit aan bij de ontwikkelingen wat betreft 
+maatschappelijk verantwoord ondernemen (domein B) en wat in de Angelsaksische literatuur 
+‘sustainability reporting’ wordt genoemd, oftewel rapporteren over de milieu- en sociale impact van 
+bedrijfsactiviteiten. 
+
+Kritische succesfactoren: een lastig concept 
+
+Er heerst nogal wat verwarring rond het begrip ksf-en18. Het startpunt voor het achterhalen van ksf-en 
+wordt gevormd door een duidelijke definitie ervan. Deze definitie wordt bemoeilijkt doordat er 
+verschillende perspectieven bestaan over ondernemingssucces. Gezien het feit dat het kiezen van een 
+definitie lastig is, is het afleiden de prestatie-indicatoren (kritische beheersvariabelen) die gerelateerd zijn 
+aan de ksf ook lastig. Wat kritische succesfactoren ook lastig maakt, zijn de verschillende niveaus: (a) 
+universele ksf-en, (b) ksf-en behorende bij een bepaalde typologie van ondernemingen en (c) 
+ondernemingsspecifieke ksf-en19. Dit maakt het onderdeel ksf en kpi, mede door contextgevoeligheid, 
+complex voor zowel docent als leerling. Ter illustratie, in de huidige syllabus werden verschillende 
+prestatie-indicatoren geformuleerd die strijdig met elkaar kunnen zijn, wat tot onnodige verwarring kan 
+leiden.  
+
+Domein G 
+
+De aanpassingen bij domein G zijn minimaal. De syllabuscommissie acht een toelichting bij domein G niet 
+noodzakelijk. 
+
+Referenties 
+
+Britt, S.L. & Huston, S.J. (2012). The role of money arguments in marriage. Journal of Family and 
+Economic Issues, 33, pp.464-476. 
+
+Brakel, M. van den & Arts. K. (2017). Trends in de financiële gevolgen van echtscheiding voor man en 
+vrouw. In: Sociaal economische trends 2017/03. 
+
+17 Niet-financiële informatie in de jaarverslagen van beursgenoteerde bedrijven (nba.nl) 
+
+18 Wijn, M., Hofenk, W., Hoekstra, R., & Hengeveld, M. (1995). Kritieke succesfactoren: een pilot study in de 
+Nederlandse industrie. Maandblad voor Accountancy en Bedrijfskunde. Juli/augustus, p.433-446 
+
+19 Wijn, M., Hofenk, W., Hoekstra, R., & Hengeveld, M. (1995). Kritieke succesfactoren: een pilot study in de 
+Nederlandse industrie. Maandblad voor Accountancy en Bedrijfskunde. Juli/augustus, p.433-446 
+
+Pagina 41 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+Brakel, M., van den, D. Herbers, en K. Arts (2020), Financiële gevolgen van echtscheiding, 
+in: Statistische Trends, juli, Financiële gevolgen van echtscheiding (cbs.nl). 
+
+Delsen, L. (2003). Centralisatie Nederlandse arbeidsverhoudingen gewenst. In Nijs, W.F. de; Nagelkerke, 
+A.G. (ed.), Sturen in het laagland. Over continuïteit en verandering van de Nederlandse 
+arbeidsverhoudingen (pp. 125 – 132). Delft : Eburon 
+
+Elzen, M. den, & Penning de Vries, B. (2020). Monitoring invoering vernieuwde bedrijfseconomie: Tweede 
+meting docenten en leerlingen 2019-2020. Enschede, SLO te vinden op: www.slo.nl;  
+
+Elzen, M. den, & Penning de Vries, B. (2021). Monitoring invoering vernieuwde bedrijfseconomie: Derde 
+meting van het monitoronderzoek. Meting in zomer 2021 onder docenten en leerlingen, over schooljaar 
+2020-2021. Enschede, SLO te vinden op: www.slo.nl 
+
+Elzen, M. den (2022). Monitorrapport bedrijfseconomie. Arnoud Boot: 'Kijk breder naar de ondernemer'. 
+Tijdschrift voor het Economisch Onderwijs, 1(2022), 12-14. 
+
+Hofwegen, L. van, & Hol, A. (2019). De Gouden Driehoek:Het samenspel van bestuur, toezicht en 
+medezeggenschap. OR/Magazine, 32-33. Geraadpleegd op 03 september 2022, van http: 
+https://www.arthurhol.nl/images/publicaties/2019_03_OR_Magazine.pdf  
+
+Lohrke, F.T, Mazzei, M.J., & Frownfelter-Lohrke, C.. (2022). Should It Stay or Should It Go? Developing 
+an Enhanced SWOT Framework for Teaching Strategy Formulation. Journal of Management, 46(2), 345–
+382. 
+
+Looise, J.K. (2018). HRM en arbeidsverhoudingen: historische achtergronden van een ongemakkelijke 
+relatie en perspectieven voor de toekomst. Tijdschrift voor HRM, Editie 2018, nr. 5, 73-94 
+
+Nibud. (2012). Goed omgaan met geld. Achtergronden bij de competenties voor financiële 
+zelfredzaamheid. Utrecht: Nibud. 
+
+Rauwerda, K., de Graaf, F. J., van Teeffelen, L., & Abid, J. (2021). Gewoonten en tijdsdruk leidend bij 
+keuzes voor mkb-financieringen. Maandblad voor accountancy en bedrijfseconomie, 95(3/4), 137-
+150. https://doi.org/10.5117/mab.95.47817 
+
+Smith, G.F. (2003). Beyond Critical Thinking and Decision Making: Teaching Business Students How To 
+Think. Journal of Management Education, 27, pp 24-51. 
+
+–  StatLine - Schenkingen (waarvoor aangifte); kenmerken schenking, schenker en ontvanger (cbs.nl) 
+
+StatLine - Verkrijgingen uit nalatenschappen (waarvoor aangifte); kenmerken verkrijger (cbs.nl) 
+
+Summer, C., Bettis, R., Duhaime, I., Grant, J., Hambrick, D., Snow, C., & Zeithaml, C. (1990). Doctoral 
+education in the field of business policy and strategy. Journal of Management, 16, 361–398. 
+
+Vakvernieuwingscommissie (2014). Van M&O naar Bedrijfseconomie, ondernemerschap en financiële 
+zelfredzaamheid. Eindrapport van de vakvernieuwingscommissie M&O. Oktober, Enschede: SLO 
+
+Vereniging Hogescholen: bachelor instroom 2021 commerciële economie hbo 3953 studenten t.o.v. 
+bachelorinstroom finance & control hbo 1523 studenten en accountancy hbo 989 studenten 
+
+Wetenschappelijke Raad Regeringsbeleid (2016). Eigen-schuld-een-gedragswetenschappelijk-perspectief-
+op-problematische-schulden. WRR-Verkenning 33, Tiemeijer, W: Amsterdam, University Press 
+
+Wiebes, D.M. (2022). Greenwashing in het voortgezet onderwijs? De behoefte aan een nieuw fundament 
+van bedrijfseconomie. Amsterdam: Interfacultaire Lerarenopleidingen UvA 
+
+Wijn, M., Hofenk, W., Hoekstra, R., & Hengeveld, M. (1995). Kritieke succesfactoren: een pilot study in 
+de Nederlandse industrie. Maandblad voor Accountancy en Bedrijfskunde. Juli/augustus, p.433-446 
+
+Pagina 42 van 44 
+
+ 
+ 
+BEDRIJFSECONOMIE HAVO | CONCEPTSYLLABUS CENTRAAL EXAMEN 2027 
+Versie 2 
+
+Pagina 43 van 44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

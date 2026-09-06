@@ -18,27 +18,25 @@ Bevestigde directe PDF-URL's (peildatum sep 2026 — check op nieuwere versie):
 - Nederlands (3F) havo: `…/2025-07/syllabus-nederlands-3f-havo-2027-versie-2.pdf`
 - Moderne vreemde talen havo: `…/2025-07/syllabus-moderne-vreemde-talen-havo-2027-versie-2.pdf`
 
-## ⚠️ Waarom dit een eenmalige stap van JOU vraagt
-De cloud-omgeving waarin de generatie draait, mag **niet** naar examenblad.nl
-(egress-proxy). Alleen jouw eigen machine kan de PDF's ophalen. Daarom:
+## ✅ Status: opgehaald en in de repo (sep 2026)
+De syllabi zijn opgehaald met open egress en staan als **tekst-extractie** in
+`syllabi/2027/<niveau>-<vakId>.txt` — 28 vakken (havo 12 + vwo 16, m.u.v. vwo
+informatica dat géén CE-syllabus heeft). Engels/Duits/Frans delen terecht de
+gezamenlijke *moderne vreemde talen*-syllabus.
 
-## Het recept (eenmalig, ~15 min, gratis)
-1. Op jouw machine, in de repo-map, maak `syllabi/2027/`.
-2. Download per vak de **"Syllabus centraal examen 2027"**-PDF van de landingspagina
-   en sla 'm op als `syllabi/2027/<niveau>-<vakId>.pdf`
-   (vakId = zoals in de app: `bi`, `na`, `ec`, `gs`, …; niveau = `havo`/`vwo`/`vmbo`).
-   - PowerShell-voorbeeld voor één vak:
-     ```powershell
-     iwr "https://www.examenblad.nl/system/files/exam-document/2025-07/syllabus-natuurkunde-havo-2027-versie-2.pdf" -OutFile "syllabi\2027\havo-na.pdf"
-     ```
-3. Converteer naar tekst (optioneel maar aanbevolen; scheelt de cloud een PDF-parser):
-   sla platte tekst op als `syllabi/2027/<niveau>-<vakId>.txt`.
-4. `git add syllabi/2027 && git commit -m "Syllabi 2027 als bron" && git push origin main`.
+De **PDF-bronnen** worden bewust *niet* meegecommit (25 MB; `.gitignore`) maar zijn
+reproduceerbaar:
+```bash
+bash scripts/fetch-syllabi.sh        # download de PDF's naar syllabi/2027/*.pdf
+python3 scripts/extract-syllabi.py   # extraheert naar syllabi/2027/*.txt (pure-python pdfminer)
+```
+`scripts/fetch-syllabi.sh` crawlt per vak de examenblad-landingspagina →
+`/2027/<niveau>/documenten/syllabus-<vak>-<niveau>` (die serveert de PDF direct).
 
-Daarna leest élke automatische sessie de lokale `syllabi/2027/<niveau>-<vakId>.(txt|pdf)`
-en grondt de leerdoelen/specs erop — volledig geautomatiseerd, gratis, zonder docenten.
+## Hoe de generatie dit gebruikt
+Élke content-sessie leest de lokale `syllabi/2027/<niveau>-<vakId>.txt` en grondt
+de leerdoelen/specs op de officiële domein-/subdomein-/eindterm-afbakening —
+bronwaar, gratis, zonder docenten. Dit is de `2027-syllabi`-bron uit de canon.
 
-## Als je géén handmatige stap wilt (terugval)
-Dan gronden de sessies op: de al in de app gecodeerde domeinstructuur + `ceStatus`,
-een gerichte web-zoekopdracht per vak, en vakkennis. 2027-bewust en gratis, maar
-minder gezaghebbend dan de volledige syllabus-PDF.
+> **Herzien?** De CvTE publiceert soms een nieuwere `versie-x`. Draai dan de twee
+> scripts opnieuw en commit de bijgewerkte `.txt`.

@@ -1,0 +1,3167 @@
+LATIJNSE TAAL 
+EN CULTUUR 
+VWO 
+
+SYLLABUS CENTRAAL 
+EXAMEN 2027 
+
+Versie 2, juli 2025 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+© 2025 College voor Toetsen en Examens, Utrecht 
+
+Alle rechten voorbehouden. Alles uit deze uitgave mag mits voorzien van een bronvermelding en zonder 
+enige wijziging worden verveelvoudigd, opgeslagen in een geautomatiseerd gegevensbestand, of 
+openbaar gemaakt, in enige vorm of op enige wijze, hetzij elektronisch, door fotokopieën, opnamen, of 
+enige andere manier zonder voorafgaande toestemming van het College. Het hergebruik van eventueel 
+auteursrechtelijk beschermd werk van derden in dit werk is niet nader geregeld door het CvTE. 
+
+Pagina 2 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+INHOUD 
+
+Voorwoord 
+
+1 
+
+2 
+
+3 
+3.1 
+3.2 
+
+Examenstof van het centraal examen 
+
+Specificatie examenstof van het centraal examen 
+
+Het centraal examen 
+Zittingen centraal examen 
+Hulpmiddelen 
+
+Bijlage 1. Examenprogramma Latijnse taal en cultuur vwo 
+
+Bijlage 2. De plaats van Latijnse taal en cultuur en Griekse taal en cultuur in de profielen 
+
+Bijlage 3. De minimumlijst Latijn 
+Deel I  Vormleer 
+Deel II   Syntaxis 
+Deel III   Literaire termen: stilistische, narratologische en argumentatieve middelen 
+
+APPENDIX 
+
+3 
+
+5 
+
+6 
+
+12 
+12 
+12 
+
+13 
+
+15 
+
+16 
+16 
+19 
+22 
+
+33 
+
+Pagina 3 van 36 
+
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+VOORWOORD 
+De minister heeft de examenprogramma's op hoofdlijnen vastgesteld. In het examenprogramma zijn de 
+exameneenheden aangewezen waarover het centraal examen (CE) zich uitstrekt: het CE-deel van het 
+examenprogramma.  
+
+Het College voor Toetsen en Examens (CvTE) geeft in een syllabus, die jaarlijks verschijnt, een 
+toelichting op het CE-deel van het examenprogramma. Behalve een beschrijving van de exameneisen 
+voor een centraal examen kan een syllabus verdere informatie over het centraal examen bevatten. 
+Bijvoorbeeld over een of meer van de volgende onderwerpen: specificaties van examenstof, 
+begrippenlijsten, bekend veronderstelde onderdelen van domeinen of exameneenheden die verplicht zijn 
+op het schoolexamen, bekend veronderstelde voorkennis uit de onderbouw, bijzondere vormen van 
+examinering (zoals computerexamens), voorbeeldopgaven, toelichting op de vraagstelling, toegestane 
+hulpmiddelen. 
+
+De functie van een syllabus is een leraar in staat te stellen zich een goed beeld te vormen van wat in het 
+centraal examen wel en niet gevraagd kan worden. Naar zijn aard is een syllabus dus niet een volledig 
+gesloten en afgebakende beschrijving van alles wat op een examen zou kunnen voorkomen. Het is 
+mogelijk, al zal dat maar in beperkte mate voorkomen, dat op een CE ook iets aan de orde komt dat niet 
+met zo veel woorden in deze syllabus staat, maar dat naar het algemeen gevoelen in het verlengde 
+daarvan ligt. 
+
+Een syllabus is ook een hulpmiddel voor degenen die zichzelf op een centraal examen voorbereiden. Een 
+syllabus kan ook behulpzaam zijn voor de producenten van leermiddelen en voor nascholingsinstanties. 
+De syllabus is niet van belang voor het schoolexamen. Daarvoor zijn door de SLO handreikingen 
+geproduceerd die niet in deze uitgave zijn opgenomen. 
+
+Deze syllabus geldt voor het examenjaar 2027. Syllabi van eerdere jaren zijn niet meer geldig en kunnen 
+van deze versie afwijken. Voor het examenjaar 2028 wordt een nieuwe syllabus vastgesteld. 
+Het CvTE publiceert uitsluitend digitale versies van de syllabi. Dit gebeurt via Examenblad.nl 
+(www.examenblad.nl), de officiële website voor de examens in het voortgezet onderwijs. 
+In de syllabi 2027 zijn de wijzigingen ten opzichte van de vorige syllabus voor het examenjaar 2026 
+duidelijk zichtbaar. De veranderingen zijn geel gemarkeerd. Er zijn diverse vakken waarbij de syllabus 
+2027 geen inhoudelijke veranderingen heeft ondergaan.  
+
+Een syllabus kan ook tussentijds worden aangepast, bijvoorbeeld als een in de syllabus beschreven 
+situatie feitelijk veranderd is. De aan een centraal examen voorafgaande Septembermededeling is dan 
+het moment waarop dergelijke veranderingen bekendgemaakt worden. Kijkt u voor alle zekerheid 
+jaarlijks in september op Examenblad.nl. 
+
+Het CvTE stelt het aantal en de tijdsduur van de toetsen van het centraal examen vast en de wijze 
+waarop het centraal examen wordt afgenomen. Deze vaststelling wordt gepubliceerd in het rooster voor 
+de centrale examens en in de Septembermededeling. 
+
+Voor opmerkingen over syllabi houdt het CvTE zich steeds aanbevolen. U kunt die zenden aan 
+info@cvte.nl of aan CvTE, Postbus 315, 3500 AH Utrecht. 
+
+De voorzitter van het College voor Toetsen en Examens, 
+Drs. J.H. (John) van der Vegt MPM 
+
+Pagina 4 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+1 
+
+EXAMENSTOF VAN HET CENTRAAL EXAMEN 
+
+Het centraal examen heeft betrekking op de domeinen A (sub domein 1: reflectie op klassieke 
+teksten), B1 (B.3) en C (C.5). 
+Het centraal examen heeft betrekking op authentieke en vertaalde teksten van een of meer auteurs, 
+behorend tot eenzelfde genre. 
+Het College voor Toetsen en Examens maakt een specificatie bekend van het centraal examen. 
+
+De examenonderwerpen in de komende jaren zijn: 
+
+2027 
+
+Cicero retor 
+
+2028 
+
+Ovidius 
+
+2029 
+
+Seneca en een andere 
+auteur 
+
+2030 
+
+Vergillius 
+
+Het schoolexamen heeft betrekking op de domeinen A, B, C, D en E. Deze domeinen komen aan de 
+orde aan de hand van een selectie van tenminste 30 pagina’s (Oxford Classical Text) Latijnse teksten. 
+Deze selectie bevat teksten van tenminste twee genres uit de Latijnse literatuur (zodanig dat samen met 
+de auteur van het centraal examen proza én poëzie aan bod komen). 
+Deze selectie bevat geen teksten van de auteur(s) die voor het centraal examen zijn vastgesteld, tenzij 
+deze teksten behoren tot een ander genre en thema. 
+Daarnaast komen deze domeinen aan de orde aan de hand van: 
+
+–  een selectie van tenminste 45 pagina’s klassieke, vertaalde teksten; 
+– 
+
+indien het bevoegd gezag daarvoor kiest: toetsing van het vertalen van één of meer ongeziene 
+passages; 
+indien het bevoegd gezag daarvoor kiest: toetsing van de (creatieve) verwerking van een of meer 
+cultuurdomeinen; 
+indien het bevoegd gezag daarvoor kiest: stof van het centraal examen naast de hierboven 
+vermelde stof voor het schoolexamen; 
+indien het bevoegd gezag daarvoor kiest: andere vak onderdelen, die eventueel per kandidaat 
+kunnen verschillen. 
+
+– 
+
+– 
+
+– 
+
+Het bevoegd gezag kiest tenminste drie van de volgende cultuurdomeinen waarop de eindtermen 
+betrekking hebben: verhalengoed, drama, beeldende kunst, architectuur, filosofie. 
+Het bevoegd gezag kan, naast bovengenoemde domeinen, ook eigen cultuurdomeinen toevoegen. 
+
+1 Voor zover dat mogelijk is, gelet op het karakter van het centraal examen. 
+
+Pagina 5 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+2 
+
+SPECIFICATIE EXAMENSTOF VAN HET CENTRAAL EXAMEN  
+
+Auteurs:  
+Genre :  
+
+Cicero  
+Retorisch proza 
+
+A 
+
+TEKSTEN 
+
+Cicero: In Catilinam, Pro Archia Poeta, In Pisonem, De Oratore 
+
+In Catilinam:  
+T. Maslowski: Orationes in L. Catilinam quattuor. Munich/Leipzig 2003. 
+Pro Archia Poeta: 
+A.C. Clark: M. Tulli Ciceronis Orationes IV. Oxford 1910. 
+In Pisonem: 
+A.C. Clark: M. Tulli Ciceronis Orationes III. Oxford 1909. 
+De Oratore: 
+K.F. Kumaniecki: De Oratore. Leipzig 1969. 
+Maken en breken: de macht van het woord 
+
+Tekstedities: 
+
+Thema: 
+
+1 
+
+Pensum 
+
+De met een asterisk (*) gemarkeerde passages worden in vertaling gelezen. 
+
+In Catilinam 1 
+1-2 
+3-4* 
+5-6 t/m custodient 
+9-13 (praetulisti) 
+17-18*   
+21-27 nominaretur* 
+27 Nunc - 29 conflagraturum 
+29 His ego - 33* 
+
+Pro Archia poeta 
+1-4 t/m asciscendum fuisse* 
+4 Nam ut t/m 7   
+8-11*  
+12-19 violavit 
+19 Saxa - 22*    
+23-26 dederet*   
+26 Neque -30 
+31-32*   
+
+In Pisonem 
+1 (Iamne vides) -3 
+6-8* 
+13-14*   
+15-16 
+17-24 nominabuntur* 
+30-33 optatior*   
+68-72 inquinavit  
+72 quimodo -75 fuisset   
+
+De Oratore 
+1.113 sic igitur – 117* 
+1.126-128* 
+1.129-136* 
+
+Catilina moet gedood worden 
+
+moordaanslag op Cicero; Catilina moet vertrekken 
+Rome zelf, bang voor Catilina, vraagt hem te vertrekken 
+wie in opstand komt, verliest zijn burgerrecht 
+
+inleiding; Cicero zet het doel van zijn rede uiteen 
+leven en groeiende beroemdheid van Archias 
+Cicero weerlegt de punten van de aanklacht 
+de grote waarde van literatuur en de essentiële rol van dichters 
+ook onze voorouders erkenden de waarde van literatuur 
+literatuur inspireert tot grootsheid 
+
+Piso stelt niets voor in vergelijking met homo novus Cicero 
+Cicero is de parens patriae; Piso steunt Clodius 
+misdragingen door de persoon Piso 
+
+Piso gehaat en Cicero geliefd 
+Piso’s vriendschap met Philodemus  
+Cicero weerlegt kritiek op zijn eigen poëzie 
+
+het belang van aangeboren talent (ingenium) 
+de veelzijdigheid van de retor 
+grote talenten hebben ook training nodig 
+
+Pagina 6 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+1.137-145 gustaram 
+
+klassieke lessen over retorica: hoe zit een redevoering in elkaar? 
+
+Teksten ter vergelijking 
+
+Plinius, Epistulae 
+1.2* 
+3.15* 
+3.21* 
+
+Martialis, epigrammen   
+3.66* 
+5.69* 
+4.16* 
+9.70* 
+
+over schrijfkunst; Cicero is aangenaam 
+over schrijfkunst; Cicero droeg dichters een warm hart toe 
+over de dood van Martialis; Plinius krijgt lof omdat hij op Cicero lijkt 
+
+over de dood van Cicero, een verlies voor Rome 
+over de dood van Cicero, de mond van Rome 
+over Cicero als redenaar; hij was een groot pleiter 
+over Cicero als redenaar; bekendheid van o tempora o mores 
+
+Quintilianus, Institutio Oratoria   
+11.1.15-28* 
+12.1-14-24* 
+
+Cicero schept volgens sommigen te veel op over zichzelf 
+Cicero is de beste orator, ondanks zijn gebreken 
+
+Thema 
+In het pensum van 2027 staat de macht van het woord centraal. Wat kun je allemaal bereiken met 
+woorden, en hoe word je een goed spreker of schrijver? In de teksten zien we dat de juiste woorden op 
+het juiste moment een enorm effect kunnen bereiken in de wereld: ze kunnen verstrooiing bieden en 
+inspireren, maar ook het leven van een mens redden of vernietigen. De wereld van de Romeinen lijkt 
+hierin sterk op de onze: ook in onze tijd kunnen woorden, vanwege het wijdverbreide gebruik van de 
+sociale media en het grote forum dat het internet kan bieden, mensen marginaliseren, cancelen of juist 
+op een voetstuk plaatsen. Cicero laat met zijn redevoeringen zien hoeveel macht het woord heeft, en legt 
+in zijn theoretische werken over de retorica ook uit hoe je woorden zo effectief mogelijk kunt inzetten. 
+
+Achtergronden bij de redevoeringen 
+De eerste Catilinarische redevoering werd gehouden in 63 v.Chr. Cicero brengt de samenzwering van 
+Catilina aan het licht en roept Catilina op om Rome te verlaten. Hij schildert Catilina en zijn volgelingen af 
+als corrupt, moreel bankroet en aan lager wal geraakt. Deze redevoering illustreert bij uitstek het 
+retorisch talent van Cicero.  
+De redevoering voor de dichter Archias is uitgesproken in 62 v.Chr. Cicero verdedigt voor de rechtbank 
+de Griekse dichter Archias, die volgens de aanklagers ten onrechte het Romeinse burgerrecht zou hebben 
+verkregen. De speech is vooral beroemd geworden vanwege Cicero’s lof voor de poëzie. Van de 
+verschillende voordelen van de poëzie is met name die van het roemen van belangrijke daden voor hem 
+belangrijk: zo kan literatuur inspireren tot moreel juist gedrag en de republiek ondersteunen.   
+In de redevoering tegen Piso (uitgesproken 55 v.Chr.) neemt Cicero het op tegen een persoonlijke vijand, 
+die hij met een vlammende oratio invectiva in de senaat aanvalt. Toen verschillende politici Cicero de 
+stad uit wilden werken, had Piso Cicero kunnen bijstaan – maar in ruil voor het proconsulaat van de 
+provincie Macedonia hield hij zich afzijdig. Cicero valt hem daarom na zijn terugkeer in de senaat aan, 
+waarbij hij veel negatieve aandacht besteedt aan het karakter van Piso. Daarna bekritiseert hij Piso’s 
+omgang met de filosoof Philodemus, en verdedigt hij zich tegen kritiek op zijn eigen poëzie. 
+
+2 
+
+Genre 
+
+2.1 Cicero en de retorica  
+De  redevoeringen  van  Cicero  zijn  retorische  teksten,  d.w.z.  teksten  met  een  persuasief  doel.  De  In 
+Catilinam en In Pisonem zijn uitgesproken ten overstaan van de senaat, en de Pro Archia poeta voor de 
+rechtbank. Cicero is er, vanwege de belangen van de staat of van zijn cliënt (of van zichzelf), alles aan 
+gelegen zijn gelijk te krijgen, ook al heeft hij dat misschien niet. Hij geeft zíjn voorstelling van de situatie 
+en van de gebeurtenissen, en hij probeert die voorstelling zo veel mogelijk te kleuren op een manier die 
+voor hem gunstig is.  
+Cicero was niet alleen in de praktijk actief als spreker, maar was ook zeer geïnteresseerd in de theorie van 
+de retorica. In verschillende traktaten beschreef hij zijn visie op de welsprekendheid. Zijn  De Oratore is 
+het meest uitgebreide daarvan. In dat werk beschrijft hij niet alleen allerlei technische aspecten van het 
+spreken, maar ook de ideale spreker: die moet filosofisch geschoold zijn en over de juiste morele kwaliteiten 
+beschikken, zodat hij van waarde is voor de staat.  
+
+Pagina 7 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+Cicero’s leven stond in het teken van de retorica. Dankzij zijn retorische vermogens werd hij een prominent 
+figuur,  die  zelfs  het  hoogste  ambt  van  consul  bekleedde.  Tegelijkertijd  creëerde  hij  door  zijn  arrogante 
+manier  van  spreken  en  felle  aanvallen  op  tegenstanders  diverse  persoonlijke  vijanden,  die  hem  onder 
+andere dwongen om in ballingschap te gaan, en is hij om het leven gekomen vanwege de inhoud van zijn 
+Philippicae.  
+
+2.1.1 De geschiedenis van de retorica  
+
+1. Oorsprong en vroege ontwikkeling.  
+Goede sprekers genoten al in de tijd die Homerus beschrijft veel aanzien en invloed. Met de opkomst van 
+de democratie in Athene en andere steden in de vijfde eeuw v.Chr. nam het belang van de retorica sterk 
+toe.  Door  de  invloed  van  diverse  ‘sofisten’,  publieke  sprekers  en  filosofen  die  kennis  en  vaardigheden 
+overdroegen op het gebied van gelijk hebben en vooral gelijk krijgen, werd de retorica het object van studie 
+en reflectie. 
+
+2. Aristoteles en de retorica  
+Aristoteles (384-322 v.Chr.) is de eerste die de retorica systematisch benaderde, vanuit een empirisch en 
+praktisch standpunt. Hij maakte een onderscheid tussen de retorica, die een moreel neutrale vaardigheid 
+is, en de redenaar, die verantwoordelijk is voor een moreel verantwoorde toepassing. In principe moet de 
+redenaar  volgens  hem  met  zakelijke  en  eerlijke  argumenten  zijn  toehoorders  proberen  te  overtuigen. 
+Omdat  de  meeste  mensen  echter  niet  oordelen  op  strikt  rationele  gronden,  mag  de  redenaar  volgens 
+Aristoteles ook psychologische beïnvloeding en boeiend taalgebruik aanwenden om zijn doel te bereiken. 
+Mede in het kader daarvan maakte Aristoteles een invloedrijk onderscheid tussen drie strategieën om het 
+publiek  te  overreden: op  basis  van  karakter  (ethos),  op  basis  van  argumenten  (logos) en  op  basis  van 
+emotie (pathos). 
+
+3. Hoogtepunt en verandering van de retorica in Griekenland 
+Het hoogtepunt van de retorische praktijk in Griekenland werd belichaamd door Demosthenes (384-322 
+v.Chr.), die het grote voorbeeld werd voor Cicero. Demosthenes excelleerde in het genre van de politieke 
+welsprekendheid, dat in de Griekse wereld aan belang inboette na de veroveringen van Alexander de Grote 
+en  de  stichting  van  de  grote  koninkrijken  van  Alexanders  opvolgers.  De  procesredevoering  bleef  echter 
+belangrijk,  en  de  lofrede  kreeg  zelfs  een  nieuwe  impuls  door  de  verheerlijking  van  de  Hellenistische 
+heersers. In het onderwijssysteem nam het onderwijs in de retorica een overheersende positie in. 
+
+4. Retorica in Rome 
+In  de  tweede  eeuw  v.Chr.  kwam  in  Rome  het  onderwijs  in  de  retorica  op,  hoewel  de  praktijk  van 
+redevoeringen net als in Griekenland natuurlijk al veel langer bekend was (bijvoorbeeld in de senaat, de 
+volksvergadering en de rechtspraak). De spreekvaardigheid van de Romein berustte tot die tijd vooral op 
+aanleg en routine, aangevuld met voorbeelden die hij door imitatio verkregen had. Door Griekse leraren in 
+de  retorica  raakten  de  Romeinen  vertrouwd  met  het  Hellenistische  onderwijssysteem.  Rond  100  v.Chr. 
+werden ook scholen geopend door Romeinse leraren die hun onderwijs in het Latijn gaven; Cicero behoorde 
+dus tot de eerste generatie Romeinen die Latijnstalig retoricaonderwijs kregen. De inhoud van het (Griekse) 
+studieprogramma  bleef  in  grote  lijnen  gelijk  en  de  Romein  zag  het  als  zijn  opgave  om  de  Griekse 
+voorbeelden na te volgen en te overtreffen (imitatio en aemulatio). De retorica onderging bovendien een 
+transformatie omdat de Griekse theorie moest worden aangepast aan de Romeinse praktijk. 
+Met Cicero bereikte de praktijk van de Romeinse welsprekendheid haar hoogtepunt. Maar ook in theoretisch 
+opzicht heeft Cicero een rol van grote betekenis gespeeld. In De oratore heeft hij zijn belangrijkste ideeën 
+omtrent de ideale redenaar uiteengezet. Deze orator perfectus moest retorisch geschoold, door de praktijk 
+gevormd en filosofisch onderlegd zijn. Het belang van de theoretische en technische aspecten (ars) werd 
+door hem minder hoog aangeslagen dan de natuurlijke aanleg (ingenium). Het allerbelangrijkst voor Cicero 
+was de culturele vorming van de redenaar op het gebied van filosofie, recht en geschiedenis.  
+Na  de  vestiging  van  de  alleenheerschappij  van  Augustus  werd  de  politieke  retorica  in  Rome  minder 
+belangrijk dan daarvoor. De retorenscholen bleven wel fungeren als opleidingsinstituut voor de elite; de 
+praktijk van juridische speeches bleef immers bestaan, en formeel gezien vonden er nog altijd debatten 
+plaats in de senaat.  
+
+2.1.2 De theorie van de klassieke retorica  
+
+1. De doelstelling 
+Het  doel  van  de  retorica  is  het  publiek,  de  tegenpartij  of  de  beoordelende  instantie  te  overtuigen  of  te 
+overreden (persuadere).  
+
+2. Het onderwerp 
+
+Pagina 8 van 36 
+
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+In navolging van Aristoteles onderscheidt men drie soorten redevoeringen:  
+1) Het genus iudiciale: het pleidooi in een rechtszaal, met als belangrijkste vraagstelling: is de daad die ter 
+beoordeling  ligt  wettig  of  onwettig  dan  wel  rechtmatig  of  onrechtmatig?  Alle  vraagstukken  waarbij  een 
+beoordeling op basis van het geldende recht (bv. diefstal, geweldpleging, moord) vereist wordt, vallen in 
+deze categorie.  
+2) Het genus deliberativum: de politieke redevoering, met als hoofdvraag of het ter discussie staande beleid 
+nuttig of schadelijk is en of het moreel verantwoord is of niet. Men kan bijvoorbeeld denken aan situaties 
+waarin een regering de oorlog wil verklaren aan een vijand of een afgevallen bondgenoot.  
+3)  Het  genus  demonstrativum:  de  gelegenheidsrede,  zowel  de  lofrede  als  de  smaadrede,  met  als 
+vraagstelling: is de persoon of zaak in kwestie goed of slecht, mooi of lelijk etc. Men kan hierbij denken 
+aan herdenkingsredevoeringen waarbij bepaalde personen of zaken dankbaar herdacht worden.   
+
+3 De taken van de spreker 
+De belangrijkste indeling uit de retorische systematiek is opgesteld vanuit het gezichtspunt van de spreker. 
+Het gaat hier om  de ‘taken van de redenaar',  de opeenvolgende bewerkingsfasen vanaf de confrontatie 
+met het onderwerp tot de confrontatie met het publiek. Meestal werden er vijf fasen onderscheiden:  
+
+- 
+
+- 
+
+inventio: het onderzoeken van het voorgelegde vraagstuk om tot een centrale stelling te komen, 
+en het vinden van de argumenten voor het verdedigen van die stelling;  
+dispositio:  het  ordenen  van  het  gevondene,  met  name  van  de  argumenten,  tot  een  goed 
+opgebouwd betoog; 
+elocutio: de adequate verwoording van het gevondene en geordende;  
+
+- 
+-  memoria: het memoriseren van de tekst; 
+- 
+
+actio: de voordracht van de redevoering (stemgeluid, gezichtsuitdrukking, gebaren).   
+
+4 De tekst  
+Voor de opbouw van het betoog hield men in het algemeen de volgende principes aan, die samen ook wel 
+de ‘leer van de delen van de redevoering’ genoemd werden:  
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+exordium, de inleiding. Hierin wordt de toehoorder voorbereid op het komende betoog en wordt 
+zijn aandacht gewekt of eventuele tegenzin weggenomen. Bij de toehoorder dienen gevoelens van 
+sympathie gewekt te worden voor de spreker, de cliënt of de zaak (of alle drie).  
+narratio,  de  vertelling  of  uiteenzetting  van  de  toedracht.  Pas  als  de  redenaar  merkt  dat  hij  zijn 
+publiek  in  zijn  greep  heeft,  begint  hij  met  het  vertellen  van  de  (voor)geschiedenis.  Het  spreekt 
+vanzelf  dat  hij  daarbij  niet  een  strikt  objectief  verslag  van  de  gang  van  zaken  hoeft  te  geven. 
+Negatieve zaken kunnen worden weggemoffeld, positieve zaken kunnen worden aangedikt.   
+propositio, de stelling, en de indeling van de daarop volgende argumentatie. Dit onderdeel heeft 
+als belangrijkste functie om de toehoorder zeer beknopt in te prenten wat er gebeurd is en wat er 
+behandeld zal gaan worden in het vervolg van de redevoering.   
+argumentatio, de eigenlijke argumentatie pro en contra. In dit onderdeel wordt geappelleerd aan 
+het vermogen van de toehoorder  om  logisch  te redeneren. De stelling van de tegenpartij  wordt 
+ontkracht (refutatio) en de eigen positie door argumenten bevestigd (confirmatio).  
+peroratio, de afsluiting van de redevoering. In het sluitstuk van de redevoering kan men nog een 
+laatste beroep doen op de toehoorders en is er de mogelijkheid om te recapituleren.   
+
+Redenaars hielden zich vaak globaal aan deze ‘ideale’ indeling van de redevoering, hoewel een redenaar 
+ervan kon afwijken als hij dat nodig vond.   
+
+5 De leer van de overreding: ‘conciliare’, ‘docere’ en ‘movere’ 
+Volgens de leer van de overreding beschikt de redenaar over drie wapens om zijn publiek te overtuigen: 
+conciliare  (‘gunstig  stemmen’),  docere  (‘onderwijzen’)  en  movere  (‘ontroeren’).  De  al  eerder  genoemde 
+strategieën ethos, logos en pathos zijn aan deze wapens nauw verwant. 
+Het exordium is volgens de klassieke retorica de aangewezen plaats voor het conciliare: het publiek gunstig 
+stemmen door sympathie te wekken voor de redenaar en zijn cliënt, en de indruk wekken geloofwaardig 
+te zijn. De redenaar probeert vanaf het begin een vertrouwensrelatie met het publiek aan te gaan.   
+De onderdelen narratio t/m argumentatio lenen zich bij uitstek voor het  docere: de presentatie van het 
+feitenmateriaal en de - eventueel suggestieve - argumentatie.   
+De  peroratio  moet  de  toehoorder  ten  slotte  in  de  juiste  gemoedstoestand  (bv.  verontwaardiging  of 
+medelijden) brengen: movere. In de praktijk gaat de redenaar vaak al in een eerder stadium over tot het 
+movere.   
+
+6 Oratio invectiva  
+Een oratio invectiva kan gedefinieerd worden als een redevoering die tot doel heeft om een tegenstander 
+aan te vallen en onderuit te halen. Dit gebeurt door de persoon in kwestie van allerlei lelijks te betichten: 
+gierigheid,  hebzucht,  lafheid,  drankverslaving,  luiheid,  machtsmisbruik,  etc.  Dergelijke  argumenten,  die 
+naar ons gevoel weinig met de zaak te maken  hebben en puur op de persoon gericht zijn, noemen we 
+argumenten ad hominem. 
+
+Pagina 9 van 36 
+
+ 
+ 
+  
+  
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+De oratio invectiva vormde in de Romeinse republiek een vast onderdeel van het politiek bedrijf. Het was 
+een  algemeen  gebruikt  en  geaccepteerd  middel  om  tegenstanders  verdacht  te  maken.  Persoonlijke 
+verdachtmakingen (onaangenaam uiterlijk,  onzedelijk gedrag, oneervolle afkomst) waren in dit verband 
+vaak belangrijker dan inhoudelijke kritiek. In vele redevoeringen van Cicero komen kenmerken uit de oratio 
+invectiva voor.  
+De  positieve  tegenhanger  van  de  oratio  invectiva  is  de  laudatio  of  lofrede,  die  juist  de  positieve 
+eigenschappen  van  een  persoon  benadrukt.  Ook  van  dit  type  redevoering  worden  dikwijls  elementen 
+gebruikt door Cicero.  
+
+Taal en stijl 
+
+3 
+De CvTE-minimumlijst (zie bijlage 3) vormt het uitgangspunt bij de op het centraal examen gestelde vragen 
+en bij de annotatie van de ongeziene authentieke tekst.  
+
+B 
+
+CULTUURHISTORISCHE CONTEXT  
+
+1. De historische context 
+De  late  Romeinse  Republiek,  de  tijd  waarin  Cicero  opgroeide,  was  een  onzekere,  gewelddadige  en 
+politiek instabiele tijd. Aan het begin van de eerste eeuw v.Chr. bestonden steeds heviger spanningen 
+tussen  de  zogenaamde  populares  (politici  die  de  macht  wilden  grijpen  via  het  volk,  d.w.z.  de 
+volksvergadering)  en  de  optimates  (politici  die  de  macht  van  de  senaat  willen  versterken).  Na 
+jarenlange strijd tussen deze facties slaagden de  populares erin de overhand te krijgen. In 60 v.Chr. 
+gingen Crassus en Pompeius een verbond aan met Gaius Julius Caesar, een jonge ambitieuze politicus. 
+Rond 50 v.Ch., na de dood van Crassus, woedde er een verbitterde machtsstrijd tussen Pompeius en 
+Caesar, die door de laatste gewonnen werd. In 44 v.Chr. werd Caesar vermoord door sam enzweerders 
+onder leiding van Brutus.  Caesars adoptiefzoon Octavianus versloeg samen met Marcus Antonius de 
+samenzweerders, maar daarna werden ze elkaars tegenstanders. Dit leidde tot een burgeroorlog die 
+werd  beslist  in  de  slag  bij  Actium  in  31  v.Chr.,  waar  Octavianus  zijn  tegenstander  Marcus  Antonius 
+versloeg. Deze gebeurtenis wordt vaak beschouwd als het begin van de keizertijd. Octavianus krijgt 
+kort daarna de titel Augustus; hij en zijn opvolgers behoren tot het Julisch -Claudische huis. 
+In  de  Romeinse  Republiek  bestonden  verschillende  publieke  ambten,  die  met  veel  prestige  gepaard 
+gingen; het bekleden ervan zorgde ook voor invloed, macht en de mogelijkheid rijkdom te vergaren. 
+Bekend  worden  verondersteld  de  termen  aedilis,  volkstribuun,  quaestor,  praetor,  consul,  proconsul, 
+censor en dictator. 
+Literatuur speelde een belangrijke rol in de Romeinse samenleving. Poëzie en proza in verschillende 
+genres  zorgden  voor  vermaak  in  alle  lagen  van  de  maatschappij.  De  Romeinse  elite  kon  zich 
+onderscheiden door het bezoeken en organiseren van exclusieve voordrachten door dichters van het 
+hoogste niveau. Zij konden ook dichters aan zich binden en ertoe bewegen hun eigen daden te laten 
+bezingen.  Veel  Romeinen  uit  de  bovenlaag  schreven  ook  zelf:  ze  publiceerden  speeches, 
+autobiografieën,  traktaten  en  soms  ook  gedichten.  Ze  lieten  zich  daarbij  vaak  inspireren  door  de 
+Griekse literatuur, die door de komst van steeds meer Griekstalige privébibliotheken in Rome steeds 
+toegankelijker werd. 
+
+2. Leven van Cicero 
+Marcus  Tullius  Cicero  (106-43  v.Chr.)  is  geboren  in  Arpinum,  ten  zuiden  van  Rome.  Zijn  familie 
+behoorde tot de ridderstand (equites). Cicero heeft een gedegen opleiding gekregen in de retorica, de 
+filosofie en rechtsgeleerdheid, drie terreinen waarop hij later naam gemaakt heeft. Deze opleiding vond 
+plaats in Rome en later in Griekenland.  
+Als eerste van zijn familie slaagde Cicero erin door te dringen tot de hoogste ambten. Hij was daardoor 
+een homo novus, iets wat door zijn tegenstanders regelmatig met de nodige minachting werd vermeld. 
+De  politieke  carrière  van  Cicero  was  echter  zeer  succesvol,  met  als  hoogtepunt  het  consulaat  in  63 
+v.Chr., waarin Cicero met een sterk optreden een einde maakte aan de opstand van Catilina. Daarna 
+kreeg  hij meer  moeite  zich  in  de hoogste machtskringen te handhaven, en in 58  v.Chr.  zag hij  zich 
+zelfs  gedwongen  om  Rome  te  verlaten:  politieke  tegenstanders  hadden  ervoor  gezorgd  dat  met 
+terugwerkende kracht een wet werd ingevoerd die een verbanning eiste voor mensen die zonder proces 
+Romeinse burgers ter dood hadden veroordeeld – precies wat Cicero had gedaan met de handlangers 
+van  Catilina.  Na  zijn  terugkeer  ging  Cicero  zich  weer  met  de  politiek  bemoeien,  hoewel  de  nieuwe 
+machthebbers in Rome zijn autoriteit en invloed beperkten.   
+Na de moord op Caesar in 44 v.Chr. trad hij tijdelijk op als adviseur van de jeugdige Octavianus en 
+ging  hij  fel  tekeer  tegen  Marcus  Antonius  in  zijn  Philippicae.  Octavianus  en  Marcus  Antonius  sloten 
+echter  een  pact,  waarbij  Octavianus  Cicero  opofferde  aan  de  goede  verstandhouding  met  Marcus 
+Antonius.  Bij  een  halfslachtige  vluchtpoging  werd  Cicero  op  7  december  43  v.Chr.  door  Antonius’ 
+soldaten vermoord. 
+
+Pagina 10 van 36 
+
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+3. Receptie 
+Cicero’s voordrachten werden al in de oudheid als het summum van de Romeinse retorica gezien. We 
+vinden lof voor Cicero’s kwaliteiten al bij onder anderen Martialis, Quintilianus en Plinius. Vanaf de 
+eerste eeuw n.Chr. waren de redevoeringen van Cicero vaste schoollectuur, en golden zijn traktaten 
+als onmisbare leerboeken. 
+Ten tijde van het humanisme gold Cicero als de gouden standaard van het Latijn, een visie waar 
+Erasmus in zijn Ciceronianus de draak mee steekt. 
+Er zijn verschillende moderne romans waarin het zeer goed gedocumenteerde en boeiende leven van 
+Cicero een rol speelt. Een van de meest bekende en recente voorbeelden is Robert Harris’ Cicero -
+trilogie.  
+
+C 
+
+EINDTERMEN 
+
+NB Voor de toetsing van de eindtermen (zie bijlage 1) worden de CvTE-minimumlijst (zie bijlage 3) en deze 
+syllabus als uitgangspunt genomen. 
+
+Pagina 11 van 36 
+
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+3 
+
+HET CENTRAAL EXAMEN 
+
+3.1 
+
+3.2 
+
+ZITTINGEN CENTRAAL EXAMEN 
+Raadpleeg hiervoor het Examenblad, www.examenblad.nl 
+
+HULPMIDDELEN 
+Raadpleeg hiervoor het Examenblad, www.examenblad.nl 
+
+Pagina 12 van 36 
+
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+BIJLAGE 1. EXAMENPROGRAMMA LATIJNSE TAAL EN CULTUUR VWO  
+
+Latijnse taal en cultuur (LTC) 
+
+Het eindexamen 
+
+Het eindexamen bestaat uit het centraal examen en het schoolexamen. 
+Het examenprogramma bestaat uit de volgende domeinen: 
+Domein A Reflectie op klassieke teksten (sub domein 1) en antieke cultuur (sub domein 2) 
+Domein B Reflectie op relaties tussen de antieke cultuur en de latere Europese cultuur 
+Domein C Zelfstandige oordeelsvorming 
+Domein D Oriëntatie op studie en beroep 
+Domein E Informatievaardigheden 
+
+Het centraal examen 
+
+Het centraal examen heeft betrekking op de domeinen A (sub domein 1: reflectie op klassieke teksten), 
+B2 (B.3) en C (C.5). 
+Het centraal examen heeft betrekking op authentieke en vertaalde teksten van een of meer auteurs, 
+behorend tot eenzelfde genre. 
+Het CvTE stelt het aantal en de tijdsduur van de zittingen van het centraal examen vast. 
+Het CvTE maakt een specificatie bekend van de examenstof van het centraal examen. 
+
+Het schoolexamen 
+
+Het schoolexamen heeft betrekking op: 
+
+–  de domeinen A, B, C, D en E. Deze domeinen komen aan de orde aan de hand van een selectie van 
+tenminste 30 pagina’s (Oxford Classical Text) Latijnse teksten. Deze selectie bevat teksten van 
+tenminste twee genres uit de Latijnse literatuur (zodanig dat samen met de auteur van het 
+centraal examen proza én poëzie aan bod komen). 
+
+Deze bevat geen teksten van de auteur(s) die voor het centraal examen zijn vastgesteld, tenzij deze 
+teksten behoren tot een ander genre en thema. 
+Daarnaast komen deze domeinen aan de orde aan de hand van: 
+
+–  een selectie van tenminste 45 pagina’s klassieke, vertaalde teksten; 
+– 
+
+indien het bevoegd gezag daarvoor kiest: toetsing van het vertalen van één of meer ongeziene 
+passages; 
+indien het bevoegd gezag daarvoor kiest: toetsing van de (creatieve) verwerking van een of meer 
+cultuurdomeinen; 
+indien het bevoegd gezag daarvoor kiest: stof van het centraal examen naast de hierboven 
+vermelde stof voor het schoolexamen; 
+indien het bevoegd gezag daarvoor kiest: andere vakonderdelen, die eventueel per kandidaat 
+kunnen verschillen. 
+
+– 
+
+– 
+
+– 
+
+Het bevoegd gezag kiest tenminste drie van de volgende cultuurdomeinen waarop de eindtermen 
+betrekking hebben: verhalengoed, drama, beeldende kunst, architectuur, filosofie. 
+Het bevoegd gezag kan, naast bovengenoemde domeinen, ook eigen cultuurdomeinen toevoegen. 
+
+2 Voor zover dat mogelijk is, gelet op het karakter van het centraal examen 
+
+Pagina 13 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+De examenstof 
+
+Domein A: Reflectie op klassieke teksten en antieke cultuur 
+
+Subdomein 1: Reflectie op klassieke teksten 
+1  De kandidaat kan zijn begrip van Latijnse en klassieke, vertaalde teksten demonstreren door: 
+
+–  een ongeziene passage te vertalen; 
+–  een passage te analyseren en interpreteren vanuit taalkundig, letterkundig en/of 
+
+cultuurhistorisch perspectief; 
+
+–  een passage vanuit taalkundig, letterkundig en cultuurhistorisch perspectief te vergelijken met 
+
+andere cultuuruitingen uit de oudheid of latere perioden. 
+
+Subdomein 2: (alleen van toepassing op het schoolexamen) Reflectie op antieke cultuur 
+2  De kandidaat kan: 
+
+–  antieke cultuuruitingen van verschillende cultuurdomeinen plaatsen in hun historische en 
+
+culturele context en met elkaar in verband brengen; 
+
+–  antieke cultuuruitingen onderzoeken en zijn bevindingen formuleren. 
+
+Domein B: Reflectie op relaties tussen de antieke cultuur en de latere Europese cultuur 
+
+3  De kandidaat kan door de bestudering van de Latijnse en klassieke, vertaalde teksten tegen de 
+
+achtergrond van de antieke cultuur: 
+
+–  onderwerpen actualiseren die voortvloeien uit een confrontatie tussen deze teksten en 
+
+eigentijdse ontwikkelingen; 
+
+–  de eigentijdse cultuur plaatsen in het perspectief van de klassieke traditie waarin Europa staat. 
+
+4  (Alleen van toepassing op het schoolexamen): 
+De kandidaat kan: 
+
+–  voorbeelden uit de receptiegeschiedenis herkennen, deze plaatsen in de context van de 
+
+betreffende periode in de Europese cultuur en de van toepassing zijnde werkingsmechanismen 
+noemen; 
+
+–  cultuuruitingen uit de latere Europese cultuur vergelijken met antieke cultuuruitingen. 
+
+Domein C: Zelfstandige oordeelsvorming 
+
+5  De kandidaat kan een beargumenteerde reactie formuleren op de inhoud van voorgelegde teksten en 
+
+andere cultuuruitingen (uit de Oudheid en latere tijden). 
+
+6  (Alleen van toepassing op het schoolexamen) 
+De kandidaat kan cultuuruitingen uit de latere Europese cultuur vergelijken met antieke cultuuruitingen 
+en daarover een beargumenteerd oordeel geven. 
+
+Domein D: Oriëntatie op studie en beroep 
+
+Domein E: Informatievaardigheden 
+7  De kandidaat kan: 
+
+–  doelgericht informatie en bronnenmateriaal zoeken, beoordelen, selecteren en verwerken, o.a. 
+
+met behulp van het woordenboek; 
+
+–  (verworven) informatie verwerken en daaruit beredeneerde conclusies trekken; 
+–  gebruik maken van verschillende ICT-toepassingen bij LTC; 
+–  adequaat schriftelijk, mondeling en digitaal in het publieke domein communiceren over 
+
+onderwerpen uit het desbetreffende vakgebied; 
+
+–  bij het verwerven van vakkennis en vakvaardigheden reflecteren op eigen belangstelling, 
+
+motivatie en leerproces. 
+
+Pagina 14 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+BIJLAGE 2. DE PLAATS VAN LATIJNSE TAAL EN CULTUUR EN GRIEKSE TAAL EN 
+CULTUUR IN DE PROFIELEN 
+
+Latijnse taal en cultuur en Griekse taal en cultuur 
+Latijnse taal en cultuur of Griekse taal en cultuur, ter keuze van de leerling, maken deel uit van het 
+gemeenschappelijk deel van elk profiel in het gymnasium. 
+Latijnse taal en cultuur of Griekse taal en cultuur kunnen als profielkeuzevak in het profiel cultuur en 
+maatschappij op het atheneum worden gekozen, indien het bevoegd gezag ervoor kiest deze vakken aan 
+te bieden.  
+Latijnse taal en cultuur of Griekse taal en cultuur kunnen op het atheneum als keuze examenvak worden 
+gekozen, indien het bevoegd gezag ervoor kiest deze vakken aan te bieden. 
+
+Pagina 15 van 36 
+
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+BIJLAGE 3. DE MINIMUMLIJST LATIJN 
+De minimumlijst Latijn bestaat uit drie delen: I vormleer, II syntaxis en III stilistische, narratologische en 
+argumentatieve middelen. Deel I en II bevatten een opsomming van de taalkundige verschijnselen die 
+kandidaten moeten kennen en die niet geannoteerd worden bij de vertaalopgave bij het Centraal 
+examen. Deel III bevat een overzicht van literaire termen die door het CvTE bekend worden 
+verondersteld. 
+
+De minimumlijst Latijn hanteert de terminologie die ook bij het Centraal Examen gehanteerd wordt. Er is 
+zo veel mogelijk gekozen voor een Nederlandse terminologie. In een aantal gevallen heeft het CvTE de 
+voorkeur gegeven aan het gebruik van een technische term, zoals indicativus en nominativus. Soms is er 
+om praktische redenen voor gekozen twee termen naast elkaar te hanteren (bijvoorbeeld lijdend 
+voorwerp / object); dit is aangegeven door middel van een schuine streep. 
+
+Sommige onregelmatige vormen in deze lijst zijn met meer of minder moeite in het bij het examen 
+toegestane woordenboek of in het grammaticakatern te vinden. Ze zijn hier opgenomen, omdat het CvTE 
+bij de inschatting van de beschikbare tijd voor de vertaalopgave ervan uitgaat dat deze vormen behoren 
+tot de parate kennis van de kandidaat en dus niet behoeven te worden opgezocht. Uit het opnemen van 
+zulke vormen in de lijst mag daarom niet de conclusie worden getrokken dat de andere onregelmatige 
+vormen die ook in het woordenboek te vinden zijn, per definitie worden geannoteerd bij de 
+vertaalopgave. 
+
+Wanneer in examenvragen het begrip tekstelement wordt gehanteerd, dan wordt daarmee bedoeld: 
+een woord, een woordgroep, een bijzin of een zin. Een tekstelement kan bestaan uit aaneensluitende 
+woorden, maar dit hoeft niet. 
+
+Spellingsregels ten aanzien van Griekse eigennamen (in het Nederlands) 
+Ten aanzien van de spelling van de Griekse eigennamen hanteert het CvTE de volgende regels: 
+1. Uitgangspunt vormt de lijst van namen uit de Griekse en Romeinse oudheid, in Van Dale, Groot 
+woordenboek der Nederlandse taal, 13e herziene uitgave, 1999. 
+2. Bij eigennamen die niet in deze lijst voorkomen, hanteert het CvTE de spelling die aansluit bij die van 
+de bovengenoemde lijst. 
+3. In citaten (bijvoorbeeld vertalingen) wordt de spelling van de auteur aangehouden. Kandidaten dienen 
+derhalve op de hoogte te zijn van de verschillende spellingsconventies ten aanzien van de Griekse 
+eigennamen. 
+
+DEEL I VORMLEER  
+
+1 Zelfstandige naamwoorden 
+
+De verbuiging/uitgangen van de: 
+–  a-stammen 
+–  o-stammen, inclusief vir en het type puer en magister  
+–  medeklinkerstammen, inclusief de genitivus op -ium en de verbuiging van mare 
+–  u-stammen, exclusief het onzijdig 
+–  e-stammen. 
+
+De verbuiging/uitgangen van vis, Iuppiter en domus. 
+
+De locativi domi en Romae. 
+
+De geslachtsregels van de a-, o-, u- en e-stammen, inclusief de uitzonderingen manus en domus. 
+
+Van de medeklinkerstammen de regels:  
+–  mannelijk op -or 
+–  vrouwelijk op -tas, -io en -x  
+–  onzijdig op -us en -men. 
+
+De vocativus, inclusief het type fili. 
+
+Pagina 16 van 36 
+
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+Voor de accusativus meervoud mannelijk/vrouwelijk van zelfstandige naamwoorden van de derde 
+declinatie op -is (type hostis) wordt in het tekstboekje van het CE altijd de uitgang -es afgedrukt, ook 
+wanneer de aanbevolen editie de uitgang –is heeft. 
+
+2 Bijvoeglijke naamwoorden 
+
+De verbuiging/uitgangen van: 
+–  o- / a-stammen, inclusief het type pulcher en miser 
+–  medeklinkerstammen van drie, twee en één uitgang. 
+
+De vorming en verbuiging van de vergrotende trap op -ior en -ius. 
+De vorming en verbuiging van de overtreffende trap op -issimus, -errimus en -illimus. 
+De vorming en verbuiging van vergrotende en overtreffende trap van bonus, malus, magnus, parvus en 
+multus. 
+Voor de accusativus meervoud mannelijk/vrouwelijk van bijvoeglijke naamwoorden van de derde 
+declinatie op -is (type gravis) wordt in het tekstboekje van het CE altijd de uitgang -es afgedrukt, ook 
+wanneer de aanbevolen editie de uitgang –is heeft. 
+
+3 Bijwoorden 
+
+De vorming op -e en -(i)ter. 
+De vorming van de vergrotende trap op -ius. 
+De vorming van de overtreffende trap op -e. 
+
+4 Telwoorden 
+
+De verbuiging van unus, duo en tres. 
+
+5 Voornaamwoorden 
+
+De verbuiging van de voornaamwoorden, met uitzondering van de genitivus obiectivus mei, tui, nostri, 
+vestri. 
+
+6 Werkwoorden 
+
+De vervoeging van de:  
+–  a-stammen 
+–  e-stammen 
+i-stammen 
+– 
+–  medeklinkerstammen 
+–  gemengde stammen. 
+
+Actief, passief en (semi)deponens. 
+Indicativus en coniunctivus. 
+Imperativus tweede persoon (exclusief de zgn. imperativus futuri [type vocato] en de imperativus 
+passief; dit impliceert tevens dat de imperativus van deponentia niet bekend wordt verondersteld).  
+Praesens, imperfectum, futurum, perfectum, plusquamperfectum en futurum exactum. 
+
+Infinitivus, participium, gerundium en gerundivum:  
+–  de infinitivus praesens actief, praesens passief, futurum actief, perfectum actief, perfectum passief 
+–  het participium praesens actief, futurum actief, perfectum passief 
+–  het gerundium 
+–  het gerundivum. 
+
+Pagina 17 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+De vervoeging van de onregelmatige werkwoorden, inclusief de stamtijden: 
+–  velle, nolle 
+–  esse, posse, fieri 
+– 
+–  de onvolledige werkwoorden: memini en odi 
+–  de semi-deponentia audere en solere 
+–  de vormen: inquit en ait. 
+
+ire en ferre, inclusief de samenstellingen met voorzetsels 
+
+Perfectum actief: 
+–  -vi 
+–  -ui 
+–  -i, -si, -xi, -psi 
+–  uitgang -ēre in plaats van -ērunt 
+–  klankverandering 
+–  reduplicatie. 
+
+Participium perfectum passief op: 
+–  -tus  
+–  -sus. 
+
+Het perfectum en plusquamperfectum kennen verkorte vormen, waarbij -vi of -ve achter de stam ontbreken.  
+
+Pagina 18 van 36 
+
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+DEEL II SYNTAXIS 
+
+1 Congruentie 
+
+Het begrip congruentie / congrueren met. 
+
+Congruentieregels met betrekking tot: 
+–  onderwerp - persoonsvorm 
+–  onderwerp - naamwoordelijk deel van het gezegde 
+–  bijstelling 
+–  bijvoeglijke naamwoorden - zelfstandige naamwoorden 
+–  voornaamwoorden - zelfstandige naamwoorden 
+–  antecedent en betrekkelijk voornaamwoord 
+–  bijvoeglijke bepaling 
+–  predicatieve bepaling. 
+
+2 Functies van naamvallen 
+
+Nominativus: 
+–  onderwerp/subject 
+–  naamwoordelijk deel van het gezegde. 
+
+Genitivus: 
+–  bijvoeglijke bepaling, met name de vier hieronder genoemde mogelijkheden: 
+
+•  genitivus possessivus 
+•  genitivus partitivus 
+•  genitivus subiectivus 
+•  genitivus obiectivus  
+
+–  als aanvulling bij werkwoorden 
+–  als aanvulling bij bijvoeglijke naamwoorden 
+–  causa met genitivus. 
+
+Dativus: 
+–  meewerkend voorwerp 
+–  de handelende persoon bij het gerundivum 
+–  de bezitter bij het werkwoord esse 
+–  als aanvulling bij bijvoeglijke naamwoorden 
+–  als aanvulling bij werkwoorden. 
+
+lijdend voorwerp / object 
+
+Accusativus: 
+– 
+–  bijwoordelijke bepaling tijdsduur en afstand 
+–  de accusativi van richting Romam en domum 
+–  als aanvulling bij werkwoorden (bijv. met een dubbele accusativus) 
+–  als onderwerp en naamwoordelijk deel van het gezegde in de a.c.i.  
+–  accusativus respectus 
+–  na voorzetsels. 
+
+Ablativus: 
+–  bijwoordelijke bepaling van plaats, tijd, middel, reden, wijze, maat, verwijdering en vergelijking  
+–  als aanvulling bij werkwoorden 
+–  als aanvulling bij bijvoeglijke naamwoorden 
+– 
+–  na voorzetsels. 
+
+in de ablativus absolutus constructie 
+
+Vocativus: 
+–  aanspreekvorm. 
+
+Pagina 19 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+3 Voorzetsels 
+
+Het gebruik van naamvallen bij de voorzetsels. 
+
+4 Bijvoeglijke naamwoorden 
+
+Bijvoeglijk en zelfstandig gebruikt. 
+
+5 Trappen van vergelijking 
+
+Het gebruik en de betekenis van vergrotende trap inclusief de betekenissen “tamelijk” en “te”. 
+Het gebruik van quam dan wel de ablativus van vergelijking na een vergrotende trap. 
+Het gebruik en de betekenis van de overtreffende trap: de betekenissen “-ste” en “zeer”. 
+Het gebruik van quam met een overtreffende trap: “zo ... mogelijk”. 
+
+6 Voornaamwoorden 
+
+Bijvoeglijk en zelfstandig gebruik. 
+Het (ingesloten) antecedent van een betrekkelijke bijzin. 
+De relatieve aansluiting. 
+
+7 Werkwoorden 
+
+De begrippen overgankelijk/transitief en onovergankelijk/intransitief. 
+De begrippen directe en indirecte rede. 
+Het begrip (semi)deponens. 
+
+Gebruik van de tijden: 
+–  het praesens (kernbetekenis: gelijktijdig aan het heden). In een verhalende passage kan het  
+
+praesens gebruikt worden om een gebeurtenis uit het verleden aan te duiden (praesens historicum). 
+–  het imperfectum (kernbetekenis: gelijktijdig aan een moment (of een periode) in het verleden). In een 
+
+verhalende passage duidt een imperfectum meestal een voortdurende situatie in het verhaal aan. 
+Soms blijkt uit het vervolg van het verhaal dat deze situatie “mislukt” of niet tot een einde gebracht 
+wordt (poging).  
+Het imperfectum wordt ook gebruikt om kenmerken van personen of dingen uit het verleden te 
+beschrijven. Voorbeelden zijn een beschrijving van de achtergrond waartegen het verhaal zich afspeelt 
+of een gewoonte van een persoon uit het verleden.  
+
+–  het perfectum (kernbetekenis: voortijdig aan het heden). In een verhalende passage duidt een 
+
+perfectum een gebeurtenis in het verhaal aan. 
+
+modus coniunctivus  
+– 
+
+in hoofdzinnen: aansporing, verbod (coni. praes. en perf.), twijfel (dubitativus van heden en 
+verleden), vervulbare en onvervulbare wens, mogelijkheid (potentialis van heden en verleden), irrealis 
+van heden en verleden. 
+in conditionele bijzinnen: mogelijkheid, irrealis van heden en verleden. 
+in betrekkelijke bijzinnen: finaal, causaal en consecutief/definiërend. 
+in de indirecte vraag. 
+
+– 
+– 
+– 
+–  na de voegwoorden cum, ut en ne. 
+in bijzinnen van de indirecte rede. 
+– 
+Het gebruik van de coniunctivus in causale bijzinnen die met quia en quod worden ingeleid (subjectieve 
+reden), wordt niet bekend verondersteld. 
+
+infinitivus 
+–  de begrippen gelijktijdig(heid), voortijdig(heid) en natijdig(heid). 
+–  de infinitivus in de a.c.i. en n.c.i. 
+
+Pagina 20 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+participium 
+–  de begrippen gelijktijdig(heid), voortijdig(heid) en natijdig(heid). 
+–  bijvoeglijk, zelfstandig en predicatief gebruikt. 
+– 
+–  het participium futurum actief met doelaangevende betekenis.  
+–  het participium futurum actief in combinatie met vormen van esse als een omschrijvend futurum    
+
+in de ablativus absolutus. 
+
+(coniugatio periphrastica). 
+
+–  het dominant gebruik van het participium. 
+
+Gerundium 
+
+Gerundivum 
+–  het gerundivum als naamwoordelijk deel van het gezegde als gerundivum van verplichting, inclusief 
+
+de vertaling kunnen en mogen (in geval van ontkenningen). 
+
+–  het dominant gebruik van het gerundivum, namelijk in de zgn. gerundivumconstructie. 
+
+8 Vraagzinnen 
+
+Directe en indirecte vragen, inclusief de vraagpartikels num, nonne, -ne en utrum / -ne ... an. 
+
+Pagina 21 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+DEEL III LITERAIRE TERMEN: STILISTISCHE, NARRATOLOGISCHE EN ARGUMENTATIEVE 
+MIDDELEN 
+
+I. Stilistische middelen 
+
+Afgebeelde  Zie vergelijking.  
+
+Alliteratie 
+
+De gelijkheid van beginmedeklinkers bij twee of meer woorden die dicht bij elkaar staan.  
+
+Leentje leerde Lotje lopen langs de lange Lindenlaan 
+
+magno cum murmure montis 
+
+met luid gerommel van de berg 
+
+Anafora 
+
+De herhaling van een tekstelement aan het begin van opeenvolgende (delen van) zinnen 
+of versregels. 
+
+Vergilius, Aeneis 1.55 
+
+dag stoel naast de tafel 
+dag brood op de tafel 
+dag visserke-vis met de pijp 
+
+Ille mi par esse deo videtur, 
+ille, si fas est, superare divos 
+
+P. van Ostaijen, Marc groet ‘s morgens de dingen  
+
+Hij lijkt mij gelijk te zijn aan een god, 
+hij (lijkt mij), als men dit mag zeggen, de goden te overtreffen 
+
+Catullus, Carmina 51.1-2 
+
+De betreffende tekstelementen hoeven niet in dezelfde vorm te staan. Zie bijvoorbeeld: 
+
+Quis nunc te adibit? Cui videberis bella? 
+Quem nunc amabis? Cuius esse diceris? 
+Quem basiabis? Cui labella mordebis? 
+
+Wie zal er nu naar je toe komen? Wie zal jou mooi vinden? 
+Wie zul je nu liefhebben? Van wie zal men zeggen dat je bent? 
+Wie zul je kussen? Wie zul je in de lippen bijten? 
+
+Antithese 
+
+Het dicht bij elkaar geplaatst staan van inhoudelijk tegengestelde begrippen. 
+
+Catullus, Carmina 8.15-18 
+
+Die twee zijn als water en vuur. 
+
+alieni adpetens, sui profusus 
+
+belust op andermans vermogen, verkwistend met zijn eigen vermogen 
+
+Sallustius, De coniuratione Catilinae 5 
+
+Pagina 22 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+Asyndeton 
+
+De opeenvolging van twee of meer tekstelementen zonder verbindingswoord.  
+
+Dan zou ik mijn boek vertalen in het Maleis, Javaans, Soendaas, Alfoers, Boeginees, 
+Battaks. 
+
+Multatuli, Max Havelaar 
+
+retia rara, plagae, lato venabula ferro 
+
+wijdmazige netten, strikken, breedpuntige speren. 
+
+Vergilius, Aeneis 4.131 
+
+Een vertaler kan ervoor kiezen een verondersteld verband tussen de tekstelementen 
+expliciet te maken. Bijvoorbeeld: 
+
+Navem in conspectu nullam, tres litore cervos 
+prospicit errantes. 
+
+Nergens ontwaarde hij een schip, <maar> hij zag op het strand <wel> drie herten 
+zwerven. 
+
+Vergilius, Aeneis 1.184-185 
+
+Beeld   
+
+Zie vergelijking. 
+
+Chiasme 
+
+De kruisgewijze plaatsing van grammaticaal en/of inhoudelijk gelijkwaardige 
+tekstelementen. 
+
+Op het Centraal Examen dienen de vier tekstelementen die het chiasme vormen als volgt 
+te worden genoteerd: ... (a) ... (b) ... (b) ... (a). 
+
+laat mij je gezicht (a) zien, laat mij je stem (b) horen, 
+want zoet is je stem (b) en je gezicht (a) is bekoorlijk. 
+
+Bijbel, Hooglied 2:14b 
+
+Aenean fundantem (a) arces (b) ac tecta (b) novantem (a) 
+conspicit. 
+
+Hij ziet Aeneas funderingen leggen voor (a) vestingen (b) en huizen (b) bouwen 
+(a). 
+
+Vergilius, Aeneis 4.260-261 
+
+Climax  
+
+Een reeks van tenminste drie tekstelementen met een steeds sterker wordende inhoud. 
+
+Uren, dagen, maanden, jaren,  
+vliegen als een schaduw heen 
+
+Rhijnvis Feith, Nieuwjaarslied 
+
+Hic sunt (…) qui de nostro omnium interitu, qui de huius urbis atque adeo de orbis 
+terrarum exitio cogitent. 
+
+Hier bevinden zich (...) degenen die zinnen op de dood van ons allen, op de 
+ondergang van deze stad, ja, van de hele wereld. 
+
+Cicero, Oratio in Catilinam 1.9 
+
+Eufemisme  De weergave van een negatief geladen begrip door een verzachtende aanduiding.  
+
+De dierenarts heeft onze hond laten inslapen.  
+
+Qui nunc it per iter tenebricosum 
+illuc, unde negant redire quemquam. 
+
+Hij gaat nu langs de weg vol duisternis 
+naar daar, waarvandaan niemand, zo zegt men, terugkomt. 
+
+Catullus, Carmina 3 
+
+Pagina 23 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+Hypallage 
+
+Een bijvoeglijk naamwoord congrueert met een ander zelfstandig naamwoord dan waarbij 
+het qua betekenis past. 
+
+Midwinterdag.―De geur van oude jassen, 
+de gang met kalken licht om in te dwalen. 
+
+altae moenia Romae 
+
+de muren van het hoge Rome 
+
+Ida Gerhardt, Tussenuur 
+
+Vergilius, Aeneis 1.7 
+
+Hyperbaton  De uiteenplaatsing van woorden die een grammaticale eenheid vormen; de eenheid wordt 
+
+onderbroken door een tekstelement dat niet bij de woordgroep hoort. 
+
+Ante volat comitique timet velut ales ab alto 
+quae teneram prolem produxit in aera nido. 
+
+Hij vliegt voorop en hij is bezorgd voor zijn metgezel, zoals een vogel die zijn tere jong uit 
+het hoge nest laat vliegen. 
+
+Ovidius, Metamorphosen 8.213-214 
+
+N.B. In collocaties als magno cum murmure (“met zwaar gedreun”, Vergilius, Aeneis 
+1.55) en commixtis igne tenebris (“met vuur vermengde duisternis”, Vergilius, Aeneis 
+8.255) is geen sprake van hyperbaton. De onderbrekende elementen (cum, igne) maken 
+namelijk deel uit van de woordgroep. 
+
+Hyperbool 
+
+Overdrijving. 
+
+instar montis equum 
+
+een paard zo groot als een berg 
+
+Vergilius, Aeneis 2.15 
+
+Litotes 
+
+De ontkenning van een begrip om het tegendeel te benadrukken. 
+
+Dat is niet helemaal het juiste antwoord.  
+(De docent bedoelt dat het antwoord helemaal onjuist is.)  
+
+Haec enim senatus consulta non ignoro ab amicissimis eius, cuius de honore agitur, 
+scribi solere. 
+
+Ik ben er niet onwetend van (= Ik weet heel goed) dat deze senaatsbesluiten altijd 
+geschreven worden door de beste vrienden van degene wiens eer op het spel staat.  
+
+Cicero, Epistulae ad Familiares 15.6 
+
+Metafoor 
+
+De vervanging van een begrip door een begrip dat daar een gelijkenis mee vertoont. Het 
+verschil met het stilistisch begrip vergelijking is dat bij een metafoor alleen het beeld 
+wordt genoemd (dus zonder ‘als’, ‘zoals’, ‘gelijk aan’, etc.).  
+
+Hij woont in een zwijnenstal. 
+
+At regina gravi iamdudum saucia cura 
+vulnus alit venis et caeco carpitur igne. 
+
+Maar de koningin, al lang gewond door hevige liefde, voedt de wond met haar bloed en 
+wordt verteerd door onzichtbaar vuur. 
+
+Vergilius, Aeneis 4.1-2 
+
+Pagina 24 van 36 
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+Metonymia  De vervanging van een begrip door een begrip dat daarmee te maken heeft maar er geen 
+
+gelijkenis mee vertoont. 
+
+• 
+
+een abstract in plaats van een concreet begrip (Abstractum pro concreto)  
+
+cum desiderio meo nitenti 
+carum nescioquid lubet iocari   
+
+wanneer mijn stralende verlangen (= degene naar wie ik verlang) een leuk spelletje wil 
+spelen 
+
+Catullus, Carmina 2.5-6 
+
+• 
+
+de naam van een god(in) in plaats van een begrip uit zijn/haar invloedssfeer 
+
+Cererem corruptam undis 
+
+Ceres, die (= het graan, dat) bedorven was door het water 
+
+Vergilius, Aeneis 1.177 
+
+• 
+
+het materiaal van een voorwerp in plaats van het voorwerp zelf 
+
+inutile ferrum cingitur 
+
+hij hangt zijn nutteloze ijzer (= zwaard) aan zijn zijde 
+
+De oude Priamus bewapent zich tijdens de inname van Troje. 
+
+• 
+
+een deel in plaats van het geheel (Pars pro toto)  
+
+quaerenti et tectis urbis sine fine ruenti  
+
+Vergilius, Aeneis 2.510-511 
+
+zoekend en eindeloos langs de daken (= huizen) van de stad stormend 
+
+Vergilius, Aeneis 2.771 
+
+Paradox 
+
+Een schijnbare tegenstrijdigheid. 
+
+Schrijven is schrappen. 
+
+Cum tacent, clamant. 
+
+Doordat ze zwijgen, schreeuwen ze luid. 
+
+Cicero bedoelt dat de senatoren door te zwijgen juist heel goed duidelijk maken dat ze 
+Catilina veroordelen. 
+
+Cicero, Oratio in Catilinam 1.21 
+
+Parallellisme  De onderdelen van twee of meer grammaticaal en/of inhoudelijk gelijkwaardige 
+
+tekstelementen staan in dezelfde volgorde. 
+
+Op het Centraal examen dienen de tekstelementen die het parallellisme vormen als volgt 
+te worden genoteerd: … (a) … (b) … (a) … (b). 
+
+Daar (a) gaat ze (b), en zoveel schoonheid (c) heb ik nooit verdiend (d). / Daar (a) 
+staat ze (b), en zoveel gratie (c) heb ik nooit gezien (d).  
+
+Clouseau, Daar gaat ze 
+
+qui armati senatum (a) obsederint (b), magistratibus (a) vim attulerint (b), rem 
+publicam (a) oppugnarint (b) 
+
+die gewapend de senaat hebben bezet, de magistraten hebben mishandeld, de republiek 
+hebben aangevallen 
+
+Cicero, Pro Caelio 1 
+
+Pagina 25 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+Personificatie 
+
+Levenloze voorwerpen of abstracties worden voorgesteld als levende wezens of krijgen 
+eigenschappen daarvan toebedeeld. 
+
+Het licht begint te wandelen door het huis 
+en raakt de dingen aan. 
+
+Silent enim leges inter arma. 
+
+Tijdens een oorlog zwijgen de wetten immers. 
+
+Ida Gerhardt, Zondagmorgen 
+
+Cicero, Pro Milone 11 
+
+Pleonasme  Het aan een begrip toekennen van een kwalificatie die reeds in het begrip zelf besloten 
+
+ligt. 
+
+een potentiële kans 
+
+deorum immortalium 
+
+onsterfelijke goden 
+
+Polysyndeton 
+
+Twee of meer tekstelementen binnen een zin zijn met elkaar verbonden door evenveel 
+nevenschikkende voegwoorden. Bij drie of meer tekstelementen kan bij het eerste 
+tekstelement het voegwoord ontbreken. 
+
+Die zorgt en waakt en slaaft en ploegt en zwoegt en zweet 
+
+Joost van den Vondel, Palamedes 1 
+
+Cicero, Pro Sexto Roscio 29 
+
+Et placet et video  
+
+En hij bevalt mij én ik zie hem  
+
+bracchiaque et nudos media plus parte lacertos. 
+
+Laudat digitosque manusque 
+
+Ovidius, Metamorphoses 3.446 
+
+Hij prijst én haar vingers én haar handen én haar onderarmen én haar voor meer dan de 
+helft ontblote bovenarmen. 
+
+Ovidius, Metamorphoses 1.500-50 
+
+Punt van overeenkomst 
+
+Zie Vergelijking. 
+
+Retorische vraag 
+
+Een vraag waarbij het niet de bedoeling van de vragensteller is dat er een antwoord 
+gegeven wordt. 
+
+Waarom snapt niemand dat ik soms retorische vragen stel? 
+
+Bill Gates 
+
+Quo usque tandem abutere, Catilina, patientia nostra?  
+
+Hoe lang nog, Catilina, zul jij misbruik maken van ons geduld? 
+
+Cicero, Oratio in Catilinam 1.1 
+
+Sententia 
+
+Een algemeen geldende uitspraak. 
+
+Van het concert des levens heeft niemand een program. 
+
+Pagina 26 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+homines, dum docent, discunt. 
+
+mensen leren, terwijl zij les geven. 
+
+Seneca, Epistulae Morales ad Lucilium 7.8 
+
+Tautologie 
+
+Het nevenschikkend herhalen van een begrip in andere woorden. 
+
+gratis en voor niks 
+
+Domum meam maioribus praesidiis munivi atque firmavi. 
+
+Ik heb mijn huis met grotere wachtposten beveiligd en versterkt. 
+
+Cicero, Oratio in Catilinam 1.10 
+
+Tertium comparationis 
+
+Zie vergelijking. 
+
+Tricolon 
+
+Een opsomming die bestaat uit drie delen. 
+
+castus et sanctus et diis simillimus princeps 
+
+een vrome en heilige en zeer op de goden lijkende keizer 
+
+Plinius Minor, Panegyricus 1 
+
+Vergelijking  Een begrip wordt vergeleken met een ander begrip (met gebruik van ‘als’, ‘zoals’, ‘gelijk 
+
+aan’, etc.). 
+
+Een vergelijking bestaat uit drie elementen: 
+1. afgebeelde: het begrip dat met iets anders vergeleken wordt 
+2. beeld: het begrip waarmee het afgebeelde vergeleken wordt 
+3. tertium comparationis / punt van overeenkomst: het aspect waarin afgebeelde en 
+beeld overeenkomen 
+
+De jongen werd zo rood als een kreeft. 
+
+de jongen 
+afgebeelde:  
+beeld:  
+de kreeft 
+tertium comparationis / punt van overeenkomst: 
+
+de roodheid  
+
+visa fugit nymphe, veluti perterrita fulvum 
+cerva lupum 
+
+Nu ze gezien is, vlucht de nimf, zoals een geschrokken hinde vlucht voor een bruine wolf 
+
+Ovidius, Metamorphoses 11.771-772 
+
+de nimf 
+afgebeelde: 
+beeld:  
+de hinde 
+tertium comparationis / punt van overeenkomst: 
+
+het (angstig) vluchten 
+
+Pagina 27 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+II. Narratologische middelen 
+
+Alwetende verteller   
+
+De vertellende instantie die complete kennis van alle gebeurtenissen, achtergronden en 
+het verloop van het verhaal heeft. 
+
+Apostrofe 
+
+Iemand spreekt een ding of begrip aan, of een personage dat niet bij hem of haar 
+aanwezig is. 
+
+Quis tibi tum, Dido, cernenti talia sensus? 
+
+Hoe was je er toen aan toe, Dido, toen je dergelijke dingen zag? 
+
+Vergilius, Aeneis 4.408 
+
+De verteller Vergilius spreekt een personage aan. 
+
+‘Invide’ dicebant ‘paries, quid amantibus obstas?’ 
+
+‘Muur’, zeiden ze, ‘die ons niets gunt, waarom sta jij geliefden in de weg?’ 
+
+Ovidius, Metamorphoses 4.73 
+
+Dramatische ironie   
+
+Een of meer personages hebben minder kennis van de situatie dan de lezer/toehoorder. 
+
+Quisquis es, huc exi! Quid me, puer unice, fallis 
+quove petitus abis? Certe nec forma nec aetas  
+est mea, quam fugias. 
+
+Wie je ook bent, kom hier! Waarom houd je me voor de gek, unieke jongen? Of waar ga 
+je heen terwijl ik naar je verlang? Het is zeker niet mijn schoonheid of mijn leeftijd waar 
+je voor vlucht. 
+
+Ovidius, Metamorphoses 3.454-456 
+
+Narcissus spreekt tegen zijn eigen spiegelbeeld in het wateroppervlak, dat telkens 
+verdwijnt als hij het aan wil raken.  
+
+Prospectie (flashforward) 
+
+De verteller of een personage verwijst naar latere gebeurtenissen. 
+
+non iterum repetenda suo. 
+
+Dedit oscula nato 
+
+Hij gaf zijn zoon kussen die niet opnieuw gegeven zouden worden. 
+
+Ovidius, Metamorphoses 8.211-212 
+
+Daedalus kuste zijn zoon Icarus voordat ze wegvlogen van Kreta. Icarus zou tijdens de 
+vlucht omkomen. 
+
+Retrospectie (flashback) 
+
+De verteller of een personage verwijst naar eerdere gebeurtenissen. 
+
+Stipes erat quem, cum partus enixa iaceret 
+Thestias, in flammam triplices posuere sorores. 
+(...) 
+Ille diu fuerat penetralibus abditus imis 
+servatusque tuos, iuvenis, servaverat annos. 
+
+Er was een stuk hout dat de drie schikgodinnen in het vuur hadden gelegd, toen de 
+dochter van Thestius in het kraambed lag. 
+(...) 
+Dat had lang achter in een diepe kast verborgen gelegen en doordat het 
+bewaard was, had het jou al die jaren bewaard, jongen. 
+
+Ovidius, Metamorphoses 8.451-452; 458-459 
+
+Pagina 28 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+Ringcompositie 
+
+Afbakening van een tekstgedeelte door aan het einde een tekstelement uit het begin (al 
+dan niet letterlijk) te herhalen. 
+
+ Haec tum multiplici populos sermone replebat 
+ (…) 
+ Haec passim dea foeda virum diffundit in ora. 
+
+ Zij vulde toen de volkeren met veelsoortige praatjes  
+ (…) 
+ Dit soort dingen verspreidde de vuile godin overal in de monden van de mensen. 
+
+ Vergilius, Aeneis 4.189 en 195  
+
+Vertelperspectief 
+
+Het perspectief van waaruit de lezers de gebeurtenissen van het verhaal  zien; dit 
+perspectief kan bij de verteller of bij een van de personages liggen. 
+
+Verteltempo   De verhouding tussen verteltijd en vertelde tijd. 
+
+Verteltijd: de tijd die gebruikt wordt om het verhaal te vertellen. 
+Vertelde tijd: de tijdsduur van de vertelde gebeurtenissen. 
+
+ Versnelling: de verteltijd is korter dan de vertelde tijd. Dit is bijvoorbeeld het geval 
+wanneer in een vertelling een samenvatting van gebeurtenissen wordt gegeven of 
+wanneer er een sprong in de tijd wordt gemaakt. 
+ Vertraging: de verteltijd is langer dan de vertelde tijd. Dit is bijvoorbeeld het geval 
+wanneer in een vertelling een beschrijving wordt gegeven van een persoon of voorwerp. 
+
+Pagina 29 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+III. Argumentatieve middelen 
+
+A-fortiori-redenering 
+
+Het verdedigen van een bewering/stelling door een sterker voorbeeld aan te halen.  
+
+Als een volwassene deze steen niet kan optillen, kan een kind dat al helemaal niet. 
+
+Nam tu quoque, qui consulis, diu an consuleres cogitasti: quanto magis hoc mihi 
+faciendum est, cum longiore mora opus sit ut solvas quaestionem quam ut proponas? 
+
+Want ook jij, die mij om raad vraagt, hebt lang nagedacht of je me wel om raad moest 
+vragen. Des te meer moet ik er goed over nadenken, omdat het geven van een oplossing 
+meer tijd vergt dan het stellen van een vraag. 
+
+Seneca, Epistulae Morales ad Lucilium 48.1 
+
+Analogie-redenering 
+
+Het verdedigen van een bewering/stelling door een vergelijkbare situatie aan te halen. 
+
+Ut igitur Athenas et Lacedaemonem Atheniensium Lacedaemoniorumque causa putandum 
+est conditas esse, omniaque quae sint in his urbibus eorum populorum recte esse dicuntur, 
+sic quaecumque sunt in omni mundo deorum atque hominum putanda sunt. 
+
+Zoals we kunnen veronderstellen dat Athena en Sparta gesticht zijn vanwege de Atheners 
+en Spartanen, en dat men terecht veronderstelt dat alles wat zich in die steden bevindt, 
+eigendom van die volken is, zo mag men veronderstellen dat alles wat er in het hele 
+universum bestaat, eigendom van goden en mensen is. 
+
+Cicero, De natura deorum 2.154 
+
+Autoriteitsargument 
+
+Het verdedigen van een bewering/stelling door te verwijzen naar de mening van een 
+belangrijk persoon of personen. 
+
+Nam ut visum est maioribus nostris, 'sera parsimonia in fundo est'. 
+
+Want, zoals onze voorouders al vonden, ‘Op de bodem is zuinigheid te laat.’ 
+
+Seneca, Epistulae Morales ad Lucilium 1.4 
+
+Fictieve uitspraak  
+
+Het zelf onder woorden brengen van een mogelijke reactie of tegenwerping om daar op 
+voorhand op in te kunnen gaan. 
+
+Dicet aliquis, “quid mihi prodest philosophia, si fatum est?” 
+
+Nu zal iemand opmerken: “Wat heb ik aan filosofie als het noodlot bestaat?” 
+
+Seneca, Epistula ad Lucilium 16.4 
+
+Syllogisme 
+
+Een redenering waarbij een conclusie getrokken wordt uit twee premissen (stellingen), 
+een algemene (premisse maior) en een specifieke (premisse minor). 
+
+premisse maior 
+premisse minor 
+conclusie 
+
+Alle mensen zijn sterfelijk  
+Socrates is een mens 
+Socrates is sterfelijk  
+
+Pagina 30 van 36 
+
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+IV. Aanvullingen voor poëzie  
+
+A. Metrum 
+
+De kandidaat wordt geacht in staat te zijn een dactylische hexameter en een dactylische pentameter te 
+scanderen. De volgende begrippen worden bekend verondersteld: dactylus, spondee, hexameter, 
+pentameter, (elegisch) distichon. De begrippen cesuur en synizese worden niet bekend verondersteld. 
+Bij naamwoorden van de eerste declinatie eindigt de nominativus enkelvoud op een korte -a, de ablativus 
+enkelvoud op een lange -a. Bij onzijdige naamwoorden eindigen de nominativus en accusativus meervoud 
+op een korta -a. 
+
+Elisie 
+
+Als een woord op een klinker of een -m eindigt en het volgende woord met een klinker of 
+h- begint, valt in de uitspraak en in de metriek de slotklinker van het eerste woord weg, 
+evenals de eventueel aanwezige -m. 
+
+Illa redit iuvenemque oculis animoque requirit. 
+
+Zij komt terug en zoekt de jongen met haar ogen en haar hart. 
+
+Ovidius, Metamorphosen 4.129 
+
+Verband tussen metrum en inhoud 
+
+De aanwezigheid van veel spondeeën in een versregel kan plechtstatigheid, somberheid 
+of traagheid uitdrukken.  
+
+Parent ambo baculisque levati 
+nituntur longo vestigia ponere clivo. 
+
+Beiden gehoorzamen en leunend op hun stok 
+doen ze hun best de lange helling te beklimmen. 
+
+Ovidius, Metamorphoses 8.697  
+
+Twee bejaarde mensen beklimmen op bevel van de goden een heuvel. 
+
+De aanwezigheid van veel dactyli kan opwinding, luchtigheid of snelheid uitdrukken. 
+
+Quadripedante putrem sonitu quatit ungula campum.  
+
+De paardenhoef raakt met viervoetig geluid de zandige vlakte. 
+
+Vergilius, Aeneis 8.596 
+
+B. Stilistische middelen 
+
+Dichterlijk meervoud 
+
+Het gebruik van een meervoud van een zelfstandig naamwoord waar een enkelvoud 
+begrepen moet worden. 
+
+nudaque marmoreis percussit pectora palmis. 
+
+Hij sloeg met marmerwitte handen op zijn ontblote borst. 
+
+Ovidius, Metamorphoses 3.481 
+
+Enjambement 
+
+Het doorlopen van een syntactische eenheid voorbij het einde van een versregel, waarbij 
+niet meer dan twee woorden van de syntactische eenheid op de volgende regel staan. 
+
+Serius egressus vestigia vidit in alto 
+pulvere certa ferae. 
+
+Te laat weggegaan zag hij in het diepe 
+stof de onmiskenbare sporen van een wild dier. 
+
+Ovidius, Metamorphoses 4.105-106 
+
+Pagina 31 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+Homerische vergelijking 
+
+Een vergelijking waarbij het beeld uitvoerig wordt uitgewerkt. 
+
+Qualis apes aestate nova per florea rura 
+exercet sub sole labor, cum gentis adultos 
+educunt fetus, aut cum liquentia mella 
+stipant et dulci distendunt nectare cellas, 
+aut onera accipiunt venientum, aut agmine facto 
+ignavum fucos pecus a praesepibus arcent: 
+fervet opus, redolentque thymo fragrantia mella. 
+
+Zo ook zwoegen in de vroege zomer de bijen op de bloemige velden onder de zon, 
+wanneer zij de jonge volwassen geworden bijen naar buiten brengen of de vloeibare 
+honing persen en de cellen vullen met heerlijke nectar, of als zij de vrachten overnemen 
+van hen die komen aanvliegen of wanneer ze in slagorde geschaard het nutteloos volkje 
+van de darren verdrijven van de korven. Krioelende, gonzende arbeid: de geurige honing 
+ruikt naar tijm. 
+
+Vergilius, Aeneis 1.430-436 
+
+Aeneas ziet de Carthagers hard werken aan de bouw van hun nieuwe stad. 
+
+Bij de interpretatie van een vergelijking kan men onderscheid maken tussen de primaire 
+functie van het beeld (illustratie van een deel van het verhaal) en verschillende 
+secundaire functies van het beeld, zoals het vooruit- of terugverwijzen, het opwekken van 
+emoties en de mogelijkheid om een passage in een breder perspectief te plaatsen. 
+
+Patronymicum 
+
+Persoonsaanduiding die is afgeleid van de naam van de (groot)vader. 
+
+Tyndaris, dochter van Tyndareüs (= Helena)    (Vergilius, Aeneis 2.569) 
+
+Pagina 32 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+APPENDIX 
+
+De volgende stamtijden en de daarvan afgeleide composita worden bekend verondersteld (vormen die 
+met een asterisk [*] zijn gemarkeerd zijn volledigheidshalve opgenomen, maar worden niet bekend 
+verondersteld): 
+
+consultum 
+creditum* 
+cretum* 
+cupitum* 
+
+accepi   
+egi 
+aperui   
+aspexi   
+abstuli   
+cecidi 
+cecidi 
+cepi 
+cessi 
+censui   
+crevi 
+clausi 
+coegi 
+colui 
+
+acceptum 
+actum 
+apertum 
+aspectum 
+ablatum 
+casum*  
+caesum 
+captum 
+cessum* 
+censum 
+cretum* 
+clausum 
+coactum 
+cultum 
+
+accipio   
+ago 
+aperio   
+aspicio   
+aufero   
+cado 
+caedo   
+capio 
+cedo 
+censeo   
+cerno 
+claudo   
+cogo 
+colo 
+comprehendo   comprehendi  comprehensum 
+consulo  
+credo 
+cresco   
+cupio 
+curro 
+decerno 
+defendo 
+desero   
+dico 
+disco 
+divido   
+do 
+doceo   
+duco 
+emo 
+eo 
+facio 
+fero 
+flecto 
+fluo 
+frango   
+fugio 
+gero 
+haereo   
+iaceo 
+iacio 
+instruo  
+intellego 
+interficio 
+iubeo 
+iungo 
+iuvo 
+lego 
+maneo   
+metuo   
+misceo  
+mitto 
+moveo   
+
+consului 
+credidi   
+crevi 
+cupivi   
+cucurri   
+decrevi  
+defendi  
+deserui  
+dixi 
+didici 
+divisi 
+dedi 
+docui 
+duxi 
+emi 
+ii 
+feci 
+tuli 
+flexi 
+fluxi 
+fregi 
+fugi 
+gessi 
+haesi 
+iacui 
+ieci 
+instruxi  
+intellexi  
+interfeci 
+iussi 
+iunxi 
+iuvi 
+legi 
+mansi   
+metui 
+miscui   
+misi 
+movi 
+
+factum 
+latum 
+flexum 
+fluxum* 
+fractum 
+- 
+gestum 
+haesum* 
+- 
+iactum 
+instructum 
+intellectum 
+interfectum 
+iussum 
+iunctum 
+iutum  
+lectum 
+
+decretum 
+defensum 
+desertum 
+dictum 
+- 
+divisum 
+datum 
+doctum* 
+ductum 
+emptum 
+
+- 
+mixtum 
+missum 
+motum 
+
+Pagina 33 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+nolo 
+nosco   
+pario 
+pello 
+peto 
+pono 
+posco   
+possum  
+premo   
+quaero   
+rapio 
+rego 
+relinquo 
+respondeo 
+rideo 
+rumpo   
+ruo 
+scribo   
+sedeo   
+sentio   
+sino 
+sisto 
+solvo 
+statuo   
+sto 
+struo 
+suadeo  
+sum 
+sumo 
+surgo 
+tango 
+tego 
+teneo 
+tollo 
+traho 
+tremo   
+veho 
+venio 
+verto 
+video 
+vinco 
+vivo 
+volo 
+volvo 
+
+nolui 
+novi 
+peperi   
+pepuli   
+petivi 
+posui 
+poposci  
+potui 
+pressi   
+quaesivi 
+rapui 
+rexi 
+reliqui   
+respondi 
+risi 
+rupi 
+rui 
+scripsi   
+sedi 
+sensi 
+sivi 
+stiti 
+solvi 
+statui 
+steti 
+struxi 
+suasi 
+fui 
+sumpsi  
+surrexi   
+tetigi 
+texi 
+tenui 
+sustuli   
+traxi 
+tremui   
+vexi 
+veni 
+verti 
+vidi 
+vici 
+vixi 
+volui 
+volvi 
+
+- 
+notum* 
+partum* 
+pulsum 
+petitum 
+positum 
+- 
+- 
+pressum 
+quaesitum 
+raptum 
+rectum* 
+relictum 
+responsum 
+risum* 
+ruptum 
+rutum* 
+scriptum 
+sessum* 
+sensum 
+situm 
+statum* 
+solutum 
+statutum  
+statum* 
+structum 
+suasum 
+- 
+sumptum 
+surrectum  
+tactum 
+tectum 
+tentum* 
+sublatus 
+tractum 
+- 
+- 
+
+- 
+visum 
+victum 
+
+- 
+volutum 
+
+Deponentia en semi-deponentia 
+
+aggredior 
+audeo   
+fio 
+fruor 
+fungor   
+gaudeo  
+loquor   
+mereor  
+morior   
+nascor   
+obliviscor 
+orior 
+
+aggressus sum 
+ausus sum 
+factus sum 
+fructus sum 
+functus sum 
+gavisus sum* 
+locutus sum 
+meritus sum 
+mortuus sum 
+natus sum 
+oblitus sum 
+ortus sum 
+
+Pagina 34 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LATIJNSE TAAL EN CULTUUR VWO | SYLLABUS CENTRAAL EXAMEN 2027       
+Versie 2 
+
+patior   
+polliceor 
+proficiscor 
+queror   
+reor 
+sequor   
+soleo 
+utor 
+vehor 
+vereor   
+vertor   
+
+passus sum 
+pollicitus sum 
+profectus sum 
+questus sum 
+ratus sum 
+secutus sum 
+solitus sum 
+usus sum 
+vectus sum 
+veritus sum 
+versus sum 
+
+Pagina 35 van 36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

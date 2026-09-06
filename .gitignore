@@ -19,3 +19,6 @@ _exams/
 
 # Agent working files (reports, test scripts) - not part of the site
 scratchpad/
+
+# Syllabi: PDF-bronnen zijn groot en herleidbaar via scripts/fetch-syllabi.sh; alleen de tekst-extractie committen.
+syllabi/2027/*.pdf
