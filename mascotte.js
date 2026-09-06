@@ -84,7 +84,7 @@ function mascotSVG(mood, size) {
     case 'wave':  leftArm = aDownL; rightArm = aWaveR; break;
     default:      leftArm = aDownL; rightArm = aDownR;
   }
-  return `<svg class="m-svg m-mood-${mood || 'blij'}" viewBox="0 0 120 120" width="${size}" height="${size}" role="img" aria-label="${MASCOT_NAME}, de vos-studiemaatje-mascotte">
+  return `<svg class="m-svg m-mood-${mood || 'blij'}" viewBox="-8 -12 136 136" width="${size}" height="${size}" role="img" aria-label="${MASCOT_NAME}, de vos-studiemaatje-mascotte">
     <defs><radialGradient id="mCheek" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff8fa3" stop-opacity=".8"/><stop offset="1" stop-color="#ff8fa3" stop-opacity="0"/></radialGradient></defs>
     <ellipse class="m-shadow" cx="60" cy="115" rx="30" ry="6"/>
     <g class="m-fig">
