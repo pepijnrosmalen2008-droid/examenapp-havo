@@ -1608,6 +1608,7 @@ function toonRes(){
   try{const omBox=document.getElementById('one-more-wrap');if(omBox)omBox.innerHTML='';}catch(e){}
   try{renderAdaptiveResults();}catch(e){}
   try{renderChallengeResult();}catch(e){}
+  try{_renderResShare(pct);}catch(e){}
   show('sc-res');
   // Nogmaals opruimen ná de schermwissel: badges/toasts die de laatste vraag nog
   // net aanmaakte (speed-badge, xp-toast, vonk-react) mogen niet in het rustige
@@ -1911,17 +1912,40 @@ async function _buildShareCard(o){
   return cv;
 }
 function _ambassadeur(){if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Score gedeeld.'),500);}
+// Deel-rij op het resultaatscherm: op het emotionele piekmoment één tik om je
+// score te delen of een klasgenoot uit te dagen (WhatsApp-first groei-loop).
+// De onderliggende deelScore()/daagUit() bestonden al maar waren nergens gekoppeld.
+function _renderResShare(pct){
+  const box=document.getElementById('res-share'); if(!box) return;
+  box.classList.remove('peak');
+  const okMode=(ST.mode==='snel'||ST.mode==='oud') && !ST.isFoutenboek && ST.vak;
+  if(!okMode){ box.innerHTML=''; return; }
+  const perfect=pct>=1, strong=pct>=0.8, peak=perfect||strong;
+  const canChallenge=ST.mode==='snel' && ST.domein && ST.antwrd && ST.antwrd.length;
+  const kick=perfect?'🌟 Perfecte score! Laat je klas zien wat je kan.'
+            :strong?'🔥 Sterke score — daag een klasgenoot uit!'
+            :'💛 Trots op je progressie? Deel het met je klas.';
+  let html=`<div class="res-share-kick">${kick}</div><div class="res-share-row">`
+    +`<button class="res-share-btn primary" onclick="deelScore()">📤 Deel je score</button>`;
+  if(canChallenge) html+=`<button class="res-share-btn" onclick="daagUit()">🎯 Daag klasgenoot uit</button>`;
+  html+=`</div>`;
+  box.innerHTML=html;
+  box.classList.toggle('peak', peak);
+}
 async function deelScore(){
   const vakNaam=ST.vak?.naam||'een vak';
-  const score=document.getElementById('rnum')?.textContent||'?';
-  const total=document.getElementById('rden')?.textContent||'';
-  const pctRaw=total?Math.round(parseInt(score)/parseInt(total.replace('/',''))*100):null;
-  const pctTxt=pctRaw?` (${pctRaw}%)`:'';
+  // Score rechtstreeks uit ST (het resultaatscherm toont "sc van tot"; DOM-scrapen
+  // gaf een verkeerde "van"-parse). sc = behaalde punten, tot = aantal vragen.
+  const tot=(ST.adaptive?ST.aqTarget:(ST.vragen&&ST.vragen.length))||ST.antwrd.length||10;
+  const sc=Math.round((ST.score||0)*10)/10;
+  const pctRaw=tot?Math.round(sc/tot*100):null;
+  const scoreTxt=(Number.isInteger(sc)?sc:String(sc).replace('.',','))+'/'+tot;
+  const pctTxt=pctRaw!=null?` (${pctRaw}%)`:'';
   const modeTxt={snel:'snelle quiz',oud:'open vragen',fc:'flashcards',race:'Bot Race'}[ST.mode]||'quiz';
-  const tekst=`${pctRaw>=90?'🌟':pctRaw>=70?'🔥':'💪'} ${score}${total}${pctTxt} op ${vakNaam} ${modeTxt} - kun jij het beter?\nGratis oefenen op slagio.nl`;
+  const tekst=`${pctRaw>=90?'🌟':pctRaw>=70?'🔥':'💪'} ${scoreTxt}${pctTxt} op ${vakNaam} ${modeTxt} - kun jij het beter?\nGratis oefenen op slagio.nl`;
   const mood=pctRaw>=100?'feest':pctRaw>=85?'trots':pctRaw>=65?'blij':'goed';
   const msg=pctRaw>=100?'Perfecte score!':pctRaw>=90?'Bijna perfect!':pctRaw>=80?'Super gedaan!':pctRaw>=65?'Goed bezig!':'Lekker geoefend!';
-  const big=pctRaw!=null?pctRaw+'%':(score+(total||''));
+  const big=pctRaw!=null?pctRaw+'%':scoreTxt;
   // 1) Beeld-kaart genereren en delen (met tekst + link).
   let file=null;
   try{

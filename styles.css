@@ -6740,6 +6740,18 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 /* ── Resultaat-scherm divisie-widget (na een quiz) ── */
 .res-league{max-width:520px;margin:14px auto 0}
 .res-league:empty{display:none}
+/* Deel-rij op het resultaatscherm (groei-loop: score delen / klasgenoot uitdagen) */
+.res-share{max-width:520px;margin:16px auto 4px;display:flex;flex-direction:column;gap:9px}
+.res-share:empty{display:none}
+.res-share-kick{text-align:center;font-weight:800;font-size:14.5px;color:#fff;opacity:.92}
+.res-share-row{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+.res-share-btn{flex:1 1 150px;min-width:150px;border:2px solid var(--or,#e8580c);background:rgba(var(--or-rgb,232,88,12),.12);color:#fff;font-family:var(--font-head);font-weight:800;font-size:14.5px;padding:12px 14px;border-radius:14px;cursor:pointer;transition:transform .12s,background .15s}
+.res-share-btn.primary{background:var(--or,#e8580c);border-color:var(--or,#e8580c)}
+.res-share-btn:hover{transform:translateY(-1px)}
+.res-share-btn:active{transform:translateY(1px)}
+.res-share.peak .res-share-btn.primary{animation:resSharePulse 1.5s ease-in-out 2}
+@keyframes resSharePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+@media(prefers-reduced-motion:reduce){.res-share.peak .res-share-btn.primary{animation:none}}
 .rl-card{position:relative;overflow:hidden;border-radius:20px;padding:16px 16px 14px;
   background:linear-gradient(150deg,color-mix(in srgb,var(--lg-col,#e8a91d) 20%,var(--s)),var(--s) 62%);
   border:1px solid color-mix(in srgb,var(--lg-col,#e8a91d) 35%,var(--bo));
