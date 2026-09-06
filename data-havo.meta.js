@@ -116,9 +116,9 @@ var VAKKEN = [
      "Chronologie en tijdsverschijnselen",
      "Poëzie: klank, beeld en structuur"
     ],
-    "nSv": 132,
+    "nSv": 196,
     "nOe": 3,
-    "nBeg": 26,
+    "nBeg": 42,
     "hasSam": true
    }
   ]
@@ -1622,9 +1622,9 @@ var VAKKEN = [
      "Historische en culturele context",
      "Leeslijst Engelstalige werken"
     ],
-    "nSv": 120,
+    "nSv": 180,
     "nOe": 3,
-    "nBeg": 24,
+    "nBeg": 39,
     "hasSam": true
    }
   ]
