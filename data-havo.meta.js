@@ -26,9 +26,9 @@ var VAKKEN = [
      "Tekstsoorten (betoog, beschouwing, instructie)",
      "Bedoeling en toon van de schrijver"
     ],
-    "nSv": 31,
+    "nSv": 136,
     "nOe": 5,
-    "nBeg": 10,
+    "nBeg": 27,
     "hasSam": true
    },
    {
@@ -44,9 +44,9 @@ var VAKKEN = [
      "Non-verbale communicatie",
      "Feedback geven en ontvangen"
     ],
-    "nSv": 30,
+    "nSv": 79,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 14,
     "hasSam": true
    },
    {
@@ -62,9 +62,9 @@ var VAKKEN = [
      "Woordkeuze, stijl en coherentie",
      "Gebruik van signaalwoorden"
     ],
-    "nSv": 30,
+    "nSv": 105,
     "nOe": 4,
-    "nBeg": 10,
+    "nBeg": 20,
     "hasSam": true
    },
    {
@@ -80,9 +80,9 @@ var VAKKEN = [
      "Lengte en volledigheid beoordelen",
      "Samenvatting beoordelen op kwaliteit"
     ],
-    "nSv": 30,
+    "nSv": 95,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 18,
     "hasSam": true
    },
    {
@@ -98,9 +98,9 @@ var VAKKEN = [
      "Aanvaardbaarheid van argumentatie beoordelen",
      "Feitelijke vs waarderende argumenten"
     ],
-    "nSv": 30,
+    "nSv": 107,
     "nOe": 5,
-    "nBeg": 10,
+    "nBeg": 21,
     "hasSam": true
    },
    {
@@ -116,9 +116,9 @@ var VAKKEN = [
      "Chronologie en tijdsverschijnselen",
      "Poëzie: klank, beeld en structuur"
     ],
-    "nSv": 31,
+    "nSv": 132,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 26,
     "hasSam": true
    }
   ]
@@ -150,9 +150,9 @@ var VAKKEN = [
     "onderwerpen": [
      "A1: Wiskundige en profielspecifieke vaardigheden (CE+SE)"
     ],
-    "nSv": 32,
+    "nSv": 99,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 19,
     "hasSam": true
    },
    {
@@ -172,9 +172,9 @@ var VAKKEN = [
      "B2: Algebra (CE)",
      "B3: Telproblemen (SE - niet op CE)"
     ],
-    "nSv": 34,
+    "nSv": 85,
     "nOe": 7,
-    "nBeg": 10,
+    "nBeg": 13,
     "hasSam": true
    },
    {
@@ -196,9 +196,9 @@ var VAKKEN = [
      "C4: Lineaire verbanden: y = ax + b (CE)",
      "C5: Exponentiële verbanden: y = a·g^x (CE)"
     ],
-    "nSv": 33,
+    "nSv": 113,
     "nOe": 8,
-    "nBeg": 10,
+    "nBeg": 21,
     "hasSam": true
    },
    {
@@ -222,9 +222,9 @@ var VAKKEN = [
      "D6: Optimalisatieproblemen in context (CE)",
      "D7: Toenemend/afnemend stijgen en dalen (CE)"
     ],
-    "nSv": 33,
+    "nSv": 88,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 15,
     "hasSam": true
    },
    {
@@ -246,9 +246,9 @@ var VAKKEN = [
      "E4: Regressie en correlatie: r en R² (CE)",
      "E5: Kansrekening: P(A), binomiaal (SE - niet op CE)"
     ],
-    "nSv": 34,
+    "nSv": 104,
     "nOe": 9,
-    "nBeg": 10,
+    "nBeg": 19,
     "hasSam": true
    }
   ]
@@ -287,9 +287,9 @@ var VAKKEN = [
      "Conclusies trekken en resultaten beoordelen",
      "Wetenschappelijke redeneerwijze en kritisch denken"
     ],
-    "nSv": 33,
+    "nSv": 106,
     "nOe": 5,
-    "nBeg": 10,
+    "nBeg": 20,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -407,9 +407,9 @@ var VAKKEN = [
      "Mutaties en genexpressie",
      "Genetica: Mendelse overerving en stamboombomen"
     ],
-    "nSv": 33,
+    "nSv": 127,
     "nOe": 10,
-    "nBeg": 10,
+    "nBeg": 24,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -566,9 +566,9 @@ var VAKKEN = [
      "Zenuwstelsel: neuronen, synaps, reflexbogen",
      "Afweersysteem: specifiek en aspecifiek"
     ],
-    "nSv": 32,
+    "nSv": 130,
     "nOe": 6,
-    "nBeg": 10,
+    "nBeg": 25,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -725,9 +725,9 @@ var VAKKEN = [
      "Darwins evolutietheorie",
      "Hardy-Weinberg evenwicht"
     ],
-    "nSv": 33,
+    "nSv": 107,
     "nOe": 7,
-    "nBeg": 10,
+    "nBeg": 19,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -879,9 +879,9 @@ var VAKKEN = [
      "Veiligheid in het laboratorium",
      "Mol-berekeningen in onderzoekscontext"
     ],
-    "nSv": 32,
+    "nSv": 93,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 17,
     "hasSam": true
    },
    {
@@ -912,9 +912,9 @@ var VAKKEN = [
      "Molecuulpolairiteit en geometrie",
      "Oplossen van stoffen (like dissolves like)"
     ],
-    "nSv": 33,
+    "nSv": 97,
     "nOe": 4,
-    "nBeg": 10,
+    "nBeg": 18,
     "hasSam": true
    },
    {
@@ -953,9 +953,9 @@ var VAKKEN = [
      "Mol, concentratie en stoichiometrie",
      "Verdunning en titratie"
     ],
-    "nSv": 32,
+    "nSv": 100,
     "nOe": 8,
-    "nBeg": 10,
+    "nBeg": 19,
     "hasSam": true
    },
    {
@@ -981,9 +981,9 @@ var VAKKEN = [
      "Reactietypen: additie, substitutie, esterificatie, hydrolyse",
      "Polymeren (additie- en condensatiepolymerisatie)"
     ],
-    "nSv": 33,
+    "nSv": 120,
     "nOe": 6,
-    "nBeg": 10,
+    "nBeg": 23,
     "hasSam": true
    },
    {
@@ -1008,9 +1008,9 @@ var VAKKEN = [
      "Medicijnen en farmaceutische chemie",
      "Voedselchemie (conservering, additieven)"
     ],
-    "nSv": 32,
+    "nSv": 105,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 21,
     "hasSam": true
    }
   ]
@@ -1046,9 +1046,9 @@ var VAKKEN = [
      "Meten en meetonzekerheid: nauwkeurigheid en precisie",
      "Grafieken: assen, schaal, lijnvorm en verband bepalen"
     ],
-    "nSv": 33,
+    "nSv": 94,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 17,
     "hasSam": true
    },
    {
@@ -1070,9 +1070,9 @@ var VAKKEN = [
      "Brekingsindex",
      "Golflengte en kleur van licht"
     ],
-    "nSv": 33,
+    "nSv": 108,
     "nOe": 9,
-    "nBeg": 10,
+    "nBeg": 20,
     "hasSam": true
    },
    {
@@ -1110,9 +1110,9 @@ var VAKKEN = [
      "Kinetische en potentiele energie",
      "Wet van behoud van energie"
     ],
-    "nSv": 33,
+    "nSv": 128,
     "nOe": 12,
-    "nBeg": 10,
+    "nBeg": 26,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -1249,9 +1249,9 @@ var VAKKEN = [
      "Transformator (U1/U2 = n1/n2)",
      "Elektromagnetische inductie"
     ],
-    "nSv": 32,
+    "nSv": 110,
     "nOe": 11,
-    "nBeg": 10,
+    "nBeg": 22,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -1387,9 +1387,9 @@ var VAKKEN = [
      "Ioniserende straling en gezondheid",
      "Elektromagnetische straling en materie (fotonenergie)"
     ],
-    "nSv": 32,
+    "nSv": 130,
     "nOe": 11,
-    "nBeg": 10,
+    "nBeg": 26,
     "hasSam": true
    }
   ]
@@ -1420,9 +1420,9 @@ var VAKKEN = [
      "Oprichting en beeindiging van organisaties",
      "Continuiteit van de onderneming"
     ],
-    "nSv": 30,
+    "nSv": 100,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 19,
     "hasSam": true
    },
    {
@@ -1437,9 +1437,9 @@ var VAKKEN = [
      "CAO en arbeidsrecht",
      "Motivatie en beloningsvormen"
     ],
-    "nSv": 30,
+    "nSv": 147,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 31,
     "hasSam": true
    },
    {
@@ -1455,9 +1455,9 @@ var VAKKEN = [
      "Kwantitatief en kwalitatief onderzoek",
      "Marktvormen (monopolie, oligopolie, volkomen concurrentie)"
     ],
-    "nSv": 30,
+    "nSv": 110,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 20,
     "hasSam": true
    },
    {
@@ -1472,9 +1472,9 @@ var VAKKEN = [
      "Rentabiliteit: REV en RTV",
      "Hefboomwerking (positief en negatief)"
     ],
-    "nSv": 30,
+    "nSv": 146,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 30,
     "hasSam": true
    },
    {
@@ -1490,9 +1490,9 @@ var VAKKEN = [
      "Solvabiliteit",
      "Rentabiliteit als kengetal"
     ],
-    "nSv": 30,
+    "nSv": 143,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 29,
     "hasSam": true
    }
   ]
@@ -1527,9 +1527,9 @@ var VAKKEN = [
      "Synoniem en antonym",
      "Formeel vs. informeel woordgebruik"
     ],
-    "nSv": 31,
+    "nSv": 129,
     "nOe": 7,
-    "nBeg": 10,
+    "nBeg": 25,
     "hasSam": true
    },
    {
@@ -1546,9 +1546,9 @@ var VAKKEN = [
      "Reference words (pronouns, this/that/these)",
      "Summary and paraphrase skills"
     ],
-    "nSv": 30,
+    "nSv": 113,
     "nOe": 7,
-    "nBeg": 10,
+    "nBeg": 22,
     "hasSam": true
    },
    {
@@ -1565,9 +1565,9 @@ var VAKKEN = [
      "Nieuws, documentaires en vlogs volgen",
      "Instructies correct uitvoeren"
     ],
-    "nSv": 30,
+    "nSv": 102,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 19,
     "hasSam": true
    },
    {
@@ -1584,9 +1584,9 @@ var VAKKEN = [
      "Vragen stellen en verduidelijking vragen",
      "Vloeiendheid en uitspraak"
     ],
-    "nSv": 30,
+    "nSv": 106,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 21,
     "hasSam": true
    },
    {
@@ -1603,9 +1603,9 @@ var VAKKEN = [
      "Revideren en proeflezen",
      "Formeel vs. informeel register"
     ],
-    "nSv": 30,
+    "nSv": 95,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 17,
     "hasSam": true
    },
    {
@@ -1622,9 +1622,9 @@ var VAKKEN = [
      "Historische en culturele context",
      "Leeslijst Engelstalige werken"
     ],
-    "nSv": 30,
+    "nSv": 120,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 24,
     "hasSam": true
    }
   ]
@@ -1663,9 +1663,9 @@ var VAKKEN = [
      "A6 Oorzaken en gevolgen",
      "A7 Feiten, meningen, standplaatsgebondenheid"
     ],
-    "nSv": 31,
+    "nSv": 147,
     "nOe": 12,
-    "nBeg": 10,
+    "nBeg": 31,
     "hasSam": true
    },
    {
@@ -1691,9 +1691,9 @@ var VAKKEN = [
      "B9 Tijdvak 9",
      "B10 Tijdvak 10"
     ],
-    "nSv": 31,
+    "nSv": 287,
     "nOe": 29,
-    "nBeg": 10,
+    "nBeg": 64,
     "hasSam": true
    },
    {
@@ -1709,9 +1709,9 @@ var VAKKEN = [
     "onderwerpen": [
      "C1 Thema's (schoolkeuze)"
     ],
-    "nSv": 30,
+    "nSv": 102,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 20,
     "hasSam": true
    },
    {
@@ -1729,9 +1729,9 @@ var VAKKEN = [
      "D1 Beginselen van de rechtsstaat",
      "D2 Parlementaire democratie in Nederland"
     ],
-    "nSv": 30,
+    "nSv": 145,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 30,
     "hasSam": true
    },
    {
@@ -1747,9 +1747,9 @@ var VAKKEN = [
     "onderwerpen": [
      "E1 Oriëntatie op studie en beroep"
     ],
-    "nSv": 30,
+    "nSv": 91,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 17,
     "hasSam": true
    }
   ]
@@ -1792,9 +1792,9 @@ var VAKKEN = [
      "A1 Geografische benadering",
      "A2 Geografisch onderzoek"
     ],
-    "nSv": 31,
+    "nSv": 145,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 30,
     "hasSam": true
    },
    {
@@ -1822,9 +1822,9 @@ var VAKKEN = [
      "B2 Samenhangen en verschillen in de wereld",
      "B3 Mondiale processen en lokale effecten"
     ],
-    "nSv": 30,
+    "nSv": 108,
     "nOe": 7,
-    "nBeg": 10,
+    "nBeg": 21,
     "hasSam": true
    },
    {
@@ -1852,9 +1852,9 @@ var VAKKEN = [
      "C2 Samenhangen en verschillen op aarde",
      "C3 De aarde als natuurlijk systeem en lokale effecten"
     ],
-    "nSv": 30,
+    "nSv": 113,
     "nOe": 7,
-    "nBeg": 10,
+    "nBeg": 22,
     "hasSam": true
    },
    {
@@ -1881,9 +1881,9 @@ var VAKKEN = [
      "D1 Gebiedskenmerken",
      "D2 Actuele vraagstukken"
     ],
-    "nSv": 30,
+    "nSv": 98,
     "nOe": 6,
-    "nBeg": 10,
+    "nBeg": 19,
     "hasSam": true
    },
    {
@@ -1910,9 +1910,9 @@ var VAKKEN = [
      "E1 Nationale en regionale vraagstukken",
      "E2 Regionale en lokale vraagstukken"
     ],
-    "nSv": 30,
+    "nSv": 149,
     "nOe": 8,
-    "nBeg": 10,
+    "nBeg": 32,
     "hasSam": true
    }
   ]
@@ -1945,9 +1945,9 @@ var VAKKEN = [
      "Bruto Binnenlands Product (BBP) en BBP per hoofd",
      "Lekken en injecties"
     ],
-    "nSv": 34,
+    "nSv": 163,
     "nOe": 7,
-    "nBeg": 10,
+    "nBeg": 35,
     "hasSam": true
    },
    {
@@ -1964,9 +1964,9 @@ var VAKKEN = [
      "Marktfalen: externe effecten en collectieve goederen",
      "Minimumloon en maximumprijs"
     ],
-    "nSv": 34,
+    "nSv": 191,
     "nOe": 22,
-    "nBeg": 10,
+    "nBeg": 41,
     "hasSam": true
    },
    {
@@ -1983,9 +1983,9 @@ var VAKKEN = [
      "Overheidsbegroting: begrotingstekort en staatsschuld",
      "Conjunctuurbeleid en automatische stabilisatoren"
     ],
-    "nSv": 33,
+    "nSv": 179,
     "nOe": 16,
-    "nBeg": 10,
+    "nBeg": 39,
     "hasSam": true
    },
    {
@@ -2002,9 +2002,9 @@ var VAKKEN = [
      "Monetair beleid: ECB en rente",
      "Wisselkoersen en internationale handel"
     ],
-    "nSv": 34,
+    "nSv": 177,
     "nOe": 13,
-    "nBeg": 10,
+    "nBeg": 39,
     "hasSam": true
    }
   ]
@@ -2036,9 +2036,9 @@ var VAKKEN = [
      "Operationaliseren van begrippen",
      "Enquête, interview en observatie"
     ],
-    "nSv": 31,
+    "nSv": 156,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 32,
     "hasSam": true
    },
    {
@@ -2054,9 +2054,9 @@ var VAKKEN = [
      "Instituties en hun functies",
      "Pluralisme vs elitisme"
     ],
-    "nSv": 30,
+    "nSv": 114,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 22,
     "hasSam": true
    },
    {
@@ -2073,9 +2073,9 @@ var VAKKEN = [
      "Media en politiek",
      "Europese Unie en nationale soevereiniteit"
     ],
-    "nSv": 30,
+    "nSv": 102,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 19,
     "hasSam": true
    },
    {
@@ -2091,9 +2091,9 @@ var VAKKEN = [
      "Cultuur, socialisatie en identiteit",
      "Maatschappelijke tegenstellingen"
     ],
-    "nSv": 30,
+    "nSv": 102,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 19,
     "hasSam": true
    }
   ]
@@ -2128,9 +2128,9 @@ var VAKKEN = [
      "Modelleren: praktijkproblemen vertalen naar wiskundige formules",
      "Grafieken interpreteren: trend, verband, beginwaarde en helling aflezen"
     ],
-    "nSv": 32,
+    "nSv": 91,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 17,
     "hasSam": true
    },
    {
@@ -2149,9 +2149,9 @@ var VAKKEN = [
      "B1: Exponentiële functies (CE)",
      "B1: Vergelijkingen oplossen (CE)"
     ],
-    "nSv": 32,
+    "nSv": 96,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 17,
     "hasSam": true
    },
    {
@@ -2170,9 +2170,9 @@ var VAKKEN = [
      "C1: Hoeken en lijnen (CE)",
      "C1: Ruimtelijke figuren (CE)"
     ],
-    "nSv": 32,
+    "nSv": 99,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 18,
     "hasSam": true
    },
    {
@@ -2191,9 +2191,9 @@ var VAKKEN = [
      "D1: Optimaliseren (CE)",
      "D1: Toepassingen in modellen (CE)"
     ],
-    "nSv": 32,
+    "nSv": 89,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 15,
     "hasSam": true
    },
    {
@@ -2215,9 +2215,9 @@ var VAKKEN = [
      "Goniometrische functies: amplitude, periode en verschuiving",
      "Vectoren: optelling, grootte en inwendig product"
     ],
-    "nSv": 32,
+    "nSv": 96,
     "nOe": 3,
-    "nBeg": 10,
+    "nBeg": 17,
     "hasSam": true
    }
   ]
