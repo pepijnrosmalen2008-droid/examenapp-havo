@@ -953,9 +953,9 @@ var VAKKEN = [
      "Mol, concentratie en stoichiometrie",
      "Verdunning en titratie"
     ],
-    "nSv": 100,
+    "nSv": 148,
     "nOe": 8,
-    "nBeg": 19,
+    "nBeg": 31,
     "hasSam": true
    },
    {
@@ -981,9 +981,9 @@ var VAKKEN = [
      "Reactietypen: additie, substitutie, esterificatie, hydrolyse",
      "Polymeren (additie- en condensatiepolymerisatie)"
     ],
-    "nSv": 120,
+    "nSv": 168,
     "nOe": 6,
-    "nBeg": 23,
+    "nBeg": 35,
     "hasSam": true
    },
    {
@@ -1008,9 +1008,9 @@ var VAKKEN = [
      "Medicijnen en farmaceutische chemie",
      "Voedselchemie (conservering, additieven)"
     ],
-    "nSv": 105,
+    "nSv": 153,
     "nOe": 3,
-    "nBeg": 21,
+    "nBeg": 33,
     "hasSam": true
    }
   ]
@@ -1070,9 +1070,9 @@ var VAKKEN = [
      "Brekingsindex",
      "Golflengte en kleur van licht"
     ],
-    "nSv": 108,
+    "nSv": 156,
     "nOe": 9,
-    "nBeg": 20,
+    "nBeg": 32,
     "hasSam": true
    },
    {
@@ -1110,9 +1110,9 @@ var VAKKEN = [
      "Kinetische en potentiele energie",
      "Wet van behoud van energie"
     ],
-    "nSv": 128,
+    "nSv": 176,
     "nOe": 12,
-    "nBeg": 26,
+    "nBeg": 38,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -1249,9 +1249,9 @@ var VAKKEN = [
      "Transformator (U1/U2 = n1/n2)",
      "Elektromagnetische inductie"
     ],
-    "nSv": 110,
+    "nSv": 158,
     "nOe": 11,
-    "nBeg": 22,
+    "nBeg": 34,
     "hasSam": true,
     "leerdoelen": [
      {
@@ -1387,9 +1387,9 @@ var VAKKEN = [
      "Ioniserende straling en gezondheid",
      "Elektromagnetische straling en materie (fotonenergie)"
     ],
-    "nSv": 130,
+    "nSv": 178,
     "nOe": 11,
-    "nBeg": 26,
+    "nBeg": 38,
     "hasSam": true
    }
   ]
