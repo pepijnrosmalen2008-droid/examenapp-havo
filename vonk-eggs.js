@@ -22,6 +22,34 @@
   // Laat Vonk kort een emotie tonen (physics-veilige mond-morph uit vonk.js).
   function _emote(svg, mood, ms) { try { if (typeof vonkEmote === 'function') vonkEmote(svg, mood, ms || 1500); } catch (e) {} }
 
+  // Kleine spraakwolk die Vónk zelf zegt: verschijnt vlak boven (of onder) de
+  // aangetikte Vonk met een pijltje naar hem toe — géén balk bovenaan het scherm.
+  // Kort houden; hij schaalt tot ~72vw en wordt netjes in beeld geklemd.
+  var _eggBub = null, _eggBubT = null;
+  function _bubble(svg, msg, ms) {
+    try {
+      svg = (svg && svg.getBoundingClientRect) ? svg : document.querySelector('.m-svg');
+      if (!svg) return;
+      var r = svg.getBoundingClientRect();
+      if (!_eggBub) { _eggBub = document.createElement('div'); _eggBub.className = 'vonk-egg-bubble'; _eggBub.setAttribute('aria-live', 'polite'); document.body.appendChild(_eggBub); }
+      var b = _eggBub;
+      b.classList.remove('below', 'in');
+      b.textContent = msg;
+      b.style.left = '0px'; b.style.top = '0px';
+      var bw = b.offsetWidth, bh = b.offsetHeight;
+      var cx = r.left + r.width / 2;
+      var left = Math.max(8, Math.min(window.innerWidth - bw - 8, cx - bw / 2));
+      var top = r.top - bh - 12;
+      if (top < 8) { top = r.bottom + 12; b.classList.add('below'); }
+      b.style.left = left + 'px'; b.style.top = top + 'px';
+      b.style.setProperty('--tail', Math.max(14, Math.min(bw - 14, cx - left)) + 'px');
+      void b.offsetWidth;
+      b.classList.add('in');
+      clearTimeout(_eggBubT);
+      _eggBubT = setTimeout(function () { if (_eggBub) _eggBub.classList.remove('in'); }, ms || 2200);
+    } catch (e) {}
+  }
+
   // Sparkle-burst rond een element (kleine emoji's die uitspatten).
   function _sparkle(el, n, emojis) {
     if (reduce || !el) return;
@@ -73,17 +101,17 @@
       _react(svg, 'm-egg-wobble'); _emote(svg, 'kus', 1600);
       _sparkle(svg, 16, ['💛', '💖', '😍', '✨', '🦊']);
       _haptic([20, 40, 20, 40, 20, 40, 90]); _sound('levelup'); _confetti('gold');
-      _toast('😍 Oké, jij bent officieel Vonks bestie! Kusje terug. 💛', '#ec4899', 3400);
+      _bubble(svg, '😍 Jij bent m\'n bestie! 💛', 2600);
     } else if (tapN >= 10) {
       _react(svg, 'm-egg-spin'); _emote(svg, 'feest', 1500);
       _sparkle(svg, 14, ['✨', '🎉', '⭐', '🔥', '💫']);
       _haptic([20, 40, 20, 40, 60]); _sound('levelup'); _confetti('gold');
-      if (tapN === 10) _toast('🦊 Je hebt Vonk helemaal gek gemaakt! Echte superfan. 💛', '#8b5cf6', 3200);
+      if (tapN === 10) _bubble(svg, '🤩 Superfan! 💛', 2400);
     } else if (tapN >= 5) {
       _react(svg, 'm-egg-spin'); _emote(svg, _pick(['duizelig', 'cool', 'giechel']), 1400);
       _sparkle(svg, 8, ['🎉', '✨', '⭐']);
       _haptic([15, 30, 15]); _sound('coin');
-      if (tapN === 5) _toast('🌀 ' + _pick(['Wheee! Niet stoppen!', 'Nog een keer!', 'Ik word duizelig 😵‍💫']), '#f59e0b', 1900);
+      if (tapN === 5) _bubble(svg, _pick(['Wheee! 🌀', 'Nog een keer!', 'Zo duizelig! 😵‍💫']), 1900);
     } else {
       _react(svg, 'm-egg-pop'); _emote(svg, _pick(['giechel', 'blij', 'wow', 'knipoog']), 1300);
       _sparkle(svg, 5, ['✨', '⭐', '💫']);
@@ -102,7 +130,7 @@
       _emote(_lpSvg, 'giechel', 1900); _react(_lpSvg, 'm-egg-wobble');
       _sparkle(_lpSvg, 9, ['😂', '🤭', '✨', '⭐']);
       _haptic([10, 20, 10, 20, 10]); _sound('coin');
-      _toast('🤭 ' + _pick(['Hihi, dat kietelt!', 'Hahaha, stop! 😂', 'Jij bent grappig!']), '#f59e0b', 2000);
+      _bubble(_lpSvg, _pick(['Hihi, kietelt! 🤭', 'Haha, stop! 😂', 'Jij bent grappig!']), 2200);
     }, 620);
   }
   function _lpEnd() { if (_lpT) { clearTimeout(_lpT); _lpT = null; } }
@@ -124,7 +152,7 @@
       _emote(svg, 'wow', 1600); _react(svg, 'm-egg-pop');
       _sparkle(svg, 10, ['🦊', '✨', '👋', '⭐']);
       _haptic([15, 25]); _sound('coin');
-      _toast('🦊 Hé, dat ben ik! Hoi hoi! 👋', '#f59e0b', 2200);
+      _bubble(svg, '🦊 Dat ben ik! 👋', 2200);
     }
   });
 
@@ -136,10 +164,10 @@
     if (kbuf.length === KONAMI.length && KONAMI.every(function (k, i) { return kbuf[i] === k; })) {
       kbuf = [];
       var svg = document.querySelector('.m-svg');
-      if (svg) { _react(svg, 'm-egg-spin'); _sparkle(svg, 18, ['🪩', '✨', '🎉', '⭐', '🔥', '💫']); }
+      if (svg) { _react(svg, 'm-egg-spin'); _emote(svg, 'cool', 1800); _sparkle(svg, 18, ['🪩', '✨', '🎉', '⭐', '🔥', '💫']); }
       _haptic([30, 50, 30, 50, 30, 50, 80]);
       _confetti('gold'); setTimeout(function () { _confetti(); }, 320);
-      _toast('🪩 DISCO VONK! Geheime code ontgrendeld. 🕺', '#8b5cf6', 3400);
+      _bubble(svg, '🪩 Disco Vonk! 🕺', 2600);
     }
   });
 
@@ -149,18 +177,18 @@
       var d = new Date(), m = d.getMonth() + 1, day = d.getDate();
       var key = 'slagio_egg_' + d.getFullYear() + '-' + m + '-' + day;
       if (localStorage.getItem(key)) return;
-      var msg = null;
-      if (m === 12 && day === 5) msg = '🎁 Fijne pakjesavond! Vonk heeft ook een cadeautje voor je: doorzetten. 😉';
-      else if (m === 12 && day >= 24 && day <= 26) msg = '🎄 Fijne kerst! Even bijkomen — daarna weer knallen.';
-      else if ((m === 12 && day === 31) || (m === 1 && day === 1)) msg = '🎆 Gelukkig nieuwjaar! Nieuw jaar, nieuwe leerdoelen. 💪';
-      else if (m === 4 && day === 27) msg = '👑 Fijne Koningsdag! Vandaag ben jij de koning van je leerdoelen.';
-      else if (m === 4 && day === 1) msg = '🦊 Vonk zegt: je haalt een 10 zónder te leren! …grapje. 1 april! 😄';
+      var msg = null, emo = 'feest';
+      if (m === 12 && day === 5) { msg = '🎁 Fijne pakjesavond!'; emo = 'blij'; }
+      else if (m === 12 && day >= 24 && day <= 26) { msg = '🎄 Fijne kerst!'; emo = 'liefde'; }
+      else if ((m === 12 && day === 31) || (m === 1 && day === 1)) { msg = '🎆 Gelukkig nieuwjaar! 💪'; emo = 'feest'; }
+      else if (m === 4 && day === 27) { msg = '👑 Fijne Koningsdag!'; emo = 'trots'; }
+      else if (m === 4 && day === 1) { msg = '🦊 1 april! 😄'; emo = 'knipoog'; }
       if (!msg) return;
       localStorage.setItem(key, '1');
       setTimeout(function () {
-        _toast(msg, '#f59e0b', 4200);
         var svg = document.querySelector('.m-svg');
-        if (svg) { _react(svg, 'm-egg-wobble'); _sparkle(svg, 7, ['✨', '🎉', '⭐']); }
+        if (svg) { _emote(svg, emo, 2400); _react(svg, 'm-egg-wobble'); _sparkle(svg, 7, ['✨', '🎉', '⭐']); }
+        _bubble(svg, msg, 3000);
       }, 2600);
     } catch (e) {}
   }
@@ -169,14 +197,14 @@
     try {
       if (sessionStorage.getItem('slagio_egg_timegreet')) return;
       var h = new Date().getHours(), msg = null, mood = null, emo = ['✨'];
-      if (h >= 0 && h < 5) { msg = '🌙 Zo laat nog aan het leren? Petje af — maar slaap is óók studeren. 😴'; mood = 'slaap'; emo = ['😴', '💤', '🌙']; }
-      else if (h >= 5 && h < 8) { msg = '🌅 Vroege vogel! Even oefenen voor school? Daar hou ik van. ☕'; mood = 'trots'; emo = ['🌅', '☕', '✨']; }
+      if (h >= 0 && h < 5) { msg = '🌙 Zo laat nog? Knap! 😴'; mood = 'slaap'; emo = ['😴', '💤', '🌙']; }
+      else if (h >= 5 && h < 8) { msg = '🌅 Vroege vogel! ☕'; mood = 'trots'; emo = ['🌅', '☕', '✨']; }
       if (!msg) return;
       sessionStorage.setItem('slagio_egg_timegreet', '1');
       setTimeout(function () {
-        _toast(msg, '#8b5cf6', 4000);
         var svg = document.querySelector('.m-svg');
         if (svg) { _emote(svg, mood, 2200); _react(svg, 'm-egg-wobble'); _sparkle(svg, 6, emo); }
+        _bubble(svg, msg, 3200);
       }, 3200);
     } catch (e) {}
   }
