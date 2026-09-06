@@ -1420,9 +1420,9 @@ var VAKKEN = [
      "Oprichting en beeindiging van organisaties",
      "Continuiteit van de onderneming"
     ],
-    "nSv": 100,
+    "nSv": 164,
     "nOe": 3,
-    "nBeg": 19,
+    "nBeg": 35,
     "hasSam": true
    },
    {
@@ -1881,9 +1881,9 @@ var VAKKEN = [
      "D1 Gebiedskenmerken",
      "D2 Actuele vraagstukken"
     ],
-    "nSv": 98,
+    "nSv": 162,
     "nOe": 6,
-    "nBeg": 19,
+    "nBeg": 35,
     "hasSam": true
    },
    {
@@ -2073,9 +2073,9 @@ var VAKKEN = [
      "Media en politiek",
      "Europese Unie en nationale soevereiniteit"
     ],
-    "nSv": 102,
+    "nSv": 166,
     "nOe": 3,
-    "nBeg": 19,
+    "nBeg": 35,
     "hasSam": true
    },
    {
