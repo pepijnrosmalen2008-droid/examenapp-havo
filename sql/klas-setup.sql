@@ -362,7 +362,7 @@ returns jsonb language sql stable security definer set search_path = public as $
                 else null end as a
   ),
   seq as (
-    select d, (select a from anchor) - (row_number() over (order by d desc) - 1) as expected
+    select d, (select a from anchor) - (row_number() over (order by d desc) - 1)::int as expected
       from days where d <= (select a from anchor)
   )
   select jsonb_build_object(
