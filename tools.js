@@ -56,18 +56,36 @@ function renderRapport(){
 }
 async function shareRapport(){
   const vakken=getVK();
-  const allDomains=[];
-  vakken.forEach(vak=>{(vak.domeinen||[]).forEach(dom=>{const {pct,hasData}=getDomeinBestPct(vak.id,dom.id);if(hasData)allDomains.push(pct);});});
+  const allDomains=[],rows=[];
+  vakken.forEach(vak=>{(vak.domeinen||[]).forEach(dom=>{const {pct,hasData}=getDomeinBestPct(vak.id,dom.id);if(hasData){allDomains.push(pct);rows.push({naam:dom.naam,pct:Math.round(pct*100)});}});});
   const avg=allDomains.length?Math.round(allDomains.reduce((s,v)=>s+v,0)/allDomains.length*100):0;
   const p=getProgress();
   const tot=Object.values(p).reduce((s,v)=>s+(v.attempts||0),0);
-  const tekst=`Mijn voortgang op Slagio 📊\n${tot} quizzen · ${allDomains.length} domeinen · gemiddeld ${avg}%\nOok oefenen voor het examen? → slagio.nl`;
-  if(navigator.share){
-    try{await navigator.share({title:'Mijn Slagio Rapport',text:tekst,url:'https://slagio.nl'});if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Rapport gedeeld.'),500);}catch(e){}
-  }else{
-    try{await navigator.clipboard.writeText(tekst);showToast('📋 Rapport gekopieerd!');}catch(e){showToast('slagio.nl');}
-    if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Rapport gedeeld.'),500);
+  rows.sort((a,b)=>b.pct-a.pct);                              // sterkste domeinen bovenaan
+  const id=(typeof _cardIdentityData==='function')?_cardIdentityData():{};
+  const tekst=`📊 Mijn voortgang op Slagio: ${tot} quizzen · ${allDomains.length} domeinen · gemiddeld ${avg}%\nOok gratis oefenen voor je eindexamen? → slagio.nl`;
+  const _done=()=>{if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Rapport gedeeld.'),500);};
+  // 1) Premium rapport-kaart genereren en delen.
+  let file=null;
+  try{
+    if(typeof _buildRapportCard==='function'){
+      const cv=await _buildRapportCard({avg,quizzen:tot,domeinen:allDomains.length,rows,id});
+      const blob=await new Promise(r=>cv.toBlob(r,'image/png',0.95));
+      if(blob)file=new File([blob],'slagio-rapport.png',{type:'image/png'});
+    }
+  }catch(e){}
+  if(file&&navigator.canShare&&navigator.canShare({files:[file]})){
+    try{await navigator.share({files:[file],text:tekst});_done();return;}catch(e){if(e&&e.name==='AbortError')return;}
   }
+  if(navigator.share){
+    try{await navigator.share({title:'Mijn Slagio Rapport',text:tekst,url:'https://slagio.nl'});_done();return;}catch(e){if(e&&e.name==='AbortError')return;}
+  }
+  if(file){
+    const url=URL.createObjectURL(file);const a=document.createElement('a');a.href=url;a.download='slagio-rapport.png';document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),200);showToast('📸 Rapportkaart opgeslagen — deel \'m met je klas!');_done();return;
+  }
+  try{await navigator.clipboard.writeText(tekst);showToast('📋 Rapport gekopieerd!');}catch(e){showToast('slagio.nl');}
+  _done();
 }
 // ═══════ STUDIEPLAN v2 ═══════
 const SP_PREF_KEY='slagio_sp_prefs_v1';

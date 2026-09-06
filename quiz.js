@@ -1870,45 +1870,149 @@ function _svgToImg(svg){
   });
 }
 function _rr(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
-async function _buildShareCard(o){
-  const W=1080,H=1350,cv=document.createElement('canvas');cv.width=W;cv.height=H;
-  const g=cv.getContext('2d');
-  // achtergrond: warme oranje verloop + zachte glow
-  const bg=g.createLinearGradient(0,0,W*0.4,H);bg.addColorStop(0,'#FFA63A');bg.addColorStop(1,'#EF6E12');
+// ═══════ PREMIUM DEEL-KAARTEN ═══════
+// Eén merkkaart-systeem (score + rapport). Niveau-kleur als grond, goud als
+// beloningsaccent, échte merk-typografie (Bricolage Grotesque), ring-gauge,
+// persoonlijke identiteitsstrip en subtiele korrel/vignet voor diepte.
+// Op elk platform (WhatsApp/Insta/Snap) een premium "prestatiekaart".
+const _FH='"Bricolage Grotesque",system-ui,-apple-system,sans-serif';   // display
+const _FB='"Inter",system-ui,-apple-system,sans-serif';                 // body
+const _GOLD='#f6c945', _GOLD2='#e0a412';
+const _CARD_NIV={
+  havo:{acc:'#5b9bff',mid:'#1e40af',top:'#13264d',bot:'#0a1329'},
+  vwo :{acc:'#b982ff',mid:'#5b21b6',top:'#241247',bot:'#120724'},
+  vmbo:{acc:'#2fd6c1',mid:'#0f766e',top:'#0c3733',bot:'#061f1c'},
+};
+function _cardTheme(){const n=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo';return _CARD_NIV[n]||_CARD_NIV.havo;}
+async function _cardFonts(){
+  try{if(!document.fonts||!document.fonts.load)return;
+    await Promise.race([Promise.all([
+      document.fonts.load('800 160px "Bricolage Grotesque"'),
+      document.fonts.load('700 48px "Bricolage Grotesque"'),
+      document.fonts.load('600 32px "Inter"'),document.fonts.load('800 26px "Inter"')
+    ]),new Promise(r=>setTimeout(r,1400))]);
+  }catch(e){}
+}
+function _grain(g,W,H,a){g.save();g.globalAlpha=a||0.035;for(let i=0;i<1100;i++){g.fillStyle=Math.random()<0.5?'#fff':'#000';g.fillRect(Math.random()*W,Math.random()*H,1.3,1.3);}g.restore();}
+function _ring(g,cx,cy,r,pct,col,track,lw){
+  g.lineCap='round';
+  g.beginPath();g.arc(cx,cy,r,0,Math.PI*2);g.strokeStyle=track;g.lineWidth=lw;g.stroke();
+  if(pct>0){g.save();g.shadowColor=col;g.shadowBlur=26;g.beginPath();g.arc(cx,cy,r,-Math.PI/2,-Math.PI/2+Math.PI*2*Math.min(1,pct));g.strokeStyle=col;g.lineWidth=lw;g.stroke();g.restore();}
+}
+// gedeelde grond: verloop + niveau-gloed + goud-folie frame + wordmerk + niveau-chip
+function _cardBase(g,W,H,t,chip){
+  const bg=g.createLinearGradient(0,0,0,H);bg.addColorStop(0,t.top);bg.addColorStop(1,t.bot);
   g.fillStyle=bg;g.fillRect(0,0,W,H);
-  const glow=g.createRadialGradient(W/2,430,60,W/2,430,720);glow.addColorStop(0,'rgba(255,255,255,.25)');glow.addColorStop(1,'rgba(255,255,255,0)');
-  g.fillStyle=glow;g.fillRect(0,0,W,H);
+  let gl=g.createRadialGradient(W/2,470,40,W/2,470,700);gl.addColorStop(0,t.acc+'55');gl.addColorStop(1,t.acc+'00');
+  g.fillStyle=gl;g.fillRect(0,0,W,H);
+  gl=g.createRadialGradient(W/2,505,20,W/2,505,300);gl.addColorStop(0,'rgba(246,201,69,.20)');gl.addColorStop(1,'rgba(246,201,69,0)');
+  g.fillStyle=gl;g.fillRect(0,0,W,H);
+  // vignet
+  gl=g.createRadialGradient(W/2,H/2,H*0.35,W/2,H/2,H*0.75);gl.addColorStop(0,'rgba(0,0,0,0)');gl.addColorStop(1,'rgba(0,0,0,.34)');
+  g.fillStyle=gl;g.fillRect(0,0,W,H);
+  // folie-frame
+  g.save();g.strokeStyle='rgba(246,201,69,.55)';g.lineWidth=2.5;_rr(g,26,26,W-52,H-52,46);g.stroke();
+  g.strokeStyle='rgba(255,255,255,.07)';g.lineWidth=1.5;_rr(g,40,40,W-80,H-80,38);g.stroke();g.restore();
+  // wordmerk + niveau-chip
+  g.textAlign='left';g.textBaseline='alphabetic';
+  g.fillStyle='#fff';g.font='800 46px '+_FH;g.fillText('Slagio',72,108);
+  g.fillStyle=_GOLD;g.font='800 46px '+_FH;g.fillText('.',72+g.measureText('Slagio').width,108);
+  if(chip){g.font='800 24px '+_FB;const cw=g.measureText(chip).width+52;const cx=W-72-cw,cy=74,ch=48;
+    g.fillStyle=t.acc+'26';_rr(g,cx,cy,cw,ch,24);g.fill();g.strokeStyle=t.acc+'88';g.lineWidth=1.5;_rr(g,cx,cy,cw,ch,24);g.stroke();
+    g.fillStyle='#fff';g.textAlign='center';g.fillText(chip,cx+cw/2,cy+32);g.textAlign='left';}
+}
+// persoonlijke identiteitsstrip (avatar, naam, streak, level)
+function _cardIdentity(g,W,x,y,w,h,id){
+  g.save();g.fillStyle='rgba(255,255,255,.055)';_rr(g,x,y,w,h,30);g.fill();
+  g.strokeStyle='rgba(255,255,255,.09)';g.lineWidth=1.5;_rr(g,x,y,w,h,30);g.stroke();g.restore();
+  g.textAlign='left';g.textBaseline='middle';
+  g.font='58px '+_FB;g.fillText(id.avatar||'🦊',x+34,y+h/2+2);
+  g.fillStyle='#fff';g.font='700 36px '+_FH;g.fillText(id.naam||'Jij',x+112,y+h/2-16);
+  g.fillStyle='rgba(255,255,255,.6)';g.font='500 26px '+_FB;g.fillText(id.sub||'',x+112,y+h/2+22);
+  g.textAlign='right';
+  if(id.streak>0){g.fillStyle=_GOLD;g.font='700 30px '+_FB;g.fillText('🔥 '+id.streak,x+w-34,y+h/2-16);}
+  g.fillStyle='rgba(255,255,255,.7)';g.font='600 26px '+_FB;g.fillText('Level '+(id.level||1),x+w-34,y+h/2+22);
+  g.textBaseline='alphabetic';
+}
+function _cardIdentityData(){
+  let avatar='🦊',streak=0,level=1;
+  try{avatar=(typeof getMyCurrentAvatar==='function'&&getMyCurrentAvatar())||'🦊';}catch(e){}
+  try{streak=(typeof calcStreak==='function'&&(calcStreak().current||0))||0;}catch(e){}
+  try{level=(typeof getLevelForXP==='function'&&getLevelForXP((typeof getTotalXP==='function'?getTotalXP():0)))||1;}catch(e){}
+  let naam='Jij';try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');naam=p.naam||'Jij';}catch(e){}
+  const niv=((typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo').toUpperCase();
+  return {avatar,streak,level,naam,sub:'Niveau '+level+' · '+niv};
+}
+async function _drawVonk(g,mood,x,y,size){
+  try{const vsvg=(typeof mascotSVG==='function')?mascotSVG(mood,size):'';if(!vsvg)return;
+    const img=await Promise.race([_svgToImg(vsvg),new Promise((_,rej)=>setTimeout(()=>rej('t'),2500))]);
+    if(img)g.drawImage(img,x,y,size,size);}catch(e){}
+}
+function _fitFont(g,text,max,weight,start,fam){let s=start;g.font=weight+' '+s+'px '+(fam||_FH);while(g.measureText(text).width>max&&s>40){s-=6;g.font=weight+' '+s+'px '+(fam||_FH);}return s;}
+async function _buildShareCard(o){
+  await _cardFonts();
+  const W=1080,H=1350,cv=document.createElement('canvas');cv.width=W;cv.height=H;
+  const g=cv.getContext('2d');const t=_cardTheme();
+  const chip=((typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo').toUpperCase();
+  _cardBase(g,W,H,t,chip);
+  // ring-gauge
+  const cx=W/2,cy=496,r=196;const pct=(typeof o.pct==='number')?o.pct:0;
+  _ring(g,cx,cy,r+38,0.0001,_GOLD,'rgba(255,255,255,.05)',2);          // fijne buitenring (certificaat)
+  const gr=g.createLinearGradient(cx-r,cy-r,cx+r,cy+r);gr.addColorStop(0,_GOLD2);gr.addColorStop(1,_GOLD);
+  _ring(g,cx,cy,r,pct,gr,'rgba(255,255,255,.10)',30);
+  // grote score in de ring
+  g.textAlign='center';g.fillStyle=_GOLD;
+  const bs=_fitFont(g,o.big,r*1.7,'800',162);g.save();g.shadowColor='rgba(0,0,0,.28)';g.shadowBlur=14;g.shadowOffsetY=5;
+  g.fillText(o.big,cx,cy+bs*0.34);g.restore();
+  if(o.frac){g.fillStyle='rgba(255,255,255,.82)';g.font='600 34px '+_FB;g.fillText(o.frac,cx,cy+118);}
+  // prestatie-label + sub
+  g.fillStyle=_GOLD;g.font='700 '+_fitFont(g,o.msg,W-180,'700',54)+'px '+_FH;g.fillText(o.msg,cx,796);
+  g.fillStyle='rgba(255,255,255,.62)';g.font='500 30px '+_FB;g.fillText(o.sub,cx,846);
+  // identiteitsstrip
+  _cardIdentity(g,W,72,900,W-144,132,o.id||_cardIdentityData());
+  // Vonk peekt linksonder
+  await _drawVonk(g,o.mood,44,1092,214);
+  // footer (rechts van Vonk, gecentreerd in de rest)
+  g.textAlign='center';g.fillStyle='rgba(255,255,255,.9)';g.font='700 30px '+_FB;g.fillText('Kun jij dit verslaan?',620,1150);
+  g.fillStyle='#fff';g.font='800 46px '+_FH;g.fillText('slagio.nl',620,1210);
+  g.fillStyle=_GOLD;g.font='500 27px '+_FB;g.fillText('gratis oefenen voor je eindexamen',620,1252);
+  _grain(g,W,H);
+  return cv;
+}
+// Voortgangsrapport-kaart: gemiddelde als ring + top-domeinen als mini-balken.
+async function _buildRapportCard(o){
+  await _cardFonts();
+  const W=1080,H=1350,cv=document.createElement('canvas');cv.width=W;cv.height=H;
+  const g=cv.getContext('2d');const t=_cardTheme();
+  _cardBase(g,W,H,t,((typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo').toUpperCase());
   g.textAlign='center';
-  // wordmerk
-  g.fillStyle='#fff';g.font='800 74px system-ui,-apple-system,"Segoe UI",Roboto,sans-serif';
-  g.fillText('Slagio',W/2,150);
-  g.font='600 30px system-ui,-apple-system,sans-serif';g.fillStyle='rgba(255,255,255,.82)';
-  g.fillText('eindexamen oefenen',W/2,196);
-  // wit paneel
-  g.save();g.shadowColor='rgba(120,50,0,.28)';g.shadowBlur=50;g.shadowOffsetY=22;
-  g.fillStyle='#fff';_rr(g,80,252,W-160,858,52);g.fill();g.restore();
-  // Vonk (met timeout-race zodat de kaart nooit blijft hangen op de afbeelding)
-  try{const vsvg=(typeof mascotSVG==='function')?mascotSVG(o.mood,320):'';
-    if(vsvg){const img=await Promise.race([_svgToImg(vsvg),new Promise((_,rej)=>setTimeout(()=>rej('timeout'),2500))]);
-      if(img)g.drawImage(img,W/2-165,286,330,330);}}catch(e){}
-  // grote score
-  g.fillStyle='#EE6C10';g.font='900 180px system-ui,-apple-system,sans-serif';
-  g.fillText(o.big,W/2,808);
-  // boodschap
-  g.fillStyle='#1b1712';g.font='800 50px system-ui,-apple-system,sans-serif';
-  g.fillText(o.msg,W/2,884);
-  // vak + modus
-  g.fillStyle='#7a7266';g.font='500 36px system-ui,-apple-system,sans-serif';
-  g.fillText(o.sub,W/2,952);
-  // scheidingslijn + footer binnen paneel
-  g.strokeStyle='rgba(0,0,0,.08)';g.lineWidth=2;g.beginPath();g.moveTo(200,1010);g.lineTo(W-200,1010);g.stroke();
-  g.fillStyle='#EE6C10';g.font='800 34px system-ui,-apple-system,sans-serif';
-  g.fillText('Kun jij het beter?',W/2,1064);
-  // footer op oranje
-  g.fillStyle='#fff';g.font='800 40px system-ui,-apple-system,sans-serif';
-  g.fillText('slagio.nl',W/2,1210);
-  g.font='500 28px system-ui,-apple-system,sans-serif';g.fillStyle='rgba(255,255,255,.85)';
-  g.fillText('gratis oefenen voor je eindexamen',W/2,1256);
+  g.fillStyle='rgba(255,255,255,.62)';g.font='800 26px '+_FB;g.fillText('V O O R T G A N G S R A P P O R T',W/2,196);
+  // ring: gemiddelde
+  const cx=W/2,cy=430,r=168,pct=(o.avg||0)/100;
+  const gr=g.createLinearGradient(cx-r,cy-r,cx+r,cy+r);gr.addColorStop(0,_GOLD2);gr.addColorStop(1,_GOLD);
+  _ring(g,cx,cy,r,pct,gr,'rgba(255,255,255,.10)',28);
+  g.fillStyle=_GOLD;g.font='800 128px '+_FH;g.save();g.shadowColor='rgba(0,0,0,.28)';g.shadowBlur=14;g.shadowOffsetY=5;g.fillText((o.avg||0)+'%',cx,cy+44);g.restore();
+  g.fillStyle='rgba(255,255,255,.8)';g.font='600 30px '+_FB;g.fillText('gemiddelde beheersing',cx,cy+108);
+  // 3 statcijfers
+  const stats=[[o.quizzen,'quizzen'],[o.domeinen,'domeinen'],[(o.id&&o.id.streak)||0,'dagen streak']];
+  const sw=(W-144)/3;g.textAlign='center';
+  stats.forEach((s,i)=>{const x=72+sw*i+sw/2;g.fillStyle='#fff';g.font='800 56px '+_FH;g.fillText(String(s[0]),x,700);
+    g.fillStyle='rgba(255,255,255,.6)';g.font='500 26px '+_FB;g.fillText(s[1],x,738);});
+  // top-domeinen als mini-balken
+  const rows=(o.rows||[]).slice(0,4);let y=812;g.textAlign='left';
+  rows.forEach(rw=>{
+    g.fillStyle='#fff';g.font='600 28px '+_FB;const nm=rw.naam.length>26?rw.naam.slice(0,25)+'…':rw.naam;g.fillText(nm,84,y);
+    g.textAlign='right';g.fillStyle=_GOLD;g.font='700 28px '+_FB;g.fillText(rw.pct+'%',W-84,y);g.textAlign='left';
+    const bx=84,bw=W-168,by=y+14,bh=14;g.fillStyle='rgba(255,255,255,.12)';_rr(g,bx,by,bw,bh,7);g.fill();
+    const pv=Math.max(0.03,rw.pct/100);const bar=g.createLinearGradient(bx,0,bx+bw,0);bar.addColorStop(0,t.acc);bar.addColorStop(1,_GOLD);
+    g.fillStyle=bar;_rr(g,bx,by,bw*pv,bh,7);g.fill();
+    y+=74;
+  });
+  // identiteitsstrip + footer
+  _cardIdentity(g,W,72,1068,W-144,116,o.id||_cardIdentityData());
+  g.textAlign='center';g.fillStyle='#fff';g.font='800 44px '+_FH;g.fillText('slagio.nl',W/2,1250);
+  g.fillStyle=_GOLD;g.font='500 26px '+_FB;g.fillText('gratis oefenen voor je eindexamen',W/2,1290);
+  _grain(g,W,H);
   return cv;
 }
 function _ambassadeur(){if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣','Ambassadeur! Score gedeeld.'),500);}
@@ -1949,7 +2053,7 @@ async function deelScore(){
   // 1) Beeld-kaart genereren en delen (met tekst + link).
   let file=null;
   try{
-    const cv=await _buildShareCard({big,msg,sub:`${vakNaam} · ${modeTxt}`,mood});
+    const cv=await _buildShareCard({big,msg,sub:`${vakNaam} · ${modeTxt}`,mood,pct:pctRaw!=null?pctRaw/100:sc/tot,frac:scoreTxt,id:_cardIdentityData()});
     const blob=await new Promise(r=>cv.toBlob(r,'image/png',0.95));
     if(blob)file=new File([blob],'slagio-score.png',{type:'image/png'});
   }catch(e){}
