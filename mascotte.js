@@ -9,6 +9,31 @@
 var MASCOT_NAME = 'Vonk';
 var _VONK_SKIN_PREVIEW = ''; // tijdelijke skin-override voor winkel-previews
 
+// Stemmingen-tabel op moduleniveau (zodat naast mascotSVG ook de emote-laag in
+// vonk.js de mond/wenkbrauw/prop per stemming kan lezen). Flat-vector vos
+// (Duolingo-stijl); gesloten glimlach per stemming (cx60, ~cy60).
+var VONK_M = {
+  blij:   { mouth: 'M51 60 Q60 70 69 60', brow: '',                                       arms: 'wave' },
+  trots:  { mouth: 'M48 57 Q60 76 72 57 Q60 63 48 57 Z', brow: 'M39 28 Q46 23 53 27 M67 27 Q74 23 81 28', spark: true, filled: true, arms: 'hips' },
+  goed:   { mouth: 'M53 60 Q60 68 67 60', brow: '',                                       arms: 'wave' },
+  laag:   { mouth: 'M51 65 Q60 55 69 65', brow: 'M38 34 Q46 28 54 34 M66 34 Q74 28 82 34', arms: 'down' },
+  kijk:   { mouth: 'M56 61 Q60 64 64 61', brow: '',                                       eyeUp: 1, arms: 'down' },
+  knipoog:{ mouth: 'M51 60 Q60 70 69 60', brow: '',                                       spark: true, wink: true, arms: 'wave' },
+  feest:  { mouth: 'M47 56 Q60 78 73 56 Q60 63 47 56 Z', brow: '',                         spark: true, filled: true, cheer: true, arms: 'cheer' },
+  denk:   { mouth: 'M55 61 Q60 63 65 61', brow: '',                                       eyeUp: 1, prop: 'think', arms: 'chin' },
+  oeps:   { mouth: 'M53 63 Q60 71 67 63 Q60 66 53 63 Z', brow: 'M38 33 Q46 29 54 33 M66 33 Q74 29 82 33', filled: true, prop: 'sweat', arms: 'down' },
+  liefde: { mouth: 'M47 56 Q60 77 73 56 Q60 63 47 56 Z', brow: '',                         filled: true, heartEyes: true, prop: 'hearts', arms: 'down' },
+  slaap:  { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       sleep: true, prop: 'zzz', arms: 'down' },
+  lees:   { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       eyeDn: 1, prop: 'book', arms: 'read' },
+  // ── extra emoties ──
+  wow:    { mouth: 'M55 60 Q60 55 65 60 Q65 68 60 69 Q55 68 55 60 Z', brow: 'M39 26 Q46 21 53 25 M67 25 Q74 21 81 26', filled: true, wide: true, arms: 'down' },
+  giechel:{ mouth: 'M49 58 Q60 73 71 58 Q60 64 49 58 Z', brow: '',                         filled: true, laugh: true, spark: true, arms: 'wave' },
+  cool:   { mouth: 'M52 61 Q60 66 70 59', brow: '',                                        shades: true, spark: true, arms: 'hips' },
+  verlegen:{ mouth: 'M55 61 Q60 64 65 61', brow: '',                                       eyeDn: 1, blush: true, arms: 'down' },
+  kus:    { mouth: 'M57 60 Q60 56 63 60 Q60 65 57 60 Z', brow: '',                          filled: true, prop: 'hearts', arms: 'wave' },
+  duizelig:{ mouth: 'M53 62 Q57 59 60 62 Q63 65 67 62', brow: '',                          dizzy: true, prop: 'sweat', arms: 'down' },
+};
+
 // Stemmingen: blij (default) · trots · goed · laag (bemoedigend) · kijk (nieuwsgierig) · knipoog
 function mascotSVG(mood, size) {
   size = size || 96;
@@ -16,34 +41,33 @@ function mascotSVG(mood, size) {
   // Kroon/feesthoed vervangen de standaard afstudeerpet; bril en sjaal komen er bovenop.
   const _vsk = _VONK_SKIN_PREVIEW || ((typeof getEquippedVonk === 'function') ? getEquippedVonk() : '');
   const _hideCap = (_vsk === 'vk_crown' || _vsk === 'vk_party');
-  // Flat-vector vos (Duolingo-stijl). Gesloten glimlach per stemming (cx60, ~cy60).
-  const M = {
-    blij:   { mouth: 'M51 60 Q60 70 69 60', brow: '',                                       arms: 'wave' },
-    trots:  { mouth: 'M48 57 Q60 76 72 57 Q60 63 48 57 Z', brow: 'M39 28 Q46 23 53 27 M67 27 Q74 23 81 28', spark: true, filled: true, arms: 'hips' },
-    goed:   { mouth: 'M53 60 Q60 68 67 60', brow: '',                                       arms: 'wave' },
-    laag:   { mouth: 'M51 65 Q60 55 69 65', brow: 'M38 34 Q46 28 54 34 M66 34 Q74 28 82 34', arms: 'down' },
-    kijk:   { mouth: 'M56 61 Q60 64 64 61', brow: '',                                       eyeUp: 1, arms: 'down' },
-    knipoog:{ mouth: 'M51 60 Q60 70 69 60', brow: '',                                       spark: true, wink: true, arms: 'wave' },
-    feest:  { mouth: 'M47 56 Q60 78 73 56 Q60 63 47 56 Z', brow: '',                         spark: true, filled: true, cheer: true, arms: 'cheer' },
-    denk:   { mouth: 'M55 61 Q60 63 65 61', brow: '',                                       eyeUp: 1, prop: 'think', arms: 'chin' },
-    oeps:   { mouth: 'M53 63 Q60 71 67 63 Q60 66 53 63 Z', brow: 'M38 33 Q46 29 54 33 M66 33 Q74 29 82 33', filled: true, prop: 'sweat', arms: 'down' },
-    liefde: { mouth: 'M47 56 Q60 77 73 56 Q60 63 47 56 Z', brow: '',                         filled: true, heartEyes: true, prop: 'hearts', arms: 'down' },
-    slaap:  { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       sleep: true, prop: 'zzz', arms: 'down' },
-    lees:   { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       eyeDn: 1, prop: 'book', arms: 'read' },
-  };
+  const M = VONK_M;
   const s = M[mood] || M.blij;
   const dy = (s.eyeUp ? -2.6 : (s.eyeDn ? 3.4 : 0.9));
-  const eye = (cx) => `<ellipse cx="${cx}" cy="41" rx="9" ry="10.5" fill="#fff"/>`;
-  const pup = (cx) => `<circle cx="${cx}" cy="${41 + dy}" r="5.4" fill="#2e2a39"/><circle cx="${cx + 2.1}" cy="${38.3 + dy}" r="2.2" fill="#fff"/><circle cx="${cx - 1.8}" cy="${43.5 + dy}" r="1.1" fill="#fff" opacity=".85"/>`;
+  const er = s.wide ? 12 : 9, ery = s.wide ? 13 : 10.5;      // wijd-open ogen (verrast)
+  const eye = (cx) => `<ellipse cx="${cx}" cy="41" rx="${er}" ry="${ery}" fill="#fff"/>`;
+  const pr = s.wide ? 4.2 : 5.4;                              // bij wijde ogen kleinere pupil
+  const pup = (cx) => `<circle cx="${cx}" cy="${41 + dy}" r="${pr}" fill="#2e2a39"/><circle cx="${cx + 2.1}" cy="${38.3 + dy}" r="2.2" fill="#fff"/><circle cx="${cx - 1.8}" cy="${43.5 + dy}" r="1.1" fill="#fff" opacity=".85"/>`;
   const heartEye = (cx) => `<path transform="translate(${cx},42)" d="M0 -1 C-2.6 -5 -8 -2.4 -6.4 1.4 C-5.2 4.2 -1.4 6 0 8 C1.4 6 5.2 4.2 6.4 1.4 C8 -2.4 2.6 -5 0 -1 Z" fill="#ff5a7a"/>`;
   const sleepEye = (cx) => `<path d="M${cx - 7} 41 Q${cx} 47 ${cx + 7} 41" stroke="#2e2a39" stroke-width="3" stroke-linecap="round" fill="none"/>`;
+  // Lach-ogen: vrolijke omgekeerde boog (^ ^), zoals bij een schaterlach.
+  const laughEye = (cx) => `<path d="M${cx - 7} 44 Q${cx} 37 ${cx + 7} 44" stroke="#2e2a39" stroke-width="3" stroke-linecap="round" fill="none"/>`;
+  // Duizelig: draaikolk-oogjes (@ @).
+  const dizzyEye = (cx) => `<g class="m-dizzy-eye" fill="none" stroke="#2e2a39" stroke-width="2.4" stroke-linecap="round"><circle cx="${cx}" cy="41" r="6.4" fill="#fff" stroke="#d9dee8" stroke-width="1"/><path d="M${cx} 41 m0 -4.4 a4.4 4.4 0 1 1 -3.1 1.3"/></g>`;
   const eyesInner = s.heartEyes
     ? `<g class="m-hearteyes">${heartEye(47)}${heartEye(73)}</g>`
+    : s.dizzy
+    ? `${dizzyEye(47)}${dizzyEye(73)}`
+    : s.laugh
+    ? `${laughEye(47)}${laughEye(73)}`
     : s.sleep
     ? `${sleepEye(47)}${sleepEye(73)}`
     : s.wink
     ? `${eye(47)}<g class="m-pupils">${pup(47)}</g><path d="M65 41 Q73 34 81 41" stroke="#2e2a39" stroke-width="3" stroke-linecap="round" fill="none"/>`
     : `${eye(47)}${eye(73)}<g class="m-pupils">${pup(47)}${pup(73)}</g>`;
+  // Zonnebril (cool) — ligt óver de ogen; en extra blos (verlegen).
+  const shadesSVG = s.shades ? `<g class="m-shades"><path d="M33 39 L28 34" stroke="#20242e" stroke-width="2.6" stroke-linecap="round"/><path d="M87 39 L92 34" stroke="#20242e" stroke-width="2.6" stroke-linecap="round"/><rect x="34" y="33" width="22" height="15" rx="7" fill="#20242e"/><rect x="64" y="33" width="22" height="15" rx="7" fill="#20242e"/><path d="M56 38 Q60 36 64 38" stroke="#20242e" stroke-width="2.6" fill="none"/><path d="M38 37 l6 3" stroke="#5b6b86" stroke-width="2" stroke-linecap="round" opacity=".7"/><path d="M68 37 l6 3" stroke="#5b6b86" stroke-width="2" stroke-linecap="round" opacity=".7"/></g>` : '';
+  const blushSVG = s.blush ? `<g class="m-blush" fill="#ff7a95"><ellipse cx="37" cy="55" rx="7.5" ry="4.6" opacity=".55"/><ellipse cx="83" cy="55" rx="7.5" ry="4.6" opacity=".55"/><path d="M33 53 l2 2 M37 52 l2 2 M41 53 l2 2" stroke="#ff6b8a" stroke-width="1.2" stroke-linecap="round"/><path d="M79 53 l2 2 M83 52 l2 2 M87 53 l2 2" stroke="#ff6b8a" stroke-width="1.2" stroke-linecap="round"/></g>` : '';
   // palet
   const OR = '#fb8c3e', SH = '#e9701f', CR = '#fff1dd', DK = '#2e2a39', NO = '#3b2a22';
   // Paw = volle oranje poot met een crème kussentje (hoogwaardiger dan een platte cirkel).
@@ -120,8 +144,10 @@ function mascotSVG(mood, size) {
         <!-- tweekleurige snuit -->
         <path d="M35 46 C40 41 47 41 51 45 C55 49 65 49 69 45 C73 41 80 41 85 46 C88 59 76 71 60 71 C44 71 32 59 35 46 Z" fill="${CR}"/>
         <g class="m-eyes">${eyesInner}</g>
+        ${shadesSVG}
         ${s.brow ? `<g stroke="${DK}" stroke-width="2.6" stroke-linecap="round" fill="none">${s.brow}</g>` : ''}
         <circle cx="36" cy="56" r="6.5" fill="url(#mCheek)"/><circle cx="84" cy="56" r="6.5" fill="url(#mCheek)"/>
+        ${blushSVG}
         <!-- neusje -->
         <path d="M54 49 Q60 45 66 49 Q64 57 60 58 Q56 57 54 49 Z" fill="${NO}"/>
         <path d="M60 58 v3" stroke="${NO}" stroke-width="1.8" stroke-linecap="round"/>

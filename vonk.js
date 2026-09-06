@@ -211,15 +211,53 @@ function _vonkIdleSchedule() {
 }
 function _vonkBlink(el) { var eyes = el.querySelector('.m-eyes'); if (!eyes) return; eyes.style.animation = 'none'; void eyes.offsetWidth; eyes.style.animation = 'mkBlink .28s'; setTimeout(function () { eyes.style.animation = ''; }, 340); }
 function _vonkGlance(el, dx) { var pup = el.querySelector('.m-pupils'); if (!pup) return; pup.style.animation = 'none'; pup.style.transform = 'translateX(' + dx + 'px)'; setTimeout(function () { pup.style.transform = ''; pup.style.animation = ''; }, 1500); }
+
+// ── Emote-flits: laat Vonk kort een andere gezichtsuitdrukking zien ─────────
+// Physics-veilig: raakt alleen de statische mond aan (kop/ogen/lijf sturen de
+// physics-parts aan), plus een korte pop-klasse. Zo zie je z'n emoties vaker,
+// óók terwijl de physics-idle gewoon doorloopt. Herstelt netjes na `ms`.
+function vonkEmote(el, mood, ms) {
+  try {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var svg = (typeof _vonkSvgOf === 'function') ? _vonkSvgOf(el) : el; if (!svg) return;
+    var m = (typeof VONK_M !== 'undefined') ? VONK_M[mood] : null; if (!m) return;
+    var mouth = svg.querySelector('.m-mouth'); if (!mouth) return;
+    // Bewaar de oorspronkelijke mond één keer (niet stapelen bij overlappende flitsen).
+    if (!svg._emoteRestore) svg._emoteRestore = { d: mouth.getAttribute('d'), fill: mouth.getAttribute('fill') };
+    mouth.setAttribute('d', m.mouth);
+    mouth.setAttribute('fill', m.filled ? '#3b2a22' : 'none');
+    svg.classList.add('m-emote');
+    // Bij een blije flits een klein staart-tikje; bij verrast/wow een sprongetje.
+    try { if (typeof vonkPlay === 'function') vonkPlay(svg, (mood === 'wow' || mood === 'feest' || mood === 'giechel') ? 'jump' : 'nod', 640); } catch (e) {}
+    clearTimeout(svg._emoteT);
+    svg._emoteT = setTimeout(function () {
+      try {
+        var r = svg._emoteRestore;
+        if (r) { if (r.d != null) mouth.setAttribute('d', r.d); mouth.setAttribute('fill', r.fill || 'none'); }
+        svg._emoteRestore = null; svg.classList.remove('m-emote');
+      } catch (e) {}
+    }, ms || 1500);
+  } catch (e) {}
+}
+// Vriendelijke, overwegend positieve set voor ambient idle-emotes.
+var _VONK_IDLE_EMOTES = ['kijk', 'denk', 'goed', 'knipoog', 'blij', 'giechel', 'cool', 'trots', 'wow', 'verlegen'];
 // Idle = geen vaste reeks maar een KANSVERDELING, op een wisselend interval,
 // zodat Vonk levend voelt en nooit gescript. Langere rust → zeldzamer gedrag.
 function _vonkIdleTick() {
   try {
     var el = VonkFX.primary;
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var vis = el && document.body.contains(el) && el.offsetParent !== null && Date.now() > VonkFX.mainUntil && !reduce;
+    // Ambient emote-flits (physics-veilig, dus óók voor de fysieke hoofd-Vonk):
+    // ~1 op de 3 idle-beurten toont Vonk kort een andere uitdrukking, zodat je
+    // z'n emoties véél vaker ziet i.p.v. altijd dezelfde glimlach.
+    if (vis && !el._emoteRestore && Math.random() < 0.34) {
+      var mood = _VONK_IDLE_EMOTES[Math.floor(Math.random() * _VONK_IDLE_EMOTES.length)];
+      vonkEmote(el, mood, 1400 + Math.random() * 900);
+    }
     // Fysiek aangestuurde Vonk regelt zijn eigen idle (ademen/knipperen/rondkijken);
-    // de CSS-idle hieronder alleen voor niet-physics Vonks.
-    if (el && !el._body && document.body.contains(el) && el.offsetParent !== null && Date.now() > VonkFX.mainUntil && !reduce) {
+    // de CSS-micro-idle hieronder alleen voor niet-physics Vonks.
+    if (vis && !el._body) {
       var idleSecs = (Date.now() - VonkFX.lastEvt) / 1000;
       var r = Math.random();
       if (r < 0.40) _vonkBlink(el);                       // 40% knipper
@@ -233,7 +271,7 @@ function _vonkIdleTick() {
     }
   } catch (e) {}
   clearTimeout(VonkFX.idleT);
-  VonkFX.idleT = setTimeout(_vonkIdleTick, 6000 + Math.random() * 7000);  // 6–13s
+  VonkFX.idleT = setTimeout(_vonkIdleTick, 5000 + Math.random() * 6000);  // 5–11s (iets levendiger)
 }
 
 // ── Testmodus: elke state handmatig afspelen (voelt Vonk zoals Duo?) ───────

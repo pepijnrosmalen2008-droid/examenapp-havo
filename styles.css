@@ -4280,7 +4280,11 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 @keyframes mEggWobble{0%,100%{transform:rotate(0)}22%{transform:rotate(-9deg)}48%{transform:rotate(7deg)}72%{transform:rotate(-4deg)}}
 .vonk-sparkle{position:fixed;pointer-events:none;z-index:9500;font-size:18px;line-height:1;will-change:transform,opacity;animation:vonkSpark .82s ease-out forwards}
 @keyframes vonkSpark{0%{opacity:0;transform:translate(0,0) scale(.3) rotate(0)}18%{opacity:1}100%{opacity:0;transform:translate(var(--sx,0),var(--sy,-40px)) scale(1.1) rotate(var(--sr,40deg))}}
-@media(prefers-reduced-motion:reduce){.m-svg.m-egg-pop,.m-svg.m-egg-spin,.m-svg.m-egg-wobble{animation:none}.vonk-sparkle{display:none}}
+/* ambient emote-flits: zachte pop + soepele mond-morph als Vonk kort een andere emotie toont */
+.m-svg.m-emote{animation:mEmotePop .5s cubic-bezier(.34,1.56,.64,1)}
+.m-svg.m-emote .m-mouth{transition:d .22s ease}
+@keyframes mEmotePop{0%{transform:scale(1)}34%{transform:scale(1.05,.96)}70%{transform:scale(.99,1.02)}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.m-svg.m-egg-pop,.m-svg.m-egg-spin,.m-svg.m-egg-wobble,.m-svg.m-emote{animation:none}.vonk-sparkle{display:none}}
 /* praten: statische mond weg; drie mondvormen wisselen af (realistischer) */
 .m-mouth-talk{opacity:0}
 .m-mouth-talk .mt,.m-mouth-talk .mt-tongue{opacity:0}
