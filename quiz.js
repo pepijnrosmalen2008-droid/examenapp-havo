@@ -1609,6 +1609,9 @@ function toonRes(){
   try{renderAdaptiveResults();}catch(e){}
   try{renderChallengeResult();}catch(e){}
   try{_renderResShare(pct);}catch(e){}
+  // Uitdaging is nu getoond+geconsumeerd; opruimen zodat een volgende gewone
+  // quiz geen verouderd VS-scherm of deel-rij toont.
+  try{if(typeof _chalState!=='undefined')_chalState=null;}catch(e){}
   show('sc-res');
   // Nogmaals opruimen ná de schermwissel: badges/toasts die de laatste vraag nog
   // net aanmaakte (speed-badge, xp-toast, vonk-react) mogen niet in het rustige
@@ -2022,6 +2025,8 @@ function _ambassadeur(){if(earnAch('ambassadeur'))setTimeout(()=>showAch('📣',
 function _renderResShare(pct){
   const box=document.getElementById('res-share'); if(!box) return;
   box.classList.remove('peak');
+  // Bij een uitdaging verzorgt renderChallengeResult() al een deel-/daag-terug-rij.
+  if(typeof _chalState!=='undefined' && _chalState){ box.innerHTML=''; return; }
   const okMode=(ST.mode==='snel'||ST.mode==='oud') && !ST.isFoutenboek && ST.vak;
   if(!okMode){ box.innerHTML=''; return; }
   const perfect=pct>=1, strong=pct>=0.8, peak=perfect||strong;

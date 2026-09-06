@@ -874,39 +874,73 @@ function parseChallengeHash(){
     const h=window.location.hash;
     if(!h.startsWith('#chal/'))return null;
     const parts=h.slice(6).split('/');
-    if(parts.length<4)return null;
-    return{vakId:parts[0],domeinId:parts[1],score:parseInt(parts[2])||0,naam:decodeURIComponent(parts[3]||'Iemand')};
+    // Nieuw formaat: #chal/<niveau>/<vak>/<domein>/<score>/<naam>. Oud (zonder
+    // niveau) blijft werken; het niveau wordt dan uit de vak-arrays gedetecteerd.
+    const NIV=['havo','vwo','vmbo'];let niveau=null,o=0;
+    if(NIV.indexOf(parts[0])>=0){niveau=parts[0];o=1;}
+    if(parts.length<o+4)return null;
+    return{niveau,vakId:parts[o],domeinId:parts[o+1],score:parseInt(parts[o+2])||0,naam:decodeURIComponent(parts[o+3]||'Iemand')};
   }catch(e){return null;}
 }
 
 function buildChallengeUrl(vakId,domeinId,score,naam){
-  return'https://slagio.nl/#chal/'+vakId+'/'+domeinId+'/'+score+'/'+encodeURIComponent(naam);
+  const niv=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo';
+  return'https://slagio.nl/#chal/'+niv+'/'+vakId+'/'+domeinId+'/'+score+'/'+encodeURIComponent(naam);
+}
+function _detectChalNiveau(vakId){
+  try{if(typeof VAKKEN!=='undefined'&&VAKKEN.find&&VAKKEN.find(v=>v.id===vakId))return'havo';}catch(e){}
+  try{if(typeof VAKKEN_VWO!=='undefined'&&VAKKEN_VWO.find&&VAKKEN_VWO.find(v=>v.id===vakId))return'vwo';}catch(e){}
+  return null;
 }
 
 function initChallengeOnLoad(){
   const c=parseChallengeHash();
   if(!c)return;
-  _chalState=c;
-  // Find vak+domein objects
-  const allVakken=[...(typeof VAKKEN!=='undefined'?VAKKEN:[]),...(typeof VAKKEN_VWO!=='undefined'?VAKKEN_VWO:[])];
-  const vak=allVakken.find(v=>v.id===c.vakId);
-  const domein=vak&&vak.domeinen&&vak.domeinen.find(d=>d.id===c.domeinId);
-  if(!vak||!domein){_chalState=null;return;}
-  // Populate intro screen
-  document.getElementById('chal-intro-naam').textContent=c.naam;
-  document.getElementById('chal-intro-sub').textContent='daagt je uit bij '+vak.naam+' - '+domein.naam;
-  document.getElementById('chal-intro-score').textContent=c.score;
-  document.getElementById('chal-intro-max').textContent='/ 1000 punten';
-  // Set up ST so accept goes straight to quiz
-  ST.vak=vak;ST.domein=domein;
-  show('sc-chal-intro');
-  // Clear hash so it doesn't persist
-  history.replaceState(null,'',window.location.pathname);
+  const niv=c.niveau||_detectChalNiveau(c.vakId)||APP_LEVEL||'havo';
+  const _finish=()=>{
+    // Zet het juiste niveau (belangrijk als een nieuwe bezoeker via een vwo/vmbo-
+    // link binnenkomt) vóór we het vak opzoeken, zodat de juiste data geladen is.
+    if(niv&&niv!==APP_LEVEL){
+      APP_LEVEL=niv;try{localStorage.setItem('examenapp_level',niv);}catch(e){}
+      try{document.documentElement.classList.remove('level-welcome');}catch(e){}
+      try{if(typeof applyLevelTheme==='function')applyLevelTheme(niv);}catch(e){}
+      try{if(typeof updateLevelChip==='function')updateLevelChip();}catch(e){}
+      try{if(typeof buildGrid==='function')buildGrid();}catch(e){}
+    }
+    _chalState=c;
+    const arr=(typeof getVK==='function')?getVK():[];
+    const vak=arr.find(v=>v.id===c.vakId);
+    const domein=vak&&vak.domeinen&&vak.domeinen.find(d=>d.id===c.domeinId);
+    if(!vak||!domein){_chalState=null;return;}
+    const _set=(id,txt)=>{const el=document.getElementById(id);if(el)el.textContent=txt;};
+    _set('chal-intro-naam',c.naam);
+    _set('chal-intro-sub','daagt je uit bij '+vak.naam+' · '+domein.naam);
+    _set('chal-intro-score',c.score);
+    _set('chal-intro-max','/ 1000 punten');
+    ST.vak=vak;ST.domein=domein;
+    show('sc-chal-intro');
+    history.replaceState(null,'',window.location.pathname);
+  };
+  // Zorg dat de niveau-data (VAKKEN/VAKKEN_VWO) geladen is voordat we zoeken.
+  if(typeof ensureLevelData==='function'&&typeof _levelLoaded==='function'&&!_levelLoaded(niv)){
+    ensureLevelData(niv,_finish);
+  }else{_finish();}
 }
 
 function acceptChallenge(){
   if(!_chalState||!ST.vak||!ST.domein){show('sc-home');return;}
-  startQ('snel');
+  const _go=()=>{try{startQ('snel');}catch(e){show('sc-home');}};
+  // Lui-geladen vak? Eerst de vragen hydrateren, anders start de quiz leeg.
+  if(typeof ensureVakData==='function'&&typeof vakHydrated==='function'&&!vakHydrated(APP_LEVEL,ST.vak.id)){
+    try{if(typeof vonkLoading==='function')vonkLoading('Vragen laden…');}catch(e){}
+    ensureVakData(APP_LEVEL,ST.vak.id,function(){
+      try{if(typeof vonkLoadingHide==='function')vonkLoadingHide();}catch(e){}
+      try{const arr=getVK();const v=arr.find(x=>x.id===ST.vak.id);if(v){ST.vak=v;ST.domein=(v.domeinen||[]).find(d=>d.id===ST.domein.id)||ST.domein;}}catch(e){}
+      _go();
+    });
+    return;
+  }
+  _go();
 }
 
 function renderChallengeResult(){
@@ -926,7 +960,14 @@ function renderChallengeResult(){
       <div class="chal-vs-divider">VS</div>
       <div class="chal-vs-side"><div class="chal-vs-label">${naam}</div><div class="chal-vs-score ${!myWin&&!tie?'win':tie?'tie':'lose'}">${theirScore}</div></div>
     </div>`;
-  sWrap.innerHTML='';
+  // Loop dóór laten lopen: daag terug of deel je overwinning (premium kaart).
+  const nm=String(naam).replace(/[<>&"']/g,'').slice(0,22)||'terug';
+  sWrap.innerHTML=`<div class="res-share">
+    <div class="res-share-kick">${myWin?'🏆 Gewonnen! Daag '+nm+' terug of deel je kaart.':'💪 Revanche? Daag '+nm+' terug.'}</div>
+    <div class="res-share-row">
+      <button class="res-share-btn primary" onclick="daagUit()">🎯 Daag ${nm} terug</button>
+      <button class="res-share-btn" onclick="deelScore()">📤 Deel je score</button>
+    </div></div>`;
 }
 
 function daagUit(){
