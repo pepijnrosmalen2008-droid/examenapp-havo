@@ -435,24 +435,31 @@ function examenShowQ(idx){
   const q = EX.examen.vragen[idx];
   if(!q) return;
   EX.idx = idx;
-  // Opgave banner
-  const prevQ = idx > 0 ? EX.examen.vragen[idx-1] : null;
-  document.getElementById('ex-opgave-banner').textContent = `Opgave ${q.opgave}`;
-  // Context - toon alleen als anders dan vorige vraag in zelfde opgave
+  // Opgave-info: gedeeld onderwerp + context + figuur, PERSISTENT over alle
+  // vragen van dezelfde opgave (net als op een echt examen). Valt terug op
+  // per-vraag context/afb voor exsamens zonder opgaven-array (bv. het echte be).
+  const op = (EX.examen.opgaven||[]).find(o=>o.nr===q.opgave) || null;
+  // Hoeveelste vraag binnen deze opgave (voor "vraag 1 van 4")
+  const inOp = EX.examen.vragen.filter(v=>v.opgave===q.opgave);
+  const opPos = inOp.indexOf(q)+1;
+  document.getElementById('ex-opgave-banner').textContent =
+    ((op && op.titel) ? `Opgave ${q.opgave} · ${op.titel}` : `Opgave ${q.opgave}`) +
+    (inOp.length>1 ? `  ·  vraag ${opPos} van ${inOp.length}` : '');
+  // Context (opgave-breed, anders per-vraag)
   const ctxEl = document.getElementById('ex-context');
-  const ctxTxt = q.context || '';
-  if(ctxTxt){
-    ctxEl.textContent = ctxTxt;
-    ctxEl.style.display = '';
-  } else {
-    ctxEl.style.display = 'none';
-  }
-  // Figuur (origineel getekende grafiek/schema) - examenlook op wit papier
+  const ctxTxt = (op && op.context) || q.context || '';
+  if(ctxTxt){ ctxEl.textContent = ctxTxt; ctxEl.style.display=''; } else { ctxEl.style.display='none'; }
+  // Figuren: opgave-breed (persistent over alle vragen) + optioneel een
+  // vraag-specifieke extra figuur. Beide op wit "examenpapier", met bijschrift.
+  const figs=[];
+  if(op && op.afb) figs.push({svg:op.afb, cap:op.afb_cap||''});
+  if(q.afb && q.afb!==(op&&op.afb)) figs.push({svg:q.afb, cap:q.afb_cap||''});
   const afbEl = document.getElementById('ex-afb');
   if(afbEl){
-    if(q.afb){
-      const inner=document.getElementById('ex-afb-inner'); if(inner)inner.innerHTML=q.afb;
-      const cap=document.getElementById('ex-afb-cap'); if(cap){cap.textContent=q.afb_cap||'';cap.style.display=q.afb_cap?'':'none';}
+    if(figs.length){
+      const inner=document.getElementById('ex-afb-inner');
+      if(inner) inner.innerHTML = figs.map(f=>`<div class="ex-afb-one"><div class="ex-afb-svg">${f.svg}</div>${f.cap?`<div class="ex-afb-cap">${f.cap}</div>`:''}</div>`).join('');
+      const cap=document.getElementById('ex-afb-cap'); if(cap)cap.style.display='none';
       afbEl.style.display='';
     } else afbEl.style.display='none';
   }
@@ -522,6 +529,7 @@ function examenNav(dir){
 }
 
 function _exUpdateGrid(){
+  let curEl=null;
   EX.examen.vragen.forEach((q,i)=>{
     const el = document.getElementById(`exqd-${i}`);
     if(!el) return;
@@ -529,7 +537,11 @@ function _exUpdateGrid(){
     const isCur = i===EX.idx;
     const isBijl = q.needs_bijlage;
     el.className = 'ex-qd' + (isCur?' current':hasAns?' answered':isBijl?' bijlage':'');
+    if(isCur) curEl=el;
   });
+  // De navigatiebalk scrolt horizontaal mee zodat de huidige vraag altijd
+  // gecentreerd zichtbaar blijft (geen pagina-sprong).
+  if(curEl){ try{ const g=document.getElementById('ex-qgrid'); if(g){ const target=curEl.offsetLeft - g.clientWidth/2 + curEl.clientWidth/2; g.scrollTo({left:Math.max(0,target),behavior:'smooth'}); } }catch(e){} }
 }
 
 function examenFinish(){
@@ -561,7 +573,7 @@ function _exBuildResultList(){
         <span class="ex-rev-pts-badge" id="exrb-${i}">0 / ${q.punten}p</span>
       </div>
       <div class="ex-rev-vraag">${q.vraag}</div>
-      ${q.afb ? `<figure class="ex-afb ex-afb-rev"><div class="ex-afb-inner">${q.afb}</div>${q.afb_cap?`<figcaption class="ex-afb-cap">${q.afb_cap}</figcaption>`:''}</figure>` : ''}
+      ${(()=>{const op=(EX.examen.opgaven||[]).find(o=>o.nr===q.opgave);const F=[];if(op&&op.afb)F.push({s:op.afb,c:op.afb_cap||''});if(q.afb&&q.afb!==(op&&op.afb))F.push({s:q.afb,c:q.afb_cap||''});return F.length?`<figure class="ex-afb ex-afb-rev"><div class="ex-afb-inner">${F.map(f=>`<div class="ex-afb-one"><div class="ex-afb-svg">${f.s}</div>${f.c?`<div class="ex-afb-cap">${f.c}</div>`:''}</div>`).join('')}</div></figure>`:'';})()}
       ${bijlHtml}
       <div class="ex-rev-jouw">Jouw antwoord</div>
       <div class="ex-rev-jouw-text">${antw.trim() || '(geen antwoord gegeven)'}</div>
