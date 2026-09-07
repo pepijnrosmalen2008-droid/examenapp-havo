@@ -561,6 +561,7 @@ function _exBuildResultList(){
         <span class="ex-rev-pts-badge" id="exrb-${i}">0 / ${q.punten}p</span>
       </div>
       <div class="ex-rev-vraag">${q.vraag}</div>
+      ${q.afb ? `<figure class="ex-afb ex-afb-rev"><div class="ex-afb-inner">${q.afb}</div>${q.afb_cap?`<figcaption class="ex-afb-cap">${q.afb_cap}</figcaption>`:''}</figure>` : ''}
       ${bijlHtml}
       <div class="ex-rev-jouw">Jouw antwoord</div>
       <div class="ex-rev-jouw-text">${antw.trim() || '(geen antwoord gegeven)'}</div>

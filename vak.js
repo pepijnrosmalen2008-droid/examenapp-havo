@@ -210,18 +210,26 @@ function openVak(id,_noHash){
   }
   // Slagio proefexamen (origineel, examenstijl) - toon wanneer er data voor dit vak is.
   const _peEl = document.getElementById('proefexamen-entry-btn');
+  const _pe = (typeof SLAGIO_EXAMENS!=='undefined' && SLAGIO_EXAMENS[APP_LEVEL] && SLAGIO_EXAMENS[APP_LEVEL][ST.vak.id]) || null;
   if(_peEl){
-    const _pe = (typeof SLAGIO_EXAMENS!=='undefined' && SLAGIO_EXAMENS[APP_LEVEL] && SLAGIO_EXAMENS[APP_LEVEL][ST.vak.id]) || null;
     if(_pe){
       _peEl.style.display='';
       const _ps=document.getElementById('proefexamen-entry-sub');
-      if(_ps)_ps.textContent=`${_pe.vragen.length} vragen · ${_pe.max_punten} punten · ${_pe.duur_minuten} min · zelf nakijken`;
+      if(_ps)_ps.textContent=`${_pe.vragen.length} vragen · ${_pe.max_punten} punten · ${_pe.duur_minuten} min · met afbeeldingen · zelf nakijken`;
     } else _peEl.style.display='none';
+  }
+  // Het proefexamen is het kroonjuweel en vervangt de oude simulatietoets +
+  // PDF-simulatie zodra het er is voor dit vak.
+  if(_pe){
+    const _hide=document.getElementById('sim-entry-btn'); if(_hide)_hide.style.display='none';
+    const _hide2=document.getElementById('examsim-entry-btn'); if(_hide2)_hide2.style.display='none';
+  } else {
+    const _s=document.getElementById('sim-entry-btn'); if(_s)_s.style.display='';
   }
   // Echte examensimulatie (2026-examen met ingebouwde PDF's) - voor elk vak met data.
   const _simEl = document.getElementById('examsim-entry-btn');
   if(_simEl){
-    const _sd = (typeof EXAMEN_SIM!=='undefined' && EXAMEN_SIM[APP_LEVEL] && EXAMEN_SIM[APP_LEVEL][ST.vak.id]) || null;
+    const _sd = (!_pe && typeof EXAMEN_SIM!=='undefined' && EXAMEN_SIM[APP_LEVEL] && EXAMEN_SIM[APP_LEVEL][ST.vak.id]) || null;
     if(_sd){
       _simEl.style.display='';
       const _ss=document.getElementById('examsim-entry-sub');
