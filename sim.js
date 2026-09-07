@@ -447,6 +447,15 @@ function examenShowQ(idx){
   } else {
     ctxEl.style.display = 'none';
   }
+  // Figuur (origineel getekende grafiek/schema) - examenlook op wit papier
+  const afbEl = document.getElementById('ex-afb');
+  if(afbEl){
+    if(q.afb){
+      const inner=document.getElementById('ex-afb-inner'); if(inner)inner.innerHTML=q.afb;
+      const cap=document.getElementById('ex-afb-cap'); if(cap){cap.textContent=q.afb_cap||'';cap.style.display=q.afb_cap?'':'none';}
+      afbEl.style.display='';
+    } else afbEl.style.display='none';
+  }
   // Bijlage note
   const bijlEl = document.getElementById('ex-bijlage-note');
   if(q.needs_bijlage && q.bijlage_tekst){

@@ -19,7 +19,9 @@ SLAGIO_EXAMENS.havo.bi = {
   vragen: [
     // ── Opgave 1 · Hardlopen (orgaan- & organismeniveau) ──
     { nr:1, opgave:1, punten:2, type:'open', domein:'O',
-      context:'Isa traint voor een hardloopwedstrijd. Tijdens het hardlopen stijgt haar hartslag en gaat ze sneller ademen. Haar spieren verbruiken meer energie dan in rust.',
+      context:'Isa traint voor een hardloopwedstrijd. Tijdens het hardlopen stijgt haar hartslag en gaat ze sneller ademen. Haar spieren verbruiken meer energie dan in rust. In afbeelding 1 is haar hartfrequentie weergegeven vóór, tijdens en na de inspanning.',
+      afb:`<svg viewBox="0 0 360 190" role="img" aria-label="grafiek van de hartfrequentie tegen de tijd"><line x1="48" y1="16" x2="48" y2="158" stroke="#1b2230" stroke-width="2"/><line x1="48" y1="158" x2="344" y2="158" stroke="#1b2230" stroke-width="2"/><polyline points="56,130 110,130 176,44 246,44 320,124" fill="none" stroke="#e8580c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="0" y="0" transform="translate(16,150) rotate(-90)" font-family="sans-serif" font-size="11" font-weight="700" fill="#1b2230">hartslag (per min)</text><text x="296" y="178" font-family="sans-serif" font-size="11" font-weight="700" fill="#1b2230">tijd &#8594;</text><g font-family="sans-serif" font-size="10" fill="#4a5568" text-anchor="middle"><text x="82" y="152">rust</text><text x="205" y="152">inspanning</text><text x="305" y="152">herstel</text></g></svg>`,
+      afb_cap:'afbeelding 1 — hartfrequentie vóór, tijdens en na de inspanning',
       vraag:'Leg uit waarom Isa tijdens het hardlopen sneller gaat ademen. Betrek de gaswisseling in je antwoord.',
       antwoord:'Haar spieren verbruiken meer zuurstof en produceren meer koolstofdioxide door de toegenomen verbranding (celademhaling). Door sneller te ademen wordt er meer zuurstof aangevoerd en meer koolstofdioxide afgevoerd, zodat de gaswisseling de vraag bijhoudt.',
       antwoord_rubric:'1 punt: meer O₂ nodig / meer CO₂ geproduceerd door toegenomen verbranding. 1 punt: sneller ademen zorgt voor extra aanvoer O₂ en afvoer CO₂.' },
@@ -118,7 +120,9 @@ SLAGIO_EXAMENS.havo.bi = {
       antwoord:'Door metingen te herhalen en te middelen wordt de invloed van toevallige meetfouten en toevallige variatie kleiner. De gemiddelde meetwaarde is daardoor consistenter en betrouwbaarder.',
       antwoord_rubric:'1 punt: herhalen vermindert invloed van toevallige (meet)fouten. 1 punt: gemiddelde is betrouwbaarder/consistenter.' },
     { nr:23, opgave:6, punten:2, type:'open', domein:'A',
-      vraag:'Bij zeer hoge lichtsterkte neemt de fotosynthesesnelheid niet verder toe. Noem een factor die de fotosynthese dan waarschijnlijk beperkt en leg uit wat je zo\'n factor noemt.',
+      afb:`<svg viewBox="0 0 360 190" role="img" aria-label="grafiek fotosynthesesnelheid tegen lichtsterkte"><line x1="48" y1="16" x2="48" y2="158" stroke="#1b2230" stroke-width="2"/><line x1="48" y1="158" x2="344" y2="158" stroke="#1b2230" stroke-width="2"/><path d="M56 150 Q112 150 152 96 Q190 52 250 50 L332 50" fill="none" stroke="#2e9e5b" stroke-width="3" stroke-linecap="round"/><line x1="250" y1="50" x2="250" y2="158" stroke="#94a0b8" stroke-width="1.2" stroke-dasharray="4 4"/><text x="0" y="0" transform="translate(16,154) rotate(-90)" font-family="sans-serif" font-size="11" font-weight="700" fill="#1b2230">fotosynthesesnelheid</text><text x="244" y="178" font-family="sans-serif" font-size="11" font-weight="700" fill="#1b2230">lichtsterkte &#8594;</text></svg>`,
+      afb_cap:'afbeelding 2 — fotosynthesesnelheid bij toenemende lichtsterkte',
+      vraag:'In de grafiek (afbeelding 2) neemt de fotosynthesesnelheid vanaf een bepaalde lichtsterkte niet verder toe. Noem een factor die de fotosynthese daar waarschijnlijk beperkt en leg uit hoe je zo\'n factor noemt.',
       antwoord:'Bijvoorbeeld de CO₂-concentratie of de temperatuur. Zo\'n factor die op dat moment de snelheid begrenst, heet de beperkende (limiterende) factor.',
       antwoord_rubric:'1 punt: noemt CO₂-concentratie of temperatuur. 1 punt: benoemt dit als beperkende/limiterende factor.' },
   ]
