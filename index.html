@@ -1093,6 +1093,14 @@
     </div>
     <div class="exam-entry-arr">→</div>
   </button>
+  <button class="exam-entry-btn examsim-entry-btn" onclick="openExamSim()" id="examsim-entry-btn" style="display:none">
+    <div class="exam-entry-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M12 2h0M9 2h6"/></svg></div>
+    <div class="exam-entry-text">
+      <div class="exam-entry-title">Examensimulatie</div>
+      <div class="exam-entry-sub" id="examsim-entry-sub">Echt examen · officiële tijd + PDF's</div>
+    </div>
+    <div class="exam-entry-arr">→</div>
+  </button>
   <button class="exam-entry-btn ce-entry-btn" onclick="openCEExamens()" id="ce-entry-btn" style="display:none">
     <div class="exam-entry-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
     <div class="exam-entry-text">
@@ -2193,6 +2201,7 @@
 <!-- defer: alle modules downloaden parallel tijdens parse, draaien daarna in documentvolgorde
      vóór DOMContentLoaded. Volgorde blijft behouden; readyState-guards hebben een else-tak. -->
 <script defer src="/examens.js"></script>
+<script defer src="/examens-2026.js"></script>
 <!-- Supabase SDK - must load before app script (defer bewaart die volgorde) -->
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" integrity="sha256-nemRIwEQKZy7uoOYcUFEnleZl6kKX8B3zf4KpR6NVT0=" crossorigin="anonymous"></script>
 <script defer src="/data.js"></script>
@@ -2603,6 +2612,27 @@
   </nav>
   <div class="grp-page-wrap">
     <div id="groep-content"></div>
+  </div>
+</div>
+
+<div id="sc-examsim" class="sc">
+  <div class="qh"><button class="back-btn" onclick="_exSimStop();show('sc-detail')">←</button><span>Examensimulatie</span></div>
+  <div class="examsim-wrap">
+    <div class="examsim-badge" id="examsim-badge">CENTRAAL EXAMEN</div>
+    <div class="examsim-title" id="examsim-title">Examen</div>
+    <div class="examsim-meta" id="examsim-meta">2026 · tijdvak 1</div>
+    <div class="examsim-clock">
+      <div class="examsim-timer" id="examsim-timer">--:--</div>
+      <div class="examsim-timer-lbl">officiële examentijd</div>
+    </div>
+    <button class="examsim-start" id="examsim-start" onclick="_exSimToggle()">▶ Start de klok</button>
+    <div class="examsim-pdfs">
+      <button class="ce-pdf-btn" id="examsim-opg">📋 Opgaven</button>
+      <button class="ce-pdf-btn ce-pdf-tb" id="examsim-bijl" style="display:none">📖 Bijlage</button>
+      <button class="ce-pdf-btn ce-pdf-cv" id="examsim-cv">✅ Correctievoorschrift</button>
+    </div>
+    <div class="examsim-tip">Zo werkt een echte examensimulatie: zet de klok, open de <b>opgaven</b> en maak het hele examen onder tijdsdruk (op papier of in je hoofd). Kijk jezelf daarna eerlijk na met het <b>correctievoorschrift</b>.</div>
+    <div class="examsim-src" id="examsim-src"></div>
   </div>
 </div>
 

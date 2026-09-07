@@ -208,6 +208,16 @@ function openVak(id,_noHash){
       _exBtn.style.display = 'none';
     }
   }
+  // Echte examensimulatie (2026-examen met ingebouwde PDF's) - voor elk vak met data.
+  const _simEl = document.getElementById('examsim-entry-btn');
+  if(_simEl){
+    const _sd = (typeof EXAMEN_SIM!=='undefined' && EXAMEN_SIM[APP_LEVEL] && EXAMEN_SIM[APP_LEVEL][ST.vak.id]) || null;
+    if(_sd){
+      _simEl.style.display='';
+      const _ss=document.getElementById('examsim-entry-sub');
+      if(_ss)_ss.textContent=`CE ${_sd.jaar} tijdvak ${_sd.tijdvak} · opgaven + nakijkmodel · ${_sd.duur||180} min`;
+    } else _simEl.style.display='none';
+  }
   // Echte CE-examenvragen (uit ce_data.js) - toon zodra er echte vragen voor dit vak zijn
   const _ceBtn = document.getElementById('ce-entry-btn');
   const _ceSub = document.getElementById('ce-entry-sub');

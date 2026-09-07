@@ -1036,3 +1036,51 @@ function raceToast(msg){
   setTimeout(()=>t.classList.remove('show'),2500);
 }
 
+
+// ═══════ ECHTE EXAMENSIMULATIE (opgehaalde 2026-examens) ═══════
+// Per vak het echte CE van het meest recente tijdvak: opgaven + bijlage +
+// correctievoorschrift (PDF's uit examens-2026.js) met een officiële-tijd-klok.
+var _EXSIM=null,_exSimT=null,_exSimLeft=0,_exSimRun=false;
+function _exSimData(){
+  try{const v=ST.vak&&ST.vak.id;return (typeof EXAMEN_SIM!=='undefined'&&EXAMEN_SIM[APP_LEVEL]&&EXAMEN_SIM[APP_LEVEL][v])||null;}catch(e){return null;}
+}
+function _exSimFmt(s){const m=Math.floor(s/60),ss=s%60;return (m<10?'0':'')+m+':'+(ss<10?'0':'')+ss;}
+function _exSimRender(){const el=document.getElementById('examsim-timer');if(el)el.textContent=_exSimFmt(Math.max(0,_exSimLeft));}
+function _exSimStop(){_exSimRun=false;clearInterval(_exSimT);}
+function openExamSim(){
+  const d=_exSimData();
+  if(!d){try{showToast('Nog geen examensimulatie voor dit vak');}catch(e){}return;}
+  _EXSIM=d;_exSimStop();_exSimLeft=(d.duur||180)*60;
+  const vak=(ST.vak&&ST.vak.naam)||'Examen';
+  const _set=(id,t)=>{const el=document.getElementById(id);if(el)el.textContent=t;};
+  _set('examsim-title',vak);
+  _set('examsim-meta','Centraal examen '+d.jaar+' · tijdvak '+d.tijdvak+' · '+(d.duur||180)+' minuten');
+  _exSimRender();
+  const st=document.getElementById('examsim-start');if(st)st.textContent='▶ Start de klok';
+  const wire=(id,url,title)=>{const b=document.getElementById(id);if(b)b.onclick=()=>{try{openPdfViewer(url,title);}catch(e){window.open(url,'_blank');}};};
+  wire('examsim-opg',d.opgaven,vak+' — opgaven '+d.jaar);
+  wire('examsim-cv',d.cv,vak+' — correctievoorschrift '+d.jaar);
+  const bj=document.getElementById('examsim-bijl');
+  if(bj){if(d.bijlage){bj.style.display='';bj.onclick=()=>{try{openPdfViewer(d.bijlage,vak+' — bijlage '+d.jaar);}catch(e){window.open(d.bijlage,'_blank');}};}else bj.style.display='none';}
+  _set('examsim-src','Bron: alleexamens.nl · officieel CvTE-examen '+d.jaar);
+  show('sc-examsim');
+  try{trackEvent('examensimulatie',{vak:vak,jaar:d.jaar});}catch(e){}
+}
+function _exSimToggle(){
+  const st=document.getElementById('examsim-start');
+  if(_exSimRun){_exSimRun=false;clearInterval(_exSimT);if(st)st.textContent='▶ Hervat';return;}
+  if(_exSimLeft<=0)_exSimLeft=((_EXSIM&&_EXSIM.duur)||180)*60;
+  _exSimRun=true;if(st)st.textContent='⏸ Pauze';
+  clearInterval(_exSimT);
+  _exSimT=setInterval(()=>{
+    _exSimLeft--;_exSimRender();
+    if(_exSimLeft===600){try{showToast('⏳ Nog 10 minuten!','#e8580c',3000);}catch(e){}try{if(typeof haptic==='function')haptic([30,40,30]);}catch(e){}}
+    if(_exSimLeft<=0){
+      clearInterval(_exSimT);_exSimRun=false;
+      if(st)st.textContent='▶ Opnieuw';
+      try{showToast('⏰ Tijd voorbij! Kijk jezelf na met het correctievoorschrift.','#e8580c',4200);}catch(e){}
+      try{if(typeof vonkReact==='function')vonkReact('kijk','Tijd voorbij! ✅ Nu nakijken.');}catch(e){}
+      try{if(typeof haptic==='function')haptic([40,30,80,30,120]);}catch(e){}
+    }
+  },1000);
+}

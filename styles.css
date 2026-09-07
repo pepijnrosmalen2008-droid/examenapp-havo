@@ -1053,6 +1053,22 @@ html.dark .qb{background:#2e3550}
 .oefen-head + .sim-entry-btn,.oefen-head + .exam-entry-btn{border-top:0!important}
 .oefen-panel .sim-entry-btn:hover,.oefen-panel .exam-entry-btn:hover{background:rgba(var(--or-rgb),.04)!important;transform:none!important}
 .exam-entry-btn{display:flex;align-items:center;gap:12px;width:100%;padding:13px 16px;border-radius:14px;background:var(--s);border:1px solid var(--bo);color:var(--dk);font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font-head);transition:all .22s;margin-bottom:14px;text-align:left}
+/* Examensimulatie-entree accent + scherm */
+.examsim-entry-btn{border-color:rgba(var(--or-rgb),.5);background:linear-gradient(180deg,rgba(var(--or-rgb),.08),var(--s))}
+.examsim-entry-btn .exam-entry-icon{color:var(--or)}
+.examsim-wrap{max-width:520px;margin:0 auto;padding:8px 16px 40px;text-align:center}
+.examsim-badge{display:inline-block;margin:6px auto 10px;padding:5px 14px;border-radius:999px;background:rgba(var(--or-rgb),.12);border:1px solid rgba(var(--or-rgb),.4);color:var(--or);font-family:var(--font-head);font-weight:800;font-size:11.5px;letter-spacing:.14em}
+.examsim-title{font-family:var(--font-head);font-weight:800;font-size:26px;color:var(--dk);line-height:1.15}
+.examsim-meta{color:var(--mut);font-size:13.5px;font-weight:600;margin-top:5px}
+.examsim-clock{margin:22px auto 16px;padding:22px;border-radius:22px;background:var(--s);border:1px solid var(--bo);max-width:300px}
+.examsim-timer{font-family:var(--font-head);font-weight:800;font-size:64px;line-height:1;color:var(--dk);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.examsim-timer-lbl{color:var(--mut);font-size:12.5px;font-weight:600;margin-top:8px;text-transform:uppercase;letter-spacing:.08em}
+.examsim-start{width:100%;max-width:300px;margin:0 auto 18px;display:block;padding:15px;border:none;border-radius:15px;background:var(--or);color:#fff;font-family:var(--font-head);font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 5px 0 var(--or-d,#b45a12);transition:transform .12s,box-shadow .12s}
+.examsim-start:active{transform:translateY(4px);box-shadow:0 1px 0 var(--or-d,#b45a12)}
+.examsim-pdfs{display:flex;flex-direction:column;gap:9px;max-width:340px;margin:0 auto 18px}
+.examsim-pdfs .ce-pdf-btn{padding:13px;font-size:14px;border-radius:13px}
+.examsim-tip{color:var(--mut);font-size:13px;line-height:1.5;max-width:400px;margin:0 auto;text-align:left;background:var(--bg2);border:1px solid var(--bo);border-radius:14px;padding:13px 15px}
+.examsim-src{color:var(--mut);font-size:11.5px;margin-top:14px;opacity:.8}
 .exam-entry-btn:hover{background:var(--s);border-color:var(--or);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(0,0,0,.12)}
 .exam-entry-icon{font-size:22px;line-height:1;flex-shrink:0}
 .exam-entry-text{flex:1;min-width:0}
