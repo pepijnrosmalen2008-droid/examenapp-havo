@@ -337,6 +337,31 @@ function startExamen(){
   show('sc-examen');
 }
 
+// Slagio-proefexamen (origineel, examenstijl) op dezelfde runner-engine.
+function startProefexamen(){
+  const vakId = (ST.vak && ST.vak.id) || ST.vakId || '';
+  const ex = (typeof SLAGIO_EXAMENS!=='undefined' && SLAGIO_EXAMENS[APP_LEVEL] && SLAGIO_EXAMENS[APP_LEVEL][vakId]) || null;
+  if(!ex){ showToast('Nog geen proefexamen voor dit vak'); return; }
+  EX = { examen: ex, idx:0, answers:{}, grades:{}, phase:'intro', timer:null, secondsLeft: ex.duur_minuten*60, selfPts:0, gradedCount:0 };
+  const _set=(id,t)=>{const el=document.getElementById(id);if(el)el.textContent=t;};
+  _set('ex-intro-title', `${ex.titel} ${(ex.niveau||APP_LEVEL).toUpperCase()} · Proefexamen`);
+  _set('ex-intro-sub', 'Slagio origineel · examenstijl · zelf nakijken met het modelantwoord');
+  _set('ex-stat-vragen', ex.vragen.length);
+  _set('ex-stat-punten', ex.max_punten);
+  const h=Math.floor(ex.duur_minuten/60), m=ex.duur_minuten%60;
+  _set('ex-stat-tijd', m===0?`${h} uur`:`${h}u ${m}m`);
+  _set('ex-timer', _exFmtTime(ex.duur_minuten*60));
+  const _tm=document.getElementById('ex-timer'); if(_tm)_tm.className='ex-timer';
+  _set('ex-score-chip', `0 / ${ex.max_punten} pt`);
+  const _pf=document.getElementById('ex-prog-fill'); if(_pf)_pf.style.width='0%';
+  const bijlRow=document.getElementById('ex-bijlage-row'); if(bijlRow)bijlRow.style.display='none';
+  document.getElementById('ex-intro').style.display='';
+  document.getElementById('ex-quiz').style.display='none';
+  document.getElementById('ex-result').style.display='none';
+  show('sc-examen');
+  try{trackEvent('proefexamen',{vak:ex.titel,niveau:ex.niveau||APP_LEVEL});}catch(e){}
+}
+
 function examenStart(){
   EX.phase = 'quiz';
   document.getElementById('ex-intro').style.display = 'none';

@@ -208,6 +208,16 @@ function openVak(id,_noHash){
       _exBtn.style.display = 'none';
     }
   }
+  // Slagio proefexamen (origineel, examenstijl) - toon wanneer er data voor dit vak is.
+  const _peEl = document.getElementById('proefexamen-entry-btn');
+  if(_peEl){
+    const _pe = (typeof SLAGIO_EXAMENS!=='undefined' && SLAGIO_EXAMENS[APP_LEVEL] && SLAGIO_EXAMENS[APP_LEVEL][ST.vak.id]) || null;
+    if(_pe){
+      _peEl.style.display='';
+      const _ps=document.getElementById('proefexamen-entry-sub');
+      if(_ps)_ps.textContent=`${_pe.vragen.length} vragen · ${_pe.max_punten} punten · ${_pe.duur_minuten} min · zelf nakijken`;
+    } else _peEl.style.display='none';
+  }
   // Echte examensimulatie (2026-examen met ingebouwde PDF's) - voor elk vak met data.
   const _simEl = document.getElementById('examsim-entry-btn');
   if(_simEl){

@@ -1085,6 +1085,14 @@
     </div>
     <div class="sim-entry-arr">→</div>
   </button>
+  <button class="exam-entry-btn proefexamen-entry-btn" onclick="startProefexamen()" id="proefexamen-entry-btn" style="display:none">
+    <div class="exam-entry-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5"/></svg></div>
+    <div class="exam-entry-text">
+      <div class="exam-entry-title">Slagio Proefexamen</div>
+      <div class="exam-entry-sub" id="proefexamen-entry-sub">Examenstijl · open vragen · zelf nakijken</div>
+    </div>
+    <div class="exam-entry-arr">→</div>
+  </button>
   <button class="exam-entry-btn" onclick="startExamen()" id="exam-entry-btn" style="display:none">
     <div class="exam-entry-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14 3H6v18h12V8z"/><path d="M9 13h6M9 17h6"/></svg></div>
     <div class="exam-entry-text">
@@ -2202,6 +2210,7 @@
      vóór DOMContentLoaded. Volgorde blijft behouden; readyState-guards hebben een else-tak. -->
 <script defer src="/examens.js"></script>
 <script defer src="/examens-2026.js"></script>
+<script defer src="/proefexamen-bi.js"></script>
 <!-- Supabase SDK - must load before app script (defer bewaart die volgorde) -->
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" integrity="sha256-nemRIwEQKZy7uoOYcUFEnleZl6kKX8B3zf4KpR6NVT0=" crossorigin="anonymous"></script>
 <script defer src="/data.js"></script>
