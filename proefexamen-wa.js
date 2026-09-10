@@ -123,8 +123,8 @@ SLAGIO_EXAMENS.havo.wa = {
     // ── Opgave 2 · Boxplot ──
     { nr:4, opgave:2, punten:2, type:'open', domein:'Statistiek',
       vraag:'Lees uit afbeelding 2 de mediaan van klas A af en bepaal de kwartielafstand (interkwartielafstand) van klas A.',
-      antwoord:'De mediaan van A is 6 (de streep in de box). Q1 = 5 en Q3 = 7, dus de kwartielafstand = Q3 − Q1 = 7 − 5 = 2.',
-      antwoord_rubric:'1 punt: mediaan A = 6. 1 punt: kwartielafstand = 7 − 5 = 2.' },
+      antwoord:'De mediaan van A is 6 (de streep in de box). Q1 = 5 en Q3 = 7, dus de kwartielafstand = Q3 - Q1 = 7 - 5 = 2.',
+      antwoord_rubric:'1 punt: mediaan A = 6. 1 punt: kwartielafstand = 7 - 5 = 2.' },
     { nr:5, opgave:2, punten:3, type:'open', domein:'Statistiek',
       vraag:'Beide klassen hebben dezelfde mediaan. Leg met de boxplots uit welke klas een grotere spreiding heeft, en beoordeel de uitspraak: "In klas B haalde meer dan een kwart van de leerlingen een 8 of hoger."',
       antwoord:'Beide medianen zijn 6, maar klas B heeft een grotere spreiding: de box van B (Q1 = 4 tot Q3 = 8, kwartielafstand 4) is breder dan die van A (Q1 = 5 tot Q3 = 7, kwartielafstand 2), en ook het bereik van B (2-10) is groter dan van A (3-9). De uitspraak over B klopt niet precies: Q3 van B is 8, en per definitie ligt 25% (een kwart) van de leerlingen bóven Q3. Bij een 8 of hoger zit je op/boven Q3, dus het is ongeveer een kwart, niet méér dan een kwart.',
@@ -150,8 +150,8 @@ SLAGIO_EXAMENS.havo.wa = {
     // ── Opgave 5 · Verandering ──
     { nr:10, opgave:5, punten:3, type:'open', domein:'Verandering',
       vraag:'Bij maand 2 zijn er 300 bezoekers, bij maand 6 zijn er 1000 bezoekers. Bereken de gemiddelde toename van het aantal bezoekers per maand tussen maand 2 en maand 6, en leg uit wat de koorde in afbeelding 5 hiermee te maken heeft.',
-      antwoord:'Gemiddelde toename = Δbezoekers ÷ Δmaanden = (1000 − 300) ÷ (6 − 2) = 700 ÷ 4 = 175 bezoekers per maand. De rode koorde verbindt de punten bij maand 2 en 6; de gemiddelde toename is de steilheid (helling) van die koorde.',
-      antwoord_rubric:'1 punt: (1000 − 300)/(6 − 2). 1 punt: = 175 bezoekers per maand. 1 punt: koppeling aan de helling/steilheid van de koorde.' },
+      antwoord:'Gemiddelde toename = Δbezoekers ÷ Δmaanden = (1000 - 300) ÷ (6 - 2) = 700 ÷ 4 = 175 bezoekers per maand. De rode koorde verbindt de punten bij maand 2 en 6; de gemiddelde toename is de steilheid (helling) van die koorde.',
+      antwoord_rubric:'1 punt: (1000 - 300)/(6 - 2). 1 punt: = 175 bezoekers per maand. 1 punt: koppeling aan de helling/steilheid van de koorde.' },
     { nr:11, opgave:5, punten:2, type:'open', domein:'Verandering',
       vraag:'Leg met de vorm van de grafiek uit of de toename van het aantal bezoekers per maand in maand 6 groter of kleiner is dan de gemiddelde toename die je net berekende.',
       antwoord:'De grafiek loopt bij maand 6 steiler dan de koorde: de kromme wordt naar rechts toe steeds steiler. De momentane toename in maand 6 (de helling van de raaklijn daar) is dus groter dan de gemiddelde toename van 175 per maand over het interval 2-6.',

@@ -112,8 +112,8 @@ SLAGIO_EXAMENS.havo.sk = {
     // ── Opgave 4 · Oplosbaarheid ──
     { nr:9, opgave:4, punten:3, type:'open', domein:'Stoffen',
       vraag:'Bij 60 °C lost een leerling 50 g van het zout volledig op in 100 g water. De oplossing wordt afgekoeld tot 30 °C. Bepaal met afbeelding 4 hoeveel gram zout dan uitkristalliseert.',
-      antwoord:'Bij 30 °C is de oplosbaarheid 40 g per 100 g water (aflezen via de stippellijnen). Meer dan 40 g kan er bij 30 °C niet opgelost blijven. Van de 50 g blijft dus 40 g opgelost en kristalliseert 50 − 40 = 10 g uit.',
-      antwoord_rubric:'1 punt: oplosbaarheid bij 30 °C = 40 g/100 g aflezen. 1 punt: bij 30 °C blijft maximaal 40 g opgelost. 1 punt: 50 − 40 = 10 g kristalliseert uit.' },
+      antwoord:'Bij 30 °C is de oplosbaarheid 40 g per 100 g water (aflezen via de stippellijnen). Meer dan 40 g kan er bij 30 °C niet opgelost blijven. Van de 50 g blijft dus 40 g opgelost en kristalliseert 50 - 40 = 10 g uit.',
+      antwoord_rubric:'1 punt: oplosbaarheid bij 30 °C = 40 g/100 g aflezen. 1 punt: bij 30 °C blijft maximaal 40 g opgelost. 1 punt: 50 - 40 = 10 g kristalliseert uit.' },
     { nr:10, opgave:4, punten:2, type:'open', domein:'Stoffen',
       vraag:'Leg met de vorm van de curve uit waarom je een zout beter kunt zuiveren door het warm op te lossen en daarna af te koelen, dan door het bij kamertemperatuur op te lossen.',
       antwoord:'De curve stijgt met de temperatuur: bij hoge temperatuur lost veel meer zout op dan bij lage. Door warm op te lossen krijg je een geconcentreerde oplossing; bij afkoelen daalt de oplosbaarheid sterk, waardoor het zuivere zout weer uitkristalliseert terwijl verontreinigingen (in kleine hoeveelheid) opgelost blijven. Bij kamertemperatuur is dat verschil in oplosbaarheid veel kleiner, dus kristalliseert er veel minder terug.',
@@ -121,7 +121,7 @@ SLAGIO_EXAMENS.havo.sk = {
     // ── Opgave 5 · Zuur en base ──
     { nr:11, opgave:5, punten:2, type:'open', domein:'Zuren',
       vraag:'Citroensap heeft pH 2, zwart koffie ongeveer pH 5. Bereken hoeveel keer zo groot de concentratie H⁺-ionen in citroensap is vergeleken met koffie, en licht je antwoord toe met de pH-schaal.',
-      antwoord:'Het verschil is 5 − 2 = 3 pH-eenheden. Elke eenheid lager betekent een factor 10 meer H⁺-ionen, dus 3 eenheden geven 10 × 10 × 10 = 10³ = 1000 keer zo veel H⁺. De concentratie H⁺ in citroensap is 1000 keer zo groot als in koffie.',
+      antwoord:'Het verschil is 5 - 2 = 3 pH-eenheden. Elke eenheid lager betekent een factor 10 meer H⁺-ionen, dus 3 eenheden geven 10 × 10 × 10 = 10³ = 1000 keer zo veel H⁺. De concentratie H⁺ in citroensap is 1000 keer zo groot als in koffie.',
       antwoord_rubric:'1 punt: verschil van 3 pH-eenheden en per eenheid een factor 10. 1 punt: 10³ = 1000 keer zo veel H⁺.' },
     { nr:12, opgave:5, punten:2, type:'open', domein:'Zuren',
       vraag:'Je voegt aan citroensap steeds meer water toe. Leg uit in welke richting de pH verschuift en waarom de pH door verdunnen nooit boven 7 kan uitkomen.',

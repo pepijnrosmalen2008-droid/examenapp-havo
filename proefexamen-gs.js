@@ -63,7 +63,7 @@ SLAGIO_EXAMENS.havo.gs = {
   niveau: 'havo',
   jaar: new Date().getFullYear(),
   duur_minuten: 100,
-  max_punten: 30,
+  max_punten: 31,
   bron: 'Slagio origineel · examenstijl',
   bijlagen: [],
   opgaven: [
@@ -88,10 +88,10 @@ SLAGIO_EXAMENS.havo.gs = {
   ],
   vragen: [
     // ── Opgave 1 · Chronologie ──
-    { nr:1, opgave:1, punten:2, type:'open', domein:'Chronologie',
-      vraag:'Zowel het begin van de Eerste Wereldoorlog als de beurskrach van 1929 valt in hetzelfde tijdvak. Noem dat tijdvak en de bijbehorende periode.',
-      antwoord:'Beide gebeurtenissen vallen in de "tijd van de wereldoorlogen" (1900-1950), ook wel de twintigste eeuw / het tijdvak van de wereldoorlogen genoemd.',
-      antwoord_rubric:'1 punt: tijd van de wereldoorlogen. 1 punt: de bijbehorende periode 1900-1950.' },
+    { nr:1, opgave:1, punten:3, type:'open', domein:'Chronologie',
+      vraag:'Noem het tijdvak (met de periode) waarin zowel het begin van de Eerste Wereldoorlog als de beurskrach valt. Leg daarna met de tijdbalk uit waarom de beurskrach van 1929 géén oorzaak van het uitbreken van WO I kan zijn, terwijl de gevolgen van WO I wél kunnen hebben bijgedragen aan de latere crisis.',
+      antwoord:'Beide gebeurtenissen vallen in de "tijd van de wereldoorlogen" (1900-1950). De beurskrach (1929) kan geen oorzaak van WO I (1914) zijn, want een oorzaak moet vóór het gevolg komen en de krach kwam ná het uitbreken van de oorlog. Andersom kan het wél: WO I kwam eerder, en de gevolgen ervan (enorme oorlogsschulden, een ontwrichte economie, herstelbetalingen) verzwakten de economie en konden zo bijdragen aan de crisis van 1929.',
+      antwoord_rubric:'1 punt: tijd van de wereldoorlogen (1900-1950). 1 punt: de krach (1929) is later dan WO I (1914), dus kan geen oorzaak zijn (oorzaak gaat vooraf aan gevolg). 1 punt: WO I lag eerder, dus de gevolgen ervan (schulden/ontwrichte economie) konden wél aan de crisis bijdragen.' },
     { nr:2, opgave:1, punten:2, type:'open', domein:'Chronologie',
       vraag:'Een historicus zet gebeurtenissen op een tijdbalk voordat hij oorzaak-gevolgrelaties onderzoekt. Leg uit waarom de juiste volgorde in de tijd daarvoor noodzakelijk is.',
       antwoord:'Een oorzaak komt altijd vóór het gevolg. Alleen als je de gebeurtenissen in de juiste volgorde zet, kun je nagaan welke gebeurtenis eerder plaatsvond en dus een oorzaak kán zijn van een latere gebeurtenis. Zonder de juiste chronologie zou je een gevolg per ongeluk als oorzaak kunnen aanwijzen.',
@@ -107,9 +107,9 @@ SLAGIO_EXAMENS.havo.gs = {
       antwoord_rubric:'1 punt: de affiche speelt in op nationalisme/trots/plicht voor het vaderland (heldhaftige soldaat bij de vlag). 1 punt: door de bondgenootschappen werden meer landen meegetrokken. 1 punt: nationalisme/wapenwedloop maakte escalatie tot een grote oorlog mogelijk (anders lokaal gebleven).' },
     // ── Opgave 3 · Crisis ──
     { nr:5, opgave:3, punten:2, type:'open', domein:'Crisis', afb:_GSAFB.werkloosheid, afb_cap:'afbeelding 3b: werkloosheid (%) in de jaren dertig',
-      vraag:'Beschrijf met afbeelding 3b (de grafiek) wat er met de werkloosheid gebeurde tussen 1929 en 1932, en noem de directe aanleiding van deze ontwikkeling.',
-      antwoord:'Tussen 1929 en 1932 steeg de werkloosheid sterk, van ongeveer 9% naar rond de 30% (aflezen uit de grafiek): de werkloosheid meer dan verdrievoudigde. De directe aanleiding was de beurskrach op Wall Street in 1929, die een wereldwijde economische crisis veroorzaakte.',
-      antwoord_rubric:'1 punt: sterke stijging van ± 9% naar ± 30% tussen 1929 en 1932 (afgelezen). 1 punt: aanleiding = beurskrach 1929 / economische crisis.' },
+      vraag:'Beschrijf met afbeelding 3b (de grafiek) wat er met de werkloosheid gebeurde tussen 1929 en 1932. Verklaar daarna met een oorzaak-gevolgredenering hoe een beurskrach in de Verenigde Staten kon leiden tot massawerkloosheid, óók in Europese landen.',
+      antwoord:'Tussen 1929 en 1932 steeg de werkloosheid sterk, van ongeveer 9% naar rond de 30% (aflezen): de werkloosheid meer dan verdrievoudigde. De keten: door de beurskrach verloren mensen en banken in de VS veel geld, waardoor er veel minder werd besteed en geïnvesteerd. Amerikaanse banken eisten leningen terug uit Europa en de handel tussen landen stortte in. Europese bedrijven verkochten daardoor minder, gingen minder produceren en ontsloegen personeel, waardoor de werkloosheid ook in Europa sterk opliep. De crisis verspreidde zich zo van de VS over de hele wereldeconomie.',
+      antwoord_rubric:'1 punt: sterke stijging van ongeveer 9% naar ongeveer 30% (1929-1932) afgelezen. 1 punt: krach → minder bestedingen/investeringen en terugtrekken van leningen → instorten van handel. 1 punt: minder afzet → minder productie → ontslagen → werkloosheid ook in Europa (crisis verspreidt zich wereldwijd).' },
     { nr:6, opgave:3, punten:3, type:'open', domein:'Crisis',
       vraag:'De foto in afbeelding 3 toont de armoede en wanhoop van werklozen. Leg een oorzaak-gevolgketen uit die verklaart hoe de economische crisis in Duitsland de steun voor Hitler en de NSDAP kon vergroten.',
       antwoord:'Door de crisis raakten miljoenen mensen werkloos en verarmden ze (zichtbaar in de hoge werkloosheid). Veel mensen verloren het vertrouwen in de bestaande regering, die de crisis niet leek op te lossen. Hitler beloofde werk, orde en herstel van de Duitse trots en gaf anderen (zoals de Joden en het Verdrag van Versailles) de schuld. Daardoor stemden steeds meer wanhopige mensen op de NSDAP, waardoor die groot werd en Hitler in 1933 aan de macht kon komen.',
