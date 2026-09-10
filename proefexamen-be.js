@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-be.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo be).
+// proefexamen-be.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo be).
 // Eigen contexten, vragen en figuren. Géén reproductie van een CvTE-examen.
 // CE-niveau bedrijfseconomie: prijsvorming, break-evenanalyse, resultaten-
 // rekening, liquiditeit en investeringsselectie. Rekenen met tussenstappen;
@@ -65,22 +65,22 @@ SLAGIO_EXAMENS.havo.be = {
   opgaven: [
     { nr:1, titel:'De prijs van een rugzak',
       context:'Een winkel verkoopt rugzakken. De inkoopprijs is € 50 per rugzak. De winkel rekent een brutowinstopslag en daarna 21% btw. Afbeelding 1 toont de opbouw van de consumentenprijs.',
-      afb:_BEAFB.verkoopprijs, afb_cap:'afbeelding 1 — opbouw van de consumentenprijs' },
+      afb:_BEAFB.verkoopprijs, afb_cap:'afbeelding 1: opbouw van de consumentenprijs' },
     { nr:2, titel:'Break-even van een foodtruck',
       context:'Iris begint een foodtruck. Haar constante kosten zijn € 6.000 per maand. De variabele kosten zijn € 8 per maaltijd en ze verkoopt elke maaltijd voor € 20. Afbeelding 2 toont de totale kosten (TK) en de totale opbrengst (TO).',
-      afb:_BEAFB.breakeven, afb_cap:'afbeelding 2 — break-evenanalyse (TK en TO)' },
+      afb:_BEAFB.breakeven, afb_cap:'afbeelding 2: break-evenanalyse (TK en TO)' },
     { nr:3, titel:'Het jaarresultaat',
       context:'Afbeelding 3 is een (vereenvoudigde) resultatenrekening van een handelsonderneming over één jaar.',
-      afb:_BEAFB.resultaat, afb_cap:'afbeelding 3 — resultatenrekening' },
+      afb:_BEAFB.resultaat, afb_cap:'afbeelding 3: resultatenrekening' },
     { nr:4, titel:'Kan het bedrijf zijn rekeningen betalen?',
       context:'Afbeelding 4 toont voor een onderneming de vlottende activa (voorraden, debiteuren, liquide middelen) en het kort vreemd vermogen (schulden die binnen een jaar betaald moeten worden).',
-      afb:_BEAFB.liquiditeit, afb_cap:'afbeelding 4 — vlottende activa en kort vreemd vermogen' },
+      afb:_BEAFB.liquiditeit, afb_cap:'afbeelding 4: vlottende activa en kort vreemd vermogen' },
     { nr:5, titel:'Een nieuwe oven',
       context:'Een bakkerij overweegt een oven van € 40.000. Afbeelding 5 toont de cumulatieve nettokasstroom: de investering min de opgetelde jaarlijkse ontvangsten. Waar de lijn de nullijn kruist, is de investering terugverdiend.',
-      afb:_BEAFB.terugverdien, afb_cap:'afbeelding 5 — cumulatieve nettokasstroom per jaar' },
+      afb:_BEAFB.terugverdien, afb_cap:'afbeelding 5: cumulatieve nettokasstroom per jaar' },
     { nr:6, titel:'Prijs en omzet',
       context:'Voor een product geldt de prijs-afzetrelatie in afbeelding 6: bij een hogere prijs verkoopt het bedrijf minder stuks per maand.',
-      afb:_BEAFB.vraagtabel, afb_cap:'afbeelding 6 — prijs-afzettabel' },
+      afb:_BEAFB.vraagtabel, afb_cap:'afbeelding 6: prijs-afzettabel' },
   ],
   vragen: [
     // ── Opgave 1 · Prijsvorming ──

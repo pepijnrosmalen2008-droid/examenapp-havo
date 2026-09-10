@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-ec.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo eco).
+// proefexamen-ec.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo eco).
 // Eigen contexten, vragen en figuren. Géén reproductie van een CvTE-examen.
-// Vraagstelling op CE-niveau: rekenen, redeneren en gegevens aflezen — met
+// Vraagstelling op CE-niveau: rekenen, redeneren en gegevens aflezen, met
 // een meervoudige nakijkrubric per vraag. Elke opgave heeft een grafiek/diagram.
 //   opgaven[] = {nr,titel,context,afb,afb_cap}
 //   vragen[]  = {nr,opgave,punten,type,vraag,antwoord,antwoord_rubric,domein}
@@ -17,9 +17,9 @@ function _ecAx(){
 function _ecGridY(ys){ return ys.map(y=>'<line x1="52" y1="'+y+'" x2="340" y2="'+y+'" stroke="#eef1f5" stroke-width="1"/>').join(''); }
 
 var _ECAFB = {
-  // Vraag & aanbod met evenwicht — pijlpuntassen, gridlines, P*/Q*
+  // Vraag & aanbod met evenwicht, pijlpuntassen, gridlines, P*/Q*
   markt:`<svg viewBox="0 0 360 196" role="img" aria-label="vraag- en aanbodlijn met evenwicht">${_ecGridY([126,94,62,30])}${_ecAx()}<line x1="68" y1="40" x2="322" y2="150" stroke="#2563eb" stroke-width="2.8"/><line x1="68" y1="150" x2="322" y2="40" stroke="#e8580c" stroke-width="2.8"/><line x1="195" y1="95" x2="52" y2="95" stroke="#94a0b8" stroke-width="1.1" stroke-dasharray="4 4"/><line x1="195" y1="95" x2="195" y2="158" stroke="#94a0b8" stroke-width="1.1" stroke-dasharray="4 4"/><circle cx="195" cy="95" r="3.6" fill="#1b2230"/><g font-family="sans-serif" font-size="11" font-weight="800"><text x="326" y="40" fill="#e8580c">A</text><text x="326" y="152" fill="#2563eb">V</text><text x="40" y="99" fill="#1b2230">P&#42;</text><text x="195" y="172" fill="#1b2230" text-anchor="middle">Q&#42;</text></g><text x="0" y="0" transform="translate(16,90) rotate(-90)" font-family="sans-serif" font-size="10" font-weight="800" fill="#1b2230" text-anchor="middle">prijs (&#8364;)</text><text x="250" y="190" font-family="sans-serif" font-size="10" font-weight="800" fill="#1b2230" text-anchor="middle">hoeveelheid</text></svg>`,
-  // Samengestelde interest: spaarsaldo (staafdiagram) — gridlines, waarden
+  // Samengestelde interest: spaarsaldo (staafdiagram), gridlines, waarden
   sparen:(function(){
     var vals=[2000,2080,2163,2250,2340];
     var sy=function(v){return 158-(v-1900)/500*120;};
@@ -28,11 +28,11 @@ var _ECAFB = {
     var xl=['jaar 0','1','2','3','4'].map(function(l,i){return '<text x="'+(72+i*54+18)+'" y="172" font-family="sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">'+l+'</text>';}).join('');
     return '<svg viewBox="0 0 360 196" role="img" aria-label="spaarsaldo per jaar bij samengestelde interest">'+yl+_ecAx()+bars+xl+'<text x="0" y="0" transform="translate(16,90) rotate(-90)" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">spaarsaldo (&#8364;)</text></svg>';
   })(),
-  // Kosten en opbrengsten met break-evenpunt — pijlpuntassen, gridlines
+  // Kosten en opbrengsten met break-evenpunt, pijlpuntassen, gridlines
   breakeven:`<svg viewBox="0 0 360 196" role="img" aria-label="totale kosten en totale opbrengst met break-evenpunt">${_ecGridY([126,94,62,30])}${_ecAx()}<line x1="56" y1="104" x2="322" y2="70" stroke="#e8580c" stroke-width="2.8"/><line x1="56" y1="152" x2="322" y2="34" stroke="#2e9e5b" stroke-width="2.8"/><line x1="210" y1="86" x2="210" y2="158" stroke="#94a0b8" stroke-width="1.1" stroke-dasharray="4 4"/><circle cx="210" cy="86" r="3.6" fill="#1b2230"/><g font-family="sans-serif" font-size="11" font-weight="800"><text x="326" y="70" fill="#e8580c">TK</text><text x="326" y="34" fill="#2e9e5b">TO</text><text x="210" y="172" fill="#1b2230" text-anchor="middle">break-even</text></g><text x="0" y="0" transform="translate(16,90) rotate(-90)" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">&#8364; per periode</text><text x="270" y="190" font-family="sans-serif" font-size="10" font-weight="800" fill="#1b2230" text-anchor="middle">afzet (stuks)</text></svg>`,
-  // Conjunctuurgolf rond de trend — pijlpuntassen
+  // Conjunctuurgolf rond de trend, pijlpuntassen
   conjunctuur:`<svg viewBox="0 0 360 196" role="img" aria-label="conjunctuurgolf rond de trendmatige groei">${_ecAx()}<line x1="56" y1="140" x2="332" y2="46" stroke="#8a94a8" stroke-width="1.8" stroke-dasharray="5 4"/><path d="M56 135 Q96 90 136 112 Q176 134 216 78 Q256 34 296 68 Q316 85 332 54" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/><g font-family="sans-serif" font-size="9.5" font-weight="800"><text x="232" y="40" fill="#2563eb">conjunctuurgolf</text><text x="256" y="116" fill="#8a94a8">trend</text></g><text x="0" y="0" transform="translate(16,90) rotate(-90)" font-family="sans-serif" font-size="10" font-weight="800" fill="#1b2230" text-anchor="middle">bbp</text><text x="300" y="176" font-family="sans-serif" font-size="10" font-weight="800" fill="#1b2230" text-anchor="middle">tijd</text></svg>`,
-  // Loon- en prijsindex over 3 jaren — pijlpuntassen, gridlines, indexticks
+  // Loon- en prijsindex over 3 jaren, pijlpuntassen, gridlines, indexticks
   koopkracht:(function(){
     var sy=function(v){return 158-(v-95)/25*128;};
     var sx=[86,200,314];
@@ -61,22 +61,22 @@ SLAGIO_EXAMENS.havo.ec = {
   opgaven: [
     { nr:1, titel:'De markt voor tweedehands fietsen',
       context:'Op de markt voor tweedehands stadsfietsen in een studentenstad geldt bij benadering:\nvraag:  Qv = 900 − 3P\naanbod: Qa = 2P − 100\nHierin is P de prijs in euro en Q het aantal fietsen per maand. Afbeelding 1 geeft de vraag- en aanbodlijn met het evenwicht.',
-      afb:_ECAFB.markt, afb_cap:'afbeelding 1 — vraag (V) en aanbod (A) met het marktevenwicht' },
+      afb:_ECAFB.markt, afb_cap:'afbeelding 1: vraag (V) en aanbod (A) met het marktevenwicht' },
     { nr:2, titel:'Sparen voor een reis',
       context:'Noa zet € 2.000 op een spaarrekening met 4% rente per jaar. De rente wordt elk jaar bij het saldo geteld (samengestelde interest). Afbeelding 2 laat het saldo aan het eind van elk jaar zien.',
-      afb:_ECAFB.sparen, afb_cap:'afbeelding 2 — spaarsaldo aan het eind van elk jaar' },
+      afb:_ECAFB.sparen, afb_cap:'afbeelding 2: spaarsaldo aan het eind van elk jaar' },
     { nr:3, titel:'Een eigen sapbar',
       context:'Sem begint een sapbar. Zijn constante kosten zijn € 1.800 per maand. De variabele kosten zijn € 1,50 per sap en hij verkoopt elk sap voor € 4,00. Afbeelding 3 toont de totale kosten (TK) en de totale opbrengst (TO).',
-      afb:_ECAFB.breakeven, afb_cap:'afbeelding 3 — totale kosten en totale opbrengst; het snijpunt is het break-evenpunt' },
+      afb:_ECAFB.breakeven, afb_cap:'afbeelding 3: totale kosten en totale opbrengst; het snijpunt is het break-evenpunt' },
     { nr:4, titel:'Hoog- en laagconjunctuur',
       context:'Afbeelding 4 toont de ontwikkeling van het bruto binnenlands product (bbp) van een land. De stippellijn is de trendmatige (structurele) groei; de doorgetrokken lijn is de werkelijke productie.',
-      afb:_ECAFB.conjunctuur, afb_cap:'afbeelding 4 — de conjunctuurgolf rond de trendmatige groei' },
+      afb:_ECAFB.conjunctuur, afb_cap:'afbeelding 4: de conjunctuurgolf rond de trendmatige groei' },
     { nr:5, titel:'Lonen en prijzen',
       context:'Afbeelding 5 toont voor een land de prijsindex (inflatie) en de loonindex over drie jaren. 2023 is het basisjaar (index = 100).',
-      afb:_ECAFB.koopkracht, afb_cap:'afbeelding 5 — prijsindex en loonindex, 2023 = 100' },
+      afb:_ECAFB.koopkracht, afb_cap:'afbeelding 5: prijsindex en loonindex, 2023 = 100' },
     { nr:6, titel:'Twee supermarkten',
       context:'In een dorp zijn twee supermarkten, A en B. Elke keten kiest tussen een hoge en een lage prijs. Afbeelding 6 toont de winst (in miljoen euro) die elke keuze oplevert: het eerste getal is de winst van A, het tweede die van B.',
-      afb:_ECAFB.spel, afb_cap:'afbeelding 6 — uitbetalingsmatrix (winst A / winst B)' },
+      afb:_ECAFB.spel, afb_cap:'afbeelding 6: uitbetalingsmatrix (winst A / winst B)' },
   ],
   vragen: [
     // ── Opgave 1 · Markt ──
@@ -87,7 +87,7 @@ SLAGIO_EXAMENS.havo.ec = {
     { nr:2, opgave:1, punten:2, type:'open', domein:'Markt',
       vraag:'De gemeente stelt een maximumprijs van € 150 in om fietsen betaalbaar te houden. Leg uit welk marktverschijnsel hierdoor ontstaat en of dit de kopers als groep helpt.',
       antwoord:'Bij € 150 is de gevraagde hoeveelheid 900 − 3·150 = 450 en het aanbod 2·150 − 100 = 200. De vraag (450) is groter dan het aanbod (200): er ontstaat een tekort (vraagoverschot) van 250 fietsen. Niet alle kopers worden geholpen: wie een fiets bemachtigt betaalt minder, maar 250 mensen die tegen die prijs willen kopen kunnen géén fiets krijgen; er kan een wachtlijst of illegale doorverkoop ontstaan.',
-      antwoord_rubric:'1 punt: een tekort/vraagoverschot ontstaat (met getallen onderbouwd of beredeneerd omdat de maximumprijs onder het evenwicht ligt). 1 punt: genuanceerd oordeel — sommige kopers profiteren, maar een deel valt buiten de boot / schaarste blijft.' },
+      antwoord_rubric:'1 punt: een tekort/vraagoverschot ontstaat (met getallen onderbouwd of beredeneerd omdat de maximumprijs onder het evenwicht ligt). 1 punt: genuanceerd oordeel, sommige kopers profiteren, maar een deel valt buiten de boot / schaarste blijft.' },
     { nr:3, opgave:1, punten:2, type:'open', domein:'Markt',
       vraag:'Er komt een grote groep nieuwe studenten in de stad wonen. Leg uit wat er met de vraaglijn in afbeelding 1 gebeurt en wat het gevolg is voor de evenwichtsprijs.',
       antwoord:'Meer studenten betekent bij elke prijs meer vraag naar fietsen: de hele vraaglijn verschuift naar rechts. Bij de oude prijs ontstaat dan een tekort, waardoor de prijs oploopt naar een nieuw, hoger evenwicht. De evenwichtsprijs én de evenwichtshoeveelheid stijgen.',
@@ -140,7 +140,7 @@ SLAGIO_EXAMENS.havo.ec = {
     { nr:14, opgave:6, punten:3, type:'open', domein:'Speltheorie',
       vraag:'Stel dat beide supermarkten een hoge prijs vragen. Leg met afbeelding 6 uit waarom supermarkt A er toch belang bij heeft om als enige naar een lage prijs over te stappen.',
       antwoord:'Bij hoge prijs / hoge prijs verdient A 8 mln. Als A als enige naar een lage prijs gaat (lage prijs, hoge prijs van B) stijgt A’s winst naar 10 mln, omdat A dan klanten van B wegtrekt. Voor A alleen is overstappen dus voordeliger (10 > 8): A heeft een prikkel om de afspraak te breken.',
-      antwoord_rubric:'1 punt: A gaat van 8 mln (hoog/hoog) naar 10 mln (laag terwijl B hoog blijft) — afgelezen uit de matrix. 1 punt: A trekt klanten van B weg. 1 punt: conclusie dat overstappen voor A voordeliger is → prikkel om te breken.' },
+      antwoord_rubric:'1 punt: A gaat van 8 mln (hoog/hoog) naar 10 mln (laag terwijl B hoog blijft), afgelezen uit de matrix. 1 punt: A trekt klanten van B weg. 1 punt: conclusie dat overstappen voor A voordeliger is → prikkel om te breken.' },
     { nr:15, opgave:6, punten:3, type:'open', domein:'Speltheorie',
       vraag:'Beide supermarkten redeneren op dezelfde manier. Beredeneer welke uitkomst uiteindelijk ontstaat en leg uit waarom die voor beide bedrijven slechter is dan samen een hoge prijs vragen.',
       antwoord:'Omdat elk bedrijf, wat de ander ook doet, met een lage prijs meer of evenveel verdient (10 > 8 als de ander hoog zit; 4 > 2 als de ander laag zit), kiezen beide de lage prijs. De uitkomst is lage prijs / lage prijs met 4 mln elk. Dat is voor beide slechter dan samen hoge prijs (8 mln elk): door tegen elkaar te concurreren komen ze in de slechtere uitkomst terecht (gevangenendilemma).',

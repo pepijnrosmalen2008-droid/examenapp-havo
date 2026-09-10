@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-mw.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo mw).
+// proefexamen-mw.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo mw).
 // Eigen contexten, vragen en figuren. Géén reproductie van een CvTE-examen.
 // CE-niveau maatschappijwetenschappen: kernconcepten (socialisatie, macht,
 // sociale ongelijkheid, sociale cohesie, verandering) toepassen op een
@@ -60,19 +60,19 @@ SLAGIO_EXAMENS.havo.mw = {
   opgaven: [
     { nr:1, titel:'Zo word je wie je bent',
       context:'Vanaf hun geboorte leren kinderen de normen, waarden en gewoonten van hun omgeving. Afbeelding 1 toont het individu met de belangrijkste socialiserende instituties eromheen.',
-      afb:_MWAFB.socialisatie, afb_cap:'afbeelding 1 — het individu en zijn socialiserende instituties' },
+      afb:_MWAFB.socialisatie, afb_cap:'afbeelding 1: het individu en zijn socialiserende instituties' },
     { nr:2, titel:'Politieke stromingen',
       context:'Afbeelding 2 plaatst enkele politieke stromingen in een assenstelsel: horizontaal de economische links-rechtsdimensie (mate van herverdeling), verticaal de sociaal-culturele dimensie (progressief tegenover conservatief).',
-      afb:_MWAFB.spectrum, afb_cap:'afbeelding 2 — politieke stromingen in twee dimensies' },
+      afb:_MWAFB.spectrum, afb_cap:'afbeelding 2: politieke stromingen in twee dimensies' },
     { nr:3, titel:'Niet iedereen gelijk',
       context:'In elke samenleving zijn schaarse en gewaardeerde zaken (inkomen, macht, status) ongelijk verdeeld. Afbeelding 3 toont de sociale gelaagdheid (stratificatie) van een samenleving.',
-      afb:_MWAFB.stratificatie, afb_cap:'afbeelding 3 — sociale stratificatie' },
+      afb:_MWAFB.stratificatie, afb_cap:'afbeelding 3: sociale stratificatie' },
     { nr:4, titel:'Wie heeft de macht?',
       context:'Macht is het vermogen om je wil aan anderen op te leggen, ook als zij zich verzetten. Afbeelding 4 toont de belangrijkste machtsbronnen.',
-      afb:_MWAFB.macht, afb_cap:'afbeelding 4 — bronnen van macht' },
+      afb:_MWAFB.macht, afb_cap:'afbeelding 4: bronnen van macht' },
     { nr:5, titel:'Een veranderende samenleving',
       context:'Afbeelding 5 toont het percentage Nederlanders dat lid is van een kerk, van 1960 tot 2020.',
-      afb:_MWAFB.verandering, afb_cap:'afbeelding 5 — kerklidmaatschap door de tijd' },
+      afb:_MWAFB.verandering, afb_cap:'afbeelding 5: kerklidmaatschap door de tijd' },
   ],
   vragen: [
     // ── Opgave 1 · Socialisatie ──
@@ -109,7 +109,7 @@ SLAGIO_EXAMENS.havo.mw = {
     // ── Opgave 4 · Macht ──
     { nr:8, opgave:4, punten:2, type:'open', domein:'Verhouding',
       vraag:'Noem met afbeelding 4 twee verschillende machtsbronnen en geef bij elk een voorbeeld van iemand die daar macht aan ontleent.',
-      antwoord:'Bijvoorbeeld: bezit/geld — een rijke ondernemer heeft macht doordat hij mensen kan betalen of investeringen kan doen. Kennis — een arts of expert heeft macht doordat anderen afhankelijk zijn van zijn kennis. (Ook geweld, aantal of positie/functie met een passend voorbeeld is goed.)',
+      antwoord:'Bijvoorbeeld: bezit/geld, een rijke ondernemer heeft macht doordat hij mensen kan betalen of investeringen kan doen. Kennis, een arts of expert heeft macht doordat anderen afhankelijk zijn van zijn kennis. (Ook geweld, aantal of positie/functie met een passend voorbeeld is goed.)',
       antwoord_rubric:'1 punt: twee verschillende machtsbronnen uit de figuur. 1 punt: bij elk een passend voorbeeld van iemand die er macht aan ontleent.' },
     { nr:9, opgave:4, punten:3, type:'open', domein:'Verhouding',
       vraag:'Leg het verschil uit tussen macht en gezag, en leg uit waarom een democratisch gekozen regering gezag heeft en niet alleen macht.',

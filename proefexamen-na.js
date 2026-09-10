@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-na.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo na).
+// proefexamen-na.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo na).
 // Eigen contexten, vragen en figuren. Géén reproductie van een CvTE-examen.
 // CE-niveau: aflezen uit grafieken, rekenen met formules (BINAS-stijl) en
 // natuurkundig redeneren. Elke opgave heeft een grafiek/schema. Meervoudige
@@ -37,22 +37,22 @@ SLAGIO_EXAMENS.havo.na = {
   opgaven: [
     { nr:1, titel:'Optrekkende tram',
       context:'Een tram vertrekt bij een halte. Afbeelding 1 is het (v,t)-diagram van de tram: hij trekt eerst eenparig op en rijdt daarna met constante snelheid verder.',
-      afb:_NAAFB.vt, afb_cap:'afbeelding 1 — het (v,t)-diagram van de tram' },
+      afb:_NAAFB.vt, afb_cap:'afbeelding 1: het (v,t)-diagram van de tram' },
     { nr:2, titel:'Een veer testen',
       context:'Een leerling hangt steeds zwaardere gewichtjes aan een veer en meet de uitrekking. Afbeelding 2 toont de kracht op de veer tegen de uitrekking.',
-      afb:_NAAFB.veer, afb_cap:'afbeelding 2 — kracht op de veer tegen de uitrekking' },
+      afb:_NAAFB.veer, afb_cap:'afbeelding 2: kracht op de veer tegen de uitrekking' },
     { nr:3, titel:'De skatebaan',
       context:'Een skater met massa 60 kg start in rust boven in een baan (punt A) en rolt naar het laagste punt (B). Het hoogteverschil is 1,8 m (afbeelding 3). De wrijving verwaarlozen we. Neem g = 9,81 N/kg.',
-      afb:_NAAFB.baan, afb_cap:'afbeelding 3 — de baan van A naar B' },
+      afb:_NAAFB.baan, afb_cap:'afbeelding 3: de baan van A naar B' },
     { nr:4, titel:'Twee lampjes',
       context:'In de schakeling van afbeelding 4 staan twee weerstanden R₁ = 6 Ω en R₂ = 4 Ω in serie op een bron van 12 V. De ampèremeter meet de stroomsterkte.',
-      afb:_NAAFB.schakeling, afb_cap:'afbeelding 4 — het schakelschema (R₁ en R₂ in serie)' },
+      afb:_NAAFB.schakeling, afb_cap:'afbeelding 4: het schakelschema (R₁ en R₂ in serie)' },
     { nr:5, titel:'Geluid op de oscilloscoop',
       context:'Twee zuivere tonen worden op een oscilloscoop bekeken. Afbeelding 5 toont beide trillingen; één hokje op de horizontale as komt overeen met 1 ms (1 milliseconde).',
-      afb:_NAAFB.oscilloscoop, afb_cap:'afbeelding 5 — twee tonen op de oscilloscoop' },
+      afb:_NAAFB.oscilloscoop, afb_cap:'afbeelding 5: twee tonen op de oscilloscoop' },
     { nr:6, titel:'Radioactief verval',
       context:'Een ziekenhuis gebruikt een radioactieve stof. Afbeelding 6 toont de activiteit (in becquerel) van een monster tegen de tijd.',
-      afb:_NAAFB.verval, afb_cap:'afbeelding 6 — activiteit van het monster tegen de tijd' },
+      afb:_NAAFB.verval, afb_cap:'afbeelding 6: activiteit van het monster tegen de tijd' },
   ],
   vragen: [
     // ── Opgave 1 · Beweging ──
@@ -62,7 +62,7 @@ SLAGIO_EXAMENS.havo.na = {
       antwoord_rubric:'1 punt: aflezen Δv = 15 m/s in Δt = 6 s (of gelijkwaardig). 1 punt: a = Δv/Δt = 2,5 m/s².' },
     { nr:2, opgave:1, punten:3, type:'open', domein:'Beweging',
       vraag:'Bepaal de totale afstand die de tram in de eerste 10 seconden aflegt. Gebruik het oppervlak onder de grafiek.',
-      antwoord:'De afstand is het oppervlak onder de (v,t)-lijn. Optrekken (0–6 s): driehoek ½ · 6 · 15 = 45 m. Constante snelheid (6–10 s): rechthoek 4 · 15 = 60 m. Totaal = 45 + 60 = 105 m.',
+      antwoord:'De afstand is het oppervlak onder de (v,t)-lijn. Optrekken (0-6 s): driehoek ½ · 6 · 15 = 45 m. Constante snelheid (6-10 s): rechthoek 4 · 15 = 60 m. Totaal = 45 + 60 = 105 m.',
       antwoord_rubric:'1 punt: afstand = oppervlak onder de grafiek. 1 punt: driehoek 45 m én rechthoek 60 m (of gelijkwaardig). 1 punt: totaal 105 m.' },
     { nr:3, opgave:1, punten:2, type:'open', domein:'Beweging',
       vraag:'Na 6 s rijdt de tram met constante snelheid. Leg met de eerste wet van Newton uit wat je hieruit kunt afleiden over de resulterende kracht op de tram in dat deel.',

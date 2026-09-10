@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-wb.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo wb).
+// proefexamen-wb.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo wb).
 // Eigen contexten, vragen en figuren. Géén reproductie van een CvTE-examen.
 // CE-niveau wiskunde B: kwadratische functies, differentiëren & raaklijnen,
 // extremen, goniometrie, sinusoïden en gelijkvormigheid. Rekenwerk met
@@ -85,22 +85,22 @@ SLAGIO_EXAMENS.havo.wb = {
   opgaven: [
     { nr:1, titel:'Een parabool',
       context:'Gegeven is de functie f(x) = x² − 4x + 3. Afbeelding 1 toont de grafiek van f.',
-      afb:_WBAFB.parabool, afb_cap:'afbeelding 1 — de grafiek van f(x) = x² − 4x + 3' },
+      afb:_WBAFB.parabool, afb_cap:'afbeelding 1: de grafiek van f(x) = x² − 4x + 3' },
     { nr:2, titel:'Raaklijn aan een kromme',
       context:'Gegeven is de functie g(x) = x³ − 6x² + 9x. Afbeelding 2 toont de grafiek van g met een raaklijn in het punt (2, 2).',
-      afb:_WBAFB.raaklijn, afb_cap:'afbeelding 2 — de grafiek van g met de raaklijn in (2, 2)' },
+      afb:_WBAFB.raaklijn, afb_cap:'afbeelding 2: de grafiek van g met de raaklijn in (2, 2)' },
     { nr:3, titel:'Een ladder tegen de muur',
       context:'Een ladder staat tegen een muur. Afbeelding 3 is een schematische rechthoekige driehoek: de ladder (AB) is 12 cm op schaal, de hoek bij B is 35° en de hoek bij C is recht (90°).',
-      afb:_WBAFB.driehoek, afb_cap:'afbeelding 3 — rechthoekige driehoek ABC' },
+      afb:_WBAFB.driehoek, afb_cap:'afbeelding 3: rechthoekige driehoek ABC' },
     { nr:4, titel:'Een draaimolen',
       context:'De hoogte van een stoeltje van een draaimolen wordt beschreven door een sinusoïde. Afbeelding 4 toont de grafiek van f(x) = 3 + 2·sin(…).',
-      afb:_WBAFB.sinus, afb_cap:'afbeelding 4 — een sinusoïde met evenwichtslijn en amplitude' },
+      afb:_WBAFB.sinus, afb_cap:'afbeelding 4: een sinusoïde met evenwichtslijn en amplitude' },
     { nr:5, titel:'Gelijkvormige driehoeken',
       context:'In driehoek TAB (afbeelding 5) loopt lijnstuk DE evenwijdig aan de basis AB. Gegeven: TD = 6, DA = 4 en DE = 6. De driehoeken TDE en TAB zijn gelijkvormig.',
-      afb:_WBAFB.gelijkvormig, afb_cap:'afbeelding 5 — driehoek TAB met DE // AB' },
+      afb:_WBAFB.gelijkvormig, afb_cap:'afbeelding 5: driehoek TAB met DE // AB' },
     { nr:6, titel:'Verval van een stof',
       context:'Een medicijn verdwijnt uit het bloed volgens N(t) = 500 · 0,5^(t/5), met N in mg en t in uren. Afbeelding 6 toont de grafiek.',
-      afb:_WBAFB.expafname, afb_cap:'afbeelding 6 — de hoeveelheid medicijn tegen de tijd' },
+      afb:_WBAFB.expafname, afb_cap:'afbeelding 6: de hoeveelheid medicijn tegen de tijd' },
   ],
   vragen: [
     // ── Opgave 1 · Parabool ──

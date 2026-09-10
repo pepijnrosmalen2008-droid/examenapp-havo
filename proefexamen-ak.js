@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-ak.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo ak).
+// proefexamen-ak.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo ak).
 // Eigen contexten, vragen en figuren. Géén reproductie van een CvTE-examen.
 // CE-niveau: kaart-/diagramanalyse en geografisch redeneren (oorzaak-gevolg,
 // spreiding, samenhang). Elke opgave heeft een diagram/grafiek/doorsnede.
@@ -21,7 +21,7 @@ var _AKAFB = {
     var lbl=mnd.map(function(m,i){return '<text x="'+(x0+i*24+12)+'" y="172">'+m+'</text>';}).join('');
     return '<svg viewBox="0 0 360 196" role="img" aria-label="klimaatdiagram met neerslag en temperatuur"><line x1="52" y1="14" x2="52" y2="158" stroke="#1b2230" stroke-width="2"/><path d="M52 14 L48 24 L56 24 Z" fill="#1b2230"/><line x1="52" y1="158" x2="344" y2="158" stroke="#1b2230" stroke-width="2"/><path d="M344 158 L334 154 L334 162 Z" fill="#1b2230"/>'+bars+'<polyline points="'+pts+'" fill="none" stroke="#e05353" stroke-width="2.6"/><g font-family="sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">'+lbl+'</g><text x="0" y="0" transform="translate(16,96) rotate(-90)" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#5b9bd5" text-anchor="middle">neerslag (mm)</text><text x="0" y="0" transform="translate(352,96) rotate(-90)" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#e05353" text-anchor="middle">temperatuur (°C)</text></svg>';
   })(),
-  // Bevolkingspiramide met brede basis — leeftijdslabels in een vrije middenkolom
+  // Bevolkingspiramide met brede basis, leeftijdslabels in een vrije middenkolom
   piramide:(function(){
     var M=[60,50,42,34,27,20,14,8,4];  // balkbreedte per leeftijdsgroep
     var lab=['0-9','10-19','20-29','30-39','40-49','50-59','60-69','70-79','80+'];
@@ -52,37 +52,37 @@ SLAGIO_EXAMENS.havo.ak = {
   opgaven: [
     { nr:1, titel:'Een klimaat aflezen',
       context:'Afbeelding 1 is het klimaatdiagram van een stad: de blauwe staven geven de gemiddelde neerslag per maand, de rode lijn de gemiddelde temperatuur.',
-      afb:_AKAFB.klimaat, afb_cap:'afbeelding 1 — klimaatdiagram (neerslag en temperatuur per maand)' },
+      afb:_AKAFB.klimaat, afb_cap:'afbeelding 1: klimaatdiagram (neerslag en temperatuur per maand)' },
     { nr:2, titel:'De opbouw van een bevolking',
       context:'Afbeelding 2 is de bevolkingspiramide van een land: links de mannen, rechts de vrouwen, per leeftijdsgroep.',
-      afb:_AKAFB.piramide, afb_cap:'afbeelding 2 — bevolkingspiramide van het land' },
+      afb:_AKAFB.piramide, afb_cap:'afbeelding 2: bevolkingspiramide van het land' },
     { nr:3, titel:'Waar platen botsen',
       context:'Afbeelding 3 is een blokdiagram van de grens tussen een oceanische en een continentale plaat, die naar elkaar toe bewegen.',
-      afb:_AKAFB.subductie, afb_cap:'afbeelding 3 — blokdiagram van de plaatgrens' },
+      afb:_AKAFB.subductie, afb_cap:'afbeelding 3: blokdiagram van de plaatgrens' },
     { nr:4, titel:'Iedereen naar de stad',
       context:'Afbeelding 4 toont het percentage van de bevolking dat in steden woont, voor hoge-inkomenslanden en lage-inkomenslanden, tussen 1960 en 2020.',
-      afb:_AKAFB.verstedelijking, afb_cap:'afbeelding 4 — aandeel stedelijke bevolking over de tijd' },
+      afb:_AKAFB.verstedelijking, afb_cap:'afbeelding 4: aandeel stedelijke bevolking over de tijd' },
     { nr:5, titel:'Ruimte voor de rivier',
       context:'Afbeelding 5 is een dwarsdoorsnede van een Nederlandse rivier met een zomerbed, uiterwaarden en twee soorten dijken.',
-      afb:_AKAFB.rivier, afb_cap:'afbeelding 5 — dwarsdoorsnede van de rivier' },
+      afb:_AKAFB.rivier, afb_cap:'afbeelding 5: dwarsdoorsnede van de rivier' },
     { nr:6, titel:'Bevolkingsgroei in fasen',
       context:'Afbeelding 6 is het demografisch transitiemodel: het geboortecijfer (rood) en het sterftecijfer (blauw) per 1000 inwoners over vier fasen.',
-      afb:_AKAFB.dtm, afb_cap:'afbeelding 6 — het demografisch transitiemodel' },
+      afb:_AKAFB.dtm, afb_cap:'afbeelding 6: het demografisch transitiemodel' },
   ],
   vragen: [
     // ── Opgave 1 · Klimaat ──
     { nr:1, opgave:1, punten:3, type:'open', domein:'Klimaat',
       vraag:'Beschrijf met afbeelding 1 twee kenmerken van dit klimaat: in welke maanden valt de minste neerslag, en hoe is dan de temperatuur? Bepaal daarna welk klimaattype hierbij past.',
-      antwoord:'De minste neerslag valt in de zomermaanden (juni, juli, augustus): daar zijn de staven het laagst (± 10–20 mm). Juist in die maanden is de temperatuur het hoogst (± 24–27 °C). Een warme, droge zomer en een natte, mildere winter is kenmerkend voor het mediterrane (Middellandse-Zeeklimaat, Csa) klimaat.',
-      antwoord_rubric:'1 punt: droogte in de zomermaanden (jun–aug) afgelezen. 1 punt: in die maanden juist de hoogste temperatuur. 1 punt: conclusie mediterraan / Middellandse-Zeeklimaat (Cs).' },
+      antwoord:'De minste neerslag valt in de zomermaanden (juni, juli, augustus): daar zijn de staven het laagst (± 10-20 mm). Juist in die maanden is de temperatuur het hoogst (± 24-27 °C). Een warme, droge zomer en een natte, mildere winter is kenmerkend voor het mediterrane (Middellandse-Zeeklimaat, Csa) klimaat.',
+      antwoord_rubric:'1 punt: droogte in de zomermaanden (jun-aug) afgelezen. 1 punt: in die maanden juist de hoogste temperatuur. 1 punt: conclusie mediterraan / Middellandse-Zeeklimaat (Cs).' },
     { nr:2, opgave:1, punten:2, type:'open', domein:'Klimaat',
       vraag:'Leg uit waarom de landbouw in dit klimaat in de zomer afhankelijk is van irrigatie (kunstmatige besproeiing).',
-      antwoord:'In de zomer is het warm, waardoor er veel water verdampt, terwijl er juist dan bijna geen neerslag valt (zie de lage staven in jun–aug). De planten krijgen dan van nature te weinig water. Om gewassen toch te laten groeien, moeten boeren in de zomer kunstmatig water aanvoeren (irrigatie).',
+      antwoord:'In de zomer is het warm, waardoor er veel water verdampt, terwijl er juist dan bijna geen neerslag valt (zie de lage staven in jun-aug). De planten krijgen dan van nature te weinig water. Om gewassen toch te laten groeien, moeten boeren in de zomer kunstmatig water aanvoeren (irrigatie).',
       antwoord_rubric:'1 punt: in de zomer weinig neerslag én veel verdamping door de hitte. 1 punt: daardoor te weinig water voor de gewassen → irrigatie nodig.' },
     // ── Opgave 2 · Bevolking ──
     { nr:3, opgave:2, punten:2, type:'open', domein:'Bevolking',
       vraag:'Beschrijf de vorm van de piramide in afbeelding 2 en leg uit wat de brede basis zegt over het geboortecijfer.',
-      antwoord:'De piramide heeft een brede basis en loopt snel smaller naar boven toe (een driehoeksvorm). De brede basis betekent dat er veel jonge kinderen (0–9 jaar) zijn ten opzichte van oudere groepen; dat wijst op een hoog geboortecijfer: er worden veel kinderen geboren.',
+      antwoord:'De piramide heeft een brede basis en loopt snel smaller naar boven toe (een driehoeksvorm). De brede basis betekent dat er veel jonge kinderen (0-9 jaar) zijn ten opzichte van oudere groepen; dat wijst op een hoog geboortecijfer: er worden veel kinderen geboren.',
       antwoord_rubric:'1 punt: brede basis, snel smaller naar boven (driehoek). 1 punt: veel jonge kinderen → hoog geboortecijfer.' },
     { nr:4, opgave:2, punten:2, type:'open', domein:'Bevolking',
       vraag:'Deze bevolkingsopbouw hoort bij een land met een jonge bevolking. Leg uit welk gevolg deze opbouw heeft voor de behoefte aan voorzieningen in de nabije toekomst.',

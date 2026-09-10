@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-gs.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo gs).
+// proefexamen-gs.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo gs).
 // Eigen contexten, vragen en (schematische) bronnen. Géén reproductie van een
 // CvTE-examen of van bestaande bronnen. CE-niveau geschiedenis: chronologie,
 // oorzaak/aanleiding, oorzaak-gevolgketens, bronnenkritiek en perspectief.
@@ -45,11 +45,11 @@ var _GSAFB = {
   bron:(function(){
     var rows=[['Soort bron','een affiche (propagandaposter)'],['Maker','de regering van een land'],['Jaartal','1951 (tijdens de Koude Oorlog)'],['Doel','het eigen systeem ophemelen en de'],['','tegenstander zwartmaken']];
     var body=rows.map(function(r,i){var y=66+i*22;return '<text x="40" y="'+y+'" font-weight="700">'+r[0]+(r[0]?':':'')+'</text><text x="150" y="'+y+'">'+r[1]+'</text>';}).join('');
-    return '<svg viewBox="0 0 360 178" role="img" aria-label="kenmerken van een historische bron"><rect x="24" y="16" width="312" height="150" rx="8" fill="#fff" stroke="#1b2230" stroke-width="1.3"/><path d="M24 24 Q24 16 32 16 L328 16 Q336 16 336 24 L336 42 L24 42 Z" fill="#1b2230"/><text x="180" y="34" font-family="sans-serif" font-size="10.5" font-weight="800" fill="#fff" text-anchor="middle">Bron 1 — kenmerken</text><g font-family="sans-serif" font-size="10" fill="#1b2230">'+body+'</g></svg>';
+    return '<svg viewBox="0 0 360 178" role="img" aria-label="kenmerken van een historische bron"><rect x="24" y="16" width="312" height="150" rx="8" fill="#fff" stroke="#1b2230" stroke-width="1.3"/><path d="M24 24 Q24 16 32 16 L328 16 Q336 16 336 24 L336 42 L24 42 Z" fill="#1b2230"/><text x="180" y="34" font-family="sans-serif" font-size="10.5" font-weight="800" fill="#fff" text-anchor="middle">Bron 1: kenmerken</text><g font-family="sans-serif" font-size="10" fill="#1b2230">'+body+'</g></svg>';
   })(),
   dekolonisatie:_gsTijdbalk(1941,1951,[1942,1945,1948,1951],[
     [1942,'Japanse bezetting','boven'],[1945,'onafhankelijkheid uitgeroepen','onder'],[1947,'politionele acties','boven'],[1949,'soevereiniteitsoverdracht','onder']]),
-  // Echte beeldbronnen (origineel/fictief, via generator) — géén bestaande bronnen
+  // Echte beeldbronnen (origineel/fictief, via generator), géén bestaande bronnen
   _img:function(src,alt){return '<img src="'+src+'" alt="'+alt+'" loading="lazy" style="display:block;width:100%;max-width:300px;margin:0 auto;border-radius:4px">';},
   wo1poster:'<img src="/img/gs-wo1-mobilisatie.webp" alt="mobilisatie-affiche uit de Eerste Wereldoorlog (fictief)" loading="lazy" style="display:block;width:100%;max-width:280px;margin:0 auto;border-radius:4px">',
   crisisfoto:'<img src="/img/gs-crisis-jaren30.webp" alt="foto van werklozen in de rij tijdens de crisis van de jaren dertig (fictief)" loading="lazy" style="display:block;width:100%;max-width:300px;margin:0 auto;border-radius:4px">',
@@ -69,44 +69,44 @@ SLAGIO_EXAMENS.havo.gs = {
   opgaven: [
     { nr:1, titel:'De twintigste eeuw op een rij',
       context:'Afbeelding 1 is een tijdbalk met enkele belangrijke gebeurtenissen uit de twintigste eeuw.',
-      afb:_GSAFB.chrono, afb_cap:'afbeelding 1 — tijdbalk van de twintigste eeuw' },
+      afb:_GSAFB.chrono, afb_cap:'afbeelding 1: tijdbalk van de twintigste eeuw' },
     { nr:2, titel:'Waardoor brak de Eerste Wereldoorlog uit?',
-      context:'Aan het begin van de Eerste Wereldoorlog (1914–1918) riepen landen jonge mannen op om zich als soldaat te melden. Afbeelding 2 is zo\'n mobilisatie-affiche.',
-      afb:_GSAFB.wo1poster, afb_cap:'afbeelding 2 — een mobilisatie-affiche uit 1914 (nagemaakt voorbeeld)' },
+      context:'Aan het begin van de Eerste Wereldoorlog (1914-1918) riepen landen jonge mannen op om zich als soldaat te melden. Afbeelding 2 is zo\'n mobilisatie-affiche.',
+      afb:_GSAFB.wo1poster, afb_cap:'afbeelding 2: een mobilisatie-affiche uit 1914 (nagemaakt voorbeeld)' },
     { nr:3, titel:'De crisis van de jaren dertig',
       context:'Na de beurskrach op Wall Street (1929) belandde de wereld in een zware economische crisis. Afbeelding 3 is een foto uit die tijd; afbeelding 3b toont het verloop van de werkloosheid.',
-      afb:_GSAFB.crisisfoto, afb_cap:'afbeelding 3 — werklozen wachten in de rij (nagemaakt voorbeeld)' },
+      afb:_GSAFB.crisisfoto, afb_cap:'afbeelding 3: werklozen wachten in de rij (nagemaakt voorbeeld)' },
     { nr:4, titel:'Een verdeeld Europa',
       context:'Na de Tweede Wereldoorlog kwam Europa tegenover elkaar te staan in twee blokken. Afbeelding 4 geeft deze tweedeling schematisch weer.',
-      afb:_GSAFB.europa, afb_cap:'afbeelding 4 — de tweedeling van Europa (Koude Oorlog)' },
+      afb:_GSAFB.europa, afb_cap:'afbeelding 4: de tweedeling van Europa (Koude Oorlog)' },
     { nr:5, titel:'Kun je deze bronnen vertrouwen?',
       context:'Tijdens de Koude Oorlog maakten beide kanten propaganda. Afbeelding 5 toont twee affiches uit ongeveer 1951: bron A komt van de regering van een westers, kapitalistisch-democratisch land; bron B van de regering van een oostelijk, communistisch land. Elke regering wilde de eigen bevolking overtuigen.',
-      afb:_GSAFB.koudeoorlogpaar, afb_cap:'afbeelding 5 — twee propaganda-affiches (nagemaakte voorbeelden)' },
+      afb:_GSAFB.koudeoorlogpaar, afb_cap:'afbeelding 5: twee propaganda-affiches (nagemaakte voorbeelden)' },
     { nr:6, titel:'Indonesië wordt onafhankelijk',
       context:'Afbeelding 6 is een poster van de onafhankelijkheidsbeweging in een kolonie. Afbeelding 6b is een tijdbalk van de weg naar de onafhankelijkheid van Indonesië.',
-      afb:_GSAFB.dekolposter, afb_cap:'afbeelding 6 — een onafhankelijkheidsposter (nagemaakt voorbeeld)' },
+      afb:_GSAFB.dekolposter, afb_cap:'afbeelding 6: een onafhankelijkheidsposter (nagemaakt voorbeeld)' },
   ],
   vragen: [
     // ── Opgave 1 · Chronologie ──
     { nr:1, opgave:1, punten:2, type:'open', domein:'Chronologie',
       vraag:'Zowel het begin van de Eerste Wereldoorlog als de beurskrach van 1929 valt in hetzelfde tijdvak. Noem dat tijdvak en de bijbehorende periode.',
-      antwoord:'Beide gebeurtenissen vallen in de "tijd van de wereldoorlogen" (1900–1950), ook wel de twintigste eeuw / het tijdvak van de wereldoorlogen genoemd.',
-      antwoord_rubric:'1 punt: tijd van de wereldoorlogen. 1 punt: de bijbehorende periode 1900–1950.' },
+      antwoord:'Beide gebeurtenissen vallen in de "tijd van de wereldoorlogen" (1900-1950), ook wel de twintigste eeuw / het tijdvak van de wereldoorlogen genoemd.',
+      antwoord_rubric:'1 punt: tijd van de wereldoorlogen. 1 punt: de bijbehorende periode 1900-1950.' },
     { nr:2, opgave:1, punten:2, type:'open', domein:'Chronologie',
       vraag:'Een historicus zet gebeurtenissen op een tijdbalk voordat hij oorzaak-gevolgrelaties onderzoekt. Leg uit waarom de juiste volgorde in de tijd daarvoor noodzakelijk is.',
       antwoord:'Een oorzaak komt altijd vóór het gevolg. Alleen als je de gebeurtenissen in de juiste volgorde zet, kun je nagaan welke gebeurtenis eerder plaatsvond en dus een oorzaak kán zijn van een latere gebeurtenis. Zonder de juiste chronologie zou je een gevolg per ongeluk als oorzaak kunnen aanwijzen.',
       antwoord_rubric:'1 punt: een oorzaak gaat altijd vooraf aan het gevolg. 1 punt: daarom moet de volgorde kloppen om causale relaties juist vast te stellen.' },
     // ── Opgave 2 · Oorzaken WO I ──
-    { nr:3, opgave:2, punten:3, type:'open', domein:'Oorzaken', afb:_GSAFB.oorzaken, afb_cap:'afbeelding 2b — oorzaken en aanleiding van de Eerste Wereldoorlog',
+    { nr:3, opgave:2, punten:3, type:'open', domein:'Oorzaken', afb:_GSAFB.oorzaken, afb_cap:'afbeelding 2b: oorzaken en aanleiding van de Eerste Wereldoorlog',
       vraag:'Leg met het schema (afbeelding 2b) het verschil uit tussen een oorzaak en de aanleiding van de Eerste Wereldoorlog. Geef van elk een voorbeeld uit het schema.',
       antwoord:'Een oorzaak is een dieperliggende, langer bestaande factor die de kans op oorlog vergrootte, bijvoorbeeld het nationalisme, het bondgenootschappenstelsel of de wapenwedloop (langetermijnoorzaken). De aanleiding is de directe gebeurtenis die de oorlog liet losbarsten: de moord in Sarajevo in 1914. De oorzaken maakten de situatie explosief; de aanleiding was de vonk in het kruitvat.',
       antwoord_rubric:'1 punt: oorzaak = dieperliggende/langdurige factor (voorbeeld: nationalisme/bondgenootschappen/wapenwedloop). 1 punt: aanleiding = directe gebeurtenis die het losmaakte (moord in Sarajevo 1914). 1 punt: correct onderscheid tussen beide (achterliggend vs. directe vonk).' },
     { nr:4, opgave:2, punten:3, type:'open', domein:'Oorzaken',
       vraag:'De affiche in afbeelding 2 roept jonge mannen op zich als soldaat te melden. Leg uit hoe zo\'n affiche inspeelt op nationalisme, en leg uit waarom de moord in Sarajevo alléén dóór de langetermijnoorzaken (nationalisme, bondgenootschappen, wapenwedloop) tot een wereldoorlog kon uitgroeien.',
-      antwoord:'De affiche speelt in op nationalisme door de soldaat heldhaftig en trots af te beelden bij de vlag, zodat meedoen voelt als je plicht en eer voor het vaderland — het beroept zich op nationale trots. Zulk nationalisme was ook een oorzaak van de oorlog: door het bondgenootschappenstelsel moesten landen elkaar steunen, waardoor een conflict tussen twee landen snel de bondgenoten meesleepte, en door nationalisme en de wapenwedloop (grote, gereedstaande legers) groeide een lokale moord uit tot een oorlog tussen veel landen. Zonder die oorzaken was het waarschijnlijk een plaatselijk conflict gebleven.',
+      antwoord:'De affiche speelt in op nationalisme door de soldaat heldhaftig en trots af te beelden bij de vlag, zodat meedoen voelt als je plicht en eer voor het vaderland, het beroept zich op nationale trots. Zulk nationalisme was ook een oorzaak van de oorlog: door het bondgenootschappenstelsel moesten landen elkaar steunen, waardoor een conflict tussen twee landen snel de bondgenoten meesleepte, en door nationalisme en de wapenwedloop (grote, gereedstaande legers) groeide een lokale moord uit tot een oorlog tussen veel landen. Zonder die oorzaken was het waarschijnlijk een plaatselijk conflict gebleven.',
       antwoord_rubric:'1 punt: de affiche speelt in op nationalisme/trots/plicht voor het vaderland (heldhaftige soldaat bij de vlag). 1 punt: door de bondgenootschappen werden meer landen meegetrokken. 1 punt: nationalisme/wapenwedloop maakte escalatie tot een grote oorlog mogelijk (anders lokaal gebleven).' },
     // ── Opgave 3 · Crisis ──
-    { nr:5, opgave:3, punten:2, type:'open', domein:'Crisis', afb:_GSAFB.werkloosheid, afb_cap:'afbeelding 3b — werkloosheid (%) in de jaren dertig',
+    { nr:5, opgave:3, punten:2, type:'open', domein:'Crisis', afb:_GSAFB.werkloosheid, afb_cap:'afbeelding 3b: werkloosheid (%) in de jaren dertig',
       vraag:'Beschrijf met afbeelding 3b (de grafiek) wat er met de werkloosheid gebeurde tussen 1929 en 1932, en noem de directe aanleiding van deze ontwikkeling.',
       antwoord:'Tussen 1929 en 1932 steeg de werkloosheid sterk, van ongeveer 9% naar rond de 30% (aflezen uit de grafiek): de werkloosheid meer dan verdrievoudigde. De directe aanleiding was de beurskrach op Wall Street in 1929, die een wereldwijde economische crisis veroorzaakte.',
       antwoord_rubric:'1 punt: sterke stijging van ± 9% naar ± 30% tussen 1929 en 1932 (afgelezen). 1 punt: aanleiding = beurskrach 1929 / economische crisis.' },
@@ -130,15 +130,15 @@ SLAGIO_EXAMENS.havo.gs = {
       antwoord_rubric:'1 punt: bron A = beeld van vrijheid/welvaart/vooruitgang (westers/kapitalistisch), met een detail van de poster. 1 punt: bron B = beeld van kracht/gelijkheid/collectieve vooruitgang (communistisch), met een detail van de poster.' },
     { nr:10, opgave:5, punten:3, type:'open', domein:'Bronnen',
       vraag:'Leg uit waarom je deze affiches niet moet vertrouwen als je wilt weten hoe het leven in dat land écht was. Gebruik het begrip standplaatsgebondenheid, en leg uit waarvoor de bronnen juist wél goed bruikbaar zijn.',
-      antwoord:'Het zijn propaganda-affiches, gemaakt door een regering met het doel de eigen bevolking te overtuigen. De makers zijn standplaatsgebonden: ze kijken vanuit hun eigen positie en belang en geven daardoor een gekleurd, overdreven en eenzijdig beeld — de werkelijkheid (armoede, onvrijheid) laten ze weg. Voor de vraag hoe het leven echt was, zijn ze dus onbetrouwbaar. Ze zijn juist wél goed bruikbaar om te onderzoeken hóé er propaganda werd gemaakt en welk beeld elke regering van zichzelf wilde uitdragen.',
-      antwoord_rubric:'1 punt: het is propaganda met een overtuigingsdoel → gekleurd/eenzijdig. 1 punt: standplaatsgebondenheid — de maker kijkt vanuit eigen positie/belang → onbetrouwbaar voor de werkelijke situatie. 1 punt: wél bruikbaar om de propaganda/beeldvorming zelf te bestuderen.' },
+      antwoord:'Het zijn propaganda-affiches, gemaakt door een regering met het doel de eigen bevolking te overtuigen. De makers zijn standplaatsgebonden: ze kijken vanuit hun eigen positie en belang en geven daardoor een gekleurd, overdreven en eenzijdig beeld, de werkelijkheid (armoede, onvrijheid) laten ze weg. Voor de vraag hoe het leven echt was, zijn ze dus onbetrouwbaar. Ze zijn juist wél goed bruikbaar om te onderzoeken hóé er propaganda werd gemaakt en welk beeld elke regering van zichzelf wilde uitdragen.',
+      antwoord_rubric:'1 punt: het is propaganda met een overtuigingsdoel → gekleurd/eenzijdig. 1 punt: standplaatsgebondenheid, de maker kijkt vanuit eigen positie/belang → onbetrouwbaar voor de werkelijke situatie. 1 punt: wél bruikbaar om de propaganda/beeldvorming zelf te bestuderen.' },
     // ── Opgave 6 · Dekolonisatie ──
-    { nr:11, opgave:6, punten:2, type:'open', domein:'Dekolonisatie', afb:_GSAFB.dekolonisatie, afb_cap:'afbeelding 6b — tijdbalk dekolonisatie van Indonesië',
+    { nr:11, opgave:6, punten:2, type:'open', domein:'Dekolonisatie', afb:_GSAFB.dekolonisatie, afb_cap:'afbeelding 6b: tijdbalk dekolonisatie van Indonesië',
       vraag:'Beschrijf met de tijdbalk (afbeelding 6b) kort de weg van de Japanse bezetting (1942) naar de soevereiniteitsoverdracht (1949).',
-      antwoord:'Tijdens de Tweede Wereldoorlog bezette Japan Nederlands-Indië (1942), waardoor het Nederlandse gezag wegviel. Na de Japanse capitulatie riepen Indonesische leiders in 1945 de onafhankelijkheid uit. Nederland wilde de kolonie terug en voerde militaire acties ("politionele acties", 1947–1948). Onder internationale druk droeg Nederland in 1949 de soevereiniteit over: Indonesië werd onafhankelijk.',
+      antwoord:'Tijdens de Tweede Wereldoorlog bezette Japan Nederlands-Indië (1942), waardoor het Nederlandse gezag wegviel. Na de Japanse capitulatie riepen Indonesische leiders in 1945 de onafhankelijkheid uit. Nederland wilde de kolonie terug en voerde militaire acties ("politionele acties", 1947-1948). Onder internationale druk droeg Nederland in 1949 de soevereiniteit over: Indonesië werd onafhankelijk.',
       antwoord_rubric:'1 punt: Japanse bezetting (1942) → onafhankelijkheid uitgeroepen in 1945. 1 punt: politionele acties → soevereiniteitsoverdracht in 1949 (Indonesië onafhankelijk).' },
     { nr:12, opgave:6, punten:3, type:'open', domein:'Dekolonisatie',
-      vraag:'De poster in afbeelding 6 laat zien hoe de onafhankelijkheidsbeweging zichzelf zag. Beschrijf dat zelfbeeld (wat zie je?). Leg daarna uit hoe het verschil in benaming — Nederland sprak van "politionele acties", de Indonesiërs van een onafhankelijkheidsoorlog — samenhangt met het perspectief (standplaats) van beide partijen.',
+      vraag:'De poster in afbeelding 6 laat zien hoe de onafhankelijkheidsbeweging zichzelf zag. Beschrijf dat zelfbeeld (wat zie je?). Leg daarna uit hoe het verschil in benaming, Nederland sprak van "politionele acties", de Indonesiërs van een onafhankelijkheidsoorlog, samenhangt met het perspectief (standplaats) van beide partijen.',
       antwoord:'De poster toont een verenigde, strijdbare bevolking die trots de eigen vlag omhoog houdt naar een opkomende zon, met verbroken ketenen: het zelfbeeld is dat van een volk dat zich bevrijdt en samen een nieuwe, vrije toekomst opbouwt. Het verschil in benaming past bij ieders perspectief: Nederland zag Indonesië nog als zijn kolonie en het optreden als het herstellen van orde en gezag, dus klinkt "politionele acties" als gewoon politiewerk in eigen gebied. De Indonesiërs zagen zichzelf al als een onafhankelijk land dat werd aangevallen, dus was het voor hen een oorlog om hun vrijheid. Elk kiest een benaming die past bij zijn eigen positie en belang (standplaatsgebondenheid).',
       antwoord_rubric:'1 punt: zelfbeeld van de poster = een verenigd/strijdbaar volk dat zich bevrijdt (vlag, zon, verbroken ketenen). 1 punt: Nederlands perspectief (kolonie, orde herstellen → "politiewerk"). 1 punt: Indonesisch perspectief (onafhankelijk land dat zich verdedigt → "oorlog"), gekoppeld aan standplaatsgebondenheid.' },
   ],

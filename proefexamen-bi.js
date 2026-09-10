@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-bi.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo bio).
+// proefexamen-bi.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo bio).
 // Eigen contexten, vragen en figuren. Géén reproductie van een CvTE-examen.
-// Vraagstelling op CE-niveau: toepassen, redeneren en gegevens aflezen —
+// Vraagstelling op CE-niveau: toepassen, redeneren en gegevens aflezen -
 // niet louter reproduceren. Elke opgave heeft een figuur (grafiek/diagram).
 //   opgaven[] = {nr,titel,context,afb,afb_cap}
 //   vragen[]  = {nr,opgave,punten,type,vraag,antwoord,antwoord_rubric,domein,
@@ -18,7 +18,7 @@ function _biAx(){
 function _biGridY(ys){ return ys.map(y=>'<line x1="52" y1="'+y+'" x2="340" y2="'+y+'" stroke="#eef1f5" stroke-width="1"/>').join(''); }
 
 var _BIAFB = {
-  // Hartfrequentie vs tijd — pijlpuntassen, gridlines, afleesbare bpm-schaal, fasen
+  // Hartfrequentie vs tijd, pijlpuntassen, gridlines, afleesbare bpm-schaal, fasen
   hart:(function(){
     var sy=function(v){return 158-(v-40)/160*128;}; // 40..200 bpm
     var yl=[60,100,140,180].map(v=>'<line x1="52" y1="'+sy(v).toFixed(1)+'" x2="340" y2="'+sy(v).toFixed(1)+'" stroke="#eef1f5" stroke-width="1"/><text x="47" y="'+(sy(v)+3).toFixed(1)+'" font-family="sans-serif" font-size="9" fill="#4a5568" text-anchor="end">'+v+'</text>').join('');
@@ -26,7 +26,7 @@ var _BIAFB = {
     var seps='<g stroke="#c9cfda" stroke-width="1" stroke-dasharray="3 4"><line x1="120" y1="24" x2="120" y2="158"/><line x1="232" y1="24" x2="232" y2="158"/></g>';
     return '<svg viewBox="0 0 360 196" role="img" aria-label="hartfrequentie tegen de tijd">'+yl+_biAx()+seps+line+'<g font-family="sans-serif" font-size="9.5" fill="#4a5568" text-anchor="middle"><text x="86" y="172">rust</text><text x="176" y="172">inspanning</text><text x="288" y="172">herstel</text></g><text x="0" y="0" transform="translate(16,96) rotate(-90)" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">hartslag (per min)</text><text x="300" y="190" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">tijd</text></svg>';
   })(),
-  // CO2-productie vs temperatuur (optimum 35°C) — pijlpuntassen, gridlines, x-ticks
+  // CO2-productie vs temperatuur (optimum 35°C), pijlpuntassen, gridlines, x-ticks
   gisttemp:(function(){
     var sx=function(t){return 60+t/50*272;};
     var peak=sx(35);
@@ -35,15 +35,15 @@ var _BIAFB = {
     var curve='<path d="M'+sx(0)+' 152 Q'+sx(18)+' 148 '+sx(28)+' 96 Q'+sx(34)+' 44 '+peak.toFixed(0)+' 44 Q'+sx(40)+' 44 '+sx(44)+' 116 L'+sx(50)+' 154" fill="none" stroke="#e8580c" stroke-width="3" stroke-linecap="round"/>';
     return '<svg viewBox="0 0 360 196" role="img" aria-label="CO2-productie tegen temperatuur">'+yl+_biAx()+curve+'<line x1="'+peak.toFixed(0)+'" y1="44" x2="'+peak.toFixed(0)+'" y2="158" stroke="#94a0b8" stroke-width="1.1" stroke-dasharray="4 4"/><text x="'+peak.toFixed(0)+'" y="172" font-family="sans-serif" font-size="9" font-weight="700" fill="#1b2230" text-anchor="middle">35</text>'+xt+'<text x="0" y="0" transform="translate(16,96) rotate(-90)" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">CO&#8322;-productie</text><text x="250" y="190" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">temperatuur (&#176;C)</text></svg>';
   })(),
-  // Energiepiramide — met verlopen per trofisch niveau + energie-pijl
+  // Energiepiramide, met verlopen per trofisch niveau + energie-pijl
   piramide:`<svg viewBox="0 0 360 200" role="img" aria-label="energiepiramide van de sloot"><defs><linearGradient id="biPy" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#d7efdd"/><stop offset="1" stop-color="#3aa06e"/></linearGradient></defs><polygon points="44,174 316,174 282,136 78,136" fill="#d3ecda" stroke="#1b2230" stroke-width="1.4"/><polygon points="78,136 282,136 248,98 112,98" fill="#a9d8b8" stroke="#1b2230" stroke-width="1.4"/><polygon points="112,98 248,98 214,60 146,60" fill="#72c295" stroke="#1b2230" stroke-width="1.4"/><polygon points="146,60 214,60 197,26 163,26" fill="#3aa06e" stroke="#1b2230" stroke-width="1.4"/><g font-family="sans-serif" font-size="11" fill="#1b2230" text-anchor="middle" font-weight="700"><text x="180" y="159">algen</text><text x="180" y="121">watervlooien</text><text x="180" y="83">visjes</text><text x="181" y="47" fill="#fff">snoek</text></g><g stroke="#1b2230" stroke-width="1.6" fill="none"><path d="M340 170 L340 34"/><path d="M336 44 L340 32 L344 44"/></g><text x="354" y="104" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#4a5568" transform="rotate(-90 354 104)" text-anchor="middle">energie neemt af</text></svg>`,
-  // Kruisingsschema (Punnett) Zz × zz — strakker, met kopcellen
+  // Kruisingsschema (Punnett) Zz × zz, strakker, met kopcellen
   punnett:`<svg viewBox="0 0 280 210" role="img" aria-label="leeg kruisingsschema om in te vullen"><text x="150" y="18" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="800" fill="#1b2230">kruisingsschema  Zz &#215; zz</text><text x="150" y="40" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#4a5568">gameten van zz</text><text x="0" y="0" transform="translate(28 140) rotate(-90)" font-family="sans-serif" font-size="10" fill="#4a5568" text-anchor="middle">gameten van Zz</text><g stroke="#1b2230" stroke-width="1.6" fill="none"><rect x="78" y="50" width="160" height="150"/></g><rect x="78" y="50" width="160" height="34" fill="#eef4ff"/><rect x="78" y="50" width="52" height="150" fill="#eef4ff"/><rect x="78" y="50" width="52" height="34" fill="#dfe8fb"/><g stroke="#1b2230" stroke-width="1.4" fill="none"><line x1="78" y1="84" x2="238" y2="84"/><line x1="78" y1="142" x2="238" y2="142"/><line x1="130" y1="50" x2="130" y2="200"/><line x1="184" y1="50" x2="184" y2="200"/></g><g font-family="Georgia,serif" font-size="13" font-weight="700" fill="#3a4a63" text-anchor="middle"><text x="157" y="72">z</text><text x="211" y="72">z</text><text x="104" y="118">Z</text><text x="104" y="176">z</text></g></svg>`,
-  // Antistofconcentratie na 1e/2e blootstelling — pijlpuntassen, gridlines, markers
+  // Antistofconcentratie na 1e/2e blootstelling, pijlpuntassen, gridlines, markers
   afweer:`<svg viewBox="0 0 360 196" role="img" aria-label="antistofconcentratie na eerste en tweede blootstelling">${_biGridY([126,94,62,30])}${_biAx()}<path d="M70 154 Q108 150 128 122 Q146 104 162 124 Q182 148 205 152" fill="none" stroke="#e8580c" stroke-width="2.8"/><path d="M205 152 Q214 52 242 36 Q266 24 286 54 Q306 88 332 116" fill="none" stroke="#2e9e5b" stroke-width="3"/><g stroke="#1b2230" stroke-width="1.3"><line x1="70" y1="158" x2="70" y2="168"/><line x1="205" y1="158" x2="205" y2="168"/></g><g font-family="sans-serif" font-size="9" fill="#4a5568" text-anchor="middle"><text x="70" y="180">1e blootstelling</text><text x="205" y="180">2e blootstelling</text></g><g font-family="sans-serif" font-size="9" font-weight="700"><text x="150" y="116" fill="#e8580c">1e reactie</text><text x="250" y="28" fill="#2e9e5b">2e reactie</text></g><text x="0" y="0" transform="translate(16,90) rotate(-90)" font-family="sans-serif" font-size="9" font-weight="800" fill="#1b2230" text-anchor="middle">antistofconcentratie</text><text x="308" y="150" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230">tijd</text></svg>`,
-  // Proefopstelling waterpest + lamp — nettere lamp, bekerglas, belletjes, maatlat
+  // Proefopstelling waterpest + lamp, nettere lamp, bekerglas, belletjes, maatlat
   opstelling:`<svg viewBox="0 0 360 176" role="img" aria-label="proefopstelling met lamp en waterpest"><defs><radialGradient id="biLamp" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#fff7cf"/><stop offset="1" stop-color="#f2c744"/></radialGradient></defs><g stroke="#f0b400" stroke-width="2.4" stroke-linecap="round"><line x1="30" y1="40" x2="22" y2="30"/><line x1="20" y1="60" x2="8" y2="60"/><line x1="30" y1="80" x2="22" y2="90"/></g><circle cx="52" cy="60" r="21" fill="url(#biLamp)" stroke="#1b2230" stroke-width="1.8"/><rect x="45" y="80" width="14" height="10" fill="#cbd2e0" stroke="#1b2230" stroke-width="1.4"/><g stroke="#1b2230" stroke-width="1.5" fill="none"><line x1="82" y1="128" x2="250" y2="128"/><path d="M89 123 L81 128 L89 133"/><path d="M243 123 L251 128 L243 133"/></g><text x="166" y="120" font-family="sans-serif" font-size="10" fill="#4a5568" text-anchor="middle" font-weight="700">afstand tot de lamp</text><path d="M262 34 L262 140 Q262 154 276 154 L318 154 Q332 154 332 140 L332 34" fill="#e7f4ff" stroke="#1b2230" stroke-width="2"/><line x1="262" y1="52" x2="332" y2="52" stroke="#9cc7ea" stroke-width="1.3"/><path d="M297 150 L297 74" stroke="#2e9e5b" stroke-width="3.4" stroke-linecap="round"/><g fill="#2e9e5b"><ellipse cx="289" cy="90" rx="8" ry="3.6" transform="rotate(-28 289 90)"/><ellipse cx="305" cy="104" rx="8" ry="3.6" transform="rotate(28 305 104)"/><ellipse cx="289" cy="118" rx="8" ry="3.6" transform="rotate(-28 289 118)"/></g><g fill="#eaf4ff" stroke="#6aa6e0" stroke-width="1.3"><circle cx="309" cy="82" r="3.4"/><circle cx="314" cy="66" r="2.6"/><circle cx="309" cy="52" r="2.1"/></g></svg>`,
-  // Fotosynthesesnelheid vs lichtsterkte (plateau) — pijlpuntassen, gridlines
+  // Fotosynthesesnelheid vs lichtsterkte (plateau), pijlpuntassen, gridlines
   fotosynthese:`<svg viewBox="0 0 360 196" role="img" aria-label="fotosynthesesnelheid tegen lichtsterkte">${_biGridY([126,94,62,30])}${_biAx()}<path d="M56 150 Q112 150 152 96 Q192 52 250 50 L332 50" fill="none" stroke="#2e9e5b" stroke-width="3" stroke-linecap="round"/><line x1="250" y1="50" x2="250" y2="158" stroke="#94a0b8" stroke-width="1.1" stroke-dasharray="4 4"/><text x="250" y="172" font-family="sans-serif" font-size="9" font-weight="700" fill="#1b2230" text-anchor="middle">plateau</text><text x="0" y="0" transform="translate(16,96) rotate(-90)" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">fotosynthesesnelheid</text><text x="250" y="190" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">lichtsterkte</text></svg>`,
 };
 
@@ -59,22 +59,22 @@ SLAGIO_EXAMENS.havo.bi = {
   opgaven: [
     { nr:1, titel:'Hardlopen',
       context:'Isa doet een looptest. In afbeelding 1 is haar hartfrequentie weergegeven vóór, tijdens en na de inspanning. Tijdens het hardlopen verbruiken haar beenspieren veel meer energie dan in rust.',
-      afb:_BIAFB.hart, afb_cap:'afbeelding 1 — hartfrequentie vóór, tijdens en na de inspanning' },
+      afb:_BIAFB.hart, afb_cap:'afbeelding 1: hartfrequentie vóór, tijdens en na de inspanning' },
     { nr:2, titel:'Deeg dat rijst',
       context:'Een bakker onderzoekt hoe snel deeg rijst bij verschillende temperaturen. De rijssnelheid hangt af van de hoeveelheid koolstofdioxide die de gistcellen per minuut vormen. In afbeelding 2 staat het resultaat. In het deeg is weinig zuurstof aanwezig.',
-      afb:_BIAFB.gisttemp, afb_cap:'afbeelding 2 — CO₂-productie van gist bij verschillende temperaturen' },
+      afb:_BIAFB.gisttemp, afb_cap:'afbeelding 2: CO₂-productie van gist bij verschillende temperaturen' },
     { nr:3, titel:'De sloot',
       context:'In een sloot leven algen, watervlooien, kleine visjes en snoeken. De boer bemest het naastgelegen weiland. Afbeelding 3 toont de energiepiramide van deze sloot.',
-      afb:_BIAFB.piramide, afb_cap:'afbeelding 3 — energiepiramide van de sloot' },
+      afb:_BIAFB.piramide, afb_cap:'afbeelding 3: energiepiramide van de sloot' },
     { nr:4, titel:'Cavia\'s',
       context:'Bij cavia\'s is een zwarte vacht (allel Z) dominant over een witte vacht (allel z). Een kweker kruist een zwarte cavia met genotype Zz met een witte cavia (zz). Gebruik het lege kruisingsschema in afbeelding 4.',
-      afb:_BIAFB.punnett, afb_cap:'afbeelding 4 — vul het kruisingsschema zelf in' },
+      afb:_BIAFB.punnett, afb_cap:'afbeelding 4: vul het kruisingsschema zelf in' },
     { nr:5, titel:'Afweer en vaccinatie',
       context:'Bij een griepcampagne krijgen mensen een vaccin met onschadelijk gemaakte delen van het griepvirus (antigenen). Afbeelding 5 toont de antistofconcentratie in het bloed na een eerste en een tweede blootstelling aan hetzelfde antigeen.',
-      afb:_BIAFB.afweer, afb_cap:'afbeelding 5 — antistofconcentratie na een eerste en tweede blootstelling' },
+      afb:_BIAFB.afweer, afb_cap:'afbeelding 5: antistofconcentratie na een eerste en tweede blootstelling' },
     { nr:6, titel:'Onderzoek naar fotosynthese',
       context:'Een leerling onderzoekt de invloed van lichtsterkte op de fotosynthesesnelheid van waterpest. Ze telt het aantal zuurstofbelletjes per minuut bij verschillende afstanden tussen de lamp en de plant (afbeelding 6).',
-      afb:_BIAFB.opstelling, afb_cap:'afbeelding 6 — de proefopstelling' },
+      afb:_BIAFB.opstelling, afb_cap:'afbeelding 6: de proefopstelling' },
   ],
   vragen: [
     // ── Opgave 1 · Hardlopen ──
@@ -168,7 +168,7 @@ SLAGIO_EXAMENS.havo.bi = {
       antwoord:'Door te herhalen en te middelen wordt de invloed van toevallige meetfouten en toevallige variatie tussen metingen kleiner. Het gemiddelde ligt daardoor dichter bij de werkelijke waarde en is consistenter, zodat de conclusie betrouwbaarder wordt.',
       antwoord_rubric:'1 punt: herhalen/middelen verkleint de invloed van toevallige (meet)fouten. 1 punt: gemiddelde is betrouwbaarder/consistenter → sterkere conclusie.' },
     { nr:22, opgave:6, punten:3, type:'open', domein:'A',
-      afb:_BIAFB.fotosynthese, afb_cap:'afbeelding 7 — fotosynthesesnelheid bij toenemende lichtsterkte',
+      afb:_BIAFB.fotosynthese, afb_cap:'afbeelding 7: fotosynthesesnelheid bij toenemende lichtsterkte',
       vraag:'De leerling zet de resultaten uit in afbeelding 7. Vanaf een bepaalde lichtsterkte stijgt de fotosynthesesnelheid niet verder. Leg uit wat dit betekent, noem een factor die dan beperkend is, en beschrijf een proef waarmee de leerling kan aantonen dát die factor beperkend is.',
       antwoord:'Dat de lijn afvlakt betekent dat meer licht de fotosynthese niet verder versnelt: een andere factor is dan de beperkende (limiterende) factor, bijvoorbeeld de CO₂-concentratie of de temperatuur. Om aan te tonen dat bijvoorbeeld CO₂ beperkend is, herhaalt de leerling het onderzoek bij een hogere CO₂-concentratie (rest gelijk); als de fotosynthesesnelheid in het afgevlakte deel dan wél hoger wordt, was CO₂ inderdaad de beperkende factor.',
       antwoord_rubric:'1 punt: afvlakken = licht niet langer beperkend, een andere factor wel. 1 punt: noemt een plausibele beperkende factor (CO₂ of temperatuur). 1 punt: opzet van een vervolgproef (die factor verhogen, rest constant; hogere snelheid = bevestiging).' },

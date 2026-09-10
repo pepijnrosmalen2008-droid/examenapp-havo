@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-wa.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo wa).
+// proefexamen-wa.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo wa).
 // Eigen contexten, vragen en figuren. Géén reproductie van een CvTE-examen.
 // CE-niveau wiskunde A: exponentiële groei, statistiek (boxplot, histogram,
 // kruistabel), kansrekening en gemiddelde verandering. Rekenwerk met
@@ -30,7 +30,7 @@ var _WAAFB = {
     return '<svg viewBox="0 0 360 196" role="img" aria-label="exponentiële groei van het aantal volgers">'+yl+_waAxes()+'<path d="'+path+'" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'+dots+xl+'<text x="0" y="0" transform="translate(16,96) rotate(-90)" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">aantal volgers</text><text x="250" y="188" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">tijd (maanden)</text></svg>';
   })(),
 
-  // Twee boxplots (klas A en klas B) op een gemeenschappelijke schaal 1–10
+  // Twee boxplots (klas A en klas B) op een gemeenschappelijke schaal 1-10
   boxplot:(function(){
     // schaal: cijfer 1..10 → x 60..330
     var sx=function(c){return 60+(c-1)/9*270;};
@@ -89,22 +89,22 @@ SLAGIO_EXAMENS.havo.wa = {
   opgaven: [
     { nr:1, titel:'Een groeiend account',
       context:'Een beginnende maker ziet het aantal volgers exponentieel groeien. Op t = 0 maanden zijn er 200 volgers; elke maand komt er hetzelfde percentage bij. Afbeelding 1 toont de groei; op t = 1 maand zijn er 250 volgers.',
-      afb:_WAAFB.exp, afb_cap:'afbeelding 1 — aantal volgers tegen de tijd' },
+      afb:_WAAFB.exp, afb_cap:'afbeelding 1: aantal volgers tegen de tijd' },
     { nr:2, titel:'Twee klassen vergelijken',
       context:'Twee klassen maken dezelfde toets. Afbeelding 2 toont de boxplots van de cijfers van klas A en klas B op dezelfde schaal.',
-      afb:_WAAFB.boxplot, afb_cap:'afbeelding 2 — boxplots van de cijfers van klas A en klas B' },
+      afb:_WAAFB.boxplot, afb_cap:'afbeelding 2: boxplots van de cijfers van klas A en klas B' },
     { nr:3, titel:'Reistijd naar school',
-      context:'Van 40 leerlingen is de reistijd naar school bijgehouden. Afbeelding 3 is het histogram van de reistijden in klassen van 10 minuten (0–10, 10–20, enzovoort).',
-      afb:_WAAFB.histogram, afb_cap:'afbeelding 3 — histogram van de reistijden' },
+      context:'Van 40 leerlingen is de reistijd naar school bijgehouden. Afbeelding 3 is het histogram van de reistijden in klassen van 10 minuten (0-10, 10-20, enzovoort).',
+      afb:_WAAFB.histogram, afb_cap:'afbeelding 3: histogram van de reistijden' },
     { nr:4, titel:'File of niet',
       context:'Elke ochtend is de kans op file 0,3. Bij file komt Daan met kans 0,6 te laat; zonder file met kans 0,1. Afbeelding 4 is de bijbehorende kansboom.',
-      afb:_WAAFB.kansboom, afb_cap:'afbeelding 4 — kansboom van file en te laat komen' },
+      afb:_WAAFB.kansboom, afb_cap:'afbeelding 4: kansboom van file en te laat komen' },
     { nr:5, titel:'Bezoekers van een webshop',
       context:'Afbeelding 5 toont het aantal bezoekers van een webshop per maand. De rode stippellijn (koorde) verbindt de punten bij maand 2 en maand 6.',
-      afb:_WAAFB.toename, afb_cap:'afbeelding 5 — aantal bezoekers per maand met koorde van maand 2 tot 6' },
+      afb:_WAAFB.toename, afb_cap:'afbeelding 5: aantal bezoekers per maand met koorde van maand 2 tot 6' },
     { nr:6, titel:'Bijbanen',
       context:'Onder 200 leerlingen is onderzocht of ze een bijbaan hebben, uitgesplitst naar niveau. Afbeelding 6 is de kruistabel met de aantallen.',
-      afb:_WAAFB.kruistabel, afb_cap:'afbeelding 6 — kruistabel niveau × bijbaan' },
+      afb:_WAAFB.kruistabel, afb_cap:'afbeelding 6: kruistabel niveau × bijbaan' },
   ],
   vragen: [
     // ── Opgave 1 · Exponentieel ──
@@ -127,13 +127,13 @@ SLAGIO_EXAMENS.havo.wa = {
       antwoord_rubric:'1 punt: mediaan A = 6. 1 punt: kwartielafstand = 7 − 5 = 2.' },
     { nr:5, opgave:2, punten:3, type:'open', domein:'Statistiek',
       vraag:'Beide klassen hebben dezelfde mediaan. Leg met de boxplots uit welke klas een grotere spreiding heeft, en beoordeel de uitspraak: "In klas B haalde meer dan een kwart van de leerlingen een 8 of hoger."',
-      antwoord:'Beide medianen zijn 6, maar klas B heeft een grotere spreiding: de box van B (Q1 = 4 tot Q3 = 8, kwartielafstand 4) is breder dan die van A (Q1 = 5 tot Q3 = 7, kwartielafstand 2), en ook het bereik van B (2–10) is groter dan van A (3–9). De uitspraak over B klopt niet precies: Q3 van B is 8, en per definitie ligt 25% (een kwart) van de leerlingen bóven Q3. Bij een 8 of hoger zit je op/boven Q3, dus het is ongeveer een kwart, niet méér dan een kwart.',
+      antwoord:'Beide medianen zijn 6, maar klas B heeft een grotere spreiding: de box van B (Q1 = 4 tot Q3 = 8, kwartielafstand 4) is breder dan die van A (Q1 = 5 tot Q3 = 7, kwartielafstand 2), en ook het bereik van B (2-10) is groter dan van A (3-9). De uitspraak over B klopt niet precies: Q3 van B is 8, en per definitie ligt 25% (een kwart) van de leerlingen bóven Q3. Bij een 8 of hoger zit je op/boven Q3, dus het is ongeveer een kwart, niet méér dan een kwart.',
       antwoord_rubric:'1 punt: B heeft grotere spreiding, onderbouwd met kwartielafstand of bereik. 1 punt: Q3(B) = 8 → 25% ligt boven Q3. 1 punt: conclusie dat "meer dan een kwart ≥ 8" niet klopt (het is ongeveer een kwart).' },
     // ── Opgave 3 · Histogram ──
     { nr:6, opgave:3, punten:1, type:'open', domein:'Statistiek',
       vraag:'In welke klasse ligt de modus van de reistijden? Licht kort toe.',
-      antwoord:'De modus ligt in de klasse 20–30 minuten: die staaf is het hoogst (14 leerlingen), dus die reistijdklasse komt het vaakst voor.',
-      antwoord_rubric:'1 punt: modale klasse 20–30 min (hoogste staaf, 14 leerlingen).' },
+      antwoord:'De modus ligt in de klasse 20-30 minuten: die staaf is het hoogst (14 leerlingen), dus die reistijdklasse komt het vaakst voor.',
+      antwoord_rubric:'1 punt: modale klasse 20-30 min (hoogste staaf, 14 leerlingen).' },
     { nr:7, opgave:3, punten:3, type:'open', domein:'Statistiek',
       vraag:'Schat het gemiddelde van de reistijden. Gebruik de klassenmiddens en laat je berekening zien.',
       antwoord:'Neem als klassenmidden 5, 15, 25, 35, 45 min met frequenties 4, 10, 14, 8, 4. Som = 5·4 + 15·10 + 25·14 + 35·8 + 45·4 = 20 + 150 + 350 + 280 + 180 = 980. Gemiddelde = 980 ÷ 40 = 24,5 minuten.',
@@ -154,7 +154,7 @@ SLAGIO_EXAMENS.havo.wa = {
       antwoord_rubric:'1 punt: (1000 − 300)/(6 − 2). 1 punt: = 175 bezoekers per maand. 1 punt: koppeling aan de helling/steilheid van de koorde.' },
     { nr:11, opgave:5, punten:2, type:'open', domein:'Verandering',
       vraag:'Leg met de vorm van de grafiek uit of de toename van het aantal bezoekers per maand in maand 6 groter of kleiner is dan de gemiddelde toename die je net berekende.',
-      antwoord:'De grafiek loopt bij maand 6 steiler dan de koorde: de kromme wordt naar rechts toe steeds steiler. De momentane toename in maand 6 (de helling van de raaklijn daar) is dus groter dan de gemiddelde toename van 175 per maand over het interval 2–6.',
+      antwoord:'De grafiek loopt bij maand 6 steiler dan de koorde: de kromme wordt naar rechts toe steeds steiler. De momentane toename in maand 6 (de helling van de raaklijn daar) is dus groter dan de gemiddelde toename van 175 per maand over het interval 2-6.',
       antwoord_rubric:'1 punt: bij maand 6 loopt de grafiek steiler dan de koorde. 1 punt: dus de toename in maand 6 is groter dan de gemiddelde 175 per maand.' },
     // ── Opgave 6 · Kruistabel ──
     { nr:12, opgave:6, punten:2, type:'open', domein:'Statistiek',

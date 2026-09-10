@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// proefexamen-nl.js — ORIGINEEL Slagio-proefexamen in examenstijl (havo nl).
+// proefexamen-nl.js, ORIGINEEL Slagio-proefexamen in examenstijl (havo nl).
 // Eigen tekstfragmenten, vragen en figuren. Géén reproductie van een CvTE-
 // examen. CE-niveau leesvaardigheid & argumentatie: hoofdgedachte,
 // tekstverband, argumentatiestructuur, drogredenen, stijl en samenvatten.
@@ -16,9 +16,9 @@ var _NLAFB = {
   // Infographic: staafdiagram leestijd jongeren daalt
   leesgrafiek:`<svg viewBox="0 0 360 196" role="img" aria-label="staafdiagram gemiddelde leestijd per week"><g stroke="#eef1f5" stroke-width="1"><line x1="52" y1="122" x2="340" y2="122"/><line x1="52" y1="86" x2="340" y2="86"/><line x1="52" y1="50" x2="340" y2="50"/></g><line x1="52" y1="14" x2="52" y2="158" stroke="#1b2230" stroke-width="2"/><path d="M52 14 L48 24 L56 24 Z" fill="#1b2230"/><line x1="52" y1="158" x2="344" y2="158" stroke="#1b2230" stroke-width="2"/><path d="M344 158 L334 154 L334 162 Z" fill="#1b2230"/><g fill="#2563eb"><rect x="78" y="54" width="42" height="104"/><rect x="150" y="86" width="42" height="72"/><rect x="222" y="112" width="42" height="46"/><rect x="294" y="128" width="42" height="30"/></g><g font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="700"><text x="99" y="72">115</text><text x="171" y="104">82</text><text x="243" y="130">55</text><text x="315" y="146">38</text></g><g font-family="sans-serif" font-size="10" fill="#4a5568" text-anchor="middle"><text x="99" y="172">2010</text><text x="171" y="172">2015</text><text x="243" y="172">2020</text><text x="315" y="172">2024</text></g><text x="0" y="0" transform="translate(18,116) rotate(-90)" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#1b2230" text-anchor="middle">leestijd (min/week)</text></svg>`,
   // Tekstopbouw: alinea-blokken met functies (probleem → oorzaken → oplossing)
-  opbouw:`<svg viewBox="0 0 360 196" role="img" aria-label="schema van de tekstopbouw per alineablok"><g font-family="sans-serif" font-size="10.5" fill="#1b2230">${['Inleiding — aanleiding','Probleem','Oorzaken','Mogelijke oplossing','Slot — mening schrijver'].map((t,i)=>{var y=18+i*35;var col=['#eef2f7','#fde7e7','#fff2dd','#e5f6ec','#e8f0ff'][i];var bc=['#9aa5b5','#e05353','#e8a400','#2e9e5b','#2563eb'][i];return '<rect x="70" y="'+y+'" width="220" height="26" rx="6" fill="'+col+'" stroke="'+bc+'" stroke-width="1.4"/><text x="180" y="'+(y+17)+'" text-anchor="middle">'+t+'</text>'+(i<4?'<line x1="180" y1="'+(y+26)+'" x2="180" y2="'+(y+35)+'" stroke="#94a0b8" stroke-width="1.6"/>':'');}).join('')}</g><text x="46" y="30" font-family="sans-serif" font-size="10" fill="#4a5568" text-anchor="end">1</text><text x="46" y="170" font-family="sans-serif" font-size="10" fill="#4a5568" text-anchor="end">7</text><text x="30" y="100" font-family="sans-serif" font-size="9.5" fill="#8a94a8" transform="rotate(-90 30 100)" text-anchor="middle">alinea</text></svg>`,
+  opbouw:`<svg viewBox="0 0 360 196" role="img" aria-label="schema van de tekstopbouw per alineablok"><g font-family="sans-serif" font-size="10.5" fill="#1b2230">${['Inleiding, aanleiding','Probleem','Oorzaken','Mogelijke oplossing','Slot, mening schrijver'].map((t,i)=>{var y=18+i*35;var col=['#eef2f7','#fde7e7','#fff2dd','#e5f6ec','#e8f0ff'][i];var bc=['#9aa5b5','#e05353','#e8a400','#2e9e5b','#2563eb'][i];return '<rect x="70" y="'+y+'" width="220" height="26" rx="6" fill="'+col+'" stroke="'+bc+'" stroke-width="1.4"/><text x="180" y="'+(y+17)+'" text-anchor="middle">'+t+'</text>'+(i<4?'<line x1="180" y1="'+(y+26)+'" x2="180" y2="'+(y+35)+'" stroke="#94a0b8" stroke-width="1.6"/>':'');}).join('')}</g><text x="46" y="30" font-family="sans-serif" font-size="10" fill="#4a5568" text-anchor="end">1</text><text x="46" y="170" font-family="sans-serif" font-size="10" fill="#4a5568" text-anchor="end">7</text><text x="30" y="100" font-family="sans-serif" font-size="9.5" fill="#8a94a8" transform="rotate(-90 30 100)" text-anchor="middle">alinea</text></svg>`,
   // Drogreden: cirkel-schema autoriteit / verkeerde oorzaak
-  drogreden:`<svg viewBox="0 0 360 176" role="img" aria-label="schema van een onjuiste redenering"><rect x="20" y="60" width="118" height="48" rx="8" fill="#fff" stroke="#1b2230" stroke-width="1.4"/><text x="79" y="80" font-family="sans-serif" font-size="10" fill="#1b2230" text-anchor="middle">Bewering:<tspan x="79" dy="13">"een bekende zegt X"</tspan></text><g stroke="#e05353" stroke-width="1.8" fill="none"><line x1="138" y1="84" x2="212" y2="84"/><path d="M204 79 L214 84 L204 89"/></g><text x="176" y="76" font-family="sans-serif" font-size="15" font-weight="700" fill="#e05353" text-anchor="middle">?</text><rect x="216" y="60" width="124" height="48" rx="8" fill="#fff7ed" stroke="#e8580c" stroke-width="1.4"/><text x="278" y="80" font-family="sans-serif" font-size="10" fill="#1b2230" text-anchor="middle">Conclusie:<tspan x="278" dy="13">"dus X is waar"</tspan></text><text x="176" y="140" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#e05353" text-anchor="middle">de stap klopt niet — welke drogreden?</text></svg>`,
+  drogreden:`<svg viewBox="0 0 360 176" role="img" aria-label="schema van een onjuiste redenering"><rect x="20" y="60" width="118" height="48" rx="8" fill="#fff" stroke="#1b2230" stroke-width="1.4"/><text x="79" y="80" font-family="sans-serif" font-size="10" fill="#1b2230" text-anchor="middle">Bewering:<tspan x="79" dy="13">"een bekende zegt X"</tspan></text><g stroke="#e05353" stroke-width="1.8" fill="none"><line x1="138" y1="84" x2="212" y2="84"/><path d="M204 79 L214 84 L204 89"/></g><text x="176" y="76" font-family="sans-serif" font-size="15" font-weight="700" fill="#e05353" text-anchor="middle">?</text><rect x="216" y="60" width="124" height="48" rx="8" fill="#fff7ed" stroke="#e8580c" stroke-width="1.4"/><text x="278" y="80" font-family="sans-serif" font-size="10" fill="#1b2230" text-anchor="middle">Conclusie:<tspan x="278" dy="13">"dus X is waar"</tspan></text><text x="176" y="140" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#e05353" text-anchor="middle">de stap klopt niet, welke drogreden?</text></svg>`,
 };
 
 SLAGIO_EXAMENS.havo.nl = {
@@ -31,18 +31,18 @@ SLAGIO_EXAMENS.havo.nl = {
   bron: 'Slagio origineel · examenstijl',
   bijlagen: [],
   opgaven: [
-    { nr:1, titel:'Tekst 1 — "Zet die telefoon eens weg"',
+    { nr:1, titel:'Tekst 1, "Zet die telefoon eens weg"',
       context:'Lees de volgende alinea uit een betoog.\n\n"Scholen zouden smartphones tijdens lessen helemaal moeten verbieden. In de eerste plaats leiden telefoons leerlingen voortdurend af: een trillend berichtje onderbreekt de concentratie, ook al kijk je er niet naar. Daarnaast gaat een verbod pesten tegen. Uit onderzoek van een lerarenvakbond blijkt namelijk dat online pesten vaak juist tijdens schooltijd begint. Wie de telefoon uit de klas weert, haalt dus een belangrijke bron van afleiding én van conflict weg."\n\nAfbeelding 1 geeft de argumentatiestructuur van deze alinea schematisch weer.',
-      afb:_NLAFB.argstructuur, afb_cap:'afbeelding 1 — de argumentatiestructuur van de alinea' },
-    { nr:2, titel:'Tekst 2 — "Lezen loopt terug"',
+      afb:_NLAFB.argstructuur, afb_cap:'afbeelding 1: de argumentatiestructuur van de alinea' },
+    { nr:2, titel:'Tekst 2, "Lezen loopt terug"',
       context:'Bij een artikel over leesgedrag staat afbeelding 2. De journalist schrijft: "De cijfers liegen er niet om: jongeren lezen in hun vrije tijd steeds minder, en de daling lijkt eerder te versnellen dan af te vlakken."',
-      afb:_NLAFB.leesgrafiek, afb_cap:'afbeelding 2 — gemiddelde leestijd van jongeren per week' },
-    { nr:3, titel:'Tekst 3 — opbouw van een betoog',
+      afb:_NLAFB.leesgrafiek, afb_cap:'afbeelding 2: gemiddelde leestijd van jongeren per week' },
+    { nr:3, titel:'Tekst 3, opbouw van een betoog',
       context:'Afbeelding 3 toont schematisch de opbouw van een betoog over lerarentekort, verdeeld over zeven alinea\'s met de functie van elk tekstblok.',
-      afb:_NLAFB.opbouw, afb_cap:'afbeelding 3 — de opbouw van het betoog per alineablok' },
-    { nr:4, titel:'Tekst 4 — een wankele redenering',
+      afb:_NLAFB.opbouw, afb_cap:'afbeelding 3: de opbouw van het betoog per alineablok' },
+    { nr:4, titel:'Tekst 4, een wankele redenering',
       context:'In een online discussie schrijft iemand: "Een beroemde topsporter gebruikt deze vitaminepillen en zweert erbij. Die pillen werken dus echt." Afbeelding 4 zet deze redenering schematisch neer.',
-      afb:_NLAFB.drogreden, afb_cap:'afbeelding 4 — de stap van bewering naar conclusie' },
+      afb:_NLAFB.drogreden, afb_cap:'afbeelding 4: de stap van bewering naar conclusie' },
   ],
   vragen: [
     // ── Opgave 1 · Argumentatie ──
@@ -77,12 +77,12 @@ SLAGIO_EXAMENS.havo.nl = {
       antwoord:'Tussen "Probleem" en "Oorzaken" bestaat een oorzaak-gevolg-verband (een verklarend/oorzakelijk verband): het tweede blok legt uit waardoor het probleem ontstaat. Passende signaalwoorden zijn bijvoorbeeld "doordat", "omdat", "hierdoor" of "de oorzaak hiervan is".',
       antwoord_rubric:'1 punt: oorzaak-gevolg- / verklarend verband. 1 punt: een passend signaalwoord (doordat/omdat/hierdoor/de oorzaak is).' },
     { nr:8, opgave:3, punten:2, type:'open', domein:'Leesvaardigheid',
-      vraag:'Het laatste blok heet "Slot — mening schrijver". Leg uit waarom je aan deze opbouw kunt zien dat de hele tekst een betoog is en geen zakelijke uiteenzetting.',
+      vraag:'Het laatste blok heet "Slot, mening schrijver". Leg uit waarom je aan deze opbouw kunt zien dat de hele tekst een betoog is en geen zakelijke uiteenzetting.',
       antwoord:'In het slot geeft de schrijver zijn eigen mening en probeert hij de lezer te overtuigen; de tekst werkt via een probleem en oplossing naar een standpunt toe. Een uiteenzetting zou alleen neutraal informatie geven zonder de lezer van een mening te willen overtuigen. Omdat hier duidelijk een mening wordt verdedigd, is het een betoog.',
       antwoord_rubric:'1 punt: in het slot staat een mening / de schrijver wil overtuigen. 1 punt: verschil met een uiteenzetting = die informeert neutraal zonder te overtuigen.' },
     { nr:9, opgave:3, punten:2, type:'open', domein:'Leesvaardigheid',
       vraag:'Bepaal het schrijfdoel van dit betoog en voor welk publiek het vooral bedoeld is. Onderbouw beide met de opbouw of de inhoud van de tekst.',
-      antwoord:'Het schrijfdoel is overtuigen/activeren: de schrijver wil de lezer overhalen zijn standpunt over het lerarentekort te delen en er iets aan te (laten) doen; dat blijkt uit de opbouw naar een mening en een oplossing toe. Het publiek is vooral mensen die bij het onderwijs betrokken zijn of er invloed op hebben — bijvoorbeeld politici, schoolbestuurders, ouders of leraren — omdat de tekst een maatschappelijk probleem aankaart en om maatregelen vraagt.',
+      antwoord:'Het schrijfdoel is overtuigen/activeren: de schrijver wil de lezer overhalen zijn standpunt over het lerarentekort te delen en er iets aan te (laten) doen; dat blijkt uit de opbouw naar een mening en een oplossing toe. Het publiek is vooral mensen die bij het onderwijs betrokken zijn of er invloed op hebben, bijvoorbeeld politici, schoolbestuurders, ouders of leraren, omdat de tekst een maatschappelijk probleem aankaart en om maatregelen vraagt.',
       antwoord_rubric:'1 punt: schrijfdoel = overtuigen/activeren, onderbouwd met de opbouw naar mening/oplossing. 1 punt: een passend publiek (bv. politici/onderwijsbetrokkenen/ouders) met onderbouwing.' },
     // ── Opgave 4 · Drogreden ──
     { nr:10, opgave:4, punten:2, type:'open', domein:'Argumentatie',
@@ -91,7 +91,7 @@ SLAGIO_EXAMENS.havo.nl = {
       antwoord_rubric:'1 punt: (onjuist) beroep op autoriteit / autoriteitsargument. 1 punt: uitleg dat bekendheid/populariteit geen bewijs is dat de pillen werken.' },
     { nr:11, opgave:4, punten:1, type:'open', domein:'Argumentatie',
       vraag:'Bedenk één zin waarmee de schrijver de bewering wél overtuigend zou kunnen onderbouwen in plaats van met de beroemde sporter.',
-      antwoord:'Bijvoorbeeld: "Uit een gecontroleerd onderzoek onder 500 deelnemers bleek dat wie deze pillen slikte significant minder vaak verkouden werd dan de controlegroep." (Elke zin met deugdelijk, controleerbaar bewijs — onderzoek, cijfers, deskundigen — is goed.)',
+      antwoord:'Bijvoorbeeld: "Uit een gecontroleerd onderzoek onder 500 deelnemers bleek dat wie deze pillen slikte significant minder vaak verkouden werd dan de controlegroep." (Elke zin met deugdelijk, controleerbaar bewijs, onderzoek, cijfers, deskundigen, is goed.)',
       antwoord_rubric:'1 punt: een onderbouwing met deugdelijk/controleerbaar bewijs (onderzoek, cijfers, deskundige) in plaats van een beroep op een bekende persoon.' },
   ],
 };
