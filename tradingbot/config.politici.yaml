@@ -1,0 +1,63 @@
+# Bot 6 — Politici-transactie-bot. PAPER. (Conditie B: nieuwe informatiebron = niet-prijs.)
+#
+# PROACTIEF: haalt zelf publieke, wettelijk verplichte politici-transacties op (STOCK Act,
+# via de gratis House/Senate Stock Watcher-datasets) en zet ze deterministisch om naar events.
+# GEEN aankondigingen, GEEN voorkennis: we volgen wat er OPENBAAR is GEMELD dat ze verhandelden.
+# Dat is publieke data — legaal om op te handelen; de prijs is de meld-vertraging (tot ~45 dagen).
+#
+# Harde beperking, eerlijk: Bitvavo = alleen crypto. Een gemeld aandeel dat niets met crypto te
+# maken heeft (NVDA, TSLA) kunnen we hier niet verhandelen en wordt overgeslagen. Alleen
+# crypto-relevante posities (spot-BTC/ETH-ETF's zoals IBIT/ETHA en crypto-aandelen als COIN/MSTR
+# als proxy) worden vertaald naar een BTC/ETH-signaal. Zie autopilot/disclosures.py voor de tabel.
+#
+# Elke politicus krijgt zijn EIGEN factor-sleutel (smart_money:<naam>); de forward-only, kosten-
+# nette, FDR- en regime-bewaakte leerlus meet PER POLITICUS of hun gemelde trades iets voorspellen.
+# Dit is bewust een PROBE (observeren), zonder kapitaalgewicht, tot het bewijs er is.
+# Zie experiments/2026_politician_disclosures.md voor de pre-registratie en criteria.
+#
+# Draaien:  py bot.py --config config.politici.yaml
+
+mode: PAPER
+bot_id: politici
+capital_eur: 100
+
+pairs: [BTC-EUR, ETH-EUR]        # alleen wat via ETF/proxy-meldingen te koppelen valt
+
+seed:
+  enabled: true
+  eur: 100                       # cash om proxy-koopjes mee te doen
+
+risk:
+  max_position_pct: 25
+  stop_loss_pct: 15
+  take_profit_pct: 25            # trage, meldings-gedreven signalen → wat ruimer
+  max_daily_loss_pct: 15
+  max_drawdown_pct: 40
+  max_portfolio_heat_pct: null
+
+strategy:
+  name: hold                     # geen prijssignalen; de politici-laag beslist
+  params: {}
+
+# de politici-laag: haalt gemelde transacties op, stelt trades VOOR; risk engine kan verkleinen/blokkeren
+research:
+  enabled: true
+  agent: disclosures             # proactief STOCK Act-meldingen ophalen
+  min_confidence: 0.6            # onder deze zekerheid negeert hij een melding
+  max_position_eur: 20           # bovengrens per melding-voorstel (risk engine kan verder knijpen)
+  events_file: research_events.json   # optioneel: handmatige events naast de auto-feed
+  fetch_minutes: 720             # meldingen bewegen traag → hoogstens 2×/dag ophalen
+  sources:
+    # gratis, publieke datasets van gemelde transacties (geen API-sleutel nodig):
+    - https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json
+    - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com/aggregate/all_transactions.json
+
+schedule:
+  interval_minutes: 60
+
+universe:
+  enabled: false                 # vaste mand; de meldingen draaien om déze coins
+
+costs:
+  taker_fee_pct: 0.25
+  slippage_pct: 0.1

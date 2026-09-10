@@ -307,6 +307,36 @@ B per Research Program (externe data + pre-registratie eerst), geen bulk-build. 
 Allocation Engine** blijft gegate tot ≥1 factor `actief` is. Zo bouwt "bouw dit" alleen wat nu
 eerlijk kan, en blijft de rest achter zijn poort.
 
+## D31 — Politici-transactie-bot (conditie B) — gemelde trades, geen aankondigingen
+
+De gebruiker vroeg om "bots die trades van Trump c.s. in de gaten houden vóór grote
+aankondigingen die hun stock omhoog laten schieten", en corrigeerde dat scherp: volg wat ze
+**verhandelen** (openbaar gemeld), niet wat ze **aankondigen**. Die correctie maakt het legaal
+en buildbaar. Onder de STOCK Act zijn transacties van Amerikaanse Congresleden **publiek**
+(Periodic Transaction Reports); gratis datasets (House/Senate Stock Watcher) ontsluiten ze.
+Handelen op openbaar gemelde trades is publieke data — géén voorkennis/front-running. Het
+"patroon tussen zeggen en doen" dat de gebruiker zoekt, ontstaat vanzelf in de meting: loopt
+een politicus' gemelde trade vóór koersbewegingen uit, dan toont het per-persoon track record
+dat — ná de meld-vertraging.
+
+Twee grenzen expliciet getrokken. (1) **Aankondigingen vóóraf ruiken bestaat niet legaal** en is
+niet gebouwd. (2) **Bitvavo is crypto-only:** een gemeld aandeel zonder crypto-link kunnen we hier
+niet verhandelen en wordt overgeslagen. Alleen crypto-verhandelbare posities worden vertaald naar
+BTC/ETH via een transparante tabel (`disclosures.py`): spot-BTC-ETF's + BTC-proxy-aandelen
+(IBIT, MSTR, COIN, MARA, …) → BTC; spot-ETH-ETF's → ETH. Purchase → +1, Sale → −1,
+Exchange → genegeerd. Aandelen zelf verhandelen vereist een compleet andere broker/API buiten
+dit platform — bewust niet gedaan.
+
+Architectuur = exact het nieuwsbot-patroon (`NewsFeedResearchAgent` → `DisclosureResearchAgent`):
+proactief ophalen (injecteerbare fetcher, dus testbaar zonder netwerk), deterministische mapping,
+fire-once per melding (hash), TTL als factor, confidence-poort én risk engine. Elke politicus
+krijgt een **eigen factor-sleutel** (`smart_money:<naam>`), zodat de forward-only, kosten-nette,
+FDR- en regime-bewaakte leerlus **per persoon** meet. Komt binnen als **PROBE (observeren)**,
+zonder kapitaalgewicht, tot het bewijs de acceptatiecriteria haalt — precies zoals het moratorium
+eist. Forward-only: niet zinvol backtestbaar (meld-vertraging + survivorship = leakage). Eerlijke
+verwachting: zwak of afwezig (de vertraging maakt dat het nieuws al in de koers zit; het signaal is
+breed bekend en gearbitreerd). Pre-registratie: experiments/2026_politician_disclosures.md.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

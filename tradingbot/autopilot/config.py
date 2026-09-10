@@ -112,8 +112,9 @@ class ResearchConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     enabled: bool = False
-    # 'rulebased' = handmatig events-bestand; 'newsfeed' = zelf publieke nieuwskoppen ophalen.
-    agent: Literal["rulebased", "newsfeed"] = "rulebased"
+    # 'rulebased' = handmatig events-bestand; 'newsfeed' = zelf publieke nieuwskoppen ophalen;
+    # 'disclosures' = zelf publieke politici-transacties (STOCK Act) ophalen.
+    agent: Literal["rulebased", "newsfeed", "disclosures"] = "rulebased"
     min_confidence: float = Field(default=0.6, ge=0, le=1,
                                   description="Onder deze zekerheid wordt een voorstel genegeerd")
     max_position_eur: float = Field(default=25, gt=0,
