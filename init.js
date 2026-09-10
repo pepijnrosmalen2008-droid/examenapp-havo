@@ -344,7 +344,11 @@ function chooseLevel(level,_noHistory){
   show('sc-home');
   buildGrid();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderHomeStats();renderGreeting();try{renderKlasHome();}catch(e){}try{renderEconHome();renderLeagueHome();}catch(e){}
   const _isNew=!localStorage.getItem(OB_KEY)&&!localStorage.getItem('slagio_seen_intro_v2');
-  if(_isNew){setTimeout(showOnboarding,300);}
+  // Als de onboarding net is afgerond en meteen naar een optioneel scherm
+  // (cijfers/studieplan/account) routeert, geen home-popups tonen: die zouden
+  // over dat scherm heen vallen en de intro "niet vlekkeloos" laten voelen.
+  if(window._onbRouting){/* geen popups tijdens post-onboarding routing */}
+  else if(_isNew){setTimeout(showOnboarding,300);}
   else if(!localStorage.getItem('slagio_vonk_intro_done')){setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},500);}
   else{let _nudged=false;try{if(typeof vonkStreakNudge==='function')_nudged=vonkStreakNudge();}catch(e){}if(!_nudged)showDailyChallengePopup();}
 }
@@ -500,9 +504,9 @@ window.addEventListener('load',()=>{
       if(typeof _routeVakkenPath==='function'){setTimeout(()=>_routeVakkenPath(_url),80);return;}
     }
   }
-  // Path-based routing: /havo en /vwo
+  // Path-based routing: /havo, /vwo en /vmbo
   const _path=location.pathname.replace(/\/$/,'');
-  if(_path==='/havo'||_path==='/vwo'){
+  if(_path==='/havo'||_path==='/vwo'||_path==='/vmbo'){
     setTimeout(()=>_routeFromPath(),80);
     return;
   }

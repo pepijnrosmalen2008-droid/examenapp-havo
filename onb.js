@@ -10,7 +10,11 @@ function _onbSound(t){ try{ if(typeof playSound==='function') playSound(t); }cat
 function _onbConfetti(kind){ try{ if(typeof launchConfetti==='function') launchConfetti(kind); }catch(e){} }
 
 // Klas-opties hangen af van niveau
-function _onbKlassen(){ return ONB.data.niveau==='vwo' ? [['4V','4 VWO'],['5V','5 VWO'],['6V','6 VWO']] : [['4H','4 HAVO'],['5H','5 HAVO']]; }
+function _onbKlassen(){
+  if(ONB.data.niveau==='vwo') return [['4V','4 VWO'],['5V','5 VWO'],['6V','6 VWO']];
+  if(ONB.data.niveau==='vmbo') return [['3M','3 VMBO'],['4M','4 VMBO']];
+  return [['4H','4 HAVO'],['5H','5 HAVO']];
+}
 function _onbKlasLabel(v){ const f=_onbKlassen().find(k=>k[0]===v); return f?f[1]:v; }
 
 // ── Stappen ─────────────────────────────────────────────────────
@@ -21,17 +25,17 @@ const ONB_STEPS = [
     body:()=>`<button class="onb-cta" onclick="onbNext()">Ja, we gaan!</button>` },
 
   { key:'niveau', mood:'goed', type:'single',
-    text:'Doe je <b>HAVO</b> of <b>VWO</b>?',
+    text:'Welk <b>niveau</b> doe je?',
     body:()=>{
       const opt=(v,lbl,sub)=>`<button class="onb-opt${ONB.data.niveau===v?' sel':''}" onclick="onbPick('niveau','${v}')"><span class="onb-opt-tx"><span class="onb-opt-main">${lbl}</span><span class="onb-opt-sub">${sub}</span></span><span class="onb-opt-check">✓</span></button>`;
-      return `<div class="onb-opts">${opt('havo','HAVO','5 jaar')}${opt('vwo','VWO','6 jaar')}</div>`;
+      return `<div class="onb-opts">${opt('vmbo','VMBO','4 jaar')}${opt('havo','HAVO','5 jaar')}${opt('vwo','VWO','6 jaar')}</div>`;
     } },
 
   { key:'klas', mood:'goed', type:'single',
     text:'In welke klas zit je nu?',
     body:()=>`<div class="onb-opts">${_onbKlassen().map(([v,lbl])=>`<button class="onb-opt${ONB.data.klas===v?' sel':''}" onclick="onbPick('klas','${v}')"><span class="onb-opt-tx"><span class="onb-opt-main">${lbl}</span></span><span class="onb-opt-check">✓</span></button>`).join('')}</div>` },
 
-  { key:'profiel', mood:'denk', type:'single',
+  { key:'profiel', mood:'denk', type:'single', skip:(d)=>d.niveau==='vmbo',
     text:'Welk <b>profiel</b> volg je?',
     body:()=>{
       const P=[['nt','Natuur & Techniek','N&T'],['ng','Natuur & Gezondheid','N&G'],['em','Economie & Maatschappij','E&M'],['cm','Cultuur & Maatschappij','C&M']];
@@ -174,6 +178,8 @@ function onbToggleVak(id){
 function onbNext(){
   _onbHaptic([12]); _onbSound('tap');
   ONB.i++;
+  // Stappen die voor dit niveau niet gelden overslaan (bv. havo/vwo-profiel bij vmbo)
+  while(ONB.i<ONB_STEPS.length && ONB_STEPS[ONB.i].skip && ONB_STEPS[ONB.i].skip(ONB.data)){ ONB.i++; }
   if(ONB.i>=ONB_STEPS.length){ onbFinish(); return; }
   onbRender();
 }
@@ -232,22 +238,43 @@ function onbComplete(){
   _onbConfetti('gold');
   const ov=document.getElementById('onb'); if(ov){ ov.classList.remove('on'); setTimeout(()=>{ov.style.display='none';},340); }
 
+  // Onthoud of we na de intro nog naar een optioneel scherm routeren. Zo weet
+  // chooseLevel dat het de home-popups (daily challenge / streak-nudge) NIET
+  // moet tonen, zodat die niet botsen met het cijfer-/studieplan-/accountscherm.
+  window._onbRouting = !!(d.cijfers || d.studieplan || d.account);
+
   // De app volledig opzetten op het gekozen niveau, dan home.
   try{
     if(typeof chooseLevel==='function'){ chooseLevel(d.niveau||APP_LEVEL,true); }
     else if(typeof show==='function'){ show('sc-home'); if(typeof buildGrid==='function')buildGrid(); }
   }catch(e){ try{show('sc-home');}catch(_){} }
 
-  // Optionele vervolgacties (na een korte adempauze)
-  setTimeout(onbRoutePost,700);
+  // Optionele vervolgactie pas openen nadat het overlay netjes is gesloten,
+  // zodat de overgang vloeiend is (geen scherm-over-overlay).
+  if(window._onbRouting){ setTimeout(onbRoutePost,420); }
 }
 
-// Routeert naar het eerste gekozen optionele onderdeel (rest blijft in-app bereikbaar).
+// Routeert naar het eerste gekozen optionele onderdeel in een logische volgorde
+// (cijfers → studieplan → account). Bewust naar de account-VRIJE schermen:
+// - cijfers  → sc-calc (slaagkans-calculator; géén account nodig)
+// - studieplan → sc-studieplan
+// - account  → sc-auth
+// De rest blijft gewoon in-app bereikbaar; een korte toast wijst erop.
 function onbRoutePost(){
   const d=ONB.data;
   try{
-    if(d.account && typeof show==='function'){ show('sc-auth'); return; }
-    if(d.cijfers){ if(typeof goToCijferInvoer==='function'){ goToCijferInvoer(); return; } if(typeof show==='function'){ show('sc-calc'); if(typeof prefillCalcFromSaved==='function')setTimeout(prefillCalcFromSaved,60); return; } }
-    if(d.studieplan && typeof show==='function'){ show('sc-studieplan'); if(typeof renderStudieplan==='function')renderStudieplan(); return; }
+    let opened=null;
+    if(d.cijfers && typeof show==='function'){ show('sc-calc'); if(typeof prefillCalcFromSaved==='function')setTimeout(prefillCalcFromSaved,60); opened='cijfers'; }
+    else if(d.studieplan && typeof show==='function'){ show('sc-studieplan'); if(typeof renderStudieplan==='function')try{renderStudieplan();}catch(_){} opened='studieplan'; }
+    else if(d.account && typeof show==='function'){ show('sc-auth'); opened='account'; }
+    // Meer keuzes gemaakt dan we nu openen? Laat dat weten zodat niets "verdwijnt".
+    const rest=[];
+    if(d.cijfers && opened!=='cijfers') rest.push('cijfers invoeren');
+    if(d.studieplan && opened!=='studieplan') rest.push('studieplan maken');
+    if(d.account && opened!=='account') rest.push('account maken');
+    if(rest.length && typeof showToast==='function'){
+      setTimeout(()=>showToast('Ook '+rest.join(' en ')+' kun je zo doen via het menu.'),1500);
+    }
   }catch(e){}
+  finally{ window._onbRouting=false; }
 }
