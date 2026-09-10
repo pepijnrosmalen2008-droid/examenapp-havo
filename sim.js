@@ -362,7 +362,40 @@ function startProefexamen(){
   try{trackEvent('proefexamen',{vak:ex.titel,niveau:ex.niveau||APP_LEVEL});}catch(e){}
 }
 
+// Publieke start: eerst een korte countdown (3·2·1·Start!) om de spanning
+// op te bouwen, dan pas het echte examen. prefers-reduced-motion → direct door.
 function examenStart(){
+  const ov = document.getElementById('ex-countdown');
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!ov || reduce){ _examenBegin(); return; }
+  document.getElementById('ex-intro').style.display = 'none';
+  const numEl = document.getElementById('ex-cd-num');
+  const subEl = document.getElementById('ex-cd-sub');
+  const steps = [
+    {n:'3', s:'Zet je schrap…'},
+    {n:'2', s:'Diep ademhalen…'},
+    {n:'1', s:'Pen in de aanslag…'},
+    {n:'Start!', s:'Zet ’m op! 💪', go:true}
+  ];
+  ov.style.display = '';
+  let i = 0;
+  const tick = () => {
+    const st = steps[i];
+    numEl.textContent = st.n;
+    subEl.textContent = st.s;
+    // herstart de pop-animatie
+    numEl.classList.remove('pop'); void numEl.offsetWidth; numEl.classList.add('pop');
+    if(st.go){ numEl.classList.add('go'); } else { numEl.classList.remove('go'); }
+    try{ if(typeof playSound==='function') playSound(st.go?'start':'tick'); }catch(e){}
+    try{ if(navigator.vibrate) navigator.vibrate(st.go?[60,40,120]:30); }catch(e){}
+    i++;
+    if(i < steps.length){ setTimeout(tick, st.go?0:750); }
+    else { setTimeout(()=>{ ov.style.display='none'; numEl.classList.remove('go','pop'); _examenBegin(); }, 650); }
+  };
+  tick();
+}
+
+function _examenBegin(){
   EX.phase = 'quiz';
   document.getElementById('ex-intro').style.display = 'none';
   document.getElementById('ex-quiz').style.display = '';
