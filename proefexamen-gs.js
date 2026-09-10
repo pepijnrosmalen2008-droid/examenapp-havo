@@ -15,10 +15,12 @@ function _gsTijdbalk(minJ, maxJ, ticks, events){
   var sx=function(j){return 44+(j-minJ)/(maxJ-minJ)*286;};
   var line='<line x1="40" y1="86" x2="342" y2="86" stroke="#1b2230" stroke-width="2.4"/><path d="M342 86 L332 81 L332 91 Z" fill="#1b2230"/>';
   var tk=ticks.map(function(j){return '<line x1="'+sx(j).toFixed(0)+'" y1="82" x2="'+sx(j).toFixed(0)+'" y2="90" stroke="#1b2230" stroke-width="1.2"/><text x="'+sx(j).toFixed(0)+'" y="104" font-family="sans-serif" font-size="9" fill="#4a5568" text-anchor="middle">'+j+'</text>';}).join('');
-  var ev=events.map(function(e){var x=sx(e[0]);var boven=e[2]!=='onder';var y1=boven?86:86;var y2=boven?52:120;var ty=boven?46:150;
-    return '<line x1="'+x.toFixed(0)+'" y1="'+y1+'" x2="'+x.toFixed(0)+'" y2="'+y2+'" stroke="#2563eb" stroke-width="1.4"/><circle cx="'+x.toFixed(0)+'" cy="86" r="3.4" fill="#e8580c"/>'+
+  var ev=events.map(function(e){var x=sx(e[0]);var boven=e[2]!=='onder';
+    // Bij 'boven' stopt de verbindingslijn onder het label; bij 'onder' erboven.
+    var y2=boven?62:110; var ty=boven?42:150;
+    return '<line x1="'+x.toFixed(0)+'" y1="86" x2="'+x.toFixed(0)+'" y2="'+y2+'" stroke="#2563eb" stroke-width="1.4"/><circle cx="'+x.toFixed(0)+'" cy="86" r="3.4" fill="#e8580c"/>'+
            '<text x="'+x.toFixed(0)+'" y="'+ty+'" font-family="sans-serif" font-size="8.6" font-weight="700" fill="#1b2230" text-anchor="middle">'+e[0]+'</text>'+
-           '<text x="'+x.toFixed(0)+'" y="'+(ty+(boven?11:11))+'" font-family="sans-serif" font-size="8.2" fill="#4a5568" text-anchor="middle">'+e[1]+'</text>';}).join('');
+           '<text x="'+x.toFixed(0)+'" y="'+(ty+11)+'" font-family="sans-serif" font-size="8.2" fill="#4a5568" text-anchor="middle">'+e[1]+'</text>';}).join('');
   return '<svg viewBox="0 0 360 168" role="img" aria-label="tijdbalk">'+line+tk+ev+'</svg>';
 }
 
