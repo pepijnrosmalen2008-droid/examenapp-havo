@@ -1,4 +1,4 @@
-const CACHE = 'slagio-v688';
+const CACHE = 'slagio-v689';
 const ASSETS = ['/', '/index.html', '/over-ons.html', '/faq.html', '/privacy.html', '/voorwaarden.html', '/styles.css', '/data.js', '/data-havo.meta.js', '/foutenboek-uitleg-havo.js', '/data-vwo.meta.js', '/data-vmbo.meta.js', '/state.js', '/mascotte.js', '/lottie.min.js', '/vonk-lottie.js', '/vonk.lottie.json', '/vonk-phys.js', '/vonk.js', '/vonk-eggs.js', '/cloud.js', '/profile.js', '/vak.js', '/quiz.js', '/tools.js', '/sim.js', '/lb.js', '/features.js', '/league.js', '/schedule.js', '/foutenboek.js', '/herhalen.js', '/v4.js', '/zoek.js', '/klas.js', '/notif-engine.js', '/onb.js', '/widget.js', '/init.js', '/sam-anim.js', '/sam-clip.js', '/ico-swap.js', '/examens.js', '/ce_data.js', '/ce-oud.js', '/examens-2026.js', '/proefexamen-bi.js', '/proefexamen-ec.js', '/proefexamen-sk.js', '/proefexamen-na.js', '/proefexamen-nl.js', '/proefexamen-ak.js', '/manifest.json', '/widget/slagio-widget.json', '/widget/slagio-widget-data.json', '/icon-192.png', '/icon-512.png', '/logo.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
