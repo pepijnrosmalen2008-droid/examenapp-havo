@@ -113,8 +113,8 @@ class ResearchConfig(BaseModel):
 
     enabled: bool = False
     # 'rulebased' = handmatig events-bestand; 'newsfeed' = zelf publieke nieuwskoppen ophalen;
-    # 'disclosures' = zelf publieke politici-transacties (STOCK Act) ophalen.
-    agent: Literal["rulebased", "newsfeed", "disclosures"] = "rulebased"
+    # 'disclosures' = publieke politici-transacties (STOCK Act); 'onchain' = grote on-chain flows.
+    agent: Literal["rulebased", "newsfeed", "disclosures", "onchain"] = "rulebased"
     min_confidence: float = Field(default=0.6, ge=0, le=1,
                                   description="Onder deze zekerheid wordt een voorstel genegeerd")
     max_position_eur: float = Field(default=25, gt=0,

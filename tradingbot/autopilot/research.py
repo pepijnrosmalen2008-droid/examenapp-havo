@@ -143,6 +143,12 @@ def load_events(cfg: AppConfig, now: datetime) -> list[dict]:
         out += load_disclosure_events(cfg, now)
     except Exception:  # noqa: BLE001 — overlay mag nooit de cycle breken
         pass
+    # proactief opgehaalde on-chain flows meenemen in de gedachtegang
+    try:
+        from .onchain import load_auto_events as load_onchain_events
+        out += load_onchain_events(cfg, now)
+    except Exception:  # noqa: BLE001 — overlay mag nooit de cycle breken
+        pass
     return out
 
 
@@ -162,6 +168,11 @@ def get_research_agent(cfg: AppConfig) -> ResearchAgent | None:
         log.info("research-laag actief: politici-transacties (proactief), min_confidence %.2f",
                  cfg.research.min_confidence)
         return DisclosureResearchAgent(cfg)
+    if cfg.research.agent == "onchain":
+        from .onchain import OnChainResearchAgent   # lazy: vermijdt circulaire import
+        log.info("research-laag actief: on-chain flows (proactief), min_confidence %.2f",
+                 cfg.research.min_confidence)
+        return OnChainResearchAgent(cfg)
     cls = _AGENTS.get(cfg.research.agent)
     if cls is None:
         raise ValueError(f"Onbekende research-agent '{cfg.research.agent}'")

@@ -337,6 +337,38 @@ eist. Forward-only: niet zinvol backtestbaar (meld-vertraging + survivorship = l
 verwachting: zwak of afwezig (de vertraging maakt dat het nieuws al in de koers zit; het signaal is
 breed bekend en gearbitreerd). Pre-registratie: experiments/2026_politician_disclosures.md.
 
+## D32 — Bitvavo Alpha Engine: van "voorspeller" naar kapitaalallocator + eerste drie stappen
+
+Na een discussie over een agressiever ontwerp ("extractie boven voorspelling; casino-EV; own the
+toll booth") is de strategische fork vastgelegd in `BITVAVO_ALPHA_ENGINE.md`. Kern: de bot niet
+opvatten als marktvoorspeller maar als machine die zoekt waar informatie/timing/executie een paar
+basispunten geeft, en elke edge uitschakelt zodra hij verdampt. Twee harde reality checks daarin,
+zodat de agressie niet in zelfbedrog omslaat: (1) Bitvavo biedt méér dan spot (limit/stop/TP,
+IOC/FOK, postOnly, WebSocket, FIX) → execution/driehoek/relative-value zijn mogelijk op één venue;
+maar (2) deze bot draait op een **thuis-pc via retail-net op een poll-schema**, dus in elke
+milliseconde-race (microstructuur, executie-alpha, driehoek) zijn we de traagste — de prooi, niet
+het roofdier. Gevolg: de ranking is voor ónze opstelling omgedraaid — trage informatie-probes aan
+de top, latency-takken onderaan of geschrapt. Funding/basis/liquidation/cross-exchange = onmogelijk
+op spot-één-venue.
+
+Drie stappen gebouwd, elk klein en falsifieerbaar:
+- **Stap 1 — execution-kostenlaag** (`execution.py`): niet-urgente orders passief posten (maker/
+  postOnly) bespaart de taker−maker-fee + slippage; urgente exits blijven taker; LIVE forceert
+  taker tot de echte resting-order-levenscyclus bestaat. Kostenreductie, geen alpha; verhoogt de
+  netto-EV van álle bots. Aangezet op de trading-configs.
+- **Stap 2 — driehoeks-observer** (`triangle.py`): meet, handelt niet. 3× fee ≈ 0,75%-drempel;
+  verwachte uitkomst "geen exploiteerbare driehoek", zwart-op-wit.
+- **Stap 3 — on-chain money-flow-probe** (`onchain.py`, bot 7): whale/exchange-flows → per-wallet
+  factor-sleutel (`smart_money:<label>`), forward-only, PROBE-status. De latency-ongevoelige tak
+  waar een thuis-pc kán meedoen; wallet-reputatie ontstaat uit de meting, niet uit een verzonnen
+  score. Werkt keyless (beperkt) of met optionele ONCHAIN_API_KEY. Pre-registratie:
+  experiments/2026_onchain_flows.md.
+
+Bewust NIET gebouwd (achter hun poort): sub-seconde microstructuur/executie-alpha (vereist andere
+runtime + verliezen we de race), market-making (bedrijf), en alles wat derivaten/multi-venue vergt.
+Illegale routes (manipulatie, wash trading, front-running van niet-openbare orders, insider,
+pump-and-dump) blijven principieel uitgesloten: geen edge, alleen juridisch risico.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

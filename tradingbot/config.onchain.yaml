@@ -1,0 +1,65 @@
+# Bot 7 — On-chain money-flow-bot. PAPER. (Conditie B: nieuwe informatiebron = niet-prijs.)
+#
+# PROACTIEF: bespiedt grote on-chain bewegingen (whale → exchange = verkoopdruk → bearish;
+# exchange → cold wallet = aanbod weg → bullish) en zet ze deterministisch om naar events.
+# Elke herkende wallet krijgt een EIGEN factor-sleutel (smart_money:<label>); de forward-only,
+# kosten-nette, FDR- en regime-bewaakte leerlus meet PER WALLET of die iets voorspelt. Zo ontstaat
+# "wallet-reputatie" uit de meting, niet uit een verzonnen score. Komt binnen als PROBE (observeren),
+# zonder kapitaalgewicht, tot het bewijs er is. Zie experiments/2026_onchain_flows.md.
+#
+# Latency-ongevoelig (minuten-tot-uren) — precies waar een thuis-pc kán meedoen, anders dan
+# microstructuur/executie. Zie BITVAVO_ALPHA_ENGINE.md.
+#
+# Data: werkt met een gratis publieke bron ZONDER sleutel (beperkter). Zet je ONCHAIN_API_KEY in
+# tradingbot/.env, dan gebruikt de fetcher die automatisch voor rijkere data. Vul hieronder je
+# eigen bron-URL('s) in; de meegeleverde is een placeholder.
+#
+# Draaien:  py bot.py --config config.onchain.yaml
+
+mode: PAPER
+bot_id: onchain
+capital_eur: 100
+
+pairs: [BTC-EUR, ETH-EUR]
+
+seed:
+  enabled: true
+  eur: 100
+
+risk:
+  max_position_pct: 25
+  stop_loss_pct: 12           # on-chain signaal bederft snel → strakke stop
+  take_profit_pct: 18
+  max_daily_loss_pct: 15
+  max_drawdown_pct: 40
+  max_portfolio_heat_pct: null
+
+strategy:
+  name: hold                  # geen prijssignalen; de on-chain-laag beslist
+  params: {}
+
+research:
+  enabled: true
+  agent: onchain
+  min_confidence: 0.6
+  max_position_eur: 20
+  events_file: research_events.json   # optioneel: handmatige events naast de auto-feed
+  fetch_minutes: 15           # flows bewegen sneller dan meldingen, trager dan de tick
+  sources:
+    # Vul hier je eigen publieke whale/flow-JSON-bron in. Zonder bereikbare bron doet de bot
+    # niets (degradeert stil). Met ONCHAIN_API_KEY in .env wordt die als api_key meegestuurd.
+    - https://example-whale-feed.invalid/large-transactions.json
+
+schedule:
+  interval_minutes: 15
+
+universe:
+  enabled: false
+
+costs:
+  taker_fee_pct: 0.25
+  maker_fee_pct: 0.15
+  slippage_pct: 0.1
+
+execution:
+  mode: maker_first           # niet-urgente flow-koopjes passief posten; exits blijven taker
