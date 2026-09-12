@@ -22,10 +22,24 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from autopilot.exchange import MarketData
-from autopilot.triangle import best_edge
+from autopilot.triangle import best_edge, book_spread_pct, executable_eur
 
 
-def _measure(market: MarketData, base: str, bridge: str, fee: float) -> None:
+def _leg_stats(market: MarketData, pair: str, budget: float) -> str:
+    """Bruto spread + uitvoerbare notional op diepte voor één leg (best-effort)."""
+    try:
+        ob = market.order_book(pair, depth=25)
+    except Exception:  # noqa: BLE001 — orderboek is optioneel
+        return f"{pair}: (geen orderboek)"
+    sp = book_spread_pct(ob["bids"], ob["asks"])
+    ask_exec = executable_eur(ob["asks"], budget)
+    bid_exec = executable_eur(ob["bids"], budget)
+    exec_eur = min(ask_exec, bid_exec)
+    sp_txt = f"{sp:.3f}%" if sp is not None else "n/b"
+    return f"{pair}: spread {sp_txt}, uitvoerbaar ~€{exec_eur:,.0f}/€{budget:,.0f}"
+
+
+def _measure(market: MarketData, base: str, bridge: str, fee: float, budget: float, stats: dict) -> None:
     try:
         p_ae = market.ticker_price(f"{base}-EUR")
         p_be = market.ticker_price(f"{bridge}-EUR")
@@ -38,9 +52,23 @@ def _measure(market: MarketData, base: str, bridge: str, fee: float) -> None:
     disc = (p_ab / implied - 1) * 100
     print(f"  {base}-EUR €{p_ae:.2f} | {bridge}-EUR €{p_be:.2f} | "
           f"{base}-{bridge} {p_ab:.8f} (impliciet {implied:.8f}, afwijking {disc:+.3f}%)")
+    for leg in (f"{base}-EUR", f"{bridge}-EUR", f"{base}-{bridge}"):
+        print(f"    {_leg_stats(market, leg, budget)}")
     print(f"  beste richting: {res.direction}")
-    verdict = "✅ NETTO-POSITIEF" if res.net_edge > 0 else "geen edge"
-    print(f"  netto-edge ná 3× {fee}% fee: {res.net_edge * 100:+.3f}%  → {verdict}")
+    positief = res.net_edge > 0
+    verdict = "✅ NETTO-POSITIEF" if positief else "geen edge"
+    print(f"  bruto-mult {res.gross_mult:.5f} | netto-edge ná 3× {fee}% fee: "
+          f"{res.net_edge * 100:+.3f}%  → {verdict}")
+    # statistiek over een --watch-run: hoe vaak positief, hoe lang aaneengesloten, hoeveel misses
+    stats["n"] += 1
+    if positief:
+        stats["n_positief"] += 1
+        stats["run"] += 1
+        stats["max_run"] = max(stats["max_run"], stats["run"])
+    else:
+        if stats["run"] > 0:
+            stats["gemist"] += 1          # kans verdween tussen twee metingen → niet uitgevoerd
+        stats["run"] = 0
 
 
 def main() -> int:
@@ -49,14 +77,16 @@ def main() -> int:
     ap.add_argument("--base", default="ETH", help="valuta A (default ETH)")
     ap.add_argument("--bridge", default="BTC", help="brug-valuta B (default BTC)")
     ap.add_argument("--fee", type=float, default=0.25, help="fee %% per leg (default 0.25 taker)")
+    ap.add_argument("--budget", type=float, default=1000.0, help="doel-notional (€) voor de diepte-check")
     ap.add_argument("--watch", type=int, default=0, help="elke N seconden herhalen (0 = één keer)")
     args = ap.parse_args()
 
     market = MarketData()
+    stats = {"n": 0, "n_positief": 0, "run": 0, "max_run": 0, "gemist": 0}
     print(f"\n══════ DRIEHOEKS-OBSERVER — {args.base} via {args.bridge} ══════")
     print("(observatie, geen orders)\n")
     while True:
-        _measure(market, args.base.upper(), args.bridge.upper(), args.fee)
+        _measure(market, args.base.upper(), args.bridge.upper(), args.fee, args.budget, stats)
         if args.watch <= 0:
             break
         try:
@@ -64,6 +94,11 @@ def main() -> int:
         except KeyboardInterrupt:
             break
         print()
+    if stats["n"] > 1:
+        print(f"\n── statistiek over {stats['n']} metingen ──")
+        print(f"  netto-positief: {stats['n_positief']}× ({stats['n_positief']/stats['n']*100:.1f}%)")
+        print(f"  langste aaneengesloten venster: {stats['max_run']} metingen")
+        print(f"  verdwenen vóór uitvoering (gemist): {stats['gemist']}×")
     return 0
 
 

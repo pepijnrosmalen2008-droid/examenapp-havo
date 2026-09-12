@@ -59,6 +59,13 @@ class MarketData:
         raw = self._x.fetch_ohlcv(pair.replace("-", "/"), timeframe=interval, since=since_ms, limit=limit)
         return [tuple(c) for c in raw]
 
+    def order_book(self, pair: str, depth: int = 25) -> dict:
+        """Ruw orderboek: {'bids': [[prijs, hoeveelheid], ...], 'asks': [...]}. Voor de
+        driehoeks-observer (uitvoerbare hoeveelheid op diepte, echte spread)."""
+        ob = self._x.fetch_order_book(pair.replace("-", "/"), limit=depth)
+        return {"bids": [[float(p), float(q)] for p, q in ob.get("bids", [])],
+                "asks": [[float(p), float(q)] for p, q in ob.get("asks", [])]}
+
     def eur_markets(self) -> list[dict]:
         """Alle actieve EUR-spotmarkten op Bitvavo als [{'pair','active'}, ...]."""
         out = []
@@ -202,7 +209,8 @@ class PaperExchange:
             self.db.set_paper_balance("EUR", eur - amount_eur)
             self.db.set_paper_balance(base, self.db.paper_balance(base) + asset_amount)
             return {"id": f"paper-{client_order_id[:12]}", "price": fill_price, "style": style,
-                    "amount": asset_amount, "cost": amount_eur, "fee_eur": fee, "status": "closed"}
+                    "ref_price": price, "amount": asset_amount, "cost": amount_eur,
+                    "fee_eur": fee, "status": "closed"}
 
         if amount_asset is None:
             raise ValueError("SELL vereist amount_asset")
@@ -216,7 +224,8 @@ class PaperExchange:
         self.db.set_paper_balance(base, held - amount_asset)
         self.db.set_paper_balance("EUR", eur + gross - fee)
         return {"id": f"paper-{client_order_id[:12]}", "price": fill_price, "style": style,
-                "amount": amount_asset, "cost": gross - fee, "fee_eur": fee, "status": "closed"}
+                "ref_price": price, "amount": amount_asset, "cost": gross - fee,
+                "fee_eur": fee, "status": "closed"}
 
 
 class ShadowExchange(PaperExchange):

@@ -80,9 +80,36 @@ kosten en latency. Dat de meeste probes "onbewezen" blijven, is de correcte uitk
 
 ## Voorgestelde bouwvolgorde (elk = eigen pre-registratie, probe-status)
 1. **Execution-kostenlaag** — postOnly/limit-keuze onder de bestaande strategieën (kostenreductie,
-   geen nieuwe informatiebron; laagste risico, direct nut).
-2. **Driehoeks-observer** — meet netto-discrepantie na kosten/latency; verwacht falsificatie.
+   geen nieuwe informatiebron; laagste risico, direct nut). ✅ gebouwd.
+2. **Driehoeks-observer** — meet netto-discrepantie na kosten/latency; verwacht falsificatie. ✅ gebouwd.
 3. **On-chain money-flow probe (bot 7)** — whale/exchange-flow + wallet-reputatie, per-entity
-   factor-sleutel, forward-only. De echte frontier.
-4. **Opportunity Auction / capital allocator** — bestaat in embryo (Evidence Allocation v1/v2);
+   factor-sleutel, forward-only. De echte frontier. ✅ gebouwd.
+4. **Meetlaag hard maken** — vóór meer alpha. ✅ gebouwd (zie hieronder).
+5. **Opportunity Auction / capital allocator** — bestaat in embryo (Evidence Allocation v1/v2);
    blijft gated tot ≥1 factor status *actief* haalt.
+
+## Correctie: maker_first is GEEN gegarandeerde besparing
+De eerste versie zette `maker_first` aan met de claim "bespaart altijd de taker−maker-fee".
+Dat is fout: een maker-order die **niet vult** terwijl de markt wegloopt kan economisch slechter
+zijn dan een taker. En in PAPER (punt-prijs, geen orderboek/queue) is de **fill-kans niet eerlijk
+te simuleren** — het optimistische model deed alsof elke maker vulde, wat de PAPER-resultaten met
+precies de "besparing" naar boven vertekende. Daarom staat `maker_first` nu **uit** op alle bots
+(taker = eerlijk en conservatief in PAPER); de capability blijft opt-in. De juiste metric is
+**netto gerealiseerde P&L per opportunity, inclusief fill-kans**, en die wordt pas in SHADOW/LIVE
+(waar postOnly echt in het boek rust) gemeten. Kill-criterium in KILL_CRITERIA.md §1.
+
+## Stap 4 — de meetlaag (gebouwd)
+Vóór er meer alpha bij komt, is de meting hard gemaakt:
+- **Execution-log** (`execution_log`-tabel; `db.log_execution/execution_summary/recent_executions`):
+  per fill de werkelijke kosten — referentieprijs vs fill-prijs, slippage + fee in **basispunten**,
+  stijl en fill-vlag. In SHADOW/LIVE registreert dit echte maker-fills/misses (fill-ratio).
+- **Factor-/wallet-validatie** (`factor_learning.validation_report`): per signaalbron hit-rate,
+  gemiddelde edge, netto edge na kosten, effectieve n, FDR-significantie, regime-stabiliteit, drift,
+  status. Dit is "signaal → prijsbeweging" forward afgerekend. Zichtbaar via `status.py`.
+- **Driehoeks-statistiek**: de observer meet nu ook bruto top-of-book spread, uitvoerbare notional
+  op orderboek-diepte, en over een `--watch`-run: fractie positieve metingen, langste aaneengesloten
+  venster (duur), en aantal kansen dat vóór uitvoering verdween (gemist).
+- **Kill-criteria** (`KILL_CRITERIA.md`): vooraf vastgelegd wanneer elke laag wordt afgekeurd.
+Beperkingen eerlijk benoemd: per-factor drawdown en exacte signaal-latency worden nog niet apart
+bijgehouden (drawdown leeft op bot-niveau; horizon is vast per observatie); PAPER kan maker-fill-kans
+niet simuleren (SHADOW/LIVE wel).

@@ -98,6 +98,26 @@ CREATE TABLE IF NOT EXISTS decision_log (
     record  TEXT NOT NULL           -- volledige JSON: factoren, acties, blokkades, overwegingen
 );
 
+-- Execution-kwaliteit: per fill de werkelijke kosten meten (fee + slippage t.o.v. de
+-- referentieprijs op beslismoment). Fundament voor "netto P&L per opportunity, incl. fill-kans":
+-- in PAPER is elke fill onmiddellijk (style meestal taker), in SHADOW/LIVE registreert dit de
+-- echte maker-fills/misses zodra postOnly daadwerkelijk in het orderboek rust.
+CREATE TABLE IF NOT EXISTS execution_log (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    ts           TEXT NOT NULL,
+    coid         TEXT,
+    pair         TEXT NOT NULL,
+    side         TEXT NOT NULL,          -- BUY | SELL
+    style        TEXT NOT NULL,          -- taker | maker
+    mode         TEXT NOT NULL,          -- PAPER | SHADOW | LIVE
+    ref_price    REAL,                   -- mid/ticker op beslismoment
+    fill_price   REAL,                   -- werkelijke fill-prijs
+    amount_eur   REAL,                   -- notional
+    fee_eur      REAL DEFAULT 0,
+    cost_bps     REAL,                   -- effectieve kosten in basispunten (slippage + fee) t.o.v. ref
+    filled       INTEGER NOT NULL DEFAULT 1
+);
+
 -- Leerlus: per factor bijhouden hoe vaak zijn richting achteraf klopte (forward-only).
 CREATE TABLE IF NOT EXISTS factor_stats (
     factor_key TEXT PRIMARY KEY,
@@ -346,6 +366,49 @@ class Database:
             rec["ts"], rec["stance"], rec["headline"] = r["ts"], r["stance"], r["headline"]
             out.append(rec)
         return out
+
+    # ── execution-kwaliteit (werkelijke kosten per fill) ─────────────
+    def log_execution(self, *, coid: str | None, pair: str, side: str, style: str, mode: str,
+                      ref_price: float | None, fill_price: float | None, amount_eur: float | None,
+                      fee_eur: float, cost_bps: float | None, filled: bool = True) -> None:
+        self.conn.execute(
+            "INSERT INTO execution_log(ts, coid, pair, side, style, mode, ref_price, fill_price, "
+            "amount_eur, fee_eur, cost_bps, filled) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
+            (utcnow(), coid, pair, side, style, mode, ref_price, fill_price, amount_eur,
+             fee_eur, cost_bps, 1 if filled else 0),
+        )
+        self.conn.execute(
+            "DELETE FROM execution_log WHERE id < "
+            "(SELECT MIN(id) FROM (SELECT id FROM execution_log ORDER BY id DESC LIMIT 1000))"
+        )
+        self.conn.commit()
+
+    def execution_summary(self) -> dict:
+        """Samenvatting per stijl: n, fill-ratio, gemiddelde effectieve kosten (bps), totale fee."""
+        rows = self.conn.execute(
+            "SELECT style, COUNT(*) n, "
+            "  SUM(filled) n_filled, "
+            "  AVG(CASE WHEN filled=1 THEN cost_bps END) avg_cost_bps, "
+            "  SUM(fee_eur) fee_eur "
+            "FROM execution_log GROUP BY style"
+        ).fetchall()
+        out = {}
+        for r in rows:
+            n = r["n"] or 0
+            out[r["style"]] = {
+                "n": n,
+                "fill_ratio": (r["n_filled"] / n) if n else None,
+                "avg_cost_bps": r["avg_cost_bps"],
+                "fee_eur": r["fee_eur"] or 0.0,
+            }
+        return out
+
+    def recent_executions(self, limit: int = 20) -> list[dict]:
+        rows = self.conn.execute(
+            "SELECT ts, pair, side, style, mode, ref_price, fill_price, amount_eur, fee_eur, "
+            "cost_bps, filled FROM execution_log ORDER BY id DESC LIMIT ?", (limit,),
+        ).fetchall()
+        return [dict(r) for r in rows]
 
     # ── factor-leerlus (forward-only betrouwbaarheid) ────────────────
 

@@ -323,6 +323,19 @@ class TradingEngine:
                                     amount_asset=amount, cost_eur=cost, fee_eur=fee,
                                     exchange_order_id=str(fill.get("id") or ""))
 
+        # Execution-kwaliteit vastleggen: werkelijke kosten (slippage t.o.v. referentieprijs + fee)
+        # in basispunten. Fundament voor "netto P&L per opportunity, incl. fill-kans".
+        ref = float(fill.get("ref_price") or price or 0)
+        if ref > 0 and price > 0 and cost > 0:
+            slip_bps = (price - ref) / ref * 1e4 * (1 if sig.side == Side.BUY else -1)
+            fee_bps = fee / cost * 1e4
+            cost_bps = slip_bps + fee_bps
+        else:
+            cost_bps = None
+        self.db.log_execution(coid=coid, pair=sig.pair, side=sig.side.value, style=style,
+                              mode=self.mode.value, ref_price=ref or None, fill_price=price or None,
+                              amount_eur=cost or None, fee_eur=fee, cost_bps=cost_bps, filled=True)
+
         if hasattr(self.strategy, "on_fill") and sig.strategy == self.strategy.name:
             self.strategy.on_fill(sig.pair, sig.side, now)
 

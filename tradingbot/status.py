@@ -86,6 +86,32 @@ def main() -> int:
     if not orders:
         print("   (geen)")
 
+    # Execution-kwaliteit: werkelijke kosten per stijl (fee + slippage in basispunten).
+    execsum = db.execution_summary()
+    if execsum:
+        print("\n Execution-kwaliteit (werkelijke kosten):")
+        for style, s in sorted(execsum.items()):
+            fr = f"{s['fill_ratio'] * 100:.0f}%" if s["fill_ratio"] is not None else "n/b"
+            cb = f"{s['avg_cost_bps']:.1f} bps" if s["avg_cost_bps"] is not None else "n/b"
+            print(f"   {style:<6} n={s['n']:<4} fill {fr:<5} gem. kosten {cb:<10} "
+                  f"totale fee {eur(s['fee_eur'])}")
+
+    # Factor-/wallet-validatie: forward-only afrekening per signaalbron.
+    try:
+        from autopilot import factor_learning as fl
+        report = fl.validation_report(db, cfg)
+    except Exception:  # noqa: BLE001 — rapport mag status nooit breken
+        report = []
+    if report:
+        print("\n Factor-/wallet-validatie (netto edge na kosten, forward-only):")
+        print(f"   {'factor':<22} {'n':>5} {'hit':>5} {'edge':>7} {'netto':>7}  status")
+        for r in report[:12]:
+            hit = f"{r['hit_rate'] * 100:.0f}%" if r["hit_rate"] is not None else "  -"
+            edge = f"{r['avg_edge'] * 100:+.2f}%" if r["avg_edge"] is not None else "   -"
+            net = f"{r['net_edge'] * 100:+.2f}%" if r["net_edge"] is not None else "   -"
+            flag = "★" if r["fdr_significant"] else " "
+            print(f"   {r['factor']:<22} {r['n']:>5} {hit:>5} {edge:>7} {net:>7} {flag} {r['status']}")
+
     if mode == "PAPER":
         balances = db.paper_balances()
         if balances:

@@ -253,6 +253,38 @@ def roundtrip_cost(cfg) -> float:
     return 2.0 * (c.taker_fee_pct + c.slippage_pct) / 100.0
 
 
+def validation_report(db, cfg) -> list[dict]:
+    """Per factor/entiteit (bv. per wallet `smart_money:<label>`) een validatie-regel:
+    hit-rate, gemiddelde edge, netto edge (na kosten), effectieve n, FDR-significantie,
+    regime-stabiliteit, drift en status. Gesorteerd op netto edge (beste eerst).
+
+    Dit is de forward-only afrekening waar 'signaal → prijsbeweging' zich in vertaalt:
+    - avg_edge  = gemiddelde excess-return t.o.v. de mand (opportunity-cost-gecorrigeerd);
+    - hit_rate  = fractie observaties waarin de richting relatief klopte;
+    - n_eff     = overlap-gecorrigeerde effectieve steekproef;
+    - status    = observeren | onbewezen | eenzijdig | actief | uitgeschakeld.
+    Beperking: per-factor drawdown en exacte signaal-latency worden (nog) niet apart
+    bijgehouden; de horizon is vast per observatie en de P&L-drawdown leeft op bot-niveau."""
+    rel = enrich_and_correct(db.factor_reliabilities(), roundtrip_cost(cfg),
+                             drift=db.drift_status())
+    rows = []
+    for key, v in rel.items():
+        rows.append({
+            "factor": key,
+            "n": v.get("n", 0),
+            "n_eff": round(v.get("n_eff", 0.0), 1),
+            "hit_rate": v.get("precision"),
+            "avg_edge": v.get("avg_edge"),
+            "net_edge": v.get("net_edge"),
+            "fdr_significant": v.get("fdr_significant", False),
+            "regime_stable": v.get("regime_stable", False),
+            "drift": v.get("drift", "stabiel"),
+            "status": v.get("status", "observeren"),
+        })
+    rows.sort(key=lambda r: (r["net_edge"] if r["net_edge"] is not None else -9), reverse=True)
+    return rows
+
+
 def grade_due(db, prices: dict[str, float], now: datetime) -> int:
     """Beoordeel alle observaties waarvan de horizon is verstreken — **relatief aan de
     markt** (opportunity cost). De edge is niet "ging de coin omhoog?" maar "deed de coin

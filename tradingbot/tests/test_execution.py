@@ -105,3 +105,24 @@ def test_engine_default_taker_unchanged(db, market):
     fills = [o for o in db.recent_orders() if o["status"] == "FILLED"]
     btc = next(o for o in fills if o["pair"] == "BTC-EUR")
     assert btc["fee_eur"] == pytest.approx((btc["amount_eur"] or 0) * 0.0025, rel=1e-3)
+
+
+# ── execution-log: werkelijke kosten meten ─────────────────────────
+
+def test_cycle_records_execution_quality(db, market):
+    cfg = make_config()  # taker DCA koopt 2 coins
+    _engine(db, market, cfg).cycle(NOW)
+    rows = db.recent_executions()
+    assert rows and all(r["style"] == "taker" and r["filled"] == 1 for r in rows)
+    # taker-BUY: kosten ≈ slippage (10 bps) + fee (25 bps) ≈ 35 bps, positief (kost geld)
+    assert all(r["cost_bps"] is not None and r["cost_bps"] > 0 for r in rows)
+    btc = next(r for r in rows if r["pair"] == "BTC-EUR")
+    assert btc["cost_bps"] == pytest.approx(10 + 25, abs=1.0)
+
+
+def test_execution_summary_aggregates_by_style(db, market):
+    _engine(db, market, make_config()).cycle(NOW)
+    summ = db.execution_summary()
+    assert "taker" in summ
+    assert summ["taker"]["n"] >= 2 and summ["taker"]["fill_ratio"] == 1.0
+    assert summ["taker"]["avg_cost_bps"] > 0

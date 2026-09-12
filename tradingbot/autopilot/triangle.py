@@ -55,3 +55,26 @@ def scan_prices(p_ae: float, p_be: float, p_ab: float, fee_pct: float,
                 base: str = "A", bridge: str = "B") -> TriangleResult:
     """Alias voor best_edge — de 'observatie' voor een set van drie live prijzen."""
     return best_edge(p_ae, p_be, p_ab, fee_pct, base, bridge)
+
+
+def book_spread_pct(bids: list, asks: list) -> float | None:
+    """Bruto top-of-book spread in %, of None bij een leeg boek."""
+    if not bids or not asks:
+        return None
+    best_bid, best_ask = bids[0][0], asks[0][0]
+    if best_bid <= 0 or best_ask <= 0:
+        return None
+    return (best_ask - best_bid) / ((best_ask + best_bid) / 2) * 100
+
+
+def executable_eur(levels: list, eur_budget: float) -> float:
+    """Hoeveel EUR-notional je daadwerkelijk kunt uitvoeren tot `eur_budget`, gegeven de
+    diepte (levels = [[prijs, hoeveelheid], ...]). Stopt zodra het boek op is."""
+    filled = 0.0
+    for price, qty in levels:
+        if price <= 0 or qty <= 0:
+            continue
+        filled += price * qty
+        if filled >= eur_budget:
+            return eur_budget
+    return filled

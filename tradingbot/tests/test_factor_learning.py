@@ -163,6 +163,21 @@ def test_market_regime_classification():
     assert fl.market_regime({}) == "onbekend"
 
 
+def test_validation_report_sorts_and_reports_per_factor(db):
+    from conftest import make_config
+    # twee wallets: één met bewezen positieve edge, één met ruis
+    db.conn.execute("INSERT INTO factor_stats(factor_key,n,hits,sum_edge,sum_edge2) "
+                    "VALUES('smart_money:whale_a',40000,26000,1200.0,80.0)")
+    db.conn.execute("INSERT INTO factor_stats(factor_key,n,hits,sum_edge,sum_edge2) "
+                    "VALUES('smart_money:whale_b',40000,20000,0.0,80.0)")
+    db.conn.commit()
+    rows = fl.validation_report(db, make_config())
+    assert [r["factor"] for r in rows][0] == "smart_money:whale_a"   # hoogste netto edge eerst
+    a = next(r for r in rows if r["factor"] == "smart_money:whale_a")
+    assert {"n", "hit_rate", "avg_edge", "net_edge", "status", "drift"} <= set(a)
+    assert a["avg_edge"] > 0
+
+
 def test_overextended_dampens_bullish_news():
     calm = compute_reads({"AAA-EUR": ramp(100, 0)}, ["AAA-EUR"], NOW, events=flat_events())
     hot = compute_reads({"AAA-EUR": ramp(100, 3)}, ["AAA-EUR"], NOW, events=flat_events())

@@ -49,3 +49,18 @@ def test_maker_fees_lower_the_hurdle():
 def test_rejects_nonpositive_prices():
     with pytest.raises(ValueError):
         best_edge(0.0, 60000.0, 0.05, 0.25)
+
+
+# ── orderboek-diepte (statistiek voor de observer) ─────────────────
+
+def test_book_spread_pct():
+    from autopilot.triangle import book_spread_pct
+    assert book_spread_pct([[99.0, 1]], [[101.0, 1]]) == pytest.approx(2.0)
+    assert book_spread_pct([], [[101.0, 1]]) is None
+
+
+def test_executable_eur_walks_the_book():
+    from autopilot.triangle import executable_eur
+    book = [[100.0, 2], [101.0, 3]]     # 200 EUR op level 1, +303 op level 2
+    assert executable_eur(book, 150) == pytest.approx(150)      # ruim binnen level 1
+    assert executable_eur(book, 1000) == pytest.approx(503)     # boek op → minder dan budget

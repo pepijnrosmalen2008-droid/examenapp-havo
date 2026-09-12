@@ -65,4 +65,4 @@ costs:
   slippage_pct: 0.1
 
 execution:
-  mode: maker_first           # niet-urgente nieuws-koopjes passief posten; exits blijven taker
+  mode: taker                 # maker_first is opt-in: fill-kans nog niet gevalideerd (zie BITVAVO_ALPHA_ENGINE.md stap 4)
