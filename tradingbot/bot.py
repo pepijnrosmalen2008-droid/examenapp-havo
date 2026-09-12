@@ -56,11 +56,13 @@ def build_engine(cfg, db: Database, mode: TradingMode) -> TradingEngine:
         exchange = ShadowExchange(db, real or MarketData(), capital_eur=cfg.capital_eur,
                                   real_client=real,
                                   taker_fee_pct=cfg.costs.taker_fee_pct,
+                                  maker_fee_pct=cfg.costs.maker_fee_pct,
                                   slippage_pct=cfg.costs.slippage_pct)
     else:
         # PAPER: echte marktdata, gesimuleerde uitvoering. Een API-key is niet nodig.
         exchange = PaperExchange(db, MarketData(), capital_eur=cfg.capital_eur,
                                  taker_fee_pct=cfg.costs.taker_fee_pct,
+                                 maker_fee_pct=cfg.costs.maker_fee_pct,
                                  slippage_pct=cfg.costs.slippage_pct)
     risk = RiskEngine(cfg, db)
     strategy = get_strategy(cfg, db)

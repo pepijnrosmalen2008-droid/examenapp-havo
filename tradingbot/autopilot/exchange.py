@@ -117,7 +117,11 @@ class BitvavoClient(MarketData):
             return None
 
     def place_market_order(self, pair: str, side: Side, *, amount_asset: float | None = None,
-                           amount_eur: float | None = None, client_order_id: str) -> dict:
+                           amount_eur: float | None = None, client_order_id: str,
+                           style: str = "taker") -> dict:
+        # style wordt geaccepteerd voor een uniforme interface; de echte postOnly-
+        # levenscyclus (resting-order + taker-fallback) is nog niet gebouwd, dus LIVE
+        # voert altijd een market-order uit. De engine dwingt in LIVE al 'taker' af.
         if not self.allow_trading:
             raise PermissionError(
                 "place_market_order aangeroepen op een read-only client. "
@@ -143,10 +147,11 @@ class PaperExchange:
     """
 
     def __init__(self, db: Database, market: MarketData, *, capital_eur: float,
-                 taker_fee_pct: float = 0.25, slippage_pct: float = 0.1):
+                 taker_fee_pct: float = 0.25, maker_fee_pct: float = 0.15, slippage_pct: float = 0.1):
         self.db = db
         self.market = market
         self.taker_fee = taker_fee_pct / 100
+        self.maker_fee = maker_fee_pct / 100
         self.slippage = slippage_pct / 100
         if not self.db.paper_balances():  # eerste start: kapitaal storten
             self.db.set_paper_balance("EUR", capital_eur)
@@ -172,10 +177,18 @@ class PaperExchange:
         return self.market.candles(pair, interval, limit, since_ms)
 
     def place_market_order(self, pair: str, side: Side, *, amount_asset: float | None = None,
-                           amount_eur: float | None = None, client_order_id: str) -> dict:
+                           amount_eur: float | None = None, client_order_id: str,
+                           style: str = "taker") -> dict:
+        """style 'taker' = market-order (fee taker + slippage); 'maker' = passief posten
+        (postOnly-limit): maker-fee, géén slippage. De maker-fill wordt in PAPER optimistisch
+        gemodelleerd (aanname: de order vult tegen de passieve prijs) — vooruit te valideren in
+        SHADOW/LIVE. Zie ExecutionConfig."""
         base = pair.split("-")[0]
         price = self.market.ticker_price(pair)
         eur = self.db.paper_balance("EUR")
+        maker = style == "maker"
+        fee_rate = self.maker_fee if maker else self.taker_fee
+        slip = 0.0 if maker else self.slippage  # passief posten kruist de spread niet
 
         if side == Side.BUY:
             if amount_eur is None:
@@ -183,12 +196,12 @@ class PaperExchange:
             if amount_eur > eur + 0.01:  # >1 cent boven het saldo → echt te weinig EUR
                 raise RuntimeError(f"Paper: onvoldoende EUR ({eur:.2f} < {amount_eur:.2f})")
             amount_eur = min(amount_eur, eur)  # koop hooguit precies je saldo (vangt afrondings-epsilon)
-            fill_price = price * (1 + self.slippage)
-            fee = amount_eur * self.taker_fee
+            fill_price = price * (1 + slip)
+            fee = amount_eur * fee_rate
             asset_amount = (amount_eur - fee) / fill_price
             self.db.set_paper_balance("EUR", eur - amount_eur)
             self.db.set_paper_balance(base, self.db.paper_balance(base) + asset_amount)
-            return {"id": f"paper-{client_order_id[:12]}", "price": fill_price,
+            return {"id": f"paper-{client_order_id[:12]}", "price": fill_price, "style": style,
                     "amount": asset_amount, "cost": amount_eur, "fee_eur": fee, "status": "closed"}
 
         if amount_asset is None:
@@ -197,12 +210,12 @@ class PaperExchange:
         amount_asset = min(amount_asset, held)
         if amount_asset <= 0:
             raise RuntimeError(f"Paper: geen {base} om te verkopen")
-        fill_price = price * (1 - self.slippage)
+        fill_price = price * (1 - slip)
         gross = amount_asset * fill_price
-        fee = gross * self.taker_fee
+        fee = gross * fee_rate
         self.db.set_paper_balance(base, held - amount_asset)
         self.db.set_paper_balance("EUR", eur + gross - fee)
-        return {"id": f"paper-{client_order_id[:12]}", "price": fill_price,
+        return {"id": f"paper-{client_order_id[:12]}", "price": fill_price, "style": style,
                 "amount": amount_asset, "cost": gross - fee, "fee_eur": fee, "status": "closed"}
 
 
@@ -217,9 +230,10 @@ class ShadowExchange(PaperExchange):
     """
 
     def __init__(self, db: Database, market: MarketData, *, capital_eur: float,
-                 real_client=None, taker_fee_pct: float = 0.25, slippage_pct: float = 0.1):
-        super().__init__(db, market, capital_eur=capital_eur,
-                         taker_fee_pct=taker_fee_pct, slippage_pct=slippage_pct)
+                 real_client=None, taker_fee_pct: float = 0.25, maker_fee_pct: float = 0.15,
+                 slippage_pct: float = 0.1):
+        super().__init__(db, market, capital_eur=capital_eur, taker_fee_pct=taker_fee_pct,
+                         maker_fee_pct=maker_fee_pct, slippage_pct=slippage_pct)
         self._real = real_client
 
     def real_eur(self) -> float | None:
@@ -233,10 +247,12 @@ class ShadowExchange(PaperExchange):
             return None
 
     def place_market_order(self, pair: str, side: Side, *, amount_asset: float | None = None,
-                           amount_eur: float | None = None, client_order_id: str) -> dict:
+                           amount_eur: float | None = None, client_order_id: str,
+                           style: str = "taker") -> dict:
         fill = super().place_market_order(pair, side, amount_asset=amount_asset,
-                                          amount_eur=amount_eur, client_order_id=client_order_id)
-        log.warning("SHADOW: order NIET verstuurd, alleen gesimuleerd — %s %s "
-                    "(≈€%.2f @ €%.2f)", side.value, pair, fill["cost"], fill["price"])
+                                          amount_eur=amount_eur, client_order_id=client_order_id,
+                                          style=style)
+        log.warning("SHADOW: order NIET verstuurd, alleen gesimuleerd — %s %s %s "
+                    "(≈€%.2f @ €%.2f)", style, side.value, pair, fill["cost"], fill["price"])
         fill["id"] = f"shadow-{client_order_id[:12]}"
         return fill

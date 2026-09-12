@@ -43,4 +43,8 @@ universe:
 
 costs:
   taker_fee_pct: 0.25
+  maker_fee_pct: 0.15         # postOnly bespaart de taker−maker-fee + slippage
   slippage_pct: 0.1
+
+execution:
+  mode: maker_first           # niet-urgente entries passief posten; exits blijven taker

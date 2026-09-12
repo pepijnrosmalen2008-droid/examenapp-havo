@@ -147,7 +147,29 @@ class BacktestCostConfig(BaseModel):
     # Bitvavo taker fee, standaard tarief (categorie A, < 100k EUR/30d volume).
     # Controleer het actuele tarief op https://bitvavo.com/nl/fees
     taker_fee_pct: float = Field(default=0.25, ge=0, le=5)
+    # Maker fee (postOnly / liquidity toevoegen) — lager dan taker. Het verschil
+    # taker−maker is de gegarandeerde besparing van passief i.p.v. agressief uitvoeren.
+    maker_fee_pct: float = Field(default=0.15, ge=0, le=5)
     slippage_pct: float = Field(default=0.1, ge=0, le=5)
+
+
+class ExecutionConfig(BaseModel):
+    """Hoe orders worden uitgevoerd — losgekoppeld van WAT er verhandeld wordt.
+
+    'taker'       : altijd market-order (agressief, betaalt taker-fee + slippage). Standaard,
+                    zodat bestaande bots ongewijzigd blijven.
+    'maker_first' : niet-urgente orders passief posten (postOnly-limit): bespaart de
+                    taker−maker-fee en de slippage. Urgente exits (stop-loss, take-profit,
+                    kill-switch, circuit breaker, noodstop) blijven altijd taker — er uit
+                    komen gaat vóór een paar basispunten besparen.
+
+    Let op: in PAPER/SHADOW wordt een maker-fill *optimistisch* gemodelleerd (aanname: de
+    postOnly-order vult tegen de passieve prijs). Die aanname wordt vooruit gevalideerd in
+    SHADOW/LIVE. In LIVE is de echte resting-order-levenscyclus nog niet gebouwd, dus daar
+    valt de bot voorlopig terug op taker (zie BITVAVO_ALPHA_ENGINE.md, stap 1)."""
+    model_config = ConfigDict(extra="forbid")
+
+    mode: Literal["taker", "maker_first"] = "taker"
 
 
 class AppConfig(BaseModel):
@@ -161,6 +183,7 @@ class AppConfig(BaseModel):
     strategy: StrategyConfig
     schedule: ScheduleConfig
     costs: BacktestCostConfig = Field(default_factory=BacktestCostConfig)
+    execution: ExecutionConfig = Field(default_factory=ExecutionConfig)
     regime: RegimeConfig = Field(default_factory=RegimeConfig)
     circuit_breaker: CircuitBreakerConfig = Field(default_factory=CircuitBreakerConfig)
     universe: UniverseConfig = Field(default_factory=UniverseConfig)

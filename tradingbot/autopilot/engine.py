@@ -289,16 +289,24 @@ class TradingEngine:
             sig.pair, sig.side, amount_eur=decision.approved_eur or None,
             amount_asset=decision.approved_asset, reason=sig.reason, strategy=sig.strategy)
 
+        # Executiestijl kiezen: niet-urgente orders passief posten (maker) als de config
+        # dat vraagt; urgente exits blijven taker. LIVE dwingt taker af tot de echte
+        # postOnly-levenscyclus is gebouwd (zie BITVAVO_ALPHA_ENGINE.md, stap 1).
+        from .execution import choose_style
+        style = choose_style(sig.reason, self.cfg)
+        if self.mode == TradingMode.LIVE:
+            style = "taker"
+
         # Stap 2: plaatsen (paper en live delen dit codepad; alleen `self.x` verschilt)
         try:
             if sig.side == Side.BUY:
                 fill = self.x.place_market_order(sig.pair, Side.BUY,
                                                  amount_eur=decision.approved_eur,
-                                                 client_order_id=coid)
+                                                 client_order_id=coid, style=style)
             else:
                 fill = self.x.place_market_order(sig.pair, Side.SELL,
                                                  amount_asset=decision.approved_asset,
-                                                 client_order_id=coid)
+                                                 client_order_id=coid, style=style)
         except Exception as e:  # noqa: BLE001
             self.db.mark_order(coid, OrderStatus.REJECTED)
             self._log_action(sig, "mislukt", str(e))
@@ -320,9 +328,10 @@ class TradingEngine:
 
         self._log_action(sig, "uitgevoerd", sig.reason, eur=cost)
         pnl_txt = f" | P&L €{realized:+.2f}" if sig.side == Side.SELL else ""
+        style_txt = "" if style == "taker" else " [maker]"
         msg = (f"{'🟢' if sig.side == Side.BUY else '🔴'} {self.mode.value}: "
                f"{sig.side.value} {sig.pair} {amount:.8f} @ €{price:.2f} "
-               f"(€{cost:.2f}, fee €{fee:.2f}){pnl_txt} — {sig.reason}")
+               f"(€{cost:.2f}, fee €{fee:.2f}{style_txt}){pnl_txt} — {sig.reason}")
         log.info(msg)
         self.notify.send(msg)
 
