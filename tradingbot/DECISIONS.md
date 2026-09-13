@@ -391,6 +391,16 @@ nog niet gedaan. Gefaseerd, met dezelfde discipline als crypto: contract → ske
 → data-kwaliteitspoort → SHADOW → LIVE (achter de drie-slot-guardrail, met kill-criteria). Geen euro
 live tot fase 6.
 
+Vervolg: **IBKR Pro** vastgezet (niet Lite — API-koppeling vraagt een funded Pro-account; verder
+$0 account/inactiviteit/API/Gateway, alleen commissie per trade + optionele data-abonnementen). De
+gekozen informatie-architectuur is een **eigen gratis data-engine** (nieuws, fundamentals,
+jaarverslagen, earnings, prijzen, macro, sector, sentiment → eigen analyse → kandidaten), met IBKR
+puur voor verificatie + brokerage — dezelfde filosofie als de crypto-probes. Harde grens, nu gebouwd
+(`autopilot/datasource.py`): **gratis data ≠ betrouwbare data** — elke bron wordt eerst gemeten
+(latency, ok-ratio, versheid, #records) en een conservatieve poort (`is_trustworthy`) bepaalt of hij
+trades mag aandrijven of alleen mag informeren. Zichtbaar via `status.py`; enforcement in het
+fetch-pad van de research-agents is de volgende wiring-stap.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

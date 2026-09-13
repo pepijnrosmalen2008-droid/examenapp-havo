@@ -6,6 +6,29 @@ Voor "één broker, wereldwijde aandelen, écht programmatisch orders plaatsen" 
 170+ markten in ~40 landen en API's (Client Portal Web API, TWS API, FIX) die zowel marktdata als
 order-invoer ondersteunen — expliciet gepositioneerd voor algorithmic trading.
 
+**IBKR Pro, niet Lite.** Kostenprofiel dat past bij "commissie per trade is prima, verder €0":
+$0 account-minimum, $0 inactiviteit, $0 API, gratis IB Gateway. IBKR meldt dat API-koppeling voor
+sommige toepassingen een *funded Pro*-account vereist; voor een eigen bot kiezen we daarom Pro. De
+enige structurele kosten zijn commissie/fees per trade (aanvaard) en — per beurs — optionele
+marktdata-abonnementen.
+
+## De informatie-architectuur: eigen gratis data-engine, IBKR alleen voor brokerage
+De interessante vraag is niet "welke dure data-API kopen we?" maar "hoe verzamelt de bot zelf zoveel
+mogelijk relevante wereldwijde info gratis, en gebruikt hij IBKR alleen voor verificatie + uitvoering?"
+Dat is precies de crypto-filosofie (nieuws/on-chain/politici-probes zijn al gratis-bron-gedreven):
+
+    gratis bronnen (nieuws, fundamentals, jaarverslagen, earnings/events, prijzen, macro, sector,
+    sentiment) → eigen analyse → ~10.000 aandelen → 500 kandidaten → 50 kansen → IBKR (realtime
+    verificatie + account + orders + fills)
+
+**Harde grens (gebouwd): gratis data ≠ betrouwbare data.** Elke bron wordt eerst gemeten op latency,
+dekking, versheid en betrouwbaarheid vóór hij een trade mag aandrijven — anders bouwen we een bot op
+rotzooi. Zie `autopilot/datasource.py`: `measure()` (latency/succes/#records per ophaal-poging),
+`db.datasource_stats()` (ok-ratio, latency, versheid per bron) en `is_trustworthy()` — een conservatieve
+poort die bepaalt of een bron mag *handelen* of alleen mag *informeren*. Zichtbaar via `status.py`.
+Volgende stap: deze poort in het fetch-pad van de research-agents inbouwen zodat een onbetrouwbare
+bron automatisch teruggezet wordt naar louter-informeren.
+
 ## Architectuur: gedeelde kern, twee brokers
 De execution-engine wordt broker-agnostisch gemaakt via een dun contract (`autopilot/broker.py`,
 `Broker`-Protocol) dat de bestaande Bitvavo-exchanges al vervullen:
@@ -62,7 +85,10 @@ stap na de adapter.
 ## Wat vandaag gebouwd is
 - `autopilot/broker.py`: `Broker`-Protocol (contract dat de engine gebruikt) + `REQUIRED_METHODS`.
 - `autopilot/ibkr.py`: `IBKRBroker`-skelet (conform het contract; weigert tot de Gateway gewired is).
-- Conformance-test: `PaperExchange` voldoet aan `Broker`; `IBKRBroker` weigert netjes zonder gateway.
+- `autopilot/datasource.py`: databron-kwaliteit-poort (meten + `is_trustworthy` + report), zodat de
+  gratis-data-engine niet op onbetrouwbare bronnen bouwt. Werkt nu al voor de crypto-probes.
+- Conformance- en poort-tests: `PaperExchange` voldoet aan `Broker`; `IBKRBroker` weigert netjes;
+  de databron-poort keurt trage/onbetrouwbare/oude bronnen af.
 
 Bewust niet gebouwd: de echte IBKR-verbinding (vereist account + gateway + data-permissions, hier niet
 testbaar), config-ondersteuning voor niet-EUR-instrumenten, markturen en FX. Dat zijn fase 3+.

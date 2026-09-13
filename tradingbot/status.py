@@ -96,6 +96,20 @@ def main() -> int:
             print(f"   {style:<6} n={s['n']:<4} fill {fr:<5} gem. kosten {cb:<10} "
                   f"totale fee {eur(s['fee_eur'])}")
 
+    # Databron-kwaliteit: gratis bronnen die zich (nog niet) bewezen hebben.
+    try:
+        from autopilot import datasource as ds
+        srcs = ds.report(db)
+    except Exception:  # noqa: BLE001
+        srcs = []
+    if srcs:
+        print("\n Databron-kwaliteit (gratis data eerst meten):")
+        for s in srcs:
+            lat = f"{s['avg_latency_ms']:.0f}ms" if s["avg_latency_ms"] is not None else "n/b"
+            okr = f"{s['ok_ratio'] * 100:.0f}%" if s["ok_ratio"] is not None else "n/b"
+            mark = "✅" if s["trustworthy"] else "⚠️ "
+            print(f"   {mark} {s['source'][:34]:<34} ok {okr:<5} lat {lat:<7} — {s['reason']}")
+
     # Factor-/wallet-validatie: forward-only afrekening per signaalbron.
     try:
         from autopilot import factor_learning as fl

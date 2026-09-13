@@ -98,6 +98,19 @@ CREATE TABLE IF NOT EXISTS decision_log (
     record  TEXT NOT NULL           -- volledige JSON: factoren, acties, blokkades, overwegingen
 );
 
+-- Databron-kwaliteit: per gratis bron latency/dekking/betrouwbaarheid meten vóór we hem
+-- vertrouwen. "Gratis data is niet automatisch betrouwbare data" — een bron onder de drempel
+-- mag hooguit informeren (gedachtegang), niet zelf trades aandrijven.
+CREATE TABLE IF NOT EXISTS datasource_log (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    ts          TEXT NOT NULL,
+    source      TEXT NOT NULL,          -- naam/URL van de bron
+    ok          INTEGER NOT NULL,       -- 1 = succesvol opgehaald
+    latency_ms  REAL,                   -- responstijd
+    items       INTEGER DEFAULT 0,      -- aantal bruikbare records
+    note        TEXT
+);
+
 -- Execution-kwaliteit: per fill de werkelijke kosten meten (fee + slippage t.o.v. de
 -- referentieprijs op beslismoment). Fundament voor "netto P&L per opportunity, incl. fill-kans":
 -- in PAPER is elke fill onmiddellijk (style meestal taker), in SHADOW/LIVE registreert dit de
@@ -409,6 +422,46 @@ class Database:
             "cost_bps, filled FROM execution_log ORDER BY id DESC LIMIT ?", (limit,),
         ).fetchall()
         return [dict(r) for r in rows]
+
+    # ── databron-kwaliteit (gratis data eerst meten, dan vertrouwen) ─
+    def log_datasource(self, *, source: str, ok: bool, latency_ms: float | None,
+                       items: int = 0, note: str | None = None) -> None:
+        self.conn.execute(
+            "INSERT INTO datasource_log(ts, source, ok, latency_ms, items, note) VALUES(?,?,?,?,?,?)",
+            (utcnow(), source, 1 if ok else 0, latency_ms, items, note),
+        )
+        self.conn.execute(
+            "DELETE FROM datasource_log WHERE id < "
+            "(SELECT MIN(id) FROM (SELECT id FROM datasource_log ORDER BY id DESC LIMIT 2000))"
+        )
+        self.conn.commit()
+
+    def datasource_stats(self) -> dict:
+        """Per bron: n, ok-ratio, gem. latency, gem. items, seconden sinds laatste OK."""
+        rows = self.conn.execute(
+            "SELECT source, COUNT(*) n, SUM(ok) n_ok, "
+            "  AVG(CASE WHEN ok=1 THEN latency_ms END) avg_latency_ms, "
+            "  AVG(CASE WHEN ok=1 THEN items END) avg_items, "
+            "  MAX(CASE WHEN ok=1 THEN ts END) last_ok "
+            "FROM datasource_log GROUP BY source"
+        ).fetchall()
+        out = {}
+        for r in rows:
+            n = r["n"] or 0
+            age = None
+            if r["last_ok"]:
+                try:
+                    age = (datetime.now(timezone.utc) - datetime.fromisoformat(r["last_ok"])).total_seconds()
+                except (ValueError, TypeError):
+                    age = None
+            out[r["source"]] = {
+                "n": n,
+                "ok_ratio": (r["n_ok"] / n) if n else None,
+                "avg_latency_ms": r["avg_latency_ms"],
+                "avg_items": r["avg_items"] or 0,
+                "last_ok_age_s": age,
+            }
+        return out
 
     # ── factor-leerlus (forward-only betrouwbaarheid) ────────────────
 
