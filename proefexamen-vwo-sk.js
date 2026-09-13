@@ -42,7 +42,7 @@ SLAGIO_EXAMENS.vwo.sk = {
   niveau: 'vwo',
   jaar: new Date().getFullYear(),
   duur_minuten: 150,
-  max_punten: 34,
+  max_punten: 29,
   bron: 'Slagio origineel · examenstijl',
   bijlagen: [],
   opgaven: [
