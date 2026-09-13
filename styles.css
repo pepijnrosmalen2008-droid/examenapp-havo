@@ -1097,6 +1097,16 @@ html.dark .qb{background:#2e3550}
 .ex-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 12px;text-align:center}
 .ex-stat-val{font-size:22px;font-weight:900;color:#fff;font-family:var(--font-head);line-height:1}
 .ex-stat-lbl{font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.6px;margin-top:4px;font-weight:600}
+.ex-versie-row{margin-bottom:20px}
+.ex-versie-lbl{font-size:11px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.6px;font-weight:700;margin-bottom:10px}
+.ex-versie-chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.ex-versie-chip{display:flex;flex-direction:column;align-items:flex-start;gap:3px;background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.1);border-radius:14px;padding:12px 14px;cursor:pointer;text-align:left;transition:all .18s;color:#fff;font-family:inherit}
+.ex-versie-chip:hover{border-color:rgba(239,68,68,.5);background:rgba(255,255,255,.07)}
+.ex-versie-chip.on{border-color:#ef4444;background:rgba(239,68,68,.14);box-shadow:0 4px 18px rgba(239,68,68,.22)}
+.ex-versie-chip .ev-naam{font-size:15px;font-weight:800;font-family:var(--font-head);letter-spacing:-.2px}
+.ex-versie-chip .ev-meta{font-size:11px;color:rgba(255,255,255,.6);font-variant-numeric:tabular-nums}
+.ex-versie-chip .ev-sub{font-size:10.5px;color:rgba(255,255,255,.4)}
+.ex-versie-chip.on .ev-naam{color:#fca5a5}
 .ex-info-box{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.18);border-radius:14px;padding:14px 16px;margin-bottom:24px;font-size:13px;color:rgba(255,255,255,.65);line-height:1.7}
 .ex-info-box strong{color:#fbbf24}
 .ex-start-btn{width:100%;background:linear-gradient(135deg,#ef4444,#dc2626);color:#fff;border:none;border-radius:16px;padding:20px;font-family:var(--font-head);font-size:17px;font-weight:800;cursor:pointer;letter-spacing:-.2px;box-shadow:0 6px 24px rgba(239,68,68,.35);transition:all .2s}

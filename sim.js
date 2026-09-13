@@ -330,6 +330,8 @@ function startExamen(){
       bijlRow.style.display = 'none';
     }
   }
+  // Officiële examens hebben geen versiekeuze (dit is het volledige examen).
+  const vrow=document.getElementById('ex-versie-row'); if(vrow) vrow.style.display='none';
   // Toon scherm
   document.getElementById('ex-intro').style.display = '';
   document.getElementById('ex-quiz').style.display = 'none';
@@ -337,22 +339,106 @@ function startExamen(){
   show('sc-examen');
 }
 
+// ── Versies (kort → volledig) ────────────────────────────────────────────
+// Een proefexamen kan in meerdere lengtes gemaakt worden. De versies worden
+// generiek uit de opgaven-structuur afgeleid, zodat ze automatisch meegroeien
+// als er opgaven bijkomen. Elke versie kiest de eerste k opgaven; punten en
+// tijd worden per versie berekend (ongeveer 2,4 min per punt, zoals op het CE,
+// afgetopt op 2 uur zolang de volledige 3-uursversies nog niet bestaan).
+function _exVersies(ex){
+  const ops = (ex.opgaven||[]).map(o=>o.nr);
+  const N = ops.length;
+  const mkStats = (nrs)=>{
+    const set = new Set(nrs);
+    const vr = (ex.vragen||[]).filter(q=>set.has(q.opgave));
+    const punten = vr.reduce((a,q)=>a+(q.punten||0),0);
+    const minuten = Math.max(15, Math.min(120, Math.round(punten*2.4/5)*5));
+    return { opgaveNrs:nrs, aantal:vr.length, punten, minuten };
+  };
+  // Geen opgaven-structuur → één versie met alle vragen.
+  if(N===0){
+    const punten = (ex.vragen||[]).reduce((a,q)=>a+(q.punten||0),0);
+    return [{ id:'vol', naam:'Volledig', sub:'hele proefexamen', opgaveNrs:null,
+      aantal:(ex.vragen||[]).length, punten, minuten:Math.max(15,Math.min(120,Math.round(punten*2.4/5)*5)) }];
+  }
+  const take = (k)=> ops.slice(0, Math.max(1, Math.min(N, k)));
+  const defs = [];
+  const seen = [];
+  const push = (id,naam,sub,k)=>{
+    const nrs = take(k); const key = nrs.join(',');
+    if(seen.includes(key)) return;              // sla dubbele tiers over
+    seen.push(key);
+    defs.push(Object.assign({ id, naam, sub }, mkStats(nrs)));
+  };
+  if(N >= 5){
+    push('kort','Kort','snelle check', Math.max(2, Math.ceil(N*0.4)));
+    push('middel','Middel','halve zit', Math.max(3, Math.ceil(N*0.7)));
+  } else if(N >= 3){
+    push('kort','Kort','snelle check', 2);
+  }
+  push('vol','Volledig','hele proefexamen', N);
+  return defs;
+}
+
+function _exApplyVersie(full, v){
+  if(!v || !v.opgaveNrs){ return full; }
+  const set = new Set(v.opgaveNrs);
+  const opgaven = (full.opgaven||[]).filter(o=>set.has(o.nr));
+  const vragen  = (full.vragen ||[]).filter(q=>set.has(q.opgave));
+  return Object.assign({}, full, { opgaven, vragen, max_punten:v.punten, duur_minuten:v.minuten });
+}
+
+function _exFmtDuur(min){
+  const h=Math.floor(min/60), m=min%60;
+  return h>0 ? (m===0?`${h} uur`:`${h}u ${m}m`) : `${m} min`;
+}
+
+function _exUpdateIntroStats(v){
+  const _set=(id,t)=>{const el=document.getElementById(id);if(el)el.textContent=t;};
+  _set('ex-stat-vragen', v.aantal);
+  _set('ex-stat-punten', v.punten);
+  _set('ex-stat-tijd', _exFmtDuur(v.minuten));
+  _set('ex-timer', _exFmtTime(v.minuten*60));
+  const _tm=document.getElementById('ex-timer'); if(_tm)_tm.className='ex-timer';
+  _set('ex-score-chip', `0 / ${v.punten} pt`);
+}
+
+function exPickVersie(id){
+  const v = (EX.versies||[]).find(x=>x.id===id);
+  if(!v) return;
+  EX.versieId = id;
+  document.querySelectorAll('#ex-versie-chips .ex-versie-chip').forEach(el=>{
+    el.classList.toggle('on', el.dataset.vid===id);
+  });
+  _exUpdateIntroStats(v);
+  try{ if(typeof playSound==='function') playSound('tick'); }catch(e){}
+}
+
 // Slagio-proefexamen (origineel, examenstijl) op dezelfde runner-engine.
 function startProefexamen(){
   const vakId = (ST.vak && ST.vak.id) || ST.vakId || '';
   const ex = (typeof SLAGIO_EXAMENS!=='undefined' && SLAGIO_EXAMENS[APP_LEVEL] && SLAGIO_EXAMENS[APP_LEVEL][vakId]) || null;
   if(!ex){ showToast('Nog geen proefexamen voor dit vak'); return; }
-  EX = { examen: ex, idx:0, answers:{}, grades:{}, phase:'intro', timer:null, secondsLeft: ex.duur_minuten*60, selfPts:0, gradedCount:0 };
+  const versies = _exVersies(ex);
+  const defId = versies[versies.length-1].id;   // standaard: Volledig
+  EX = { examen: ex, fullExamen: ex, versies, versieId: defId,
+         idx:0, answers:{}, grades:{}, phase:'intro', timer:null,
+         secondsLeft: ex.duur_minuten*60, selfPts:0, gradedCount:0 };
   const _set=(id,t)=>{const el=document.getElementById(id);if(el)el.textContent=t;};
   _set('ex-intro-title', `${ex.titel} ${(ex.niveau||APP_LEVEL).toUpperCase()} · Proefexamen`);
   _set('ex-intro-sub', 'Slagio origineel · examenstijl · zelf nakijken met het modelantwoord');
-  _set('ex-stat-vragen', ex.vragen.length);
-  _set('ex-stat-punten', ex.max_punten);
-  const h=Math.floor(ex.duur_minuten/60), m=ex.duur_minuten%60;
-  _set('ex-stat-tijd', m===0?`${h} uur`:`${h}u ${m}m`);
-  _set('ex-timer', _exFmtTime(ex.duur_minuten*60));
-  const _tm=document.getElementById('ex-timer'); if(_tm)_tm.className='ex-timer';
-  _set('ex-score-chip', `0 / ${ex.max_punten} pt`);
+  // Versiekiezer opbouwen
+  const chips = document.getElementById('ex-versie-chips');
+  if(chips){
+    chips.innerHTML = versies.map(v=>
+      `<button class="ex-versie-chip${v.id===defId?' on':''}" data-vid="${v.id}" onclick="exPickVersie('${v.id}')">`+
+      `<span class="ev-naam">${v.naam}</span>`+
+      `<span class="ev-meta">${v.aantal} vragen · ${v.punten} pt · ${_exFmtDuur(v.minuten)}</span>`+
+      `<span class="ev-sub">${v.sub}</span></button>`
+    ).join('');
+  }
+  const vrow=document.getElementById('ex-versie-row'); if(vrow) vrow.style.display = versies.length>1 ? '' : 'none';
+  _exUpdateIntroStats(versies.find(v=>v.id===defId));
   const _pf=document.getElementById('ex-prog-fill'); if(_pf)_pf.style.width='0%';
   const bijlRow=document.getElementById('ex-bijlage-row'); if(bijlRow)bijlRow.style.display='none';
   document.getElementById('ex-intro').style.display='';
@@ -365,6 +451,12 @@ function startProefexamen(){
 // Publieke start: eerst een korte countdown (3·2·1·Start!) om de spanning
 // op te bouwen, dan pas het echte examen. prefers-reduced-motion → direct door.
 function examenStart(){
+  // Gekozen versie toepassen (alleen proefexamens hebben versies).
+  if(EX.fullExamen && EX.versieId){
+    const v = (EX.versies||[]).find(x=>x.id===EX.versieId);
+    EX.examen = _exApplyVersie(EX.fullExamen, v);
+    EX.secondsLeft = EX.examen.duur_minuten*60;
+  }
   const ov = document.getElementById('ex-countdown');
   const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(!ov || reduce){ _examenBegin(); return; }

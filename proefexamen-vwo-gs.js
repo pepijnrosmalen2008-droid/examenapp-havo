@@ -88,7 +88,7 @@ SLAGIO_EXAMENS.vwo.gs = {
   niveau: 'vwo',
   jaar: new Date().getFullYear(),
   duur_minuten: 150,
-  max_punten: 17,
+  max_punten: 22,
   bron: 'Slagio origineel · examenstijl (gestileerde bronnen)',
   bijlagen: [],
   opgaven: [
@@ -145,5 +145,14 @@ SLAGIO_EXAMENS.vwo.gs = {
       vraag:'Leg uit waarom er ondanks de enorme spanning tussen de blokken geen directe oorlog tussen de VS en de Sovjet-Unie uitbrak.',
       antwoord:'Beide supermachten beschikten over kernwapens. Een directe oorlog zou uitlopen op wederzijdse vernietiging (het idee van "mutual assured destruction"): wie als eerste aanviel, zou zelf ook worden vernietigd door een kernaanval van de ander. Die afschrikking zorgde ervoor dat het conflict "koud" bleef en zich uitte in wapenwedloop, propaganda en oorlogen via bondgenoten (proxy-oorlogen) in plaats van een rechtstreekse oorlog.',
       antwoord_rubric:'1 punt: nucleaire afschrikking / wederzijdse vernietiging (mutual assured destruction) houdt directe oorlog tegen.' },
+    // Opgave 5
+    { nr:9, opgave:5, punten:3, type:'open', domein:'Dekolonisatie',
+      vraag:'Beschrijf met bron 5 het tempo van de dekolonisatie na 1945, en leg uit welke rol de Tweede Wereldoorlog en de Koude Oorlog bij dit proces speelden.',
+      antwoord:'Bron 5 laat zien dat de dekolonisatie kort na 1945 op gang komt en zich in enkele decennia voltrekt: Indonesie (1945/1949), India (1947), het "Jaar van Afrika" met 17 onafhankelijke landen (1960) en Suriname (1975). In ongeveer dertig jaar verdwijnen zo de meeste koloniale rijken. De Tweede Wereldoorlog versnelde dit: de Europese koloniale mogendheden waren militair en economisch verzwakt, hun onoverwinnelijkheid was doorbroken (bijvoorbeeld door de Japanse bezetting van Aziatische kolonien), en het zelfbeschikkingsrecht kreeg wereldwijd steun. Ook de Koude Oorlog speelde een rol: zowel de VS als de Sovjet-Unie waren om ideologische redenen tegen het oude kolonialisme en probeerden de nieuwe onafhankelijke staten aan hun kant te krijgen, wat extra druk op de kolonisatoren zette.',
+      antwoord_rubric:'1 punt: beschrijving tempo met voorbeelden/jaartallen uit de bron (snel, binnen ca. 30 jaar). 1 punt: rol WO II (verzwakte kolonisatoren, gebroken onoverwinnelijkheid, zelfbeschikkingsrecht). 1 punt: rol Koude Oorlog (VS en SU tegen kolonialisme, wedijver om de nieuwe staten).' },
+    { nr:10, opgave:5, punten:2, type:'open', domein:'Dekolonisatie',
+      vraag:'De onafhankelijkheid van Indonesie (bron 5) verliep anders dan die van veel andere kolonien. Leg uit waarom juist hier een gewapend conflict met het moederland ontstond, en noem het begrip waarmee Nederland deze strijd destijds aanduidde.',
+      antwoord:'Indonesie riep in 1945 zelf eenzijdig de onafhankelijkheid uit (Soekarno en Hatta), maar Nederland erkende dit niet en wilde zijn kolonie terug, mede vanwege het economische belang (grondstoffen, "Indie verloren, rampspoed geboren"). Daardoor ontstond een gewapend conflict: Nederland stuurde troepen om het gezag te herstellen. Pas onder zware internationale druk (vooral van de VS, die met stopzetting van Marshallhulp dreigde) droeg Nederland in 1949 de soevereiniteit over. Nederland noemde de militaire acties in deze strijd eufemistisch "politionele acties" (politieacties), alsof het slechts om het herstel van orde en gezag ging in plaats van om een koloniale oorlog.',
+      antwoord_rubric:'1 punt: uitleg conflict (Indonesie roept in 1945 zelf onafhankelijkheid uit, Nederland erkent dit niet en wil de kolonie/het economisch belang terug -> gewapende strijd, met rol internationale druk/VS). 1 punt: het begrip "politionele acties" genoemd.' },
   ],
 };
