@@ -1,46 +1,73 @@
 // ═══════════════════════════════════════════════════════════════════════
 // proefexamen-vwo-du.js  ORIGINEEL Slagio-proefexamen (vwo Duits).
-// Eigen Duitse tekst, vragen en figuren. Geen reproductie van een CvTE-examen.
-// VWO-CE-niveau leesvaardigheid: Hauptgedanke, functie alinea, woord in
-// context, verwijswoord, houding auteur en gap-fit. Vragen in het
-// Nederlands (zoals op het CE); de tekst is volledig door Slagio geschreven.
+// Eigen Duitse teksten, vragen en figuren. Geen reproductie van een CvTE-examen.
+// CE-stijl leesvaardigheid: meerdere teksten, overwegend meerkeuze (in het
+// Duits) met enkele open vragen (in het Nederlands), zoals op het echte
+// centraal examen. Alle teksten zijn door Slagio geschreven.
 // ═══════════════════════════════════════════════════════════════════════
 var SLAGIO_EXAMENS = (typeof SLAGIO_EXAMENS !== 'undefined' && SLAGIO_EXAMENS) || {};
 SLAGIO_EXAMENS.vwo = SLAGIO_EXAMENS.vwo || {};
 
-var _VDUAFB = {
-  // Duitse tekst als artikelkaart
-  artikel:`<svg viewBox="0 0 360 204" role="img" aria-label="deutscher artikelausschnitt"><rect x="14" y="10" width="332" height="186" rx="6" fill="#ffffff" stroke="#d7dde6" stroke-width="1.4"/>
-    <text x="30" y="34" font-family="Georgia,serif" font-size="13.5" font-weight="800" fill="#1b2230">Der Wolf ist zurück</text>
-    <text x="30" y="49" font-family="sans-serif" font-size="8" font-style="italic" fill="#8a94a3">Segen oder Gefahr für das Land?</text>
-    <line x1="30" y1="57" x2="330" y2="57" stroke="#eef1f5" stroke-width="1.4"/>
-    <g font-family="Georgia,serif" font-size="8.5" fill="#3a4250">
-      <text x="30" y="74">(1) Mehr als hundert Jahre lang galt der Wolf in</text>
-      <text x="30" y="88">Deutschland als ausgestorben. Seit einigen Jahren aber</text>
-      <text x="30" y="102">kehrt er zurück: Heute leben wieder mehr als tausend</text>
-      <text x="30" y="116">Wölfe in den Wäldern des Landes.</text>
-      <text x="30" y="134">(2) Naturschützer freuen sich darüber. Viele Bauern</text>
-      <text x="30" y="148">jedoch sind besorgt, denn die Wölfe reißen manchmal</text>
-      <text x="30" y="162">ihre Schafe. Der Streit darüber, wie man mit dem</text>
-      <text x="30" y="176">Rückkehrer umgehen soll, wird immer lauter.</text>
-    </g></svg>`,
-  // Structuur schema
-  structuur:`<svg viewBox="0 0 360 180" role="img" aria-label="struktur der argumentation">
-    <g font-family="sans-serif">
-      <rect x="30" y="16" width="140" height="46" rx="6" fill="#eafaf0" stroke="#2e9e5b" stroke-width="1.6"/><text x="100" y="34" font-size="9" font-weight="800" fill="#1b7a41" text-anchor="middle">Naturschützer</text><text x="100" y="47" font-size="7" fill="#4a5568" text-anchor="middle">Artenvielfalt,</text><text x="100" y="56" font-size="7" fill="#4a5568" text-anchor="middle">Rückkehr = Erfolg</text>
-      <rect x="190" y="16" width="140" height="46" rx="6" fill="#fbeaea" stroke="#c0392b" stroke-width="1.6"/><text x="260" y="34" font-size="9" font-weight="800" fill="#9e2b22" text-anchor="middle">Bauern</text><text x="260" y="47" font-size="7" fill="#4a5568" text-anchor="middle">gerissene Schafe,</text><text x="260" y="56" font-size="7" fill="#4a5568" text-anchor="middle">Angst, Kosten</text>
-      <rect x="96" y="92" width="168" height="40" rx="6" fill="#eef4ff" stroke="#2563eb" stroke-width="1.6"/><text x="180" y="110" font-size="9" font-weight="800" fill="#1b4fb0" text-anchor="middle">Kompromiss?</text><text x="180" y="123" font-size="7.5" fill="#4a5568" text-anchor="middle">Herdenschutz + Entschädigung</text>
-    </g>
-    <g stroke="#94a0b8" stroke-width="1.4"><line x1="100" y1="62" x2="150" y2="92"/><line x1="260" y1="62" x2="210" y2="92"/></g>
-    <text x="180" y="164" font-family="sans-serif" font-size="7.5" fill="#4a5568" text-anchor="middle">Abbildung: zwei Seiten und ein möglicher Kompromiss</text></svg>`,
-  // Toon schaal
-  toon:`<svg viewBox="0 0 360 150" role="img" aria-label="haltung des autors">
-    <text x="180" y="26" font-family="sans-serif" font-size="9.5" font-weight="800" fill="#1b2230" text-anchor="middle">die Haltung des Autors</text>
-    <line x1="40" y1="80" x2="320" y2="80" stroke="#1b2230" stroke-width="2"/>
-    <g stroke="#1b2230" stroke-width="1.4"><line x1="40" y1="74" x2="40" y2="86"/><line x1="180" y1="74" x2="180" y2="86"/><line x1="320" y1="74" x2="320" y2="86"/></g>
-    <g font-family="sans-serif" font-size="8.5" fill="#4a5568" text-anchor="middle"><text x="40" y="100">begeistert</text><text x="180" y="100">abwägend /</text><text x="180" y="110">neutral</text><text x="320" y="100">ablehnend</text></g>
-    <circle cx="180" cy="80" r="6" fill="#2563eb"/><text x="180" y="62" font-family="sans-serif" font-size="8" font-weight="700" fill="#2563eb" text-anchor="middle">Autor hier</text>
-    <text x="180" y="138" font-family="sans-serif" font-size="7.5" fill="#4a5568" text-anchor="middle">Abbildung: die Position des Autors</text></svg>`,
+function _duHdr(title, src){
+  return '<svg viewBox="0 0 360 92" role="img" aria-label="artikelkopf">'+
+    '<rect x="10" y="8" width="340" height="76" rx="6" fill="#ffffff" stroke="#d7dde6" stroke-width="1.4"/>'+
+    '<rect x="10" y="8" width="6" height="76" rx="3" fill="#c0392b"/>'+
+    '<text x="28" y="40" font-family="Georgia,serif" font-size="16" font-weight="800" fill="#1b2230">'+title+'</text>'+
+    '<text x="28" y="62" font-family="sans-serif" font-size="9.5" font-style="italic" fill="#8a94a3">'+src+'</text>'+
+    '<text x="28" y="77" font-family="sans-serif" font-size="8" fill="#b3bcc9">Lies den Text und beantworte die Fragen.</text></svg>';
+}
+
+var _VDUTXT = {
+  wolf:
+`(1) Mehr als hundert Jahre lang galt der Wolf in Deutschland als ausgestorben. Seit einigen Jahren aber kehrt er zurück: Heute leben wieder mehr als tausend Wölfe in den Wäldern des Landes.
+
+(2) Naturschützer freuen sich darüber. Für sie ist die Rückkehr des Wolfs ein Zeichen dafür, dass die Natur sich erholt. Als Jäger an der Spitze der Nahrungskette halte der Wolf zudem den Bestand von Rehen und Wildschweinen gesund.
+
+(3) Viele Bauern jedoch sind besorgt. Immer wieder reißen Wölfe ihre Schafe, und für die Tierhalter bedeutet das Verlust, Angst und viel Arbeit mit Zäunen und Schutzhunden. Manche fordern deshalb, dass "Problemwölfe" geschossen werden dürfen.
+
+(4) Die Politik sitzt zwischen den Fronten. Sie zahlt den Bauern eine Entschädigung für gerissene Tiere und bezuschusst Schutzmaßnahmen, will aber zugleich die streng geschützte Art nicht gefährden.
+
+(5) Am Ende, sagen Fachleute, gehe es nicht um die Frage "Wolf oder Bauer". Es gehe darum, ob Mensch und Wolf lernen können, sich denselben Raum zu teilen.`,
+  stadt:
+`(1) Stellen Sie sich eine Innenstadt vor, in der keine Autos fahren: keine Abgase, kein Lärm, nur Menschen, Fahrräder und Straßenbahnen. In immer mehr europäischen Städten ist das keine Fantasie mehr, sondern Wirklichkeit.
+
+(2) Die Vorteile liegen auf der Hand. Die Luft wird sauberer, die Straßen werden sicherer, und Plätze, auf denen früher Autos parkten, werden zu Cafés, Spielplätzen und Grünflächen. Viele Bewohner sagen, ihre Stadt sei lebendiger geworden.
+
+(3) Doch nicht alle sind begeistert. Ladenbesitzer fürchten, dass Kunden ausbleiben, wenn man nicht mehr mit dem Auto vorfahren kann. Und ältere oder kranke Menschen fragen sich, wie sie ohne Auto ihre Einkäufe nach Hause bringen sollen.
+
+(4) Die Städte versuchen, Antworten zu finden. Sie bauen den öffentlichen Nahverkehr aus, richten Lieferzonen ein und sorgen dafür, dass am Rand der Innenstadt genug Parkplätze bleiben.
+
+(5) Ob die autofreie Stadt sich durchsetzt, hängt also weniger von der Technik ab als von der Frage, ob die Menschen bereit sind, ihre Gewohnheiten zu ändern.`,
+  gaehnen:
+`(1) Jeder tut es, mehrmals am Tag, und niemand kann es wirklich unterdrücken: das Gähnen. Doch warum wir gähnen, ist eine Frage, über die Wissenschaftler bis heute streiten.
+
+(2) Lange glaubte man, das Gähnen versorge das Gehirn mit Sauerstoff. Diese Erklärung gilt heute als überholt, denn Versuche zeigten, dass Menschen mit mehr Sauerstoff nicht weniger gähnen.
+
+(3) Eine neuere Theorie lautet: Gähnen kühlt das Gehirn. Beim tiefen Einatmen strömt kühlere Luft in den Körper, und das könnte das überhitzte Gehirn ein wenig herunterkühlen, ähnlich wie ein Ventilator.
+
+(4) Besonders rätselhaft ist, dass Gähnen ansteckend ist. Sieht man einen anderen gähnen, muss man oft selbst gähnen. Forscher vermuten, dass dies mit Mitgefühl zu tun hat: Wer leichter mitgähnt, kann sich vielleicht besser in andere hineinversetzen.
+
+(5) So ist das Gähnen ein gutes Beispiel dafür, wie viel wir über unseren eigenen Körper noch nicht wissen, selbst bei etwas, das wir jeden Tag tun.`,
+  bargeld:
+`(1) In manchen Ländern zahlt fast niemand mehr mit Münzen und Scheinen; in Deutschland dagegen halten viele Menschen am Bargeld fest. Warum eigentlich?
+
+(2) Für das Bezahlen mit Karte oder Handy spricht viel: Es geht schnell, man muss kein Wechselgeld zählen, und im Geschäft bilden sich kürzere Schlangen. Auch Diebe haben es schwerer, wenn man wenig Bargeld bei sich trägt.
+
+(3) Trotzdem hat das Bargeld seine Anhänger. Mit Scheinen und Münzen behalte man den Überblick über seine Ausgaben, argumentieren sie, und man hinterlasse keine Spur: Niemand kann sehen, was man wo gekauft hat.
+
+(4) Gerade dieser letzte Punkt, der Schutz der Privatsphäre, wird vielen immer wichtiger. Wer bargeldlos zahlt, gibt Banken und Firmen Einblick in sein Leben, und diese Daten sind wertvoll.
+
+(5) Vielleicht liegt die Zukunft deshalb nicht im vollständigen Verschwinden des Bargelds, sondern in der freien Wahl: Jeder soll selbst entscheiden dürfen, wie er bezahlt.`,
+  nachtzug:
+`(1) Lange Zeit schien der Nachtzug ein Verkehrsmittel von gestern zu sein. Billigflüge waren schneller und oft günstiger, und eine Strecke nach der anderen wurde eingestellt. Doch nun kehren die Nachtzüge zurück.
+
+(2) [Lücke] Immer mehr Reisende möchten das Klima schonen, und ein Flug belastet die Umwelt weit stärker als eine Zugfahrt. Abends einsteigen, schlafen und morgens erholt am Ziel ankommen: Für viele klingt das plötzlich wieder verlockend.
+
+(3) Auch die Bahnunternehmen haben umgedacht. Sie kaufen neue Wagen mit bequemen Betten und kleinen Abteilen und verbinden wieder Städte, zwischen denen jahrelang kein Nachtzug mehr fuhr.
+
+(4) Ganz ohne Probleme ist die Rückkehr allerdings nicht. Nachtzüge sind teuer im Betrieb, und wer schon einmal in einem vollen Abteil schlecht geschlafen hat, weiß, dass die Romantik ihre Grenzen hat.
+
+(5) Trotzdem steht fest: Der Nachtzug ist zurück auf den Schienen, und für eine Generation, die ans Klima denkt, ist er mehr als nur Nostalgie.`,
 };
 
 SLAGIO_EXAMENS.vwo.du = {
@@ -48,60 +75,187 @@ SLAGIO_EXAMENS.vwo.du = {
   titel: 'Duits',
   niveau: 'vwo',
   jaar: new Date().getFullYear(),
-  duur_minuten: 150,
-  max_punten: 16,
-  bron: 'Slagio origineel · examenstijl (eigen Duitse tekst)',
+  duur_minuten: 90,
+  max_punten: 26,
+  bron: 'Slagio origineel · examenstijl (eigen Duitse teksten)',
   bijlagen: [],
   opgaven: [
-    { nr:1, titel:'Lesen: "Der Wolf ist zurück"',
-      context:'Lees de tekst. Absatz 1: Meer dan honderd jaar gold de wolf in Duitsland als uitgestorven, maar sinds enkele jaren keert hij terug; nu leven er weer meer dan duizend wolven in de bossen. Absatz 2: Natuurbeschermers zijn blij, maar veel boeren zijn bezorgd omdat de wolven soms hun schapen doden; de ruzie over hoe je met de terugkeerder moet omgaan wordt steeds luider. Absatz 3: Voorstanders wijzen erop dat de wolf bovenaan de voedselketen staat en zo het ecosysteem gezond houdt. Absatz 4: Boeren eisen dat de overheid hen schadeloosstelt en dat "probleemwolven" mogen worden afgeschoten. Absatz 5: De auteur besluit dat er alleen een oplossing komt als beide partijen samenwerken.',
-      afb:_VDUAFB.artikel, afb_cap:'de openingsalinea\'s van de tekst' },
-    { nr:2, titel:'Die Struktur',
-      context:'Het onderstaande schema geeft de twee kampen in het debat weer en een mogelijk compromis.',
-      afb:_VDUAFB.structuur, afb_cap:'twee kanten en een mogelijk compromis' },
-    { nr:3, titel:'Die Haltung des Autors',
-      context:'De schaal hieronder toont mogelijke houdingen die een auteur tegenover een onderwerp kan innemen.',
-      afb:_VDUAFB.toon, afb_cap:'de positie van de auteur' },
-    { nr:4, titel:'Wortschatz im Kontext',
-      context:'De volgende vragen gaan over de betekenis van specifieke woorden en zinnen in de tekst.',
-      afb:_VDUAFB.artikel, afb_cap:'de tekst, voor de woordvragen' },
+    { nr:1, titel:'Text 1: Der Wolf ist zurück',
+      context:_VDUTXT.wolf, afb:_duHdr('Der Wolf ist zurück','Segen oder Gefahr?') },
+    { nr:2, titel:'Text 2: Eine Stadt ohne Autos',
+      context:_VDUTXT.stadt, afb:_duHdr('Die Stadt ohne Autos','mehr Raum für Menschen') },
+    { nr:3, titel:'Text 3: Warum wir gähnen',
+      context:_VDUTXT.gaehnen, afb:_duHdr('Warum wir gähnen','ein alltägliches Rätsel') },
+    { nr:4, titel:'Text 4: Bargeld oder Karte?',
+      context:_VDUTXT.bargeld, afb:_duHdr('Bargeld oder Karte?','wie wir morgen bezahlen') },
+    { nr:5, titel:'Text 5: Die Rückkehr der Nachtzüge',
+      context:_VDUTXT.nachtzug, afb:_duHdr('Die Rückkehr der Nachtzüge','Schlafen statt Fliegen') },
   ],
   vragen: [
-    // Opgave 1
-    { nr:1, opgave:1, punten:2, type:'open', domein:'Hauptgedanke',
-      vraag:'Wat is de hoofdgedachte (Hauptgedanke) van de tekst? Formuleer je antwoord in het Nederlands in een volzin.',
-      antwoord:'De hoofdgedachte is dat de wolf na meer dan honderd jaar terugkeert in Duitsland, wat door natuurbeschermers wordt toegejuicht maar door veel boeren als een bedreiging wordt gezien, zodat er een fel en groeiend debat is over hoe je met de teruggekeerde wolf moet omgaan. De kern moet bevatten: (1) het onderwerp (terugkeer van de wolf in Duitsland), en (2) het conflict (natuurbeschermers blij, boeren bezorgd; groeiend debat).',
-      antwoord_rubric:'1 punt: onderwerp correct (terugkeer van de wolf in Duitsland). 1 punt: het conflict/debat (natuurbeschermers tegenover bezorgde boeren), in een volzin.' },
-    { nr:2, opgave:1, punten:2, type:'open', domein:'Absatzfunktion',
-      vraag:'Wat is de functie van Absatz 2 ("Naturschützer freuen sich... Viele Bauern jedoch sind besorgt...") ten opzichte van Absatz 1?',
-      antwoord:'Absatz 1 beschrijft het feit: de wolf is na lange tijd terug in Duitsland. Absatz 2 introduceert vervolgens de tegenstelling / het conflict: natuurbeschermers zijn blij, maar boeren zijn bezorgd omdat de wolven schapen doden. De functie van Absatz 2 is dus het introduceren van de controverse tussen de twee partijen. Het woord "jedoch" (echter) markeert deze tegenstelling.',
-      antwoord_rubric:'1 punt: Absatz 1 presenteert het feit, Absatz 2 introduceert de tegenstelling/controverse (natuurbeschermers tegenover boeren). 1 punt: herkenning van de contrastfunctie (bv. via "jedoch").' },
-    // Opgave 2
-    { nr:3, opgave:2, punten:2, type:'open', domein:'Argument',
-      vraag:'Noem met behulp van het schema een argument van de Naturschützer en een zorg van de Bauern.',
-      antwoord:'Een argument van de Naturschützer (natuurbeschermers): de terugkeer van de wolf is een succes voor de biodiversiteit / Artenvielfalt; de wolf staat bovenaan de voedselketen en houdt het ecosysteem gezond. Een zorg van de Bauern (boeren): de wolven doden ("reißen") hun schapen, wat leidt tot financiele schade (Kosten) en angst; daarom willen zij schadeloosstelling en het mogen afschieten van probleemwolven.',
-      antwoord_rubric:'1 punt: een correct argument van de natuurbeschermers (biodiversiteit/gezond ecosysteem/succes). 1 punt: een correcte zorg van de boeren (gedode schapen, kosten/angst).' },
-    // Opgave 3
-    { nr:4, opgave:3, punten:2, type:'open', domein:'Haltung',
-      vraag:'Welke houding neemt de auteur aan: begeistert, ablehnend of abwägend/neutraal? Onderbouw je antwoord met wat in de tekst gebeurt.',
-      antwoord:'De auteur neemt een afwegende, neutrale (abwägend/neutral) houding aan. Hij kiest geen partij, maar zet beide kampen even serieus naast elkaar (natuurbeschermers en boeren) en besluit dat er alleen een oplossing komt als beide partijen samenwerken. Hij pleit dus voor een compromis (Herdenschutz en schadeloosstelling) in plaats van eenzijdig voor of tegen de wolf te zijn. Dat wijst op een neutrale, bemiddelende houding.',
-      antwoord_rubric:'1 punt: abwägend/neutraal (niet begeistert of ablehnend). 1 punt: onderbouwing (beide kampen serieus naast elkaar, pleit voor samenwerking/compromis).' },
-    // Opgave 4
-    { nr:5, opgave:4, punten:2, type:'open', domein:'Wortschatz',
-      vraag:'In Absatz 2 staat het werkwoord "reißen" ("die Wölfe reißen manchmal ihre Schafe"). Leg in het Nederlands uit wat dit woord hier betekent.',
-      antwoord:'"Reissen" betekent hier "doodbijten" / "verscheuren": de wolven vallen de schapen aan en doden ze. In deze context gaat het erom dat de wolven soms de schapen van de boeren doodbijten, wat de reden is voor de zorgen en het verzet van de boeren. (Het is dus geen "scheuren" in de zin van papier, maar het aanvallen en doden van een prooidier.)',
-      antwoord_rubric:'1 punt: correcte betekenis (doodbijten/verscheuren/doden van de schapen). 1 punt: passend in de context (wolven vallen schapen aan -> reden voor de zorgen van de boeren).' },
-    { nr:6, opgave:4, punten:2, type:'open', domein:'Verweiswort',
-      vraag:'In Absatz 2 staat: "Der Streit darüber, wie man mit dem Rückkehrer umgehen soll...". Naar wie of wat verwijst "dem Rückkehrer" (de terugkeerder)?',
-      antwoord:'"Dem Rückkehrer" (de terugkeerder) verwijst naar de wolf: het dier dat na meer dan honderd jaar naar Duitsland is teruggekeerd (Absatz 1: "Seit einigen Jahren aber kehrt er zurück"). De "terugkeerder" is dus een omschrijving van de wolf, over wie de hele ruzie gaat.',
-      antwoord_rubric:'1 punt: "der Rückkehrer" = de wolf. 1 punt: onderbouwing dat het de teruggekeerde wolf is (koppeling aan "kehrt er zurück" uit Absatz 1).' },
-    { nr:7, opgave:4, punten:2, type:'open', domein:'Gap fit',
-      vraag:'Stel dat aan het einde van Absatz 4 een zin is weggelaten. Welke van deze twee zinnen past daar het best, en waarom? A: "Deshalb fordern sie mehr Unterstützung vom Staat." B: "Deshalb wollen sie den Wolf noch strenger schützen."',
-      antwoord:'Zin A past het best: "Deshalb fordern sie mehr Unterstützung vom Staat" (daarom eisen zij meer steun van de staat). Absatz 4 gaat over de boeren, die schadeloosstelling eisen en willen dat probleemwolven mogen worden afgeschoten. Zin A sluit daar logisch op aan: de boeren vragen meer steun/hulp van de overheid. Zin B ("den Wolf noch strenger schützen" = de wolf nog strenger beschermen) is juist het tegenovergestelde van wat de boeren willen; die zin past dus niet bij hun standpunt.',
-      antwoord_rubric:'1 punt: keuze A. 1 punt: onderbouwing dat A aansluit bij de eisen van de boeren (steun van de staat), terwijl B (wolf strenger beschermen) daarmee in tegenspraak is.' },
-    { nr:8, opgave:4, punten:2, type:'open', domein:'Schlussfolgerung',
-      vraag:'Leg uit wat de auteur bedoelt met zijn conclusie dat er alleen een oplossing komt als beide partijen samenwerken. Wat zegt dit over zijn kijk op het conflict?',
-      antwoord:'De auteur bedoelt dat het probleem van de teruggekeerde wolf niet wordt opgelost door alleen de kant van de natuurbeschermers of alleen de kant van de boeren te kiezen. Alleen als beide partijen samen naar een oplossing zoeken (bijvoorbeeld kuddebescherming en schadeloosstelling), kan de wolf terugkeren zonder dat de boeren de dupe worden. Dit laat zien dat de auteur het conflict als oplosbaar ziet, maar alleen via een compromis en wederzijds begrip; hij kiest zelf geen partij, maar roept op tot samenwerking.',
-      antwoord_rubric:'1 punt: uitleg dat geen van beide kanten alleen de oplossing biedt; alleen samen (compromis) werkt. 1 punt: dit toont dat de auteur bemiddelend/genuanceerd is en het conflict oplosbaar acht via samenwerking.' },
+    // ── Text 1 ────────────────────────────────────────────────────────
+    { nr:1, opgave:1, punten:1, type:'mc', domein:'Hauptgedanke',
+      vraag:'Was ist der Hauptgedanke des Textes?',
+      opties:[
+        'Der Wolf sollte in Deutschland wieder ausgerottet werden.',
+        'Die Rückkehr des Wolfs freut die einen und beunruhigt die anderen.',
+        'Bauern und Naturschützer sind sich völlig einig.',
+        'In Deutschland gibt es kaum noch Wölfe.'],
+      correct:1,
+      uitleg:'De tekst zet de blijdschap van natuurbeschermers (alinea 2) tegenover de zorgen van boeren (alinea 3); de terugkeer verdeelt de meningen.' },
+    { nr:2, opgave:1, punten:1, type:'mc', domein:'Detail',
+      vraag:'Warum ist der Wolf laut Absatz 2 für die Natur nützlich?',
+      opties:[
+        'Weil er Schafe frisst.',
+        'Weil er als Jäger den Bestand von Rehen und Wildschweinen gesund hält.',
+        'Weil er Touristen anzieht.',
+        'Weil er die Wälder sauber hält.'],
+      correct:1,
+      uitleg:'Absatz 2: als jager bovenaan de voedselketen houdt de wolf de stand van reeën en wilde zwijnen gezond.' },
+    { nr:3, opgave:1, punten:1, type:'mc', domein:'Funktion',
+      vraag:'Welche Rolle spielt die Politik laut Absatz 4?',
+      opties:[
+        'Sie verbietet die Schafhaltung.',
+        'Sie steht zwischen beiden Seiten und versucht, beide zu berücksichtigen.',
+        'Sie ist nur auf der Seite der Bauern.',
+        'Sie will alle Wölfe schießen lassen.'],
+      correct:1,
+      uitleg:'Absatz 4: "zwischen den Fronten" - de politiek betaalt schadevergoeding en subsidieert bescherming, maar wil de beschermde soort niet in gevaar brengen.' },
+    { nr:4, opgave:1, punten:1, type:'mc', domein:'Schlussfolgerung',
+      vraag:'Was ist laut dem letzten Absatz die eigentliche Frage?',
+      opties:[
+        'ob man den Wolf oder den Bauern wählen soll',
+        'ob Mensch und Wolf sich denselben Raum teilen können',
+        'ob es genug Zäune gibt',
+        'ob der Wolf schneller ist als der Mensch'],
+      correct:1,
+      uitleg:'Slotalinea: het gaat niet om "wolf of boer", maar of mens en wolf kunnen leren dezelfde ruimte te delen.' },
+    { nr:5, opgave:1, punten:2, type:'open', domein:'Argument',
+      vraag:'Waarom zijn veel boeren volgens alinea 3 bezorgd over de wolf? Antwoord in het Nederlands en noem twee dingen.',
+      antwoord:'Volgens alinea 3 zijn boeren bezorgd omdat (1) wolven telkens hun schapen doodbijten ("reißen"), wat verlies en angst betekent, en (2) het hun veel werk oplevert met hekken en waakhonden om hun dieren te beschermen. Daarom eisen sommigen dat "probleemwolven" mogen worden afgeschoten.',
+      antwoord_rubric:'1 punt: wolven doden hun schapen (verlies/angst). 1 punt: veel extra werk/kosten met hekken en (waak)honden om de dieren te beschermen.' },
+    // ── Text 2 ────────────────────────────────────────────────────────
+    { nr:6, opgave:2, punten:1, type:'mc', domein:'Detail',
+      vraag:'Welche Vorteile einer autofreien Innenstadt nennt Absatz 2?',
+      opties:[
+        'mehr Parkplätze und schnellere Autos',
+        'sauberere Luft, sicherere Straßen und mehr Platz für Menschen',
+        'niedrigere Preise in den Geschäften',
+        'weniger Fahrräder auf den Straßen'],
+      correct:1,
+      uitleg:'Absatz 2: schonere lucht, veiligere straten en pleinen die parkeerplaats waren worden cafés, speelplekken en groen.' },
+    { nr:7, opgave:2, punten:1, type:'mc', domein:'Kontrast',
+      vraag:'Welche Sorge haben die Ladenbesitzer laut Absatz 3?',
+      opties:[
+        'dass die Mieten steigen',
+        'dass Kunden ausbleiben, weil man nicht mehr mit dem Auto vorfahren kann',
+        'dass es zu viele Cafés gibt',
+        'dass die Straßenbahnen zu langsam sind'],
+      correct:1,
+      uitleg:'Absatz 3: winkeliers vrezen dat klanten wegblijven als je niet meer met de auto kunt voorrijden.' },
+    { nr:8, opgave:2, punten:1, type:'mc', domein:'Schlussfolgerung',
+      vraag:'Wovon hängt der Erfolg der autofreien Stadt laut Absatz 5 vor allem ab?',
+      opties:[
+        'von besserer Technik',
+        'davon, ob die Menschen bereit sind, ihre Gewohnheiten zu ändern',
+        'vom Wetter',
+        'von den Preisen der Autos'],
+      correct:1,
+      uitleg:'Absatz 5: het hangt minder van techniek af dan van de vraag of mensen bereid zijn hun gewoonten te veranderen.' },
+    { nr:9, opgave:2, punten:2, type:'open', domein:'Kontext',
+      vraag:'Hoe proberen de steden volgens alinea 4 de nadelen van een autovrije binnenstad op te vangen? Noem in het Nederlands twee maatregelen.',
+      antwoord:'Volgens alinea 4 nemen de steden onder meer deze maatregelen: (1) ze breiden het openbaar vervoer (Nahverkehr) uit, (2) ze richten laad- en loszones (Lieferzonen) in voor bevoorrading, en (3) ze zorgen dat er aan de rand van de binnenstad genoeg parkeerplaatsen blijven. (Twee daarvan volstaan.)',
+      antwoord_rubric:'1 punt: een correcte maatregel (bv. openbaar vervoer uitbreiden). 1 punt: een tweede correcte maatregel (leverzones inrichten of parkeerplaatsen aan de rand houden).' },
+    // ── Text 3 ────────────────────────────────────────────────────────
+    { nr:10, opgave:3, punten:1, type:'mc', domein:'Detail',
+      vraag:'Warum gilt die Sauerstoff-Erklärung des Gähnens laut Absatz 2 heute als überholt?',
+      opties:[
+        'weil niemand mehr gähnt',
+        'weil Menschen mit mehr Sauerstoff nicht weniger gähnen',
+        'weil Sauerstoff schädlich ist',
+        'weil das Gehirn keinen Sauerstoff braucht'],
+      correct:1,
+      uitleg:'Absatz 2: proeven toonden dat mensen met meer zuurstof niet minder gaan gähnen, dus die verklaring klopt niet.' },
+    { nr:11, opgave:3, punten:1, type:'mc', domein:'Detail',
+      vraag:'Wie erklärt die neuere Theorie in Absatz 3 das Gähnen?',
+      opties:[
+        'Gähnen wärmt das Gehirn auf.',
+        'Gähnen kühlt das überhitzte Gehirn ab.',
+        'Gähnen macht müde.',
+        'Gähnen reinigt die Lunge.'],
+      correct:1,
+      uitleg:'Absatz 3: bij diep inademen stroomt koelere lucht binnen, wat het oververhitte brein een beetje afkoelt, als een ventilator.' },
+    { nr:12, opgave:3, punten:1, type:'mc', domein:'Detail',
+      vraag:'Womit könnte das ansteckende Gähnen laut Absatz 4 zusammenhängen?',
+      opties:['mit Hunger','mit Mitgefühl','mit Angst','mit Langeweile'],
+      correct:1,
+      uitleg:'Absatz 4: onderzoekers vermoeden dat meegähnen met inlevingsvermogen/Mitgefühl te maken heeft.' },
+    { nr:13, opgave:3, punten:2, type:'open', domein:'Schlussfolgerung',
+      vraag:'Wat wil de schrijver met de slotzin ("wie viel wir über unseren eigenen Körper noch nicht wissen") duidelijk maken? Antwoord in het Nederlands.',
+      antwoord:'De schrijver wil duidelijk maken dat we zelfs iets heel alledaags en gewoons als gähnen - iets wat we elke dag doen - nog steeds niet volledig begrijpen. Het gähnen is dus een voorbeeld van hoeveel er over ons eigen lichaam nog onbekend is; de wetenschap heeft nog geen zeker antwoord.',
+      antwoord_rubric:'1 punt: zelfs iets alledaags/dagelijks (gähnen) begrijpen we nog niet volledig. 1 punt: het staat symbool voor hoeveel er over ons eigen lichaam nog onbekend is / de wetenschap is er niet uit.' },
+    // ── Text 4 ────────────────────────────────────────────────────────
+    { nr:14, opgave:4, punten:1, type:'mc', domein:'Detail',
+      vraag:'Welche Vorteile des bargeldlosen Bezahlens nennt Absatz 2?',
+      opties:[
+        'Es ist schneller und Diebe haben es schwerer.',
+        'Man bekommt mehr Wechselgeld.',
+        'Die Preise sinken.',
+        'Man bleibt völlig anonym.'],
+      correct:0,
+      uitleg:'Absatz 2: betalen met kaart/telefoon gaat snel, geen wisselgeld tellen, kortere rijen, en dieven hebben het moeilijker.' },
+    { nr:15, opgave:4, punten:1, type:'mc', domein:'Argument',
+      vraag:'Welches Argument nennen die Anhänger des Bargelds in Absatz 3?',
+      opties:[
+        'Bargeld ist moderner.',
+        'Mit Bargeld behält man den Überblick und hinterlässt keine Spur.',
+        'Bargeld ist immer sicherer als eine Karte.',
+        'Bargeld ist bei jungen Leuten beliebter.'],
+      correct:1,
+      uitleg:'Absatz 3: met contant geld houd je overzicht over je uitgaven en laat je geen spoor na van wat je waar koopt.' },
+    { nr:16, opgave:4, punten:1, type:'mc', domein:'Schlussfolgerung',
+      vraag:'Worin sieht der Text in Absatz 5 die wahrscheinliche Zukunft?',
+      opties:[
+        'im völligen Verschwinden des Bargelds',
+        'in der freien Wahl, wie man bezahlen möchte',
+        'in einer Rückkehr zu nur Münzen',
+        'im Verbot von Karten'],
+      correct:1,
+      uitleg:'Absatz 5: de toekomst ligt niet in het volledig verdwijnen van contant geld, maar in de vrije keuze hoe je betaalt.' },
+    { nr:17, opgave:4, punten:2, type:'open', domein:'Argument',
+      vraag:'Waarom wordt volgens alinea 4 de bescherming van de privacy voor veel mensen steeds belangrijker bij het betalen? Leg uit in het Nederlands.',
+      antwoord:'Volgens alinea 4 geef je, als je zonder contant geld (bargeldlos) betaalt, banken en bedrijven inzicht in je leven: zij kunnen zien wat je waar en wanneer koopt. Die gegevens zijn waardevol. Daarom wordt de bescherming van de privacy voor veel mensen belangrijker: met contant geld laat je juist geen spoor na en houd je die informatie voor jezelf.',
+      antwoord_rubric:'1 punt: bij bargeldlos betalen krijgen banken/bedrijven inzicht in je aankopen/leven. 1 punt: die data zijn waardevol / je levert privacy in, terwijl contant geld geen spoor nalaat.' },
+    // ── Text 5 ────────────────────────────────────────────────────────
+    { nr:18, opgave:5, punten:1, type:'mc', domein:'Detail',
+      vraag:'Warum schien der Nachtzug laut Absatz 1 lange ein Verkehrsmittel "von gestern" zu sein?',
+      opties:[
+        'weil er zu teuer für die Bahn war',
+        'weil Billigflüge schneller und oft günstiger waren',
+        'weil niemand mehr nachts reisen wollte',
+        'weil die Betten unbequem waren'],
+      correct:1,
+      uitleg:'Absatz 1: goedkope vluchten waren sneller en vaak goedkoper, waardoor de ene na de andere nachttreinlijn werd opgeheven.' },
+    { nr:19, opgave:5, punten:1, type:'mc', domein:'Lücke',
+      vraag:'Welcher Satz passt am besten in die Lücke [Lücke] am Anfang von Absatz 2?',
+      opties:[
+        'Fliegen bleibt für immer die beste Wahl.',
+        'Der Grund dafür ist vor allem das Klima.',
+        'Nachtzüge fahren nur noch selten.',
+        'Die Bahn hat kein Geld mehr.'],
+      correct:1,
+      uitleg:'De rest van alinea 2 gaat over het klimaat (vliegen belast het milieu sterker dan de trein); de openingszin moet die reden aankondigen.' },
+    { nr:20, opgave:5, punten:1, type:'mc', domein:'Kontrast',
+      vraag:'Welches Problem der Nachtzüge nennt Absatz 4?',
+      opties:[
+        'Sie sind zu schnell.',
+        'Sie sind teuer im Betrieb, und man schläft nicht immer gut.',
+        'Es gibt zu viele davon.',
+        'Sie fahren nur am Tag.'],
+      correct:1,
+      uitleg:'Absatz 4: nachttreinen zijn duur in het gebruik, en in een vol compartiment slaap je niet altijd goed - de romantiek heeft grenzen.' },
+    { nr:21, opgave:5, punten:2, type:'open', domein:'Hauptgedanke',
+      vraag:'Waarom keren de nachttreinen volgens de tekst juist nu terug? Noem in het Nederlands de belangrijkste reden en een maatregel van de spoorbedrijven.',
+      antwoord:'De belangrijkste reden is het klimaat: steeds meer reizigers willen milieuvriendelijker reizen, en een vliegreis belast het milieu veel sterker dan een treinreis (alinea 2). Daarnaast hebben de spoorbedrijven zich aangepast: zij kopen nieuwe wagons met comfortabele bedden en kleine compartimenten en verbinden weer steden waar jarenlang geen nachttrein meer reed (alinea 3).',
+      antwoord_rubric:'1 punt: hoofdreden = klimaat (vliegen belast milieu veel sterker dan de trein). 1 punt: een maatregel van de spoorbedrijven (nieuwe wagons met bedden/compartimenten of steden weer verbinden).' },
   ],
 };
