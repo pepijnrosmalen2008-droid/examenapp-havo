@@ -348,18 +348,21 @@ function startExamen(){
 function _exVersies(ex){
   const ops = (ex.opgaven||[]).map(o=>o.nr);
   const N = ops.length;
+  // Tijd hangt af van zowel de punten (rekenwerk/uitwerking) als het aantal
+  // vragen (lezen/beslissen). Zo krijgen meerkeuze-zware talenexamens, met veel
+  // vragen maar weinig punten per vraag, een realistische duur.
+  const _duur = (punten, aantal)=> Math.max(15, Math.min(120, Math.round((punten*1.8 + aantal*1.2)/5)*5));
   const mkStats = (nrs)=>{
     const set = new Set(nrs);
     const vr = (ex.vragen||[]).filter(q=>set.has(q.opgave));
     const punten = vr.reduce((a,q)=>a+(q.punten||0),0);
-    const minuten = Math.max(15, Math.min(120, Math.round(punten*2.4/5)*5));
-    return { opgaveNrs:nrs, aantal:vr.length, punten, minuten };
+    return { opgaveNrs:nrs, aantal:vr.length, punten, minuten:_duur(punten, vr.length) };
   };
   // Geen opgaven-structuur → één versie met alle vragen.
   if(N===0){
-    const punten = (ex.vragen||[]).reduce((a,q)=>a+(q.punten||0),0);
+    const vr=(ex.vragen||[]); const punten = vr.reduce((a,q)=>a+(q.punten||0),0);
     return [{ id:'vol', naam:'Volledig', sub:'hele proefexamen', opgaveNrs:null,
-      aantal:(ex.vragen||[]).length, punten, minuten:Math.max(15,Math.min(120,Math.round(punten*2.4/5)*5)) }];
+      aantal:vr.length, punten, minuten:_duur(punten, vr.length) }];
   }
   const take = (k)=> ops.slice(0, Math.max(1, Math.min(N, k)));
   const defs = [];
