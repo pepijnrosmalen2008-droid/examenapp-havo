@@ -369,6 +369,28 @@ runtime + verliezen we de race), market-making (bedrijf), en alles wat derivaten
 Illegale routes (manipulatie, wash trading, front-running van niet-openbare orders, insider,
 pump-and-dump) blijven principieel uitgesloten: geen edge, alleen juridisch risico.
 
+## D33 — Broker-abstractie + IBKR als aandelen-broker (skelet, geen live)
+
+De gebruiker koos Interactive Brokers als het "Bitvavo-equivalent voor aandelen": één broker, 170+
+markten, API's voor zowel marktdata als order-invoer, bot-first (boven DEGIRO/Trading212/eToro; boven
+Alpaca dat vooral US is). En de juiste architectuur: een abstracte `Broker`-laag zodat de
+execution-engine hergebruikt wordt (`Strategy → Execution Engine → Broker → Bitvavo | IBKR`).
+
+Gebouwd, niet-brekend: `autopilot/broker.py` — een `runtime_checkable` `Broker`-Protocol dat het
+contract vastlegt dat de engine feitelijk al aanroept (ticker_price, spread_pct, order_book, candles,
+balances, place_market_order); de bestaande Bitvavo-exchanges voldoen er al aan (test bewijst het).
+`autopilot/ibkr.py` — een `IBKRBroker`-skelet dat conform is maar **luid weigert** tot een echte IB
+Gateway/`ib_insync` gewired is: hier (cloud, geen account/gateway/data-permissions) niet testbaar, dus
+er wordt bewust niets verstuurd en niets doet alsof het werkt.
+
+Eerlijk afgebakend (EQUITIES_IBKR.md): het contract maakt de *koppeling* herbruikbaar, niet de
+domeinlogica. Aandelen zijn geen crypto — orders in shares i.p.v. notional, markturen/sessies (niet
+24/7), meerdere valuta's + FX, settlement (T+1/T+2), PDT/short-borrow, en marktdata-abonnementen per
+beurs. De EUR-only `pairs`-validator, markturen en FX vragen een aparte config-uitbreiding — bewust
+nog niet gedaan. Gefaseerd, met dezelfde discipline als crypto: contract → skelet → IBKR paper-account
+→ data-kwaliteitspoort → SHADOW → LIVE (achter de drie-slot-guardrail, met kill-criteria). Geen euro
+live tot fase 6.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

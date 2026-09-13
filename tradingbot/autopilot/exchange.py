@@ -183,6 +183,10 @@ class PaperExchange:
                 since_ms: int | None = None) -> list[tuple]:
         return self.market.candles(pair, interval, limit, since_ms)
 
+    def order_book(self, pair: str, depth: int = 25) -> dict:
+        fn = getattr(self.market, "order_book", None)
+        return fn(pair, depth) if fn else {"bids": [], "asks": []}
+
     def place_market_order(self, pair: str, side: Side, *, amount_asset: float | None = None,
                            amount_eur: float | None = None, client_order_id: str,
                            style: str = "taker") -> dict:
