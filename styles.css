@@ -1140,6 +1140,24 @@ html.dark .qb{background:#2e3550}
 .ex-textarea{width:100%;min-height:130px;background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:14px;padding:16px 18px;font-size:14.5px;color:#fff;font-family:var(--font);line-height:1.75;resize:vertical;outline:none;transition:border-color .2s,background .2s;margin-bottom:14px}
 .ex-textarea:focus{border-color:rgba(var(--or-rgb),.55);background:rgba(255,255,255,.07)}
 .ex-textarea::placeholder{color:rgba(255,255,255,.2)}
+/* Meerkeuze-opties (quizfase) */
+.ex-mc-opts{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}
+.ex-mc-opt{display:flex;align-items:flex-start;gap:12px;width:100%;text-align:left;background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.1);border-radius:14px;padding:13px 15px;color:#fff;font-family:var(--font);font-size:14.5px;line-height:1.5;cursor:pointer;transition:border-color .18s,background .18s}
+.ex-mc-opt:hover{border-color:rgba(var(--or-rgb),.5);background:rgba(255,255,255,.08)}
+.ex-mc-opt.on{border-color:rgb(var(--or-rgb));background:rgba(var(--or-rgb),.16)}
+.ex-mc-let{flex:0 0 auto;width:24px;height:24px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:rgba(255,255,255,.1);font-weight:800;font-size:12px;font-family:var(--font-head)}
+.ex-mc-opt.on .ex-mc-let{background:rgb(var(--or-rgb));color:#fff}
+.ex-mc-txt{flex:1;padding-top:2px}
+/* Meerkeuze in de nakijk-fase */
+.ex-rev-mc{display:flex;flex-direction:column;gap:8px;margin:10px 0 12px}
+.ex-rev-mc-opt{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);font-size:13px;color:rgba(255,255,255,.6);line-height:1.5}
+.ex-rev-mc-opt .ex-mc-let{width:22px;height:22px;font-size:12px}
+.ex-rev-mc-opt.correct{background:rgba(74,222,128,.09);border-color:rgba(74,222,128,.3);color:#fff}
+.ex-rev-mc-opt.correct .ex-mc-let{background:#3ba55d;color:#fff}
+.ex-rev-mc-opt.wrong{background:rgba(248,113,113,.08);border-color:rgba(248,113,113,.3);color:#fff}
+.ex-rev-mc-opt.wrong .ex-mc-let{background:#ef4444;color:#fff}
+.ex-rev-mc-tag{margin-left:auto;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:rgba(255,255,255,.45);align-self:center}
+.ex-rev-mc-none{font-size:12px;color:#fca5a5;margin-bottom:10px}
 /* Nav balk onderaan */
 .ex-bot-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(7,10,18,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,.08);padding:11px 16px;z-index:200}
 .ex-bot-inner{max-width:680px;margin:0 auto;display:flex;align-items:center;gap:9px}

@@ -600,8 +600,24 @@ function examenShowQ(idx){
   document.getElementById('ex-q-nr').textContent = `Vraag ${q.nr}`;
   document.getElementById('ex-vraag').textContent = q.vraag;
   document.getElementById('ex-q-pts').textContent = `${q.punten}p`;
-  // Antwoord textarea
-  document.getElementById('ex-textarea').value = EX.answers[q.nr] || '';
+  // Antwoordvorm: open (textarea) of meerkeuze (opties)
+  const _ta = document.getElementById('ex-textarea');
+  const _mc = document.getElementById('ex-mc-opts');
+  if(q.type==='mc' && Array.isArray(q.opties)){
+    if(_ta) _ta.style.display='none';
+    if(_mc){
+      const sel = EX.answers[q.nr];
+      const letters = ['A','B','C','D','E','F'];
+      _mc.innerHTML = q.opties.map((opt,oi)=>
+        `<button class="ex-mc-opt${String(sel)===String(oi)?' on':''}" data-oi="${oi}" onclick="examenPickMC(${oi})">`+
+        `<span class="ex-mc-let">${letters[oi]||(oi+1)}</span><span class="ex-mc-txt">${opt}</span></button>`
+      ).join('');
+      _mc.style.display='';
+    }
+  } else {
+    if(_mc){ _mc.style.display='none'; _mc.innerHTML=''; }
+    if(_ta){ _ta.style.display=''; _ta.value = EX.answers[q.nr] || ''; }
+  }
   // Knop label
   const isLast = idx === EX.examen.vragen.length - 1;
   const nextBtn = document.getElementById('ex-next-btn');
@@ -643,8 +659,20 @@ function examenSaveAnswer(val){
   EX.answers[q.nr] = val;
   _exUpdateGrid();
   // Score chip: toon beantwoorde vragen
-  const beantwoord = Object.keys(EX.answers).filter(k=>EX.answers[k].trim()).length;
+  const beantwoord = Object.keys(EX.answers).filter(k=>String(EX.answers[k]).trim()).length;
   document.getElementById('ex-score-chip').textContent = `${beantwoord} / ${EX.examen.vragen.length} ingevuld`;
+}
+
+// Meerkeuze: kies een optie (auto na te kijken bij het resultaat).
+function examenPickMC(oi){
+  const q = EX.examen.vragen[EX.idx];
+  if(!q) return;
+  EX.answers[q.nr] = String(oi);
+  document.querySelectorAll('#ex-mc-opts .ex-mc-opt').forEach(b=>b.classList.toggle('on', b.dataset.oi===String(oi)));
+  _exUpdateGrid();
+  const beantwoord = Object.keys(EX.answers).filter(k=>String(EX.answers[k]).trim()).length;
+  const sc=document.getElementById('ex-score-chip'); if(sc) sc.textContent = `${beantwoord} / ${EX.examen.vragen.length} ingevuld`;
+  try{ if(typeof playSound==='function') playSound('tick'); }catch(e){}
 }
 
 function examenNav(dir){
@@ -658,7 +686,7 @@ function _exUpdateGrid(){
   EX.examen.vragen.forEach((q,i)=>{
     const el = document.getElementById(`exqd-${i}`);
     if(!el) return;
-    const hasAns = EX.answers[q.nr] && EX.answers[q.nr].trim();
+    const hasAns = EX.answers[q.nr] && String(EX.answers[q.nr]).trim();
     const isCur = i===EX.idx;
     const isBijl = q.needs_bijlage;
     el.className = 'ex-qd' + (isCur?' current':hasAns?' answered':isBijl?' bijlage':'');
@@ -678,6 +706,16 @@ function examenFinish(){
   EX.selfPts = 0;
   EX.gradedCount = 0;
   EX.grades = {};
+  // Meerkeuzevragen worden automatisch nagekeken (juist = vol punten, anders 0).
+  EX.examen.vragen.forEach((q,i)=>{
+    if(q.type==='mc'){
+      const chosen = EX.answers[q.nr];
+      const ok = chosen!==undefined && chosen!=='' && String(chosen)===String(q.correct);
+      EX.grades[i] = ok ? q.punten : 0;
+      EX.selfPts += EX.grades[i];
+      EX.gradedCount++;
+    }
+  });
   _exBuildResultList();
   _exUpdateGrade();
   document.getElementById('sc-examen').scrollTo(0,0);
@@ -687,7 +725,36 @@ function examenFinish(){
 
 function _exBuildResultList(){
   const list = document.getElementById('ex-rev-list');
+  const _figHtml = (q)=>{const op=(EX.examen.opgaven||[]).find(o=>o.nr===q.opgave);const F=[];if(op&&op.afb)F.push({s:op.afb,c:op.afb_cap||''});if(q.afb&&q.afb!==(op&&op.afb))F.push({s:q.afb,c:q.afb_cap||''});return F.length?`<figure class="ex-afb ex-afb-rev"><div class="ex-afb-inner">${F.map(f=>`<div class="ex-afb-one"><div class="ex-afb-svg">${f.s}</div>${f.c?`<div class="ex-afb-cap">${f.c}</div>`:''}</div>`).join('')}</div></figure>`:'';};
   list.innerHTML = EX.examen.vragen.map((q,i) => {
+    // ── Meerkeuze: automatisch nagekeken ──────────────────────────────
+    if(q.type==='mc' && Array.isArray(q.opties)){
+      const chosen = EX.answers[q.nr];
+      const hasAns = chosen!==undefined && chosen!=='';
+      const ok = hasAns && String(chosen)===String(q.correct);
+      const letters=['A','B','C','D','E','F'];
+      const pts = ok ? q.punten : 0;
+      const optsHtml = q.opties.map((opt,oi)=>{
+        const isCorrect = oi===q.correct;
+        const isChosen = String(chosen)===String(oi);
+        const cls = isCorrect ? 'correct' : (isChosen ? 'wrong' : '');
+        const mark = isCorrect ? '✓' : (isChosen ? '✗' : letters[oi]||(oi+1));
+        return `<div class="ex-rev-mc-opt ${cls}"><span class="ex-mc-let">${mark}</span><span class="ex-mc-txt">${opt}</span>${isChosen?'<span class="ex-rev-mc-tag">jouw keuze</span>':''}</div>`;
+      }).join('');
+      return `
+      <div class="ex-rev-card ${ok?'graded-goed':'graded-fout'}" id="exrc-${i}">
+        <div class="ex-rev-header">
+          <span class="ex-rev-nr">Vraag ${q.nr} · Opgave ${q.opgave} · meerkeuze</span>
+          <span class="ex-rev-pts-badge" id="exrb-${i}">${pts} / ${q.punten}p</span>
+        </div>
+        <div class="ex-rev-vraag">${q.vraag}</div>
+        ${_figHtml(q)}
+        <div class="ex-rev-mc">${optsHtml}</div>
+        ${!hasAns?'<div class="ex-rev-mc-none">Je hebt deze vraag niet beantwoord.</div>':''}
+        ${q.uitleg?`<div class="ex-rev-rubric">${q.uitleg}</div>`:''}
+      </div>`;
+    }
+    // ── Open vraag: zelf nakijken met modelantwoord ───────────────────
     const antw = EX.answers[q.nr] || '';
     const isBijl = q.needs_bijlage;
     const bijlHtml = isBijl ? `<div class="ex-rev-bijlage">${q.bijlage_tekst||'Bijlage benodigd'}</div>` : '';
@@ -698,10 +765,10 @@ function _exBuildResultList(){
         <span class="ex-rev-pts-badge" id="exrb-${i}">0 / ${q.punten}p</span>
       </div>
       <div class="ex-rev-vraag">${q.vraag}</div>
-      ${(()=>{const op=(EX.examen.opgaven||[]).find(o=>o.nr===q.opgave);const F=[];if(op&&op.afb)F.push({s:op.afb,c:op.afb_cap||''});if(q.afb&&q.afb!==(op&&op.afb))F.push({s:q.afb,c:q.afb_cap||''});return F.length?`<figure class="ex-afb ex-afb-rev"><div class="ex-afb-inner">${F.map(f=>`<div class="ex-afb-one"><div class="ex-afb-svg">${f.s}</div>${f.c?`<div class="ex-afb-cap">${f.c}</div>`:''}</div>`).join('')}</div></figure>`:'';})()}
+      ${_figHtml(q)}
       ${bijlHtml}
       <div class="ex-rev-jouw">Jouw antwoord</div>
-      <div class="ex-rev-jouw-text">${antw.trim() || '(geen antwoord gegeven)'}</div>
+      <div class="ex-rev-jouw-text">${String(antw).trim() || '(geen antwoord gegeven)'}</div>
       <div class="ex-rev-model">Modelantwoord</div>
       <div class="ex-rev-model-text">${q.antwoord}</div>
       <div class="ex-rev-rubric">${q.antwoord_rubric}</div>
