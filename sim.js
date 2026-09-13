@@ -373,7 +373,7 @@ function _exVersies(ex){
     seen.push(key);
     defs.push(Object.assign({ id, naam, sub }, mkStats(nrs)));
   };
-  if(N >= 5){
+  if(N >= 4){
     push('kort','Kort','snelle check', Math.max(2, Math.ceil(N*0.4)));
     push('middel','Middel','halve zit', Math.max(3, Math.ceil(N*0.7)));
   } else if(N >= 3){

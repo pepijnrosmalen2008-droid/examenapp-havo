@@ -1,51 +1,54 @@
 // ═══════════════════════════════════════════════════════════════════════
 // proefexamen-vwo-nl.js  ORIGINEEL Slagio-proefexamen (vwo Nederlands).
 // Eigen tekst, vragen en figuren. Geen reproductie van een CvTE-examen.
-// VWO-CE-niveau leesvaardigheid: hoofdgedachte/schrijfdoel, argumentatie-
-// structuur, argumenttypen en drogredenen, tekstopbouw en samenvatten.
-// De onderstaande tekst is volledig door Slagio geschreven.
+// CE-stijl leesvaardigheid + argumentatie op EEN langere tekst, met een
+// mix van meerkeuze- en open vragen en een essentie/samenvattingsopdracht,
+// zoals op het echte centraal examen. De tekst is door Slagio geschreven.
 // ═══════════════════════════════════════════════════════════════════════
 var SLAGIO_EXAMENS = (typeof SLAGIO_EXAMENS !== 'undefined' && SLAGIO_EXAMENS) || {};
 SLAGIO_EXAMENS.vwo = SLAGIO_EXAMENS.vwo || {};
 
+// De volledige tekst (wordt bij elke opgave als context getoond).
+var _VNLTEKST =
+`(1) In verschillende landen klinkt de laatste jaren dezelfde roep: verbied sociale media voor jongeren onder de zestien. Australië nam al een wet aan, en ook in Europa denken politici er hardop over na. De vraag is niet langer of we de macht van deze platforms moeten inperken, maar hoe ver we daarin mogen gaan.
+
+(2) De zorg die achter dit voorstel schuilt, is niet ongegrond. Onderzoek wijst op een verband tussen intensief gebruik van sociale media en klachten als slaapgebrek, somberheid en een negatief zelfbeeld bij tieners. De apps zijn bovendien met opzet zo ontworpen dat je blijft scrollen: elke melding, elke like is een kleine beloning die om herhaling vraagt.
+
+(3) Voorstanders van een leeftijdsgrens wijzen daarom op de kwetsbaarheid van het jonge brein. Wie op zijn twaalfde nog volop in ontwikkeling is, kan de verslavende trucs van de platforms moeilijker weerstaan dan een volwassene. Een wettelijke grens, zeggen zij, beschermt niet alleen de jongere zelf, maar geeft ook ouders eindelijk iets om op terug te vallen: niet langer "iedereen in de klas zit erop", maar een duidelijke regel voor iedereen.
+
+(4) Tegenstanders vinden dit echter veel te kort door de bocht. Sociale media, zo stellen zij, zijn niet alleen maar schadelijk: ze verbinden mensen, geven toegang tot informatie en bieden juist eenzame of buitengesloten jongeren een plek waar zij wel gehoord worden. Een verbod is in hun ogen betuttelend en bovendien onuitvoerbaar, want welke tiener weet niet hoe je een geboortedatum vervalst?
+
+(5) Toch overtuigt dat tegenargument niet helemaal. Verbondenheid en informatie zijn immers ook zonder de eindeloze, verslavende tijdlijn mogelijk; het zijn niet die functies die de schade veroorzaken. En dat een regel niet waterdicht te handhaven is, betekent nog niet dat hij zinloos is: ook een snelheidslimiet wordt overtreden, en toch redt hij levens door een norm te stellen.
+
+(6) De kern van het probleem ligt volgens veel deskundigen dan ook niet bij de leeftijd, maar bij het ontwerp. In de zogenoemde aandachtseconomie verdienen platforms geld aan de tijd die je op het scherm doorbrengt, en dus zijn ze geoptimaliseerd om die tijd zo lang mogelijk te maken. Zolang dat verdienmodel intact blijft, verplaatst een leeftijdsgrens het probleem hooguit naar het zestiende jaar.
+
+(7) Een leeftijdsgrens is daarmee een bot instrument, maar wel een verdedigbare eerste stap. Wie werkelijk iets aan de schade wil doen, zal echter verder moeten kijken dan de leeftijd van de gebruiker, en de manier waarop deze apps zijn gebouwd zelf aan banden moeten leggen. Niet de jongere, maar het ontwerp verdient de strengste regel.`;
+
+function _nlHdr(){
+  return '<svg viewBox="0 0 360 96" role="img" aria-label="artikelkop"><rect x="10" y="8" width="340" height="80" rx="6" fill="#ffffff" stroke="#d7dde6" stroke-width="1.4"/>'+
+    '<rect x="10" y="8" width="6" height="80" rx="3" fill="#e8580c"/>'+
+    '<text x="28" y="38" font-family="Georgia,serif" font-size="15" font-weight="800" fill="#1b2230">Een leeftijdsgrens voor sociale media?</text>'+
+    '<text x="28" y="58" font-family="sans-serif" font-size="9.5" font-style="italic" fill="#8a94a3">een betoog over jongeren en de aandachtseconomie</text>'+
+    '<text x="28" y="80" font-family="sans-serif" font-size="8" fill="#b3bcc9">Lees de tekst (alinea 1 t/m 7) en beantwoord de vragen.</text></svg>';
+}
 var _VNLAFB = {
-  // Tekst als artikelkaart (kop + eerste alinea's)
-  artikel:`<svg viewBox="0 0 360 200" role="img" aria-label="tekstfragment als artikel"><rect x="14" y="10" width="332" height="182" rx="6" fill="#ffffff" stroke="#d7dde6" stroke-width="1.4"/>
-    <text x="30" y="34" font-family="Georgia,serif" font-size="14" font-weight="800" fill="#1b2230">De prijs van je aandacht</text>
-    <text x="30" y="49" font-family="sans-serif" font-size="8" font-style="italic" fill="#8a94a3">een beschouwing over de aandachtseconomie</text>
-    <line x1="30" y1="57" x2="330" y2="57" stroke="#eef1f5" stroke-width="1.4"/>
-    <g font-family="Georgia,serif" font-size="8.5" fill="#3a4250">
-      <text x="30" y="74">(1) Elke minuut die jij naar je scherm kijkt, wordt ergens</text>
-      <text x="30" y="88">verkocht. Dat klinkt somber, maar het is de kern van wat</text>
-      <text x="30" y="102">economen de "aandachtseconomie" noemen: bedrijven</text>
-      <text x="30" y="116">verdienen niet aan wat je koopt, maar aan hoe lang je kijkt.</text>
-      <text x="30" y="134">(2) Voorstanders zeggen dat dit gratis diensten mogelijk</text>
-      <text x="30" y="148">maakt. Toch betaal je wel degelijk, alleen niet met geld.</text>
-      <text x="30" y="162">Je betaalt met je tijd, je data en, zo betogen critici, met</text>
-      <text x="30" y="176">je vermogen om je nog ergens lang op te concentreren.</text>
-    </g></svg>`,
-  // Schema argumentatiestructuur
-  argstruct:`<svg viewBox="0 0 360 190" role="img" aria-label="schema van de argumentatiestructuur">
-    <rect x="96" y="12" width="168" height="30" rx="6" fill="#eef4ff" stroke="#2563eb" stroke-width="1.8"/>
-    <text x="180" y="27" font-family="sans-serif" font-size="9" font-weight="800" fill="#1b4fb0" text-anchor="middle">standpunt</text>
-    <text x="180" y="38" font-family="sans-serif" font-size="7.5" fill="#4a5568" text-anchor="middle">de aandachtseconomie is schadelijk</text>
-    <g stroke="#94a0b8" stroke-width="1.4"><line x1="130" y1="42" x2="80" y2="70"/><line x1="180" y1="42" x2="180" y2="70"/><line x1="230" y1="42" x2="280" y2="70"/></g>
-    <g font-family="sans-serif" font-size="8" font-weight="700" fill="#1b2230" text-anchor="middle">
-      <rect x="26" y="70" width="108" height="42" rx="5" fill="#eafaf0" stroke="#2e9e5b" stroke-width="1.4"/><text x="80" y="87">argument 1</text><text x="80" y="100" font-size="7" font-weight="400" fill="#4a5568">aantasting</text><text x="80" y="108" font-size="7" font-weight="400" fill="#4a5568">concentratie</text>
-      <rect x="126" y="70" width="108" height="42" rx="5" fill="#eafaf0" stroke="#2e9e5b" stroke-width="1.4"/><text x="180" y="87">argument 2</text><text x="180" y="100" font-size="7" font-weight="400" fill="#4a5568">verlies van</text><text x="180" y="108" font-size="7" font-weight="400" fill="#4a5568">privacy/data</text>
-      <rect x="226" y="70" width="108" height="42" rx="5" fill="#eafaf0" stroke="#2e9e5b" stroke-width="1.4"/><text x="280" y="87">argument 3</text><text x="280" y="100" font-size="7" font-weight="400" fill="#4a5568">manipulatie</text><text x="280" y="108" font-size="7" font-weight="400" fill="#4a5568">van gedrag</text>
-    </g>
-    <g stroke="#c9d2e0" stroke-width="1.2"><line x1="80" y1="112" x2="80" y2="132"/><line x1="180" y1="112" x2="180" y2="132"/><line x1="280" y1="112" x2="280" y2="132"/></g>
-    <g font-family="sans-serif" font-size="7" fill="#4a5568" text-anchor="middle"><text x="80" y="144">onderbouwing</text><text x="80" y="153">(onderzoek)</text><text x="180" y="144">onderbouwing</text><text x="180" y="153">(voorbeeld)</text><text x="280" y="144">onderbouwing</text><text x="280" y="153">(deskundige)</text></g>
-    <text x="180" y="182" font-family="sans-serif" font-size="7.5" fill="#4a5568" text-anchor="middle">figuur: de argumentatiestructuur van de tekst</text></svg>`,
-  // Schema tekstopbouw
-  opbouw:`<svg viewBox="0 0 360 176" role="img" aria-label="schema van de tekstopbouw">
+  argstruct:`<svg viewBox="0 0 360 190" role="img" aria-label="schema van de argumentatie">
+    <rect x="90" y="12" width="180" height="30" rx="6" fill="#eef4ff" stroke="#2563eb" stroke-width="1.8"/>
+    <text x="180" y="26" font-family="sans-serif" font-size="9" font-weight="800" fill="#1b4fb0" text-anchor="middle">standpunt schrijver</text>
+    <text x="180" y="38" font-family="sans-serif" font-size="7" fill="#4a5568" text-anchor="middle">leeftijdsgrens = verdedigbare eerste stap</text>
+    <g stroke="#94a0b8" stroke-width="1.4"><line x1="140" y1="42" x2="86" y2="70"/><line x1="220" y1="42" x2="274" y2="70"/></g>
+    <rect x="20" y="70" width="132" height="44" rx="5" fill="#eafaf0" stroke="#2e9e5b" stroke-width="1.4"/><text x="86" y="87" font-family="sans-serif" font-size="8" font-weight="700" fill="#1b7a41" text-anchor="middle">argument voor</text><text x="86" y="100" font-family="sans-serif" font-size="7" fill="#4a5568" text-anchor="middle">kwetsbaar brein,</text><text x="86" y="109" font-family="sans-serif" font-size="7" fill="#4a5568" text-anchor="middle">steun voor ouders</text>
+    <rect x="208" y="70" width="132" height="44" rx="5" fill="#fbeaea" stroke="#c0392b" stroke-width="1.4"/><text x="274" y="84" font-family="sans-serif" font-size="8" font-weight="700" fill="#9e2b22" text-anchor="middle">tegenwerping</text><text x="274" y="97" font-family="sans-serif" font-size="7" fill="#4a5568" text-anchor="middle">verbindt ook,</text><text x="274" y="106" font-family="sans-serif" font-size="7" fill="#4a5568" text-anchor="middle">verbod onuitvoerbaar</text>
+    <line x1="274" y1="114" x2="274" y2="134" stroke="#c9d2e0" stroke-width="1.2"/>
+    <rect x="196" y="134" width="156" height="34" rx="5" fill="#fdf2e2" stroke="#e8a530" stroke-width="1.4"/><text x="274" y="149" font-family="sans-serif" font-size="8" font-weight="700" fill="#b3760f" text-anchor="middle">weerlegging (al. 5)</text><text x="274" y="161" font-family="sans-serif" font-size="7" fill="#4a5568" text-anchor="middle">norm stellen werkt, zie snelheidslimiet</text>
+    <text x="120" y="150" font-family="sans-serif" font-size="7.5" fill="#4a5568" text-anchor="middle">figuur: de opbouw van het betoog</text></svg>`,
+  opbouw:`<svg viewBox="0 0 360 172" role="img" aria-label="schema tekstopbouw">
     <g font-family="sans-serif">
-      <rect x="40" y="18" width="280" height="30" rx="5" fill="#eef4ff" stroke="#2563eb" stroke-width="1.4"/><text x="54" y="37" font-size="9" font-weight="800" fill="#1b4fb0">inleiding</text><text x="150" y="37" font-size="7.5" fill="#4a5568">alinea 1-2: aandacht wordt verkocht</text>
-      <rect x="40" y="56" width="280" height="46" rx="5" fill="#eafaf0" stroke="#2e9e5b" stroke-width="1.4"/><text x="54" y="76" font-size="9" font-weight="800" fill="#1b7a41">kern</text><text x="150" y="72" font-size="7.5" fill="#4a5568">alinea 3-5: drie argumenten tegen de</text><text x="150" y="83" font-size="7.5" fill="#4a5568">aandachtseconomie met onderbouwing</text><text x="150" y="94" font-size="7.5" fill="#4a5568">en weerlegging van een tegenwerping</text>
-      <rect x="40" y="110" width="280" height="34" rx="5" fill="#fdf2e2" stroke="#e8a530" stroke-width="1.4"/><text x="54" y="131" font-size="9" font-weight="800" fill="#b3760f">slot</text><text x="150" y="127" font-size="7.5" fill="#4a5568">alinea 6: conclusie en oproep tot</text><text x="150" y="138" font-size="7.5" fill="#4a5568">bewuster schermgebruik</text>
+      <rect x="30" y="14" width="300" height="26" rx="5" fill="#eef4ff" stroke="#2563eb" stroke-width="1.4"/><text x="44" y="31" font-size="9" font-weight="800" fill="#1b4fb0">inleiding</text><text x="150" y="31" font-size="7.5" fill="#4a5568">alinea 1: het debat wordt ingeleid</text>
+      <rect x="30" y="46" width="300" height="60" rx="5" fill="#eafaf0" stroke="#2e9e5b" stroke-width="1.4"/><text x="44" y="64" font-size="9" font-weight="800" fill="#1b7a41">kern</text><text x="150" y="61" font-size="7.5" fill="#4a5568">alinea 2-3: de zorg en het argument voor</text><text x="150" y="74" font-size="7.5" fill="#4a5568">alinea 4: de tegenwerping</text><text x="150" y="87" font-size="7.5" fill="#4a5568">alinea 5-6: weerlegging en de echte oorzaak</text>
+      <rect x="30" y="112" width="300" height="30" rx="5" fill="#fdf2e2" stroke="#e8a530" stroke-width="1.4"/><text x="44" y="131" font-size="9" font-weight="800" fill="#b3760f">slot</text><text x="150" y="131" font-size="7.5" fill="#4a5568">alinea 7: conclusie en oproep (regel het ontwerp)</text>
     </g>
-    <text x="180" y="162" font-family="sans-serif" font-size="7.5" fill="#4a5568" text-anchor="middle">figuur: de opbouw van de tekst in drie delen</text></svg>`,
+    <text x="180" y="160" font-family="sans-serif" font-size="7.5" fill="#4a5568" text-anchor="middle">figuur: de opbouw van de tekst in drie delen</text></svg>`,
 };
 
 SLAGIO_EXAMENS.vwo.nl = {
@@ -53,60 +56,117 @@ SLAGIO_EXAMENS.vwo.nl = {
   titel: 'Nederlands',
   niveau: 'vwo',
   jaar: new Date().getFullYear(),
-  duur_minuten: 180,
-  max_punten: 16,
+  duur_minuten: 90,
+  max_punten: 24,
   bron: 'Slagio origineel · examenstijl (eigen tekst)',
   bijlagen: [],
   opgaven: [
-    { nr:1, titel:'De tekst: "De prijs van je aandacht"',
-      context:'Lees de tekst (een beschouwing). Alinea 1-2: De aandachtseconomie betekent dat bedrijven geld verdienen aan hoe lang je naar je scherm kijkt; je betaalt niet met geld, maar met je tijd, je data en je concentratievermogen. Alinea 3: Uit onderzoek blijkt dat wie voortdurend wordt onderbroken door meldingen, zich slechter kan concentreren. Alinea 4: Apps verzamelen bovendien enorme hoeveelheden persoonlijke data, zoals blijkt uit het voorbeeld van een tienermeisje dat gerichte advertenties kreeg voordat ze zelf wist dat ze zwanger was. Alinea 5: Techcritici en zelfs oud-werknemers van sociale media waarschuwen dat de apps bewust verslavend zijn ontworpen. Alinea 6: De schrijver concludeert dat we ons scherm bewuster moeten gebruiken.',
-      afb:_VNLAFB.artikel, afb_cap:'de openingsalinea\'s van de tekst' },
-    { nr:2, titel:'De argumentatie',
-      context:'Het onderstaande schema geeft de argumentatiestructuur van de tekst weer: een hoofdstandpunt met drie ondersteunende argumenten.',
-      afb:_VNLAFB.argstruct, afb_cap:'de argumentatiestructuur van de tekst' },
-    { nr:3, titel:'Soorten argumenten',
-      context:'In alinea 3 tot en met 5 gebruikt de schrijver verschillende soorten argumenten en verwijst hij naar bronnen om zijn standpunt te ondersteunen.',
-      afb:_VNLAFB.argstruct, afb_cap:'de drie argumenten met hun onderbouwing' },
-    { nr:4, titel:'De opbouw en de kern',
-      context:'Het onderstaande schema toont de opbouw van de tekst in inleiding, kern en slot.',
-      afb:_VNLAFB.opbouw, afb_cap:'de opbouw van de tekst in drie delen' },
+    { nr:1, titel:'De tekst en de hoofdlijn', context:_VNLTEKST, afb:_nlHdr() },
+    { nr:2, titel:'De argumentatie', context:_VNLTEKST, afb:_VNLAFB.argstruct },
+    { nr:3, titel:'Tekststructuur en taal', context:_VNLTEKST, afb:_VNLAFB.opbouw },
+    { nr:4, titel:'Hoofdgedachte en samenvatten', context:_VNLTEKST, afb:_nlHdr() },
   ],
   vragen: [
-    // Opgave 1
-    { nr:1, opgave:1, punten:2, type:'open', domein:'Tekstdoel',
-      vraag:'Wat is het belangrijkste schrijfdoel van deze tekst: informeren, overtuigen, activeren of amuseren? Onderbouw je antwoord met een kenmerk uit de tekst.',
-      antwoord:'Het belangrijkste schrijfdoel is overtuigen (met een activerend slot). De schrijver verdedigt een duidelijk standpunt, namelijk dat de aandachtseconomie schadelijk is, en onderbouwt dat met argumenten en bronnen. Dat wijst op overtuigen, niet op louter informeren. Kenmerkend is bijvoorbeeld dat critici worden aangehaald ("zo betogen critici") en dat de tekst eindigt met een oproep om het scherm bewuster te gebruiken. Omdat de tekst ook aanzet tot ander gedrag, is er in het slot een activerend element, maar de kern is overtuigen. (Ook goed gerekend: activeren, mits onderbouwd met de slotoproep.)',
-      antwoord_rubric:'1 punt: overtuigen (of beargumenteerd activeren). 1 punt: passend kenmerk uit de tekst (standpunt met argumenten / critici aangehaald / oproep in het slot).' },
-    { nr:2, opgave:1, punten:2, type:'open', domein:'Hoofdgedachte',
+    // ── Opgave 1: hoofdlijn ───────────────────────────────────────────
+    { nr:1, opgave:1, punten:1, type:'mc', domein:'Schrijfdoel',
+      vraag:'Wat is het belangrijkste schrijfdoel van deze tekst?',
+      opties:['informeren','overtuigen','activeren','amuseren'],
+      correct:1,
+      uitleg:'De schrijver verdedigt met argumenten een eigen standpunt (een leeftijdsgrens is een verdedigbare eerste stap, maar het ontwerp verdient de strengste regel); dat is overtuigen/betogen.' },
+    { nr:2, opgave:1, punten:1, type:'mc', domein:'Functie alinea',
+      vraag:'Wat is de functie van alinea 1 in de tekst?',
+      opties:[
+        'Ze geeft de mening van de schrijver al volledig weer.',
+        'Ze leidt het onderwerp en de vraagstelling van de tekst in.',
+        'Ze weerlegt een tegenargument.',
+        'Ze vat de hele tekst samen.'],
+      correct:1,
+      uitleg:'Alinea 1 introduceert het debat en scherpt de vraag aan ("niet of, maar hoe ver"); het is de inleiding met de vraagstelling.' },
+    { nr:3, opgave:1, punten:2, type:'open', domein:'Hoofdgedachte',
       vraag:'Geef in een volzin de hoofdgedachte van de tekst weer.',
-      antwoord:'Een goede hoofdgedachte, bijvoorbeeld: "In de aandachtseconomie betaal je gratis diensten met je tijd, je data en je concentratievermogen, en daarom pleit de schrijver ervoor dat we ons schermgebruik bewuster maken." De kern moet bevatten: (1) het onderwerp (de aandachtseconomie / aandacht wordt verkocht), en (2) het standpunt/de strekking (het is schadelijk, dus bewuster omgaan met schermen).',
-      antwoord_rubric:'1 punt: onderwerp correct (aandachtseconomie: aandacht/tijd wordt verkocht). 1 punt: standpunt/strekking correct (schadelijk -> bewuster schermgebruik), in een volzin.' },
-    // Opgave 2
-    { nr:3, opgave:2, punten:2, type:'open', domein:'Argumentatie',
-      vraag:'Benoem het hoofdstandpunt van de tekst en leg uit wat het verband is tussen het standpunt en de drie argumenten in het schema.',
-      antwoord:'Het hoofdstandpunt is dat de aandachtseconomie schadelijk is (voor het individu). De drie argumenten (aantasting van de concentratie, verlies van privacy en data, en manipulatie van gedrag) zijn nevengeschikte (onderling onafhankelijke) argumenten: elk argument ondersteunt op zichzelf het standpunt. Ze staan naast elkaar en versterken samen de aanvaardbaarheid van het standpunt; als een argument wegvalt, blijven de andere het standpunt nog steeds dragen. Er is dus sprake van een meervoudige (nevenschikkende) argumentatie.',
-      antwoord_rubric:'1 punt: hoofdstandpunt correct (aandachtseconomie is schadelijk). 1 punt: uitleg nevengeschikte/meervoudige argumentatie (elk argument steunt het standpunt zelfstandig, ze staan naast elkaar).' },
-    // Opgave 3
-    { nr:4, opgave:3, punten:2, type:'open', domein:'Argumenttypen',
-      vraag:'De schrijver onderbouwt argument 3 (manipulatie) met een uitspraak van oud-werknemers van sociale media. Welk type argument (of onderbouwing) is dit, en noem een sterk en een zwak punt van dit argumenttype.',
-      antwoord:'Dit is een autoriteitsargument (beroep op een deskundige/gezaghebbende bron): de schrijver steunt zijn bewering op het gezag van oud-werknemers die de apps van binnenuit kennen. Een sterk punt is dat deze mensen deskundig en geloofwaardig zijn, juist omdat zij zelf aan de systemen hebben meegewerkt (ervaringsdeskundigen). Een zwak punt is dat een autoriteitsargument niet vanzelf waar is: ook een deskundige kan zich vergissen of een belang of wrok hebben, en een enkele mening bewijst nog niet dat het altijd en overal zo werkt. De lezer moet dus de betrouwbaarheid en representativiteit van de bron zelf blijven wegen.',
-      antwoord_rubric:'1 punt: autoriteitsargument / beroep op deskundige benoemd. 1 punt: een sterk punt (deskundig/geloofwaardig, van binnenuit) EN een zwak punt (deskundige kan zich vergissen/belang hebben; geen bewijs op zich).' },
-    { nr:5, opgave:3, punten:2, type:'open', domein:'Drogredenen',
-      vraag:'Stel dat de schrijver zou schrijven: "Wie het gebruik van deze apps verdedigt, geeft alleen maar toe dat hij zelf verslaafd is." Leg uit welke drogreden dit is en waarom de redenering niet deugt.',
-      antwoord:'Dit is een persoonlijke aanval (ad hominem), en meer specifiek een vorm waarin de tegenstander verdacht wordt gemaakt in plaats van dat zijn argument wordt weerlegd. In plaats van in te gaan op de inhoud van wat een voorstander zegt, wordt de persoon zelf aangevallen ("dan ben je zelf verslaafd"). De redenering deugt niet, omdat de geldigheid van een standpunt niet afhangt van de persoon of de motieven van degene die het uitspreekt: ook iemand die de apps gebruikt, kan een geldig argument aandragen. Bovendien is het een cirkelachtige verdachtmaking die elk tegenargument bij voorbaat onmogelijk maakt.',
-      antwoord_rubric:'1 punt: persoonlijke aanval / ad hominem (verdachtmaking) benoemd. 1 punt: uitleg waarom ondeugdelijk (inhoud wordt niet weerlegd; geldigheid hangt niet af van de persoon/motieven).' },
-    // Opgave 4
-    { nr:6, opgave:4, punten:2, type:'open', domein:'Tekststructuur',
-      vraag:'In alinea 2 staat: "Voorstanders zeggen dat dit gratis diensten mogelijk maakt." Leg uit welke functie deze zin heeft in de opbouw van een betogende tekst.',
-      antwoord:'Deze zin introduceert een tegenwerping (tegenargument): het standpunt van de voorstanders. De functie ervan is dat de schrijver eerst een mogelijk bezwaar tegen zijn eigen standpunt benoemt, om dat vervolgens te weerleggen ("Toch betaal je wel degelijk, alleen niet met geld"). Door de tegenwerping op te nemen en te weerleggen, maakt de schrijver zijn betoog sterker en overtuigender: hij laat zien dat hij het andere standpunt kent en er een antwoord op heeft. Dit heet weerlegging van een tegenargument.',
-      antwoord_rubric:'1 punt: het is een tegenwerping/tegenargument (standpunt van de voorstanders). 1 punt: functie = wordt weerlegd om het eigen betoog te versterken/overtuigender te maken.' },
-    { nr:7, opgave:4, punten:2, type:'open', domein:'Tekststructuur',
-      vraag:'Welk verband bestaat er tussen alinea 2 ("Toch betaal je wel degelijk...") en alinea 1? Benoem het tekstverband en noem het signaalwoord dat dit aangeeft.',
-      antwoord:'Er is een tegenstellend verband (contrast/concessie) tussen de alinea\'s: alinea 1 stelt dat de diensten "gratis" lijken en dat voorstanders dat als voordeel zien, terwijl alinea 2 daar tegenin gaat door te stellen dat je wel degelijk betaalt (met tijd en data). Het signaalwoord dat dit tegenstellende verband aangeeft is "Toch" (aan het begin van alinea 2). Ook "wel degelijk" versterkt de tegenstelling.',
-      antwoord_rubric:'1 punt: tegenstellend verband (contrast/concessie) benoemd. 1 punt: signaalwoord "Toch" (of "wel degelijk") genoemd.' },
-    { nr:8, opgave:4, punten:2, type:'open', domein:'Samenvatten',
-      vraag:'Vat de kern (alinea 3 tot en met 5) samen in maximaal 25 woorden, zonder voorbeelden.',
-      antwoord:'Een goede samenvatting van de kern, bijvoorbeeld: "De aandachtseconomie is schadelijk, want voortdurende meldingen tasten de concentratie aan, apps verzamelen veel persoonlijke data, en ze zijn bewust verslavend ontworpen om gedrag te sturen." (23 woorden.) De samenvatting moet de drie kernargumenten bevatten (concentratie, data/privacy, manipulatie/verslaving) en de voorbeelden (het tienermeisje, de specifieke bronnen) weglaten, binnen de woordgrens.',
-      antwoord_rubric:'1 punt: alle drie de kernargumenten aanwezig (concentratie, data/privacy, manipulatie/verslaving). 1 punt: zonder voorbeelden en binnen de woordgrens (maximaal 25 woorden), lopende zin.' },
+      antwoord:'Een goede hoofdgedachte, bijvoorbeeld: "Een leeftijdsgrens voor sociale media is een bot maar verdedigbaar eerste middel tegen de schade voor jongeren, terwijl de echte oplossing ligt in het aan banden leggen van het verslavende ontwerp van de platforms zelf." De kern bevat: (1) een leeftijdsgrens is een verdedigbare (maar botte / eerste) stap, en (2) de eigenlijke oplossing is het reguleren van het ontwerp/verdienmodel, niet alleen de leeftijd.',
+      antwoord_rubric:'1 punt: leeftijdsgrens = verdedigbare/eerste (maar botte) stap. 1 punt: de echte oplossing is het ontwerp/verdienmodel van de platforms aanpakken, in een volzin.' },
+    { nr:4, opgave:1, punten:2, type:'open', domein:'Tekstbegrip',
+      vraag:'In alinea 2 staat dat de apps "met opzet zo ontworpen zijn dat je blijft scrollen". Leg met de tekst uit hoe de platforms dat volgens de schrijver voor elkaar krijgen.',
+      antwoord:'Volgens de schrijver werkt elke melding en elke like als een kleine beloning die om herhaling vraagt (alinea 2). De apps maken dus gebruik van steeds terugkerende beloningen, waardoor je telkens opnieuw wilt kijken en blijft scrollen. In alinea 6 vult de schrijver aan waaróm ze zo gebouwd zijn: in de aandachtseconomie verdienen de platforms geld aan de tijd die je op het scherm doorbrengt, dus zijn ze geoptimaliseerd om die schermtijd zo lang mogelijk te maken.',
+      antwoord_rubric:'1 punt: via kleine beloningen (melding/like) die om herhaling vragen -> blijven scrollen. 1 punt: koppeling aan het verdienmodel/aandachtseconomie (geld verdienen aan schermtijd, dus geoptimaliseerd op lange schermtijd).' },
+    // ── Opgave 2: argumentatie ────────────────────────────────────────
+    { nr:5, opgave:2, punten:1, type:'mc', domein:'Argumentatie',
+      vraag:'Welk soort argument gebruikt de schrijver in alinea 3 met "de kwetsbaarheid van het jonge brein"?',
+      opties:[
+        'een autoriteitsargument',
+        'een argument dat wijst op een oorzaak-gevolgrelatie (een jong brein weerstaat de trucs slechter)',
+        'een drogreden',
+        'een voorbeeld uit eigen ervaring'],
+      correct:1,
+      uitleg:'De schrijver beredeneert een gevolg: omdat het jonge brein nog in ontwikkeling is, kan het de verslavende trucs slechter weerstaan; dat pleit voor bescherming. Het is een inhoudelijk oorzaak-gevolg-argument.' },
+    { nr:6, opgave:2, punten:1, type:'mc', domein:'Argumentatie',
+      vraag:'Wat is de functie van alinea 4 ten opzichte van alinea 3?',
+      opties:[
+        'Alinea 4 herhaalt alinea 3 met andere woorden.',
+        'Alinea 4 geeft een tegenwerping tegen het standpunt van alinea 3.',
+        'Alinea 4 geeft een voorbeeld bij alinea 3.',
+        'Alinea 4 trekt de conclusie van de tekst.'],
+      correct:1,
+      uitleg:'Alinea 4 ("Tegenstanders vinden dit echter veel te kort door de bocht") brengt het tegenargument in tegen de leeftijdsgrens van alinea 3.' },
+    { nr:7, opgave:2, punten:2, type:'open', domein:'Argumentatie',
+      vraag:'In alinea 5 weerlegt de schrijver het tegenargument dat een verbod "onuitvoerbaar" is. Leg uit met welke vergelijking hij dat doet en waarom die vergelijking zijn punt ondersteunt.',
+      antwoord:'De schrijver vergelijkt de leeftijdsgrens met een snelheidslimiet: ook een snelheidslimiet wordt overtreden en is niet waterdicht te handhaven, en toch redt hij levens doordat hij een norm stelt. Met die vergelijking laat de schrijver zien dat een regel niet perfect handhaafbaar hoeft te zijn om zinvol te zijn: het stellen van een duidelijke norm heeft op zichzelf al een positief effect. Zo weerlegt hij dat "onuitvoerbaar" hetzelfde is als "zinloos".',
+      antwoord_rubric:'1 punt: de vergelijking met de snelheidslimiet benoemd. 1 punt: uitleg dat een niet-waterdichte regel toch zin heeft omdat hij een norm stelt (dus onuitvoerbaar is niet hetzelfde als zinloos).' },
+    { nr:8, opgave:2, punten:2, type:'open', domein:'Drogredenen',
+      vraag:'Stel dat een tegenstander zou zeggen: "Wie een leeftijdsgrens wil, wil zeker terug naar vroeger, toen kinderen nog buitenspeelden zonder telefoon." Leg uit welke drogreden dit is en waarom de redenering niet deugt.',
+      antwoord:'Dit is een vertekening van het standpunt (een stroman-drogreden, een vorm van verkeerde voorstelling van zaken): de tegenstander schrijft de voorstander een veel extremer of ander standpunt toe ("terug naar vroeger, zonder telefoon") dan wat die werkelijk beweert (alleen een leeftijdsgrens onder de zestien). Vervolgens valt hij dat verzonnen standpunt aan in plaats van het echte. De redenering deugt niet omdat er niet wordt ingegaan op het werkelijke argument; er wordt een karikatuur bestreden, en dat bewijst niets over de houdbaarheid van het echte standpunt.',
+      antwoord_rubric:'1 punt: stroman / verkeerde voorstelling van zaken (het standpunt wordt overdreven/vertekend weergegeven). 1 punt: uitleg waarom ondeugdelijk (het echte argument wordt niet weerlegd, alleen een karikatuur ervan).' },
+    // ── Opgave 3: structuur en taal ───────────────────────────────────
+    { nr:9, opgave:3, punten:1, type:'mc', domein:'Tekststructuur',
+      vraag:'Welk verband bestaat er tussen alinea 5 en alinea 4?',
+      opties:['een oorzaak-gevolgverband','een tegenstellend verband','een opsommend verband','een vergelijkend verband'],
+      correct:1,
+      uitleg:'Alinea 5 gaat in tegen alinea 4 ("Toch overtuigt dat tegenargument niet helemaal"); dat is een tegenstellend verband.' },
+    { nr:10, opgave:3, punten:1, type:'mc', domein:'Verwijzing',
+      vraag:'Naar wie of wat verwijst "hij" in "en toch redt hij levens door een norm te stellen" (alinea 5)?',
+      opties:['de schrijver','de tiener','de snelheidslimiet','het tegenargument'],
+      correct:2,
+      uitleg:'"Hij" verwijst naar de snelheidslimiet uit dezelfde zin: die wordt overtreden, en toch redt hij (de limiet) levens door een norm te stellen.' },
+    { nr:11, opgave:3, punten:1, type:'mc', domein:'Betekenis',
+      vraag:'Wat betekent "een bot instrument" in alinea 7 het best?',
+      opties:[
+        'een verboden middel',
+        'een grof, weinig verfijnd middel dat het probleem niet precies raakt',
+        'een volstrekt nutteloos middel',
+        'een nieuw en modern middel'],
+      correct:1,
+      uitleg:'"Bot" staat hier tegenover fijn/precies: de leeftijdsgrens is een grof middel dat de echte oorzaak (het ontwerp) niet precies aanpakt, maar wel een verdedigbare eerste stap is.' },
+    { nr:12, opgave:3, punten:1, type:'mc', domein:'Functie alinea',
+      vraag:'Wat is de belangrijkste functie van alinea 6 in het betoog?',
+      opties:[
+        'Ze herhaalt de inleiding.',
+        'Ze verlegt de aandacht van de leeftijd naar de eigenlijke oorzaak: het ontwerp/verdienmodel.',
+        'Ze geeft de mening van de tegenstanders weer.',
+        'Ze somt de voordelen van sociale media op.'],
+      correct:1,
+      uitleg:'Alinea 6 stelt dat de kern niet bij de leeftijd ligt maar bij het ontwerp (de aandachtseconomie); ze verlegt zo de aandacht naar de eigenlijke oorzaak, wat de conclusie in alinea 7 voorbereidt.' },
+    { nr:13, opgave:3, punten:2, type:'open', domein:'Tekststructuur',
+      vraag:'Leg uit hoe alinea 7 (het slot) logisch voortbouwt op alinea 6. Gebruik in je antwoord de begrippen "oorzaak" en "conclusie".',
+      antwoord:'In alinea 6 stelt de schrijver de eigenlijke oorzaak van de schade vast: niet de leeftijd, maar het ontwerp/verdienmodel van de platforms (de aandachtseconomie). Alinea 7 trekt daaruit de conclusie: omdat de oorzaak in het ontwerp ligt, is een leeftijdsgrens wel een verdedigbare eerste stap maar geen echte oplossing, en moet je wie de schade echt wil aanpakken juist het ontwerp zelf aan banden leggen. Het slot bouwt dus voort op de in alinea 6 benoemde oorzaak en verbindt daar de eindconclusie/oproep aan.',
+      antwoord_rubric:'1 punt: alinea 6 benoemt de oorzaak (het ontwerp/verdienmodel, niet de leeftijd). 1 punt: alinea 7 trekt daaruit de conclusie (leeftijdsgrens is niet genoeg; pak het ontwerp aan).' },
+    // ── Opgave 4: hoofdgedachte en samenvatten ────────────────────────
+    { nr:14, opgave:4, punten:1, type:'mc', domein:'Toon',
+      vraag:'Hoe kun je de houding van de schrijver tegenover de leeftijdsgrens het best omschrijven?',
+      opties:[
+        'volledig afwijzend',
+        'genuanceerd: hij ziet de grens als een gebrekkige maar verdedigbare eerste stap',
+        'onvoorwaardelijk enthousiast',
+        'volstrekt onverschillig'],
+      correct:1,
+      uitleg:'De schrijver noemt de grens een "bot instrument" maar wel een "verdedigbare eerste stap": een genuanceerde houding, geen onvoorwaardelijk voor of tegen.' },
+    { nr:15, opgave:4, punten:3, type:'open', domein:'Samenvatten',
+      vraag:'Geef in maximaal 45 woorden de kern van de tekst weer. Verwerk: (a) het voorstel, (b) het belangrijkste argument voor, (c) de tegenwerping, en (d) het uiteindelijke standpunt van de schrijver.',
+      antwoord:'Voorbeeldsamenvatting (ongeveer 45 woorden): "Steeds meer landen willen sociale media onder de zestien verbieden. Voorstanders wijzen op het kwetsbare jonge brein en steun voor ouders; tegenstanders vinden een verbod betuttelend en onuitvoerbaar. Volgens de schrijver is een leeftijdsgrens een botte maar verdedigbare eerste stap; de echte oplossing is het verslavende ontwerp van de platforms aanpakken." De samenvatting moet alle vier de elementen bevatten (voorstel, argument voor, tegenwerping, eindstandpunt) en binnen de woordgrens blijven, in lopende zinnen.',
+      antwoord_rubric:'1 punt: (a) het voorstel (verbod/leeftijdsgrens onder 16) en (b) het argument voor (kwetsbaar brein / steun ouders). 1 punt: (c) de tegenwerping (betuttelend / onuitvoerbaar / ook nuttig). 1 punt: (d) het eindstandpunt (botte maar verdedigbare eerste stap; echte oplossing = ontwerp aanpakken) en binnen 45 woorden in lopende zinnen.' },
+    { nr:16, opgave:4, punten:2, type:'open', domein:'Tekstbegrip',
+      vraag:'De schrijver eindigt met "Niet de jongere, maar het ontwerp verdient de strengste regel." Leg in het Nederlands uit waarom deze slotzin de boodschap van de hele tekst goed samenvat.',
+      antwoord:'De slotzin vat de boodschap samen doordat hij de nadruk verschuift van waar het debat mee begon (de leeftijd van de gebruiker) naar wat volgens de schrijver de echte oorzaak is (het ontwerp/verdienmodel van de platforms). De hele tekst bouwt daar naartoe: een leeftijdsgrens pakt alleen de jongere aan, maar niet de bron van de schade. Door te zeggen dat "het ontwerp" en niet "de jongere" de strengste regel verdient, benoemt de schrijver in een zin zijn kernstandpunt: reguleer de manier waarop de apps gebouwd zijn.',
+      antwoord_rubric:'1 punt: de zin verschuift de nadruk van de gebruiker/leeftijd naar het ontwerp/verdienmodel als echte oorzaak. 1 punt: dat is precies waar de hele tekst naartoe werkt (leeftijdsgrens pakt de bron niet aan; reguleer het ontwerp).' },
   ],
 };
