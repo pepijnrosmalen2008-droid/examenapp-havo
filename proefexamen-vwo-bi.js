@@ -124,8 +124,8 @@ SLAGIO_EXAMENS.vwo.bi = {
     // Opgave 6
     { nr:12, opgave:6, punten:2, type:'open', domein:'Evolutie',
       vraag:'In afbeelding 6 is de frequentie van het genotype aa gelijk aan 0,04. Bereken met de Hardy-Weinberg-verhouding de allelfrequenties van a en A.',
-      antwoord:'q² = frequentie aa = 0,04, dus q (frequentie van allel a) = √0,04 = 0,2. Dan is p (frequentie van allel A) = 1 − q = 1 − 0,2 = 0,8. (Controle: p² = 0,64 en 2pq = 2·0,8·0,2 = 0,32, zoals in de figuur.)',
-      antwoord_rubric:'1 punt: q = √0,04 = 0,2. 1 punt: p = 1 − 0,2 = 0,8.' },
+      antwoord:'q² = frequentie aa = 0,04, dus q (frequentie van allel a) = √0,04 = 0,2. Dan is p (frequentie van allel A) = 1 - q = 1 - 0,2 = 0,8. (Controle: p² = 0,64 en 2pq = 2·0,8·0,2 = 0,32, zoals in de figuur.)',
+      antwoord_rubric:'1 punt: q = √0,04 = 0,2. 1 punt: p = 1 - 0,2 = 0,8.' },
     { nr:13, opgave:6, punten:3, type:'open', domein:'Evolutie',
       vraag:'Bereken welk deel van de populatie drager is van het recessieve allel zonder zelf het recessieve genotype te hebben. Leg daarna uit waarom een recessief allel ook bij zeldzame aandoeningen lang in een populatie aanwezig kan blijven.',
       antwoord:'De heterozygote dragers hebben genotype Aa, met frequentie 2pq = 2 · 0,8 · 0,2 = 0,32, dus 32% van de populatie is drager zonder de aandoening. Een recessief allel blijft lang aanwezig omdat het bij heterozygoten (Aa) verborgen zit: die dragers hebben zelf geen aandoening, dus de natuurlijke selectie "ziet" het allel niet en verwijdert het niet. Alleen de zeldzame homozygoot recessieven (aa) worden getroffen, terwijl het merendeel van de a-allelen veilig in dragers wordt doorgegeven.',
