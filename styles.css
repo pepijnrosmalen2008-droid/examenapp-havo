@@ -8144,3 +8144,35 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .pi-plan-btn.best{background:linear-gradient(135deg,color-mix(in srgb,var(--or) 88%,#fff),var(--or));color:#fff;border-color:var(--or);box-shadow:0 4px 14px rgba(var(--or-rgb),.3)}
 .pi-trial{background:rgba(var(--or-rgb),.06);border:1px dashed rgba(var(--or-rgb),.3);border-radius:13px;padding:14px 16px;font-size:13px;line-height:1.6;color:color-mix(in srgb,var(--dk) 72%,transparent);text-align:center}
 .pi-trial b{color:var(--or)}
+
+/* ═══════ SLAGIO PLUS — Vandaag / kalender / examenmodus ═══════ */
+.plus-vandaag{background:linear-gradient(140deg,color-mix(in srgb,var(--or) 90%,#fff),var(--or));color:#fff;border-radius:18px;padding:18px;box-shadow:0 8px 28px rgba(var(--or-rgb),.32)}
+.plus-vandaag.locked{background:var(--s);color:var(--dk);border:1px solid rgba(var(--or-rgb),.16);box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.pv-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.pv-badge{font-family:var(--font-head);font-weight:900;font-size:16px;letter-spacing:-.2px}
+.pv-vak{font-size:12px;font-weight:600;opacity:.9;text-align:right}
+.plus-vandaag .plus-plan{margin-bottom:12px}
+.plus-vandaag .pp-item{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.22)}
+.plus-vandaag .pp-t{color:#fff}
+.plus-vandaag .pp-t small{color:rgba(255,255,255,.75)}
+.plus-vandaag.locked .plus-lock{margin-top:0}
+.pv-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12.5px;font-weight:700;margin-bottom:12px}
+.plus-vandaag .plus-time .pt{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.14);color:#fff}
+.plus-vandaag .plus-time .pt.on{background:#fff;color:var(--or);border-color:#fff}
+.plus-vandaag .plus-cta{background:#fff;color:var(--or);box-shadow:0 3px 12px rgba(0,0,0,.14)}
+.plus-sec-h{font-family:var(--font-head);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:color-mix(in srgb,var(--dk) 48%,transparent);margin:4px 2px -4px}
+/* Kalender */
+.plus-kal{display:flex;flex-direction:column;gap:2px}
+.pk-row{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:10px;padding:10px 2px;border-top:1px solid rgba(var(--or-rgb),.08)}
+.pk-row:first-child{border-top:0}
+.pk-row.next .pk-vak{color:var(--or)}
+.pk-vak{font-size:13.5px;font-weight:700;color:var(--dk)}
+.pk-date{font-size:12px;color:color-mix(in srgb,var(--dk) 55%,transparent);font-variant-numeric:tabular-nums}
+.pk-days{font-size:11.5px;font-weight:700;color:var(--or);background:var(--orl);border-radius:20px;padding:3px 9px;white-space:nowrap}
+/* Examenmodus */
+.plus-modus{width:100%;display:flex;align-items:center;gap:13px;background:var(--s);border:1px solid rgba(var(--or-rgb),.14);border-radius:14px;padding:14px 15px;cursor:pointer;text-align:left;transition:all .15s}
+.plus-modus:hover{border-color:rgba(var(--or-rgb),.4)}
+.pm-ic{flex:0 0 auto;font-size:20px}
+.pm-t{flex:1;display:flex;flex-direction:column;font-family:var(--font-head);font-weight:800;font-size:14px;color:var(--dk)}
+.pm-t small{font-family:var(--font);font-weight:500;font-size:11.5px;color:color-mix(in srgb,var(--dk) 55%,transparent)}
+.pm-arr{flex:0 0 auto;color:var(--or);font-weight:800;font-size:18px}

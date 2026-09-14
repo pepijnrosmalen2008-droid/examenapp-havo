@@ -724,8 +724,8 @@ function examenFinish(){
   _exBuildResultList();
   _exUpdateGrade();
   document.getElementById('sc-examen').scrollTo(0,0);
-  // Badge: eerste echt examen afgemaakt
-  try{if(earnAch('examen_done'))setTimeout(()=>showAch('📄','Eerste echt examen afgemaakt!'),1200);}catch(e){}
+  // Badge: eerste echt examen afgemaakt (niet in de afleidingsvrije examenmodus)
+  if(!window._examenModus){ try{if(earnAch('examen_done'))setTimeout(()=>showAch('📄','Eerste echt examen afgemaakt!'),1200);}catch(e){} }
 }
 
 function _exBuildResultList(){
@@ -961,6 +961,7 @@ function examenExit(){
   // Resultaat vastleggen voor de Plus-examentrainer (met de definitieve,
   // zelf-/AI-nagekeken score). Alleen als het examen echt is afgerond.
   if(EX.phase==='result' && typeof plusRecordExam==='function'){ try{ plusRecordExam(EX); }catch(e){} }
+  try{ window._examenModus=false; }catch(e){}
   // Reset split layout
   const _quiz = document.getElementById('ex-quiz');
   const _tbPanel = document.getElementById('ex-tb-panel');

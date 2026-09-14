@@ -184,6 +184,96 @@ function plusRapportHTML(rec){
   </div>`;
 }
 
+// ── Examenkalender: de eigen examens van de leerling met resterende dagen ──
+function plusMijnExamens(niveau){
+  const lvl = niveau || (typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo');
+  let mijn=[]; try{ if(typeof getMijnVakken==='function') mijn=getMijnVakken()||[]; }catch(e){}
+  const sched = (typeof schData==='function') ? schData() : (typeof EXAM_SCHEDULE!=='undefined'?EXAM_SCHEDULE:[]);
+  const dataVakken = plusVakkenMetData(lvl).map(v=>v.vakId);
+  const wil = new Set([].concat(mijn, dataVakken));
+  const out=[];
+  sched.forEach(e=>{
+    if(e.niveau && e.niveau!==lvl) return;
+    const id=e.vakId||e.vak;
+    if(!wil.has(e.vakId) && !wil.has(e.vak) && !(dataVakken.indexOf(e.vakId)>=0)) return;
+    const t=Date.parse(e.datum); if(isNaN(t) || t < Date.now()-864e5) return;
+    out.push({ vak:e.vak, vakId:e.vakId||null, datum:e.datum, tijd:e.tijd||'',
+      dagen:Math.max(0,Math.ceil((t-Date.now())/864e5)) });
+  });
+  return out.sort((a,b)=>Date.parse(a.datum)-Date.parse(b.datum));
+}
+
+// ── Eén onderliggend profiel: alle Plus-features zijn vensters hierop ──────
+function plusProfiel(vakId, niveau){
+  const lvl=niveau||(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo');
+  return {
+    vakId, niveau:lvl,
+    examens: _plusVakResults(vakId,lvl),
+    domeinen: plusDomeinAnalyse(vakId,lvl),
+    types: plusVraagtypeAnalyse(vakId,lvl),
+    lek: plusPuntenlekkage(vakId,lvl),
+    voorspeld: plusVoorspeldCijfer(vakId,lvl),
+    readiness: plusReadiness(vakId,lvl),
+    dagen: plusDagenTotExamen(vakId,lvl),
+    doel: plusDoel(vakId),
+    herhaling: plusHerhaling(vakId,lvl)
+  };
+}
+
+// ── Prioriteitsmotor: waar levert de volgende training het meeste op? ─────
+function plusPrioriteit(niveau){
+  const lvl=niveau||(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo');
+  const vakken=plusVakkenMetData(lvl); if(!vakken.length) return null;
+  let best=null;
+  vakken.forEach(v=>{
+    const voorsp=plusVoorspeldCijfer(v.vakId,lvl), ready=plusReadiness(v.vakId,lvl);
+    const doel=plusDoel(v.vakId), dg=plusDagenTotExamen(v.vakId,lvl);
+    const gap=Math.max(0, doel-(voorsp?voorsp.cijfer:doel));
+    const readGap=ready?(100-ready.score)/100:0.5;
+    const urg=dg?Math.max(0,Math.min(1,1-dg.dagen/120)):0.3;
+    const score=gap*0.9 + readGap*1.2 + urg*1.0;
+    let reden='hier valt de meeste winst te halen';
+    if(urg>=0.6 && urg*1.0>=gap*0.9) reden='je examen komt eraan';
+    else if(gap>=1) reden='hier lig je het verst van je doel';
+    if(!best || score>best.score) best={vakId:v.vakId, vak:v.vak, score, reden, gap, readGap, urg};
+  });
+  return best;
+}
+
+// ── "Vandaag voor jou": één helder plan voor het meest urgente vak ────────
+function plusVandaag(niveau){
+  const lvl=niveau||(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo');
+  const pri=plusPrioriteit(lvl); if(!pri) return null;
+  const plan=plusStudieplan(pri.vakId, plusTijd(), lvl);
+  const herh=plusHerhaling(pri.vakId, lvl);
+  let taken=plan.taken.slice();
+  if(herh.length){ // vervang de generieke foutentaak door concrete slimme herhaling
+    taken=taken.filter(t=>t.tag!=='foutenboek');
+    taken.splice(Math.min(2,taken.length),0,{ic:'🔁', t:herh.length+' onderwerp'+(herh.length>1?'en':'')+' om te herhalen', tag:'slimme herhaling'});
+  }
+  return { vakId:pri.vakId, vak:pri.vak, reden:pri.reden,
+    taken:taken.slice(0, plan.minuten>=30?5:4), minuten:plan.minuten, xp:Math.round(plan.minuten*1.7) };
+}
+
+// ── Slimme herhaling: welke onderwerpen zijn "toe aan herhaling"? ──────────
+// Rule-based/spaced: zwakke domeinen die je een tijdje niet hebt geoefend
+// komen terug. Robuust: gebruikt de bestaande resultaatopslag.
+function plusHerhaling(vakId, niveau){
+  const lvl=niveau||(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo');
+  const res=_plusVakResults(vakId,lvl); if(!res.length) return [];
+  const laatste={}; // domein -> {pct som, n, laatste ts}
+  res.forEach(r=>{ Object.keys(r.domeinen||{}).forEach(d=>{ const s=r.domeinen[d];
+    const o=laatste[d]||(laatste[d]={behaald:0,max:0,ts:0});
+    o.behaald+=s.behaald; o.max+=s.max; o.ts=Math.max(o.ts, r.ts||0); }); });
+  const nu=Date.now();
+  return Object.keys(laatste).map(d=>{ const o=laatste[d]; const pct=o.max?o.behaald/o.max:0;
+    const dagenGeleden=Math.floor((nu-o.ts)/864e5);
+    // "due": zwak (<75%) en minstens 2 dagen niet gedaan, of >7 dagen ongeacht
+    const due = (pct<0.75 && dagenGeleden>=2) || dagenGeleden>=7;
+    return {domein:d, pct, dagenGeleden, due}; })
+    .filter(x=>x.due).sort((a,b)=>a.pct-b.pct);
+}
+
 // ═══════ PLUS-DASHBOARD ═══════
 let _plusVak = null;
 function openPlusDashboard(){
@@ -191,6 +281,19 @@ function openPlusDashboard(){
   renderPlusDashboard();
 }
 function _plusPickVak(vakId){ _plusVak=vakId; renderPlusDashboard(); }
+
+// Examenmodus: afleidingsvrije volledige simulatie op tijd. Zet het vak, markeert
+// de focus-modus (onderdrukt gamification bij afloop) en start het volledige
+// proefexamen. Tijdregistratie en het rapport lopen via de gewone runner.
+function startExamenmodus(vakId){
+  try{
+    const vk=(typeof getVK==='function'?getVK():[]).find(v=>v.id===vakId);
+    if(vk && typeof ST!=='undefined'){ ST.vak=vk; ST.vakId=vk.id; }
+    window._examenModus=true;
+    if(typeof startProefexamen==='function') startProefexamen();
+    else if(typeof showToast==='function') showToast('Kies eerst een vak met een proefexamen.');
+  }catch(e){}
+}
 
 function renderPlusDashboard(){
   const el=document.getElementById('sc-plus-body'); if(!el) return;
@@ -252,18 +355,6 @@ function renderPlusDashboard(){
     }
   }
 
-  // ── Vandaag (studieplan) ──
-  let planHtml='';
-  if(isPlus){
-    const plan=plusStudieplan(vakId, plusTijd(), niveau);
-    planHtml=`<div class="plus-card"><div class="plus-card-h">Vandaag · ±${plan.minuten} min
-      <span class="plus-time">${[10,20,30].map(m=>`<button class="pt${m===plusTijd()?' on':''}" onclick="plusSetTijd(${m})">${m}m</button>`).join('')}</span></div>
-      <div class="plus-plan">${plan.taken.map(t=>`<div class="pp-item"><span class="pp-ic">${t.ic}</span><span class="pp-t">${t.t}<small>${t.tag}</small></span></div>`).join('')}</div>
-      <button class="plus-cta" onclick="_plusStart('${vakId}')">Start training</button></div>`;
-  } else {
-    planHtml=`<div class="plus-card locked"><div class="plus-card-h">Jouw plan voor vandaag</div><div class="plus-lock"><div class="pl-blur">Elke dag de training die het meeste oplevert</div>${_plusLockBtn()}</div></div>`;
-  }
-
   // ── Zwakke punten (basis gratis, uitgebreid Plus) ──
   let zwakHtml='';
   if(dom.length){
@@ -299,9 +390,39 @@ function renderPlusDashboard(){
       <div class="plus-over">${rows}</div></div>`;
   }
 
-  el.innerHTML = `<div class="plus-vchips">${chips}</div>${head}${rapHtml}${readyHtml}${planHtml}${zwakHtml}${ontwHtml}${overHtml}
+  // ── "Vandaag voor jou" (cross-vak, primaire actie) ──
+  let vandaagHtml='';
+  if(isPlus){
+    const vd=plusVandaag(niveau);
+    if(vd){
+      vandaagHtml=`<div class="plus-vandaag">
+        <div class="pv-top"><span class="pv-badge">🎯 Vandaag voor jou</span><span class="pv-vak">${vd.vak} · ${vd.reden}</span></div>
+        <div class="plus-plan">${vd.taken.map(t=>`<div class="pp-item"><span class="pp-ic">${t.ic}</span><span class="pp-t">${t.t}<small>${t.tag}</small></span></div>`).join('')}</div>
+        <div class="pv-foot">±${vd.minuten} min · +${vd.xp} XP <span class="plus-time">${[10,20,30].map(m=>`<button class="pt${m===plusTijd()?' on':''}" onclick="plusSetTijd(${m})">${m}m</button>`).join('')}</span></div>
+        <button class="plus-cta" onclick="_plusStart('${vd.vakId}')">Start training</button></div>`;
+    }
+  } else {
+    vandaagHtml=`<div class="plus-vandaag locked"><div class="pv-top"><span class="pv-badge">🎯 Vandaag voor jou</span></div>
+      <div class="plus-lock"><div class="pl-blur">Elke dag één helder plan: precies wat je nu moet oefenen</div>${_plusLockBtn()}</div></div>`;
+  }
+
+  // ── Examenkalender ──
+  let kalHtml='';
+  const exm=plusMijnExamens(niveau);
+  if(exm.length){
+    const rows=exm.slice(0,6).map((e,i)=>`<div class="pk-row${i===0?' next':''}"><span class="pk-vak">${e.vak}</span><span class="pk-date">${_plusDatum(e.datum)}</span><span class="pk-days">nog ${e.dagen} dagen</span></div>`).join('');
+    kalHtml=`<div class="plus-card"><div class="plus-card-h">Examenkalender</div><div class="plus-kal">${rows}</div></div>`;
+  }
+
+  // ── Examenmodus-knop (afleidingsvrije volledige simulatie) ──
+  const modusHtml = `<button class="plus-modus" onclick="startExamenmodus('${vakId}')"><span class="pm-ic">🎧</span><span class="pm-t">Examenmodus<small>afleidingsvrije simulatie op tijd</small></span><span class="pm-arr">→</span></button>`;
+
+  el.innerHTML = `${vandaagHtml}${kalHtml}
+    <div class="plus-sec-h">Per vak</div>
+    <div class="plus-vchips">${chips}</div>${head}${modusHtml}${rapHtml}${readyHtml}${zwakHtml}${ontwHtml}${overHtml}
     ${!isPlus?`<div class="plus-upsell-foot"><b>Slagio Plus</b> geeft je AI-nakijken, je verwachte cijfer, readiness en een persoonlijk plan. Oefenen en zelf nakijken blijven altijd gratis.<button class="plus-cta" onclick="plusIntro()">🎯 Bekijk Slagio Plus</button></div>`:''}`;
 }
+function _plusDatum(iso){ try{ const d=new Date(iso+'T00:00:00'); const mn=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec']; return d.getDate()+' '+mn[d.getMonth()]; }catch(e){ return iso; } }
 
 function _plusLockBtn(){ return `<button class="pl-btn" onclick="plusIntro()">🔒 Slagio Plus</button>`; }
 function plusTijd(){ try{ const v=parseInt(localStorage.getItem('slagio_plus_tijd')||'20',10); return isNaN(v)?20:v; }catch(e){ return 20; } }
