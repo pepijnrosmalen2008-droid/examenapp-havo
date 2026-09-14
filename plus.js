@@ -464,8 +464,33 @@ function openPlusIntro(){ try{ show('sc-plus-intro'); }catch(e){} renderPlusIntr
 // plusIntro() (aangeroepen vanuit sim.js/dashboard) opent voortaan het scherm.
 function plusIntro(){ openPlusIntro(); }
 
+// Persoonlijk blok: verkoop met de eigen cijfers van de leerling ("dit lost
+// Slagio voor jou op"), niet met een featurelijst. Leeg als er nog geen data is.
+function _plusIntroPersoonlijk(niveau){
+  const pri = (typeof plusPrioriteit==='function') ? plusPrioriteit(niveau) : null;
+  if(!pri) return '';
+  const p = plusProfiel(pri.vakId, niveau);
+  const items=[];
+  if(p.voorspeld) items.push(`<div class="pip-row"><span class="pip-ic">📈</span><span><b>${p.voorspeld.cijfer.toFixed(1)} → ${p.doel.toFixed(1)}</b> verwacht cijfer richting je doel</span></div>`);
+  const zwak = p.domeinen && p.domeinen[0];
+  if(zwak && zwak.pct<0.75) items.push(`<div class="pip-row"><span class="pip-ic">🔴</span><span><b>${zwak.domein}</b> is je grootste zwakke punt (${Math.round(zwak.pct*100)}%)</span></div>`);
+  if(p.types && p.types.open!=null && (p.types.mc==null || p.types.open<=p.types.mc)) items.push(`<div class="pip-row"><span class="pip-ic">📝</span><span>Je verliest vooral punten bij <b>open vragen</b></span></div>`);
+  if(p.dagen) items.push(`<div class="pip-row"><span class="pip-ic">🎯</span><span>Nog <b>${p.dagen.dagen} dagen</b> tot je examen ${pri.vak}</span></div>`);
+  if(!items.length) return '';
+  const vd = (typeof plusVandaag==='function') ? plusVandaag(niveau) : null;
+  const doen = vd ? vd.taken.slice(0,3).map(t=>t.t).join(' · ') : '';
+  return `<div class="pi-perso">
+    <div class="pip-vak">${pri.vak} · jouw stand nu</div>
+    ${items.join('')}
+    ${doen?`<div class="pip-doen"><b>Dit moet je vandaag doen:</b><br>${doen}</div>`:''}
+    <div class="pip-note">Dit is wat Slagio Plus voor je bijhoudt en verbetert.</div>
+  </div>`;
+}
+
 function renderPlusIntro(){
   const el=document.getElementById('sc-plus-intro-body'); if(!el) return;
+  const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
+  const perso=_plusIntroPersoonlijk(niveau);
   const active = (typeof plusActive==='function') && plusActive();
   const feats=_PLUS_FEATURES.map(f=>`<div class="pi-feat"><span class="pi-feat-ic">${f[0]}</span><div><b>${f[1]}</b><span>${f[2]}</span></div></div>`).join('');
   const cell=v=> v===true?'<span class="pi-y">✓</span>' : (v===false?'<span class="pi-n">–</span>' : `<span class="pi-v">${v}</span>`);
@@ -485,6 +510,7 @@ function renderPlusIntro(){
       <p class="pi-lead">Slagio Plus laat zien waar je punten laat liggen, wat je vandaag moet oefenen en hoe je ervoor staat richting je examen.</p>
       <p class="pi-killer">Van "ik moet meer leren" naar "ik weet precies wat ik moet doen."</p>
     </div>
+    ${perso}
     ${active?`<div class="pi-active">✓ Je hebt Slagio Plus. <button class="pi-link" onclick="openPlusDashboard()">Naar je examentrainer</button></div>`:''}
     <div class="pi-feats">${feats}</div>
     <div class="pi-vergelijk">

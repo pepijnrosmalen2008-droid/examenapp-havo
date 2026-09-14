@@ -8176,3 +8176,13 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .pm-t{flex:1;display:flex;flex-direction:column;font-family:var(--font-head);font-weight:800;font-size:14px;color:var(--dk)}
 .pm-t small{font-family:var(--font);font-weight:500;font-size:11.5px;color:color-mix(in srgb,var(--dk) 55%,transparent)}
 .pm-arr{flex:0 0 auto;color:var(--or);font-weight:800;font-size:18px}
+
+/* Plus-verkooppagina — persoonlijk blok */
+.pi-perso{background:linear-gradient(140deg,color-mix(in srgb,var(--or) 12%,var(--s)),var(--s));border:1.5px solid rgba(var(--or-rgb),.3);border-radius:16px;padding:16px 17px;display:flex;flex-direction:column;gap:9px}
+.pip-vak{font-family:var(--font-head);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--or);margin-bottom:2px}
+.pip-row{display:flex;gap:11px;align-items:flex-start;font-size:14px;color:var(--dk);line-height:1.45}
+.pip-ic{flex:0 0 auto;font-size:16px}
+.pip-row b{font-weight:800}
+.pip-doen{margin-top:4px;background:rgba(var(--or-rgb),.08);border-radius:10px;padding:11px 13px;font-size:13px;color:color-mix(in srgb,var(--dk) 80%,transparent);line-height:1.55}
+.pip-doen b{color:var(--or)}
+.pip-note{font-size:11.5px;color:color-mix(in srgb,var(--dk) 52%,transparent);font-style:italic}
