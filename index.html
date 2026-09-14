@@ -852,6 +852,14 @@
 
 <!-- STATUSBALK: streak · munten · level · divisie (compact, tikbaar naar detail) -->
 <div class="w"><div id="hm-statbar"></div></div>
+<!-- EXAMENTRAINER: prominente ingang naar de Plus-omgeving (crown jewel).
+     Staat bewust hier buiten .hm-menu, want dat menu is op alle schermen
+     verborgen; dit is de echte ingang op telefoon én desktop. -->
+<div class="w"><button class="hm-trainer-cta" onclick="openPlusDashboard()" aria-label="Open de Examentrainer">
+  <span class="hm-trainer-ic">🎯</span>
+  <span class="hm-trainer-txt"><b>Examentrainer</b><small>Zie waar je staat en wat je vandaag moet doen</small></span>
+  <svg class="hm-trainer-arr" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+</button></div>
 <!-- TERUGKEER-KAART (Vonk + slim bericht, alleen bij een echte reden) -->
 <div class="w"><div id="comeback-card-home"></div></div>
 <!-- FEATURE DISCOVERY (one-time) -->
@@ -2300,6 +2308,7 @@
     </button>
     <div class="snav-section">
       <div class="snav-label">Meer</div>
+      <button class="snav-btn snav-trainer" onclick="openPlusDashboard()" aria-label="Examentrainer"><span class="snav-ic">🎯</span>Examentrainer</button>
       <button class="snav-btn" data-screen="sc-calc" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" aria-label="Cijfercalculator"><span class="snav-ic"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="8" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="8" y1="18" x2="14" y2="18"/></svg></span>Cijfers</button>
       <button class="snav-btn" onclick="openRapport()" aria-label="Voortgang"><span class="snav-ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>Voortgang</button>
       <button class="snav-btn" data-screen="sc-schedule" onclick="show('sc-schedule');renderSchedule()" aria-label="Rooster"><span class="snav-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18"/><path d="M8 3v4"/><path d="M16 3v4"/></svg></span>Rooster</button>
