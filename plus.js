@@ -280,6 +280,15 @@ function openPlusDashboard(){
   try{ if(typeof show==='function') show('sc-plus'); }catch(e){}
   renderPlusDashboard();
 }
+// Centrale ingang voor de Examentrainer-knoppen. Plus-leden -> hun dashboard;
+// iedereen zonder Plus (ook niet-ingelogd) -> de verkooppagina, want dat is de
+// plek die Plus uitlegt en verkoopt. Zo ziet een niet-Plus-gebruiker nooit de
+// lege "maak eerst een examen"-stand.
+function openExamentrainer(){
+  const isPlus=(typeof plusActive==='function') && plusActive();
+  if(isPlus) openPlusDashboard();
+  else openPlusIntro();
+}
 function _plusPickVak(vakId){ _plusVak=vakId; renderPlusDashboard(); }
 
 // Examenmodus: afleidingsvrije volledige simulatie op tijd. Zet het vak, markeert
