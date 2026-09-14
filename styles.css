@@ -1235,6 +1235,15 @@ html.dark .qb{background:#2e3550}
 .ex-rev-model{font-size:11px;font-weight:700;color:#4ade80;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
 .ex-rev-model-text{font-size:13px;color:rgba(255,255,255,.7);line-height:1.75;padding:10px 12px;background:rgba(74,222,128,.05);border:1px solid rgba(74,222,128,.12);border-radius:10px;white-space:pre-wrap;margin-bottom:10px}
 .ex-rev-rubric{font-size:11.5px;color:rgba(255,255,255,.35);line-height:1.65;padding:8px 12px;background:rgba(255,255,255,.02);border-radius:8px;margin-bottom:12px;border-left:2px solid rgba(255,255,255,.08)}
+/* Zelf nakijken per scoringspunt (deelpunten) */
+.ex-rev-deel-hdr{font-size:11px;font-weight:700;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.5px;margin:4px 0 8px}
+.ex-rev-deel{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.ex-deel{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);cursor:pointer;transition:background .15s,border-color .15s}
+.ex-deel:hover{background:rgba(255,255,255,.06)}
+.ex-deel:has(input:checked){background:rgba(74,222,128,.09);border-color:rgba(74,222,128,.3)}
+.ex-deel input{margin-top:2px;width:17px;height:17px;flex:0 0 auto;accent-color:#3ba55d;cursor:pointer}
+.ex-deel-pts{flex:0 0 auto;font-size:11px;font-weight:800;font-family:var(--font-head);color:#4ade80;min-width:20px}
+.ex-deel-txt{flex:1;font-size:12.5px;color:rgba(255,255,255,.78);line-height:1.55}
 .ex-rev-grade{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
 .ex-rev-grade-btn{border:none;border-radius:12px;padding:10px 6px;font-size:12px;font-weight:700;cursor:pointer;transition:all .18s;display:flex;flex-direction:column;align-items:center;gap:3px;font-family:var(--font);opacity:.7}
 .ex-rev-grade-btn:hover{opacity:1;transform:scale(1.04)}

@@ -709,6 +709,8 @@ function examenFinish(){
   EX.selfPts = 0;
   EX.gradedCount = 0;
   EX.grades = {};
+  EX.rubrics = {};
+  EX.deelState = {};
   // Meerkeuzevragen worden automatisch nagekeken (juist = vol punten, anders 0).
   EX.examen.vragen.forEach((q,i)=>{
     if(q.type==='mc'){
@@ -761,6 +763,26 @@ function _exBuildResultList(){
     const antw = EX.answers[q.nr] || '';
     const isBijl = q.needs_bijlage;
     const bijlHtml = isBijl ? `<div class="ex-rev-bijlage">${q.bijlage_tekst||'Bijlage benodigd'}</div>` : '';
+    // Zelf nakijken: waar mogelijk per scoringspunt afvinken (deelpunten),
+    // anders de grove goed/deels/fout-knoppen.
+    const parts = _exParseRubric(q.antwoord_rubric, q.punten);
+    let gradeHtml;
+    if(parts){
+      EX.rubrics[i] = parts;
+      gradeHtml =
+        `<div class="ex-rev-deel-hdr">Vink aan wat jouw antwoord goed had:</div>
+         <div class="ex-rev-deel">${parts.map((p,pi)=>
+           `<label class="ex-deel"><input type="checkbox" onchange="examenDeel(${i},${pi},this.checked)"><span class="ex-deel-pts">${p.pts}p</span><span class="ex-deel-txt">${p.text}</span></label>`
+         ).join('')}</div>`;
+    } else {
+      gradeHtml =
+        `<div class="ex-rev-rubric">${q.antwoord_rubric}</div>
+         <div class="ex-rev-grade">
+           <button class="ex-rev-grade-btn rg-fout" onclick="examenGrade(${i},0)">✗<span style="font-size:10px">Fout<br>0p</span></button>
+           <button class="ex-rev-grade-btn rg-deels" onclick="examenGrade(${i},${Math.ceil(q.punten/2)})">◑<span style="font-size:10px">Deels<br>${Math.ceil(q.punten/2)}p</span></button>
+           <button class="ex-rev-grade-btn rg-goed" onclick="examenGrade(${i},${q.punten})">✓<span style="font-size:10px">Goed<br>${q.punten}p</span></button>
+         </div>`;
+    }
     return `
     <div class="ex-rev-card" id="exrc-${i}">
       <div class="ex-rev-header">
@@ -774,12 +796,7 @@ function _exBuildResultList(){
       <div class="ex-rev-jouw-text">${String(antw).trim() || '(geen antwoord gegeven)'}</div>
       <div class="ex-rev-model">Modelantwoord</div>
       <div class="ex-rev-model-text">${q.antwoord}</div>
-      <div class="ex-rev-rubric">${q.antwoord_rubric}</div>
-      <div class="ex-rev-grade">
-        <button class="ex-rev-grade-btn rg-fout" onclick="examenGrade(${i},0)">✗<span style="font-size:10px">Fout<br>0p</span></button>
-        <button class="ex-rev-grade-btn rg-deels" onclick="examenGrade(${i},${Math.ceil(q.punten/2)})">◑<span style="font-size:10px">Deels<br>${Math.ceil(q.punten/2)}p</span></button>
-        <button class="ex-rev-grade-btn rg-goed" onclick="examenGrade(${i},${q.punten})">✓<span style="font-size:10px">Goed<br>${q.punten}p</span></button>
-      </div>
+      ${gradeHtml}
     </div>`;
   }).join('');
 }
@@ -806,15 +823,55 @@ function examenGrade(idx, pts){
 }
 
 function _exUpdateGrade(){
+  // Robuust: leid totaalscore en aantal beoordeeld af uit EX.grades zelf,
+  // zodat knop-modus, deelpunten en meerkeuze niet uit de pas kunnen lopen.
+  EX.selfPts = Object.values(EX.grades).reduce((a,b)=>a+(b||0),0);
+  EX.gradedCount = Object.keys(EX.grades).length;
   const maxPts = EX.examen.max_punten;
   const pct = maxPts > 0 ? EX.selfPts / maxPts : 0;
   // CE cijfer: 9 * pct + 1, afgerond op 0.5
   const cijfer = Math.round((9 * pct + 1) * 2) / 2;
-  const cijferStr = cijfer.toFixed(1);
-  document.getElementById('ex-grade-num').textContent = cijferStr;
+  document.getElementById('ex-grade-num').textContent = cijfer.toFixed(1);
   document.getElementById('ex-score-bar-fill').style.width = (pct*100)+'%';
   document.getElementById('ex-self-total').innerHTML =
     `Gescoord: <strong>${EX.selfPts} / ${maxPts}</strong> punten · ${EX.gradedCount}/${EX.examen.vragen.length} beoordeeld`;
+}
+
+// Splitst een rubric ("1 punt: ... 1 punt: ...") in losse deelpunten, zodat de
+// leerling per scoringspunt kan afvinken wat goed was (zoals het echte CE-
+// scoringsvoorschrift). Geeft null als de deelpunten niet optellen tot het
+// totaal (dan valt de weergave terug op de grove goed/deels/fout-knoppen).
+function _exParseRubric(rubric, total){
+  if(!rubric) return null;
+  const re=/(\d+)\s*punt(?:en)?\s*:/gi;
+  const marks=[]; let m;
+  while((m=re.exec(rubric))){ marks.push({pts:parseInt(m[1],10), start:m.index, end:re.lastIndex}); }
+  if(!marks.length) return null;
+  const parts=marks.map((mk,i)=>{
+    const textEnd = (i+1<marks.length) ? marks[i+1].start : rubric.length;
+    const text = rubric.slice(mk.end, textEnd).trim().replace(/[.;\s]+$/,'');
+    return {pts:mk.pts, text};
+  });
+  if(parts.reduce((a,p)=>a+p.pts,0)!==total) return null;
+  return parts;
+}
+
+// Deelpunt aan/uit: herberekent de score van deze vraag uit de aangevinkte
+// deelpunten en werkt cijfer + kaart bij.
+function examenDeel(idx, pi, checked){
+  const parts = EX.rubrics && EX.rubrics[idx];
+  if(!parts) return;
+  EX.deelState = EX.deelState || {};
+  const set = EX.deelState[idx] || (EX.deelState[idx]=new Set());
+  if(checked) set.add(pi); else set.delete(pi);
+  let pts=0; set.forEach(k=>{ pts += parts[k].pts; });
+  const full = parts.reduce((a,p)=>a+p.pts,0);
+  EX.grades[idx] = pts;                       // altijd 'beoordeeld' zodra aangeraakt
+  const badge=document.getElementById('exrb-'+idx); if(badge) badge.textContent = pts+' / '+full+'p';
+  const card=document.getElementById('exrc-'+idx);
+  if(card) card.className='ex-rev-card '+(pts===0?'graded-fout':pts===full?'graded-goed':'graded-deels');
+  try{ if(typeof playSound==='function') playSound('tick'); }catch(e){}
+  _exUpdateGrade();
 }
 
 function examenConfirmExit(){

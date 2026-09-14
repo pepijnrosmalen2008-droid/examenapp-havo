@@ -63,7 +63,7 @@ SLAGIO_EXAMENS.havo.gs = {
   niveau: 'havo',
   jaar: new Date().getFullYear(),
   duur_minuten: 100,
-  max_punten: 31,
+  max_punten: 32,
   bron: 'Slagio origineel · examenstijl',
   bijlagen: [],
   opgaven: [
@@ -106,7 +106,7 @@ SLAGIO_EXAMENS.havo.gs = {
       antwoord:'De affiche speelt in op nationalisme door de soldaat heldhaftig en trots af te beelden bij de vlag, zodat meedoen voelt als je plicht en eer voor het vaderland, het beroept zich op nationale trots. Zulk nationalisme was ook een oorzaak van de oorlog: door het bondgenootschappenstelsel moesten landen elkaar steunen, waardoor een conflict tussen twee landen snel de bondgenoten meesleepte, en door nationalisme en de wapenwedloop (grote, gereedstaande legers) groeide een lokale moord uit tot een oorlog tussen veel landen. Zonder die oorzaken was het waarschijnlijk een plaatselijk conflict gebleven.',
       antwoord_rubric:'1 punt: de affiche speelt in op nationalisme/trots/plicht voor het vaderland (heldhaftige soldaat bij de vlag). 1 punt: door de bondgenootschappen werden meer landen meegetrokken. 1 punt: nationalisme/wapenwedloop maakte escalatie tot een grote oorlog mogelijk (anders lokaal gebleven).' },
     // ── Opgave 3 · Crisis ──
-    { nr:5, opgave:3, punten:2, type:'open', domein:'Crisis', afb:_GSAFB.werkloosheid, afb_cap:'afbeelding 3b: werkloosheid (%) in de jaren dertig',
+    { nr:5, opgave:3, punten:3, type:'open', domein:'Crisis', afb:_GSAFB.werkloosheid, afb_cap:'afbeelding 3b: werkloosheid (%) in de jaren dertig',
       vraag:'Beschrijf met afbeelding 3b (de grafiek) wat er met de werkloosheid gebeurde tussen 1929 en 1932. Verklaar daarna met een oorzaak-gevolgredenering hoe een beurskrach in de Verenigde Staten kon leiden tot massawerkloosheid, óók in Europese landen.',
       antwoord:'Tussen 1929 en 1932 steeg de werkloosheid sterk, van ongeveer 9% naar rond de 30% (aflezen): de werkloosheid meer dan verdrievoudigde. De keten: door de beurskrach verloren mensen en banken in de VS veel geld, waardoor er veel minder werd besteed en geïnvesteerd. Amerikaanse banken eisten leningen terug uit Europa en de handel tussen landen stortte in. Europese bedrijven verkochten daardoor minder, gingen minder produceren en ontsloegen personeel, waardoor de werkloosheid ook in Europa sterk opliep. De crisis verspreidde zich zo van de VS over de hele wereldeconomie.',
       antwoord_rubric:'1 punt: sterke stijging van ongeveer 9% naar ongeveer 30% (1929-1932) afgelezen. 1 punt: krach → minder bestedingen/investeringen en terugtrekken van leningen → instorten van handel. 1 punt: minder afzet → minder productie → ontslagen → werkloosheid ook in Europa (crisis verspreidt zich wereldwijd).' },
