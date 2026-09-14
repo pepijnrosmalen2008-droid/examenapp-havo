@@ -311,6 +311,79 @@ function _plusStart(vakId){
   try{ show('sc-home'); }catch(e){}
 }
 
+// ═══════ PLUS VERKOOPPAGINA ═══════
+// De conversie-surface. Opent met de vraag, niet met de techniek. Verkoopt
+// gemak/zekerheid, nooit "je kunt niets meer" — de kern blijft altijd gratis.
+const _PLUS_PLANNEN = [
+  {id:'najaar', naam:'Najaar', prijs:'€ 7,99', periode:'september tot 31 januari', sub:'Begin je examenjaar slim.'},
+  {id:'jaar',   naam:'Heel examenjaar', prijs:'€ 24,99', periode:'nu tot en met de examens', sub:'Alles, het hele jaar. Eén betaling, geen verlenging.', best:true},
+  {id:'examen', naam:'Examenperiode', prijs:'€ 14,99', periode:'februari tot en met de examens', sub:'De laatste, beslissende fase.'},
+  {id:'flex',   naam:'Flex', prijs:'€ 4,99', periode:'per maand, maandelijks opzegbaar', sub:'Liever niet ineens.'},
+];
+const _PLUS_FEATURES = [
+  ['🤖','AI-nakijken','Laat open vragen nakijken tegen het echte scoringsvoorschrift, met feedback per punt.'],
+  ['🎯','Zwakke-puntenanalyse','Zie precies welke onderwerpen en vraagtypes je punten kosten.'],
+  ['🗺️','Persoonlijk studieplan','Elke dag de training die op dat moment het meeste oplevert.'],
+  ['📈','Verwacht cijfer','Zie hoe je ervoor staat en hoe je resultaat zich ontwikkelt.'],
+  ['🏆','Examen-readiness','Zie hoe klaar Slagio je vindt, over vijf factoren.'],
+  ['📝','Examenrapport','Na elk examen een diepe analyse van waar je punten liet liggen.'],
+];
+const _PLUS_VERGELIJK = [
+  ['Alle oefenvragen &amp; examens', true, true],
+  ['Modelantwoorden &amp; zelf nakijken', true, true],
+  ['XP, streaks, foutenboek', true, true],
+  ['AI-nakijken', '3&#215;/week', '★ ruim'],
+  ['Zwakke-puntenanalyse', 'basis', '★ uitgebreid'],
+  ['Studieplan &amp; verwacht cijfer', false, true],
+  ['Examen-readiness &amp; rapport', false, true],
+  ['Alle vakken inbegrepen', true, true],
+];
+
+function openPlusIntro(){ try{ show('sc-plus-intro'); }catch(e){} renderPlusIntro(); }
+// plusIntro() (aangeroepen vanuit sim.js/dashboard) opent voortaan het scherm.
+function plusIntro(){ openPlusIntro(); }
+
+function renderPlusIntro(){
+  const el=document.getElementById('sc-plus-intro-body'); if(!el) return;
+  const active = (typeof plusActive==='function') && plusActive();
+  const feats=_PLUS_FEATURES.map(f=>`<div class="pi-feat"><span class="pi-feat-ic">${f[0]}</span><div><b>${f[1]}</b><span>${f[2]}</span></div></div>`).join('');
+  const cell=v=> v===true?'<span class="pi-y">✓</span>' : (v===false?'<span class="pi-n">–</span>' : `<span class="pi-v">${v}</span>`);
+  const rows=_PLUS_VERGELIJK.map(r=>`<tr><td>${r[0]}</td><td>${cell(r[1])}</td><td>${cell(r[2])}</td></tr>`).join('');
+  const plans=_PLUS_PLANNEN.map(p=>`<div class="pi-plan${p.best?' best':''}">
+    ${p.best?'<div class="pi-best">Beste deal</div>':''}
+    <div class="pi-plan-naam">${p.naam}</div>
+    <div class="pi-plan-prijs">${p.prijs}${p.id==='flex'?'<small>/mnd</small>':''}</div>
+    <div class="pi-plan-per">${p.periode}</div>
+    <div class="pi-plan-sub">${p.sub}</div>
+    <button class="pi-plan-btn${p.best?' best':''}" onclick="plusCheckout('${p.id}')">Kies ${p.naam}</button>
+  </div>`).join('');
+  el.innerHTML = `
+    <div class="pi-hero">
+      <div class="pi-badge">🎯 Slagio Plus</div>
+      <h1>Weet jij of je klaar bent voor je examen?</h1>
+      <p class="pi-lead">Slagio Plus laat zien waar je punten laat liggen, wat je vandaag moet oefenen en hoe je ervoor staat richting je examen.</p>
+      <p class="pi-killer">Van "ik moet meer leren" naar "ik weet precies wat ik moet doen."</p>
+    </div>
+    ${active?`<div class="pi-active">✓ Je hebt Slagio Plus. <button class="pi-link" onclick="openPlusDashboard()">Naar je examentrainer</button></div>`:''}
+    <div class="pi-feats">${feats}</div>
+    <div class="pi-vergelijk">
+      <div class="pi-card-h">Gratis blijft gratis</div>
+      <div class="pi-tbl-wrap"><table class="pi-tbl"><thead><tr><th></th><th>Gratis</th><th>Plus</th></tr></thead><tbody>${rows}</tbody></table></div>
+      <p class="pi-note">Alles wat je nodig hebt om te slagen blijft gratis. Plus maakt je voorbereiding slimmer en persoonlijker.</p>
+    </div>
+    <div class="pi-prices-h">Kies je periode <small>alle vakken inbegrepen</small></div>
+    <div class="pi-plans">${plans}</div>
+    <div class="pi-trial">Twijfel je? Je krijgt <b>3 AI-beoordelingen per week gratis</b>, zonder account of creditcard. Zo voel je eerst wat Plus doet.</div>
+  `;
+}
+
+// Checkout: nog niet gekoppeld aan de betaalprovider (Mollie/iDEAL). Registreert
+// de interesse (waardevolle pre-launch data) en meldt dat het eraan komt.
+function plusCheckout(plan){
+  try{ if(typeof trackEvent==='function') trackEvent('plus_interesse',{plan}); }catch(e){}
+  try{ showToast('Bedankt voor je interesse! Betalen via iDEAL komt er zeer binnenkort aan.'); }catch(e){}
+}
+
 // Sparkline van de cijferreeks (klein, inline SVG, themaneutraal via currentColor).
 function _plusSpark(reeks){
   const w=280,h=54,pad=8; const min=Math.min.apply(null,reeks)-0.3, max=Math.max.apply(null,reeks)+0.3;

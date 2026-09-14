@@ -8099,3 +8099,48 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .plus-empty p{font-size:13.5px;color:color-mix(in srgb,var(--dk) 62%,transparent);line-height:1.6;max-width:42ch;margin:0}
 .plus-empty .plus-cta{max-width:240px;margin-top:6px}
 .hmc-trainer .hm-menu-ic{background:linear-gradient(135deg,#ffb347,#e8580c)}
+
+/* ═══════ SLAGIO PLUS — verkooppagina ═══════ */
+#sc-plus-intro-body{padding-bottom:80px;display:flex;flex-direction:column;gap:18px}
+.pi-hero{text-align:center;padding:10px 4px 4px}
+.pi-badge{display:inline-block;background:var(--orl);color:var(--or);border:1px solid rgba(var(--or-rgb),.25);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:800;letter-spacing:.3px;margin-bottom:14px}
+.pi-hero h1{font-family:var(--font-head);font-size:27px;font-weight:900;color:var(--dk);line-height:1.12;letter-spacing:-.5px;margin:0 0 12px;text-wrap:balance}
+.pi-lead{font-size:15px;color:color-mix(in srgb,var(--dk) 66%,transparent);line-height:1.6;margin:0 auto 12px;max-width:44ch}
+.pi-killer{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--or);line-height:1.4;margin:0 auto;max-width:40ch;text-wrap:balance}
+.pi-active{background:rgba(46,158,91,.1);border:1px solid rgba(46,158,91,.3);border-radius:12px;padding:12px 14px;font-size:13.5px;font-weight:600;color:var(--dk);text-align:center}
+.pi-link{background:none;border:none;color:var(--or);font-weight:800;cursor:pointer;font-size:13.5px;text-decoration:underline;padding:0}
+.pi-feats{display:grid;grid-template-columns:1fr;gap:10px}
+.pi-feat{display:flex;gap:13px;align-items:flex-start;background:var(--s);border:1px solid rgba(var(--or-rgb),.12);border-radius:13px;padding:14px 15px}
+.pi-feat-ic{flex:0 0 auto;font-size:22px;line-height:1.2}
+.pi-feat div{display:flex;flex-direction:column;gap:3px}
+.pi-feat b{font-family:var(--font-head);font-size:14.5px;font-weight:800;color:var(--dk)}
+.pi-feat span{font-size:12.5px;color:color-mix(in srgb,var(--dk) 62%,transparent);line-height:1.5}
+.pi-vergelijk{background:var(--s);border:1px solid rgba(var(--or-rgb),.12);border-radius:16px;padding:16px}
+.pi-card-h{font-family:var(--font-head);font-size:16px;font-weight:900;color:var(--dk);margin-bottom:12px}
+.pi-tbl-wrap{overflow-x:auto}
+.pi-tbl{width:100%;border-collapse:collapse;font-size:13px}
+.pi-tbl th{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:color-mix(in srgb,var(--dk) 50%,transparent);font-weight:700;padding:6px 8px;text-align:center}
+.pi-tbl th:first-child{text-align:left}
+.pi-tbl td{padding:9px 8px;border-top:1px solid rgba(var(--or-rgb),.09);color:var(--dk);text-align:center}
+.pi-tbl td:first-child{text-align:left;color:color-mix(in srgb,var(--dk) 78%,transparent)}
+.pi-tbl .pi-y{color:#2e9e5b;font-weight:800}
+.pi-tbl .pi-n{color:color-mix(in srgb,var(--dk) 35%,transparent)}
+.pi-tbl .pi-v{font-weight:700;color:var(--or);font-size:12px}
+.pi-note{font-size:12px;color:color-mix(in srgb,var(--dk) 58%,transparent);line-height:1.55;margin:12px 0 0}
+.pi-prices-h{font-family:var(--font-head);font-size:18px;font-weight:900;color:var(--dk);margin:4px 2px 0;display:flex;align-items:baseline;gap:8px}
+.pi-prices-h small{font-size:12px;font-weight:600;color:color-mix(in srgb,var(--dk) 50%,transparent);letter-spacing:0}
+.pi-plans{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:440px){.pi-plans{grid-template-columns:1fr}}
+.pi-plan{position:relative;background:var(--s);border:1.5px solid rgba(var(--or-rgb),.14);border-radius:15px;padding:16px 15px;display:flex;flex-direction:column;gap:4px}
+.pi-plan.best{border-color:var(--or);box-shadow:0 0 0 1px var(--or),0 8px 24px rgba(var(--or-rgb),.18);grid-column:1/-1}
+.pi-best{position:absolute;top:-10px;left:15px;background:var(--or);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;padding:3px 10px;border-radius:20px}
+.pi-plan-naam{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--dk)}
+.pi-plan-prijs{font-family:var(--font-head);font-size:26px;font-weight:900;color:var(--or);line-height:1.1}
+.pi-plan-prijs small{font-size:13px;font-weight:600;color:color-mix(in srgb,var(--dk) 50%,transparent)}
+.pi-plan-per{font-size:11.5px;color:color-mix(in srgb,var(--dk) 55%,transparent)}
+.pi-plan-sub{font-size:12.5px;color:color-mix(in srgb,var(--dk) 70%,transparent);line-height:1.5;margin:2px 0 6px;flex:1}
+.pi-plan-btn{background:var(--orl);color:var(--or);border:1.5px solid rgba(var(--or-rgb),.3);border-radius:11px;padding:11px;font-family:var(--font-head);font-weight:800;font-size:13.5px;cursor:pointer;transition:all .15s}
+.pi-plan-btn:hover{background:rgba(var(--or-rgb),.15)}
+.pi-plan-btn.best{background:linear-gradient(135deg,color-mix(in srgb,var(--or) 88%,#fff),var(--or));color:#fff;border-color:var(--or);box-shadow:0 4px 14px rgba(var(--or-rgb),.3)}
+.pi-trial{background:rgba(var(--or-rgb),.06);border:1px dashed rgba(var(--or-rgb),.3);border-radius:13px;padding:14px 16px;font-size:13px;line-height:1.6;color:color-mix(in srgb,var(--dk) 72%,transparent);text-align:center}
+.pi-trial b{color:var(--or)}
