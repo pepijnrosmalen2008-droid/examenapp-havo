@@ -861,8 +861,8 @@
 <!-- SNEL NAAR - één helder menu naar alle pagina's -->
 <div class="w">
   <div class="hm-menu">
+    <button class="hm-menu-tile hmc-trainer" onclick="openPlusDashboard()"><span class="hm-menu-ic">🎯</span>Examentrainer</button>
     <button class="hm-menu-tile hmc-plan" onclick="show('sc-studieplan');renderStudieplan()"><span class="hm-menu-ic">📅</span>Studieplan</button>
-    <button class="hm-menu-tile hmc-prog" onclick="openRapport()"><span class="hm-menu-ic">📊</span>Voortgang</button>
     <button class="hm-menu-tile hmc-exam" onclick="show('sc-schedule')"><span class="hm-menu-ic">📄</span>Rooster</button>
     <button class="hm-menu-tile hmc-soc" onclick="show('sc-sociaal')"><span class="hm-menu-ic">🌐</span>Sociaal</button>
   </div>
@@ -2258,6 +2258,7 @@
 <script defer src="/features.js"></script>
 <script defer src="/league.js"></script>
 <script defer src="/schedule.js"></script>
+<script defer src="/plus.js"></script>
 <script defer src="/foutenboek.js"></script>
 <script defer src="/herhalen.js"></script>
 <script defer src="/v4.js"></script>
@@ -2424,6 +2425,17 @@
 </div>
 
 <!-- EXAMEN MODUS SCREEN -->
+<div id="sc-plus" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">← Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
+<div class="w" style="padding-top:22px">
+  <div class="plus-hero">
+    <div class="plus-hero-badge">🎯 Examentrainer</div>
+    <h1 class="plus-hero-title">Weet waar je staat. Weet wat je moet doen.</h1>
+  </div>
+  <div id="sc-plus-body"></div>
+</div>
+</div>
+
 <div id="sc-examen" class="sc">
   <!-- Nav -->
   <div class="ex-nav">

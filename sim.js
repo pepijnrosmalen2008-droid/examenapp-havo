@@ -958,6 +958,9 @@ function examenConfirmExit(){
 
 function examenExit(){
   if(EX.timer){ clearInterval(EX.timer); EX.timer=null; }
+  // Resultaat vastleggen voor de Plus-examentrainer (met de definitieve,
+  // zelf-/AI-nagekeken score). Alleen als het examen echt is afgerond.
+  if(EX.phase==='result' && typeof plusRecordExam==='function'){ try{ plusRecordExam(EX); }catch(e){} }
   // Reset split layout
   const _quiz = document.getElementById('ex-quiz');
   const _tbPanel = document.getElementById('ex-tb-panel');
