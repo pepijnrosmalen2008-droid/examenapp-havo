@@ -23,6 +23,42 @@ async function callSlagioAI(payload){
   }catch(e){return null;}
 }
 
+// ─────────────────────────────────────────────────────────────────────────
+// SLAGIO PLUS · client-seam voor AI-nakijken (Fase 1)
+// De backend is de bron van waarheid; de client mag Plus alleen WEERGEVEN.
+// Zolang betalen nog niet live is, bepaalt een lokaal 'plus_until'-datumveld of
+// Plus actief is (later gezet door de Mollie-webhook + cloudsync). Gratis
+// gebruikers krijgen een proef van AI_GRADE_WEEKLY nakijkbeurten per week.
+// ─────────────────────────────────────────────────────────────────────────
+const AI_GRADE_WEEKLY = 3; // gratis AI-nakijkbeurten per week (server enforced later)
+function _plusUntil(){ try{ return localStorage.getItem('slagio_plus_until')||''; }catch(e){ return ''; } }
+function plusActive(){ const d=_plusUntil(); if(!d) return false; const t=Date.parse(d); return !isNaN(t) && t>Date.now(); }
+function aiGradeAvailable(){ return aiEnabled(); }               // endpoint gezet?
+function _aiGradeWeekKey(){ return 'slagio_aigrade_'+Math.floor(Date.now()/6048e5); } // 7-daagse bucket
+function aiGradeTrialLeft(){ try{ const n=parseInt(localStorage.getItem(_aiGradeWeekKey())||'0',10); return Math.max(0,AI_GRADE_WEEKLY-(isNaN(n)?0:n)); }catch(e){ return AI_GRADE_WEEKLY; } }
+function _aiGradeConsume(){ try{ const k=_aiGradeWeekKey(); const n=parseInt(localStorage.getItem(k)||'0',10); localStorage.setItem(k,String((isNaN(n)?0:n)+1)); }catch(e){} }
+
+// Laat de AI een open vraag nakijken. Geeft:
+//   {result:{score,max_score,points[],summary,improvement_tip}} bij succes
+//   {limit:true} als de gratis proef op is en Plus niet actief is
+//   {error:true} bij een fout, of null als de AI-laag uit staat (endpoint leeg)
+async function aiGradeOpen(payload){
+  if(!SLAGIO_AI_ENDPOINT) return null;
+  const isPlus = plusActive();
+  if(!isPlus && aiGradeTrialLeft()<=0) return {limit:true};
+  try{
+    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','authorization':'Bearer '+SUPABASE_KEY},body:JSON.stringify(Object.assign({mode:'grade'},payload||{}))});
+    if(!r.ok) return {error:true};
+    const j=await r.json().catch(()=>null);
+    if(j && Array.isArray(j.points)){
+      if(!isPlus) _aiGradeConsume();
+      try{ trackEvent('ai_nakijken',{vak:payload&&payload.vak, plus:isPlus}); }catch(e){}
+      return {result:j};
+    }
+    return {error:true};
+  }catch(e){ return {error:true}; }
+}
+
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';

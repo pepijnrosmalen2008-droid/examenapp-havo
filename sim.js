@@ -769,11 +769,14 @@ function _exBuildResultList(){
     let gradeHtml;
     if(parts){
       EX.rubrics[i] = parts;
+      const aiBtn = (typeof aiGradeAvailable==='function' && aiGradeAvailable())
+        ? `<button class="ex-ai-btn" id="exai-btn-${i}" onclick="examenAiNakijk(${i})">★ Laat Slagio je antwoord nakijken</button>
+           <div class="ex-ai" id="exai-${i}"></div>` : '';
       gradeHtml =
         `<div class="ex-rev-deel-hdr">Vink aan wat jouw antwoord goed had:</div>
          <div class="ex-rev-deel">${parts.map((p,pi)=>
-           `<label class="ex-deel"><input type="checkbox" onchange="examenDeel(${i},${pi},this.checked)"><span class="ex-deel-pts">${p.pts}p</span><span class="ex-deel-txt">${p.text}</span></label>`
-         ).join('')}</div>`;
+           `<label class="ex-deel"><input type="checkbox" id="exdeel-${i}-${pi}" onchange="examenDeel(${i},${pi},this.checked)"><span class="ex-deel-pts">${p.pts}p</span><span class="ex-deel-txt">${p.text}</span></label>`
+         ).join('')}</div>${aiBtn}`;
     } else {
       gradeHtml =
         `<div class="ex-rev-rubric">${q.antwoord_rubric}</div>
@@ -872,6 +875,75 @@ function examenDeel(idx, pi, checked){
   if(card) card.className='ex-rev-card '+(pts===0?'graded-fout':pts===full?'graded-goed':'graded-deels');
   try{ if(typeof playSound==='function') playSound('tick'); }catch(e){}
   _exUpdateGrade();
+}
+
+// ── AI-nakijken (Slagio Plus, Fase 1) ─────────────────────────────────────
+// Laat de AI de open vraag beoordelen tegen het scoringsvoorschrift, vinkt de
+// behaalde deelpunten automatisch aan en toont feedback per punt + een tip.
+async function examenAiNakijk(idx){
+  const q = EX.examen.vragen[idx];
+  const parts = EX.rubrics && EX.rubrics[idx];
+  if(!q || !parts || typeof aiGradeOpen!=='function') return;
+  const btn = document.getElementById('exai-btn-'+idx);
+  const panel = document.getElementById('exai-'+idx);
+  if(btn){ btn.disabled=true; btn.classList.add('busy'); btn.textContent='Slagio kijkt na…'; }
+  if(panel) panel.innerHTML = '<div class="ex-ai-note">Slagio beoordeelt je antwoord…</div>';
+  const op = (EX.examen.opgaven||[]).find(o=>o.nr===q.opgave);
+  const payload = {
+    vak: EX.examen.titel,
+    vraag: q.vraag,
+    modelantwoord: q.antwoord,
+    punten: parts.map((p,pi)=>({id:pi+1, pts:p.pts, text:p.text})),
+    leerlingantwoord: EX.answers[q.nr] || '',
+    context: (op && op.context) || q.context || ''
+  };
+  let res=null;
+  try{ res = await aiGradeOpen(payload); }catch(e){ res={error:true}; }
+  if(btn){ btn.disabled=false; btn.classList.remove('busy'); btn.innerHTML='★ Opnieuw laten nakijken'; }
+  if(!res){ if(panel) panel.innerHTML='<div class="ex-ai-note">AI-nakijken is nog niet beschikbaar.</div>'; if(btn) btn.style.display='none'; return; }
+  if(res.limit){ if(panel) panel.innerHTML=_exAiUpsell(); if(btn) btn.style.display='none'; return; }
+  if(res.error || !res.result || !Array.isArray(res.result.points)){
+    if(panel) panel.innerHTML='<div class="ex-ai-note">Er ging iets mis bij het nakijken. Probeer het zo nog eens.</div>';
+    return;
+  }
+  const r = res.result;
+  // Vink de deelpunten aan zoals de AI ze beoordeelde.
+  r.points.forEach((pt,pi)=>{
+    const box = document.getElementById('exdeel-'+idx+'-'+pi);
+    if(box) box.checked = !!pt.earned;
+    examenDeel(idx, pi, !!pt.earned);
+  });
+  if(panel) panel.innerHTML = _exAiResult(r);
+  try{ if(typeof playSound==='function') playSound('correct'); }catch(e){}
+}
+
+function _exAiResult(r){
+  const pts = (r.points||[]).map(p=>
+    `<li class="${p.earned?'ok':'no'}"><span class="m">${p.earned?'✓':'✗'}</span><span>${p.feedback||(p.earned?'behaald':'niet behaald')}</span></li>`
+  ).join('');
+  const rest = (typeof plusActive==='function' && plusActive())
+    ? 'Beoordeeld aan de hand van het scoringsvoorschrift.'
+    : `Beoordeeld aan de hand van het scoringsvoorschrift · nog ${typeof aiGradeTrialLeft==='function'?aiGradeTrialLeft():0} gratis nakijkbeurten deze week`;
+  return `<div class="ex-ai-res">
+    <div class="ex-ai-score">Slagio geeft je <b>${r.score} / ${r.max_score}</b> punten</div>
+    ${r.summary?`<div class="ex-ai-sum">${r.summary}</div>`:''}
+    <ul class="ex-ai-pts">${pts}</ul>
+    ${r.improvement_tip?`<div class="ex-ai-tip"><b>Verbetertip.</b> ${r.improvement_tip}</div>`:''}
+    <div class="ex-ai-src">${rest}</div>
+  </div>`;
+}
+
+function _exAiUpsell(){
+  return `<div class="ex-ai-upsell">
+    <div class="ex-ai-upsell-h">Je gratis AI-beoordelingen zijn op deze week</div>
+    <p>Je kunt gewoon verder oefenen en zelf nakijken, dat blijft altijd gratis. Wil je Slagio je open antwoorden onbeperkt laten beoordelen, met feedback per scoringspunt?</p>
+    <button class="ex-ai-cta" onclick="plusIntro()">🎯 Bekijk Slagio Plus</button>
+  </div>`;
+}
+
+// Voorlopige Plus-intro (het volwaardige Plus-scherm komt in een latere fase).
+function plusIntro(){
+  try{ showToast('Slagio Plus komt eraan — je hele examenjaar slimmer oefenen.'); }catch(e){}
 }
 
 function examenConfirmExit(){
