@@ -3,20 +3,35 @@
 //
 // De AI-laag van Slagio Plus. Twee taken via één endpoint (veld `mode`):
 //   mode:"grade"   → een open examenvraag nakijken tegen het scoringsvoorschrift
-//   mode:"uitleg"  → (bestaand) een korte persoonlijke uitleg genereren
+//   mode:"uitleg"  → een korte persoonlijke uitleg genereren
 //
-// De API-key staat ALLEEN hier (Deno.env), nooit in de frontend. De backend is
-// de bron van waarheid: usage-telling en fair use horen hier thuis, niet in de
-// client. Geef altijd GESTRUCTUREERDE JSON terug zodat de app de UI betrouwbaar
-// rendert (geen vrije tekst als resultaat).
+// DE SERVER IS DE BRON VAN WAARHEID. Vóór er ook maar één (betaalde) AI-call
+// gebeurt, controleert deze functie zelf, in deze volgorde:
+//   1. Is de gebruiker ingelogd?  (token uit de Authorization-header)
+//   2. Is die gebruiker Plus?      (tabel plus_status, via de service-rol)
+//   3. Is het week-quotum vrij?    (tabel ai_usage, via de service-rol)
+// Pas dan gaat de AI-request eruit, en telt het verbruik +1. Zo kan niemand met
+// DevTools zichzelf Plus geven of het quotum omzeilen: de frontend beslist niets.
+//
+// De API-key en de service-rol staan ALLEEN hier (Deno.env), nooit in de client.
 //
 // Deploy:  supabase functions deploy slagio-ai --no-verify-jwt
 // Secrets: supabase secrets set ANTHROPIC_API_KEY=sk-ant-...
-// Zet daarna SLAGIO_AI_ENDPOINT in cloud.js op de functie-URL.
+//   (SUPABASE_URL / SUPABASE_ANON_KEY / SUPABASE_SERVICE_ROLE_KEY worden
+//    automatisch door Supabase in de functie geïnjecteerd — die hoef je niet
+//    zelf te zetten.)
 // ─────────────────────────────────────────────────────────────────────────
 
 const ANTHROPIC_URL = "https://api.anthropic.com/v1/messages";
 const MODEL = "claude-haiku-4-5"; // goedkoop + capabel; nakijken is een afgebakende taak
+
+// Fair-use-limieten (per ISO-week, server-afgedwongen). Pas gerust aan.
+const WEEKLY_PLUS = 50;  // Plus-leden: ruime eerlijk-gebruik-grens
+const WEEKLY_TRIAL = 3;  // niet-Plus: gratis proef om AI te laten proeven
+
+const SB_URL = Deno.env.get("SUPABASE_URL") || "";
+const SB_ANON = Deno.env.get("SUPABASE_ANON_KEY") || "";
+const SB_SERVICE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
 
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -29,6 +44,85 @@ function json(body: unknown, status = 200): Response {
     status,
     headers: { ...CORS, "content-type": "application/json" },
   });
+}
+
+// ── ISO-weeksleutel, bv. "2026-W38" ───────────────────────────────────────
+function isoWeekKey(d = new Date()): string {
+  const t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+  const day = t.getUTCDay() || 7;
+  t.setUTCDate(t.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
+  const week = Math.ceil((((t.getTime() - yearStart.getTime()) / 86400000) + 1) / 7);
+  return `${t.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
+}
+
+// ── Wie is de ingelogde gebruiker? (token → auth-service) ─────────────────
+async function getUser(token: string): Promise<{ id: string } | null> {
+  if (!token || !SB_URL) return null;
+  try {
+    const r = await fetch(`${SB_URL}/auth/v1/user`, {
+      headers: { apikey: SB_ANON, authorization: `Bearer ${token}` },
+    });
+    if (!r.ok) return null;
+    const u = await r.json();
+    return u && u.id ? { id: u.id } : null;
+  } catch {
+    return null;
+  }
+}
+
+// ── Is deze gebruiker Plus? (leest plus_status met de service-rol) ────────
+async function userIsPlus(userId: string): Promise<boolean> {
+  try {
+    const r = await fetch(
+      `${SB_URL}/rest/v1/plus_status?user_id=eq.${userId}&select=plus_until`,
+      { headers: { apikey: SB_SERVICE, authorization: `Bearer ${SB_SERVICE}` } },
+    );
+    if (!r.ok) return false;
+    const rows = await r.json();
+    const until = rows?.[0]?.plus_until;
+    return !!until && Date.parse(until) > Date.now();
+  } catch {
+    return false;
+  }
+}
+
+// ── Hoeveel AI-beurten deze week? ─────────────────────────────────────────
+async function usageCount(userId: string, periode: string): Promise<number> {
+  try {
+    const r = await fetch(
+      `${SB_URL}/rest/v1/ai_usage?user_id=eq.${userId}&periode=eq.${periode}&select=aantal`,
+      { headers: { apikey: SB_SERVICE, authorization: `Bearer ${SB_SERVICE}` } },
+    );
+    if (!r.ok) return 0;
+    const rows = await r.json();
+    return rows?.[0]?.aantal ?? 0;
+  } catch {
+    return 0;
+  }
+}
+
+// ── Verbruik +1 (upsert) ──────────────────────────────────────────────────
+async function usageInc(userId: string, periode: string, current: number) {
+  try {
+    await fetch(`${SB_URL}/rest/v1/ai_usage?on_conflict=user_id,periode`, {
+      method: "POST",
+      headers: {
+        apikey: SB_SERVICE,
+        authorization: `Bearer ${SB_SERVICE}`,
+        "content-type": "application/json",
+        prefer: "resolution=merge-duplicates",
+      },
+      body: JSON.stringify({
+        user_id: userId,
+        periode,
+        aantal: current + 1,
+        updated_at: new Date().toISOString(),
+      }),
+    });
+  } catch {
+    // telling is best-effort; een mislukte telling mag de gebruiker niet blokkeren
+  }
 }
 
 // ── De nakijk-prompt ──────────────────────────────────────────────────────
@@ -73,19 +167,20 @@ function buildGradePrompt(p: {
 
 function extractJson(text: string): any | null {
   if (!text) return null;
-  // Pak het eerste { ... } blok, ook als er per ongeluk tekst omheen staat.
   const s = text.indexOf("{");
   const e = text.lastIndexOf("}");
   if (s < 0 || e <= s) return null;
   try { return JSON.parse(text.slice(s, e + 1)); } catch { return null; }
 }
 
-async function handleGrade(p: any) {
+type Result = { status: number; body: any; charged: boolean };
+
+async function handleGrade(p: any): Promise<Result> {
   if (!p || !Array.isArray(p.punten) || !p.punten.length) {
-    return json({ error: "punten (rubriek) ontbreekt" }, 400);
+    return { status: 400, body: { error: "punten (rubriek) ontbreekt" }, charged: false };
   }
   const key = Deno.env.get("ANTHROPIC_API_KEY");
-  if (!key) return json({ error: "server niet geconfigureerd" }, 500);
+  if (!key) return { status: 500, body: { error: "server niet geconfigureerd" }, charged: false };
 
   const { system, user } = buildGradePrompt(p);
   const maxScore = p.punten.reduce((a: number, d: any) => a + (d.pts || 0), 0);
@@ -107,19 +202,18 @@ async function handleGrade(p: any) {
       }),
     });
   } catch {
-    return json({ error: "AI onbereikbaar" }, 502);
+    return { status: 502, body: { error: "AI onbereikbaar" }, charged: false };
   }
-  if (!resp.ok) return json({ error: "AI-fout", status: resp.status }, 502);
+  if (!resp.ok) return { status: 502, body: { error: "AI-fout", status: resp.status }, charged: false };
 
   const data = await resp.json().catch(() => null);
   const text = data?.content?.[0]?.text || "";
   const parsed = extractJson(text);
   if (!parsed || !Array.isArray(parsed.points)) {
-    return json({ error: "AI gaf geen geldige beoordeling" }, 502);
+    return { status: 502, body: { error: "AI gaf geen geldige beoordeling" }, charged: false };
   }
 
   // Normaliseer + valideer tegen de rubriek (server bepaalt de score, niet het model).
-  const byId = new Map(p.punten.map((d: any) => [String(d.id), d]));
   const points = p.punten.map((d: any) => {
     const m = parsed.points.find((x: any) => String(x.id) === String(d.id)) || {};
     return {
@@ -131,21 +225,24 @@ async function handleGrade(p: any) {
   });
   const score = points.reduce((a, x) => a + (x.earned ? x.pts : 0), 0);
 
-  return json({
-    score,
-    max_score: maxScore,
-    points,
-    summary: typeof parsed.summary === "string" ? parsed.summary.slice(0, 400) : "",
-    improvement_tip:
-      typeof parsed.improvement_tip === "string" ? parsed.improvement_tip.slice(0, 400) : "",
-    model: MODEL,
-  });
+  return {
+    status: 200,
+    charged: true,
+    body: {
+      score,
+      max_score: maxScore,
+      points,
+      summary: typeof parsed.summary === "string" ? parsed.summary.slice(0, 400) : "",
+      improvement_tip:
+        typeof parsed.improvement_tip === "string" ? parsed.improvement_tip.slice(0, 400) : "",
+      model: MODEL,
+    },
+  };
 }
 
-// (Bestaande) korte uitleg-modus, kort gehouden.
-async function handleUitleg(p: any) {
+async function handleUitleg(p: any): Promise<Result> {
   const key = Deno.env.get("ANTHROPIC_API_KEY");
-  if (!key) return json({ error: "server niet geconfigureerd" }, 500);
+  if (!key) return { status: 500, body: { error: "server niet geconfigureerd" }, charged: false };
   const prompt =
     `Leg in maximaal 4 zinnen, in eenvoudig Nederlands en op de toon van een ` +
     `behulpzame examentrainer, het volgende uit voor een ${p.niveau || "havo/vwo"}-leerling` +
@@ -156,22 +253,43 @@ async function handleUitleg(p: any) {
       headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01" },
       body: JSON.stringify({ model: MODEL, max_tokens: 400, messages: [{ role: "user", content: prompt }] }),
     });
-    if (!resp.ok) return json({ error: "AI-fout" }, 502);
+    if (!resp.ok) return { status: 502, body: { error: "AI-fout" }, charged: false };
     const data = await resp.json().catch(() => null);
     const text = data?.content?.[0]?.text || "";
-    if (!text) return json({ error: "geen uitleg" }, 502);
-    return json({ text });
+    if (!text) return { status: 502, body: { error: "geen uitleg" }, charged: false };
+    return { status: 200, body: { text }, charged: true };
   } catch {
-    return json({ error: "AI onbereikbaar" }, 502);
+    return { status: 502, body: { error: "AI onbereikbaar" }, charged: false };
   }
 }
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: CORS });
   if (req.method !== "POST") return json({ error: "POST verwacht" }, 405);
+
   let body: any = null;
   try { body = await req.json(); } catch { return json({ error: "ongeldige body" }, 400); }
   const mode = body?.mode || "uitleg";
-  if (mode === "grade") return handleGrade(body);
-  return handleUitleg(body);
+
+  // ── POORT 1: ingelogd? ──────────────────────────────────────────────────
+  const token = (req.headers.get("authorization") || "").replace(/^Bearer\s+/i, "");
+  const user = await getUser(token);
+  if (!user) return json({ error: "auth", locked: true, reason: "login" }, 401);
+
+  // ── POORT 2 + 3: Plus? en quotum vrij? ─────────────────────────────────
+  const plus = await userIsPlus(user.id);
+  const periode = isoWeekKey();
+  const used = await usageCount(user.id, periode);
+  const cap = plus ? WEEKLY_PLUS : WEEKLY_TRIAL;
+  if (used >= cap) {
+    return json({ limit: true, plus, used, cap, reason: plus ? "fairuse" : "trial_op" }, 200);
+  }
+
+  // ── AI-request ──────────────────────────────────────────────────────────
+  const out: Result = mode === "grade" ? await handleGrade(body) : await handleUitleg(body);
+
+  // Alleen een écht gelukte AI-call telt mee voor het quotum.
+  if (out.charged) await usageInc(user.id, periode, used);
+
+  return json(out.body, out.status);
 });

@@ -3,7 +3,7 @@
 // aanwezige, voorgegenereerde uo/uh-uitleg (werkt, gratis). Zet dit ná het
 // deployen van de Edge Function op de functie-URL, dan lichten de AI-knoppen op:
 //   const SLAGIO_AI_ENDPOINT='https://wcfenegohryxhatzxvtw.supabase.co/functions/v1/slagio-ai';
-const SLAGIO_AI_ENDPOINT='';
+const SLAGIO_AI_ENDPOINT='https://wcfenegohryxhatzxvtw.supabase.co/functions/v1/slagio-ai';
 const AI_DAILY=3; // gratis AI-uitleggen per dag (client-side; server enforced later)
 function aiEnabled(){return !!SLAGIO_AI_ENDPOINT;}
 function _aiDayKey(){return 'slagio_ai_'+new Date().toISOString().slice(0,10);}
@@ -11,13 +11,23 @@ function aiQuotaLeft(){try{const n=parseInt(localStorage.getItem(_aiDayKey())||'
 function _aiConsume(){try{const k=_aiDayKey();const n=parseInt(localStorage.getItem(k)||'0',10);localStorage.setItem(k,String((isNaN(n)?0:n)+1));}catch(e){}}
 // Vraagt de AI om een persoonlijke uitleg. Geeft {text} bij succes, {limit:true}
 // als de dag-limiet op is, of null (→ de aanroeper gebruikt de content-fallback).
+// Haalt het access-token van de ingelogde gebruiker op. De edge function heeft
+// dit nodig om server-side te bepalen wie je bent (en of je Plus bent). Geen
+// sessie → lege string → de server weigert de AI-call en de app valt terug op
+// de gratis, voorgegenereerde content.
+async function _aiUserToken(){
+  try{ const {data:{session}}=await SB.auth.getSession(); return (session&&session.access_token)||''; }
+  catch(e){ return ''; }
+}
 async function callSlagioAI(payload){
   if(!SLAGIO_AI_ENDPOINT)return null;
   if(aiQuotaLeft()<=0)return {limit:true};
   try{
-    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','authorization':'Bearer '+SUPABASE_KEY},body:JSON.stringify(payload||{})});
+    const tok=await _aiUserToken();
+    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','apikey':SUPABASE_KEY,'authorization':'Bearer '+(tok||SUPABASE_KEY)},body:JSON.stringify(payload||{})});
     if(!r.ok)return null;
     const j=await r.json().catch(()=>null);
+    if(j&&j.limit)return {limit:true};
     if(j&&j.text){_aiConsume();try{trackEvent('ai_uitleg',{vak:payload&&payload.vak,domein:payload&&payload.domein});}catch(e){}return {text:String(j.text)};}
     return null;
   }catch(e){return null;}
@@ -30,9 +40,35 @@ async function callSlagioAI(payload){
 // Plus actief is (later gezet door de Mollie-webhook + cloudsync). Gratis
 // gebruikers krijgen een proef van AI_GRADE_WEEKLY nakijkbeurten per week.
 // ─────────────────────────────────────────────────────────────────────────
-const AI_GRADE_WEEKLY = 3; // gratis AI-nakijkbeurten per week (server enforced later)
+const AI_GRADE_WEEKLY = 3; // gratis AI-nakijkbeurten per week (server dwingt dit echt af)
 function _plusUntil(){ try{ return localStorage.getItem('slagio_plus_until')||''; }catch(e){ return ''; } }
+// plusActive() is ALLEEN voor de UI (knoppen tonen/vergrendelen). Het is GEEN
+// beveiliging: de edge function checkt Plus zelf server-side, dus ook al zet
+// iemand dit veld met DevTools, de betaalde AI blijft geweigerd. We spiegelen
+// hier de server-waarheid zodat de UI klopt.
 function plusActive(){ const d=_plusUntil(); if(!d) return false; const t=Date.parse(d); return !isNaN(t) && t>Date.now(); }
+// Vraagt de server "ben ik Plus?" en spiegelt dat naar localStorage voor de UI.
+// Faalt stil (offline / tabellen nog niet aangemaakt) → UI valt terug op de
+// laatst bekende waarde.
+async function refreshPlusStatus(){
+  try{
+    if(!currentUser) return false;
+    const {data,error}=await SB.rpc('plus_check');
+    if(error) return plusActive();
+    const row=Array.isArray(data)?data[0]:data;
+    const until=row&&row.plus_until;
+    try{
+      if(until && Date.parse(until)>Date.now()) localStorage.setItem('slagio_plus_until',until);
+      else localStorage.removeItem('slagio_plus_until');
+    }catch(e){}
+    try{ if(typeof renderPlusDashboard==='function' && document.getElementById('sc-plus') && document.getElementById('sc-plus').classList.contains('on')) renderPlusDashboard(); }catch(e){}
+    return plusActive();
+  }catch(e){ return plusActive(); }
+}
+// Zodra de auth-staat bekend is, één keer de Plus-status van de server halen.
+// setTimeout: _onAuthReady/currentUser staan verderop in dit bestand; deze regel
+// draait pas ná het volledig inladen ervan.
+setTimeout(function(){ try{ _onAuthReady(function(u){ if(u) refreshPlusStatus(); }); }catch(e){} },0);
 function aiGradeAvailable(){ return aiEnabled(); }               // endpoint gezet?
 function _aiGradeWeekKey(){ return 'slagio_aigrade_'+Math.floor(Date.now()/6048e5); } // 7-daagse bucket
 function aiGradeTrialLeft(){ try{ const n=parseInt(localStorage.getItem(_aiGradeWeekKey())||'0',10); return Math.max(0,AI_GRADE_WEEKLY-(isNaN(n)?0:n)); }catch(e){ return AI_GRADE_WEEKLY; } }
@@ -47,9 +83,12 @@ async function aiGradeOpen(payload){
   const isPlus = plusActive();
   if(!isPlus && aiGradeTrialLeft()<=0) return {limit:true};
   try{
-    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','authorization':'Bearer '+SUPABASE_KEY},body:JSON.stringify(Object.assign({mode:'grade'},payload||{}))});
-    if(!r.ok) return {error:true};
+    const tok=await _aiUserToken();
+    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','apikey':SUPABASE_KEY,'authorization':'Bearer '+(tok||SUPABASE_KEY)},body:JSON.stringify(Object.assign({mode:'grade'},payload||{}))});
     const j=await r.json().catch(()=>null);
+    // Server weigert (niet ingelogd, of quotum/proef op) → nette upsell i.p.v. fout.
+    if(r.status===401 || (j && (j.locked||j.limit))) return {limit:true, plus:!!(j&&j.plus)};
+    if(!r.ok) return {error:true};
     if(j && Array.isArray(j.points)){
       if(!isPlus) _aiGradeConsume();
       try{ trackEvent('ai_nakijken',{vak:payload&&payload.vak, plus:isPlus}); }catch(e){}
