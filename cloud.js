@@ -152,6 +152,29 @@ async function aiGenereerVragen(opts){
   }catch(e){ return {error:true}; }
 }
 
+// Huiswerk nakijken (#6b): foto van opdracht + antwoord, vrije feedback.
+// Zelfde poort (login → plus/quota). Retourneert {text} of {login|limit|error}.
+async function aiHuiswerkNakijk(opts){
+  opts=opts||{};
+  if(!SLAGIO_AI_ENDPOINT) return {error:true};
+  if(!currentUser) return {login:true};
+  const isPlus = plusActive();
+  if(!isPlus && aiGradeTrialLeft()<=0) return {limit:true};
+  if(!opts.antwoordImage) return {error:true};
+  try{
+    const tok=await _aiUserToken();
+    const body={mode:'huiswerk', vak:opts.vak||'', niveau:opts.niveau||(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo'),
+      onderwerp:opts.onderwerp||'', opdrachtImage:opts.opdrachtImage||'', antwoordImage:opts.antwoordImage};
+    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','apikey':SUPABASE_KEY,'authorization':'Bearer '+(tok||SUPABASE_KEY)},body:JSON.stringify(body)});
+    const j=await r.json().catch(()=>null);
+    if(r.status===401 || (j && j.reason==='login')) return {login:true};
+    if(j && (j.locked||j.limit)) return {limit:true, plus:!!(j&&j.plus)};
+    if(!r.ok) return {error:true};
+    if(j && j.text){ if(!isPlus) _aiGradeConsume(); try{ trackEvent('ai_huiswerk',{vak:opts.vak, plus:isPlus}); }catch(e){} return {text:String(j.text)}; }
+    return {error:true};
+  }catch(e){ return {error:true}; }
+}
+
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';

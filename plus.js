@@ -578,9 +578,9 @@ function _plusPrognoseHTML(niveau, isPlus){
   // Rijen met enige data (SE of CE); volledig lege vakken laten we weg.
   const rows=pg.rows.filter(r=>r.se!=null || r.ce!=null);
   if(!rows.length){
-    return `<div class="plus-card plus-prognose"><div class="plus-card-h">Slaag ik?</div>
-      <div class="pp-empty">Voer je SE-cijfers in en oefen een paar vakken, dan reken ik je slaagkans hier live uit.
-      <button class="pp-mini-cta" onclick="goToCijferInvoer()">Vul je SE-cijfers in →</button></div></div>`;
+    return `<div class="plus-card plus-prognose"><div class="plus-card-h">Slaag ik? <span class="pp-live">● live</span></div>
+      <div class="pp-verdict pp-onbekend"><span class="pp-verdict-ic">📊</span><span class="pp-verdict-txt"><b>Nog niks te berekenen</b><small>Ik reken je slaagkans hier live uit zodra je je cijfers invult en een paar vakken oefent.</small></span></div>
+      ${_ppGuidanceHTML(pg)}</div>`;
   }
   const VS={
     slaag:{ic:'🎉',cls:'pp-slaag',kop:'Je staat op slagen'},
@@ -622,7 +622,7 @@ function _plusPrognoseHTML(niveau, isPlus){
       <span class="pp-actie-txt">🎯 <b>${pg.risicoActie.vak}</b>: CE +${pg.risicoActie.gap.toFixed(1).replace('.',',')} omhoog → voldoende</span>
       <span class="pp-actie-arr">→</span></button>`;
   }
-  const coverage = (pg.ontbreektSE||pg.ontbreektData) ? `<div class="pp-cover">Op basis van ${rows.filter(r=>r.eind!=null).length} vak(ken).${pg.ontbreektData?` Oefen meer vakken`:''}${pg.ontbreektSE?`${pg.ontbreektData?' en vul':' Vul'} ontbrekende SE-cijfers in`:''} voor een completer beeld.</div>`:'';
+  const guidance=_ppGuidanceHTML(pg);
 
   return `<div class="plus-card plus-prognose">
     <div class="plus-card-h">Slaag ik? <span class="pp-live">● live</span></div>
@@ -633,9 +633,20 @@ function _plusPrognoseHTML(niveau, isPlus){
       ${rowHtml}
     </div>
     ${actie}
-    ${coverage}
+    ${guidance}
     <div class="pp-fine">*CE = voorspeld uit je oefening (~ = schatting). SE vul je zelf in. Eindcijfer = afgerond gemiddelde. Indicatie zonder N-term: richting, geen garantie.</div>
   </div>`;
+}
+// Duidelijke stappen om de prognose compleet te maken. Leeg als er niets mist.
+function _ppGuidanceHTML(pg){
+  const needSE = pg.rows.some(r=>r.se==null);
+  const needOef = !pg.hasEnough || pg.rows.some(r=>r.ce==null);
+  if(!needSE && !needOef) return '';
+  const items=[];
+  if(needSE) items.push(['Vul je SE-cijfers in','Ga naar Profiel → cijfers. Zonder je SE-cijfer kan ik je eindcijfer niet berekenen.','goToCijferInvoer()']);
+  if(needOef) items.push(['Oefen een paar vakken','Doe een quiz, oud examen of proefexamen. Voor een volledige prognose wil ik minstens 3 vakken met data.',"show('sc-home')"]);
+  const steps=items.map((it,i)=>`<button class="pp-step" onclick="${it[2]}"><span class="pp-step-n">${i+1}</span><span class="pp-step-t"><b>${it[0]}</b><small>${it[1]}</small></span><span class="pp-step-arr">→</span></button>`).join('');
+  return `<div class="pp-guide"><div class="pp-guide-h">📋 Zo maak je je prognose compleet</div>${steps}</div>`;
 }
 
 // ── Kaart: persoonlijke Vonk-check-in (#4) ─────────────────────────────────
@@ -651,7 +662,12 @@ function _plusVonkCoachHTML(niveau){
 // ── Kaart: tijdsdruk / tempo (#5) ──────────────────────────────────────────
 function _plusTempoHTML(vakId, niveau, isPlus){
   const t=plusTempoAnalyse(vakId,niveau);
-  if(!t) return ''; // geen getimede proefexamens → niets tonen
+  if(!t){
+    // Nog geen getimed proefexamen: leg voor Plus uit hoe je dit ontgrendelt.
+    if(!isPlus) return '';
+    return `<div class="plus-card plus-tempo"><div class="plus-card-h">Je tempo</div>
+      <div class="pt-hint">Maak een <b>proefexamen op tijd</b> (via Examenmodus hierboven), dan laat ik hier zien of je binnen de examentijd blijft en hoeveel je overhoudt.</div></div>`;
+  }
   if(!isPlus){
     return `<div class="plus-card locked"><div class="plus-card-h">Je tempo</div>
       <div class="plus-lock"><div class="pl-blur">Zie of je binnen de examentijd blijft en hoeveel je overhoudt</div>${_plusLockBtn()}</div></div>`;
@@ -774,6 +790,11 @@ function renderPlusDashboard(){
   // ── Examenmodus-knop (afleidingsvrije volledige simulatie) ──
   const modusHtml = `<button class="plus-modus" onclick="startExamenmodus('${vakId}')"><span class="pm-ic">🎧</span><span class="pm-t">Examenmodus<small>afleidingsvrije simulatie op tijd</small></span><span class="pm-arr">→</span></button>`;
 
+  // ── Huiswerk nakijken met foto's (#6b) ──
+  const hwBtn = isPlus
+    ? `<button class="plus-modus plus-hw" onclick="openHuiswerkNakijk('${vakId}')"><span class="pm-ic">📷</span><span class="pm-t">Huiswerk nakijken<small>foto van opdracht + antwoord, Vonk geeft feedback</small></span><span class="pm-arr">→</span></button>`
+    : '';
+
   // Vonk legt de examentrainer uit (eenmalig te sluiten) + wekelijkse kist.
   let coachHtml='';
   try{ if(!localStorage.getItem('slagio_plus_coach_done')) coachHtml=_plusCoach('Dit is je <b>examentrainer</b>. Bovenaan zie je wat je vandaag het beste kunt doen; daaronder je verwachte cijfer, waar je punten laat liggen en hoe examenklaar je bent. Elke week ligt er ook een <b>kist</b> voor je klaar. 🎁'); }catch(e){}
@@ -800,7 +821,7 @@ function renderPlusDashboard(){
 
   el.innerHTML = `${coachHtml}${vonkHtml}${prognoseHtml}${vandaagHtml}${kistHtml}${kalHtml}
     <div class="plus-sec-h">Per vak</div>
-    <div class="plus-vchips">${chips}</div>${head}${zwakHtml}${modusHtml}${moreBlock}${overHtml}
+    <div class="plus-vchips">${chips}</div>${head}${zwakHtml}${modusHtml}${hwBtn}${moreBlock}${overHtml}
     ${!isPlus?`<div class="plus-upsell-foot"><b>Slagio Plus</b> geeft je AI-nakijken, je verwachte cijfer, readiness en een persoonlijk plan. Oefenen en zelf nakijken blijven altijd gratis.<button class="plus-cta" onclick="plusIntro()">🎯 Bekijk Slagio Plus</button></div>`:''}`;
   try{ _plusAnimate('sc-plus'); }catch(e){}
 }
@@ -922,6 +943,77 @@ function _aitFinish(){
   </div>`);
 }
 function _aitAgain(){ if(!_AIT) return; const v=_AIT.vakId, o=_AIT.onderwerp; openAiTrainer(v, o); }
+
+// ═══════════════════════════════════════════════════════════════════════════
+// #6b · Huiswerk nakijken met foto's (opdracht + antwoord), per vak/onderwerp.
+// Geen scoringsvoorschrift: Vonk leest beide foto's en geeft vrije feedback.
+// ═══════════════════════════════════════════════════════════════════════════
+let _HW=null, _hwPickTarget=null;
+function openHuiswerkNakijk(vakId){
+  const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
+  const vak=(typeof getVK==='function'?getVK():[]).find(v=>v.id===vakId);
+  _HW={vakId, vak:vak?vak.naam:vakId, niveau, onderwerp:'', opdrachtImage:null, antwoordImage:null};
+  _hwEnsureOverlay(); _hwRenderForm();
+}
+function _hwEnsureOverlay(){
+  if(document.getElementById('hw-overlay')) return;
+  const ov=document.createElement('div');
+  ov.id='hw-overlay'; ov.className='ait-overlay';
+  ov.innerHTML=`<div class="ait-modal" role="dialog" aria-label="Huiswerk nakijken"><button class="ait-x" onclick="_hwClose()" aria-label="Sluiten">✕</button><div id="hw-body"></div></div>`;
+  document.body.appendChild(ov);
+}
+function _hwClose(){ const o=document.getElementById('hw-overlay'); if(o) o.remove(); _HW=null; }
+function _hwBody(h){ const b=document.getElementById('hw-body'); if(b) b.innerHTML=h; }
+function _hwRenderForm(){
+  if(!_HW) return;
+  _hwBody(`<div class="ait-head"><span class="ait-badge">📷 Huiswerk nakijken</span></div>
+    <div class="hw-lead">Fotografeer de <b>opdracht</b> en je <b>antwoord</b>. Vonk leest beide en geeft je feedback.</div>
+    <label class="hw-field"><span>Vak</span><div class="hw-vak">${_aitEsc(_HW.vak)}</div></label>
+    <label class="hw-field"><span>Onderwerp <i>(optioneel, helpt Vonk)</i></span>
+      <input id="hw-onderwerp" class="hw-input" type="text" placeholder="bv. kwadratische vergelijkingen" value="${_aitEsc(_HW.onderwerp||'')}" oninput="if(window._HW)_HW.onderwerp=this.value"></label>
+    <div class="hw-shots">
+      <button class="hw-shot ${_HW.opdrachtImage?'has':''}" onclick="_hwPick('opdracht')">
+        <span class="hw-shot-ic">${_HW.opdrachtImage?'✅':'📷'}</span>
+        <span class="hw-shot-t">Foto van de opdracht<small>${_HW.opdrachtImage?'toegevoegd · tik om te wijzigen':'aanbevolen'}</small></span></button>
+      <button class="hw-shot ${_HW.antwoordImage?'has':''}" onclick="_hwPick('antwoord')">
+        <span class="hw-shot-ic">${_HW.antwoordImage?'✅':'📷'}</span>
+        <span class="hw-shot-t">Foto van jouw antwoord<small>${_HW.antwoordImage?'toegevoegd · tik om te wijzigen':'verplicht'}</small></span></button>
+    </div>
+    <input type="file" accept="image/*" capture="environment" id="hw-file" style="display:none" onchange="_hwFile(this.files&&this.files[0]); this.value='';">
+    <button class="ait-btn" id="hw-submit" ${_HW.antwoordImage?'':'disabled'} onclick="_hwSubmit()">Laat Vonk het nakijken</button>
+    <div class="hw-note" id="hw-note"></div>`);
+}
+function _hwPick(which){ _hwPickTarget=which; const f=document.getElementById('hw-file'); if(f) f.click(); }
+async function _hwFile(file){
+  if(!file || !_HW) return;
+  const note=document.getElementById('hw-note');
+  if(!/^image\//.test(file.type||'')){ if(note) note.textContent='Kies een foto (afbeelding).'; return; }
+  if(note) note.textContent='Foto wordt verwerkt…';
+  try{
+    const durl=(typeof _exImgToDataURL==='function')?await _exImgToDataURL(file,1500,0.82):null;
+    if(!durl){ if(note) note.textContent='Kon de foto niet verwerken. Probeer een duidelijkere foto.'; return; }
+    if(_hwPickTarget==='opdracht') _HW.opdrachtImage=durl; else _HW.antwoordImage=durl;
+    _hwRenderForm();
+  }catch(e){ if(note) note.textContent='Kon de foto niet verwerken.'; }
+}
+async function _hwSubmit(){
+  if(!_HW || !_HW.antwoordImage) return;
+  const vonk=(typeof mascotSVG==='function')?mascotSVG('denk',72):'🦊';
+  _hwBody(`<div class="ait-load"><div class="ait-vonk">${vonk}</div><div class="ait-load-t">Vonk kijkt je huiswerk na…</div><div class="ait-dots"><i></i><i></i><i></i></div></div>`);
+  let res=null;
+  try{ res=await aiHuiswerkNakijk({vak:_HW.vak, niveau:_HW.niveau, onderwerp:_HW.onderwerp, opdrachtImage:_HW.opdrachtImage, antwoordImage:_HW.antwoordImage}); }catch(e){ res={error:true}; }
+  if(!_HW) return;
+  if(res.login){ _hwClose(); if(typeof showToast==='function') showToast('Log in om je huiswerk te laten nakijken'); try{ if(typeof openProfiel==='function') openProfiel(); }catch(e){} return; }
+  if(res.limit){ _hwClose(); if(typeof showPlusUpsell==='function') showPlusUpsell({bron:'huiswerk'}); else if(typeof showToast==='function') showToast('Je wekelijkse AI-tegoed is op'); return; }
+  if(res.error || !res.text){ _hwRenderForm(); const note=document.getElementById('hw-note'); if(note) note.textContent='Het lukte niet om het na te kijken. Probeer een scherpere foto van je opdracht en antwoord.'; return; }
+  const md=(typeof _vchatMd==='function')?_vchatMd(res.text):_aitEsc(res.text).replace(/\n/g,'<br>');
+  const vonk2=(typeof mascotSVG==='function')?mascotSVG('blij',60):'🦊';
+  _hwBody(`<div class="ait-head"><span class="ait-badge">📷 Nagekeken door Vonk</span></div>
+    <div class="hw-fb"><div class="hw-fb-vonk">${vonk2}</div><div class="hw-fb-txt">${md}</div></div>
+    <button class="ait-btn ait-again" onclick="_hwAgain()">Nog een opdracht nakijken</button>
+    <button class="ait-btn ait-ghost" onclick="_hwClose()">Klaar</button>`);
+}
+function _hwAgain(){ if(!_HW) return; const v=_HW.vakId; _hwClose(); openHuiswerkNakijk(v); }
 
 // ── Vonk-uitleg (coach-bubble) ─────────────────────────────────────────────
 function plusCoachDone(){ try{ localStorage.setItem('slagio_plus_coach_done','1'); }catch(e){} const b=document.getElementById('plus-coach'); if(b) b.remove(); }
