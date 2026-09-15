@@ -80,14 +80,20 @@ function _aiGradeConsume(){ try{ const k=_aiGradeWeekKey(); const n=parseInt(loc
 //   {error:true} bij een fout, of null als de AI-laag uit staat (endpoint leeg)
 async function aiGradeOpen(payload){
   if(!SLAGIO_AI_ENDPOINT) return null;
+  // AI-nakijken vereist een (gratis) account: de server telt het quotum per
+  // gebruiker. Niet ingelogd → vraag om een account (geen "gratis op"-melding,
+  // en geen verspilde call).
+  if(!currentUser) return {login:true};
   const isPlus = plusActive();
   if(!isPlus && aiGradeTrialLeft()<=0) return {limit:true};
   try{
     const tok=await _aiUserToken();
     const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','apikey':SUPABASE_KEY,'authorization':'Bearer '+(tok||SUPABASE_KEY)},body:JSON.stringify(Object.assign({mode:'grade'},payload||{}))});
     const j=await r.json().catch(()=>null);
-    // Server weigert (niet ingelogd, of quotum/proef op) → nette upsell i.p.v. fout.
-    if(r.status===401 || (j && (j.locked||j.limit))) return {limit:true, plus:!!(j&&j.plus)};
+    // Niet ingelogd volgens de server → account nodig (aparte melding).
+    if(r.status===401 || (j && j.reason==='login')) return {login:true};
+    // Quotum/proef op → nette upsell.
+    if(j && (j.locked || j.limit)) return {limit:true, plus:!!(j&&j.plus)};
     if(!r.ok) return {error:true};
     if(j && Array.isArray(j.points)){
       if(!isPlus) _aiGradeConsume();

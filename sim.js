@@ -901,6 +901,7 @@ async function examenAiNakijk(idx){
   try{ res = await aiGradeOpen(payload); }catch(e){ res={error:true}; }
   if(btn){ btn.disabled=false; btn.classList.remove('busy'); btn.innerHTML='★ Opnieuw laten nakijken'; }
   if(!res){ if(panel) panel.innerHTML='<div class="ex-ai-note">AI-nakijken is nog niet beschikbaar.</div>'; if(btn) btn.style.display='none'; return; }
+  if(res.login){ if(panel) panel.innerHTML=_exAiLogin(); if(btn) btn.style.display='none'; return; }
   if(res.limit){ if(panel) panel.innerHTML=_exAiUpsell(); if(btn) btn.style.display='none'; return; }
   if(res.error || !res.result || !Array.isArray(res.result.points)){
     if(panel) panel.innerHTML='<div class="ex-ai-note">Er ging iets mis bij het nakijken. Probeer het zo nog eens.</div>';
@@ -938,6 +939,13 @@ function _exAiUpsell(){
     <div class="ex-ai-upsell-h">Je gratis AI-beoordelingen zijn op deze week</div>
     <p>Je kunt gewoon verder oefenen en zelf nakijken, dat blijft altijd gratis. Wil je Slagio je open antwoorden onbeperkt laten beoordelen, met feedback per scoringspunt?</p>
     <button class="ex-ai-cta" onclick="plusIntro()">🎯 Bekijk Slagio Plus</button>
+  </div>`;
+}
+function _exAiLogin(){
+  return `<div class="ex-ai-upsell">
+    <div class="ex-ai-upsell-h">Maak gratis een account om te laten nakijken</div>
+    <p>Slagio kijkt je open antwoorden na met feedback per scoringspunt. Daarvoor heb je een gratis account nodig, zodat we jouw nakijkbeurten bewaren. Geen creditcard, en je krijgt <b>3 gratis beoordelingen per week</b>.</p>
+    <button class="ex-ai-cta" onclick="try{switchAuthTab&&switchAuthTab('register')}catch(e){};show('sc-auth')">Gratis account maken</button>
   </div>`;
 }
 

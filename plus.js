@@ -681,13 +681,14 @@ function renderPlusIntro(){
   el.innerHTML = `
     <div class="pi-hero">
       <div class="pi-badge">🎯 Slagio Plus</div>
-      <h1>Weet jij of je klaar bent voor je examen?</h1>
+      <h1>Weet jij of je <span class="pi-hl">klaar</span> bent voor je examen?</h1>
       <p class="pi-lead">Slagio Plus laat zien waar je punten laat liggen, wat je vandaag moet oefenen en hoe je ervoor staat richting je examen.</p>
       <p class="pi-killer">Van "ik moet meer leren" naar "ik weet precies wat ik moet doen."</p>
     </div>
     ${(typeof mascotBubble==='function')?mascotBubble('Ik ben <b>Vonk</b>! Gratis Slagio helpt je oefenen - dat blijft altijd zo. Met <b>Plus</b> laat ik je precies zien waar je staat, wat je vandaag moet doen, en kijk ik je open vragen na. En elke week krijg je een <b>kist</b> met munten en exclusieve outfits &amp; looks. 🎁','blij',{}):''}
     ${perso}
     ${active?`<div class="pi-active">✓ Je hebt Slagio Plus. <button class="pi-link" onclick="openPlusDashboard()">Naar je examentrainer</button></div>`:''}
+    <div class="pi-feats-eyebrow">Wat je krijgt met Plus</div>
     <div class="pi-feats">${feats}</div>
     <div class="pi-vergelijk">
       <div class="pi-card-h">Gratis blijft gratis</div>
@@ -696,7 +697,7 @@ function renderPlusIntro(){
     </div>
     <div class="pi-prices-h">Kies je periode <small>alle vakken inbegrepen</small></div>
     <div class="pi-plans">${plans}</div>
-    <div class="pi-trial">Twijfel je? Je krijgt <b>3 AI-beoordelingen per week gratis</b>, zonder account of creditcard. Zo voel je eerst wat Plus doet.</div>
+    <div class="pi-trial">Twijfel je? Met een <b>gratis account</b> krijg je <b>3 AI-beoordelingen per week</b>, zonder creditcard. Zo voel je eerst wat Plus doet.</div>
   `;
   try{ _plusAnimate('sc-plus-intro'); }catch(e){}
 }
