@@ -3791,14 +3791,25 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .hm-menu-open .hm-fb-badge{position:absolute;top:-6px;right:12px}
 /* Examentrainer-ingang op de home (crown jewel). Prominent, merkkleur, altijd
    zichtbaar - want het oude tegelmenu (.hm-menu) is op alle schermen verborgen. */
-.hm-trainer-cta{position:relative;display:flex;align-items:center;gap:13px;width:100%;padding:14px 16px;margin:10px 0 2px;border:1.5px solid color-mix(in srgb,var(--or) 34%,var(--bo));border-radius:17px;background:linear-gradient(120deg,color-mix(in srgb,var(--or) 13%,var(--s)),color-mix(in srgb,#ffb347 9%,var(--s)));color:var(--dk);cursor:pointer;text-align:left;box-shadow:0 2px 10px color-mix(in srgb,var(--or) 14%,transparent);transition:transform .16s cubic-bezier(.34,1.2,.64,1),box-shadow .16s,border-color .16s;-webkit-tap-highlight-color:transparent}
-.hm-trainer-cta:hover{transform:translateY(-2px);border-color:var(--or);box-shadow:0 8px 22px color-mix(in srgb,var(--or) 24%,transparent)}
-.hm-trainer-cta:active{transform:scale(.985)}
-.hm-trainer-ic{flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:13px;font-size:23px;background:linear-gradient(135deg,#ffb347,#e8580c);box-shadow:0 2px 8px rgba(232,88,12,.28)}
-.hm-trainer-txt{flex:1 1 auto;display:flex;flex-direction:column;gap:1px;min-width:0}
-.hm-trainer-txt b{font-family:var(--font-head);font-weight:800;font-size:15.5px;line-height:1.15}
-.hm-trainer-txt small{font-size:11.5px;font-weight:600;color:var(--mu);line-height:1.25}
-.hm-trainer-arr{flex:0 0 auto;color:var(--or);opacity:.8}
+/* Examentrainer — premium ink-hero op de home (crown jewel) */
+.hm-trainer-cta{position:relative;overflow:hidden;display:flex;align-items:center;gap:15px;width:100%;padding:18px 18px;margin:12px 0 4px;border:1px solid rgba(255,255,255,.09);border-radius:20px;background:radial-gradient(130% 130% at 100% 0%,rgba(230,189,99,.22),transparent 55%),linear-gradient(150deg,#1b1f2c,#12141d 58%,#191d2a);color:#f4f1ea;cursor:pointer;text-align:left;box-shadow:0 16px 36px -18px rgba(8,10,18,.72),inset 0 1px 0 rgba(255,255,255,.05);transition:transform .18s cubic-bezier(.34,1.2,.64,1),box-shadow .2s;-webkit-tap-highlight-color:transparent}
+.hm-trainer-cta:hover{transform:translateY(-3px);box-shadow:0 24px 46px -18px rgba(8,10,18,.78),0 0 0 1px rgba(230,189,99,.28)}
+.hm-trainer-cta:active{transform:scale(.99)}
+.hmt-orb{position:absolute;top:-46%;right:-6%;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(230,189,99,.30),transparent 66%);pointer-events:none}
+.hmt-sheen{position:absolute;top:0;left:0;width:38%;height:100%;pointer-events:none;background:linear-gradient(105deg,transparent,rgba(255,255,255,.14),transparent);transform:translateX(-160%) skewX(-18deg)}
+.hm-trainer-cta .hmt-ic{position:relative;z-index:1;flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:16px;font-size:26px;background:linear-gradient(140deg,#ffd782,#e0982c);box-shadow:0 8px 20px -6px rgba(224,152,44,.65),inset 0 1px 0 rgba(255,255,255,.5)}
+.hmt-txt{position:relative;z-index:1;flex:1 1 auto;display:flex;flex-direction:column;gap:2px;min-width:0}
+.hmt-eyebrow{font-family:var(--font-head);font-weight:800;font-size:10px;text-transform:uppercase;letter-spacing:1.4px;color:#e6bd63}
+.hmt-title{font-family:var(--font-head);font-weight:800;font-size:17px;letter-spacing:-.3px;color:#fff;line-height:1.12}
+.hmt-sub{font-size:11.5px;font-weight:500;color:rgba(244,241,234,.6);line-height:1.3}
+.hmt-arr{position:relative;z-index:1;flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#e6bd63;transition:background .18s,transform .18s}
+.hm-trainer-cta:hover .hmt-arr{background:rgba(230,189,99,.22);transform:translateX(3px)}
+@media (prefers-reduced-motion:no-preference){
+  .hmt-sheen{animation:hmtSheen 5.5s ease-in-out 1.6s infinite}
+  .hmt-orb{animation:hmtOrb 4.6s ease-in-out infinite}
+}
+@keyframes hmtSheen{0%{transform:translateX(-160%) skewX(-18deg)}100%{transform:translateX(420%) skewX(-18deg)}}
+@keyframes hmtOrb{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
 .snav-trainer .snav-ic{font-size:17px;line-height:1}
 .snav-trainer{font-weight:800}
 /* Bottom-sheet menu-lijst */
