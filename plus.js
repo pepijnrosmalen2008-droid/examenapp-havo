@@ -159,6 +159,101 @@ function plusReadiness(vakId, niveau){
   return { score:Math.round(score*100), factoren };
 }
 
+// ── Vonk die je écht kent (#4) ─────────────────────────────────────────────
+// Een persoonlijke coach die je traject kent: je prognose, je klim of dip, je
+// zwakste vak en hoeveel dagen je nog hebt. Geen generieke "oefen even", maar
+// een bericht dat naar JOUW data verwijst. Rule-based (geen AI-kosten), dus het
+// werkt altijd en verwijst naar echte cijfers.
+function plusVonkCoach(niveau){
+  niveau = niveau || (typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo');
+  let ctx={}; try{ ctx=(typeof notifContext==='function')?notifContext():{}; }catch(e){ ctx={}; }
+  const naam = ctx.naam ? (' '+ctx.naam) : '';
+  const pg = (typeof plusSlaagPrognose==='function') ? plusSlaagPrognose(niveau) : null;
+  const vakken = (typeof plusVakkenMetData==='function') ? plusVakkenMetData(niveau) : [];
+  // Sterkste stijger/daler uit de voorspellingsreeksen.
+  let stijger=null, daler=null;
+  vakken.forEach(v=>{ const vc=plusVoorspeldCijfer(v.vakId,niveau);
+    if(vc && vc.reeks && vc.reeks.length>1){ const delta=vc.reeks[vc.reeks.length-1]-vc.reeks[0];
+      if(delta>=0.5 && (!stijger||delta>stijger.delta)) stijger={vak:v.vak, vakId:v.vakId, delta};
+      if(delta<=-0.5 && (!daler||delta<daler.delta)) daler={vak:v.vak, vakId:v.vakId, delta}; } });
+  const risico = pg && pg.risico;
+  const exVak = ctx.examVak, exD = ctx.examDays;
+  const act=(label,onclick)=>({label,onclick});
+  const _oef=(vakId)=> vakId?`_plusPickVak('${vakId}')`:`show('sc-home')`;
+
+  // Kies het sterkste signaal (volgorde = prioriteit).
+  // 1) Examen heel dichtbij → focus op risicovak.
+  if(exD!=null && exD<=7 && risico){
+    return { mood:'denk', kop:`Nog ${exD} ${exD===1?'dag':'dagen'} tot ${exVak}`,
+      msg:`Je staat er ${pg.verdict==='slaag'?'goed':'oké'} voor${naam}. De laatste winst zit bij <b>${risico.vak}</b> (nu een ${risico.eind}). Daar 15 minuten insteken telt nu dubbel.`,
+      actie:act(`Train ${risico.vak}`,_oef(risico.vakId)) };
+  }
+  // 2) Mooie klim → erken het, houd 'm vast.
+  if(stijger){
+    return { mood:'trots', kop:`Je klimt bij ${stijger.vak} 📈`,
+      msg:`Sinds je begon ging je voorspelde cijfer voor <b>${stijger.vak}</b> +${stijger.delta.toFixed(1).replace('.',',')} omhoog${naam?','+naam:''}. Dit is precies hoe het werkt — even doorpakken en het staat vast.`,
+      actie:act(`Ga door met ${stijger.vak}`,_oef(stijger.vakId)) };
+  }
+  // 3) Al even niet geoefend, met examen op komst → zachte por met inzet.
+  if((ctx.lapsedDays!=null && ctx.lapsedDays>=3) && exD!=null && exD<=21){
+    return { mood:'kijk', kop:`Even weer opgepakt?`,
+      msg:`Je oefende ${ctx.lapsedDays} dagen niet en ${exVak} is over ${exD} dagen${naam}. Geen stress — één setje van 10 minuten brengt je zo weer op gang.`,
+      actie:act('Snelle sessie',risico?_oef(risico.vakId):`show('sc-home')`) };
+  }
+  // 4) Dip in een vak → benoem het rustig, wijs de weg.
+  if(daler){
+    return { mood:'kijk', kop:`${daler.vak} zakt iets weg`,
+      msg:`Je voorspelde cijfer voor <b>${daler.vak}</b> daalde wat${naam}. Dat gebeurt — vaak zit het in één onderwerp. Laten we dat er even uit halen.`,
+      actie:act(`Bekijk ${daler.vak}`,_oef(daler.vakId)) };
+  }
+  // 5) Staat op slagen → vier het, houd de lijn vast.
+  if(pg && pg.verdict==='slaag'){
+    return { mood:'trots', kop:`Je staat op slagen 🎉`,
+      msg:`Gemiddeld een ${pg.eindGem.toFixed(1).replace('.',',')}${naam}. Sterk. Blijf je zwakste vak scherp houden, dan komt hier niks meer tussen.`,
+      actie:risico?act(`Houd ${risico.vak} scherp`,_oef(risico.vakId)):null };
+  }
+  // 6) Risico bekend → wijs er rustig naar.
+  if(risico && risico.eind<6){
+    return { mood:'denk', kop:`Je grootste winst: ${risico.vak}`,
+      msg:`${risico.vak} staat nu op een ${risico.eind}${naam}. Dat is het vak waar oefenen je slaagkans het meest omhoog trekt. Begin daar.`,
+      actie:act(`Train ${risico.vak}`,_oef(risico.vakId)) };
+  }
+  // 7) Warme default.
+  return { mood:'blij', kop:`Fijn dat je er bent${naam}`,
+    msg:`Ik hou je cijfers, je zwakke punten en je examens in de gaten. Doe een quiz of proefexamen, dan vul ik je stand hierboven live aan.`,
+    actie:act('Naar de vakken',`show('sc-home')`) };
+}
+
+// ── Tijdsdruk-analyse (#5) ─────────────────────────────────────────────────
+// Op het echte examen is tijd de stille killer. Proefexamens worden op tijd
+// gemaakt (tijdGebruikt/tijdTotaal), dus daaruit lezen we of je binnen de tijd
+// blijft, hoeveel je overhoudt, en of je dreigt uit te lopen. Eigen engine.
+function plusTempoAnalyse(vakId, niveau){
+  const recent=_plusRecent(vakId,5,niveau,'sim').filter(r=>r.tijdTotaal>0 && r.tijdGebruikt>0);
+  if(!recent.length) return null;
+  let ratioSum=0, uitloop=0;
+  recent.forEach(r=>{ const ratio=Math.min(1.2, r.tijdGebruikt/r.tijdTotaal); ratioSum+=ratio; if(r.tijdGebruikt/r.tijdTotaal>=0.985) uitloop++; });
+  const ratio=ratioSum/recent.length;
+  const pctTijd=Math.round(Math.min(1,ratio)*100);
+  const overMin=Math.round((recent.reduce((s,r)=>s+Math.max(0,r.tijdTotaal-r.tijdGebruikt),0)/recent.length)/60);
+  const totaalMin=Math.round(recent[recent.length-1].tijdTotaal/60);
+  let status,kop,tip;
+  if(uitloop>=Math.ceil(recent.length/2) && ratio>=0.97){
+    status='krap'; kop='Je loopt uit de tijd';
+    tip='Sla een vraag die vastloopt bewust over en kom terug. Oefen de examenmodus op tijd om je tempo op te bouwen.';
+  } else if(ratio>=0.9){
+    status='oppassen'; kop='Je zit krap in je tijd';
+    tip=`Je gebruikt bijna al je tijd (~${overMin} min over). Werk de makkelijke punten eerst af, dan de tijdvreters.`;
+  } else if(ratio<=0.6){
+    status='ruim'; kop='Je hebt ruim tijd over';
+    tip=`Je houdt gemiddeld ~${overMin} min over. Gebruik die tijd om je open antwoorden te controleren en preciezer te maken.`;
+  } else {
+    status='goed'; kop='Goed tempo';
+    tip=`Mooi ritme: ~${overMin} min over. Blijf dit vasthouden onder examendruk.`;
+  }
+  return { status, kop, tip, pctTijd, ratio, overMin, totaalMin, aantal:recent.length, uitloop };
+}
+
 // ── Live slaagprognose over ÁLLE vakken ────────────────────────────────────
 // Combineert je ingevoerde SE-cijfers met een data-voorspelde CE (uit al je
 // oefening) tot een eindcijfer per vak, en past exact de uitslagregeling toe
@@ -543,6 +638,35 @@ function _plusPrognoseHTML(niveau, isPlus){
   </div>`;
 }
 
+// ── Kaart: persoonlijke Vonk-check-in (#4) ─────────────────────────────────
+function _plusVonkCoachHTML(niveau){
+  const c=plusVonkCoach(niveau);
+  if(!c || typeof mascotBubble!=='function') return '';
+  const actions = c.actie ? `<button class="coach-cta" onclick="${c.actie.onclick}">${c.actie.label} →</button>` : '';
+  const msg = `<b class="pvc-kop">${c.kop}</b>${c.msg}`;
+  const naam = (typeof MASCOT_NAME!=='undefined'?MASCOT_NAME:'Vonk')+' · je examencoach';
+  return `<div class="plus-vonkcoach">${mascotBubble(msg, c.mood, {closable:false, name:naam, actionsHTML:actions})}</div>`;
+}
+
+// ── Kaart: tijdsdruk / tempo (#5) ──────────────────────────────────────────
+function _plusTempoHTML(vakId, niveau, isPlus){
+  const t=plusTempoAnalyse(vakId,niveau);
+  if(!t) return ''; // geen getimede proefexamens → niets tonen
+  if(!isPlus){
+    return `<div class="plus-card locked"><div class="plus-card-h">Je tempo</div>
+      <div class="plus-lock"><div class="pl-blur">Zie of je binnen de examentijd blijft en hoeveel je overhoudt</div>${_plusLockBtn()}</div></div>`;
+  }
+  const kl={krap:'#ef4444',oppassen:'#f59e0b',goed:'#22c55e',ruim:'#3b82f6'}[t.status];
+  const pct=Math.max(6,Math.min(100,t.pctTijd));
+  return `<div class="plus-card plus-tempo">
+    <div class="plus-card-h">Je tempo <span class="pt-sub">laatste ${t.aantal} proefexamen(s)</span></div>
+    <div class="pt-verdict" style="color:${kl}"><span class="pt-ic">⏱</span><b>${t.kop}</b><span class="pt-pct">${t.pctTijd}% van je tijd</span></div>
+    <div class="pt-bar"><i style="width:${pct}%;background:${kl}"></i><span class="pt-finish" title="einde examentijd"></span></div>
+    <div class="pt-scale"><span>start</span><span>~${t.overMin} min over</span><span>${t.totaalMin} min</span></div>
+    <div class="pt-tip">${t.tip}</div>
+  </div>`;
+}
+
 function renderPlusDashboard(){
   const el=document.getElementById('sc-plus-body'); if(!el) return;
   const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
@@ -646,9 +770,15 @@ function renderPlusDashboard(){
   // ── Live slaagprognose (de eerste vraag: "sta ik ervoor?") ──
   const prognoseHtml=_plusPrognoseHTML(niveau,isPlus);
 
-  el.innerHTML = `${coachHtml}${prognoseHtml}${vandaagHtml}${kistHtml}${kalHtml}
+  // ── Tempo / tijdsdruk (per vak) ──
+  const tempoHtml=_plusTempoHTML(vakId,niveau,isPlus);
+
+  // ── Persoonlijke Vonk-check-in (na de eenmalige intro; verwijst naar je eigen data) ──
+  const vonkHtml = coachHtml ? '' : _plusVonkCoachHTML(niveau);
+
+  el.innerHTML = `${coachHtml}${vonkHtml}${prognoseHtml}${vandaagHtml}${kistHtml}${kalHtml}
     <div class="plus-sec-h">Per vak</div>
-    <div class="plus-vchips">${chips}</div>${head}${modusHtml}${rapHtml}${readyHtml}${zwakHtml}${ontwHtml}${overHtml}
+    <div class="plus-vchips">${chips}</div>${head}${modusHtml}${rapHtml}${readyHtml}${tempoHtml}${zwakHtml}${ontwHtml}${overHtml}
     ${!isPlus?`<div class="plus-upsell-foot"><b>Slagio Plus</b> geeft je AI-nakijken, je verwachte cijfer, readiness en een persoonlijk plan. Oefenen en zelf nakijken blijven altijd gratis.<button class="plus-cta" onclick="plusIntro()">🎯 Bekijk Slagio Plus</button></div>`:''}`;
   try{ _plusAnimate('sc-plus'); }catch(e){}
 }
