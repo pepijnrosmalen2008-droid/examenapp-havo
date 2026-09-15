@@ -159,6 +159,81 @@ function plusReadiness(vakId, niveau){
   return { score:Math.round(score*100), factoren };
 }
 
+// ── Live slaagprognose over ÁLLE vakken ────────────────────────────────────
+// Combineert je ingevoerde SE-cijfers met een data-voorspelde CE (uit al je
+// oefening) tot een eindcijfer per vak, en past exact de uitslagregeling toe
+// (dezelfde regels als de cijfercalculator). Zo zie je in één oogopslag of je
+// nu zou slagen, welk vak je risico is en wat je nog moet doen. Eigen engine,
+// geen AI. Herberekent elke keer dat het dashboard rendert (dus "live").
+function _plusProfiel(){
+  try{ const p=JSON.parse(localStorage.getItem(typeof PROF_KEY!=='undefined'?PROF_KEY:'examenapp_profiel')||'{}'); return (p&&p.profiel)||''; }
+  catch(e){ return ''; }
+}
+function plusSlaagPrognose(niveau){
+  niveau = niveau || (typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo');
+  const cijfers = (typeof getSavedCijfers==='function')?getSavedCijfers():{};
+  const vakken = (typeof getVK==='function')?getVK():[];
+  const rows = vakken.map(v=>{
+    const raw = cijfers[v.id];
+    const se = (raw!=null && !isNaN(parseFloat(raw))) ? Math.round(parseFloat(raw)*10)/10 : null;
+    const voorsp = plusVoorspeldCijfer(v.id, niveau);
+    const ce = voorsp ? voorsp.cijfer : null;
+    const schatting = voorsp ? !!voorsp.schatting : false;
+    const eind = (se!=null && ce!=null) ? Math.round((se+ce)/2) : null;
+    let status;
+    if(eind==null) status = (se==null && ce==null) ? 'leeg' : (ce==null ? 'geen-ce' : 'geen-se');
+    else if(eind>=7) status='goed';
+    else if(eind>=6) status='voldoende';
+    else if(eind===5) status='rand';
+    else status='risico';
+    return { vakId:v.id, vak:v.naam, code:v.code, kleur:v.kleur, se, ce, schatting, eind, status };
+  });
+  const compleet = rows.filter(r=>r.eind!=null);
+  const hasEnough = compleet.length>=3;
+  const profiel = _plusProfiel();
+  const kernvakken = profiel==='cm' ? ['NE','EN'] : ['NE','EN','WA','WB'];
+  const kernGrades = compleet.filter(r=>kernvakken.includes(r.code));
+  const kernOnder6 = kernGrades.filter(r=>r.eind<6);
+  const ceVals = compleet.map(r=>r.ce);
+  const ceGem = ceVals.length ? ceVals.reduce((a,b)=>a+b,0)/ceVals.length : 0;
+  const allEind = compleet.map(r=>r.eind);
+  const onder4 = allEind.filter(e=>e<4).length;
+  const vijven = allEind.filter(e=>e===5).length;
+  const vieren = allEind.filter(e=>e===4).length;
+  const eindGem = allEind.length ? allEind.reduce((a,b)=>a+b,0)/allEind.length : 0;
+  const r1 = ceGem>=5.5;
+  const r2 = kernOnder6.length<=1 && kernOnder6.every(r=>r.eind>=5);
+  let r3=true;
+  if(onder4>0) r3=false;
+  else if(vieren>=1&&vijven>=1) r3=eindGem>=6.0;
+  else if(vijven>=3) r3=false;
+  else if(vijven===2||vieren===1) r3=eindGem>=6.0;
+  const geslaagd = hasEnough && r1 && r2 && r3;
+  let verdict;
+  if(!hasEnough) verdict='onbekend';
+  else if(!geslaagd) verdict='zak';
+  else if(allEind.every(e=>e>=6)) verdict='slaag';
+  else verdict='rand'; // slaagt, maar met compensatie (krap)
+  // Reden bij zakken (welke regel valt om) + risicovak (laagste eindcijfer).
+  let reden='';
+  if(verdict==='zak'){
+    if(!r1) reden=`je CE-gemiddelde is ${ceGem.toFixed(1).replace('.',',')} — dat moet minimaal 5,5 zijn`;
+    else if(!r2) reden=`een kernvak (Nederlands, Engels of wiskunde) staat te laag`;
+    else reden=`je hebt te veel onvoldoendes om te compenseren`;
+  }
+  const risico = compleet.slice().sort((a,b)=>a.eind-b.eind)[0] || null;
+  // Voor het risicovak: hoeveel moet de CE omhoog voor een voldoende (eind ≥ 6)?
+  let risicoActie=null;
+  if(risico && risico.eind<6 && risico.se!=null){
+    const ceNodig = Math.max(1, Math.min(10, 2*6 - risico.se)); // eind=round((se+ce)/2)≥6
+    const gap = Math.round((ceNodig - risico.ce)*10)/10;
+    risicoActie = { vakId:risico.vakId, vak:risico.vak, gap:Math.max(0,gap), ceNodig:Math.round(ceNodig*10)/10 };
+  }
+  const ontbreektSE = rows.filter(r=>r.se==null && r.ce!=null).length;
+  const ontbreektData = rows.filter(r=>r.ce==null).length;
+  return { rows, compleet, hasEnough, ceGem, eindGem, r1, r2, r3, geslaagd, verdict, reden, risico, risicoActie, ontbreektSE, ontbreektData, profiel, kernvakken };
+}
+
 // ── Dagen tot examen (uit het rooster) ────────────────────────────────────
 function plusDagenTotExamen(vakId, niveau){
   try{
@@ -395,6 +470,79 @@ function startExamenmodus(vakId){
   }catch(e){}
 }
 
+// ── Kaart: live slaagprognose over alle vakken (crown jewel van Plus) ──────
+function _ppStatusKleur(status){
+  return { goed:'#22c55e', voldoende:'#22c55e', rand:'#f59e0b', risico:'#ef4444' }[status] || 'var(--mu)';
+}
+function _plusPrognoseHTML(niveau, isPlus){
+  if(!isPlus){
+    return `<div class="plus-card locked"><div class="plus-card-h">Slaag ik?</div>
+      <div class="plus-lock"><div class="pl-blur">Je live slaagkans over al je vakken, met je zwakste vak</div>${_plusLockBtn()}</div></div>`;
+  }
+  const pg=plusSlaagPrognose(niveau);
+  // Rijen met enige data (SE of CE); volledig lege vakken laten we weg.
+  const rows=pg.rows.filter(r=>r.se!=null || r.ce!=null);
+  if(!rows.length){
+    return `<div class="plus-card plus-prognose"><div class="plus-card-h">Slaag ik?</div>
+      <div class="pp-empty">Voer je SE-cijfers in en oefen een paar vakken, dan reken ik je slaagkans hier live uit.
+      <button class="pp-mini-cta" onclick="goToCijferInvoer()">Vul je SE-cijfers in →</button></div></div>`;
+  }
+  const VS={
+    slaag:{ic:'🎉',cls:'pp-slaag',kop:'Je staat op slagen'},
+    rand:{ic:'⚖️',cls:'pp-rand',kop:'Je slaagt nu — maar krap'},
+    zak:{ic:'🔴',cls:'pp-zak',kop:'Nu zou je nog zakken'},
+    onbekend:{ic:'📊',cls:'pp-onbekend',kop:'Vul je stand aan'}
+  }[pg.verdict];
+  let sub='';
+  if(pg.verdict==='slaag') sub=`Gemiddeld eindcijfer <b>${pg.eindGem.toFixed(1).replace('.',',')}</b> · CE-gemiddelde ${pg.ceGem.toFixed(1).replace('.',',')}. Mooi — vasthouden.`;
+  else if(pg.verdict==='rand') sub=`Eén tegenvaller en het kantelt.${pg.risico?` Je risicovak is <b>${pg.risico.vak}</b>.`:''} Til dat op en je zit veiliger.`;
+  else if(pg.verdict==='zak') sub=`Waarom: ${pg.reden}. Dit is te draaien — begin bij je zwakste vak.`;
+  else sub=`Nog ${Math.max(0,3-pg.compleet.length)} vak(ken) met SE + oefening te gaan voor een echte prognose. Ik reken 'm daarna live uit.`;
+
+  const metrics = pg.hasEnough ? `<div class="pp-metrics">
+    <div class="pp-tile"><span class="pp-tile-val">${pg.eindGem.toFixed(1).replace('.',',')}</span><span class="pp-tile-lbl">gem. eindcijfer</span></div>
+    <div class="pp-tile"><span class="pp-tile-val">${pg.ceGem.toFixed(1).replace('.',',')}</span><span class="pp-tile-lbl">CE-gemiddelde ${pg.r1?'✓':'✗ (min 5,5)'}</span></div>
+    ${pg.risico&&pg.risico.eind<6?`<div class="pp-tile pp-tile-risk"><span class="pp-tile-val">${pg.risico.eind}</span><span class="pp-tile-lbl">risico: ${pg.risico.vak}</span></div>`:''}
+  </div>`:'';
+
+  const rowHtml=rows.map(r=>{
+    const kl=_ppStatusKleur(r.status);
+    const seCell = r.se!=null ? `<span class="pp-se">${r.se.toFixed(1).replace('.',',')}</span>`
+      : `<button class="pp-cell-cta" onclick="event.stopPropagation();goToCijferInvoer()">SE?</button>`;
+    const ceCell = r.ce!=null ? `<span class="pp-ce">${r.schatting?'~':''}${r.ce.toFixed(1).replace('.',',')}</span>`
+      : `<button class="pp-cell-cta" onclick="event.stopPropagation();openVak('${r.vakId}')">oefen</button>`;
+    const eindCell = r.eind!=null ? `<span class="pp-eind" style="color:${kl}">${r.eind}</span>` : `<span class="pp-eind pp-eind-none">–</span>`;
+    return `<div class="pp-row" onclick="_plusPickVak('${r.vakId}')">
+      <span class="pp-dot" style="background:${kl}"></span>
+      <span class="pp-vak">${r.vak}</span>
+      <span class="pp-col">${seCell}</span>
+      <span class="pp-col">${ceCell}</span>
+      <span class="pp-col pp-col-eind">${eindCell}</span>
+    </div>`;
+  }).join('');
+
+  let actie='';
+  if(pg.risicoActie && pg.risicoActie.gap>0){
+    actie=`<button class="pp-actie" onclick="_plusPickVak('${pg.risicoActie.vakId}')">
+      <span class="pp-actie-txt">🎯 <b>${pg.risicoActie.vak}</b>: CE +${pg.risicoActie.gap.toFixed(1).replace('.',',')} omhoog → voldoende</span>
+      <span class="pp-actie-arr">→</span></button>`;
+  }
+  const coverage = (pg.ontbreektSE||pg.ontbreektData) ? `<div class="pp-cover">Op basis van ${rows.filter(r=>r.eind!=null).length} vak(ken).${pg.ontbreektData?` Oefen meer vakken`:''}${pg.ontbreektSE?`${pg.ontbreektData?' en vul':' Vul'} ontbrekende SE-cijfers in`:''} voor een completer beeld.</div>`:'';
+
+  return `<div class="plus-card plus-prognose">
+    <div class="plus-card-h">Slaag ik? <span class="pp-live">● live</span></div>
+    <div class="pp-verdict ${VS.cls}"><span class="pp-verdict-ic">${VS.ic}</span><span class="pp-verdict-txt"><b>${VS.kop}</b><small>${sub}</small></span></div>
+    ${metrics}
+    <div class="pp-table">
+      <div class="pp-row pp-head"><span class="pp-dot" style="visibility:hidden"></span><span class="pp-vak">vak</span><span class="pp-col">SE</span><span class="pp-col">CE*</span><span class="pp-col pp-col-eind">eind</span></div>
+      ${rowHtml}
+    </div>
+    ${actie}
+    ${coverage}
+    <div class="pp-fine">*CE = voorspeld uit je oefening (~ = schatting). SE vul je zelf in. Eindcijfer = afgerond gemiddelde. Indicatie zonder N-term — richting, geen garantie.</div>
+  </div>`;
+}
+
 function renderPlusDashboard(){
   const el=document.getElementById('sc-plus-body'); if(!el) return;
   const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
@@ -495,7 +643,10 @@ function renderPlusDashboard(){
   try{ if(!localStorage.getItem('slagio_plus_coach_done')) coachHtml=_plusCoach('Dit is je <b>examentrainer</b>. Bovenaan zie je wat je vandaag het beste kunt doen; daaronder je verwachte cijfer, waar je punten laat liggen en hoe examenklaar je bent. Elke week ligt er ook een <b>kist</b> voor je klaar. 🎁'); }catch(e){}
   const kistHtml=_plusKistHTML();
 
-  el.innerHTML = `${coachHtml}${vandaagHtml}${kistHtml}${kalHtml}
+  // ── Live slaagprognose (de eerste vraag: "sta ik ervoor?") ──
+  const prognoseHtml=_plusPrognoseHTML(niveau,isPlus);
+
+  el.innerHTML = `${coachHtml}${prognoseHtml}${vandaagHtml}${kistHtml}${kalHtml}
     <div class="plus-sec-h">Per vak</div>
     <div class="plus-vchips">${chips}</div>${head}${modusHtml}${rapHtml}${readyHtml}${zwakHtml}${ontwHtml}${overHtml}
     ${!isPlus?`<div class="plus-upsell-foot"><b>Slagio Plus</b> geeft je AI-nakijken, je verwachte cijfer, readiness en een persoonlijk plan. Oefenen en zelf nakijken blijven altijd gratis.<button class="plus-cta" onclick="plusIntro()">🎯 Bekijk Slagio Plus</button></div>`:''}`;

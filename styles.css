@@ -8054,6 +8054,51 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .plus-card{background:var(--s);border:1px solid rgba(var(--or-rgb),.12);border-radius:16px;padding:16px 16px;box-shadow:0 1px 3px rgba(0,0,0,.04),0 6px 20px rgba(0,0,0,.05)}
 .plus-card.locked{opacity:.96}
 .plus-card-h{font-family:var(--font-head);font-size:13px;font-weight:800;color:var(--dk);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:8px;opacity:.85}
+/* ── Live slaagprognose (crown jewel) ───────────────────────────────────── */
+.plus-prognose{position:relative}
+.pp-live{font-family:var(--font);font-size:10px;font-weight:800;letter-spacing:.3px;text-transform:none;color:#22c55e;display:inline-flex;align-items:center;gap:3px}
+.pp-empty{font-size:13px;color:var(--mu);line-height:1.5;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.pp-mini-cta,.pp-cell-cta{font-family:inherit;cursor:pointer;font-weight:800;border-radius:10px;border:1px solid rgba(230,189,99,.5);background:linear-gradient(135deg,rgba(230,189,99,.18),rgba(230,189,99,.06));color:#8a6a1f}
+.pp-mini-cta{font-size:13px;padding:8px 14px}
+.pp-cell-cta{font-size:10.5px;padding:3px 8px;white-space:nowrap}
+html.dark .pp-mini-cta,html.dark .pp-cell-cta{color:#f6dc86}
+/* Verdict-banner */
+.pp-verdict{display:flex;align-items:center;gap:12px;padding:13px 14px;border-radius:14px;margin-bottom:12px;border:1px solid var(--bo)}
+.pp-verdict-ic{font-size:26px;line-height:1;flex:0 0 auto}
+.pp-verdict-txt{display:flex;flex-direction:column;gap:3px;min-width:0}
+.pp-verdict-txt b{font-family:var(--font-head);font-size:16px;font-weight:800;color:var(--dk);line-height:1.15}
+.pp-verdict-txt small{font-size:12px;line-height:1.4;color:var(--mu)}
+.pp-verdict.pp-slaag{background:linear-gradient(135deg,rgba(34,197,94,.14),rgba(34,197,94,.04));border-color:rgba(34,197,94,.4)}
+.pp-verdict.pp-rand{background:linear-gradient(135deg,rgba(245,158,11,.15),rgba(245,158,11,.04));border-color:rgba(245,158,11,.42)}
+.pp-verdict.pp-zak{background:linear-gradient(135deg,rgba(239,68,68,.14),rgba(239,68,68,.04));border-color:rgba(239,68,68,.4)}
+.pp-verdict.pp-onbekend{background:linear-gradient(135deg,rgba(230,189,99,.13),rgba(230,189,99,.04));border-color:rgba(230,189,99,.4)}
+/* Metric-tegels */
+.pp-metrics{display:flex;gap:8px;margin-bottom:12px}
+.pp-tile{flex:1;min-width:0;background:var(--bg2,rgba(0,0,0,.03));border:1px solid var(--bo);border-radius:12px;padding:9px 8px;text-align:center;display:flex;flex-direction:column;gap:2px}
+.pp-tile-val{font-family:var(--font-head);font-size:20px;font-weight:800;color:var(--dk);font-variant-numeric:tabular-nums;line-height:1}
+.pp-tile-lbl{font-size:10px;color:var(--mu);line-height:1.2}
+.pp-tile-risk .pp-tile-val{color:#ef4444}
+/* Per-vak tabel */
+.pp-table{display:flex;flex-direction:column;gap:2px}
+.pp-row{display:flex;align-items:center;gap:9px;padding:8px 6px;border-radius:9px;cursor:pointer;transition:background .15s}
+.pp-row:not(.pp-head):hover{background:rgba(var(--or-rgb),.06)}
+.pp-head{cursor:default;font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--mu);font-weight:700;padding-bottom:4px}
+.pp-dot{flex:0 0 auto;width:9px;height:9px;border-radius:50%}
+.pp-vak{flex:1;min-width:0;font-size:13px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pp-col{flex:0 0 auto;width:46px;text-align:center;font-size:13px;font-variant-numeric:tabular-nums;color:var(--dk)}
+.pp-col-eind{width:40px}
+.pp-head .pp-col{color:var(--mu);font-size:10px}
+.pp-eind{font-family:var(--font-head);font-weight:800;font-size:17px}
+.pp-eind-none{color:var(--mu);font-weight:600}
+.pp-se,.pp-ce{font-weight:600}
+.pp-ce{color:color-mix(in srgb,var(--dk) 78%,transparent)}
+/* Actie + voetnoten */
+.pp-actie{display:flex;align-items:center;gap:10px;width:100%;text-align:left;margin-top:12px;padding:11px 13px;border-radius:12px;cursor:pointer;font-family:inherit;background:linear-gradient(135deg,rgba(230,189,99,.18),rgba(230,189,99,.06));border:1px solid rgba(230,189,99,.5);transition:transform .15s,box-shadow .15s}
+.pp-actie:hover{transform:translateY(-1px);box-shadow:0 5px 16px rgba(230,189,99,.2)}
+.pp-actie-txt{flex:1;font-size:13px;font-weight:700;color:var(--dk)}
+.pp-actie-arr{color:#c99a2e;font-weight:800;font-size:16px}
+.pp-cover{font-size:11px;color:var(--mu);line-height:1.4;margin-top:10px}
+.pp-fine{font-size:10.5px;color:var(--mu);opacity:.85;line-height:1.4;margin-top:8px}
 /* Kop */
 .plus-head{background:linear-gradient(135deg,rgba(var(--or-rgb),.14),rgba(var(--or-rgb),.05));border:1px solid rgba(var(--or-rgb),.2);border-radius:16px;padding:16px}
 .plus-head-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
