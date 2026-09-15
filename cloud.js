@@ -178,6 +178,39 @@ async function aiHuiswerkNakijk(opts){
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
+
+// ── Uitstap-tracking: op welk scherm verlaten bezoekers de site? ───────────
+// Eén 'exit'-event bij het sluiten/verlaten, via keepalive-fetch (die overleeft
+// het unloaden, anders dan een gewone insert). Getthrottled zodat pagehide +
+// visibilitychange niet dubbel loggen. Zo zie je in het admin-dashboard waar de
+// conversie lekt, en of het aan de intro ligt (meta.onboardDone).
+function _trackExit(){
+  try{
+    const now=Date.now();
+    if(window._lastExitTs && now-window._lastExitTs<4000) return;
+    window._lastExitTs=now;
+    const screen=window._curScreen||'sc-home';
+    const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:null;
+    const _mob=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)||window.innerWidth<=768;
+    const _pwa=window.matchMedia('(display-mode:standalone)').matches||!!navigator.standalone;
+    const device=_mob?(_pwa?'mobile-pwa':'mobile'):'desktop';
+    const sec=window._screenSince?Math.round((now-window._screenSince)/1000):null;
+    const onboardDone=!!(function(){try{return localStorage.getItem('slagio_onboard_v3');}catch(e){return false;}})();
+    const row={
+      user_id:(typeof currentUser!=='undefined'&&currentUser)?currentUser.id:null,
+      naam:(_safeLocalGet('profiel',{}).naam)||null,
+      event_type:'exit', niveau,
+      meta:{ screen, sec, onboardDone, device, did:(typeof _DID!=='undefined'?_DID:null) }
+    };
+    fetch(SUPABASE_URL+'/rest/v1/events',{method:'POST',keepalive:true,
+      headers:{apikey:SUPABASE_KEY,authorization:'Bearer '+SUPABASE_KEY,'content-type':'application/json',prefer:'return=minimal'},
+      body:JSON.stringify(row)}).catch(()=>{});
+  }catch(e){}
+}
+try{
+  window.addEventListener('pagehide', _trackExit);
+  document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='hidden') _trackExit(); });
+}catch(e){}
 // Supabase-client. Als de (cross-origin) library niet geladen is - offline, CDN plat,
 // of geblokkeerd door een adblocker - mag de app NIET stuklopen: dan draaien we op een
 // veilige offline-stub zodat alles op lokale data blijft werken (vakken, quiz, samenvattingen).

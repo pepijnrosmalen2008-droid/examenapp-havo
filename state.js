@@ -120,6 +120,8 @@ function show(id,_noHash){
   document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));
   const _sc=document.getElementById(id);
   _sc.classList.add('on');
+  // Huidig scherm onthouden voor uitstap-tracking (waar verlaten bezoekers de site).
+  try{ window._curScreen=id; window._screenSince=Date.now(); }catch(e){}
   window.scrollTo(0,0);
   // Focus eerste heading voor screenreaders
   try{const _h=_sc.querySelector('h1,h2,h3,[role="heading"]');if(_h){_h.setAttribute('tabindex','-1');_h.focus({preventScroll:true});}}catch(e){}
