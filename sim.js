@@ -772,7 +772,11 @@ function _exBuildResultList(){
     if(parts){
       EX.rubrics[i] = parts;
       const aiBtn = (typeof aiGradeAvailable==='function' && aiGradeAvailable())
-        ? `<button class="ex-ai-btn" id="exai-btn-${i}" onclick="examenAiNakijk(${i})">★ Laat Slagio je antwoord nakijken</button>
+        ? `<div class="ex-ai-actions">
+             <button class="ex-ai-btn" id="exai-btn-${i}" onclick="examenAiNakijk(${i})">★ Laat Slagio je antwoord nakijken</button>
+             <button class="ex-ai-foto" id="exai-foto-${i}" onclick="_exAiFotoPick(${i})" title="Foto van je handgeschreven uitwerking laten nakijken">📷 Foto</button>
+           </div>
+           <input type="file" accept="image/*" capture="environment" id="exai-file-${i}" style="display:none" onchange="_exAiFotoGrade(${i}, this.files&&this.files[0]); this.value='';">
            <div class="ex-ai" id="exai-${i}"></div>` : '';
       gradeHtml =
         `<div class="ex-rev-deel-hdr">Vink aan wat jouw antwoord goed had:</div>
@@ -882,14 +886,15 @@ function examenDeel(idx, pi, checked){
 // ── AI-nakijken (Slagio Plus, Fase 1) ─────────────────────────────────────
 // Laat de AI de open vraag beoordelen tegen het scoringsvoorschrift, vinkt de
 // behaalde deelpunten automatisch aan en toont feedback per punt + een tip.
-async function examenAiNakijk(idx){
+async function examenAiNakijk(idx, opts){
+  opts = opts || {};
   const q = EX.examen.vragen[idx];
   const parts = EX.rubrics && EX.rubrics[idx];
   if(!q || !parts || typeof aiGradeOpen!=='function') return;
   const btn = document.getElementById('exai-btn-'+idx);
   const panel = document.getElementById('exai-'+idx);
-  if(btn){ btn.disabled=true; btn.classList.add('busy'); btn.textContent='Slagio kijkt na…'; }
-  if(panel) panel.innerHTML = '<div class="ex-ai-note">Slagio beoordeelt je antwoord…</div>';
+  if(btn){ btn.disabled=true; btn.classList.add('busy'); btn.textContent = opts.image?'Slagio leest je foto…':'Slagio kijkt na…'; }
+  if(panel) panel.innerHTML = '<div class="ex-ai-note">'+(opts.image?'Slagio leest je handgeschreven antwoord…':'Slagio beoordeelt je antwoord…')+'</div>';
   const op = (EX.examen.opgaven||[]).find(o=>o.nr===q.opgave);
   const payload = {
     vak: EX.examen.titel,
@@ -899,6 +904,7 @@ async function examenAiNakijk(idx){
     leerlingantwoord: EX.answers[q.nr] || '',
     context: (op && op.context) || q.context || ''
   };
+  if(opts.image) payload.image = opts.image;
   let res=null;
   try{ res = await aiGradeOpen(payload); }catch(e){ res={error:true}; }
   if(btn){ btn.disabled=false; btn.classList.remove('busy'); btn.innerHTML='★ Opnieuw laten nakijken'; }
@@ -918,6 +924,43 @@ async function examenAiNakijk(idx){
   });
   if(panel) panel.innerHTML = _exAiResult(r);
   try{ if(typeof playSound==='function') playSound('correct'); }catch(e){}
+}
+
+// ── Foto-nakijken (#6): handgeschreven uitwerking laten lezen & beoordelen ──
+function _exAiFotoPick(idx){ const f=document.getElementById('exai-file-'+idx); if(f) f.click(); }
+async function _exAiFotoGrade(idx, file){
+  if(!file) return;
+  const panel=document.getElementById('exai-'+idx);
+  if(!/^image\//.test(file.type||'')){ if(panel) panel.innerHTML='<div class="ex-ai-note">Kies een foto (afbeelding).</div>'; return; }
+  if(panel) panel.innerHTML='<div class="ex-ai-note">📷 Foto wordt gelezen…</div>';
+  try{
+    const dataURL=await _exImgToDataURL(file, 1500, 0.82);
+    if(!dataURL){ if(panel) panel.innerHTML='<div class="ex-ai-note">Kon de foto niet verwerken. Probeer een duidelijkere foto.</div>'; return; }
+    examenAiNakijk(idx, {image:dataURL});
+  }catch(e){ if(panel) panel.innerHTML='<div class="ex-ai-note">Kon de foto niet verwerken.</div>'; }
+}
+// Schaalt een foto client-side terug (max ~1500px, JPEG) zodat de upload klein
+// en snel blijft — en de handschrift-leesbaarheid behouden blijft.
+function _exImgToDataURL(file, maxDim, quality){
+  return new Promise((resolve)=>{
+    try{
+      const img=new Image();
+      const url=URL.createObjectURL(file);
+      img.onload=()=>{
+        try{
+          let w=img.naturalWidth||img.width, h=img.naturalHeight||img.height;
+          const scale=Math.min(1, (maxDim||1500)/Math.max(w,h));
+          w=Math.max(1,Math.round(w*scale)); h=Math.max(1,Math.round(h*scale));
+          const cv=document.createElement('canvas'); cv.width=w; cv.height=h;
+          const cx=cv.getContext('2d'); cx.fillStyle='#fff'; cx.fillRect(0,0,w,h); cx.drawImage(img,0,0,w,h);
+          URL.revokeObjectURL(url);
+          resolve(cv.toDataURL('image/jpeg', quality||0.8));
+        }catch(e){ try{URL.revokeObjectURL(url);}catch(_){}; resolve(null); }
+      };
+      img.onerror=()=>{ try{URL.revokeObjectURL(url);}catch(_){}; resolve(null); };
+      img.src=url;
+    }catch(e){ resolve(null); }
+  });
 }
 
 function _exAiResult(r){

@@ -153,16 +153,30 @@ function buildGradePrompt(p: {
     `4. Feedback is kort, concreet en in het Nederlands, gericht op deze leerling ` +
     `("je ..."). Bij een gemist punt: zeg wat ontbrak.\n` +
     `5. Antwoord UITSLUITEND met één geldig JSON-object, zonder tekst eromheen.`;
+  const antwoordBlok = p.image
+    ? `ANTWOORD VAN DE LEERLING: dit staat op de bijgevoegde foto (handgeschreven). Lees de foto zorgvuldig, negeer doorhalingen, en beoordeel wat de leerling uiteindelijk bedoelt. Kun je iets echt niet lezen, ken dat scoringspunt dan niet toe.`
+    : `ANTWOORD VAN DE LEERLING:\n${p.leerlingantwoord || "(geen antwoord gegeven)"}`;
   const user =
     `VRAAG:\n${p.vraag}\n\n` +
     (p.context ? `CONTEXT:\n${p.context}\n\n` : "") +
     `MODELANTWOORD:\n${p.modelantwoord}\n\n` +
     `SCORINGSVOORSCHRIFT:\n${rubric}\n\n` +
-    `ANTWOORD VAN DE LEERLING:\n${p.leerlingantwoord || "(geen antwoord gegeven)"}\n\n` +
+    `${antwoordBlok}\n\n` +
     `Geef JSON in exact deze vorm:\n` +
     `{"points":[{"id":<nummer>,"earned":<true|false>,"feedback":"<kort>"}],` +
     `"summary":"<1 zin>","improvement_tip":"<1 concrete tip>"}`;
   return { system, user };
+}
+
+// Zet een data-URL (data:image/jpeg;base64,...) om naar een Anthropic image-block.
+function parseImage(v: any): { media_type: string; data: string } | null {
+  if (!v || typeof v !== "string") return null;
+  const m = v.match(/^data:(image\/(?:jpeg|jpg|png|webp|gif));base64,([A-Za-z0-9+/=\s]+)$/i);
+  if (!m) return null;
+  const media = m[1].toLowerCase() === "image/jpg" ? "image/jpeg" : m[1].toLowerCase();
+  const data = m[2].replace(/\s+/g, "");
+  if (data.length < 100 || data.length > 7_000_000) return null; // ~5MB base64
+  return { media_type: media, data };
 }
 
 function extractJson(text: string): any | null {
@@ -185,6 +199,13 @@ async function handleGrade(p: any): Promise<Result> {
   const { system, user } = buildGradePrompt(p);
   const maxScore = p.punten.reduce((a: number, d: any) => a + (d.pts || 0), 0);
 
+  // Foto-nakijken (#6): staat er een leesbare foto bij, dan sturen we die als
+  // image-block mee zodat het model het handgeschreven antwoord zelf leest.
+  const img = parseImage(p.image);
+  const content: any = img
+    ? [{ type: "image", source: { type: "base64", media_type: img.media_type, data: img.data } }, { type: "text", text: user }]
+    : user;
+
   let resp: Response;
   try {
     resp = await fetch(ANTHROPIC_URL, {
@@ -198,7 +219,7 @@ async function handleGrade(p: any): Promise<Result> {
         model: MODEL,
         max_tokens: 700,
         system,
-        messages: [{ role: "user", content: user }],
+        messages: [{ role: "user", content }],
       }),
     });
   } catch {
