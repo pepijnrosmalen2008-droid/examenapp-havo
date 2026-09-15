@@ -170,6 +170,14 @@
     .live-time span{font-size:.78rem;font-weight:700}
     .live-time small{font-size:.64rem;color:var(--muted)}
     .live-empty{padding:2rem;text-align:center;color:var(--muted);font-size:.82rem}
+    /* apparaat-tag (did): zelfde apparaat = zelfde kleur/tag, klikbaar om te koppelen */
+    .live-did{font-size:.64rem;font-weight:800;letter-spacing:.02em;padding:.1rem .42rem;border-radius:6px;border:1px solid color-mix(in srgb,var(--c) 55%,transparent);background:color-mix(in srgb,var(--c) 16%,transparent);color:var(--c);cursor:pointer;flex-shrink:0;font-family:inherit;line-height:1.5}
+    .live-did:hover{background:color-mix(in srgb,var(--c) 32%,transparent)}
+    .live-did.on{background:var(--c);color:#0b0e14}
+    .live-didbar{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;padding:.5rem .65rem;margin-bottom:.5rem;border-radius:10px;background:rgba(255,255,255,.045);border:1px solid var(--border);font-size:.77rem;color:var(--muted)}
+    .live-didbar b{color:#e2e8f0;font-weight:700}
+    .live-didclear{margin-left:auto;font-size:.72rem;font-weight:700;padding:.25rem .65rem;border:none;border-radius:7px;background:var(--or);color:#fff;cursor:pointer}
+    .live-didclear:hover{filter:brightness(1.08)}
 
     /* ── Heatmap ── */
     .heatmap{display:flex;flex-wrap:wrap;gap:3px}
@@ -320,6 +328,7 @@ async function loadAll() {
     const evMissing = !!evRes.error;
     window._lb = lb; window._ev = ev; window._evMissing = evMissing; window._ao = ao; window._fb = fb; window._ql = ql; window._ce = ce;
     render(lb, ev, evMissing, ao, fb, ql, ce);
+    try{ liveFilter(); }catch(e){} // sync apparaat-/niveau-/zoekfilter + balk na (her)render
   } catch(e) {
     document.getElementById('content').innerHTML =
       `<div class="loading" style="color:var(--red)">Laad-fout: ${e.message}</div>`;
@@ -378,16 +387,26 @@ function _liveClock(ts){
   if(d.toDateString()===y.toDateString()) return 'gisteren '+hm;
   return d.toLocaleDateString('nl-NL',{day:'numeric',month:'short'})+' '+hm;
 }
+// Vaste, korte apparaat-tag afgeleid van de did (device-id). Zelfde apparaat =
+// zelfde tag én kleur, overal in de feed. Zo zie je of het steeds hetzelfde
+// apparaat is of telkens iemand anders.
+function _didHash(did){ let h=2166136261>>>0; const s=String(did||''); for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619)>>>0; } return h; }
+function _didLabel(did){ if(!did) return null; return (_didHash(did)%0x10000).toString(16).toUpperCase().padStart(4,'0'); }
+function _didColor(did){ return 'hsl('+(_didHash(did)%360)+' 62% 62%)'; }
+function liveSetDid(did){ window._liveDid = (window._liveDid===did)?null:did; liveFilter(); }
+function liveClearDid(){ window._liveDid=null; liveFilter(); }
 function renderLiveRows(items){
   if(!items || !items.length) return '<div class="live-empty">Geen activiteit gevonden.</div>';
   return items.map(e=>{
     const fresh = Date.now()-new Date(e.ts).getTime() < 1800000; // vers = laatste 30 min
     const dev = e.device==='mobile-pwa'?'📲':e.device==='mobile'?'📱':e.device==='desktop'?'🖥️':'';
+    const didL=_didLabel(e.did);
+    const didChip = didL?`<button class="live-did${window._liveDid===e.did?' on':''}" style="--c:${_didColor(e.did)}" onclick="liveSetDid('${e.did}')" title="Toon alle activiteit van dit apparaat">◆ ${didL}</button>`:'';
     return `<div class="live-row">
       <span class="live-dot ${fresh?'fresh':'old'}"></span>
       <div class="live-ic">${_liveIcon(e.type)}</div>
       <div class="live-main">
-        <div class="live-top"><span class="live-name">${e.name}</span>${e.niveau?`<span class="pill ${e.niveau}">${e.niveau.toUpperCase()}</span>`:''}${dev?`<span class="live-dev" title="${e.device||''}">${dev}</span>`:''}</div>
+        <div class="live-top"><span class="live-name">${e.name}</span>${didChip}${e.niveau?`<span class="pill ${e.niveau}">${e.niveau.toUpperCase()}</span>`:''}${dev?`<span class="live-dev" title="${e.device||''}">${dev}</span>`:''}</div>
         <div class="live-act">${_liveDetail(e)}</div>
       </div>
       <div class="live-time"><span>${_liveClock(e.ts)}</span><small>${timeAgo(e.ts)} geleden</small></div>
@@ -399,12 +418,26 @@ function liveFilter(){
   const q = (document.getElementById('live-search')?.value||'').trim().toLowerCase();
   window._liveSearch = q;
   const niv = window._liveNiveau||'all';
+  const did = window._liveDid||null;
   const items = all.filter(e=>
     (niv==='all' || e.niveau===niv) &&
+    (!did || e.did===did) &&
     (!q || (e.name||'').toLowerCase().includes(q) || (e.vak||'').toLowerCase().includes(q))
   );
   const box=document.getElementById('live-feed-list'); if(box) box.innerHTML=renderLiveRows(items);
   const cnt=document.getElementById('live-count'); if(cnt) cnt.textContent=items.length+' acties';
+  const bar=document.getElementById('live-didbar');
+  if(bar){
+    if(did){
+      const naam=(items.find(e=>e.name && e.name!=='anoniem')||{}).name;
+      const devs=[...new Set(items.map(e=>e.device).filter(Boolean))];
+      const nivs=[...new Set(items.map(e=>e.niveau).filter(Boolean))];
+      bar.style.display='';
+      bar.innerHTML=`<span class="live-did on" style="--c:${_didColor(did)}">◆ ${_didLabel(did)}</span>
+        <span>Eén apparaat · <b>${items.length}</b> acties${naam?` · gekoppeld aan <b>${naam}</b>`:' · altijd anoniem'}${nivs.length?` · ${nivs.join('/').toUpperCase()}`:''}${devs.length?` · ${devs.join(', ')}`:''}</span>
+        <button class="live-didclear" onclick="liveClearDid()">✕ toon alles</button>`;
+    } else { bar.style.display='none'; bar.innerHTML=''; }
+  }
 }
 function liveSetNiveau(n){ window._liveNiveau=n; document.querySelectorAll('.live-nivbtn').forEach(b=>b.classList.toggle('on',b.dataset.niv===n)); liveFilter(); }
 
@@ -539,8 +572,8 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   // Recent combined feed - ruime historie (200 acties), volledige velden voor
   // de grote live-activiteit + client-side filteren op niveau/naam.
   const feedItems = [
-    ...lb.slice(0,150).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:'quiz',niveau:e.niveau,device:null,vak:e.vak_naam,score:e.score,meta:null})),
-    ...ev.slice(0,400).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:e.event_type,niveau:e.niveau,device:e.meta?.device,vak:e.vak_naam,meta:e.meta}))
+    ...lb.slice(0,150).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:'quiz',niveau:e.niveau,device:null,vak:e.vak_naam,score:e.score,meta:null,did:null})),
+    ...ev.slice(0,400).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:e.event_type,niveau:e.niveau,device:e.meta?.device,vak:e.vak_naam,meta:e.meta,did:e.meta?.did||null}))
   ].sort((a,b)=>new Date(b.ts)-new Date(a.ts)).slice(0,200);
   window._feedAll = feedItems;
   window._liveNiveau = window._liveNiveau || 'all';
@@ -1250,6 +1283,7 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
           <input id="live-search" class="live-search" type="search" placeholder="Zoek op naam of vak…" value="${(window._liveSearch||'').replace(/"/g,'&quot;')}" oninput="liveFilter()">
         </div>
       </div>
+      <div id="live-didbar" class="live-didbar" style="display:none"></div>
       <div class="live-feed" id="live-feed-list">${renderLiveRows((window._feedAll||feedItems).filter(e=>(window._liveNiveau==='all'||!window._liveNiveau||e.niveau===window._liveNiveau)&&(!(window._liveSearch)|| (e.name||'').toLowerCase().includes(window._liveSearch)||(e.vak||'').toLowerCase().includes(window._liveSearch))))}</div>
     </div>
 
