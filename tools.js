@@ -83,7 +83,7 @@ async function shareRapport(){
   }
   if(file){
     const url=URL.createObjectURL(file);const a=document.createElement('a');a.href=url;a.download='slagio-rapport.png';document.body.appendChild(a);a.click();a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url),200);showToast('📸 Rapportkaart opgeslagen — deel \'m met je klas!');_done();return;
+    setTimeout(()=>URL.revokeObjectURL(url),200);showToast('📸 Rapportkaart opgeslagen, deel \'m met je klas!');_done();return;
   }
   try{await navigator.clipboard.writeText(tekst);showToast('📋 Rapport gekopieerd!');}catch(e){showToast('slagio.nl');}
   _done();
@@ -577,7 +577,7 @@ function renderStudieplan(){
       <div class="sp-progress-bar"><div class="sp-progress-fill" style="width:${donePct}%"></div></div>
       <div class="sp-mastery-grid">${domains.map(dom=>{
         const color=pctColor(dom.pct,dom.hasData);
-        const pctTxt=dom.hasData?Math.round(dom.pct*100)+'%':'–';
+        const pctTxt=dom.hasData?Math.round(dom.pct*100)+'%':'-';
         return`<div class="sp-mastery-card">
           ${ringHtml(dom.pct,color)}
           <div class="sp-mastery-info">

@@ -188,9 +188,9 @@ function openLbProfile(naam){
   const totalQuizzes=allEntries.length;
   const favVakMap={};
   allEntries.forEach(e=>{favVakMap[e.vakNaam]=(favVakMap[e.vakNaam]||0)+1;});
-  const favVak=Object.entries(favVakMap).sort((a,b)=>b[1]-a[1])[0]?.[0]||'–';
+  const favVak=Object.entries(favVakMap).sort((a,b)=>b[1]-a[1])[0]?.[0]||'-';
   const dates=allEntries.map(e=>e.date).filter(Boolean).sort();
-  const actief=dates[0]||'–';
+  const actief=dates[0]||'-';
   const recent=[...allEntries].sort((a,b)=>b.score-a.score).slice(0,3);
   const tierLabel=getTierLabel(bestScore);
   const tierCls=getTierClass(bestScore);

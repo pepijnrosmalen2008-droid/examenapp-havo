@@ -152,7 +152,8 @@ function buildGradePrompt(p: {
     `de rubriekpunten.\n` +
     `4. Feedback is kort, concreet en in het Nederlands, gericht op deze leerling ` +
     `("je ..."). Bij een gemist punt: zeg wat ontbrak.\n` +
-    `5. Antwoord UITSLUITEND met één geldig JSON-object, zonder tekst eromheen.`;
+    `5. Schrijf feedback met gewone leestekens; gebruik nooit een gedachtestreepje (—).\n` +
+    `6. Antwoord UITSLUITEND met één geldig JSON-object, zonder tekst eromheen.`;
   const antwoordBlok = p.image
     ? `ANTWOORD VAN DE LEERLING: dit staat op de bijgevoegde foto (handgeschreven). Lees de foto zorgvuldig, negeer doorhalingen, en beoordeel wat de leerling uiteindelijk bedoelt. Kun je iets echt niet lezen, ken dat scoringspunt dan niet toe.`
     : `ANTWOORD VAN DE LEERLING:\n${p.leerlingantwoord || "(geen antwoord gegeven)"}`;
@@ -267,7 +268,7 @@ async function handleUitleg(p: any): Promise<Result> {
   const prompt =
     `Leg in maximaal 4 zinnen, in eenvoudig Nederlands en op de toon van een ` +
     `behulpzame examentrainer, het volgende uit voor een ${p.niveau || "havo/vwo"}-leerling` +
-    `${p.vak ? ` (${p.vak})` : ""}:\n\n${p.vraag || p.begrip || ""}`;
+    `${p.vak ? ` (${p.vak})` : ""}. Schrijf met gewone leestekens, gebruik geen gedachtestreepjes (—):\n\n${p.vraag || p.begrip || ""}`;
   try {
     const resp = await fetch(ANTHROPIC_URL, {
       method: "POST",
@@ -310,7 +311,8 @@ async function handleChat(p: any): Promise<Result> {
     `3. Hou het kort: rond de 120 woorden, tenzij de vraag echt meer vraagt. Geen omhaal, geen inleiding vooraf.\n` +
     `4. Je bent warm en bemoedigend, af en toe een klein grapje of een emoji - maar de uitleg staat altijd voorop; nooit quasi-leuk zonder inhoud.\n` +
     `5. Blijf bij de examenstof en het vak. Vraagt de leerling iets dat niets met leren te maken heeft, breng het vriendelijk terug naar de stof.\n` +
-    `6. Sluit af en toe af met een mini-check ("Snap je deze stap?") of een concrete tip. Schrijf altijd in het Nederlands.`;
+    `6. Sluit af en toe af met een mini-check ("Snap je deze stap?") of een concrete tip. Schrijf altijd in het Nederlands.\n` +
+    `7. Schrijf met gewone leestekens. Gebruik NOOIT een gedachtestreepje (—); splits in plaats daarvan de zin op of gebruik een komma of dubbele punt.`;
   try {
     const resp = await fetch(ANTHROPIC_URL, {
       method: "POST",
@@ -347,6 +349,7 @@ async function handleGenerate(p: any): Promise<Result> {
   const system =
     `Je bent een ervaren docent${vak ? " " + vak : ""} die oefenvragen maakt voor het Nederlandse ${niveau}-eindexamen. ` +
     `Je maakt heldere meerkeuzevragen precies op examenniveau: niet te makkelijk, met plausibele afleiders die veelgemaakte fouten weerspiegelen. ` +
+    `Schrijf de vragen, opties en uitleg met gewone leestekens; gebruik nooit een gedachtestreepje (—). ` +
     `Je antwoordt UITSLUITEND met geldige JSON, zonder enige tekst eromheen.`;
   const prompt =
     `Maak ${aantal} nieuwe meerkeuzevragen over het onderwerp "${onderwerp}"${vak ? ` voor ${vak}` : ""} (${niveau}).\n` +

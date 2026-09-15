@@ -996,7 +996,7 @@ function _exAiLogin(){
 
 // Voorlopige Plus-intro (het volwaardige Plus-scherm komt in een latere fase).
 function plusIntro(){
-  try{ showToast('Slagio Plus komt eraan — je hele examenjaar slimmer oefenen.'); }catch(e){}
+  try{ showToast('Slagio Plus komt eraan. Je hele examenjaar slimmer oefenen.'); }catch(e){}
 }
 
 function examenConfirmExit(){
@@ -1486,10 +1486,10 @@ function openExamSim(){
   _exSimRender();
   const st=document.getElementById('examsim-start');if(st)st.textContent='▶ Start de klok';
   const wire=(id,url,title)=>{const b=document.getElementById(id);if(b)b.onclick=()=>{try{openPdfViewer(url,title);}catch(e){window.open(url,'_blank');}};};
-  wire('examsim-opg',d.opgaven,vak+' — opgaven '+d.jaar);
-  wire('examsim-cv',d.cv,vak+' — correctievoorschrift '+d.jaar);
+  wire('examsim-opg',d.opgaven,vak+' · opgaven '+d.jaar);
+  wire('examsim-cv',d.cv,vak+' · correctievoorschrift '+d.jaar);
   const bj=document.getElementById('examsim-bijl');
-  if(bj){if(d.bijlage){bj.style.display='';bj.onclick=()=>{try{openPdfViewer(d.bijlage,vak+' — bijlage '+d.jaar);}catch(e){window.open(d.bijlage,'_blank');}};}else bj.style.display='none';}
+  if(bj){if(d.bijlage){bj.style.display='';bj.onclick=()=>{try{openPdfViewer(d.bijlage,vak+' · bijlage '+d.jaar);}catch(e){window.open(d.bijlage,'_blank');}};}else bj.style.display='none';}
   _set('examsim-src','Bron: alleexamens.nl · officieel CvTE-examen '+d.jaar);
   show('sc-examsim');
   try{trackEvent('examensimulatie',{vak:vak,jaar:d.jaar});}catch(e){}

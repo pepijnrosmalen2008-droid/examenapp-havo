@@ -191,19 +191,19 @@ function plusVonkCoach(niveau){
   // 2) Mooie klim → erken het, houd 'm vast.
   if(stijger){
     return { mood:'trots', kop:`Je klimt bij ${stijger.vak} 📈`,
-      msg:`Sinds je begon ging je voorspelde cijfer voor <b>${stijger.vak}</b> +${stijger.delta.toFixed(1).replace('.',',')} omhoog${naam?','+naam:''}. Dit is precies hoe het werkt — even doorpakken en het staat vast.`,
+      msg:`Sinds je begon ging je voorspelde cijfer voor <b>${stijger.vak}</b> +${stijger.delta.toFixed(1).replace('.',',')} omhoog${naam?','+naam:''}. Dit is precies hoe het werkt. Even doorpakken en het staat vast.`,
       actie:act(`Ga door met ${stijger.vak}`,_oef(stijger.vakId)) };
   }
   // 3) Al even niet geoefend, met examen op komst → zachte por met inzet.
   if((ctx.lapsedDays!=null && ctx.lapsedDays>=3) && exD!=null && exD<=21){
     return { mood:'kijk', kop:`Even weer opgepakt?`,
-      msg:`Je oefende ${ctx.lapsedDays} dagen niet en ${exVak} is over ${exD} dagen${naam}. Geen stress — één setje van 10 minuten brengt je zo weer op gang.`,
+      msg:`Je oefende ${ctx.lapsedDays} dagen niet en ${exVak} is over ${exD} dagen${naam}. Geen stress, één setje van 10 minuten brengt je zo weer op gang.`,
       actie:act('Snelle sessie',risico?_oef(risico.vakId):`show('sc-home')`) };
   }
   // 4) Dip in een vak → benoem het rustig, wijs de weg.
   if(daler){
     return { mood:'kijk', kop:`${daler.vak} zakt iets weg`,
-      msg:`Je voorspelde cijfer voor <b>${daler.vak}</b> daalde wat${naam}. Dat gebeurt — vaak zit het in één onderwerp. Laten we dat er even uit halen.`,
+      msg:`Je voorspelde cijfer voor <b>${daler.vak}</b> daalde wat${naam}. Dat gebeurt, vaak zit het in één onderwerp. Laten we dat er even uithalen.`,
       actie:act(`Bekijk ${daler.vak}`,_oef(daler.vakId)) };
   }
   // 5) Staat op slagen → vier het, houd de lijn vast.
@@ -312,7 +312,7 @@ function plusSlaagPrognose(niveau){
   // Reden bij zakken (welke regel valt om) + risicovak (laagste eindcijfer).
   let reden='';
   if(verdict==='zak'){
-    if(!r1) reden=`je CE-gemiddelde is ${ceGem.toFixed(1).replace('.',',')} — dat moet minimaal 5,5 zijn`;
+    if(!r1) reden=`je CE-gemiddelde is ${ceGem.toFixed(1).replace('.',',')} en dat moet minimaal 5,5 zijn`;
     else if(!r2) reden=`een kernvak (Nederlands, Engels of wiskunde) staat te laag`;
     else reden=`je hebt te veel onvoldoendes om te compenseren`;
   }
@@ -584,14 +584,14 @@ function _plusPrognoseHTML(niveau, isPlus){
   }
   const VS={
     slaag:{ic:'🎉',cls:'pp-slaag',kop:'Je staat op slagen'},
-    rand:{ic:'⚖️',cls:'pp-rand',kop:'Je slaagt nu — maar krap'},
+    rand:{ic:'⚖️',cls:'pp-rand',kop:'Je slaagt nu, net aan'},
     zak:{ic:'🔴',cls:'pp-zak',kop:'Nu zou je nog zakken'},
     onbekend:{ic:'📊',cls:'pp-onbekend',kop:'Vul je stand aan'}
   }[pg.verdict];
   let sub='';
-  if(pg.verdict==='slaag') sub=`Gemiddeld eindcijfer <b>${pg.eindGem.toFixed(1).replace('.',',')}</b> · CE-gemiddelde ${pg.ceGem.toFixed(1).replace('.',',')}. Mooi — vasthouden.`;
+  if(pg.verdict==='slaag') sub=`Gemiddeld eindcijfer <b>${pg.eindGem.toFixed(1).replace('.',',')}</b> · CE-gemiddelde ${pg.ceGem.toFixed(1).replace('.',',')}. Mooi zo, vasthouden.`;
   else if(pg.verdict==='rand') sub=`Eén tegenvaller en het kantelt.${pg.risico?` Je risicovak is <b>${pg.risico.vak}</b>.`:''} Til dat op en je zit veiliger.`;
-  else if(pg.verdict==='zak') sub=`Waarom: ${pg.reden}. Dit is te draaien — begin bij je zwakste vak.`;
+  else if(pg.verdict==='zak') sub=`Waarom: ${pg.reden}. Dit is te draaien. Begin bij je zwakste vak.`;
   else sub=`Nog ${Math.max(0,3-pg.compleet.length)} vak(ken) met SE + oefening te gaan voor een echte prognose. Ik reken 'm daarna live uit.`;
 
   const metrics = pg.hasEnough ? `<div class="pp-metrics">
@@ -606,7 +606,7 @@ function _plusPrognoseHTML(niveau, isPlus){
       : `<button class="pp-cell-cta" onclick="event.stopPropagation();goToCijferInvoer()">SE?</button>`;
     const ceCell = r.ce!=null ? `<span class="pp-ce">${r.schatting?'~':''}${r.ce.toFixed(1).replace('.',',')}</span>`
       : `<button class="pp-cell-cta" onclick="event.stopPropagation();openVak('${r.vakId}')">oefen</button>`;
-    const eindCell = r.eind!=null ? `<span class="pp-eind" style="color:${kl}">${r.eind}</span>` : `<span class="pp-eind pp-eind-none">–</span>`;
+    const eindCell = r.eind!=null ? `<span class="pp-eind" style="color:${kl}">${r.eind}</span>` : `<span class="pp-eind pp-eind-none">-</span>`;
     return `<div class="pp-row" onclick="_plusPickVak('${r.vakId}')">
       <span class="pp-dot" style="background:${kl}"></span>
       <span class="pp-vak">${r.vak}</span>
@@ -634,7 +634,7 @@ function _plusPrognoseHTML(niveau, isPlus){
     </div>
     ${actie}
     ${coverage}
-    <div class="pp-fine">*CE = voorspeld uit je oefening (~ = schatting). SE vul je zelf in. Eindcijfer = afgerond gemiddelde. Indicatie zonder N-term — richting, geen garantie.</div>
+    <div class="pp-fine">*CE = voorspeld uit je oefening (~ = schatting). SE vul je zelf in. Eindcijfer = afgerond gemiddelde. Indicatie zonder N-term: richting, geen garantie.</div>
   </div>`;
 }
 
@@ -745,15 +745,18 @@ function renderPlusDashboard(){
       <div class="plus-ontw-txt">${voorsp.reeks.map(c=>c.toFixed(1)).join(' → ')} <b class="${voorsp.trend>=0?'up':'down'}">${voorsp.trend>=0?'📈':'📉'} ${(voorsp.reeks[voorsp.reeks.length-1]-voorsp.reeks[0]>=0?'+':'')}${(voorsp.reeks[voorsp.reeks.length-1]-voorsp.reeks[0]).toFixed(1)}</b></div></div>`;
   }
 
-  // ── Examenoverzicht (alle vakken) ──
+  // ── Examenklaar per vak (readiness-vergelijking; het cijferoverzicht staat al
+  //    bovenaan in de slaagprognose, dus hier alleen hoe klaar je per vak bent) ──
   let overHtml='';
-  if(vakken.length>1){
-    const rows=vakken.map(v=>{ const vc=plusVoorspeldCijfer(v.vakId,niveau); const rr=plusReadiness(v.vakId,niveau);
-      return `<div class="po-row" onclick="_plusPickVak('${v.vakId}')"><span class="po-vak">${v.vak}</span>
-        <span class="po-cij">${vc?vc.cijfer.toFixed(1):'–'}</span>
-        <span class="po-ready">${rr?_plusDot(rr.score/100)+' '+rr.score+'%':'–'}</span></div>`; }).join('');
-    overHtml=`<div class="plus-card"><div class="plus-card-h">Al je vakken</div>
-      <div class="po-head"><span>vak</span><span>cijfer</span><span>klaar</span></div>
+  const overVakken = vakken.filter(v=>plusReadiness(v.vakId,niveau));
+  if(overVakken.length>1){
+    const rows=overVakken
+      .map(v=>({v, rr:plusReadiness(v.vakId,niveau)}))
+      .sort((a,b)=>a.rr.score-b.rr.score)
+      .map(({v,rr})=>`<div class="po-row" onclick="_plusPickVak('${v.vakId}')"><span class="po-vak">${v.vak}</span>
+        <span class="po-readybar"><i style="width:${rr.score}%;background:${rr.score>=70?'#22c55e':rr.score>=45?'#f59e0b':'#ef4444'}"></i></span>
+        <span class="po-ready">${rr.score}%</span></div>`).join('');
+    overHtml=`<div class="plus-card"><div class="plus-card-h">Examenklaar per vak</div>
       <div class="plus-over">${rows}</div></div>`;
   }
 
@@ -927,12 +930,12 @@ function plusKistBeschikbaar(){ try{ return !localStorage.getItem(_plusKistWeek(
 function _plusKistHTML(){
   const isPlus=(typeof plusActive==='function') && plusActive();
   if(!isPlus){
-    return `<button class="plus-kist locked" onclick="plusIntro()"><span class="pk-ic">🎁</span><span class="pk-t">Wekelijkse Plus-kist<small>Munten + exclusieve outfits &amp; looks - met Plus</small></span><span class="pm-arr">🔒</span></button>`;
+    return `<button class="plus-kist locked" onclick="plusIntro()"><span class="pk-ic">🎁</span><span class="pk-t">Wekelijkse Plus-kist<small>Munten plus exclusieve outfits &amp; looks, met Plus</small></span><span class="pm-arr">🔒</span></button>`;
   }
   const beschikbaar=plusKistBeschikbaar();
   return `<button class="plus-kist${beschikbaar?' ready':' done'}" onclick="plusClaimKist()">
     <span class="pk-ic">🎁</span>
-    <span class="pk-t">Wekelijkse Plus-kist<small>${beschikbaar?'Klaar om te openen - munten, outfits &amp; looks':'Geopend - volgende week weer een nieuwe'}</small></span>
+    <span class="pk-t">Wekelijkse Plus-kist<small>${beschikbaar?'Klaar om te openen: munten, outfits &amp; looks':'Geopend. Volgende week weer een nieuwe'}</small></span>
     <span class="pk-cta">${beschikbaar?'Openen':'✓'}</span></button>`;
 }
 function _plusUpdateKist(){ const el=document.querySelector('#sc-plus-body .plus-kist'); if(el) el.outerHTML=_plusKistHTML(); }
@@ -1122,7 +1125,7 @@ function renderPlusIntro(){
   const perso=_plusIntroPersoonlijk(niveau);
   const active = (typeof plusActive==='function') && plusActive();
   const hl=_PLUS_HIGHLIGHTS.map(f=>`<div class="pi-hltile"><span class="pi-hltile-ic">${f[0]}</span><b>${f[1]}</b><span class="pi-hltile-d">${f[2]}</span></div>`).join('');
-  const cell=v=> v===true?'<span class="pi-y">✓</span>' : (v===false?'<span class="pi-n">–</span>' : `<span class="pi-v">${v}</span>`);
+  const cell=v=> v===true?'<span class="pi-y">✓</span>' : (v===false?'<span class="pi-n">-</span>' : `<span class="pi-v">${v}</span>`);
   const rows=_PLUS_VERGELIJK.map(r=>`<tr><td>${r[0]}</td><td>${cell(r[1])}</td><td>${cell(r[2])}</td></tr>`).join('');
   const plans=_PLUS_PLANNEN.map(p=>`<div class="pi-plan${p.best?' best':''}">
     ${p.best?'<div class="pi-best">Beste deal</div>':''}
@@ -1139,7 +1142,7 @@ function renderPlusIntro(){
       <p class="pi-lead">Slagio Plus laat zien waar je punten laat liggen, wat je vandaag moet oefenen en hoe je ervoor staat richting je examen.</p>
       <p class="pi-killer">Van "ik moet meer leren" naar "ik weet precies wat ik moet doen."</p>
     </div>
-    ${(typeof mascotBubble==='function')?mascotBubble('Ik ben <b>Vonk</b>! Gratis Slagio helpt je oefenen - dat blijft altijd zo. Met <b>Plus</b> laat ik je precies zien waar je staat, wat je vandaag moet doen, en kijk ik je open vragen na. En elke week krijg je een <b>kist</b> met munten en exclusieve outfits &amp; looks. 🎁','blij',{}):''}
+    ${(typeof mascotBubble==='function')?mascotBubble('Ik ben <b>Vonk</b>! Gratis Slagio helpt je oefenen, dat blijft altijd zo. Met <b>Plus</b> laat ik je precies zien waar je staat, wat je vandaag moet doen, en kijk ik je open vragen na. En elke week krijg je een <b>kist</b> met munten en exclusieve outfits &amp; looks. 🎁','blij',{}):''}
     ${perso}
     ${active?`<div class="pi-active">✓ Je hebt Slagio Plus. <button class="pi-link" onclick="openPlusDashboard()">Naar je examentrainer</button></div>`:''}
     <div class="pi-hl-eyebrow">Dit krijg je met Plus</div>

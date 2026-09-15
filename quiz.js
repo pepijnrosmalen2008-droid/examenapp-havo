@@ -1608,7 +1608,7 @@ function toonRes(){
   if(_hwR){
     try{if(typeof addCoins==='function')addCoins(30);}catch(e){}
     _RC.chest={kicker:'📌 Huiswerk voltooid! Van je docent.'};
-    try{if(typeof showToast==='function')showToast('📌 Huiswerk gedaan — +150 XP, +30 munten en een kist!','#22c55e',3400);}catch(e){}
+    try{if(typeof showToast==='function')showToast('📌 Huiswerk gedaan! +150 XP, +30 munten en een kist!','#22c55e',3400);}catch(e){}
     try{if(typeof renderKlasHome==='function')renderKlasHome();}catch(e){}
   }
   // "Volgende domein"-kaart verwijderd op verzoek - minder tegels op het resultaatscherm.
@@ -2060,7 +2060,7 @@ function _renderResShare(pct){
   const perfect=pct>=1, strong=pct>=0.8, peak=perfect||strong;
   const canChallenge=ST.mode==='snel' && ST.domein && ST.antwrd && ST.antwrd.length;
   const kick=perfect?'🌟 Perfecte score! Laat je klas zien wat je kan.'
-            :strong?'🔥 Sterke score — daag een klasgenoot uit!'
+            :strong?'🔥 Sterke score! Daag een klasgenoot uit!'
             :'💛 Trots op je progressie? Deel het met je klas.';
   let html=`<div class="res-share-kick">${kick}</div><div class="res-share-row">`
     +`<button class="res-share-btn primary" onclick="deelScore()">📤 Deel je score</button>`;

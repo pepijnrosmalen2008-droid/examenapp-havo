@@ -219,7 +219,7 @@ function _klasRenderWeek(week, leden){
   const pips = TIERS.map((t,i)=>`<span class="klas-week-pip${i<=reachedIdx?' on':''}" title="${t.naam} · ${fmt(t.goal)} XP">${t.ico}</span>`).join('');
   const streakLine = streak>0
     ? `<div class="klas-week-streak"><span class="klas-week-flame">🔥</span> De klas oefende <b>${streak} dag${streak===1?'':'en'}</b> op rij ${vakNaam?_esc(vakNaam):''}</div>`
-    : `<div class="klas-week-streak klas-week-off">Nog geen klas-streak — laat vandaag iemand ${vakNaam?_esc(vakNaam):'dit vak'} oefenen om 'm te starten</div>`;
+    : `<div class="klas-week-streak klas-week-off">Nog geen klas-streak. Laat vandaag iemand ${vakNaam?_esc(vakNaam):'dit vak'} oefenen om 'm te starten</div>`;
   box.innerHTML = `
   <div class="klas-week-card">
     <div class="klas-week-top">
@@ -355,7 +355,7 @@ function hwStart(vakId, domId){
       return;
     }
     try{ if(typeof vonkLoadingHide==='function') vonkLoadingHide(); }catch(e){}
-    const _fail=(why)=>{ try{ if(typeof showToast==='function') showToast('Dit onderwerp is niet meer beschikbaar — kies een vak om te oefenen.','#64748b',3200); }catch(e){} try{ if(typeof openVak==='function') openVak(vakId); }catch(e){} };
+    const _fail=(why)=>{ try{ if(typeof showToast==='function') showToast('Dit onderwerp is niet meer beschikbaar. Kies een vak om te oefenen.','#64748b',3200); }catch(e){} try{ if(typeof openVak==='function') openVak(vakId); }catch(e){} };
     const vak=(typeof getVK==='function')?getVK().find(v=>v.id===vakId):null;
     if(!vak){ _fail('vak '+vakId+' niet gevonden'); return; }
     ST.vak=vak;
@@ -407,7 +407,7 @@ async function renderKlasHuiswerk(){
       fresh.forEach(h=>seen.push(h.key));
       try{localStorage.setItem('slagio_hw_seen',JSON.stringify(seen.slice(-60)));}catch(e){}
       const pers=fresh.some(h=>h.persoonlijk);
-      try{ if(typeof showToast==='function') showToast(pers?'🎯 Persoonlijk huiswerk van je docent — speciaal voor jou!':'📌 Nieuw huiswerk van je docent!','#f59e0b',3600); }catch(e){}
+      try{ if(typeof showToast==='function') showToast(pers?'🎯 Persoonlijk huiswerk van je docent, speciaal voor jou!':'📌 Nieuw huiswerk van je docent!','#f59e0b',3600); }catch(e){}
       try{ if(typeof haptic==='function') haptic([20,45,20,45,20]); }catch(e){}
     }
     const open=_klasHw.filter(h=>!h.isDone);
@@ -415,7 +415,7 @@ async function renderKlasHuiswerk(){
     const show=open.find(h=>h.persoonlijk)||open[0]||_klasHw[0];
     let cardHtml;
     if(show.isDone){
-      cardHtml=`<div class="klas-home-card klas-home-hw hw-done"><div class="klas-home-ico">✅</div><div class="klas-home-txt"><div class="klas-home-t">Huiswerk gedaan — top!</div><div class="klas-home-s">${_esc(show.domein||show.vak||'')} afgerond en beloond</div></div></div>`;
+      cardHtml=`<div class="klas-home-card klas-home-hw hw-done"><div class="klas-home-ico">✅</div><div class="klas-home-txt"><div class="klas-home-t">Huiswerk gedaan, top!</div><div class="klas-home-s">${_esc(show.domein||show.vak||'')} afgerond en beloond</div></div></div>`;
     }else{
       const titel=show.persoonlijk?'Persoonlijk huiswerk':'Huiswerk van je docent';
       const ico=show.persoonlijk?'🎯':'📌';
@@ -527,7 +527,7 @@ function openZetQuiz(){
   ov.innerHTML=`<div class="zq-card">
     <button class="zq-x" onclick="closeZetQuiz()" aria-label="Sluiten">✕</button>
     <div class="zq-title">📌 Zet een oefenquiz klaar</div>
-    <div class="zq-sub">${locked?'Voor je klas ('+_esc(locked.naam)+'). ':'Kies een vak en onderwerp. '}De leerling ziet het meteen op de startpagina en kan de quiz direct maken — met een beloning als hij 'm afrondt.</div>
+    <div class="zq-sub">${locked?'Voor je klas ('+_esc(locked.naam)+'). ':'Kies een vak en onderwerp. '}De leerling ziet het meteen op de startpagina en kan de quiz direct maken, met een beloning als hij 'm afrondt.</div>
     ${locked?'<label class="zq-lbl">Vak van je klas</label>':''}${vakField}
     <label class="zq-lbl">Onderwerp</label>
     <select class="zq-sel" id="zq-dom"></select>

@@ -453,7 +453,7 @@ async function vonkCoachAI() {
   const btn = document.getElementById('vc-ai-btn'); const out = document.getElementById('vc-ai-out');
   if (!btn || !out) return;
   if (typeof aiQuotaLeft === 'function' && aiQuotaLeft() <= 0) {
-    out.hidden = false; out.innerHTML = 'Je gratis AI-uitleg van vandaag is op — morgen weer 3! ✨'; btn.disabled = true; return;
+    out.hidden = false; out.innerHTML = 'Je gratis AI-uitleg van vandaag is op. Morgen weer 3! ✨'; btn.disabled = true; return;
   }
   btn.disabled = true; out.hidden = false; out.innerHTML = '<span class="vc-ai-load">🦊 Vonk denkt na…</span>';
   const juist = ctx.o ? (ctx.o[ctx.c] || '') : '';
@@ -469,7 +469,7 @@ async function vonkCoachAI() {
     const l = btn.querySelector('.vc-ai-left'); if (l) l.textContent = 'nog ' + (typeof aiQuotaLeft === 'function' ? aiQuotaLeft() : 0);
     if (typeof aiQuotaLeft === 'function' && aiQuotaLeft() <= 0) btn.disabled = true; else btn.disabled = false;
   } else if (res && res.limit) {
-    out.innerHTML = 'Je gratis AI-uitleg van vandaag is op — morgen weer 3! ✨'; btn.disabled = true;
+    out.innerHTML = 'Je gratis AI-uitleg van vandaag is op. Morgen weer 3! ✨'; btn.disabled = true;
   } else {
     out.innerHTML = 'Vonk kon het nu even niet uitleggen. De uitleg hierboven brengt je ook op weg. 💪'; btn.disabled = false;
   }

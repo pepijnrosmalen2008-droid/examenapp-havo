@@ -334,7 +334,7 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
       </div>
     </div>
     <div id="demo-note" class="glass hidden" style="padding:12px 16px;font-size:13px;margin-bottom:16px">
-      <b>Demoklas met bot-leerlingen.</b> Een volledig werkend dashboard om alles uit te proberen — klik rond, sorteer, zet oefeningen klaar. Klik <b>Vernieuwen</b> voor een nieuwe lichting leerlingen. Bij je eigen klas komt hier je échte data.
+      <b>Demoklas met bot-leerlingen.</b> Een volledig werkend dashboard om alles uit te proberen. Klik rond, sorteer, zet oefeningen klaar. Klik <b>Vernieuwen</b> voor een nieuwe lichting leerlingen. Bij je eigen klas komt hier je échte data.
     </div>
 
     <!-- 1 · WAAR STAAT DE KLAS -->
@@ -360,7 +360,7 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
     <div class="dash-steplbl"><span class="dash-stepn">2</span> Waar gaat het mis?</div>
     <div class="card glass card-focus">
       <div class="card-h"><h2>Waar je klas de fout ingaat</h2><span class="card-tag">per leerdoel</span></div>
-      <div class="sub">Per leerdoel de beheersing én de fout die de klas het vaakst maakt — zwakste bovenaan.</div>
+      <div class="sub">Per leerdoel de beheersing én de fout die de klas het vaakst maakt. Zwakste bovenaan.</div>
       <div class="dom" id="ld-radar"></div>
     </div>
 
@@ -370,14 +370,14 @@ tbody tr{transition:background .12s}tbody tr:hover{background:var(--soft)}
       <div class="col">
         <div class="card glass">
           <h2>Zet dit als eerste klaar</h2>
-          <div class="sub">De domeinen waar de klas het meest vastloopt — met één tik klaarzetten.</div>
+          <div class="sub">De domeinen waar de klas het meest vastloopt, met één tik klaarzetten.</div>
           <div class="dom" id="dom"></div>
         </div>
       </div>
       <div class="col">
         <div class="card glass">
           <h2>Wie heeft nu hulp nodig?</h2>
-          <div class="sub">Laag, weinig geoefend of dalende trend — automatisch bovenaan.</div>
+          <div class="sub">Laag, weinig geoefend of dalende trend, automatisch bovenaan.</div>
           <div class="risk" id="risk"></div>
         </div>
       </div>
@@ -711,7 +711,7 @@ function openStudent(naam){
   const hwSection = homs.length
     ? `<div class="sd-h">📌 Persoonlijk huiswerk voor ${esc(naam)}</div>`
       +`<div id="sd-hw-current" class="sd-hwc"></div>`
-      +`<p class="sd-hw-lead">Alleen ${esc(naam)} ziet dit als persoonlijk huiswerk op de startpagina — en verdient er extra XP + een kist mee. Zwakste onderwerpen bovenaan.</p>`
+      +`<p class="sd-hw-lead">Alleen ${esc(naam)} ziet dit als persoonlijk huiswerk op de startpagina en verdient er extra XP + een kist mee. Zwakste onderwerpen bovenaan.</p>`
       +`<div class="sd-hw">`+homs.map(dm=>`<div class="sd-hw-row"><div class="sd-hw-nm">${esc(dm.domein)} <small style="color:${pctCol(dm.gem)}">${Math.round(dm.gem*100)}%</small></div><button class="btn btn-p btn-sm" onclick="assignStu(this,'${esc(naam)}','${esc(dm.vak||vaknaam)}','${esc(dm.domein)}')">Zet klaar →</button></div>`).join('')+`</div>`
     : '';
   let ov=document.getElementById('student-modal');
