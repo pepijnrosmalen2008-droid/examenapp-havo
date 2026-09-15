@@ -145,7 +145,13 @@ function plusDagenTotExamen(vakId, niveau){
 
 // ── Doelcijfer (per vak, instelbaar) ──────────────────────────────────────
 function plusDoel(vakId){ try{ const v=parseFloat(localStorage.getItem('slagio_plus_doel_'+vakId)); return isNaN(v)?6.5:v; }catch(e){ return 6.5; } }
-function plusSetDoel(vakId, v){ try{ localStorage.setItem('slagio_plus_doel_'+vakId, String(Math.max(1,Math.min(10,v)))); }catch(e){} if(typeof renderPlusDashboard==='function') renderPlusDashboard(); }
+function plusSetDoel(vakId, v){
+  try{ localStorage.setItem('slagio_plus_doel_'+vakId, String(Math.max(1,Math.min(10,v)))); }catch(e){}
+  // Ververs alleen de kop-kaart, niet het hele dashboard (geen "herladen").
+  const old=document.querySelector('#sc-plus-body .plus-head');
+  if(old){ const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo'; old.outerHTML=_plusHeadHTML(vakId,niveau); }
+  else if(typeof renderPlusDashboard==='function') renderPlusDashboard();
+}
 
 // ── Adaptief studieplan ───────────────────────────────────────────────────
 // Rule-based prioriteit: zwakste domein eerst, dan open-vraagtraining, dan
@@ -292,6 +298,47 @@ function openExamentrainer(){
 }
 function _plusPickVak(vakId){ _plusVak=vakId; renderPlusDashboard(); }
 
+// Losse bouwstenen zodat de tweak-knoppen (doel +/-, tijd) alleen hun eigen
+// kaart verversen i.p.v. het hele dashboard te herbouwen (voorkomt "herladen").
+function _plusHeadHTML(vakId, niveau, isPlus){
+  if(isPlus===undefined) isPlus=(typeof plusActive==='function') && plusActive();
+  const vakken=plusVakkenMetData(niveau);
+  const vakNaam=(vakken.find(v=>v.vakId===vakId)||{}).vak||vakId;
+  const voorsp=plusVoorspeldCijfer(vakId,niveau);
+  const dagen=plusDagenTotExamen(vakId,niveau);
+  const doel=plusDoel(vakId);
+  let head=`<div class="plus-head">
+    <div class="plus-head-top"><h2>${vakNaam}</h2>${dagen?`<span class="plus-days">${dagen.dagen} dagen tot examen</span>`:''}</div>`;
+  if(isPlus && voorsp){
+    const tekort=Math.max(0, Math.round((doel-voorsp.cijfer)*10)/10);
+    head+=`<div class="plus-forecast">
+      <div class="pf-main"><span class="pf-num">${voorsp.cijfer.toFixed(1)}</span><span class="pf-lbl">verwacht cijfer</span></div>
+      <div class="pf-side">
+        <div class="pf-range">waarschijnlijk ${voorsp.laag.toFixed(1)} tot ${voorsp.hoog.toFixed(1)}</div>
+        <div class="pf-goal">🎯 doel ${doel.toFixed(1)} <button class="pf-goalbtn" onclick="plusSetDoel('${vakId}',${(doel-0.5).toFixed(1)})">−</button><button class="pf-goalbtn" onclick="plusSetDoel('${vakId}',${(doel+0.5).toFixed(1)})">+</button></div>
+        ${tekort>0?`<div class="pf-need">nog +${tekort.toFixed(1)} te gaan</div>`:`<div class="pf-need done">doel gehaald 🎉</div>`}
+      </div></div>`;
+  } else if(voorsp){
+    head+=`<div class="plus-lock"><div class="pl-blur">Verwacht cijfer &amp; doel</div>${_plusLockBtn()}</div>`;
+  }
+  head+=`</div>`;
+  return head;
+}
+function _plusVandaagHTML(niveau, isPlus){
+  if(isPlus===undefined) isPlus=(typeof plusActive==='function') && plusActive();
+  if(isPlus){
+    const vd=plusVandaag(niveau);
+    if(!vd) return '';
+    return `<div class="plus-vandaag">
+      <div class="pv-top"><span class="pv-badge">🎯 Vandaag voor jou</span><span class="pv-vak">${vd.vak} · ${vd.reden}</span></div>
+      <div class="plus-plan">${vd.taken.map(t=>`<div class="pp-item"><span class="pp-ic">${t.ic}</span><span class="pp-t">${t.t}<small>${t.tag}</small></span></div>`).join('')}</div>
+      <div class="pv-foot">±${vd.minuten} min · +${vd.xp} XP <span class="plus-time">${[10,20,30].map(m=>`<button class="pt${m===plusTijd()?' on':''}" onclick="plusSetTijd(${m})">${m}m</button>`).join('')}</span></div>
+      <button class="plus-cta" onclick="_plusStart('${vd.vakId}')">Start training</button></div>`;
+  }
+  return `<div class="plus-vandaag locked"><div class="pv-top"><span class="pv-badge">🎯 Vandaag voor jou</span></div>
+    <div class="plus-lock"><div class="pl-blur">Elke dag één helder plan: precies wat je nu moet oefenen</div>${_plusLockBtn()}</div></div>`;
+}
+
 // Examenmodus: afleidingsvrije volledige simulatie op tijd. Zet het vak, markeert
 // de focus-modus (onderdrukt gamification bij afloop) en start het volledige
 // proefexamen. Tijdregistratie en het rapport lopen via de gewone runner.
@@ -331,22 +378,8 @@ function renderPlusDashboard(){
   const dagen=plusDagenTotExamen(vakId,niveau);
   const doel=plusDoel(vakId);
 
-  // ── Kop: doel + voorspeld + dagen ──
-  let head=`<div class="plus-head">
-    <div class="plus-head-top"><h2>${vakNaam}</h2>${dagen?`<span class="plus-days">${dagen.dagen} dagen tot examen</span>`:''}</div>`;
-  if(isPlus && voorsp){
-    const tekort=Math.max(0, Math.round((doel-voorsp.cijfer)*10)/10);
-    head+=`<div class="plus-forecast">
-      <div class="pf-main"><span class="pf-num">${voorsp.cijfer.toFixed(1)}</span><span class="pf-lbl">verwacht cijfer</span></div>
-      <div class="pf-side">
-        <div class="pf-range">waarschijnlijk ${voorsp.laag.toFixed(1)} tot ${voorsp.hoog.toFixed(1)}</div>
-        <div class="pf-goal">🎯 doel ${doel.toFixed(1)} <button class="pf-goalbtn" onclick="plusSetDoel('${vakId}',${(doel-0.5).toFixed(1)})">−</button><button class="pf-goalbtn" onclick="plusSetDoel('${vakId}',${(doel+0.5).toFixed(1)})">+</button></div>
-        ${tekort>0?`<div class="pf-need">nog +${tekort.toFixed(1)} te gaan</div>`:`<div class="pf-need done">doel gehaald 🎉</div>`}
-      </div></div>`;
-  } else if(voorsp){
-    head+=`<div class="plus-lock"><div class="pl-blur">Verwacht cijfer &amp; doel</div>${_plusLockBtn()}</div>`;
-  }
-  head+=`</div>`;
+  // ── Kop: doel + voorspeld + dagen (losse bouwsteen) ──
+  const head=_plusHeadHTML(vakId,niveau,isPlus);
 
   // ── Laatste examen (rapport) ──
   const lastRec=_plusVakResults(vakId,niveau).slice(-1)[0];
@@ -400,21 +433,8 @@ function renderPlusDashboard(){
       <div class="plus-over">${rows}</div></div>`;
   }
 
-  // ── "Vandaag voor jou" (cross-vak, primaire actie) ──
-  let vandaagHtml='';
-  if(isPlus){
-    const vd=plusVandaag(niveau);
-    if(vd){
-      vandaagHtml=`<div class="plus-vandaag">
-        <div class="pv-top"><span class="pv-badge">🎯 Vandaag voor jou</span><span class="pv-vak">${vd.vak} · ${vd.reden}</span></div>
-        <div class="plus-plan">${vd.taken.map(t=>`<div class="pp-item"><span class="pp-ic">${t.ic}</span><span class="pp-t">${t.t}<small>${t.tag}</small></span></div>`).join('')}</div>
-        <div class="pv-foot">±${vd.minuten} min · +${vd.xp} XP <span class="plus-time">${[10,20,30].map(m=>`<button class="pt${m===plusTijd()?' on':''}" onclick="plusSetTijd(${m})">${m}m</button>`).join('')}</span></div>
-        <button class="plus-cta" onclick="_plusStart('${vd.vakId}')">Start training</button></div>`;
-    }
-  } else {
-    vandaagHtml=`<div class="plus-vandaag locked"><div class="pv-top"><span class="pv-badge">🎯 Vandaag voor jou</span></div>
-      <div class="plus-lock"><div class="pl-blur">Elke dag één helder plan: precies wat je nu moet oefenen</div>${_plusLockBtn()}</div></div>`;
-  }
+  // ── "Vandaag voor jou" (cross-vak, primaire actie; losse bouwsteen) ──
+  const vandaagHtml=_plusVandaagHTML(niveau,isPlus);
 
   // ── Examenkalender ──
   let kalHtml='';
@@ -521,7 +541,13 @@ function _plusAnimate(screenId){
   if(!reduced){ const done=root.querySelector('.pf-need.done'); if(done) setTimeout(()=>_plusSparkle(done),650); }
 }
 function plusTijd(){ try{ const v=parseInt(localStorage.getItem('slagio_plus_tijd')||'20',10); return isNaN(v)?20:v; }catch(e){ return 20; } }
-function plusSetTijd(m){ try{ localStorage.setItem('slagio_plus_tijd', String(m)); }catch(e){} renderPlusDashboard(); }
+function plusSetTijd(m){
+  try{ localStorage.setItem('slagio_plus_tijd', String(m)); }catch(e){}
+  // Ververs alleen het "Vandaag voor jou"-blok, niet het hele dashboard.
+  const old=document.querySelector('#sc-plus-body .plus-vandaag');
+  if(old){ const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo'; old.outerHTML=_plusVandaagHTML(niveau); }
+  else if(typeof renderPlusDashboard==='function') renderPlusDashboard();
+}
 function _plusStart(vakId){
   try{ const vk=(typeof getVK==='function'?getVK():[]).find(v=>v.id===vakId); if(vk && typeof openVak==='function'){ openVak(vk); return; } }catch(e){}
   try{ show('sc-home'); }catch(e){}
