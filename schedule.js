@@ -202,6 +202,7 @@ function renderSchedule(){
   const hdr=document.getElementById('sch-header');
   if(hdr)hdr.textContent='Examenrooster '+APP_LEVEL.toUpperCase()+' '+_schYear;
   const sub=document.getElementById('sch-subhdr');if(sub)sub.textContent=P.sub;
+  const schHook=document.getElementById('sch-plus-hook');if(schHook)schHook.innerHTML=(typeof plusHookHTML==='function')?plusHookHTML('Plus telt af naar elk examen én zegt je precies wat je vóór die datum nog moet oefenen'):'';
   const k1=document.getElementById('sch-kop1-sub');if(k1)k1.textContent='· '+P.tv1;
   const k2=document.getElementById('sch-kop2-sub');if(k2)k2.textContent='· '+P.tv2;
   const k3=document.getElementById('sch-kop3-sub');if(k3)k3.textContent='· '+P.tv3;

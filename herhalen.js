@@ -40,14 +40,15 @@ function renderHerhalen() {
     vonkBox.innerHTML = '<div class="her-vonk">' + ((typeof mascotSVG === 'function') ? mascotSVG(mood, 88) : '') + '</div>' +
       '<div class="her-vonk-say"><div class="her-vonk-name">' + (typeof MASCOT_NAME !== 'undefined' ? MASCOT_NAME : 'Vonk') + '</div><div>' + say + '</div></div>';
   }
-  if (!due.length) { el.innerHTML = '<div class="her-empty">🟢 Alles vers! Kom terug zodra er iets dreigt weg te zakken.</div>'; return; }
+  const herHook = (typeof plusHookHTML === 'function') ? plusHookHTML('Plus voegt je foutenboek én al je quizzen samen en herhaalt automatisch precies wat jij fout doet') : '';
+  if (!due.length) { el.innerHTML = '<div class="her-empty">🟢 Alles vers! Kom terug zodra er iets dreigt weg te zakken.</div>' + herHook; return; }
   el.innerHTML = '<button class="her-all" onclick="herhaalOefen()">🔁 Fris het zwakste onderdeel op</button>' +
     due.map(function (d) {
       const col = d.pct < 0.5 ? '#ef4444' : d.pct < 0.7 ? '#f97316' : '#22c55e';
       return '<div class="her-item"><div class="her-item-body"><div class="her-item-dom">' + d.domNaam + '</div>' +
         '<div class="her-item-sub">' + d.vakNaam + ' · ' + d.days + ' dagen geleden · <span style="color:' + col + '">' + Math.round(d.pct * 100) + '%</span></div></div>' +
         '<button class="her-oefen" onclick="goToDomein(\'' + d.vakId + '\',\'' + d.domId + '\',\'snel\')">Oefen →</button></div>';
-    }).join('');
+    }).join('') + herHook;
 }
 function herhaalOefen() { const due = herhaalDueList(); if (due.length && typeof goToDomein === 'function') goToDomein(due[0].vakId, due[0].domId, 'snel'); }
 function openHerhalen() { show('sc-herhalen'); renderHerhalen(); try { trackEvent('herhalen_open', { due: herhaalDueCount() }); } catch (e) {} }

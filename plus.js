@@ -326,6 +326,19 @@ function openExamentrainer(){
   if(isPlus) openPlusDashboard();
   else openPlusIntro();
 }
+
+// ── Verleidelijke, duidelijke Plus-haakjes onder de gratis tools ───────────
+// Eén gouden strip die concreet uitlegt wat Plus híer automatisch/persoonlijk
+// doet — géén "je kunt niets meer", maar "Plus doet dit slimmer voor je".
+// Leeg voor Plus-gebruikers: die hebben het al, dus niets in de weg.
+function plusHookHTML(text){
+  if((typeof plusActive==='function') && plusActive()) return '';
+  return `<button class="plus-hook" onclick="openExamentrainer()" aria-label="Ontdek Slagio Plus">
+    <span class="plus-hook-badge">✦&nbsp;Plus</span>
+    <span class="plus-hook-txt">${text}</span>
+    <span class="plus-hook-arr" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+  </button>`;
+}
 function _plusPickVak(vakId){ _plusVak=vakId; renderPlusDashboard(); }
 
 // Losse bouwstenen zodat de tweak-knoppen (doel +/-, tijd) alleen hun eigen

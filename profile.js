@@ -973,5 +973,7 @@ function prefillCalcFromSaved(){
   buildHerkSelect();
   const firstId=document.getElementById('herk-vak')?.value;
   if(firstId)buildHerkSERow(firstId);
+  const calcHook=document.getElementById('calc-plus-hook');
+  if(calcHook)calcHook.innerHTML=(typeof plusHookHTML==='function')?plusHookHTML('Je SE-cijfers vul je zelf in. Plus voorspelt je CE-cijfers uit je oefendata en rekent live je verwachte eindcijfer en slaagkans uit'):'';
 }
 

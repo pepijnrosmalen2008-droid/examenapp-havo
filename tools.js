@@ -49,6 +49,7 @@ function renderRapport(){
       return`<div class="rp-exam-row"><div><div class="rp-exam-vak">${e.vak}</div><div class="rp-exam-date">${d.getDate()} ${maand[d.getMonth()]} · ${e.tijd}</div></div><div style="font-family:var(--font-head);font-size:13px;font-weight:800;color:${dL<=7?'#ef4444':dL<=14?'#f97316':'var(--or)'}">${dL}d</div></div>`;
     }).join('')}`:''}
     ${allDomains.length===0?`<div class="sp-empty">Je hebt nog geen domeinen geoefend.<br>Maak eerst een quiz om je rapport te zien.</div>`:''}
+    ${(typeof plusHookHTML==='function')?plusHookHTML('Plus zet dit rapport om in een concreet plan: wat je nu moet doen én je verwachte examencijfer'):''}
     <button class="rp-share-btn" onclick="shareRapport()">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
       Deel mijn rapport
@@ -136,13 +137,10 @@ function renderVandaagWidget(){
   const plan=spGetPlan();
   const ACTS_HW={leerstof:['📖','Leerstof lezen'],quiz:['⚡','Snelle quiz'],flash:['🃏','Flashcards'],open:['📝','Open vragen'],herhaal:['🔄','Herhalen']};
 
-  if(!plan){
-    wrap.innerHTML=`<div class="sp-home-widget">
-      <div class="sp-hw-header"><div class="sp-hw-title"><svg class="lbl-ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Studieplan</div></div>
-      <div class="sp-hw-generate"><button class="sp-hw-gen-btn" onclick="show('sc-studieplan');renderStudieplan()"><svg class="lbl-ic" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3l2.2 5.8L21 11l-5.8 2.2L13 19l-2.2-5.8L5 11l5.8-2.2z"/><path d="M5 3v4M3 5h4M19 17v4M17 19h4"/></svg>Genereer mijn studieplan</button></div>
-    </div>`;
-    return;
-  }
+  // Geen studieplan → niets tonen. De Examentrainer-hero bovenaan verkoopt Plus
+  // al; een tweede "genereer plan"-kaart maakte de home onnodig druk. Wie een
+  // plan wil, vindt Studieplan in het menu (of via de Examentrainer).
+  if(!plan){ wrap.innerHTML=''; return; }
 
   const today=new Date().toISOString().slice(0,10);
   const todayTasks=(plan.tasks||[]).filter(t=>t.dateStr===today);
@@ -168,7 +166,7 @@ function renderVandaagWidget(){
       ${allDone
         ?'<div class="sp-hw-done-state">🎉 Alle taken voor vandaag gedaan!</div>'
         :'<div style="padding:12px 16px 14px;font-size:13px;color:var(--mu)">Geen taken ingepland voor vandaag.</div>'}
-    </div>`;
+    </div>${(typeof plusHookHTML==='function')?plusHookHTML('Laat Plus je dag automatisch plannen op je zwakke punten'):''}`;
     return;
   }
 
@@ -194,7 +192,7 @@ function renderVandaagWidget(){
     </div>
     <div class="sp-hw-tasks">${taskHtml}</div>
     ${extra}
-  </div>`;
+  </div>${(typeof plusHookHTML==='function')?plusHookHTML('Plus kiest deze taken zelf op basis van je fouten en verwachte cijfer'):''}`;
 }
 
 function spCheckAfterQuiz(vakId,domId,mode,score,total){
@@ -620,7 +618,8 @@ function renderStudieplan(){
     </div>`;
   }
 
-  el.innerHTML=vandaagHtml+prioHtml+summaryHtml+calHtml+masteryHtml;
+  const spHook=(typeof plusHookHTML==='function')?plusHookHTML('Dit plan maak je zelf. Plus stelt het automatisch samen én past het elke dag aan op je fouten en verwachte cijfer'):'';
+  el.innerHTML=spHook+vandaagHtml+prioHtml+summaryHtml+calHtml+masteryHtml;
   try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){} // top-container legen (regel zit nu in Vandaag)
   localStorage.setItem('slagio_plan_generated','1');
   if(todayAllTasks.length)setTimeout(()=>document.querySelector('.sp-vandaag')?.scrollIntoView({behavior:'smooth',block:'nearest'}),120);
