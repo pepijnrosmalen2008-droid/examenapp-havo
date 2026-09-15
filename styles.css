@@ -8219,6 +8219,11 @@ html.dark .pp-mini-cta,html.dark .pp-cell-cta{color:#f6dc86}
 .po-readybar{height:8px;border-radius:5px;background:rgba(120,120,120,.16);overflow:hidden}
 .po-readybar i{display:block;height:100%;border-radius:5px;transition:width .5s cubic-bezier(.4,0,.2,1)}
 .po-ready{font-size:12px;text-align:right;color:var(--dk);font-variant-numeric:tabular-nums;font-weight:700}
+/* Inklapbare per-vak-analyse (overzichtelijkheid) */
+.plus-more-btn{width:100%;padding:11px;border-radius:12px;border:1px dashed rgba(var(--or-rgb),.35);background:transparent;color:var(--or);font-family:var(--font-head);font-weight:800;font-size:13px;cursor:pointer;transition:background .15s}
+.plus-more-btn:hover{background:rgba(var(--or-rgb),.06)}
+.plus-more{display:flex;flex-direction:column;gap:16px}
+.plus-more[hidden]{display:none}
 /* Rapport */
 .pr-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .pr-row{display:flex;justify-content:space-between;gap:8px;padding:9px 11px;background:rgba(var(--or-rgb),.05);border-radius:9px;font-size:12.5px;color:color-mix(in srgb,var(--dk) 68%,transparent)}

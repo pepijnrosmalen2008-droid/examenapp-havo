@@ -788,11 +788,31 @@ function renderPlusDashboard(){
   // ── Persoonlijke Vonk-check-in (na de eenmalige intro; verwijst naar je eigen data) ──
   const vonkHtml = coachHtml ? '' : _plusVonkCoachHTML(niveau);
 
+  // Per-vak: standaard kort (stand → wat te doen → oefenen). De diepere analyse
+  // (readiness, tempo, je laatste examen, ontwikkeling) zit achter één knop, zodat
+  // het dashboard overzichtelijk blijft en niet als een muur informatie voelt.
+  const moreInner = `${readyHtml}${tempoHtml}${rapHtml}${ontwHtml}`;
+  let moreOpen=false; try{ moreOpen=localStorage.getItem('slagio_plus_more_open')==='1'; }catch(e){}
+  const moreBlock = moreInner.trim()
+    ? `<button class="plus-more-btn" id="plus-more-btn" onclick="_plusToggleMore()">${moreOpen?'Minder inzicht ▴':'Meer inzicht over dit vak ▾'}</button>
+       <div class="plus-more" id="plus-more"${moreOpen?'':' hidden'}>${moreInner}</div>`
+    : '';
+
   el.innerHTML = `${coachHtml}${vonkHtml}${prognoseHtml}${vandaagHtml}${kistHtml}${kalHtml}
     <div class="plus-sec-h">Per vak</div>
-    <div class="plus-vchips">${chips}</div>${head}${modusHtml}${rapHtml}${readyHtml}${tempoHtml}${zwakHtml}${ontwHtml}${overHtml}
+    <div class="plus-vchips">${chips}</div>${head}${zwakHtml}${modusHtml}${moreBlock}${overHtml}
     ${!isPlus?`<div class="plus-upsell-foot"><b>Slagio Plus</b> geeft je AI-nakijken, je verwachte cijfer, readiness en een persoonlijk plan. Oefenen en zelf nakijken blijven altijd gratis.<button class="plus-cta" onclick="plusIntro()">🎯 Bekijk Slagio Plus</button></div>`:''}`;
   try{ _plusAnimate('sc-plus'); }catch(e){}
+}
+// Klap de diepere per-vak-analyse in/uit zonder het dashboard te herbouwen
+// (voorkomt het "kaarten herladen"-effect).
+function _plusToggleMore(){
+  const m=document.getElementById('plus-more'), btn=document.getElementById('plus-more-btn');
+  if(!m||!btn) return;
+  const nowHidden=m.hasAttribute('hidden');
+  if(nowHidden){ m.removeAttribute('hidden'); btn.innerHTML='Minder inzicht ▴'; }
+  else { m.setAttribute('hidden',''); btn.innerHTML='Meer inzicht over dit vak ▾'; }
+  try{ localStorage.setItem('slagio_plus_more_open', nowHidden?'1':'0'); }catch(e){}
 }
 function _plusDatum(iso){ try{ const d=new Date(iso+'T00:00:00'); const mn=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec']; return d.getDate()+' '+mn[d.getMonth()]; }catch(e){ return iso; } }
 
