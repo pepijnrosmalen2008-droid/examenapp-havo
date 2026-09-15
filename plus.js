@@ -546,6 +546,6 @@ function _plusSpark(reeks){
   const sx=i=>pad+(reeks.length<2?0:i/(reeks.length-1)*(w-2*pad));
   const sy=v=>h-pad-((v-min)/((max-min)||1))*(h-2*pad);
   const pts=reeks.map((v,i)=>sx(i).toFixed(1)+','+sy(v).toFixed(1)).join(' ');
-  const dots=reeks.map((v,i)=>`<circle cx="${sx(i).toFixed(1)}" cy="${sy(v).toFixed(1)}" r="3" fill="#e8580c"/>`).join('');
-  return `<svg class="plus-spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img" aria-label="cijferontwikkeling"><polyline points="${pts}" fill="none" stroke="#e8580c" stroke-width="2.5"/>${dots}</svg>`;
+  const dots=reeks.map((v,i)=>`<circle cx="${sx(i).toFixed(1)}" cy="${sy(v).toFixed(1)}" r="3" fill="currentColor"/>`).join('');
+  return `<svg class="plus-spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img" aria-label="cijferontwikkeling"><polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="2.5"/>${dots}</svg>`;
 }

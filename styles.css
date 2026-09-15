@@ -8198,3 +8198,162 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 .pip-doen{margin-top:4px;background:rgba(var(--or-rgb),.08);border-radius:10px;padding:11px 13px;font-size:13px;color:color-mix(in srgb,var(--dk) 80%,transparent);line-height:1.55}
 .pip-doen b{color:var(--or)}
 .pip-note{font-size:11.5px;color:color-mix(in srgb,var(--dk) 52%,transparent);font-style:italic}
+
+/* ═══════════════════════════════════════════════════════════════════
+   SLAGIO PLUS — PREMIUM REDESIGN
+   Eigen signatuur voor de hele Plus-wereld: donkere "ink"-panelen + één
+   verfijnd goud-accent, ruime witruimte, hairline-randen. Losgekoppeld van
+   het niveau-thema zodat Plus voelt als een aparte, premium laag. Alle
+   bestaande Plus-regels gebruiken var(--or)/var(--orl) - door die hier te
+   herdefiniëren kleurt de hele wereld mee. Volledig thema-proof.
+   ═══════════════════════════════════════════════════════════════════ */
+#sc-plus, #sc-plus-intro{
+  --or:#a9781a; --or-rgb:169,120,26; --orl:#f4ecd9;
+  --pk-ink1:#171a23; --pk-ink2:#2b3142; --pk-gold:#d8ac52; --pk-gold-soft:#ecd39a;
+  --pk-card:var(--s); --pk-line:color-mix(in srgb,var(--dk) 9%,transparent);
+}
+html.dark #sc-plus, html.dark #sc-plus-intro{
+  --or:#e0b356; --or-rgb:224,179,86; --orl:#2a2417;
+  --pk-ink1:#14161e; --pk-ink2:#242a3b; --pk-gold:#e6bd63; --pk-gold-soft:#f0d597;
+  --pk-line:color-mix(in srgb,#fff 10%,transparent);
+}
+#sc-plus-body, #sc-plus-intro-body{gap:16px}
+
+/* Kaarten: rustiger, hairline-rand, ruimer, verfijnde schaduw */
+#sc-plus .plus-card, #sc-plus-intro .pi-vergelijk, #sc-plus-intro .pi-feat{
+  border:1px solid var(--pk-line);
+  border-radius:18px;
+  box-shadow:0 1px 2px rgba(16,20,30,.04), 0 14px 34px -22px rgba(16,20,30,.28);
+}
+#sc-plus .plus-card{padding:18px}
+#sc-plus .plus-card-h, #sc-plus .plus-sec-h{letter-spacing:.7px;opacity:1;color:color-mix(in srgb,var(--dk) 52%,transparent)}
+
+/* ── HERO: "Vandaag voor jou" → donker ink-paneel ── */
+#sc-plus .plus-vandaag:not(.locked){
+  background:
+    radial-gradient(120% 140% at 100% 0%, rgba(216,172,82,.16), transparent 55%),
+    linear-gradient(152deg, var(--pk-ink1), var(--pk-ink2));
+  color:#f4f1ea;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:22px; padding:22px 20px;
+  box-shadow:0 26px 52px -24px rgba(8,10,18,.6);
+}
+#sc-plus .plus-vandaag:not(.locked) .pv-badge{color:#fff; font-size:17px}
+#sc-plus .plus-vandaag:not(.locked) .pv-top{margin-bottom:6px}
+#sc-plus .plus-vandaag:not(.locked) .pv-vak{opacity:.66}
+/* subtiele gouden scheidingsregel onder de kop */
+#sc-plus .plus-vandaag:not(.locked) .pv-top::after{content:none}
+#sc-plus .plus-vandaag:not(.locked) .pp-item{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:14px; padding:12px 14px;
+}
+#sc-plus .plus-vandaag:not(.locked) .pp-t{color:#f6f3ec}
+#sc-plus .plus-vandaag:not(.locked) .pp-t small{color:rgba(246,243,236,.6)}
+/* emoji-iconen vervangen door een strak gouden marker-stipje */
+#sc-plus .plus-vandaag:not(.locked) .pp-ic{
+  font-size:0; width:9px; height:9px; align-self:center; position:relative;
+}
+#sc-plus .plus-vandaag:not(.locked) .pp-ic::before{
+  content:""; position:absolute; inset:0; margin:auto; width:8px; height:8px;
+  border-radius:50%; background:var(--pk-gold); box-shadow:0 0 0 4px rgba(216,172,82,.14);
+}
+#sc-plus .plus-vandaag:not(.locked) .pv-foot{color:rgba(246,243,236,.9)}
+#sc-plus .plus-vandaag:not(.locked) .plus-time .pt{border-color:rgba(255,255,255,.2); background:rgba(255,255,255,.06); color:#f4f1ea}
+#sc-plus .plus-vandaag:not(.locked) .plus-time .pt.on{background:var(--pk-gold); color:#241a04; border-color:var(--pk-gold)}
+#sc-plus .plus-vandaag:not(.locked) .plus-cta{
+  background:linear-gradient(135deg, var(--pk-gold-soft), var(--pk-gold));
+  color:#2a2008; box-shadow:0 10px 22px -8px rgba(216,172,82,.55);
+  letter-spacing:.2px;
+}
+
+/* ── Forecast-kop: schone witte kaart, ink-cijfer, gouden eyebrow ── */
+#sc-plus .plus-head{
+  background:var(--pk-card);
+  border:1px solid var(--pk-line);
+  border-radius:18px; padding:18px;
+  box-shadow:0 1px 2px rgba(16,20,30,.04), 0 14px 34px -22px rgba(16,20,30,.28);
+}
+#sc-plus .plus-head-top h2{letter-spacing:-.4px}
+#sc-plus .pf-num{color:var(--dk); font-size:48px; letter-spacing:-1px}
+#sc-plus .pf-main{position:relative; padding-right:16px; margin-right:2px}
+#sc-plus .pf-main::after{content:""; position:absolute; right:0; top:8px; bottom:8px; width:1px; background:var(--pk-line)}
+#sc-plus .plus-days{background:var(--orl); border-color:transparent; color:var(--or)}
+
+/* ── Examenmodus-rij: verfijnder ── */
+#sc-plus .plus-modus{border:1px solid var(--pk-line); border-radius:16px; padding:15px 16px}
+#sc-plus .plus-modus:hover{border-color:rgba(var(--or-rgb),.5); background:var(--orl)}
+
+/* ═══════ VERKOOPPAGINA ═══════ */
+/* Hero: groter, strakker, zelfverzekerd */
+#sc-plus-intro .pi-hero{padding:14px 4px 2px}
+#sc-plus-intro .pi-hero h1{font-size:32px; letter-spacing:-.8px; line-height:1.08; margin-bottom:14px}
+#sc-plus-intro .pi-badge{
+  background:linear-gradient(135deg, var(--pk-ink1), var(--pk-ink2)); color:var(--pk-gold-soft);
+  border:none; letter-spacing:1px; text-transform:uppercase; font-size:11px; padding:6px 14px;
+}
+#sc-plus-intro .pi-lead{font-size:15.5px; max-width:46ch}
+#sc-plus-intro .pi-killer{font-size:16.5px}
+
+/* Feature-rijen: hairline, ruimer, icoon in een gouden vierkantje */
+#sc-plus-intro .pi-feat{padding:16px 16px; border-radius:16px; align-items:center; gap:14px}
+#sc-plus-intro .pi-feat-ic{
+  width:40px; height:40px; border-radius:12px; font-size:19px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--orl); border:1px solid rgba(var(--or-rgb),.16);
+}
+#sc-plus-intro .pi-feat b{font-size:15px}
+
+/* Vergelijk-tabel: rustiger, gouden waarden */
+#sc-plus-intro .pi-vergelijk{padding:18px; border-radius:18px}
+#sc-plus-intro .pi-card-h{font-size:17px; letter-spacing:-.3px}
+#sc-plus-intro .pi-tbl td{border-top-color:var(--pk-line)}
+
+/* Prijzen: het "beste" plan als donker ink-paneel dat er echt uitspringt */
+#sc-plus-intro .pi-prices-h{font-size:19px; letter-spacing:-.3px; margin-top:6px}
+#sc-plus-intro .pi-plan{border:1px solid var(--pk-line); border-radius:18px; padding:18px 16px}
+#sc-plus-intro .pi-plan-prijs{color:var(--dk); letter-spacing:-.5px}
+#sc-plus-intro .pi-plan-btn{
+  background:transparent; color:var(--dk); border:1.5px solid var(--pk-line);
+}
+#sc-plus-intro .pi-plan-btn:hover{border-color:var(--or); color:var(--or); background:var(--orl)}
+#sc-plus-intro .pi-plan.best{
+  background:
+    radial-gradient(120% 130% at 100% 0%, rgba(216,172,82,.18), transparent 55%),
+    linear-gradient(152deg, var(--pk-ink1), var(--pk-ink2));
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 26px 52px -24px rgba(8,10,18,.55);
+}
+#sc-plus-intro .pi-plan.best .pi-plan-naam{color:#f4f1ea}
+#sc-plus-intro .pi-plan.best .pi-plan-prijs{color:#fff}
+#sc-plus-intro .pi-plan.best .pi-plan-prijs small,
+#sc-plus-intro .pi-plan.best .pi-plan-per{color:rgba(244,241,234,.62)}
+#sc-plus-intro .pi-plan.best .pi-plan-sub{color:rgba(244,241,234,.82)}
+#sc-plus-intro .pi-plan.best .pi-best{background:var(--pk-gold); color:#241a04}
+#sc-plus-intro .pi-plan.best .pi-plan-btn{
+  background:linear-gradient(135deg, var(--pk-gold-soft), var(--pk-gold));
+  color:#2a2008; border:none; box-shadow:0 10px 22px -8px rgba(216,172,82,.5);
+}
+
+/* Persoonlijk blok: premium "dossier" met gouden linkerregel */
+#sc-plus-intro .pi-perso{
+  background:var(--pk-card);
+  border:1px solid var(--pk-line); border-left:3px solid var(--or);
+  border-radius:16px; padding:17px 18px;
+}
+#sc-plus-intro .pip-ic{font-size:0; width:7px; height:7px; align-self:center; position:relative; margin-top:6px}
+#sc-plus-intro .pip-ic::before{content:""; position:absolute; inset:0; margin:auto; width:6px; height:6px; border-radius:50%; background:var(--or)}
+#sc-plus-intro .pip-doen{background:var(--orl); border-radius:12px}
+
+/* Proef-note: rustiger, hairline i.p.v. streepjeslijn */
+#sc-plus-intro .pi-trial{border:1px solid var(--pk-line); background:var(--orl); border-radius:14px}
+#sc-plus-intro .pi-active{border-radius:14px}
+
+/* Lege stand: kleiner, verfijnd i.p.v. reuze-emoji */
+#sc-plus .plus-empty-ic{
+  font-size:24px; width:60px; height:60px; border-radius:16px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--orl); border:1px solid rgba(var(--or-rgb),.18);
+}
+/* Sparkline volgt het goud-accent (currentColor) i.p.v. los oranje */
+#sc-plus .plus-spark{color:var(--or)}
