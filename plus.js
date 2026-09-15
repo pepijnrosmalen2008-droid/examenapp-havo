@@ -20,6 +20,25 @@ function plusResults(niveau){
 }
 function _plusSave(niveau, arr){
   try{ localStorage.setItem(_plusKey(niveau), JSON.stringify(arr.slice(-60))); }catch(e){}
+  try{ if(typeof pushSyncBundle==='function') pushSyncBundle(); }catch(e){} // cross-device sync
+}
+// Legt een gewone quiz-/oud-examen-sessie vast in dezelfde vorm als een examen,
+// zodat het dashboard leert van ÁLLE oefening (niet alleen proefexamens). Eén
+// domein, meerkeuze. bron: 'quiz' (snelle) of 'oud' (oud examen).
+function plusRecordQuiz(o){
+  try{
+    if(!o || !(o.max>0)) return;
+    const niveau = o.niveau || (typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo');
+    const dom = o.domein || 'Overig';
+    const behaald = Math.max(0, o.behaald||0), max = o.max, aantal = o.aantal||max;
+    const domeinen = {}; domeinen[dom] = {behaald, max, aantal};
+    const types = {open:{behaald:0,max:0,aantal:0}, mc:{behaald, max, aantal}};
+    const pct = behaald/max;
+    const rec = { ts:Date.now(), niveau, vakId:o.vakId, vak:o.vak||o.vakId, cijfer:Math.round((9*pct+1)*2)/2,
+      behaald, max, versie:o.bron||'quiz', bron:o.bron||'quiz', tijdGebruikt:0, tijdTotaal:0, domeinen, types };
+    const all=plusResults(niveau); all.push(rec); _plusSave(niveau, all);
+    return rec;
+  }catch(e){ return; }
 }
 
 // Legt een afgerond examen vast: per domein en per vraagtype de behaalde/max
@@ -48,7 +67,7 @@ function plusRecordExam(EXo){
     const totaal=(ex.duur_minuten||0)*60;
     const gebruikt=Math.max(0, totaal-(EXo.secondsLeft||0));
     const rec={ ts:Date.now(), niveau, vakId, vak:ex.titel||vakId, cijfer,
-      behaald, max, versie:EXo.versieId||'vol',
+      behaald, max, versie:EXo.versieId||'vol', bron:'sim',
       tijdGebruikt:gebruikt, tijdTotaal:totaal, domeinen, types };
     const all=plusResults(niveau); all.push(rec); _plusSave(niveau, all);
     try{ if(typeof trackEvent==='function') trackEvent('examen_resultaat',{vak:ex.titel,cijfer,niveau}); }catch(e){}
@@ -59,8 +78,8 @@ function plusRecordExam(EXo){
 // ── Kleine helpers ────────────────────────────────────────────────────────
 function _plusKleur(pct){ return pct>=0.75?'groen':(pct>=0.55?'oranje':'rood'); }
 function _plusDot(pct){ return pct>=0.75?'🟢':(pct>=0.55?'🟠':'🔴'); }
-function _plusVakResults(vakId, niveau){ return plusResults(niveau).filter(r=>r.vakId===vakId); }
-function _plusRecent(vakId, n, niveau){ const a=_plusVakResults(vakId,niveau); return a.slice(-(n||5)); }
+function _plusVakResults(vakId, niveau, bron){ return plusResults(niveau).filter(r=>r.vakId===vakId && (!bron || (r.bron||'sim')===bron)); }
+function _plusRecent(vakId, n, niveau, bron){ const a=_plusVakResults(vakId,niveau,bron); return a.slice(-(n||5)); }
 function plusVakkenMetData(niveau){
   const seen={}, out=[];
   plusResults(niveau).forEach(r=>{ if(!seen[r.vakId]){ seen[r.vakId]=1; out.push({vakId:r.vakId, vak:r.vak}); } });
@@ -69,7 +88,7 @@ function plusVakkenMetData(niveau){
 
 // ── Domein- en vraagtype-analyse ──────────────────────────────────────────
 function plusDomeinAnalyse(vakId, niveau){
-  const recent=_plusRecent(vakId,5,niveau); const agg={};
+  const recent=_plusRecent(vakId,14,niveau); const agg={}; // alle oefening telt mee voor beheersing per onderwerp
   recent.forEach(r=>{ Object.keys(r.domeinen||{}).forEach(d=>{
     const s=r.domeinen[d]; (agg[d]||(agg[d]={behaald:0,max:0})); agg[d].behaald+=s.behaald; agg[d].max+=s.max; }); });
   return Object.keys(agg).map(d=>{ const pct=agg[d].max?agg[d].behaald/agg[d].max:0;
@@ -94,7 +113,18 @@ function plusPuntenlekkage(vakId, niveau){
 
 // ── Examenvoorspeller ─────────────────────────────────────────────────────
 function plusVoorspeldCijfer(vakId, niveau){
-  const recent=_plusRecent(vakId,5,niveau); if(!recent.length) return null;
+  // Volledige proefexamens leiden de voorspelling. Nog geen proefexamen gedaan?
+  // Dan een eerlijke SCHATTING op basis van je algehele beheersing (alle oefening),
+  // zodat een leerling die alleen quizt óók ziet waar 'ie staat.
+  const sim=_plusRecent(vakId,5,niveau,'sim');
+  if(!sim.length){
+    const all=_plusRecent(vakId,14,niveau); if(!all.length) return null;
+    let b=0,m=0; all.forEach(r=>{ b+=r.behaald; m+=r.max; });
+    const pct=m?b/m:0; const v=Math.max(1,Math.min(10,Math.round((9*pct+1)*10)/10));
+    return { cijfer:v, laag:Math.max(1,Math.round((v-0.8)*10)/10), hoog:Math.min(10,Math.round((v+0.6)*10)/10),
+             trend:0, reeks:[v], schatting:true };
+  }
+  const recent=sim;
   let sw=0, sm=0; recent.forEach((r,i)=>{ const w=i+1; sw+=w; sm+=w*r.cijfer; });
   const gew=sm/sw;
   const eerste=recent[0].cijfer, laatste=recent[recent.length-1].cijfer;
@@ -110,7 +140,7 @@ function _plusStd(a){ const m=a.reduce((x,y)=>x+y,0)/a.length; return Math.sqrt(
 
 // ── Examen-readiness (0-100) ──────────────────────────────────────────────
 function plusReadiness(vakId, niveau){
-  const recent=_plusRecent(vakId,5,niveau); if(!recent.length) return null;
+  const recent=_plusRecent(vakId,8,niveau); if(!recent.length) return null;
   let b=0,m=0; recent.forEach(r=>{ b+=r.behaald; m+=r.max; });
   const kennis=m? b/m : 0;
   const vt=plusVraagtypeAnalyse(vakId,niveau);
@@ -314,7 +344,7 @@ function _plusHeadHTML(vakId, niveau, isPlus){
     head+=`<div class="plus-forecast">
       <div class="pf-main"><span class="pf-num">${voorsp.cijfer.toFixed(1)}</span><span class="pf-lbl">verwacht cijfer</span></div>
       <div class="pf-side">
-        <div class="pf-range">waarschijnlijk ${voorsp.laag.toFixed(1)} tot ${voorsp.hoog.toFixed(1)}</div>
+        <div class="pf-range">${voorsp.schatting?'schatting op basis van je oefening · doe een proefexamen voor een echte voorspelling':'waarschijnlijk '+voorsp.laag.toFixed(1)+' tot '+voorsp.hoog.toFixed(1)}</div>
         <div class="pf-goal">🎯 doel ${doel.toFixed(1)} <button class="pf-goalbtn" onclick="plusSetDoel('${vakId}',${(doel-0.5).toFixed(1)})">−</button><button class="pf-goalbtn" onclick="plusSetDoel('${vakId}',${(doel+0.5).toFixed(1)})">+</button></div>
         ${tekort>0?`<div class="pf-need">nog +${tekort.toFixed(1)} te gaan</div>`:`<div class="pf-need done">doel gehaald 🎉</div>`}
       </div></div>`;

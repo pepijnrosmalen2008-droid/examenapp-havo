@@ -506,9 +506,19 @@ function buildSyncBundle(){
     cij_h:_ls('examenapp_cijfers_havo',{}),
     cij_v:_ls('examenapp_cijfers_vwo',{}),
     mijn_h:_ls('examenapp_mijnvakken_havo',[]),
-    mijn_v:_ls('examenapp_mijnvakken_vwo',[])
+    mijn_v:_ls('examenapp_mijnvakken_vwo',[]),
+    // Slagio Plus: gemaakte proefexamens/quizzen + doelen + oefentijd, zodat het
+    // examentrainer-dashboard op elk apparaat met hetzelfde account gevuld is.
+    plus_h:_ls('slagio_plus_res_havo',[]),
+    plus_v:_ls('slagio_plus_res_vwo',[]),
+    plus_doel:_plusDoelBundle(),
+    plus_tijd:(function(){try{return localStorage.getItem('slagio_plus_tijd')||null;}catch(e){return null;}})()
   };
 }
+// Verzamel alle per-vak Plus-doelen (slagio_plus_doel_<vak>).
+function _plusDoelBundle(){ const o={}; try{ for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k&&k.indexOf('slagio_plus_doel_')===0) o[k]=localStorage.getItem(k); } }catch(e){} return o; }
+// Voeg twee lijsten proefexamen-resultaten samen (uniek op ts, nieuwste 60).
+function _plusMergeRes(a,b){ const m={}; [].concat(a||[],b||[]).forEach(r=>{ if(r&&r.ts) m[r.ts]=r; }); return Object.keys(m).map(k=>m[k]).sort((x,y)=>(x.ts||0)-(y.ts||0)).slice(-60); }
 function restoreSyncBundle(bundle){
   if(!bundle||typeof bundle!=='object')return;
   // Achievements: union - badge ooit verdiend = altijd behouden
@@ -554,6 +564,14 @@ function restoreSyncBundle(bundle){
     localStorage.setItem('examenapp_mijnvakken_havo',JSON.stringify(bundle.mijn_h));
   if(Array.isArray(bundle.mijn_v)&&bundle.mijn_v.length)
     localStorage.setItem('examenapp_mijnvakken_vwo',JSON.stringify(bundle.mijn_v));
+  // Slagio Plus: proefexamen-/quizresultaten samenvoegen (union op ts) zodat het
+  // dashboard op elk apparaat dezelfde, complete data toont.
+  try{
+    if(Array.isArray(bundle.plus_h)) localStorage.setItem('slagio_plus_res_havo',JSON.stringify(_plusMergeRes(_ls('slagio_plus_res_havo',[]),bundle.plus_h)));
+    if(Array.isArray(bundle.plus_v)) localStorage.setItem('slagio_plus_res_vwo',JSON.stringify(_plusMergeRes(_ls('slagio_plus_res_vwo',[]),bundle.plus_v)));
+    if(bundle.plus_doel) Object.keys(bundle.plus_doel).forEach(k=>{ if(localStorage.getItem(k)==null) localStorage.setItem(k,bundle.plus_doel[k]); });
+    if(bundle.plus_tijd && localStorage.getItem('slagio_plus_tijd')==null) localStorage.setItem('slagio_plus_tijd',bundle.plus_tijd);
+  }catch(e){}
 }
 async function pushSyncBundle(){
   if(!currentUser)return;
@@ -630,6 +648,7 @@ async function syncFromCloud(){
     try{renderVandaagWidget();}catch(e){}
     try{if(document.getElementById('sc-cijfers')?.classList.contains('on'))buildCijferGrid();}catch(e){}
     try{if(document.getElementById('sc-studieplan')?.classList.contains('on'))renderStudieplan();}catch(e){}
+    try{if(typeof renderPlusDashboard==='function' && document.getElementById('sc-plus')?.classList.contains('on'))renderPlusDashboard();}catch(e){}
     // Upload lokale data die de cloud nog niet kent (bijv. cijfers vóór sync-update)
     try{pushSyncBundle();}catch(e){}
   }catch(e){

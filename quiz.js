@@ -1414,6 +1414,13 @@ function toonRes(){
   }}catch(e){}
   // Track quiz voltooid
   try{_flushQBatch();trackEvent('quiz_completed',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,score:sc,totaal:tot,pct:Math.round(pct*100)});}catch(e){}
+  // Slagio Plus leert van ÁLLE oefening (snelle quiz + oud examen), niet alleen proefexamens.
+  try{
+    if(typeof plusRecordQuiz==='function' && (ST.mode==='snel'||ST.mode==='oud') && !ST.isFoutenboek && tot>0){
+      plusRecordQuiz({ vakId:ST.vak&&ST.vak.id, vak:ST.vak&&ST.vak.naam, niveau:(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo'),
+        domein:ST.domein&&ST.domein.naam, behaald:sc, max:tot, aantal:tot, bron:(ST.mode==='oud'?'oud':'quiz') });
+    }
+  }catch(e){}
   // Feature 2: PB tracking
   window._newPB=false;window._oldPB=null;
   try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}
