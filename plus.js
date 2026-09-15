@@ -724,8 +724,17 @@ function renderPlusDashboard(){
     } else if(!isPlus){
       extra=`<div class="plus-lock small"><div class="pl-blur">+ puntenlekkage en trainknop per onderwerp</div>${_plusLockBtn()}</div>`;
     }
+    // #3: verse AI-vragen precies op je zwakste onderwerp (Plus).
+    let trainBtn='';
+    if(isPlus && top.length){
+      const zw=top[0].domein; const zwEsc=String(zw).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+      trainBtn=`<button class="pz-train" onclick="openAiTrainer('${vakId}','${zwEsc}')">
+        <span class="pz-train-txt">✦ Nieuwe oefenvragen over <b>${zw}</b></span>
+        <span class="pz-train-sub">Vonk maakt steeds verse examenvragen op maat</span>
+        <span class="pz-train-arr">→</span></button>`;
+    }
     zwakHtml=`<div class="plus-card"><div class="plus-card-h">Waar je punten laat liggen</div>
-      <div class="plus-zwak">${list}</div>${extra}</div>`;
+      <div class="plus-zwak">${list}</div>${extra}${trainBtn}</div>`;
   }
 
   // ── Ontwikkeling ──
@@ -785,6 +794,111 @@ function renderPlusDashboard(){
 function _plusDatum(iso){ try{ const d=new Date(iso+'T00:00:00'); const mn=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec']; return d.getDate()+' '+mn[d.getMonth()]; }catch(e){ return iso; } }
 
 function _plusLockBtn(){ return `<button class="pl-btn" onclick="plusIntro()">🔒 Slagio Plus</button>`; }
+
+// ═══════════════════════════════════════════════════════════════════════════
+// #3 · AI-oefentrainer: oneindige verse vragen op je zwakke punten
+// Eén AI-call levert een set meerkeuzevragen; de client kijkt ze zelf na
+// (correct antwoord meegeleverd). Gevoed door je zwakste domein + echte
+// voorbeeldvragen als stijlanker. De moat: onbeperkte, persoonlijke oefening.
+// ═══════════════════════════════════════════════════════════════════════════
+let _AIT=null;
+function _aitEsc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+// Een paar echte vragen uit dit vak/domein als stijlanker voor de AI.
+function _plusVoorbeeldVragen(vakId, domeinNaam, n){
+  try{
+    const vak=(typeof getVK==='function'?getVK():[]).find(v=>v.id===vakId); if(!vak) return [];
+    let doms=vak.domeinen||[];
+    const hit=doms.find(d=>d.naam===domeinNaam); if(hit) doms=[hit];
+    const out=[];
+    doms.forEach(d=>{ (d.sv||[]).concat(d.oe||[]).forEach(q=>{ if(q&&q.v&&out.length<(n||3)) out.push(String(q.v).slice(0,240)); }); });
+    return out.slice(0,n||3);
+  }catch(e){ return []; }
+}
+function openAiTrainer(vakId, onderwerp){
+  const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
+  const vak=(typeof getVK==='function'?getVK():[]).find(v=>v.id===vakId);
+  const vakNaam=vak?vak.naam:vakId;
+  _AIT={vakId, vak:vakNaam, niveau, onderwerp:onderwerp||'', vragen:[], idx:0, score:0, answered:false};
+  _aitEnsureOverlay();
+  _aitShowLoading();
+  const voorbeelden=_plusVoorbeeldVragen(vakId, onderwerp, 3);
+  aiGenereerVragen({vak:vakNaam, niveau, onderwerp:onderwerp||vakNaam, voorbeelden, aantal:5}).then(res=>{
+    if(!_AIT) return;
+    if(res.login){ _aitClose(); if(typeof showToast==='function') showToast('Log in om AI-vragen te genereren'); try{ if(typeof openProfiel==='function') openProfiel(); }catch(e){} return; }
+    if(res.limit){ _aitClose(); if(typeof showPlusUpsell==='function') showPlusUpsell({bron:'generate'}); else if(typeof showToast==='function') showToast('Je wekelijkse AI-tegoed is op'); return; }
+    if(res.error || !res.vragen || !res.vragen.length){ _aitShowError(); return; }
+    _AIT.vragen=res.vragen; _AIT.idx=0; _AIT.score=0; _aitRenderVraag();
+  });
+}
+function _aitEnsureOverlay(){
+  if(document.getElementById('ait-overlay')) return;
+  const ov=document.createElement('div');
+  ov.id='ait-overlay'; ov.className='ait-overlay';
+  ov.innerHTML=`<div class="ait-modal" role="dialog" aria-label="AI-oefentrainer">
+    <button class="ait-x" onclick="_aitClose()" aria-label="Sluiten">✕</button>
+    <div id="ait-body"></div>
+  </div>`;
+  document.body.appendChild(ov);
+}
+function _aitClose(){ const ov=document.getElementById('ait-overlay'); if(ov) ov.remove(); _AIT=null; }
+function _aitBody(html){ const b=document.getElementById('ait-body'); if(b) b.innerHTML=html; }
+function _aitShowLoading(){
+  const vonk=(typeof mascotSVG==='function')?mascotSVG('denk',72):'🦊';
+  _aitBody(`<div class="ait-load"><div class="ait-vonk">${vonk}</div>
+    <div class="ait-load-t">Vonk schrijft verse vragen<br><b>${_aitEsc(_AIT.onderwerp||_AIT.vak)}</b></div>
+    <div class="ait-dots"><i></i><i></i><i></i></div></div>`);
+}
+function _aitShowError(){
+  _aitBody(`<div class="ait-load"><div class="ait-load-t">Het lukte even niet om vragen te maken.<br>Probeer het zo nog eens.</div>
+    <button class="ait-btn" onclick="_aitClose()">Sluiten</button></div>`);
+}
+function _aitRenderVraag(){
+  const q=_AIT.vragen[_AIT.idx]; if(!q){ _aitFinish(); return; }
+  _AIT.answered=false;
+  const n=_AIT.vragen.length;
+  const opts=q.o.map((o,i)=>`<button class="ait-opt" data-i="${i}" onclick="_aitAnswer(${i})">${_aitEsc(o)}</button>`).join('');
+  _aitBody(`<div class="ait-head"><span class="ait-badge">✦ AI-training</span><span class="ait-prog">${_AIT.idx+1} / ${n}</span></div>
+    <div class="ait-topic">${_aitEsc(_AIT.onderwerp||_AIT.vak)}</div>
+    <div class="ait-vraag">${_aitEsc(q.v)}</div>
+    <div class="ait-opts">${opts}</div>
+    <div class="ait-fb" id="ait-fb"></div>
+    <button class="ait-btn ait-next" id="ait-next" style="display:none" onclick="_aitNext()">Volgende →</button>`);
+}
+function _aitAnswer(i){
+  if(!_AIT || _AIT.answered) return;
+  _AIT.answered=true;
+  const q=_AIT.vragen[_AIT.idx];
+  const ok=(i===q.c);
+  if(ok) _AIT.score++;
+  document.querySelectorAll('.ait-opt').forEach(btn=>{
+    const bi=parseInt(btn.dataset.i);
+    btn.disabled=true;
+    if(bi===q.c) btn.classList.add('ait-correct');
+    else if(bi===i) btn.classList.add('ait-wrong');
+  });
+  try{ if(typeof playSound==='function') playSound(ok?'correct':'wrong'); }catch(e){}
+  const fb=document.getElementById('ait-fb');
+  if(fb) fb.innerHTML=`<div class="ait-fb-row ${ok?'good':'bad'}">${ok?'✓ Goed!':'✗ Niet helemaal.'} ${q.uitleg?_aitEsc(q.uitleg):''}</div>`;
+  const nx=document.getElementById('ait-next'); if(nx){ nx.style.display=''; nx.textContent=(_AIT.idx>=_AIT.vragen.length-1)?'Bekijk resultaat →':'Volgende →'; }
+}
+function _aitNext(){ if(!_AIT) return; _AIT.idx++; if(_AIT.idx>=_AIT.vragen.length) _aitFinish(); else _aitRenderVraag(); }
+function _aitFinish(){
+  const n=_AIT.vragen.length, sc=_AIT.score;
+  const pct=n?sc/n:0;
+  // Voeg de sessie toe aan je Plus-data zodat het dashboard ervan leert.
+  try{ if(typeof plusRecordQuiz==='function') plusRecordQuiz({vakId:_AIT.vakId, vak:_AIT.vak, niveau:_AIT.niveau, domein:_AIT.onderwerp||'Overig', behaald:sc, max:n, aantal:n, bron:'quiz'}); }catch(e){}
+  const mood=pct>=0.8?'trots':pct>=0.5?'goed':'kijk';
+  const vonk=(typeof mascotSVG==='function')?mascotSVG(mood,72):'🦊';
+  const kop=pct>=0.8?'Sterk!':pct>=0.5?'Goed bezig':'Nog even oefenen';
+  _aitBody(`<div class="ait-done"><div class="ait-vonk">${vonk}</div>
+    <div class="ait-done-kop">${kop}</div>
+    <div class="ait-score">${sc} / ${n} goed</div>
+    <div class="ait-done-sub">Verse vragen op <b>${_aitEsc(_AIT.onderwerp||_AIT.vak)}</b>. Deze telt mee in je dashboard.</div>
+    <button class="ait-btn ait-again" onclick="_aitAgain()">✦ Nog een verse set</button>
+    <button class="ait-btn ait-ghost" onclick="_aitClose();try{renderPlusDashboard()}catch(e){}">Klaar</button>
+  </div>`);
+}
+function _aitAgain(){ if(!_AIT) return; const v=_AIT.vakId, o=_AIT.onderwerp; openAiTrainer(v, o); }
 
 // ── Vonk-uitleg (coach-bubble) ─────────────────────────────────────────────
 function plusCoachDone(){ try{ localStorage.setItem('slagio_plus_coach_done','1'); }catch(e){} const b=document.getElementById('plus-coach'); if(b) b.remove(); }

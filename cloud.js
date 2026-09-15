@@ -128,6 +128,30 @@ async function aiVonkChat(messages, ctx){
   }catch(e){ return {error:true}; }
 }
 
+// Genereert een verse set meerkeuze-oefenvragen op een onderwerp (#3).
+// Eén AI-call → hele set; de client kijkt zelf na. Zelfde poort als de andere
+// AI-functies (login → plus/quota → call). Retourneert {vragen:[...]} of een
+// nette foutstatus ({login|limit|error}).
+async function aiGenereerVragen(opts){
+  opts=opts||{};
+  if(!SLAGIO_AI_ENDPOINT) return {error:true};
+  if(!currentUser) return {login:true};
+  const isPlus = plusActive();
+  if(!isPlus && aiGradeTrialLeft()<=0) return {limit:true};
+  try{
+    const tok=await _aiUserToken();
+    const body={mode:'generate', vak:opts.vak||'', niveau:opts.niveau||(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo'),
+      onderwerp:opts.onderwerp||'', voorbeelden:opts.voorbeelden||[], aantal:opts.aantal||5};
+    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','apikey':SUPABASE_KEY,'authorization':'Bearer '+(tok||SUPABASE_KEY)},body:JSON.stringify(body)});
+    const j=await r.json().catch(()=>null);
+    if(r.status===401 || (j && j.reason==='login')) return {login:true};
+    if(j && (j.locked||j.limit)) return {limit:true, plus:!!(j&&j.plus)};
+    if(!r.ok) return {error:true};
+    if(j && Array.isArray(j.vragen) && j.vragen.length){ if(!isPlus) _aiGradeConsume(); try{ trackEvent('ai_generate',{vak:opts.vak, onderwerp:opts.onderwerp, n:j.vragen.length, plus:isPlus}); }catch(e){} return {vragen:j.vragen}; }
+    return {error:true};
+  }catch(e){ return {error:true}; }
+}
+
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
