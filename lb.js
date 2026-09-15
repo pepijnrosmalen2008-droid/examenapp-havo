@@ -1005,16 +1005,26 @@ function renderExamCoach(vakId){
     mood='kijk';
     msg=`Oefen nog een paar domeinen van <b>${c.vak.naam}</b>, dan reken ik je kans uit. Ik hou je in de gaten! 👀`;
   }else{
+    const isPlus=(typeof plusActive==='function')&&plusActive();
     const cij=c.cijfer.toFixed(1).replace('.',',');
     const cijColor=c.cijfer<5.45?'#ef4444':c.cijfer<7?'#f59e0b':'#22c55e';
     mood=c.cijfer>=7?'trots':c.cijfer>=5.45?'goed':'laag';
-    const opener=mood==='trots'?'Sterk gedaan! ':mood==='laag'?'':'';
-    const tail=mood==='trots'?' 🎉':mood==='laag'?' We pakken dit samen, stap voor stap.':' Nog een klein zetje.';
-    msg=`${opener}Als het CE morgen was, zat je op een <b style="color:${cijColor}">${cij}</b> voor <b>${c.vak.naam}</b>.${tail}`;
+    if(isPlus){
+      // Het verwachte examencijfer = examenvoorspeller → alleen in Plus.
+      const opener=mood==='trots'?'Sterk gedaan! ':'';
+      const tail=mood==='trots'?' 🎉':mood==='laag'?' We pakken dit samen, stap voor stap.':' Nog een klein zetje.';
+      msg=`${opener}Als het CE morgen was, zat je op een <b style="color:${cijColor}">${cij}</b> voor <b>${c.vak.naam}</b>.${tail}`;
+    }else{
+      msg=`Ik hou je sterke én zwakke punten bij voor <b>${c.vak.naam}</b>. Blijf oefenen, dan groeit je niveau vanzelf. 💪`;
+    }
+    // Risico/winst-domein = basis zwakke-punt-hint: blijft gratis en actiegericht.
     if(c.risico)rows+=`<button class="coach-chip coach-chip-risk" onclick="goToDomein('${vakId}','${c.risico.id}','snel')">⚠️ Risico: ${c.risico.naam} · ${Math.round(c.risico.pct*100)}% <span class="coach-chip-go">oefen →</span></button>`;
     if(c.winst)rows+=`<button class="coach-chip coach-chip-win" onclick="goToDomein('${vakId}','${c.winst.id}','snel')">📈 Winst: ${c.winst.naam} · ${Math.round(c.winst.pct*100)}% <span class="coach-chip-go">oefen →</span></button>`;
-    if(!c.risico&&!c.winst)msg+=` Alles wat je oefende staat op niveau. 💪`;
+    if(!c.risico&&!c.winst&&isPlus)msg+=` Alles wat je oefende staat op niveau. 💪`;
+    // Niet-Plus: gouden teaser naar de examentrainer i.p.v. het kale cijfer.
+    if(!isPlus)rows+=`<button class="coach-chip coach-chip-plus" onclick="openExamentrainer()">✦ Zie je verwachte examencijfer met Plus <span class="coach-chip-go">bekijk →</span></button>`;
   }
+  const _cIsPlus=(typeof plusActive==='function')&&plusActive();
   const naam=(typeof MASCOT_NAME!=='undefined'?MASCOT_NAME:'Vonk')+' · je examencoach';
   const svg=(typeof mascotSVG==='function')?mascotSVG(mood,84):'';
   el.innerHTML=`<div class="coach-pop coach-dark coach-mood-${mood}">
@@ -1024,7 +1034,7 @@ function renderExamCoach(vakId){
       <div class="coach-name">${naam}</div>
       <div class="coach-msg">${msg}</div>
       ${rows?`<div class="coach-chips">${rows}</div>`:''}
-      ${c.enough?`<div class="coach-fine">Indicatie op je oefenscores (${c.n} domeinen). Richting, geen garantie.</div>`:''}
+      ${c.enough&&_cIsPlus?`<div class="coach-fine">Indicatie op je oefenscores (${c.n} domeinen). Richting, geen garantie.</div>`:''}
     </div>
   </div>`;
 }

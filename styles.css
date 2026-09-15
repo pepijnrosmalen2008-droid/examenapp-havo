@@ -1766,6 +1766,11 @@ html.dark .qb{background:#2e3550}
 .gp-quiz-insight{width:100%;padding-top:8px;margin-top:4px;border-top:1px solid var(--bo);display:flex;flex-direction:column;gap:6px}
 .gp-est-ce{display:flex;align-items:center;gap:8px;font-size:12px;flex-wrap:wrap}
 .gp-est-val{font-family:var(--font-head);font-size:14px;font-weight:800}
+/* Verwacht CE-cijfer geblokkeerd (niet-Plus): gouden, tikbare teaser */
+.gp-est-lock{width:100%;text-align:left;cursor:pointer;font-family:inherit;color:var(--dk);font-weight:700;background:linear-gradient(135deg,rgba(230,189,99,.15),rgba(230,189,99,.045));border:1px solid rgba(230,189,99,.42);border-radius:12px;padding:9px 12px;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;-webkit-tap-highlight-color:transparent}
+.gp-est-lock:hover{transform:translateY(-1px);border-color:rgba(230,189,99,.72);box-shadow:0 5px 16px rgba(230,189,99,.18)}
+.gp-est-badge{font-family:var(--font-head);font-weight:800;font-size:10.5px;letter-spacing:.3px;color:#7a5c16;background:linear-gradient(135deg,#f6dc86,#e6bd63);padding:3px 8px;border-radius:20px;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,.55)}
+.gp-est-arr{margin-left:auto;color:#c99a2e;font-weight:800}
 .gp-weak-domain{display:flex;align-items:center;gap:8px;background:rgba(var(--or-rgb),.07);border:1px solid rgba(var(--or-rgb),.2);border-radius:10px;padding:8px 12px;flex-wrap:wrap}
 .gp-weak-txt{flex:1;font-size:12px;color:var(--dk);min-width:0}
 .gp-weak-btn{font-size:12px;font-weight:700;padding:5px 12px;border-radius:8px;background:var(--or);color:#fff;border:none;cursor:pointer;font-family:var(--font);white-space:nowrap;flex-shrink:0}
@@ -4687,6 +4692,10 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .coach-dark .coach-chip:hover{background:rgba(255,255,255,.11)}
 .coach-dark .coach-chip-risk{border-color:rgba(239,68,68,.4)}
 .coach-dark .coach-chip-win{border-color:rgba(34,197,94,.4)}
+.coach-chip-plus{border-color:rgba(230,189,99,.55);background:linear-gradient(135deg,rgba(230,189,99,.22),rgba(230,189,99,.08));color:#5a4310}
+.coach-chip-plus .coach-chip-go{color:#c99a2e}
+.coach-dark .coach-chip-plus{border-color:rgba(230,189,99,.55);background:linear-gradient(135deg,rgba(230,189,99,.24),rgba(230,189,99,.09));color:#f6dc86}
+.coach-dark .coach-chip-plus .coach-chip-go{color:#f6dc86}
 .coach-dark .coach-fine{color:rgba(255,255,255,.5)}
 .coach-dark .coach-x{color:rgba(255,255,255,.5)}
 

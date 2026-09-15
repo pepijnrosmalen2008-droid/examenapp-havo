@@ -116,12 +116,10 @@ function openVak(id,_noHash){
     const ceTxt=cij>=9?'Je hebt al bijna genoeg zonder CE':ceNodig<=1?'Minimale CE voldoende':`CE-score ≥ ${ceNodig.toFixed(1).replace('.',',')} voor een voldoende`;
     // Quiz insight section inside grade panel
     const vpData=getVakBestPct(ST.vak.id);
+    const _isPlus=(typeof plusActive==='function')&&plusActive();
     let quizInsightHtml='';
     if(vpData.hasData){
-      const estCE=Math.round((1+9*vpData.pct)*10)/10;
-      const estCEStr=estCE.toFixed(1).replace('.',',');
-      const estColor=estCE>=ceNodig?'#4ADE80':estCE>=ceNodig-1?'#FCD34D':'#F87171';
-      // Find weakest domain
+      // Find weakest domain (basis zwakke-punt-hint blijft gratis en actiegericht)
       let weakestDomein=null;let weakestPct=2;
       ST.vak.domeinen.forEach(d=>{
         const dr=getDomeinBestPct(ST.vak.id,d.id);
@@ -131,8 +129,23 @@ function openVak(id,_noHash){
         <span class="gp-weak-txt">⚡ Zwakste domein: <strong>${weakestDomein.naam}</strong> (${Math.round(weakestPct*100)}%) - oefen dit nu voor de meeste winst</span>
         <button class="gp-weak-btn" onclick="openQmode('${weakestDomein.id}')">Oefen →</button>
       </div>`:'';
+      // Verwacht CE-cijfer = examenvoorspeller → Plus. Gratis kreeg dit voorheen
+      // ook; dat is nu een Plus-teaser (de voorspeller hoort bij Plus, niet gratis).
+      let estHtml;
+      if(_isPlus){
+        const estCE=Math.round((1+9*vpData.pct)*10)/10;
+        const estCEStr=estCE.toFixed(1).replace('.',',');
+        const estColor=estCE>=ceNodig?'#4ADE80':estCE>=ceNodig-1?'#FCD34D':'#F87171';
+        estHtml=`<div class="gp-est-ce"><span>📈 Verwacht CE-cijfer:</span><span class="gp-est-val" style="color:${estColor}">${estCEStr}</span><span style="font-size:11px;color:var(--mu)">op basis van al je oefenscores</span></div>`;
+      }else{
+        estHtml=`<button class="gp-est-ce gp-est-lock" onclick="openExamentrainer()" aria-label="Verwacht CE-cijfer met Slagio Plus">
+          <span>📈 Verwacht CE-cijfer</span><span class="gp-est-badge">✦&nbsp;Plus</span>
+          <span style="font-size:11px;color:var(--mu)">Plus voorspelt je cijfer uit al je oefening en zegt wat je nog nodig hebt</span>
+          <span class="gp-est-arr" aria-hidden="true">→</span>
+        </button>`;
+      }
       quizInsightHtml=`<div class="gp-quiz-insight">
-        <div class="gp-est-ce"><span>📈 Geschatte CE op basis van oefenscore:</span><span class="gp-est-val" style="color:${estColor}">${estCEStr}</span><span style="font-size:11px;color:var(--mu)">Gebaseerd op je beste quizresultaten</span></div>
+        ${estHtml}
         ${weakHtml}
       </div>`;
     }
