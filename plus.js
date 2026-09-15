@@ -447,7 +447,12 @@ function renderPlusDashboard(){
   // ── Examenmodus-knop (afleidingsvrije volledige simulatie) ──
   const modusHtml = `<button class="plus-modus" onclick="startExamenmodus('${vakId}')"><span class="pm-ic">🎧</span><span class="pm-t">Examenmodus<small>afleidingsvrije simulatie op tijd</small></span><span class="pm-arr">→</span></button>`;
 
-  el.innerHTML = `${vandaagHtml}${kalHtml}
+  // Vonk legt de examentrainer uit (eenmalig te sluiten) + wekelijkse kist.
+  let coachHtml='';
+  try{ if(!localStorage.getItem('slagio_plus_coach_done')) coachHtml=_plusCoach('Dit is je <b>examentrainer</b>. Bovenaan zie je wat je vandaag het beste kunt doen; daaronder je verwachte cijfer, waar je punten laat liggen en hoe examenklaar je bent. Elke week ligt er ook een <b>kist</b> voor je klaar. 🎁'); }catch(e){}
+  const kistHtml=_plusKistHTML();
+
+  el.innerHTML = `${coachHtml}${vandaagHtml}${kistHtml}${kalHtml}
     <div class="plus-sec-h">Per vak</div>
     <div class="plus-vchips">${chips}</div>${head}${modusHtml}${rapHtml}${readyHtml}${zwakHtml}${ontwHtml}${overHtml}
     ${!isPlus?`<div class="plus-upsell-foot"><b>Slagio Plus</b> geeft je AI-nakijken, je verwachte cijfer, readiness en een persoonlijk plan. Oefenen en zelf nakijken blijven altijd gratis.<button class="plus-cta" onclick="plusIntro()">🎯 Bekijk Slagio Plus</button></div>`:''}`;
@@ -456,6 +461,54 @@ function renderPlusDashboard(){
 function _plusDatum(iso){ try{ const d=new Date(iso+'T00:00:00'); const mn=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec']; return d.getDate()+' '+mn[d.getMonth()]; }catch(e){ return iso; } }
 
 function _plusLockBtn(){ return `<button class="pl-btn" onclick="plusIntro()">🔒 Slagio Plus</button>`; }
+
+// ── Vonk-uitleg (coach-bubble) ─────────────────────────────────────────────
+function plusCoachDone(){ try{ localStorage.setItem('slagio_plus_coach_done','1'); }catch(e){} const b=document.getElementById('plus-coach'); if(b) b.remove(); }
+function _plusCoach(text){
+  if(typeof mascotBubble!=='function') return '';
+  return `<div id="plus-coach">${mascotBubble(text,'blij',{closable:false, actionsHTML:'<button class="coach-cta" onclick="plusCoachDone()">Snap ik 👍</button>'})}</div>`;
+}
+
+// ── Wekelijkse Plus-kist (extra kisten, outfits & looks voor Plus-leden) ───
+// Hergebruikt het bestaande kist-systeem (showChest) met een flink hogere kans
+// op een outfit/look. Eén keer per week te openen.
+function _plusChestRoll(){
+  const rare=Math.random()<0.5; // Plus: veel vaker een cosmetisch item dan de gewone 16%
+  if(rare){
+    try{
+      const all=(typeof COSMETICS_VONK!=='undefined'?COSMETICS_VONK:[]).concat(typeof COSMETICS_AV!=='undefined'?COSMETICS_AV:[]);
+      const owned=(typeof getOwnedCosmetics==='function')?getOwnedCosmetics():[];
+      const locked=all.filter(c=>owned.indexOf(c.id)===-1);
+      if(locked.length) return {rare:true,item:locked[Math.floor(Math.random()*locked.length)]};
+    }catch(e){}
+  }
+  return {rare:false,coins:40+Math.floor(Math.random()*61)}; // 40–100 munten (royaler)
+}
+function _plusKistWeek(){ return 'slagio_plus_kist_'+Math.floor(Date.now()/6048e5); }
+function plusKistBeschikbaar(){ try{ return !localStorage.getItem(_plusKistWeek()); }catch(e){ return true; } }
+function _plusKistHTML(){
+  const isPlus=(typeof plusActive==='function') && plusActive();
+  if(!isPlus){
+    return `<button class="plus-kist locked" onclick="plusIntro()"><span class="pk-ic">🎁</span><span class="pk-t">Wekelijkse Plus-kist<small>Munten + exclusieve outfits &amp; looks - met Plus</small></span><span class="pm-arr">🔒</span></button>`;
+  }
+  const beschikbaar=plusKistBeschikbaar();
+  return `<button class="plus-kist${beschikbaar?' ready':' done'}" onclick="plusClaimKist()">
+    <span class="pk-ic">🎁</span>
+    <span class="pk-t">Wekelijkse Plus-kist<small>${beschikbaar?'Klaar om te openen - munten, outfits &amp; looks':'Geopend - volgende week weer een nieuwe'}</small></span>
+    <span class="pk-cta">${beschikbaar?'Openen':'✓'}</span></button>`;
+}
+function _plusUpdateKist(){ const el=document.querySelector('#sc-plus-body .plus-kist'); if(el) el.outerHTML=_plusKistHTML(); }
+function plusClaimKist(){
+  if(!(typeof plusActive==='function' && plusActive())){ openPlusIntro(); return; }
+  if(!plusKistBeschikbaar()){ try{ if(typeof showToast==='function') showToast('Je Plus-kist van deze week is al open. Volgende week weer! 🎁'); }catch(e){} return; }
+  try{ localStorage.setItem(_plusKistWeek(),'1'); }catch(e){}
+  const reward=_plusChestRoll();
+  try{
+    if(typeof showChest==='function') showChest(function(){ try{_plusUpdateKist();}catch(e){} }, {reward:reward, kicker:'Je wekelijkse Plus-kist! 🎁', variant:'chest-plus'});
+    else { if(reward.coins && typeof addCoins==='function') addCoins(reward.coins); _plusUpdateKist(); }
+  }catch(e){ _plusUpdateKist(); }
+  try{ if(typeof trackEvent==='function') trackEvent('plus_kist',{rare:!!reward.rare}); }catch(e){}
+}
 
 // ═══════════════════════════════════════════════════════════════════════
 // DOPAMINE-LAAG — beweging + progressie + beloning maken de pagina levend.
@@ -557,10 +610,10 @@ function _plusStart(vakId){
 // De conversie-surface. Opent met de vraag, niet met de techniek. Verkoopt
 // gemak/zekerheid, nooit "je kunt niets meer" — de kern blijft altijd gratis.
 const _PLUS_PLANNEN = [
-  {id:'najaar', naam:'Najaar', prijs:'€ 7,99', periode:'september tot 31 januari', sub:'Begin je examenjaar slim.'},
-  {id:'jaar',   naam:'Heel examenjaar', prijs:'€ 24,99', periode:'nu tot en met de examens', sub:'Alles, het hele jaar. Eén betaling, geen verlenging.', best:true},
-  {id:'examen', naam:'Examenperiode', prijs:'€ 14,99', periode:'februari tot en met de examens', sub:'De laatste, beslissende fase.'},
-  {id:'flex',   naam:'Flex', prijs:'€ 4,99', periode:'per maand, maandelijks opzegbaar', sub:'Liever niet ineens.'},
+  {id:'najaar', naam:'Najaar', prijs:'€ 14,99', periode:'september tot 31 januari', sub:'Begin je examenjaar slim.'},
+  {id:'jaar',   naam:'Heel examenjaar', prijs:'€ 24,99', periode:'nu tot en met de examens', sub:'Alles, het hele jaar - en goedkoper dan de seizoenen los.', best:true},
+  {id:'examen', naam:'Examenperiode', prijs:'€ 17,99', periode:'februari tot en met de examens', sub:'De laatste, beslissende fase.'},
+  {id:'flex',   naam:'Flex', prijs:'€ 6,99', periode:'per maand, maandelijks opzegbaar', sub:'Liever niet ineens.'},
 ];
 const _PLUS_FEATURES = [
   ['🤖','AI-nakijken','Laat open vragen nakijken tegen het echte scoringsvoorschrift, met feedback per punt.'],
@@ -568,7 +621,7 @@ const _PLUS_FEATURES = [
   ['🗺️','Persoonlijk studieplan','Elke dag de training die op dat moment het meeste oplevert.'],
   ['📈','Verwacht cijfer','Zie hoe je ervoor staat en hoe je resultaat zich ontwikkelt.'],
   ['🏆','Examen-readiness','Zie hoe klaar Slagio je vindt, over vijf factoren.'],
-  ['📝','Examenrapport','Na elk examen een diepe analyse van waar je punten liet liggen.'],
+  ['🎁','Wekelijkse Plus-kist','Elke week een kist vol munten en exclusieve outfits &amp; looks voor Vonk en je avatar.'],
 ];
 const _PLUS_VERGELIJK = [
   ['Alle oefenvragen &amp; examens', true, true],
@@ -578,6 +631,7 @@ const _PLUS_VERGELIJK = [
   ['Zwakke-puntenanalyse', 'basis', '★ uitgebreid'],
   ['Studieplan &amp; verwacht cijfer', false, true],
   ['Examen-readiness &amp; rapport', false, true],
+  ['Wekelijkse kist, outfits &amp; looks', false, '★ Plus'],
   ['Alle vakken inbegrepen', true, true],
 ];
 
@@ -631,6 +685,7 @@ function renderPlusIntro(){
       <p class="pi-lead">Slagio Plus laat zien waar je punten laat liggen, wat je vandaag moet oefenen en hoe je ervoor staat richting je examen.</p>
       <p class="pi-killer">Van "ik moet meer leren" naar "ik weet precies wat ik moet doen."</p>
     </div>
+    ${(typeof mascotBubble==='function')?mascotBubble('Ik ben <b>Vonk</b>! Gratis Slagio helpt je oefenen - dat blijft altijd zo. Met <b>Plus</b> laat ik je precies zien waar je staat, wat je vandaag moet doen, en kijk ik je open vragen na. En elke week krijg je een <b>kist</b> met munten en exclusieve outfits &amp; looks. 🎁','blij',{}):''}
     ${perso}
     ${active?`<div class="pi-active">✓ Je hebt Slagio Plus. <button class="pi-link" onclick="openPlusDashboard()">Naar je examentrainer</button></div>`:''}
     <div class="pi-feats">${feats}</div>
