@@ -755,6 +755,34 @@ function plusCheckout(plan){
   try{ showToast('Bedankt voor je interesse! Betalen via iDEAL komt er zeer binnenkort aan.'); }catch(e){}
 }
 
+// ── Premium Plus-pop-up (bv. wanneer de gratis AI-vragen op zijn) ──────────
+function closePlusUpsell(){ const el=document.getElementById('plus-upsell'); if(el){ el.classList.remove('on'); setTimeout(()=>{ if(el.parentNode) el.remove(); },240); } }
+function showPlusUpsell(opts){
+  opts=opts||{};
+  if(document.getElementById('plus-upsell')) return;
+  const h = opts.title || 'Je gratis AI-vragen zijn op';
+  const sub = opts.sub || 'Met Slagio Plus vraag je Vonk zo vaak je wilt - én krijg je je hele examentrainer erbij.';
+  const el=document.createElement('div'); el.id='plus-upsell'; el.className='pu-ov';
+  el.innerHTML=`<div class="pu-card" role="dialog" aria-label="Slagio Plus">
+    <div class="pu-grip"></div>
+    <div class="pu-badge">✦ Slagio Plus</div>
+    <h3 class="pu-h">${h}</h3>
+    <p class="pu-sub">${sub}</p>
+    <div class="pu-benefits">
+      <div class="pu-b"><span class="pu-b-ic">🤖</span><div><b>Onbeperkt AI</b><span>Vonk-uitleg &amp; nakijken zonder limiet</span></div></div>
+      <div class="pu-b"><span class="pu-b-ic">📈</span><div><b>Je verwachte cijfer</b><span>en precies hoe je ervoor staat</span></div></div>
+      <div class="pu-b"><span class="pu-b-ic">🎯</span><div><b>Wat moet ik vandaag doen</b><span>een slim plan op maat, elke dag</span></div></div>
+      <div class="pu-b"><span class="pu-b-ic">🎁</span><div><b>Wekelijkse kist</b><span>munten plus exclusieve outfits &amp; looks</span></div></div>
+    </div>
+    <button class="pu-cta" onclick="closePlusUpsell();try{plusIntro()}catch(e){}">Bekijk Slagio Plus →</button>
+    <button class="pu-later" onclick="closePlusUpsell()">Later</button>
+  </div>`;
+  el.addEventListener('click',e=>{ if(e.target===el) closePlusUpsell(); });
+  document.body.appendChild(el);
+  requestAnimationFrame(()=>el.classList.add('on'));
+  try{ if(typeof trackEvent==='function') trackEvent('plus_upsell_shown',{bron:opts.bron||'ai'}); }catch(e){}
+}
+
 // Sparkline van de cijferreeks (klein, inline SVG, themaneutraal via currentColor).
 function _plusSpark(reeks){
   const w=280,h=54,pad=8; const min=Math.min.apply(null,reeks)-0.3, max=Math.max.apply(null,reeks)+0.3;

@@ -591,7 +591,9 @@ function _vchatUpdateQuota() {
   const q = document.getElementById('vchat-quota'); if (!q) return;
   if (typeof plusActive === 'function' && plusActive()) { q.textContent = 'Plus ✦'; q.className = 'vchat-quota plus'; return; }
   const left = (typeof aiWeekLeft === 'function') ? aiWeekLeft() : 3;
-  q.textContent = 'nog ' + left + ' gratis'; q.className = 'vchat-quota' + (left <= 0 ? ' op' : '');
+  if (left <= 0) { q.textContent = '0 gratis over'; q.className = 'vchat-quota op'; }
+  else if (left === 1) { q.textContent = 'laatste gratis vraag!'; q.className = 'vchat-quota last'; }
+  else { q.textContent = 'nog ' + left + ' gratis vragen'; q.className = 'vchat-quota'; }
 }
 function _vchatPush(role, html, isHtml) {
   const box = document.getElementById('vchat-msgs'); if (!box) return null;
@@ -642,8 +644,9 @@ async function sendVonkChat(seed) {
     _vchatPush('assistant', `Maak eerst een <b>gratis account</b>, dan onthoud ik je vragen en kan ik je echt helpen. 🦊`, true);
     _vchatDisable(`<button class="vchat-cta" onclick="try{switchAuthTab&&switchAuthTab('register')}catch(e){};show('sc-auth');closeVonkChat()">Gratis account maken →</button>`);
   } else if (res && res.limit) {
-    _vchatPush('assistant', `Je <b>3 gratis vragen</b> van deze week zijn op! Met Slagio Plus vraag je me zo vaak je wilt. ✨`, true);
-    _vchatDisable(`<button class="vchat-cta" onclick="closeVonkChat();try{plusIntro()}catch(e){}">Bekijk Slagio Plus</button>`);
+    _vchatPush('assistant', `Je <b>3 gratis vragen</b> van deze week zijn op! Ik help je zó graag onbeperkt verder met Slagio Plus. ✨`, true);
+    _vchatDisable(`<button class="vchat-cta" onclick="try{showPlusUpsell({bron:'chat'})}catch(e){}">Bekijk Slagio Plus ✦</button>`);
+    setTimeout(() => { try { if (typeof showPlusUpsell === 'function') showPlusUpsell({ bron: 'chat' }); } catch (e) {} }, 550);
   } else {
     _vchatPush('assistant', `Ik kon je nu even niet antwoorden. Probeer het zo nog eens, of stel je vraag anders. 💪`, true);
   }

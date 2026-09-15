@@ -904,7 +904,7 @@ async function examenAiNakijk(idx){
   if(btn){ btn.disabled=false; btn.classList.remove('busy'); btn.innerHTML='★ Opnieuw laten nakijken'; }
   if(!res){ if(panel) panel.innerHTML='<div class="ex-ai-note">AI-nakijken is nog niet beschikbaar.</div>'; if(btn) btn.style.display='none'; return; }
   if(res.login){ if(panel) panel.innerHTML=_exAiLogin(); if(btn) btn.style.display='none'; return; }
-  if(res.limit){ if(panel) panel.innerHTML=_exAiUpsell(); if(btn) btn.style.display='none'; return; }
+  if(res.limit){ if(panel) panel.innerHTML=_exAiUpsell(); if(btn) btn.style.display='none'; setTimeout(()=>{try{if(typeof showPlusUpsell==='function')showPlusUpsell({bron:'nakijken'});}catch(e){}},450); return; }
   if(res.error || !res.result || !Array.isArray(res.result.points)){
     if(panel) panel.innerHTML='<div class="ex-ai-note">Er ging iets mis bij het nakijken. Probeer het zo nog eens.</div>';
     return;
