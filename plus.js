@@ -645,20 +645,24 @@ function _plusIntroPersoonlijk(niveau){
   const pri = (typeof plusPrioriteit==='function') ? plusPrioriteit(niveau) : null;
   if(!pri) return '';
   const p = plusProfiel(pri.vakId, niveau);
-  const items=[];
-  if(p.voorspeld) items.push(`<div class="pip-row"><span class="pip-ic">📈</span><span><b>${p.voorspeld.cijfer.toFixed(1)} → ${p.doel.toFixed(1)}</b> verwacht cijfer richting je doel</span></div>`);
+  if(!p || !p.voorspeld) return '';
   const zwak = p.domeinen && p.domeinen[0];
-  if(zwak && zwak.pct<0.75) items.push(`<div class="pip-row"><span class="pip-ic">🔴</span><span><b>${zwak.domein}</b> is je grootste zwakke punt (${Math.round(zwak.pct*100)}%)</span></div>`);
-  if(p.types && p.types.open!=null && (p.types.mc==null || p.types.open<=p.types.mc)) items.push(`<div class="pip-row"><span class="pip-ic">📝</span><span>Je verliest vooral punten bij <b>open vragen</b></span></div>`);
-  if(p.dagen) items.push(`<div class="pip-row"><span class="pip-ic">🎯</span><span>Nog <b>${p.dagen.dagen} dagen</b> tot je examen ${pri.vak}</span></div>`);
-  if(!items.length) return '';
+  const openZwak = p.types && p.types.open!=null && (p.types.mc==null || p.types.open<=p.types.mc);
+  const chips=[];
+  if(zwak && zwak.pct<0.75) chips.push(`<div class="pip-chip"><span class="pip-chip-dot"></span>Zwakste onderwerp: <b>${zwak.domein}</b> · ${Math.round(zwak.pct*100)}%</div>`);
+  if(openZwak) chips.push(`<div class="pip-chip"><span class="pip-chip-dot"></span>Meeste puntverlies bij <b>open vragen</b></div>`);
   const vd = (typeof plusVandaag==='function') ? plusVandaag(niveau) : null;
   const doen = vd ? vd.taken.slice(0,3).map(t=>t.t).join(' · ') : '';
   return `<div class="pi-perso">
-    <div class="pip-vak">${pri.vak} · jouw stand nu</div>
-    ${items.join('')}
-    ${doen?`<div class="pip-doen"><b>Dit moet je vandaag doen:</b><br>${doen}</div>`:''}
-    <div class="pip-note">Dit is wat Slagio Plus voor je bijhoudt en verbetert.</div>
+    <div class="pip-eyebrow">Jouw stand nu · ${pri.vak}</div>
+    <div class="pip-forecast">
+      <div class="pip-fc"><span class="pip-fc-num">${p.voorspeld.cijfer.toFixed(1)}</span><span class="pip-fc-lbl">verwacht nu</span></div>
+      <span class="pip-arrow" aria-hidden="true">→</span>
+      <div class="pip-fc goal"><span class="pip-fc-num">${p.doel.toFixed(1)}</span><span class="pip-fc-lbl">jouw doel</span></div>
+      ${p.dagen?`<div class="pip-days">nog ${p.dagen.dagen} dagen</div>`:''}
+    </div>
+    ${chips.length?`<div class="pip-chips">${chips.join('')}</div>`:''}
+    ${doen?`<div class="pip-doen"><span class="pip-doen-lbl">Vandaag</span><span>${doen}</span></div>`:''}
   </div>`;
 }
 
@@ -688,8 +692,6 @@ function renderPlusIntro(){
     ${(typeof mascotBubble==='function')?mascotBubble('Ik ben <b>Vonk</b>! Gratis Slagio helpt je oefenen - dat blijft altijd zo. Met <b>Plus</b> laat ik je precies zien waar je staat, wat je vandaag moet doen, en kijk ik je open vragen na. En elke week krijg je een <b>kist</b> met munten en exclusieve outfits &amp; looks. 🎁','blij',{}):''}
     ${perso}
     ${active?`<div class="pi-active">✓ Je hebt Slagio Plus. <button class="pi-link" onclick="openPlusDashboard()">Naar je examentrainer</button></div>`:''}
-    <div class="pi-feats-eyebrow">Wat je krijgt met Plus</div>
-    <div class="pi-feats">${feats}</div>
     <div class="pi-vergelijk">
       <div class="pi-card-h">Gratis blijft gratis</div>
       <div class="pi-tbl-wrap"><table class="pi-tbl"><thead><tr><th></th><th>Gratis</th><th>Plus</th></tr></thead><tbody>${rows}</tbody></table></div>

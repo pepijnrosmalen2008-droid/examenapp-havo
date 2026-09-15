@@ -8418,3 +8418,19 @@ html.dark #sc-plus, html.dark #sc-plus-intro{
 #sc-plus-intro .pi-feat-ic{width:38px;height:38px;border-radius:11px}
 #sc-plus-intro .pi-feat b{font-size:14.5px}
 #sc-plus-intro .pi-feat span{font-size:12.5px}
+
+/* Persoonlijk blok, herontworpen: cijfer-accent + insight-chips */
+#sc-plus-intro .pi-perso{gap:13px}
+#sc-plus-intro .pip-eyebrow{font-family:var(--font-head);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--or)}
+#sc-plus-intro .pip-forecast{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+#sc-plus-intro .pip-fc{display:flex;flex-direction:column;line-height:1}
+#sc-plus-intro .pip-fc-num{font-family:var(--font-head);font-weight:900;font-size:36px;letter-spacing:-1.2px;color:var(--dk)}
+#sc-plus-intro .pip-fc.goal .pip-fc-num{color:var(--or)}
+#sc-plus-intro .pip-fc-lbl{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--mu);margin-top:5px}
+#sc-plus-intro .pip-arrow{font-size:22px;color:var(--mu);margin-top:-14px}
+#sc-plus-intro .pip-days{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--or);background:var(--orl);border-radius:20px;padding:5px 11px;white-space:nowrap;align-self:flex-start}
+#sc-plus-intro .pip-chips{display:flex;flex-direction:column;gap:8px}
+#sc-plus-intro .pip-chip{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--dk)}
+#sc-plus-intro .pip-chip-dot{flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:var(--or)}
+#sc-plus-intro .pip-doen{display:flex;align-items:baseline;gap:10px;background:var(--orl);border-radius:12px;padding:11px 13px;font-size:12.5px;color:color-mix(in srgb,var(--dk) 82%,transparent);line-height:1.5}
+#sc-plus-intro .pip-doen-lbl{flex:0 0 auto;font-family:var(--font-head);font-weight:800;font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--or)}
