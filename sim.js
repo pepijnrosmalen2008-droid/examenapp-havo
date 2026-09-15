@@ -726,6 +726,8 @@ function examenFinish(){
   document.getElementById('sc-examen').scrollTo(0,0);
   // Badge: eerste echt examen afgemaakt (niet in de afleidingsvrije examenmodus)
   if(!window._examenModus){ try{if(earnAch('examen_done'))setTimeout(()=>showAch('📄','Eerste echt examen afgemaakt!'),1200);}catch(e){} }
+  // Account-uitnodiging na een examen (uitgelogd, met nette cadans).
+  if(!window._examenModus){ setTimeout(()=>{ try{ if(typeof _regEligible==='function' && _regEligible() && typeof _showRegPrompt==='function') _showRegPrompt(); }catch(e){} }, 2000); }
 }
 
 function _exBuildResultList(){

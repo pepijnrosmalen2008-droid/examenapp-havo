@@ -1591,7 +1591,7 @@ function toonRes(){
   try{const _rc=document.getElementById('res-coach');if(_rc)_rc.innerHTML='';}catch(e){}
   // B2: account prompt bottom sheet (first win, anonymous only) - via de wachtrij
   try{
-    if(!currentUser && ST.mode==='snel' && !ST.isFoutenboek && pct>=0.5 && !localStorage.getItem('slagio_reg_prompted')){
+    if(!ST.isFoutenboek && typeof _regEligible==='function' && _regEligible()){
       _RC.reg=pct;
     }
   }catch(e){}
@@ -1701,28 +1701,49 @@ function _qCountUp(el,target,dur){
 }
 function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
+// Mag de account-uitnodiging nu verschijnen? Niet ingelogd, en met een nette
+// cadans: kleine cooldown zodat het niet twee keer vlak na elkaar komt, en na
+// een paar keer wegklikken hooguit nog dagelijks (nooit spammy).
+function _regEligible(){
+  try{
+    if(typeof currentUser!=='undefined' && currentUser) return false;
+    if(localStorage.getItem('slagio_li')==='1') return false;
+    const now=Date.now();
+    const shows=parseInt(localStorage.getItem('slagio_reg_shows')||'0',10)||0;
+    const last=parseInt(localStorage.getItem('slagio_reg_last')||'0',10)||0;
+    const gap = shows>=6 ? 24*3600e3 : 25*60e3; // eerst regelmatig, daarna hooguit 1x/dag
+    return (now-last) >= gap;
+  }catch(e){ return false; }
+}
+function _regMark(){ try{ localStorage.setItem('slagio_reg_shows', String((parseInt(localStorage.getItem('slagio_reg_shows')||'0',10)||0)+1)); localStorage.setItem('slagio_reg_last', String(Date.now())); }catch(e){} }
+function _regGoRegister(){ try{ document.getElementById('reg-prompt-sheet')?.remove(); }catch(e){} try{ pqNotifyClose(); }catch(e){} try{ if(typeof trackEvent==='function') trackEvent('reg_prompt_click'); }catch(e){} try{ switchAuthTab&&switchAuthTab('register'); }catch(e){} try{ show('sc-auth'); }catch(e){} }
+function _regClose(){ try{ document.getElementById('reg-prompt-sheet')?.remove(); }catch(e){} try{ pqNotifyClose(); }catch(e){} }
+// Premium account-uitnodiging (bottom sheet). Toont de kernvoordelen van een
+// gratis account. Aangeroepen via de finish-wachtrij (quiz) en na een examen.
 function _showRegPrompt(pct){
   try{
-    if(localStorage.getItem('slagio_reg_prompted'))return;
-    localStorage.setItem('slagio_reg_prompted','1');
-    const pctNum=Math.round((pct||0)*100);
-    const msg=pct>=0.9?'Bijna perfect resultaat!':pct>=0.7?'Goed gescoord!':'Niet slecht!';
+    if(document.getElementById('reg-prompt-sheet')){ try{pqNotifyClose();}catch(e){} return; }
+    _regMark();
     const el=document.createElement('div');
-    el.id='reg-prompt-sheet';
-    el.style.cssText='position:fixed;inset:0;z-index:9200;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.45);backdrop-filter:blur(4px);animation:_lbFdIn .22s ease';
-    el.innerHTML=`<div style="background:var(--card,#1e2130);border-radius:22px 22px 0 0;padding:28px 24px 36px;width:100%;max-width:480px;box-shadow:0 -8px 40px rgba(0,0,0,.4);animation:_lbSlUp .3s cubic-bezier(.22,1,.36,1)">
-      <div style="text-align:center;margin-bottom:18px">
-        <div style="font-size:32px;margin-bottom:8px">🏆</div>
-        <div style="font-size:19px;font-weight:900;color:var(--or);margin-bottom:4px">${msg} ${pctNum}%</div>
-        <div style="font-size:14px;font-weight:700;color:var(--dk,#e2e8f0);margin-bottom:6px">Sla je score op - gratis</div>
-        <div style="font-size:13px;color:var(--mu,#94a3b8);margin-bottom:20px">Maak een gratis account en verschijn op het leaderboard. Duurt 30 seconden.</div>
-        <button onclick="(function(){document.getElementById('reg-prompt-sheet')?.remove();try{pqNotifyClose();}catch(e){}switchAuthTab&&switchAuthTab('register');show('sc-auth');})()" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;padding:14px 0;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);width:100%;margin-bottom:10px">Account aanmaken - gratis →</button>
-        <button onclick="document.getElementById('reg-prompt-sheet')?.remove();try{pqNotifyClose();}catch(e){}" style="background:none;border:none;color:var(--mu,#94a3b8);font-size:13px;cursor:pointer;font-family:var(--font);padding:6px">Niet nu</button>
+    el.id='reg-prompt-sheet'; el.className='regp-ov';
+    el.innerHTML=`<div class="regp-card" role="dialog" aria-label="Maak een gratis account">
+      <div class="regp-grip"></div>
+      <div class="regp-badge">Gratis account</div>
+      <h3 class="regp-h">Bewaar alles en haal er meer uit</h3>
+      <p class="regp-sub">Maak in 30 seconden een gratis account en ontgrendel het hele platform.</p>
+      <div class="regp-benefits">
+        <div class="regp-b"><span class="regp-b-ic">💾</span><div class="regp-b-t"><b>Je voortgang &amp; cijfers</b><span>bewaard en op elk apparaat</span></div></div>
+        <div class="regp-b"><span class="regp-b-ic">🏆</span><div class="regp-b-t"><b>Leaderboard &amp; wedstrijd</b><span>strijd mee met je klas</span></div></div>
+        <div class="regp-b"><span class="regp-b-ic">🔥</span><div class="regp-b-t"><b>Streaks, munten &amp; kisten</b><span>verdien en verzamel</span></div></div>
+        <div class="regp-b"><span class="regp-b-ic">🤖</span><div class="regp-b-t"><b>AI-nakijken proberen</b><span>3 gratis beoordelingen per week</span></div></div>
       </div>
+      <button class="regp-cta" onclick="_regGoRegister()">Gratis account maken →</button>
+      <button class="regp-later" onclick="_regClose()">Niet nu</button>
     </div>`;
-    el.addEventListener('click',e=>{if(e.target===el){el.remove();try{pqNotifyClose();}catch(_){}}});
+    el.addEventListener('click',e=>{ if(e.target===el) _regClose(); });
     document.body.appendChild(el);
-  }catch(e){}
+    try{ if(typeof trackEvent==='function') trackEvent('reg_prompt_shown'); }catch(e){}
+  }catch(e){ try{pqNotifyClose();}catch(_){}}
 }
 function nextDomeinQ(){
   const doms=ST.vak?.domeinen;
