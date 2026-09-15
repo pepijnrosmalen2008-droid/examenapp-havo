@@ -543,6 +543,15 @@ function vonkCoachChat(seed) {
 // ═══════════════════════════════════════════════════════════════════════
 var _vchat = null;
 function _vchatFox(mood) { return (typeof mascotSVG === 'function') ? mascotSVG(mood || 'blij', 46) : '🦊'; }
+// Lichte Markdown → HTML zodat **vet** en opsommingen netjes tonen i.p.v. sterretjes.
+function _vchatMd(t) {
+  let s = _fbEsc(String(t || ''));
+  s = s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+  s = s.replace(/(^|\n)\s*[\*\-]\s+/g, '$1• ');
+  s = s.replace(/`([^`]+)`/g, '$1');
+  s = s.replace(/\n{2,}/g, '\n').replace(/\n/g, '<br>');
+  return s;
+}
 function openVonkChat(opts) {
   opts = opts || {};
   _vchat = { messages: [], ctx: { vak: opts.vak || '', niveau: (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : ''), onderwerp: opts.onderwerp || '' }, busy: false };
@@ -613,7 +622,7 @@ async function sendVonkChat(seed) {
   _vchat.busy = false; if (send) send.disabled = false;
   if (res && res.text) {
     _vchat.messages.push({ role: 'assistant', content: res.text });
-    _vchatPush('assistant', res.text, false);
+    _vchatPush('assistant', _vchatMd(res.text), true);
     _vchatUpdateQuota();
     try { if (typeof playSound === 'function') playSound('pop'); } catch (e) {}
   } else if (res && res.login) {
