@@ -137,6 +137,39 @@
     .feed-name{font-weight:700;font-size:.8rem;display:flex;align-items:center;gap:.3rem;flex-wrap:wrap}
     .feed-detail{font-size:.72rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .feed-time{font-size:.68rem;color:var(--muted);white-space:nowrap;flex-shrink:0;margin-top:1px}
+    /* ── Grote live-activiteit ── */
+    .live-panel{margin-bottom:.9rem}
+    .live-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.7rem}
+    .live-title{font-size:1.02rem;font-weight:800;display:flex;align-items:center;gap:.5rem}
+    .live-title #live-count{font-size:.72rem;font-weight:600;color:var(--muted);background:rgba(255,255,255,.05);padding:.15rem .5rem;border-radius:999px}
+    .live-pulse{width:9px;height:9px;border-radius:50%;background:var(--green);animation:livePulse 2s infinite}
+    @keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(var(--green-rgb),.5)}70%{box-shadow:0 0 0 7px rgba(var(--green-rgb),0)}100%{box-shadow:0 0 0 0 rgba(var(--green-rgb),0)}}
+    .live-controls{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
+    .live-nivbar{display:flex;gap:.25rem;background:rgba(255,255,255,.04);padding:.2rem;border-radius:10px}
+    .live-nivbtn{font-size:.72rem;font-weight:700;padding:.3rem .7rem;border:none;background:none;color:var(--muted);border-radius:8px;cursor:pointer;transition:all .15s}
+    .live-nivbtn:hover{color:#fff}
+    .live-nivbtn.on{background:var(--or);color:#fff}
+    .live-search{font-size:.78rem;padding:.4rem .7rem;border-radius:9px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:#fff;min-width:190px;outline:none}
+    .live-search:focus{border-color:var(--or)}
+    .live-feed{display:flex;flex-direction:column;gap:.15rem;max-height:72vh;overflow-y:auto;padding-right:.2rem}
+    .live-feed::-webkit-scrollbar{width:5px}
+    .live-feed::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+    .live-row{display:flex;align-items:center;gap:.6rem;padding:.55rem .55rem;border-radius:10px;transition:background .12s}
+    .live-row:hover{background:rgba(255,255,255,.04)}
+    .live-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+    .live-dot.fresh{background:var(--green);box-shadow:0 0 0 3px rgba(var(--green-rgb),.18)}
+    .live-dot.old{background:rgba(255,255,255,.15)}
+    .live-ic{font-size:1.15rem;flex-shrink:0;width:1.65rem;text-align:center}
+    .live-main{flex:1;min-width:0}
+    .live-top{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+    .live-name{font-weight:800;font-size:.88rem}
+    .live-dev{font-size:.72rem;opacity:.7}
+    .live-act{font-size:.77rem;color:var(--muted);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .live-act b{color:#cbd5e1;font-weight:700}
+    .live-time{text-align:right;flex-shrink:0;display:flex;flex-direction:column;line-height:1.2}
+    .live-time span{font-size:.78rem;font-weight:700}
+    .live-time small{font-size:.64rem;color:var(--muted)}
+    .live-empty{padding:2rem;text-align:center;color:var(--muted);font-size:.82rem}
 
     /* ── Heatmap ── */
     .heatmap{display:flex;flex-wrap:wrap;gap:3px}
@@ -301,6 +334,80 @@ function timeAgo(iso) {
   return Math.floor(ms/86400000) + 'd';
 }
 
+// ═══════ LIVE ACTIVITEIT — helpers (wie doet wat, in mensentaal) ═══════
+const LIVE_LABELS = {
+  quiz:['🎯','maakte een snelle quiz'],
+  flashcard:['🃏','deed flashcards'],
+  simulatietoets:['📋','startte een simulatietoets'],
+  oud_examen_pdf:['📄','bekeek een oud-examen PDF'],
+  oud_examen_quiz:['📝','oefende een oud examen'],
+  bot_race:['🏁','racete tegen de bot'],
+  multiplayer:['🏆','speelde multiplayer'],
+  app_open:['👋','opende de app'],
+  feedback:['💬','gaf feedback'],
+  quiz_completed:['✅','voltooide een quiz'],
+  quiz_abandoned:['🚪','brak een quiz af'],
+  ce_cijfer:['🎓','vulde een CE-cijfer in'],
+  ai_nakijken:['🤖','liet AI nakijken'],
+  ai_uitleg:['💡','vroeg AI-uitleg'],
+  plus_kist:['🎁','opende een Plus-kist'],
+  examen_resultaat:['🏅','rondde een examen af'],
+  reg_prompt_shown:['📣','zag de account-uitnodiging'],
+  reg_prompt_click:['✨','klikte op "account maken"'],
+  plus_interesse:['💛','toonde interesse in Plus'],
+};
+function _liveIcon(t){ return (LIVE_LABELS[t]||['⚡'])[0]; }
+function _liveDetail(e){
+  const L=LIVE_LABELS[e.type]; let s = L?L[1]:(e.type||'activiteit');
+  const m=e.meta||{};
+  if(e.vak) s += ' · <b>'+e.vak+'</b>';
+  if(e.type==='quiz' && e.score!=null) s += ' · '+e.score+' pts';
+  if(e.type==='bot_race' && m.diff) s += ' · '+m.diff;
+  if(e.type==='quiz_completed' && m.pct!=null) s += ' · '+m.pct+'%';
+  if(e.type==='quiz_abandoned' && m.gestopt_bij!=null) s += ' · gestopt bij vraag '+m.gestopt_bij;
+  if(e.type==='examen_resultaat' && m.cijfer!=null) s += ' · cijfer '+m.cijfer;
+  if(e.type==='ai_nakijken' && m.plus) s += ' · Plus';
+  if(e.type==='feedback' && m.rating!=null) s += ' · '+m.rating+'★';
+  return s;
+}
+function _liveClock(ts){
+  const d=new Date(ts), now=new Date();
+  const hm=d.toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'});
+  if(d.toDateString()===now.toDateString()) return hm;
+  const y=new Date(now); y.setDate(now.getDate()-1);
+  if(d.toDateString()===y.toDateString()) return 'gisteren '+hm;
+  return d.toLocaleDateString('nl-NL',{day:'numeric',month:'short'})+' '+hm;
+}
+function renderLiveRows(items){
+  if(!items || !items.length) return '<div class="live-empty">Geen activiteit gevonden.</div>';
+  return items.map(e=>{
+    const fresh = Date.now()-new Date(e.ts).getTime() < 1800000; // vers = laatste 30 min
+    const dev = e.device==='mobile-pwa'?'📲':e.device==='mobile'?'📱':e.device==='desktop'?'🖥️':'';
+    return `<div class="live-row">
+      <span class="live-dot ${fresh?'fresh':'old'}"></span>
+      <div class="live-ic">${_liveIcon(e.type)}</div>
+      <div class="live-main">
+        <div class="live-top"><span class="live-name">${e.name}</span>${e.niveau?`<span class="pill ${e.niveau}">${e.niveau.toUpperCase()}</span>`:''}${dev?`<span class="live-dev" title="${e.device||''}">${dev}</span>`:''}</div>
+        <div class="live-act">${_liveDetail(e)}</div>
+      </div>
+      <div class="live-time"><span>${_liveClock(e.ts)}</span><small>${timeAgo(e.ts)} geleden</small></div>
+    </div>`;
+  }).join('');
+}
+function liveFilter(){
+  const all = window._feedAll||[];
+  const q = (document.getElementById('live-search')?.value||'').trim().toLowerCase();
+  window._liveSearch = q;
+  const niv = window._liveNiveau||'all';
+  const items = all.filter(e=>
+    (niv==='all' || e.niveau===niv) &&
+    (!q || (e.name||'').toLowerCase().includes(q) || (e.vak||'').toLowerCase().includes(q))
+  );
+  const box=document.getElementById('live-feed-list'); if(box) box.innerHTML=renderLiveRows(items);
+  const cnt=document.getElementById('live-count'); if(cnt) cnt.textContent=items.length+' acties';
+}
+function liveSetNiveau(n){ window._liveNiveau=n; document.querySelectorAll('.live-nivbtn').forEach(b=>b.classList.toggle('on',b.dataset.niv===n)); liveFilter(); }
+
 function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   // Apply time filter
   const filterMs = window._filter==='24h'?86400000:window._filter==='7d'?7*86400000:null;
@@ -429,11 +536,14 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     heatmap.push({date:d, count:allDayMap[d]||0});
   }
 
-  // Recent combined feed
+  // Recent combined feed - ruime historie (200 acties), volledige velden voor
+  // de grote live-activiteit + client-side filteren op niveau/naam.
   const feedItems = [
-    ...lb.slice(0,30).map(e=>({ts:e.created_at,name:e.naam||'anoniem',detail:`Quiz · ${e.vak_naam||'?'} · ${e.score}pts`,type:'quiz',niveau:e.niveau,device:null})),
-    ...ev.slice(0,30).map(e=>({ts:e.created_at,name:e.naam||'anoniem',detail:`${FEAT.find(f=>f.key===e.event_type)?.label||e.event_type} · ${e.vak_naam||'?'}`,type:e.event_type,niveau:e.niveau,device:e.meta?.device}))
-  ].sort((a,b)=>new Date(b.ts)-new Date(a.ts)).slice(0,25);
+    ...lb.slice(0,150).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:'quiz',niveau:e.niveau,device:null,vak:e.vak_naam,score:e.score,meta:null})),
+    ...ev.slice(0,400).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:e.event_type,niveau:e.niveau,device:e.meta?.device,vak:e.vak_naam,meta:e.meta}))
+  ].sort((a,b)=>new Date(b.ts)-new Date(a.ts)).slice(0,200);
+  window._feedAll = feedItems;
+  window._liveNiveau = window._liveNiveau || 'all';
 
   const typeIcon = t => FEAT.find(f=>f.key===t)?.icon||'⚡';
 
@@ -1125,6 +1235,24 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
 
     <!-- ── Gebruikers & activiteit ── -->
     <div class="sec">Gebruikers & activiteit</div>
+
+    <!-- ── LIVE ACTIVITEIT (groot, prominent: wie doet wat) ── -->
+    <div class="panel live-panel">
+      <div class="live-head">
+        <div class="live-title"><span class="live-pulse"></span>Live activiteit <span id="live-count">${feedItems.length} acties</span></div>
+        <div class="live-controls">
+          <div class="live-nivbar">
+            <button class="live-nivbtn${window._liveNiveau==='all'?' on':''}" data-niv="all" onclick="liveSetNiveau('all')">Alle</button>
+            <button class="live-nivbtn${window._liveNiveau==='havo'?' on':''}" data-niv="havo" onclick="liveSetNiveau('havo')">Havo</button>
+            <button class="live-nivbtn${window._liveNiveau==='vwo'?' on':''}" data-niv="vwo" onclick="liveSetNiveau('vwo')">Vwo</button>
+            <button class="live-nivbtn${window._liveNiveau==='vmbo'?' on':''}" data-niv="vmbo" onclick="liveSetNiveau('vmbo')">Vmbo</button>
+          </div>
+          <input id="live-search" class="live-search" type="search" placeholder="Zoek op naam of vak…" value="${(window._liveSearch||'').replace(/"/g,'&quot;')}" oninput="liveFilter()">
+        </div>
+      </div>
+      <div class="live-feed" id="live-feed-list">${renderLiveRows((window._feedAll||feedItems).filter(e=>(window._liveNiveau==='all'||!window._liveNiveau||e.niveau===window._liveNiveau)&&(!(window._liveSearch)|| (e.name||'').toLowerCase().includes(window._liveSearch)||(e.vak||'').toLowerCase().includes(window._liveSearch))))}</div>
+    </div>
+
     <div class="row-2">
       <div class="panel">
         <div class="panel-h">Top gebruikers <span>op quiz-sessies</span></div>
@@ -1144,28 +1272,6 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
       </div>
 
       <div style="display:flex;flex-direction:column;gap:.6rem">
-        <div class="panel" style="flex:1">
-          <div class="panel-h">Live activiteit <span>quiz + features</span></div>
-          <div class="feed">
-            ${feedItems.map(e=>{
-              const fresh = Date.now()-new Date(e.ts).getTime() < 3600000;
-              const devIcon = e.device==='mobile-pwa'?'📲':e.device==='mobile'?'📱':e.device==='desktop'?'🖥️':'';
-              return `<div class="feed-row">
-                <span class="feed-dot ${fresh?'fresh':'old'}"></span>
-                <div class="feed-main">
-                  <div class="feed-name">
-                    <span>${typeIcon(e.type)} ${e.name}</span>
-                    ${e.niveau?`<span class="pill ${e.niveau}">${e.niveau.toUpperCase()}</span>`:''}
-                    ${devIcon?`<span title="${e.device||''}" style="font-size:.72rem;opacity:.75">${devIcon}</span>`:''}
-                  </div>
-                  <div class="feed-detail">${e.detail}</div>
-                </div>
-                <span class="feed-time">${timeAgo(e.ts)}</span>
-              </div>`;
-            }).join('')}
-          </div>
-        </div>
-
         <div class="panel">
           <div class="panel-h">Activiteit heatmap <span>10 weken · quiz + features</span></div>
           <div class="heatmap">
