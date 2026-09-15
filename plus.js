@@ -277,6 +277,7 @@ function plusHerhaling(vakId, niveau){
 // ═══════ PLUS-DASHBOARD ═══════
 let _plusVak = null;
 function openPlusDashboard(){
+  window._plusEntering=true; // animeer alleen bij echte binnenkomst, niet bij re-renders
   try{ if(typeof show==='function') show('sc-plus'); }catch(e){}
   renderPlusDashboard();
 }
@@ -478,6 +479,11 @@ function _plusSparkle(host){
   }catch(e){}
 }
 function _plusAnimate(screenId){
+  // Alleen animeren bij echte binnenkomst (openPlusDashboard/openPlusIntro).
+  // Bij een re-render in de pagina zelf (vak wisselen, doel/tijd aanpassen)
+  // staat alles al in eindtoestand - dan NIETS opnieuw laten binnenkomen.
+  const entering = !!window._plusEntering; window._plusEntering=false;
+  if(!entering) return;
   const root=document.getElementById(screenId==='sc-plus'?'sc-plus-body':'sc-plus-intro-body');
   if(!root) return;
   const reduced=_plusReduced();
@@ -549,7 +555,7 @@ const _PLUS_VERGELIJK = [
   ['Alle vakken inbegrepen', true, true],
 ];
 
-function openPlusIntro(){ try{ show('sc-plus-intro'); }catch(e){} renderPlusIntro(); }
+function openPlusIntro(){ window._plusEntering=true; try{ show('sc-plus-intro'); }catch(e){} renderPlusIntro(); }
 // plusIntro() (aangeroepen vanuit sim.js/dashboard) opent voortaan het scherm.
 function plusIntro(){ openPlusIntro(); }
 
