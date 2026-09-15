@@ -634,6 +634,14 @@ const _PLUS_VERGELIJK = [
   ['Wekelijkse kist, outfits &amp; looks', false, '★ Plus'],
   ['Alle vakken inbegrepen', true, true],
 ];
+// Korte, visueel rijke uitgelichte features (4 tegels) - de highlights, geen
+// volledige lijst (die staat in de vergelijkingstabel).
+const _PLUS_HIGHLIGHTS = [
+  ['🤖','AI-nakijken','Feedback per scoringspunt op je open vragen.'],
+  ['📈','Verwacht cijfer','Zie zwart-op-wit hoe je ervoor staat.'],
+  ['🗺️','Vandaag-plan','Elke dag precies wat het meeste oplevert.'],
+  ['🎁','Wekelijkse kist','Munten plus exclusieve outfits &amp; looks.'],
+];
 
 function openPlusIntro(){ window._plusEntering=true; try{ show('sc-plus-intro'); }catch(e){} renderPlusIntro(); }
 // plusIntro() (aangeroepen vanuit sim.js/dashboard) opent voortaan het scherm.
@@ -653,14 +661,18 @@ function _plusIntroPersoonlijk(niveau){
   if(openZwak) chips.push(`<div class="pip-chip"><span class="pip-chip-dot"></span>Meeste puntverlies bij <b>open vragen</b></div>`);
   const vd = (typeof plusVandaag==='function') ? plusVandaag(niveau) : null;
   const doen = vd ? vd.taken.slice(0,3).map(t=>t.t).join(' · ') : '';
+  const gap = Math.max(0, Math.round((p.doel - p.voorspeld.cijfer)*10)/10);
+  const pct = Math.max(6, Math.min(100, Math.round(p.voorspeld.cijfer/(p.doel||1)*100)));
   return `<div class="pi-perso">
-    <div class="pip-eyebrow">Jouw stand nu · ${pri.vak}</div>
+    <div class="pip-eyebrow"><span class="pip-eye-dot"></span>Jouw stand nu · ${pri.vak}</div>
     <div class="pip-forecast">
       <div class="pip-fc"><span class="pip-fc-num">${p.voorspeld.cijfer.toFixed(1)}</span><span class="pip-fc-lbl">verwacht nu</span></div>
       <span class="pip-arrow" aria-hidden="true">→</span>
       <div class="pip-fc goal"><span class="pip-fc-num">${p.doel.toFixed(1)}</span><span class="pip-fc-lbl">jouw doel</span></div>
       ${p.dagen?`<div class="pip-days">nog ${p.dagen.dagen} dagen</div>`:''}
     </div>
+    <div class="pip-prog"><div class="pip-prog-track"><i style="width:${pct}%"></i></div>
+      <div class="pip-prog-cap">${gap>0?`nog <b>+${gap.toFixed(1)}</b> tot je doel`:'je doel is binnen bereik 🎉'}</div></div>
     ${chips.length?`<div class="pip-chips">${chips.join('')}</div>`:''}
     ${doen?`<div class="pip-doen"><span class="pip-doen-lbl">Vandaag</span><span>${doen}</span></div>`:''}
   </div>`;
@@ -671,7 +683,7 @@ function renderPlusIntro(){
   const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
   const perso=_plusIntroPersoonlijk(niveau);
   const active = (typeof plusActive==='function') && plusActive();
-  const feats=_PLUS_FEATURES.map(f=>`<div class="pi-feat"><span class="pi-feat-ic">${f[0]}</span><div><b>${f[1]}</b><span>${f[2]}</span></div></div>`).join('');
+  const hl=_PLUS_HIGHLIGHTS.map(f=>`<div class="pi-hltile"><span class="pi-hltile-ic">${f[0]}</span><b>${f[1]}</b><span class="pi-hltile-d">${f[2]}</span></div>`).join('');
   const cell=v=> v===true?'<span class="pi-y">✓</span>' : (v===false?'<span class="pi-n">–</span>' : `<span class="pi-v">${v}</span>`);
   const rows=_PLUS_VERGELIJK.map(r=>`<tr><td>${r[0]}</td><td>${cell(r[1])}</td><td>${cell(r[2])}</td></tr>`).join('');
   const plans=_PLUS_PLANNEN.map(p=>`<div class="pi-plan${p.best?' best':''}">
@@ -692,6 +704,8 @@ function renderPlusIntro(){
     ${(typeof mascotBubble==='function')?mascotBubble('Ik ben <b>Vonk</b>! Gratis Slagio helpt je oefenen - dat blijft altijd zo. Met <b>Plus</b> laat ik je precies zien waar je staat, wat je vandaag moet doen, en kijk ik je open vragen na. En elke week krijg je een <b>kist</b> met munten en exclusieve outfits &amp; looks. 🎁','blij',{}):''}
     ${perso}
     ${active?`<div class="pi-active">✓ Je hebt Slagio Plus. <button class="pi-link" onclick="openPlusDashboard()">Naar je examentrainer</button></div>`:''}
+    <div class="pi-hl-eyebrow">Dit krijg je met Plus</div>
+    <div class="pi-highlights">${hl}</div>
     <div class="pi-vergelijk">
       <div class="pi-card-h">Gratis blijft gratis</div>
       <div class="pi-tbl-wrap"><table class="pi-tbl"><thead><tr><th></th><th>Gratis</th><th>Plus</th></tr></thead><tbody>${rows}</tbody></table></div>
