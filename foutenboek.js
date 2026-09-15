@@ -579,6 +579,7 @@ function openVonkChat(opts) {
     ? `Hoi! Ik ben Vonk 🦊 Stel me gerust een vraag over <b>${_fbEsc(opts.onderwerp)}</b> - ik leg het je zo helder mogelijk uit.`
     : `Hoi! Ik ben Vonk 🦊 Waar wil je meer over weten? Ik help je met de examenstof.`);
   _vchatPush('assistant', intro, true);
+  if (!opts.seedUser) _vchatChips(opts);
   try { trackEvent('vonk_chat_open', { vak: opts.vak, onderwerp: opts.onderwerp }); } catch (e) {}
   if (opts.seedUser) { setTimeout(() => sendVonkChat(opts.seedUser), 350); }
   else { setTimeout(() => { const ta = document.getElementById('vchat-ta'); if (ta) ta.focus(); }, 350); }
@@ -607,11 +608,23 @@ function _vchatTyping(on) {
   const fox = document.getElementById('vchat-fox'); if (fox) fox.innerHTML = _vchatFox(on ? 'kijk' : 'blij');
 }
 function _vchatDisable(ctaHtml) { const bar = document.getElementById('vchat-inputbar'); if (bar) bar.innerHTML = ctaHtml || ''; }
+// Tik-bare suggestievragen om Vonk snel op weg te helpen.
+function _vchatChips(opts) {
+  const o = opts || {};
+  const list = o.onderwerp
+    ? ['Leg ' + o.onderwerp + ' kort uit', 'Geef een voorbeeld', 'Waarom is dit belangrijk?', 'Overhoor me hierover']
+    : ['Leg een lastig onderwerp uit', 'Overhoor me', 'Geef me een studietip'];
+  const box = document.getElementById('vchat-msgs'); if (!box) return;
+  const row = document.createElement('div'); row.id = 'vchat-chips'; row.className = 'vchat-chips';
+  row.innerHTML = list.map(t => `<button class="vchat-chip" data-q="${_fbEsc(t)}" onclick="sendVonkChat(this.dataset.q)">${_fbEsc(t)}</button>`).join('');
+  box.appendChild(row); box.scrollTop = box.scrollHeight;
+}
 async function sendVonkChat(seed) {
   if (!_vchat || _vchat.busy) return;
   const ta = document.getElementById('vchat-ta');
   const text = (seed != null && typeof seed === 'string') ? seed : (ta ? ta.value.trim() : '');
   if (!text) return;
+  try { const ch = document.getElementById('vchat-chips'); if (ch) ch.remove(); } catch (e) {}
   _vchat.messages.push({ role: 'user', content: text });
   _vchatPush('user', text, false);
   if (ta) { ta.value = ''; _vchatGrow(ta); }

@@ -8524,6 +8524,11 @@ html.dark #sc-plus, html.dark #sc-plus-intro{
 .vchat-send:hover{filter:brightness(1.06)}
 .vchat-send:disabled{opacity:.5;cursor:default}
 .vchat-cta{width:100%;background:var(--or);color:#fff;border:none;border-radius:12px;padding:12px;font-family:var(--font-head);font-weight:800;font-size:14px;cursor:pointer}
+.vchat-chips{display:flex;flex-wrap:wrap;gap:7px;padding:0 0 2px 36px}
+.vchat-chip{font-size:12px;font-weight:600;padding:7px 12px;border-radius:16px;border:1.5px solid var(--bo);background:var(--s);color:var(--or);cursor:pointer;transition:border-color .15s,background .15s}
+.vchat-chip:hover{border-color:var(--or);background:var(--orl)}
+@media (prefers-reduced-motion:no-preference){.vchat-row,.vchat-chip{animation:vchatIn .28s cubic-bezier(.22,1,.36,1) backwards}}
+@keyframes vchatIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 /* "Vraag Vonk" op het resultaatscherm */
 .res-vonk-ask{display:flex;align-items:center;gap:11px;width:100%;margin-top:10px;padding:13px 15px;border:1.5px solid rgba(var(--or-rgb),.28);border-radius:15px;background:var(--orl);color:var(--dk);cursor:pointer;text-align:left;transition:transform .16s cubic-bezier(.34,1.2,.64,1),border-color .16s}
 .res-vonk-ask:hover{transform:translateY(-2px);border-color:var(--or)}
