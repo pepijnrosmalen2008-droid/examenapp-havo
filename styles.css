@@ -8357,3 +8357,26 @@ html.dark #sc-plus, html.dark #sc-plus-intro{
 }
 /* Sparkline volgt het goud-accent (currentColor) i.p.v. los oranje */
 #sc-plus .plus-spark{color:var(--or)}
+
+/* ── DOPAMINE-LAAG: beweging & beloning ───────────────────────────────── */
+@keyframes plusRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes plusSheen{0%{transform:translateX(-180%) skewX(-18deg)}100%{transform:translateX(340%) skewX(-18deg)}}
+@keyframes plusSpark{0%{opacity:0;transform:translate(-50%,-50%) scale(.2)}30%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1)}}
+@keyframes plusGlow{0%,100%{box-shadow:0 26px 52px -24px rgba(8,10,18,.55),0 0 0 0 rgba(216,172,82,0)}50%{box-shadow:0 26px 52px -24px rgba(8,10,18,.55),0 0 30px -2px rgba(216,172,82,.4)}}
+/* sparkle-deeltjes bij een behaald doel */
+.plus-sparkle{position:absolute;left:0;top:50%;width:6px;height:6px;border-radius:50%;background:var(--pk-gold,#d8ac52);pointer-events:none;box-shadow:0 0 7px 1px rgba(216,172,82,.75);animation:plusSpark 1s ease-out forwards}
+/* hover-lift: alles voelt aanraakbaar */
+#sc-plus-intro .pi-feat,#sc-plus-intro .pi-plan,#sc-plus .plus-card{transition:transform .18s cubic-bezier(.34,1.2,.64,1),box-shadow .18s ease,border-color .18s ease}
+#sc-plus-intro .pi-feat:hover,#sc-plus-intro .pi-plan:hover:not(.best){transform:translateY(-3px);border-color:rgba(var(--or-rgb),.35)}
+
+@media (prefers-reduced-motion:no-preference){
+  /* levende glans over de gouden CTA's */
+  #sc-plus .plus-vandaag:not(.locked) .plus-cta,#sc-plus-intro .pi-plan.best .pi-plan-btn{position:relative;overflow:hidden}
+  #sc-plus .plus-vandaag:not(.locked) .plus-cta::after,#sc-plus-intro .pi-plan.best .pi-plan-btn::after{
+    content:"";position:absolute;top:0;left:0;width:45%;height:100%;pointer-events:none;
+    background:linear-gradient(105deg,transparent,rgba(255,255,255,.55),transparent);
+    animation:plusSheen 4.5s ease-in-out 1.6s infinite;
+  }
+  /* ademende goud-glow rond de beste prijskaart */
+  #sc-plus-intro .pi-plan.best{animation:plusGlow 3.6s ease-in-out infinite}
+}

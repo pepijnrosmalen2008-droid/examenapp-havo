@@ -430,10 +430,90 @@ function renderPlusDashboard(){
     <div class="plus-sec-h">Per vak</div>
     <div class="plus-vchips">${chips}</div>${head}${modusHtml}${rapHtml}${readyHtml}${zwakHtml}${ontwHtml}${overHtml}
     ${!isPlus?`<div class="plus-upsell-foot"><b>Slagio Plus</b> geeft je AI-nakijken, je verwachte cijfer, readiness en een persoonlijk plan. Oefenen en zelf nakijken blijven altijd gratis.<button class="plus-cta" onclick="plusIntro()">🎯 Bekijk Slagio Plus</button></div>`:''}`;
+  try{ _plusAnimate('sc-plus'); }catch(e){}
 }
 function _plusDatum(iso){ try{ const d=new Date(iso+'T00:00:00'); const mn=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec']; return d.getDate()+' '+mn[d.getMonth()]; }catch(e){ return iso; } }
 
 function _plusLockBtn(){ return `<button class="pl-btn" onclick="plusIntro()">🔒 Slagio Plus</button>`; }
+
+// ═══════════════════════════════════════════════════════════════════════
+// DOPAMINE-LAAG — beweging + progressie + beloning maken de pagina levend.
+// Onderbouwd door onderzoek naar micro-rewards: cijfers tellen op, ringen en
+// balken vullen zich, de sparkline tekent zichzelf, kaarten komen gespreid
+// binnen, en een behaald doel geeft een kleine sparkle. Alles kort (<1,1s),
+// ease-out/veerkrachtig, en volledig uitgeschakeld bij prefers-reduced-motion.
+// ═══════════════════════════════════════════════════════════════════════
+function _plusReduced(){ try{ return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); }catch(e){ return false; } }
+function _plusEase(t){ return 1-Math.pow(1-t,3); } // easeOutCubic
+function _plusCountUp(el){
+  const raw=(el.getAttribute('data-cu')!=null)?el.getAttribute('data-cu'):el.textContent;
+  if(el.children && el.children.length) return; // markup niet platslaan
+  el.setAttribute('data-cu', raw);
+  const m=String(raw).match(/^(\D*)(\d+(?:[.,]\d+)?)(\D*)$/);
+  if(!m){ el.textContent=raw; return; }
+  const pre=m[1], numStr=m[2], suf=m[3];
+  const dec=(numStr.split(/[.,]/)[1]||'').length;
+  const sep=numStr.indexOf(',')>=0?',':'.';
+  const target=parseFloat(numStr.replace(',','.'));
+  if(isNaN(target)){ el.textContent=raw; return; }
+  if(_plusReduced()){ el.textContent=raw; return; }
+  const dur=850, t0=performance.now();
+  (function step(now){
+    const p=Math.min(1,(now-t0)/dur), v=target*_plusEase(p);
+    el.textContent=pre+v.toFixed(dec).replace('.',sep)+suf;
+    if(p<1) requestAnimationFrame(step); else el.textContent=raw;
+  })(t0);
+}
+function _plusSparkle(host){
+  try{
+    host.style.position='relative';
+    for(let i=0;i<7;i++){
+      const s=document.createElement('span'); s.className='plus-sparkle';
+      const ang=Math.random()*6.283, dist=14+Math.random()*22;
+      s.style.setProperty('--dx',(Math.cos(ang)*dist).toFixed(0)+'px');
+      s.style.setProperty('--dy',(Math.sin(ang)*dist).toFixed(0)+'px');
+      s.style.animationDelay=(Math.random()*0.15).toFixed(2)+'s';
+      host.appendChild(s); setTimeout(()=>{try{s.remove();}catch(e){}},1300);
+    }
+  }catch(e){}
+}
+function _plusAnimate(screenId){
+  const root=document.getElementById(screenId==='sc-plus'?'sc-plus-body':'sc-plus-intro-body');
+  if(!root) return;
+  const reduced=_plusReduced();
+  // 1) gespreide binnenkomst van de kaarten
+  if(!reduced){
+    [...root.children].forEach((c,i)=>{
+      c.style.animation='none'; void c.offsetWidth;
+      c.style.animation='plusRise .5s cubic-bezier(.22,1,.36,1) '+Math.min(i*0.055,0.5).toFixed(3)+'s backwards';
+    });
+  }
+  // 2) cijfers tellen op (jouw eigen getallen = de echte beloning)
+  root.querySelectorAll('.pf-num,.ring span,.pr-fac b,.pz-pct,.po-ready').forEach(_plusCountUp);
+  // 3) readiness-ring vult zich
+  root.querySelectorAll('.ring').forEach(r=>{
+    const target=parseFloat(r.style.getPropertyValue('--p')||'0')||0;
+    if(reduced){ r.style.setProperty('--p',String(target)); return; }
+    const t0=performance.now(), dur=1000;
+    r.style.setProperty('--p','0');
+    (function st(now){ const p=Math.min(1,(now-t0)/dur); r.style.setProperty('--p',(target*_plusEase(p)).toFixed(1)); if(p<1) requestAnimationFrame(st); })(t0);
+  });
+  // 4) readiness-balken schuiven open
+  if(!reduced) root.querySelectorAll('.pr-fac .pr-bar i').forEach(bar=>{
+    const w=bar.style.width; if(!w) return;
+    bar.style.transition='none'; bar.style.width='0%'; void bar.offsetWidth;
+    bar.style.transition='width 1s cubic-bezier(.22,1,.36,1)'; bar.style.width=w;
+  });
+  // 5) sparkline tekent zichzelf
+  if(!reduced) root.querySelectorAll('.plus-spark polyline').forEach(pl=>{
+    try{ const len=pl.getTotalLength(); if(!len) return;
+      pl.style.strokeDasharray=len; pl.style.strokeDashoffset=len; pl.getBoundingClientRect();
+      pl.style.transition='stroke-dashoffset 1.1s ease'; pl.style.strokeDashoffset='0';
+    }catch(e){}
+  });
+  // 6) sparkle als het doel gehaald is
+  if(!reduced){ const done=root.querySelector('.pf-need.done'); if(done) setTimeout(()=>_plusSparkle(done),650); }
+}
 function plusTijd(){ try{ const v=parseInt(localStorage.getItem('slagio_plus_tijd')||'20',10); return isNaN(v)?20:v; }catch(e){ return 20; } }
 function plusSetTijd(m){ try{ localStorage.setItem('slagio_plus_tijd', String(m)); }catch(e){} renderPlusDashboard(); }
 function _plusStart(vakId){
@@ -531,6 +611,7 @@ function renderPlusIntro(){
     <div class="pi-plans">${plans}</div>
     <div class="pi-trial">Twijfel je? Je krijgt <b>3 AI-beoordelingen per week gratis</b>, zonder account of creditcard. Zo voel je eerst wat Plus doet.</div>
   `;
+  try{ _plusAnimate('sc-plus-intro'); }catch(e){}
 }
 
 // Checkout: nog niet gekoppeld aan de betaalprovider (Mollie/iDEAL). Registreert
