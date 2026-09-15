@@ -418,7 +418,13 @@ function openVonkCoach(ctx) {
   ctx.why = why; // bewaren zodat de AI-uitleg op de canonieke content kan voortbouwen
   const juist = ctx.o ? (ctx.o[ctx.c] || '') : '';
   const aiOn = (typeof aiEnabled === 'function' && aiEnabled());
-  const aiBlok = aiOn ? `<button class="vc-ai-btn" id="vc-ai-btn" onclick="vonkCoachAI()"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M3 12h3M18 12h3M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg> Laat Vonk het écht uitleggen <span class="vc-ai-left">nog ${(typeof aiQuotaLeft==='function'?aiQuotaLeft():3)}</span></button><div class="vc-ai-out" id="vc-ai-out" hidden></div>` : '';
+  const _aiLeft = (typeof aiWeekLeft==='function')?aiWeekLeft():((typeof aiQuotaLeft==='function')?aiQuotaLeft():3);
+  const _plusOn = (typeof plusActive==='function' && plusActive());
+  const aiBlok = aiOn ? `<div class="vc-ai-row">
+      <button class="vc-ai-btn" onclick="vonkCoachChat('explain')"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M3 12h3M18 12h3M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg> Laat Vonk het uitleggen</button>
+      <button class="vc-ai-btn vc-ai-ghost" onclick="vonkCoachChat()"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H10l-4 4V16H4z"/></svg> Zelf een vraag stellen</button>
+      <span class="vc-ai-left">${_plusOn?'Plus · onbeperkt vragen ✦':'nog '+_aiLeft+' gratis AI-vragen deze week'}</span>
+    </div>` : '';
   const fox = (typeof mascotSVG === 'function') ? mascotSVG('kijk', 60) : '🦊';
   el.innerHTML = `<div class="vc-back" onclick="closeVonkCoach()"></div>
     <div class="vc-card" role="dialog">
@@ -516,3 +522,107 @@ function _vonkMarkVerbeterd(domId) {
 }
 
 function closeVonkCoach() { const el = document.getElementById('vonk-coach'); if (el) el.classList.remove('on'); }
+
+// Open de coach-AI voortaan als een echte chat met Vonk. 'explain' = Vonk legt
+// deze fout uit; zonder arg = de leerling stelt zelf een vraag over het onderwerp.
+function vonkCoachChat(seed) {
+  const ctx = _vcCtx; if (!ctx) return;
+  const juist = ctx.o ? (ctx.o[ctx.c] || '') : '';
+  const opts = { vak: ctx.vakNaam, onderwerp: ctx.domNaam };
+  if (seed === 'explain') {
+    opts.intro = 'Even samen naar deze vraag kijken 🦊';
+    opts.seedUser = `Ik had deze vraag fout en snap het niet goed.\nVraag: ${ctx.v}\nMijn antwoord: ${ctx.chosen || '(geen)'}\nJuiste antwoord: ${juist}\nLeg kort en duidelijk uit waarom het juiste antwoord klopt en waar ik de fout in ging.`;
+  }
+  closeVonkCoach();
+  openVonkChat(opts);
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// VONK-CHAT — leergerichte AI-studiecoach: meerdere beurten, eigen vragen,
+// met Vonk-animaties. Gedeeld weekquotum met AI-nakijken (server is leidend).
+// ═══════════════════════════════════════════════════════════════════════
+var _vchat = null;
+function _vchatFox(mood) { return (typeof mascotSVG === 'function') ? mascotSVG(mood || 'blij', 46) : '🦊'; }
+function openVonkChat(opts) {
+  opts = opts || {};
+  _vchat = { messages: [], ctx: { vak: opts.vak || '', niveau: (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : ''), onderwerp: opts.onderwerp || '' }, busy: false };
+  let el = document.getElementById('vonk-chat');
+  if (!el) { el = document.createElement('div'); el.id = 'vonk-chat'; document.body.appendChild(el); }
+  const sub = opts.onderwerp ? _fbEsc(opts.onderwerp) : (opts.vak ? _fbEsc(opts.vak) : 'je studiecoach');
+  el.innerHTML = `
+    <div class="vchat-back" onclick="closeVonkChat()"></div>
+    <div class="vchat-card" role="dialog" aria-label="Chat met Vonk">
+      <div class="vchat-head">
+        <div class="vchat-fox" id="vchat-fox">${_vchatFox('blij')}</div>
+        <div class="vchat-hd"><div class="vchat-name">Vonk <span class="vchat-badge">AI-studiecoach</span></div><div class="vchat-sub">${sub}</div></div>
+        <span class="vchat-quota" id="vchat-quota"></span>
+        <button class="vchat-x" onclick="closeVonkChat()" aria-label="Sluiten">✕</button>
+      </div>
+      <div class="vchat-msgs" id="vchat-msgs"></div>
+      <div class="vchat-input" id="vchat-inputbar">
+        <textarea id="vchat-ta" rows="1" placeholder="Stel Vonk een vraag over ${sub}…" oninput="_vchatGrow(this)" onkeydown="_vchatKey(event)"></textarea>
+        <button class="vchat-send" id="vchat-send" onclick="sendVonkChat()" aria-label="Versturen"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+      </div>
+    </div>`;
+  requestAnimationFrame(() => el.classList.add('on'));
+  _vchatUpdateQuota();
+  const intro = opts.intro || (opts.onderwerp
+    ? `Hoi! Ik ben Vonk 🦊 Stel me gerust een vraag over <b>${_fbEsc(opts.onderwerp)}</b> - ik leg het je zo helder mogelijk uit.`
+    : `Hoi! Ik ben Vonk 🦊 Waar wil je meer over weten? Ik help je met de examenstof.`);
+  _vchatPush('assistant', intro, true);
+  try { trackEvent('vonk_chat_open', { vak: opts.vak, onderwerp: opts.onderwerp }); } catch (e) {}
+  if (opts.seedUser) { setTimeout(() => sendVonkChat(opts.seedUser), 350); }
+  else { setTimeout(() => { const ta = document.getElementById('vchat-ta'); if (ta) ta.focus(); }, 350); }
+}
+function closeVonkChat() { const el = document.getElementById('vonk-chat'); if (el) { el.classList.remove('on'); setTimeout(() => { if (el.parentNode) el.remove(); }, 240); } _vchat = null; }
+function _vchatGrow(ta) { ta.style.height = 'auto'; ta.style.height = Math.min(ta.scrollHeight, 120) + 'px'; }
+function _vchatKey(e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendVonkChat(); } }
+function _vchatUpdateQuota() {
+  const q = document.getElementById('vchat-quota'); if (!q) return;
+  if (typeof plusActive === 'function' && plusActive()) { q.textContent = 'Plus ✦'; q.className = 'vchat-quota plus'; return; }
+  const left = (typeof aiWeekLeft === 'function') ? aiWeekLeft() : 3;
+  q.textContent = 'nog ' + left + ' gratis'; q.className = 'vchat-quota' + (left <= 0 ? ' op' : '');
+}
+function _vchatPush(role, html, isHtml) {
+  const box = document.getElementById('vchat-msgs'); if (!box) return null;
+  const row = document.createElement('div'); row.className = 'vchat-row ' + role;
+  const av = role === 'assistant' ? `<div class="vchat-av">${_vchatFox('blij')}</div>` : '';
+  row.innerHTML = av + `<div class="vchat-bubble">${isHtml ? html : _fbEsc(html).replace(/\n/g, '<br>')}</div>`;
+  box.appendChild(row); box.scrollTop = box.scrollHeight; return row;
+}
+function _vchatTyping(on) {
+  const box = document.getElementById('vchat-msgs'); if (!box) return;
+  let t = document.getElementById('vchat-typing');
+  if (on) { if (!t) { t = document.createElement('div'); t.id = 'vchat-typing'; t.className = 'vchat-row assistant'; t.innerHTML = `<div class="vchat-av">${_vchatFox('kijk')}</div><div class="vchat-bubble vchat-typing"><span></span><span></span><span></span></div>`; box.appendChild(t); box.scrollTop = box.scrollHeight; } }
+  else if (t) { t.remove(); }
+  const fox = document.getElementById('vchat-fox'); if (fox) fox.innerHTML = _vchatFox(on ? 'kijk' : 'blij');
+}
+function _vchatDisable(ctaHtml) { const bar = document.getElementById('vchat-inputbar'); if (bar) bar.innerHTML = ctaHtml || ''; }
+async function sendVonkChat(seed) {
+  if (!_vchat || _vchat.busy) return;
+  const ta = document.getElementById('vchat-ta');
+  const text = (seed != null && typeof seed === 'string') ? seed : (ta ? ta.value.trim() : '');
+  if (!text) return;
+  _vchat.messages.push({ role: 'user', content: text });
+  _vchatPush('user', text, false);
+  if (ta) { ta.value = ''; _vchatGrow(ta); }
+  _vchat.busy = true; const send = document.getElementById('vchat-send'); if (send) send.disabled = true;
+  _vchatTyping(true);
+  let res = null; try { res = await aiVonkChat(_vchat.messages, _vchat.ctx); } catch (e) { res = { error: true }; }
+  _vchatTyping(false);
+  _vchat.busy = false; if (send) send.disabled = false;
+  if (res && res.text) {
+    _vchat.messages.push({ role: 'assistant', content: res.text });
+    _vchatPush('assistant', res.text, false);
+    _vchatUpdateQuota();
+    try { if (typeof playSound === 'function') playSound('pop'); } catch (e) {}
+  } else if (res && res.login) {
+    _vchatPush('assistant', `Maak eerst een <b>gratis account</b>, dan onthoud ik je vragen en kan ik je echt helpen. 🦊`, true);
+    _vchatDisable(`<button class="vchat-cta" onclick="try{switchAuthTab&&switchAuthTab('register')}catch(e){};show('sc-auth');closeVonkChat()">Gratis account maken →</button>`);
+  } else if (res && res.limit) {
+    _vchatPush('assistant', `Je <b>3 gratis vragen</b> van deze week zijn op! Met Slagio Plus vraag je me zo vaak je wilt. ✨`, true);
+    _vchatDisable(`<button class="vchat-cta" onclick="closeVonkChat();try{plusIntro()}catch(e){}">Bekijk Slagio Plus</button>`);
+  } else {
+    _vchatPush('assistant', `Ik kon je nu even niet antwoorden. Probeer het zo nog eens, of stel je vraag anders. 💪`, true);
+  }
+}

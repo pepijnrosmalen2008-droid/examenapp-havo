@@ -263,6 +263,49 @@ async function handleUitleg(p: any): Promise<Result> {
   }
 }
 
+// Vonk-chat: een leergerichte, meerdere-beurten studiecoach. Krijgt de
+// gesprekshistorie mee en antwoordt kort, helder en inhoudelijk op het niveau
+// van de leerling.
+async function handleChat(p: any): Promise<Result> {
+  const key = Deno.env.get("ANTHROPIC_API_KEY");
+  if (!key) return { status: 500, body: { error: "server niet geconfigureerd" }, charged: false };
+  const msgs = Array.isArray(p.messages)
+    ? p.messages
+        .filter((m: any) => m && (m.role === "user" || m.role === "assistant") && typeof m.content === "string" && m.content.trim())
+        .slice(-12)
+        .map((m: any) => ({ role: m.role, content: String(m.content).slice(0, 2000) }))
+    : [];
+  if (!msgs.length || msgs[msgs.length - 1].role !== "user") {
+    return { status: 400, body: { error: "geen vraag" }, charged: false };
+  }
+  const niveau = p.niveau || "havo/vwo";
+  const system =
+    `Je bent Vonk, de slimme, geduldige studiecoach van Slagio voor het Nederlandse eindexamen` +
+    `${p.vak ? ` ${p.vak}` : ""}. Je helpt een ${niveau}-leerling` +
+    `${p.onderwerp ? ` met het onderwerp "${p.onderwerp}"` : ""}.\n\n` +
+    `ZO ANTWOORD JE:\n` +
+    `1. Leg helder en to-the-point uit, precies op het niveau van de leerling. Korte zinnen, een concreet voorbeeld erbij.\n` +
+    `2. Ga inhoudelijk de diepte in: de leerling moet het echt snappen en er iets aan hebben. Geef de kern, niet alleen een definitie.\n` +
+    `3. Hou het kort: rond de 120 woorden, tenzij de vraag echt meer vraagt. Geen omhaal, geen inleiding vooraf.\n` +
+    `4. Je bent warm en bemoedigend, af en toe een klein grapje of een emoji - maar de uitleg staat altijd voorop; nooit quasi-leuk zonder inhoud.\n` +
+    `5. Blijf bij de examenstof en het vak. Vraagt de leerling iets dat niets met leren te maken heeft, breng het vriendelijk terug naar de stof.\n` +
+    `6. Sluit af en toe af met een mini-check ("Snap je deze stap?") of een concrete tip. Schrijf altijd in het Nederlands.`;
+  try {
+    const resp = await fetch(ANTHROPIC_URL, {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model: MODEL, max_tokens: 600, system, messages: msgs }),
+    });
+    if (!resp.ok) return { status: 502, body: { error: "AI-fout" }, charged: false };
+    const data = await resp.json().catch(() => null);
+    const text = data?.content?.[0]?.text || "";
+    if (!text) return { status: 502, body: { error: "geen antwoord" }, charged: false };
+    return { status: 200, body: { text }, charged: true };
+  } catch {
+    return { status: 502, body: { error: "AI onbereikbaar" }, charged: false };
+  }
+}
+
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: CORS });
   if (req.method !== "POST") return json({ error: "POST verwacht" }, 405);
@@ -286,7 +329,9 @@ Deno.serve(async (req: Request) => {
   }
 
   // ── AI-request ──────────────────────────────────────────────────────────
-  const out: Result = mode === "grade" ? await handleGrade(body) : await handleUitleg(body);
+  const out: Result = mode === "grade" ? await handleGrade(body)
+    : mode === "chat" ? await handleChat(body)
+    : await handleUitleg(body);
 
   // Alleen een écht gelukte AI-call telt mee voor het quotum.
   if (out.charged) await usageInc(user.id, periode, used);

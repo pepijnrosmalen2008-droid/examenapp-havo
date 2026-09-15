@@ -8482,3 +8482,52 @@ html.dark #sc-plus, html.dark #sc-plus-intro{
 .regp-cta:active{transform:scale(.985)}
 .regp-later{width:100%;background:none;border:none;color:var(--mu);font-size:13px;font-weight:600;cursor:pointer;padding:12px 6px 2px}
 .regp-later:hover{color:var(--dk)}
+
+/* ═══════ VONK-CHAT (leergerichte AI-coach) ═══════ */
+.vc-ai-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.vc-ai-ghost{background:transparent !important;border:1.5px solid rgba(var(--or-rgb),.3) !important;color:var(--or) !important}
+.vc-ai-row .vc-ai-left{width:100%;font-size:11px;color:color-mix(in srgb,var(--dk) 52%,transparent);margin-top:1px}
+#vonk-chat{position:fixed;inset:0;z-index:9400;display:flex;align-items:flex-end;justify-content:center;opacity:0;transition:opacity .2s}
+#vonk-chat.on{opacity:1}
+.vchat-back{position:absolute;inset:0;background:rgba(10,14,22,.5);backdrop-filter:blur(4px)}
+.vchat-card{position:relative;z-index:1;display:flex;flex-direction:column;width:100%;max-width:520px;height:84vh;background:var(--s);border-radius:22px 22px 0 0;border:1px solid var(--bo);box-shadow:0 -14px 44px rgba(8,10,18,.34);transform:translateY(100%);transition:transform .32s cubic-bezier(.22,1,.36,1);overflow:hidden}
+#vonk-chat.on .vchat-card{transform:translateY(0)}
+.vchat-head{display:flex;align-items:center;gap:11px;padding:12px 14px;border-bottom:1px solid var(--bo);background:linear-gradient(180deg,color-mix(in srgb,var(--or) 9%,var(--s)),var(--s))}
+.vchat-fox{flex:0 0 auto;width:46px;height:46px;display:flex}
+.vchat-fox .m-svg{width:46px;height:46px}
+.vchat-hd{flex:1;min-width:0}
+.vchat-name{font-family:var(--font-head);font-weight:800;font-size:15px;color:var(--dk);display:flex;align-items:center;gap:7px}
+.vchat-badge{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--or);background:var(--orl);padding:2px 7px;border-radius:20px}
+.vchat-sub{font-size:11.5px;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vchat-quota{flex:0 0 auto;font-size:10.5px;font-weight:700;color:var(--or);background:var(--orl);padding:3px 9px;border-radius:20px;white-space:nowrap}
+.vchat-quota.op{color:#d1382f;background:rgba(209,56,47,.12)}
+.vchat-quota.plus{color:#a9781a;background:#f4ecd9}
+.vchat-x{flex:0 0 auto;background:none;border:none;color:var(--mu);font-size:16px;cursor:pointer;padding:4px 6px;line-height:1}
+.vchat-msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--bg)}
+.vchat-row{display:flex;gap:8px;align-items:flex-start;max-width:100%}
+.vchat-row.user{flex-direction:row-reverse}
+.vchat-av{flex:0 0 auto;width:28px;height:28px;display:flex}
+.vchat-av .m-svg{width:28px;height:28px}
+.vchat-bubble{max-width:80%;padding:10px 13px;border-radius:15px;font-size:13.5px;line-height:1.5;color:var(--dk);background:var(--s);border:1px solid var(--bo);word-wrap:break-word;overflow-wrap:anywhere}
+.vchat-row.assistant .vchat-bubble{border-top-left-radius:5px}
+.vchat-row.user .vchat-bubble{background:var(--or);color:#fff;border-color:transparent;border-top-right-radius:5px}
+.vchat-bubble b{font-weight:800}
+.vchat-typing{display:flex;gap:5px;align-items:center;padding:13px}
+.vchat-typing span{width:6px;height:6px;border-radius:50%;background:var(--mu);animation:vchatDot 1.2s infinite}
+.vchat-typing span:nth-child(2){animation-delay:.15s}
+.vchat-typing span:nth-child(3){animation-delay:.3s}
+@keyframes vchatDot{0%,60%,100%{opacity:.3;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+.vchat-input{display:flex;gap:8px;align-items:flex-end;padding:11px 12px calc(11px + env(safe-area-inset-bottom));border-top:1px solid var(--bo);background:var(--s)}
+.vchat-input textarea{flex:1;resize:none;border:1px solid var(--bo);border-radius:14px;padding:10px 13px;font-family:inherit;font-size:13.5px;line-height:1.4;background:var(--bg);color:var(--dk);outline:none;max-height:120px}
+.vchat-input textarea:focus{border-color:var(--or)}
+.vchat-send{flex:0 0 auto;width:40px;height:40px;border-radius:50%;border:none;background:var(--or);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:filter .15s}
+.vchat-send:hover{filter:brightness(1.06)}
+.vchat-send:disabled{opacity:.5;cursor:default}
+.vchat-cta{width:100%;background:var(--or);color:#fff;border:none;border-radius:12px;padding:12px;font-family:var(--font-head);font-weight:800;font-size:14px;cursor:pointer}
+/* "Vraag Vonk" op het resultaatscherm */
+.res-vonk-ask{display:flex;align-items:center;gap:11px;width:100%;margin-top:10px;padding:13px 15px;border:1.5px solid rgba(var(--or-rgb),.28);border-radius:15px;background:var(--orl);color:var(--dk);cursor:pointer;text-align:left;transition:transform .16s cubic-bezier(.34,1.2,.64,1),border-color .16s}
+.res-vonk-ask:hover{transform:translateY(-2px);border-color:var(--or)}
+.res-vonk-ask .rva-fox{flex:0 0 auto;font-size:22px;line-height:1}
+.res-vonk-ask .rva-t{flex:1;font-size:13.5px;color:color-mix(in srgb,var(--dk) 78%,transparent)}
+.res-vonk-ask .rva-t b{color:var(--or);font-weight:800}
+.res-vonk-ask svg{flex:0 0 auto;color:var(--or)}

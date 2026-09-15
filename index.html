@@ -1450,6 +1450,10 @@
     <button class="btns res-cta-secondary" onclick="openReview()"><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14 3H6v18h12V8z"/><path d="M9 13h6M9 17h6"/></svg> Bekijk fouten</button>
     <button class="res-cta-home" onclick="show('sc-home')">Terug naar home</button>
   </div>
+  <button class="res-vonk-ask" onclick="try{openVonkChat({vak:(typeof ST!=='undefined'&&ST.vak&&ST.vak.naam)||'',onderwerp:(typeof ST!=='undefined'&&ST.domein&&ST.domein.naam)||''})}catch(e){}">
+    <span class="rva-fox">🦊</span><span class="rva-t">Iets niet snappen? <b>Vraag het aan Vonk</b></span>
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
 </div>
 </div>
 
