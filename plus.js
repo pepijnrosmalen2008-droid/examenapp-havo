@@ -1063,7 +1063,9 @@ function plusSetTijd(m){
   else if(typeof renderPlusDashboard==='function') renderPlusDashboard();
 }
 function _plusStart(vakId){
-  try{ const vk=(typeof getVK==='function'?getVK():[]).find(v=>v.id===vakId); if(vk && typeof openVak==='function'){ openVak(vk); return; } }catch(e){}
+  // openVak() verwacht een vak-ID (string), niet het vak-object. Een object gaf
+  // een oneindige "Vragen laden…"-lus (hydratie mislukt) → flikkerend laadscherm.
+  try{ const vk=(typeof getVK==='function'?getVK():[]).find(v=>v.id===vakId); if(vk && typeof openVak==='function'){ openVak(vakId); return; } }catch(e){}
   try{ show('sc-home'); }catch(e){}
 }
 
