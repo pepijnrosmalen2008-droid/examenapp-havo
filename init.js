@@ -766,30 +766,37 @@ function _mqShowFinal(scores){
       squares[i] = Math.random() * MAX_OP;
   }
 
+  // Kleur cachen (niet elk frame getComputedStyle → dat forceert style-recalc),
+  // en op ~20 fps tekenen: een flikkereffect heeft geen 60 fps nodig.
+  var _rgb = getRgb(), _rgbT = 0, _acc = 0;
   function draw(time){
     animId = requestAnimationFrame(draw);
     var dt = Math.min((time - lastTime) / 1000, 0.1);
     lastTime = time;
+    _acc += dt;
+    if (_acc < 0.05) return;              // ~20 fps
+    var sdt = _acc; _acc = 0;
+    _rgbT += sdt; if (_rgbT > 1){ _rgb = getRgb(); _rgbT = 0; } // kleur af en toe verversen (niveauwissel)
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var rgb = getRgb();
-    var step = SQUARE + GAP;
+    var rgb = _rgb, step = SQUARE + GAP;
     for (var i = 0; i < cols; i++){
       for (var j = 0; j < rows; j++){
         var idx = i * rows + j;
-        if (Math.random() < FLICKER * dt)
+        if (Math.random() < FLICKER * sdt)
           squares[idx] = Math.random() * MAX_OP;
         ctx.fillStyle = 'rgba(' + rgb + ',' + squares[idx] + ')';
         ctx.fillRect(i * step * dpr, j * step * dpr, SQUARE * dpr, SQUARE * dpr);
       }
     }
   }
+  function _flickerLite(){ return typeof window.slagioLite === 'function' && window.slagioLite(); }
 
   setup();
   new ResizeObserver(setup).observe(canvas.parentElement);
 
   // Pauzeer animatie als tab niet zichtbaar is
   document.addEventListener('visibilitychange', function(){
-    if (document.hidden) {
+    if (document.hidden || _flickerLite()) {
       if (animId) { cancelAnimationFrame(animId); animId = null; }
     } else {
       if (!animId) animId = requestAnimationFrame(draw);
@@ -798,15 +805,15 @@ function _mqShowFinal(scores){
 
   // Pauzeer animatie als canvas buiten beeld is (IntersectionObserver)
   new IntersectionObserver(function(entries){
-    if (entries[0].isIntersecting) {
+    if (entries[0].isIntersecting && !_flickerLite()) {
       if (!animId) animId = requestAnimationFrame(draw);
     } else {
       if (animId) { cancelAnimationFrame(animId); animId = null; }
     }
   }, { threshold: 0 }).observe(canvas);
 
-  // Geen animatie voor gebruikers die dat prefereren
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  // Geen animatie voor gebruikers die dat prefereren of in soepele modus
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || _flickerLite()) return;
 
   animId = requestAnimationFrame(draw);
 })();

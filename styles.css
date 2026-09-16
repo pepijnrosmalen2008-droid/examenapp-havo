@@ -1,4 +1,19 @@
 *{box-sizing:border-box;margin:0;padding:0}
+/* ── SOEPELE MODUS (perf.js zet html[data-perf="lite"] op zwakke apparaten) ──
+   Neemt de continue render-kosten weg: eindeloze decoratieve animaties spelen
+   nog één keer en stoppen (geen repaint per frame), en de dure glas-blur op de
+   vaste balken/overlays gaat uit. Eenmalige entree-animaties blijven werken. */
+html[data-perf="lite"] *, html[data-perf="lite"] *::before, html[data-perf="lite"] *::after{
+  animation-duration:.001s !important; animation-delay:0s !important; animation-iteration-count:1 !important;
+}
+html[data-perf="lite"] .flicker-canvas{ display:none !important; }
+html[data-perf="lite"] .nav, html[data-perf="lite"] .hnav-inner, html[data-perf="lite"] .ex-nav,
+html[data-perf="lite"] .lp-nav, html[data-perf="lite"] .ex-bot-nav, html[data-perf="lite"] .pdf-modal-bar,
+html[data-perf="lite"] .race-tb, html[data-perf="lite"] .tuto-overlay, html[data-perf="lite"] .fig-zoom-ov,
+html[data-perf="lite"] .pu-sheet, html[data-perf="lite"] .ait-overlay, html[data-perf="lite"] .qbody,
+html[data-perf="lite"] .hm-countdown, html[data-perf="lite"] .lp-hero-stats, html[data-perf="lite"] .lp-overall{
+  backdrop-filter:none !important; -webkit-backdrop-filter:none !important;
+}
 /* ── SPLASH SCREEN ────────────────────────────────────── */
 #splash-screen{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#f5f6fa;transition:opacity .45s ease}
 html.dark #splash-screen{background:#0f1118}
