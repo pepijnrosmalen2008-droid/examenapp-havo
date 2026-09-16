@@ -152,9 +152,67 @@ async function aiGenereerVragen(opts){
   }catch(e){ return {error:true}; }
 }
 
+// Huiswerk nakijken (#6b): foto van opdracht + antwoord, vrije feedback.
+// Zelfde poort (login → plus/quota). Retourneert {text} of {login|limit|error}.
+async function aiHuiswerkNakijk(opts){
+  opts=opts||{};
+  if(!SLAGIO_AI_ENDPOINT) return {error:true};
+  if(!currentUser) return {login:true};
+  const isPlus = plusActive();
+  if(!isPlus && aiGradeTrialLeft()<=0) return {limit:true};
+  if(!opts.antwoordImage) return {error:true};
+  try{
+    const tok=await _aiUserToken();
+    const body={mode:'huiswerk', vak:opts.vak||'', niveau:opts.niveau||(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo'),
+      onderwerp:opts.onderwerp||'', opdrachtImage:opts.opdrachtImage||'', antwoordImage:opts.antwoordImage};
+    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','apikey':SUPABASE_KEY,'authorization':'Bearer '+(tok||SUPABASE_KEY)},body:JSON.stringify(body)});
+    const j=await r.json().catch(()=>null);
+    if(r.status===401 || (j && j.reason==='login')) return {login:true};
+    if(j && (j.locked||j.limit)) return {limit:true, plus:!!(j&&j.plus)};
+    if(!r.ok) return {error:true};
+    // Alleen accepteren als de nieuwe huiswerk-handler draait (kind-handshake);
+    // een oude edge-function zonder deze mode valt terug op uitleg → niet tonen.
+    if(j && j.text && j.kind==='huiswerk'){ if(!isPlus) _aiGradeConsume(); try{ trackEvent('ai_huiswerk',{vak:opts.vak, plus:isPlus}); }catch(e){} return {text:String(j.text)}; }
+    return {error:true};
+  }catch(e){ return {error:true}; }
+}
+
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
+
+// ── Uitstap-tracking: op welk scherm verlaten bezoekers de site? ───────────
+// Eén 'exit'-event bij het sluiten/verlaten, via keepalive-fetch (die overleeft
+// het unloaden, anders dan een gewone insert). Getthrottled zodat pagehide +
+// visibilitychange niet dubbel loggen. Zo zie je in het admin-dashboard waar de
+// conversie lekt, en of het aan de intro ligt (meta.onboardDone).
+function _trackExit(){
+  try{
+    const now=Date.now();
+    if(window._lastExitTs && now-window._lastExitTs<4000) return;
+    window._lastExitTs=now;
+    const screen=window._curScreen||'sc-home';
+    const niveau=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:null;
+    const _mob=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)||window.innerWidth<=768;
+    const _pwa=window.matchMedia('(display-mode:standalone)').matches||!!navigator.standalone;
+    const device=_mob?(_pwa?'mobile-pwa':'mobile'):'desktop';
+    const sec=window._screenSince?Math.round((now-window._screenSince)/1000):null;
+    const onboardDone=!!(function(){try{return localStorage.getItem('slagio_onboard_v3');}catch(e){return false;}})();
+    const row={
+      user_id:(typeof currentUser!=='undefined'&&currentUser)?currentUser.id:null,
+      naam:(_safeLocalGet('profiel',{}).naam)||null,
+      event_type:'exit', niveau,
+      meta:{ screen, sec, onboardDone, device, did:(typeof _DID!=='undefined'?_DID:null) }
+    };
+    fetch(SUPABASE_URL+'/rest/v1/events',{method:'POST',keepalive:true,
+      headers:{apikey:SUPABASE_KEY,authorization:'Bearer '+SUPABASE_KEY,'content-type':'application/json',prefer:'return=minimal'},
+      body:JSON.stringify(row)}).catch(()=>{});
+  }catch(e){}
+}
+try{
+  window.addEventListener('pagehide', _trackExit);
+  document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='hidden') _trackExit(); });
+}catch(e){}
 // Supabase-client. Als de (cross-origin) library niet geladen is - offline, CDN plat,
 // of geblokkeerd door een adblocker - mag de app NIET stuklopen: dan draaien we op een
 // veilige offline-stub zodat alles op lokale data blijft werken (vakken, quiz, samenvattingen).

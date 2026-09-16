@@ -2079,6 +2079,10 @@
       <div><div class="acc-label">Hoog contrast</div><div class="acc-sub">Sterker kleurcontrast voor betere leesbaarheid</div></div>
       <label class="acc-toggle"><input type="checkbox" id="acc-contrast-toggle" onchange="toggleHoogContrast(this.checked)"><span class="acc-slider"></span></label>
     </div>
+    <div class="acc-row">
+      <div><div class="acc-label">Soepele modus</div><div class="acc-sub">Minder animaties voor vloeiender scrollen op oudere of tragere apparaten. Slagio zet dit zelf aan als het nodig is.</div></div>
+      <label class="acc-toggle"><input type="checkbox" id="acc-perf-toggle" onchange="toggleSoepel(this.checked)"><span class="acc-slider"></span></label>
+    </div>
   </div>
 
   <!-- Privacy & gegevens (AVG: recht op inzage/verwijdering) -->
@@ -2260,6 +2264,7 @@
 <script defer src="/proefexamen-vwo-in.js"></script>
 <!-- Supabase SDK - must load before app script (defer bewaart die volgorde) -->
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.101.1/dist/umd/supabase.js" integrity="sha256-nemRIwEQKZy7uoOYcUFEnleZl6kKX8B3zf4KpR6NVT0=" crossorigin="anonymous"></script>
+<script defer src="/perf.js"></script>
 <script defer src="/data.js"></script>
 <script defer src="/state.js"></script>
 <script defer src="/mascotte.js"></script>

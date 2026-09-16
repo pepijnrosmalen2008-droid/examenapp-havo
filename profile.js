@@ -830,6 +830,7 @@ function openProfiel(){
     return;
   }
   loadProfile();
+  try{ if(typeof applyAccPrefs==='function') applyAccPrefs(); }catch(e){} // ververs toegankelijkheids-toggles (incl. soepele modus)
   try{const ch=document.getElementById('prof-niv-chip'); if(ch&&typeof APP_LEVEL!=='undefined'&&APP_LEVEL){ch.textContent=APP_LEVEL.toUpperCase();ch.hidden=false;}}catch(e){}
   try{const db=document.getElementById('pf-del-account'); if(db)db.hidden=!currentUser;}catch(e){}
   buildCijferGrid();

@@ -632,6 +632,9 @@ const ACC_KEY='slagio_acc_v1';
 function getAccPrefs(){try{return JSON.parse(localStorage.getItem(ACC_KEY)||'{}');}catch(e){return{};}}
 function toggleDyslexie(on){const p=getAccPrefs();p.dyslexie=on;localStorage.setItem(ACC_KEY,JSON.stringify(p));applyAccPrefs();}
 function toggleHoogContrast(on){const p=getAccPrefs();p.contrast=on;localStorage.setItem(ACC_KEY,JSON.stringify(p));applyAccPrefs();}
+// Soepele modus: expliciete keuze (aan = lite, uit = volledig). Overschrijft de
+// automatische detectie uit perf.js.
+function toggleSoepel(on){ try{ if(typeof slagioSetPerf==='function') slagioSetPerf(on?'lite':'full'); }catch(e){} const t=document.getElementById('acc-perf-toggle'); if(t)t.checked=on; }
 function applyAccPrefs(){
   const p=getAccPrefs();
   document.body.classList.toggle('dyslexie',!!p.dyslexie);
@@ -646,6 +649,8 @@ function applyAccPrefs(){
   const t2=document.getElementById('acc-contrast-toggle');
   if(t1)t1.checked=!!p.dyslexie;
   if(t2)t2.checked=!!p.contrast;
+  const t3=document.getElementById('acc-perf-toggle');
+  if(t3 && typeof slagioLite==='function') t3.checked=slagioLite();
 }
 // Apply on load
 applyAccPrefs();

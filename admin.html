@@ -573,7 +573,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   // de grote live-activiteit + client-side filteren op niveau/naam.
   const feedItems = [
     ...lb.slice(0,150).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:'quiz',niveau:e.niveau,device:null,vak:e.vak_naam,score:e.score,meta:null,did:null})),
-    ...ev.slice(0,400).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:e.event_type,niveau:e.niveau,device:e.meta?.device,vak:e.vak_naam,meta:e.meta,did:e.meta?.did||null}))
+    ...ev.filter(e=>e.event_type!=='exit').slice(0,400).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:e.event_type,niveau:e.niveau,device:e.meta?.device,vak:e.vak_naam,meta:e.meta,did:e.meta?.did||null}))
   ].sort((a,b)=>new Date(b.ts)-new Date(a.ts)).slice(0,200);
   window._feedAll = feedItems;
   window._liveNiveau = window._liveNiveau || 'all';
@@ -717,6 +717,62 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   const anyReturnPct = arDenom?Math.round(arNum/arDenom*100):0;
   const totalDevices = _dids.length;
 
+  // ── Waar haken bezoekers af? (conversie-inzicht) ──────────────────────────
+  // Sessie = (device, dag). Bounce = app geopend maar daarna niks gedaan.
+  // Werkt retroactief op bestaande events; exit-schermen vullen vanaf de update.
+  const _ACT = new Set(['simulatietoets','oud_examen_pdf','oud_examen_quiz','bot_race','multiplayer','flashcard','quiz_completed','quiz_start','ai_nakijken','ai_chat','ai_generate','ai_huiswerk','ai_uitleg','herhalen_open','examen_resultaat','feedback','ce_cijfer']);
+  const _SCRN = {'sc-home':'Home','sc-welcome':'Startscherm','onboarding':'Intro / onboarding','sc-detail':'Vak-detail','sc-quiz':'Quiz','sc-q':'Quiz','sc-res':'Quiz-resultaat','sc-plus':'Examentrainer','sc-plus-intro':'Plus-verkooppagina','sc-schedule':'Rooster','sc-calc':'Cijfercalculator','sc-studieplan':'Studieplan','sc-profiel':'Profiel','sc-leaderboard':'Ranglijst','sc-league':'Divisie','sc-sociaal':'Sociaal','sc-herhalen':'Herhalen','sc-shop':'Winkel','sc-foutenboek':'Foutenboek','sc-zoek':'Zoeken','sc-klas':'Klas'};
+  const _scrName = id => _SCRN[id] || id || '?';
+  const _sess = {};
+  const _skey = (did,ca) => did+'|'+String(ca).slice(0,10);
+  const _exitScreens = {}; let _exitTotal=0, _exitOnbFalse=0, _exitSecSum=0, _exitSecN=0;
+  ev.forEach(e=>{ const did=e.meta&&e.meta.did; if(!did) return; const k=_skey(did,e.created_at);
+    const s=(_sess[k]=_sess[k]||{open:false,act:false});
+    if(e.event_type==='app_open') s.open=true;
+    else if(e.event_type==='exit'){
+      const scr=(e.meta&&e.meta.screen)||'?';
+      _exitScreens[scr]=(_exitScreens[scr]||0)+1; _exitTotal++;
+      if(e.meta&&e.meta.onboardDone===false) _exitOnbFalse++;
+      if(e.meta&&typeof e.meta.sec==='number'){ _exitSecSum+=e.meta.sec; _exitSecN++; }
+    }
+    else if(_ACT.has(e.event_type)) s.act=true;
+  });
+  const _sessArr = Object.values(_sess).filter(s=>s.open);
+  const _sessN = _sessArr.length;
+  const _bounced = _sessArr.filter(s=>!s.act).length;
+  const _bouncePct = _sessN?Math.round(_bounced/_sessN*100):0;
+  const _convPct = 100-_bouncePct;
+  const _exitTop = Object.entries(_exitScreens).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const _exitOnbPct = _exitTotal?Math.round(_exitOnbFalse/_exitTotal*100):0;
+  const _exitAvgSec = _exitSecN?Math.round(_exitSecSum/_exitSecN):null;
+  const _bounceCol = _bouncePct>=60?'var(--red)':_bouncePct>=40?'var(--orange,#f59e0b)':'var(--green)';
+  const dropoffPanel = `
+    <div class="sec">📉 Waar haken bezoekers af</div>
+    <div class="panel">
+      <div class="panel-h">Van de sessies die de app openden: hoeveel deden daarna écht iets? (sessie = apparaat per dag)</div>
+      <div class="kpi-grid" style="margin-bottom:10px">
+        <div class="kpi"><div class="kpi-lbl">📲 Sessies</div><div class="kpi-val">${_sessN||'-'}</div><div class="kpi-sub">app geopend (deze periode)</div></div>
+        <div class="kpi"><div class="kpi-lbl">✅ Deed iets</div><div class="kpi-val" style="color:var(--green)">${_sessN?_convPct+'%':'-'}</div><div class="kpi-sub">oefende / gebruikte een functie</div></div>
+        <div class="kpi"><div class="kpi-lbl">🚪 Bounce</div><div class="kpi-val" style="color:${_bounceCol}">${_sessN?_bouncePct+'%':'-'}</div><div class="kpi-sub">opende en deed niks (${_bounced})</div></div>
+      </div>
+      <div style="font-size:12px;color:var(--muted);line-height:1.5;padding:2px 2px 4px">
+        ${_sessN? (_bouncePct>=50
+          ? `Meer dan de helft opent de app en haakt meteen af zonder te oefenen. Dat wijst op drop-off op de <b>intro of de homepagina</b> — daar valt de meeste conversiewinst te halen.`
+          : `De meesten die openen doen ook iets. De grootste winst zit in het ophogen van dit percentage en het terugbrengen van de bounce.`)
+        : `Nog geen sessies in deze periode.`}
+      </div>
+      <div class="panel-h" style="margin-top:14px">Op welk scherm vertrekken ze? ${_exitAvgSec!=null?`<span style="font-weight:600;color:var(--muted)">gem. ${_exitAvgSec}s op dat scherm</span>`:''}</div>
+      ${_exitTotal? `
+        ${_exitTop.map(([scr,n])=>{const pct=Math.round(n/_exitTotal*100);return `
+          <div style="display:flex;align-items:center;gap:10px;padding:6px 2px">
+            <div style="flex:0 0 130px;font-size:13px;color:var(--fg)">${_scrName(scr)}</div>
+            <div style="flex:1;height:10px;background:var(--card2);border-radius:6px;overflow:hidden"><div style="height:100%;width:${pct}%;background:var(--accent,#6366f1);border-radius:6px"></div></div>
+            <div style="flex:0 0 64px;text-align:right;font-size:12px;color:var(--muted)">${n} · ${pct}%</div>
+          </div>`;}).join('')}
+        <div style="font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5">Van alle vertrekken gebeurde <b style="color:${_exitOnbPct>=40?'var(--red)':'var(--fg)'}">${_exitOnbPct}%</b> vóór het afronden van de intro. ${_exitOnbPct>=40?'De intro/onboarding kost je dus bezoekers — dit is een duidelijke plek om te verbeteren.':'De intro lijkt geen grote struikelplek.'}</div>
+      ` : `<div style="font-size:12px;color:var(--muted);padding:6px 2px;line-height:1.5">Nog geen exit-data. Vanaf deze update houdt Slagio bij op welk scherm bezoekers de site verlaten (en of ze de intro al af hadden). Kom hier over een dag terug voor de eerste inzichten.</div>`}
+    </div>`;
+
   document.getElementById('content').innerHTML = `
 
     <!-- ── Tijdfilter ── -->
@@ -726,6 +782,8 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
       <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 7 dagen</button>
       <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 24 uur</button>
     </div>
+
+    ${dropoffPanel}
 
     <!-- ── Gemelde vragen (errata-lus) ── -->
     <div class="sec">🚩 Gemelde vragen ${errata.length?`<span style="font-size:.8rem;color:var(--red);font-weight:800">${errata.length}</span>`:''}</div>

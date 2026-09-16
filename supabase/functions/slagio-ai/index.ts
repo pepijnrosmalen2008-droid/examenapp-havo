@@ -392,6 +392,52 @@ async function handleGenerate(p: any): Promise<Result> {
   }
 }
 
+// Huiswerk nakijken (#6b): een leerling fotografeert de opdracht én het eigen
+// (handgeschreven) antwoord. Er is GEEN scoringsvoorschrift, dus geen JSON-score
+// maar vrije, leergerichte feedback: klopt het, wat is goed/fout, en de volgende stap.
+async function handleHuiswerk(p: any): Promise<Result> {
+  const key = Deno.env.get("ANTHROPIC_API_KEY");
+  if (!key) return { status: 500, body: { error: "server niet geconfigureerd" }, charged: false };
+  const opdracht = parseImage(p.opdrachtImage);
+  const antwoord = parseImage(p.antwoordImage);
+  if (!antwoord) return { status: 400, body: { error: "geen antwoordfoto" }, charged: false };
+  const niveau = p.niveau || "havo/vwo";
+  const vak = (p.vak || "").toString().slice(0, 60);
+  const onderwerp = (p.onderwerp || "").toString().slice(0, 200);
+  const system =
+    `Je bent Vonk, een ervaren en geduldige docent${vak ? " " + vak : ""} die het huiswerk van een ${niveau}-leerling nakijkt. ` +
+    `Je krijgt ${opdracht ? "een foto van de opdracht en een foto van het handgeschreven antwoord" : "een foto van het handgeschreven antwoord"} van de leerling. ` +
+    `Lees ${opdracht ? "beide foto's" : "de foto"} zorgvuldig. Beoordeel of het antwoord klopt, benoem concreet wat goed is en wat fout of onvolledig is, en geef één duidelijke volgende stap. ` +
+    `Wees eerlijk maar bemoedigend, en leg het zo uit dat de leerling het echt snapt (met een voorbeeld waar dat helpt). ` +
+    `Kun je de opdracht of het antwoord niet goed lezen, zeg dat eerlijk en vraag om een scherpere foto in plaats van te gokken. Verzin nooit een opgave die er niet staat. ` +
+    `Schrijf in het Nederlands, rond de 150 woorden, met gewone leestekens; gebruik nooit een gedachtestreepje (—).`;
+  const userText =
+    (onderwerp ? `Onderwerp: ${onderwerp}.\n` : "") +
+    (opdracht ? `De eerste foto is de opdracht, de tweede foto is het antwoord van de leerling.` : `De foto is het antwoord van de leerling.`) +
+    (!opdracht && p.opdrachtTekst ? `\nDe opdracht: ${String(p.opdrachtTekst).slice(0, 500)}` : "") +
+    `\nKijk het na: klopt het, wat is goed, wat mist of is fout, en wat is de beste volgende stap?`;
+  const content: any[] = [];
+  if (opdracht) content.push({ type: "image", source: { type: "base64", media_type: opdracht.media_type, data: opdracht.data } });
+  content.push({ type: "image", source: { type: "base64", media_type: antwoord.media_type, data: antwoord.data } });
+  content.push({ type: "text", text: userText });
+  try {
+    const resp = await fetch(ANTHROPIC_URL, {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model: MODEL, max_tokens: 800, system, messages: [{ role: "user", content }] }),
+    });
+    if (!resp.ok) return { status: 502, body: { error: "AI-fout" }, charged: false };
+    const data = await resp.json().catch(() => null);
+    const text = data?.content?.[0]?.text || "";
+    if (!text) return { status: 502, body: { error: "geen feedback" }, charged: false };
+    // `kind` = capability-handshake: de client accepteert huiswerk-feedback alleen
+    // als deze (nieuwe) handler draait, niet als een oude functie terugvalt op uitleg.
+    return { status: 200, body: { text, kind: "huiswerk" }, charged: true };
+  } catch {
+    return { status: 502, body: { error: "AI onbereikbaar" }, charged: false };
+  }
+}
+
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: CORS });
   if (req.method !== "POST") return json({ error: "POST verwacht" }, 405);
@@ -418,6 +464,7 @@ Deno.serve(async (req: Request) => {
   const out: Result = mode === "grade" ? await handleGrade(body)
     : mode === "chat" ? await handleChat(body)
     : mode === "generate" ? await handleGenerate(body)
+    : mode === "huiswerk" ? await handleHuiswerk(body)
     : await handleUitleg(body);
 
   // Alleen een écht gelukte AI-call telt mee voor het quotum.

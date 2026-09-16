@@ -165,23 +165,39 @@ VonkBody.prototype.step = function (dt) {
 };
 
 // ── Globale rAF-loop over alle actieve lichamen ──
-var _vonkBodies = [], _vonkLoopOn = false, _vonkLastTs = 0;
+// Draait op ~30 fps (niet 60): voor een subtiele idle-mascotte niet te zien,
+// maar halveert de render-kosten. In soepele modus draait de physics niet.
+var _vonkBodies = [], _vonkLoopOn = false, _vonkLastTs = 0, _vonkStepTs = 0;
+var _VONK_MIN = 1 / 32; // ~30 fps
 function _vonkPhysLoop(ts) {
-  var dt = _vonkLastTs ? Math.min(0.033, (ts - _vonkLastTs) / 1000) : 0.016;
-  _vonkLastTs = ts;
+  if (_vonkBodies.length) requestAnimationFrame(_vonkPhysLoop);
+  else { _vonkLoopOn = false; _vonkLastTs = 0; return; }
+  var since = _vonkStepTs ? (ts - _vonkStepTs) / 1000 : 0.033;
+  if (since < _VONK_MIN) return;             // frame overslaan → ~30 fps
+  var dt = Math.min(0.05, since);
+  _vonkStepTs = ts;
   for (var i = _vonkBodies.length - 1; i >= 0; i--) {
     var b = _vonkBodies[i];
     if (!b.svg || !document.body.contains(b.svg)) { _vonkBodies.splice(i, 1); continue; }
     if (b.svg.offsetParent === null) continue;   // verborgen Vonk → geen CPU verspillen
     try { b.step(dt); } catch (e) {}
   }
-  if (_vonkBodies.length) requestAnimationFrame(_vonkPhysLoop);
-  else { _vonkLoopOn = false; _vonkLastTs = 0; }
+}
+// Herbeoordeel na een moduswissel: in soepele modus alle physics-lichamen los-
+// laten (statische Vonk), zodat er geen continue rAF meer draait.
+function vonkPhysRefresh(){
+  try{
+    if(typeof window.slagioLite==='function' && window.slagioLite()){
+      for(var i=_vonkBodies.length-1;i>=0;i--){ var b=_vonkBodies[i]; try{ if(b.svg){ b.svg.classList.remove('m-phys'); b.svg._body=null; } }catch(e){} }
+      _vonkBodies.length=0; _vonkLoopOn=false; _vonkLastTs=0; _vonkStepTs=0;
+    }
+  }catch(e){}
 }
 // Maak (of pak) het physics-lichaam van een Vonk-instance.
 function vonkPhysics(target) {
   try {
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
+    if (typeof window.slagioLite === 'function' && window.slagioLite()) return null; // soepele modus: statische Vonk
     var svg = (typeof _vonkSvgOf === 'function') ? _vonkSvgOf(target) : null;
     if (!svg) return null;
     if (svg._body) return svg._body;
