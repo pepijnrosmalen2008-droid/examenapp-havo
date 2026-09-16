@@ -118,7 +118,7 @@ function ensureFbMeta(cb) {
   if (_fbMetaState === 1) { setTimeout(() => ensureFbMeta(cb), 120); return; }
   _fbMetaState = 1;
   const s = document.createElement('script');
-  s.src = 'foutenboek-meta-' + (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : 'havo') + '.js';
+  s.src = '/foutenboek-meta-' + (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : 'havo') + '.js'; // absoluut pad: relatief brak op /vakken/-routes (404)
   s.onload = () => { _fbMetaState = 2; cb && cb(); };
   s.onerror = () => { _fbMetaState = 2; cb && cb(); };   // degradeer: geen verrijking
   document.head.appendChild(s);
@@ -132,7 +132,7 @@ function ensureFbUitleg(cb) {
   if (_fbUitState === 1) { setTimeout(() => ensureFbUitleg(cb), 120); return; }
   _fbUitState = 1;
   const s = document.createElement('script');
-  s.src = 'foutenboek-uitleg-' + (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : 'havo') + '.js';
+  s.src = '/foutenboek-uitleg-' + (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : 'havo') + '.js'; // absoluut pad (zie boven)
   s.onload = () => { _fbUitState = 2; cb && cb(); };
   s.onerror = () => { _fbUitState = 2; cb && cb(); };   // bestaat (nog) niet → stil verder
   document.head.appendChild(s);

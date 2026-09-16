@@ -407,8 +407,8 @@ function _renderLbWithData(){
   const myBest=myEntries.sort((a,b)=>b.score-a.score)[0]||null;
   const myRank=myBest?deduped.findIndex(e=>(myUid?e.uid===myUid:e.naam===myBest.naam))+1:null;
   const myBox=document.getElementById('lb-myscore-box');
-  const myLiveAvatar32=getMyCurrentAvatarHtml(32);
-  const myLiveAvatar28=getMyCurrentAvatarHtml(28);
+  const myLiveAvatar32=(typeof getMyCurrentAvatarHtml==='function')?getMyCurrentAvatarHtml(32):'';
+  const myLiveAvatar28=(typeof getMyCurrentAvatarHtml==='function')?getMyCurrentAvatarHtml(28):'';
   const myBestBadgeId=getBestBadgeId(getAchieved());
   if(myBest&&prof.naam){
     myBox.innerHTML=`<div class="lb-my-score">

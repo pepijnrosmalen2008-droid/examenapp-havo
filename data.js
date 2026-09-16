@@ -100,6 +100,8 @@ function __hydrateVak(level,vakId,payload){
   v._q=true;
 }
 function ensureVakData(level,vakId,cb){
+  if(vakId&&typeof vakId==='object')vakId=vakId.id; // defensief: een vak-object gaf 'q/havo-[object Object].js' (404 + crash)
+  if(!vakId||typeof vakId!=='string'){if(cb)cb();return;}
   if(level!=='havo'&&level!=='vwo'&&level!=='vmbo'){if(cb)cb();return;}
   if(!_levelLoaded(level)){ensureLevelData(level,function(){ensureVakData(level,vakId,cb);});return;}
   if(vakHydrated(level,vakId)){if(cb)cb();return;}
