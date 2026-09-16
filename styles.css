@@ -1767,6 +1767,23 @@ html.dark .qb{background:#2e3550}
 
 /* Verbeterpunten / Focus card */
 .focus-card{background:var(--s);border:1.5px solid rgba(var(--or-rgb),.3);border-radius:20px;padding:18px 20px 14px;margin-bottom:20px}
+/* ── VANDAAG-HUB: het dagelijkse anker bovenaan home ──────────────────────── */
+.vandaag-hub{margin:12px 0 4px;padding:16px 16px 14px;border-radius:20px;background:var(--s);border:1px solid var(--bo);box-shadow:0 1px 3px rgba(0,0,0,.04),0 10px 26px -16px rgba(0,0,0,.18)}
+.vh-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.vh-greet{font-family:var(--font-head);font-size:17px;font-weight:800;color:var(--dk)}
+.vh-chips{display:flex;gap:6px;flex-wrap:wrap}
+.vh-chip{font-size:12px;font-weight:800;color:var(--dk);background:rgba(var(--or-rgb),.09);border:1px solid rgba(var(--or-rgb),.18);border-radius:20px;padding:4px 10px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.vh-lbl{font-family:var(--font-head);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--mu);margin-bottom:8px}
+.vh-items{display:flex;flex-direction:column;gap:8px}
+.vh-item{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:12px 13px;border-radius:14px;cursor:pointer;font-family:inherit;background:var(--bg2,rgba(0,0,0,.025));border:1px solid var(--bo);transition:transform .15s,border-color .15s,box-shadow .15s}
+.vh-item:hover{transform:translateX(2px);border-color:rgba(var(--or-rgb),.4);box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.vh-item-dot{flex:0 0 auto;width:10px;height:10px;border-radius:50%}
+.vh-item-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.vh-item-txt b{font-size:14px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vh-item-txt small{font-size:11.5px;color:var(--mu)}
+.vh-item-go{flex:0 0 auto;font-size:12.5px;font-weight:800;color:var(--or);white-space:nowrap}
+.vh-empty{font-size:13.5px;color:var(--mu);line-height:1.5;display:flex;flex-direction:column;gap:11px;align-items:flex-start}
+.vh-empty-btn{font-family:var(--font-head);font-weight:800;font-size:13.5px;background:var(--or);color:#fff;border:none;border-radius:12px;padding:10px 16px;cursor:pointer}
 .focus-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
 .focus-card-title{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--dk)}
 .focus-item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:12px;margin-bottom:6px;background:var(--bg);border:1px solid var(--bo);transition:background .15s}
