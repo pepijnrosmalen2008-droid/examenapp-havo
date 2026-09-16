@@ -430,7 +430,9 @@ async function handleHuiswerk(p: any): Promise<Result> {
     const data = await resp.json().catch(() => null);
     const text = data?.content?.[0]?.text || "";
     if (!text) return { status: 502, body: { error: "geen feedback" }, charged: false };
-    return { status: 200, body: { text }, charged: true };
+    // `kind` = capability-handshake: de client accepteert huiswerk-feedback alleen
+    // als deze (nieuwe) handler draait, niet als een oude functie terugvalt op uitleg.
+    return { status: 200, body: { text, kind: "huiswerk" }, charged: true };
   } catch {
     return { status: 502, body: { error: "AI onbereikbaar" }, charged: false };
   }

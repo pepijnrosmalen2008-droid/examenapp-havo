@@ -170,7 +170,9 @@ async function aiHuiswerkNakijk(opts){
     if(r.status===401 || (j && j.reason==='login')) return {login:true};
     if(j && (j.locked||j.limit)) return {limit:true, plus:!!(j&&j.plus)};
     if(!r.ok) return {error:true};
-    if(j && j.text){ if(!isPlus) _aiGradeConsume(); try{ trackEvent('ai_huiswerk',{vak:opts.vak, plus:isPlus}); }catch(e){} return {text:String(j.text)}; }
+    // Alleen accepteren als de nieuwe huiswerk-handler draait (kind-handshake);
+    // een oude edge-function zonder deze mode valt terug op uitleg → niet tonen.
+    if(j && j.text && j.kind==='huiswerk'){ if(!isPlus) _aiGradeConsume(); try{ trackEvent('ai_huiswerk',{vak:opts.vak, plus:isPlus}); }catch(e){} return {text:String(j.text)}; }
     return {error:true};
   }catch(e){ return {error:true}; }
 }
