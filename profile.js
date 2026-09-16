@@ -752,7 +752,7 @@ function updateProfileNav(){
   const bnavIcon=document.getElementById('bnav-profiel-icon');
   const bnavLabel=document.getElementById('bnav-profiel-label');
   const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
-  const liveAvatar=getMyCurrentAvatar();
+  const liveAvatar=(typeof getMyCurrentAvatar==='function')?getMyCurrentAvatar():'';
   const _sbSession=Object.keys(localStorage).some(k=>k.startsWith('sb-')&&k.includes('auth'));
   const isLoggedIn=!!(currentUser||localStorage.getItem('slagio_li')||_sbSession);
   // authConfirmed = we weten zeker dat iemand NIET ingelogd is (onAuthStateChange heeft gefired zonder user)

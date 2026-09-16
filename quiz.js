@@ -1573,7 +1573,7 @@ function toonRes(){
       const avgTijd=tijden.length?Math.round(totalTijd/tijden.length*10)/10:0;
       const prof=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');
       const naam=prof.naam||'Anoniem';
-      const avatar=getMyCurrentAvatar()||'🐻';
+      const avatar=(typeof getMyCurrentAvatar==='function'&&getMyCurrentAvatar())||'🐻';
       const animalId=prof.animalId||null;
       const stageIdx=animalId?getAnimalStageIdx(getTotalXP()):0;
       const _ach=getAchieved();
