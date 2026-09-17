@@ -326,6 +326,7 @@ function chooseLevel(level,_noHistory){
   }
   APP_LEVEL=level;
   localStorage.setItem('examenapp_level',level);
+  try{ if(typeof _funnel==='function')_funnel('level'); }catch(e){} // trechter: niveau gekozen
   applyLevelTheme(level);
   // Samenvattingen alvast op de achtergrond laden (parallel, blokkeert de grid niet),
   // zodat ze klaar zijn wanneer een leerling een vak/samenvatting opent.

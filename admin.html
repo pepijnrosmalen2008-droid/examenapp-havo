@@ -573,7 +573,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   // de grote live-activiteit + client-side filteren op niveau/naam.
   const feedItems = [
     ...lb.slice(0,150).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:'quiz',niveau:e.niveau,device:null,vak:e.vak_naam,score:e.score,meta:null,did:null})),
-    ...ev.filter(e=>e.event_type!=='exit').slice(0,400).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:e.event_type,niveau:e.niveau,device:e.meta?.device,vak:e.vak_naam,meta:e.meta,did:e.meta?.did||null}))
+    ...ev.filter(e=>e.event_type!=='exit'&&e.event_type!=='funnel').slice(0,400).map(e=>({ts:e.created_at,name:e.naam||'anoniem',type:e.event_type,niveau:e.niveau,device:e.meta?.device,vak:e.vak_naam,meta:e.meta,did:e.meta?.did||null}))
   ].sort((a,b)=>new Date(b.ts)-new Date(a.ts)).slice(0,200);
   window._feedAll = feedItems;
   window._liveNiveau = window._liveNiveau || 'all';
@@ -746,6 +746,38 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   const _exitOnbPct = _exitTotal?Math.round(_exitOnbFalse/_exitTotal*100):0;
   const _exitAvgSec = _exitSecN?Math.round(_exitSecSum/_exitSecN):null;
   const _bounceCol = _bouncePct>=60?'var(--red)':_bouncePct>=40?'var(--orange,#f59e0b)':'var(--green)';
+
+  // ── Ingang-trechter (funnel-events, bot-gefilterd) ──
+  const _FN=[['welcome','Kwam binnen (welcome)'],['interact','Echte interactie (mens)'],['level','Koos een niveau'],['home','Bereikte home'],['action','Deed iets (oefenen/vak)']];
+  const _fnSess={};
+  ev.forEach(e=>{ if(e.event_type!=='funnel')return; const m=e.meta||{}; const did=m.did; if(!did)return; const k=did+'|'+(e.created_at||'').slice(0,10); (_fnSess[k]=_fnSess[k]||new Set()).add(m.step); });
+  const _fnArr=Object.values(_fnSess);
+  const _fnN=s=>_fnArr.filter(x=>x.has(s)).length;
+  const _fnCounts=_FN.map(([s,l])=>({s,l,n:_fnN(s)}));
+  const _fnBase=_fnCounts[0].n||_fnCounts.reduce((mx,c)=>Math.max(mx,c.n),0)||1;
+  const _fnHuman=_fnN('interact'), _fnAct=_fnN('action');
+  const _fnHumanConv=_fnHuman?Math.round(100*_fnAct/_fnHuman):0;
+  const funnelPanel = _fnArr.length ? `
+    <div class="sec">🚪 Ingang-trechter <span style="font-size:.72rem;color:var(--muted);font-weight:600">bot-gefilterd</span></div>
+    <div class="panel">
+      <div class="panel-h">Waar in de eerste stappen haakt men af? (bot-/preview-verkeer telt pas mee vanaf 'echte interactie')</div>
+      <div style="display:flex;flex-direction:column;gap:7px;margin:4px 0 12px">
+        ${_fnCounts.map((c,i)=>{const pct=Math.round(100*c.n/_fnBase);const prev=i>0?_fnCounts[i-1].n:null;const drop=prev&&prev>0?Math.round(100*(prev-c.n)/prev):0;const col=i===0?'var(--muted)':drop>=50?'var(--red)':drop>=30?'var(--orange,#f59e0b)':'var(--accent,#6366f1)';return `
+          <div style="display:flex;align-items:center;gap:10px">
+            <div style="flex:0 0 165px;font-size:12.5px;color:var(--fg)">${c.l}</div>
+            <div style="flex:1;height:22px;background:var(--card2);border-radius:6px;overflow:hidden;position:relative"><div style="height:100%;width:${Math.max(3,pct)}%;background:${col};border-radius:6px"></div></div>
+            <div style="flex:0 0 96px;text-align:right;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums">${c.n} · ${pct}%${i>0&&drop>0?` <span style="color:var(--red)">-${drop}%</span>`:''}</div>
+          </div>`;}).join('')}
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi"><div class="kpi-lbl">🧍 Echte bezoekers</div><div class="kpi-val">${_fnHuman||'-'}</div><div class="kpi-sub">interacteerden echt (geen bot)</div></div>
+        <div class="kpi"><div class="kpi-lbl">✅ Deed iets</div><div class="kpi-val" style="color:${_fnHumanConv>=40?'var(--green)':_fnHumanConv>=20?'var(--orange,#f59e0b)':'var(--red)'}">${_fnHuman?_fnHumanConv+'%':'-'}</div><div class="kpi-sub">van de echte bezoekers</div></div>
+      </div>
+      <div style="font-size:12px;color:var(--muted);line-height:1.5;margin-top:8px">De grootste rode sprong hierboven is je grootste lek. 'Echte bezoekers' sluit bots en link-previews uit, dus dit percentage is eerlijker dan de ruwe conversie.</div>
+    </div>` : `
+    <div class="sec">🚪 Ingang-trechter</div>
+    <div class="panel"><div style="font-size:12px;color:var(--muted);line-height:1.5;padding:6px 2px">Nog geen trechter-data. Vanaf deze update meet Slagio elke stap (binnenkomst → echte interactie → niveau → home → iets doen) mét bot-filter. Kom over een dag terug voor het eerste eerlijke beeld van waar bezoekers afhaken.</div></div>`;
+
   const dropoffPanel = `
     <div class="sec">📉 Waar haken bezoekers af</div>
     <div class="panel">
@@ -782,6 +814,8 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
       <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 7 dagen</button>
       <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 24 uur</button>
     </div>
+
+    ${funnelPanel}
 
     ${dropoffPanel}
 

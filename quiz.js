@@ -26,6 +26,7 @@ function openQmode(did){
 }
 
 function startQ(mode){
+  try{ if(typeof _funnel==='function')_funnel('action'); }catch(e){} // trechter: eerste echte engagement
   if(mode==='oud')trackEvent('oud_examen_quiz',{vak:ST.vak?.naam||null,domein:ST.domein?.naam||null});
   // If oud-examen mode and domain has year-tagged questions → show picker first
   // Nog geen vragen voor dit onderdeel (bv. VMBO in opbouw): vriendelijk melden

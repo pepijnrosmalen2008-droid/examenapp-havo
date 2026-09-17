@@ -320,6 +320,25 @@ function _getSrc(){
 // Track app open once per browser session
 if(!sessionStorage.getItem('_slagio_ao')){sessionStorage.setItem('_slagio_ao','1');setTimeout(()=>trackEvent('app_open',{src:_getSrc()}),2000);}
 
+// ── INGANG-TRECHTER + BOT-FILTER ───────────────────────────────────────────
+// Eén event-type 'funnel' met een step, één keer per sessie per step. Zo zie je
+// in het admin-dashboard exact waar bezoekers afhaken: welcome → interact
+// (eerste échte interactie, filtert bots/link-previews) → level → home → action.
+function _funnel(step){
+  try{
+    var k='_slagio_fn_'+step;
+    if(sessionStorage.getItem(k))return;
+    sessionStorage.setItem(k,'1');
+    if(typeof trackEvent==='function')trackEvent('funnel',{step:step});
+  }catch(e){}
+}
+// Bot-filter: pas bij een echte interactie telt de sessie als een mens.
+(function(){
+  var EVS=['pointerdown','keydown','touchstart','wheel','click'];
+  function onInteract(){ _funnel('interact'); EVS.forEach(function(ev){try{window.removeEventListener(ev,onInteract,true);}catch(e){}}); }
+  try{ EVS.forEach(function(ev){ window.addEventListener(ev,onInteract,{capture:true,passive:true}); }); }catch(e){}
+})();
+
 // ── MASTERY TRACKING (localStorage + compacte Supabase upsert) ─────────────
 // Structuur: {[vakId]: {[domeinId]: {c: correct, t: totaal}}}
 // Supabase: 1 rij per device per vak - groeit NIET onbeperkt (upsert)
