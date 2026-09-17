@@ -940,9 +940,46 @@ function _focusVakIds(){
 // "Dit heb je nu nodig"-kaart op home: stuurt de leerling naar het zwakste
 // leerdoel. Verschijnt alleen als er een leerdoel met data is dat ruimte heeft
 // om te groeien (nieuwe/alles-groen gebruikers zien 'm niet; dagmissie dekt die).
+// ═══════ VANDAAG-HUB — de dagelijkse ruggengraat van de app ═══════
+// Eén vast anker bovenaan home: begroeting + je stand (streak, dagen tot examen)
+// + wat je vandaag het beste kunt doen (zwakste leerdoelen uit de mastery-spine
+// + wat wegzakt). Zo begint elke sessie bij hetzelfde punt: "wat doe ik nu?".
+function renderVandaagHub(){
+  const box=document.getElementById('vandaag-hub'); if(!box) return;
+  let naam=''; try{ naam=((JSON.parse(localStorage.getItem(PROF_KEY)||'{}').naam)||'').trim().split(/\s+/)[0]||''; }catch(e){}
+  let streak=0; try{ streak=(calcStreak().current)||0; }catch(e){}
+  let dagen=null, exVak=''; try{ const t=getCountdownTarget(); if(t&&t.datum){ const d=Math.ceil((new Date(t.datum)-new Date())/864e5); if(d>=0){ dagen=d; exVak=t.vak||''; } } }catch(e){}
+  const herhaal=(typeof herhaalDueCount==='function')?herhaalDueCount():0;
+  let leer=[]; try{ leer=weakestLeerdoelen({vakIds:_focusVakIds(),limit:2})||[]; }catch(e){}
+  const h=new Date().getHours(); const groet=h<6?'Goedenavond':h<12?'Goedemorgen':h<18?'Goedemiddag':'Goedenavond';
+  const items=[];
+  leer.forEach(t=>{ const pct=Math.round(t.score*100);
+    items.push(`<button class="vh-item" onclick="focusStartLeerdoel('${t.vakId}','${_esc(t.ldId)}')">
+      <span class="vh-item-dot" style="background:${t.color}"></span>
+      <span class="vh-item-txt"><b>${_esc(t.naam)}</b><small>${_esc(t.vakNaam)} · ${pct}%</small></span>
+      <span class="vh-item-go">Start →</span></button>`); });
+  if(herhaal>0) items.push(`<button class="vh-item" onclick="herhaalOefen()">
+      <span class="vh-item-dot" style="background:#22c55e"></span>
+      <span class="vh-item-txt"><b>Fris ${herhaal} ${herhaal===1?'onderdeel':'onderdelen'} op</b><small>Deze zakken weg uit je geheugen</small></span>
+      <span class="vh-item-go">Start →</span></button>`);
+  const chips=[];
+  if(streak>0) chips.push(`<span class="vh-chip">🔥 ${streak}</span>`);
+  if(dagen!=null) chips.push(`<span class="vh-chip">📅 nog ${dagen}d${exVak?' · '+_esc(exVak):''}</span>`);
+  const topbar=`<div class="vh-top"><span class="vh-greet">${groet}${naam?', '+_esc(naam):''}</span><span class="vh-chips">${chips.join('')}</span></div>`;
+  let inner;
+  if(items.length){
+    inner=`${topbar}<div class="vh-lbl">Vandaag voor jou</div><div class="vh-items">${items.join('')}</div>`;
+  } else {
+    inner=`${topbar}<div class="vh-empty">Begin met een snelle quiz, dan stel ik hier elke dag samen wat je het beste kunt oefenen.
+      <button class="vh-empty-btn" onclick="(typeof _showQuickStartSheet==='function')?_showQuickStartSheet():show('sc-home')">Kies een vak →</button></div>`;
+  }
+  box.innerHTML=`<div class="vandaag-hub">${inner}</div>`;
+}
 function renderFocusLeerdoel(){
   const box=document.getElementById('hm-focus-ld');
   if(!box)return;
+  // De Vandaag-hub bovenaan toont dit nu; dit blok wijkt om dubbeling te voorkomen.
+  try{ const hub=document.getElementById('vandaag-hub'); if(hub&&hub.innerHTML.trim()){ box.style.display='none'; box.innerHTML=''; return; } }catch(e){}
   // Rust op home: nooit twee grote blokken tegelijk. Staat de context-/fouten-kaart
   // er al (comeback of feature-discovery), dan wijkt "Dit heb je nu nodig".
   try{

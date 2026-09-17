@@ -326,6 +326,7 @@ function chooseLevel(level,_noHistory){
   }
   APP_LEVEL=level;
   localStorage.setItem('examenapp_level',level);
+  try{ if(typeof _funnel==='function')_funnel('level'); }catch(e){} // trechter: niveau gekozen
   applyLevelTheme(level);
   // Samenvattingen alvast op de achtergrond laden (parallel, blokkeert de grid niet),
   // zodat ze klaar zijn wanneer een leerling een vak/samenvatting opent.
@@ -477,7 +478,7 @@ function openNavSheet(){
 function closeNavSheet(){var ov=document.getElementById('nav-sheet-ov');if(ov)ov.classList.remove('open');}
 // Patch show() to update bottom nav (pass all args through)
 const _origShow=show;
-window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);if(id==='sc-home'){try{renderFocusLeerdoel();}catch(e){}}};
+window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);if(id==='sc-home'){try{renderVandaagHub();}catch(e){}try{renderFocusLeerdoel();}catch(e){}}};
 
 // Activeer routing na volledig laden
 window.addEventListener('load',()=>{

@@ -26,6 +26,7 @@ function openQmode(did){
 }
 
 function startQ(mode){
+  try{ if(typeof _funnel==='function')_funnel('action'); }catch(e){} // trechter: eerste echte engagement
   if(mode==='oud')trackEvent('oud_examen_quiz',{vak:ST.vak?.naam||null,domein:ST.domein?.naam||null});
   // If oud-examen mode and domain has year-tagged questions → show picker first
   // Nog geen vragen voor dit onderdeel (bv. VMBO in opbouw): vriendelijk melden
@@ -1426,7 +1427,7 @@ function toonRes(){
   try{const _pbRes=savePB(ST.vak.id,ST.domein.id,pct);if(_pbRes.isNew){window._newPB=true;window._oldPB=_pbRes.prev?_pbRes.prev.score:null;}}catch(e){}
   // Rebuild grid and streak to update UI
   try{const g=document.getElementById('vakgrid');if(g){g.innerHTML='';buildGrid();}
-  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();renderDecayAlert();renderExamAlert();}catch(e){}try{renderVandaagWidget();}catch(e){}}catch(e){}
+  renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();renderDailyGoal();renderLiveCount();renderHomeStats();renderGreeting();try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderHmQuickChips();renderHmStatsStrip();renderDecayAlert();renderExamAlert();}catch(e){}try{renderVandaagHub();}catch(e){}try{renderVandaagWidget();}catch(e){}}catch(e){}
   let _dgJustDone=false;try{_dgJustDone=recordDailyGoal();}catch(e){};
   const isPerfect=pct===1&&ST.mode==='snel'&&tot>=3;
   // Verzamelbak voor de finish-viermomenten; ze worden ná de render één-voor-één

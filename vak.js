@@ -4,6 +4,7 @@
 function _ceStatusMap(){return{'CE':{cls:'CE',icon:ICO_DOC,txt:'Centraal Examen'},'SE':{cls:'SE',icon:ICO_DOC,txt:'Schoolexamen'},'CE+SE':{cls:'CESE',icon:ICO_DOC,txt:'CE + Schoolexamen'},'DEELS CE':{cls:'DEELS',icon:ICO_DOC,txt:'Deels CE'},'CE-KERN':{cls:'CE',icon:ICO_STAR,txt:'Kern van het CE'}};}
 function openVak(id,_noHash){
   if(id&&typeof id==='object')id=id.id; // defensief: nooit een vak-object doorgeven
+  try{ if(typeof _funnel==='function')_funnel('action'); }catch(e){} // trechter: eerste echte engagement
   // Samenvattingen (SAM_RICH) worden lazy geladen; wacht erop vóór we de detailpagina
   // (met de samenvatting-tab) opbouwen, anders valt die terug op de basis-sam.
   if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){try{if(typeof vonkLoading==='function')vonkLoading('Samenvattingen laden…');}catch(e){}ensureSamData(APP_LEVEL,function(){openVak(id,_noHash);});return;}
