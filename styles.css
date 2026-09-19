@@ -7630,6 +7630,23 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 #vakgrid .card-desc{display:none}
 #vakgrid .card{padding-top:18px;padding-bottom:16px}
 #vakgrid .card-name{margin-bottom:6px}
+/* Home rustiger: de losse "Dagmissie"-kaart valt weg. De Vandaag-hub zegt al
+   wat je nu moet doen, en Vonk kondigt de dagmissie ook via een tekstballon aan. */
+#sc-home #dagmissie-home{display:none}
+/* Compacte vaktegels op mobiel: kleiner, dichter en zonder herhaalde ruis
+   ("Nog niet begonnen" op elke tegel), zodat het rooster één rustig geheel wordt
+   i.p.v. een lange lijst grote kaarten. Op tablet/desktop blijven de tegels vol. */
+@media(max-width:640px){
+  #sc-home #vakgrid{gap:9px}
+  #sc-home #vakgrid .card{padding:12px 12px 11px!important;border-radius:15px!important}
+  #sc-home #vakgrid .card-icon{width:34px;height:34px;border-radius:11px;margin-bottom:8px}
+  #sc-home #vakgrid .card-icon svg{width:19px;height:19px}
+  #sc-home #vakgrid .card-name{font-size:13.5px!important;margin-bottom:2px!important}
+  #sc-home #vakgrid .card-meta{font-size:10.5px}
+  #sc-home #vakgrid .card-progress{margin-top:8px}
+  #sc-home #vakgrid .card-progress.no-data{display:none}
+  #sc-home #vakgrid .card-lp-dots{display:none}
+}
 .statbar{display:flex;gap:9px;margin:14px 0 4px}
 .sbar-pill{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;padding:13px 4px 11px;border-radius:18px;
   background:var(--s);border:1px solid var(--bo);cursor:pointer;font-family:var(--font-head);
