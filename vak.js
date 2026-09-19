@@ -52,9 +52,13 @@ function openVak(id,_noHash){
   // want die wees al naar alleexamens.nl) - daarom staat dit nu op de werkende bron.
   const _EXAMENS_BASE = '';
   const _aeNames={nl:'Nederlands',wa:'Wiskunde A',wb:'Wiskunde B',bi:'Biologie',sk:'Scheikunde',na:'Natuurkunde',en:'Engels',ec:'Economie',be:'Bedrijfseconomie',gs:'Geschiedenis',ak:'Aardrijkskunde',mw:'Maatschappijwetenschappen',du:'Duits',fr:'Frans',la:'Latijn',gr:'Grieks',in:'Informatica'};
-  const _aeLvl=(APP_LEVEL||'havo').toUpperCase();
+  // VMBO GL/TL staat op alleexamens.nl onder "VMBO-GL en TL" met eigen vaknamen
+  // (bevestigd werkend). Spaties zijn al als %20 gecodeerd; ${_enc} codeert de vaknaam.
+  const _aeNamesVmbo={nl:'Nederlands',en:'Engels',du:'Duits',fa:'Frans',wi:'Wiskunde',na1:'Natuur- en scheikunde 1',na2:'Natuur- en scheikunde 2',bi:'Biologie',ec:'Economie',gs:'Geschiedenis en staatsinrichting',ak:'Aardrijkskunde',ma:'Maatschappijkunde'};
   const _niveau=(APP_LEVEL||'havo').toLowerCase();
-  const _aeName=_aeNames[ST.vak.id];
+  const _isVmbo=_niveau==='vmbo';
+  const _aeLvl=_isVmbo?'VMBO-GL%20en%20TL':(APP_LEVEL||'havo').toUpperCase();
+  const _aeName=_isVmbo?_aeNamesVmbo[ST.vak.id]:_aeNames[ST.vak.id];
   if(_aeName){
     const _enc=encodeURIComponent(_aeName);
     const _mkPdf=(year,tv,type)=>_EXAMENS_BASE
@@ -69,14 +73,23 @@ function openVak(id,_noHash){
       havo:{wa:2017,wb:2017,bi:2024,sk:2024,na:2024,be:2021,gs:2020,ak:2025,ec:2023},
       vwo: {wa:2018,wb:2018,bi:2025,sk:2025,na:2025,gs:2021,ak:2026,ec:2023,mw:2020,la:2017,gr:2017,in:2022}
     };
-    const _svVanaf=((_svData[(APP_LEVEL||'havo').toLowerCase()])||{})[ST.vak.id]||2019;
-    const _svBadge=y=>y>=_svVanaf
+    // VMBO heeft (nog) geen per-vak syllabus-startjaren; dan géén badge tonen i.p.v.
+    // onterecht "zelfde syllabus" claimen.
+    const _hasSv=!!_svData[_niveau];
+    const _svVanaf=((_svData[_niveau])||{})[ST.vak.id]||2019;
+    const _svBadge=y=> !_hasSv ? '' : (y>=_svVanaf
       ?`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);color:#22c55e;letter-spacing:.2px;vertical-align:middle">✓ Zelfde syllabus</span>`
-      :`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.3);color:#ca8a04;letter-spacing:.2px;vertical-align:middle" title="Huidig CE-programma geldt v.a. ${_svVanaf} (bron: examenblad.nl). Dit examen kan stof bevatten die niet meer in het syllabus staat, of nieuwe stof missen.">⚠ Ander syllabus (v.a. ${_svVanaf})</span>`;
+      :`<span style="display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.3);color:#ca8a04;letter-spacing:.2px;vertical-align:middle" title="Huidig CE-programma geldt v.a. ${_svVanaf} (bron: examenblad.nl). Dit examen kan stof bevatten die niet meer in het syllabus staat, of nieuwe stof missen.">⚠ Ander syllabus (v.a. ${_svVanaf})</span>`);
     let _ch=`<div class="ce-archief-card" style="margin-top:8px;border-radius:14px;overflow:hidden;border:1px solid var(--bo);background:#fff"><div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;cursor:pointer;gap:10px;user-select:none" onclick="this.closest('.ce-archief-card').classList.toggle('open')"><div style="display:flex;align-items:center;gap:11px;min-width:0"><div style="width:36px;height:36px;border-radius:10px;background:rgba(var(--or-rgb),.14);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0">📄</div><div style="min-width:0"><div style="font-size:13.5px;font-weight:800;color:var(--or)">Oude examens</div><div style="font-size:11px;color:var(--mu)">Opgaven &amp; antwoorden per jaar</div></div></div><div style="display:flex;align-items:center;gap:5px;flex-shrink:0"><span style="font-size:11px;font-weight:700;color:var(--or)">Openen</span><div style="width:22px;height:22px;border-radius:7px;background:rgba(var(--or-rgb),.15);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--or);transition:transform .22s" class="ce-arr">▼</div></div></div><div class="ce-archief-body" style="display:none;padding:0 14px 14px">`;
     _ch+=`<a href="${_bundel}" target="_blank" rel="noopener" class="ce-bundel-btn">📦 Download complete examenbundel - alle jaren in één PDF</a><div style="display:flex;align-items:flex-start;gap:8px;background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.3);border-radius:10px;padding:9px 12px;margin-bottom:14px;font-size:12px;color:#ca8a04;line-height:1.5"><span style="font-size:15px;flex-shrink:0">⚠️</span><span><strong>Let op: zeer groot bestand.</strong> Deze PDF bevat alle examenjaren en kan honderden MB's groot zijn. Dit kan je browser of computer tijdelijk laten vastlopen. Download liever de losse examens per jaar hieronder.</span></div>`;
     // Bijlage per vak: talen → tekstboekje, bèta → uitwerkbijlage, mens & maatschappij → bronnenboekje.
-    const _bijlageCfg={
+    const _bijlageCfg=_isVmbo?{
+      // VMBO-vaknamen + bijlage-types (bevestigd werkend op alleexamens.nl). Aardrijkskunde
+      // heeft geen losse bijlage, dus die ontbreekt hier bewust.
+      nl:{type:'bijlage',label:'Tekstboekje'},en:{type:'bijlage',label:'Tekstboekje'},du:{type:'bijlage',label:'Tekstboekje'},fa:{type:'bijlage',label:'Tekstboekje'},
+      wi:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},na1:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},na2:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},bi:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},
+      gs:{type:'bijlage',label:'Bronnenboekje'},ec:{type:'bijlage',label:'Bronnenboekje'},ma:{type:'bijlage',label:'Bronnenboekje'}
+    }:{
       nl:{type:'bijlage',label:'Tekstboekje'},en:{type:'bijlage',label:'Tekstboekje'},du:{type:'bijlage',label:'Tekstboekje'},fr:{type:'bijlage',label:'Tekstboekje'},
       na:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},sk:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},bi:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},wa:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},wb:{type:'uitwerkbijlage',label:'Uitwerkbijlage'},
       gs:{type:'bijlage',label:'Bronnenboekje'},ak:{type:'bijlage',label:'Bronnenboekje'},ec:{type:'bijlage',label:'Bronnenboekje'},mw:{type:'bijlage',label:'Bronnenboekje'}

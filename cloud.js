@@ -40,13 +40,26 @@ async function callSlagioAI(payload){
 // Plus actief is (later gezet door de Mollie-webhook + cloudsync). Gratis
 // gebruikers krijgen een proef van AI_GRADE_WEEKLY nakijkbeurten per week.
 // ─────────────────────────────────────────────────────────────────────────
-const AI_GRADE_WEEKLY = 3; // gratis AI-nakijkbeurten per week (server dwingt dit echt af)
+// TIJDELIJK ruim: zolang er weinig gebruikers zijn en betalen nog niet kan
+// (geen KVK/inschrijving), staat de gratis AI ruim open. De API-kosten hebben
+// een eigen plafond, dus dit kan geen ontsporende rekening geven. Zet dit later
+// terug naar een krappere waarde zodra Plus/betalen live gaat. LET OP: de edge
+// function (WEEKLY_TRIAL) is leidend — pas die óók aan en deploy 'm opnieuw.
+const AI_GRADE_WEEKLY = 25; // gratis AI-beurten per week (server dwingt het echte plafond af)
 function _plusUntil(){ try{ return localStorage.getItem('slagio_plus_until')||''; }catch(e){ return ''; } }
+// Betalen kan nog niet (geen KVK/inschrijving), dus er is nog geen echte "Plus"
+// om te verkopen. Zolang dit false is, staat de hele examentrainer + AI gewoon
+// GRATIS open voor iedereen en tonen we nergens prijzen of een betaalmuur.
+// Zet dit op true zodra betalen live gaat; dan bepaalt een echte aankoop
+// (plus_until, gezet door de betaal-webhook) weer wie Plus heeft.
+const PLUS_PAYMENTS_LIVE = false;
 // plusActive() is ALLEEN voor de UI (knoppen tonen/vergrendelen). Het is GEEN
-// beveiliging: de edge function checkt Plus zelf server-side, dus ook al zet
-// iemand dit veld met DevTools, de betaalde AI blijft geweigerd. We spiegelen
-// hier de server-waarheid zodat de UI klopt.
-function plusActive(){ const d=_plusUntil(); if(!d) return false; const t=Date.parse(d); return !isNaN(t) && t>Date.now(); }
+// beveiliging: de edge function checkt Plus zelf server-side. Zolang betalen niet
+// live is, geeft dit voor iedereen true → alles is gratis ontgrendeld.
+function plusActive(){
+  if(!PLUS_PAYMENTS_LIVE) return true;
+  const d=_plusUntil(); if(!d) return false; const t=Date.parse(d); return !isNaN(t) && t>Date.now();
+}
 // Vraagt de server "ben ik Plus?" en spiegelt dat naar localStorage voor de UI.
 // Faalt stil (offline / tabellen nog niet aangemaakt) → UI valt terug op de
 // laatst bekende waarde.

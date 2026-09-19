@@ -19,66 +19,23 @@ function _onbKlasLabel(v){ const f=_onbKlassen().find(k=>k[0]===v); return f?f[1
 
 // ── Stappen ─────────────────────────────────────────────────────
 // type: 'single' (auto-door na keuze) | 'multi' | 'info'
+// Bewust minimaal: de niveaukeuze gebeurt op de startpagina, dus de onboarding
+// vraagt alleen nog wat functioneel nodig is — je maatje en (optioneel) een
+// account. Geen lange intro meer; de leerling is met twee tikken binnen.
 const ONB_STEPS = [
-  { key:'welkom', mood:'blij', type:'info',
-    text:'Hoi! Ik ben <b>Vonk</b> - jouw examen-maatje. Ik stel je een paar vlugge vragen en zet Slagio helemaal voor jou klaar.',
-    body:()=>`<button class="onb-cta" onclick="onbNext()">Ja, we gaan!</button>` },
-
-  { key:'niveau', mood:'goed', type:'single',
-    text:'Welk <b>niveau</b> doe je?',
-    body:()=>{
-      const opt=(v,lbl,sub)=>`<button class="onb-opt${ONB.data.niveau===v?' sel':''}" onclick="onbPick('niveau','${v}')"><span class="onb-opt-tx"><span class="onb-opt-main">${lbl}</span><span class="onb-opt-sub">${sub}</span></span><span class="onb-opt-check">✓</span></button>`;
-      return `<div class="onb-opts">${opt('vmbo','VMBO','4 jaar')}${opt('havo','HAVO','5 jaar')}${opt('vwo','VWO','6 jaar')}</div>`;
-    } },
-
-  { key:'klas', mood:'goed', type:'single',
-    text:'In welke klas zit je nu?',
-    body:()=>`<div class="onb-opts">${_onbKlassen().map(([v,lbl])=>`<button class="onb-opt${ONB.data.klas===v?' sel':''}" onclick="onbPick('klas','${v}')"><span class="onb-opt-tx"><span class="onb-opt-main">${lbl}</span></span><span class="onb-opt-check">✓</span></button>`).join('')}</div>` },
-
-  { key:'profiel', mood:'denk', type:'single', skip:(d)=>d.niveau==='vmbo',
-    text:'Welk <b>profiel</b> volg je?',
-    body:()=>{
-      const P=[['nt','Natuur & Techniek','N&T'],['ng','Natuur & Gezondheid','N&G'],['em','Economie & Maatschappij','E&M'],['cm','Cultuur & Maatschappij','C&M']];
-      return `<div class="onb-opts">${P.map(([v,lbl,ab])=>`<button class="onb-opt${ONB.data.profiel===v?' sel':''}" onclick="onbPick('profiel','${v}')"><span class="onb-opt-tx"><span class="onb-opt-main">${lbl}</span><span class="onb-opt-sub">${ab}</span></span><span class="onb-opt-check">✓</span></button>`).join('')}</div>`;
-    } },
-
-  { key:'vakken', mood:'goed', type:'multi',
-    text:'Kies je <b>examenvakken</b>. Deze zet ik bovenaan je startscherm.',
-    body:()=>{
-      const vk=(typeof getVK==='function')?getVK():[];
-      if(!vk.length) return '<div class="onb-loading">Vakken laden…</div>';
-      return `<div class="onb-vakgrid">${vk.map(v=>`<button class="onb-vak${ONB.data.vakken.includes(v.id)?' sel':''}" onclick="onbToggleVak('${v.id}')" style="--vc:${v.kleur}"><span class="onb-vak-ic"><svg viewBox="0 0 24 24">${(typeof VAK_ICONS!=='undefined'&&VAK_ICONS[v.id])||'<circle cx="12" cy="12" r="4"/>'}</svg></span><span class="onb-vak-nm">${v.naam}</span><span class="onb-vak-ck">✓</span></button>`).join('')}</div>`;
-    } },
-
   { key:'dier', mood:'blij', type:'single',
-    text:'Kies je <b>maatje</b>. Hij groeit mee met je XP.',
+    text:'Kies je <b>maatje</b>. Hij groeit mee met jouw XP en staat naast je bij elke oefening.',
     body:()=>{
       const A=(typeof ANIMAL_EVOLUTIONS!=='undefined')?ANIMAL_EVOLUTIONS:[];
       return `<div class="onb-diergrid">${A.map(a=>`<button class="onb-dier${ONB.data.animalId===a.id?' sel':''}" onclick="onbPick('animalId','${a.id}')"><span class="onb-dier-av">${(typeof getAnimalDisplay==='function')?getAnimalDisplay(a.id,0,44):''}</span><span class="onb-dier-nm">${a.n}</span></button>`).join('')}</div>`;
     } },
 
-  { key:'uitleg', mood:'trots', type:'info',
-    text:'Zo werkt Slagio - in het kort:',
-    body:()=>`<div class="onb-uitleg">
-      <div class="onb-ul-row"><span class="onb-ul-ic">⚡</span><div><b>Oefen slim</b> - korte quizzen per domein met directe feedback.</div></div>
-      <div class="onb-ul-row"><span class="onb-ul-ic">🔥</span><div><b>Bouw je streak</b> - elke dag oefenen geeft bonus-XP en badges.</div></div>
-      <div class="onb-ul-row"><span class="onb-ul-ic">🏆</span><div><b>Zie je slagingskans</b> - en klim in de wekelijkse divisies.</div></div>
-      <button class="onb-cta" onclick="onbNext()">Duidelijk!</button></div>` },
-
-  { key:'cijfers', mood:'goed', type:'info', optional:true,
-    text:'Wil je je <b>SE-cijfers</b> invoeren? Dan bereken ik meteen je slagingskans.',
-    body:()=>`<div class="onb-optbtns"><button class="onb-cta" onclick="onbOpt('cijfers',true)">Ja, invoeren</button><button class="onb-later" onclick="onbOpt('cijfers',false)">Later</button></div>` },
-
-  { key:'studieplan', mood:'denk', type:'info', optional:true,
-    text:'Zal ik alvast een <b>studieplan</b> voor je maken op basis van je vakken?',
-    body:()=>`<div class="onb-optbtns"><button class="onb-cta" onclick="onbOpt('studieplan',true)">Ja, maak plan</button><button class="onb-later" onclick="onbOpt('studieplan',false)">Later</button></div>` },
-
   { key:'account', mood:'blij', type:'info', optional:true,
-    text:'Maak een <b>gratis account</b> om je voortgang te bewaren en mee te doen aan het leaderboard & de divisies.',
-    body:()=>`<div class="onb-optbtns"><button class="onb-cta" onclick="onbOpt('account',true)">Account maken</button><button class="onb-later" onclick="onbOpt('account',false)">Later</button></div>` },
+    text:'Wil je een <b>gratis account</b>? Dan bewaar ik je voortgang op al je apparaten en doe je mee met het leaderboard en de divisies.',
+    body:()=>`<div class="onb-optbtns"><button class="onb-cta" onclick="onbOpt('account',true)">Account maken</button><button class="onb-later" onclick="onbOpt('account',false)">Nu even niet</button></div>` },
 
   { key:'klaar', mood:'feest', type:'info',
-    text:'Je bent er helemaal klaar voor! Succes met oefenen - ik sta naast je.',
+    text:'Klaar! Succes met oefenen, ik sta naast je. 🔥',
     body:()=>`<button class="onb-cta onb-cta-big" onclick="onbComplete()">Start met oefenen!</button>` },
 ];
 

@@ -26,8 +26,13 @@ const ANTHROPIC_URL = "https://api.anthropic.com/v1/messages";
 const MODEL = "claude-haiku-4-5"; // goedkoop + capabel; nakijken is een afgebakende taak
 
 // Fair-use-limieten (per ISO-week, server-afgedwongen). Pas gerust aan.
-const WEEKLY_PLUS = 50;  // Plus-leden: ruime eerlijk-gebruik-grens
-const WEEKLY_TRIAL = 3;  // niet-Plus: gratis proef om AI te laten proeven
+// TIJDELIJK ruim: betalen kan nog niet (geen KVK), dus de AI staat gratis ruim
+// open. De API-kosten hebben een eigen plafond bij Anthropic, dus dit kan geen
+// ontsporende rekening geven. Zet WEEKLY_TRIAL later terug naar een krappe
+// waarde zodra Plus/betalen live gaat. Houd dit gelijk aan AI_GRADE_WEEKLY in
+// cloud.js. Deploy na wijziging: supabase functions deploy slagio-ai --no-verify-jwt
+const WEEKLY_PLUS = 50;   // Plus-leden: ruime eerlijk-gebruik-grens
+const WEEKLY_TRIAL = 25;  // niet-Plus: tijdelijk ruim (betalen nog niet mogelijk)
 
 const SB_URL = Deno.env.get("SUPABASE_URL") || "";
 const SB_ANON = Deno.env.get("SUPABASE_ANON_KEY") || "";

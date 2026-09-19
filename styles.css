@@ -2048,26 +2048,27 @@ html.dark .qb{background:#2e3550}
 .wlc-feat{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:rgba(255,255,255,.4);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:5px 13px}
 .wlc-feat-chk{color:#4ade80;font-weight:800;font-size:11px}
 /* picker */
-.wlc-picker{max-width:860px;margin:0 auto;padding:0 20px 64px;position:relative;z-index:1}
-.wlc-pick-lbl{font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:rgba(255,255,255,.2);text-align:center;margin-bottom:18px}
-.wlc-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px}
+.wlc-picker{max-width:1040px;margin:0 auto;padding:0 20px 64px;position:relative;z-index:1}
+.wlc-pick-lbl{font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:rgba(255,255,255,.34);text-align:center;margin-bottom:20px}
+.wlc-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:12px;align-items:stretch}
 /* cards */
-.wlc-card{position:relative;overflow:hidden;border-radius:24px;padding:32px 28px 28px;cursor:pointer;transition:transform .28s cubic-bezier(.34,1.2,.64,1),box-shadow .28s,border-color .28s,background .28s;border:1.5px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+.wlc-card{position:relative;overflow:hidden;border-radius:24px;padding:30px 26px 24px;cursor:pointer;display:flex;flex-direction:column;flex:1;transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s,border-color .3s,background .3s;border:1.5px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
 .wlc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent)}
 .wlc-chavo{border-color:rgba(59,130,246,.3);background:linear-gradient(150deg,rgba(59,130,246,.11) 0%,rgba(59,130,246,.04) 100%)}
 .wlc-cvwo{border-color:rgba(139,92,246,.3);background:linear-gradient(150deg,rgba(139,92,246,.11) 0%,rgba(139,92,246,.04) 100%)}
 .wlc-cvmbo{border-color:rgba(45,212,191,.3);background:linear-gradient(150deg,rgba(45,212,191,.11) 0%,rgba(45,212,191,.04) 100%)}
-.wlc-cvmbo:hover,.wlc-cvmbo:focus-visible{border-color:rgba(45,212,191,.7);background:linear-gradient(150deg,rgba(45,212,191,.2) 0%,rgba(45,212,191,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(45,212,191,.28),0 0 0 1px rgba(45,212,191,.18)}
-.wlc-cvmbo:active{transform:scale(.97);transition:transform .1s}
+.wlc-cvmbo:hover,.wlc-cvmbo:focus-visible{border-color:rgba(45,212,191,.75);background:linear-gradient(150deg,rgba(45,212,191,.24) 0%,rgba(45,212,191,.08) 100%);transform:translateY(-10px) scale(1.025);box-shadow:0 34px 80px rgba(45,212,191,.36),0 0 0 1px rgba(45,212,191,.24)}
+.wlc-cvmbo:active{transform:translateY(-3px) scale(.97);transition:transform .1s}
 .wlc-cvmbo .wlc-card-glow{background:radial-gradient(circle at 25% 15%,rgba(45,212,191,.12) 0%,transparent 55%)}
 .wlc-cvmbo .wlc-card-lvl{color:#2dd4bf;text-shadow:0 0 32px rgba(45,212,191,.5)}
 .wlc-cvmbo .wlc-card-list li::before{content:'✓';color:#2dd4bf}
-.wlc-cvmbo .wlc-card-btn{color:#2dd4bf}
+.wlc-cvmbo .wlc-card-btn{color:#b6f5ea;background:rgba(45,212,191,.15);border:1px solid rgba(45,212,191,.32)}
+.wlc-cvmbo:hover .wlc-card-btn{background:#2dd4bf;color:#04201d;box-shadow:0 12px 28px rgba(45,212,191,.45)}
 .lc-active.wlc-cvmbo,.lc-active.lc-vmbo{border-color:rgba(45,212,191,.7)!important;box-shadow:0 0 0 2px rgba(45,212,191,.3),0 16px 48px rgba(45,212,191,.22)!important}
-.wlc-chavo:hover,.wlc-chavo:focus-visible{border-color:rgba(59,130,246,.7);background:linear-gradient(150deg,rgba(59,130,246,.2) 0%,rgba(59,130,246,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(59,130,246,.28),0 0 0 1px rgba(59,130,246,.18)}
-.wlc-cvwo:hover,.wlc-cvwo:focus-visible{border-color:rgba(139,92,246,.7);background:linear-gradient(150deg,rgba(139,92,246,.2) 0%,rgba(139,92,246,.07) 100%);transform:translateY(-7px);box-shadow:0 28px 72px rgba(139,92,246,.28),0 0 0 1px rgba(139,92,246,.18)}
-.wlc-chavo:active{transform:scale(.97);transition:transform .1s}
-.wlc-cvwo:active{transform:scale(.97);transition:transform .1s}
+.wlc-chavo:hover,.wlc-chavo:focus-visible{border-color:rgba(59,130,246,.75);background:linear-gradient(150deg,rgba(59,130,246,.24) 0%,rgba(59,130,246,.08) 100%);transform:translateY(-10px) scale(1.025);box-shadow:0 34px 80px rgba(59,130,246,.36),0 0 0 1px rgba(59,130,246,.24)}
+.wlc-cvwo:hover,.wlc-cvwo:focus-visible{border-color:rgba(139,92,246,.75);background:linear-gradient(150deg,rgba(139,92,246,.24) 0%,rgba(139,92,246,.08) 100%);transform:translateY(-10px) scale(1.025);box-shadow:0 34px 80px rgba(139,92,246,.36),0 0 0 1px rgba(139,92,246,.24)}
+.wlc-chavo:active{transform:translateY(-3px) scale(.97);transition:transform .1s}
+.wlc-cvwo:active{transform:translateY(-3px) scale(.97);transition:transform .1s}
 .wlc-card-glow{position:absolute;inset:-40%;pointer-events:none}
 .wlc-chavo .wlc-card-glow{background:radial-gradient(circle at 25% 15%,rgba(59,130,246,.12) 0%,transparent 55%)}
 .wlc-cvwo .wlc-card-glow{background:radial-gradient(circle at 25% 15%,rgba(139,92,246,.12) 0%,transparent 55%)}
@@ -2076,15 +2077,18 @@ html.dark .qb{background:#2e3550}
 .wlc-chavo .wlc-card-lvl{color:#3b82f6;text-shadow:0 0 32px rgba(59,130,246,.5)}
 .wlc-cvwo .wlc-card-lvl{color:#a78bfa;text-shadow:0 0 32px rgba(167,139,250,.5)}
 .wlc-card-pill{font-size:11px;font-weight:700;color:rgba(255,255,255,.3);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:4px 11px;white-space:nowrap}
-.wlc-card-list{list-style:none;padding:0;margin:0 0 26px;display:flex;flex-direction:column;gap:10px}
+.wlc-card-list{list-style:none;padding:0;margin:0 0 22px;display:flex;flex-direction:column;gap:10px;flex:1}
 .wlc-card-list li{font-size:13.5px;color:rgba(255,255,255,.5);font-weight:500;padding-left:20px;position:relative}
 .wlc-card-list li::before{position:absolute;left:0;font-weight:800;font-size:12px}
 .wlc-chavo .wlc-card-list li::before{content:'✓';color:#3b82f6}
 .wlc-cvwo .wlc-card-list li::before{content:'✓';color:#a78bfa}
-.wlc-card-btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:15px;font-weight:800;letter-spacing:.2px;transition:gap .25s}
-.wlc-chavo .wlc-card-btn{color:#3b82f6}
-.wlc-cvwo .wlc-card-btn{color:#a78bfa}
-.wlc-card:hover .wlc-card-btn{gap:14px}
+/* CTA: gevulde pill die op hover volledig oplicht in de niveaukleur (juicy). */
+.wlc-card-btn{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-head);font-size:15px;font-weight:800;letter-spacing:.2px;padding:13px 16px;border-radius:14px;margin-top:auto;transition:gap .25s,background .2s,color .2s,box-shadow .25s,transform .2s}
+.wlc-chavo .wlc-card-btn{color:#cfe0ff;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.32)}
+.wlc-cvwo .wlc-card-btn{color:#e6ddff;background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.32)}
+.wlc-chavo:hover .wlc-card-btn{background:#3b82f6;color:#fff;box-shadow:0 12px 28px rgba(59,130,246,.5)}
+.wlc-cvwo:hover .wlc-card-btn{background:#a78bfa;color:#1c0f38;box-shadow:0 12px 28px rgba(139,92,246,.5)}
+.wlc-card:hover .wlc-card-btn{gap:12px;transform:translateY(-1px)}
 /* lc-active state */
 .lc-active.wlc-chavo,.lc-active.lc-havo{border-color:rgba(59,130,246,.7)!important;box-shadow:0 0 0 2px rgba(59,130,246,.3),0 16px 48px rgba(59,130,246,.22)!important}
 .lc-active.wlc-cvwo,.lc-active.lc-vwo{border-color:rgba(139,92,246,.7)!important;box-shadow:0 0 0 2px rgba(139,92,246,.3),0 16px 48px rgba(139,92,246,.22)!important}
@@ -2103,6 +2107,10 @@ html.dark .qb{background:#2e3550}
 .wlc-social-proof{display:inline-block;font-size:13px;color:rgba(255,255,255,.45);margin-top:18px;letter-spacing:.1px}
 .wlc-social-proof strong{color:rgba(255,255,255,.7);font-weight:700}
 @media(max-width:640px){.how-it-works{display:none}}
+/* Onder laptopbreedte de kaarten netjes onder elkaar (laptop = 3 op een rij). */
+@media(max-width:820px){
+  .wlc-cards{grid-template-columns:1fr;max-width:460px;margin-left:auto;margin-right:auto}
+}
 @media(max-width:620px){
   .wlc-hero{padding:52px 16px 40px}
   .wlc-h1{font-size:56px;letter-spacing:-3px;line-height:.92}
@@ -2151,16 +2159,18 @@ html.dark .qb{background:#2e3550}
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .wlc-stat-l{font-size:10px;color:rgba(255,255,255,.25);font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-top:5px}
 
-/* Spinning gradient border wrapper */
-.wlc-card-wrap{position:relative;border-radius:26px;padding:1.5px;transition:padding .28s}
+/* Spinning gradient border wrapper (elke kaart draait in zijn eigen kleur) */
+.wlc-card-wrap{position:relative;display:flex;border-radius:26px;padding:1.5px;transition:padding .28s}
 .wlc-card-wrap::before{
   content:'';position:absolute;inset:0;border-radius:26px;
-  background:conic-gradient(from var(--angle),transparent 0%,transparent 55%,rgba(232,92,13,.9) 75%,rgba(249,168,37,.9) 82%,rgba(232,92,13,.9) 88%,transparent 100%);
+  background:conic-gradient(from var(--angle),transparent 0%,transparent 52%,rgba(59,130,246,.95) 74%,rgba(147,197,253,1) 82%,rgba(59,130,246,.95) 90%,transparent 100%);
   -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
   -webkit-mask-composite:xor;mask-composite:exclude;
-  animation:spinAngle 3.5s linear infinite;opacity:0;transition:opacity .35s}
+  animation:spinAngle 3.2s linear infinite;opacity:0;transition:opacity .35s}
 .wlc-cvwo-wrap::before{
-  background:conic-gradient(from var(--angle),transparent 0%,transparent 55%,rgba(139,92,246,.9) 75%,rgba(167,139,250,1) 82%,rgba(139,92,246,.9) 88%,transparent 100%)}
+  background:conic-gradient(from var(--angle),transparent 0%,transparent 52%,rgba(139,92,246,.95) 74%,rgba(196,181,253,1) 82%,rgba(139,92,246,.95) 90%,transparent 100%)}
+.wlc-cvmbo-wrap::before{
+  background:conic-gradient(from var(--angle),transparent 0%,transparent 52%,rgba(45,212,191,.95) 74%,rgba(153,246,228,1) 82%,rgba(45,212,191,.95) 90%,transparent 100%)}
 .wlc-card-wrap:hover::before,.wlc-card-wrap:has(.lc-active)::before{opacity:1}
 
 /* Shimmer sweep on card CTA */
@@ -2177,19 +2187,30 @@ html.dark .qb{background:#2e3550}
 .wlc-sub{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.36s}
 .wlc-feats{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.48s}
 .wlc-stats{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.58s}
-.wlc-pick-lbl{animation:fadeUpIn .7s cubic-bezier(.22,1,.36,1) both;animation-delay:.66s}
-.wlc-card-wrap:first-child{animation:fadeUpIn .8s cubic-bezier(.22,1,.36,1) both;animation-delay:.74s}
-.wlc-card-wrap:last-child{animation:fadeUpIn .8s cubic-bezier(.22,1,.36,1) both;animation-delay:.84s}
+.wlc-pick-lbl{animation:fadeUpIn .7s cubic-bezier(.22,1,.36,1) both;animation-delay:.62s}
+.wlc-card-wrap{animation:cardPop .62s cubic-bezier(.34,1.56,.64,1) both}
+.wlc-card-wrap:nth-child(1){animation-delay:.70s}
+.wlc-card-wrap:nth-child(2){animation-delay:.80s}
+.wlc-card-wrap:nth-child(3){animation-delay:.90s}
+@keyframes cardPop{from{opacity:0;transform:translateY(26px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
 
 /* Pulse ring on the orb dot in eyebrow */
 .wlc-dot{position:relative}
 .wlc-dot::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(232,92,13,.5);animation:pulse 2s ease-in-out infinite}
 
-/* Card lvl number glow pulse */
+/* Card lvl number glow pulse (elk niveau in eigen kleur, ademend) */
 .wlc-chavo .wlc-card-lvl{animation:glowPulseO 3s ease-in-out infinite}
 .wlc-cvwo .wlc-card-lvl{animation:glowPulseV 3s ease-in-out infinite}
+.wlc-cvmbo .wlc-card-lvl{animation:glowPulseM 3s ease-in-out infinite}
 @keyframes glowPulseO{0%,100%{text-shadow:0 0 28px rgba(59,130,246,.4)}50%{text-shadow:0 0 56px rgba(59,130,246,.8),0 0 90px rgba(59,130,246,.3)}}
 @keyframes glowPulseV{0%,100%{text-shadow:0 0 28px rgba(167,139,250,.4)}50%{text-shadow:0 0 56px rgba(167,139,250,.8),0 0 90px rgba(139,92,246,.3)}}
+@keyframes glowPulseM{0%,100%{text-shadow:0 0 28px rgba(45,212,191,.4)}50%{text-shadow:0 0 56px rgba(45,212,191,.85),0 0 90px rgba(45,212,191,.3)}}
+
+/* Volle-kaart glans die op hover diagonaal doorloopt (extra juice). */
+.wlc-card::before{content:'';position:absolute;top:0;left:-120%;width:60%;height:100%;z-index:2;pointer-events:none;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.10) 50%,transparent 70%);transition:none}
+.wlc-card:hover::before{animation:cardSheen .7s ease forwards}
+@keyframes cardSheen{from{left:-120%}to{left:130%}}
 
 /* ── SCHEDULE SCREEN ───────────────────────────── */
 .schedule-list{display:flex;flex-direction:column;gap:10px;margin-bottom:40px}
@@ -7586,6 +7607,10 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 /* Home rustiger: het gestreepte "maak je eerste quiz"-blok is dubbelop met de
    grote CTA erboven - weg ermee voor meer lucht. */
 #sc-home .bento-empty{display:none}
+/* Cijferanalyse-sectie: verberg de kop volledig zolang er geen SE-cijfers zijn
+   ingevuld (anders staat er een lege kop = ruis). Verschijnt vanzelf zodra er
+   data is (buildGradeInsight vult #grade-insight-home). */
+.hm-cijfer-sec:not(:has(#grade-insight-home > *)){display:none}
 /* ══ Statusbalk: 4 grote gamification-kaarten -> 1 slanke tikbare balk ══
    De home toont alleen nog de kerncijfers; het detail (weekkalender, avatar-
    evolutie, ranglijst) zit één tik verderop op profiel/shop/divisie. */
