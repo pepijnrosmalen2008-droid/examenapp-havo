@@ -952,28 +952,69 @@ function renderVandaagHub(){
   const herhaal=(typeof herhaalDueCount==='function')?herhaalDueCount():0;
   let leer=[]; try{ leer=weakestLeerdoelen({vakIds:_focusVakIds(),limit:2})||[]; }catch(e){}
   const h=new Date().getHours(); const groet=h<6?'Goedenavond':h<12?'Goedemorgen':h<18?'Goedemiddag':'Goedenavond';
-  const items=[];
+  const _arrow=`<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>`;
+
+  // ── Slimme suggesties: zwakste leerdoelen + herhalen ──
+  const rows=[];
   leer.forEach(t=>{ const pct=Math.round(t.score*100);
-    items.push(`<button class="vh-item" onclick="focusStartLeerdoel('${t.vakId}','${_esc(t.ldId)}')">
-      <span class="vh-item-dot" style="background:${t.color}"></span>
-      <span class="vh-item-txt"><b>${_esc(t.naam)}</b><small>${_esc(t.vakNaam)} · ${pct}%</small></span>
-      <span class="vh-item-go">Start →</span></button>`); });
-  if(herhaal>0) items.push(`<button class="vh-item" onclick="herhaalOefen()">
-      <span class="vh-item-dot" style="background:#22c55e"></span>
-      <span class="vh-item-txt"><b>Fris ${herhaal} ${herhaal===1?'onderdeel':'onderdelen'} op</b><small>Deze zakken weg uit je geheugen</small></span>
-      <span class="vh-item-go">Start →</span></button>`);
-  const chips=[];
-  if(streak>0) chips.push(`<span class="vh-chip">🔥 ${streak}</span>`);
-  if(dagen!=null) chips.push(`<span class="vh-chip">📅 nog ${dagen}d${exVak?' · '+_esc(exVak):''}</span>`);
-  const topbar=`<div class="vh-top"><span class="vh-greet">${groet}${naam?', '+_esc(naam):''}</span><span class="vh-chips">${chips.join('')}</span></div>`;
-  let inner;
-  if(items.length){
-    inner=`${topbar}<div class="vh-lbl">Vandaag voor jou</div><div class="vh-items">${items.join('')}</div>`;
-  } else {
-    inner=`${topbar}<div class="vh-empty">Begin met een snelle quiz, dan stel ik hier elke dag samen wat je het beste kunt oefenen.
-      <button class="vh-empty-btn" onclick="(typeof _showQuickStartSheet==='function')?_showQuickStartSheet():show('sc-home')">Kies een vak →</button></div>`;
+    rows.push(`<button class="vh2-row" onclick="focusStartLeerdoel('${t.vakId}','${_esc(t.ldId)}')">
+      <span class="vh2-ic" style="--rc:${t.color}"><b>${pct}%</b></span>
+      <span class="vh2-tx"><b>${_esc(t.naam)}</b><small>${_esc(t.vakNaam)}</small></span>
+      <span class="vh2-go">Start${_arrow}</span></button>`); });
+  if(herhaal>0) rows.push(`<button class="vh2-row" onclick="herhaalOefen()">
+      <span class="vh2-ic vh2-ic-emoji" style="--rc:#22c55e">🔄</span>
+      <span class="vh2-tx"><b>Fris ${herhaal} ${herhaal===1?'onderdeel':'onderdelen'} op</b><small>Deze zakken weg uit je geheugen</small></span>
+      <span class="vh2-go">Start${_arrow}</span></button>`);
+
+  // ── Studieplan-dagtaken (in dezelfde hub, zodat je meteen ziet wat vandaag moet) ──
+  let planSec='';
+  try{
+    if(typeof spGetPlan==='function'){
+      const plan=spGetPlan();
+      if(plan){
+        const today=new Date().toISOString().slice(0,10);
+        const todayTasks=(plan.tasks||[]).filter(t=>t.dateStr===today);
+        const done=(typeof spGetDone==='function')?spGetDone():{};
+        const openTasks=todayTasks.filter(t=>!done[`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`]);
+        const ACTS={leerstof:['📖','Leerstof'],quiz:['⚡','Snelle quiz'],flash:['🃏','Flashcards'],open:['📝','Open vragen'],herhaal:['🔄','Herhalen']};
+        const hd=`<div class="vh2-plan-hd"><span class="vh2-plan-lbl">📅 Jouw plan vandaag</span><button class="vh2-plan-link" onclick="show('sc-studieplan');renderStudieplan()">Bekijk plan${_arrow}</button></div>`;
+        if(openTasks.length){
+          const inner=openTasks.slice(0,3).map(t=>{ const key=`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`; const a=ACTS[t.actKey]||['📚','Oefenen']; const col=(typeof spActCls==='function')?spActCls(t.actKey):'#64748b';
+            return `<button class="vh2-row" onclick="if(typeof spMarkDone==='function')spMarkDone('${key}');goToDomein('${t.vakId}','${t.domId}','${t.mode}')">
+              <span class="vh2-ic vh2-ic-emoji" style="--rc:${col}">${a[0]}</span>
+              <span class="vh2-tx"><b>${_esc(t.domNaam)}</b><small>${_esc(t.vakNaam)} · ${a[1]}</small></span>
+              <span class="vh2-time">~${t.mins}m</span></button>`; }).join('');
+          const more=openTasks.length>3?`<div class="vh2-more">+${openTasks.length-3} meer taken in je plan</div>`:'';
+          planSec=`<div class="vh2-plan">${hd}<div class="vh2-list">${inner}</div>${more}</div>`;
+        } else {
+          const note=todayTasks.length>0?'✅ Alle taken voor vandaag gedaan. Top bezig!':'Nog geen taken voor vandaag ingepland.';
+          planSec=`<div class="vh2-plan">${hd}<div class="vh2-plan-note">${note}</div></div>`;
+        }
+      }
+    }
+  }catch(e){}
+
+  // ── Slimme sectie of lege staat ──
+  let smartSec='';
+  if(rows.length){
+    smartSec=`<div class="vh2-sec-lbl">Aan de slag</div><div class="vh2-list">${rows.join('')}</div>`;
+  } else if(!planSec){
+    smartSec=`<div class="vh2-empty">Begin met een snelle quiz, dan stel ik hier elke dag samen wat je het beste kunt oefenen.
+      <button class="vh2-empty-btn" onclick="(typeof startStreakQuiz==='function')?startStreakQuiz():show('sc-home')">Start een quiz${_arrow}</button></div>`;
   }
-  box.innerHTML=`<div class="vandaag-hub">${inner}</div>`;
+
+  const chips=[];
+  if(streak>0) chips.push(`<span class="vh2-chip">🔥 ${streak}</span>`);
+  if(dagen!=null) chips.push(`<span class="vh2-chip">📅 ${dagen}d${exVak?' · '+_esc(exVak):''}</span>`);
+
+  box.innerHTML=`<div class="vandaag-hub vh2">
+    <div class="vh2-head">
+      <div class="vh2-head-tx"><div class="vh2-greet">${groet}${naam?', '+_esc(naam):''}</div><div class="vh2-subtitle">Dit kun je vandaag doen</div></div>
+      ${chips.length?`<div class="vh2-chips">${chips.join('')}</div>`:''}
+    </div>
+    ${smartSec}
+    ${planSec}
+  </div>`;
 }
 function renderFocusLeerdoel(){
   const box=document.getElementById('hm-focus-ld');

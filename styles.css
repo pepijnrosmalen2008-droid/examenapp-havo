@@ -1768,22 +1768,40 @@ html.dark .qb{background:#2e3550}
 /* Verbeterpunten / Focus card */
 .focus-card{background:var(--s);border:1.5px solid rgba(var(--or-rgb),.3);border-radius:20px;padding:18px 20px 14px;margin-bottom:20px}
 /* ── VANDAAG-HUB: het dagelijkse anker bovenaan home ──────────────────────── */
-.vandaag-hub{margin:12px 0 4px;padding:16px 16px 14px;border-radius:20px;background:var(--s);border:1px solid var(--bo);box-shadow:0 1px 3px rgba(0,0,0,.04),0 10px 26px -16px rgba(0,0,0,.18)}
-.vh-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
-.vh-greet{font-family:var(--font-head);font-size:17px;font-weight:800;color:var(--dk)}
-.vh-chips{display:flex;gap:6px;flex-wrap:wrap}
-.vh-chip{font-size:12px;font-weight:800;color:var(--dk);background:rgba(var(--or-rgb),.09);border:1px solid rgba(var(--or-rgb),.18);border-radius:20px;padding:4px 10px;font-variant-numeric:tabular-nums;white-space:nowrap}
-.vh-lbl{font-family:var(--font-head);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--mu);margin-bottom:8px}
-.vh-items{display:flex;flex-direction:column;gap:8px}
-.vh-item{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:12px 13px;border-radius:14px;cursor:pointer;font-family:inherit;background:var(--bg2,rgba(0,0,0,.025));border:1px solid var(--bo);transition:transform .15s,border-color .15s,box-shadow .15s}
-.vh-item:hover{transform:translateX(2px);border-color:rgba(var(--or-rgb),.4);box-shadow:0 4px 14px rgba(0,0,0,.06)}
-.vh-item-dot{flex:0 0 auto;width:10px;height:10px;border-radius:50%}
-.vh-item-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
-.vh-item-txt b{font-size:14px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.vh-item-txt small{font-size:11.5px;color:var(--mu)}
-.vh-item-go{flex:0 0 auto;font-size:12.5px;font-weight:800;color:var(--or);white-space:nowrap}
-.vh-empty{font-size:13.5px;color:var(--mu);line-height:1.5;display:flex;flex-direction:column;gap:11px;align-items:flex-start}
-.vh-empty-btn{font-family:var(--font-head);font-weight:800;font-size:13.5px;background:var(--or);color:#fff;border:none;border-radius:12px;padding:10px 16px;cursor:pointer}
+/* ── VANDAAG-HUB v2: premium dag-anker (begroeting + acties + studieplan) ── */
+.vandaag-hub.vh2{margin:14px 0 4px;padding:0 0 16px;border-radius:22px;overflow:hidden;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--or) 8%,var(--s)) 0%,var(--s) 128px);
+  border:1px solid var(--bo);box-shadow:0 1px 3px rgba(0,0,0,.05),0 22px 44px -26px rgba(0,0,0,.45)}
+.vh2-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:18px 18px 15px}
+.vh2-head-tx{min-width:0}
+.vh2-greet{font-family:var(--font-head);font-size:19px;font-weight:800;letter-spacing:-.3px;color:var(--dk);line-height:1.12}
+.vh2-subtitle{font-size:12.5px;color:var(--mu);margin-top:3px;font-weight:500}
+.vh2-chips{display:flex;gap:6px;flex-wrap:wrap;flex-shrink:0}
+.vh2-chip{font-size:12px;font-weight:800;color:var(--dk);background:var(--s);border:1px solid var(--bo);border-radius:20px;padding:5px 11px;font-variant-numeric:tabular-nums;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.vh2-sec-lbl{font-family:var(--font-head);font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--mu);padding:0 18px 8px}
+.vh2-list{display:flex;flex-direction:column;gap:8px;padding:0 14px}
+.vh2-row{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:11px 12px;border-radius:15px;cursor:pointer;font-family:inherit;
+  background:var(--s);border:1px solid var(--bo);transition:transform .16s cubic-bezier(.34,1.4,.64,1),border-color .16s,box-shadow .16s}
+.vh2-row:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--or) 45%,var(--bo));box-shadow:0 10px 22px -12px rgba(0,0,0,.45)}
+.vh2-row:active{transform:scale(.98)}
+.vh2-ic{flex:0 0 auto;width:38px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  background:color-mix(in srgb,var(--rc,var(--or)) 15%,transparent);border:1px solid color-mix(in srgb,var(--rc,var(--or)) 34%,transparent);
+  color:var(--rc,var(--or));font-weight:800;font-size:12px;font-variant-numeric:tabular-nums;line-height:1}
+.vh2-ic-emoji{font-size:18px}
+.vh2-tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.vh2-tx b{font-size:14px;font-weight:700;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.1px}
+.vh2-tx small{font-size:11.5px;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vh2-go{flex:0 0 auto;display:inline-flex;align-items:center;gap:2px;font-size:12.5px;font-weight:800;color:var(--or);white-space:nowrap}
+.vh2-go svg{margin-top:1px}
+.vh2-time{flex:0 0 auto;font-size:11.5px;font-weight:700;color:var(--mu);font-variant-numeric:tabular-nums}
+.vh2-plan{margin-top:15px;padding-top:15px;border-top:1px solid var(--bo)}
+.vh2-plan-hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 18px 8px}
+.vh2-plan-lbl{font-family:var(--font-head);font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--mu)}
+.vh2-plan-link{display:inline-flex;align-items:center;gap:2px;font-size:12px;font-weight:800;color:var(--or);background:none;border:none;cursor:pointer;font-family:inherit;white-space:nowrap}
+.vh2-plan-note{padding:0 18px;font-size:12.5px;color:var(--mu);line-height:1.5}
+.vh2-more{padding:9px 18px 0;font-size:11.5px;color:var(--mu);font-weight:600}
+.vh2-empty{padding:2px 18px 4px;font-size:13.5px;color:var(--mu);line-height:1.55;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.vh2-empty-btn{display:inline-flex;align-items:center;gap:3px;font-family:var(--font-head);font-weight:800;font-size:13.5px;background:var(--or);color:#fff;border:none;border-radius:12px;padding:10px 18px;cursor:pointer}
 .focus-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
 .focus-card-title{font-family:var(--font-head);font-size:15px;font-weight:800;color:var(--dk)}
 .focus-item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:12px;margin-bottom:6px;background:var(--bg);border:1px solid var(--bo);transition:background .15s}
@@ -7631,8 +7649,10 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 #vakgrid .card{padding-top:18px;padding-bottom:16px}
 #vakgrid .card-name{margin-bottom:6px}
 /* Home rustiger: de losse "Dagmissie"-kaart valt weg. De Vandaag-hub zegt al
-   wat je nu moet doen, en Vonk kondigt de dagmissie ook via een tekstballon aan. */
-#sc-home #dagmissie-home{display:none}
+   wat je nu moet doen, en Vonk kondigt de dagmissie ook via een tekstballon aan.
+   De losse studieplan-"Vandaag"-widget en de herhaal-kaart zijn nu ONDERDEEL van
+   de Vandaag-hub geworden, dus die vallen hier ook weg (geen dubbele blokken). */
+#sc-home #dagmissie-home,#sc-home #sp-home-widget-wrap,#sc-home #herhaal-home{display:none}
 /* Compacte vaktegels op mobiel: kleiner, dichter en zonder herhaalde ruis
    ("Nog niet begonnen" op elke tegel), zodat het rooster één rustig geheel wordt
    i.p.v. een lange lijst grote kaarten. Op tablet/desktop blijven de tegels vol. */
