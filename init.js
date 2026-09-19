@@ -304,11 +304,11 @@ function _updatePageSEO(level){
   const nivNaam=level==='havo'?'HAVO':level==='vmbo'?'VMBO GL/TL':'VWO';
   const url='https://slagio.nl/'+(level||'');
   document.title=level
-    ?`Slagio - ${nivNaam} Examenvoorbereiding 2027 | 10.000+ vragen, eindexamens, studieplan`
-    :'Slagio - Complete HAVO & VWO Examenvoorbereiding 2027';
+    ?`Slagio - ${nivNaam} Examenvoorbereiding 2027 | 20.000+ vragen, eindexamens, studieplan`
+    :'Slagio - Complete HAVO, VWO & VMBO Examenvoorbereiding 2027';
   const desc=level
-    ?`Gratis ${nivNaam} examenvoorbereiding 2027. 10.000+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
-    :'Kies je niveau: HAVO of VWO. Gratis examenvoorbereiding met 10.000+ oefenvragen, echte eindexamens 2019–2025, studieplan en meer.';
+    ?`Gratis ${nivNaam} examenvoorbereiding 2027. 20.000+ oefenvragen per domein, echte CE-eindexamens 2019–2025, persoonlijk studieplan, spaced repetition flashcards en cijfercalculator. Geen account nodig.`
+    :'Kies je niveau: HAVO, VWO of VMBO. Gratis examenvoorbereiding met 20.000+ oefenvragen, echte eindexamens 2019–2025, studieplan en meer.';
   const metaDesc=document.querySelector('meta[name="description"]');
   if(metaDesc)metaDesc.content=desc;
   const og=document.querySelector('meta[property="og:url"]');
