@@ -349,7 +349,7 @@ function chooseLevel(level,_noHistory){
   // (cijfers/studieplan/account) routeert, geen home-popups tonen: die zouden
   // over dat scherm heen vallen en de intro "niet vlekkeloos" laten voelen.
   if(window._onbRouting){/* geen popups tijdens post-onboarding routing */}
-  else if(_isNew){setTimeout(showOnboarding,300);}
+  else if(_isNew){setTimeout(()=>{try{if(typeof onbStart==='function')onbStart();else if(typeof showOnboarding==='function')showOnboarding();}catch(e){}},350);}
   else if(!localStorage.getItem('slagio_vonk_intro_done')){setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},500);}
   else{let _nudged=false;try{if(typeof vonkStreakNudge==='function')_nudged=vonkStreakNudge();}catch(e){}if(!_nudged)showDailyChallengePopup();}
 }
@@ -482,14 +482,14 @@ window.show=function(id,_noHash){_origShow(id,_noHash);updateBottomNav(id);if(id
 
 // Activeer routing na volledig laden
 window.addEventListener('load',()=>{
-  // Eenmalige nieuwe intro (Vonk-gesprek) voor IEDEREEN die 'm nog niet zag -
-  // nieuwe én bestaande gebruikers. Bestaande gegevens (niveau/klas/profiel/
-  // vakken/dier) worden voorgevuld zodat niemand iets kwijtraakt. Daarna wordt
-  // slagio_onboard_v3 gezet en verschijnt de intro nooit meer.
-  if(!localStorage.getItem('slagio_onboard_v3') && typeof onbStart==='function'){
-    setTimeout(onbStart,240);
-    return;
-  }
+  // Geen intro-overlay meer bij het laden. Een nieuwe bezoeker landt direct op
+  // de startpagina (sc-welcome) waar de niveaukeuze centraal staat. De korte,
+  // functionele vraag (maatje kiezen + eventueel account) volgt PAS nadat een
+  // niveau is gekozen - zie chooseLevel(). Waarde eerst, niet een muur vooraf.
+  // Het standaard-actieve scherm is sc-welcome; die wordt niet via show()
+  // geopend, dus zet hier zelf de nav-status goed (verbergt de desktop-zijbalk
+  // en de 250px zijbalk-ruimte op de focus-startpagina).
+  try{const _act=document.querySelector('.sc.on');if(_act&&typeof updateBottomNav==='function')updateBottomNav(_act.id);}catch(e){}
   // Query-param fallback: ?niveau=havo&vak=bi[&domein=C] → open vak (+ optioneel domein)
   const _qp=new URLSearchParams(location.search);
   const _qniv=_qp.get('niveau'), _qvak=_qp.get('vak'), _qdom=_qp.get('domein');

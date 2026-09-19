@@ -2033,26 +2033,22 @@ html.dark .qb{background:#2e3550}
 .wlc-theme-btn:hover{background:rgba(255,255,255,.13);color:#fff}
 .wlc-theme-btn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 /* hero */
-.wlc-hero{position:relative;overflow:hidden;text-align:center;padding:88px 20px 68px}
-.wlc-orb{position:absolute;border-radius:50%;pointer-events:none}
-.wlc-orb1{width:800px;height:800px;top:-300px;right:-200px;background:radial-gradient(circle,rgba(232,92,13,.2) 0%,transparent 65%);filter:blur(60px)}
-.wlc-orb2{width:700px;height:700px;bottom:-280px;left:-200px;background:radial-gradient(circle,rgba(139,92,246,.18) 0%,transparent 65%);filter:blur(60px)}
-.wlc-orb3{width:500px;height:400px;top:40%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(99,102,241,.08) 0%,transparent 70%);filter:blur(40px)}
-.wlc-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:28px}
-.wlc-dot{width:6px;height:6px;border-radius:50%;background:var(--or);animation:pulse 2s ease-in-out infinite;flex-shrink:0}
-.wlc-h1{font-family:var(--font-head);font-size:clamp(60px,11vw,96px);font-weight:900;letter-spacing:-4px;line-height:.92;color:#fff;margin-bottom:26px;position:relative;z-index:1}
-.wlc-h1-accent{display:block;background:linear-gradient(135deg,#E85C0D 0%,#f9a825 60%,#E85C0D 100%);background-size:200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradShift 4s ease-in-out infinite alternate;filter:drop-shadow(0 0 48px rgba(232,92,13,.55))}
-@keyframes gradShift{from{background-position:0%}to{background-position:100%}}
-.wlc-sub{font-size:17px;color:rgba(255,255,255,.4);max-width:500px;margin:0 auto 32px;line-height:1.75;font-weight:400;position:relative;z-index:1}
-.wlc-feats{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;position:relative;z-index:1}
-.wlc-feat{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:rgba(255,255,255,.4);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:5px 13px}
-.wlc-feat-chk{color:#4ade80;font-weight:800;font-size:11px}
+.wlc-hero{position:relative;overflow:hidden;text-align:center;padding:74px 20px 26px}
+.wlc-aura{position:absolute;inset:0;pointer-events:none;z-index:0;background:radial-gradient(115% 85% at 50% -12%,rgba(var(--or-rgb),.16) 0%,transparent 52%),radial-gradient(85% 70% at 50% 118%,rgba(139,92,246,.08) 0%,transparent 60%)}
+.wlc-hero-inner{position:relative;z-index:1;max-width:660px;margin:0 auto}
+.wlc-eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.3px;color:var(--or);background:rgba(var(--or-rgb),.12);border:1px solid rgba(var(--or-rgb),.28);border-radius:20px;padding:6px 14px;margin-bottom:24px}
+.wlc-h1{font-family:var(--font-head);font-size:clamp(46px,8vw,78px);font-weight:900;letter-spacing:-2.5px;line-height:1;color:#fff;margin-bottom:18px;text-wrap:balance}
+.wlc-h1-accent{color:var(--or)}
+.wlc-sub{font-size:17px;color:rgba(255,255,255,.62);max-width:520px;margin:0 auto 24px;line-height:1.6;font-weight:400}
+.wlc-trust{display:flex;gap:10px 20px;flex-wrap:wrap;justify-content:center}
+.wlc-trust-item{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.58)}
+.wlc-trust-item svg{color:#4ade80;flex-shrink:0}
 /* picker */
-.wlc-picker{max-width:860px;margin:0 auto;padding:0 20px 64px;position:relative;z-index:1}
-.wlc-pick-lbl{font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:rgba(255,255,255,.2);text-align:center;margin-bottom:18px}
-.wlc-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px}
+.wlc-picker{max-width:1000px;margin:0 auto;padding:10px 20px 56px;position:relative;z-index:1}
+.wlc-pick-lbl{font-size:13px;font-weight:700;letter-spacing:.2px;color:rgba(255,255,255,.5);text-align:center;margin-bottom:20px}
+.wlc-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:0;align-items:stretch}
 /* cards */
-.wlc-card{position:relative;overflow:hidden;border-radius:24px;padding:32px 28px 28px;cursor:pointer;transition:transform .28s cubic-bezier(.34,1.2,.64,1),box-shadow .28s,border-color .28s,background .28s;border:1.5px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+.wlc-card{position:relative;overflow:hidden;border-radius:24px;padding:28px 26px 26px;cursor:pointer;display:flex;flex-direction:column;flex:1;transition:transform .28s cubic-bezier(.34,1.2,.64,1),box-shadow .28s,border-color .28s,background .28s;border:1.5px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
 .wlc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent)}
 .wlc-chavo{border-color:rgba(59,130,246,.3);background:linear-gradient(150deg,rgba(59,130,246,.11) 0%,rgba(59,130,246,.04) 100%)}
 .wlc-cvwo{border-color:rgba(139,92,246,.3);background:linear-gradient(150deg,rgba(139,92,246,.11) 0%,rgba(139,92,246,.04) 100%)}
@@ -2076,15 +2072,19 @@ html.dark .qb{background:#2e3550}
 .wlc-chavo .wlc-card-lvl{color:#3b82f6;text-shadow:0 0 32px rgba(59,130,246,.5)}
 .wlc-cvwo .wlc-card-lvl{color:#a78bfa;text-shadow:0 0 32px rgba(167,139,250,.5)}
 .wlc-card-pill{font-size:11px;font-weight:700;color:rgba(255,255,255,.3);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:4px 11px;white-space:nowrap}
-.wlc-card-list{list-style:none;padding:0;margin:0 0 26px;display:flex;flex-direction:column;gap:10px}
+.wlc-card-list{list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:10px;flex:1}
 .wlc-card-list li{font-size:13.5px;color:rgba(255,255,255,.5);font-weight:500;padding-left:20px;position:relative}
 .wlc-card-list li::before{position:absolute;left:0;font-weight:800;font-size:12px}
 .wlc-chavo .wlc-card-list li::before{content:'✓';color:#3b82f6}
 .wlc-cvwo .wlc-card-list li::before{content:'✓';color:#a78bfa}
-.wlc-card-btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-head);font-size:15px;font-weight:800;letter-spacing:.2px;transition:gap .25s}
-.wlc-chavo .wlc-card-btn{color:#3b82f6}
-.wlc-cvwo .wlc-card-btn{color:#a78bfa}
-.wlc-card:hover .wlc-card-btn{gap:14px}
+.wlc-card-btn{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-head);font-size:15px;font-weight:800;letter-spacing:.2px;padding:13px 16px;border-radius:14px;margin-top:auto;transition:gap .25s,background .2s,box-shadow .2s}
+.wlc-chavo .wlc-card-btn{color:#dbeafe;background:rgba(59,130,246,.16);border:1px solid rgba(59,130,246,.32)}
+.wlc-cvwo .wlc-card-btn{color:#ede9fe;background:rgba(139,92,246,.16);border:1px solid rgba(139,92,246,.32)}
+.wlc-cvmbo .wlc-card-btn{color:#cffafe;background:rgba(45,212,191,.16);border:1px solid rgba(45,212,191,.32)}
+.wlc-chavo:hover .wlc-card-btn{background:rgba(59,130,246,.9);color:#fff;box-shadow:0 8px 24px rgba(59,130,246,.35)}
+.wlc-cvwo:hover .wlc-card-btn{background:rgba(139,92,246,.9);color:#fff;box-shadow:0 8px 24px rgba(139,92,246,.35)}
+.wlc-cvmbo:hover .wlc-card-btn{background:rgba(45,212,191,.9);color:#04201d;box-shadow:0 8px 24px rgba(45,212,191,.32)}
+.wlc-card:hover .wlc-card-btn{gap:12px}
 /* lc-active state */
 .lc-active.wlc-chavo,.lc-active.lc-havo{border-color:rgba(59,130,246,.7)!important;box-shadow:0 0 0 2px rgba(59,130,246,.3),0 16px 48px rgba(59,130,246,.22)!important}
 .lc-active.wlc-cvwo,.lc-active.lc-vwo{border-color:rgba(139,92,246,.7)!important;box-shadow:0 0 0 2px rgba(139,92,246,.3),0 16px 48px rgba(139,92,246,.22)!important}
@@ -2102,94 +2102,44 @@ html.dark .qb{background:#2e3550}
 .lc-havo,.lc-vwo,.lc-disabled,.level-card{} .lc-disabled{opacity:.4;cursor:default;pointer-events:none}
 .wlc-social-proof{display:inline-block;font-size:13px;color:rgba(255,255,255,.45);margin-top:18px;letter-spacing:.1px}
 .wlc-social-proof strong{color:rgba(255,255,255,.7);font-weight:700}
-@media(max-width:640px){.how-it-works{display:none}}
+@media(max-width:920px){
+  .wlc-cards{grid-template-columns:1fr;max-width:440px;margin-left:auto;margin-right:auto}
+  .wlc-card{padding:22px 22px 22px}
+  .wlc-card-list{margin-bottom:18px}
+}
 @media(max-width:620px){
-  .wlc-hero{padding:52px 16px 40px}
-  .wlc-h1{font-size:56px;letter-spacing:-3px;line-height:.92}
-  .wlc-sub{font-size:14px;margin-bottom:20px}
-  .wlc-feats{gap:6px}
-  .wlc-feat{font-size:11.5px;padding:4px 11px}
-  .wlc-stats{margin-top:24px}
-  .wlc-stat-n{font-size:26px}
-  .wlc-picker{padding:0 14px 48px}
-  .wlc-cards{grid-template-columns:1fr;gap:12px}
-  .wlc-card{padding:22px 18px 20px;border-radius:20px}
-  .wlc-card-lvl{font-size:38px}
-  .wlc-card-list{margin:10px 0 14px}
-  .wlc-card-list li{font-size:12.5px;padding:3px 0}
+  .wlc-hero{padding:46px 16px 20px}
+  .wlc-h1{font-size:44px;letter-spacing:-2px;line-height:1.02}
+  .wlc-sub{font-size:14.5px;margin-bottom:20px}
+  .wlc-trust{gap:8px 16px}
+  .wlc-trust-item{font-size:12.5px}
+  .wlc-picker{padding:6px 16px 44px}
+  .wlc-card{padding:20px 18px 18px;border-radius:20px}
+  .wlc-card-lvl{font-size:34px}
+  .wlc-card-list li{font-size:13px}
   .wlc-foot-dates{flex-direction:column;gap:6px;align-items:center}
-  .wlc-social-proof{font-size:12px}
 }
 
-/* ── WELCOME EYE-CATCHER EXTRAS ────────────────── */
-@property --angle{syntax:'<angle>';inherits:false;initial-value:0deg}
-@keyframes spinAngle{to{--angle:360deg}}
-@keyframes orbDrift{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-32px) scale(1.06)}}
-@keyframes orbDrift2{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(22px) scale(.95)}}
-@keyframes fadeUpIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-@keyframes shimmerSweep{0%{left:-100%}100%{left:220%}}
-@keyframes statCountUp{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
+/* ── WELCOME: card wrapper + proof strip + entrance ─────────── */
+@keyframes wlcRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 
-/* Dot-grid overlay */
-.wlc-dot-bg{position:absolute;inset:0;pointer-events:none;z-index:0;
-  background-image:radial-gradient(circle,rgba(255,255,255,.12) 1px,transparent 1px);
-  background-size:30px 30px;
-  -webkit-mask-image:radial-gradient(ellipse 85% 75% at 50% 40%,black 30%,transparent 100%);
-  mask-image:radial-gradient(ellipse 85% 75% at 50% 40%,black 30%,transparent 100%);
-  opacity:.3}
+/* Grid cell wrapper: stretches so all three cards share a height. */
+.wlc-card-wrap{position:relative;display:flex}
 
-/* Orb float */
-.wlc-orb1{animation:orbDrift 10s ease-in-out infinite}
-.wlc-orb2{animation:orbDrift2 13s ease-in-out infinite}
+/* Proof strip onder de kaarten: rustig, geen animatie. */
+.wlc-proof{display:flex;align-items:center;justify-content:center;gap:8px;max-width:520px;margin:34px auto 40px;padding:16px 12px;border:1px solid rgba(255,255,255,.07);border-radius:18px;background:rgba(255,255,255,.02)}
+.wlc-proof-item{flex:1;text-align:center;display:flex;flex-direction:column;gap:3px}
+.wlc-proof-item b{font-family:var(--font-head);font-size:22px;font-weight:900;letter-spacing:-.5px;color:#fff;line-height:1}
+.wlc-proof-item span{font-size:11.5px;font-weight:600;color:rgba(255,255,255,.42)}
+.wlc-proof-div{width:1px;align-self:stretch;background:rgba(255,255,255,.09);flex-shrink:0}
 
-/* Stats row */
-.wlc-stats{display:flex;justify-content:center;margin:32px auto 0;max-width:480px;position:relative;z-index:1}
-.wlc-stat{flex:1;text-align:center;padding:12px 0;border-right:1px solid rgba(255,255,255,.09)}
-.wlc-stat:last-child{border-right:none}
-.wlc-stat-n{font-family:var(--font-head);font-size:30px;font-weight:900;letter-spacing:-1.5px;line-height:1;
-  background:linear-gradient(135deg,#fff 50%,rgba(255,255,255,.4));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.wlc-stat-l{font-size:10px;color:rgba(255,255,255,.25);font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-top:5px}
-
-/* Spinning gradient border wrapper */
-.wlc-card-wrap{position:relative;border-radius:26px;padding:1.5px;transition:padding .28s}
-.wlc-card-wrap::before{
-  content:'';position:absolute;inset:0;border-radius:26px;
-  background:conic-gradient(from var(--angle),transparent 0%,transparent 55%,rgba(232,92,13,.9) 75%,rgba(249,168,37,.9) 82%,rgba(232,92,13,.9) 88%,transparent 100%);
-  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-  -webkit-mask-composite:xor;mask-composite:exclude;
-  animation:spinAngle 3.5s linear infinite;opacity:0;transition:opacity .35s}
-.wlc-cvwo-wrap::before{
-  background:conic-gradient(from var(--angle),transparent 0%,transparent 55%,rgba(139,92,246,.9) 75%,rgba(167,139,250,1) 82%,rgba(139,92,246,.9) 88%,transparent 100%)}
-.wlc-card-wrap:hover::before,.wlc-card-wrap:has(.lc-active)::before{opacity:1}
-
-/* Shimmer sweep on card CTA */
-.wlc-card-btn{position:relative;overflow:visible}
-.wlc-card-btn-inner{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px}
-.wlc-card-btn-inner::after{content:'';position:absolute;top:-30%;left:-100%;width:45%;height:160%;
-  background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.28) 50%,transparent 65%);
-  pointer-events:none}
-.wlc-card:hover .wlc-card-btn-inner::after{animation:shimmerSweep .55s ease forwards .05s}
-
-/* Entrance stagger animations */
-.wlc-eyebrow{animation:fadeUpIn .65s cubic-bezier(.22,1,.36,1) both;animation-delay:.08s}
-.wlc-h1{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.22s}
-.wlc-sub{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.36s}
-.wlc-feats{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.48s}
-.wlc-stats{animation:fadeUpIn .75s cubic-bezier(.22,1,.36,1) both;animation-delay:.58s}
-.wlc-pick-lbl{animation:fadeUpIn .7s cubic-bezier(.22,1,.36,1) both;animation-delay:.66s}
-.wlc-card-wrap:first-child{animation:fadeUpIn .8s cubic-bezier(.22,1,.36,1) both;animation-delay:.74s}
-.wlc-card-wrap:last-child{animation:fadeUpIn .8s cubic-bezier(.22,1,.36,1) both;animation-delay:.84s}
-
-/* Pulse ring on the orb dot in eyebrow */
-.wlc-dot{position:relative}
-.wlc-dot::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(232,92,13,.5);animation:pulse 2s ease-in-out infinite}
-
-/* Card lvl number glow pulse */
-.wlc-chavo .wlc-card-lvl{animation:glowPulseO 3s ease-in-out infinite}
-.wlc-cvwo .wlc-card-lvl{animation:glowPulseV 3s ease-in-out infinite}
-@keyframes glowPulseO{0%,100%{text-shadow:0 0 28px rgba(59,130,246,.4)}50%{text-shadow:0 0 56px rgba(59,130,246,.8),0 0 90px rgba(59,130,246,.3)}}
-@keyframes glowPulseV{0%,100%{text-shadow:0 0 28px rgba(167,139,250,.4)}50%{text-shadow:0 0 56px rgba(167,139,250,.8),0 0 90px rgba(139,92,246,.3)}}
+/* Eén ingetogen entree op de hoofdblokken (speelt éénmalig). */
+.wlc-hero-inner{animation:wlcRise .6s cubic-bezier(.22,1,.36,1) both}
+.wlc-picker{animation:wlcRise .6s cubic-bezier(.22,1,.36,1) both;animation-delay:.1s}
+@media(max-width:480px){.wlc-proof-item b{font-size:19px}}
+@media(prefers-reduced-motion:reduce){
+  .wlc-hero-inner,.wlc-picker{animation:none}
+}
 
 /* ── SCHEDULE SCREEN ───────────────────────────── */
 .schedule-list{display:flex;flex-direction:column;gap:10px;margin-bottom:40px}
@@ -7586,6 +7536,10 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
 /* Home rustiger: het gestreepte "maak je eerste quiz"-blok is dubbelop met de
    grote CTA erboven - weg ermee voor meer lucht. */
 #sc-home .bento-empty{display:none}
+/* Cijferanalyse-sectie: verberg de kop volledig zolang er geen SE-cijfers zijn
+   ingevuld (anders staat er een lege kop = ruis). Verschijnt vanzelf zodra er
+   data is (buildGradeInsight vult #grade-insight-home). */
+.hm-cijfer-sec:not(:has(#grade-insight-home > *)){display:none}
 /* ══ Statusbalk: 4 grote gamification-kaarten -> 1 slanke tikbare balk ══
    De home toont alleen nog de kerncijfers; het detail (weekkalender, avatar-
    evolutie, ranglijst) zit één tik verderop op profiel/shop/divisie. */

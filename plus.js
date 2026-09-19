@@ -1198,7 +1198,12 @@ const _PLUS_HIGHLIGHTS = [
   ['🎁','Wekelijkse kist','Munten plus exclusieve outfits &amp; looks.'],
 ];
 
-function openPlusIntro(){ window._plusEntering=true; try{ show('sc-plus-intro'); }catch(e){} renderPlusIntro(); }
+function openPlusIntro(){
+  // Zolang betalen niet kan is er geen verkooppagina: iedereen mag zo de
+  // (gratis) examentrainer in. Geen prijzen of betaalmuur in beeld.
+  if(typeof PLUS_PAYMENTS_LIVE!=='undefined' && !PLUS_PAYMENTS_LIVE){ openPlusDashboard(); return; }
+  window._plusEntering=true; try{ show('sc-plus-intro'); }catch(e){} renderPlusIntro();
+}
 // plusIntro() (aangeroepen vanuit sim.js/dashboard) opent voortaan het scherm.
 function plusIntro(){ openPlusIntro(); }
 
