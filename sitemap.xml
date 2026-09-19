@@ -40,6 +40,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+  <url>
+    <loc>https://slagio.nl/vmbo</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
 
   <!-- Vakken overzicht -->
   <url>
