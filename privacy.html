@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script>
-  (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.classList.add(localStorage.getItem('examenapp_level')==='vwo'?'level-vwo':'level-havo');}catch(e){document.documentElement.classList.add('level-havo');}})();
+  (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.classList.add(localStorage.getItem('examenapp_level')==='vwo'?'level-vwo':'level-havo');d.style.setProperty('--or','#E85C0D');d.style.setProperty('--or-rgb','232,92,13');d.style.setProperty('--orl','rgba(232,92,13,.12)');}catch(e){document.documentElement.classList.add('level-havo');}})();
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
@@ -51,7 +51,8 @@
     @media(max-width:520px){.up-nav-cta{display:none}}
   </style>
 </head>
-<body>
+<body class="lp">
+<div class="lp-hero-bg" aria-hidden="true"></div>
 
 <nav class="nav"><div class="nav-inner">
   <a class="logo" href="/" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
@@ -61,6 +62,7 @@
 
 <div class="up-wrap">
   <div class="pv-head">
+    <span class="lp-eyebrow">Privacy</span>
     <h1>Jouw privacy, in gewone taal</h1>
     <p class="pv-updated">Laatst bijgewerkt: 27 april 2026</p>
   </div>
@@ -77,7 +79,7 @@
 
   <div class="pv-body">
     <h2>1. Wie zijn wij</h2>
-    <p>Slagio is een gratis educatieve webapplicatie voor eindexamenvoorbereiding van Nederlandse HAVO- en VWO-leerlingen, bereikbaar via <strong>slagio.nl</strong>. De app wordt gehost via GitHub Pages. Voor vragen of opmerkingen kun je contact opnemen via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>.</p>
+    <p>Slagio is een gratis educatieve webapplicatie voor eindexamenvoorbereiding van Nederlandse HAVO-, VWO- en VMBO-leerlingen, bereikbaar via <strong>slagio.nl</strong>. De app wordt gehost via GitHub Pages. Voor vragen of opmerkingen kun je contact opnemen via <a href="mailto:slagiocompany@gmail.com">slagiocompany@gmail.com</a>.</p>
 
     <h2>2. Welke gegevens verzamelen en verwerken wij</h2>
     <p>We onderscheiden drie categorieën:</p>

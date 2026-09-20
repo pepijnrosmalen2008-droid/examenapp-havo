@@ -8827,3 +8827,71 @@ html.dark #sc-plus, html.dark #sc-plus-intro{
 .res-vonk-ask .rva-t{flex:1;font-size:13.5px;color:color-mix(in srgb,var(--dk) 78%,transparent)}
 .res-vonk-ask .rva-t b{color:var(--or);font-weight:800}
 .res-vonk-ask svg{flex:0 0 auto;color:var(--or)}
+
+/* ═══════════ LANDINGSPAGINA'S (faq / privacy / voorwaarden / over-ons / docent) ═══════════
+   Eén karaktervolle, professionele laag over de bestaande .up-*/.faq-componenten,
+   toegepast via class="lp" op <body>. Merk-oranje accent + hero met textuur
+   (zachte gloed + fijn puntenraster) + eyebrow-chip. Verfijnt de gedeelde chrome
+   (hero, koppen, accordeon, cta, footer) zonder de per-pagina-content te herschrijven. */
+/* De merk-oranje accent (--or) wordt per pagina via het inline-script op
+   <html> gezet, zodat hij de niveau-kleur betrouwbaar overschrijft. */
+
+/* Hero-textuur bovenaan de pagina (achter nav + hero) */
+.lp-hero-bg{position:absolute;top:0;left:0;right:0;height:460px;z-index:0;pointer-events:none;overflow:hidden}
+.lp-hero-bg::before{content:'';position:absolute;inset:0;background:
+  radial-gradient(120% 82% at 50% -12%,rgba(var(--or-rgb),.15) 0%,transparent 56%),
+  radial-gradient(80% 60% at 88% 4%,rgba(var(--or-rgb),.07) 0%,transparent 52%)}
+.lp-hero-bg::after{content:'';position:absolute;inset:0;
+  background-image:radial-gradient(circle,color-mix(in srgb,var(--dk) 14%,transparent) 1px,transparent 1px);
+  background-size:24px 24px;
+  -webkit-mask-image:radial-gradient(ellipse 75% 65% at 50% 16%,#000 0%,transparent 72%);
+  mask-image:radial-gradient(ellipse 75% 65% at 50% 16%,#000 0%,transparent 72%);opacity:.4}
+
+/* Content boven de textuur */
+.lp .up-wrap{position:relative;z-index:1}
+
+/* Eyebrow-chip (nieuw + bestaande .up-badge in dezelfde stijl) */
+.lp .lp-eyebrow,.lp .up-badge{display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font);font-size:11.5px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--or);background:var(--orl);border:1px solid rgba(var(--or-rgb),.32);border-radius:99px;padding:7px 15px;margin-bottom:18px}
+.lp .lp-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--or);box-shadow:0 0 0 3px color-mix(in srgb,var(--or) 22%,transparent)}
+
+/* Hero: ruimer + karaktervoller */
+.lp .up-hero{padding:56px 0 14px;position:relative;z-index:1}
+.lp .up-hero h1{font-family:var(--font-head);font-size:clamp(33px,5.6vw,52px);font-weight:800;letter-spacing:-1.2px;line-height:1.06;margin-bottom:16px}
+.lp .up-hero h1 em{color:var(--or);font-style:normal}
+.lp .up-sub{font-size:17px;line-height:1.65;color:var(--mu)}
+
+/* Categorie-koppen (faq) met accentstreepje */
+.lp .cat-h{font-family:var(--font-head);font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--or);margin:40px 0 14px;display:flex;align-items:center;gap:11px}
+.lp .cat-h::before{content:'';width:22px;height:2px;border-radius:2px;background:var(--or);opacity:.75}
+
+/* FAQ-accordeon: meer diepte + duidelijke hover/open-staat */
+.lp .faq{border-radius:18px;border:1px solid var(--bo);box-shadow:0 1px 3px rgba(0,0,0,.04),0 24px 44px -30px rgba(0,0,0,.4)}
+.lp .faq summary{padding:18px 22px;font-size:16px;transition:color .15s}
+.lp .faq summary:hover,.lp .faq details[open] summary{color:var(--or)}
+
+/* CTA-blok + knoppen: merkgekleurd met diepte */
+.lp .up-cta{border-radius:22px;background:linear-gradient(135deg,rgba(var(--or-rgb),.13),rgba(var(--or-rgb),.03));border:1.5px solid rgba(var(--or-rgb),.3)}
+.lp .btn-primary{padding:14px 30px;border-radius:14px;box-shadow:0 8px 24px -8px rgba(var(--or-rgb),.6)}
+.lp .up-nav-cta{box-shadow:0 4px 14px -4px rgba(var(--or-rgb),.5)}
+
+/* Footer verzorgd */
+.lp .up-foot{margin-top:56px;padding:28px 24px}
+
+@media(prefers-reduced-motion:reduce){.lp .logo-dot{animation:none}}
+
+/* Privacy/voorwaarden gebruiken .pv-head i.p.v. .up-hero → zelfde premium kop. */
+.lp .pv-head{position:relative;z-index:1;padding:52px 0 10px}
+.lp .pv-head h1{font-family:var(--font-head);font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-1px;line-height:1.08;margin:0 0 10px}
+.lp .pv-head .pv-updated{color:var(--mu);font-size:13.5px}
+
+/* Slagio School-pagina's (docenten.html / slagio-school.html): dezelfde textuur
+   + eyebrow-chip. Deze pagina's hebben al een eigen sterke opmaak; we lichten
+   alleen de kop en het merkaccent op. */
+.lp .ss-wrap{position:relative;z-index:1}
+.lp .ss-hero,.lp .ss-preview,.lp .up-hero{position:relative;z-index:1}
+.lp .ss-kicker{display:inline-flex;align-items:center;gap:8px;background:var(--orl);
+  border:1px solid rgba(var(--or-rgb),.32);border-radius:99px;padding:7px 15px;margin-bottom:16px;
+  font-family:var(--font);font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--or)}
+.lp .ss-kicker::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--or);box-shadow:0 0 0 3px color-mix(in srgb,var(--or) 22%,transparent)}

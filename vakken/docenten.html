@@ -18,8 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script>
-  (function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark');}catch(e){}})();
-  </script>
+  (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.style.setProperty('--or','#E85C0D');d.style.setProperty('--or-rgb','232,92,13');d.style.setProperty('--orl','rgba(232,92,13,.12)');}catch(e){}})();
+</script>
   <script type="application/ld+json">
   [
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -132,7 +132,8 @@
     .up-nav-home:hover{color:var(--dk)}
   </style>
 </head>
-<body>
+<body class="lp">
+<div class="lp-hero-bg" aria-hidden="true"></div>
 
 <nav class="nav"><div class="nav-inner">
   <a class="logo" href="https://slagio.nl" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
@@ -142,6 +143,7 @@
 
 <div class="up-wrap">
   <div class="up-hero">
+    <span class="up-badge">Voor docenten &amp; scholen</span>
     <h1>Slagio voor scholen</h1>
     <p class="up-lead">Voor leerlingen gratis. Voor scholen <em>inzicht en regie</em>.</p>
     <p class="up-sub">Elke leerling oefent gratis op Slagio, zonder account en zonder advertenties. Scholen kunnen daarbovenop een docentenlaag nemen met per-leerling voortgang, examen-gereedheid per klas en een sectie-rapport. De leerling betaalt nooit; de school kiest zelf.</p>
@@ -160,7 +162,7 @@
       <p class="who">Voor elke leerling, individueel of in de klas</p>
       <p class="price">€0<span> / voor altijd</span></p>
       <ul>
-        <li>Alle 10.000+ oefenvragen, per domein CE/SE-gemarkeerd</li>
+        <li>Alle 20.000+ oefenvragen, per domein CE/SE-gemarkeerd</li>
         <li>Flashcards, oude examens, CE-simulatietoets, studieplan</li>
         <li>Gratis klas aanmaken met code + klas-ranglijst</li>
         <li>Geen account nodig, geen advertenties</li>

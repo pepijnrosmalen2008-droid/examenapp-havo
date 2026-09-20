@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <script>
-  (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.classList.add(localStorage.getItem('examenapp_level')==='vwo'?'level-vwo':'level-havo');}catch(e){document.documentElement.classList.add('level-havo');}})();
+  (function(){try{var d=document.documentElement,t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))d.classList.add('dark');d.classList.add(localStorage.getItem('examenapp_level')==='vwo'?'level-vwo':'level-havo');d.style.setProperty('--or','#E85C0D');d.style.setProperty('--or-rgb','232,92,13');d.style.setProperty('--orl','rgba(232,92,13,.12)');}catch(e){document.documentElement.classList.add('level-havo');}})();
   </script>
   <script type="application/ld+json">
   [
@@ -73,7 +73,8 @@
     .num span{font-size:12.5px;color:var(--mu)}
   </style>
 </head>
-<body>
+<body class="lp">
+<div class="lp-hero-bg" aria-hidden="true"></div>
 
 <nav class="nav"><div class="nav-inner">
   <a class="logo" href="/" style="text-decoration:none"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</a>
@@ -83,6 +84,7 @@
 
 <div class="up-wrap">
   <div class="up-hero">
+    <span class="lp-eyebrow">Ons verhaal</span>
     <h1>Gemaakt <em>door leerlingen</em>, voor leerlingen</h1>
     <p class="up-sub">Slagio is een Nederlands examenplatform voor HAVO, VWO en VMBO GL/TL, gebouwd door mensen die zelf net examen deden. Onze overtuiging: goede voorbereiding hoort niet af te hangen van je portemonnee. Daarom is alles gratis.</p>
     <div class="up-hero-btns">
