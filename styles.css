@@ -7653,6 +7653,18 @@ html.dark .dom-hero-card{background:linear-gradient(180deg,rgba(255,255,255,.045
    De losse studieplan-"Vandaag"-widget en de herhaal-kaart zijn nu ONDERDEEL van
    de Vandaag-hub geworden, dus die vallen hier ook weg (geen dubbele blokken). */
 #sc-home #dagmissie-home,#sc-home #sp-home-widget-wrap,#sc-home #herhaal-home{display:none}
+/* De home vertelt één verhaal: je stand (statuspillen) -> wat je vandaag doet
+   (Vandaag-hub) -> de Examentrainer -> je vakken. De losse gamification-/sociale
+   kaartjes daartussen stapelden op en maakten de home lang en druk; die staan nu
+   niet meer op de home maar blijven bereikbaar via hun eigen tab (Wedstrijd/klas,
+   foutenboek via de Examentrainer) en via de dagelijkse-uitdaging-popup. */
+#sc-home #comeback-card-home,
+#sc-home #slim-home,
+#sc-home #klas-home,
+#sc-home #klas-huiswerk-home,
+#sc-home #live-count-home,
+#sc-home #league-home,
+#sc-home #daily-challenge-home{display:none}
 /* Compacte vaktegels op mobiel: kleiner, dichter en zonder herhaalde ruis
    ("Nog niet begonnen" op elke tegel), zodat het rooster één rustig geheel wordt
    i.p.v. een lange lijst grote kaarten. Op tablet/desktop blijven de tegels vol. */
