@@ -672,6 +672,8 @@ function updateCountdown(){
   setEl('cd-d',d);setEl('cd-h',String(h).padStart(2,'0'));
   setEl('cd-m',String(m).padStart(2,'0'));setEl('cd-s',String(s).padStart(2,'0'));
   setEl('cd-days-text',d);
+  // Slim aftellen: voortgangsbalk van "begin schooljaar" (~260 dagen) naar examen.
+  try{ const fillEl=document.getElementById('hc-cd-fill'); if(fillEl){ const RUN=260; const pct=Math.max(4,Math.min(100,Math.round((RUN-Math.min(RUN,d))/RUN*100))); fillEl.style.width=pct+'%'; } }catch(e){}
   // ── PANIEKMODUS: <1 dag ──
   const panicMsgs=['😱 MORGEN IS HET EXAMEN!','💀 Geen tijd meer voor Netflix.','📚 Nu studeren of nooit.','🚨 NOODTOESTAND ACTIEF','😰 Slapen is voor later.','🔥 Alles op het spel!','⏰ De klok tikt... SNEL!'];
   const panicEl=document.getElementById('cd-panic-msg');
@@ -1003,15 +1005,11 @@ function renderVandaagHub(){
       <button class="vh2-empty-btn" onclick="(typeof startStreakQuiz==='function')?startStreakQuiz():show('sc-home')">Start een quiz${_arrow}</button></div>`;
   }
 
-  const chips=[];
-  if(streak>0) chips.push(`<span class="vh2-chip">🔥 ${streak}</span>`);
-  if(dagen!=null) chips.push(`<span class="vh2-chip">📅 ${dagen}d${exVak?' · '+_esc(exVak):''}</span>`);
+  // De begroeting staat nu in de cockpit-kop (hero). Zet 'm daar; de hub zelf
+  // toont puur "wat te doen vandaag", zonder dubbele begroeting/chips.
+  try{ const g=document.getElementById('hc-greet'); if(g) g.textContent=groet+(naam?', '+naam:''); }catch(e){}
 
   box.innerHTML=`<div class="vandaag-hub vh2">
-    <div class="vh2-head">
-      <div class="vh2-head-tx"><div class="vh2-greet">${groet}${naam?', '+_esc(naam):''}</div><div class="vh2-subtitle">Dit kun je vandaag doen</div></div>
-      ${chips.length?`<div class="vh2-chips">${chips.join('')}</div>`:''}
-    </div>
     ${smartSec}
     ${planSec}
   </div>`;
