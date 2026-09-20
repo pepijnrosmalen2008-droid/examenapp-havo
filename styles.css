@@ -4844,6 +4844,59 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .sp-cal-task-vak{font-size:10px;font-weight:700;color:var(--or);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sp-cal-task-dom{font-size:12px;color:var(--dk);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sp-cal-task-meta{font-size:11px;color:var(--mu);flex-shrink:0}
+
+/* ── STUDIEPLAN: overzichtelijke indeling (instellingen-lade, voortgangsstrip,
+      tabbladen, inklapbare dagen/vakken) ──────────────────────────── */
+/* Instellingen-lade (studiedagen) */
+.sp-settings{border:1px solid var(--bo);border-radius:14px;background:var(--bg2);margin-bottom:12px;overflow:hidden}
+.sp-settings-sum{display:flex;align-items:center;gap:9px;padding:12px 14px;cursor:pointer;list-style:none;
+  font-family:var(--font-head);font-size:13px;font-weight:800;color:var(--dk);-webkit-tap-highlight-color:transparent}
+.sp-settings-sum::-webkit-details-marker{display:none}
+.sp-settings-sum .lbl-ic{color:var(--or);flex-shrink:0}
+.sp-settings-sum>span:first-of-type{flex:1}
+.sp-settings-chev{color:var(--mu);font-size:15px;transition:transform .22s;line-height:1}
+.sp-settings[open] .sp-settings-chev{transform:rotate(180deg)}
+.sp-settings-body{padding:2px 14px 14px}
+.sp-settings-body .sp-pref-hint{margin-bottom:0}
+
+/* Voortgangsstrip: één regel i.p.v. drie losse stat-kaarten */
+.sp-prog-strip{background:var(--s);border:1px solid var(--bo);border-radius:16px;padding:13px 16px;margin-bottom:14px}
+.sp-prog-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:9px}
+.sp-prog-lbl{font-family:var(--font-head);font-size:13px;font-weight:800;color:var(--dk)}
+.sp-prog-val{font-size:12px;font-weight:700;color:var(--mu);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sp-prog-track{height:8px;border-radius:5px;background:var(--bg2);overflow:hidden}
+.sp-prog-fill{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--or),color-mix(in srgb,var(--or) 62%,#000));transition:width .7s cubic-bezier(.34,1.1,.64,1);min-width:6px}
+
+/* Tabbladen: segmented control */
+.sp-tabs{display:flex;gap:4px;background:var(--bg2);border:1px solid var(--bo);border-radius:14px;padding:4px;margin-bottom:16px;position:sticky;top:8px;z-index:5;backdrop-filter:blur(8px)}
+.sp-tab-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 6px;border:none;border-radius:10px;
+  background:transparent;color:var(--mu);font-family:var(--font-head);font-size:13px;font-weight:800;cursor:pointer;
+  transition:background .18s,color .18s;-webkit-tap-highlight-color:transparent;white-space:nowrap}
+.sp-tab-btn:hover{color:var(--dk)}
+.sp-tab-btn.on{background:var(--s);color:var(--or);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.sp-tab-count{font-size:10.5px;font-weight:800;min-width:17px;height:17px;padding:0 4px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;
+  background:rgba(var(--or-rgb),.14);color:var(--or)}
+.sp-tab-btn.on .sp-tab-count{background:rgba(var(--or-rgb),.2)}
+
+/* Panelen: alleen het actieve tabblad tonen */
+.sp-tab-panel{display:none;animation:spFade .22s ease}
+.sp-tab-panel.on{display:block}
+@keyframes spFade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.sp-tab-panel .sp-vandaag{margin-bottom:14px}
+
+/* Inklapbare dagen (Deze week) */
+.sp-cal-wrap{display:flex;flex-direction:column;gap:8px}
+.sp-cal-wrap .sp-cal-day{margin-bottom:0}
+.sp-cal-day>.sp-cal-day-header{cursor:pointer;list-style:none;-webkit-tap-highlight-color:transparent}
+.sp-cal-day>.sp-cal-day-header::-webkit-details-marker{display:none}
+.sp-cal-chev{color:var(--mu);font-size:14px;line-height:1;transition:transform .22s;margin-left:2px}
+details[open]>.sp-cal-day-header .sp-cal-chev,details.sp-vak-block[open]>.sp-vak-header .sp-cal-chev{transform:rotate(180deg)}
+
+/* Inklapbare vakken (Beheersing) */
+.sp-mastery-wrap{display:flex;flex-direction:column}
+.sp-vak-block>.sp-vak-header{cursor:pointer;list-style:none;-webkit-tap-highlight-color:transparent}
+.sp-vak-block>.sp-vak-header::-webkit-details-marker{display:none}
+.sp-vak-body{padding:12px 14px 14px}
 /* ── TOEGANKELIJKHEID ────────────────────────────── */
 .acc-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--bo)}
 .acc-row:last-child{border-bottom:none}

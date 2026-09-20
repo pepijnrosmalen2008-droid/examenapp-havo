@@ -504,10 +504,13 @@ function renderStudieplan(){
   const totalTasks=allPlanTasks.length;
   const totalMins=allPlanTasks.reduce((s,t)=>s+(t.mins||0),0);
   const totalDoneTasks=allPlanTasks.filter(t=>!!doneMap[`${t.dateStr}_${t.vakId}_${t.domId}_${t.actKey}`]).length;
-  const summaryHtml=`<div class="sp-summary">
-    <div class="sp-sum-card"><div class="sp-sum-val">${totalTasks}</div><div class="sp-sum-lbl">Taken gepland</div></div>
-    <div class="sp-sum-card"><div class="sp-sum-val">${totalDoneTasks}</div><div class="sp-sum-lbl">Gedaan</div></div>
-    <div class="sp-sum-card"><div class="sp-sum-val">~${(totalMins/60).toFixed(1)}u</div><div class="sp-sum-lbl">Studeertijd</div></div>
+  const donePctAll=totalTasks?Math.round(totalDoneTasks/totalTasks*100):0;
+  const progressStripHtml=`<div class="sp-prog-strip">
+    <div class="sp-prog-top">
+      <span class="sp-prog-lbl">Je plan tot het examen</span>
+      <span class="sp-prog-val">${totalDoneTasks}/${totalTasks} taken · ~${(totalMins/60).toFixed(1)}u</span>
+    </div>
+    <div class="sp-prog-track"><div class="sp-prog-fill" style="width:${donePctAll}%"></div></div>
   </div>`;
 
   // ── Kalender: komende dagen ──
@@ -515,7 +518,7 @@ function renderStudieplan(){
   let calHtml='';
   if(futureDates.length>0){
     const intColors={1:'#22c55e',2:'var(--or)',3:'#ef4444'};
-    const dayRows=futureDates.map(ds=>{
+    const dayRows=futureDates.map((ds,idx)=>{
       const day=dayMap[ds];
       const d=day.date;
       const realTasks=day.tasks.filter(t=>!t.isReview);
@@ -542,8 +545,8 @@ function renderStudieplan(){
         </div>
         <span class="sp-cal-task-meta">~15m</span>
       </div>`)].join('');
-      return`<div class="sp-cal-day${allDone?' sp-done':''}">
-        <div class="sp-cal-day-header">
+      return`<details class="sp-cal-day${allDone?' sp-done':''}"${idx<2?' open':''}>
+        <summary class="sp-cal-day-header">
           <div>
             <div class="sp-cal-day-name">${dayLbl(d)}</div>
             <div class="sp-cal-day-date">${fmtDate(d)}</div>
@@ -551,29 +554,31 @@ function renderStudieplan(){
           <div class="sp-cal-day-right">
             <span class="sp-cal-task-count" style="color:${intColors[day.intensity]||'var(--mu)'}">${realTasks.length+reviewTasks.length} taken</span>
             <span class="sp-cal-mins">~${usedMins} min</span>
-            ${allDone?'<span class="sp-cal-done-badge">✓ Klaar</span>':''}
+            ${allDone?'<span class="sp-cal-done-badge">✓ Klaar</span>':'<span class="sp-cal-chev" aria-hidden="true">⌄</span>'}
           </div>
-        </div>
+        </summary>
         <div class="sp-cal-tasks">${taskRows}</div>
-      </div>`;
+      </details>`;
     }).join('');
-    calHtml=`<div style="margin-top:4px"><div class="sp-section-title">Komende dagen</div>${dayRows}</div>`;
+    calHtml=`<div class="sp-cal-wrap">${dayRows}</div>`;
   }
 
   // ── Beheersing per vak ──
-  let masteryHtml='<div style="margin-top:24px"><div class="sp-section-title">Beheersing per vak</div>';
-  Object.values(vakInfo).forEach(({vak,examD,daysLeft,domains})=>{
+  let masteryHtml='<div class="sp-mastery-wrap">';
+  Object.values(vakInfo).forEach(({vak,examD,daysLeft,domains},vi)=>{
     const doneCount=domains.filter(d=>d.urgency===3).length;
     const donePct=domains.length?Math.round(doneCount/domains.length*100):100;
     const urgCls=daysLeft<=5?'urgent':daysLeft<=12?'soon':'ok';
     const urgTxt=daysLeft<=5?`⚠️ ${daysLeft}d`:`${daysLeft}d`;
-    masteryHtml+=`<div class="sp-vak-block" style="margin-bottom:12px">
-      <div class="sp-vak-header">
+    masteryHtml+=`<details class="sp-vak-block"${vi===0?' open':''} style="margin-bottom:10px">
+      <summary class="sp-vak-header">
         ${vak.kleur?`<div class="sp-vak-dot" style="background:${vak.kleur}"></div>`:''}
         <div class="sp-vak-name">${vak.naam}</div>
         <div class="sp-vak-meta">${doneCount}/${domains.length} klaar</div>
         <span class="sp-vak-countdown ${urgCls}">${urgTxt}</span>
-      </div>
+        <span class="sp-cal-chev" aria-hidden="true">⌄</span>
+      </summary>
+      <div class="sp-vak-body">
       <div class="sp-progress-bar"><div class="sp-progress-fill" style="width:${donePct}%"></div></div>
       <div class="sp-mastery-grid">${domains.map(dom=>{
         const color=pctColor(dom.pct,dom.hasData);
@@ -587,7 +592,8 @@ function renderStudieplan(){
           </div>
         </div>`;
       }).join('')}</div>
-    </div>`;
+      </div>
+    </details>`;
   });
   masteryHtml+='</div>';
 
@@ -619,13 +625,33 @@ function renderStudieplan(){
   }
 
   const spHook=(typeof plusHookHTML==='function')?plusHookHTML('Dit plan maak je zelf. Plus stelt het automatisch samen én past het elke dag aan op je fouten en verwachte cijfer'):'';
-  el.innerHTML=spHook+vandaagHtml+prioHtml+summaryHtml+calHtml+masteryHtml;
+  // Overzichtelijke indeling: één voortgangsstrip + drie tabbladen i.p.v. één lange scroll.
+  const todayOpenCount=todayOpenTasks.length+(fbDue?1:0);
+  const weekCount=futureDates.length;
+  const vakCount=Object.keys(vakInfo).length;
+  const tabsNavHtml=`<div class="sp-tabs" role="tablist">
+    <button class="sp-tab-btn on" role="tab" onclick="spTab('vandaag',this)">Vandaag${todayOpenCount?`<span class="sp-tab-count">${todayOpenCount}</span>`:''}</button>
+    <button class="sp-tab-btn" role="tab" onclick="spTab('week',this)">Deze week${weekCount?`<span class="sp-tab-count">${weekCount}</span>`:''}</button>
+    <button class="sp-tab-btn" role="tab" onclick="spTab('beheersing',this)">Beheersing${vakCount?`<span class="sp-tab-count">${vakCount}</span>`:''}</button>
+  </div>`;
+  el.innerHTML=spHook+progressStripHtml+tabsNavHtml
+    +`<div class="sp-tab-panel on" data-tab="vandaag">${vandaagHtml}${prioHtml}</div>`
+    +`<div class="sp-tab-panel" data-tab="week">${calHtml||'<div class="sp-empty">Geen extra taken meer ingepland voor deze periode. 🎉</div>'}</div>`
+    +`<div class="sp-tab-panel" data-tab="beheersing">${masteryHtml}</div>`;
   try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){} // top-container legen (regel zit nu in Vandaag)
   localStorage.setItem('slagio_plan_generated','1');
-  if(todayAllTasks.length)setTimeout(()=>document.querySelector('.sp-vandaag')?.scrollIntoView({behavior:'smooth',block:'nearest'}),120);
   const btn=document.getElementById('sp-gen-btn');
   if(btn)btn.textContent='🔄 Herbereken studieplan';
   try{trackEvent('studieplan_generated',{vakken:Object.keys(vakInfo).length});}catch(e){}
+}
+// Wissel tussen de studieplan-tabbladen (Vandaag / Deze week / Beheersing).
+function spTab(name,btn){
+  const root=document.getElementById('studieplan-content');if(!root)return;
+  root.querySelectorAll('.sp-tab-panel').forEach(p=>p.classList.toggle('on',p.dataset.tab===name));
+  root.querySelectorAll('.sp-tab-btn').forEach(b=>b.classList.remove('on'));
+  if(btn)btn.classList.add('on');
+  const tabs=root.querySelector('.sp-tabs');
+  if(tabs){const r=tabs.getBoundingClientRect();if(r.top<0)tabs.scrollIntoView({behavior:'smooth',block:'start'});}
 }
 // ═══════ TOEGANKELIJKHEID ═══════
 const ACC_KEY='slagio_acc_v1';
