@@ -769,20 +769,22 @@
 <div class="hm-hero" id="main-content">
   <div class="hm-hero-glow"></div>
   <canvas class="flicker-canvas" id="flicker-canvas" aria-hidden="true"></canvas>
-  <div class="hm-hero-inner hc">
-    <div class="hc-top">
-      <div class="hc-greet" id="hc-greet">Welkom terug</div>
-      <div class="hc-eyebrow"><span class="hm-badge-dot"></span>Eindexamen 2027</div>
-    </div>
-    <div class="hm-countdown hc-cd" id="countdown">
-      <div class="hc-cd-row">
-        <div class="hc-cd-main">
-          <div class="cd-label" id="cd-label">Volgende examen</div>
-          <div class="hc-cd-num"><span id="cd-days-text">--</span><span class="hc-cd-unit">dagen</span></div>
-        </div>
-        <div class="hc-cd-when"><span class="cd-title" id="cd-title"></span><span class="cd-sub" id="cd-sub">Laden…</span></div>
+  <div class="hm-hero-inner">
+    <div class="hm-badge"><span class="hm-badge-dot"></span>Eindexamen 2027</div>
+    <h1 class="hm-h1">Oefen slim.<br><em>Slaag zeker.</em></h1>
+    <p class="hm-sub">Alle CE-domeinen, samenvattingen en quizzen - gratis &amp; offline.</p>
+    <div class="hm-countdown" id="countdown">
+      <div class="cd-left">
+        <div class="cd-label" id="cd-label">Volgende examen</div>
+        <div class="cd-title" id="cd-title">Nog <span id="cd-days-text">--</span> dagen</div>
+        <div class="cd-sub" id="cd-sub">Laden…</div>
       </div>
-      <div class="hc-cd-bar" aria-hidden="true"><span class="hc-cd-fill" id="hc-cd-fill"></span></div>
+      <div class="cd-nums">
+        <div class="cd-box"><div class="cd-val" id="cd-d">--</div><div class="cd-unit">Dagen</div></div>
+        <div class="cd-box"><div class="cd-val" id="cd-h">--</div><div class="cd-unit">Uren</div></div>
+        <div class="cd-box"><div class="cd-val" id="cd-m">--</div><div class="cd-unit">Min</div></div>
+        <div class="cd-box"><div class="cd-val" id="cd-s">--</div><div class="cd-unit">Sec</div></div>
+      </div>
       <div id="cd-panic-msg"></div>
     </div>
     <div class="hm-ctas">
