@@ -26,14 +26,17 @@ het doet en zet alles in één briefing op
    - Zijn fouten nieuw of oud? Kijk naar `laatst` bij `topFouten` en naar git log.
    Schrijf alleen op wat je hebt nagegaan. Noem het expliciet als iets een vermoeden is.
 
-4. **Content-PR nalezen.** Zoek de open PR "Social content <week>". Bekijk elke
+4. **Content nalezen.** Zoek de nieuwste content-branch met
+   `git ls-remote --heads origin 'content/*'` (de PR heet "Social content <week>"). Bekijk elke
    slide (Read op de JPEG's) en elk onderschrift tegen `social/STIJLGIDS.md`:
    - Klopt de inhoud? Is de vraag los te begrijpen en examenrelevant?
    - Geen AI-tells, geen onverifieerbare claims, niets dat afwijkt van de app-data.
    - Zwak maar correct: zet een notitie. Fout of zwak: pas het onderschrift aan
-     in `plan.json`, of zet `"overslaan": true`. Commit op de content-branch en
-     zet één korte samenvatting als PR-commentaar.
-   Staat de branch `content/<week>` er wel, maar is er geen PR: open hem zelf.
+     in `plan.json`, of zet `"overslaan": true`. Commit en push op de content-branch.
+   - Merge nooit zelf; goedkeuren doet de eigenaar.
+   Met GitHub-tools (`mcp__github__*`): zet ook één korte samenvatting als
+   PR-commentaar, en open de PR zelf als alleen de branch bestaat. Zonder die
+   tools staat je oordeel in de briefing (per post in `content.review`).
 
 5. **Analyse schrijven.** Maak `/tmp/analyse.json` volgens het schema hieronder.
    Toon: een rustige, capabele stafchef. Kort, concreet, Nederlands, geen
