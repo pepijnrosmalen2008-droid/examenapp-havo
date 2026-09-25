@@ -190,6 +190,10 @@ function openVak(id,_noHash){
     const _csInfo=d.ceStatus&&_ceStatusMap()[d.ceStatus];
     const csBadge=_csInfo?`<div class="dom-ce-badge dom-ce-${_csInfo.cls}">${_csInfo.icon} ${_csInfo.txt}</div>`:'';
     const _empty=(!d.sv||!d.sv.length)&&(!d.oe||!d.oe.length);
+    // Volledig leeg: geen vragen én geen leerstof (samenvatting/begrippen). Zulke
+    // (SE-)domeinen krijgen géén doodlopende knop, alleen een nette 'binnenkort'.
+    const _hasLeerstof=!!(d.hasSam||d.sam||(d.nBeg>0)||(d.begrippen&&d.begrippen.length));
+    const _noContent=_empty&&!_hasLeerstof;
     const _hasLd=d.leerdoelen&&d.leerdoelen.length;
     const el=document.createElement('div');
     el.className='dc2';
@@ -208,13 +212,15 @@ function openVak(id,_noHash){
       </div>`;
     }else{
       el.innerHTML=`
-      <div class="dh" onclick="openDomein('${d.id}')">
+      <div class="dh"${_noContent?'':` onclick="openDomein('${d.id}')"`}>
         <div class="dlet" style="background:${ST.vak.kleur}22;color:${ST.vak.kleur}">${d.id}</div>
         <div class="di"><h4>Domein ${d.id}: ${d.naam}${decayDot}</h4>${csBadge}<p>${d.beschrijving}</p>${progHtml}</div>
         <div class="dbtns">
           <button class="fav-btn${isFav(ST.vak.id,d.id)?' active':''}" id="fav-${d.id}" onclick="event.stopPropagation();const on=toggleFav('${ST.vak.id}','${d.id}');this.classList.toggle('active',on)" aria-label="Favoriet">${ICO_STAR}</button>
-          <button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();openDomein('${d.id}')">${ICO_CHEVRON} Leerstof</button>
-          ${_empty?`<span class="dom-soon">🔜 Binnenkort</span>`:`<button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Quiz</button>`}
+          ${_noContent
+            ? `<span class="dom-soon">🔜 Binnenkort</span>`
+            : `<button class="exb" id="exb-${d.id}" onclick="event.stopPropagation();openDomein('${d.id}')">${ICO_CHEVRON} Leerstof</button>
+          ${_empty?`<span class="dom-soon">🔜 Binnenkort</span>`:`<button class="qb" onclick="event.stopPropagation();openQmode('${d.id}')">${ICO_PLAY} Quiz</button>`}`}
         </div>
       </div>`;
     }

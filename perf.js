@@ -26,10 +26,13 @@
   function heuristicLite(){
     try{
       if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return true;
+      // Bewust conservatief: alleen écht zwakke apparaten krijgen vooraf soepele
+      // modus. De FPS-meting hieronder vangt de rest op basis van de echte
+      // prestaties, i.p.v. veel gemiddelde telefoons meteen af te knijpen.
       var cores = navigator.hardwareConcurrency;
-      if(typeof cores==='number' && cores>0 && cores<=4) return true;
+      if(typeof cores==='number' && cores>0 && cores<=2) return true;
       var mem = navigator.deviceMemory;
-      if(typeof mem==='number' && mem>0 && mem<=4) return true;
+      if(typeof mem==='number' && mem>0 && mem<=2) return true;
     }catch(e){}
     return false;
   }
@@ -61,8 +64,9 @@
       if(d>34) longFrames++; // < ~30 fps voor dit frame
       if(now-start < RUN){ requestAnimationFrame(tick); return; }
       var secs=(now-start)/1000, fps=frames/secs;
-      // Zwak apparaat: lage gemiddelde fps óf veel haperende frames.
-      if(fps < 45 || longFrames > frames*0.25){
+      // Zwak apparaat: duidelijk lage gemiddelde fps óf veel haperende frames.
+      // Iets soepeler dan voorheen zodat vlotte apparaten niet onnodig afknijpen.
+      if(fps < 38 || longFrames > frames*0.34){
         setAttr(true);
         try{ localStorage.setItem(KEY,'lite'); }catch(e){}
         try{ if(typeof vonkPhysRefresh==='function') vonkPhysRefresh(); }catch(e){}
