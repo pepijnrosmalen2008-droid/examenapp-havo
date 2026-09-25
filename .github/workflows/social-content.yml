@@ -1,0 +1,52 @@
+name: Social · content maken
+
+# De contentfabriek: elke donderdag de posts van volgende week maken en als
+# pull request klaarzetten. Goedkeuren = mergen. Jarvis (de wekelijkse
+# Claude-routine) leest de PR daarna na, verbetert waar nodig en rapporteert.
+on:
+  schedule:
+    - cron: '0 6 * * 4'        # donderdag 07:00/08:00 NL-tijd
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'Week (bv. 2026-W41). Leeg = volgende week'
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  maak:
+    if: vars.SOCIAL_AAN == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Afhankelijkheden (Playwright + Chromium)
+        working-directory: scripts/social
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Content genereren
+        run: node scripts/social/generate.mjs ${{ inputs.week && format('--week {0}', inputs.week) || '' }}
+      - name: Controleren
+        run: node scripts/social/publish.mjs --controleer
+      - name: Pull request openen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          WEEK=$(ls -1 social/weken | sort | tail -1)
+          git config user.name  "slagio-bot"
+          git config user.email "slagio-bot@users.noreply.github.com"
+          git checkout -b "content/$WEEK"
+          git add social
+          git commit -m "content: social posts $WEEK"
+          git push -u origin "content/$WEEK"
+          gh pr create --base main --head "content/$WEEK" \
+            --title "Social content $WEEK" \
+            --body "$(printf 'Automatisch gemaakt. Bekijk alles in [OVERZICHT.md](%s/%s/blob/content/%s/social/weken/%s/OVERZICHT.md).\n\n**Merge = goedkeuren.** Daarna plaatst de publicatie-workflow elke post op het geplande moment.\n\nPost niet goed? Verwijder hem uit plan.json of zet \"overslaan\": true.' "${{ github.server_url }}" "${{ github.repository }}" "$WEEK" "$WEEK")" \
+            || echo "::warning::PR aanmaken lukte niet (staat 'Allow GitHub Actions to create pull requests' aan?). De branch content/$WEEK staat klaar; Jarvis opent de PR dan."

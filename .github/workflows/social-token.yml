@@ -1,0 +1,30 @@
+name: Social · token verversen
+
+# Instagram-tokens (Instagram-login) verlopen na 60 dagen. Deze workflow
+# ververst het token elke maand. Met secret SECRETS_PAT (fine-grained token
+# met 'Secrets: read and write' op deze repo) wordt het nieuwe token meteen
+# opgeslagen; zonder PAT faalt de run zodat je een e-mail krijgt en het zelf doet.
+on:
+  schedule:
+    - cron: '0 7 1 * *'
+  workflow_dispatch:
+
+jobs:
+  ververs:
+    if: vars.SOCIAL_AAN == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Token verversen
+        env:
+          TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+        run: |
+          case "$TOKEN" in IG*) ;; *) echo "Geen Instagram-login-token (Facebook-paginatokens verlopen niet)."; exit 0;; esac
+          RES=$(curl -sS "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$TOKEN")
+          NEW=$(echo "$RES" | python3 -c "import sys,json;print(json.load(sys.stdin).get('access_token',''))")
+          DAYS=$(echo "$RES" | python3 -c "import sys,json;print(int(json.load(sys.stdin).get('expires_in',0))//86400)")
+          if [ -z "$NEW" ]; then echo "::error::Verversen mislukt: $RES"; exit 1; fi
+          echo "Nieuw token geldig voor $DAYS dagen."
+          if [ -z "$GH_TOKEN" ]; then echo "::error::Geen SECRETS_PAT: werk IG_ACCESS_TOKEN handmatig bij."; exit 1; fi
+          gh secret set IG_ACCESS_TOKEN --repo "${{ github.repository }}" --body "$NEW"
+          echo "IG_ACCESS_TOKEN bijgewerkt."

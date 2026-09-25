@@ -21,3 +21,5 @@ jobs:
         run: node scripts/build-questions.js --check
       - name: Rooktest — data parseert, assets bestaan, SW-cache gebumpt
         run: node scripts/smoke.mjs
+      - name: Social content-plannen geldig (bestanden, JPEG/MP4, stijlgids)
+        run: node scripts/social/publish.mjs --controleer
