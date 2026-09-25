@@ -1,0 +1,64 @@
+name: SEO
+
+# Automatische SEO na elke deploy naar main:
+#   1. sitemap.xml opnieuw afleiden uit de pagina's (canonical + robots + git-datum)
+#      en terugcommitten als er iets veranderd is;
+#   2. gewijzigde pagina's via IndexNow direct aan Bing/ChatGPT-search/Yandex melden.
+# Draait ook wekelijks en handmatig (met optie om de hele sitemap te melden).
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'scripts/build-sitemap.mjs']
+  schedule:
+    - cron: '17 5 * * 1'   # maandag 07:17 NL-tijd: wekelijkse controle
+  workflow_dispatch:
+    inputs:
+      all:
+        description: 'Hele sitemap melden bij IndexNow'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo
+  cancel-in-progress: false
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # lastmod komt uit de git-geschiedenis
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Sitemap opnieuw genereren
+        run: node scripts/build-sitemap.mjs
+
+      - name: Sitemap terugcommitten als hij veranderd is
+        run: |
+          if git diff --quiet -- sitemap.xml; then
+            echo "Sitemap was al actueel."
+          else
+            git config user.name  "slagio-bot"
+            git config user.email "slagio-bot@users.noreply.github.com"
+            git add sitemap.xml
+            git commit -m "chore(seo): sitemap automatisch bijgewerkt [skip ci]"
+            git push
+          fi
+
+      - name: Wachten tot GitHub Pages de nieuwe versie serveert
+        if: github.event_name == 'push'
+        run: sleep 120
+
+      - name: Gewijzigde pagina's melden bij IndexNow
+        if: github.event_name == 'push'
+        run: node scripts/indexnow.mjs --changed "${{ github.event.before }}" "${{ github.sha }}"
+
+      - name: Hele sitemap melden (handmatig)
+        if: github.event_name == 'workflow_dispatch' && inputs.all
+        run: node scripts/indexnow.mjs --all
