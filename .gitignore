@@ -22,3 +22,6 @@ scratchpad/
 
 # Syllabi: PDF-bronnen zijn groot en herleidbaar via scripts/fetch-syllabi.sh; alleen de tekst-extractie committen.
 syllabi/2027/*.pdf
+
+# Tooling-afhankelijkheden (social)
+node_modules/

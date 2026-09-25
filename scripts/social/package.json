@@ -1,0 +1,14 @@
+{
+  "name": "slagio-social",
+  "private": true,
+  "type": "module",
+  "description": "Automatische social content + Instagram-publicatie voor Slagio (los van de site zelf).",
+  "scripts": {
+    "genereer": "node generate.mjs",
+    "publiceer": "node publish.mjs",
+    "stats": "node stats.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.56.1"
+  }
+}
