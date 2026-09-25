@@ -3,7 +3,14 @@
    Neemt de continue render-kosten weg: eindeloze decoratieve animaties spelen
    nog één keer en stoppen (geen repaint per frame), en de dure glas-blur op de
    vaste balken/overlays gaat uit. Eenmalige entree-animaties blijven werken. */
-html[data-perf="lite"] *, html[data-perf="lite"] *::before, html[data-perf="lite"] *::after{
+/* De cute mascotte (.m-svg) en Vonk (.vonk-corner / .vc-vonk) mogen wél blijven
+   bewegen in soepele modus — hun idle-animaties (ademen, oogjes, nudge) zijn
+   goedkoop en geven de app leven. Alleen de écht dure dingen gaan uit: de
+   confetti-canvas en Vonk-physics via JS (slagioLite), het flikkergrid +
+   glas-blur via de regels hieronder, en alle overige continue animaties hier. */
+html[data-perf="lite"] *:not(.m-svg):not(.m-svg *):not(.vonk-corner):not(.vonk-corner *):not(.vc-vonk),
+html[data-perf="lite"] *:not(.m-svg):not(.m-svg *):not(.vonk-corner):not(.vonk-corner *):not(.vc-vonk)::before,
+html[data-perf="lite"] *:not(.m-svg):not(.m-svg *):not(.vonk-corner):not(.vonk-corner *):not(.vc-vonk)::after{
   animation-duration:.001s !important; animation-delay:0s !important; animation-iteration-count:1 !important;
 }
 html[data-perf="lite"] .flicker-canvas{ display:none !important; }
@@ -4867,16 +4874,14 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 .sp-prog-track{height:8px;border-radius:5px;background:var(--bg2);overflow:hidden}
 .sp-prog-fill{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--or),color-mix(in srgb,var(--or) 62%,#000));transition:width .7s cubic-bezier(.34,1.1,.64,1);min-width:6px}
 
-/* Tabbladen: segmented control */
-.sp-tabs{display:flex;gap:4px;background:var(--bg2);border:1px solid var(--bo);border-radius:14px;padding:4px;margin-bottom:16px;position:sticky;top:8px;z-index:5;backdrop-filter:blur(8px)}
-.sp-tab-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 6px;border:none;border-radius:10px;
-  background:transparent;color:var(--mu);font-family:var(--font-head);font-size:13px;font-weight:800;cursor:pointer;
-  transition:background .18s,color .18s;-webkit-tap-highlight-color:transparent;white-space:nowrap}
-.sp-tab-btn:hover{color:var(--dk)}
-.sp-tab-btn.on{background:var(--s);color:var(--or);box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.sp-tab-count{font-size:10.5px;font-weight:800;min-width:17px;height:17px;padding:0 4px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;
-  background:rgba(var(--or-rgb),.14);color:var(--or)}
-.sp-tab-btn.on .sp-tab-count{background:rgba(var(--or-rgb),.2)}
+/* Tabbladen: exact het segmented-control uit de app (.calc-tabs/.calc-tab) */
+.sp-tabs{display:flex;gap:5px;background:var(--bg2);border-radius:14px;padding:5px;margin-bottom:16px}
+.sp-tab-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 8px;border:none;border-radius:10px;
+  background:none;color:var(--mu);font-family:var(--font);font-size:13px;font-weight:600;cursor:pointer;
+  transition:all .2s;-webkit-tap-highlight-color:transparent;white-space:nowrap}
+.sp-tab-btn.on{background:var(--s);color:var(--dk);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.sp-tab-count{font-size:10.5px;font-weight:700;min-width:17px;height:17px;padding:0 4px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;
+  background:rgba(var(--or-rgb),.13);color:var(--or)}
 
 /* Panelen: alleen het actieve tabblad tonen */
 .sp-tab-panel{display:none;animation:spFade .22s ease}

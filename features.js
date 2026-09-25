@@ -134,6 +134,9 @@ setInterval(renderLiveCount,32000);
 
 // ═══════ CONFETTI ═══════
 function launchConfetti(type){
+  // Confetti is een doorlopende canvas-animatie met 90-130 stukjes — te zwaar
+  // voor de soepele modus. Alleen in de normale modus laten spatten.
+  try{ if(window.slagioLite&&window.slagioLite())return; }catch(e){}
   type=type||'normal';
   const canvas=document.createElement('canvas');
   canvas.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9990';
