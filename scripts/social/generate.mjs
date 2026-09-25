@@ -93,7 +93,7 @@ try {
   posts.push({ id: `${WEEK}-ma-story`, type: 'aftellen', format: 'story', publiceren: nlTijd(dag(0), '07:45'),
     bestanden: ['ma-story-aftellen.jpg'], caption: '', info: `Story: nog ${af.dagen} dagen` });
   posts.push({ id: `${WEEK}-ma-aftellen`, type: 'aftellen', format: 'image', publiceren: nlTijd(dag(0), '17:30'),
-    bestanden: ['ma-aftellen.jpg'], caption: C.captionAftellen(r, afVars), info: `Nog ${af.dagen} dagen tot ${af.startDatum}` });
+    bestanden: ['ma-aftellen.jpg'], caption: C.captionAftellen(r, afVars), info: `Nog ${af.dagen} dagen tot ${F.datumNL(af.startDatum)}` });
 
   // ── Woensdag: examenvraag-carrousel ──────────────────────────────────────
   const vakQ = kiesVak(nivVraag, id => D.geschikteVragen(nivVraag, id).some(q => !gesch.vragen.includes(q.id)));

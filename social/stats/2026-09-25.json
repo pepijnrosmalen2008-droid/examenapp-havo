@@ -1,0 +1,427 @@
+{
+  "gemeten": "2026-09-25T21:34:14.994Z",
+  "periode": {
+    "van": "2026-09-18",
+    "tot": "2026-09-24"
+  },
+  "app": {
+    "deze": {
+      "actief": 98,
+      "betrokken": 17,
+      "nieuw": 92,
+      "concentratie": {
+        "top2Aandeel": 32,
+        "top": [
+          {
+            "apparaat": "7b94d70a",
+            "n": 5
+          },
+          {
+            "apparaat": "7f6311a2",
+            "n": 3
+          },
+          {
+            "apparaat": "257e470d",
+            "n": 3
+          }
+        ]
+      },
+      "opens": 108,
+      "oefensessies": 25,
+      "quizzen": 2,
+      "gemScore": 90,
+      "fouten": 23,
+      "feedback": {
+        "aantal": 1,
+        "gem": 5
+      },
+      "niveaus": {
+        "havo": 60,
+        "vwo": 26,
+        "vmbo": 12
+      },
+      "apparaten": {
+        "desktop": 62,
+        "mobile": 34,
+        "mobile-pwa": 2
+      },
+      "functies": {
+        "Studieplan": 27,
+        "Oud-examenquiz": 13,
+        "Flashcards": 6,
+        "Foutenboek": 3,
+        "Snelle quiz": 2,
+        "Dagmissie": 2,
+        "Proefexamen": 1,
+        "Race tegen bot": 1
+      },
+      "vakken": [
+        {
+          "naam": "Biologie (VWO)",
+          "n": 1
+        },
+        {
+          "naam": "Nederlands (HAVO)",
+          "n": 1
+        }
+      ]
+    },
+    "vorige": {
+      "actief": 132,
+      "betrokken": 31,
+      "nieuw": 125,
+      "concentratie": {
+        "top2Aandeel": 63,
+        "top": [
+          {
+            "apparaat": "1de04661",
+            "n": 90
+          },
+          {
+            "apparaat": "fb1e58b2",
+            "n": 16
+          },
+          {
+            "apparaat": "3348d2c1",
+            "n": 11
+          }
+        ]
+      },
+      "opens": 201,
+      "oefensessies": 167,
+      "quizzen": 76,
+      "gemScore": 55,
+      "fouten": 86,
+      "feedback": {
+        "aantal": 6,
+        "gem": 4.5
+      },
+      "niveaus": {
+        "vwo": 12,
+        "havo": 116,
+        "vmbo": 4
+      },
+      "apparaten": {
+        "mobile": 61,
+        "desktop": 68,
+        "mobile-pwa": 3
+      },
+      "functies": {
+        "Snelle quiz": 76,
+        "Studieplan": 74,
+        "Foutenboek": 46,
+        "Vraag Vonk (AI)": 19,
+        "Oud-examenquiz": 14,
+        "Dagmissie": 12,
+        "AI-nakijken": 12,
+        "Proefexamen": 11,
+        "Flashcards": 11,
+        "Examenarchief (PDF)": 11,
+        "Race tegen bot": 8,
+        "Simulatietoets": 3,
+        "Klassenquiz": 2
+      },
+      "vakken": [
+        {
+          "naam": "Foutenboek (VWO)",
+          "n": 32
+        },
+        {
+          "naam": "Geschiedenis (HAVO)",
+          "n": 7
+        },
+        {
+          "naam": "Engels (VMBO)",
+          "n": 5
+        },
+        {
+          "naam": "Engels (VWO)",
+          "n": 4
+        },
+        {
+          "naam": "Aardrijkskunde (VWO)",
+          "n": 4
+        },
+        {
+          "naam": "Wiskunde A (HAVO)",
+          "n": 2
+        },
+        {
+          "naam": "Wiskunde A (VWO)",
+          "n": 2
+        },
+        {
+          "naam": "Duits (VWO)",
+          "n": 2
+        }
+      ]
+    },
+    "terugkeer": 3,
+    "terugkeerBetrokken": 10,
+    "uitgesloten": 0,
+    "dagelijks": [
+      {
+        "datum": "2026-08-29",
+        "actief": 8,
+        "betrokken": 4,
+        "opens": 19,
+        "oefensessies": 18
+      },
+      {
+        "datum": "2026-08-30",
+        "actief": 6,
+        "betrokken": 3,
+        "opens": 14,
+        "oefensessies": 10
+      },
+      {
+        "datum": "2026-08-31",
+        "actief": 11,
+        "betrokken": 4,
+        "opens": 18,
+        "oefensessies": 5
+      },
+      {
+        "datum": "2026-09-01",
+        "actief": 14,
+        "betrokken": 3,
+        "opens": 17,
+        "oefensessies": 8
+      },
+      {
+        "datum": "2026-09-02",
+        "actief": 4,
+        "betrokken": 2,
+        "opens": 5,
+        "oefensessies": 2
+      },
+      {
+        "datum": "2026-09-03",
+        "actief": 9,
+        "betrokken": 2,
+        "opens": 34,
+        "oefensessies": 9
+      },
+      {
+        "datum": "2026-09-04",
+        "actief": 5,
+        "betrokken": 1,
+        "opens": 11,
+        "oefensessies": 8
+      },
+      {
+        "datum": "2026-09-05",
+        "actief": 7,
+        "betrokken": 2,
+        "opens": 13,
+        "oefensessies": 3
+      },
+      {
+        "datum": "2026-09-06",
+        "actief": 7,
+        "betrokken": 6,
+        "opens": 13,
+        "oefensessies": 18
+      },
+      {
+        "datum": "2026-09-07",
+        "actief": 8,
+        "betrokken": 6,
+        "opens": 22,
+        "oefensessies": 21
+      },
+      {
+        "datum": "2026-09-08",
+        "actief": 8,
+        "betrokken": 4,
+        "opens": 8,
+        "oefensessies": 15
+      },
+      {
+        "datum": "2026-09-09",
+        "actief": 5,
+        "betrokken": 2,
+        "opens": 10,
+        "oefensessies": 14
+      },
+      {
+        "datum": "2026-09-10",
+        "actief": 6,
+        "betrokken": 4,
+        "opens": 19,
+        "oefensessies": 15
+      },
+      {
+        "datum": "2026-09-11",
+        "actief": 9,
+        "betrokken": 4,
+        "opens": 12,
+        "oefensessies": 11
+      },
+      {
+        "datum": "2026-09-12",
+        "actief": 6,
+        "betrokken": 3,
+        "opens": 10,
+        "oefensessies": 41
+      },
+      {
+        "datum": "2026-09-13",
+        "actief": 10,
+        "betrokken": 5,
+        "opens": 7,
+        "oefensessies": 20
+      },
+      {
+        "datum": "2026-09-14",
+        "actief": 8,
+        "betrokken": 4,
+        "opens": 22,
+        "oefensessies": 15
+      },
+      {
+        "datum": "2026-09-15",
+        "actief": 82,
+        "betrokken": 16,
+        "opens": 106,
+        "oefensessies": 15
+      },
+      {
+        "datum": "2026-09-16",
+        "actief": 21,
+        "betrokken": 9,
+        "opens": 29,
+        "oefensessies": 75
+      },
+      {
+        "datum": "2026-09-17",
+        "actief": 12,
+        "betrokken": 4,
+        "opens": 17,
+        "oefensessies": 0
+      },
+      {
+        "datum": "2026-09-18",
+        "actief": 12,
+        "betrokken": 1,
+        "opens": 10,
+        "oefensessies": 1
+      },
+      {
+        "datum": "2026-09-19",
+        "actief": 8,
+        "betrokken": 0,
+        "opens": 5,
+        "oefensessies": 0
+      },
+      {
+        "datum": "2026-09-20",
+        "actief": 17,
+        "betrokken": 6,
+        "opens": 28,
+        "oefensessies": 4
+      },
+      {
+        "datum": "2026-09-21",
+        "actief": 28,
+        "betrokken": 3,
+        "opens": 29,
+        "oefensessies": 2
+      },
+      {
+        "datum": "2026-09-22",
+        "actief": 11,
+        "betrokken": 0,
+        "opens": 8,
+        "oefensessies": 0
+      },
+      {
+        "datum": "2026-09-23",
+        "actief": 15,
+        "betrokken": 2,
+        "opens": 11,
+        "oefensessies": 4
+      },
+      {
+        "datum": "2026-09-24",
+        "actief": 10,
+        "betrokken": 3,
+        "opens": 12,
+        "oefensessies": 5
+      },
+      {
+        "datum": "2026-09-25",
+        "actief": 17,
+        "betrokken": 4,
+        "opens": 15,
+        "oefensessies": 10
+      }
+    ],
+    "topFouten": [
+      {
+        "bericht": "bron kon niet laden: /foutenboek-meta-vwo.js",
+        "n": 5,
+        "laatst": "2026-09-25T10:04:44.397592+00:00",
+        "schermen": [
+          "sc-quiz"
+        ]
+      },
+      {
+        "bericht": "bron kon niet laden: /foutenboek-uitleg-vwo.js",
+        "n": 5,
+        "laatst": "2026-09-25T10:04:44.497344+00:00",
+        "schermen": [
+          "sc-quiz"
+        ]
+      },
+      {
+        "bericht": "bron kon niet laden: /foutenboek-meta-vmbo.js",
+        "n": 4,
+        "laatst": "2026-09-25T11:15:48.255621+00:00",
+        "schermen": [
+          "sc-quiz",
+          "sc-foutenboek"
+        ]
+      },
+      {
+        "bericht": "bron kon niet laden: /foutenboek-uitleg-vmbo.js",
+        "n": 4,
+        "laatst": "2026-09-25T11:15:48.436153+00:00",
+        "schermen": [
+          "sc-quiz",
+          "sc-foutenboek"
+        ]
+      },
+      {
+        "bericht": "getMyCurrentAvatar is not defined",
+        "n": 1,
+        "laatst": "2026-09-19T04:32:06.052985+00:00",
+        "schermen": [
+          "sc-welcome"
+        ]
+      },
+      {
+        "bericht": "Uncaught TypeError: Cannot read properties of null (reading 'id')",
+        "n": 1,
+        "laatst": "2026-09-20T17:28:37.191759+00:00",
+        "schermen": [
+          "sc-detail"
+        ]
+      }
+    ]
+  },
+  "instagram": {
+    "gekoppeld": false
+  },
+  "content": {
+    "gepland": 0,
+    "geplaatst": 0,
+    "gemist": 0,
+    "mislukt": 0,
+    "komend": []
+  },
+  "seo": {
+    "paginas": 171,
+    "indexnow": true
+  }
+}

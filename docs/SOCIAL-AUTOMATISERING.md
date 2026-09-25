@@ -7,9 +7,10 @@ de content-PR bekijken en mergen.
 
 | Wanneer | Wie | Wat |
 |---|---|---|
+| Dagelijks 06:30 | GitHub Action **Social · cijfers vastleggen** | Gebruik, Instagram-inzichten en contentstatus in `social/stats/` |
 | Elke push naar `main` | GitHub Action **SEO** | Sitemap opnieuw afleiden uit de pagina's, gewijzigde pagina's via IndexNow melden bij Bing/ChatGPT-search |
 | Donderdag 08:00 | GitHub Action **Social · content maken** | Posts van volgende week maken en als PR klaarzetten |
-| Donderdag 10:00 | **Jarvis** (Claude-routine) | PR nalezen en verbeteren, cijfers verzamelen, weekrapport maken |
+| Donderdag 10:00 | **Jarvis** (Claude-routine) | PR nalezen en verbeteren, cijfers verifiëren, [weekbriefing](https://claude.ai/artifact/Q5Xv1UPkC7EJLATN4R3vab) bijwerken |
 | Jij, wanneer het uitkomt | Jij | Weekrapport lezen, PR mergen (= goedkeuren) |
 | Ma 07:45 · ma 17:30 · wo 17:30 · vr 17:00 · zo 19:30 | GitHub Action **Social · publiceren** | Goedgekeurde posts plaatsen op Instagram |
 | 1e van de maand | GitHub Action **Social · token verversen** | Instagram-token vernieuwen voordat het verloopt |
@@ -18,6 +19,8 @@ Elke week: aftellen (post + story), een examenvraag-carrousel, een
 begrippen-carrousel en een faceless reel. De reel is een opname van de echte
 app. Alles komt uit de app-data; er wordt niets verzonnen. Zie
 [`social/STIJLGIDS.md`](../social/STIJLGIDS.md).
+
+Hoe Jarvis werkt staat in [`social/JARVIS.md`](../social/JARVIS.md).
 
 ## Eenmalig instellen (± 20 minuten)
 

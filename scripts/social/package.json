@@ -6,7 +6,8 @@
   "scripts": {
     "genereer": "node generate.mjs",
     "publiceer": "node publish.mjs",
-    "stats": "node stats.mjs"
+    "stats": "node stats.mjs",
+    "rapport": "node rapport.mjs"
   },
   "dependencies": {
     "playwright": "1.56.1"
