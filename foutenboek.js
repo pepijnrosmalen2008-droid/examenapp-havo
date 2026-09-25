@@ -112,9 +112,14 @@ function fbRecord(q, ok, chosenText) {
 }
 
 // ─── VERRIJKING (lazy) ───
+// Alleen niveaus waarvoor de gegenereerde bestanden bestaan (knowledge-<niveau>.js
+// is nu alleen er voor havo). Voor de rest niet eens proberen: dat gaf elke keer
+// een 404 + js_error-melding (VWO/VMBO), terwijl de functie toch stil degradeert.
+var FB_NIVEAUS_MET_DATA = { havo: true };
+function _fbHeeftData() { return !!FB_NIVEAUS_MET_DATA[typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : 'havo']; }
 var _fbMetaState = 0; // 0=niet geladen, 1=laden, 2=klaar
 function ensureFbMeta(cb) {
-  if (_fbMetaState === 2 || typeof FB_META !== 'undefined') { _fbMetaState = 2; cb && cb(); return; }
+  if (_fbMetaState === 2 || typeof FB_META !== 'undefined' || !_fbHeeftData()) { _fbMetaState = 2; cb && cb(); return; }
   if (_fbMetaState === 1) { setTimeout(() => ensureFbMeta(cb), 120); return; }
   _fbMetaState = 1;
   const s = document.createElement('script');
@@ -128,7 +133,7 @@ function ensureFbMeta(cb) {
 // gedraaid + gecommit. Ontbreekt hij, dan degradeert alles stil naar 2a.
 var _fbUitState = 0; // 0=niet geprobeerd, 1=laden, 2=klaar/faalde
 function ensureFbUitleg(cb) {
-  if (_fbUitState === 2 || typeof FB_UITLEG !== 'undefined') { _fbUitState = 2; cb && cb(); return; }
+  if (_fbUitState === 2 || typeof FB_UITLEG !== 'undefined' || !_fbHeeftData()) { _fbUitState = 2; cb && cb(); return; }
   if (_fbUitState === 1) { setTimeout(() => ensureFbUitleg(cb), 120); return; }
   _fbUitState = 1;
   const s = document.createElement('script');
