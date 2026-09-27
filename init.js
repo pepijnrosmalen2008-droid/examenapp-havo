@@ -1111,3 +1111,14 @@ document.addEventListener('click', function (e) {
     try { if (typeof haptic === 'function') haptic(7); } catch (_) {}
   }
 }, { passive: true });
+
+// ═══════ ARCADE (lazy) ═══════
+// De minigames staan in arcade.js en laden pas als je de Arcade opent.
+function arcadeOpen(){
+  if(window._arcLoaded&&typeof openArcade==='function'){openArcade();return;}
+  if(window._arcLoading)return;window._arcLoading=true;
+  const s=document.createElement('script');s.src='/arcade.js';
+  s.onload=()=>{window._arcLoaded=true;window._arcLoading=false;try{openArcade();}catch(e){}};
+  s.onerror=()=>{window._arcLoading=false;try{showToast('De Arcade kon niet laden. Controleer je verbinding.');}catch(e){}};
+  document.head.appendChild(s);
+}

@@ -47,6 +47,7 @@ Load order matters: `data.js`/`state.js` define globals the later modules use. `
 | `league.js` | Weekwedstrijd/divisies (`sc-league`): weekXP via `addXP`, promotie/degradatie, realistische bot-cohort per week |
 | `schedule.js` | `EXAM_SCHEDULE[]`, `renderSchedule()`, grade calculators, flashcards + SM-2 |
 | `v4.js` | Misc v4 additions |
+| `arcade.js` | **Arcade** (lazy geladen via `arcadeOpen()` in init.js): zes minigames op echte content (bom, boss, risico, zwakke plek, sorteer, val). XP via `addXP()` (dus ook week-XP), antwoorden via `logQuestion()`. Reeksen voor Sorteer staan in `SORT_REEKS`, formulesommen in `BOM_REL`. |
 | `init.js` | Intro modal, tutorial, level select, **INIT (startup)**, bottom nav, multiplayer quiz, flickering grid, push notifications, PWA install banner |
 | `examens.js` / `ce_data.js` | Exam PDF / CE question data |
 | `admin.html` | Standalone admin analytics dashboard (own Supabase client) |
