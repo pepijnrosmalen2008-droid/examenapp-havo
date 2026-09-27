@@ -422,8 +422,20 @@ function leagueSyncAndFetch(force){
 
 // ── WEEK-CEREMONIE: de wekelijkse promotie/degradatie-onthulling (één keer). ──
 var _lgCeremonyDone=false;
+// De uitslag hoort bij één niveau (havo/vwo/vmbo hebben elk een eigen divisie),
+// dus hij verschijnt alleen als de niveau-home écht open staat. Op het
+// niveau-kiezen-scherm of een ander scherm wacht hij; show('sc-home') probeert
+// het daarna opnieuw.
+function _lgOpHome(){
+  try{
+    if(document.documentElement.classList.contains('level-welcome'))return false;
+    const h=document.getElementById('sc-home');
+    return !!(h&&h.classList.contains('on'));
+  }catch(e){return false;}
+}
 function _lgMaybeCeremony(){
   if(_lgCeremonyDone)return;
+  if(!_lgOpHome())return;
   // Niet tonen op het niveau-kiezen-scherm: de divisie-uitslag hoort pas op de
   // niveaupagina (home) te verschijnen, niet nog vóór een niveau gekozen is.
   // De vlag blijft ongezet, zodat de ceremonie later op de home wél komt.
@@ -434,8 +446,10 @@ function _lgMaybeCeremony(){
   setTimeout(()=>{
     // Extra check: als de gebruiker binnen die 600ms tóch naar het niveau-kiezen-
     // scherm ging, niet tonen (en de vlag terugzetten voor een latere kans).
-    if(document.documentElement.classList.contains('level-welcome')){_lgCeremonyDone=false;return;}
-    try{showLeagueCeremony(L.result);}catch(e){}
+    if(!_lgOpHome()){_lgCeremonyDone=false;return;}
+    const L2=getLeague();                               // niveau kan intussen gewisseld zijn
+    if(!L2||!L2.result||L2.result.seen){_lgCeremonyDone=false;return;}
+    try{showLeagueCeremony(L2.result);}catch(e){}
   },600);
 }
 // Weekafsluiting-recap: toont prominent hoeveelste je bent geworden + de uitkomst
@@ -471,7 +485,7 @@ function showLeagueCeremony(r){
     <div class="lgc-kicker">${kicker}</div>
     <div class="lgc-recap-lbl">Je eindigde vorige week</div>
     <div class="lgc-rankbig">${medal?'<span class="lgc-medal" aria-hidden="true">'+medal+'</span>':''}#${r.rank} <span class="lgc-rankof">van ${total}</span></div>
-    <div class="lgc-recap-meta">${lastDiv.naam}-divisie · <b>${r.weekXP||0} XP</b> deze week</div>
+    <div class="lgc-recap-meta">${_lgNivLabel()} · ${lastDiv.naam}-divisie · <b>${r.weekXP||0} XP</b></div>
     <div class="lgc-title">${title}</div>
     <div class="lgc-sub">${sub}</div>
     ${hasChest
@@ -487,6 +501,7 @@ function showLeagueCeremony(r){
   else if(dn){try{playSound('complete');}catch(e){}}
   else{try{playSound('complete');}catch(e){}try{haptic&&haptic([30,20,50]);}catch(e){}}
 }
+function _lgNivLabel(){const l=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';return l==='vwo'?'VWO':l==='vmbo'?'VMBO':'HAVO';}
 function _lgCeremonyClose(go){
   const el=document.getElementById('lg-ceremony');
   if(el){el.classList.remove('show');setTimeout(()=>el.remove(),260);}
@@ -497,7 +512,8 @@ function _lgCeremonyClose(go){
 function _lgFinishBanner(rows){
   if(_lgDaysLeft()>1)return '';
   const me=rows.find(r=>r.me);if(!me)return '';
-  const promo=me.rank<=LEAGUE_PROMO, demote=me.rank>(rows.length-LEAGUE_DEMOTE);
+  const d=(getLeague()||{}).division||0;
+  const promo=d!==LEAGUE_LEGEND&&me.rank<=LEAGUE_PROMO, demote=d>0&&me.rank>(rows.length-LEAGUE_DEMOTE);
   if(!promo&&!demote)return '';
   const txt=promo
     ?`Laatste dag! Je staat <b>#${me.rank}</b> in de promotiezone - houd 'm vast.`
@@ -513,7 +529,7 @@ function renderLeagueHome(){
   const div=LEAGUE_DIVISIONS[L.division];
   const rows=_lgStandings(L);
   const me=rows.find(r=>r.me)||{rank:LEAGUE_COHORT,xp:0};
-  const promo=me.rank<=LEAGUE_PROMO, demote=me.rank>(rows.length-LEAGUE_DEMOTE);
+  const promo=L.division!==LEAGUE_LEGEND&&me.rank<=LEAGUE_PROMO, demote=L.division>0&&me.rank>(rows.length-LEAGUE_DEMOTE);
   const zone=promo?'<span class="lg-zone lg-zone-up">Promotiezone</span>':(demote?'<span class="lg-zone lg-zone-dn">Degradatiezone</span>':'<span class="lg-zone lg-zone-safe">Veilig</span>');
   // Promo/degradatie krijgt de ceremonie; alleen "gelijk gebleven" toont hier een banner.
   const res=(L.result&&!L.result.seen&&!L.result.promoted&&!L.result.relegated)?_lgResultBanner(L.result):'';
@@ -684,53 +700,99 @@ function _lgRankUpClose(go){
 }
 
 // ── Volledig bord ──
+// Herontwerp in Apple-stijl: grote titel, één rustige hero met je plek, een
+// divisieladder, beloningen als gegroepeerde lijst en een ranglijst als één
+// inset-lijst met haarlijnen. Jouw rij blijft in beeld (sticky) tijdens scrollen.
 function openLeague(){show('sc-league');renderLeague();try{leagueSyncAndFetch(true);}catch(e){}}
+const _LG_KORT=['B','Z','G','P','D','L'];
+function _lgMedal(d,size,prog){
+  const div=LEAGUE_DIVISIONS[d]||LEAGUE_DIVISIONS[0];
+  const id='lgm'+d+'_'+size;
+  const r=size/2, ring=prog!=null;
+  const R=ring?r-3:r, inner=R-(ring?5:2);
+  const C=2*Math.PI*(r-2);
+  const crown=d===LEAGUE_LEGEND
+    ? `<path d="M${r-inner*.5} ${r+inner*.28}h${inner}l${inner*.08}-${inner*.62}-${inner*.3} ${inner*.26}-${inner*.28}-${inner*.44}-${inner*.28} ${inner*.44}-${inner*.3}-${inner*.26}z" fill="#fff" opacity=".95"/>`
+    : `<text x="${r}" y="${r}" text-anchor="middle" dominant-baseline="central" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="800" font-size="${inner*0.95}" fill="#fff">${_LG_KORT[d]}</text>`;
+  return `<svg class="lgx-medal" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" aria-hidden="true">
+    <defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="color-mix(in srgb,${div.kleur} 55%,#fff)"/><stop offset=".55" stop-color="${div.kleur}"/><stop offset="1" stop-color="color-mix(in srgb,${div.kleur} 70%,#000)"/></linearGradient></defs>
+    ${ring?`<circle cx="${r}" cy="${r}" r="${r-2}" fill="none" stroke="color-mix(in srgb,${div.kleur} 18%,transparent)" stroke-width="3"/>
+    <circle cx="${r}" cy="${r}" r="${r-2}" fill="none" stroke="${div.kleur}" stroke-width="3" stroke-linecap="round" stroke-dasharray="${(C*prog).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 ${r} ${r})"/>`:''}
+    <circle cx="${r}" cy="${r}" r="${R-3}" fill="url(#${id})"/>
+    <circle cx="${r}" cy="${r}" r="${inner}" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"/>
+    <ellipse cx="${r}" cy="${r-R*.45}" rx="${R*.55}" ry="${R*.22}" fill="rgba(255,255,255,.18)"/>
+    ${crown}</svg>`;
+}
+function _lgNf(n){try{return Number(n||0).toLocaleString('nl-NL');}catch(e){return String(n||0);}}
 function renderLeague(){
   const box=document.getElementById('league-body');
   if(!box)return;
   const L=ensureLeague();
-  const div=LEAGUE_DIVISIONS[L.division];
+  const d=L.division||0;
+  const div=LEAGUE_DIVISIONS[d];
   const rows=_lgStandings(L);
-  const next=LEAGUE_DIVISIONS[L.division+1];
-  const prev=LEAGUE_DIVISIONS[L.division-1];
-  const isLegend=L.division===LEAGUE_LEGEND;
-  const daysTxt=`Nog ${_lgDaysLeft()} dag${_lgDaysLeft()===1?'':'en'}`;
-  const heroSub=isLegend
-    ? `${daysTxt} · 👑 het ultieme doel - havo &amp; vwo strijden hier sámen · onderste ${LEAGUE_DEMOTE} degradeert`
-    : `${daysTxt} · top ${LEAGUE_PROMO} promoveert${next?' naar '+next.naam:''}${prev?', onderste '+LEAGUE_DEMOTE+' degradeert':''}`;
-  const hdr=`
-    <div class="lg-hero lg-hero-compact${isLegend?' lg-hero-legend':''}" style="--lg-col:${div.kleur}">
-      <div class="lg-hero-badge no-ico">${div.ic}</div>
-      <div class="lg-hero-txt">
-        <div class="lg-hero-name">${div.naam}-divisie</div>
-        <div class="lg-hero-sub">${heroSub}</div>
-      </div>
-    </div>`;
-  // Te winnen deze week (compacte strip): kist-beloningen per plek.
-  const coin=(typeof _ico==='function')?_ico('coin',13):'🪙';
-  const rw1=_lgPlacementReward(1,L.division), rw3=_lgPlacementReward(3,L.division), rw7=_lgPlacementReward(LEAGUE_PROMO,L.division);
-  const rewardsRow=isLegend
-    ? `<div class="lg-rewards"><span class="lg-rewards-lbl">🎁 Kisten</span>
-        <span class="lg-rw lg-rw-legend"><b>Top&nbsp;3</b>${rw3}+${coin}item&nbsp;+&nbsp;power</span>
-        <span class="lg-rw lg-rw-blue"><b>Top&nbsp;${LEAGUE_PROMO}</b>${rw7}+${coin}power</span></div>`
-    : `<div class="lg-rewards"><span class="lg-rewards-lbl">🎁 Kisten</span>
-        <span class="lg-rw lg-rw-gold"><b>Top&nbsp;3</b>${rw3}+${coin}item</span>
-        <span class="lg-rw lg-rw-blue"><b>Top&nbsp;${LEAGUE_PROMO}</b>${rw7}+${coin}power</span></div>`;
-  // Onopgehaalde week-kist? Prominente open-knop. Anders: recap-knop vorige week.
+  const me=rows.find(r=>r.me)||{rank:rows.length,xp:0};
+  const next=LEAGUE_DIVISIONS[d+1];
+  const isLegend=d===LEAGUE_LEGEND;
+  const promo=!isLegend&&me.rank<=LEAGUE_PROMO, demote=d>0&&me.rank>(rows.length-LEAGUE_DEMOTE);
+  const dagen=_lgDaysLeft();
+  const dagTxt=dagen<=1?'Laatste dag':`Nog ${dagen} dagen`;
+  // Afstand tot het volgende doel: promotiegrens, of #1 in Legende / als je er al bent.
+  let doelLbl,doelVal;
+  const at=k=>{const o=rows.filter(r=>!r.me);return o[k-1]?o[k-1].xp:0;};
+  if(!isLegend&&!promo){doelLbl='Tot promotie';doelVal=Math.max(1,at(LEAGUE_PROMO)-me.xp+1);}
+  else if(me.rank>1){doelLbl='Tot plek '+(me.rank-1);doelVal=Math.max(1,rows[me.rank-2].xp-me.xp+1);}
+  else{doelLbl='Voorsprong';doelVal=Math.max(0,me.xp-(rows[1]?rows[1].xp:0));}
+  const zone=promo?['up',isLegend?'Top 7':'Promotiezone']:(demote?['dn','Degradatiezone']:['safe','Veilig']);
+  const ladder=LEAGUE_DIVISIONS.map((x,i)=>`<li class="${i<d?'lgx-l-done':i===d?'lgx-l-now':''}" style="--c:${x.kleur}">${_lgMedal(i,i===d?34:24)}<span>${x.naam}</span></li>`).join('');
+  const coin=(typeof _ico==='function')?_ico('coin',15):'';
+  const rw1=_lgPlacementReward(1,d), rw3=_lgPlacementReward(3,d), rw7=_lgPlacementReward(LEAGUE_PROMO,d);
+  const rewards=[
+    ['🏆','Plek 1',`Gouden kist · ${isLegend?'item + power-up':'zeldzaam item'}`,rw1],
+    ['🥇','Top 3',`Gouden kist · ${isLegend?'item + power-up':'zeldzaam item'}`,rw3],
+    ['🎁','Top '+LEAGUE_PROMO,'Blauwe kist · power-up',rw7],
+  ];
+  if(!isLegend&&next)rewards.push(['⬆️','Promotie naar '+next.naam,'Bonus bovenop je plek',_lgPromoReward(d+1)]);
   const chestUnclaimed=!!(L.result&&L.result.chest&&!L.result.chest.claimed);
-  let topBtn='';
+  let topRow='';
   if(chestUnclaimed){
     const tier=L.result.chest.tier;
-    const btnCls=tier==='legend'?'lg-chest-legend':(tier==='gold'?'lg-chest-gold':'lg-chest-blue');
-    const em=tier==='legend'?'👑':'🎁';
-    const sub=tier==='legend'?'Legende · munten + item + power-up'
-      :(tier==='gold'?'Top-3 · munten + zeldzaam item':'Top-7 · munten + power-up');
-    const label=tier==='legend'?'Open je Legende-kist':'Open je week-kist';
-    topBtn=`<button class="lg-chest-btn ${btnCls}" onclick="_lgOpenRewardChest()"><span class="lg-chest-em">${em}</span><span class="lg-chest-tx">${label}<small>${sub}</small></span><span class="lg-recap-arr">→</span></button>`;
+    const sub=tier==='legend'?'Legende · munten, item en power-up':(tier==='gold'?'Top 3 · munten en een zeldzaam item':'Top 7 · munten en een power-up');
+    topRow=`<button class="lgx-row lgx-cta lgx-cta-${tier}" onclick="_lgOpenRewardChest()"><span class="lgx-ic">${tier==='legend'?'👑':'🎁'}</span><span class="lgx-rt"><b>Open je week-kist</b><small>${sub}</small></span><span class="lgx-chev">›</span></button>`;
   }else if(L.result){
-    topBtn=`<button class="lg-recap-btn" onclick="_lgShowRecap()"><span class="lg-recap-ic">📊</span>Recap vorige week - je werd <b>#${L.result.rank}</b> van ${L.result.total||LEAGUE_COHORT}<span class="lg-recap-arr">→</span></button>`;
+    topRow=`<button class="lgx-row" onclick="_lgShowRecap()"><span class="lgx-ic lgx-ic-g">📊</span><span class="lgx-rt"><b>Vorige week: #${L.result.rank} van ${L.result.total||LEAGUE_COHORT}</b><small>${LEAGUE_DIVISIONS[L.result.oldDiv]?LEAGUE_DIVISIONS[L.result.oldDiv].naam:''}-divisie · ${_lgNf(L.result.weekXP)} XP</small></span><span class="lgx-chev">›</span></button>`;
   }
-  box.innerHTML=hdr+topBtn+rewardsRow+leagueRushChip()+_lgFinishBanner(rows)+_lgListWithDividers(rows);
+  const weekProg=_lgWeekProgress();
+  box.innerHTML=`
+  <div class="lgx" style="--lg-col:${div.kleur}">
+    <header class="lgx-head">
+      <div class="lgx-eyebrow">${_lgNivLabel()} · ${dagTxt}</div>
+      <h1 class="lgx-title">${div.naam}-divisie</h1>
+    </header>
+    <section class="lgx-hero">
+      <div class="lgx-hero-top">
+        <div class="lgx-medal-wrap" title="Week voor ${Math.round(weekProg*100)}% voorbij">${_lgMedal(d,88,weekProg)}</div>
+        <div class="lgx-rankbox">
+          <div class="lgx-rank"><span class="lgx-hash">#</span>${me.rank}<span class="lgx-of">van ${rows.length}</span></div>
+          <span class="lgx-zone lgx-zone-${zone[0]}">${zone[1]}</span>
+        </div>
+      </div>
+      <div class="lgx-metrics">
+        <div><small>Deze week</small><b>${_lgNf(me.xp)}<i>XP</i></b></div>
+        <div><small>${doelLbl}</small><b>${_lgNf(doelVal)}<i>XP</i></b></div>
+        <div><small>Week eindigt</small><b>${dagen<=1?'vandaag':dagen+'<i>dagen</i>'}</b></div>
+      </div>
+      <ol class="lgx-ladder" aria-label="Divisies">${ladder}</ol>
+    </section>
+    ${leagueRushChip()}${_lgFinishBanner(rows)}
+    ${topRow?`<div class="lgx-group">${topRow}</div>`:''}
+    <div class="lgx-group-h">Te winnen deze week</div>
+    <div class="lgx-group">${rewards.map(r=>`<div class="lgx-row"><span class="lgx-ic">${r[0]}</span><span class="lgx-rt"><b>${r[1]}</b><small>${r[2]}</small></span><span class="lgx-coins">${coin}${r[3]}</span></div>`).join('')}</div>
+    <div class="lgx-group-h"><span>Ranglijst</span><span>${rows.length} spelers</span></div>
+    ${_lgListWithDividers(rows)}
+    <details class="lgx-help"><summary>Hoe werkt de weekwedstrijd?</summary>
+      <p>Alles wat je oefent levert XP op: snelle quizzen, oude examens, proefexamens en de simulatietoets. Elke maandag begint een nieuwe week. ${isLegend?'Legende is de hoogste divisie: havo, vwo en vmbo strijden hier samen.':`De top ${LEAGUE_PROMO} promoveert${next?' naar '+next.naam:''}`}${d>0?`, de onderste ${LEAGUE_DEMOTE} zakken een divisie.`:'.'} Elke dag is er één uur dubbele XP.</p></details>
+  </div>`;
 }
 // Weekafsluiting-recap opnieuw tonen (vanuit de divisie-pagina).
 function _lgShowRecap(){
@@ -740,21 +802,18 @@ function _lgShowRecap(){
   try{showLeagueCeremony(L.result);}catch(e){}
 }
 function _lgListWithDividers(rows){
-  let html='<div class="lg-list">';
+  const n=rows.length, heeftDemote=(ensureLeague().division||0)>0;
+  let html='<ol class="lgx-board">';
   rows.forEach(r=>{
-    const promo=r.rank<=LEAGUE_PROMO, demote=r.rank>(rows.length-LEAGUE_DEMOTE);
-    if(r.rank===LEAGUE_PROMO+1 && rows.length>LEAGUE_PROMO) html+=`<div class="lg-divider lg-divider-up"><span>▲ promotie&nbsp;/&nbsp;blijft</span></div>`;
-    if(r.rank===rows.length-LEAGUE_DEMOTE+1 && rows.length>LEAGUE_DEMOTE) html+=`<div class="lg-divider lg-divider-dn"><span>▼ degradatiezone</span></div>`;
-    const zoneCls=promo?'lg-row-up':(demote?'lg-row-dn':'');
-    const rk=r.rank===1?'🥇':r.rank===2?'🥈':r.rank===3?'🥉':('<span class="lg-rk">'+r.rank+'</span>');
-    html+=`<div class="lg-row ${zoneCls}${r.me?' lg-row-me':''}">
-      <div class="lg-row-rank no-ico">${rk}</div>
-      <div class="lg-row-av no-ico">${_lgAvatar(r)}</div>
-      <div class="lg-row-name">${_lgEsc(r.naam)}${r.me?' <span class="lg-you">jij</span>':''}</div>
-      <div class="lg-row-xp">${r.xp}<span class="lg-xp-u"> XP</span></div>
-    </div>`;
+    const promo=r.rank<=LEAGUE_PROMO, demote=heeftDemote&&r.rank>(n-LEAGUE_DEMOTE);
+    if(r.rank===LEAGUE_PROMO+1&&n>LEAGUE_PROMO) html+=`<li class="lgx-sep lgx-sep-up" aria-hidden="true"><span>Promotiegrens</span></li>`;
+    if(heeftDemote&&r.rank===n-LEAGUE_DEMOTE+1&&n>LEAGUE_DEMOTE) html+=`<li class="lgx-sep lgx-sep-dn" aria-hidden="true"><span>Degradatiegrens</span></li>`;
+    const rk=r.rank<=3?`<span class="lgx-pos lgx-pos-${r.rank}">${r.rank}</span>`:`<span class="lgx-pos${promo?' lgx-pos-up':demote?' lgx-pos-dn':''}">${r.rank}</span>`;
+    html+=`<li class="lgx-p${r.me?' lgx-me':''}"${r.me?' aria-current="true"':''}>
+      ${rk}<span class="lgx-av no-ico">${_lgAvatar(r)}</span>
+      <span class="lgx-nm">${_lgEsc(r.naam)}${r.me&&r.naam!=='Jij'?'<em>jij</em>':''}</span>
+      <span class="lgx-xp">${_lgNf(r.xp)}<i>XP</i></span></li>`;
   });
-  html+='</div>';
-  return html;
+  return html+'</ol>';
 }
 function _lgEsc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}

@@ -79,6 +79,7 @@ async function obDoRegister(){
     if(data.user){currentUser=data.user;await cloudSet('profiel',prof);}
     obFinish(true);
     if(!data.session)showToast('✓ Account aangemaakt! Controleer je inbox om je e-mail te bevestigen.','#4ade80',5000);
+    try{ if(typeof grantRegGift==='function') setTimeout(grantRegGift,1200); }catch(e){}
   }catch(e){
     errEl.textContent=authErrMsg(e.message);errEl.style.display='block';
   }finally{btn.disabled=false;btn.textContent='Account aanmaken';}
@@ -370,6 +371,7 @@ try{applyTheme();}catch(e){}
 try{reconcileCoins();applyStreakFreezes();}catch(e){}
 try{ensureLeague();}catch(e){}
 try{renderEconHome();renderLeagueHome();}catch(e){}
+try{renderRegHome();}catch(e){}
 renderFavHome();
 renderStreak();
 renderXPHome();

@@ -100,7 +100,7 @@ function simStart(){
   const navBadge=document.getElementById('sim-mode-nav-badge');
   if(navBadge){navBadge.className='sim-mode-indicator '+m.badgeCls;navBadge.innerHTML=m.icon+' '+m.label;navBadge.style.display='';}
 
-  SIM.idx=0;SIM.answers=[];SIM.started=true;
+  SIM.idx=0;SIM.answers=[];SIM.started=true;SIM._xpDone=false;
   if(m.tpq>0){
     SIM.endTime=Date.now()+SIM.duration*1000;
     if(SIM.timer)clearInterval(SIM.timer);
@@ -213,6 +213,11 @@ function simNextQ(){
 
 function simFinish(){
   if(SIM.timer){clearInterval(SIM.timer);SIM.timer=null;}
+  if(!SIM._xpDone){
+    SIM._xpDone=true;
+    const _ok=SIM.answers.reduce((s,a)=>s+(a.pts??(a.correct?1:0)),0);
+    if(SIM.answers.length) _examXP(_ok*12+(SIM.answers.length>=10?60:0),'simulatietoets');
+  }
   document.getElementById('sim-quiz').style.display='none';
   document.getElementById('sim-timer-chip').style.display='none';
   document.getElementById('sim-result').style.display='';
@@ -276,6 +281,34 @@ function simExit(){
 
 // ═══════ EXAMEN MODUS ═══════
 let EX = {}; // examen state
+
+// ── Week-XP voor examens ────────────────────────────────────────────────
+// Oude examens, proefexamens en de simulatietoets tellen mee voor de
+// weekwedstrijd, net als de snelle quiz. addXP() telt het ook in je divisie.
+// Eén melding per keer, gebundeld, zodat nakijken niet 20 toasts oplevert.
+let _exXpTeller = 0, _exXpT = null;
+function _examXP(n, waarom){
+  n = Math.round(n||0); if(n<=0) return;
+  try{ if(typeof addXP==='function') addXP(n); }catch(e){}
+  _exXpTeller += n;
+  clearTimeout(_exXpT);
+  _exXpT = setTimeout(()=>{
+    const tot=_exXpTeller; _exXpTeller=0;
+    try{ if(typeof floatXP==='function') floatXP(tot); }catch(e){}
+    try{ if(typeof showToast==='function') showToast(`+${tot} XP voor de weekwedstrijd${waarom?' · '+waarom:''}`,'#f59e0b',2600); }catch(e){}
+    try{ if(typeof renderLeagueHome==='function') renderLeagueHome(); }catch(e){}
+    try{ if(typeof updateProfileNav==='function') updateProfileNav(); }catch(e){}
+  }, 900);
+}
+// Punten die bij een examen al XP opleverden; alleen de groei telt (herbeoordelen
+// levert dus niet opnieuw XP op). 15 XP per scorepunt + 100 voor het afmaken.
+const EX_XP_PER_PT = 15, EX_XP_KLAAR = 100;
+function _exXpBij(){
+  if(!EX || !EX.examen) return;
+  const betaald = EX._xpPts || 0;
+  const nu = EX.selfPts || 0;
+  if(nu > betaald){ EX._xpPts = nu; _examXP((nu-betaald)*EX_XP_PER_PT, 'examen'); }
+}
 
 function startExamen(){
   // Zoek examen voor huidig vak + niveau
@@ -722,6 +755,10 @@ function examenFinish(){
     }
   });
   _exBuildResultList();
+  EX._xpPts = EX._xpPts || 0;
+  if(!EX._xpKlaar && Object.keys(EX.answers||{}).some(k=>String(EX.answers[k]||'').trim())){
+    EX._xpKlaar = true; _examXP(EX_XP_KLAAR, 'examen afgemaakt');
+  }
   _exUpdateGrade();
   document.getElementById('sc-examen').scrollTo(0,0);
   // Badge: eerste echt examen afgemaakt (niet in de afleidingsvrije examenmodus)
@@ -844,6 +881,7 @@ function _exUpdateGrade(){
   document.getElementById('ex-score-bar-fill').style.width = (pct*100)+'%';
   document.getElementById('ex-self-total').innerHTML =
     `Gescoord: <strong>${EX.selfPts} / ${maxPts}</strong> punten · ${EX.gradedCount}/${EX.examen.vragen.length} beoordeeld`;
+  if(EX.phase==='result') _exXpBij();
 }
 
 // Splitst een rubric ("1 punt: ... 1 punt: ...") in losse deelpunten, zodat de

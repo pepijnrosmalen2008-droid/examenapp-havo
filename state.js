@@ -117,6 +117,9 @@ function show(id,_noHash){
   if(id==='sc-privacy'&&prev)window._privacyFrom=prev.id;
   // Stop quiz timer wanneer de gebruiker de quiz verlaat
   if(prev&&prev.id==='sc-q'&&id!=='sc-q')clearInterval(ST.timer);
+  // Quiz verlaten zonder resultaatscherm (bv. via de onderbalk): verdiende XP
+  // blijft staan en telt mee voor de weekwedstrijd.
+  if(prev&&prev.id==='sc-quiz'&&id!=='sc-quiz'&&id!=='sc-res'&&(ST.xpThisRound||0)>0){try{if(typeof _bankQuizXP==='function')_bankQuizXP();}catch(e){}}
   document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));
   const _sc=document.getElementById(id);
   _sc.classList.add('on');
@@ -149,7 +152,7 @@ function show(id,_noHash){
     const dlist=document.getElementById('dlist');
     if(!dlist||!dlist.children.length){try{openVak(ST.vak.id,true);}catch(e){}return;}
   }
-  if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{renderFeatDisc();}catch(e){}try{renderKlasHome();}catch(e){}
+  if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{if(typeof renderRegHome==='function')renderRegHome();}catch(e){}try{setTimeout(()=>{if(typeof _lgMaybeCeremony==='function')_lgMaybeCeremony();},700);}catch(e){}try{renderFeatDisc();}catch(e){}try{renderKlasHome();}catch(e){}
     try{setTimeout(()=>{if(document.getElementById('sc-home')?.classList.contains('on')&&!document.querySelector('#ctuto-overlay[style*="block"]')&&typeof vonkOnboard==='function')vonkOnboard('home');},2000);}catch(e){}
     try{setTimeout(()=>{if(document.getElementById('sc-home')?.classList.contains('on')&&localStorage.getItem('slagio_vonk_intro_done')&&typeof vonkDagmissie==='function')vonkDagmissie();},2600);}catch(e){}}
   if(id==='sc-schedule'&&localStorage.getItem('slagio_plan_generated')&&!document.getElementById('studieplan-content')?.children.length){try{renderStudieplan();}catch(e){}}

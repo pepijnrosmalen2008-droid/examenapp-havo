@@ -1341,6 +1341,17 @@ document.addEventListener('click',function(e){
 },true);
 
 // ═══════ QUIZ VERLATEN (exit interstitial) ═══════
+// XP die al verdiend is, blijft verdiend: ook bij tussentijds stoppen telt hij
+// mee voor je level en de weekwedstrijd. Oude examens maak je vaak maar deels,
+// en een losse examenvraag uit de picker werd anders nooit uitgekeerd.
+function _bankQuizXP(){
+  const n=Math.round(ST.xpThisRound||0); if(n<=0) return;
+  ST.xpThisRound=0;
+  try{ addXP(n); }catch(e){}
+  try{ if(typeof saveQuizDraft==='function' && ST.vragen && ST.idx<ST.vragen.length) saveQuizDraft(); }catch(e){}
+  try{ showToast(`+${n} XP bewaard voor de weekwedstrijd`,'#f59e0b',2400); }catch(e){}
+  try{ renderLeagueHome(); updateProfileNav(); }catch(e){}
+}
 function stopQ(){
   clearInterval(ST.timer);
   // Toon bevestigingsdialoog alleen als quiz bezig is
@@ -1348,6 +1359,7 @@ function stopQ(){
     _showQuitDialog();
   }else{
     _surgeActive=false;_surgeLeft=0;_removeSurgeBadge();
+    _bankQuizXP();
     show('sc-detail');
   }
 }
@@ -1365,11 +1377,11 @@ function _showQuitDialog(){
     <div class="quit-progress-row">
       <div class="quit-stat"><div class="quit-stat-val">${pct}%</div><div class="quit-stat-lbl">Score</div></div>
       <div class="quit-stat"><div class="quit-stat-val">${tot}/${ST.vragen.length}</div><div class="quit-stat-lbl">Vragen</div></div>
-      ${xpSoFar>0?`<div class="quit-stat"><div class="quit-stat-val">+${xpSoFar}</div><div class="quit-stat-lbl">XP gewonnen</div></div>`:''}
+      ${xpSoFar>0?`<div class="quit-stat"><div class="quit-stat-val">+${xpSoFar}</div><div class="quit-stat-lbl">XP verdiend</div></div>`:''}
     </div>
     ${combo>=2?`<div class="quit-combo-warn">🔥 Je verliest je ${combo}× combo als je stopt!</div>`:''}
     <div style="display:flex;gap:10px">
-      <button onclick="try{_flushQBatch();trackEvent('quiz_abandoned',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,gestopt_bij:ST.idx,totaal:ST.vragen?.length,score_zo_ver:ST.score});}catch(e){}this.closest('.quit-overlay').remove();_surgeActive=false;_surgeLeft=0;_removeSurgeBadge();show('sc-detail')" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
+      <button onclick="try{_flushQBatch();trackEvent('quiz_abandoned',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,gestopt_bij:ST.idx,totaal:ST.vragen?.length,score_zo_ver:ST.score});}catch(e){}this.closest('.quit-overlay').remove();_surgeActive=false;_surgeLeft=0;_removeSurgeBadge();_bankQuizXP();show('sc-detail')" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
       <button onclick="this.closest('.quit-overlay').remove();if(ST.mode==='snel'&&ST.tijd>0)startTimer(ST.tijd)" style="flex:2;padding:13px;background:var(--or);border:none;border-radius:12px;font-size:15px;font-weight:900;cursor:pointer;color:#fff;font-family:var(--font)">Doorgaan 🔥</button>
     </div>
   </div>`;
@@ -1709,49 +1721,153 @@ function _qCountUp(el,target,dur){
 }
 function retryQ(){startQ(ST.mode);}
 function switchMode(){show('sc-qmode');}
-// Mag de account-uitnodiging nu verschijnen? Niet ingelogd, en met een nette
-// cadans: kleine cooldown zodat het niet twee keer vlak na elkaar komt, en na
-// een paar keer wegklikken hooguit nog dagelijks (nooit spammy).
-function _regEligible(){
+// ═══════ ACCOUNT-UITNODIGING + WELKOMSTCADEAU ═══════
+// Anonieme leerlingen krijgen de uitnodiging al na hun eerste afgeronde quiz
+// (en als kaart op de home zodra ze iets verdiend hebben). Wie een account maakt,
+// krijgt eenmalig een welkomstcadeau: munten, een streak-freeze en 24 uur
+// dubbele XP. Cadans: eerst na elke sessie met 10 min rust, na 3x per 30 min,
+// na 6x hooguit dagelijks. Nooit bij ingelogde gebruikers.
+const REG_GIFT={munten:150,freeze:1,boostUur:24};
+function _regAnoniem(){
   try{
     if(typeof currentUser!=='undefined' && currentUser) return false;
     if(localStorage.getItem('slagio_li')==='1') return false;
+    return true;
+  }catch(e){ return false; }
+}
+function _regEligible(){
+  try{
+    if(!_regAnoniem()) return false;
     const now=Date.now();
     const shows=parseInt(localStorage.getItem('slagio_reg_shows')||'0',10)||0;
     const last=parseInt(localStorage.getItem('slagio_reg_last')||'0',10)||0;
-    const gap = shows>=6 ? 24*3600e3 : 25*60e3; // eerst regelmatig, daarna hooguit 1x/dag
+    const gap = shows>=6 ? 24*3600e3 : shows>=3 ? 30*60e3 : 10*60e3;
     return (now-last) >= gap;
   }catch(e){ return false; }
 }
 function _regMark(){ try{ localStorage.setItem('slagio_reg_shows', String((parseInt(localStorage.getItem('slagio_reg_shows')||'0',10)||0)+1)); localStorage.setItem('slagio_reg_last', String(Date.now())); }catch(e){} }
-function _regGoRegister(){ try{ document.getElementById('reg-prompt-sheet')?.remove(); }catch(e){} try{ pqNotifyClose(); }catch(e){} try{ if(typeof trackEvent==='function') trackEvent('reg_prompt_click'); }catch(e){} try{ switchAuthTab&&switchAuthTab('register'); }catch(e){} try{ show('sc-auth'); }catch(e){} }
-function _regClose(){ try{ document.getElementById('reg-prompt-sheet')?.remove(); }catch(e){} try{ pqNotifyClose(); }catch(e){} }
-// Premium account-uitnodiging (bottom sheet). Toont de kernvoordelen van een
-// gratis account. Aangeroepen via de finish-wachtrij (quiz) en na een examen.
+function _regStats(){
+  const o={xp:0,munten:0,streak:0};
+  try{ o.xp=typeof getTotalXP==='function'?getTotalXP():0; }catch(e){}
+  try{ o.munten=typeof getCoins==='function'?getCoins():0; }catch(e){}
+  try{ o.streak=typeof calcStreak==='function'?(calcStreak().current||0):0; }catch(e){}
+  return o;
+}
+function _regNf(n){ try{ return Number(n||0).toLocaleString('nl-NL'); }catch(e){ return String(n||0); } }
+function _regGiftTiles(klein){
+  const ic=(n,s)=>(typeof _ico==='function'?_ico(n,s):'');
+  const z=klein?20:26;
+  return `<div class="regp-gifts${klein?' regp-gifts-s':''}">
+    <div class="regp-gift" style="--d:0ms"><span class="regp-gift-ic regp-gi-coin">${ic('coin',z)}</span><b>${REG_GIFT.munten}</b><small>munten</small></div>
+    <div class="regp-gift" style="--d:70ms"><span class="regp-gift-ic regp-gi-freeze">${ic('freeze',z)}</span><b>${REG_GIFT.freeze}</b><small>streak-freeze</small></div>
+    <div class="regp-gift" style="--d:140ms"><span class="regp-gift-ic regp-gi-bolt">${ic('bolt',z)}</span><b>${REG_GIFT.boostUur} uur</b><small>dubbele XP</small></div>
+  </div>`;
+}
+// Het cadeau-doosje (SVG): deksel wipt zacht op en neer, strik in de niveaukleur.
+function _regBoxSVG(){
+  return `<svg class="regp-box" viewBox="0 0 120 110" aria-hidden="true">
+    <defs><linearGradient id="rgb-a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+      <linearGradient id="rgb-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdba74"/><stop offset="1" stop-color="#fb923c"/></linearGradient></defs>
+    <ellipse cx="60" cy="104" rx="38" ry="5" fill="rgba(0,0,0,.12)"/>
+    <rect x="22" y="50" width="76" height="52" rx="8" fill="url(#rgb-a)"/>
+    <rect x="54" y="50" width="12" height="52" fill="var(--or)"/>
+    <g class="regp-lid"><rect x="16" y="36" width="88" height="18" rx="6" fill="url(#rgb-b)"/><rect x="54" y="36" width="12" height="18" fill="var(--or)"/>
+      <path d="M60 36c-6-14-26-18-26-6 0 7 14 7 26 6zM60 36c6-14 26-18 26-6 0 7-14 7-26 6z" fill="var(--or)"/></g>
+    <g class="regp-spark"><path d="M20 22l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#fbbf24"/><path d="M100 14l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z" fill="#fbbf24"/><circle cx="96" cy="40" r="2.5" fill="#fde68a"/></g>
+  </svg>`;
+}
+function _regGoRegister(){ try{ document.getElementById('reg-prompt-sheet')?.remove(); }catch(e){} try{ pqNotifyClose(); }catch(e){} try{ localStorage.setItem('slagio_reg_via','invite'); }catch(e){} try{ if(typeof trackEvent==='function') trackEvent('reg_prompt_click'); }catch(e){} try{ switchAuthTab&&switchAuthTab('register'); }catch(e){} try{ show('sc-auth'); }catch(e){} }
+function _regGoLogin(){ try{ document.getElementById('reg-prompt-sheet')?.remove(); }catch(e){} try{ pqNotifyClose(); }catch(e){} try{ switchAuthTab&&switchAuthTab('login'); }catch(e){} try{ show('sc-auth'); }catch(e){} }
+function _regClose(){
+  const el=document.getElementById('reg-prompt-sheet');
+  if(el){ el.classList.add('regp-out'); setTimeout(()=>{ try{el.remove();}catch(e){} },220); }
+  try{ pqNotifyClose(); }catch(e){}
+}
+// Premium account-uitnodiging (bottom sheet). Aangeroepen via de finish-wachtrij
+// (quiz), na een examen en vanaf de home-kaart.
 function _showRegPrompt(pct){
   try{
     if(document.getElementById('reg-prompt-sheet')){ try{pqNotifyClose();}catch(e){} return; }
+    if(!_regAnoniem()){ try{pqNotifyClose();}catch(e){} return; }
     _regMark();
+    const st=_regStats();
+    const kop = st.xp>0 ? `Je hebt al <span>${_regNf(st.xp)} XP</span> verdiend. Bewaar het.` : 'Maak je gratis account en pak je cadeau';
+    const sub = st.xp>0 ? 'Nu staat je voortgang alleen op dit apparaat. Met een gratis account is hij veilig, en je krijgt er een welkomstcadeau bij.' : 'In 30 seconden geregeld. Je voortgang staat dan veilig op elk apparaat.';
     const el=document.createElement('div');
     el.id='reg-prompt-sheet'; el.className='regp-ov';
-    el.innerHTML=`<div class="regp-card" role="dialog" aria-label="Maak een gratis account">
+    el.innerHTML=`<div class="regp-card regp-gift-card" role="dialog" aria-modal="true" aria-labelledby="regp-h">
       <div class="regp-grip"></div>
-      <div class="regp-badge">Gratis account</div>
-      <h3 class="regp-h">Bewaar alles en haal er meer uit</h3>
-      <p class="regp-sub">Maak in 30 seconden een gratis account en ontgrendel het hele platform.</p>
-      <div class="regp-benefits">
-        <div class="regp-b"><span class="regp-b-ic">💾</span><div class="regp-b-t"><b>Je voortgang &amp; cijfers</b><span>bewaard en op elk apparaat</span></div></div>
-        <div class="regp-b"><span class="regp-b-ic">🏆</span><div class="regp-b-t"><b>Leaderboard &amp; wedstrijd</b><span>strijd mee met je klas</span></div></div>
-        <div class="regp-b"><span class="regp-b-ic">🔥</span><div class="regp-b-t"><b>Streaks, munten &amp; kisten</b><span>verdien en verzamel</span></div></div>
-        <div class="regp-b"><span class="regp-b-ic">🤖</span><div class="regp-b-t"><b>AI-nakijken proberen</b><span>3 gratis beoordelingen per week</span></div></div>
-      </div>
-      <button class="regp-cta" onclick="_regGoRegister()">Gratis account maken →</button>
-      <button class="regp-later" onclick="_regClose()">Niet nu</button>
+      <button class="regp-x" onclick="_regClose()" aria-label="Sluiten">✕</button>
+      <div class="regp-hero">${_regBoxSVG()}<div class="regp-badge">Welkomstcadeau</div></div>
+      <h3 class="regp-h" id="regp-h">${kop}</h3>
+      <p class="regp-sub">${sub}</p>
+      ${_regGiftTiles(false)}
+      <ul class="regp-list">
+        <li>Voortgang, cijfers en streak op al je apparaten</li>
+        <li>3 keer per week gratis AI-nakijken bij examens</li>
+        <li>Je eigen naam in de weekwedstrijd en je klas</li>
+      </ul>
+      <button class="regp-cta" onclick="_regGoRegister()">Claim je cadeau</button>
+      <div class="regp-foot"><button class="regp-link" onclick="_regGoLogin()">Ik heb al een account</button><span aria-hidden="true">·</span><button class="regp-link" onclick="_regClose()">Niet nu</button></div>
     </div>`;
     el.addEventListener('click',e=>{ if(e.target===el) _regClose(); });
+    el.addEventListener('keydown',e=>{ if(e.key==='Escape') _regClose(); });
     document.body.appendChild(el);
-    try{ if(typeof trackEvent==='function') trackEvent('reg_prompt_shown'); }catch(e){}
+    try{ playSound&&playSound('open'); }catch(e){}
+    try{ if(typeof trackEvent==='function') trackEvent('reg_prompt_shown',{xp:st.xp}); }catch(e){}
   }catch(e){ try{pqNotifyClose();}catch(_){}}
+}
+// Home-kaart: zichtbaar voor anonieme leerlingen zodra ze iets verdiend hebben.
+// Wegklikken = 3 dagen rust.
+function renderRegHome(){
+  const box=document.getElementById('reg-home'); if(!box) return;
+  let weg=0; try{ weg=parseInt(localStorage.getItem('slagio_reg_home_weg')||'0',10)||0; }catch(e){}
+  const st=_regStats();
+  if(!_regAnoniem() || st.xp<=0 || Date.now()-weg<3*864e5){ box.innerHTML=''; return; }
+  box.innerHTML=`<div class="regh" role="button" tabindex="0" onclick="_showRegPrompt()" onkeydown="if(event.key==='Enter')_showRegPrompt()">
+    <div class="regh-box">${_regBoxSVG()}</div>
+    <div class="regh-t"><b>Er ligt een cadeau voor je klaar</b><span>Bewaar je ${_regNf(st.xp)} XP met een gratis account en krijg ${REG_GIFT.munten} munten, een streak-freeze en 24 uur dubbele XP.</span></div>
+    <button class="regh-x" onclick="event.stopPropagation();try{localStorage.setItem('slagio_reg_home_weg',String(Date.now()))}catch(e){};renderRegHome()" aria-label="Verbergen">✕</button>
+  </div>`;
+}
+// Eenmalig per apparaat: aangeroepen na een geslaagde registratie.
+function grantRegGift(){
+  try{ if(localStorage.getItem('slagio_reg_gift')) return false; localStorage.setItem('slagio_reg_gift',String(Date.now())); }catch(e){ return false; }
+  let munten=REG_GIFT.munten, freeze=0;
+  try{
+    if(typeof getFreezes==='function'&&typeof setFreezes==='function'&&typeof FREEZE_MAX!=='undefined'&&getFreezes()<FREEZE_MAX){ setFreezes(getFreezes()+REG_GIFT.freeze); freeze=REG_GIFT.freeze; }
+    else munten+=50;                                  // freezes al vol: extra munten
+  }catch(e){}
+  try{ if(typeof addCoins==='function') addCoins(munten); }catch(e){}
+  try{ const tot=Math.max(Date.now(),parseInt(localStorage.getItem('slagio_xpboost_day')||'0',10)||0)+REG_GIFT.boostUur*3600e3; localStorage.setItem('slagio_xpboost_day',String(tot)); }catch(e){}
+  try{ if(typeof trackEvent==='function') trackEvent('reg_gift',{via:localStorage.getItem('slagio_reg_via')||'direct'}); }catch(e){}
+  try{ renderEconHome&&renderEconHome(); }catch(e){}
+  try{ renderRegHome(); }catch(e){}
+  setTimeout(()=>{ try{ _showRegGift(munten,freeze); }catch(e){} },500);
+  return true;
+}
+function _showRegGift(munten,freeze){
+  if(document.getElementById('reg-gift-ov')) return;
+  const ic=(n,s)=>(typeof _ico==='function'?_ico(n,s):'');
+  const el=document.createElement('div');
+  el.id='reg-gift-ov'; el.className='regg-ov';
+  el.innerHTML=`<div class="regg-card" role="dialog" aria-modal="true" aria-label="Je welkomstcadeau">
+    <div class="regg-stage">${_regBoxSVG()}</div>
+    <div class="regg-kicker">Welkom bij Slagio</div>
+    <h3 class="regg-h">Je cadeau is binnen</h3>
+    <div class="regp-gifts regg-gifts">
+      <div class="regp-gift" style="--d:500ms"><span class="regp-gift-ic regp-gi-coin">${ic('coin',26)}</span><b>+${munten}</b><small>munten</small></div>
+      ${freeze?`<div class="regp-gift" style="--d:620ms"><span class="regp-gift-ic regp-gi-freeze">${ic('freeze',26)}</span><b>+${freeze}</b><small>streak-freeze</small></div>`:''}
+      <div class="regp-gift" style="--d:740ms"><span class="regp-gift-ic regp-gi-bolt">${ic('bolt',26)}</span><b>${REG_GIFT.boostUur} uur</b><small>dubbele XP</small></div>
+    </div>
+    <p class="regg-sub">De dubbele XP loopt vanaf nu. Een goed moment voor een quiz.</p>
+    <button class="regp-cta" onclick="document.getElementById('reg-gift-ov').remove();try{show('sc-home')}catch(e){}">Aan de slag</button>
+  </div>`;
+  document.body.appendChild(el);
+  requestAnimationFrame(()=>el.classList.add('show'));
+  try{ playSound&&playSound('levelup'); }catch(e){}
+  try{ haptic&&haptic([30,25,60]); }catch(e){}
+  try{ if(typeof launchConfetti==='function') launchConfetti('gold'); }catch(e){}
 }
 function nextDomeinQ(){
   const doms=ST.vak?.domeinen;

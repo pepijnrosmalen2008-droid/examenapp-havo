@@ -863,13 +863,10 @@ async function doRegister(){
     if(error)throw error;
     const initAvatar=selectedAnimalId?getAnimalEmoji(selectedAnimalId,0):'🐾';
     const prof={naam,avatar:initAvatar,animalId:selectedAnimalId,school:'',klas:'',profiel:''};
-    // Wis lokale voortgang zodat het nieuwe account schoon begint
-    ['examenapp_progress_havo','examenapp_progress_vwo','examenapp_streak','slagio_xp',
-     'examenapp_mijnvakken_havo','examenapp_mijnvakken_vwo','examenapp_favs_havo','examenapp_favs_vwo',
-     'examenapp_cijfers_havo','examenapp_cijfers_vwo','slagio_mastery',
-     'slagio_daily_challenge_havo','slagio_daily_challenge_vwo',
-     'slagio_fc_sessions','slagio_race_wins','slagio_plan_tasks','slagio_perfect_count',
-     'slagio_sr_v1','slagio_aqp_v1'].forEach(k=>localStorage.removeItem(k));
+    // Lokale voortgang BLIJFT: wie anoniem oefende en nu een account maakt, neemt
+    // zijn XP, voortgang en streak mee (dat beloofde de uitnodiging ook). Na
+    // uitloggen is dit apparaat al leeg, dus er lekt geen data van een ander.
+    try{ const _xp=(typeof getTotalXP==='function')?getTotalXP():0; if(_xp>0) prof.xp=_xp; }catch(e){}
     localStorage.setItem(PROF_KEY,JSON.stringify(prof));
     if(data.user){currentUser=data.user;await cloudSet('profiel',prof);}
     // Supabase may require email confirmation
@@ -882,6 +879,8 @@ async function doRegister(){
     }else{
       show('sc-home');updateProfileNav();
     }
+    try{ if(typeof grantRegGift==='function') grantRegGift(); }catch(e){}
+    try{ if(typeof pushSyncBundle==='function') setTimeout(()=>{try{pushSyncBundle();}catch(e){}},1500); }catch(e){}
   }catch(e){
     errEl.textContent=authErrMsg(e.message);errEl.style.display='block';
   }finally{btn.disabled=false;btn.textContent='Account aanmaken';btn.classList.remove('loading');}
