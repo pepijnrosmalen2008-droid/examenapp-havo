@@ -14,6 +14,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import * as I from './lib/inzichten.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const DAG = 864e5, NU = Date.now();
@@ -61,7 +62,7 @@ function kengetallen(alle, ev, van) {
   const fb = ev.filter(e => e.event_type === 'feedback' && e.meta?.rating);
   const tel = (lijst, key) => { const m = {}; lijst.forEach(x => { const k = key(x); if (k) m[k] = (m[k] || 0) + 1; }); return m; };
   const perApp = {}; ev.forEach(e => { const d = did(e); if (d) perApp[d] = e; });
-  const echt = new Set(ev.filter(e => !PASSIEF.has(e.event_type)).map(did).filter(Boolean));
+  const echt = new Set(ev.filter(I.isBetrokken).map(did).filter(Boolean));
   // Hoe geconcentreerd is het oefenen? (waarschuwing als een paar apparaten alles doen)
   const oefPer = {}; ev.filter(e => OEFENEN.has(e.event_type)).forEach(e => { const d = did(e); if (d) oefPer[d] = (oefPer[d] || 0) + 1; });
   const oefTop = Object.entries(oefPer).sort((a, b) => b[1] - a[1]);
@@ -84,19 +85,13 @@ function kengetallen(alle, ev, van) {
 }
 
 async function supabaseStats() {
-  const ev = (await haal('events', 'event_type,created_at,niveau,vak_naam,meta', NU - 63 * DAG)).filter(e => !uitgesloten(did(e)));
+  const ev = (await haal('events', 'event_type,created_at,niveau,vak_naam,meta', NU - 105 * DAG)).filter(e => !uitgesloten(did(e)));
   const w0 = venster(ev, NU - 7 * DAG, NU), w1 = venster(ev, NU - 14 * DAG, NU - 7 * DAG);
   const deze = kengetallen(ev, w0, NU - 7 * DAG), vorige = kengetallen(ev, w1, NU - 14 * DAG);
   const d0 = new Set(w0.map(did).filter(Boolean)), d1 = new Set(w1.map(did).filter(Boolean));
   const terug = d1.size ? Math.round([...d1].filter(d => d0.has(d)).length / d1.size * 100) : null;
 
-  const dagelijks = [];
-  for (let i = 27; i >= 0; i--) {
-    const van = NU - (i + 1) * DAG, tot = NU - i * DAG, s = venster(ev, van, tot);
-    dagelijks.push({ datum: iso(tot - 1), actief: new Set(s.map(did).filter(Boolean)).size,
-      betrokken: new Set(s.filter(e => !PASSIEF.has(e.event_type)).map(did).filter(Boolean)).size,
-      opens: s.filter(e => e.event_type === 'app_open').length, oefensessies: s.filter(e => OEFENEN.has(e.event_type)).length });
-  }
+  const dagelijks = I.dagreeks(ev, NU, 60);
   const foutMsg = {};
   w0.filter(e => e.event_type === 'js_error').forEach(e => {
     const m = String(e.meta?.message || 'onbekend').replace(/https?:\/\/slagio\.nl/g, '').slice(0, 110);
@@ -105,9 +100,27 @@ async function supabaseStats() {
   });
   const topFouten = Object.values(foutMsg).sort((a, b) => b.n - a.n).slice(0, 6).map(f => ({ ...f, schermen: [...f.schermen] }));
   // Terugkeer onder échte gebruikers: betrokken vorige week én actief deze week.
-  const b1 = new Set(w1.filter(e => !PASSIEF.has(e.event_type)).map(did).filter(Boolean));
+  const b1 = new Set(w1.filter(I.isBetrokken).map(did).filter(Boolean));
   const terugBetrokken = b1.size ? Math.round([...b1].filter(d => d0.has(d)).length / b1.size * 100) : null;
-  return { deze, vorige, terugkeer: terug, terugkeerBetrokken: terugBetrokken, uitgesloten: UITSLUITEN.length, dagelijks, topFouten };
+  // ── Het analytische brein ──
+  const EXAMEN = CONFIG.examenDatum || '2027-05-14';
+  const afw = [...I.afwijkingen(dagelijks, 'actief'), ...I.afwijkingen(dagelijks, 'betrokken')].sort((a, b) => a.datum.localeCompare(b.datum));
+  const trecht = I.trechter(ev, NU - 7 * DAG, NU), trechtVorige = I.trechter(ev, NU - 14 * DAG, NU - 7 * DAG);
+  const bron = I.herkomst(ev, NU - 7 * DAG, NU), bronVorige = I.herkomst(ev, NU - 14 * DAG, NU - 7 * DAG), bron60 = I.herkomst(ev, NU - 60 * DAG, NU);
+  const cohort = I.cohorten(ev, NU, 8);
+  const prog = I.prognose(I.dagreeks(ev, NU, 70), EXAMEN, NU);
+  const seiz = I.seizoen(NU, EXAMEN);
+  const doelen = (CONFIG.doelen || []).map(d => {
+    const nu = d.metriek === 'betrokkenPerWeek' ? deze.betrokken : d.metriek === 'actiefPerWeek' ? deze.actief : null;
+    const wekenTot = Math.max(1, Math.round((Date.parse(d.datum) - NU) / (7 * DAG)));
+    const nodigPerWeek = nu != null ? +(Math.pow(Math.max(1, d.waarde) / Math.max(1, nu), 1 / wekenTot) * 100 - 100).toFixed(1) : null;
+    return { ...d, huidig: nu, wekenTot, nodigeGroeiPerWeekPct: nodigPerWeek, voortgangPct: nu != null ? Math.min(100, Math.round(nu / d.waarde * 100)) : null };
+  });
+  const sig = I.signalen({ deze, vorige, terugkeerBetrokken: terugBetrokken, afw, trecht, trechtVorige, bron, bronVorige, cohort, prog,
+    concentratie: { deze: deze.concentratie?.top2Aandeel, vorige: vorige.concentratie?.top2Aandeel } });
+  return { deze, vorige, terugkeer: terug, terugkeerBetrokken: terugBetrokken, uitgesloten: UITSLUITEN.length, dagelijks, topFouten,
+    afwijkingen: afw, trechter: { deze: trecht, vorige: trechtVorige }, herkomst: { deze: bron, vorige: bronVorige, zestigDagen: bron60 },
+    cohorten: cohort, prognose: prog, seizoen: seiz, doelen, signalen: sig };
 }
 
 // ── Instagram ─────────────────────────────────────────────────────────────

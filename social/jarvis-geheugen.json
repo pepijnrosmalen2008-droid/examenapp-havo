@@ -1,0 +1,26 @@
+{
+  "voorspellingen": [
+    {
+      "gedaan": "2026-09-27",
+      "voor": "2026-10-04",
+      "metriek": "betrokken dagbezoeken per week",
+      "verwacht": 56,
+      "laag": 49,
+      "hoog": 63,
+      "uitkomst": null,
+      "raak": null
+    }
+  ],
+  "experimenten": [
+    {
+      "gestart": "2026-09-27",
+      "status": "loopt",
+      "resultaat": null,
+      "titel": "Eén klas activeren via de klassenquiz",
+      "hypothese": "Leerlingen die Slagio samen met hun klas gebruiken, komen vaker terug dan leerlingen die het alleen vinden.",
+      "actie": "Vraag één docent of mentor om de klassenquiz in de les te starten, of deel de klascode in één klas-groepsapp.",
+      "meting": "Nieuwe betrokken leerlingen op die dag, en hoeveel van hen een week later terugkomen (instroomweek in Terugkeer).",
+      "doel": "Minstens 15 nieuwe betrokken leerlingen op één dag, en minstens 25% komt de week erna terug."
+    }
+  ]
+}
