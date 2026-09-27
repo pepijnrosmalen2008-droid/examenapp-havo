@@ -5,6 +5,14 @@ Jarvis is de wekelijkse Claude-routine (donderdag 10:00). Hij is hoofdredacteur
 het doet en zet alles in één briefing op
 **https://claude.ai/artifact/Q5Xv1UPkC7EJLATN4R3vab** (altijd dezelfde URL).
 
+**Vakkennis:** `social/jarvis-brein.md` is wat Jarvis weet over analyse, content,
+social en vindbaarheid. Lees het voor je begint en houd je eraan; verbeter het als
+je iets leert dat waar en blijvend is (commit op de werkbranch, niet op main).
+**Kennisbank:** `scripts/social/lib/kennis.mjs` leest bij elke rapportbouw de
+vakken, contentgaten, een steekproef van de vraagbank en een SEO-audit van elke
+pagina. Die staat in de briefing onder *Kansen* en is via tools beschikbaar in
+het gesprek en de spraakmodus. Neem elke week minstens één kans op in de acties.
+
 Jarvis rekent zelf: `scripts/social/lib/inzichten.mjs` detecteert afwijkingen
 (mediaan + MAD), bouwt de trechter per apparaat, weekcohorten, herkomst, een
 prognose met marge en de seizoensfase. Jouw werk is het **denken**: verklaren,
@@ -80,7 +88,7 @@ afrekenen.
    (`--week` weglaten als er geen content-week is.) Lees daarna het artifact met
    de Artifact-tool (`action: read`, url hierboven) en publiceer
    `/tmp/jarvis.html` met diezelfde `url` en `capabilities: {"sample": {}}`, zodat
-   **Vraag Jarvis** blijft werken. Kijk één keer naar het resultaat.
+   het gesprek en de spraakmodus blijven werken. Kijk één keer naar het resultaat.
 
 8. **Melden.** Stuur een korte pushmelding: de kop van de briefing plus het
    aantal acties, met de link.

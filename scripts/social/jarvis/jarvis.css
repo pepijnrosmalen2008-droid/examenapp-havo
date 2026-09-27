@@ -92,7 +92,7 @@ h2{font-size:28px;font-weight:700;letter-spacing:-.025em;margin:0}
 .sh .sub{font-size:15px;color:var(--label2)}
 .card{background:var(--mat);border-radius:var(--r);padding:20px 22px;border:1px solid var(--sep)}
 .card+.card{margin-top:14px}
-.grid2>.card+.card,.memo>.card+.card{margin-top:0}
+.grid2>.card+.card,.grid3>.card+.card,.memo>.card+.card{margin-top:0}
 .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .flash{animation:flash 1.6s ease}
@@ -264,3 +264,135 @@ footer{margin-top:48px;font-size:13px;color:var(--label3);display:flex;justify-c
   .fstep{grid-template-columns:110px 1fr 52px}.srow{grid-template-columns:100px 1fr 64px}.tabs a span{display:none}.tabs a{padding:9px 11px}
   .sheet{right:8px;left:8px;width:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px));height:calc(100% - 16px - env(safe-area-inset-bottom,0px))}
   .top .meta{display:none}}
+
+/* ── Gesprekslaag ─────────────────────────────────────────────────────── */
+.sheet{width:min(560px,calc(100% - 32px));background:color-mix(in srgb,var(--bg) 97%,transparent)}
+.sheet::before{opacity:.35}
+.sheet header button{display:grid;place-items:center;color:var(--label);margin-left:6px}
+.sheet header button svg{width:17px;height:17px}
+.sheet header button[hidden]{display:none}
+.modebar{position:relative;z-index:1;display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--sep);overflow-x:auto;scrollbar-width:none}
+.modebar::-webkit-scrollbar{display:none}
+.modebar .seg{flex:0 0 auto}
+.modebar .seg button[aria-checked="true"]{background:var(--mat);color:var(--label);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.diep{flex:0 0 auto;margin-left:auto;border:1px solid var(--sep);background:transparent;color:var(--label2);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600;cursor:pointer}
+.diep[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.composer .mic{background:var(--mat3);color:var(--label)}
+.composer .mic svg{width:19px;height:19px}
+.composer .mic[hidden]{display:none}
+.composer .mic.aan{background:var(--red);color:#fff;animation:pulsmic 1.2s ease-in-out infinite}
+@keyframes pulsmic{50%{box-shadow:0 0 0 6px var(--red-soft)}}
+.stappen{list-style:none;margin:0;padding:0 0 0 4px;display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--label3);align-self:flex-start}
+.stappen[hidden]{display:none}
+.stappen li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:1px;opacity:.7}
+.msg.j b{font-weight:650}
+
+/* Kaarten: posts en voorstellen */
+.msgs>*{flex-shrink:0}
+.kaart{align-self:stretch;background:var(--mat);border:1px solid var(--sep);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.k-kop{display:flex;align-items:center;gap:8px;font-size:14px;min-width:0}
+.k-kop b{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.k-type{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--label2);background:var(--mat3);padding:3px 8px;border-radius:6px}
+.k-check{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--mat3);color:var(--label2);white-space:nowrap}
+.k-check.ok{background:var(--green-soft);color:var(--green)}
+.k-check.warn{background:var(--yellow-soft);color:var(--yellow)}
+.k-cap{font-size:13.5px;line-height:1.5;white-space:pre-wrap;background:var(--mat2);border-radius:12px;padding:10px 12px;max-height:220px;overflow:auto}
+.k-probl{margin:0;padding-left:18px;font-size:12.5px;color:var(--yellow)}
+.k-red{font-size:13px;color:var(--label2)}.k-red b{color:var(--label);margin-right:4px}
+.k-toel{margin:0;font-size:13.5px;color:var(--label2)}
+.k-acties{display:flex;flex-wrap:wrap;gap:6px}
+.k-acties button{border:1px solid var(--sep);background:var(--mat2);color:var(--label);border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;cursor:pointer}
+.k-acties button:disabled{opacity:.6;cursor:default}
+.k-acties button:focus-visible,.kans-knop:focus-visible,.diep:focus-visible,.modebar .seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sl-rij{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scroll-snap-type:x mandatory}
+/* Slides: vaste huisstijl van de posts, in beide thema's gelijk */
+.sl{flex:0 0 200px;aspect-ratio:4/5;border-radius:10px;overflow:hidden;position:relative;display:flex;flex-direction:column;scroll-snap-align:start;font-family:"Inter",var(--font);
+  --ink:#14161f;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.sl.staand{flex-basis:140px;aspect-ratio:9/16}
+.sl.donker{background:#0b0d14;color:#fff}
+.sl.donker::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(70% 55% at 88% -4%,color-mix(in srgb,var(--acc) 42%,transparent),transparent 62%),radial-gradient(60% 45% at -10% 108%,color-mix(in srgb,var(--acc) 18%,transparent),transparent 60%)}
+.sl.licht{background:#f3f4f8;color:var(--ink)}
+.sl-top{position:relative;display:flex;align-items:center;justify-content:space-between;gap:4px;padding:9px 10px 0}
+.sl-top b{display:flex;align-items:center;gap:4px;font-family:"Bricolage",var(--font);font-weight:800;font-size:9.5px}
+.sl-top b i{width:13px;height:13px;border-radius:4px;background:#E85C0D;color:#fff;font-style:normal;display:grid;place-items:center;font-size:8px}
+.sl-chip{font-size:6.8px;font-weight:700;padding:2.5px 6px;border-radius:99px;color:var(--niv);background:color-mix(in srgb,var(--niv) 14%,transparent);border:1px solid color-mix(in srgb,var(--niv) 30%,transparent);max-width:60%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.donker .sl-chip{color:color-mix(in srgb,var(--niv) 30%,#fff);background:color-mix(in srgb,var(--niv) 26%,transparent)}
+.sl-body{position:relative;flex:1;display:flex;flex-direction:column;gap:6px;padding:10px 11px 0;min-height:0;overflow:hidden}
+.sl-cover .sl-body,.sl-cta .sl-body{justify-content:center}
+.sl-lbl{font-size:6.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.6}
+.sl-kop{font-family:"Bricolage",var(--font);font-weight:800;font-size:17px;line-height:1;letter-spacing:-.02em;text-wrap:balance}
+.sl-vraag .sl-kop,.sl-antwoord .sl-kop{font-size:11.5px;font-weight:700;line-height:1.12}
+.sl-txt{font-size:8.5px;line-height:1.4;opacity:.82}
+.sl-opts{display:flex;flex-direction:column;gap:4px;margin-top:2px}
+.sl-opt{display:flex;align-items:center;gap:5px;background:#fff;border:1px solid #e3e6ee;border-radius:6px;padding:4px 6px;font-size:7.5px;font-weight:600;line-height:1.2}
+.sl-opt i{flex:0 0 12px;height:12px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:6.5px;font-weight:800;color:var(--acc);border:1px solid color-mix(in srgb,var(--acc) 35%,transparent)}
+.sl-opt.ok{border-color:#15803d;background:#f0f8f2}.sl-opt.ok i{background:#15803d;border-color:#15803d;color:#fff}
+.sl-foot{position:relative;display:flex;align-items:center;justify-content:space-between;padding:6px 10px 8px;font-size:6.5px;font-weight:600;opacity:.55}
+.sl-prog{display:flex;gap:2px}.sl-prog i{width:6px;height:2px;border-radius:2px;background:currentColor;opacity:.35}.sl-prog i.on{width:10px;background:var(--acc);opacity:1}
+.sl-sec{position:relative;margin:8px 0 0 8px;align-self:flex-start;font-size:8px;font-weight:700;background:rgba(255,255,255,.14);border-radius:6px;padding:2px 6px}
+.staand .sl-kop{font-size:12px}
+.vq{border-top:1px solid var(--sep);padding-top:8px;font-size:13.5px}
+.vq p{margin:0 0 4px}.vq ol{margin:0 0 4px;padding-left:20px}
+.vq li{margin:2px 0}.vq li.ok{color:var(--green);font-weight:600}
+.vq li small{display:block;color:var(--label3);font-weight:400}
+.vq-u{color:var(--label2)}.vq-p{color:var(--yellow);font-size:12px}
+.vb{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13.5px}
+.vb dt{font-weight:650}.vb dd{margin:0;color:var(--label2)}
+.vt{overflow-x:auto}
+.vt table{width:100%;border-collapse:collapse;font-size:12.5px}
+.vt th{text-align:left;font-weight:600;color:var(--label2);padding:4px 6px;border-bottom:1px solid var(--sep)}
+.vt td{padding:6px;border-bottom:1px solid var(--sep);vertical-align:top}
+.vt td.oud{color:var(--label3);text-decoration:line-through;text-decoration-color:var(--label3)}
+.vt td small{display:block;color:var(--label3);font-size:11px}
+
+/* Kansen */
+.kans{display:flex;flex-direction:column;gap:10px}
+.kans .chart-sum{margin:0}
+.kans-kop{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.kans-kop h3{margin:0}
+.kans-score{font-size:30px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.kans-score small{font-size:14px;color:var(--label3);font-weight:600}
+.kans-score[data-s="ok"]{color:var(--green)}.kans-score[data-s="let-op"]{color:var(--yellow)}.kans-score[data-s="actie"]{color:var(--red)}
+.kans-lijst{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;font-size:13px}
+.kans-lijst li{display:grid;grid-template-columns:1fr 70px 28px;align-items:center;gap:8px}
+.kans-lijst i{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--c,var(--label3)) var(--w),var(--mat3) var(--w))}
+.kans-lijst i[data-e="3"]{--c:var(--red)}.kans-lijst i[data-e="2"]{--c:var(--yellow)}
+.kans-lijst b{text-align:right;font-weight:600}
+.kans-tot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.kans-tot div{background:var(--mat2);border-radius:12px;padding:8px 10px;display:flex;flex-direction:column}
+.kans-tot small{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--label2)}
+.kans-tot b{font-size:20px;font-weight:700;letter-spacing:-.02em}
+.kans-tot span{font-size:11.5px;color:var(--label3)}
+.kans .list .sub{font-size:12.5px;color:var(--label3)}
+.kans-knop{margin-top:auto;align-self:flex-start;border:0;background:var(--accent);color:#fff;border-radius:999px;padding:9px 16px;font-size:14px;font-weight:600;cursor:pointer}
+.kans-knop[hidden]{display:none}
+
+/* ── Stem: een bewust donkere, eigen ruimte ──────────────────────────── */
+.stem{position:fixed;inset:0;z-index:90;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto minmax(0,1fr) auto;justify-items:center;
+  padding:max(16px,env(safe-area-inset-top)) 20px max(20px,env(safe-area-inset-bottom));
+  background:radial-gradient(120% 80% at 50% 30%,#1a1410 0%,#07070a 60%,#000 100%);color:#f5f5f7;--orb:#ff8a3d}
+.stem[hidden]{display:none}
+.stem[data-fase="luistert"]{--orb:#ff7a2e}
+.stem[data-fase="denkt"]{--orb:#8e8cff}
+.stem[data-fase="spreekt"]{--orb:#ffb36b}
+.stem-top{width:100%;max-width:720px;display:flex;align-items:center;gap:10px}
+.stem-top .brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:16px;color:#f5f5f7}
+.stem-top .brand i{width:24px;height:24px;border-radius:7px;background:#E85C0D;display:grid;place-items:center;font-style:normal;font-size:13px;color:#fff}
+.stem-top select{margin-left:auto;background:rgba(255,255,255,.08);color:#f5f5f7;border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:6px 10px;font:inherit;font-size:13px;max-width:45vw}
+.stem-top select[hidden]{display:none}
+.stem-top button{margin-left:auto;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.1);color:#f5f5f7;display:grid;place-items:center;cursor:pointer}
+.stem-top select:not([hidden])+button{margin-left:0}
+.stem-top button svg{width:18px;height:18px}
+.stem-jij{align-self:end;margin:0 0 8px;max-width:640px;text-align:center;font-size:17px;line-height:1.4;color:rgba(235,235,245,.62);min-height:1.4em}
+.orb-knop{width:min(72vw,360px);aspect-ratio:1;border:0;padding:0;background:none;border-radius:50%;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.orb-knop:focus-visible{outline:2px solid var(--orb);outline-offset:6px}
+.orb-knop canvas{width:100%;height:100%;display:block}
+.stem-status{margin:6px 0 0;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(235,235,245,.5)}
+.stem-hij{align-self:start;margin:14px 0 0;max-width:640px;text-align:center;font-size:21px;line-height:1.45;font-weight:500;color:#f5f5f7;min-height:2.9em;max-height:30vh;overflow:auto;text-wrap:pretty}
+.stem-typ{width:100%;max-width:560px;display:flex;gap:8px;margin-top:16px}
+.stem-typ[hidden]{display:none}
+.stem-typ input{flex:1;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#f5f5f7;border-radius:999px;padding:12px 18px;font:inherit;font-size:16px;outline:none}
+.stem-typ input:focus{border-color:var(--orb)}
+.stem-typ button{width:46px;height:46px;border-radius:50%;border:0;background:#ff7a2e;color:#fff;font-size:18px;cursor:pointer}
+body.stem-open{overflow:hidden}
+@media (max-width:560px){.sheet{width:auto}.sheet header span{display:none}.stem-hij{font-size:18px}.kans-tot b{font-size:17px}}

@@ -330,14 +330,16 @@
   // ── Commandopalet (⌘K) ────────────────────────────────────────────────
   const VRAGEN = ['Wat is het belangrijkste dat ik deze week moet doen?', 'Waarom komen leerlingen niet terug, en wat helpt?', 'Welke bron levert de meest betrokken leerlingen?',
     'Hoe realistisch is mijn doel van 250 per week?', 'Wat zie je in de trechter?', 'Welke post van deze week is het zwakst en waarom?'];
-  const SECT = [['overzicht', 'Overzicht'], ['denkwerk', 'Denkwerk'], ['groei', 'Groei & prognose'], ['trechter', 'Trechter'], ['terugkeer', 'Terugkeer'], ['herkomst', 'Herkomst'], ['content', 'Content'], ['geheugen', 'Geheugen'], ['gezondheid', 'Gezondheid'], ['acties', 'Acties']];
+  const SECT = [['overzicht', 'Overzicht'], ['denkwerk', 'Denkwerk'], ['groei', 'Groei & prognose'], ['trechter', 'Trechter'], ['terugkeer', 'Terugkeer'], ['herkomst', 'Herkomst'], ['content', 'Content'], ['geheugen', 'Geheugen'], ['gezondheid', 'Gezondheid'], ['kansen', 'Kansen'], ['acties', 'Acties']];
   const pal = $('#palette'), palIn = $('#pal-in'), palList = $('#pal-list');
   let palSel = 0, palItems = [];
   function palRender() {
     const q = palIn.value.trim().toLowerCase();
-    palItems = [...(q && ASK ? [{ t: `Vraag Jarvis: “${palIn.value.trim()}”`, k: 'Vraag', run: () => vraag(palIn.value.trim()) }] : []),
+    const J = window.JARVIS, kan = !!J.kan?.();
+    palItems = [...(q && kan ? [{ t: `Vraag Jarvis: “${palIn.value.trim()}”`, k: 'Vraag', run: () => J.vraag(palIn.value.trim()) }] : []),
+      ...(kan && J.stem ? [{ t: 'Praat met Jarvis', k: 'Gesprek', run: () => J.stem() }].filter(() => !q || 'praat gesprek spraak stem'.includes(q)) : []),
       ...SECT.filter(([, l]) => !q || l.toLowerCase().includes(q)).map(([id, l]) => ({ t: l, k: 'Ga naar', run: () => gaNaar(id) })),
-      ...(ASK ? VRAGEN.filter(v => !q || v.toLowerCase().includes(q)).map(v => ({ t: v, k: 'Vraag', run: () => vraag(v) })) : [])];
+      ...(kan ? VRAGEN.filter(v => !q || v.toLowerCase().includes(q)).map(v => ({ t: v, k: 'Vraag', run: () => J.vraag(v) })) : [])];
     palSel = Math.min(palSel, Math.max(0, palItems.length - 1));
     palList.innerHTML = palItems.map((it, i) => `<li><button type="button" role="option" aria-selected="${i === palSel}" data-i="${i}">${esc(it.t)}<small>${it.k}</small></button></li>`).join('');
   }
@@ -345,7 +347,7 @@
   function palClose() { pal.hidden = true; }
   addEventListener('keydown', e => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); pal.hidden ? palOpen() : palClose(); }
-    else if (e.key === 'Escape') { if (!pal.hidden) palClose(); else if (!$('#sheet').hidden) sluitChat(); }
+    else if (e.key === 'Escape') { if (!pal.hidden) palClose(); else window.JARVIS.escape?.(); }
   });
   palIn.addEventListener('input', () => { palSel = 0; palRender(); });
   palIn.addEventListener('keydown', e => {
@@ -357,10 +359,6 @@
   pal.addEventListener('click', e => { if (e.target === pal) palClose(); });
   $('#open-pal').addEventListener('click', palOpen);
 
-  // ── Vraag Jarvis (sample-capability) ──────────────────────────────────
-  let ASK = null, TOOLS = false, ctl = null;
-  const sheet = $('#sheet'), msgs = $('#msgs'), box = $('#box'), send = $('#send');
-  let turns = store.get('chat') || [];
   const compact = () => JSON.stringify({
     periode: S.periode, deze: { ...deze, functies: deze.functies, vakken: deze.vakken }, vorige: { betrokken: vorige.betrokken, actief: vorige.actief, nieuw: vorige.nieuw, oefensessies: vorige.oefensessies, fouten: vorige.fouten },
     terugkeerBetrokken: APP.terugkeerBetrokken, dagelijks: dag.slice(-60).map(r => [r.datum, r.actief, r.betrokken, r.nieuw, r.oefensessies]),
@@ -368,60 +366,7 @@
     signalen: APP.signalen, topFouten: APP.topFouten, seo: S.seo, instagram: S.instagram, content: D.content ? D.content.posts.map(p => ({ id: p.id, format: p.format, info: p.info })) : null,
     jarvisAnalyse: { kop: A.kop, briefing: A.briefing, status: A.status, aandacht: A.aandacht, denkwerk: A.denkwerk, acties: A.acties, review: A.content?.review }, geheugen: G,
   });
-  const REGELS = () => `Je bent Jarvis, de analist van Slagio (gratis examentraining voor HAVO/VWO/VMBO, slagio.nl). Je praat met de eigenaar, in het Nederlands.
-Regels: antwoord kort en concreet (max ~150 woorden tenzij om meer gevraagd), begin met het antwoord zelf. Gebruik alleen de data hieronder; zeg het eerlijk als iets er niet in staat of als aantallen te klein zijn om conclusies te trekken. Noem getallen met hun periode. Geen gedachtestreepjes, geen hype. Opmaak: gewone zinnen, **vet** voor kernpunten, opsommingen met "- ".
-Definities: "betrokken" = deed iets echts (oefenen, studieplan, foutenboek, of de eerste actie in de trechter). "dagelijks" = [datum, bezoekers, betrokken, nieuw, oefensessies]. Prognose telt betrokken dagbezoeken per week.${TOOLS ? '\nJe kunt met wijsAan de eigenaar naar een sectie brengen als dat je antwoord ondersteunt (hooguit één keer).' : ''}
 
-DATA:
-${compact()}`;
-  const mdChat = s => { const e = esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>'); const out = []; let list = null;
-    e.split('\n').forEach(l => { const m = l.match(/^\s*[-•]\s+(.*)/); if (m) { if (!list) { list = []; out.push(list); } list.push(m[1]); } else { list = null; if (l.trim()) out.push(l); } });
-    return out.map(x => Array.isArray(x) ? `<ul>${x.map(i => `<li>${i}</li>`).join('')}</ul>` : `<p>${x}</p>`).join(''); };
-  function addMsg(role, html, cls = '') { const d = document.createElement('div'); d.className = `msg ${role} ${cls}`; if (role === 'u') d.textContent = html; else d.innerHTML = html; msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight; return d; }
-  function renderChat() {
-    msgs.innerHTML = '';
-    if (!turns.length) { addMsg('j', `<p>Stel me een vraag over Slagio. Ik ken de cijfers van deze week, de trends van 60 dagen, de trechter, terugkeer, herkomst, content en mijn eigen voorspellingen.</p>`);
-      const c = document.createElement('div'); c.className = 'chips'; c.innerHTML = VRAGEN.slice(0, 4).map(v => `<button type="button">${esc(v)}</button>`).join(''); c.addEventListener('click', e => { const b = e.target.closest('button'); if (b) vraag(b.textContent); }); msgs.appendChild(c); }
-    turns.forEach(t => addMsg(t.role === 'user' ? 'u' : 'j', t.role === 'user' ? t.content : mdChat(t.content)));
-  }
-  function openChat() { sheet.hidden = false; renderChat(); setTimeout(() => box.focus(), 30); }
-  function sluitChat() { sheet.hidden = true; ctl?.abort(); }
-  const FOUT = { not_granted: 'Je hebt Jarvis geen toestemming gegeven om Claude te gebruiken.', rate_limited: 'Even te veel vragen tegelijk. Probeer het zo opnieuw.', session_expired: 'Log opnieuw in bij Claude.', refused: 'Deze vraag kan ik niet beantwoorden.', prompt_too_large: 'Die vraag werd te groot. Probeer het korter.' };
-  async function vraag(q) {
-    if (!ASK || !q) return; if (sheet.hidden) openChat();
-    if (msgs.querySelector('.chips')) msgs.innerHTML = '';
-    turns.push({ role: 'user', content: q }); addMsg('u', q); box.value = '';
-    const bubble = addMsg('j', '<p>Aan het nadenken…</p>', 'think');
-    ctl = new AbortController(); send.classList.add('stop'); send.textContent = '■'; send.setAttribute('aria-label', 'Stop');
-    const tools = TOOLS ? [{ name: 'wijsAan', description: 'Scrollt de briefing naar een sectie en licht die op, zodat de eigenaar het bewijs ziet. Geeft "ok" terug.', inputSchema: { type: 'object', properties: { sectie: { type: 'string', enum: SECT.map(s => s[0]) } }, required: ['sectie'] },
-      execute: i => { gaNaar(String(i.sectie)); return 'ok'; } }] : undefined;
-    try {
-      const hist = turns.slice(-12);
-      const { text } = await ASK([{ role: 'user', content: REGELS() }, ...hist], { signal: ctl.signal, cache: tools ? undefined : false, tools,
-        onText: ({ text }) => { bubble.classList.remove('think'); bubble.innerHTML = mdChat(text); msgs.scrollTop = msgs.scrollHeight; } });
-      turns.push({ role: 'assistant', content: text });
-    } catch (e) {
-      if (e.text) { bubble.innerHTML = mdChat(e.text); turns.push({ role: 'assistant', content: e.text }); } else bubble.remove();
-      if (e.code === 'not_granted' || e.code === 'sampling_disabled') { ASK = null; $('#ask').hidden = true; }
-      if (e.code !== 'cancelled') addMsg('j', `<p>${esc(FOUT[e.code] || 'Er ging iets mis. Probeer het opnieuw.')}</p>`, 'think');
-      if (!e.text) turns.pop();
-    } finally {
-      send.classList.remove('stop'); send.textContent = '↑'; send.setAttribute('aria-label', 'Verstuur'); ctl = null;
-      store.set('chat', turns.slice(-20));
-    }
-  }
-  $('#ask').addEventListener('click', () => sheet.hidden ? openChat() : sluitChat());
-  $('#close').addEventListener('click', sluitChat);
-  $('#wis').addEventListener('click', () => { turns = []; store.set('chat', []); renderChat(); });
-  send.addEventListener('click', () => { if (ctl) ctl.abort(); else vraag(box.value.trim()); });
-  box.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); if (!ctl) vraag(box.value.trim()); } });
-
-  (async () => {
-    try {
-      if (!window.claude?.use) return;
-      const s = await window.claude.use('sample'); if (!s) return;
-      ASK = s; const lim = await s.limits().catch(() => null); TOOLS = !!lim?.tools;
-      $('#ask').hidden = false; document.body.classList.add('can-ask');
-    } catch (e) {}
-  })();
+  // De gesprekslaag (brein.js) leest alles via dit ene object.
+  window.JARVIS = Object.assign(window.JARVIS || {}, { D, S, A, APP, G, dag, deze, vorige, gaNaar, SECT, VRAGEN, esc, store, compact, REDUCE });
 })();

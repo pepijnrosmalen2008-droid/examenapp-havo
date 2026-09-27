@@ -12,6 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { bouwKennis } from './lib/kennis.mjs';
 
 const HIER = path.dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
@@ -41,15 +42,20 @@ if (WEEK && fs.existsSync(path.join(WEEK, 'plan.json'))) {
 }
 
 const data = JSON.stringify({ stats, analyse, geheugen, content }).replace(/</g, '\\u003c');
+const cfg = lees(path.join(HIER, '../../social/jarvis-config.json')) || {};
+const kennis = JSON.stringify(bouwKennis({ examenDatum: cfg.examenDatum })).replace(/</g, '\\u003c');
+const FONT = fs.readFileSync(path.join(HIER, 'fonts/bricolage.woff2')).toString('base64');
 const CSS = fs.readFileSync(path.join(HIER, 'jarvis/jarvis.css'), 'utf8');
 const JS = fs.readFileSync(path.join(HIER, 'jarvis/jarvis.js'), 'utf8');
+const BREIN = fs.readFileSync(path.join(HIER, 'jarvis/brein.js'), 'utf8');
 const ic = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
 
 const html = `<title>Jarvis</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>${CSS}</style>
+<style>@font-face{font-family:'Bricolage';src:url(data:font/woff2;base64,${FONT}) format('woff2');font-weight:200 800;font-display:swap}
+${CSS}</style>
 <div class="wrap">
   <header class="top">
     <div class="brand"><i>S</i>Slagio <span>Jarvis</span></div>
@@ -95,6 +101,9 @@ const html = `<title>Jarvis</title>
   <section id="content"><div class="sh"><h2 id="content-title">Content</h2></div>
     <p class="chart-sum" id="content-sum"></p><div class="posts" id="posts"></div><div style="margin-top:16px" id="content-cta"></div></section>
 
+  <section id="kansen"><div class="sh"><h2>Kansen</h2><span class="sub">Wat Jarvis in de site, de app en de contentfabriek vond</span></div>
+    <div class="grid3" id="kansen-grid"></div></section>
+
   <section id="geheugen"><div class="sh"><h2>Geheugen</h2><span class="sub">Voorspellingen die Jarvis deed, en of ze uitkwamen</span></div>
     <div class="memo"><div class="card"><h3 class="chart-title">Voorspellingen</h3><p class="chart-sum" id="kalibratie"></p><div id="preds"></div></div>
       <div class="card exp" id="exp"></div></div></section>
@@ -124,15 +133,33 @@ const html = `<title>Jarvis</title>
   <ul id="pal-list" role="listbox"></ul></div></div>
 
 <div class="sheet glass" id="sheet" hidden role="dialog" aria-label="Vraag Jarvis">
-  <header><div><b>Jarvis</b><br><span>Kent je cijfers van deze week en 60 dagen terug</span></div>
-    <button type="button" id="wis" aria-label="Gesprek wissen" title="Gesprek wissen" style="margin-left:auto">⟲</button><button type="button" id="close" aria-label="Sluiten" style="margin-left:6px">✕</button></header>
+  <header><div><b>Jarvis</b><br><span>Analyse, content, social en vindbaarheid</span></div>
+    <button type="button" id="open-stem" hidden aria-label="Praat met Jarvis" title="Praat met Jarvis" style="margin-left:auto">${ic('<path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/>')}</button>
+    <button type="button" id="wis" aria-label="Gesprek wissen" title="Gesprek wissen">${ic('<path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/>')}</button>
+    <button type="button" id="close" aria-label="Sluiten">${ic('<path d="M6 6l12 12M18 6L6 18"/>')}</button></header>
+  <div class="modebar"><div class="seg" id="modi" role="radiogroup" aria-label="Expertise"></div>
+    <button type="button" id="diep" class="diep" aria-pressed="false" title="Langer nadenken met het sterkste model">Diep</button></div>
   <div class="msgs" id="msgs" aria-live="polite"></div>
-  <div class="composer"><textarea id="box" rows="1" placeholder="Vraag iets over Slagio…" aria-label="Je vraag"></textarea><button type="button" id="send" aria-label="Verstuur">↑</button></div>
-  <div class="note">Antwoorden gebruiken je eigen Claude-account en zijn alleen gebaseerd op de data in deze briefing.</div>
+  <div class="composer"><textarea id="box" rows="1" placeholder="Vraag Jarvis iets…" aria-label="Je vraag"></textarea>
+    <button type="button" id="dicteer" class="mic" hidden aria-label="Dicteer">${ic('<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/>')}</button>
+    <button type="button" id="send" aria-label="Verstuur">↑</button></div>
+  <div class="note">Draait op je eigen Claude-account. Jarvis werkt met de data en kennisbank van deze briefing.</div>
+</div>
+
+<div class="stem" id="stem" hidden role="dialog" aria-label="Gesprek met Jarvis" data-fase="rust">
+  <div class="stem-top"><span class="brand"><i>S</i>Jarvis</span><select id="stem-kies" aria-label="Stem" hidden></select>
+    <button type="button" id="stem-sluit" aria-label="Gesprek beëindigen">${ic('<path d="M6 6l12 12M18 6L6 18"/>')}</button></div>
+  <p class="stem-jij" id="stem-jij" aria-live="polite"></p>
+  <button type="button" class="orb-knop" id="orb-knop" aria-label="Begin met praten"><canvas id="orb" aria-hidden="true"></canvas></button>
+  <p class="stem-status" id="stem-status">Tik op de bol om te praten</p>
+  <p class="stem-hij" id="stem-hij" aria-live="polite"></p>
+  <form class="stem-typ" id="stem-typ" hidden><input id="stem-in" type="text" placeholder="Typ je vraag" autocomplete="off" aria-label="Je vraag"><button type="submit" aria-label="Verstuur">↑</button></form>
 </div>
 
 <script type="application/json" id="jarvis-data">${data}</script>
+<script type="application/json" id="jarvis-kennis">${kennis}</script>
 <script>${JS}</script>
+<script>${BREIN}</script>
 `;
 fs.writeFileSync(OUT, html);
 console.log(`✓ ${OUT} (${Math.round(html.length / 1024)} KB)`);
