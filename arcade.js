@@ -39,6 +39,45 @@ function arcLite(){try{return document.documentElement.getAttribute('data-perf')
 function arcLater(fn,ms){const t=setTimeout(fn,ms);ARC.timers.push(t);return t;}
 function arcStopAll(){cancelAnimationFrame(ARC.raf);ARC.raf=0;ARC.timers.forEach(clearTimeout);ARC.timers=[];if(ARC._key){document.removeEventListener('keydown',ARC._key);ARC._key=null;}}
 
+// ── Animatie-hulpjes. Alles valt weg in de lichte modus en bij minder beweging. ──
+function arcMid(el){if(!el)return {x:innerWidth/2,y:innerHeight/2};const r=el.getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2};}
+function arcRestart(el,cls){if(!el)return;el.classList.remove(cls);void el.offsetWidth;el.classList.add(cls);}
+// Deeltjes-explosie op (x,y). o: n, kleuren, afstand, duur, vorm ('rond'|'ster'|'munt'), omhoog.
+function arcBurst(x,y,o){
+  if(arcLite()||!document.body.animate)return;o=o||{};
+  const n=o.n||14,cols=o.kleuren||['#facc15','#f97316','#ef4444','#22c55e','#38bdf8','#a78bfa'];
+  for(let i=0;i<n;i++){
+    const p=document.createElement('i');p.className='arc-deeltje '+(o.vorm||'');
+    p.style.left=x+'px';p.style.top=y+'px';p.style.background=cols[i%cols.length];
+    const z=(o.maat||8)*(.6+Math.random()*.8);p.style.width=p.style.height=z+'px';
+    document.body.appendChild(p);
+    const a=Math.random()*Math.PI*2,d=(o.afstand||80)*(.45+Math.random()*.75);
+    const dx=Math.cos(a)*d,dy=Math.sin(a)*d-(o.omhoog||24);
+    p.animate([{transform:'translate(-50%,-50%) scale(.2) rotate(0deg)',opacity:1},{transform:'translate(-50%,-50%) scale(1.1)',opacity:1,offset:.15},
+      {transform:`translate(calc(-50% + ${dx}px),calc(-50% + ${dy+(o.val||40)}px)) scale(.4) rotate(${Math.round(Math.random()*540-270)}deg)`,opacity:0}],
+      {duration:(o.duur||720)*(.75+Math.random()*.5),easing:'cubic-bezier(.15,.7,.3,1)'}).onfinish=()=>p.remove();
+  }
+}
+// Laat een element (html) in een boog van a naar b vliegen.
+function arcFly(a,b,html,o){
+  o=o||{};if(arcLite()||!document.body.animate){o.klaar&&o.klaar();return;}
+  const e=document.createElement('div');e.className='arc-fly '+(o.cls||'');e.innerHTML=html;
+  e.style.left=a.x+'px';e.style.top=a.y+'px';document.body.appendChild(e);
+  const dx=b.x-a.x,dy=b.y-a.y,boog=o.boog!=null?o.boog:-70;
+  e.animate([{transform:'translate(-50%,-50%) scale(1)',opacity:o.fadeIn?0:1},
+    {transform:`translate(calc(-50% + ${dx*.5}px),calc(-50% + ${dy*.5+boog}px)) scale(${o.mid||1.15})`,opacity:1},
+    {transform:`translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px)) scale(${o.eind||.55})`,opacity:o.fade?0:1}],
+    {duration:o.duur||540,delay:o.delay||0,easing:'cubic-bezier(.45,0,.25,1)',fill:'both'}).onfinish=()=>{e.remove();o.klaar&&o.klaar();};
+}
+// Getal laten optellen naar een eindwaarde.
+function arcTel(el,naar,o){
+  if(!el)return;o=o||{};const van=o.van||0,fmt=o.fmt||(v=>arcNf(Math.round(v),0));
+  if(arcLite()){el.textContent=fmt(naar);return;}
+  const t0=performance.now(),d=o.duur||900;
+  const f=now=>{const p=Math.min(1,(now-t0)/d);el.textContent=fmt(van+(naar-van)*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f);};
+  requestAnimationFrame(f);
+}
+
 // Eigen geluiden (bovenop playSound): een cartoon-knal en een draadknip.
 function arcFx(type){
   try{
@@ -139,12 +178,19 @@ function arcIntro(g,extra){
   go.onclick=()=>{arcSnd('start');g.run();};
   if(g.id==='zwak'&&!ZWAK.doel){go.textContent='Naar de oefenvragen';go.onclick=()=>{arcClose();try{openVak(ARC.vakId);}catch(e){}};}
   setTimeout(()=>{try{go.focus({preventScroll:true});}catch(e){}},260);
+  if(g.id==='zwak'){const b=document.querySelector('.zwak-bubble');if(b)arcTyp(b,b.textContent);}
 }
 // 3-2-1 voor de games met een klok.
 function arcCountdown(done){
   const st=document.getElementById('arc-stage');if(!st)return done();
-  const el=document.createElement('div');el.className='arc-cd';st.appendChild(el);
-  let n=3;const tick=()=>{if(n===0){el.remove();done();return;}el.textContent=n;el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop');arcSnd('tick');n--;arcLater(tick,560);};
+  const el=document.createElement('div');el.className='arc-cd';
+  el.innerHTML='<div class="arc-cd-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" pathLength="100"/></svg><b></b></div>';
+  st.appendChild(el);const b=el.querySelector('b'),ring=el.querySelector('.arc-cd-ring');
+  let n=3;const tick=()=>{
+    if(n===0){b.textContent='GO!';ring.classList.add('go');arcRestart(ring,'pop');arcSnd('start');arcHap(20);
+      const m=arcMid(ring);arcBurst(m.x,m.y,{n:18,afstand:130,val:10});
+      arcLater(()=>{el.classList.add('weg');arcLater(()=>el.remove(),260);done();},420);return;}
+    b.textContent=n;arcRestart(ring,'pop');arcSnd('tick');arcHap(8);n--;arcLater(tick,620);};
   tick();
 }
 // Uitslag: grote score, record, XP en wat je leerde.
@@ -163,17 +209,20 @@ function arcResult(o){
     <div class="arc-res ${o.gewonnen?'win':'lose'}">
       <div class="arc-res-vonk" aria-hidden="true">${vonk}</div>
       <div class="arc-res-k">${o.kicker||''}</div>
-      <div class="arc-res-big">${o.groot}</div>
+      <div class="arc-res-big">${o.tel?`<span class="arc-tel">${(o.tel.fmt||(v=>arcNf(Math.round(v),0)))(0)}</span>${o.tel.na||''}`:o.groot}</div>
       <div class="arc-res-sub">${o.sub||''}</div>
       ${recTxt}
       ${o.stats?`<div class="arc-res-stats">${o.stats.map(s=>`<div><b>${s[1]}</b><small>${s[0]}</small></div>`).join('')}</div>`:''}
-      ${xp?`<div class="arc-res-xp">+${xp} XP <small>telt mee voor je divisie</small></div>`:''}
+      ${xp?`<div class="arc-res-xp"><span class="arc-xp-chip">+<b class="arc-xp-n">0</b> XP</span><small>telt mee voor je divisie</small></div>`:''}
       ${o.leer?`<div class="arc-res-leer">${o.leer}</div>`:''}
       <div class="arc-res-btns"><button class="arc-go" onclick="arcStart('${o.game}',true)">Nog een keer</button><button class="arc-ghost" onclick="arcClose()">Andere game</button></div>
     </div>`);
-  if(o.gewonnen){arcSnd(r.nieuw?'fanfare':'complete');arcHap([30,20,60]);try{if(r.nieuw&&!arcLite()&&typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}}
+  if(o.tel)arcTel(document.querySelector('.arc-tel'),o.tel.naar,{fmt:o.tel.fmt,duur:1100});
+  if(xp)arcLater(()=>{arcTel(document.querySelector('.arc-xp-n'),xp,{duur:900});arcSnd('xp');},650);
+  if(o.gewonnen){arcSnd(r.nieuw?'fanfare':'complete');arcHap([30,20,60]);
+    arcLater(()=>{const m=arcMid(document.querySelector('.arc-res-big'));arcBurst(m.x,m.y,{n:r.nieuw?40:24,afstand:r.nieuw?200:140,maat:9});},380);
+    try{if(r.nieuw&&!arcLite()&&typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}}
   else arcSnd('complete');
-  if(xp){try{if(typeof floatXP==='function')floatXP(xp);}catch(e){}}
 }
 
 // ═══════ HUB ═══════
@@ -197,19 +246,22 @@ function renderArcade(){
   const chips=V.map(v=>`<button class="arc-chip${v.id===ARC.vakId?' on':''}" onclick="arcKiesVak('${v.id}')" style="--vk:${v.kleur||'var(--or)'}">${_arcEsc(v.naam)}</button>`).join('');
   const tile=g=>{
     const b=arcBest(g.id);const beschikbaar=g.kan?g.kan(ARC.vakId):true;
-    return `<button class="arc-tile arc-tile-${g.id}${g.groot?' groot':''}" onclick="arcStart('${g.id}')" style="--gk:${g.kleur}">
+    return `<button class="arc-tile arc-tile-${g.id}${g.groot?' groot':''}" onclick="arcStart('${g.id}')" style="--gk:${g.kleur};--i:${ARC_VOLGORDE.indexOf(g.id)}">
       <span class="arc-tile-art" aria-hidden="true">${g.art()}</span>
       <span class="arc-tile-t"><b>${g.naam}</b><small>${beschikbaar===true?g.pitch:beschikbaar}</small></span>
       ${b&&b.best!=null?`<span class="arc-tile-rec">${g.recLabel||'Record'} ${g.recFmt?g.recFmt(b.best):arcNf(b.best,0)}</span>`:'<span class="arc-tile-rec nieuw">Nieuw</span>'}
     </button>`;
   };
   box.innerHTML=`
-    <header class="arc-hub-head"><div class="arc-hub-eyebrow">${(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'').toUpperCase()} · Arcade</div>
+    <header class="arc-hub-head"><div class="arc-hub-deco" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="arc-hub-eyebrow">${(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'').toUpperCase()} · Arcade</div>
       <h1 class="arc-hub-title">Leren dat voelt als spelen</h1>
       <p class="arc-hub-sub">Zes games op echte examenstof. Alles wat je speelt telt mee voor je XP, je divisie en je beheersing.</p></header>
     <div class="arc-chips" role="group" aria-label="Vak">${chips}</div>
     <div class="arc-grid">${ARC_VOLGORDE.map(id=>tile(ARC_GAMES[id])).join('')}</div>
-    <p class="arc-hub-foot">${vak?`Vragen uit <b>${_arcEsc(vak.naam)}</b>. `:''}Games met een klok hebben een pauze-vrij tempo; stoppen kan altijd met ✕.</p>`;
+    <p class="arc-hub-foot">${vak?`Vragen uit <b>${_arcEsc(vak.naam)}</b>. `:''}Stoppen kan altijd met ✕; wat je verdiende, houd je.</p>`;
+  // Illustraties bewegen alleen als ze in beeld zijn (zuinig op batterij).
+  try{ARC._io&&ARC._io.disconnect();ARC._io=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('live',e.isIntersecting)),{threshold:.3});
+    box.querySelectorAll('.arc-tile').forEach(t=>ARC._io.observe(t));}catch(e){}
 }
 function arcStart(id,direct){
   const g=ARC_GAMES[id];if(!g||ARC.busy)return;
@@ -285,7 +337,7 @@ function _bomSom(vakId){
   return {
     ctx:r.ctx,
     gegeven:kend.map(k=>`${naam(k)}: <b>${_bomGeld(w[k],eh(k))}</b>`),
-    vraag:`Bereken de ${naam(onb)}.`,
+    vraag:`Bereken ${/^(vermogen|volume|bruto binnenlands product)$/.test(naam(onb))?'het':'de'} ${naam(onb)}.`,
     A:{vraag:'Welke grootheid zoek je?',opts:arcShuffle([`${sym(onb)} · ${naam(onb)}`,...arcShuffle([...kend.map(k=>`${sym(k)} · ${naam(k)}`),...arcShuffle(andere).slice(0,3).map(q=>`${q[0]} · ${q[1]}`)]).slice(0,3)]),juist:`${sym(onb)} · ${naam(onb)}`},
     B:{vraag:'Welke formule gebruik je?',opts:arcShuffle([formule,...arcShuffle(fout).slice(0,3)]),juist:formule},
     C:{vraag:'Wat is de uitkomst?',opts:arcShuffle([_bomGeld(juist,eh(onb)),...arcShuffle(uniek).slice(0,3)]),juist:_bomGeld(juist,eh(onb))},
@@ -325,6 +377,7 @@ function bomVolgende(eerste){
     <div class="bom-wrap">
       <div class="bom-case" id="bom-case">
         <div class="bom-bolts" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="bom-lont" aria-hidden="true"><svg viewBox="0 0 60 50"><path d="M4 48C8 26 30 30 34 16S52 4 56 6" fill="none" stroke="#a16207" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 3"/></svg><i class="bom-vonk"></i></div>
         <div class="bom-head">
           <div class="bom-clock" id="bom-clock" aria-live="off">00:${String(Math.round(bomTijd()/1000)).padStart(2,'0')}</div>
           <div class="bom-strikes" aria-label="Fouten">${[0,1,2].map(i=>`<i class="${i<BOM.strikes?'on':''}"></i>`).join('')}</div>
@@ -336,7 +389,7 @@ function bomVolgende(eerste){
             <header><span class="bom-led"></span>MODULE ${m}<small>${_arcEsc(s[m].vraag)}</small></header>
             <div class="bom-opts">${s[m].opts.map(o=>`<button class="bom-opt" ${i?'disabled':''}>${_arcEsc(o)}</button>`).join('')}</div>
           </section>`).join('')}</div>
-        <div class="bom-wires" aria-hidden="true"><i style="--c:#ef4444"></i><i style="--c:#3b82f6"></i><i style="--c:#facc15"></i></div>
+        <svg class="bom-wires" viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true">${[['#ef4444',12],['#3b82f6',32],['#facc15',52]].map(([c,y],i)=>`<path class="bom-w" data-i="${i}" d="M6 ${y}C80 ${y-18} 150 ${y+20} 294 ${y}" stroke="${c}" pathLength="100"/>`).join('')}</svg>
       </div>
     </div>`);
   ['A','B','C'].forEach((m,i)=>{
@@ -345,7 +398,7 @@ function bomVolgende(eerste){
   const loop=()=>{
     const rest=BOM.einde-performance.now();
     const el=document.getElementById('bom-clock');
-    if(el){const s=Math.max(0,Math.ceil(rest/1000));el.textContent='00:'+String(s).padStart(2,'0');el.classList.toggle('kritiek',rest<5000);}
+    if(el){const s=Math.max(0,Math.ceil(rest/1000));if(s!==BOM._sec){BOM._sec=s;el.textContent='00:'+String(s).padStart(2,'0');arcRestart(el,'tik');}el.classList.toggle('kritiek',rest<5000);}
     if(rest<=0){bomBoem('De tijd was op.');return;}
     if(rest<5000&&Math.floor(rest/250)!==BOM._piep){BOM._piep=Math.floor(rest/250);if(BOM._piep%2===0)arcFx('beep');}
     ARC.raf=requestAnimationFrame(loop);
@@ -357,9 +410,10 @@ function bomKies(i,btn){
   const m=['A','B','C'][i];const goed=btn.textContent===BOM.som[m].juist;
   if(goed){
     btn.classList.add('goed');arcFx('snip');arcHap(18);
+    {const w=document.querySelector(`.bom-w[data-i="${i}"]`);if(w){w.classList.add('knip');const r=w.getBoundingClientRect();arcBurst(r.left+r.width/2,r.top+r.height/2,{n:10,kleuren:['#fde047','#fb923c','#fff'],afstand:50,maat:5,val:20});}
+     const led=document.querySelector(`#bom-m${i} .bom-led`);if(led){const m=arcMid(led);arcBurst(m.x,m.y,{n:8,kleuren:['#22c55e','#86efac'],afstand:36,maat:5,val:0});}}
     const sec=document.getElementById('bom-m'+i);sec.classList.remove('actief');sec.classList.add('klaar');
     sec.querySelectorAll('.bom-opt').forEach(b=>b.disabled=true);
-    document.querySelectorAll('.bom-wires i')[i]?.classList.add('knip');
     BOM.module++;
     if(BOM.module>=3){bomDefused();return;}
     const nx=document.getElementById('bom-m'+BOM.module);nx.classList.add('actief');nx.querySelectorAll('.bom-opt').forEach(b=>b.disabled=false);
@@ -377,8 +431,9 @@ function bomDefused(){
   arcSnd('correct');arcHap([20,20,60]);
   const st=document.getElementById('arc-stage');
   const ov=document.createElement('div');ov.className='bom-ok';
-  ov.innerHTML=`<div class="bom-ok-k">Ontmanteld</div><div class="bom-ok-t">${_arcEsc(BOM.som.uitleg)}</div><div class="bom-ok-s">${arcNf(rest/1000,1)} s over</div><button class="arc-go" id="bom-nx">Volgende bom</button>`;
+  ov.innerHTML=`<div class="bom-ok-scan" aria-hidden="true"></div><div class="bom-ok-k">Ontmanteld</div><div class="bom-ok-t">${_arcEsc(BOM.som.uitleg)}</div><div class="bom-ok-s">${arcNf(rest/1000,1)} s over</div><button class="arc-go" id="bom-nx">Volgende bom</button>`;
   st.appendChild(ov);
+  arcLater(()=>{const m=arcMid(ov.querySelector('.bom-ok-k'));arcBurst(m.x,m.y,{n:26,kleuren:['#22c55e','#86efac','#fde047','#fff'],afstand:160});},200);
   document.getElementById('bom-nx').onclick=()=>bomVolgende(false);
   arcLater(()=>{try{document.getElementById('bom-nx').focus({preventScroll:true});}catch(e){}},200);
 }
@@ -390,12 +445,13 @@ function bomBoem(reden){
   const st=document.getElementById('arc-stage');
   st.classList.add('bom-flash');
   const ov=document.createElement('div');ov.className='bom-boem';
-  ov.innerHTML=`<svg viewBox="0 0 200 160" class="bom-boem-svg" aria-hidden="true"><path d="M100 8l14 34 34-20-8 38 40 4-32 26 28 30-40-6-4 40-26-30-26 30-6-40-40 6 28-30-32-26 40-4-8-38 34 20z" fill="#facc15" stroke="#1f1300" stroke-width="5" stroke-linejoin="round"/><path d="M100 36l9 22 22-12-5 25 26 3-21 17 18 19-26-4-3 26-17-19-17 19-4-26-26 4 18-19-21-17 26-3-5-25 22 12z" fill="#f97316"/><text x="100" y="92" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="30" fill="#fff" stroke="#1f1300" stroke-width="2.5" paint-order="stroke">BOEM!</text></svg>
+  ov.innerHTML=`<div class="bom-schok" aria-hidden="true"><i></i><i></i><i></i></div><svg viewBox="0 0 200 160" class="bom-boem-svg" aria-hidden="true"><path d="M100 8l14 34 34-20-8 38 40 4-32 26 28 30-40-6-4 40-26-30-26 30-6-40-40 6 28-30-32-26 40-4-8-38 34 20z" fill="#facc15" stroke="#1f1300" stroke-width="5" stroke-linejoin="round"/><path d="M100 36l9 22 22-12-5 25 26 3-21 17 18 19-26-4-3 26-17-19-17 19-4-26-26 4 18-19-21-17 26-3-5-25 22 12z" fill="#f97316"/><text x="100" y="92" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="30" fill="#fff" stroke="#1f1300" stroke-width="2.5" paint-order="stroke">BOEM!</text></svg>
     <div class="bom-boem-t">${_arcEsc(reden)}</div><div class="bom-boem-u">Zo was hij te ontmantelen: <b>${_arcEsc(BOM.som.uitleg)}</b></div>`;
   st.appendChild(ov);
-  arcLater(()=>arcResult({game:'bom',gewonnen:BOM.defused>0,kicker:BOM.defused?'Explosie na':'Direct de lucht in',groot:`${BOM.defused} <small>${BOM.defused===1?'bom':'bommen'}</small>`,
+  arcBurst(innerWidth/2,innerHeight/2-40,{n:44,kleuren:['#1c1917','#44403c','#f97316','#facc15','#ef4444'],afstand:260,maat:11,duur:1000,val:120});
+  arcLater(()=>arcResult({game:'bom',gewonnen:BOM.defused>0,kicker:BOM.defused?'Explosie na':'Direct de lucht in',groot:'',tel:{naar:BOM.defused,na:` <small>${BOM.defused===1?'bom':'bommen'}</small>`},
     sub:BOM.defused?'ontmanteld voordat het misging':'Volgende keer: eerst de grootheid, dan de formule, dan rekenen.',
-    recWaarde:BOM.defused,stats:[['Tijd over',arcNf(BOM.tijdBonus/1000,1)+' s'],['Fouten',BOM.fouten],['Moeilijkste klok',Math.round(bomTijd()/1000)+' s']],
+    recWaarde:BOM.defused||null,stats:[['Tijd over',arcNf(BOM.tijdBonus/1000,1)+' s'],['Fouten',BOM.fouten],['Moeilijkste klok',Math.round(bomTijd()/1000)+' s']],
     xp:BOM.defused*30+Math.min(40,Math.round(BOM.tijdBonus/1000)),
     leer:'Procedurele kennis: welke grootheid, welke formule, dan pas de rekenmachine. Precies de volgorde van een examensom.'}),2300);
 }
@@ -416,7 +472,7 @@ function bossRun(){
     <div class="boss-arena">
       <div class="boss-ghost"><span class="boss-ghost-av">${bossAv(ghost)}</span><div><small>Ghost uit je divisie</small><b>${_arcEsc(ghost.naam)}</b><div class="boss-bar mini"><i id="boss-ghost-bar"></i></div></div></div>
       <div class="boss-mon" id="boss-mon" style="--vk:${vak&&vak.kleur||'#7c3aed'}">${bossSVG(vak)}</div>
-      <div class="boss-hp"><div class="boss-hp-l"><b>Examenboss</b><span id="boss-hp-t">1.000 / 1.000</span></div><div class="boss-bar"><i id="boss-hp-bar"></i></div></div>
+      <div class="boss-hp"><div class="boss-hp-l"><b>Examenboss</b><span id="boss-hp-t">1.000 / 1.000</span></div><div class="boss-bar"><i class="spoor" id="boss-hp-spoor"></i><i id="boss-hp-bar"></i></div></div>
       <div class="boss-me"><span>Jij</span><div class="boss-bar me"><i id="boss-me-bar"></i></div><span class="boss-combo" id="boss-combo"></span></div>
       <div id="boss-q"></div>
     </div>`);
@@ -461,23 +517,27 @@ function bossAntwoord(k,knoppen,card){
     const mult=BOSS.combo>=5?1.5:BOSS.combo>=3?1.25:1;
     const dmg=Math.round((basis+snel)*mult);BOSS.hp=Math.max(0,BOSS.hp-dmg);BOSS.dmg+=dmg;
     BOSS.diff=Math.min(3,BOSS.diff+(BOSS.combo%2===0?1:0));
-    arcFx('hit');arcHap(20);
-    bossPop(`−${dmg}`,mult>1?'crit':'');mon.classList.remove('au');void mon.offsetWidth;mon.classList.add('au');
+    const van=arcMid(knoppen[k]),naar=arcMid(mon);
+    arcFly(van,naar,'<span class="boss-orb"></span>',{duur:380,boog:-40,eind:1.4,klaar:()=>{
+      arcFx('hit');arcHap(20);arcBurst(naar.x,naar.y-10,{n:mult>1?20:12,kleuren:mult>1?['#fde047','#fff','#f97316']:['#fb923c','#fde047','#fff'],afstand:mult>1?110:80,maat:7});
+      bossPop(`−${dmg}`,mult>1?'crit':'');arcRestart(mon,'au');bossBalken();}});
   }else{
     knoppen[k].classList.add('fout');BOSS.combo=0;BOSS.fout++;BOSS.jij=Math.max(0,BOSS.jij-25);BOSS.diff=Math.max(1,BOSS.diff-1);
     arcFx('hurt');arcHap([50,30,50]);
-    const st=document.getElementById('arc-stage');st.classList.remove('boss-hit');void st.offsetWidth;st.classList.add('boss-hit');
+    const st=document.getElementById('arc-stage');arcRestart(st,'boss-hit');arcRestart(mon,'valt-aan');
+    if(!arcLite()){const kl=document.createElement('div');kl.className='boss-klauw';kl.innerHTML='<i></i><i></i><i></i>';st.appendChild(kl);arcLater(()=>kl.remove(),700);}
     const uo=it.q.uo&&it.q.uo[BOSS.opts.idx[k]];
     card.insertAdjacentHTML('beforeend',`<div class="arc-uitleg"><b>Boss-aanval.</b> ${_arcEsc(uo||it.q.u||'')}</div>`);
   }
-  bossBalken();
-  if(BOSS.hp<=0){arcLater(()=>bossEinde('win'),700);return;}
+  if(!goed)bossBalken();
+  if(BOSS.hp<=0){arcLater(()=>{const m=document.getElementById('boss-mon');if(m){m.classList.add('poef');const c=arcMid(m);arcBurst(c.x,c.y,{n:40,kleuren:['#a78bfa','#c4b5fd','#fde047','#fff'],afstand:220,maat:10,duur:1000});}arcSnd('fanfare');},450);arcLater(()=>bossEinde('win'),1500);return;}
   if(BOSS.jij<=0){arcLater(()=>bossEinde('ko'),900);return;}
   arcLater(bossVraag,goed?520:1900);
 }
 function bossPop(t,cls){const m=document.getElementById('boss-mon');if(!m)return;const e=document.createElement('span');e.className='boss-pop '+cls;e.textContent=t;m.appendChild(e);arcLater(()=>e.remove(),900);}
 function bossBalken(){
   const a=document.getElementById('boss-hp-bar');if(a)a.style.width=(BOSS.hp/BOSS.max*100)+'%';
+  const sp=document.getElementById('boss-hp-spoor');if(sp)sp.style.width=(BOSS.hp/BOSS.max*100)+'%';
   const b=document.getElementById('boss-me-bar');if(b)b.style.width=BOSS.jij+'%';
   const t=document.getElementById('boss-hp-t');if(t)t.textContent=arcNf(BOSS.hp,0)+' / '+arcNf(BOSS.max,0);
   const c=document.getElementById('boss-combo');if(c)c.textContent=BOSS.combo>=3?`Combo ×${BOSS.combo>=5?'1,5':'1,25'}`:'';
@@ -487,7 +547,7 @@ function bossEinde(hoe){
   const tijd=performance.now()-BOSS.start;const win=hoe==='win';
   const sneller=win&&tijd<BOSS.ghostTijd;
   arcResult({game:'boss',gewonnen:win,kicker:win?'Examenboss verslagen':hoe==='ko'?'Knock-out':'De tijd is op',
-    groot:win?arcTijd(tijd):`${arcNf(BOSS.dmg,0)} <small>schade</small>`,
+    groot:win?arcTijd(tijd):'',tel:win?null:{naar:BOSS.dmg,na:' <small>schade</small>'},
     sub:win?(sneller?`Sneller dan ${_arcEsc(BOSS.ghost.naam)} (${arcTijd(BOSS.ghostTijd)})`:`${_arcEsc(BOSS.ghost.naam)} was sneller (${arcTijd(BOSS.ghostTijd)})`):`Nog ${arcNf(BOSS.hp,0)} HP te gaan.`,
     recWaarde:win?Math.round(tijd):null,hoger:false,
     recDelta:oud=>oud?arcNf((oud-tijd)/1000,2)+' s sneller':'',
@@ -505,7 +565,7 @@ function riskRun(){
   riskScherm();riskKeuze();
 }
 function riskScherm(){
-  arcStage('risico',`${arcTop('Risico Run',`<span class="risk-hart" id="risk-hart">${'♥'.repeat(RISK.harten)}<s>${'♥'.repeat(3-RISK.harten)}</s></span>`)}
+  arcStage('risico',`${arcTop('Risico Run',`<span class="risk-hart" id="risk-hart">${riskHarten()}</span>`)}
     <div class="risk-wrap">
       <div class="risk-meters">
         <div class="risk-bank"><small>Op de bank</small><b id="risk-bank">${arcNf(RISK.bank,0)}</b></div>
@@ -515,11 +575,12 @@ function riskScherm(){
       <div id="risk-main"></div>
     </div>`);
 }
-function riskUpd(){
-  const set=(id,v)=>{const e=document.getElementById(id);if(e){e.textContent=v;e.classList.remove('tel');void e.offsetWidth;e.classList.add('tel');}};
-  set('risk-bank',arcNf(RISK.bank,0));set('risk-pot',arcNf(RISK.pot,0));
+function riskHarten(){return Array.from({length:3},(_,i)=>`<span class="h${i<RISK.harten?'':' leeg'}">♥</span>`).join('');}
+function riskUpd(alleen){
+  const set=(id,v)=>{if(alleen&&!alleen.includes(id))return;const e=document.getElementById(id);if(e){if(!alleen)e.textContent=v;arcRestart(e,'tel');}};
+  set('risk-bank',arcNf(RISK.bank,0));set('risk-pot',arcNf(RISK.pot,0));if(alleen)return;
   const m=document.getElementById('risk-mult');if(m)m.textContent='×'+arcNf(RISK.mult,1);
-  const h=document.getElementById('risk-hart');if(h)h.innerHTML='♥'.repeat(RISK.harten)+'<s>'+'♥'.repeat(3-RISK.harten)+'</s>';
+  const h=document.getElementById('risk-hart');if(h)h.innerHTML=riskHarten();
   const t=document.getElementById('risk-teller');if(t)t.textContent=`Vraag ${Math.min(RISK.nr+1,RISK.max)} van ${RISK.max}`;
 }
 function riskKeuze(){
@@ -541,12 +602,19 @@ function riskVraag(){
     arcLog(it,goed,o.idx[k],performance.now()-RISK.t0);
     knoppen[o.juist].classList.add('goed');
     if(goed){
-      RISK.goed++;const w=Math.round(RISK.inzet.pt*RISK.mult);RISK.pot+=w;RISK.mult=Math.min(4,_bomRond(RISK.mult+0.5));
-      arcSnd('coin');arcHap(16);riskUpd();
-      arcLater(()=>riskBeslis(w),450);
+      RISK.goed++;const w=Math.round(RISK.inzet.pt*RISK.mult);const oudPot=RISK.pot;RISK.pot+=w;RISK.mult=Math.min(4,_bomRond(RISK.mult+0.5));
+      arcSnd('coin');arcHap(16);
+      const van=arcMid(knoppen[k]),naar=arcMid(document.getElementById('risk-pot'));
+      for(let c=0;c<Math.min(7,2+Math.round(w/15));c++)arcFly(van,naar,'<span class="risk-munt"></span>',{delay:c*70,duur:520,boog:-90-c*6,eind:.7});
+      arcLater(()=>{arcTel(document.getElementById('risk-pot'),RISK.pot,{van:oudPot,duur:500});riskUpd(['risk-pot']);},560);
+      arcLater(()=>riskBeslis(w),1000);
     }else{
       knoppen[k].classList.add('fout');RISK.fout++;const verlies=RISK.pot;RISK.pot=0;RISK.mult=1;RISK.harten--;
-      arcSnd('wrong');arcHap([50,30,50]);riskUpd();
+      arcSnd('wrong');arcHap([50,30,50]);
+      const hartjes=document.querySelectorAll('#risk-hart .h');const weg=hartjes[RISK.harten];
+      if(weg){const m=arcMid(weg);arcBurst(m.x,m.y,{n:10,kleuren:['#f87171','#ef4444','#fecaca'],afstand:40,maat:6,val:30});}
+      arcRestart(document.querySelector('.risk-pot'),'leeg');
+      arcLater(()=>riskUpd(),220);
       const uo=it.q.uo&&it.q.uo[o.idx[k]];
       card.insertAdjacentHTML('beforeend',`<div class="arc-uitleg"><b>${verlies?`Pot van ${arcNf(verlies,0)} kwijt.`:'Mis.'}</b> ${_arcEsc(uo||it.q.u||'')}</div><button class="arc-go risk-verder">Verder</button>`);
       card.querySelector('.risk-verder').onclick=riskKeuze;
@@ -564,13 +632,17 @@ function riskBeslis(w){
   document.getElementById('risk-door').onclick=()=>{arcSnd('tap');riskKeuze();};
 }
 function riskOpslaan(einde){
-  RISK.bank+=RISK.pot;RISK.pot=0;RISK.mult=1;arcFx('vault');arcHap([20,20,40]);riskUpd();
-  if(einde||RISK.nr>=RISK.max){arcLater(riskEinde,500);return;}
-  riskKeuze();
+  const pot=RISK.pot,oudBank=RISK.bank;RISK.bank+=pot;RISK.pot=0;RISK.mult=1;arcFx('vault');arcHap([20,20,40]);
+  const van=arcMid(document.getElementById('risk-pot')),naar=arcMid(document.getElementById('risk-bank'));
+  for(let c=0;c<Math.min(8,2+Math.round(pot/25));c++)arcFly(van,naar,'<span class="risk-munt"></span>',{delay:c*60,duur:480,boog:-50,eind:.7});
+  arcLater(()=>{riskUpd();arcTel(document.getElementById('risk-bank'),RISK.bank,{van:oudBank,duur:600});arcRestart(document.querySelector('.risk-bank'),'kluis');
+    const m=arcMid(document.getElementById('risk-bank'));arcBurst(m.x,m.y,{n:14,kleuren:['#fde047','#facc15','#fff'],afstand:70,maat:6,val:10});},520);
+  if(einde||RISK.nr>=RISK.max){arcLater(riskEinde,1300);return;}
+  arcLater(riskKeuze,700);
 }
 function riskEinde(){
   const verloren=RISK.pot;
-  arcResult({game:'risico',gewonnen:RISK.bank>0,kicker:RISK.harten<=0?'Geen hartjes meer':'Run voltooid',groot:arcNf(RISK.bank,0)+' <small>punten</small>',
+  arcResult({game:'risico',gewonnen:RISK.bank>0,kicker:RISK.harten<=0?'Geen hartjes meer':'Run voltooid',groot:'',tel:{naar:RISK.bank,na:' <small>punten</small>'},
     sub:verloren?`${arcNf(verloren,0)} punten stonden nog in de pot en zijn niet opgeslagen.`:'Alles wat op de bank staat, telt.',
     recWaarde:RISK.bank,stats:[['Goed',RISK.goed],['Fout',RISK.fout],['Vragen',RISK.nr]],
     xp:Math.min(220,Math.round(RISK.bank/8)+RISK.goed*4),
@@ -612,6 +684,8 @@ function zwakIntroExtra(){
     <div><div class="zwak-bubble">${d.unpracticed?'Hier heb je nog niet mee geoefend.':'Ik heb je zwakke plek gevonden.'}</div>
     <div class="zwak-ld"><b>${_arcEsc(d.naam||d.ldId)}</b><span>${_arcEsc(d.vakNaam||'')} · ${d.unpracticed?'nog niet geoefend':'beheersing '+pct+'%'}</span></div></div></div>`;
 }
+// Tekst laten 'typen' (Vonk praat).
+function arcTyp(el,tekst,ms){if(!el)return;if(arcLite()){el.textContent=tekst;return;}el.textContent='';let i=0;const t=setInterval(()=>{el.textContent=tekst.slice(0,++i);if(i>=tekst.length)clearInterval(t);},ms||28);ARC.timers.push(t);}
 function zwakRun(){
   const d=ZWAK.doel;if(!d){arcClose();return;}
   ARC.vakId=d.vakId;
@@ -666,7 +740,8 @@ function zwakEinde(){
     xp:ZWAK.goed*15+ZWAK.herkans*10+(gerepareerd?50:0),
     leer:ZWAK.misser&&!gerepareerd?`Waar het misging: ${_arcEsc(ZWAK.misser)}`:`Beheersing komt uit je beste score op dit leerdoel. ${gerepareerd?'Vonk zoekt de volgende keer een nieuwe zwakke plek.':''}`});
   if(gerepareerd){const s=arcStore();s.zwak=Object.assign({},s.zwak||{},{best:((s.zwak&&s.zwak.best)||0)+1});arcSave(s);}
-  const big=document.querySelector('.arc-res-big');if(big)big.insertAdjacentHTML('beforebegin',`<div class="zwak-rings">${ring(v,'#f97316')}${ring(n,gerepareerd?'#22c55e':'#facc15')}</div>`);
+  const big=document.querySelector('.arc-res-big');if(big)big.insertAdjacentHTML('beforebegin',`<div class="zwak-rings${gerepareerd?' fix':''}">${ring(v,'#f97316')}${ring(n,gerepareerd?'#22c55e':'#facc15')}${gerepareerd?'<div class="zwak-stempel">Gerepareerd</div>':''}</div>`);
+  if(gerepareerd)arcLater(()=>{const m=arcMid(document.querySelector('.zwak-rings'));arcBurst(m.x,m.y,{n:34,afstand:180,kleuren:['#22c55e','#86efac','#f97316','#fde047']});arcSnd('levelup');},1500);
 }
 
 // ═══════ 🧩 SORTEER ═══════
@@ -757,9 +832,11 @@ function sortTik(b){
   if(b.disabled||!SORT.t0)return;
   const i=+b.dataset.i;
   if(i===SORT.pos){
-    b.disabled=true;b.classList.add('weg');arcSnd('pop');arcHap(10);arcLater(()=>{b.style.display='none';},170);
     const slot=document.querySelector(`.sort-slots li[data-i="${SORT.pos}"]`);
-    if(slot){slot.classList.add('vol');slot.insertAdjacentHTML('beforeend',`<b>${_arcEsc(b.textContent)}</b>`);}
+    const van=arcMid(b),naar=slot?arcMid(slot):van;const tekst=b.textContent;
+    b.disabled=true;b.classList.add('weg');arcSnd('pop');arcHap(10);arcLater(()=>{b.style.display='none';},170);
+    const vul=()=>{if(slot&&!slot.classList.contains('vol')){slot.classList.add('vol');slot.insertAdjacentHTML('beforeend',`<b>${_arcEsc(tekst)}</b>`);}};
+    if(slot&&!arcLite())arcFly(van,{x:naar.x,y:naar.y},`<span class="sort-vlieg">${_arcEsc(tekst)}</span>`,{duur:300,boog:-30,eind:.9,klaar:vul});else vul();
     SORT.pos++;
     if(SORT.pos>=SORT.x.k.length)sortKlaar();
   }else{
@@ -769,6 +846,7 @@ function sortTik(b){
 }
 function sortKlaar(){
   cancelAnimationFrame(ARC.raf);
+  arcLater(()=>document.querySelectorAll('.sort-slots li').forEach((li,i)=>{li.style.setProperty('--d',(i*70)+'ms');li.classList.add('glans');}),320);
   const ms=performance.now()-SORT.t0+SORT.straf;SORT.totaal+=ms;
   const id=_sortId(SORT.x);let regel='';
   if(id){const s=arcStore();s._sort=s._sort||{};const oud=s._sort[id];
@@ -780,6 +858,8 @@ function sortKlaar(){
   const ov=document.createElement('div');ov.className='sort-ok';
   ov.innerHTML=`<div class="sort-ok-t">${arcNf(ms/1000,2)} s</div><div class="sort-ok-r">${regel}</div><button class="arc-go" id="sort-nx">${SORT.i+1<SORT.rondes.length?'Volgende reeks':'Uitslag'}</button>`;
   st.querySelector('.sort-wrap').appendChild(ov);
+  if(regel.includes('sneller'))arcLater(()=>{const m=arcMid(ov.querySelector('.sort-ok-t'));arcBurst(m.x,m.y,{n:22,afstand:120,kleuren:['#22c55e','#86efac','#fde047']});},200);
+  arcTel(ov.querySelector('.sort-ok-t'),ms/1000,{fmt:v=>arcNf(v,2)+' s',duur:600});
   document.getElementById('sort-nx').onclick=()=>{SORT.i++;if(SORT.i<SORT.rondes.length)sortRonde(false);else sortEinde();};
 }
 function sortEinde(){
@@ -795,12 +875,13 @@ const VAL={};
 function valVoorbereid(klaar){arcPool(ARC.vakId,p=>{VAL.pool=p;klaar();});}
 function valRun(){
   // Sjabloonvragen ('Wat betekent «X»?') werken niet als stelling: die slaan we hier over.
-  if(VAL.pool)VAL.pool=VAL.pool.filter(x=>!/^wat betekent «|welk begrip hoort|hoort bij deze omschrijving|welke term/i.test(x.q.v));
+  if(VAL.pool)VAL.pool=VAL.pool.filter(x=>!/^wat betekent «|welk begrip|hoort bij deze omschrijving|welke term|herken je hier|wat is de juiste term/i.test(x.q.v));
   if(!VAL.pool||VAL.pool.length<8){arcGeenVragen('val');return;}
   Object.assign(VAL,{score:0,streak:0,beste:0,goed:0,fout:0,vallen:0,duur:60000,gebruikt:new Set(),klaar:false,pauze:0});
   arcStage('val',`${arcTop('Val of waar',`<span class="val-klok" id="val-klok">60</span>`)}
     <div class="val-wrap"><div class="val-score"><b id="val-score">0</b><span id="val-streak"></span></div>
-      <div class="val-stapel" id="val-stapel"></div>
+      <div class="val-meter" aria-hidden="true"><i id="val-meter"></i></div>
+      <div class="val-stapel"><div class="val-achter a2"></div><div class="val-achter a1"></div><div id="val-stapel"></div></div>
       <div class="val-feed" id="val-feed" aria-live="polite"></div>
       <div class="val-knoppen"><button class="val-no" id="val-no" aria-label="Val">✕<small>Val</small></button><button class="val-yes" id="val-yes" aria-label="Klopt">✓<small>Klopt</small></button></div>
     </div>`);
@@ -830,8 +911,8 @@ function valKaart(){
 }
 function valSwipe(card){
   let x0=null,dx=0;
-  const mv=e=>{if(x0==null)return;dx=(e.clientX||0)-x0;card.style.transform=`translateX(${dx}px) rotate(${dx/18}deg)`;card.classList.toggle('neigt-ja',dx>40);card.classList.toggle('neigt-nee',dx<-40);};
-  const up=()=>{if(x0==null)return;x0=null;card.classList.remove('sleep');if(Math.abs(dx)>90)valOordeel(dx>0);else{card.style.transform='';card.classList.remove('neigt-ja','neigt-nee');}dx=0;};
+  const mv=e=>{if(x0==null)return;dx=(e.clientX||0)-x0;card.style.transform=`translateX(${dx}px) rotate(${dx/16}deg)`;card.style.setProperty('--ja',Math.max(0,Math.min(1,dx/110)));card.style.setProperty('--nee',Math.max(0,Math.min(1,-dx/110)));};
+  const up=()=>{if(x0==null)return;x0=null;card.classList.remove('sleep');if(Math.abs(dx)>90)valOordeel(dx>0);else{card.style.transform='';card.style.setProperty('--ja',0);card.style.setProperty('--nee',0);}dx=0;};
   card.addEventListener('pointerdown',e=>{if(VAL.pauze>performance.now())return;x0=e.clientX;card.classList.add('sleep');try{card.setPointerCapture(e.pointerId);}catch(_){}});
   card.addEventListener('pointermove',mv);card.addEventListener('pointerup',up);card.addEventListener('pointercancel',up);
 }
@@ -840,7 +921,8 @@ function valOordeel(zegtKlopt){
   const c=VAL.cur;VAL.cur=null;const goed=zegtKlopt===c.waar;
   arcLog(c.it,goed,goed?null:(c.waar?null:c.oi),performance.now()-c.t0);
   const card=document.getElementById('val-card');
-  if(card){card.style.transform='';card.classList.add(zegtKlopt?'vlieg-ja':'vlieg-nee');}
+  if(card){const m=arcMid(card);card.style.transform='';card.style.setProperty(zegtKlopt?'--ja':'--nee',1);card.classList.add(zegtKlopt?'vlieg-ja':'vlieg-nee');
+    if(goed)arcBurst(m.x+(zegtKlopt?90:-90),m.y,{n:c.waar?10:16,kleuren:c.waar?['#22c55e','#86efac','#fff']:['#38bdf8','#7dd3fc','#fde047'],afstand:c.waar?60:90,maat:6});}
   const feed=document.getElementById('val-feed');
   if(goed){
     VAL.goed++;VAL.streak++;VAL.beste=Math.max(VAL.beste,VAL.streak);
@@ -855,12 +937,13 @@ function valOordeel(zegtKlopt){
     if(feed)feed.innerHTML=`<div class="val-erin"><b>${c.waar?'Dit klopte wél.':'Erin getrapt.'}</b> Goed antwoord: ${_arcEsc(c.it.q.o[c.it.q.c])}.${uo?' '+_arcEsc(uo):''}</div>`;
   }
   const s=document.getElementById('val-score');if(s)s.textContent=arcNf(VAL.score,0);
+  const vm=document.getElementById('val-meter');if(vm){vm.style.width=Math.min(100,VAL.streak*10)+'%';vm.classList.toggle('vuur',VAL.streak>=5);}
   const sk=document.getElementById('val-streak');if(sk)sk.textContent=VAL.streak>=5?`🔥 ×${VAL.streak>=10?3:2}`:VAL.streak>=2?`${VAL.streak} op rij`:'';
   arcLater(valKaart,goed?260:1900);
 }
 function valEinde(){
   if(VAL.klaar)return;VAL.klaar=true;cancelAnimationFrame(ARC.raf);
-  arcResult({game:'val',gewonnen:VAL.goed>VAL.fout,kicker:'Tijd!',groot:arcNf(VAL.score,0)+' <small>punten</small>',
+  arcResult({game:'val',gewonnen:VAL.goed>VAL.fout,kicker:'Tijd!',groot:'',tel:{naar:VAL.score,na:' <small>punten</small>'},
     sub:`${VAL.vallen} ${VAL.vallen===1?'val':'vallen'} ontdekt · langste reeks ${VAL.beste}`,recWaarde:VAL.score,
     stats:[['Goed',VAL.goed],['Fout',VAL.fout],['Vallen',VAL.vallen]],xp:Math.min(160,VAL.goed*4+VAL.vallen*2),
     leer:'Een val herkennen is sterker dan het goede antwoord weten: je snapt dan ook waarom de rest niet klopt.'});
@@ -873,12 +956,12 @@ function arcGeenVragen(game){
 
 // ═══════ ILLUSTRATIES (hub + intro) ═══════
 const ARC_ART={
-  bom:()=>`<svg viewBox="0 0 120 100"><rect x="18" y="30" width="84" height="56" rx="10" fill="#27272a" stroke="#0a0a0a" stroke-width="3"/><rect x="30" y="40" width="60" height="22" rx="4" fill="#0b0b0b"/><text x="60" y="57" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-weight="700" font-size="16" fill="#ef4444">00:18</text><circle cx="34" cy="74" r="5" fill="#22c55e"/><circle cx="50" cy="74" r="5" fill="#22c55e"/><circle cx="66" cy="74" r="5" fill="#ef4444"/><path d="M86 30c4-14 14-18 20-12" fill="none" stroke="#a16207" stroke-width="4" stroke-linecap="round"/><path d="M104 12l3 6 6 1-5 4 1 6-5-3-5 3 1-6-5-4 6-1z" fill="#facc15"/></svg>`,
-  boss:()=>`<svg viewBox="0 0 120 100"><path d="M30 92V44c0-18 14-30 30-30s30 12 30 30v48l-8-7-8 7-7-7-7 7-7-7-7 7-8-7z" fill="#8b5cf6" stroke="#1e0b3a" stroke-width="3.5"/><circle cx="49" cy="46" r="8" fill="#fff" stroke="#1e0b3a" stroke-width="3"/><circle cx="71" cy="46" r="8" fill="#fff" stroke="#1e0b3a" stroke-width="3"/><circle cx="51" cy="48" r="3.5" fill="#1e0b3a"/><circle cx="69" cy="48" r="3.5" fill="#1e0b3a"/><path d="M47 66q13 10 26 0" fill="#1e0b3a"/><rect x="14" y="8" width="92" height="7" rx="3.5" fill="#1e0b3a" opacity=".25"/><rect x="14" y="8" width="58" height="7" rx="3.5" fill="#ef4444"/></svg>`,
-  risico:()=>`<svg viewBox="0 0 120 100"><circle cx="46" cy="58" r="26" fill="#facc15" stroke="#a16207" stroke-width="4"/><circle cx="46" cy="58" r="17" fill="none" stroke="#a16207" stroke-width="3" stroke-dasharray="4 4"/><circle cx="76" cy="44" r="22" fill="#fde047" stroke="#a16207" stroke-width="4"/><text x="76" y="51" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="18" fill="#713f12">×2</text><path d="M96 78c6-6 4-16-2-20 1 8-6 10-6 16 0 4 4 8 8 4z" fill="#f97316"/></svg>`,
-  zwak:()=>`<svg viewBox="0 0 120 100"><circle cx="60" cy="52" r="36" fill="none" stroke="#fb923c" stroke-width="7" opacity=".35"/><circle cx="60" cy="52" r="24" fill="none" stroke="#fb923c" stroke-width="7" opacity=".6"/><circle cx="60" cy="52" r="11" fill="#f97316"/><path d="M60 52l38-30" stroke="#1f2937" stroke-width="4" stroke-linecap="round"/><path d="M92 16l12 2-6 10z" fill="#1f2937"/></svg>`,
-  sorteer:()=>`<svg viewBox="0 0 120 100"><rect x="10" y="60" width="30" height="26" rx="6" fill="#22c55e"/><rect x="45" y="44" width="30" height="42" rx="6" fill="#3b82f6"/><rect x="80" y="24" width="30" height="62" rx="6" fill="#a855f7"/><text x="25" y="78" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#fff">1</text><text x="60" y="70" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#fff">2</text><text x="95" y="60" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#fff">3</text></svg>`,
-  val:()=>`<svg viewBox="0 0 120 100"><rect x="34" y="14" width="56" height="74" rx="9" fill="#fff" stroke="#0f172a" stroke-width="3" transform="rotate(-10 62 51)"/><rect x="30" y="16" width="56" height="74" rx="9" fill="#fff" stroke="#0f172a" stroke-width="3" transform="rotate(8 58 53)"/><text x="58" y="60" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="15" fill="#ef4444" transform="rotate(8 58 53)">VAL?</text><circle cx="22" cy="80" r="11" fill="#ef4444"/><path d="M17 75l10 10M27 75L17 85" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="100" cy="80" r="11" fill="#22c55e"/><path d="M95 80l4 4 7-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>`,
+  bom:()=>`<svg viewBox="0 0 120 100"><rect x="18" y="30" width="84" height="56" rx="10" fill="#27272a" stroke="#0a0a0a" stroke-width="3"/><rect x="30" y="40" width="60" height="22" rx="4" fill="#0b0b0b"/><text x="60" y="57" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-weight="700" font-size="16" fill="#ef4444">00:18</text><circle cx="34" cy="74" r="5" fill="#22c55e"/><circle cx="50" cy="74" r="5" fill="#22c55e"/><circle cx="66" cy="74" r="5" fill="#ef4444"/><path d="M86 30c4-14 14-18 20-12" fill="none" stroke="#a16207" stroke-width="4" stroke-linecap="round"/><path class="a-vonk" d="M104 12l3 6 6 1-5 4 1 6-5-3-5 3 1-6-5-4 6-1z" fill="#facc15"/></svg>`,
+  boss:()=>`<svg viewBox="0 0 120 100"><g class="a-bob"><path d="M30 92V44c0-18 14-30 30-30s30 12 30 30v48l-8-7-8 7-7-7-7 7-7-7-7 7-8-7z" fill="#8b5cf6" stroke="#1e0b3a" stroke-width="3.5"/><circle cx="49" cy="46" r="8" fill="#fff" stroke="#1e0b3a" stroke-width="3"/><circle cx="71" cy="46" r="8" fill="#fff" stroke="#1e0b3a" stroke-width="3"/><circle cx="51" cy="48" r="3.5" fill="#1e0b3a"/><circle cx="69" cy="48" r="3.5" fill="#1e0b3a"/><path d="M47 66q13 10 26 0" fill="#1e0b3a"/></g><rect x="14" y="8" width="92" height="7" rx="3.5" fill="#1e0b3a" opacity=".25"/><rect x="14" y="8" width="58" height="7" rx="3.5" fill="#ef4444"/></svg>`,
+  risico:()=>`<svg viewBox="0 0 120 100"><circle cx="46" cy="58" r="26" fill="#facc15" stroke="#a16207" stroke-width="4"/><circle cx="46" cy="58" r="17" fill="none" stroke="#a16207" stroke-width="3" stroke-dasharray="4 4"/><g class="a-flip"><circle cx="76" cy="44" r="22" fill="#fde047" stroke="#a16207" stroke-width="4"/><text x="76" y="51" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="18" fill="#713f12">×2</text></g><path class="a-vlam" d="M96 78c6-6 4-16-2-20 1 8-6 10-6 16 0 4 4 8 8 4z" fill="#f97316"/></svg>`,
+  zwak:()=>`<svg viewBox="0 0 120 100"><circle cx="60" cy="52" r="36" fill="none" stroke="#fb923c" stroke-width="7" opacity=".35"/><circle cx="60" cy="52" r="24" fill="none" stroke="#fb923c" stroke-width="7" opacity=".6"/><circle class="a-puls" cx="60" cy="52" r="11" fill="#f97316"/><g class="a-pijl"><path d="M60 52l38-30" stroke="#1f2937" stroke-width="4" stroke-linecap="round"/><path d="M92 16l12 2-6 10z" fill="#1f2937"/></g></svg>`,
+  sorteer:()=>`<svg viewBox="0 0 120 100"><rect class="a-b1" x="10" y="60" width="30" height="26" rx="6" fill="#22c55e"/><rect class="a-b2" x="45" y="44" width="30" height="42" rx="6" fill="#3b82f6"/><rect class="a-b3" x="80" y="24" width="30" height="62" rx="6" fill="#a855f7"/><text x="25" y="78" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#fff">1</text><text x="60" y="70" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#fff">2</text><text x="95" y="60" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#fff">3</text></svg>`,
+  val:()=>`<svg viewBox="0 0 120 100"><g class="a-zwaai"><rect x="34" y="14" width="56" height="74" rx="9" fill="#fff" stroke="#0f172a" stroke-width="3" transform="rotate(-10 62 51)"/><rect x="30" y="16" width="56" height="74" rx="9" fill="#fff" stroke="#0f172a" stroke-width="3" transform="rotate(8 58 53)"/><text x="58" y="60" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="15" fill="#ef4444" transform="rotate(8 58 53)">VAL?</text></g><circle cx="22" cy="80" r="11" fill="#ef4444"/><path d="M17 75l10 10M27 75L17 85" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="100" cy="80" r="11" fill="#22c55e"/><path d="M95 80l4 4 7-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>`,
 };
 
 // ═══════ REGISTER ═══════
