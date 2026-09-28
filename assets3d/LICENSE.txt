@@ -1,0 +1,4 @@
+assets3d/clash.glb bevat modellen van:
+- Kenney (www.kenney.nl): Mini Characters, Castle Kit, Tower Defense Kit, Nature Kit. Licentie: CC0 1.0.
+- RobotExpressive door Tomás Laulhé (Quaternius), aangepast door Don McCurdy. Licentie: CC0 1.0.
+Opnieuw bouwen: zie scripts/clash-assets.mjs.
