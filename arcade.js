@@ -506,27 +506,38 @@ function bomBoem(reden){
 }
 
 // ═══════ 👹 EXAMENBOSS ═══════
+// Drie fases: bij 66% en 33% wordt de boss woedend (sneller, harder). Elke vraag
+// heeft een aanvalsbalk: antwoord je niet op tijd, dan slaat hij toe. Goede
+// antwoorden laden je superaanval op (3 goed = ×2,5 schade op je volgende raak).
+// Een ghost uit je divisie speelt mee.
 const BOSS={};
+const BOSS_FASE=[{naam:'Examenboss',tijd:1,slag:20},{naam:'Woedend',tijd:.8,slag:26},{naam:'Laatste adem',tijd:.66,slag:32}];
+const BOSS_ZEG={start:['Laat maar zien wat je weet.','Dit examen haal je nooit.','Ik heb de moeilijkste vragen voor je.'],
+  fout:['Die zag ik aankomen.','Haha, bijna!','Lees de vraag nog eens.','Dat staat niet in je samenvatting.'],
+  raak:['Au! Die zat.','Niet slecht...','Hmpf.'],fase1:['Nu word ik boos!','Genoeg gespeeld.'],fase2:['Dit kan niet waar zijn...','Mijn laatste krachten!'],
+  super:['Wat is DAT?!','Nee, niet de superaanval!'],traag:['Te traag!','Tik tak...']};
 function bossVoorbereid(klaar){arcPool(ARC.vakId,p=>{BOSS.pool=p;klaar();});}
 function bossRun(){
   if(!BOSS.pool||BOSS.pool.length<6){arcGeenVragen('boss');return;}
-  // Ghost: een speler uit je divisie (dezelfde namen/dieren als de weekwedstrijd).
   let ghost={naam:'Sanne de Vries',animalId:'vos',stage:2};
   try{const L=ensureLeague();const c=(L.cohort||[]).slice(6,18);if(c.length){const b=arcPick(c);ghost={naam:b.naam,animalId:b.animalId,stage:b.stage};}}catch(e){}
   const div=(()=>{try{return ensureLeague().division||0;}catch(e){return 0;}})();
-  Object.assign(BOSS,{hp:1000,max:1000,jij:100,combo:0,hits:0,fout:0,dmg:0,start:0,duur:180000,gebruikt:new Set(),
-    ghost,ghostTijd:(150-div*8+Math.random()*30)*1000,item:null,qStart:0,klaar:false,diff:1});
+  Object.assign(BOSS,{hp:1000,max:1000,jij:100,combo:0,hits:0,fout:0,dmg:0,start:0,duur:180000,gebruikt:new Set(),fase:0,energie:0,superKlaar:false,superAan:false,supers:0,beste:0,
+    ghost,ghostTijd:(150-div*8+Math.random()*30)*1000,item:null,qStart:0,qTijd:0,klaar:false,diff:1,slagen:0});
   const vak=arcVak(ARC.vakId);
   arcStage('boss',`${arcTop('Examenboss',`<span class="boss-klok" id="boss-klok">3:00</span>`)}
     <div class="boss-arena">
       <div class="boss-ghost"><span class="boss-ghost-av">${bossAv(ghost)}</span><div><small>Ghost uit je divisie</small><b>${_arcEsc(ghost.naam)}</b><div class="boss-bar mini"><i id="boss-ghost-bar"></i></div></div></div>
-      <div class="boss-mon a3-wrap" id="boss-mon" style="--vk:${vak&&vak.kleur||'#7c3aed'}">${bossSVG(vak)}<div class="a3-host a3-boss" id="a3-boss" aria-hidden="true"></div></div>
-      <div class="boss-hp"><div class="boss-hp-l"><b>Examenboss</b><span id="boss-hp-t">1.000 / 1.000</span></div><div class="boss-bar"><i class="spoor" id="boss-hp-spoor"></i><i id="boss-hp-bar"></i></div></div>
+      <div class="boss-mon a3-wrap" id="boss-mon" style="--vk:${vak&&vak.kleur||'#7c3aed'}">${bossSVG(vak)}<div class="a3-host a3-boss" id="a3-boss" aria-hidden="true"></div><div class="boss-zeg" id="boss-zeg" aria-live="polite"></div></div>
+      <div class="boss-hp"><div class="boss-hp-l"><b id="boss-naam">Examenboss</b><span id="boss-hp-t">1.000 / 1.000</span></div><div class="boss-bar"><i class="spoor" id="boss-hp-spoor"></i><i id="boss-hp-bar"></i><s class="fase f1"></s><s class="fase f2"></s></div></div>
       <div class="boss-me"><span>Jij</span><div class="boss-bar me"><i id="boss-me-bar"></i></div><span class="boss-combo" id="boss-combo"></span></div>
+      <div class="boss-acties"><div class="boss-slag" aria-hidden="true"><i id="boss-slag"></i><span>Boss laadt op</span></div>
+        <button class="boss-super" id="boss-super" disabled aria-label="Superaanval"><span class="boss-super-e">${[0,1,2].map(()=>'<i></i>').join('')}</span><b>Superaanval</b></button></div>
       <div id="boss-q"></div>
     </div>`);
+  document.getElementById('boss-super').onclick=bossSuperAan;
   arcA3('boss','a3-boss',vak&&vak.kleur);
-  arcCountdown(()=>{BOSS.start=performance.now();bossVraag();bossLoop();});
+  arcCountdown(()=>{BOSS.start=performance.now();bossZeg('start');bossVraag();bossLoop();});
 }
 function bossAv(g){try{if(typeof getAnimalDisplay==='function'){const h=getAnimalDisplay(g.animalId,g.stage||0,28,'');if(h)return h;}}catch(e){}return '🦊';}
 function bossSVG(vak){
@@ -540,58 +551,94 @@ function bossSVG(vak){
     <path d="M70 108q30 22 60 0" fill="#12051f"/><path d="M76 110l6 8 6-7 6 8 6-8 6 8 6-8 6 7 6-8" fill="none" stroke="#fff" stroke-width="3.5" stroke-linejoin="round"/>
     <rect x="80" y="124" width="40" height="18" rx="5" fill="#fff" stroke="#12051f" stroke-width="3"/><text x="100" y="138" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="13" fill="#12051f">${code}</text></svg>`;
 }
+function bossZeg(soort,kans){
+  if(kans!=null&&Math.random()>kans)return;const el=document.getElementById('boss-zeg');if(!el)return;
+  el.textContent=arcPick(BOSS_ZEG[soort]||BOSS_ZEG.start);arcRestart(el,'aan');clearTimeout(BOSS._zegT);BOSS._zegT=setTimeout(()=>el.classList.remove('aan'),2200);
+}
+// Aanvalstijd per vraag: langere vragen krijgen meer tijd, hogere fases minder.
+function bossVraagTijd(it){const n=(it.q.v.length+it.q.o.join('').length);return Math.round((9000+Math.min(9000,n*55))*BOSS_FASE[BOSS.fase].tijd);}
 function bossLoop(){
-  const t=performance.now()-BOSS.start;const rest=Math.max(0,BOSS.duur-t);
+  const nu=performance.now();const t=nu-BOSS.start;const rest=Math.max(0,BOSS.duur-t);
   const k=document.getElementById('boss-klok');if(k){k.textContent=Math.floor(rest/60000)+':'+String(Math.floor(rest%60000/1000)).padStart(2,'0');k.classList.toggle('kritiek',rest<20000);}
   const gb=document.getElementById('boss-ghost-bar');if(gb)gb.style.width=Math.max(0,100-Math.min(100,t/BOSS.ghostTijd*100))+'%';
+  // Aanvalsbalk: vol = de boss slaat toe.
+  if(BOSS.qTijd&&!BOSS.antwoordt){const p=Math.min(1,(nu-BOSS.qStart)/BOSS.qTijd);const sl=document.getElementById('boss-slag');
+    if(sl){sl.style.width=(p*100).toFixed(1)+'%';sl.parentElement.classList.toggle('bijna',p>.75);}
+    if(p>=1)bossTeTraag();}
   if(rest<=0&&!BOSS.klaar){bossEinde('tijd');return;}
   ARC.raf=requestAnimationFrame(bossLoop);
 }
+function bossTeTraag(){
+  if(BOSS.klaar)return;BOSS.slagen++;BOSS.combo=0;bossSlag(BOSS_FASE[BOSS.fase].slag,true);bossZeg('traag',.8);
+  BOSS.qStart=performance.now();bossBalken();
+}
+// De boss slaat: schade aan jou, rood scherm, klauw.
+function bossSlag(sch,traag){
+  BOSS.jij=Math.max(0,BOSS.jij-sch);arcFx('hurt');arcHap([50,30,50]);a3Haak('boss','aanval');
+  const st=document.getElementById('arc-stage');const mon=document.getElementById('boss-mon');
+  arcLater(()=>arcRestart(st,'boss-hit'),typeof A3S!=='undefined'&&A3S.boss?330:0);arcRestart(mon,'valt-aan');
+  if(!arcLite()){const kl=document.createElement('div');kl.className='boss-klauw';kl.innerHTML='<i></i><i></i><i></i>';st.appendChild(kl);arcLater(()=>kl.remove(),700);}
+  const me=document.querySelector('.boss-me');if(me){const e=document.createElement('span');e.className='boss-auw';e.textContent='−'+sch;me.appendChild(e);arcLater(()=>e.remove(),900);}
+  if(BOSS.jij<=0){BOSS.klaar=true;a3Haak('boss','juich');bossBalken();arcLater(()=>{BOSS.klaar=false;bossEinde('ko');},1400);}
+}
 function bossVraag(){
   if(BOSS.klaar)return;
-  const it=arcNext(BOSS.pool,BOSS.gebruikt,BOSS.diff);BOSS.item=it;BOSS.qStart=performance.now();
+  const it=arcNext(BOSS.pool,BOSS.gebruikt,BOSS.diff);BOSS.item=it;BOSS.qStart=performance.now();BOSS.qTijd=bossVraagTijd(it);BOSS.antwoordt=false;
   const o=arcOpties(it.q);BOSS.opts=o;
   const host=document.getElementById('boss-q');if(!host)return;
-  host.innerHTML=arcVraagHtml(it,o,'boss-card');
+  host.innerHTML=arcVraagHtml(it,o,'boss-card'+(BOSS.superAan?' super':''));
   const card=host.firstElementChild;card.classList.add('in');
   arcBindOpts(card,(k,knoppen)=>bossAntwoord(k,knoppen,card));
 }
+function bossSuperAan(){if(!BOSS.superKlaar||BOSS.superAan)return;BOSS.superAan=true;BOSS.superKlaar=false;BOSS.energie=0;arcSnd('streak');arcHap(20);
+  const c=document.querySelector('#boss-q .arc-q');if(c)c.classList.add('super');bossZeg('super');bossBalken();}
 function bossAntwoord(k,knoppen,card){
-  const it=BOSS.item,ms=performance.now()-BOSS.qStart;const goed=k===BOSS.opts.juist;
+  const it=BOSS.item,ms=performance.now()-BOSS.qStart;const goed=k===BOSS.opts.juist;BOSS.antwoordt=true;
   arcLog(it,goed,BOSS.opts.idx[k],ms);
   knoppen[BOSS.opts.juist].classList.add('goed');
-  const mon=document.getElementById('boss-mon');
+  const mon=document.getElementById('boss-mon');const oudeFase=BOSS.fase;
   if(goed){
-    BOSS.combo++;BOSS.hits++;
+    BOSS.combo++;BOSS.hits++;BOSS.beste=Math.max(BOSS.beste,BOSS.combo);
     const basis={1:22,2:36,3:52}[it.d]||36;const snel=ms<6000?Math.round((6000-ms)/400):0;
-    const mult=BOSS.combo>=5?1.5:BOSS.combo>=3?1.25:1;
+    const mult=(BOSS.combo>=5?1.5:BOSS.combo>=3?1.25:1)*(BOSS.superAan?2.5:1);const sup=BOSS.superAan;
     const dmg=Math.round((basis+snel)*mult);BOSS.hp=Math.max(0,BOSS.hp-dmg);BOSS.dmg+=dmg;
+    if(sup){BOSS.superAan=false;BOSS.supers++;}else if(!BOSS.superKlaar){BOSS.energie=Math.min(3,BOSS.energie+1);if(BOSS.energie>=3){BOSS.superKlaar=true;arcSnd('combo');}}
     BOSS.diff=Math.min(3,BOSS.diff+(BOSS.combo%2===0?1:0));
     const van=arcMid(knoppen[k]),naar=arcMid(mon);const met3d=typeof A3S!=='undefined'&&A3S.boss&&!A3S.boss.P.dood;
-    if(met3d){a3Haak('boss','raak',dmg,mult>1);arcLater(()=>{arcFx('hit');arcHap(20);bossPop(`−${dmg}`,mult>1?'crit':'');bossBalken();},340);}
-    else arcFly(van,naar,'<span class="boss-orb"></span>',{duur:380,boog:-40,eind:1.4,klaar:()=>{
-      arcFx('hit');arcHap(20);arcBurst(naar.x,naar.y-10,{n:mult>1?20:12,kleuren:mult>1?['#fde047','#fff','#f97316']:['#fb923c','#fde047','#fff'],afstand:mult>1?110:80,maat:7});
-      bossPop(`−${dmg}`,mult>1?'crit':'');arcRestart(mon,'au');bossBalken();}});
+    const klap=()=>{arcFx('hit');arcHap(sup?[30,20,60]:20);bossPop(`−${dmg}`,sup?'super':mult>1?'crit':'');arcRestart(mon,'au');bossBalken();if(!sup)bossZeg('raak',.25);};
+    if(met3d){if(sup)a3Haak('boss','laser');else a3Haak('boss','raak',dmg,mult>1);arcLater(klap,sup?520:340);}
+    else arcFly(van,naar,`<span class="boss-orb${sup?' super':''}"></span>`,{duur:380,boog:-40,eind:1.4,klaar:()=>{klap();arcBurst(naar.x,naar.y-10,{n:sup?30:12,kleuren:['#fde047','#fff','#f97316'],afstand:sup?150:80,maat:7});}});
+    if(sup)bossZeg('super');
   }else{
-    knoppen[k].classList.add('fout');BOSS.combo=0;BOSS.fout++;BOSS.jij=Math.max(0,BOSS.jij-25);BOSS.diff=Math.max(1,BOSS.diff-1);
-    arcFx('hurt');arcHap([50,30,50]);
-    const st=document.getElementById('arc-stage');a3Haak('boss','aanval');arcLater(()=>arcRestart(st,'boss-hit'),typeof A3S!=='undefined'&&A3S.boss?330:0);arcRestart(mon,'valt-aan');
-    if(!arcLite()){const kl=document.createElement('div');kl.className='boss-klauw';kl.innerHTML='<i></i><i></i><i></i>';st.appendChild(kl);arcLater(()=>kl.remove(),700);}
+    knoppen[k].classList.add('fout');BOSS.combo=0;BOSS.fout++;BOSS.diff=Math.max(1,BOSS.diff-1);BOSS.superAan=false;
+    bossSlag(BOSS_FASE[BOSS.fase].slag+5);bossZeg('fout',.7);
     const uo=it.q.uo&&it.q.uo[BOSS.opts.idx[k]];
     card.insertAdjacentHTML('beforeend',`<div class="arc-uitleg"><b>Boss-aanval.</b> ${_arcEsc(uo||it.q.u||'')}</div>`);
   }
+  // Fasewissel.
+  BOSS.fase=BOSS.hp<=BOSS.max*.33?2:BOSS.hp<=BOSS.max*.66?1:0;
+  if(BOSS.fase>oudeFase&&BOSS.hp>0)arcLater(()=>bossFase(BOSS.fase),goed?600:200);
   if(!goed)bossBalken();
-  if(BOSS.hp<=0){a3Haak('boss','dood');arcLater(()=>{const m=document.getElementById('boss-mon');if(m&&!(typeof A3S!=='undefined'&&A3S.boss)){m.classList.add('poef');const c=arcMid(m);arcBurst(c.x,c.y,{n:40,kleuren:['#a78bfa','#c4b5fd','#fde047','#fff'],afstand:220,maat:10,duur:1000});}arcSnd('fanfare');},450);arcLater(()=>bossEinde('win'),2300);return;}
-  if(BOSS.jij<=0){a3Haak('boss','juich');arcLater(()=>bossEinde('ko'),1400);return;}
-  arcLater(bossVraag,goed?520:1900);
+  if(BOSS.hp<=0){BOSS.klaar=true;a3Haak('boss','dood');arcLater(()=>{const m=document.getElementById('boss-mon');if(m&&!(typeof A3S!=='undefined'&&A3S.boss)){m.classList.add('poef');const c=arcMid(m);arcBurst(c.x,c.y,{n:40,kleuren:['#a78bfa','#c4b5fd','#fde047','#fff'],afstand:220,maat:10,duur:1000});}arcSnd('fanfare');},450);arcLater(()=>{BOSS.klaar=false;bossEinde('win');},2300);return;}
+  if(BOSS.jij<=0)return;
+  arcLater(bossVraag,goed?560:2100);
+}
+function bossFase(f){
+  a3Haak('boss','fase',f);arcSnd('levelup');arcHap([40,40,80]);bossZeg(f===1?'fase1':'fase2');
+  const st=document.getElementById('arc-stage');st.classList.remove('boss-f1','boss-f2');st.classList.add('boss-f'+f);
+  const n=document.getElementById('boss-naam');if(n)n.textContent=BOSS_FASE[f].naam;
+  const b=document.createElement('div');b.className='boss-fase-banner';b.innerHTML=`<small>Fase ${f+1}</small><b>${BOSS_FASE[f].naam}</b><span>${f===1?'Hij valt sneller aan':'Nog één keer alles geven'}</span>`;st.appendChild(b);arcLater(()=>b.remove(),2000);
 }
 function bossPop(t,cls){const m=document.getElementById('boss-mon');if(!m)return;const e=document.createElement('span');e.className='boss-pop '+cls;e.textContent=t;m.appendChild(e);arcLater(()=>e.remove(),900);}
 function bossBalken(){
   const a=document.getElementById('boss-hp-bar');if(a)a.style.width=(BOSS.hp/BOSS.max*100)+'%';
   const sp=document.getElementById('boss-hp-spoor');if(sp)sp.style.width=(BOSS.hp/BOSS.max*100)+'%';
-  const b=document.getElementById('boss-me-bar');if(b)b.style.width=BOSS.jij+'%';
+  const b=document.getElementById('boss-me-bar');if(b){b.style.width=BOSS.jij+'%';b.parentElement.classList.toggle('laag',BOSS.jij<=30);}
   const t=document.getElementById('boss-hp-t');if(t)t.textContent=arcNf(BOSS.hp,0)+' / '+arcNf(BOSS.max,0);
   const c=document.getElementById('boss-combo');if(c)c.textContent=BOSS.combo>=3?`Combo ×${BOSS.combo>=5?'1,5':'1,25'}`:'';
+  const s=document.getElementById('boss-super');if(s){s.disabled=!BOSS.superKlaar;s.classList.toggle('klaar',BOSS.superKlaar);s.classList.toggle('aan',BOSS.superAan);
+    s.querySelectorAll('.boss-super-e i').forEach((x,i)=>x.classList.toggle('vol',BOSS.superKlaar||BOSS.superAan||i<BOSS.energie));
+    s.querySelector('b').textContent=BOSS.superAan?'Volgende raak ×2,5':'Superaanval';}
 }
 function bossEinde(hoe){
   if(BOSS.klaar)return;BOSS.klaar=true;cancelAnimationFrame(ARC.raf);
@@ -599,11 +646,11 @@ function bossEinde(hoe){
   const sneller=win&&tijd<BOSS.ghostTijd;
   arcResult({game:'boss',gewonnen:win,kicker:win?'Examenboss verslagen':hoe==='ko'?'Knock-out':'De tijd is op',
     groot:win?arcTijd(tijd):'',tel:win?null:{naar:BOSS.dmg,na:' <small>schade</small>'},
-    sub:win?(sneller?`Sneller dan ${_arcEsc(BOSS.ghost.naam)} (${arcTijd(BOSS.ghostTijd)})`:`${_arcEsc(BOSS.ghost.naam)} was sneller (${arcTijd(BOSS.ghostTijd)})`):`Nog ${arcNf(BOSS.hp,0)} HP te gaan.`,
+    sub:win?(sneller?`Sneller dan ${_arcEsc(BOSS.ghost.naam)} (${arcTijd(BOSS.ghostTijd)})`:`${_arcEsc(BOSS.ghost.naam)} was sneller (${arcTijd(BOSS.ghostTijd)})`):`Nog ${arcNf(BOSS.hp,0)} HP te gaan${BOSS.fase?' in fase '+(BOSS.fase+1):''}.`,
     recWaarde:win?Math.round(tijd):null,hoger:false,
     recDelta:oud=>oud?arcNf((oud-tijd)/1000,2)+' s sneller':'',
-    stats:[['Raak',BOSS.hits],['Mis',BOSS.fout],['Schade',arcNf(BOSS.dmg,0)]],
-    xp:BOSS.hits*10+(win?100:0)+(sneller?40:0)});
+    stats:[['Raak',BOSS.hits],['Langste combo',BOSS.beste],['Superaanvallen',BOSS.supers]],
+    xp:BOSS.hits*10+(win?100:0)+(sneller?40:0)+BOSS.supers*10});
 }
 
 // ═══════ 🎰 RISICO RUN ═══════
@@ -1035,7 +1082,7 @@ const ARC_GAMES={
     art:ARC_ART.bom,recLabel:'Record',recFmt:v=>v+' '+(v===1?'bom':'bommen'),run:bomRun,
     kan:v=>BOM_REL.some(r=>r.vak.includes(v))||BOM_PROC_VAK.includes(v)?true:'Speelt met gemengde natuurkunde-sommen'},
   boss:{id:'boss',naam:'Examenboss',theme:'boss',kleur:'#8b5cf6',pitch:'Versla de boss in 3 minuten, sneller dan een ghost uit je divisie.',
-    uitleg:'Elk goed antwoord doet schade. Snel en moeilijk doet meer, en een combo telt op. Een fout? Dan slaat de boss terug. Een speler uit je divisie speelt als ghost mee.',
+    uitleg:'Elk goed antwoord doet schade; snel en moeilijk doet meer. Drie goed laadt je superaanval op (×2,5). Maar de boss laadt ook op: antwoord je te laat of fout, dan slaat hij toe. Bij 66% en 33% wordt hij woedend.',
     art:ARC_ART.boss,recLabel:'Snelste',recFmt:v=>v?arcTijd(v):'-',voorbereid:bossVoorbereid,run:bossRun},
   risico:{id:'risico',naam:'Risico Run',theme:'risico',kleur:'#eab308',pitch:'Veilig, normaal of risico. Opslaan of doorgaan?',
     uitleg:'Kies per vraag je inzet: moeilijker levert meer op. Na elk goed antwoord beslis je: pot op de bank zetten, of doorspelen voor een hogere vermenigvuldiger. Een fout kost je de pot en een hartje.',

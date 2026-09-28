@@ -244,6 +244,22 @@ function a3Boss(host,kleur){
         a3Deeltjes(P,naar,{n:crit?26:16,kleur:crit?0xfff1a0:0xffb24a,maat:.1,snel:4,omhoog:.4,zwaar:6,dur:.55});
         a3Deeltjes(P,naar,{n:4,tex:a3Rook(),kleur:0xcfc6e8,normaal:true,op:.5,maat:.4,groei:2,snel:.6,omhoog:.6,zwaar:-.5,dur:.8});
         a3Flits(P,0xffd08a,crit?26:14,.3,naar.clone().add(new T0.Vector3(0,0,1)));flits=.15;B.tv=-(crit?5:3);P.schud=Math.max(P.schud,crit?.06:.03);speel('No',1.6);});};
+  // Fase 2 en 3: rode gloed, vonken rond het podium, sneller ademen.
+  const vonken=[];B.fase=f=>{if(B.uit)return;speel('Jump',1);P.schud=.18;const kl=f===1?0xff7a2a:0xff2a3a;
+    rand.material.color.set(kl);rand.material.emissive.set(kl);gl.material.color.set(kl);
+    for(const m of mats)if(m.name==='Main'){m.color.lerp(new T.Color(f===1?0xd9482f:0x9c1c2a),.55);}
+    a3Flits(P,kl,30,.7,new T.Vector3(0,1.5,1.5));a3Deeltjes(P,new T.Vector3(0,.3,0),{n:30,kleur:kl,maat:.1,snel:4,omhoog:1.2,zwaar:5,dur:.9});
+    const n=f===1?6:12;for(let i=0;i<n;i++){const sp=new T.Sprite(new T.SpriteMaterial({map:a3Vonk(),color:kl,transparent:true,depthWrite:false,blending:T.AdditiveBlending}));sp.scale.setScalar(.22);P.sc.add(sp);vonken.push({sp,a:i/n*Math.PI*2,r:1.5+Math.random()*.4,h:.3+Math.random()*1.8});}
+    act.Idle.timeScale=f===1?1.5:2;};
+  P.ticks.push((dt,t)=>{for(const v of vonken){v.a+=dt*(.8+v.h*.2);v.sp.position.set(Math.cos(v.a)*v.r,v.h+Math.sin(t*3+v.a)*.15,Math.sin(v.a)*v.r*.6);v.sp.material.opacity=.6+Math.sin(t*9+v.a*3)*.4;}});
+  // Superaanval: een dikke gouden straal vanaf de camera.
+  B.laser=()=>{if(B.uit)return;const naar=borst();const van=new T.Vector3(0,.4,4.5);const dir=naar.clone().sub(van);const len=dir.length();
+    const straal=new T.Mesh(new T.CylinderGeometry(.14,.22,len,16,1,true),new T.MeshBasicMaterial({color:0xfff1a0,transparent:true,opacity:.95,depthWrite:false,blending:T.AdditiveBlending,side:T.DoubleSide}));
+    straal.position.copy(van).addScaledVector(dir,.5);straal.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),dir.clone().normalize());P.sc.add(straal);
+    const kern=straal.clone();kern.material=new T.MeshBasicMaterial({color:0xffffff,transparent:true,depthWrite:false,blending:T.AdditiveBlending});kern.scale.set(.4,1,.4);P.sc.add(kern);
+    a3Fx(P,.55,p=>{const k=p<.2?p/.2:1-(p-.2)/.8;straal.scale.set(k*1.2+.1,1,k*1.2+.1);straal.material.opacity=.95*k;kern.material.opacity=k;},()=>{P.sc.remove(straal);P.sc.remove(kern);straal.material.dispose();kern.material.dispose();straal.geometry.dispose();});
+    setTimeout(()=>{if(P.dood)return;a3Deeltjes(P,naar,{n:40,kleur:0xfff1a0,maat:.12,snel:6,omhoog:.5,zwaar:6,dur:.8});a3Deeltjes(P,naar,{n:8,tex:a3Rook(),kleur:0xe8dcff,normaal:true,op:.6,maat:.6,groei:2.5,snel:1,omhoog:.6,zwaar:-.5,dur:1});
+      a3Flits(P,0xfff0a0,60,.5,naar.clone().add(new T.Vector3(0,0,1)));flits=.3;B.tv=-8;P.schud=.3;speel('No',1.8);},180);};
   B.aanval=()=>{if(B.uit)return;speel('Punch',1.25);setTimeout(()=>{if(!P.dood){P.schud=.22;a3Flits(P,0xff3b2f,10,.35,new A3T.Vector3(0,1.4,3));}},330);};
   B.dood=()=>{if(B.uit)return;B.uit=true;speel('Death',1);const T0=A3T;
     setTimeout(()=>{if(P.dood)return;const p=borst();a3Deeltjes(P,p,{n:40,kleur:0xffd070,maat:.12,snel:6,omhoog:.6,zwaar:7,dur:1});
