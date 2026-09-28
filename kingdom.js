@@ -254,6 +254,16 @@ const KD_SLOT=[[2,2],[0,2],[2,0],[0,0]];
 
 // ═══════ EILAND ═══════
 const KD_NIVEAUS=[[0,'Kamp'],[1,'Gehucht'],[4,'Dorp'],[10,'Stadje'],[20,'Stad'],[34,'Metropool'],[48,'Kingdom']];
+// Elk nieuw eilandniveau zet er iets groots bij: zo wordt het eiland zichtbaar grootser.
+const KD_WONDEREN=[
+  {id:'inwoners',min:1,ic:'🚶',naam:'Inwoners',tekst:'Mensen wandelen over je paden. Hoe meer je bouwt, hoe drukker het wordt.'},
+  {id:'lantaarns',min:4,ic:'🏮',naam:'Lantaarns',tekst:'Lantaarns langs alle paden, \'s avonds branden ze.'},
+  {id:'muur',min:10,ic:'🧱',naam:'Stadsmuur',tekst:'Een muur met torens rond het kasteelplein.'},
+  {id:'haven',min:20,ic:'🌉',naam:'Buiteneiland',tekst:'Een tweede eiland met een watermolen, verbonden door een brug.'},
+  {id:'ballon',min:34,ic:'🎈',naam:'Luchtballonnen',tekst:'Luchtballonnen in je vakkleuren drijven over het eiland.'},
+  {id:'kasteel',min:48,ic:'👑',naam:'Het grote kasteel',tekst:'Vier torens, gouden vaandels en vuurwerk in de avond.'}];
+function kdWonderAan(id,b){const w=KD_WONDEREN.find(x=>x.id===id);return !!w&&(b==null?(KD.wereld?KD.wereld.totaal:0):b)>=w.min;}
+function kdWonderBij(min){return KD_WONDEREN.find(x=>x.min===min);}
 function kdEilandNiveau(b){let n=KD_NIVEAUS[0],v=null;for(let i=0;i<KD_NIVEAUS.length;i++){if(b>=KD_NIVEAUS[i][0]){n=KD_NIVEAUS[i];v=KD_NIVEAUS[i+1]||null;}}return {naam:n[1],min:n[0],volgende:v};}
 function kdRng(seed){let h=2166136261;for(const c of String(seed)){h^=c.charCodeAt(0);h=Math.imul(h,16777619);}return ()=>{h^=h<<13;h^=h>>>17;h^=h<<5;return ((h>>>0)%1e6)/1e6;};}
 // Wereldmodel: wijken op een raster, toren in het midden.
@@ -370,8 +380,18 @@ function openKingdom(){
     <div class="kd-kaart" id="kd-kaart"><svg id="kd-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jouw eiland"></svg><div class="kd-labels" id="kd-labels"></div></div>
     <div class="kd-top"><button class="kd-x" onclick="kdSluit()" aria-label="Sluiten">✕</button>
       <div class="kd-titel"><small id="kd-niv-k">${lvl.toUpperCase()} · Kingdom</small><b id="kd-niv">Jouw eiland</b></div>
-      <div class="kd-zoom"><button onclick="kdZoom(1.35)" aria-label="Inzoomen">+</button><button onclick="kdZoom(1/1.35)" aria-label="Uitzoomen">−</button><button onclick="kdOverzicht()" aria-label="Heel eiland">⤢</button></div></div>
-    <section class="kd-sheet" id="kd-sheet" aria-label="Details"><div class="kd-grip" id="kd-grip"></div><div class="kd-sheet-in" id="kd-sheet-in"></div></section>`;
+</div>
+    <div class="kd-knoppen" id="kd-knoppen">
+      <button class="kd-kompas" id="kd-kompas" onclick="kdNoord()" aria-label="Terugdraaien naar het noorden"><i></i></button>
+      <button onclick="kdZoom(1.4)" aria-label="Inzoomen"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+      <button onclick="kdZoom(1/1.4)" aria-label="Uitzoomen"><svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button>
+      <button onclick="kdOverzicht()" aria-label="Heel eiland"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+    <div class="kd-draai" id="kd-draai">
+      <button onclick="kdDraai(1)" aria-label="Draai naar links"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v5h5"/></svg></button>
+      <button onclick="kdDraai(-1)" aria-label="Draai naar rechts"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v5h-5"/></svg></button></div>
+    <div class="kd-hint" id="kd-hint" hidden></div>
+    <section class="kd-sheet" id="kd-sheet" aria-label="Details"><div class="kd-greep" id="kd-greep"><div class="kd-grip"></div></div><div class="kd-sheet-in" id="kd-sheet-in"></div></section>`;
+  kdBladBind();kdBlad('half',true);
   requestAnimationFrame(()=>st.classList.add('on'));
   try{if(typeof ensureLevelData==='function')ensureLevelData(lvl,klaar);else klaar();}catch(e){klaar();}
   try{if(typeof trackEvent==='function')trackEvent('kingdom_open',{});}catch(e){}
@@ -413,7 +433,7 @@ function kdMaxS(){return 1.8;}
 function kdBreed(){return KD.vw>=900;}
 function kdMinS(){const b=KD.bb;return kdBreed()?Math.min((KD.vw-460)/(b.x1-b.x0),(KD.vh*.8)/(b.y1-b.y0))*.9:Math.min(KD.vw/(b.x1-b.x0),(KD.vh*.62)/(b.y1-b.y0))*.9;}
 // Verschuiving (in schermpixels) zodat het midden van het vrije vlak het beeldmidden wordt.
-function kdMarge(off){return kdBreed()?{dx:210,dy:0}:{dx:0,dy:KD.vh*off};}
+function kdMarge(off){return kdBreed()?{dx:210,dy:0}:{dx:0,dy:Math.max(0,((KD.bladH||KD.vh*.42)-64)/2)};}
 function kdNaar(x,y,s,duur){
   cancelAnimationFrame(KD.raf);const a={...KD.cam},b={x,y,s:Math.max(kdMinS()*.8,Math.min(kdMaxS(),s))};
   const red=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -453,14 +473,49 @@ function kdBind(){
   kaart.addEventListener('pointerup',eind);kaart.addEventListener('pointercancel',eind);
   kaart.addEventListener('wheel',e=>{e.preventDefault();const f=Math.exp(-e.deltaY*.0015);KD.cam.s=Math.max(kdMinS()*.8,Math.min(kdMaxS(),KD.cam.s*f));kdCam();},{passive:false});
   addEventListener('resize',kdResize);
-  document.getElementById('kd-grip').onclick=()=>document.getElementById('kd-sheet').classList.toggle('groot');
 }
-function kdResize(){const k=document.getElementById('kd-kaart');if(!k)return;KD.vw=k.clientWidth;KD.vh=k.clientHeight;kdCam();}
+function kdResize(){const k=document.getElementById('kd-kaart');if(!k)return;KD.vw=k.clientWidth;KD.vh=k.clientHeight;kdBlad(KD.blad||'half',true);kdCam();}
 function kdKies(id){
   if(id==='_toren'){KD.sel=null;kdToonLijst(true);kdOverzicht();return;}
   const w=KD.wereld.lijst.find(x=>x.vak&&x.vak.id===id);if(!w)return;
   KD.sel=id;try{playSound('tap');}catch(e){}kdFocus(w);kdToonWijk(id);
 }
+
+// ═══════ BLAD: schuifbaar op mobiel ═══════
+// Drie standen: 'peek' (alleen de kop), 'half' en 'vol'. Slepen aan de greep of,
+// zolang de inhoud niet scrollt, aan het hele blad. De kaart schuift mee zodat
+// het midden van het vrije stuk altijd het midden van het beeld is.
+function kdBladMaten(){const st=document.getElementById('kd-stage');const H=st?st.clientHeight:innerHeight;return {peek:Math.min(136,Math.round(H*.17)),half:Math.round(H*.42),vol:Math.round(H*.86)};}
+function kdBlad(stand,direct,px){
+  const sh=document.getElementById('kd-sheet'),st=document.getElementById('kd-stage');if(!sh||!st)return;
+  if(stand)KD.blad=stand;const m=kdBladMaten();const h=px!=null?px:(m[KD.blad]||m.half);
+  st.classList.toggle('kd-sleept',!!direct);st.style.setProperty('--kd-h',h+'px');st.dataset.blad=KD.blad;
+  KD.bladH=(KD.vw||innerWidth)>=900?0:h;if(px==null)kdBladVerschoven(direct);
+}
+function kdBladVerschoven(direct){if(KD.bb&&!KD.bouwt)kdCam();}
+function kdBladBind(){
+  const sh=document.getElementById('kd-sheet'),inn=document.getElementById('kd-sheet-in');if(!sh)return;
+  const volg={peek:'half',half:'vol',vol:'half'};
+  document.getElementById('kd-greep').onclick=()=>{if(!KD._sleepte)kdBlad(volg[KD.blad]||'half');};
+  let t=null;
+  sh.addEventListener('touchstart',e=>{if(innerWidth>=900||e.touches.length>1){t=null;return;}const y=e.touches[0].clientY;
+    t={y0:y,x0:e.touches[0].clientX,h0:KD.bladH||kdBladMaten().half,uit:null,sp:[[performance.now(),y]],greep:!!e.target.closest('#kd-greep')};KD._sleepte=false;},{passive:true});
+  sh.addEventListener('touchmove',e=>{if(!t)return;const y=e.touches[0].clientY,dy=y-t.y0,dx=e.touches[0].clientX-t.x0;
+    if(t.uit===null){if(Math.hypot(dx,dy)<7)return;
+      // Horizontaal (de wonderenrij) of scrollen in een vol blad: niet slepen.
+      if(Math.abs(dx)>Math.abs(dy))t.uit=false;else if(KD.blad==='vol'&&!t.greep&&(inn.scrollTop>1||dy<0))t.uit=false;else t.uit=true;}
+    if(!t.uit)return;e.preventDefault();KD._sleepte=true;const m=kdBladMaten();
+    const h=Math.max(m.peek*.75,Math.min(m.vol+20,t.h0-dy));t.h=h;t.sp.push([performance.now(),y]);if(t.sp.length>6)t.sp.shift();
+    kdBlad(null,true,h);kdBladVerschoven(true);},{passive:false});
+  const los=()=>{if(!t)return;const s=t;t=null;if(!s.uit){return;}const m=kdBladMaten();
+    const [a,b]=[s.sp[0],s.sp[s.sp.length-1]];const v=(b[1]-a[1])/Math.max(1,b[0]-a[0]);// px/ms, + = omlaag
+    let doel;if(v>.45)doel=s.h<m.half?'peek':'half';else if(v<-.45)doel=s.h>m.half?'vol':'half';
+    else doel=['peek','half','vol'].reduce((x,k)=>Math.abs(m[k]-s.h)<Math.abs(m[x]-s.h)?k:x,'half');
+    kdBlad(doel);setTimeout(()=>{KD._sleepte=false;},50);};
+  sh.addEventListener('touchend',los);sh.addEventListener('touchcancel',los);
+}
+// Knoppen die alleen in 3D iets doen; de 3D-laag vult ze in.
+function kdDraai(){}function kdNoord(){}function kdVier(){}
 
 // ═══════ BLAD: overzicht + wijk ═══════
 function kdPips(w){return [0,1,2,3].map(t=>`<i class="${t<w.gebouwd?'b':t<w.gebouwd+w.klaar?'k':''}"></i>`).join('');}
@@ -473,7 +528,7 @@ function kdToonLijst(scroll){
     <div class="kd-eiland">
       <div class="kd-eiland-t"><b>${niv.naam}</b><span>${wd.totaal} van ${tot} gebouwen</span></div>
       <div class="kd-balk"><i style="width:${pct}%"></i></div>
-      <small>${niv.volgende?`Nog ${niv.volgende[0]-wd.totaal} ${niv.volgende[0]-wd.totaal===1?'gebouw':'gebouwen'} tot ${niv.volgende[1]}`:'Je eiland is compleet'}</small>
+      <small>${niv.volgende?`Nog ${niv.volgende[0]-wd.totaal} ${niv.volgende[0]-wd.totaal===1?'gebouw':'gebouwen'} tot ${niv.volgende[1]}${(kdWonderBij(niv.volgende[0])||{}).naam?` · dan: ${kdWonderBij(niv.volgende[0]).naam.toLowerCase()}`:''}`:'Je eiland is compleet'}</small>
     </div>
     ${wd.klaar?`<button class="kd-klaar" onclick="kdKies('${volg[0].vak.id}')"><span class="kd-klaar-ic">🏗️</span><span><b>${wd.klaar===1?'1 gebouw':wd.klaar+' gebouwen'} klaar om te bouwen</b><small>Je beheersing heeft ${wd.klaar===1?'het':'ze'} vrijgespeeld</small></span><span class="kd-chev">›</span></button>`
       :`<p class="kd-uitleg">Gebouwen komen vrij als je leerdoelen <b>beheerst</b> (80% of meer). Oefen, speel Zwakke plek, en kom terug om te bouwen.</p>`}
@@ -481,8 +536,12 @@ function kdToonLijst(scroll){
       const rest=vlg<4?Math.max(0,eis-w.st.beheerst):0;
       return `<button class="kd-rij" onclick="kdKies('${w.vak.id}')" style="--vk:${w.kleur}"><span class="kd-rij-dot"></span>
         <span class="kd-rij-t"><b>${_kdEsc(w.vak.naam)}</b><small>${w.klaar?`${thema[w.gebouwd][1]} is bouwklaar`:vlg>=4?'Wijk compleet':`Nog ${rest} ${rest===1?'leerdoel':'leerdoelen'} voor ${thema[vlg][1]}`}</small></span>
-        <span class="kd-pips">${kdPips(w)}</span><span class="kd-chev">›</span></button>`;}).join('')}</div>`;
-  if(scroll)box.scrollTop=0;
+        <span class="kd-pips">${kdPips(w)}</span><span class="kd-chev">›</span></button>`;}).join('')}</div>
+    <div class="kd-wonderen"><div class="kd-bijna-h">Wonderen van je eiland</div>
+      <div class="kd-w-rij">${KD_WONDEREN.map(x=>{const aan=wd.totaal>=x.min;const n=KD_NIVEAUS.find(v=>v[0]===x.min);
+        return `<button class="kd-w${aan?' aan':''}" onclick="${aan?`kdVier('${x.id}')`:`showToast('${x.naam}: vanaf ${n?n[1]:x.min+' gebouwen'} (${x.min} ${x.min===1?'gebouw':'gebouwen'})','#475569',2600)`}"><span class="kd-w-ic">${x.ic}</span><b>${x.naam}</b><small>${aan?'Bekijk':`${n?n[1]:''} · ${x.min}`}</small></button>`;}).join('')}</div>
+      <p class="kd-w-uitleg">${(()=>{const v=KD_WONDEREN.find(x=>wd.totaal<x.min);return v?_kdEsc(v.tekst):'Alle wonderen staan op je eiland.';})()}</p></div>`;
+  if(scroll){box.scrollTop=0;kdBlad('half');}
 }
 function kdToonWijk(id,stil){
   const w=KD.wereld.lijst.find(x=>x.vak&&x.vak.id===id);if(!w)return;
@@ -495,8 +554,10 @@ function kdToonWijk(id,stil){
   const nooit=st.scores.filter(x=>x.score==null).slice(0,Math.max(0,3-bijna.length));
   const volgende=w.gebouwd+w.klaar;
   box.innerHTML=`
-    <button class="kd-terug" onclick="KD.sel=null;kdToonLijst(true);kdOverzicht()">‹ Eiland</button>
-    <div class="kd-wijk-kop" style="--vk:${w.kleur}"><b>${_kdEsc(w.vak.naam)}</b><span>${st.beheerst} van ${st.N} leerdoelen beheerst</span></div>
+    <div class="kd-wijk-kop" style="--vk:${w.kleur}">
+      <span class="kd-wijk-t"><b>${_kdEsc(w.vak.naam)}</b><span>${st.beheerst}/${st.N} leerdoelen beheerst <span class="kd-pips">${kdPips(w)}</span></span></span>
+      <button class="kd-rond" onclick="kdVolgendeWijk(-1)" aria-label="Vorige wijk"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><button class="kd-rond" onclick="kdVolgendeWijk(1)" aria-label="Volgende wijk"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      <button class="kd-rond kd-dicht" onclick="KD.sel=null;kdToonLijst(true);kdOverzicht()" aria-label="Terug naar het hele eiland"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
     <div class="kd-closeup"><svg viewBox="${bb.x0} ${bb.y0} ${bb.x1-bb.x0} ${bb.y1-bb.y0}" aria-hidden="true"><defs>${defs}</defs>${tekening}</svg></div>
     <ol class="kd-gebouwen">${thema.map((t,i)=>{const staat=i<w.gebouwd?'b':i<volgende?'k':'';
       return `<li class="${staat}"><span class="kd-g-st">${staat==='b'?'✓':staat==='k'?'!':i+1}</span><span class="kd-g-t"><b>${t[1]}</b><small>${staat==='b'?'Gebouwd':staat==='k'?'Klaar om te bouwen':`Beheers ${st.eisen[i]} leerdoelen (nu ${st.beheerst})`}</small></span>
@@ -507,9 +568,9 @@ function kdToonWijk(id,stil){
       <div class="kd-acties"><button class="kd-knop" onclick="kdOefen('${id}')">Oefen ${_kdEsc(w.vak.naam)}</button><button class="kd-knop sec" onclick="kdZwak('${id}')">🎯 Zwakke plek</button></div></div>`
       :'<p class="kd-uitleg">Deze wijk is compleet. Knap werk.</p>'}`;
   _KG.clear();
-  if(!stil)box.scrollTop=0;
-  document.getElementById('kd-sheet').classList.add('groot');
+  if(!stil){box.scrollTop=0;if(!KD.bouwt&&KD.blad!=='vol')kdBlad('half');}
 }
+function kdVolgendeWijk(r){const L=KD.wereld.wijken;const i=L.findIndex(x=>x.vak.id===KD.sel);const w=L[(i+r+L.length)%L.length];if(w)kdKies(w.vak.id);}
 function kdOefen(id){kdSluit();try{openVak(id);}catch(e){}}
 function kdZwak(id){kdSluit();try{arcadeOpen(()=>{try{ARC.vakId=id;arcStart('zwak');}catch(e){}});}catch(e){}}
 
@@ -519,7 +580,7 @@ function kdBouw(id){
   const s=kdStaat();s.gebouwd=s.gebouwd||{};const t=(s.gebouwd[id]||0);s.gebouwd[id]=t+1;s.gemeld=Math.max(0,(s.gemeld||0)-1);kdBewaar(s);
   const oudNiv=KD.wereld.niv.naam;
   try{playSound('start');}catch(e){}try{haptic([20,30,20]);}catch(e){}
-  KD.bouwt=true;const sh=document.getElementById('kd-sheet');sh.classList.remove('groot');sh.classList.add('mini');
+  KD.bouwt=true;kdBlad('peek');
   kdFocus(w,.12);
   KD.timers.push(setTimeout(()=>{
     kdRender({vak:id,t});
@@ -530,10 +591,11 @@ function kdBouw(id){
       try{playSound('levelup');}catch(e){}try{haptic([40,30,80]);}catch(e){}
       try{if(typeof launchConfetti==='function')launchConfetti('gold');}catch(e){}
       const nieuwNiv=KD.wereld.niv.naam;
-      if(nieuwNiv!==oudNiv){try{showToast(`Je eiland is nu een ${nieuwNiv}`,'#7c3aed',3200);}catch(e){}}
+      if(nieuwNiv!==oudNiv){const wo=kdWonderBij(KD.wereld.niv.min);try{showToast(`Je eiland is nu een ${nieuwNiv}`+(wo?` · nieuw: ${wo.naam}`:''),'#7c3aed',3600);}catch(e){}
+        if(wo){KD.timers.push(setTimeout(()=>{try{kdVier(wo.id);}catch(e){}},1600));}}
       try{if(typeof trackEvent==='function')trackEvent('kingdom_bouw',{vak_id:id,gebouw:kdThema(id)[t][0],totaal:KD.wereld.totaal});}catch(e){}
       try{renderPlayRow();}catch(e){}
-      KD.timers.push(setTimeout(()=>{KD.bouwt=false;sh.classList.remove('mini');kdFocus(KD.wereld.lijst.find(x=>x.vak&&x.vak.id===id)||w);kdToonWijk(id);},1500));
+      KD.timers.push(setTimeout(()=>{KD.bouwt=false;kdBlad('half');kdFocus(KD.wereld.lijst.find(x=>x.vak&&x.vak.id===id)||w);kdToonWijk(id);},1500));
     },900));
   },650));
 }
