@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Reel · Aftellen</title>
+<link rel="stylesheet" href="../basis.css">
+<style>
+.mo-canvas{width:1080px;height:1920px;background:var(--inkt)}
+.bg{inset:0;background:radial-gradient(120% 80% at 50% 30%,var(--inkt3),var(--inkt) 70%)}
+.gloed{width:1100px;height:1100px;border-radius:50%;filter:blur(40px);opacity:.55}
+.g1{background:radial-gradient(circle,rgba(255,106,19,.55),rgba(255,106,19,0) 65%)}
+.g2{background:radial-gradient(circle,rgba(47,107,255,.45),rgba(47,107,255,0) 65%)}
+.korrel{inset:0;opacity:.07;mix-blend-mode:overlay;pointer-events:none}
+.midden{left:0;right:0;text-align:center}
+.chip{display:inline-flex;align-items:center;gap:14px;padding:16px 30px;border-radius:999px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.12);
+  color:#fff;font:700 30px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase}
+.chip i{width:14px;height:14px;border-radius:50%;background:var(--oranje);box-shadow:0 0 18px var(--oranje)}
+.nog{font:700 120px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.getal{font:800 420px/.9 var(--kop);letter-spacing:-.05em;background:linear-gradient(180deg,#ffd08a 0%,var(--oranje) 45%,var(--oranje2) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 20px 60px rgba(255,90,20,.35))}
+.zin{font:700 92px/1.05 var(--kop);color:#fff;letter-spacing:-.02em;word-spacing:.08em}
+.zin span,.kopB span,.slot span{display:inline-block}
+.vonk{width:22px;height:22px;border-radius:50%;background:radial-gradient(circle,#fff 0,#ffd08a 35%,rgba(255,106,19,0) 70%)}
+.wipe{width:10px;height:10px;border-radius:50%;background:linear-gradient(160deg,var(--oranje-l),var(--oranje) 50%,var(--oranje2))}
+.kopB{left:100px;right:100px;top:330px;font:800 100px/1.02 var(--kop);color:var(--inkt);letter-spacing:-.025em;word-spacing:.08em}
+.kaart{left:100px;width:880px;height:250px;border-radius:48px;background:#fff;display:flex;align-items:center;gap:40px;padding:0 44px;box-shadow:0 30px 60px -20px rgba(120,30,0,.45)}
+.tegel{width:160px;height:160px;flex:0 0 160px;border-radius:40px;background:var(--inkt);display:grid;place-items:center;overflow:hidden}
+.tegel svg{width:84px;height:84px;fill:none;stroke:var(--oranje);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.tegel img{width:100%;height:100%;object-fit:cover}
+.kaart b{display:block;font:800 62px/1 var(--kop);color:var(--inkt);letter-spacing:-.02em}
+.kaart small{display:block;margin-top:14px;font:500 34px/1.25 var(--tekst);color:#5b5b70}
+.paneel{left:0;right:0;height:1920px;background:radial-gradient(120% 70% at 50% 35%,var(--inkt3),var(--inkt) 70%)}
+.mascotte{left:50%;width:640px;height:640px;margin-left:-320px}
+.mascotte svg{width:100%;height:100%;overflow:visible}
+.slot{font:800 160px/1 var(--kop);color:#fff;letter-spacing:-.035em;word-spacing:.1em}
+.slot .oranje{background:linear-gradient(180deg,#ffd08a,var(--oranje) 50%,var(--oranje2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.merk{display:inline-flex;align-items:center;gap:26px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.merk img{width:118px;height:118px;border-radius:30px}
+.tags{font:600 36px/1 var(--tekst);color:rgba(255,255,255,.7);letter-spacing:.02em}
+.tags em{font-style:normal;color:var(--oranje-l)}
+</style></head>
+<body>
+<div class="mo-canvas" id="c">
+  <div class="abs bg"></div>
+  <div class="abs gloed g1" id="g1"></div><div class="abs gloed g2" id="g2"></div>
+  <canvas class="abs korrel" id="korrel" width="540" height="960"></canvas>
+
+  <!-- Scène A: het getal -->
+  <div id="A">
+    <div class="abs midden" style="top:500px"><span class="chip" id="chip"><i></i>Centraal examen 2027</span></div>
+    <div class="abs midden nog" id="nog" style="top:640px">Nog</div>
+    <div class="abs midden getal" id="getal" style="top:760px">0</div>
+    <div class="abs midden zin" id="zinA" style="top:1190px"><span>dagen</span> <span>tot</span> <span>je</span><br><span>eerste</span> <span>examen.</span></div>
+    <div id="vonken"></div>
+  </div>
+
+  <!-- Scène B: wat je op Slagio doet -->
+  <div class="abs wipe" id="wipe" style="left:535px;top:935px"></div>
+  <div id="B">
+    <div class="abs kopB" id="kopB"><span>Zo</span> <span>sta</span> <span>je</span> <span>er</span><br><span>klaar</span> <span>voor.</span></div>
+    <div class="abs kaart" id="k1" style="top:640px"><div class="tegel"><svg viewBox="0 0 48 48"><path d="M10 8h20l8 8v24H10z"/><path d="M30 8v8h8M16 24h16M16 31h16M16 38h10"/></svg></div><div><b>Samenvattingen</b><small>Per domein, met korte uitleg-clips</small></div></div>
+    <div class="abs kaart" id="k2" style="top:930px"><div class="tegel"><svg viewBox="0 0 48 48"><path d="M24 6l18 9-18 9-18-9z"/><path d="M12 19v11c0 4 6 8 12 8s12-4 12-8V19M42 15v12"/></svg></div><div><b>Oud-examens</b><small>Echte CE-vragen, zelf nakijken</small></div></div>
+    <div class="abs kaart" id="k3" style="top:1220px"><div class="tegel"><img src="../../img/arcade-kingdom.webp" alt=""></div><div><b>Arcade</b><small>Leren dat voelt als spelen</small></div></div>
+  </div>
+
+  <!-- Scène C: Vonk en het merk -->
+  <div class="abs paneel" id="paneel" style="top:1920px"></div>
+  <div id="C">
+    <div class="abs mascotte" id="vonk" style="top:380px"></div>
+    <div class="abs midden slot" id="slot" style="top:1060px"><span>Slaag</span> <span class="oranje">zeker.</span></div>
+    <div class="abs midden" id="merk" style="top:1300px"><span class="merk"><img src="../../icon-512.png" alt="">slagio.nl</span></div>
+    <div class="abs midden tags" id="tags" style="top:1470px">Gratis · <em>HAVO</em> · <em>VWO</em> · <em>VMBO</em></div>
+    <div id="confetti"></div>
+  </div>
+</div>
+<script src="../../mascotte.js"></script>
+<script src="../engine.js"></script>
+<script>
+const {p,E,lerp,zet,rnd,venster,$}=Motion;
+// Aantal dagen tot het eerste centrale examen (HAVO 2027: vr 14 mei, Wiskunde A).
+const q=new URLSearchParams(location.search);
+const doel=new Date((q.get('doel')||'2027-05-14')+'T13:30:00+02:00');
+const DAGEN=q.has('dagen')?+q.get('dagen'):Math.max(1,Math.floor((doel-new Date())/864e5));
+
+// Korrel: vaste ruis (zelfde zaadje = elk frame gelijk).
+(()=>{const c=$('#korrel'),g=c.getContext('2d'),d=g.createImageData(c.width,c.height),r=rnd(7);for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}g.putImageData(d,0,0);c.style.width='1080px';c.style.height='1920px';})();
+$('#vonk').innerHTML=mascotSVG('feest',640);
+
+// Vonkjes rond het getal (één keer gemaakt, daarna alleen per frame verplaatst).
+const V=[],r1=rnd(3);for(let i=0;i<34;i++){const el=document.createElement('div');el.className='abs vonk';$('#vonken').appendChild(el);V.push({el,a:r1()*Math.PI*2,v:380+r1()*520,s:.5+r1()*1.2});}
+const K=[],r2=rnd(11),kl=['#ff6a13','#ffc247','#2f6bff','#1fbf62','#ff4d8d','#fff'];
+for(let i=0;i<46;i++){const el=document.createElement('div');el.className='abs';const w=10+r2()*16;zet(el,{width:w+'px',height:(w*.5)+'px',background:kl[i%kl.length],borderRadius:'3px'});$('#confetti').appendChild(el);
+  K.push({el,a:-Math.PI/2+(r2()-.5)*2.6,v:900+r2()*900,rot:(r2()-.5)*16});}
+const woorden=s=>[...$(s).querySelectorAll('span')];
+const zinA=woorden('#zinA'),kopB=woorden('#kopB'),slot=woorden('#slot');
+const pop=(els,t,t0,stap,dy=60)=>els.forEach((el,i)=>{const x=p(t,t0+i*stap,t0+i*stap+.45,E.terug);zet(el,{opacity:String(Math.min(1,x*1.6)),transform:`translateY(${lerp(dy,0,x)}px) scale(${lerp(.85,1,x)})`});});
+
+function render(t){
+  // Achtergrond ademt mee.
+  zet($('#g1'),{transform:`translate(${-200+Math.sin(t*.7)*120}px,${200+Math.cos(t*.5)*80}px)`});
+  zet($('#g2'),{transform:`translate(${300+Math.cos(t*.6)*140}px,${1100+Math.sin(t*.8)*90}px)`});
+
+  // ── Scène A (0 - 3,4 s) ──
+  const uitA=p(t,3.0,3.45,E.in);
+  zet($('#A'),{opacity:String(1-uitA),transform:`translateY(${-140*uitA}px)`});
+  zet($('#chip'),{opacity:String(p(t,.1,.45)),transform:`translateY(${lerp(30,0,p(t,.1,.5,E.uit))}px)`});
+  const nog=p(t,.3,.75,E.terug);zet($('#nog'),{opacity:String(Math.min(1,nog*1.5)),transform:`scale(${lerp(.6,1,nog)})`});
+  const tel=p(t,.55,1.75,E.uit5);$('#getal').textContent=String(Math.round(DAGEN*tel));
+  const slam=p(t,1.75,2.2,E.veer),inGetal=p(t,.5,.8,E.uit);
+  zet($('#getal'),{opacity:String(inGetal),transform:`scale(${lerp(.7,1,inGetal)*(t<1.75?1:lerp(1.14,1,slam))})`});
+  pop(zinA,t,1.85,.09);
+  const vb=p(t,1.75,2.6);V.forEach(v=>{const d=v.v*E.uit(vb);zet(v.el,{left:(540+Math.cos(v.a)*d-11)+'px',top:(940+Math.sin(v.a)*d*.7-11)+'px',opacity:String(vb>0&&vb<1?1-vb:0),transform:`scale(${v.s*(1-vb*.5)})`});});
+
+  // ── Wisseling naar oranje (3,0 - 3,55 s) ──
+  const w=p(t,3.0,3.55,E.inUit);zet($('#wipe'),{transform:`scale(${w*460})`,opacity:t<6.6?'1':'0'});
+
+  // ── Scène B (3,4 - 6,6 s) ──
+  const inB=t>3.3&&t<6.7;zet($('#B'),{display:inB?'block':'none'});
+  if(inB){pop(kopB,t,3.45,.07,70);
+    ['#k1','#k2','#k3'].forEach((id,i)=>{const x=p(t,3.9+i*.32,4.6+i*.32,E.uit5);const drijf=Math.sin((t-3.9)*1.3+i)*6;
+      zet($(id),{transform:`translateX(${lerp(1150,0,x)}px) translateY(${drijf}px) rotate(${lerp(6,0,x)}deg)`});});}
+
+  // ── Donker paneel schuift omhoog (6,1 - 6,6 s) ──
+  const pan=p(t,6.1,6.6,E.inUit);zet($('#paneel'),{transform:`translateY(${-1920*pan}px)`});
+
+  // ── Scène C (6,4 - 9 s) ──
+  const inC=t>6.35;zet($('#C'),{display:inC?'block':'none'});
+  if(inC){const m=p(t,6.45,7.2,E.veer);const bob=t>7.2?Math.sin((t-7.2)*3.2)*12:0;
+    zet($('#vonk'),{opacity:String(Math.min(1,m*2)),transform:`translateY(${lerp(260,0,Math.min(1,m))+bob}px) scale(${lerp(.3,1,m)}) rotate(${lerp(-18,0,Math.min(1,m))+Math.sin(t*2.4)*2}deg)`});
+    pop(slot,t,6.85,.14,80);
+    const mk=p(t,7.35,7.8,E.uit);zet($('#merk'),{opacity:String(mk),transform:`translateY(${lerp(50,0,mk)}px)`});
+    const tg=p(t,7.6,8.05,E.uit);zet($('#tags'),{opacity:String(tg),transform:`translateY(${lerp(40,0,tg)}px)`});
+    const c=p(t,6.95,8.9);K.forEach(k=>{const tt=c*1.9;const x=540+Math.cos(k.a)*k.v*tt*.55,y=700+Math.sin(k.a)*k.v*tt+ 900*tt*tt;
+      zet(k.el,{left:x+'px',top:y+'px',opacity:String(c>0&&c<1?1-c*c:0),transform:`rotate(${k.rot*tt*60}deg)`});});}
+}
+Motion.maak({duur:9,render});
+</script>
+</body></html>

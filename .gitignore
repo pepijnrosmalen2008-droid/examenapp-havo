@@ -25,3 +25,4 @@ syllabi/2027/*.pdf
 
 # Tooling-afhankelijkheden (social)
 node_modules/
+social/out/

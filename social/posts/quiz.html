@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Post · Quiz</title>
+<link rel="stylesheet" href="../basis.css">
+<style>
+.mo-canvas{width:1080px;height:1350px;background:var(--room)}
+.bg{inset:0;background:radial-gradient(90% 60% at 85% 0%,#ffe0c2 0%,rgba(255,224,194,0) 60%),radial-gradient(80% 50% at 0% 100%,#ffe6cf,rgba(255,230,207,0) 60%),var(--room)}
+.raster{inset:0;background-image:radial-gradient(rgba(13,13,26,.09) 2px,transparent 2.5px);background-size:44px 44px;opacity:.6}
+.kop{left:72px;right:72px;top:72px;display:flex;align-items:center;justify-content:space-between}
+.vakchip{display:inline-flex;align-items:center;gap:14px;padding:14px 26px 14px 16px;border-radius:999px;background:#fff;box-shadow:0 8px 24px -10px rgba(120,40,0,.3);font:700 30px/1 var(--tekst);color:var(--inkt)}
+.vakchip i{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff;font:800 22px/1 var(--kop);font-style:normal}
+.vakchip small{font:600 26px/1 var(--tekst);color:#8a8aa0;margin-left:4px}
+.ring{width:128px;height:128px;position:relative}
+.ring svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;font:800 54px/1 var(--kop);color:var(--inkt)}
+.eyebrow{left:72px;top:232px;font:800 30px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--oranje2)}
+.vraag{left:72px;right:72px;top:288px;font:800 66px/1.12 var(--kop);color:var(--inkt);letter-spacing:-.025em;word-spacing:.06em}
+.vraag span{display:inline-block}
+.opt{left:72px;right:72px;height:118px;border-radius:32px;background:#fff;display:flex;align-items:center;gap:28px;padding:0 32px;box-shadow:0 14px 30px -18px rgba(120,40,0,.35);border:4px solid transparent}
+.opt i{width:62px;height:62px;flex:0 0 62px;border-radius:18px;display:grid;place-items:center;background:var(--room2);color:var(--oranje2);font:800 32px/1 var(--kop);font-style:normal}
+.opt span{font:600 42px/1.15 var(--tekst);color:var(--inkt);letter-spacing:-.01em}
+.opt .v{margin-left:auto;width:62px;height:62px;border-radius:50%;background:var(--goed);display:grid;place-items:center;opacity:0}
+.opt .v svg{width:34px;height:34px;fill:none;stroke:#fff;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round}
+.uitleg{left:72px;right:72px;border-radius:32px;background:var(--inkt);color:#fff;padding:30px 36px;display:flex;gap:26px;align-items:center}
+.uitleg .m{width:120px;height:120px;flex:0 0 120px}
+.uitleg .m svg{width:100%;height:100%}
+.uitleg b{display:block;font:800 30px/1 var(--tekst);letter-spacing:.12em;text-transform:uppercase;color:var(--oranje-l);margin-bottom:10px}
+.uitleg p{font:500 36px/1.3 var(--tekst)}
+.cta{left:0;right:0;bottom:0;height:150px;background:linear-gradient(90deg,var(--oranje),var(--oranje2));display:flex;align-items:center;justify-content:center;gap:24px;color:#fff;font:800 46px/1 var(--kop);letter-spacing:-.01em}
+.cta img{width:74px;height:74px;border-radius:20px}
+.cta small{font:600 32px/1 var(--tekst);opacity:.9}
+.reactie{left:72px;right:72px;font:800 52px/1.1 var(--kop);color:var(--inkt);letter-spacing:-.02em}
+.reactie small{display:block;margin-top:10px;font:500 34px/1.2 var(--tekst);color:#6b6b80;letter-spacing:0}
+.denker{width:200px;height:200px;right:60px}
+.denker svg{width:100%;height:100%;overflow:visible}
+</style></head>
+<body>
+<div class="mo-canvas" id="c">
+  <div class="abs bg"></div><div class="abs raster" id="raster"></div>
+  <div class="abs kop" id="kop">
+    <span class="vakchip"><i id="vakic"></i><span id="vaknaam"></span><small id="niveau"></small></span>
+    <div class="ring"><svg viewBox="0 0 128 128"><circle cx="64" cy="64" r="54" fill="#fff" stroke="#f1dccb" stroke-width="12"/><circle id="boog" cx="64" cy="64" r="54" fill="none" stroke="#ff6a13" stroke-width="12" stroke-linecap="round" stroke-dasharray="339.3" stroke-dashoffset="0"/></svg><b id="tel">5</b></div>
+  </div>
+  <div class="abs eyebrow" id="eyebrow">Ken jij deze?</div>
+  <div class="abs vraag" id="vraag"></div>
+  <div id="opts"></div>
+  <div class="abs denker" id="denker"></div>
+  <div class="abs uitleg" id="uitleg"><div class="m" id="uitlegm"></div><div><b>Uitleg</b><p id="uitlegt"></p></div></div>
+  <div class="abs reactie" id="reactie">Had jij 'm goed?<small>Laat het weten in de reacties.</small></div>
+  <div class="abs cta" id="cta"><img src="../../icon-512.png" alt=""><span>slagio.nl</span><small id="ctat"></small></div>
+</div>
+<script src="../../mascotte.js"></script>
+<script src="../engine.js"></script>
+<script>
+const {p,E,lerp,zet,$}=Motion;
+// Vragen komen uit de echte Slagio-oefenvragen (data-havo.js).
+const VRAGEN={
+  'econ-maxprijs':{vak:'Economie',kl:'#0891B2',niv:'HAVO',v:'Welk instrument legt een prijsplafond onder het evenwicht en veroorzaakt een tekort?',o:['een maximumprijs','een minimumprijs','een subsidie','een accijns'],c:0,u:'Een maximumprijs onder de evenwichtsprijs: meer vraag dan aanbod, dus een tekort.',n:'710'},
+  'wis-macht0':{vak:'Wiskunde A',kl:'#2563eb',niv:'HAVO',v:'Wat is x⁰ voor elke x die niet 0 is?',o:['oneindig','0','x','1'],c:3,u:'Elk grondtal tot de macht 0 is 1. Dus 7⁰ = 1 en ook 1000⁰ = 1.',n:'489'},
+  'nat-becquerel':{vak:'Natuurkunde',kl:'#3B82F6',niv:'HAVO',v:'In welke eenheid meet je de activiteit van een radioactieve bron?',o:['gray (Gy)','becquerel (Bq)','hertz (Hz)','newton (N)'],c:1,u:'Activiteit is het aantal kernen dat per seconde vervalt, in becquerel.',n:'762'},
+  'nl-modernisme':{vak:'Nederlands',kl:'#E85C0D',niv:'HAVO',v:'Welke literaire stroming kenmerkt zich door de stream of consciousness?',o:['het realisme','het modernisme','het naturalisme','de romantiek'],c:1,u:'Het modernisme geeft de gedachtestroom van een personage direct weer.',n:'718'},
+};
+const Q=VRAGEN[new URLSearchParams(location.search).get('vraag')]||VRAGEN['econ-maxprijs'];
+$('#vakic').textContent=Q.vak[0];$('#vakic').style.background=Q.kl;$('#vaknaam').textContent=Q.vak;$('#niveau').textContent='· '+Q.niv;
+$('#vraag').innerHTML=Q.v.split(' ').map(w=>`<span>${w}</span>`).join(' ');
+$('#uitlegt').textContent=Q.u;$('#uitlegm').innerHTML=mascotSVG('trots',120);$('#denker').innerHTML=mascotSVG('denk',210);
+$('#ctat').textContent='· '+Q.n+' '+Q.vak.toLowerCase()+'vragen, gratis';
+const vraagH=$('#vraag').offsetHeight;const top0=288+vraagH+54;
+const OPT=Q.o.map((o,i)=>{const el=document.createElement('div');el.className='abs opt';el.style.top=(top0+i*140)+'px';
+  el.innerHTML=`<i>${'ABCD'[i]}</i><span>${o}</span><em class="v"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></em>`;$('#opts').appendChild(el);return el;});
+$('#uitleg').style.top=(top0+146)+'px';$('#reactie').style.top=(top0+146+$('#uitleg').offsetHeight+56)+'px';$('#denker').style.top=(top0+4*140-40)+'px';
+const woorden=[...$('#vraag').children];
+const T_TIMER=[2.3,7.3];     // 5 seconden bedenktijd
+window.__COVER=4.2;
+
+function render(t){
+  zet($('#raster'),{backgroundPosition:`${t*10}px ${t*6}px`});
+  const k=p(t,0,.45,E.uit);zet($('#kop'),{opacity:String(k),transform:`translateY(${lerp(-40,0,k)}px)`});
+  const eb=p(t,.2,.55,E.uit);zet($('#eyebrow'),{opacity:String(eb),transform:`translateX(${lerp(-30,0,eb)}px)`});
+  woorden.forEach((el,i)=>{const x=p(t,.35+i*.045,.8+i*.045,E.terug);zet(el,{opacity:String(Math.min(1,x*1.5)),transform:`translateY(${lerp(40,0,x)}px)`});});
+  const onthul=p(t,T_TIMER[1],T_TIMER[1]+.35,E.uit);
+  const samen=p(t,T_TIMER[1]+.55,T_TIMER[1]+1.05,E.inUit);   // foute antwoorden weg, goede naar boven
+  OPT.forEach((el,i)=>{const x=p(t,1.3+i*.13,1.85+i*.13,E.uit5);const goed=i===Q.c;
+    const pls=goed?Math.sin(p(t,T_TIMER[1],T_TIMER[1]+.5)*Math.PI)*.05:0;
+    const op=goed?x:x*(1-onthul*.55)*(1-samen);const dy=goed?-i*140*samen:-20*samen;
+    zet(el,{opacity:String(op),transform:`translate(${lerp(-120,0,x)}px,${dy}px) scale(${(1+pls)*(goed?1:1-samen*.06)})`,
+      background:goed&&onthul>0?`color-mix(in srgb,#1fbf62 ${Math.round(onthul*14)}%,#fff)`:'#fff',borderColor:goed&&onthul>0?`rgba(31,191,98,${onthul})`:'transparent'});
+    if(goed){const v=el.querySelector('.v');const vv=p(t,T_TIMER[1]+.1,T_TIMER[1]+.5,E.terug);zet(v,{opacity:String(Math.min(1,vv*2)),transform:`scale(${vv})`});}});
+  // Timer
+  const tp=p(t,T_TIMER[0],T_TIMER[1]);$('#boog').style.strokeDashoffset=String(339.3*tp);
+  $('#tel').textContent=t<T_TIMER[0]?'5':t>=T_TIMER[1]?'0':String(Math.ceil(5-(t-T_TIMER[0])));
+  const sec=(t-T_TIMER[0])%1;const tik=t>T_TIMER[0]&&t<T_TIMER[1]?Math.max(0,1-sec*4):0;zet($('.ring'),{transform:`scale(${1+tik*.08})`});
+  $('#boog').style.stroke=t>T_TIMER[1]-1.5&&t<T_TIMER[1]?'#ff4d4d':'#ff6a13';
+  // Vonk denkt mee tijdens de timer
+  const d=p(t,2.0,2.5,E.terug)*(1-p(t,T_TIMER[1]-.1,T_TIMER[1]+.25,E.in));
+  zet($('#denker'),{opacity:String(Math.min(1,d*1.5)),transform:`translateY(${lerp(80,0,d)+Math.sin(t*2.6)*6}px) rotate(${Math.sin(t*1.8)*4}deg)`});
+  // Uitleg + CTA
+  const u=p(t,T_TIMER[1]+.9,T_TIMER[1]+1.4,E.uit5);zet($('#uitleg'),{opacity:String(u),transform:`translateY(${lerp(60,0,u)}px)`});
+  const r=p(t,T_TIMER[1]+1.3,T_TIMER[1]+1.8,E.uit);zet($('#reactie'),{opacity:String(r),transform:`translateY(${lerp(40,0,r)}px)`});
+  const c=p(t,T_TIMER[1]+1.5,T_TIMER[1]+2,E.uit5);zet($('#cta'),{transform:`translateY(${lerp(160,0,c)}px)`});
+}
+Motion.maak({duur:11,render});
+</script>
+</body></html>
