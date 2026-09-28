@@ -510,6 +510,7 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     {key:'bot_race',        label:'Bot Race',         icon:'🏁', color:'var(--red)'},
     {key:'multiplayer',     label:'Multiplayer quiz', icon:'🏆', color:'var(--yellow)'},
     {key:'minigame',        label:'Arcade-games',     icon:'🕹️', color:'var(--purple)'},
+    {key:'kingdom_bouw',    label:'Kingdom: gebouwd', icon:'🏰', color:'var(--teal)'},
   ];
   const evTotals = {};
   FEAT.forEach(f => evTotals[f.key] = ev.filter(e=>e.event_type===f.key).length);

@@ -9554,3 +9554,155 @@ html.arc-open,html.arc-open body{overflow:hidden}
 .val-meter i.vuur{background:linear-gradient(90deg,#f97316,#facc15,#f97316);background-size:200% 100%;animation:valVuur 1s linear infinite}
 @keyframes valVuur{to{background-position:-200% 0}}
 @media(prefers-reduced-motion:reduce){.arc-stage.on>*,.arc-res>*,.arc-tile,.arc-hub-deco i,.bom-lont path,.bom-vonk,.boss-eyes,.risk-doorknop span,.sort-card,.risk-chip{animation:none!important}}
+
+/* ══════════════════════════════════════════════
+   SPEELRIJ (home): Arcade + Kingdom
+   ══════════════════════════════════════════════ */
+.play-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.play-tile{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:12px;border:0;border-radius:20px;cursor:pointer;text-align:left;font:inherit;color:#fff;overflow:hidden;min-height:138px;
+  box-shadow:0 10px 26px -14px rgba(0,0,0,.45);transition:transform .15s}
+.play-tile:active{transform:scale(.98)}
+.play-arc{background:radial-gradient(120% 120% at 0% 0%,#4c1d95,#1e1b4b 60%,#0b1020)}
+.play-kd{background:linear-gradient(180deg,#38bdf8 0%,#7dd3fc 55%,#bae6fd 100%);color:#082f49}
+.play-art{display:block;width:100%;height:64px}
+.play-art svg{width:100%;height:100%}
+.play-vonk{animation:aVonk .5s steps(2) infinite;transform-box:fill-box;transform-origin:center}
+.play-kd .play-art svg{animation:arcFloat 3.4s ease-in-out infinite}
+.play-t{display:flex;flex-direction:column;gap:1px}
+.play-t b{font-family:var(--font-head);font-size:17px;font-weight:800;letter-spacing:-.01em}
+.play-t span{font-size:12px;line-height:1.3;opacity:.78}
+.play-badge{position:absolute;top:10px;right:10px;background:#f97316;color:#fff;font-size:11px;font-weight:800;padding:3px 8px;border-radius:999px;box-shadow:0 4px 12px rgba(249,115,22,.5);animation:kdPuls 1.6s ease-in-out infinite}
+.play-badge[hidden]{display:none}
+@keyframes kdPuls{50%{transform:scale(1.08)}}
+.soc-hub-icon-kd{background:linear-gradient(135deg,#0ea5e9,#22c55e)!important;color:#fff!important}
+
+/* ══════════════════════════════════════════════
+   KINGDOM · zwevend eiland
+   ══════════════════════════════════════════════ */
+html.kd-open,html.kd-open body{overflow:hidden}
+.kd-stage{position:fixed;inset:0;z-index:9400;overflow:hidden;font-family:var(--font);opacity:0;transition:opacity .3s;
+  --lucht1:#7dd3fc;--lucht2:#e0f2fe;--ink:#0f172a;--sheet:rgba(255,255,255,.86);--sheet-ink:#0f172a;--sheet-mu:#475569;--lijn:rgba(15,23,42,.08)}
+.kd-stage.on{opacity:1}
+.kd-stage[hidden]{display:none}
+.kd-stage.kd-ochtend{--lucht1:#fbcfe8;--lucht2:#fef3c7}
+.kd-stage.kd-avond{--lucht1:#6366f1;--lucht2:#fb923c}
+.kd-stage.kd-nacht{--lucht1:#0b1026;--lucht2:#312e81;--sheet:rgba(15,23,42,.84);--sheet-ink:#f8fafc;--sheet-mu:#94a3b8;--lijn:rgba(255,255,255,.1)}
+.kd-lucht{position:absolute;inset:0;background:linear-gradient(180deg,var(--lucht1),var(--lucht2));overflow:hidden}
+.kd-zon{position:absolute;right:12%;top:12%;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle,#fff7c2,#fde047 55%,rgba(253,224,71,0) 72%);filter:blur(.5px)}
+.kd-nacht .kd-zon{background:radial-gradient(circle,#f8fafc,#e2e8f0 55%,rgba(226,232,240,0) 72%);width:50px;height:50px}
+.kd-sterren{position:absolute;inset:0;opacity:0;background-image:radial-gradient(1.5px 1.5px at 20% 30%,#fff,transparent),radial-gradient(1px 1px at 70% 20%,#fff,transparent),radial-gradient(1.2px 1.2px at 40% 70%,#fff,transparent),radial-gradient(1px 1px at 85% 55%,#fff,transparent),radial-gradient(1.4px 1.4px at 10% 80%,#fff,transparent),radial-gradient(1px 1px at 55% 40%,#fff,transparent);background-size:300px 300px}
+.kd-nacht .kd-sterren{opacity:.9;animation:kdSter 4s ease-in-out infinite alternate}
+@keyframes kdSter{to{opacity:.5}}
+.kd-wolk{position:absolute;display:block;width:140px;height:44px;border-radius:40px;background:rgba(255,255,255,.85);filter:blur(1px);animation:kdWolk 60s linear infinite}
+.kd-wolk::before,.kd-wolk::after{content:"";position:absolute;background:inherit;border-radius:50%}
+.kd-wolk::before{width:60px;height:60px;left:22px;top:-28px}.kd-wolk::after{width:44px;height:44px;left:70px;top:-18px}
+.kd-wolk.w1{top:14%;left:-160px}.kd-wolk.w2{top:34%;left:-160px;animation-duration:85s;animation-delay:-30s;transform:scale(.7);opacity:.8}
+.kd-wolk.w3{top:52%;left:-160px;animation-duration:70s;animation-delay:-50s;transform:scale(1.2);opacity:.7}.kd-wolk.w4{top:8%;left:-160px;animation-duration:95s;animation-delay:-10s;transform:scale(.55)}
+.kd-nacht .kd-wolk{background:rgba(148,163,184,.25)}
+@keyframes kdWolk{to{translate:calc(100vw + 320px) 0}}
+.kd-kaart{position:absolute;inset:0;touch-action:none;cursor:grab}
+.kd-kaart:active{cursor:grabbing}
+.kd-kaart svg{width:100%;height:100%;display:block;overflow:visible}
+.kd-top{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;gap:10px;padding:max(10px,env(safe-area-inset-top)) 14px 8px;pointer-events:none}
+.kd-top>*{pointer-events:auto}
+.kd-x,.kd-zoom button{width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.72);color:#0f172a;font-size:16px;font-weight:700;cursor:pointer;
+  backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%);box-shadow:0 4px 16px rgba(15,23,42,.14)}
+.kd-nacht .kd-x,.kd-nacht .kd-zoom button{background:rgba(30,41,59,.7);color:#f8fafc}
+.kd-titel{flex:1;display:flex;flex-direction:column;line-height:1.1;color:var(--ink);text-shadow:0 1px 8px rgba(255,255,255,.5)}
+.kd-nacht .kd-titel{color:#f8fafc;text-shadow:none}
+.kd-titel small{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.7}
+.kd-titel b{font-family:var(--font-head);font-size:22px;font-weight:900;letter-spacing:-.02em}
+.kd-zoom{display:flex;gap:6px}
+.kd-zoom button{width:36px;height:36px;font-size:17px}
+/* Labels */
+.kd-labels{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .2s}
+.kd-labels.zichtbaar{opacity:1}
+.kd-label{position:absolute;left:0;top:0;pointer-events:auto;border:0;border-radius:999px;padding:4px 10px 4px 8px;font:inherit;font-size:12px;font-weight:700;color:#0f172a;
+  background:rgba(255,255,255,.9);box-shadow:0 4px 12px rgba(15,23,42,.18),inset 0 -2px 0 var(--vk);white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:5px}
+.kd-label i{width:8px;height:8px;border-radius:50%;background:#f59e0b;box-shadow:0 0 0 3px rgba(245,158,11,.3);animation:kdPuls 1.4s infinite}
+/* SVG-details */
+.kd-hit{cursor:pointer}
+.kd-rand{transition:opacity .2s}
+.kd-wijk:hover .kd-rand{opacity:1;stroke-width:4}
+.kd-spook{opacity:.18;filter:grayscale(1)}
+.kd-rijst{transform-box:fill-box;transform-origin:50% 100%;animation:kdRijst 1s cubic-bezier(.2,1.5,.4,1) both}
+@keyframes kdRijst{0%{transform:scaleY(0) scaleX(.6);opacity:0}40%{opacity:1}100%{transform:none}}
+.kd-marker-z{animation:kdMarker 1.6s ease-in-out infinite}
+@keyframes kdMarker{50%{transform:translateY(-8px)}}
+.kd-wieken{animation:kdDraai 6s linear infinite}.kd-wieken.snel{animation-duration:1.6s}
+@keyframes kdDraai{to{transform:rotate(360deg)}}
+.kd-vlag{animation:kdVlag 1.2s ease-in-out infinite alternate}
+@keyframes kdVlag{to{transform:skewY(12deg) scaleX(.85)}}
+.kd-rook{fill:rgba(241,245,249,.85);transform-box:fill-box;transform-origin:center;animation:kdRook 3s ease-out infinite;opacity:0}
+.kd-rook.r2{animation-delay:1s}.kd-rook.r3{animation-delay:2s}
+@keyframes kdRook{0%{transform:translate(0,0) scale(.4);opacity:.9}100%{transform:translate(10px,-46px) scale(1.8);opacity:0}}
+.kd-straal{animation:kdStraal 5s ease-in-out infinite alternate;opacity:.8}
+@keyframes kdStraal{from{transform:rotate(-25deg)}to{transform:rotate(25deg)}}
+.kd-lamp,.kd-knipper{animation:kdKnipper 1.4s steps(2) infinite}
+@keyframes kdKnipper{50%{opacity:.25}}
+.kd-lampje,.kd-led{animation:kdKnipper 1.1s steps(2) infinite}
+.kd-gloed{animation:kdGloed 2.4s ease-in-out infinite}
+@keyframes kdGloed{50%{filter:drop-shadow(0 0 10px #a78bfa) brightness(1.25)}}
+.kd-waterval{animation:kdWater 1.4s linear infinite;opacity:.85}
+@keyframes kdWater{50%{opacity:.6}}
+.kd-kabel{animation:kdKabel 3s ease-in-out infinite alternate}
+@keyframes kdKabel{to{transform:translateY(8px)}}
+.kd-nacht .kd-raam{fill:#fde68a!important;filter:drop-shadow(0 0 3px rgba(253,224,71,.8))}
+.kd-nacht .kd-kaart svg>g,.kd-nacht .kd-kaart svg>polygon{filter:brightness(.72) saturate(.85)}
+.kd-stof{position:fixed;z-index:9450;width:22px;height:22px;border-radius:50%;background:rgba(214,196,160,.85);pointer-events:none}
+/* Blad */
+.kd-sheet{position:absolute;left:0;right:0;bottom:0;max-height:46%;display:flex;flex-direction:column;background:var(--sheet);color:var(--sheet-ink);
+  backdrop-filter:blur(22px) saturate(170%);-webkit-backdrop-filter:blur(22px) saturate(170%);border-radius:24px 24px 0 0;box-shadow:0 -10px 40px rgba(15,23,42,.18);
+  transition:max-height .45s cubic-bezier(.22,1,.36,1);padding-bottom:env(safe-area-inset-bottom)}
+.kd-sheet.groot{max-height:66%}
+.kd-sheet.mini{max-height:22%}
+.kd-grip{flex:0 0 auto;width:44px;height:5px;border-radius:3px;background:currentColor;opacity:.22;margin:8px auto 4px;cursor:pointer}
+.kd-grip::before{content:"";position:absolute;left:0;right:0;height:26px;margin-top:-10px}
+.kd-sheet-in{overflow-y:auto;padding:6px 16px 18px;max-width:640px;width:100%;margin:0 auto;overscroll-behavior:contain}
+.kd-eiland{padding:4px 2px 10px}
+.kd-eiland-t{display:flex;justify-content:space-between;align-items:baseline}
+.kd-eiland-t b{font-family:var(--font-head);font-size:22px;font-weight:900;letter-spacing:-.02em}
+.kd-eiland-t span{font-size:13px;color:var(--sheet-mu);font-weight:600}
+.kd-balk{height:8px;border-radius:4px;background:var(--lijn);overflow:hidden;margin:8px 0 4px}
+.kd-balk i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#22c55e,#84cc16);transition:width .8s cubic-bezier(.22,1,.36,1)}
+.kd-eiland small{font-size:12.5px;color:var(--sheet-mu)}
+.kd-klaar{display:flex;align-items:center;gap:12px;width:100%;border:0;border-radius:16px;padding:12px 14px;margin:4px 0 10px;cursor:pointer;text-align:left;font:inherit;
+  background:linear-gradient(135deg,#fde68a,#fb923c);color:#431407;box-shadow:0 10px 24px -12px rgba(249,115,22,.7);animation:kdPuls 2.4s ease-in-out infinite}
+.kd-klaar-ic{font-size:26px}.kd-klaar b{display:block;font-size:15px}.kd-klaar small{font-size:12.5px;opacity:.8}
+.kd-chev{margin-left:auto;font-size:22px;opacity:.45}
+.kd-uitleg{font-size:13.5px;line-height:1.5;color:var(--sheet-mu);margin:2px 2px 10px}
+.kd-lijst{display:flex;flex-direction:column;border-radius:16px;overflow:hidden;background:color-mix(in srgb,var(--sheet-ink) 4%,transparent)}
+.kd-rij{display:flex;align-items:center;gap:12px;padding:11px 12px;border:0;background:none;cursor:pointer;text-align:left;font:inherit;color:var(--sheet-ink);position:relative}
+.kd-rij+.kd-rij::before{content:"";position:absolute;top:0;left:34px;right:0;height:1px;background:var(--lijn)}
+.kd-rij-dot{flex:0 0 12px;height:12px;border-radius:4px;background:var(--vk)}
+.kd-rij-t{flex:1;min-width:0;display:flex;flex-direction:column}
+.kd-rij-t b{font-size:15px;font-weight:650}.kd-rij-t small{font-size:12.5px;color:var(--sheet-mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kd-pips{display:flex;gap:3px}
+.kd-pips i{width:9px;height:9px;border-radius:3px;background:var(--lijn)}
+.kd-pips i.b{background:#22c55e}.kd-pips i.k{background:#f59e0b;animation:kdPuls 1.4s infinite}
+.kd-terug{border:0;background:none;color:#0ea5e9;font:inherit;font-weight:700;font-size:15px;padding:4px 0 8px;cursor:pointer}
+.kd-wijk-kop{display:flex;flex-direction:column;border-left:4px solid var(--vk);padding-left:10px;margin-bottom:6px}
+.kd-wijk-kop b{font-family:var(--font-head);font-size:24px;font-weight:900;letter-spacing:-.02em}
+.kd-wijk-kop span{font-size:13px;color:var(--sheet-mu)}
+.kd-closeup{height:170px;margin:4px 0 8px;border-radius:18px;background:linear-gradient(180deg,color-mix(in srgb,#7dd3fc 40%,transparent),transparent);display:grid;place-items:center}
+.kd-closeup svg{height:100%;width:100%;overflow:hidden}
+.kd-gebouwen{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.kd-gebouwen li{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:14px;background:color-mix(in srgb,var(--sheet-ink) 4%,transparent)}
+.kd-g-st{flex:0 0 28px;height:28px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:13px;background:var(--lijn);color:var(--sheet-mu)}
+.kd-gebouwen li.b .kd-g-st{background:#22c55e;color:#fff}.kd-gebouwen li.k .kd-g-st{background:#f59e0b;color:#fff}
+.kd-g-t{flex:1;display:flex;flex-direction:column}.kd-g-t b{font-size:14.5px}.kd-g-t small{font-size:12.5px;color:var(--sheet-mu)}
+.kd-bouw{border:0;border-radius:999px;padding:9px 16px;font:inherit;font-weight:800;font-size:14px;color:#fff;background:linear-gradient(135deg,#f97316,#ea580c);cursor:pointer;box-shadow:0 8px 18px -8px rgba(234,88,12,.8);animation:kdPuls 1.6s infinite}
+.kd-bijna{margin-top:14px}
+.kd-bijna-h{font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--sheet-mu);margin-bottom:6px}
+.kd-ld{display:grid;grid-template-columns:1fr 70px 40px;align-items:center;gap:8px;font-size:13.5px;padding:5px 0}
+.kd-ld span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kd-ld i{height:6px;border-radius:3px;background:linear-gradient(90deg,#22c55e var(--p),var(--lijn) var(--p))}
+.kd-ld b{text-align:right;font-size:12.5px;color:var(--sheet-mu);font-variant-numeric:tabular-nums}
+.kd-acties{display:flex;gap:8px;margin-top:10px}
+.kd-knop{flex:1;border:0;border-radius:14px;padding:12px;font:inherit;font-weight:800;font-size:14.5px;cursor:pointer;background:#0ea5e9;color:#fff}
+.kd-knop.sec{background:color-mix(in srgb,#f97316 16%,transparent);color:#c2410c}
+.kd-nacht .kd-knop.sec{color:#fdba74}
+@media(min-width:900px){.kd-sheet{left:auto;right:20px;bottom:20px;width:400px;border-radius:24px;max-height:calc(100% - 100px)!important}}
+@media(min-width:900px){.kd-zon{right:auto;left:42%;top:9%}}
+@media(prefers-reduced-motion:reduce){.kd-wolk,.kd-wieken,.kd-vlag,.kd-rook,.kd-straal,.kd-marker-z,.kd-rijst,.play-kd .play-art svg,.kd-klaar,.kd-bouw,.play-badge,.kd-sterren{animation:none!important}.kd-rook{opacity:0}}
+html[data-perf="lite"] .kd-sheet,html[data-perf="lite"] .kd-x,html[data-perf="lite"] .kd-zoom button{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}

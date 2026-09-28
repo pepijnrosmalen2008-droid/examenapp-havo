@@ -372,6 +372,7 @@ try{reconcileCoins();applyStreakFreezes();}catch(e){}
 try{ensureLeague();}catch(e){}
 try{renderEconHome();renderLeagueHome();}catch(e){}
 try{renderRegHome();}catch(e){}
+setTimeout(()=>{try{renderPlayRow();}catch(e){}},0);
 renderFavHome();
 renderStreak();
 renderXPHome();
@@ -1114,11 +1115,55 @@ document.addEventListener('click', function (e) {
 
 // ═══════ ARCADE (lazy) ═══════
 // De minigames staan in arcade.js en laden pas als je de Arcade opent.
-function arcadeOpen(){
-  if(window._arcLoaded&&typeof openArcade==='function'){openArcade();return;}
+function arcadeOpen(cb){
+  if(window._arcLoaded&&typeof openArcade==='function'){openArcade();if(typeof cb==='function')setTimeout(cb,60);return;}
   if(window._arcLoading)return;window._arcLoading=true;
   const s=document.createElement('script');s.src='/arcade.js';
-  s.onload=()=>{window._arcLoaded=true;window._arcLoading=false;try{openArcade();}catch(e){}};
+  s.onload=()=>{window._arcLoaded=true;window._arcLoading=false;try{openArcade();}catch(e){}if(typeof cb==='function')setTimeout(cb,120);};
   s.onerror=()=>{window._arcLoading=false;try{showToast('De Arcade kon niet laden. Controleer je verbinding.');}catch(e){}};
+  document.head.appendChild(s);
+}
+
+// ═══════ KINGDOM (gedeeld deel: drempels, stand per vak, badge, lazy laden) ═══════
+// Het eiland zelf staat in kingdom.js. Hier alleen wat de home nodig heeft om te
+// weten of er iets te bouwen valt. Gebouwen komen vrij door BEHEERSTE leerdoelen
+// (ldMastery ≥ 80%), niet door XP: 15%, 40%, 70% en 95% van de leerdoelen van een vak.
+const KD_DREMPEL=[.15,.4,.7,.95];
+function kdLeerdoelen(vak){const out=[];(vak&&vak.domeinen||[]).forEach(d=>{if(d.leerdoelen&&d.leerdoelen.length)d.leerdoelen.forEach(ld=>out.push({ld,dom:d}));else out.push({ld:d,dom:d});});return out;}
+function kdVakStand(vakId){
+  const vak=(typeof getVK==='function'?getVK():[]).find(v=>v.id===vakId);
+  const lds=kdLeerdoelen(vak);const N=lds.length;
+  let beheerst=0;const scores=[];
+  lds.forEach(({ld,dom})=>{let m=null;try{m=ldMastery(vakId,ld);}catch(e){}const sc=m&&m.hasData?m.score:null;if(sc!=null&&sc>=.8)beheerst++;scores.push({ld,dom,score:sc});});
+  let vorige=0;const eisen=KD_DREMPEL.map((f,i)=>{let e=Math.max(vorige+1,Math.ceil(f*N),i+1);e=Math.min(e,Math.max(1,N));vorige=e;return e;});
+  const vrij=eisen.filter(e=>N>0&&beheerst>=e).length;
+  return {vakId,N,beheerst,eisen,vrij,scores};
+}
+function kdKey(){return (typeof lvlCol==='function')?lvlCol('slagio_kingdom'):'slagio_kingdom';}
+function kdStaat(){try{return JSON.parse(localStorage.getItem(kdKey())||'{}');}catch(e){return {};}}
+function kdBewaar(s){try{localStorage.setItem(kdKey(),JSON.stringify(s));}catch(e){}}
+function kdBouwklaar(){
+  let n=0;try{const g=kdStaat().gebouwd||{};(getVK()||[]).forEach(v=>{const st=kdVakStand(v.id);n+=Math.max(0,st.vrij-(g[v.id]||0));});}catch(e){}
+  return n;
+}
+function renderPlayRow(){
+  const el=document.getElementById('kd-home-badge');if(!el)return;
+  const n=kdBouwklaar();el.hidden=!n;el.textContent=n+' klaar';el.setAttribute('aria-label',n===1?'1 gebouw klaar om te bouwen':n+' gebouwen klaar om te bouwen');
+  const sub=document.getElementById('kd-home-sub');
+  if(sub){let b=0;try{const g=kdStaat().gebouwd||{};Object.values(g).forEach(x=>b+=x);}catch(e){}
+    sub.textContent=n?'Je beheersing heeft iets vrijgespeeld':b?`${b} ${b===1?'gebouw':'gebouwen'} op je eiland`:'Bouw je eiland met echte beheersing';}
+}
+// Melding als er sinds de vorige keer iets bouwklaar is geworden.
+function kingdomCheck(){
+  try{const n=kdBouwklaar();const s=kdStaat();if(n>(s.gemeld||0)){s.gemeld=n;kdBewaar(s);if(typeof showToast==='function')showToast('🏰 Nieuw gebouw klaar om te bouwen in je Kingdom','#7c3aed',3200);}
+    else if(n<(s.gemeld||0)){s.gemeld=n;kdBewaar(s);}}catch(e){}
+  try{renderPlayRow();}catch(e){}
+}
+function kingdomOpen(){
+  if(window._kdLoaded&&typeof openKingdom==='function'){openKingdom();return;}
+  if(window._kdLoading)return;window._kdLoading=true;
+  const s=document.createElement('script');s.src='/kingdom.js';
+  s.onload=()=>{window._kdLoaded=true;window._kdLoading=false;try{openKingdom();}catch(e){}};
+  s.onerror=()=>{window._kdLoading=false;try{showToast('Kingdom kon niet laden. Controleer je verbinding.');}catch(e){}};
   document.head.appendChild(s);
 }
