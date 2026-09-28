@@ -140,6 +140,20 @@ function arcNext(pool,gebruikt,d){
 // Opties in willekeurige volgorde, met de index van het goede antwoord.
 function arcOpties(q){const idx=arcShuffle(q.o.map((_,i)=>i));return {idx,juist:idx.indexOf(q.c)};}
 
+// ═══════ 3D-SCÈNES (arcade3d.js) ═══════
+// Laadt de 3D-laag pas als een game hem nodig heeft. Lukt WebGL niet, dan blijft
+// de gewone illustratie staan (de host verdwijnt gewoon).
+function arcA3(naam,hostId,...args){
+  const host=document.getElementById(hostId);if(!host)return;
+  const maak={bom:'a3Bom',boss:'a3Boss',risico:'a3Risico',zwak:'a3Zwak',val:'a3Val',sorteer:'a3Sorteer'}[naam];
+  const start=()=>a3Laad(naam==='boss').then(()=>{if(!host.isConnected)return;
+    try{const S=window[maak](host,...args);A3S[naam]=S;host.classList.add('klaar');const w=host.closest('.a3-wrap');if(w)w.classList.add('met3d');}catch(e){console.warn('[3D]',e);host.remove();}}).catch(()=>host.remove());
+  if(typeof a3Laad==='function'){start();return;}
+  if(!ARC._a3s)ARC._a3s=new Promise((ok,nee)=>{const s=document.createElement('script');s.src='/arcade3d.js';s.onload=ok;s.onerror=nee;document.head.appendChild(s);});
+  ARC._a3s.then(start).catch(()=>host.remove());
+}
+function a3Haak(naam,fn,...a){try{const S=typeof A3S!=='undefined'&&A3S[naam];if(S&&!S.P.dood&&S[fn])S[fn](...a);}catch(e){}}
+
 // ═══════ PODIUM (volledig scherm, boven de app) ═══════
 function arcStage(theme,html){
   let st=document.getElementById('arc-stage');
@@ -405,7 +419,7 @@ function bomVolgende(eerste){
   const s=BOM.som;
   arcStage('bom',`${arcTop('Bom '+BOM.nr,`<span class="bom-defused">${BOM.defused} ontmanteld</span>`)}
     <div class="bom-wrap">
-      <div class="bom-case" id="bom-case">
+      <div class="bom-case a3-wrap" id="bom-case"><div class="a3-host a3-bom" id="a3-bom" aria-hidden="true"></div>
         <div class="bom-bolts" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
         <div class="bom-lont" aria-hidden="true"><svg viewBox="0 0 60 50"><path d="M4 48C8 26 30 30 34 16S52 4 56 6" fill="none" stroke="#a16207" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 3"/></svg><i class="bom-vonk"></i></div>
         <div class="bom-head">
@@ -425,10 +439,12 @@ function bomVolgende(eerste){
   ['A','B','C'].forEach((m,i)=>{
     document.querySelectorAll(`#bom-m${i} .bom-opt`).forEach(b=>b.addEventListener('click',()=>bomKies(i,b)));
   });
+  arcA3('bom','a3-bom');
   const loop=()=>{
     const rest=BOM.einde-performance.now();
     const el=document.getElementById('bom-clock');
     if(el){const s=Math.max(0,Math.ceil(rest/1000));if(s!==BOM._sec){BOM._sec=s;el.textContent='00:'+String(s).padStart(2,'0');arcRestart(el,'tik');}el.classList.toggle('kritiek',rest<5000);}
+    a3Haak('bom','tijd',Math.max(0,Math.ceil(rest/1000)),rest/bomTijd(),rest<5000);
     if(rest<=0){bomBoem('De tijd was op.');return;}
     if(rest<5000&&Math.floor(rest/250)!==BOM._piep){BOM._piep=Math.floor(rest/250);if(BOM._piep%2===0)arcFx('beep');}
     ARC.raf=requestAnimationFrame(loop);
@@ -439,7 +455,7 @@ function bomKies(i,btn){
   if(i!==BOM.module||BOM.dood)return;
   const m=['A','B','C'][i];const goed=btn.textContent===BOM.som[m].juist;
   if(goed){
-    btn.classList.add('goed');arcFx('snip');arcHap(18);
+    btn.classList.add('goed');arcFx('snip');arcHap(18);a3Haak('bom','knip',i);
     {const w=document.querySelector(`.bom-w[data-i="${i}"]`);if(w){w.classList.add('knip');const r=w.getBoundingClientRect();arcBurst(r.left+r.width/2,r.top+r.height/2,{n:10,kleuren:['#fde047','#fb923c','#fff'],afstand:50,maat:5,val:20});}
      const led=document.querySelector(`#bom-m${i} .bom-led`);if(led){const m=arcMid(led);arcBurst(m.x,m.y,{n:8,kleuren:['#22c55e','#86efac'],afstand:36,maat:5,val:0});}}
     const sec=document.getElementById('bom-m'+i);sec.classList.remove('actief');sec.classList.add('klaar');
@@ -448,7 +464,7 @@ function bomKies(i,btn){
     if(BOM.module>=3){bomDefused();return;}
     const nx=document.getElementById('bom-m'+BOM.module);nx.classList.add('actief');nx.querySelectorAll('.bom-opt').forEach(b=>b.disabled=false);
   }else{
-    btn.classList.add('fout');btn.disabled=true;BOM.strikes++;BOM.fouten++;BOM.einde-=4000;
+    btn.classList.add('fout');btn.disabled=true;BOM.strikes++;BOM.fouten++;BOM.einde-=4000;a3Haak('bom','fout');
     arcSnd('wrong');arcHap([40,30,40]);
     const c=document.getElementById('bom-case');c.classList.remove('schud');void c.offsetWidth;c.classList.add('schud');
     document.querySelectorAll('.bom-strikes i').forEach((x,k)=>x.classList.toggle('on',k<BOM.strikes));
@@ -457,11 +473,12 @@ function bomKies(i,btn){
 }
 function bomDefused(){
   cancelAnimationFrame(ARC.raf);
-  const rest=Math.max(0,BOM.einde-performance.now());BOM.defused++;BOM.tijdBonus+=rest;
+  const rest=Math.max(0,BOM.einde-performance.now());BOM.defused++;BOM.tijdBonus+=rest;a3Haak('bom','ok');
   arcSnd('correct');arcHap([20,20,60]);
   const st=document.getElementById('arc-stage');
   const ov=document.createElement('div');ov.className='bom-ok';
   ov.innerHTML=`<div class="bom-ok-scan" aria-hidden="true"></div><div class="bom-ok-k">Ontmanteld</div><div class="bom-ok-t">${_arcEsc(BOM.som.uitleg)}</div><div class="bom-ok-s">${arcNf(rest/1000,1)} s over</div><button class="arc-go" id="bom-nx">Volgende bom</button>`;
+  if(typeof A3S!=='undefined'&&A3S.bom){ov.style.animationDelay='.7s';}
   st.appendChild(ov);
   arcLater(()=>{const m=arcMid(ov.querySelector('.bom-ok-k'));arcBurst(m.x,m.y,{n:26,kleuren:['#22c55e','#86efac','#fde047','#fff'],afstand:160});},200);
   document.getElementById('bom-nx').onclick=()=>bomVolgende(false);
@@ -471,14 +488,16 @@ function bomBoem(reden){
   if(BOM.dood)return;BOM.dood=true;
   cancelAnimationFrame(ARC.raf);
   document.querySelectorAll('.bom-opt').forEach(b=>b.disabled=true);
-  arcFx('boom');arcHap([80,40,120,40,200]);
+  arcFx('boom');arcHap([80,40,120,40,200]);a3Haak('bom','boem');
   const st=document.getElementById('arc-stage');
   st.classList.add('bom-flash');
+  const met3d=typeof A3S!=='undefined'&&A3S.bom&&!A3S.bom.P.dood;
   const ov=document.createElement('div');ov.className='bom-boem';
   ov.innerHTML=`<div class="bom-schok" aria-hidden="true"><i></i><i></i><i></i></div><svg viewBox="0 0 200 160" class="bom-boem-svg" aria-hidden="true"><path d="M100 8l14 34 34-20-8 38 40 4-32 26 28 30-40-6-4 40-26-30-26 30-6-40-40 6 28-30-32-26 40-4-8-38 34 20z" fill="#facc15" stroke="#1f1300" stroke-width="5" stroke-linejoin="round"/><path d="M100 36l9 22 22-12-5 25 26 3-21 17 18 19-26-4-3 26-17-19-17 19-4-26-26 4 18-19-21-17 26-3-5-25 22 12z" fill="#f97316"/><text x="100" y="92" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="30" fill="#fff" stroke="#1f1300" stroke-width="2.5" paint-order="stroke">BOEM!</text></svg>
     <div class="bom-boem-t">${_arcEsc(reden)}</div><div class="bom-boem-u">Zo was hij te ontmantelen: <b>${_arcEsc(BOM.som.uitleg)}</b></div>`;
+  if(met3d)ov.classList.add('na3d');
   st.appendChild(ov);
-  arcBurst(innerWidth/2,innerHeight/2-40,{n:44,kleuren:['#1c1917','#44403c','#f97316','#facc15','#ef4444'],afstand:260,maat:11,duur:1000,val:120});
+  if(!met3d)arcBurst(innerWidth/2,innerHeight/2-40,{n:44,kleuren:['#1c1917','#44403c','#f97316','#facc15','#ef4444'],afstand:260,maat:11,duur:1000,val:120});
   arcLater(()=>arcResult({game:'bom',gewonnen:BOM.defused>0,kicker:BOM.defused?'Explosie na':'Direct de lucht in',groot:'',tel:{naar:BOM.defused,na:` <small>${BOM.defused===1?'bom':'bommen'}</small>`},
     sub:BOM.defused?'ontmanteld voordat het misging':'Volgende keer: eerst de grootheid, dan de formule, dan rekenen.',
     recWaarde:BOM.defused||null,stats:[['Tijd over',arcNf(BOM.tijdBonus/1000,1)+' s'],['Fouten',BOM.fouten],['Moeilijkste klok',Math.round(bomTijd()/1000)+' s']],
@@ -501,11 +520,12 @@ function bossRun(){
   arcStage('boss',`${arcTop('Examenboss',`<span class="boss-klok" id="boss-klok">3:00</span>`)}
     <div class="boss-arena">
       <div class="boss-ghost"><span class="boss-ghost-av">${bossAv(ghost)}</span><div><small>Ghost uit je divisie</small><b>${_arcEsc(ghost.naam)}</b><div class="boss-bar mini"><i id="boss-ghost-bar"></i></div></div></div>
-      <div class="boss-mon" id="boss-mon" style="--vk:${vak&&vak.kleur||'#7c3aed'}">${bossSVG(vak)}</div>
+      <div class="boss-mon a3-wrap" id="boss-mon" style="--vk:${vak&&vak.kleur||'#7c3aed'}">${bossSVG(vak)}<div class="a3-host a3-boss" id="a3-boss" aria-hidden="true"></div></div>
       <div class="boss-hp"><div class="boss-hp-l"><b>Examenboss</b><span id="boss-hp-t">1.000 / 1.000</span></div><div class="boss-bar"><i class="spoor" id="boss-hp-spoor"></i><i id="boss-hp-bar"></i></div></div>
       <div class="boss-me"><span>Jij</span><div class="boss-bar me"><i id="boss-me-bar"></i></div><span class="boss-combo" id="boss-combo"></span></div>
       <div id="boss-q"></div>
     </div>`);
+  arcA3('boss','a3-boss',vak&&vak.kleur);
   arcCountdown(()=>{BOSS.start=performance.now();bossVraag();bossLoop();});
 }
 function bossAv(g){try{if(typeof getAnimalDisplay==='function'){const h=getAnimalDisplay(g.animalId,g.stage||0,28,'');if(h)return h;}}catch(e){}return '🦊';}
@@ -547,21 +567,22 @@ function bossAntwoord(k,knoppen,card){
     const mult=BOSS.combo>=5?1.5:BOSS.combo>=3?1.25:1;
     const dmg=Math.round((basis+snel)*mult);BOSS.hp=Math.max(0,BOSS.hp-dmg);BOSS.dmg+=dmg;
     BOSS.diff=Math.min(3,BOSS.diff+(BOSS.combo%2===0?1:0));
-    const van=arcMid(knoppen[k]),naar=arcMid(mon);
-    arcFly(van,naar,'<span class="boss-orb"></span>',{duur:380,boog:-40,eind:1.4,klaar:()=>{
+    const van=arcMid(knoppen[k]),naar=arcMid(mon);const met3d=typeof A3S!=='undefined'&&A3S.boss&&!A3S.boss.P.dood;
+    if(met3d){a3Haak('boss','raak',dmg,mult>1);arcLater(()=>{arcFx('hit');arcHap(20);bossPop(`−${dmg}`,mult>1?'crit':'');bossBalken();},340);}
+    else arcFly(van,naar,'<span class="boss-orb"></span>',{duur:380,boog:-40,eind:1.4,klaar:()=>{
       arcFx('hit');arcHap(20);arcBurst(naar.x,naar.y-10,{n:mult>1?20:12,kleuren:mult>1?['#fde047','#fff','#f97316']:['#fb923c','#fde047','#fff'],afstand:mult>1?110:80,maat:7});
       bossPop(`−${dmg}`,mult>1?'crit':'');arcRestart(mon,'au');bossBalken();}});
   }else{
     knoppen[k].classList.add('fout');BOSS.combo=0;BOSS.fout++;BOSS.jij=Math.max(0,BOSS.jij-25);BOSS.diff=Math.max(1,BOSS.diff-1);
     arcFx('hurt');arcHap([50,30,50]);
-    const st=document.getElementById('arc-stage');arcRestart(st,'boss-hit');arcRestart(mon,'valt-aan');
+    const st=document.getElementById('arc-stage');a3Haak('boss','aanval');arcLater(()=>arcRestart(st,'boss-hit'),typeof A3S!=='undefined'&&A3S.boss?330:0);arcRestart(mon,'valt-aan');
     if(!arcLite()){const kl=document.createElement('div');kl.className='boss-klauw';kl.innerHTML='<i></i><i></i><i></i>';st.appendChild(kl);arcLater(()=>kl.remove(),700);}
     const uo=it.q.uo&&it.q.uo[BOSS.opts.idx[k]];
     card.insertAdjacentHTML('beforeend',`<div class="arc-uitleg"><b>Boss-aanval.</b> ${_arcEsc(uo||it.q.u||'')}</div>`);
   }
   if(!goed)bossBalken();
-  if(BOSS.hp<=0){arcLater(()=>{const m=document.getElementById('boss-mon');if(m){m.classList.add('poef');const c=arcMid(m);arcBurst(c.x,c.y,{n:40,kleuren:['#a78bfa','#c4b5fd','#fde047','#fff'],afstand:220,maat:10,duur:1000});}arcSnd('fanfare');},450);arcLater(()=>bossEinde('win'),1500);return;}
-  if(BOSS.jij<=0){arcLater(()=>bossEinde('ko'),900);return;}
+  if(BOSS.hp<=0){a3Haak('boss','dood');arcLater(()=>{const m=document.getElementById('boss-mon');if(m&&!(typeof A3S!=='undefined'&&A3S.boss)){m.classList.add('poef');const c=arcMid(m);arcBurst(c.x,c.y,{n:40,kleuren:['#a78bfa','#c4b5fd','#fde047','#fff'],afstand:220,maat:10,duur:1000});}arcSnd('fanfare');},450);arcLater(()=>bossEinde('win'),2300);return;}
+  if(BOSS.jij<=0){a3Haak('boss','juich');arcLater(()=>bossEinde('ko'),1400);return;}
   arcLater(bossVraag,goed?520:1900);
 }
 function bossPop(t,cls){const m=document.getElementById('boss-mon');if(!m)return;const e=document.createElement('span');e.className='boss-pop '+cls;e.textContent=t;m.appendChild(e);arcLater(()=>e.remove(),900);}
@@ -592,11 +613,11 @@ const RISK_INZET=[{id:'veilig',naam:'Veilig',d:1,pt:10,st:'★'},{id:'normaal',n
 function riskRun(){
   if(!RISK.pool||RISK.pool.length<6){arcGeenVragen('risico');return;}
   Object.assign(RISK,{bank:0,pot:0,mult:1,harten:3,nr:0,max:15,goed:0,fout:0,gebruikt:new Set(),inzet:null});
-  riskScherm();riskKeuze();
+  riskScherm();riskA3();riskKeuze();
 }
 function riskScherm(){
   arcStage('risico',`${arcTop('Risico Run',`<span class="risk-hart" id="risk-hart">${riskHarten()}</span>`)}
-    <div class="risk-wrap">
+    <div class="risk-wrap a3-wrap"><div class="a3-host a3-risico" id="a3-risico" aria-hidden="true"></div>
       <div class="risk-meters">
         <div class="risk-bank"><small>Op de bank</small><b id="risk-bank">${arcNf(RISK.bank,0)}</b></div>
         <div class="risk-pot"><small>In de pot</small><b id="risk-pot">${arcNf(RISK.pot,0)}</b><span id="risk-mult">×${arcNf(RISK.mult,1)}</span></div>
@@ -605,6 +626,7 @@ function riskScherm(){
       <div id="risk-main"></div>
     </div>`);
 }
+function riskA3(){arcA3('risico','a3-risico');}
 function riskHarten(){return Array.from({length:3},(_,i)=>`<span class="h${i<RISK.harten?'':' leeg'}">♥</span>`).join('');}
 function riskUpd(alleen){
   const set=(id,v)=>{if(alleen&&!alleen.includes(id))return;const e=document.getElementById(id);if(e){if(!alleen)e.textContent=v;arcRestart(e,'tel');}};
@@ -636,10 +658,11 @@ function riskVraag(){
       arcSnd('coin');arcHap(16);
       const van=arcMid(knoppen[k]),naar=arcMid(document.getElementById('risk-pot'));
       for(let c=0;c<Math.min(7,2+Math.round(w/15));c++)arcFly(van,naar,'<span class="risk-munt"></span>',{delay:c*70,duur:520,boog:-90-c*6,eind:.7});
+      a3Haak('risico','pot',RISK.pot);
       arcLater(()=>{arcTel(document.getElementById('risk-pot'),RISK.pot,{van:oudPot,duur:500});riskUpd(['risk-pot']);},560);
       arcLater(()=>riskBeslis(w),1000);
     }else{
-      knoppen[k].classList.add('fout');RISK.fout++;const verlies=RISK.pot;RISK.pot=0;RISK.mult=1;RISK.harten--;
+      knoppen[k].classList.add('fout');RISK.fout++;const verlies=RISK.pot;RISK.pot=0;RISK.mult=1;RISK.harten--;a3Haak('risico','verlies');
       arcSnd('wrong');arcHap([50,30,50]);
       const hartjes=document.querySelectorAll('#risk-hart .h');const weg=hartjes[RISK.harten];
       if(weg){const m=arcMid(weg);arcBurst(m.x,m.y,{n:10,kleuren:['#f87171','#ef4444','#fecaca'],afstand:40,maat:6,val:30});}
@@ -662,7 +685,7 @@ function riskBeslis(w){
   document.getElementById('risk-door').onclick=()=>{arcSnd('tap');riskKeuze();};
 }
 function riskOpslaan(einde){
-  const pot=RISK.pot,oudBank=RISK.bank;RISK.bank+=pot;RISK.pot=0;RISK.mult=1;arcFx('vault');arcHap([20,20,40]);
+  const pot=RISK.pot,oudBank=RISK.bank;RISK.bank+=pot;RISK.pot=0;RISK.mult=1;arcFx('vault');arcHap([20,20,40]);a3Haak('risico','bank');
   const van=arcMid(document.getElementById('risk-pot')),naar=arcMid(document.getElementById('risk-bank'));
   for(let c=0;c<Math.min(8,2+Math.round(pot/25));c++)arcFly(van,naar,'<span class="risk-munt"></span>',{delay:c*60,duur:480,boog:-50,eind:.7});
   arcLater(()=>{riskUpd();arcTel(document.getElementById('risk-bank'),RISK.bank,{van:oudBank,duur:600});arcRestart(document.querySelector('.risk-bank'),'kluis');
@@ -723,7 +746,7 @@ function zwakRun(){
   const d=ZWAK.doel;if(!d){arcClose();return;}
   ARC.vakId=d.vakId;
   const voor=ldMastery(d.vakId,zwakLd(d.vakId,d.ldId).ld);
-  Object.assign(ZWAK,{pool:zwakVragen(d.vakId,d.ldId),gebruikt:new Set(),stap:0,max:5,goed:0,herkans:0,diff:1,voor,log:[],misser:null});
+  ZWAK.a3host=null;Object.assign(ZWAK,{pool:zwakVragen(d.vakId,d.ldId),gebruikt:new Set(),stap:0,max:5,goed:0,herkans:0,diff:1,voor,log:[],misser:null});
   zwakVraag();
 }
 function zwakKop(){
@@ -735,8 +758,13 @@ function zwakKop(){
 function zwakVraag(herkans){
   const it=arcNext(ZWAK.pool,ZWAK.gebruikt,ZWAK.diff);ZWAK.item=it;ZWAK.t0=performance.now();
   const o=arcOpties(it.q);ZWAK.opts=o;
-  arcStage('zwak',`${zwakKop()}<div class="zwak-wrap">${herkans?`<div class="zwak-herkans">${typeof mascotSVG==='function'?mascotSVG('knipoog',40):''}<span>Een vergelijkbare. Nu jij.</span></div>`:''}${arcVraagHtml(it,o,'zwak-card')}</div>`);
+  const oud=document.getElementById('a3-zwak');
+  arcStage('zwak',`${zwakKop()}<div class="zwak-wrap"><div class="a3-host a3-zwak" id="a3-zwak-plek" aria-hidden="true"></div>${herkans?`<div class="zwak-herkans">${typeof mascotSVG==='function'?mascotSVG('knipoog',40):''}<span>Een vergelijkbare. Nu jij.</span></div>`:''}${arcVraagHtml(it,o,'zwak-card')}</div>`);
   const card=document.querySelector('#arc-stage .arc-q');
+  // Het dartbord blijft tussen de vragen staan: we verhuizen de bestaande host.
+  const plek=document.getElementById('a3-zwak-plek');
+  if(ZWAK.a3host&&typeof A3S!=='undefined'&&A3S.zwak&&!A3S.zwak.P.dood){plek.replaceWith(ZWAK.a3host);}
+  else{plek.id='a3-zwak';ZWAK.a3host=plek;arcA3('zwak','a3-zwak');}
   arcBindOpts(card,(k,knoppen)=>zwakAntwoord(k,knoppen,card,!!herkans));
 }
 function zwakAntwoord(k,knoppen,card,herkans){
@@ -745,6 +773,7 @@ function zwakAntwoord(k,knoppen,card,herkans){
   knoppen[o.juist].classList.add('goed');
   if(!herkans){ZWAK.log.push(goed);ZWAK.stap++;if(goed)ZWAK.goed++;}
   else if(goed)ZWAK.herkans++;
+  a3Haak('zwak','gooi',goed,Math.min(1,(ZWAK.goed+ZWAK.herkans)/ZWAK.max));
   if(goed){
     arcSnd('correct');arcHap(16);ZWAK.diff=Math.min(3,ZWAK.diff+1);
     card.insertAdjacentHTML('beforeend',`<div class="arc-uitleg goed">${herkans?'<b>Gerepareerd.</b> ':''}${_arcEsc(it.q.u||'')}</div><button class="arc-go zwak-door">Verder</button>`);
@@ -853,11 +882,13 @@ function sortRonde(eerste){
     <div class="sort-wrap">
       <div class="sort-k">${_arcEsc(x.soort)} · ronde ${SORT.i+1} van ${SORT.rondes.length}${SORT.gemengd&&SORT.i===0?' · gemengde reeksen':''}</div>
       <h2 class="sort-t">${_arcEsc(x.t)}</h2>
+      <div class="a3-host a3-sorteer" id="a3-sorteer" aria-hidden="true"></div>
       <ol class="sort-slots">${x.k.map((_,i)=>`<li data-i="${i}"><span>${i+1}</span></li>`).join('')}</ol>
       <div class="sort-deck">${kaarten.map(c=>`<button class="sort-card" data-i="${c.i}">${_arcEsc(c.t)}</button>`).join('')}</div>
       <p class="sort-hint">Tik de kaarten in de goede volgorde. Een fout kost 1 seconde.</p>
     </div>`);
   document.querySelectorAll('.sort-card').forEach(b=>b.addEventListener('click',()=>sortTik(b)));
+  arcA3('sorteer','a3-sorteer',x.k.length);
   const go=()=>{SORT.t0=performance.now();const loop=()=>{const e=document.getElementById('sort-klok');if(e)e.textContent=arcNf((performance.now()-SORT.t0+SORT.straf)/1000,2)+' s';ARC.raf=requestAnimationFrame(loop);};loop();};
   if(eerste)arcCountdown(go);else go();
 }
@@ -870,15 +901,16 @@ function sortTik(b){
     b.disabled=true;b.classList.add('weg');arcSnd('pop');arcHap(10);arcLater(()=>{b.style.display='none';},170);
     const vul=()=>{if(slot&&!slot.classList.contains('vol')){slot.classList.add('vol');slot.insertAdjacentHTML('beforeend',`<b>${_arcEsc(tekst)}</b>`);}};
     if(slot&&!arcLite())arcFly(van,{x:naar.x,y:naar.y},`<span class="sort-vlieg">${_arcEsc(tekst)}</span>`,{duur:300,boog:-30,eind:.9,klaar:vul});else vul();
+    a3Haak('sorteer','zet',SORT.pos);
     SORT.pos++;
     if(SORT.pos>=SORT.x.k.length)sortKlaar();
   }else{
-    SORT.straf+=1000;SORT.fouten++;arcSnd('wrong');arcHap([30,20,30]);
+    SORT.straf+=1000;SORT.fouten++;arcSnd('wrong');arcHap([30,20,30]);a3Haak('sorteer','fout');
     b.classList.remove('schud');void b.offsetWidth;b.classList.add('schud');
   }
 }
 function sortKlaar(){
-  cancelAnimationFrame(ARC.raf);
+  cancelAnimationFrame(ARC.raf);arcLater(()=>a3Haak('sorteer','klaar'),450);
   arcLater(()=>document.querySelectorAll('.sort-slots li').forEach((li,i)=>{li.style.setProperty('--d',(i*70)+'ms');li.classList.add('glans');}),320);
   const ms=performance.now()-SORT.t0+SORT.straf;SORT.totaal+=ms;
   const id=_sortId(SORT.x);let regel='';
@@ -912,7 +944,7 @@ function valRun(){
   if(!VAL.pool||VAL.pool.length<8){arcGeenVragen('val');return;}
   Object.assign(VAL,{score:0,streak:0,beste:0,goed:0,fout:0,vallen:0,duur:60000,gebruikt:new Set(),klaar:false,pauze:0});
   arcStage('val',`${arcTop('Val of waar',`<span class="val-klok" id="val-klok">60</span>`)}
-    <div class="val-wrap"><div class="val-score"><b id="val-score">0</b><span id="val-streak"></span></div>
+    <div class="val-wrap a3-wrap"><div class="a3-host a3-val" id="a3-val" aria-hidden="true"></div><div class="val-score"><b id="val-score">0</b><span id="val-streak"></span></div>
       <div class="val-meter" aria-hidden="true"><i id="val-meter"></i></div>
       <div class="val-stapel"><div class="val-achter a2"></div><div class="val-achter a1"></div><div id="val-stapel"></div></div>
       <div class="val-feed" id="val-feed" aria-live="polite"></div>
@@ -922,6 +954,7 @@ function valRun(){
   document.getElementById('val-yes').onclick=()=>valOordeel(true);
   const key=e=>{if(e.key==='ArrowLeft'){e.preventDefault();valOordeel(false);}if(e.key==='ArrowRight'){e.preventDefault();valOordeel(true);}};
   ARC._key&&document.removeEventListener('keydown',ARC._key);document.addEventListener('keydown',key);ARC._key=key;
+  arcA3('val','a3-val');
   arcCountdown(()=>{VAL.eind=performance.now()+VAL.duur;valKaart();valLoop();});
 }
 function valLoop(){
@@ -960,12 +993,12 @@ function valOordeel(zegtKlopt){
   if(goed){
     VAL.goed++;VAL.streak++;VAL.beste=Math.max(VAL.beste,VAL.streak);
     const mult=VAL.streak>=10?3:VAL.streak>=5?2:1;VAL.score+=10*mult;
-    if(!c.waar){VAL.vallen++;arcSnd('combo');const uo=c.it.q.uo&&c.it.q.uo[c.oi];
+    if(!c.waar){VAL.vallen++;arcSnd('combo');a3Haak('val','ontdekt');const uo=c.it.q.uo&&c.it.q.uo[c.oi];
       if(feed)feed.innerHTML=`<div class="val-gevangen"><b>🪤 Val ontdekt</b>${uo?' · '+_arcEsc(uo):''}</div>`;}
     else{arcSnd('correct');if(feed)feed.innerHTML='';}
     arcHap(12);
   }else{
-    VAL.fout++;VAL.streak=0;arcSnd('wrong');arcHap([40,30,40]);VAL.pauze=performance.now()+1900;VAL.eind+=1900;
+    VAL.fout++;VAL.streak=0;arcSnd('wrong');arcHap([40,30,40]);VAL.pauze=performance.now()+1900;VAL.eind+=1900;if(!c.waar||zegtKlopt)a3Haak('val','snap');
     const uo=!c.waar&&c.it.q.uo?c.it.q.uo[c.oi]:'';
     if(feed)feed.innerHTML=`<div class="val-erin"><b>${c.waar?'Dit klopte wél.':'Erin getrapt.'}</b> Goed antwoord: ${_arcEsc(c.it.q.o[c.it.q.c])}.${uo?' '+_arcEsc(uo):''}</div>`;
   }
@@ -988,58 +1021,8 @@ function arcGeenVragen(game){
 }
 
 // ═══════ ILLUSTRATIES (hub + intro) ═══════
-const ARC_ART={
-  // Tijdbom: drie staven dynamiet, tape, een timer met gloeiende cijfers en een brandende lont.
-  bom:()=>`<svg viewBox="0 0 120 100"><defs><linearGradient id="ab-dyn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7f1d1d"/><stop offset=".35" stop-color="#ef4444"/><stop offset=".55" stop-color="#f87171"/><stop offset="1" stop-color="#7f1d1d"/></linearGradient>
-    <linearGradient id="ab-kast" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#52525b"/><stop offset=".5" stop-color="#27272a"/><stop offset="1" stop-color="#18181b"/></linearGradient><radialGradient id="ab-gloed" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#ef4444" stop-opacity=".45"/><stop offset="1" stop-color="#ef4444" stop-opacity="0"/></radialGradient></defs>
-    <ellipse cx="60" cy="92" rx="44" ry="5" fill="#000" opacity=".22"/>
-    ${[26,48,70].map(x=>`<rect x="${x}" y="30" width="22" height="60" rx="5" fill="url(#ab-dyn)"/><ellipse cx="${x+11}" cy="31" rx="11" ry="3.5" fill="#fca5a5"/><ellipse cx="${x+11}" cy="31" rx="4" ry="1.4" fill="#7f1d1d"/>`).join('')}
-    <rect x="22" y="44" width="74" height="9" fill="#1f2937"/><rect x="22" y="72" width="74" height="9" fill="#1f2937"/><rect x="22" y="44" width="74" height="2" fill="#4b5563"/><rect x="22" y="72" width="74" height="2" fill="#4b5563"/>
-    <rect x="34" y="50" width="52" height="26" rx="5" fill="url(#ab-kast)" stroke="#0a0a0a" stroke-width="1.5"/><rect x="38" y="54" width="44" height="14" rx="2" fill="#0b0b0b"/><rect x="38" y="54" width="44" height="14" rx="2" fill="url(#ab-gloed)"/>
-    <text x="60" y="65" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-weight="700" font-size="11" fill="#f87171" style="filter:drop-shadow(0 0 2px #ef4444)">00:18</text>
-    <circle cx="42" cy="72" r="1.6" fill="#22c55e"/><circle cx="48" cy="72" r="1.6" fill="#22c55e"/><circle cx="54" cy="72" r="1.6" fill="#71717a"/>
-    <path d="M86 58c10 0 12 10 20 8M86 64c8 2 8 12 16 14" fill="none" stroke-width="2.4" stroke-linecap="round" stroke="#2563eb"/><path d="M86 70c6 4 4 14 12 18" fill="none" stroke="#eab308" stroke-width="2.4" stroke-linecap="round"/>
-    <path d="M59 30c0-10 8-18 18-20" fill="none" stroke="#a16207" stroke-width="3" stroke-linecap="round"/><path d="M59 30c0-10 8-18 18-20" fill="none" stroke="#fde68a" stroke-width="1" stroke-dasharray="2 3" stroke-linecap="round"/>
-    <g class="a-vonk"><circle cx="78" cy="10" r="7" fill="#fde047" opacity=".35"/><path d="M78 3l2 5 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1z" fill="#fef08a"/><circle cx="78" cy="10" r="1.8" fill="#fff"/></g></svg>`,
-  // Examenboss: een gehoornde brok paars met glanzende huid, tanden en een levensbalk.
-  boss:()=>`<svg viewBox="0 0 120 100"><defs><radialGradient id="ab-huid" cx=".38" cy=".3" r=".85"><stop offset="0" stop-color="#c4b5fd"/><stop offset=".45" stop-color="#8b5cf6"/><stop offset="1" stop-color="#3b0764"/></radialGradient><linearGradient id="ab-hoorn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fef3c7"/><stop offset="1" stop-color="#a16207"/></linearGradient><radialGradient id="ab-oog" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fef08a"/><stop offset=".6" stop-color="#facc15"/><stop offset="1" stop-color="#b45309"/></radialGradient></defs>
-    <ellipse cx="60" cy="94" rx="34" ry="4.5" fill="#000" opacity=".25"/>
-    <g class="a-bob"><path d="M38 32c-6-8-6-18 0-24 0 8 4 13 10 16zM82 32c6-8 6-18 0-24 0 8-4 13-10 16z" fill="url(#ab-hoorn)"/>
-    <path d="M28 90V52c0-20 14-34 32-34s32 14 32 34v38l-7-6-7 6-6-6-6 6-6-6-6 6-6-6-6 6z" fill="url(#ab-huid)"/>
-    <ellipse cx="46" cy="38" rx="10" ry="6" fill="#fff" opacity=".22"/>
-    <path d="M40 46l12 4M80 46l-12 4" stroke="#1e0b3a" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="48" cy="56" r="7" fill="url(#ab-oog)"/><circle cx="72" cy="56" r="7" fill="url(#ab-oog)"/><ellipse cx="48" cy="56" rx="1.8" ry="5" fill="#1e0b3a"/><ellipse cx="72" cy="56" rx="1.8" ry="5" fill="#1e0b3a"/>
-    <path d="M44 70q16 12 32 0v4q-16 10-32 0z" fill="#1e0b3a"/><path d="M48 71l3 5 3-4 3 5 3-5 3 5 3-4 3 5 3-6" fill="none" stroke="#f8fafc" stroke-width="1.6" stroke-linejoin="round"/></g>
-    <rect x="16" y="4" width="88" height="7" rx="3.5" fill="#1e0b3a" opacity=".35"/><rect x="16" y="4" width="56" height="7" rx="3.5" fill="#ef4444"/><rect x="16" y="4" width="56" height="2.5" rx="1.2" fill="#fca5a5" opacity=".7"/></svg>`,
-  // Risico Run: een stapel gouden munten, één draait om met ×2, en een vlammetje.
-  risico:()=>`<svg viewBox="0 0 120 100"><defs><linearGradient id="ab-goud" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a16207"/><stop offset=".3" stop-color="#facc15"/><stop offset=".55" stop-color="#fef08a"/><stop offset=".8" stop-color="#eab308"/><stop offset="1" stop-color="#854d0e"/></linearGradient><radialGradient id="ab-munt" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#fef9c3"/><stop offset=".5" stop-color="#facc15"/><stop offset="1" stop-color="#a16207"/></radialGradient></defs>
-    <ellipse cx="54" cy="93" rx="40" ry="5" fill="#000" opacity=".25"/>
-    ${[0,1,2,3,4,5].map(i=>`<rect x="24" y="${80-i*8}" width="44" height="9" fill="url(#ab-goud)"/><ellipse cx="46" cy="${80-i*8}" rx="22" ry="5.5" fill="url(#ab-munt)" stroke="#a16207" stroke-width=".8"/>`).join('')}
-    <ellipse cx="46" cy="40" rx="15" ry="3.4" fill="none" stroke="#a16207" stroke-width=".8" opacity=".6"/>
-    <g class="a-flip"><circle cx="86" cy="42" r="21" fill="url(#ab-munt)" stroke="#854d0e" stroke-width="2"/><circle cx="86" cy="42" r="16" fill="none" stroke="#a16207" stroke-width="1.2" stroke-dasharray="1.5 2.5"/><text x="86" y="49" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="18" fill="#713f12">×2</text><path d="M72 30a18 18 0 0 1 10-6" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".8"/></g>
-    <g class="a-vlam"><path d="M100 88c8-7 5-19-3-24 1 9-7 11-7 18 0 5 5 10 10 6z" fill="#f97316"/><path d="M99 86c4-4 3-10-1-13 0 5-4 6-4 10 0 3 2 5 5 3z" fill="#fde047"/></g></svg>`,
-  // Zwakke plek: een dartbord met een pijl die precies in de roos landt.
-  zwak:()=>`<svg viewBox="0 0 120 100"><defs><radialGradient id="ab-bord" cx=".5" cy=".5" r=".5"><stop offset=".85" stop-color="#1c1917"/><stop offset="1" stop-color="#0c0a09"/></radialGradient><linearGradient id="ab-schacht" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e5e7eb"/><stop offset="1" stop-color="#6b7280"/></linearGradient></defs>
-    <ellipse cx="58" cy="95" rx="34" ry="4" fill="#000" opacity=".2"/>
-    <circle cx="58" cy="52" r="42" fill="url(#ab-bord)"/>
-    ${Array.from({length:20},(_,i)=>{const a0=i/20*6.2832-1.57,a1=(i+1)/20*6.2832-1.57;const p=(r,a)=>`${(58+Math.cos(a)*r).toFixed(1)} ${(52+Math.sin(a)*r).toFixed(1)}`;return `<path d="M58 52L${p(34,a0)}A34 34 0 0 1 ${p(34,a1)}z" fill="${i%2?'#f5f0e1':'#1c1917'}"/><path d="M${p(34,a0)}A34 34 0 0 1 ${p(34,a1)}L${p(30,a1)}A30 30 0 0 0 ${p(30,a0)}z" fill="${i%2?'#16a34a':'#dc2626'}"/><path d="M${p(21,a0)}A21 21 0 0 1 ${p(21,a1)}L${p(18,a1)}A18 18 0 0 0 ${p(18,a0)}z" fill="${i%2?'#16a34a':'#dc2626'}"/>`;}).join('')}
-    <circle cx="58" cy="52" r="6" fill="#16a34a"/><circle class="a-puls" cx="58" cy="52" r="3.2" fill="#dc2626"/>
-    <circle cx="58" cy="52" r="42" fill="none" stroke="#a8a29e" stroke-width="1.2" opacity=".5"/>
-    <g class="a-pijl"><path d="M59 51l30-26" stroke="url(#ab-schacht)" stroke-width="3.2" stroke-linecap="round"/><path d="M86 28l16-10-4 9 9-1-13 11z" fill="#f97316" stroke="#9a3412" stroke-width=".8"/><path d="M58 52l4-2-2 4z" fill="#475569"/></g></svg>`,
-  // Sorteer: drie houten blokken met ingebrande cijfers, van klein naar groot.
-  sorteer:()=>`<svg viewBox="0 0 120 100"><defs><linearGradient id="ab-hout" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fcd9a4"/><stop offset=".5" stop-color="#d9a066"/><stop offset="1" stop-color="#a86b3c"/></linearGradient><pattern id="ab-nerf" width="12" height="6" patternUnits="userSpaceOnUse"><path d="M0 3q3-2 6 0t6 0" fill="none" stroke="#9a5b2e" stroke-width=".5" opacity=".45"/></pattern></defs>
-    <ellipse cx="60" cy="93" rx="52" ry="4.5" fill="#000" opacity=".2"/>
-    ${[[10,62,26,'#22c55e','1','a-b1'],[46,46,42,'#3b82f6','2','a-b2'],[82,26,62,'#a855f7','3','a-b3']].map(([x,y,h,c,n,cl])=>`<g class="${cl}"><path d="M${x} ${y+6}l6-6h18v${h}l-6 6z" fill="#7c4a26"/><rect x="${x}" y="${y+6}" width="24" height="${h}" rx="2" fill="url(#ab-hout)"/><rect x="${x}" y="${y+6}" width="24" height="${h}" rx="2" fill="url(#ab-nerf)"/><path d="M${x} ${y+6}l6-6h18l-6 6z" fill="#fde2b8"/><rect x="${x}" y="${y+6}" width="24" height="4" fill="${c}" opacity=".85"/><text x="${x+12}" y="${y+6+h/2+6}" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#5b3413">${n}</text></g>`).join('')}</svg>`,
-  // Val of waar: een muizenval met een stuk kaas. Is het antwoord een val?
-  val:()=>`<svg viewBox="0 0 120 100"><defs><linearGradient id="ab-plank" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8c28e"/><stop offset="1" stop-color="#b07a45"/></linearGradient><linearGradient id="ab-kaas" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient><linearGradient id="ab-veer" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e5e7eb"/><stop offset=".5" stop-color="#9ca3af"/><stop offset="1" stop-color="#f3f4f6"/></linearGradient></defs>
-    <ellipse cx="60" cy="90" rx="50" ry="5" fill="#000" opacity=".22"/>
-    <path d="M12 70l84-12 16 10-84 14z" fill="url(#ab-plank)" stroke="#8a5a2b" stroke-width="1"/><path d="M28 82l84-14v6l-84 14z" fill="#8a5a2b"/><path d="M12 70l16 12v6L12 76z" fill="#a0693a"/>
-    <path d="M30 76c10-2 40-8 60-10" stroke="#8a5a2b" stroke-width=".6" opacity=".5"/>
-    <g class="a-zwaai"><path d="M34 70q4-22 30-26" fill="none" stroke="url(#ab-veer)" stroke-width="3" stroke-linecap="round"/><path d="M64 44l24 16" stroke="url(#ab-veer)" stroke-width="3" stroke-linecap="round"/></g>
-    <ellipse cx="52" cy="70" rx="8" ry="3" fill="none" stroke="url(#ab-veer)" stroke-width="2.4"/>
-    <path d="M70 62l20-14 8 12z" fill="url(#ab-kaas)" stroke="#b45309" stroke-width="1"/><path d="M90 48l8 12v5l-8-11z" fill="#d97706"/><circle cx="82" cy="57" r="2" fill="#d97706"/><circle cx="89" cy="55" r="1.3" fill="#d97706"/><circle cx="78" cy="61" r="1.2" fill="#d97706"/>
-    <g transform="translate(20 20) rotate(-8)"><rect x="-12" y="-9" width="40" height="18" rx="4" fill="#fff" stroke="#dc2626" stroke-width="2"/><text x="8" y="5" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="12" fill="#dc2626">VAL?</text></g></svg>`,
-};
+// Illustraties: gerenderd uit dezelfde 3D-scènes als in de games (arcade3d.js).
+const ARC_ART=Object.fromEntries(['bom','boss','risico','zwak','sorteer','val'].map(n=>[n,()=>`<img class="arc-art3d" src="/img/arc-${n}.webp" alt="" draggable="false" decoding="async">`]));
 
 // ═══════ REGISTER ═══════
 const ARC_GAMES={

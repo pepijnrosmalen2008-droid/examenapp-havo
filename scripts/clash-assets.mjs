@@ -33,7 +33,7 @@ const BRON = {
   'gras': nk('grass_large'), 'grasje': nk('grass'), 'steen-groot': nk('rock_largeA'), 'steen': nk('rock_smallA'), 'steen-hoog': nk('stone_tallA'),
   'paddenstoel': nk('mushroom_redGroup'), 'boomstam': nk('log'),
 };
-const HOUD = { 'mens-ridder': ['idle','walk','sprint','die','attack-melee-right','holding-right-shoot','holding-both-shoot','holding-both','emote-yes'], robot: ['Idle','Walking','Running','Punch','Death'] };
+const HOUD = { 'mens-ridder': ['idle','walk','sprint','die','attack-melee-right','holding-right-shoot','holding-both-shoot','holding-both','emote-yes'], robot: ['Idle','Walking','Running','Punch','Death','Jump','No','Yes','Wave','ThumbsUp','Dance'] };
 
 const io = new NodeIO().registerExtensions(ALL_EXTENSIONS);
 const doel = new Document();

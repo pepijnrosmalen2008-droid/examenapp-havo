@@ -10042,3 +10042,39 @@ html.cl-sleept{cursor:grabbing}
 .cl-kaart-meta .cl-lvl{position:static;transform:none;flex:none;min-width:18px;height:16px;padding:0 5px;display:grid;place-items:center;font-size:10px}
 .cl-kaart-meta .cl-voortg{flex:1;margin:0;height:14px}.cl-kaart-meta .cl-voortg b{line-height:14px;font-size:9px}
 .cl-hoe{margin-top:10px;border:0;border-radius:999px;padding:8px 14px;background:rgba(10,14,24,.55);backdrop-filter:blur(8px);color:#fff;font:700 13px/1 var(--font);cursor:pointer}
+
+/* ═══════ ARCADE 3D-SCÈNES ═══════ */
+.a3-host{position:relative;overflow:hidden;pointer-events:none;opacity:0;transition:opacity .45s}
+.a3-host.klaar{opacity:1}
+.a3-canvas{position:absolute;inset:0;display:block}
+/* Bom: de tijdbom staat bovenin de kast; de platte lont en draden verdwijnen. */
+.a3-bom{height:clamp(170px,27vh,250px);margin:-14px -14px 10px;border-radius:20px 20px 0 0;background:radial-gradient(90% 90% at 50% 20%,#3a3d44,#15161a)}
+.bom-case.met3d .bom-lont,.bom-case.met3d .bom-wires{display:none}
+.bom-case.met3d .bom-head{margin-top:-6px}
+.bom-boem.na3d{animation:bomNa3d 1.2s both}
+@keyframes bomNa3d{0%,55%{opacity:0}100%{opacity:1}}
+.bom-ok{animation-fill-mode:both}
+/* Boss: de robot staat op een podium, de SVG-boss blijft als terugval. */
+.boss-mon.met3d{width:100%;max-width:420px;height:clamp(210px,32vh,300px);animation:none}
+.boss-mon.met3d>svg{display:none}
+.a3-boss{position:absolute;inset:0}
+.boss-mon.met3d .boss-pop{top:18%}
+/* Risico: munten en kluis boven de meters. */
+.a3-risico{height:clamp(150px,22vh,210px);margin:-2px -6px 8px;border-radius:18px;background:radial-gradient(80% 90% at 50% 30%,#14532d,#052e16)}
+/* Zwakke plek: het dartbord boven de vraag. */
+.a3-zwak{height:clamp(130px,19vh,190px);margin:0 0 10px;border-radius:18px;background:#2a1c12}
+/* Val: de muizenval boven de kaartenstapel. */
+.a3-val{height:clamp(110px,16vh,160px);margin:-4px 0 4px;border-radius:18px;background:radial-gradient(80% 90% at 50% 20%,#1e3a52,#0b1220)}
+.val-wrap.met3d .val-stapel{min-height:260px}
+@media(prefers-reduced-motion:reduce){.a3-host{transition:none}}
+.a3-sorteer{height:clamp(120px,17vh,170px);margin:2px 0 10px;border-radius:18px;background:linear-gradient(180deg,#efe7d6,#d8cbb0)}
+/* 3D-gerenderde illustraties in hub en intro */
+.arc-art3d{display:block;max-width:100%;height:auto;user-select:none;-webkit-user-drag:none;filter:drop-shadow(0 10px 14px rgba(0,0,0,.28))}
+.arc-tile-art .arc-art3d{width:auto;max-width:86%;max-height:92px;transition:transform .35s cubic-bezier(.2,1.3,.4,1)}
+.arc-tile.groot .arc-tile-art .arc-art3d{max-height:104px}
+@media(hover:hover){.arc-tile:hover .arc-art3d{transform:translateY(-4px) scale(1.06) rotate(-2deg)}}
+.arc-tile.live .arc-art3d{animation:arcArtAdem 4.2s ease-in-out infinite}
+@keyframes arcArtAdem{50%{transform:translateY(-3px) rotate(-1deg)}}
+.arc-intro-art .arc-art3d{width:min(260px,70vw);max-height:210px;object-fit:contain;filter:drop-shadow(0 22px 34px rgba(0,0,0,.45));animation:arcIntroArt 1s cubic-bezier(.2,1.3,.4,1) both,arcFloat 3.4s 1s ease-in-out infinite}
+@keyframes arcIntroArt{from{opacity:0;transform:translateY(24px) scale(.85) rotate(-4deg)}}
+@media(prefers-reduced-motion:reduce){.arc-art3d{animation:none!important;transition:none!important}}
