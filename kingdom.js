@@ -362,7 +362,7 @@ function kdBBox(wd){const pts=[kp(0,0,40),kp(wd.W,0,40),kp(0,wd.H,40),kp(wd.W,wd
 function kdDagdeel(){const h=new Date().getHours();return h>=21||h<6?'nacht':h<10?'ochtend':h<18?'dag':'avond';}
 function openKingdom(){
   const lvl=(typeof APP_LEVEL!=='undefined')?APP_LEVEL:'havo';
-  const klaar=()=>{kdRender();};
+  const klaar=()=>{kdRender();kdLaad3D();};
   let st=document.getElementById('kd-stage');
   if(!st){st=document.createElement('div');st.id='kd-stage';document.body.appendChild(st);}
   st.className='kd-stage kd-'+kdDagdeel();st.hidden=false;document.documentElement.classList.add('kd-open');
@@ -375,6 +375,11 @@ function openKingdom(){
   requestAnimationFrame(()=>st.classList.add('on'));
   try{if(typeof ensureLevelData==='function')ensureLevelData(lvl,klaar);else klaar();}catch(e){klaar();}
   try{if(typeof trackEvent==='function')trackEvent('kingdom_open',{});}catch(e){}
+}
+// 3D-laag (kingdom3d.js): laadt na de 2D-kaart en neemt die over als WebGL werkt.
+function kdLaad3D(){
+  if(typeof kdProbeer3D==='function'){kdProbeer3D();return;}
+  if(KD._l3)return;KD._l3=true;const s=document.createElement('script');s.src='/kingdom3d.js';s.onload=()=>{try{kdProbeer3D();}catch(e){}};s.onerror=()=>{KD._l3=false;};document.head.appendChild(s);
 }
 function kdSluit(){
   const st=document.getElementById('kd-stage');cancelAnimationFrame(KD.raf);KD.timers.forEach(clearTimeout);KD.timers=[];
