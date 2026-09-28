@@ -151,6 +151,7 @@ function arcStage(theme,html){
 }
 function arcClose(){
   arcStopAll();ARC.busy=false;
+  if(ARC.onClose){const f=ARC.onClose;ARC.onClose=null;try{f();}catch(e){}}
   const st=document.getElementById('arc-stage');
   if(st){st.classList.remove('on');setTimeout(()=>{if(!st.classList.contains('on')){st.hidden=true;st.innerHTML='';}},220);}
   document.documentElement.classList.remove('arc-open');
@@ -255,13 +256,42 @@ function renderArcade(){
   box.innerHTML=`
     <header class="arc-hub-head"><div class="arc-hub-deco" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="arc-hub-eyebrow">${(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'').toUpperCase()} · Arcade</div>
       <h1 class="arc-hub-title">Leren dat voelt als spelen</h1>
-      <p class="arc-hub-sub">Zes games op echte examenstof. Alles wat je speelt telt mee voor je XP, je divisie en je beheersing.</p></header>
+      <p class="arc-hub-sub">Alles draait op echte examenstof en telt mee voor je XP, je divisie en je beheersing.</p></header>
     <div class="arc-chips" role="group" aria-label="Vak">${chips}</div>
+    ${arcWerelden()}
+    <h2 class="arc-sectie">Minigames</h2>
     <div class="arc-grid">${ARC_VOLGORDE.map(id=>tile(ARC_GAMES[id])).join('')}</div>
     <p class="arc-hub-foot">${vak?`Vragen uit <b>${_arcEsc(vak.naam)}</b>. `:''}Stoppen kan altijd met ✕; wat je verdiende, houd je.</p>`;
   // Illustraties bewegen alleen als ze in beeld zijn (zuinig op batterij).
   try{ARC._io&&ARC._io.disconnect();ARC._io=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('live',e.isIntersecting)),{threshold:.3});
     box.querySelectorAll('.arc-tile').forEach(t=>ARC._io.observe(t));}catch(e){}
+}
+// Twee grote werelden bovenaan: Clash en Kingdom.
+function arcWerelden(){
+  let bekers=0,kd=0,gebouwd=0;try{bekers=(arcStore().clash||{}).bekers||0;}catch(e){}
+  try{kd=typeof kdBouwklaar==='function'?kdBouwklaar():0;Object.values((kdStaat().gebouwd)||{}).forEach(x=>gebouwd+=x);}catch(e){}
+  return `<div class="arc-werelden">
+    <button class="arc-wereld arc-w-clash" onclick="clashOpen()">
+      <span class="arc-w-img" aria-hidden="true"></span>
+      <span class="arc-w-t"><small>Kaartgevecht in 3D</small><b>Slagio Clash</b><span>Goede antwoorden geven kennis. Met kennis zet je kaarten in.</span></span>
+      <span class="arc-w-meta">${bekers?`<i class="arc-w-beker"></i>${arcNf(bekers,0)} bekers`:'Nieuw'}</span>
+    </button>
+    <button class="arc-wereld arc-w-kd" onclick="kingdomOpen()">
+      <span class="arc-w-img" aria-hidden="true"></span>
+      <span class="arc-w-t"><small>Bouwen met beheersing</small><b>Kingdom</b><span>Je eiland groeit met elk leerdoel dat je beheerst.</span></span>
+      <span class="arc-w-meta${kd?' klaar':''}">${kd?`${kd} klaar om te bouwen`:gebouwd?`${gebouwd} gebouwd`:'Begin je eiland'}</span>
+    </button>
+  </div>`;
+}
+// Clash laadt pas als je hem opent (en three.js daarna pas binnen clash.js).
+function clashOpen(){
+  if(typeof openClash==='function'){openClash();return;}
+  if(ARC._clLaadt)return;ARC._clLaadt=true;
+  arcStage('clash',`<div class="arc-laden" style="margin:auto"><span></span>Arena laden…</div>`);
+  const s=document.createElement('script');s.src='/clash.js';
+  s.onload=()=>{ARC._clLaadt=false;try{openClash();}catch(e){arcClose();}};
+  s.onerror=()=>{ARC._clLaadt=false;arcClose();try{showToast('Clash kon niet laden. Controleer je verbinding.');}catch(e){}};
+  document.head.appendChild(s);
 }
 function arcStart(id,direct){
   const g=ARC_GAMES[id];if(!g||ARC.busy)return;
@@ -661,6 +691,9 @@ function zwakVoorbereid(klaar){
   let open=ids.length;
   const na=()=>{if(--open>0)return;
     let doel=null;
+    // Vanuit Clash: meteen het leerdoel waar het in het potje misging.
+    if(ZWAK.forceLd){const id=ZWAK.forceLd;ZWAK.forceLd=null;try{const m=ldMastery(ARC.vakId,id);if(zwakVragen(ARC.vakId,id).length>=5){const f=zwakLd(ARC.vakId,id);doel=Object.assign({},m,{vakId:ARC.vakId,ldId:id,naam:f.ld.naam,vakNaam:(arcVak(ARC.vakId)||{}).naam});}}catch(e){}}
+    if(doel){ZWAK.doel=doel;klaar();return;}
     try{doel=weakestLeerdoelen({vakIds:ids,limit:12,maxScore:0.8}).find(m=>zwakVragen(m.vakId,m.ldId).length>=5);}catch(e){}
     if(!doel){try{doel=weakestLeerdoelen({vakIds:[ARC.vakId],limit:30,includeUnpracticed:true,maxScore:0.8}).find(m=>zwakVragen(m.vakId,m.ldId).length>=5);}catch(e){}}
     ZWAK.doel=doel;klaar();};
@@ -956,12 +989,56 @@ function arcGeenVragen(game){
 
 // ═══════ ILLUSTRATIES (hub + intro) ═══════
 const ARC_ART={
-  bom:()=>`<svg viewBox="0 0 120 100"><rect x="18" y="30" width="84" height="56" rx="10" fill="#27272a" stroke="#0a0a0a" stroke-width="3"/><rect x="30" y="40" width="60" height="22" rx="4" fill="#0b0b0b"/><text x="60" y="57" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-weight="700" font-size="16" fill="#ef4444">00:18</text><circle cx="34" cy="74" r="5" fill="#22c55e"/><circle cx="50" cy="74" r="5" fill="#22c55e"/><circle cx="66" cy="74" r="5" fill="#ef4444"/><path d="M86 30c4-14 14-18 20-12" fill="none" stroke="#a16207" stroke-width="4" stroke-linecap="round"/><path class="a-vonk" d="M104 12l3 6 6 1-5 4 1 6-5-3-5 3 1-6-5-4 6-1z" fill="#facc15"/></svg>`,
-  boss:()=>`<svg viewBox="0 0 120 100"><g class="a-bob"><path d="M30 92V44c0-18 14-30 30-30s30 12 30 30v48l-8-7-8 7-7-7-7 7-7-7-7 7-8-7z" fill="#8b5cf6" stroke="#1e0b3a" stroke-width="3.5"/><circle cx="49" cy="46" r="8" fill="#fff" stroke="#1e0b3a" stroke-width="3"/><circle cx="71" cy="46" r="8" fill="#fff" stroke="#1e0b3a" stroke-width="3"/><circle cx="51" cy="48" r="3.5" fill="#1e0b3a"/><circle cx="69" cy="48" r="3.5" fill="#1e0b3a"/><path d="M47 66q13 10 26 0" fill="#1e0b3a"/></g><rect x="14" y="8" width="92" height="7" rx="3.5" fill="#1e0b3a" opacity=".25"/><rect x="14" y="8" width="58" height="7" rx="3.5" fill="#ef4444"/></svg>`,
-  risico:()=>`<svg viewBox="0 0 120 100"><circle cx="46" cy="58" r="26" fill="#facc15" stroke="#a16207" stroke-width="4"/><circle cx="46" cy="58" r="17" fill="none" stroke="#a16207" stroke-width="3" stroke-dasharray="4 4"/><g class="a-flip"><circle cx="76" cy="44" r="22" fill="#fde047" stroke="#a16207" stroke-width="4"/><text x="76" y="51" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="18" fill="#713f12">×2</text></g><path class="a-vlam" d="M96 78c6-6 4-16-2-20 1 8-6 10-6 16 0 4 4 8 8 4z" fill="#f97316"/></svg>`,
-  zwak:()=>`<svg viewBox="0 0 120 100"><circle cx="60" cy="52" r="36" fill="none" stroke="#fb923c" stroke-width="7" opacity=".35"/><circle cx="60" cy="52" r="24" fill="none" stroke="#fb923c" stroke-width="7" opacity=".6"/><circle class="a-puls" cx="60" cy="52" r="11" fill="#f97316"/><g class="a-pijl"><path d="M60 52l38-30" stroke="#1f2937" stroke-width="4" stroke-linecap="round"/><path d="M92 16l12 2-6 10z" fill="#1f2937"/></g></svg>`,
-  sorteer:()=>`<svg viewBox="0 0 120 100"><rect class="a-b1" x="10" y="60" width="30" height="26" rx="6" fill="#22c55e"/><rect class="a-b2" x="45" y="44" width="30" height="42" rx="6" fill="#3b82f6"/><rect class="a-b3" x="80" y="24" width="30" height="62" rx="6" fill="#a855f7"/><text x="25" y="78" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#fff">1</text><text x="60" y="70" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#fff">2</text><text x="95" y="60" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#fff">3</text></svg>`,
-  val:()=>`<svg viewBox="0 0 120 100"><g class="a-zwaai"><rect x="34" y="14" width="56" height="74" rx="9" fill="#fff" stroke="#0f172a" stroke-width="3" transform="rotate(-10 62 51)"/><rect x="30" y="16" width="56" height="74" rx="9" fill="#fff" stroke="#0f172a" stroke-width="3" transform="rotate(8 58 53)"/><text x="58" y="60" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="15" fill="#ef4444" transform="rotate(8 58 53)">VAL?</text></g><circle cx="22" cy="80" r="11" fill="#ef4444"/><path d="M17 75l10 10M27 75L17 85" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="100" cy="80" r="11" fill="#22c55e"/><path d="M95 80l4 4 7-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>`,
+  // Tijdbom: drie staven dynamiet, tape, een timer met gloeiende cijfers en een brandende lont.
+  bom:()=>`<svg viewBox="0 0 120 100"><defs><linearGradient id="ab-dyn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7f1d1d"/><stop offset=".35" stop-color="#ef4444"/><stop offset=".55" stop-color="#f87171"/><stop offset="1" stop-color="#7f1d1d"/></linearGradient>
+    <linearGradient id="ab-kast" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#52525b"/><stop offset=".5" stop-color="#27272a"/><stop offset="1" stop-color="#18181b"/></linearGradient><radialGradient id="ab-gloed" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#ef4444" stop-opacity=".45"/><stop offset="1" stop-color="#ef4444" stop-opacity="0"/></radialGradient></defs>
+    <ellipse cx="60" cy="92" rx="44" ry="5" fill="#000" opacity=".22"/>
+    ${[26,48,70].map(x=>`<rect x="${x}" y="30" width="22" height="60" rx="5" fill="url(#ab-dyn)"/><ellipse cx="${x+11}" cy="31" rx="11" ry="3.5" fill="#fca5a5"/><ellipse cx="${x+11}" cy="31" rx="4" ry="1.4" fill="#7f1d1d"/>`).join('')}
+    <rect x="22" y="44" width="74" height="9" fill="#1f2937"/><rect x="22" y="72" width="74" height="9" fill="#1f2937"/><rect x="22" y="44" width="74" height="2" fill="#4b5563"/><rect x="22" y="72" width="74" height="2" fill="#4b5563"/>
+    <rect x="34" y="50" width="52" height="26" rx="5" fill="url(#ab-kast)" stroke="#0a0a0a" stroke-width="1.5"/><rect x="38" y="54" width="44" height="14" rx="2" fill="#0b0b0b"/><rect x="38" y="54" width="44" height="14" rx="2" fill="url(#ab-gloed)"/>
+    <text x="60" y="65" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-weight="700" font-size="11" fill="#f87171" style="filter:drop-shadow(0 0 2px #ef4444)">00:18</text>
+    <circle cx="42" cy="72" r="1.6" fill="#22c55e"/><circle cx="48" cy="72" r="1.6" fill="#22c55e"/><circle cx="54" cy="72" r="1.6" fill="#71717a"/>
+    <path d="M86 58c10 0 12 10 20 8M86 64c8 2 8 12 16 14" fill="none" stroke-width="2.4" stroke-linecap="round" stroke="#2563eb"/><path d="M86 70c6 4 4 14 12 18" fill="none" stroke="#eab308" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M59 30c0-10 8-18 18-20" fill="none" stroke="#a16207" stroke-width="3" stroke-linecap="round"/><path d="M59 30c0-10 8-18 18-20" fill="none" stroke="#fde68a" stroke-width="1" stroke-dasharray="2 3" stroke-linecap="round"/>
+    <g class="a-vonk"><circle cx="78" cy="10" r="7" fill="#fde047" opacity=".35"/><path d="M78 3l2 5 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1z" fill="#fef08a"/><circle cx="78" cy="10" r="1.8" fill="#fff"/></g></svg>`,
+  // Examenboss: een gehoornde brok paars met glanzende huid, tanden en een levensbalk.
+  boss:()=>`<svg viewBox="0 0 120 100"><defs><radialGradient id="ab-huid" cx=".38" cy=".3" r=".85"><stop offset="0" stop-color="#c4b5fd"/><stop offset=".45" stop-color="#8b5cf6"/><stop offset="1" stop-color="#3b0764"/></radialGradient><linearGradient id="ab-hoorn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fef3c7"/><stop offset="1" stop-color="#a16207"/></linearGradient><radialGradient id="ab-oog" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fef08a"/><stop offset=".6" stop-color="#facc15"/><stop offset="1" stop-color="#b45309"/></radialGradient></defs>
+    <ellipse cx="60" cy="94" rx="34" ry="4.5" fill="#000" opacity=".25"/>
+    <g class="a-bob"><path d="M38 32c-6-8-6-18 0-24 0 8 4 13 10 16zM82 32c6-8 6-18 0-24 0 8-4 13-10 16z" fill="url(#ab-hoorn)"/>
+    <path d="M28 90V52c0-20 14-34 32-34s32 14 32 34v38l-7-6-7 6-6-6-6 6-6-6-6 6-6-6-6 6z" fill="url(#ab-huid)"/>
+    <ellipse cx="46" cy="38" rx="10" ry="6" fill="#fff" opacity=".22"/>
+    <path d="M40 46l12 4M80 46l-12 4" stroke="#1e0b3a" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="48" cy="56" r="7" fill="url(#ab-oog)"/><circle cx="72" cy="56" r="7" fill="url(#ab-oog)"/><ellipse cx="48" cy="56" rx="1.8" ry="5" fill="#1e0b3a"/><ellipse cx="72" cy="56" rx="1.8" ry="5" fill="#1e0b3a"/>
+    <path d="M44 70q16 12 32 0v4q-16 10-32 0z" fill="#1e0b3a"/><path d="M48 71l3 5 3-4 3 5 3-5 3 5 3-4 3 5 3-6" fill="none" stroke="#f8fafc" stroke-width="1.6" stroke-linejoin="round"/></g>
+    <rect x="16" y="4" width="88" height="7" rx="3.5" fill="#1e0b3a" opacity=".35"/><rect x="16" y="4" width="56" height="7" rx="3.5" fill="#ef4444"/><rect x="16" y="4" width="56" height="2.5" rx="1.2" fill="#fca5a5" opacity=".7"/></svg>`,
+  // Risico Run: een stapel gouden munten, één draait om met ×2, en een vlammetje.
+  risico:()=>`<svg viewBox="0 0 120 100"><defs><linearGradient id="ab-goud" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a16207"/><stop offset=".3" stop-color="#facc15"/><stop offset=".55" stop-color="#fef08a"/><stop offset=".8" stop-color="#eab308"/><stop offset="1" stop-color="#854d0e"/></linearGradient><radialGradient id="ab-munt" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#fef9c3"/><stop offset=".5" stop-color="#facc15"/><stop offset="1" stop-color="#a16207"/></radialGradient></defs>
+    <ellipse cx="54" cy="93" rx="40" ry="5" fill="#000" opacity=".25"/>
+    ${[0,1,2,3,4,5].map(i=>`<rect x="24" y="${80-i*8}" width="44" height="9" fill="url(#ab-goud)"/><ellipse cx="46" cy="${80-i*8}" rx="22" ry="5.5" fill="url(#ab-munt)" stroke="#a16207" stroke-width=".8"/>`).join('')}
+    <ellipse cx="46" cy="40" rx="15" ry="3.4" fill="none" stroke="#a16207" stroke-width=".8" opacity=".6"/>
+    <g class="a-flip"><circle cx="86" cy="42" r="21" fill="url(#ab-munt)" stroke="#854d0e" stroke-width="2"/><circle cx="86" cy="42" r="16" fill="none" stroke="#a16207" stroke-width="1.2" stroke-dasharray="1.5 2.5"/><text x="86" y="49" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="18" fill="#713f12">×2</text><path d="M72 30a18 18 0 0 1 10-6" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".8"/></g>
+    <g class="a-vlam"><path d="M100 88c8-7 5-19-3-24 1 9-7 11-7 18 0 5 5 10 10 6z" fill="#f97316"/><path d="M99 86c4-4 3-10-1-13 0 5-4 6-4 10 0 3 2 5 5 3z" fill="#fde047"/></g></svg>`,
+  // Zwakke plek: een dartbord met een pijl die precies in de roos landt.
+  zwak:()=>`<svg viewBox="0 0 120 100"><defs><radialGradient id="ab-bord" cx=".5" cy=".5" r=".5"><stop offset=".85" stop-color="#1c1917"/><stop offset="1" stop-color="#0c0a09"/></radialGradient><linearGradient id="ab-schacht" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e5e7eb"/><stop offset="1" stop-color="#6b7280"/></linearGradient></defs>
+    <ellipse cx="58" cy="95" rx="34" ry="4" fill="#000" opacity=".2"/>
+    <circle cx="58" cy="52" r="42" fill="url(#ab-bord)"/>
+    ${Array.from({length:20},(_,i)=>{const a0=i/20*6.2832-1.57,a1=(i+1)/20*6.2832-1.57;const p=(r,a)=>`${(58+Math.cos(a)*r).toFixed(1)} ${(52+Math.sin(a)*r).toFixed(1)}`;return `<path d="M58 52L${p(34,a0)}A34 34 0 0 1 ${p(34,a1)}z" fill="${i%2?'#f5f0e1':'#1c1917'}"/><path d="M${p(34,a0)}A34 34 0 0 1 ${p(34,a1)}L${p(30,a1)}A30 30 0 0 0 ${p(30,a0)}z" fill="${i%2?'#16a34a':'#dc2626'}"/><path d="M${p(21,a0)}A21 21 0 0 1 ${p(21,a1)}L${p(18,a1)}A18 18 0 0 0 ${p(18,a0)}z" fill="${i%2?'#16a34a':'#dc2626'}"/>`;}).join('')}
+    <circle cx="58" cy="52" r="6" fill="#16a34a"/><circle class="a-puls" cx="58" cy="52" r="3.2" fill="#dc2626"/>
+    <circle cx="58" cy="52" r="42" fill="none" stroke="#a8a29e" stroke-width="1.2" opacity=".5"/>
+    <g class="a-pijl"><path d="M59 51l30-26" stroke="url(#ab-schacht)" stroke-width="3.2" stroke-linecap="round"/><path d="M86 28l16-10-4 9 9-1-13 11z" fill="#f97316" stroke="#9a3412" stroke-width=".8"/><path d="M58 52l4-2-2 4z" fill="#475569"/></g></svg>`,
+  // Sorteer: drie houten blokken met ingebrande cijfers, van klein naar groot.
+  sorteer:()=>`<svg viewBox="0 0 120 100"><defs><linearGradient id="ab-hout" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fcd9a4"/><stop offset=".5" stop-color="#d9a066"/><stop offset="1" stop-color="#a86b3c"/></linearGradient><pattern id="ab-nerf" width="12" height="6" patternUnits="userSpaceOnUse"><path d="M0 3q3-2 6 0t6 0" fill="none" stroke="#9a5b2e" stroke-width=".5" opacity=".45"/></pattern></defs>
+    <ellipse cx="60" cy="93" rx="52" ry="4.5" fill="#000" opacity=".2"/>
+    ${[[10,62,26,'#22c55e','1','a-b1'],[46,46,42,'#3b82f6','2','a-b2'],[82,26,62,'#a855f7','3','a-b3']].map(([x,y,h,c,n,cl])=>`<g class="${cl}"><path d="M${x} ${y+6}l6-6h18v${h}l-6 6z" fill="#7c4a26"/><rect x="${x}" y="${y+6}" width="24" height="${h}" rx="2" fill="url(#ab-hout)"/><rect x="${x}" y="${y+6}" width="24" height="${h}" rx="2" fill="url(#ab-nerf)"/><path d="M${x} ${y+6}l6-6h18l-6 6z" fill="#fde2b8"/><rect x="${x}" y="${y+6}" width="24" height="4" fill="${c}" opacity=".85"/><text x="${x+12}" y="${y+6+h/2+6}" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="16" fill="#5b3413">${n}</text></g>`).join('')}</svg>`,
+  // Val of waar: een muizenval met een stuk kaas. Is het antwoord een val?
+  val:()=>`<svg viewBox="0 0 120 100"><defs><linearGradient id="ab-plank" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8c28e"/><stop offset="1" stop-color="#b07a45"/></linearGradient><linearGradient id="ab-kaas" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient><linearGradient id="ab-veer" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e5e7eb"/><stop offset=".5" stop-color="#9ca3af"/><stop offset="1" stop-color="#f3f4f6"/></linearGradient></defs>
+    <ellipse cx="60" cy="90" rx="50" ry="5" fill="#000" opacity=".22"/>
+    <path d="M12 70l84-12 16 10-84 14z" fill="url(#ab-plank)" stroke="#8a5a2b" stroke-width="1"/><path d="M28 82l84-14v6l-84 14z" fill="#8a5a2b"/><path d="M12 70l16 12v6L12 76z" fill="#a0693a"/>
+    <path d="M30 76c10-2 40-8 60-10" stroke="#8a5a2b" stroke-width=".6" opacity=".5"/>
+    <g class="a-zwaai"><path d="M34 70q4-22 30-26" fill="none" stroke="url(#ab-veer)" stroke-width="3" stroke-linecap="round"/><path d="M64 44l24 16" stroke="url(#ab-veer)" stroke-width="3" stroke-linecap="round"/></g>
+    <ellipse cx="52" cy="70" rx="8" ry="3" fill="none" stroke="url(#ab-veer)" stroke-width="2.4"/>
+    <path d="M70 62l20-14 8 12z" fill="url(#ab-kaas)" stroke="#b45309" stroke-width="1"/><path d="M90 48l8 12v5l-8-11z" fill="#d97706"/><circle cx="82" cy="57" r="2" fill="#d97706"/><circle cx="89" cy="55" r="1.3" fill="#d97706"/><circle cx="78" cy="61" r="1.2" fill="#d97706"/>
+    <g transform="translate(20 20) rotate(-8)"><rect x="-12" y="-9" width="40" height="18" rx="4" fill="#fff" stroke="#dc2626" stroke-width="2"/><text x="8" y="5" text-anchor="middle" font-family="Bricolage Grotesque,Inter,sans-serif" font-weight="900" font-size="12" fill="#dc2626">VAL?</text></g></svg>`,
 };
 
 // ═══════ REGISTER ═══════

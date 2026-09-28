@@ -1148,10 +1148,10 @@ function kdBouwklaar(){
 }
 function renderPlayRow(){
   const el=document.getElementById('kd-home-badge');if(!el)return;
-  const n=kdBouwklaar();el.hidden=!n;el.textContent=n+' klaar';el.setAttribute('aria-label',n===1?'1 gebouw klaar om te bouwen':n+' gebouwen klaar om te bouwen');
+  const n=kdBouwklaar();el.hidden=!n;el.textContent=n;el.setAttribute('aria-label',n===1?'1 gebouw klaar om te bouwen':n+' gebouwen klaar om te bouwen');
   const sub=document.getElementById('kd-home-sub');
   if(sub){let b=0;try{const g=kdStaat().gebouwd||{};Object.values(g).forEach(x=>b+=x);}catch(e){}
-    sub.textContent=n?'Je beheersing heeft iets vrijgespeeld':b?`${b} ${b===1?'gebouw':'gebouwen'} op je eiland`:'Bouw je eiland met echte beheersing';}
+    sub.textContent=n?`Kingdom: ${n===1?'een gebouw':n+' gebouwen'} klaar om te bouwen`:'Spelen op echte examenstof';}
 }
 // Melding als er sinds de vorige keer iets bouwklaar is geworden.
 function kingdomCheck(){

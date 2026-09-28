@@ -49,7 +49,8 @@ function _routeFromHash(){
   // zoekscherm: bouwt de index lazy op
   if(h==='zoek'){if(window.openZoek){openZoek();return;}}
   if(h==='arcade'&&typeof arcadeOpen==='function'){arcadeOpen();return;}
-  if(h==='kingdom'&&typeof kingdomOpen==='function'){show('sc-home',true);kingdomOpen();return;}
+  if(h==='kingdom'&&typeof kingdomOpen==='function'){arcadeOpen(()=>kingdomOpen());return;}
+  if(h==='clash'&&typeof arcadeOpen==='function'){arcadeOpen(()=>{if(typeof clashOpen==='function')clashOpen();});return;}
   // statische schermen
   const sc=Object.entries(_SCREEN_HASHES).find(([,v])=>v===h);
   if(sc){show(sc[0],true);return;}

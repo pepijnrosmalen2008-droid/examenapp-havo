@@ -47,8 +47,10 @@ Load order matters: `data.js`/`state.js` define globals the later modules use. `
 | `league.js` | Weekwedstrijd/divisies (`sc-league`): weekXP via `addXP`, promotie/degradatie, realistische bot-cohort per week |
 | `schedule.js` | `EXAM_SCHEDULE[]`, `renderSchedule()`, grade calculators, flashcards + SM-2 |
 | `v4.js` | Misc v4 additions |
-| `arcade.js` | **Arcade** (lazy geladen via `arcadeOpen()` in init.js): zes minigames op echte content (bom, boss, risico, zwakke plek, sorteer, val). XP via `addXP()` (dus ook week-XP), antwoorden via `logQuestion()`. Reeksen voor Sorteer staan in `SORT_REEKS`, formulesommen in `BOM_REL`. |
+| `arcade.js` | **Arcade** (lazy geladen via `arcadeOpen()` in init.js): hub met de twee werelden (Clash, Kingdom) en zes minigames op echte content (bom, boss, risico, zwakke plek, sorteer, val). XP via `addXP()` (dus ook week-XP), antwoorden via `logQuestion()`. Reeksen voor Sorteer staan in `SORT_REEKS`, formulesommen in `BOM_REL`. |
 | `kingdom.js` | **Slagio Kingdom** (lazy geladen via `kingdomOpen()` in init.js): isometrisch eiland met per vak een wijk van 4 gebouwen. Een gebouw komt vrij bij 15/40/70/95% beheerste leerdoelen (`kdVakStand()` in init.js, via `ldMastery`); de leerling bouwt het zelf. Gebouwrecepten in `KB`, thema per vak in `KD_THEMA`, eilandniveaus in `KD_NIVEAUS`. Stand in `lvlCol('slagio_kingdom')`. |
+| `clash.js` | **Slagio Clash** (lazy geladen via `clashOpen()` in arcade.js): kaartgevecht in een 3D-arena (three.js uit `vendor/three.module.min.js`, pas bij openen via dynamic import). Goede antwoorden in het vragenpaneel geven kennis (+2) om kaarten in te zetten; drie goed op rij = versterkte kaart. Kaarten in `CL_KAARTEN`, arena's/bekers in `CL_ARENAS`, bot-AI in `clBot()`. Antwoorden via `arcLog()` (mastery), XP via `arcXP()`. Stand in `arcStore().clash`. |
+| `vendor/three.module.min.js` | three.js r170 (MIT), alleen voor Clash. SW behandelt `/vendor/` cache-first. Niet in `ASSETS`. |
 | `init.js` | Intro modal, tutorial, level select, **INIT (startup)**, bottom nav, multiplayer quiz, flickering grid, push notifications, PWA install banner |
 | `examens.js` / `ce_data.js` | Exam PDF / CE question data |
 | `admin.html` | Standalone admin analytics dashboard (own Supabase client) |

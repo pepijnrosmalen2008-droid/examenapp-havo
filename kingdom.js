@@ -22,20 +22,23 @@ function kpoly(pts,fill,extra){return `<polygon points="${pts.map(kpt).join(' ')
 function khex(c){c=c.replace('#','');if(c.length===3)c=c.split('').map(x=>x+x).join('');return [0,2,4].map(i=>parseInt(c.substr(i,2),16));}
 function kshade(c,f){if(!/^#/.test(c))return c;const [r,g,b]=khex(c);const m=v=>Math.round(f>=0?v+(255-v)*f:v*(1+f));return '#'+[m(r),m(g),m(b)].map(v=>Math.max(0,Math.min(255,v)).toString(16).padStart(2,'0')).join('');}
 const KL=' stroke-linejoin="round"';
-function kstroke(c){return ` stroke="${kshade(c,-.42)}" stroke-width=".9"${KL}`;}
+function kstroke(c){return ` stroke="${kshade(c,-.38)}" stroke-width=".7" stroke-opacity=".75"${KL}`;}
+// Gevel met licht: boven iets lichter, onderaan donkerder (ambient occlusion bij de grond).
+function kvg(c){return /^#/.test(c)?`url(#${kgrad(c,'v')})`:c;}
 // Blok met drie zichtbare vlakken (links = y+d-zijde, rechts = x+w-zijde, boven).
 function kbox(x,y,z,w,d,h,c,o){
   o=o||{};const op=o.op!=null?` opacity="${o.op}"`:'';const st=o.geenLijn?'':kstroke(c);
   let s=`<g${op}>`;
-  s+=kpoly([kp(x,y+d,z),kp(x+w,y+d,z),kp(x+w,y+d,z+h),kp(x,y+d,z+h)],o.links||c,st);
-  s+=kpoly([kp(x+w,y,z),kp(x+w,y+d,z),kp(x+w,y+d,z+h),kp(x+w,y,z+h)],o.rechts||kshade(c,-.2),st);
+  s+=kpoly([kp(x,y+d,z),kp(x+w,y+d,z),kp(x+w,y+d,z+h),kp(x,y+d,z+h)],o.vlak?o.links||c:kvg(o.links||c),st);
+  s+=kpoly([kp(x+w,y,z),kp(x+w,y+d,z),kp(x+w,y+d,z+h),kp(x+w,y,z+h)],o.vlak?o.rechts||kshade(c,-.2):kvg(o.rechts||kshade(c,-.22)),st);
   s+=kpoly([kp(x,y,z+h),kp(x+w,y,z+h),kp(x+w,y+d,z+h),kp(x,y+d,z+h)],o.top||kshade(c,.2),st);
   if(o.ramen)s+=kramen(x,y,z,w,d,h,o.ramen);
   return s+'</g>';
 }
 // Ramen op beide zichtbare gevels. r:{rij, kol, kleur, marge, deur}
 function kramen(x,y,z,w,d,h,r){
-  const kol=r.kol||2,rij=r.rij||1,mz=r.mz||6,hz=(h-mz*2)/rij,kl=r.kleur||'#1e293b';let s='';
+  const kol=r.kol||2,rij=r.rij||1,mz=r.mz||6,hz=(h-mz*2)/rij;let kl=r.kleur||'#1e293b';let s='';
+  if(/^#/.test(kl)){const [a,b,c2]=khex(kl);if(a*.3+b*.59+c2*.11<90)kl='url(#kd-glas)';}
   const raam=(pts)=>`<polygon class="kd-raam" points="${pts.map(kpt).join(' ')}" fill="${kl}"/>`;
   for(let i=0;i<rij;i++){const z0=z+mz+i*hz+hz*.2,z1=z0+hz*.55;
     for(let j=0;j<kol;j++){const u0=(j+.25)/kol*w,u1=(j+.75)/kol*w;s+=raam([kp(x+u0,y+d,z0),kp(x+u1,y+d,z0),kp(x+u1,y+d,z1),kp(x+u0,y+d,z1)]);}
@@ -80,8 +83,9 @@ function kcone(cx,cy,z,r,h,c){
 }
 // Gradiënten worden per kleur één keer aangemaakt.
 const _KG=new Map();
-function kgrad(c,rond){const k=(rond?'r':'l')+c;if(!_KG.has(k))_KG.set(k,'kg'+(KD.pre||'m')+_KG.size);return _KG.get(k);}
+function kgrad(c,rond){const k=(rond==='v'?'v':rond?'r':'l')+c;if(!_KG.has(k))_KG.set(k,'kg'+(KD.pre||'m')+_KG.size);return _KG.get(k);}
 function kdefs(){let s='';_KG.forEach((id,k)=>{const rond=k[0]==='r',c=k.slice(1);
+  if(k[0]==='v'){s+=`<linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${kshade(c,.1)}"/><stop offset=".7" stop-color="${c}"/><stop offset="1" stop-color="${kshade(c,-.2)}"/></linearGradient>`;return;}
   s+=rond?`<radialGradient id="${id}" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="${kshade(c,.55)}"/><stop offset=".5" stop-color="${c}"/><stop offset="1" stop-color="${kshade(c,-.3)}"/></radialGradient>`
     :`<linearGradient id="${id}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="${kshade(c,.18)}"/><stop offset=".55" stop-color="${c}"/><stop offset="1" stop-color="${kshade(c,-.28)}"/></linearGradient>`;});return s;}
 // Kleine 'bord'-emblemen voor op een gevel (billboard, altijd rechtop).
@@ -102,10 +106,30 @@ function kvlag(x,y,z,paal,kleur){const [sx,sy]=kp(x,y,z);
   return `<g class="kd-vlag-g"><line x1="${sx}" y1="${sy}" x2="${sx}" y2="${sy-paal}" stroke="#475569" stroke-width="1.6"/><path class="kd-vlag" style="transform-origin:${sx}px ${sy-paal}px" d="M${sx} ${sy-paal}l14 3.5-14 4.5z" fill="${kleur}"/></g>`;}
 function krook(x,y,z){const [sx,sy]=kp(x,y,z);
   return `<g class="kd-rook-g" transform="translate(${sx.toFixed(1)} ${sy.toFixed(1)})"><circle class="kd-rook" r="5"/><circle class="kd-rook r2" r="6"/><circle class="kd-rook r3" r="4.5"/></g>`;}
-function kboom(x,y,s,c){const [sx,sy]=kp(x,y,0);s=s||1;c=c||'#4ade80';
-  return `<g class="kd-boom"><ellipse cx="${sx}" cy="${sy}" rx="${7*s}" ry="${3.5*s}" fill="rgba(0,0,0,.18)"/><rect x="${sx-1.6*s}" y="${sy-10*s}" width="${3.2*s}" height="${10*s}" fill="#92400e"/><circle cx="${sx}" cy="${sy-16*s}" r="${9*s}" fill="${c}" stroke="${kshade(c,-.4)}" stroke-width=".9"/><circle cx="${sx-3*s}" cy="${sy-19*s}" r="${3.4*s}" fill="${kshade(c,.35)}" opacity=".8"/></g>`;}
-function kden(x,y,s){const [sx,sy]=kp(x,y,0);s=s||1;
-  return `<g class="kd-boom"><ellipse cx="${sx}" cy="${sy}" rx="${6*s}" ry="${3*s}" fill="rgba(0,0,0,.18)"/><path d="M${sx} ${sy-30*s}L${sx+9*s} ${sy-8*s}H${sx-9*s}z" fill="#15803d" stroke="#14532d" stroke-width=".9"/><path d="M${sx} ${sy-36*s}L${sx+6.5*s} ${sy-20*s}H${sx-6.5*s}z" fill="#16a34a" stroke="#14532d" stroke-width=".9"/><rect x="${sx-1.4*s}" y="${sy-8*s}" width="${2.8*s}" height="${8*s}" fill="#78350f"/></g>`;}
+function kboom(x,y,s,c){const [sx,sy]=kp(x,y,0);s=s||1;c=c||'#4f9e45';const f=v=>v.toFixed(1);
+  return `<g class="kd-boom"><ellipse cx="${f(sx+6*s)}" cy="${f(sy+.5)}" rx="${f(11*s)}" ry="${f(4*s)}" fill="rgba(24,40,14,.22)"/><path d="M${f(sx-1.8*s)} ${f(sy)}L${f(sx-1.1*s)} ${f(sy-12*s)}H${f(sx+1.1*s)}L${f(sx+1.8*s)} ${f(sy)}z" fill="#6b4226"/>`
+    +`<circle cx="${f(sx+3.6*s)}" cy="${f(sy-13*s)}" r="${f(6.6*s)}" fill="url(#${kgrad(kshade(c,-.18),true)})"/><circle cx="${f(sx-3.8*s)}" cy="${f(sy-14*s)}" r="${f(7*s)}" fill="url(#${kgrad(c,true)})"/><circle cx="${f(sx)}" cy="${f(sy-19.5*s)}" r="${f(7.6*s)}" fill="url(#${kgrad(kshade(c,.06),true)})"/></g>`;}
+function kden(x,y,s){const [sx,sy]=kp(x,y,0);s=s||1;const f=v=>v.toFixed(1);
+  return `<g class="kd-boom"><ellipse cx="${f(sx+6*s)}" cy="${f(sy+.5)}" rx="${f(10*s)}" ry="${f(3.6*s)}" fill="rgba(24,40,14,.22)"/><rect x="${f(sx-1.4*s)}" y="${f(sy-8*s)}" width="${f(2.8*s)}" height="${f(8*s)}" fill="#5b3a21"/>`
+    +`<path d="M${f(sx)} ${f(sy-30*s)}L${f(sx+9.5*s)} ${f(sy-7*s)}H${f(sx-9.5*s)}z" fill="url(#${kgrad('#2f6f3a')})"/><path d="M${f(sx)} ${f(sy-38*s)}L${f(sx+7*s)} ${f(sy-19*s)}H${f(sx-7*s)}z" fill="url(#${kgrad('#3a7f42')})"/></g>`;}
+// Hoogte van een gebouwrecept (in px boven de grond), één keer gemeten. Voor de slagschaduw.
+const _KH={};
+function kdHoogte(naam){
+  if(_KH[naam]!=null)return _KH[naam];let h=40;
+  try{let m=document.getElementById('kd-meet');if(!m){m=document.createElementNS('http://www.w3.org/2000/svg','svg');m.id='kd-meet';m.setAttribute('aria-hidden','true');m.setAttribute('style','position:absolute;left:-9999px;top:0;width:10px;height:10px;visibility:hidden');document.body.appendChild(m);}
+    m.innerHTML=KB[naam](0,0,{a:'#888888'});const b=m.getBBox();h=Math.max(8,kp(1,1,5)[1]-b.y-6);m.innerHTML='';}catch(e){}
+  return _KH[naam]=h;
+}
+function _kdHull(P){P=P.slice().sort((a,b)=>a[0]-b[0]||a[1]-b[1]);const x=(o,a,b)=>(a[0]-o[0])*(b[1]-o[1])-(a[1]-o[1])*(b[0]-o[0]);
+  const lo=[];for(const p of P){while(lo.length>=2&&x(lo[lo.length-2],lo[lo.length-1],p)<=0)lo.pop();lo.push(p);}
+  const hi=[];for(const p of P.slice().reverse()){while(hi.length>=2&&x(hi[hi.length-2],hi[hi.length-1],p)<=0)hi.pop();hi.push(p);}
+  return lo.slice(0,-1).concat(hi.slice(0,-1));}
+// Slagschaduw op de grond: voetafdruk verschoven met de zon (links achter), dus naar rechts voor.
+function kdSchaduw(x0,y0,x1,y1,h,z){
+  const L=Math.min(3.4,h/28),dx=L*.95,dy=-L*.28;const vt=[[x0,y0],[x1,y0],[x1,y1],[x0,y1]];
+  const pts=_kdHull(vt.concat(vt.map(([a,b])=>[a+dx,b+dy])).map(([a,b])=>kp(a,b,z==null?5:z)));
+  return `<polygon class="kd-schaduw" points="${pts.map(kpt).join(' ')}" fill="rgba(22,38,14,.2)"/>`;
+}
 
 // ═══════ GEBOUWEN ═══════
 // Elk recept tekent binnen een vak van 2×2 tegels met oorsprong (x,y).
@@ -247,12 +271,16 @@ function kdTekenWijk(w,o){
   o=o||{};const x=w.gx,y=w.gy;let s='';
   if(w.toren)return kdTekenToren(x,y,o.totaal||0);
   // Grasplaat met een rand in de vakkleur.
-  s+=kbox(x-.08,y-.08,0,4.16,4.16,5,'#8bd46c',{top:'#a6e07f',links:'#6cbf4d',rechts:'#58a83b'});
+  s+=kbox(x-.08,y-.08,0,4.16,4.16,5,'#76b457',{top:'url(#kd-gras)',links:'#679f4a',rechts:'#557f3c'});
   s+=`<polygon class="kd-rand" points="${[kp(x+.05,y+.05,5),kp(x+3.95,y+.05,5),kp(x+3.95,y+3.95,5),kp(x+.05,y+3.95,5)].map(kpt).join(' ')}" fill="none" stroke="${w.kleur}" stroke-width="3" stroke-linejoin="round" opacity=".75" data-wijk="${w.vak.id}"/>`;
   s+=`<polygon class="kd-hit" data-wijk="${w.vak.id}" points="${[kp(x-.1,y-.1,5),kp(x+4.1,y-.1,5),kp(x+4.1,y+4.1,5),kp(x-.1,y+4.1,5)].map(kpt).join(' ')}" fill="transparent"/>`;
   const thema=kdThema(w.vak.id),p={a:w.kleur};
   // Achter naar voor tekenen: sorteer slots op x+y.
   const volgorde=[3,2,1,0].map(t=>({t,s:KD_SLOT[t]})).sort((a,b)=>(a.s[0]+a.s[1])-(b.s[0]+b.s[1]));
+  // Schaduwen blijven op de eigen grasplaat (clipPath), anders zweven ze boven het plein.
+  const cid='kdc'+(KD.pre||'m')+w.vak.id;let sch='';
+  volgorde.forEach(({t,s:sl})=>{if(t<w.gebouwd){const sx=x+sl[0],sy=y+sl[1];sch+=kdSchaduw(sx+.3,sy+.3,sx+1.7,sy+1.7,kdHoogte(thema[t][0]));}});
+  if(sch)s+=`<clipPath id="${cid}"><polygon points="${[kp(x-.08,y-.08,5),kp(x+4.08,y-.08,5),kp(x+4.08,y+4.08,5),kp(x-.08,y+4.08,5)].map(kpt).join(' ')}"/></clipPath><g clip-path="url(#${cid})">${sch}</g>`;
   volgorde.forEach(({t,s:sl})=>{
     const sx=x+sl[0],sy=y+sl[1];
     if(t<w.gebouwd){const nieuw=o.nieuw&&o.nieuw.vak===w.vak.id&&o.nieuw.t===t;
@@ -269,14 +297,15 @@ function kdFundering(x,y,klaar){
 function kdMarker(x,y){const [sx,sy]=kp(x,y,5);
   return `<g class="kd-marker" transform="translate(${sx.toFixed(1)} ${sy.toFixed(1)})"><g class="kd-marker-z"><path d="M0-58l12 14-12 14-12-14z" fill="#facc15" stroke="#a16207" stroke-width="2"/><path d="M0-58l12 14H-12z" fill="#fde68a"/></g><ellipse rx="10" ry="5" fill="rgba(0,0,0,.2)"/></g>`;}
 function kdTekenToren(x,y,b){
-  let s=kbox(x-.08,y-.08,0,4.16,4.16,5,'#e7dcc4',{top:'#f3ead6',links:'#cdbf9f',rechts:'#b9aa88'});
+  let s=kbox(x-.08,y-.08,0,4.16,4.16,5,'#e7dcc4',{top:'url(#kd-plein)',links:'#cdbf9f',rechts:'#b9aa88'});
+  s+=kdSchaduw(x+1.2,y+1.2,x+2.8,y+2.8,5+22*(1+Math.min(7,Math.floor(b/3)))+30);
   s+=`<polygon class="kd-hit" data-wijk="_toren" points="${[kp(x,y,5),kp(x+4,y,5),kp(x+4,y+4,5),kp(x,y+4,5)].map(kpt).join(' ')}" fill="transparent"/>`;
   const vloeren=1+Math.min(7,Math.floor(b/3));let z=5;
   for(let i=0;i<vloeren;i++){const k=i/(vloeren+1)*.3;s+=kbox(x+1.2+k,y+1.2+k,z,1.6-2*k,1.6-2*k,22,i%2?'#fdba74':'#fb923c',{ramen:{kol:2,rij:1,kleur:'#7c2d12',deur:i?null:'#431407'}});z+=22;}
   const k=vloeren/(vloeren+1)*.3;
   s+=kpyr(x+1.15+k,y+1.15+k,z,1.7-2*k,1.7-2*k,30,'#c2410c');
   s+=kvlag(x+2,y+2,z+30,20,'#E85C0D');
-  s+=kboom(x+.5,y+3.4,.8)+kboom(x+3.4,y+.5,.8)+kden(x+.6,y+.6,.8)+kden(x+3.5,y+3.4,.9);
+  s+=kboom(x+.5,y+3.4,.8)+kboom(x+3.4,y+.5,.8,'#3f8a3c')+kden(x+.6,y+.6,.8)+kden(x+3.5,y+3.4,.9);
   return s;
 }
 function kdTekenEiland(wd,o){
@@ -285,10 +314,16 @@ function kdTekenEiland(wd,o){
   // Zwevend eiland: grasdek, aardlagen en een rotspunt eronder.
   const diep=46;
   const bodem=kp(W/2,H/2,-diep-150);
-  s+=kpoly([kp(0,H,-diep),kp(W,H,-diep),bodem],'#8a5a3b');
-  s+=kpoly([kp(W,0,-diep),kp(W,H,-diep),bodem],'#6f4630');
-  s+=kbox(0,0,-diep,W,H,diep,'#a0683f',{top:'#e7dcc4',links:'#9a6440',rechts:'#7d4f33'});
-  s+=`<polygon points="${[kp(0,H,-8),kp(W,H,-8),kp(W,H,-2),kp(0,H,-2)].map(kpt).join(' ')}" fill="#6cbf4d"/><polygon points="${[kp(W,0,-8),kp(W,H,-8),kp(W,H,-2),kp(W,0,-2)].map(kpt).join(' ')}" fill="#58a83b"/>`;
+  s+=kpoly([kp(0,H,-diep),kp(W,H,-diep),bodem],'url(#kd-onder-l)');
+  s+=kpoly([kp(W,0,-diep),kp(W,H,-diep),bodem],'url(#kd-onder-r)');
+  s+=kbox(0,0,-diep,W,H,diep,'#8a6446',{top:'url(#kd-plein)',links:'url(#kd-aarde-l)',rechts:'url(#kd-aarde-r)',vlak:true});
+  s+=`<polygon points="${[kp(0,H,-7),kp(W,H,-7),kp(W,H,0),kp(0,H,0)].map(kpt).join(' ')}" fill="#5f9a42"/><polygon points="${[kp(W,0,-7),kp(W,H,-7),kp(W,H,0),kp(W,0,0)].map(kpt).join(' ')}" fill="#4d8236"/>`;
+  // Losse rotsblokken en hangende wortels langs de rand.
+  const rr=kdRng('rand'+W);for(let i=0;i<14;i++){const t=.05+rr()*.9,links=i%2===0;const zz=-12-rr()*28;
+    const p0=links?kp(W*t,H,zz):kp(W,H*t,zz);const g=4+rr()*6;
+    s+=`<path d="M${(p0[0]-g).toFixed(1)} ${p0[1].toFixed(1)}l${(g*.6).toFixed(1)} ${(-g*.7).toFixed(1)}l${(g*1.1).toFixed(1)} ${(g*.2).toFixed(1)}l${(g*.3).toFixed(1)} ${(g*.8).toFixed(1)}z" fill="${links?'#8d857c':'#6f6861'}" opacity=".9"/>`;}
+  for(let i=0;i<9;i++){const t=.08+rr()*.84,links=i%2===0;const p0=links?kp(W*t,H,-7):kp(W,H*t,-7);const l=8+rr()*16;
+    s+=`<path d="M${p0[0].toFixed(1)} ${p0[1].toFixed(1)}q${(rr()*4-2).toFixed(1)} ${(l*.5).toFixed(1)} ${(rr()*6-3).toFixed(1)} ${l.toFixed(1)}" stroke="#5a3a22" stroke-width="1.2" fill="none" opacity=".7"/>`;}
   // Waterval aan de voorkant.
   const [wx,wy]=kp(W*.62,H,-2);s+=`<path class="kd-waterval" d="M${wx-10} ${wy}v${diep+90}h20v-${diep+90}z" fill="url(#kd-water)"/>`;
   // Bomen langs de rand: meer naarmate je eiland groeit.
@@ -297,11 +332,28 @@ function kdTekenEiland(wd,o){
   for(let j=0;j<H;j+=.9){plekken.push([.35,j]);plekken.push([W-.35,j]);}
   const kies=plekken.map(pl=>[pl,r()]).sort((a,b)=>a[1]-b[1]).slice(0,n).map(a=>a[0]).sort((a,b)=>(a[0]+a[1])-(b[0]+b[1]));
   const achter=kies.filter(pl=>pl[0]+pl[1]<(W+H)/2),voor=kies.filter(pl=>pl[0]+pl[1]>=(W+H)/2);
-  achter.forEach((pl,i)=>{s+=i%3?kboom(pl[0],pl[1],.7+r()*.3,['#4ade80','#22c55e','#86efac'][i%3]):kden(pl[0],pl[1],.7+r()*.3);});
+  const BOOMK=['#4f9e45','#3f8a3c','#6aa94e'];
+  achter.forEach((pl,i)=>{s+=i%3?kboom(pl[0],pl[1],.7+r()*.3,BOOMK[i%3]):kden(pl[0],pl[1],.7+r()*.3);});
   wd.lijst.slice().sort((a,b)=>(a.gx+a.gy)-(b.gx+b.gy)).forEach(w=>{s+=`<g class="kd-wijk" data-id="${w.toren?'_toren':w.vak.id}">${kdTekenWijk(w,{nieuw:o.nieuw,totaal:wd.totaal})}</g>`;});
-  voor.forEach((pl,i)=>{s+=i%3?kboom(pl[0],pl[1],.7+r()*.3,['#4ade80','#22c55e','#86efac'][i%3]):kden(pl[0],pl[1],.7+r()*.3);});
-  return `<defs>${kdefs()}<linearGradient id="kd-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></linearGradient>
+  voor.forEach((pl,i)=>{s+=i%3?kboom(pl[0],pl[1],.7+r()*.3,BOOMK[i%3]):kden(pl[0],pl[1],.7+r()*.3);});
+  return `<defs>${kdefs()}${kdVasteDefs(W,H,diep)}<linearGradient id="kd-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></linearGradient>
     <linearGradient id="kd-licht" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fde047" stop-opacity=".75"/><stop offset="1" stop-color="#fde047" stop-opacity="0"/></linearGradient></defs>${s}`;
+}
+// Texturen en licht die voor het hele eiland gelden (gras, plein, glas, aardlagen).
+function kdVasteDefs(W,H,diep){
+  const r=kdRng('gras');let gras='',plein='';
+  for(let i=0;i<26;i++){const x=r()*36,y=r()*18;gras+=`<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="${(.7+r()*1.1).toFixed(2)}" ry="${(.4+r()*.5).toFixed(2)}" fill="${['#7fbc58','#9fd77a','#6fae4d','#b4e08f'][i%4]}" opacity=".85"/>`;}
+  for(let i=0;i<5;i++){const x=i*8+(r()*2);plein+=`<path d="M${x.toFixed(1)} 4h6l3 4-3 4h-6l-3-4z" fill="${['#e3d8c0','#e9dfca','#ddd1b6'][i%3]}" stroke="#d3c5a6" stroke-width=".4"/>`;}
+  const L0=kp(0,H,0),R0=kp(W,0,0);const yl=L0[1]-.5*L0[0],yr=R0[1]+.5*R0[0];
+  const lagen=(id,skew,y0,d)=>`<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="0" y1="${y0.toFixed(1)}" x2="0" y2="${(y0+diep).toFixed(1)}" gradientTransform="skewY(${skew})">
+    <stop offset="0" stop-color="${kshade('#6b4a2e',d)}"/><stop offset=".22" stop-color="${kshade('#7a5233',d)}"/><stop offset=".23" stop-color="${kshade('#a07148',d)}"/><stop offset=".52" stop-color="${kshade('#936744',d)}"/>
+    <stop offset=".53" stop-color="${kshade('#8f877e',d)}"/><stop offset=".78" stop-color="${kshade('#7d756d',d)}"/><stop offset=".79" stop-color="${kshade('#6c655e',d)}"/><stop offset="1" stop-color="${kshade('#5d5650',d)}"/></linearGradient>`;
+  return `<pattern id="kd-gras" patternUnits="userSpaceOnUse" width="36" height="18"><rect width="36" height="18" fill="#8fca68"/>${gras}</pattern>
+    <pattern id="kd-plein" patternUnits="userSpaceOnUse" width="40" height="16"><rect width="40" height="16" fill="#e6dbc3"/>${plein}</pattern>
+    <linearGradient id="kd-glas" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfe0f5"/><stop offset=".38" stop-color="#5c84a6"/><stop offset="1" stop-color="#1f3347"/></linearGradient>
+    ${lagen('kd-aarde-l',26.565,yl,0)}${lagen('kd-aarde-r',-26.565,yr,-.2)}
+    <linearGradient id="kd-onder-l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a635c"/><stop offset=".6" stop-color="#4f4943"/><stop offset="1" stop-color="#3a3531" stop-opacity=".2"/></linearGradient>
+    <linearGradient id="kd-onder-r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#554f49"/><stop offset=".6" stop-color="#403b36"/><stop offset="1" stop-color="#2e2a27" stop-opacity=".2"/></linearGradient>`;
 }
 function kdBBox(wd){const pts=[kp(0,0,40),kp(wd.W,0,40),kp(0,wd.H,40),kp(wd.W,wd.H,0),kp(0,0,180)];
   const xs=pts.map(p=>p[0]),ys=pts.map(p=>p[1]);return {x0:Math.min(...xs)-40,x1:Math.max(...xs)+40,y0:Math.min(...ys)-60,y1:Math.max(...ys)+170};}
@@ -330,6 +382,7 @@ function kdSluit(){
   if(st){st.classList.remove('on');setTimeout(()=>{if(!st.classList.contains('on')){st.hidden=true;st.innerHTML='';}},260);}
   document.documentElement.classList.remove('kd-open');
   try{renderPlayRow();}catch(e){}
+  try{const a=document.getElementById('sc-arcade');if(a&&a.classList.contains('on')&&typeof renderArcade==='function')renderArcade();}catch(e){}
 }
 function kdRender(nieuw){
   const wd=kdBouwWereld();KD.wereld=wd;
