@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Reel · We zijn terug</title>
+<link rel="stylesheet" href="../basis.css">
+<style>
+.mo-canvas{width:1080px;height:1920px;background:#07070f}
+.scene{position:absolute;inset:0}
+.midden{left:0;right:0;text-align:center}
+.w{display:inline-block}
+.korrel{inset:0;opacity:.07;mix-blend-mode:overlay;pointer-events:none}
+/* S1: slaap */
+.nacht{inset:0;background:radial-gradient(90% 60% at 50% 45%,#16163a,#07070f 70%)}
+.ster{width:6px;height:6px;border-radius:50%;background:#fff}
+.stil{font:600 46px/1.2 var(--tekst);color:rgba(255,255,255,.55);letter-spacing:-.01em}
+.vonk1{left:50%;width:520px;height:520px;margin-left:-260px;top:700px}
+.vonk1 svg{width:100%;height:100%;overflow:visible}
+.zz{font:800 70px/1 var(--kop);color:#a5b4fc}
+/* S2: terug */
+.oranje{inset:0;background:radial-gradient(120% 80% at 50% 40%,#ff8a2a,#ff4500 75%)}
+.terug{font:800 250px/.92 var(--kop);color:var(--inkt);letter-spacing:-.05em}
+.terug.wit{color:#fff}
+/* S3: cijfers */
+.room{inset:0;background:radial-gradient(100% 60% at 80% 0%,#ffe0c2,rgba(255,224,194,0) 60%),var(--room)}
+.label{font:800 34px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--oranje2)}
+.kop{font:800 100px/1 var(--kop);color:var(--inkt);letter-spacing:-.035em;word-spacing:.08em}
+.stat{left:90px;right:90px;display:flex;align-items:baseline;gap:30px;padding:36px 44px;border-radius:44px;background:#fff;box-shadow:0 24px 50px -24px rgba(120,40,0,.35)}
+.stat b{font:800 132px/1 var(--kop);letter-spacing:-.045em;color:var(--oranje2);white-space:nowrap;font-variant-numeric:tabular-nums}
+.stat span{font:700 42px/1.15 var(--tekst);color:var(--inkt);letter-spacing:-.01em}
+/* S4: nieuw */
+.inkt{inset:0;background:radial-gradient(110% 70% at 50% 30%,#23234a,var(--inkt) 70%)}
+.chip{display:inline-flex;align-items:center;gap:14px;padding:16px 30px;border-radius:999px;background:linear-gradient(135deg,#ffc247,#ff8a1f);color:#3b1500;font:800 32px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase}
+.arcade{font:800 170px/1 var(--kop);color:#fff;letter-spacing:-.045em}
+.beeld{left:110px;right:110px;height:440px;border-radius:48px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+.beeld img{width:100%;height:100%;object-fit:cover}
+.beeld b{position:absolute;left:36px;bottom:30px;font:800 72px/1 var(--kop);color:#fff;letter-spacing:-.03em;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.beeld small{position:absolute;left:36px;top:30px;font:800 26px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:#ffd08a}
+.onder{font:600 42px/1.3 var(--tekst);color:rgba(255,255,255,.78)}
+/* S5: slot */
+.mascotte{left:50%;width:600px;height:600px;margin-left:-300px;top:330px}
+.mascotte svg{width:100%;height:100%;overflow:visible}
+.slotkop{font:800 120px/1.02 var(--kop);color:#fff;letter-spacing:-.035em;word-spacing:.08em}
+.slotkop .or{background:linear-gradient(180deg,#ffd08a,var(--oranje) 50%,var(--oranje2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.merk{display:inline-flex;align-items:center;gap:26px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.merk img{width:118px;height:118px;border-radius:30px}
+.tags{font:600 40px/1 var(--tekst);color:rgba(255,255,255,.72)}
+.tags em{font-style:normal;color:var(--oranje-l)}
+.confetti{position:absolute;left:0;top:0}
+.flits{inset:0;background:#fff;pointer-events:none;opacity:0}
+</style></head>
+<body>
+<div class="mo-canvas" id="c">
+ <div id="wereld" class="scene">
+  <!-- S1: de zomerstilte, Vonk slaapt -->
+  <div class="scene" id="S1">
+    <div class="abs nacht"></div><div id="sterren"></div>
+    <div class="abs midden stil" id="stil" style="top:420px">Zomer voorbij.</div>
+    <div class="abs vonk1" id="vonk1"></div>
+    <div class="abs zz" id="z1" style="left:700px;top:700px">z</div><div class="abs zz" id="z2" style="left:760px;top:640px">z</div><div class="abs zz" id="z3" style="left:820px;top:570px">Z</div>
+  </div>
+  <!-- S2: terug -->
+  <div class="scene" id="S2">
+    <div class="abs oranje"></div>
+    <div class="abs midden terug wit" style="top:560px"><span class="w">Slagio</span></div>
+    <div class="abs midden terug" style="top:790px"><span class="w">is</span></div>
+    <div class="abs midden terug" style="top:1020px"><span class="w">terug.</span></div>
+  </div>
+  <!-- S3: wat er klaarstaat -->
+  <div class="scene" id="S3">
+    <div class="abs room"></div>
+    <div class="abs midden label" style="top:330px">Voor examenjaar 2027</div>
+    <div class="abs midden kop" style="top:390px"><span class="w">Alles</span> <span class="w">staat</span> <span class="w">klaar.</span></div>
+    <div class="abs stat" id="st1" style="top:620px"><b id="n1">0</b><span>oefenvragen</span></div>
+    <div class="abs stat" id="st2" style="top:880px"><b id="n2">0</b><span>vakken voor HAVO, VWO en VMBO</span></div>
+    <div class="abs stat" id="st3" style="top:1140px"><b>2019–25</b><span>echte examens met antwoorden</span></div>
+  </div>
+  <!-- S4: nieuw dit jaar -->
+  <div class="scene" id="S4">
+    <div class="abs inkt"></div>
+    <div class="abs midden" style="top:290px"><span class="chip" id="nieuw">Nieuw dit jaar</span></div>
+    <div class="abs midden arcade" id="arc" style="top:380px">Arcade</div>
+    <div class="abs beeld" id="b1" style="top:620px"><img src="../../img/arcade-clash.webp" alt=""><small>Kaartgevecht in 3D</small><b>Slagio Clash</b></div>
+    <div class="abs beeld" id="b2" style="top:1090px"><img src="../../img/arcade-kingdom.webp" alt=""><small>Bouwen met beheersing</small><b>Kingdom</b></div>
+    <div class="abs midden onder" id="onder" style="top:1580px">En zes minigames op echte examenstof.</div>
+  </div>
+  <!-- S5: slot -->
+  <div class="scene" id="S5">
+    <div class="abs inkt"></div>
+    <div class="abs mascotte" id="vonk"></div>
+    <div class="abs midden slotkop" style="top:990px"><span class="w">Jouw</span> <span class="w">examenjaar</span><br><span class="w">begint</span> <span class="w or">nu.</span></div>
+    <div class="abs midden" id="merk" style="top:1290px"><span class="merk"><img src="../../icon-512.png" alt="">slagio.nl</span></div>
+    <div class="abs midden tags" id="tags" style="top:1450px">Gratis. Geen account nodig.</div>
+    <div id="confetti"></div>
+  </div>
+ </div>
+ <canvas class="abs korrel" id="korrel" width="540" height="960"></canvas>
+ <div class="abs flits" id="flits"></div>
+</div>
+<script src="../../mascotte.js"></script>
+<script src="../engine.js"></script>
+<script>
+const {p,E,lerp,zet,rnd,clamp,$}=Motion;
+(()=>{const c=$('#korrel'),g=c.getContext('2d'),d=g.createImageData(c.width,c.height),r=rnd(4);for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}g.putImageData(d,0,0);c.style.width='1080px';c.style.height='1920px';})();
+const SLAAP=mascotSVG('slaap',520),WAKKER=mascotSVG('wow',520);
+$('#vonk1').innerHTML=SLAAP;$('#vonk').innerHTML=mascotSVG('feest',600);
+const ST=[],rs=rnd(8);for(let i=0;i<60;i++){const el=document.createElement('div');el.className='abs ster';el.style.left=(rs()*1080)+'px';el.style.top=(rs()*1300)+'px';$('#sterren').appendChild(el);ST.push({el,f:.5+rs()*2,ph:rs()*6,s:.4+rs()*.8});}
+const K=[],rk=rnd(12),kl=['#ff6a13','#ffc247','#2f6bff','#1fbf62','#ff4d8d','#fff','#7c4dff'];
+for(let i=0;i<60;i++){const el=document.createElement('div');el.className='abs';const w=12+rk()*16;zet(el,{width:w+'px',height:(w*.5)+'px',background:kl[i%kl.length],borderRadius:'3px'});$('#confetti').appendChild(el);K.push({el,a:-Math.PI/2+(rk()-.5)*2.8,v:900+rk()*900,rot:(rk()-.5)*16});}
+const scene=['#S1','#S2','#S3','#S4','#S5'].map(s=>$(s));
+const GRENS=[0,2.6,5.3,9.2,12.3,15];
+const woorden=sel=>[...$(sel).querySelectorAll('.w')];
+const w2=woorden('#S2'),w3=woorden('#S3'),w5=woorden('#S5');
+const pop=(els,t,t0,stap,dy=60)=>els.forEach((el,i)=>{const x=p(t,t0+i*stap,t0+i*stap+.4,E.terug);zet(el,{opacity:String(Math.min(1,x*1.6)),transform:`translateY(${lerp(dy,0,x)}px) scale(${lerp(.85,1,x)})`});});
+window.__COVER=4.4;
+let wakker=false;
+
+function render(t){
+  let schud=0,flits=0;
+  scene.forEach((s,i)=>{const a=GRENS[i],b=GRENS[i+1];const aan=t>=a&&t<b;zet(s,{display:aan?'block':'none'});});
+
+  // ── S1: stilte, Vonk slaapt, dan de wekker ──
+  if(t<2.6){
+    ST.forEach(s=>zet(s.el,{opacity:String(.25+.6*(.5+.5*Math.sin(t*s.f+s.ph))),transform:`scale(${s.s})`}));
+    zet($('#stil'),{opacity:String(p(t,.2,.7)*(1-p(t,1.75,1.9))),transform:`translateY(${lerp(20,0,p(t,.2,.7,E.uit))}px)`});
+    const wek=t>=1.85;if(wek!==wakker){$('#vonk1').innerHTML=wek?WAKKER:SLAAP;wakker=wek;}
+    const adem=Math.sin(t*2.2)*.02;const sprong=p(t,1.85,2.3,E.veer);
+    zet($('#vonk1'),{opacity:String(p(t,0,.4)),transform:`translateY(${-sprong*120}px) scale(${1+adem+sprong*.08}) rotate(${wek?Math.sin(t*40)*4*(1-p(t,1.85,2.3)):-4}deg)`});
+    ['#z1','#z2','#z3'].forEach((z,i)=>{const c=((t*.8+i*.33)%1);zet($(z),{opacity:String(t<1.85?Math.sin(c*Math.PI)*.9:0),transform:`translate(${c*40}px,${-c*90}px) scale(${.6+c*.6})`});});
+    if(t>1.85&&t<2.3){schud=(2.3-t)*50;flits=Math.max(0,1-(t-1.85)*6)*.5;}
+    // oranje cirkel groeit vanuit Vonk en neemt het beeld over
+  }
+  // overgang S1 → S2 met een oranje cirkel
+  if(t>2.2&&t<2.6){}
+  // ── S2: Slagio is terug ──
+  if(t>=2.6&&t<5.3){
+    const kop=(el,t0)=>{const x=p(t,t0,t0+.35,E.veer);zet(el,{opacity:String(Math.min(1,x*3)),transform:`scale(${lerp(2.4,1,Math.min(1,x))}) rotate(${lerp(-6,0,Math.min(1,x))}deg)`});};
+    kop(w2[0],2.65);kop(w2[1],3.05);kop(w2[2],3.4);
+    [2.65,3.05,3.4].forEach(t0=>{if(t>t0+.05&&t<t0+.3)schud=Math.max(schud,(t0+.3-t)*70);});
+    const uit=p(t,5.0,5.3,E.in);zet($('#S2'),{opacity:String(1-uit),transform:`scale(${1+uit*.15})`});
+    const inn=p(t,2.6,2.85,E.uit5);zet($('#S2 .oranje'),{clipPath:`circle(${inn*120}% at 50% 55%)`});
+    flits=Math.max(flits,t<2.75?1-(t-2.6)/.15:0);}
+  // ── S3: cijfers ──
+  if(t>=5.3&&t<9.2){
+    const inn=p(t,5.3,5.6,E.uit5),uit=p(t,8.95,9.2,E.in);zet($('#S3'),{opacity:String(1-uit),clipPath:`inset(${lerp(100,0,inn)}% 0 0 0)`});
+    pop(w3,t,5.45,.1);
+    ['#st1','#st2','#st3'].forEach((id,i)=>{const x=p(t,5.9+i*.45,6.4+i*.45,E.uit5);zet($(id),{opacity:String(x),transform:`translateX(${lerp(i%2?-900:900,0,x)}px)`});});
+    const n1=Math.round(20000*p(t,6.0,7.2,E.uit5));$('#n1').textContent=n1.toLocaleString('nl-NL')+(t>7.2?'+':'');
+    $('#n2').textContent=String(Math.round(40*p(t,6.45,7.4,E.uit5)));}
+  // ── S4: nieuw, Arcade ──
+  if(t>=9.2&&t<12.3){
+    const inn=p(t,9.2,9.45,E.uit5),uit=p(t,12.05,12.3,E.in);zet($('#S4'),{opacity:String(Math.min(inn,1-uit)),transform:`scale(${lerp(1.06,1,inn)*(1-uit*.04)})`});
+    const c=p(t,9.3,9.65,E.terug);zet($('#nieuw'),{opacity:String(Math.min(1,c*2)),transform:`scale(${lerp(.4,1,c)}) rotate(${lerp(-10,-2,c)}deg)`});
+    const a=p(t,9.45,9.85,E.veer);zet($('#arc'),{opacity:String(Math.min(1,a*2)),transform:`scale(${lerp(1.8,1,Math.min(1,a))})`});
+    if(t>9.5&&t<9.75)schud=(9.75-t)*50;
+    [['#b1',9.9,-1],['#b2',10.25,1]].forEach(([id,t0,z])=>{const x=p(t,t0,t0+.55,E.uit5);const drijf=(t-t0)*14;
+      zet($(id),{opacity:String(x),transform:`translateX(${lerp(z*1000,0,x)}px) rotate(${lerp(z*8,z*-1.2,x)}deg)`});zet($(id+' img'),{transform:`scale(${1.12+Math.max(0,drijf)*.004}) translateX(${-drijf}px)`});});
+    const o=p(t,10.9,11.3,E.uit);zet($('#onder'),{opacity:String(o),transform:`translateY(${lerp(30,0,o)}px)`});}
+  // ── S5: slot ──
+  if(t>=12.3){
+    const inn=p(t,12.3,12.55,E.uit5);zet($('#S5'),{opacity:String(inn)});
+    const m=p(t,12.4,13.1,E.veer);const bob=t>13.1?Math.sin((t-13.1)*3)*10:0;
+    zet($('#vonk'),{opacity:String(Math.min(1,m*2)),transform:`translateY(${lerp(240,0,Math.min(1,m))+bob}px) scale(${lerp(.4,1,m)}) rotate(${Math.sin(t*2)*2}deg)`});
+    pop(w5,t,12.7,.1,70);
+    const mk=p(t,13.4,13.8,E.uit);zet($('#merk'),{opacity:String(mk),transform:`translateY(${lerp(50,0,mk)}px)`});
+    const tg=p(t,13.65,14.05,E.uit);zet($('#tags'),{opacity:String(tg),transform:`translateY(${lerp(40,0,tg)}px)`});
+    const c=p(t,12.9,14.9);K.forEach(k=>{const tt=c*1.9;const x=540+Math.cos(k.a)*k.v*tt*.55,y=620+Math.sin(k.a)*k.v*tt+900*tt*tt;
+      zet(k.el,{left:x+'px',top:y+'px',opacity:String(c>0&&c<1?1-c*c:0),transform:`rotate(${k.rot*tt*60}deg)`});});}
+  zet($('#flits'),{opacity:String(flits)});
+  const r=rnd(Math.floor(t*30)+1);zet($('#wereld'),{transform:schud>0?`translate(${(r()-.5)*schud}px,${(r()-.5)*schud}px)`:'none'});
+}
+Motion.maak({duur:15,render});
+</script>
+</body></html>
