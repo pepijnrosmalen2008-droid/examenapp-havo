@@ -42,7 +42,7 @@
   function maak({ duur, fps = 30, render, geluid, klaar: extra }) {
     const q = new URLSearchParams(location.search);
     window.__DUUR = duur; window.__FPS = fps;
-    window.__seek = t => { render(t); return true; };
+    window.__seek = async t => { await render(t); return true; };
     if (geluid) window.__GELUID = geluid;
     const klaar = Promise.all([document.fonts ? document.fonts.ready : null, extra || null]);
     window.__klaar = klaar.then(() => new Promise(r => requestAnimationFrame(() => r(true))));
@@ -76,5 +76,18 @@
     document.body.style.width = (w * f) + 'px'; document.body.style.height = (h * f) + 'px';
   }
   addEventListener('resize', schaal); addEventListener('load', schaal);
-  window.Motion = { maak, E, p, lerp, clamp, venster, rnd, zet, $ };
+  // Film: een reeks frames uit social/out/opname/<naam>/ als <img>, per tijdstip.
+  // film.op(t) zet het juiste frame en geeft een promise die klaar is als het geladen is.
+  function film(img, naam, meta) {
+    const n = meta.frames, fps = meta.fps; let huidig = -1; const cache = new Map();
+    const src = i => `../out/opname/${naam}/f${String(i).padStart(4, '0')}.jpg`;
+    return {
+      duur: n / fps, meta,
+      op(t) { const i = Math.max(1, Math.min(n, Math.floor(t * fps) + 1)); if (i === huidig) return Promise.resolve();
+        huidig = i; img.src = src(i); for (let k = 1; k <= 3; k++) if (i + k <= n && !cache.has(i + k)) { const im = new Image(); im.src = src(i + k); cache.set(i + k, im); }
+        return img.decode ? img.decode().catch(() => {}) : Promise.resolve(); },
+    };
+  }
+  const laadFilm = async (img, naam) => film(img, naam, await (await fetch(`../out/opname/${naam}/meta.json`)).json());
+  window.Motion = { maak, E, p, lerp, clamp, venster, rnd, zet, $, laadFilm };
 })();

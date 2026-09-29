@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Reel · Arcade</title>
+<link rel="stylesheet" href="../basis.css">
+<style>
+.mo-canvas{width:1080px;height:1920px;background:var(--inkt)}
+.bg{inset:0;background:radial-gradient(110% 70% at 50% 25%,#2a1f5c,var(--inkt) 72%)}
+.gloed{width:1200px;height:1200px;border-radius:50%;filter:blur(60px)}
+.g1{background:radial-gradient(circle,rgba(255,106,19,.5),rgba(255,106,19,0) 62%)}
+.g2{background:radial-gradient(circle,rgba(124,77,255,.5),rgba(124,77,255,0) 62%)}
+.midden{left:0;right:0;text-align:center}
+.w{display:inline-block}
+.titel{font:800 190px/.9 var(--kop);color:#fff;letter-spacing:-.05em}
+.titel .or{background:linear-gradient(180deg,#ffd08a,var(--oranje) 50%,var(--oranje2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font:700 52px/1.1 var(--kop);color:rgba(255,255,255,.75);letter-spacing:-.02em}
+.label{left:0;right:0;top:96px;text-align:center}
+.label small{display:block;font:800 30px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--oranje-l)}
+.label b{display:block;margin-top:14px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.03em;white-space:nowrap}
+.telefoon{box-shadow:0 0 0 3px #3a3a4a,0 0 0 6px #15151e,0 60px 140px -30px rgba(124,77,255,.55)}
+.slot{font:800 116px/1.02 var(--kop);color:#fff;letter-spacing:-.035em;word-spacing:.06em}
+.merk{display:inline-flex;align-items:center;gap:26px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.merk img{width:118px;height:118px;border-radius:30px}
+.tags{font:600 40px/1 var(--tekst);color:rgba(255,255,255,.72)}
+.mascotte{left:50%;width:560px;height:560px;margin-left:-280px}
+.mascotte svg{width:100%;height:100%;overflow:visible}
+.flits{inset:0;background:#fff;pointer-events:none;opacity:0}
+</style></head>
+<body>
+<div class="mo-canvas" id="c">
+  <div class="abs bg"></div><div class="abs gloed g1" id="g1"></div><div class="abs gloed g2" id="g2"></div>
+  <div class="abs midden titel" id="titel" style="top:620px"><span class="w">Slagio</span><br><span class="w or">Arcade</span></div>
+  <div class="abs midden sub" id="sub" style="top:1060px">Leren dat voelt als spelen.</div>
+  <div class="abs label" id="label"><small id="lk"></small><b id="lb"></b></div>
+  <div class="telefoon" id="tel" style="left:186px;top:320px"><div class="scherm"><img id="film" alt=""></div><div class="eiland"></div></div>
+  <div class="abs mascotte" id="vonk" style="top:330px"></div>
+  <div class="abs midden slot" id="slot" style="top:910px"><span class="w">Alles</span> <span class="w">op</span> <span class="w">echte</span><br><span class="w">examenstof.</span></div>
+  <div class="abs midden" id="merk" style="top:1170px"><span class="merk"><img src="../../icon-512.png" alt="">slagio.nl</span></div>
+  <div class="abs midden tags" id="tags" style="top:1330px">Gratis. Geen account nodig.</div>
+  <div class="abs flits" id="flits"></div>
+</div>
+<script src="../../mascotte.js"></script>
+<script src="../engine.js"></script>
+<script src="../geluid.js"></script>
+<script>
+const {p,E,lerp,zet,$}=Motion;
+$('#vonk').innerHTML=mascotSVG('cool',560);
+// Clips uit social/out/opname/<naam>, na elkaar. [opname, kicker, titel, van (s in de opname), lengte]
+const CLIPS=[['arcade-hub','Zes minigames','Kies je spel',0,2.6],
+  ['arcade-boss','Examenboss','Versla de boss',0.2,5.4],
+  ['arcade-kingdom','Kingdom','Bouw je eiland',0.4,5.1],
+  ['arcade-clash','Slagio Clash','Kaartgevecht in 3D',0,5.2]];
+const IN=1.6;const F={};let T0=[],UIT=0;
+const klaar=Promise.all(CLIPS.map(c=>Motion.laadFilm(document.createElement('img'),c[0]).then(f=>F[c[0]]=f))).then(()=>{
+  let t=IN;T0=CLIPS.map(c=>{const s=t;t+=c[4];return s;});UIT=t;
+  const G=[],g=(t,n,v,x)=>G.push([t,n,v,x]);
+  g(.12,'boem',.9);g(.45,'boem',.8);g(.9,'pop',.5);g(IN-.4,'whoosh',.8);
+  CLIPS.forEach((c,i)=>{g(T0[i],'pop',.6);if(i)g(T0[i]-.05,'whoosh',.6,.3);
+    F[c[0]].meta.tikken.forEach(k=>{const tt=T0[i]+k.t-c[3];if(tt>=T0[i]&&tt<T0[i]+c[4])g(tt,'tap',.7);});});
+  // spelgeluiden bij de momenten uit de opnames
+  const b=T0[1]-.2;[.5,1.7,2.9].forEach(x=>{g(b+x+.1,'correct',.7);g(b+x+.45,'impact',.5);});g(b+3.9,'badge',.6);g(b+4.5,'boem',.9);
+  const k=T0[2]-CLIPS[2][3];g(k+1.4,'whoosh',.6);[2.4,2.8,3.2,3.6].forEach(x=>g(k+x,'impact',.35));g(k+2.5,'fanfare',.6);
+  const c=T0[3];[.3,1.0,2.6,3.3].forEach(x=>g(c+x+.05,'correct',.6));[1.7,4.0].forEach(x=>g(c+x+.3,'impact',.6));
+  g(UIT,'whoosh',.8);g(UIT+.2,'evolve',.8);g(UIT+1.0,'start',.6);
+  window.__GELUID=G;
+});
+const tw=[...document.querySelectorAll('#titel .w')],sw=[...document.querySelectorAll('#slot .w')];
+const pop=(els,t,t0,stap,dy=60)=>els.forEach((el,i)=>{const x=p(t,t0+i*stap,t0+i*stap+.4,E.terug);zet(el,{opacity:String(Math.min(1,x*1.6)),transform:`translateY(${lerp(dy,0,x)}px) scale(${lerp(.85,1,x)})`});});
+window.__COVER=8.2;
+
+function render(t){
+  zet($('#g1'),{transform:`translate(${-300+Math.sin(t*.6)*150}px,${80+Math.cos(t*.5)*90}px)`});
+  zet($('#g2'),{transform:`translate(${250+Math.cos(t*.55)*160}px,${1000+Math.sin(t*.7)*110}px)`});
+  // Intro: titel slaat in
+  [0,1].forEach(i=>{const x=p(t,.1+i*.33,.45+i*.33,E.veer);zet(tw[i],{opacity:String(Math.min(1,x*3)),transform:`scale(${lerp(2.2,1,Math.min(1,x))})`});});
+  const iu=p(t,IN-.45,IN-.05,E.in);zet($('#titel'),{opacity:String(1-iu),transform:`translateY(${-iu*220}px)`});
+  const sb=p(t,.85,1.2,E.uit);zet($('#sub'),{opacity:String(sb*(1-iu)),transform:`translateY(${lerp(30,0,sb)-iu*220}px)`});
+  // Telefoon
+  const tin=p(t,IN-.5,IN+.1,E.uit5),tuit=UIT?p(t,UIT,UIT+.5,E.in):0;
+  zet($('#tel'),{transform:`translateY(${lerp(1900,0,tin)+tuit*2100}px) rotate(${lerp(-4,0,tin)+tuit*3}deg)`});
+  // Welke clip?
+  let ci=0;T0.forEach((s,i)=>{if(t>=s)ci=i;});
+  const c=CLIPS[ci],ft=Math.max(0,t-(T0[ci]||IN));
+  const w=p(t,T0[ci]||IN,(T0[ci]||IN)+.35,E.terug);
+  $('#lk').textContent=c[1];$('#lb').textContent=c[2];
+  const zicht=p(t,IN,IN+.3)*(UIT?1-p(t,UIT-.2,UIT+.1):1);
+  zet($('#label'),{opacity:String(zicht),transform:`scale(${lerp(.85,1,w)})`});
+  const fl=T0.slice(1).reduce((m,s)=>Math.max(m,t>=s?1-Math.min(1,(t-s)/.15):0),0);zet($('#flits'),{opacity:String(fl*.25)});
+  // Slot
+  const inS=UIT&&t>UIT;
+  const m=p(t,UIT+.2,UIT+.9,E.veer);zet($('#vonk'),{opacity:String(inS?Math.min(1,m*2):0),transform:`translateY(${lerp(200,0,Math.min(1,m))+(t>UIT+.9?Math.sin((t-UIT)*3)*10:0)}px) scale(${lerp(.4,1,m)})`});
+  pop(sw,t,UIT+.5,.12,70);sw.forEach(el=>{if(!inS)el.style.opacity='0';});
+  const mk=p(t,UIT+1.0,UIT+1.4,E.uit);zet($('#merk'),{opacity:String(inS?mk:0),transform:`translateY(${lerp(50,0,mk)}px)`});
+  const tg=p(t,UIT+1.2,UIT+1.6,E.uit);zet($('#tags'),{opacity:String(inS?tg:0),transform:`translateY(${lerp(40,0,tg)}px)`});
+  if(!T0.length)return null;
+  const f=F[c[0]];return f.op(Math.min(f.duur-1/30,c[3]+ft)).then(()=>{if($('#film').src!==f._src){}});
+}
+// De film-img wisselt per clip: elke clip heeft zijn eigen reeks, dezelfde <img>.
+klaar.then(()=>{CLIPS.forEach(c=>{const f=F[c[0]];const op=f.op;f.op=t=>{const img=$('#film');const n=f.meta.frames;const i=Math.max(1,Math.min(n,Math.floor(t*f.meta.fps)+1));
+  const src=`../out/opname/${c[0]}/f${String(i).padStart(4,'0')}.jpg`;if(img.getAttribute('src')===src)return Promise.resolve();img.setAttribute('src',src);return img.decode().catch(()=>{});};});});
+Motion.maak({duur:22.3,render,klaar});
+</script>
+</body></html>
