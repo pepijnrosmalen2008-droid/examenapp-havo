@@ -35,8 +35,10 @@ const frames = Math.round(duur * fps);
 console.log(`${naam}: ${w}×${h}, ${duur}s @ ${fps}fps = ${frames} frames`);
 
 const mp4 = path.join(UIT, doelNaam + '.mp4');
+const heeftGeluid = await page.evaluate(() => Array.isArray(window.__GELUID) && !!window.Geluid);
+const stil = heeftGeluid ? path.join(UIT, doelNaam + '.stil.mp4') : mp4;
 const ff = spawn(FFMPEG, ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-',
-  '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '16', '-preset', 'slow', '-profile:v', 'high', '-movflags', '+faststart', mp4], { stdio: ['pipe', 'inherit', 'inherit'] });
+  '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '16', '-preset', 'slow', '-profile:v', 'high', '-movflags', '+faststart', stil], { stdio: ['pipe', 'inherit', 'inherit'] });
 const el = await page.$('.mo-canvas');
 for (let i = 0; i < frames; i++) {
   await page.evaluate(t => window.__seek(t), i / fps);
@@ -46,6 +48,14 @@ for (let i = 0; i < frames; i++) {
 }
 ff.stdin.end();
 await new Promise((r, j) => ff.on('close', c => c === 0 ? r() : j(new Error('ffmpeg ' + c))));
+// Geluid: exact gerenderd in de browser (OfflineAudioContext) en erbij gemixt als AAC.
+if (heeftGeluid) {
+  const b64 = await page.evaluate(d => window.Geluid.wav(window.__GELUID, d), duur);
+  const wav = path.join(UIT, doelNaam + '.wav'); fs.writeFileSync(wav, Buffer.from(b64, 'base64'));
+  await new Promise((r, j) => spawn(FFMPEG, ['-y', '-loglevel', 'error', '-i', stil, '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-af', 'loudnorm=I=-15:TP=-1.5:LRA=11', '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', mp4], { stdio: 'inherit' })
+    .on('close', c => c === 0 ? r() : j(new Error('ffmpeg mux ' + c))));
+  fs.unlinkSync(stil); fs.unlinkSync(wav);
+}
 // Cover: het frame dat de post het best samenvat (window.__COVER of 75% van de duur).
 const coverT = await page.evaluate(d => window.__COVER ?? d * .75, duur);
 await page.evaluate(t => window.__seek(t), coverT);

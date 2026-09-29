@@ -24,8 +24,15 @@ FFMPEG=/pad/naar/ffmpeg node social/render.mjs aftellen
 node social/render.mjs quiz "vraag=wis-macht0"
 ```
 
-Uitvoer in `social/out/` (niet in git): `<naam>.mp4` (H.264, 30 fps) en `<naam>-cover.png`.
-Voeg muziek toe in de Instagram-app zelf (de video's zijn stil).
+Uitvoer in `social/out/` (niet in git): `<naam>.mp4` (H.264, 30 fps, AAC-geluid genormaliseerd op -15 LUFS) en `<naam>-cover.png`.
+
+## Geluid
+
+`geluid.js` bevat dezelfde synthese als `playSound()` in de app (pop, correct, combo, xp, coin, levelup, fanfare, …)
+plus montagegeluiden (whoosh, impact, boem, riser, teller, wekker, schud, kist, ontbrand, nacht, snurk).
+Een post geeft zijn cues mee: `Motion.maak({ ..., geluid: [[tijd, 'naam', volume, extra], ...] })`.
+`render.mjs` rendert het geluid exact in de browser (OfflineAudioContext) en mixt het in de MP4.
+In de preview speelt het geluid mee na één klik in de pagina. Muziek kun je in Instagram nog over het geluid heen leggen.
 
 ## Een nieuwe post maken
 

@@ -72,6 +72,7 @@
 </div>
 <script src="../../mascotte.js"></script>
 <script src="../engine.js"></script>
+<script src="../geluid.js"></script>
 <script>
 const {p,E,lerp,zet,rnd,venster,$}=Motion;
 // Aantal dagen tot het eerste centrale examen (HAVO 2027: vr 14 mei, Wiskunde A).
@@ -130,6 +131,10 @@ function render(t){
     const c=p(t,6.95,8.9);K.forEach(k=>{const tt=c*1.9;const x=540+Math.cos(k.a)*k.v*tt*.55,y=700+Math.sin(k.a)*k.v*tt+ 900*tt*tt;
       zet(k.el,{left:x+'px',top:y+'px',opacity:String(c>0&&c<1?1-c*c:0),transform:`rotate(${k.rot*tt*60}deg)`});});}
 }
-Motion.maak({duur:9,render});
+const G=[],g=(t,n,v,x)=>G.push([t,n,v,x]);
+g(.1,'tap',.5);g(.3,'pop',.8);g(.55,'teller',.8,1.2);g(1.73,'impact',.9);g(1.75,'badge',.8);g(1.85,'whoosh',.35,.3);
+g(2.97,'whoosh',.9);g(3.45,'pop',.6);[3.9,4.22,4.54].forEach(t=>g(t,'flip',.8));g(4.6,'coin',.35);
+g(6.05,'whoosh',.8);g(6.45,'evolve',.9);g(6.85,'pop',.6);g(6.95,'fanfare',.9);g(7.35,'start',.6);g(7.6,'tap',.4);
+Motion.maak({duur:9,render,geluid:G});
 </script>
 </body></html>

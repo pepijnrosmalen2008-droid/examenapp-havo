@@ -96,6 +96,7 @@
 </div>
 <script src="../../mascotte.js"></script>
 <script src="../engine.js"></script>
+<script src="../geluid.js"></script>
 <script>
 const {p,E,lerp,zet,rnd,clamp,$}=Motion;
 (()=>{const c=$('#korrel'),g=c.getContext('2d'),d=g.createImageData(c.width,c.height),r=rnd(4);for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}g.putImageData(d,0,0);c.style.width='1080px';c.style.height='1920px';})();
@@ -166,6 +167,13 @@ function render(t){
   zet($('#flits'),{opacity:String(flits)});
   const r=rnd(Math.floor(t*30)+1);zet($('#wereld'),{transform:schud>0?`translate(${(r()-.5)*schud}px,${(r()-.5)*schud}px)`:'none'});
 }
-Motion.maak({duur:15,render});
+const G=[],g=(t,n,v,x)=>G.push([t,n,v,x]);
+g(0,'nacht',.8,1.9);g(.25,'snurk',.7);g(1.05,'snurk',.7);g(.3,'tap',.25);
+g(1.85,'wekker',1);g(1.86,'impact',.7);
+g(2.55,'whoosh',.9);[2.65,3.05,3.4].forEach(t=>g(t,'boem',.9));g(3.55,'fanfare',.8);
+g(5.25,'whoosh',.8);g(5.45,'pop',.6);[5.9,6.35,6.8].forEach(t=>g(t,'flip',.8));g(6.0,'teller',.7,1.2);g(7.2,'coin',.6);
+g(9.15,'whoosh',.8);g(9.3,'pop',.7);g(9.47,'boem',.9);g(9.9,'whoosh',.5,.3);g(10.25,'whoosh',.5,.3);g(10.9,'tap',.4);
+g(12.25,'whoosh',.8);g(12.4,'evolve',.9);g(12.9,'fanfare',.9);g(13.4,'start',.6);g(13.65,'coin',.45);
+Motion.maak({duur:15,render,geluid:G});
 </script>
 </body></html>

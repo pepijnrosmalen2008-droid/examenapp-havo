@@ -50,6 +50,7 @@
 </div>
 <script src="../../mascotte.js"></script>
 <script src="../engine.js"></script>
+<script src="../geluid.js"></script>
 <script>
 const {p,E,lerp,zet,$}=Motion;
 // Vragen komen uit de echte Slagio-oefenvragen (data-havo.js).
@@ -98,6 +99,11 @@ function render(t){
   const r=p(t,T_TIMER[1]+1.3,T_TIMER[1]+1.8,E.uit);zet($('#reactie'),{opacity:String(r),transform:`translateY(${lerp(40,0,r)}px)`});
   const c=p(t,T_TIMER[1]+1.5,T_TIMER[1]+2,E.uit5);zet($('#cta'),{transform:`translateY(${lerp(160,0,c)}px)`});
 }
-Motion.maak({duur:11,render});
+const G=[],g=(t,n,v,x)=>G.push([t,n,v,x]);
+g(0,'nav',.6);g(.35,'flip',.5);[0,1,2,3].forEach(i=>g(1.3+i*.13,'tap',.5));g(2.0,'pop',.4);
+for(let s=0;s<5;s++)g(T_TIMER[0]+s,'tick',s>=3?.9:.6,s>=3?980:760);
+g(T_TIMER[1]-.02,'impact',.45);g(T_TIMER[1],'correct',1);g(T_TIMER[1]+.55,'whoosh',.4,.3);g(T_TIMER[1]+.9,'open',.7);
+g(T_TIMER[1]+1.3,'pop',.5);g(T_TIMER[1]+1.5,'whoosh',.5,.3);g(T_TIMER[1]+1.6,'start',.6);
+Motion.maak({duur:11,render,geluid:G});
 </script>
 </body></html>

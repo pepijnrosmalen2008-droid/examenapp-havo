@@ -8,8 +8,12 @@
 //
 //   Motion.maak({ duur: 9, render })   → start preview (of wacht op render.mjs)
 //   ?t=3.2 in de url                   → bevroren beeld op 3,2 s (voor een cover)
+//   Motion.maak({ ..., geluid: [[t,'naam',vol], ...], klaar: promise })
+//     geluid: cues voor geluid.js (render.mjs mixt ze in de MP4)
+//     klaar:  extra laadwerk (bv. avatars) waar de render op wacht
 //
-// Preview: spatie = pauze, ← → = 1 frame, schuifbalk onderin.
+// Preview: spatie = pauze, ← → = 1 frame, schuifbalk onderin. Geluid speelt
+// mee zodra je één keer in de pagina hebt geklikt (regel van de browser).
 // ═══════════════════════════════════════════════════════════════════════
 (function () {
   const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
@@ -35,11 +39,12 @@
   const zet = (el, st) => { for (const k in st) { const v = st[k]; if (el.style[k] !== v) el.style[k] = v; } };
   const $ = s => document.querySelector(s);
 
-  function maak({ duur, fps = 30, render }) {
+  function maak({ duur, fps = 30, render, geluid, klaar: extra }) {
     const q = new URLSearchParams(location.search);
     window.__DUUR = duur; window.__FPS = fps;
     window.__seek = t => { render(t); return true; };
-    const klaar = document.fonts ? document.fonts.ready : Promise.resolve();
+    if (geluid) window.__GELUID = geluid;
+    const klaar = Promise.all([document.fonts ? document.fonts.ready : null, extra || null]);
     window.__klaar = klaar.then(() => new Promise(r => requestAnimationFrame(() => r(true))));
     if (q.has('render')) { klaar.then(() => render(0)); return; }
     if (q.has('t')) { klaar.then(() => render(+q.get('t'))); return; }
@@ -58,7 +63,9 @@
       if (e.key === 'ArrowRight') { t = Math.min(duur, t + 1 / fps); loopt = false; teken(); }
       if (e.key === 'ArrowLeft') { t = Math.max(0, t - 1 / fps); loopt = false; teken(); }
     });
-    const lus = nu => { const dt = vorige ? (nu - vorige) / 1000 : 0; vorige = nu; if (loopt) { t = (t + dt) % duur; teken(); } requestAnimationFrame(lus); };
+    const lus = nu => { const dt = vorige ? (nu - vorige) / 1000 : 0; vorige = nu;
+      if (loopt) { const oud = t; t = (t + dt) % duur; if (geluid && window.Geluid && t > oud) for (const c of geluid) if (c[0] > oud && c[0] <= t) window.Geluid.speel(c[1], c[2], c[3]); teken(); }
+      requestAnimationFrame(lus); };
     klaar.then(() => requestAnimationFrame(lus));
   }
   // Past het canvas (vaste pixelmaat) in het venster tijdens de preview.

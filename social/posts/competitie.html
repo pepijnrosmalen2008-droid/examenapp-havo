@@ -57,7 +57,9 @@
 .lijst{left:70px;right:70px;top:470px;height:1080px}
 .rij{position:absolute;left:0;right:0;height:112px;border-radius:30px;display:flex;align-items:center;gap:24px;padding:0 30px;background:rgba(255,255,255,.06);color:#fff}
 .rij .pos{width:64px;font:800 44px/1 var(--kop);color:rgba(255,255,255,.55);text-align:center}
-.rij .av{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;font:800 32px/1 var(--kop);color:#fff}
+.rij .av{width:80px;height:80px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);flex:0 0 80px}
+.rij .av svg{width:80px;height:80px;overflow:visible}
+.rij.jij .av{background:rgba(255,255,255,.95)}
 .rij .nm{flex:1;font:700 40px/1 var(--tekst);letter-spacing:-.01em}
 .rij .xp{font:800 40px/1 var(--kop);color:rgba(255,255,255,.85)}
 .rij.jij{background:linear-gradient(90deg,var(--oranje),var(--oranje2));box-shadow:0 20px 60px -10px rgba(255,90,20,.7);z-index:2}
@@ -133,6 +135,7 @@
 </div>
 <script src="../../mascotte.js"></script>
 <script src="../engine.js"></script>
+<script src="../geluid.js"></script>
 <script>
 const {p,E,lerp,zet,rnd,clamp,$}=Motion;
 const W1=3*0;
@@ -157,9 +160,16 @@ const POPS=QT.map(()=>{const el=document.createElement('div');el.className='abs 
 const MU=[],rm=rnd(9);for(let i=0;i<14;i++){const el=document.createElement('div');el.className='abs munt';$('#munten').appendChild(el);MU.push({el,a:-Math.PI/2+(rm()-.5)*2.2,v:500+rm()*500,d:rm()*.25});}
 
 // ── S4: ranglijst (namen uit de app, XP passend bij Brons) ──
-const SP=[['Sanne de Vries',1480,'#ef4444'],['Daan Jansen',1360,'#3b82f6'],['Emma Bakker',1290,'#22c55e'],['Milan Visser',1210,'#f59e0b'],['Noor Smit',1150,'#a855f7'],['Lucas Meijer',1090,'#14b8a6'],['Fenna Mulder',1040,'#ec4899'],['Thijs de Boer',990,'#64748b']];
-const RIJ=SP.map(([n,xp,k])=>{const el=document.createElement('div');el.className='rij';el.innerHTML=`<span class="pos"></span><span class="av" style="background:${k}">${n[0]}</span><span class="nm">${n}</span><span class="xp">${xp} XP</span>`;$('#lijst').appendChild(el);return {el,xp,pos:el.querySelector('.pos')};});
-const JIJ=document.createElement('div');JIJ.className='rij jij';JIJ.innerHTML=`<span class="pos"></span><span class="av" style="background:#fff;color:var(--oranje2)">J</span><span class="nm">Jij</span><span class="xp"></span>`;$('#lijst').appendChild(JIJ);
+const SP=[['Sanne de Vries',1480,'adelaar',2],['Daan Jansen',1360,'wolf',2],['Emma Bakker',1290,'eenhoorn',1],['Milan Visser',1210,'leeuw',2],['Noor Smit',1150,'octopus',1],['Lucas Meijer',1090,'robot',1],['Fenna Mulder',1040,'uil',1],['Thijs de Boer',990,'beer',0]];
+const RIJ=SP.map(([n,xp])=>{const el=document.createElement('div');el.className='rij';el.innerHTML=`<span class="pos"></span><span class="av"></span><span class="nm">${n}</span><span class="xp">${xp} XP</span>`;$('#lijst').appendChild(el);return {el,xp,pos:el.querySelector('.pos')};});
+const JIJ=document.createElement('div');JIJ.className='rij jij';JIJ.innerHTML=`<span class="pos"></span><span class="av"></span><span class="nm">Jij</span><span class="xp"></span>`;$('#lijst').appendChild(JIJ);
+// Avatars: de echte dierentekeningen uit de app (ANIMAL_EVOLUTIONS in profile.js).
+const AVATARS=fetch('../../profile.js').then(r=>r.text()).then(src=>{
+  const A=new Function(src.slice(src.indexOf('const ANIMAL_EVOLUTIONS='),src.indexOf('const ANIM_THRESHOLDS'))+';return ANIMAL_EVOLUTIONS')();
+  const svg=(id,st)=>{const a=A.find(x=>x.id===id);return a&&a.svg?a.svg[Math.min(st,a.svg.length-1)]:'';};
+  RIJ.forEach((r,i)=>{r.el.querySelector('.av').innerHTML=svg(SP[i][2],SP[i][3]);});
+  JIJ.querySelector('.av').innerHTML=svg('draak',2);
+});
 const RH=120;const jijXP=t=>Math.round(lerp(940,1540,p(t,9.0,11.2,E.inUit)));
 window.__COVER=10.6;
 
@@ -243,6 +253,21 @@ function render(t){
 
   const r=rnd(Math.floor(t*30)+1);zet($('#wereld'),{transform:schud>0?`translate(${(r()-.5)*schud}px,${(r()-.5)*schud}px)`:'none'});
 }
-Motion.maak({duur:15,render});
+// ── Geluid (recepten uit geluid.js, dezelfde klanken als de app) ──
+const G=[],g=(t,n,v,x)=>G.push([t,n,v,x]);
+g(.1,'pop',.7);g(.75,'pop',.6);g(1.08,'whoosh',.5,.25);g(1.1,'boem',1);g(1.45,'tap',.6);
+g(2.02,'whoosh',.8);
+QT.forEach((q,i)=>{if(i>0)g(QT[i-1]+.1,'flip',.6);g(q-.03,'tap',.7);g(q,i?'combo':'correct',.8);g(q+.14,'xp',.55);});
+g(4.57,'impact',.8);g(4.6,'levelup',1);
+g(5.42,'whoosh',.8);g(5.5,'ontbrand',.9);g(5.55,'teller',.7,1.05);g(6.6,'streak',.9);
+g(6.3,'whoosh',.5,.3);g(6.62,'impact',.6);
+[6.95,7.2,7.45].forEach(x=>{g(x,'schud',1);g(x,'tap',.45);});
+g(7.6,'kist',1);for(let i=0;i<6;i++)g(7.7+i*.11,'coin',.55);
+g(8.22,'whoosh',.8);SP.forEach((_,i)=>g(8.2+i*.05,'tick',.3,700+i*45));
+g(9.0,'riser',1.8,2.2);
+SP.forEach((sp,i)=>{for(let t=9;t<11.2;t+=1/60)if(jijXP(t)>=sp[1]){g(t,'tick',.5,1100+(7-i)*90);break;}});
+g(11.3,'flip',.9);g(11.44,'impact',.8);g(11.46,'fanfare',1);
+g(12.42,'whoosh',.8);g(12.55,'evolve',.9);g(12.8,'pop',.45);g(13.5,'start',.7);g(13.8,'coin',.45);
+Motion.maak({duur:15,render,geluid:G,klaar:AVATARS});
 </script>
 </body></html>
