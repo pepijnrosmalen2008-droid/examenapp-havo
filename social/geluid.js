@@ -17,10 +17,13 @@
 
   // Mengtafel: master + korte reverb (zelfde opzet als de app).
   function tafel(ac) {
-    const mg = ac.createGain(); mg.gain.value = .6;
+    const mg = ac.createGain(); mg.gain.value = .7;
+    // Warm houden: alles boven ~2,8 kHz 7 dB zachter en niets boven 7 kHz (dat is waar het 'schel' zit).
+    const shelf = ac.createBiquadFilter(); shelf.type = 'highshelf'; shelf.frequency.value = 2800; shelf.gain.value = -7;
+    const lp = ac.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 7000; lp.Q.value = .5;
     // zachte limiter zodat stapelende geluiden niet clippen
     const comp = ac.createDynamicsCompressor(); comp.threshold.value = -10; comp.knee.value = 8; comp.ratio.value = 6; comp.attack.value = .003; comp.release.value = .12;
-    mg.connect(comp); comp.connect(ac.destination);
+    mg.connect(shelf); shelf.connect(lp); lp.connect(comp); comp.connect(ac.destination);
     const len = Math.floor(ac.sampleRate * .6), ir = ac.createBuffer(2, len, ac.sampleRate), r = rnd(99);
     for (let ch = 0; ch < 2; ch++) { const d = ir.getChannelData(ch); for (let i = 0; i < len; i++) d[i] = (r() * 2 - 1) * Math.pow(1 - i / len, 3.2); }
     const cv = ac.createConvolver(); cv.buffer = ir; const rev = ac.createGain(); const rw = ac.createGain(); rw.gain.value = .22;
@@ -29,8 +32,14 @@
   }
 
   // Toon (port van _slTone): f1→f2 glide, lowpass, detune-laag, octaaf.
+  let PITCH = 1;
   function T(ac, M, uit, f1, f2, start, dur, opt) {
-    opt = opt || {};
+    opt = Object.assign({}, opt || {});
+    f1 *= PITCH; if (f2) f2 *= PITCH;
+    if (opt.harm) opt.harm *= .5;                                   // octaaf-sparkle half zo sterk
+    opt.cut = Math.min(opt.cut || 2400, 2600);                      // geen scherpe boventonen
+    opt.attack = Math.max(opt.attack || .008, dur > .3 ? .008 : .012);
+    if (opt.type === 'square') opt.type = 'triangle';
     const g = ac.createGain(), lp = ac.createBiquadFilter();
     const vol = opt.vol != null ? opt.vol : .12;
     g.gain.setValueAtTime(.0001, start);
@@ -58,8 +67,8 @@
     const len = Math.max(1, Math.floor(ac.sampleRate * dur)), buf = ac.createBuffer(1, len, ac.sampleRate), d = buf.getChannelData(0), r = rnd(_seed++ * 7919);
     for (let i = 0; i < len; i++) d[i] = r() * 2 - 1;
     const n = ac.createBufferSource(); n.buffer = buf;
-    const bp = ac.createBiquadFilter(); bp.type = opt.filter || 'bandpass'; bp.frequency.setValueAtTime(opt.freq || 2200, start); bp.Q.value = opt.q || 1.1;
-    if (opt.freq2) bp.frequency.exponentialRampToValueAtTime(opt.freq2, start + dur * (opt.sweep || .9));
+    const bp = ac.createBiquadFilter(); bp.type = opt.filter || 'bandpass'; bp.frequency.setValueAtTime(Math.min(opt.freq || 2200, 2400), start); bp.Q.value = opt.q || 1.1;
+    if (opt.freq2) bp.frequency.exponentialRampToValueAtTime(Math.min(opt.freq2, 2400), start + dur * (opt.sweep || .9));
     const g = ac.createGain(); const vol = opt.vol != null ? opt.vol : .05;
     if (opt.swell) { g.gain.setValueAtTime(.0001, start); g.gain.exponentialRampToValueAtTime(vol, start + dur * opt.swell); g.gain.exponentialRampToValueAtTime(.0001, start + dur); }
     else { g.gain.setValueAtTime(vol, start); g.gain.exponentialRampToValueAtTime(.0001, start + dur); }
@@ -101,11 +110,17 @@
     snurk: (a, M, u, t) => N(a, M, u, t, .6, { filter: 'lowpass', freq: 180, freq2: 520, vol: .07, swell: .6 }),
   };
 
+  // Transpositie per geluid: beloningsmelodieën een octaaf lager, korte tikjes
+  // iets minder, de lage montagegeluiden blijven waar ze zijn.
+  const TOON = { tap: .62, pop: .62, nav: .62, flip: .62, tick: .62, teller: .55, open: .55, start: .55, schud: 1,
+    correct: .5, combo: .5, streak: .5, xp: .5, badge: .5, evolve: .5, levelup: .5, fanfare: .5, coin: .5, kist: .5, wekker: .5 };
   function plan(ac, M, cues) {
     for (const [t, naam, vol, x] of cues) {
       const f = R[naam]; if (!f) continue;
       const g = ac.createGain(); g.gain.value = vol == null ? 1 : vol; g.connect(M.mg);
+      PITCH = TOON[naam] || 1;
       f(ac, M, g, Math.max(0, t), x);
+      PITCH = 1;
     }
   }
   async function render(cues, duur) {

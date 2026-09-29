@@ -1066,7 +1066,12 @@ function _slAudio(){
   try{
     if(!_slAC){
       _slAC=new(window.AudioContext||window.webkitAudioContext)();
-      _slMG=_slAC.createGain();_slMG.gain.value=.55;_slMG.connect(_slAC.destination);
+      _slMG=_slAC.createGain();_slMG.gain.value=.62;
+      // Warm houden: boven ~2,8 kHz 7 dB zachter en niets boven 7 kHz. Dat is precies
+      // het gebied dat op telefoonspeakers en oordopjes schel klinkt.
+      try{const sh=_slAC.createBiquadFilter();sh.type='highshelf';sh.frequency.value=2800;sh.gain.value=-7;
+        const lp=_slAC.createBiquadFilter();lp.type='lowpass';lp.frequency.value=7000;lp.Q.value=.5;
+        _slMG.connect(sh);sh.connect(lp);lp.connect(_slAC.destination);}catch(e){_slMG.connect(_slAC.destination);}
       // Korte, subtiele reverb voor 'premium' ruimte op beloningsgeluiden (niet op taps).
       try{
         const ac=_slAC,len=Math.floor(ac.sampleRate*.45),ir=ac.createBuffer(2,len,ac.sampleRate);
@@ -1083,8 +1088,15 @@ function _slAudio(){
 }
 // Warme, dikke toon met pitch-glide (f1->f2), optionele detune-laag + octaaf-sparkle.
 // opt: {type,vol,glide,cut,q,attack,rev,detune(cents),harm(0..1 octaaf-boven-aandeel)}
+// _slPitch transponeert per geluid (gezet door playSound); losse aanroepers (Arcade, Clash) blijven op 1.
+let _slPitch=1;
 function _slTone(ac,f1,f2,start,dur,opt){
-  opt=opt||{};
+  opt=Object.assign({},opt||{});
+  f1*=_slPitch;if(f2)f2*=_slPitch;
+  if(opt.harm)opt.harm*=.5;                          // octaaf-sparkle half zo sterk
+  opt.cut=Math.min(opt.cut||2400,2600);              // geen scherpe boventonen
+  opt.attack=Math.max(opt.attack||.008,dur>.3?.008:.012);
+  if(opt.type==='square')opt.type='triangle';        // blokgolf klinkt snerpend
   const g=ac.createGain(),lp=ac.createBiquadFilter();
   const vol=opt.vol!=null?opt.vol:.12;
   // Snappy attack + zachte exponentiële uitsterf = 'sappig', niet abrupt.
@@ -1115,7 +1127,7 @@ function _slNoise(ac,start,dur,opt){
   const len=Math.max(1,Math.floor(ac.sampleRate*dur)),buf=ac.createBuffer(1,len,ac.sampleRate),d=buf.getChannelData(0);
   for(let i=0;i<len;i++)d[i]=Math.random()*2-1;
   const n=ac.createBufferSource();n.buffer=buf;
-  const bp=ac.createBiquadFilter();bp.type='bandpass';bp.frequency.value=opt.freq||2200;bp.Q.value=opt.q||1.1;
+  const bp=ac.createBiquadFilter();bp.type='bandpass';bp.frequency.value=Math.min(opt.freq||2200,2400);bp.Q.value=opt.q||1.1;
   const g=ac.createGain();g.gain.setValueAtTime(opt.vol!=null?opt.vol:.05,start);g.gain.exponentialRampToValueAtTime(.0001,start+dur);
   n.connect(bp);bp.connect(g);g.connect(_slMG||ac.destination);
   n.start(start);n.stop(start+dur+.02);
@@ -1123,10 +1135,15 @@ function _slNoise(ac,start,dur,opt){
 // Lichte pitch-variatie per tik zodat snel klikken 'levend' blijft (Duolingo-gevoel).
 let _tapStep=0;
 function _tapNote(){const seq=[523.25,587.33,659.25,587.33];return seq[(_tapStep++)%seq.length];}
+// Per geluid een transpositie: beloningsmelodieën een octaaf lager, korte UI-tikjes
+// iets minder, en de al lage clip-geluiden blijven waar ze zijn.
+const _SL_TOON={tap:.62,pop:.62,nav:.62,back:.62,toggle:.62,flip:.62,tick:.62,open:.55,start:.55,wrong:.75,
+  correct:.5,combo:.5,streak:.5,xp:.5,badge:.5,complete:.5,evolve:.5,levelup:.5,fanfare:.5,perfect:.5,coin:.5,clipCatalyst:.6,clipSuccess:.5};
 function playSound(type){
   if(!_soundOn)return;
   const ac=_slAudio(); if(!ac)return;
   const t=ac.currentTime,T=_slTone,N=_slNoise;
+  _slPitch=_SL_TOON[type]||(/^clip/.test(type)?1:.6);
   try{
     switch(type){
       // ── UI: sappige membraan-'boop', stijgend, met octaaf-sparkle ──
@@ -1238,6 +1255,7 @@ function playSound(type){
       default: T(ac,560,860,t,.10,{type:'sine',vol:.09,glide:.4,harm:.16,detune:7,cut:2900});
     }
   }catch(e){}
+  _slPitch=1;
 }
 // Initieel geluid-knop instellen
 document.addEventListener('DOMContentLoaded',()=>{
