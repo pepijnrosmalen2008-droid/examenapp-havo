@@ -9,8 +9,7 @@ export default {
     await p.evaluate(() => kingdomOpen()); await h.tot(() => typeof K3 !== 'undefined' && K3.on, 90); await h.wacht(2500);
     await p.evaluate(() => { K3.r.setPixelRatio(1.4); K3.w = 0; k3Maat(); kdBlad('peek', true); kdOverzicht(true); }); await h.wacht(600); },
   stappen: [
-    [0.2, p => p.evaluate(() => { K3.invoer = -99; })],                    // langzaam ronddraaien
-    [1.4, p => p.evaluate(() => kdVier('kasteel'))],                        // naar het kasteel met vuurwerk
-    [4.2, p => p.evaluate(() => { const w = KD.wereld.lijst.find(x => x.vak && x.vak.id === 'ec'); if (w) { KD.sel = 'ec'; kdFocus(w); } })],
+    // Eén vloeiende zwaai: een kwartslag om het eiland heen en dichterbij, zodat je de wijken en wonderen ziet.
+    [0.3, p => p.evaluate(() => { K3.invoer = 1e9; k3Naar(K3.doel.clone(), K3.dist * .6, K3.az + 1.25, null, 5); })],
   ],
 };

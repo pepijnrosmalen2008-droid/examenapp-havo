@@ -57,7 +57,7 @@ const klaar=Promise.all(CLIPS.map(c=>Motion.laadFilm(document.createElement('img
     F[c[0]].meta.tikken.forEach(k=>{const tt=T0[i]+k.t-c[3];if(tt>=T0[i]&&tt<T0[i]+c[4])g(tt,'tap',.7);});});
   // spelgeluiden bij de momenten uit de opnames
   const b=T0[1]-.2;[.5,1.7,2.9].forEach(x=>{g(b+x+.1,'correct',.7);g(b+x+.45,'impact',.5);});g(b+3.9,'badge',.6);g(b+4.5,'boem',.9);
-  const k=T0[2]-CLIPS[2][3];g(k+1.4,'whoosh',.6);[2.4,2.8,3.2,3.6].forEach(x=>g(k+x,'impact',.35));g(k+2.5,'fanfare',.6);
+  const k=T0[2]-CLIPS[2][3];g(k+.4,'riser',.35);g(k+2.6,'whoosh',.4);
   const c=T0[3];[.3,1.0,2.6,3.3].forEach(x=>g(c+x+.05,'correct',.6));[1.7,4.0].forEach(x=>g(c+x+.3,'impact',.6));
   g(UIT,'whoosh',.8);g(UIT+.2,'evolve',.8);g(UIT+1.0,'start',.6);
   window.__GELUID=G;
