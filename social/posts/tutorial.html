@@ -82,7 +82,7 @@ klaar.then(()=>{
   F.meta.tikken.forEach(k=>g(IN+k.t,'tap',.8));
   [9.3,11.7].forEach(x=>{g(IN+x+.05,'correct',.8);g(IN+x+.2,'xp',.5);});
   g(UIT,'whoosh',.8);g(UIT+.2,'evolve',.8);g(UIT+.9,'start',.6);
-  window.__GELUID=G;
+  G.push([0,'beat',.8,{d:18.2,bpm:108}]);window.__GELUID=G;
 });
 Motion.maak({duur:18.2,render,klaar,geluid:null});
 </script>

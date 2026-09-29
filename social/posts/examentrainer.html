@@ -21,7 +21,7 @@
 .merk{display:inline-flex;align-items:center;gap:26px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.02em}
 .merk img{width:118px;height:118px;border-radius:30px}
 .tags{font:600 38px/1 var(--tekst);color:rgba(255,255,255,.6)}
-.voorbeeld{left:50%;transform:translateX(-50%);top:1500px;z-index:3;padding:12px 22px;border-radius:999px;background:rgba(18,19,28,.84);box-shadow:0 8px 24px -8px rgba(0,0,0,.5);font:700 28px/1 var(--tekst);color:#fff;white-space:nowrap}
+.voorbeeld{left:50%;transform:translateX(-50%);top:1400px;z-index:3;padding:12px 22px;border-radius:999px;background:rgba(18,19,28,.84);box-shadow:0 8px 24px -8px rgba(0,0,0,.5);font:700 28px/1 var(--tekst);color:#fff;white-space:nowrap}
 .mascotte{left:50%;width:520px;height:520px;margin-left:-260px}
 .mascotte svg{width:100%;height:100%;overflow:visible}
 </style></head>
@@ -84,7 +84,7 @@ klaar.then(()=>{
   F.meta.tikken.forEach(k=>g(IN+k.t,'tap',.8));
   g(IN+5.8,'badge',.5);g(IN+7.5,'tick',.4,600);
   g(UIT,'whoosh',.8);g(UIT+.2,'evolve',.8);g(UIT+.9,'start',.6);
-  window.__GELUID=G;
+  G.push([0,'beat',.8,{d:13.2,bpm:108}]);window.__GELUID=G;
 });
 Motion.maak({duur:13.2,render,klaar,geluid:null});
 </script>

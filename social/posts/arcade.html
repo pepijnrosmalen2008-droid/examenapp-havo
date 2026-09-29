@@ -60,7 +60,7 @@ const klaar=Promise.all(CLIPS.map(c=>Motion.laadFilm(document.createElement('img
   const k=T0[2]-CLIPS[2][3];g(k+.4,'riser',.35);g(k+2.6,'whoosh',.4);
   const c=T0[3];[.3,1.0,2.6,3.3].forEach(x=>g(c+x+.05,'correct',.6));[1.7,4.0].forEach(x=>g(c+x+.3,'impact',.6));
   g(UIT,'whoosh',.8);g(UIT+.2,'evolve',.8);g(UIT+1.0,'start',.6);
-  window.__GELUID=G;
+  G.push([0,'beat',.8,{d:22.3,bpm:112}]);window.__GELUID=G;
 });
 const tw=[...document.querySelectorAll('#titel .w')],sw=[...document.querySelectorAll('#slot .w')];
 const pop=(els,t,t0,stap,dy=60)=>els.forEach((el,i)=>{const x=p(t,t0+i*stap,t0+i*stap+.4,E.terug);zet(el,{opacity:String(Math.min(1,x*1.6)),transform:`translateY(${lerp(dy,0,x)}px) scale(${lerp(.85,1,x)})`});});
@@ -95,7 +95,7 @@ function render(t){
 }
 // De film-img wisselt per clip: elke clip heeft zijn eigen reeks, dezelfde <img>.
 klaar.then(()=>{CLIPS.forEach(c=>{const f=F[c[0]];const op=f.op;f.op=t=>{const img=$('#film');const n=f.meta.frames;const i=Math.max(1,Math.min(n,Math.floor(t*f.meta.fps)+1));
-  const src=`../out/opname/${c[0]}/f${String(i).padStart(4,'0')}.jpg`;if(img.getAttribute('src')===src)return Promise.resolve();img.setAttribute('src',src);return img.decode().catch(()=>{});};});});
+  const src=`../out/opname/${c[0]}/f${String(i).padStart(4,'0')}.jpg`;if(img.getAttribute('src')===src)return Promise.resolve();img.setAttribute('src',src);return img.decode().catch(()=>{}).then(()=>Motion.statusbalk(img,c[0]));};});});
 Motion.maak({duur:22.3,render,klaar});
 </script>
 </body></html>

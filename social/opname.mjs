@@ -15,7 +15,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const naam = process.argv[2];
 if (!naam) { console.log('gebruik: node social/opname.mjs <scenario>'); process.exit(1); }
 const S = (await import(path.join(ROOT, 'social', 'opnames', naam + '.mjs'))).default;
-const FPS = S.fps || 30, W = S.breedte || 390, H = S.hoogte || 844, DPR = S.dpr || 2;
+const FPS = S.fps || 30, W = S.breedte || 390, H = S.hoogte || 785, DPR = S.dpr || 2;
 const UIT = path.join(ROOT, 'social', 'out', 'opname', naam); fs.mkdirSync(UIT, { recursive: true });
 for (const f of fs.readdirSync(UIT)) fs.unlinkSync(path.join(UIT, f));
 
@@ -51,6 +51,9 @@ await page.addInitScript(({ opslag }) => {
 }, { opslag: S.opslag || {} });
 await page.clock.install({ time: new Date(S.datum || '2026-10-06T16:30:00+02:00') });
 const cdp = await ctx.newCDPSession(page);
+// Zoals Slagio op een iPhone draait: de statusbalk (59 pt, tekent de mockup) staat boven de pagina,
+// onderin zit de home-balk als veilige zone. 844 − 59 = 785 pt pagina.
+await cdp.send('Emulation.setSafeAreaInsetsOverride', { insets: { top: 0, bottom: 34, left: 0, right: 0, ...(S.veilig || {}) } });
 await cdp.send('Animation.enable'); await cdp.send('Animation.setPlaybackRate', { playbackRate: 0 });
 
 // Eén frame vooruit: JS-klok + alle CSS/Web-animaties.
@@ -108,7 +111,7 @@ async function frame() { nr++; const t0 = Date.now(); const { data } = await cdp
 
 await page.goto(BASIS + (S.pad || '/index.html'));
 // Klok stilzetten: na install() loopt hij anders met de echte tijd mee, ook terwijl we een traag frame vastleggen.
-await page.clock.pauseAt((await page.evaluate(() => Date.now())) + 50);
+for (let i = 0; ; i++) { try { await page.clock.pauseAt((await page.evaluate(() => Date.now())) + 400); break; } catch (e) { if (i > 5) throw e; } }
 // requestAnimationFrame op 30 per seconde (de nep-klok draait hem op 60): één render per opgenomen frame.
 await page.evaluate(fps => { const origC = window.cancelAnimationFrame.bind(window), mijn = new Set();
   window.requestAnimationFrame = cb => { const id = setTimeout(() => { mijn.delete(id); cb(performance.now()); }, 1000 / fps); mijn.add(id); return id; };

@@ -107,6 +107,25 @@
     kist: (a, M, u, t) => { N(a, M, u, t, .22, { freq: 600, freq2: 1600, q: 2, vol: .05 }); R.badge(a, M, u, t + .08); T(a, M, u, 2637, null, t + .2, .7, { vol: .04, rev: true }); },
     ontbrand: (a, M, u, t) => { N(a, M, u, t, .7, { filter: 'lowpass', freq: 300, freq2: 2400, vol: .12, swell: .3 }); T(a, M, u, 200, 400, t, .5, { vol: .08, cut: 1200, glide: .6 }); },
     nacht: (a, M, u, t, x) => { const d = x || 2; T(a, M, u, 110, null, t, d, { vol: .05, cut: 500, attack: .6, detune: 9 }); T(a, M, u, 165, null, t, d, { vol: .03, cut: 700, attack: .8, detune: -7 }); },
+    // Muziekbodem: rustige beat in A-mineur (Am F C G), laag en warm, zodat een post nooit stil valt.
+    // x = { d: duur in s, bpm }. Faden in en uit via de gain van de cue.
+    beat: (a, M, u, t, x) => {
+      x = x || {}; const d = x.d || 10, bpm = x.bpm || 108, sp = 60 / bpm, eind = t + d;
+      u.gain.setValueAtTime(.0001, t); u.gain.exponentialRampToValueAtTime(u.gain.value || 1, t + .6);
+      u.gain.setValueAtTime(u.gain.value || 1, Math.max(t + .7, eind - 1.2)); u.gain.exponentialRampToValueAtTime(.0001, eind);
+      const AK = [[110, [220, 261.6, 329.6]], [87.3, [174.6, 220, 261.6]], [130.8, [261.6, 329.6, 392]], [98, [196, 246.9, 293.7]]];
+      for (let i = 0; t + i * sp < eind; i++) {
+        const tt = t + i * sp, [bas, ak] = AK[Math.floor(i / 4) % 4];
+        if (i % 4 === 0) ak.forEach((f, j) => T(a, M, u, f, null, tt, sp * 4, { vol: .026, cut: 1300, attack: .35, detune: j ? 6 : -6, rev: true }));
+        T(a, M, u, 105, 44, tt, .3, { vol: i % 2 ? .20 : .26, glide: .3, cut: 700, attack: .003 });            // kick
+        N(a, M, u, tt + sp / 2, .05, { freq: 2300, vol: .018, q: .8 });                                        // zachte hihat op de tel ertussen
+        if (i % 2) N(a, M, u, tt, .12, { freq: 1200, vol: .035, q: .9, rev: true });                          // snare-achtig tikje op 2 en 4
+        T(a, M, u, bas, null, tt + sp / 2, sp * .45, { type: 'triangle', vol: .11, cut: 500, attack: .012 });   // bas
+        const ar = ak[(i * 2) % 3], ar2 = ak[(i * 2 + 1) % 3] * (i % 4 === 3 ? 2 : 1);                        // arpeggio
+        T(a, M, u, ar * 2, null, tt, sp * .4, { type: 'triangle', vol: .04, cut: 1800, harm: .1 });
+        T(a, M, u, ar2 * 2, null, tt + sp / 2, sp * .4, { type: 'triangle', vol: .03, cut: 1800, rev: true });
+      }
+    },
     snurk: (a, M, u, t) => N(a, M, u, t, .6, { filter: 'lowpass', freq: 180, freq2: 520, vol: .07, swell: .6 }),
   };
 
