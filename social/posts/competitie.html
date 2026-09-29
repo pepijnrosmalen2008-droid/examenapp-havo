@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Slagio · Reel · Competitie</title>
+<link rel="stylesheet" href="../basis.css">
+<style>
+.mo-canvas{width:1080px;height:1920px;background:var(--inkt)}
+.bg{inset:0;background:radial-gradient(110% 70% at 50% 30%,#23234a,var(--inkt) 70%)}
+.gloed{width:1200px;height:1200px;border-radius:50%;filter:blur(50px)}
+.g1{background:radial-gradient(circle,rgba(255,106,19,.45),rgba(255,106,19,0) 62%)}
+.g2{background:radial-gradient(circle,rgba(124,77,255,.4),rgba(124,77,255,0) 62%)}
+.korrel{inset:0;opacity:.07;mix-blend-mode:overlay}
+.midden{left:0;right:0;text-align:center}
+.w{display:inline-block}
+.scene{position:absolute;inset:0}
+/* S1 hook */
+.h1{font:800 104px/1.02 var(--kop);color:#fff;letter-spacing:-.03em;word-spacing:.08em}
+.h1 .or{background:linear-gradient(180deg,#ffd08a,var(--oranje) 50%,var(--oranje2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.groot{font-size:188px;letter-spacing:-.045em}
+/* S2 quiz */
+.label{font:800 34px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:var(--oranje-l)}
+.kopje{font:800 92px/1 var(--kop);color:#fff;letter-spacing:-.03em;word-spacing:.08em}
+.xpbalk{left:110px;right:110px;top:520px;height:96px;border-radius:999px;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.1);display:flex;align-items:center;gap:22px;padding:0 16px 0 16px}
+.lvl{width:120px;height:64px;border-radius:999px;background:linear-gradient(135deg,#8b5cf6,#6d28d9);display:grid;place-items:center;font:800 30px/1 var(--kop);color:#fff;flex:0 0 120px}
+.spoor{flex:1;height:26px;border-radius:999px;background:rgba(255,255,255,.1);overflow:hidden}
+.spoor i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#ffc247,#ff6a13)}
+.xptxt{font:700 30px/1 var(--tekst);color:rgba(255,255,255,.75);width:150px;text-align:right}
+.qkaart{left:110px;right:110px;border-radius:44px;background:#fff;padding:40px 44px}
+.qkaart .vak{font:800 26px/1 var(--tekst);letter-spacing:.1em;text-transform:uppercase;color:#8a8aa0}
+.qkaart p{margin-top:16px;font:800 50px/1.12 var(--kop);color:var(--inkt);letter-spacing:-.02em}
+.qkaart .ant{margin-top:30px;height:104px;border-radius:28px;border:4px solid #e9e3dc;display:flex;align-items:center;gap:22px;padding:0 26px;font:700 40px/1 var(--tekst);color:var(--inkt)}
+.qkaart .ant i{width:56px;height:56px;border-radius:16px;background:var(--room2);color:var(--oranje2);display:grid;place-items:center;font:800 28px/1 var(--kop);font-style:normal}
+.qkaart .ant em{margin-left:auto;width:56px;height:56px;border-radius:50%;background:var(--goed);display:grid;place-items:center;opacity:0}
+.qkaart .ant em svg{width:30px;height:30px;fill:none;stroke:#fff;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round}
+.tik{width:120px;height:120px;border-radius:50%;border:6px solid #fff;margin:-60px 0 0 -60px}
+.xppop{padding:18px 30px;border-radius:999px;background:linear-gradient(135deg,#ffc247,#ff8a1f);font:800 44px/1 var(--kop);color:#3b1500;box-shadow:0 14px 40px -10px rgba(255,160,40,.7);white-space:nowrap}
+.combo{right:110px;top:1500px;font:800 120px/1 var(--kop);color:#fff;letter-spacing:-.03em;text-align:right}
+.combo small{display:block;font:800 34px/1 var(--tekst);letter-spacing:.14em;color:var(--goud)}
+.levelup{padding:30px 60px;border-radius:999px;background:linear-gradient(135deg,#a78bfa,#6d28d9);font:800 86px/1 var(--kop);color:#fff;letter-spacing:-.02em;box-shadow:0 0 120px rgba(139,92,246,.8);white-space:nowrap}
+/* S3 streak + kist */
+.vlam{width:250px;height:310px;left:415px;top:320px}
+.vlam svg{width:100%;height:100%;overflow:visible}
+.streak{font:800 220px/1 var(--kop);color:#fff;letter-spacing:-.05em}
+.streaktxt{font:700 54px/1 var(--kop);color:#ffd08a;letter-spacing:-.01em}
+.kist{left:340px;top:1110px;width:400px;height:330px}
+.kist .body{position:absolute;left:0;right:0;bottom:0;height:210px;border-radius:26px 26px 40px 40px;background:linear-gradient(180deg,#3b82f6,#1e40af);box-shadow:inset 0 -16px 0 rgba(0,0,0,.2),0 30px 50px -20px rgba(0,0,0,.6)}
+.kist .deksel{position:absolute;left:-10px;right:-10px;top:40px;height:120px;border-radius:70px 70px 18px 18px;background:linear-gradient(180deg,#60a5fa,#2563eb);transform-origin:10% 100%;box-shadow:inset 0 -12px 0 rgba(0,0,0,.15)}
+.kist .band{position:absolute;left:176px;width:48px;top:40px;bottom:0;background:linear-gradient(180deg,#ffd76a,#e8a91d)}
+.kist .slot{position:absolute;left:160px;top:150px;width:80px;height:80px;border-radius:18px;background:#ffd76a;border:6px solid #a16207}
+.stralen{left:140px;top:910px;width:800px;height:800px;border-radius:50%;background:repeating-conic-gradient(rgba(255,210,110,.5) 0 10deg,rgba(255,210,110,0) 10deg 22deg);-webkit-mask:radial-gradient(circle,#000 20%,transparent 68%);mask:radial-gradient(circle,#000 20%,transparent 68%)}
+.munt{width:70px;height:70px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3b0,#ffc247 45%,#d98a00);border:5px solid #b56d00;margin:-35px 0 0 -35px}
+.tiktekst{font:700 40px/1 var(--tekst);color:rgba(255,255,255,.8)}
+.buit{font:800 70px/1 var(--kop);color:var(--goud);letter-spacing:-.02em}
+/* S4 ranglijst */
+.divkop{left:90px;right:90px;top:250px}
+.divkop small{display:block;font:800 30px/1 var(--tekst);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.divkop b{display:flex;align-items:center;gap:26px;margin-top:16px;font:800 100px/1 var(--kop);color:#fff;letter-spacing:-.035em}
+.medaille{width:110px;height:110px;border-radius:50%;display:grid;place-items:center;font:800 56px/1 var(--kop);color:#fff;flex:0 0 110px;box-shadow:inset 0 -8px 0 rgba(0,0,0,.2),0 0 50px rgba(255,255,255,.1)}
+.lijst{left:70px;right:70px;top:470px;height:1080px}
+.rij{position:absolute;left:0;right:0;height:112px;border-radius:30px;display:flex;align-items:center;gap:24px;padding:0 30px;background:rgba(255,255,255,.06);color:#fff}
+.rij .pos{width:64px;font:800 44px/1 var(--kop);color:rgba(255,255,255,.55);text-align:center}
+.rij .av{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;font:800 32px/1 var(--kop);color:#fff}
+.rij .nm{flex:1;font:700 40px/1 var(--tekst);letter-spacing:-.01em}
+.rij .xp{font:800 40px/1 var(--kop);color:rgba(255,255,255,.85)}
+.rij.jij{background:linear-gradient(90deg,var(--oranje),var(--oranje2));box-shadow:0 20px 60px -10px rgba(255,90,20,.7);z-index:2}
+.rij.jij .pos,.rij.jij .xp{color:#fff}
+.promolijn{left:0;right:0;height:0;border-top:5px dashed rgba(31,191,98,.8)}
+.promolijn span{position:absolute;left:50%;top:0;transform:translate(-50%,-55%);padding:8px 20px;border-radius:999px;background:#1b1b35;font:800 28px/1 var(--tekst);letter-spacing:.12em;text-transform:uppercase;color:#4ade80}
+.promo{padding:26px 54px;border-radius:999px;background:linear-gradient(135deg,#e2e8f0,#9aa4b2);font:800 76px/1 var(--kop);color:#1e293b;letter-spacing:-.02em;white-space:nowrap;box-shadow:0 0 100px rgba(226,232,240,.6)}
+/* S5 slot */
+.mascotte{left:50%;width:600px;height:600px;margin-left:-300px;top:330px}
+.mascotte svg{width:100%;height:100%;overflow:visible}
+.slotkop{font:800 128px/1.02 var(--kop);color:#fff;letter-spacing:-.035em;word-spacing:.08em}
+.merk{display:inline-flex;align-items:center;gap:26px;font:800 76px/1 var(--kop);color:#fff;letter-spacing:-.02em}
+.merk img{width:118px;height:118px;border-radius:30px}
+.tags{font:600 40px/1 var(--tekst);color:rgba(255,255,255,.72)}
+.flits{inset:0;background:#fff;pointer-events:none}
+</style></head>
+<body>
+<div class="mo-canvas" id="c">
+  <div class="abs bg"></div><div class="abs gloed g1" id="g1"></div><div class="abs gloed g2" id="g2"></div>
+  <canvas class="abs korrel" id="korrel" width="540" height="960"></canvas>
+  <div id="wereld" class="scene">
+
+  <!-- S1: hook -->
+  <div class="scene" id="S1">
+    <div class="abs midden h1" style="top:640px"><span class="w">Oefenen</span> <span class="w">voor</span> <span class="w">je</span> <span class="w">examen?</span></div>
+    <div class="abs midden h1" style="top:900px"><span class="w">Maak</span> <span class="w">er</span> <span class="w">een</span></div>
+    <div class="abs midden h1 groot" style="top:1010px"><span class="w or">wedstrijd</span></div>
+    <div class="abs midden h1" style="top:1210px"><span class="w">van.</span></div>
+  </div>
+
+  <!-- S2: XP en combo -->
+  <div class="scene" id="S2">
+    <div class="abs midden label" style="top:300px">Elke vraag telt</div>
+    <div class="abs midden kopje" style="top:360px">Verdien XP</div>
+    <div class="abs xpbalk"><span class="lvl" id="lvl">Lv 7</span><span class="spoor"><i id="xpfill"></i></span><span class="xptxt" id="xptxt">120 XP</span></div>
+    <div id="qk"></div>
+    <div class="abs tik" id="tik"></div>
+    <div id="pops"></div>
+    <div class="abs combo" id="combo"><small>combo</small><span id="combon">2×</span></div>
+    <div class="abs midden" id="lvup" style="top:1560px"><span class="levelup">Level 8</span></div>
+  </div>
+
+  <!-- S3: streak en kist -->
+  <div class="scene" id="S3">
+    <div class="abs midden label" style="top:250px">Kom elke dag terug</div>
+    <div class="abs vlam" id="vlam"><svg viewBox="0 0 120 150"><defs><linearGradient id="fl" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff4500"/><stop offset=".55" stop-color="#ff8a1f"/><stop offset="1" stop-color="#ffd76a"/></linearGradient><linearGradient id="fl2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffd76a"/><stop offset="1" stop-color="#fff6d0"/></linearGradient></defs>
+      <path id="fb" d="M60 4C74 34 104 52 104 92c0 30-20 52-44 52S16 122 16 92c0-22 12-34 20-44 2 14 8 22 16 24-4-24 0-44 8-68z" fill="url(#fl)"/><path id="fk" d="M60 64c10 16 24 24 24 44 0 16-10 28-24 28s-24-12-24-28c0-12 8-20 12-26 2 8 6 12 10 12-2-12-2-20 2-30z" fill="url(#fl2)"/></svg></div>
+    <div class="abs midden streak" id="streak" style="top:640px">1</div>
+    <div class="abs midden streaktxt" style="top:870px" id="streaktxt">dagen streak</div>
+    <div class="abs stralen" id="stralen"></div>
+    <div class="abs kist" id="kist"><div class="body"></div><div class="band"></div><div class="deksel" id="deksel"></div><div class="slot"></div></div>
+    <div class="abs midden tiktekst" id="tik3" style="top:1490px">Tik 3× om te openen</div>
+    <div id="munten"></div>
+    <div class="abs midden buit" id="buit" style="top:1500px">+15 munten</div>
+  </div>
+
+  <!-- S4: weekwedstrijd -->
+  <div class="scene" id="S4">
+    <div class="abs divkop"><small>30 spelers · top 7 promoveert</small><b><span class="medaille" id="med" style="background:#c17a3f">B</span><span id="divnaam">Brons-divisie</span></b></div>
+    <div class="abs lijst" id="lijst"><div class="abs promolijn" id="promolijn"><span>Promotiezone</span></div></div>
+    <div class="abs midden" id="promo" style="top:1620px"><span class="promo">Promotie naar Zilver</span></div>
+  </div>
+
+  <!-- S5: slot -->
+  <div class="scene" id="S5">
+    <div class="abs mascotte" id="vonk"></div>
+    <div class="abs midden slotkop" style="top:990px"><span class="w">Wie</span> <span class="w">wordt</span> <span class="w">deze</span><br><span class="w">week</span> <span class="w" style="color:var(--oranje)">#1?</span></div>
+    <div class="abs midden" id="merk" style="top:1290px"><span class="merk"><img src="../../icon-512.png" alt="">slagio.nl</span></div>
+    <div class="abs midden tags" id="tags" style="top:1450px">Gratis. Geen account nodig.</div>
+  </div>
+  </div>
+  <div class="abs flits" id="flits"></div>
+</div>
+<script src="../../mascotte.js"></script>
+<script src="../engine.js"></script>
+<script>
+const {p,E,lerp,zet,rnd,clamp,$}=Motion;
+const W1=3*0;
+(()=>{const c=$('#korrel'),g=c.getContext('2d'),d=g.createImageData(c.width,c.height),r=rnd(5);for(let i=0;i<d.data.length;i+=4){const v=r()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}g.putImageData(d,0,0);c.style.width='1080px';c.style.height='1920px';})();
+$('#vonk').innerHTML=mascotSVG('cool',600);
+const scene=['#S1','#S2','#S3','#S4','#S5'].map(s=>$(s));
+const GRENS=[0,2.1,5.5,8.3,12.5,15];
+
+// ── S2: vragenkaarten (echte Slagio-oefenvragen) ──
+const QS=[
+  {vak:'Natuurkunde',v:'In welke eenheid meet je de activiteit van een bron?',a:'becquerel (Bq)',l:'B'},
+  {vak:'Economie',v:'Welk instrument veroorzaakt een tekort onder het evenwicht?',a:'een maximumprijs',l:'A'},
+  {vak:'Wiskunde A',v:'Wat is x⁰ voor elke x die niet 0 is?',a:'1',l:'D'},
+  {vak:'Nederlands',v:'Welke stroming kenmerkt zich door de stream of consciousness?',a:'het modernisme',l:'B'},
+];
+const QT=[2.55,3.25,3.9,4.5];   // moment van het goede antwoord
+const QK=QS.map((q,i)=>{const el=document.createElement('div');el.className='abs qkaart';el.style.top='700px';
+  el.innerHTML=`<div class="vak">${q.vak}</div><p>${q.v}</p><div class="ant"><i>${q.l}</i>${q.a}<em><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></em></div>`;$('#qk').appendChild(el);return el;});
+const POPS=QT.map(()=>{const el=document.createElement('div');el.className='abs xppop';el.textContent='Snel! +18 XP';$('#pops').appendChild(el);return el;});
+
+// ── S3: munten ──
+const MU=[],rm=rnd(9);for(let i=0;i<14;i++){const el=document.createElement('div');el.className='abs munt';$('#munten').appendChild(el);MU.push({el,a:-Math.PI/2+(rm()-.5)*2.2,v:500+rm()*500,d:rm()*.25});}
+
+// ── S4: ranglijst (namen uit de app, XP passend bij Brons) ──
+const SP=[['Sanne de Vries',1480,'#ef4444'],['Daan Jansen',1360,'#3b82f6'],['Emma Bakker',1290,'#22c55e'],['Milan Visser',1210,'#f59e0b'],['Noor Smit',1150,'#a855f7'],['Lucas Meijer',1090,'#14b8a6'],['Fenna Mulder',1040,'#ec4899'],['Thijs de Boer',990,'#64748b']];
+const RIJ=SP.map(([n,xp,k])=>{const el=document.createElement('div');el.className='rij';el.innerHTML=`<span class="pos"></span><span class="av" style="background:${k}">${n[0]}</span><span class="nm">${n}</span><span class="xp">${xp} XP</span>`;$('#lijst').appendChild(el);return {el,xp,pos:el.querySelector('.pos')};});
+const JIJ=document.createElement('div');JIJ.className='rij jij';JIJ.innerHTML=`<span class="pos"></span><span class="av" style="background:#fff;color:var(--oranje2)">J</span><span class="nm">Jij</span><span class="xp"></span>`;$('#lijst').appendChild(JIJ);
+const RH=120;const jijXP=t=>Math.round(lerp(940,1540,p(t,9.0,11.2,E.inUit)));
+window.__COVER=10.6;
+
+const woorden=sel=>[...$(sel).querySelectorAll('.w')];
+const w1=woorden('#S1'),w5=woorden('#S5');
+const pop=(els,t,t0,stap,dy=60)=>els.forEach((el,i)=>{const x=p(t,t0+i*stap,t0+i*stap+.4,E.terug);zet(el,{opacity:String(Math.min(1,x*1.6)),transform:`translateY(${lerp(dy,0,x)}px) scale(${lerp(.85,1,x)})`});});
+
+function render(t){
+  zet($('#g1'),{transform:`translate(${-260+Math.sin(t*.6)*140}px,${120+Math.cos(t*.5)*90}px)`});
+  zet($('#g2'),{transform:`translate(${240+Math.cos(t*.55)*150}px,${1000+Math.sin(t*.7)*100}px)`});
+  // Scènewissel: snelle zijwaartse zoom (schuift + vervaagt), plus een korte witte flits.
+  let schud=0;
+  // Scènewissel: de oude scène zwiept weg vóór de grens, de nieuwe komt er direct na binnen.
+  scene.forEach((s,i)=>{const a=GRENS[i],b=GRENS[i+1];const aan=t>=a&&t<b;zet(s,{display:aan?'block':'none'});if(!aan)return;
+    const inn=i===0?1:p(t,a,a+.28,E.uit5),uit=i===4?0:p(t,b-.18,b,E.in);
+    zet(s,{opacity:String(Math.min(inn,1-uit)),transform:`translateX(${lerp(220,0,inn)-uit*220}px) scale(${lerp(1.06,1,inn)*(1-uit*.05)})`});});
+  const fl=Math.max(...GRENS.slice(1,5).map(g=>t>=g?1-clamp((t-g)/.14):0));zet($('#flits'),{opacity:String(fl*.18)});
+
+  // ── S1 ──
+  if(t<2.4){pop(w1.slice(0,4),t,.1,.1);pop(w1.slice(4,7),t,.75,.09);
+    const wd=p(t,1.1,1.45,E.veer);zet(w1[7],{opacity:String(Math.min(1,wd*2)),transform:`scale(${lerp(2.2,1,Math.min(1,wd))})`});
+    if(t>1.1&&t<1.5)schud=(1.5-t)*40;pop([w1[8]],t,1.45,.1);}
+
+  // ── S2 ──
+  if(t>1.8&&t<5.8){
+    QK.forEach((el,i)=>{const in0=i===0?2.1:QT[i-1]+.12;const x=p(t,in0,in0+.35,E.uit5);const weg=i<3?p(t,QT[i]+.25,QT[i]+.5,E.in):p(t,5.0,5.3,E.in);
+      zet(el,{opacity:String(x*(1-weg)),transform:`translateX(${lerp(900,0,x)-weg*900}px) rotate(${lerp(8,0,x)-weg*8}deg)`});
+      const g=p(t,QT[i],QT[i]+.18,E.uit);const ant=el.querySelector('.ant');zet(ant,{borderColor:g>0?`rgba(31,191,98,${g})`:'#e9e3dc',background:`color-mix(in srgb,#1fbf62 ${Math.round(g*16)}%,#fff)`});
+      const v=p(t,QT[i]+.05,QT[i]+.35,E.terug);zet(el.querySelector('em'),{opacity:String(Math.min(1,v*2)),transform:`scale(${v})`});
+      const pp=p(t,QT[i],QT[i]+.8);zet(POPS[i],{left:'540px',top:(1330-pp*130)+'px',opacity:String(pp>0?Math.min(1,pp*5)*(1-p(t,QT[i]+.55,QT[i]+.8)):0),transform:`translate(-50%,0) scale(${lerp(.6,1,p(t,QT[i],QT[i]+.2,E.terug))})`});});
+    // tikcirkel op het antwoord
+    const ti=QT.map(q=>p(t,q-.08,q+.3)).find(x=>x>0&&x<1)||0;zet($('#tik'),{left:'720px',top:'1010px',opacity:String(ti>0?1-ti:0),transform:`scale(${lerp(.4,1.4,ti)})`});
+    const done=QT.filter(q=>t>=q).length;const f=clamp((120+done*18*2.5)/300)+(t>4.55?1:0);
+    const vul=t<4.55?lerp(.4,1,done/4):(t<4.75?1:p(t,4.75,5.3,E.uit)*.18);
+    zet($('#xpfill'),{width:(vul*100)+'%'});$('#xptxt').textContent=(t<4.55?120+done*18:12+Math.round(p(t,4.75,5.3)*40))+' XP';
+    $('#lvl').textContent=t<4.6?'Lv 7':'Lv 8';
+    const cb=Math.max(0,done-1);zet($('#combo'),{opacity:String(done>=2?1:0),transform:`scale(${1+Math.max(0,1-(t-QT[Math.max(1,done-1)])*4)*.25})`});$('#combon').textContent=(done)+'×';
+    const lu=p(t,4.6,5.0,E.veer);zet($('#lvup'),{opacity:String(Math.min(1,lu*2)*(1-p(t,5.3,5.5))),transform:`scale(${lerp(.3,1,lu)})`});
+    if(t>4.6&&t<4.85)schud=(4.85-t)*30;}
+
+  // ── S3 ──
+  if(t>5.2&&t<8.6){
+    const n=Math.round(lerp(1,12,p(t,5.55,6.6,E.uit)));$('#streak').textContent=String(n);
+    const vl=p(t,5.5,5.9,E.terug);zet($('#vlam'),{opacity:String(Math.min(1,vl*2)),transform:`scale(${lerp(.3,1,vl)*(1+Math.sin(t*9)*.03)}) rotate(${Math.sin(t*6)*2.5}deg)`});
+    zet($('#fk'),{transform:`translateY(${Math.sin(t*11)*2}px)`});
+    const sp=t>6.6?1+Math.max(0,1-(t-6.6)*4)*.15:1;zet($('#streak'),{transform:`scale(${sp})`});
+    // kist valt in, drie tikken, dan open
+    const kv=p(t,6.3,6.75,E.veer);const tikken=[6.95,7.2,7.45].map(x=>Math.max(0,1-Math.abs(t-x)*9));const tk=Math.max(...tikken);
+    const open=p(t,7.6,7.9,E.uit5);
+    zet($('#kist'),{opacity:String(p(t,6.3,6.4)),transform:`translateY(${lerp(-700,0,Math.min(1,kv))}px) rotate(${tk*8*(Math.sin(t*60)>0?1:-1)}deg) scale(${1+tk*.06})`});
+    zet($('#deksel'),{transform:`translateY(${-open*40}px) rotate(${-open*28}deg)`});
+    zet($('#tik3'),{opacity:String(p(t,6.8,7.0)*(1-p(t,7.55,7.7)))});
+    zet($('#stralen'),{opacity:String(open*.9),transform:`rotate(${t*40}deg) scale(${lerp(.4,1,open)})`});
+    const mp=p(t,7.65,8.4);MU.forEach(m=>{const q=clamp((mp-m.d)/(1-m.d));const x=540+Math.cos(m.a)*m.v*q*.8,y=1230+Math.sin(m.a)*m.v*q+700*q*q;
+      zet(m.el,{left:x+'px',top:y+'px',opacity:String(q>0&&q<1?1:0),transform:`scale(${lerp(.5,1,q)}) rotateY(${q*720}deg)`});});
+    const bu=p(t,7.8,8.1,E.terug);zet($('#buit'),{opacity:String(Math.min(1,bu*2)),transform:`scale(${lerp(.5,1,bu)})`});}
+
+  // ── S4 ──
+  if(t>8.0&&t<12.8){
+    const xp=jijXP(t);let jijSlot=0;
+    const zacht=d=>clamp((d+35)/70);   // 0 = jij nog onder, 1 = jij erboven
+    RIJ.forEach((r,i)=>{const boven=zacht(xp-r.xp);jijSlot+=1-boven;const slot=i+boven;
+      const inR=p(t,8.2+i*.05,8.6+i*.05,E.uit5);zet(r.el,{top:(slot*RH)+'px',opacity:String(inR),transform:`translateX(${lerp(-80,0,inR)}px)`});
+      r.pos.textContent=String(i+1+Math.round(boven));});
+    const inJ=p(t,8.6,9.0,E.uit5);const stijg=p(t,9.0,11.2)>0&&p(t,9.0,11.2)<1;
+    zet(JIJ,{top:(jijSlot*RH)+'px',opacity:String(inJ),transform:`translateX(${lerp(-80,0,inJ)}px) scale(${stijg?1.04:1})`});
+    JIJ.querySelector('.pos').textContent=String(Math.round(jijSlot)+1);JIJ.querySelector('.xp').textContent=xp+' XP';
+    zet($('#promolijn'),{top:(7*RH-4)+'px',opacity:String(p(t,8.7,9.0))});
+    const div=p(t,11.35,11.6,E.inUit);const m=$('#med');
+    zet(m,{transform:`rotateY(${div*180}deg) scale(${1+Math.sin(div*Math.PI)*.2})`,background:div<.5?'#c17a3f':'#9aa4b2'});
+    m.textContent=div<.5?'B':'Z';$('#divnaam').textContent=div<.5?'Brons-divisie':'Zilver-divisie';
+    const pr=p(t,11.45,11.85,E.veer);zet($('#promo'),{opacity:String(Math.min(1,pr*2)),transform:`scale(${lerp(.3,1,pr)})`});
+    if(t>11.45&&t<11.7)schud=(11.7-t)*36;}
+
+  // ── S5 ──
+  if(t>12.2){const m=p(t,12.5,13.2,E.veer);const bob=t>13.2?Math.sin((t-13.2)*3)*10:0;
+    zet($('#vonk'),{opacity:String(Math.min(1,m*2)),transform:`translateY(${lerp(240,0,Math.min(1,m))+bob}px) scale(${lerp(.4,1,m)}) rotate(${Math.sin(t*2)*2}deg)`});
+    pop(w5,t,12.8,.1,70);
+    const mk=p(t,13.5,13.9,E.uit);zet($('#merk'),{opacity:String(mk),transform:`translateY(${lerp(50,0,mk)}px)`});
+    const tg=p(t,13.75,14.15,E.uit);zet($('#tags'),{opacity:String(tg),transform:`translateY(${lerp(40,0,tg)}px)`});}
+
+  const r=rnd(Math.floor(t*30)+1);zet($('#wereld'),{transform:schud>0?`translate(${(r()-.5)*schud}px,${(r()-.5)*schud}px)`:'none'});
+}
+Motion.maak({duur:15,render});
+</script>
+</body></html>

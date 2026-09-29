@@ -8,6 +8,7 @@ Niet onderdeel van de app (staat niet in de service worker).
 | Post | Formaat | Duur | Wat |
 |---|---|---|---|
 | `posts/aftellen.html` | Reel 1080×1920 | 9 s | Aantal dagen tot het eerste centrale examen (rekent zelf vanaf vandaag), wat je op Slagio doet, Vonk + merk. `?doel=2027-05-14` of `?dagen=100` om te overschrijven. |
+| `posts/competitie.html` | Reel 1080×1920 | 15 s | Gamificatie en competitie: XP en combo op echte vragen, level omhoog, streak, kist openen (tik 3×), weekwedstrijd waarin jij van plek 9 naar 1 klimt en promoveert naar Zilver. Namen en XP-standen volgen de app (30 spelers, top 7 promoveert). |
 | `posts/quiz.html` | Feed 1080×1350 | 11 s | Echte oefenvraag met 5 s bedenktijd, onthulling, uitleg, reactievraag en CTA. Kies de vraag met `?vraag=econ-maxprijs` (zie `VRAGEN` in het bestand). |
 
 ## Bekijken
