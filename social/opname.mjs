@@ -107,6 +107,8 @@ let nr = 0;
 async function frame() { nr++; const t0 = Date.now(); const { data } = await cdp.send('Page.captureScreenshot', { format: 'jpeg', quality: 90 }); fs.writeFileSync(path.join(UIT, 'f' + String(nr).padStart(4, '0') + '.jpg'), Buffer.from(data, 'base64')); PROF.foto += Date.now() - t0; if (process.env.PROF && nr % 10 === 0) console.log(' frame', nr, JSON.stringify(PROF)); }
 
 await page.goto(BASIS + (S.pad || '/index.html'));
+// Klok stilzetten: na install() loopt hij anders met de echte tijd mee, ook terwijl we een traag frame vastleggen.
+await page.clock.pauseAt((await page.evaluate(() => Date.now())) + 50);
 // requestAnimationFrame op 30 per seconde (de nep-klok draait hem op 60): één render per opgenomen frame.
 await page.evaluate(fps => { const origC = window.cancelAnimationFrame.bind(window), mijn = new Set();
   window.requestAnimationFrame = cb => { const id = setTimeout(() => { mijn.delete(id); cb(performance.now()); }, 1000 / fps); mijn.add(id); return id; };
