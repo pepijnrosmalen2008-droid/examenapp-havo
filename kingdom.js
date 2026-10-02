@@ -22,9 +22,10 @@ function kpoly(pts,fill,extra){return `<polygon points="${pts.map(kpt).join(' ')
 function khex(c){c=c.replace('#','');if(c.length===3)c=c.split('').map(x=>x+x).join('');return [0,2,4].map(i=>parseInt(c.substr(i,2),16));}
 function kshade(c,f){if(!/^#/.test(c))return c;const [r,g,b]=khex(c);const m=v=>Math.round(f>=0?v+(255-v)*f:v*(1+f));return '#'+[m(r),m(g),m(b)].map(v=>Math.max(0,Math.min(255,v)).toString(16).padStart(2,'0')).join('');}
 const KL=' stroke-linejoin="round"';
-function kstroke(c){return ` stroke="${kshade(c,-.38)}" stroke-width=".7" stroke-opacity=".75"${KL}`;}
+// Vonk-stijl: geen omlijning, de vlakken zelf geven de vorm.
+function kstroke(c){return '';}
 // Gevel met licht: boven iets lichter, onderaan donkerder (ambient occlusion bij de grond).
-function kvg(c){return /^#/.test(c)?`url(#${kgrad(c,'v')})`:c;}
+function kvg(c){return c;}
 // Blok met drie zichtbare vlakken (links = y+d-zijde, rechts = x+w-zijde, boven).
 function kbox(x,y,z,w,d,h,c,o){
   o=o||{};const op=o.op!=null?` opacity="${o.op}"`:'';const st=o.geenLijn?'':kstroke(c);
@@ -84,10 +85,11 @@ function kcone(cx,cy,z,r,h,c){
 // Gradiënten worden per kleur één keer aangemaakt.
 const _KG=new Map();
 function kgrad(c,rond){const k=(rond==='v'?'v':rond?'r':'l')+c;if(!_KG.has(k))_KG.set(k,'kg'+(KD.pre||'m')+_KG.size);return _KG.get(k);}
+// Vlak in twee tinten: elke 'gradiënt' is een harde knik van licht naar schaduw.
 function kdefs(){let s='';_KG.forEach((id,k)=>{const rond=k[0]==='r',c=k.slice(1);
-  if(k[0]==='v'){s+=`<linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${kshade(c,.1)}"/><stop offset=".7" stop-color="${c}"/><stop offset="1" stop-color="${kshade(c,-.2)}"/></linearGradient>`;return;}
-  s+=rond?`<radialGradient id="${id}" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="${kshade(c,.55)}"/><stop offset=".5" stop-color="${c}"/><stop offset="1" stop-color="${kshade(c,-.3)}"/></radialGradient>`
-    :`<linearGradient id="${id}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="${kshade(c,.18)}"/><stop offset=".55" stop-color="${c}"/><stop offset="1" stop-color="${kshade(c,-.28)}"/></linearGradient>`;});return s;}
+  if(k[0]==='v'){s+=`<linearGradient id="${id}"><stop offset="0" stop-color="${c}"/></linearGradient>`;return;}
+  s+=rond?`<linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset=".56" stop-color="${kshade(c,.1)}"/><stop offset=".56" stop-color="${kshade(c,-.14)}"/></linearGradient>`
+    :`<linearGradient id="${id}" x1="0" y1="0" x2="1" y2="0"><stop offset=".55" stop-color="${kshade(c,.06)}"/><stop offset=".55" stop-color="${kshade(c,-.16)}"/></linearGradient>`;});return s;}
 // Kleine 'bord'-emblemen voor op een gevel (billboard, altijd rechtop).
 function kbord(x,y,z,inhoud,o){o=o||{};const [sx,sy]=kp(x,y,z);const r=o.r||9;
   return `<g transform="translate(${sx.toFixed(1)} ${sy.toFixed(1)})"><circle r="${r}" fill="${o.bg||'#fff'}" stroke="${o.rand||'#1e293b'}" stroke-width="1.4"/>${inhoud}</g>`;}
@@ -252,6 +254,81 @@ function kdThema(id){return KD_THEMA[id]||KD_STANDAARD;}
 // Plek per gebouw binnen de 4×4-wijk: klein vooraan, het grote gebouw achterin.
 const KD_SLOT=[[2,2],[0,2],[2,0],[0,0]];
 
+// ═══════ WONDEREN (2D) ═══════
+// Wat het eiland grootser maakt per niveau (KD_WONDEREN), getekend in dezelfde
+// vlakke stijl. Achterste delen komen vóór de wijken, voorste erna (schildervolgorde).
+const KD_MENSKL=['#FF4B4B','#1CB0F6','#58CC02','#FF9600','#CE82FF','#FFC800','#2B70C9','#FF86D0'];
+const KD_HUID=['#F6C9A4','#E0A47A','#B97A56','#8A5A3C','#FBD9BF'];
+// Rondweg: achterranden (x=.5 of y=.5) en voorranden (x=W-.5 of y=H-.5), op z=0.
+function kdRandWeg(W,H,voor){return voor?[[[W-.5,.5],[W-.5,H-.5]],[[W-.5,H-.5],[.5,H-.5]]]:[[[.5,H-.5],[.5,.5]],[[.5,.5],[W-.5,.5]]];}
+function kdMens(r,seg,i){
+  const kl=KD_MENSKL[Math.floor(r()*KD_MENSKL.length)],huid=KD_HUID[Math.floor(r()*KD_HUID.length)];
+  const [a,b]=seg,t0=r()*.7,t1=Math.min(1,t0+.25+r()*.4);const lp=(t)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t];
+  const P=kp(...lp(t0),0),Q=kp(...lp(t1),0);const dur=(8+r()*10).toFixed(1),beg=(-r()*20).toFixed(1);
+  return `<g class="kd-mens"><animateMotion dur="${dur}s" begin="${beg}s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear" path="M${kpt(P)} L${kpt(Q)}"/>`
+    +`<ellipse rx="3.4" ry="1.4" fill="rgba(30,40,20,.22)"/><g class="kd-mens-b" style="animation-delay:${(r()*-.5).toFixed(2)}s"><rect x="-1.9" y="-5" width="1.6" height="5" rx=".8" fill="#4B4B4B"/><rect x=".3" y="-5" width="1.6" height="5" rx=".8" fill="#3C3C3C"/>`
+    +`<rect x="-2.8" y="-12" width="5.6" height="8" rx="2.6" fill="${kl}"/><rect x=".2" y="-12" width="2.6" height="8" rx="1.3" fill="${kshade(kl,-.16)}"/><circle cy="-15" r="3" fill="${huid}"/></g></g>`;
+}
+function kdMensen(wd,voor){
+  if(!kdWonderAan('inwoners',wd.totaal))return '';const r=kdRng('mens'+(voor?1:0)+wd.totaal);
+  const n=Math.min(9,1+Math.floor(wd.totaal/5));const segs=kdRandWeg(wd.W,wd.H,voor);let s='';
+  for(let i=0;i<n;i++)s+=kdMens(r,segs[i%2],i);return s;
+}
+function kdLantaarn(x,y){const [sx,sy]=kp(x,y,0);const f=v=>v.toFixed(1);
+  return `<g class="kd-lantaarn"><ellipse cx="${f(sx)}" cy="${f(sy)}" rx="3" ry="1.3" fill="rgba(30,40,20,.2)"/><rect x="${f(sx-1)}" y="${f(sy-22)}" width="2" height="22" rx="1" fill="#4B4B4B"/>`
+    +`<rect x="${f(sx-3.2)}" y="${f(sy-28)}" width="6.4" height="7" rx="2" fill="#3C3C3C"/><rect class="kd-lamp" x="${f(sx-2)}" y="${f(sy-27)}" width="4" height="5" rx="1.4" fill="#FFF1B8"/></g>`;}
+function kdLantaarns(wd,voor){
+  if(!kdWonderAan('lantaarns',wd.totaal))return '';let s='';
+  for(const [a,b] of kdRandWeg(wd.W,wd.H,voor)){const L=Math.hypot(b[0]-a[0],b[1]-a[1]);for(let t=1.5;t<L;t+=3.2){const k=t/L;s+=kdLantaarn(a[0]+(b[0]-a[0])*k+(voor?.32:-.32)*(a[0]===b[0]?1:0),a[1]+(b[1]-a[1])*k+(voor?.32:-.32)*(a[1]===b[1]?1:0));}}
+  return s;
+}
+// Stadsmuur rond het torenplein (achterste helft / voorste helft apart).
+function kdMuur(x,y,voor){
+  const st='#E2D5B9',z=5,h=14;let s='';const kanteel=(x0,y0,dx,dy,n)=>{let k='';for(let i=0;i<n;i+=2)k+=kbox(x0+dx*i/n,y0+dy*i/n,z+h,dx?Math.abs(dx)/n:.22,dy?Math.abs(dy)/n:.22,4,st,{vlak:true});return k;};
+  const toren=(tx,ty)=>kcyl(tx,ty,z,.26,h+12,'#D9CBAE',{top:'#EDE3CF'})+kcone(tx,ty,z+h+12,.26,16,'#FF7A2E');
+  if(!voor){s+=kbox(x,y,z,4,.22,h,st,{vlak:true})+kanteel(x,y,4,0,8)+kbox(x,y,z,.22,4,h,st,{vlak:true})+kanteel(x,y,0,4,8)+toren(x+.1,y+.1);}
+  else{s+=kbox(x+3.78,y,z,.22,4,h,st,{vlak:true})+kanteel(x+3.78,y,0,4,8)+kbox(x,y+3.78,z,1.5,.22,h,st,{vlak:true})+kbox(x+2.5,y+3.78,z,1.5,.22,h,st,{vlak:true})
+    +kanteel(x,y+3.78,1.5,0,3)+kanteel(x+2.5,y+3.78,1.5,0,3)+toren(x+3.9,y+.1)+toren(x+.1,y+3.9)+toren(x+3.9,y+3.9);}
+  return s;
+}
+// Het grote kasteel: vier torens om de centrale toren, vaandels, en 's avonds vuurwerk.
+function kdKasteel(x,y,z,voor){
+  let s='';const t=(tx,ty)=>kcyl(tx,ty,5,.36,74,'#EFE6D2',{top:'#F7F1E3',ringen:2,ringKleur:'#DCCFB2'})+kcone(tx,ty,79,.36,30,'#1CB0F6')+kvlag(tx,ty,109,16,'#FFC800');
+  if(!voor)s+=t(x+.75,y+.75)+t(x+3.25,y+.75)+t(x+.75,y+3.25);else s+=t(x+3.25,y+3.25);
+  if(voor){const [fx,fy]=kp(x+2,y+2,z+120);s+=`<g class="kd-vuurwerk" transform="translate(${fx.toFixed(1)} ${fy.toFixed(1)})">${[[-60,-20,'#FF4B4B',0],[50,-40,'#FFC800',.9],[0,-70,'#1CB0F6',1.7],[-30,-55,'#58CC02',2.4],[70,-10,'#CE82FF',3.1]].map(([dx,dy,c,d])=>
+    `<g transform="translate(${dx} ${dy})"><g class="kd-vw" style="animation-delay:${d}s">${Array.from({length:10},(_,i)=>{const a=i*Math.PI/5;return `<rect x="-1.6" y="-1.6" width="3.2" height="9" rx="1.6" fill="${c}" transform="rotate(${(a*180/Math.PI).toFixed(0)}) translate(0 10)"/>`;}).join('')}<circle r="3" fill="#fff"/></g></g>`).join('')}</g>`;}
+  return s;
+}
+// Buiteneiland met watermolen, met een brug naar het hoofdeiland.
+function kdBuiteneiland(wd){
+  if(!kdWonderAan('haven',wd.totaal))return '';const {W}=wd;const x=W+3,y=1,b=5,d=5,diep=30;let s='';
+  const bodem=kp(x+b/2,y+d/2,-diep-80);
+  s+=kpoly([kp(x,y+d,-diep),kp(x+b,y+d,-diep),bodem],'#9C8F84')+kpoly([kp(x+b,y,-diep),kp(x+b,y+d,-diep),bodem],'#7E7268');
+  s+=kbox(x,y,-diep,b,d,diep,'#8a6446',{top:'url(#kd-gras)',links:'url(#kd-aarde-l)',rechts:'url(#kd-aarde-r)',vlak:true});
+  s+=kboom(x+.6,y+.7,.8)+kden(x+4.3,y+.8,.8)+kboom(x+.7,y+4.2,.75,'#3f8a3c');
+  // Molen: huisje + rad dat draait.
+  s+=kbox(x+1.6,y+1.6,0,1.8,1.6,26,'#F3E2C0',{ramen:{kol:1,rij:1,kleur:'#8FD3F7',deur:'#8B5A2B'}})+kgable(x+1.6,y+1.6,26,1.8,1.6,14,'#FF7A2E');
+  const [mx,my]=kp(x+3.4,y+2.4,14);
+  s+=`<g transform="translate(${mx.toFixed(1)} ${my.toFixed(1)})"><g class="kd-rad">${Array.from({length:8},(_,i)=>`<rect x="-1.4" y="-15" width="2.8" height="30" rx="1.2" fill="#A06A3C" transform="rotate(${i*22.5})"/>`).join('')}<circle r="12" fill="none" stroke="#8B5A2B" stroke-width="3"/><circle r="3.2" fill="#5C3A1E"/></g></g>`;
+  s+=kboom(x+4.2,y+4.2,.85)+kden(x+2.8,y+4.4,.8);
+  // Brug van het hoofdeiland naar het buiteneiland.
+  s+=kbox(W-.1,y+2.1,-3,3.2,.8,3,'#C98E46',{top:'#E8B46A',links:'#B87E3E',rechts:'#A06A3C',vlak:true});
+  for(let i=0;i<=6;i++){const [px,py]=kp(W-.1+i*.53,y+2.1,0);const [qx,qy]=kp(W-.1+i*.53,y+2.9,0);s+=`<line x1="${px.toFixed(1)}" y1="${py.toFixed(1)}" x2="${px.toFixed(1)}" y2="${(py-8).toFixed(1)}" stroke="#8B5A2B" stroke-width="1.6"/><line x1="${qx.toFixed(1)}" y1="${qy.toFixed(1)}" x2="${qx.toFixed(1)}" y2="${(qy-8).toFixed(1)}" stroke="#8B5A2B" stroke-width="1.6"/>`;}
+  const [a1,b1]=kp(W-.1,y+2.1,8),[a2,b2]=kp(W+3.1,y+2.1,8),[a3,b3]=kp(W-.1,y+2.9,8),[a4,b4]=kp(W+3.1,y+2.9,8);
+  s+=`<path d="M${a1.toFixed(1)} ${b1.toFixed(1)}L${a2.toFixed(1)} ${b2.toFixed(1)}M${a3.toFixed(1)} ${b3.toFixed(1)}L${a4.toFixed(1)} ${b4.toFixed(1)}" stroke="#A06A3C" stroke-width="2" stroke-linecap="round"/>`;
+  return s;
+}
+// Luchtballonnen in de vakkleuren, zwevend boven de wijken.
+function kdBallonnen(wd){
+  if(!kdWonderAan('ballon',wd.totaal))return '';const r=kdRng('ballon');let s='';
+  wd.wijken.slice(0,6).forEach((w,i)=>{const lw=wd.lijst.find(l=>l.vak&&l.vak.id===w.vak.id);if(!lw)return;const [bx,by]=kp(lw.gx+2,lw.gy+2,190+r()*70);const c=w.kleur||'#FF9600',sh=kshade(c,-.2);
+    s+=`<g class="kd-ballon" style="animation-delay:${(-r()*6).toFixed(1)}s;animation-duration:${(5+r()*3).toFixed(1)}s" transform="translate(${bx.toFixed(1)} ${by.toFixed(1)})">`
+      +`<path d="M0 -40C-22 -40 -24 -12 -8 4L8 4C24 -12 22 -40 0 -40Z" fill="${c}"/><path d="M0 -40C22 -40 24 -12 8 4L2 4C10 -12 10 -36 0 -40Z" fill="${sh}"/>`
+      +`<path d="M-8 -36C-12 -28 -12 -18 -9 -10" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" opacity=".45"/>`
+      +`<path d="M-7 4L-5 13M7 4L5 13" stroke="#8B5A2B" stroke-width="1.2"/><rect x="-6" y="12" width="12" height="9" rx="2.5" fill="#A06A3C"/><rect x="-6" y="12" width="12" height="3" rx="1.5" fill="#C98E46"/></g>`;});
+  return s;
+}
+
 // ═══════ EILAND ═══════
 const KD_NIVEAUS=[[0,'Kamp'],[1,'Gehucht'],[4,'Dorp'],[10,'Stadje'],[20,'Stad'],[34,'Metropool'],[48,'Kingdom']];
 // Elk nieuw eilandniveau zet er iets groots bij: zo wordt het eiland zichtbaar grootser.
@@ -281,7 +358,7 @@ function kdTekenWijk(w,o){
   o=o||{};const x=w.gx,y=w.gy;let s='';
   if(w.toren)return kdTekenToren(x,y,o.totaal||0);
   // Grasplaat met een rand in de vakkleur.
-  s+=kbox(x-.08,y-.08,0,4.16,4.16,5,'#76b457',{top:'url(#kd-gras)',links:'#679f4a',rechts:'#557f3c'});
+  s+=kbox(x-.08,y-.08,0,4.16,4.16,5,'#76b457',{top:'url(#kd-gras)',links:'#6DB33F',rechts:'#58992F'});
   s+=`<polygon class="kd-rand" points="${[kp(x+.05,y+.05,5),kp(x+3.95,y+.05,5),kp(x+3.95,y+3.95,5),kp(x+.05,y+3.95,5)].map(kpt).join(' ')}" fill="none" stroke="${w.kleur}" stroke-width="3" stroke-linejoin="round" opacity=".75" data-wijk="${w.vak.id}"/>`;
   s+=`<polygon class="kd-hit" data-wijk="${w.vak.id}" points="${[kp(x-.1,y-.1,5),kp(x+4.1,y-.1,5),kp(x+4.1,y+4.1,5),kp(x-.1,y+4.1,5)].map(kpt).join(' ')}" fill="transparent"/>`;
   const thema=kdThema(w.vak.id),p={a:w.kleur};
@@ -305,9 +382,11 @@ function kdFundering(x,y,klaar){
   return `<polygon points="${[kp(x+.35,y+.35,5),kp(x+1.65,y+.35,5),kp(x+1.65,y+1.65,5),kp(x+.35,y+1.65,5)].map(kpt).join(' ')}" fill="${klaar?'rgba(250,204,21,.28)':'rgba(0,0,0,.06)'}" stroke="${klaar?'#f59e0b':'rgba(0,0,0,.22)'}" stroke-width="1.6" stroke-dasharray="5 4"/>`;
 }
 function kdMarker(x,y){const [sx,sy]=kp(x,y,5);
-  return `<g class="kd-marker" transform="translate(${sx.toFixed(1)} ${sy.toFixed(1)})"><g class="kd-marker-z"><path d="M0-58l12 14-12 14-12-14z" fill="#facc15" stroke="#a16207" stroke-width="2"/><path d="M0-58l12 14H-12z" fill="#fde68a"/></g><ellipse rx="10" ry="5" fill="rgba(0,0,0,.2)"/></g>`;}
+  return `<g class="kd-marker" transform="translate(${sx.toFixed(1)} ${sy.toFixed(1)})"><g class="kd-marker-z"><path d="M0-58l12 14-12 14-12-14z" fill="#E6A800"/><path d="M0-58l12 14-12 14z" fill="#FFC800"/><path d="M0-58l12 14H-12z" fill="#FFE27A"/></g><ellipse rx="10" ry="5" fill="rgba(0,0,0,.2)"/></g>`;}
 function kdTekenToren(x,y,b){
-  let s=kbox(x-.08,y-.08,0,4.16,4.16,5,'#e7dcc4',{top:'url(#kd-plein)',links:'#cdbf9f',rechts:'#b9aa88'});
+  let s=kbox(x-.08,y-.08,0,4.16,4.16,5,'#e7dcc4',{top:'url(#kd-plein)',links:'#DCCDAA',rechts:'#C8B88F'});
+  const muur=kdWonderAan('muur',b),kast=kdWonderAan('kasteel',b);
+  if(muur)s+=kdMuur(x,y,false);if(kast)s+=kdKasteel(x,y,5,false);
   s+=kdSchaduw(x+1.2,y+1.2,x+2.8,y+2.8,5+22*(1+Math.min(7,Math.floor(b/3)))+30);
   s+=`<polygon class="kd-hit" data-wijk="_toren" points="${[kp(x,y,5),kp(x+4,y,5),kp(x+4,y+4,5),kp(x,y+4,5)].map(kpt).join(' ')}" fill="transparent"/>`;
   const vloeren=1+Math.min(7,Math.floor(b/3));let z=5;
@@ -315,7 +394,8 @@ function kdTekenToren(x,y,b){
   const k=vloeren/(vloeren+1)*.3;
   s+=kpyr(x+1.15+k,y+1.15+k,z,1.7-2*k,1.7-2*k,30,'#c2410c');
   s+=kvlag(x+2,y+2,z+30,20,'#E85C0D');
-  s+=kboom(x+.5,y+3.4,.8)+kboom(x+3.4,y+.5,.8,'#3f8a3c')+kden(x+.6,y+.6,.8)+kden(x+3.5,y+3.4,.9);
+  if(!muur)s+=kboom(x+.5,y+3.4,.8)+kboom(x+3.4,y+.5,.8,'#3f8a3c')+kden(x+.6,y+.6,.8)+kden(x+3.5,y+3.4,.9);
+  if(kast)s+=kdKasteel(x,y,z,true);if(muur)s+=kdMuur(x,y,true);
   return s;
 }
 function kdTekenEiland(wd,o){
@@ -327,7 +407,7 @@ function kdTekenEiland(wd,o){
   s+=kpoly([kp(0,H,-diep),kp(W,H,-diep),bodem],'url(#kd-onder-l)');
   s+=kpoly([kp(W,0,-diep),kp(W,H,-diep),bodem],'url(#kd-onder-r)');
   s+=kbox(0,0,-diep,W,H,diep,'#8a6446',{top:'url(#kd-plein)',links:'url(#kd-aarde-l)',rechts:'url(#kd-aarde-r)',vlak:true});
-  s+=`<polygon points="${[kp(0,H,-7),kp(W,H,-7),kp(W,H,0),kp(0,H,0)].map(kpt).join(' ')}" fill="#5f9a42"/><polygon points="${[kp(W,0,-7),kp(W,H,-7),kp(W,H,0),kp(W,0,0)].map(kpt).join(' ')}" fill="#4d8236"/>`;
+  s+=`<polygon points="${[kp(0,H,-7),kp(W,H,-7),kp(W,H,0),kp(0,H,0)].map(kpt).join(' ')}" fill="#6DB33F"/><polygon points="${[kp(W,0,-7),kp(W,H,-7),kp(W,H,0),kp(W,0,0)].map(kpt).join(' ')}" fill="#58992F"/>`;
   // Losse rotsblokken en hangende wortels langs de rand.
   const rr=kdRng('rand'+W);for(let i=0;i<14;i++){const t=.05+rr()*.9,links=i%2===0;const zz=-12-rr()*28;
     const p0=links?kp(W*t,H,zz):kp(W,H*t,zz);const g=4+rr()*6;
@@ -344,28 +424,32 @@ function kdTekenEiland(wd,o){
   const achter=kies.filter(pl=>pl[0]+pl[1]<(W+H)/2),voor=kies.filter(pl=>pl[0]+pl[1]>=(W+H)/2);
   const BOOMK=['#4f9e45','#3f8a3c','#6aa94e'];
   achter.forEach((pl,i)=>{s+=i%3?kboom(pl[0],pl[1],.7+r()*.3,BOOMK[i%3]):kden(pl[0],pl[1],.7+r()*.3);});
+  s+=kdLantaarns(wd,false)+kdMensen(wd,false);
   wd.lijst.slice().sort((a,b)=>(a.gx+a.gy)-(b.gx+b.gy)).forEach(w=>{s+=`<g class="kd-wijk" data-id="${w.toren?'_toren':w.vak.id}">${kdTekenWijk(w,{nieuw:o.nieuw,totaal:wd.totaal})}</g>`;});
+  s+=kdMensen(wd,true)+kdLantaarns(wd,true);
   voor.forEach((pl,i)=>{s+=i%3?kboom(pl[0],pl[1],.7+r()*.3,BOOMK[i%3]):kden(pl[0],pl[1],.7+r()*.3);});
-  return `<defs>${kdefs()}${kdVasteDefs(W,H,diep)}<linearGradient id="kd-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/></linearGradient>
+  s+=kdBuiteneiland(wd)+kdBallonnen(wd);
+  return `<defs>${kdefs()}${kdVasteDefs(W,H,diep)}<linearGradient id="kd-water" x1="0" y1="0" x2="1" y2="0"><stop offset=".5" stop-color="#7DD3FC"/><stop offset=".5" stop-color="#4FC0F5"/></linearGradient>
     <linearGradient id="kd-licht" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fde047" stop-opacity=".75"/><stop offset="1" stop-color="#fde047" stop-opacity="0"/></linearGradient></defs>${s}`;
 }
 // Texturen en licht die voor het hele eiland gelden (gras, plein, glas, aardlagen).
 function kdVasteDefs(W,H,diep){
   const r=kdRng('gras');let gras='',plein='';
-  for(let i=0;i<26;i++){const x=r()*36,y=r()*18;gras+=`<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="${(.7+r()*1.1).toFixed(2)}" ry="${(.4+r()*.5).toFixed(2)}" fill="${['#7fbc58','#9fd77a','#6fae4d','#b4e08f'][i%4]}" opacity=".85"/>`;}
-  for(let i=0;i<5;i++){const x=i*8+(r()*2);plein+=`<path d="M${x.toFixed(1)} 4h6l3 4-3 4h-6l-3-4z" fill="${['#e3d8c0','#e9dfca','#ddd1b6'][i%3]}" stroke="#d3c5a6" stroke-width=".4"/>`;}
+  for(let i=0;i<26;i++){const x=r()*36,y=r()*18;gras+=`<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="${(.7+r()*1.1).toFixed(2)}" ry="${(.4+r()*.5).toFixed(2)}" fill="${['#9BDB6A','#A8E27A','#86CC52','#B2E68A'][i%4]}" opacity=".9"/>`;}
+  for(let i=0;i<5;i++){const x=i*8+(r()*2);plein+=`<path d="M${x.toFixed(1)} 4h6l3 4-3 4h-6l-3-4z" fill="${['#EADCB8','#EFE3C3','#E5D6AF'][i%3]}"/>`;}
   const L0=kp(0,H,0),R0=kp(W,0,0);const yl=L0[1]-.5*L0[0],yr=R0[1]+.5*R0[0];
   const lagen=(id,skew,y0,d)=>`<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="0" y1="${y0.toFixed(1)}" x2="0" y2="${(y0+diep).toFixed(1)}" gradientTransform="skewY(${skew})">
     <stop offset="0" stop-color="${kshade('#6b4a2e',d)}"/><stop offset=".22" stop-color="${kshade('#7a5233',d)}"/><stop offset=".23" stop-color="${kshade('#a07148',d)}"/><stop offset=".52" stop-color="${kshade('#936744',d)}"/>
     <stop offset=".53" stop-color="${kshade('#8f877e',d)}"/><stop offset=".78" stop-color="${kshade('#7d756d',d)}"/><stop offset=".79" stop-color="${kshade('#6c655e',d)}"/><stop offset="1" stop-color="${kshade('#5d5650',d)}"/></linearGradient>`;
-  return `<pattern id="kd-gras" patternUnits="userSpaceOnUse" width="36" height="18"><rect width="36" height="18" fill="#8fca68"/>${gras}</pattern>
-    <pattern id="kd-plein" patternUnits="userSpaceOnUse" width="40" height="16"><rect width="40" height="16" fill="#e6dbc3"/>${plein}</pattern>
-    <linearGradient id="kd-glas" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfe0f5"/><stop offset=".38" stop-color="#5c84a6"/><stop offset="1" stop-color="#1f3347"/></linearGradient>
+  return `<pattern id="kd-gras" patternUnits="userSpaceOnUse" width="36" height="18"><rect width="36" height="18" fill="#92D45E"/>${gras}</pattern>
+    <pattern id="kd-plein" patternUnits="userSpaceOnUse" width="40" height="16"><rect width="40" height="16" fill="#F3E8CC"/>${plein}</pattern>
+    <linearGradient id="kd-glas" x1="0" y1="0" x2="1" y2="1"><stop offset=".5" stop-color="#BDE8FF"/><stop offset=".5" stop-color="#8FD3F7"/></linearGradient>
     ${lagen('kd-aarde-l',26.565,yl,0)}${lagen('kd-aarde-r',-26.565,yr,-.2)}
-    <linearGradient id="kd-onder-l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a635c"/><stop offset=".6" stop-color="#4f4943"/><stop offset="1" stop-color="#3a3531" stop-opacity=".2"/></linearGradient>
-    <linearGradient id="kd-onder-r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#554f49"/><stop offset=".6" stop-color="#403b36"/><stop offset="1" stop-color="#2e2a27" stop-opacity=".2"/></linearGradient>`;
+    <linearGradient id="kd-onder-l"><stop offset="0" stop-color="#9C8F84"/></linearGradient>
+    <linearGradient id="kd-onder-r"><stop offset="0" stop-color="#7E7268"/></linearGradient>`;
 }
 function kdBBox(wd){const pts=[kp(0,0,40),kp(wd.W,0,40),kp(0,wd.H,40),kp(wd.W,wd.H,0),kp(0,0,180)];
+  if(kdWonderAan('haven',wd.totaal))pts.push(kp(wd.W+8,1,0),kp(wd.W+8,6,-40));if(kdWonderAan('ballon',wd.totaal))pts.push(kp(wd.W/2,wd.H/2,300));
   const xs=pts.map(p=>p[0]),ys=pts.map(p=>p[1]);return {x0:Math.min(...xs)-40,x1:Math.max(...xs)+40,y0:Math.min(...ys)-60,y1:Math.max(...ys)+170};}
 
 // ═══════ SCHERM ═══════
@@ -396,8 +480,11 @@ function openKingdom(){
   try{if(typeof ensureLevelData==='function')ensureLevelData(lvl,klaar);else klaar();}catch(e){klaar();}
   try{if(typeof trackEvent==='function')trackEvent('kingdom_open',{});}catch(e){}
 }
-// 3D-laag (kingdom3d.js): laadt na de 2D-kaart en neemt die over als WebGL werkt.
+// 3D-laag (kingdom3d.js) staat uit: Kingdom is 2D in Vonk-stijl, net als de rest van Slagio.
+// Zet KD_3D op true om de oude WebGL-versie weer te laden.
+const KD_3D=false;
 function kdLaad3D(){
+  if(!KD_3D)return;
   if(typeof kdProbeer3D==='function'){kdProbeer3D();return;}
   if(KD._l3)return;KD._l3=true;const s=document.createElement('script');s.src='/kingdom3d.js';s.onload=()=>{try{kdProbeer3D();}catch(e){}};s.onerror=()=>{KD._l3=false;};document.head.appendChild(s);
 }
