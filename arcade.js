@@ -140,17 +140,14 @@ function arcNext(pool,gebruikt,d){
 // Opties in willekeurige volgorde, met de index van het goede antwoord.
 function arcOpties(q){const idx=arcShuffle(q.o.map((_,i)=>i));return {idx,juist:idx.indexOf(q.c)};}
 
-// ═══════ 3D-SCÈNES (arcade3d.js) ═══════
-// Laadt de 3D-laag pas als een game hem nodig heeft. Lukt WebGL niet, dan blijft
-// de gewone illustratie staan (de host verdwijnt gewoon).
+// ═══════ SCÈNES (arcade2d.js) ═══════
+// Elke game heeft een 2D-scène in Vonk-stijl (arcade2d.js, geladen vóór dit
+// bestand). arcA3 zet hem neer; daarna praat de game er alleen via a3Haak mee.
 function arcA3(naam,hostId,...args){
   const host=document.getElementById(hostId);if(!host)return;
-  const maak={bom:'a3Bom',boss:'a3Boss',risico:'a3Risico',zwak:'a3Zwak',val:'a3Val',sorteer:'a3Sorteer'}[naam];
-  const start=()=>a3Laad(naam==='boss').then(()=>{if(!host.isConnected)return;
-    try{const S=window[maak](host,...args);A3S[naam]=S;host.classList.add('klaar');const w=host.closest('.a3-wrap');if(w)w.classList.add('met3d');}catch(e){console.warn('[3D]',e);host.remove();}}).catch(()=>host.remove());
-  if(typeof a3Laad==='function'){start();return;}
-  if(!ARC._a3s)ARC._a3s=new Promise((ok,nee)=>{const s=document.createElement('script');s.src='/arcade3d.js';s.onload=ok;s.onerror=nee;document.head.appendChild(s);});
-  ARC._a3s.then(start).catch(()=>host.remove());
+  const maak={bom:'a2Bom',boss:'a2Boss',risico:'a2Risico',zwak:'a2Zwak',val:'a2Val',sorteer:'a2Sorteer'}[naam];
+  if(typeof window[maak]!=='function'){host.remove();return;}
+  try{const S=window[maak](host,...args);A3S[naam]=S;host.classList.add('klaar');const w=host.closest('.a3-wrap');if(w)w.classList.add('met3d');}catch(e){console.warn('[2D]',e);host.remove();}
 }
 function a3Haak(naam,fn,...a){try{const S=typeof A3S!=='undefined'&&A3S[naam];if(S&&!S.P.dood&&S[fn])S[fn](...a);}catch(e){}}
 
@@ -1068,8 +1065,8 @@ function arcGeenVragen(game){
 }
 
 // ═══════ ILLUSTRATIES (hub + intro) ═══════
-// Illustraties: gerenderd uit dezelfde 3D-scènes als in de games (arcade3d.js).
-const ARC_ART=Object.fromEntries(['bom','boss','risico','zwak','sorteer','val'].map(n=>[n,()=>`<img class="arc-art3d" src="/img/arc-${n}.webp" alt="" draggable="false" decoding="async">`]));
+// Illustraties: stilstaande versies van de 2D-scènes uit de games (arcade2d.js).
+const ARC_ART=Object.fromEntries(['bom','boss','risico','zwak','sorteer','val'].map(n=>[n,()=>typeof a2Art==='function'?a2Art(n):'']));
 
 // ═══════ REGISTER ═══════
 const ARC_GAMES={

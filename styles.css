@@ -10252,3 +10252,39 @@ html #sc-welcome .wlc-lvl .level-prev-tag{position:absolute!important;top:26px;r
 @media(prefers-reduced-motion:reduce){html #sc-welcome .wlc-lvl,html #sc-welcome .wlc-lvl-pijl{transition:none}html #sc-welcome .wlc-lvl-naam{animation:none!important}}
 html #sc-welcome .wlc-hero{padding-bottom:48px}
 @media(max-width:760px){html #sc-welcome .wlc-hero{padding-bottom:32px}}
+
+/* ═══════ ARCADE 2D-SCÈNES (arcade2d.js) ═══════
+   Vlakke vectorkunst in de stijl van Vonk: effen achtergrond per game, geen
+   verloop of gloed. De scène vult de host; animaties via de haken in arcade2d.js. */
+.a2{position:relative}
+.a2 .a2-svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.a3-bom.a2{background:#34373d}
+.a3-boss.a2{background:none}
+.a3-risico.a2{background:#1f8a52}
+.a3-zwak.a2{background:#FFE6CC}
+.a3-sorteer.a2{background:#E7F6DC}
+.a3-val.a2{background:#2a4a68}
+.a2-bom-svg .a2-vonkje{animation:a2Vonkje .36s steps(2) infinite;transform-box:fill-box;transform-origin:center}
+.a2-bom-svg.krit .a2-scherm{animation:a2Krit .5s steps(2) infinite}
+@keyframes a2Vonkje{0%{transform:scale(1) rotate(0deg)}100%{transform:scale(1.25) rotate(20deg)}}
+@keyframes a2Krit{0%{fill:#1d1f23}100%{fill:#7f1d1d}}
+.a2-boss-svg .a2-boss{animation:a2Adem 2.6s ease-in-out infinite;transform-box:view-box;transform-origin:150px 212px}
+.a2-boss-svg.ko .a2-boss,.a2-boss-svg.juich .a2-boss{animation:none}
+.a2-boss-svg.fase1 .a2-brauw{stroke-width:11}
+.a2-boss-svg.fase2 .a2-pupil{fill:#D93636}
+.a2-boss-svg.aanval .a2-mond{transform-box:fill-box;transform-origin:center top;transform:scaleY(1.35)}
+.a2-boss-svg .a2-stoom{animation:a2Stoom 1.2s ease-in-out infinite}
+@keyframes a2Adem{0%,100%{transform:scale(1,1)}50%{transform:scale(1.02,.98)}}
+@keyframes a2Stoom{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.a3-zwak .a2-vonk,.a2-art.a2-zwak .a2-vonk{position:absolute;right:4%;bottom:2%;width:28%;max-width:96px;aspect-ratio:1}
+.a2 .a2-vonk svg{width:100%!important;height:100%!important;position:static}
+/* Hub en intro: dezelfde scènes, stilstaand, op hun eigen kleur. */
+.a2-art{position:relative;width:100%;height:100%;overflow:hidden}
+.a2-art.a2-bom{background:#34373d}.a2-art.a2-boss{background:#EDE4FF}.a2-art.a2-risico{background:#1f8a52}
+.a2-art.a2-zwak{background:#FFE6CC}.a2-art.a2-sorteer{background:#E7F6DC}.a2-art.a2-val{background:#2a4a68}
+.arc-tile-art:has(.a2-art){background:none!important;padding:0!important;overflow:hidden}
+.arc-tile-art .a2-art svg{width:100%!important;height:100%!important;filter:none!important}
+.arc-intro-art .a2-art{width:min(340px,86vw);height:180px;margin:0 auto;border-radius:24px}
+.arc-intro-art .a2-art svg{width:100%!important;height:100%!important;filter:none!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.a2-bom-svg .a2-vonkje,.a2-bom-svg.krit .a2-scherm,.a2-boss-svg .a2-boss,.a2-boss-svg .a2-stoom{animation:none}}
+.a3-boss.a2{position:absolute;inset:0}

@@ -1118,10 +1118,10 @@ document.addEventListener('click', function (e) {
 function arcadeOpen(cb){
   if(window._arcLoaded&&typeof openArcade==='function'){openArcade();if(typeof cb==='function')setTimeout(cb,60);return;}
   if(window._arcLoading)return;window._arcLoading=true;
-  const s=document.createElement('script');s.src='/arcade.js';
-  s.onload=()=>{window._arcLoaded=true;window._arcLoading=false;try{openArcade();}catch(e){}if(typeof cb==='function')setTimeout(cb,120);};
-  s.onerror=()=>{window._arcLoading=false;try{showToast('De Arcade kon niet laden. Controleer je verbinding.');}catch(e){}};
-  document.head.appendChild(s);
+  // Eerst de 2D-scènes (arcade2d.js), dan de games zelf (arcade.js).
+  const laad=(src,ok)=>{const s=document.createElement('script');s.src=src;s.onload=ok;
+    s.onerror=()=>{window._arcLoading=false;try{showToast('De Arcade kon niet laden. Controleer je verbinding.');}catch(e){}};document.head.appendChild(s);};
+  laad('/arcade2d.js',()=>laad('/arcade.js',()=>{window._arcLoaded=true;window._arcLoading=false;try{openArcade();}catch(e){}if(typeof cb==='function')setTimeout(cb,120);}));
 }
 
 // ═══════ KINGDOM (gedeeld deel: drempels, stand per vak, badge, lazy laden) ═══════
