@@ -640,7 +640,6 @@
     <div class="wlc-brand">
       <img src="/icon-192.png" alt="Slagio" style="width:32px;height:32px;border-radius:9px;object-fit:cover;flex-shrink:0">
       <span class="wlc-brand-name">Slagio</span>
-      <span class="wlc-brand-tag">Eindexamen 2027</span>
     </div>
     <button class="wlc-theme-btn theme-btn" onclick="toggleDark()" title="Nachtmodus" aria-label="Nachtmodus">
       <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -654,7 +653,6 @@
   <div class="wlc-orb wlc-orb1"></div>
   <div class="wlc-orb wlc-orb2"></div>
   <div class="wlc-orb wlc-orb3"></div>
-  <div class="wlc-eyebrow"><span class="wlc-dot"></span>Gratis · Offline · Syllabus 2027</div>
   <h1 class="wlc-h1">Jij gaat<span class="wlc-h1-accent">slagen.</span></h1>
   <p class="wlc-sub">Quizzen, flashcards, samenvattingen en alle echte eindexamens. Gratis, offline, zonder account.</p>
   <div class="wlc-stats">
@@ -666,63 +664,23 @@
 
 <!-- LEVEL PICKER -->
 <div class="wlc-picker">
-  <p class="wlc-pick-lbl">Kies jouw niveau</p>
-  <div class="wlc-cards">
-
-    <!-- VWO -->
-    <div class="wlc-card-wrap wlc-cvwo-wrap">
-    <div class="wlc-card wlc-cvwo level-card lc-vwo" onclick="chooseLevel('vwo')">
-      <div class="wlc-card-glow"></div>
-      <div class="wlc-card-hd">
-        <div class="wlc-card-lvl">VWO</div>
-        <span class="wlc-card-pill">16 vakken</span>
-      </div>
-      <ul class="wlc-card-list">
-        <li>Alle CE-domeinen + samenvattingen</li>
-        <li>Snelle quiz, flashcards &amp; race mode</li>
-        <li>Echte eindexamens 2019–2025</li>
-        <li>Cijfercalculator, streak &amp; leaderboard</li>
-      </ul>
-      <div class="wlc-card-btn"><span class="wlc-card-btn-inner">VWO starten <span>→</span></span></div>
-    </div>
-    </div>
-
-    <!-- HAVO -->
-    <div class="wlc-card-wrap">
-    <div class="wlc-card wlc-chavo level-card lc-havo" onclick="chooseLevel('havo')">
-      <div class="wlc-card-glow"></div>
-      <div class="wlc-card-hd">
-        <div class="wlc-card-lvl">HAVO</div>
-        <span class="wlc-card-pill">12 vakken</span>
-      </div>
-      <ul class="wlc-card-list">
-        <li>Alle CE-domeinen + samenvattingen</li>
-        <li>Snelle quiz, flashcards &amp; race mode</li>
-        <li>Echte eindexamens 2019–2025</li>
-        <li>Cijfercalculator, streak &amp; leaderboard</li>
-      </ul>
-      <div class="wlc-card-btn"><span class="wlc-card-btn-inner">HAVO starten <span>→</span></span></div>
-    </div>
-    </div>
-
-    <!-- VMBO GL/TL -->
-    <div class="wlc-card-wrap wlc-cvmbo-wrap">
-    <div class="wlc-card wlc-cvmbo level-card lc-vmbo" onclick="chooseLevel('vmbo')">
-      <div class="wlc-card-glow"></div>
-      <div class="wlc-card-hd">
-        <div class="wlc-card-lvl">VMBO GL/TL</div>
-        <span class="wlc-card-pill">12 vakken</span>
-      </div>
-      <ul class="wlc-card-list">
-        <li>Duizenden oefenvragen + samenvattingen</li>
-        <li>Snelle quiz, flashcards &amp; race mode</li>
-        <li>Echte eindexamens 2019–2025</li>
-        <li>Cijfercalculator, streak &amp; leaderboard</li>
-      </ul>
-      <div class="wlc-card-btn"><span class="wlc-card-btn-inner">VMBO starten <span>→</span></span></div>
-    </div>
-    </div>
-
+  <h2 class="wlc-pick-lbl">Kies je niveau</h2>
+  <div class="wlc-lvls">
+    <button class="wlc-lvl wlc-lvl-vwo level-card lc-vwo" onclick="chooseLevel('vwo')">
+      <span class="wlc-lvl-naam">VWO</span>
+      <span class="wlc-lvl-info">16 vakken</span>
+      <span class="wlc-lvl-pijl" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </button>
+    <button class="wlc-lvl wlc-lvl-havo level-card lc-havo" onclick="chooseLevel('havo')">
+      <span class="wlc-lvl-naam">HAVO</span>
+      <span class="wlc-lvl-info">12 vakken</span>
+      <span class="wlc-lvl-pijl" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </button>
+    <button class="wlc-lvl wlc-lvl-vmbo level-card lc-vmbo" onclick="chooseLevel('vmbo')">
+      <span class="wlc-lvl-naam">VMBO</span>
+      <span class="wlc-lvl-info">GL en TL · 12 vakken</span>
+      <span class="wlc-lvl-pijl" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </button>
   </div>
 
   <!-- FOOTER -->

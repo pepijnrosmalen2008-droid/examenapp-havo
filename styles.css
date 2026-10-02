@@ -10217,3 +10217,38 @@ html .theme-btn svg{width:18px;height:18px;stroke-width:1.9;transition:transform
 html .theme-btn:active svg{transform:rotate(-25deg)}
 @media(prefers-reduced-motion:reduce){html .theme-btn svg{transition:none}}
 html .hnav-icon-btn.theme-btn{width:36px!important;height:36px!important;border-radius:50%!important;color:var(--dk)}
+
+/* ═══════ NIVEAUKEUZE: DRIE DUIDELIJKE KNOPPEN ═══════
+   Geen prijskaartjes met vinkjeslijsten en gloed, maar per niveau één vlak in
+   de niveaukleur met een pijl. 'Vorige keuze' (init.js) staat er als tekst in. */
+html #sc-welcome .wlc-pick-lbl{font-family:var(--font-head);font-size:20px;font-weight:700;letter-spacing:-.01em;text-transform:none;color:#fff;text-align:center;margin:0 0 18px}
+html #sc-welcome .wlc-lvls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:960px;margin:0 auto 14px}
+html #sc-welcome .wlc-lvl{--lv:#3b82f6;position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:1fr auto;column-gap:16px;text-align:left;padding:24px 22px 22px;min-height:172px;border-radius:20px;border:1px solid color-mix(in srgb,var(--lv) 38%,transparent);background:color-mix(in srgb,var(--lv) 13%,#0b0c15);color:#fff;cursor:pointer;font:inherit;box-shadow:none;transition:background .2s,border-color .2s,transform .15s}
+html #sc-welcome .wlc-lvl-vwo{--lv:#8b5cf6}
+html #sc-welcome .wlc-lvl-havo{--lv:#3b82f6}
+html #sc-welcome .wlc-lvl-vmbo{--lv:#14b8a6}
+html #sc-welcome .wlc-lvl-naam{grid-column:1;grid-row:1;align-self:start;font-family:var(--font-head);font-weight:800;font-size:52px;line-height:1;letter-spacing:-.04em;color:#fff}
+/* De niveaunamen houden hun eigen kleur en zachte, ademende gloed. */
+html #sc-welcome .wlc-lvl-vwo .wlc-lvl-naam{color:#a78bfa;text-shadow:0 0 32px rgba(167,139,250,.5);animation:glowPulseV 3s ease-in-out infinite}
+html #sc-welcome .wlc-lvl-havo .wlc-lvl-naam{color:#3b82f6;text-shadow:0 0 32px rgba(59,130,246,.5);animation:glowPulseO 3s ease-in-out infinite}
+html #sc-welcome .wlc-lvl-vmbo .wlc-lvl-naam{color:#2dd4bf;text-shadow:0 0 32px rgba(45,212,191,.5);animation:glowPulseM 3s ease-in-out infinite}
+html #sc-welcome .wlc-lvl-info{grid-column:1;grid-row:2;align-self:end;font-size:15px;font-weight:500;color:rgba(255,255,255,.68)}
+html #sc-welcome .wlc-lvl-pijl{grid-column:2;grid-row:2;align-self:end;width:44px;height:44px;border-radius:50%;background:var(--lv);display:grid;place-items:center;transition:transform .2s}
+html #sc-welcome .wlc-lvl-pijl svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+html #sc-welcome .wlc-lvl:hover{background:color-mix(in srgb,var(--lv) 22%,#0b0c15);border-color:color-mix(in srgb,var(--lv) 70%,transparent)}
+html #sc-welcome .wlc-lvl:hover .wlc-lvl-pijl{transform:translateX(3px)}
+html #sc-welcome .wlc-lvl:active{transform:scale(.985)}
+html #sc-welcome .wlc-lvl:focus-visible{outline:2px solid var(--lv);outline-offset:3px}
+html #sc-welcome .wlc-lvl.lc-active{box-shadow:none!important;border-color:color-mix(in srgb,var(--lv) 85%,transparent)!important}
+html #sc-welcome .wlc-lvl .level-prev-tag{position:absolute!important;top:26px;right:22px;left:auto;bottom:auto;transform:none!important;font-size:12.5px!important;font-weight:600!important;color:rgba(255,255,255,.62)!important;background:none!important;border:0!important;padding:0!important;box-shadow:none!important;letter-spacing:0!important;text-transform:none!important}
+@media(max-width:760px){
+  html #sc-welcome .wlc-lvls{grid-template-columns:1fr;gap:10px;max-width:520px}
+  html #sc-welcome .wlc-lvl{min-height:0;grid-template-rows:auto auto;padding:18px 18px 16px;border-radius:18px}
+  html #sc-welcome .wlc-lvl-naam{font-size:36px}
+  html #sc-welcome .wlc-lvl-info{margin-top:6px;font-size:14px}
+  html #sc-welcome .wlc-lvl-pijl{grid-row:1/span 2;align-self:center;width:40px;height:40px}
+  html #sc-welcome .wlc-lvl .level-prev-tag{top:20px;right:72px}
+}
+@media(prefers-reduced-motion:reduce){html #sc-welcome .wlc-lvl,html #sc-welcome .wlc-lvl-pijl{transition:none}html #sc-welcome .wlc-lvl-naam{animation:none!important}}
+html #sc-welcome .wlc-hero{padding-bottom:48px}
+@media(max-width:760px){html #sc-welcome .wlc-hero{padding-bottom:32px}}
