@@ -744,9 +744,27 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
   const _bounced = _sessArr.filter(s=>!s.act).length;
   const _bouncePct = _sessN?Math.round(_bounced/_sessN*100):0;
   const _convPct = 100-_bouncePct;
-  const _exitTop = Object.entries(_exitScreens).sort((a,b)=>b[1]-a[1]).slice(0,10);
-  const _exitOnbPct = _exitTotal?Math.round(_exitOnbFalse/_exitTotal*100):0;
+  // Vertrekken per persoon, alleen echte bezoekers. Een exit-event vuurt bij elk
+  // tabblad-wissel of schermvergrendeling, dus per apparaat-dag telt alleen het
+  // laatste. 'Mens' = apparaat met een echte interactie (funnel) of een activiteit.
+  const _mens=new Set(), _deed=new Set(), _lastExit={};
+  ev.forEach(e=>{ const m=e.meta||{}; const did=m.did; if(!did) return;
+    if(e.event_type==='funnel'&&['interact','level','home','action'].includes(m.step)) _mens.add(did);
+    if((e.event_type==='funnel'&&m.step==='action')||_ACT.has(e.event_type)){ _mens.add(did); _deed.add(did); }
+    if(e.event_type==='exit'){ const k=_skey(did,e.created_at); const o=_lastExit[k]; if(!o||String(e.created_at)>String(o.ca)) _lastExit[k]={did,ca:e.created_at,m}; } });
+  const _hExits=Object.values(_lastExit).filter(x=>_mens.has(x.did));
+  const _hScr={}; _hExits.forEach(x=>{ const sc=x.m.screen||'?'; _hScr[sc]=(_hScr[sc]||0)+1; });
+  const _hExitN=_hExits.length;
+  const _exitTop = Object.entries(_hScr).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const _hDev={}; _hExits.forEach(x=>{ (_hDev[x.did]=_hDev[x.did]||[]).push(x.m); });
+  const _hDevN=Object.keys(_hDev).length;
+  const _INTRO=new Set(['sc-home','sc-welcome','onboarding']);
+  // Afgehaakt in de intro: intro nooit af, alleen weggegaan op het intro-scherm, en nooit iets gedaan.
+  const _introWeg=Object.entries(_hDev).filter(([d,ms])=>!_deed.has(d)&&ms.every(m=>m.onboardDone===false&&_INTRO.has(m.screen))).length;
+  const _introOver=Object.entries(_hDev).filter(([d,ms])=>_deed.has(d)&&ms.every(m=>m.onboardDone===false)).length;
+  const _exitOnbPct = _hDevN?Math.round(_introWeg/_hDevN*100):0;
   const _exitAvgSec = _exitSecN?Math.round(_exitSecSum/_exitSecN):null;
+  const _botExits = ev.filter(e=>e.event_type==='exit'&&e.meta&&e.meta.did&&!_mens.has(e.meta.did)).length;
   const _bounceCol = _bouncePct>=60?'var(--red)':_bouncePct>=40?'var(--orange,#f59e0b)':'var(--green)';
 
   // ── Ingang-trechter (funnel-events, bot-gefilterd) ──
@@ -795,15 +813,17 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
           : `De meesten die openen doen ook iets. De grootste winst zit in het ophogen van dit percentage en het terugbrengen van de bounce.`)
         : `Nog geen sessies in deze periode.`}
       </div>
-      <div class="panel-h" style="margin-top:14px">Op welk scherm vertrekken ze? ${_exitAvgSec!=null?`<span style="font-weight:600;color:var(--muted)">gem. ${_exitAvgSec}s op dat scherm</span>`:''}</div>
-      ${_exitTotal? `
-        ${_exitTop.map(([scr,n])=>{const pct=Math.round(n/_exitTotal*100);return `
+      <div class="panel-h" style="margin-top:14px">Op welk scherm vertrekken ze? <span style="font-weight:600;color:var(--muted)">laatste scherm per bezoek, alleen echte bezoekers</span></div>
+      ${_hExitN? `
+        ${_exitTop.map(([scr,n])=>{const pct=Math.round(n/_hExitN*100);return `
           <div style="display:flex;align-items:center;gap:10px;padding:6px 2px">
             <div style="flex:0 0 130px;font-size:13px;color:var(--fg)">${_scrName(scr)}</div>
             <div style="flex:1;height:10px;background:var(--card2);border-radius:6px;overflow:hidden"><div style="height:100%;width:${pct}%;background:var(--accent,#6366f1);border-radius:6px"></div></div>
             <div style="flex:0 0 64px;text-align:right;font-size:12px;color:var(--muted)">${n} · ${pct}%</div>
           </div>`;}).join('')}
-        <div style="font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5">Van alle vertrekken gebeurde <b style="color:${_exitOnbPct>=40?'var(--red)':'var(--fg)'}">${_exitOnbPct}%</b> vóór het afronden van de intro. ${_exitOnbPct>=40?'De intro/onboarding kost je dus bezoekers — dit is een duidelijke plek om te verbeteren.':'De intro lijkt geen grote struikelplek.'}</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5"><b style="color:${_exitOnbPct>=25?'var(--red)':'var(--fg)'}">${_introWeg} van de ${_hDevN}</b> echte bezoekers (${_exitOnbPct}%) gingen weg terwijl de intro openstond, zonder hem af te maken en zonder iets te oefenen. ${_exitOnbPct>=25?'Dat is een duidelijk lek in de intro.':_exitOnbPct>=10?'Een klein lek: de moeite waard om naar te kijken, maar niet de grootste.':'De intro kost weinig bezoekers.'}
+          ${_introOver?` ${_introOver} anderen maakten de intro niet af maar oefenden wel (vaak binnengekomen via een vak-link).`:''}
+          <br><span style="opacity:.75">Geteld per bezoeker: wisselen van tabblad of het scherm vergrendelen telt niet als vertrek. ${_botExits>0?_botExits+' vertrekken van bots of bezoekers zonder een enkele tik zijn weggelaten.':''}</span></div>
       ` : `<div style="font-size:12px;color:var(--muted);padding:6px 2px;line-height:1.5">Nog geen exit-data. Vanaf deze update houdt Slagio bij op welk scherm bezoekers de site verlaten (en of ze de intro al af hadden). Kom hier over een dag terug voor de eerste inzichten.</div>`}
     </div>`;
 
