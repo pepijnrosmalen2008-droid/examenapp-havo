@@ -38,7 +38,13 @@ function openVak(id,_noHash){
   document.querySelectorAll('.exam-meta,.yt-card,.grade-panel,.ce-archief-card').forEach(el=>el.remove());
   // Exam metadata
   let metaHtml='<div class="exam-meta">';
-  if(ST.vak.exDatum)metaHtml+=`<span class="em-chip em-date">📅 ${ST.vak.exDatum.split('-').reverse().join('-')} · ${ST.vak.exTijd}</span>`;
+  // Examendatum uit het rooster van het komende examenjaar (vak.exDatum is nog
+  // het vorige jaar); een datum die al voorbij is tonen we niet.
+  {
+    const _rs=(typeof EXAM_SCHEDULE_2027!=='undefined')?EXAM_SCHEDULE_2027.find(e=>e.vakId===ST.vak.id&&(!e.niveau||e.niveau===APP_LEVEL)):null;
+    const _dat=_rs?_rs.datum:ST.vak.exDatum, _tijd=_rs?_rs.tijd:ST.vak.exTijd;
+    if(_dat&&new Date(_dat+'T23:59:59')>new Date())metaHtml+=`<span class="em-chip em-date">📅 ${_dat.split('-').reverse().join('-')} · ${_tijd}</span>`;
+  }
   if(ST.vak.exDuur)metaHtml+=`<span class="em-chip">⏱ ${ST.vak.exDuur}</span>`;
   if(ST.vak.hulpmiddelen)metaHtml+=`<span class="em-chip">📋 ${ST.vak.hulpmiddelen}</span>`;
   metaHtml+='</div>';
