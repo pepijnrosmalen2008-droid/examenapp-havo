@@ -284,7 +284,7 @@ function arcWerelden(){
   return `<div class="arc-werelden">
     <button class="arc-wereld arc-w-clash" onclick="clashOpen()">
       <span class="arc-w-img" aria-hidden="true"></span>
-      <span class="arc-w-t"><small>Kaartgevecht in 3D</small><b>Slagio Clash</b><span>Goede antwoorden geven kennis. Met kennis zet je kaarten in.</span></span>
+      <span class="arc-w-t"><small>Kaartgevecht</small><b>Slagio Clash</b><span>Goede antwoorden geven kennis. Met kennis zet je kaarten in.</span></span>
       <span class="arc-w-meta">${bekers?`<i class="arc-w-beker"></i>${arcNf(bekers,0)} bekers`:'Nieuw'}</span>
     </button>
     <button class="arc-wereld arc-w-kd" onclick="kingdomOpen()">
@@ -294,7 +294,7 @@ function arcWerelden(){
     </button>
   </div>`;
 }
-// Clash laadt pas als je hem opent (en three.js daarna pas binnen clash.js).
+// Clash laadt pas als je hem opent (2D-canvas, geen extra bibliotheken).
 function clashOpen(){
   if(typeof openClash==='function'){openClash();return;}
   if(ARC._clLaadt)return;ARC._clLaadt=true;
