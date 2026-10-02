@@ -10288,3 +10288,253 @@ html #sc-welcome .wlc-hero{padding-bottom:48px}
 .arc-intro-art .a2-art svg{width:100%!important;height:100%!important;filter:none!important;animation:none!important}
 @media(prefers-reduced-motion:reduce){.a2-bom-svg .a2-vonkje,.a2-bom-svg.krit .a2-scherm,.a2-boss-svg .a2-boss,.a2-boss-svg .a2-stoom{animation:none}}
 .a3-boss.a2{position:absolute;inset:0}
+
+/* ═══════ ARCADE IN VONK-STIJL: ALLE SPELSCHERMEN ═══════
+   Licht (of donker met de app mee), effen kleuren, geen verloop of gloed.
+   Knoppen en kaarten hebben een stevige 'lip' (donkere onderrand) en zakken in
+   als je drukt. Elke game heeft één accentkleur met een eigen schaduwtint. */
+#arc-stage{--ink:#3C3C3C;--mu2:#777;--card:#fff;--line:#E5E5E5;--lip:#E5E5E5;--bg:#fff;--acc-sh:color-mix(in srgb,var(--acc) 80%,#000);
+  background:var(--bg)!important;color:var(--ink)}
+html.dark #arc-stage{--ink:#F1F7FB;--mu2:#9BAAB3;--card:#1F2B31;--line:#37464F;--lip:#37464F}
+#arc-stage.arc-t-bom{--acc:#FF4B4B;--acc-sh:#D93636;--accink:#fff;--bg:#FFF4F2}
+#arc-stage.arc-t-boss{--acc:#A560E8;--acc-sh:#8549C2;--accink:#fff;--bg:#F6F0FF}
+#arc-stage.arc-t-risico{--acc:#FFC800;--acc-sh:#E6A800;--accink:#3C3C3C;--bg:#EEFAF1}
+#arc-stage.arc-t-zwak{--acc:#FF9600;--acc-sh:#E07F00;--accink:#fff;--bg:#FFF5EA}
+#arc-stage.arc-t-sorteer{--acc:#58CC02;--acc-sh:#46A302;--accink:#fff;--bg:#F2FBEA}
+#arc-stage.arc-t-val{--acc:#1CB0F6;--acc-sh:#1593CF;--accink:#fff;--bg:#EEF8FE}
+#arc-stage.arc-t-clash{--acc:#1CB0F6;--acc-sh:#1593CF;--accink:#fff;--bg:#EEF8FE}
+html.dark #arc-stage.arc-t-bom{--bg:#211717}html.dark #arc-stage.arc-t-boss{--bg:#1B1528}html.dark #arc-stage.arc-t-risico{--bg:#122219}
+html.dark #arc-stage.arc-t-zwak{--bg:#231A10}html.dark #arc-stage.arc-t-sorteer{--bg:#152114}html.dark #arc-stage.arc-t-val,html.dark #arc-stage.arc-t-clash{--bg:#121F27}
+
+/* Gedeelde onderdelen */
+#arc-stage .arc-x{background:transparent;color:var(--mu2);font-size:19px;width:40px;height:40px;flex-basis:40px;transition:background .15s}
+#arc-stage .arc-x:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}
+#arc-stage .arc-top-t{color:var(--ink)}
+#arc-stage .arc-go{background:var(--acc);background-image:none;color:var(--accink);border-radius:16px;box-shadow:0 5px 0 var(--acc-sh);font-family:var(--font-head);font-weight:800;font-size:17px;letter-spacing:.01em;
+  margin-bottom:5px;transition:transform .08s ease,box-shadow .08s ease,filter .15s;outline:none}
+#arc-stage .arc-go:hover{filter:brightness(1.05)}
+#arc-stage .arc-go:active{transform:translateY(5px);box-shadow:0 0 0 var(--acc-sh)}
+#arc-stage .arc-go:focus-visible{outline:3px solid color-mix(in srgb,var(--acc) 40%,transparent);outline-offset:4px}
+#arc-stage .arc-ghost{color:var(--mu2);font-weight:700}
+#arc-stage .arc-laden span{border-color:var(--line);border-top-color:var(--acc)}
+#arc-stage .arc-intro-k,#arc-stage .arc-res-k{color:var(--acc-sh)}
+#arc-stage .arc-intro-h,#arc-stage .arc-res-big{color:var(--ink)}
+#arc-stage .arc-intro-p,#arc-stage .arc-res-sub,#arc-stage .arc-rec{color:var(--mu2)}
+#arc-stage .arc-q{background:var(--card);border:2px solid var(--line);border-radius:20px;box-shadow:none}
+#arc-stage .arc-q-meta{color:var(--mu2)}
+#arc-stage .arc-q-v{color:var(--ink)}
+#arc-stage .arc-opt{background:var(--card);border:2px solid var(--line);border-radius:16px;box-shadow:0 4px 0 var(--lip);color:var(--ink);margin-bottom:2px;
+  transition:transform .08s ease,box-shadow .08s ease,background .15s,border-color .15s,color .15s}
+@media(hover:hover){#arc-stage .arc-opt:hover{background:color-mix(in srgb,var(--ink) 3%,var(--card))}}
+#arc-stage .arc-opt:active{transform:translateY(3px);box-shadow:0 1px 0 var(--lip)}
+#arc-stage .arc-opt i{background:transparent;border:2px solid var(--line);color:var(--mu2);border-radius:9px}
+#arc-stage .arc-opt.goed{background:#D7FFB8;border-color:#58CC02;box-shadow:0 4px 0 #58A700;color:#4A9200;animation:a2Goed .45s cubic-bezier(.3,1.6,.5,1)}
+#arc-stage .arc-opt.goed i{background:#58CC02;border-color:#58CC02;color:#fff}
+#arc-stage .arc-opt.fout{background:#FFDFE0;border-color:#FF4B4B;box-shadow:0 4px 0 #EA2B2B;color:#EA2B2B}
+#arc-stage .arc-opt.fout i{background:#FF4B4B;border-color:#FF4B4B;color:#fff}
+html.dark #arc-stage .arc-opt.goed{background:color-mix(in srgb,#58CC02 16%,var(--card));color:#79D634;box-shadow:0 4px 0 #3C7A0A}
+html.dark #arc-stage .arc-opt.fout{background:color-mix(in srgb,#FF4B4B 16%,var(--card));color:#FF7878;box-shadow:0 4px 0 #8C2A2A}
+@keyframes a2Goed{0%{transform:scale(1)}35%{transform:scale(1.035)}100%{transform:scale(1)}}
+#arc-stage .arc-uitleg{background:#FFDFE0;color:#3C3C3C;border-radius:14px}
+#arc-stage .arc-uitleg.goed{background:#D7FFB8}
+#arc-stage .arc-uitleg b{color:inherit}
+html.dark #arc-stage .arc-uitleg{background:color-mix(in srgb,#FF4B4B 16%,var(--card));color:var(--ink)}
+html.dark #arc-stage .arc-uitleg.goed{background:color-mix(in srgb,#58CC02 16%,var(--card))}
+/* Aftellen: een grote cijferknop die op je af springt. */
+#arc-stage .arc-cd{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:none;-webkit-backdrop-filter:none}
+#arc-stage .arc-cd-ring circle{stroke:var(--acc);filter:none;stroke-width:9}
+#arc-stage .arc-cd-ring b{color:var(--acc);text-shadow:0 6px 0 var(--acc-sh)}
+#arc-stage .arc-cd-ring.go b{color:var(--acc);font-size:66px}
+/* Uitslag */
+#arc-stage .arc-res-stats{background:transparent;gap:8px;padding:0}
+#arc-stage .arc-res-stats div{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:10px 4px;box-shadow:0 4px 0 var(--lip)}
+#arc-stage .arc-res-stats div+div{border-left:2px solid var(--line)}
+#arc-stage .arc-res-stats b{color:var(--ink)}
+#arc-stage .arc-res-stats small{color:var(--mu2)}
+#arc-stage .arc-res-rec{background:var(--card);border:2px solid var(--line);color:var(--mu2)}
+#arc-stage .arc-res-rec.new{background:#FFC800;border-color:#FFC800;color:#3C3C3C;box-shadow:0 4px 0 #E6A800}
+#arc-stage .arc-xp-chip{background:#FFC800;color:#3C3C3C;box-shadow:0 4px 0 #E6A800}
+#arc-stage .arc-res-xp small{color:var(--mu2)}
+#arc-stage .arc-res-leer{background:var(--card);border:2px solid var(--line);color:var(--mu2)}
+
+/* 💣 Bom: een stevige grijze kist op een lichte vloer. */
+#arc-stage .bom-case{background:#4B4F57;border:0;border-radius:24px;box-shadow:0 6px 0 #33363c}
+#arc-stage .bom-bolts i{background:#6B7079;box-shadow:none}
+#arc-stage .bom-clock{background:#1d1f23;color:#FF4B4B;text-shadow:none;box-shadow:none;border-radius:12px}
+#arc-stage .bom-clock.tik{animation:a2Tik .25s ease-out}
+#arc-stage .bom-clock.kritiek.tik{animation:a2Tik .25s ease-out,bomBlink .5s steps(2) infinite}
+@keyframes a2Tik{from{transform:scale(1.07)}}
+#arc-stage .bom-strikes i{background:#33363c;box-shadow:none}
+#arc-stage .bom-strikes i.on{background:#FF4B4B;box-shadow:none;animation:a2Pop .35s cubic-bezier(.3,1.6,.5,1)}
+@keyframes a2Pop{0%{transform:scale(.4)}60%{transform:scale(1.3)}100%{transform:scale(1)}}
+#arc-stage .bom-dossier{background:#FFF4C2;color:#3C3C3C;box-shadow:0 4px 0 #EAD48A;border-radius:8px 18px 18px 18px}
+#arc-stage .bom-ctx{color:#7a6a3a}
+#arc-stage .bom-mod{background:#3a3d44;border:0;border-radius:16px;opacity:.55}
+#arc-stage .bom-mod.actief{opacity:1;box-shadow:inset 0 0 0 3px #FFC800}
+#arc-stage .bom-mod.klaar{opacity:.85;box-shadow:inset 0 0 0 3px #58CC02}
+#arc-stage .bom-mod header{color:#B9BEC6}
+#arc-stage .bom-led{background:#6b2a2a;box-shadow:none}
+#arc-stage .bom-mod.actief .bom-led{background:#FFC800;box-shadow:none}
+#arc-stage .bom-mod.klaar .bom-led{background:#58CC02;box-shadow:none}
+#arc-stage .bom-opt{background:#5a5f68;border:0;color:#fff;border-radius:12px;box-shadow:0 4px 0 #2f3237;margin-bottom:4px;transition:transform .08s,box-shadow .08s}
+#arc-stage .bom-opt:not(:disabled):active{transform:translateY(3px);box-shadow:0 1px 0 #2f3237}
+#arc-stage .bom-opt.goed{background:#58CC02;box-shadow:0 4px 0 #46A302;animation:a2Goed .45s cubic-bezier(.3,1.6,.5,1)}
+#arc-stage .bom-opt.fout{background:#FF4B4B;box-shadow:0 4px 0 #D93636;opacity:1}
+#arc-stage .bom-ok{background:#58CC02}
+#arc-stage .bom-ok-k{font-family:var(--font-head);color:#fff;text-shadow:0 5px 0 #46A302;letter-spacing:.04em;font-size:44px}
+#arc-stage .bom-ok-t,#arc-stage .bom-ok-s{color:#fff}
+#arc-stage .bom-ok-scan{display:none}
+#arc-stage .bom-ok .arc-go{background:#fff;color:#46A302;box-shadow:0 5px 0 #46A302}
+#arc-stage .bom-boem{background:#3C3C3C}
+#arc-stage .bom-boem-t{color:#FFC800;text-shadow:0 4px 0 #E07F00;font-size:28px}
+#arc-stage .bom-boem-u{color:rgba(255,255,255,.8)}
+#arc-stage .bom-schok i{border-color:#FFC800}
+#arc-stage .bom-schok i:nth-child(2){border-color:#FF9600}#arc-stage .bom-schok i:nth-child(3){border-color:#fff}
+
+/* 👹 Examenboss */
+#arc-stage.arc-t-boss.boss-hit{animation:a2BossHit .45s}
+@keyframes a2BossHit{0%,100%{box-shadow:inset 0 0 0 0 #FF4B4B}30%{box-shadow:inset 0 0 0 10px #FF4B4B}}
+#arc-stage .boss-ghost{background:var(--card);border:2px solid var(--line);border-radius:16px}
+#arc-stage .boss-ghost-av{background:color-mix(in srgb,var(--ink) 6%,transparent);opacity:1;filter:none}
+#arc-stage .boss-ghost small{color:var(--mu2)}
+#arc-stage .boss-bar{background:color-mix(in srgb,var(--ink) 11%,transparent);box-shadow:none}
+#arc-stage .boss-bar i{background:#FF4B4B}
+#arc-stage .boss-bar i.spoor{background:#FFB3B3!important}
+#arc-stage .boss-bar.mini i{background:#AFAFAF}
+#arc-stage .boss-bar.me i{background:#58CC02}
+#arc-stage .boss-bar s.fase{background:var(--bg)}
+#arc-stage .boss-hp-l span{color:var(--mu2)}
+#arc-stage .boss-combo{color:#FF9600}
+#arc-stage .boss-pop{color:#fff;text-shadow:0 3px 0 #D93636,0 -2px 0 #D93636,2px 0 0 #D93636,-2px 0 0 #D93636}
+#arc-stage .boss-pop.crit{color:#FFC800;text-shadow:0 3px 0 #E07F00,0 -2px 0 #E07F00,2px 0 0 #E07F00,-2px 0 0 #E07F00}
+#arc-stage .boss-slag{background:color-mix(in srgb,var(--ink) 9%,transparent);box-shadow:none}
+#arc-stage .boss-slag i{background:#FF4B4B}
+#arc-stage .boss-slag span{color:var(--ink)}
+#arc-stage .boss-slag.bijna{animation:a2Bijna .5s infinite}
+@keyframes a2Bijna{50%{box-shadow:inset 0 0 0 3px #FF4B4B}}
+#arc-stage .boss-super{background:var(--card);border:2px solid var(--line);color:var(--mu2);box-shadow:0 3px 0 var(--lip)}
+#arc-stage .boss-super-e i{background:var(--line)}
+#arc-stage .boss-super-e i.vol{background:#FFC800;box-shadow:none}
+#arc-stage .boss-super.klaar{background:#FFC800;border-color:#FFC800;color:#3C3C3C;box-shadow:0 4px 0 #E6A800}
+#arc-stage .boss-super.klaar .boss-super-e i{background:#3C3C3C}
+#arc-stage .boss-super.aan{background:#FFF4C2;border-color:#FFC800;color:#3C3C3C}
+#arc-stage .boss-zeg{background:var(--card);color:var(--ink);border:2px solid var(--line);box-shadow:0 3px 0 var(--lip)}
+#arc-stage .boss-zeg::after{border-top-color:var(--line)}
+#arc-stage .boss-orb{background:#FFC800;box-shadow:0 0 0 5px #FF9600,0 0 0 9px #fff}
+#arc-stage .boss-klauw i{background:#FF4B4B;opacity:.85;box-shadow:none}
+#arc-stage .boss-klok.kritiek,#arc-stage .val-klok.kritiek{color:#FF4B4B}
+
+/* 🎰 Risico Run */
+#arc-stage .risk-hart{color:#FF4B4B}
+#arc-stage .risk-meters>div{background:var(--card);border:2px solid var(--line);border-radius:16px;box-shadow:0 4px 0 var(--lip)}
+#arc-stage .risk-meters small{color:var(--mu2)}
+#arc-stage .risk-meters b{color:#E6A800}
+#arc-stage .risk-pot b{color:var(--ink)}
+#arc-stage .risk-pot span{background:#FFC800;color:#3C3C3C}
+#arc-stage .risk-meters b.tel{animation:a2Tel .45s cubic-bezier(.3,1.6,.5,1)}
+@keyframes a2Tel{40%{transform:scale(1.25)}}
+#arc-stage .risk-teller,#arc-stage .risk-uitleg,#arc-stage .risk-beslis-h{color:var(--mu2)}
+#arc-stage .risk-kies-h{color:var(--ink)}
+#arc-stage .risk-chip{border-radius:18px;box-shadow:0 6px 0 var(--sh);margin-bottom:6px;color:#fff;background-image:none}
+#arc-stage .risk-chip:active{transform:translateY(5px);box-shadow:0 1px 0 var(--sh)}
+#arc-stage .risk-veilig{background:#58CC02;--sh:#46A302}
+#arc-stage .risk-normaal{background:#FFC800;--sh:#E6A800;color:#3C3C3C}
+#arc-stage .risk-risico{background:#FF4B4B;--sh:#D93636}
+#arc-stage .risk-inzet{box-shadow:none}
+#arc-stage .risk-inzet.risk-veilig{background:#58CC02;color:#fff}#arc-stage .risk-inzet.risk-normaal{background:#FFC800}#arc-stage .risk-inzet.risk-risico{background:#FF4B4B;color:#fff}
+#arc-stage .risk-card .arc-opt{background:var(--card)}
+#arc-stage .risk-plus{color:#FFC800;text-shadow:0 5px 0 #E6A800}
+#arc-stage .risk-beslis-b button{box-shadow:0 6px 0 var(--sh);color:#fff;background-image:none}
+#arc-stage .risk-beslis-b button:active{transform:translateY(5px);box-shadow:0 1px 0 var(--sh)}
+#arc-stage .risk-bankknop{background:#1CB0F6;--sh:#1593CF}
+#arc-stage .risk-doorknop{background:#FF9600;--sh:#E07F00}
+#arc-stage .risk-munt{background:#FFC800;box-shadow:inset 0 0 0 3px #E6A800,inset 0 -4px 0 #E6A800}
+#arc-stage .risk-bank.kluis{animation:a2Kluis .7s cubic-bezier(.3,1.6,.5,1)}
+@keyframes a2Kluis{30%{box-shadow:0 4px 0 var(--lip),0 0 0 4px #FFC800;transform:scale(1.04)}}
+
+/* 🎯 Zwakke plek */
+#arc-stage .arc-t-zwak .arc-q,#arc-stage.arc-t-zwak .arc-q{box-shadow:none}
+#arc-stage .zwak-band span{color:#E07F00;background:#FFE9CC}
+#arc-stage .zwak-steps i{background:var(--line)}
+#arc-stage .zwak-steps i.ok{background:#58CC02}#arc-stage .zwak-steps i.mis{background:#FF4B4B}
+#arc-stage .zwak-found{background:var(--card);border:2px solid var(--line);box-shadow:0 4px 0 var(--lip)}
+#arc-stage .zwak-ld b,#arc-stage .zwak-herkans{color:#E07F00}
+#arc-stage .zwak-aha{background:#FFF0DB;border:2px solid #FFD49A}
+html.dark #arc-stage .zwak-aha{background:color-mix(in srgb,#FF9600 14%,var(--card));border-color:color-mix(in srgb,#FF9600 40%,transparent)}
+html.dark #arc-stage .zwak-band span{background:color-mix(in srgb,#FF9600 20%,var(--card))}
+#arc-stage .zwak-rings.fix .zwak-ring:last-of-type{filter:none}
+#arc-stage .zwak-stempel{color:#58A700;border-color:#58CC02;background:var(--card)}
+
+/* 🧩 Sorteer */
+#arc-stage .sort-k{color:var(--acc-sh)}
+#arc-stage .sort-slots li{border:2px dashed var(--line);border-radius:14px}
+#arc-stage .sort-slots li span{background:color-mix(in srgb,var(--ink) 7%,transparent);color:var(--mu2)}
+#arc-stage .sort-slots li.vol{border:2px solid #58CC02;background:#D7FFB8;color:#4A9200;animation:a2Land .38s cubic-bezier(.3,1.6,.5,1)}
+html.dark #arc-stage .sort-slots li.vol{background:color-mix(in srgb,#58CC02 16%,var(--card));color:#79D634}
+#arc-stage .sort-slots li.vol span{background:#58CC02;color:#fff}
+@keyframes a2Land{0%{transform:translateY(-10px) scale(.96);opacity:0}60%{transform:translateY(2px) scale(1.01);opacity:1}100%{transform:none}}
+#arc-stage .sort-card{background:var(--card);border:2px solid var(--line);box-shadow:0 4px 0 var(--lip);color:var(--ink);margin-bottom:3px;transition:transform .08s,box-shadow .08s,opacity .2s}
+#arc-stage .sort-card:active{transform:translateY(3px);box-shadow:0 1px 0 var(--lip)}
+#arc-stage .sort-card.schud{box-shadow:0 4px 0 #EA2B2B;border-color:#FF4B4B}
+#arc-stage .sort-vlieg{background:#58CC02;box-shadow:0 4px 0 #46A302}
+#arc-stage .sort-slots li.glans{animation:a2Glans .6s var(--d,0ms) cubic-bezier(.3,1.6,.5,1)}
+@keyframes a2Glans{40%{transform:scale(1.04)}}
+#arc-stage .sort-ok{background:var(--card);border:2px solid var(--line);box-shadow:0 4px 0 var(--lip)}
+#arc-stage .sort-ok-r b{color:#58A700}
+
+/* 🪤 Val of waar */
+#arc-stage .val-score b{color:var(--ink)}
+#arc-stage .val-score span{color:#FF9600}
+#arc-stage .val-card{background:var(--card);color:var(--ink);border:2px solid var(--line);box-shadow:0 6px 0 var(--lip)}
+#arc-stage .val-meta,#arc-stage .val-a small{color:var(--mu2)}
+#arc-stage .val-a{background:color-mix(in srgb,var(--ink) 5%,transparent)}
+#arc-stage .val-achter{background:var(--card);border:2px solid var(--line)}
+#arc-stage .val-achter.a1{background:var(--card)}
+#arc-stage .val-stamp.ja{color:#58CC02}#arc-stage .val-stamp.nee{color:#FF4B4B}
+#arc-stage .val-card::after{box-shadow:inset 0 0 0 calc(var(--ja) * 4px) #58CC02,inset 0 0 0 calc(var(--nee) * 4px) #FF4B4B}
+#arc-stage .val-meter{background:var(--line)}
+#arc-stage .val-meter i{background:#1CB0F6}
+#arc-stage .val-meter i.vuur{background:#FF9600;animation:a2Vuur .6s ease-in-out infinite alternate}
+@keyframes a2Vuur{to{background:#FFC800}}
+#arc-stage .val-gevangen{background:#DDF4FF;border:2px solid #84D8FF;color:#3C3C3C}
+#arc-stage .val-gevangen b{color:#1593CF}
+#arc-stage .val-erin{background:#FFDFE0;border:2px solid #FFB2B2;color:#3C3C3C}
+#arc-stage .val-erin b{color:#EA2B2B}
+html.dark #arc-stage .val-gevangen{background:color-mix(in srgb,#1CB0F6 14%,var(--card));color:var(--ink)}
+html.dark #arc-stage .val-erin{background:color-mix(in srgb,#FF4B4B 14%,var(--card));color:var(--ink)}
+#arc-stage .val-knoppen button{background:var(--card);border:2px solid var(--line);box-shadow:0 5px 0 var(--lip);transition:transform .08s,box-shadow .08s}
+#arc-stage .val-knoppen button:active{transform:translateY(4px);box-shadow:0 1px 0 var(--lip)}
+#arc-stage .val-no{color:#FF4B4B}#arc-stage .val-yes{color:#58CC02}
+@media(prefers-reduced-motion:reduce){#arc-stage .arc-opt.goed,#arc-stage .bom-opt.goed,#arc-stage .sort-slots li.vol,#arc-stage .bom-strikes i.on,#arc-stage .val-meter i.vuur{animation:none}}
+/* Geen vignet of korrel meer achter de spelschermen: effen vlak. */
+#arc-stage.arc-t-bom::before,#arc-stage.arc-t-boss::before,#arc-stage.arc-t-risico::before,#arc-stage.arc-t-val::before{display:none}
+
+/* ═══════ ARCADE 2D: RUSTANIMATIES ═══════
+   Kleine, doorlopende bewegingen zodat elke scène leeft: draden wiegen, de boss
+   knippert en kijkt rond, de bovenste munt glinstert, het volgende vakje
+   knippert, de kaas wiebelt. Alles pauzeert in een hubtegel die niet in beeld is. */
+.a2-bom-svg .a2-draad{animation:a2Wieg 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 0}
+.a2-bom-svg .a2-draad[data-i="1"]{animation-delay:-.8s}.a2-bom-svg .a2-draad[data-i="2"]{animation-delay:-1.6s}
+@keyframes a2Wieg{0%,100%{transform:translateY(0)}50%{transform:translateY(2.5px)}}
+.a2-bom-svg .a2-lont{stroke-dasharray:6 4;animation:a2Lont .6s linear infinite}
+@keyframes a2Lont{to{stroke-dashoffset:-10}}
+.a2-boss-svg .a2-ogen,.a2-boss-svg .a2-ko{transform-box:fill-box;transform-origin:center}
+.a2-boss-svg .a2-ogen{animation:a2Knipper 4.8s infinite}
+@keyframes a2Knipper{0%,90%,100%{transform:scaleY(1)}93%{transform:scaleY(.08)}96%{transform:scaleY(1)}}
+.a2-boss-svg .a2-pupil{animation:a2Kijk 7s ease-in-out infinite}
+@keyframes a2Kijk{0%,18%,100%{transform:translate(0,0)}25%,42%{transform:translate(-4px,1px)}50%,68%{transform:translate(4px,-1px)}75%,90%{transform:translate(0,2px)}}
+.a2-boss-svg.ko .a2-pupil,.a2-boss-svg.ko .a2-ogen{animation:none}
+.a2-boss-svg .a2-ko-sterren .a2-draai{transform-box:view-box;transform-origin:150px 44px;animation:a2Sterren 1.6s linear infinite}
+@keyframes a2Sterren{to{transform:rotate(360deg)}}
+.a2-risico-svg .a2-glim{transform-box:fill-box;transform-origin:center;animation:a2Glim 2.4s ease-in-out infinite}
+@keyframes a2Glim{0%,60%,100%{transform:scale(0) rotate(0deg);opacity:0}75%{transform:scale(1.2) rotate(45deg);opacity:1}88%{transform:scale(.6) rotate(90deg);opacity:.9}}
+.a2-risico-svg .a2-wiel{transform-box:view-box;transform-origin:300px 115px;animation:a2Wiel 5s ease-in-out infinite}
+@keyframes a2Wiel{0%,70%,100%{transform:rotate(0deg)}78%{transform:rotate(-14deg)}86%{transform:rotate(8deg)}}
+.a2-sorteer-svg .a2-slot.volgende{animation:a2Volgende 1.3s ease-in-out infinite}
+@keyframes a2Volgende{0%,100%{fill:rgba(0,0,0,.07)}50%{fill:rgba(88,204,2,.28)}}
+.a2-val-svg .a2-kaas{transform-box:fill-box;transform-origin:50% 100%;animation:a2Kaas 3s ease-in-out infinite}
+@keyframes a2Kaas{0%,80%,100%{transform:rotate(0deg)}85%{transform:rotate(-6deg)}90%{transform:rotate(5deg)}95%{transform:rotate(-2deg)}}
+.a2-zwak-svg .a2-bord{transform-box:view-box;transform-origin:184px 16px;animation:a2Bord 5s ease-in-out infinite}
+@keyframes a2Bord{0%,100%{transform:rotate(0deg)}50%{transform:rotate(.8deg)}}
+.arc-tile:not(.live) .a2 *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.a2 *{animation:none!important}}

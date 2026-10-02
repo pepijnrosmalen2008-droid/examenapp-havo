@@ -38,6 +38,30 @@ function a2Spat(svg,x,y,kleuren,n){
     c.setAttribute('fill',kleuren[i%kleuren.length]);svg.appendChild(c);const a=Math.PI*2*i/(n||8)+Math.random()*.4,d=22+Math.random()*22;
     c.animate([{transform:'translate(0,0) scale(1)',opacity:1},{transform:`translate(${Math.cos(a)*d}px,${Math.sin(a)*d}px) scale(.3)`,opacity:0}],{duration:520+Math.random()*200,easing:'cubic-bezier(.2,.7,.3,1)'}).onfinish=()=>c.remove();}
 }
+// Een uitdijende ring (inslag, succes, fout).
+function a2Ring(svg,x,y,kleur,r,dik){
+  if(a2Stil()||!svg)return;const c=document.createElementNS('http://www.w3.org/2000/svg','circle');
+  c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',r||30);c.setAttribute('fill','none');c.setAttribute('stroke',kleur);c.setAttribute('stroke-width',dik||6);
+  a2Om(c,x,y);svg.appendChild(c);
+  c.animate([{transform:'scale(.2)',opacity:1,strokeWidth:dik||6},{transform:'scale(1)',opacity:0,strokeWidth:1}],{duration:520,easing:'cubic-bezier(.15,.75,.3,1)'}).onfinish=()=>c.remove();
+}
+// Rookwolkjes die opbollen en vervagen.
+function a2Rook(svg,x,y,n,kleur){
+  if(a2Stil()||!svg)return;const ns='http://www.w3.org/2000/svg';
+  for(let i=0;i<(n||6);i++){const c=document.createElementNS(ns,'circle');const r=10+Math.random()*12;c.setAttribute('cx',x+(Math.random()-.5)*60);c.setAttribute('cy',y+(Math.random()-.5)*30);c.setAttribute('r',r);
+    c.setAttribute('fill',kleur||'#C7C7C7');svg.appendChild(c);const dx=(Math.random()-.5)*70,dy=-30-Math.random()*50;
+    c.animate([{transform:'translate(0,0) scale(.3)',opacity:.95},{transform:`translate(${dx*.5}px,${dy*.5}px) scale(1.2)`,opacity:.8,offset:.4},{transform:`translate(${dx}px,${dy}px) scale(1.6)`,opacity:0}],
+      {duration:900+Math.random()*500,delay:i*40,easing:'cubic-bezier(.2,.7,.3,1)',fill:'backwards'}).onfinish=()=>c.remove();}
+}
+// Brokstukken (rechthoekjes) die wegvliegen en tollen.
+function a2Brok(svg,x,y,kleuren,n){
+  if(a2Stil()||!svg)return;const ns='http://www.w3.org/2000/svg';
+  for(let i=0;i<(n||8);i++){const r=document.createElementNS(ns,'rect');const w=8+Math.random()*12;r.setAttribute('x',x-w/2);r.setAttribute('y',y-4);r.setAttribute('width',w);r.setAttribute('height',8);r.setAttribute('rx',3);
+    r.setAttribute('fill',kleuren[i%kleuren.length]);a2Om(r,x,y);svg.appendChild(r);const a=Math.PI*2*i/(n||8)+Math.random()*.5,d=90+Math.random()*80,rot=(Math.random()-.5)*900;
+    r.animate([{transform:'translate(0,0) rotate(0deg)',opacity:1},{transform:`translate(${Math.cos(a)*d}px,${Math.sin(a)*d*.7+40}px) rotate(${rot}deg)`,opacity:0}],{duration:900+Math.random()*300,easing:'cubic-bezier(.15,.6,.4,1)'}).onfinish=()=>r.remove();}
+}
+// Vering: veel kleine overslagen naar een eindwaarde (voor rotaties).
+function a2Veer(a){return [0,a*1.45,a*.72,a*1.16,a*.93,a];}
 // Stervormige knal (voor 'boem' en laser-inslag).
 function a2Ster(cx,cy,r1,r2,n){let d='';for(let i=0;i<n*2;i++){const r=i%2?r2:r1,a=Math.PI*i/n-Math.PI/2;d+=(i?'L':'M')+(cx+Math.cos(a)*r).toFixed(1)+' '+(cy+Math.sin(a)*r).toFixed(1);}return d+'Z';}
 
@@ -85,21 +109,23 @@ function a2Bom(host){
   B.tijd=(sec,frac,krit)=>{if(B.uit||B.gestopt)return;const t=$a2(host,'.a2-tijd');if(t)t.textContent='00:'+String(Math.max(0,Math.round(sec))).padStart(2,'0');svg.classList.toggle('krit',!!krit);};
   B.knip=i=>{const d=$a2(host,`.a2-draad[data-i="${i}"]`);if(!d||d.dataset.uit)return;d.dataset.uit='1';const g=geo[i];
     const h1=a2Om(d.querySelector('.h1'),g.p.x,g.p.y),h2=a2Om(d.querySelector('.h2'),g.q.x,g.q.y);
-    const rot=(el,a)=>{el.style.transform=`rotate(${a}deg)`;a2Anim(el,[{transform:'rotate(0deg)'},{transform:`rotate(${a*1.3}deg)`},{transform:`rotate(${a}deg)`}],{duration:420,easing:'cubic-bezier(.2,.8,.3,1)'});};
-    rot(h1,24);rot(h2,-24);a2Spat(svg,g.m.x,g.m.y,['#fff',A2K.geel[0],A2_BOM_DRAAD[i]],9);
+    const rot=(el,a)=>{el.style.transform=`rotate(${a}deg)`;a2Anim(el,a2Veer(a).map(v=>({transform:`rotate(${v}deg)`})),{duration:900,easing:'ease-out'});};
+    rot(h1,26);rot(h2,-26);a2Spat(svg,g.m.x,g.m.y,['#fff',A2K.geel[0],A2_BOM_DRAAD[i]],10);a2Ring(svg,g.m.x,g.m.y,'#fff',22,4);
     const led=$a2(host,`.a2-led[data-i="${i}"]`);if(led)led.setAttribute('fill',A2K.groen[0]);};
-  B.fout=()=>{if(B.uit)return;a2Schud($a2(host,'.a2-bundel'),7,380);a2Schud($a2(host,'.a2-klok'),5,380);
+  B.fout=()=>{if(B.uit)return;a2Schud($a2(host,'.a2-bundel'),7,380);a2Schud($a2(host,'.a2-klok'),5,380);a2Ring(svg,334,119,A2K.rood[0],60,8);
     const s=$a2(host,'.a2-scherm');a2Anim(s,[{fill:A2K.rood[0]},{fill:'#1d1f23'}],{duration:420});};
   B.ok=()=>{B.gestopt=true;svg.classList.remove('krit');const s=$a2(host,'.a2-scherm'),t=$a2(host,'.a2-tijd');
     if(s)s.setAttribute('fill',A2K.groen[0]);if(t){t.textContent='VEILIG';t.setAttribute('fill','#fff');t.setAttribute('font-size','15');}
-    const b=$a2(host,'.a2-bundel');a2Anim(b,[{transform:'translateY(0)'},{transform:'translateY(-10px)'},{transform:'translateY(0)'}],{duration:420,easing:'cubic-bezier(.3,1.6,.5,1)'});
+    const b=a2Om($a2(host,'.a2-bundel'),134,186);a2Anim(b,[{transform:'translateY(0) scale(1,1)'},{transform:'translateY(2px) scale(1.06,.9)',offset:.18},{transform:'translateY(-16px) scale(.96,1.06)',offset:.45},{transform:'translateY(0) scale(1.04,.95)',offset:.75},{transform:'translateY(0) scale(1,1)'}],{duration:640,easing:'ease-out'});
+    a2Ring(svg,334,119,A2K.groen[0],70,8);
     const v=$a2(host,'.a2-vonkje'),l=$a2(host,'.a2-lont');if(v)v.style.display='none';if(l)l.setAttribute('stroke-dasharray','2 6');
     a2Spat(svg,334,119,[A2K.groen[0],A2K.geel[0],'#fff'],12);};
   B.boem=()=>{if(B.uit)return;B.uit=true;svg.classList.remove('krit');
     ['.a2-bundel','.a2-klok'].forEach(s=>{const el=$a2(host,s);if(el)el.style.opacity='0';});host.querySelectorAll('.a2-draad').forEach(d=>d.style.opacity='0');
     const k=a2Om($a2(host,'.a2-knal'),200,112);if(!k)return;k.setAttribute('opacity','1');
-    a2Anim(k,[{transform:'scale(.1) rotate(-12deg)'},{transform:'scale(1.12) rotate(4deg)'},{transform:'scale(1) rotate(0deg)'}],{duration:520,easing:'cubic-bezier(.2,.9,.3,1.2)'});
-    a2Schud(svg,9,600);};
+    a2Anim(k,[{transform:'scale(.1) rotate(-12deg)'},{transform:'scale(1.18) rotate(5deg)',offset:.4},{transform:'scale(.96) rotate(-2deg)',offset:.7},{transform:'scale(1) rotate(0deg)'}],{duration:620,easing:'cubic-bezier(.2,.9,.3,1)'});
+    a2Ring(svg,200,112,A2K.geel[0],190,10);a2Brok(svg,200,112,[A2K.rood[0],A2K.papier[0],A2K.inkt[0],A2K.rood[1]],14);setTimeout(()=>a2Rook(svg,200,120,9,'#9a9a9a'),160);
+    a2Schud(svg,10,700);};
   return B;
 }
 
@@ -131,6 +157,7 @@ function a2BossSvg(kleur,code){
       <path class="a2-brauw" d="M102 78L142 92M198 78L158 92" stroke="${I[1]}" stroke-width="9" stroke-linecap="round"/>
       <path class="a2-mond" d="M116 136Q150 170 184 136Z" fill="${I[1]}"/><path d="M124 136L131 147L138 136ZM162 136L169 147L176 136Z" fill="#fff"/>
       <path class="a2-flits" d="${body}" fill="#fff" opacity="0"/>
+      <g class="a2-ko-sterren" opacity="0"><g class="a2-draai">${[0,1,2].map(i=>{const a=i*Math.PI*2/3;return `<path d="${a2Ster(150+Math.cos(a)*48,44+Math.sin(a)*12,9,4,5)}" fill="${A2K.geel[0]}"/>`;}).join('')}</g></g>
     </g>
     <g class="a2-laser" opacity="0"><rect x="134" y="104" width="32" height="140" rx="16" fill="${A2K.geel[0]}"/><rect x="143" y="104" width="14" height="140" rx="7" fill="#fff"/>
       <path d="${a2Ster(150,108,52,26,10)}" fill="${A2K.geel[0]}"/><circle cx="150" cy="108" r="16" fill="#fff"/></g>`,'a2-boss-svg',`--a2k:${k}`);
@@ -142,7 +169,7 @@ function a2Boss(host,kleur){
   const flits=()=>{const f=$a2(host,'.a2-flits');a2Anim(f,[{opacity:.85},{opacity:0}],{duration:260,easing:'ease-out'});};
   B.raak=(dmg,crit)=>{if(B.uit)return;flits();
     a2Anim(boss,[{transform:'scale(1,1)'},{transform:'scale(1.12,.86)'},{transform:'scale(.94,1.06)'},{transform:'scale(1,1)'}],{duration:380,easing:'ease-out'});
-    a2Spat(svg,150,100,crit?[A2K.geel[0],'#fff',A2K.oranje[0]]:['#fff',A2K.geel[0]],crit?14:8);};
+    a2Spat(svg,150,100,crit?[A2K.geel[0],'#fff',A2K.oranje[0]]:['#fff',A2K.geel[0]],crit?14:8);a2Ring(svg,150,104,crit?A2K.geel[0]:'#fff',crit?90:64,crit?9:6);};
   B.fase=f=>{if(B.uit)return;svg.classList.toggle('fase1',f>=1);svg.classList.toggle('fase2',f>=2);
     const st=$a2(host,'.a2-stoom');if(st)st.setAttribute('opacity',f>=1?'1':'0');host.querySelectorAll('.a2-wang').forEach(w=>w.setAttribute('opacity',f>=2?'.75':f>=1?'.4':'0'));
     a2Schud(boss,6,500);};
@@ -154,7 +181,7 @@ function a2Boss(host,kleur){
     a2Anim(boss,[{transform:'scale(1) translateY(0)'},{transform:'scale(.94) translateY(6px)',offset:.25},{transform:'scale(1.18) translateY(-4px)',offset:.55},{transform:'scale(1) translateY(0)'}],{duration:520,easing:'ease-in-out'});};
   B.dood=()=>{if(B.uit)return;B.uit=true;svg.classList.add('ko');const o=$a2(host,'.a2-ogen'),ko=$a2(host,'.a2-ko');if(o)o.setAttribute('opacity','0');if(ko)ko.setAttribute('opacity','1');
     boss.style.transform='rotate(-14deg) translateY(16px)';a2Anim(boss,[{transform:'rotate(0deg) translateY(0)'},{transform:'rotate(6deg) translateY(-8px)',offset:.3},{transform:'rotate(-14deg) translateY(16px)'}],{duration:700,easing:'ease-in'});
-    a2Spat(svg,150,90,[A2K.geel[0],'#fff'],14);};
+    a2Spat(svg,150,90,[A2K.geel[0],'#fff'],14);a2Rook(svg,150,190,6,'#ffffff');const st=$a2(host,'.a2-ko-sterren');if(st)setTimeout(()=>st.setAttribute('opacity','1'),500);};
   B.juich=()=>{if(B.uit)return;svg.classList.add('juich');a2Anim(boss,[{transform:'translateY(0)'},{transform:'translateY(-16px)'},{transform:'translateY(0)'},{transform:'translateY(-10px)'},{transform:'translateY(0)'}],{duration:900,easing:'ease-in-out'});};
   return B;
 }
@@ -184,15 +211,19 @@ function a2Risico(host){
   const MAX=16;const doel=b=>Math.max(0,Math.min(MAX,Math.ceil((b||0)/10)));
   B.pot=bedrag=>{const d=doel(bedrag);const ns='http://www.w3.org/2000/svg';
     while(box.children.length<d){const i=box.children.length,p=a2MuntPos(i);const t=document.createElement('template');t.innerHTML=`<svg xmlns="${ns}">${a2MuntSvg(p.x,p.y)}</svg>`;const g=t.content.firstChild.firstChild;box.appendChild(g);
-      a2Anim(g,[{transform:`translate(${p.x}px,${p.y-70}px)`,opacity:0},{transform:`translate(${p.x}px,${p.y}px)`,opacity:1}],{duration:380,delay:Math.max(0,i-B.n)*60,easing:'cubic-bezier(.3,1.4,.5,1)',fill:'backwards'});}
-    while(box.children.length>d)box.lastChild.remove();B.n=d;};
+      a2Anim(g,[{transform:`translate(${p.x}px,${p.y-80}px) scale(.9,1.1)`,opacity:0},{transform:`translate(${p.x}px,${p.y-10}px) scale(.94,1.08)`,opacity:1,offset:.55},{transform:`translate(${p.x}px,${p.y+2}px) scale(1.14,.82)`,offset:.75},{transform:`translate(${p.x}px,${p.y}px) scale(1,1)`}],{duration:460,delay:Math.max(0,i-B.n)*70,easing:'ease-in',fill:'backwards'});}
+    while(box.children.length>d)box.lastChild.remove();B.n=d;glim();};
+  const glim=()=>{box.querySelectorAll('.a2-glim').forEach(x=>x.remove());const top=box.lastElementChild;if(!top)return;
+    const t=document.createElement('template');t.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg"><path class="a2-glim" d="${a2Ster(12,-9,7,2,4)}" fill="#fff"/></svg>`;top.appendChild(t.content.firstChild.firstChild);};
   B.bank=()=>{const ms=[...box.children];ms.forEach((m,i)=>{const p=a2MuntPos(i);const a=a2Anim(m,[{transform:`translate(${p.x}px,${p.y}px) scale(1)`,opacity:1},{transform:`translate(${(p.x+300)/2}px,${Math.min(p.y,80)-40}px) scale(.8)`,opacity:1,offset:.5},{transform:'translate(300px,115px) scale(.25)',opacity:0}],{duration:520,delay:i*45,easing:'ease-in'});
       if(a)a.onfinish=()=>m.remove();else m.remove();});
     const r=$a2(host,'.a2-kluis-rand');setTimeout(()=>{if(r){r.setAttribute('opacity','1');a2Anim(r,[{opacity:1},{opacity:0}],{duration:700,delay:200});setTimeout(()=>r.setAttribute('opacity','0'),900);}
-      a2Anim(a2Om($a2(host,'.a2-wiel'),300,115),[{transform:'rotate(0deg)'},{transform:'rotate(200deg)'}],{duration:600,easing:'cubic-bezier(.3,1.3,.5,1)'});a2Spat(svg,300,90,[A2K.geel[0],'#fff'],10);},ms.length*45+380);
+      a2Anim(a2Om($a2(host,'.a2-wiel'),300,115),[{transform:'rotate(0deg)'},{transform:'rotate(220deg)',offset:.6},{transform:'rotate(190deg)',offset:.8},{transform:'rotate(200deg)'}],{duration:800,easing:'ease-out'});
+      a2Anim(a2Om($a2(host,'.a2-kluis'),300,174),[{transform:'scale(1,1)'},{transform:'scale(1.06,.94)',offset:.3},{transform:'scale(.97,1.04)',offset:.6},{transform:'scale(1,1)'}],{duration:520,easing:'ease-out'});
+      a2Spat(svg,300,90,[A2K.geel[0],'#fff'],12);a2Ring(svg,300,115,A2K.geel[0],70,8);},ms.length*45+380);
     B.n=0;};
   B.verlies=()=>{const ms=[...box.children];ms.forEach((m,i)=>{const p=a2MuntPos(i),dx=(Math.random()-.5)*120;const a=a2Anim(m,[{transform:`translate(${p.x}px,${p.y}px) rotate(0deg)`,opacity:1},{transform:`translate(${p.x+dx*.5}px,${p.y-30}px) rotate(${dx}deg)`,opacity:1,offset:.35},{transform:`translate(${p.x+dx}px,${p.y+60}px) rotate(${dx*2}deg)`,opacity:0}],{duration:620,delay:i*20,easing:'ease-in'});
-      if(a)a.onfinish=()=>m.remove();else m.remove();});a2Schud($a2(host,'.a2-kluis'),6,420);B.n=0;};
+      if(a)a.onfinish=()=>m.remove();else m.remove();});a2Schud($a2(host,'.a2-kluis'),6,420);if(ms.length)a2Rook(svg,140,150,5,'#ffffff');B.n=0;};
   return B;
 }
 
@@ -217,7 +248,9 @@ function a2Zwak(host){
     const t=document.createElement('template');t.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg">${a2PijlSvg(x,y,h)}</svg>`;const g=t.content.firstChild.firstChild;box.appendChild(g);n++;
     while(box.children.length>7)box.firstChild.remove();
     a2Anim(g,[{transform:`translate(${x+190}px,${y-70}px) rotate(${h-18}deg) scale(1.4)`,opacity:0},{transform:`translate(${x+30}px,${y-12}px) rotate(${h-6}deg) scale(1.08)`,opacity:1,offset:.7},{transform:`translate(${x}px,${y}px) rotate(${h}deg) scale(1)`,opacity:1}],{duration:340,easing:'cubic-bezier(.4,0,.6,1)'});
-    setTimeout(()=>{a2Schud($a2(host,'.a2-bord'),goed?2:4,240);if(goed)a2Spat($a2(host,'svg'),x,y,[A2K.groen[0],'#fff',A2K.geel[0]],8);vonk(goed?(dicht>=1?'feest':'trots'):'oeps');},300);};
+    setTimeout(()=>{g.style.transformBox='view-box';g.style.transformOrigin='0px 0px';
+      a2Anim(g,a2Veer(7).map(v=>({transform:`translate(${x}px,${y}px) rotate(${h+v-7}deg)`})),{duration:700,easing:'ease-out'});a2Ring($a2(host,'svg'),x,y,goed?A2K.groen[0]:A2K.rood[0],goed?36:28,5);
+      a2Schud($a2(host,'.a2-bord'),goed?2:4,240);if(goed)a2Spat($a2(host,'svg'),x,y,[A2K.groen[0],'#fff',A2K.geel[0]],8);vonk(goed?(dicht>=1?'feest':'trots'):'oeps');},300);};
   return B;
 }
 
@@ -232,16 +265,20 @@ function a2SorteerSvg(n,gevuld){
     <rect x="22" y="120" width="356" height="26" rx="10" fill="${H[1]}"/><rect x="22" y="120" width="356" height="18" rx="9" fill="${H[0]}"/>
     <rect x="34" y="124" width="120" height="4" rx="2" fill="#fff" opacity=".35"/>
     <rect x="38" y="146" width="14" height="10" rx="3" fill="${H[1]}"/><rect x="348" y="146" width="14" height="10" rx="3" fill="${H[1]}"/>
-    ${geo.map(v=>`<rect x="${v.x}" y="${120-Math.min(v.w,56)-6}" width="${v.w}" height="${Math.min(v.w,56)+4}" rx="12" fill="rgba(0,0,0,.07)"/>`).join('')}
+    ${geo.map((v,i)=>`<rect class="a2-slot" data-i="${i}" x="${v.x}" y="${120-Math.min(v.w,56)-6}" width="${v.w}" height="${Math.min(v.w,56)+4}" rx="12" fill="rgba(0,0,0,.07)"/>`).join('')}
     <g class="a2-blokken">${(gevuld||[]).map(i=>a2BlokSvg(i,geo[i])).join('')}</g>`,'a2-sorteer-svg');
 }
 function a2Sorteer(host,aantal){
   const n=Math.max(2,Math.min(8,aantal||5));const P=a2Plaats(host,a2SorteerSvg(n),'sorteer');const B={P,n};const geo=a2SortGeo(n),box=$a2(host,'.a2-blokken'),svg=$a2(host,'svg');
   B.zet=i=>{if(i<0||i>=n||box.querySelector(`[data-i="${i}"]`))return;const v=geo[i];const t=document.createElement('template');t.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg">${a2BlokSvg(i,v)}</svg>`;const g=t.content.firstChild.firstChild;box.appendChild(g);
-    const cx=v.x+v.w/2;a2Anim(g,[{transform:`translate(${cx}px,-40px) rotate(-10deg)`},{transform:`translate(${cx}px,92px) rotate(2deg)`,offset:.7},{transform:`translate(${cx}px,82px)`,offset:.85},{transform:`translate(${cx}px,86px)`}],{duration:420,easing:'ease-in'});
-    setTimeout(()=>a2Spat(svg,cx,118,['#fff',A2K.geel[0]],6),300);};
+    const cx=v.x+v.w/2;g.style.transformBox='view-box';g.style.transformOrigin='0px 0px';
+    a2Anim(g,[{transform:`translate(${cx}px,-50px) rotate(-14deg) scale(.9,1.1)`},{transform:`translate(${cx}px,86px) rotate(3deg) scale(.92,1.08)`,offset:.62},{transform:`translate(${cx}px,92px) rotate(0deg) scale(1.16,.8)`,offset:.74},{transform:`translate(${cx}px,80px) scale(.96,1.05)`,offset:.88},{transform:`translate(${cx}px,86px) scale(1,1)`}],{duration:560,easing:'ease-in'});
+    setTimeout(()=>{a2Spat(svg,cx,118,['#fff',A2K.geel[0]],7);a2Ring(svg,cx,112,'#fff',34,4);},350);volgende();};
+  const volgende=()=>{host.querySelectorAll('.a2-slot').forEach(r=>r.classList.remove('volgende'));for(let k=0;k<n;k++){if(!box.querySelector(`[data-i="${k}"]`)){const r=$a2(host,`.a2-slot[data-i="${k}"]`);if(r)r.classList.add('volgende');break;}}};
+  volgende();
   B.fout=()=>{a2Schud(svg,6,360);};
-  B.klaar=()=>{[...box.children].forEach((g,k)=>{const i=+g.dataset.i,cx=geo[i].x+geo[i].w/2;a2Anim(g,[{transform:`translate(${cx}px,86px)`},{transform:`translate(${cx}px,66px)`},{transform:`translate(${cx}px,86px)`}],{duration:380,delay:k*70,easing:'cubic-bezier(.3,1.5,.5,1)'});});
+  B.klaar=()=>{host.querySelectorAll('.a2-slot').forEach(r=>r.classList.remove('volgende'));[...box.children].forEach((g,k)=>{const i=+g.dataset.i,cx=geo[i].x+geo[i].w/2;g.style.transformBox='view-box';g.style.transformOrigin='0px 0px';
+    a2Anim(g,[{transform:`translate(${cx}px,86px) scale(1,1)`},{transform:`translate(${cx}px,90px) scale(1.12,.86)`,offset:.15},{transform:`translate(${cx}px,58px) scale(.92,1.1)`,offset:.5},{transform:`translate(${cx}px,88px) scale(1.08,.9)`,offset:.82},{transform:`translate(${cx}px,86px) scale(1,1)`}],{duration:620,delay:k*80,easing:'ease-in-out'});});
     setTimeout(()=>a2Spat(svg,200,70,[A2K.geel[0],A2K.groen[0],A2K.blauw[0],'#fff'],16),n*70+200);};
   return B;
 }
@@ -255,7 +292,7 @@ function a2ValSvg(dicht){
     <g class="a2-val">
       <rect x="104" y="100" width="192" height="36" rx="10" fill="${H[1]}"/><rect x="104" y="100" width="192" height="26" rx="10" fill="${H[0]}"/>
       <rect x="116" y="105" width="70" height="4" rx="2" fill="#fff" opacity=".35"/>
-      <path d="M238 100L284 100L284 74Z" fill="${G[1]}"/><path d="M238 100L284 100L284 80L246 96Z" fill="${G[0]}"/><circle cx="268" cy="92" r="3.5" fill="${G[1]}"/><circle cx="277" cy="86" r="2.6" fill="${G[1]}"/>
+      <g class="a2-kaas"><path d="M238 100L284 100L284 74Z" fill="${G[1]}"/><path d="M238 100L284 100L284 80L246 96Z" fill="${G[0]}"/><circle cx="268" cy="92" r="3.5" fill="${G[1]}"/><circle cx="277" cy="86" r="2.6" fill="${G[1]}"/></g>
       <circle cx="200" cy="98" r="9" fill="${S[1]}"/><circle cx="200" cy="96" r="6" fill="${S[0]}"/>
       <g class="a2-beugel" style="transform-box:view-box;transform-origin:200px 96px;transform:rotate(${dicht?0:180}deg)"><path d="M200 96H282" stroke="${S[1]}" stroke-width="7" stroke-linecap="round"/><path d="M282 96V84" stroke="${S[1]}" stroke-width="7" stroke-linecap="round"/></g>
     </g>
@@ -265,7 +302,8 @@ function a2Val(host){
   const P=a2Plaats(host,a2ValSvg(false),'val');const B={P,klap:false};const svg=$a2(host,'svg'),beugel=$a2(host,'.a2-beugel'),val=a2Om($a2(host,'.a2-val'),200,136);
   const zet=d=>{beugel.style.transform=`rotate(${d}deg)`;};
   B.snap=()=>{B.klap=true;zet(0);a2Anim(beugel,[{transform:'rotate(180deg)'},{transform:'rotate(-8deg)',offset:.6},{transform:'rotate(0deg)'}],{duration:220,easing:'ease-in'});
-    setTimeout(()=>{a2Schud(val,6,300);a2Spat(svg,268,86,['#fff',A2K.staal[0]],8);},150);
+    setTimeout(()=>{a2Anim(val,[{transform:'translateY(0) scale(1,1)'},{transform:'translateY(3px) scale(1.04,.92)',offset:.2},{transform:'translateY(-6px) scale(.98,1.04)',offset:.5},{transform:'translateY(0) scale(1,1)'}],{duration:420,easing:'ease-out'});
+      a2Spat(svg,268,86,['#fff',A2K.staal[0],A2K.geel[0]],10);a2Ring(svg,270,92,'#fff',46,5);},150);
     clearTimeout(B._t);B._t=setTimeout(()=>{B.klap=false;zet(180);a2Anim(beugel,[{transform:'rotate(0deg)'},{transform:'rotate(180deg)'}],{duration:420,easing:'ease-out'});},1100);};
   B.ontdekt=()=>{const u=a2Om($a2(host,'.a2-uitroep'),200,62);if(u){u.setAttribute('opacity','1');a2Anim(u,[{transform:'scale(0)'},{transform:'scale(1.2)',offset:.6},{transform:'scale(1)'}],{duration:320,easing:'ease-out'});
       clearTimeout(B._u);B._u=setTimeout(()=>u.setAttribute('opacity','0'),900);}
