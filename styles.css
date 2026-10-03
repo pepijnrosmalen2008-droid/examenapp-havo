@@ -10820,3 +10820,43 @@ html.dark .cl-kaart-art{background:var(--zc)}
 .cl-kaart.gekozen .cl-kaart-art{box-shadow:inset 0 0 0 3px var(--zc),inset 0 0 0 4.5px #fff,0 0 0 3px #fff,0 0 0 5.5px var(--acc),0 6px 0 3px var(--acc-sh)}
 .cl-kaarten .cl-kaart.sterk.kan .cl-kaart-art{box-shadow:inset 0 0 0 3px #FFC800,inset 0 0 0 4.5px #fff,0 4px 0 #E6A800}
 .cl-vlieg{display:block;width:62px;height:74px;border-radius:10px;box-shadow:0 0 0 2.5px #fff,0 6px 0 rgba(0,0,0,.18)}
+/* Clash: HUD, balken en grote momenten in kaartspelstijl (donkere contour,
+   tekst met rand), passend bij de figuren op het veld. */
+#arc-stage.arc-t-clash{--omlijn:0 2px 0 #2B2233,1.6px 1.6px 0 #2B2233,-1.6px 1.6px 0 #2B2233,1.6px -1.6px 0 #2B2233,-1.6px -1.6px 0 #2B2233,2px 0 0 #2B2233,-2px 0 0 #2B2233,0 -2px 0 #2B2233,0 4px 0 rgba(0,0,0,.2);
+  --omlijn-groot:0 4px 0 #2B2233,3px 3px 0 #2B2233,-3px 3px 0 #2B2233,3px -3px 0 #2B2233,-3px -3px 0 #2B2233,4px 0 0 #2B2233,-4px 0 0 #2B2233,0 -4px 0 #2B2233,0 9px 0 rgba(0,0,0,.2)}
+.cl-score{background:#2B2233;border:0;box-shadow:0 3px 0 rgba(0,0,0,.22);padding:6px 12px;gap:10px}
+.cl-kr .k{background:rgba(255,255,255,.14);width:21px;height:19px;border-radius:6px}
+.cl-kr.t0 .k.aan{color:#1CB0F6}.cl-kr.t1 .k.aan{color:#FF4B4B}
+.cl-klok{color:#fff;font-size:19px;min-width:58px}.cl-klok.dubbel{color:#FFC800}.cl-klok.laatst{color:#FF7B7B}
+.cl-tegen{background:#FF4B4B;color:#fff;border:2px solid #2B2233;box-shadow:0 3px 0 #2B2233;font-weight:800}
+.cl-tegen small{color:rgba(255,255,255,.85)}
+/* levensbalken met donkere rand */
+.cl-hp{background:#2B2233;box-shadow:0 0 0 2px #2B2233,0 3px 0 1px rgba(0,0,0,.18);border-radius:5px;height:7px}
+.cl-hp i{box-shadow:inset 0 2px 0 rgba(255,255,255,.4)}
+.cl-hp.toren{height:11px}
+.cl-hp.toren b{color:#fff;text-shadow:var(--omlijn);font-size:13px;bottom:14px}
+.cl-hp.klok{background:conic-gradient(var(--kc) calc(var(--p,0)*360deg),#fff 0);box-shadow:0 0 0 2px #2B2233}
+.cl-getal{color:#fff;text-shadow:var(--omlijn);font-size:17px}.cl-getal.t0{color:#FFF}.cl-getal.t1{color:#FFE066}
+.cl-pop{border-color:#2B2233;box-shadow:0 3px 0 #2B2233}
+.cl-plus{color:#FFC800;text-shadow:var(--omlijn);font-size:22px}
+/* aftellen en banners */
+.cl-cd b{color:#fff;text-shadow:var(--omlijn-groot)}
+.cl-cd b.go{display:flex;flex-direction:column;align-items:center;gap:2px;color:#FFC800;font-size:60px;text-shadow:var(--omlijn-groot);animation:clGo .65s cubic-bezier(.2,1.5,.4,1)}
+.cl-zwaarden{width:92px;height:92px;filter:drop-shadow(0 5px 0 rgba(0,0,0,.2));animation:clZwaard .5s cubic-bezier(.2,1.6,.4,1)}
+@keyframes clGo{from{transform:scale(.3) rotate(-8deg);opacity:0}}
+@keyframes clZwaard{from{transform:scale(.2) rotate(-90deg)}}
+.cl-banner b{color:#FFC800;text-shadow:var(--omlijn-groot);font-size:32px}
+.cl-banner small{border-color:#2B2233;box-shadow:0 3px 0 #2B2233}
+.cl-eind b.lint{position:relative;padding:10px 34px 12px;color:#fff;font-size:40px;text-shadow:var(--omlijn);background:#FF4B4B;border:3px solid #2B2233;border-radius:12px;box-shadow:0 6px 0 #2B2233}
+.cl-eind.win b.lint{background:#58CC02}.cl-eind.gelijk b.lint{background:#1CB0F6}
+.cl-eind-kr span.aan{filter:drop-shadow(0 4px 0 rgba(0,0,0,.25))}
+/* kennisbalk met glans en een druppel, zoals de kosten op de kaarten */
+.cl-kennis-bar{height:20px;box-shadow:inset 0 0 0 2px var(--line)}
+.cl-kennis-bar i{overflow:hidden}
+.cl-kennis-bar i::after{content:'';position:absolute;top:0;bottom:0;width:40%;left:-40%;background:rgba(255,255,255,.35);transform:skewX(-20deg);animation:clGlans 2.6s ease-in-out infinite}
+@keyframes clGlans{60%,100%{left:120%}}
+.cl-kennis b{position:relative;background:none!important;box-shadow:none!important;isolation:isolate;width:36px;height:36px;flex-basis:36px;font-size:17px}
+.cl-kennis b::before{content:'';position:absolute;inset:4px;z-index:-1;background:#FFC800;border-radius:50% 0 50% 50%;transform:rotate(-45deg);box-shadow:inset -3px -3px 0 #E6A800,0 0 0 2px #fff,1px 3px 0 2px rgba(0,0,0,.15)}
+.cl-kennis b.plus{animation:clKplus .35s cubic-bezier(.3,1.7,.5,1)}
+@keyframes clKplus{40%{transform:scale(1.35)}}
+@media(prefers-reduced-motion:reduce){.cl-kennis-bar i::after,.cl-cd b.go,.cl-zwaarden{animation:none!important}}
