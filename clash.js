@@ -1403,7 +1403,7 @@ function openClash(direct){
   ARC.onClose=()=>clStop();
   const veld=document.getElementById('cl-veld');
   try{clStartRenderer(veld);}catch(e){clGeenCanvas();return;}
-  CL.on=true;CL.nid=0;CL.t=0;CL.mode='lobby';CL.lijken=[];CL.schud=0;
+  CL.on=true;CL.nid=0;CL.t=0;CL.mode='lobby';CL.lijken=[];CL.schud=0;CL.tab='strijd';CL.wissel=null;
   const c=clStore();CL.arena=clArena(c.bekers);CL.bgNodig=true;clZetTorens();clFit();
   clPortretten();
   clLeerPool(()=>{clLobby();if(direct&&clGenoegLeerstof())clStartPotje();});
@@ -1422,36 +1422,79 @@ function clZetTorens(){
 function clLobby(){
   CL.mode='lobby';CL.klaar=false;CL.cam&&(CL.cam.z=1);clFit();
   const c=clStore();const ar=CL_ARENAS[CL.arena];const volgende=CL_ARENAS[CL.arena+1];
-  const vak=arcVak(ARC.vakId);const genoeg=clGenoegLeerstof();
+  const vak=arcVak(ARC.vakId);const genoeg=clGenoegLeerstof();const tab=CL.tab||'strijd';
   const veld=document.getElementById('cl-veld');if(!veld)return;
-  veld.querySelectorAll('.cl-lobby,.cl-laden,.cl-hud,.cl-bars,.cl-pops,.cl-overlay').forEach(x=>x.remove());
+  veld.querySelectorAll('.cl-lobby,.cl-laden,.cl-hud,.cl-bars,.cl-pops,.cl-overlay,.cl-weg,.cl-kmenu').forEach(x=>x.remove());
   const pct=volgende?Math.min(100,(c.bekers-ar.min)/(volgende.min-ar.min)*100):100;
-  const L=document.createElement('div');L.className='cl-lobby';
-  // Compact zoals het hoofdscherm van een kaartspel: kop, arena in beeld, en onderaan
-  // een vast paneel met kisten, je deck als rij en de grote Strijd-knop.
+  const L=document.createElement('div');L.className='cl-lobby tab-'+tab;
+  // Opgebouwd als het hoofdscherm van Clash Royale: kop met koningslevel en munten,
+  // in het midden de arena, onderaan Strijd en de kistplekken, en een tabbalk.
   const KI=clKlvlInfo(c),kr=clKroon(c),krKlaar=kr.n>=10&&!kr.open,wegN=clWegOpen(c).length;
-  L.innerHTML=`<div class="cl-lobby-top"><button class="arc-x" onclick="arcClose()" aria-label="Sluiten">✕</button>
-      <div class="cl-koning" title="Koningslevel ${KI.l}${KI.max?'':`, nog ${KI.nog} XP tot level ${KI.l+1}`}"><span class="cl-schild">${KI.l}</span><i class="cl-kl-bar"><b style="width:${KI.pct.toFixed(0)}%"></b></i></div>
-      <div class="cl-lobby-titel"><small>${_arcEsc(vak?vak.naam:'')}</small><b>Slagio Clash</b></div>
-      <div class="cl-chips"><div class="cl-bekers" title="Bekers">${CL_BEKER}<b>${arcNf(c.bekers,0)}</b></div><div class="cl-bekers cl-munten" title="Munten">${CL_MUNT}<b>${arcNf(clMunten(),0)}</b></div></div></div>
-    <button class="cl-arena" onclick="clWeg()" aria-label="Bekerweg openen"><div class="cl-arena-r"><span>${_arcEsc(ar.naam)}</span><small>${volgende?`${arcNf(volgende.min-c.bekers,0)} bekers tot ${_arcEsc(volgende.naam)}`:'Hoogste arena'}</small></div><div class="cl-arena-bar"><i style="width:${pct.toFixed(0)}%"></i></div></button>
+  const upgN=c.deck.filter(id=>{const x=c.coll[id];return x&&x.lvl<CL_MAXLVL&&x.n>=(CL_UPGRADE[x.lvl]||1e9);}).length;
+  let naam='';try{naam=(_safeLocalGet('profiel',{}).naam)||'';}catch(e){}
+  let midden='';
+  if(tab==='strijd')midden=`<button class="cl-arena-banner" onclick="clTab('weg')" aria-label="Bekerweg openen">
+      <small>Arena ${CL.arena+1}</small><b>${_arcEsc(ar.naam)}</b>
+      <span class="cl-bekerbalk"><span class="cl-bb-n">${CL_BEKER}${arcNf(c.bekers,0)}</span><i><b style="width:${pct.toFixed(0)}%"></b></i><span class="cl-bb-d">${volgende?arcNf(volgende.min,0):'Max'}</span></span></button>
     <div class="cl-lobby-ruimte"></div>
     <div class="cl-lobby-onder">
-      <div class="cl-kisten">${[0,1,2,3].map(i=>{const k=c.kisten[i];return k?`<button class="cl-kist ${k.soort}" onclick="clKistOpen(${i})" aria-label="${_arcEsc(CL_KIST[k.soort].naam)} openen">${clKistSvg(k.soort)}<small>${CL_KIST[k.soort].nodig} begrippen</small></button>`:`<div class="cl-kist leeg"><span></span><small>Win een potje</small></div>`;}).join('')}
-        <button class="cl-kist kroon${krKlaar?' klaar':''}${kr.open?' op':''}" ${krKlaar?`onclick="clKistOpen('kroon')"`:`onclick="clPopMid('${kr.open?'Morgen staat er een nieuwe kroonkist klaar':`Nog ${10-kr.n} kronen voor de kroonkist`}')"`} aria-label="Kroonkist, ${kr.n} van 10 kronen">${clKistSvg('kroon')}<small>${kr.open?'Morgen':krKlaar?'Openen':`${kr.n}/10`}</small><i class="cl-kr-bar"><b style="width:${kr.n*10}%"></b></i></button></div>
-      <div class="cl-deck-kop"><b>Jouw deck</b><span class="cl-kop-knoppen"><button class="cl-hoe cl-weg-knop" onclick="clWeg()">Bekerweg${wegN?`<i class="cl-dot">${wegN}</i>`:''}</button><button class="cl-hoe" onclick="clRegels(true)">Hoe werkt het?</button></span></div>
-      <div class="cl-deck mini" id="cl-deck">${c.deck.map((id,i)=>{const cc=c.coll[id]||{lvl:1,n:0},kan=cc.lvl<CL_MAXLVL&&cc.n>=(CL_UPGRADE[cc.lvl]||1e9);
-        return `<button class="cl-kaart mini${kan?' upg':''}" onclick="clKaartInfo(${i})" aria-label="${_arcEsc(CL_KAARTEN[id].naam)}, level ${cc.lvl}">${clKaartHtml(id,{naam:false})}<span class="cl-mlvl">${kan?'↑':cc.lvl}</span></button>`;}).join('')}</div>
       ${genoeg?`<button class="arc-go cl-strijd" id="cl-strijd">${CL_ZWAARDEN}<span>Strijd</span></button>`:`<p class="cl-lobby-p">${_arcEsc(vak?vak.naam:'Dit vak')} heeft nog te weinig begrippen en korte vragen. Kies in de Arcade een ander vak.</p><button class="arc-go" onclick="arcClose()">Terug</button>`}
-      <div class="cl-lobby-stat">${c.gespeeld?`${c.gewonnen} van ${c.gespeeld} gewonnen`:'Je eerste potje: de uitleg volgt in het spel'}</div>
+      <div class="cl-kisten">${[0,1,2,3].map(i=>{const k=c.kisten[i];return k?`<button class="cl-kist ${k.soort}" onclick="clKistOpen(${i})" aria-label="${_arcEsc(CL_KIST[k.soort].naam)} openen">${clKistSvg(k.soort)}<small>${CL_KIST[k.soort].nodig} begrippen</small></button>`:`<div class="cl-kist leeg"><span></span><small>Kistplek</small></div>`;}).join('')}
+        <button class="cl-kist kroon${krKlaar?' klaar':''}${kr.open?' op':''}" ${krKlaar?`onclick="clKistOpen('kroon')"`:`onclick="clPopMid('${kr.open?'Morgen staat er een nieuwe kroonkist klaar':`Nog ${10-kr.n} kronen voor de kroonkist`}')"`} aria-label="Kroonkist, ${kr.n} van 10 kronen">${clKistSvg('kroon')}<small>${kr.open?'Morgen':krKlaar?'Openen':`${kr.n}/10`}</small><i class="cl-kr-bar"><b style="width:${kr.n*10}%"></b></i></button></div>
     </div>`;
+  else if(tab==='kaarten')midden=`<div class="cl-paneel" id="cl-paneel">${clKaartenHtml(c)}</div>`;
+  else midden=`<div class="cl-paneel cl-weg-lijst" id="cl-paneel">${clWegHtml(c)}</div>`;
+  const tabKnop=(t,ic,lbl,n)=>`<button class="cl-tab${t===tab?' aan':''}" data-tab="${t}" aria-label="${lbl}"${t===tab?' aria-current="page"':''}>${ic}<span>${lbl}</span>${n?`<i class="cl-dot">${n}</i>`:''}</button>`;
+  L.innerHTML=`<div class="cl-lobby-top"><button class="arc-x" onclick="arcClose()" aria-label="Sluiten">✕</button>
+      <div class="cl-koning" title="Koningslevel ${KI.l}${KI.max?'':`, nog ${KI.nog} XP tot level ${KI.l+1}`}"><span class="cl-schild">${KI.l}</span><span class="cl-kn-r"><b>${_arcEsc(naam||'Slagio Clash')}</b><i class="cl-kl-bar"><b style="width:${KI.pct.toFixed(0)}%"></b></i><small>${_arcEsc(vak?vak.naam:'')}</small></span></div>
+      <div class="cl-bekers cl-munten" title="Munten">${CL_MUNT}<b>${arcNf(clMunten(),0)}</b></div>
+      <button class="arc-x cl-vraagknop" onclick="clRegels(true)" aria-label="Hoe werkt het?">?</button></div>
+    ${midden}
+    <nav class="cl-tabs" aria-label="Clash">${tabKnop('kaarten',CL_KAARTIC,'Kaarten',upgN)}${tabKnop('strijd',CL_ZWAARDEN,'Strijd',0)}${tabKnop('weg',CL_BEKER,'Bekerweg',wegN)}</nav>`;
   veld.appendChild(L);
+  L.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{if(b.dataset.tab!==tab){arcSnd('tick');clTab(b.dataset.tab);}});
   const b=document.getElementById('cl-strijd');if(b)b.onclick=()=>{arcSnd('start');clStartPotje();};
+  const P=document.getElementById('cl-paneel');
+  if(P&&tab==='kaarten')clKaartenBind(P);
+  if(P&&tab==='weg'){clWegBind(P);requestAnimationFrame(()=>{const j=P.querySelector('#cl-weg-jij');if(j)P.scrollTop=Math.max(0,j.offsetTop-P.clientHeight/2);});}
 }
+function clTab(t){CL.tab=t;CL.wissel=null;clLobby();const p=document.querySelector('.cl-lobby');if(p)p.classList.add('wissel');}
+const CL_KAARTIC='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="11" height="15" rx="2.4" transform="rotate(-10 8 12)" fill="currentColor" opacity=".55"/><rect x="9" y="3.5" width="11" height="15" rx="2.4" transform="rotate(8 14 11)" fill="currentColor"/></svg>';
+// ── Kaarten-tab: strijddeck, verzameling, nog niet gevonden ──
+function clKaartenHtml(c){
+  const alle=Object.keys(CL_KAARTEN);const gevonden=alle.filter(k=>c.coll[k]);const gem=c.deck.reduce((a,k)=>a+CL_KAARTEN[k].k,0)/c.deck.length;
+  const kaart=(k,extra)=>`<button class="cl-kaart cl-ck${extra||''}" data-kaart="${k}" aria-label="${_arcEsc(CL_KAARTEN[k].naam)}">${clKaartHtml(k,{coll:c.coll})}</button>`;
+  const vrij=gevonden.filter(k=>!c.deck.includes(k)).sort((a,b)=>CL_KAARTEN[a].k-CL_KAARTEN[b].k),dicht=alle.filter(k=>!c.coll[k]).sort((a,b)=>(CL_ARENA_KAART[a]||0)-(CL_ARENA_KAART[b]||0));
+  return `<div class="cl-paneel-kop"><b>Strijddeck</b><span>Gemiddelde kennis <em>${arcNf(gem,1)}</em></span></div>
+    ${CL.wissel?`<div class="cl-wissel-tip">Kies de kaart die ${_arcEsc(CL_KAARTEN[CL.wissel].naam)} vervangt</div>`:''}
+    <div class="cl-deck8${CL.wissel?' kies':''}">${c.deck.map(k=>kaart(k,' in')).join('')}</div>
+    <div class="cl-paneel-kop"><b>Verzameling</b><span>${gevonden.length} van ${alle.length} gevonden</span></div>
+    ${vrij.length?`<div class="cl-deck8">${vrij.map(k=>kaart(k)).join('')}</div>`:'<p class="cl-paneel-p">Al je kaarten zitten in je deck. Nieuwe kaarten vind je in kisten.</p>'}
+    ${dicht.length?`<div class="cl-paneel-kop"><b>Nog niet gevonden</b><span>komen vrij per arena</span></div><div class="cl-deck8 dicht">${dicht.map(k=>`<div class="cl-kaart cl-ck">${clKaartHtml(k,{coll:c.coll})}</div>`).join('')}</div>`:''}`;
+}
+function clKaartenBind(P){
+  P.addEventListener('click',e=>{
+    const m=e.target.closest('.cl-kmenu button');if(m){const id=m.dataset.id;clKmenuWeg();
+      if(m.dataset.a==='info')clKaartInfo(id);else if(m.dataset.a==='gebruik'){CL.wissel=id;P.innerHTML=clKaartenHtml(clStore());P.scrollTo({top:0,behavior:'smooth'});arcSnd('tick');}return;}
+    const b=e.target.closest('button[data-kaart]');
+    if(CL.wissel){
+      if(b&&b.classList.contains('in')){const c=clStore();const i=c.deck.indexOf(b.dataset.kaart);if(i>=0){c.deck[i]=CL.wissel;clSave(c);clFx('kaart');arcHap(15);}
+        CL.wissel=null;P.innerHTML=clKaartenHtml(clStore());const nw=P.querySelector(`[data-kaart="${c.deck[i]}"]`);if(nw)arcRestart(nw,'erin');return;}
+      CL.wissel=null;P.innerHTML=clKaartenHtml(clStore());return;}
+    clKmenuWeg();if(!b)return;
+    const c=clStore(),id=b.dataset.kaart,x=c.coll[id],inDeck=c.deck.includes(id),kan=x&&x.lvl<CL_MAXLVL&&x.n>=(CL_UPGRADE[x.lvl]||1e9);
+    const menu=document.createElement('div');menu.className='cl-kmenu';
+    menu.innerHTML=`<button data-a="info" data-id="${id}">${kan?'Upgraden':'Info'}</button>${inDeck?'':`<button data-a="gebruik" data-id="${id}" class="geel">Gebruik</button>`}`;
+    P.appendChild(menu);b.classList.add('open');
+    const r=b.getBoundingClientRect(),pr=P.getBoundingClientRect();
+    menu.style.left=Math.max(4,Math.min(pr.width-menu.offsetWidth-4,r.left-pr.left+r.width/2-menu.offsetWidth/2))+'px';
+    menu.style.top=(r.bottom-pr.top+P.scrollTop-4)+'px';arcSnd('tick');
+  });
+}
+function clKmenuWeg(){document.querySelectorAll('.cl-kmenu').forEach(x=>x.remove());document.querySelectorAll('.cl-ck.open').forEach(x=>x.classList.remove('open'));}
 const CL_BEKER='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v3h3v2a5 5 0 0 1-4.3 4.95A5 5 0 0 1 13 15.9V18h3v3H8v-3h3v-2.1a5 5 0 0 1-2.7-2.95A5 5 0 0 1 4 8V6h3zm0 5V8H6a3 3 0 0 0 1 2.2zm10 0v2.2A3 3 0 0 0 18 8z" fill="currentColor"/></svg>';
-function clKaartInfo(i){
-  const c=clStore();const id=c.deck[i];const d=CL_KAARTEN[id];const my=c.coll[id]||{lvl:1,n:0};const f=clLvlF(my.lvl);
-  const rest=Object.keys(CL_KAARTEN).filter(k=>!c.deck.includes(k));
+function clKaartInfo(id){
+  const c=clStore();if(typeof id==='number')id=c.deck[id];const d=CL_KAARTEN[id];const my=c.coll[id]||{lvl:1,n:0};const f=clLvlF(my.lvl);const inDeck=c.deck.includes(id);
   const st=d.t==='spreuk'?[['Schade',Math.round(d.dmg*f)],['Straal',arcNf(d.straal,1)+' tegels'],['Op torens',Math.round(d.toren*100)+'%']]
     :[['Levens',Math.round(d.hp*f)*(d.n||1)+(d.n>1?` (${d.n}×)`:'')],['Schade',Math.round(d.dmg*f)],['Bereik',d.bereik>2?arcNf(d.bereik,1):'dichtbij'],d.leeft?['Staat',d.leeft+' s']:['Doel',d.doel==='gebouw'?'gebouwen':d.doel==='grond'?'grond':'grond en lucht']];
   const nodig=CL_UPGRADE[my.lvl]||0,prijs=CL_GOUD[my.lvl]||0,munt=clMunten();const kaartOk=my.lvl<CL_MAXLVL&&my.n>=nodig;const kan=kaartOk&&munt>=prijs;
@@ -1459,9 +1502,7 @@ function clKaartInfo(i){
     <div class="cl-sheet-kop"><div class="cl-kaart groot">${clKaartHtml(id,{naam:false})}</div><div><div class="cl-sheet-z" style="color:${CL_ZELD[d.zeld].c}">${CL_ZELD[d.zeld].naam} · ${_arcEsc(d.vak)} · Level ${my.lvl}</div><h3>${_arcEsc(d.naam)}</h3><div class="cl-sheet-st">${st.map(s=>`<span><small>${s[0]}</small><b>${s[1]}</b></span>`).join('')}</div></div></div>
     <p class="cl-sheet-feit">${_arcEsc(d.feit)}</p>
     ${my.lvl<CL_MAXLVL?`<div class="cl-upg"><div class="cl-upg-t"><b>Naar level ${my.lvl+1}</b><span>${my.n} van ${nodig} kaarten · +10% levens en schade · +${CL_KXP_UPG[my.lvl]||0} koningservaring</span></div><button class="arc-go cl-upg-k" data-upg ${kan?'':'disabled'}>${kan?`<span>Upgraden</span><em>${CL_MUNT}${prijs}</em>`:!kaartOk?`Nog ${nodig-my.n} kaarten`:`<span>Nog ${prijs-munt}</span><em>${CL_MUNT}</em>`}</button></div>`:'<div class="cl-upg"><div class="cl-upg-t"><b>Maximaal level</b></div></div>'}
-    <div class="cl-sheet-k">Wisselen voor</div>
-    <div class="cl-deck">${rest.map(k=>`<button class="cl-kaart klein" data-k="${k}" ${c.coll[k]?'':'disabled'}>${clKaartHtml(k,{coll:c.coll})}</button>`).join('')}</div>
-    <button class="arc-ghost" data-sluit>Klaar</button></div>`;
+    <div class="cl-sheet-knoppen">${inDeck?'':'<button class="arc-go cl-geel" data-gebruik>Gebruik</button>'}<button class="arc-ghost" data-sluit>Klaar</button></div></div>`;
   document.getElementById('cl-veld').appendChild(o);requestAnimationFrame(()=>o.classList.add('on'));
   const sluit=()=>{o.classList.remove('on');setTimeout(()=>o.remove(),220);};
   o.addEventListener('click',e=>{if(e.target===o||e.target.closest('[data-sluit]'))sluit();
@@ -1471,8 +1512,7 @@ function clKaartInfo(i){
       const c2=clStore();const x=c2.coll[id];x.n-=nodig;const kxp=CL_KXP_UPG[x.lvl]||0;x.lvl++;const nieuwKl=clGeefKxp(c2,kxp);clSave(c2);clFx('kist');arcXP(6*x.lvl);
       try{const m=arcMid(o.querySelector('.cl-kaart.groot'));arcBurst(m.x,m.y,{n:26,afstand:150,maat:9});}catch(er){}sluit();
       setTimeout(()=>{clLobby();if(nieuwKl)clKoningOmhoog(nieuwKl);else clPopMid(`${d.naam} is nu level ${x.lvl}`);},230);return;}
-    const k=e.target.closest('[data-k]');
-    if(k&&!k.disabled){const c2=clStore();c2.deck[i]=k.dataset.k;clSave(c2);clFx('kaart');sluit();clLobby();}});
+    if(e.target.closest('[data-gebruik]')){sluit();CL.tab='kaarten';CL.wissel=id;setTimeout(clLobby,200);}});
 }
 
 // ── Potje ───────────────────────────────────────────────────────────────
@@ -1634,37 +1674,39 @@ function clWegPrijs(x){
   if(x.t==='kist')return `<span class="cl-weg-ic">${clKistSvg(x.k)}</span><span><b>${_arcEsc(CL_KIST[x.k].naam)}</b><small>${CL_KIST[x.k].kaarten} kaarten</small></span>`;
   return `<span class="cl-weg-ic munt">${CL_MUNT}</span><span><b>${x.n} munten</b><small>voor upgrades en de winkel</small></span>`;
 }
-function clWeg(){
-  const veld=document.getElementById('cl-veld');if(!veld)return;veld.querySelectorAll('.cl-weg').forEach(x=>x.remove());
-  const c=clStore();const hoog=Math.max(c.best||0,c.bekers||0),gehaald=c.weg||[];const L=clWegLijst();
+function clWeg(){clTab('weg');}
+function clWegHtml(c){
+  const hoog=Math.max(c.best||0,c.bekers||0),gehaald=c.weg||[];const L=clWegLijst();
   const knop=x=>x.b>hoog?`<span class="cl-weg-slot" aria-label="Nog niet bereikt"></span>`:gehaald.includes(x.id)?`<span class="cl-weg-ok" aria-label="Opgehaald">✓</span>`:`<button class="arc-go cl-weg-haal" data-id="${x.id}">Ophalen</button>`;
   let jij=false;const rijen=[];
   const banner=i=>{const A=CL_ARENAS[i],kaarten=Object.keys(CL_ARENA_KAART).filter(k=>CL_ARENA_KAART[k]===i),bereikt=hoog>=A.min,nu=clArena(c.bekers)===i;
     const r=L.find(x=>x.t==='arena'&&x.a===i);
-    return `<div class="cl-weg-arena${bereikt?' bereikt':''}${nu?' nu':''}"><div class="cl-weg-foto">${bereikt?`<img src="${clArenaBeeld(i)}" alt="">`:`<img src="${clArenaBeeld(i)}" alt="" class="dicht">`}<span>${i+1}</span></div>
+    return `<div class="cl-weg-arena${bereikt?' bereikt':''}${nu?' nu':''}"><div class="cl-weg-foto"><img src="${clArenaBeeld(i)}" alt=""${bereikt?'':' class="dicht"'}><span>${i+1}</span></div>
       <div class="cl-weg-tekst"><small>${CL_BEKER}${arcNf(A.min,0)}</small><b>${_arcEsc(A.naam)}</b>${kaarten.length?`<div class="cl-weg-kaarten">${kaarten.map(k=>`<span class="cl-kaart">${clKaartHtml(k,{naam:false})}</span>`).join('')}<em>${kaarten.map(k=>_arcEsc(CL_KAARTEN[k].naam)).join(', ')}</em></div>`:'<em>Startarena</em>'}</div>
       ${r?`<div class="cl-weg-arena-prijs">${CL_MUNT}<b>${r.n}</b>${knop(r)}</div>`:''}</div>`;};
   rijen.push(banner(0));
+  const jijRij=()=>`<div class="cl-weg-jij" id="cl-weg-jij"><span>${CL_BEKER}${arcNf(c.bekers,0)}</span><b>Jij</b></div>`;
   for(const x of L){
-    if(!jij&&x.b>c.bekers){jij=true;rijen.push(`<div class="cl-weg-jij" id="cl-weg-jij"><span>${CL_BEKER}${arcNf(c.bekers,0)}</span><b>Jij</b></div>`);}
+    if(!jij&&x.b>c.bekers){jij=true;rijen.push(jijRij());}
     if(x.t==='arena'){rijen.push(banner(x.a));continue;}
     rijen.push(`<div class="cl-weg-rij${x.b<=hoog?' bereikt':''}"><span class="cl-weg-b">${CL_BEKER}${arcNf(x.b,0)}</span><div class="cl-weg-prijs">${clWegPrijs(x)}</div>${knop(x)}</div>`);
   }
-  if(!jij)rijen.push(`<div class="cl-weg-jij" id="cl-weg-jij"><span>${CL_BEKER}${arcNf(c.bekers,0)}</span><b>Jij</b></div>`);
-  const o=document.createElement('div');o.className='cl-weg';
-  o.innerHTML=`<div class="cl-weg-kop"><button class="arc-x" data-sluit aria-label="Sluiten">✕</button><div><b>Bekerweg</b><small>Hoogste stand ${arcNf(hoog,0)} bekers</small></div><div class="cl-bekers">${CL_BEKER}<b>${arcNf(c.bekers,0)}</b></div></div>
-    <div class="cl-weg-lijst">${rijen.join('')}</div>`;
-  veld.appendChild(o);requestAnimationFrame(()=>{o.classList.add('on');const j=o.querySelector('#cl-weg-jij');if(j)j.scrollIntoView({block:'center'});});
-  o.addEventListener('click',e=>{
-    if(e.target.closest('[data-sluit]')){o.classList.remove('on');setTimeout(()=>{o.remove();clLobby();},220);return;}
-    const b=e.target.closest('[data-id]');if(!b)return;const x=L[+b.dataset.id];const c2=clStore();c2.weg=c2.weg||[];if(c2.weg.includes(x.id))return;
+  if(!jij)rijen.push(jijRij());
+  return `<div class="cl-paneel-kop"><b>Bekerweg</b><span>Hoogste stand ${arcNf(hoog,0)}</span></div>`+rijen.join('');
+}
+function clWegBind(P){
+  P.addEventListener('click',e=>{
+    const b=e.target.closest('[data-id]');if(!b)return;const L=clWegLijst();const x=L[+b.dataset.id];const c2=clStore();c2.weg=c2.weg||[];if(c2.weg.includes(x.id))return;
     if(x.t==='kist'){if(c2.kisten.length>=4){clPopMid('Je kistplekken zijn vol. Open eerst een kist.');return;}c2.kisten.push({soort:x.k,arena:clArena(Math.max(c2.bekers,x.b)),t:Date.now()});}
     else clGeefMunten(x.n);
     c2.weg.push(x.id);clSave(c2);clFx('kist');arcHap([20,20,40]);
     try{const m=arcMid(b);arcBurst(m.x,m.y,{n:18,afstand:110,maat:8});}catch(er){}
-    const plek=b.parentNode;b.outerHTML=`<span class="cl-weg-ok net" aria-label="Opgehaald">✓</span>`;
+    b.outerHTML=`<span class="cl-weg-ok net" aria-label="Opgehaald">✓</span>`;
     clPopMid(x.t==='kist'?`${CL_KIST[x.k].naam} staat in je kistplekken`:`+${x.n} munten`);
-    const kop=o.querySelector('.cl-weg-kop');if(kop)void plek;});
+    // Teller in de tabbalk en munten bijwerken zonder de lijst te herbouwen.
+    const n=clWegOpen(c2).length,dot=document.querySelector('.cl-tab[data-tab="weg"] .cl-dot');if(dot){if(n)dot.textContent=n;else dot.remove();}
+    const mu=document.querySelector('.cl-lobby .cl-munten b');if(mu)mu.textContent=arcNf(clMunten(),0);
+  });
 }
 function clOefenZwak(ld){try{ZWAK.doel=null;ZWAK.forceLd=ld;}catch(e){}arcStart('zwak');}
 function clUitleg(q,keuze){
@@ -2043,10 +2085,13 @@ function clKistBuitScherm(o,i,log,kist){
     try{const m=arcMid(o.querySelector('.cl-kaart.groot,.cl-buit-muntgroot'));arcBurst(m.x,m.y,{n:b.nieuw||(b.id&&CL_KAARTEN[b.id].zeld>=2)?30:14,afstand:140,maat:8});}catch(e){}
     o.onclick=()=>{o.onclick=null;toon();};};
   // Openen: de kist schudt, de deksel klapt open en er komt licht uit.
-  o.className='cl-kistscherm opent';o.innerHTML=`<div class="cl-open-st"><div class="cl-stralen"></div><div class="cl-kist-groot">${clKistSvg(kist.soort)}</div><h2>${_arcEsc(K.naam)}</h2></div>`;
+  // Zoals in Clash Royale: de kist valt neer, jij tikt hem open.
+  o.className='cl-kistscherm opent';o.innerHTML=`<div class="cl-open-st"><div class="cl-stralen"></div><div class="cl-kist-groot val">${clKistSvg(kist.soort)}</div><h2>${_arcEsc(K.naam)}</h2><small class="cl-tik">Tik om te openen</small></div>`;
   const lite=arcLite();const g=o.querySelector('.cl-kist-groot');
-  if(lite){o.classList.add('los');clFx('kist');setTimeout(toon,350);return;}
-  g.classList.add('tril');arcHap([10,40,10,40,10]);
-  setTimeout(()=>{if(!o.isConnected)return;o.classList.add('los');clFx('kist');arcHap([30,20,60]);try{const m=arcMid(g);arcBurst(m.x,m.y,{n:34,afstand:180,maat:9});}catch(e){}},900);
-  setTimeout(()=>{if(o.isConnected)toon();},1700);
+  setTimeout(()=>{if(o.isConnected){arcSnd('pop');arcHap(25);}},lite?0:420);
+  o.onclick=()=>{o.onclick=null;
+    if(lite){o.classList.add('los');clFx('kist');setTimeout(toon,350);return;}
+    g.classList.remove('val');g.classList.add('tril');arcHap([10,40,10,40,10]);
+    setTimeout(()=>{if(!o.isConnected)return;o.classList.add('los');clFx('kist');arcHap([30,20,60]);try{const m=arcMid(g);arcBurst(m.x,m.y,{n:34,afstand:180,maat:9});}catch(e){}},600);
+    setTimeout(()=>{if(o.isConnected)toon();},1300);};
 }
