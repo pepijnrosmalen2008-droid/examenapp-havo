@@ -10800,3 +10800,23 @@ html.dark .cl-coach{background:#1F2B31;color:#F1F7FB;border-color:#37464F;box-sh
 .arc-w-meta{background:#fff;color:#3C3C3C;backdrop-filter:none;-webkit-backdrop-filter:none;border:2px solid #E5E5E5;box-shadow:0 2px 0 #E5E5E5}
 .arc-w-meta.klaar{background:#FF9600;color:#fff;border-color:#E07F00;box-shadow:0 2px 0 #E07F00}
 .arc-w-beker{color:#E6A800}
+/* Clash-kaarten: portret met eigen achtergrond, een rand in de kleur van de
+   zeldzaamheid, een kennisdruppel en een naamlint, zoals in een kaartspel. */
+.cl-kaart-art{background:var(--zc);border-radius:13px;
+  box-shadow:inset 0 0 0 3px var(--zc),inset 0 0 0 4.5px rgba(255,255,255,.75),0 4px 0 color-mix(in srgb,var(--zc) 62%,#000)}
+html.dark .cl-kaart-art{background:var(--zc)}
+.cl-kaart-art img{inset:3px;width:calc(100% - 6px);height:calc(100% - 6px);object-fit:cover;border-radius:10px}
+.cl-kaart-art::after{content:'';position:absolute;inset:3px;border-radius:10px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.75);pointer-events:none}
+.cl-kaart-art em{left:1px;top:1px;width:25px;height:25px;background:none!important;box-shadow:none!important;color:#3C3C3C;z-index:2;isolation:isolate;font-size:13px}
+.cl-kaart-art em::before{content:'';position:absolute;inset:2.5px;z-index:-1;background:#FFC800;border-radius:50% 0 50% 50%;transform:rotate(-45deg);
+  box-shadow:inset -2.5px -2.5px 0 #E6A800,0 0 0 2px #fff,1px 2px 0 2px rgba(0,0,0,.18)}
+.cl-kaart-art em::after{content:'';position:absolute;left:7px;top:8px;width:4px;height:5px;border-radius:50%;background:rgba(255,255,255,.75);z-index:-1}
+.cl-kaart-n{left:3px;right:3px;bottom:3px;padding:3px 2px 3px;border-radius:0 0 10px 10px;background:color-mix(in srgb,var(--zc) 78%,#2B2233);color:#fff;
+  text-shadow:0 1px 0 rgba(0,0,0,.35);font-size:9.5px;letter-spacing:.01em;z-index:1}
+.cl-kaart-art small{z-index:2;box-shadow:0 1.5px 0 rgba(0,0,0,.2)}
+.cl-kaart.mini .cl-kaart-art{border-radius:10px}.cl-kaart.mini .cl-kaart-art img{border-radius:7px}.cl-kaart.mini .cl-kaart-art::after{border-radius:7px}
+.cl-kaart.mini .cl-kaart-art em{width:19px;height:19px;font-size:10px}.cl-kaart.mini .cl-kaart-art em::after{left:5px;top:6px;width:3px;height:4px}
+.cl-kaarten .cl-kaart:not(.kan) .cl-kaart-art{filter:grayscale(.9) brightness(.92)}
+.cl-kaart.gekozen .cl-kaart-art{box-shadow:inset 0 0 0 3px var(--zc),inset 0 0 0 4.5px #fff,0 0 0 3px #fff,0 0 0 5.5px var(--acc),0 6px 0 3px var(--acc-sh)}
+.cl-kaarten .cl-kaart.sterk.kan .cl-kaart-art{box-shadow:inset 0 0 0 3px #FFC800,inset 0 0 0 4.5px #fff,0 4px 0 #E6A800}
+.cl-vlieg{display:block;width:62px;height:74px;border-radius:10px;box-shadow:0 0 0 2.5px #fff,0 6px 0 rgba(0,0,0,.18)}
