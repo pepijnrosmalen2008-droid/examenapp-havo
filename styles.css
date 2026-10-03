@@ -11331,3 +11331,26 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 .cl-opt.chip{font:800 14px/1.12 var(--font-lees);letter-spacing:0}
 .cl-f-o .cl-opt span{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 .cl-kist small{word-spacing:.12em}
+
+/* ═══════ CLASH: TEMPO IN DE FLITSEN ═══════
+   Gouden balk = de tijd waarin een antwoord als snel telt; roep-tekst bij een goed
+   antwoord; de Koningsvraag kleurt het hele perkament goud. */
+.cl-vraag{position:relative}
+.cl-f-tijd{position:absolute;left:0;top:0;height:5px;width:100%;background:#E0A400;border-radius:0 3px 3px 0;transform-origin:left;animation:clTijd var(--d,3500ms) linear forwards;z-index:2;pointer-events:none}
+@keyframes clTijd{0%{transform:scaleX(1)}85%{background:#E0A400}100%{transform:scaleX(0);background:#B9A27A}}
+.cl-f-combo{font:900 11px/1 var(--font-head);color:#fff;background:var(--rood,#A8262B);padding:3px 7px 2px;border-radius:999px;margin-right:4px;letter-spacing:.03em;animation:clGrootIn .3s cubic-bezier(.2,1.5,.4,1)}
+.cl-f-reeks{align-items:center}
+.cl-roep{position:absolute;left:50%;top:38%;z-index:4;transform:translate(-50%,0);white-space:nowrap;pointer-events:none;font:900 18px/1 var(--font-head);color:#fff;text-shadow:var(--omlijn);animation:clRoep .9s cubic-bezier(.2,1.2,.4,1) forwards}
+.cl-roep b{color:#F5A3FF;font-size:22px}
+.cl-roep.extra{font-size:20px;color:#FFE066}
+.cl-roep.goud{font-size:22px;color:#FFC800}
+@keyframes clRoep{0%{transform:translate(-50%,10px) scale(.6);opacity:0}25%{transform:translate(-50%,-6px) scale(1.12);opacity:1}70%{opacity:1}100%{transform:translate(-50%,-30px) scale(1);opacity:0}}
+.cl-vraag.goud{background:#FFE7A0!important;box-shadow:inset 0 0 0 3px #FFC800,0 0 0 2px #1E130A,0 0 22px rgba(255,200,0,.55)!important;animation:clGoud 1.2s ease-in-out infinite alternate}
+.cl-vraag.goud .cl-f-tijd{background:#A8262B;animation-name:clTijdG}
+@keyframes clTijdG{to{transform:scaleX(0)}}
+@keyframes clGoud{to{box-shadow:inset 0 0 0 3px #FFC800,0 0 0 2px #1E130A,0 0 34px rgba(255,200,0,.85)}}
+.cl-f-goud{color:#A8262B;font-weight:900;letter-spacing:.04em}
+.cl-vraag.goud .cl-opt{border-color:#E0A400}
+@media(prefers-reduced-motion:reduce){.cl-roep{animation:none;opacity:0}.cl-vraag.goud{animation:none}.cl-f-tijd{animation-duration:0s!important;display:none}}
+.cl-opt.chip.w1{font-size:12.5px}.cl-opt.chip.w2{font-size:11.5px}.cl-opt.chip.w3{font-size:10.5px}
+@media(min-width:900px){.cl-opt.chip.w1{font-size:14px}.cl-opt.chip.w2{font-size:13px}.cl-opt.chip.w3{font-size:12px}}

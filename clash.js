@@ -1244,7 +1244,7 @@ function clTeken(){
 // ── Tegenstander ────────────────────────────────────────────────────────
 function clBot(dt){
   const b=CL.bot,ar=CL_ARENAS[CL.arena];
-  b.antw-=dt;if(b.antw<=0){b.antw=(2.6+Math.random()*1.8)*ar.denk;if(Math.random()<ar.acc){CL.kennis[1]=Math.min(10,CL.kennis[1]+1);b.goed++;}b.vragen++;}
+  b.antw-=dt;if(b.antw<=0){b.antw=(2.6+Math.random()*1.8)*ar.denk;if(Math.random()<ar.acc){CL.kennis[1]=Math.min(10,CL.kennis[1]+1+(Math.random()<ar.acc*.55?1:0));b.goed++;}b.vragen++;}
   b.denk-=dt;if(b.denk>0)return;b.denk=(.45+Math.random()*.5)*ar.denk;
   const kn=CL.kennis[1],hand=b.hand;
   const speel=(i,x,z)=>{const id=hand[i];const d=CL_KAARTEN[id];if(CL.kennis[1]<d.k)return false;
@@ -1561,7 +1561,7 @@ function clStartPotje(){
   veld.insertAdjacentHTML('beforeend','<button class="cl-emo-knop" onclick="clEmoMenu()" aria-label="Emote sturen"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H10l-4 4V16H4z"/><path d="M9 10h.01M15 10h.01M9.5 13a3.5 3.5 0 0 0 5 0"/></svg></button>');
   // Staat van het potje.
   Object.assign(CL,{mode:'strijd',klaar:false,pauze:false,tijd:180,overtime:false,dubbelGemeld:false,eindeNa:null,t:0,tempo:1,kronen:[0,0],kennis:[5,5],
-    gespeeld:0,sterk:false,reeks:0,dq:1.6,gebruikt:new Set(),gebruiktB:new Set(),herhaal:[],nr:0,log:[],botNaam:naam,gekozen:-1,schud:0,tut:null,beslissing:false,emoT:0});
+    gespeeld:0,sterk:false,reeks:0,combo:0,goudT:0,dq:1.6,gebruikt:new Set(),gebruiktB:new Set(),herhaal:[],nr:0,log:[],botNaam:naam,gekozen:-1,schud:0,tut:null,beslissing:false,emoT:0});
   const deck=arcShuffle(c.deck.slice());CL.hand=deck.slice(0,4);CL.rij=deck.slice(4);
   const pool=Object.keys(CL_KAARTEN).filter(id=>(CL_ARENA_KAART[id]||0)<=CL.arena);const bd=arcShuffle(pool).slice(0,8);if(!bd.some(k=>['reus','ram','ridder'].includes(k)))bd[0]='ridder';
   CL.bot={hand:bd.slice(0,4),rij:bd.slice(4),denk:5,antw:4,goed:0,vragen:0};CL.botLvl=1+CL.arena;CL._store=c;
@@ -1579,7 +1579,7 @@ function clAftellen(){
   const veld=document.getElementById('cl-veld');const el=document.createElement('div');el.className='cl-overlay cl-cd';veld.appendChild(el);
   // Eerste potje: eerst de uitleg in stappen, het gevecht start pas daarna.
   if(!clStore().uitlegGezien){el.remove();clTutStart();return;}
-  let n=3;const tik=()=>{if(!CL.on)return;if(n===0){el.innerHTML=`<b class="go">${CL_ZWAARDEN}<span>Ten aanval!</span></b>`;clFx('hoorn');arcHap(20);CL.pauze=false;setTimeout(()=>el.remove(),650);return;}
+  let n=3;const tik=()=>{if(!CL.on)return;if(n===0){el.innerHTML=`<b class="go">${CL_ZWAARDEN}<span>Ten aanval!</span></b>`;clFx('hoorn');clFlitsKlok();arcHap(20);CL.pauze=false;setTimeout(()=>el.remove(),650);return;}
     el.innerHTML=`<b>${n}</b>`;clFx('trom');n--;setTimeout(tik,650);};tik();
 }
 function clBanner(t,s){const veld=document.getElementById('cl-veld');if(!veld)return;const b=document.createElement('div');b.className='cl-overlay cl-banner';b.innerHTML=`<b>${_arcEsc(t)}</b><small>${_arcEsc(s||'')}</small>`;veld.appendChild(b);arcSnd('levelup');setTimeout(()=>b.remove(),2400);}
@@ -1757,8 +1757,8 @@ function clLeerPool(klaar){
     const vak=arcVak(ARC.vakId);const beg=[],gezien=new Set();
     ((vak&&vak.domeinen)||[]).forEach(d=>(d.begrippen||[]).forEach(b=>{if(!b||!b.t||!b.d)return;const t=String(b.t).trim(),df=String(b.d).trim().replace(/\.$/,'');
       if(t.length>30||df.length>110||df.length<8)return;const k=t.toLowerCase();if(gezien.has(k))return;gezien.add(k);beg.push({t,d:df,domId:d.id,domNaam:d.naam});}));
-    CL.beg=beg;
-    arcPool(ARC.vakId,p=>{CL.pool=p||[];CL.kortQ=CL.pool.filter(x=>x.q.v.length<=90&&x.q.o.every(o=>String(o).length<=34));klaar();});
+    CL.beg=beg;CL.begKort=beg.filter(b=>b.d.length<=80);
+    arcPool(ARC.vakId,p=>{CL.pool=p||[];CL.kortQ=CL.pool.filter(x=>x.q.v.length<=75&&x.q.o.every(o=>String(o).length<=34));klaar();});
   };
   try{if(typeof ensureVakData==='function')ensureVakData(lvl,ARC.vakId,bouw);else bouw();}catch(e){bouw();}
 }
@@ -1768,15 +1768,17 @@ function clVolgendeFlits(){
   const h=CL.herhaal.findIndex(x=>x.na<=CL.nr);
   if(h>=0){const x=CL.herhaal.splice(h,1)[0];return clMaakFlits(x.item,true);}
   const vragen=(CL.kortQ||[]).length>=6,begs=(CL.beg||[]).length>=6;
-  if(vragen&&(!begs||CL.nr%4===0)){const it=arcNext(CL.kortQ,CL.gebruikt,Math.round(CL.dq));if(it){const o=arcOpties(it.q);return {soort:'vraag',item:it,o,juist:o.juist};}}
-  const vrij=CL.beg.filter(b=>!CL.gebruiktB.has(b.t));if(!vrij.length)CL.gebruiktB.clear();
-  const item=arcPick(vrij.length?vrij:CL.beg);CL.gebruiktB.add(item.t);return clMaakFlits(item,false);
+  if(vragen&&(!begs||CL.nr%6===0)){const it=arcNext(CL.kortQ,CL.gebruikt,Math.round(CL.dq));if(it){const o=arcOpties(it.q);return {soort:'vraag',item:it,o,juist:o.juist};}}
+  // Meestal een korte definitie: dat leest in een oogopslag.
+  const bron=(CL.begKort&&CL.begKort.length>=10&&Math.random()<.8)?CL.begKort:CL.beg;
+  const vrij=bron.filter(b=>!CL.gebruiktB.has(b.t));if(!vrij.length)CL.gebruiktB.clear();
+  const item=arcPick(vrij.length?vrij:bron);CL.gebruiktB.add(item.t);return clMaakFlits(item,false);
 }
 function clMaakFlits(item,herh){
   const zelfde=CL.beg.filter(b=>b!==item&&b.domId===item.domId&&b.t.toLowerCase()!==item.t.toLowerCase());
   const rest=CL.beg.filter(b=>b!==item&&b.domId!==item.domId);
   const afl=arcShuffle(zelfde).slice(0,2);while(afl.length<2&&rest.length){const r=arcPick(rest);if(!afl.includes(r))afl.push(r);}
-  const omgekeerd=!herh&&CL.nr>3&&Math.random()<.25&&item.d.length<=70&&afl.every(a=>a.d.length<=70);
+  const omgekeerd=CL.mode!=='strijd'&&!herh&&CL.nr>3&&Math.random()<.25&&item.d.length<=70&&afl.every(a=>a.d.length<=70);
   const opties=arcShuffle([item,...afl.slice(0,omgekeerd?1:2)]);
   return {soort:omgekeerd?'term':'def',item,opties,juist:opties.indexOf(item),herh};
 }
@@ -1784,8 +1786,12 @@ function clFlitsNieuw(){
   const box=document.getElementById('cl-vraag');if(!box)return;
   if(!clGenoegLeerstof()){box.innerHTML='<div class="cl-v-leeg">Geen leerstof voor dit vak</div>';return;}
   const F=clVolgendeFlits();CL.flits=F;F.t0=performance.now();F.klaar=false;
-  const reeks=`<span class="cl-f-reeks" aria-label="${CL.reeks} van ${CL_REEKS} op rij">${Array.from({length:CL_REEKS},(_,i)=>`<i class="${i<CL.reeks?'aan':''}"></i>`).join('')}</span>`;
-  const kop=(label)=>`<div class="cl-f-kop"><span>${F.herh?'<b class="cl-f-herh">Nog een keer</b>':_arcEsc(label)}</span>${reeks}</div>`;
+  // Elke ~35 seconden een gouden Koningsvraag: 3 kennis en je volgende kaart versterkt.
+  if(!CL.tut&&!F.herh&&F.soort!=='vraag'&&CL.t-(CL.goudT||0)>35&&CL.nr>3){F.goud=true;CL.goudT=CL.t;}
+  F.snel=F.goud?6000:F.soort==='vraag'?5500:CL_SNEL;
+  const reeks=`<span class="cl-f-reeks" aria-label="${CL.reeks} van ${CL_REEKS} op rij">${(CL.combo||0)>=2?`<b class="cl-f-combo">Reeks ${CL.combo}</b>`:''}${Array.from({length:CL_REEKS},(_,i)=>`<i class="${i<CL.reeks?'aan':''}"></i>`).join('')}</span>`;
+  const kop=(label)=>`<i class="cl-f-tijd" style="--d:${F.snel}ms"></i><div class="cl-f-kop"><span>${F.goud?'<b class="cl-f-goud">Koningsvraag · 3 kennis</b>':F.herh?'<b class="cl-f-herh">Nog een keer</b>':_arcEsc(label)}</span>${reeks}</div>`;
+  box.classList.toggle('goud',!!F.goud);if(F.goud){arcSnd('open');arcHap([10,30,10]);}
   if(F.soort==='vraag'){const L=['A','B','C','D'];
     box.innerHTML=`${kop(F.item.ldNaam||F.item.domNaam||'')}<div class="cl-f-v vraag">${_arcEsc(F.item.q.v)}</div>
       <div class="cl-f-o twee">${F.o.idx.map((oi,k)=>`<button class="cl-opt" data-k="${k}"><i>${L[k]}</i><span>${_arcEsc(F.item.q.o[oi])}</span></button>`).join('')}</div><div class="cl-f-fb" id="cl-vfb"></div>`;}
@@ -1794,13 +1800,20 @@ function clFlitsNieuw(){
       <div class="cl-f-o lang">${F.opties.map((o,k)=>`<button class="cl-opt" data-k="${k}"><span>${_arcEsc(o.d)}</span></button>`).join('')}</div><div class="cl-f-fb" id="cl-vfb"></div>`;}
   else{
     box.innerHTML=`${kop('Welk begrip is dit?')}<div class="cl-f-v">${_arcEsc(F.item.d)}</div>
-      <div class="cl-f-o drie">${F.opties.map((o,k)=>`<button class="cl-opt chip" data-k="${k}"><span>${_arcEsc(o.t)}</span></button>`).join('')}</div><div class="cl-f-fb" id="cl-vfb"></div>`;}
+      <div class="cl-f-o drie">${F.opties.map((o,k)=>`<button class="cl-opt chip${clWoordMaat(o.t)}" data-k="${k}"><span>${_arcEsc(o.t)}</span></button>`).join('')}</div><div class="cl-f-fb" id="cl-vfb"></div>`;}
   box.classList.remove('in');void box.offsetWidth;box.classList.add('in');
   box.querySelectorAll('.cl-opt').forEach(b=>b.onclick=()=>clAntwoord(+b.dataset.k));
 }
+const CL_SNEL=3500;
+// Lange woorden passen niet in een smalle knop: dan een kleinere letter, zodat ze niet midden in het woord breken.
+function clWoordMaat(t){const l=Math.max(...String(t).split(/\s+/).map(w=>w.length));return l>15?' w3':l>12?' w2':l>10?' w1':'';}
+// Klok van de flits opnieuw starten (na het aftellen of een pauze telt de tijd pas vanaf nu).
+function clFlitsKlok(){const F=CL.flits;if(!F||F.klaar)return;F.t0=performance.now();const tb=document.querySelector('#cl-vraag .cl-f-tijd');if(tb){tb.style.animation='none';void tb.offsetWidth;tb.style.animation='';}}// binnen deze tijd telt een antwoord als snel (+1 extra)
+function clRoep(t,soort){const box=document.getElementById('cl-vraag');if(!box)return;const r=document.createElement('div');r.className='cl-roep '+(soort||'');r.innerHTML=t;box.appendChild(r);setTimeout(()=>r.remove(),900);}
 function clAntwoord(k){
   const F=CL.flits;if(!F||F.klaar||CL.klaar)return;F.klaar=true;
   const goed=k===F.juist;const ms=performance.now()-F.t0;
+  const tb=document.querySelector('#cl-vraag .cl-f-tijd');if(tb)tb.style.animationPlayState='paused';
   const knoppen=[...document.querySelectorAll('#cl-vraag .cl-opt')];knoppen.forEach(b=>b.disabled=true);knoppen[F.juist].classList.add('goed');
   // Leerlaag: meerkeuzevragen via arcLog (mastery + afleiders), begrippen per domein.
   if(F.soort==='vraag')arcLog(F.item,goed,F.o.idx[k],ms);
@@ -1808,19 +1821,24 @@ function clAntwoord(k){
   CL.log.push({soort:F.soort,item:F.item,goed,keuze:F.soort==='vraag'?F.o.idx[k]:null,herh:F.herh,domId:F.soort==='vraag'?F.item.domId:F.item.domId});
   if(CL.tut&&CL.tut.stap===1)setTimeout(()=>clTutVerder(),goed?700:2200);
   if(goed){
-    CL.dq=Math.min(3,CL.dq+.34);CL.reeks++;CL.kennis[0]=Math.min(10,CL.kennis[0]+1);
-    arcSnd('correct');arcHap(10);
-    try{arcFly(arcMid(knoppen[k]),arcMid(document.getElementById('cl-knum')),'<span class="cl-plus">+1</span>',{duur:480,eind:.8,boog:-26});}catch(e){}
+    CL.dq=Math.min(3,CL.dq+.34);CL.reeks++;CL.combo=(CL.combo||0)+1;
+    // Snel en op rij levert meer op: leren wordt de motor van je aanval.
+    const snel=ms<=F.snel,rij=CL.combo>=3;const winst=F.goud?3:1+(snel?1:0)+(rij?1:0);
+    CL.kennis[0]=Math.min(10,CL.kennis[0]+winst);
+    if(F.goud){CL.sterk=true;clDockTik();arcSnd('perfect');arcHap([20,30,40]);clRoep('Koningsvraag! <b>+3</b>','goud');}
+    else{arcSnd(rij?'combo':'correct');arcHap(10);
+      clRoep(snel&&rij?`Snel · reeks ${CL.combo} <b>+${winst}</b>`:snel?`Snel! <b>+${winst}</b>`:rij?`Reeks ${CL.combo} <b>+${winst}</b>`:`<b>+1</b>`,snel||rij?'extra':'');}
+    try{arcFly(arcMid(knoppen[k]),arcMid(document.getElementById('cl-knum')),`<span class="cl-plus">+${winst}</span>`,{duur:420,eind:.8,boog:-26});}catch(e){}
     if(F.herh){const f=document.getElementById('cl-vfb');if(f)f.innerHTML='<span class="cl-f-ok">Onthouden!</span>';}
     if(CL.reeks>=CL_REEKS){CL.reeks=0;if(!CL.sterk){CL.sterk=true;arcSnd('streak');clDockTik();clPopMid('Je volgende kaart is versterkt');}}
-    setTimeout(()=>{if(CL.mode==='strijd'&&!CL.klaar)clFlitsNieuw();},F.herh?750:430);
+    setTimeout(()=>{if(CL.mode==='strijd'&&!CL.klaar)clFlitsNieuw();},F.herh||F.goud?600:240);
   }else{
-    CL.dq=Math.max(1,CL.dq-.5);CL.reeks=0;knoppen[k].classList.add('fout');arcSnd('wrong');arcHap([15,25,15]);
+    CL.dq=Math.max(1,CL.dq-.5);CL.reeks=0;CL.combo=0;knoppen[k].classList.add('fout');arcSnd('wrong');arcHap([15,25,15]);
     if(F.soort!=='vraag')CL.herhaal.push({item:F.item,na:CL.nr+3});
     const f=document.getElementById('cl-vfb');
     const uit=F.soort==='vraag'?(F.item.q.uh||clUitleg(F.item.q,F.o.idx[k])):`<b>${_arcEsc(F.item.t)}</b>: ${_arcEsc(F.item.d)}`;
     if(f)f.innerHTML=`<div class="cl-v-uit">${F.soort==='vraag'?_arcEsc(uit):uit}</div>`;
-    setTimeout(()=>{if(CL.mode==='strijd'&&!CL.klaar)clFlitsNieuw();},2200);
+    setTimeout(()=>{if(CL.mode==='strijd'&&!CL.klaar)clFlitsNieuw();},1400);
   }
 }
 // Na afloop: beheersing per domein bijwerken en gemiste begrippen inplannen.
@@ -1841,7 +1859,7 @@ function clDock(){
   const root=document.getElementById('cl-root');let d=document.getElementById('cl-dock');if(d)d.remove();
   d=document.createElement('div');d.className='cl-dock';d.id='cl-dock';
   const vak=arcVak(ARC.vakId);
-  d.innerHTML=`<div class="cl-dock-kop"><b>${_arcEsc(vak?vak.naam:'Leerstof')}</b><span>Elk goed antwoord geeft 1 kennis. ${CL_REEKS} op rij versterkt je volgende kaart. Wat je mist, komt terug.</span></div>
+  d.innerHTML=`<div class="cl-dock-kop"><b>${_arcEsc(vak?vak.naam:'Leerstof')}</b><span>Goed = 1 kennis, snel of op rij = meer. ${CL_REEKS} op rij versterkt je volgende kaart. Wat je mist, komt terug.</span></div>
     <div class="cl-vraag" id="cl-vraag"></div>
     <div class="cl-info" id="cl-info"></div>
     <div class="cl-hand"><div class="cl-next"><small>Volgende</small><div class="cl-kaart mini" id="cl-next"></div></div>
@@ -1976,7 +1994,7 @@ function clRegels(lobby){
   if(!CL.on||(CL.klaar&&!lobby))return;const was=CL.pauze;CL.pauze=true;
   const o=document.createElement('div');o.className='cl-sheet';
   o.innerHTML=`<div class="cl-sheet-in" role="dialog" aria-label="Spelregels"><h3 class="cl-regels-h">Zo werkt Slagio Clash</h3>
-    <ol class="cl-regels"><li><b>Kennis verdien je met leren</b><span>Tik het juiste begrip: +1 kennis. Je kennis loopt ook langzaam vanzelf op. In de laatste minuut gaat alles twee keer zo snel.</span></li>
+    <ol class="cl-regels"><li><b>Kennis verdien je met leren</b><span>Tik het juiste begrip: +1 kennis. Snel (voor de gouden balk op is): +1 extra. Drie of meer goed op rij: nog +1. Je kennis loopt ook langzaam vanzelf op, en in de laatste minuut twee keer zo snel.</span></li><li><b>Koningsvraag</b><span>Af en toe kleurt de vraag goud. Goed = 3 kennis en je volgende kaart wordt versterkt.</span></li>
     <li><b>${CL_REEKS} goed op rij</b><span>Je volgende kaart is 25% sterker (gouden ring). Wat je fout had, komt later terug.</span></li>
     <li><b>Kaarten kosten kennis</b><span>Sleep een kaart naar jouw helft. Spreuken mag je overal neerzetten. Is een vijandelijke toren gevallen, dan mag je aan die kant verder naar voren.</span></li>
     <li><b>Troepen lopen zelf</b><span>Ze gaan over de dichtstbijzijnde brug naar de dichtstbijzijnde toren, en vechten onderweg met wat ze tegenkomen.</span></li>
@@ -1984,7 +2002,7 @@ function clRegels(lobby){
     <li><b>Kisten en levels</b><span>Winnen levert een kist op. Die open je met goede begrippen. Met genoeg kaarten maak je een kaart een level sterker (+10%). Hogere arena's geven nieuwe kaarten.</span></li></ol>
     <button class="arc-go" data-sluit>Verder spelen</button></div>`;
   document.getElementById('cl-veld').appendChild(o);requestAnimationFrame(()=>o.classList.add('on'));
-  o.addEventListener('click',e=>{if(e.target===o||e.target.closest('[data-sluit]')){o.classList.remove('on');setTimeout(()=>o.remove(),200);CL.pauze=was;}});
+  o.addEventListener('click',e=>{if(e.target===o||e.target.closest('[data-sluit]')){o.classList.remove('on');setTimeout(()=>o.remove(),200);CL.pauze=was;if(!was)clFlitsKlok();}});
 }
 
 
