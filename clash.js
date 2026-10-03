@@ -17,12 +17,18 @@ const CL_W=18,CL_L=32,CL_RIV0=15,CL_RIV1=17,CL_BRUG=[3.5,14.5];
 const CL_TEAM=[
   {c:'#1CB0F6',d:'#1593CF',l:'#8CDCFF',css:'#1CB0F6',naam:'blauw'},
   {c:'#FF4B4B',d:'#D93636',l:'#FFA8A8',css:'#FF4B4B',naam:'rood'}];
+// Acht arena's; elke arena geeft een nieuwe kaart vrij (CL_ARENA_KAART). water: rivierkleuren
+// [basis, diep, licht, schuim]; zonder water de standaard blauwe rivier.
 const CL_ARENAS=[
   {naam:'Oefenveld',min:0,gras:['#A6E066','#9AD65A'],buiten:'#7CC846',buitenD:'#6CB63A',pad:'#F6E0AC',padD:'#E4C78C',boom:['#58CC02','#46A302'],decor:'bos',acc:.45,denk:1.4},
   {naam:'Kasteelweide',min:300,gras:['#9FDC60','#93D155'],buiten:'#72BF43',buitenD:'#63AD38',pad:'#F3DBA2',padD:'#E0C285',boom:['#4FBF2A','#3FA021'],decor:'kasteel',acc:.6,denk:1.05},
   {naam:'Rivierdelta',min:700,gras:['#9ADB7C','#8ED070'],buiten:'#6DC27B',buitenD:'#5DB06B',pad:'#ECD8A8',padD:'#D8BF8C',boom:['#3FBF7A','#2FA066'],decor:'delta',acc:.68,denk:.9},
-  {naam:'Bergpas',min:1200,gras:['#B6D87C','#AACD70'],buiten:'#9FBA8C',buitenD:'#8DA87A',pad:'#E8D5B0',padD:'#D3BD95',boom:['#3F9F6A','#2F8558'],decor:'berg',acc:.76,denk:.78},
-  {naam:'Examenhal',min:2000,gras:['#AADA8E','#9FCF83'],buiten:'#DCD2C1',buitenD:'#CBBFAA',pad:'#F0E6D2',padD:'#DDCFB4',boom:['#58CC02','#46A302'],decor:'hal',acc:.84,denk:.66}];
+  {naam:'Bergpas',min:1200,gras:['#B6D87C','#AACD70'],buiten:'#9FBA8C',buitenD:'#8DA87A',pad:'#E8D5B0',padD:'#D3BD95',boom:['#3F9F6A','#2F8558'],decor:'berg',acc:.74,denk:.82},
+  {naam:'Woestijn',min:1600,gras:['#F2DCA6','#EAD195'],buiten:'#E9C98A',buitenD:'#D9B676',pad:'#E0C79C',padD:'#C9AB7C',boom:['#58A836','#46862A'],decor:'woestijn',acc:.78,denk:.76},
+  {naam:'Winterwoud',min:2100,gras:['#D3ECD6','#C7E3CB'],buiten:'#F2F8FB',buitenD:'#DCEAF2',pad:'#E3E9EE',padD:'#C9D4DD',boom:['#3F8F6A','#2F7558'],decor:'sneeuw',acc:.82,denk:.7,water:['#7FD3F2','#62C2EA','#B4E7F9','#FFFFFF']},
+  {naam:'Vulkaan',min:2700,gras:['#A3B36E','#99A963'],buiten:'#5B4A44',buitenD:'#4A3B36',pad:'#C9AE8E',padD:'#A98E70',boom:['#6B7B44','#566236'],decor:'vulkaan',acc:.86,denk:.64,water:['#FF8A3C','#E8662A','#FFB566','#FFE066']},
+  {naam:'Examenhal',min:3400,gras:['#AADA8E','#9FCF83'],buiten:'#DCD2C1',buitenD:'#CBBFAA',pad:'#F0E6D2',padD:'#DDCFB4',boom:['#58CC02','#46A302'],decor:'hal',acc:.9,denk:.6}];
+const CL_WATER=['#4FC0F3','#3FAEE6','#7AD3F7','#FFFFFF'];
 
 // ── Kaarten ─────────────────────────────────────────────────────────────
 // t: unit | bouw | spreuk. doel: 'grond' | 'alles' | 'gebouw'. snelheid in tegels/s.
@@ -49,10 +55,16 @@ const CL_KAARTEN={
     feit:'Een goed experiment verandert één variabele tegelijk. De rest houd je constant, anders weet je niet wat het effect veroorzaakt.'},
   ram:{wat:'Snel. Rijdt alleen op gebouwen af.',naam:'Stormram',vak:'Geschiedenis',kort:'GS',k:4,t:'unit',n:1,hp:1500,dmg:280,hit:1.6,bereik:.9,v:1.5,doel:'gebouw',r:.7,zeld:1,
     feit:'Stormrammen waren er al bij de Assyriërs. Tegen de middeleeuwse stenen burcht hielp pas het buskruitkanon echt.'},
+  magneet:{wat:'Trekt vijanden naar het midden en raakt ze drie keer.',naam:'Magneetveld',vak:'Natuurkunde',kort:'NA',k:3,t:'spreuk',straal:3,dmg:150,toren:.25,zeld:1,
+    feit:'Een magneet trekt ijzer aan tot waar het veld het sterkst is. Veldlijnen lopen van de noordpool naar de zuidpool.'},
+  mammoet:{wat:'Zware tank. Slaat met zijn slagtanden alles rondom.',naam:'Wolharige mammoet',vak:'Biologie',kort:'BI',k:6,t:'unit',n:1,hp:3600,dmg:180,hit:1.7,bereik:1.1,v:.75,doel:'grond',splash:1.5,r:.95,zeld:2,
+    feit:'De wolharige mammoet leefde in de laatste ijstijd. Een dikke vacht en een vetlaag hielden hem warm: een aanpassing aan een koud klimaat.'},
+  lava:{wat:'Lava valt uit de lucht en laat een brandende plas achter.',naam:'Lavastroom',vak:'Aardrijkskunde',kort:'AK',k:5,t:'spreuk',straal:2.3,dmg:320,brand:55,toren:.35,zeld:3,
+    feit:'Basaltische lava is dun en stroomt ver. Bij ongeveer 1100 °C is het gesteente vloeibaar; afgekoeld wordt het basalt.'},
   kanon:{wat:'Gebouw. Werpt stenen in een parabool, alleen op de grond.',naam:'Paraboolkanon',vak:'Wiskunde',kort:'WI',k:3,t:'bouw',hp:820,dmg:185,hit:.9,bereik:5.5,leeft:30,doel:'grond',r:.8,zeld:0,
     feit:'Een kogel volgt een parabool: y = ax² + bx + c met a < 0. De top ligt bij x = −b / 2a.'},
 };
-const CL_ZELD=[{naam:'Gewoon',c:'#4FA3E0'},{naam:'Zeldzaam',c:'#FF9600'},{naam:'Episch',c:'#B65CFF'}];
+const CL_ZELD=[{naam:'Gewoon',c:'#4FA3E0'},{naam:'Zeldzaam',c:'#FF9600'},{naam:'Episch',c:'#B65CFF'},{naam:'Legendarisch',c:'#14B8A6'}];
 const CL_DECK0=['ridder','boog','elektron','thermiet','reus','tesla','onderzoeker','pijlen'];
 const CL_TOREN={prinses:{hp:1400,dmg:90,hit:.8,bereik:7.5,r:1.5},koning:{hp:2400,dmg:110,hit:1,bereik:7,r:2}};
 
@@ -60,13 +72,31 @@ const CL_TOREN={prinses:{hp:1400,dmg:90,hit:.8,bereik:7.5,r:1.5},koning:{hp:2400
 function clStore(){const s=arcStore();const c=Object.assign({bekers:0,gespeeld:0,gewonnen:0,deck:CL_DECK0.slice(),best:0,kisten:[]},s.clash||{});
   if(!c.coll){c.coll={};CL_DECK0.forEach(id=>c.coll[id]={lvl:1,n:0});}(c.deck||[]).forEach(id=>{if(!c.coll[id])c.coll[id]={lvl:1,n:0};});if(!Array.isArray(c.kisten))c.kisten=[];return c;}
 // Kaarten komen vrij per arena (zoals in Clash Royale); je krijgt ze uit kisten.
-const CL_ARENA_KAART={robot:1,kanon:1,ram:2,ptero:3};
+const CL_ARENA_KAART={robot:1,kanon:1,ram:2,ptero:3,magneet:4,mammoet:5,lava:6};
 const CL_UPGRADE=[0,2,4,10,20,50,100,200];// kaarten nodig voor level 2..8
 const CL_MAXLVL=8;
 function clLvl(id){const c=CL._store||clStore();return (c.coll[id]&&c.coll[id].lvl)||1;}
 function clLvlF(lvl){return 1+.1*(lvl-1);}
-const CL_KIST={hout:{naam:'Houten kist',nodig:4,kaarten:10,soorten:2,kl:'#b7793f'},zilver:{naam:'Zilveren kist',nodig:6,kaarten:24,soorten:3,kl:'#aab4c3'},goud:{naam:'Gouden kist',nodig:10,kaarten:60,soorten:4,kl:'#f5c542'}};
+const CL_KIST={hout:{naam:'Houten kist',nodig:4,kaarten:10,soorten:2,kl:'#C98E46',munten:[10,20]},zilver:{naam:'Zilveren kist',nodig:6,kaarten:24,soorten:3,kl:'#AEB9C6',munten:[25,45]},
+  goud:{naam:'Gouden kist',nodig:10,kaarten:60,soorten:4,kl:'#FFC800',munten:[70,110]},magisch:{naam:'Magische kist',nodig:12,kaarten:120,soorten:5,kl:'#B65CFF',munten:[150,220],episch:true},
+  kroon:{naam:'Kroonkist',nodig:6,kaarten:20,soorten:3,kl:'#1CB0F6',munten:[30,60]}};
+// ── Progressie: kistencyclus, munten, koningslevel ──
+// Kisten komen in een vaste volgorde (zoals in Clash Royale), niet op goed geluk.
+const CL_KISTCYCLUS=['hout','hout','zilver','hout','hout','zilver','hout','goud','hout','zilver','hout','hout','zilver','hout','goud','hout','zilver','hout','zilver','magisch'];
+const CL_GOUD=[0,5,15,35,75,150,300,600];// munten om van level L naar L+1 te gaan
+const CL_KXP=[0,20,50,100,180,300,480,720,1000,1400];// koningslevel 1..10
+const CL_KXP_UPG=[0,4,10,20,40,80,150,300];// XP voor een upgrade naar level L+1
+function clKlvl(c){const x=(c&&c.kxp)||0;let l=1;for(let i=1;i<CL_KXP.length;i++)if(x>=CL_KXP[i])l=i+1;return l;}
+function clKlvlF(l){return 1+.07*(l-1);}
+function clMunten(){try{return typeof getCoins==='function'?getCoins():0;}catch(e){return 0;}}
+function clGeefMunten(n){try{if(n>0&&typeof addCoins==='function')addCoins(n);}catch(e){}}
+function clVandaag(){const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
+function clKroon(c){if(!c.kroon||c.kroon.d!==clVandaag())c.kroon={d:clVandaag(),n:0,open:false};return c.kroon;}
 function clSave(c){const s=arcStore();s.clash=c;arcSave(s);}
+const CL_MUNT='<svg class="cl-munt" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12.6" r="9.6" fill="#E5A400"/><circle cx="12" cy="11.4" r="9.6" fill="#FFC800"/><circle cx="12" cy="11.4" r="6.2" fill="#FFB000"/><path d="M9.6 7.6q2.4-1.6 4.8 0" stroke="#FFE680" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="9.6" fill="none" stroke="#2B2233" stroke-width="1.8"/></svg>';
+function clKlvlInfo(c){const l=clKlvl(c),x=(c&&c.kxp)||0,a=CL_KXP[l-1]||0,b=CL_KXP[l];return {l,max:b==null,pct:b==null?100:Math.min(100,(x-a)/(b-a)*100),nog:b==null?0:b-x};}
+// Koningservaring erbij; geeft het nieuwe level terug als je omhoog gaat.
+function clGeefKxp(c,n){const oud=clKlvl(c);c.kxp=(c.kxp||0)+n;const nu=clKlvl(c);return nu>oud?nu:0;}
 function clArena(b){let a=0;CL_ARENAS.forEach((x,i)=>{if(b>=x.min)a=i;});return a;}
 
 // ── 2D-tekenen in Vonk-stijl ────────────────────────────────────────────
@@ -118,7 +148,7 @@ const clEo=t=>1-Math.pow(1-t,3),clEi=t=>t*t*t;
 function clSeg(t,a,b){return b<=a?(t>=b?1:0):Math.max(0,Math.min(1,(t-a)/(b-a)));}
 function clLerp(a,b,t){return a+(b-a)*t;}
 // [aanloop klaar, klap klaar, weer in rust] in seconden sinds de aanval begon.
-const CL_SLAG={ridder:[.1,.17,.5],robot:[.12,.2,.5],reus:[.18,.24,.62],ram:[.15,.22,.6],boog:[.16,.17,.34],onderzoeker:[.15,.24,.5],ptero:[.08,.14,.36],kanon:[.12,.22,.9],tesla:[.05,.09,.32],elektron:[.06,.12,.3],koning:[.1,.16,.4]};
+const CL_SLAG={mammoet:[.2,.28,.72],ridder:[.1,.17,.5],robot:[.12,.2,.5],reus:[.18,.24,.62],ram:[.15,.22,.6],boog:[.16,.17,.34],onderzoeker:[.15,.24,.5],ptero:[.08,.14,.36],kanon:[.12,.22,.9],tesla:[.05,.09,.32],elektron:[.06,.12,.3],koning:[.1,.16,.4]};
 function clSlag(sw,id,rust,op,neer){const S=CL_SLAG[id];if(!S||sw>=S[2])return rust;
   if(sw<S[0])return clLerp(rust,op,clEo(sw/S[0]));if(sw<S[1])return clLerp(op,neer,clEi(clSeg(sw,S[0],S[1])));return clLerp(neer,rust,clEo(clSeg(sw,S[1],S[2])));}
 // Uitdrukking per moment: rust, boos (aanval), au (geraakt), blij (juichen), slaap, dood.
@@ -424,14 +454,45 @@ function clKanon(e,team){
   cV(()=>G.arc(0,-29,2.8,0,7),'#E8B46A','#C98E46',.6);
   cP([[14,-14],[14,-29],[23.5,-26],[14,-22.5]],tc.c);cP([[14,-27],[19,-25.6],[14,-24.6]],clLt(tc.c,.35));cL([[14,-13],[14,-30]],'#7E4F24',1.5);
 }
-const CL_TEKEN={ridder:(e,t)=>clMens(e,'ridder',t),boog:(e,t)=>clMens(e,'boog',t),onderzoeker:(e,t)=>clMens(e,'onderzoeker',t),
+// Wolharige mammoet: van opzij, met slurf, slagtanden en een dekje in de teamkleur.
+function clMammoet(e,team){
+  if(CL_GL===2)return;
+  const tc=CL_TEAM[team],t=CL.t||0,ph=e.fase||0,f=e.f||0,loopt=!!e.loopt,sw=e.swing==null?9:e.swing;
+  const V=['#9B6A45','#7E5236'],VL='#B8845A',IV=['#F6EEDC','#DCCFB2'];
+  G.save();G.scale(1.1,1.1);
+  const lp=loopt?Math.sin(f):0,bob=loopt?-Math.abs(Math.cos(f))*2.2:Math.sin(t*1.6+ph)*.5;
+  const kop=sw<CL_SLAG.mammoet[2]?clSlag(sw,'mammoet',0,1,-.35):0;
+  // Poten: achterste paar donkerder, om en om optillen.
+  for(const [x,q,voor] of [[-15,lp,0],[9,-lp,0],[-11,-lp,1],[13,lp,1]]){const op=Math.max(0,q)*3.4;
+    cV(()=>G.roundRect(x-4.6,-17-op,9.2,17,3.6),voor?V[0]:V[1],voor?V[1]:clDk(V[1],.2),x+1.4);for(const dx of [-2.4,0,2.4])cE(x+dx,-1.4-op,1.3,1,IV[0]);}
+  G.translate(0,bob);G.rotate(loopt?lp*.025:0);
+  // Romp met vacht.
+  cV(()=>{G.moveTo(-25,-14);G.quadraticCurveTo(-30,-40,-10,-46);G.quadraticCurveTo(12,-51,22,-38);G.quadraticCurveTo(28,-24,21,-12);G.quadraticCurveTo(0,-8,-25,-14);G.closePath();},V[0],V[1],8);
+  for(let i=0;i<9;i++){const x=-22+i*5.2;cL([[x,-13.5],[x+1.4,-8.6+Math.sin(i*2.1+t*3)*.6],[x+2.6,-12.6]],V[1],2);}
+  for(const [x,y] of [[-18,-36],[-8,-42],[4,-44],[-14,-26]])cA(x,y,3.6,.3,Math.PI-.3,VL,1.4);
+  cV(()=>G.roundRect(-14,-46,22,16,5),tc.c,tc.d,4);cR(-14,-34.6,22,2.4,1.2,'#FFC800');cP([[-3,-44],[0,-40],[-3,-36],[-6,-40]],'#FFC800');
+  cGl(-6,-36,14,3.6,4.3,2);
+  // Kop met slagtanden en slurf: gaat omhoog in de aanloop en slaat neer.
+  G.save();G.translate(19,-34);G.rotate(-kop*.42);
+  cV(()=>{G.moveTo(-4,-12);G.quadraticCurveTo(8,-18,15,-6);G.quadraticCurveTo(17,6,9,10);G.quadraticCurveTo(-2,8,-5,0);G.closePath();},V[0],V[1],10);
+  cV(()=>G.ellipse(-1,-2,5,8,-.2,0,7),V[1],clDk(V[1],.2),2);
+  const zw=Math.sin(t*2+ph)*.18+(loopt?Math.sin(f)*.15:0)-kop*.5;
+  G.save();G.translate(12,4);G.rotate(zw);G.strokeStyle=ck(V[1]);G.lineWidth=6;G.lineCap='round';G.beginPath();G.moveTo(0,0);G.quadraticCurveTo(4,9,1,16);G.quadraticCurveTo(-1,19,2,20);G.stroke();
+  G.strokeStyle=ck(V[0]);G.lineWidth=3.6;G.beginPath();G.moveTo(-.6,0);G.quadraticCurveTo(3.4,9,.4,16);G.stroke();G.restore();
+  for(const s of [0,1]){G.strokeStyle=ck(s?IV[0]:IV[1]);G.lineWidth=s?3.2:4.2;G.lineCap='round';G.beginPath();G.moveTo(8,5);G.quadraticCurveTo(22,16,27,3);G.stroke();}
+  if(!e.dood){cE(9.5,-4,2.1,1.4,'#FFE066');cC(10,-4,.8,CL_INKT);cL([[6.4,-7.4],[12.4,-5.6]],'#3B2A20',2);}
+  else{cL([[8,-6],[11,-2]],CL_INKT,1.3);cL([[8,-2],[11,-6]],CL_INKT,1.3);}
+  G.restore();
+  G.restore();
+}
+const CL_TEKEN={mammoet:clMammoet,ridder:(e,t)=>clMens(e,'ridder',t),boog:(e,t)=>clMens(e,'boog',t),onderzoeker:(e,t)=>clMens(e,'onderzoeker',t),
   robot:clRobot,reus:clReus,elektron:clElektron,ptero:clPtero,ram:clRam,tesla:clTesla,kanon:clKanon};
 // Hoogte (in tegels) van de levensbalk boven een figuur.
-const CL_H2D={ridder:2.85,boog:2.3,onderzoeker:2.45,elektron:1.35,robot:3.25,reus:3.75,ptero:3.5,ram:2.6,tesla:3.6,kanon:2.2};
+const CL_H2D={mammoet:3.3,ridder:2.85,boog:2.3,onderzoeker:2.45,elektron:1.35,robot:3.25,reus:3.75,ptero:3.5,ram:2.6,tesla:3.6,kanon:2.2};
 // Kader (in tekeneenheden, na schalen) waarbinnen een figuur getekend wordt.
 // Kader van een figuur in tekeneenheden, geschaald naar de figuurgrootte.
 const _clKd={};function clKd(id){return _clKd[id]||(_clKd[id]=(CL_KADER[id]||CL_KADER.ridder).map(v=>v*CL_US/1.1));}
-const CL_KADER={ridder:[-44,-86,50,14],boog:[-38,-62,42,14],onderzoeker:[-32,-64,32,12],elektron:[-26,-34,24,8],robot:[-34,-82,60,12],reus:[-58,-92,58,14],
+const CL_KADER={mammoet:[-44,-82,66,14],ridder:[-44,-86,50,14],boog:[-38,-62,42,14],onderzoeker:[-32,-64,32,12],elektron:[-26,-34,24,8],robot:[-34,-82,60,12],reus:[-58,-92,58,14],
   ptero:[-48,-94,52,12],ram:[-58,-62,52,10],tesla:[-26,-92,26,10],kanon:[-46,-74,36,10],lijk:[-92,-90,92,28],toren:[-54,-106,66,42]};
 
 // Contourlijn langs het laatst getekende pad (voor de torens, die direct getekend worden).
@@ -554,7 +615,20 @@ function clRiet(){for(const [x,h] of [[-3,14],[0,18],[3,12]]){cL([[x,0],[x+1,-h]
 function clPaal(kl){cV(()=>G.roundRect(-1.3,-36,2.6,36,1.2),'#9B6634','#7E4F24',.4);const w=0;cP([[0,-35],[14,-32],[0,-27]],kl);cP([[0,-33.5],[8,-32],[0,-30.5]],clLt(kl,.35));cC(0,-36.5,1.8,'#FFC800');}
 function clZuil(){cV(()=>G.roundRect(-6,-46,12,46,2),'#F1EBDF','#D9CFBE',2);for(const x of [-3,0,3])cL([[x,-42],[x,-6]],'#E2D8C7',1);cV(()=>G.roundRect(-8.5,-51,17,5,2),'#E8E0D0','#D2C6B2',4);cV(()=>G.roundRect(-8.5,-4.5,17,4.5,1.5),'#E8E0D0','#D2C6B2',4);}
 function clPot(){cV(()=>cPoly([[-6,0],[-7.5,-9],[7.5,-9],[6,0]]),'#E0874A','#C46E33',1);cR(-8,-10.5,16,2.6,1.2,'#C46E33');cC(-3,-14,5,'#58CC02');cC(3,-15,5,'#46A302');cC(0,-18.5,5.2,'#58CC02');cC(-1.4,-19.4,1.8,'#89E219');}
-const CL_DKADER={boom:[-22,-46,22,4],den:[-16,-38,16,4],struik:[-16,-18,16,4],rots:[-14,-16,14,3],riet:[-9,-22,9,2],paal:[-3,-40,16,2],zuil:[-11,-54,11,2],pot:[-10,-26,10,2],steen:[-14,-16,14,3]};
+function clCactus(R){cV(()=>G.roundRect(-4,-32,8,32,4),'#58A836','#46862A',.8);for(const x of [-1.6,1.6])cL([[x,-29],[x,-2]],'#46862A',.8);
+  cV(()=>G.roundRect(-12,-22,5.4,11,2.7),'#58A836','#46862A',-9);cR(-9,-14,6,4.4,2,'#58A836');cV(()=>G.roundRect(6.6,-27,5.4,9,2.7),'#58A836','#46862A',9.5);cR(3.6,-21,5,4.4,2,'#4E9A30');
+  if(R&&R()<.5){cC(0,-33,2.4,'#FF8FC7');cC(0,-33,1,'#FFC800');}}
+function clPalm(){for(let i=0;i<6;i++){const x=i*1.3,y=-i*7-3;cV(()=>G.ellipse(x,y,3.6,4.2,0,0,7),'#B07A45','#8E5E32',x+1);}
+  for(const [a,l] of [[-2.6,17],[-1.9,15],[-.9,16],[-.2,15],[.6,14]]){G.save();G.translate(7,-44);G.rotate(a);cV(()=>{G.moveTo(0,0);G.quadraticCurveTo(l*.5,-5,l,2);G.quadraticCurveTo(l*.5,-1,0,1.6);G.closePath();},'#58CC02','#46A302',l*.5);G.restore();}
+  for(const x of [5,8.5])cC(x,-42,1.8,'#8E5E32');}
+function clZandrots(s){cV(()=>cPoly([[-12*s,0],[-10*s,-9*s],[-3*s,-14*s],[8*s,-11*s],[12*s,-3*s],[11*s,0]]),'#E8C48A','#C99A5A',1*s);for(const y of [-4,-8])cL([[-9*s,y*s],[9*s,(y-1)*s]],'#D4A96A',1.2);}
+function clIjsrots(){cV(()=>cPoly([[-10,0],[-8,-12],[-3,-20],[2,-11],[6,-17],[10,-6],[9,0]]),'#E6F6FD','#B9DDEE',1);cL([[-6,-10],[-3,-17]],'#FFFFFF',1.4);cL([[3,-10],[6,-14]],'#FFFFFF',1.2);}
+function clSneeuwpop(){cV(()=>G.arc(0,-7,7.5,0,7),'#FFFFFF','#DCEAF2',2);cV(()=>G.arc(0,-19,5.5,0,7),'#FFFFFF','#DCEAF2',1.6);cR(-6,-15,12,2.6,1.2,'#FF4B4B');cR(2,-15,2.6,6,1,'#D93636');
+  cC(-1.8,-20,.9,CL_INKT);cC(1.8,-20,.9,CL_INKT);cP([[0,-18.6],[5,-17.6],[0,-17]],'#FF9600');cL([[-6,-11],[-12,-15]],'#8E5E32',1.2);cL([[6,-11],[12,-15]],'#8E5E32',1.2);cR(-4.4,-27,8.8,4,1,'#4B4B4B');cR(-6,-23.6,12,1.6,.8,'#4B4B4B');}
+function clDoodboom(){G.strokeStyle=ck('#5B4A44');G.lineCap='round';G.lineWidth=4;G.beginPath();G.moveTo(0,0);G.lineTo(1,-20);G.stroke();G.lineWidth=2.4;G.beginPath();G.moveTo(1,-12);G.lineTo(-7,-20);G.moveTo(.6,-17);G.lineTo(8,-25);G.moveTo(1,-20);G.lineTo(-2,-30);G.moveTo(-7,-20);G.lineTo(-9,-25);G.stroke();}
+function clLavarots(){cV(()=>cPoly([[-11,0],[-9,-9],[-2,-14],[7,-11],[11,-3],[10,0]]),'#5B5F6B','#3C3C3C',1);cL([[-6,-6],[-2,-9],[1,-5],[5,-8]],'#FF8A3C',1.6);cL([[-6,-6],[-2,-9],[1,-5],[5,-8]],'#FFE066',.6);}
+function clLavaplasje(){cE(0,0,11,4.6,'#3C2A24');cE(0,-.4,9.6,3.8,'#E8662A');cE(-1,-.8,6,2.4,'#FF8A3C');cE(-2,-1,2.6,1,'#FFC800');}
+const CL_DKADER={cactus:[-14,-38,14,3],palm:[-14,-56,26,3],zandrots:[-14,-17,14,3],ijsrots:[-12,-23,12,3],sneeuwpop:[-14,-30,14,3],doodboom:[-11,-33,11,3],lavarots:[-13,-16,13,3],lavaplas:[-13,-6,13,6],boom:[-22,-46,22,4],den:[-16,-38,16,4],struik:[-16,-18,16,4],rots:[-14,-16,14,3],riet:[-9,-22,9,2],paal:[-3,-40,16,2],zuil:[-11,-54,11,2],pot:[-10,-26,10,2],steen:[-14,-16,14,3]};
 function clBouwBg(){
   const ar=CL_ARENAS[CL.arena||0],S=CL.S,dpr=Math.min(CL.dpr,2);
   const X0=-8,X1=26,Z0=-5,Z1=36,PT=3*S;
@@ -573,7 +647,7 @@ function clBouwBg(){
     for(let i=0;i<320;i++){const x=X0+R()*(X1-X0),z=Z0+R()*(Z1-Z0);if(x>-1&&x<19&&z>-1&&z<33)continue;const [a,b]=P(x,z);cL([[a-2.2,b-3.4],[a-.6,b]],ar.buitenD,1.3);cL([[a+.4,b-4.2],[a,b]],ar.buitenD,1.3);cL([[a+2.4,b-3],[a+.6,b]],ar.buitenD,1.3);}}
   // Veld: geblokt gras met lichte vlekken en plukjes.
   for(let x=0;x<CL_W;x++)for(let z=0;z<CL_L;z++){const [a,b]=P(x,z+1);g.fillStyle=ar.gras[(x+z)%2];g.fillRect(a,b,S+.5,S*CL_SY+.5);}
-  for(let i=0;i<46;i++){const x=.5+R()*17,z=.5+R()*31;if(Math.abs(z-16)<1.6)continue;const [a,b]=P(x,z);g.globalAlpha=.22;cE(a,b,S*(.6+R()*1.1),S*CL_SY*(.35+R()*.5),gl);g.globalAlpha=1;}
+  for(let i=0;i<46;i++){const x=.5+R()*17,z=.5+R()*31;if(Math.abs(z-16)<1.6)continue;const [a,b]=P(x,z);g.globalAlpha=ar.decor==='sneeuw'?.7:ar.decor==='vulkaan'?.18:.22;cE(a,b,S*(.6+R()*1.1),S*CL_SY*(.35+R()*.5),ar.decor==='sneeuw'?'#FFFFFF':ar.decor==='vulkaan'?'#5B4A44':gl);g.globalAlpha=1;}
   for(let i=0;i<300;i++){const x=.3+R()*17.4,z=.3+R()*31.4;if(Math.abs(z-16)<1.6)continue;const [a,b]=P(x,z);const kl=R()<.7?gd:gl;
     cL([[a-1.8,b-2.8],[a-.4,b]],kl,1.1);cL([[a+.3,b-3.4],[a,b]],kl,1.1);cL([[a+2,b-2.4],[a+.5,b]],kl,1.1);}
   // Zachte rand langs de muren (diepte).
@@ -586,16 +660,17 @@ function clBouwBg(){
     for(let d=.25,rij=0;d<L-.1;d+=.5,rij++)for(let o=-br/2+.3+(rij%2)*.22;o<br/2-.2;o+=.48){if(R()<.18)continue;const x=x0+(x1-x0)*d/L+nx*o+(R()-.5)*.08,z=z0+(z1-z0)*d/L+nz*o+(R()-.5)*.08;const [a,b]=P(x,z);
       const rx=S*(.16+R()*.05),ry=rx*.72;cE(a,b+1.2,rx,ry,keiD);cE(a,b,rx,ry,kei);cE(a-rx*.3,b-ry*.35,rx*.35,ry*.3,'rgba(255,255,255,.55)');}}
   // Rivier: twee blauwtinten, een stenen oever en wat stenen in het water.
-  {const [a,b]=P(X0,CL_RIV1),[a2,b2]=P(X1,CL_RIV0);g.fillStyle='#4FC0F3';g.fillRect(a,b,a2-a,b2-b);
-    g.fillStyle='#3FAEE6';g.fillRect(a,b,a2-a,S*.42);g.fillStyle='#7AD3F7';g.fillRect(a,b+(b2-b)*.55,a2-a,(b2-b)*.18);
+  {const WA=ar.water||CL_WATER;const [a,b]=P(X0,CL_RIV1),[a2,b2]=P(X1,CL_RIV0);g.fillStyle=WA[0];g.fillRect(a,b,a2-a,b2-b);
+    g.fillStyle=WA[1];g.fillRect(a,b,a2-a,S*.42);g.fillStyle=WA[2];g.fillRect(a,b+(b2-b)*.55,a2-a,(b2-b)*.18);
     // stenen oever aan de overkant (je ziet de voorkant)
     const oh=S*.42;g.fillStyle='#B9A886';g.fillRect(a,b-oh,a2-a,oh);
     for(let x=a-((P(0,0)[0]-a)%(S*.9)),r=0;x<a2;x+=S*.9,r++){g.fillStyle=r%2?'#CFC0A2':'#C6B795';g.beginPath();g.roundRect(x+1,b-oh+1.5,S*.9-2,oh*.5-2,2.5);g.fill();g.fillStyle=r%2?'#C6B795':'#CFC0A2';g.beginPath();g.roundRect(x+1+S*.45,b-oh*.5+1,S*.9-2,oh*.5-2,2.5);g.fill();}
     g.fillStyle='#A7956F';g.fillRect(a,b-2,a2-a,2);
     g.fillStyle=clDk(ar.gras[0],.12);g.fillRect(a,b-oh-S*.12,a2-a,S*.12);
-    g.fillStyle='#A9E3FB';g.fillRect(a,b2-3,a2-a,3);g.fillStyle=clDk(ar.gras[1],.15);g.fillRect(a,b2,a2-a,2);}
+    g.fillStyle=WA[2];g.fillRect(a,b2-3,a2-a,3);g.fillStyle=clDk(ar.gras[1],.15);g.fillRect(a,b2,a2-a,2);}
   for(let i=0;i<10;i++){const x=X0+R()*(X1-X0);if(Math.abs(x-3.5)<2.2||Math.abs(x-14.5)<2.2)continue;const z=R()<.5?15.2:16.75,[a,b]=P(x,z);
-    if(ar.decor==='delta'){g.save();g.translate(a,b);g.scale(k,k);cE(0,0,5.4,2.6,'#58CC02');cP([[0,0],[5.4,-1],[4.4,1.6]],'#4FC0F3');if(R()<.5){cC(-1,-1.6,1.8,'#FF8FC7');cC(-1,-1.6,.7,'#FFC800');}g.restore();}
+    if(ar.decor==='delta'){g.save();g.translate(a,b);g.scale(k,k);cE(0,0,5.4,2.6,'#58CC02');cP([[0,0],[5.4,-1],[4.4,1.6]],CL_WATER[0]);if(R()<.5){cC(-1,-1.6,1.8,'#FF8FC7');cC(-1,-1.6,.7,'#FFC800');}g.restore();}
+    else if(ar.decor==='sneeuw'){g.save();g.translate(a,b);g.scale(k,k);cP([[-7,0],[-4,-2.4],[5,-2],[8,.4],[2,2]],'#FFFFFF');cP([[-7,0],[2,2],[8,.4],[6,1.6],[-4,2]],'#CFE8F4');g.restore();}
     else{const r=clSticker(CL_DKADER.steen,k*.7*dpr,()=>clRots(.9,R()<.3),0,Math.max(1.5,k*.7*dpr*1.3));g.drawImage(r.c,0,0,r.w,r.h,a+(CL_DKADER.steen[0]*k*.7*dpr-4)/dpr,b+(CL_DKADER.steen[1]*k*.7*dpr-4)/dpr,r.w/dpr,r.h/dpr);}}
   // Bruggen: planken met spijkers, palen met kapjes en een touwleuning.
   for(const bx of CL_BRUG){const [a,b]=P(bx-1.55,CL_RIV1+.5),[a2,b2]=P(bx+1.55,CL_RIV0-.5),bw=a2-a,bh=b2-b;
@@ -624,19 +699,22 @@ function clBouwBg(){
   for(let i=0;i<130;i++){const kant=R()<.5;const x=kant?X0+R()*(-1.2-X0):19.2+R()*(X1-19.2),z=Z0+R()*(Z1-Z0);if(Math.abs(z-16)<1.6){dec.push({x,z,t:ar.decor==='hal'?'pot':'riet',s:1});continue;}
     let t;const r=R();
     if(ar.decor==='berg')t=r<.5?'den':r<.75?'rots':'struik';
+    else if(ar.decor==='woestijn')t=r<.34?'cactus':r<.52?'palm':r<.74?'zandrots':'niets';
+    else if(ar.decor==='sneeuw')t=r<.55?'den':r<.72?'ijsrots':r<.8?'sneeuwpop':'niets';
+    else if(ar.decor==='vulkaan')t=r<.32?'doodboom':r<.62?'lavarots':r<.76?'lavaplas':'niets';
     else if(ar.decor==='hal')t=r<.25?'zuil':r<.4?'pot':'niets';
     else if(ar.decor==='kasteel')t=r<.55?'boom':r<.7?'struik':r<.8?'paal':'bloem';
     else t=r<.6?'boom':r<.78?'struik':r<.88?'rots':'bloem';
     if(t!=='niets')dec.push({x,z,t,s:.85+R()*.5,kl:kies(BL)});}
-  for(let i=0;i<40;i++){const x=-1+R()*20,z=R()<.5?Z0+R()*(-1.4-Z0):33.6+R()*(Z1-33.6);dec.push({x,z,t:ar.decor==='berg'?'den':ar.decor==='hal'?'pot':R()<.6?'boom':'struik',s:.8+R()*.4,kl:kies(BL)});}
-  for(let i=0;i<40;i++){const x=R()<.5?.35+R()*.8:16.85+R()*.8,z=.6+R()*30.8;if(Math.abs(z-16)<1.8||Math.abs(z-6.5)<2.2||Math.abs(z-25.5)<2.2)continue;dec.push({x,z,t:'bloem',s:1,kl:kies(BL)});}
+  for(let i=0;i<40;i++){const x=-1+R()*20,z=R()<.5?Z0+R()*(-1.4-Z0):33.6+R()*(Z1-33.6);dec.push({x,z,t:ar.decor==='berg'||ar.decor==='sneeuw'?'den':ar.decor==='hal'?'pot':ar.decor==='woestijn'?(R()<.5?'cactus':'palm'):ar.decor==='vulkaan'?(R()<.5?'doodboom':'lavarots'):R()<.6?'boom':'struik',s:.8+R()*.4,kl:kies(BL)});}
+  if(!['woestijn','sneeuw','vulkaan'].includes(ar.decor))for(let i=0;i<40;i++){const x=R()<.5?.35+R()*.8:16.85+R()*.8,z=.6+R()*30.8;if(Math.abs(z-16)<1.8||Math.abs(z-6.5)<2.2||Math.abs(z-25.5)<2.2)continue;dec.push({x,z,t:'bloem',s:1,kl:kies(BL)});}
   dec.sort((a,b)=>b.z-a.z);
   for(const d of dec){const [a,b]=P(d.x,d.z);
     if(d.t==='bloem'){g.save();g.translate(a,b);g.scale(k,k);clBloem(d.kl);g.restore();continue;}
     const K=CL_DKADER[d.t],px=k*d.s*dpr;
-    if(d.t==='boom'||d.t==='den'||d.t==='struik'||d.t==='rots'||d.t==='zuil'||d.t==='pot'){g.globalAlpha=.16;cE(a+3*k*d.s,b,(d.t==='boom'?14:d.t==='den'?11:10)*k*d.s,4.4*k*d.s,'#1E3A10');g.globalAlpha=1;}
+    if(['boom','den','struik','rots','zuil','pot','cactus','palm','zandrots','ijsrots','sneeuwpop','lavarots'].includes(d.t)){g.globalAlpha=.16;cE(a+3*k*d.s,b,(d.t==='boom'?14:d.t==='den'?11:10)*k*d.s,4.4*k*d.s,'#1E3A10');g.globalAlpha=1;}
     const r=clSticker(K,px,()=>{
-      if(d.t==='boom')clBoom(1,ar.boom,R);else if(d.t==='den')clDen(ar.boom,ar.decor==='berg');else if(d.t==='struik')clStruik(ar.boom,R);else if(d.t==='rots')clRots(1,R()<.4);
+      if(d.t==='boom')clBoom(1,ar.boom,R);else if(d.t==='den')clDen(ar.boom,ar.decor==='berg'||ar.decor==='sneeuw');else if(d.t==='cactus')clCactus(R);else if(d.t==='palm')clPalm();else if(d.t==='zandrots')clZandrots(1);else if(d.t==='ijsrots')clIjsrots();else if(d.t==='sneeuwpop')clSneeuwpop();else if(d.t==='doodboom')clDoodboom();else if(d.t==='lavarots')clLavarots();else if(d.t==='lavaplas')clLavaplasje();else if(d.t==='struik')clStruik(ar.boom,R);else if(d.t==='rots')clRots(1,R()<.4);
       else if(d.t==='riet')clRiet();else if(d.t==='paal')clPaal(d.kl==='#FFFFFF'?'#FFC800':d.kl);else if(d.t==='zuil')clZuil();else if(d.t==='pot')clPot();},0,Math.max(1.5,px*1.3));
     g.drawImage(r.c,0,0,r.w,r.h,a+(K[0]*px-4)/dpr,b+(K[1]*px-4)/dpr,r.w/dpr,r.h/dpr);}
   G=oud;
@@ -647,10 +725,10 @@ function clGolven(){
   for(const [x0,x1] of [[-8,CL_BRUG[0]-1.6],[CL_BRUG[0]+1.6,CL_BRUG[1]-1.6],[CL_BRUG[1]+1.6,26]]){const [a,b]=clProj(x0,0,CL_RIV1),[a2,b2]=clProj(x1,0,CL_RIV0);G.rect(a,b,a2-a,b2-b);}
   G.clip();
   const [ax,by]=clProj(-8,0,CL_RIV1),[,by2]=clProj(-8,0,CL_RIV0),[ax2]=clProj(26,0,CL_RIV1);
-  G.fillStyle='rgba(255,255,255,.7)';G.beginPath();G.moveTo(ax,by);for(let x=ax;x<=ax2;x+=6)G.lineTo(x,by+S*.12+Math.sin(x*.12+t*2.2)*S*.05);G.lineTo(ax2,by);G.closePath();G.fill();
-  G.beginPath();G.moveTo(ax,by2);for(let x=ax;x<=ax2;x+=6)G.lineTo(x,by2-S*.1-Math.sin(x*.1-t*1.8)*S*.05);G.lineTo(ax2,by2);G.closePath();G.fill();
+  const WA=(CL_ARENAS[CL.arena||0].water)||CL_WATER;G.save();G.globalAlpha=.7;G.fillStyle=WA[3];G.beginPath();G.moveTo(ax,by);for(let x=ax;x<=ax2;x+=6)G.lineTo(x,by+S*.12+Math.sin(x*.12+t*2.2)*S*.05);G.lineTo(ax2,by);G.closePath();G.fill();
+  G.beginPath();G.moveTo(ax,by2);for(let x=ax;x<=ax2;x+=6)G.lineTo(x,by2-S*.1-Math.sin(x*.1-t*1.8)*S*.05);G.lineTo(ax2,by2);G.closePath();G.fill();G.restore();
   G.globalAlpha=.55;
-  for(let i=0;i<22;i++){const x=-8+((i*3.1+t*(.5+(i%3)*.15))%34),z=15.5+(i%3)*.45;const [a,b]=clProj(x,0,z);cL([[a,b],[a+S*.7,b]],'#FFFFFF',1.6);}
+  for(let i=0;i<22;i++){const x=-8+((i*3.1+t*(.5+(i%3)*.15))%34),z=15.5+(i%3)*.45;const [a,b]=clProj(x,0,z);cL([[a,b],[a+S*.7,b]],WA[3],1.6);}
   G.globalAlpha=1;
   for(let i=0;i<9;i++){const fase=(t*.7+i*.37)%1,x=-6+((i*4.3)%30),z=15.4+((i*.53)%1.3),[a,b]=clProj(x,0,z),s=S*.16*Math.sin(fase*Math.PI);
     if(s>.5)cP([[a,b-s],[a+s*.3,b],[a,b+s],[a-s*.3,b]],'#FFFFFF');}
@@ -679,15 +757,16 @@ function clFit(){
 // ── Entiteiten ──────────────────────────────────────────────────────────
 function clHpBar(e){
   const b=document.createElement('div');b.className='cl-hp t'+e.team+(e.soort==='toren'?' toren '+e.sub:'');
-  b.innerHTML=e.soort==='toren'?`<i></i><b>${Math.ceil(e.hp)}</b>`:'<i></i>';
+  b.innerHTML=e.soort==='toren'?`<u>${e.kl||1}</u><i></i><b>${Math.ceil(e.hp)}</b>`:'<i></i>';
   CL.bars.appendChild(b);e.bar=b;e.barI=b.querySelector('i');e.barB=b.querySelector('b');
 }
 function clNieuw(e){e.id=++CL.nid;e.cd=e.cd==null?.5:e.cd;e.tgt=null;e.herzie=0;e.fase=Math.random()*6;e.hoek=e.team?0:Math.PI;e.hitT=0;e.swing=9;e.born=CL.t;e.f=0;
   e.m=e.m||{};e.m.dir=e.team?-1:1;e.rug=!e.team&&e.soort==='unit';
   CL.ents.push(e);clHpBar(e);return e;}
 function clMaakToren(sub,team,x,z){
-  const d=CL_TOREN[sub];
-  return clNieuw({soort:'toren',sub,team,x,z,hp:d.hp,max:d.hp,r:d.r,bereik:d.bereik,dmg:d.dmg,hit:d.hit,doel:'alles',m:{},actief:sub==='prinses',hoogte:sub==='koning'?3.3:2.85,cd:1});
+  // Torens groeien mee met je koningslevel; de tegenstander heeft het level van de arena.
+  const d=CL_TOREN[sub];const kl=team?Math.min(10,1+(CL.arena||0)):clKlvl(CL._store||clStore());const f=clKlvlF(kl);
+  return clNieuw({soort:'toren',sub,team,x,z,kl,hp:d.hp*f,max:d.hp*f,r:d.r,bereik:d.bereik,dmg:d.dmg*f,hit:d.hit,doel:'alles',m:{},actief:sub==='prinses',hoogte:sub==='koning'?3.3:2.85,cd:1});
 }
 const CL_FORM={1:[[0,0]],2:[[-.45,0],[.45,0]],3:[[0,.4],[-.45,-.3],[.45,-.3]],4:[[-.4,.4],[.4,.4],[-.4,-.4],[.4,-.4]]};
 function clInzet(id,team,x,z,sterk){
@@ -793,11 +872,12 @@ function clAanval(e,o){
   if(e.soort==='toren'&&e.sub==='koning')setTimeout(()=>{if(!CL.on)return;const m=e.m.mik!=null?e.m.mik:-.35,mx=e.x+.8+Math.cos(m)*.85,my=1.25-Math.sin(m)*.85;clMond(mx,my,e.z,m);clPoef(mx,e.z,my-.3,2,0xE8E4DC,.7);},160);
   const kind=e.soort==='toren'?(e.sub==='koning'?'kogel':'pijl'):({boog:'pijl',onderzoeker:'fles',ptero:'spuug',kanon:'parabool',tesla:'bliksem'})[e.kaart];
   if(kind==='bliksem'){clBliksem(e,o);clSchade(o,e.dmg,e);clFx('bliksem');return;}
-  if(!kind){const zwaar=e.kaart==='reus'||e.kaart==='ram';
+  if(!kind){const zwaar=e.kaart==='reus'||e.kaart==='ram'||e.kaart==='mammoet';
     setTimeout(()=>{if(!CL.on||!clLevend(o))return;clSchade(o,e.dmg,e);clFx(zwaar?'dreun':'zwaard');
       const hx=(e.x+o.x)/2+(o.x-e.x)*.25,hz=(e.z+o.z)/2+(o.z-e.z)*.25,hy=o.lucht?2.4:1;
       clKlap(hx,hy,hz,zwaar?'#FFC800':'#FFFFFF',zwaar?1.3:.9);clVonk(o.x,hy,o.z,zwaar?'#FFC800':'#FFFFFF',zwaar?7:5);
-      if(zwaar){clSchud(.16);clStof(o.x,o.z,.9);if(e.kaart==='reus')clDecal(e.x+(o.x-e.x)*.5,e.z+(o.z-e.z)*.5,.9,'barst');}},zwaar?220:110);return;}
+      if(zwaar){clSchud(.16);clStof(o.x,o.z,.9);if(e.kaart==='reus'||e.kaart==='mammoet')clDecal(e.x+(o.x-e.x)*.5,e.z+(o.z-e.z)*.5,.9,'barst');}
+      if(e.splash)for(const v of CL.ents.slice())if(v!==o&&v.team!==e.team&&!v.dood&&clKanRaken(e,v)&&Math.hypot(v.x-o.x,v.z-o.z)<=e.splash+(v.r||.4)*.5)clSchade(v,e.dmg,e);},zwaar?(e.kaart==='mammoet'?280:220):110);return;}
   const hoog=e.soort==='toren'?(e.sub==='koning'?1.35:2.15):e.lucht?2.5:1.3;
   const x0=e.soort==='toren'&&e.sub==='koning'?e.x+.9:e.x;
   const vuur=()=>{if(!CL.on||e.dood&&e.soort!=='toren')return;clFx(kind==='pijl'?'pijl':kind==='kogel'||kind==='parabool'?'kanon':'worp');clProjectiel({kind,team:e.team,x:x0,y:hoog,z:e.z,tgt:o,dmg:e.dmg,splash:e.splash,bron:e});};
@@ -818,7 +898,7 @@ function clProjStap(dt){
     const x=p.x0+(p.tx-p.x0)*k,z=p.z0+(p.tz-p.z0)*k,y=p.y0+(p.ty-p.y0)*k+Math.sin(k*Math.PI)*p.boog;
     if(dt>0){p.vx=x-p.wx;p.vy=y-p.wy;p.vz=z-p.wz;}p.wx=x;p.wy=y;p.wz=z;p.rot+=dt*9;
     (p.spoor=p.spoor||[]).push([x,y,z]);if(p.spoor.length>6)p.spoor.shift();
-    if((p.kind==='kogel'||p.kind==='parabool'||p.kind==='spuug'||p.kind==='thermiet')&&!CL.lite&&Math.random()<.5)clPoef(x,z,y-.3,1,p.kind==='spuug'||p.kind==='thermiet'?0xFFB066:0xEFEBE4,p.kind==='thermiet'?.8:.35);
+    if((p.kind==='kogel'||p.kind==='parabool'||p.kind==='spuug'||p.kind==='thermiet'||p.kind==='lava')&&!CL.lite&&Math.random()<.5)clPoef(x,z,y-.3,1,p.kind==='spuug'||p.kind==='thermiet'||p.kind==='lava'?0xFFB066:0xEFEBE4,p.kind==='thermiet'?.8:.35);
     if(k>=1){CL.proj=CL.proj.filter(q=>q!==p);clInslag(p);}
   }
 }
@@ -836,6 +916,7 @@ function clTekenProj(p){
   else if(p.kind==='parabool'){G.rotate(p.rot);cV(()=>cPoly([[-6,-3],[-2,-6.5],[5,-5],[6.5,1],[2,6],[-5,4.5]]),'#CFCAC2','#ABA59C',1);cGl(0,0,3.5,3.5,4.5,1.3);}
   else if(p.kind==='fles'){G.rotate(p.rot);cR(-1.3,-8,2.6,4,1,'#DDF4FF');cC(0,0,4.4,'#E8F7FF');G.save();G.beginPath();G.arc(0,0,4.4,0,7);G.clip();cR(-6,0,12,6,0,'#58CC02');G.restore();cR(-1.6,-9.2,3.2,2,1,'#C98E46');cGl(0,0,3,3.6,4.6,1.1);}
   else if(p.kind==='spuug'){const f=1+Math.sin(CL.t*40)*.12;cC(0,0,6.4*f,'#FF9600');cC(-.6,-.6,4*f,'#FFC800');cC(-1.4,-1.4,1.8,'#FFFFFF');}
+  else if(p.kind==='lava'){const f=1+Math.sin(CL.t*28)*.07;const a=G.globalAlpha;G.globalAlpha=a*.3;cC(0,0,22*f,'#FF8A3C');G.globalAlpha=a;cC(0,0,15*f,'#5B2A18');cC(-1,-1,12.5*f,'#E8662A');cC(-2.4,-2.4,8*f,'#FF8A3C');cC(-3.6,-3.6,4*f,'#FFC800');for(const [x,y] of [[6,4],[-7,5],[3,-8]])cC(x,y,2.4,'#5B2A18');}
   else if(p.kind==='thermiet'){const f=1+Math.sin(CL.t*30)*.08;const a=G.globalAlpha;G.globalAlpha=a*.3;cC(0,0,20*f,'#FF9600');G.globalAlpha=a;cC(0,0,13*f,'#FF4B4B');cC(-1,-1,9.5*f,'#FF9600');cC(-2,-2,5.6*f,'#FFC800');cC(-3.2,-3.2,2.2,'#FFFFFF');}
   G.restore();
 }
@@ -856,6 +937,21 @@ function clSpreuk(id,team,x,z,f){
       if(!o.dood&&o.soort==='unit'&&o.max<=400&&a>.01){o.x+=(o.x-px)/a*.8;o.z+=(o.z-pz)/a*.8;}}}};
   // Doelcirkel op de grond, zodat je ziet waar hij valt.
   const doel=(dur)=>clFx2(dur,p=>{const [sx,sy]=clProj(x,0,z);const r=d.straal*CL.S;G.save();G.globalAlpha=.18+.12*Math.sin(p*20);cE(sx,sy,r,r*CL_SY,CL_TEAM[team].c);G.globalAlpha=.85;G.strokeStyle=CL_TEAM[team].c;G.lineWidth=2.5;G.setLineDash([8,6]);G.lineDashOffset=-p*40;G.beginPath();G.ellipse(sx,sy,r,r*CL_SY,0,0,7);G.stroke();G.restore();},'grond');
+  if(id==='magneet'){
+    // Trekt alle vijandige eenheden in de cirkel naar het midden; drie klappen onderweg.
+    arcSnd('flip');
+    clFx2(1.35,p=>{const [sx,sy]=clProj(x,0,z),R=d.straal*CL.S;G.save();G.lineWidth=Math.max(2,CL.S*.12);
+      for(let k=0;k<4;k++){const q=(p*1.8+k*.25)%1,rr=R*(1-q);G.globalAlpha=.85*(1-p*.6)*Math.sin(q*Math.PI);G.strokeStyle=k%2?'#FF4B4B':'#1CB0F6';G.setLineDash([CL.S*.5,CL.S*.3]);G.lineDashOffset=-p*60*(k%2?1:-1);G.beginPath();G.ellipse(sx,sy,rr,rr*CL_SY,0,0,7);G.stroke();}
+      G.setLineDash([]);G.globalAlpha=.16*(1-p);cE(sx,sy,R,R*CL_SY,'#1CB0F6');G.restore();},'grond',
+      (p,dt)=>{for(const o of CL.ents){if(o.team===team||o.dood||o.soort!=='unit')continue;const a=Math.hypot(o.x-x,o.z-z);if(a<=d.straal*1.15&&a>.15){const k=Math.min(1,dt*2.6);o.x+=(x-o.x)*k;o.z+=(z-o.z)*k;}}});
+    for(let i=0;i<3;i++)setTimeout(()=>{if(!CL.on)return;raak(x,z,d.dmg*f/3);clRing(x,z,d.straal*.6,i%2?'#FF4B4B':'#1CB0F6');arcSnd('tick');},380+i*400);
+    return;}
+  if(id==='lava'){
+    // Valt van boven, spat uit elkaar en laat drie seconden een brandende plas achter.
+    const p={kind:'lava',team,x:x+1.2,y:10,z:z+.8,tgt:{x,z,dood:true},tx:x,tz:z,ty:0,dmg:0,spreuk:true};
+    p.t=0;p.x0=p.x;p.y0=10;p.z0=p.z;p.dur=.62;p.boog=0;p.wx=p.x0;p.wy=p.y0;p.wz=p.z0;p.vx=p.vy=p.vz=0;p.rot=0;
+    p.klaar=()=>{raak(x,z,d.dmg*f);clOntploffing(x,z,d.straal);clLavaPlas(x,z,d.straal,team,d.brand*f);};CL.proj.push(p);doel(p.dur);
+    return;}
   if(id==='thermiet'){
     const p={kind:'thermiet',team,x:k.x,y:6,z:k.z,tgt:{x,z,dood:true},tx:x,tz:z,ty:0,dmg:0,spreuk:true};
     p.t=0;p.x0=k.x;p.y0=6;p.z0=k.z;p.dur=Math.max(.7,Math.hypot(x-k.x,z-k.z)/14);p.boog=5;p.wx=p.x0;p.wy=p.y0;p.wz=p.z0;p.vx=p.vy=p.vz=0;p.rot=0;
@@ -869,6 +965,16 @@ function clSpreuk(id,team,x,z,f){
       p.t=0;p.x0=p.x;p.y0=5;p.z0=p.z;p.dur=.75+Math.random()*.15;p.boog=4.5;p.wx=p.x0;p.wy=p.y0;p.wz=p.z0;p.vx=p.vy=p.vz=0;p.rot=0;
       p.klaar=i===0?()=>{raak(x,z,d.dmg*f/3);clPoef(x,z,0,4,0xE8D5AE);clRing(x,z,d.straal*.8,'#FFFFFF');arcSnd('tick');}:()=>{clVonk(px,.1,pz,'#E8D5AE',1);clPin(px,pz,team);};CL.proj.push(p);}
   },s*260);
+}
+// Lavaplas: gloeit, borrelt en doet elke halve seconde schade aan vijanden erin.
+function clLavaPlas(x,z,r,team,brand){
+  const R=clRnd((x*31+z*7)|0),bel=[];for(let i=0;i<9;i++)bel.push([(R()-.5)*1.4,(R()-.5)*1.4,R()]);
+  clFx2(3.2,p=>{const [sx,sy]=clProj(x,0,z),S=CL.S*r,uit=p>.85?(1-p)/.15:Math.min(1,p*6);G.save();G.globalAlpha=.9*uit;
+    cE(sx,sy+2,S*1.02,S*CL_SY*.98,'#5B2A18');cE(sx,sy,S,S*CL_SY*.92,'#E8662A');cE(sx-S*.08,sy-S*.05,S*.72,S*CL_SY*.62,'#FF8A3C');cE(sx-S*.15,sy-S*.1,S*.36,S*CL_SY*.3,'#FFC800');
+    for(const [dx,dz,o] of bel){const q=((CL.t||0)*.9+o)%1;G.globalAlpha=uit*(1-q);cC(sx+dx*S*.6,sy+dz*S*CL_SY*.5-q*CL.S*.3,CL.S*.12*(.4+q),'#FFE066');}
+    G.restore();},'grond');
+  for(let i=1;i<=6;i++)setTimeout(()=>{if(!CL.on)return;for(const o of CL.ents.slice()){if(o.team===team||o.dood||o.lucht)continue;if(Math.hypot(o.x-x,o.z-z)<=r+(o.r||.4)*.5)clSchade(o,brand*(o.soort==='toren'?.35:1),null);}
+    if(!CL.lite)clPoef(x+(Math.random()-.5)*r,z+(Math.random()-.5)*r,.2,1,0x8C7B6A,.7);},i*500);
 }
 // Pijl die even in de grond blijft steken.
 function clPin(x,z,team){clFx2(.9,p=>{const [sx,sy]=clProj(x,0,z),k=CL.S/CL_U;G.save();G.globalAlpha=p>.6?(1-p)/.4:1;G.translate(sx,sy);G.scale(k,k);G.rotate(-.35);cL([[0,0],[0,-9]],'#B07A45',1.6);cP([[0,-9],[-2.6,-12],[0,-10.5],[2.6,-12]],CL_TEAM[team].c);G.restore();},'grond');}
@@ -1184,6 +1290,11 @@ function clPortretten(){
       for(let i=0;i<5;i++)cP([[-10+i*5,12],[-8+i*5,22+i%2*4],[-6+i*5,12]],'#FFC800');},4.3);
     else if(id==='pijlen')los(()=>{for(let i=0;i<5;i++){G.save();G.translate((i-2)*7.5,Math.abs(i-2)*3.6-6);G.rotate(Math.PI/2+(i-2)*.13);
       cL([[-15,0],[10,0]],'#B07A45',2.4);cV(()=>cPoly([[10,-3.6],[16.5,0],[10,3.6]]),'#EEF2F6','#BFC9D4',12);cP([[-15,0],[-19.5,-4],[-11,0]],CL_TEAM[0].c);cP([[-15,0],[-19.5,4],[-11,0]],CL_TEAM[0].d);G.restore();}},4.2);
+    else if(id==='magneet')los(()=>{G.save();G.rotate(-.35);cV(()=>{G.moveTo(-14,-14);G.lineTo(-14,4);G.arc(0,4,14,Math.PI,0,true);G.lineTo(14,-14);G.lineTo(6,-14);G.lineTo(6,4);G.arc(0,4,6,0,Math.PI);G.lineTo(-6,-14);G.closePath();},'#FF4B4B','#D93636',4);
+      cR(-14.4,-20,8.6,7,1.6,'#EEF2F6');cR(5.8,-20,8.6,7,1.6,'#EEF2F6');G.restore();for(let k=0;k<3;k++)cA(0,-22,18+k*5,Math.PI*1.15,Math.PI*1.85,k%2?'#FF4B4B':'#1CB0F6',1.6);},4);
+    else if(id==='lava')los(()=>{cV(()=>cPoly([[-24,22],[-8,-6],[8,-6],[24,22]]),'#6B5B55','#4A3B36',4);cP([[-8,-6],[8,-6],[4,-1],[-4,-1]],'#E8662A');
+      for(const [x,h] of [[-4,-18],[3,-24],[8,-14]])cV(()=>G.ellipse(x,h,4.4,6,0,0,7),'#FF8A3C','#E8662A',x+1);cC(2,-26,3,'#FFC800');cL([[-6,0],[-12,14],[-9,22]],'#FF8A3C',3);cL([[5,0],[10,12],[16,22]],'#FF8A3C',3);},3.8);
+    else if(id==='mammoet')fig('mammoet',86,232,2.5);
     else if(id==='boog'){fig('boog',70,222,3,{fase:2});fig('boog',132,228,3.2);}
     else if(id==='elektron'){fig('elektron',58,150,3.2,{fase:0});fig('elektron',142,138,3.2,{fase:2});fig('elektron',100,226,4,{fase:4});}
     else if(id==='ptero')fig('ptero',100,298,3.3,{m:{dir:1}});
@@ -1318,14 +1429,17 @@ function clLobby(){
   const L=document.createElement('div');L.className='cl-lobby';
   // Compact zoals het hoofdscherm van een kaartspel: kop, arena in beeld, en onderaan
   // een vast paneel met kisten, je deck als rij en de grote Strijd-knop.
+  const KI=clKlvlInfo(c),kr=clKroon(c),krKlaar=kr.n>=10&&!kr.open,wegN=clWegOpen(c).length;
   L.innerHTML=`<div class="cl-lobby-top"><button class="arc-x" onclick="arcClose()" aria-label="Sluiten">✕</button>
+      <div class="cl-koning" title="Koningslevel ${KI.l}${KI.max?'':`, nog ${KI.nog} XP tot level ${KI.l+1}`}"><span class="cl-schild">${KI.l}</span><i class="cl-kl-bar"><b style="width:${KI.pct.toFixed(0)}%"></b></i></div>
       <div class="cl-lobby-titel"><small>${_arcEsc(vak?vak.naam:'')}</small><b>Slagio Clash</b></div>
-      <div class="cl-bekers" title="Bekers">${CL_BEKER}<b>${arcNf(c.bekers,0)}</b></div></div>
-    <div class="cl-arena"><div class="cl-arena-r"><span>${_arcEsc(ar.naam)}</span><small>${volgende?`${arcNf(volgende.min-c.bekers,0)} bekers tot ${_arcEsc(volgende.naam)}`:'Hoogste arena'}</small></div><div class="cl-arena-bar"><i style="width:${pct.toFixed(0)}%"></i></div></div>
+      <div class="cl-chips"><div class="cl-bekers" title="Bekers">${CL_BEKER}<b>${arcNf(c.bekers,0)}</b></div><div class="cl-bekers cl-munten" title="Munten">${CL_MUNT}<b>${arcNf(clMunten(),0)}</b></div></div></div>
+    <button class="cl-arena" onclick="clWeg()" aria-label="Bekerweg openen"><div class="cl-arena-r"><span>${_arcEsc(ar.naam)}</span><small>${volgende?`${arcNf(volgende.min-c.bekers,0)} bekers tot ${_arcEsc(volgende.naam)}`:'Hoogste arena'}</small></div><div class="cl-arena-bar"><i style="width:${pct.toFixed(0)}%"></i></div></button>
     <div class="cl-lobby-ruimte"></div>
     <div class="cl-lobby-onder">
-      <div class="cl-kisten">${[0,1,2,3].map(i=>{const k=c.kisten[i];return k?`<button class="cl-kist ${k.soort}" onclick="clKistOpen(${i})">${clKistSvg(k.soort)}<small>${CL_KIST[k.soort].nodig} begrippen</small></button>`:`<div class="cl-kist leeg"><span></span></div>`;}).join('')}</div>
-      <div class="cl-deck-kop"><b>Jouw deck</b><button class="cl-hoe" onclick="clRegels(true)">Hoe werkt het?</button></div>
+      <div class="cl-kisten">${[0,1,2,3].map(i=>{const k=c.kisten[i];return k?`<button class="cl-kist ${k.soort}" onclick="clKistOpen(${i})" aria-label="${_arcEsc(CL_KIST[k.soort].naam)} openen">${clKistSvg(k.soort)}<small>${CL_KIST[k.soort].nodig} begrippen</small></button>`:`<div class="cl-kist leeg"><span></span><small>Win een potje</small></div>`;}).join('')}
+        <button class="cl-kist kroon${krKlaar?' klaar':''}${kr.open?' op':''}" ${krKlaar?`onclick="clKistOpen('kroon')"`:`onclick="clPopMid('${kr.open?'Morgen staat er een nieuwe kroonkist klaar':`Nog ${10-kr.n} kronen voor de kroonkist`}')"`} aria-label="Kroonkist, ${kr.n} van 10 kronen">${clKistSvg('kroon')}<small>${kr.open?'Morgen':krKlaar?'Openen':`${kr.n}/10`}</small><i class="cl-kr-bar"><b style="width:${kr.n*10}%"></b></i></button></div>
+      <div class="cl-deck-kop"><b>Jouw deck</b><span class="cl-kop-knoppen"><button class="cl-hoe cl-weg-knop" onclick="clWeg()">Bekerweg${wegN?`<i class="cl-dot">${wegN}</i>`:''}</button><button class="cl-hoe" onclick="clRegels(true)">Hoe werkt het?</button></span></div>
       <div class="cl-deck mini" id="cl-deck">${c.deck.map((id,i)=>{const cc=c.coll[id]||{lvl:1,n:0},kan=cc.lvl<CL_MAXLVL&&cc.n>=(CL_UPGRADE[cc.lvl]||1e9);
         return `<button class="cl-kaart mini${kan?' upg':''}" onclick="clKaartInfo(${i})" aria-label="${_arcEsc(CL_KAARTEN[id].naam)}, level ${cc.lvl}">${clKaartHtml(id,{naam:false})}<span class="cl-mlvl">${kan?'↑':cc.lvl}</span></button>`;}).join('')}</div>
       ${genoeg?`<button class="arc-go cl-strijd" id="cl-strijd">${CL_ZWAARDEN}<span>Strijd</span></button>`:`<p class="cl-lobby-p">${_arcEsc(vak?vak.naam:'Dit vak')} heeft nog te weinig begrippen en korte vragen. Kies in de Arcade een ander vak.</p><button class="arc-go" onclick="arcClose()">Terug</button>`}
@@ -1340,19 +1454,23 @@ function clKaartInfo(i){
   const rest=Object.keys(CL_KAARTEN).filter(k=>!c.deck.includes(k));
   const st=d.t==='spreuk'?[['Schade',Math.round(d.dmg*f)],['Straal',arcNf(d.straal,1)+' tegels'],['Op torens',Math.round(d.toren*100)+'%']]
     :[['Levens',Math.round(d.hp*f)*(d.n||1)+(d.n>1?` (${d.n}×)`:'')],['Schade',Math.round(d.dmg*f)],['Bereik',d.bereik>2?arcNf(d.bereik,1):'dichtbij'],d.leeft?['Staat',d.leeft+' s']:['Doel',d.doel==='gebouw'?'gebouwen':d.doel==='grond'?'grond':'grond en lucht']];
-  const nodig=CL_UPGRADE[my.lvl]||0;const kan=my.lvl<CL_MAXLVL&&my.n>=nodig;
+  const nodig=CL_UPGRADE[my.lvl]||0,prijs=CL_GOUD[my.lvl]||0,munt=clMunten();const kaartOk=my.lvl<CL_MAXLVL&&my.n>=nodig;const kan=kaartOk&&munt>=prijs;
   const o=document.createElement('div');o.className='cl-sheet';o.innerHTML=`<div class="cl-sheet-in" role="dialog" aria-label="${_arcEsc(d.naam)}">
     <div class="cl-sheet-kop"><div class="cl-kaart groot">${clKaartHtml(id,{naam:false})}</div><div><div class="cl-sheet-z" style="color:${CL_ZELD[d.zeld].c}">${CL_ZELD[d.zeld].naam} · ${_arcEsc(d.vak)} · Level ${my.lvl}</div><h3>${_arcEsc(d.naam)}</h3><div class="cl-sheet-st">${st.map(s=>`<span><small>${s[0]}</small><b>${s[1]}</b></span>`).join('')}</div></div></div>
     <p class="cl-sheet-feit">${_arcEsc(d.feit)}</p>
-    ${my.lvl<CL_MAXLVL?`<div class="cl-upg"><div class="cl-upg-t"><b>Naar level ${my.lvl+1}</b><span>${my.n} van ${nodig} kaarten · +10% levens en schade</span></div><button class="arc-go cl-upg-k" data-upg ${kan?'':'disabled'}>${kan?'Upgraden':'Nog '+(nodig-my.n)}</button></div>`:'<div class="cl-upg"><div class="cl-upg-t"><b>Maximaal level</b></div></div>'}
+    ${my.lvl<CL_MAXLVL?`<div class="cl-upg"><div class="cl-upg-t"><b>Naar level ${my.lvl+1}</b><span>${my.n} van ${nodig} kaarten · +10% levens en schade · +${CL_KXP_UPG[my.lvl]||0} koningservaring</span></div><button class="arc-go cl-upg-k" data-upg ${kan?'':'disabled'}>${kan?`<span>Upgraden</span><em>${CL_MUNT}${prijs}</em>`:!kaartOk?`Nog ${nodig-my.n} kaarten`:`<span>Nog ${prijs-munt}</span><em>${CL_MUNT}</em>`}</button></div>`:'<div class="cl-upg"><div class="cl-upg-t"><b>Maximaal level</b></div></div>'}
     <div class="cl-sheet-k">Wisselen voor</div>
     <div class="cl-deck">${rest.map(k=>`<button class="cl-kaart klein" data-k="${k}" ${c.coll[k]?'':'disabled'}>${clKaartHtml(k,{coll:c.coll})}</button>`).join('')}</div>
     <button class="arc-ghost" data-sluit>Klaar</button></div>`;
   document.getElementById('cl-veld').appendChild(o);requestAnimationFrame(()=>o.classList.add('on'));
   const sluit=()=>{o.classList.remove('on');setTimeout(()=>o.remove(),220);};
   o.addEventListener('click',e=>{if(e.target===o||e.target.closest('[data-sluit]'))sluit();
-    if(e.target.closest('[data-upg]')&&kan){const c2=clStore();const x=c2.coll[id];x.n-=nodig;x.lvl++;clSave(c2);clFx('kist');arcXP(6*x.lvl);
-      try{const m=arcMid(o.querySelector('.cl-kaart.groot'));arcBurst(m.x,m.y,{n:26,afstand:150,maat:9});}catch(er){}sluit();setTimeout(()=>{clLobby();clPopMid&&0;},230);return;}
+    if(e.target.closest('[data-upg]')&&kan){
+      let betaald=true;try{if(prijs>0&&typeof spendCoins==='function')betaald=spendCoins(prijs);}catch(er){}
+      if(!betaald){clPopMid('Niet genoeg munten');return;}
+      const c2=clStore();const x=c2.coll[id];x.n-=nodig;const kxp=CL_KXP_UPG[x.lvl]||0;x.lvl++;const nieuwKl=clGeefKxp(c2,kxp);clSave(c2);clFx('kist');arcXP(6*x.lvl);
+      try{const m=arcMid(o.querySelector('.cl-kaart.groot'));arcBurst(m.x,m.y,{n:26,afstand:150,maat:9});}catch(er){}sluit();
+      setTimeout(()=>{clLobby();if(nieuwKl)clKoningOmhoog(nieuwKl);else clPopMid(`${d.naam} is nu level ${x.lvl}`);},230);return;}
     const k=e.target.closest('[data-k]');
     if(k&&!k.disabled){const c2=clStore();c2.deck[i]=k.dataset.k;clSave(c2);clFx('kaart');sluit();clLobby();}});
 }
@@ -1424,9 +1542,13 @@ function clUitslag(){
   const c=clStore();const [a,b]=CL.kronen;const u=CL.uitslag;
   const delta=u==='win'?30+(a-b-1)*4:u==='verlies'?-Math.min(c.bekers,20):0;
   const oudArena=clArena(c.bekers);c.bekers=Math.max(0,c.bekers+delta);c.gespeeld++;if(u==='win')c.gewonnen++;c.best=Math.max(c.best||0,c.bekers);
-  let kist=null;if(u==='win'){if(c.kisten.length<4){const r=Math.random();kist=r<.06?'goud':r<.3?'zilver':'hout';c.kisten.push({soort:kist,arena:clArena(c.bekers),t:Date.now()});}else kist='vol';}
+  // Kisten volgen een vaste cyclus; bij volle plekken schuift de cyclus niet door.
+  let kist=null;if(u==='win'){if(c.kisten.length<4){const ci=(c.cyclus||0)%CL_KISTCYCLUS.length;kist=CL_KISTCYCLUS[ci];c.cyclus=(c.cyclus||0)+1;c.kisten.push({soort:kist,arena:clArena(c.bekers),t:Date.now()});}else kist='vol';}
+  const munt=u==='win'?5+3*a:a;clGeefMunten(munt);
+  const kr=clKroon(c),krOud=kr.n;if(!kr.open)kr.n=Math.min(10,kr.n+a);
+  const nieuwKl=clGeefKxp(c,u==='win'?6:2);
   clSave(c);CL._store=null;
-  const nieuwArena=clArena(c.bekers);
+  const nieuwArena=clArena(c.bekers);const arenaBeeld=nieuwArena>oudArena?clArenaBeeld(nieuwArena):null;
   arcRecord('clash',c.bekers,true);
   const goed=CL.log.filter(x=>x.goed).length,tot=CL.log.length;const gepland=clLeerOpslaan();
   const xp=arcXP(goed*5+(u==='win'?25:u==='gelijk'?10:5)+a*8);
@@ -1446,6 +1568,7 @@ function clUitslag(){
       <div class="arc-res-big"><span class="cl-beker-ic">${CL_BEKER}</span><span class="arc-tel">${arcNf(c.bekers-delta,0)}</span></div>
       <div class="arc-res-sub">${delta>0?`+${delta} bekers`:delta<0?`${delta} bekers`:'Bekers blijven gelijk'}${nieuwArena>oudArena?` · Nieuwe arena: <b>${_arcEsc(CL_ARENAS[nieuwArena].naam)}</b>`:''}</div>
       <div class="arc-res-stats"><div><b>${goed}/${tot}</b><small>goed beantwoord</small></div><div><b>${nGoedBeg}/${nBeg}</b><small>begrippen gekend</small></div><div><b>${CL.gespeeld}</b><small>kaarten gespeeld</small></div></div>
+      <div class="cl-res-buit">${munt?`<span>${CL_MUNT}<b>+${munt}</b><small>munten</small></span>`:''}<span class="kr">${CL_KROON}<b>${kr.open?'✓':`${kr.n}/10`}</b><small>${kr.open?'kroonkist al open':kr.n>=10&&krOud<10?'kroonkist klaar!':'kroonkist'}</small></span><span class="kl"><i class="cl-schild">${clKlvl(c)}</i><b>+${u==='win'?6:2}</b><small>koningservaring</small></span></div>
       ${kist&&kist!=='vol'?`<div class="cl-res-kist">${clKistSvg(kist)}<div><b>Je kreeg een ${_arcEsc(CL_KIST[kist].naam.toLowerCase())}</b><span>Open hem in de lobby met ${CL_KIST[kist].nodig} goede begrippen.</span></div></div>`:kist==='vol'?`<div class="cl-res-kist"><div><b>Je kistplekken zijn vol</b><span>Open eerst een kist in de lobby.</span></div></div>`:''}
       ${xp?`<div class="arc-res-xp"><span class="arc-xp-chip">+<b class="arc-xp-n">0</b> XP</span><small>telt mee voor je divisie</small></div>`:''}
       ${leer?`<div class="cl-leer"><div class="cl-leer-k">Deze moet je nog even leren</div><ul>${leer}</ul>${gepland?`<div class="cl-leer-sr">${gepland===1?'Dit begrip komt':'Deze begrippen komen'} morgen terug in Herhalen.</div>`:''}</div>`:tot?`<div class="arc-res-leer">Alles goed beantwoord. Dat scheelt kennis, en kennis wint potjes.</div>`:''}
@@ -1455,7 +1578,93 @@ function clUitslag(){
     </div>`);
   arcTel(document.querySelector('.arc-tel'),c.bekers,{van:c.bekers-delta,duur:1000});
   if(xp)setTimeout(()=>{arcTel(document.querySelector('.arc-xp-n'),xp,{duur:900});arcSnd('xp');},700);
-  if(u==='win'){setTimeout(()=>{const m=arcMid(document.querySelector('.cl-res-kr'));arcBurst(m.x,m.y,{n:30,afstand:170,maat:9});},500);if(nieuwArena>oudArena){try{if(!arcLite())launchConfetti('gold');}catch(e){}}}
+  if(u==='win'){setTimeout(()=>{const m=arcMid(document.querySelector('.cl-res-kr'));arcBurst(m.x,m.y,{n:30,afstand:170,maat:9});},500);}
+  if(nieuwArena>oudArena)setTimeout(()=>clArenaVrij(nieuwArena,arenaBeeld),1500);
+  else if(nieuwKl)setTimeout(()=>clKoningOmhoog(nieuwKl),1500);
+}
+// Grote momenten: nieuwe arena en een hoger koningslevel krijgen een eigen scherm.
+function clArenaVrij(i,beeld){
+  const A=CL_ARENAS[i];const kaarten=Object.keys(CL_ARENA_KAART).filter(k=>CL_ARENA_KAART[k]===i);
+  const o=document.createElement('div');o.className='cl-groot';o.innerHTML=`<div class="cl-groot-in" role="dialog" aria-label="Nieuwe arena">
+    <div class="cl-stralen"></div><div class="cl-groot-k">Nieuwe arena</div>
+    <div class="cl-groot-beeld">${beeld?`<img src="${beeld}" alt="">`:''}<b>${_arcEsc(A.naam)}</b></div>
+    <p>Arena ${i+1} van ${CL_ARENAS.length}. De tegenstanders spelen hier slimmer en hun torens zijn sterker.</p>
+    ${kaarten.length?`<div class="cl-groot-kaarten">${kaarten.map(k=>`<div class="cl-kaart">${clKaartHtml(k,{naam:false})}<span>${_arcEsc(CL_KAARTEN[k].naam)}</span></div>`).join('')}</div><small>${kaarten.length>1?'Deze kaarten zitten':'Deze kaart zit'} nu in je kisten.</small>`:''}
+    <button class="arc-go" data-ok>Verder</button></div>`;
+  (document.getElementById('arc-stage')||document.body).appendChild(o);requestAnimationFrame(()=>o.classList.add('on'));arcSnd('levelup');arcHap([30,30,80]);
+  try{if(!arcLite())launchConfetti('gold');}catch(e){}
+  o.querySelector('[data-ok]').onclick=()=>{o.classList.remove('on');setTimeout(()=>o.remove(),250);};
+}
+function clKoningOmhoog(l){
+  const o=document.createElement('div');o.className='cl-groot';o.innerHTML=`<div class="cl-groot-in klein" role="dialog" aria-label="Koningslevel ${l}">
+    <div class="cl-stralen"></div><div class="cl-groot-k">Koningslevel</div><div class="cl-schild groot">${l}</div>
+    <p>Je torens hebben nu ${Math.round((clKlvlF(l)-1)*100)}% meer levens en schade.</p><button class="arc-go" data-ok>Verder</button></div>`;
+  (document.getElementById('arc-stage')||document.body).appendChild(o);requestAnimationFrame(()=>o.classList.add('on'));arcSnd('levelup');arcHap([20,20,60]);
+  o.querySelector('[data-ok]').onclick=()=>{o.classList.remove('on');setTimeout(()=>o.remove(),250);};
+}
+// Klein plaatje van een arena: het echte veld, rond de rivier uitgesneden.
+const CL_ARENABEELD={};
+function clArenaBeeld(i){
+  if(CL_ARENABEELD[i])return CL_ARENABEELD[i];
+  const bewaar={};for(const k of ['arena','S','dpr','bg','bgW','bgH','bgX0','bgZ1','bgPT','bgNodig'])bewaar[k]=CL[k];
+  let url='';
+  try{CL.arena=i;CL.S=10;CL.dpr=1;CL.bg=null;clBouwBg();const S=10,X0=CL.bgX0,Z1=CL.bgZ1,PT=CL.bgPT;
+    const P=(x,z)=>[(x-X0)*S,(Z1-z)*S*CL_SY+PT];const [x0,y0]=P(-3,25),[x1,y1]=P(21,9);
+    const c=document.createElement('canvas');c.width=320;c.height=Math.round(320*(y1-y0)/(x1-x0));const g=c.getContext('2d');
+    g.drawImage(CL.bg,x0,y0,x1-x0,y1-y0,0,0,c.width,c.height);url=c.toDataURL('image/webp',.82);if(url.indexOf('image/webp')<0)url=c.toDataURL('image/jpeg',.82);
+    CL.bg.width=CL.bg.height=0;}catch(e){}
+  Object.assign(CL,bewaar);if(url)CL_ARENABEELD[i]=url;return url;
+}
+
+// ── Bekerweg ────────────────────────────────────────────────────────────
+// Elke arena is een mijlpaal; daartussen liggen munten en kisten. Wat je ooit
+// bereikt hebt (je hoogste bekerstand) blijft op te halen, ook als je zakt.
+function clWegLijst(){
+  const L=[];CL_ARENAS.forEach((A,i)=>{
+    if(i)L.push({b:A.min,t:'arena',a:i,n:40+i*25});
+    const nx=CL_ARENAS[i+1];if(!nx)return;const st=(nx.min-A.min)/3;
+    L.push({b:Math.round((A.min+st)/10)*10,t:'munten',n:20+i*15});
+    L.push({b:Math.round((A.min+2*st)/10)*10,t:'kist',k:i<2?'zilver':i<5?'goud':'magisch'});});
+  const e=CL_ARENAS[CL_ARENAS.length-1].min;
+  [[300,'munten',250],[600,'kist','magisch'],[900,'munten',400],[1200,'kist','magisch'],[1600,'munten',600]].forEach(([d,t,x])=>L.push(t==='kist'?{b:e+d,t,k:x}:{b:e+d,t,n:x}));
+  return L.map((x,id)=>Object.assign(x,{id}));
+}
+function clWegOpen(c){const g=c.weg||[],hoog=Math.max(c.best||0,c.bekers||0);return clWegLijst().filter(x=>x.b<=hoog&&!g.includes(x.id));}
+function clWegPrijs(x){
+  if(x.t==='kist')return `<span class="cl-weg-ic">${clKistSvg(x.k)}</span><span><b>${_arcEsc(CL_KIST[x.k].naam)}</b><small>${CL_KIST[x.k].kaarten} kaarten</small></span>`;
+  return `<span class="cl-weg-ic munt">${CL_MUNT}</span><span><b>${x.n} munten</b><small>voor upgrades en de winkel</small></span>`;
+}
+function clWeg(){
+  const veld=document.getElementById('cl-veld');if(!veld)return;veld.querySelectorAll('.cl-weg').forEach(x=>x.remove());
+  const c=clStore();const hoog=Math.max(c.best||0,c.bekers||0),gehaald=c.weg||[];const L=clWegLijst();
+  const knop=x=>x.b>hoog?`<span class="cl-weg-slot" aria-label="Nog niet bereikt"></span>`:gehaald.includes(x.id)?`<span class="cl-weg-ok" aria-label="Opgehaald">✓</span>`:`<button class="arc-go cl-weg-haal" data-id="${x.id}">Ophalen</button>`;
+  let jij=false;const rijen=[];
+  const banner=i=>{const A=CL_ARENAS[i],kaarten=Object.keys(CL_ARENA_KAART).filter(k=>CL_ARENA_KAART[k]===i),bereikt=hoog>=A.min,nu=clArena(c.bekers)===i;
+    const r=L.find(x=>x.t==='arena'&&x.a===i);
+    return `<div class="cl-weg-arena${bereikt?' bereikt':''}${nu?' nu':''}"><div class="cl-weg-foto">${bereikt?`<img src="${clArenaBeeld(i)}" alt="">`:`<img src="${clArenaBeeld(i)}" alt="" class="dicht">`}<span>${i+1}</span></div>
+      <div class="cl-weg-tekst"><small>${CL_BEKER}${arcNf(A.min,0)}</small><b>${_arcEsc(A.naam)}</b>${kaarten.length?`<div class="cl-weg-kaarten">${kaarten.map(k=>`<span class="cl-kaart">${clKaartHtml(k,{naam:false})}</span>`).join('')}<em>${kaarten.map(k=>_arcEsc(CL_KAARTEN[k].naam)).join(', ')}</em></div>`:'<em>Startarena</em>'}</div>
+      ${r?`<div class="cl-weg-arena-prijs">${CL_MUNT}<b>${r.n}</b>${knop(r)}</div>`:''}</div>`;};
+  rijen.push(banner(0));
+  for(const x of L){
+    if(!jij&&x.b>c.bekers){jij=true;rijen.push(`<div class="cl-weg-jij" id="cl-weg-jij"><span>${CL_BEKER}${arcNf(c.bekers,0)}</span><b>Jij</b></div>`);}
+    if(x.t==='arena'){rijen.push(banner(x.a));continue;}
+    rijen.push(`<div class="cl-weg-rij${x.b<=hoog?' bereikt':''}"><span class="cl-weg-b">${CL_BEKER}${arcNf(x.b,0)}</span><div class="cl-weg-prijs">${clWegPrijs(x)}</div>${knop(x)}</div>`);
+  }
+  if(!jij)rijen.push(`<div class="cl-weg-jij" id="cl-weg-jij"><span>${CL_BEKER}${arcNf(c.bekers,0)}</span><b>Jij</b></div>`);
+  const o=document.createElement('div');o.className='cl-weg';
+  o.innerHTML=`<div class="cl-weg-kop"><button class="arc-x" data-sluit aria-label="Sluiten">✕</button><div><b>Bekerweg</b><small>Hoogste stand ${arcNf(hoog,0)} bekers</small></div><div class="cl-bekers">${CL_BEKER}<b>${arcNf(c.bekers,0)}</b></div></div>
+    <div class="cl-weg-lijst">${rijen.join('')}</div>`;
+  veld.appendChild(o);requestAnimationFrame(()=>{o.classList.add('on');const j=o.querySelector('#cl-weg-jij');if(j)j.scrollIntoView({block:'center'});});
+  o.addEventListener('click',e=>{
+    if(e.target.closest('[data-sluit]')){o.classList.remove('on');setTimeout(()=>{o.remove();clLobby();},220);return;}
+    const b=e.target.closest('[data-id]');if(!b)return;const x=L[+b.dataset.id];const c2=clStore();c2.weg=c2.weg||[];if(c2.weg.includes(x.id))return;
+    if(x.t==='kist'){if(c2.kisten.length>=4){clPopMid('Je kistplekken zijn vol. Open eerst een kist.');return;}c2.kisten.push({soort:x.k,arena:clArena(Math.max(c2.bekers,x.b)),t:Date.now()});}
+    else clGeefMunten(x.n);
+    c2.weg.push(x.id);clSave(c2);clFx('kist');arcHap([20,20,40]);
+    try{const m=arcMid(b);arcBurst(m.x,m.y,{n:18,afstand:110,maat:8});}catch(er){}
+    const plek=b.parentNode;b.outerHTML=`<span class="cl-weg-ok net" aria-label="Opgehaald">✓</span>`;
+    clPopMid(x.t==='kist'?`${CL_KIST[x.k].naam} staat in je kistplekken`:`+${x.n} munten`);
+    const kop=o.querySelector('.cl-weg-kop');if(kop)void plek;});
 }
 function clOefenZwak(ld){try{ZWAK.doel=null;ZWAK.forceLd=ld;}catch(e){}arcStart('zwak');}
 function clUitleg(q,keuze){
@@ -1750,12 +1959,28 @@ function clEmote(team,tekst){
 // ── Kisten: openen met leren ────────────────────────────────────────────
 // In Clash Royale wacht je uren op een kist. Hier open je hem door begrippen
 // goed te hebben: de beloning komt uit leren, niet uit wachten.
-function clKistSvg(soort){const k=CL_KIST[soort]||CL_KIST.hout;const c=k.kl;
-  return `<svg class="cl-kist-svg" viewBox="0 0 64 56" aria-hidden="true"><path d="M6 24h52v26a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z" fill="${c}" stroke="#3b2210" stroke-width="2.5"/><path d="M6 24c0-10 8-16 26-16s26 6 26 16z" fill="${c}" stroke="#3b2210" stroke-width="2.5" filter="brightness(1.12)"/>
-    <path d="M6 30h52M6 44h52" stroke="#3b2210" stroke-width="2" opacity=".35"/><rect x="26" y="20" width="12" height="14" rx="2" fill="#fcd34d" stroke="#3b2210" stroke-width="2.2"/><circle cx="32" cy="27" r="2" fill="#3b2210"/>
-    <path d="M12 10q6-4 14-5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".45" fill="none"/></svg>`;}
+// Kist in Vonk-stijl: vlakke kleuren, donkere contour, een losse deksel (.kd)
+// die bij het openen omhoog klapt.
+const CL_KISTKL={hout:['#C98E46','#A86F31','#FFC800','#E5A400'],zilver:['#D3DCE6','#A9B6C4','#7FD3F2','#4FC0F3'],goud:['#FFC800','#E5A400','#FF9600','#E07A00'],
+  magisch:['#B65CFF','#8A3BD6','#5EEAD4','#14B8A6'],kroon:['#1CB0F6','#1590D0','#FFC800','#E5A400']};
+function clKistSvg(soort){const K=CL_KISTKL[soort]||CL_KISTKL.hout,[a,b,m,md]=K,I='#2B2233';
+  const embleem=soort==='kroon'?`<path d="M24.5 23 23.6 15.4l4 3 4.4-5.6 4.4 5.6 4-3-.9 7.6z" fill="#FFC800" stroke="${I}" stroke-width="1.8" stroke-linejoin="round"/>`
+    :soort==='magisch'?`<path d="M32 12.6 34 17l4.6.6-3.4 3 1 4.6L32 23l-4.2 2.2 1-4.6-3.4-3 4.6-.6z" fill="${m}" stroke="${I}" stroke-width="1.8" stroke-linejoin="round"/>`:'';
+  return `<svg class="cl-kist-svg ${soort}" viewBox="0 0 64 62" aria-hidden="true"><ellipse cx="32" cy="57.5" rx="25" ry="3.6" fill="#000" opacity=".16"/>
+  <g class="kb"><path d="M8 30h48v20a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5z" fill="${a}"/><path d="M8 45h48v5a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5z" fill="${b}"/>
+    ${soort==='hout'?`<path d="M8 37.5h48" stroke="${b}" stroke-width="2"/>`:''}<path d="M14 30h6v25h-6zM44 30h6v25h-6z" fill="${m}"/><path d="M14 45h6v10h-6zM44 45h6v10h-6z" fill="${md}"/>
+    <path d="M14 30v25M20 30v25M44 30v25M50 30v25" stroke="${I}" stroke-width="1.6" opacity=".55"/>
+    <rect x="26" y="31" width="12" height="13" rx="3" fill="${m}" stroke="${I}" stroke-width="2"/><path d="M32 35.4v4" stroke="${I}" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M8 30h48v20a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5z" fill="none" stroke="${I}" stroke-width="2.6" stroke-linejoin="round"/></g>
+  <g class="kd"><path d="M7 30c0-12 9-20 25-20s25 8 25 20z" fill="${a}"/><path d="M7 30c0-4 1-7.6 3-10.6h44c2 3 3 6.6 3 10.6z" fill="${b}" opacity=".55"/>
+    <path d="M14 30V15.2q3-2 6-3.2V30zM44 30V12q3 1.2 6 3.2V30z" fill="${m}"/>
+    <path d="M15 16.6q17-9 34 0" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".5"/>${embleem}
+    <rect x="5.5" y="27" width="53" height="6" rx="2.6" fill="${b}" stroke="${I}" stroke-width="2.4"/>
+    <path d="M7 30c0-12 9-20 25-20s25 8 25 20" fill="none" stroke="${I}" stroke-width="2.6" stroke-linejoin="round"/></g></svg>`;}
 function clKistOpen(i){
-  const c=clStore();const kist=c.kisten[i];if(!kist)return;const K=CL_KIST[kist.soort];
+  const c=clStore();let kist;
+  if(i==='kroon'){const kr=clKroon(c);if(kr.n<10||kr.open)return;kist={soort:'kroon',arena:clArena(c.bekers)};}else kist=c.kisten[i];
+  if(!kist)return;const K=CL_KIST[kist.soort];
   if(!clGenoegLeerstof()){clPopMid('Dit vak heeft te weinig begrippen');return;}
   CL.nr=CL.nr||0;CL.herhaal=CL.herhaal||[];CL.gebruiktB=CL.gebruiktB||new Set();CL.gebruikt=CL.gebruikt||new Set();CL.dq=CL.dq||1.6;
   const o=document.createElement('div');o.className='cl-kistscherm';
@@ -1774,7 +1999,7 @@ function clKistOpen(i){
       log.push({soort:F.soort,item:F.item,goed:ok,herh:F.herh,domId:F.item.domId,keuze:F.soort==='vraag'?F.o.idx[k]:null});
       if(F.soort==='vraag')arcLog(F.item,ok,F.o.idx[k],performance.now()-F.t0);else{try{logQuestion(ARC.vakId,F.item.domId,'arcade',0,ok,performance.now()-F.t0);}catch(e){}}
       if(ok){goed++;clFx('kaart');o.querySelectorAll('.cl-kist-bol i')[goed-1]?.classList.add('aan');const g=o.querySelector('.cl-kist-groot');arcRestart(g,'schud');
-        if(goed>=K.nodig){setTimeout(()=>clKistBuitScherm(o,i,log),450);return;}setTimeout(nieuw,380);}
+        if(goed>=K.nodig){setTimeout(()=>clKistBuitScherm(o,i,log,kist),450);return;}setTimeout(nieuw,380);}
       else{b.classList.add('fout');arcSnd('wrong');if(F.soort!=='vraag')CL.herhaal.push({item:F.item,na:CL.nr+2});
         const fb=document.createElement('div');fb.className='cl-f-fb';fb.innerHTML=F.soort==='vraag'?_arcEsc(F.item.q.uh||F.item.q.o[F.item.q.c]):`<b>${_arcEsc(F.item.t)}</b>: ${_arcEsc(F.item.d)}`;box.appendChild(fb);setTimeout(nieuw,2000);}});};
   o.querySelector('.cl-kist-x').onclick=()=>{o.remove();};
@@ -1785,25 +2010,43 @@ function clKistBuit(soort,arena){
   const nieuw=pool.filter(id=>!c.coll[id]);const soorten=[];
   if(nieuw.length&&(soort!=='hout'||Math.random()<.5))soorten.push(arcPick(nieuw));
   for(let g=0;soorten.length<Math.min(K.soorten,pool.length)&&g<50;g++){const x=arcPick(pool);if(!soorten.includes(x))soorten.push(x);}
-  const w=id=>[1,.45,.2][CL_KAARTEN[id].zeld];const tw=soorten.reduce((a,id)=>a+w(id),0);
-  return soorten.map(id=>({id,n:Math.max(1,Math.round(K.kaarten*w(id)/tw))}));
+  if(K.episch){const ep=pool.filter(id=>CL_KAARTEN[id].zeld>=2);if(ep.length&&!soorten.some(id=>CL_KAARTEN[id].zeld>=2))soorten[soorten.length-1]=arcPick(ep);}
+  const w=id=>[1,.45,.2,.08][CL_KAARTEN[id].zeld];const tw=soorten.reduce((a,id)=>a+w(id),0);
+  const kaarten=soorten.map(id=>({id,n:Math.max(1,Math.round(K.kaarten*w(id)/tw))})).sort((a,b)=>CL_KAARTEN[a.id].zeld-CL_KAARTEN[b.id].zeld);
+  const [m0,m1]=K.munten||[0,0];kaarten.munten=Math.round((m0+Math.random()*(m1-m0))*(1+.1*arena));
+  return kaarten;
 }
-function clKistBuitScherm(o,i,log){
-  const c=clStore();const kist=c.kisten[i];if(!kist){o.remove();return;}
-  const buit=clKistBuit(kist.soort,Math.max(kist.arena||0,clArena(c.bekers)));
-  for(const b of buit){if(!c.coll[b.id]){c.coll[b.id]={lvl:1,n:b.n-1};b.nieuw=true;}else c.coll[b.id].n+=b.n;}
-  c.kisten.splice(i,1);clSave(c);
+function clKistBuitScherm(o,i,log,kist){
+  const c=clStore();kist=kist||c.kisten[i];if(!kist){o.remove();return;}const K=CL_KIST[kist.soort];
+  const buit=clKistBuit(kist.soort,Math.max(kist.arena||0,clArena(c.bekers)));const munt=buit.munten||0;
+  const voor={};for(const b of buit){const x=c.coll[b.id];voor[b.id]=x?{lvl:x.lvl,n:x.n}:null;if(!x){c.coll[b.id]={lvl:1,n:b.n-1};b.nieuw=true;}else x.n+=b.n;}
+  if(i==='kroon')clKroon(c).open=true;else c.kisten.splice(i,1);
+  clSave(c);clGeefMunten(munt);
   // Gemiste begrippen gaan naar Herhalen, net als na een potje.
   try{const sr=getSR();for(const x of log){if(x.goed||x.soort==='vraag')continue;const k=srKey(ARC.vakId,x.item.domId,x.item.t);sr[k]=Object.assign({vakId:ARC.vakId,domId:x.item.domId,term:x.item.t},sm2(sr[k]||{},0));}saveSR(sr);}catch(e){}
   try{trackEvent('minigame',{game:'clash_kist',soort:kist.soort,goed:log.filter(x=>x.goed).length,vragen:log.length,vak_id:ARC.vakId});}catch(e){}
-  clFx('kist');arcHap([30,20,60]);
-  let n=0;const toon=()=>{
-    if(n>=buit.length){o.innerHTML=`<h2>Buit</h2><div class="cl-buit">${buit.map(b=>`<div class="cl-kaart">${clKaartHtml(b.id,{coll:clStore().coll})}<b class="cl-buit-n">+${b.n}</b></div>`).join('')}</div><button class="arc-go" data-klaar>Verder</button>`;
+  const stuks=[{munt}].concat(buit);let n=0;
+  const rest=()=>`<div class="cl-buit-rest">${clKistSvg(kist.soort)}<b>${stuks.length-n}</b></div>`;
+  const toon=()=>{
+    if(n>=stuks.length){o.className='cl-kistscherm open';o.innerHTML=`<h2>${_arcEsc(K.naam)}</h2><div class="cl-buit-munt">${CL_MUNT}<b>+${munt}</b></div>
+      <div class="cl-buit">${buit.map((b,j)=>`<div class="cl-kaart" style="--i:${j}">${clKaartHtml(b.id,{coll:clStore().coll})}<b class="cl-buit-n">+${b.n}</b></div>`).join('')}</div><button class="arc-go" data-klaar>Verder</button>`;
       o.querySelector('[data-klaar]').onclick=()=>{o.remove();clLobby();};return;}
-    const b=buit[n++];const cc=clStore().coll[b.id];const nodig=CL_UPGRADE[cc.lvl]||1;
-    o.innerHTML=`<div class="cl-buit-een">${b.nieuw?'<div class="cl-buit-nieuw">Nieuwe kaart!</div>':''}<div class="cl-kaart groot">${clKaartHtml(b.id)}</div><div class="cl-buit-naam">${_arcEsc(CL_KAARTEN[b.id].naam)}</div><div class="cl-buit-plus">+${b.n}</div>
-      <div class="cl-voortg groot${cc.n>=nodig?' kan':''}"><i style="width:${Math.min(100,cc.n/nodig*100).toFixed(0)}%"></i><b>${cc.n}/${nodig}</b></div><small>Tik om verder te gaan</small></div>`;
-    clFx('kaart');try{const m=arcMid(o.querySelector('.cl-kaart.groot'));arcBurst(m.x,m.y,{n:b.nieuw?30:14,afstand:140,maat:8});}catch(e){}
+    const b=stuks[n++];
+    if(b.munt!=null){o.innerHTML=`<div class="cl-buit-een munt"><div class="cl-buit-gloed" style="--zk:#FFC800"></div><div class="cl-buit-muntgroot">${CL_MUNT}</div><div class="cl-buit-plus">+${b.munt}</div><div class="cl-buit-naam">munten</div><small>Tik om verder te gaan</small></div>${rest()}`;
+      arcSnd('coin');}
+    else{const cc=clStore().coll[b.id],v=voor[b.id]||{lvl:1,n:0},nodig=CL_UPGRADE[cc.lvl]||1,z=CL_ZELD[CL_KAARTEN[b.id].zeld];
+      o.innerHTML=`<div class="cl-buit-een${CL_KAARTEN[b.id].zeld>=2?' zeldzaam':''}"><div class="cl-buit-gloed" style="--zk:${z.c}"></div>${b.nieuw?'<div class="cl-buit-nieuw">Nieuwe kaart!</div>':''}<div class="cl-kaart groot">${clKaartHtml(b.id)}</div>
+        <div class="cl-buit-z" style="color:${z.c}">${z.naam}</div><div class="cl-buit-naam">${_arcEsc(CL_KAARTEN[b.id].naam)}</div><div class="cl-buit-plus">×${b.n}</div>
+        <div class="cl-voortg groot"><i style="width:${Math.min(100,(b.nieuw?0:v.n)/nodig*100).toFixed(0)}%"></i><b>${cc.n}/${nodig}</b></div><small>Tik om verder te gaan</small></div>${rest()}`;
+      const bar=o.querySelector('.cl-voortg.groot');setTimeout(()=>{if(!bar)return;bar.querySelector('i').style.width=Math.min(100,cc.n/nodig*100).toFixed(0)+'%';if(cc.n>=nodig&&cc.lvl<CL_MAXLVL)bar.classList.add('kan');},380);
+      clFx(CL_KAARTEN[b.id].zeld>=2||b.nieuw?'kist':'kaart');}
+    try{const m=arcMid(o.querySelector('.cl-kaart.groot,.cl-buit-muntgroot'));arcBurst(m.x,m.y,{n:b.nieuw||(b.id&&CL_KAARTEN[b.id].zeld>=2)?30:14,afstand:140,maat:8});}catch(e){}
     o.onclick=()=>{o.onclick=null;toon();};};
-  o.classList.add('open');setTimeout(toon,500);
+  // Openen: de kist schudt, de deksel klapt open en er komt licht uit.
+  o.className='cl-kistscherm opent';o.innerHTML=`<div class="cl-open-st"><div class="cl-stralen"></div><div class="cl-kist-groot">${clKistSvg(kist.soort)}</div><h2>${_arcEsc(K.naam)}</h2></div>`;
+  const lite=arcLite();const g=o.querySelector('.cl-kist-groot');
+  if(lite){o.classList.add('los');clFx('kist');setTimeout(toon,350);return;}
+  g.classList.add('tril');arcHap([10,40,10,40,10]);
+  setTimeout(()=>{if(!o.isConnected)return;o.classList.add('los');clFx('kist');arcHap([30,20,60]);try{const m=arcMid(g);arcBurst(m.x,m.y,{n:34,afstand:180,maat:9});}catch(e){}},900);
+  setTimeout(()=>{if(o.isConnected)toon();},1700);
 }

@@ -10894,3 +10894,160 @@ html.dark .cl-kaart-art{background:var(--zc)}
 .cl-sleepkaart img{display:block;width:100%;height:100%;border-radius:11px;box-shadow:0 0 0 3px #fff,0 0 0 5px #2B2233,0 10px 18px rgba(0,0,0,.3)}
 .cl-sleepkaart.veld{opacity:0}
 .cl-kaarten .cl-kaart.sleept .cl-kaart-art{opacity:.35;transform:scale(.92)}
+
+/* ═══════ CLASH PROGRESSIE: koningslevel, munten, kroonkist, bekerweg, kisten openen ═══════ */
+.cl-munt{width:18px;height:18px;flex:none}
+.cl-schild{display:inline-grid;place-items:center;width:30px;height:33px;font:900 14px/1 var(--font-head);color:#fff;font-style:normal;text-shadow:0 2px 0 rgba(0,0,0,.25);
+  background:#1CB0F6;clip-path:polygon(50% 0,100% 14%,100% 62%,50% 100%,0 62%,0 14%);box-shadow:inset 0 -5px 0 #1590D0;flex:none}
+.cl-schild.groot{width:96px;height:106px;font-size:46px;box-shadow:inset 0 -12px 0 #1590D0;animation:clGrootIn .6s cubic-bezier(.2,1.5,.4,1) both .15s}
+.cl-koning{display:flex;flex-direction:column;align-items:center;gap:3px;flex:none}
+.cl-kl-bar{display:block;width:34px;height:6px;border-radius:999px;background:#2B2233;overflow:hidden;box-shadow:0 0 0 1.5px #fff}
+.cl-kl-bar b{display:block;height:100%;background:#58CC02}
+.cl-chips{display:flex;flex-direction:column;gap:4px;align-items:stretch;flex:none}
+.cl-chips .cl-bekers{padding:4px 9px 4px 6px;font-size:13px;gap:5px;justify-content:flex-start}
+.cl-chips .cl-bekers svg{width:16px;height:16px}
+#arc-stage .cl-munten{color:#B07A00!important}
+.cl-lobby-top .cl-lobby-titel{min-width:0}
+button.cl-arena{display:block;width:100%;border:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
+button.cl-arena:active{transform:translateY(3px);box-shadow:0 0 0 var(--lip)}
+.cl-arena-r span::after{content:' ›';color:var(--mu2)}
+/* Kistplekken: vier kisten plus de kroonkist */
+.cl-lobby-onder .cl-kisten{grid-template-columns:repeat(5,minmax(0,1fr))}
+.cl-lobby-onder .cl-kist{flex-direction:column;gap:1px;min-height:52px;padding:4px 2px 5px;position:relative}
+.cl-lobby-onder .cl-kist .cl-kist-svg{width:32px;height:31px}
+.cl-lobby-onder .cl-kist small{text-align:center;font-size:9.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.cl-lobby-onder .cl-kist.leeg{min-height:52px;gap:4px}
+.cl-lobby-onder .cl-kist.leeg small{font-size:8.5px;white-space:normal;line-height:1.1}
+.cl-kist.kroon{border-color:#BEE6FB;background:#EAF7FE}
+html.dark .cl-kist.kroon{background:color-mix(in srgb,#1CB0F6 14%,var(--card));border-color:color-mix(in srgb,#1CB0F6 40%,var(--line))}
+.cl-kist.kroon small{color:#1590D0!important}
+.cl-kist.kroon .cl-kist-svg{animation:none}
+.cl-kist.kroon.klaar .cl-kist-svg{animation:clKistWieg 1.6s ease-in-out infinite}
+.cl-kist.kroon.klaar{border-color:#1CB0F6;box-shadow:0 3px 0 #1590D0}
+.cl-kist.kroon.op{opacity:.6}
+.cl-kr-bar{position:absolute;left:8px;right:8px;bottom:3px;height:3px;border-radius:2px;background:var(--line);overflow:hidden;display:none}
+.cl-kr-bar b{display:block;height:100%;background:#1CB0F6}
+.cl-kist.kroon:not(.op):not(.klaar) .cl-kr-bar{display:block}
+.cl-kist.kroon:not(.op):not(.klaar) small{margin-bottom:3px}
+.cl-kop-knoppen{display:flex;gap:6px}
+.cl-weg-knop{position:relative}
+.cl-dot{position:absolute;top:-7px;right:-6px;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:#FF4B4B;color:#fff;font:900 11px/18px var(--font-head);font-style:normal;box-shadow:0 0 0 2px var(--card);animation:clDot 1.6s ease-in-out infinite}
+@keyframes clDot{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+/* Levelschildje op de torenbalk */
+.cl-hp.toren u{position:absolute;left:-17px;top:50%;width:15px;height:17px;margin-top:-8.5px;background:var(--kc);color:#fff;text-decoration:none;font:900 10px/16px var(--font-head);text-align:center;
+  clip-path:polygon(50% 0,100% 14%,100% 66%,50% 100%,0 66%,0 14%);text-shadow:0 1px 0 rgba(0,0,0,.3)}
+/* Kist: deksel en schudden */
+.cl-kist-svg .kd{transform-box:view-box;transform-origin:32px 30px}
+.cl-kist-groot.tril .cl-kist-svg{animation:clTril .9s cubic-bezier(.36,.07,.19,.97) both}
+@keyframes clTril{0%{transform:scale(1)}10%,30%,50%,70%{transform:translateX(-4px) rotate(-3deg) scale(1.04)}20%,40%,60%,80%{transform:translateX(4px) rotate(3deg) scale(1.06)}90%{transform:scale(1.14,.9)}100%{transform:scale(.96,1.06)}}
+.cl-kistscherm.los .cl-kist-groot .kd{animation:clDeksel .7s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes clDeksel{0%{transform:none}100%{transform:translate(-6px,-26px) rotate(-24deg)}}
+.cl-kistscherm.los .cl-kist-groot .cl-kist-svg{animation:clKistLos .6s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes clKistLos{0%{transform:scale(1.14,.86)}100%{transform:scale(1)}}
+.cl-open-st{position:relative;display:flex;flex-direction:column;align-items:center;gap:14px}
+.cl-open-st .cl-kist-groot .cl-kist-svg{width:170px;height:165px}
+.cl-stralen{position:absolute;left:50%;top:44%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;pointer-events:none;opacity:0;
+  background:repeating-conic-gradient(from 0deg,rgba(255,200,0,.28) 0 10deg,transparent 10deg 30deg);-webkit-mask:radial-gradient(closest-side,#000 20%,transparent 100%);mask:radial-gradient(closest-side,#000 20%,transparent 100%);
+  transition:opacity .4s;animation:clStraal 14s linear infinite}
+.cl-kistscherm.los .cl-stralen,.cl-groot .cl-stralen{opacity:1}
+@keyframes clStraal{to{transform:rotate(360deg)}}
+.cl-kistscherm.los .cl-open-st::after{content:'';position:absolute;left:50%;top:40%;width:60px;height:60px;margin:-30px 0 0 -30px;border-radius:50%;background:#fff;animation:clFlits .6s ease-out both;pointer-events:none}
+@keyframes clFlits{0%{transform:scale(.2);opacity:1}100%{transform:scale(7);opacity:0}}
+/* Buit, stuk voor stuk */
+.cl-buit-een{position:relative}
+.cl-buit-gloed{position:absolute;left:50%;top:38%;width:360px;height:360px;margin:-180px 0 0 -180px;border-radius:50%;z-index:-1;pointer-events:none;
+  background:repeating-conic-gradient(from 0deg,color-mix(in srgb,var(--zk) 30%,transparent) 0 9deg,transparent 9deg 24deg);-webkit-mask:radial-gradient(closest-side,#000 25%,transparent 100%);mask:radial-gradient(closest-side,#000 25%,transparent 100%);animation:clStraal 16s linear infinite}
+.cl-buit-een .cl-kaart.groot{animation:clKaartFlip .55s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes clKaartFlip{0%{transform:translateY(90px) scale(.3) rotateY(180deg);opacity:0}60%{opacity:1}100%{transform:none}}
+.cl-buit-een.zeldzaam .cl-kaart.groot{animation-duration:.8s}
+.cl-buit-z{font:900 12px/1 var(--font);letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+.cl-buit-een .cl-voortg.groot i{transition:width .7s cubic-bezier(.22,1,.36,1)}
+.cl-buit-een .cl-voortg.groot.kan{animation:clKan .5s cubic-bezier(.2,1.5,.4,1)}
+@keyframes clKan{50%{transform:scale(1.08)}}
+.cl-buit-muntgroot svg{width:110px;height:110px;animation:clMuntDraai .7s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes clMuntDraai{0%{transform:translateY(80px) scale(.3) rotateY(540deg)}100%{transform:none}}
+.cl-buit-rest{position:absolute;left:16px;bottom:max(16px,env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;font:900 18px/1 var(--font-head);color:var(--ink)}
+.cl-buit-rest .cl-kist-svg{width:44px;height:42px}
+.cl-buit-munt{display:flex;align-items:center;gap:6px;font:900 24px/1 var(--font-head);color:var(--goud-sh)}
+.cl-buit-munt svg{width:28px;height:28px}
+.cl-buit{grid-template-columns:repeat(auto-fit,minmax(70px,90px));justify-content:center;width:100%;max-width:420px}
+.cl-buit .cl-kaart{animation:clOnder .45s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(var(--i)*70ms)}
+/* Uitslag: munten, kronen, koningservaring */
+.cl-res-buit{display:flex;justify-content:center;gap:8px;margin-top:12px;flex-wrap:wrap}
+.cl-res-buit>span{display:grid;grid-template-columns:auto auto;align-items:center;column-gap:6px;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:7px 11px 6px;box-shadow:0 3px 0 var(--lip);text-align:left}
+.cl-res-buit>span>svg,.cl-res-buit .cl-schild{grid-row:span 2;width:24px;height:24px}
+.cl-res-buit .cl-schild{width:22px;height:25px;font-size:11px;box-shadow:inset 0 -3px 0 #1590D0}
+.cl-res-buit .kr>svg{color:#1CB0F6;width:24px;height:20px}
+.cl-res-buit b{font:900 15px/1.1 var(--font-head);color:var(--ink)}.cl-res-buit small{font:700 10.5px/1.1 var(--font);color:var(--mu2)}
+/* Grote momenten */
+.cl-groot{position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:20px;background:rgba(20,16,30,.55);opacity:0;transition:opacity .25s}
+.cl-groot.on{opacity:1}
+.cl-groot-in{position:relative;width:min(380px,100%);background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:26px;box-shadow:0 6px 0 var(--lip);padding:22px 18px 18px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;overflow:hidden;
+  transform:scale(.85) translateY(20px);transition:transform .45s cubic-bezier(.2,1.4,.4,1)}
+.cl-groot.on .cl-groot-in{transform:none}
+.cl-groot-in>*{position:relative}
+.cl-groot-in .cl-stralen{position:absolute;top:30%;opacity:.6}
+.cl-groot-k{font:900 12px/1 var(--font);letter-spacing:.12em;text-transform:uppercase;color:var(--acc-sh)}
+.cl-groot-beeld{width:100%;border-radius:18px;overflow:hidden;border:2px solid var(--line);animation:clGrootIn .6s cubic-bezier(.2,1.4,.4,1) both .1s}
+.cl-groot-beeld img{display:block;width:100%;height:130px;object-fit:cover}
+.cl-groot-beeld b{display:block;font:900 26px/1 var(--font-head);padding:10px 0 12px;letter-spacing:-.01em}
+@keyframes clGrootIn{0%{transform:scale(.5);opacity:0}100%{transform:none;opacity:1}}
+.cl-groot p{margin:0;font:600 14px/1.45 var(--font);color:var(--mu2);max-width:32ch}
+.cl-groot small{font:700 12px/1.3 var(--font);color:var(--mu2)}
+.cl-groot-kaarten{display:flex;gap:10px;justify-content:center}
+.cl-groot-kaarten .cl-kaart{width:76px;display:flex;flex-direction:column;align-items:center;gap:4px;animation:clGrootIn .5s cubic-bezier(.2,1.4,.4,1) both .35s}
+.cl-groot-kaarten span:not(.cl-kaart-art){font:800 11px/1.15 var(--font-head)}
+.cl-groot .arc-go{width:100%;margin-top:4px}
+/* Bekerweg */
+.cl-weg{position:absolute;inset:0;z-index:7;background:var(--bg);color:var(--ink);display:flex;flex-direction:column;transform:translateY(24px);opacity:0;transition:transform .28s cubic-bezier(.22,1,.36,1),opacity .2s}
+.cl-weg.on{transform:none;opacity:1}
+.cl-weg-kop{display:flex;align-items:center;gap:10px;padding:max(10px,env(safe-area-inset-top)) 16px 10px;border-bottom:2px solid var(--line);background:var(--card)}
+.cl-weg-kop>div:nth-child(2){flex:1;display:flex;flex-direction:column}
+.cl-weg-kop b{font:900 21px/1.1 var(--font-head)}.cl-weg-kop small{font:700 11.5px/1.2 var(--font);color:var(--mu2)}
+.cl-weg-kop .arc-x{width:40px;height:40px;flex:0 0 40px;background:var(--bg)!important;color:var(--ink)!important;border:2px solid var(--line)}
+.cl-weg-lijst{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:14px 16px max(24px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:8px;position:relative;
+  width:100%;max-width:560px;margin:0 auto;touch-action:pan-y}
+.cl-weg-lijst::before{content:'';position:absolute;left:43px;top:20px;bottom:20px;width:6px;border-radius:3px;background:var(--line)}
+.cl-weg-rij,.cl-weg-arena,.cl-weg-jij{position:relative}
+.cl-weg-rij{display:flex;align-items:center;gap:10px;padding:8px 10px 8px 0;margin-left:0}
+.cl-weg-b{width:60px;flex:none;display:flex;flex-direction:column;align-items:center;gap:1px;font:800 11px/1 var(--font-head);color:var(--mu2);background:var(--bg);padding:4px 0;font-variant-numeric:tabular-nums}
+.cl-weg-b svg{width:16px;height:16px;color:var(--mu2)}
+.cl-weg-rij.bereikt .cl-weg-b,.cl-weg-rij.bereikt .cl-weg-b svg{color:var(--goud-sh)}
+.cl-weg-prijs{flex:1;display:flex;align-items:center;gap:10px;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:8px 10px;box-shadow:0 3px 0 var(--lip);min-width:0}
+.cl-weg-prijs b{display:block;font:800 14px/1.2 var(--font-head)}.cl-weg-prijs small{display:block;font:600 11px/1.25 var(--font);color:var(--mu2)}
+.cl-weg-ic{flex:none;width:42px;height:40px;display:grid;place-items:center}
+.cl-weg-ic .cl-kist-svg{width:42px;height:40px}.cl-weg-ic.munt svg{width:30px;height:30px}
+.cl-weg-rij:not(.bereikt) .cl-weg-prijs{opacity:.62}
+.cl-weg-haal{width:auto!important;flex:none;margin:0!important;padding:9px 12px!important;font-size:13px!important;animation:clDot 1.6s ease-in-out infinite}
+.cl-weg-ok{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#58CC02;color:#fff;font:900 16px/1 var(--font-head);box-shadow:0 3px 0 #58A700}
+.cl-weg-ok.net{animation:clGrootIn .4s cubic-bezier(.2,1.5,.4,1)}
+.cl-weg-slot{flex:none;width:34px;height:34px;border-radius:50%;border:2px dashed var(--line)}
+.cl-weg-arena{display:flex;align-items:center;gap:12px;background:var(--card);border:2px solid var(--line);border-radius:20px;padding:10px;box-shadow:0 4px 0 var(--lip);margin:6px 0}
+.cl-weg-arena.nu{border-color:#1CB0F6;box-shadow:0 4px 0 #1590D0}
+.cl-weg-foto{position:relative;flex:none;width:88px;height:66px;border-radius:12px;overflow:hidden;border:2px solid var(--line)}
+.cl-weg-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.cl-weg-foto img.dicht{filter:grayscale(1) brightness(.75)}
+.cl-weg-foto span{position:absolute;left:4px;top:4px;min-width:20px;height:20px;border-radius:7px;background:#2B2233;color:#fff;font:900 11px/20px var(--font-head);text-align:center}
+.cl-weg-tekst{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.cl-weg-tekst small{display:flex;align-items:center;gap:3px;font:800 11px/1 var(--font-head);color:var(--goud-sh)}.cl-weg-tekst small svg{width:13px;height:13px}
+.cl-weg-tekst b{font:900 17px/1.1 var(--font-head)}
+.cl-weg-tekst em{font:600 11px/1.25 var(--font);font-style:normal;color:var(--mu2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cl-weg-kaarten{display:flex;align-items:center;gap:6px;margin-top:3px;min-width:0}
+.cl-weg-kaarten .cl-kaart{width:30px;flex:none;pointer-events:none}
+.cl-weg-kaarten .cl-kaart .cl-kaart-art em{display:none}
+.cl-weg-arena:not(.bereikt) .cl-weg-kaarten .cl-kaart{filter:grayscale(.8);opacity:.7}
+.cl-weg-arena-prijs{flex:none;display:flex;flex-direction:column;align-items:center;gap:4px;font:900 13px/1 var(--font-head);color:var(--goud-sh)}
+.cl-weg-arena-prijs>svg{width:20px;height:20px}
+.cl-weg-arena-prijs .cl-weg-haal{padding:7px 9px!important;font-size:12px!important}
+.cl-weg-jij{display:flex;align-items:center;gap:10px;margin:2px 0}
+.cl-weg-jij span{width:60px;flex:none;display:flex;flex-direction:column;align-items:center;font:900 12px/1 var(--font-head);color:#fff;background:#1CB0F6;border-radius:12px;padding:5px 0;box-shadow:0 3px 0 #1590D0;font-variant-numeric:tabular-nums}
+.cl-weg-jij span svg{width:15px;height:15px}
+.cl-weg-jij b{font:900 13px/1 var(--font-head);color:#1590D0;text-transform:uppercase;letter-spacing:.08em}
+.cl-weg-jij::after{content:'';flex:1;height:3px;border-radius:2px;background:repeating-linear-gradient(90deg,#1CB0F6 0 8px,transparent 8px 14px)}
+@media(max-width:380px){.cl-weg-foto{width:70px;height:56px}.cl-weg-b{width:52px}.cl-weg-lijst::before{left:39px}.cl-weg-jij span{width:52px}}
+@media(prefers-reduced-motion:reduce){.cl-stralen,.cl-buit-gloed,.cl-dot,.cl-weg-haal,.cl-kist.kroon.klaar .cl-kist-svg{animation:none!important}}
+.cl-upg-k{display:inline-flex!important;align-items:center;gap:6px}
+.cl-upg-k em{display:inline-flex;align-items:center;gap:3px;font-style:normal;background:rgba(0,0,0,.14);border-radius:999px;padding:3px 7px 3px 4px}
+.cl-upg-k:disabled em{background:none;padding:0}
+.cl-kist-svg{overflow:visible}
+.cl-groot-kaarten .cl-kaart-art{width:100%}
