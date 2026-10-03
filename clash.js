@@ -1247,7 +1247,8 @@ function clStop(){
   CL.on=false;cancelAnimationFrame(CL.raf);clCoachWeg();CL.tut=null;
   try{CL.ro&&CL.ro.disconnect();}catch(e){}
   if(CL._key){document.removeEventListener('keydown',CL._key);CL._key=null;}
-  if(CL._mv){document.removeEventListener('pointermove',CL._mv);document.removeEventListener('pointerup',CL._up);CL._mv=CL._up=null;}
+  if(CL._mv){document.removeEventListener('pointermove',CL._mv);document.removeEventListener('pointerup',CL._up);document.removeEventListener('pointercancel',CL._af);CL._mv=CL._up=CL._af=null;}
+  document.querySelectorAll('.cl-sleepkaart').forEach(x=>x.remove());
   if(CL.bg){CL.bg.width=CL.bg.height=0;}
   CL.cv=null;CL.ctx=null;CL.bg=null;CL.lijken=[];CL.route=null;CL.ghost=null;CL.zoneAan=false;CL.bars=null;CL.pops=null;CL.ents=[];CL.fx=[];CL.proj=[];CL.mode='lobby';CL.vw=CL.vh=0;
 }
@@ -1315,20 +1316,20 @@ function clLobby(){
   veld.querySelectorAll('.cl-lobby,.cl-laden,.cl-hud,.cl-bars,.cl-pops,.cl-overlay').forEach(x=>x.remove());
   const pct=volgende?Math.min(100,(c.bekers-ar.min)/(volgende.min-ar.min)*100):100;
   const L=document.createElement('div');L.className='cl-lobby';
+  // Compact zoals het hoofdscherm van een kaartspel: kop, arena in beeld, en onderaan
+  // een vast paneel met kisten, je deck als rij en de grote Strijd-knop.
   L.innerHTML=`<div class="cl-lobby-top"><button class="arc-x" onclick="arcClose()" aria-label="Sluiten">✕</button>
+      <div class="cl-lobby-titel"><small>${_arcEsc(vak?vak.naam:'')}</small><b>Slagio Clash</b></div>
       <div class="cl-bekers" title="Bekers">${CL_BEKER}<b>${arcNf(c.bekers,0)}</b></div></div>
-    <div class="cl-lobby-mid">
-      <div class="cl-lobby-k">${_arcEsc(vak?vak.naam:'')}${vak?' · ':''}${_arcEsc(ar.naam)}</div>
-      <h1 class="cl-lobby-h">Slagio Clash</h1>
-      ${c.gespeeld>=3?`<button class="cl-hoe" onclick="clRegels(true)">Hoe werkt het?</button>`:`<ol class="cl-regels"><li><b>Tik het juiste begrip</b><span>Elk goed antwoord geeft 1 kennis.</span></li><li><b>Zet kaarten in</b><span>Een kaart kost kennis. Sleep hem naar jouw helft.</span></li><li><b>Haal torens neer</b><span>Toren = 1 kroon. Koningstoren = 3 kronen en meteen gewonnen.</span></li></ol>`}
-      <div class="cl-arena"><div class="cl-arena-r"><span>${_arcEsc(ar.naam)}</span><small>${volgende?`${arcNf(volgende.min-c.bekers,0)} bekers tot ${_arcEsc(volgende.naam)}`:'Hoogste arena'}</small></div><div class="cl-arena-bar"><i style="width:${pct.toFixed(0)}%"></i></div></div>
-    </div>
+    <div class="cl-arena"><div class="cl-arena-r"><span>${_arcEsc(ar.naam)}</span><small>${volgende?`${arcNf(volgende.min-c.bekers,0)} bekers tot ${_arcEsc(volgende.naam)}`:'Hoogste arena'}</small></div><div class="cl-arena-bar"><i style="width:${pct.toFixed(0)}%"></i></div></div>
+    <div class="cl-lobby-ruimte"></div>
     <div class="cl-lobby-onder">
-      <div class="cl-kisten">${[0,1,2,3].map(i=>{const k=c.kisten[i];return k?`<button class="cl-kist ${k.soort}" onclick="clKistOpen(${i})">${clKistSvg(k.soort)}<b>${CL_KIST[k.soort].naam}</b><small>${CL_KIST[k.soort].nodig} begrippen</small></button>`:`<div class="cl-kist leeg"><span></span><small>Leeg</small></div>`;}).join('')}</div>
-      <div class="cl-deck-kop"><b>Jouw deck</b><small>Tik op een kaart om te wisselen</small></div>
-      <div class="cl-deck" id="cl-deck">${c.deck.map((id,i)=>`<button class="cl-kaart klein" onclick="clKaartInfo(${i})" aria-label="${_arcEsc(CL_KAARTEN[id].naam)}">${clKaartHtml(id,{coll:c.coll})}</button>`).join('')}</div>
-      ${genoeg?`<button class="arc-go cl-strijd" id="cl-strijd">Strijd</button>`:`<p class="cl-lobby-p">${_arcEsc(vak?vak.naam:'Dit vak')} heeft nog te weinig begrippen en korte vragen. Kies in de Arcade een ander vak.</p><button class="arc-go" onclick="arcClose()">Terug</button>`}
-      <div class="cl-lobby-stat">${c.gespeeld?`${c.gewonnen} van ${c.gespeeld} gewonnen`:'Je eerste potje'}</div>
+      <div class="cl-kisten">${[0,1,2,3].map(i=>{const k=c.kisten[i];return k?`<button class="cl-kist ${k.soort}" onclick="clKistOpen(${i})">${clKistSvg(k.soort)}<small>${CL_KIST[k.soort].nodig} begrippen</small></button>`:`<div class="cl-kist leeg"><span></span></div>`;}).join('')}</div>
+      <div class="cl-deck-kop"><b>Jouw deck</b><button class="cl-hoe" onclick="clRegels(true)">Hoe werkt het?</button></div>
+      <div class="cl-deck mini" id="cl-deck">${c.deck.map((id,i)=>{const cc=c.coll[id]||{lvl:1,n:0},kan=cc.lvl<CL_MAXLVL&&cc.n>=(CL_UPGRADE[cc.lvl]||1e9);
+        return `<button class="cl-kaart mini${kan?' upg':''}" onclick="clKaartInfo(${i})" aria-label="${_arcEsc(CL_KAARTEN[id].naam)}, level ${cc.lvl}">${clKaartHtml(id,{naam:false})}<span class="cl-mlvl">${kan?'↑':cc.lvl}</span></button>`;}).join('')}</div>
+      ${genoeg?`<button class="arc-go cl-strijd" id="cl-strijd">${CL_ZWAARDEN}<span>Strijd</span></button>`:`<p class="cl-lobby-p">${_arcEsc(vak?vak.naam:'Dit vak')} heeft nog te weinig begrippen en korte vragen. Kies in de Arcade een ander vak.</p><button class="arc-go" onclick="arcClose()">Terug</button>`}
+      <div class="cl-lobby-stat">${c.gespeeld?`${c.gewonnen} van ${c.gespeeld} gewonnen`:'Je eerste potje: de uitleg volgt in het spel'}</div>
     </div>`;
   veld.appendChild(L);
   const b=document.getElementById('cl-strijd');if(b)b.onclick=()=>{arcSnd('start');clStartPotje();};
@@ -1595,18 +1596,26 @@ function clInput(){
   const kaarten=document.getElementById('cl-kaarten'),cv=CL.cv;
   const punt=(cx,cy)=>{const r=cv.getBoundingClientRect();if(cx<r.left||cx>r.right||cy<r.top||cy>r.bottom)return null;
     const w=clPunt(cx-r.left,cy-r.top);return [Math.round(w[0]*2)/2,Math.round(w[1]*2)/2];};
-  let sleep=null;
-  kaarten.addEventListener('pointerdown',e=>{const b=e.target.closest('.cl-kaart');if(!b||CL.klaar||CL.mode!=='strijd')return;e.preventDefault();sleep={i:+b.dataset.i,x:e.clientX,y:e.clientY,beweeg:false};});
-  if(CL._mv){document.removeEventListener('pointermove',CL._mv);document.removeEventListener('pointerup',CL._up);}
+  let sleep=null,vlieg=null;
+  // De kaart volgt je vinger; boven het veld wordt hij het voorbeeld van de eenheid.
+  const vliegZet=(x,y,opVeld)=>{if(!vlieg)return;vlieg.style.transform=`translate(${x}px,${y}px) translate(-50%,-62%) scale(${opVeld?.4:1.08})`;vlieg.classList.toggle('veld',!!opVeld);};
+  const vliegWeg=()=>{if(vlieg){vlieg.remove();vlieg=null;}document.querySelectorAll('#cl-kaarten .cl-kaart.sleept').forEach(x=>x.classList.remove('sleept'));};
+  // Bij aanraken ligt het plaatsingspunt net boven je vinger, zodat je ziet waar hij komt.
+  const doelPunt=e=>punt(e.clientX,e.clientY-(e.pointerType==='touch'?34:0));
+  kaarten.addEventListener('pointerdown',e=>{const b=e.target.closest('.cl-kaart');if(!b||CL.klaar||CL.mode!=='strijd')return;e.preventDefault();sleep={i:+b.dataset.i,x:e.clientX,y:e.clientY,beweeg:false,b};});
+  kaarten.addEventListener('touchmove',e=>{if(sleep)e.preventDefault();},{passive:false});
+  if(CL._mv){document.removeEventListener('pointermove',CL._mv);document.removeEventListener('pointerup',CL._up);document.removeEventListener('pointercancel',CL._af);}
   CL._mv=e=>{
     if(!sleep){if(CL.gekozen>=0&&e.pointerType==='mouse')clGhost(CL.hand[CL.gekozen],punt(e.clientX,e.clientY));return;}
-    if(!sleep.beweeg&&Math.hypot(e.clientX-sleep.x,e.clientY-sleep.y)>12){sleep.beweeg=true;CL.gekozen=sleep.i;clHand();document.documentElement.classList.add('cl-sleept');}
-    if(sleep.beweeg)clGhost(CL.hand[sleep.i],punt(e.clientX,e.clientY));
+    if(!sleep.beweeg&&Math.hypot(e.clientX-sleep.x,e.clientY-sleep.y)>10){sleep.beweeg=true;CL.gekozen=sleep.i;clHand();document.documentElement.classList.add('cl-sleept');
+      const id=CL.hand[sleep.i];vlieg=document.createElement('div');vlieg.className='cl-sleepkaart';vlieg.innerHTML=CL_PORTRET[id]?`<img src="${CL_PORTRET[id]}" alt="">`:'';document.body.appendChild(vlieg);sleep.b.classList.add('sleept');arcSnd('tap');}
+    if(sleep.beweeg){const pt=doelPunt(e);vliegZet(e.clientX,e.clientY,!!pt);clGhost(CL.hand[sleep.i],pt);}
   };
   CL._up=e=>{if(!sleep)return;const s=sleep;sleep=null;document.documentElement.classList.remove('cl-sleept');
-    if(s.beweeg){const pt=punt(e.clientX,e.clientY);if(pt)clSpeel(s.i,pt[0],pt[1]);CL.gekozen=-1;clGhostWeg();clHand();}
+    if(s.beweeg){const pt=doelPunt(e);vliegWeg();if(pt)clSpeel(s.i,pt[0],pt[1]);CL.gekozen=-1;clGhostWeg();clHand();}
     else{CL.gekozen=CL.gekozen===s.i?-1:s.i;arcSnd('tap');if(CL.gekozen<0)clGhostWeg();clHand();}};
-  document.addEventListener('pointermove',CL._mv);document.addEventListener('pointerup',CL._up);
+  CL._af=()=>{if(!sleep)return;sleep=null;document.documentElement.classList.remove('cl-sleept');vliegWeg();CL.gekozen=-1;clGhostWeg();clHand();};
+  document.addEventListener('pointermove',CL._mv);document.addEventListener('pointerup',CL._up);document.addEventListener('pointercancel',CL._af);
   if(!cv._clBound){cv._clBound=true;cv.addEventListener('pointerdown',e=>{if(CL.gekozen<0||CL.klaar||CL.mode!=='strijd')return;const pt=punt(e.clientX,e.clientY);if(!pt)return;
     if(clSpeel(CL.gekozen,pt[0],pt[1])){CL.gekozen=-1;clGhostWeg();clHand();}});}
   if(CL._key)document.removeEventListener('keydown',CL._key);
