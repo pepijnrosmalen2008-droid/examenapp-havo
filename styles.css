@@ -11280,3 +11280,54 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 #arc-stage .cl-lobby-onder .cl-kist.kroon{background:#2F6DB5;box-shadow:inset 0 -4px 0 #1F4A80}
 .cl-bekerbalk{border-color:#C98E46}
 .cl-dot{background:var(--rood)}
+
+/* ═══════ CLASH: LETTERS IN THEMA ═══════
+   Drie letters, elk met een eigen taak:
+   Cinzel (titels) · Alegreya Sans SC (knoppen, labels, getallen: stevig, kleine kapitalen)
+   · Alegreya (leestekst: begrippen, uitleg, feiten; een boekletter die goed leest).
+   Alegreya heeft standaard 'oude' cijfers; lnum zet ze recht voor scores en tellers. */
+@font-face{font-family:'Alegreya';src:url(fonts/alegreya.woff2) format('woff2');font-weight:400 900;font-display:swap}
+@font-face{font-family:'Alegreya Sans SC';src:url(fonts/alegreya-sans-sc-700.woff2) format('woff2');font-weight:400 700;font-display:swap}
+@font-face{font-family:'Alegreya Sans SC';src:url(fonts/alegreya-sans-sc-800.woff2) format('woff2');font-weight:800;font-display:swap}
+@font-face{font-family:'Alegreya Sans SC';src:url(fonts/alegreya-sans-sc-900.woff2) format('woff2');font-weight:900;font-display:swap}
+html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc-t-clash-res,html.dark #arc-stage.arc-t-clash-res{
+  --font:'Alegreya',Georgia,serif;--font-head:'Alegreya Sans SC','Alegreya',sans-serif;--font-lees:'Alegreya',Georgia,serif;
+  font-family:var(--font);font-feature-settings:"lnum" 1,"kern" 1}
+:where(#arc-stage.arc-t-clash,#arc-stage.arc-t-clash-res) button{font-family:var(--font-head)}
+#arc-stage.arc-t-clash .arc-go,#arc-stage.arc-t-clash-res .arc-go,#arc-stage.arc-t-clash .arc-ghost,#arc-stage.arc-t-clash-res .arc-ghost{font-family:var(--font-head)!important;font-weight:900;letter-spacing:.02em}
+/* Leestekst in de flitsen: definitie in Alegreya, het begrip zelf in Cinzel */
+.cl-f-v{font:700 16px/1.28 var(--font-lees);letter-spacing:0}
+.cl-f-v.vraag{font-size:15px}
+.cl-f-v.term{font:900 22px/1.15 var(--font-mid);letter-spacing:.02em}
+.cl-opt{font:600 13px/1.2 var(--font-lees)}
+.cl-opt.chip{font:800 14.5px/1.1 var(--font-head);letter-spacing:.01em}
+.cl-f-kop span,.cl-f-kop{font-family:var(--font-head);letter-spacing:.04em}
+.cl-f-fb{font-family:var(--font-lees);font-size:13.5px}
+.cl-info b{font-family:var(--font-mid);letter-spacing:.02em}
+.cl-info span,.cl-info em{font-family:var(--font-lees)}
+.cl-sheet-feit{font:500 14.5px/1.5 var(--font-lees)}
+.cl-sheet-kop h3{font-family:var(--font-mid);font-weight:900;letter-spacing:.02em}
+.cl-sheet-z{font-family:var(--font-head);letter-spacing:.06em}
+.cl-sheet-st b{font-family:var(--font-head);font-size:14.5px}
+.cl-upg-t b{font-family:var(--font-mid);letter-spacing:.02em}
+.cl-upg-t span{font-family:var(--font-lees);font-size:13px}
+.cl-leer-v{font:800 15px/1.3 var(--font-head);letter-spacing:.01em}
+.cl-leer-u,.cl-leer-a{font-family:var(--font-lees);font-size:13.5px}
+.cl-leer-k,.cl-leer-sr{font-family:var(--font-head);letter-spacing:.03em}
+.cl-groot p{font:500 15px/1.45 var(--font-lees)}
+.cl-kist-p{font-family:var(--font-lees);font-size:15px}
+.cl-regels li,.cl-lobby-p,.cl-paneel-p{font-family:var(--font-lees)}
+/* Getallen en labels: stevig in kleine kapitalen */
+.cl-hp.toren b,.cl-getal,.cl-plus,.cl-klok,.cl-kennis b,.cl-bb-n,.cl-bb-d,.cl-buit-plus,.cl-buit-n,.cl-buit-munt,.cl-res-buit b,.cl-schild,.cl-hp.toren u,.cl-mlvl,.cl-kaart-art em{font-family:var(--font-head)!important}
+.cl-klok{font-weight:900;font-size:21px}
+.cl-kaart-n{font-family:var(--font-head);font-weight:800;font-size:10.5px;letter-spacing:.01em}
+.cl-tegen,.cl-pop,.cl-dot{font-family:var(--font-head)}
+.cl-kn-r>small,.cl-paneel-kop span,.cl-weg-prijs small,.cl-weg-tekst em,.cl-res-buit small,.cl-kist small,.cl-slot{font-family:var(--font-lees);letter-spacing:0}
+.cl-kist small{font-size:10.5px}
+#arc-stage.arc-t-clash-res .arc-res-stats small,#arc-stage.arc-t-clash-res .arc-res-sub{font-family:var(--font-lees);font-size:13px}
+#arc-stage.arc-t-clash-res .arc-res-stats b{font-family:var(--font-head);font-weight:900}
+#arc-stage.arc-t-clash-res .arc-res-big,#arc-stage.arc-t-clash-res .arc-tel{font-family:var(--font-mid);font-weight:900}
+.cl-banner small,.cl-cd b{font-family:var(--font-mid);font-weight:900}
+.cl-opt.chip{font:800 14px/1.12 var(--font-lees);letter-spacing:0}
+.cl-f-o .cl-opt span{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+.cl-kist small{word-spacing:.12em}

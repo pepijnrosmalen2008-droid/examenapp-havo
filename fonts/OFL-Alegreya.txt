@@ -1,0 +1,4 @@
+Alegreya (fonts/alegreya.woff2) en Alegreya Sans SC (fonts/alegreya-sans-sc-*.woff2)
+Copyright 2011 The Alegreya Project Authors (https://github.com/huertatipografica/Alegreya, https://github.com/huertatipografica/Alegreya-Sans)
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+The license is available at https://openfontlicense.org

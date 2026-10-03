@@ -545,7 +545,7 @@ function clToren(e){
   G.restore();
   if(kon){G.save();G.translate(16,top-12);cV(()=>G.arc(0,4,5,0,7),'#7E4F24','#5B3A22',1);cC(0,4,2,'#E8B46A');G.rotate(s.mik!=null?s.mik:-.35);const terug=e.swing<.3?Math.sin(clSeg(e.swing,0,.3)*Math.PI)*(e.swing<.08?5:3):0;
     cV(()=>G.roundRect(-3-terug,-3.8,17.5,7.6,3.6),'#5B5F6B','#3C3C3C',99);G.save();G.translate(-terug,0);cR(12.5,-4.6,4.2,9.2,1.6,'#3C3C3C');cR(4,-4.2,2,8.4,1,'#8C99A8');G.restore();cGl(4,0,6,3.8,4.6,1.2);G.restore();}
-  if(kon&&!e.actief&&!e.dood){for(const k of [0,.5]){const p=(t*.7+k)%1;G.save();G.globalAlpha*=Math.sin(p*Math.PI);G.fillStyle=ck('#FFFFFF');G.font='900 '+(6+p*5)+'px Inter,system-ui,sans-serif';G.fillText('z',-4+p*10,top-50-p*15);G.restore();}}
+  if(kon&&!e.actief&&!e.dood){for(const k of [0,.5]){const p=(t*.7+k)%1;G.save();G.globalAlpha*=Math.sin(p*Math.PI);G.fillStyle=ck('#FFFFFF');G.font='900 '+(6+p*5)+'px "Alegreya Sans SC",Inter,system-ui,sans-serif';G.fillText('z',-4+p*10,top-50-p*15);G.restore();}}
   // kantelen vooraan
   const n=kon?6:4,mw=dw/(n*2-1);
   for(let i=0;i<n;i++){const x=-dw/2+i*mw*2;G.beginPath();G.roundRect(x,top-13.5,mw,7,2.2);cOmlijn(2.2);cV(()=>G.roundRect(x,top-13.5,mw,7,2.2),'#F3EBDD','#DCD0BC',x+mw*.62);cR(x+1,top-12.6,mw*.5,1.4,.7,'#FFFFFF');}
@@ -1470,7 +1470,7 @@ function clLobby(){
     <div class="cl-lobby-ruimte"></div>
     <div class="cl-lobby-onder">
       ${genoeg?`<button class="arc-go cl-strijd" id="cl-strijd">${CL_ZWAARDEN}<span>Strijd</span></button>`:`<p class="cl-lobby-p">${_arcEsc(vak?vak.naam:'Dit vak')} heeft nog te weinig begrippen en korte vragen. Kies in de Arcade een ander vak.</p><button class="arc-go" onclick="arcClose()">Terug</button>`}
-      <div class="cl-kisten">${[0,1,2,3].map(i=>{const k=c.kisten[i];return k?`<button class="cl-kist ${k.soort}" onclick="clKistOpen(${i})" aria-label="${_arcEsc(CL_KIST[k.soort].naam)} openen">${clKistSvg(k.soort)}<small>${CL_KIST[k.soort].nodig} begrippen</small></button>`:`<div class="cl-kist leeg"><span></span><small>Kistplek</small></div>`;}).join('')}
+      <div class="cl-kisten">${[0,1,2,3].map(i=>{const k=c.kisten[i];return k?`<button class="cl-kist ${k.soort}" onclick="clKistOpen(${i})" aria-label="${_arcEsc(CL_KIST[k.soort].naam)} openen">${clKistSvg(k.soort)}<small>${CL_KIST[k.soort].nodig} goed</small></button>`:`<div class="cl-kist leeg"><span></span><small>Kistplek</small></div>`;}).join('')}
         <button class="cl-kist kroon${krKlaar?' klaar':''}${kr.open?' op':''}" ${krKlaar?`onclick="clKistOpen('kroon')"`:`onclick="clPopMid('${kr.open?'Morgen staat er een nieuwe kroonkist klaar':`Nog ${10-kr.n} kronen voor de kroonkist`}')"`} aria-label="Kroonkist, ${kr.n} van 10 kronen">${clKistSvg('kroon')}<small>${kr.open?'Morgen':krKlaar?'Openen':`${kr.n}/10`}</small><i class="cl-kr-bar"><b style="width:${kr.n*10}%"></b></i></button></div>
     </div>`;
   else if(tab==='kaarten')midden=`<div class="cl-paneel" id="cl-paneel">${clKaartenHtml(c)}</div>`;
