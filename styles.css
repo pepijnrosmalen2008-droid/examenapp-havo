@@ -11056,15 +11056,15 @@ html.dark .cl-kist.kroon{background:color-mix(in srgb,#1CB0F6 14%,var(--card));b
    Eén vaste wereld (geen licht/donker): menu's in diep blauw, panelen een tint
    donkerder, knoppen met donkere rand en witte tekst met contour. */
 html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc-t-clash-res,html.dark #arc-stage.arc-t-clash-res{
-  --bg:#2A63B8;--card:#1C4A93;--ink:#FFFFFF;--mu2:#BFD6F5;--line:#3C7BD4;--lip:#0D2552;--acc:#3AA8F5;--acc-sh:#1C6FC0;--accink:#fff;--goud:#FFC800;--goud-sh:#D99A00;
-  --cr-rand:#0D2552;--elix:#E040FB;--elix-d:#A21CAF;
-  --omlijn:0 2px 0 #0D2552,1.6px 1.6px 0 #0D2552,-1.6px 1.6px 0 #0D2552,1.6px -1.6px 0 #0D2552,-1.6px -1.6px 0 #0D2552,2px 0 0 #0D2552,-2px 0 0 #0D2552,0 -2px 0 #0D2552,0 4px 0 rgba(0,0,0,.25);
-  --omlijn-groot:0 4px 0 #0D2552,3px 3px 0 #0D2552,-3px 3px 0 #0D2552,3px -3px 0 #0D2552,-3px -3px 0 #0D2552,4px 0 0 #0D2552,-4px 0 0 #0D2552,0 -4px 0 #0D2552,0 9px 0 rgba(0,0,0,.25)}
-html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45deg,rgba(255,255,255,.035) 0 14px,transparent 14px 28px)!important;color:#fff}
+  --bg:#7A4E2A;--card:#5C3A1E;--ink:#FFFFFF;--mu2:#E9D7B4;--line:#9A6A3A;--lip:#1E130A;--acc:#3AA8F5;--acc-sh:#1C6FC0;--accink:#fff;--goud:#FFC800;--goud-sh:#D99A00;
+  --cr-rand:#1E130A;--elix:#E040FB;--elix-d:#A21CAF;
+  --omlijn:0 2px 0 #1E130A,1.6px 1.6px 0 #1E130A,-1.6px 1.6px 0 #1E130A,1.6px -1.6px 0 #1E130A,-1.6px -1.6px 0 #1E130A,2px 0 0 #1E130A,-2px 0 0 #1E130A,0 -2px 0 #1E130A,0 4px 0 rgba(0,0,0,.25);
+  --omlijn-groot:0 4px 0 #1E130A,3px 3px 0 #1E130A,-3px 3px 0 #1E130A,3px -3px 0 #1E130A,-3px -3px 0 #1E130A,4px 0 0 #1E130A,-4px 0 0 #1E130A,0 -4px 0 #1E130A,0 9px 0 rgba(0,0,0,.25)}
+html #arc-stage.arc-t-clash-res{background:#7A4E2A repeating-linear-gradient(45deg,rgba(255,255,255,.035) 0 14px,transparent 14px 28px)!important;color:#fff}
 /* Knoppen: vlak, donkere rand, lip aan de onderkant */
 #arc-stage.arc-t-clash .arc-go,#arc-stage.arc-t-clash-res .arc-go{border:2px solid var(--cr-rand);box-shadow:inset 0 -5px 0 var(--acc-sh),0 3px 0 var(--cr-rand);text-shadow:var(--omlijn);color:#fff;border-radius:14px}
 #arc-stage.arc-t-clash .arc-go:active,#arc-stage.arc-t-clash-res .arc-go:active{transform:translateY(3px);box-shadow:inset 0 -2px 0 var(--acc-sh),0 0 0 var(--cr-rand)}
-#arc-stage.arc-t-clash .arc-go:disabled{background:#5C7FB3!important;box-shadow:inset 0 -4px 0 #48689A,0 3px 0 var(--cr-rand)!important;text-shadow:none;color:#D8E4F5!important}
+#arc-stage.arc-t-clash .arc-go:disabled{background:#7A6A58!important;box-shadow:inset 0 -4px 0 #5E5040,0 3px 0 var(--cr-rand)!important;text-shadow:none;color:#D8E4F5!important}
 #arc-stage .arc-go.cl-geel,#arc-stage.arc-t-clash .cl-strijd{background:#FFC800!important;box-shadow:inset 0 -6px 0 #E08A00,0 4px 0 var(--cr-rand)!important;color:#fff!important}
 #arc-stage .arc-go.cl-weg-haal,#arc-stage.arc-t-clash .cl-upg-k:not(:disabled){background:#5FD31E!important;box-shadow:inset 0 -5px 0 #3E9A0A,0 3px 0 var(--cr-rand)!important;color:#fff!important}
 #arc-stage.arc-t-clash .arc-ghost,#arc-stage.arc-t-clash-res .arc-ghost{color:#fff;background:var(--card);border:2px solid var(--cr-rand);border-radius:14px;box-shadow:0 3px 0 var(--cr-rand)}
@@ -11075,22 +11075,22 @@ html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45d
 .cl-lobby-top{margin:0 -12px;padding:max(8px,env(safe-area-inset-top)) 12px 8px;background:var(--card);border-bottom:3px solid var(--cr-rand);max-width:none!important;width:auto!important;gap:8px;position:relative;z-index:2}
 .cl-lobby-top .arc-x{width:38px;height:38px;flex:0 0 38px;font-size:15px}
 .cl-koning{flex:1;flex-direction:row;align-items:center;gap:8px;min-width:0}
-.cl-koning .cl-schild{width:34px;height:38px;font-size:16px;box-shadow:inset 0 -5px 0 #1C6FC0;background:#3AA8F5;filter:drop-shadow(0 0 0 #0D2552) drop-shadow(1.5px 0 0 #0D2552) drop-shadow(-1.5px 0 0 #0D2552) drop-shadow(0 1.5px 0 #0D2552) drop-shadow(0 -1.5px 0 #0D2552)}
+.cl-koning .cl-schild{width:34px;height:38px;font-size:16px;box-shadow:inset 0 -5px 0 #1C6FC0;background:#3AA8F5;filter:drop-shadow(0 0 0 #1E130A) drop-shadow(1.5px 0 0 #1E130A) drop-shadow(-1.5px 0 0 #1E130A) drop-shadow(0 1.5px 0 #1E130A) drop-shadow(0 -1.5px 0 #1E130A)}
 .cl-kn-r{display:flex;flex-direction:column;gap:2px;min-width:0}
 .cl-kn-r>b{font:900 15px/1.1 var(--font-head);color:#fff;text-shadow:var(--omlijn);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:2px 2px 0}
 .cl-kn-r>small{font:700 10.5px/1.1 var(--font);color:var(--mu2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.cl-koning .cl-kl-bar{width:84px;height:7px;box-shadow:0 0 0 1.5px var(--cr-rand);background:#0D2552}
+.cl-koning .cl-kl-bar{width:84px;height:7px;box-shadow:0 0 0 1.5px var(--cr-rand);background:#1E130A}
 .cl-koning .cl-kl-bar b{background:#3AA8F5}
-#arc-stage .cl-lobby .cl-munten{background:#0D2552!important;border:2px solid #3C7BD4!important;box-shadow:none!important;color:#fff!important;padding:4px 10px 4px 5px;font-size:14px;text-shadow:var(--omlijn)}
+#arc-stage .cl-lobby .cl-munten{background:#1E130A!important;border:2px solid #9A6A3A!important;box-shadow:none!important;color:#fff!important;padding:4px 10px 4px 5px;font-size:14px;text-shadow:var(--omlijn)}
 .cl-vraagknop{font:900 17px/1 var(--font-head)!important}
 /* Arena in beeld met bekerbalk */
 .cl-arena-banner{display:flex;flex-direction:column;align-items:center;gap:2px;margin:10px auto 0!important;padding:0;border:0;background:none;cursor:pointer;color:#fff;font:inherit;width:auto!important}
 .cl-arena-banner>small{font:900 12px/1 var(--font-head);text-transform:uppercase;letter-spacing:.08em;text-shadow:var(--omlijn)}
 .cl-arena-banner>b{font:900 28px/1.05 var(--font-head);text-shadow:var(--omlijn-groot);letter-spacing:-.01em;padding:4px 0 6px}
-.cl-bekerbalk{display:flex;align-items:center;gap:0;background:#0D2552;border-radius:999px;padding:3px;border:2px solid #3C7BD4;min-width:230px}
+.cl-bekerbalk{display:flex;align-items:center;gap:0;background:#1E130A;border-radius:999px;padding:3px;border:2px solid #9A6A3A;min-width:230px}
 .cl-bb-n{display:flex;align-items:center;gap:3px;font:900 14px/1 var(--font-head);color:#FFC800;text-shadow:var(--omlijn);padding:0 8px 0 4px;font-variant-numeric:tabular-nums}
 .cl-bb-n svg{width:17px;height:17px}
-.cl-bekerbalk>i{flex:1;height:12px;border-radius:999px;background:#163566;overflow:hidden}
+.cl-bekerbalk>i{flex:1;height:12px;border-radius:999px;background:#2A1A0C;overflow:hidden}
 .cl-bekerbalk>i b{display:block;height:100%;background:#FFC800;box-shadow:inset 0 -3px 0 #E08A00}
 .cl-bb-d{font:800 11px/1 var(--font-head);color:var(--mu2);padding:0 8px;font-variant-numeric:tabular-nums}
 .cl-arena-banner:active{transform:scale(.97)}
@@ -11098,31 +11098,31 @@ html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45d
 .cl-lobby-onder{background:none!important;border:0!important;box-shadow:none!important;margin:0 auto!important;padding:0 0 10px!important;width:100%!important;max-width:560px!important;animation:clOnder .45s cubic-bezier(.22,1,.36,1)}
 #arc-stage.arc-t-clash .cl-strijd{width:min(260px,72%)!important;margin:0 auto 12px!important;padding:12px!important;font-size:26px!important;border-width:3px!important;border-radius:16px;text-shadow:var(--omlijn)!important;letter-spacing:.01em}
 .cl-strijd .cl-zwaarden{width:34px;height:34px}
-.cl-lobby-onder .cl-kisten{background:#163C7A;border:3px solid var(--cr-rand);border-radius:18px;padding:7px;margin:0;gap:6px;box-shadow:0 4px 0 rgba(0,0,0,.2)}
-#arc-stage .cl-lobby-onder .cl-kist{background:#2A63B8;border:2px solid var(--cr-rand);box-shadow:inset 0 -4px 0 #1C4A93;border-radius:12px;min-height:64px;color:#fff}
+.cl-lobby-onder .cl-kisten{background:#3E2614;border:3px solid var(--cr-rand);border-radius:18px;padding:7px;margin:0;gap:6px;box-shadow:0 4px 0 rgba(0,0,0,.2)}
+#arc-stage .cl-lobby-onder .cl-kist{background:#7A4E2A;border:2px solid var(--cr-rand);box-shadow:inset 0 -4px 0 #5C3A1E;border-radius:12px;min-height:64px;color:#fff}
 #arc-stage .cl-lobby-onder .cl-kist small{color:#fff!important;text-shadow:var(--omlijn);font-weight:900}
 #arc-stage .cl-lobby-onder .cl-kist .cl-kist-svg{width:38px;height:37px}
-#arc-stage .cl-lobby-onder .cl-kist.leeg{background:#1C4A93;border:2px dashed #3C7BD4;box-shadow:none}
+#arc-stage .cl-lobby-onder .cl-kist.leeg{background:#5C3A1E;border:2px dashed #9A6A3A;box-shadow:none}
 #arc-stage .cl-lobby-onder .cl-kist.leeg small{color:var(--mu2)!important;text-shadow:none;font-weight:800}
 #arc-stage .cl-lobby-onder .cl-kist.kroon{background:#1C6FC0}
 #arc-stage .cl-lobby-onder .cl-kist.kroon.klaar{background:#FFC800;box-shadow:inset 0 -4px 0 #E08A00}
-.cl-kr-bar{background:#0D2552}
+.cl-kr-bar{background:#1E130A}
 .cl-lobby-p{color:#fff;text-align:center;margin:0 auto 10px}
 /* Tabbalk */
-.cl-tabs{display:flex;margin:0 -12px;max-width:none!important;width:auto!important;background:#163C7A;border-top:3px solid var(--cr-rand);padding:0 8px max(4px,env(safe-area-inset-bottom));position:relative;z-index:2}
+.cl-tabs{display:flex;margin:0 -12px;max-width:none!important;width:auto!important;background:#3E2614;border-top:3px solid var(--cr-rand);padding:0 8px max(4px,env(safe-area-inset-bottom));position:relative;z-index:2}
 .cl-tab{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;border:0;background:none;color:var(--mu2);font:800 11px/1 var(--font-head);padding:8px 0 6px;cursor:pointer;transition:flex .2s}
 .cl-tab svg{width:26px;height:26px;transition:transform .25s cubic-bezier(.2,1.5,.4,1)}
 .cl-tab .cl-zwaarden{width:28px;height:28px;filter:none;animation:none}
 .cl-tab:not(.aan) svg{opacity:.75}
-.cl-tab.aan{flex:1.35;color:#fff;background:#2A63B8;border-left:3px solid var(--cr-rand);border-right:3px solid var(--cr-rand);margin-top:-8px;padding-top:10px;border-radius:12px 12px 0 0;text-shadow:var(--omlijn)}
+.cl-tab.aan{flex:1.35;color:#fff;background:#7A4E2A;border-left:3px solid var(--cr-rand);border-right:3px solid var(--cr-rand);margin-top:-8px;padding-top:10px;border-radius:12px 12px 0 0;text-shadow:var(--omlijn)}
 .cl-tab.aan svg{transform:scale(1.25) translateY(-3px);opacity:1}
 .cl-tab.aan>span{font-size:12.5px}
-.cl-tab .cl-dot{top:2px;right:calc(50% - 26px);box-shadow:0 0 0 2px #163C7A}
+.cl-tab .cl-dot{top:2px;right:calc(50% - 26px);box-shadow:0 0 0 2px #3E2614}
 /* Panelen voor Kaarten en Bekerweg */
 .cl-paneel{position:relative;flex:1 1 auto;overflow-y:auto;overscroll-behavior:contain;margin:0 -12px!important;max-width:none!important;width:auto!important;padding:10px max(12px,calc(50% - 280px)) 18px;
-  background:#2A63B8 repeating-linear-gradient(45deg,rgba(255,255,255,.035) 0 14px,transparent 14px 28px);touch-action:pan-y;animation:clPaneelIn .28s cubic-bezier(.22,1,.36,1)}
+  background:#7A4E2A repeating-linear-gradient(45deg,rgba(255,255,255,.035) 0 14px,transparent 14px 28px);touch-action:pan-y;animation:clPaneelIn .28s cubic-bezier(.22,1,.36,1)}
 @keyframes clPaneelIn{from{opacity:0;transform:translateY(14px)}}
-.cl-paneel-kop{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:6px 0 8px;padding:7px 12px;background:#163C7A;border:2px solid var(--cr-rand);border-radius:12px}
+.cl-paneel-kop{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:6px 0 8px;padding:7px 12px;background:#3E2614;border:2px solid var(--cr-rand);border-radius:12px}
 .cl-paneel-kop b{font:900 17px/1.1 var(--font-head);color:#fff;text-shadow:var(--omlijn)}
 .cl-paneel-kop span{font:700 11.5px/1.2 var(--font);color:var(--mu2)}
 .cl-paneel-kop em{font-style:normal;font:900 14px/1 var(--font-head);color:var(--elix);text-shadow:var(--omlijn)}
@@ -11134,16 +11134,16 @@ html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45d
 .cl-ck .cl-kaart-meta{flex-direction:column;align-items:stretch;gap:2px;margin-top:4px}
 #arc-stage .cl-ck .cl-lvl{background:none!important;box-shadow:none!important;color:#fff;text-shadow:var(--omlijn);font-size:11.5px;padding:2px 0 1px;min-width:0;height:auto}
 .cl-ck .cl-lvl::before{content:'Level '}
-.cl-ck .cl-voortg{height:13px!important;background:#0D2552;border:1.5px solid var(--cr-rand)}
+.cl-ck .cl-voortg{height:13px!important;background:#1E130A;border:1.5px solid var(--cr-rand)}
 .cl-ck .cl-voortg i{background:#3AA8F5}.cl-ck .cl-voortg.kan i{background:#5FD31E}
-.cl-ck .cl-voortg b{color:#fff!important;text-shadow:0 1px 0 #0D2552;line-height:11px!important}
+.cl-ck .cl-voortg b{color:#fff!important;text-shadow:0 1px 0 #1E130A;line-height:11px!important}
 .cl-ck .cl-slot{display:block;margin-top:4px;font:800 10px/1.15 var(--font-head);color:var(--mu2);text-align:center}
 .cl-deck8.kies .cl-ck.in{animation:clWiebel .32s ease-in-out infinite alternate}
 .cl-deck8.kies .cl-ck.in:nth-child(2n){animation-delay:-.16s}
 @keyframes clWiebel{from{transform:rotate(-2.5deg)}to{transform:rotate(2.5deg)}}
 .cl-ck.erin{animation:clGrootIn .4s cubic-bezier(.2,1.5,.4,1)}
 .cl-wissel-tip{margin:-2px 0 8px;padding:8px 12px;border-radius:12px;background:#FFC800;color:#fff;font:900 13.5px/1.25 var(--font-head);text-shadow:var(--omlijn);border:2px solid var(--cr-rand);text-align:center;animation:clGrootIn .3s cubic-bezier(.2,1.5,.4,1)}
-.cl-kmenu{position:absolute;z-index:6;display:flex;flex-direction:column;gap:5px;padding:6px;border-radius:12px;background:#0D2552;box-shadow:0 6px 16px rgba(0,0,0,.35);animation:clGrootIn .2s cubic-bezier(.2,1.5,.4,1)}
+.cl-kmenu{position:absolute;z-index:6;display:flex;flex-direction:column;gap:5px;padding:6px;border-radius:12px;background:#1E130A;box-shadow:0 6px 16px rgba(0,0,0,.35);animation:clGrootIn .2s cubic-bezier(.2,1.5,.4,1)}
 .cl-kmenu button{min-width:86px;border:2px solid #000;border-radius:10px;padding:8px 10px;background:#3AA8F5;box-shadow:inset 0 -4px 0 #1C6FC0;color:#fff;font:900 13.5px/1 var(--font-head);text-shadow:var(--omlijn);cursor:pointer}
 .cl-kmenu button.geel{background:#FFC800;box-shadow:inset 0 -4px 0 #E08A00}
 /* Bekerweg als tab: lijn achter de rijen */
@@ -11156,7 +11156,7 @@ html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45d
 .cl-weg-prijs b,.cl-weg-tekst b{color:#fff;text-shadow:var(--omlijn)}
 .cl-weg-arena.nu{border-color:#FFC800;box-shadow:0 3px 0 #E08A00}
 .cl-weg-foto{border-color:var(--cr-rand)}
-.cl-weg-slot{border-color:#3C7BD4}
+.cl-weg-slot{border-color:#9A6A3A}
 .cl-weg-ok{border:2px solid var(--cr-rand)}
 .cl-weg-jij span{background:#FFC800;box-shadow:inset 0 -3px 0 #E08A00;border:2px solid var(--cr-rand);text-shadow:var(--omlijn)}
 .cl-weg-jij b{color:#FFC800;text-shadow:var(--omlijn)}
@@ -11164,14 +11164,14 @@ html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45d
 /* Kaarten: kennis is roze, zoals elixer */
 .cl-kaart-art em{color:#fff;text-shadow:0 1px 0 #6B0F80,1px 0 0 #6B0F80,-1px 0 0 #6B0F80,0 -1px 0 #6B0F80}
 .cl-kaart-art em::before{background:var(--elix,#E040FB);box-shadow:inset -2.5px -2.5px 0 var(--elix-d,#A21CAF),0 0 0 2px #fff,1px 2px 0 2px rgba(0,0,0,.18)}
-.cl-kennis-bar{background:#2B0A3D!important;box-shadow:inset 0 0 0 2px #0D2552!important}
+.cl-kennis-bar{background:#2B0A3D!important;box-shadow:inset 0 0 0 2px #1E130A!important}
 .cl-kennis-bar i{background:#E040FB!important;box-shadow:inset 0 -5px 0 #A21CAF,inset 0 3px 0 rgba(255,255,255,.35)!important}
 .cl-kennis-bar s{border-right-color:#2B0A3D!important}
 .cl-kennis b{color:#fff!important;text-shadow:var(--omlijn)}
 .cl-kennis b::before{background:#E040FB;box-shadow:inset -3px -3px 0 #A21CAF,0 0 0 2px #fff,1px 3px 0 2px rgba(0,0,0,.25)}
 .cl-plus{color:#F5A3FF}
 /* Speelpaneel onderin: donkerblauw zoals de kaartbak; de vraag blijft licht en goed leesbaar */
-#arc-stage.arc-t-clash .cl-dock{background:#163C7A;border-top:3px solid var(--cr-rand);color:#fff}
+#arc-stage.arc-t-clash .cl-dock{background:#3E2614;border-top:3px solid var(--cr-rand);color:#fff}
 .cl-next small{color:#fff;text-shadow:var(--omlijn)}
 .cl-vraag,.cl-sheet-in,.cl-kistscherm .cl-kist-vraag{--ink:#3C3C3C;--card:#fff;--bg:#F1F6FC;--line:#DCE5EF;--lip:#C9D5E3;--mu2:#6B7785}
 .cl-vraag{background:#fff!important;border:2px solid var(--cr-rand)!important;color:#3C3C3C}
@@ -11182,7 +11182,7 @@ html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45d
 .cl-sheet-knoppen>*{flex:1}
 #arc-stage .cl-sheet-in .arc-ghost{color:#3C3C3C;background:#F1F6FC;border-color:#C9D5E3;box-shadow:0 3px 0 #C9D5E3}
 #arc-stage.arc-t-clash .cl-upg-k:disabled{background:#DCE5EF!important;color:#6B7785!important;box-shadow:inset 0 -3px 0 #C9D5E3!important;border-color:#C9D5E3}
-.cl-kistscherm{background:#2A63B8 repeating-linear-gradient(45deg,rgba(255,255,255,.035) 0 14px,transparent 14px 28px)!important;color:#fff!important}
+.cl-kistscherm{background:#7A4E2A repeating-linear-gradient(45deg,rgba(255,255,255,.035) 0 14px,transparent 14px 28px)!important;color:#fff!important}
 .cl-kistscherm h2,.cl-buit-naam{color:#fff;text-shadow:var(--omlijn)}
 .cl-kistscherm h2{font-size:28px}
 .cl-kist-p,.cl-buit-een small{color:var(--mu2)!important}
@@ -11193,11 +11193,11 @@ html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45d
 .cl-kistscherm.los .cl-tik{visibility:hidden}
 .cl-kist-groot.val .cl-kist-svg{animation:clKistVal .6s cubic-bezier(.3,1.3,.5,1) both}
 @keyframes clKistVal{0%{transform:translateY(-120vh)}55%{transform:translateY(0) scale(1.2,.8)}75%{transform:translateY(-14px) scale(.95,1.06)}100%{transform:none}}
-.cl-kist-bol i{background:#0D2552}.cl-kist-bol i.aan{background:#FFC800;box-shadow:0 0 0 2px #0D2552}
+.cl-kist-bol i{background:#1E130A}.cl-kist-bol i.aan{background:#FFC800;box-shadow:0 0 0 2px #1E130A}
 /* Uitslag en grote momenten in dezelfde wereld */
 #arc-stage.arc-t-clash-res .arc-res-k{color:#fff;text-shadow:var(--omlijn)}
 #arc-stage.arc-t-clash-res .arc-res-big,#arc-stage.arc-t-clash-res .arc-tel{color:#FFC800;text-shadow:var(--omlijn-groot)}
-#arc-stage.arc-t-clash-res .cl-beker-ic{color:#FFC800;filter:drop-shadow(0 3px 0 #0D2552)}
+#arc-stage.arc-t-clash-res .cl-beker-ic{color:#FFC800;filter:drop-shadow(0 3px 0 #1E130A)}
 #arc-stage.arc-t-clash-res .arc-res-sub{color:#fff}
 #arc-stage.arc-t-clash-res .arc-res-stats>div,#arc-stage.arc-t-clash-res .cl-res-buit>span,#arc-stage.arc-t-clash-res .cl-res-kist,#arc-stage.arc-t-clash-res .cl-leer{background:var(--card)!important;border:2px solid var(--cr-rand)!important;box-shadow:0 3px 0 var(--cr-rand)!important;color:#fff}
 #arc-stage.arc-t-clash-res .arc-res-stats b{color:#fff;text-shadow:var(--omlijn)}
@@ -11205,15 +11205,15 @@ html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45d
 #arc-stage.arc-t-clash-res .cl-leer-v{color:#fff}
 #arc-stage.arc-t-clash-res .cl-leer-u,#arc-stage.arc-t-clash-res .cl-leer-a{color:var(--mu2)}
 #arc-stage.arc-t-clash-res .cl-leer-sr{color:#7EE04A}
-#arc-stage.arc-t-clash-res .cl-res-kr span{color:#163C7A}
-#arc-stage.arc-t-clash-res .cl-res-kr span.aan{color:#FFC800;filter:drop-shadow(0 4px 0 #0D2552)}
+#arc-stage.arc-t-clash-res .cl-res-kr span{color:#3E2614}
+#arc-stage.arc-t-clash-res .cl-res-kr span.aan{color:#FFC800;filter:drop-shadow(0 4px 0 #1E130A)}
 #arc-stage.arc-t-clash-res .arc-xp-chip{border:2px solid var(--cr-rand)}
-.cl-groot{background:rgba(9,25,55,.6)}
-.cl-groot-in{background:#2A63B8!important;color:#fff!important;border:3px solid var(--cr-rand)!important;box-shadow:0 6px 0 var(--cr-rand)!important}
+.cl-groot{background:rgba(20,12,5,.62)}
+.cl-groot-in{background:#7A4E2A!important;color:#fff!important;border:3px solid var(--cr-rand)!important;box-shadow:0 6px 0 var(--cr-rand)!important}
 .cl-groot-k{color:#FFC800!important;text-shadow:var(--omlijn)}
-.cl-groot-beeld{border-color:var(--cr-rand)!important;background:#1C4A93}
+.cl-groot-beeld{border-color:var(--cr-rand)!important;background:#5C3A1E}
 .cl-groot-beeld b{color:#fff;text-shadow:var(--omlijn-groot);font-size:30px}
-.cl-groot p,.cl-groot small{color:#DCE8F8!important}
+.cl-groot p,.cl-groot small{color:#F1E2C2!important}
 .cl-groot-kaarten span:not(.cl-kaart-art){color:#fff;text-shadow:var(--omlijn)}
 @media(max-height:700px){.cl-arena-banner>b{font-size:23px;padding:2px 0 4px}.cl-arena-banner{margin-top:6px!important}#arc-stage .cl-lobby-onder .cl-kist{min-height:56px}}
 @media(prefers-reduced-motion:reduce){.cl-deck8.kies .cl-ck.in,.cl-tik,.cl-paneel{animation:none!important}}
@@ -11221,3 +11221,62 @@ html #arc-stage.arc-t-clash-res{background:#2A63B8 repeating-linear-gradient(45d
 .cl-f-o.drie{grid-template-columns:repeat(3,minmax(0,1fr))}.cl-f-o.twee{grid-template-columns:repeat(2,minmax(0,1fr))}
 .cl-f-o .cl-opt{min-width:0}.cl-f-o .cl-opt span{overflow-wrap:anywhere;hyphens:auto}
 @media(min-width:900px){.cl-tabs{justify-content:center}.cl-tab{max-width:190px}.cl-tab.aan{max-width:240px}.cl-lobby-onder .cl-kisten{max-width:520px;margin:0 auto}}
+
+/* ═══════ CLASH: MIDDELEEUWSE STRIJD ═══════
+   Steen als ondergrond, eikenhout voor balken en panelen, rode banieren voor
+   koppen en perkament voor alles wat je moet lezen. Koppen in Cinzel (OFL, fonts/). */
+@font-face{font-family:'Cinzel';src:url(fonts/cinzel.woff2) format('woff2');font-weight:400 900;font-display:swap}
+html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc-t-clash-res,html.dark #arc-stage.arc-t-clash-res{
+  --font-mid:'Cinzel',var(--font-head);--steen:#4A4E5A;--hout:#5C3A1E;--hout-d:#3E2614;--hout-l:#7A4E2A;--rood:#A8262B;--rood-d:#7A1A1E;--perk:#F3E3BF;--perk-d:#E2CB98;--perk-ink:#3B2A1A;
+  --steen-bg:#4A4E5A url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='72'%3E%3Crect width='120' height='72' fill='%2342454F'/%3E%3Cg fill='%234E525E'%3E%3Crect x='2' y='2' width='56' height='32' rx='4'/%3E%3Crect x='62' y='2' width='56' height='32' rx='4'/%3E%3Crect x='-28' y='38' width='56' height='32' rx='4'/%3E%3Crect x='32' y='38' width='56' height='32' rx='4'/%3E%3Crect x='92' y='38' width='56' height='32' rx='4'/%3E%3C/g%3E%3Cg fill='%23585C69'%3E%3Crect x='2' y='2' width='56' height='5' rx='2.5'/%3E%3Crect x='62' y='2' width='56' height='5' rx='2.5'/%3E%3Crect x='-28' y='38' width='56' height='5' rx='2.5'/%3E%3Crect x='32' y='38' width='56' height='5' rx='2.5'/%3E%3Crect x='92' y='38' width='56' height='5' rx='2.5'/%3E%3C/g%3E%3C/svg%3E");
+  --hout-bg:#5C3A1E repeating-linear-gradient(180deg,transparent 0 19px,rgba(0,0,0,.2) 19px 21px,rgba(255,255,255,.05) 21px 22px)}
+html #arc-stage.arc-t-clash-res,.cl-paneel,.cl-kistscherm{background:var(--steen-bg)!important}
+/* Hout met plankvoegen en een gouden bies */
+.cl-lobby-top,.cl-tabs,#arc-stage.arc-t-clash .cl-dock,.cl-lobby-onder .cl-kisten{background:var(--hout-bg)!important}
+.cl-lobby-top{border-bottom:3px solid #1E130A;box-shadow:inset 0 -3px 0 #C98E46}
+.cl-tabs{box-shadow:inset 0 3px 0 #C98E46}
+#arc-stage.arc-t-clash .cl-dock{box-shadow:inset 0 3px 0 #C98E46}
+.cl-lobby-onder .cl-kisten{box-shadow:inset 0 0 0 2px #C98E46,0 4px 0 rgba(0,0,0,.25)}
+.cl-tab.aan{background:#7A4E2A;box-shadow:inset 0 3px 0 #FFC800}
+/* Koppen in Cinzel */
+.cl-arena-banner>b,.cl-arena-banner>small,.cl-strijd span,.cl-paneel-kop b,.cl-tab>span,.cl-kistscherm h2,.cl-buit-naam,.cl-groot-k,.cl-groot-beeld b,
+.cl-eind b.lint,.cl-cd b.go span,.cl-banner b,#arc-stage.arc-t-clash-res .arc-res-k,.cl-kn-r>b,.cl-weg-tekst b,.cl-wissel-tip,.cl-kmenu button,.cl-tik{font-family:var(--font-mid)!important;letter-spacing:.02em}
+.cl-arena-banner>b{font-weight:900;font-size:30px}
+#arc-stage.arc-t-clash .cl-strijd span{font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+.cl-cd b.go span{font-size:44px;font-weight:900}
+.cl-eind b.lint{font-weight:900;font-size:36px}
+/* Koppen als rode banier met zwaluwstaart */
+.cl-paneel-kop{position:relative;background:var(--rood)!important;border:0!important;border-radius:0!important;margin:10px 10px 10px!important;padding:8px 22px!important;
+  clip-path:polygon(0 0,100% 0,calc(100% - 12px) 50%,100% 100%,0 100%,12px 50%);box-shadow:inset 0 -4px 0 var(--rood-d),inset 0 3px 0 rgba(255,255,255,.18)}
+.cl-paneel-kop b{color:#FFE7A0}
+.cl-paneel-kop span{color:#F6D3C4}
+.cl-eind b.lint{background:var(--rood)!important;border-radius:0!important;clip-path:polygon(0 0,100% 0,calc(100% - 18px) 50%,100% 100%,0 100%,18px 50%);border:0!important;box-shadow:inset 0 -6px 0 var(--rood-d)!important;padding:12px 44px 14px!important}
+.cl-eind.win b.lint{background:#C98E1E!important;box-shadow:inset 0 -6px 0 #8E5E10!important}
+.cl-eind.gelijk b.lint{background:#5E6B7D!important;box-shadow:inset 0 -6px 0 #3E4757!important}
+/* Perkament voor leestekst: vraag, kaartinfo, wisseltip, grote momenten */
+.cl-vraag,.cl-sheet-in,.cl-kistscherm .cl-kist-vraag{--ink:var(--perk-ink);--card:var(--perk);--bg:#EAD6A8;--line:#C9AD7A;--lip:#A88A58;--mu2:#7A6248}
+.cl-vraag{background:var(--perk)!important;border:2px solid #1E130A!important;box-shadow:inset 0 0 0 3px #E2CB98,0 3px 0 #1E130A!important;color:var(--perk-ink)}
+.cl-sheet-in{background:var(--perk)!important;color:var(--perk-ink)!important}
+#arc-stage .cl-sheet-in .arc-ghost{color:var(--perk-ink);background:#EAD6A8;border-color:#A88A58;box-shadow:0 3px 0 #A88A58}
+#arc-stage.arc-t-clash .cl-upg-k:disabled{background:#EAD6A8!important;color:#7A6248!important;box-shadow:inset 0 -3px 0 #C9AD7A!important;border-color:#A88A58}
+.cl-groot-in{background:var(--perk)!important;color:var(--perk-ink)!important;border:3px solid #1E130A!important}
+.cl-groot-in .cl-stralen{opacity:.35}
+.cl-groot-k{color:var(--rood)!important;text-shadow:none!important}
+.cl-groot p,.cl-groot small{color:#5E4A34!important}
+.cl-groot-kaarten span:not(.cl-kaart-art){color:var(--perk-ink);text-shadow:none}
+.cl-groot-beeld{background:var(--hout)!important}
+.cl-wissel-tip{background:var(--perk)!important;color:var(--perk-ink)!important;text-shadow:none!important;border-color:#1E130A}
+/* Uitslag */
+#arc-stage.arc-t-clash-res .arc-res-k{font-size:20px;letter-spacing:.06em}
+#arc-stage.arc-t-clash-res .arc-res-stats>div,#arc-stage.arc-t-clash-res .cl-res-buit>span,#arc-stage.arc-t-clash-res .cl-res-kist,#arc-stage.arc-t-clash-res .cl-leer{background:var(--hout-bg)!important}
+#arc-stage.arc-t-clash-res .cl-res-kr span{color:#2A1A0C}
+/* Knoppen: koninklijk blauw, goud voor de strijd */
+html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc-t-clash-res,html.dark #arc-stage.arc-t-clash-res{--acc:#2F6DB5;--acc-sh:#1F4A80}
+.cl-koning .cl-schild{background:#2F6DB5;box-shadow:inset 0 -5px 0 #1F4A80}
+.cl-koning .cl-kl-bar b{background:#FFC800}
+/* Kistplekken als houten vakjes */
+#arc-stage .cl-lobby-onder .cl-kist{background:#7A4E2A;box-shadow:inset 0 -4px 0 #5C3A1E}
+#arc-stage .cl-lobby-onder .cl-kist.leeg{background:rgba(0,0,0,.18);border-color:#9A6A3A}
+#arc-stage .cl-lobby-onder .cl-kist.kroon{background:#2F6DB5;box-shadow:inset 0 -4px 0 #1F4A80}
+.cl-bekerbalk{border-color:#C98E46}
+.cl-dot{background:var(--rood)}

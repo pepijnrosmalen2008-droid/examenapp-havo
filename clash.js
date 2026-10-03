@@ -628,6 +628,8 @@ function clSneeuwpop(){cV(()=>G.arc(0,-7,7.5,0,7),'#FFFFFF','#DCEAF2',2);cV(()=>
 function clDoodboom(){G.strokeStyle=ck('#5B4A44');G.lineCap='round';G.lineWidth=4;G.beginPath();G.moveTo(0,0);G.lineTo(1,-20);G.stroke();G.lineWidth=2.4;G.beginPath();G.moveTo(1,-12);G.lineTo(-7,-20);G.moveTo(.6,-17);G.lineTo(8,-25);G.moveTo(1,-20);G.lineTo(-2,-30);G.moveTo(-7,-20);G.lineTo(-9,-25);G.stroke();}
 function clLavarots(){cV(()=>cPoly([[-11,0],[-9,-9],[-2,-14],[7,-11],[11,-3],[10,0]]),'#5B5F6B','#3C3C3C',1);cL([[-6,-6],[-2,-9],[1,-5],[5,-8]],'#FF8A3C',1.6);cL([[-6,-6],[-2,-9],[1,-5],[5,-8]],'#FFE066',.6);}
 function clLavaplasje(){cE(0,0,11,4.6,'#3C2A24');cE(0,-.4,9.6,3.8,'#E8662A');cE(-1,-.8,6,2.4,'#FF8A3C');cE(-2,-1,2.6,1,'#FFC800');}
+// Vuurkorven naast de bruggen, aan de buitenkant van de looplijnen.
+const CL_VUURKORF=[[1.75,CL_RIV0-.75],[16.25,CL_RIV0-.75],[1.75,CL_RIV1+.75],[16.25,CL_RIV1+.75]];
 const CL_DKADER={cactus:[-14,-38,14,3],palm:[-14,-56,26,3],zandrots:[-14,-17,14,3],ijsrots:[-12,-23,12,3],sneeuwpop:[-14,-30,14,3],doodboom:[-11,-33,11,3],lavarots:[-13,-16,13,3],lavaplas:[-13,-6,13,6],boom:[-22,-46,22,4],den:[-16,-38,16,4],struik:[-16,-18,16,4],rots:[-14,-16,14,3],riet:[-9,-22,9,2],paal:[-3,-40,16,2],zuil:[-11,-54,11,2],pot:[-10,-26,10,2],steen:[-14,-16,14,3]};
 function clBouwBg(){
   const ar=CL_ARENAS[CL.arena||0],S=CL.S,dpr=Math.min(CL.dpr,2);
@@ -693,6 +695,22 @@ function clBouwBg(){
     g.fillStyle='rgba(43,34,51,.28)';for(let y=b+S*.6;y<b2-3;y+=S*.6)g.fillRect(a-bw/2+2,y,bw-4,1.3);};
   muurV(-.3,CL_RIV1+.6,32.3);muurV(18.3,CL_RIV1+.6,32.3);muurV(-.3,-.3,CL_RIV0-.6);muurV(18.3,-.3,CL_RIV0-.6);
   muurH(32.35,-.55,18.55);muurH(-.2,-.55,18.55);
+  // Oorlogsbanieren aan de achtermuren: rood bij de tegenstander, blauw bij jou.
+  const baniere=(x,z,team)=>{const [a,b]=P(x,z),bh=S*.5,y=b-bh-S*.06,bw=S*.62,lh=S*1.05,kl=CL_TEAM[team].c,kd=clDk(kl,.22);
+    g.fillStyle=CL_INKT;g.beginPath();g.moveTo(a-bw/2-1.6,y-1.6);g.lineTo(a+bw/2+1.6,y-1.6);g.lineTo(a+bw/2+1.6,y+lh+2);g.lineTo(a,y+lh*.8+1);g.lineTo(a-bw/2-1.6,y+lh+2);g.closePath();g.fill();
+    g.fillStyle=kl;g.beginPath();g.moveTo(a-bw/2,y);g.lineTo(a+bw/2,y);g.lineTo(a+bw/2,y+lh);g.lineTo(a,y+lh*.8);g.lineTo(a-bw/2,y+lh);g.closePath();g.fill();
+    g.fillStyle=kd;g.fillRect(a+bw*.18,y,bw*.32,lh*.86);g.fillStyle='#FFC800';g.fillRect(a-bw/2,y+lh*.12,bw,S*.07);
+    // wapen: een zwaard over een schild
+    const sy=y+lh*.42;g.fillStyle='#FFFFFF';g.beginPath();g.moveTo(a-bw*.24,sy-bw*.2);g.lineTo(a+bw*.24,sy-bw*.2);g.lineTo(a+bw*.24,sy+bw*.04);g.quadraticCurveTo(a+bw*.2,sy+bw*.26,a,sy+bw*.36);g.quadraticCurveTo(a-bw*.2,sy+bw*.26,a-bw*.24,sy+bw*.04);g.closePath();g.fill();
+    g.fillStyle=kl;g.fillRect(a-S*.025,sy-bw*.14,S*.05,bw*.4);g.fillRect(a-bw*.12,sy-bw*.02,bw*.24,S*.045);
+    g.fillStyle=CL_INKT;g.beginPath();g.roundRect(a-bw/2-S*.12,y-S*.1,bw+S*.24,S*.13,S*.06);g.fill();g.fillStyle='#C98E46';g.beginPath();g.roundRect(a-bw/2-S*.1,y-S*.085,bw+S*.2,S*.09,S*.045);g.fill();};
+  for(const x of [1.7,5.6,12.4,16.3]){baniere(x,32.35,1);baniere(x,-.2,0);}
+  // Vuurkorven bij de bruggen; de vlammen bewegen in clVuur.
+  for(const [x,z] of CL_VUURKORF){const [a,b]=P(x,z);g.globalAlpha=.2;cE(a+S*.12,b+S*.02,S*.42,S*.13,'#1E3A10');g.globalAlpha=1;
+    g.fillStyle=CL_INKT;g.beginPath();g.roundRect(a-S*.09,b-S*.95,S*.18,S*.97,S*.05);g.fill();g.fillStyle='#5B5F6B';g.fillRect(a-S*.05,b-S*.93,S*.1,S*.93);
+    g.fillStyle=CL_INKT;g.beginPath();g.roundRect(a-S*.3,b-S*.06,S*.6,S*.1,S*.05);g.fill();
+    g.beginPath();g.moveTo(a-S*.4,b-S*1.18);g.lineTo(a+S*.4,b-S*1.18);g.lineTo(a+S*.24,b-S*.86);g.lineTo(a-S*.24,b-S*.86);g.closePath();g.lineJoin='round';g.lineWidth=3;g.strokeStyle=CL_INKT;g.stroke();
+    g.fillStyle='#4A4E5A';g.fill();g.fillStyle='#6B7080';g.fillRect(a-S*.34,b-S*1.17,S*.68,S*.07);g.fillStyle='#3A2A22';g.beginPath();g.ellipse(a,b-S*1.17,S*.32,S*.07,0,0,7);g.fill();}
   // Omgeving.
   const dec=[];const kies=a=>a[(R()*a.length)|0];
   const BL=['#FF8FC7','#FFFFFF','#FFC800','#CE82FF'];
@@ -735,7 +753,20 @@ function clGolven(){
   G.restore();
 }
 // Leven rond het veld: vlinders langs de randen en af en toe de schaduw van een vogel.
+// Vlammen in de vuurkorven: drie lagen die flakkeren, een gloed en opstijgende vonken.
+function clVuur(){
+  const t=CL.t||0,S=CL.S,rust=CL.lite;
+  CL_VUURKORF.forEach(([x,z],i)=>{const [a,b0]=clProj(x,0,z);const b=b0-S*1.17;
+    const f=rust?0:Math.sin(t*11+i*2)*.5+Math.sin(t*17.3+i)*.3,h=S*(.62+f*.09),w=S*.3;
+    if(!rust){G.save();G.globalAlpha=.16+f*.04;cE(a,b-S*.2,S*1.1,S*.62,'#FF9600');G.restore();}
+    const vlam=(hh,ww,kl,dx)=>{G.fillStyle=kl;G.beginPath();G.moveTo(a-ww,b);G.quadraticCurveTo(a-ww*1.05,b-hh*.45,a+dx,b-hh);G.quadraticCurveTo(a+ww*1.05,b-hh*.45,a+ww,b);G.closePath();G.fill();};
+    const sw=rust?0:Math.sin(t*7+i)*S*.06;
+    vlam(h,w,'#FF4B2B',sw);vlam(h*.74,w*.72,'#FF9600',sw*.7);vlam(h*.46,w*.45,'#FFE066',sw*.4);
+    if(!rust)for(let k=0;k<3;k++){const p=((t*.9+k*.33+i*.17)%1),vx=a+Math.sin(p*9+k+i)*S*.18,vy=b-S*.5-p*S*1.6;G.globalAlpha=1-p;cC(vx,vy,Math.max(.8,S*.045*(1-p)),'#FFC800');}
+    G.globalAlpha=1;});
+}
 function clLeven(){
+  clVuur();
   if(CL.lite)return;const t=CL.t||0,S=CL.S;
   for(let i=0;i<4;i++){const x=i<2?-1.4+Math.sin(t*.4+i*2)*.9:19.4+Math.sin(t*.35+i)*.9,z=6+i*6.5+Math.sin(t*.5+i*1.7)*2.2,y=1.2+Math.sin(t*1.3+i)*.4;
     const [a,b]=clProj(x,y,z),fl=Math.abs(Math.sin(t*14+i)),kl=['#FF8FC7','#FFC800','#CE82FF','#FFFFFF'][i];
@@ -1548,8 +1579,8 @@ function clAftellen(){
   const veld=document.getElementById('cl-veld');const el=document.createElement('div');el.className='cl-overlay cl-cd';veld.appendChild(el);
   // Eerste potje: eerst de uitleg in stappen, het gevecht start pas daarna.
   if(!clStore().uitlegGezien){el.remove();clTutStart();return;}
-  let n=3;const tik=()=>{if(!CL.on)return;if(n===0){el.innerHTML=`<b class="go">${CL_ZWAARDEN}<span>Strijd!</span></b>`;arcSnd('start');arcHap(20);CL.pauze=false;setTimeout(()=>el.remove(),650);return;}
-    el.innerHTML=`<b>${n}</b>`;arcSnd('tick');n--;setTimeout(tik,650);};tik();
+  let n=3;const tik=()=>{if(!CL.on)return;if(n===0){el.innerHTML=`<b class="go">${CL_ZWAARDEN}<span>Ten aanval!</span></b>`;clFx('hoorn');arcHap(20);CL.pauze=false;setTimeout(()=>el.remove(),650);return;}
+    el.innerHTML=`<b>${n}</b>`;clFx('trom');n--;setTimeout(tik,650);};tik();
 }
 function clBanner(t,s){const veld=document.getElementById('cl-veld');if(!veld)return;const b=document.createElement('div');b.className='cl-overlay cl-banner';b.innerHTML=`<b>${_arcEsc(t)}</b><small>${_arcEsc(s||'')}</small>`;veld.appendChild(b);arcSnd('levelup');setTimeout(()=>b.remove(),2400);}
 function clHud(){for(const t of [0,1]){const k=document.getElementById('cl-kronen'+t);if(k)k.querySelectorAll('.k').forEach((x,i)=>{const aan=i<CL.kronen[t];if(aan&&!x.classList.contains('aan')){x.classList.add('aan');x.innerHTML=CL_KROON;}});}}
@@ -1573,9 +1604,9 @@ function clEinde(opgegeven){
   if(!opgegeven&&uitslag==='gelijk'){ // gelijk in kronen: laagste toren beslist niet, gewoon gelijkspel
   }
   const veld=document.getElementById('cl-veld');const o=document.createElement('div');o.className='cl-overlay cl-eind '+uitslag;
-  o.innerHTML=`<b class="lint">${uitslag==='win'?'Gewonnen':uitslag==='verlies'?'Verloren':'Gelijkspel'}</b><div class="cl-eind-kr">${[0,1,2].map(i=>`<span class="${i<a?'aan':''}">${CL_KROON}</span>`).join('')}</div>`;
+  o.innerHTML=`<b class="lint">${uitslag==='win'?'Overwinning!':uitslag==='verlies'?'Nederlaag':'Gelijkspel'}</b><div class="cl-eind-kr">${[0,1,2].map(i=>`<span class="${i<a?'aan':''}">${CL_KROON}</span>`).join('')}</div>`;
   veld&&veld.appendChild(o);
-  arcSnd(uitslag==='win'?'fanfare':'complete');if(uitslag==='win'){try{const m=arcMid(o.querySelector('b'));arcBurst(m.x,m.y,{n:36,afstand:190,maat:9});}catch(e){}}
+  arcSnd(uitslag==='win'?'fanfare':'complete');if(uitslag==='win')setTimeout(()=>clFx('hoorn'),350);if(uitslag==='win'){try{const m=arcMid(o.querySelector('b'));arcBurst(m.x,m.y,{n:36,afstand:190,maat:9});}catch(e){}}
   setTimeout(()=>{if(CL.on)clUitslag();},2300);
 }
 function clUitslag(){
@@ -1604,7 +1635,7 @@ function clUitslag(){
   arcStage('clash-res',`${arcTop('')}
     <div class="arc-res cl-res ${u==='win'?'win':'lose'}">
       <div class="cl-res-kr">${[0,1,2].map(i=>`<span class="${i<a?'aan':''}" style="--i:${i}">${CL_KROON}</span>`).join('')}</div>
-      <div class="arc-res-k">${u==='win'?'Gewonnen':u==='verlies'?'Verloren':'Gelijkspel'} · ${a} tegen ${b}</div>
+      <div class="arc-res-k">${u==='win'?'Overwinning':u==='verlies'?'Nederlaag':'Gelijkspel'} · ${a} tegen ${b}</div>
       <div class="arc-res-big"><span class="cl-beker-ic">${CL_BEKER}</span><span class="arc-tel">${arcNf(c.bekers-delta,0)}</span></div>
       <div class="arc-res-sub">${delta>0?`+${delta} bekers`:delta<0?`${delta} bekers`:'Bekers blijven gelijk'}${nieuwArena>oudArena?` · Nieuwe arena: <b>${_arcEsc(CL_ARENAS[nieuwArena].naam)}</b>`:''}</div>
       <div class="arc-res-stats"><div><b>${goed}/${tot}</b><small>goed beantwoord</small></div><div><b>${nGoedBeg}/${nBeg}</b><small>begrippen gekend</small></div><div><b>${CL.gespeeld}</b><small>kaarten gespeeld</small></div></div>
@@ -1974,6 +2005,11 @@ function clFx(type){
     else if(type==='toren'){N(ac,t,.9,{freq:180,q:.5,vol:.3});N(ac,t+.1,.7,{freq:700,q:.7,vol:.12});S(ac,90,35,t,.8,{type:'sine',vol:.2});}
     else if(type==='emote'){S(ac,660,880,t,.08,{vol:.06});S(ac,990,990,t+.08,.08,{vol:.05});}
     else if(type==='kist'){S(ac,523,523,t,.12,{vol:.08});S(ac,659,659,t+.1,.12,{vol:.08});S(ac,784,784,t+.2,.14,{vol:.08});S(ac,1046,1046,t+.32,.3,{vol:.09,harm:.3});}
+    else if(type==='hoorn'){// krijgshoorn: lage zaagtand door een filter, twee tonen omhoog
+      const p=typeof _slPitch!=='undefined'?_slPitch:1;try{_slPitch=1;}catch(e){}
+      S(ac,98,110,t,.55,{type:'sawtooth',vol:.07,cut:760,glide:.25,detune:9});S(ac,147,147,t+.42,1.05,{type:'sawtooth',vol:.08,cut:900,detune:9,rev:true});
+      S(ac,220,220,t+.42,1.05,{type:'triangle',vol:.035,cut:1200,rev:true});N(ac,t,.25,{freq:300,q:.5,vol:.05});try{_slPitch=p;}catch(e){}}
+    else if(type==='trom'){N(ac,t,.16,{freq:140,q:.7,vol:.26});S(ac,95,48,t,.2,{type:'sine',vol:.22});N(ac,t,.04,{freq:1800,q:1,vol:.04});}
     else if(type==='kaart'){N(ac,t,.05,{freq:2800,q:2,vol:.05});S(ac,700,1100,t,.07,{type:'triangle',vol:.04});}
   }catch(e){}
 }
