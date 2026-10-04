@@ -235,3 +235,76 @@ function onbRoutePost(){
   }catch(e){}
   finally{ window._onbRouting=false; }
 }
+
+// ═══════ DIRECT DE APP IN + MAATJE NA DE EERSTE QUIZ ═══════
+// Nieuwe bezoekers komen na hun niveaukeuze meteen op de home met vakken. Geen
+// dierkeuze of accountvraag vooraf: daar haakten de meeste nieuwkomers af. Ze
+// krijgen een standaardmaatje en mogen er na hun eerste quiz zelf een kiezen,
+// als beloning. Het account vraagt de app ook pas na die eerste quiz.
+const MAATJE_STD='vos';
+function onbStil(){
+  try{
+    const PK='examenapp_profiel';
+    const p=JSON.parse(localStorage.getItem(PK)||'{}');
+    if(!p.animalId){
+      p.animalId=MAATJE_STD;
+      try{ if(typeof getAnimalEmoji==='function') p.avatar=getAnimalEmoji(MAATJE_STD,0); }catch(e){}
+      localStorage.setItem(PK,JSON.stringify(p));
+      localStorage.setItem('slagio_maatje_kiezen','1');
+    }
+    localStorage.setItem('slagio_onboard_v3','1');
+    localStorage.setItem('slagio_seen_intro_v2','1');
+    localStorage.setItem('slagio_vonk_intro_done','1');
+  }catch(e){}
+  try{ if(typeof trackEvent==='function') trackEvent('onb_direct'); }catch(e){}
+}
+function maatjeOpen(){ try{ return localStorage.getItem('slagio_maatje_kiezen')==='1'; }catch(e){ return false; } }
+
+// Bottom sheet in de finish-wachtrij (pqButton): sluiten roept pqNotifyClose aan.
+function maatjeKiezen(){
+  try{
+    if(document.getElementById('maatje-sheet')){ try{pqNotifyClose();}catch(e){} return; }
+    const A=(typeof ANIMAL_EVOLUTIONS!=='undefined')?ANIMAL_EVOLUTIONS:[];
+    if(!A.length){ try{localStorage.removeItem('slagio_maatje_kiezen');}catch(e){} try{pqNotifyClose();}catch(e){} return; }
+    let nu=MAATJE_STD; try{ nu=JSON.parse(localStorage.getItem('examenapp_profiel')||'{}').animalId||MAATJE_STD; }catch(e){}
+    const el=document.createElement('div');
+    el.id='maatje-sheet'; el.className='regp-ov';
+    el.innerHTML=`<div class="regp-card maatje-card" role="dialog" aria-modal="true" aria-labelledby="maatje-h">
+      <div class="regp-grip"></div>
+      <button class="regp-x" onclick="maatjeSluit()" aria-label="Sluiten">✕</button>
+      <div class="regp-badge">Beloning</div>
+      <h3 class="regp-h" id="maatje-h">Je eerste quiz zit erop. Kies je maatje!</h3>
+      <p class="regp-sub">Je maatje groeit mee met je XP en staat naast je bij elke oefening.</p>
+      <div class="onb-diergrid maatje-grid">${A.map(a=>`<button class="onb-dier${a.id===nu?' sel':''}" onclick="maatjeKies('${a.id}')"><span class="onb-dier-av">${(typeof getAnimalDisplay==='function')?getAnimalDisplay(a.id,0,44):''}</span><span class="onb-dier-nm">${a.n}</span></button>`).join('')}</div>
+      <button class="regp-later" onclick="maatjeSluit()">Ik houd de ${(A.find(a=>a.id===nu)||{n:'vos'}).n.toLowerCase()}</button>
+    </div>`;
+    el.addEventListener('click',e=>{ if(e.target===el) maatjeSluit(); });
+    el.addEventListener('keydown',e=>{ if(e.key==='Escape') maatjeSluit(); });
+    document.body.appendChild(el);
+    try{ playSound&&playSound('open'); }catch(e){}
+    try{ if(typeof trackEvent==='function') trackEvent('maatje_shown'); }catch(e){}
+  }catch(e){ try{pqNotifyClose();}catch(_){} }
+}
+function maatjeKies(id){
+  try{
+    const PK='examenapp_profiel';
+    const p=JSON.parse(localStorage.getItem(PK)||'{}');
+    p.animalId=id;
+    const xp=(typeof getTotalXP==='function')?getTotalXP():0;
+    try{ if(typeof getAnimalEmoji==='function') p.avatar=getAnimalEmoji(id,xp); }catch(e){}
+    localStorage.setItem(PK,JSON.stringify(p));
+    if(typeof selectedAnimalId!=='undefined') selectedAnimalId=id;
+  }catch(e){}
+  _onbHaptic([12,28,18]); _onbSound('correct');
+  try{ document.querySelectorAll('#maatje-sheet .onb-dier').forEach(b=>b.classList.toggle('sel',(b.getAttribute('onclick')||'').includes("'"+id+"'"))); }catch(e){}
+  try{ if(typeof trackEvent==='function') trackEvent('maatje_gekozen',{dier:id}); }catch(e){}
+  try{ if(typeof syncMyAvatarToCloud==='function') syncMyAvatarToCloud(); }catch(e){}
+  try{ if(typeof updateProfileNav==='function') updateProfileNav(); }catch(e){}
+  setTimeout(maatjeSluit,420);
+}
+function maatjeSluit(){
+  try{ localStorage.removeItem('slagio_maatje_kiezen'); }catch(e){}
+  const el=document.getElementById('maatje-sheet');
+  if(el){ el.classList.add('regp-out'); setTimeout(()=>{ try{el.remove();}catch(e){} },220); }
+  try{ pqNotifyClose(); }catch(e){}
+}

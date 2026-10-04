@@ -1627,6 +1627,8 @@ function toonRes(){
   // Examencoach hoort NIET in het finish-moment (concurreert met de kern).
   // Weggehaald uit de gelijktijdige laag; leeg laten.
   try{const _rc=document.getElementById('res-coach');if(_rc)_rc.innerHTML='';}catch(e){}
+  // Maatje kiezen als beloning voor de eerste quiz (nieuwe bezoekers kregen een standaardmaatje)
+  try{ if(!ST.isFoutenboek && typeof maatjeOpen==='function' && maatjeOpen()) _RC.maatje=true; }catch(e){}
   // B2: account prompt bottom sheet (first win, anonymous only) - via de wachtrij
   try{
     if(!ST.isFoutenboek && typeof _regEligible==='function' && _regEligible()){
@@ -1722,6 +1724,7 @@ function _runResultChain(rc){
       if(rc.rankInfo&&rc.rankInfo.climbed>0)pqAdd(fin=>showLeagueRankUp(rc.rankInfo,fin));
       if(rc.chest)pqAdd(fin=>showChest(fin,rc.chest));
       if(rc.dagmissie)pqAdd(fin=>pqAuto(fin,3100,()=>{try{if(typeof vonkCelebrate==='function')vonkCelebrate(rc.dagmissie);}catch(e){}}));
+      if(rc.maatje)pqAdd(fin=>pqButton(fin,()=>maatjeKiezen()));
       if(rc.reg!=null)pqAdd(fin=>pqButton(fin,()=>_showRegPrompt(rc.reg)));
       if(rc.feedback)pqAdd(fin=>pqAuto(fin,600,()=>{try{showFeedbackPopup('snel');}catch(e){}}));
     }catch(e){}

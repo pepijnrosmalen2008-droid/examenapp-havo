@@ -350,7 +350,7 @@ function chooseLevel(level,_noHistory){
   // (cijfers/studieplan/account) routeert, geen home-popups tonen: die zouden
   // over dat scherm heen vallen en de intro "niet vlekkeloos" laten voelen.
   if(window._onbRouting){/* geen popups tijdens post-onboarding routing */}
-  else if(_isNew){setTimeout(()=>{try{if(typeof onbStart==='function')onbStart();else if(typeof showOnboarding==='function')showOnboarding();}catch(e){}},350);}
+  else if(_isNew){try{if(typeof onbStil==='function')onbStil();}catch(e){}} // nieuw: meteen de vakken, maatje en account pas na de eerste quiz
   else if(!localStorage.getItem('slagio_vonk_intro_done')){setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},500);}
   else{let _nudged=false;try{if(typeof vonkStreakNudge==='function')_nudged=vonkStreakNudge();}catch(e){}if(!_nudged)showDailyChallengePopup();}
 }

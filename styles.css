@@ -11475,3 +11475,8 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 .ag-t:hover,.ag-t:focus-visible{border-color:var(--or);color:var(--or)}
 /* compacte klok ook op de telefoon: titel links, dagen rechts op één regel */
 #countdown#countdown#countdown#countdown#countdown#countdown
+/* ═══════ MAATJE NA DE EERSTE QUIZ ═══════ */
+.maatje-card{max-height:88vh;overflow-y:auto;overscroll-behavior:contain}
+.maatje-grid{grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:6px}
+.maatje-grid .onb-dier{padding:10px 4px}
+@media(max-width:360px){.maatje-grid{grid-template-columns:repeat(3,1fr)}}
