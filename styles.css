@@ -11419,3 +11419,25 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 @keyframes clVolDruppel{to{transform:scale(1.12)}}
 @media(prefers-reduced-motion:reduce){.cl-kennis.vol .cl-kennis-bar,.cl-kennis.vol b{animation:none}}
 .cl-hud{bottom:0}
+
+/* ═══════ CLASH: KAARTEN ALS IN EEN KAARTSPEL ═══════
+   Metalen lijst per zeldzaamheid (licht boven, donker onder, donkere buitenrand),
+   een vignet over de afbeelding en glans op epische en legendarische kaarten. */
+.cl-kaart-art{background:linear-gradient(180deg,color-mix(in srgb,var(--zc) 55%,#fff) 0%,var(--zc) 38%,color-mix(in srgb,var(--zc) 60%,#1E1330) 100%)!important;border-radius:12px;
+  box-shadow:0 0 0 2px #1E130A,inset 0 2px 0 rgba(255,255,255,.55),inset 0 -2px 0 rgba(0,0,0,.35),0 4px 0 2px rgba(30,19,10,.55)!important}
+.cl-kaart-art img{inset:4px;width:calc(100% - 8px);height:calc(100% - 8px);border-radius:8px}
+.cl-kaart-art::after{inset:4px;border-radius:8px;box-shadow:inset 0 0 0 1.5px rgba(0,0,0,.45),inset 0 -14px 18px -8px rgba(0,0,0,.35),inset 0 1px 0 2px rgba(255,255,255,.12)}
+.cl-kaart-n{left:4px;right:4px;bottom:4px;border-radius:0 0 8px 8px;background:linear-gradient(180deg,rgba(30,19,10,.15),rgba(30,19,10,.82))!important;text-shadow:var(--omlijn,0 1px 0 #000);padding-top:7px}
+/* epische kaarten: paarse lijst met edelstenen in de hoeken */
+.cl-kaart-art.z2::before,.cl-kaart-art.z3::before{content:'';position:absolute;inset:0;z-index:3;pointer-events:none;border-radius:12px;
+  background:radial-gradient(circle at 6px calc(100% - 6px),#FFE066 0 2.6px,transparent 3.2px),radial-gradient(circle at calc(100% - 6px) calc(100% - 6px),#FFE066 0 2.6px,transparent 3.2px)}
+/* glans die over epische en legendarische kaarten trekt */
+.cl-kaart-art.z2 img,.cl-kaart-art.z3 img{-webkit-mask:none}
+.cl-kaart-art.z2::after,.cl-kaart-art.z3::after{background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.35) 48%,transparent 60%) no-repeat;background-size:250% 100%;animation:clKaartGlans 3.6s ease-in-out infinite}
+@keyframes clKaartGlans{0%,55%{background-position:150% 0}100%{background-position:-60% 0}}
+/* legendarisch: lijst die van kleur verloopt */
+.cl-kaart-art.z3{background:linear-gradient(135deg,#5EEAD4,#14B8A6 30%,#B65CFF 65%,#FFC800)!important;background-size:200% 200%!important;animation:clLegende 4s ease-in-out infinite alternate}
+@keyframes clLegende{to{background-position:100% 100%}}
+.cl-kaart.mini .cl-kaart-art,.cl-kaart.mini .cl-kaart-art img{border-radius:7px}
+.cl-kaart.mini .cl-kaart-art img{inset:3px;width:calc(100% - 6px);height:calc(100% - 6px)}
+@media(prefers-reduced-motion:reduce){.cl-kaart-art.z2::after,.cl-kaart-art.z3::after,.cl-kaart-art.z3{animation:none}}
