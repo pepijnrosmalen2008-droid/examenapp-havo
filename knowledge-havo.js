@@ -1529,6 +1529,306 @@ Object.assign(LEERDOELEN, {
    }
   ]
  },
+ "nl_A": {
+  "syllabus": "CE Nederlands (3F) HAVO - Domein A: Leesvaardigheid (A1 analyseren en interpreteren, A2 beoordelen, A3 samenvatten)",
+  "leerdoelen": [
+   {
+    "id": "nl.A.1",
+    "titel": "Tekstsoort en schrijfdoel bepalen",
+    "eindterm": "A1 - tekstsoort en schrijfdoel",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan vaststellen of een tekst of tekstgedeelte uiteenzettend, beschouwend of betogend is en het (belangrijkste) schrijfdoel bepalen.",
+    "concepten": [
+     "Uiteenzetting",
+     "Beschouwing",
+     "Betoog",
+     "Schrijfdoel",
+     "Informeren",
+     "Overtuigen",
+     "Activeren"
+    ],
+    "vaardigheid": "analyseren",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "denkt dat een tekst met argumenten voor en tegen altijd een betoog is",
+     "verwart ter overweging aanbieden met overtuigen"
+    ],
+    "voorkennis": [],
+    "vervolg": [
+     "nl.A.2",
+     "nl.A.5"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, subdomein A1"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-04",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-04",
+     "updated": "2026-10-04",
+     "contentHash": "540ad65aa86f"
+    }
+   },
+   {
+    "id": "nl.A.2",
+    "titel": "Onderwerp en hoofdgedachte aangeven",
+    "eindterm": "A1 - hoofdgedachte",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte aanwijzen of verwoorden, ook als die niet expliciet vermeld wordt.",
+    "concepten": [
+     "Onderwerp",
+     "Hoofdgedachte",
+     "Kernzin"
+    ],
+    "vaardigheid": "analyseren",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart onderwerp met hoofdgedachte",
+     "neemt de titel of de eerste zin automatisch als hoofdgedachte"
+    ],
+    "voorkennis": [
+     "nl.A.1"
+    ],
+    "vervolg": [
+     "nl.A.7"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, subdomein A1"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-04",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-04",
+     "updated": "2026-10-04",
+     "contentHash": "99ffde1350e6"
+    }
+   },
+   {
+    "id": "nl.A.3",
+    "titel": "Relaties tussen tekstdelen benoemen",
+    "eindterm": "A1 - relaties tussen tekstdelen",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan inhoudelijke en functionele relaties tussen tekstdelen benoemen, zoals verwijzing, oorzaak-gevolg, doel-middel, standpunt-argument en algemene uitspraak-toelichting.",
+    "concepten": [
+     "Signaalwoord",
+     "Verwijzing",
+     "Oorzaak-gevolgrelatie",
+     "Doel-middelrelatie"
+    ],
+    "vaardigheid": "analyseren",
+    "examenskill": "bron-interpretatie",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart oorzaak-gevolg met doel-middel",
+     "kiest bij een verwijswoord het verkeerde antecedent door getal niet te controleren"
+    ],
+    "voorkennis": [
+     "nl.A.1"
+    ],
+    "vervolg": [
+     "nl.A.5"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, subdomein A1"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-04",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-04",
+     "updated": "2026-10-04",
+     "contentHash": "0afed3c8f2f8"
+    }
+   },
+   {
+    "id": "nl.A.4",
+    "titel": "Conclusies over de auteur trekken",
+    "eindterm": "A1 - intenties, opvattingen, gevoelens",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan op basis van woordkeus en toon conclusies trekken over de intenties, opvattingen en gevoelens van de auteur.",
+    "concepten": [
+     "Woordkeus",
+     "Toon"
+    ],
+    "vaardigheid": "beoordelen",
+    "examenskill": "antwoord-formuleren",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "baseert een conclusie op de eigen mening in plaats van op de tekst"
+    ],
+    "voorkennis": [
+     "nl.A.1"
+    ],
+    "vervolg": [],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, subdomein A1"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-04",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-04",
+     "updated": "2026-10-04",
+     "contentHash": "bc4ebd0dc5b0"
+    }
+   },
+   {
+    "id": "nl.A.5",
+    "titel": "Standpunten, argumenten en schema's herkennen",
+    "eindterm": "A1 - standpunten en argumentatie (conform D)",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan standpunten en soorten argumenten herkennen, de argumentatiestructuur (enkelvoudig, nevenschikkend, onderschikkend) vaststellen en argumentatieschema's herkennen.",
+    "concepten": [
+     "Standpunt",
+     "Argument",
+     "Subargument",
+     "Feitelijk argument",
+     "Waarderend argument",
+     "Enkelvoudige argumentatie",
+     "Nevenschikkende argumentatie",
+     "Onderschikkende argumentatie",
+     "Argumentatieschema",
+     "Autoriteitsargument",
+     "Voorbeeldargument",
+     "Feit",
+     "Mening",
+     "Concessie"
+    ],
+    "vaardigheid": "analyseren",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart nevenschikkende met onderschikkende argumentatie",
+     "beschouwt een oordeel als feitelijk argument"
+    ],
+    "voorkennis": [
+     "nl.A.3"
+    ],
+    "vervolg": [
+     "nl.A.6"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, subdomein A1 en domein D"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-04",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-04",
+     "updated": "2026-10-04",
+     "contentHash": "43f24d1af503"
+    }
+   },
+   {
+    "id": "nl.A.6",
+    "titel": "Betoog beoordelen en drogredenen herkennen",
+    "eindterm": "A2 - beoordelen (conform D)",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een betoog op aanvaardbaarheid beoordelen (feiten, bronnen, relevantie, consistentie, toereikendheid) en drogredenen herkennen.",
+    "concepten": [
+     "Aanvaardbaarheid",
+     "Relevantie",
+     "Consistentie",
+     "Toereikendheid",
+     "Drogreden",
+     "Overhaaste generalisatie",
+     "Vals dilemma",
+     "Persoonlijke aanval",
+     "Cirkelredenering",
+     "Ontduiken van de bewijslast"
+    ],
+    "vaardigheid": "beoordelen",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "noemt een argument een drogreden alleen omdat de conclusie niet bevalt",
+     "verwart cirkelredenering met ontduiken van de bewijslast"
+    ],
+    "voorkennis": [
+     "nl.A.5"
+    ],
+    "vervolg": [],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, subdomein A2 en domein D"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-04",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-04",
+     "updated": "2026-10-04",
+     "contentHash": "3c4bc6906dfb"
+    }
+   },
+   {
+    "id": "nl.A.7",
+    "titel": "Een tekst samenvatten",
+    "eindterm": "A3 - samenvatten",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een tekst of tekstgedeelte reduceren tot de hoofduitspraak met belangrijke ondergeschikte uitspraken en beoordelen of een samenvatting die bevat.",
+    "concepten": [
+     "Samenvatting",
+     "Hoofduitspraak",
+     "Ondergeschikte uitspraak",
+     "Parafrase"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "antwoord-formuleren",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "neemt voorbeelden en herhalingen op in de samenvatting",
+     "mengt de eigen mening in de samenvatting"
+    ],
+    "voorkennis": [
+     "nl.A.2"
+    ],
+    "vervolg": [],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, subdomein A3"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-04",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-04",
+     "updated": "2026-10-04",
+     "contentHash": "9e4f9c7d8fbf"
+    }
+   }
+  ]
+ },
  "sk_A": {
   "syllabus": "CE Scheikunde HAVO - Domein A: Vaardigheden (chemisch rekenen en onderzoek)",
   "leerdoelen": [

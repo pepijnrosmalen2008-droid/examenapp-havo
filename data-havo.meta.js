@@ -26,9 +26,9 @@ var VAKKEN = [
      "Tekstsoorten (betoog, beschouwing, instructie)",
      "Bedoeling en toon van de schrijver"
     ],
-    "nSv": 136,
+    "nSv": 215,
     "nOe": 5,
-    "nBeg": 27,
+    "nBeg": 44,
     "hasSam": true
    },
    {
