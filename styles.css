@@ -11443,12 +11443,6 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 @media(prefers-reduced-motion:reduce){.cl-kaart-art.z2::after,.cl-kaart-art.z3::after,.cl-kaart-art.z3{animation:none}}
 
 /* ═══════ STARTSCHERM: VOLGENDE STAP, VOORUITGANG, AFSPRAAK VOOR MORGEN ═══════ */
-/* Wie al oefent: compacte aftelklok, zodat de volgende stap boven de vouw staat. */
-.hm-countdown.cd-kort{gap:12px;padding:14px 18px!important;width:100%;justify-content:flex-start;margin-bottom:14px;min-height:0!important}
-.hm-countdown.cd-kort .cd-nums,.hm-countdown.cd-kort #cd-panic-msg{display:none!important}
-.hm-countdown.cd-kort .cd-left{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left}
-.hm-countdown.cd-kort .cd-title{font-size:17px}
-.hm-countdown.cd-kort .cd-sub{font-size:12px;color:rgba(255,255,255,.5)}
 /* De grote knop als persoonlijke volgende stap */
 .hm-cta-primary.hm-cta-persoonlijk{text-align:left;min-width:0}
 .hm-cta-stap{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15;min-width:0}
@@ -11479,16 +11473,5 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 .ag-tijden{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .ag-t{border:1.5px solid var(--bo);background:var(--s);color:var(--dk);border-radius:12px;padding:12px 0;font:800 15px/1 var(--font-head);cursor:pointer;font-variant-numeric:tabular-nums}
 .ag-t:hover,.ag-t:focus-visible{border-color:var(--or);color:var(--or)}
-.hm-countdown.cd-kort{display:flex!important;align-items:center;flex-direction:row!important}
-.hm-countdown.cd-kort .cd-nums{display:flex!important;margin-left:auto;padding:0!important;border:0!important;gap:0!important}
-.hm-countdown.cd-kort .cd-box:not(:first-child){display:none!important}
-.hm-countdown.cd-kort .cd-box:first-child{display:flex!important;flex-direction:column;align-items:center;padding:0!important;background:none!important;border:0!important;box-shadow:none!important}
-.hm-countdown.cd-kort .cd-box:first-child .cd-val{font-size:30px!important;line-height:1!important}
-.hm-countdown.cd-kort .cd-box:first-child .cd-unit{font-size:10px!important;margin-top:2px}
 /* compacte klok ook op de telefoon: titel links, dagen rechts op één regel */
-#countdown.hm-countdown.cd-kort{flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important;padding:14px 16px!important}
-#countdown.hm-countdown.cd-kort .cd-left{flex:1;min-width:0;margin:0!important;padding:0!important}
-#countdown.hm-countdown.cd-kort .cd-nums{width:auto!important;margin:0 0 0 12px!important;padding:0!important;border:0!important;flex-wrap:nowrap!important}
-#countdown.hm-countdown.cd-kort .cd-box:first-child{width:auto!important;padding:0!important;border:0!important}
-#countdown.hm-countdown.cd-kort .cd-box:first-child .cd-val{font-size:34px!important;letter-spacing:-1px!important}
-#countdown.hm-countdown.cd-kort .cd-box:first-child .cd-unit{font-size:9.5px!important}
+#countdown#countdown#countdown#countdown#countdown#countdown

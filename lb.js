@@ -1043,7 +1043,7 @@ function renderVandaagHub(){
   const shown=items.slice(0,4);
   const n=shown.length;
   const vg=vgVoortgang(),morgen=herhaalMorgenCount();let agenda='';try{agenda=localStorage.getItem('slagio_agenda')||'';}catch(e){}
-  // De grote knop bovenaan wordt je persoonlijke volgende stap; wie al oefent krijgt een compacte aftelklok.
+  // De grote knop bovenaan wordt je persoonlijke volgende stap.
   try{_vhHero(shown[0],vg);}catch(e){}
 
   // ── Kop-ondertitel: concreet en persoonlijk ──
@@ -1091,8 +1091,7 @@ function renderVandaagHub(){
   </div>`;
 }
 function _vhHero(top,vg){
-  const btn=document.querySelector('#sc-home .hm-cta-primary');const cd=document.getElementById('countdown');
-  if(cd)cd.classList.toggle('cd-kort',!!(vg&&vg.geoefend));
+  const btn=document.querySelector('#sc-home .hm-cta-primary');
   if(!btn)return;
   if(!btn.dataset.orig){btn.dataset.orig=btn.innerHTML;btn.dataset.origClick=btn.getAttribute('onclick')||'';}
   if(top&&vg&&vg.geoefend){
