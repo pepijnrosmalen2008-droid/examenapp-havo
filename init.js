@@ -1005,7 +1005,7 @@ if('serviceWorker' in navigator){
   });
   window.addEventListener('load',()=>{
     navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).then(reg=>{
-      reg.update();
+      try{const u=reg.update();if(u&&u.catch)u.catch(()=>{});}catch(e){}
       navigator.serviceWorker.ready.then(()=>initNotifications());
     }).catch(()=>{});
   });
@@ -1013,7 +1013,7 @@ if('serviceWorker' in navigator){
   // geïnstalleerde PWA niet op een oude service worker (en oude cache) hangen,
   // ook als hij alleen uit de app-switcher wordt hervat.
   document.addEventListener('visibilitychange',()=>{
-    if(!document.hidden)navigator.serviceWorker.getRegistration().then(r=>{if(r)r.update();}).catch(()=>{});
+    if(!document.hidden)navigator.serviceWorker.getRegistration().then(r=>{if(r)return r.update();}).catch(()=>{});
   });
 }
 

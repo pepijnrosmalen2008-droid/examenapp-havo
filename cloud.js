@@ -284,6 +284,9 @@ async function trackEvent(type,meta){
     try{
       if(sent>=MAX)return;
       msg=String(msg||'').slice(0,300);
+      // Ruis van browserextensies, in-app-browsers en zoekmachinebots is geen fout van Slagio.
+      if(/__firefox__|ethereum|_AutofillCallbackHandler|^Script error\.?$/.test(msg))return;
+      if(/bot|crawler|spider|Headless/i.test(navigator.userAgent))return;
       var sig=kind+'|'+msg+'|'+(line||0);
       if(seen[sig])return; seen[sig]=1; sent++;
       var scr=''; try{var on=document.querySelector('.sc.on');scr=on?on.id:'';}catch(e){}
@@ -550,8 +553,9 @@ SB.auth.getSession().then(({data:{session}})=>{
     currentUser=session.user;
     _authReady=true;
     const cbs=[..._authReadyCbs];_authReadyCbs=[];cbs.forEach(cb=>cb(currentUser));
-    updateProfileNav();updateCloudStatusBar();
-    syncFromCloud();syncMyAvatarToCloud();
+    // De sessie kan klaar zijn voordat profile.js/features.js geladen zijn.
+    const roep=n=>{try{if(typeof window[n]==='function')window[n]();}catch(e){}};
+    roep('updateProfileNav');roep('updateCloudStatusBar');roep('syncFromCloud');roep('syncMyAvatarToCloud');
   }
   // Als session null: wacht op onAuthStateChange (token-refresh) - geen actie
 });

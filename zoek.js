@@ -232,6 +232,8 @@ function _zkSearch(query){
     _zoekState.all=[];tabs.style.display='none';filt.style.display='none';stats.innerHTML='';more.innerHTML='';
     _zkEmpty();return;
   }
+  // Typt iemand al terwijl de vakdata nog laadt? Dan wachten; openZoek zoekt opnieuw zodra de index klaar is.
+  if(!_zoekBuilt||!_zoekIndex){tabs.style.display='none';filt.style.display='none';stats.innerHTML='';more.innerHTML='';el.innerHTML='<div class="zk-state"><p>Even laden…</p></div>';return;}
   _zoekState.toks=_zkNorm(query).split(' ').filter(t=>t.length>=2);
   _zoekState.all=_zkRun(query);_zoekState.filter='all';
   filt.style.display=_zoekState.all.length?'flex':'none';

@@ -567,6 +567,7 @@ function _examenBegin(){
 }
 
 function _exTimerTick(){
+  if(!EX.examen||!document.getElementById('ex-timer')){if(EX.timer){clearInterval(EX.timer);EX.timer=null;}return;}
   EX.secondsLeft--;
   document.getElementById('ex-timer').textContent = _exFmtTime(EX.secondsLeft);
   const pct = 1 - EX.secondsLeft / (EX.examen.duur_minuten * 60);

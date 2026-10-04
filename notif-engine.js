@@ -33,7 +33,8 @@ function notifContext(){
       const me=rows.find(r=>r.me);
       if(me){ctx.leagueRank=me.rank;ctx.leagueTotal=rows.length;
         ctx.leaguePromo=me.rank<=LEAGUE_PROMO;
-        ctx.leagueDemote=me.rank>(rows.length-LEAGUE_DEMOTE);
+        // Alleen wie deze week echt meedoet en niet al in de laagste divisie zit, kan zakken.
+        ctx.leagueDemote=me.rank>(rows.length-LEAGUE_DEMOTE)&&(me.xp||0)>0&&(L.division||0)>0;
         ctx.leagueDiv=(LEAGUE_DIVISIONS[L.division]||{}).naam||'';
         ctx.leagueDaysLeft=(typeof _lgDaysLeft==='function')?_lgDaysLeft():null;}}}catch(e){}
   try{ctx.dagmissieOpen=(typeof dagmissieDone==='function')?!dagmissieDone():false;}catch(e){ctx.dagmissieOpen=false;}
@@ -234,7 +235,8 @@ function renderNotifReturnCard(){
       </button>
     </div>
   </div>`;
-  try{trackEvent('return_card_shown',{rule:n.ruleId});}catch(e){}
+  // Eén meting per regel per dag, niet bij elke keer dat het startscherm opnieuw tekent.
+  try{const k='slagio_rc_'+n.ruleId,d=new Date().toISOString().slice(0,10);if(localStorage.getItem(k)!==d){localStorage.setItem(k,d);trackEvent('return_card_shown',{rule:n.ruleId});}}catch(e){}
 }
 function _notifDismissCard(){
   const el=document.getElementById('comeback-card-home');if(el)el.innerHTML='';
