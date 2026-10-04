@@ -11354,3 +11354,68 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 @media(prefers-reduced-motion:reduce){.cl-roep{animation:none;opacity:0}.cl-vraag.goud{animation:none}.cl-f-tijd{animation-duration:0s!important;display:none}}
 .cl-opt.chip.w1{font-size:12.5px}.cl-opt.chip.w2{font-size:11.5px}.cl-opt.chip.w3{font-size:10.5px}
 @media(min-width:900px){.cl-opt.chip.w1{font-size:14px}.cl-opt.chip.w2{font-size:13px}.cl-opt.chip.w3{font-size:12px}}
+
+/* ═══════ CLASH: GROOT SLAGVELD ZOALS CLASH ROYALE ═══════
+   Het veld vult de breedte; het speelpaneel is compact zodat torens en vechters
+   groot in beeld staan. De HUD ligt over de achtermuur heen. */
+@media(max-width:899px){
+  #arc-stage.arc-t-clash .cl-dock{padding:6px 8px max(8px,env(safe-area-inset-bottom));gap:5px}
+  .cl-vraag{height:132px!important;padding:8px 10px 8px!important}
+  .cl-f-kop{font-size:10px}
+  .cl-f-v{font-size:14.5px;line-height:1.2;min-height:0;-webkit-line-clamp:3;margin-top:3px}
+  .cl-f-v.term{font-size:19px}
+  .cl-f-v.vraag{font-size:13.5px;-webkit-line-clamp:2}
+  .cl-f-o{gap:5px;margin-top:auto!important}
+  .cl-opt.chip{min-height:38px}
+  .cl-f-o.twee .cl-opt{min-height:29px;font-size:12px;padding:3px 7px}
+  .cl-f-o.twee .cl-opt span{-webkit-line-clamp:2}
+  .cl-kaarten{max-width:310px;gap:6px}
+  .cl-next{flex-basis:42px}
+  .cl-kennis{gap:6px}
+  .cl-kennis-bar{height:19px}
+  .cl-tegen{display:none}
+}
+@media(max-width:899px) and (max-height:700px){
+  .cl-vraag{height:118px!important;padding:6px 9px 7px!important}
+  .cl-f-v{font-size:13.5px}
+  .cl-opt.chip{min-height:33px}
+  .cl-f-o.twee .cl-opt{min-height:26px;font-size:11.5px}
+  .cl-kaarten{max-width:262px;gap:5px}
+  .cl-next{flex-basis:36px}
+}
+/* VS-scherm */
+.cl-vs{position:absolute;inset:0;z-index:9;display:grid;grid-template-rows:1fr auto 1fr;pointer-events:none;overflow:hidden}
+.cl-vs-r{display:flex;align-items:center;justify-content:center;gap:14px;padding:0 24px;color:#fff}
+.cl-vs-r.t1{background:#A8262B;box-shadow:inset 0 -6px 0 #7A1A1E;clip-path:polygon(0 0,100% 0,100% 86%,0 100%);animation:clVsBoven .5s cubic-bezier(.2,1.25,.4,1) both}
+.cl-vs-r.t0{background:#2F6DB5;box-shadow:inset 0 6px 0 #1F4A80;clip-path:polygon(0 14%,100% 0,100% 100%,0 100%);animation:clVsOnder .5s cubic-bezier(.2,1.25,.4,1) both}
+.cl-vs-r.t1 .cl-schild{background:#E04848;box-shadow:inset 0 -6px 0 #A8262B}
+.cl-vs .cl-schild{width:52px;height:58px;font-size:24px}
+.cl-vs-n{display:flex;flex-direction:column;gap:4px;min-width:0}
+.cl-vs-n b{font:900 26px/1.05 var(--font-mid);text-shadow:var(--omlijn-groot);letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:62vw}
+.cl-vs-n small{display:flex;align-items:center;gap:4px;font:900 16px/1 var(--font-head);color:#FFC800;text-shadow:var(--omlijn)}
+.cl-vs-n small svg{width:18px;height:18px}
+.cl-vs-m{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 0}
+.cl-vs-m i{font:900 72px/1 var(--font-mid);font-style:normal;color:#FFC800;text-shadow:var(--omlijn-groot);animation:clVsMid .5s cubic-bezier(.2,1.6,.4,1) .25s both}
+.cl-vs-m small{font:900 14px/1 var(--font-head);color:#fff;text-shadow:var(--omlijn);letter-spacing:.06em;animation:clGrootIn .4s .4s both}
+.cl-vs.weg .cl-vs-r.t1{animation:clVsBovenUit .35s ease-in both}.cl-vs.weg .cl-vs-r.t0{animation:clVsOnderUit .35s ease-in both}
+.cl-vs.weg .cl-vs-m{transition:opacity .25s;opacity:0}
+@keyframes clVsBoven{from{transform:translateY(-105%)}}@keyframes clVsOnder{from{transform:translateY(105%)}}
+@keyframes clVsBovenUit{to{transform:translateY(-105%)}}@keyframes clVsOnderUit{to{transform:translateY(105%)}}
+@keyframes clVsMid{0%{transform:scale(3) rotate(-12deg);opacity:0}100%{transform:none;opacity:1}}
+/* HUD zoals Clash Royale: klok rechtsboven, kronen langs de rechterkant (rood boven, blauw onder) */
+.cl-score.cl-tijdvak{position:absolute;right:58px;top:max(8px,env(safe-area-inset-top));flex-direction:column;align-items:flex-end;gap:0;padding:4px 10px 5px!important;border-radius:12px!important;
+  background:rgba(30,19,10,.86)!important;border:2px solid #C98E46!important;box-shadow:0 3px 0 #1E130A!important;pointer-events:none}
+.cl-tijdvak small{font:800 9.5px/1.1 var(--font-head);color:#E9D7B4;letter-spacing:.04em}
+.cl-tijdvak .cl-klok{font-size:20px;min-width:0;line-height:1.05}
+.cl-kr-zij{position:absolute;right:5px;flex-direction:column;gap:3px;padding:5px 3px;border-radius:12px;background:rgba(30,19,10,.55);pointer-events:none}
+.cl-kr-zij.t1{top:calc(50% - 112px)}.cl-kr-zij.t0{top:calc(50% + 18px)}
+.cl-kr-zij .k{width:22px;height:19px}.cl-kr-zij .k svg{width:20px;height:17px}
+.cl-kr-zij.t0 .k.aan{color:#5AB4FF}.cl-kr-zij.t1 .k.aan{color:#FF5A4F}
+@media(min-width:900px){.cl-kr-zij{right:12px}}
+/* Volle kennis knippert, zoals een volle elixerbalk: speel een kaart */
+.cl-kennis.vol .cl-kennis-bar{animation:clVol .8s ease-in-out infinite alternate}
+.cl-kennis.vol b{animation:clVolDruppel .8s ease-in-out infinite alternate}
+@keyframes clVol{to{box-shadow:inset 0 0 0 2px #0D2552,0 0 14px rgba(224,64,251,.85)}}
+@keyframes clVolDruppel{to{transform:scale(1.12)}}
+@media(prefers-reduced-motion:reduce){.cl-kennis.vol .cl-kennis-bar,.cl-kennis.vol b{animation:none}}
+.cl-hud{bottom:0}

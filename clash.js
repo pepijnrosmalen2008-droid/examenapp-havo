@@ -104,7 +104,7 @@ function clArena(b){let a=0;CL_ARENAS.forEach((x,i)=>{if(b>=x.min)a=i;});return 
 // plus een donkere kant), een witte glanslijn en zachte schaduwen. Geen
 // verlopen, geen gloed. Het veld ligt schuin (CL_SY), figuren staan rechtop.
 // Figuren zijn ontworpen op CL_U eenheden per tegel; voeten staan op (0,0).
-const CL_SY=.78,CL_U=20,CL_US=1.28;
+const CL_SY=.72,CL_U=20,CL_US=1.28;
 function clRnd(seed){let a=seed>>>0;return()=>{a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
 if(typeof CanvasRenderingContext2D!=='undefined'&&!CanvasRenderingContext2D.prototype.roundRect){
   CanvasRenderingContext2D.prototype.roundRect=function(x,y,w,h,r){r=Math.max(0,Math.min(+r||0,Math.abs(w)/2,Math.abs(h)/2));this.moveTo(x+r,y);this.arcTo(x+w,y,x+w,y+h,r);this.arcTo(x+w,y+h,x,y+h,r);this.arcTo(x,y+h,x,y,r);this.arcTo(x,y,x+w,y,r);this.closePath();};}
@@ -778,10 +778,10 @@ function clLeven(){
 function clFit(){
   const w=CL.vw,h=CL.vh;if(!w||!h)return;const oud=CL.S;
   if(CL.mode==='lobby'){CL.S=Math.max(Math.min(w/15.5,h/18),h/(CL_L*CL_SY+2));CL.lobbyPan=Math.max(0,(CL_L*CL_SY+2)*CL.S-h)/2;}
-  else{const top=CL.topPad!=null?CL.topPad:58;CL.S=Math.min((w-8)/19,(h-top-8)/(CL_L*CL_SY+.8));CL.lobbyPan=0;}
+  else{const top=CL.topPad!=null?CL.topPad:58;CL.S=Math.min((w-6)/18.4,(h-top-6)/(CL_L*CL_SY+.6));CL.lobbyPan=0;}
   CL.S=Math.max(8,CL.S);const fw=CL_W*CL.S,fh=CL_L*CL.S*CL_SY;
   CL.ox=(w-fw)/2;
-  CL.oy=CL.mode==='lobby'?(h-fh)/2:(CL.topPad!=null?CL.topPad:58)+.4*CL.S+Math.max(0,(h-(CL.topPad!=null?CL.topPad:58)-8-fh-.8*CL.S)/2);
+  CL.oy=CL.mode==='lobby'?(h-fh)/2:(CL.topPad!=null?CL.topPad:58)+.3*CL.S+Math.max(0,(h-(CL.topPad!=null?CL.topPad:58)-6-fh-.6*CL.S)/2);
   if(oud!==CL.S)CL.bgNodig=true;
 }
 
@@ -1273,8 +1273,8 @@ function clBot(dt){
   // Toren afmaken met een spreuk als dat kan.
   const zwak=CL.ents.find(e=>e.team===0&&e.soort==='toren'&&!e.dood&&e.hp<180);
   if(zwak){const i=hand.findIndex(id=>CL_KAARTEN[id].t==='spreuk'&&CL_KAARTEN[id].k<=kn&&CL_KAARTEN[id].dmg*CL_KAARTEN[id].toren>=zwak.hp);if(i>=0){speel(i,zwak.x,zwak.z);return;}}
-  const mijnTank=CL.ents.find(e=>e.team===1&&e.soort==='unit'&&e.max>=1300&&e.z>12);
-  if(mijnTank&&kn>=4){const i=hand.findIndex(id=>{const d=CL_KAARTEN[id];return d.t==='unit'&&d.k<=kn&&d.bereik>2;});
+  const mijnTank=CL.ents.find(e=>e.team===1&&e.soort==='unit'&&!e.dood&&e.max>=(kn>=6?600:1300)&&e.z>12&&e.z<26);
+  if(mijnTank&&kn>=4&&Math.random()<.7){const i=hand.findIndex(id=>{const d=CL_KAARTEN[id];return d.t==='unit'&&d.k<=kn&&d.bereik>2;});
     if(i>=0){speel(i,mijnTank.x,Math.min(30,mijnTank.z+2));return;}}
   if(kn>=9.3||(kn>=7&&Math.random()<.2)){
     const pr=CL.ents.filter(e=>e.team===0&&e.sub==='prinses');const l=pr.find(e=>e.dood)||pr.sort((a,b)=>a.hp-b.hp)[0];const lx=l?l.x:(Math.random()<.5?3.5:14.5);
@@ -1368,7 +1368,7 @@ function clLus(nu){
     if(!CL.klaar&&!CL.tut){
       CL.tijd-=dt;const dubbel=CL.tijd<=60||CL.overtime;
       if(dubbel&&!CL.dubbelGemeld){CL.dubbelGemeld=true;clBanner(CL.overtime?'Verlenging':'Dubbele kennis',CL.overtime?'De eerste toren die valt, beslist':'Je kennis loopt twee keer zo snel op');}
-      const regen=dt/(dubbel?1.6:3.2);for(const t of [0,1])CL.kennis[t]=Math.min(10,CL.kennis[t]+regen);
+      const regen=dt/(dubbel?1.4:2.8);for(const t of [0,1])CL.kennis[t]=Math.min(10,CL.kennis[t]+regen);
       clBot(dt);
     }
     const sdt=CL.klaar?dt*.25:dt;CL.t+=sdt;
@@ -1397,6 +1397,10 @@ function clStop(){
 // Ghost, zone en route: wat je ziet terwijl je een kaart plaatst.
 function clTekenZone(){
   const vijPr=CL.ents.filter(o=>o.team===1&&o.sub==='prinses');
+  {const S=CL.S;G.save();G.strokeStyle='rgba(255,255,255,.42)';G.lineWidth=1.2;G.beginPath();
+    for(let x=1;x<CL_W;x++){const [a,b]=clProj(x,0,.5),[,b2]=clProj(x,0,CL_RIV0-.5);G.moveTo(a,b);G.lineTo(a,b2);}
+    for(let z=1;z<CL_RIV0;z++){const [a,b]=clProj(.5,0,z),[a2]=clProj(CL_W-.5,0,z);G.moveTo(a,b);G.lineTo(a2,b);}
+    G.stroke();G.fillStyle='rgba(255,255,255,.1)';const [x0,y0]=clProj(.5,0,CL_RIV0-.5),[x1,y1]=clProj(CL_W-.5,0,.5);G.fillRect(x0,y0,x1-x0,y1-y0);G.restore();}
   for(const links of [true,false]){const open=vijPr.some(o=>o.dood&&(o.x<9)===links);const z0=open?21.5:CL_RIV0;
     const [x0,y0]=clProj(links?0:9,0,CL_L),[x1,y1]=clProj(links?9:18,0,z0);
     G.save();G.fillStyle='rgba(255,75,75,.16)';G.fillRect(x0,y0,x1-x0,y1-y0);G.beginPath();G.rect(x0,y0,x1-x0,y1-y0);G.clip();
@@ -1555,7 +1559,8 @@ function clStartPotje(){
   CL.pops=document.createElement('div');CL.pops.className='cl-pops';veld.appendChild(CL.pops);
   let naam='';try{naam=_lgBotName(Math.random);}catch(e){naam='Tegenstander';}
   const hud=document.createElement('div');hud.className='cl-hud';hud.innerHTML=`<button class="arc-x cl-x" onclick="clOpgeven()" aria-label="Stoppen">✕</button>
-    <div class="cl-score"><div class="cl-kr t0" id="cl-kronen0">${'<span class="k"></span>'.repeat(3)}</div><div class="cl-klok" id="cl-klok">3:00</div><div class="cl-kr t1" id="cl-kronen1">${'<span class="k"></span>'.repeat(3)}</div></div>
+    <div class="cl-score cl-tijdvak"><small>Resterende tijd</small><div class="cl-klok" id="cl-klok">3:00</div></div>
+    <div class="cl-kr cl-kr-zij t1" id="cl-kronen1" aria-label="Kronen tegenstander">${'<span class="k"></span>'.repeat(3)}</div><div class="cl-kr cl-kr-zij t0" id="cl-kronen0" aria-label="Jouw kronen">${'<span class="k"></span>'.repeat(3)}</div>
     <div class="cl-tegen">${_arcEsc(naam)} <small>computer</small></div><button class="arc-x cl-help" onclick="clRegels()" aria-label="Spelregels">?</button>`;
   veld.appendChild(hud);
   veld.insertAdjacentHTML('beforeend','<button class="cl-emo-knop" onclick="clEmoMenu()" aria-label="Emote sturen"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H10l-4 4V16H4z"/><path d="M9 10h.01M15 10h.01M9.5 13a3.5 3.5 0 0 0 5 0"/></svg></button>');
@@ -1566,14 +1571,29 @@ function clStartPotje(){
   const pool=Object.keys(CL_KAARTEN).filter(id=>(CL_ARENA_KAART[id]||0)<=CL.arena);const bd=arcShuffle(pool).slice(0,8);if(!bd.some(k=>['reus','ram','ridder'].includes(k)))bd[0]='ridder';
   CL.bot={hand:bd.slice(0,4),rij:bd.slice(4),denk:5,antw:4,goed:0,vragen:0};CL.botLvl=1+CL.arena;CL._store=c;
   clZetTorens();
-  CL.topPad=root.clientWidth>=900?64:58;
+  CL.topPad=root.clientWidth>=900?64:40;
   clDock();CL.forceResize=true;clResize();clFit();
   // Openingsbeeld: het veld zoomt rustig in naar de speelpositie.
-  const t0=performance.now();CL.pauze=true;CL.zwaai=true;CL.cam.z=1.16;CL.cam.y=-CL.S*2.5;
-  const zwaai=nu=>{if(!CL.on)return;const p=Math.min(1,(nu-t0)/950),e=1-Math.pow(1-p,3);CL.cam.z=1.16-.16*e;CL.cam.y=-CL.S*2.5*(1-e);
-    if(p<1)requestAnimationFrame(zwaai);else{CL.cam.z=1;CL.cam.y=0;CL.zwaai=false;clAftellen();}};
-  requestAnimationFrame(zwaai);
+  CL.pauze=true;CL.zwaai=true;CL.cam.z=1.16;CL.cam.y=-CL.S*2.5;
+  const vs=clVsIntro(naam,c);
+  setTimeout(()=>{if(!CL.on)return;const t0=performance.now();
+    const zwaai=nu=>{if(!CL.on)return;const p=Math.min(1,(nu-t0)/950),e=1-Math.pow(1-p,3);CL.cam.z=1.16-.16*e;CL.cam.y=-CL.S*2.5*(1-e);
+      if(p<1)requestAnimationFrame(zwaai);else{CL.cam.z=1;CL.cam.y=0;CL.zwaai=false;clAftellen();}};
+    requestAnimationFrame(zwaai);},vs);
   clFlitsNieuw();
+}
+// VS-scherm zoals bij Clash Royale: jij tegen de tegenstander, met koningslevel en bekers.
+function clVsIntro(naam,c){
+  const veld=document.getElementById('cl-veld');if(!veld||arcLite())return 0;
+  let mijn='';try{mijn=(_safeLocalGet('profiel',{}).naam)||'';}catch(e){}
+  const kl=clKlvl(c),bkl=Math.min(10,1+CL.arena),botBek=Math.max(0,Math.round(c.bekers+Math.random()*80-40));
+  const o=document.createElement('div');o.className='cl-vs';
+  o.innerHTML=`<div class="cl-vs-r t1"><span class="cl-schild">${bkl}</span><span class="cl-vs-n"><b>${_arcEsc(naam)}</b><small>${CL_BEKER}${arcNf(botBek,0)}</small></span></div>
+    <div class="cl-vs-m"><i>VS</i><small>${_arcEsc(CL_ARENAS[CL.arena].naam)}</small></div>
+    <div class="cl-vs-r t0"><span class="cl-schild">${kl}</span><span class="cl-vs-n"><b>${_arcEsc(mijn||'Jij')}</b><small>${CL_BEKER}${arcNf(c.bekers,0)}</small></span></div>`;
+  veld.appendChild(o);clFx('trom');setTimeout(()=>clFx('trom'),170);setTimeout(()=>{clFx('dreun');arcHap(25);},420);
+  setTimeout(()=>o.classList.add('weg'),1450);setTimeout(()=>o.remove(),1850);
+  return 1600;
 }
 function clAftellen(){
   const veld=document.getElementById('cl-veld');const el=document.createElement('div');el.className='cl-overlay cl-cd';veld.appendChild(el);
@@ -1864,7 +1884,7 @@ function clDock(){
     <div class="cl-info" id="cl-info"></div>
     <div class="cl-hand"><div class="cl-next"><small>Volgende</small><div class="cl-kaart mini" id="cl-next"></div></div>
       <div class="cl-kaarten" id="cl-kaarten"></div></div>
-    <div class="cl-kennis"><div class="cl-kennis-bar" id="cl-kbar"><i></i>${'<s></s>'.repeat(9)}</div><b id="cl-knum">5</b></div>`;
+    <div class="cl-kennis"><b id="cl-knum">5</b><div class="cl-kennis-bar" id="cl-kbar"><i></i>${'<s></s>'.repeat(9)}</div></div>`;
   root.appendChild(d);clHand();clInput();
 }
 function clHand(){
@@ -1883,7 +1903,7 @@ function clHand(){
 }
 function clDockTik(){
   const kn=CL.kennis[0];const bar=document.getElementById('cl-kbar');if(!bar)return;
-  bar.firstChild.style.width=(kn*10).toFixed(1)+'%';const num=document.getElementById('cl-knum');const hele=Math.floor(kn);if(num.textContent!=hele){if(+num.textContent<hele)arcRestart(num,'plus');num.textContent=hele;}
+  bar.firstChild.style.width=(kn*10).toFixed(1)+'%';const vol=kn>=9.99;if(bar._vol!==vol){bar._vol=vol;bar.parentNode.classList.toggle('vol',vol);}const num=document.getElementById('cl-knum');const hele=Math.floor(kn);if(num.textContent!=hele){if(+num.textContent<hele)arcRestart(num,'plus');num.textContent=hele;}
   document.querySelectorAll('#cl-kaarten .cl-kaart').forEach(b=>{const id=CL.hand[+b.dataset.i];if(!id)return;const kan=kn>=CL_KAARTEN[id].k;
     const st=(kan?1:0)+(CL.sterk?2:0);if(b._st!==st){b._st=st;b.classList.toggle('kan',kan);b.classList.toggle('sterk',CL.sterk);}
     const l=Math.min(1,kn/CL_KAARTEN[id].k).toFixed(2);if(b._l!==l){b._l=l;b.style.setProperty('--laad',l);}});
