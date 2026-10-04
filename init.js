@@ -1116,6 +1116,8 @@ document.addEventListener('click', function (e) {
 // ═══════ ARCADE (lazy) ═══════
 // De minigames staan in arcade.js en laden pas als je de Arcade opent.
 function arcadeOpen(cb){
+  // Meten wie de Arcade opent (niet alleen wie een spel afmaakt).
+  try{if(typeof trackEvent==='function')trackEvent('arcade_open',{});}catch(e){}
   if(window._arcLoaded&&typeof openArcade==='function'){openArcade();if(typeof cb==='function')setTimeout(cb,60);return;}
   if(window._arcLoading)return;window._arcLoading=true;
   // Eerst de 2D-scènes (arcade2d.js), dan de games zelf (arcade.js).

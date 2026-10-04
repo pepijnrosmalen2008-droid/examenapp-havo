@@ -1574,7 +1574,7 @@ function clKaartInfo(id){
 
 // ── Potje ───────────────────────────────────────────────────────────────
 function clStartPotje(){
-  const c=clStore();CL.arena=clArena(c.bekers);clKiesScene(CL.arena);
+  const c=clStore();try{if(typeof trackEvent==='function')trackEvent('clash_start',{arena:clArena(c.bekers),bekers:c.bekers,vak_id:ARC.vakId});}catch(e){}CL.arena=clArena(c.bekers);clKiesScene(CL.arena);
   const veld=document.getElementById('cl-veld');const root=document.getElementById('cl-root');if(!veld)return;
   veld.querySelectorAll('.cl-lobby,.cl-sheet,.cl-hud,.cl-bars,.cl-pops,.cl-overlay,.cl-emo-knop,.cl-emo-menu').forEach(x=>x.remove());
   CL.bars=document.createElement('div');CL.bars.className='cl-bars';veld.appendChild(CL.bars);

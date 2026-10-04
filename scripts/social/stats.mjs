@@ -45,10 +45,13 @@ const UITSLUITEN = (CONFIG.uitsluiten || []).map(String);
 const uitgesloten = d => d && UITSLUITEN.some(u => d.startsWith(u));
 // 'Passief' = openen, wegklikken, trechter, fouten. Wie alleen dat doet, is geen echte gebruiker (of een bot).
 const PASSIEF = new Set(['app_open', 'return_card_shown', 'exit', 'funnel', 'js_error']);
-const OEFENEN = new Set(['quiz_completed', 'oud_examen_quiz', 'flashcard', 'proefexamen', 'simulatietoets', 'foutenboek_oefen', 'bot_race', 'multiplayer', 'herhalen_open']);
+const OEFENEN = new Set(['minigame', 'quiz_completed', 'oud_examen_quiz', 'flashcard', 'proefexamen', 'simulatietoets', 'foutenboek_oefen', 'bot_race', 'multiplayer', 'herhalen_open']);
 const FUNCTIES = { quiz_completed: 'Snelle quiz', studieplan_generated: 'Studieplan', oud_examen_quiz: 'Oud-examenquiz', oud_examen_pdf: 'Examenarchief (PDF)',
   foutenboek_open: 'Foutenboek', flashcard: 'Flashcards', proefexamen: 'Proefexamen', simulatietoets: 'Simulatietoets', ai_chat: 'Vraag Vonk (AI)',
-  ai_nakijken: 'AI-nakijken', bot_race: 'Race tegen bot', multiplayer: 'Klassenquiz', dagmissie_voltooid: 'Dagmissie' };
+  ai_nakijken: 'AI-nakijken', bot_race: 'Race tegen bot', multiplayer: 'Klassenquiz', dagmissie_voltooid: 'Dagmissie',
+  herinnering_agenda: 'Agenda-herinnering', arcade_open: 'Arcade geopend', clash_start: 'Clash: potje gestart', kingdom_open: 'Kingdom geopend', kingdom_bouw: 'Kingdom: gebouwd' };
+// Minigames delen één event-type; het spel staat in meta.game.
+const functieVan = e => e.event_type === 'minigame' ? (e.meta?.game === 'clash' ? 'Clash: potje uitgespeeld' : e.meta?.game === 'clash_kist' ? 'Clash: kist geopend' : 'Arcade-minigame') : FUNCTIES[e.event_type] || null;
 
 function venster(ev, van, tot) { return ev.filter(e => { const t = Date.parse(e.created_at); return t >= van && t < tot; }); }
 const did = e => e.meta?.did || null;
@@ -78,7 +81,7 @@ function kengetallen(alle, ev, van) {
     feedback: { aantal: fb.length, gem: fb.length ? +(fb.reduce((a, e) => a + Number(e.meta.rating), 0) / fb.length).toFixed(1) : null },
     niveaus: tel(Object.values(perApp), e => e.niveau),
     apparaten: tel(Object.values(perApp), e => e.meta?.device),
-    functies: Object.fromEntries(Object.entries(tel(ev, e => FUNCTIES[e.event_type] || null)).sort((a, b) => b[1] - a[1])),
+    functies: Object.fromEntries(Object.entries(tel(ev, functieVan)).sort((a, b) => b[1] - a[1])),
     vakken: Object.entries(tel(quiz, e => e.vak_naam ? `${e.vak_naam} (${(e.niveau || '').toUpperCase()})` : null))
       .sort((a, b) => b[1] - a[1]).slice(0, 8).map(([naam, n]) => ({ naam, n })),
   };

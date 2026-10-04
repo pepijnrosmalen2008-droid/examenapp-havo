@@ -1,0 +1,1045 @@
+{
+  "gemeten": "2026-10-04T17:45:06.192Z",
+  "periode": {
+    "van": "2026-09-27",
+    "tot": "2026-10-03"
+  },
+  "app": {
+    "deze": {
+      "actief": 108,
+      "betrokken": 68,
+      "nieuw": 102,
+      "concentratie": {
+        "top2Aandeel": 37,
+        "top": [
+          {
+            "apparaat": "a3780ca8",
+            "n": 13
+          },
+          {
+            "apparaat": "2965679e",
+            "n": 10
+          },
+          {
+            "apparaat": "138342e1",
+            "n": 8
+          }
+        ]
+      },
+      "opens": 136,
+      "oefensessies": 63,
+      "quizzen": 14,
+      "gemScore": 70,
+      "fouten": 32,
+      "feedback": {
+        "aantal": 1,
+        "gem": 4
+      },
+      "niveaus": {
+        "vmbo": 20,
+        "havo": 46,
+        "vwo": 42
+      },
+      "apparaten": {
+        "desktop": 81,
+        "mobile-pwa": 1,
+        "mobile": 26
+      },
+      "functies": {
+        "Vraag Vonk (AI)": 27,
+        "Snelle quiz": 14,
+        "Studieplan": 11,
+        "Clash: potje uitgespeeld": 11,
+        "Proefexamen": 10,
+        "Oud-examenquiz": 10,
+        "Kingdom: gebouwd": 9,
+        "Dagmissie": 7,
+        "Flashcards": 6,
+        "Arcade-minigame": 5,
+        "Kingdom geopend": 5,
+        "Foutenboek": 2,
+        "Examenarchief (PDF)": 2,
+        "Clash: kist geopend": 1,
+        "Klassenquiz": 1
+      },
+      "vakken": [
+        {
+          "naam": "Frans (VWO)",
+          "n": 7
+        },
+        {
+          "naam": "Engels (VMBO)",
+          "n": 1
+        },
+        {
+          "naam": "Foutenboek (HAVO)",
+          "n": 1
+        },
+        {
+          "naam": "Natuurkunde (VWO)",
+          "n": 1
+        },
+        {
+          "naam": "Aardrijkskunde (HAVO)",
+          "n": 1
+        },
+        {
+          "naam": "Nederlands (HAVO)",
+          "n": 1
+        },
+        {
+          "naam": "Wiskunde A (HAVO)",
+          "n": 1
+        },
+        {
+          "naam": "Engels (HAVO)",
+          "n": 1
+        }
+      ]
+    },
+    "vorige": {
+      "actief": 94,
+      "betrokken": 53,
+      "nieuw": 89,
+      "concentratie": {
+        "top2Aandeel": 34,
+        "top": [
+          {
+            "apparaat": "49d1b517",
+            "n": 7
+          },
+          {
+            "apparaat": "7b94d70a",
+            "n": 5
+          },
+          {
+            "apparaat": "4dfd3157",
+            "n": 5
+          }
+        ]
+      },
+      "opens": 89,
+      "oefensessies": 35,
+      "quizzen": 7,
+      "gemScore": 65,
+      "fouten": 25,
+      "feedback": {
+        "aantal": 2,
+        "gem": 4.5
+      },
+      "niveaus": {
+        "havo": 60,
+        "vwo": 23,
+        "vmbo": 11
+      },
+      "apparaten": {
+        "mobile-pwa": 1,
+        "desktop": 62,
+        "mobile": 31
+      },
+      "functies": {
+        "Oud-examenquiz": 16,
+        "Snelle quiz": 7,
+        "Studieplan": 4,
+        "Flashcards": 4,
+        "Dagmissie": 4,
+        "Foutenboek": 4,
+        "Proefexamen": 2,
+        "Race tegen bot": 1
+      },
+      "vakken": [
+        {
+          "naam": "Foutenboek (VWO)",
+          "n": 3
+        },
+        {
+          "naam": "Biologie (VWO)",
+          "n": 1
+        },
+        {
+          "naam": "Nederlands (HAVO)",
+          "n": 1
+        },
+        {
+          "naam": "Natuurkunde (VWO)",
+          "n": 1
+        },
+        {
+          "naam": "Economie (VMBO)",
+          "n": 1
+        }
+      ]
+    },
+    "terugkeer": 4,
+    "terugkeerBetrokken": 4,
+    "uitgesloten": 0,
+    "dagelijks": [
+      {
+        "datum": "2026-08-06",
+        "actief": 4,
+        "betrokken": 1,
+        "opens": 16,
+        "oefensessies": 1,
+        "nieuw": 2
+      },
+      {
+        "datum": "2026-08-07",
+        "actief": 5,
+        "betrokken": 2,
+        "opens": 13,
+        "oefensessies": 10,
+        "nieuw": 3
+      },
+      {
+        "datum": "2026-08-08",
+        "actief": 5,
+        "betrokken": 2,
+        "opens": 13,
+        "oefensessies": 5,
+        "nieuw": 4
+      },
+      {
+        "datum": "2026-08-09",
+        "actief": 13,
+        "betrokken": 0,
+        "opens": 11,
+        "oefensessies": 0,
+        "nieuw": 12
+      },
+      {
+        "datum": "2026-08-10",
+        "actief": 7,
+        "betrokken": 2,
+        "opens": 14,
+        "oefensessies": 15,
+        "nieuw": 4
+      },
+      {
+        "datum": "2026-08-11",
+        "actief": 7,
+        "betrokken": 2,
+        "opens": 6,
+        "oefensessies": 3,
+        "nieuw": 3
+      },
+      {
+        "datum": "2026-08-12",
+        "actief": 2,
+        "betrokken": 0,
+        "opens": 7,
+        "oefensessies": 0,
+        "nieuw": 0
+      },
+      {
+        "datum": "2026-08-13",
+        "actief": 11,
+        "betrokken": 1,
+        "opens": 29,
+        "oefensessies": 12,
+        "nieuw": 9
+      },
+      {
+        "datum": "2026-08-14",
+        "actief": 2,
+        "betrokken": 1,
+        "opens": 17,
+        "oefensessies": 14,
+        "nieuw": 1
+      },
+      {
+        "datum": "2026-08-15",
+        "actief": 5,
+        "betrokken": 1,
+        "opens": 10,
+        "oefensessies": 0,
+        "nieuw": 4
+      },
+      {
+        "datum": "2026-08-16",
+        "actief": 3,
+        "betrokken": 0,
+        "opens": 3,
+        "oefensessies": 0,
+        "nieuw": 3
+      },
+      {
+        "datum": "2026-08-17",
+        "actief": 6,
+        "betrokken": 0,
+        "opens": 5,
+        "oefensessies": 0,
+        "nieuw": 5
+      },
+      {
+        "datum": "2026-08-18",
+        "actief": 8,
+        "betrokken": 0,
+        "opens": 9,
+        "oefensessies": 0,
+        "nieuw": 8
+      },
+      {
+        "datum": "2026-08-19",
+        "actief": 7,
+        "betrokken": 1,
+        "opens": 7,
+        "oefensessies": 3,
+        "nieuw": 7
+      },
+      {
+        "datum": "2026-08-20",
+        "actief": 7,
+        "betrokken": 3,
+        "opens": 11,
+        "oefensessies": 4,
+        "nieuw": 5
+      },
+      {
+        "datum": "2026-08-21",
+        "actief": 4,
+        "betrokken": 0,
+        "opens": 3,
+        "oefensessies": 0,
+        "nieuw": 4
+      },
+      {
+        "datum": "2026-08-22",
+        "actief": 6,
+        "betrokken": 2,
+        "opens": 7,
+        "oefensessies": 4,
+        "nieuw": 5
+      },
+      {
+        "datum": "2026-08-23",
+        "actief": 7,
+        "betrokken": 2,
+        "opens": 10,
+        "oefensessies": 13,
+        "nieuw": 6
+      },
+      {
+        "datum": "2026-08-24",
+        "actief": 14,
+        "betrokken": 4,
+        "opens": 14,
+        "oefensessies": 3,
+        "nieuw": 13
+      },
+      {
+        "datum": "2026-08-25",
+        "actief": 8,
+        "betrokken": 2,
+        "opens": 11,
+        "oefensessies": 4,
+        "nieuw": 7
+      },
+      {
+        "datum": "2026-08-26",
+        "actief": 7,
+        "betrokken": 3,
+        "opens": 9,
+        "oefensessies": 1,
+        "nieuw": 5
+      },
+      {
+        "datum": "2026-08-27",
+        "actief": 11,
+        "betrokken": 3,
+        "opens": 11,
+        "oefensessies": 4,
+        "nieuw": 10
+      },
+      {
+        "datum": "2026-08-28",
+        "actief": 2,
+        "betrokken": 1,
+        "opens": 2,
+        "oefensessies": 1,
+        "nieuw": 1
+      },
+      {
+        "datum": "2026-08-29",
+        "actief": 9,
+        "betrokken": 5,
+        "opens": 20,
+        "oefensessies": 21,
+        "nieuw": 6
+      },
+      {
+        "datum": "2026-08-30",
+        "actief": 6,
+        "betrokken": 2,
+        "opens": 13,
+        "oefensessies": 7,
+        "nieuw": 4
+      },
+      {
+        "datum": "2026-08-31",
+        "actief": 10,
+        "betrokken": 4,
+        "opens": 18,
+        "oefensessies": 5,
+        "nieuw": 7
+      },
+      {
+        "datum": "2026-09-01",
+        "actief": 15,
+        "betrokken": 4,
+        "opens": 18,
+        "oefensessies": 8,
+        "nieuw": 14
+      },
+      {
+        "datum": "2026-09-02",
+        "actief": 4,
+        "betrokken": 2,
+        "opens": 11,
+        "oefensessies": 5,
+        "nieuw": 1
+      },
+      {
+        "datum": "2026-09-03",
+        "actief": 9,
+        "betrokken": 2,
+        "opens": 33,
+        "oefensessies": 14,
+        "nieuw": 7
+      },
+      {
+        "datum": "2026-09-04",
+        "actief": 3,
+        "betrokken": 0,
+        "opens": 5,
+        "oefensessies": 0,
+        "nieuw": 3
+      },
+      {
+        "datum": "2026-09-05",
+        "actief": 7,
+        "betrokken": 2,
+        "opens": 13,
+        "oefensessies": 3,
+        "nieuw": 5
+      },
+      {
+        "datum": "2026-09-06",
+        "actief": 7,
+        "betrokken": 6,
+        "opens": 16,
+        "oefensessies": 18,
+        "nieuw": 4
+      },
+      {
+        "datum": "2026-09-07",
+        "actief": 8,
+        "betrokken": 6,
+        "opens": 21,
+        "oefensessies": 22,
+        "nieuw": 6
+      },
+      {
+        "datum": "2026-09-08",
+        "actief": 7,
+        "betrokken": 3,
+        "opens": 6,
+        "oefensessies": 14,
+        "nieuw": 6
+      },
+      {
+        "datum": "2026-09-09",
+        "actief": 5,
+        "betrokken": 2,
+        "opens": 10,
+        "oefensessies": 14,
+        "nieuw": 3
+      },
+      {
+        "datum": "2026-09-10",
+        "actief": 7,
+        "betrokken": 4,
+        "opens": 20,
+        "oefensessies": 15,
+        "nieuw": 4
+      },
+      {
+        "datum": "2026-09-11",
+        "actief": 8,
+        "betrokken": 4,
+        "opens": 11,
+        "oefensessies": 11,
+        "nieuw": 7
+      },
+      {
+        "datum": "2026-09-12",
+        "actief": 6,
+        "betrokken": 3,
+        "opens": 10,
+        "oefensessies": 41,
+        "nieuw": 4
+      },
+      {
+        "datum": "2026-09-13",
+        "actief": 10,
+        "betrokken": 5,
+        "opens": 7,
+        "oefensessies": 20,
+        "nieuw": 7
+      },
+      {
+        "datum": "2026-09-14",
+        "actief": 9,
+        "betrokken": 4,
+        "opens": 23,
+        "oefensessies": 15,
+        "nieuw": 6
+      },
+      {
+        "datum": "2026-09-15",
+        "actief": 83,
+        "betrokken": 16,
+        "opens": 109,
+        "oefensessies": 16,
+        "nieuw": 77
+      },
+      {
+        "datum": "2026-09-16",
+        "actief": 18,
+        "betrokken": 8,
+        "opens": 25,
+        "oefensessies": 74,
+        "nieuw": 14
+      },
+      {
+        "datum": "2026-09-17",
+        "actief": 12,
+        "betrokken": 4,
+        "opens": 17,
+        "oefensessies": 0,
+        "nieuw": 5
+      },
+      {
+        "datum": "2026-09-18",
+        "actief": 12,
+        "betrokken": 2,
+        "opens": 10,
+        "oefensessies": 1,
+        "nieuw": 11
+      },
+      {
+        "datum": "2026-09-19",
+        "actief": 9,
+        "betrokken": 2,
+        "opens": 8,
+        "oefensessies": 0,
+        "nieuw": 6
+      },
+      {
+        "datum": "2026-09-20",
+        "actief": 18,
+        "betrokken": 10,
+        "opens": 28,
+        "oefensessies": 4,
+        "nieuw": 15
+      },
+      {
+        "datum": "2026-09-21",
+        "actief": 28,
+        "betrokken": 20,
+        "opens": 26,
+        "oefensessies": 2,
+        "nieuw": 26
+      },
+      {
+        "datum": "2026-09-22",
+        "actief": 13,
+        "betrokken": 6,
+        "opens": 11,
+        "oefensessies": 3,
+        "nieuw": 11
+      },
+      {
+        "datum": "2026-09-23",
+        "actief": 12,
+        "betrokken": 5,
+        "opens": 8,
+        "oefensessies": 1,
+        "nieuw": 9
+      },
+      {
+        "datum": "2026-09-24",
+        "actief": 10,
+        "betrokken": 6,
+        "opens": 12,
+        "oefensessies": 5,
+        "nieuw": 10
+      },
+      {
+        "datum": "2026-09-25",
+        "actief": 17,
+        "betrokken": 11,
+        "opens": 15,
+        "oefensessies": 10,
+        "nieuw": 15
+      },
+      {
+        "datum": "2026-09-26",
+        "actief": 5,
+        "betrokken": 2,
+        "opens": 3,
+        "oefensessies": 12,
+        "nieuw": 5
+      },
+      {
+        "datum": "2026-09-27",
+        "actief": 19,
+        "betrokken": 8,
+        "opens": 20,
+        "oefensessies": 2,
+        "nieuw": 18
+      },
+      {
+        "datum": "2026-09-28",
+        "actief": 27,
+        "betrokken": 18,
+        "opens": 32,
+        "oefensessies": 2,
+        "nieuw": 24
+      },
+      {
+        "datum": "2026-09-29",
+        "actief": 14,
+        "betrokken": 7,
+        "opens": 8,
+        "oefensessies": 1,
+        "nieuw": 11
+      },
+      {
+        "datum": "2026-09-30",
+        "actief": 14,
+        "betrokken": 7,
+        "opens": 12,
+        "oefensessies": 3,
+        "nieuw": 12
+      },
+      {
+        "datum": "2026-10-01",
+        "actief": 13,
+        "betrokken": 9,
+        "opens": 14,
+        "oefensessies": 4,
+        "nieuw": 11
+      },
+      {
+        "datum": "2026-10-02",
+        "actief": 13,
+        "betrokken": 7,
+        "opens": 11,
+        "oefensessies": 16,
+        "nieuw": 9
+      },
+      {
+        "datum": "2026-10-03",
+        "actief": 15,
+        "betrokken": 9,
+        "opens": 22,
+        "oefensessies": 6,
+        "nieuw": 12
+      },
+      {
+        "datum": "2026-10-04",
+        "actief": 21,
+        "betrokken": 19,
+        "opens": 28,
+        "oefensessies": 14,
+        "nieuw": 17
+      }
+    ],
+    "topFouten": [
+      {
+        "bericht": "bron kon niet laden: /icon-192.png",
+        "n": 6,
+        "laatst": "2026-10-04T15:17:18.484521+00:00",
+        "schermen": [
+          "sc-detail"
+        ]
+      },
+      {
+        "bericht": "TypeError: undefined is not an object (evaluating 'window.ethereum.selectedAddress = undefined')",
+        "n": 3,
+        "laatst": "2026-10-02T04:12:57.407808+00:00",
+        "schermen": [
+          "sc-welcome"
+        ]
+      },
+      {
+        "bericht": "Script error.",
+        "n": 3,
+        "laatst": "2026-10-02T04:12:57.421488+00:00",
+        "schermen": [
+          "sc-welcome"
+        ]
+      },
+      {
+        "bericht": "ReferenceError: Can't find variable: __firefox__",
+        "n": 2,
+        "laatst": "2026-10-01T21:57:44.63178+00:00",
+        "schermen": [
+          "sc-welcome"
+        ]
+      },
+      {
+        "bericht": "TypeError: undefined is not an object (evaluating 'window.__firefox__.reader')",
+        "n": 2,
+        "laatst": "2026-10-01T21:57:44.646055+00:00",
+        "schermen": [
+          "sc-welcome"
+        ]
+      },
+      {
+        "bericht": "TypeError: undefined is not an object (evaluating 'window.__firefox__.refresh_youtube_quality_83465E33C5FB450F",
+        "n": 2,
+        "laatst": "2026-10-01T21:57:44.632037+00:00",
+        "schermen": [
+          "sc-welcome"
+        ]
+      }
+    ],
+    "afwijkingen": [
+      {
+        "datum": "2026-08-24",
+        "veld": "actief",
+        "waarde": 14,
+        "normaal": 6,
+        "richting": "piek",
+        "sterkte": 5.4
+      },
+      {
+        "datum": "2026-09-15",
+        "veld": "actief",
+        "waarde": 83,
+        "normaal": 7,
+        "richting": "piek",
+        "sterkte": 25.6
+      },
+      {
+        "datum": "2026-09-15",
+        "veld": "betrokken",
+        "waarde": 16,
+        "normaal": 3,
+        "richting": "piek",
+        "sterkte": 8.8
+      },
+      {
+        "datum": "2026-09-16",
+        "veld": "actief",
+        "waarde": 18,
+        "normaal": 7,
+        "richting": "piek",
+        "sterkte": 3.7
+      },
+      {
+        "datum": "2026-09-21",
+        "veld": "actief",
+        "waarde": 28,
+        "normaal": 9,
+        "richting": "piek",
+        "sterkte": 6.4
+      },
+      {
+        "datum": "2026-09-21",
+        "veld": "betrokken",
+        "waarde": 20,
+        "normaal": 4,
+        "richting": "piek",
+        "sterkte": 5.4
+      },
+      {
+        "datum": "2026-09-28",
+        "veld": "actief",
+        "waarde": 27,
+        "normaal": 10,
+        "richting": "piek",
+        "sterkte": 3.8
+      },
+      {
+        "datum": "2026-09-28",
+        "veld": "betrokken",
+        "waarde": 18,
+        "normaal": 5,
+        "richting": "piek",
+        "sterkte": 4.4
+      },
+      {
+        "datum": "2026-10-04",
+        "veld": "betrokken",
+        "waarde": 19,
+        "normaal": 7,
+        "richting": "piek",
+        "sterkte": 4
+      }
+    ],
+    "trechter": {
+      "deze": {
+        "basis": 51,
+        "nieuw": 8,
+        "stappen": [
+          {
+            "stap": "Echte bezoeker",
+            "n": 51
+          },
+          {
+            "stap": "Op het startscherm",
+            "n": 49
+          },
+          {
+            "stap": "Iets gedaan",
+            "n": 46
+          }
+        ],
+        "conversie": {
+          "home": 96,
+          "action": 90
+        },
+        "nieuwPad": {
+          "niveau": 100,
+          "action": 100
+        }
+      },
+      "vorige": {
+        "basis": 46,
+        "nieuw": 6,
+        "stappen": [
+          {
+            "stap": "Echte bezoeker",
+            "n": 46
+          },
+          {
+            "stap": "Op het startscherm",
+            "n": 39
+          },
+          {
+            "stap": "Iets gedaan",
+            "n": 33
+          }
+        ],
+        "conversie": {
+          "home": 85,
+          "action": 72
+        },
+        "nieuwPad": {
+          "niveau": 83,
+          "action": 67
+        }
+      }
+    },
+    "herkomst": {
+      "deze": {
+        "Eigen pagina's": 56,
+        "Direct": 51,
+        "ChatGPT": 14,
+        "Bing & co": 9,
+        "Google": 5,
+        "Overig": 1
+      },
+      "vorige": {
+        "Eigen pagina's": 38,
+        "Direct": 21,
+        "ChatGPT": 10,
+        "Google": 10,
+        "Bing & co": 6,
+        "Andere AI": 3,
+        "Overig": 1
+      },
+      "zestigDagen": {
+        "Direct": 549,
+        "Eigen pagina's": 193,
+        "ChatGPT": 68,
+        "Google": 45,
+        "Bing & co": 34,
+        "Instagram": 11,
+        "Facebook": 7,
+        "Andere AI": 3,
+        "Overig": 2
+      }
+    },
+    "cohorten": [
+      {
+        "week": "2026-08-09",
+        "omvang": 1,
+        "retentie": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "week": "2026-08-16",
+        "omvang": 6,
+        "retentie": [
+          17,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "week": "2026-08-23",
+        "omvang": 12,
+        "retentie": [
+          8,
+          17,
+          17,
+          0,
+          8
+        ]
+      },
+      {
+        "week": "2026-08-30",
+        "omvang": 11,
+        "retentie": [
+          18,
+          9,
+          0,
+          0
+        ]
+      },
+      {
+        "week": "2026-09-06",
+        "omvang": 14,
+        "retentie": [
+          29,
+          14,
+          7
+        ]
+      },
+      {
+        "week": "2026-09-13",
+        "omvang": 34,
+        "retentie": [
+          6,
+          3
+        ]
+      },
+      {
+        "week": "2026-09-20",
+        "omvang": 51,
+        "retentie": [
+          0
+        ]
+      },
+      {
+        "week": "2026-09-27",
+        "omvang": 65,
+        "retentie": []
+      }
+    ],
+    "prognose": {
+      "historie": [
+        7,
+        8,
+        20,
+        20,
+        27,
+        46,
+        58,
+        76
+      ],
+      "helling": 9.74,
+      "spreiding": 7,
+      "wekenTotExamen": 32,
+      "volgendeWeek": {
+        "verwacht": 77,
+        "laag": 70,
+        "hoog": 84
+      },
+      "over4Weken": 106
+    },
+    "seizoen": {
+      "dagenTotCE": 221,
+      "fase": "Opbouw: leerlingen zijn nog niet met het examen bezig. Groei komt nu vooral via zoekverkeer en docenten."
+    },
+    "doelen": [
+      {
+        "naam": "Betrokken leerlingen per week",
+        "metriek": "betrokkenPerWeek",
+        "waarde": 250,
+        "datum": "2027-03-01",
+        "huidig": 68,
+        "wekenTot": 21,
+        "nodigeGroeiPerWeekPct": 6.4,
+        "voortgangPct": 27
+      }
+    ],
+    "signalen": [
+      {
+        "soort": "goed",
+        "titel": "Betrokken leerlingen +28%",
+        "bewijs": "68 deze week tegen 53 vorige week.",
+        "zekerheid": "hoog"
+      },
+      {
+        "soort": "goed",
+        "titel": "Piek op 28 sep",
+        "bewijs": "18 betrokken leerlingen, normaal rond 5 (4.4× de gebruikelijke spreiding).",
+        "zekerheid": "hoog"
+      },
+      {
+        "soort": "goed",
+        "titel": "Piek op 4 okt",
+        "bewijs": "19 betrokken leerlingen, normaal rond 7 (4× de gebruikelijke spreiding).",
+        "zekerheid": "hoog"
+      },
+      {
+        "soort": "goed",
+        "titel": "90% van de echte bezoekers gaat iets doen",
+        "bewijs": "Van 51 bezoekers die echt interacteerden, kwam 96% op het startscherm en 90% tot een eerste actie. Vorige week: 72%. Nieuwe bezoekers: 100% kiest een niveau.",
+        "zekerheid": "hoog"
+      },
+      {
+        "soort": "goed",
+        "titel": "AI-zoekmachines sturen meer bezoekers dan Google",
+        "bewijs": "14 bezoeken via ChatGPT en andere AI, 5 via Google. llms.txt en de vakpagina's werken.",
+        "zekerheid": "hoog"
+      },
+      {
+        "soort": "actie",
+        "titel": "Terugkeer 4%",
+        "bewijs": "Van de leerlingen die vorige week oefenden, kwam minder dan een kwart terug.",
+        "zekerheid": "hoog"
+      },
+      {
+        "soort": "let-op",
+        "titel": "Gemiddeld 13% komt een week later terug",
+        "bewijs": "Over 6 instroomweken met minstens 5 nieuwe leerlingen.",
+        "zekerheid": "hoog"
+      },
+      {
+        "soort": "goed",
+        "titel": "Trend: +9.74 betrokken dagbezoeken per week",
+        "bewijs": "Betrokken dagbezoeken per week (één leerling op één dag = 1), over de laatste 8 weken. Verwachting volgende week 77 (tussen 70 en 84).",
+        "zekerheid": "middel"
+      }
+    ]
+  },
+  "instagram": {
+    "gekoppeld": false
+  },
+  "content": {
+    "gepland": 0,
+    "geplaatst": 0,
+    "gemist": 0,
+    "mislukt": 0,
+    "komend": []
+  },
+  "seo": {
+    "paginas": 171,
+    "indexnow": true
+  }
+}

@@ -944,6 +944,64 @@ function _focusVakIds(){
 // Eén vast anker bovenaan home: begroeting + je stand (streak, dagen tot examen)
 // + wat je vandaag het beste kunt doen (zwakste leerdoelen uit de mastery-spine
 // + wat wegzakt). Zo begint elke sessie bij hetzelfde punt: "wat doe ik nu?".
+// ═══════ VOORTGANG PER WEEK ═══════
+// Elke dag één momentopname van de beheersing per geoefend leerdoel. Zo kan het
+// startscherm laten zien wat je deze week beter bent gaan beheersen: de
+// noordster (Learning Progress) zichtbaar voor de leerling zelf.
+function _vgKey(){return 'slagio_vg_'+((typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo');}
+function vgMeting(){
+  const m={};
+  try{(getVK()||[]).forEach(vak=>(vak.domeinen||[]).forEach(dom=>{
+    const lds=(dom.leerdoelen&&dom.leerdoelen.length)?dom.leerdoelen:[{id:dom.id,naam:dom.naam}];
+    lds.forEach(ld=>{const r=ldMastery(vak.id,ld);if(r&&r.hasData)m[vak.id+'|'+r.ldId]=Math.round(r.score*100);});}));}catch(e){}
+  return m;
+}
+function vgVoortgang(){
+  let st={snaps:[]};try{st=JSON.parse(localStorage.getItem(_vgKey())||'{"snaps":[]}')||{snaps:[]};}catch(e){}
+  if(!Array.isArray(st.snaps))st.snaps=[];
+  const nu=vgMeting(),now=Date.now(),vandaag=new Date().toISOString().slice(0,10);
+  // Vergelijk met de meting van ongeveer een week geleden (6-14 dagen), anders de oudste van minstens een dag oud.
+  const oud=st.snaps.filter(x=>now-x.t>=6*864e5&&now-x.t<=14*864e5).sort((a,b)=>a.t-b.t)[0]||st.snaps.filter(x=>now-x.t>=864e5).sort((a,b)=>a.t-b.t)[0]||null;
+  if(Object.keys(nu).length){st.snaps=st.snaps.filter(x=>new Date(x.t).toISOString().slice(0,10)!==vandaag&&now-x.t<30*864e5);st.snaps.push({t:now,m:nu});
+    try{localStorage.setItem(_vgKey(),JSON.stringify(st));}catch(e){}}
+  const keys=Object.keys(nu);let beter=0,nieuw=0;
+  if(oud)keys.forEach(k=>{if(!(k in oud.m))nieuw++;else if(nu[k]>=oud.m[k]+5)beter++;});
+  return {geoefend:keys.length,beheerst:keys.filter(k=>nu[k]>=70).length,beter,nieuw,heeftVorige:!!oud,dagen:oud?Math.round((now-oud.t)/864e5):0};
+}
+// Herhaalonderdelen die morgen klaarstaan (vandaag al due telt ook mee).
+function herhaalMorgenCount(){
+  let n=0;try{const decay=getDecay()||{},now=Date.now()+864e5;
+    (getVK()||[]).forEach(vak=>(vak.domeinen||[]).forEach(dom=>{const ts=decay[vak.id+'_'+dom.id];if(!ts)return;const r=getDomeinBestPct(vak.id,dom.id);if(!r.hasData)return;
+      const iv=(typeof _herInterval==='function')?_herInterval(r.pct):7;if((now-ts)/864e5>=iv)n++;}));}catch(e){}
+  return n;
+}
+// ═══════ HERINNERING IN JE AGENDA ═══════
+// Driekwart van de leerlingen zit op een computer, waar meldingen niet werken.
+// Een terugkerende afspraak in de eigen agenda werkt overal (Google, Apple, Outlook).
+function agendaKies(){
+  const o=document.createElement('div');o.className='ag-sheet';o.setAttribute('role','dialog');o.setAttribute('aria-label','Dagelijkse herinnering');
+  o.innerHTML=`<div class="ag-in"><button class="ag-x" aria-label="Sluiten">✕</button><b class="ag-h">Elke dag 10 minuten</b>
+    <p class="ag-p">Kies een tijd. Je krijgt een herinnering in je eigen agenda, met een link naar Slagio. Werkt met Google, Apple en Outlook.</p>
+    <div class="ag-tijden">${['16:00','17:30','19:00','20:30'].map(t=>`<button class="ag-t" data-t="${t}">${t}</button>`).join('')}</div></div>`;
+  document.body.appendChild(o);requestAnimationFrame(()=>o.classList.add('on'));
+  const weg=()=>{o.classList.remove('on');setTimeout(()=>o.remove(),200);};
+  o.addEventListener('click',e=>{if(e.target===o||e.target.closest('.ag-x')){weg();return;}const b=e.target.closest('[data-t]');if(!b)return;agendaDownload(b.dataset.t);weg();});
+}
+function agendaDownload(tijd){
+  const [u,m]=tijd.split(':').map(Number);const d=new Date();d.setDate(d.getDate()+(d.getHours()*60+d.getMinutes()>=u*60+m?1:0));
+  const p=n=>String(n).padStart(2,'0');const dt=`${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}T${p(u)}${p(m)}00`;
+  const st=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+/,'');
+  const niv=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo',url=`https://slagio.nl/${niv}`;
+  const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Slagio//Herinnering//NL','CALSCALE:GREGORIAN','BEGIN:VEVENT',`UID:slagio-dagelijks-${Date.now()}@slagio.nl`,`DTSTAMP:${st}`,
+    `DTSTART:${dt}`,'DURATION:PT10M','RRULE:FREQ=DAILY','SUMMARY:Slagio: 10 minuten oefenen',`DESCRIPTION:Herhaal wat wegzakt en oefen je zwakste leerdoel.\\n${url}`,`URL:${url}`,
+    'BEGIN:VALARM','TRIGGER:PT0M','ACTION:DISPLAY','DESCRIPTION:Slagio: 10 minuten oefenen','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  try{const blob=new Blob([ics],{type:'text/calendar;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='slagio-herinnering.ics';
+    document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1500);}catch(e){}
+  try{localStorage.setItem('slagio_agenda',tijd);}catch(e){}
+  try{trackEvent('herinnering_agenda',{tijd});}catch(e){}
+  try{if(typeof showToast==='function')showToast('Open het bestand om de herinnering in je agenda te zetten.');}catch(e){}
+  try{renderVandaagHub();}catch(e){}
+}
 function renderVandaagHub(){
   const box=document.getElementById('vandaag-hub'); if(!box) return;
   let naam=''; try{ naam=((JSON.parse(localStorage.getItem(PROF_KEY)||'{}').naam)||'').trim().split(/\s+/)[0]||''; }catch(e){}
@@ -984,6 +1042,9 @@ function renderVandaagHub(){
 
   const shown=items.slice(0,4);
   const n=shown.length;
+  const vg=vgVoortgang(),morgen=herhaalMorgenCount();let agenda='';try{agenda=localStorage.getItem('slagio_agenda')||'';}catch(e){}
+  // De grote knop bovenaan wordt je persoonlijke volgende stap; wie al oefent krijgt een compacte aftelklok.
+  try{_vhHero(shown[0],vg);}catch(e){}
 
   // ── Kop-ondertitel: concreet en persoonlijk ──
   let sub;
@@ -994,7 +1055,7 @@ function renderVandaagHub(){
   // ── Body: lijst of vriendelijke lege staat ──
   let body;
   if(n>0){
-    body=`<div class="vh2-list">${shown.map(_row).join('')}</div>`;
+    body=`<div class="vh2-list">${shown.map((o,i)=>i===0?_row(o).replace('class="vh2-row"','class="vh2-row vh2-eerst"').replace('<span class="vh2-tx">','<span class="vh2-tx"><em class="vh2-eyebrow">Je volgende stap</em>'):_row(o)).join('')}</div>`;
   } else {
     body=`<div class="vh2-empty"><button class="vh2-empty-btn" onclick="(typeof startStreakQuiz==='function')?startStreakQuiz():show('sc-home')">Start een snelle quiz${_arrow}</button></div>`;
   }
@@ -1006,15 +1067,39 @@ function renderVandaagHub(){
       <span>${footTxt}</span>${_arrow}</button>`;
 
   const streakChip=streak>0?`<span class="vh2-streak">🔥 ${streak}</span>`:'';
+  // Vooruitgang: wat beheers je nu beter dan een week geleden?
+  let vgTxt='';
+  if(vg.geoefend){
+    const delen=[];if(vg.heeftVorige&&vg.beter)delen.push(`<b>${vg.beter}</b> ${vg.beter===1?'leerdoel':'leerdoelen'} beter dan ${vg.dagen>=6?'vorige week':vg.dagen+' dagen geleden'}`);
+    if(vg.heeftVorige&&vg.nieuw)delen.push(`<b>${vg.nieuw}</b> nieuw geoefend`);
+    delen.push(vg.beheerst?`<b>${vg.beheerst}</b> van ${vg.geoefend} geoefende ${vg.geoefend===1?'leerdoel':'leerdoelen'} beheerst`:`<b>${vg.geoefend}</b> ${vg.geoefend===1?'leerdoel':'leerdoelen'} geoefend`);
+    vgTxt=`<div class="vh2-vg"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span>${delen.join(' · ')}</span></div>`;
+  }
+  // Een afspraak voor morgen: wat staat er klaar, en een herinnering in je eigen agenda.
+  const morgenTxt=(vg.geoefend||n)?`<div class="vh2-morgen"><span>${morgen?`Morgen ${morgen===1?'staat':'staan'} er <b>${morgen}</b> ${morgen===1?'onderdeel':'onderdelen'} klaar om te herhalen.`:'Kom morgen terug om vast te houden wat je vandaag leerde.'}</span>
+    <button class="vh2-agenda" onclick="agendaKies()">${agenda?`Herinnering om ${_esc(agenda)}`:'Zet een herinnering in je agenda'}</button></div>`:'';
 
   box.innerHTML=`<div class="vandaag-hub vh2">
     <div class="vh2-head">
       <div class="vh2-head-tx"><div class="vh2-greet">${groet}${naam?', '+_esc(naam):''}</div><div class="vh2-subtitle">${sub}</div></div>
       ${streakChip}
     </div>
+    ${vgTxt}
     ${body}
+    ${morgenTxt}
     ${foot}
   </div>`;
+}
+function _vhHero(top,vg){
+  const btn=document.querySelector('#sc-home .hm-cta-primary');const cd=document.getElementById('countdown');
+  if(cd)cd.classList.toggle('cd-kort',!!(vg&&vg.geoefend));
+  if(!btn)return;
+  if(!btn.dataset.orig){btn.dataset.orig=btn.innerHTML;btn.dataset.origClick=btn.getAttribute('onclick')||'';}
+  if(top&&vg&&vg.geoefend){
+    const t=document.createElement('div');t.innerHTML=top.title;const titel=t.textContent;
+    btn.innerHTML=`<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg><span class="hm-cta-stap"><small>Je volgende stap</small>${_esc(titel)}</span>`;
+    btn.setAttribute('onclick',top.onclick);btn.setAttribute('aria-label','Je volgende stap: '+titel);btn.classList.add('hm-cta-persoonlijk');
+  }else{btn.innerHTML=btn.dataset.orig;btn.setAttribute('onclick',btn.dataset.origClick);btn.classList.remove('hm-cta-persoonlijk');}
 }
 function renderFocusLeerdoel(){
   const box=document.getElementById('hm-focus-ld');

@@ -42,7 +42,7 @@ Load order matters: `data.js`/`state.js` define globals the later modules use. `
 | `quiz.js` | Quiz mode picker + quiz logic, keyboard shortcuts, particles/bonuses, achievements, **sound (`GELUID`)**, exit interstitial |
 | `tools.js` | Rapport, Studieplan v2, toegankelijkheid, leerpad |
 | `sim.js` | Simulatietoets, examen-modus, Race mode |
-| `lb.js` | Leaderboard, countdown (`getCountdownTarget`), progress tracking, knowledge decay, favorites |
+| `lb.js` | Leaderboard, countdown (`getCountdownTarget`), progress tracking, knowledge decay, favorites. **Vandaag-blok op home** (`renderVandaagHub`): eerste item = "Je volgende stap" (ook als grote knop bovenaan via `_vhHero`; wie al oefent krijgt een compacte aftelklok `.cd-kort`), weekvoortgang uit dagelijkse momentopnamen van de beheersing per leerdoel (`vgMeting`/`vgVoortgang`, `slagio_vg_<niveau>`), "morgen klaar om te herhalen" (`herhaalMorgenCount`) en een dagelijkse herinnering als agenda-bestand (`agendaKies`/`agendaDownload`, .ics, event `herinnering_agenda`). |
 | `features.js` | XP/levels, toasts, daily challenge, streaks & badges, milestone/PB/comeback cards, "de vlag uit", **economie** (munten, streak-freeze, winkeltje `sc-shop`, thema's) |
 | `league.js` | Weekwedstrijd/divisies (`sc-league`): weekXP via `addXP`, promotie/degradatie, realistische bot-cohort per week |
 | `schedule.js` | `EXAM_SCHEDULE[]`, `renderSchedule()`, grade calculators, flashcards + SM-2 |
@@ -141,4 +141,4 @@ To add questions to a subject, edit the **source** files `data-havo.js` (`VAKKEN
 
 **Then always run `node scripts/split-data.js`** to regenerate the shipped `data-*.meta.js` + `q/*.js` from the source, and bump the SW cache. `scripts/smoke.mjs` fails if the meta counts drift out of sync with the source, so CI catches a forgotten split.
 
-To add a new event type to the admin dashboard: add it to the `FEAT` array inside `render()` in `admin.html`.
+To add a new event type to the admin dashboard: add it to the `FEAT` array inside `render()` in `admin.html`. Het weekoverzicht (`scripts/social/stats.mjs`) telt functies via `FUNCTIES`/`functieVan`; Arcade en Clash meten `arcade_open`, `clash_start` en `minigame` (spel in `meta.game`).
