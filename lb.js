@@ -1040,6 +1040,10 @@ function renderVandaagHub(){
     items.push({emoji:false, rc:t.color, ic:`<b>${pct}%</b>`, title:_esc(t.naam), sub:`${_esc(t.vakNaam)} · ${pct}% beheerst`, onclick:`focusStartLeerdoel('${t.vakId}','${_esc(t.ldId)}')`}); });
   if(herhaal>0) items.push({emoji:true, rc:'#22c55e', ic:'🔄', title:`Fris ${herhaal} ${herhaal===1?'onderdeel':'onderdelen'} op`, sub:'Deze zakken weg uit je geheugen', onclick:'herhaalOefen()'});
 
+  // Dagelijkse uitdaging: geen pop-up meer bij het openen, maar een regel hier.
+  try{const dc=(typeof getDailyChallenge==='function')?getDailyChallenge():null;
+    if(dc&&!dc.done) items.push({emoji:true, rc:'#f59e0b', ic:'⚡', title:'Uitdaging van de dag', sub:`${_esc(dc.domeinNaam)} · ${_esc(dc.vakNaam)} · dubbele XP`, onclick:'startDailyChallenge()'});}catch(e){}
+
   const shown=items.slice(0,4);
   const n=shown.length;
   const vg=vgVoortgang(),morgen=herhaalMorgenCount();let agenda='';try{agenda=localStorage.getItem('slagio_agenda')||'';}catch(e){}

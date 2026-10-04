@@ -376,6 +376,8 @@ function _kiesReveal(gekozen,correct,btns){
   // Hot streak glow
   setHotStreak(ST.combo);
   // Comeback detectie
+  // Eén zwevende badge per antwoord: comeback, dan combo, dan snelheid.
+  ST._badge=0;
   checkComeback(ok);
   // Speed bonus (alleen bij correct)
   if(ok)checkSpeedBonus(Math.max(0,ST.tijd));
@@ -389,8 +391,8 @@ function _kiesReveal(gekozen,correct,btns){
     const earned=Math.round(10*mult*(1+streakBonus)*dcBonus*surgeBonus);
     ST.xpThisRound=(ST.xpThisRound||0)+earned;
     // De combo-badge overslaan op de mijlpalen waar de Vonk-cameo het overneemt (5 / 8+).
-    if(ST.combo!==5&&ST.combo<8)showCombo(ST.combo);
-    setTimeout(()=>{showXPToast(earned);floatXP(earned);},200);
+    if(ST.combo>=3&&ST.combo!==5&&ST.combo<8&&!ST._badge){ST._badge=1;showCombo(ST.combo);}
+    setTimeout(()=>{floatXP(earned);},200);
     // Verlaag surge teller na correcte vraag
     if(_surgeActive){_surgeLeft--;if(_surgeLeft<=0){_surgeActive=false;_removeSurgeBadge();}else{_updateSurgeBadge();}}
   }
@@ -633,6 +635,8 @@ function checkSpeedBonus(timeLeft){
   if(timeLeft<15)return;
   const bonus=Math.max(1,Math.round((timeLeft-14)*1.25));
   ST.xpThisRound=(ST.xpThisRound||0)+bonus;
+  if(ST._badge||(ST.combo||0)>=3)return;
+  ST._badge=1;
   const el=document.createElement('div');
   el.className='speed-badge';
   el.textContent=`⚡ Snel! +${bonus} XP`;
@@ -650,7 +654,6 @@ function maybeGiveLucky(){
   fl.className='lucky-flash';
   document.body.appendChild(fl);
   setTimeout(()=>fl.remove(),800);
-  showToast('🍀 Lucky vraag! Dubbele XP!','#f59e0b',2800);
   haptic([20,10,20,10,40]);
 }
 
@@ -690,6 +693,7 @@ let _wrongStreak=0;
 function checkComeback(ok){
   if(!ok){_wrongStreak++;return;}
   if(_wrongStreak>=2){
+    ST._badge=1;
     const el=document.createElement('div');
     el.className='comeback-toast';
     el.textContent='🔄 Comeback!';
@@ -1030,8 +1034,13 @@ function _achPump(){
   const _now=Date.now();
   const _pqBusy=(typeof PQ==='object'&&PQ)&&(PQ.busy||(PQ.q&&PQ.q.length));
   if(_now<_achHoldUntil||_pqBusy){setTimeout(_achPump,Math.max(400,_achHoldUntil-_now+30));return;}
+  // Tijdens de quiz geen prestatie-meldingen: die bewaren we voor het einde.
+  if(document.getElementById('sc-quiz')?.classList.contains('on')){setTimeout(_achPump,1500);return;}
   _achBusy=true;
-  const{emoji,txt}=_achQ.shift();
+  // Meerdere tegelijk? Eén melding, de rest staat bij je badges.
+  const _meer=_achQ.length-1;
+  let{emoji,txt}=_achQ.shift();
+  if(_meer>0){_achQ.length=0;txt+=` <span class="ach-meer">+${_meer} meer</span>`;}
   const el=document.createElement('div');
   el.className='achievement-toast';
   el.style.top='130px';
@@ -1415,7 +1424,7 @@ function toonRes(){
   // "Lucky vraag"-toast) en houd nieuwe prestatie-toasts kort vast zodat de
   // score-compositie eerst gelezen wordt vóór de reveal.
   try{document.querySelectorAll('.app-toast,.speed-badge,.xp-toast,#vonk-react,.vonk-react').forEach(e=>e.remove());}catch(e){}
-  _achHoldUntil=Date.now()+2500;
+  _achHoldUntil=Date.now()+3400; // tot de beloningsreeks loopt; die wacht er dan op
   setHotStreak(0);
   _wrongStreak=0;_luckyActive=false;
   _surgeActive=false;_surgeLeft=0;_removeSurgeBadge();
@@ -1710,25 +1719,32 @@ function _vonkFinishIntro(mood,tier,onReveal,onDone){
   setTimeout(()=>{ try{ov.remove();}catch(e){} try{onDone&&onDone();}catch(e){} },1280);
 }
 
-// De finish-viermomenten netjes achter elkaar via de pop-up-wachtrij.
-// Volgorde (Duolingo-stijl): perfect -> level up -> evolutie -> divisie-stijging
-// -> kistje -> account -> feedback. Elk wacht tot de vorige gesloten is.
+// De finish-viermomenten via de pop-up-wachtrij. Hooguit twee grote momenten per
+// quiz (te veel pop-ups achter elkaar voelde als wegklikken). Volgorde van belang:
+// maatje kiezen -> evolutie -> eerste accountvraag -> level up -> kistje -> later
+// accountvragen -> divisie-stijging -> perfect -> dagmissie -> feedback. Wat afvalt
+// gebeurt stil: een kist geeft zijn munten zonder scherm, een overgeslagen
+// accountvraag komt een volgende keer.
+const RC_MAX=2;
 function _runResultChain(rc){
   rc=rc||{};
+  let regEerst=false;try{regEerst=!(parseInt(localStorage.getItem('slagio_reg_shows')||'0',10)>0);}catch(e){}
+  const L=[];
+  if(rc.maatje)L.push(['maatje',fin=>pqButton(fin,()=>maatjeKiezen())]);
+  if(rc.evo)L.push(['evo',fin=>pqButton(fin,()=>showEvoReveal(rc.evo.newStage,rc.evo.animalId))]);
+  if(rc.reg!=null&&regEerst)L.push(['reg',fin=>pqButton(fin,()=>_showRegPrompt(rc.reg))]);
+  if(rc.level)L.push(['level',fin=>pqButton(fin,()=>{try{showLevelUp(rc.level.lvl,rc.level.name,rc.level.xp);}catch(e){try{slagioVlagUit('levelup');}catch(_){}pqNotifyClose();}})]);
+  if(rc.chest)L.push(['chest',fin=>showChest(fin,rc.chest)]);
+  if(rc.reg!=null&&!regEerst)L.push(['reg',fin=>pqButton(fin,()=>_showRegPrompt(rc.reg))]);
+  if(rc.rankInfo&&rc.rankInfo.climbed>0)L.push(['rank',fin=>showLeagueRankUp(rc.rankInfo,fin)]);
+  if(rc.perfect)L.push(['perfect',fin=>pqAuto(fin,3200,()=>{try{slagioVlagUit('perfect');}catch(e){}})]);
+  if(rc.dagmissie&&!rc.chest)L.push(['dagmissie',fin=>pqAuto(fin,3100,()=>{try{if(typeof vonkCelebrate==='function')vonkCelebrate(rc.dagmissie);}catch(e){}})]);
+  if(rc.feedback)L.push(['feedback',fin=>pqAuto(fin,600,()=>{try{showFeedbackPopup('snel');}catch(e){}})]);
+  const toon=L.slice(0,RC_MAX), weg=L.slice(RC_MAX).map(x=>x[0]);
+  // Kist valt af: munten alsnog toekennen, zonder scherm.
+  if(weg.includes('chest')){try{const r=_chestRoll();const m=r.coins||25;if(typeof addCoins==='function')addCoins(m);setTimeout(()=>{try{coinFlyToBar(m);}catch(e){}},1900);}catch(e){}}
   // Even wachten zodat het resultaat + de munt-vlucht eerst gezien worden.
-  setTimeout(()=>{
-    try{
-      if(rc.perfect&&!rc.level)pqAdd(fin=>pqAuto(fin,3200,()=>{try{slagioVlagUit('perfect');}catch(e){}}));
-      if(rc.level)pqAdd(fin=>pqButton(fin,()=>{try{showLevelUp(rc.level.lvl,rc.level.name,rc.level.xp);}catch(e){try{slagioVlagUit('levelup');}catch(_){}pqNotifyClose();}}));
-      if(rc.evo)pqAdd(fin=>pqButton(fin,()=>showEvoReveal(rc.evo.newStage,rc.evo.animalId)));
-      if(rc.rankInfo&&rc.rankInfo.climbed>0)pqAdd(fin=>showLeagueRankUp(rc.rankInfo,fin));
-      if(rc.chest)pqAdd(fin=>showChest(fin,rc.chest));
-      if(rc.dagmissie)pqAdd(fin=>pqAuto(fin,3100,()=>{try{if(typeof vonkCelebrate==='function')vonkCelebrate(rc.dagmissie);}catch(e){}}));
-      if(rc.maatje)pqAdd(fin=>pqButton(fin,()=>maatjeKiezen()));
-      if(rc.reg!=null)pqAdd(fin=>pqButton(fin,()=>_showRegPrompt(rc.reg)));
-      if(rc.feedback)pqAdd(fin=>pqAuto(fin,600,()=>{try{showFeedbackPopup('snel');}catch(e){}}));
-    }catch(e){}
-  },1750);
+  setTimeout(()=>{ try{ toon.forEach(x=>pqAdd(x[1])); }catch(e){} },1750);
 }
 
 // Duolingo-stijl: getal telt op naar de eindwaarde (ease-out, snapt op .5 exact).
@@ -1762,8 +1778,8 @@ function _regEligible(){
     const now=Date.now();
     const shows=parseInt(localStorage.getItem('slagio_reg_shows')||'0',10)||0;
     const last=parseInt(localStorage.getItem('slagio_reg_last')||'0',10)||0;
-    const gap = shows>=6 ? 24*3600e3 : shows>=3 ? 30*60e3 : 10*60e3;
-    return (now-last) >= gap;
+    if(shows>=5) return false;                 // daarna alleen nog de kaart op de home
+    return shows===0 || (now-last) >= 3*24*3600e3;
   }catch(e){ return false; }
 }
 function _regMark(){ try{ localStorage.setItem('slagio_reg_shows', String((parseInt(localStorage.getItem('slagio_reg_shows')||'0',10)||0)+1)); localStorage.setItem('slagio_reg_last', String(Date.now())); }catch(e){} }

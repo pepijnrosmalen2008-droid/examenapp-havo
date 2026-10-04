@@ -818,6 +818,16 @@ function coinFlyToBar(amount,targetEl){
   }
 }
 
+// ═══════ RUST OP DE HOME ═══════
+// Bij het openen van de app hooguit één ding dat ongevraagd over het scherm komt
+// (weekafsluiting, streak-waarschuwing, welkom van Vonk of installeerbalk). Wie
+// het eerst komt, mag; de rest wacht tot een volgend bezoek.
+window._homeMoment=null;
+function homeMoment(naam){
+  if(window._homeMoment&&window._homeMoment!==naam)return false;
+  window._homeMoment=naam;return true;
+}
+
 // ═══════ POP-UP WACHTRIJ (één pop-up tegelijk, Duolingo-stijl reeks) ═══════
 // Grote, blokkerende viermomenten (level up, evolutie, divisie, kistje, prestatie,
 // account) mogen elkaar niet overlappen. Ze worden hier in de wachtrij gezet en

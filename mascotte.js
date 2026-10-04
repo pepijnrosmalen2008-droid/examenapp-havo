@@ -466,6 +466,7 @@ function vonkStreakNudge() {
     if (days.includes(today)) return false;                     // al geoefend → streak veilig
     if (!localStorage.getItem('slagio_vonk_intro_done')) return false; // niet tijdens de intro
     try { if (localStorage.getItem('slagio_vonk_nudge') === today) return false; } catch (e) {}
+    if (typeof homeMoment === 'function' && !homeMoment('streak')) return false;
     try { localStorage.setItem('slagio_vonk_nudge', today); } catch (e) {}
     window._vonkNudged = true;
     vonkSay(`Je <b>${cur}-dagen streak</b> loopt gevaar! 🔥 Eén snelle quiz vandaag en hij blijft staan.`, {

@@ -275,8 +275,7 @@ function maatjeKiezen(){
       <div class="regp-badge">Beloning</div>
       <h3 class="regp-h" id="maatje-h">Je eerste quiz zit erop. Kies je maatje!</h3>
       <p class="regp-sub">Je maatje groeit mee met je XP en staat naast je bij elke oefening.</p>
-      <div class="onb-diergrid maatje-grid">${A.map(a=>`<button class="onb-dier${a.id===nu?' sel':''}" onclick="maatjeKies('${a.id}')"><span class="onb-dier-av">${(typeof getAnimalDisplay==='function')?getAnimalDisplay(a.id,0,44):''}</span><span class="onb-dier-nm">${a.n}</span></button>`).join('')}</div>
-      <button class="regp-later" onclick="maatjeSluit()">Ik houd de ${(A.find(a=>a.id===nu)||{n:'vos'}).n.toLowerCase()}</button>
+      <div id="maatje-inhoud">${_maatjeGrid(nu)}</div>
     </div>`;
     el.addEventListener('click',e=>{ if(e.target===el) maatjeSluit(); });
     el.addEventListener('keydown',e=>{ if(e.key==='Escape') maatjeSluit(); });
@@ -285,6 +284,93 @@ function maatjeKiezen(){
     try{ if(typeof trackEvent==='function') trackEvent('maatje_shown'); }catch(e){}
   }catch(e){ try{pqNotifyClose();}catch(_){} }
 }
+// Fase waarin we de dieren laten zien: een ei zegt nog weinig, dus een jong dier.
+const MAATJE_FASE=2;
+function _maatjeAv(id,px){ return (typeof getAnimalDisplay==='function')?getAnimalDisplay(id,MAATJE_FASE,px):''; }
+function _maatjeGrid(nu){
+  const A=(typeof ANIMAL_EVOLUTIONS!=='undefined')?ANIMAL_EVOLUTIONS:[];
+  const naam=(A.find(a=>a.id===nu)||{n:'vos'}).n.toLowerCase();
+  return `<button class="maatje-radknop" onclick="maatjeRad()"><span class="maatje-radknop-ic" aria-hidden="true">${_maatjeRadIcoon()}</span><span><b>Weet je het niet?</b><small>Draai aan het rad en laat het lot kiezen</small></span></button>
+    <div class="onb-diergrid maatje-grid">${A.map(a=>`<button class="onb-dier${a.id===nu?' sel':''}" onclick="maatjeKies('${a.id}')"><span class="onb-dier-av">${_maatjeAv(a.id,44)}</span><span class="onb-dier-nm">${a.n}</span></button>`).join('')}</div>
+    <button class="regp-later" onclick="maatjeSluit()">Ik houd de ${naam}</button>`;
+}
+function _maatjeRadIcoon(){
+  return '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/><circle cx="12" cy="12" r="2.2" fill="currentColor"/></svg>';
+}
+
+// ── Het rad: alle dieren in taartpunten, de wijzer staat bovenaan ──
+const MR_KLEUR=['#ffd84d','#7cd4ff','#ff9f7a','#a8e67a','#d3a8ff','#ffb8d9'];
+let _mrHoek=0,_mrBezig=false,_mrDier=null;
+function maatjeRad(){
+  const A=(typeof ANIMAL_EVOLUTIONS!=='undefined')?ANIMAL_EVOLUTIONS:[];
+  const box=document.getElementById('maatje-inhoud'); if(!box||!A.length)return;
+  const n=A.length, seg=360/n;
+  const stops=A.map((a,i)=>`${MR_KLEUR[i%MR_KLEUR.length]} ${(i*seg).toFixed(2)}deg ${((i+1)*seg).toFixed(2)}deg`).join(',');
+  _mrHoek=0;_mrDier=null;
+  box.innerHTML=`<div class="mr-wrap">
+      <div class="mr-wijzer" aria-hidden="true"></div>
+      <div class="mr-rad" id="mr-rad" style="background:conic-gradient(${stops})">
+        ${A.map((a,i)=>`<span class="mr-dier" style="--h:${(i*seg+seg/2).toFixed(2)}deg">${_maatjeAv(a.id,36)}</span>`).join('')}
+      </div>
+      <div class="mr-as" aria-hidden="true"></div>
+    </div>
+    <div class="mr-uitslag" id="mr-uitslag" aria-live="polite"></div>
+    <div class="mr-knoppen" id="mr-knoppen">
+      <button class="regp-cta" onclick="maatjeDraai()">Draai!</button>
+      <button class="regp-later" onclick="maatjeTerug()">Toch zelf kiezen</button>
+    </div>`;
+  _onbSound('tap');
+  try{ if(typeof trackEvent==='function') trackEvent('maatje_rad'); }catch(e){}
+}
+function maatjeTerug(){
+  if(_mrBezig)return;
+  let nu=MAATJE_STD; try{ nu=JSON.parse(localStorage.getItem('examenapp_profiel')||'{}').animalId||MAATJE_STD; }catch(e){}
+  const box=document.getElementById('maatje-inhoud'); if(box) box.innerHTML=_maatjeGrid(nu);
+}
+function maatjeDraai(){
+  if(_mrBezig)return;
+  const A=ANIMAL_EVOLUTIONS, n=A.length, seg=360/n;
+  const rad=document.getElementById('mr-rad'); if(!rad)return;
+  // Niet twee keer achter elkaar hetzelfde dier.
+  let doel; do{ doel=Math.floor(Math.random()*n); }while(n>1&&A[doel].id===_mrDier);
+  const midden=doel*seg+seg/2+(Math.random()-.5)*seg*.6;      // net niet altijd precies in het midden
+  const rest=((360-midden)-(_mrHoek%360)+720)%360;
+  _mrHoek+=360*5+rest;
+  _mrBezig=true;
+  const kn=document.getElementById('mr-knoppen'); if(kn) kn.classList.add('uit');
+  const us=document.getElementById('mr-uitslag'); if(us){ us.classList.remove('aan'); us.innerHTML=''; }
+  let stil=false; try{ stil=window.matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+  const klaar=()=>{ _mrBezig=false; _maatjeUitslag(A[doel]); };
+  if(stil){ rad.style.transition='none'; rad.style.transform=`rotate(${_mrHoek}deg)`; klaar(); return; }
+  const duur=4200;
+  rad.style.transition=`transform ${duur}ms cubic-bezier(.12,.72,.12,1)`;
+  rad.style.transform=`rotate(${_mrHoek}deg)`;
+  // Tikjes bij elke taartpunt die langs de wijzer gaat (net als een echt rad).
+  let vorig=null;
+  const tik=()=>{
+    if(!_mrBezig)return;
+    const m=getComputedStyle(rad).transform;
+    if(m&&m!=='none'){
+      const v=m.split('(')[1].split(')')[0].split(',');
+      const h=(Math.atan2(+v[1],+v[0])*180/Math.PI+360)%360;
+      const vak=Math.floor(((360-h)%360)/seg);
+      if(vorig!==null&&vak!==vorig){ _onbSound('tap'); _onbHaptic(4); const w=document.querySelector('.mr-wijzer'); if(w){ w.classList.remove('tik'); void w.offsetWidth; w.classList.add('tik'); } }
+      vorig=vak;
+    }
+    requestAnimationFrame(tik);
+  };
+  requestAnimationFrame(tik);
+  setTimeout(klaar,duur+60);
+}
+function _maatjeUitslag(a){
+  _mrDier=a.id;
+  _onbHaptic([18,40,26,40,60]); _onbSound('levelup'); _onbConfetti('gold');
+  const us=document.getElementById('mr-uitslag');
+  if(us){ us.innerHTML=`<span class="mr-uit-av">${_maatjeAv(a.id,56)}</span><span>Het wordt de <b>${a.n.toLowerCase()}</b>!</span>`; requestAnimationFrame(()=>us.classList.add('aan')); }
+  const kn=document.getElementById('mr-knoppen');
+  if(kn){ kn.innerHTML=`<button class="regp-cta" onclick="maatjeKies('${a.id}')">Deze wordt het</button><button class="regp-later" onclick="maatjeDraai()">Nog een keer draaien</button>`; kn.classList.remove('uit'); }
+}
+
 function maatjeKies(id){
   try{
     const PK='examenapp_profiel';

@@ -352,7 +352,7 @@ function chooseLevel(level,_noHistory){
   if(window._onbRouting){/* geen popups tijdens post-onboarding routing */}
   else if(_isNew){try{if(typeof onbStil==='function')onbStil();}catch(e){}} // nieuw: meteen de vakken, maatje en account pas na de eerste quiz
   else if(!localStorage.getItem('slagio_vonk_intro_done')){setTimeout(()=>{try{if(typeof vonkIntro==='function')vonkIntro();}catch(e){}},500);}
-  else{let _nudged=false;try{if(typeof vonkStreakNudge==='function')_nudged=vonkStreakNudge();}catch(e){}if(!_nudged)showDailyChallengePopup();}
+  else{try{if(typeof vonkStreakNudge==='function')vonkStreakNudge();}catch(e){}} // de dagelijkse uitdaging staat op de home, geen pop-up meer
 }
 function _nivLabel(l){return l==='vwo'?'VWO':l==='vmbo'?'VMBO':'HAVO';}
 function updateLevelChip(){
@@ -1047,11 +1047,22 @@ function swUpdate(){
   function isInQuiz(){
     return QUIZ_SCREENS.some(id=>{const el=document.getElementById(id);return el&&el.classList.contains('on');});
   }
+  // Pas na 3 quizzen, alleen op de home en alleen als er dit bezoek nog niets
+  // anders over het scherm kwam. Lukt het nu niet, dan bij een volgend home-bezoek.
+  let _iosWacht=false;
+  function magBanner(){
+    if(_bannerShown||isSnoozed()||isInQuiz())return false;
+    if(!document.getElementById('sc-home')?.classList.contains('on'))return false;
+    try{if(((getStreak()||{}).totalQuizzes||0)<3)return false;}catch(e){return false;}
+    if(window._homeMoment&&window._homeMoment!=='pwa')return false;
+    return typeof homeMoment!=='function'||homeMoment('pwa');
+  }
   function showBanner(){
-    if(_bannerShown||isSnoozed()||isInQuiz())return;
+    if(!magBanner())return;
     _bannerShown=true;
     document.getElementById('pwa-banner').classList.add('show');
   }
+  window._pwaProbeer=function(){ if(_deferredPrompt)showBanner(); else if(_iosWacht)iosBanner(); };
   function hideBanner(){document.getElementById('pwa-banner').classList.remove('show');}
 
   // Count sessions
@@ -1067,7 +1078,7 @@ function swUpdate(){
   window.addEventListener('beforeinstallprompt',e=>{
     e.preventDefault();
     _deferredPrompt=e;
-    if(sessions>=2&&!isSnoozed()){
+    if(!isSnoozed()){
       setTimeout(showBanner,2000);
     }
   });
@@ -1086,18 +1097,17 @@ function swUpdate(){
     const db=document.getElementById('pwa-dismiss-btn');
     if(db)db.addEventListener('click',()=>{hideBanner();snooze();});
     // iOS: show manual instructions
-    if(isIOS&&sessions>=2&&!isSnoozed()){
-      setTimeout(()=>{
-        if(_bannerShown||isSnoozed())return;
-        _bannerShown=true;
-        const b=document.getElementById('pwa-banner');
-        if(!b)return;
-        b.querySelector('.pwa-banner-title').textContent='Voeg toe aan beginscherm';
-        b.querySelector('.pwa-banner-sub').textContent='Tik op Delen ↑ → "Zet op beginscherm" voor snelle toegang';
-        b.querySelector('#pwa-install-btn').style.display='none';
-        b.classList.add('show');
-      },2000);
-    }
+    if(isIOS&&!isSnoozed()){ _iosWacht=true; setTimeout(iosBanner,2000); }
+  }
+  function iosBanner(){
+    if(!magBanner())return;
+    _bannerShown=true;
+    const b=document.getElementById('pwa-banner');
+    if(!b)return;
+    b.querySelector('.pwa-banner-title').textContent='Voeg toe aan beginscherm';
+    b.querySelector('.pwa-banner-sub').textContent='Tik op Delen ↑ → "Zet op beginscherm" voor snelle toegang';
+    b.querySelector('#pwa-install-btn').style.display='none';
+    b.classList.add('show');
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',_wirePwa);
   else _wirePwa();

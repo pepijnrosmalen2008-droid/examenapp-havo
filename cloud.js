@@ -475,6 +475,13 @@ function showFeedbackPopup(feature){
   // Eén keer per browser-sessie per feature tonen
   const sk='_slagio_fb_'+feature;
   if(sessionStorage.getItem(sk))return;
+  // Hooguit eens per 14 dagen (alle functies samen) en niet in de eerste quizzen.
+  try{
+    const last=parseInt(localStorage.getItem('slagio_fb_last')||'0',10)||0;
+    if(Date.now()-last<14*864e5)return;
+    if(typeof getStreak==='function'&&((getStreak()||{}).totalQuizzes||0)<3)return;
+    localStorage.setItem('slagio_fb_last',String(Date.now()));
+  }catch(e){}
   sessionStorage.setItem(sk,'1');
   _fbRemove();
   const label=_FB_LABELS[feature]||feature;

@@ -442,6 +442,10 @@ function _lgMaybeCeremony(){
   try{if(document.documentElement.classList.contains('level-welcome'))return;}catch(e){}
   const L=getLeague();
   if(!L||!L.result||L.result.seen)return;              // recap voor ELKE weekafsluiting
+  const _r=L.result;
+  // Niet meegedaan en niets te halen: stil afsluiten, geen scherm met "#30 van 30".
+  if(!(_r.weekXP>0)&&!_r.promoted&&!_r.relegated&&!(_r.reward>0)&&!(_r.promoReward>0)&&!(_r.chest&&!_r.chest.claimed)){_lgCeremonyDone=true;try{_lgSeen();}catch(e){}return;}
+  if(typeof homeMoment==='function'&&!homeMoment('week'))return;
   _lgCeremonyDone=true;
   setTimeout(()=>{
     // Extra check: als de gebruiker binnen die 600ms tóch naar het niveau-kiezen-
