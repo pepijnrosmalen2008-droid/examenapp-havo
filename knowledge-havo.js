@@ -1829,6 +1829,224 @@ Object.assign(LEERDOELEN, {
    }
   ]
  },
+ "nl_B": {
+  "syllabus": "CE-syllabus Nederlands (3F) HAVO - Domein B: Mondelinge taalvaardigheid (schoolexamen)",
+  "leerdoelen": [
+   {
+    "id": "nl.B.1",
+    "titel": "Informatie verzamelen en verwerken",
+    "eindterm": "B - informatie verzamelen en verwerken",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan voor een voordracht, discussie of debat relevante informatie bij betrouwbare bronnen verzamelen en tot kernpunten verwerken.",
+    "concepten": [
+     "Bron",
+     "Betrouwbare bron",
+     "Kernwoorden"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "neemt informatie van een onbekende of niet-controleerbare afzender over",
+     "leest een tekst voor in plaats van kernpunten te verwerken"
+    ],
+    "voorkennis": [],
+    "vervolg": [
+     "nl.B.2"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein B (eindterm 4; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-05",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-05",
+     "updated": "2026-10-05",
+     "contentHash": "98ac214e648a"
+    }
+   },
+   {
+    "id": "nl.B.2",
+    "titel": "Doel, publiek en gespreksvorm bepalen",
+    "eindterm": "B - doel, publiek en gespreksvorm",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan het spreekdoel, het publiek en de gespreksvorm (voordracht, discussie of debat) vaststellen en daar inhoud en taal op afstemmen.",
+    "concepten": [
+     "Voordracht",
+     "Discussie",
+     "Debat",
+     "Gespreksvorm",
+     "Spreekdoel",
+     "Publiek",
+     "Informatieve presentatie",
+     "Overtuigende presentatie"
+    ],
+    "vaardigheid": "analyseren",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "verwart een discussie met een debat",
+     "past taal en voorbeelden niet aan op het publiek"
+    ],
+    "voorkennis": [
+     "nl.B.1"
+    ],
+    "vervolg": [
+     "nl.B.3",
+     "nl.B.4"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein B (eindterm 4; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-05",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-05",
+     "updated": "2026-10-05",
+     "contentHash": "353b5b5783ca"
+    }
+   },
+   {
+    "id": "nl.B.3",
+    "titel": "Een voordracht opbouwen en presenteren",
+    "eindterm": "B - adequaat presenteren",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een voordracht opbouwen met inleiding, kern en slot en presenteren met passend register, non-verbale communicatie en stemgebruik.",
+    "concepten": [
+     "Presentatiestructuur",
+     "Inleiding",
+     "Kern",
+     "Slot",
+     "Register",
+     "Formeel register",
+     "Informeel register",
+     "Non-verbale communicatie",
+     "Oogcontact",
+     "Spreektempo",
+     "Articulatie",
+     "Intonatie"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "antwoord-formuleren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "leest de tekst voor in plaats van te spreken",
+     "kiest een register dat niet bij de situatie past"
+    ],
+    "voorkennis": [
+     "nl.B.2"
+    ],
+    "vervolg": [
+     "nl.B.5"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein B (eindterm 4; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-05",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-05",
+     "updated": "2026-10-05",
+     "contentHash": "fda0be76f339"
+    }
+   },
+   {
+    "id": "nl.B.4",
+    "titel": "Deelnemen aan een discussie of debat",
+    "eindterm": "B - discussie en debat",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan in een discussie of debat een standpunt verdedigen met argumenten en een argument van de ander weerleggen.",
+    "concepten": [
+     "Debatargument",
+     "Weerlegging",
+     "Slotpleidooi",
+     "Gespreksleider"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "meerstaps-redeneren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "valt de persoon aan in plaats van het argument",
+     "weerlegt een zwakkere versie van wat de ander zei"
+    ],
+    "voorkennis": [
+     "nl.B.2"
+    ],
+    "vervolg": [
+     "nl.B.5"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein B (eindterm 4; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-05",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-05",
+     "updated": "2026-10-05",
+     "contentHash": "a602b1e3d11e"
+    }
+   },
+   {
+    "id": "nl.B.5",
+    "titel": "Adequaat reageren op luisteraars en deelnemers",
+    "eindterm": "B - adequaat reageren",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan actief luisteren, doorvragen, vragen eerlijk beantwoorden en bruikbare feedback geven en ontvangen.",
+    "concepten": [
+     "Actief luisteren",
+     "Doorvragen",
+     "Feedback"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verzint een antwoord op een vraag die hij niet kan beantwoorden",
+     "geeft vage feedback zonder verbeterpunt"
+    ],
+    "voorkennis": [
+     "nl.B.3",
+     "nl.B.4"
+    ],
+    "vervolg": [],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein B (eindterm 4; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-05",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-05",
+     "updated": "2026-10-05",
+     "contentHash": "5c3cc54a996c"
+    }
+   }
+  ]
+ },
  "sk_A": {
   "syllabus": "CE Scheikunde HAVO - Domein A: Vaardigheden (chemisch rekenen en onderzoek)",
   "leerdoelen": [

@@ -44,9 +44,9 @@ var VAKKEN = [
      "Non-verbale communicatie",
      "Feedback geven en ontvangen"
     ],
-    "nSv": 79,
+    "nSv": 154,
     "nOe": 3,
-    "nBeg": 14,
+    "nBeg": 30,
     "hasSam": true
    },
    {
