@@ -3,6 +3,7 @@
 //  - het nieuwste examen met klok (EXAMEN_SIM, examens-2026.js)
 //  - een interactief examen met nakijken (EXAMENS, examens.js)
 //  - echte examenvragen om te oefenen (CE_OE, ce_data.js → openCEExamens)
+//  - het Slagio-proefexamen, heel of per vraag (SLAGIO_EXAMENS, zie onderaan)
 //  - het archief per jaar en tijdvak: opgaven, bijlage en correctievoorschrift
 //    in de pdf-weergave van de app (openPdfViewer, lb.js)
 // Bron van de pdf's: alleexamens.nl (zelfde adressen als het archief op de vakpagina).
@@ -49,6 +50,11 @@ function _ebHtml(vakId) {
   if (sim) blokken.push(`<button class="eb-actie" onclick="_ebStart('sim')"><span class="eb-ic">⏱</span><span><b>Examen ${sim.jaar} met klok</b><small>Het echte centraal examen van tijdvak ${sim.tijdvak}, met opgaven, ${sim.bijlage ? 'bijlage, ' : ''}antwoorden en een klok van ${sim.duur || 180} minuten.</small></span></button>`);
   const ex = (typeof EXAMENS !== 'undefined' && (EXAMENS[vakId] || []).filter(e => !e.niveau || e.niveau === niv)) || [];
   if (ex.length) blokken.push(`<button class="eb-actie" onclick="_ebStart('ex')"><span class="eb-ic">✍️</span><span><b>Examen ${ex[0].jaar} vraag voor vraag</b><small>${(ex[0].vragen || []).length} vragen van het echte examen in de app, met het modelantwoord na elke vraag.</small></span></button>`);
+  const pe = ebProefExamen(vakId), nPe = pe ? ebProefVragen(vakId).length : 0;
+  if (pe) {
+    blokken.push(`<button class="eb-actie" onclick="_ebStart('pe')"><span class="eb-ic">📝</span><span><b>Slagio-proefexamen maken</b><small>Een heel examen in examenstijl: ${(pe.vragen || []).length} vragen, ${pe.max_punten || ''} punten, met figuren. Kies zelf hoe lang.</small></span></button>`);
+    blokken.push(`<button class="eb-actie" onclick="_ebStart('pevr')"><span class="eb-ic">🧩</span><span><b>${nPe} examenvragen los oefenen</b><small>De vragen uit het proefexamen één voor één, met de context en figuur van de opgave en het modelantwoord met puntenverdeling.</small></span></button>`);
+  }
   let nCe = null; try { if (typeof ceExamenCount === 'function') nCe = ceExamenCount(vakId); } catch (e) {}
   if (nCe) blokken.push(`<button class="eb-actie" onclick="_ebStart('ce')"><span class="eb-ic">📋</span><span><b>${nCe} echte examenvragen oefenen</b><small>Losse vragen uit oude examens, per jaar, met het antwoord uit het correctievoorschrift.</small></span></button>`);
   const bijl = EB_BIJLAGE[vakId], uitw = EB_UITWERK[vakId];
@@ -76,5 +82,106 @@ function _ebStart(soort) {
   try { trackEvent('examenbieb_start', { soort, vak: _ebVak }); } catch (e) {}
   if (soort === 'sim' && typeof openExamSim === 'function') openExamSim();
   else if (soort === 'ex' && typeof startExamen === 'function') startExamen();
-  else if (soort === 'ce' && typeof openCEExamens === 'function') openCEExamens();
+  else if (soort === 'ce' && typeof openCEExamens === 'function') openCEExamens('sc-examens');
+  else if (soort === 'pe' && typeof startProefexamen === 'function') startProefexamen();
+  else if (soort === 'pevr') ebProefOpen(_ebVak);
+}
+
+// ═══════ LOSSE PROEFEXAMENVRAGEN ═══════
+// De Slagio-proefexamens (proefexamen-*.js → SLAGIO_EXAMENS) los ontsloten: elke
+// vraag wordt een oud-examenvraag met de context en figuur van zijn opgave en het
+// modelantwoord plus puntenverdeling. Te oefenen vanuit de examenbibliotheek
+// (per opgave), bij "Oud-examen stijl" van een domein en via Vraag het Slagio.
+// Het domein-label in een proefexamen is vrije tekst; EB_PE_DOM koppelt het aan
+// het domein van het vak. Wat niet zeker past, staat alleen in de bibliotheek.
+const EB_PE_DOM = {
+  havo: {
+    ak: { Klimaat: 'C', Endogeen: 'C', Bevolking: 'B', Verstedelijking: 'B', Water: 'E' },
+    be: { Prijsvorming: 'D', Marketing: 'D', Kostencalculatie: 'E', Financiering: 'E', Investeren: 'E', Verslaggeving: 'F' },
+    bi: { A: 'A', O: 'O', M: 'M', P: 'P' },
+    ec: { Markt: 'C', Kosten: 'C', Speltheorie: 'C', Conjunctuur: 'E', Geld: 'E' },
+    en: { Leesvaardigheid: 'B' },
+    gs: { Oorzaken: 'A', Bronnen: 'A', Chronologie: 'B', Crisis: 'B', KoudeOorlog: 'B', Dekolonisatie: 'B' },
+    mw: { Vorming: 'B', Verandering: 'B', Verhouding: 'C' },
+    na: { Beweging: 'C', Kracht: 'C', Energie: 'C', Elektriciteit: 'D', Geluid: 'B', Straling: 'E' },
+    nl: { Leesvaardigheid: 'A', Argumentatie: 'E' },
+    sk: { Stoffen: 'B', Reacties: 'C', Rekenen: 'C', Energie: 'C', Zuren: 'C', Koolstof: 'D' },
+    wa: { Exponentieel: 'C', Verandering: 'D', Statistiek: 'E', Kans: 'E' },
+    wb: { Functies: 'B', 'Differentiëren': 'D' }
+  },
+  vwo: {
+    ak: { 'Systeem Aarde': 'C', Klimaat: 'C', Wereld: 'B', Leefomgeving: 'E' },
+    bi: { Moleculair: 'C', Cel: 'C', Regeling: 'B', Genetica: 'E', Evolutie: 'F' },
+    du: '*A', en: '*A', fr: '*A',
+    nl: { Argumentatie: 'D', Drogredenen: 'D', '*': 'A' },
+    ec: { Markt: 'D', Marktvormen: 'D', 'Ruil over tijd': 'E' },
+    gr: { Vertalen: 'A', Grammatica: 'A', Stijl: 'A', Tekstbegrip: 'A', Cultuur: 'B' },
+    la: { Vertalen: 'A', Grammatica: 'A', Stijl: 'A', Tekstbegrip: 'A', Cultuur: 'B' },
+    gs: { 'Historisch redeneren': 'A', '*': 'B' },
+    in: { Algoritmiek: 'A', Complexiteit: 'A', Zoekalgoritmen: 'A', Logica: 'A', Getalsystemen: 'B', Databases: 'B', SQL: 'B' },
+    mw: { Vorming: 'B', Verhouding: 'C', Binding: 'D', Verandering: 'E' },
+    na: { Trilling: 'B', Beweging: 'C', Kracht: 'C', Energie: 'C', Kernfysica: 'E', Quantum: 'F' },
+    sk: { Koolstof: 'B', Evenwicht: 'C', Reactiesnelheid: 'C', Zuren: 'C', Redox: 'C', Rekenen: 'C' },
+    wa: { 'Exponentiele groei': 'C', Differentiaalrekening: 'D', 'Normale verdeling': 'E', Toetsen: 'E' },
+    wb: { Differentiaalrekening: 'C', Integraalrekening: 'C', Goniometrie: 'D', Meetkunde: 'E' }
+  }
+};
+const _ebPeCache = {};
+
+function ebProefExamen(vakId, niv) {
+  niv = niv || _ebNiv();
+  return (typeof SLAGIO_EXAMENS !== 'undefined' && SLAGIO_EXAMENS[niv] && SLAGIO_EXAMENS[niv][vakId]) || null;
+}
+function _ebPeDomein(niv, vakId, label) {
+  const m = (EB_PE_DOM[niv] || {})[vakId];
+  if (!m) return null;
+  if (typeof m === 'string') return m.slice(1);
+  return m[label] || m['*'] || null;
+}
+// Alle vragen van het proefexamen als losse oud-examenvragen (oe-vorm).
+function ebProefVragen(vakId, niv) {
+  niv = niv || _ebNiv();
+  const key = niv + ':' + vakId;
+  if (_ebPeCache[key]) return _ebPeCache[key];
+  const ex = ebProefExamen(vakId, niv); if (!ex) return [];
+  const L = 'ABCDEFGH', vak = (getVK() || []).find(v => v.id === vakId) || { domeinen: [] };
+  const domNaam = id => (vak.domeinen.find(d => d.id === id) || {}).naam || '';
+  const uit = (ex.vragen || []).map(q => {
+    const op = (ex.opgaven || []).find(o => o.nr === q.opgave) || {};
+    const afb = [];
+    if (op.afb) afb.push({ s: op.afb, c: op.afb_cap || '' });
+    if (q.afb && q.afb !== op.afb) afb.push({ s: q.afb, c: q.afb_cap || '' });
+    const mc = q.type === 'mc' && Array.isArray(q.opties);
+    const v = mc ? q.vraag + '\n\n' + q.opties.map((o, i) => L[i] + '   ' + o).join('\n') : q.vraag;
+    const u = mc
+      ? `Juist is ${L[q.correct]}: ${q.opties[q.correct]}${q.uitleg ? '\n\n' + q.uitleg : ''}`
+      : (q.antwoord || '') + (q.antwoord_rubric ? '\n\nZo worden de punten verdeeld:\n' + q.antwoord_rubric.replace(/\.\s+(?=\d+\s*punt)/g, '.\n') : '');
+    return {
+      v, u, ctx: op.context || q.context || '', afb, mc, punten: q.punten || 1,
+      bron: 'Slagio-proefexamen', proef: 1, peNr: q.nr, peLabel: q.domein,
+      peDom: _ebPeDomein(niv, vakId, q.domein),
+      peNaam: domNaam(_ebPeDomein(niv, vakId, q.domein)),
+      groep: op.titel ? `Opgave ${q.opgave} · ${op.titel}` : `Opgave ${q.opgave}`,
+      o: [''], c: 0
+    };
+  });
+  _ebPeCache[key] = uit;
+  return uit;
+}
+function ebProefVoorDomein(vakId, domId) {
+  return ebProefVragen(vakId).filter(q => q.peDom === domId);
+}
+// Open alle losse proefexamenvragen van het vak in de oud-examenkiezer;
+// met nr erbij start meteen die ene vraag (vanuit Vraag het Slagio).
+function ebProefOpen(vakId, nr, terug) {
+  const vak = getVK().find(v => v.id === vakId); if (!vak) return;
+  const oe = ebProefVragen(vakId);
+  if (!oe.length) { if (typeof showToast === 'function') showToast('Nog geen proefexamen voor dit vak'); return; }
+  ST.vak = vak;
+  ST.domein = { id: 'PE', _proef: true, naam: 'Slagio-proefexamen', oe, _terug: terug || 'sc-examens' };
+  if (nr) {
+    const i = oe.findIndex(q => q.peNr === nr);
+    if (i >= 0 && typeof startOESingle === 'function') { startOESingle(i); return; }
+  }
+  if (typeof openOEPicker === 'function') openOEPicker();
 }

@@ -70,7 +70,7 @@ function _ceMatchesNiveau(q,niv){
 
 // Bouw oe-items uit CE_OE[vak] en open de bestaande oud-examenpicker
 // via een synthetisch "Examenvragen"-domein (hergebruikt alle machinerie).
-function openCEExamens(){
+function openCEExamens(terug){
   if(!ST.vak){show('sc-detail');return;}
   _ceEnsure(()=>{
     const niv=(APP_LEVEL||'havo');
@@ -84,7 +84,7 @@ function openCEExamens(){
       if(typeof toast==='function')toast('Nog geen echte examenvragen voor dit vak.');
       return;
     }
-    ST.domein={id:'CE',_ce:true,naam:'Echte examenvragen',oe};
+    ST.domein={id:'CE',_ce:true,naam:'Echte examenvragen',oe,_terug:terug||null};
     openOEPicker();
   });
 }

@@ -31,6 +31,12 @@ function startQ(mode){
   // If oud-examen mode and domain has year-tagged questions → show picker first
   // Nog geen vragen voor dit onderdeel (bv. VMBO in opbouw): vriendelijk melden
   // i.p.v. een lege/kapotte quiz te starten.
+  // Losse vragen uit het Slagio-proefexamen die bij dit domein horen (examenbieb.js).
+  if(mode==='oud'&&!ST.domein._ce&&!ST.domein._proef&&!ST.domein._peMix&&typeof ebProefVoorDomein==='function'){
+    const _pe=ebProefVoorDomein(ST.vak.id,ST.domein.id);
+    if(_pe.length){ST.domein=Object.assign({},ST.domein,{oe:(ST.domein.oe||[]).concat(_pe),_peMix:true});openOEPicker();return;}
+  }
+  if(mode==='oud'&&ST.domein._peMix){openOEPicker();return;}
   const _startPool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   if(!Array.isArray(_startPool)||_startPool.length===0){
     try{if(typeof showToast==='function')showToast('Voor dit onderdeel komen binnenkort vragen 🔧');}catch(e){}
@@ -38,7 +44,7 @@ function startQ(mode){
   }
   if(mode==='oud'){
     const hasJaar=(ST.domein.oe||[]).some(q=>q.jaar);
-    if(hasJaar){openOEPicker();return;}
+    if(hasJaar||ST.domein._proef){openOEPicker();return;}
   }
   clearQuizDraft();
   try{if(typeof ensureFbMeta==='function')ensureFbMeta();}catch(e){} // "Waarom fout?" alvast laden
@@ -87,6 +93,19 @@ function startQ(mode){
 function openOEPicker(){
   const oe=ST.domein.oe||[];
   const withJaar=oe.filter(q=>q.jaar);
+  const _tags=q=>(q.ctx&&q.ctx.trim()?'<span class="oep-card-tag">📄 Tekstfragment</span>':'')
+    +(q.afb&&q.afb.length?'<span class="oep-card-tag">Figuur</span>':'')
+    +`<span class="oep-card-tag">${q.mc?'Meerkeuze':'Open vraag'}</span>`
+    +(q.proef&&q.punten?`<span class="oep-card-tag">${q.punten} pt</span>`:'');
+  const _kaart=(q,lbl)=>{
+    const idx=oe.indexOf(q),vt=q.mc?q.v.split('\n')[0]:q.v;
+    const preview=vt.length>110?vt.slice(0,110)+'…':vt;
+    return `<div class="oep-card" data-oeidx="${idx}">
+        <div class="oep-card-domein">${lbl}</div>
+        <div class="oep-card-q">${_esc(preview)}</div>
+        <div class="oep-card-foot"><div class="oep-card-tags">${_tags(q)}</div><span class="oep-card-cta">Start</span></div>
+      </div>`;
+  };
   // Group by jaar+tijdvak (desc)
   const groups={};
   withJaar.forEach(q=>{
@@ -121,8 +140,20 @@ function openOEPicker(){
     });
     html+='</div>';
   });
+  // Slagio-proefexamen: per opgave, zoals op het examen
+  const pGroups=[];
+  oe.filter(q=>!q.jaar&&q.groep).forEach(q=>{
+    let g=pGroups.find(x=>x.naam===q.groep);
+    if(!g){g={naam:q.groep,vragen:[]};pGroups.push(g);}
+    g.vragen.push(q);
+  });
+  pGroups.forEach(g=>{
+    html+=`<div class="oep-group"><div class="oep-group-hdr"><span class="oep-jaar" style="font-size:15px">${_esc(g.naam)}</span><span class="oep-tv oep-pe">Slagio-proefexamen</span></div>`;
+    g.vragen.forEach(q=>{html+=_kaart(q,_esc(ST.domein._proef?(q.peNaam||q.peLabel||'Proefexamen'):'Uit het Slagio-proefexamen'));});
+    html+='</div>';
+  });
   // Uncategorized
-  const noJaar=oe.filter(q=>!q.jaar);
+  const noJaar=oe.filter(q=>!q.jaar&&!q.groep);
   if(noJaar.length){
     html+=`<div class="oep-group"><div class="oep-group-hdr"><span class="oep-jaar" style="font-size:15px">Oefenvragen</span></div>`;
     noJaar.forEach(q=>{
@@ -137,9 +168,10 @@ function openOEPicker(){
     html+='</div>';
   }
   document.getElementById('oep-list').innerHTML=html;
-  document.getElementById('oep-title').textContent=ST.domein._ce?`${ST.vak.naam} · Echte CE-examenvragen`:`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
+  document.getElementById('oep-title').textContent=ST.domein._ce?`${ST.vak.naam} · Echte CE-examenvragen`:ST.domein._proef?`${ST.vak.naam} · Vragen uit het Slagio-proefexamen`:`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
   document.getElementById('oep-count').textContent=oe.length+' '+(oe.length===1?'vraag':'vragen');
-  document.getElementById('oep-back-btn').onclick=()=>show('sc-qmode');
+  const _terug=ST.domein._terug||'sc-qmode';
+  document.getElementById('oep-back-btn').onclick=()=>{if(_terug==='sc-examens'&&typeof openExamenBieb==='function')openExamenBieb(ST.vak&&ST.vak.id);else show(_terug);};
   // Attach clicks
   document.querySelectorAll('#oep-list .oep-card').forEach(card=>{
     card.addEventListener('click',()=>startOESingle(parseInt(card.dataset.oeidx)));
@@ -153,7 +185,7 @@ function startOESingle(qIdx){
   ST.vragen=[ST.domein.oe[qIdx]];
   const q=ST.domein.oe[qIdx];
   const jaarLabel=q.jaar?` · ${q.jaar} T${q.tijdvak||1}`:'';
-  document.getElementById('qmeta').textContent=ST.domein._ce?`${ST.vak.naam}${jaarLabel}`:`${ST.vak.naam} · D${ST.domein.id}${jaarLabel}`;
+  document.getElementById('qmeta').textContent=ST.domein._ce?`${ST.vak.naam}${jaarLabel}`:q.proef?`${ST.vak.naam} · Slagio-proefexamen · ${q.punten} pt`:`${ST.vak.naam} · D${ST.domein.id}${jaarLabel}`;
   document.getElementById('sc-quiz').classList.add('oud-mode');
   show('sc-quiz');
   try{if(typeof _showQuizVonk==='function')_showQuizVonk();if(typeof vonkContext==='function')vonkContext({screen:'quiz',qIndex:0,combo:0,lastQuestion:false,timeLeft:99});}catch(e){}
@@ -217,14 +249,19 @@ function toonV(){
   // figuur bij de vraag (echte CE-figuur, footer-vrij)
   const figEl=document.getElementById('qfig'),figWrap=document.getElementById('qfig-wrap');
   if(figEl){if(hasFig){figEl.src='figuren/'+q.img;if(figWrap)figWrap.style.display='';}else{if(figWrap)figWrap.style.display='none';figEl.removeAttribute('src');}}
+  // figuren van een Slagio-proefexamen (eigen SVG, op wit examenpapier)
+  const afbEl=document.getElementById('qafb'),hasAfb=!!(q.afb&&q.afb.length);
+  if(afbEl){afbEl.style.display=hasAfb?'':'none';afbEl.innerHTML=hasAfb?`<div class="ex-afb-inner">${q.afb.map(f=>`<div class="ex-afb-one"><div class="ex-afb-svg">${f.s}</div>${f.c?`<div class="ex-afb-cap">${f.c}</div>`:''}</div>`).join('')}</div>`:'';}
+  if(hasAfb)document.getElementById('sc-quiz').classList.add('has-ctx');
 
   // vraagstelling
   document.getElementById('qq').textContent=q.v;
+  document.getElementById('qq').classList.toggle('qq-mc',!!q.mc);
 
   // Bronvermelding chip - altijd zichtbaar
   {const bronEl=document.getElementById('qbron');
   if(bronEl){const isCE=q.bron&&/CE\s*\d{4}|CE\s*20\d\d|\d{4}\s*T[12]/i.test(q.bron);
-  const label=isCE?q.bron.replace(/\s*\(.*\)/,'').trim():'Slagio oefenvraag';
+  const label=isCE?q.bron.replace(/\s*\(.*\)/,'').trim():q.proef?'Slagio-proefexamen · examenstijl':'Slagio oefenvraag';
   bronEl.innerHTML=`<span class="q-src ${isCE?'q-src-ce':'q-src-oef'}">${isCE?'📋':'✍️'} ${label}</span>`;}}
 
   if(ST.mode==='snel'){

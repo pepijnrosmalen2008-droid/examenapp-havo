@@ -108,6 +108,22 @@ function buildZoekIndex(){
       });
     });
   }
+  // Slagio-proefexamens: elke vraag los vindbaar, met de context van de opgave
+  if(typeof SLAGIO_EXAMENS!=='undefined'){
+    Object.keys(SLAGIO_EXAMENS).forEach(niv=>{
+      Object.keys(SLAGIO_EXAMENS[niv]||{}).forEach(vid=>{
+        const ex=SLAGIO_EXAMENS[niv][vid];
+        (ex.vragen||[]).forEach(q=>{
+          const op=(ex.opgaven||[]).find(o=>o.nr===q.opgave)||{};
+          const ans=q.type==='mc'&&q.opties?(q.opties[q.correct]+(q.uitleg?'. '+q.uitleg:'')):q.antwoord;
+          out.push({type:'examen',vakId:vid,vak:(vaknaam[vid]&&vaknaam[vid].naam)||ex.titel||vid,
+            niveau:niv,punten:q.punten,proef:1,peNr:q.nr,
+            title:q.vraag,ctx:op.context,answer:ans,
+            norm:_zkNorm((op.titel||'')+' '+(q.vraag||'')+' '+(ans||'')+' '+(op.context||'').slice(0,300))});
+        });
+      });
+    });
+  }
   if(typeof CE_OE!=='undefined'){
     Object.keys(CE_OE).forEach(vid=>{
       (CE_OE[vid]||[]).forEach(q=>{
@@ -169,7 +185,8 @@ function zoekGoto(niveau,vakId,kind,domId){
       if(window.buildGrid)buildGrid();
     }
     if(window.openVak)openVak(vakId);
-    if(kind==='quiz'&&domId){ setTimeout(()=>{try{openQmode(domId);}catch(e){}},70); }
+    if(kind==='proef'&&domId){ setTimeout(()=>{try{ebProefOpen(vakId,+domId,'sc-detail');}catch(e){}},70); }
+    else if(kind==='quiz'&&domId){ setTimeout(()=>{try{openQmode(domId);}catch(e){}},70); }
     else if(kind==='uitleg'&&domId){ setTimeout(()=>{try{openDomein(domId);}catch(e){}},70); }
     else if(domId){ setTimeout(()=>{const el=document.querySelector('#dlist [data-domein-id="'+domId+'"]');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('dc2-flash');setTimeout(()=>el.classList.remove('dc2-flash'),1400);}},260); }
   }catch(err){ if(window.showToast)showToast('Kon niet openen - probeer opnieuw'); }
@@ -191,6 +208,7 @@ function _zkCard(e){
   if(niv)meta.push(niv);
   if(e.dom&&e.type!=='uitleg')meta.push(_zkEsc(e.dom));
   if(e.jaar)meta.push('CE '+e.jaar+(e.tijdvak?' · TV'+e.tijdvak:''));
+  if(e.proef)meta.push('Slagio-proefexamen');
   if(e.punten)meta.push(e.punten+' pnt');
   const metaHtml=meta.map((m,i)=>(i?'<span class="zk-sep">·</span>':'')+'<span>'+m+'</span>').join(' ');
 
@@ -211,7 +229,9 @@ function _zkCard(e){
   // Actie-knop
   const g="zoekGoto('"+(e.niveau||'')+"','"+e.vakId+"',";
   let act='';
-  if(e.type==='examen'){
+  if(e.proef){
+    act='<button class="zk-go" onclick="'+g+"'proef','"+e.peNr+"')\">Maak deze vraag"+_ZK_ARROW+'</button>';
+  }else if(e.type==='examen'){
     act='<button class="zk-go" onclick="'+g+"'vak')\">Naar dit vak"+_ZK_ARROW+'</button>';
   }else if(e.domId){
     act='<button class="zk-go" onclick="'+g+"'quiz','"+e.domId+"')\">Oefen dit domein"+_ZK_ARROW+'</button>';

@@ -11544,3 +11544,10 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 .eb-pdf{border:0;border-radius:10px;padding:8px 11px;background:var(--or);color:#fff;font-family:var(--font-head);font-weight:700;font-size:13px;cursor:pointer}
 .eb-pdf.licht{background:color-mix(in srgb,var(--or) 10%,var(--s));color:var(--or);border:1px solid color-mix(in srgb,var(--or) 25%,var(--bo))}
 .eb-pdf.goed{background:#15803d}
+
+/* ═══════ LOSSE PROEFEXAMENVRAGEN ═══════ */
+.oep-tv.oep-pe{background:rgba(16,185,129,.1);color:#059669;border-color:rgba(16,185,129,.25)}
+.qafb{margin:0 0 18px}
+#sc-quiz .qq.qq-mc{white-space:pre-line}
+#sc-quiz .ma-text{white-space:pre-line}
+@media(max-width:699px){#sc-quiz.oud-mode .qafb{margin-bottom:16px}}
