@@ -109,6 +109,7 @@ function v4AvatarReact(state){
     },cfg.dur);
     // Emote-bubble boven de companion
     if(comp)showBubble(comp,cfg);
+    try{if(typeof maatjeReageer==='function')maatjeReageer(comp,state,cfg.dur);}catch(e){}
   }catch(e){}
 }
 window.v4AvatarReact=v4AvatarReact;
@@ -145,6 +146,7 @@ function ensureCompanion(){
     comp.id='v4-companion';
     comp.setAttribute('aria-hidden','true');
     comp.innerHTML=getAnimalDisplay(animalId,stage,demo?64:36);
+    comp.dataset.dier=animalId;comp.dataset.fase=stage;comp.dataset.px=demo?64:36;
     // In de quiz: in de topbalk naast het logo - altijd zichtbaar, nooit overlap
     const bar=quizOn?document.querySelector('#sc-quiz .qtb'):null;
     if(bar){

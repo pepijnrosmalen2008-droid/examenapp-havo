@@ -226,6 +226,8 @@ function vonkEmote(el, mood, ms) {
     if (!svg._emoteRestore) svg._emoteRestore = { d: mouth.getAttribute('d'), fill: mouth.getAttribute('fill') };
     mouth.setAttribute('d', m.mouth);
     mouth.setAttribute('fill', m.filled ? '#3b2a22' : 'none');
+    // tongetje/tanden horen bij de oorspronkelijke mond: tijdens de flits weg
+    var _tt = svg.querySelectorAll('.m-tong,.m-tanden'); for (var i = 0; i < _tt.length; i++) _tt[i].style.display = 'none';
     svg.classList.add('m-emote');
     // Bij een blije flits een klein staart-tikje; bij verrast/wow een sprongetje.
     try { if (typeof vonkPlay === 'function') vonkPlay(svg, (mood === 'wow' || mood === 'feest' || mood === 'giechel') ? 'jump' : 'nod', 640); } catch (e) {}
@@ -234,6 +236,7 @@ function vonkEmote(el, mood, ms) {
       try {
         var r = svg._emoteRestore;
         if (r) { if (r.d != null) mouth.setAttribute('d', r.d); mouth.setAttribute('fill', r.fill || 'none'); }
+        var _tt = svg.querySelectorAll('.m-tong,.m-tanden'); for (var i = 0; i < _tt.length; i++) _tt[i].style.display = '';
         svg._emoteRestore = null; svg.classList.remove('m-emote');
       } catch (e) {}
     }, ms || 1500);

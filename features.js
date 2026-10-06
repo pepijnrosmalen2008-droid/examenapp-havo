@@ -1144,10 +1144,16 @@ function renderStatBar(){
   const pill=(cls,go,ic,val,lbl,style)=>'<button class="sbar-pill '+cls+'" onclick="'+go+'"'+(style||'')+' aria-label="'+lbl+' '+val+'">'
     +'<span class="sbar-top"><span class="sbar-ic">'+ic+'</span><span class="sbar-val">'+val+'</span></span>'
     +'<span class="sbar-lbl">'+lbl+'</span></button>';
+  // Je maatje met een ring voor de voortgang naar het volgende level (helemaal links).
+  let xp=0,pct=0,maatje='';
+  try{xp=getTotalXP();const a=getXPForLevel(lvl),b=getXPForLevel(lvl+1);pct=b>a?Math.max(0,Math.min(1,(xp-a)/(b-a))):1;}catch(e){}
+  try{const id=(JSON.parse(localStorage.getItem('examenapp_profiel')||'{}').animalId)||'vos';maatje=getAnimalDisplay(id,getAnimalStageIdx(xp),46,'',(typeof maatjeStemming==='function')?maatjeStemming():'blij');}catch(e){maatje=star;}
+  const R=24,C=2*Math.PI*R;
+  const ring='<span class="sbar-ring"><svg class="sbar-ring-svg" viewBox="0 0 54 54" aria-hidden="true"><circle class="sbar-ring-bg" cx="27" cy="27" r="'+R+'"/><circle class="sbar-ring-fg" cx="27" cy="27" r="'+R+'" stroke-dasharray="'+C.toFixed(1)+'" stroke-dashoffset="'+(C*(1-pct)).toFixed(1)+'"/></svg>'+maatje+'<span class="sbar-ring-lvl">'+lvl+'</span></span>';
   box.innerHTML='<div class="statbar">'
+    +'<button class="sbar-pill sbar-maatje" onclick="statPillGo(\'level\')" aria-label="Level '+lvl+', '+Math.round(pct*100)+'% naar level '+(lvl+1)+'">'+ring+'<span class="sbar-lbl">'+Math.round(pct*100)+'% naar '+(lvl+1)+'</span></button>'
     +pill('sbar-streak',"statPillGo('streak')",flame,streak,'streak')
     +pill('sbar-coin',"statPillGo('munten')",coin,munten,'munten')
-    +pill('sbar-lvl',"statPillGo('level')",star,lvl,'level')
     +pill('sbar-div',"statPillGo('divisie')",'<span class="sbar-div-ic no-ico">'+divIc+'</span>','',divName,' style="--sb-col:'+divCol+'"')
     +'</div>';
 }

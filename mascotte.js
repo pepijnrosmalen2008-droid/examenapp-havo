@@ -13,25 +13,29 @@ var _VONK_SKIN_PREVIEW = ''; // tijdelijke skin-override voor winkel-previews
 // vonk.js de mond/wenkbrauw/prop per stemming kan lezen). Flat-vector vos
 // (Duolingo-stijl); gesloten glimlach per stemming (cx60, ~cy60).
 var VONK_M = {
-  blij:   { mouth: 'M51 60 Q60 70 69 60', brow: '',                                       arms: 'wave' },
-  trots:  { mouth: 'M48 57 Q60 76 72 57 Q60 63 48 57 Z', brow: 'M39 28 Q46 23 53 27 M67 27 Q74 23 81 28', spark: true, filled: true, arms: 'hips' },
+  blij:   { mouth: 'M49 58 Q60 73 71 58 Q60 63 49 58 Z', brow: '', filled: true, tongue: true, blush: true, arms: 'wave' },
+  trots:  { mouth: 'M48 57 Q60 76 72 57 Q60 63 48 57 Z', brow: 'M39 27 Q46 22 53 26 M67 26 Q74 22 81 27', spark: true, filled: true, tongue: true, laugh: true, blush: true, arms: 'hips' },
   goed:   { mouth: 'M53 60 Q60 68 67 60', brow: '',                                       arms: 'wave' },
-  laag:   { mouth: 'M51 65 Q60 55 69 65', brow: 'M38 34 Q46 28 54 34 M66 34 Q74 28 82 34', arms: 'down' },
-  kijk:   { mouth: 'M56 61 Q60 64 64 61', brow: '',                                       eyeUp: 1, arms: 'down' },
+  laag:   { mouth: 'M51 65 Q60 57 69 65', brow: 'M38 33 Q45 30 53 28 M67 28 Q75 30 82 33', arms: 'down' },
+  kijk:   { mouth: 'M55 61 Q60 64 65 60', brow: 'M39 30 Q46 27 53 30 M67 26 Q74 21 81 25', eyeUp: 1, arms: 'down' },
   knipoog:{ mouth: 'M51 60 Q60 70 69 60', brow: '',                                       spark: true, wink: true, arms: 'wave' },
-  feest:  { mouth: 'M47 56 Q60 78 73 56 Q60 63 47 56 Z', brow: '',                         spark: true, filled: true, cheer: true, arms: 'cheer' },
-  denk:   { mouth: 'M55 61 Q60 63 65 61', brow: '',                                       eyeUp: 1, prop: 'think', arms: 'chin' },
-  oeps:   { mouth: 'M53 63 Q60 71 67 63 Q60 66 53 63 Z', brow: 'M38 33 Q46 29 54 33 M66 33 Q74 29 82 33', filled: true, prop: 'sweat', arms: 'down' },
+  feest:  { mouth: 'M47 56 Q60 78 73 56 Q60 63 47 56 Z', brow: '', spark: true, filled: true, tongue: true, laugh: true, blush: true, cheer: true, arms: 'cheer' },
+  denk:   { mouth: 'M54 62 Q58 60 66 61', brow: 'M39 31 Q46 29 53 31 M67 27 Q74 23 81 26', eyeUp: 1, prop: 'think', arms: 'chin' },
+  oeps:   { mouth: 'M50 61 L70 61 Q70 67 60 67 Q50 67 50 61 Z', brow: 'M38 33 Q46 28 54 32 M66 32 Q74 28 82 33', filled: true, teeth: true, prop: 'sweat', arms: 'down' },
   liefde: { mouth: 'M47 56 Q60 77 73 56 Q60 63 47 56 Z', brow: '',                         filled: true, heartEyes: true, prop: 'hearts', arms: 'down' },
   slaap:  { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       sleep: true, prop: 'zzz', arms: 'down' },
   lees:   { mouth: 'M56 61 Q60 63 64 61', brow: '',                                       eyeDn: 1, prop: 'book', arms: 'read' },
   // ── extra emoties ──
-  wow:    { mouth: 'M55 60 Q60 55 65 60 Q65 68 60 69 Q55 68 55 60 Z', brow: 'M39 26 Q46 21 53 25 M67 25 Q74 21 81 26', filled: true, wide: true, arms: 'down' },
+  wow:    { mouth: 'M55 60 Q60 55 65 60 Q65 68 60 69 Q55 68 55 60 Z', brow: 'M39 24 Q46 18 53 23 M67 23 Q74 18 81 24', filled: true, wide: true, arms: 'cheer' },
   giechel:{ mouth: 'M49 58 Q60 73 71 58 Q60 64 49 58 Z', brow: '',                         filled: true, laugh: true, spark: true, arms: 'wave' },
   cool:   { mouth: 'M52 61 Q60 66 70 59', brow: '',                                        shades: true, spark: true, arms: 'hips' },
   verlegen:{ mouth: 'M55 61 Q60 64 65 61', brow: '',                                       eyeDn: 1, blush: true, arms: 'down' },
   kus:    { mouth: 'M57 60 Q60 56 63 60 Q60 65 57 60 Z', brow: '',                          filled: true, prop: 'hearts', arms: 'wave' },
   duizelig:{ mouth: 'M53 62 Q57 59 60 62 Q63 65 67 62', brow: '',                          dizzy: true, prop: 'sweat', arms: 'down' },
+  // ── nieuwe emoties (Vonk na de sessie, aanmoedigen) ──
+  vastberaden:{ mouth: 'M52 61 Q60 66 69 59', brow: 'M38 30 Q46 33 54 34 M66 34 Q74 33 82 30', spark: true, arms: 'hips' },
+  verdrietig:{ mouth: 'M52 65 Q60 58 68 65', brow: 'M38 33 Q45 27 53 30 M67 30 Q75 27 82 33', prop: 'tear', arms: 'down' },
+  schrik: { mouth: 'M56 61 Q60 57 64 61 Q64 67 60 67 Q56 67 56 61 Z', brow: 'M38 25 Q46 19 54 24 M66 24 Q74 19 82 25', filled: true, wide: true, prop: 'sweat', arms: 'down' },
 };
 
 // Stemmingen: blij (default) · trots · goed · laag (bemoedigend) · kijk (nieuwsgierig) · knipoog
@@ -75,6 +79,7 @@ function mascotSVG(mood, size) {
   // props (denkwolk / zweetdruppel / hartjes / zzz)
   const PROPS = {
     think: `<g class="m-prop m-think"><circle cx="92" cy="34" r="3" fill="#fff" stroke="#d9dee8"/><circle cx="99" cy="27" r="4.5" fill="#fff" stroke="#d9dee8"/><ellipse cx="108" cy="16" rx="11" ry="8" fill="#fff" stroke="#d9dee8"/><text x="108" y="20" font-size="10" font-weight="700" text-anchor="middle" fill="#94a0b8">?</text></g>`,
+    tear: `<path class="m-prop m-tear" d="M40 50 C37 56 37 60 40.5 60 C44 60 44 56 40 50 Z" fill="#7dd3fc"/><ellipse cx="39.6" cy="57" rx="1" ry="1.5" fill="#fff" opacity=".8"/>`,
     sweat: `<path class="m-prop m-sweat" d="M86 38 C82 45 82 50 86 50 C90 50 90 45 86 38 Z" fill="#7dd3fc"/>`,
     hearts: `<g class="m-prop m-hearts" fill="#ff6b9d"><path d="M92 26 C90 22 84 24 86 29 C87 32 91 34 92 36 C93 34 97 32 98 29 C100 24 94 22 92 26 Z"/><path d="M26 32 C24.5 29 20 30.5 21.5 34 C22 36 25 37.5 26 39 C27 37.5 30 36 30.5 34 C32 30.5 27.5 29 26 32 Z" opacity=".8"/></g>`,
     zzz: `<g class="m-prop m-zzz" fill="#94a0b8" font-family="var(--font-head)" font-weight="900"><text x="86" y="26" font-size="10">z</text><text x="94" y="20" font-size="13">Z</text></g>`,
@@ -145,7 +150,7 @@ function mascotSVG(mood, size) {
         <path d="M35 46 C40 41 47 41 51 45 C55 49 65 49 69 45 C73 41 80 41 85 46 C88 59 76 71 60 71 C44 71 32 59 35 46 Z" fill="${CR}"/>
         <g class="m-eyes">${eyesInner}</g>
         ${shadesSVG}
-        ${s.brow ? `<g stroke="${DK}" stroke-width="2.6" stroke-linecap="round" fill="none">${s.brow}</g>` : ''}
+        ${s.brow ? `<path class="m-brow" d="${s.brow}" stroke="${DK}" stroke-width="3" stroke-linecap="round" fill="none"/>` : ''}
         <circle cx="36" cy="56" r="6.5" fill="url(#mCheek)"/><circle cx="84" cy="56" r="6.5" fill="url(#mCheek)"/>
         ${blushSVG}
         <!-- neusje -->
@@ -153,6 +158,8 @@ function mascotSVG(mood, size) {
         <path d="M60 58 v3" stroke="${NO}" stroke-width="1.8" stroke-linecap="round"/>
         <!-- mond (dicht) + praat-frames -->
         <path class="m-mouth" d="${s.mouth}" stroke="${NO}" stroke-width="3" stroke-linecap="round" fill="${s.filled ? NO : 'none'}"/>
+        ${s.tongue ? `<path class="m-tong" d="M54 64.5 Q60 60.5 66 64.5 Q64 69.5 60 69.5 Q56 69.5 54 64.5 Z" fill="#ff8a9e"/>` : ''}
+        ${s.teeth ? `<path class="m-tanden" d="M52 61.6 L68 61.6 L68 63.4 L52 63.4 Z M56 61.6 V63.4 M60 61.6 V63.4 M64 61.6 V63.4" fill="#fff" stroke="#e6dccf" stroke-width=".7"/>` : ''}
         <g class="m-mouth-talk">
           <path class="mt mt-c" d="M55 61 Q60 64 65 61" stroke="${NO}" stroke-width="2.6" stroke-linecap="round" fill="none"/>
           <ellipse class="mt mt-a" cx="60" cy="62" rx="4.6" ry="6" fill="${NO}"/>

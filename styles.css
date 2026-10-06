@@ -11596,15 +11596,6 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
   .ht-ar small{color:rgba(255,255,255,.66)}
   .ht-art{width:36px;height:36px;border-radius:11px;overflow:hidden;background:#3b2a78}
   .ht-art img{width:100%;height:100%;object-fit:cover;transform:scale(1.5);transform-origin:60% 40%}
-  /* tellers als één dunne regel */
-  #hm-statbar .statbar{gap:6px;margin:12px 0 2px}
-  #hm-statbar .sbar-pill{flex-direction:row;justify-content:center;gap:5px;padding:8px 4px;border-radius:12px;min-height:0}
-  #hm-statbar .sbar-top{gap:4px}
-  #hm-statbar .sbar-ic svg,#hm-statbar .sbar-ic img{width:16px!important;height:16px!important}
-  #hm-statbar .sbar-val{font-size:14px!important}
-  #hm-statbar .sbar-lbl{font-size:10.5px!important;letter-spacing:0!important;text-transform:none!important;opacity:.8}
-  #hm-statbar .sbar-div .sbar-lbl{font-size:11px!important}
-  #hm-statbar .sbar-div-ic{font-size:15px!important}
 }
 @media(prefers-reduced-motion:reduce){.hm-zoekbalk-vb{transition:none}}
 /* Vraag het Slagio: "Ga naar" onderdelen van de app */
@@ -11918,3 +11909,49 @@ body:has(#sc-res.on #res-vonk .rv-kaart) #vonk-corner{display:none!important}
 .vchat-input textarea{border:2px solid var(--bo);border-radius:16px;font-size:15px;padding:11px 14px;background:var(--s);box-shadow:0 3px 0 var(--bo2)}
 .vchat-send{width:46px;height:46px;border-radius:15px;box-shadow:0 3px 0 color-mix(in srgb,var(--or) 55%,#000)}
 .vchat-send:active{transform:translateY(2px);box-shadow:0 1px 0 color-mix(in srgb,var(--or) 55%,#000)}
+
+/* Tellerbalk: je maatje met een ring voor je levelvoortgang, helemaal links */
+.sbar-maatje .sbar-top{position:relative}
+.sbar-ring{position:relative;width:46px;height:46px;display:grid;place-items:center;margin:-6px 0 -2px}
+.sbar-ring svg.sbar-ring-svg{position:absolute;inset:0;width:46px;height:46px;transform:rotate(-90deg)}
+.sbar-ring-bg{fill:none;stroke:rgba(124,77,234,.16);stroke-width:4}
+.sbar-ring-fg{fill:none;stroke:#7c4dea;stroke-width:4;stroke-linecap:round;transition:stroke-dashoffset 1s cubic-bezier(.22,1,.36,1)}
+.sbar-ring .anim-svg-wrap,.sbar-ring>span:not(.sbar-ring-lvl){position:relative;z-index:1}
+.sbar-ring .anim-svg-wrap svg{width:100%;height:100%}
+.sbar-ring-lvl{position:absolute;z-index:2;right:-6px;bottom:-3px;min-width:19px;height:19px;padding:0 4px;border-radius:10px;background:#7c4dea;color:#fff;font:800 11px/19px var(--font-head);text-align:center;box-shadow:0 0 0 2px var(--s)}
+html.dark .sbar-ring-lvl{box-shadow:0 0 0 2px #1c2030}
+.sbar-maatje{background:color-mix(in srgb,#8b5cf6 9%,var(--s));border-color:color-mix(in srgb,#8b5cf6 24%,var(--bo))}
+.sbar-maatje .sbar-lbl{font-size:10.5px;letter-spacing:0;text-transform:none;font-weight:700;color:#7c4dea}
+.sbar-ring{width:54px;height:54px;margin:-9px 0 -3px}
+.sbar-ring svg.sbar-ring-svg{width:54px;height:54px}
+.sbar-ring .anim-svg-wrap{width:46px!important;height:46px!important;border-radius:50%;overflow:hidden;clip-path:circle(21px at 50% 50%)}
+.sbar-ring .anim-svg-wrap svg{transform:scale(1.18) translateY(4%)}
+.sbar-ring-lvl{right:-4px;bottom:-1px}
+/* Vonk: oren doen mee met de emotie */
+.m-mood-oeps .m-ear-l,.m-mood-verdrietig .m-ear-l,.m-mood-slaap .m-ear-l,.m-mood-verlegen .m-ear-l{animation:none;transform:rotate(17deg)}
+.m-mood-oeps .m-ear-r,.m-mood-verdrietig .m-ear-r,.m-mood-slaap .m-ear-r,.m-mood-verlegen .m-ear-r{animation:none;transform:rotate(-17deg)}
+.m-mood-wow .m-ear-l,.m-mood-schrik .m-ear-l,.m-mood-feest .m-ear-l{animation:none;transform:rotate(-12deg) translateY(-2px)}
+.m-mood-wow .m-ear-r,.m-mood-schrik .m-ear-r,.m-mood-feest .m-ear-r{animation:none;transform:rotate(12deg) translateY(-2px)}
+.m-mood-vastberaden .m-ear-l{animation:none;transform:rotate(-6deg)}
+.m-mood-vastberaden .m-ear-r{animation:none;transform:rotate(6deg)}
+.m-tear{transform-origin:40px 50px;animation:mTear 2.4s ease-in infinite}
+@keyframes mTear{0%,30%{transform:translateY(0) scale(.6);opacity:0}45%{opacity:1;transform:translateY(0) scale(1)}100%{transform:translateY(14px) scale(1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.m-tear{animation:none}}
+
+/* ═══════ MAATJES IN VONK-STIJL ═══════ */
+.mj-svg{overflow:visible;display:block}
+.mj-wrap.anim-goud{filter:drop-shadow(0 0 6px rgba(247,196,72,.75))}
+.mj-ogen{transform-origin:60px 41px;animation:mjKnip 5.6s infinite}
+@keyframes mjKnip{0%,90%,100%{transform:scaleY(1)}92%{transform:scaleY(.08)}94%{transform:scaleY(1)}}
+.mj-kop{transform-origin:60px 70px;animation:mjKop 6s ease-in-out infinite}
+@keyframes mjKop{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.mj-zwaai{transform-origin:80px 82px;animation:mjZwaai 5s ease-in-out infinite}
+@keyframes mjZwaai{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(-30deg)}86%{transform:rotate(8deg)}93%{transform:rotate(-20deg)}}
+.mj-staart{transform-origin:44px 96px;animation:mjStaart 1.6s ease-in-out infinite}
+@keyframes mjStaart{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+.mj-traan{animation:mTear 2.4s ease-in infinite}
+.mj-mood-oeps .mj-oor-l,.mj-mood-verdrietig .mj-oor-l,.mj-mood-slaap .mj-oor-l,.mj-mood-laag .mj-oor-l{transform:rotate(16deg);transform-origin:33px 26px}
+.mj-mood-oeps .mj-oor-r,.mj-mood-verdrietig .mj-oor-r,.mj-mood-slaap .mj-oor-r,.mj-mood-laag .mj-oor-r{transform:rotate(-16deg);transform-origin:87px 26px}
+/* klein (navbalk, ranglijst): geen beweging, rustiger */
+.anim-svg-wrap[style*="width:22px"] .mj-svg *,.anim-svg-wrap[style*="width:26px"] .mj-svg *,.anim-svg-wrap[style*="width:28px"] .mj-svg *{animation:none!important}
+@media(prefers-reduced-motion:reduce){.mj-ogen,.mj-kop,.mj-zwaai,.mj-staart,.mj-traan{animation:none}}
