@@ -1,0 +1,657 @@
+{
+ "id": "A3",
+ "lo": "nl.A.3",
+ "gs": 2,
+ "naam": "Relaties tussen tekstdelen benoemen",
+ "beschrijving": "Je benoemt het verband tussen zinnen en alinea's: verwijzing, oorzaak en gevolg, doel en middel, standpunt en argument, algemene uitspraak en toelichting.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Verwijsrelaties: waar wijst een woord naar",
+  "Oorzaak en gevolg",
+  "Doel en middel",
+  "Standpunt, argument en subargument",
+  "Algemene uitspraak en toelichting",
+  "Signaalwoorden en relaties zonder signaalwoord"
+ ],
+ "sam": "Teksten hangen aan elkaar door relaties tussen zinnen en alinea's: verwijzing (een woord wijst naar iets anders in de tekst), oorzaak-gevolg, doel-middel, standpunt-argument-subargument en algemene uitspraak-toelichting. Signaalwoorden helpen, maar het verband kan ook zonder signaalwoord blijken uit de betekenis van de zinnen.",
+ "begrippen": [
+  {
+   "t": "Relatie",
+   "d": "Het verband tussen twee tekstdelen, zoals zinnen of alinea's."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat een verband tussen zinnen of tekstdelen aangeeft."
+  },
+  {
+   "t": "Verwijswoord",
+   "d": "Een woord dat terug- of vooruitwijst naar iets anders in de tekst, zoals die, dit of daar."
+  },
+  {
+   "t": "Verwijzing",
+   "d": "De relatie tussen een verwijswoord en datgene waar het naar wijst."
+  },
+  {
+   "t": "Oorzaak-gevolg",
+   "d": "Een relatie waarin het ene het andere teweegbrengt."
+  },
+  {
+   "t": "Doel-middel",
+   "d": "Een relatie waarin iets wordt ingezet om iets anders te bereiken."
+  },
+  {
+   "t": "Standpunt",
+   "d": "De uitspraak die de schrijver in een betoog verdedigt."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden die een standpunt onderbouwt."
+  },
+  {
+   "t": "Subargument",
+   "d": "Een argument dat een ander argument ondersteunt."
+  },
+  {
+   "t": "Algemene uitspraak",
+   "d": "Een brede bewering die nog toelichting nodig heeft."
+  },
+  {
+   "t": "Toelichting",
+   "d": "Uitleg of een voorbeeld dat een algemene uitspraak concreet maakt."
+  },
+  {
+   "t": "Impliciete relatie",
+   "d": "Een verband dat niet door een signaalwoord wordt aangegeven."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat doet een verwijswoord als \"die\" of \"dit\" in een tekst?",
+   "o": [
+    "het geeft een tegenstelling aan tussen twee zinnen",
+    "het wijst naar iets anders in de tekst",
+    "het kondigt een voorbeeld aan",
+    "het noemt de oorzaak van iets"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een verwijswoord wijst naar iets anders in de tekst.",
+   "uo": [
+    "Koos je dit? Een tegenstelling geef je aan met woorden als \"maar\" of \"echter\". Een verwijswoord wijst naar iets in de tekst.",
+    "Klopt: een verwijswoord neemt de plaats in van iets wat al is genoemd of nog komt. Je zoekt dus waar het naar wijst.",
+    "Koos je dit? Voorbeelden kondig je aan met \"bijvoorbeeld\" of \"zoals\". Een verwijswoord vervangt een woord of zin.",
+    "Koos je dit? Oorzaken geef je aan met signaalwoorden als \"doordat\". Een verwijswoord geeft zelf geen oorzaak aan."
+   ],
+   "uh": "Verwijswoord = wijst naar."
+  },
+  {
+   "v": "Hoe controleer je of een verwijswoord naar het juiste deel verwijst?",
+   "o": [
+    "altijd het dichtstbijzijnde woord kiezen",
+    "het eerste woord van de alinea kiezen",
+    "kijken welk woord de langste is",
+    "kijken of het past in getal en betekenis"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Controleer bij verwijzing getal en betekenis door te vervangen.",
+   "uo": [
+    "Koos je dit? Dat is vaak goed, maar niet altijd. Het dichtstbijzijnde woord kan in getal of betekenis niet passen.",
+    "Koos je dit? De eerste zin van een alinea is niet vanzelf het antwoord. Je zoekt wat inhoudelijk past.",
+    "Koos je dit? De lengte van een woord zegt niets over verwijzing. Controleer getal en betekenis.",
+    "Klopt: vervang het verwijswoord door je antwoord. Als getal (enkelvoud of meervoud) en betekenis kloppen, heb je het juiste deel."
+   ],
+   "uh": "Vervang en lees de zin opnieuw."
+  },
+  {
+   "v": "Welke signaalwoorden horen bij oorzaak en gevolg?",
+   "o": [
+    "doordat, daardoor, waardoor",
+    "maar, echter, toch",
+    "bijvoorbeeld, zoals, namelijk",
+    "ten eerste, vervolgens, tot slot"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Doordat, daardoor en waardoor wijzen op oorzaak en gevolg.",
+   "uo": [
+    "Klopt: deze woorden geven aan dat het ene het andere teweegbrengt.",
+    "Koos je \"maar, echter, toch\"? Die woorden laten zien dat iets tegen het voorgaande ingaat, zoals in \"Het regende, maar de wedstrijd ging door\". Een oorzaak noem je met doordat of daardoor.",
+    "Koos je \"bijvoorbeeld, zoals, namelijk\"? Die woorden kondigen een voorbeeld of nadere uitleg aan. Ze zeggen niet dat het ene het andere veroorzaakt; dat doe je met woorden als doordat.",
+    "Koos je \"ten eerste, vervolgens, tot slot\"? Die woorden ordenen een opsomming of volgorde. Dat is iets anders dan een oorzaak: de punten hoeven elkaar niet teweeg te brengen."
+   ],
+   "uh": "Daardoor = gevolg."
+  },
+  {
+   "v": "Bij welke relatie past \"om te\"?",
+   "o": [
+    "tegenstelling",
+    "oorzaak en gevolg zonder bedoeling",
+    "doel en middel",
+    "voorbeeld en regel"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "\"Om te\" wijst op een doel-middelrelatie.",
+   "uo": [
+    "Koos je dit? Een tegenstelling geef je aan met \"maar\" of \"echter\". \"Om te\" kondigt een bedoeling aan.",
+    "Koos je dit? Bij \"om te\" zit een bedoeling achter, dus het is meer dan zomaar een gevolg.",
+    "Klopt: met \"om te\" geeft de schrijver aan wat iemand wil bereiken. Daaruit blijkt het doel en het middel.",
+    "Koos je dit? Een voorbeeld geef je met \"bijvoorbeeld\". \"Om te\" noemt een doel."
+   ],
+   "uh": "Om te = doel."
+  },
+  {
+   "v": "Hoe verschilt doel-middel van oorzaak-gevolg?",
+   "o": [
+    "bij doel-middel komt het gevolg altijd eerst",
+    "er is geen verschil, het zijn twee namen voor precies hetzelfde",
+    "bij doel-middel doet iemand iets om een doel te bereiken",
+    "bij oorzaak-gevolg zit altijd een bedoeling achter"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Doel-middel heeft een bedoeling; oorzaak-gevolg is een verband tussen gebeurtenissen.",
+   "uo": [
+    "Koos je dit? De volgorde in de tekst zegt niet wat doel of oorzaak is. Het gaat om de relatie: bedoeling of gevolg.",
+    "Koos je dit? Een doel is iets wat je wilt bereiken; een gevolg is iets wat gebeurt. Dat is niet hetzelfde.",
+    "Klopt: bij doel-middel zit een bedoeling achter de handeling. Bij oorzaak-gevolg leidt iets tot iets anders.",
+    "Koos je dit? Een oorzaak kan ook zonder bedoeling een gevolg hebben, zoals regen en natte schoenen."
+   ],
+   "uh": "Bedoeling = doel-middel."
+  },
+  {
+   "v": "Welk signaalwoord kondigt vaak een argument voor een standpunt aan?",
+   "o": [
+    "want",
+    "echter",
+    "vervolgens",
+    "ondanks"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "\"Want\" kondigt vaak een argument aan.",
+   "uo": [
+    "Klopt: na \"want\" volgt een reden die het standpunt onderbouwt.",
+    "Koos je dit? \"Echter\" geeft een tegenstelling aan. Een argument ondersteun je niet met een tegenstelling.",
+    "Koos je dit? \"Vervolgens\" geeft een volgorde aan. Het noemt geen reden.",
+    "Koos je \"ondanks\"? Dat woord noemt iets wat tegenwerkt of niet verhindert, zoals in \"Ondanks de regen ging het door\". Een argument ondersteunt juist een standpunt; dat doet \"want\"."
+   ],
+   "uh": "Want = reden."
+  },
+  {
+   "v": "Wat is een subargument?",
+   "o": [
+    "een argument dat het standpunt van de schrijver tegenspreekt",
+    "een standpunt zonder argument",
+    "een voorbeeld aan het eind van de tekst",
+    "een argument dat een ander argument ondersteunt"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Een subargument ondersteunt een ander argument.",
+   "uo": [
+    "Koos je dit? Dat is een tegenargument of tegenwerping. Een subargument ondersteunt.",
+    "Koos je dit? Een standpunt is wat verdedigd wordt. Een subargument is een steunargument voor een argument.",
+    "Koos je dit? Een voorbeeld kan een subargument zijn, maar de plek in de tekst bepaalt dat niet. De ondersteunende rol doet het.",
+    "Klopt: een subargument onderbouwt een argument, niet direct het standpunt. Zo ontstaat een onderschikkende structuur."
+   ],
+   "uh": "Argument onder een argument."
+  },
+  {
+   "v": "Welke signaalwoorden horen bij een toelichting op een algemene uitspraak?",
+   "o": [
+    "daardoor, waardoor, doordat, zodat",
+    "bijvoorbeeld, zoals, namelijk",
+    "maar, echter, toch",
+    "want, omdat, immers, aangezien"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 4,
+   "u": "Bijvoorbeeld, zoals en namelijk kondigen een toelichting aan.",
+   "uo": [
+    "Koos je \"daardoor, waardoor\"? Dat zijn signaalwoorden voor een gevolg: het ene brengt het andere teweeg. Een toelichting maakt een uitspraak concreet, en dat doen woorden als bijvoorbeeld.",
+    "Klopt: deze woorden kondigen een voorbeeld of nadere uitleg aan.",
+    "Koos je \"maar, echter, toch\"? Die woorden laten zien dat iets tegen het voorgaande ingaat. Een toelichting gaat juist mee met de uitspraak: ze licht haar toe met een voorbeeld.",
+    "Koos je dit? Deze woorden kondigen een argument voor een standpunt aan."
+   ],
+   "uh": "Bijvoorbeeld = toelichting."
+  },
+  {
+   "v": "Waarvoor dient een voorbeeld na een algemene uitspraak?",
+   "o": [
+    "het weerlegt de uitspraak",
+    "het is de conclusie van de tekst",
+    "het introduceert een ander onderwerp",
+    "het maakt de uitspraak concreet"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Een voorbeeld maakt een algemene uitspraak concreet.",
+   "uo": [
+    "Koos je dit? Een voorbeeld na een algemene uitspraak ondersteunt hem meestal juist.",
+    "Koos je dit? Een conclusie sluit de tekst af. Een voorbeeld licht een eerdere uitspraak toe.",
+    "Koos je dit? Een voorbeeld hoort bij het onderwerp dat net is genoemd.",
+    "Klopt: een voorbeeld laat aan een geval zien wat de algemene uitspraak bedoelt."
+   ],
+   "uh": "Voorbeeld = concreet maken."
+  },
+  {
+   "v": "Welk woord geeft een tegenstelling aan?",
+   "o": [
+    "daardoor",
+    "echter",
+    "bijvoorbeeld",
+    "want"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 5,
+   "u": "\"Echter\" geeft een tegenstelling aan.",
+   "uo": [
+    "Koos je \"daardoor\"? Dat woord noemt een gevolg van het voorgaande, zoals \"Het regende. Daardoor bleef ik thuis\". Een tegenstelling geef je aan met echter, maar of toch.",
+    "Klopt: \"echter\" laat zien dat het volgende tegen het voorgaande ingaat.",
+    "Koos je \"bijvoorbeeld\"? Dat kondigt een voorbeeld aan dat bij het voorgaande past, dus geen tegenstelling. Bij een tegenstelling gaat het volgende juist in tegen wat eerder werd gezegd.",
+    "Koos je \"want\"? Dat woord kondigt een reden of argument aan voor wat eerder staat. Zo'n reden ondersteunt het voorgaande, in plaats van er tegenin te gaan zoals bij echter."
+   ],
+   "uh": "Echter = maar."
+  },
+  {
+   "v": "Welk deel van een zin staat na het woord \"omdat\"?",
+   "o": [
+    "het gevolg",
+    "het doel",
+    "de oorzaak",
+    "de tegenstelling"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Na \"omdat\" volgt de oorzaak.",
+   "uo": [
+    "Koos je dit? Het gevolg staat in het andere zinsdeel. \"Omdat\" leidt de oorzaak in.",
+    "Koos je dit? Een doel kondig je aan met \"om te\". \"Omdat\" geeft een reden.",
+    "Klopt: na \"omdat\" volgt de reden of oorzaak van wat in de rest van de zin staat.",
+    "Koos je dit? Een tegenstelling krijgt \"maar\" of \"echter\". \"Omdat\" is een reden."
+   ],
+   "uh": "Omdat = oorzaak."
+  },
+  {
+   "v": "Tussen twee zinnen staat geen signaalwoord. Wat doe je om de relatie te bepalen?",
+   "o": [
+    "de betekenis van de zinnen vergelijken",
+    "zeggen dat er hier geen relatie is tussen de zinnen",
+    "de eerste zin overslaan",
+    "altijd oorzaak-gevolg kiezen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Zonder signaalwoord leid je de relatie af uit de betekenis.",
+   "uo": [
+    "Klopt: een relatie kan impliciet zijn. Dan lees je wat de ene zin met de andere te maken heeft.",
+    "Koos je dit? Zinnen in een tekst hangen vrijwel altijd samen, ook zonder signaalwoord.",
+    "Koos je dit? Je hebt beide zinnen nodig om het verband te zien, want een relatie gaat over twee delen. Wie een zin overslaat, kan niet bepalen wat de ene met de andere te maken heeft.",
+    "Koos je dit? Dat is een gok. Andere relaties zijn even mogelijk, dus kijk naar de betekenis."
+   ],
+   "uh": "Geen signaalwoord: lees de betekenis."
+  },
+  {
+   "v": "Waar verwijst \"Die\" naar?",
+   "o": [
+    "naar de nieuwe regels",
+    "naar de minister",
+    "naar de zorg in het algemeen",
+    "naar de aankondiging"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Het verwijswoord die verwijst hier naar de nieuwe regels.",
+   "uo": [
+    "Klopt: \"Die moeten\" is meervoud en past bij \"de nieuwe regels\". De minister is enkelvoud.",
+    "Koos je dit? Je koos het onderwerp van de eerste zin, maar \"Die moeten\" is meervoud. De minister is enkelvoud.",
+    "Koos je dit? De zorg wordt goedkoper gemaakt, ze is niet het onderwerp van \"moeten\".",
+    "Koos je dit? Een aankondiging kan niets goedkoper maken. De regels doen dat."
+   ],
+   "uh": "Controleer getal en betekenis.",
+   "ctx": "De minister kondigde nieuwe regels aan. Die moeten de zorg goedkoper maken."
+  },
+  {
+   "v": "Waar verwijst \"Dit\" naar?",
+   "o": [
+    "naar scholen in het algemeen en hun leerlingen",
+    "naar huiswerk dat leerlingen thuis maken",
+    "naar het feit dat scholen huiswerk afschaffen",
+    "naar ouders die er gesprekken over voeren"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Een verwijswoord kan naar een hele zin verwijzen.",
+   "uo": [
+    "Koos je dit? \"Dit\" verwijst naar het geheel van wat de zin zegt, niet alleen naar scholen.",
+    "Koos je dit? Het gaat niet om huiswerk zelf, maar om het afschaffen ervan.",
+    "Klopt: \"Dit\" verwijst naar de hele eerste zin: het afschaffen van huiswerk.",
+    "Koos je dit? Ouders worden pas in de tweede zin genoemd. Het verwijswoord wijst terug."
+   ],
+   "uh": "Dit = hele zin.",
+   "ctx": "Veel scholen schaffen huiswerk af. Dit leidt tot felle discussies tussen ouders."
+  },
+  {
+   "v": "Waar verwijst \"Daar\" naar?",
+   "o": [
+    "naar het museum",
+    "naar het verruimen van de openingstijden",
+    "naar de bezoekers",
+    "naar de openingstijden vóór de verruiming"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Daar verwijst hier naar de gebeurtenis uit de eerste zin.",
+   "uo": [
+    "Koos je dit? De bezoekers zijn blij met de verruiming, niet alleen met het museum.",
+    "Klopt: bezoekers zijn blij met de verruiming. Het verwijswoord vat de eerste zin samen.",
+    "Koos je dit? De bezoekers staan in dezelfde zin als \"Daar\", dus het verwijswoord wijst niet naar hen.",
+    "Koos je dit? Dat staat niet in de tekst. Het gaat om wat het museum nu gedaan heeft."
+   ],
+   "uh": "Verwijzing kan een gebeurtenis zijn.",
+   "ctx": "Het museum heeft zijn openingstijden verruimd. Daar zijn veel bezoekers blij mee."
+  },
+  {
+   "v": "Welke relatie zit tussen deze twee zinnen?",
+   "o": [
+    "tegenstelling",
+    "doel-middel",
+    "standpunt-argument",
+    "oorzaak-gevolg"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Daardoor wijst op oorzaak-gevolg.",
+   "uo": [
+    "Koos je dit? Er is geen \"maar\": de tweede zin gaat de eerste niet tegen.",
+    "Koos je dit? Niemand sluit winkels om aantrekkingskracht te verliezen. Het is een gevolg.",
+    "Koos je dit? De tweede zin onderbouwt geen standpunt maar noemt het gevolg.",
+    "Klopt: het sluiten van winkels is de oorzaak, het verliezen van aantrekkingskracht het gevolg. \"Daardoor\" wijst dat aan."
+   ],
+   "uh": "Eerst oorzaak, dan gevolg.",
+   "ctx": "Veel winkels sluiten. Daardoor verliest het centrum zijn aantrekkingskracht."
+  },
+  {
+   "v": "Welke zin noemt de oorzaak?",
+   "o": [
+    "de tweede zin",
+    "de eerste zin",
+    "geen van beide",
+    "allebei"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "De oorzaak kan in de eerste zin staan zonder signaalwoord.",
+   "uo": [
+    "Koos je dit? Het afgelasten is het gevolg van de regen, niet de oorzaak.",
+    "Klopt: de regen is de oorzaak, het afgelasten het gevolg. Ook zonder signaalwoord is dat te zien.",
+    "Koos je dit? De zinnen hangen samen, ook als er geen signaalwoord staat.",
+    "Koos je \"allebei\"? Een oorzaak en een gevolg zijn verschillende dingen: het regenen is de oorzaak en het afgelasten volgt daaruit. Zo'n relatie heeft altijd twee kanten."
+   ],
+   "uh": "Zoek wat wat veroorzaakt.",
+   "ctx": "Het regende de hele dag. De wedstrijd werd afgelast."
+  },
+  {
+   "v": "Welke relatie zit tussen het plaatsen van camera's en het verminderen van overlast?",
+   "o": [
+    "doel-middel",
+    "oorzaak-gevolg",
+    "tegenstelling",
+    "verwijzing"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "\"Om te\" geeft het doel-middelverband.",
+   "uo": [
+    "Klopt: camera's zijn het middel, minder overlast is het doel. \"Om te\" geeft de bedoeling aan.",
+    "Koos je dit? Het plaatsen gebeurt met een bedoeling. Het gaat daarom om middel en doel.",
+    "Koos je \"tegenstelling\"? Dan denk je dat de zinnen elkaar tegenwerken. Maar het plaatsen van camera's werkt samen met het verminderen van overlast: het eerste is bedoeld om het tweede te bereiken.",
+    "Koos je dit? Er wordt niet teruggewezen naar een eerder woord. Het gaat om een bedoeling."
+   ],
+   "uh": "Om te = doel.",
+   "ctx": "Het gemeentebestuur plaatst camera's om overlast te verminderen."
+  },
+  {
+   "v": "Welke bewering over dit fragment klopt?",
+   "o": [
+    "veilig spelen is het middel en het autovrij maken het doel",
+    "beide zijn een standpunt",
+    "beide zijn een gevolg van de gemeente",
+    "autovrij maken is het middel en veilig spelen het doel"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Wie iets doet om iets te bereiken, gebruikt een middel voor een doel.",
+   "uo": [
+    "Koos je dit? Je hebt middel en doel omgedraaid. Het autovrij maken is wat de gemeente doet, het veilig spelen is wat ze wil bereiken.",
+    "Koos je dit? Er wordt niets verdedigd met argumenten. Het gaat om een bedoeling.",
+    "Koos je dit? Alleen het veilig spelen is het beoogde resultaat. Het autovrij maken is de handeling zelf.",
+    "Klopt: de gemeente doet het ene om het andere te bereiken. Het veilig spelen is het doel."
+   ],
+   "uh": "Wat doe je, en waarvoor?",
+   "ctx": "De gemeente wil het centrum autovrij maken, zodat kinderen er veilig kunnen spelen."
+  },
+  {
+   "v": "Wat is het argument in dit fragment?",
+   "o": [
+    "fietsen naar school is beter dan met de bus gaan",
+    "school",
+    "je bent er sneller",
+    "de bus"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Het argument geeft de reden voor het standpunt, na \"want\".",
+   "uo": [
+    "Koos je dit? Dit is het standpunt, wat verdedigd wordt. Het argument is de reden daarvoor.",
+    "Koos je dit? \"School\" is geen reden of bewering, het is alleen een woord.",
+    "Klopt: dit staat na \"want\" en geeft een reden voor het standpunt dat fietsen beter is.",
+    "Koos je dit? De bus wordt vergeleken, hij is geen reden voor het standpunt."
+   ],
+   "uh": "Standpunt eerst, reden na want.",
+   "ctx": "Fietsen naar school is beter dan met de bus gaan, want je bent er sneller."
+  },
+  {
+   "v": "Welke rol heeft de laatste zin?",
+   "o": [
+    "hij is het standpunt dat de schrijver wil verdedigen",
+    "hij is een tegenwerping",
+    "hij ondersteunt het argument over fruit eten",
+    "hij is een voorbeeld van fruit"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Een zin die een argument onderbouwt, is een subargument.",
+   "uo": [
+    "Koos je dit? Het standpunt is dat de school gratis fruit moet uitdelen. De peiling onderbouwt iets anders.",
+    "Koos je dit? Een tegenwerping gaat tegen het standpunt in. De peiling ondersteunt juist.",
+    "Klopt: de peiling is een subargument. Zij onderbouwt het argument en niet direct het standpunt.",
+    "Koos je dit? De zin noemt geen soorten fruit, maar bewijs voor de bewering over fruit eten."
+   ],
+   "uh": "Subargument = steun voor het argument.",
+   "ctx": "De school moet gratis fruit uitdelen, want kinderen eten te weinig fruit. Dat blijkt uit een peiling onder tweehonderd leerlingen."
+  },
+  {
+   "v": "Hoe zit de argumentatie in elkaar?",
+   "o": [
+    "de proef is het standpunt",
+    "de proef en het argument staan los van elkaar naast het standpunt",
+    "er is geen argument, alleen een standpunt",
+    "de proef onderbouwt het argument over slaap"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Een subargument ondersteunt het argument, dat zelf het standpunt ondersteunt.",
+   "uo": [
+    "Koos je dit? Het standpunt is dat iedereen vroeger naar bed moet gaan. De proef levert alleen bewijs.",
+    "Koos je dit? De proef gaat over hetzelfde als het argument, dus zij ondersteunt dat argument.",
+    "Koos je dit? Na \"want\" staat het argument dat slaap belangrijk is voor het leren.",
+    "Klopt: standpunt (vroeger naar bed), argument (slaap is belangrijk), subargument (proef). Zo ontstaat een onderschikkende structuur."
+   ],
+   "uh": "Drie lagen: standpunt, argument, subargument.",
+   "ctx": "Iedereen zou vroeger naar bed moeten gaan, want slaap is belangrijk voor het leren. Uit een proef bleek dat leerlingen na een goede nacht beter scoren."
+  },
+  {
+   "v": "Welke relatie zit tussen de twee zinnen?",
+   "o": [
+    "algemene uitspraak en toelichting",
+    "oorzaak en gevolg tussen twee gebeurtenissen",
+    "doel en middel",
+    "standpunt en argument"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Een voorbeeld bij een algemene uitspraak is een toelichting.",
+   "uo": [
+    "Klopt: de eerste zin is algemeen, de tweede is een voorbeeld dat dit concreet maakt.",
+    "Koos je dit? De tweede zin is geen gevolg van de eerste. Hij laat een voorbeeld zien.",
+    "Koos je \"doel en middel\"? Dan verwacht je dat iemand iets doet om iets anders te bereiken. In het fragment gebeurt dat niet: de tweede zin noemt een voorbeeld van de eerste.",
+    "Koos je \"standpunt en argument\"? Dan verwacht je een stelling die met een reden wordt verdedigd. Hier wordt niets verdedigd: de tweede zin geeft een voorbeeld bij een algemene bewering."
+   ],
+   "uh": "Algemeen eerst, voorbeeld erna.",
+   "ctx": "Veel mensen ruilen de auto in voor een elektrische. Zo kocht de familie Bakker vorige maand een elektrische auto."
+  },
+  {
+   "v": "Welke zin is de algemene uitspraak?",
+   "o": [
+    "de tweede zin",
+    "de eerste zin",
+    "allebei",
+    "geen van beide"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "De algemene uitspraak is de brede bewering; de toelichting maakt haar concreet.",
+   "uo": [
+    "Koos je dit? De tweede zin geeft details uit de binnenstad en is de toelichting.",
+    "Klopt: de eerste zin geeft de brede bewering. De tweede laat zien wat dat in de zomer betekent.",
+    "Koos je dit? De ene is breed, de andere concreet. Zo onderscheid je ze.",
+    "Koos je \"geen van beide\"? De eerste zin is duidelijk een brede bewering over steden in het algemeen. De tweede zin geeft een concrete meting in de zomer, dus de ene is algemeen en de andere concreet."
+   ],
+   "uh": "Breed versus concreet.",
+   "ctx": "Stedelijke gebieden worden warmer dan het platteland. In de zomer meet men in de binnenstad vaak een paar graden meer dan daarbuiten."
+  },
+  {
+   "v": "Hoe verhouden de twee zinnen zich?",
+   "o": [
+    "de tweede zin is het gevolg van wat de eerste zegt",
+    "de tweede zin is een tegenstelling",
+    "de tweede zin is het standpunt",
+    "de tweede zin werkt de algemene uitspraak uit"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Een uitwerking maakt een algemene uitspraak concreet.",
+   "uo": [
+    "Koos je dit? De tweede zin is geen gevolg, maar een concrete invulling van \"voordelen\".",
+    "Koos je dit? Er is geen \"maar\" en de tweede zin gaat niet tegen de eerste in.",
+    "Koos je \"het standpunt\"? Dan denk je dat de zin een mening verdedigt. Hier worden alleen voordelen opgesomd die de eerste zin concreet maken; er wordt niets verdedigd of betoogd.",
+    "Klopt: de tweede zin noemt de voordelen concreet die in de eerste zin algemeen genoemd zijn."
+   ],
+   "uh": "Algemeen -> uitgewerkt.",
+   "ctx": "Sporten heeft voordelen voor het hele lichaam. Het versterkt de spieren, verbetert de conditie en helpt bij het slapen."
+  },
+  {
+   "v": "Welke relatie drukt \"Daarom\" hier uit?",
+   "o": [
+    "argument voor een standpunt",
+    "oorzaak en gevolg tussen twee gebeurtenissen",
+    "tegenstelling",
+    "toelichting op een algemene uitspraak"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Daarom kan ook een standpunt inleiden dat uit argumenten volgt.",
+   "uo": [
+    "Klopt: de eerste zin geeft redenen, de tweede het standpunt dat daaruit volgt.",
+    "Koos je dit? \"Daarom\" geeft niet altijd een gevolg aan. Hier volgt een eis uit een argument, geen gebeurtenis uit een andere.",
+    "Koos je \"tegenstelling\"? Dan zie je de tweede zin als iets wat tegen de eerste ingaat. Maar de eis aan de gemeente volgt juist uit de redenen: fietsen is gezond en snel, dus moeten er meer paden komen.",
+    "Koos je dit? De tweede zin is geen voorbeeld, maar een eis die uit de redenen volgt."
+   ],
+   "uh": "Zelfde woord, andere relatie: kijk naar de betekenis.",
+   "ctx": "Fietsen is gezond en snel. Daarom moet de gemeente meer fietspaden aanleggen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "De minister kondigde nieuwe regels voor kinderopvang aan. Die moeten de kosten voor ouders verlagen. Dit besluit krijgt steun uit de Tweede Kamer.",
+   "v": "Waar verwijzen \"Die\" en \"Dit besluit\" naar? Leg uit hoe je dat bepaalt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"Die\" verwijst naar de nieuwe regels voor kinderopvang (meervoud, en zij verlagen de kosten) (1 punt). \"Dit besluit\" verwijst naar de aankondiging van die regels, dus naar de eerste zin als geheel (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De gemeente verbood auto's in het centrum. Daardoor nam het aantal fietsers toe. Winkeliers waren hier blij mee.",
+   "v": "Noem twee relaties tussen de zinnen van dit fragment en geef bij elke relatie het signaal of de betekenis waaraan je dat ziet.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Oorzaak-gevolg tussen zin 1 en 2: het verbod is de oorzaak, de toename van fietsers het gevolg; signaalwoord \"Daardoor\" (1 punt). Verwijzing in zin 3: \"hier\" verwijst naar de toename van het aantal fietsers (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De school start om negen uur, zodat leerlingen langer kunnen slapen.",
+   "v": "Welke relatie zit in deze zin? Benoem het middel en het doel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Doel-middelrelatie (1 punt). Het middel is later beginnen met de lessen om negen uur; het doel is dat leerlingen langer kunnen slapen (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Alle leerlingen zouden verplicht moeten sporten, want beweging is goed voor de concentratie. Dat bleek uit een onderzoek onder driehonderd scholieren.",
+   "v": "Benoem het standpunt, het argument en het subargument, en de relatie die de laatste zin heeft.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: alle leerlingen zouden verplicht moeten sporten (1 punt). Argument: beweging is goed voor de concentratie (1 punt). Subargument: het onderzoek onder driehonderd scholieren, dat het argument ondersteunt (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Veel mensen werken tegenwoordig deels thuis. Zo werkt Karin op maandag en dinsdag vanuit haar woonkamer.",
+   "v": "Welke relatie bestaat er tussen de twee zinnen? Verklaar je antwoord.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Algemene uitspraak en toelichting (1 punt): de eerste zin is een brede bewering, de tweede geeft een concreet voorbeeld dat die bewering toelicht (1 punt); het woord \"Zo\" kondigt het voorbeeld aan."
+  }
+ ]
+}

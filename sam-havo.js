@@ -1465,5 +1465,58 @@ Object.assign(SAM_RICH,{
 <rect x="10" y="190" width="300" height="20" rx="6" fill="var(--or)"/><text x="160" y="204" font-size="11" font-weight="700" fill="#fff">resultaat: de hoofdgedachte</text></g></svg><div class="sam-figcap">Impliciete hoofdgedachte: bepaal het onderwerp, verzamel de hoofdpunten uit de alinea's en vat ze samen in één volledige zin.</div></div>
 <p>Let op de valkuilen: een goede formulering is niet te <strong>breed</strong> ("bibliotheken zijn leuk") en niet te <strong>smal</strong> (alleen een gevolg of een detail). Je mag <strong>parafraseren</strong>: dezelfde betekenis in eigen woorden, zonder iets toe te voegen of te veranderen.</p>
 <p>De <strong>titel</strong> is een hint, maar niet automatisch de hoofdgedachte. Een <strong>voorbeeld</strong> toont één geval; de hoofdgedachte geldt voor het geheel. Een <strong>detail</strong> is een bijzaak.</p>
+</div>`,
+'havo_nl_A3':`<div class="sam-intro">Een tekst is meer dan losse zinnen: zinnen en alinea's hangen met elkaar samen door <strong>relaties</strong>. Op het examen moet je die kunnen benoemen. In dit leerdoel leer je vijf relaties kennen: <strong>verwijzing</strong>, <strong>oorzaak-gevolg</strong>, <strong>doel-middel</strong>, <strong>standpunt-argument-subargument</strong> en <strong>algemene uitspraak-toelichting</strong>, en hoe <strong>signaalwoorden</strong> je helpen.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Relatie</td><td>Het verband tussen twee tekstdelen.</td></tr>
+<tr><td>Signaalwoord</td><td>Een woord dat het verband aangeeft, zoals daardoor of want.</td></tr>
+<tr><td>Verwijswoord</td><td>Wijst naar iets anders in de tekst, zoals die, dit of daar.</td></tr>
+<tr><td>Oorzaak-gevolg</td><td>Het ene brengt het andere teweeg.</td></tr>
+<tr><td>Doel-middel</td><td>Iets wordt gedaan om iets te bereiken.</td></tr>
+<tr><td>Standpunt, argument, subargument</td><td>Wat wordt verdedigd, de reden ervoor, en de reden voor die reden.</td></tr>
+<tr><td>Algemene uitspraak, toelichting</td><td>Een brede bewering en de uitleg of het voorbeeld dat haar concreet maakt.</td></tr>
+<tr><td>Impliciete relatie</td><td>Een verband zonder signaalwoord; je leidt het af uit de betekenis.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Verwijzing: waar wijst het woord naar?</div>
+<p>Een <strong>verwijswoord</strong> zoals <em>die</em>, <em>dit</em>, <em>daar</em> of <em>hij</em> wijst terug (of vooruit) naar iets anders in de tekst. Een examenvraag vraagt vaak: "Waar verwijst dit woord naar?" Het antwoord kan een woord zijn, maar ook een hele zin.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 150" role="img" aria-label="Verwijzing: het verwijswoord Die in de tweede zin wijst terug naar de nieuwe regels in de eerste zin, want het past in getal en betekenis"><g font-family="inherit"><text x="12" y="24" font-size="12" fill="var(--dk)">1  De minister kondigde</text><rect x="148" y="9" width="104" height="22" rx="5" fill="var(--or)" opacity=".25"/><text x="152" y="24" font-size="12" font-weight="700" fill="var(--dk)">nieuwe regels</text><text x="258" y="24" font-size="12" fill="var(--dk)">aan.</text>
+<text x="12" y="112" font-size="12" fill="var(--dk)">2</text><rect x="26" y="96" width="42" height="22" rx="5" fill="var(--or)"/><text x="47" y="112" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Die</text><text x="76" y="112" font-size="12" fill="var(--dk)">moeten de zorg goedkoper maken.</text>
+<path d="M47 94 C47 60 140 70 195 34" stroke="var(--or)" stroke-width="2.5" fill="none"/><path d="M188 40 L197 32 L199 44 Z" fill="var(--or)"/>
+<text x="160" y="140" font-size="11" fill="var(--dk)" text-anchor="middle">controle: meervoud en betekenis passen</text></g></svg><div class="sam-figcap">Het verwijswoord "Die" wijst terug naar "nieuwe regels". Controle: "Die moeten" is meervoud en past bij regels, niet bij de minister.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> controleer bij een verwijswoord altijd getal en betekenis door het antwoord in de zin te zetten.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Oorzaak-gevolg en doel-middel</div>
+<p>Bij <strong>oorzaak-gevolg</strong> brengt het ene het andere teweeg: "Het regende de hele dag. De wedstrijd werd afgelast." Signaalwoorden: <em>doordat</em>, <em>daardoor</em>, <em>waardoor</em>. Na <em>omdat</em> staat de oorzaak.</p>
+<p>Bij <strong>doel-middel</strong> zit een bedoeling achter de handeling: iemand zet een <strong>middel</strong> in om een <strong>doel</strong> te bereiken, zoals bij <em>om te</em>. Het verschil: bij doel-middel is er een wil, bij oorzaak-gevolg een verband tussen gebeurtenissen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 170" role="img" aria-label="Oorzaak en gevolg tegenover doel en middel, met voorbeelden over regen en de afgelaste wedstrijd en camera's tegen overlast"><g font-family="inherit" text-anchor="middle"><rect x="6" y="6" width="150" height="158" rx="10" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="81" y="26" font-size="12" font-weight="700" fill="var(--dk)">Oorzaak-gevolg</text>
+<rect x="18" y="38" width="126" height="32" rx="6" fill="#fff" stroke="var(--mu)" stroke-width="1"/><text x="81" y="58" font-size="12" fill="var(--dk)">het regent</text><path d="M81 70 V90" stroke="var(--or)" stroke-width="2.5"/><path d="M75 86 L81 96 L87 86 Z" fill="var(--or)"/><text x="118" y="86" font-size="11" fill="var(--dk)">daardoor</text>
+<rect x="18" y="98" width="126" height="32" rx="6" fill="var(--or)"/><text x="81" y="118" font-size="12" fill="#fff" font-weight="700">wedstrijd afgelast</text><text x="81" y="152" font-size="11" fill="var(--mu)">geen bedoeling nodig</text>
+<rect x="164" y="6" width="150" height="158" rx="10" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="239" y="26" font-size="12" font-weight="700" fill="var(--dk)">Doel-middel</text>
+<rect x="176" y="38" width="126" height="32" rx="6" fill="#fff" stroke="var(--mu)" stroke-width="1"/><text x="239" y="58" font-size="12" fill="var(--dk)">camera's plaatsen</text><path d="M239 70 V90" stroke="var(--or)" stroke-width="2.5"/><path d="M233 86 L239 96 L245 86 Z" fill="var(--or)"/><text x="271" y="86" font-size="11" fill="var(--dk)">om te</text>
+<rect x="176" y="98" width="126" height="32" rx="6" fill="var(--or)"/><text x="239" y="118" font-size="12" fill="#fff" font-weight="700">minder overlast</text><text x="239" y="152" font-size="11" fill="var(--mu)">met een bedoeling</text></g></svg><div class="sam-figcap">Links brengt de regen een gevolg teweeg, zonder bedoeling. Rechts is het plaatsen van camera's het middel, minder overlast het doel.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Standpunt, argument en subargument</div>
+<p>In een betoog verdedigt de schrijver een <strong>standpunt</strong>. Een <strong>argument</strong> geeft er een reden voor, vaak na <em>want</em> of <em>omdat</em>. Een <strong>subargument</strong> ondersteunt weer dat argument, bijvoorbeeld met bewijs uit een onderzoek.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Argumentatieschema met een standpunt bovenaan, daaronder een argument en daaronder een subargument, verbonden met de signaalwoorden want en uit blijkt"><g font-family="inherit" text-anchor="middle"><rect x="30" y="6" width="260" height="44" rx="8" fill="var(--or)"/><text x="160" y="25" font-size="12" font-weight="700" fill="#fff">Standpunt</text><text x="160" y="42" font-size="11" fill="#fff">Iedereen moet vroeger naar bed.</text>
+<path d="M160 50 V70" stroke="var(--dk)" stroke-width="2"/><text x="190" y="66" font-size="11" fill="var(--dk)">want</text>
+<rect x="30" y="72" width="260" height="44" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="91" font-size="12" font-weight="700" fill="var(--dk)">Argument</text><text x="160" y="108" font-size="11" fill="var(--dk)">Slaap is belangrijk voor leren.</text>
+<path d="M160 116 V136" stroke="var(--dk)" stroke-width="2"/><text x="214" y="132" font-size="11" fill="var(--dk)">dat blijkt uit</text>
+<rect x="30" y="138" width="260" height="44" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="160" y="157" font-size="12" font-weight="700" fill="var(--dk)">Subargument</text><text x="160" y="174" font-size="11" fill="var(--dk)">Een proef: na een goede nacht beter.</text></g></svg><div class="sam-figcap">Het standpunt wordt ondersteund door een argument; het argument wordt zelf ondersteund door een subargument (de stippellijn).</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> "daarom" kan een gevolg inleiden ("Het regende. Daarom bleef ik thuis") maar ook een standpunt dat uit argumenten volgt ("Fietsen is gezond. Daarom moet de gemeente meer paden aanleggen"). Kijk naar de betekenis, niet alleen naar het signaalwoord.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">4</span>Algemene uitspraak en toelichting, en signaalwoorden</div>
+<p>Bij een <strong>algemene uitspraak</strong> noemt de schrijver iets in het algemeen ("Sporten heeft voordelen voor het hele lichaam"). De <strong>toelichting</strong> werkt dat uit of geeft een voorbeeld: "Het versterkt de spieren en verbetert de conditie." Signaalwoorden: <em>bijvoorbeeld</em>, <em>zoals</em>, <em>namelijk</em>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 216" role="img" aria-label="Overzicht van de relaties tussen tekstdelen met bij elke relatie enkele signaalwoorden: verwijzing, oorzaak-gevolg, doel-middel, standpunt-argument en algemene uitspraak-toelichting"><g font-family="inherit"><rect x="6" y="6" width="308" height="38" rx="6" fill="var(--orl)"/><text x="14" y="30" font-size="12" font-weight="700" fill="var(--dk)">Verwijzing</text><text x="150" y="30" font-size="11" fill="var(--dk)">dit, die, daar, hij</text>
+<rect x="6" y="48" width="308" height="38" rx="6" fill="var(--orl)"/><text x="14" y="72" font-size="12" font-weight="700" fill="var(--dk)">Oorzaak-gevolg</text><text x="150" y="72" font-size="11" fill="var(--dk)">daardoor, doordat, omdat</text>
+<rect x="6" y="90" width="308" height="38" rx="6" fill="var(--orl)"/><text x="14" y="114" font-size="12" font-weight="700" fill="var(--dk)">Doel-middel</text><text x="150" y="114" font-size="11" fill="var(--dk)">om te, met het oog op</text>
+<rect x="6" y="132" width="308" height="38" rx="6" fill="var(--orl)"/><text x="14" y="156" font-size="12" font-weight="700" fill="var(--dk)">Standpunt-argument</text><text x="150" y="156" font-size="11" fill="var(--dk)">want, immers</text>
+<rect x="6" y="174" width="308" height="38" rx="6" fill="var(--orl)"/><text x="14" y="198" font-size="12" font-weight="700" fill="var(--dk)">Toelichting</text><text x="150" y="198" font-size="11" fill="var(--dk)">bijvoorbeeld, zoals, namelijk</text></g></svg><div class="sam-figcap">Overzicht: elke relatie heeft eigen signaalwoorden. Staat er geen signaalwoord, lees dan de betekenis van de zinnen.</div></div>
+<p>Een signaalwoord helpt, maar het is geen garantie. Een <strong>impliciete relatie</strong> heeft geen signaalwoord: "Het regende de hele dag. De wedstrijd werd afgelast." Je ziet toch het verband: oorzaak en gevolg. Een woord als <em>daarom</em> of <em>dus</em> kan een gevolg inleiden, maar ook een standpunt dat uit argumenten volgt.</p>
 </div>`
 });

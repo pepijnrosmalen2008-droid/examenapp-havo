@@ -74,6 +74,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "A3",
+      "lo": "nl.A.3",
+      "gs": 2,
+      "naam": "Relaties tussen tekstdelen benoemen",
+      "beschrijving": "Je benoemt het verband tussen zinnen en alinea's: verwijzing, oorzaak en gevolg, doel en middel, standpunt en argument, algemene uitspraak en toelichting.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Verwijsrelaties: waar wijst een woord naar",
+       "Oorzaak en gevolg",
+       "Doel en middel",
+       "Standpunt, argument en subargument",
+       "Algemene uitspraak en toelichting",
+       "Signaalwoorden en relaties zonder signaalwoord"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
