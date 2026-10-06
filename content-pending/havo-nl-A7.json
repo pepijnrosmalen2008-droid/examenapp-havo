@@ -1,0 +1,636 @@
+{
+ "id": "A7",
+ "lo": "nl.A.7",
+ "gs": 2,
+ "naam": "Een tekst samenvatten",
+ "beschrijving": "Je reduceert een tekst tot de hoofduitspraak met de belangrijkste ondergeschikte uitspraken, in eigen woorden, en je beoordeelt of een gegeven samenvatting volledig en beknopt is.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Hoofduitspraak en ondergeschikte uitspraken",
+  "Reduceren: wat laat je weg",
+  "Herordenen en samenvoegen",
+  "Een samenvatting opstellen",
+  "Een gegeven samenvatting beoordelen",
+  "Valkuilen bij samenvatten"
+ ],
+ "sam": "Samenvatten is reduceren tot de hoofduitspraak (of hoofduitspraken) met de belangrijkste ondergeschikte uitspraken. Je laat voorbeelden, herhalingen en details weg, ordent de informatie opnieuw en formuleert in eigen woorden zonder eigen mening. Bij een gegeven samenvatting controleer je of de hoofduitspraak en de belangrijkste ondergeschikte uitspraken erin staan.",
+ "begrippen": [
+  {
+   "t": "Samenvatting",
+   "d": "Een beknopte weergave van de hoofduitspraak met de belangrijkste ondergeschikte uitspraken."
+  },
+  {
+   "t": "Hoofduitspraak",
+   "d": "De belangrijkste bewering van een tekst of tekstgedeelte."
+  },
+  {
+   "t": "Ondergeschikte uitspraak",
+   "d": "Een bewering die de hoofduitspraak toelicht of onderbouwt."
+  },
+  {
+   "t": "Reduceren",
+   "d": "Een tekst korter maken door bijzaken weg te laten."
+  },
+  {
+   "t": "Herordenen",
+   "d": "Informatie in een andere, logischer volgorde zetten."
+  },
+  {
+   "t": "Generaliseren",
+   "d": "Een opsomming vervangen door een overkoepelend begrip."
+  },
+  {
+   "t": "Parafraseren",
+   "d": "Iets in eigen woorden weergeven met dezelfde betekenis."
+  },
+  {
+   "t": "Beknopt",
+   "d": "Kort en zonder overbodige woorden of informatie."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een concreet geval dat een bewering toelicht en meestal wegvalt in een samenvatting."
+  },
+  {
+   "t": "Herhaling",
+   "d": "Dezelfde informatie nog eens in andere woorden."
+  },
+  {
+   "t": "Detail",
+   "d": "Een bijzaak zoals een datum, naam of bijzonderheid die de kern niet verandert."
+  },
+  {
+   "t": "Eigen woorden",
+   "d": "Formuleringen van jezelf in plaats van letterlijk overgenomen zinnen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat is een hoofduitspraak?",
+   "o": [
+    "een voorbeeld dat de schrijver geeft",
+    "de belangrijkste bewering van de tekst",
+    "de eerste zin van de tekst, altijd",
+    "de zin met de meeste woorden in de alinea"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "De hoofduitspraak is de belangrijkste bewering van de tekst of het tekstgedeelte.",
+   "uo": [
+    "Koos je dit? Een voorbeeld toont één geval en ondersteunt de kern. De hoofduitspraak is de kern zelf.",
+    "Klopt: de hoofduitspraak is de kern. Een samenvatting moet haar altijd bevatten.",
+    "Koos je dit? De eerste zin bevat soms de hoofduitspraak, maar niet altijd. Het gaat om de belangrijkste bewering, waar die ook staat.",
+    "Koos je dit? De lengte van een zin zegt niets over zijn belang. Het gaat om wat de kern van de tekst is."
+   ],
+   "uh": "Hoofduitspraak = kern."
+  },
+  {
+   "v": "Wat is een ondergeschikte uitspraak?",
+   "o": [
+    "een zin die niets met het onderwerp van de tekst te maken heeft",
+    "de hoofduitspraak in andere woorden",
+    "een mening van de lezer",
+    "een bewering die de hoofduitspraak onderbouwt"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Ondergeschikte uitspraken ondersteunen de hoofduitspraak.",
+   "uo": [
+    "Koos je dit? Een ondergeschikte uitspraak hoort wel bij de tekst. Ze is alleen minder belangrijk dan de hoofduitspraak.",
+    "Koos je dit? Dat is een parafrase. Een ondergeschikte uitspraak voegt iets toe dat de hoofduitspraak ondersteunt.",
+    "Koos je dit? De lezer hoort er niet in. Een ondergeschikte uitspraak komt uit de tekst zelf.",
+    "Klopt: ondergeschikte uitspraken steunen de hoofduitspraak. De belangrijkste neem je op in de samenvatting."
+   ],
+   "uh": "Hoofd en onder."
+  },
+  {
+   "v": "Wat laat je in een samenvatting meestal weg?",
+   "o": [
+    "voorbeelden en herhalingen",
+    "de hoofduitspraak",
+    "de belangrijkste ondergeschikte uitspraken",
+    "alle werkwoorden"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Bij samenvatten laat je voorbeelden, herhalingen en details weg.",
+   "uo": [
+    "Klopt: voorbeelden en herhalingen horen niet tot de kern. Ze maken de samenvatting onnodig lang.",
+    "Koos je dit? De hoofduitspraak is juist het belangrijkste. Zonder haar is de samenvatting niet te volgen.",
+    "Koos je dit? Die moet je meenemen. Ze onderbouwen de kern en horen in de samenvatting.",
+    "Koos je dit? Werkwoorden heb je nodig voor volledige zinnen. Je laat bijzaken weg, geen woordsoorten."
+   ],
+   "uh": "Weg met voorbeelden en herhaling."
+  },
+  {
+   "v": "Waarom laat je een voorbeeld meestal weg in een samenvatting?",
+   "o": [
+    "omdat een voorbeeld altijd onwaar is",
+    "omdat een voorbeeld te lang is",
+    "het ondersteunt de kern, is hem niet zelf",
+    "omdat een voorbeeld niet in de tekst zelf voorkomt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Een voorbeeld licht de kern toe en valt weg in een samenvatting.",
+   "uo": [
+    "Koos je dit? Een voorbeeld kan prima kloppen. Het valt weg omdat het niet nodig is voor de kern.",
+    "Koos je dit? Soms is een voorbeeld kort. De reden is niet de lengte maar dat het geen kern is.",
+    "Klopt: een voorbeeld toont één geval van wat de kern zegt. De samenvatting geeft de kern, zonder gevallen.",
+    "Koos je dit? Een voorbeeld staat wel degelijk in de tekst; het valt niet weg omdat het ontbreekt maar omdat het bijzaak is die de kern alleen toelicht."
+   ],
+   "uh": "Voorbeeld = bijzaak."
+  },
+  {
+   "v": "Wat doe je als je informatie herordent bij het samenvatten?",
+   "o": [
+    "je laat de eerste alinea weg",
+    "je schrijft de tekst woord voor woord over",
+    "je zet de informatie in logische volgorde",
+    "je voegt een eigen conclusie toe"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Herordenen is de informatie in een logische volgorde zetten.",
+   "uo": [
+    "Koos je dit? Het gaat niet om weglaten maar om volgorde. Elke alinea kan belangrijke informatie bevatten.",
+    "Koos je dit? Overschrijven is niet herordenen. Je bouwt de informatie in eigen volgorde op.",
+    "Klopt: soms staat de conclusie eerst of staat informatie verspreid. Jij zet het in een logische opbouw.",
+    "Koos je dit? Een samenvatting geeft de inhoud weer. Een eigen conclusie is een toevoeging."
+   ],
+   "uh": "Eerst de kern, dan de steun."
+  },
+  {
+   "v": "Wat is generaliseren bij het samenvatten?",
+   "o": [
+    "een opsomming vervangen door één begrip",
+    "een voorbeeld toevoegen",
+    "een mening toevoegen",
+    "een zin vertalen naar een andere taal of dialect"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Generaliseren vervangt een opsomming door een overkoepelend begrip.",
+   "uo": [
+    "Klopt: in plaats van \"appels, peren en bananen\" schrijf je \"fruit\". Zo maak je de samenvatting korter.",
+    "Koos je dit? Dat doe je juist niet. Generaliseren maakt korter en breder.",
+    "Koos je dit? Een mening hoort er niet in. Generaliseren geeft alleen een overkoepelend woord.",
+    "Koos je dit? Vertalen is iets anders. Generaliseren blijft in dezelfde taal en brengt samen onder een begrip."
+   ],
+   "uh": "Opsomming -> overkoepelend woord."
+  },
+  {
+   "v": "Welke eis geldt voor een samenvatting?",
+   "o": [
+    "zo lang mogelijk, met alle voorbeelden",
+    "met veel citaten uit de tekst",
+    "met een eigen mening over de tekst",
+    "beknopt, eigen woorden, geen mening"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Een samenvatting is beknopt, in eigen woorden en zonder eigen mening.",
+   "uo": [
+    "Koos je dit? Dan is het geen samenvatting. De bedoeling is juist te verkorten.",
+    "Koos je dit? Letterlijke zinnen zijn geen eigen woorden. Een samenvatting herformuleert.",
+    "Koos je dit? Je geeft de tekst weer, niet je eigen oordeel. Een samenvatting blijft bij wat de schrijver zegt.",
+    "Klopt: een samenvatting is kort, formuleert in eigen woorden en geeft alleen weer wat de schrijver zegt."
+   ],
+   "uh": "Kort, eigen woorden, geen mening."
+  },
+  {
+   "v": "Je leest in een tekst een rijtje: \"voetbal, hockey en tennis\". Wat doe je in je samenvatting?",
+   "o": [
+    "je schrijft alle drie de sporten op",
+    "je schrijft \"sporten\"",
+    "je laat de sporten helemaal weg",
+    "je schrijft alleen \"voetbal\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Bij een opsomming gebruik je een overkoepelend begrip.",
+   "uo": [
+    "Koos je dit? Dat is niet beknopt. Een overkoepelend woord vervangt de opsomming.",
+    "Klopt: een overkoepelend begrip als \"sporten\" maakt de samenvatting korter en blijft volledig.",
+    "Koos je dit? Dan verlies je informatie. Generaliseren behoudt de betekenis in één woord.",
+    "Koos je dit? Dan lijkt het alsof alleen voetbal telt. Het overkoepelende woord dekt alle drie."
+   ],
+   "uh": "Rijtje -> één woord."
+  },
+  {
+   "v": "Wat controleer je bij een gegeven samenvatting?",
+   "o": [
+    "of alle voorbeelden erin staan",
+    "of de samenvatting langer is dan de tekst",
+    "of de samenvatting grotendeels dezelfde zinnen gebruikt als de tekst",
+    "of de hoofduitspraak en de belangrijke steun erin staan"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Controleer of de hoofduitspraak en de belangrijkste ondergeschikte uitspraken in de samenvatting staan.",
+   "uo": [
+    "Koos je dit? Voorbeelden horen juist niet in een samenvatting. Je controleert op kern en belangrijkste steun.",
+    "Koos je dit? Een samenvatting is korter dan de tekst. Dat controleer je niet als belangrijkste punt.",
+    "Koos je dit? Letterlijk overnemen is geen goede samenvatting. Eigen woorden zijn de bedoeling.",
+    "Klopt: een goede samenvatting bevat de kern en de belangrijkste steun, in een compacte vorm."
+   ],
+   "uh": "Kern + belangrijkste steun."
+  },
+  {
+   "v": "Een samenvatting noemt alleen de hoofduitspraak en laat belangrijke ondergeschikte uitspraken weg. Wat is dat?",
+   "o": [
+    "te lang",
+    "onvolledig",
+    "in eigen woorden",
+    "te veel details"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Zonder de belangrijkste ondergeschikte uitspraken is een samenvatting onvolledig.",
+   "uo": [
+    "Koos je dit? Juist doordat belangrijke informatie ontbreekt, is hij te kort.",
+    "Klopt: de belangrijke steun ontbreekt, dus de samenvatting is niet volledig.",
+    "Koos je dit? Eigen woorden zegt niets over volledigheid. De informatie ontbreekt.",
+    "Koos je dit? Er zijn juist te weinig onderdelen opgenomen, niet te veel."
+   ],
+   "uh": "Kern én steun nodig."
+  },
+  {
+   "v": "Waarom hoort je eigen mening niet in een samenvatting?",
+   "o": [
+    "omdat een mening van een lezer in een tekst altijd fout is",
+    "omdat een mening te lang is",
+    "omdat de samenvatting de schrijver weergeeft",
+    "omdat de schrijver geen mening heeft"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Een samenvatting geeft de tekst weer, zonder eigen oordeel.",
+   "uo": [
+    "Koos je dit? Een mening kan prima zijn. Ze hoort alleen niet in een samenvatting.",
+    "Koos je dit? De lengte is niet de reden. Het gaat om wat de samenvatting moet weergeven.",
+    "Klopt: een samenvatting is een weergave van de tekst. Jouw oordeel is een toevoeging.",
+    "Koos je dit? De schrijver kan wel een mening hebben. Die geef je weer, jouw eigen mening niet."
+   ],
+   "uh": "Weergeven, niet beoordelen."
+  },
+  {
+   "v": "Een leerling schrijft zinnen letterlijk over. Welke fout maakt hij?",
+   "o": [
+    "hij herformuleert niet",
+    "hij laat de hoofduitspraak weg",
+    "hij is te beknopt",
+    "hij geeft zijn eigen mening"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Letterlijk overnemen is geen samenvatten.",
+   "uo": [
+    "Klopt: letterlijk overnemen is geen samenvatting. Je moet herformuleren.",
+    "Koos je dit? Dat staat hier niet. De fout is het overschrijven van zinnen.",
+    "Koos je dit? Overschrijven maakt de samenvatting juist niet kort: de tekst blijft even lang. Een samenvatting verkort door te reduceren en te herformuleren.",
+    "Koos je dit? Er is geen mening toegevoegd. De fout zit in het overnemen van zinnen."
+   ],
+   "uh": "Eigen woorden."
+  },
+  {
+   "v": "Welke samenvatting past het best bij dit fragment?",
+   "o": [
+    "Veel jongeren slapen te weinig door schermen en vroege schooltijden, waardoor ze slechter presteren.",
+    "Jongeren hebben negen uur slaap nodig en halen er zeven.",
+    "Jongeren slapen te weinig. Ze blijven 's avonds wakker. Ze presteren slechter.",
+    "Jongeren zouden meer moeten slapen, vind ik."
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Een goede samenvatting noemt de hoofduitspraak met de belangrijkste oorzaken en gevolgen.",
+   "uo": [
+    "Klopt: de hoofduitspraak (slaaptekort) staat erin met de belangrijkste oorzaken en het gevolg, kort en in eigen woorden.",
+    "Koos je dit? Dit is een detail met cijfers. De kern (te weinig slapen, oorzaken, gevolg) ontbreekt.",
+    "Koos je dit? De informatie klopt, maar het zijn losse zinnen zonder verband. Een samenvatting geeft de oorzaak en het gevolg samen.",
+    "Koos je dit? Dit is een eigen mening en geen weergave van de tekst. De samenvatting moet de inhoud geven."
+   ],
+   "uh": "Kern + oorzaak + gevolg.",
+   "ctx": "Veel jongeren slapen te weinig. Door schermen blijven ze 's avonds langer wakker, en de school begint vroeg. Een tiener heeft negen uur slaap nodig, maar haalt vaak maar zeven. Daardoor presteren ze op school slechter."
+  },
+  {
+   "v": "Wat laat je weg bij het samenvatten?",
+   "o": [
+    "de zin \"Fietsen is gezond.\"",
+    "het woord \"gezond\"",
+    "de gevallen van Anna en Daan",
+    "alles, want het is allemaal een voorbeeld"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Voorbeelden met namen vallen weg, de hoofduitspraak blijft.",
+   "uo": [
+    "Koos je dit? Dat is de hoofduitspraak. Zonder die zin is de samenvatting leeg.",
+    "Koos je dit? \"Gezond\" is de kern van de bewering. Zonder dat woord klopt de samenvatting niet.",
+    "Klopt: de namen zijn voorbeelden die de kern toelichten. De kern is \"fietsen is gezond\".",
+    "Koos je \"alles\"? Dan zie je de hele tekst als voorbeeld. De eerste zin \"Fietsen is gezond\" is juist de hoofduitspraak en blijft in de samenvatting."
+   ],
+   "uh": "Hoofduitspraak blijft, voorbeelden gaan.",
+   "ctx": "Fietsen is gezond. Zo fietst Anna elke dag zeven kilometer naar school en is ze nooit ziek. Ook Daan fietst en voelt zich fitter."
+  },
+  {
+   "v": "Wat kun je bij het samenvatten weglaten?",
+   "o": [
+    "de reden dat water kostbaar is",
+    "de herhalingen van dezelfde bewering",
+    "de hele tekst, want alles is herhaling",
+    "het woord \"water\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Herhalingen schrap je; eenmaal vermelden is genoeg.",
+   "uo": [
+    "Koos je dit? Dat is de ondergeschikte uitspraak die de kern onderbouwt. Die houd je.",
+    "Klopt: de tekst zegt drie keer in andere woorden dat zuinigheid met water nodig is. Eén keer volstaat.",
+    "Koos je dit? Een samenvatting is niet leeg. Je houdt de kern met de belangrijkste steun.",
+    "Koos je het woord \"water\"? Zonder dat woord weet de lezer niet waarover de tekst gaat. Het is het onderwerp en hoort er dus in."
+   ],
+   "uh": "Eén keer is genoeg.",
+   "ctx": "Het is belangrijk dat we zuinig zijn met water. We moeten echt zuinig omgaan met water, want water is kostbaar. Zuinigheid met water is dus noodzakelijk."
+  },
+  {
+   "v": "Welke zin is de hoofduitspraak?",
+   "o": [
+    "\"Leerlingen eten nu vaak ongezond.\"",
+    "\"Bovendien kost een gezonde lunch niet meer dan een zak chips.\"",
+    "alle drie even belangrijk",
+    "\"Scholen moeten gezonde lunches aanbieden.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "De hoofduitspraak is de zin waar de rest naartoe werkt.",
+   "uo": [
+    "Koos je dit? Dit is de aanleiding en een argument. De eis aan scholen is de kern.",
+    "Koos je dit? Dit is een extra argument (\"bovendien\"), dus ondergeschikt.",
+    "Koos je dit? Er is één zin die de kern geeft: de eis. De andere steunen die.",
+    "Klopt: dit is de eis waar de rest naartoe werkt. De andere zinnen zijn onderbouwing."
+   ],
+   "uh": "Eis = hoofduitspraak.",
+   "ctx": "Scholen moeten gezonde lunches aanbieden. Leerlingen eten nu vaak ongezond. Bovendien kost een gezonde lunch niet meer dan een zak chips."
+  },
+  {
+   "v": "Welke samenvatting is volledig en beknopt?",
+   "o": [
+    "Steeds meer mensen werken thuis, zoals Karin die twee dagen thuis werkt.",
+    "Steeds meer mensen werken thuis; omdat een goede werkplek ontbreekt, moeten bedrijven daarvoor een vergoeding geven.",
+    "Steeds meer mensen werken thuis. Dat scheelt reistijd en files en is beter dan kantoorwerk.",
+    "Steeds meer mensen werken thuis. Dat scheelt reistijd en files, maar er is vaak geen rustige werkplek."
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Een goede samenvatting bevat de hoofduitspraak en de reden, in eigen woorden.",
+   "uo": [
+    "Koos je dit? Karin is verzonnen en een voorbeeld. De kern (vergoeding) ontbreekt.",
+    "Klopt: de hoofduitspraak (bedrijven moeten vergoeden) en de reden (werkplek ontbreekt) staan erin, kort en in eigen woorden.",
+    "Koos je dit? \"Beter dan kantoorwerk\" is een eigen mening en de eis aan bedrijven ontbreekt.",
+    "Koos je dit? De zinnen zijn grotendeels overgenomen en de hoofduitspraak (bedrijven moeten een vergoeding geven) ontbreekt."
+   ],
+   "uh": "Eis én reden.",
+   "ctx": "Steeds meer mensen werken thuis. Dat scheelt reistijd en files, maar thuis is er vaak geen rustige werkplek. Bedrijven moeten daarom een vergoeding geven, zodat werknemers thuis goed kunnen werken."
+  },
+  {
+   "v": "Welke samenvatting bevat de hoofduitspraak en de belangrijkste ondergeschikte uitspraak?",
+   "o": [
+    "Scholen moeten later beginnen omdat tieners meer slaap nodig hebben, en de cijfers stegen daarna.",
+    "Scholen moeten later beginnen.",
+    "Tieners hebben meer slaap nodig.",
+    "De cijfers stegen op één school."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Een goede samenvatting bevat de hoofduitspraak en de belangrijkste steun.",
+   "uo": [
+    "Klopt: de eis (later beginnen) staat erin, met de reden (slaap) en het resultaat van de proef.",
+    "Koos je dit? De hoofduitspraak staat erin, maar de belangrijkste steun (reden en resultaat) ontbreekt.",
+    "Koos je dit? Dit is de reden. De hoofduitspraak (later beginnen) ontbreekt.",
+    "Koos je dit? Dit is een detail van de proef op één school. De hoofduitspraak (later beginnen) en de reden ontbreken, dus de kern is weg."
+   ],
+   "uh": "Kern + steun.",
+   "ctx": "Scholen moeten later beginnen, want tieners hebben meer slaap nodig. Uit een proef op één school bleek dat de cijfers daarna stegen."
+  },
+  {
+   "v": "Welke zin hoort niet in een samenvatting van dit fragment?",
+   "o": [
+    "\"De gemeente wil het park opknappen.\"",
+    "\"Veel bewoners zijn er blij mee.\"",
+    "\"Het opknappen kost twee ton.\"",
+    "\"De gemeente doet er verstandig aan, vind ik.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Een eigen oordeel hoort niet in een samenvatting.",
+   "uo": [
+    "Koos je dit? Dit is de hoofduitspraak van het fragment en hoort er dus in. De zin die niet past, is de zin met een eigen oordeel.",
+    "Koos je dit? Dit staat in de tekst en is een belangrijke ondergeschikte uitspraak.",
+    "Koos je dit? Dit staat in de tekst; of je het opneemt hangt af van de ruimte. Het is geen eigen oordeel.",
+    "Klopt: dit is een eigen oordeel. Een samenvatting geeft alleen weer wat in de tekst staat."
+   ],
+   "uh": "Geen mening.",
+   "ctx": "De gemeente wil het park opknappen. Dat kost twee ton. Veel bewoners zijn er blij mee."
+  },
+  {
+   "v": "Welke formulering is een goede samenvatting in eigen woorden?",
+   "o": [
+    "Veel scholen hebben de laatste jaren hun computers vervangen door tablets, omdat ze lichter zijn en goedkoper in onderhoud.",
+    "Scholen vervangen computers door tablets, wat een verstandige keuze is.",
+    "Scholen kiezen steeds vaker tablets omdat die licht en goedkoop te onderhouden zijn.",
+    "Er zijn tablets."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Een goede samenvatting herformuleert de kern in eigen woorden.",
+   "uo": [
+    "Koos je dit? Dit is een letterlijke kopie. Een samenvatting herformuleert.",
+    "Koos je dit? \"Een verstandige keuze\" is een eigen oordeel. Dat hoort er niet in.",
+    "Klopt: de kern staat erin, in eigen woorden en korter dan de tekst.",
+    "Koos je dit? \"Er zijn tablets\" is veel te kort: de kern (scholen kiezen tablets, en waarom) ontbreekt, dus je weet niet waar de tekst over gaat."
+   ],
+   "uh": "Eigen woorden, volledige kern.",
+   "ctx": "Veel scholen hebben de laatste jaren hun computers vervangen door tablets, omdat ze lichter zijn en goedkoper in onderhoud."
+  },
+  {
+   "v": "Hoe vat je dit het best samen?",
+   "o": [
+    "Scholieren leren en ouderen zoeken gezelschap.",
+    "Dus moet de bibliotheek langer open. Scholieren hebben een plek nodig.",
+    "De bibliotheek moet langer open voor scholieren en ouderen.",
+    "De bibliotheek is een mooie plek."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bij herordenen zet je de eis voorop en voeg je de redenen samen.",
+   "uo": [
+    "Koos je dit? De redenen staan erin, maar de eis ontbreekt: de bibliotheek moet langer open. Zonder de eis is de kern van de tekst weg.",
+    "Koos je dit? De eis staat erin, maar de tweede reden (ouderen) ontbreekt en de zinnen zijn letterlijk overgenomen.",
+    "Klopt: je zet de eis voorop en voegt de redenen samen. Zo herorden je de informatie.",
+    "Koos je dit? Dit is een eigen oordeel dat nergens in de tekst staat. Een samenvatting geeft alleen weer wat de schrijver zegt, zonder eigen mening."
+   ],
+   "uh": "Eis eerst, redenen erna.",
+   "ctx": "Dus moet de bibliotheek langer open. Scholieren hebben een plek nodig om te leren. Daarnaast zoeken ouderen gezelschap."
+  },
+  {
+   "v": "Welke zin bevat de hoofduitspraak van de hele tekst?",
+   "o": [
+    "\"Zwemles is geschrapt.\"",
+    "\"Daardoor kunnen minder kinderen zwemmen.\"",
+    "geen van de zinnen",
+    "\"De gemeente moet zwemles betalen.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "De hoofduitspraak kan in de laatste alinea staan.",
+   "uo": [
+    "Koos je dit? \"Zwemles is geschrapt\" is de aanleiding en een feit, geen eis. De hoofduitspraak is wat de gemeente moet doen: zwemles betalen.",
+    "Koos je dit? Dit is het gevolg van de aanleiding. De hoofduitspraak is wat de gemeente moet doen.",
+    "Koos je \"geen van de zinnen\"? De laatste zin met \"moet\" geeft duidelijk de kern: de eis aan de gemeente. Er is dus wel een hoofduitspraak.",
+    "Klopt: dit is de eis waar de tekst naartoe werkt. De eerste twee alinea's geven de aanleiding en het gevolg."
+   ],
+   "uh": "Eis aan het slot.",
+   "ctx": "Alinea 1: Zwemles is geschrapt. Alinea 2: Daardoor kunnen minder kinderen zwemmen. Alinea 3: De gemeente moet zwemles betalen."
+  },
+  {
+   "v": "Welke bewering over dit fragment klopt?",
+   "o": [
+    "twee hoofduitspraken: stallingen en bomen",
+    "er is maar één hoofduitspraak: de laatste zin",
+    "er is geen hoofduitspraak in dit fragment",
+    "alleen de eerste eis telt als hoofduitspraak"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Een tekst kan meerdere hoofduitspraken hebben.",
+   "uo": [
+    "Klopt: twee eisen staan naast elkaar. De laatste zin geeft de overkoepelende reden.",
+    "Koos je dit? De laatste zin geeft de reden voor beide eisen. De twee eisen zijn zelf hoofduitspraken.",
+    "Koos je dit? Er zijn duidelijke eisen. Daarom heeft het fragment wel hoofduitspraken.",
+    "Koos je dit? De tweede eis is even belangrijk. Beide horen in de samenvatting."
+   ],
+   "uh": "Tel de eisen.",
+   "ctx": "De gemeente moet meer fietsenstallingen bouwen. Ook moeten er meer bomen langs de fietspaden komen. Beide maatregelen maken de stad prettiger."
+  },
+  {
+   "v": "Welke informatie laat je in een samenvatting van twee zinnen weg?",
+   "o": [
+    "dat er een nieuw zwembad met twee baden komt",
+    "de exacte datum en het tijdstip van de opening",
+    "dat er een nieuwe bushalte bij de ingang van het zwembad komt",
+    "dat de gemeente veel bezoekers verwacht"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Datums en tijden zijn meestal details en vallen weg.",
+   "uo": [
+    "Koos je dit? Dat er een nieuw zwembad komt is de kern van het fragment en hoort er dus in. Weglaten kun je de details, zoals datum en tijd.",
+    "Klopt: datum en tijd zijn details. De kern is dat er een zwembad komt met veel verwachte bezoekers en een bushalte.",
+    "Koos je dit? De bushalte is een belangrijk gevolg van de verwachte drukte. Daarom hoort hij in de samenvatting en laat je hem niet weg.",
+    "Koos je dit? De verwachting van veel bezoekers is de reden voor de bushalte en dus een belangrijke ondergeschikte uitspraak. Die laat je niet weg."
+   ],
+   "uh": "Details eruit, kern erin.",
+   "ctx": "Het nieuwe zwembad opent op zaterdag 14 maart om 10 uur en heeft een wedstrijdbad en een kinderbad. De gemeente verwacht veel bezoekers. Daarom komt er een nieuwe bushalte bij de ingang."
+  },
+  {
+   "v": "Welke samenvatting past het best?",
+   "o": [
+    "Wie een hond neemt, moet er elke dag mee wandelen.",
+    "Honden zijn het leukste huisdier dat je kunt hebben.",
+    "Een hond is gezond voor mensen.",
+    "Een hond vraagt dagelijks tijd om mee te wandelen en past daarom niet bij wie weinig tijd heeft."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Een goede samenvatting geeft de conclusie met de reden.",
+   "uo": [
+    "Koos je dit? Dit is een letterlijke kopie van één zin en de conclusie ontbreekt.",
+    "Koos je dit? Dit staat nergens in de tekst en is een eigen mening van de leerling. Een samenvatting geeft alleen weer wat de schrijver zegt.",
+    "Koos je dit? Dit is een bijzaak. De hoofduitspraak (past niet bij wie weinig tijd heeft) ontbreekt.",
+    "Klopt: de hoofduitspraak (past niet bij wie weinig tijd heeft) en de reden (dagelijks wandelen) staan erin."
+   ],
+   "uh": "Conclusie + reden.",
+   "ctx": "Wie een hond neemt, moet er elke dag mee wandelen. Dat kost tijd, maar het houdt je ook gezond. Een hond is dus niets voor mensen die weinig tijd hebben."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Veel jongeren slapen te weinig. Door schermen blijven ze 's avonds langer wakker en de school begint vroeg. Daardoor presteren ze slechter en worden ze sneller ziek.",
+   "v": "Vat dit fragment samen in één zin.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Veel jongeren slapen te weinig door schermen en vroege schooltijden, waardoor ze slechter presteren en sneller ziek worden (1 punt voor de hoofduitspraak, 1 punt voor oorzaak en gevolg, in eigen woorden)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Fietsen is gezond. Zo fietst Anna elke dag zeven kilometer naar school en is ze nooit ziek. Ook Daan fietst en voelt zich fitter.",
+   "v": "Wat laat je in een samenvatting weg en waarom?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Je laat de gevallen van Anna en Daan weg (1 punt): het zijn voorbeelden die de hoofduitspraak \"fietsen is gezond\" toelichten (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Scholen moeten later beginnen, want tieners hebben meer slaap nodig. Op één school stegen de cijfers daarna.",
+   "v": "Beoordeel deze samenvatting: \"Scholen moeten later beginnen.\" Wat ontbreekt?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De hoofduitspraak staat erin, maar de belangrijkste ondergeschikte uitspraken ontbreken: de reden dat tieners meer slaap nodig hebben en het resultaat dat de cijfers stegen (1 punt voor het constateren, 1 punt voor het noemen van wat ontbreekt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De gemeente wil het park opknappen. Dat kost twee ton. Veel bewoners zijn er blij mee.",
+   "v": "Een leerling schrijft in zijn samenvatting: \"De gemeente doet er verstandig aan het park op te knappen.\" Wat is hier mis?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De leerling voegt een eigen oordeel toe (\"verstandig\") (1 punt). Een samenvatting geeft alleen weer wat in de tekst staat, dus zonder eigen mening (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Dus moet de bibliotheek langer open. Scholieren hebben een plek nodig om te leren. Daarnaast zoeken ouderen gezelschap.",
+   "v": "Vat dit samen en leg uit hoe je de volgorde veranderd hebt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De bibliotheek moet langer open, omdat scholieren en ouderen er terechtkunnen (1 punt). Ik heb de eis (hoofduitspraak) voorop gezet en de twee redenen samengevoegd (herordenen en generaliseren) (1 punt)."
+  }
+ ]
+}

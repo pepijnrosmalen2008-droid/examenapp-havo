@@ -162,6 +162,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 18,
       "hasSam": true
+     },
+     {
+      "id": "A7",
+      "lo": "nl.A.7",
+      "gs": 2,
+      "naam": "Een tekst samenvatten",
+      "beschrijving": "Je reduceert een tekst tot de hoofduitspraak met de belangrijkste ondergeschikte uitspraken, in eigen woorden, en je beoordeelt of een gegeven samenvatting volledig en beknopt is.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Hoofduitspraak en ondergeschikte uitspraken",
+       "Reduceren: wat laat je weg",
+       "Herordenen en samenvoegen",
+       "Een samenvatting opstellen",
+       "Een gegeven samenvatting beoordelen",
+       "Valkuilen bij samenvatten"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

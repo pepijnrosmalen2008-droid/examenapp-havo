@@ -1669,5 +1669,50 @@ Object.assign(SAM_RICH,{
 <path d="M160 118 V132" stroke="var(--or)" stroke-width="2.5"/><path d="M153 128 L160 138 L167 128 Z" fill="var(--or)"/>
 <rect x="10" y="138" width="300" height="46" rx="8" fill="var(--or)"/><text x="160" y="157" font-size="12" font-weight="700" fill="#fff">3  Onderbouw met de tekst</text><text x="160" y="174" font-size="11" fill="#fff">noem de naam en wat er in het voorbeeld misgaat</text></g></svg><div class="sam-figcap">Beoordelingsvraag in drie stappen: lees het argument, bepaal of het een zwak argument of een drogreden is, en onderbouw dat met wat er in de tekst staat.</div></div>
 <p>Let op: niet elk zwak argument is een drogreden. Een <strong>onaanvaardbaar feit</strong> (niet controleerbaar) of een <strong>irrelevant argument</strong> is een zwakte, geen drogreden. Een drogreden is een benoembare fout.</p>
+</div>`,
+'havo_nl_A7':`<div class="sam-intro">Samenvatten komt op het examen in twee vormen terug: je maakt zelf een <strong>samenvatting</strong>, of je <strong>beoordeelt</strong> een gegeven samenvatting. In beide gevallen draait het om dezelfde vraag: staan de <strong>hoofduitspraak</strong> en de belangrijkste <strong>ondergeschikte uitspraken</strong> erin, kort en in eigen woorden?</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Samenvatting</td><td>Beknopte weergave van de hoofduitspraak met de belangrijkste ondergeschikte uitspraken.</td></tr>
+<tr><td>Hoofduitspraak</td><td>De belangrijkste bewering van de tekst of het tekstgedeelte.</td></tr>
+<tr><td>Ondergeschikte uitspraak</td><td>Een bewering die de hoofduitspraak toelicht of onderbouwt.</td></tr>
+<tr><td>Reduceren</td><td>Korter maken door bijzaken weg te laten.</td></tr>
+<tr><td>Herordenen</td><td>De informatie in een logischer volgorde zetten.</td></tr>
+<tr><td>Generaliseren</td><td>Een opsomming vervangen door een overkoepelend begrip.</td></tr>
+<tr><td>Parafraseren</td><td>In eigen woorden weergeven met dezelfde betekenis.</td></tr>
+<tr><td>Voorbeeld, herhaling en detail</td><td>Bijzaken die in een samenvatting meestal wegvallen.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Hoofduitspraak en ondergeschikte uitspraken</div>
+<p>De <strong>hoofduitspraak</strong> is de belangrijkste bewering van een tekst of tekstgedeelte. <strong>Ondergeschikte uitspraken</strong> lichten haar toe of onderbouwen haar. Sommige zijn belangrijk (een reden of resultaat dat de kern draagt); andere zijn <strong>details</strong> (een datum, een naam) of <strong>voorbeelden</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Hoofduitspraak met twee belangrijke ondergeschikte uitspraken, die in de samenvatting blijven, en gestippelde voorbeelden en details die wegvallen"><g font-family="inherit" text-anchor="middle"><rect x="60" y="6" width="200" height="42" rx="8" fill="var(--or)"/><text x="160" y="24" font-size="12" font-weight="700" fill="#fff">Hoofduitspraak</text><text x="160" y="40" font-size="11" fill="#fff">blijft in de samenvatting</text>
+<path d="M120 48 L78 76 M200 48 L242 76" stroke="var(--dk)" stroke-width="2"/>
+<rect x="8" y="78" width="140" height="42" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="78" y="96" font-size="12" font-weight="700" fill="var(--dk)">Belangrijk</text><text x="78" y="112" font-size="11" fill="var(--dk)">reden, resultaat: blijft</text>
+<rect x="172" y="78" width="140" height="42" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="242" y="96" font-size="12" font-weight="700" fill="var(--dk)">Belangrijk</text><text x="242" y="112" font-size="11" fill="var(--dk)">tweede reden: blijft</text>
+<rect x="8" y="138" width="140" height="42" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="78" y="156" font-size="12" font-weight="700" fill="var(--mu)">Voorbeeld</text><text x="78" y="172" font-size="11" fill="var(--mu)">valt weg</text>
+<rect x="172" y="138" width="140" height="42" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="242" y="156" font-size="12" font-weight="700" fill="var(--mu)">Detail, herhaling</text><text x="242" y="172" font-size="11" fill="var(--mu)">valt weg</text></g></svg><div class="sam-figcap">Wat blijft en wat valt weg: de hoofduitspraak en de belangrijke ondergeschikte uitspraken blijven, voorbeelden, details en herhalingen (stippellijn) vallen weg.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> hoofduitspraak + belangrijkste steun blijven; voorbeelden, details en herhalingen gaan eruit.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Reduceren, herordenen en eigen woorden</div>
+<p>Je gaat in drie stappen te werk. Bij <strong>reduceren</strong> schrap je voorbeelden, herhalingen en details. Bij <strong>herordenen</strong> zet je de informatie in een logische volgorde, bijvoorbeeld eerst de eis en dan de redenen, ook als de tekst anders begint. Bij <strong>parafraseren</strong> formuleer je in eigen woorden; bij <strong>generaliseren</strong> vervang je een opsomming door een overkoepelend begrip ("voetbal, hockey en tennis" wordt "sporten").</p>
+<div class="sam-figure"><svg viewBox="0 0 320 214" role="img" aria-label="Samenvatten in vier stappen: hoofduitspraak zoeken, reduceren door weglaten van voorbeelden en herhalingen, herordenen en generaliseren, formuleren in eigen woorden"><g font-family="inherit" text-anchor="middle"><rect x="10" y="4" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="20" font-size="12" font-weight="700" fill="var(--dk)">1  Zoek de hoofduitspraak</text><text x="160" y="35" font-size="11" fill="var(--dk)">en de belangrijkste steun</text>
+<path d="M160 42 V50" stroke="var(--or)" stroke-width="2.5"/><path d="M153 48 L160 56 L167 48 Z" fill="var(--or)"/>
+<rect x="10" y="56" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="72" font-size="12" font-weight="700" fill="var(--dk)">2  Reduceer</text><text x="160" y="87" font-size="11" fill="var(--dk)">laat voorbeelden, herhalingen en details weg</text>
+<path d="M160 94 V102" stroke="var(--or)" stroke-width="2.5"/><path d="M153 100 L160 108 L167 100 Z" fill="var(--or)"/>
+<rect x="10" y="108" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="124" font-size="12" font-weight="700" fill="var(--dk)">3  Herorden en generaliseer</text><text x="160" y="139" font-size="11" fill="var(--dk)">logische volgorde, overkoepelende woorden</text>
+<path d="M160 146 V154" stroke="var(--or)" stroke-width="2.5"/><path d="M153 152 L160 160 L167 152 Z" fill="var(--or)"/>
+<rect x="10" y="160" width="300" height="44" rx="8" fill="var(--or)"/><text x="160" y="178" font-size="12" font-weight="700" fill="#fff">4  Formuleer in eigen woorden</text><text x="160" y="194" font-size="11" fill="#fff">beknopt en zonder eigen mening</text></g></svg><div class="sam-figcap">Vier stappen van tekst naar samenvatting: kern zoeken, reduceren, herordenen en generaliseren, en tot slot formuleren in eigen woorden.</div></div>
+<p>Houd <strong>eigen mening</strong> en nieuwe informatie buiten je samenvatting; die geeft alleen weer wat de schrijver zegt. Een samenvatting die zinnen letterlijk overneemt, is geen goede <strong>parafrase</strong>.</p>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Een gegeven samenvatting beoordelen</div>
+<p>Bij een gegeven samenvatting controleer je vier dingen: staat de <strong>hoofduitspraak</strong> erin? Staan de <strong>belangrijkste ondergeschikte uitspraken</strong> erin? Is hij <strong>beknopt</strong> (geen voorbeelden of details)? En is hij in <strong>eigen woorden</strong> en <strong>zonder mening</strong>?</p>
+<div class="sam-figure"><svg viewBox="0 0 320 178" role="img" aria-label="Controlelijst voor een gegeven samenvatting: hoofduitspraak aanwezig, belangrijkste ondergeschikte uitspraken aanwezig, beknopt, eigen woorden zonder mening"><g font-family="inherit"><rect x="6" y="6" width="308" height="36" rx="6" fill="var(--orl)"/><text x="18" y="29" font-size="12" font-weight="700" fill="var(--dk)">1  Hoofduitspraak</text><text x="170" y="29" font-size="11" fill="var(--dk)">staat erin?</text>
+<rect x="6" y="46" width="308" height="36" rx="6" fill="var(--orl)"/><text x="18" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Belangrijke steun</text><text x="170" y="69" font-size="11" fill="var(--dk)">staat erin?</text>
+<rect x="6" y="86" width="308" height="36" rx="6" fill="var(--orl)"/><text x="18" y="109" font-size="12" font-weight="700" fill="var(--dk)">3  Beknopt</text><text x="104" y="109" font-size="11" fill="var(--dk)">geen voorbeelden of details?</text>
+<rect x="6" y="126" width="308" height="46" rx="6" fill="var(--orl)"/><text x="18" y="146" font-size="12" font-weight="700" fill="var(--dk)">4  Eigen woorden</text><text x="18" y="163" font-size="11" fill="var(--dk)">niet letterlijk, zonder eigen mening?</text></g></svg><div class="sam-figcap">Controlelijst bij een gegeven samenvatting: kern, belangrijke steun, beknoptheid en eigen woorden zonder mening; mist een onderdeel, dan is de samenvatting niet goed.</div></div>
+<div class="sam-tip"><strong>Examentip:</strong> een samenvatting die alleen de hoofduitspraak geeft, is onvolledig; een samenvatting met voorbeelden of een eigen mening is niet beknopt of niet neutraal. Noem bij een afkeuring wat er ontbreekt of wat er te veel in staat.</div>
 </div>`
 });
