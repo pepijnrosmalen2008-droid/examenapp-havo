@@ -11616,89 +11616,8 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 .zk-app-b:active{transform:scale(.95)}
 .zk-app-ic{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--bg2);font-size:13px}
 
-/* ═══════ MENU (TELEFOON): BOTTOM SHEET ═══════
-   Veer-curve zoals iOS-sheets: snel weg uit de start, zacht landen. */
-html.ms-open,html.ms-open body{overflow:hidden}
-.ms-ov{position:fixed;inset:0;z-index:9700;--ms-dim:1;background:rgba(8,10,18,calc(.42*var(--ms-dim)));-webkit-backdrop-filter:blur(calc(6px*var(--ms-dim)));backdrop-filter:blur(calc(6px*var(--ms-dim)));opacity:0;transition:opacity .36s ease;-webkit-tap-highlight-color:transparent}
-.ms-ov.open{opacity:1}
-.ms-ov.dicht{opacity:0;transition:opacity .3s ease .05s}
-.ms-sheet{position:absolute;left:0;right:0;bottom:0;display:flex;flex-direction:column;max-height:calc(100dvh - env(safe-area-inset-top,0px) - 28px);background:var(--bg);border-radius:28px 28px 0 0;box-shadow:0 -1px 0 rgba(255,255,255,.06) inset,0 -18px 50px -12px rgba(8,10,18,.35);transform:translateY(105%);transition:transform .56s cubic-bezier(.32,.72,0,1);outline:none;will-change:transform;padding-bottom:calc(env(safe-area-inset-bottom,0px) + 10px)}
-.ms-ov.open .ms-sheet{transform:translateY(0)}
-.ms-ov.dicht .ms-sheet{transform:translateY(105%);transition:transform .34s cubic-bezier(.5,0,.75,0)}
-.ms-grip{width:40px;height:5px;border-radius:3px;background:var(--mu);opacity:.32;margin:9px auto 0;flex-shrink:0}
-.ms-kop{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px 12px;flex-shrink:0;touch-action:none}
-.ms-titel{font:800 24px/1.1 var(--font-head);color:var(--dk);letter-spacing:-.01em}
-.ms-sub{font-size:13px;color:var(--mu);font-weight:600;margin-top:3px}
-.ms-x{width:34px;height:34px;border-radius:50%;border:0;background:var(--bg2);color:var(--mu);display:grid;place-items:center;cursor:pointer;transition:transform .18s cubic-bezier(.34,1.4,.6,1)}
-.ms-x svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round}
-.ms-x:active{transform:scale(.88)}
-.ms-body{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:2px 16px 8px;display:flex;flex-direction:column;gap:14px}
-/* binnenkomen na elkaar */
-.ms-ov [style*="--i"]{opacity:0;transform:translateY(14px) scale(.98);transition:opacity .42s ease,transform .5s cubic-bezier(.22,1,.36,1);transition-delay:calc(var(--i)*22ms + 110ms)}
-.ms-ov.open [style*="--i"]{opacity:1;transform:none}
-.ms-ov.dicht [style*="--i"]{transition-delay:0s}
-.ms-zoek{display:flex;align-items:center;gap:10px;height:50px;padding:0 15px;border-radius:16px;border:1px solid var(--bo);background:var(--s);color:var(--mu);font:600 15px var(--font);text-align:left;cursor:text}
-.ms-zoek svg{width:19px;height:19px;fill:none;stroke:var(--or);stroke-width:2.2;stroke-linecap:round}
-.ms-groot{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.ms-kaart{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:14px;border-radius:20px;border:1px solid var(--bo);background:var(--s);color:var(--dk);text-align:left;cursor:pointer;font-family:var(--font);overflow:hidden;transition:transform .18s cubic-bezier(.34,1.4,.6,1)}
-.ms-kaart b{font:800 15px/1.2 var(--font-head);margin-top:8px}
-.ms-kaart small{font-size:12px;line-height:1.35;color:var(--mu);font-weight:600}
-.ms-kaart .ms-ic{width:36px;height:36px;border-radius:12px}
-.ms-kaart .ms-ic svg{width:20px;height:20px}
-.ms-k-trainer{background:radial-gradient(120% 120% at 100% 0%,rgba(230,189,99,.28),transparent 55%),linear-gradient(150deg,#1d2130,#12141d);border-color:rgba(255,255,255,.07);color:#f4f1ea}
-.ms-k-trainer small{color:rgba(244,241,234,.66)}
-.ms-k-trainer .ms-ic{background:rgba(230,189,99,.16);color:#e6bd63}
-.ms-k-profiel .ms-ic{background:rgba(var(--or-rgb),.12);color:var(--or)}
-.ms-groep-kop{font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--mu);margin:2px 4px 8px}
-.ms-raster{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
-.ms-tegel{display:flex;flex-direction:column;align-items:center;gap:7px;padding:4px 0 2px;border:0;background:none;color:var(--dk);cursor:pointer;font-family:var(--font);-webkit-tap-highlight-color:transparent}
-.ms-tegel .ms-ic{transition:transform .22s cubic-bezier(.34,1.5,.6,1),box-shadow .2s}
-.ms-tegel:active .ms-ic,.ms-kaart:active{transform:scale(.9)}
-.ms-lbl{font-size:12px;font-weight:700;line-height:1.2;text-align:center}
-.ms-ic{position:relative;display:grid;place-items:center;width:56px;height:56px;border-radius:18px;color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 8px 16px -10px rgba(0,0,0,.45)}
-.ms-ic svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.ms-badge{position:absolute;top:-5px;right:-6px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:#ef4444;color:#fff;font:800 11px/20px var(--font);box-shadow:0 0 0 2.5px var(--bg)}
-.ms-c1{background:linear-gradient(150deg,#5b8cff,#2f5be0)}
-.ms-c2{background:linear-gradient(150deg,#34d399,#0f9f6e)}
-.ms-c3{background:linear-gradient(150deg,#fb7185,#e11d48)}
-.ms-c4{background:linear-gradient(150deg,#fbbf24,#f97316)}
-.ms-c5{background:linear-gradient(150deg,#a78bfa,#6d4ae6)}
-.ms-c6{background:linear-gradient(150deg,#38bdf8,#0b84c9)}
-.ms-c7{background:linear-gradient(150deg,#2dd4bf,#0d9488)}
-.ms-c8{background:linear-gradient(150deg,#94a3b8,#536176)}
-.ms-c9{background:linear-gradient(150deg,#8b5cf6,#3b1f8f)}
-.ms-c10{background:linear-gradient(150deg,#f0b23a,#c77a10)}
-.ms-c11{background:linear-gradient(150deg,#60a5fa,#4f46e5)}
-.ms-c12{background:linear-gradient(150deg,#f472b6,#c0267d)}
-.ms-lijst{border-radius:18px;background:var(--s);border:1px solid var(--bo);overflow:hidden}
-.ms-rij{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:0 14px;border:0;background:none;color:var(--dk);font:600 15px var(--font);text-align:left;cursor:pointer}
-.ms-rij+.ms-rij{border-top:1px solid var(--bo)}
-button.ms-rij:active{background:var(--bg2)}
-.ms-rij-ic{width:30px;height:30px;border-radius:9px;background:var(--bg2);color:var(--mu);display:grid;place-items:center;flex-shrink:0}
-.ms-rij-ic svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.ms-rij-t{flex:1}
-.ms-rij-w{font-size:13px;font-weight:800;color:var(--or);background:rgba(var(--or-rgb),.1);padding:3px 9px;border-radius:8px}
-.ms-rij-pijl{color:var(--mu);font-size:20px;line-height:1;opacity:.6}
-.ms-switch{position:relative;width:50px;height:30px;border-radius:15px;border:0;background:var(--bo2);cursor:pointer;flex-shrink:0;transition:background .25s}
-.ms-switch i{position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .32s cubic-bezier(.34,1.4,.6,1)}
-.ms-switch.aan{background:#22c55e}
-.ms-switch.aan i{transform:translateX(20px)}
-.ms-tegel:focus-visible .ms-ic,.ms-kaart:focus-visible,.ms-rij:focus-visible,.ms-zoek:focus-visible,.ms-switch:focus-visible,.ms-x:focus-visible{outline:3px solid rgba(var(--or-rgb),.55);outline-offset:2px}
-/* desktop: zwevende kaart i.p.v. sheet (daar is de zijbalk het hoofdmenu) */
-@media(min-width:900px){
-  .ms-sheet{left:50%;right:auto;bottom:auto;top:50%;width:520px;max-height:min(760px,calc(100vh - 80px));border-radius:24px;padding-bottom:10px;transform:translate(-50%,-47%) scale(.96);opacity:0;transition:transform .42s cubic-bezier(.22,1,.36,1),opacity .3s}
-  .ms-ov.open .ms-sheet{transform:translate(-50%,-50%);opacity:1}
-  .ms-ov.dicht .ms-sheet{transform:translate(-50%,-48%) scale(.97);opacity:0;transition:transform .25s,opacity .2s}
-  .ms-grip{display:none}
-}
-@media(prefers-reduced-motion:reduce){
-  .ms-sheet,.ms-ov [style*="--i"]{transition:opacity .2s!important;transform:none!important}
-  .ms-ov:not(.open) .ms-sheet{opacity:0}
-}
-.ms-body{flex:1 1 auto;min-height:0}
 /* één zoekveld op de home: de vakkenfilter wijkt op telefoon/tablet voor de zoekbalk */
 @media(max-width:899px){#sc-home .sb-wrap{display:none!important}}
-.ms-body>*{flex-shrink:0}
 
 /* ═══════ VAKPAGINA: TABBLADEN ═══════ */
 .vd-tabs{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0;margin:14px 0 16px;padding:4px;border-radius:14px;background:var(--bg2);border:1px solid var(--bo)}
@@ -11754,3 +11673,142 @@ button.ms-rij:active{background:var(--bg2)}
 .sp-kies-klaar{margin-top:16px;width:100%;height:48px;border:0;border-radius:14px;background:var(--or);color:#fff;font:800 15px var(--font-head);cursor:pointer;transition:opacity .2s}
 .sp-kies-klaar:disabled{opacity:.4;cursor:default}
 #sc-studieplan.sp-leeg .sp-gen-btn,#sc-studieplan.sp-leeg #sp-foutenboek-row,#sc-studieplan.sp-leeg details{display:none!important}
+
+/* ═══════ MENU (TELEFOON): SLAGIO-SHEET ═══════
+   Kop = nachtblauw zoals de aftelklok, met gloed in de niveaukleur en Vonk die
+   over de rand kijkt. Tegels = dikke Slagio-knoppen (onderrand, indrukken) met
+   tekeningen in Vonk-stijl: vlak, twee tinten per groep. */
+html.ms-open,html.ms-open body{overflow:hidden}
+.ms-ov{position:fixed;inset:0;z-index:9700;--ms-dim:1;background:rgba(6,8,16,calc(.5*var(--ms-dim)));-webkit-backdrop-filter:blur(calc(5px*var(--ms-dim)));backdrop-filter:blur(calc(5px*var(--ms-dim)));opacity:0;transition:opacity .36s ease;-webkit-tap-highlight-color:transparent}
+.ms-ov.open{opacity:1}
+.ms-ov.dicht{opacity:0;transition:opacity .3s ease .05s}
+.ms-sheet{position:absolute;left:0;right:0;bottom:0;display:flex;flex-direction:column;max-height:calc(100dvh - env(safe-area-inset-top,0px) - 74px);background:var(--bg);border-radius:30px 30px 0 0;box-shadow:0 -20px 60px -14px rgba(var(--or-rgb),.45);transform:translateY(108%);transition:transform .58s cubic-bezier(.32,.72,0,1);outline:none;will-change:transform;padding-bottom:calc(env(safe-area-inset-bottom,0px) + 10px)}
+.ms-ov.open .ms-sheet{transform:translateY(0)}
+.ms-ov.dicht .ms-sheet{transform:translateY(108%);transition:transform .34s cubic-bezier(.5,0,.75,0)}
+/* kop */
+.ms-kop{position:relative;flex-shrink:0;padding:10px 18px 16px;border-radius:30px 30px 22px 22px;color:#fff;touch-action:none;
+  background:radial-gradient(110% 120% at 85% -20%,rgba(var(--or-rgb),.75),transparent 58%),radial-gradient(80% 90% at 0% 120%,rgba(var(--or-rgb),.28),transparent 60%),linear-gradient(160deg,#0c0d1a 0%,#0f1022 55%,#080912 100%);
+  box-shadow:0 10px 30px -14px rgba(var(--or-rgb),.6),inset 0 1px 0 rgba(255,255,255,.08)}
+.ms-kop::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:.55;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:22px 22px;
+  -webkit-mask:radial-gradient(90% 100% at 80% 0%,#000,transparent 75%);mask:radial-gradient(90% 100% at 80% 0%,#000,transparent 75%)}
+.ms-grip{position:relative;width:42px;height:5px;border-radius:3px;background:rgba(255,255,255,.35);margin:0 auto 8px}
+.ms-vonk{position:absolute;right:16px;top:-58px;width:84px;height:84px;z-index:2;pointer-events:none;transform:translateY(46px) scale(.6);opacity:0;transition:transform .6s cubic-bezier(.34,1.56,.64,1) .32s,opacity .25s ease .32s;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35))}
+.ms-vonk svg{width:100%;height:100%;display:block}
+.ms-ov.open .ms-vonk{transform:none;opacity:1}
+.ms-ov.dicht .ms-vonk{transition:transform .2s,opacity .15s;transform:translateY(30px) scale(.7);opacity:0}
+.ms-kop-rij{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-right:76px}
+.ms-titel{font:800 26px/1.1 var(--font-head);letter-spacing:-.02em;color:#fff}
+.ms-sub{font-size:14px;font-weight:600;color:rgba(255,255,255,.62);margin-top:3px}
+.ms-x{position:absolute;right:-6px;top:52px;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.1);color:#fff;display:grid;place-items:center;cursor:pointer;transition:transform .18s cubic-bezier(.34,1.4,.6,1),background .2s}
+.ms-x svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round}
+.ms-x:active{transform:scale(.88)}
+.ms-stats{position:relative;display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 12px}
+.ms-stats span{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 10px;border-radius:99px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);font:800 13px var(--font-head);color:#fff;font-variant-numeric:tabular-nums}
+.ms-stats em{font-style:normal;font-weight:600;font-family:var(--font);font-size:12px;color:rgba(255,255,255,.6)}
+.ms-stats i{width:10px;height:10px;border-radius:50%}
+.ms-st-vuur{background:#ff7a1a;box-shadow:0 0 10px #ff7a1a}
+.ms-st-munt{background:#f6b11c;box-shadow:0 0 10px #f6b11c}
+.ms-st-ster{background:#a78bfa;box-shadow:0 0 10px #a78bfa}
+.ms-stats .ms-niv{margin-left:auto;background:rgba(var(--or-rgb),.35);border-color:rgba(var(--or-rgb),.6);letter-spacing:.06em}
+.ms-zoek{position:relative;display:flex;align-items:center;gap:10px;width:100%;height:50px;padding:0 15px;border-radius:16px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.1);color:rgba(255,255,255,.78);font:600 15px var(--font);text-align:left;cursor:text;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transition:background .2s}
+.ms-zoek svg{width:19px;height:19px;fill:none;stroke:#fff;stroke-width:2.3;stroke-linecap:round}
+.ms-zoek:active{background:rgba(255,255,255,.16)}
+/* inhoud */
+.ms-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:16px 16px 8px;display:flex;flex-direction:column;gap:18px}
+.ms-body>*{flex-shrink:0}
+.ms-ov [style*="--i"]{opacity:0;transform:translateY(16px);transition:opacity .4s ease,transform .55s cubic-bezier(.22,1,.36,1);transition-delay:calc(var(--i)*24ms + 140ms)}
+.ms-ov.open [style*="--i"]{opacity:1;transform:none}
+.ms-ov.dicht [style*="--i"]{transition-delay:0s}
+.ms-groep-kop{margin:0 4px 9px;font:800 13px var(--font-head);letter-spacing:.08em;text-transform:uppercase;color:var(--mu);display:flex;align-items:center;gap:8px}
+.ms-groep-kop::before{content:'';width:8px;height:8px;border-radius:3px;background:var(--t1)}
+.ms-raster,.ms-groot{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+/* de dikke Slagio-knop */
+.ms-tegel,.ms-kaart{position:relative;display:flex;align-items:center;gap:10px;min-width:0;padding:10px 12px 10px 10px;border-radius:18px;border:2px solid var(--bo);background:var(--s);color:var(--dk);text-align:left;cursor:pointer;font-family:var(--font);box-shadow:0 4px 0 var(--bo2);transition:transform .12s ease,box-shadow .12s ease;-webkit-tap-highlight-color:transparent}
+.ms-tegel:active,.ms-kaart:active{transform:translateY(3px);box-shadow:0 1px 0 var(--bo2)}
+.ms-art{flex-shrink:0;width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:color-mix(in srgb,var(--t1) 10%,transparent)}
+.ms-art svg{width:36px;height:36px;display:block}
+.ms-art-vonk{background:color-mix(in srgb,#ff8a3d 14%,transparent);overflow:hidden}
+.ms-art-vonk svg{width:44px;height:44px;margin-top:6px}
+.ms-tt{display:flex;flex-direction:column;min-width:0}
+.ms-tt b{font:800 15px/1.2 var(--font-head);letter-spacing:-.01em}
+.ms-tt small{font-size:12px;font-weight:600;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.ms-tt small.heet{color:#fff;background:var(--t1);border-radius:99px;padding:1px 7px;align-self:flex-start;font-weight:800;margin-top:3px}
+/* groepskleuren: leren = niveaukleur, plannen = warm, spelen = paars */
+.ms-g-leer,.ms-k-profiel{--t1:var(--or);--t2:rgba(var(--or-rgb),.28)}
+.ms-g-plan{--t1:#ee8a12;--t2:rgba(238,138,18,.3)}
+.ms-g-spel{--t1:#7c4dea;--t2:rgba(124,77,234,.3)}
+.ms-rood{--t1:#e5484d;--t2:rgba(229,72,77,.3)}
+/* twee grote kaarten bovenaan */
+.ms-k-trainer{--t1:#e6bd63;--t2:rgba(230,189,99,.3);border-color:#23283a;background:radial-gradient(120% 120% at 100% 0%,rgba(230,189,99,.26),transparent 55%),linear-gradient(150deg,#1d2130,#12141d);color:#f4f1ea;box-shadow:0 4px 0 #07080d}
+.ms-k-trainer:active{box-shadow:0 1px 0 #07080d}
+.ms-k-trainer .ms-art{background:rgba(230,189,99,.12)}
+.ms-k-trainer .ms-tt small{color:rgba(244,241,234,.62)}
+/* instellingen */
+.ms-lijst{border-radius:18px;background:var(--s);border:2px solid var(--bo);box-shadow:0 4px 0 var(--bo2);overflow:hidden}
+.ms-rij{display:flex;align-items:center;gap:12px;width:100%;min-height:54px;padding:0 14px;border:0;background:none;color:var(--dk);font:700 15px var(--font);text-align:left;cursor:pointer}
+.ms-rij+.ms-rij{border-top:1px solid var(--bo)}
+button.ms-rij:active{background:var(--bg2)}
+.ms-rij-ic{width:32px;height:32px;border-radius:10px;background:rgba(var(--or-rgb),.1);color:var(--or);display:grid;place-items:center;flex-shrink:0}
+.ms-rij-ic svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ms-rij-t{flex:1}
+.ms-rij-w{font:800 12px var(--font-head);letter-spacing:.06em;color:var(--or);background:rgba(var(--or-rgb),.1);padding:4px 9px;border-radius:8px}
+.ms-rij-pijl{color:var(--mu);font-size:22px;line-height:1;opacity:.6}
+.ms-switch{position:relative;width:52px;height:31px;border-radius:16px;border:0;background:var(--bo2);cursor:pointer;flex-shrink:0;transition:background .25s}
+.ms-switch i{position:absolute;top:3px;left:3px;width:25px;height:25px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .34s cubic-bezier(.34,1.5,.6,1)}
+.ms-switch.aan{background:var(--or)}
+.ms-switch.aan i{transform:translateX(21px)}
+.ms-tegel:focus-visible,.ms-kaart:focus-visible,.ms-rij:focus-visible,.ms-zoek:focus-visible,.ms-switch:focus-visible,.ms-x:focus-visible{outline:3px solid rgba(var(--or-rgb),.6);outline-offset:2px}
+@media(min-width:900px){
+  .ms-sheet{left:50%;right:auto;bottom:auto;top:50%;width:540px;max-height:min(780px,calc(100vh - 110px));border-radius:28px;padding-bottom:10px;transform:translate(-50%,-47%) scale(.96);opacity:0;transition:transform .42s cubic-bezier(.22,1,.36,1),opacity .3s}
+  .ms-ov.open .ms-sheet{transform:translate(-50%,-50%);opacity:1}
+  .ms-ov.dicht .ms-sheet{transform:translate(-50%,-48%) scale(.97);opacity:0;transition:transform .25s,opacity .2s}
+  .ms-kop{border-radius:28px 28px 22px 22px}
+  .ms-grip{visibility:hidden}
+}
+@media(prefers-reduced-motion:reduce){
+  .ms-sheet,.ms-vonk,.ms-ov [style*="--i"]{transition:opacity .2s!important;transform:none!important}
+  .ms-ov:not(.open) .ms-sheet{opacity:0}
+}
+.ms-kop-rij{padding-right:84px}
+.ms-x{position:static;margin-left:auto;width:34px;height:34px;flex-shrink:0}
+.ms-stats{align-items:center}
+
+/* ═══════ HOME IN SLAGIO-STIJL: ZOEKBALK MET VONK, DIKKE TEGELS ═══════ */
+.hm-zoekbalk{height:58px;padding:0 8px 0 6px;gap:10px;border:2px solid var(--bo);border-radius:18px;box-shadow:0 4px 0 var(--bo2);transition:transform .12s ease,box-shadow .12s ease,border-color .2s}
+.hm-zoekbalk:hover{border-color:rgba(var(--or-rgb),.5);box-shadow:0 4px 0 var(--bo2)}
+.hm-zoekbalk:active{transform:translateY(3px);box-shadow:0 1px 0 var(--bo2)}
+.hm-zoekbalk-vonk{flex-shrink:0;width:42px;height:42px;border-radius:13px;overflow:hidden;background:color-mix(in srgb,#ff8a3d 14%,transparent);display:grid;place-items:center}
+.hm-zoekbalk-vonk svg{width:44px;height:44px;margin-top:8px}
+.hm-zoekbalk-vast{font-family:var(--font-head);font-weight:800;font-size:16px;letter-spacing:-.01em}
+.hm-zoekbalk-go{flex-shrink:0;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--or);box-shadow:0 3px 0 color-mix(in srgb,var(--or) 60%,#000)}
+.hm-zoekbalk-go svg{width:19px;height:19px;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round}
+.hm-zoekbalk kbd{display:none}
+@media(max-width:899px){
+  .hm-tegels{gap:10px}
+  .hm-tegel{align-items:flex-start;padding:11px 11px 12px;border-radius:18px;border:2px solid var(--bo);box-shadow:0 4px 0 var(--bo2);transition:transform .12s ease,box-shadow .12s ease}
+  .hm-tegel:active{transform:translateY(3px);box-shadow:0 1px 0 var(--bo2)}
+  .hm-tegel .ms-art{width:46px;height:46px}
+  .hm-tegel .ms-art svg{width:38px;height:38px}
+  .hm-tegel b{font:800 15px/1.2 var(--font-head);margin-top:9px;letter-spacing:-.01em}
+  .ht-tr{--t1:#e6bd63;--t2:rgba(230,189,99,.3);background:radial-gradient(120% 120% at 100% 0%,rgba(230,189,99,.26),transparent 55%),linear-gradient(150deg,#1d2130,#12141d);border-color:#23283a;color:#f4f1ea;box-shadow:0 4px 0 #07080d}
+  .ht-tr:active{box-shadow:0 1px 0 #07080d}
+  .ht-tr .ms-art{background:rgba(230,189,99,.12)}
+  .ht-tr small{color:rgba(244,241,234,.62)}
+  .ht-ar{border-color:#2a1d55;box-shadow:0 4px 0 #0d0820}
+  .ht-ar:active{box-shadow:0 1px 0 #0d0820}
+  .ht-ar .ht-art{width:46px;height:46px;border-radius:13px;background:#3b2a78}
+}
+.hm-zoekbalk-t{flex-direction:column;align-items:flex-start;gap:1px}
+.hm-zoekbalk-vb{font-size:13px;line-height:1.2;max-width:100%}
+.hm-zoekbalk-vb::before{content:none}
+.hm-zoekbalk-vast{line-height:1.15}
+.hnav-menu-btn{border:2px solid var(--bo);background:var(--s);box-shadow:0 3px 0 var(--bo2);border-radius:13px;transition:transform .12s ease,box-shadow .12s ease}
+.hnav-menu-btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--bo2)}
+.hnav-menu-btn svg{color:var(--or);stroke-width:2.2}
+/* vakpagina-tabbladen als dikke Slagio-knop in de vakkleur */
+.vd-tabs{border:2px solid var(--bo);padding:5px;border-radius:16px}
+.vd-tab{font:800 15px var(--font-head);letter-spacing:-.01em}
+.vd-tab.on{color:var(--vk,var(--or))}
+.vd-tabs-pil{top:5px;bottom:7px;left:5px;width:calc(50% - 5px);border-radius:11px;border:2px solid color-mix(in srgb,var(--vk,var(--or)) 35%,var(--bo));box-shadow:0 3px 0 color-mix(in srgb,var(--vk,var(--or)) 30%,var(--bo2))}
+#sc-detail.vd-t-ex .vd-tabs-pil{transform:translateX(100%)}

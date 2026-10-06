@@ -455,77 +455,111 @@ try{document.querySelectorAll('#bottom-nav .bnav-btn,#bottom-nav .snav-btn,#bott
 // ── Mobiel menu (bottom-sheet met alle onderdelen) ──
 // ═══════ MENU (TELEFOON) ═══════
 // Eén menu voor alles wat geen eigen tab heeft. Op de telefoon een bottom sheet
-// met veer-animatie, vegen om te sluiten en tegels die na elkaar binnenkomen.
-// Desktop heeft de zijbalk; wordt het daar toch geopend, dan is het een
-// zwevende kaart in het midden (CSS, @media min-width:900px).
+// in Slagio-stijl: nachtblauw kopje zoals de aftelklok (gloed in de niveaukleur),
+// Vonk die over de rand kijkt, dikke tegels met tekeningen in Vonk-stijl (vlak,
+// twee tinten) en per tegel wat er nu speelt. Veer-animatie, vegen om te sluiten.
+// Desktop heeft de zijbalk; daar is dit een zwevende kaart (CSS, min-width:900px).
+const _MS_ART={
+  examens:'<rect x="9" y="5" width="25" height="33" rx="4" fill="var(--t2)"/><rect x="14" y="12" width="14" height="3.2" rx="1.6" fill="var(--t1)"/><rect x="14" y="18.5" width="10" height="3.2" rx="1.6" fill="var(--t1)"/><rect x="14" y="25" width="12" height="3.2" rx="1.6" fill="var(--t1)" opacity=".55"/><circle cx="34" cy="35" r="9" fill="var(--t1)"/><path d="M30 35.2l2.8 2.8 5-5.6" stroke="#fff" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+  herhalen:'<rect x="7" y="7" width="23" height="29" rx="4.5" fill="var(--t2)"/><rect x="17" y="13" width="23" height="29" rx="4.5" fill="var(--t1)"/><path d="M33.6 26.5a5.2 5.2 0 1 1-1.9-4.1" stroke="#fff" stroke-width="2.7" fill="none" stroke-linecap="round"/><path d="M32.6 19.4l.4 3.6-3.6.6" stroke="#fff" stroke-width="2.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+  fouten:'<rect x="9" y="5" width="27" height="36" rx="4.5" fill="var(--t1)"/><rect x="33" y="9" width="6" height="29" rx="2.5" fill="var(--t2)"/><rect x="13" y="5" width="3.5" height="36" fill="#000" opacity=".12"/><path d="M20 18l8 8M28 18l-8 8" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>',
+  plan:'<rect x="7" y="10" width="34" height="30" rx="5" fill="var(--t2)"/><path d="M7 15a5 5 0 0 1 5-5h24a5 5 0 0 1 5 5v4H7z" fill="var(--t1)"/><rect x="14" y="6" width="3.6" height="9" rx="1.8" fill="var(--t1)"/><rect x="30.4" y="6" width="3.6" height="9" rx="1.8" fill="var(--t1)"/><path d="M17 29.5l4.2 4.2 9-9.6" stroke="var(--t1)" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+  rooster:'<rect x="20.5" y="3.5" width="7" height="5" rx="2" fill="var(--t1)"/><circle cx="24" cy="26" r="17" fill="var(--t1)"/><circle cx="24" cy="26" r="12.5" fill="#fff"/><path d="M24 26v-8M24 26l5.5 3.4" stroke="var(--t1)" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="26" r="2.4" fill="var(--t1)"/>',
+  voortgang:'<rect x="7" y="27" width="9" height="13" rx="2.5" fill="var(--t2)"/><rect x="19.5" y="19" width="9" height="21" rx="2.5" fill="var(--t2)"/><rect x="32" y="9" width="9" height="31" rx="2.5" fill="var(--t1)"/><path d="M9 20l9-7 7 4 11-10" stroke="var(--t1)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>',
+  cijfers:'<rect x="10" y="4" width="28" height="40" rx="6" fill="var(--t1)"/><rect x="14.5" y="8.5" width="19" height="9" rx="2.5" fill="var(--t2)"/><g fill="#fff"><circle cx="17.5" cy="24.5" r="2.5"/><circle cx="24" cy="24.5" r="2.5"/><circle cx="30.5" cy="24.5" r="2.5"/><circle cx="17.5" cy="31" r="2.5"/><circle cx="24" cy="31" r="2.5"/><circle cx="30.5" cy="31" r="2.5"/><circle cx="17.5" cy="37.5" r="2.5"/><circle cx="24" cy="37.5" r="2.5"/></g><rect x="28" y="34.5" width="5" height="6" rx="2.5" fill="var(--t2)"/>',
+  trainer:'<circle cx="22" cy="26" r="17" fill="var(--t2)"/><circle cx="22" cy="26" r="11" fill="#fff"/><circle cx="22" cy="26" r="5.5" fill="var(--t1)"/><path d="M22 26L40 8" stroke="var(--t1)" stroke-width="3.2" stroke-linecap="round"/><path d="M35 6.5l5.5 1.5L42 13.5l-3.8-1.2z" fill="var(--t1)"/>',
+  arcade:'<rect x="4" y="14" width="40" height="22" rx="11" fill="var(--t1)"/><rect x="11" y="23.5" width="10" height="3.4" rx="1.7" fill="#fff"/><rect x="14.3" y="20.2" width="3.4" height="10" rx="1.7" fill="#fff"/><circle cx="32" cy="22.5" r="3" fill="var(--t2)"/><circle cx="37" cy="28" r="3" fill="#fff"/><rect x="18" y="9" width="12" height="7" rx="3" fill="var(--t2)"/>',
+  wedstrijd:'<path d="M13 6h22v10a11 11 0 0 1-22 0z" fill="var(--t1)"/><path d="M13.5 10H8.5a5.5 5.5 0 0 0 6.5 8M34.5 10h5a5.5 5.5 0 0 1-6.5 8" stroke="var(--t1)" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="21.5" y="26" width="5" height="7" fill="var(--t1)"/><rect x="13" y="32" width="22" height="9" rx="3" fill="var(--t2)"/><path d="M24 10.5l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z" fill="#fff"/>',
+  groep:'<circle cx="31.5" cy="16" r="6.5" fill="var(--t2)"/><path d="M20 38a11.5 11.5 0 0 1 23 0z" fill="var(--t2)"/><circle cx="18.5" cy="18.5" r="7.5" fill="var(--t1)"/><path d="M5 41a13.5 13.5 0 0 1 27 0z" fill="var(--t1)"/>',
+  winkel:'<path d="M16.5 17v-3.5a7.5 7.5 0 0 1 15 0V17" stroke="var(--t1)" stroke-width="3.4" fill="none" stroke-linecap="round"/><rect x="7" y="15" width="31" height="26" rx="6" fill="var(--t1)"/><rect x="7" y="15" width="31" height="6" rx="3" fill="#000" opacity=".1"/><circle cx="35" cy="35" r="9" fill="#f6b11c"/><circle cx="35" cy="35" r="5.8" fill="#ffd45c"/><path d="M35 31.5v7" stroke="#d98a00" stroke-width="2.4" stroke-linecap="round"/>',
+  profiel:'<circle cx="24" cy="24" r="19" fill="var(--t2)"/><circle cx="24" cy="19.5" r="7" fill="var(--t1)"/><path d="M11.5 37.5a13 13 0 0 1 25 0A18.8 18.8 0 0 1 24 43a18.8 18.8 0 0 1-12.5-5.5z" fill="var(--t1)"/>'
+};
+function _msArt(n){return '<svg viewBox="0 0 48 48" aria-hidden="true">'+(_MS_ART[n]||'')+'</svg>';}
 const _MS_IC={
   zoek:'<circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-4.3-4.3"/>',
-  examens:'<path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H18v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H18v-3"/><path d="M9 8h5M9 11h3"/>',
-  herhalen:'<path d="M17 2.5 21 6l-4 3.5"/><path d="M3 11V9.5A3.5 3.5 0 0 1 6.5 6H21"/><path d="M7 21.5 3 18l4-3.5"/><path d="M21 13v1.5a3.5 3.5 0 0 1-3.5 3.5H3"/>',
-  fouten:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/><path d="m10 7 4 4m0-4-4 4"/>',
-  vonk:'<path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/>',
-  plan:'<rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M8 2.5v4M16 2.5v4M3 10h18M8 14h4M8 17.5h7"/>',
-  rooster:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
-  voortgang:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
-  cijfers:'<rect x="4" y="2.5" width="16" height="19" rx="2.5"/><path d="M8 7h8M8 11.5h.01M12 11.5h.01M16 11.5h.01M8 15.5h.01M12 15.5h.01M16 15.5v2.5M8 18.5h4"/>',
-  trainer:'<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/>',
-  arcade:'<rect x="2" y="7" width="20" height="11" rx="5.5"/><path d="M7 10.5v4M5 12.5h4"/><circle cx="15.5" cy="11.5" r="1" fill="currentColor"/><circle cx="18" cy="13.5" r="1" fill="currentColor"/>',
-  wedstrijd:'<path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4M17 6h2.5a2.5 2.5 0 0 1-2.5 4M12 14v3M8.5 21h7M9.5 17.5h5"/>',
-  groep:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20v-1a5 5 0 0 1 5-5h3a5 5 0 0 1 5 5v1"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 14.2A5 5 0 0 1 21.5 19v1"/>',
-  winkel:'<path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/>',
-  profiel:'<circle cx="12" cy="8" r="4"/><path d="M4 21v-.5A6.5 6.5 0 0 1 10.5 14h3a6.5 6.5 0 0 1 6.5 6.5v.5"/>',
-  help:'<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8 1c0 1.7-2.4 2.2-2.4 3.7M12 17.3h.01"/>',
   geluid:'<path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/>',
   maan:'<path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z"/>',
-  wissel:'<path d="M7 4 3 8l4 4"/><path d="M3 8h14"/><path d="m17 12 4 4-4 4"/><path d="M21 16H7"/>'
+  wissel:'<path d="M7 4 3 8l4 4"/><path d="M3 8h14"/><path d="m17 12 4 4-4 4"/><path d="M21 16H7"/>',
+  help:'<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8 1c0 1.7-2.4 2.2-2.4 3.7M12 17.3h.01"/>'
 };
 function _msSvg(n){return '<svg viewBox="0 0 24 24" aria-hidden="true">'+(_MS_IC[n]||'')+'</svg>';}
+// Wat er nu speelt per tegel: kort, echt en alleen als het iets zegt.
+function _msStand(){
+  const st={};
+  try{const n=(typeof fbDueCount==='function')?fbDueCount():0;st.fouten=n>0?{t:n+' klaar',heet:1}:{t:'je fouten'};}catch(e){}
+  try{const n=(typeof herhaalDueCount==='function')?herhaalDueCount():0;st.herhalen=n>0?{t:n+' klaar',heet:1}:{t:'alles bij'};}catch(e){}
+  try{const t=getCountdownTarget();if(t){const d=Math.ceil(((t.dt||new Date(t.datum))-new Date())/864e5);st.rooster={t:'nog '+d+' dagen'};}}catch(e){}
+  try{st.winkel={t:getCoins()+' munten'};}catch(e){}
+  try{const L=ensureLeague();const d=LEAGUE_DIVISIONS[L.division];if(d)st.wedstrijd={t:d.naam};}catch(e){}
+  try{const m=getMijnVakken();st.plan={t:m.length?'voor '+m.length+' vakken':'maak je plan'};}catch(e){}
+  return st;
+}
 const _MS_GROEPEN=[
-  ['Leren',[
-    ['examens','Examens','ms-c1',"openExamenBieb()"],
-    ['herhalen','Herhalen','ms-c2',"openHerhalen()"],
-    ['fouten','Foutenboek','ms-c3',"openFoutenboek()",'fb'],
-    ['vonk','Vraag Vonk','ms-c4',"openVonkChat()"]]],
-  ['Plannen',[
-    ['plan','Studieplan','ms-c5',"show('sc-studieplan');renderStudieplan()"],
-    ['rooster','Rooster','ms-c6',"show('sc-schedule');renderSchedule()"],
-    ['voortgang','Voortgang','ms-c7',"openRapport()"],
-    ['cijfers','Cijfers','ms-c8',"show('sc-calc');setTimeout(prefillCalcFromSaved,50)"]]],
-  ['Spelen',[
-    ['arcade','Arcade','ms-c9',"arcadeOpen()"],
-    ['wedstrijd','Wedstrijd','ms-c10',"openLeague()"],
-    ['groep','Groep','ms-c11',"show('sc-groep');renderGroepScreen()"],
-    ['winkel','Winkel','ms-c12',"openShop()"]]]
+  ['Leren','ms-g-leer',[
+    ['examens','Examens',"openExamenBieb()",'met antwoorden'],
+    ['herhalen','Herhalen',"openHerhalen()",''],
+    ['fouten','Foutenboek',"openFoutenboek()",'','ms-rood'],
+    ['vonk','Vraag Vonk',"openVonkChat()",'stel je vraag']]],
+  ['Plannen','ms-g-plan',[
+    ['plan','Studieplan',"show('sc-studieplan');renderStudieplan()",''],
+    ['rooster','Rooster',"show('sc-schedule');renderSchedule()",'je examens'],
+    ['voortgang','Voortgang',"openRapport()",'per vak'],
+    ['cijfers','Cijfers',"show('sc-calc');setTimeout(prefillCalcFromSaved,50)",'je eindcijfer']]],
+  ['Spelen','ms-g-spel',[
+    ['arcade','Arcade',"arcadeOpen()",'speel en leer'],
+    ['wedstrijd','Wedstrijd',"openLeague()",'deze week'],
+    ['groep','Groep',"show('sc-groep');renderGroepScreen()",'met je klas'],
+    ['winkel','Winkel',"openShop()",'']]]
 ];
+// Home: de tegels en de zoekbalk krijgen dezelfde tekeningen en Vonk als het menu.
+(function(){
+  try{document.querySelectorAll('.hm-tegel [data-art]').forEach(el=>{el.innerHTML=_msArt(el.dataset.art);});}catch(e){}
+  try{const v=document.getElementById('hm-zoekbalk-vonk');if(v&&typeof mascotSVG==='function')v.innerHTML=mascotSVG('kijk',40);}catch(e){}
+})();
 let _msY0=0,_msDY=0,_msT0=0,_msSleep=false,_msTerugFocus=null;
 function openNavSheet(){
   let ov=document.getElementById('nav-sheet-ov');
   if(ov)ov.remove();
   ov=document.createElement('div');ov.id='nav-sheet-ov';ov.className='ms-ov';
   ov.setAttribute('role','dialog');ov.setAttribute('aria-modal','true');ov.setAttribute('aria-label','Menu');
-  let fb=0;try{fb=(typeof fbDueCount==='function')?fbDueCount():0;}catch(e){}
   let geluid=true;try{geluid=localStorage.getItem(SND_KEY)!=='0';}catch(e){}
   const donker=document.documentElement.classList.contains('dark');
   const niv=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)?APP_LEVEL.toUpperCase():'';
+  let naam='';try{naam=(localStorage.getItem('slagio_naam')||'').trim().split(' ')[0];}catch(e){}
+  let streak=0,munten=0,lvl=1;
+  try{streak=calcStreak().current||0;}catch(e){}try{munten=getCoins();}catch(e){}try{lvl=getLevelForXP(getTotalXP());}catch(e){}
+  const stand=_msStand();
+  const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const ga=code=>"_msGa('"+code.replace(/\\/g,'\\\\').replace(/'/g,"\\'")+"')";
   let i=0;
-  const tegel=([ic,lbl,kl,go,badge])=>'<button class="ms-tegel" style="--i:'+(i++)+'" onclick="_msGa(\''+go.replace(/'/g,"\\'")+'\')">'
-    +'<span class="ms-ic '+kl+'">'+_msSvg(ic)+(badge==='fb'&&fb>0?'<span class="ms-badge">'+(fb>99?'99+':fb)+'</span>':'')+'</span><span class="ms-lbl">'+lbl+'</span></button>';
+  const vonk=(typeof mascotSVG==='function')?mascotSVG('blij',84):'';
+  const vonkKlein=(typeof mascotSVG==='function')?mascotSVG('kijk',40):'';
+  const tegel=([art,lbl,go,sub,extra])=>{
+    const s=stand[art]||(sub?{t:sub}:null);
+    const ic=art==='vonk'?'<span class="ms-art ms-art-vonk">'+vonkKlein+'</span>':'<span class="ms-art">'+_msArt(art)+'</span>';
+    return '<button class="ms-tegel'+(extra?' '+extra:'')+'" style="--i:'+(i++)+'" onclick="'+ga(go)+'">'+ic
+      +'<span class="ms-tt"><b>'+lbl+'</b>'+(s?'<small'+(s.heet?' class="heet"':'')+'>'+esc(s.t)+'</small>':'')+'</span></button>';
+  };
   ov.innerHTML='<div class="ms-sheet" tabindex="-1">'
-    +'<div class="ms-grip" aria-hidden="true"></div>'
-    +'<div class="ms-kop"><div><div class="ms-titel">Menu</div><div class="ms-sub">Alles van Slagio op één plek</div></div>'
-    +'<button class="ms-x" onclick="closeNavSheet()" aria-label="Sluit menu"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>'
-    +'<div class="ms-body">'
-    +'<button class="ms-zoek" style="--i:'+(i++)+'" onclick="_msGa(\'openZoek()\')">'+_msSvg('zoek')+'<span>Vraag het Slagio of zoek iets</span></button>'
-    +'<div class="ms-groot" style="--i:'+(i++)+'">'
-      +'<button class="ms-kaart ms-k-trainer" onclick="_msGa(\'openExamentrainer()\')"><span class="ms-ic">'+_msSvg('trainer')+'</span><b>Examentrainer</b><small>Je verwachte cijfer en wat je vandaag doet</small></button>'
-      +'<button class="ms-kaart ms-k-profiel" onclick="_msGa(\'openProfiel()\')"><span class="ms-ic">'+_msSvg('profiel')+'</span><b>Profiel</b><small>Je account, cijfers en maatje</small></button>'
+    +'<div class="ms-kop">'
+      +'<div class="ms-vonk" aria-hidden="true">'+vonk+'</div>'
+      +'<div class="ms-grip" aria-hidden="true"></div>'
+      +'<div class="ms-kop-rij"><div><div class="ms-titel">'+(naam?'Hoi '+esc(naam)+'!':'Hoi!')+'</div><div class="ms-sub">Waar gaan we heen?</div></div>'
+      +'</div>'
+      +'<div class="ms-stats"><span><i class="ms-st-vuur"></i>'+streak+' <em>streak</em></span><span><i class="ms-st-munt"></i>'+munten+' <em>munten</em></span><span><i class="ms-st-ster"></i>level '+lvl+'</span><button class="ms-x" onclick="closeNavSheet()" aria-label="Sluit menu"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>'
+      +'<button class="ms-zoek" onclick="'+ga('openZoek()')+'">'+_msSvg('zoek')+'<span>Vraag het Slagio of zoek iets</span></button>'
     +'</div>'
-    +_MS_GROEPEN.map(([kop,items])=>'<div class="ms-groep"><div class="ms-groep-kop" style="--i:'+(i++)+'">'+kop+'</div><div class="ms-raster">'+items.map(tegel).join('')+'</div></div>').join('')
+    +'<div class="ms-body">'
+    +'<div class="ms-groot" style="--i:'+(i++)+'">'
+      +'<button class="ms-kaart ms-k-trainer" onclick="'+ga('openExamentrainer()')+'"><span class="ms-art">'+_msArt('trainer')+'</span><span class="ms-tt"><b>Examentrainer</b><small>jouw cijfer</small></span></button>'
+      +'<button class="ms-kaart ms-k-profiel" onclick="'+ga('openProfiel()')+'"><span class="ms-art">'+_msArt('profiel')+'</span><span class="ms-tt"><b>Profiel</b><small>je account</small></span></button>'
+    +'</div>'
+    +_MS_GROEPEN.map(([kop,kl,items])=>'<section class="ms-groep '+kl+'"><h3 class="ms-groep-kop" style="--i:'+(i++)+'">'+kop+'</h3><div class="ms-raster">'+items.map(tegel).join('')+'</div></section>').join('')
     +'<div class="ms-lijst" style="--i:'+(i++)+'">'
       +'<div class="ms-rij"><span class="ms-rij-ic">'+_msSvg('geluid')+'</span><span class="ms-rij-t">Geluid</span><button class="ms-switch'+(geluid?' aan':'')+'" role="switch" aria-checked="'+geluid+'" aria-label="Geluid" onclick="_msSchakel(this,\'geluid\')"><i></i></button></div>'
       +'<div class="ms-rij"><span class="ms-rij-ic">'+_msSvg('maan')+'</span><span class="ms-rij-t">Nachtmodus</span><button class="ms-switch'+(donker?' aan':'')+'" role="switch" aria-checked="'+donker+'" aria-label="Nachtmodus" onclick="_msSchakel(this,\'donker\')"><i></i></button></div>'
-      +'<button class="ms-rij" onclick="_msGa(\'show(\\\'sc-welcome\\\')\')"><span class="ms-rij-ic">'+_msSvg('wissel')+'</span><span class="ms-rij-t">Niveau</span><span class="ms-rij-w">'+niv+'</span><span class="ms-rij-pijl">›</span></button>'
-      +'<button class="ms-rij" onclick="_msGa(\'showIntroModal()\')"><span class="ms-rij-ic">'+_msSvg('help')+'</span><span class="ms-rij-t">Hoe werkt Slagio?</span><span class="ms-rij-pijl">›</span></button>'
+      +'<button class="ms-rij" onclick="'+ga("show('sc-welcome')")+'"><span class="ms-rij-ic">'+_msSvg('wissel')+'</span><span class="ms-rij-t">Ander niveau</span><span class="ms-rij-w">'+niv+'</span><span class="ms-rij-pijl">›</span></button>'
+      +'<button class="ms-rij" onclick="'+ga('showIntroModal()')+'"><span class="ms-rij-ic">'+_msSvg('help')+'</span><span class="ms-rij-t">Hoe werkt Slagio?</span><span class="ms-rij-pijl">›</span></button>'
     +'</div>'
     +'</div></div>';
   ov.addEventListener('click',e=>{if(e.target===ov)closeNavSheet();});

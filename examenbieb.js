@@ -96,6 +96,7 @@ function _ebStart(soort) {
 function vdTab(t, stil) {
   const sc = document.getElementById('sc-detail'); if (!sc) return;
   sc.classList.toggle('vd-t-ex', t === 'ex');
+  try { if (ST.vak && ST.vak.kleur) sc.style.setProperty('--vk', ST.vak.kleur); } catch (e) {}
   sc.querySelectorAll('.vd-tab').forEach(b => { const on = b.dataset.t === t; b.classList.toggle('on', on); b.setAttribute('aria-selected', on); });
   const pane = document.getElementById('vd-examens');
   if (pane) pane.hidden = t !== 'ex';
