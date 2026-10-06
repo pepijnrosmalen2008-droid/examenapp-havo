@@ -11862,3 +11862,59 @@ button.ms-rij:active{background:var(--bg2)}
 .zk-ai-stip i:nth-child(2){animation-delay:.15s}.zk-ai-stip i:nth-child(3){animation-delay:.3s}
 @keyframes zkStip{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}
 @media(prefers-reduced-motion:reduce){.zk-ai-stip i{animation:none;opacity:.6}}
+
+/* ═══════ VONK NA DE SESSIE ═══════ */
+#res-vonk:empty{display:none}
+.rv-kaart{position:relative;display:flex;gap:12px;align-items:flex-start;margin:14px 0 4px;padding:14px 14px 14px 10px;border-radius:22px;text-align:left;color:#fff;
+  background:radial-gradient(110% 120% at 0% 0%,rgba(var(--or-rgb),.45),transparent 60%),linear-gradient(160deg,#141a33,#0d1124);border:1px solid rgba(255,255,255,.1);box-shadow:0 10px 30px -14px rgba(var(--or-rgb),.55);animation:rvIn .6s cubic-bezier(.22,1,.36,1) .25s both}
+@keyframes rvIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.rv-vonk{flex-shrink:0;width:76px;height:76px;margin-top:-4px;animation:rvVonk .7s cubic-bezier(.34,1.56,.64,1) .45s both}
+@keyframes rvVonk{from{opacity:0;transform:translateY(16px) scale(.7)}to{opacity:1;transform:none}}
+.rv-vonk svg{width:76px;height:76px;display:block}
+.rv-inh{min-width:0;flex:1}
+.rv-naam{font:800 12px var(--font-head);letter-spacing:.1em;text-transform:uppercase;color:#ffcc33}
+.rv-tekst{position:relative;margin:4px 0 12px;font-size:15.5px;line-height:1.45;color:#fff}
+.rv-tekst b{color:#fff;background:rgba(255,255,255,.12);padding:0 5px;border-radius:6px}
+.rv-knoppen{display:flex;flex-wrap:wrap;gap:8px}
+.rv-knop{height:42px;padding:0 16px;border:0;border-radius:13px;background:var(--or);color:#fff;font:800 14.5px var(--font-head);cursor:pointer;box-shadow:0 3px 0 color-mix(in srgb,var(--or) 55%,#000);transition:transform .12s ease,box-shadow .12s ease}
+.rv-knop:active{transform:translateY(2px);box-shadow:0 1px 0 color-mix(in srgb,var(--or) 55%,#000)}
+.rv-geel{background:#ffcc33;color:#3b2500;box-shadow:0 3px 0 #c48a00}
+.rv-geel:active{box-shadow:0 1px 0 #c48a00}
+/* uitleg-sheet: hergebruikt het menu-sheet (.ms-*) */
+.vu-vraag{padding:14px;border-radius:18px;background:var(--s);border:2px solid var(--bo);box-shadow:0 4px 0 var(--bo2)}
+.vu-v{margin:0 0 4px;font:800 15px/1.4 var(--font-head);color:var(--dk)}
+.vu-mijn{margin:6px 0 0;font-size:14px;color:#dc2626}
+.vu-goed{margin:4px 0 0;font-size:14px;color:#16a34a}
+.vu-u{margin:6px 0 0;font-size:14px;color:var(--dk);line-height:1.5}
+.vu-acties{display:flex;flex-direction:column;gap:10px;padding-bottom:6px}
+.vu-acties .rv-knop{height:50px;font-size:16px}
+.vu-ai{border:0;background:none;color:var(--or);font:700 14px var(--font);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:6px}
+.vu-sluit{border:0;background:none;color:var(--mu);font:700 14px var(--font);cursor:pointer;padding:6px}
+/* één Vonk tegelijk: in de quiz heeft Vonk al een eigen plek */
+body:has(#sc-quiz.on) #vonk-corner{display:none!important}
+@media(prefers-reduced-motion:reduce){.rv-kaart,.rv-vonk{animation:none}}
+body:has(#sc-res.on #res-vonk .rv-kaart) #vonk-corner{display:none!important}
+
+/* ═══════ VONK-CHAT IN SLAGIO-STIJL ═══════
+   Zelfde wereld als het menu: nachtblauwe kop met gloed in de niveaukleur,
+   grote Vonk, dikke knoppen en invoer. */
+.vchat-card{border-radius:28px 28px 0 0;border:0;background:var(--bg);overflow:hidden}
+.vchat-head{position:relative;gap:12px;padding:14px 16px 16px;border-bottom:0;color:#fff;
+  background:radial-gradient(110% 130% at 90% -30%,rgba(var(--or-rgb),.7),transparent 60%),linear-gradient(160deg,#0c0d1a,#0f1022 55%,#080912);box-shadow:0 10px 26px -16px rgba(var(--or-rgb),.7)}
+.vchat-fox{width:60px;height:60px;margin:-6px 0 -6px -4px}
+.vchat-fox .m-svg,.vchat-fox svg{width:60px;height:60px}
+.vchat-name{font-size:20px;color:#fff;letter-spacing:-.01em}
+.vchat-sub{font-size:13px;color:rgba(255,255,255,.65);font-weight:600}
+.vchat-quota{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.14);font-size:11px;padding:4px 10px}
+.vchat-quota.plus{background:rgba(230,189,99,.18);color:#e6bd63;border-color:rgba(230,189,99,.35)}
+.vchat-quota.op{background:rgba(239,68,68,.2);color:#fecaca}
+.vchat-x{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);color:#fff;font-size:14px;display:grid;place-items:center;padding:0}
+.vchat-msgs{padding:16px 14px;gap:12px}
+.vchat-bubble{font-size:15px;line-height:1.55;padding:11px 14px;border-radius:18px;border:2px solid var(--bo);box-shadow:0 3px 0 var(--bo2)}
+.vchat-row.user .vchat-bubble{box-shadow:0 3px 0 color-mix(in srgb,var(--or) 55%,#000);border:0}
+.vchat-chip{font:700 13px var(--font);padding:9px 13px;border-radius:14px;border:2px solid var(--bo);box-shadow:0 3px 0 var(--bo2);color:var(--dk);transition:transform .12s,box-shadow .12s}
+.vchat-chip:active{transform:translateY(2px);box-shadow:0 1px 0 var(--bo2)}
+.vchat-input{border-top:0;background:var(--bg);padding:10px 12px calc(12px + env(safe-area-inset-bottom))}
+.vchat-input textarea{border:2px solid var(--bo);border-radius:16px;font-size:15px;padding:11px 14px;background:var(--s);box-shadow:0 3px 0 var(--bo2)}
+.vchat-send{width:46px;height:46px;border-radius:15px;box-shadow:0 3px 0 color-mix(in srgb,var(--or) 55%,#000)}
+.vchat-send:active{transform:translateY(2px);box-shadow:0 1px 0 color-mix(in srgb,var(--or) 55%,#000)}

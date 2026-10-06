@@ -26,6 +26,7 @@ function openQmode(did){
 }
 
 function startQ(mode){
+  if(typeof ST!=='undefined')ST._vonkTest=null;
   try{ if(typeof _funnel==='function')_funnel('action'); }catch(e){} // trechter: eerste echte engagement
   if(mode==='oud')trackEvent('oud_examen_quiz',{vak:ST.vak?.naam||null,domein:ST.domein?.naam||null});
   // If oud-examen mode and domain has year-tagged questions → show picker first
@@ -443,7 +444,7 @@ function _kiesReveal(gekozen,correct,btns){
   const tijdOver=Math.max(0,ST.tijd);
   ST.tijdPerVraag.push(tijdOver);
   aqpRecord(ST.vragen[ST.idx], ok?1:0);
-  ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver,d:q.d||1});
+  ST.antwrd.push({pts:ok?1:0,chosenText:q.o[chosenOrigIdx],tijdOver,d:q.d||1,vi:ST.idx,ci:chosenOrigIdx});
   try{if(typeof fbRecord==='function')fbRecord(q,ok,q.o[chosenOrigIdx]);}catch(e){}
   // Vonk reageert kort bij een FOUT antwoord (de combo-viering doet de in-scherm
   // Vonk-cameo bij het doorklikken, dus geen dubbele Vonk meer bij een goede reeks).
@@ -483,7 +484,7 @@ function tijdOp(){
   if(ST.adaptive){ST.aqLevel=Math.max(1,ST.aqLevel-1);ST.aqFout=ST.vragen[ST.idx];}
   ST.tijdPerVraag.push(0);
   aqpRecord(ST.vragen[ST.idx], 0);
-  ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0,d:q.d||1});
+  ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0,d:q.d||1,vi:ST.idx,ci:-1});
   try{if(typeof fbRecord==='function')fbRecord(q,false,null);}catch(e){}
   saveQuizDraft();
   const correct=ST.shuffleMap.indexOf(q.c);
@@ -1587,6 +1588,7 @@ function toonRes(){
     }
     const rbdEl=document.getElementById('rbd');
     if(rbdEl)rbdEl.innerHTML=bdHtml;
+    try{if(typeof renderResVonk==='function')renderResVonk();}catch(e){}
     // (Share-kaart weg uit de gelijktijdige laag - hoort niet in het finish-moment.)
     // (Persoonlijk-record-banner verwijderd op verzoek - minder tegels op het resultaatscherm.)
     // (Tweede PB-banner + losse "smart next action" + "volgend domein"-knop

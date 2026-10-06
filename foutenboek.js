@@ -570,7 +570,7 @@ function openVonkChat(opts) {
     <div class="vchat-card" role="dialog" aria-label="Chat met Vonk">
       <div class="vchat-head">
         <div class="vchat-fox" id="vchat-fox">${_vchatFox('blij')}</div>
-        <div class="vchat-hd"><div class="vchat-name">Vonk <span class="vchat-badge">AI-studiecoach</span></div><div class="vchat-sub">${sub}</div></div>
+        <div class="vchat-hd"><div class="vchat-name">Vonk</div><div class="vchat-sub">${sub}</div></div>
         <span class="vchat-quota" id="vchat-quota"></span>
         <button class="vchat-x" onclick="closeVonkChat()" aria-label="Sluiten">✕</button>
       </div>
@@ -659,4 +659,125 @@ async function sendVonkChat(seed) {
   } else {
     _vchatPush('assistant', `Ik kon je nu even niet antwoorden. Probeer het zo nog eens, of stel je vraag anders. 💪`, true);
   }
+}
+
+
+// ═══════ VONK NA DE SESSIE ═══════
+// Vonk kijkt na een snelle quiz waar het misging (per onderwerp `s` van het
+// leerdoel, anders per domein) en zegt dat in gewone taal. Daarna de lus uit de
+// productvisie: Bekijk uitleg → Test me → beter beheerst. De uitleg komt uit de
+// eigen Slagio-stof (uo/uh, FB_UITLEG): gratis. De AI komt pas als de leerling
+// zelf om een andere uitleg vraagt.
+function _rvFouten() {
+  const out = [];
+  (ST.antwrd || []).forEach((a, i) => {
+    if (a.pts === 1) return;
+    const q = ST.vragen && ST.vragen[a.vi != null ? a.vi : i]; if (!q) return;
+    out.push({ q, ci: (typeof a.ci === 'number') ? a.ci : null });
+  });
+  return out;
+}
+function _rvOnderwerp(k) {
+  const d = ST.domein || {};
+  if (k !== '' && Array.isArray(d.onderwerpen) && d.onderwerpen[+k]) return d.onderwerpen[+k];
+  return d.naam || 'dit onderwerp';
+}
+function _rvGroepen() {
+  const g = {};
+  _rvFouten().forEach(x => { const k = Number.isInteger(x.q.s) ? String(x.q.s) : ''; (g[k] = g[k] || []).push(x); });
+  return Object.keys(g).sort((a, b) => g[b].length - g[a].length).map(k => ({ k, naam: _rvOnderwerp(k), items: g[k] }));
+}
+function renderResVonk() {
+  const el = document.getElementById('res-vonk'); if (!el) return;
+  const ask = document.querySelector('#sc-res .res-vonk-ask');
+  if (!ST || ST.mode !== 'snel' || !(ST.antwrd || []).length) { el.innerHTML = ''; if (ask) ask.style.display = ''; return; }
+  if (ask) ask.style.display = 'none';
+  const groepen = _rvGroepen(), nFout = groepen.reduce((n, g) => n + g.items.length, 0);
+  const test = ST._vonkTest; ST._vonkTest = null;
+  let mood, tekst, knoppen = '';
+  const esc = _fbEsc;
+  if (!nFout) {
+    mood = 'trots';
+    tekst = test ? `Yes. <b>${esc(test)}</b> heb je nu te pakken. Morgen nog één keer, dan blijft het hangen.`
+                 : `Foutloos! Dit zit erin. Morgen nog één keer herhalen, dan blijft het hangen.`;
+    knoppen = `<button class="rv-knop" onclick="retryQ()">Nog een ronde</button>`;
+  } else {
+    const top = groepen[0];
+    mood = nFout >= 5 ? 'laag' : 'denk';
+    if (top.k !== '' && top.items.length >= 2) tekst = `Je maakte ${top.items.length} fouten bij <b>${esc(top.naam)}</b>. Ik denk dat ik weet waar het misgaat.`;
+    else if (top.k !== '') tekst = `Het lastigst was <b>${esc(top.naam)}</b>. Zullen we die even samen bekijken?`;
+    else tekst = nFout === 1 ? `Eén foutje. Ik laat je zien waar het misging.` : `Je maakte ${nFout} fouten. Ik laat je per vraag zien waar het misging.`;
+    if (test) tekst = `Bijna! ${tekst}`;
+    knoppen = `<button class="rv-knop" onclick="vonkUitleg('${top.k}')">Bekijk uitleg</button>`
+            + `<button class="rv-knop rv-geel" onclick="vonkTestMe('${top.k}')">Test me</button>`;
+  }
+  const svg = (typeof mascotSVG === 'function') ? mascotSVG(mood, 76) : '';
+  el.innerHTML = `<div class="rv-kaart rv-${mood}"><div class="rv-vonk">${svg}</div><div class="rv-inh"><div class="rv-naam">Vonk</div><p class="rv-tekst">${tekst}</p><div class="rv-knoppen">${knoppen}</div></div></div>`;
+  try { trackEvent('vonk_na_sessie', { fouten: nFout, onderwerp: groepen[0] ? groepen[0].naam : null, test: !!test }); } catch (e) {}
+}
+// Uitleg uit de eigen stof, per foute vraag van dat onderwerp.
+function vonkUitleg(k) {
+  const g = _rvGroepen().find(x => x.k === String(k)) || _rvGroepen()[0]; if (!g) return;
+  ensureFbUitleg(() => {
+    let ov = document.getElementById('vu-ov'); if (ov) ov.remove();
+    ov = document.createElement('div'); ov.id = 'vu-ov'; ov.className = 'ms-ov vu-ov';
+    ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Uitleg van Vonk');
+    const svg = (typeof mascotSVG === 'function') ? mascotSVG('lees', 84) : '';
+    const items = g.items.slice(0, 5).map((x, i) => {
+      const q = x.q, uit = fbChoiceHTML(q, x.ci);
+      const mijn = x.ci != null && x.ci >= 0 && q.o ? q.o[x.ci] : null;
+      const meta = (typeof fbWhyWrongHTML === 'function') ? fbWhyWrongHTML(q) : '';
+      return `<div class="vu-vraag" style="--i:${i + 1}"><p class="vu-v">${_fbEsc(q.v)}</p>`
+        + (uit || `${mijn ? `<p class="vu-mijn">Jouw antwoord: <b>${_fbEsc(mijn)}</b></p>` : ''}<p class="vu-goed">Juist: <b>${_fbEsc(q.o ? q.o[q.c] : '')}</b></p>${q.u ? `<p class="vu-u">${_fbEsc(q.u)}</p>` : ''}`)
+        + meta + `</div>`;
+    }).join('');
+    ov.innerHTML = `<div class="ms-sheet" tabindex="-1"><div class="ms-kop"><div class="ms-vonk" aria-hidden="true">${svg}</div><div class="ms-grip" aria-hidden="true"></div>
+        <div class="ms-kop-rij"><div><div class="ms-titel">Zo zit het</div><div class="ms-sub">${_fbEsc(g.naam)}</div></div></div></div>
+      <div class="ms-body">${items}
+        <div class="vu-acties" style="--i:9"><button class="rv-knop rv-geel" onclick="vonkUitlegSluit();vonkTestMe('${g.k}')">Test me</button>
+        <button class="vu-ai" onclick="vonkAndersUitleggen('${g.k}')">Snap je het nog niet? Vraag Vonk om het anders uit te leggen</button>
+        <button class="vu-sluit" onclick="vonkUitlegSluit()">Sluiten</button></div></div></div>`;
+    ov.addEventListener('click', e => { if (e.target === ov) vonkUitlegSluit(); });
+    document.body.appendChild(ov);
+    document.documentElement.classList.add('ms-open');
+    const sh = ov.querySelector('.ms-sheet');
+    try { if (typeof _msSleepWire === 'function') _msSleepWire(ov, sh); } catch (e) {}
+    requestAnimationFrame(() => requestAnimationFrame(() => { ov.classList.add('open'); try { sh.focus({ preventScroll: true }); } catch (e) {} }));
+    try { trackEvent('vonk_uitleg', { onderwerp: g.naam, n: g.items.length }); } catch (e) {}
+  });
+}
+function vonkUitlegSluit() {
+  const ov = document.getElementById('vu-ov'); if (!ov) return;
+  ov.classList.remove('open'); ov.classList.add('dicht'); document.documentElement.classList.remove('ms-open');
+  setTimeout(() => ov.remove(), 380);
+}
+// Pas hier de AI: een andere uitleg, met de eigen stof en de fouten als bron.
+function vonkAndersUitleggen(k) {
+  const g = _rvGroepen().find(x => x.k === String(k)) || _rvGroepen()[0]; if (!g) return;
+  const bron = g.items.slice(0, 4).map(x => {
+    const q = x.q, mijn = x.ci != null && x.ci >= 0 && q.o ? q.o[x.ci] : '(geen antwoord)';
+    const w = Array.isArray(q.uo) && x.ci != null && x.ci >= 0 ? q.uo[x.ci] : '';
+    return `Vraag: ${q.v}\nGekozen: ${mijn}\nJuist: ${q.o ? q.o[q.c] : ''}${w ? '\nWaarom fout: ' + w : ''}`;
+  }).join('\n\n');
+  vonkUitlegSluit();
+  try { openVonkChat({ vak: ST.vak && ST.vak.naam, onderwerp: g.naam, bron: bron.slice(0, 1400),
+    seedUser: `Ik snap ${g.naam} nog niet goed. Kun je het op een andere manier uitleggen, zodat ik zie waar mijn denkfout zit?` }); } catch (e) {}
+}
+// Test me: een paar nieuwe vragen over hetzelfde onderwerp, plus de vragen die fout gingen.
+function vonkTestMe(k) {
+  const dom = ST.domein; if (!dom) return;
+  const g = _rvGroepen().find(x => x.k === String(k)), gevraagd = new Set(ST.vragen || []);
+  const fout = (g ? g.items : _rvFouten()).map(x => x.q);
+  const mix = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  let nieuw = (dom.sv || []).filter(q => !gevraagd.has(q) && (String(k) !== '' ? String(q.s) === String(k) : true));
+  let set = mix(nieuw).slice(0, Math.max(2, 5 - Math.min(3, fout.length))).concat(mix(fout).slice(0, 3));
+  if (set.length < 3) set = set.concat(mix((dom.sv || []).filter(q => !set.includes(q))).slice(0, 3 - set.length));
+  set = mix(set).slice(0, 5);
+  if (!set.length) return;
+  const naam = g ? g.naam : (dom.naam || '');
+  ST.domein = Object.assign({}, dom, { sv: set });
+  try { startQ('snel'); } finally { ST.domein = dom; }
+  ST._vonkTest = naam;
+  try { const m = document.getElementById('qmeta'); if (m) m.textContent = `Test me · ${naam}`; } catch (e) {}
+  try { trackEvent('vonk_test_me', { onderwerp: naam, n: set.length }); } catch (e) {}
 }
