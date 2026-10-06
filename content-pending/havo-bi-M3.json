@@ -1,0 +1,684 @@
+{
+ "id": "M3",
+ "naam": "Enzymwerking",
+ "beschrijving": "Je weet wat een enzym is en hoe het een reactie versnelt, en je kunt grafieken van enzymactiviteit bij verschillende temperaturen en pH verklaren met optimum en denaturatie.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Wat een enzym is (biokatalysator)",
+  "Activeringsenergie",
+  "Optimumtemperatuur & denaturatie",
+  "pH-optimum",
+  "Substraatspecificiteit",
+  "Herbruikbaarheid",
+  "Transfer: onbekend enzym"
+ ],
+ "sam": "Enzymen zijn eiwitten die als biokatalysator reacties in de cel versnellen door de activeringsenergie te verlagen. Ze leveren zelf geen energie en worden niet verbruikt (herbruikbaar). Elk enzym heeft een actief centrum waardoor bepaalde substraten passend binden (substraatspecifiek). Boven de optimumtemperatuur - of bij een extreme pH - denatureert het enzym: de structuur verandert onomkeerbaar en de activiteit daalt.",
+ "sv": [
+  {
+   "v": "Wat is een enzym?",
+   "o": [
+    "Een eiwit dat als biokatalysator reacties versnelt",
+    "Een hormoon dat een signaal in het lichaam doorgeeft",
+    "Een koolhydraat dat de cel van energie voorziet",
+    "Een vetmolecuul dat in het celmembraan zit"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Een enzym is een eiwit dat als biokatalysator een reactie versnelt en daarbij zelf niet verandert.",
+   "uo": [
+    "Klopt: een enzym is een eiwit dat een reactie versnelt zonder zelf te veranderen. Dat maakt het een biokatalysator.",
+    "Koos je hormoon? Beide 'regelen' iets in het lichaam, maar een hormoon is een signaalstof die via het bloed een boodschap brengt. Een enzym brengt geen boodschap: het versnelt ter plekke een reactie.",
+    "Koos je koolhydraat? Dan denk je dat een enzym de energie levert voor een reactie. Een enzym is geen brandstof; het verlaagt alleen de startdrempel. Koolhydraten zijn de brandstof, enzymen de versnellers.",
+    "Koos je vet? Vetten (fosfolipiden) vormen het membraan, maar enzymen zijn opgebouwd uit aminozuren: het zijn eiwitten. Het verschil zit in de bouwstenen, niet in de plek in de cel."
+   ],
+   "uh": "Enzym = eiwit + versneller. Niet verwarren met hormoon (signaal) of brandstof (energie)."
+  },
+  {
+   "v": "Hoe versnelt een enzym een reactie?",
+   "o": [
+    "Het verwarmt de cel zodat moleculen sneller bewegen",
+    "Het levert zelf extra energie aan de reactie",
+    "Het maakt extra substraat aan",
+    "Het verlaagt de activeringsenergie"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Een enzym verlaagt de activeringsenergie; het levert zelf geen energie.",
+   "uo": [
+    "Koos je verwarmen? Hogere temperatuur versnelt reacties inderdaad, maar dat doet een enzym niet. Het werkt bij de temperatuur die er al is en maakt de reactie sneller door de startdrempel te verlagen.",
+    "Koos je 'levert energie'? Dat is de bekendste enzymvalkuil. Een enzym voegt geen energie toe; het maakt de drempel lager, zodat de reactie met minder startenergie op gang komt.",
+    "Koos je 'maakt substraat aan'? Meer substraat kan de snelheid verhogen, maar een enzym maakt geen substraat. Het zet bestaand substraat sneller om door de activeringsenergie te verlagen.",
+    "Klopt: het enzym verlaagt de activeringsenergie, de drempel om de reactie te starten. Daardoor gaat de reactie sneller zonder dat er energie bij komt."
+   ],
+   "uh": "Versnellen door de drempel te verlagen, niet door energie toe te voegen."
+  },
+  {
+   "v": "Boven 40 °C daalt de enzymactiviteit snel. Wat gebeurt er met het enzym?",
+   "o": [
+    "Het substraat raakt op, dus de reactie stopt",
+    "Het enzym werkt sneller door de extra warmte",
+    "Het enzym denatureert en verliest zijn vorm",
+    "Het enzym wordt in de reactie opgebruikt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Boven de optimumtemperatuur denatureert het enzym: het actief centrum verliest zijn vorm.",
+   "uo": [
+    "Koos je 'substraat raakt op'? Dan zou de daling niets met de temperatuur te maken hebben. Hier daalt de activiteit precies als het warmer wordt: het enzym zelf verandert, niet de hoeveelheid substraat.",
+    "Koos je 'sneller door warmte'? Dat geldt alleen tot het optimum. Daarboven keert het om: de warmte beschadigt de ruimtelijke structuur, zodat het enzym juist slechter werkt.",
+    "Klopt: boven het optimum denatureert het enzym. De ruimtelijke structuur verandert, het actief centrum verliest zijn vorm en het substraat past er niet meer in.",
+    "Koos je 'opgebruikt'? Een enzym wordt niet verbruikt; het komt na elke reactie onveranderd vrij. Een daling bij hogere temperatuur betekent dat het enzym kapotgaat (denatureert), niet dat het op is."
+   ],
+   "uh": "Daling ná de top in een temperatuurgrafiek = denaturatie, niet 'opraken'."
+  },
+  {
+   "v": "Hoe verschillen het optimum en denaturatie?",
+   "o": [
+    "Bij een enzym betekenen ze hetzelfde",
+    "Optimum: beste werking; denaturatie: vorm kapot",
+    "Bij het optimum denatureert het enzym juist",
+    "Denaturatie hoort bij kou, het optimum bij hitte"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Optimum = beste werking; denaturatie = structuur kapot, functie weg (door hitte of extreme pH).",
+   "uo": [
+    "Koos je 'hetzelfde'? Ze liggen in de grafiek juist naast elkaar: het optimum is de top, denaturatie de scherpe daling erna. Het een is het enzym op zijn best, het ander het enzym dat kapotgaat.",
+    "Klopt: het optimum is de temperatuur (of pH) waarbij het enzym het best werkt. Denaturatie is de verandering van de ruimtelijke structuur waardoor de functie wegvalt.",
+    "Koos je dit? Dan verwissel je top en daling. Bij het optimum is de activiteit het hoogst; pas als je daar ver boven komt, verandert de structuur en denatureert het enzym.",
+    "Koos je dit? Kou remt een enzym alleen: de moleculen bewegen trager, maar de vorm blijft heel. Denaturatie door temperatuur gebeurt bij te hoge temperatuur, en kan ook door een extreme pH komen."
+   ],
+   "uh": "Top van de grafiek = optimum; scherpe daling erna = denaturatie."
+  },
+  {
+   "v": "Wat gebeurt er met een enzymmolecuul na de reactie?",
+   "o": [
+    "Het is opgebruikt en verdwijnt uit de cel",
+    "Het verandert zelf in het reactieproduct",
+    "Het komt onveranderd vrij en werkt opnieuw",
+    "Het valt uiteen in kleinere moleculen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Een enzym wordt niet verbruikt: het komt onveranderd vrij en werkt opnieuw.",
+   "uo": [
+    "Koos je 'opgebruikt'? Dat is de hardnekkigste enzymmisvatting. Het substraat wordt omgezet, het enzym niet. Het enzym doet mee, maar komt na afloop precies hetzelfde terug.",
+    "Koos je 'wordt het product'? Dan verwar je enzym en substraat. Het substraat verandert in het product; het enzym helpt alleen en blijft zelf hetzelfde.",
+    "Klopt: het enzym komt onveranderd vrij en kan meteen een volgend substraatmolecuul omzetten. Daardoor kan één enzymmolecuul heel veel reacties versnellen.",
+    "Koos je 'valt uiteen'? Uiteenvallen gebeurt met het substraat bij een afbraakreactie, niet met het enzym. Het enzym blijft heel en is herbruikbaar."
+   ],
+   "uh": "Substraat verandert, enzym niet."
+  },
+  {
+   "v": "Waarom breekt amylase wel zetmeel af, maar geen eiwit?",
+   "o": [
+    "Eiwitten zijn te klein voor het actief centrum",
+    "Zetmeel past qua vorm in het actief centrum",
+    "Amylase werkt alleen bij een zeer hoge pH",
+    "Amylase is bij eiwit al opgebruikt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Een enzym werkt op substraten die passen in zijn actief centrum (vorm en chemische eigenschappen).",
+   "uo": [
+    "Koos je 'te klein'? Het gaat niet om grootte maar om vorm en chemische eigenschappen. Een eiwit past niet in het actief centrum van amylase, hoe groot of klein het ook is.",
+    "Klopt: het actief centrum van amylase heeft een vorm en chemische eigenschappen waar zetmeel in past. Een eiwit past er niet in. Dat heet substraatspecificiteit.",
+    "Koos je pH? pH bepaalt hoe goed een enzym werkt, maar niet wélke stof het afbreekt. Bij elke pH blijft amylase een zetmeelafbreker; eiwit past nooit in zijn actief centrum.",
+    "Koos je 'opgebruikt'? Een enzym raakt niet op. Amylase begint niet eens aan eiwit, omdat eiwit niet in het actief centrum past."
+   ],
+   "uh": "Specificiteit gaat over passende vorm, niet over grootte."
+  },
+  {
+   "v": "Waarom werkt het enzym niet meer, ook niet na afkoelen?",
+   "o": [
+    "Bij 37 °C was het optimum nog niet bereikt",
+    "Het substraat is bij 60 °C opgeraakt",
+    "De hitte remt het enzym tijdelijk af",
+    "Het enzym is gedenatureerd; dat is blijvend"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Denaturatie door hitte is onomkeerbaar: afkoelen herstelt de werking niet.",
+   "uo": [
+    "Koos je dit? Het enzym werkte bij 37 °C juist goed, dus daar zat het bij zijn optimum. Het probleem is niet dat het te koud was, maar dat de hitte iets blijvends heeft veranderd.",
+    "Koos je 'substraat op'? Dan zou nieuw substraat het probleem oplossen. In de proef werkt het enzym met vers substraat ook niet meer: het enzym zelf is veranderd.",
+    "Koos je 'tijdelijk afgeremd'? Dat geldt voor kou: na opwarmen werkt een afgekoeld enzym weer. Na hitte is de ruimtelijke structuur kapot en komt de werking niet terug.",
+    "Klopt: bij 60 °C is het enzym gedenatureerd. De vorm van het actief centrum is blijvend veranderd, dus ook na afkoelen past het substraat er niet meer in."
+   ],
+   "uh": "Kou remt tijdelijk; hitte maakt kapot.",
+   "ctx": "Proef: een enzymoplossing werkt goed bij 37 °C. Je verwarmt hem 10 minuten tot 60 °C en koelt hem af tot 37 °C. Met vers substraat gebeurt er nu niets meer."
+  },
+  {
+   "v": "Pepsine werkt bij pH 2, maar bijna niet bij pH 7. Waarom?",
+   "o": [
+    "Pepsine werkt het best in zuur milieu",
+    "Bij pH 7 is alle pepsine in de maag opgeraakt",
+    "Pepsine werkt alleen goed bij lichaamstemperatuur",
+    "De pH heeft geen invloed op hoe enzymen werken"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Elk enzym heeft een pH-optimum; ver daarvan daalt de activiteit.",
+   "uo": [
+    "Klopt: elk enzym heeft een eigen pH-optimum. Dat van pepsine ligt rond pH 2, passend bij de zure maag. Bij pH 7 ligt het ver buiten dat optimum.",
+    "Koos je 'opgeraakt'? Een enzym raakt niet op door een andere pH. Het is er nog wel, maar het werkt slecht omdat de omgeving niet bij zijn optimum past.",
+    "Koos je temperatuur? In de vraag verandert alleen de pH, de temperatuur blijft gelijk. De verklaring moet dus over de pH gaan.",
+    "Koos je 'geen invloed'? Juist wel: net als bij temperatuur heeft elk enzym een pH waarbij het het best werkt. Daarbuiten daalt de activiteit, en bij een extreme pH kan het denatureren."
+   ],
+   "uh": "pH werkt als temperatuur: er is een optimum."
+  },
+  {
+   "v": "Wat is de beste conclusie over dit enzym?",
+   "o": [
+    "Het optimum ligt rond 75 °C; boven 80 °C denatureert het",
+    "Het denatureert al boven 37 °C, net als onze enzymen",
+    "Bij 85 °C daalt de activiteit omdat het substraat opraakt",
+    "Het werkt het best bij 85 °C, want daar is het het warmst"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 6,
+   "u": "Lees het optimum af uit de meetwaarden; elk enzym heeft een eigen optimumtemperatuur.",
+   "uo": [
+    "Klopt: de activiteit is het hoogst bij 75 °C, dus daar ligt het optimum. De scherpe daling bij 85 °C wijst op denaturatie. Dit enzym is aangepast aan heet water.",
+    "Koos je dit? Dan pas je de regel 'denaturatie boven 37 °C' toe op elk enzym. 37 °C is het optimum van veel menselijke enzymen. De tabel laat zien dat dit enzym tot 75 °C steeds beter werkt.",
+    "Koos je 'substraat op'? In elke buis zit evenveel vers substraat; alleen de temperatuur verschilt. De daling hoort dus bij de temperatuur: het enzym denatureert.",
+    "Koos je dit? Warmer is niet altijd beter. Bij 85 °C is de activiteit juist veel lager dan bij 75 °C. Lees de waarden af in plaats van uit te gaan van 'warmer = sneller'."
+   ],
+   "uh": "37 °C is het optimum van ónze enzymen, niet van alle enzymen.",
+   "ctx": "Een bacterie uit een hete bron maakt een enzym. Gemeten activiteit (zelfde hoeveelheid enzym en substraat): 40 °C: 20 · 60 °C: 55 · 75 °C: 90 · 85 °C: 30."
+  },
+  {
+   "v": "Tot welke groep stoffen behoren vrijwel alle enzymen?",
+   "o": [
+    "Vetten",
+    "Koolhydraten",
+    "Zouten",
+    "Eiwitten"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Enzymen zijn eiwitten; hun vouwing bepaalt hun werking.",
+   "uo": [
+    "Koos je vetten? Vetten zijn bouwstof voor het membraan en een energievoorraad. Enzymen zijn opgebouwd uit aminozuren, en ketens van aminozuren zijn eiwitten.",
+    "Koos je koolhydraten? Koolhydraten zoals zetmeel zijn juist vaak het substraat dat een enzym afbreekt, niet het enzym zelf. Het enzym is een eiwit.",
+    "Koos je zouten? Sommige enzymen hebben een metaalion als hulpje nodig, maar het enzym zelf is een eiwit: een gevouwen keten van aminozuren.",
+    "Klopt: enzymen zijn eiwitten. Hun precieze vouwing bepaalt de vorm van het actief centrum, en daarom kan hitte of een extreme pH ze kapotmaken."
+   ],
+   "uh": "Enzym = eiwit = gevouwen keten van aminozuren."
+  },
+  {
+   "v": "Hoe heet de plek op het enzym waar het substraat bindt?",
+   "o": [
+    "Het celmembraan",
+    "Het ribosoom",
+    "Het actief centrum",
+    "De celkern"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Het substraat bindt in het actief centrum van het enzym.",
+   "uo": [
+    "Koos je celmembraan? Dat is de grens van de hele cel, geen deel van een enzymmolecuul. Het substraat bindt aan een holte in het enzym zelf: het actief centrum.",
+    "Koos je ribosoom? Ribosomen maken eiwitten, dus ook enzymen. Maar de plek waar het substraat aan het enzym bindt is een holte in het enzym: het actief centrum.",
+    "Klopt: het substraat bindt in het actief centrum. De vorm en chemische eigenschappen van die holte bepalen welke stoffen erin passen.",
+    "Koos je celkern? De kern bevat het DNA met de bouwinstructie voor enzymen. De plek waar het substraat bindt zit op het enzymmolecuul zelf: het actief centrum."
+   ],
+   "uh": "Actief centrum = de 'slotholte' van het enzym."
+  },
+  {
+   "v": "Hoe kan een klein beetje enzym veel substraat omzetten?",
+   "o": [
+    "Het enzym groeit tijdens de reactie",
+    "Het enzym is herbruikbaar en raakt niet op",
+    "Het enzym verandert zelf in product",
+    "Het enzym levert de energie voor elke reactie"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Eén enzymmolecuul versnelt veel reacties na elkaar, omdat het niet verbruikt wordt.",
+   "uo": [
+    "Koos je 'groeit'? Een enzym wordt niet groter of meer. Het is steeds hetzelfde molecuul dat de ene reactie na de andere versnelt.",
+    "Klopt: na elke reactie komt het enzym onveranderd vrij en pakt het het volgende substraatmolecuul. Zo zet één enzymmolecuul in korte tijd heel veel substraat om.",
+    "Koos je 'wordt product'? Het substraat wordt product, niet het enzym. Als het enzym zelf veranderde, zou je voor elke reactie een nieuw enzym nodig hebben.",
+    "Koos je 'levert energie'? Een enzym levert geen energie, het verlaagt de drempel. Juist omdat het niets afgeeft of verbruikt, kan het steeds opnieuw meedoen."
+   ],
+   "uh": "Herbruikbaar: weinig enzym, veel product."
+  },
+  {
+   "v": "Waarom stijgt de snelheid boven 8 g/L niet meer?",
+   "o": [
+    "Alle actieve centra zijn bezet",
+    "Het substraat is op",
+    "De enzymen zijn gedenatureerd",
+    "De temperatuur van het mengsel daalt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 6,
+   "u": "Bij een vaste hoeveelheid enzym is de snelheid maximaal als alle actieve centra bezet zijn.",
+   "uo": [
+    "Klopt: bij veel substraat zit er in elk actief centrum al een substraatmolecuul. De enzymen werken op volle kracht; extra substraat moet wachten en verhoogt de snelheid niet.",
+    "Koos je 'substraat op'? In deze proef is er juist steeds méér substraat. De beperking zit dus niet bij het substraat maar bij het aantal enzymen dat tegelijk kan werken.",
+    "Koos je denaturatie? Dan zou de snelheid dalen, niet gelijk blijven. Bovendien veranderen temperatuur en pH niet. De snelheid blijft op zijn maximum: de enzymen zijn verzadigd.",
+    "Koos je temperatuur? Die is in de proef constant gehouden. Als je een factor kiest die niet verandert, kan die het afvlakken niet verklaren."
+   ],
+   "uh": "Afvlakken bij veel substraat = enzymen verzadigd (alle actieve centra bezet).",
+   "ctx": "Proef bij 37 °C met een vaste hoeveelheid enzym. Substraat (g/L) en snelheid: 2: 18 · 4: 33 · 8: 51 · 12: 52 · 16: 52."
+  },
+  {
+   "v": "Wat is de activeringsenergie van een reactie?",
+   "o": [
+    "De energie die vrijkomt bij de reactie",
+    "De drempel die nodig is om de reactie te starten",
+    "De warmte die de cel afgeeft",
+    "De energie die in het product zit"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Activeringsenergie = startdrempel van een reactie; een enzym verlaagt die.",
+   "uo": [
+    "Koos je dit? Dan verwar je de start met de uitkomst. Energie die vrijkomt hoort bij het einde van een reactie. Activeringsenergie is wat je eerst moet investeren om de reactie op gang te krijgen.",
+    "Klopt: de activeringsenergie is de drempel die moleculen moeten halen voordat de reactie begint. Een enzym verlaagt die drempel.",
+    "Koos je warmte? Warmte die een cel afgeeft komt vrij uit reacties zoals de verbranding; dat is een gevolg. De activeringsenergie is de startdrempel van één reactie.",
+    "Koos je 'energie in het product'? Die zegt iets over het eindpunt van de reactie. De activeringsenergie is de 'berg' die tussen begin en eind in zit."
+   ],
+   "uh": "Activeringsenergie is de berg aan het begin, niet de energie aan het eind."
+  },
+  {
+   "v": "In een energiediagram is de 'berg' met enzym lager. Wat betekent dat?",
+   "o": [
+    "Het enzym verlaagt de activeringsenergie",
+    "Het enzym levert extra energie",
+    "De reactie levert minder product",
+    "Het enzym verhoogt de temperatuur"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Lagere berg in een energiediagram = lagere activeringsenergie = snellere reactie.",
+   "uo": [
+    "Klopt: de hoogte van de berg is de activeringsenergie. Met enzym is de berg lager, dus de reactie start makkelijker en gaat sneller.",
+    "Koos je 'levert energie'? Dan lees je de berg als iets wat het enzym toevoegt. De berg is de drempel; een lagere berg betekent dat er minder energie nódig is, niet dat het enzym energie geeft.",
+    "Koos je 'minder product'? Begin- en eindniveau in het diagram veranderen niet door het enzym. Er ontstaat hetzelfde product, alleen sneller.",
+    "Koos je temperatuur? Een energiediagram toont energieniveaus van de stoffen, geen temperatuur. Het enzym verandert alleen de hoogte van de berg."
+   ],
+   "uh": "Alleen de berg verandert; begin en eind blijven gelijk."
+  },
+  {
+   "v": "Wat gebeurt er met de activiteit van een menselijk enzym van 20 naar 37 °C?",
+   "o": [
+    "Die daalt",
+    "Die blijft gelijk",
+    "Die stijgt",
+    "Het enzym denatureert direct"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Tot het optimum stijgt de activiteit met de temperatuur.",
+   "uo": [
+    "Koos je 'daalt'? Dan denk je misschien dat warmte enzymen altijd beschadigt. Onder het optimum werkt warmte juist mee: moleculen bewegen sneller en botsen vaker.",
+    "Koos je 'blijft gelijk'? Enzymactiviteit hangt sterk af van de temperatuur. Tussen 20 en 37 °C zie je in de grafiek een duidelijke stijging.",
+    "Klopt: tot de optimumtemperatuur stijgt de activiteit. Bij veel menselijke enzymen ligt dat optimum rond 37 °C.",
+    "Koos je denaturatie? Denaturatie begint pas als je ruim boven het optimum komt. Bij 37 °C werkt een menselijk enzym juist op zijn best."
+   ],
+   "uh": "Links van de top: warmer = sneller. Rechts van de top: denaturatie."
+  },
+  {
+   "v": "Wat betekent 'denatureren' bij een enzym?",
+   "o": [
+    "Het enzym gaat door de warmte extra snel werken",
+    "Het enzym maakt meer product",
+    "Het actief centrum bindt daarna juist meer substraat",
+    "Zijn ruimtelijke structuur verandert; de functie valt weg"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Denatureren = de ruimtelijke structuur verandert, de functie valt weg.",
+   "uo": [
+    "Koos je 'sneller'? Denatureren is juist het tegenovergestelde van beter werken. Het enzym verliest zijn vorm en kan het substraat niet meer omzetten.",
+    "Koos je 'meer product'? Een gedenatureerd enzym maakt geen product meer, omdat het substraat niet meer in het vervormde actief centrum past.",
+    "Koos je 'meer substraat binden'? Na denaturatie heeft het actief centrum een andere vorm. Het substraat past er dan juist niet meer in.",
+    "Klopt: bij denaturatie verandert de ruimtelijke structuur van het eiwit. Het actief centrum verliest zijn vorm, waardoor de functie wegvalt."
+   ],
+   "uh": "Denaturatie = vorm kapot = functie weg."
+  },
+  {
+   "v": "Bij hoge koorts (42 °C) werken veel enzymen slechter. Wat is de reden?",
+   "o": [
+    "De enzymen beginnen te denatureren",
+    "Er is ineens te weinig substraat",
+    "De enzymen worden sneller opgebruikt",
+    "De pH in de cellen wordt te hoog"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Boven het optimum (bij mensen vaak rond 37 °C) beginnen enzymen te denatureren.",
+   "uo": [
+    "Klopt: 42 °C ligt boven het optimum van veel menselijke enzymen. Hun structuur begint te veranderen, waardoor ze slechter werken. Daarom is heel hoge koorts gevaarlijk.",
+    "Koos je 'te weinig substraat'? Koorts verandert de temperatuur, niet de hoeveelheid voedingsstoffen in een cel. Zoek de oorzaak bij wat er verandert.",
+    "Koos je 'opgebruikt'? Enzymen worden niet opgebruikt, bij geen enkele temperatuur. Ze werken slechter doordat de warmte hun structuur aantast.",
+    "Koos je pH? Koorts is een temperatuurverandering. De pH van het lichaam wordt apart geregeld en verklaart hier niet waarom de enzymen slechter werken."
+   ],
+   "uh": "Koorts = te warm = begin van denaturatie."
+  },
+  {
+   "v": "Waarom reinigt het wasmiddel op 90 °C slechter dan op 40 °C?",
+   "o": [
+    "Bij 90 °C is er geen vuil meer",
+    "Bij 40 °C werken de enzymen nog niet",
+    "De enzymen lossen op in het water",
+    "Bij 90 °C zijn de enzymen gedenatureerd"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Was-enzymen hebben een optimum; te heet wassen denatureert ze.",
+   "uo": [
+    "Koos je 'geen vuil meer'? Vuil verdwijnt niet vanzelf door warm water; daarom zitten er juist enzymen in het wasmiddel. De vraag is waarom die enzymen bij 90 °C niet meer helpen.",
+    "Koos je 'werken nog niet'? Op 40 °C wast het middel juist goed, dus daar werken de enzymen. Het probleem zit bij de hoge temperatuur.",
+    "Koos je 'oplossen'? Enzymen moeten juist opgelost zijn om te werken. Oplossen maakt ze niet kapot; te hoge temperatuur wel.",
+    "Klopt: 90 °C ligt ver boven het optimum van deze was-enzymen. Ze denatureren, dus ze breken vlekken van eiwit en vet niet meer af."
+   ],
+   "uh": "Wasmiddel met enzymen: niet te heet wassen.",
+   "ctx": "Op een wasmiddel staat: 'Met enzymen tegen eiwit- en vetvlekken. Werkt het best op 30-40 °C.' Iemand wast toch op 90 °C en de vlekken blijven zitten."
+  },
+  {
+   "v": "Wat geldt na denaturatie door hitte, maar niet na tijdelijke afkoeling?",
+   "o": [
+    "Het enzym werkt daarna weer bij het optimum",
+    "Het substraat is van vorm veranderd",
+    "De pH van de oplossing is veranderd",
+    "De schade aan het enzym is blijvend"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Kou remt tijdelijk; hitte-denaturatie is blijvend.",
+   "uo": [
+    "Koos je dit? Dat geldt juist voor afkoeling: een afgekoeld enzym werkt weer als je het opwarmt. Na hitte-denaturatie is de vorm kapot en komt de werking niet terug.",
+    "Koos je 'substraat veranderd'? In beide gevallen gaat het om het enzym, niet om het substraat. Het verschil is of de vorm van het enzym heel blijft.",
+    "Koos je pH? Er verandert hier alleen de temperatuur. Het verschil tussen kou en hitte zit in wat er met de structuur van het enzym gebeurt.",
+    "Klopt: hitte-denaturatie is onomkeerbaar, de ruimtelijke structuur is blijvend veranderd. Kou remt een enzym alleen; de vorm blijft heel."
+   ],
+   "uh": "Afkoelen = pauze. Te heet = kapot."
+  },
+  {
+   "v": "Enzym X heeft een pH-optimum van 9. In welk milieu werkt het het best?",
+   "o": [
+    "In een zuur milieu",
+    "In een neutraal milieu",
+    "In een basisch milieu",
+    "Bij elke pH even goed"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "pH onder 7 is zuur, 7 neutraal, boven 7 basisch; elk enzym heeft een eigen optimum.",
+   "uo": [
+    "Koos je zuur? Zuur is een pH onder 7, zoals in de maag. Een optimum van 9 ligt aan de andere kant van neutraal.",
+    "Koos je neutraal? Neutraal is precies pH 7. Een optimum van 9 ligt daar twee eenheden boven, dus in basisch milieu.",
+    "Klopt: pH 9 ligt boven 7, dus basisch. Daar werkt enzym X het best, zoals trypsine in de basische darm rond pH 8.",
+    "Koos je 'elke pH even goed'? Dan zou er geen optimum zijn. Juist omdat er een optimum-pH is, werkt het enzym verder daarvandaan steeds slechter."
+   ],
+   "uh": "pH 9 = basisch."
+  },
+  {
+   "v": "Wat laat het borrelen vooral zien?",
+   "o": [
+    "Dat de lever waterstofperoxide aanmaakt",
+    "Dat het enzym katalase bij de reactie langzaam helemaal opraakt",
+    "Dat het mengsel opwarmt",
+    "Dat katalase de afbraak van waterstofperoxide versnelt"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 6,
+   "u": "Katalase versnelt de afbraak van waterstofperoxide tot water en zuurstof.",
+   "uo": [
+    "Koos je dit? Het waterstofperoxide giet je er zelf bij; de lever maakt het hier niet aan. De lever levert het enzym dat het afbreekt.",
+    "Koos je 'opraken'? Zolang je waterstofperoxide toevoegt, blijft het borrelen. Dat past bij een enzym dat steeds opnieuw werkt, niet bij een enzym dat op is.",
+    "Koos je opwarmen? Er komt hooguit wat warmte vrij; de belletjes zijn een gas. Dat gas (zuurstof) ontstaat doordat waterstofperoxide snel wordt afgebroken.",
+    "Klopt: katalase breekt waterstofperoxide af tot water en zuurstof. De vele zuurstofbellen laten zien dat die afbraak door het enzym veel sneller gaat."
+   ],
+   "uh": "Belletjes = zuurstof = bewijs dat het enzym de reactie versnelt.",
+   "ctx": "Proef: je doet een stukje rauwe lever in waterstofperoxide. Het schuimt en borrelt meteen hevig. Lever bevat het enzym katalase."
+  },
+  {
+   "v": "Waarom werkt pepsine in de dunne darm nauwelijks meer?",
+   "o": [
+    "De pH stijgt ver boven het optimum van pepsine",
+    "Alle eiwitten zijn in de maag al volledig verteerd",
+    "Pepsine is in de maag opgebruikt",
+    "De darm is warmer dan de maag"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Het pH-optimum bepaalt waar in het verteringskanaal een enzym werkt.",
+   "uo": [
+    "Klopt: in de darm is het basisch (rond pH 8), ver van het zure optimum van pepsine rond pH 2. Daar nemen andere enzymen, zoals trypsine, de eiwitvertering over.",
+    "Koos je dit? In de darm worden juist nog veel eiwitten verteerd, door trypsine. Het probleem is niet dat er geen werk meer is, maar dat pepsine bij die pH niet meer goed werkt.",
+    "Koos je 'opgebruikt'? Enzymen raken niet op. Pepsine is nog aanwezig als het met de voedselbrij de darm in gaat, maar de pH daar past niet bij zijn optimum.",
+    "Koos je temperatuur? Maag en darm hebben dezelfde lichaamstemperatuur, ongeveer 37 °C. Wat verandert tussen maag en darm is de pH."
+   ],
+   "uh": "Maag zuur: pepsine. Darm basisch: trypsine.",
+   "ctx": "Pepsine verteert eiwitten in de maag (pH 2). De voedselbrij gaat daarna naar de dunne darm, waar de pH rond 8 ligt. Daar verteert trypsine de eiwitten verder."
+  },
+  {
+   "v": "Lactase splitst lactose, maar geen sacharose. Wat is de beste verklaring?",
+   "o": [
+    "Sacharose is te groot om in welk enzym dan ook te passen",
+    "Alleen de vorm van lactose past in het actief centrum",
+    "Lactase werkt alleen bij hoge temperatuur",
+    "Sacharose bevat geen energie meer"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Substraatspecificiteit: de vorm en eigenschappen van het actief centrum bepalen welk substraat past.",
+   "uo": [
+    "Koos je 'te groot'? Lactose en sacharose zijn allebei suikers van twee bouwstenen en ongeveer even groot. Het verschil zit in de vorm, en sacharase is een ander enzym dat sacharose wel splitst.",
+    "Klopt: de vorm en chemische eigenschappen van het actief centrum van lactase passen bij lactose. Sacharose past niet; daarvoor is een ander enzym nodig (sacharase).",
+    "Koos je temperatuur? Temperatuur bepaalt hoe snel een enzym werkt, niet welke stof erin past. Bij geen enkele temperatuur splitst lactase sacharose.",
+    "Koos je 'geen energie'? Sacharose bevat wel degelijk energie; ons lichaam haalt er veel uit. Of een enzym een stof omzet, hangt af van passen, niet van energie-inhoud."
+   ],
+   "uh": "Elk substraat zijn eigen passende enzym: lactose-lactase, sacharose-sacharase."
+  },
+  {
+   "v": "De piek van een activiteit-temperatuurgrafiek ligt bij 50 °C. Wat is 50 °C?",
+   "o": [
+    "De denaturatietemperatuur",
+    "De temperatuur waarbij het enzym stopt",
+    "De optimumtemperatuur",
+    "De pH van het enzym"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "De top van een activiteit-temperatuurgrafiek is de optimumtemperatuur.",
+   "uo": [
+    "Koos je denaturatie? Denaturatie zie je in de daling ná de piek. Op de piek zelf werkt het enzym juist op zijn best.",
+    "Koos je 'stopt'? Op de piek is de activiteit het hoogst. Het enzym stopt pas verder rechts, als de lijn naar nul daalt.",
+    "Klopt: de piek is de temperatuur met de hoogste activiteit, de optimumtemperatuur. Dit enzym heeft een optimum van 50 °C, hoger dan veel menselijke enzymen.",
+    "Koos je pH? Op de x-as van deze grafiek staat temperatuur, geen pH. Lees altijd eerst af wat er op de assen staat."
+   ],
+   "uh": "Top = optimum; daling erna = denaturatie."
+  },
+  {
+   "v": "Welke uitspraak over een biokatalysator is juist?",
+   "o": [
+    "Hij levert de energie die de reactie nodig heeft om te starten",
+    "Hij versnelt een reactie en komt onveranderd vrij",
+    "Hij zorgt dat er meer product ontstaat",
+    "Hij stopt reacties die te snel gaan"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Een biokatalysator (enzym) versnelt een reactie en komt onveranderd vrij.",
+   "uo": [
+    "Koos je 'levert energie'? Een katalysator levert geen energie; hij verlaagt de drempel. Vergelijk het met een tunnel door een berg: je hoeft minder te klimmen, maar je krijgt geen extra brandstof.",
+    "Klopt: een katalysator versnelt een reactie en komt na afloop onveranderd vrij. 'Bio' betekent dat het om een katalysator uit een levend organisme gaat: een enzym.",
+    "Koos je 'meer product'? Een katalysator verandert niet hoeveel product er uiteindelijk ontstaat, alleen hoe snel dat gebeurt. Met of zonder enzym is de eindtoestand hetzelfde.",
+    "Koos je 'stopt reacties'? Een katalysator versnelt juist. Stoffen die een enzym afremmen heten remmers; dat is iets anders dan het enzym zelf."
+   ],
+   "uh": "Katalysator = sneller, niet meer en niet met extra energie."
+  },
+  {
+   "v": "Welke uitspraak over enzymen en activeringsenergie is juist?",
+   "o": [
+    "Een enzym levert de energie voor de reactie",
+    "Een enzym verlaagt de activeringsenergie",
+    "Een enzym verhoogt de activeringsenergie",
+    "Een enzym haalt de activeringsenergie weg"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Een enzym verlaagt de activeringsenergie, maar haalt hem niet helemaal weg.",
+   "uo": [
+    "Koos je 'levert energie'? Dan denk je dat versnellen hetzelfde is als energie toevoegen. Een enzym voegt niets toe; het maakt de drempel lager.",
+    "Klopt: het enzym verlaagt de activeringsenergie. Er is nog steeds een drempel, maar die is lager, dus de reactie komt sneller op gang.",
+    "Koos je 'verhoogt'? Een hogere drempel zou de reactie juist trager maken. Een enzym doet het omgekeerde: de berg in het energiediagram wordt lager.",
+    "Koos je 'haalt weg'? Ook met enzym blijft er een drempel, alleen een lagere. Zonder enige drempel zouden alle reacties vanzelf en ongecontroleerd verlopen."
+   ],
+   "uh": "Drempel lager, niet weg en niet hoger."
+  }
+ ],
+ "oe": [
+  {
+   "jaar": 2007,
+   "tijdvak": 1,
+   "bron": "CE 2007 T1",
+   "ctx": "Kikkers zijn koudbloedige dieren: hun lichaamstemperatuur volgt de temperatuur van de omgeving. In deze examenvraag gaat het om enzymen die in het lichaam van de kikker reacties versnellen. (Context door Slagio kort samengevat; de vraag en het kernantwoord komen uit het echte examen.)",
+   "v": "Waardoor werken in de kikkers deze enzymen in de zomer sneller dan in de winter?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Doordat het in de zomer warmer is: bij een hogere temperatuur werken enzymen sneller, tot aan hun optimumtemperatuur. (Kernpunt uit het correctievoorschrift: hogere temperatuur in de zomer.)"
+  },
+  {
+   "bron": "Practicum katalase",
+   "ctx": "Leverweefsel bevat het enzym katalase, dat waterstofperoxide (H2O2) afbreekt tot water en zuurstof. Een leerling doet in vijf reageerbuizen evenveel waterstofperoxide. In elke buis komt een even groot stukje lever, maar elk stukje is eerst op een andere temperatuur gehouden: 5 °C, 20 °C, 37 °C, 70 °C en 100 °C. Daarna meet de leerling hoeveel zuurstof er per minuut vrijkomt (hoe hevig het borrelt). Bij 37 °C borrelt het het hevigst. Bij 70 °C en 100 °C gebeurt er vrijwel niets meer, ook niet nadat de leverstukjes weer zijn afgekoeld naar 37 °C.",
+   "v": "Verklaar waarom bij 70 °C en 100 °C vrijwel geen zuurstof meer vrijkomt, en waarom afkoelen naar 37 °C de werking niet herstelt. Gebruik in je uitleg het begrip denaturatie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bij 70 °C en 100 °C ligt de temperatuur ver boven de optimumtemperatuur van katalase. Daardoor is het enzym gedenatureerd: de ruimtelijke structuur (en dus de vorm van het actief centrum) is veranderd, zodat het substraat niet meer past en de reactie niet meer versneld wordt. Deze vormverandering is onomkeerbaar, dus na afkoelen naar 37 °C krijgt het enzym zijn oorspronkelijke vorm niet terug en blijft de werking weg. (Kernpunten: [1] boven de optimumtemperatuur treedt denaturatie op / actief centrum verliest zijn vorm; [2] denaturatie is onomkeerbaar, daarom herstelt afkoelen de werking niet.)"
+  },
+  {
+   "bron": "Practicum amylase",
+   "ctx": "Amylase is een enzym in speeksel dat zetmeel afbreekt. Zetmeel kleurt blauwzwart met jodium; de afbraakproducten doen dat niet. Een leerling mengt amylase met een zetmeeloplossing en druppelt elke minuut een beetje van het mengsel in jodium. In het begin wordt de druppel blauwzwart, maar na een paar minuten blijft de kleur geelbruin. Als de leerling het experiment herhaalt met amylase dat eerst vijf minuten heeft gekookt, blijft de druppel de hele tijd blauwzwart.",
+   "v": "Leg uit waarom de druppel na enkele minuten niet meer blauwzwart wordt bij het gewone amylase, maar wel de hele tijd blauwzwart blijft bij het gekookte amylase.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bij het gewone amylase breekt het enzym het zetmeel af tot kleinere producten. Die producten kleuren niet meer met jodium, dus na enkele minuten is (bijna) al het zetmeel weg en blijft de druppel geelbruin. Het gekookte amylase is door de hoge temperatuur gedenatureerd: het actief centrum heeft zijn vorm verloren, waardoor het zetmeel niet meer kan binden en niet wordt afgebroken. Het zetmeel blijft dan aanwezig, dus de druppel blijft de hele tijd blauwzwart. (Kernpunten: [1] werkend amylase breekt zetmeel af, afbraakproducten kleuren niet met jodium; [2] gekookt amylase is gedenatureerd en breekt geen zetmeel af.)"
+  },
+  {
+   "bron": "Toepassing lactose-vrije melk",
+   "ctx": "Sommige mensen kunnen melksuiker (lactose) slecht verteren. De industrie maakt lactose-vrije melk met het enzym lactase, dat lactose splitst in glucose en galactose. In een fabriek zit het lactase vast in kleine bolletjes in een kolom. De melk stroomt langs de bolletjes naar beneden en komt er lactose-vrij uit. De bolletjes met lactase kunnen daarna dagenlang opnieuw worden gebruikt. Lactase splitst wel lactose, maar geen sacharose (gewone suiker).",
+   "v": "Leg met de eigenschappen van enzymen uit (a) waarom de bolletjes met lactase steeds opnieuw gebruikt kunnen worden en (b) waarom lactase wel lactose maar geen sacharose splitst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(a) Een enzym is een biokatalysator: het versnelt de reactie maar wordt zelf niet verbruikt en komt na de reactie onveranderd vrij. Daardoor kan hetzelfde lactase telkens opnieuw een lactosemolecuul splitsen, en blijven de bolletjes dagenlang bruikbaar. (b) Enzymen zijn substraatspecifiek: alleen een substraat waarvan de vorm in het actief centrum past, wordt gebonden en omgezet. De vorm van lactose past in het actief centrum van lactase, die van sacharose niet, dus sacharose wordt niet gesplitst. (Kernpunten: [1] enzym wordt niet verbruikt / is herbruikbaar; [2] substraatspecificiteit: alleen de passende vorm bindt in het actief centrum.)"
+  },
+  {
+   "bron": "Grafiek reactiesnelheid",
+   "ctx": "Een onderzoeker meet de reactiesnelheid van een enzym bij een vaste hoeveelheid enzym en steeds meer substraat. In het begin stijgt de reactiesnelheid sterk als er meer substraat is. Bij hoge substraatconcentraties stijgt de snelheid niet meer: de grafiek loopt vlak (er ontstaat een plateau). De temperatuur en de pH blijven tijdens de hele proef gelijk.",
+   "v": "Leg uit waarom de reactiesnelheid bij hoge substraatconcentraties niet verder toeneemt, ook al is er nog meer substraat aanwezig.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bij hoge substraatconcentraties zijn op elk moment alle actieve centra van de enzymen bezet met substraat; de enzymen werken dan op volle capaciteit (verzadiging). Extra substraat moet wachten tot een actief centrum vrijkomt en kan de snelheid dus niet verder verhogen. Omdat de hoeveelheid enzym vast is, bepaalt die de maximale snelheid. Denaturatie is niet de oorzaak, want temperatuur en pH blijven gelijk. (Kernpunten: [1] alle actieve centra bezet / enzymen verzadigd; [2] de vaste hoeveelheid enzym begrenst de maximale snelheid.)"
+  },
+  {
+   "bron": "Spijsvertering en pH",
+   "ctx": "In de maag heerst een zure omgeving (ongeveer pH 2). Daar werkt het eiwitsplitsende enzym pepsine, dat een pH-optimum rond pH 2 heeft. Verderop, in de dunne darm, is het milieu juist basisch (ongeveer pH 8). Daar werkt het eiwitsplitsende enzym trypsine, met een pH-optimum rond pH 8. Als je pepsine in de dunne darm zou brengen, breekt het daar nauwelijks eiwit af.",
+   "v": "Leg uit waarom pepsine in de dunne darm nauwelijks eiwit afbreekt, terwijl trypsine daar juist goed werkt. Betrek de pH in je antwoord.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Elk enzym heeft een eigen pH-optimum: de pH waarbij het de juiste vorm (met een passend actief centrum) heeft en het best werkt. De pH van de dunne darm (ongeveer 8) ligt ver van het zure optimum van pepsine (ongeveer 2), waardoor pepsine daar zijn goede vorm verliest en nauwelijks eiwit afbreekt. Trypsine heeft juist een optimum rond pH 8, dus in de dunne darm heeft het wel de juiste vorm en werkt het goed. (Kernpunten: [1] pH dunne darm ligt ver van pepsines zure optimum, daardoor werkt pepsine er slecht; [2] pH dunne darm ligt bij trypsines optimum, daardoor werkt trypsine er goed.)"
+  },
+  {
+   "bron": "Enzymen in wasmiddel",
+   "ctx": "In veel wasmiddelen zitten enzymen, zoals protease (breekt eiwitvlekken af, bijvoorbeeld bloed en ei) en lipase (breekt vetvlekken af). Op de verpakking staat dat je met dit wasmiddel het best wast op 40 °C. Een gebruiker wast een sterk vervuild kledingstuk juist op 90 °C en merkt dat de eiwitvlekken minder goed verdwijnen dan bij 40 °C.",
+   "v": "Verklaar waarom de eiwitvlekken bij 90 °C minder goed verdwijnen dan bij 40 °C, ook al is heter water meestal beter voor het reinigen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De reinigende werking komt hier vooral van de enzymen (protease), die de eiwitvlekken afbreken. Bij ongeveer 40 °C zitten deze enzymen rond hun optimumtemperatuur en werken ze goed. Bij 90 °C ligt de temperatuur ver boven het optimum, waardoor de enzymen denatureren: hun actief centrum verliest zijn vorm en ze kunnen de eiwitvlekken niet meer afbreken. Daarom verdwijnen de eiwitvlekken bij 90 °C juist minder goed. (Kernpunten: [1] bij 40 °C werken de enzymen rond hun optimum; [2] bij 90 °C denatureren de enzymen, waardoor ze de vlekken niet meer afbreken.)"
+  }
+ ],
+ "begrippen": [
+  {
+   "t": "Enzym",
+   "d": "Een eiwit dat als biokatalysator een reactie in de cel versnelt zonder zelf verbruikt te worden."
+  },
+  {
+   "t": "Biokatalysator",
+   "d": "Een stof die in een organisme een reactie versnelt en er zelf onveranderd uit komt."
+  },
+  {
+   "t": "Activeringsenergie",
+   "d": "De energiedrempel die nodig is om een reactie te laten starten; een enzym verlaagt deze."
+  },
+  {
+   "t": "Actief centrum",
+   "d": "De plek op het enzym met een specifieke vorm waar het substraat op past en bindt."
+  },
+  {
+   "t": "Substraat",
+   "d": "De stof die in het actief centrum past en door het enzym wordt omgezet."
+  },
+  {
+   "t": "Substraatspecificiteit",
+   "d": "Een enzym zet vooral die substraten om waarvan de vorm in het actief centrum past."
+  },
+  {
+   "t": "Optimumtemperatuur",
+   "d": "De temperatuur waarbij een enzym het snelst werkt; erboven daalt de activiteit."
+  },
+  {
+   "t": "Denaturatie",
+   "d": "De onomkeerbare verandering van de ruimtelijke structuur van een enzym, waardoor het actief centrum zijn vorm en functie verliest."
+  },
+  {
+   "t": "pH-optimum",
+   "d": "De zuurgraad waarbij een enzym het best werkt; ver daarvan af daalt de activiteit."
+  },
+  {
+   "t": "Herbruikbaarheid",
+   "d": "Na de reactie komt het enzym onveranderd vrij, zodat het opnieuw kan werken."
+  }
+ ],
+ "gs": 2,
+ "lo": "bi.M.3"
+}

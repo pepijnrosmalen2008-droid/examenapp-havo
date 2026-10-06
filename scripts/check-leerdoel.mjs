@@ -8,9 +8,11 @@
  * Exit 0 = klaar voor integratie. Exit 1 = herstel eerst de gemelde punten.
  */
 import fs from 'node:fs';
+import { checkV2 } from './lib/leerdoel-v2.mjs';
 
-const jsonPath = process.argv[2];
-const htmlPath = process.argv[3];
+const _pos = process.argv.slice(2).filter(a => !a.startsWith('--'));
+const jsonPath = _pos[0];
+const htmlPath = _pos[1];
 if (!jsonPath) { console.error('gebruik: node scripts/check-leerdoel.mjs <leerdoel.json> [samenvatting.html]'); process.exit(2); }
 
 const raw = fs.readFileSync(jsonPath, 'utf8');
@@ -72,13 +74,22 @@ if (htmlPath) {
   const html = fs.readFileSync(htmlPath, 'utf8');
   if (/—/.test(html)) hard.push('em dash (—) in de samenvatting-HTML');
   const chapters = (html.match(/class="sam-chapter"/g) || []).length;
-  const figs = (html.match(/class="sam-figure"/g) || []).length;
+  const figs = (html.match(/class="sam-figure"|class="sam-clip /g) || []).length;   // clip telt als beeld
   const svgs = (html.match(/<svg/g) || []).length;
   if (chapters < 3) hard.push(`samenvatting: ${chapters} hoofdstukken (>=3 vereist)`);
   if (figs < chapters) hard.push(`samenvatting: ${figs} figuren bij ${chapters} hoofdstukken - ELK hoofdstuk moet een afbeelding hebben`);
   if (svgs < chapters) hard.push(`samenvatting: ${svgs} svg's bij ${chapters} hoofdstukken`);
   if (!/class="sam-intro"/.test(html)) hard.push('samenvatting: sam-intro ontbreekt');
   if (!/class="sam-table"/.test(html)) hard.push('samenvatting: begrippenlijst (sam-table) ontbreekt');
+}
+
+// gouden standaard v2 (docs/GOUDEN-STANDAARD-V2.md): voor modules met gs:2 of met --v2
+if (ld.gs === 2 || process.argv.includes('--v2')) {
+  if (ld.gs !== 2) hard.push('gs: 2 ontbreekt (markeer de module als v2)');
+  if (!/^[a-z]{2,4}\.[A-Z]+\d*\.\d+$/.test(ld.lo || '')) hard.push(`lo (leerdoel-id, bv. nl.A.1) ontbreekt of ongeldig: "${ld.lo || ''}"`);
+  const r = checkV2(ld, htmlPath ? fs.readFileSync(htmlPath, 'utf8') : null);
+  r.hard.forEach(m => hard.push('v2: ' + m)); r.soft.forEach(m => console.log('  · v2 ' + m));
+  if (!htmlPath) hard.push('v2: geef ook de samenvatting-HTML mee (tweede argument)');
 }
 
 console.log(`\n=== ${ld.id || '?'} ${ld.naam || ''} - ${sv.length} vragen, ${beg.length} begrippen, ${(ld.oe || []).length} oud-examen ===`);

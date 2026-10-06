@@ -78,6 +78,8 @@ If you add a **new** file that should be cached, also add it to the `ASSETS[]` a
 - In de quiz: één zwevende badge per antwoord (`ST._badge`: comeback > combo vanaf 3 > snelheid), geen Lucky-toast, geen losse XP-toast; prestatie-meldingen wachten tot na de quiz en worden samengevoegd ("+N meer").
 - Accountvraag: eerste keer na de eerste quiz, daarna hooguit eens per 3 dagen, maximaal 5 keer. Feedbackvraag: eens per 14 dagen, vanaf de 3e quiz. Installeerbalk: vanaf 3 quizzen, alleen op de home.
 
+**Adaptieve quiz** (`aqSetupAdaptive`/`aqFill` in vak.js): trap op `d`; na een fout eerst een vraag met dezelfde `s` (onderwerp) een niveau lager (`ST.aqFout`, label "Nog een over dit onderwerp"); onderwerpen met veel fouten wegen zwaarder bij de start.
+
 **Mini-clips (`sam-clip.js`)**: korte geanimeerde uitleg in samenvattingen. Een clip = SVG-scène + rAF-tijdlijn. De **spec-engine** drijft de meeste clips aan: je schrijft géén `build/render/staticState`, maar een declaratieve `SPECS.<naam>` met `duration`, `cues` (bijschrift-starttijden), `audio` (`[t, geluid]`, via `playSound()`), en `tracks`. Tracktypes: `reveal` (pad tekent in), `fade`, `attr` (bv. `r`), `moveAlong` (`.ball`/`.glow` volgt een pad via f-keyframes), `tangent` (raaklijn + zone-label), `custom`. Een nieuwe clip toevoegen: (1) voeg een `SPECS`-entry toe, (2) injecteer SVG-markup met de bijbehorende klassen (`.sam-clip clip-<naam>` + `.sam-clip-cap/-caps/-bar/-dots`) in de SAM_RICH-entry. `clip-<naam>` koppelt aan `CHOREO.<naam>`; #dots = #cues = #caption-`<p>`'s. Autoplay is stil; SFX pas na een klik. `prefers-reduced-motion`/geen-support → statisch eindbeeld + stappen als tekst. `activering` is nog met de hand geschreven (twee-fase-fysica); de rest komt uit specs.
 
 **Navigation**: `show('sc-X')` (in `state.js`) switches the visible screen. Screens are `<div id="sc-X" class="sc">`; the active one gets `.on`. `.sc{display:none}` / `.sc.on{display:block}` lives in `styles.css`.
@@ -143,6 +145,9 @@ Filter buttons must call `render()` with the stored raw data.
 **Leaderboard filter** (in `loadAll`): `.filter(e => (e.score||0) <= 1000 && (e.total||0) > 5)` - excludes corrupted scores and old 5-question quizzes.
 
 ## Adding content
+
+**Gouden standaard v2 (per leerdoel) is de lat voor alle nieuwe content:** zie `docs/GOUDEN-STANDAARD-V2.md`. Eén leerdoel = één module in `domein.leerdoelen[]` met `gs:2`, `lo`, `onderwerpen`, 25+ `sv`-vragen (`s`-tag per vraag voor de adaptieve vervolgvraag, uitleg per fout antwoord in `uo`, min. 5 met `ctx`), 10+ begrippen, 5 `oe` met modelantwoord, en een samenvatting met per hoofdstuk een figuur of clip. Werkwijze: `content-pending/<niveau>-<vak>-<id>.json` + `.html` → `node scripts/check-leerdoel.mjs <json> <html>` → `node scripts/render-leerdoel.mjs --html <html>` (screenshots + keuring van de figuren; bekijk de png's) → `node scripts/integreer-leerdoel.mjs <niveau> <vak> <domein> <json> <html>` → `node scripts/split-data.js` → poorten. `validate-goldstandard.mjs` keurt elke `gs:2`-module automatisch (regels in `scripts/lib/leerdoel-v2.mjs`). Referentie: havo bi.M3. Een domein met leerdoelen opent het leerdoelenscherm; de samenvatting van het hele domein blijft daar bereikbaar.
+
 
 To add questions to a subject, edit the **source** files `data-havo.js` (`VAKKEN[]`) / `data-vwo.js` (`VAKKEN_VWO[]`) - the appropriate domein's `sv` (snelle quiz) or `oe` (oud-examen) array - or (preferred) add begrippen and run `node scripts/build-questions.js`.
 

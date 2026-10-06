@@ -25,13 +25,26 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import vm from 'node:vm';
+import { checkV2 } from './lib/leerdoel-v2.mjs';
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const read = f => fs.readFileSync(path.join(ROOT, f), 'utf8');
 
 // Modules die de gouden standaard MOETEN halen (uitbreiden bij elke go-live).
 const GOLDEN = ['M1','M2','M3','M4','M5','M6','M7','O1','O2','O3','O4','O5','O6','O7','P1','P2','P3','P4','P5','P6','A1','A2','A3','A4','A5'].map(dom => ({ niveau: 'havo', vak: 'bi', dom })).concat(["C1","C2","C3","C4","C5","C6","D1","D2","D3","D4","D5","D6"].map(dom => ({ niveau: "havo", vak: "na", dom })));
 const A = process.argv.slice(2);
-const targets = A.length >= 3 ? [{ niveau: A[0], vak: A[1], dom: A[2] }] : GOLDEN;
+const VARNAAM = { havo: 'VAKKEN', vwo: 'VAKKEN_VWO', vmbo: 'VAKKEN_VMBO' };
+const _cache = {};
+const loadNiv = niv => _cache[niv] || (_cache[niv] = (() => { const g = {}; new Function('g', fs.readFileSync(path.join(ROOT, `data-${niv}.js`), 'utf8') + `\ng.V=${VARNAAM[niv]};`)(g); return g.V; })());
+const _sam = {};
+const samVoor = (niv, vak, id) => { if (!_sam[niv]) { const c = { SAM_RICH: {}, window: {} }; vm.createContext(c); try { vm.runInContext(fs.readFileSync(path.join(ROOT, `sam-${niv}.js`), 'utf8'), c); } catch (e) {} _sam[niv] = c.SAM_RICH; } return _sam[niv][`${niv}_${vak}_${id}`]; };
+// Gouden standaard v2: elke leerdoel-module met gs:2 doet automatisch mee (de content-routine
+// hoeft GOLDEN niet bij te werken). Zie docs/GOUDEN-STANDAARD-V2.md.
+const V2 = [];
+for (const niv of Object.keys(VARNAAM)) { let V = []; try { V = loadNiv(niv); } catch (e) { continue; }
+  for (const v of V) for (const D of (v.domeinen || [])) for (const l of (D.leerdoelen || [])) if (l.gs === 2) V2.push({ niveau: niv, vak: v.id, dom: l.id }); }
+const targets = A.length >= 3 ? [{ niveau: A[0], vak: A[1], dom: A[2] }]
+  : GOLDEN.concat(V2.filter(t => !GOLDEN.some(g => g.niveau === t.niveau && g.vak === t.vak && g.dom === t.dom)));
 
 const MIN_BANK = 25;          // SOFT: streefdiepte per leerdoel
 const MAX_STEM = 110;         // HARD: max vraaglengte
@@ -61,7 +74,7 @@ const norm = s => (s || '').toLowerCase().replace(/\s+/g, ' ').trim();
 
 let hardTotal = 0, softTotal = 0;
 for (const t of targets) {
-  const VAKKEN = load(`data-${t.niveau}.js`, t.niveau === 'havo' ? 'VAKKEN' : 'VAKKEN_VWO');
+  const VAKKEN = loadNiv(t.niveau);
   const vak = VAKKEN.find(v => v.id === t.vak);
   // Zoek eerst als top-level domein, anders als leerdoel binnen een domein.
   let dom = vak && vak.domeinen.find(d => d.id === t.dom);
@@ -93,10 +106,13 @@ for (const t of targets) {
     if (Array.isArray(o) && o.length === 4 && Number.isInteger(q.c)) {
       const L = o.map(x => String(x).length); if (L[q.c] === Math.max(...L)) longest++;
     }
-    // koppeling
+    // koppeling (v2-modules zijn zelf één leerdoel: dom.lo is de koppeling)
+    if (dom.gs === 2) { if (tag === 'Q1' && !/^[a-z]{2,4}\.[A-Z]+\d*\.\d+$/.test(dom.lo || '')) hard.push(`lo (leerdoel-id, bv. nl.A.1) ontbreekt of ongeldig: "${dom.lo || ''}"`); }
+    else {
     const e = KOPP[t.dom + '|' + (q.v || '').slice(0, 80)];
     if (!e) hard.push(`${tag}: geen leerdoel-koppeling`);
     else if (e.status !== 'matched' || !e.lo) hard.push(`${tag}: koppeling niet 'matched' (${e.status})`);
+    }
   });
 
   // module-niveau
@@ -116,7 +132,8 @@ for (const t of targets) {
   if (![1, 2, 3].every(l => dLevels.has(l))) soft.push(`R-dekking onvolledig: alleen niveaus ${[...dLevels].sort().join(',')} (streef R1-R3)`);
   if (n < MIN_BANK) soft.push(`bankdiepte ${n} < streef ${MIN_BANK} — memoriseerbaar, verdiep de bank`);
 
-  console.log(`\n═══ ${t.niveau}/${t.vak}/${t.dom} — ${dom.naam} (${n} vragen) ═══`);
+  if (dom.gs === 2) { const r = checkV2(dom, samVoor(t.niveau, t.vak, dom.id) || ''); r.hard.forEach(m => hard.push('v2: ' + m)); r.soft.forEach(m => soft.push('v2: ' + m)); }
+  console.log(`\n═══ ${t.niveau}/${t.vak}/${t.dom} — ${dom.naam} (${n} vragen)${dom.gs === 2 ? ' · v2' : ''} ═══`);
   if (!hard.length) console.log('  ✓ alle HARDE gouden-standaard-poorten gehaald');
   hard.forEach(m => console.log('  ✗ HARD  ' + m));
   soft.forEach(m => console.log('  · soft  ' + m));

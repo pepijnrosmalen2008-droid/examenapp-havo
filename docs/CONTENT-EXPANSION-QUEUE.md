@@ -1,49 +1,48 @@
-# Content-uitbreiding — dagelijkse wachtrij
+# Content-uitbreiding: dagelijkse wachtrij (per leerdoel, gouden standaard v2)
 
-> **Doel:** elk domein naar de "gouden standaard" tillen die Havo Biologie heeft —
-> leerdoelen, rijke samenvatting, begrippen, gegenereerde SV-vragen, misconcepties
-> en (waar te koppelen) oud-examen. Eén domein per dag, automatisch.
->
-> **Referentie / lat:** `docs/SLICE0-DEFINITION-OF-DONE.md` (de 5 gate-groepen) en de
-> gouden module `bi_M` (`docs/SLICE0-PROEFSNEDE-bi.M.3.md`). Havo Biologie is al klaar.
+> **De lat:** `docs/GOUDEN-STANDAARD-V2.md`. Eén leerdoel krijgt wat vroeger een heel domein
+> kreeg: samenvatting met beeld per hoofdstuk, 25+ vragen met uitleg per fout antwoord en
+> onderwerp-tags voor adaptief oefenen, 10+ begrippen, 5 examenvragen.
+> **Referentie:** havo bi.M3 Enzymwerking (`content-pending/havo-bi-M3.json` + `.html`).
 
-## Hoe de dagelijkse taak werkt
-Elke dag pakt een verse sessie **het bovenste openstaande domein** (`- [ ]`) en:
-1. Schrijft/verbetert de **rijke samenvatting** (SAM_RICH) voor dat domein — vaste
-   structuur, accuraat, geen opvulling (gate-groep B).
-2. Cureert **begrippen** + definieert **leerdoelen** met `_meta.reviewStatus:'reviewed'`
-   (niet `approved` — de syllabuscheck blijft een menselijke stap).
-3. Draait de engine: `node scripts/build-questions.js` → `node scripts/split-data.js`.
-4. **QA-poorten** (verplicht groen vóór push): `node scripts/build-questions.js --check`,
-   `node scripts/validate-content.mjs`, `node scripts/smoke.mjs` (incl. gouden-standaard-poort).
-5. Bumpt de SW-cache, vinkt het domein hieronder af (`- [x]`), commit + push naar `main`.
-   **Bij een rode poort: niet pushen, wél melden.**
+## Hoe de dagelijkse taak werkt (één leerdoel per run)
+1. Pak het **bovenste open domein** (`- [ ]`) hieronder.
+   - Heeft het nog geen leerdoel-regels eronder? Zet ze er eerst onder (4-8 leerdoelen, uit
+     `knowledge/<niveau>/<vak>.json` of `syllabi/2027/<niveau>-<vak>.txt`), in de vorm
+     `  - [ ] A1 · nl.A.1 Naam`.
+   - Neem dan het **bovenste open leerdoel** van dat domein. Precies dat ene doe je vandaag.
+2. Maak de module volgens `docs/GOUDEN-STANDAARD-V2.md` §6 (check → render + zelf bekijken →
+   integreer → split → poorten).
+3. Vink het leerdoel af met een korte notitie (vragen/begrippen/figuren/clip). Zijn alle
+   leerdoelen van het domein af, vink dan ook het domein af.
+4. Bij een rode poort: niets pushen, wél melden.
 
-> Volgorde: grootste examenvakken eerst (per vak: havo → vwo → vmbo).
-> Voortgang: **7 / 220** volledig "goud" (leerdoelen + rijke samenvatting; gouden referentie). Pas dit blok bij elke afronding aan.
-
-### Tussenstap — brede begrippen-verrijkingsronde (sep 2026)
-Los van de per-domein gouden afronding is er een **horizontale begrippen-pass**
-gedaan over ~30 havo/vwo-domeinen in álle grote factuele en literaire
-examenvakken (be, gs, ak, mw, ec, na, sk, bi, nl, en, gr, la). ~650 nieuwe,
-curriculumgerichte term→definitie-paren via `scripts/begrippen.js` → de
-vragen-engine genereerde daaruit enkele duizenden extra oefenvragen +
-flashcards. Totaal nu **~3.435 begrippen / ~17.550 SV-vragen** (havo+vwo).
-Alle QA-poorten (build `--check`, validate-content, smoke incl. gouden-
-standaardpoort) groen; sidecar (bi/na/sk) telkens hertagd.
-
-> Dit is géén vervanging van de gouden afronding: **leerdoelen + rijke
-> samenvattingen** per domein blijven de echte "goud"-lat, en die moeten uit de
-> **2027-syllabi** komen (bronhiërarchie-canon). Zolang de syllabi niet lokaal
-> beschikbaar zijn of de AI-factory (`expand-leerdoelen.mjs`, vereist
-> `ANTHROPIC_API_KEY`) niet draait, blijft de leerdoelenlaag beperkt tot
-> havo bi/na/sk.
+> Voortgang: **1 leerdoel op v2** (havo bi.M3). Werk dit getal bij bij elke afronding.
+> Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 
 ---
 
-- [x] **HAVO · Nederlands** (`nl`) · domein A — Leesvaardigheid — 7 leerdoelen (reviewed), 42 begrippen, rijke samenvatting; geen bestaande clip van toepassing, 2 CLIP-KANSen gemarkeerd
-- [x] **HAVO · Nederlands** (`nl`) · domein B — Mondelinge taalvaardigheid — 5 leerdoelen (reviewed, SE), 30 begrippen, rijke samenvatting; geen bestaande clip van toepassing, 1 CLIP-KANS gemarkeerd
-- [x] **HAVO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid — 6 leerdoelen (reviewed, SE), 23 begrippen, rijke samenvatting; geen bestaande clip van toepassing, 1 CLIP-KANS gemarkeerd
+- [ ] **HAVO · Nederlands** (`nl`) · domein A — Leesvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2)
+  - [ ] A1 · nl.A.1 Tekstsoort en schrijfdoel bepalen
+  - [ ] A2 · nl.A.2 Onderwerp en hoofdgedachte aangeven
+  - [ ] A3 · nl.A.3 Relaties tussen tekstdelen benoemen
+  - [ ] A4 · nl.A.4 Conclusies over de auteur trekken
+  - [ ] A5 · nl.A.5 Standpunten, argumenten en schema's herkennen
+  - [ ] A6 · nl.A.6 Betoog beoordelen en drogredenen herkennen
+  - [ ] A7 · nl.A.7 Een tekst samenvatten
+- [ ] **HAVO · Nederlands** (`nl`) · domein B — Mondelinge taalvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2)
+  - [ ] B1 · nl.B.1 Informatie verzamelen en verwerken
+  - [ ] B2 · nl.B.2 Doel, publiek en gespreksvorm bepalen
+  - [ ] B3 · nl.B.3 Een voordracht opbouwen en presenteren
+  - [ ] B4 · nl.B.4 Deelnemen aan een discussie of debat
+  - [ ] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers
+- [ ] **HAVO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2)
+  - [ ] C1 · nl.C.1 Informatie verzamelen, verwerken en verantwoorden
+  - [ ] C2 · nl.C.2 Tekstsoort, doel en lezersgroep afstemmen
+  - [ ] C3 · nl.C.3 Een betoog schrijven
+  - [ ] C4 · nl.C.4 Tekst en alinea opbouwen
+  - [ ] C5 · nl.C.5 Schrijftaal, stijl en correctheid
+  - [ ] C6 · nl.C.6 Een tekst reviseren op commentaar
 - [ ] **HAVO · Nederlands** (`nl`) · domein D — Samenvatten
 - [ ] **HAVO · Nederlands** (`nl`) · domein E — Argumentatieve vaardigheden
 - [ ] **HAVO · Nederlands** (`nl`) · domein F — Literatuur
@@ -261,3 +260,51 @@ standaardpoort) groen; sidecar (bi/na/sk) telkens hertagd.
 - [ ] **VWO · Latijn** (`la`) · domein B — Literatuur & Cultuur
 - [ ] **VWO · Grieks** (`gr`) · domein A — Taal & Vertalen
 - [ ] **VWO · Grieks** (`gr`) · domein B — Literatuur & Cultuur
+
+## Opwaarderen naar v2 (bestaande v1-leerdoelmodules)
+Deze modules hebben al 25 vragen en een samenvatting, maar nog niet de v2-uitleg per fout
+antwoord, onderwerp-tags, casusvragen en gekeurde figuren. Zelfde werkwijze; bestaande
+vragen zijn grondstof, niet heilig.
+
+- [ ] **HAVO · Biologie** (`bi`) · domein A (opwaarderen)
+  - [ ] A1 · bi.A.1 Onderzoek opzetten
+  - [ ] A2 · bi.A.2 Betrouwbaarheid en validiteit beoordelen
+  - [ ] A3 · bi.A.3 Data verwerken en grafieken lezen
+  - [ ] A4 · bi.A.4 Correlatie versus causaliteit
+  - [ ] A5 · bi.A.5 Biologisch onderzoeksgereedschap
+- [ ] **HAVO · Biologie** (`bi`) · domein M (opwaarderen)
+  - [ ] M1 · bi.M.1 Bouw en functie van de cel
+  - [ ] M2 · bi.M.2 Transport door het celmembraan
+  - [ ] M4 · bi.M.4 Fotosynthese & celademhaling
+  - [ ] M5 · bi.M.5 DNA en eiwitsynthese
+  - [ ] M6 · bi.M.6 Celdeling: mitose en meiose
+  - [ ] M7 · bi.M.7 Erfelijkheid: allelen en overerving
+- [ ] **HAVO · Biologie** (`bi`) · domein O (opwaarderen)
+  - [ ] O1 · bi.O.1 Zenuwstelsel en prikkelgeleiding
+  - [ ] O2 · bi.O.2 Hormonale regulatie
+  - [ ] O3 · bi.O.3 Homeostase en antagonisme
+  - [ ] O4 · bi.O.4 Afweer en immuniteit
+  - [ ] O5 · bi.O.5 Transport en gasuitwisseling
+  - [ ] O6 · bi.O.6 Spijsvertering en uitscheiding
+  - [ ] O7 · bi.O.7 Beweging: gewrichten en spieren
+- [ ] **HAVO · Biologie** (`bi`) · domein P (opwaarderen)
+  - [ ] P1 · bi.P.1 Ecosystemen: biotische en abiotische factoren
+  - [ ] P2 · bi.P.2 Voedselrelaties en energiedoorgifte
+  - [ ] P3 · bi.P.3 Populatiedynamiek en draagkracht
+  - [ ] P4 · bi.P.4 Relaties tussen soorten
+  - [ ] P5 · bi.P.5 Successie en biodiversiteit
+  - [ ] P6 · bi.P.6 Evolutie en natuurlijke selectie
+- [ ] **HAVO · Natuurkunde** (`na`) · domein C (opwaarderen)
+  - [ ] C1 · na.C.1 Snelheid en versnelling
+  - [ ] C2 · na.C.2 Krachten herkennen
+  - [ ] C3 · na.C.3 Krachten samenstellen en ontbinden
+  - [ ] C4 · na.C.4 De wetten van Newton
+  - [ ] C5 · na.C.5 Arbeid, energie en vermogen
+  - [ ] C6 · na.C.6 Warmtetransport
+- [ ] **HAVO · Natuurkunde** (`na`) · domein D (opwaarderen)
+  - [ ] D1 · na.D.1 Stroom, spanning en lading
+  - [ ] D2 · na.D.2 Weerstand en de wet van Ohm
+  - [ ] D3 · na.D.3 Serie- en parallelschakeling
+  - [ ] D4 · na.D.4 Vermogen en energie
+  - [ ] D5 · na.D.5 Geleiders, isolatoren en sensoren
+  - [ ] D6 · na.D.6 Elektrische veiligheid

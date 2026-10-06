@@ -295,7 +295,7 @@ var VAKKEN = [
      {
       "id": "A1",
       "naam": "Onderzoek opzetten",
-      "beschrijving": "Gouden-standaardmodule bi.A.1: een biologisch experiment opzetten met een toetsbare hypothese, de onafhankelijke, afhankelijke en constante variabelen, en een controlegroep.",
+      "beschrijving": "Een biologisch experiment opzetten met een toetsbare hypothese, de onafhankelijke, afhankelijke en constante variabelen, en een controlegroep.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Hypothese als toetsbare verwachting",
@@ -313,7 +313,7 @@ var VAKKEN = [
      {
       "id": "A2",
       "naam": "Betrouwbaarheid en validiteit beoordelen",
-      "beschrijving": "Gouden-standaardmodule bi.A.2: het verschil tussen betrouwbaarheid (steeds hetzelfde resultaat) en validiteit (meet je het juiste), en de rol van steekproef en placebo.",
+      "beschrijving": "Het verschil tussen betrouwbaarheid (steeds hetzelfde resultaat) en validiteit (meet je het juiste), en de rol van steekproef en placebo.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Betrouwbaarheid: reproduceerbaar resultaat",
@@ -331,7 +331,7 @@ var VAKKEN = [
      {
       "id": "A3",
       "naam": "Data verwerken en grafieken lezen",
-      "beschrijving": "Gouden-standaardmodule bi.A.3: gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.",
+      "beschrijving": "Gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Grafiek lezen: assen en as-eenheden",
@@ -349,7 +349,7 @@ var VAKKEN = [
      {
       "id": "A4",
       "naam": "Correlatie versus causaliteit",
-      "beschrijving": "Gouden-standaardmodule bi.A.4: het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.",
+      "beschrijving": "Het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Correlatie: twee dingen veranderen samen",
@@ -367,7 +367,7 @@ var VAKKEN = [
      {
       "id": "A5",
       "naam": "Biologisch onderzoeksgereedschap",
-      "beschrijving": "Gouden-standaardmodule bi.A.5: het gebruik van een determineertabel om een soort op naam te brengen, en de functie van een preparaat bij microscopisch onderzoek.",
+      "beschrijving": "Het gebruik van een determineertabel om een soort op naam te brengen, en de functie van een preparaat bij microscopisch onderzoek.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Determineren: een soort op naam brengen",
@@ -415,7 +415,7 @@ var VAKKEN = [
      {
       "id": "M1",
       "naam": "Bouw en functie van de cel",
-      "beschrijving": "Gouden-standaardmodule bi.M.1: de celorganellen en hun functies, plus het verschil tussen een plantencel, een dierlijke cel en een bacteriecel (eukaryoot versus prokaryoot).",
+      "beschrijving": "De celorganellen en hun functies, plus het verschil tussen een plantencel, een dierlijke cel en een bacteriecel (eukaryoot versus prokaryoot).",
       "ceStatus": "CE",
       "onderwerpen": [
        "Celorganellen en hun functies",
@@ -433,7 +433,7 @@ var VAKKEN = [
      {
       "id": "M2",
       "naam": "Transport door het celmembraan",
-      "beschrijving": "Gouden-standaardmodule bi.M.2: hoe stoffen door het selectief doorlaatbare celmembraan bewegen via diffusie, osmose, passief en actief transport, met hypertoon/hypotoon/isotoon, plasmolyse en turgor.",
+      "beschrijving": "Hoe stoffen door het selectief doorlaatbare celmembraan bewegen via diffusie, osmose, passief en actief transport, met hypertoon/hypotoon/isotoon, plasmolyse en turgor.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Selectief doorlaatbaar celmembraan",
@@ -451,7 +451,7 @@ var VAKKEN = [
      {
       "id": "M3",
       "naam": "Enzymwerking",
-      "beschrijving": "Gouden-standaardmodule bi.M.3 Enzymwerking, volledig door de Content Engine geproduceerd: hoofdstuk-samenvatting met clips, 25 snelle-quizvragen R1-R3 incl. transfer en diagnostische per-optie-uitleg, plus oud-examenvragen (open, met modelantwoord).",
+      "beschrijving": "Je weet wat een enzym is en hoe het een reactie versnelt, en je kunt grafieken van enzymactiviteit bij verschillende temperaturen en pH verklaren met optimum en denaturatie.",
       "ceStatus": "CE+SE",
       "binas": "",
       "val": "",
@@ -464,7 +464,9 @@ var VAKKEN = [
        "Herbruikbaarheid",
        "Transfer: onbekend enzym"
       ],
-      "nSv": 25,
+      "gs": 2,
+      "lo": "bi.M.3",
+      "nSv": 27,
       "nOe": 7,
       "nBeg": 10,
       "hasSam": true
@@ -472,7 +474,7 @@ var VAKKEN = [
      {
       "id": "M4",
       "naam": "Fotosynthese & celademhaling",
-      "beschrijving": "Gouden-standaardmodule bi.M.2: hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
+      "beschrijving": "Hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Fotosynthese (opbouw glucose)",
@@ -490,7 +492,7 @@ var VAKKEN = [
      {
       "id": "M5",
       "naam": "DNA en eiwitsynthese",
-      "beschrijving": "Gouden-standaardmodule bi.M.5: hoe DNA (dubbele helix, basenparing A-T en C-G) via transcriptie en translatie eiwitten laat maken, en hoe genexpressie (gen -> eiwit -> eigenschap) de kenmerken van een organisme bepaalt.",
+      "beschrijving": "Hoe DNA (dubbele helix, basenparing A-T en C-G) via transcriptie en translatie eiwitten laat maken, en hoe genexpressie (gen -> eiwit -> eigenschap) de kenmerken van een organisme bepaalt.",
       "ceStatus": "CE",
       "onderwerpen": [
        "DNA als dubbele helix",
@@ -508,7 +510,7 @@ var VAKKEN = [
      {
       "id": "M6",
       "naam": "Celdeling: mitose en meiose",
-      "beschrijving": "Gouden-standaardmodule bi.M.6: hoe cellen zich delen via mitose (twee identieke cellen voor groei en herstel) en meiose (vier geslachtscellen met het halve aantal chromosomen voor variatie).",
+      "beschrijving": "Hoe cellen zich delen via mitose (twee identieke cellen voor groei en herstel) en meiose (vier geslachtscellen met het halve aantal chromosomen voor variatie).",
       "ceStatus": "CE",
       "onderwerpen": [
        "DNA-verdubbeling voor de deling",
@@ -526,7 +528,7 @@ var VAKKEN = [
      {
       "id": "M7",
       "naam": "Erfelijkheid: allelen en overerving",
-      "beschrijving": "Gouden-standaardmodule bi.M.7: allelen, dominant en recessief, genotype en fenotype, en het voorspellen van nakomelingen met een kruisingsschema.",
+      "beschrijving": "Allelen, dominant en recessief, genotype en fenotype, en het voorspellen van nakomelingen met een kruisingsschema.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Allelen (varianten van een gen)",
@@ -574,7 +576,7 @@ var VAKKEN = [
      {
       "id": "O1",
       "naam": "Zenuwstelsel en prikkelgeleiding",
-      "beschrijving": "Gouden-standaardmodule bi.O.1: neuronen en de impuls, de synaps, de reflexboog, en het verschil tussen regeling door zenuwen en door hormonen.",
+      "beschrijving": "Neuronen en de impuls, de synaps, de reflexboog, en het verschil tussen regeling door zenuwen en door hormonen.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Neuron: dendriet, cellichaam, axon",
@@ -593,7 +595,7 @@ var VAKKEN = [
      {
       "id": "O2",
       "naam": "Hormonale regulatie",
-      "beschrijving": "Gouden-standaardmodule bi.O.2: hormonen als trage, langdurige regeling via het bloed, met insuline, glucagon en adrenaline en de regeling van de bloedsuiker.",
+      "beschrijving": "Hormonen als trage, langdurige regeling via het bloed, met insuline, glucagon en adrenaline en de regeling van de bloedsuiker.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Hormoon en hormoonklier",
@@ -611,7 +613,7 @@ var VAKKEN = [
      {
       "id": "O3",
       "naam": "Homeostase en antagonisme",
-      "beschrijving": "Gouden-standaardmodule bi.O.3: homeostase als het constant houden van het inwendig milieu, negatieve terugkoppeling, antagonistische regeling en toepassingen op temperatuur- en waterregeling.",
+      "beschrijving": "Homeostase als het constant houden van het inwendig milieu, negatieve terugkoppeling, antagonistische regeling en toepassingen op temperatuur- en waterregeling.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Homeostase: constant inwendig milieu",
@@ -631,7 +633,7 @@ var VAKKEN = [
      {
       "id": "O4",
       "naam": "Afweer en immuniteit",
-      "beschrijving": "Gouden-standaardmodule bi.O.4: aspecifieke en specifieke afweer, antigeen en antilichaam, fagocyten en lymfocyten, geheugencellen en vaccinatie, actieve en passieve immuniteit.",
+      "beschrijving": "Aspecifieke en specifieke afweer, antigeen en antilichaam, fagocyten en lymfocyten, geheugencellen en vaccinatie, actieve en passieve immuniteit.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Afweer tegen ziekteverwekkers",
@@ -650,7 +652,7 @@ var VAKKEN = [
      {
       "id": "O5",
       "naam": "Transport en gasuitwisseling",
-      "beschrijving": "Gouden-standaardmodule bi.O.5: de dubbele bloedsomloop, hart en bloedvaten (slagader, ader, haarvat), de gasuitwisseling in de longblaasjes en de rol van diffusie.",
+      "beschrijving": "De dubbele bloedsomloop, hart en bloedvaten (slagader, ader, haarvat), de gasuitwisseling in de longblaasjes en de rol van diffusie.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Dubbele bloedsomloop (long- en lichaamscircuit)",
@@ -668,7 +670,7 @@ var VAKKEN = [
      {
       "id": "O6",
       "naam": "Spijsvertering en uitscheiding",
-      "beschrijving": "Gouden-standaardmodule bi.O.6: mechanische en chemische vertering, het verteringsstelsel, opname in de dunne darm, en de rol van de nieren bij uitscheiding.",
+      "beschrijving": "Mechanische en chemische vertering, het verteringsstelsel, opname in de dunne darm, en de rol van de nieren bij uitscheiding.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Spijsvertering: voedsel afbreken tot opneembare stoffen",
@@ -686,7 +688,7 @@ var VAKKEN = [
      {
       "id": "O7",
       "naam": "Beweging: gewrichten en spieren",
-      "beschrijving": "Gouden-standaardmodule bi.O.7: het skelet en gewrichten, pezen en gewrichtsbanden, en hoe antagonistische spieren (buigspier en strekspier) samenwerken bij beweging.",
+      "beschrijving": "Het skelet en gewrichten, pezen en gewrichtsbanden, en hoe antagonistische spieren (buigspier en strekspier) samenwerken bij beweging.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Skelet: steun en bescherming",
@@ -733,7 +735,7 @@ var VAKKEN = [
      {
       "id": "P1",
       "naam": "Ecosystemen: biotische en abiotische factoren",
-      "beschrijving": "Gouden-standaardmodule bi.P.1: het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.",
+      "beschrijving": "Het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Ecosysteem: levensgemeenschap plus biotoop",
@@ -751,7 +753,7 @@ var VAKKEN = [
      {
       "id": "P2",
       "naam": "Voedselrelaties en energiedoorgifte",
-      "beschrijving": "Gouden-standaardmodule bi.P.2: voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.",
+      "beschrijving": "Voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Voedselketen en voedselweb",
@@ -769,7 +771,7 @@ var VAKKEN = [
      {
       "id": "P3",
       "naam": "Populatiedynamiek en draagkracht",
-      "beschrijving": "Gouden-standaardmodule bi.P.3: hoe een populatie verandert door geboorte, sterfte en trek, exponentiele groei, en de rol van draagkracht bij het begrenzen van de groei (S-kromme).",
+      "beschrijving": "Hoe een populatie verandert door geboorte, sterfte en trek, exponentiele groei, en de rol van draagkracht bij het begrenzen van de groei (S-kromme).",
       "ceStatus": "CE",
       "onderwerpen": [
        "Populatie en populatiegrootte",
@@ -787,7 +789,7 @@ var VAKKEN = [
      {
       "id": "P4",
       "naam": "Relaties tussen soorten",
-      "beschrijving": "Gouden-standaardmodule bi.P.4: vormen van symbiose (mutualisme, commensalisme en parasitisme), predatie en concurrentie, en het effect van een exoot op een ecosysteem.",
+      "beschrijving": "Vormen van symbiose (mutualisme, commensalisme en parasitisme), predatie en concurrentie, en het effect van een exoot op een ecosysteem.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Symbiose als langdurig samenleven",
@@ -805,7 +807,7 @@ var VAKKEN = [
      {
       "id": "P5",
       "naam": "Successie en biodiversiteit",
-      "beschrijving": "Gouden-standaardmodule bi.P.5: successie als reeks opeenvolgende levensgemeenschappen van pioniers tot climaxstadium, en de betekenis van biodiversiteit en duurzaamheid.",
+      "beschrijving": "Successie als reeks opeenvolgende levensgemeenschappen van pioniers tot climaxstadium, en de betekenis van biodiversiteit en duurzaamheid.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Successie als reeks, geen eenmalige gebeurtenis",
@@ -823,7 +825,7 @@ var VAKKEN = [
      {
       "id": "P6",
       "naam": "Evolutie en natuurlijke selectie",
-      "beschrijving": "Gouden-standaardmodule bi.P.6: variatie en mutatie, natuurlijke selectie, evolutie als verandering van een populatie over generaties, en soortvorming. Nadruk op: populaties evolueren (niet individuen) en niet doelgericht redeneren.",
+      "beschrijving": "Variatie en mutatie, natuurlijke selectie, evolutie als verandering van een populatie over generaties, en soortvorming. Nadruk op: populaties evolueren (niet individuen) en niet doelgericht redeneren.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Variatie en mutatie binnen een populatie",
@@ -1118,7 +1120,7 @@ var VAKKEN = [
      {
       "id": "C1",
       "naam": "Snelheid en versnelling",
-      "beschrijving": "Gouden-standaardmodule na.C.1: snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.",
+      "beschrijving": "Snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Snelheid: v = s / t",
@@ -1136,7 +1138,7 @@ var VAKKEN = [
      {
       "id": "C2",
       "naam": "Krachten herkennen",
-      "beschrijving": "Gouden-standaardmodule na.C.2: de zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht) en massa.",
+      "beschrijving": "De zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht) en massa.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Kracht als vector (grootte, richting, aangrijpingspunt)",
@@ -1154,7 +1156,7 @@ var VAKKEN = [
      {
       "id": "C3",
       "naam": "Krachten samenstellen en ontbinden",
-      "beschrijving": "Gouden-standaardmodule na.C.3: krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.",
+      "beschrijving": "Krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Samenstellen tot een resulterende kracht",
@@ -1172,7 +1174,7 @@ var VAKKEN = [
      {
       "id": "C4",
       "naam": "De wetten van Newton",
-      "beschrijving": "Gouden-standaardmodule na.C.4: de drie wetten van Newton toepassen, inclusief traagheid (eerste wet), F = m maal a (tweede wet) en actie = reactie (derde wet), met de nadruk dat actie en reactie op verschillende voorwerpen werken.",
+      "beschrijving": "De drie wetten van Newton toepassen, inclusief traagheid (eerste wet), F = m maal a (tweede wet) en actie = reactie (derde wet), met de nadruk dat actie en reactie op verschillende voorwerpen werken.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Eerste wet: traagheid",
@@ -1190,7 +1192,7 @@ var VAKKEN = [
      {
       "id": "C5",
       "naam": "Arbeid, energie en vermogen",
-      "beschrijving": "Gouden-standaardmodule na.C.5: arbeid, energie en vermogen berekenen, werken met de wet van behoud van energie, en het verschil tussen arbeid en vermogen.",
+      "beschrijving": "Arbeid, energie en vermogen berekenen, werken met de wet van behoud van energie, en het verschil tussen arbeid en vermogen.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Arbeid: W = F maal s",
@@ -1208,7 +1210,7 @@ var VAKKEN = [
      {
       "id": "C6",
       "naam": "Warmtetransport",
-      "beschrijving": "Gouden-standaardmodule na.C.6: de drie vormen van warmtetransport (geleiding, stroming en straling) onderscheiden en herkennen, en weten hoe isolatie werkt.",
+      "beschrijving": "De drie vormen van warmtetransport (geleiding, stroming en straling) onderscheiden en herkennen, en weten hoe isolatie werkt.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Geleiding: warmte door een vaste stof",
@@ -1257,7 +1259,7 @@ var VAKKEN = [
      {
       "id": "D1",
       "naam": "Stroom, spanning en lading",
-      "beschrijving": "Gouden-standaardmodule na.D.1: begrijpen wat elektrische stroom, spanning en lading zijn, in welke eenheden je ze meet en hoe je ze meet met een ampèremeter en voltmeter.",
+      "beschrijving": "Begrijpen wat elektrische stroom, spanning en lading zijn, in welke eenheden je ze meet en hoe je ze meet met een ampèremeter en voltmeter.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Stroom als bewegende lading",
@@ -1275,7 +1277,7 @@ var VAKKEN = [
      {
       "id": "D2",
       "naam": "Weerstand en de wet van Ohm",
-      "beschrijving": "Gouden-standaardmodule na.D.2: weten wat weerstand is, rekenen met de wet van Ohm (U = I x R) en het verschil begrijpen tussen ohmse en niet-ohmse onderdelen.",
+      "beschrijving": "Weten wat weerstand is, rekenen met de wet van Ohm (U = I x R) en het verschil begrijpen tussen ohmse en niet-ohmse onderdelen.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Weerstand als tegenwerking",
@@ -1293,7 +1295,7 @@ var VAKKEN = [
      {
       "id": "D3",
       "naam": "Serie- en parallelschakeling",
-      "beschrijving": "Gouden-standaardmodule na.D.3: het verschil begrijpen tussen serie- en parallelschakelingen en weten hoe stroom, spanning en weerstand zich in elke schakeling gedragen.",
+      "beschrijving": "Het verschil begrijpen tussen serie- en parallelschakelingen en weten hoe stroom, spanning en weerstand zich in elke schakeling gedragen.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Serie versus parallel",
@@ -1311,7 +1313,7 @@ var VAKKEN = [
      {
       "id": "D4",
       "naam": "Vermogen en energie",
-      "beschrijving": "Gouden-standaardmodule na.D.4: rekenen met elektrisch vermogen (P = U x I) en energie (E = P x t), omgaan met de eenheden watt, joule en kWh en energiekosten berekenen.",
+      "beschrijving": "Rekenen met elektrisch vermogen (P = U x I) en energie (E = P x t), omgaan met de eenheden watt, joule en kWh en energiekosten berekenen.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Vermogen: P = U x I",
@@ -1329,7 +1331,7 @@ var VAKKEN = [
      {
       "id": "D5",
       "naam": "Geleiders, isolatoren en sensoren",
-      "beschrijving": "Gouden-standaardmodule na.D.5: geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.",
+      "beschrijving": "Geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Geleiders en isolatoren",
@@ -1347,7 +1349,7 @@ var VAKKEN = [
      {
       "id": "D6",
       "naam": "Elektrische veiligheid",
-      "beschrijving": "Gouden-standaardmodule na.D.6: begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.",
+      "beschrijving": "Begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Kortsluiting en overbelasting",

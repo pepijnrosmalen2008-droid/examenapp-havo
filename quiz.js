@@ -201,7 +201,8 @@ function toonV(){
   if(_adaptPill)_adaptPill.style.display=Object.values(_aqpdom).some(e=>e.n>0)?'inline-flex':'none';
 
   const _dl=ST.adaptive&&typeof qDiff==='function'?['','Makkelijk','Gemiddeld','Moeilijk'][qDiff(q)]:'';
-  document.getElementById('qctr').textContent=`Vraag ${ST.idx+1} van ${tot}`+(_dl?` · ${_dl}`:'');
+  const _vv=ST.adaptive&&ST.aqVervolg&&ST.aqVervolg.has(ST.idx);
+  document.getElementById('qctr').textContent=`Vraag ${ST.idx+1} van ${tot}`+(_vv?' · Nog een over dit onderwerp':(_dl?` · ${_dl}`:''));
   document.getElementById('qprog').style.width=`${(ST.idx/tot)*100}%`;
   document.getElementById('qfb').style.display='none';
   document.getElementById('qnxt').style.display='none';
@@ -360,7 +361,7 @@ function kies(gekozen,correct){
 function _kiesReveal(gekozen,correct,btns){
   btns[gekozen].classList.remove('suspense-pending');
   const ok=gekozen===correct;
-  if(ST.adaptive)ST.aqLevel=ok?Math.min(3,ST.aqLevel+1):Math.max(1,ST.aqLevel-1);
+  if(ST.adaptive){ST.aqLevel=ok?Math.min(3,ST.aqLevel+1):Math.max(1,ST.aqLevel-1);ST.aqFout=ok?null:ST.vragen[ST.idx];}
   ST.score+=ok?1:0;
   // Log per-vraag data voor adaptive engine
   try{const ms=ST._vraagStartMs?Date.now()-ST._vraagStartMs:null;logQuestion(ST.vak?.id,ST.domein?.id,ST.mode,ST.idx,ok,ms);}catch(e){}
@@ -442,7 +443,7 @@ function _kiesReveal(gekozen,correct,btns){
 
 function tijdOp(){
   const q=ST.vragen[ST.idx];
-  if(ST.adaptive)ST.aqLevel=Math.max(1,ST.aqLevel-1);
+  if(ST.adaptive){ST.aqLevel=Math.max(1,ST.aqLevel-1);ST.aqFout=ST.vragen[ST.idx];}
   ST.tijdPerVraag.push(0);
   aqpRecord(ST.vragen[ST.idx], 0);
   ST.antwrd.push({pts:0,chosenText:'⏱ Tijd was op',tijdOver:0,d:q.d||1});

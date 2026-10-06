@@ -341,6 +341,8 @@
     }
   };
   for (var _sk in SPECS) CHOREO[_sk] = specChoreo(SPECS[_sk]);
+  // Voor de render-controle (scripts/render-leerdoel.mjs): welke clips bestaan er en hoeveel stappen hebben ze.
+  window.__samClipInfo = function (n) { var c = CHOREO[n]; return c ? { duration: c.duration, cues: (c.cues || []).length } : null; };
 
   // ══ Framework ══
   function nameOf(clip) {

@@ -810,6 +810,16 @@ function openLeerdoelen(domId,_noHash){
       ${bar}
     </div>`;
   });
+  // Samenvatting van het hele domein blijft bereikbaar zolang de leerdoelen nog niet
+  // allemaal een eigen module hebben (de content-routine bouwt ze één voor één).
+  const _domSam=(typeof SAM_RICH!=='undefined')&&SAM_RICH[APP_LEVEL+'_'+v.id+'_'+d.id];
+  if(_domSam){
+    html+=`<div class="ld-card ld-mixed" onclick="openDomein('${d.id}')">
+      <div class="ld-card-head">
+        <div class="ld-card-id" style="background:${v.kleur}18;color:${v.kleur}">${typeof ICO_BOOK!=='undefined'?ICO_BOOK:'≡'}</div>
+        <div class="ld-card-main"><h4>Samenvatting hele domein</h4><p>Alles van domein ${d.id} op één pagina</p></div>
+      </div></div>`;
+  }
   // "hele domein gemengd oefenen" (de bestaande bulk-bank van het domein zelf)
   const domN=(d.sv||[]).length||d.nSv||0;
   if(domN>0){
@@ -1300,11 +1310,15 @@ function aqSetupAdaptive(pool,vakId,domeinId,target){
   pool.forEach(function(q){buckets[qDiff(q)].push(q);});
   if([1,2,3].filter(function(l){return buckets[l].length>0;}).length<2)return false;
   var d=aqpGet(),dom=aqpDomainData(d,vakId,domeinId);
+  // Onderwerpen (q.s) waar je vaker fout gaat, wegen zwaarder: daar zit de winst.
+  var sub={};
+  pool.forEach(function(q){if(!Number.isInteger(q.s))return;var e=dom[aqpQKey(q)];if(!e||!e.n)return;var x=sub[q.s]||(sub[q.s]={n:0,w:0});x.n+=e.n;x.w+=e.w;});
+  var subW=function(q){var x=Number.isInteger(q.s)&&sub[q.s];return x&&x.n>=2?1+2*(x.w/x.n):1;};
   [1,2,3].forEach(function(l){
-    buckets[l]=buckets[l].map(function(q){return {q:q,k:Math.pow(Math.random(),1/Math.max(0.01,aqpWeight(dom[aqpQKey(q)])))};})
+    buckets[l]=buckets[l].map(function(q){return {q:q,k:Math.pow(Math.random(),1/Math.max(0.01,aqpWeight(dom[aqpQKey(q)])*subW(q)))};})
       .sort(function(a,b){return b.k-a.k;}).map(function(x){return x.q;});
   });
-  ST.adaptive=true;ST.aqTarget=target;ST.aqLevel=2;ST.aqBuckets=buckets;ST.aqUsed=new Set();
+  ST.adaptive=true;ST.aqTarget=target;ST.aqLevel=2;ST.aqBuckets=buckets;ST.aqUsed=new Set();ST.aqFout=null;ST.aqVervolg=new Set();
   ST.vragen=[];ST.shuffleMaps=[];
   return aqFill();
 }
@@ -1312,6 +1326,16 @@ function aqSetupAdaptive(pool,vakId,domeinId,target){
 function aqFill(){
   if(!ST.adaptive||ST.vragen.length>=ST.aqTarget)return false;
   var lvl=ST.aqLevel,order=[lvl,lvl-1,lvl+1,lvl-2,lvl+2],pick=null;
+  // Vervolgvraag: na een fout eerst een andere vraag over hetzelfde onderwerp (q.s),
+  // op het (inmiddels lagere) niveau. Zo oefen je meteen het stuk waar het misging.
+  var fout=ST.aqFout;ST.aqFout=null;
+  if(fout&&Number.isInteger(fout.s)){
+    for(var a=0;a<order.length&&!pick;a++){
+      var bb=ST.aqBuckets[order[a]];if(!bb)continue;
+      for(var c=0;c<bb.length;c++){if(!ST.aqUsed.has(bb[c])&&bb[c].s===fout.s&&bb[c]!==fout){pick=bb[c];break;}}
+    }
+    if(pick&&ST.aqVervolg)ST.aqVervolg.add(ST.vragen.length);
+  }
   for(var i=0;i<order.length&&!pick;i++){
     var b=ST.aqBuckets[order[i]];if(!b)continue;
     for(var j=0;j<b.length;j++){if(!ST.aqUsed.has(b[j])){pick=b[j];break;}}

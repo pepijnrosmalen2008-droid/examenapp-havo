@@ -20699,7 +20699,7 @@ var VAKKEN = [
      {
       "id": "A1",
       "naam": "Onderzoek opzetten",
-      "beschrijving": "Gouden-standaardmodule bi.A.1: een biologisch experiment opzetten met een toetsbare hypothese, de onafhankelijke, afhankelijke en constante variabelen, en een controlegroep.",
+      "beschrijving": "Een biologisch experiment opzetten met een toetsbare hypothese, de onafhankelijke, afhankelijke en constante variabelen, en een controlegroep.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Hypothese als toetsbare verwachting",
@@ -21263,7 +21263,7 @@ var VAKKEN = [
      {
       "id": "A2",
       "naam": "Betrouwbaarheid en validiteit beoordelen",
-      "beschrijving": "Gouden-standaardmodule bi.A.2: het verschil tussen betrouwbaarheid (steeds hetzelfde resultaat) en validiteit (meet je het juiste), en de rol van steekproef en placebo.",
+      "beschrijving": "Het verschil tussen betrouwbaarheid (steeds hetzelfde resultaat) en validiteit (meet je het juiste), en de rol van steekproef en placebo.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Betrouwbaarheid: reproduceerbaar resultaat",
@@ -21827,7 +21827,7 @@ var VAKKEN = [
      {
       "id": "A3",
       "naam": "Data verwerken en grafieken lezen",
-      "beschrijving": "Gouden-standaardmodule bi.A.3: gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.",
+      "beschrijving": "Gegevens uit tabellen en grafieken aflezen, as-eenheden juist lezen, spreiding (standaarddeviatie) interpreteren en niet concluderen buiten het meetbereik.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Grafiek lezen: assen en as-eenheden",
@@ -22391,7 +22391,7 @@ var VAKKEN = [
      {
       "id": "A4",
       "naam": "Correlatie versus causaliteit",
-      "beschrijving": "Gouden-standaardmodule bi.A.4: het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.",
+      "beschrijving": "Het verschil tussen een verband (correlatie) en een oorzaak-gevolgrelatie (causaliteit), en waarom een correlatie geen oorzaak bewijst.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Correlatie: twee dingen veranderen samen",
@@ -22955,7 +22955,7 @@ var VAKKEN = [
      {
       "id": "A5",
       "naam": "Biologisch onderzoeksgereedschap",
-      "beschrijving": "Gouden-standaardmodule bi.A.5: het gebruik van een determineertabel om een soort op naam te brengen, en de functie van een preparaat bij microscopisch onderzoek.",
+      "beschrijving": "Het gebruik van een determineertabel om een soort op naam te brengen, en de functie van een preparaat bij microscopisch onderzoek.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Determineren: een soort op naam brengen",
@@ -27097,7 +27097,7 @@ var VAKKEN = [
      {
       "id": "M1",
       "naam": "Bouw en functie van de cel",
-      "beschrijving": "Gouden-standaardmodule bi.M.1: de celorganellen en hun functies, plus het verschil tussen een plantencel, een dierlijke cel en een bacteriecel (eukaryoot versus prokaryoot).",
+      "beschrijving": "De celorganellen en hun functies, plus het verschil tussen een plantencel, een dierlijke cel en een bacteriecel (eukaryoot versus prokaryoot).",
       "ceStatus": "CE",
       "onderwerpen": [
        "Celorganellen en hun functies",
@@ -27691,7 +27691,7 @@ var VAKKEN = [
      {
       "id": "M2",
       "naam": "Transport door het celmembraan",
-      "beschrijving": "Gouden-standaardmodule bi.M.2: hoe stoffen door het selectief doorlaatbare celmembraan bewegen via diffusie, osmose, passief en actief transport, met hypertoon/hypotoon/isotoon, plasmolyse en turgor.",
+      "beschrijving": "Hoe stoffen door het selectief doorlaatbare celmembraan bewegen via diffusie, osmose, passief en actief transport, met hypertoon/hypotoon/isotoon, plasmolyse en turgor.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Selectief doorlaatbaar celmembraan",
@@ -28285,7 +28285,7 @@ var VAKKEN = [
      {
       "id": "M3",
       "naam": "Enzymwerking",
-      "beschrijving": "Gouden-standaardmodule bi.M.3 Enzymwerking, volledig door de Content Engine geproduceerd: hoofdstuk-samenvatting met clips, 25 snelle-quizvragen R1-R3 incl. transfer en diagnostische per-optie-uitleg, plus oud-examenvragen (open, met modelantwoord).",
+      "beschrijving": "Je weet wat een enzym is en hoe het een reactie versnelt, en je kunt grafieken van enzymactiviteit bij verschillende temperaturen en pH verklaren met optimum en denaturatie.",
       "ceStatus": "CE+SE",
       "binas": "",
       "val": "",
@@ -28306,94 +28306,99 @@ var VAKKEN = [
          "Een eiwit dat als biokatalysator reacties versnelt",
          "Een hormoon dat een signaal in het lichaam doorgeeft",
          "Een koolhydraat dat de cel van energie voorziet",
-         "Een vetmolecuul in het celmembraan"
+         "Een vetmolecuul dat in het celmembraan zit"
         ],
         "c": 0,
         "d": 1,
-        "u": "Een enzym is een eiwit dat als biokatalysator reacties versnelt. Koos je 'hormoon'? Beide 'regelen' iets, maar een hormoon geeft een signaal door; een enzym versnelt een reactie. Onthoud: enzym = eiwit dat de reactiesnelheid verhoogt.",
+        "s": 0,
+        "u": "Een enzym is een eiwit dat als biokatalysator een reactie versnelt en daarbij zelf niet verandert.",
         "uo": [
-         "Klopt: een enzym is een eiwit dat als biokatalysator reacties versnelt.",
-         "Een hormoon is een signaalstof die een boodschap doorgeeft; een enzym versnelt juist een reactie. Ze worden verward omdat beide 'iets regelen'.",
-         "Een koolhydraat is brandstof; een enzym levert géén energie, het verlaagt alleen de reactiedrempel. Daarom is het juiste antwoord het eiwit dat reacties versnelt.",
-         "Enzymen zijn eiwitten, geen vetten uit het celmembraan. Het juiste antwoord noemt het eiwit dat reacties versnelt."
+         "Klopt: een enzym is een eiwit dat een reactie versnelt zonder zelf te veranderen. Dat maakt het een biokatalysator.",
+         "Koos je hormoon? Beide 'regelen' iets in het lichaam, maar een hormoon is een signaalstof die via het bloed een boodschap brengt. Een enzym brengt geen boodschap: het versnelt ter plekke een reactie.",
+         "Koos je koolhydraat? Dan denk je dat een enzym de energie levert voor een reactie. Een enzym is geen brandstof; het verlaagt alleen de startdrempel. Koolhydraten zijn de brandstof, enzymen de versnellers.",
+         "Koos je vet? Vetten (fosfolipiden) vormen het membraan, maar enzymen zijn opgebouwd uit aminozuren: het zijn eiwitten. Het verschil zit in de bouwstenen, niet in de plek in de cel."
         ],
-        "uh": "Enzym = eiwit dat reacties versnelt. Verwar het niet met een hormoon (signaalstof) of een brandstof."
+        "uh": "Enzym = eiwit + versneller. Niet verwarren met hormoon (signaal) of brandstof (energie)."
        },
        {
         "v": "Hoe versnelt een enzym een reactie?",
         "o": [
          "Het verwarmt de cel zodat moleculen sneller bewegen",
          "Het levert zelf extra energie aan de reactie",
-         "Het maakt meer substraat aan om te reageren",
+         "Het maakt extra substraat aan",
          "Het verlaagt de activeringsenergie"
         ],
         "c": 3,
         "d": 1,
-        "u": "Een enzym verlaagt de activeringsenergie - de startdrempel van de reactie. Koos je 'levert energie'? Een enzym voegt niets toe; het verlaagt alleen de drempel, daarom gaat de reactie sneller. Onthoud: enzym versnelt is niet hetzelfde als enzym levert energie.",
+        "s": 1,
+        "u": "Een enzym verlaagt de activeringsenergie; het levert zelf geen energie.",
         "uo": [
-         "Een enzym verandert de celtemperatuur niet; het werkt bij de bestaande temperatuur. De snelheidswinst komt doordat het de activeringsenergie verlaagt.",
-         "Een enzym levert zélf geen energie - de bekende valkuil. Het verlaagt alleen de startdrempel, dát is het juiste antwoord.",
-         "Een enzym maakt geen extra substraat aan om zichzelf te versnellen; het verlaagt de activeringsenergie van de bestaande reactie.",
-         "Klopt: het enzym verlaagt de activeringsenergie (de startdrempel), waardoor de reactie sneller gaat zonder extra energie."
+         "Koos je verwarmen? Hogere temperatuur versnelt reacties inderdaad, maar dat doet een enzym niet. Het werkt bij de temperatuur die er al is en maakt de reactie sneller door de startdrempel te verlagen.",
+         "Koos je 'levert energie'? Dat is de bekendste enzymvalkuil. Een enzym voegt geen energie toe; het maakt de drempel lager, zodat de reactie met minder startenergie op gang komt.",
+         "Koos je 'maakt substraat aan'? Meer substraat kan de snelheid verhogen, maar een enzym maakt geen substraat. Het zet bestaand substraat sneller om door de activeringsenergie te verlagen.",
+         "Klopt: het enzym verlaagt de activeringsenergie, de drempel om de reactie te starten. Daardoor gaat de reactie sneller zonder dat er energie bij komt."
         ],
-        "uh": "Een enzym verlaagt de drempel; het levert geen energie."
+        "uh": "Versnellen door de drempel te verlagen, niet door energie toe te voegen."
        },
        {
-        "v": "De enzymactiviteit daalt snel boven 40 °C. Wat gebeurt er?",
+        "v": "Boven 40 °C daalt de enzymactiviteit snel. Wat gebeurt er met het enzym?",
         "o": [
-         "Het substraat raakt op, dus de reactie stopt meteen",
-         "Het enzym werkt sneller door de warmte",
+         "Het substraat raakt op, dus de reactie stopt",
+         "Het enzym werkt sneller door de extra warmte",
          "Het enzym denatureert en verliest zijn vorm",
          "Het enzym wordt in de reactie opgebruikt"
         ],
         "c": 2,
         "d": 2,
-        "u": "Boven de optimumtemperatuur denatureert het enzym: het actief centrum verliest zijn vorm en de activiteit daalt. Koos je 'opgebruikt'? Een enzym is herbruikbaar; de daling komt door denaturatie, niet door opraken. Onthoud: de scherpe daling ná de top in de grafiek = denaturatie.",
+        "s": 2,
+        "u": "Boven de optimumtemperatuur denatureert het enzym: het actief centrum verliest zijn vorm.",
         "uo": [
-         "Als het substraat op was, zou de daling niet netjes bij de temperatuur horen; de grafiek koppelt de daling aan de warmte, dus het gaat om denaturatie.",
-         "Meer warmte is niet altijd sneller: voorbij het optimum keert het effect om doordat het enzym denatureert.",
-         "Klopt: boven de optimumtemperatuur denatureert het enzym - het actief centrum verliest zijn vorm en de activiteit daalt.",
-         "Een enzym wordt niet verbruikt (het is herbruikbaar); de daling komt door denaturatie, niet door 'opraken'."
+         "Koos je 'substraat raakt op'? Dan zou de daling niets met de temperatuur te maken hebben. Hier daalt de activiteit precies als het warmer wordt: het enzym zelf verandert, niet de hoeveelheid substraat.",
+         "Koos je 'sneller door warmte'? Dat geldt alleen tot het optimum. Daarboven keert het om: de warmte beschadigt de ruimtelijke structuur, zodat het enzym juist slechter werkt.",
+         "Klopt: boven het optimum denatureert het enzym. De ruimtelijke structuur verandert, het actief centrum verliest zijn vorm en het substraat past er niet meer in.",
+         "Koos je 'opgebruikt'? Een enzym wordt niet verbruikt; het komt na elke reactie onveranderd vrij. Een daling bij hogere temperatuur betekent dat het enzym kapotgaat (denatureert), niet dat het op is."
         ],
-        "uh": "Scherpe daling ná de top in een temperatuurgrafiek = denaturatie, niet 'opraken'."
+        "uh": "Daling ná de top in een temperatuurgrafiek = denaturatie, niet 'opraken'."
        },
        {
-        "v": "Wat is het verschil tussen optimum en denaturatie?",
+        "v": "Hoe verschillen het optimum en denaturatie?",
         "o": [
-         "Ze betekenen bij een enzym eigenlijk hetzelfde",
-         "Optimum = beste werking; denaturatie = kapotte vorm",
+         "Bij een enzym betekenen ze hetzelfde",
+         "Optimum: beste werking; denaturatie: vorm kapot",
          "Bij het optimum denatureert het enzym juist",
-         "Denaturatie hoort bij te lage, optimum bij te hoge temperatuur"
+         "Denaturatie hoort bij kou, het optimum bij hitte"
         ],
         "c": 1,
         "d": 2,
-        "u": "Het optimum is de temperatuur met de beste werking; denaturatie is de onomkeerbare vormverandering waardoor de functie wegvalt. Koos je 'hetzelfde'? Dat zijn juist tegengestelde dingen. Onthoud: optimum is niet gelijk aan denaturatie; denaturatie kan door te hoge temperatuur óf extreme pH.",
+        "s": 2,
+        "u": "Optimum = beste werking; denaturatie = structuur kapot, functie weg (door hitte of extreme pH).",
         "uo": [
-         "Ze betekenen niet hetzelfde - het zijn juist tegengestelde dingen: goed werken versus kapotgaan.",
-         "Klopt: het optimum is de temperatuur met de beste werking; denaturatie is de onomkeerbare vormverandering waardoor de functie wegvalt.",
-         "Dit wisselt de begrippen om: bij het optimum werkt het enzym het best, erboven denatureert het (niet andersom).",
-         "Denaturatie hoort bij een te hóóg extreem, niet bij te laag; het optimum ligt ertussenin."
+         "Koos je 'hetzelfde'? Ze liggen in de grafiek juist naast elkaar: het optimum is de top, denaturatie de scherpe daling erna. Het een is het enzym op zijn best, het ander het enzym dat kapotgaat.",
+         "Klopt: het optimum is de temperatuur (of pH) waarbij het enzym het best werkt. Denaturatie is de verandering van de ruimtelijke structuur waardoor de functie wegvalt.",
+         "Koos je dit? Dan verwissel je top en daling. Bij het optimum is de activiteit het hoogst; pas als je daar ver boven komt, verandert de structuur en denatureert het enzym.",
+         "Koos je dit? Kou remt een enzym alleen: de moleculen bewegen trager, maar de vorm blijft heel. Denaturatie door temperatuur gebeurt bij te hoge temperatuur, en kan ook door een extreme pH komen."
         ],
-        "uh": "Optimum = beste werking; denaturatie = kapotte vorm. Tegengesteld."
+        "uh": "Top van de grafiek = optimum; scherpe daling erna = denaturatie."
        },
        {
-        "v": "Wat gebeurt er met het enzym ná de reactie?",
+        "v": "Wat gebeurt er met een enzymmolecuul na de reactie?",
         "o": [
          "Het is opgebruikt en verdwijnt uit de cel",
          "Het verandert zelf in het reactieproduct",
-         "Het komt vrij en werkt opnieuw",
+         "Het komt onveranderd vrij en werkt opnieuw",
          "Het valt uiteen in kleinere moleculen"
         ],
         "c": 2,
         "d": 1,
-        "u": "Het enzym komt onveranderd vrij en werkt opnieuw. Koos je 'opgebruikt'? De hardnekkigste enzym-misvatting - juist omdat het niet verandert kan één molecuul heel veel reacties versnellen. Onthoud: een enzym wordt niet verbruikt.",
+        "s": 5,
+        "u": "Een enzym wordt niet verbruikt: het komt onveranderd vrij en werkt opnieuw.",
         "uo": [
-         "De bekende misvatting: een enzym raakt niet op. Het doet mee maar verandert zelf niet, dus het komt onveranderd vrij.",
-         "Het enzym máákt het product, maar wórdt het niet; het komt onveranderd vrij en werkt opnieuw.",
-         "Klopt: het enzym komt onveranderd vrij en werkt opnieuw - daarom kan één molecuul veel reacties versnellen.",
-         "Het enzym valt niet uiteen; het substraat wordt omgezet en het enzym blijft heel en herbruikbaar."
+         "Koos je 'opgebruikt'? Dat is de hardnekkigste enzymmisvatting. Het substraat wordt omgezet, het enzym niet. Het enzym doet mee, maar komt na afloop precies hetzelfde terug.",
+         "Koos je 'wordt het product'? Dan verwar je enzym en substraat. Het substraat verandert in het product; het enzym helpt alleen en blijft zelf hetzelfde.",
+         "Klopt: het enzym komt onveranderd vrij en kan meteen een volgend substraatmolecuul omzetten. Daardoor kan één enzymmolecuul heel veel reacties versnellen.",
+         "Koos je 'valt uiteen'? Uiteenvallen gebeurt met het substraat bij een afbraakreactie, niet met het enzym. Het enzym blijft heel en is herbruikbaar."
         ],
-        "uh": "Een enzym wordt niet verbruikt; het komt onveranderd vrij."
+        "uh": "Substraat verandert, enzym niet."
        },
        {
         "v": "Waarom breekt amylase wel zetmeel af, maar geen eiwit?",
@@ -28401,75 +28406,81 @@ var VAKKEN = [
          "Eiwitten zijn te klein voor het actief centrum",
          "Zetmeel past qua vorm in het actief centrum",
          "Amylase werkt alleen bij een zeer hoge pH",
-         "Amylase is bij eiwit al opgebruikt geraakt"
+         "Amylase is bij eiwit al opgebruikt"
         ],
         "c": 1,
         "d": 2,
-        "u": "Zetmeel past qua vorm in het actief centrum van amylase; een eiwit past er niet in (substraatspecificiteit). Koos je 'te klein'? Het gaat om de vorm, niet om de grootte. Onthoud: een enzym herkent zijn substraat aan de vorm - denk niet in 'één enzym, één stof', maar in een passende vorm.",
+        "s": 4,
+        "u": "Een enzym werkt op substraten die passen in zijn actief centrum (vorm en chemische eigenschappen).",
         "uo": [
-         "Het gaat niet om grootte maar om vórm: een eiwit past simpelweg niet in het actief centrum van amylase.",
-         "Klopt: de vorm van zetmeel past in het actief centrum van amylase; een eiwit past er niet in (substraatspecificiteit).",
-         "pH speelt wel een rol bij enzymen, maar verklaart niet waarom amylase wél zetmeel en géén eiwit afbreekt - dat is de vorm.",
-         "Amylase raakt niet 'op' bij eiwit; het past er gewoon niet op door de vorm van het actief centrum."
+         "Koos je 'te klein'? Het gaat niet om grootte maar om vorm en chemische eigenschappen. Een eiwit past niet in het actief centrum van amylase, hoe groot of klein het ook is.",
+         "Klopt: het actief centrum van amylase heeft een vorm en chemische eigenschappen waar zetmeel in past. Een eiwit past er niet in. Dat heet substraatspecificiteit.",
+         "Koos je pH? pH bepaalt hoe goed een enzym werkt, maar niet wélke stof het afbreekt. Bij elke pH blijft amylase een zetmeelafbreker; eiwit past nooit in zijn actief centrum.",
+         "Koos je 'opgebruikt'? Een enzym raakt niet op. Amylase begint niet eens aan eiwit, omdat eiwit niet in het actief centrum past."
         ],
-        "uh": "Substraatspecificiteit gaat over vórm, niet over grootte."
+        "uh": "Specificiteit gaat over passende vorm, niet over grootte."
        },
        {
-        "v": "Na verhitting tot 60 °C werkt een enzym niet meer, ook niet na afkoelen. Waarom?",
+        "v": "Waarom werkt het enzym niet meer, ook niet na afkoelen?",
         "o": [
-         "Bij 37 °C is het optimum nog niet bereikt",
+         "Bij 37 °C was het optimum nog niet bereikt",
          "Het substraat is bij 60 °C opgeraakt",
-         "De hoge temperatuur remt het enzym tijdelijk af",
-         "Het enzym is gedenatureerd; dat is onomkeerbaar"
+         "De hitte remt het enzym tijdelijk af",
+         "Het enzym is gedenatureerd; dat is blijvend"
         ],
         "c": 3,
         "d": 3,
-        "u": "Bij 60 °C is het enzym gedenatureerd; die vormverandering van het actief centrum is onomkeerbaar, dus afkoelen herstelt de werking niet. Het werkte al goed bij 37 °C, dus de temperatuur zelf is niet de oorzaak - er is iets blijvends veranderd. Onthoud: denaturatie door hitte is geen tijdelijke rem.",
+        "s": 2,
+        "u": "Denaturatie door hitte is onomkeerbaar: afkoelen herstelt de werking niet.",
         "uo": [
-         "Het enzym wérkte al goed bij 37 °C, dus het optimum wás bereikt; er is iets blijvends veranderd - denaturatie.",
-         "Een opgeraakt substraat verklaart niet waarom terugkoelen niet helpt; de kern is de onomkeerbare denaturatie van het enzym.",
-         "Denaturatie door hitte is geen tijdelijke rem: de vorm van het actief centrum is kapot en komt niet vanzelf terug.",
-         "Klopt: bij 60 °C is het enzym gedenatureerd; die vormverandering is onomkeerbaar, dus afkoelen herstelt de werking niet."
+         "Koos je dit? Het enzym werkte bij 37 °C juist goed, dus daar zat het bij zijn optimum. Het probleem is niet dat het te koud was, maar dat de hitte iets blijvends heeft veranderd.",
+         "Koos je 'substraat op'? Dan zou nieuw substraat het probleem oplossen. In de proef werkt het enzym met vers substraat ook niet meer: het enzym zelf is veranderd.",
+         "Koos je 'tijdelijk afgeremd'? Dat geldt voor kou: na opwarmen werkt een afgekoeld enzym weer. Na hitte is de ruimtelijke structuur kapot en komt de werking niet terug.",
+         "Klopt: bij 60 °C is het enzym gedenatureerd. De vorm van het actief centrum is blijvend veranderd, dus ook na afkoelen past het substraat er niet meer in."
         ],
-        "uh": "Denaturatie door hitte is onomkeerbaar; afkoelen herstelt niet."
+        "uh": "Kou remt tijdelijk; hitte maakt kapot.",
+        "ctx": "Proef: een enzymoplossing werkt goed bij 37 °C. Je verwarmt hem 10 minuten tot 60 °C en koelt hem af tot 37 °C. Met vers substraat gebeurt er nu niets meer."
        },
        {
-        "v": "Pepsine werkt bij pH 2, maar niet bij pH 7. Waarom?",
+        "v": "Pepsine werkt bij pH 2, maar bijna niet bij pH 7. Waarom?",
         "o": [
-         "Pepsine heeft een zuur pH-optimum; pH 7 ligt te ver weg",
-         "Bij pH 7 is de pepsine opgeraakt",
-         "Pepsine werkt alleen bij lichaamstemperatuur, niet bij pH 7",
-         "pH heeft geen invloed op enzymen"
+         "Pepsine werkt het best in zuur milieu",
+         "Bij pH 7 is alle pepsine in de maag opgeraakt",
+         "Pepsine werkt alleen goed bij lichaamstemperatuur",
+         "De pH heeft geen invloed op hoe enzymen werken"
         ],
         "c": 0,
         "d": 2,
-        "u": "Elk enzym heeft een eigen optimum-pH; pH 7 ligt te ver van het zure optimum van pepsine (maag ~pH 2), dus het werkt daar bijna niet. Koos je 'opgeraakt'? Weer de verbruikt-misvatting - het enzym raakt niet op, het werkt alleen niet bij deze pH. Onthoud: net als temperatuur heeft pH een optimum.",
+        "s": 3,
+        "u": "Elk enzym heeft een pH-optimum; ver daarvan daalt de activiteit.",
         "uo": [
-         "Klopt: elk enzym heeft een eigen optimum-pH; pH 7 ligt te ver van het zure optimum van pepsine, dus het werkt daar bijna niet.",
-         "Pepsine raakt niet op bij pH 7 (de verbruikt-misvatting); het wérkt daar alleen niet omdat de pH te ver van het optimum ligt.",
-         "De vraag varieert de pH, niet de temperatuur; de verklaring moet dus over de pH gaan.",
-         "pH heeft juist wél invloed: net als temperatuur heeft elk enzym een optimum-pH waarbuiten de activiteit daalt."
+         "Klopt: elk enzym heeft een eigen pH-optimum. Dat van pepsine ligt rond pH 2, passend bij de zure maag. Bij pH 7 ligt het ver buiten dat optimum.",
+         "Koos je 'opgeraakt'? Een enzym raakt niet op door een andere pH. Het is er nog wel, maar het werkt slecht omdat de omgeving niet bij zijn optimum past.",
+         "Koos je temperatuur? In de vraag verandert alleen de pH, de temperatuur blijft gelijk. De verklaring moet dus over de pH gaan.",
+         "Koos je 'geen invloed'? Juist wel: net als bij temperatuur heeft elk enzym een pH waarbij het het best werkt. Daarbuiten daalt de activiteit, en bij een extreme pH kan het denatureren."
         ],
-        "uh": "pH heeft een optimum, net als temperatuur; ver ervan af daalt de activiteit."
+        "uh": "pH werkt als temperatuur: er is een optimum."
        },
        {
-        "v": "Wat betekent het dat een enzym een biokatalysator is?",
+        "v": "Wat is de beste conclusie over dit enzym?",
         "o": [
-         "Het versnelt een reactie zonder zelf verbruikt te worden",
-         "Het levert energie voor een reactie",
-         "Het is een katalysator van metaal",
-         "Het vertraagt een reactie in de cel"
+         "Het optimum ligt rond 75 °C; boven 80 °C denatureert het",
+         "Het denatureert al boven 37 °C, net als onze enzymen",
+         "Bij 85 °C daalt de activiteit omdat het substraat opraakt",
+         "Het werkt het best bij 85 °C, want daar is het het warmst"
         ],
         "c": 0,
-        "d": 1,
-        "u": "Onthoud: bio = in het lichaam, katalysator = versnelt zonder zelf op te raken.",
+        "d": 3,
+        "s": 6,
+        "u": "Lees het optimum af uit de meetwaarden; elk enzym heeft een eigen optimumtemperatuur.",
         "uo": [
-         "Klopt: een biokatalysator versnelt en komt onveranderd vrij.",
-         "Een enzym levert geen energie; het verlaagt de drempel.",
-         "'Bio' betekent van eiwit / in een organisme, niet van metaal.",
-         "Een katalysator versnelt juist; vertragen is het tegenovergestelde."
+         "Klopt: de activiteit is het hoogst bij 75 °C, dus daar ligt het optimum. De scherpe daling bij 85 °C wijst op denaturatie. Dit enzym is aangepast aan heet water.",
+         "Koos je dit? Dan pas je de regel 'denaturatie boven 37 °C' toe op elk enzym. 37 °C is het optimum van veel menselijke enzymen. De tabel laat zien dat dit enzym tot 75 °C steeds beter werkt.",
+         "Koos je 'substraat op'? In elke buis zit evenveel vers substraat; alleen de temperatuur verschilt. De daling hoort dus bij de temperatuur: het enzym denatureert.",
+         "Koos je dit? Warmer is niet altijd beter. Bij 85 °C is de activiteit juist veel lager dan bij 75 °C. Lees de waarden af in plaats van uit te gaan van 'warmer = sneller'."
         ],
-        "uh": "Biokatalysator = versnelt een reactie, raakt zelf niet op."
+        "uh": "37 °C is het optimum van ónze enzymen, niet van alle enzymen.",
+        "ctx": "Een bacterie uit een hete bron maakt een enzym. Gemeten activiteit (zelfde hoeveelheid enzym en substraat): 40 °C: 20 · 60 °C: 55 · 75 °C: 90 · 85 °C: 30."
        },
        {
         "v": "Tot welke groep stoffen behoren vrijwel alle enzymen?",
@@ -28481,14 +28492,15 @@ var VAKKEN = [
         ],
         "c": 3,
         "d": 1,
-        "u": "Onthoud: enzymen zijn eiwitten.",
+        "s": 0,
+        "u": "Enzymen zijn eiwitten; hun vouwing bepaalt hun werking.",
         "uo": [
-         "Enzymen zijn geen vetten (die zitten o.a. in het celmembraan).",
-         "Koolhydraten zijn brandstof/bouwstof, geen enzymen.",
-         "Zouten werken niet als enzym.",
-         "Klopt: enzymen zijn opgebouwd uit aminozuren, dus eiwitten."
+         "Koos je vetten? Vetten zijn bouwstof voor het membraan en een energievoorraad. Enzymen zijn opgebouwd uit aminozuren, en ketens van aminozuren zijn eiwitten.",
+         "Koos je koolhydraten? Koolhydraten zoals zetmeel zijn juist vaak het substraat dat een enzym afbreekt, niet het enzym zelf. Het enzym is een eiwit.",
+         "Koos je zouten? Sommige enzymen hebben een metaalion als hulpje nodig, maar het enzym zelf is een eiwit: een gevouwen keten van aminozuren.",
+         "Klopt: enzymen zijn eiwitten. Hun precieze vouwing bepaalt de vorm van het actief centrum, en daarom kan hitte of een extreme pH ze kapotmaken."
         ],
-        "uh": "Enzym = eiwit."
+        "uh": "Enzym = eiwit = gevouwen keten van aminozuren."
        },
        {
         "v": "Hoe heet de plek op het enzym waar het substraat bindt?",
@@ -28496,268 +28508,286 @@ var VAKKEN = [
          "Het celmembraan",
          "Het ribosoom",
          "Het actief centrum",
-         "De celkern met het DNA erin"
+         "De celkern"
         ],
         "c": 2,
         "d": 1,
-        "u": "Onthoud: het substraat past in het actief centrum.",
+        "s": 4,
+        "u": "Het substraat bindt in het actief centrum van het enzym.",
         "uo": [
-         "Het celmembraan is de celgrens, niet de bindplaats op het enzym.",
-         "Een ribosoom maakt eiwitten; niet de bindplaats voor het substraat.",
-         "Klopt: het substraat bindt in het actief centrum.",
-         "De celkern bevat DNA, niet de bindplaats van het enzym."
+         "Koos je celmembraan? Dat is de grens van de hele cel, geen deel van een enzymmolecuul. Het substraat bindt aan een holte in het enzym zelf: het actief centrum.",
+         "Koos je ribosoom? Ribosomen maken eiwitten, dus ook enzymen. Maar de plek waar het substraat aan het enzym bindt is een holte in het enzym: het actief centrum.",
+         "Klopt: het substraat bindt in het actief centrum. De vorm en chemische eigenschappen van die holte bepalen welke stoffen erin passen.",
+         "Koos je celkern? De kern bevat het DNA met de bouwinstructie voor enzymen. De plek waar het substraat bindt zit op het enzymmolecuul zelf: het actief centrum."
         ],
-        "uh": "Substraat bindt in het actief centrum."
+        "uh": "Actief centrum = de 'slotholte' van het enzym."
        },
        {
-        "v": "Waarom kan een kleine hoeveelheid enzym veel substraat omzetten?",
+        "v": "Hoe kan een klein beetje enzym veel substraat omzetten?",
         "o": [
-         "Omdat het enzym telkens groter wordt",
-         "Omdat het enzym herbruikbaar is en niet opraakt",
-         "Omdat het enzym in product verandert",
-         "Omdat het enzym energie levert"
+         "Het enzym groeit tijdens de reactie",
+         "Het enzym is herbruikbaar en raakt niet op",
+         "Het enzym verandert zelf in product",
+         "Het enzym levert de energie voor elke reactie"
         ],
         "c": 1,
-        "d": 1,
-        "u": "Onthoud: één enzymmolecuul doet veel reacties achter elkaar.",
+        "d": 2,
+        "s": 5,
+        "u": "Eén enzymmolecuul versnelt veel reacties na elkaar, omdat het niet verbruikt wordt.",
         "uo": [
-         "Het enzym wordt niet groter; het blijft gelijk.",
-         "Klopt: het enzym komt onveranderd vrij en werkt opnieuw.",
-         "Het enzym maakt het product, maar wordt het niet.",
-         "Een enzym levert geen energie; het is herbruikbaar."
+         "Koos je 'groeit'? Een enzym wordt niet groter of meer. Het is steeds hetzelfde molecuul dat de ene reactie na de andere versnelt.",
+         "Klopt: na elke reactie komt het enzym onveranderd vrij en pakt het het volgende substraatmolecuul. Zo zet één enzymmolecuul in korte tijd heel veel substraat om.",
+         "Koos je 'wordt product'? Het substraat wordt product, niet het enzym. Als het enzym zelf veranderde, zou je voor elke reactie een nieuw enzym nodig hebben.",
+         "Koos je 'levert energie'? Een enzym levert geen energie, het verlaagt de drempel. Juist omdat het niets afgeeft of verbruikt, kan het steeds opnieuw meedoen."
         ],
-        "uh": "Enzym is herbruikbaar, raakt niet op."
+        "uh": "Herbruikbaar: weinig enzym, veel product."
        },
        {
-        "v": "Bij vaste enzymhoeveelheid en steeds meer substraat vlakt de reactiesnelheid af. Waarom?",
+        "v": "Waarom stijgt de snelheid boven 8 g/L niet meer?",
         "o": [
          "Alle actieve centra zijn bezet",
          "Het substraat is op",
-         "De enzymen denatureren",
-         "De temperatuur in het mengsel daalt"
+         "De enzymen zijn gedenatureerd",
+         "De temperatuur van het mengsel daalt"
         ],
         "c": 0,
-        "d": 2,
-        "u": "Onthoud: bij verzadiging zijn alle enzymen bezig; meer substraat helpt dan niet.",
+        "d": 3,
+        "s": 6,
+        "u": "Bij een vaste hoeveelheid enzym is de snelheid maximaal als alle actieve centra bezet zijn.",
         "uo": [
-         "Klopt: als alle actieve centra bezet zijn, verhoogt meer substraat de snelheid niet.",
-         "Er is juist steeds meer substraat, dat is niet op.",
-         "Temperatuur/pH veranderen niet, dus denaturatie is hier niet de oorzaak.",
-         "De temperatuur speelt hier geen rol."
+         "Klopt: bij veel substraat zit er in elk actief centrum al een substraatmolecuul. De enzymen werken op volle kracht; extra substraat moet wachten en verhoogt de snelheid niet.",
+         "Koos je 'substraat op'? In deze proef is er juist steeds méér substraat. De beperking zit dus niet bij het substraat maar bij het aantal enzymen dat tegelijk kan werken.",
+         "Koos je denaturatie? Dan zou de snelheid dalen, niet gelijk blijven. Bovendien veranderen temperatuur en pH niet. De snelheid blijft op zijn maximum: de enzymen zijn verzadigd.",
+         "Koos je temperatuur? Die is in de proef constant gehouden. Als je een factor kiest die niet verandert, kan die het afvlakken niet verklaren."
         ],
-        "uh": "Snelheid vlakt af = alle enzymen bezet (verzadiging)."
+        "uh": "Afvlakken bij veel substraat = enzymen verzadigd (alle actieve centra bezet).",
+        "ctx": "Proef bij 37 °C met een vaste hoeveelheid enzym. Substraat (g/L) en snelheid: 2: 18 · 4: 33 · 8: 51 · 12: 52 · 16: 52."
        },
        {
         "v": "Wat is de activeringsenergie van een reactie?",
         "o": [
          "De energie die vrijkomt bij de reactie",
          "De drempel die nodig is om de reactie te starten",
-         "De warmte van de cel",
-         "De energie in het product"
+         "De warmte die de cel afgeeft",
+         "De energie die in het product zit"
         ],
         "c": 1,
         "d": 1,
-        "u": "Onthoud: activeringsenergie = startdrempel; het enzym verlaagt die.",
+        "s": 1,
+        "u": "Activeringsenergie = startdrempel van een reactie; een enzym verlaagt die.",
         "uo": [
-         "Dat is de uitkomst van de reactie, niet de startdrempel.",
-         "Klopt: de activeringsenergie is de drempel om de reactie te starten.",
-         "De celtemperatuur is niet de activeringsenergie.",
-         "De energie in het product is een uitkomst, geen startdrempel."
+         "Koos je dit? Dan verwar je de start met de uitkomst. Energie die vrijkomt hoort bij het einde van een reactie. Activeringsenergie is wat je eerst moet investeren om de reactie op gang te krijgen.",
+         "Klopt: de activeringsenergie is de drempel die moleculen moeten halen voordat de reactie begint. Een enzym verlaagt die drempel.",
+         "Koos je warmte? Warmte die een cel afgeeft komt vrij uit reacties zoals de verbranding; dat is een gevolg. De activeringsenergie is de startdrempel van één reactie.",
+         "Koos je 'energie in het product'? Die zegt iets over het eindpunt van de reactie. De activeringsenergie is de 'berg' die tussen begin en eind in zit."
         ],
-        "uh": "Activeringsenergie = startdrempel van de reactie."
+        "uh": "Activeringsenergie is de berg aan het begin, niet de energie aan het eind."
        },
        {
-        "v": "In een energiediagram is de 'berg' met enzym lager dan zonder. Wat betekent dat?",
+        "v": "In een energiediagram is de 'berg' met enzym lager. Wat betekent dat?",
         "o": [
          "Het enzym verlaagt de activeringsenergie",
          "Het enzym levert extra energie",
-         "De reactie geeft minder product",
-         "Het enzym verhoogt de temperatuur van de cel"
+         "De reactie levert minder product",
+         "Het enzym verhoogt de temperatuur"
         ],
         "c": 0,
         "d": 2,
-        "u": "Onthoud: lagere berg = lagere activeringsenergie = snellere reactie.",
+        "s": 1,
+        "u": "Lagere berg in een energiediagram = lagere activeringsenergie = snellere reactie.",
         "uo": [
-         "Klopt: een lagere berg = lagere startdrempel = snellere reactie.",
-         "De berg is de drempel, geen energie die het enzym toevoegt.",
-         "De hoeveelheid product verandert niet door een lagere drempel.",
-         "De berg gaat over energie, niet over temperatuur."
+         "Klopt: de hoogte van de berg is de activeringsenergie. Met enzym is de berg lager, dus de reactie start makkelijker en gaat sneller.",
+         "Koos je 'levert energie'? Dan lees je de berg als iets wat het enzym toevoegt. De berg is de drempel; een lagere berg betekent dat er minder energie nódig is, niet dat het enzym energie geeft.",
+         "Koos je 'minder product'? Begin- en eindniveau in het diagram veranderen niet door het enzym. Er ontstaat hetzelfde product, alleen sneller.",
+         "Koos je temperatuur? Een energiediagram toont energieniveaus van de stoffen, geen temperatuur. Het enzym verandert alleen de hoogte van de berg."
         ],
-        "uh": "Lagere berg in een energiediagram = lagere activeringsenergie."
+        "uh": "Alleen de berg verandert; begin en eind blijven gelijk."
        },
        {
-        "v": "Wat gebeurt er met de enzymactiviteit bij de mens als de temperatuur van 20 naar 37 °C stijgt?",
+        "v": "Wat gebeurt er met de activiteit van een menselijk enzym van 20 naar 37 °C?",
         "o": [
          "Die daalt",
          "Die blijft gelijk",
          "Die stijgt",
-         "Het enzym denatureert meteen"
+         "Het enzym denatureert direct"
         ],
         "c": 2,
         "d": 1,
-        "u": "Onthoud: tot het optimum stijgt de activiteit met de temperatuur.",
+        "s": 2,
+        "u": "Tot het optimum stijgt de activiteit met de temperatuur.",
         "uo": [
-         "Onder het optimum daalt de activiteit niet; ze stijgt.",
-         "De activiteit is temperatuurafhankelijk en verandert wel.",
-         "Klopt: tot de optimumtemperatuur (~37 °C) neemt de activiteit toe.",
-         "Denaturatie treedt pas boven het optimum op, niet bij 37 °C."
+         "Koos je 'daalt'? Dan denk je misschien dat warmte enzymen altijd beschadigt. Onder het optimum werkt warmte juist mee: moleculen bewegen sneller en botsen vaker.",
+         "Koos je 'blijft gelijk'? Enzymactiviteit hangt sterk af van de temperatuur. Tussen 20 en 37 °C zie je in de grafiek een duidelijke stijging.",
+         "Klopt: tot de optimumtemperatuur stijgt de activiteit. Bij veel menselijke enzymen ligt dat optimum rond 37 °C.",
+         "Koos je denaturatie? Denaturatie begint pas als je ruim boven het optimum komt. Bij 37 °C werkt een menselijk enzym juist op zijn best."
         ],
-        "uh": "Tot het optimum: hogere temperatuur = hogere activiteit."
+        "uh": "Links van de top: warmer = sneller. Rechts van de top: denaturatie."
        },
        {
         "v": "Wat betekent 'denatureren' bij een enzym?",
         "o": [
-         "Het enzym wordt sneller",
+         "Het enzym gaat door de warmte extra snel werken",
          "Het enzym maakt meer product",
-         "Het enzym bindt meer substraat",
-         "De ruimtelijke structuur verandert en de functie valt weg"
+         "Het actief centrum bindt daarna juist meer substraat",
+         "Zijn ruimtelijke structuur verandert; de functie valt weg"
         ],
         "c": 3,
         "d": 1,
-        "u": "Onthoud: denatureren = vorm/structuur kapot, functie weg.",
+        "s": 2,
+        "u": "Denatureren = de ruimtelijke structuur verandert, de functie valt weg.",
         "uo": [
-         "Denaturatie maakt het enzym niet sneller; het werkt juist niet meer.",
-         "Een gedenatureerd enzym maakt juist geen product meer.",
-         "Bij denaturatie kan het substraat juist niet meer binden.",
-         "Klopt: de ruimtelijke structuur verandert, het actief centrum verliest zijn vorm."
+         "Koos je 'sneller'? Denatureren is juist het tegenovergestelde van beter werken. Het enzym verliest zijn vorm en kan het substraat niet meer omzetten.",
+         "Koos je 'meer product'? Een gedenatureerd enzym maakt geen product meer, omdat het substraat niet meer in het vervormde actief centrum past.",
+         "Koos je 'meer substraat binden'? Na denaturatie heeft het actief centrum een andere vorm. Het substraat past er dan juist niet meer in.",
+         "Klopt: bij denaturatie verandert de ruimtelijke structuur van het eiwit. Het actief centrum verliest zijn vorm, waardoor de functie wegvalt."
         ],
-        "uh": "Denatureren = structuur verandert, functie verdwijnt."
+        "uh": "Denaturatie = vorm kapot = functie weg."
        },
        {
         "v": "Bij hoge koorts (42 °C) werken veel enzymen slechter. Wat is de reden?",
         "o": [
          "De enzymen beginnen te denatureren",
-         "Er is plotseling te weinig substraat aanwezig",
-         "De enzymen worden opgebruikt",
-         "De pH wordt te hoog"
+         "Er is ineens te weinig substraat",
+         "De enzymen worden sneller opgebruikt",
+         "De pH in de cellen wordt te hoog"
         ],
         "c": 0,
         "d": 3,
-        "u": "Onthoud: boven ~37 °C begint denaturatie - daarom is hoge koorts gevaarlijk.",
+        "s": 2,
+        "u": "Boven het optimum (bij mensen vaak rond 37 °C) beginnen enzymen te denatureren.",
         "uo": [
-         "Klopt: 42 °C ligt boven het optimum, waardoor enzymen denatureren.",
-         "De hoeveelheid substraat verandert niet door koorts.",
-         "Enzymen worden niet opgebruikt; de oorzaak is denaturatie.",
-         "Koorts verandert de temperatuur, niet direct de pH."
+         "Klopt: 42 °C ligt boven het optimum van veel menselijke enzymen. Hun structuur begint te veranderen, waardoor ze slechter werken. Daarom is heel hoge koorts gevaarlijk.",
+         "Koos je 'te weinig substraat'? Koorts verandert de temperatuur, niet de hoeveelheid voedingsstoffen in een cel. Zoek de oorzaak bij wat er verandert.",
+         "Koos je 'opgebruikt'? Enzymen worden niet opgebruikt, bij geen enkele temperatuur. Ze werken slechter doordat de warmte hun structuur aantast.",
+         "Koos je pH? Koorts is een temperatuurverandering. De pH van het lichaam wordt apart geregeld en verklaart hier niet waarom de enzymen slechter werken."
         ],
-        "uh": "Boven ~37 °C beginnen enzymen te denatureren."
+        "uh": "Koorts = te warm = begin van denaturatie."
        },
        {
-        "v": "Een wasmiddel met enzymen reinigt goed op 40 °C, maar slecht op 90 °C. Hoe komt dat?",
+        "v": "Waarom reinigt het wasmiddel op 90 °C slechter dan op 40 °C?",
         "o": [
          "Bij 90 °C is er geen vuil meer",
-         "Bij 40 °C werken enzymen niet",
-         "Enzymen lossen op in water",
+         "Bij 40 °C werken de enzymen nog niet",
+         "De enzymen lossen op in het water",
          "Bij 90 °C zijn de enzymen gedenatureerd"
         ],
         "c": 3,
         "d": 3,
-        "u": "Onthoud: te hoge temperatuur denatureert de was-enzymen.",
+        "s": 2,
+        "u": "Was-enzymen hebben een optimum; te heet wassen denatureert ze.",
         "uo": [
-         "Vuil verdwijnt niet vanzelf bij 90 °C.",
-         "Bij 40 °C werken de enzymen juist goed (rond hun optimum).",
-         "Oplossen is niet het punt; ze denatureren door de hitte.",
-         "Klopt: bij 90 °C zijn de enzymen gedenatureerd en reinigen ze niet meer."
+         "Koos je 'geen vuil meer'? Vuil verdwijnt niet vanzelf door warm water; daarom zitten er juist enzymen in het wasmiddel. De vraag is waarom die enzymen bij 90 °C niet meer helpen.",
+         "Koos je 'werken nog niet'? Op 40 °C wast het middel juist goed, dus daar werken de enzymen. Het probleem zit bij de hoge temperatuur.",
+         "Koos je 'oplossen'? Enzymen moeten juist opgelost zijn om te werken. Oplossen maakt ze niet kapot; te hoge temperatuur wel.",
+         "Klopt: 90 °C ligt ver boven het optimum van deze was-enzymen. Ze denatureren, dus ze breken vlekken van eiwit en vet niet meer af."
         ],
-        "uh": "Te heet wassen = was-enzymen denatureren."
+        "uh": "Wasmiddel met enzymen: niet te heet wassen.",
+        "ctx": "Op een wasmiddel staat: 'Met enzymen tegen eiwit- en vetvlekken. Werkt het best op 30-40 °C.' Iemand wast toch op 90 °C en de vlekken blijven zitten."
        },
        {
-        "v": "Wat geldt WEL na denaturatie door hitte, maar NIET bij een tijdelijk te lage temperatuur?",
+        "v": "Wat geldt na denaturatie door hitte, maar niet na tijdelijke afkoeling?",
         "o": [
-         "Het enzym werkt daarna weer bij de optimumtemperatuur",
-         "Het substraat verandert",
-         "De pH verandert",
-         "De schade is onomkeerbaar"
+         "Het enzym werkt daarna weer bij het optimum",
+         "Het substraat is van vorm veranderd",
+         "De pH van de oplossing is veranderd",
+         "De schade aan het enzym is blijvend"
         ],
         "c": 3,
         "d": 2,
-        "u": "Onthoud: koude remt tijdelijk; hitte-denaturatie is blijvend.",
+        "s": 2,
+        "u": "Kou remt tijdelijk; hitte-denaturatie is blijvend.",
         "uo": [
-         "Na hitte-denaturatie werkt het enzym niet meer, ook niet bij het optimum.",
-         "Het substraat verandert in beide gevallen niet.",
-         "De pH verandert hier niet; het gaat om onomkeerbaarheid.",
-         "Klopt: hitte-denaturatie is onomkeerbaar; te koud remt slechts tijdelijk."
+         "Koos je dit? Dat geldt juist voor afkoeling: een afgekoeld enzym werkt weer als je het opwarmt. Na hitte-denaturatie is de vorm kapot en komt de werking niet terug.",
+         "Koos je 'substraat veranderd'? In beide gevallen gaat het om het enzym, niet om het substraat. Het verschil is of de vorm van het enzym heel blijft.",
+         "Koos je pH? Er verandert hier alleen de temperatuur. Het verschil tussen kou en hitte zit in wat er met de structuur van het enzym gebeurt.",
+         "Klopt: hitte-denaturatie is onomkeerbaar, de ruimtelijke structuur is blijvend veranderd. Kou remt een enzym alleen; de vorm blijft heel."
         ],
-        "uh": "Hitte-denaturatie is onomkeerbaar; kou remt tijdelijk."
+        "uh": "Afkoelen = pauze. Te heet = kapot."
        },
        {
-        "v": "Enzym X heeft een optimum-pH van 9. In welk milieu werkt het het best?",
+        "v": "Enzym X heeft een pH-optimum van 9. In welk milieu werkt het het best?",
         "o": [
-         "Zuur",
-         "Neutraal",
-         "Basisch",
-         "Bij elke pH gelijk"
+         "In een zuur milieu",
+         "In een neutraal milieu",
+         "In een basisch milieu",
+         "Bij elke pH even goed"
         ],
         "c": 2,
         "d": 2,
-        "u": "Onthoud: pH 9 ligt boven 7, dus basisch.",
+        "s": 3,
+        "u": "pH onder 7 is zuur, 7 neutraal, boven 7 basisch; elk enzym heeft een eigen optimum.",
         "uo": [
-         "pH 9 is niet zuur; zuur is onder pH 7.",
-         "pH 9 is niet neutraal; neutraal is pH 7.",
-         "Klopt: pH 9 ligt boven 7, dat is basisch.",
-         "Enzymactiviteit hangt sterk van de pH af; niet overal gelijk."
+         "Koos je zuur? Zuur is een pH onder 7, zoals in de maag. Een optimum van 9 ligt aan de andere kant van neutraal.",
+         "Koos je neutraal? Neutraal is precies pH 7. Een optimum van 9 ligt daar twee eenheden boven, dus in basisch milieu.",
+         "Klopt: pH 9 ligt boven 7, dus basisch. Daar werkt enzym X het best, zoals trypsine in de basische darm rond pH 8.",
+         "Koos je 'elke pH even goed'? Dan zou er geen optimum zijn. Juist omdat er een optimum-pH is, werkt het enzym verder daarvandaan steeds slechter."
         ],
-        "uh": "pH < 7 zuur, 7 neutraal, > 7 basisch."
+        "uh": "pH 9 = basisch."
        },
        {
-        "v": "Leg je leverstukjes in waterstofperoxide, dan borrelt het hevig (enzym katalase). Wat toont dit vooral?",
+        "v": "Wat laat het borrelen vooral zien?",
         "o": [
-         "Dat de lever waterstofperoxide maakt",
-         "Dat het enzym wordt opgebruikt",
-         "Dat de temperatuur stijgt",
-         "Dat het enzym de afbraak van waterstofperoxide versnelt"
+         "Dat de lever waterstofperoxide aanmaakt",
+         "Dat het enzym katalase bij de reactie langzaam helemaal opraakt",
+         "Dat het mengsel opwarmt",
+         "Dat katalase de afbraak van waterstofperoxide versnelt"
         ],
         "c": 3,
         "d": 3,
-        "u": "Onthoud: het borrelen (zuurstof) laat zien dat het enzym de reactie versnelt.",
+        "s": 6,
+        "u": "Katalase versnelt de afbraak van waterstofperoxide tot water en zuurstof.",
         "uo": [
-         "De lever maakt het H2O2 niet aan; het enzym breekt het af.",
-         "Het enzym raakt niet op; het blijft borrelen zolang er substraat is.",
-         "Er ontstaat hooguit wat warmte; het borrelen komt door de versnelde reactie.",
-         "Klopt: het vrijkomende gas (zuurstof) toont dat katalase de afbraak versnelt."
+         "Koos je dit? Het waterstofperoxide giet je er zelf bij; de lever maakt het hier niet aan. De lever levert het enzym dat het afbreekt.",
+         "Koos je 'opraken'? Zolang je waterstofperoxide toevoegt, blijft het borrelen. Dat past bij een enzym dat steeds opnieuw werkt, niet bij een enzym dat op is.",
+         "Koos je opwarmen? Er komt hooguit wat warmte vrij; de belletjes zijn een gas. Dat gas (zuurstof) ontstaat doordat waterstofperoxide snel wordt afgebroken.",
+         "Klopt: katalase breekt waterstofperoxide af tot water en zuurstof. De vele zuurstofbellen laten zien dat die afbraak door het enzym veel sneller gaat."
         ],
-        "uh": "Borrelen = enzym versnelt de afbraak (zuurstof komt vrij)."
+        "uh": "Belletjes = zuurstof = bewijs dat het enzym de reactie versnelt.",
+        "ctx": "Proef: je doet een stukje rauwe lever in waterstofperoxide. Het schuimt en borrelt meteen hevig. Lever bevat het enzym katalase."
        },
        {
-        "v": "Welke uitspraak over enzymen is juist?",
+        "v": "Waarom werkt pepsine in de dunne darm nauwelijks meer?",
         "o": [
-         "Een enzym levert de energie voor een reactie",
-         "Een enzym verlaagt de activeringsenergie",
-         "Een enzym verhoogt de activeringsenergie",
-         "Een enzym stopt reacties"
+         "De pH stijgt ver boven het optimum van pepsine",
+         "Alle eiwitten zijn in de maag al volledig verteerd",
+         "Pepsine is in de maag opgebruikt",
+         "De darm is warmer dan de maag"
         ],
-        "c": 1,
-        "d": 1,
-        "u": "Onthoud: enzym = drempel omlaag, niet energie erbij.",
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Het pH-optimum bepaalt waar in het verteringskanaal een enzym werkt.",
         "uo": [
-         "Een enzym levert geen energie; het verlaagt de drempel.",
-         "Klopt: het enzym verlaagt de activeringsenergie.",
-         "Het verhoogt de drempel niet; het verlaagt hem juist.",
-         "Een enzym versnelt reacties, het stopt ze niet."
+         "Klopt: in de darm is het basisch (rond pH 8), ver van het zure optimum van pepsine rond pH 2. Daar nemen andere enzymen, zoals trypsine, de eiwitvertering over.",
+         "Koos je dit? In de darm worden juist nog veel eiwitten verteerd, door trypsine. Het probleem is niet dat er geen werk meer is, maar dat pepsine bij die pH niet meer goed werkt.",
+         "Koos je 'opgebruikt'? Enzymen raken niet op. Pepsine is nog aanwezig als het met de voedselbrij de darm in gaat, maar de pH daar past niet bij zijn optimum.",
+         "Koos je temperatuur? Maag en darm hebben dezelfde lichaamstemperatuur, ongeveer 37 °C. Wat verandert tussen maag en darm is de pH."
         ],
-        "uh": "Enzym verlaagt de activeringsenergie."
+        "uh": "Maag zuur: pepsine. Darm basisch: trypsine.",
+        "ctx": "Pepsine verteert eiwitten in de maag (pH 2). De voedselbrij gaat daarna naar de dunne darm, waar de pH rond 8 ligt. Daar verteert trypsine de eiwitten verder."
        },
        {
-        "v": "Lactase splitst lactose, maar niet sacharose. Wat is de beste verklaring?",
+        "v": "Lactase splitst lactose, maar geen sacharose. Wat is de beste verklaring?",
         "o": [
-         "Sacharose is te groot voor elk enzym",
-         "De vorm van lactose past in het actief centrum, die van sacharose niet",
-         "Lactase werkt alleen bij een hoge temperatuur",
-         "Sacharose bevat geen energie"
+         "Sacharose is te groot om in welk enzym dan ook te passen",
+         "Alleen de vorm van lactose past in het actief centrum",
+         "Lactase werkt alleen bij hoge temperatuur",
+         "Sacharose bevat geen energie meer"
         ],
         "c": 1,
         "d": 2,
-        "u": "Onthoud: substraatspecificiteit - de vorm bepaalt wat past.",
+        "s": 4,
+        "u": "Substraatspecificiteit: de vorm en eigenschappen van het actief centrum bepalen welk substraat past.",
         "uo": [
-         "Grootte is niet de reden, en 'elk enzym' klopt niet; het gaat om de vorm.",
-         "Klopt: door de vorm van het actief centrum past lactose wel en sacharose niet.",
-         "Temperatuur is niet de reden dat sacharose niet gesplitst wordt.",
-         "Of sacharose energie bevat, verandert niets aan het passen."
+         "Koos je 'te groot'? Lactose en sacharose zijn allebei suikers van twee bouwstenen en ongeveer even groot. Het verschil zit in de vorm, en sacharase is een ander enzym dat sacharose wel splitst.",
+         "Klopt: de vorm en chemische eigenschappen van het actief centrum van lactase passen bij lactose. Sacharose past niet; daarvoor is een ander enzym nodig (sacharase).",
+         "Koos je temperatuur? Temperatuur bepaalt hoe snel een enzym werkt, niet welke stof erin past. Bij geen enkele temperatuur splitst lactase sacharose.",
+         "Koos je 'geen energie'? Sacharose bevat wel degelijk energie; ons lichaam haalt er veel uit. Of een enzym een stof omzet, hangt af van passen, niet van energie-inhoud."
         ],
-        "uh": "Specificiteit = de vorm van het actief centrum bepaalt het substraat."
+        "uh": "Elk substraat zijn eigen passende enzym: lactose-lactase, sacharose-sacharase."
        },
        {
-        "v": "In een activiteit–temperatuurgrafiek ligt de piek bij 50 °C. Wat is die 50 °C?",
+        "v": "De piek van een activiteit-temperatuurgrafiek ligt bij 50 °C. Wat is 50 °C?",
         "o": [
          "De denaturatietemperatuur",
          "De temperatuur waarbij het enzym stopt",
@@ -28766,14 +28796,55 @@ var VAKKEN = [
         ],
         "c": 2,
         "d": 2,
-        "u": "Onthoud: de piek in de grafiek = de optimumtemperatuur.",
+        "s": 2,
+        "u": "De top van een activiteit-temperatuurgrafiek is de optimumtemperatuur.",
         "uo": [
-         "Denaturatie hoort bij de daling ná de piek, niet bij de piek zelf.",
-         "Bij de piek werkt het enzym juist het best, het stopt daar niet.",
-         "Klopt: de piek is de temperatuur met de hoogste activiteit, de optimumtemperatuur.",
-         "50 °C is een temperatuur, geen pH."
+         "Koos je denaturatie? Denaturatie zie je in de daling ná de piek. Op de piek zelf werkt het enzym juist op zijn best.",
+         "Koos je 'stopt'? Op de piek is de activiteit het hoogst. Het enzym stopt pas verder rechts, als de lijn naar nul daalt.",
+         "Klopt: de piek is de temperatuur met de hoogste activiteit, de optimumtemperatuur. Dit enzym heeft een optimum van 50 °C, hoger dan veel menselijke enzymen.",
+         "Koos je pH? Op de x-as van deze grafiek staat temperatuur, geen pH. Lees altijd eerst af wat er op de assen staat."
         ],
-        "uh": "Piek in een temperatuurgrafiek = optimumtemperatuur."
+        "uh": "Top = optimum; daling erna = denaturatie."
+       },
+       {
+        "v": "Welke uitspraak over een biokatalysator is juist?",
+        "o": [
+         "Hij levert de energie die de reactie nodig heeft om te starten",
+         "Hij versnelt een reactie en komt onveranderd vrij",
+         "Hij zorgt dat er meer product ontstaat",
+         "Hij stopt reacties die te snel gaan"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Een biokatalysator (enzym) versnelt een reactie en komt onveranderd vrij.",
+        "uo": [
+         "Koos je 'levert energie'? Een katalysator levert geen energie; hij verlaagt de drempel. Vergelijk het met een tunnel door een berg: je hoeft minder te klimmen, maar je krijgt geen extra brandstof.",
+         "Klopt: een katalysator versnelt een reactie en komt na afloop onveranderd vrij. 'Bio' betekent dat het om een katalysator uit een levend organisme gaat: een enzym.",
+         "Koos je 'meer product'? Een katalysator verandert niet hoeveel product er uiteindelijk ontstaat, alleen hoe snel dat gebeurt. Met of zonder enzym is de eindtoestand hetzelfde.",
+         "Koos je 'stopt reacties'? Een katalysator versnelt juist. Stoffen die een enzym afremmen heten remmers; dat is iets anders dan het enzym zelf."
+        ],
+        "uh": "Katalysator = sneller, niet meer en niet met extra energie."
+       },
+       {
+        "v": "Welke uitspraak over enzymen en activeringsenergie is juist?",
+        "o": [
+         "Een enzym levert de energie voor de reactie",
+         "Een enzym verlaagt de activeringsenergie",
+         "Een enzym verhoogt de activeringsenergie",
+         "Een enzym haalt de activeringsenergie weg"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Een enzym verlaagt de activeringsenergie, maar haalt hem niet helemaal weg.",
+        "uo": [
+         "Koos je 'levert energie'? Dan denk je dat versnellen hetzelfde is als energie toevoegen. Een enzym voegt niets toe; het maakt de drempel lager.",
+         "Klopt: het enzym verlaagt de activeringsenergie. Er is nog steeds een drempel, maar die is lager, dus de reactie komt sneller op gang.",
+         "Koos je 'verhoogt'? Een hogere drempel zou de reactie juist trager maken. Een enzym doet het omgekeerde: de berg in het energiediagram wordt lager.",
+         "Koos je 'haalt weg'? Ook met enzym blijft er een drempel, alleen een lagere. Zonder enige drempel zouden alle reacties vanzelf en ongecontroleerd verlopen."
+        ],
+        "uh": "Drempel lager, niet weg en niet hoger."
        }
       ],
       "oe": [
@@ -28891,12 +28962,14 @@ var VAKKEN = [
         "t": "Herbruikbaarheid",
         "d": "Na de reactie komt het enzym onveranderd vrij, zodat het opnieuw kan werken."
        }
-      ]
+      ],
+      "gs": 2,
+      "lo": "bi.M.3"
      },
      {
       "id": "M4",
       "naam": "Fotosynthese & celademhaling",
-      "beschrijving": "Gouden-standaardmodule bi.M.2: hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
+      "beschrijving": "Hoe planten glucose opbouwen met licht (fotosynthese) en hoe cellen glucose met zuurstof afbreken voor energie (celademhaling), incl. assimilatie/dissimilatie en gisting.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Fotosynthese (opbouw glucose)",
@@ -29490,7 +29563,7 @@ var VAKKEN = [
      {
       "id": "M5",
       "naam": "DNA en eiwitsynthese",
-      "beschrijving": "Gouden-standaardmodule bi.M.5: hoe DNA (dubbele helix, basenparing A-T en C-G) via transcriptie en translatie eiwitten laat maken, en hoe genexpressie (gen -> eiwit -> eigenschap) de kenmerken van een organisme bepaalt.",
+      "beschrijving": "Hoe DNA (dubbele helix, basenparing A-T en C-G) via transcriptie en translatie eiwitten laat maken, en hoe genexpressie (gen -> eiwit -> eigenschap) de kenmerken van een organisme bepaalt.",
       "ceStatus": "CE",
       "onderwerpen": [
        "DNA als dubbele helix",
@@ -30084,7 +30157,7 @@ var VAKKEN = [
      {
       "id": "M6",
       "naam": "Celdeling: mitose en meiose",
-      "beschrijving": "Gouden-standaardmodule bi.M.6: hoe cellen zich delen via mitose (twee identieke cellen voor groei en herstel) en meiose (vier geslachtscellen met het halve aantal chromosomen voor variatie).",
+      "beschrijving": "Hoe cellen zich delen via mitose (twee identieke cellen voor groei en herstel) en meiose (vier geslachtscellen met het halve aantal chromosomen voor variatie).",
       "ceStatus": "CE",
       "onderwerpen": [
        "DNA-verdubbeling voor de deling",
@@ -30678,7 +30751,7 @@ var VAKKEN = [
      {
       "id": "M7",
       "naam": "Erfelijkheid: allelen en overerving",
-      "beschrijving": "Gouden-standaardmodule bi.M.7: allelen, dominant en recessief, genotype en fenotype, en het voorspellen van nakomelingen met een kruisingsschema.",
+      "beschrijving": "Allelen, dominant en recessief, genotype en fenotype, en het voorspellen van nakomelingen met een kruisingsschema.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Allelen (varianten van een gen)",
@@ -31278,7 +31351,7 @@ var VAKKEN = [
      {
       "id": "O1",
       "naam": "Zenuwstelsel en prikkelgeleiding",
-      "beschrijving": "Gouden-standaardmodule bi.O.1: neuronen en de impuls, de synaps, de reflexboog, en het verschil tussen regeling door zenuwen en door hormonen.",
+      "beschrijving": "Neuronen en de impuls, de synaps, de reflexboog, en het verschil tussen regeling door zenuwen en door hormonen.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Neuron: dendriet, cellichaam, axon",
@@ -31938,7 +32011,7 @@ var VAKKEN = [
      {
       "id": "O2",
       "naam": "Hormonale regulatie",
-      "beschrijving": "Gouden-standaardmodule bi.O.2: hormonen als trage, langdurige regeling via het bloed, met insuline, glucagon en adrenaline en de regeling van de bloedsuiker.",
+      "beschrijving": "Hormonen als trage, langdurige regeling via het bloed, met insuline, glucagon en adrenaline en de regeling van de bloedsuiker.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Hormoon en hormoonklier",
@@ -32532,7 +32605,7 @@ var VAKKEN = [
      {
       "id": "O3",
       "naam": "Homeostase en antagonisme",
-      "beschrijving": "Gouden-standaardmodule bi.O.3: homeostase als het constant houden van het inwendig milieu, negatieve terugkoppeling, antagonistische regeling en toepassingen op temperatuur- en waterregeling.",
+      "beschrijving": "Homeostase als het constant houden van het inwendig milieu, negatieve terugkoppeling, antagonistische regeling en toepassingen op temperatuur- en waterregeling.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Homeostase: constant inwendig milieu",
@@ -33098,7 +33171,7 @@ var VAKKEN = [
      {
       "id": "O4",
       "naam": "Afweer en immuniteit",
-      "beschrijving": "Gouden-standaardmodule bi.O.4: aspecifieke en specifieke afweer, antigeen en antilichaam, fagocyten en lymfocyten, geheugencellen en vaccinatie, actieve en passieve immuniteit.",
+      "beschrijving": "Aspecifieke en specifieke afweer, antigeen en antilichaam, fagocyten en lymfocyten, geheugencellen en vaccinatie, actieve en passieve immuniteit.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Afweer tegen ziekteverwekkers",
@@ -33663,7 +33736,7 @@ var VAKKEN = [
      {
       "id": "O5",
       "naam": "Transport en gasuitwisseling",
-      "beschrijving": "Gouden-standaardmodule bi.O.5: de dubbele bloedsomloop, hart en bloedvaten (slagader, ader, haarvat), de gasuitwisseling in de longblaasjes en de rol van diffusie.",
+      "beschrijving": "De dubbele bloedsomloop, hart en bloedvaten (slagader, ader, haarvat), de gasuitwisseling in de longblaasjes en de rol van diffusie.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Dubbele bloedsomloop (long- en lichaamscircuit)",
@@ -34227,7 +34300,7 @@ var VAKKEN = [
      {
       "id": "O6",
       "naam": "Spijsvertering en uitscheiding",
-      "beschrijving": "Gouden-standaardmodule bi.O.6: mechanische en chemische vertering, het verteringsstelsel, opname in de dunne darm, en de rol van de nieren bij uitscheiding.",
+      "beschrijving": "Mechanische en chemische vertering, het verteringsstelsel, opname in de dunne darm, en de rol van de nieren bij uitscheiding.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Spijsvertering: voedsel afbreken tot opneembare stoffen",
@@ -34791,7 +34864,7 @@ var VAKKEN = [
      {
       "id": "O7",
       "naam": "Beweging: gewrichten en spieren",
-      "beschrijving": "Gouden-standaardmodule bi.O.7: het skelet en gewrichten, pezen en gewrichtsbanden, en hoe antagonistische spieren (buigspier en strekspier) samenwerken bij beweging.",
+      "beschrijving": "Het skelet en gewrichten, pezen en gewrichtsbanden, en hoe antagonistische spieren (buigspier en strekspier) samenwerken bij beweging.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Skelet: steun en bescherming",
@@ -37318,7 +37391,7 @@ var VAKKEN = [
      {
       "id": "P1",
       "naam": "Ecosystemen: biotische en abiotische factoren",
-      "beschrijving": "Gouden-standaardmodule bi.P.1: het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.",
+      "beschrijving": "Het ecosysteem als levensgemeenschap plus biotoop, het onderscheid tussen biotische en abiotische factoren, en de niche van een soort.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Ecosysteem: levensgemeenschap plus biotoop",
@@ -37882,7 +37955,7 @@ var VAKKEN = [
      {
       "id": "P2",
       "naam": "Voedselrelaties en energiedoorgifte",
-      "beschrijving": "Gouden-standaardmodule bi.P.2: voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.",
+      "beschrijving": "Voedselketens en voedselwebben, de rol van producent, consument en reducent, en energiedoorgifte via de piramide van biomassa.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Voedselketen en voedselweb",
@@ -38446,7 +38519,7 @@ var VAKKEN = [
      {
       "id": "P3",
       "naam": "Populatiedynamiek en draagkracht",
-      "beschrijving": "Gouden-standaardmodule bi.P.3: hoe een populatie verandert door geboorte, sterfte en trek, exponentiele groei, en de rol van draagkracht bij het begrenzen van de groei (S-kromme).",
+      "beschrijving": "Hoe een populatie verandert door geboorte, sterfte en trek, exponentiele groei, en de rol van draagkracht bij het begrenzen van de groei (S-kromme).",
       "ceStatus": "CE",
       "onderwerpen": [
        "Populatie en populatiegrootte",
@@ -39010,7 +39083,7 @@ var VAKKEN = [
      {
       "id": "P4",
       "naam": "Relaties tussen soorten",
-      "beschrijving": "Gouden-standaardmodule bi.P.4: vormen van symbiose (mutualisme, commensalisme en parasitisme), predatie en concurrentie, en het effect van een exoot op een ecosysteem.",
+      "beschrijving": "Vormen van symbiose (mutualisme, commensalisme en parasitisme), predatie en concurrentie, en het effect van een exoot op een ecosysteem.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Symbiose als langdurig samenleven",
@@ -39574,7 +39647,7 @@ var VAKKEN = [
      {
       "id": "P5",
       "naam": "Successie en biodiversiteit",
-      "beschrijving": "Gouden-standaardmodule bi.P.5: successie als reeks opeenvolgende levensgemeenschappen van pioniers tot climaxstadium, en de betekenis van biodiversiteit en duurzaamheid.",
+      "beschrijving": "Successie als reeks opeenvolgende levensgemeenschappen van pioniers tot climaxstadium, en de betekenis van biodiversiteit en duurzaamheid.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Successie als reeks, geen eenmalige gebeurtenis",
@@ -40138,7 +40211,7 @@ var VAKKEN = [
      {
       "id": "P6",
       "naam": "Evolutie en natuurlijke selectie",
-      "beschrijving": "Gouden-standaardmodule bi.P.6: variatie en mutatie, natuurlijke selectie, evolutie als verandering van een populatie over generaties, en soortvorming. Nadruk op: populaties evolueren (niet individuen) en niet doelgericht redeneren.",
+      "beschrijving": "Variatie en mutatie, natuurlijke selectie, evolutie als verandering van een populatie over generaties, en soortvorming. Nadruk op: populaties evolueren (niet individuen) en niet doelgericht redeneren.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Variatie en mutatie binnen een populatie",
@@ -55888,7 +55961,7 @@ var VAKKEN = [
      {
       "id": "C1",
       "naam": "Snelheid en versnelling",
-      "beschrijving": "Gouden-standaardmodule na.C.1: snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.",
+      "beschrijving": "Snelheid en versnelling berekenen en het verschil ertussen begrijpen, inclusief de vrije val met valversnelling g.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Snelheid: v = s / t",
@@ -56452,7 +56525,7 @@ var VAKKEN = [
      {
       "id": "C2",
       "naam": "Krachten herkennen",
-      "beschrijving": "Gouden-standaardmodule na.C.2: de zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht) en massa.",
+      "beschrijving": "De zwaartekracht, normaalkracht, wrijvingskracht en spankracht herkennen en tekenen, de resulterende kracht bepalen, en het verschil tussen gewicht (kracht) en massa.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Kracht als vector (grootte, richting, aangrijpingspunt)",
@@ -57016,7 +57089,7 @@ var VAKKEN = [
      {
       "id": "C3",
       "naam": "Krachten samenstellen en ontbinden",
-      "beschrijving": "Gouden-standaardmodule na.C.3: krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.",
+      "beschrijving": "Krachten die op één lijn, loodrecht of onder een willekeurige hoek staan samenstellen tot een resulterende kracht, en een kracht ontbinden in componenten.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Samenstellen tot een resulterende kracht",
@@ -57580,7 +57653,7 @@ var VAKKEN = [
      {
       "id": "C4",
       "naam": "De wetten van Newton",
-      "beschrijving": "Gouden-standaardmodule na.C.4: de drie wetten van Newton toepassen, inclusief traagheid (eerste wet), F = m maal a (tweede wet) en actie = reactie (derde wet), met de nadruk dat actie en reactie op verschillende voorwerpen werken.",
+      "beschrijving": "De drie wetten van Newton toepassen, inclusief traagheid (eerste wet), F = m maal a (tweede wet) en actie = reactie (derde wet), met de nadruk dat actie en reactie op verschillende voorwerpen werken.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Eerste wet: traagheid",
@@ -58144,7 +58217,7 @@ var VAKKEN = [
      {
       "id": "C5",
       "naam": "Arbeid, energie en vermogen",
-      "beschrijving": "Gouden-standaardmodule na.C.5: arbeid, energie en vermogen berekenen, werken met de wet van behoud van energie, en het verschil tussen arbeid en vermogen.",
+      "beschrijving": "Arbeid, energie en vermogen berekenen, werken met de wet van behoud van energie, en het verschil tussen arbeid en vermogen.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Arbeid: W = F maal s",
@@ -58708,7 +58781,7 @@ var VAKKEN = [
      {
       "id": "C6",
       "naam": "Warmtetransport",
-      "beschrijving": "Gouden-standaardmodule na.C.6: de drie vormen van warmtetransport (geleiding, stroming en straling) onderscheiden en herkennen, en weten hoe isolatie werkt.",
+      "beschrijving": "De drie vormen van warmtetransport (geleiding, stroming en straling) onderscheiden en herkennen, en weten hoe isolatie werkt.",
       "ceStatus": "CE",
       "onderwerpen": [
        "Geleiding: warmte door een vaste stof",
@@ -61869,7 +61942,7 @@ var VAKKEN = [
      {
       "id": "D1",
       "naam": "Stroom, spanning en lading",
-      "beschrijving": "Gouden-standaardmodule na.D.1: begrijpen wat elektrische stroom, spanning en lading zijn, in welke eenheden je ze meet en hoe je ze meet met een ampèremeter en voltmeter.",
+      "beschrijving": "Begrijpen wat elektrische stroom, spanning en lading zijn, in welke eenheden je ze meet en hoe je ze meet met een ampèremeter en voltmeter.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Stroom als bewegende lading",
@@ -62433,7 +62506,7 @@ var VAKKEN = [
      {
       "id": "D2",
       "naam": "Weerstand en de wet van Ohm",
-      "beschrijving": "Gouden-standaardmodule na.D.2: weten wat weerstand is, rekenen met de wet van Ohm (U = I x R) en het verschil begrijpen tussen ohmse en niet-ohmse onderdelen.",
+      "beschrijving": "Weten wat weerstand is, rekenen met de wet van Ohm (U = I x R) en het verschil begrijpen tussen ohmse en niet-ohmse onderdelen.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Weerstand als tegenwerking",
@@ -62997,7 +63070,7 @@ var VAKKEN = [
      {
       "id": "D3",
       "naam": "Serie- en parallelschakeling",
-      "beschrijving": "Gouden-standaardmodule na.D.3: het verschil begrijpen tussen serie- en parallelschakelingen en weten hoe stroom, spanning en weerstand zich in elke schakeling gedragen.",
+      "beschrijving": "Het verschil begrijpen tussen serie- en parallelschakelingen en weten hoe stroom, spanning en weerstand zich in elke schakeling gedragen.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Serie versus parallel",
@@ -63561,7 +63634,7 @@ var VAKKEN = [
      {
       "id": "D4",
       "naam": "Vermogen en energie",
-      "beschrijving": "Gouden-standaardmodule na.D.4: rekenen met elektrisch vermogen (P = U x I) en energie (E = P x t), omgaan met de eenheden watt, joule en kWh en energiekosten berekenen.",
+      "beschrijving": "Rekenen met elektrisch vermogen (P = U x I) en energie (E = P x t), omgaan met de eenheden watt, joule en kWh en energiekosten berekenen.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Vermogen: P = U x I",
@@ -64125,7 +64198,7 @@ var VAKKEN = [
      {
       "id": "D5",
       "naam": "Geleiders, isolatoren en sensoren",
-      "beschrijving": "Gouden-standaardmodule na.D.5: geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.",
+      "beschrijving": "Geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Geleiders en isolatoren",
@@ -64689,7 +64762,7 @@ var VAKKEN = [
      {
       "id": "D6",
       "naam": "Elektrische veiligheid",
-      "beschrijving": "Gouden-standaardmodule na.D.6: begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.",
+      "beschrijving": "Begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.",
       "ceStatus": "ce",
       "onderwerpen": [
        "Kortsluiting en overbelasting",
