@@ -1518,5 +1518,49 @@ Object.assign(SAM_RICH,{
 <rect x="6" y="132" width="308" height="38" rx="6" fill="var(--orl)"/><text x="14" y="156" font-size="12" font-weight="700" fill="var(--dk)">Standpunt-argument</text><text x="150" y="156" font-size="11" fill="var(--dk)">want, immers</text>
 <rect x="6" y="174" width="308" height="38" rx="6" fill="var(--orl)"/><text x="14" y="198" font-size="12" font-weight="700" fill="var(--dk)">Toelichting</text><text x="150" y="198" font-size="11" fill="var(--dk)">bijvoorbeeld, zoals, namelijk</text></g></svg><div class="sam-figcap">Overzicht: elke relatie heeft eigen signaalwoorden. Staat er geen signaalwoord, lees dan de betekenis van de zinnen.</div></div>
 <p>Een signaalwoord helpt, maar het is geen garantie. Een <strong>impliciete relatie</strong> heeft geen signaalwoord: "Het regende de hele dag. De wedstrijd werd afgelast." Je ziet toch het verband: oorzaak en gevolg. Een woord als <em>daarom</em> of <em>dus</em> kan een gevolg inleiden, maar ook een standpunt dat uit argumenten volgt.</p>
+</div>`,
+'havo_nl_A4':`<div class="sam-intro">Bij sommige examenvragen vraagt de tekst niet alleen wat er staat, maar wat de <strong>schrijver</strong> bedoelt, vindt of voelt. Je trekt dan een <strong>conclusie</strong> over zijn <strong>intentie</strong>, <strong>opvatting</strong> of <strong>gevoelens</strong>. Die conclusie onderbouw je altijd met woorden uit de tekst.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Intentie</td><td>Wat de schrijver met zijn tekst wil bereiken.</td></tr>
+<tr><td>Opvatting</td><td>Wat de schrijver vindt of denkt.</td></tr>
+<tr><td>Gevoel</td><td>De emotie die de schrijver laat blijken.</td></tr>
+<tr><td>Toon</td><td>De houding uit de tekst: zakelijk, kritisch, spottend, enzovoort.</td></tr>
+<tr><td>Woordkeus</td><td>De keuze van woorden; neutraal of beladen.</td></tr>
+<tr><td>Ironie</td><td>Het tegenovergestelde zeggen van wat je bedoelt.</td></tr>
+<tr><td>Retorische vraag</td><td>Een vraag waarop geen antwoord verwacht wordt.</td></tr>
+<tr><td>Overdrijving</td><td>Iets groter voorstellen dan het is, voor nadruk.</td></tr>
+<tr><td>Tekstbewijs</td><td>Een woord of zin die je conclusie onderbouwt.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Drie dingen die je kunt afleiden</div>
+<p>Je kunt drie dingen over de schrijver afleiden. De <strong>intentie</strong> is wat hij wil bereiken: informeren, overtuigen of tot actie aanzetten. De <strong>opvatting</strong> is wat hij vindt van het onderwerp. Het <strong>gevoel</strong> is de emotie die uit zijn woorden spreekt, zoals ergernis of bewondering.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 190" role="img" aria-label="Drie dingen die je over de schrijver kunt afleiden: intentie, opvatting en gevoel, elk met een voorbeeldzin en de conclusie"><g font-family="inherit"><rect x="6" y="6" width="308" height="54" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="25" font-size="12" font-weight="700" fill="var(--dk)">Intentie</text><text x="16" y="41" font-size="11" fill="var(--dk)">"Teken de petitie vandaag nog."</text><text x="16" y="54" font-size="11" fill="var(--mu)">tot actie aanzetten</text>
+<rect x="6" y="66" width="308" height="54" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="85" font-size="12" font-weight="700" fill="var(--dk)">Opvatting</text><text x="16" y="101" font-size="11" fill="var(--dk)">"Dat beleid leeft in een droomwereld."</text><text x="16" y="114" font-size="11" fill="var(--mu)">de schrijver wijst het beleid af</text>
+<rect x="6" y="126" width="308" height="54" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="145" font-size="12" font-weight="700" fill="var(--dk)">Gevoel</text><text x="16" y="161" font-size="11" fill="var(--dk)">"Ik vind het schokkend dat..."</text><text x="16" y="174" font-size="11" fill="var(--mu)">verontwaardiging</text></g></svg><div class="sam-figcap">Uit een zin lees je de intentie (wat hij wil bereiken), de opvatting (wat hij vindt) en het gevoel (wat hij voelt), met telkens een aanwijzing uit de tekst.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> intentie = wat wil hij bereiken; opvatting = wat vindt hij; gevoel = wat voelt hij.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Woordkeus, toon en stijlmiddelen</div>
+<p>De aanwijzingen vind je in de <strong>woordkeus</strong>. Een <strong>beladen woord</strong> (schandalig, prachtig) bevat een oordeel of emotie; <strong>neutraal taalgebruik</strong> niet. Uit de woordkeus blijkt de <strong>toon</strong>: zakelijk, kritisch, spottend, enthousiast.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 160" role="img" aria-label="Vergelijking van neutraal taalgebruik en beladen woordkeus in twee zinnen over een brug, met het beladen woord gemarkeerd"><g font-family="inherit"><rect x="6" y="6" width="308" height="66" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="26" font-size="12" font-weight="700" fill="var(--dk)">Neutraal</text><text x="16" y="46" font-size="12" fill="var(--dk)">De gemeente bouwt een nieuwe brug.</text><text x="16" y="63" font-size="11" fill="var(--mu)">alleen een mededeling, geen oordeel</text>
+<rect x="6" y="82" width="308" height="72" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="102" font-size="12" font-weight="700" fill="var(--dk)">Beladen</text><text x="16" y="122" font-size="12" fill="var(--dk)">De gemeente laat weer een</text><rect x="177" y="108" width="84" height="18" rx="4" fill="var(--or)" opacity=".3"/><text x="180" y="122" font-size="12" font-weight="700" fill="var(--dk)">monsterlijke</text><text x="266" y="122" font-size="12" fill="var(--dk)">brug</text><text x="16" y="140" font-size="12" fill="var(--dk)">neerzetten.</text><text x="110" y="140" font-size="11" fill="var(--mu)">afkeuring door woordkeus</text></g></svg><div class="sam-figcap">Dezelfde gebeurtenis, twee woordkeuzes: de eerste is neutraal, de tweede laat door "monsterlijke" een duidelijke afkeuring zien.</div></div>
+<table class="sam-table"><thead><tr><th>Stijlmiddel</th><th>Wat doet het?</th></tr></thead><tbody>
+<tr><td>Ironie</td><td>Zegt het tegenovergestelde van wat bedoeld wordt ("Geweldig, weer vertraging").</td></tr>
+<tr><td>Retorische vraag</td><td>Een vraag zonder verwacht antwoord; verpakt een mening.</td></tr>
+<tr><td>Overdrijving</td><td>Maakt iets groter dan het is voor nadruk ("een eeuwigheid in de file").</td></tr>
+</tbody></table>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Conclusie onderbouwen en valkuilen</div>
+<p>Een goede conclusie over de schrijver heeft <strong>tekstbewijs</strong>: een woord of zin uit de tekst die je conclusie draagt. Je gaat in drie stappen te werk.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Van tekstbewijs naar conclusie in drie stappen: een woord uit de tekst, wat dat zegt over de waardering, de conclusie over de opvatting van de schrijver"><g font-family="inherit" text-anchor="middle"><rect x="10" y="6" width="300" height="46" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="25" font-size="12" font-weight="700" fill="var(--dk)">1  Tekstbewijs</text><text x="160" y="42" font-size="11" fill="var(--dk)">het woord "droomwereld"</text>
+<path d="M160 52 V66" stroke="var(--or)" stroke-width="2.5"/><path d="M153 62 L160 72 L167 62 Z" fill="var(--or)"/>
+<rect x="10" y="72" width="300" height="46" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="91" font-size="12" font-weight="700" fill="var(--dk)">2  Wat zegt het woord?</text><text x="160" y="108" font-size="11" fill="var(--dk)">negatieve waardering, spottend</text>
+<path d="M160 118 V132" stroke="var(--or)" stroke-width="2.5"/><path d="M153 128 L160 138 L167 128 Z" fill="var(--or)"/>
+<rect x="10" y="138" width="300" height="46" rx="8" fill="var(--or)"/><text x="160" y="157" font-size="12" font-weight="700" fill="#fff">3  Conclusie over de schrijver</text><text x="160" y="174" font-size="11" fill="#fff">hij wijst het beleid af</text></g></svg><div class="sam-figcap">Van woord naar conclusie: zoek tekstbewijs, bepaal wat het woord zegt over de waardering en trek dan je conclusie over de schrijver.</div></div>
+<p>Let op de <strong>valkuilen</strong>. Een citaat geeft de mening van iemand anders, niet automatisch van de schrijver. Bij <strong>ironie</strong> bedoelt de schrijver het tegenovergestelde van wat er letterlijk staat. En je conclusie komt uit de tekst, niet uit wat <em>jij</em> van het onderwerp vindt.</p>
+<div class="sam-tip"><strong>Examentip:</strong> bij "Wat blijkt uit deze zin over de opvatting van de schrijver?" noem je een woord uit de tekst én wat dat zegt. Alleen "hij is boos" is zonder tekstbewijs onvoldoende.</div>
 </div>`
 });

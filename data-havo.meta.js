@@ -96,6 +96,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A4",
+      "lo": "nl.A.4",
+      "gs": 2,
+      "naam": "Conclusies over de auteur trekken",
+      "beschrijving": "Je leest uit woordkeus en toon af wat de schrijver bedoelt, vindt en voelt, en je onderbouwt je conclusie met woorden uit de tekst.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De intentie van de schrijver",
+       "De opvatting van de schrijver",
+       "Gevoelens en toon",
+       "Woordkeus en stijlmiddelen als aanwijzing",
+       "Een conclusie onderbouwen met de tekst",
+       "Valkuilen: citaten, ironie en eigen mening"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

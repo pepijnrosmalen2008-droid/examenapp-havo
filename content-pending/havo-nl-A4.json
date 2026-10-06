@@ -1,0 +1,632 @@
+{
+ "id": "A4",
+ "lo": "nl.A.4",
+ "gs": 2,
+ "naam": "Conclusies over de auteur trekken",
+ "beschrijving": "Je leest uit woordkeus en toon af wat de schrijver bedoelt, vindt en voelt, en je onderbouwt je conclusie met woorden uit de tekst.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De intentie van de schrijver",
+  "De opvatting van de schrijver",
+  "Gevoelens en toon",
+  "Woordkeus en stijlmiddelen als aanwijzing",
+  "Een conclusie onderbouwen met de tekst",
+  "Valkuilen: citaten, ironie en eigen mening"
+ ],
+ "sam": "Je trekt conclusies over de intentie (wat de schrijver wil bereiken), de opvatting (wat hij vindt) en de gevoelens van de auteur. Aanwijzingen zijn woordkeus (neutraal of beladen), toon en stijlmiddelen als ironie, retorische vraag en overdrijving. Een conclusie moet je kunnen onderbouwen met woorden of zinnen uit de tekst, niet met je eigen mening.",
+ "begrippen": [
+  {
+   "t": "Intentie",
+   "d": "Wat de schrijver met een zin of tekst bedoelt te bereiken."
+  },
+  {
+   "t": "Opvatting",
+   "d": "Wat de schrijver vindt of denkt over iets."
+  },
+  {
+   "t": "Gevoel",
+   "d": "De emotie die de schrijver laat blijken, zoals ergernis of bewondering."
+  },
+  {
+   "t": "Toon",
+   "d": "De houding van de schrijver die uit de tekst blijkt, zoals zakelijk, kritisch of spottend."
+  },
+  {
+   "t": "Woordkeus",
+   "d": "De manier waarop de schrijver zijn woorden kiest."
+  },
+  {
+   "t": "Beladen woord",
+   "d": "Een woord met een duidelijke waardering of emotie erin."
+  },
+  {
+   "t": "Neutraal taalgebruik",
+   "d": "Taal zonder duidelijke waardering of emotie."
+  },
+  {
+   "t": "Ironie",
+   "d": "Iets zeggen terwijl je het tegenovergestelde bedoelt."
+  },
+  {
+   "t": "Retorische vraag",
+   "d": "Een vraag waarop de schrijver geen antwoord verwacht."
+  },
+  {
+   "t": "Overdrijving",
+   "d": "Iets groter voorstellen dan het is om nadruk te geven."
+  },
+  {
+   "t": "Tekstbewijs",
+   "d": "Een woord of zin uit de tekst waarmee je een conclusie onderbouwt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat bedoel je met de intentie van een schrijver?",
+   "o": [
+    "wat hij zelf van het onderwerp vindt",
+    "wat hij met zijn tekst wil bereiken",
+    "hoe lang de tekst is",
+    "welke woorden hij het vaakst gebruikt"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "De intentie is wat de schrijver met zijn tekst wil bereiken.",
+   "uo": [
+    "Koos je dit? Dat is zijn opvatting. De intentie gaat over wat hij bij de lezer wil bereiken, niet over zijn eigen mening.",
+    "Klopt: de intentie is het doel van de schrijver, zoals informeren, overtuigen of tot actie aanzetten.",
+    "Koos je dit? De lengte van de tekst zegt niets over wat de schrijver bedoelt. De intentie is het doel van de schrijver.",
+    "Koos je dit? Woordgebruik kan een aanwijzing zijn, maar het is niet de intentie zelf. Die is wat hij wil bereiken."
+   ],
+   "uh": "Intentie = doel."
+  },
+  {
+   "v": "Welk begrip is wat een schrijver vindt of denkt over iets?",
+   "o": [
+    "de intentie",
+    "het onderwerp",
+    "de titel",
+    "de opvatting"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "De opvatting is wat de schrijver vindt of denkt.",
+   "uo": [
+    "Koos je de intentie? Dat is wat de schrijver wil bereiken. De opvatting is wat hij vindt.",
+    "Koos je het onderwerp? Dat is waarover de tekst gaat, niet wat de schrijver ervan vindt.",
+    "Koos je de titel? Een titel kan een hint geven, maar is geen begrip voor wat de schrijver vindt.",
+    "Klopt: de opvatting is het oordeel of standpunt van de schrijver over het onderwerp."
+   ],
+   "uh": "Opvatting = oordeel."
+  },
+  {
+   "v": "Welke toon past bij een tekst met woorden als \"schandalig\" en \"onbegrijpelijk\"?",
+   "o": [
+    "verontwaardigd en afwijzend",
+    "zakelijk en neutraal van toon",
+    "vrolijk en enthousiast",
+    "onzeker en twijfelend"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Negatieve beladen woorden wijzen op afkeuring en verontwaardiging.",
+   "uo": [
+    "Klopt: zulke beladen woorden laten zien dat de schrijver iets afkeurt en daar boos over is.",
+    "Koos je dit? Een neutrale toon vermijdt oordelen. \"Schandalig\" is juist een sterk oordeel.",
+    "Koos je dit? Enthousiaste teksten gebruiken positieve woorden. \"Schandalig\" en \"onbegrijpelijk\" zijn negatief.",
+    "Koos je dit? Een twijfelende toon gebruikt woorden als misschien. Deze woorden zijn stellig."
+   ],
+   "uh": "Beladen woord = waardering."
+  },
+  {
+   "v": "Welk woord is beladen?",
+   "o": [
+    "woning",
+    "maandag",
+    "schandalig",
+    "gemeente"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Een beladen woord bevat een oordeel of emotie.",
+   "uo": [
+    "Koos je dit? \"Woning\" noemt gewoon een gebouw, zonder oordeel. Daarom is het neutraal.",
+    "Koos je \"maandag\"? Dat woord noemt gewoon een dag van de week en bevat geen oordeel. Een beladen woord laat een waardering of emotie zien, zoals schandalig.",
+    "Klopt: \"schandalig\" bevat een sterk oordeel en een emotie. De andere woorden zijn neutraal.",
+    "Koos je dit? \"Gemeente\" is een bestuursorgaan en zegt niets over gevoel of oordeel."
+   ],
+   "uh": "Beladen = oordeel erin."
+  },
+  {
+   "v": "Wat doet een retorische vraag meestal?",
+   "o": [
+    "het vraagt de lezer om echte informatie over het onderwerp van de tekst",
+    "het geeft een voorbeeld van een argument",
+    "het benadrukt een standpunt zonder antwoord te verwachten",
+    "het toont dat de schrijver twijfelt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Een retorische vraag benadrukt een mening zonder antwoord te verwachten.",
+   "uo": [
+    "Koos je dit? Bij een echte vraag verwacht je een antwoord. Een retorische vraag is zo geformuleerd dat het antwoord vanzelf spreekt.",
+    "Koos je dit? Een voorbeeld is een concreet geval, geen vraag. De vraag is een stijlmiddel voor nadruk.",
+    "Klopt: de schrijver verwacht geen antwoord, maar laat zijn mening zien. Het antwoord ligt voor de hand.",
+    "Koos je dit? Twijfel staat meestal in woorden als misschien. Een retorische vraag laat vaak juist zekerheid zien."
+   ],
+   "uh": "Vraag zonder antwoord = nadruk."
+  },
+  {
+   "v": "Wat is meestal het effect van overdrijving?",
+   "o": [
+    "het geeft nadruk aan een gevoel of standpunt",
+    "het maakt de tekst neutraler en zakelijker voor de lezer",
+    "het levert extra bewijs",
+    "het verkort de tekst"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Overdrijving versterkt de emotie of het standpunt.",
+   "uo": [
+    "Klopt: een overdrijving maakt iets groter dan het is om het gevoel van de schrijver te benadrukken.",
+    "Koos je dit? Overdrijving maakt een tekst juist emotioneler, niet neutraler.",
+    "Koos je dit? Een overdrijving is geen bewijs; zij geeft emotie en nadruk, geen feiten.",
+    "Koos je dit? Overdrijving gaat over inhoud en effect, niet over lengte."
+   ],
+   "uh": "Overdrijven = nadruk."
+  },
+  {
+   "v": "Waarop baseer je een conclusie over de schrijver?",
+   "o": [
+    "op wat je zelf van het onderwerp vindt",
+    "op wat je over de schrijver gelezen hebt in een andere tekst",
+    "op wat je denkt dat de meeste mensen vinden",
+    "op woorden en zinnen uit de tekst"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Onderbouw een conclusie over de schrijver met tekstbewijs.",
+   "uo": [
+    "Koos je dit? Jouw mening zegt niets over de schrijver. De vraag is wat in de tekst staat.",
+    "Koos je dit? De vraag gaat over deze tekst. Wat je elders las, kan niet worden gecontroleerd in het fragment.",
+    "Koos je dit? Wat de meeste mensen vinden bewijst niets over deze schrijver.",
+    "Klopt: een conclusie moet in de tekst terug te vinden zijn, bijvoorbeeld in woordkeus of toon."
+   ],
+   "uh": "Zonder tekstbewijs geen conclusie."
+  },
+  {
+   "v": "Welke aanwijzing is bruikbaar om de opvatting van de schrijver te bepalen?",
+   "o": [
+    "de lengte van de tekst",
+    "woordkeus en toon in de tekst",
+    "de naam van de krant of het tijdschrift",
+    "hoeveel alinea's er zijn"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Woordkeus en toon laten de opvatting van de schrijver zien.",
+   "uo": [
+    "Koos je dit? Een lange of korte tekst zegt niets over wat de schrijver vindt.",
+    "Klopt: beladen woorden en toon laten zien wat de schrijver vindt.",
+    "Koos je dit? De krant zegt hooguit iets over het medium. Wat de schrijver vindt, blijkt uit de tekst zelf.",
+    "Koos je dit? Het aantal alinea's zegt niets over een opvatting. Woordkeus en toon wel."
+   ],
+   "uh": "Kijk naar de woorden."
+  },
+  {
+   "v": "Wat bedoelt een schrijver die ironisch is?",
+   "o": [
+    "precies wat er letterlijk in de zin staat",
+    "iets wat hij niet weet",
+    "iets wat hij geleerd heeft",
+    "het tegenovergestelde van wat er staat"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Ironie betekent het tegenovergestelde zeggen van wat je bedoelt.",
+   "uo": [
+    "Koos je dit? Dan zou het geen ironie zijn. Ironie betekent dat de bedoeling afwijkt van de letterlijke woorden.",
+    "Koos je dit? Ironie gaat niet over onwetendheid, maar over een bewuste omkering.",
+    "Koos je dit? Ironie gaat om de bedoeling achter de woorden, niet om wat de schrijver geleerd heeft.",
+    "Klopt: bij ironie zeg je iets positiefs terwijl je iets negatiefs bedoelt, of andersom."
+   ],
+   "uh": "Ironie = omgekeerde bedoeling."
+  },
+  {
+   "v": "Een schrijver citeert een politicus. Wat weet je daardoor over de schrijver?",
+   "o": [
+    "dat hij het volledig met de politicus eens is",
+    "niets zeker, hij kan ook alleen citeren",
+    "dat hij de politicus afwijst",
+    "dat hij zelf politicus is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Een citaat geeft de opvatting van een ander, niet automatisch van de schrijver.",
+   "uo": [
+    "Koos je dit? Een schrijver kan iemand citeren om hem te weerspreken of alleen te noemen.",
+    "Klopt: een citaat toont wat een ander vindt. De opvatting van de schrijver blijkt uit zijn eigen woorden eromheen.",
+    "Koos je dit? Ook dat is niet vanzelf waar. Het hangt af van wat hij er zelf bij zegt.",
+    "Koos je dit? Citeren maakt iemand geen politicus. Het zegt niets over zijn beroep."
+   ],
+   "uh": "Citaat is niet van de schrijver."
+  },
+  {
+   "v": "Een tekst meldt wanneer de nieuwe brug opengaat. Wat is de intentie van de schrijver?",
+   "o": [
+    "de lezer tot actie aanzetten",
+    "de lezer overtuigen van een standpunt",
+    "de lezer informeren",
+    "de lezer laten lachen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Een mededeling zonder oordeel heeft als intentie informeren.",
+   "uo": [
+    "Koos je dit? Er wordt de lezer niets gevraagd. Een mededeling is geen oproep.",
+    "Koos je dit? Een standpunt verdedig je met argumenten en een oordeel. De tekst noemt alleen een datum, dus het is een mededeling en geen overtuigende tekst.",
+    "Klopt: de tekst deelt een feit mee en vraagt niets. De schrijver wil informeren.",
+    "Koos je dit? Een tekst om te laten lachen bevat humor of een grappig verhaal. Hier staat een zakelijke mededeling over een datum, dus de intentie is informeren."
+   ],
+   "uh": "Meedelen = informeren."
+  },
+  {
+   "v": "Welke zin laat een opvatting zien?",
+   "o": [
+    "\"Deze bankjes zijn een slecht besluit.\"",
+    "\"De gemeente plaatst bankjes in het park.\"",
+    "\"De bankjes staan in het park.\"",
+    "\"Er komen tien bankjes.\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Een opvatting bevat een oordeel of waardering.",
+   "uo": [
+    "Klopt: \"slecht\" is een oordeel. Daarmee laat de schrijver zien wat hij vindt.",
+    "Koos je dit? Dit is een mededeling zonder oordeel. Een opvatting bevat een waardering.",
+    "Koos je dit? Dit noemt alleen een plaats en bevat geen oordeel. Een opvatting herken je aan een waarderend woord, zoals slecht of prachtig.",
+    "Koos je dit? Dit noemt een aantal en is een feit zonder waardering. Een opvatting vraagt een oordeel van de schrijver, dus een waarderend woord."
+   ],
+   "uh": "Oordeel = opvatting."
+  },
+  {
+   "v": "Wat blijkt hieruit over de opvatting van de schrijver?",
+   "o": [
+    "hij wijst het beleid af",
+    "hij is neutraal over het beleid",
+    "hij is enthousiast over het beleid",
+    "hij twijfelt over het beleid"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Een negatieve uitdrukking over wie het beleid steunt, duidt op afwijzing van het beleid.",
+   "uo": [
+    "Klopt: \"droomwereld\" is een negatieve uitdrukking. Wie denkt dat het beleid werkt, wordt als naïef afgeschilderd.",
+    "Koos je dit? Een neutrale schrijver zou geen negatief woord als \"droomwereld\" kiezen. Dit is een duidelijk oordeel.",
+    "Koos je dit? Dan zou hij positieve woorden gebruiken. \"Droomwereld\" is spottend bedoeld.",
+    "Koos je dit? Twijfel klinkt anders, met woorden als misschien. Deze zin is stellig."
+   ],
+   "uh": "Beladen woord wijst op oordeel.",
+   "ctx": "Wie nog steeds denkt dat dit beleid werkt, leeft in een droomwereld."
+  },
+  {
+   "v": "Wat is de intentie van de schrijver?",
+   "o": [
+    "de lezer informeren over een petitie",
+    "de lezer ter overweging iets voorleggen",
+    "de lezer tot actie aanzetten",
+    "de lezer vermaken"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Een opdracht aan de lezer wijst op tot actie aanzetten.",
+   "uo": [
+    "Koos je dit? Er wordt niet uitgelegd wat een petitie is. De zin geeft een opdracht.",
+    "Koos je dit? De zin laat geen ruimte om zelf te kiezen. Hij is een oproep.",
+    "Klopt: de schrijver vraagt de lezer iets te doen, namelijk de petitie tekenen.",
+    "Koos je dit? Vermaken vraagt om humor of een verhaal. Deze zin geeft een opdracht aan de lezer en wil dat hij iets gaat doen, dus tot actie aanzetten."
+   ],
+   "uh": "Opdracht = actie.",
+   "ctx": "Teken de petitie vandaag nog en laat zien dat jij het niet pikt."
+  },
+  {
+   "v": "Welk gevoel spreekt uit deze zin?",
+   "o": [
+    "gelatenheid en berusting",
+    "verontwaardiging",
+    "tevredenheid",
+    "verveling"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 2,
+   "u": "\"Schokkend\" laat verontwaardiging zien.",
+   "uo": [
+    "Koos je dit? Gelatenheid klinkt alsof het de schrijver niets doet. Hier staat het tegendeel.",
+    "Klopt: \"schokkend\" laat zien dat de schrijver geschokt en verontwaardigd is.",
+    "Koos je dit? Tevredenheid zou positieve woorden vragen. \"Schokkend\" is negatief.",
+    "Koos je dit? Een verveelde schrijver zou geen sterk woord als schokkend kiezen."
+   ],
+   "uh": "Sterk woord = sterk gevoel.",
+   "ctx": "Ik vind het schokkend dat er nog zoveel kinderen zonder ontbijt naar school gaan."
+  },
+  {
+   "v": "Wat doet de schrijver met deze vraag?",
+   "o": [
+    "hij vraagt de lezer om nieuwe informatie over de stad",
+    "hij geeft een feit over steden",
+    "hij twijfelt zelf over het antwoord",
+    "hij wijst het idee af zonder antwoord te verwachten"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Een retorische vraag verpakt een mening in een vraag.",
+   "uo": [
+    "Koos je dit? Een echte vraag zoekt informatie. Hier ligt het antwoord al voor de hand.",
+    "Koos je dit? Er staat geen feit, maar een vraag die een mening verpakt.",
+    "Koos je dit? Wie twijfelt, vraagt zich echt iets af. Deze vraag is stellig bedoeld.",
+    "Klopt: het is een retorische vraag. Het verwachte antwoord is \"niemand\", dus de schrijver spreekt zijn afwijzing uit."
+   ],
+   "uh": "Wie vraagt dit nu écht? Niemand.",
+   "ctx": "Wie wil er nu in een stad wonen waar geen enkele straat veilig is?"
+  },
+  {
+   "v": "Wat is het effect van \"een eeuwigheid\" hier?",
+   "o": [
+    "het geeft een exacte duur van de file",
+    "het benadrukt zijn ergernis over de file",
+    "het toont dat de schrijver geen haast heeft",
+    "het is een feit dat te controleren is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Een overdrijving benadrukt een gevoel.",
+   "uo": [
+    "Koos je dit? Een eeuwigheid is geen tijdsduur. Het woord geeft nadruk, geen informatie.",
+    "Klopt: \"een eeuwigheid\" is overdreven. De schrijver wil zijn ergernis kracht bijzetten.",
+    "Koos je dit? Wie zich een eeuwigheid in de file voelt staan, heeft juist wel haast of ergernis. Het is het tegendeel van gemoedsrust: de schrijver ergert zich.",
+    "Koos je dit? Je kunt niet controleren hoe lang een eeuwigheid is. Het is een figuurlijke uitdrukking."
+   ],
+   "uh": "Overdrijving = nadruk op gevoel.",
+   "ctx": "Elke ochtend sta ik een eeuwigheid in de file."
+  },
+  {
+   "v": "Wat blijkt uit \"prachtig\" over de schrijver?",
+   "o": [
+    "hij is positief over het besluit",
+    "hij is negatief over het besluit",
+    "hij is neutraal over het besluit",
+    "hij weet niet wat hij ervan vindt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Een positief beladen woord duidt op een positieve opvatting.",
+   "uo": [
+    "Klopt: \"prachtig\" is een positieve waardering. Het eerste zinnetje is een mededeling, het tweede een oordeel.",
+    "Koos je dit? \"Prachtig\" is positief. Zonder ironie wijst het niet op afkeuring.",
+    "Koos je dit? Een neutrale schrijver zou geen waarderend woord als prachtig kiezen.",
+    "Koos je dit? Wie twijfelt, schrijft met woorden als misschien of wellicht. \"Prachtig\" is stellig en positief, dus de schrijver weet wel wat hij ervan vindt."
+   ],
+   "uh": "Prachtig = positief oordeel.",
+   "ctx": "De gemeente plaatst nieuwe bankjes in het park. Dat is een prachtig besluit."
+  },
+  {
+   "v": "Wat bedoelt de schrijver met \"Geweldig\"?",
+   "o": [
+    "hij is echt blij met het bouwproject in de straat",
+    "hij is neutraal",
+    "hij weet niet wat het project is",
+    "hij is geërgerd en bedoelt het omgekeerde"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Een positief woord bij een negatieve gebeurtenis wijst op ironie.",
+   "uo": [
+    "Koos je dit? Dan zou het niet gaan over een project dat veel te lang duurt. De context maakt het ironisch.",
+    "Koos je dit? \"Geweldig\" is een sterk woord, dus niet neutraal. De bedoeling is spottend.",
+    "Koos je dit? Hij noemt het project en de vertraging juist heel concreet.",
+    "Klopt: dit is ironie. Het positieve woord staat tegenover de negatieve inhoud (twee jaar langer)."
+   ],
+   "uh": "Woord en inhoud botsen = ironie.",
+   "ctx": "Geweldig, weer een bouwproject dat twee jaar langer duurt dan gepland."
+  },
+  {
+   "v": "Wat vindt de schrijver van het plan?",
+   "o": [
+    "hij is net zo enthousiast als de wethouder",
+    "hij heeft geen mening",
+    "hij heeft twijfels over het plan",
+    "hij is de wethouder zelf"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Wat een geciteerd persoon vindt, is niet de opvatting van de schrijver.",
+   "uo": [
+    "Koos je dit? Dan zou hij het citaat niet in twijfel trekken. Het citaat is van de wethouder, niet van de schrijver.",
+    "Koos je dit? De schrijver zegt het niet openlijk, maar zijn vraag \"voor wie?\" laat twijfel zien. Zo toont hij wel een opvatting, ook zonder direct oordeel.",
+    "Klopt: de wethouder is positief, maar de schrijver stelt zijn woorden in twijfel met \"voor wie?\".",
+    "Koos je dit? De schrijver spreekt over de wethouder in de derde persoon. Het zijn twee personen."
+   ],
+   "uh": "Let op wie iets vindt.",
+   "ctx": "De wethouder noemt het plan \"een doorbraak\". De schrijver vraagt zich af voor wie."
+  },
+  {
+   "v": "Welk woord laat zien dat de schrijver de sluiting betreurt?",
+   "o": [
+    "gymzaal",
+    "school",
+    "jammer",
+    "verliezen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Een waarderend woord als jammer laat een gevoel of opvatting zien.",
+   "uo": [
+    "Koos je dit? \"Gymzaal\" noemt een plek en is neutraal. Een gevoel moet uit een waarderend woord blijken.",
+    "Koos je \"school\"? Dat woord noemt een instelling en bevat geen oordeel of gevoel. Alleen \"jammer\" laat zien dat de schrijver de sluiting betreurt.",
+    "Klopt: \"jammer\" geeft aan dat de schrijver het sluiten niet wil. Je onderbouwt dit met het woord.",
+    "Koos je dit? \"Verliezen\" beschrijft wat leerlingen kwijtraken, geen gevoel van de schrijver. \"Jammer\" laat zijn mening zien."
+   ],
+   "uh": "Tekstbewijs: het waarderende woord.",
+   "ctx": "Het is jammer dat de school de gymzaal sluit. Leerlingen verliezen een plek om te bewegen."
+  },
+  {
+   "v": "Welke houding blijkt uit dit fragment?",
+   "o": [
+    "stellig voor de regel",
+    "stellig tegen de regel",
+    "onverschillig en geïrriteerd",
+    "terughoudend en afwegend"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Voor- en nadelen noemen zonder oordeel wijst op een afwegende houding.",
+   "uo": [
+    "Koos je \"stellig voor de regel\"? Een voorstander noemt vooral voordelen en laat twijfel weg. Dit fragment noemt ook nadelen en zegt dat het moeilijk te zeggen is.",
+    "Koos je \"stellig tegen de regel\"? Een tegenstander richt zich op nadelen en kiest een kant. Dit fragment noemt ook voordelen en spreekt geen duidelijk oordeel uit.",
+    "Koos je \"onverschillig en geïrriteerd\"? Onverschilligheid blijkt uit weinig betrokkenheid en irritatie uit negatieve woorden. Hier staat een zorgvuldige afweging zonder emotie.",
+    "Klopt: de schrijver noemt voor- en nadelen en durft geen oordeel te geven. Dat is afwegend."
+   ],
+   "uh": "Afwegen = terughoudend.",
+   "ctx": "De nieuwe regel heeft voordelen, maar ook nadelen. Het is moeilijk te zeggen of hij overal werkt."
+  },
+  {
+   "v": "Wat laat de schrijver hier doorschemeren over de woorden van de directeur?",
+   "o": [
+    "hij gelooft ze niet helemaal",
+    "hij is het volledig met de directeur eens",
+    "hij vindt de school te groot",
+    "hij prijst de directeur"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Een tegenstelling met een bewering kan impliciete kritiek zijn.",
+   "uo": [
+    "Klopt: \"Maar\" zet de woorden van de directeur af tegen wat de schrijver ziet. Zo twijfelt hij aan de bewering.",
+    "Koos je dit? Dan zou er geen \"Maar\" staan en zou hij geen tegenbeeld geven.",
+    "Koos je dit? Over de grootte van de school staat niets in het fragment. Je trekt dan een conclusie uit je eigen verbeelding en niet uit de tekst; dat is een valkuil.",
+    "Koos je dit? De schrijver geeft geen compliment; hij zet zijn waarneming tegenover de directeur."
+   ],
+   "uh": "\"Maar\" zet tegenover: impliciete kritiek.",
+   "ctx": "De directeur zegt dat alles goed gaat. Maar wie door de gangen loopt, ziet overal volle prullenbakken en kapotte stoelen."
+  },
+  {
+   "v": "Wat is de intentie van de schrijver?",
+   "o": [
+    "de lezer overtuigen om meer thee te drinken",
+    "de lezer uitleggen hoe het moet",
+    "de lezer vermaken",
+    "de lezer ergeren"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Stappen uitleggen is informeren.",
+   "uo": [
+    "Koos je dit? Er is geen standpunt dat verdedigd wordt. De tekst zegt hoe het moet.",
+    "Klopt: de tekst legt stap voor stap uit hoe je thee maakt. Dat is informeren (instructie).",
+    "Koos je dit? De tekst bevat geen humor of verhaal. Hij beschrijft stappen.",
+    "Koos je dit? Een tekst die stap voor stap uitlegt hoe je thee zet, wil niemand ergeren. De intentie van de schrijver is zakelijk: de lezer helpen thee te zetten."
+   ],
+   "uh": "Hoe-vraag = uitleg.",
+   "ctx": "Hoe maak je een goede kop thee? Giet eerst kokend water op de theezakjes en wacht drie minuten."
+  },
+  {
+   "v": "Welke conclusie over de schrijver is het best onderbouwd?",
+   "o": [
+    "hij vindt dat ouderen te veel klagen",
+    "hij is blij met de bus",
+    "hij vindt dat de dokter te ver weg zit",
+    "hij vindt het busaanbod te klein"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Een goede conclusie kun je onderbouwen met woorden uit de tekst.",
+   "uo": [
+    "Koos je dit? Dat staat nergens. Je legt een eigen interpretatie in de tekst.",
+    "Koos je dit? \"Te weinig\" is een negatief oordeel. Er is geen blijdschap te vinden.",
+    "Koos je dit? Over de afstand staat niets. De klacht gaat over de frequentie van de bus.",
+    "Klopt: \"te weinig\" is een oordeel over het aanbod, en het wordt onderbouwd met de ouderen die niet bij de dokter komen."
+   ],
+   "uh": "Alleen wat in de tekst staat.",
+   "ctx": "De bus rijdt elk uur. Voor veel ouderen is dat te weinig om op tijd bij de dokter te komen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Wie nog steeds denkt dat het nieuwe rooster rust brengt, leeft in een droomwereld. Het is een chaos waar niemand van profiteert.",
+   "v": "Welke opvatting heeft de schrijver over het rooster? Onderbouw met twee woorden of uitdrukkingen uit de tekst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De schrijver wijst het rooster af (1 punt). Onderbouwing: de uitdrukking \"droomwereld\" voor wie denkt dat het rust brengt, en het woord \"chaos\" (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Geweldig, weer een bouwproject dat twee jaar langer duurt. Zo blijft de straat nog een tijdje een parkeerplaats voor stofwolken.",
+   "v": "Welke toon gebruikt de schrijver en hoe blijkt dat uit het woord \"Geweldig\"?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De toon is ironisch of spottend (1 punt). \"Geweldig\" is positief, maar het gaat over een project dat twee jaar langer duurt en de straat als stofwolken laat achter: de schrijver bedoelt het tegenovergestelde (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Wie wil er nu op een school zitten waar niemand zich veilig voelt? De directie moet nu ingrijpen.",
+   "v": "Wat is de intentie van de schrijver? Noem twee aanwijzingen uit de tekst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De schrijver wil de directie (en lezer) tot actie aanzetten (1 punt). Aanwijzingen: de retorische vraag die de afwijzing benadrukt, en de eis \"De directie moet nu ingrijpen\" (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De directeur zegt dat de nieuwe aanpak een succes is. Maar de cijfers zijn niet beter geworden en de leerlingen zijn niet blijer.",
+   "v": "Hoe laat de schrijver zien dat hij de directeur niet helemaal gelooft? Verklaar met een tekstdeel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij zet de woorden van de directeur tegenover de feiten: met \"Maar\" volgen de cijfers die niet beter zijn en de leerlingen die niet blijer zijn (1 punt). Hij twijfelt dus aan de bewering dat het een succes is (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het is jammer dat de school de gymzaal sluit. Er komt een nieuwe sportzaal in een andere wijk, maar die ligt te ver weg voor veel leerlingen.",
+   "v": "Welk gevoel en welke opvatting blijken uit deze tekst? Onderbouw.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Gevoel: spijt of teleurstelling; opvatting: de sluiting is een slechte zaak (1 punt). Onderbouwing: het woord \"jammer\" en de opmerking dat de nieuwe zaal \"te ver weg\" is voor veel leerlingen (1 punt)."
+  }
+ ]
+}
