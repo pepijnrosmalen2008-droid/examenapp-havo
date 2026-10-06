@@ -12,7 +12,7 @@ STAP -1 - Werkmap gelijkzetten (deze vaste sessie heeft de repo met schrijfrecht
 - Zet hem gelijk met de nieuwste main: `git fetch origin main && git checkout -B main origin/main && git clean -fd`. Werk nooit verder op een stand van een vorige dag.
 - Controleer meteen of pushen kan: `git push --dry-run origin HEAD:main`. Lukt dat niet, meld dat direct met de foutmelding en stop.
 
-Je bent Claude Code en werkt aan Slagio, een examentrainer voor havo/vwo/vmbo. Dit is een automatische dagelijkse taak: maak ELKE RUN PRECIES ÉÉN LEERDOEL af volgens de gouden standaard v2. Dit is echte examenstof voor leerlingen; een fout antwoord of een foute figuur is schadelijk. Kwaliteit gaat boven tempo. Eén leerdoel goed is de hele opdracht.
+Je bent Claude Code en werkt aan Slagio, een examentrainer voor havo/vwo/vmbo. Dit is een automatische dagelijkse taak: maak ELKE RUN MINIMAAL 5 LEERDOELEN af volgens de gouden standaard v2, en liefst een heel domein (alle leerdoelen ervan). Dit is echte examenstof voor leerlingen; een fout antwoord of een foute figuur is schadelijk. Elk leerdoel moet net zo goed zijn als de referentie: neem per leerdoel de volle tijd voor STAP 2 t/m 4, ook bij het vijfde. Minder leerdoelen afmaken is beter dan een leerdoel onder de lat.
 
 STAP 0 - Lees eerst (schrijf nog niets):
 - `CLAUDE.md` (vooral "Adding content" en "Mini-clips").
@@ -22,7 +22,8 @@ STAP 0 - Lees eerst (schrijf nog niets):
 
 STAP 1 - Kies het leerdoel:
 - Neem het bovenste open domein (`- [ ]`). Staan er nog geen leerdoel-regels onder, zet ze er dan eerst onder: 4-8 leerdoelen uit `knowledge/<niveau>/<vak>.json` of, als die er niet zijn, uit `syllabi/2027/<niveau>-<vak>.txt`, in de vorm `  - [ ] A1 · nl.A.1 Naam`.
-- Neem het bovenste open leerdoel van dat domein. Alleen dat ene doe je vandaag.
+- Werk de open leerdoelen van dat domein van boven naar beneden af. Is het domein af en heb je er nog geen 5 gedaan, ga dan door met het volgende open domein, tot je er minimaal 5 hebt. Een domein dat je begonnen bent maak je het liefst helemaal af (max. 8 leerdoelen per run).
+- Doorloop STAP 2 t/m 5 voor elk leerdoel apart: maken, keuren, integreren, poorten, committen en pushen. Zo staat elk goedgekeurd leerdoel meteen veilig op main, ook als de run later stopt.
 - Staat er "(opwaarderen)" bij: de module bestaat al als v1. Gebruik de bestaande vragen en samenvatting als grondstof en breng hem naar v2.
 
 STAP 2 - Maak de module (bestanden `content-pending/<niveau>-<vak>-<id>.json` en `.html`):
@@ -46,6 +47,7 @@ STAP 4 - Integreren en poorten:
 - Rode poort die je niet betrouwbaar kunt repareren: `git checkout . && git clean -fd`, push niets, meld wat er misging. Nooit rode content live.
 
 STAP 5 - Afronden (alleen als alles groen is):
+- Per leerdoel één commit en push (niet alles aan het eind).
 - Haal vlak voor het committen nogmaals main op (`git fetch origin main`); is main intussen veranderd, rebase dan je werk erop (`git stash && git reset --hard origin/main && git stash pop`, conflicten zorgvuldig oplossen) en draai de poorten opnieuw.
 - Bump de SW-cache in `sw.js` regel 1 (`const CACHE = 'slagio-vXX'`) met 1 ten opzichte van main.
 - Vink in `docs/CONTENT-EXPANSION-QUEUE.md` het leerdoel af met een korte notitie (aantal vragen, begrippen, figuren, clip hergebruikt/nieuw). Zijn alle leerdoelen van het domein af, vink het domein af. Verhoog de teller "N leerdoelen op v2".
@@ -54,4 +56,4 @@ STAP 5 - Afronden (alleen als alles groen is):
 - Push direct naar `main` (`git push origin HEAD:main`); bij netwerkfout tot 4x met backoff (2s, 4s, 8s, 16s).
 - Lukt pushen naar main echt niet, push dan naar de branch `content/<JJJJ-MM-DD>` en meld dat duidelijk met de foutmelding.
 
-Rapporteer aan het eind: welk leerdoel, wat je maakte (vragen per R-niveau, begrippen, figuren, clip), wat je bij het zelf keuren hebt verbeterd, de uitslag van de poorten, en of er gepusht is (met de commit-hash).
+Rapporteer aan het eind per leerdoel: welk leerdoel, wat je maakte (vragen per R-niveau, begrippen, figuren, clip), wat je bij het zelf keuren hebt verbeterd, de uitslag van de poorten, en of er gepusht is (met de commit-hash). Sluit af met het totaal van deze run en de nieuwe stand van de teller.

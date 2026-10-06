@@ -136,7 +136,7 @@ echt uit een examen komt (zie DoD §8).
   opbouw herkennen, fouten vinden, beoordelen met criteria.
 - Moderne vreemde talen: fragmenten en opties in de doeltaal, uitleg in het Nederlands.
 
-## 6. Werkwijze per leerdoel
+## 6. Werkwijze per leerdoel (de routine doet er minimaal 5 per run, liefst een heel domein)
 
 ```bash
 # 1. schrijf content-pending/<niveau>-<vak>-<id>.json en .html (bronnen: syllabi/2027/,

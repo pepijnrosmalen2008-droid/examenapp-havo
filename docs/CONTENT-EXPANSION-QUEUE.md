@@ -5,12 +5,14 @@
 > onderwerp-tags voor adaptief oefenen, 10+ begrippen, 5 examenvragen.
 > **Referentie:** havo bi.M3 Enzymwerking (`content-pending/havo-bi-M3.json` + `.html`).
 
-## Hoe de dagelijkse taak werkt (één leerdoel per run)
+## Hoe de dagelijkse taak werkt (minimaal 5 leerdoelen per run, liefst een heel domein)
 1. Pak het **bovenste open domein** (`- [ ]`) hieronder.
    - Heeft het nog geen leerdoel-regels eronder? Zet ze er eerst onder (4-8 leerdoelen, uit
      `knowledge/<niveau>/<vak>.json` of `syllabi/2027/<niveau>-<vak>.txt`), in de vorm
      `  - [ ] A1 · nl.A.1 Naam`.
-   - Neem dan het **bovenste open leerdoel** van dat domein. Precies dat ene doe je vandaag.
+   - Werk de open leerdoelen van boven naar beneden af; minimaal 5 per run, liefst het hele
+     domein (max. 8). Domein af en nog geen 5? Door naar het volgende domein.
+   - Per leerdoel: maken, keuren, integreren, poorten, commit en push.
 2. Maak de module volgens `docs/GOUDEN-STANDAARD-V2.md` §6 (check → render + zelf bekijken →
    integreer → split → poorten).
 3. Vink het leerdoel af met een korte notitie (vragen/begrippen/figuren/clip). Zijn alle
@@ -19,6 +21,12 @@
 
 > Voortgang: **1 leerdoel op v2** (havo bi.M3). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
+>
+> **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
+> = **~1.300 leerdoelen**. Bij 25-30 vragen per leerdoel is dat **~33.000-39.000 v2-vragen**,
+> elk met 4 uitleggen (~140.000 uitleggen), plus ~6.500 examenvragen met modelantwoord en
+> ~13.000 begrippen. Nu: 21.481 snelle-quizvragen, grotendeels gegenereerd en zonder uitleg
+> per optie. Tempo bij 5-8 leerdoelen per dag: ~6,5 maand voor alles.
 
 ---
 
