@@ -39,6 +39,20 @@ var VONK_M = {
 };
 
 // Stemmingen: blij (default) · trots · goed · laag (bemoedigend) · kijk (nieuwsgierig) · knipoog
+// Wenkbrauwen als plukje vacht: een spits toelopend vlak in donker oranje,
+// iets korter dan de lijn uit VONK_M (geen getekende zwarte streep).
+function vonkWenkbrauw(d) {
+  const segs = String(d).match(/M[^M]+/g) || [];
+  return segs.map(seg => {
+    const n = seg.match(/-?\d+(\.\d+)?/g).map(Number); if (n.length < 6) return '';
+    let [x1, y1, cx, cy, x2, y2] = n;
+    const k = .1; // inkorten aan beide kanten
+    const ax = x1 + (x2 - x1) * k, ay = y1 + (y2 - y1) * k, bx = x2 - (x2 - x1) * k, by = y2 - (y2 - y1) * k;
+    const t = 2.3; // dikte in het midden
+    return `M${ax.toFixed(1)} ${ay.toFixed(1)} Q${cx} ${(cy - t).toFixed(1)} ${bx.toFixed(1)} ${by.toFixed(1)} Q${cx} ${(cy + t * .9).toFixed(1)} ${ax.toFixed(1)} ${ay.toFixed(1)} Z`;
+  }).join(' ');
+}
+
 function mascotSVG(mood, size) {
   size = size || 96;
   // Uitgeruste Vonk-skin (leest de equip live, of een preview-override uit de winkel).
@@ -79,7 +93,7 @@ function mascotSVG(mood, size) {
   // props (denkwolk / zweetdruppel / hartjes / zzz)
   const PROPS = {
     think: `<g class="m-prop m-think"><circle cx="92" cy="34" r="3" fill="#fff" stroke="#d9dee8"/><circle cx="99" cy="27" r="4.5" fill="#fff" stroke="#d9dee8"/><ellipse cx="108" cy="16" rx="11" ry="8" fill="#fff" stroke="#d9dee8"/><text x="108" y="20" font-size="10" font-weight="700" text-anchor="middle" fill="#94a0b8">?</text></g>`,
-    tear: `<path class="m-prop m-tear" d="M40 50 C37 56 37 60 40.5 60 C44 60 44 56 40 50 Z" fill="#7dd3fc"/><ellipse cx="39.6" cy="57" rx="1" ry="1.5" fill="#fff" opacity=".8"/>`,
+    tear: `<g class="m-prop m-tear"><path d="M40 50 C37 56 37 60 40.5 60 C44 60 44 56 40 50 Z" fill="#7dd3fc"/><ellipse cx="39.6" cy="57" rx="1" ry="1.5" fill="#fff" opacity=".8"/></g>`,
     sweat: `<path class="m-prop m-sweat" d="M86 38 C82 45 82 50 86 50 C90 50 90 45 86 38 Z" fill="#7dd3fc"/>`,
     hearts: `<g class="m-prop m-hearts" fill="#ff6b9d"><path d="M92 26 C90 22 84 24 86 29 C87 32 91 34 92 36 C93 34 97 32 98 29 C100 24 94 22 92 26 Z"/><path d="M26 32 C24.5 29 20 30.5 21.5 34 C22 36 25 37.5 26 39 C27 37.5 30 36 30.5 34 C32 30.5 27.5 29 26 32 Z" opacity=".8"/></g>`,
     zzz: `<g class="m-prop m-zzz" fill="#94a0b8" font-family="var(--font-head)" font-weight="900"><text x="86" y="26" font-size="10">z</text><text x="94" y="20" font-size="13">Z</text></g>`,
@@ -150,7 +164,7 @@ function mascotSVG(mood, size) {
         <path d="M35 46 C40 41 47 41 51 45 C55 49 65 49 69 45 C73 41 80 41 85 46 C88 59 76 71 60 71 C44 71 32 59 35 46 Z" fill="${CR}"/>
         <g class="m-eyes">${eyesInner}</g>
         ${shadesSVG}
-        ${s.brow ? `<path class="m-brow" d="${s.brow}" stroke="${DK}" stroke-width="3" stroke-linecap="round" fill="none"/>` : ''}
+        ${s.brow ? `<path class="m-brow" d="${vonkWenkbrauw(s.brow)}" fill="#a84a17"/>` : ''}
         <circle cx="36" cy="56" r="6.5" fill="url(#mCheek)"/><circle cx="84" cy="56" r="6.5" fill="url(#mCheek)"/>
         ${blushSVG}
         <!-- neusje -->
@@ -584,6 +598,16 @@ function updateVonkCorner(id) {
   // Registreer de hoek-Vonk als de 'hoofd-Vonk' zodat idle (rondkijken/knikken)
   // en gaze op hem werken.
   try { if (typeof vonkRegister === 'function') vonkRegister(el.querySelector('.vonk-corner-fig')); } catch (e) {}
+  // Stemming per scherm en moment (niet altijd dezelfde blije Vonk), soms met
+  // een korte reactie bij binnenkomst.
+  try {
+    const fig = el.querySelector('.vonk-corner-fig');
+    if (typeof vonkHoekStemming === 'function' && typeof vonkBasis === 'function') {
+      vonkBasis(fig, vonkHoekStemming(id));
+      const binnen = (typeof _VONK_BINNEN !== 'undefined') ? _VONK_BINNEN[id] : null;
+      if (binnen && Math.random() < .6) setTimeout(() => { try { vonkEmote(fig, binnen, 1800); } catch (e) {} }, 650);
+    }
+  } catch (e) {}
 }
 
 // Vonk + spraakbubbel als herbruikbaar blok. opts: {name, size, dark, actionsHTML, fineHTML}

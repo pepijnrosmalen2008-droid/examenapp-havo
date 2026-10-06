@@ -163,6 +163,9 @@ function vonkEvent(name, opts) {
     if (st.haptic) { try { if (typeof haptic === 'function') haptic(st.haptic); } catch (e) {} }
   }
   if (st.main) VonkFX.mainUntil = now + (st.dur || 800);
+  // Het gezicht doet mee: elke gebeurtenis krijgt een eigen uitdrukking.
+  var gez = { correct: VonkMood.enthusiasm > 74 ? 'giechel' : 'blij', stronger: 'wow', wrong: _vonkRunWrong >= 3 ? 'verdrietig' : 'oeps', celebrate: 'feest', proud: 'trots', evolve: 'wow', greet: 'blij', think: 'denk' }[stName];
+  if (el && gez) { try { vonkGezicht(el, gez); clearTimeout(el._emoteT); el._emoteT = setTimeout(function () { el._emoteT = null; vonkGezicht(el, el.dataset.basis || 'blij'); }, (st.dur || 900) + 900); } catch (e) {} }
   // RECOVERY: 3+ fouten op rij → na het verdriet een bemoedigend knikje +
   // opbeurend bericht (empathie stijgt). Werkt óók zonder zichtbare Vonk.
   if (name === 'answer_wrong' && _vonkRunWrong >= 3) {
@@ -212,38 +215,118 @@ function _vonkIdleSchedule() {
 function _vonkBlink(el) { var eyes = el.querySelector('.m-eyes'); if (!eyes) return; eyes.style.animation = 'none'; void eyes.offsetWidth; eyes.style.animation = 'mkBlink .28s'; setTimeout(function () { eyes.style.animation = ''; }, 340); }
 function _vonkGlance(el, dx) { var pup = el.querySelector('.m-pupils'); if (!pup) return; pup.style.animation = 'none'; pup.style.transform = 'translateX(' + dx + 'px)'; setTimeout(function () { pup.style.transform = ''; pup.style.animation = ''; }, 1500); }
 
+// ── Gezicht wisselen: ogen, wenkbrauwen, blosjes, mond en rekwisiet ────────
+// Physics-veilig: de groepen die de physics aanstuurt (.m-head, .m-eyes, oren,
+// staart) blijven dezelfde elementen; alleen hun inhoud en de losse
+// gezichtsdelen worden vervangen door die van een vers getekende Vonk in de
+// gevraagde stemming. svg.dataset.basis = de stemming waar hij naar terugkeert.
+var _VONK_GEZ_DELEN = '.m-shades,.m-brow,.m-blush,.m-tong,.m-tanden';
+function vonkGezicht(el, mood) {
+  try {
+    var svg = (typeof _vonkSvgOf === 'function') ? _vonkSvgOf(el) : el; if (!svg || !svg.querySelector) return false;
+    if (typeof VONK_M === 'undefined' || !VONK_M[mood] || typeof mascotSVG !== 'function') return false;
+    var head = svg.querySelector('.m-head'), eyes = svg.querySelector('.m-eyes'), mouth = svg.querySelector('.m-mouth');
+    if (!head || !eyes || !mouth) return false;
+    if (!svg.dataset.basis) svg.dataset.basis = ((String(svg.getAttribute('class') || '').match(/m-mood-([a-z]+)/) || [])[1]) || 'blij';
+    if (svg.dataset.gezicht === mood) return true;
+    var tmp = document.createElement('div'); tmp.innerHTML = mascotSVG(mood, 10);
+    var nw = tmp.querySelector('svg'); if (!nw) return false;
+    var nEyes = nw.querySelector('.m-eyes'), nMouth = nw.querySelector('.m-mouth');
+    eyes.innerHTML = nEyes ? nEyes.innerHTML : eyes.innerHTML;
+    mouth.setAttribute('d', nMouth.getAttribute('d')); mouth.setAttribute('fill', nMouth.getAttribute('fill'));
+    // losse gezichtsdelen: weg en opnieuw op de juiste plek
+    var oud = head.querySelectorAll(_VONK_GEZ_DELEN), i;
+    for (i = 0; i < oud.length; i++) oud[i].remove();
+    var naOog = eyes.nextSibling;
+    ['.m-shades', '.m-brow', '.m-blush'].forEach(function (q) { var n = nw.querySelector(q); if (n) head.insertBefore(n, naOog); });
+    var naMond = mouth.nextSibling;
+    ['.m-tong', '.m-tanden'].forEach(function (q) { var n = nw.querySelector(q); if (n) head.insertBefore(n, naMond); });
+    // rekwisiet en sterretjes zitten in .m-fig
+    var fig = svg.querySelector('.m-fig');
+    if (fig) {
+      var weg = fig.querySelectorAll(':scope > .m-prop, :scope > .m-spark');
+      for (i = 0; i < weg.length; i++) weg[i].remove();
+      var skin = fig.querySelector(':scope > .vk-skin');
+      var nieuw = nw.querySelectorAll('.m-fig > .m-spark, .m-fig > .m-prop');
+      for (i = 0; i < nieuw.length; i++) { fig.insertBefore(nieuw[i], skin || null); }
+    }
+    // stemmingsklasse (oren per stemming in de CSS)
+    svg.setAttribute('class', String(svg.getAttribute('class') || '').replace(/\bm-mood-[a-z]+\b/, 'm-mood-' + mood));
+    svg.dataset.gezicht = mood;
+    return true;
+  } catch (e) { return false; }
+}
+// Zet de stemming waar Vonk naar terugkeert (en laat hem meteen zien).
+function vonkBasis(el, mood) {
+  var svg = (typeof _vonkSvgOf === 'function') ? _vonkSvgOf(el) : el; if (!svg) return;
+  if (!svg.dataset.gezicht) svg.dataset.gezicht = ((String(svg.getAttribute('class') || '').match(/m-mood-([a-z]+)/) || [])[1]) || '';
+  svg.dataset.basis = mood;
+  if (!svg._emoteT) vonkGezicht(svg, mood);
+}
 // ── Emote-flits: laat Vonk kort een andere gezichtsuitdrukking zien ─────────
-// Physics-veilig: raakt alleen de statische mond aan (kop/ogen/lijf sturen de
-// physics-parts aan), plus een korte pop-klasse. Zo zie je z'n emoties vaker,
-// óók terwijl de physics-idle gewoon doorloopt. Herstelt netjes na `ms`.
+// Hele gezicht (ogen, wenkbrauwen, blosjes, mond, rekwisiet) en daarna terug
+// naar de basisstemming. Bij minder beweging: alleen het gezicht, geen sprong.
 function vonkEmote(el, mood, ms) {
   try {
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     var svg = (typeof _vonkSvgOf === 'function') ? _vonkSvgOf(el) : el; if (!svg) return;
-    var m = (typeof VONK_M !== 'undefined') ? VONK_M[mood] : null; if (!m) return;
-    var mouth = svg.querySelector('.m-mouth'); if (!mouth) return;
-    // Bewaar de oorspronkelijke mond één keer (niet stapelen bij overlappende flitsen).
-    if (!svg._emoteRestore) svg._emoteRestore = { d: mouth.getAttribute('d'), fill: mouth.getAttribute('fill') };
-    mouth.setAttribute('d', m.mouth);
-    mouth.setAttribute('fill', m.filled ? '#3b2a22' : 'none');
-    // tongetje/tanden horen bij de oorspronkelijke mond: tijdens de flits weg
-    var _tt = svg.querySelectorAll('.m-tong,.m-tanden'); for (var i = 0; i < _tt.length; i++) _tt[i].style.display = 'none';
+    if (!vonkGezicht(svg, mood)) return;
     svg.classList.add('m-emote');
-    // Bij een blije flits een klein staart-tikje; bij verrast/wow een sprongetje.
-    try { if (typeof vonkPlay === 'function') vonkPlay(svg, (mood === 'wow' || mood === 'feest' || mood === 'giechel') ? 'jump' : 'nod', 640); } catch (e) {}
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce) {
+      var beweeg = { wow: 'jump', feest: 'celebrate', giechel: 'happy', blij: 'happy', trots: 'proud', oeps: 'eartwitch', schrik: 'jump', verdrietig: 'sad', laag: 'sad', denk: 'think', kijk: 'glance', knipoog: 'nod', liefde: 'happy', vastberaden: 'nod', cool: 'tailflick', verlegen: 'nod', slaap: 'nod' }[mood] || 'nod';
+      try {
+        var body = svg._body || ((typeof vonkPhysics === 'function') ? vonkPhysics(svg) : null);
+        if (body && body.impulse) body.impulse(beweeg);
+        else if (typeof vonkPlay === 'function') vonkPlay(svg, (beweeg === 'jump' || beweeg === 'celebrate') ? 'jump' : 'nod', 640);
+      } catch (e) {}
+    }
     clearTimeout(svg._emoteT);
     svg._emoteT = setTimeout(function () {
-      try {
-        var r = svg._emoteRestore;
-        if (r) { if (r.d != null) mouth.setAttribute('d', r.d); mouth.setAttribute('fill', r.fill || 'none'); }
-        var _tt = svg.querySelectorAll('.m-tong,.m-tanden'); for (var i = 0; i < _tt.length; i++) _tt[i].style.display = '';
-        svg._emoteRestore = null; svg.classList.remove('m-emote');
-      } catch (e) {}
+      svg._emoteT = null;
+      try { vonkGezicht(svg, svg.dataset.basis || 'blij'); svg.classList.remove('m-emote'); } catch (e) {}
     }, ms || 1500);
   } catch (e) {}
 }
+// Welke stemming past bij Vonk in de hoek, op dit scherm en dit moment.
+function vonkHoekStemming(id) {
+  try {
+    var h = new Date().getHours();
+    if (id === 'sc-res') {
+      var a = (typeof ST !== 'undefined' && ST.antwrd) ? ST.antwrd : [], som = 0;
+      for (var i = 0; i < a.length; i++) som += (a[i] && a[i].pts) || 0;
+      var pct = a.length ? som / a.length : 0;
+      return pct >= .85 ? 'feest' : pct >= .6 ? 'trots' : pct >= .4 ? 'vastberaden' : 'verdrietig';
+    }
+    var vast = { 'sc-shop': 'wow', 'sc-league': 'vastberaden', 'sc-foutenboek': 'denk', 'sc-herhalen': 'denk', 'sc-zoek': 'kijk',
+      'sc-examens': 'vastberaden', 'sc-examen': 'vastberaden', 'sc-sim': 'vastberaden', 'sc-profiel': 'trots', 'sc-badges': 'trots',
+      'sc-sociaal': 'blij', 'sc-klas': 'blij', 'sc-info': 'kijk', 'sc-rapport': 'denk', 'sc-plan': 'kijk' };
+    if (vast[id]) return vast[id];
+    if (h >= 23 || h < 6) return 'verlegen';           // laat op: rustig, slaperig
+    if (typeof maatjeStemming === 'function') {
+      var m = maatjeStemming();
+      if (m === 'slaap') return 'verlegen';
+      if (m === 'kijk') return 'blij';
+      return m;                                          // trots / blij / oeps
+    }
+    return 'blij';
+  } catch (e) { return 'blij'; }
+}
+// Korte reactie bij binnenkomst op een scherm (niet elke keer).
+var _VONK_BINNEN = { 'sc-shop': 'wow', 'sc-league': 'vastberaden', 'sc-res': null, 'sc-foutenboek': 'denk', 'sc-zoek': 'knipoog', 'sc-profiel': 'trots' };
 // Vriendelijke, overwegend positieve set voor ambient idle-emotes.
-var _VONK_IDLE_EMOTES = ['kijk', 'denk', 'goed', 'knipoog', 'blij', 'giechel', 'cool', 'trots', 'wow', 'verlegen'];
+var _VONK_IDLE_EMOTES = ['kijk', 'denk', 'goed', 'knipoog', 'blij', 'giechel', 'cool', 'trots', 'wow', 'verlegen', 'vastberaden', 'liefde', 'feest'];
+// Per moment een eigen mengsel, zodat hij niet steeds hetzelfde doet.
+function _vonkIdleStemming(basis) {
+  var h = new Date().getHours();
+  var pool = _VONK_IDLE_EMOTES.slice();
+  if (h >= 22 || h < 7) pool = ['verlegen', 'kijk', 'knipoog', 'slaap', 'denk'];
+  else if (basis === 'oeps') pool = ['kijk', 'denk', 'oeps', 'vastberaden', 'knipoog'];
+  else if (basis === 'verdrietig' || basis === 'vastberaden') pool = ['vastberaden', 'knipoog', 'denk', 'goed', 'kijk'];
+  else if (basis === 'feest' || basis === 'trots') pool = ['feest', 'giechel', 'cool', 'trots', 'liefde', 'knipoog'];
+  else if (basis === 'denk') pool = ['denk', 'kijk', 'wow', 'knipoog', 'goed'];
+  var m; do { m = pool[Math.floor(Math.random() * pool.length)]; } while (m === basis && pool.length > 1);
+  return m;
+}
 // Idle = geen vaste reeks maar een KANSVERDELING, op een wisselend interval,
 // zodat Vonk levend voelt en nooit gescript. Langere rust → zeldzamer gedrag.
 function _vonkIdleTick() {
@@ -254,9 +337,11 @@ function _vonkIdleTick() {
     // Ambient emote-flits (physics-veilig, dus óók voor de fysieke hoofd-Vonk):
     // ~1 op de 3 idle-beurten toont Vonk kort een andere uitdrukking, zodat je
     // z'n emoties véél vaker ziet i.p.v. altijd dezelfde glimlach.
-    if (vis && !el._emoteRestore && Math.random() < 0.34) {
-      var mood = _VONK_IDLE_EMOTES[Math.floor(Math.random() * _VONK_IDLE_EMOTES.length)];
-      vonkEmote(el, mood, 1400 + Math.random() * 900);
+    if (vis && !el._emoteT && Math.random() < 0.55) {
+      vonkEmote(el, _vonkIdleStemming(el.dataset.basis), 1600 + Math.random() * 1200);
+    } else if (vis && el._body && Math.random() < 0.5) {
+      // tussendoor een losse beweging: zwaaien, staart, oren, even nadenken
+      try { el._body.impulse(_vonkPick(['wave', 'tailflick', 'eartwitch', 'think', 'nod', 'glance'])); } catch (e) {}
     }
     // Fysiek aangestuurde Vonk regelt zijn eigen idle (ademen/knipperen/rondkijken);
     // de CSS-micro-idle hieronder alleen voor niet-physics Vonks.

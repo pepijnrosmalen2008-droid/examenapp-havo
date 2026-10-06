@@ -4660,7 +4660,7 @@ html.dark .hsd-pill{background:var(--bg2);border-color:var(--bo2)}
 @keyframes mZzz{0%{opacity:0;transform:translate(0,4px)}40%{opacity:1}100%{opacity:0;transform:translate(7px,-9px)}}
 @media(prefers-reduced-motion:reduce){.m-hearteyes,.m-hearts,.m-think,.m-sweat,.m-zzz{animation:none}}
 /* hoek-Vonk doet af en toe een speels wiebeltje zodat hij leeft */
-.vonk-corner-fig{display:block;animation:cornerNudge 9s ease-in-out 4s infinite}
+.vonk-corner-fig{display:block}
 @keyframes cornerNudge{0%,78%,100%{transform:translateY(0) rotate(0)}84%{transform:translateY(-7px) rotate(-7deg)}89%{transform:translateY(0) rotate(5deg)}94%{transform:translateY(-3px) rotate(-3deg)}}
 @media(prefers-reduced-motion:reduce){.vonk-corner-fig{animation:none}}
 /* stemming-specifieke lichaamsbeweging (i.p.v. altijd hetzelfde deinen) */
@@ -11922,10 +11922,9 @@ body:has(#sc-res.on #res-vonk .rv-kaart) #vonk-corner{display:none!important}
 html.dark .sbar-ring-lvl{box-shadow:0 0 0 2px #1c2030}
 .sbar-maatje{background:color-mix(in srgb,#8b5cf6 9%,var(--s));border-color:color-mix(in srgb,#8b5cf6 24%,var(--bo))}
 .sbar-maatje .sbar-lbl{font-size:10.5px;letter-spacing:0;text-transform:none;font-weight:700;color:#7c4dea}
-.sbar-ring{width:54px;height:54px;margin:-9px 0 -3px}
+.sbar-ring{width:54px;height:54px;margin:-9px 0 3px}
 .sbar-ring svg.sbar-ring-svg{width:54px;height:54px}
-.sbar-ring .anim-svg-wrap{width:46px!important;height:46px!important;border-radius:50%;overflow:hidden;clip-path:circle(21px at 50% 50%)}
-.sbar-ring .anim-svg-wrap svg{transform:scale(1.18) translateY(4%)}
+.sbar-ring .anim-svg-wrap{width:56px!important;height:56px!important;margin:-1px;clip-path:circle(22px at 50% 50%)}
 .sbar-ring-lvl{right:-4px;bottom:-1px}
 /* Vonk: oren doen mee met de emotie */
 .m-mood-oeps .m-ear-l,.m-mood-verdrietig .m-ear-l,.m-mood-slaap .m-ear-l,.m-mood-verlegen .m-ear-l{animation:none;transform:rotate(17deg)}
@@ -11938,20 +11937,20 @@ html.dark .sbar-ring-lvl{box-shadow:0 0 0 2px #1c2030}
 @keyframes mTear{0%,30%{transform:translateY(0) scale(.6);opacity:0}45%{opacity:1;transform:translateY(0) scale(1)}100%{transform:translateY(14px) scale(1);opacity:0}}
 @media(prefers-reduced-motion:reduce){.m-tear{animation:none}}
 
-/* ═══════ MAATJES IN VONK-STIJL ═══════ */
-.mj-svg{overflow:visible;display:block}
-.mj-wrap.anim-goud{filter:drop-shadow(0 0 6px rgba(247,196,72,.75))}
-.mj-ogen{transform-origin:60px 41px;animation:mjKnip 5.6s infinite}
-@keyframes mjKnip{0%,90%,100%{transform:scaleY(1)}92%{transform:scaleY(.08)}94%{transform:scaleY(1)}}
-.mj-kop{transform-origin:60px 70px;animation:mjKop 6s ease-in-out infinite}
-@keyframes mjKop{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
-.mj-zwaai{transform-origin:80px 82px;animation:mjZwaai 5s ease-in-out infinite}
-@keyframes mjZwaai{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(-30deg)}86%{transform:rotate(8deg)}93%{transform:rotate(-20deg)}}
-.mj-staart{transform-origin:44px 96px;animation:mjStaart 1.6s ease-in-out infinite}
-@keyframes mjStaart{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+/* ═══════ MAATJES: EMOTIES OP DE EIGEN TEKENINGEN ═══════
+   Beweging per stemming op de svg (de wrapper heeft al een eigen soort-beweging). */
+.mj-hup svg{transform-origin:50% 90%;animation:mjHup 1.6s cubic-bezier(.34,1.56,.64,1) infinite}
+@keyframes mjHup{0%,55%,100%{transform:translateY(0) scale(1)}65%{transform:translateY(-8%) scale(.97,1.04)}78%{transform:translateY(0) scale(1.05,.95)}88%{transform:scale(1)}}
+.mj-spring svg{transform-origin:50% 90%;animation:mjSpring 1.1s cubic-bezier(.34,1.56,.64,1) infinite}
+@keyframes mjSpring{0%,40%,100%{transform:translateY(0) scale(1)}55%{transform:translateY(-16%) rotate(-4deg) scale(.96,1.06)}75%{transform:translateY(0) scale(1.07,.93)}}
+.mj-giechel svg{transform-origin:50% 90%;animation:mjGiechel .5s ease-in-out infinite}
+@keyframes mjGiechel{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.mj-schud svg{animation:mjSchud 1.8s ease-in-out infinite}
+@keyframes mjSchud{0%,62%,100%{transform:translateX(0)}66%{transform:translateX(-5%)}72%{transform:translateX(5%)}78%{transform:translateX(-3%)}84%{transform:translateX(2%)}}
+.mj-hang svg{transform-origin:50% 95%;animation:mjHang 3s ease-in-out infinite}
+@keyframes mjHang{0%,100%{transform:scale(1,.97) rotate(-2deg)}50%{transform:scale(1,.94) rotate(2deg)}}
+.mj-adem svg{transform-origin:50% 95%;animation:mjAdem 3.6s ease-in-out infinite}
+@keyframes mjAdem{0%,100%{transform:scale(1,1)}50%{transform:scale(1.03,.97)}}
 .mj-traan{animation:mTear 2.4s ease-in infinite}
-.mj-mood-oeps .mj-oor-l,.mj-mood-verdrietig .mj-oor-l,.mj-mood-slaap .mj-oor-l,.mj-mood-laag .mj-oor-l{transform:rotate(16deg);transform-origin:33px 26px}
-.mj-mood-oeps .mj-oor-r,.mj-mood-verdrietig .mj-oor-r,.mj-mood-slaap .mj-oor-r,.mj-mood-laag .mj-oor-r{transform:rotate(-16deg);transform-origin:87px 26px}
-/* klein (navbalk, ranglijst): geen beweging, rustiger */
-.anim-svg-wrap[style*="width:22px"] .mj-svg *,.anim-svg-wrap[style*="width:26px"] .mj-svg *,.anim-svg-wrap[style*="width:28px"] .mj-svg *{animation:none!important}
-@media(prefers-reduced-motion:reduce){.mj-ogen,.mj-kop,.mj-zwaai,.mj-staart,.mj-traan{animation:none}}
+.mj-spark{transform-origin:50px 10px;animation:mSpark 1.8s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.mj-hup svg,.mj-spring svg,.mj-giechel svg,.mj-schud svg,.mj-hang svg,.mj-adem svg,.mj-traan,.mj-spark{animation:none}}
