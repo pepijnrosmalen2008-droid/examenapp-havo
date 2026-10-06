@@ -1052,6 +1052,8 @@ html.dark .qb{background:#2e3550}
 .pdf-modal-close:hover{background:rgba(255,255,255,.18);color:#fff}
 .pdf-modal-newtab{background:rgba(var(--or-rgb),.12);border:1px solid rgba(var(--or-rgb),.3);border-radius:10px;color:var(--or);padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .18s;flex-shrink:0;text-decoration:none;display:flex;align-items:center;gap:5px}
 .pdf-modal-newtab:hover{background:rgba(var(--or-rgb),.22);border-color:rgba(var(--or-rgb),.55)}
+/* Notch: de balk schuift onder de statusbalk/notch uit (in de browser is env()=0) */
+.pdf-modal-bar{box-sizing:content-box;padding-top:env(safe-area-inset-top,0px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .pdf-modal-body{flex:1;position:relative;overflow:hidden}
 #pdf-viewer-iframe{width:100%;height:100%;border:none;display:block}
 .pdf-modal-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#070a12;pointer-events:none;transition:opacity .3s}
@@ -6240,7 +6242,7 @@ html.pwa-standalone #sc-race .race-tb{padding-top:calc(10px + env(safe-area-inse
 html.pwa-standalone .res-topbar{padding-top:calc(8px + env(safe-area-inset-top,0px))!important}
 html.pwa-standalone #sc-qmode .tb{padding-top:calc(6px + env(safe-area-inset-top,0px))!important}
 html.pwa-standalone #sc-review .review-wrap,html.pwa-standalone #sc-race-res .rb{padding-top:calc(28px + env(safe-area-inset-top,0px))!important}
-html.pwa-standalone #sc-chal-intro .qh,html.pwa-standalone #sc-quiz .qh,html.pwa-standalone #sc-simtoets .qh{padding-top:calc(12px + env(safe-area-inset-top,0px))!important}
+html.pwa-standalone .sc>.qh,html.pwa-standalone #sc-chal-intro .qh,html.pwa-standalone #sc-quiz .qh,html.pwa-standalone #sc-simtoets .qh{padding-top:calc(12px + env(safe-area-inset-top,0px))!important}
 
 /* ── Onboarding feature icons (SVG, replaced ⚡📄🃏✓ emoji) ──────── */
 .ob-feat-ico{display:inline-flex;align-items:center;justify-content:center;color:#818cf8}

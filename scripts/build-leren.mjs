@@ -59,7 +59,7 @@ const PAGINA_CSS = `
 :root{--pg-bg:#f6f7fb;--pg-kaart:#fff;--pg-tekst:#141a26;--pg-zacht:#5b6476;--pg-lijn:#e3e6ee;--pg-accent:#2563eb;--pg-goed:#15803d;--pg-fout:#b42318}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--pg-bg:#0f1420;--pg-kaart:#171e2c;--pg-tekst:#e8ecf3;--pg-zacht:#9aa4b6;--pg-lijn:#283043;--pg-accent:#6ea0ff;--pg-goed:#4ade80;--pg-fout:#f87171}}
 :root[data-theme="dark"]{--pg-bg:#0f1420;--pg-kaart:#171e2c;--pg-tekst:#e8ecf3;--pg-zacht:#9aa4b6;--pg-lijn:#283043;--pg-accent:#6ea0ff;--pg-goed:#4ade80;--pg-fout:#f87171}
-*{box-sizing:border-box}body{margin:0;background:var(--pg-bg);color:var(--pg-tekst);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}html{background:var(--pg-bg)}body{margin:0;background:var(--pg-bg);color:var(--pg-tekst);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .pg{max-width:760px;margin:0 auto;padding:18px 16px 60px}
 .pg-top{display:flex;align-items:center;gap:10px;margin-bottom:14px}.pg-top img{width:32px;height:32px;border-radius:8px}.pg-top a{color:var(--pg-tekst);font-weight:800;text-decoration:none}
 .pg-kruim{font-size:13px;color:var(--pg-zacht);margin:0 0 6px}.pg-kruim a{color:var(--pg-accent);text-decoration:none}
@@ -79,6 +79,8 @@ h1{font-size:28px;line-height:1.2;margin:4px 0 8px;text-wrap:balance}h2{font-siz
 .pg-lijst{margin:0;padding:0;list-style:none}.pg-lijst li{padding:10px 0;border-bottom:1px solid var(--pg-lijn)}.pg-lijst li:last-child{border:0}
 .pg-lijst a{color:var(--pg-tekst);font-weight:700;text-decoration:none}.pg-lijst a:hover{color:var(--pg-accent)}.pg-lijst span{display:block;color:var(--pg-zacht);font-size:14px}
 dl.pg-begr dt{font-weight:800;margin-top:14px}dl.pg-begr dd{margin:2px 0 0;color:var(--pg-zacht)}dl.pg-begr dd a{color:var(--pg-accent);font-size:13px;text-decoration:none}
+.pg-afb{background:#fbfaf7;border:1px solid var(--pg-lijn);border-radius:14px;padding:14px;margin:0 0 14px;overflow-x:auto}.pg-afb svg{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}.pg-afb figcaption{margin-top:8px;font-size:13px;font-weight:700;color:#556072;text-align:center}
+.pg-ctx{white-space:pre-line;color:var(--pg-zacht);font-size:15px;margin:0 0 12px}.pg-vraag .pt{float:right;font-size:13px;font-weight:700;color:var(--pg-zacht)}.pg-vraag .ma{white-space:pre-line;margin:8px 0 0}
 .pg-voet{margin-top:40px;font-size:13px;color:var(--pg-zacht)}.pg-voet a{color:var(--pg-accent)}
 a:focus-visible,summary:focus-visible{outline:3px solid var(--pg-accent);outline-offset:2px;border-radius:6px}
 @media (max-width:480px){h1{font-size:24px}}`;
@@ -90,6 +92,13 @@ for (const n of Object.keys(VAR)) {
   const g = {}; new Function('g', lees(`data-${n}.js`) + `\ng.V=${VAR[n]};`)(g); data[n] = g.V;
   try { new Function('SAM_RICH', lees(`sam-${n}.js`))(sam); } catch (e) {}
 }
+
+// Slagio-proefexamens (origineel, examenstijl): één pagina met losse examenvragen per vak
+const PE = (() => {
+  const fs_ = fs.readdirSync(ROOT).filter(f => /^proefexamen-.*\.js$/.test(f)).sort();
+  try { return new Function('window', fs_.map(lees).join('\n;\n') + '\nreturn SLAGIO_EXAMENS;')({}) || {}; } catch (e) { return {}; }
+})();
+const peUrl = (niv, id) => `${ORIGIN}/leren/${niv}/${SLUG[id] || id}/examenvragen.html`;
 
 const bestanden = new Map();   // pad → inhoud
 const zet = (p, inhoud) => bestanden.set(p, inhoud);
@@ -180,7 +189,7 @@ ${voet}
 <p class="pg-kruim"><a href="/leren/">Leren</a> › ${esc(vakNaam)}</p>
 <h1>${esc(vakNaam)}</h1>
 <p class="pg-lead">Per onderwerp een samenvatting met figuren en oefenvragen met uitleg bij elk antwoord. <a href="${vakUrl}begrippen.html">Alle begrippen</a>.</p>
-<div class="pg-cta"><a class="pg-knop" href="/?niveau=${niv}&vak=${vak.id}">Oefen ${esc(vak.naam)} in de app</a></div>
+<div class="pg-cta"><a class="pg-knop" href="/?niveau=${niv}&vak=${vak.id}">Oefen ${esc(vak.naam)} in de app</a>${PE[niv] && PE[niv][vak.id] ? `<a class="pg-knop licht" href="${peUrl(niv, vak.id)}">Examenvragen met antwoorden</a>` : ''}</div>
 ${[...perDom.entries()].map(([did, ms]) => `<h2>Domein ${esc(did)}: ${esc(ms[0].d.naam)}</h2><ul class="pg-lijst">${ms.map(m => `<li><a href="${vakUrl}${m.slug}.html">${esc(m.l.naam)}</a><span>${esc(kort(m.l.beschrijving, 150))}</span></li>`).join('')}</ul>`).join('\n')}
 ${voet}
 </main></body></html>
@@ -202,6 +211,59 @@ ${voet}
   }
 }
 
+// examenvragen per vak (uit het Slagio-proefexamen)
+const examenPaginas = [];
+for (const [niv, V] of Object.entries(data)) for (const vak of V) {
+  const ex = PE[niv] && PE[niv][vak.id]; if (!ex || !(ex.vragen || []).length) continue;
+  const vs = SLUG[vak.id] || vak.id, vakNaam = `${vak.naam} ${NIV[niv]}`, vakUrl = `${ORIGIN}/leren/${niv}/${vs}/`, url = peUrl(niv, vak.id);
+  const heeftIndex = bestanden.has(`leren/${niv}/${vs}/index.html`);
+  const L = 'ABCDEFGH', nV = ex.vragen.length, pt = ex.vragen.reduce((a, q) => a + (q.punten || 0), 0);
+  const antw = q => q.type === 'mc' && q.opties ? `Juist is ${L[q.correct]}: ${q.opties[q.correct]}${q.uitleg ? '. ' + q.uitleg : ''}` : (q.antwoord || '');
+  const rubric = q => (q.antwoord_rubric || '').replace(/\.\s+(?=\d+\s*punt)/g, '.\n');
+  const opgHtml = (ex.opgaven || []).map(op => {
+    const vr = ex.vragen.filter(q => q.opgave === op.nr); if (!vr.length) return '';
+    const fig = (svg, cap) => svg ? `<figure class="pg-afb">${svg}${cap ? `<figcaption>${esc(cap)}</figcaption>` : ''}</figure>` : '';
+    return `<h2 id="opgave-${op.nr}">Opgave ${op.nr}: ${esc(op.titel || '')}</h2>
+${op.context ? `<p class="pg-ctx">${esc(op.context)}</p>` : ''}${fig(op.afb, op.afb_cap)}
+${vr.map(q => `<div class="pg-kaart pg-vraag"><span class="pt">${q.punten || 1} ${(q.punten || 1) === 1 ? 'punt' : 'punten'}</span>
+${q.afb && q.afb !== op.afb ? fig(q.afb, q.afb_cap) : ''}<p class="v">${q.nr}. ${esc(q.vraag)}</p>
+${q.type === 'mc' && q.opties ? `<ol type="A">${q.opties.map(o => `<li>${esc(o)}</li>`).join('')}</ol>` : ''}
+<details><summary>${q.type === 'mc' ? 'Antwoord en uitleg' : 'Modelantwoord en puntenverdeling'}</summary>
+<p class="ma">${esc(antw(q))}</p>${rubric(q) ? `<p class="ma"><b>Zo worden de punten verdeeld:</b>\n${esc(rubric(q))}</p>` : ''}</details></div>`).join('\n')}`;
+  }).join('\n');
+  const titel = `Examenvragen ${vakNaam} met antwoorden: ${nV} vragen in examenstijl | Slagio`;
+  const beschrijving = kort(`${nV} oefenvragen voor het eindexamen ${vakNaam} in de stijl van het centraal examen, met figuren, modelantwoord en puntenverdeling. Gratis, ook als proefexamen met klok in de app.`, 158);
+  const quiz = {
+    '@context': 'https://schema.org', '@type': 'Quiz', name: `Examenvragen ${vakNaam} (Slagio-proefexamen)`, educationalLevel: NIV[niv], inLanguage: 'nl', isAccessibleForFree: true,
+    educationalAlignment: [{ '@type': 'AlignmentObject', alignmentType: 'educationalSubject', targetName: vak.naam }],
+    provider: { '@type': 'Organization', name: 'Slagio', url: ORIGIN },
+    hasPart: ex.vragen.map(q => q.type === 'mc' && q.opties ? ({
+      '@type': 'Question', eduQuestionType: 'Multiple choice', learningResourceType: 'Practice problem', text: q.vraag,
+      suggestedAnswer: q.opties.map((o, j) => j === q.correct ? null : ({ '@type': 'Answer', position: j, text: o })).filter(Boolean),
+      acceptedAnswer: { '@type': 'Answer', position: q.correct, text: q.opties[q.correct], answerExplanation: { '@type': 'Comment', text: q.uitleg || '' } },
+    }) : ({
+      '@type': 'Question', eduQuestionType: 'Open-ended', learningResourceType: 'Practice problem', text: q.vraag,
+      acceptedAnswer: { '@type': 'Answer', text: q.antwoord || '', answerExplanation: { '@type': 'Comment', text: q.antwoord_rubric || '' } },
+    })),
+  };
+  const app = `/?niveau=${niv}&vak=${vak.id}`;
+  zet(`leren/${niv}/${vs}/examenvragen.html`, kop({ titel, beschrijving, url, html: `level-${niv}`, ld: [quiz, kruimel([['Slagio', ORIGIN + '/'], ['Leren', ORIGIN + '/leren/'], ...(heeftIndex ? [[vakNaam, vakUrl]] : []), ['Examenvragen', url]])] }) + `
+<body><main class="pg">
+${top}
+<p class="pg-kruim"><a href="/leren/">Leren</a> › ${heeftIndex ? `<a href="${vakUrl}">${esc(vakNaam)}</a>` : esc(vakNaam)} › Examenvragen</p>
+<h1>Examenvragen ${esc(vakNaam)} met antwoorden</h1>
+<p class="pg-lead">${nV} vragen (${pt} punten) in de stijl van het centraal examen, verdeeld over ${(ex.opgaven || []).length} opgaven met context en figuren. Probeer eerst zelf een antwoord en klap daarna het modelantwoord met de puntenverdeling open.</p>
+<ul class="pg-feiten"><li>${esc(vakNaam)}</li><li>${nV} vragen</li><li>${pt} punten</li><li>Slagio-proefexamen, geen officieel CE</li></ul>
+<div class="pg-cta"><a class="pg-knop" href="${app}">Maak het als proefexamen met klok</a>${heeftIndex ? `<a class="pg-knop licht" href="${vakUrl}">Uitleg per onderwerp</a>` : ''}</div>
+${opgHtml}
+<div class="pg-cta"><a class="pg-knop" href="${app}">Oefen ${esc(vak.naam)} verder in de app</a></div>
+<p class="pg-voet">Dit is een origineel Slagio-proefexamen in examenstijl, met eigen contexten en figuren. De echte centrale examens staan op examenblad.nl en in de examenbibliotheek van de app.</p>
+${voet}
+</main></body></html>
+`);
+  examenPaginas.push({ niv, vakNaam, url, nV });
+}
+
 // overzicht + llms.txt
 const perVak = new Map(); overzicht.forEach(o => { const k = o.niv + '/' + o.vs; if (!perVak.has(k)) perVak.set(k, []); perVak.get(k).push(o); });
 zet('leren/index.html', kop({ titel: 'Leren voor je eindexamen: uitleg en oefenvragen per onderwerp | Slagio', beschrijving: 'Gratis samenvattingen met figuren en oefenvragen met uitleg per antwoord, per onderwerp van het examenprogramma voor havo, vwo en vmbo.', url: `${ORIGIN}/leren/`, ld: [kruimel([['Slagio', ORIGIN + '/'], ['Leren', ORIGIN + '/leren/']])] }) + `
@@ -209,6 +271,9 @@ zet('leren/index.html', kop({ titel: 'Leren voor je eindexamen: uitleg en oefenv
 <h1>Leren voor je eindexamen</h1>
 <p class="pg-lead">Per onderwerp van het examenprogramma: een samenvatting met figuren en oefenvragen met uitleg bij elk antwoord. Er komen elke dag onderwerpen bij.</p>
 ${[...perVak.entries()].map(([k, os]) => `<h2><a href="/leren/${k}/" style="color:inherit;text-decoration:none">${esc(os[0].vakNaam)}</a></h2><ul class="pg-lijst">${os.map(o => `<li><a href="${o.url}">${esc(o.naam)}</a></li>`).join('')}</ul>`).join('\n')}
+<h2>Examenvragen met antwoorden</h2>
+<p class="pg-lead">Per vak een proefexamen in examenstijl, met figuren, modelantwoord en puntenverdeling.</p>
+<ul class="pg-lijst">${examenPaginas.map(e => `<li><a href="${e.url}">Examenvragen ${esc(e.vakNaam)}</a><span>${e.nV} vragen</span></li>`).join('')}</ul>
 ${voet}
 </main></body></html>
 `);
@@ -218,6 +283,9 @@ zet('llms.txt', `# Slagio
 
 ## Leerpagina's per onderwerp
 ${overzicht.map(o => `- [${o.naam} (${o.vakNaam})](${o.url}): ${o.besch}`).join('\n')}
+
+## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
+${examenPaginas.map(e => `- [Examenvragen ${e.vakNaam}](${e.url}): ${e.nV} vragen uit een Slagio-proefexamen`).join('\n')}
 
 ## Begrippenlijsten
 ${[...perVak.entries()].map(([k, os]) => `- [Begrippen ${os[0].vakNaam}](${ORIGIN}/leren/${k}/begrippen.html)`).join('\n')}
@@ -243,6 +311,6 @@ for (const [p, inhoud] of bestanden) {
   if (!CHECK) { fs.mkdirSync(path.dirname(vol), { recursive: true }); fs.writeFileSync(vol, inhoud); }
 }
 for (const p of bestaand) { anders++; if (!CHECK) fs.unlinkSync(path.join(ROOT, p)); }
-const n = overzicht.length, vakken = perVak.size;
-if (CHECK) { if (anders) { console.log(`✗ leerpagina's verouderd (${anders} bestanden): draai node scripts/build-leren.mjs`); process.exit(1); } console.log(`✓ leerpagina's actueel (${n} onderwerpen, ${vakken} vakken)`); }
-else console.log(`✓ ${n} leerpagina's, ${vakken} vakindexen en begrippenlijsten, /leren/ en /llms.txt (${anders} bestanden bijgewerkt)`);
+const n = overzicht.length, vakken = perVak.size, nEx = examenPaginas.length;
+if (CHECK) { if (anders) { console.log(`✗ leerpagina's verouderd (${anders} bestanden): draai node scripts/build-leren.mjs`); process.exit(1); } console.log(`✓ leerpagina's actueel (${n} onderwerpen, ${vakken} vakken, ${nEx} examenvragenpagina's)`); }
+else console.log(`✓ ${n} leerpagina's, ${vakken} vakindexen en begrippenlijsten, ${nEx} examenvragenpagina's, /leren/ en /llms.txt (${anders} bestanden bijgewerkt)`);

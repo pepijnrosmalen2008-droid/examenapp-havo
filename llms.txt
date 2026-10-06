@@ -48,6 +48,36 @@
 - [Geleiders, isolatoren en sensoren (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/geleiders-isolatoren-en-sensoren.html): Geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.
 - [Elektrische veiligheid (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/elektrische-veiligheid.html): Begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.
 
+## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
+- [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
+- [Examenvragen Wiskunde A HAVO](https://slagio.nl/leren/havo/wiskunde-a/examenvragen.html): 13 vragen uit een Slagio-proefexamen
+- [Examenvragen Biologie HAVO](https://slagio.nl/leren/havo/biologie/examenvragen.html): 22 vragen uit een Slagio-proefexamen
+- [Examenvragen Scheikunde HAVO](https://slagio.nl/leren/havo/scheikunde/examenvragen.html): 16 vragen uit een Slagio-proefexamen
+- [Examenvragen Natuurkunde HAVO](https://slagio.nl/leren/havo/natuurkunde/examenvragen.html): 14 vragen uit een Slagio-proefexamen
+- [Examenvragen Bedrijfseconomie HAVO](https://slagio.nl/leren/havo/bedrijfseconomie/examenvragen.html): 13 vragen uit een Slagio-proefexamen
+- [Examenvragen Engels HAVO](https://slagio.nl/leren/havo/engels/examenvragen.html): 10 vragen uit een Slagio-proefexamen
+- [Examenvragen Geschiedenis HAVO](https://slagio.nl/leren/havo/geschiedenis/examenvragen.html): 12 vragen uit een Slagio-proefexamen
+- [Examenvragen Aardrijkskunde HAVO](https://slagio.nl/leren/havo/aardrijkskunde/examenvragen.html): 12 vragen uit een Slagio-proefexamen
+- [Examenvragen Economie HAVO](https://slagio.nl/leren/havo/economie/examenvragen.html): 16 vragen uit een Slagio-proefexamen
+- [Examenvragen Maatschappijwetenschappen HAVO](https://slagio.nl/leren/havo/maatschappijwetenschappen/examenvragen.html): 11 vragen uit een Slagio-proefexamen
+- [Examenvragen Wiskunde B HAVO](https://slagio.nl/leren/havo/wiskunde-b/examenvragen.html): 13 vragen uit een Slagio-proefexamen
+- [Examenvragen Nederlands VWO](https://slagio.nl/leren/vwo/nederlands/examenvragen.html): 16 vragen uit een Slagio-proefexamen
+- [Examenvragen Engels VWO](https://slagio.nl/leren/vwo/engels/examenvragen.html): 21 vragen uit een Slagio-proefexamen
+- [Examenvragen Duits VWO](https://slagio.nl/leren/vwo/duits/examenvragen.html): 21 vragen uit een Slagio-proefexamen
+- [Examenvragen Frans VWO](https://slagio.nl/leren/vwo/frans/examenvragen.html): 21 vragen uit een Slagio-proefexamen
+- [Examenvragen Wiskunde A VWO](https://slagio.nl/leren/vwo/wiskunde-a/examenvragen.html): 8 vragen uit een Slagio-proefexamen
+- [Examenvragen Wiskunde B VWO](https://slagio.nl/leren/vwo/wiskunde-b/examenvragen.html): 8 vragen uit een Slagio-proefexamen
+- [Examenvragen Biologie VWO](https://slagio.nl/leren/vwo/biologie/examenvragen.html): 13 vragen uit een Slagio-proefexamen
+- [Examenvragen Scheikunde VWO](https://slagio.nl/leren/vwo/scheikunde/examenvragen.html): 12 vragen uit een Slagio-proefexamen
+- [Examenvragen Natuurkunde VWO](https://slagio.nl/leren/vwo/natuurkunde/examenvragen.html): 12 vragen uit een Slagio-proefexamen
+- [Examenvragen Economie VWO](https://slagio.nl/leren/vwo/economie/examenvragen.html): 10 vragen uit een Slagio-proefexamen
+- [Examenvragen Aardrijkskunde VWO](https://slagio.nl/leren/vwo/aardrijkskunde/examenvragen.html): 8 vragen uit een Slagio-proefexamen
+- [Examenvragen Geschiedenis VWO](https://slagio.nl/leren/vwo/geschiedenis/examenvragen.html): 10 vragen uit een Slagio-proefexamen
+- [Examenvragen Maatschappijwetenschappen VWO](https://slagio.nl/leren/vwo/maatschappijwetenschappen/examenvragen.html): 6 vragen uit een Slagio-proefexamen
+- [Examenvragen Latijn VWO](https://slagio.nl/leren/vwo/latijn/examenvragen.html): 6 vragen uit een Slagio-proefexamen
+- [Examenvragen Grieks VWO](https://slagio.nl/leren/vwo/grieks/examenvragen.html): 5 vragen uit een Slagio-proefexamen
+- [Examenvragen Informatica VWO](https://slagio.nl/leren/vwo/informatica/examenvragen.html): 8 vragen uit een Slagio-proefexamen
+
 ## Begrippenlijsten
 - [Begrippen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/begrippen.html)
 - [Begrippen Biologie HAVO](https://slagio.nl/leren/havo/biologie/begrippen.html)
