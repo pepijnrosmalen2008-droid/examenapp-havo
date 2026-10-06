@@ -20,7 +20,7 @@ Elke dag pakt een verse sessie **het bovenste openstaande domein** (`- [ ]`) en:
    **Bij een rode poort: niet pushen, wél melden.**
 
 > Volgorde: grootste examenvakken eerst (per vak: havo → vwo → vmbo).
-> Voortgang: **6 / 220** volledig "goud" (leerdoelen + rijke samenvatting; gouden referentie). Pas dit blok bij elke afronding aan.
+> Voortgang: **7 / 220** volledig "goud" (leerdoelen + rijke samenvatting; gouden referentie). Pas dit blok bij elke afronding aan.
 
 ### Tussenstap — brede begrippen-verrijkingsronde (sep 2026)
 Los van de per-domein gouden afronding is er een **horizontale begrippen-pass**
@@ -43,7 +43,7 @@ standaardpoort) groen; sidecar (bi/na/sk) telkens hertagd.
 
 - [x] **HAVO · Nederlands** (`nl`) · domein A — Leesvaardigheid — 7 leerdoelen (reviewed), 42 begrippen, rijke samenvatting; geen bestaande clip van toepassing, 2 CLIP-KANSen gemarkeerd
 - [x] **HAVO · Nederlands** (`nl`) · domein B — Mondelinge taalvaardigheid — 5 leerdoelen (reviewed, SE), 30 begrippen, rijke samenvatting; geen bestaande clip van toepassing, 1 CLIP-KANS gemarkeerd
-- [ ] **HAVO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid
+- [x] **HAVO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid — 6 leerdoelen (reviewed, SE), 23 begrippen, rijke samenvatting; geen bestaande clip van toepassing, 1 CLIP-KANS gemarkeerd
 - [ ] **HAVO · Nederlands** (`nl`) · domein D — Samenvatten
 - [ ] **HAVO · Nederlands** (`nl`) · domein E — Argumentatieve vaardigheden
 - [ ] **HAVO · Nederlands** (`nl`) · domein F — Literatuur

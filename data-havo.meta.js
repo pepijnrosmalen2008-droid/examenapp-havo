@@ -62,9 +62,9 @@ var VAKKEN = [
      "Woordkeuze, stijl en coherentie",
      "Gebruik van signaalwoorden"
     ],
-    "nSv": 105,
+    "nSv": 124,
     "nOe": 4,
-    "nBeg": 20,
+    "nBeg": 23,
     "hasSam": true
    },
    {

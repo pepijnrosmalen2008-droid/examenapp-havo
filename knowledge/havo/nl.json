@@ -516,5 +516,253 @@
     }
    }
   ]
+ },
+ "nl_C": {
+  "syllabus": "Syllabus Nederlands (3F) HAVO - Domein C: Schrijfvaardigheid (schoolexamen)",
+  "leerdoelen": [
+   {
+    "id": "nl.C.1",
+    "titel": "Informatie verzamelen, verwerken en verantwoorden",
+    "eindterm": "C - informatie verzamelen en verwerken",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan relevante informatie uit betrouwbare bronnen verzamelen, in eigen woorden of als citaat verwerken en de bronnen vermelden.",
+    "concepten": [
+     "Gedocumenteerde tekst",
+     "Bronvermelding",
+     "Citaat",
+     "Plagiaat"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "neemt een zin letterlijk over zonder aanhalingstekens of bron",
+     "denkt dat bronvermelding niet nodig is als je een bron in eigen woorden weergeeft"
+    ],
+    "voorkennis": [],
+    "vervolg": [
+     "nl.C.2"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein C (eindterm 5; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-06",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-06",
+     "updated": "2026-10-06",
+     "contentHash": "cf6722e4bce7"
+    }
+   },
+   {
+    "id": "nl.C.2",
+    "titel": "Tekstsoort, doel en lezersgroep afstemmen",
+    "eindterm": "C - doel, publiek en tekstsoort",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan kiezen tussen uiteenzetting, beschouwing en betoog en inhoud en taal afstemmen op doel en lezersgroep.",
+    "concepten": [
+     "Tekstsoort",
+     "Lezersgroep"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "context-transfer",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "schrijft een betoog terwijl een beschouwing is gevraagd",
+     "past woordkeus niet aan op de lezersgroep"
+    ],
+    "voorkennis": [
+     "nl.C.1"
+    ],
+    "vervolg": [
+     "nl.C.3",
+     "nl.C.4"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein C (eindterm 5; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-06",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-06",
+     "updated": "2026-10-06",
+     "contentHash": "4fe9407d35cd"
+    }
+   },
+   {
+    "id": "nl.C.3",
+    "titel": "Een betoog schrijven",
+    "eindterm": "C - betoog schrijven",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een betoog schrijven met een stelling, argumenten, een reactie op een tegenwerping en een conclusie.",
+    "concepten": [
+     "Stelling",
+     "Tegenwerping",
+     "Conclusie"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "antwoord-formuleren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "formuleert een feit of een vraag als stelling",
+     "negeert tegenwerpingen"
+    ],
+    "voorkennis": [
+     "nl.C.2"
+    ],
+    "vervolg": [
+     "nl.C.6"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein C (eindterm 5; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-06",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-06",
+     "updated": "2026-10-06",
+     "contentHash": "8d5dc0fadccc"
+    }
+   },
+   {
+    "id": "nl.C.4",
+    "titel": "Tekst en alinea opbouwen",
+    "eindterm": "C - opbouw en samenhang",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan een tekst opbouwen uit alinea's met een kernzin en uitwerking en samenhang aanbrengen met signaalwoorden en tussenkopjes.",
+    "concepten": [
+     "Alinea",
+     "Openingsalinea",
+     "Slotalinea",
+     "Tussenkopje",
+     "Coherentie"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "antwoord-formuleren",
+    "examenrelevantie": "hoog",
+    "veelgemaakteFouten": [
+     "behandelt meerdere deelonderwerpen in één alinea",
+     "laat de verbanden tussen alinea's onduidelijk"
+    ],
+    "voorkennis": [
+     "nl.C.2"
+    ],
+    "vervolg": [
+     "nl.C.5"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein C (eindterm 5; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-06",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-06",
+     "updated": "2026-10-06",
+     "contentHash": "1f812a7ebf38"
+    }
+   },
+   {
+    "id": "nl.C.5",
+    "titel": "Schrijftaal, stijl en correctheid",
+    "eindterm": "C - conventies voor geschreven taal",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan schrijven in een register dat bij situatie en lezer past, met correcte spelling en interpunctie, ook in een formele brief.",
+    "concepten": [
+     "Schrijftaal",
+     "Spreektaal",
+     "Stijlfout",
+     "Formele brief",
+     "Spelling",
+     "Interpunctie"
+    ],
+    "vaardigheid": "toepassen",
+    "examenskill": "antwoord-formuleren",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "gebruikt spreektaal in een formele tekst",
+     "houdt geen rekening met de aanhef en afsluiting van een formele brief"
+    ],
+    "voorkennis": [
+     "nl.C.4"
+    ],
+    "vervolg": [
+     "nl.C.6"
+    ],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein C (eindterm 5; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-06",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-06",
+     "updated": "2026-10-06",
+     "contentHash": "4826c60ef3e6"
+    }
+   },
+   {
+    "id": "nl.C.6",
+    "titel": "Een tekst reviseren op commentaar",
+    "eindterm": "C - revisie op commentaar",
+    "teVerifiëren": true,
+    "beschrijving": "De kandidaat kan commentaar op een conceptversie beoordelen en de tekst op inhoud, opbouw en taal verbeteren.",
+    "concepten": [
+     "Conceptversie",
+     "Revisie",
+     "Commentaar"
+    ],
+    "vaardigheid": "beoordelen",
+    "examenskill": "antwoord-formuleren",
+    "examenrelevantie": "midden",
+    "veelgemaakteFouten": [
+     "verbetert alleen de spelling en laat inhoud en opbouw ongemoeid",
+     "negeert commentaar zonder dat te motiveren"
+    ],
+    "voorkennis": [
+     "nl.C.3",
+     "nl.C.5"
+    ],
+    "vervolg": [],
+    "bronnen": [
+     {
+      "type": "syllabus",
+      "ref": "CvTE Syllabus Nederlands (3F) havo CE 2027 v2, domein C (eindterm 5; schoolexamen)"
+     }
+    ],
+    "_meta": {
+     "version": 1,
+     "reviewStatus": "reviewed",
+     "lastReviewed": "2026-10-06",
+     "source": "curriculum-factory@1",
+     "created": "2026-10-06",
+     "updated": "2026-10-06",
+     "contentHash": "c39d553e8bc5"
+    }
+   }
+  ]
  }
 }
