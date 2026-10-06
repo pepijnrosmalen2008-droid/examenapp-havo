@@ -3,7 +3,7 @@
 //  Client-side full-text zoek over examens, begrippen, uitleg & oefenvragen.
 //  Index wordt lazy opgebouwd bij eerste opening; ce_data.js lazy geladen.
 // ═══════════════════════════════════════════════════════════
-let _zkPassages=[],_zkAntwT=0;
+let _zkPassages=[],_zkAntwT=0,_zkVast='';
 let _zoekIndex=null,_zoekBuilt=false,_zoekCeLoaded=(typeof CE_OE!=='undefined');
 const _zoekState={all:[],filter:'all',niv:'all',vak:'all',shown:0,toks:[]};
 const _ZK_PAGE=25;
@@ -80,7 +80,7 @@ function buildZoekIndex(){
   _zkIndexVakken(vwo,'vwo',out);
   if(typeof VAKKEN_VMBO!=='undefined'){VAKKEN_VMBO.forEach(v=>vaknaam[v.id]=vaknaam[v.id]||{naam:v.naam,niveau:'vmbo'});_zkIndexVakken(VAKKEN_VMBO,'vmbo',out);}
   // Alinea's uit de rijke samenvattingen: hier komt de uitleg in de antwoordkaart vandaan.
-  _zkPassages=[];
+  _zkPassages=[]; _zkTitels=null;
   if(typeof SAM_RICH!=='undefined'){
     const naamVan={};
     [['havo',havo],['vwo',vwo],['vmbo',(typeof VAKKEN_VMBO!=='undefined')?VAKKEN_VMBO:[]]].forEach(([n,V])=>V.forEach(v=>(v.domeinen||[]).forEach(d=>{
@@ -137,22 +137,34 @@ function buildZoekIndex(){
 }
 
 // ── Zoek doorzoekt beide niveaus + oud-examens: laad alles lazy vóór de index ──
+// Eerst je eigen niveau (dan heb je meteen resultaten), daarna stil de rest:
+// het andere niveau en de oude examens; de index wordt dan opnieuw opgebouwd.
+let _zkRestBezig=false;
 function _zkEnsureData(cb){
-  function loadCe(){
-    if(_zoekCeLoaded||typeof CE_OE!=='undefined'){cb();return;}
+  const niv=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL==='vwo')?'vwo':'havo', ander=niv==='vwo'?'havo':'vwo';
+  const eav=(typeof ensureAllVakData==='function');
+  function loadCe(next){
+    if(_zoekCeLoaded||typeof CE_OE!=='undefined'){next();return;}
     const s=document.createElement('script');s.src='/ce_data.js';
-    s.onload=()=>{_zoekCeLoaded=true;cb();};
-    s.onerror=()=>{_zoekCeLoaded=true;cb();}; // zonder oud-examens is prima
+    s.onload=()=>{_zoekCeLoaded=true;next();};
+    s.onerror=()=>{_zoekCeLoaded=true;next();}; // zonder oud-examens is prima
     document.head.appendChild(s);
   }
-  // De zoekindex omvat álle vragen + samenvattingen; hydrateer beide niveaus volledig
-  // (per-vak vraagbestanden) zodat sv/oe/sam in de index komen. Alleen bij zoekgebruik.
-  const eav=(typeof ensureAllVakData==='function');
-  function sam(){ const n=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo';
-    if(typeof ensureSamData==='function'&&typeof samReady==='function'&&!samReady(n)){ensureSamData(n,loadCe);} else loadCe(); }
-  function vwo(){ if(eav)ensureAllVakData('vwo',sam); else sam(); }
-  function havo(){ if(eav)ensureAllVakData('havo',vwo); else vwo(); }
-  havo();
+  function sam(next){
+    if(typeof ensureSamData==='function'&&typeof samReady==='function'&&!samReady(niv))ensureSamData(niv,next); else next();
+  }
+  function rest(){
+    if(_zkRestBezig)return; _zkRestBezig=true;
+    const klaar=()=>{
+      _zoekBuilt=false; buildZoekIndex();
+      try{const q=document.getElementById('zoek-q'),sc=document.getElementById('sc-zoek');
+        if(q&&q.value&&sc&&sc.classList.contains('on')&&!_zkVast)_zkSearch(q.value);}catch(e){}
+    };
+    const na=()=>loadCe(klaar);
+    if(eav)ensureAllVakData(ander,na); else na();
+  }
+  const eerst=next=>{ if(eav)ensureAllVakData(niv,next); else next(); };
+  eerst(()=>sam(()=>{ cb(); setTimeout(rest,400); }));
 }
 
 // ── Zoeken ──
@@ -332,7 +344,7 @@ function _zkSearch(query){
   if(!_zoekBuilt||!_zoekIndex){tabs.style.display='none';filt.style.display='none';stats.innerHTML='';more.innerHTML='';el.innerHTML='<div class="zk-state"><p>Even laden…</p></div>';return;}
   _zoekState.toks=_zkNorm(query).split(' ').filter(t=>t.length>=2);
   _zoekState.all=_zkRun(_zkTerm(query)||query);_zoekState.filter='all';
-  const antw=document.getElementById('zoek-antw'); if(antw){ clearTimeout(_zkAntwT); _zkAntwT=setTimeout(()=>{antw.innerHTML=_zkAntwoordHtml(query);},260); }
+  const antw=document.getElementById('zoek-antw'); if(antw){ clearTimeout(_zkAntwT); _zkAntwT=setTimeout(()=>{if(_zkVast&&_zkVast===query.trim())return;antw.innerHTML=_zkAntwoordHtml(query);},260); }
   filt.style.display=_zoekState.all.length?'flex':'none';
   if(!_zoekState.all.length){
     tabs.style.display='none';stats.innerHTML='';more.innerHTML='';
@@ -405,8 +417,9 @@ function _zkWire(){
   const SUGG=[['wat is osmose?','biologie'],['wat is inflatie?','economie'],['hoofdgedachte','nederlands'],['drogreden','nederlands'],['elasticiteit','economie'],['afgeleide','wiskunde'],['denaturatie','biologie']];
   chips.innerHTML=SUGG.map(s=>'<button class="zk-chip" data-q="'+s[0]+'">'+s[0]+'<small>'+s[1]+'</small></button>').join('');
   [].forEach.call(chips.querySelectorAll('.zk-chip'),c=>c.onclick=()=>{q.value=c.getAttribute('data-q');_zkSearch(q.value);q.focus();});
-  let deb; q.addEventListener('input',()=>{clearTimeout(deb);const v=q.value;deb=setTimeout(()=>_zkSearch(v),120);});
-  q.addEventListener('keydown',e=>{if(e.key==='Enter'){_zkSaveRecent(q.value);q.blur();}else if(e.key==='Escape'){q.value='';_zkSearch('');}});
+  let deb; q.addEventListener('input',()=>{clearTimeout(deb);const v=q.value;if(_zkVast&&v.trim()!==_zkVast)_zkVast='';deb=setTimeout(()=>_zkSearch(v),90);});
+  q.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();_zkVerstuur();}else if(e.key==='Escape'){q.value='';_zkSearch('');}});
+  const go=document.getElementById('zoek-go'); if(go)go.onclick=_zkVerstuur;
   clr.onclick=()=>{q.value='';_zkSearch('');q.focus();};
   res.addEventListener('click',ev=>{const b=ev.target.closest('.zk-ans-t');if(!b)return;const box=document.getElementById(b.getAttribute('data-t'));if(box)box.classList.toggle('open');});
 }
@@ -442,32 +455,61 @@ function _zkSnippet(text,toks,n){
   const s=text.slice(zinStart>pos?0:zinStart);
   return _zkClip(s,n);
 }
-function _zkAntwoord(query){
+// Woorden die niets zeggen over het onderwerp ("hoe werkt de nier" → "nier").
+const _ZK_STOP=new Set('de het een en of in op aan van voor bij met uit over tot door om te is zijn was wordt worden werd hoe wat waarom wanneer waar wie welke welk doet doen werkt werken gebeurt komt kun kan je jij ik we ze er dat dit die deze niet wel ook nog als dan zo heel meer minder elkaar tussen verschil uitleg leg uitleggen betekent betekenis bedoeld zit zitten'.split(' '));
+function _zkInhoud(term){return term.split(' ').filter(t=>t.length>=3&&!_ZK_STOP.has(t));}
+// heel woord of begin van een woord ("nier" past op "nieren", niet op "manier")
+function _zkWoord(norm,t){return (' '+norm).indexOf(' '+t)>=0;}
+// Typfouten: dichtstbijzijnde begrip (Levenshtein), alleen bij genoeg letters.
+let _zkTitels=null;
+function _zkAfstand(a,b,max){
+  if(Math.abs(a.length-b.length)>max)return max+1;
+  let prev=Array.from({length:b.length+1},(_,j)=>j);
+  for(let i=1;i<=a.length;i++){const cur=[i];let rij=i;
+    for(let j=1;j<=b.length;j++){cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));if(cur[j]<rij)rij=cur[j];}
+    if(rij>max)return max+1; prev=cur;}
+  return prev[b.length];
+}
+function _zkCorrectie(term){
+  if(term.length<5||!_zoekIndex)return null;
+  if(!_zkTitels){const z=new Set();_zoekIndex.forEach(e=>{if(e.type==='begrip'&&e.def&&e.title){const n=_zkNorm(e.title);if(n.length>=4&&n.length<=40)z.add(n);}});_zkTitels=[...z];}
+  const max=term.length>=8?2:1;let best=null,bd=max+1;
+  for(const t of _zkTitels){const d=_zkAfstand(term,t,max);if(d<bd||(d===bd&&best&&t.length<best.length)){bd=d;best=t;if(d===0)break;}}
+  return bd<=max&&best!==term?best:null;
+}
+function _zkAntwoord(query,_geenCorrectie){
   const term=_zkTerm(query); if(!term||term.length<2)return null;
-  const toks=term.split(' ').filter(t=>t.length>=2), niv=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo';
-  // 1. begrip met precies deze term (eigen niveau en leerdoel-modules eerst)
+  const inh=_zkInhoud(term), toks=inh.length?inh:term.split(' ').filter(t=>t.length>=2), niv=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo';
+  // 1. begrip met precies deze term (eigen niveau en leerdoel-modules eerst, korte titels voor)
   let best=null,bs=0;
+  const kern=inh.join(' ')||term;
   (_zoekIndex||[]).forEach(e=>{
     if(e.type!=='begrip'||!e.def||!e.answer)return;
     const tn=_zkNorm(e.title); let s=0;
-    if(tn===term)s=100; else if(tn.split(' ').includes(term)&&term.length>=4)s=55; else if(term.length>=5&&tn.indexOf(term)===0)s=50; else return;
-    if(e.niveau===niv)s+=20; if(e.ld)s+=10;
+    if(tn===term||tn===kern)s=100;
+    else if(kern.length>=4&&(' '+tn+' ').indexOf(' '+kern+' ')>=0)s=55;
+    else if(kern.length>=5&&tn.indexOf(kern)===0)s=50; else return;
+    if(e.niveau===niv)s+=20; if(e.ld)s+=10; s-=Math.min(15,Math.max(0,tn.length-kern.length)/3);
     if(s>bs){bs=s;best=e;}
   });
-  // 2. beste alinea uit een samenvatting
+  // 2. beste alinea uit een samenvatting: alle inhoudswoorden moeten er als woord in staan
   let pas=null,ps=0;
   _zkPassages.forEach(p=>{
     if(best&&p.tabel)return;   // de begrippentabel herhaalt de definitie; liever een alinea met uitleg
-    let s=0,alle=true;
-    if(p.norm.indexOf(term)>=0)s+=30;
-    toks.forEach(t=>{if(p.norm.indexOf(t)>=0)s+=8;else alle=false;});
-    if(!alle&&s<30)return;
+    let s=0;
+    for(const t of toks){if(!_zkWoord(p.norm,t))return;s+=10;}
+    if(p.norm.indexOf(kern)>=0)s+=30;
     if(p.niveau===niv)s+=12; if(p.ld)s+=6;
     if(best&&p.vakId===best.vakId)s+=10;
     if(best&&p.domId===best.domId)s+=10;
     if(s>ps){ps=s;pas=p;}
   });
-  if(!best&&!pas)return {leeg:true,term};
+  if(!best&&!pas){
+    // Typfout? Probeer het dichtstbijzijnde begrip ("osmoze" → "osmose").
+    const c=!_geenCorrectie&&_zkCorrectie(kern);
+    if(c){const r=_zkAntwoord(c,true);if(r&&!r.leeg){r.bedoeld=c;return r;}}
+    return {leeg:true,term};
+  }
   const bron=best||pas;
   return {term,toks,begrip:best,pas,niveau:bron.niveau,vakId:bron.vakId,vak:bron.vak,domId:bron.domId,dom:best?best.dom:pas.dom};
 }
@@ -477,13 +519,15 @@ function _zkAntwoordHtml(query){
   const qEsc=_zkEsc(query);
   try{if(typeof trackEvent==='function'&&!_zkAntwGemeten[query]){_zkAntwGemeten[query]=1;trackEvent('vraag_slagio',{gevonden:!a.leeg,q:String(query).slice(0,80)});}}catch(e){}
   if(a.leeg){
+    const k=_zkAiCache(query);
+    if(k)return _zkAiHtml(query,k);
     return '<div class="zk-antw zk-antw-leeg"><div class="zk-antw-kop">Vraag het Slagio</div>'
-      +'<p>Hier heb ik nog geen uitleg over in de Slagio-stof. Vonk kan je wel verder helpen.</p>'
-      +'<div class="zk-antw-acties"><button class="zk-antw-knop" onclick="_zkVraagVonk()">Vraag het aan Vonk</button></div></div>';
+      +'<p>Dit staat nog niet in de Slagio-stof. Druk op <b>Zoek</b>, dan beantwoordt Vonk je vraag.</p></div>';
   }
   _zkLaatste=a;
   const niv=(a.niveau||'').toUpperCase();
   let html='<div class="zk-antw"><div class="zk-antw-kop">Antwoord uit Slagio<span>'+_zkEsc(a.vak)+(niv?' '+niv:'')+' · '+_zkEsc(a.dom||'')+'</span></div>';
+  if(a.bedoeld)html+='<p class="zk-bedoeld">Bedoelde je <b>'+_zkEsc(a.bedoeld)+'</b>?</p>';
   if(a.begrip)html+='<p class="zk-antw-def"><b>'+_zkEsc(a.begrip.title)+'</b>: '+_zkEsc(a.begrip.answer)+'</p>';
   if(a.pas&&(!a.begrip||_zkNorm(a.pas.text).indexOf(_zkNorm(a.begrip.answer).slice(0,40))<0))html+='<p class="zk-antw-pas">'+_zkHl(_zkSnippet(a.pas.text,a.toks,340),a.toks)+'</p>';
   const g="zoekGoto('"+(a.niveau||'')+"','"+a.vakId+"',";
@@ -514,3 +558,77 @@ function _zkVraagVonk(){
     setTimeout(function(){i=(i+1)%VB.length;el.textContent=VB[i];el.classList.remove('weg');el.classList.add('komt');void el.offsetWidth;el.classList.remove('komt');},360);
   },3600);
 })();
+
+// ═══════ VRAAG HET SLAGIO: AI ALS DE STOF HET NIET WEET ═══════
+// Alleen na een bewuste zoekactie (Enter of de Zoek-knop), nooit tijdens het typen:
+// dat scheelt AI-tokens en halve antwoorden. De AI beantwoordt alleen leer- en
+// examenvragen; de rest krijgt een vriendelijk nee. Antwoorden worden lokaal
+// bewaard, zodat dezelfde vraag niet nog een keer een AI-aanroep kost.
+const _ZK_AI_KEY='slagio_zoek_ai_v1', _ZK_NEE='[GEEN_LEERVRAAG]';
+function _zkAiSleutel(q){return (typeof APP_LEVEL!=='undefined'?APP_LEVEL:'')+'|'+_zkNorm(q);}
+function _zkAiCache(q,zet){
+  let m={};try{m=JSON.parse(localStorage.getItem(_ZK_AI_KEY)||'{}')||{};}catch(e){}
+  const k=_zkAiSleutel(q);
+  if(zet===undefined)return m[k]||null;
+  m[k]=zet;const ks=Object.keys(m);if(ks.length>60)ks.sort((a,b)=>(m[a].ts||0)-(m[b].ts||0)).slice(0,ks.length-60).forEach(x=>delete m[x]);
+  try{localStorage.setItem(_ZK_AI_KEY,JSON.stringify(m));}catch(e){}
+}
+// Snelle voorfilter: dingen die duidelijk geen leervraag zijn, gaan niet naar de AI.
+const _ZK_NIET=/\b(seks|sex|porno|naakt|drugs|wiet|wapen|bom maken|hack|wachtwoord|cheat|spieken|antwoorden van de toets|uitslag|wk|ek|champions league|eredivisie|tiktok|fortnite|roblox|minecraft|instagram|snapchat|crush|verliefd|vriendin|vriendje|rijk worden|bitcoin|crypto|gokken|casino)\b/;
+function _zkVerstuur(){
+  const inp=document.getElementById('zoek-q'); const q=(inp&&inp.value||'').trim();
+  if(!q)return;
+  _zkVast=q;
+  _zkSaveRecent(q);
+  try{inp.blur();}catch(e){}
+  const antw=document.getElementById('zoek-antw'); if(!antw)return;
+  clearTimeout(_zkAntwT);
+  if(!_zoekBuilt){antw.innerHTML='<div class="zk-antw"><p>Even laden…</p></div>';_zkEnsureData(()=>{buildZoekIndex();_zkVerstuur();});return;}
+  const a=_zkAntwoord(q);
+  if(a&&!a.leeg){antw.innerHTML=_zkAntwoordHtml(q);return;}
+  // App-onderdeel ("foutenboek") is geen vraag voor de AI
+  if(_zkApp(q).length&&q.split(/\s+/).length<=3){antw.innerHTML='';return;}
+  _zkAi(q);
+}
+async function _zkAi(q){
+  const antw=document.getElementById('zoek-antw');
+  const k=_zkAiCache(q); if(k){antw.innerHTML=_zkAiHtml(q,k);return;}
+  const qn=_zkNorm(q);
+  if(qn.replace(/[^a-z]/g,'').length<3||_ZK_NIET.test(qn)){antw.innerHTML=_zkAiHtml(q,{nee:1});try{trackEvent('vraag_slagio_ai',{uitkomst:'nee_filter',q:q.slice(0,80)});}catch(e){}return;}
+  const vonk=(typeof mascotSVG==='function')?mascotSVG('denk',56):'';
+  antw.innerHTML='<div class="zk-antw zk-ai zk-ai-laden"><div class="zk-ai-vonk">'+vonk+'</div><div><div class="zk-antw-kop">Vonk zoekt het uit…</div><div class="zk-ai-stip"><i></i><i></i><i></i></div></div></div>';
+  // De best passende Slagio-stof gaat als bron mee, zodat het antwoord aansluit.
+  let bron='';try{const r=_zkRun(_zkTerm(q)||q).filter(e=>e.answer||e.type==='begrip').slice(0,3);bron=r.map(e=>(e.title||'')+': '+_zkClip(_zkStrip(e.answer||''),260)).join('\n');}catch(e){}
+  const niv=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo';
+  const prompt='[Vraag via de zoekfunctie van Slagio, een examentrainer. Regels: 1) Gaat de vraag over schoolstof, het eindexamen ('+niv+') of over leren en studeren? Beantwoord hem dan juist en kort: eerst de kern in één of twee zinnen, daarna hooguit een korte uitleg of voorbeeld, samen maximaal 110 woorden. 2) Gaat de vraag over iets anders (privé, roddels, sport, games, geld verdienen, iets maken of doen dat niets met leren te maken heeft, of iets ongepasts), antwoord dan alleen met '+_ZK_NEE+' en verder niets. 3) Weet je het niet zeker, zeg dat eerlijk.]'
+    +(bron?'\n[Mogelijk passende Slagio-stof:]\n'+bron:'')+'\n\nVraag: '+q;
+  let res=null;try{res=await aiVonkChat([{role:'user',content:prompt}],{niveau:niv,onderwerp:'Vraag het Slagio',zoek:true});}catch(e){res={error:true};}
+  // Is er intussen iets anders gezocht? Dan dit antwoord niet meer tonen.
+  if(((document.getElementById('zoek-q')||{}).value||'').trim()!==q)return;
+  let uit;
+  if(res&&res.text){
+    const t=String(res.text).trim();
+    uit=t.indexOf(_ZK_NEE)>=0?{nee:1,ts:Date.now()}:{t,ts:Date.now()};
+    _zkAiCache(q,uit);
+    try{trackEvent('vraag_slagio_ai',{uitkomst:uit.nee?'nee':'antwoord',q:q.slice(0,80)});}catch(e){}
+  }else if(res&&res.login)uit={login:1};
+  else if(res&&res.limit)uit={limit:1};
+  else uit={fout:1};
+  antw.innerHTML=_zkAiHtml(q,uit);
+}
+function _zkAiHtml(q,u){
+  const vonk=(typeof mascotSVG==='function')?mascotSVG(u.nee?'denk':(u.t?'blij':'kijk'),56):'';
+  const kop=(t,s)=>'<div class="zk-antw zk-ai"><div class="zk-ai-vonk">'+vonk+'</div><div class="zk-ai-inh"><div class="zk-antw-kop">'+t+(s?'<span>'+s+'</span>':'')+'</div>';
+  if(u.nee)return kop('Daar help ik je niet mee')+'<p>Ik beantwoord vragen over je vakken en het examen. Vraag bijvoorbeeld: <i>wat is osmose?</i> of <i>hoe bereken je de molmassa?</i></p></div></div>';
+  if(u.login)return kop('Vonk beantwoordt je vraag')+'<p>Dit staat nog niet in de Slagio-stof. Met een gratis account beantwoordt Vonk het voor je.</p><div class="zk-antw-acties"><button class="zk-antw-knop" onclick="try{switchAuthTab&&switchAuthTab(\'register\')}catch(e){};show(\'sc-auth\')">Gratis account maken</button></div></div></div>';
+  if(u.limit)return kop('Je AI-vragen zijn op')+'<p>Je gratis vragen aan Vonk voor deze week zijn op. Volgende week kun je weer, of probeer het met andere woorden in de Slagio-stof.</p></div></div>';
+  if(u.fout)return kop('Vonk is even niet bereikbaar')+'<p>Probeer het zo nog eens.</p><div class="zk-antw-acties"><button class="zk-antw-knop" onclick="_zkVerstuur()">Opnieuw</button></div></div></div>';
+  const tekst=(typeof _vchatMd==='function')?_vchatMd(u.t):_zkEsc(u.t).replace(/\n/g,'<br>');
+  return kop('Antwoord van Vonk','AI')+'<div class="zk-ai-tekst">'+tekst+'</div>'
+    +'<div class="zk-antw-acties"><button class="zk-antw-knop" onclick="_zkAiDoor()">Vraag door aan Vonk</button></div>'
+    +'<p class="zk-ai-let">Vonk is een AI en kan zich vergissen. Check het in je lesstof.</p></div></div>';
+}
+function _zkAiDoor(){
+  const q=((document.getElementById('zoek-q')||{}).value||'').trim();const k=_zkAiCache(q);
+  try{openVonkChat({onderwerp:'Vraag het Slagio',bron:k&&k.t?('Eerdere vraag: '+q+'\nAntwoord van Vonk: '+k.t).slice(0,1200):''});}catch(e){}
+}

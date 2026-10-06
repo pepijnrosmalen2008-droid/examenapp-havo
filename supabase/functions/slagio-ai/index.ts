@@ -318,11 +318,22 @@ async function handleChat(p: any): Promise<Result> {
     `5. Blijf bij de examenstof en het vak. Vraagt de leerling iets dat niets met leren te maken heeft, breng het vriendelijk terug naar de stof.\n` +
     `6. Sluit af en toe af met een mini-check ("Snap je deze stap?") of een concrete tip. Schrijf altijd in het Nederlands.\n` +
     `7. Schrijf met gewone leestekens. Gebruik NOOIT een gedachtestreepje (—); splits in plaats daarvan de zin op of gebruik een komma of dubbele punt.`;
+  // Vraag het Slagio (p.zoek): één losse vraag uit de zoekbalk. Strenger: alleen
+  // leer- en examenvragen, kort antwoord, anders exact [GEEN_LEERVRAAG].
+  const zoekSystem =
+    `Je bent Vonk, de studiecoach van Slagio, een examentrainer voor havo, vwo en vmbo. ` +
+    `Een ${niveau}-leerling stelt een vraag via de zoekfunctie.\n\n` +
+    `REGELS:\n` +
+    `1. Beantwoord ALLEEN vragen over schoolstof, het eindexamen of leren en studeren. ` +
+    `Bij alles anders (privé, relaties, roddels, sport, games, geld verdienen, opdrachten die niets met leren te maken hebben, of iets ongepasts of gevaarlijks) ` +
+    `antwoord je exact met [GEEN_LEERVRAAG] en verder niets.\n` +
+    `2. Geef eerst de kern in één of twee zinnen, daarna hooguit een korte uitleg of voorbeeld. Maximaal 110 woorden.\n` +
+    `3. Wees feitelijk juist; weet je het niet zeker, zeg dat. Schrijf in het Nederlands, zonder gedachtestreepjes.`;
   try {
     const resp = await fetch(ANTHROPIC_URL, {
       method: "POST",
       headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01" },
-      body: JSON.stringify({ model: MODEL, max_tokens: 600, system, messages: msgs }),
+      body: JSON.stringify({ model: MODEL, max_tokens: p.zoek ? 350 : 600, system: p.zoek ? zoekSystem : system, messages: p.zoek ? msgs.slice(-1) : msgs }),
     });
     if (!resp.ok) return { status: 502, body: { error: "AI-fout" }, charged: false };
     const data = await resp.json().catch(() => null);

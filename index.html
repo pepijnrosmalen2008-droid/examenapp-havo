@@ -805,7 +805,12 @@
 <div class="w"><div class="hm-tegels">
   <button class="hm-tegel ms-g-leer" onclick="openExamenBieb()"><span class="ms-art" data-art="examens"></span><b>Examens</b><small>alle jaren</small></button>
   <button class="hm-tegel ht-tr" onclick="openExamentrainer()"><span class="ms-art" data-art="trainer"></span><b>Trainer</b><small>jouw cijfer</small></button>
-  <button class="hm-tegel ht-ar" onclick="arcadeOpen()"><span class="ms-art ht-art"><img src="/img/arcade-clash.webp" alt="" decoding="async" loading="lazy"></span><b>Arcade</b><small>speel en leer</small></button>
+  <button class="hm-tegel ht-ar" onclick="arcadeOpen()" aria-label="Open de Arcade: Clash, Kingdom en zes minigames">
+    <span class="ht-ar-bg" aria-hidden="true"></span><span class="ht-ar-glans" aria-hidden="true"></span>
+    <img class="ht-ar-boss" src="/img/arc-boss.webp" alt="" decoding="async" loading="lazy">
+    <span class="ht-ar-t"><small>Arcade</small><b>Leren dat voelt als spelen</b><span>Clash, Kingdom en 6 minigames</span></span>
+    <span class="ht-ar-go" aria-hidden="true">Speel<svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span>
+  </button>
 </div></div>
 <!-- TERUGKEER-KAART (Vonk + slim bericht, alleen bij een echte reden) -->
 <div class="w"><div id="comeback-card-home"></div></div>
@@ -964,8 +969,9 @@
   <div class="zoek-search">
     <div class="zoek-search-inner">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <input id="zoek-q" type="search" placeholder="Vraag of zoek: wat is osmose?" autocomplete="off" spellcheck="false" aria-label="Zoeken">
+      <input id="zoek-q" type="search" enterkeyhint="search" placeholder="Vraag of zoek: wat is osmose?" autocomplete="off" spellcheck="false" aria-label="Zoeken">
       <button class="zoek-clr" id="zoek-clr" aria-label="Wissen"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <button class="zoek-go" id="zoek-go" type="button">Zoek</button>
     </div>
   </div>
   <div class="zoek-chips" id="zoek-chips"></div>
