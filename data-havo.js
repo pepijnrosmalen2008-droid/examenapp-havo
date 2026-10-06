@@ -3111,6 +3111,706 @@ var VAKKEN = [
       "t": "Parafrase",
       "d": "iets in eigen woorden weergeven"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "nl.A.1",
+      "gs": 2,
+      "naam": "Tekstsoort en schrijfdoel bepalen",
+      "beschrijving": "Je herkent of een tekst uiteenzettend, beschouwend of betogend is en je bepaalt wat de schrijver met de tekst wil bereiken.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De drie tekstsoorten herkennen",
+       "Het schrijfdoel bij elke tekstsoort",
+       "Mengvormen: het belangrijkste doel",
+       "Kenmerken waaraan je de soort ziet",
+       "Tekstgedeelte of hele tekst",
+       "Valkuilen bij het bepalen"
+      ],
+      "sam": "Examenteksten zijn uiteenzettend, beschouwend of betogend. Een uiteenzetting legt uit en wil informeren, een beschouwing biedt opvattingen ter overweging aan en laat de lezer nadenken, een betoog verdedigt een standpunt met argumenten om te overtuigen of tot actie aan te zetten. Bij een mengvorm bepaal je het belangrijkste schrijfdoel.",
+      "begrippen": [
+       {
+        "t": "Tekstsoort",
+        "d": "Het type tekst volgens het examen: uiteenzettend, beschouwend of betogend."
+       },
+       {
+        "t": "Uiteenzettende tekst",
+        "d": "Een tekst waarin iets wordt uitgelegd, beschreven, verklaard of meegedeeld om de lezer te informeren."
+       },
+       {
+        "t": "Beschouwende tekst",
+        "d": "Een tekst die interpretaties, verklaringen en opinies ter overweging aanbiedt, zonder de lezer voor één standpunt te winnen."
+       },
+       {
+        "t": "Betogende tekst",
+        "d": "Een tekst waarin een beargumenteerd standpunt wordt ingenomen om de lezer te overtuigen."
+       },
+       {
+        "t": "Schrijfdoel",
+        "d": "Wat de schrijver met de tekst of het tekstgedeelte wil bereiken."
+       },
+       {
+        "t": "Informeren",
+        "d": "De lezer iets laten weten over een stand van zaken of gang van zaken."
+       },
+       {
+        "t": "Ter overweging aanbieden",
+        "d": "De lezer opvattingen voorleggen om over na te denken."
+       },
+       {
+        "t": "Overtuigen",
+        "d": "De lezer van een standpunt proberen te winnen."
+       },
+       {
+        "t": "Tot actie aanzetten",
+        "d": "De lezer ertoe brengen om iets te gaan doen."
+       },
+       {
+        "t": "Standpunt",
+        "d": "Een uitspraak waarover meningen kunnen verschillen en die de schrijver verdedigt."
+       },
+       {
+        "t": "Tekstgedeelte",
+        "d": "Een deel van een tekst, zoals een alinea, met een eigen tekstsoort of schrijfdoel."
+       },
+       {
+        "t": "Mengvorm",
+        "d": "Een tekst of tekstgedeelte waarin meerdere schrijfdoelen voorkomen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke tekstsoort legt iets uit, beschrijft iets of deelt iets mee?",
+        "o": [
+         "de betogende tekst",
+         "de uiteenzettende tekst",
+         "de beschouwende tekst",
+         "de verhalende of vertellende tekst"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een uiteenzetting legt uit, beschrijft, verklaart of deelt mee en wil informeren.",
+        "uo": [
+         "Koos je betogend? Dan denk je dat elke tekst met feiten een betoog is. Een betoog gebruikt feiten alleen als argument voor een standpunt. Wie vooral uitlegt of meedeelt, schrijft een uiteenzetting.",
+         "Klopt: uitleggen, beschrijven, verklaren en meedelen horen bij een uiteenzetting. De schrijver wil de lezer informeren over een stand van zaken.",
+         "Koos je beschouwend? Een beschouwing biedt interpretaties en opinies aan om over na te denken. Dat is meer dan feitelijk uitleggen. Zonder opvattingen die worden afgewogen is het geen beschouwing.",
+         "Koos je verhalend? Een verhaal vertelt een gebeurtenis, maar dat is geen tekstsoort van het examen. De examenteksten zijn uiteenzettend, beschouwend of betogend; uitleggen hoort bij de eerste."
+        ],
+        "uh": "Uitleggen = uiteenzetten, afwegen = beschouwen, verdedigen = betogen."
+       },
+       {
+        "v": "Welke tekstsoort wil de lezer vooral van een standpunt overtuigen?",
+        "o": [
+         "de uiteenzettende tekst",
+         "de beschouwende tekst",
+         "de instructieve tekst",
+         "de betogende tekst"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Een betoog verdedigt een beargumenteerd standpunt en wil de lezer overtuigen.",
+        "uo": [
+         "Koos je uiteenzettend? Dan denk je dat feiten genoeg zijn om te overtuigen. Een uiteenzetting wil alleen informeren. Zodra de schrijver een standpunt verdedigt, is het een betoog.",
+         "Koos je beschouwend? Een beschouwing noemt ook opvattingen, maar wil de lezer niet voor één kant winnen. De lezer moet zelf nadenken. Overtuigen hoort bij een betoog.",
+         "Koos je instructief? Een instructie vertelt wat je stap voor stap moet doen, zoals een handleiding. Dat is geen tekstsoort van het examen en het is ook geen verdediging van een standpunt.",
+         "Klopt: in een betoog neemt de schrijver een beargumenteerd standpunt in. Het doel is dat de lezer dat standpunt overneemt."
+        ],
+        "uh": "Standpunt + argumenten + overtuigen = betoog."
+       },
+       {
+        "v": "Wat is het schrijfdoel van een uiteenzettende tekst?",
+        "o": [
+         "de lezer informeren over een stand van zaken",
+         "de lezer van een standpunt overtuigen",
+         "de lezer een kwestie ter overweging voorleggen",
+         "de lezer tot actie aanzetten"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Het schrijfdoel van een uiteenzetting is informeren over een stand of gang van zaken.",
+        "uo": [
+         "Klopt: een uiteenzetting wil de lezer iets laten weten of begrijpen. Er wordt geen standpunt verdedigd en geen kwestie afgewogen.",
+         "Koos je overtuigen? Dat hoort bij een betoog. Een uiteenzetting wil alleen laten weten hoe iets zit; zodra een standpunt wordt verdedigd, verandert het doel en de tekstsoort.",
+         "Koos je ter overweging aanbieden? Dat is het doel van een beschouwing, waarin opvattingen worden afgewogen. Een uiteenzetting stelt vast hoe iets is of gaat, zonder afweging.",
+         "Koos je tot actie aanzetten? Een oproep om iets te doen past bij een betoog. Een uiteenzetting laat de lezer niets doen, maar iets weten."
+        ],
+        "uh": "Uiteenzetting = informeren."
+       },
+       {
+        "v": "Welk schrijfdoel hoort bij een beschouwing?",
+        "o": [
+         "de lezer een standpunt met argumenten opdringen",
+         "de lezer feitelijke gegevens en uitleg meedelen",
+         "de lezer opvattingen ter overweging aanbieden",
+         "de lezer vermaken met een verhaal"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Een beschouwing biedt opvattingen ter overweging aan en laat de lezer nadenken.",
+        "uo": [
+         "Koos je een standpunt opdringen? Dat doet een betoog. Een beschouwing mag argumenten voor en tegen noemen, maar is er niet op gericht de lezer voor één standpunt te winnen.",
+         "Koos je feiten meedelen? Dat is informeren, het doel van een uiteenzetting. Een beschouwing gaat verder: zij legt ook opvattingen en verklaringen voor.",
+         "Klopt: een beschouwing biedt interpretaties, verklaringen en opinies aan om de lezer te laten nadenken. De lezer moet zelf kiezen.",
+         "Koos je vermaken? Dat is geen schrijfdoel van de drie examentekstsoorten. Een beschouwing wil laten nadenken over een kwestie, niet in de eerste plaats vermaken."
+        ],
+        "uh": "Beschouwing = ter overweging aanbieden."
+       },
+       {
+        "v": "Een tekst eindigt met: \"Teken daarom vandaag de petitie.\" Welk schrijfdoel past hierbij?",
+        "o": [
+         "alleen de lezer informeren",
+         "de lezer ter overweging iets voorleggen",
+         "overtuigen en tot actie aanzetten",
+         "de lezer uitleggen hoe een petitie werkt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Een oproep om iets te doen hoort bij het doel overtuigen en tot actie aanzetten.",
+        "uo": [
+         "Koos je informeren? Een oproep om iets te doen gaat verder dan iets meedelen. De schrijver wil dat de lezer in beweging komt; dat is een kenmerk van een betoog.",
+         "Koos je ter overweging aanbieden? Dan zou de schrijver de lezer laten kiezen. Hier staat een duidelijke opdracht: teken. Dat past niet bij afwegen maar bij overtuigen.",
+         "Klopt: de schrijver vraagt de lezer iets te doen. Bij een betoog horen de doelen overtuigen en tot actie aanzetten.",
+         "Koos je uitleggen? De zin legt niets uit over een petitie, maar vraagt de lezer te tekenen. Het gaat om de bedoeling van de schrijver, niet om het onderwerp."
+        ],
+        "uh": "Oproep = betoog: overtuigen of tot actie aanzetten."
+       },
+       {
+        "v": "Een tekst legt uitgebreid uit hoe zonne-energie werkt en eindigt met één oproep. Wat bepaal je?",
+        "o": [
+         "welk schrijfdoel het belangrijkste is",
+         "dat de oproep de rest ongeldig maakt",
+         "dat de tekst twee tekstsoorten tegelijk is",
+         "dat de tekst fout geschreven is"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Bij een mengvorm stel je vast welk schrijfdoel het belangrijkste is.",
+        "uo": [
+         "Klopt: schrijfdoelen kunnen samen voorkomen. Je stelt vast welk doel de tekst of het tekstgedeelte voornamelijk dient.",
+         "Koos je dit? Dan denk je dat één zin de hele tekst bepaalt. Je kijkt naar het geheel: als het grootste deel uitlegt, kan het hoofddoel informeren blijven.",
+         "Koos je dit? Een tekst heeft een voornaamste karakter, ook al zitten er twee doelen in. De vraag is welk doel zwaarder weegt, niet of je twee etiketten mag plakken.",
+         "Koos je dit? Mengvormen komen veel voor en zijn niet fout. Je moet alleen kunnen aangeven welk doel overheerst."
+        ],
+        "uh": "Mengvorm: kies het zwaarste doel."
+       },
+       {
+        "v": "Een tekst noemt twee meningen van anderen. Is hij daardoor een betoog?",
+        "o": [
+         "ja, meningen noemen maakt een tekst automatisch betogend",
+         "ja, maar dan moeten er ook cijfers in staan",
+         "nee, een betoog mag geen meningen van anderen bevatten",
+         "nee, het gaat om wat de schrijver zelf wil bereiken"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Het schrijfdoel bepaalt de tekstsoort, niet het noemen van meningen.",
+        "uo": [
+         "Koos je ja? Meningen noemen is niet hetzelfde als een standpunt verdedigen. Een uiteenzetting kan melden wat anderen vinden zonder partij te kiezen.",
+         "Koos je dit? Cijfers zijn feiten en maken van een tekst geen betoog. Het doel van de schrijver bepaalt de soort, niet het soort gegevens.",
+         "Koos je dit? Een betoog verdedigt juist een standpunt, en dat is een mening die met argumenten wordt onderbouwd. Het verschil zit in verdedigen of voorleggen.",
+         "Klopt: meningen van anderen kunnen ook in een uiteenzetting of beschouwing staan. Voor een betoog verdedigt de schrijver zelf een standpunt."
+        ],
+        "uh": "Meningen noemen is geen betogen."
+       },
+       {
+        "v": "Welk kenmerk past bij een beschouwende tekst?",
+        "o": [
+         "één standpunt wordt met argumenten verdedigd",
+         "meerdere opvattingen worden aangeboden en afgewogen",
+         "er staan alleen neutrale feiten in",
+         "de tekst eindigt altijd met een oproep"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Een beschouwing biedt opvattingen ter overweging aan.",
+        "uo": [
+         "Koos je dit? Dat is het kenmerk van een betoog. Een beschouwing kan argumenten voor en tegen noemen, maar is er niet op gericht de lezer te winnen.",
+         "Klopt: in een beschouwing worden interpretaties, verklaringen en opinies ter overweging aangeboden. De lezer moet er zelf over nadenken.",
+         "Koos je dit? Dat past bij een uiteenzetting. Een beschouwing bevat ook opvattingen en verklaringen om over na te denken.",
+         "Koos je dit? Een oproep hoort bij tot actie aanzetten, het doel van een betoog. Een beschouwing laat de lezer zelf bepalen wat hij ermee doet."
+        ],
+        "uh": "Meerdere kanten, geen winnaar."
+       },
+       {
+        "v": "Waaraan herken je een betoog het snelst?",
+        "o": [
+         "aan veel cijfers, jaartallen en gegevens uit onderzoek",
+         "aan een lange inleiding",
+         "aan een titel met een vraagteken",
+         "aan een standpunt dat met argumenten wordt verdedigd"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Een betoog herken je aan een standpunt met argumenten.",
+        "uo": [
+         "Koos je cijfers? Gegevens staan ook in uiteenzettingen. Cijfers kunnen in een betoog als argument dienen, maar bewijzen de soort niet.",
+         "Koos je dit? De lengte van een inleiding zegt niets over het doel. Ook uiteenzettingen en beschouwingen hebben een inleiding.",
+         "Koos je dit? Een titel met een vraag past ook bij een beschouwing of een uiteenzetting. Kijk naar wat de schrijver in de tekst zelf doet, niet naar de titel.",
+         "Klopt: een betoog bestaat uit een standpunt en argumenten die de lezer moeten overtuigen. Dat zie je in de tekst zelf."
+        ],
+        "uh": "Zoek: standpunt + argumenten."
+       },
+       {
+        "v": "Kan een tekstgedeelte een andere tekstsoort hebben dan de hele tekst?",
+        "o": [
+         "nee, alle alinea's hebben dezelfde tekstsoort",
+         "ja, een alinea kan uitleggen terwijl de tekst betoogt",
+         "ja, maar dan telt alleen de inleiding van de tekst mee",
+         "nee, de tekstsoort staat in de titel"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Tekstsoort en schrijfdoel kunnen per tekstgedeelte verschillen.",
+        "uo": [
+         "Koos je nee? Dan denk je dat de soort van de tekst voor elke alinea geldt. Teksten mengen vaak: een alinea kan uitleggen terwijl het geheel een betoog is.",
+         "Klopt: tekstsoort en schrijfdoel kunnen per tekstgedeelte verschillen. Daarom bekijk je bij een vraag over een gedeelte dat gedeelte zelf.",
+         "Koos je dit? Elk tekstgedeelte kan een eigen doel hebben, niet alleen de inleiding. Een examenvraag kan over elke alinea gaan.",
+         "Koos je dit? De titel kan iets verraden, maar de tekstsoort volgt uit wat de schrijver in de tekst doet. Lees het gedeelte zelf."
+        ],
+        "uh": "Vraag over een alinea: beoordeel die alinea."
+       },
+       {
+        "v": "Welke titel past het best bij een betoog?",
+        "o": [
+         "\"Hoe werkt vuurwerk eigenlijk?\"",
+         "\"Vuurwerk: wat pleit ervoor en wat pleit ertegen?\"",
+         "\"Verbied vuurwerk: het is tijd voor iets nieuws\"",
+         "\"Een avond op het Malieveld\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Een titel met een standpunt of oproep wijst op een betoog.",
+        "uo": [
+         "Koos je dit? Deze titel kondigt uitleg aan. Dat past bij een uiteenzetting die het hoe en waarom laat zien, zonder een standpunt te verdedigen.",
+         "Koos je dit? Voor en tegen op een rij zetten past bij een beschouwing. De lezer moet zelf wegen; er wordt geen standpunt verdedigd.",
+         "Klopt: de titel bevat een standpunt (verbieden) en een oproep. Dat past bij een tekst die de lezer wil overtuigen.",
+         "Koos je dit? Dit klinkt als een verslag of reportage. Het kondigt geen standpunt, uitleg of afweging aan en past dus niet bij de examentekstsoorten."
+        ],
+        "uh": "Titel + standpunt = betoog."
+       },
+       {
+        "v": "Welke tekstsoort is dit fragment?",
+        "o": [
+         "uiteenzettend",
+         "betogend, met een standpunt",
+         "beschouwend, met meer kanten",
+         "een oproep aan de lezer"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Een fragment dat een gang van zaken uitlegt zonder standpunt is uiteenzettend.",
+        "uo": [
+         "Klopt: het fragment legt uit hoe een zonnepaneel werkt en neemt geen standpunt in. Het doel is informeren.",
+         "Koos je betogend? Er staat geen standpunt en geen argument voor een standpunt, alleen uitleg. Feiten maken een tekst niet betogend.",
+         "Koos je beschouwend? Er worden geen opvattingen of opinies afgewogen. De schrijver legt een gang van zaken uit.",
+         "Koos je een oproep? Er wordt de lezer niets gevraagd of opgedragen. Het fragment beschrijft alleen hoe het werkt."
+        ],
+        "uh": "Uitleg zonder standpunt = uiteenzetting.",
+        "ctx": "Een zonnepaneel zet zonlicht om in elektriciteit. In de zonnecellen maakt het licht elektronen los, waardoor er stroom gaat lopen. De stroom gaat via een omvormer naar het stopcontact in huis."
+       },
+       {
+        "v": "Waaraan zie je dat dit een betoog is?",
+        "o": [
+         "er wordt een standpunt met argumenten verdedigd",
+         "er worden cijfers en onderzoek genoemd",
+         "de schrijver beschrijft hoe telefoons werken",
+         "de schrijver weegt twee kanten uitgebreid tegen elkaar af"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Een standpunt dat met argumenten wordt verdedigd, kenmerkt een betoog.",
+        "uo": [
+         "Klopt: het standpunt is dat telefoons verboden moeten worden. Daarna volgen argumenten (aandacht, rust). Dat is wat een betoog doet.",
+         "Koos je dit? De enquête is een argument, maar ook uiteenzettingen noemen onderzoek. De soort volgt uit het standpunt dat verdedigd wordt.",
+         "Koos je dit? Dat staat er niet. Er wordt niets uitgelegd over de werking; de schrijver wil dat iets verandert.",
+         "Koos je dit? Er komt maar één kant aan bod: het verbod. Bij afwegen worden meerdere opvattingen naast elkaar gelegd."
+        ],
+        "uh": "Standpunt + argumenten.",
+        "ctx": "Scholen moeten telefoons in de les verbieden. Leerlingen letten dan beter op, want elk geluidje trekt nu hun aandacht. Bovendien zegt de meerderheid van de docenten in een enquête dat de rust in de klas dan terugkeert."
+       },
+       {
+        "v": "Welk schrijfdoel past het best bij dit fragment?",
+        "o": [
+         "de lezer overtuigen dat vlees duurder moet worden",
+         "de lezer informeren over de prijs van vlees",
+         "de lezer ter overweging een kwestie voorleggen",
+         "de lezer tot actie aanzetten"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Een tekst die kanten afweegt zonder te kiezen biedt een kwestie ter overweging aan.",
+        "uo": [
+         "Koos je overtuigen? De schrijver noemt voor- en tegenstanders en kiest geen kant. Er is dus geen standpunt dat verdedigd wordt.",
+         "Koos je informeren? Er worden geen prijzen of feiten uitgelegd, maar opvattingen genoemd. Het gaat om een kwestie waarover je moet nadenken.",
+         "Klopt: beide kanten krijgen aandacht en de schrijver kiest niet. De lezer moet zelf wegen, en dat is ter overweging aanbieden.",
+         "Koos je tot actie aanzetten? Er staat geen oproep of opdracht. De laatste zin laat de keuze juist aan de lezer."
+        ],
+        "uh": "Wegen zonder kiezen = ter overweging.",
+        "ctx": "Moet de overheid vlees duurder maken? Voorstanders wijzen op het klimaat, tegenstanders op de portemonnee van gezinnen met een laag inkomen. Welke kant zwaarder weegt, hangt af van wat je het belangrijkst vindt."
+       },
+       {
+        "v": "Het fragment begint met een feit. Wat is het belangrijkste schrijfdoel?",
+        "o": [
+         "de lezer informeren over diefstallen",
+         "overtuigen en tot actie aanzetten",
+         "de lezer ter overweging een kwestie voorleggen",
+         "de lezer vermaken"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een feit kan als argument dienen voor een standpunt; dan overheerst overtuigen.",
+        "uo": [
+         "Koos je informeren? Het eerste feit is waar, maar de tekst blijft er niet bij. Na het feit volgt een oordeel en een eis, en daar draait de tekst om.",
+         "Klopt: het feit dient als argument. De schrijver trekt een conclusie en eist iets van de gemeente, dus het gaat om overtuigen en actie.",
+         "Koos je dit? Er worden geen verschillende opvattingen naast elkaar gelegd. De schrijver kiest duidelijk een kant.",
+         "Koos je vermaken? Daar wijst niets op. De toon is stellig en gericht op verandering."
+        ],
+        "uh": "Feit als argument = betoog.",
+        "ctx": "Het aantal fietsdiefstallen in onze stad steeg vorig jaar met twintig procent. Dat is onacceptabel. De gemeente moet daarom meer bewaakte stallingen bouwen."
+       },
+       {
+        "v": "Welke tekstsoort is dit fragment voornamelijk?",
+        "o": [
+         "betogend, met een mening",
+         "beschouwend",
+         "een oproep aan de lezer",
+         "uiteenzettend"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Eén geciteerde mening verandert het hoofddoel van een mededeling niet.",
+        "uo": [
+         "Koos je betogend? Dat er één mening in staat, maakt de tekst geen betoog. De schrijver verdedigt geen standpunt en vraagt de lezer niets.",
+         "Koos je beschouwend? Er worden geen opvattingen afgewogen of voor- en nadelen genoemd. De schrijver meldt feiten.",
+         "Koos je een oproep? De lezer krijgt geen opdracht. Het fragment meldt wat er gaat gebeuren.",
+         "Klopt: de tekst deelt vooral mee wat er gebeurt. De mening van de wethouder is één citaat, geen standpunt dat de schrijver verdedigt."
+        ],
+        "uh": "Eén mening = nog geen betoog.",
+        "ctx": "De bibliotheek verhuist naar het oude postkantoor. Er komen een leescafé en een studiehoek, en de verbouwing duurt acht maanden. Een prachtig plan, vindt de wethouder."
+       },
+       {
+        "v": "Waarom is dit fragment toch een betoog?",
+        "o": [
+         "omdat er een scheldwoord in de tekst staat",
+         "er is een standpunt met een argument",
+         "omdat het over auto's gaat",
+         "omdat de zinnen lang zijn"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Een standpunt met een argument maakt een tekst betogend, ook bij een felle toon.",
+        "uo": [
+         "Koos je dit? Een beladen woord als egoïstisch zegt iets over de toon. Een tekst is een betoog door het standpunt met argumenten, niet door het woord.",
+         "Klopt: het standpunt is dat het centrum autovrij moet worden. Het argument is veiligheid. Dat is de opbouw van een betoog.",
+         "Koos je dit? Het onderwerp bepaalt de tekstsoort niet. Over auto's kun je ook uitleggen of afwegen.",
+         "Koos je dit? Zinslengte zegt niets over het schrijfdoel. Kijk naar wat de schrijver wil bereiken."
+        ],
+        "uh": "Toon is niet het doel: zoek het standpunt.",
+        "ctx": "Wie nog steeds met de auto naar het centrum rijdt, is gewoon egoïstisch. Het centrum moet autovrij worden, zodat iedereen er veilig kan lopen."
+       },
+       {
+        "v": "Waarom is dit fragment geen betoog?",
+        "o": [
+         "de schrijver wil de lezer niet voor één kant winnen",
+         "omdat er ook nadelen bij de voordelen genoemd worden",
+         "omdat er geen voordelen in staan",
+         "omdat de tekst te kort is voor een betoog"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Afwegen zonder kiezen is een beschouwing, ook als er voor- en nadelen in staan.",
+        "uo": [
+         "Klopt: voor- en nadelen worden afgewogen en de lezer mag zelf kiezen. Bij een betoog verdedigt de schrijver juist één standpunt.",
+         "Koos je dit? Een betoog kan ook nadelen noemen, bijvoorbeeld als tegenwerping die wordt weerlegd. Hier blijven de nadelen staan en kiest de schrijver geen kant.",
+         "Koos je dit? Er staan wel voordelen in (altijd bij de hand, makkelijk zoeken). Het ontbreken van voordelen is dus geen reden.",
+         "Koos je dit? Lengte bepaalt de tekstsoort niet. Ook een korte tekst kan een betoog zijn als er een standpunt wordt verdedigd."
+        ],
+        "uh": "Voor en tegen zonder winnaar = beschouwing.",
+        "ctx": "Tablets hebben voordelen: lesstof is altijd bij de hand en je kunt makkelijk zoeken. Maar het scherm leidt af en veel leerlingen zeggen dat schrijven met de hand beter blijft hangen. Wie kiest, moet dus afwegen wat hij het belangrijkst vindt."
+       },
+       {
+        "v": "Van welke tekstsoort is alinea 4?",
+        "o": [
+         "uiteenzettend",
+         "beschouwend",
+         "een verslag",
+         "betogend"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Een tekstgedeelte beoordeel je op wat het zelf doet: hier verdedigt alinea 4 een standpunt.",
+        "uo": [
+         "Koos je uiteenzettend? Dat geldt voor alinea 1, die meedeelt wat er gebeurd is. Alinea 4 doet iets anders: het verdedigt een standpunt.",
+         "Koos je beschouwend? Er worden geen kanten afgewogen. De alinea kiest voor doorgaan met planten.",
+         "Koos je dit? Een verslag vertelt wat er gebeurde, zoals alinea 1 doet. Alinea 4 eist iets voor de toekomst.",
+         "Klopt: alinea 4 verdedigt een standpunt (de gemeente moet doorgaan) en geeft een argument (koeler en prettiger). Alinea 1 is een mededeling."
+        ],
+        "uh": "Elk gedeelte heeft een eigen doel.",
+        "ctx": "Alinea 1: Vorig jaar plantte de gemeente tweehonderd bomen in de wijk. Daarvoor werden parkeerplaatsen omgebouwd tot groenstroken. Alinea 4: Dit is een goede stap, maar de gemeente moet doorgaan. Elke straat verdient groen, want bomen maken een wijk koeler en prettiger."
+       },
+       {
+        "v": "Wat is voornamelijk het karakter van deze tekst?",
+        "o": [
+         "uiteenzettend",
+         "beschouwend",
+         "betogend",
+         "een mengvorm zonder hoofddoel"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Feiten die een standpunt onderbouwen maken de tekst voornamelijk betogend.",
+        "uo": [
+         "Koos je uiteenzettend? Alinea 1 bevat feiten, maar de tekst blijft daar niet bij. Alinea 2 verdedigt een standpunt, en dat telt zwaarder.",
+         "Koos je beschouwend? Er worden geen opvattingen naast elkaar gelegd. De schrijver kiest direct een kant.",
+         "Klopt: alinea 1 geeft feiten, maar die onderbouwen het standpunt in alinea 2 (er is een tunnel nodig). Het hoofddoel is overtuigen.",
+         "Koos je dit? Bij een mengvorm stel je juist vast welk doel overheerst. Hier dienen de feiten het standpunt, dus het hoofddoel is overtuigen."
+        ],
+        "uh": "Kijk waar de feiten voor dienen.",
+        "ctx": "Alinea 1: Elke dag fietsen duizenden mensen langs het kanaal. De gemeente telde vorig jaar drie ongelukken bij de brug. Alinea 2: Daarom is een tunnel nodig. Fietsers zijn nu niet veilig en omrijden is voor veel mensen geen optie. De gemeente moet nu beginnen."
+       },
+       {
+        "v": "Welk schrijfdoel past het best bij dit fragment?",
+        "o": [
+         "overtuigen dat regenbogen mooi zijn",
+         "de lezer ter overweging een kwestie voorleggen",
+         "informeren: een verschijnsel wordt verklaard",
+         "de lezer tot actie aanzetten"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Een tekst die een verschijnsel verklaart is uiteenzettend; het schrijfdoel is informeren.",
+        "uo": [
+         "Koos je overtuigen? Er staat geen oordeel of standpunt over mooi. De tekst legt alleen uit waardoor het verschijnsel ontstaat.",
+         "Koos je dit? Er is geen kwestie met verschillende opvattingen. Het fragment geeft één verklaring.",
+         "Klopt: het fragment verklaart een verschijnsel zonder standpunt of afweging. Verklaren is een vorm van uiteenzetten.",
+         "Koos je dit? Er komt geen opdracht of oproep in voor. De lezer hoeft niets te doen."
+        ],
+        "uh": "Verklaren is uiteenzetten.",
+        "ctx": "Een regenboog ontstaat doordat zonlicht in regendruppels wordt gebroken en teruggekaatst. Elke kleur buigt onder een iets andere hoek af. Daardoor zie je de kleuren naast elkaar."
+       },
+       {
+        "v": "Waarom past de laatste zin bij een beschouwing?",
+        "o": [
+         "het is een feit dat de schrijver in de tekst bewijst",
+         "het is de conclusie van een betoog",
+         "het is een oproep om iets te doen",
+         "het is een open vraag die de lezer laat nadenken"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Een open vraag aan het slot nodigt uit tot nadenken en past bij een beschouwing.",
+        "uo": [
+         "Koos je dit? Een vraag is geen bewezen feit. De zin stelt niets vast maar vraagt de lezer erover na te denken.",
+         "Koos je dit? Een conclusie van een betoog herhaalt het standpunt. Hier ontbreekt een standpunt; de vraag blijft open.",
+         "Koos je dit? De zin vraagt de lezer niets te doen. Hij nodigt uit tot nadenken.",
+         "Klopt: de zin legt de kwestie aan de lezer voor en kiest geen kant. Dat is ter overweging aanbieden."
+        ],
+        "uh": "Open vraag = overweging.",
+        "ctx": "Sommigen vinden dat schoolexamens moeten verdwijnen omdat ze stress geven. Anderen zeggen dat examens juist duidelijkheid bieden. De vraag is wat een diploma waard is zonder toets."
+       },
+       {
+        "v": "Welke zin laat zien dat het fragment een betoog is?",
+        "o": [
+         "\"De gemeente moet de bus dus vaker laten rijden.\"",
+         "\"In ons dorp rijdt de bus maar één keer per uur.\"",
+         "\"Veel ouderen komen daardoor niet meer bij de dokter.\"",
+         "geen enkele zin, de tekst is neutraal"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "De zin met een eis of oproep verraadt het standpunt van een betoog.",
+        "uo": [
+         "Klopt: deze zin is het standpunt, de eis aan de gemeente. De eerste twee zinnen zijn de onderbouwing.",
+         "Koos je de eerste zin? Dit is een feit dat als aanleiding dient. Een feit alleen is nog geen standpunt; het wordt pas betoog door wat ermee gevraagd wordt.",
+         "Koos je de tweede zin? Dit is een gevolg dat als argument dient. De eis zelf staat pas in de laatste zin.",
+         "Koos je dit? De laatste zin met moeten laat zien dat de schrijver iets wil bereiken. Neutraal is de tekst dus niet."
+        ],
+        "uh": "Zoek de eis: dat is het standpunt.",
+        "ctx": "In ons dorp rijdt de bus maar één keer per uur. Veel ouderen komen daardoor niet meer bij de dokter. De gemeente moet de bus dus vaker laten rijden."
+       },
+       {
+        "v": "Kan een tekst meerdere schrijfdoelen hebben?",
+        "o": [
+         "nee, een tekst heeft één schrijfdoel",
+         "ja, dan bepaal je het belangrijkste doel",
+         "ja, dan is de titel beslissend",
+         "nee, dan is de tekst fout geschreven"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Schrijfdoelen kunnen samen voorkomen; je bepaalt het belangrijkste.",
+        "uo": [
+         "Koos je nee? Teksten mengen doelen vaak, bijvoorbeeld uitleg met een oproep. Je moet dan het belangrijkste kiezen.",
+         "Klopt: schrijfdoelen kunnen in combinatie voorkomen. Je stelt vast welk doel het zwaarst weegt.",
+         "Koos je dit? De titel is een aanwijzing, maar het gaat om wat de tekst als geheel doet. Weeg wat de schrijver het meest wil.",
+         "Koos je dit? Een tekst met meer doelen is niet fout. Het examen verwacht dat je het hoofddoel aanwijst."
+        ],
+        "uh": "Mengvorm: kies het zwaarste doel."
+       },
+       {
+        "v": "Wat betekent die ene opiniezin voor de tekst als geheel?",
+        "o": [
+         "de tekst is nu een betoog",
+         "de tekst is nu een beschouwing",
+         "de tekst kan daardoor niet meer worden beoordeeld",
+         "niets wezenlijks: de tekst blijft uiteenzettend"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Eén opiniezin maakt een uiteenzetting niet betogend; het hoofddoel bepaalt.",
+        "uo": [
+         "Koos je betoog? Een betoog verdedigt een standpunt met argumenten. Eén oordeel zonder argumenten of oproep maakt een uiteenzetting geen betoog.",
+         "Koos je beschouwing? Er worden geen opvattingen afgewogen. Het oordeel staat los in een verder neutrale uitleg.",
+         "Koos je dit? Je kunt de tekst prima beoordelen: je kijkt naar het geheel en stelt vast dat uitleg overheerst.",
+         "Klopt: het hoofddoel blijft informeren. Eén oordeel verandert niet wat de tekst als geheel doet."
+        ],
+        "uh": "Tel het geheel, niet één zin.",
+        "ctx": "Alinea 3 van een uitleg over zonne-energie bevat één opiniezin: \"Dit is een prachtige uitvinding.\" De rest van de tekst legt uit en beschrijft."
+       },
+       {
+        "v": "Een schrijver wil de lezer tot actie aanzetten. Bij welke tekstsoort past dat?",
+        "o": [
+         "de betogende tekst",
+         "de uiteenzettende tekst",
+         "de beschouwende tekst",
+         "een tekst zonder tekstsoort"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Tot actie aanzetten hoort bij het doel van een betoog.",
+        "uo": [
+         "Klopt: overtuigen en tot actie aanzetten zijn de schrijfdoelen van een betoog.",
+         "Koos je uiteenzettend? Die tekst deelt iets mee. Een oproep om iets te doen past daar niet bij.",
+         "Koos je beschouwend? Een beschouwing laat de keuze bij de lezer. Een schrijver die tot actie aanzet, wil dat de lezer iets doet.",
+         "Koos je dit? Elke tekst die op het examen komt, valt in een van de drie soorten. Een oproep valt onder betogen."
+        ],
+        "uh": "Actie = betoog."
+       },
+       {
+        "v": "Wat is het verschil tussen tekst A en tekst B?",
+        "o": [
+         "A overtuigt, B informeert",
+         "A informeert, B overtuigt",
+         "beide informeren, want ze noemen feiten",
+         "beide zijn beschouwingen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Een mededeling informeert; een advies met argumenten overtuigt.",
+        "uo": [
+         "Koos je dit? Je hebt de teksten omgedraaid. Tekst A noemt alleen reistijd; tekst B verdedigt een keuze en geeft redenen.",
+         "Klopt: tekst A deelt een feit mee. Tekst B vraagt de lezer iets te doen en geeft argumenten (sneller, onderweg werken).",
+         "Koos je dit? Tekst B gebruikt feiten als argument voor een advies. Het doel verschilt, ook al komen er in beide feiten voor.",
+         "Koos je dit? Geen van beide legt opvattingen naast elkaar. A meldt iets en B adviseert iets."
+        ],
+        "uh": "Feit melden is niet hetzelfde als iets bepleiten.",
+        "ctx": "Tekst A: De intercity naar Groningen doet er ongeveer twee uur over. Tekst B: Neem de trein naar Groningen: dat is sneller dan de auto en je kunt onderweg werken."
+       },
+       {
+        "v": "Een leerling zegt: \"Er staan nadelen in, dus het is een beschouwing.\" Wat is jouw oordeel?",
+        "o": [
+         "juist, nadelen noemen hoort alleen bij een beschouwing",
+         "juist, want er staan vier voordelen in",
+         "onjuist: het doel is hier een standpunt verdedigen",
+         "onjuist, want het is een uiteenzetting"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Nadelen noemen en weerleggen kan in een betoog; het doel bepaalt de tekstsoort.",
+        "uo": [
+         "Koos je dit? Nadelen kunnen ook in een betoog staan, als de schrijver ze weerlegt. Het doel bepaalt de soort, niet de aanwezigheid van nadelen.",
+         "Koos je dit? Het aantal voordelen zegt niets over de soort. Een betoog gebruikt voordelen juist als argumenten.",
+         "Klopt: ook een betoog kan nadelen noemen, zoals hier als tegenwerping die wordt weerlegd. De slotzin laat zien dat de schrijver een standpunt verdedigt.",
+         "Koos je dit? Een uiteenzetting stelt niets te verdedigen. Hier wordt een standpunt (invoeren) verdedigd, dus het is een betoog."
+        ],
+        "uh": "Doel telt, niet de aanwezigheid van nadelen.",
+        "ctx": "Een tekst somt vier voordelen van schooluniformen op, noemt één nadeel en weerlegt dat. De slotzin luidt: \"Scholen moeten dus uniformen invoeren.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Veel mensen denken dat een elektrische auto geen uitlaatgassen heeft. Dat klopt tijdens het rijden. Bij de productie van de accu komt wel CO2 vrij, en niet alle stroom komt uit duurzame bronnen. De uitstoot hangt dus af van hoe de stroom is opgewekt.",
+        "v": "Is dit tekstgedeelte uiteenzettend, beschouwend of betogend? Noem het schrijfdoel en een kenmerk waaraan je dat ziet.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Uiteenzettend (1 punt). Het schrijfdoel is informeren (1 punt): de schrijver legt uit hoe het zit met de uitstoot en neemt geen standpunt in en vraagt de lezer niets te doen (1 punt voor een kenmerk)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Elke school zou een uur per dag moeten sporten. Leerlingen komen dan rustiger terug in de klas. Bovendien leren ze er samenwerken. Wie dit niet invoert, kiest voor onrustige lessen.",
+        "v": "Welke tekstsoort is dit en welk schrijfdoel hoort daarbij? Noem twee kenmerken uit het fragment.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Betogend, met als doel overtuigen (en tot actie aanzetten). Kenmerken: er is een standpunt (elke school zou een uur per dag moeten sporten) en dat wordt met argumenten verdedigd (rustiger in de klas, samenwerken leren)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Thuiswerken scheelt reistijd en files. Maar collega's zien elkaar minder, en niet iedereen heeft thuis een rustige plek. Of thuiswerken beter is dan op kantoor werken, hangt af van de baan en de persoon.",
+        "v": "Waarom is dit fragment geen betoog? Verklaar met een kenmerk uit het fragment.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het is een beschouwing: voor- en nadelen worden afgewogen en de schrijver kiest geen kant (het hangt af van de baan en de persoon). Het doel is de lezer te laten nadenken, niet hem van één standpunt te overtuigen."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Alinea 1: Vorig jaar zijn er in onze wijk elke week vijf fietsen gestolen. Alinea 2: De politie noemt dat zorgelijk. Alinea 3: De gemeente moet daarom meer bewaakte stallingen bouwen. Alinea 4: Dat kost geld, maar diefstal kost de wijk meer.",
+        "v": "Hoe bepaal je het belangrijkste schrijfdoel van deze tekst? Noem het doel en onderbouw je antwoord.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het belangrijkste doel is overtuigen (1 punt). Alinea 1 en 2 geven feiten, maar die dienen als argument voor het standpunt in alinea 3 (de gemeente moet meer bewaakte stallingen bouwen) (1 punt). De tekst is dus voornamelijk betogend, ook al begint hij met informatie."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een tekst somt vier voordelen van een schooluniform op, noemt één nadeel en weerlegt dat met een tegenargument. De slotzin luidt: \"Scholen moeten dus een uniform invoeren.\"",
+        "v": "Een leerling zegt: \"Er staan voor- en nadelen in, dus het is een beschouwing.\" Beoordeel die uitspraak.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De uitspraak klopt niet: ook een betoog kan nadelen noemen, hier als tegenwerping die wordt weerlegd (1 punt). Het gaat om het doel: de slotzin laat zien dat een standpunt wordt verdedigd (scholen moeten een uniform invoeren), dus de tekst is betogend; een beschouwing kiest geen kant (1 punt)."
+       }
+      ]
+     }
     ]
    },
    {

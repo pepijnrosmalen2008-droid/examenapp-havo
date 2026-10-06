@@ -29,7 +29,31 @@ var VAKKEN = [
     "nSv": 215,
     "nOe": 5,
     "nBeg": 44,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "nl.A.1",
+      "gs": 2,
+      "naam": "Tekstsoort en schrijfdoel bepalen",
+      "beschrijving": "Je herkent of een tekst uiteenzettend, beschouwend of betogend is en je bepaalt wat de schrijver met de tekst wil bereiken.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "De drie tekstsoorten herkennen",
+       "Het schrijfdoel bij elke tekstsoort",
+       "Mengvormen: het belangrijkste doel",
+       "Kenmerken waaraan je de soort ziet",
+       "Tekstgedeelte of hele tekst",
+       "Valkuilen bij het bepalen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "B",
