@@ -305,6 +305,7 @@ function renderStudieplan(){
   try{ renderPlanHubBadges(); }catch(e){}
   const el=document.getElementById('studieplan-content');
   if(!el)return;
+  try{document.getElementById('sc-studieplan').classList.remove('sp-leeg');}catch(e){}
   const mijn=getMijnVakken();
   const today=new Date();today.setHours(0,0,0,0);
   const todayStr=today.toISOString().slice(0,10);
@@ -336,7 +337,18 @@ function renderStudieplan(){
   if(!upcoming.length){
     // Geen "Vandaag"-blok hier: de Foutenboek-regel wordt getoond via
     // #sp-foutenboek-row (anders staat de kaart dubbel).
-    el.innerHTML=`<div class="sp-empty">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.</div>`;
+    // Nog geen examenvakken gekozen: kies ze hier meteen (geen omweg via het rooster).
+    const _mijn=(typeof getMijnVakken==='function')?getMijnVakken():[];
+    const _ex27=new Set((typeof EXAM_SCHEDULE_2027!=='undefined'?EXAM_SCHEDULE_2027:[]).filter(x=>(!x.niveau||x.niveau===APP_LEVEL)&&x.vakId).map(x=>x.vakId));
+    const _kies=getVK().filter(v=>_ex27.has(v.id));
+    if(!_mijn.length&&_kies.length){
+      try{document.getElementById('sc-studieplan').classList.add('sp-leeg');}catch(e){}
+      el.innerHTML=`<div class="sp-kies"><b>In welke vakken doe je examen?</b><p>Tik je vakken aan. Dan maakt Slagio een plan tot je eerste examen.</p>
+        <div class="sp-kies-vakken">${_kies.map(v=>`<button class="sp-kies-vak" onclick="spKiesVak('${v.id}',this)" aria-pressed="false"><span style="background:${v.kleur}"></span>${v.naam}</button>`).join('')}</div>
+        <button class="sp-kies-klaar" id="sp-kies-klaar" disabled onclick="renderStudieplan();try{updateCountdown()}catch(e){}">Maak mijn plan</button></div>`;
+    }else{
+      el.innerHTML=`<div class="sp-empty">Geen aankomende examens.<br>Kies je vakken in het rooster, of vink je herkansing aan.<br><button class="sp-kies-klaar" style="margin-top:12px" onclick="show('sc-schedule');renderSchedule()">Naar het rooster</button></div>`;
+    }
     try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){}
     return;
   }
@@ -902,3 +914,12 @@ function lpStartFlash(domeinId){
   startFlash();
 }
 
+
+function spKiesVak(id,btn){
+  let m=getMijnVakken();
+  const aan=!m.includes(id);
+  m=aan?m.concat(id):m.filter(v=>v!==id);
+  try{setMijnVakken(m);}catch(e){}
+  btn.classList.toggle('aan',aan);btn.setAttribute('aria-pressed',aan);
+  const k=document.getElementById('sp-kies-klaar');if(k)k.disabled=!m.length;
+}

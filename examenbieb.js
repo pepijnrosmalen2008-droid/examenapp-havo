@@ -36,6 +36,7 @@ function openExamenBieb(vakId) {
     kies.onchange = () => openExamenBieb(kies.value);
   }
   show('sc-examens');
+  _ebTerug = 'sc-examens';
   try { trackEvent('examenbieb_open', { vak: _ebVak }); } catch (e) {}
   const render = () => { el.innerHTML = _ebHtml(_ebVak); };
   render();
@@ -76,16 +77,49 @@ function _ebHtml(vakId) {
     <p class="eb-bron">Bron van de pdf's: alleexamens.nl. Werkt een pdf niet op je telefoon? Gebruik dan "open in nieuw tabblad" bovenin de weergave.</p>`;
 }
 
+let _ebTerug = 'sc-examens';   // waar "terug" uit de vragenkiezer heen gaat
 function _ebStart(soort) {
   const vak = getVK().find(v => v.id === _ebVak); if (!vak) return;
   ST.vak = vak;
-  try { trackEvent('examenbieb_start', { soort, vak: _ebVak }); } catch (e) {}
+  try { trackEvent('examenbieb_start', { soort, vak: _ebVak, plek: _ebTerug === 'sc-detail' ? 'vak' : 'bieb' }); } catch (e) {}
   if (soort === 'sim' && typeof openExamSim === 'function') openExamSim();
   else if (soort === 'ex' && typeof startExamen === 'function') startExamen();
-  else if (soort === 'ce' && typeof openCEExamens === 'function') openCEExamens('sc-examens');
+  else if (soort === 'ce' && typeof openCEExamens === 'function') openCEExamens(_ebTerug);
   else if (soort === 'pe' && typeof startProefexamen === 'function') startProefexamen();
-  else if (soort === 'pevr') ebProefOpen(_ebVak);
+  else if (soort === 'pevr') ebProefOpen(_ebVak, null, _ebTerug);
+  else if (soort === 'toets' && typeof startSimToets === 'function') startSimToets();
 }
+
+// ═══════ VAKPAGINA: TABBLAD EXAMENS ═══════
+// De vakpagina heeft twee tabbladen. "Examens" toont dezelfde bibliotheek als
+// het scherm Echte examens, maar dan voor dit vak en zonder vakkiezer.
+function vdTab(t, stil) {
+  const sc = document.getElementById('sc-detail'); if (!sc) return;
+  sc.classList.toggle('vd-t-ex', t === 'ex');
+  sc.querySelectorAll('.vd-tab').forEach(b => { const on = b.dataset.t === t; b.classList.toggle('on', on); b.setAttribute('aria-selected', on); });
+  const pane = document.getElementById('vd-examens');
+  if (pane) pane.hidden = t !== 'ex';
+  if (t === 'ex' && ST.vak) {
+    const render = () => {
+      _ebVak = ST.vak.id;
+      let h = '';
+      try { h = _ebHtml(ST.vak.id); } catch (e) {}
+      if (!ebProefExamen(ST.vak.id) && typeof startSimToets === 'function')
+        h = `<div class="eb-acties"><button class="eb-actie" onclick="_ebTerug='sc-detail';_ebStart('toets')"><span class="eb-ic">⏱</span><span><b>Simulatietoets</b><small>Oefen alle domeinen van dit vak in één sessie, ongeveer 25 minuten.</small></span></button></div>` + h;
+      pane.innerHTML = h || '<p class="eb-uitleg">Voor dit vak staan nog geen examens in de app.</p>';
+      pane.querySelectorAll('.eb-actie').forEach(b => { const oc = b.getAttribute('onclick') || ''; if (oc.indexOf('_ebStart') === 0) b.setAttribute('onclick', "_ebTerug='sc-detail';" + oc); });
+    };
+    render();
+    if (typeof CE_OE === 'undefined' && typeof _ceEnsure === 'function') _ceEnsure(() => { if (sc.classList.contains('vd-t-ex')) render(); });
+    if (!stil) try { trackEvent('vak_tab', { tab: 'examens', vak: ST.vak.id }); } catch (e) {}
+  }
+}
+// Elke keer dat een vak opent, begint het op Onderwerpen.
+(function () {
+  if (typeof openVak !== 'function') return;
+  const orig = openVak;
+  window.openVak = function () { try { vdTab('leer', true); } catch (e) {} return orig.apply(this, arguments); };
+})();
 
 // ═══════ LOSSE PROEFEXAMENVRAGEN ═══════
 // De Slagio-proefexamens (proefexamen-*.js → SLAGIO_EXAMENS) los ontsloten: elke

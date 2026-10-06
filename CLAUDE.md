@@ -75,6 +75,8 @@ If you add a **new** file that should be cached, also add it to the `ASSETS[]` a
 
 ## Key patterns
 
+**Navigatie op telefoon (<900px)**: kopbalk van de home heeft één menuknop (`.hnav-menu-btn`) die het menu opent als bottom sheet (`openNavSheet`/`closeNavSheet`/`_msGa` in init.js, groepen in `_MS_GROEPEN`, klassen `.ms-*`): veer-animatie, vegen omlaag sluit, Escape sluit; op desktop (>=900px) is het een zwevende kaart en blijft de zijbalk het hoofdmenu. De home heeft onder de aftelklok en de volgende-stap-knop de zoekbalk `.hm-zoekbalk` (opent Vraag het Slagio, wisselend voorbeeld in `#hm-zoekbalk-vb`); Examens/Trainer/Arcade staan op telefoon als één rij `.hm-tegels` (de grote banners alleen op desktop), de vakkenfilter `.sb-wrap` is op telefoon weg. Vraag het Slagio vindt ook onderdelen van de app (`_ZK_APP`, "Ga naar"-rij in `#zoek-app`). Vakpagina heeft tabbladen Onderwerpen/Examens (`vdTab` in examenbieb.js; Examens = `_ebHtml` van dat vak, `_ebTerug='sc-detail'`); `.oefen-panel` is verborgen. Tabblad "Wedstrijd" heet nu "Spelen". Studieplan zonder gekozen vakken toont een vakkenkiezer (`spKiesVak`, klasse `sp-leeg`).
+
 **Rust: weinig pop-ups** (bewuste keuze, niet terugdraaien zonder reden):
 - Home: hooguit één ongevraagd ding per bezoek via `homeMoment(naam)` (features.js): weekafsluiting, streak-waarschuwing, welkom van Vonk of installeerbalk. Geen dagelijkse-uitdaging-pop-up (die staat als regel in het Vandaag-blok) en geen dagmissie-ballon. Een weekafsluiting zonder XP en zonder beloning sluit stil af.
 - Na een quiz: `_runResultChain` (quiz.js) toont hooguit `RC_MAX`=2 grote momenten op volgorde van belang; een afgevallen kist geeft zijn munten stil.

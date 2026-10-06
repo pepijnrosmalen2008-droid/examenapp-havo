@@ -203,7 +203,7 @@ function openVak(id,_noHash){
     const _noContent=_empty&&!_hasLeerstof;
     const _hasLd=d.leerdoelen&&d.leerdoelen.length;
     const el=document.createElement('div');
-    el.className='dc2';
+    el.className='dc2'+(_hasLd?' dc2-ld':'');
     el.dataset.domeinId=d.id;
     if(_hasLd){
       // Domein met leerdoelen → tik opent scherm 2 (leerdoellijst), niet direct de leerstof.

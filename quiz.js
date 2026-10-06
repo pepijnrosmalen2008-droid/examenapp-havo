@@ -171,7 +171,7 @@ function openOEPicker(){
   document.getElementById('oep-title').textContent=ST.domein._ce?`${ST.vak.naam} · Echte CE-examenvragen`:ST.domein._proef?`${ST.vak.naam} · Vragen uit het Slagio-proefexamen`:`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
   document.getElementById('oep-count').textContent=oe.length+' '+(oe.length===1?'vraag':'vragen');
   const _terug=ST.domein._terug||'sc-qmode';
-  document.getElementById('oep-back-btn').onclick=()=>{if(_terug==='sc-examens'&&typeof openExamenBieb==='function')openExamenBieb(ST.vak&&ST.vak.id);else show(_terug);};
+  document.getElementById('oep-back-btn').onclick=()=>{if(_terug==='sc-examens'&&typeof openExamenBieb==='function')openExamenBieb(ST.vak&&ST.vak.id);else{show(_terug);if(_terug==='sc-detail'&&typeof vdTab==='function')vdTab('ex',true);}};
   // Attach clicks
   document.querySelectorAll('#oep-list .oep-card').forEach(card=>{
     card.addEventListener('click',()=>startOESingle(parseInt(card.dataset.oeidx)));

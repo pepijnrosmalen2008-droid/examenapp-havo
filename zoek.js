@@ -278,8 +278,48 @@ function _zkStats(){
   const el=document.getElementById('zoek-stats'),n=_zkFiltered().length;
   el.innerHTML=_zoekState.all.length?('<b>'+n.toLocaleString('nl')+'</b> resultaten'):'';
 }
+// ── Ga naar: onderdelen van de app zelf vinden ("foutenboek", "cijfer berekenen",
+// "duits examen") zodat je niet hoeft te weten achter welke knop iets zit. ──
+const _ZK_APP=[
+  ['Examens','📚',['examen','examens','oud examen','oude examens','proefexamen','correctievoorschrift','examenvragen','pdf'],"openExamenBieb(%V)"],
+  ['Foutenboek','📕',['foutenboek','fouten','foute antwoorden','mijn fouten'],"openFoutenboek()"],
+  ['Herhalen','🔁',['herhalen','herhaal','flashcard','flashcards','kaartjes','stampen'],"openHerhalen()"],
+  ['Examenrooster','🗓️',['rooster','examenrooster','examendata','wanneer is','datum examen'],"show('sc-schedule');renderSchedule()"],
+  ['Studieplan','📅',['studieplan','planning','plannen','plan'],"show('sc-studieplan');renderStudieplan()"],
+  ['Cijfers','🧮',['cijfer','cijfers','berekenen','eindcijfer','gemiddelde','se cijfer','wat moet ik halen'],"show('sc-calc');setTimeout(prefillCalcFromSaved,50)"],
+  ['Voortgang','📊',['voortgang','rapport','statistieken','hoe sta ik ervoor'],"openRapport()"],
+  ['Examentrainer','🎯',['examentrainer','trainer','verwacht cijfer','voorspelling','slagio plus'],"openExamentrainer()"],
+  ['Arcade','🎮',['arcade','spel','spellen','spelletjes','clash','kingdom','game','games'],"arcadeOpen()"],
+  ['Weekwedstrijd','🛡️',['divisie','wedstrijd','weekwedstrijd','competitie','league'],"openLeague()"],
+  ['Topscores','🏆',['topscores','leaderboard','ranglijst','top 10'],"show('sc-leaderboard')"],
+  ['Mijn groep','👥',['groep','klas','vrienden','klasgenoten'],"show('sc-groep');renderGroepScreen()"],
+  ['Winkel','🛒',['winkel','munten','shop','thema','themas','streak freeze'],"openShop()"],
+  ['Profiel','👤',['profiel','account','inloggen','log in','instellingen'],"openProfiel()"],
+  ['Vonk','✨',['vonk','chat','ai','vraag aan vonk','uitleg vragen'],"openVonkChat()"],
+  ['Nachtmodus','🌙',['nachtmodus','donker','dark mode','donkere modus'],"toggleDark()"]
+];
+function _zkApp(query){
+  const q=_zkNorm(query).trim(); if(q.length<3)return [];
+  const toks=q.split(/\s+/);
+  const past=w=>{w=_zkNorm(w);return q===w||(' '+q+' ').includes(' '+w+' ')||(q.length>=3&&w.startsWith(q));};
+  // vak in de vraag? ("duits examen", "biologie")
+  let vak=null; try{(getVK()||[]).forEach(v=>{const n=_zkNorm(v.naam);if(!vak&&toks.some(t=>t.length>=4&&(n.startsWith(t)||n.split(' ').includes(t))))vak=v;});}catch(e){}
+  const uit=[];
+  _ZK_APP.forEach(([naam,ic,woorden,go])=>{
+    if(!woorden.some(past))return;
+    const isEx=go.indexOf('%V')>=0;
+    uit.push({naam:isEx&&vak?naam+' '+vak.naam:naam,ic,go:go.replace('%V',isEx&&vak?"'"+vak.id+"'":'')});
+  });
+  if(vak&&!uit.some(a=>a.go.indexOf("'"+vak.id+"'")>=0))uit.push({naam:vak.naam,ic:'📘',go:"openVak('"+vak.id+"')"});
+  return uit.slice(0,4);
+}
+function _zkAppHtml(query){
+  const a=_zkApp(query); if(!a.length)return '';
+  return '<div class="zk-app"><span class="zk-app-l">Ga naar</span>'+a.map(x=>'<button class="zk-app-b" onclick="_zkSaveRecent(document.getElementById(\'zoek-q\').value);'+x.go.replace(/"/g,'&quot;')+'"><span class="zk-app-ic no-ico">'+x.ic+'</span>'+_zkEsc(x.naam)+'</button>').join('')+'</div>';
+}
 function _zkSearch(query){
   const clr=document.getElementById('zoek-clr');if(clr)clr.classList.toggle('on',!!query);
+  const _app=document.getElementById('zoek-app'); if(_app)_app.innerHTML=_zkAppHtml(query);
   const el=document.getElementById('zoek-res'),tabs=document.getElementById('zoek-tabs'),
         stats=document.getElementById('zoek-stats'),more=document.getElementById('zoek-more'),
         filt=document.getElementById('zoek-filters');
@@ -310,6 +350,8 @@ function _zkSaveRecent(q){q=(q||'').trim();if(q.length<3)return;
 function _zkClearRecent(){try{localStorage.removeItem(_ZK_RECENT);}catch(e){}_zkEmpty();}
 function _zkEmpty(){
   const el=document.getElementById('zoek-res');
+  const app=document.getElementById('zoek-app');
+  if(app)app.innerHTML='<div class="zk-app"><span class="zk-app-l">Snel naar</span>'+[_ZK_APP[0],_ZK_APP[1],_ZK_APP[3],_ZK_APP[5]].map(x=>'<button class="zk-app-b" onclick="'+x[3].replace('%V','')+'"><span class="zk-app-ic no-ico">'+x[1]+'</span>'+x[0]+'</button>').join('')+'</div>';
   const rec=_zkGetRecent();
   let recHtml='';
   if(rec.length){
@@ -349,6 +391,7 @@ let _zkWired=false;
 function openZoek(){
   show('sc-zoek');
   const q=document.getElementById('zoek-q');
+  try{q.focus({preventScroll:true});}catch(e){} // meteen, binnen de tik: dan opent het toetsenbord ook op iOS
   if(!_zkWired){ _zkWire(); _zkWired=true; }
   // Pending query vanuit /zoek.html?q=… of een externe deeplink
   try{const pend=sessionStorage.getItem('slagio_pending_zoek');
@@ -458,3 +501,16 @@ function _zkVraagVonk(){
   if(a){ if(a.begrip)bron+=a.begrip.title+': '+a.begrip.answer+'\n'; if(a.pas)bron+=_zkClip(a.pas.text,900); }
   try{ if(typeof openVonkChat==='function') openVonkChat({vak:a?a.vak:'',onderwerp:a?(a.begrip?a.begrip.title:a.dom):'',seedUser:q,bron:bron.slice(0,1200)}); }catch(e){}
 }
+
+// Wisselend voorbeeld in de zoekbalk op de home: laat zien wat je allemaal kunt vragen.
+(function(){
+  const VB=['wat is osmose?','foutenboek','Duits examen 2024','cijfer berekenen','wat is inflatie?','examenrooster','wat is een drogreden?','arcade'];
+  let i=0;
+  setInterval(function(){
+    const el=document.getElementById('hm-zoekbalk-vb');
+    if(!el||document.hidden||!el.offsetParent)return;
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){i=(i+1)%VB.length;el.textContent=VB[i];return;}
+    el.classList.add('weg');
+    setTimeout(function(){i=(i+1)%VB.length;el.textContent=VB[i];el.classList.remove('weg');el.classList.add('komt');void el.offsetWidth;el.classList.remove('komt');},360);
+  },3600);
+})();

@@ -376,6 +376,8 @@ function fbUpdateBadge() {
     if (n > 0) { b.textContent = n; b.style.display = ''; }
     else b.style.display = 'none';
   });
+  const dot = document.getElementById('hnav-menu-dot');
+  if (dot) dot.hidden = !(n > 0);
 }
 function openFoutenboek() {
   show('sc-foutenboek'); renderFoutenboek();
