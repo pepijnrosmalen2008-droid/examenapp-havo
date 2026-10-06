@@ -71,6 +71,21 @@ Elke **foute** optie krijgt 70-360 tekens met drie dingen:
 De **juiste** optie krijgt min. 45 tekens: begint met "Klopt:" en zegt waarom.
 Drie foute opties = drie verschillende denkfouten (de poort weigert bijna-gelijke uitleg).
 
+**Aangescherpt (okt 2026, na de eerste routine-output; hard in `check-leerdoel.mjs`):**
+- foute-antwoord-uitleg gemiddeld **min. 120 tekens**, max. 20% korter dan 100 (bi.M3: gemiddeld 158);
+- max. 30% begint met een kaal "Koos je dit?": **noem wat de leerling koos** ("Koos je 'tijdelijk afgeremd'?");
+- **geen opvulafleiders**: een los woord uit het fragment ("school", "de bus") naast een volzin als
+  juist antwoord wordt meteen weggestreept en toetst niets. Elke afleider is een fout die een echte
+  leerling maakt. Korte vaktermen (namen van drogredenen, tekstsoorten) mogen wel.
+
+Slecht (routine, eerste versie nl.A6):
+> "Koos je dit? Kort kan prima kloppen. Het gaat om de afzender, niet om de lengte."
+
+Goed:
+> "Koos je 'het bericht is te kort'? Dan beoordeel je de vorm in plaats van de bron. Ook een kort
+> bericht kan kloppen. De vraag bij een feitelijk argument is: kun je nagaan wie het zegt en waar
+> het op gebaseerd is? Bij een anonieme forumpost kan dat niet."
+
 Slecht (v1):
 > "De plant ademt overdag gewoon door."
 

@@ -11,8 +11,11 @@ const zichtbaar = html => String(html || '').replace(/<!--[\s\S]*?-->/g, '').rep
 const DEF_STAM = /^(wat is|wat zijn|wat betekent|wat houdt|wat wordt (er )?bedoeld|welke omschrijving|hoe heet)/i;
 const KAAL_NEE = /^(nee|fout|onjuist|niet juist|klopt niet)\b[^.]{0,45}\.?$/i;
 
-export function checkV2(ld, samHtml) {
+export function checkV2(ld, samHtml, opt = {}) {
   const hard = [], soft = [];
+  // Strengere regels (okt 2026, na de eerste routine-output): hard vóór integratie
+  // (check-leerdoel.mjs), zacht in CI voor modules die al live staan.
+  const streng = opt.streng ? hard : soft;
   const sv = ld.sv || [], ond = ld.onderwerpen || [];
   if (!ond.length) hard.push('onderwerpen[] ontbreekt (nodig voor s-tags en adaptief oefenen)');
   // naam en beschrijving staan op het leerdoelenscherm: geschreven voor de leerling, zonder jargon
@@ -48,6 +51,24 @@ export function checkV2(ld, samHtml) {
     for (let a = 0; a < fout.length; a++) for (let b = a + 1; b < fout.length; b++)
       if (jaccard(fout[a], fout[b]) > 0.6) hard.push(`${t}: twee foute-antwoord-uitleggen zijn bijna gelijk: elke afleider heeft zijn eigen denkfout`);
   });
+  // Uitleg moet de gekozen optie noemen en de denkfout uitleggen, en afleiders moeten echte fouten zijn.
+  const fouteUo = sv.flatMap(q => (q.uo || []).filter((_, k) => k !== q.c).map(String));
+  if (fouteUo.length) {
+    const dit = fouteUo.filter(u => /^koos je dit\?/i.test(u.trim())).length;
+    if (dit / fouteUo.length > 0.3) streng.push(`${Math.round(dit / fouteUo.length * 100)}% van de foute-antwoord-uitleg begint met een kaal "Koos je dit?" (max. 30%): noem wat de leerling koos ("Koos je 'hormoon'? Dan denk je ...")`);
+    const kort = fouteUo.filter(u => u.trim().length < 100).length;
+    if (kort / fouteUo.length > 0.2) streng.push(`${Math.round(kort / fouteUo.length * 100)}% van de foute-antwoord-uitleg is korter dan 100 tekens (max. 20%): benoem denkfout, waarom niet, en het juiste onderscheid`);
+    const gem = fouteUo.reduce((a, u) => a + u.length, 0) / fouteUo.length;
+    if (gem < 120) streng.push(`gemiddelde foute-antwoord-uitleg ${Math.round(gem)} tekens (min. 120; referentie bi.M3: 158)`);
+  }
+  const wc = x => String(x || '').trim().split(/\s+/).length;
+  const nep = [];
+  // Opvulafleider: een los woord uit het fragment als antwoordoptie ("school", "de bus") naast een
+  // volzin als juist antwoord. Korte vaktermen (bv. namen van drogredenen) zijn wél echte afleiders.
+  sv.forEach((q, i) => (q.o || []).forEach((o, k) => {
+    if (k !== q.c && wc(o) <= 2 && wc((q.o || [])[q.c]) >= 3 && q.ctx && String(q.ctx).toLowerCase().includes(String(o).toLowerCase().trim())) nep.push(`Q${i + 1} "${o}"`);
+  }));
+  if (nep.length) streng.push(`opvulafleiders (los woord uit het fragment, meteen weg te strepen): ${nep.slice(0, 6).join(', ')}: vervang door een echte denkfout van leerlingen`);
   for (let a = 0; a < stammen.length; a++) for (let b = a + 1; b < stammen.length; b++)
     if (jaccard(stammen[a], stammen[b]) > 0.75) hard.push(`Q${a + 1} en Q${b + 1} zijn bijna dezelfde vraag`);
   ond.forEach((o, k) => { if (perS[k] < 2) hard.push(`onderwerp ${k} "${o}": ${perS[k]} vraag/vragen (min. 2, zodat de vervolgvraag na een fout iets heeft)`); });

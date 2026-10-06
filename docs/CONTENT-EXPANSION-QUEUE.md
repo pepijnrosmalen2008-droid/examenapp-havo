@@ -30,6 +30,14 @@
 
 ---
 
+- [ ] **HAVO · Nederlands** (`nl`) · domein A (aanscherpen) — de routine-versie haalt de aangescherpte lat niet (uitleg te kort/algemeen, enkele opvulafleiders). Herschrijf per leerdoel de foute-antwoord-uitleg en vervang zwakke afleiders; draai `check-leerdoel.mjs` tot KLAAR, dan integreren.
+  - [ ] A1 · nl.A.1 Tekstsoort en schrijfdoel bepalen
+  - [ ] A2 · nl.A.2 Onderwerp en hoofdgedachte aangeven
+  - [ ] A3 · nl.A.3 Relaties tussen tekstdelen benoemen
+  - [ ] A4 · nl.A.4 Conclusies over de auteur trekken
+  - [ ] A5 · nl.A.5 Standpunten, argumenten en schema's herkennen
+  - [ ] A6 · nl.A.6 Betoog beoordelen en drogredenen herkennen
+  - [ ] A7 · nl.A.7 Een tekst samenvatten
 - [x] **HAVO · Nederlands** (`nl`) · domein A — Leesvaardigheid (7 van 7 leerdoelen op v2)
   - [x] A1 · nl.A.1 Tekstsoort en schrijfdoel bepalen · 28 vragen (R1-R3), 12 begrippen, 3 schema's (tekstsoorten, beslisboom, mengvorm), geen clip
   - [x] A2 · nl.A.2 Onderwerp en hoofdgedachte aangeven · 25 vragen (R1-R3), 11 begrippen, 3 schema's (onderwerp vs hoofdgedachte, tekstopbouw, 3 stappen), geen clip

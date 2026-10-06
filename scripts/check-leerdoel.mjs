@@ -87,7 +87,7 @@ if (htmlPath) {
 if (ld.gs === 2 || process.argv.includes('--v2')) {
   if (ld.gs !== 2) hard.push('gs: 2 ontbreekt (markeer de module als v2)');
   if (!/^[a-z]{2,4}\.[A-Z]+\d*\.\d+$/.test(ld.lo || '')) hard.push(`lo (leerdoel-id, bv. nl.A.1) ontbreekt of ongeldig: "${ld.lo || ''}"`);
-  const r = checkV2(ld, htmlPath ? fs.readFileSync(htmlPath, 'utf8') : null);
+  const r = checkV2(ld, htmlPath ? fs.readFileSync(htmlPath, 'utf8') : null, { streng: true });
   r.hard.forEach(m => hard.push('v2: ' + m)); r.soft.forEach(m => console.log('  · v2 ' + m));
   if (!htmlPath) hard.push('v2: geef ook de samenvatting-HTML mee (tweede argument)');
 }
