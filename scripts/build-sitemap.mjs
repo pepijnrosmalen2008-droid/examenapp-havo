@@ -49,6 +49,8 @@ function rank(loc) {
   if (p === '/') return ['weekly', '1.0'];
   if (/^\/(havo|vwo|vmbo)$/.test(p)) return ['weekly', '0.95'];
   if (p === '/vakken/') return ['monthly', '0.9'];
+  if (p === '/leren/') return ['weekly', '0.9'];
+  if (/^\/leren\//.test(p)) return ['weekly', '0.8'];
   if (/examenrooster|examenuitslag/.test(p)) return ['monthly', '0.9'];
   if (/calculator/.test(p)) return ['monthly', '0.85'];
   if (/-domein-/.test(p)) return ['monthly', '0.75'];
@@ -60,10 +62,20 @@ function rank(loc) {
   return ['monthly', '0.6'];
 }
 
+// Leerpagina's per onderwerp (scripts/build-leren.mjs), recursief onder leren/.
+function lerenPaginas(dir = 'leren') {
+  const vol = path.join(ROOT, dir); if (!fs.existsSync(vol)) return [];
+  return fs.readdirSync(vol).flatMap(f => {
+    const rel = dir + '/' + f;
+    return fs.statSync(path.join(ROOT, rel)).isDirectory() ? lerenPaginas(rel) : (f.endsWith('.html') ? [rel] : []);
+  });
+}
+
 function collect() {
   const files = [
     ...fs.readdirSync(ROOT).filter(f => f.endsWith('.html')),
     ...fs.readdirSync(path.join(ROOT, 'vakken')).filter(f => f.endsWith('.html')).map(f => 'vakken/' + f),
+    ...lerenPaginas(),
   ].filter(f => !EXCLUDE.has(f));
 
   const byLoc = new Map();

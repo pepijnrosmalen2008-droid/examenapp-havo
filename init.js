@@ -495,7 +495,9 @@ window.addEventListener('load',()=>{
   try{const _act=document.querySelector('.sc.on');if(_act&&typeof updateBottomNav==='function')updateBottomNav(_act.id);}catch(e){}
   // Query-param fallback: ?niveau=havo&vak=bi[&domein=C] → open vak (+ optioneel domein)
   const _qp=new URLSearchParams(location.search);
-  const _qniv=_qp.get('niveau'), _qvak=_qp.get('vak'), _qdom=_qp.get('domein');
+  const _qniv=_qp.get('niveau'), _qvak=_qp.get('vak'), _qdom=_qp.get('domein')||_qp.get('leerdoel');
+  // ?oefen=1 (vanaf een leerpagina): meteen de adaptieve quiz van dat leerdoel starten
+  try{if(_qdom&&_qp.get('oefen'))sessionStorage.setItem('_slagio_start_qmode','snel');}catch(e){}
   if(_qniv&&_qvak&&_VAK_SLUG[_qvak]){
     if(_qdom){
       // Domein deep-link: bewaar domein en route via hash (openVak pakt het op).

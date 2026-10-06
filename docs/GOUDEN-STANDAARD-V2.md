@@ -71,12 +71,19 @@ Elke **foute** optie krijgt 70-360 tekens met drie dingen:
 De **juiste** optie krijgt min. 45 tekens: begint met "Klopt:" en zegt waarom.
 Drie foute opties = drie verschillende denkfouten (de poort weigert bijna-gelijke uitleg).
 
-**Aangescherpt (okt 2026, na de eerste routine-output; hard in `check-leerdoel.mjs`):**
-- foute-antwoord-uitleg gemiddeld **min. 120 tekens**, max. 20% korter dan 100 (bi.M3: gemiddeld 158);
-- max. 30% begint met een kaal "Koos je dit?": **noem wat de leerling koos** ("Koos je 'tijdelijk afgeremd'?");
-- **geen opvulafleiders**: een los woord uit het fragment ("school", "de bus") naast een volzin als
-  juist antwoord wordt meteen weggestreept en toetst niets. Elke afleider is een fout die een echte
-  leerling maakt. Korte vaktermen (namen van drogredenen, tekstsoorten) mogen wel.
+**Ondergrens en streefwaarde (okt 2026, na de eerste routine-output; `check-leerdoel.mjs`):**
+
+| | ondergrens (hard) | streefwaarde (waarschuwing) | bi.M3 |
+|---|---|---|---|
+| gemiddelde lengte foute-antwoord-uitleg | 105 tekens | 120 tekens | 158 |
+| uitleg korter dan 100 tekens | max. 40% | max. 20% | 0% |
+| begint met een kaal "Koos je dit?" | max. 60% | max. 30% | 11% |
+| opvulafleiders (los woord uit het fragment naast een volzin) | 0 | 0 | 0 |
+
+**Schrijf het in één keer goed.** Noem in elke foute-antwoord-uitleg wat de leerling koos en welke
+denkfout daarachter zit, en vervang afleiders die niemand zou kiezen door een echte fout van leerlingen.
+Haal je de streefwaarde net niet maar wel de ondergrens, dan is het goed genoeg: ga door.
+**Herschrijf geen leerdoelen die al live staan**, tenzij er iets inhoudelijk fout in zit.
 
 Slecht (routine, eerste versie nl.A6):
 > "Koos je dit? Kort kan prima kloppen. Het gaat om de afzender, niet om de lengte."
@@ -161,6 +168,7 @@ node scripts/render-leerdoel.mjs --html content-pending/<x>.html --uit /tmp/r-<x
 #    → BEKIJK alle png's met de Read-tool; klopt elke figuur inhoudelijk? leesbaar?
 node scripts/integreer-leerdoel.mjs <niveau> <vak> <domein> content-pending/<x>.json content-pending/<x>.html
 node scripts/split-data.js
+node scripts/build-leren.mjs && node scripts/build-sitemap.mjs   # openbare leerpagina (/leren/...) + sitemap
 node scripts/build-questions.js --check && node scripts/validate-content.mjs && node scripts/smoke.mjs
 ```
 

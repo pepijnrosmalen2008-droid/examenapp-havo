@@ -3,6 +3,7 @@
 //  Client-side full-text zoek over examens, begrippen, uitleg & oefenvragen.
 //  Index wordt lazy opgebouwd bij eerste opening; ce_data.js lazy geladen.
 // ═══════════════════════════════════════════════════════════
+let _zkPassages=[],_zkAntwT=0;
 let _zoekIndex=null,_zoekBuilt=false,_zoekCeLoaded=(typeof CE_OE!=='undefined');
 const _zoekState={all:[],filter:'all',niv:'all',vak:'all',shown:0,toks:[]};
 const _ZK_PAGE=25;
@@ -46,6 +47,19 @@ function _zkIndexVakken(vakken,niveau,out){
         out.push({type:'begrip',vakId:v.id,domId:d.id,vak:v.naam,niveau,dom:d.naam,
           title:o,norm:_zkNorm(o+' '+v.naam+' '+d.naam)});
       });
+      // Begrippen met hun definitie (domein + leerdoel-modules): het directe antwoord op "wat is X?"
+      (d.begrippen||[]).forEach(b=>{ if(!b||!b.t)return;
+        out.push({type:'begrip',vakId:v.id,domId:d.id,vak:v.naam,niveau,dom:d.naam,title:b.t,answer:b.d,def:1,
+          norm:_zkNorm(b.t+' '+(b.d||''))}); });
+      (d.leerdoelen||[]).forEach(l=>{
+        out.push({type:'uitleg',vakId:v.id,domId:l.id,vak:v.naam,niveau,dom:d.naam,ld:1,
+          title:l.naam,ctx:l.beschrijving||'',norm:_zkNorm([v.naam,l.naam,l.beschrijving,(l.onderwerpen||[]).join(' ')].join(' '))});
+        (l.begrippen||[]).forEach(b=>{ if(!b||!b.t)return;
+          out.push({type:'begrip',vakId:v.id,domId:l.id,vak:v.naam,niveau,dom:l.naam,title:b.t,answer:b.d,def:1,ld:1,
+            norm:_zkNorm(b.t+' '+(b.d||''))}); });
+        (l.sv||[]).forEach(qq=>{const ans=(qq.o&&typeof qq.c==='number')?qq.o[qq.c]:qq.u;
+          out.push({type:'oefen',vakId:v.id,domId:l.id,vak:v.naam,niveau,dom:l.naam,title:qq.v,answer:ans,norm:_zkNorm((qq.v||'')+' '+(ans||''))}); });
+      });
       ['sv','oe'].forEach(k=>{
         (d[k]||[]).forEach(qq=>{
           const ans=(qq.a&&typeof qq.c==='number')?qq.a[qq.c]:(qq.u||qq.a);
@@ -64,6 +78,24 @@ function buildZoekIndex(){
   vwo.forEach(v=>vaknaam[v.id]={naam:v.naam,niveau:'vwo'});
   _zkIndexVakken(havo,'havo',out);
   _zkIndexVakken(vwo,'vwo',out);
+  if(typeof VAKKEN_VMBO!=='undefined'){VAKKEN_VMBO.forEach(v=>vaknaam[v.id]=vaknaam[v.id]||{naam:v.naam,niveau:'vmbo'});_zkIndexVakken(VAKKEN_VMBO,'vmbo',out);}
+  // Alinea's uit de rijke samenvattingen: hier komt de uitleg in de antwoordkaart vandaan.
+  _zkPassages=[];
+  if(typeof SAM_RICH!=='undefined'){
+    const naamVan={};
+    [['havo',havo],['vwo',vwo],['vmbo',(typeof VAKKEN_VMBO!=='undefined')?VAKKEN_VMBO:[]]].forEach(([n,V])=>V.forEach(v=>(v.domeinen||[]).forEach(d=>{
+      naamVan[n+'_'+v.id+'_'+d.id]={niveau:n,vakId:v.id,vak:v.naam,domId:d.id,dom:d.naam};
+      (d.leerdoelen||[]).forEach(l=>naamVan[n+'_'+v.id+'_'+l.id]={niveau:n,vakId:v.id,vak:v.naam,domId:l.id,dom:l.naam,ld:1});
+    })));
+    Object.keys(SAM_RICH).forEach(k=>{
+      const bron=naamVan[k]; if(!bron)return;
+      const html=String(SAM_RICH[k]||'').replace(/<svg[\s\S]*?<\/svg>/g,' ').replace(/<div class="sam-clip-caps">[\s\S]*?<\/div>/g,' ');
+      (html.match(/<p[^>]*>[\s\S]*?<\/p>|<td>[\s\S]*?<\/td>\s*<td>[\s\S]*?<\/td>|<div class="sam-(?:tip|onthoud|intro)"[^>]*>[\s\S]*?<\/div>/g)||[]).forEach(blok=>{
+        const t=_zkStrip(blok).replace(/\s+/g,' ').replace(/\s+([,.;:!?)])/g,'$1').replace(/\(\s+/g,'(').trim(); if(t.length<40)return;
+        _zkPassages.push(Object.assign({text:t,norm:_zkNorm(t),tabel:blok.slice(0,3)==='<td'},bron));
+      });
+    });
+  }
   if(typeof EXAMENS!=='undefined'){
     Object.keys(EXAMENS).forEach(vid=>{
       (EXAMENS[vid]||[]).forEach(ex=>{
@@ -100,7 +132,9 @@ function _zkEnsureData(cb){
   // De zoekindex omvat álle vragen + samenvattingen; hydrateer beide niveaus volledig
   // (per-vak vraagbestanden) zodat sv/oe/sam in de index komen. Alleen bij zoekgebruik.
   const eav=(typeof ensureAllVakData==='function');
-  function vwo(){ if(eav)ensureAllVakData('vwo',loadCe); else loadCe(); }
+  function sam(){ const n=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo';
+    if(typeof ensureSamData==='function'&&typeof samReady==='function'&&!samReady(n)){ensureSamData(n,loadCe);} else loadCe(); }
+  function vwo(){ if(eav)ensureAllVakData('vwo',sam); else sam(); }
   function havo(){ if(eav)ensureAllVakData('havo',vwo); else vwo(); }
   havo();
 }
@@ -136,6 +170,7 @@ function zoekGoto(niveau,vakId,kind,domId){
     }
     if(window.openVak)openVak(vakId);
     if(kind==='quiz'&&domId){ setTimeout(()=>{try{openQmode(domId);}catch(e){}},70); }
+    else if(kind==='uitleg'&&domId){ setTimeout(()=>{try{openDomein(domId);}catch(e){}},70); }
     else if(domId){ setTimeout(()=>{const el=document.querySelector('#dlist [data-domein-id="'+domId+'"]');if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('dc2-flash');setTimeout(()=>el.classList.remove('dc2-flash'),1400);}},260); }
   }catch(err){ if(window.showToast)showToast('Kon niet openen - probeer opnieuw'); }
 }
@@ -229,17 +264,19 @@ function _zkSearch(query){
         stats=document.getElementById('zoek-stats'),more=document.getElementById('zoek-more'),
         filt=document.getElementById('zoek-filters');
   if(!_zkNorm(query)){
+    const _a=document.getElementById('zoek-antw'); if(_a)_a.innerHTML='';
     _zoekState.all=[];tabs.style.display='none';filt.style.display='none';stats.innerHTML='';more.innerHTML='';
     _zkEmpty();return;
   }
   // Typt iemand al terwijl de vakdata nog laadt? Dan wachten; openZoek zoekt opnieuw zodra de index klaar is.
   if(!_zoekBuilt||!_zoekIndex){tabs.style.display='none';filt.style.display='none';stats.innerHTML='';more.innerHTML='';el.innerHTML='<div class="zk-state"><p>Even laden…</p></div>';return;}
   _zoekState.toks=_zkNorm(query).split(' ').filter(t=>t.length>=2);
-  _zoekState.all=_zkRun(query);_zoekState.filter='all';
+  _zoekState.all=_zkRun(_zkTerm(query)||query);_zoekState.filter='all';
+  const antw=document.getElementById('zoek-antw'); if(antw){ clearTimeout(_zkAntwT); _zkAntwT=setTimeout(()=>{antw.innerHTML=_zkAntwoordHtml(query);},260); }
   filt.style.display=_zoekState.all.length?'flex':'none';
   if(!_zoekState.all.length){
     tabs.style.display='none';stats.innerHTML='';more.innerHTML='';
-    el.innerHTML='<div class="zk-state"><h3>Niets gevonden voor "'+_zkEsc(query)+'"</h3><p>Probeer een ander trefwoord of begrip.</p></div>';
+    el.innerHTML='';
     return;
   }
   _zkBuildFilters();
@@ -302,7 +339,7 @@ function openZoek(){
 function _zkWire(){
   const q=document.getElementById('zoek-q'),clr=document.getElementById('zoek-clr'),
         chips=document.getElementById('zoek-chips'),res=document.getElementById('zoek-res');
-  const SUGG=[['CO2','scheikunde'],['elasticiteit','economie'],['osmose','biologie'],['afgeleide','wiskunde'],['inflatie','economie'],['DNA','biologie'],['argumentatie','nederlands']];
+  const SUGG=[['wat is osmose?','biologie'],['wat is inflatie?','economie'],['hoofdgedachte','nederlands'],['drogreden','nederlands'],['elasticiteit','economie'],['afgeleide','wiskunde'],['denaturatie','biologie']];
   chips.innerHTML=SUGG.map(s=>'<button class="zk-chip" data-q="'+s[0]+'">'+s[0]+'<small>'+s[1]+'</small></button>').join('');
   [].forEach.call(chips.querySelectorAll('.zk-chip'),c=>c.onclick=()=>{q.value=c.getAttribute('data-q');_zkSearch(q.value);q.focus();});
   let deb; q.addEventListener('input',()=>{clearTimeout(deb);const v=q.value;deb=setTimeout(()=>_zkSearch(v),120);});
@@ -322,3 +359,82 @@ document.addEventListener('keydown',function(e){
   e.preventDefault();
   if(window.openZoek)openZoek();
 });
+
+
+// ═══════ VRAAG HET SLAGIO: antwoordkaart uit de eigen stof ═══════
+// "wat is osmose?" → definitie (begrip) + de bijbehorende uitleg uit de samenvatting, met
+// knoppen naar de uitleg en het oefenen. Staat het er niet in, dan vraag je door aan Vonk
+// (de AI krijgt de best passende Slagio-stof als bron mee). Elke vraag zonder antwoord wordt
+// gemeten (event vraag_slagio), zodat we zien welke stof nog ontbreekt.
+const _ZK_VRAAGWOORD=/^(wat (is|zijn|betekent|betekenen|houdt|bedoel(t|en)? (je|ze|men) met)( een| de| het)?|wat wordt (er )?bedoeld met( een| de| het)?|hoe (werkt|werken|ontstaat|ontstaan|verloopt|bereken je)( een| de| het)?|waarom|leg (eens )?uit( wat)?|uitleg( over| van)?|definitie( van)?|verschil tussen)\s+/;
+function _zkTerm(q){
+  let t=_zkNorm(q).replace(_ZK_VRAAGWOORD,'').replace(/\s+(in|bij|voor) (de |het )?(biologie|scheikunde|natuurkunde|economie|aardrijkskunde|geschiedenis|nederlands|engels|wiskunde|havo|vwo|vmbo)\b.*$/,'');
+  return t.replace(/\s+(in|uit)$/,'').trim();
+}
+function _zkSnippet(text,toks,n){
+  const low=_zkNorm(text); let pos=-1;
+  for(const t of toks){const i=low.indexOf(t);if(i>=0&&(pos<0||i<pos))pos=i;}
+  if(pos<0||text.length<=n)return _zkClip(text,n);
+  const zinStart=Math.max(0,text.lastIndexOf('. ',Math.max(0,pos-20))+2);
+  const s=text.slice(zinStart>pos?0:zinStart);
+  return _zkClip(s,n);
+}
+function _zkAntwoord(query){
+  const term=_zkTerm(query); if(!term||term.length<2)return null;
+  const toks=term.split(' ').filter(t=>t.length>=2), niv=(typeof APP_LEVEL!=='undefined'&&APP_LEVEL)||'havo';
+  // 1. begrip met precies deze term (eigen niveau en leerdoel-modules eerst)
+  let best=null,bs=0;
+  (_zoekIndex||[]).forEach(e=>{
+    if(e.type!=='begrip'||!e.def||!e.answer)return;
+    const tn=_zkNorm(e.title); let s=0;
+    if(tn===term)s=100; else if(tn.split(' ').includes(term)&&term.length>=4)s=55; else if(term.length>=5&&tn.indexOf(term)===0)s=50; else return;
+    if(e.niveau===niv)s+=20; if(e.ld)s+=10;
+    if(s>bs){bs=s;best=e;}
+  });
+  // 2. beste alinea uit een samenvatting
+  let pas=null,ps=0;
+  _zkPassages.forEach(p=>{
+    if(best&&p.tabel)return;   // de begrippentabel herhaalt de definitie; liever een alinea met uitleg
+    let s=0,alle=true;
+    if(p.norm.indexOf(term)>=0)s+=30;
+    toks.forEach(t=>{if(p.norm.indexOf(t)>=0)s+=8;else alle=false;});
+    if(!alle&&s<30)return;
+    if(p.niveau===niv)s+=12; if(p.ld)s+=6;
+    if(best&&p.vakId===best.vakId)s+=10;
+    if(best&&p.domId===best.domId)s+=10;
+    if(s>ps){ps=s;pas=p;}
+  });
+  if(!best&&!pas)return {leeg:true,term};
+  const bron=best||pas;
+  return {term,toks,begrip:best,pas,niveau:bron.niveau,vakId:bron.vakId,vak:bron.vak,domId:bron.domId,dom:best?best.dom:pas.dom};
+}
+function _zkAntwoordHtml(query){
+  const a=_zkAntwoord(query);
+  if(!a)return '';
+  const qEsc=_zkEsc(query);
+  try{if(typeof trackEvent==='function'&&!_zkAntwGemeten[query]){_zkAntwGemeten[query]=1;trackEvent('vraag_slagio',{gevonden:!a.leeg,q:String(query).slice(0,80)});}}catch(e){}
+  if(a.leeg){
+    return '<div class="zk-antw zk-antw-leeg"><div class="zk-antw-kop">Vraag het Slagio</div>'
+      +'<p>Hier heb ik nog geen uitleg over in de Slagio-stof. Vonk kan je wel verder helpen.</p>'
+      +'<div class="zk-antw-acties"><button class="zk-antw-knop" onclick="_zkVraagVonk()">Vraag het aan Vonk</button></div></div>';
+  }
+  _zkLaatste=a;
+  const niv=(a.niveau||'').toUpperCase();
+  let html='<div class="zk-antw"><div class="zk-antw-kop">Antwoord uit Slagio<span>'+_zkEsc(a.vak)+(niv?' '+niv:'')+' · '+_zkEsc(a.dom||'')+'</span></div>';
+  if(a.begrip)html+='<p class="zk-antw-def"><b>'+_zkEsc(a.begrip.title)+'</b>: '+_zkEsc(a.begrip.answer)+'</p>';
+  if(a.pas&&(!a.begrip||_zkNorm(a.pas.text).indexOf(_zkNorm(a.begrip.answer).slice(0,40))<0))html+='<p class="zk-antw-pas">'+_zkHl(_zkSnippet(a.pas.text,a.toks,340),a.toks)+'</p>';
+  const g="zoekGoto('"+(a.niveau||'')+"','"+a.vakId+"',";
+  html+='<div class="zk-antw-acties">'
+    +'<button class="zk-antw-knop" onclick="'+g+"'uitleg','"+a.domId+"')\">Lees de uitleg"+_ZK_ARROW+'</button>'
+    +'<button class="zk-antw-knop licht" onclick="'+g+"'quiz','"+a.domId+"')\">Oefen dit</button>"
+    +'<button class="zk-antw-knop licht" onclick="_zkVraagVonk()">Vraag door aan Vonk</button></div></div>';
+  return html;
+}
+const _zkAntwGemeten={}; let _zkLaatste=null;
+function _zkVraagVonk(){
+  const q=(document.getElementById('zoek-q')||{}).value||'';
+  const a=_zkLaatste&&_zkTerm(q)===_zkLaatste.term?_zkLaatste:null;
+  let bron='';
+  if(a){ if(a.begrip)bron+=a.begrip.title+': '+a.begrip.answer+'\n'; if(a.pas)bron+=_zkClip(a.pas.text,900); }
+  try{ if(typeof openVonkChat==='function') openVonkChat({vak:a?a.vak:'',onderwerp:a?(a.begrip?a.begrip.title:a.dom):'',seedUser:q,bron:bron.slice(0,1200)}); }catch(e){}
+}

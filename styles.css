@@ -11501,3 +11501,46 @@ html #arc-stage.arc-t-clash,html.dark #arc-stage.arc-t-clash,html #arc-stage.arc
 .mr-knoppen.uit{opacity:.35;pointer-events:none}
 .ach-meer{display:inline-block;margin-left:4px;font-size:.85em;opacity:.75;font-weight:700}
 @media (prefers-reduced-motion:reduce){.mr-wijzer.tik{animation:none}.mr-uitslag{transition:none}}
+
+/* ═══════ VRAAG HET SLAGIO: antwoordkaart ═══════ */
+#zoek-antw:empty{display:none}
+#zoek-antw{margin:4px 0 14px}
+.zk-antw{background:var(--s);border:1.5px solid color-mix(in srgb,var(--or) 35%,var(--bo));border-radius:18px;padding:16px 16px 14px;box-shadow:0 10px 28px -18px rgba(var(--or-rgb),.55)}
+.zk-antw-kop{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-family:var(--font-head);font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--or);margin-bottom:8px}
+.zk-antw-kop span{font-weight:600;letter-spacing:0;text-transform:none;color:var(--mu);font-size:12.5px}
+.zk-antw-def{font-size:16px;line-height:1.55;margin:0 0 8px;color:var(--dk)}
+.zk-antw-pas{font-size:14.5px;line-height:1.6;margin:0 0 10px;color:var(--mu)}
+.zk-antw-pas mark{background:color-mix(in srgb,var(--or) 18%,transparent);color:inherit;border-radius:3px;padding:0 2px}
+.zk-antw-leeg p{margin:0 0 10px;color:var(--mu)}
+.zk-antw-acties{display:flex;flex-wrap:wrap;gap:8px}
+.zk-antw-knop{display:inline-flex;align-items:center;gap:6px;border:0;border-radius:12px;padding:10px 14px;background:var(--or);color:#fff;font-family:var(--font-head);font-weight:700;font-size:14px;cursor:pointer}
+.zk-antw-knop.licht{background:color-mix(in srgb,var(--or) 10%,var(--s));color:var(--or);border:1px solid color-mix(in srgb,var(--or) 25%,var(--bo))}
+.zk-antw-knop svg{width:14px;height:14px}
+
+/* ═══════ EXAMENBIBLIOTHEEK ═══════ */
+.hm-exbieb{display:flex;align-items:center;gap:12px;width:100%;text-align:left;margin:10px 0 0;padding:13px 14px;border-radius:16px;border:1px solid var(--bo);background:var(--s);color:var(--dk);font-family:var(--font);cursor:pointer;transition:transform .14s cubic-bezier(.34,1.4,.6,1)}
+.hm-exbieb:active{transform:scale(.985)}
+.hm-exbieb-ic{flex:0 0 auto;width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:21px;background:color-mix(in srgb,var(--or) 12%,var(--s))}
+.hm-exbieb-t{flex:1;min-width:0}.hm-exbieb-t b{display:block;font-family:var(--font-head);font-weight:800;font-size:15px}
+.hm-exbieb-t small{display:block;color:var(--mu);font-size:12.5px;line-height:1.35;margin-top:2px}
+.hm-exbieb-pijl{color:var(--mu)}
+.eb-wrap{padding-top:8px;padding-bottom:90px}
+.eb-titel{font-family:var(--font-head);font-weight:800;font-size:clamp(24px,5vw,32px);letter-spacing:-.6px;margin:6px 0 6px}
+.eb-sub{color:var(--mu);margin:0 0 14px;max-width:62ch}
+.eb-kies{display:flex;align-items:center;gap:10px;margin:0 0 16px;font-weight:700}
+.eb-kies select{flex:1;max-width:340px;padding:10px 12px;border-radius:12px;border:1px solid var(--bo);background:var(--s);color:var(--dk);font:inherit;font-weight:600}
+.eb-acties{display:grid;gap:10px;margin:0 0 18px}
+.eb-actie{display:flex;align-items:flex-start;gap:12px;text-align:left;padding:14px;border-radius:16px;border:1.5px solid color-mix(in srgb,var(--or) 30%,var(--bo));background:var(--s);color:var(--dk);font-family:var(--font);cursor:pointer}
+.eb-actie b{display:block;font-family:var(--font-head);font-weight:800;font-size:15px}.eb-actie small{display:block;color:var(--mu);font-size:13px;line-height:1.4;margin-top:2px}
+.eb-ic{flex:0 0 auto;width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:19px;background:color-mix(in srgb,var(--or) 12%,var(--s))}
+.eb-h{font-family:var(--font-head);font-weight:800;font-size:18px;margin:22px 0 4px}
+.eb-uitleg,.eb-bron{color:var(--mu);font-size:13px;margin:0 0 12px}
+.eb-jaar{border:1px solid var(--bo);border-radius:14px;background:var(--s);padding:10px 12px;margin:0 0 10px}
+.eb-jaar-kop{font-family:var(--font-head);font-weight:800;font-size:16px;margin-bottom:6px}
+.eb-tv{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:6px 0;border-top:1px solid var(--bo)}
+.eb-tv:first-of-type{border-top:0}
+.eb-tv>span{min-width:72px;font-size:13px;font-weight:700;color:var(--mu)}
+.eb-knoppen{display:flex;flex-wrap:wrap;gap:6px}
+.eb-pdf{border:0;border-radius:10px;padding:8px 11px;background:var(--or);color:#fff;font-family:var(--font-head);font-weight:700;font-size:13px;cursor:pointer}
+.eb-pdf.licht{background:color-mix(in srgb,var(--or) 10%,var(--s));color:var(--or);border:1px solid color-mix(in srgb,var(--or) 25%,var(--bo))}
+.eb-pdf.goed{background:#15803d}

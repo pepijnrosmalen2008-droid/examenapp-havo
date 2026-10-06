@@ -261,6 +261,16 @@ try {
   bad('gouden-standaard-poort GEFAALD (' + (out || 'zie node scripts/validate-goldstandard.mjs') + ')');
 }
 
+// ── openbare leerpagina's (leren/**, llms.txt) lopen mee met de content ──
+group('Leerpagina\'s');
+try {
+  const { execFileSync } = await import('node:child_process');
+  const out = execFileSync(process.execPath, [path.join(ROOT, 'scripts', 'build-leren.mjs'), '--check'], { stdio: 'pipe' }).toString().trim();
+  ok(out.replace(/^✓\s*/, ''));
+} catch (e) {
+  bad('leerpagina\'s verouderd: draai node scripts/build-leren.mjs (en daarna node scripts/build-sitemap.mjs)');
+}
+
 // ── uitslag ──
 console.log('\n' + (fails ? '✗ ' + fails + ' van ' + checks + ' checks GEFAALD' : '✓ alle ' + checks + ' checks geslaagd'));
 process.exit(fails ? 1 : 0);

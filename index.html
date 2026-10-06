@@ -436,6 +436,7 @@
     <li>Berekeningsvragen automatisch gefilterd uit de snelle quiz (20 sec niet genoeg)</li>
   </ul>
   <p>Slagio is te vinden op <a href="https://slagio.nl">slagio.nl</a>, <a href="https://slagio.nl/havo">slagio.nl/havo</a>, <a href="https://slagio.nl/vwo">slagio.nl/vwo</a> en <a href="https://slagio.nl/vmbo">slagio.nl/vmbo</a>. Schakel JavaScript in om de app te gebruiken.</p>
+  <p><a href="https://slagio.nl/leren/">Uitleg, samenvattingen en oefenvragen per onderwerp</a></p>
 </noscript>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -713,7 +714,7 @@
       <span class="hnav-chip" id="home-level-chip">HAVO 2027</span>
     </div>
     <div class="hnav-right">
-      <button class="hnav-icon-btn hnav-zoek-btn" onclick="openZoek()" title="Zoeken" aria-label="Zoeken" data-tip="Zoeken"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+      <button class="hnav-icon-btn hnav-zoek-btn" onclick="openZoek()" title="Vraag het Slagio" aria-label="Vraag het Slagio" data-tip="Vraag het Slagio"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
       <button class="hnav-icon-btn" onclick="showIntroModal()" title="Hoe werkt Slagio?" aria-label="Hoe werkt Slagio?"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></button>
       <button class="hnav-icon-btn snd-toggle-btn" id="home-snd-btn" onclick="toggleSound()" data-nosound aria-label="Geluid aan/uit" data-tip="Geluid"></button>
       <button class="hnav-icon-btn theme-btn" onclick="toggleDark()" id="theme-btn-home" aria-label="Nachtmodus" data-tip="Nachtmodus">
@@ -775,6 +776,12 @@
     <small class="hmt-sub">Je verwachte cijfer, zwakke punten &amp; je plan voor vandaag</small>
   </span>
   <span class="hmt-arr" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+</button></div>
+<!-- ECHTE EXAMENS: de examenbibliotheek -->
+<div class="w"><button class="hm-exbieb" onclick="openExamenBieb()" aria-label="Open de echte examens">
+  <span class="hm-exbieb-ic" aria-hidden="true">📚</span>
+  <span class="hm-exbieb-t"><b>Echte examens</b><small>Oude examens met antwoorden, een examen met klok en echte examenvragen</small></span>
+  <span class="hm-exbieb-pijl" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
 </button></div>
 <!-- SPELEN: de Arcade (Slagio Clash, Kingdom en zes minigames) -->
 <div class="w"><button class="play-hero" onclick="arcadeOpen()" aria-label="Open de Arcade">
@@ -934,22 +941,39 @@
 </nav>
 <div class="w zoek-wrap">
   <div class="zoek-hero">
-    <h1 class="zoek-h">Doorzoek <em>elk</em> examen, begrip &amp; uitleg</h1>
-    <p class="zoek-sub">Eén zoekbalk over alle CE-examens, oud-examenvragen, begrippen, samenvattingen en oefenvragen - HAVO &amp; VWO.</p>
+    <h1 class="zoek-h">Vraag het <em>Slagio</em></h1>
+    <p class="zoek-sub">Typ een vraag of begrip, zoals "wat is osmose?". Je krijgt het antwoord uit de Slagio-stof, met de uitleg en oefenvragen erbij.</p>
   </div>
   <div class="zoek-search">
     <div class="zoek-search-inner">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <input id="zoek-q" type="search" placeholder="Zoek op onderwerp, begrip of trefwoord…" autocomplete="off" spellcheck="false" aria-label="Zoeken">
+      <input id="zoek-q" type="search" placeholder="Vraag of zoek: wat is osmose?" autocomplete="off" spellcheck="false" aria-label="Zoeken">
       <button class="zoek-clr" id="zoek-clr" aria-label="Wissen"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
     </div>
   </div>
   <div class="zoek-chips" id="zoek-chips"></div>
+  <div id="zoek-antw" aria-live="polite"></div>
   <div class="zoek-filters" id="zoek-filters" style="display:none"></div>
   <div class="zoek-tabs" id="zoek-tabs" style="display:none"></div>
   <div class="zoek-stats" id="zoek-stats"></div>
   <div class="zoek-res" id="zoek-res"></div>
   <div class="zoek-more" id="zoek-more"></div>
+</div>
+</div>
+
+<!-- EXAMENBIBLIOTHEEK -->
+<div id="sc-examens" class="sc">
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div>
+    <button class="bk" onclick="history.length>1?history.back():show('sc-home')">Terug</button>
+  </div>
+</nav>
+<div class="w eb-wrap">
+  <h1 class="eb-titel">Echte examens</h1>
+  <p class="eb-sub">Alle centrale examens van je niveau op één plek: oefenen, een examen met klok en het archief met antwoorden.</p>
+  <label class="eb-kies"><span>Vak</span><select id="eb-vak" aria-label="Kies een vak"></select></label>
+  <div id="eb-inhoud"></div>
 </div>
 </div>
 
@@ -2219,6 +2243,7 @@
 <script defer src="/herhalen.js"></script>
 <script defer src="/v4.js"></script>
 <script defer src="/zoek.js"></script>
+<script defer src="/examenbieb.js"></script>
 <script defer src="/ce-oud.js"></script>
 <script defer src="/klas.js"></script>
 <script defer src="/notif-engine.js"></script>
@@ -2257,6 +2282,7 @@
     <div class="snav-section">
       <div class="snav-label">Meer</div>
       <button class="snav-btn snav-trainer" onclick="openExamentrainer()" aria-label="Examentrainer"><span class="snav-ic">🎯</span>Examentrainer</button>
+      <button class="snav-btn" data-screen="sc-examens" onclick="openExamenBieb()" aria-label="Echte examens"><span class="snav-ic">📚</span>Echte examens</button>
       <button class="snav-btn" data-screen="sc-arcade" onclick="arcadeOpen()" aria-label="Arcade"><span class="snav-ic"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10.5v4"/><path d="M5 12.5h4"/><circle cx="15.5" cy="11.5" r=".6"/><circle cx="18" cy="14" r=".6"/></svg></span>Arcade</button>
       <button class="snav-btn" data-screen="sc-calc" onclick="show('sc-calc');setTimeout(prefillCalcFromSaved,50)" aria-label="Cijfercalculator"><span class="snav-ic"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="8" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="8" y1="18" x2="14" y2="18"/></svg></span>Cijfers</button>
       <button class="snav-btn" onclick="openRapport()" aria-label="Voortgang"><span class="snav-ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>Voortgang</button>

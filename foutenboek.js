@@ -559,7 +559,7 @@ function _vchatMd(t) {
 }
 function openVonkChat(opts) {
   opts = opts || {};
-  _vchat = { messages: [], ctx: { vak: opts.vak || '', niveau: (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : ''), onderwerp: opts.onderwerp || '' }, busy: false };
+  _vchat = { messages: [], ctx: { vak: opts.vak || '', niveau: (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : ''), onderwerp: opts.onderwerp || '' }, bron: opts.bron || '', busy: false };
   let el = document.getElementById('vonk-chat');
   if (!el) { el = document.createElement('div'); el.id = 'vonk-chat'; document.body.appendChild(el); }
   const sub = opts.onderwerp ? _fbEsc(opts.onderwerp) : (opts.vak ? _fbEsc(opts.vak) : 'je studiecoach');
@@ -632,7 +632,9 @@ async function sendVonkChat(seed) {
   const text = (seed != null && typeof seed === 'string') ? seed : (ta ? ta.value.trim() : '');
   if (!text) return;
   try { const ch = document.getElementById('vchat-chips'); if (ch) ch.remove(); } catch (e) {}
-  _vchat.messages.push({ role: 'user', content: text });
+  // Eerste vraag vanuit "Vraag het Slagio": de passende Slagio-stof gaat als bron mee (niet zichtbaar in de chat).
+  const _metBron = (_vchat.bron && !_vchat.messages.length) ? text + '\n\n[Uitleg uit de Slagio-stof, gebruik dit als bron en spreek het niet tegen:]\n' + _vchat.bron : text;
+  _vchat.messages.push({ role: 'user', content: _metBron });
   _vchatPush('user', text, false);
   if (ta) { ta.value = ''; _vchatGrow(ta); }
   _vchat.busy = true; const send = document.getElementById('vchat-send'); if (send) send.disabled = true;

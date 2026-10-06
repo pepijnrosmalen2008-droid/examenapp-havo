@@ -315,7 +315,10 @@ function openPdfViewer(url,title){
       loading.classList.add('hidden');
       error.classList.add('show');
     };
-    iframe.src=url;
+    // Telefoons (Android/iOS) tonen een pdf niet (of alleen de eerste pagina) in een iframe.
+    // Daar laden we hem via een pdf-weergave, zodat de leerling in de app blijft.
+    const _mob=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Macintosh/.test(navigator.userAgent));
+    iframe.src=_mob?'https://docs.google.com/viewer?embedded=true&url='+encodeURIComponent(url):url;
     // Timeout fallback - if PDF doesn't load in 12s, show error
     setTimeout(()=>{
       if(!loading.classList.contains('hidden')){

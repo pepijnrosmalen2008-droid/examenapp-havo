@@ -4902,9 +4902,9 @@ var VAKKEN = [
         "v": "Wat is het argument in dit fragment?",
         "o": [
          "fietsen naar school is beter dan met de bus gaan",
-         "school",
+         "fietsen is gezonder",
          "je bent er sneller",
-         "de bus"
+         "dus moet iedereen fietsen"
         ],
         "c": 2,
         "d": 1,
@@ -4912,9 +4912,9 @@ var VAKKEN = [
         "u": "Het argument geeft de reden voor het standpunt, na \"want\".",
         "uo": [
          "Koos je dit? Dit is het standpunt, wat verdedigd wordt. Het argument is de reden daarvoor.",
-         "Koos je dit? \"School\" is geen reden of bewering, het is alleen een woord.",
+         "Koos je 'fietsen is gezonder'? Dat is misschien waar, maar het staat niet in het fragment. Bij het argument zoek je de reden die de schrijver zelf geeft, meestal na 'want': je bent er sneller.",
          "Klopt: dit staat na \"want\" en geeft een reden voor het standpunt dat fietsen beter is.",
-         "Koos je dit? De bus wordt vergeleken, hij is geen reden voor het standpunt."
+         "Koos je 'dus moet iedereen fietsen'? Dan zoek je een conclusie of oproep, maar die staat er niet. Het argument is de reden waarom fietsen beter zou zijn, en die volgt na 'want'."
         ],
         "uh": "Standpunt eerst, reden na want.",
         "ctx": "Fietsen naar school is beter dan met de bus gaan, want je bent er sneller."

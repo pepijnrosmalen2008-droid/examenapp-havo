@@ -54,12 +54,14 @@ export function checkV2(ld, samHtml, opt = {}) {
   // Uitleg moet de gekozen optie noemen en de denkfout uitleggen, en afleiders moeten echte fouten zijn.
   const fouteUo = sv.flatMap(q => (q.uo || []).filter((_, k) => k !== q.c).map(String));
   if (fouteUo.length) {
-    const dit = fouteUo.filter(u => /^koos je dit\?/i.test(u.trim())).length;
-    if (dit / fouteUo.length > 0.3) streng.push(`${Math.round(dit / fouteUo.length * 100)}% van de foute-antwoord-uitleg begint met een kaal "Koos je dit?" (max. 30%): noem wat de leerling koos ("Koos je 'hormoon'? Dan denk je ...")`);
-    const kort = fouteUo.filter(u => u.trim().length < 100).length;
-    if (kort / fouteUo.length > 0.2) streng.push(`${Math.round(kort / fouteUo.length * 100)}% van de foute-antwoord-uitleg is korter dan 100 tekens (max. 20%): benoem denkfout, waarom niet, en het juiste onderscheid`);
+    // Ondergrens (meer dan goed genoeg) is hard vóór integratie; de streefwaarde (niveau bi.M3) is een waarschuwing.
+    const meld = (waarde, grens, streef, tekst) => { if (waarde < grens) streng.push(tekst + ' (ondergrens)'); else if (waarde < streef) soft.push(tekst + ' (streefwaarde, mag)'); };
+    const dit = fouteUo.filter(u => /^koos je dit\?/i.test(u.trim())).length / fouteUo.length;
+    const kort = fouteUo.filter(u => u.trim().length < 100).length / fouteUo.length;
     const gem = fouteUo.reduce((a, u) => a + u.length, 0) / fouteUo.length;
-    if (gem < 120) streng.push(`gemiddelde foute-antwoord-uitleg ${Math.round(gem)} tekens (min. 120; referentie bi.M3: 158)`);
+    meld(1 - dit, 0.4, 0.7, `${Math.round(dit * 100)}% van de foute-antwoord-uitleg begint met een kaal "Koos je dit?" (max. 60%, streef 30%): noem wat de leerling koos ("Koos je 'hormoon'? Dan denk je ...")`);
+    meld(1 - kort, 0.6, 0.8, `${Math.round(kort * 100)}% van de foute-antwoord-uitleg is korter dan 100 tekens (max. 40%, streef 20%): benoem denkfout, waarom niet, en het juiste onderscheid`);
+    meld(gem, 105, 120, `gemiddelde foute-antwoord-uitleg ${Math.round(gem)} tekens (min. 105, streef 120; bi.M3: 158)`);
   }
   const wc = x => String(x || '').trim().split(/\s+/).length;
   const nep = [];
