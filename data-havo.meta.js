@@ -140,6 +140,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 16,
       "hasSam": true
+     },
+     {
+      "id": "A6",
+      "lo": "nl.A.6",
+      "gs": 2,
+      "naam": "Betoog beoordelen en drogredenen herkennen",
+      "beschrijving": "Je beoordeelt of een betoog aanvaardbaar is (feiten, bronnen, relevantie, consistentie, toereikendheid) en je herkent en benoemt drogredenen.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Feitelijke argumenten en bronnen beoordelen",
+       "Waarderende argumenten en relevantie",
+       "Consistentie en toereikendheid",
+       "Drogredenen: onjuist gebruik van een schema",
+       "Drogredenen: overtreding van een discussieregel",
+       "Valkuilen bij het beoordelen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 18,
+      "hasSam": true
      }
     ]
    },

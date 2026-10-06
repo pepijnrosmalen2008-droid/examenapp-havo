@@ -1,0 +1,724 @@
+{
+ "id": "A6",
+ "lo": "nl.A.6",
+ "gs": 2,
+ "naam": "Betoog beoordelen en drogredenen herkennen",
+ "beschrijving": "Je beoordeelt of een betoog aanvaardbaar is (feiten, bronnen, relevantie, consistentie, toereikendheid) en je herkent en benoemt drogredenen.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Feitelijke argumenten en bronnen beoordelen",
+  "Waarderende argumenten en relevantie",
+  "Consistentie en toereikendheid",
+  "Drogredenen: onjuist gebruik van een schema",
+  "Drogredenen: overtreding van een discussieregel",
+  "Valkuilen bij het beoordelen"
+ ],
+ "sam": "Je beoordeelt een betoog op aanvaardbaarheid en controleerbaarheid van feitelijke argumenten, betrouwbaarheid van bronnen, aanvaardbaarheid van waarderende argumenten, relevantie, consistentie en toereikendheid. Een drogreden is een onjuist gebruik van een argumentatieschema of een overtreden discussieregel, zoals overhaaste generalisatie, vals dilemma, persoonlijke aanval of cirkelredenering.",
+ "begrippen": [
+  {
+   "t": "Aanvaardbaarheid",
+   "d": "De mate waarin een argument of standpunt acceptabel is."
+  },
+  {
+   "t": "Controleerbaarheid",
+   "d": "De mate waarin je kunt nagaan of een bewering klopt."
+  },
+  {
+   "t": "Betrouwbare bron",
+   "d": "Een bron met controleerbare informatie van een deskundige afzender."
+  },
+  {
+   "t": "Relevantie",
+   "d": "De mate waarin een argument iets zegt over het standpunt."
+  },
+  {
+   "t": "Consistentie",
+   "d": "Het ontbreken van tegenstrijdigheden in een argumentatie."
+  },
+  {
+   "t": "Toereikendheid",
+   "d": "De mate waarin de argumenten samen het standpunt voldoende dragen."
+  },
+  {
+   "t": "Drogreden",
+   "d": "Een onjuist gebruik van een argumentatieschema of een overtreden discussieregel."
+  },
+  {
+   "t": "Overhaaste generalisatie",
+   "d": "Uit te weinig voorbeelden een algemene regel afleiden."
+  },
+  {
+   "t": "Vals dilemma",
+   "d": "Doen alsof er maar twee opties zijn terwijl er meer zijn."
+  },
+  {
+   "t": "Overdrijven van voor- of nadelen",
+   "d": "Voor- of nadelen groter voorstellen dan ze zijn."
+  },
+  {
+   "t": "Verkeerde vergelijking",
+   "d": "Twee zaken vergelijken die te weinig op elkaar lijken."
+  },
+  {
+   "t": "Onjuist beroep op autoriteit",
+   "d": "Je beroepen op een bron die geen deskundige is op dit terrein."
+  },
+  {
+   "t": "Persoonlijke aanval",
+   "d": "De persoon aanvallen in plaats van zijn argumenten."
+  },
+  {
+   "t": "Ontduiken van de bewijslast",
+   "d": "Weigeren het eigen standpunt te onderbouwen."
+  },
+  {
+   "t": "Cirkelredenering",
+   "d": "Het standpunt zelf als argument gebruiken."
+  },
+  {
+   "t": "Vertekenen van een standpunt",
+   "d": "Het standpunt van de ander onjuist of overdreven weergeven."
+  },
+  {
+   "t": "Bespelen van publiek",
+   "d": "Emoties of de menigte gebruiken in plaats van argumenten."
+  },
+  {
+   "t": "Discussieregel",
+   "d": "Een afspraak voor een eerlijke discussie, zoals dat je je standpunt moet onderbouwen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wanneer is een feitelijk argument aanvaardbaar?",
+   "o": [
+    "als de schrijver het heel stellig zegt",
+    "als het juist en controleerbaar is",
+    "als veel mensen het geloven",
+    "als het in de eerste alinea staat"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een feitelijk argument is aanvaardbaar als het juist en controleerbaar is.",
+   "uo": [
+    "Koos je dit? Een stellige toon bewijst niets. Een schrijver kan fel zijn en toch een onjuist feit noemen; het gaat erom of het controleerbaar en juist is.",
+    "Klopt: een feitelijk argument moet kloppen en na te gaan zijn, bijvoorbeeld met onderzoek of een betrouwbare bron.",
+    "Koos je dit? Wat veel mensen geloven is niet vanzelf waar. Aanvaardbaar is een feit als je het kunt nagaan, niet als het populair is.",
+    "Koos je dit? De plaats in de tekst zegt niets over de juistheid. Een feit in alinea 1 kan even onjuist zijn als een feit aan het slot."
+   ],
+   "uh": "Juist en controleerbaar."
+  },
+  {
+   "v": "Welke bron is het betrouwbaarst voor een feitelijk argument over gezondheid?",
+   "o": [
+    "een anoniem bericht op een forum",
+    "een reclame van een bedrijf dat het product verkoopt",
+    "een meningsartikel zonder bronvermelding",
+    "een rapport van een erkend onderzoeksinstituut"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Een betrouwbare bron is deskundig, onafhankelijk en controleerbaar.",
+   "uo": [
+    "Koos je dit? De afzender is onbekend en niemand kan de gegevens controleren. Een betrouwbare bron noemt wie het zegt en waarop het gebaseerd is.",
+    "Koos je dit? Een bedrijf met een belang wil verkopen en is niet neutraal. Een betrouwbare bron heeft geen verkoopbelang.",
+    "Koos je dit? Een mening zonder bronnen is niet te controleren. Een betrouwbare bron laat zien waar de informatie vandaan komt.",
+    "Klopt: een erkend instituut is deskundig en zijn gegevens zijn controleerbaar."
+   ],
+   "uh": "Deskundig en controleerbaar."
+  },
+  {
+   "v": "Wanneer is een argument relevant voor een standpunt?",
+   "o": [
+    "als het iets zegt over het standpunt",
+    "als het veel woorden bevat",
+    "als het over hetzelfde onderwerp gaat",
+    "als het een feit is"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Een relevant argument zegt iets over het standpunt.",
+   "uo": [
+    "Klopt: een relevant argument hoort inhoudelijk bij het standpunt en ondersteunt het.",
+    "Koos je dit? Veel woorden maken een argument niet sterker. Relevantie gaat over de inhoud: hoort het bij het standpunt?",
+    "Koos je dit? Hetzelfde onderwerp is niet genoeg. Een argument kan over het onderwerp gaan en toch niets zeggen over wat het standpunt beweert.",
+    "Koos je dit? Ook een feit kan irrelevant zijn: het klopt wel, maar zegt niets over het standpunt."
+   ],
+   "uh": "Relevant = hoort erbij."
+  },
+  {
+   "v": "Wanneer is een argumentatie consistent?",
+   "o": [
+    "als alle argumenten ongeveer even lang zijn",
+    "als er maar één argument is",
+    "als de argumenten elkaar niet tegenspreken",
+    "als alle argumenten feiten zijn"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Consistent betekent dat de argumentatie geen tegenstrijdigheden bevat.",
+   "uo": [
+    "Koos je dit? De lengte van argumenten zegt niets over tegenstrijdigheid. Consistentie gaat over inhoud: spreken ze elkaar tegen?",
+    "Koos je dit? Eén argument kan niet tegenstrijdig zijn met een ander, maar consistentie vraagt vooral of de beweringen samenpassen.",
+    "Klopt: consistent betekent dat er geen tegenstrijdigheden in zitten.",
+    "Koos je dit? Feiten kunnen elkaar ook tegenspreken. Het gaat erom of de argumenten onderling bij elkaar passen."
+   ],
+   "uh": "Consistent = geen tegenspraak."
+  },
+  {
+   "v": "Wanneer is een argumentatie toereikend?",
+   "o": [
+    "als er veel argumenten zijn",
+    "als elk argument een controleerbaar feit is",
+    "als de argumenten samen genoeg steun geven",
+    "als de schrijver het zeker weet"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Toereikend betekent dat de argumenten samen het standpunt voldoende steunen.",
+   "uo": [
+    "Koos je dit? Het aantal zegt niets over de kracht. Tien zwakke argumenten dragen niet meer dan één sterk argument.",
+    "Koos je dit? Feiten kunnen toereikend zijn, maar kunnen ook niets zeggen over het standpunt. Het gaat om voldoende steun voor het standpunt.",
+    "Klopt: toereikend betekent dat de argumenten genoeg steun geven om het standpunt te aanvaarden.",
+    "Koos je dit? Zekerheid van de schrijver is geen steun. Toereikend gaat over de kracht van de argumenten."
+   ],
+   "uh": "Genoeg steun = toereikend."
+  },
+  {
+   "v": "Wat is een drogreden?",
+   "o": [
+    "een onjuist schema of een overtreden discussieregel",
+    "een argument dat de lezer niet leuk of overtuigend vindt",
+    "een argument dat te kort is",
+    "een feit dat niet te controleren is"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Een drogreden is een onjuist gebruik van een schema of een overtreden discussieregel.",
+   "uo": [
+    "Klopt: bij een drogreden gaat er iets mis in de redenering of in de manier van discussiëren.",
+    "Koos je dit? Of je iets leuk vindt, zegt niets over de redenering. Een drogreden is een fout in de opbouw van het argument.",
+    "Koos je dit? Een kort argument kan prima kloppen. Een drogreden zit in de logica, niet in de lengte.",
+    "Koos je dit? Een niet-controleerbaar feit is een zwakte van het argument, maar geen drogreden. Een drogreden is een fout in schema of regel."
+   ],
+   "uh": "Fout in schema of regel."
+  },
+  {
+   "v": "Welke drogreden gebruik je als je uit twee voorbeelden een algemene regel afleidt?",
+   "o": [
+    "vals dilemma",
+    "persoonlijke aanval op de spreker",
+    "cirkelredenering",
+    "overhaaste generalisatie"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Een algemene regel afleiden uit te weinig voorbeelden is overhaaste generalisatie.",
+   "uo": [
+    "Koos je vals dilemma? Daar doe je alsof er maar twee opties zijn. Hier gaat het om te weinig voorbeelden voor een regel.",
+    "Koos je dit? Daarbij val je de persoon aan. Hier wordt niemand aangevallen; de fout zit in het afleiden van een regel.",
+    "Koos je dit? Daarbij gebruik je het standpunt als argument. Hier is het te weinig bewijs voor een algemene regel.",
+    "Klopt: twee voorbeelden zijn te weinig om een regel voor iedereen te trekken."
+   ],
+   "uh": "Weinig gevallen, grote regel."
+  },
+  {
+   "v": "Welke drogreden doet alsof er maar twee opties zijn?",
+   "o": [
+    "overhaaste generalisatie",
+    "vals dilemma",
+    "verkeerde vergelijking",
+    "bespelen van publiek"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Een vals dilemma presenteert twee opties terwijl er meer zijn.",
+   "uo": [
+    "Koos je dit? Daar leid je een algemene regel af uit te weinig gevallen. Een vals dilemma beperkt de keuze tot twee opties.",
+    "Klopt: bij een vals dilemma worden andere mogelijkheden verzwegen.",
+    "Koos je dit? Daar vergelijk je twee zaken die te weinig lijken. Bij een vals dilemma verzwijg je andere opties.",
+    "Koos je dit? Daar speel je in op emoties. Een vals dilemma is een fout in het schema voor voor- en nadelen."
+   ],
+   "uh": "Maar twee? Of meer?"
+  },
+  {
+   "v": "Welke drogreden valt de persoon aan in plaats van zijn argument?",
+   "o": [
+    "cirkelredenering",
+    "ontduiken van de bewijslast",
+    "overhaaste generalisatie",
+    "persoonlijke aanval"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Een persoonlijke aanval overtreedt de discussieregel: reageer op argumenten.",
+   "uo": [
+    "Koos je dit? Daar gebruik je het standpunt als argument. Een persoonlijke aanval richt zich op de spreker.",
+    "Koos je dit? Daar weiger je je standpunt te onderbouwen. Een persoonlijke aanval richt zich op de persoon.",
+    "Koos je dit? Dat gaat over te weinig voorbeelden voor een regel, niet over aanvallen op een persoon.",
+    "Klopt: het argument wordt afgewezen vanwege de persoon, niet vanwege de inhoud."
+   ],
+   "uh": "Spreker of argument?"
+  },
+  {
+   "v": "Welke drogreden gebruikt het standpunt zelf als argument?",
+   "o": [
+    "vals dilemma",
+    "cirkelredenering",
+    "persoonlijke aanval",
+    "verkeerde vergelijking"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Een cirkelredenering gebruikt het standpunt als argument.",
+   "uo": [
+    "Koos je dit? Daar laat je maar twee opties zien. Bij een cirkelredenering herhaal je het standpunt als argument.",
+    "Klopt: het argument zegt in andere woorden hetzelfde als het standpunt.",
+    "Koos je dit? Daarbij val je de spreker aan. Hier wordt niemand aangevallen.",
+    "Koos je dit? Daarbij zijn twee ongelijke zaken vergeleken. Hier staat niets te vergelijken."
+   ],
+   "uh": "Standpunt = argument: cirkel."
+  },
+  {
+   "v": "Een argument is zwak, maar er wordt geen regel overtreden. Is het dan een drogreden?",
+   "o": [
+    "ja, elk zwak of onbewezen argument is een drogreden",
+    "ja, als het niet over een feit gaat",
+    "nee, een zwak argument is geen drogreden",
+    "ja, als de schrijver het niet weet"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Een drogreden is een bepaalde fout; niet elk zwak argument is een drogreden.",
+   "uo": [
+    "Koos je dit? Dan zou elk argument dat je niet overtuigt een drogreden zijn. Een drogreden is een benoembare fout in schema of regel.",
+    "Koos je dit? Of het over een feit gaat, bepaalt niet of er een drogreden is. Het gaat om de fout in de redenering.",
+    "Klopt: een drogreden is een bepaalde fout in schema of regel. Een zwak argument kan ook gewoon onvoldoende zijn.",
+    "Koos je dit? Wat de schrijver weet doet er niet toe. Je beoordeelt het argument, niet de schrijver."
+   ],
+   "uh": "Eerst benoemen, dan beoordelen."
+  },
+  {
+   "v": "Wat is er mis met dit feitelijke argument?",
+   "o": [
+    "de bron is onbekend, dus niet te controleren",
+    "het is een mening van de schrijver in plaats van een feit",
+    "het bericht is te kort",
+    "zonnepanelen bestaan niet"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Een anonieme bron maakt een feitelijk argument niet controleerbaar.",
+   "uo": [
+    "Klopt: een anonieme afzender kun je niet beoordelen. Zonder controleerbare bron is het argument niet aanvaardbaar.",
+    "Koos je dit? Er staat een bewering over gezondheid, geen oordeel zoals mooi of lelijk. Het probleem is dat je de bron niet kunt controleren.",
+    "Koos je dit? Kort kan prima kloppen. Het gaat om de afzender, niet om de lengte.",
+    "Koos je dit? Dat is niet het punt. Het gaat om de betrouwbaarheid van de bron van de bewering."
+   ],
+   "uh": "Wie zegt dit? Onbekend: niet aanvaardbaar.",
+   "ctx": "Volgens een anoniem bericht op een forum zijn zonnepanelen levensgevaarlijk voor je gezondheid."
+  },
+  {
+   "v": "Waarom is dit als feitelijk argument zwak?",
+   "o": [
+    "er is geen bron waarmee je het kunt controleren",
+    "het is een persoonlijke mening",
+    "het gaat over slaap",
+    "het is te algemeen geformuleerd voor een standpunt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "\"Iedereen weet dat\" vervangt geen bron.",
+   "uo": [
+    "Klopt: \"iedereen weet\" is geen bewijs. Een feitelijk argument moet je kunnen nagaan.",
+    "Koos je dit? Het lijkt op een feit, geen oordeel. Het mist een controleerbare bron.",
+    "Koos je dit? Het onderwerp is niet het probleem. Het probleem is dat er niets controleerbaars wordt genoemd.",
+    "Koos je dit? Algemeen zijn is niet fout; zwak wordt het doordat er geen onderbouwing is."
+   ],
+   "uh": "Zonder bron geen controle.",
+   "ctx": "Iedereen weet dat in Nederland de meeste mensen te weinig slapen."
+  },
+  {
+   "v": "Waarom is het argument niet relevant?",
+   "o": [
+    "het argument is duidelijk niet waar in de supermarkt",
+    "het argument is te kort",
+    "het zegt niets over fruit uitdelen door scholen",
+    "het is een waardering"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Een argument is niet relevant als het niets zegt over het standpunt.",
+   "uo": [
+    "Koos je dit? Het kan best waar zijn dat er veel aanbod is. Het gaat erom dat het niets zegt over het standpunt.",
+    "Koos je dit? De lengte zegt niets over de relevantie. Het gaat om de inhoudelijke band met het standpunt.",
+    "Klopt: het aanbod in de supermarkt zegt niets over het standpunt. Het argument hoort er niet bij.",
+    "Koos je dit? Het is een feit over aanbod, geen oordeel. De fout is dat het niet bij het standpunt past."
+   ],
+   "uh": "Past het bij het standpunt?",
+   "ctx": "Scholen moeten gratis fruit uitdelen, want in de supermarkt is veel aanbod."
+  },
+  {
+   "v": "Waarom is dit waarderende argument zwak?",
+   "o": [
+    "het is een feit dat je kunt controleren",
+    "\"lekker\" is een persoonlijk oordeel",
+    "het is te lang",
+    "het gaat over school"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Een subjectief oordeel is een zwak waarderend argument.",
+   "uo": [
+    "Koos je dit? \"Lekker\" is niet controleerbaar maar een oordeel. Daarom is het waarderend en niet feitelijk.",
+    "Klopt: smaak verschilt. Een waarderend argument is sterker als anderen het kunnen delen en het onderbouwd is.",
+    "Koos je dit? De lengte bepaalt de kracht niet. Het gaat om het oordeel zelf.",
+    "Koos je dit? Het onderwerp is geen probleem. Het oordeel \"lekker\" is subjectief."
+   ],
+   "uh": "Lekker = persoonlijk.",
+   "ctx": "Gratis fruit op school is een goed idee, want fruit is nu eenmaal lekker."
+  },
+  {
+   "v": "Welk probleem heeft deze argumentatie?",
+   "o": [
+    "ze is niet toereikend, omdat er maar twee beweringen worden genoemd",
+    "ze is niet relevant",
+    "ze is feitelijk onjuist",
+    "ze is niet consistent: de beweringen spreken elkaar tegen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Tegenstrijdige beweringen maken een argumentatie inconsistent.",
+   "uo": [
+    "Koos je dit? Het gaat niet om het aantal, maar om de tegenspraak tussen de twee beweringen.",
+    "Koos je dit? Beide beweringen gaan over vuurwerk. Het probleem is dat ze elkaar tegenspreken.",
+    "Koos je dit? Je weet niet welke bewering onjuist is. Het probleem is dat ze samen niet kunnen kloppen.",
+    "Klopt: veilig en veel ongelukken sluiten elkaar uit. Daarmee is de argumentatie niet consistent."
+   ],
+   "uh": "Spreken ze elkaar tegen?",
+   "ctx": "In alinea 1 schrijft de auteur dat vuurwerk veilig is. In alinea 3 schrijft hij dat vuurwerk elk jaar veel ongelukken veroorzaakt."
+  },
+  {
+   "v": "Waarom is deze argumentatie niet toereikend?",
+   "o": [
+    "het voorbeeld over de basisschool is niet waar",
+    "één voorbeeld is te weinig voor alle scholen",
+    "het argument is te lang",
+    "er is een tegenspraak"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Te weinig steun voor een breed standpunt is niet toereikend.",
+   "uo": [
+    "Koos je dit? Je weet niet of het niet waar is. Het probleem is dat één geval niet genoeg steun geeft.",
+    "Klopt: het standpunt gaat over alle scholen, maar de steun is één school.",
+    "Koos je dit? De lengte telt niet. De omvang van het standpunt (alle scholen) is veel groter dan de steun.",
+    "Koos je dit? Er is geen tegenspraak, alleen te weinig steun voor een groot standpunt."
+   ],
+   "uh": "Eén voorbeeld voor alle scholen: te weinig.",
+   "ctx": "Alle scholen moeten een schooltuin krijgen, want op basisschool De Linde werkt het goed."
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "overhaaste generalisatie",
+    "vals dilemma",
+    "persoonlijke aanval op de spreker",
+    "cirkelredenering"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Een regel uit twee gevallen is overhaaste generalisatie.",
+   "uo": [
+    "Klopt: uit twee gevallen wordt een regel voor iedereen afgeleid. Dat is te weinig.",
+    "Koos je dit? Er worden geen twee opties gepresenteerd. Het gaat om een regel uit te weinig gevallen.",
+    "Koos je dit? Niemand wordt aangevallen. De fout is een te brede conclusie.",
+    "Koos je dit? Het standpunt wordt niet herhaald als argument. De fout is te weinig bewijs."
+   ],
+   "uh": "Twee gevallen is niet iedereen.",
+   "ctx": "Mijn buurjongen en mijn nichtje spelen veel games en halen slechte cijfers. Dus wie veel gamet, haalt slechte cijfers."
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "overhaaste generalisatie",
+    "bespelen van publiek",
+    "persoonlijke aanval",
+    "vals dilemma"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Twee uitersten presenteren als enige keuze is een vals dilemma.",
+   "uo": [
+    "Koos je dit? Er wordt niet uit weinig gevallen een regel gehaald. De keuze wordt kunstmatig beperkt.",
+    "Koos je dit? Er is wel een dreigend beeld, maar de kern is dat andere opties worden verzwegen.",
+    "Koos je dit? Er wordt niemand persoonlijk aangevallen. Er is een keuze tussen twee uitersten.",
+    "Klopt: er worden maar twee opties genoemd, terwijl er meer mogelijkheden zijn."
+   ],
+   "uh": "Zijn er echt maar twee?",
+   "ctx": "Je bent voor het nieuwe plan, of je wilt dat het dorp doodbloedt."
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "verkeerde vergelijking met iets anders",
+    "overdrijven van voordelen",
+    "onjuist beroep op autoriteit",
+    "vals dilemma"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Een beroep op iemand zonder expertise is een onjuist beroep op autoriteit.",
+   "uo": [
+    "Koos je dit? Er wordt niets vergeleken. Er wordt verwezen naar een persoon die geen deskundige is.",
+    "Koos je dit? Er worden geen voordelen overdreven. De steun komt van een persoon zonder expertise.",
+    "Klopt: een voetballer is geen deskundige op het gebied van supplementen.",
+    "Koos je dit? Er worden geen opties genoemd. De fout is dat de bron niet deskundig is."
+   ],
+   "uh": "Is hij deskundig?",
+   "ctx": "Dit supplement werkt, want een bekende voetballer gebruikt het."
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "onjuist beroep op autoriteit",
+    "persoonlijke aanval",
+    "verkeerde vergelijking",
+    "overhaaste generalisatie"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Een vergelijking die niet opgaat, is een verkeerde vergelijking.",
+   "uo": [
+    "Koos je dit? Er wordt geen deskundige genoemd. Er wordt vergeleken met iets wat niet vergelijkbaar is.",
+    "Koos je dit? Niemand wordt aangevallen. De fout zit in de vergelijking.",
+    "Klopt: een school en een bedrijf lijken te weinig op elkaar op het punt waar het om gaat.",
+    "Koos je dit? Er wordt geen regel uit voorbeelden afgeleid. Er wordt een ongelijke vergelijking gemaakt."
+   ],
+   "uh": "Lijken ze echt op elkaar?",
+   "ctx": "Een school is net een bedrijf. Dus moet je leerlingen die slecht presteren ontslaan."
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "vals dilemma",
+    "onjuist beroep op autoriteit",
+    "cirkelredenering",
+    "overdrijven van nadelen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Een nadeel veel groter voorstellen dan het is, is overdrijven van nadelen.",
+   "uo": [
+    "Koos je dit? Er worden geen twee opties gepresenteerd. Het gaat om een overdreven nadeel.",
+    "Koos je dit? Er wordt niemand aangehaald. De fout is dat het nadeel wordt opgeblazen.",
+    "Koos je dit? Het standpunt wordt niet herhaald. Het nadeel wordt overdreven.",
+    "Klopt: het nadeel van het sluiten wordt veel groter voorgesteld dan realistisch is."
+   ],
+   "uh": "Echt zo erg?",
+   "ctx": "Als we de fietsenstalling sluiten, wordt de hele stad één grote chaos."
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "onjuist beroep op oorzaak en gevolg",
+    "persoonlijke aanval",
+    "vals dilemma",
+    "bespelen van het publiek met emoties"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Gelijktijdig voorkomen is geen bewijs voor oorzaak en gevolg.",
+   "uo": [
+    "Klopt: dat twee dingen samen voorkomen, bewijst niet dat het ene het andere veroorzaakt.",
+    "Koos je dit? Niemand wordt aangevallen. De fout is een onbewezen oorzaak.",
+    "Koos je dit? Er worden geen twee opties gepresenteerd. De fout zit in de oorzaak-gevolgredenering.",
+    "Koos je dit? Er wordt niet op emotie gespeeld. De oorzaak is onbewezen."
+   ],
+   "uh": "Samen voorkomen is geen oorzaak.",
+   "ctx": "Elke keer dat ik mijn blauwe trui draag, win ik een wedstrijd. Dus de trui zorgt ervoor dat ik win."
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "cirkelredenering",
+    "persoonlijke aanval",
+    "overhaaste generalisatie",
+    "ontduiken van de bewijslast"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Een bewering afwijzen vanwege de persoon is een persoonlijke aanval.",
+   "uo": [
+    "Koos je dit? Het standpunt wordt niet herhaald als argument. De spreker wordt aangevallen.",
+    "Klopt: de bewering wordt afgewezen vanwege de persoon en niet vanwege de inhoud.",
+    "Koos je dit? Er wordt geen regel uit weinig voorbeelden afgeleid. De persoon wordt afgewezen.",
+    "Koos je dit? Er wordt niet geweigerd iets te bewijzen. De spreker wordt aangevallen."
+   ],
+   "uh": "Wat zegt hij, niet wie.",
+   "ctx": "Je kunt niet geloven wat hij over klimaat zegt, want hij is niet eens afgestudeerd."
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "cirkelredenering",
+    "vals dilemma",
+    "persoonlijke aanval op de spreker",
+    "ontduiken van de bewijslast"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Wie een standpunt inneemt, moet het onderbouwen.",
+   "uo": [
+    "Koos je dit? Het standpunt wordt niet als argument herhaald. De plicht om te onderbouwen wordt ontweken.",
+    "Koos je dit? Er worden geen twee opties genoemd. De spreker weigert zijn standpunt te onderbouwen.",
+    "Koos je dit? De persoon wordt niet aangevallen. De bewijslast wordt omgedraaid.",
+    "Klopt: wie iets beweert, moet het onderbouwen. Hier wordt die plicht bij de ander gelegd."
+   ],
+   "uh": "Wie beweert, bewijst.",
+   "ctx": "Bewijs maar dat spoken niet bestaan, anders heb ik gelijk."
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "vertekenen van een standpunt",
+    "onjuist beroep op een autoriteit",
+    "vals dilemma",
+    "cirkelredenering"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Een standpunt extremer voorstellen dan het is, is vertekenen.",
+   "uo": [
+    "Klopt: het standpunt (minder huiswerk) wordt verdraaid tot iets extremers (niets meer leren).",
+    "Koos je dit? Er wordt geen bron genoemd. Het standpunt van de ander wordt verdraaid.",
+    "Koos je dit? Er wordt geen keuze tussen twee opties gepresenteerd. Het standpunt wordt overdreven.",
+    "Koos je dit? Het standpunt wordt niet herhaald. Het wordt onjuist weergegeven."
+   ],
+   "uh": "Zei hij dat echt?",
+   "ctx": "Jij wilt minder huiswerk? Dus je wilt dat leerlingen helemaal niets meer leren!"
+  },
+  {
+   "v": "Welke drogreden wordt hier gebruikt?",
+   "o": [
+    "persoonlijke aanval",
+    "bespelen van publiek",
+    "overhaaste generalisatie",
+    "verkeerde vergelijking"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Emoties inzetten in plaats van argumenten is bespelen van publiek.",
+   "uo": [
+    "Koos je dit? Niemand wordt aangevallen. Er wordt op medelijden gespeeld.",
+    "Klopt: er wordt een beroep gedaan op gevoel in plaats van op argumenten.",
+    "Koos je dit? Er wordt geen regel afgeleid. Er wordt een emotioneel beeld opgeroepen.",
+    "Koos je dit? Er wordt niets vergeleken. De fout is het inspelen op emoties."
+   ],
+   "uh": "Gevoel ipv argument.",
+   "ctx": "Denk aan al die arme kinderen die hun speeltuin verliezen! Wie kan daar nu nee tegen zeggen?"
+  },
+  {
+   "v": "Is dit een drogreden?",
+   "o": [
+    "ja, een persoonlijke aanval op de schrijver",
+    "ja, een cirkelredenering",
+    "nee, het is een zwak waarderend argument",
+    "ja, een vals dilemma"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Een zwak argument is niet vanzelf een drogreden.",
+   "uo": [
+    "Koos je dit? Er wordt niemand aangevallen. Het is een persoonlijk oordeel.",
+    "Koos je dit? Het standpunt wordt niet herhaald als argument. Mooi is een ander oordeel.",
+    "Klopt: er wordt geen schema onjuist gebruikt en geen discussieregel overtreden. Het argument is alleen zwak.",
+    "Koos je dit? Er worden geen opties verzwegen. Het is gewoon een subjectief argument."
+   ],
+   "uh": "Zwak is geen drogreden.",
+   "ctx": "Het park moet blijven, want ik vind het mooi."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Dit bedrijf is het beste, want het is groot en bestaat al heel lang. Bovendien zegt mijn buurman dat zijn product altijd werkt.",
+   "v": "Noem twee punten van kritiek op de argumentatie (aanvaardbaarheid, bron, relevantie of toereikendheid).",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: grootte en leeftijd zeggen niets over kwaliteit (niet relevant) (1 punt); mijn buurman is geen deskundige en één ervaring is te weinig (bron niet betrouwbaar, niet toereikend) (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De gemeente moet de sporthal sluiten. Jongeren die veel sporten, worden toch gewelddadig. Bij het laatste toernooi gingen twee spelers op de vuist.",
+   "v": "Welke drogreden wordt gebruikt? Benoem en leg uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Overhaaste generalisatie (1 punt): uit één voorval met twee spelers wordt een regel voor alle sporters afgeleid (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Zonnepanelen op dit dak zijn onzin. Wie dat verdedigt, kan zelf niet eens een dak repareren.",
+   "v": "Welke drogreden wordt hier gebruikt? Leg uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Persoonlijke aanval (1 punt): het argument wordt afgewezen door de persoon aan te vallen (dat hij niet kan repareren) in plaats van de inhoud (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je bent voor een gratis ov-kaart voor studenten of je vindt dat studenten arm moeten blijven.",
+   "v": "Welke drogreden wordt hier gebruikt? Waarom?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Vals dilemma (1 punt): er worden maar twee opties gegeven terwijl er meer standpunten mogelijk zijn (bijvoorbeeld een korting) (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Hij zegt dat we een beetje voorzichtig moeten zijn met vuurwerk. Dus hij wil alles verbieden en iedereen de feestvreugde afnemen.",
+   "v": "Welke discussieregel wordt overtreden? Benoem de drogreden en leg uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Vertekenen van een standpunt (1 punt): het standpunt \"een beetje voorzichtig\" wordt verdraaid tot \"alles verbieden\" (1 punt)."
+  }
+ ]
+}
