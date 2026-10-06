@@ -3810,6 +3810,637 @@ var VAKKEN = [
         "u": "De uitspraak klopt niet: ook een betoog kan nadelen noemen, hier als tegenwerping die wordt weerlegd (1 punt). Het gaat om het doel: de slotzin laat zien dat een standpunt wordt verdedigd (scholen moeten een uniform invoeren), dus de tekst is betogend; een beschouwing kiest geen kant (1 punt)."
        }
       ]
+     },
+     {
+      "id": "A2",
+      "lo": "nl.A.2",
+      "gs": 2,
+      "naam": "Onderwerp en hoofdgedachte aangeven",
+      "beschrijving": "Je onderscheidt het onderwerp van de hoofdgedachte, vindt de hoofdgedachte van een tekst of alinea en verwoordt hem zelf als hij er niet letterlijk staat.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderwerp en hoofdgedachte onderscheiden",
+       "De hoofdgedachte expliciet in de tekst vinden",
+       "De hoofdgedachte zelf verwoorden",
+       "De hoofdgedachte van een alinea of tekstgedeelte",
+       "Een hoofdgedachte goed formuleren",
+       "Valkuilen: titel, details en voorbeelden"
+      ],
+      "sam": "Het onderwerp is waar een tekst over gaat; de hoofdgedachte is wat de schrijver daarover vooral zegt, in één volledige zin. De hoofdgedachte staat soms expliciet in de tekst, vaak in een kernzin in de inleiding of het slot, en moet soms zelf worden verwoord. Titels, details en voorbeelden zijn niet automatisch de hoofdgedachte. Ook een alinea heeft een eigen hoofdgedachte.",
+      "begrippen": [
+       {
+        "t": "Hoofdgedachte",
+        "d": "De belangrijkste boodschap van een tekst of tekstgedeelte, in één volledige zin."
+       },
+       {
+        "t": "Onderwerp",
+        "d": "Waar de tekst over gaat, zonder wat de schrijver ervan zegt."
+       },
+       {
+        "t": "Kernzin",
+        "d": "De zin in een alinea die het hoofdpunt van die alinea geeft."
+       },
+       {
+        "t": "Expliciete hoofdgedachte",
+        "d": "Een hoofdgedachte die er in de tekst zelf letterlijk staat."
+       },
+       {
+        "t": "Impliciete hoofdgedachte",
+        "d": "Een hoofdgedachte die niet in de tekst staat en die je zelf moet verwoorden."
+       },
+       {
+        "t": "Parafraseren",
+        "d": "Iets in eigen woorden weergeven met dezelfde betekenis."
+       },
+       {
+        "t": "Alinea",
+        "d": "Een tekstdeel over één deelonderwerp."
+       },
+       {
+        "t": "Tekstgedeelte",
+        "d": "Een deel van een tekst, zoals een alinea, met een eigen hoofdgedachte."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Het slotoordeel van een tekst, waarin vaak de hoofdgedachte staat."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een concreet geval dat een bewering toelicht en niet de hoofdgedachte zelf is."
+       },
+       {
+        "t": "Detail",
+        "d": "Een bijzaak of nadere informatie die de hoofdgedachte ondersteunt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Hoe verschilt het onderwerp van de hoofdgedachte?",
+        "o": [
+         "het onderwerp is de titel, de hoofdgedachte de eerste zin",
+         "het onderwerp is waarover het gaat, de hoofdgedachte wat de schrijver erover zegt",
+         "het onderwerp en de hoofdgedachte zijn hetzelfde, in andere woorden",
+         "het onderwerp is het langste stuk van de tekst"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Onderwerp = waarover; hoofdgedachte = wat er in het kort over gezegd wordt.",
+        "uo": [
+         "Koos je dit? De titel noemt vaak het onderwerp, maar kan ook anders zijn. De hoofdgedachte staat niet automatisch in de eerste zin en moet kloppen met de hele tekst.",
+         "Klopt: het onderwerp noemt het thema, de hoofdgedachte geeft de boodschap over dat thema in een volledige zin.",
+         "Koos je dit? Een onderwerp zoals \"slapen\" is geen boodschap. De hoofdgedachte zegt iets over het onderwerp, bijvoorbeeld dat tieners te weinig slapen.",
+         "Koos je dit? De lengte van een tekstdeel bepaalt niet wat het onderwerp is. Het onderwerp is waar de hele tekst over gaat."
+        ],
+        "uh": "Waarover? Onderwerp. Wat over? Hoofdgedachte."
+       },
+       {
+        "v": "Welk begrip is de belangrijkste boodschap van een hele tekst, in één zin?",
+        "o": [
+         "het onderwerp",
+         "het schrijfdoel",
+         "de titel",
+         "de hoofdgedachte"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "De hoofdgedachte is de kern van de tekst in één volledige zin.",
+        "uo": [
+         "Koos je het onderwerp? Dat is het thema, bijvoorbeeld \"fietsen\". Een boodschap is het pas als er iets over beweerd wordt.",
+         "Koos je het schrijfdoel? Dat zegt wat de schrijver wil bereiken, zoals informeren of overtuigen. De inhoud van de boodschap staat in de hoofdgedachte.",
+         "Koos je de titel? Een titel kan het onderwerp noemen of nieuwsgierig maken zonder de boodschap te geven.",
+         "Klopt: de hoofdgedachte vat de kern van de tekst in één volledige zin samen."
+        ],
+        "uh": "Hoofdgedachte = kern in één zin."
+       },
+       {
+        "v": "Waar staat een expliciete hoofdgedachte vaak?",
+        "o": [
+         "in een zin in de inleiding of het slot",
+         "in de middelste alinea",
+         "in een voetnoot",
+         "in elk voorbeeld"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Een expliciete hoofdgedachte staat vaak in een kernzin in de inleiding of het slot.",
+        "uo": [
+         "Klopt: schrijvers noemen hun boodschap vaak vooraan of vatten haar aan het eind samen.",
+         "Koos je dit? In het middendeel staan meestal uitwerkingen en voorbeelden. Daar zit de hoofdgedachte zelden.",
+         "Koos je dit? Een voetnoot geeft extra informatie. Zo'n bijzaak is geen plek voor de kernboodschap.",
+         "Koos je dit? Een voorbeeld toont één geval. De hoofdgedachte geldt voor de hele tekst."
+        ],
+        "uh": "Kijk eerst vooraan en achteraan."
+       },
+       {
+        "v": "Een zin begint met \"Kortom\" of \"Al met al\". Wat wijst dat vaak aan?",
+        "o": [
+         "een voorbeeld dat het voorgaande punt verder toelicht",
+         "een tegenstelling met wat eerder is gezegd",
+         "een samenvatting of conclusie met vaak de kern",
+         "een nieuw onderwerp"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Signaalwoorden als kortom en al met al wijzen op een samenvatting of conclusie.",
+        "uo": [
+         "Koos je een voorbeeld? Daar horen woorden als \"bijvoorbeeld\" bij. \"Kortom\" sluit juist af en vat samen.",
+         "Koos je een tegenstelling? Die kondig je aan met \"maar\" of \"echter\". \"Kortom\" gaat niet in tegen het voorgaande.",
+         "Klopt: zulke woorden kondigen een samenvatting aan. Daar herhaalt de schrijver vaak de kern.",
+         "Koos je een nieuw onderwerp? Wie afsluit met \"kortom\" begint niets nieuws; de schrijver rondt het bestaande af."
+        ],
+        "uh": "Kortom = hier komt de kern."
+       },
+       {
+        "v": "De hoofdgedachte staat niet in de tekst. Wat doe je?",
+        "o": [
+         "de zin kiezen die er het dichtst bij komt en hem overschrijven",
+         "de titel van de tekst overnemen als hoofdgedachte",
+         "hem zelf in een volledige zin verwoorden",
+         "stellen dat er in deze tekst geen hoofdgedachte te vinden is"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Een impliciete hoofdgedachte verwoord je zelf, op basis van de hele tekst.",
+        "uo": [
+         "Koos je dit? Als de boodschap er niet letterlijk staat, bestaat zo'n zin niet. Een losse zin geeft vaak maar een deel.",
+         "Koos je dit? De titel noemt hooguit het onderwerp. Een hoofdgedachte moet iets zeggen over dat onderwerp.",
+         "Klopt: bij een impliciete hoofdgedachte formuleer je zelf wat de tekst als geheel zegt.",
+         "Koos je dit? Elke tekst heeft een boodschap; die is alleen niet altijd letterlijk opgeschreven. Jij verwoordt hem."
+        ],
+        "uh": "Staat het er niet? Zelf formuleren."
+       },
+       {
+        "v": "Welke zin geeft de hoofdgedachte van een alinea weer?",
+        "o": [
+         "de kernzin",
+         "de laatste zin van de tekst",
+         "het voorbeeld in de alinea",
+         "de langste zin"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "De kernzin geeft de hoofdgedachte van een alinea.",
+        "uo": [
+         "Klopt: de kernzin geeft het hoofdpunt van de alinea. De rest werkt dat uit.",
+         "Koos je dit? De laatste zin van de tekst hoort bij de hele tekst, niet bij één alinea.",
+         "Koos je het voorbeeld? Een voorbeeld toont één geval; het ondersteunt het hoofdpunt, maar is het niet zelf.",
+         "Koos je dit? De lengte van een zin zegt niets over zijn rol. Het gaat om de zin met het hoofdpunt."
+        ],
+        "uh": "Alinea = kernzin + uitwerking."
+       },
+       {
+        "v": "Welke eis geldt voor een goede formulering van de hoofdgedachte?",
+        "o": [
+         "één trefwoord dat het thema van de tekst noemt",
+         "een voorbeeld uit de tekst met een naam of een plaats erin",
+         "een vraag aan de lezer",
+         "een volledige zin met een onderwerp en een bewering"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Een hoofdgedachte is een volledige zin met een onderwerp en een bewering.",
+        "uo": [
+         "Koos je dit? Een trefwoord is hooguit het onderwerp. Het zegt niet wat de tekst erover vindt of uitlegt.",
+         "Koos je dit? Een voorbeeld is één geval. De hoofdgedachte geldt voor de tekst als geheel.",
+         "Koos je dit? Een vraag geeft geen boodschap. Een hoofdgedachte is een bewering.",
+         "Klopt: een hoofdgedachte bevat een onderwerp en een bewering daarover."
+        ],
+        "uh": "Onderwerp + bewering = hoofdgedachte."
+       },
+       {
+        "v": "Je parafraseert een hoofdgedachte. Wat mag je dan doen?",
+        "o": [
+         "extra details toevoegen die niet in de tekst staan",
+         "eigen woorden gebruiken met dezelfde betekenis",
+         "je eigen mening toevoegen",
+         "de betekenis iets omdraaien"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Parafraseren is dezelfde betekenis in eigen woorden zeggen.",
+        "uo": [
+         "Koos je dit? Dan verander je de inhoud. Een parafrase bevat niet meer of minder dan de tekst zegt.",
+         "Klopt: parafraseren is dezelfde boodschap in eigen woorden weergeven.",
+         "Koos je dit? De hoofdgedachte is die van de schrijver. Jouw mening hoort er niet in.",
+         "Koos je dit? Dan klopt de parafrase niet meer. Je gebruikt andere woorden, maar zegt hetzelfde."
+        ],
+        "uh": "Andere woorden, zelfde boodschap."
+       },
+       {
+        "v": "Waarom is de titel niet altijd de hoofdgedachte?",
+        "o": [
+         "een titel staat buiten de tekst en telt daarom niet mee",
+         "een titel is altijd een vraag aan de lezer",
+         "een titel bevat nooit werkwoorden of volledige zinnen",
+         "een titel noemt vaak alleen het onderwerp"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Een titel noemt vaak het onderwerp of prikkelt, maar geeft niet altijd de hoofdgedachte.",
+        "uo": [
+         "Koos je dit? De titel hoort bij de tekst en kan een aanwijzing geven. Alleen is hij niet automatisch de boodschap.",
+         "Koos je dit? Titels kunnen een vraag zijn, maar zijn dat niet vaak. De reden is dat ze het onderwerp aanduiden, niet dat ze vragen stellen.",
+         "Koos je dit? Een titel kan een werkwoord bevatten. Het punt is dat een titel zelden een volledige bewering over de hele tekst is.",
+         "Klopt: titels zijn kort en noemen vaak alleen het thema of prikkelen de lezer."
+        ],
+        "uh": "Titel is een hint, geen antwoord."
+       },
+       {
+        "v": "Welke zin is vaak een voorbeeld en niet de hoofdgedachte?",
+        "o": [
+         "een zin die de hele tekst samenvat",
+         "een zin over één bepaald geval",
+         "de conclusie aan het slot",
+         "de kernzin van de alinea"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Zinnen over een concreet geval zijn meestal voorbeelden.",
+        "uo": [
+         "Koos je dit? Die zin lijkt juist op de hoofdgedachte. Voorbeelden gaan over één geval.",
+         "Klopt: een voorbeeld toont een concreet geval. De hoofdgedachte geldt voor de hele tekst.",
+         "Koos je dit? In de conclusie staat vaak de kern. Een voorbeeld is zelden de afsluiting.",
+         "Koos je dit? De kernzin geeft het hoofdpunt van een alinea. Een voorbeeld ondersteunt dat hoofdpunt."
+        ],
+        "uh": "Concreet geval = voorbeeld."
+       },
+       {
+        "v": "Wat is het onderwerp van een tekst over het groeiend aantal schooltuinen?",
+        "o": [
+         "scholen moeten allemaal een schooltuin hebben",
+         "schooltuinen zijn gezond",
+         "schooltuinen op scholen",
+         "leerlingen die groenten eten"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Het onderwerp is het thema waarover de tekst gaat.",
+        "uo": [
+         "Koos je dit? Dit is een standpunt, dus een boodschap, geen onderwerp. Een onderwerp noemt alleen het thema.",
+         "Koos je dit? Dit zegt iets over schooltuinen, dus het is een bewering. Het onderwerp is alleen de zaak waarover het gaat.",
+         "Klopt: het onderwerp noemt waar de tekst over gaat, zonder boodschap.",
+         "Koos je dit? Dit is een detail of gevolg. Het thema van de tekst blijft schooltuinen."
+        ],
+        "uh": "Onderwerp = thema, geen bewering."
+       },
+       {
+        "v": "Welke formulering is een hoofdgedachte en geen onderwerp?",
+        "o": [
+         "steeds meer jongeren slapen te weinig",
+         "het slaaptekort bij veel jongeren in Nederland",
+         "slapen en jongeren",
+         "een tekst over slaapgewoonten"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Een hoofdgedachte is een bewering; een onderwerp is een thema.",
+        "uo": [
+         "Klopt: dit is een volledige bewering over het thema slapen. Dat is een hoofdgedachte.",
+         "Koos je dit? Dit noemt alleen het thema. Er wordt niets over beweerd, dus het is een onderwerp.",
+         "Koos je dit? Dit zijn twee trefwoorden. Een hoofdgedachte is een volledige zin met een bewering.",
+         "Koos je dit? Dit zegt waar de tekst over gaat. Dat is het onderwerp, niet de boodschap."
+        ],
+        "uh": "Bewering of thema?"
+       },
+       {
+        "v": "Welke zin is meestal de hoofdgedachte van een betoog?",
+        "o": [
+         "de zin met het standpunt van de schrijver",
+         "de zin met een voorbeeld uit een bepaalde stad",
+         "de zin met een detail over een plaats",
+         "de zin met de bron van een gegeven"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 5,
+        "u": "In een betoog is het standpunt de hoofdgedachte.",
+        "uo": [
+         "Klopt: in een betoog draait alles om het standpunt. Dat is de kern van de tekst.",
+         "Koos je dit? Voorbeelden ondersteunen het standpunt, ze zijn het niet.",
+         "Koos je dit? Zo'n detail over een plaats hoort bij een toelichting, niet bij de kern van het betoog.",
+         "Koos je dit? Een bron verantwoordt informatie. De kern is wat de schrijver verdedigt."
+        ],
+        "uh": "Betoog: standpunt = kern."
+       },
+       {
+        "v": "Welke zin geeft de hoofdgedachte van dit fragment?",
+        "o": [
+         "\"Veel jongeren bewegen te weinig.\"",
+         "\"Uit gesprekken met leerlingen blijkt dat huiswerk en schermen veel tijd kosten.\"",
+         "\"Scholen moeten daarom elke dag een sportuur inroosteren.\"",
+         "\"Huiswerk kost veel tijd.\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "De zin met de eis of het standpunt is hier de hoofdgedachte.",
+        "uo": [
+         "Koos je de eerste zin? Dit is de aanleiding. De schrijver gebruikt het om te beargumenteren wat scholen moeten doen.",
+         "Koos je de tweede zin? Dit is een argument of verklaring. De eis in de laatste zin is waar het om draait.",
+         "Klopt: dit is het standpunt, de kern van het fragment. De zinnen ervoor leveren de reden.",
+         "Koos je dit? Dit is een deel van een argument en staat er zo niet. De hoofdgedachte is de eis aan scholen."
+        ],
+        "uh": "Zoek de eis.",
+        "ctx": "Veel jongeren bewegen te weinig. Uit gesprekken met leerlingen blijkt dat huiswerk en schermen veel tijd kosten. Scholen moeten daarom elke dag een sportuur inroosteren."
+       },
+       {
+        "v": "Welke formulering geeft de hoofdgedachte, en niet alleen het onderwerp?",
+        "o": [
+         "het groeiende fietsgebruik in Nederlandse steden",
+         "meer fietsgebruik leidt tot meer fietspaden",
+         "parkeren is makkelijk met de fiets in de stad",
+         "fietsen is gezond"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "De hoofdgedachte bevat een bewering over het onderwerp.",
+        "uo": [
+         "Koos je dit? Dit is het onderwerp: waar het over gaat. Er wordt niets over beweerd.",
+         "Klopt: dit is een volledige zin die zegt wat er gebeurt en waarom. Het onderwerp alleen is \"fietsgebruik in steden\".",
+         "Koos je dit? Dit is een reden voor mensen om te fietsen, een detail in de tekst. De kern is breder.",
+         "Koos je dit? Dat staat niet in het fragment. Het gaat om groei van fietsgebruik en het gevolg daarvan."
+        ],
+        "uh": "Onderwerp + wat er over gezegd wordt.",
+        "ctx": "Het fietsgebruik in Nederlandse steden neemt toe. Steeds meer mensen kiezen de fiets voor korte ritten, omdat het snel is en parkeren makkelijk. Gemeenten bouwen daarom meer fietspaden."
+       },
+       {
+        "v": "De hoofdgedachte staat er niet letterlijk. Welke formulering past het best?",
+        "o": [
+         "Mila woont zeven kilometer van haar school af",
+         "regen is erg vervelend voor mensen die fietsen",
+         "de bus is slecht voor je gezondheid en je humeur",
+         "fietsen maakt je wakkerder dan de bus"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Een impliciete hoofdgedachte volgt uit wat de gegevens samen laten zien.",
+        "uo": [
+         "Koos je dit? Dit is een detail. Het zegt niets over de boodschap die de voorbeelden samen geven.",
+         "Koos je dit? Mila fietst juist ook als het regent en vindt het fijn. Dit past niet bij de tekst.",
+         "Koos je dit? Dat staat er niet. Er staat alleen dat Sam er slaperig van aankomt, en dat gaat niet over gezondheid.",
+         "Klopt: dit vat samen wat uit de voorbeelden volgt. Mila wordt er wakker van, Sam komt slaperig aan en overweegt te fietsen."
+        ],
+        "uh": "Wat laten de voorbeelden samen zien?",
+        "ctx": "Mila fietst elke ochtend zeven kilometer naar school, ook als het regent. Ze zegt dat ze er wakker van wordt. Haar vriendin Sam neemt de bus en komt vaak slaperig aan. Sam overweegt nu ook de fiets."
+       },
+       {
+        "v": "Welke zin is de kernzin van deze alinea?",
+        "o": [
+         "\"Hun lichaam maakt tijdens de slaap hormonen aan die voor groei zorgen.\"",
+         "\"Een goede nachtrust is voor tieners belangrijk.\"",
+         "\"Bovendien onthouden ze nieuwe lesstof beter na een nacht slapen.\"",
+         "alle drie de zinnen even zwaar"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "De kernzin geeft het hoofdpunt, de andere zinnen onderbouwen dat.",
+        "uo": [
+         "Koos je de tweede zin? Dit is een reden die het hoofdpunt onderbouwt, geen hoofdpunt zelf.",
+         "Klopt: de eerste zin geeft het hoofdpunt. De andere zinnen geven redenen waarom.",
+         "Koos je de laatste zin? Dit is een extra argument (\"bovendien\"). Het steunt het hoofdpunt.",
+         "Koos je dit? In een alinea heeft meestal één zin het hoofdpunt en geven de andere zinnen steun."
+        ],
+        "uh": "Eerste zin vaak de kernzin.",
+        "ctx": "Een goede nachtrust is voor tieners belangrijk. Hun lichaam maakt tijdens de slaap hormonen aan die voor groei zorgen. Bovendien onthouden ze nieuwe lesstof beter na een nacht slapen."
+       },
+       {
+        "v": "Welke formulering geeft de hoofdgedachte?",
+        "o": [
+         "personeelstekort laat bakkerijen sluiten",
+         "bakkers hebben een geheim recept",
+         "bakkers staan midden in de nacht op om te bakken",
+         "brood wordt vers bezorgd"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "De hoofdgedachte volgt uit de inhoud, niet uit de titel.",
+        "uo": [
+         "Klopt: de tekst gaat over bakkerijen die sluiten door een tekort aan personeel. De titel verraadt dit niet.",
+         "Koos je dit? Dit komt uit de titel en is verzonnen. In de tekst staat geen geheim.",
+         "Koos je dit? Dit is een detail uit de eerste zin. Het is niet waar de tekst naartoe werkt.",
+         "Koos je dit? Dit is een bijzaak. De hoofdlijn is het sluiten van bakkerijen."
+        ],
+        "uh": "Lees de tekst, niet alleen de titel.",
+        "ctx": "Titel: Het geheim van de bakker. Bakkers staan midden in de nacht op om het brood vers te kunnen bezorgen. Veel bakkerijen kampen met een tekort aan personeel. Daardoor sluiten steeds meer bakkerijen hun deuren."
+       },
+       {
+        "v": "Welke formulering is de beste hoofdgedachte?",
+        "o": [
+         "bibliotheken zijn tegenwoordig een heel leuke plek",
+         "in de bibliotheek kun je nu ook een kop koffie drinken",
+         "er komen tegenwoordig meer en andere bezoekers",
+         "meer aanbod in bibliotheken trekt andere bezoekers"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Een goede hoofdgedachte is niet te breed en niet te smal.",
+        "uo": [
+         "Koos je dit? Dit is te algemeen en zegt niets over de verandering. Een hoofdgedachte blijft bij de inhoud.",
+         "Koos je dit? Dit is een detail. De hoofdgedachte moet de hele tekst dekken.",
+         "Koos je dit? Dit is een deel: alleen het gevolg. De oorzaak (het nieuwe aanbod) ontbreekt.",
+         "Klopt: dit noemt de verandering en het gevolg, en blijft dicht bij de tekst."
+        ],
+        "uh": "Dek de hele tekst, blijf bij de inhoud.",
+        "ctx": "Bibliotheken veranderen. Waar je vroeger vooral boeken leende, kun je nu ook werken, een workshop volgen of koffie drinken. Daardoor komen er meer en andere bezoekers."
+       },
+       {
+        "v": "Wat doen de zinnen over de bakker en de kleermaker?",
+        "o": [
+         "ze geven de hoofdgedachte van de hele tekst",
+         "ze vormen de conclusie",
+         "ze zijn voorbeelden bij de hoofdgedachte",
+         "ze bepalen het onderwerp"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Zinnen over concrete gevallen zijn voorbeelden bij de hoofdgedachte.",
+        "uo": [
+         "Koos je dit? Die staat in de eerste zin. De namen van winkels zijn concrete gevallen.",
+         "Koos je dit? De conclusie is de waarschuwing in de laatste zin. De winkels zijn gegevens die daar naartoe leiden.",
+         "Klopt: de zinnen tonen twee concrete gevallen van de verdwijnende winkels uit de eerste zin.",
+         "Koos je dit? Het onderwerp (winkels in het centrum) is al in de eerste zin genoemd. De bakker en kleermaker illustreren dat."
+        ],
+        "uh": "Concrete gevallen ondersteunen de kern.",
+        "ctx": "Kleine winkels verdwijnen langzaam uit het straatbeeld. De bakker in de Kerkstraat sloot vorig jaar. Ook de kleermaker aan het plein stopt binnenkort. Als we niets doen, is het centrum straks leeg."
+       },
+       {
+        "v": "Welke formulering geeft de hoofdgedachte van de hele tekst?",
+        "o": [
+         "zwemles is op veel scholen geschrapt, zoals alinea 1 duidelijk aangeeft",
+         "door het schrappen kunnen minder kinderen zwemmen",
+         "de gemeente moet zwemles weer betalen vanwege minder zwemmers",
+         "zwemmen is gezond"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "De hoofdgedachte van een hele tekst combineert wat alle alinea's samen zeggen.",
+        "uo": [
+         "Koos je dit? Dit is alleen alinea 1, de aanleiding. De tekst gaat verder met een gevolg en een eis.",
+         "Koos je dit? Dit is het gevolg uit alinea 2. De eis eronder mist, dus het is maar een deel.",
+         "Klopt: dit bevat het standpunt en de reden uit beide alinea's.",
+         "Koos je dit? Dat staat niet in de tekst. De hoofdgedachte moet uit de tekst volgen."
+        ],
+        "uh": "Combineer de alinea's.",
+        "ctx": "Alinea 1: Zwemles is op veel scholen geschrapt. Alinea 2: Daardoor kunnen minder kinderen zwemmen. De gemeente moet zwemles weer betalen."
+       },
+       {
+        "v": "Welke formulering is de beste hoofdgedachte van dit fragment?",
+        "o": [
+         "leerlingen eten op school en hebben eerder vrij van school",
+         "ouders zijn blij met de rust in de middag en na school",
+         "een continurooster is een rooster zonder lange middagpauze",
+         "meer scholen kiezen een continurooster om de voordelen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Een goede hoofdgedachte dekt het hele fragment en blijft bij de inhoud.",
+        "uo": [
+         "Koos je dit? Dit is een detail. Het geeft niet weer wat het fragment als geheel zegt.",
+         "Koos je dit? Dit noemt één van de groepen. Het fragment noemt ook leerlingen en docenten.",
+         "Koos je dit? Dit is te algemeen en zegt niet wat het fragment beweert.",
+         "Klopt: dit noemt het onderwerp, de ontwikkeling en de reden, en dekt het hele fragment."
+        ],
+        "uh": "Niet te smal, niet te breed.",
+        "ctx": "Steeds meer scholen werken met een continurooster. Leerlingen eten dan op school en hebben eerder vrij. Ouders zijn blij met de rust in de middag, docenten zien dat de lessen na de lunch minder uitvallen."
+       },
+       {
+        "v": "Welke formulering is de hoofdgedachte?",
+        "o": [
+         "ieder werkt op een eigen moment het best",
+         "Marc doet zijn huiswerk het liefst in de bus",
+         "Eva werkt liever 's avonds",
+         "huiswerk is saai"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "De hoofdgedachte generaliseert wat de voorbeelden laten zien.",
+        "uo": [
+         "Klopt: dit staat in de laatste zin en vat de voorbeelden van Marc en Eva samen.",
+         "Koos je dit? Dit is een voorbeeld. De tekst gebruikt het om iets algemeners te laten zien.",
+         "Koos je dit? Ook dit is een voorbeeld. Het geldt voor één persoon en niet voor de hele tekst.",
+         "Koos je dit? Dat staat nergens in het fragment. Het gaat om het moment waarop iemand het best werkt."
+        ],
+        "uh": "Voorbeelden naar regel.",
+        "ctx": "Marc zegt dat hij zijn huiswerk in de bus doet en dat dat hem prima lukt. Zijn zus Eva werkt liever 's avonds, omdat ze dan rustig is. Ieder heeft een eigen moment waarop hij of zij het best werkt."
+       },
+       {
+        "v": "Welke hoofdgedachte kun je hieruit zelf verwoorden?",
+        "o": [
+         "de trein rijdt om 7.12 uur",
+         "door storingen kiezen mensen de auto",
+         "auto's zijn op de lange duur goedkoper dan de trein",
+         "de vader heeft nieuwe plannen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een impliciete hoofdgedachte combineert oorzaak en gevolg uit de tekst.",
+        "uo": [
+         "Koos je dit? Dit is een detail uit de eerste zin. De tekst gaat over een patroon van verstoringen.",
+         "Klopt: de gebeurtenissen laten samen zien dat storingen leiden tot het kiezen van de auto.",
+         "Koos je dit? Over kosten staat niets in de tekst. De reden is de onbetrouwbaarheid.",
+         "Koos je dit? Dit is een gevolg uit de laatste zin, niet de boodschap van de hele tekst."
+        ],
+        "uh": "Wat leidt waartoe?",
+        "ctx": "De trein van 7.12 uur kwam niet. De volgende had vertraging. Bij de tweede overstap was de bus al weg. Vorige week gebeurde hetzelfde. Mijn vader zegt dat hij voortaan met de auto gaat."
+       },
+       {
+        "v": "Welke zin is de kernzin van deze alinea?",
+        "o": [
+         "\"Steeds meer mensen werken thuis.\"",
+         "\"Dat scheelt reistijd.\"",
+         "\"Thuis ontbreekt vaak een rustige werkplek.\"",
+         "\"Bedrijven moeten daarom een vergoeding geven zodat werknemers thuis een goede werkplek kunnen inrichten.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "De kernzin hoeft niet de eerste zin te zijn: de zin waar de alinea naartoe werkt telt.",
+        "uo": [
+         "Koos je de eerste zin? Dit is de aanleiding. De alinea werkt naar een eis toe.",
+         "Koos je dit? Dit is een voordeel dat de schrijver erkent, geen hoofdpunt.",
+         "Koos je dit? Dit is de reden voor de eis. Het hoofdpunt is wat bedrijven moeten doen.",
+         "Klopt: deze zin is de eis waar de rest naartoe werkt. De eerste zinnen zijn aanleiding en onderbouwing."
+        ],
+        "uh": "Kernzin niet altijd vooraan.",
+        "ctx": "Alinea 2: Steeds meer mensen werken thuis. Dat scheelt reistijd, maar thuis ontbreekt vaak een rustige werkplek. Bedrijven moeten daarom een vergoeding geven zodat werknemers thuis een goede werkplek kunnen inrichten."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Steeds meer scholen werken met een continurooster. Leerlingen eten dan op school en hebben eerder vrij. Ouders zijn blij met de rust in de middag, docenten zien dat de lessen na de lunch minder uitvallen.",
+        "v": "Formuleer de hoofdgedachte van dit fragment in één zin.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Steeds meer scholen kiezen voor een continurooster, omdat dit voordelen heeft voor leerlingen, ouders en docenten (1 punt voor een volledige zin met onderwerp en bewering; 1 punt voor de reden of voordelen)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Veel gemeenten plaatsen zonnepanelen op sporthallen. De daken zijn groot en liggen veel in de zon. De stroom gebruikt de hal zelf.",
+        "v": "Geef het onderwerp en de hoofdgedachte van deze tekst en leg het verschil uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Onderwerp: zonnepanelen op sporthallen (waar de tekst over gaat). Hoofdgedachte: gemeenten plaatsen zonnepanelen op sporthallen, omdat de grote daken geschikt zijn en de stroom ter plekke gebruikt wordt. Het onderwerp is een thema; de hoofdgedachte is een volledige bewering daarover."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Lars zet zijn telefoon altijd stil als hij leert. Zijn cijfers gingen daardoor omhoog. Sanne laat haar telefoon naast zich liggen en raakt steeds afgeleid. Haar toetsresultaten zijn gedaald.",
+        "v": "De hoofdgedachte staat er niet letterlijk. Verwoord hem zelf en noem twee gegevens die dat onderbouwen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een telefoon stilzetten tijdens het leren helpt om beter te presteren (afleiding verlaagt de resultaten). Onderbouwing: Lars zet de telefoon stil en zijn cijfers stijgen; Sanne laat hem liggen, raakt afgeleid en haar resultaten dalen."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Titel: Een nieuw begin. Elke zomer stromen de campings in het noorden vol, maar in de herfst worden ze leeg. De eigenaren zoeken daarom naar manieren om ook buiten het seizoen gasten te krijgen, bijvoorbeeld met wandelweekenden.",
+        "v": "Waarom is de titel hier niet de hoofdgedachte? Formuleer de hoofdgedachte.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De titel zegt niets over de inhoud en is geen volledige bewering, dus geen boodschap. Hoofdgedachte: campingeigenaren in het noorden zoeken manieren om ook buiten het zomerseizoen gasten te trekken, omdat de campings in de herfst leeg zijn."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Alinea 3: Mensen die dichtbij een park wonen, bewegen vaker. Bovendien zeggen ze zich minder gestrest te voelen. Een park in de buurt is dus goed voor lichaam en geest.",
+        "v": "Wat is de hoofdgedachte van alinea 3? Welke zin laat dat zien?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een park in de buurt is goed voor lichaam en geest. De laatste zin is de kernzin; de eerste twee zinnen (vaker bewegen, minder stress) onderbouwen dat."
+       }
+      ]
      }
     ]
    },

@@ -52,6 +52,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A2",
+      "lo": "nl.A.2",
+      "gs": 2,
+      "naam": "Onderwerp en hoofdgedachte aangeven",
+      "beschrijving": "Je onderscheidt het onderwerp van de hoofdgedachte, vindt de hoofdgedachte van een tekst of alinea en verwoordt hem zelf als hij er niet letterlijk staat.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderwerp en hoofdgedachte onderscheiden",
+       "De hoofdgedachte expliciet in de tekst vinden",
+       "De hoofdgedachte zelf verwoorden",
+       "De hoofdgedachte van een alinea of tekstgedeelte",
+       "Een hoofdgedachte goed formuleren",
+       "Valkuilen: titel, details en voorbeelden"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 11,
+      "hasSam": true
      }
     ]
    },

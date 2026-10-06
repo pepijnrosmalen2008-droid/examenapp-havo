@@ -1423,5 +1423,47 @@ Object.assign(SAM_RICH,{
 <rect x="30" y="140" width="260" height="26" rx="8" fill="var(--or)"/><text x="160" y="158" font-size="12" font-weight="700" fill="#fff">belangrijkste doel: overtuigen</text></g></svg><div class="sam-figcap">In deze mengvorm informeren alinea 1 en 2, maar die feiten dienen als argument voor het standpunt in alinea 3. Daarom is het belangrijkste schrijfdoel overtuigen.</div></div>
 <p>Het <strong>tekstgedeelte</strong> waarover de vraag gaat, beoordeel je zelf: een alinea kan uitleggen terwijl de tekst als geheel een betoog is. Eén opiniezin in een verder neutrale uitleg maakt de tekst niet betogend; het gaat om het geheel.</p>
 <p><strong>Valkuilen:</strong> een tekst met voor- en nadelen is niet altijd een beschouwing (een betoog kan nadelen weerleggen); een tekst met meningen van anderen is niet automatisch een betoog; een beladen woord zegt iets over de toon, niet over het doel.</p>
+</div>`,
+'havo_nl_A2':`<div class="sam-intro">Bij vrijwel elke examenvraag over een tekst begin je met de kern: waar gaat het over, en wat zegt de schrijver daarover? In dit leerdoel leer je het <strong>onderwerp</strong> en de <strong>hoofdgedachte</strong> van elkaar te onderscheiden, de hoofdgedachte van een tekst of <strong>alinea</strong> te vinden en hem zelf te verwoorden als hij er niet letterlijk staat.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Onderwerp</td><td>Waar de tekst over gaat, zonder wat de schrijver ervan zegt.</td></tr>
+<tr><td>Hoofdgedachte</td><td>De belangrijkste boodschap van de hele tekst, in één volledige zin.</td></tr>
+<tr><td>Kernzin</td><td>De zin in een alinea die het hoofdpunt geeft.</td></tr>
+<tr><td>Expliciete hoofdgedachte</td><td>Staat er letterlijk in de tekst, vaak in de inleiding of het slot.</td></tr>
+<tr><td>Impliciete hoofdgedachte</td><td>Staat er niet; je verwoordt hem zelf.</td></tr>
+<tr><td>Parafraseren</td><td>Iets in eigen woorden weergeven met dezelfde betekenis.</td></tr>
+<tr><td>Voorbeeld en detail</td><td>Ondersteunen de hoofdgedachte, zijn haar niet zelf.</td></tr>
+<tr><td>Tekstgedeelte</td><td>Een deel van de tekst, zoals een alinea, met een eigen hoofdgedachte.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Onderwerp en hoofdgedachte</div>
+<p>Het <strong>onderwerp</strong> is het thema: waar de tekst over gaat. Het is meestal een woord of een korte groep woorden, bijvoorbeeld "fietsen naar school". De <strong>hoofdgedachte</strong> zegt wat de schrijver daarover vooral wil zeggen, en is een volledige zin: "Fietsen naar school maakt je wakkerder dan met de bus gaan."</p>
+<div class="sam-figure"><svg viewBox="0 0 320 180" role="img" aria-label="Verschil tussen onderwerp (thema) en hoofdgedachte (volledige bewering) met een voorbeeld over fietsen naar school"><g font-family="inherit" text-anchor="middle"><rect x="6" y="6" width="308" height="70" rx="10" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="26" font-size="12" font-weight="700" fill="var(--dk)">Onderwerp: waarover?</text><text x="160" y="46" font-size="12" fill="var(--dk)">fietsen naar school</text><text x="160" y="64" font-size="11" fill="var(--mu)">een thema, nog geen boodschap</text>
+<path d="M160 76 V100" stroke="var(--or)" stroke-width="2.5"/><path d="M153 96 L160 106 L167 96 Z" fill="var(--or)"/><text x="176" y="94" text-anchor="start" font-size="11" fill="var(--dk)">wat wordt erover gezegd?</text>
+<rect x="6" y="108" width="308" height="66" rx="10" fill="var(--or)"/><text x="160" y="128" font-size="12" font-weight="700" fill="#fff">Hoofdgedachte</text><text x="160" y="146" font-size="12" fill="#fff">Fietsen naar school maakt je</text><text x="160" y="162" font-size="12" fill="#fff">wakkerder dan met de bus gaan.</text></g></svg><div class="sam-figcap">Het onderwerp noemt alleen het thema; de hoofdgedachte voegt een bewering toe: wat de schrijver over dat thema zegt.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> onderwerp = waarover; hoofdgedachte = wat de tekst erover zegt, in één volledige zin.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Expliciet: waar zoek je de hoofdgedachte?</div>
+<p>Soms staat de hoofdgedachte er letterlijk in: een <strong>expliciete hoofdgedachte</strong>. Zoek hem eerst op twee plaatsen: in de <strong>inleiding</strong> (de schrijver kondigt aan waar het om gaat) en in het <strong>slot</strong> (de <strong>conclusie</strong> vat de kern samen). Woorden als <em>kortom</em>, <em>dus</em> en <em>al met al</em> wijzen op zo'n samenvatting. In het middendeel staan meestal <strong>voorbeelden</strong> en <strong>details</strong> die de kern ondersteunen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Opbouw van een tekst met inleiding, kern en slot: de hoofdgedachte staat vaak in de inleiding of het slot, de kern bevat voorbeelden en details"><g font-family="inherit" text-anchor="middle"><rect x="10" y="8" width="300" height="48" rx="8" fill="var(--or)"/><text x="160" y="28" font-size="12" font-weight="700" fill="#fff">Inleiding</text><text x="160" y="46" font-size="11" fill="#fff">onderwerp, vaak de hoofdgedachte</text>
+<rect x="10" y="66" width="300" height="62" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="88" font-size="12" font-weight="700" fill="var(--dk)">Kern</text><text x="160" y="106" font-size="11" fill="var(--dk)">uitwerking: argumenten,</text><text x="160" y="121" font-size="11" fill="var(--dk)">voorbeelden en details</text>
+<rect x="10" y="138" width="300" height="48" rx="8" fill="var(--or)"/><text x="160" y="158" font-size="12" font-weight="700" fill="#fff">Slot</text><text x="160" y="176" font-size="11" fill="#fff">conclusie: kortom, dus, al met al</text></g></svg><div class="sam-figcap">Zoek de hoofdgedachte eerst in de inleiding en het slot. In het middendeel staan vooral voorbeelden en details die de kern onderbouwen.</div></div>
+<p>Ook een <strong>tekstgedeelte</strong> heeft een eigen hoofdgedachte. Bij een <strong>alinea</strong> is dat de <strong>kernzin</strong>. Die staat vaak vooraan, maar de alinea kan ook naar de kernzin toewerken, zoals bij "daarom" of "dus" in de laatste zin.</p>
+<div class="sam-tip"><strong>Examentip:</strong> een vraag naar "de hoofdgedachte van alinea 3" gaat over alinea 3, niet over de hele tekst. Lees de alinea apart en zoek de zin die zijn hoofdpunt geeft.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Impliciet: zelf verwoorden en valkuilen</div>
+<p>Staat de hoofdgedachte er niet letterlijk in, dan is hij <strong>impliciet</strong> en verwoord je hem zelf. Dat doe je in drie stappen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 214" role="img" aria-label="Drie stappen om een impliciete hoofdgedachte te verwoorden: onderwerp bepalen, hoofdpunten verzamelen, samenvatten in één volledige zin"><g font-family="inherit" text-anchor="middle"><rect x="10" y="6" width="300" height="46" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="25" font-size="12" font-weight="700" fill="var(--dk)">1  Bepaal het onderwerp</text><text x="160" y="42" font-size="11" fill="var(--dk)">waar gaat de tekst over?</text>
+<path d="M160 52 V66" stroke="var(--or)" stroke-width="2.5"/><path d="M153 62 L160 72 L167 62 Z" fill="var(--or)"/>
+<rect x="10" y="72" width="300" height="46" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="91" font-size="12" font-weight="700" fill="var(--dk)">2  Zoek de hoofdpunten</text><text x="160" y="108" font-size="11" fill="var(--dk)">wat zeggen de alinea's of voorbeelden?</text>
+<path d="M160 118 V132" stroke="var(--or)" stroke-width="2.5"/><path d="M153 128 L160 138 L167 128 Z" fill="var(--or)"/>
+<rect x="10" y="138" width="300" height="46" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="157" font-size="12" font-weight="700" fill="var(--dk)">3  Vat samen in één zin</text><text x="160" y="174" font-size="11" fill="var(--dk)">wat laten ze samen zien?</text>
+<rect x="10" y="190" width="300" height="20" rx="6" fill="var(--or)"/><text x="160" y="204" font-size="11" font-weight="700" fill="#fff">resultaat: de hoofdgedachte</text></g></svg><div class="sam-figcap">Impliciete hoofdgedachte: bepaal het onderwerp, verzamel de hoofdpunten uit de alinea's en vat ze samen in één volledige zin.</div></div>
+<p>Let op de valkuilen: een goede formulering is niet te <strong>breed</strong> ("bibliotheken zijn leuk") en niet te <strong>smal</strong> (alleen een gevolg of een detail). Je mag <strong>parafraseren</strong>: dezelfde betekenis in eigen woorden, zonder iets toe te voegen of te veranderen.</p>
+<p>De <strong>titel</strong> is een hint, maar niet automatisch de hoofdgedachte. Een <strong>voorbeeld</strong> toont één geval; de hoofdgedachte geldt voor het geheel. Een <strong>detail</strong> is een bijzaak.</p>
 </div>`
 });
