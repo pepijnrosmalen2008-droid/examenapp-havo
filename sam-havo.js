@@ -1366,5 +1366,62 @@ Object.assign(SAM_RICH,{
 <li>enzym <strong>niet verbruikt</strong>: een daling in een grafiek komt door denaturatie, niet door "opraken"</li>
 </ul>
 
-<div class="sam-onthoud">Een enzym herkent zijn substraat aan de <strong>vorm</strong> van het actief centrum (sleutel–slot). Denk dus niet in "één enzym hoort bij één stof", maar in een <strong>passende vorm</strong>.</div>`
+<div class="sam-onthoud">Een enzym herkent zijn substraat aan de <strong>vorm</strong> van het actief centrum (sleutel–slot). Denk dus niet in "één enzym hoort bij één stof", maar in een <strong>passende vorm</strong>.</div>`,
+'havo_nl_A1':`<div class="sam-intro">Elke tekst op het examen hoort bij een <strong>tekstsoort</strong> met een eigen <strong>schrijfdoel</strong>. In dit leerdoel leer je de drie soorten herkennen: <strong>uiteenzettend</strong>, <strong>beschouwend</strong> en <strong>betogend</strong>. Je leert ook wat je doet als een tekst meerdere doelen heeft, en hoe je dat bij een heel stuk tekst of bij één alinea bepaalt.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Tekstsoort</td><td>Het type tekst: uiteenzettend, beschouwend of betogend.</td></tr>
+<tr><td>Uiteenzettende tekst</td><td>Legt iets uit, beschrijft, verklaart of deelt mee. Doel: informeren.</td></tr>
+<tr><td>Beschouwende tekst</td><td>Biedt interpretaties, verklaringen en opinies aan om over na te denken. Doel: ter overweging aanbieden.</td></tr>
+<tr><td>Betogende tekst</td><td>Neemt een beargumenteerd standpunt in. Doel: overtuigen of tot actie aanzetten.</td></tr>
+<tr><td>Schrijfdoel</td><td>Wat de schrijver met de tekst of het tekstgedeelte wil bereiken.</td></tr>
+<tr><td>Standpunt</td><td>Een uitspraak waarover meningen kunnen verschillen en die de schrijver verdedigt.</td></tr>
+<tr><td>Mengvorm</td><td>Een tekst of tekstgedeelte met meerdere schrijfdoelen. Je bepaalt het belangrijkste doel.</td></tr>
+<tr><td>Tekstgedeelte</td><td>Een deel van de tekst, zoals een alinea, met een eigen soort of doel.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Drie tekstsoorten, drie doelen</div>
+<p>Bij een <strong>uiteenzettende tekst</strong> wordt iets uitgelegd, beschreven, verklaard of meegedeeld. De schrijver wil de lezer <strong>informeren</strong> over een stand van zaken of gang van zaken. Voorbeeld: een tekst over hoe een zonnepaneel stroom maakt.</p>
+<p>Een <strong>beschouwende tekst</strong> biedt interpretaties, verklaringen en opinies <strong>ter overweging</strong> aan. De lezer moet over een kwestie nadenken. Zo'n tekst mag de argumenten voor en tegen een of meer standpunten behandelen, maar is er niet op gericht de lezer voor een van die standpunten te winnen.</p>
+<p>Een <strong>betogende tekst</strong> neemt een beargumenteerd <strong>standpunt</strong> in. De schrijver wil de lezer <strong>overtuigen</strong> of <strong>tot actie aanzetten</strong>.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 190" role="img" aria-label="Schema van de tekstsoorten uiteenzetting, beschouwing en betoog met bij elke soort het schrijfdoel"><g font-family="inherit" text-anchor="middle"><rect x="4" y="6" width="100" height="178" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><rect x="110" y="6" width="100" height="178" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><rect x="216" y="6" width="100" height="178" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/>
+<text x="54" y="28" font-size="12" font-weight="700" fill="var(--dk)">Uiteenzetting</text><text x="160" y="28" font-size="12" font-weight="700" fill="var(--dk)">Beschouwing</text><text x="266" y="28" font-size="12" font-weight="700" fill="var(--dk)">Betoog</text>
+<text x="54" y="58" font-size="11" fill="var(--dk)">legt uit,</text><text x="54" y="73" font-size="11" fill="var(--dk)">beschrijft,</text><text x="54" y="88" font-size="11" fill="var(--dk)">deelt mee</text>
+<text x="160" y="58" font-size="11" fill="var(--dk)">biedt opvattingen</text><text x="160" y="73" font-size="11" fill="var(--dk)">aan, weegt af,</text><text x="160" y="88" font-size="11" fill="var(--dk)">kiest geen kant</text>
+<text x="266" y="58" font-size="11" fill="var(--dk)">verdedigt een</text><text x="266" y="73" font-size="11" fill="var(--dk)">standpunt met</text><text x="266" y="88" font-size="11" fill="var(--dk)">argumenten</text>
+<path d="M54 100 V122 M160 100 V122 M266 100 V122" stroke="var(--or)" stroke-width="2.5" fill="none"/><path d="M48 118 L54 128 L60 118 Z M154 118 L160 128 L166 118 Z M260 118 L266 128 L272 118 Z" fill="var(--or)"/>
+<text x="54" y="148" font-size="12" font-weight="700" fill="var(--dk)">informeren</text><text x="160" y="148" font-size="12" font-weight="700" fill="var(--dk)">laten nadenken</text><text x="266" y="148" font-size="12" font-weight="700" fill="var(--dk)">overtuigen,</text><text x="266" y="165" font-size="11" fill="var(--dk)">tot actie aanzetten</text>
+<text x="160" y="165" font-size="11" fill="var(--dk)">(ter overweging)</text></g></svg><div class="sam-figcap">Elke tekstsoort heeft een eigen schrijfdoel: een uiteenzetting wil informeren, een beschouwing laat de lezer nadenken, een betoog wil overtuigen of tot actie aanzetten.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> uitleggen = informeren, afwegen = ter overweging aanbieden, verdedigen = overtuigen of tot actie aanzetten.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Zo bepaal je de tekstsoort</div>
+<p>Je kijkt niet naar het onderwerp, maar naar wat de schrijver <strong>doet</strong>. Stel jezelf twee vragen, in deze volgorde. Eerst: wordt er een <strong>standpunt</strong> met argumenten verdedigd? Dan is het een betoog. Zo niet: worden er opvattingen naast elkaar gelegd zodat de lezer kan nadenken? Dan is het een beschouwing. Anders is het een uiteenzetting.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 218" role="img" aria-label="Beslisboom om de tekstsoort te bepalen: standpunt verdedigd is betoog, opvattingen afgewogen is beschouwing, anders uiteenzetting"><g font-family="inherit" text-anchor="middle"><rect x="6" y="6" width="214" height="40" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="113" y="23" font-size="12" fill="var(--dk)">Verdedigt de schrijver een</text><text x="113" y="38" font-size="12" fill="var(--dk)">standpunt met argumenten?</text>
+<rect x="236" y="11" width="80" height="30" rx="8" fill="var(--or)"/><text x="276" y="31" font-size="12" font-weight="700" fill="#fff">betoog</text><path d="M220 26 H234" stroke="var(--dk)" stroke-width="2"/><text x="227" y="20" font-size="11" fill="var(--dk)">ja</text>
+<path d="M113 46 V76" stroke="var(--dk)" stroke-width="2"/><text x="132" y="66" font-size="11" fill="var(--dk)">nee</text>
+<rect x="6" y="78" width="214" height="40" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="113" y="95" font-size="12" fill="var(--dk)">Biedt de schrijver opvattingen</text><text x="113" y="110" font-size="12" fill="var(--dk)">ter overweging aan?</text>
+<rect x="236" y="83" width="80" height="30" rx="8" fill="var(--or)"/><text x="276" y="103" font-size="12" font-weight="700" fill="#fff">beschouwing</text><path d="M220 98 H234" stroke="var(--dk)" stroke-width="2"/><text x="227" y="92" font-size="11" fill="var(--dk)">ja</text>
+<path d="M113 118 V148" stroke="var(--dk)" stroke-width="2"/><text x="132" y="138" font-size="11" fill="var(--dk)">nee</text>
+<rect x="6" y="150" width="214" height="40" rx="8" fill="var(--or)"/><text x="113" y="167" font-size="12" font-weight="700" fill="#fff">uiteenzetting</text><text x="113" y="182" font-size="11" fill="#fff">legt uit, beschrijft, deelt mee</text>
+<text x="160" y="209" font-size="11" fill="var(--mu)">Bij een mengvorm: kies het belangrijkste doel.</text></g></svg><div class="sam-figcap">Beslisboom: eerst kijk je of er een standpunt wordt verdedigd (betoog), dan of opvattingen worden afgewogen (beschouwing), anders is het een uiteenzetting.</div></div>
+<p>Een betoog herken je vaak aan een zin met <em>moeten</em>, <em>zou moeten</em> of een duidelijke eis. Een beschouwing herken je aan woorden als <em>aan de ene kant</em> en <em>aan de andere kant</em>, of een open vraag aan het slot.</p>
+<div class="sam-tip"><strong>Examentip:</strong> een beladen woord ("egoïstisch") of een enkel feit bepaalt de tekstsoort niet. Zoek het standpunt of de afweging. Vraag je steeds af: wat wil de schrijver dat ik na het lezen doe of denk?</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Mengvormen en tekstgedeelten</div>
+<p>De schrijfdoelen kunnen in combinatie voorkomen. Een <strong>mengvorm</strong> heeft meer dan een doel. Dan stel je vast wat het <strong>belangrijkste schrijfdoel</strong> is, dus of de tekst of het tekstgedeelte voornamelijk uiteenzettend, beschouwend of betogend is. Feiten aan het begin zijn vaak een argument: ze dienen dan het standpunt dat later volgt.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 170" role="img" aria-label="Een mengvorm: alinea 1 en 2 geven feiten die het standpunt in alinea 3 onderbouwen, zodat het hoofddoel overtuigen is"><g font-family="inherit" text-anchor="middle"><text x="160" y="16" font-size="12" font-weight="700" fill="var(--dk)">Een tekst van vier alinea's</text>
+<rect x="6" y="26" width="70" height="44" rx="6" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="41" y="53" font-size="12" fill="var(--dk)">feiten</text>
+<rect x="85" y="26" width="70" height="44" rx="6" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="120" y="53" font-size="12" fill="var(--dk)">feiten</text>
+<rect x="164" y="26" width="70" height="44" rx="6" fill="var(--or)"/><text x="199" y="53" font-size="12" font-weight="700" fill="#fff">standpunt</text>
+<rect x="243" y="26" width="70" height="44" rx="6" fill="var(--or)"/><text x="278" y="53" font-size="12" font-weight="700" fill="#fff">oproep</text>
+<text x="41" y="90" font-size="11" fill="var(--dk)">alinea 1</text><text x="120" y="90" font-size="11" fill="var(--dk)">alinea 2</text><text x="199" y="90" font-size="11" fill="var(--dk)">alinea 3</text><text x="278" y="90" font-size="11" fill="var(--dk)">alinea 4</text>
+<path d="M41 100 Q120 122 192 102" stroke="var(--mu)" stroke-width="2" fill="none" stroke-dasharray="5 4"/><path d="M120 100 Q150 112 192 102" stroke="var(--mu)" stroke-width="2" fill="none" stroke-dasharray="5 4"/><path d="M186 98 L194 102 L187 108" stroke="var(--mu)" stroke-width="2" fill="none"/>
+<text x="110" y="132" font-size="11" fill="var(--dk)">de feiten dienen het standpunt</text>
+<rect x="30" y="140" width="260" height="26" rx="8" fill="var(--or)"/><text x="160" y="158" font-size="12" font-weight="700" fill="#fff">belangrijkste doel: overtuigen</text></g></svg><div class="sam-figcap">In deze mengvorm informeren alinea 1 en 2, maar die feiten dienen als argument voor het standpunt in alinea 3. Daarom is het belangrijkste schrijfdoel overtuigen.</div></div>
+<p>Het <strong>tekstgedeelte</strong> waarover de vraag gaat, beoordeel je zelf: een alinea kan uitleggen terwijl de tekst als geheel een betoog is. Eén opiniezin in een verder neutrale uitleg maakt de tekst niet betogend; het gaat om het geheel.</p>
+<p><strong>Valkuilen:</strong> een tekst met voor- en nadelen is niet altijd een beschouwing (een betoog kan nadelen weerleggen); een tekst met meningen van anderen is niet automatisch een betoog; een beladen woord zegt iets over de toon, niet over het doel.</p>
+</div>`
 });

@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **1 leerdoel op v2** (havo bi.M3). Werk dit getal bij bij elke afronding.
+> Voortgang: **2 leerdoelen op v2** (havo bi.M3, nl.A1). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -31,7 +31,7 @@
 ---
 
 - [ ] **HAVO · Nederlands** (`nl`) · domein A — Leesvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2)
-  - [ ] A1 · nl.A.1 Tekstsoort en schrijfdoel bepalen
+  - [x] A1 · nl.A.1 Tekstsoort en schrijfdoel bepalen · 28 vragen (R1-R3), 12 begrippen, 3 schema's (tekstsoorten, beslisboom, mengvorm), geen clip
   - [ ] A2 · nl.A.2 Onderwerp en hoofdgedachte aangeven
   - [ ] A3 · nl.A.3 Relaties tussen tekstdelen benoemen
   - [ ] A4 · nl.A.4 Conclusies over de auteur trekken
