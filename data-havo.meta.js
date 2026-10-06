@@ -118,6 +118,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 11,
       "hasSam": true
+     },
+     {
+      "id": "A5",
+      "lo": "nl.A.5",
+      "gs": 2,
+      "naam": "Standpunten, argumenten en schema's herkennen",
+      "beschrijving": "Je vindt het standpunt en de argumenten in een betoog, onderscheidt feitelijke en waarderende argumenten, ziet de structuur van de argumentatie en herkent het argumentatieschema.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Standpunt en argument onderscheiden",
+       "Feitelijke en waarderende argumenten",
+       "Argumentatiestructuur: enkelvoudig, nevenschikkend, onderschikkend",
+       "Schema's: oorzaak-gevolg en kenmerk",
+       "Schema's: voor- en nadelen, voorbeelden, vergelijking, autoriteit",
+       "Valkuilen: tegenwerping, feit en standpunt"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 16,
+      "hasSam": true
      }
     ]
    },

@@ -5730,6 +5730,700 @@ var VAKKEN = [
         "u": "Gevoel: spijt of teleurstelling; opvatting: de sluiting is een slechte zaak (1 punt). Onderbouwing: het woord \"jammer\" en de opmerking dat de nieuwe zaal \"te ver weg\" is voor veel leerlingen (1 punt)."
        }
       ]
+     },
+     {
+      "id": "A5",
+      "lo": "nl.A.5",
+      "gs": 2,
+      "naam": "Standpunten, argumenten en schema's herkennen",
+      "beschrijving": "Je vindt het standpunt en de argumenten in een betoog, onderscheidt feitelijke en waarderende argumenten, ziet de structuur van de argumentatie en herkent het argumentatieschema.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Standpunt en argument onderscheiden",
+       "Feitelijke en waarderende argumenten",
+       "Argumentatiestructuur: enkelvoudig, nevenschikkend, onderschikkend",
+       "Schema's: oorzaak-gevolg en kenmerk",
+       "Schema's: voor- en nadelen, voorbeelden, vergelijking, autoriteit",
+       "Valkuilen: tegenwerping, feit en standpunt"
+      ],
+      "sam": "In een betoog verdedigt de schrijver een standpunt met argumenten. Argumenten zijn feitelijk (controleerbaar) of waarderend (een oordeel). De structuur is enkelvoudig, nevenschikkend of onderschikkend (met subargumenten). Het argumentatieschema laat zien hoe een argument het standpunt steunt: oorzaak en gevolg, kenmerk of eigenschap, voor- en nadelen, voorbeelden, vergelijking of autoriteit.",
+      "begrippen": [
+       {
+        "t": "Standpunt",
+        "d": "Een uitspraak waarover meningen kunnen verschillen en die de schrijver verdedigt."
+       },
+       {
+        "t": "Argument",
+        "d": "Een reden die een standpunt onderbouwt."
+       },
+       {
+        "t": "Feitelijk argument",
+        "d": "Een argument dat berust op iets wat je kunt controleren."
+       },
+       {
+        "t": "Waarderend argument",
+        "d": "Een argument dat berust op een oordeel of waardering."
+       },
+       {
+        "t": "Enkelvoudige argumentatie",
+        "d": "Argumentatie met één argument voor het standpunt."
+       },
+       {
+        "t": "Nevenschikkende argumentatie",
+        "d": "Argumentatie met meerdere argumenten die elk zelfstandig het standpunt steunen."
+       },
+       {
+        "t": "Onderschikkende argumentatie",
+        "d": "Argumentatie waarin een argument zelf weer door een subargument wordt ondersteund."
+       },
+       {
+        "t": "Subargument",
+        "d": "Een argument dat een ander argument ondersteunt."
+       },
+       {
+        "t": "Argumentatieschema",
+        "d": "De manier waarop een argument het standpunt ondersteunt."
+       },
+       {
+        "t": "Oorzaak-gevolgschema",
+        "d": "Het argument noemt een oorzaak of gevolg van wat het standpunt zegt."
+       },
+       {
+        "t": "Kenmerkschema",
+        "d": "Het argument noemt een kenmerk of eigenschap die het standpunt rechtvaardigt."
+       },
+       {
+        "t": "Voor- en nadelenschema",
+        "d": "Het argument wijst op voor- en nadelen om een keuze te verdedigen."
+       },
+       {
+        "t": "Voorbeeldschema",
+        "d": "Het argument noemt concrete voorbeelden die het standpunt steunen."
+       },
+       {
+        "t": "Vergelijkingsschema",
+        "d": "Het argument vergelijkt de zaak met iets vergelijkbaars."
+       },
+       {
+        "t": "Autoriteitsschema",
+        "d": "Het argument steunt op de mening of kennis van een deskundige of gezaghebbende bron."
+       },
+       {
+        "t": "Tegenwerping",
+        "d": "Een bezwaar tegen het standpunt dat de schrijver noemt, meestal om te weerleggen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat is een standpunt in een betoog?",
+        "o": [
+         "een feit dat iedereen zelf kan controleren",
+         "de uitspraak die de schrijver wil verdedigen",
+         "een voorbeeld dat de schrijver geeft",
+         "de titel boven de tekst"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Het standpunt is de uitspraak die de schrijver wil verdedigen.",
+        "uo": [
+         "Koos je dit? Een feit staat vast en hoeft niet te worden verdedigd. Een standpunt is een uitspraak waarover meningen kunnen verschillen, en dus verdedigd moet worden.",
+         "Klopt: het standpunt is waar het om draait. Alle argumenten dienen om dit standpunt te onderbouwen.",
+         "Koos je dit? Een voorbeeld ondersteunt een bewering, hij is niet zelf de bewering. Het standpunt is wat door voorbeelden en andere argumenten wordt onderbouwd.",
+         "Koos je dit? Een titel kan het onderwerp noemen, maar bevat meestal geen volledig standpunt. Het standpunt formuleer je als een uitspraak met een oordeel of eis."
+        ],
+        "uh": "Standpunt = wat wordt verdedigd."
+       },
+       {
+        "v": "Welk signaalwoord kondigt een argument voor een standpunt aan?",
+        "o": [
+         "maar",
+         "bijvoorbeeld",
+         "dus",
+         "want"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "\"Want\" kondigt vaak een argument aan.",
+        "uo": [
+         "Koos je \"maar\"? Dat woord zet iets tegenover het voorgaande. Een argument ondersteunt het standpunt juist, dus het past meer bij want of omdat.",
+         "Koos je \"bijvoorbeeld\"? Dat kondigt een voorbeeld aan. Een voorbeeld kan een argument zijn, maar het is niet het kenmerkende woord voor een reden zoals want.",
+         "Koos je \"dus\"? Dat woord leidt vaak een conclusie of standpunt in dat uit de argumenten volgt. Een argument kondig je aan met want.",
+         "Klopt: na \"want\" volgt een reden. Die reden onderbouwt het standpunt dat ervoor staat."
+        ],
+        "uh": "Want = reden."
+       },
+       {
+        "v": "Welke uitspraak is een standpunt?",
+        "o": [
+         "scholen moeten later beginnen",
+         "de school begint om half negen",
+         "hoe laat begint de school?",
+         "scholen bestaan al lang"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Een standpunt is een discutabele uitspraak, vaak met moeten of een oordeel.",
+        "uo": [
+         "Klopt: \"moeten\" drukt een eis uit waarover mensen het oneens kunnen zijn. Dat is een standpunt.",
+         "Koos je dit? Dit is een controleerbaar gegeven en geen discutabele uitspraak. Een standpunt is iets waarover je kunt discussiëren, zoals dat de school anders moet.",
+         "Koos je dit? Een vraag verdedigt niets. Een standpunt is een uitspraak die iemand wil bewijzen.",
+         "Koos je dit? Dit is een vaststelling die niemand betwist. Een standpunt moet discutabel zijn en iets wensen of beoordelen."
+        ],
+        "uh": "Standpunt = discutabel."
+       },
+       {
+        "v": "Welk argument is feitelijk?",
+        "o": [
+         "roken is een vieze gewoonte",
+         "niemand zou mogen roken",
+         "rokers hebben een grotere kans op longkanker",
+         "roken is asociaal tegenover alle mensen om je heen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Een feitelijk argument kun je controleren.",
+        "uo": [
+         "Koos je dit? \"Vies\" is een persoonlijk oordeel; mensen kunnen het oneens zijn. Dat maakt het waarderend, niet feitelijk.",
+         "Koos je dit? Dit is zelf een eis of standpunt. Je kunt het niet controleren zoals een feit.",
+         "Klopt: dit is met onderzoek te controleren. Een argument is feitelijk als je kunt nagaan of het klopt.",
+         "Koos je dit? \"Asociaal\" is een waardering. Of iets asociaal is, hangt af van wie het beoordeelt."
+        ],
+        "uh": "Controleerbaar = feitelijk."
+       },
+       {
+        "v": "Wat is het verschil tussen een feitelijk en een waarderend argument?",
+        "o": [
+         "een feitelijk argument is altijd korter dan een waarderend argument in dezelfde tekst",
+         "een waarderend argument is altijd onwaar",
+         "een feitelijk argument kun je controleren, een waarderend argument is een oordeel",
+         "een feitelijk argument noemt altijd een getal"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Feitelijke argumenten zijn controleerbaar, waarderende berusten op een oordeel.",
+        "uo": [
+         "Koos je dit? De lengte van een argument zegt niets over zijn soort. Het gaat om wat het argument zegt: een feit of een oordeel.",
+         "Koos je dit? Een waardering is niet onwaar of waar in dezelfde zin als een feit. Het is een oordeel waar je het mee eens of oneens kunt zijn.",
+         "Klopt: bij feiten ga je na of het klopt; bij waardering gaat het om wat iemand mooi, eerlijk of belangrijk vindt.",
+         "Koos je dit? Veel feiten hebben geen getal, bijvoorbeeld \"roken veroorzaakt kanker\". Controleerbaarheid telt, niet getallen."
+        ],
+        "uh": "Check of oordeel."
+       },
+       {
+        "v": "Wat is een enkelvoudige argumentatie?",
+        "o": [
+         "één argument voor het standpunt",
+         "twee argumenten voor het standpunt",
+         "een argument met een subargument",
+         "een standpunt zonder argument"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Enkelvoudige argumentatie heeft één argument.",
+        "uo": [
+         "Klopt: de schrijver ondersteunt het standpunt met slechts één argument.",
+         "Koos je dit? Bij twee argumenten die los naast elkaar het standpunt steunen, spreek je van nevenschikkend. Enkelvoudig betekent: één.",
+         "Koos je dit? Dat noem je onderschikkend: het argument wordt zelf weer ondersteund. Enkelvoudig is alleen één argument voor het standpunt.",
+         "Koos je dit? Zonder argument is er geen argumentatie. Enkelvoudig betekent dat er precies één argument is."
+        ],
+        "uh": "Enkelvoudig = één."
+       },
+       {
+        "v": "Wat kenmerkt een nevenschikkende argumentatie?",
+        "o": [
+         "één argument dat zelf weer wordt onderbouwd door iets anders",
+         "één argument zonder onderbouwing",
+         "argumenten die elkaar tegenspreken",
+         "meerdere argumenten die elk zelfstandig steunen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Nevenschikkend: argumenten naast elkaar die elk het standpunt steunen.",
+        "uo": [
+         "Koos je dit? Dat is onderschikkend: een argument met een subargument eronder. Bij nevenschikkend staan argumenten naast elkaar.",
+         "Koos je dit? Dat is enkelvoudig. Nevenschikkend vraagt om meer dan één argument.",
+         "Koos je dit? Tegenstrijdige argumenten maken een betoog zwak, maar dat noem je geen nevenschikking. Het gaat om argumenten die elk het standpunt steunen.",
+         "Klopt: de argumenten staan naast elkaar en elk ondersteunt het standpunt zonder het andere nodig te hebben."
+        ],
+        "uh": "Naast elkaar = nevenschikkend."
+       },
+       {
+        "v": "Wat kenmerkt een onderschikkende argumentatie?",
+        "o": [
+         "meerdere losse argumenten voor het standpunt",
+         "een argument krijgt zelf een subargument",
+         "een argument dat het standpunt tegenspreekt",
+         "één argument zonder onderbouwing"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Onderschikkend: een argument met een subargument eronder.",
+        "uo": [
+         "Koos je dit? Dat is nevenschikkend: de argumenten staan naast elkaar. Onderschikkend betekent dat er een argument onder een argument zit.",
+         "Klopt: het argument staat niet op zichzelf, er zit een tweede laag onder: het subargument.",
+         "Koos je dit? Een tegenwerping gaat tegen het standpunt in. Een subargument ondersteunt juist een argument.",
+         "Koos je dit? Dat is enkelvoudig. Bij onderschikkend wordt het argument zelf nog onderbouwd."
+        ],
+        "uh": "Argument onder argument."
+       },
+       {
+        "v": "Welk argument volgt het kenmerkschema?",
+        "o": [
+         "dit is een goede fiets, want de fietsenmaker zegt het",
+         "dit is een goede fiets, kijk maar naar die van mijn buurman",
+         "dit is een goede fiets, net zoals mijn oude racefiets",
+         "dit is een goede fiets, want hij is licht en robuust"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Het kenmerkschema steunt op eigenschappen van de zaak zelf.",
+        "uo": [
+         "Koos je dit? Hier wordt een deskundige aangehaald. Dat is een autoriteitsargument en geen kenmerk van de fiets zelf.",
+         "Koos je dit? Hier wordt een concreet geval genoemd. Dat is een voorbeeldargument, geen kenmerk van de fiets.",
+         "Koos je dit? Hier wordt de fiets met iets anders vergeleken. Dat is een vergelijkingsargument, geen eigenschap.",
+         "Klopt: het argument noemt eigenschappen (licht en robuust) van de zaak waarover het standpunt gaat."
+        ],
+        "uh": "Eigenschap = kenmerk."
+       },
+       {
+        "v": "Welk argument volgt het autoriteitsschema?",
+        "o": [
+         "neem deze medicijnen, ze zijn goed voor je gezondheid",
+         "neem deze medicijnen, want de huisarts raadt ze aan",
+         "neem deze medicijnen, mijn buurman heeft ze ook genomen",
+         "neem deze medicijnen, net zoals je een vitamine neemt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Het autoriteitsschema steunt op een deskundige of gezaghebbende bron.",
+        "uo": [
+         "Koos je dit? Dit noemt een eigenschap of gevolg, niet een bron. Een autoriteitsargument verwijst naar een deskundige.",
+         "Klopt: het argument steunt op de mening van een deskundige, de huisarts.",
+         "Koos je dit? Een buurman is geen deskundige. Dit is hooguit een voorbeeldargument.",
+         "Koos je dit? Hier wordt vergeleken met iets anders. Dat is een vergelijkingsargument, geen autoriteit."
+        ],
+        "uh": "Deskundige = autoriteit."
+       },
+       {
+        "v": "Welk argument volgt het voor- en nadelenschema?",
+        "o": [
+         "neem de trein, want de conducteur zegt dat het sneller is",
+         "neem de trein, kijk maar naar je buurman die elke dag reist",
+         "neem de trein: dat is sneller, ook al is het duurder",
+         "neem de trein, zoals je ook de bus neemt bij regen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Het voor- en nadelenschema zet voordelen en nadelen tegen elkaar af.",
+        "uo": [
+         "Koos je dit? Hier wordt een deskundige aangehaald, dus het is een autoriteitsargument. Van voor- en nadelen is geen sprake.",
+         "Koos je dit? Hier wordt een concreet geval genoemd. Dat is een voorbeeldargument.",
+         "Klopt: er worden voordelen (sneller) en een nadeel (duurder) naast elkaar gezet om een keuze te verdedigen.",
+         "Koos je dit? Hier wordt de trein vergeleken met de bus. Dat is een vergelijkingsargument."
+        ],
+        "uh": "Voor en tegen afwegen."
+       },
+       {
+        "v": "Welk woord kondigt vaak een standpunt aan dat uit argumenten volgt?",
+        "o": [
+         "dus",
+         "want",
+         "bijvoorbeeld",
+         "echter"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "\"Dus\" kan een standpunt inleiden dat uit de argumenten volgt.",
+        "uo": [
+         "Klopt: na \"dus\" volgt vaak de conclusie, bijvoorbeeld het standpunt dat uit de argumenten volgt.",
+         "Koos je \"want\"? Dat kondigt juist een argument aan. Het standpunt staat vóór \"want\", niet erna.",
+         "Koos je \"bijvoorbeeld\"? Dat woord kondigt een voorbeeld aan, geen conclusie of standpunt.",
+         "Koos je \"echter\"? Dat woord geeft een tegenstelling aan. Een conclusie volgt niet uit een tegenstelling."
+        ],
+        "uh": "Dus = conclusie."
+       },
+       {
+        "v": "Wat is het standpunt in dit fragment?",
+        "o": [
+         "scholen zouden een bijbaan moeten stimuleren",
+         "leerlingen leren er veel verantwoordelijkheid van",
+         "een bijbaan",
+         "leerlingen"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Het standpunt staat vóór \"want\", het argument erna.",
+        "uo": [
+         "Klopt: dit is de eis waar het om draait. Het deel na \"want\" geeft de reden.",
+         "Koos je dit? Dit staat na \"want\" en is het argument. Het standpunt is wat daardoor onderbouwd wordt.",
+         "Koos je dit? \"Een bijbaan\" is een onderwerp of thema, geen volledige uitspraak. Een standpunt bevat een oordeel of eis.",
+         "Koos je dit? Dit is een groep, geen uitspraak. Het standpunt zegt wat scholen moeten doen."
+        ],
+        "uh": "Voor want = standpunt.",
+        "ctx": "Scholen zouden een bijbaan moeten stimuleren, want leerlingen leren er verantwoordelijkheid van."
+       },
+       {
+        "v": "Welke zin is het standpunt?",
+        "o": [
+         "\"De bus is te vol.\"",
+         "\"De trein is te duur.\"",
+         "\"Het openbaar vervoer moet dus goedkoper.\"",
+         "\"De trein is te duur voor veel mensen die reizen.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Het standpunt kan aan het slot staan, ingeleid door dus.",
+        "uo": [
+         "Koos je de eerste zin? Dit is een reden uit de rij van argumenten, niet de eis waar ze naartoe leiden.",
+         "Koos je dit? Dit is ook een argument. Het standpunt komt pas na \"dus\".",
+         "Klopt: \"dus\" en \"moet\" laten zien dat dit de conclusie is. De eerste zinnen geven redenen.",
+         "Koos je dit? Dit is een tegenvoorbeeld uit de rij, geen conclusie. De eis volgt pas daarna."
+        ],
+        "uh": "Zoek na \"dus\".",
+        "ctx": "De bus is te vol, de trein is te duur en de fiets is te nat. Het openbaar vervoer moet dus goedkoper."
+       },
+       {
+        "v": "Welk argument is waarderend?",
+        "o": [
+         "het park is het enige groen in de wijk",
+         "bewoners vinden het mooi",
+         "de gemeente moet het park behouden",
+         "het park bestaat"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Een argument met een waardering als mooi is waarderend.",
+        "uo": [
+         "Koos je dit? Dit kun je controleren door de wijk te bekijken. Daarmee is het een feitelijk argument.",
+         "Klopt: \"mooi\" is een oordeel. Het is geen controleerbaar gegeven.",
+         "Koos je dit? Dit is het standpunt, geen argument. Het wordt onderbouwd met de twee zinnen erna.",
+         "Koos je dit? Dit staat niet zo in het fragment en zou een feit zijn. Het gaat om het argument over mooi."
+        ],
+        "uh": "Oordeel = waarderend.",
+        "ctx": "De gemeente moet het park behouden. Het park is het enige groen in de wijk en bewoners vinden het mooi."
+       },
+       {
+        "v": "Welke argumentatiestructuur is dit?",
+        "o": [
+         "nevenschikkend",
+         "onderschikkend",
+         "geen argumentatie",
+         "enkelvoudig"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Eén argument voor het standpunt is een enkelvoudige argumentatie.",
+        "uo": [
+         "Koos je dit? Daarvoor zouden er meerdere argumenten naast elkaar moeten staan. Hier is er maar één.",
+         "Koos je dit? Daarvoor zou het argument zelf nog onderbouwd moeten worden met een subargument. Dat ontbreekt.",
+         "Koos je dit? Er is wel degelijk argumentatie: na \"want\" staat een reden voor het standpunt.",
+         "Klopt: er is één argument voor het standpunt."
+        ],
+        "uh": "Eén reden = enkelvoudig.",
+        "ctx": "De school moet gratis fruit uitdelen, want kinderen eten te weinig fruit."
+       },
+       {
+        "v": "Welke argumentatiestructuur is dit?",
+        "o": [
+         "enkelvoudig",
+         "nevenschikkend",
+         "onderschikkend",
+         "geen structuur aanwijsbaar"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Twee zelfstandige argumenten naast elkaar zijn nevenschikkend.",
+        "uo": [
+         "Koos je dit? Er worden twee redenen genoemd: scholieren en ouderen. Dan is het niet enkelvoudig.",
+         "Klopt: er zijn twee argumenten die elk zelfstandig het standpunt steunen.",
+         "Koos je dit? De tweede reden onderbouwt de eerste niet; ze staan naast elkaar. Dan is het geen onderschikking.",
+         "Koos je dit? Argumenten naast elkaar vormen een structuur: nevenschikkend."
+        ],
+        "uh": "Naast elkaar.",
+        "ctx": "De bibliotheek moet langer open, want scholieren hebben een plek om te leren nodig. Ook zoeken ouderen gezelschap."
+       },
+       {
+        "v": "Welke argumentatiestructuur is dit?",
+        "o": [
+         "onderschikkend",
+         "nevenschikkend",
+         "enkelvoudig",
+         "er is geen standpunt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Een argument met een subargument is onderschikkend.",
+        "uo": [
+         "Klopt: de laatste zin ondersteunt het argument over slaap en leren, en niet direct het standpunt.",
+         "Koos je dit? De tweede zin staat niet naast het eerste argument, maar ondersteunt het. Dan is het geen nevenschikking.",
+         "Koos je dit? Er is meer dan één argument: een argument en een subargument eronder.",
+         "Koos je dit? Er is wel een standpunt: iedereen moet vroeger naar bed. Je ziet het aan \"moet\" en aan het redengevende \"want\" dat erop volgt."
+        ],
+        "uh": "Lagen = onderschikkend.",
+        "ctx": "Iedereen moet vroeger naar bed, want slaap is belangrijk voor leren. In je slaap verwerk je namelijk wat je geleerd hebt."
+       },
+       {
+        "v": "Welke beschrijving van de structuur klopt?",
+        "o": [
+         "één argument dat twee verschillende subargumenten krijgt van de schrijver",
+         "drie argumenten naast elkaar",
+         "één enkelvoudig argument",
+         "twee argumenten naast elkaar, het eerste met een subargument"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Een structuur kan nevenschikkend en onderschikkend tegelijk zijn.",
+        "uo": [
+         "Koos je dit? \"Ouders willen een veilige plek\" is geen subargument van het eerste, maar een tweede argument voor het standpunt.",
+         "Koos je dit? Het drukke verkeer onderbouwt het gevaar op straat. Het staat dus niet los naast de andere twee.",
+         "Koos je dit? Er worden meer redenen genoemd. Het is een gecombineerde structuur.",
+         "Klopt: argument 1 (kinderen spelen op straat) heeft het subargument \"drukke verkeer\"; argument 2 (ouders) staat ernaast."
+        ],
+        "uh": "Eerst naast elkaar, dan lagen.",
+        "ctx": "De wijk heeft een speeltuin nodig, want kinderen spelen nu op straat en dat is gevaarlijk door het drukke verkeer. Bovendien willen ouders een veilige plek."
+       },
+       {
+        "v": "Welk argumentatieschema gebruikt de schrijver?",
+        "o": [
+         "autoriteit van een deskundige",
+         "vergelijking met een andere school",
+         "oorzaak en gevolg",
+         "voorbeelden van scholen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Een argument dat een gevolg noemt, volgt het oorzaak-gevolgschema.",
+        "uo": [
+         "Koos je autoriteit? Dan verwacht je dat de schrijver een deskundige of bron aanhaalt, zoals \"zegt de huisarts\". Hier staat geen bron; het argument beschrijft wat later beginnen oplevert.",
+         "Koos je vergelijking? Dan zou de schrijver het later beginnen vergelijken met iets vergelijkbaars, zoals \"net als op school X\". Er wordt niets vergeleken; er worden gevolgen genoemd.",
+         "Klopt: het argument noemt de gevolgen van het later beginnen (langer slapen, beter presteren). Het standpunt wordt gesteund door wat het oplevert.",
+         "Koos je voorbeelden? Dan zouden er concrete gevallen staan, zoals namen van scholen. Hier staan geen losse gevallen, alleen een algemeen gevolg van het standpunt."
+        ],
+        "uh": "Gevolg = oorzaak-gevolg.",
+        "ctx": "Scholen moeten later beginnen, want dan slapen leerlingen langer en presteren ze beter."
+       },
+       {
+        "v": "Welk argumentatieschema gebruikt de schrijver?",
+        "o": [
+         "oorzaak en gevolg",
+         "voor- en nadelen",
+         "kenmerk of eigenschap",
+         "autoriteit van een deskundige"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Een argument dat eigenschappen noemt, volgt het kenmerkschema.",
+        "uo": [
+         "Koos je oorzaak en gevolg? Dan zou het argument noemen wat het boek veroorzaakt of waardoor het ontstaan is. Hier worden eigenschappen van het boek zelf beschreven.",
+         "Koos je voor- en nadelen? Dat schema zet voordelen en nadelen tegen elkaar af. Hier staan alleen positieve eigenschappen en wordt niets afgewogen.",
+         "Klopt: het argument noemt eigenschappen van het boek zelf (spannend, goed geschreven) om het standpunt te rechtvaardigen.",
+         "Koos je autoriteit? Dan zou iemand worden aangehaald, zoals een recensent. Hier noemt de schrijver zelf eigenschappen van het boek."
+        ],
+        "uh": "Eigenschap = kenmerk.",
+        "ctx": "Dit is een goed boek, want het is spannend en goed geschreven."
+       },
+       {
+        "v": "Welk argumentatieschema gebruikt de schrijver?",
+        "o": [
+         "oorzaak en gevolg",
+         "kenmerk of eigenschap",
+         "vergelijking met iets vergelijkbaars",
+         "voor- en nadelen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Voordelen en nadelen tegen elkaar afwegen is het voor- en nadelenschema.",
+        "uo": [
+         "Koos je oorzaak en gevolg? Dan verwacht je een keten van oorzaak naar uitkomst. De schrijver zet hier voor- en nadelen naast elkaar om een keuze te rechtvaardigen.",
+         "Koos je kenmerk of eigenschap? Dat schema noemt eigenschappen van één zaak. Hier worden twee opties tegen elkaar afgewogen met een voordeel en een nadeel.",
+         "Koos je vergelijking? De auto wordt wel genoemd, maar niet als vergelijkbaar geval dat bewijst dat het werkt. Hij is het nadeel dat wordt afgewogen.",
+         "Klopt: voordelen (sneller, onderweg werken) worden tegen een nadeel (de auto is goedkoper) afgewogen om de keuze te verdedigen."
+        ],
+        "uh": "Voor en tegen = afweging.",
+        "ctx": "Neem de trein naar Groningen: je bent er sneller en je kunt onderweg werken, ook al is de auto goedkoper."
+       },
+       {
+        "v": "Welk argumentatieschema gebruikt de schrijver?",
+        "o": [
+         "voorbeelden",
+         "autoriteit van een deskundige",
+         "oorzaak en gevolg",
+         "kenmerk of eigenschap"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Concrete gevallen als steun vormen het voorbeeldschema.",
+        "uo": [
+         "Klopt: er worden twee concrete gevallen genoemd (twee plekken) die het standpunt over populariteit steunen.",
+         "Koos je autoriteit? Hoogdorp en Bergzicht zijn plaatsen en geen deskundigen of bronnen. De schrijver noemt gevallen, niemand die iets beweert.",
+         "Koos je oorzaak en gevolg? Er wordt niet gezegd waardoor winkelcentra populairder worden of wat dat oplevert. Er staan alleen twee concrete gevallen.",
+         "Koos je kenmerk of eigenschap? Er worden geen eigenschappen van kleine winkelcentra beschreven. De schrijver wijst naar gevallen om zijn bewering te steunen."
+        ],
+        "uh": "Kijk maar naar = voorbeeld.",
+        "ctx": "Kleine winkelcentra worden populairder. Kijk maar naar het Marktplein in Hoogdorp en het Kerkplein in Bergzicht."
+       },
+       {
+        "v": "Welk argumentatieschema gebruikt de schrijver?",
+        "o": [
+         "voorbeelden",
+         "vergelijking",
+         "autoriteit van een deskundige",
+         "voor- en nadelen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Een argument dat een vergelijkbare zaak noemt, is een vergelijking.",
+        "uo": [
+         "Koos je voorbeelden? Dan zouden er meerdere gevallen worden opgesomd. Hier wordt één vergelijkbare maatregel genoemd om iets over een andere maatregel te zeggen.",
+         "Klopt: de schrijver vergelijkt het vuurwerkverbod met een soortgelijke maatregel (het rookverbod) om het standpunt te steunen.",
+         "Koos je autoriteit? Dan wordt een deskundige of bron aangehaald. Het rookverbod is geen bron, maar een vergelijkbaar geval.",
+         "Koos je voor- en nadelen? Er wordt niets afgewogen en er staan geen voordelen of nadelen. De schrijver maakt een vergelijking."
+        ],
+        "uh": "Net zoals = vergelijking.",
+        "ctx": "Een verbod op vuurwerk werkt, net zoals het rookverbod in de horeca werkt."
+       },
+       {
+        "v": "Welk argumentatieschema gebruikt de schrijver?",
+        "o": [
+         "oorzaak en gevolg",
+         "kenmerk of eigenschap",
+         "voorbeelden",
+         "autoriteit"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Steun op een deskundige is het autoriteitsschema.",
+        "uo": [
+         "Koos je oorzaak en gevolg? Er worden geen gevolgen van fruit eten genoemd, zoals gezonder worden. De steun komt van wat een persoon zegt.",
+         "Koos je kenmerk of eigenschap? Er worden geen eigenschappen van fruit genoemd, zoals vitamines. De schrijver verwijst naar een deskundige.",
+         "Koos je voorbeelden? Er worden geen concrete gevallen genoemd. De huisarts is een bron, geen voorbeeld van fruit eten.",
+         "Klopt: het argument steunt op de mening van een deskundige, de huisarts. De schrijver beroept zich op zijn kennis."
+        ],
+        "uh": "Dat zegt X = autoriteit.",
+        "ctx": "Je moet elke dag fruit eten, want dat zegt de huisarts."
+       },
+       {
+        "v": "Welke zin is het standpunt?",
+        "o": [
+         "\"dus er moet een tweede komen.\"",
+         "\"De stad telt 120.000 inwoners die er wonen.\"",
+         "\"Dat is te veel voor één bibliotheek.\"",
+         "\"De stad heeft één bibliotheek.\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Het standpunt volgt uit de argumenten en wordt vaak met dus ingeleid.",
+        "uo": [
+         "Klopt: \"dus\" en \"moet\" laten zien dat dit de eis is die uit de rest volgt. De eerste twee zinsdelen zijn de argumenten.",
+         "Koos je dit? Dit is een controleerbaar feit en dient als argument. Het standpunt is wat de schrijver daaruit afleidt.",
+         "Koos je dit? Dit is een waardering en dient als argument. Het standpunt volgt na \"dus\".",
+         "Koos je dit? Dit staat zo niet in de tekst en is ook geen standpunt. Het gaat om de eis aan het slot."
+        ],
+        "uh": "Dus + moet = standpunt.",
+        "ctx": "De stad telt 120.000 inwoners. Dat is te veel voor één bibliotheek, dus er moet een tweede komen."
+       },
+       {
+        "v": "Wat is de zin \"Sommigen zeggen dat het een traditie is\" in de argumentatie?",
+        "o": [
+         "het standpunt van de schrijver",
+         "een tegenwerping die de schrijver daarna weerlegt",
+         "een argument dat het standpunt van de schrijver steunt",
+         "een voorbeeld van een traditie"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Een bezwaar tegen het standpunt is een tegenwerping.",
+        "uo": [
+         "Koos je dit? Het standpunt is dat een verbod nodig is. De zin met \"Sommigen zeggen\" geeft een andere mening weer.",
+         "Klopt: het is een bezwaar tegen het standpunt. De schrijver reageert er met \"maar\" op.",
+         "Koos je dit? De zin gaat tegen het standpunt in, dus hij ondersteunt het niet.",
+         "Koos je dit? Er wordt geen concreet voorbeeld genoemd. De zin geeft een mening van anderen weer."
+        ],
+        "uh": "Sommigen zeggen... = tegenwerping.",
+        "ctx": "Een verbod op vuurwerk is nodig, want het schaadt dieren. Sommigen zeggen dat het een traditie is, maar tradities mogen veranderen."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "De school moet elke leerling een laptop geven, want daarmee kunnen leerlingen sneller informatie vinden. Bovendien zegt de schoolleider dat leerlingen met een laptop beter presteren.",
+        "v": "Benoem het standpunt en de twee argumenten en geef de structuur van de argumentatie.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Standpunt: de school moet elke leerling een laptop geven (1 punt). Argument 1: leerlingen kunnen sneller informatie vinden; argument 2: leerlingen presteren beter volgens de schoolleider (1 punt). Structuur: nevenschikkend, want beide argumenten steunen zelfstandig het standpunt (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fietsen naar school is beter dan met de bus, want je beweegt meer. Dat geldt voor leerlingen op elke school: Anna uit 3 havo en Daan uit 3 vwo fietsen allebei en zijn fitter dan hun klasgenoten.",
+        "v": "Welk argumentatieschema volgt het tweede deel (vanaf \"Dat geldt\")? Leg uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Voorbeeldschema (1 punt): de schrijver noemt twee concrete gevallen (Anna en Daan) om het argument dat je meer beweegt te ondersteunen (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Je moet minder vlees eten, want de veehouderij is slecht voor het klimaat. Dat stelt een hoogleraar klimaatonderzoek.",
+        "v": "Welk schema gebruikt het tweede deel? Leg uit hoe het aansluit op het eerste.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Autoriteitsschema (1 punt): de schrijver beroept zich op een deskundige (hoogleraar klimaatonderzoek) om het argument dat de veehouderij slecht is voor het klimaat te ondersteunen (1 punt). Het tweede deel is dus een subargument."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Het zwembad moet open blijven. Het is het enige zwembad in de buurt, en veel kinderen leren er zwemmen. Wie het sluit, kiest dus voor meer kinderen die niet kunnen zwemmen.",
+        "v": "Welk argument is feitelijk en welk is een gevolg? Noem het schema van het laatste argument.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Feitelijk: \"het is het enige zwembad in de buurt\" (controleerbaar) (1 punt). Het laatste deel noemt een gevolg van sluiten; het schema is oorzaak en gevolg (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Dit boek is de moeite waard, want het is spannend en makkelijk te lezen. Ook is het goedkoper dan andere boeken. Alleen het slot valt wat tegen, maar dat weegt niet op tegen de rest.",
+        "v": "Welk schema gebruikt de schrijver en welke tegenwerping komt voor?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Voor- en nadelenschema (1 punt): voordelen (spannend, makkelijk te lezen, goedkoper) tegenover een nadeel (het slot valt tegen). De tegenwerping is dat het slot tegenvalt; de schrijver weerlegt die door te zeggen dat het niet opweegt tegen de rest (1 punt)."
+       }
+      ]
      }
     ]
    },
