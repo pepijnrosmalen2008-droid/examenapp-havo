@@ -20,7 +20,7 @@ import logging
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
-from .config import AppConfig, TradingMode
+from .config import AppConfig, TradingMode, MIN_ORDER_EUR
 from .database import Database, utcnow
 from .models import OrderStatus, Position, RiskDecision, Side, Signal
 from .regime import RegimeFilter
@@ -69,6 +69,8 @@ class TradingEngine:
         if self.db.get_meta("starting_capital") is None:
             if self.mode == TradingMode.PAPER and self.cfg.seed.enabled:
                 self._seed_portfolio()
+            elif self.mode in (TradingMode.LIVE, TradingMode.SHADOW):
+                self._adopt_live_wallet()
             else:
                 self.db.set_meta("starting_capital", str(self.cfg.capital_eur))
                 self.db.set_meta("bot_cash_eur", str(self.cfg.capital_eur))
@@ -130,6 +132,42 @@ class TradingEngine:
         self.db.set_meta("bot_cash_eur", f"{seed.eur:.6f}")
         log.info("seed: portefeuille geïnitialiseerd op €%.2f (%d holdings + €%.2f cash)",
                  total, len(seed.holdings), seed.eur)
+
+    def _adopt_live_wallet(self) -> None:
+        """LIVE/SHADOW-start: neem de ECHTE Bitvavo-portefeuille over als beginpunt, zodat de bot
+        (a) handelt met het echte EUR-saldo en (b) de munten die er al zijn ook echt beheert.
+        Elke munt met een EUR-markt en een waarde ≥ minimale ordergrootte wordt een positie met
+        instapprijs = de huidige prijs (P&L start dus op 0, geen valse stop-loss bij adoptie).
+        Stof onder de drempel wordt genegeerd. Lukt het saldo ophalen niet, dan valt hij terug op
+        capital_eur zodat de start nooit vastloopt."""
+        try:
+            bals = self.x.balances()
+        except Exception as e:  # noqa: BLE001
+            log.warning("adoptie: echt saldo niet op te halen (%s); terugval op capital_eur", e)
+            self.db.set_meta("starting_capital", f"{self.cfg.capital_eur:.2f}")
+            self.db.set_meta("bot_cash_eur", f"{self.cfg.capital_eur:.6f}")
+            return
+        eur = float(bals.get("EUR", 0.0))
+        total = eur
+        adopted = []
+        for asset, amount in bals.items():
+            if asset == "EUR" or amount <= 0:
+                continue
+            pair = f"{asset}-EUR"
+            try:
+                price = self.x.ticker_price(pair)
+            except Exception:  # noqa: BLE001 — geen EUR-markt voor deze munt → overslaan
+                continue
+            value = amount * price
+            if value < MIN_ORDER_EUR:
+                continue  # stof/dust → negeren
+            self.db.upsert_position(pair, amount, price)  # instap = huidige prijs → P&L start op 0
+            total += value
+            adopted.append(f"{asset} €{value:.2f}")
+        self.db.set_meta("starting_capital", f"{total:.2f}")
+        self.db.set_meta("bot_cash_eur", f"{eur:.6f}")
+        log.info("LIVE-adoptie: portefeuille overgenomen — €%.2f totaal (EUR €%.2f + %d munten: %s)",
+                 total, eur, len(adopted), ", ".join(adopted) or "geen")
 
     def reconcile(self) -> None:
         """Herstel na crash: PENDING/PLACED orders afhandelen zonder ze te dupliceren."""

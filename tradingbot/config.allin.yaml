@@ -37,10 +37,10 @@ risk:
 strategy:
   name: adaptive
   params:
-    buy_threshold: 0.25       # koop vanaf deze overtuiging (-1..+1)
-    sell_threshold: -0.10     # verkoop zodra de overtuiging hieronder zakt
-    min_confidence: 0.15      # negeer coins waar de factoren het oneens/onbetrouwbaar zijn
-    max_positions: 5          # hooguit zoveel posities tegelijk
+    buy_threshold: 0.40       # alleen bij STERKE overtuiging kopen (-1..+1); geen ruis-trades
+    sell_threshold: -0.15     # verkoop zodra de overtuiging duidelijk kantelt
+    min_confidence: 0.45      # factoren moeten het eens én betrouwbaar zijn, anders niet handelen
+    max_positions: 4          # hooguit zoveel posities tegelijk
 
 # ALLE informatiebronnen tegelijk. Elke bron is een PROBE: hij mag voorstellen doen,
 # maar alles gaat door de confidence-poort én de risk engine, en wordt forward-only
@@ -56,26 +56,24 @@ research:
     - https://cointelegraph.com/rss
     - https://decrypt.co/feed
     - https://www.coindesk.com/arc/outboundfeeds/rss/
-  disclosure_sources:
-    - https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json
-    - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com/aggregate/all_transactions.json
+  disclosure_sources: []                 # (dode gratis dataset — 403; vul een werkende bron in om aan te zetten)
   onchain_sources: []                    # vul je eigen whale/flow-JSON-bron in (optioneel ONCHAIN_API_KEY in .env)
 
 schedule:
   interval_minutes: 15
 
 # Circuit breaker gelijkgetrokken met de universe-filter: een munt die als liquide genoeg
-# geldt (spread ≤ 1.5%) mag die cycle ook echt verhandeld worden.
+# geldt (spread ≤ 1.0%) mag die cycle ook echt verhandeld worden.
 circuit_breaker:
-  max_spread_pct: 1.5
+  max_spread_pct: 1.0
 
-# Zelf het hele liquide universe scannen: echt álle munten overwegen die genoeg
-# volume/liquiditeit hebben, elk met hun historische koers als input voor de factoren.
+# Zelf het liquide universe scannen — maar met echt geld strenger: alleen munten met ruim
+# volume en een krappe spread, zodat de bot niet in illiquide micro-caps handelt.
 universe:
   enabled: true
-  min_daily_volume_eur: 50000
-  max_spread_pct: 1.5
-  max_markets: 120
+  min_daily_volume_eur: 500000
+  max_spread_pct: 1.0
+  max_markets: 60
   always_include: [BTC-EUR, ETH-EUR, SOL-EUR, MOODENG-EUR]
 
 costs:

@@ -434,6 +434,22 @@ grens, bewust genoteerd: "beter worden over tijd" kan alleen voor zover er een l
 is die er niet, dan convergeert `adaptive` correct naar weinig/niet handelen. Het is geen garantie op
 winst en geen sub-seconde daytrader — de leerhorizon is ~24u (swing). Alles blijft door de risk engine.
 
+## D36 — LIVE/SHADOW neemt de echte portefeuille over + strakkere all-in-defaults
+
+Live bleek de bot niks te doen met een gestort EUR-saldo én de bestaande munten te negeren: bij
+een LIVE/SHADOW-start zette hij starting_capital op het config-getal en koppelde hij de echte
+wallet niet aan zijn boekhouding. Opgelost met `_adopt_live_wallet()`: bij de eerste LIVE/SHADOW-
+start neemt de bot de echte Bitvavo-portefeuille over — elke munt met een EUR-markt en waarde ≥
+MIN_ORDER_EUR wordt een positie (instap = huidige prijs, dus P&L start op 0; stof wordt genegeerd),
+en het echte EUR-saldo wordt de cash. Zo handelt hij met het echte geld én beheert hij de munten
+die er al waren (die kan hij dus ook verkopen — bewust, want de gebruiker vroeg erom).
+
+Tegelijk de all-in-config strenger gezet nu het echt geld wordt, zodat hij niet op ruis in micro-
+caps handelt: buy_threshold 0.25→0.40, min_confidence 0.15→0.45, max_positions 5→4; universe
+min_volume €50k→€500k, max_spread 1.5%→1.0% (+ circuit breaker 1.0%), max_markets 120→60. De dode
+gratis politici-dataset (403) uit de bronnen gehaald. Eerlijke grens blijft: op een verse database
+heeft de bot nog niets geleerd; "beter worden" kan alleen voor zover er edge te vinden is.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config
