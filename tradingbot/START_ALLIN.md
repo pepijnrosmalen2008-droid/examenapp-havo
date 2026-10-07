@@ -1,8 +1,10 @@
 # START — de all-in bot (verse start, geen gedoe met oude bots)
 
-Eén bot die alles combineert: prijsstrategie (momentum) + nieuws + politici-transacties +
-on-chain (optioneel), met volledige risk-engine, execution-meting en gedachtegang. Eigen verse
-database `autopilot_allin.db`, dus volledig los van de oude bots.
+Eén bot die alles combineert: een **self-learning strategie** (`adaptive`) die op de forward-only
+geleerde factor-overtuiging handelt + nieuws + politici-transacties + on-chain (optioneel), met
+volledige risk-engine, execution-meting en gedachtegang. Hij scant het hele liquide Bitvavo-universe
+(tot ~120 munten) met hun historische koers, en verschuift over tijd naar wat aantoonbaar werkte —
+voor zover er een leerbare edge is. Eigen verse database `autopilot_allin.db`, los van de oude bots.
 
 ## 1. Meteen draaien (geen API-key nodig — PAPER)
 ```

@@ -31,10 +31,16 @@ risk:
   max_drawdown_pct: 40
   max_portfolio_heat_pct: null
 
-# De prijsstrategie (trend volgen). Draait samen met de research-laag hieronder.
+# De self-learning strategie: beslist op de forward-only geleerde factor-overtuiging
+# (prijsfactoren + nieuws/politici/on-chain), gewogen met wat aantoonbaar heeft gewerkt.
+# Verschuift over tijd vanzelf naar wat edge had — mits er edge te vinden is.
 strategy:
-  name: momentum_ma_cross
-  params: { fast: 12, slow: 26, rsi_period: 14, rsi_min: 50, rsi_max: 75 }
+  name: adaptive
+  params:
+    buy_threshold: 0.25       # koop vanaf deze overtuiging (-1..+1)
+    sell_threshold: -0.10     # verkoop zodra de overtuiging hieronder zakt
+    min_confidence: 0.15      # negeer coins waar de factoren het oneens/onbetrouwbaar zijn
+    max_positions: 5          # hooguit zoveel posities tegelijk
 
 # ALLE informatiebronnen tegelijk. Elke bron is een PROBE: hij mag voorstellen doen,
 # maar alles gaat door de confidence-poort én de risk engine, en wordt forward-only
@@ -58,12 +64,13 @@ research:
 schedule:
   interval_minutes: 15
 
-# Zelf het hele liquide universe scannen (naast de vaste pairs).
+# Zelf het hele liquide universe scannen: echt álle munten overwegen die genoeg
+# volume/liquiditeit hebben, elk met hun historische koers als input voor de factoren.
 universe:
   enabled: true
-  min_daily_volume_eur: 100000
-  max_spread_pct: 1.0
-  max_markets: 40
+  min_daily_volume_eur: 50000
+  max_spread_pct: 1.5
+  max_markets: 120
   always_include: [BTC-EUR, ETH-EUR, SOL-EUR, MOODENG-EUR]
 
 costs:

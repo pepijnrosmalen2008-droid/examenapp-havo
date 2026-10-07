@@ -417,6 +417,23 @@ live-pad met de echte key als limiet zonder orders te sturen; LIVE blijft achter
 Discipline ongewijzigd: "alles in één bot" = meer informatie, niet minder toetsing — elk voorstel gaat
 nog door de confidence-poort, de risk engine en de forward-only afrekening per bron/entiteit.
 
+## D35 — Self-learning strategie: orders op de geleerde factor-overtuiging
+
+De leer-lus was al elke cycle wired (grade → enrich → compute_reads → record), maar stuurde alleen
+de gedachtegang: de orders kwamen van een vaste strategie (momentum_ma_cross) + research-signalen.
+Daarmee was de lus niet gesloten voor het handelen zelf. Nieuwe strategie `adaptive`
+(`strategies/adaptive.py`) sluit hem: hij beslist op `compute_reads` — de multi-factor-overtuiging
+per coin — waarin elke factor is gewogen met zijn **forward-only geleerde betrouwbaarheid** (kosten-
+net, FDR- en drift-bewaakt). Factoren die aantoonbaar voorspellen gaan de overtuiging (en dus de
+orders) domineren; factoren die niets voorspellen zakken naar nul. Zo verschuift de bot over tijd
+vanzelf naar wat gewérkt heeft.
+
+`config.allin.yaml` draait nu deze strategie over het hele liquide universe (universe-scan tot ~120
+munten, elk met historische candles als factor-input), samen met alle informatie-probes. Eerlijke
+grens, bewust genoteerd: "beter worden over tijd" kan alleen voor zover er een leerbare edge bestaat;
+is die er niet, dan convergeert `adaptive` correct naar weinig/niet handelen. Het is geen garantie op
+winst en geen sub-seconde daytrader — de leerhorizon is ~24u (swing). Alles blijft door de risk engine.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config
