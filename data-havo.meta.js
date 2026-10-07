@@ -291,6 +291,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B5",
+      "lo": "nl.B.5",
+      "gs": 2,
+      "naam": "Adequaat reageren op luisteraars en deelnemers",
+      "beschrijving": "Je luistert actief, beantwoordt vragen eerlijk en gericht, vraagt door waar iets onduidelijk is en geeft en ontvangt bruikbare feedback.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Actief luisteren",
+       "Vragen beantwoorden",
+       "Doorvragen en verduidelijken",
+       "Reageren op kritiek en tegenspraak",
+       "Feedback geven",
+       "Feedback ontvangen"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

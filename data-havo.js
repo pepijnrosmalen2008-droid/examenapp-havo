@@ -12645,6 +12645,663 @@ var VAKKEN = [
         "u": "Er ontbreken een redenering en bewijs; hij onderbouwt zijn standpunt niet (1 punt). Sterker: een reden geven (bijvoorbeeld meer slaap), een voorbeeld of bewijs toevoegen en uitleggen waarom dat het standpunt steunt (1 punt)."
        }
       ]
+     },
+     {
+      "id": "B5",
+      "lo": "nl.B.5",
+      "gs": 2,
+      "naam": "Adequaat reageren op luisteraars en deelnemers",
+      "beschrijving": "Je luistert actief, beantwoordt vragen eerlijk en gericht, vraagt door waar iets onduidelijk is en geeft en ontvangt bruikbare feedback.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Actief luisteren",
+       "Vragen beantwoorden",
+       "Doorvragen en verduidelijken",
+       "Reageren op kritiek en tegenspraak",
+       "Feedback geven",
+       "Feedback ontvangen"
+      ],
+      "sam": "Adequaat reageren betekent actief luisteren (meedenken, noteren, aankijken), vragen eerlijk en gericht beantwoorden, doorvragen bij iets onduidelijks, kritiek inhoudelijk beantwoorden en een terecht punt erkennen. Goede feedback is concreet en noemt wat goed ging en wat beter kan; feedback ontvang je door eerst te luisteren en erover na te denken.",
+      "begrippen": [
+       {
+        "t": "Actief luisteren",
+        "d": "Aandachtig luisteren, meedenken en kernpunten noteren."
+       },
+       {
+        "t": "Doorvragen",
+        "d": "Een vervolgvraag stellen om meer uitleg te krijgen."
+       },
+       {
+        "t": "Beurt",
+        "d": "Het moment waarop jij het woord hebt."
+       },
+       {
+        "t": "Reageren",
+        "d": "Inhoudelijk antwoorden op wat de ander zei."
+       },
+       {
+        "t": "Feedback",
+        "d": "Concrete informatie over hoe iets ging, bedoeld om het te verbeteren."
+       },
+       {
+        "t": "Concrete feedback",
+        "d": "Feedback die precies zegt wat goed ging en wat beter kan."
+       },
+       {
+        "t": "Verbeterpunt",
+        "d": "Een punt waarop iemand zich kan verbeteren."
+       },
+       {
+        "t": "Kritiek",
+        "d": "Een opmerking die aangeeft wat er niet klopt of beter kan."
+       },
+       {
+        "t": "Tegenwerping",
+        "d": "Een bezwaar tegen wat iemand zegt."
+       },
+       {
+        "t": "Erkennen",
+        "d": "Toegeven dat iets klopt wat de ander zegt."
+       },
+       {
+        "t": "Persoonlijke aanval",
+        "d": "De persoon aanvallen in plaats van zijn argument of gedrag."
+       },
+       {
+        "t": "Verduidelijken",
+        "d": "Duidelijker maken wat je bedoelt of wat de ander bedoelt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat hoort bij actief luisteren?",
+        "o": [
+         "je antwoord voorbereiden terwijl de ander nog praat",
+         "meedenken, noteren en doorvragen",
+         "de ander onderbreken zodra je het oneens bent",
+         "alleen luisteren naar wat je interessant vindt"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Actief luisteren is meedenken, noteren en doorvragen.",
+        "uo": [
+         "Koos je \"je antwoord voorbereiden terwijl de ander nog praat\"? Dan denk je dat luisteren en je eigen antwoord bedenken hetzelfde zijn. Dan mis je wat de ander zegt. Luister eerst helemaal, reageer daarna.",
+         "Klopt: bij actief luisteren denk je mee, noteer je kernpunten en vraag je door als iets onduidelijk is.",
+         "Koos je \"de ander onderbreken zodra je het oneens bent\"? Dan denk je dat reageren meteen moet. Onderbreken ontneemt de ander zijn beurt en je luistert niet af. Wacht je beurt en noteer wat je wilt zeggen.",
+         "Koos je \"alleen luisteren naar wat je interessant vindt\"? Dan denk je dat je kunt selecteren. Je mist dan de rest van wat de ander zegt. Luister naar het hele verhaal."
+        ],
+        "uh": "Meedenken en noteren."
+       },
+       {
+        "v": "Waarom kijk je een spreker aan terwijl hij praat?",
+        "o": [
+         "omdat je dan niets hoeft te onthouden",
+         "om hem sneller te laten praten en zijn verhaal te korten",
+         "zodat hij zijn tekst niet kan lezen",
+         "je laat zien dat je luistert"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Aankijken laat zien dat je luistert en maakt contact.",
+        "uo": [
+         "Koos je \"omdat je dan niets hoeft te onthouden\"? Dan denk je dat kijken je geheugen vervangt. Je moet nog steeds nadenken en soms noteren. Aankijken is een teken van aandacht.",
+         "Koos je \"om hem sneller te laten praten en zijn verhaal te...\"? Dan denk je dat je een spreker kunt opjagen. Aankijken is bedoeld voor contact. Een spreker heeft juist rust nodig.",
+         "Koos je \"zodat hij zijn tekst niet kan lezen\"? Dan denk je dat het hem afleidt van zijn papier. Het gaat om contact, niet om dwang. Kijk aan om te laten zien dat je meeluistert.",
+         "Klopt: aankijken laat zien dat je aandacht hebt voor de spreker en maakt hem zekerder."
+        ],
+        "uh": "Contact = aandacht."
+       },
+       {
+        "v": "Wat doe je als je een vraag niet kunt beantwoorden?",
+        "o": [
+         "eerlijk zeggen dat je het niet weet en het uitzoeken",
+         "iets verzinnen dat plausibel klinkt, zodat je er competent uitziet",
+         "de vraag negeren en gewoon doorgaan met je verhaal",
+         "zeggen dat de vraag niet relevant is"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Weet je het niet, zeg dat dan eerlijk en bied aan het uit te zoeken.",
+        "uo": [
+         "Klopt: eerlijk zijn is geloofwaardiger dan iets verzinnen. Bied aan het op te zoeken.",
+         "Koos je \"iets verzinnen dat plausibel klinkt, zodat je er...\"? Dan denk je dat een antwoord altijd beter is dan een eerlijk \"ik weet het niet\". Een verzonnen antwoord kan onjuist zijn. Eerlijk zijn is beter.",
+         "Koos je \"de vraag negeren en gewoon doorgaan met je verhaal\"? Dan denk je dat het publiek het vergeet. Het publiek merkt dat je niet antwoordt. Reageer eerlijk op de vraag.",
+         "Koos je \"zeggen dat de vraag niet relevant is\"? Dan wijs je de vraag af zonder reden. Dat komt arrogant over. Neem de vraag serieus en zeg wat je niet weet."
+        ],
+        "uh": "Eerlijk, niet verzinnen."
+       },
+       {
+        "v": "Hoe beantwoord je een vraag uit het publiek het best?",
+        "o": [
+         "met een lange uitleg over iets anders dat je zelf belangrijk vindt",
+         "met een wedervraag zonder antwoord",
+         "kort en gericht op de vraag",
+         "door te zeggen dat je het al hebt verteld"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Beantwoord een vraag kort en gericht.",
+        "uo": [
+         "Koos je \"met een lange uitleg over iets anders dat je zelf...\"? Dan denk je dat meer vertellen meer zegt. Je beantwoordt de vraag dan niet. Blijf bij wat gevraagd is.",
+         "Koos je \"met een wedervraag zonder antwoord\"? Dan denk je dat vragen terugkaatsen een antwoord is. Soms helpt het, maar je moet ook echt antwoorden. Geef eerst een antwoord.",
+         "Klopt: een kort, gericht antwoord laat zien dat je de vraag begrepen hebt.",
+         "Koos je \"door te zeggen dat je het al hebt verteld\"? Dan schuif je de vraag terug. Het publiek wil een antwoord. Leg het kort opnieuw uit."
+        ],
+        "uh": "Kort en gericht."
+       },
+       {
+        "v": "Waarvoor dient doorvragen?",
+        "o": [
+         "de ander in verlegenheid brengen door zijn zwakke plekken te laten zien",
+         "laten zien dat jij het beter weet dan de spreker",
+         "meer uitleg krijgen over iets onduidelijks",
+         "tijd rekken zonder iets te zeggen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Doorvragen verduidelijkt wat de ander bedoelt.",
+        "uo": [
+         "Koos je \"de ander in verlegenheid brengen door zijn zwakke...\"? Dan denk je dat doorvragen een aanval is. Het is bedoeld om het te begrijpen. Doorvragen is een hulpmiddel.",
+         "Koos je \"laten zien dat jij het beter weet dan de spreker\"? Dan verwar je vragen met opscheppen. Doorvragen is niet bedoeld om te winnen. Vraag omdat je iets wilt begrijpen.",
+         "Klopt: met doorvragen verduidelijk je wat de ander bedoelt voordat je reageert.",
+         "Koos je \"tijd rekken zonder iets te zeggen\"? Dan denk je dat het om uitstel gaat. Het doel is verduidelijking. Doorvragen levert informatie op."
+        ],
+        "uh": "Vraag om uitleg."
+       },
+       {
+        "v": "Welke doorvraag is het best?",
+        "o": [
+         "\"Kun je daar een voorbeeld van geven?\"",
+         "\"Wat een onzin, zeg.\"",
+         "\"Dat weet ik al.\"",
+         "\"Ja, ja, ga maar door.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Een goede doorvraag is open en vraagt om meer uitleg of een voorbeeld.",
+        "uo": [
+         "Klopt: deze vraag is open, gericht en vraagt om concretere uitleg.",
+         "Koos je \"Wat een onzin, zeg.\"? Dan geef je een oordeel in plaats van een vraag. Dat zet de ander op scherp. Vraag om uitleg.",
+         "Koos je \"Dat weet ik al.\"? Dan sluit je het gesprek af. Zo leer je niets van de ander. Stel een vraag die nieuwe informatie oplevert.",
+         "Koos je \"Ja, ja, ga maar door.\"? Dan gebruik je een onoprechte opmerking. Dat is geen doorvraag. Een goede doorvraag vraagt om meer uitleg."
+        ],
+        "uh": "Open vraag."
+       },
+       {
+        "v": "Iemand zegt dat je argument niet klopt. Wat doe je?",
+        "o": [
+         "boos worden en meteen alles ontkennen wat hij zegt",
+         "stoppen met praten",
+         "dezelfde zin nog eens herhalen",
+         "luisteren en inhoudelijk reageren"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Op kritiek reageer je door te luisteren en inhoudelijk te antwoorden.",
+        "uo": [
+         "Koos je \"boos worden en meteen alles ontkennen wat hij zegt\"? Dan denk je dat kritiek een aanval is. Dan los je het probleem niet op. Luister en reageer rustig.",
+         "Koos je \"stoppen met praten\"? Dan ontwijk je de kritiek. Het publiek denkt dat je geen antwoord hebt. Reageer met argumenten.",
+         "Koos je \"dezelfde zin nog eens herhalen\"? Dan denk je dat herhalen weerleggen is. De ander heeft er niets aan. Ga in op wat is gezegd.",
+         "Klopt: je neemt de kritiek serieus en gaat inhoudelijk in op wat is gezegd."
+        ],
+        "uh": "Luisteren, reageren."
+       },
+       {
+        "v": "Hoe reageer je als de ander een terecht punt maakt?",
+        "o": [
+         "doen alsof je het al wist",
+         "dat toegeven en je verhaal aanvullen",
+         "het punt negeren en rustig verder praten alsof niets is gezegd",
+         "hem aanvallen om af te leiden"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Erken een terecht punt en vul je verhaal aan.",
+        "uo": [
+         "Koos je \"doen alsof je het al wist\"? Dan denk je dat dat sterker overkomt. Het publiek merkt dat het niet klopt. Wees eerlijk.",
+         "Klopt: erkennen dat iets klopt, maakt je geloofwaardig en je betoog beter.",
+         "Koos je \"het punt negeren en rustig verder praten alsof...\"? Dan denk je dat het wel overwaait. Het publiek merkt dat je niet reageert. Erken wat klopt.",
+         "Koos je \"hem aanvallen om af te leiden\"? Dan denk je dat aanvallen helpt. Dat is een persoonlijke aanval. Erken en bouw verder."
+        ],
+        "uh": "Eerlijk erkennen."
+       },
+       {
+        "v": "Hoe herken je goede feedback?",
+        "o": [
+         "een algemeen oordeel zoals \"het was best oké\"",
+         "alleen kritiek op wat misging",
+         "een opmerking over de persoon zelf",
+         "concreet: wat ging goed en wat kan beter"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Goede feedback is concreet en noemt wat goed ging en wat beter kan.",
+        "uo": [
+         "Koos je \"een algemeen oordeel zoals het was best oké\"? Dan denk je dat een oordeel genoeg is. De ander weet dan niet wat hij moet doen. Wees concreet.",
+         "Koos je \"alleen kritiek op wat misging\"? Dan denk je dat feedback alleen negatief hoeft te zijn. Dan blijft de ander ontmoedigd. Noem ook wat goed ging.",
+         "Koos je \"een opmerking over de persoon zelf\"? Dan richt je je op de persoon in plaats van op de prestatie. Dat helpt niet. Gaat het over wat hij deed, niet wie hij is.",
+         "Klopt: bruikbare feedback noemt specifiek wat goed ging en wat beter kan."
+        ],
+        "uh": "Concreet."
+       },
+       {
+        "v": "Waarom noem je bij feedback ook wat goed ging?",
+        "o": [
+         "omdat het anders te kort wordt",
+         "zo weet de ander wat hij moet houden en blijft hij gemotiveerd",
+         "zodat hij niet boos wordt over het negatieve",
+         "omdat het publiek dat wil horen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Positieve punten laten zien wat behouden moet blijven en motiveren.",
+        "uo": [
+         "Koos je \"omdat het anders te kort wordt\"? Dan denk je dat het opvulling is. Het is inhoudelijk belangrijk. Positieve punten helpen de ander.",
+         "Klopt: hij weet wat hij moet behouden, en voelt zich gewaardeerd.",
+         "Koos je \"zodat hij niet boos wordt over het negatieve\"? Dan denk je dat het alleen een pleister is. Het geeft informatie over wat hij moet behouden. Het heeft inhoudelijk nut.",
+         "Koos je \"omdat het publiek dat wil horen\"? Dan denk je dat het voor het publiek is. Het is voor de ontvanger. Feedback is voor de ander."
+        ],
+        "uh": "Ook het goede noemen."
+       },
+       {
+        "v": "Wat doe je als je feedback krijgt?",
+        "o": [
+         "direct uitleggen waarom je gelijk had en waarom hij het mis heeft",
+         "de feedback negeren omdat je het zelf wel beter weet",
+         "luisteren en erover nadenken",
+         "de ander terugpakken met kritiek"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "Bij feedback luister je eerst en denk je erover na.",
+        "uo": [
+         "Koos je \"direct uitleggen waarom je gelijk had en waarom hij...\"? Dan denk je dat je jezelf moet verdedigen. Dan hoor je de feedback niet. Luister eerst.",
+         "Koos je \"de feedback negeren omdat je het zelf wel beter weet\"? Dan denk je dat je er niets mee hoeft. Dan leer je niet. Neem feedback serieus.",
+         "Klopt: je luistert eerst en bepaalt daarna wat je ermee doet.",
+         "Koos je \"de ander terugpakken met kritiek\"? Dan denk je dat je moet terugslaan. Dat is een persoonlijke aanval. Reageer rustig."
+        ],
+        "uh": "Eerst luisteren."
+       },
+       {
+        "v": "Waarom leg je jezelf niet meteen uit als je kritiek krijgt?",
+        "o": [
+         "je moet eerst begrijpen wat de ander bedoelt",
+         "omdat uitleg geven altijd onbeleefd en uit de toon is",
+         "omdat de ander altijd gelijk heeft",
+         "omdat je dan te veel praat"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Eerst luisteren en begrijpen, dan pas reageren.",
+        "uo": [
+         "Klopt: eerst luisteren en doorvragen voorkomt misverstanden.",
+         "Koos je \"omdat uitleg geven altijd onbeleefd en uit de toon...\"? Dan denk je dat uitleg nooit mag. Soms is uitleg nuttig, maar eerst moet je begrijpen wat bedoeld is. Luister eerst.",
+         "Koos je \"omdat de ander altijd gelijk heeft\"? Dan denk je dat feedback altijd klopt. Je beoordeelt zelf wat je ermee doet, maar eerst luister je. Neem het serieus en weeg het.",
+         "Koos je \"omdat je dan te veel praat\"? Dan denk je dat het om tijd gaat. Het gaat om begrip. Eerst begrijpen."
+        ],
+        "uh": "Begrijpen voor reageren."
+       },
+       {
+        "v": "Is dit actief luisteren?",
+        "o": [
+         "nee, hij is niet gericht op de spreker",
+         "ja, want hij knikt af en toe en zit er rustig bij",
+         "ja, want hij hoort het verhaal",
+         "ja, want de telefoon helpt noteren"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Actief luisteren vraagt gerichte aandacht voor de spreker.",
+        "uo": [
+         "Klopt: wie op zijn telefoon kijkt, volgt het verhaal niet en toont geen aandacht.",
+         "Koos je \"ja, want hij knikt af en toe en zit er rustig bij\"? Dan denk je dat knikken genoeg is. Knikken zonder aandacht is schijnluisteren. Actief luisteren vraagt aandacht.",
+         "Koos je \"ja, want hij hoort het verhaal\"? Dan denk je dat horen luisteren is. Je moet het ook verwerken. Luisteren vraagt aandacht.",
+         "Koos je \"ja, want de telefoon helpt noteren\"? Dan denk je dat een telefoon een notitieblok kan zijn. Hij kijkt niet naar de spreker. Noteer gericht, niet afgeleid."
+        ],
+        "uh": "Aandacht, geen telefoon.",
+        "ctx": "Een luisteraar kijkt op zijn telefoon en knikt af en toe terwijl de spreker praat."
+       },
+       {
+        "v": "Welke reactie is de beste?",
+        "o": [
+         "een bedrag noemen dat waarschijnlijk klopt",
+         "zeggen dat het niet belangrijk is",
+         "zeggen dat je het niet precies weet en het zult opzoeken",
+         "de vraag aan iemand anders doorschuiven"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Weet je het niet precies, zeg dat eerlijk en zoek het op.",
+        "uo": [
+         "Koos je \"een bedrag noemen dat waarschijnlijk klopt\"? Dan geef je een gok als feit. Het kan onjuist zijn en je verliest geloofwaardigheid. Zeg wat je niet weet.",
+         "Koos je \"zeggen dat het niet belangrijk is\"? Dan wuif je de vraag weg. Dat komt onbeleefd over. Neem de vraag serieus.",
+         "Klopt: eerlijk en behulpzaam. Je belooft geen onjuiste informatie.",
+         "Koos je \"de vraag aan iemand anders doorschuiven\"? Dan laat je de leerling zonder antwoord. Het is jouw voordracht. Bied aan het uit te zoeken."
+        ],
+        "uh": "Eerlijk en actief.",
+        "ctx": "Na afloop vraagt een leerling: \"Wat kosten zonnepanelen?\" De spreker weet het niet precies."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "hij praat niet lang genoeg",
+         "hij beantwoordt de gestelde vraag niet",
+         "hij praat over het verkeerde onderwerp, namelijk zonnepanelen",
+         "de luisteraar had niet mogen vragen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Een antwoord gaat in op de vraag die gesteld is.",
+        "uo": [
+         "Koos je \"hij praat niet lang genoeg\"? Dan denk je dat meer praten het oplost. Vijf minuten is lang, maar het is niet het antwoord. Antwoord op de vraag.",
+         "Klopt: een goed antwoord gaat in op de vraag. Hier wordt eromheen gepraat.",
+         "Koos je \"hij praat over het verkeerde onderwerp, namelijk...\"? Dan denk je dat het onderwerp fout is. Het onderwerp is goed, maar de vraag gaat over de vergelijking. Beantwoord de vergelijkingsvraag.",
+         "Koos je \"de luisteraar had niet mogen vragen\"? Dan denk je dat vragen stellen niet mag. Het is een normaal deel van een voordracht. De spreker moet antwoorden."
+        ],
+        "uh": "Vraag = antwoord.",
+        "ctx": "Een luisteraar vraagt: \"Waarom is dit beter dan windenergie?\" De spreker praat vijf minuten over zonnepanelen in het algemeen."
+       },
+       {
+        "v": "Welke doorvraag stel je?",
+        "o": [
+         "\"Dat is onzin, zeg dat maar niet zo stellig.\"",
+         "\"Ja, ja.\"",
+         "\"Waarom zeg je dat altijd?\"",
+         "\"Wat bedoel je precies met duidelijk?\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Vraag naar de betekenis als iets onduidelijk is.",
+        "uo": [
+         "Koos je \"Dat is onzin, zeg dat maar niet zo stellig.\"? Dan geef je een oordeel in plaats van een vraag. Dat lokt een verdediging uit. Vraag naar de betekenis.",
+         "Koos je \"Ja, ja.\"? Dan reageer je afwijzend zonder te vragen. Zo leer je niets. Stel een vraag.",
+         "Koos je \"Waarom zeg je dat altijd?\"? Dan stel je een beschuldigende vraag. Dat is een aanval. Vraag open en vriendelijk.",
+         "Klopt: een open vraag naar de betekenis verduidelijkt het begrip."
+        ],
+        "uh": "Open doorvraag.",
+        "ctx": "Een spreker zegt: \"Dit is gewoon duidelijk.\" Je wilt meer weten."
+       },
+       {
+        "v": "Welke doorvraag levert je het meest op?",
+        "o": [
+         "\"Waarom kun je niet gewoon beter luisteren?\"",
+         "\"Welk deel was voor jou onduidelijk?\"",
+         "\"Dat is jouw probleem, niet het mijne.\"",
+         "\"Zal ik alles nog een keer herhalen?\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een doorvraag naar het onduidelijke deel levert de meeste informatie op.",
+        "uo": [
+         "Koos je \"Waarom kun je niet gewoon beter luisteren?\"? Dan verwijt je de luisteraar iets. Dat sluit het gesprek. Vraag naar het onduidelijke deel.",
+         "Klopt: zo weet je precies wat je moet verbeteren.",
+         "Koos je \"Dat is jouw probleem, niet het mijne.\"? Dan wijs je de verantwoordelijkheid af. Je leert niets. Wees nieuwsgierig.",
+         "Koos je \"Zal ik alles nog een keer herhalen?\"? Dan biedt je alles aan zonder te weten waar het misging. Dat is inefficiënt. Vraag eerst wat onduidelijk was."
+        ],
+        "uh": "Precies vragen.",
+        "ctx": "Een luisteraar zegt na je presentatie: \"Ik vond je verhaal onduidelijk.\""
+       },
+       {
+        "v": "Welke reactie is goed?",
+        "o": [
+         "vragen welke cijfers hij bedoelt en ze controleren",
+         "zeggen dat ze wel kloppen en dat het klaar is",
+         "hem een slechte rekenaar noemen",
+         "stoppen met je betoog"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer kritiek op cijfers voordat je reageert.",
+        "uo": [
+         "Klopt: je vraagt door en controleert, in plaats van meteen ja of nee te zeggen.",
+         "Koos je \"zeggen dat ze wel kloppen en dat het klaar is\"? Dan verdedig je zonder te controleren. Als hij gelijk heeft, ben je zwak. Vraag door en controleer.",
+         "Koos je \"hem een slechte rekenaar noemen\"? Dan val je de persoon aan. Dat is een drogreden. Blijf bij de inhoud.",
+         "Koos je \"stoppen met je betoog\"? Dan geef je meteen op. Dat is niet nodig. Controleer eerst."
+        ],
+        "uh": "Eerst doorvragen en controleren.",
+        "ctx": "Een tegenstander zegt: \"Je cijfers kloppen niet.\""
+       },
+       {
+        "v": "Wat doe je het best?",
+        "o": [
+         "je doet alsof je het al wist",
+         "je ontkent dat het klopt",
+         "je gaat verder alsof er niets is gezegd",
+         "je geeft toe dat het klopt en vult je verhaal aan"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Erken een terecht punt en vul je verhaal aan.",
+        "uo": [
+         "Koos je \"je doet alsof je het al wist\"? Dan speel je een rol. Het publiek ziet dat het niet klopt. Erken het.",
+         "Koos je \"je ontkent dat het klopt\"? Dan houd je vol terwijl hij gelijk heeft. Dat maakt je minder geloofwaardig. Eerlijk zijn.",
+         "Koos je \"je gaat verder alsof er niets is gezegd\"? Dan negeer je de opmerking. Het publiek merkt dat je niet reageert. Reageer.",
+         "Klopt: eerlijk erkennen maakt je geloofwaardig en je verhaal beter."
+        ],
+        "uh": "Erkennen.",
+        "ctx": "Een luisteraar maakt een terecht punt dat je niet had bedacht."
+       },
+       {
+        "v": "Welke feedback is het meest bruikbaar?",
+        "o": [
+         "\"Het was best oké, denk ik, maar ik weet het niet.\"",
+         "\"Je bent gewoon geen goede spreker.\"",
+         "\"Je opening trok aandacht, maar in het midden sprak je te snel; neem daar pauzes.\"",
+         "\"Ik vond het saai en dat zeg ik eerlijk.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Goede feedback is concreet en noemt zowel een sterk als een zwak punt.",
+        "uo": [
+         "Koos je \"Het was best oké, denk ik, maar ik weet het niet.\"? Dan geef je een vaag oordeel. De ander weet niet wat hij moet doen. Wees concreet.",
+         "Koos je \"Je bent gewoon geen goede spreker.\"? Dan oordeel je over de persoon. Dat helpt niet om iets te verbeteren. Praat over wat hij deed.",
+         "Klopt: concreet, met een sterk punt en een duidelijk verbeterpunt.",
+         "Koos je \"Ik vond het saai en dat zeg ik eerlijk.\"? Dan geef je eerlijkheid zonder uitleg. De ander weet niet waarom. Zeg wat saai was en hoe het beter kan."
+        ],
+        "uh": "Concreet en verbeterbaar.",
+        "ctx": "Vier klasgenoten geven feedback op je presentatie."
+       },
+       {
+        "v": "Wat klopt er niet aan deze feedback?",
+        "o": [
+         "het is te positief",
+         "het is te kort",
+         "het is een oordeel over de persoon zonder verbeterpunt",
+         "het is te eerlijk"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Feedback over de persoon helpt niet; feedback over het gedrag wel.",
+        "uo": [
+         "Koos je \"het is te positief\"? Dan draai je het om. De opmerking is juist negatief. Positieve en negatieve punten moeten concreet zijn.",
+         "Koos je \"het is te kort\"? Dan denk je dat de lengte het probleem is. Het probleem is dat er niets concreets in staat. Concreet maken.",
+         "Klopt: hij zegt niet wat er beter kan, alleen dat jij slecht bent.",
+         "Koos je \"het is te eerlijk\"? Dan denk je dat eerlijk zijn het probleem is. Eerlijk mag, maar met een verbeterpunt. Eerlijk én helpend."
+        ],
+        "uh": "Gedrag, niet persoon.",
+        "ctx": "Een klasgenoot zegt: \"Je presentatie was zwak, je bent gewoon geen goede spreker.\""
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "je geeft hem gelijk",
+         "je antwoordt te snel",
+         "je gebruikt te moeilijke woorden",
+         "je reageert op de persoon in plaats van de feedback aan te nemen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Reageer op feedback met luisteren, niet met een tegenaanval.",
+        "uo": [
+         "Koos je \"je geeft hem gelijk\"? Dan denk je dat je instemt. Je antwoordt met een wedervoorwerp. Luister en denk na.",
+         "Koos je \"je antwoordt te snel\"? Dan denk je dat het om snelheid gaat. Het gaat om de inhoud van je reactie. Neem de feedback aan.",
+         "Koos je \"je gebruikt te moeilijke woorden\"? Dan denk je dat de woordkeus het probleem is. Het probleem is de aanval. Reageer inhoudelijk.",
+         "Klopt: je valt aan in plaats van na te denken over wat hij zei."
+        ],
+        "uh": "Geen tegenaanval.",
+        "ctx": "Na afloop zegt een klasgenoot: \"Je sprak te zacht.\" Jij antwoordt: \"Nou, jij praat zelf ook niet beter.\""
+       },
+       {
+        "v": "Wat doe je het best met deze feedback?",
+        "o": [
+         "kiezen wat je gaat verbeteren en dat oefenen",
+         "alles tegelijk proberen te verbeteren, zodat niets achterblijft",
+         "de opmerkingen vergeten",
+         "alleen de positieve opmerking onthouden"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Kies de belangrijkste verbeterpunten uit feedback en oefen die.",
+        "uo": [
+         "Klopt: je weegt de feedback, kiest een of twee punten en oefent die.",
+         "Koos je \"alles tegelijk proberen te verbeteren, zodat niets...\"? Dan denk je dat alles tegelijk kan. Dan verlies je focus en verbetert er weinig. Kies en oefen.",
+         "Koos je \"de opmerkingen vergeten\"? Dan denk je dat je ze niet hoeft te gebruiken. Dan leer je niet. Gebruik feedback.",
+         "Koos je \"alleen de positieve opmerking onthouden\"? Dan denk je dat het negatieve negeerbaar is. Beide soorten zijn nuttig. Gebruik ook de verbeterpunten."
+        ],
+        "uh": "Kies en oefen.",
+        "ctx": "Je krijgt drie opmerkingen: je sprak te zacht, je voorbeelden waren goed en je keek te weinig naar het publiek."
+       },
+       {
+        "v": "Waarom is dit geen goed luisteren?",
+        "o": [
+         "hij luistert te goed",
+         "hij wacht op zijn beurt om te praten in plaats van te luisteren",
+         "hij praat te zacht",
+         "hij stelt te veel vragen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Onderbreken om zelf te praten is geen luisteren.",
+        "uo": [
+         "Koos je \"hij luistert te goed\"? Dan draai je het om. Hij luistert juist niet. Luisteren is meedenken.",
+         "Klopt: hij hoort niet wat de ander zegt, hij wil zelf praten.",
+         "Koos je \"hij praat te zacht\"? Dan denk je dat het volume het probleem is. Het gaat om het onderbreken. Wacht je beurt.",
+         "Koos je \"hij stelt te veel vragen\"? Dan denk je dat hij vragen stelt. Hij vertelt zijn eigen verhaal. Luister en reageer op de ander."
+        ],
+        "uh": "Luister, dan praat.",
+        "ctx": "Een deelnemer onderbreekt steeds de spreker om zijn eigen verhaal te vertellen."
+       },
+       {
+        "v": "Welke reactie is beter?",
+        "o": [
+         "hetzelfde nog eens luider zeggen",
+         "zeggen dat hij beter moet luisteren",
+         "de vraag overslaan en meteen naar de volgende gaan",
+         "het opnieuw uitleggen in andere woorden"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Leg het nog eens uit, in andere woorden.",
+        "uo": [
+         "Koos je \"hetzelfde nog eens luider zeggen\"? Dan denk je dat luider helpt. Het blijft onduidelijk. Gebruik andere woorden.",
+         "Koos je \"zeggen dat hij beter moet luisteren\"? Dan geef je de luisteraar de schuld. Dat sluit het gesprek. Leg het nogmaals uit.",
+         "Koos je \"de vraag overslaan en meteen naar de volgende gaan\"? Dan negeer je de vraag. Dat is onbeleefd. Beantwoord de vraag.",
+         "Klopt: wie iets niet begrijpt, heeft baat bij een andere uitleg."
+        ],
+        "uh": "Opnieuw, anders.",
+        "ctx": "Een luisteraar vraagt: \"Kunt u dat nog eens uitleggen?\" De spreker antwoordt: \"Ik heb het al gezegd.\""
+       },
+       {
+        "v": "Welke reactie is het meest bruikbaar?",
+        "o": [
+         "\"Waarom niet? Wat is jouw argument?\"",
+         "\"Dan heb je gewoon ongelijk.\"",
+         "\"Dat interesseert me niet, laten we doorgaan.\"",
+         "\"Dan stop ik hiermee, want dit heeft geen zin.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Vraag bij oneens zijn naar het argument van de ander.",
+        "uo": [
+         "Klopt: je vraagt naar de reden zodat je inhoudelijk kunt reageren.",
+         "Koos je \"Dan heb je gewoon ongelijk.\"? Dan val je zijn mening af zonder te vragen waarom. Dat sluit de discussie. Vraag naar zijn argument.",
+         "Koos je \"Dat interesseert me niet, laten we doorgaan.\"? Dan sluit je het gesprek af. Zo komt er geen discussie. Wees nieuwsgierig.",
+         "Koos je \"Dan stop ik hiermee, want dit heeft geen zin.\"? Dan geef je meteen op. Dat is niet nodig. Vraag door."
+        ],
+        "uh": "Waarom? Dat is de vraag.",
+        "ctx": "Een deelnemer in een discussie zegt: \"Daar ben ik het niet mee eens.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Na afloop vraagt een leerling: \"Wat kosten zonnepanelen?\" De spreker weet het niet precies.",
+        "v": "Wat is de beste reactie en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Eerlijk zeggen dat je het niet precies weet en aanbieden het uit te zoeken (1 punt). Een verzonnen antwoord kan onjuist zijn en beschadigt je geloofwaardigheid (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot zegt: \"Je presentatie was zwak, je bent gewoon geen goede spreker.\"",
+        "v": "Wat is er mis met deze feedback en hoe zou je haar beter formuleren?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het is een oordeel over de persoon zonder concreet verbeterpunt (1 punt). Beter: noem wat goed ging en wat beter kan, bijvoorbeeld \"je opening trok aandacht, maar je sprak in het midden te snel; neem daar pauzes\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Na afloop zegt een klasgenoot: \"Je sprak te zacht.\" Jij antwoordt: \"Nou, jij praat zelf ook niet beter.\"",
+        "v": "Waarom is jouw reactie niet adequaat en wat doe je beter?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je valt de persoon aan in plaats van de feedback aan te nemen (1 punt). Beter: luisteren, doorvragen of erkennen en nadenken over hoe je luider kunt spreken (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een luisteraar maakt tijdens een discussie een terecht punt dat je niet had bedacht.",
+        "v": "Hoe reageer je adequaat?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je erkent dat het punt klopt (1 punt) en vult of past je verhaal daarop aan (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een luisteraar zegt: \"Ik vond je verhaal onduidelijk.\"",
+        "v": "Welke doorvraag stel je en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld: \"Welk deel was voor jou onduidelijk?\" (1 punt). Zo weet je precies wat je moet verbeteren in plaats van alles opnieuw uit te leggen (1 punt)."
+       }
+      ]
      }
     ]
    },

@@ -1879,5 +1879,42 @@ Object.assign(SAM_RICH,{
 <rect x="10" y="60" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="76" font-size="12" font-weight="700" fill="var(--dk)">2  Sluit af met een oproep</text><text x="160" y="91" font-size="11" fill="var(--dk)">bijvoorbeeld: stem voor</text>
 <rect x="10" y="108" width="300" height="40" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="160" y="126" font-size="12" font-weight="700" fill="var(--mu)">Geen nieuwe argumenten</text><text x="160" y="141" font-size="11" fill="var(--mu)">de tegenpartij kan niet meer reageren</text></g></svg><div class="sam-figcap">Een slotpleidooi vat samen en sluit af. Een nieuw argument (de stippellijn) hoort er niet meer in, omdat de tegenpartij niet meer kan reageren.</div></div>
 <div class="sam-tip"><strong>Tip:</strong> bereid voor elk argument van de ander een weerlegging voor en oefen luisteren: noteer terwijl hij praat wat je wilt weerleggen.</div>
+</div>`,
+'havo_nl_B5':`<div class="sam-intro">Een presentatie of discussie is geen eenrichtingsverkeer. <strong>Adequaat reageren</strong> betekent dat je <strong>actief luistert</strong>, vragen <strong>eerlijk en gericht</strong> beantwoordt, <strong>doorvraagt</strong> bij iets onduidelijks, kritiek inhoudelijk beantwoordt en <strong>feedback</strong> geeft en ontvangt. In dit leerdoel leer je hoe dat werkt.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Actief luisteren</td><td>Meedenken, noteren, aankijken en doorvragen.</td></tr>
+<tr><td>Doorvragen</td><td>Een vervolgvraag voor meer uitleg.</td></tr>
+<tr><td>Reageren</td><td>Inhoudelijk antwoorden op wat de ander zei.</td></tr>
+<tr><td>Kritiek, tegenwerping</td><td>Een bezwaar tegen wat iemand zegt of doet.</td></tr>
+<tr><td>Erkennen</td><td>Toegeven dat iets klopt.</td></tr>
+<tr><td>Feedback</td><td>Concrete informatie om iets te verbeteren.</td></tr>
+<tr><td>Verbeterpunt</td><td>Een punt waarop iemand beter kan worden.</td></tr>
+<tr><td>Persoonlijke aanval</td><td>De persoon aanvallen in plaats van zijn argument.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Actief luisteren en doorvragen</div>
+<p>Bij <strong>actief luisteren</strong> kijk je de spreker aan, denk je mee, noteer je kernpunten en wacht je tot je aan de <strong>beurt</strong> bent. Is iets onduidelijk, dan <strong>vraag je door</strong>: een open vraag als "Wat bedoel je precies?" of "Kun je daar een voorbeeld van geven?" levert meer op dan een oordeel of een onoprechte opmerking.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Actief luisteren in vier stappen: aankijken, meedenken en noteren, wachten op je beurt, doorvragen bij onduidelijkheid"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="27" font-size="12" font-weight="700" fill="var(--dk)">1  Kijk de spreker aan</text>
+<rect x="4" y="44" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="67" font-size="12" font-weight="700" fill="var(--dk)">2  Denk mee en noteer kernpunten</text>
+<rect x="4" y="84" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="107" font-size="12" font-weight="700" fill="var(--dk)">3  Wacht op je beurt</text>
+<rect x="4" y="124" width="312" height="44" rx="6" fill="var(--or)"/><text x="12" y="143" font-size="12" font-weight="700" fill="#fff">4  Vraag door bij onduidelijkheid</text><text x="12" y="160" font-size="11" fill="#fff">"Wat bedoel je precies?"</text></g></svg><div class="sam-figcap">Vier onderdelen van actief luisteren: aankijken, meedenken en noteren, je beurt afwachten en doorvragen waar iets onduidelijk is.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Vragen en kritiek beantwoorden</div>
+<p>Beantwoord een vraag <strong>kort en gericht</strong>. Weet je het niet, zeg dat dan <strong>eerlijk</strong> en bied aan het uit te zoeken; verzin niets. Bij <strong>kritiek</strong> of een <strong>tegenwerping</strong> luister je eerst en ga je inhoudelijk in op wat is gezegd. Maakt de ander een terecht punt, dan <strong>erken</strong> je dat en vul je je verhaal aan. Val de persoon niet aan.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 180" role="img" aria-label="Reageren op een vraag of kritiek: luisteren, begrijpen, inhoudelijk antwoorden of erkennen, geen aanval op de persoon"><g font-family="inherit" text-anchor="middle"><rect x="10" y="4" width="300" height="40" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="22" font-size="12" font-weight="700" fill="var(--dk)">1  Luister en begrijp</text><text x="160" y="37" font-size="11" fill="var(--dk)">vraag door als het onduidelijk is</text>
+<path d="M160 44 V54" stroke="var(--or)" stroke-width="2.5"/><path d="M153 52 L160 60 L167 52 Z" fill="var(--or)"/>
+<rect x="10" y="60" width="300" height="40" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="78" font-size="12" font-weight="700" fill="var(--dk)">2  Reageer inhoudelijk</text><text x="160" y="93" font-size="11" fill="var(--dk)">of erken wat klopt</text>
+<rect x="10" y="112" width="300" height="60" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="160" y="132" font-size="12" font-weight="700" fill="var(--mu)">Niet doen</text><text x="160" y="150" font-size="11" fill="var(--mu)">de persoon aanvallen, iets verzinnen,</text><text x="160" y="164" font-size="11" fill="var(--mu)">de vraag negeren</text></g></svg><div class="sam-figcap">Reageren op een vraag of kritiek in twee stappen: eerst luisteren en begrijpen, dan inhoudelijk antwoorden of erkennen. Aanvallen, verzinnen en negeren (stippellijn) doe je niet.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een terecht punt erken je; een antwoord dat je niet weet, verzin je niet.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Feedback geven en ontvangen</div>
+<p><strong>Goede feedback</strong> is <strong>concreet</strong>: je noemt wat goed ging en wat beter kan, over het gedrag en niet over de persoon. "Je opening trok aandacht, maar je sprak in het midden te snel" is bruikbaar; "je bent geen goede spreker" is dat niet. Krijg je feedback, dan luister je eerst, vraag je zo nodig door, en kies je een of twee <strong>verbeterpunten</strong> om te oefenen. Reageer niet met een tegenaanval.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Concrete feedback bestaat uit wat goed ging, wat beter kan en een concreet verbeterpunt, tegenover vage feedback over de persoon"><g font-family="inherit"><rect x="6" y="6" width="308" height="88" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="26" font-size="12" font-weight="700" fill="var(--dk)">Bruikbaar</text><text x="16" y="46" font-size="11" fill="var(--dk)">"Je opening trok de aandacht."</text><text x="16" y="62" font-size="11" fill="var(--dk)">"In het midden sprak je te snel:"</text><text x="16" y="78" font-size="11" fill="var(--dk)">"neem daar pauzes."</text>
+<rect x="6" y="102" width="308" height="68" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="16" y="122" font-size="12" font-weight="700" fill="var(--mu)">Niet bruikbaar</text><text x="16" y="142" font-size="11" fill="var(--mu)">"Het was best oké."</text><text x="16" y="158" font-size="11" fill="var(--mu)">"Je bent geen goede spreker."</text></g></svg><div class="sam-figcap">Bruikbare feedback is concreet over wat goed ging en wat beter kan; vage opmerkingen en oordelen over de persoon (stippellijn) helpen niet.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> vraag na je presentatie om feedback op twee punten, bijvoorbeeld oogcontact en tempo. Zo krijg je concrete antwoorden en weet je waar je aan werkt.</div>
 </div>`
 });
