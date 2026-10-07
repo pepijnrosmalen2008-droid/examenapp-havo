@@ -37,6 +37,12 @@ class AdaptiveFactorStrategy(Strategy):
     candle_interval = "1h"
     candle_limit = 200  # ruim genoeg voor de prijsfactoren (momentum/trend/vol/drawdown)
 
+    def __init__(self, cfg, db):
+        super().__init__(cfg, db)
+        # Candle-resolutie instelbaar: kort (bv. 15m/5m) = reflex-daytrader; lang (1h/1d) = rustiger.
+        self.candle_interval = str(self.params.get("candle_interval", self.candle_interval))
+        self.candle_limit = int(self.params.get("candle_limit", self.candle_limit))
+
     def generate_signals(self, candles: dict[str, list[Candle]],
                          positions: list[Position], now: datetime) -> list[Signal]:
         buy_threshold = float(self.params.get("buy_threshold", 0.25))

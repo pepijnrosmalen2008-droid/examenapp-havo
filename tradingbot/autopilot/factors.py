@@ -40,6 +40,7 @@ DEFAULT_WEIGHTS = {
     "volatility": 0.5,
     "drawdown": 0.3,
     "relative_strength": 0.7,
+    "recovery": 0.6,
     # externe factoren — 0 tot je ze bewust aanzet via research.enabled + events
     "news": 0.6,
     "macro": 0.4,
@@ -53,6 +54,7 @@ FACTOR_LABELS = {
     "volatility": ("Rust/risico", "price", "Hoe wild beweegt de koers — meer rust telt positief."),
     "drawdown": ("Afstand tot top", "price", "Hoe ver onder de recente piek — diep gezakt telt negatief."),
     "relative_strength": ("Relatieve sterkte", "price", "Sterker of zwakker dan de rest van de mand?"),
+    "recovery": ("Herstel", "price", "Ooit veel hoger, diep gezakt en nu weer opdraaiend — kansrijk keerpunt."),
     "news": ("Nieuws", "external", "Nieuws rond de coin (forward-only, niet backtestbaar)."),
     "macro": ("Wereld/macro", "external", "Wereldnieuws, centrale banken, economische instituten."),
     "smart_money": ("Smart money", "external", "Gemelde trades van invloedrijke personen/partijen."),
@@ -186,6 +188,21 @@ def _price_factors(closes: list[float], basket_ret: float, weights: dict) -> lis
     out.append(FactorScore("relative_strength", *FACTOR_LABELS["relative_strength"][:2],
                            score=_clip(rs / 0.05), weight=weights["relative_strength"],
                            detail=f"{'sterker' if rs >= 0 else 'zwakker'} dan de mand ({rs * 100:+.1f}%)"))
+
+    # Herstel: ooit veel hoger (diep onder de langere-termijn-top) ÉN nu weer opdraaiend.
+    # Precies "stond ooit hoger, begint nu weer te stijgen" → kansrijk keerpunt. Alleen positief
+    # als de val fors was (>25% onder de top) én de korte termijn omhoog draait; anders 0 (geen
+    # 'vallend mes' kopen). De leerlus rekent forward af of dit écht iets voorspelt.
+    long_window = closes[-120:]
+    long_peak = max(long_window)
+    sma10 = _sma(closes, 10)
+    if long_peak > 0 and sma10 and price > 0:
+        below = (long_peak / price - 1)              # hoe ver onder de top (≥0)
+        recent_up = (price / sma10 - 1)              # kortetermijn op/neer
+        score = _clip(min(below, 1.0) * _clip(recent_up / 0.05)) if (below > 0.25 and recent_up > 0) else 0.0
+        out.append(FactorScore("recovery", *FACTOR_LABELS["recovery"][:2],
+                               score=score, weight=weights["recovery"],
+                               detail=f"{below * 100:.0f}% onder de top, {recent_up * 100:+.1f}% kortetermijn"))
     return out
 
 

@@ -24,23 +24,23 @@ seed:
   eur: 100                    # start met €100 papieren cash; pas aan naar wens
 
 risk:
-  max_position_pct: 15        # kleinere posities → kan over méér munten tegelijk spreiden
-  stop_loss_pct: 15
-  take_profit_pct: 25
+  max_position_pct: 25        # grotere posities (meer winst én meer verlies per trade)
+  stop_loss_pct: 8            # verliezers SNEL afkappen — niet wanhopig vasthouden
+  take_profit_pct: 12         # winst op een opleving vastklikken
   max_daily_loss_pct: 15
   max_drawdown_pct: 40
   max_portfolio_heat_pct: null
 
-# De self-learning strategie: beslist op de forward-only geleerde factor-overtuiging
-# (prijsfactoren + nieuws/politici/on-chain), gewogen met wat aantoonbaar heeft gewerkt.
-# Verschuift over tijd vanzelf naar wat edge had — mits er edge te vinden is.
+# Self-learning strategie, afgesteld als reflex-daytrader op korte candles.
 strategy:
   name: adaptive
   params:
-    buy_threshold: 0.20       # koopt al bij een gematigd-positieve overtuiging → handelt actief
-    sell_threshold: -0.10     # verkoopt zodra de overtuiging kantelt
-    min_confidence: 0.10      # lage drempel: hij mag breed handelen (en leert van elke uitkomst)
-    max_positions: 8          # mag over veel munten tegelijk gespreid zitten
+    candle_interval: 15m      # korte candles → reageert op recente bewegingen, niet op dagtrend
+    candle_limit: 200
+    buy_threshold: 0.12       # gevoelig: pakt opkomende stijgers vroeg
+    sell_threshold: -0.08     # verkoopt snel zodra de overtuiging kantelt
+    min_confidence: 0.08
+    max_positions: 6
 
 # ALLE informatiebronnen tegelijk. Elke bron is een PROBE: hij mag voorstellen doen,
 # maar alles gaat door de confidence-poort én de risk engine, en wordt forward-only
@@ -68,19 +68,19 @@ research:
   onchain_sources: []                    # vul je eigen whale/flow-JSON-bron in (optioneel ONCHAIN_API_KEY in .env)
 
 schedule:
-  interval_minutes: 15
+  interval_minutes: 1         # reflex-ritme: elke minuut opnieuw kijken
 
 # Circuit breaker gelijkgetrokken met de universe-filter.
 circuit_breaker:
   max_spread_pct: 1.5
 
-# Breed scannen: zoveel mogelijk munten overwegen zodat hij overal van kan leren en handelen.
-# Een bodem op volume/spread blijft nodig, anders kunnen orders niet fatsoenlijk vullen.
+# Breed scannen, maar bij 1-minuut-ritme kleiner gehouden zodat het binnen Bitvavo's
+# rate limits + op tijd per minuut rond is.
 universe:
   enabled: true
-  min_daily_volume_eur: 25000
+  min_daily_volume_eur: 50000
   max_spread_pct: 1.5
-  max_markets: 150
+  max_markets: 50
   always_include: [BTC-EUR, ETH-EUR, SOL-EUR, MOODENG-EUR]
 
 costs:

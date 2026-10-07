@@ -597,10 +597,18 @@ class TradingEngine:
     # ── hulpfuncties ─────────────────────────────────────────────────
 
     def _cash_eur(self) -> float:
-        """Cash die de bot beheert. In LIVE en SHADOW bovendien gecapt op het echte EUR-saldo."""
+        """Cash die de bot beheert. In LIVE en SHADOW bovendien gecapt op het echte EUR-saldo.
+        In LIVE: zet je EUR bij op Bitvavo, dan wordt dat meteen beschikbaar om mee te handelen
+        (de boekhouding wordt opgehoogd naar het echte saldo zodra dat hoger is)."""
         cash = self.db.get_meta_float("bot_cash_eur", self.cfg.capital_eur)
         if self.mode == TradingMode.LIVE and hasattr(self.x, "balances"):
-            real = self.x.balances().get("EUR", 0.0)
+            try:
+                real = self.x.balances().get("EUR", 0.0)
+            except Exception:  # noqa: BLE001 — saldo even niet leesbaar → gebruik de boekhouding
+                return cash
+            if real > cash + 0.01:            # storting gedetecteerd → direct beschikbaar maken
+                self._set_cash(real)
+                cash = real
             cash = min(cash, real)
         elif self.mode == TradingMode.SHADOW and hasattr(self.x, "real_eur"):
             real = self.x.real_eur()

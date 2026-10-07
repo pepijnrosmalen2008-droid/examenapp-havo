@@ -51,3 +51,24 @@ def test_market_summary_counts_stances():
     reads = compute_reads(candles, ["AAA-EUR", "BBB-EUR"], NOW)
     mk = market_summary(reads)
     assert mk["n_bullish"] == 1 and mk["n_bearish"] == 1 and mk["n"] == 2
+
+
+def _recovery_score(reads, pair):
+    return next((f.score for f in reads[pair].factors if f.key == "recovery"), None)
+
+
+def test_recovery_factor_fires_on_fallen_then_rising():
+    # ooit 100, gecrasht naar ~50, nu weer licht opdraaiend → herstel-factor positief
+    down = [100 - i * 0.8 for i in range(60)]      # 100 → ~53
+    up = [down[-1] + i * 0.3 for i in range(60)]   # draait weer op
+    closes = down + up
+    candles = {"AAA-EUR": [Candle(i * D, c, c, c, c, 1.0) for i, c in enumerate(closes)]}
+    reads = compute_reads(candles, ["AAA-EUR"], NOW)
+    assert (_recovery_score(reads, "AAA-EUR") or 0) > 0
+
+
+def test_recovery_factor_zero_on_steady_uptrend():
+    # gewoon stug omhoog, nooit diep onder een top → geen herstel-signaal
+    candles = {"AAA-EUR": [Candle(i * D, (c := 100 * 1.01 ** i), c, c, c, 1.0) for i in range(120)]}
+    reads = compute_reads(candles, ["AAA-EUR"], NOW)
+    assert (_recovery_score(reads, "AAA-EUR") or 0) == 0
