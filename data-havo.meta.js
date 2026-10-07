@@ -226,6 +226,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B2",
+      "lo": "nl.B.2",
+      "gs": 2,
+      "naam": "Doel, publiek en gespreksvorm bepalen",
+      "beschrijving": "Je bepaalt of je wilt informeren of overtuigen, voor wie je spreekt en of het een voordracht, discussie of debat is, en je stemt inhoud en taal daarop af.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gespreksvormen: voordracht, discussie, debat",
+       "Spreekdoel: informeren of overtuigen",
+       "Publiek en voorkennis",
+       "Inhoud, taal en toon afstemmen",
+       "Valkuilen bij afstemmen"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
