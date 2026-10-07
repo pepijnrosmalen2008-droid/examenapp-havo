@@ -231,6 +231,12 @@ class TradingEngine:
 
         cash = self._cash_eur()
         equity = cash + sum(p.amount * prices.get(p.pair, p.avg_price) for p in positions)
+        # In LIVE: vermogen rechtstreeks uit de ECHTE wallet (immuun voor boekhoud-drift), zodat
+        # de kill-switches alleen afgaan bij een écht verlies — niet bij een meetfout.
+        if self.mode == TradingMode.LIVE:
+            real_eq = self._wallet_equity(prices)
+            if real_eq is not None:
+                equity = real_eq
 
         # Geen bruikbaar saldo (account nog niet gefund, of saldo onleesbaar door bv. een
         # onbevestigde/kapotte API-key): dan is equity €0 géén "100% drawdown" maar simpelweg
@@ -618,6 +624,29 @@ class TradingEngine:
 
     def _set_cash(self, value: float) -> None:
         self.db.set_meta("bot_cash_eur", f"{max(value, 0.0):.6f}")
+
+    def _wallet_equity(self, prices: dict[str, float]) -> float | None:
+        """LIVE: totale waarde van de ECHTE Bitvavo-wallet (EUR + alle munten tegen de huidige
+        prijs). Grondwaarheid voor de kill-switches — immuun voor interne boekhoud-/positie-drift
+        en voor eventuele handmatige trades op hetzelfde account. None als het saldo onleesbaar is
+        (dan valt de cycle terug op de interne berekening)."""
+        try:
+            bals = self.x.balances()
+        except Exception:  # noqa: BLE001
+            return None
+        total = float(bals.get("EUR", 0.0))
+        for asset, amount in bals.items():
+            if asset == "EUR" or amount <= 0:
+                continue
+            pair = f"{asset}-EUR"
+            px = prices.get(pair)
+            if px is None:
+                try:
+                    px = self.x.ticker_price(pair)
+                except Exception:  # noqa: BLE001 — geen EUR-markt / tijdelijke fout → munt overslaan
+                    continue
+            total += amount * px
+        return total
 
     def _day_rollover(self, now: datetime, equity: float) -> None:
         """Nieuwe (Amsterdamse) dag → dagverlies-anker resetten."""

@@ -49,3 +49,34 @@ def test_live_cash_never_exceeds_real_balance(db):
     db.set_meta("bot_cash_eur", "100")       # boekhouding €100
     eng = _live_engine(db, eur=80.0)         # maar er staat maar €80 echt
     assert eng._cash_eur() == pytest.approx(80.0)                  # nooit meer dan het echte saldo
+
+
+class _FakeWalletX:
+    """Broker-stub met EUR + muntsaldi en tickerprijzen, voor _wallet_equity."""
+    def __init__(self, balances, prices):
+        self._b = balances
+        self._p = prices
+
+    def balances(self):
+        return dict(self._b)
+
+    def ticker_price(self, pair):
+        return self._p[pair]
+
+
+def test_wallet_equity_uses_real_balances(db):
+    cfg = make_config(strategy={"name": "hold", "params": {}})
+    x = _FakeWalletX({"EUR": 50.0, "BTC": 0.001, "ETH": 0.02},
+                     {"BTC-EUR": 60000.0, "ETH-EUR": 3000.0})
+    eng = TradingEngine(cfg, db, x, RiskEngine(cfg, db), get_strategy(cfg, db), TradingMode.LIVE)
+    # 50 + 0.001*60000 (60) + 0.02*3000 (60) = 170
+    assert eng._wallet_equity({"BTC-EUR": 60000.0, "ETH-EUR": 3000.0}) == pytest.approx(170.0)
+
+
+def test_wallet_equity_none_when_balance_unreadable(db):
+    class _Dead:
+        def balances(self):
+            raise ConnectionError("down")
+    cfg = make_config(strategy={"name": "hold", "params": {}})
+    eng = TradingEngine(cfg, db, _Dead(), RiskEngine(cfg, db), get_strategy(cfg, db), TradingMode.LIVE)
+    assert eng._wallet_equity({}) is None     # onleesbaar → val terug op interne berekening
