@@ -22,3 +22,8 @@ scratchpad/
 
 # Syllabi: PDF-bronnen zijn groot en herleidbaar via scripts/fetch-syllabi.sh; alleen de tekst-extractie committen.
 syllabi/2027/*.pdf
+
+# Node-dependencies en lockfile voor scripts/social: door een setup-script in de
+# container gegenereerd (13 MB Playwright), horen niet in git.
+node_modules/
+scripts/social/package-lock.json
