@@ -11333,6 +11333,662 @@ var VAKKEN = [
         "u": "De doelen informeren en overtuigen lopen door elkaar, waardoor het publiek niet weet wat de spreker wil (1 punt). Advies: kies één hoofddoel en houd dat vast; eventueel scheid je informatie en oproep duidelijk (1 punt)."
        }
       ]
+     },
+     {
+      "id": "B3",
+      "lo": "nl.B.3",
+      "gs": 2,
+      "naam": "Een voordracht opbouwen en presenteren",
+      "beschrijving": "Je bouwt een voordracht op met inleiding, kern en slot en presenteert met passend taalgebruik, houding, oogcontact en stem.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Opbouw: inleiding, kern en slot",
+       "Inleiding en slot",
+       "Overgangen en structuur",
+       "Register en taalgebruik",
+       "Houding, oogcontact en gebaren",
+       "Stem: tempo, articulatie, pauzes"
+      ],
+      "sam": "Een voordracht bouw je op uit een inleiding (aandacht trekken en aankondigen), een kern (de punten uitwerken) en een slot (samenvatten en afsluiten). Overgangen laten de opbouw horen. Je kiest een register dat bij de situatie past en ondersteunt je boodschap met houding, oogcontact, gebaren en stemgebruik (tempo, articulatie, intonatie, pauzes).",
+      "begrippen": [
+       {
+        "t": "Voordracht",
+        "d": "Een voorbereide mondelinge presentatie door één spreker voor een publiek."
+       },
+       {
+        "t": "Inleiding",
+        "d": "Het begin van een voordracht waarin je aandacht trekt en aankondigt wat komt."
+       },
+       {
+        "t": "Kern",
+        "d": "Het middendeel van een voordracht met de belangrijkste punten en voorbeelden."
+       },
+       {
+        "t": "Slot",
+        "d": "Het einde van een voordracht waarin je samenvat en afsluit."
+       },
+       {
+        "t": "Overgang",
+        "d": "Een zin of woord dat het ene deel met het volgende verbindt."
+       },
+       {
+        "t": "Register",
+        "d": "De mate van formeel taalgebruik die bij de situatie past."
+       },
+       {
+        "t": "Non-verbale communicatie",
+        "d": "Communicatie via houding, gebaren en oogcontact."
+       },
+       {
+        "t": "Oogcontact",
+        "d": "Het aankijken van je publiek tijdens het spreken."
+       },
+       {
+        "t": "Spreektempo",
+        "d": "De snelheid waarmee je spreekt."
+       },
+       {
+        "t": "Articulatie",
+        "d": "Het duidelijk uitspreken van woorden."
+       },
+       {
+        "t": "Intonatie",
+        "d": "De variatie in toonhoogte en melodie van je stem."
+       },
+       {
+        "t": "Pauze",
+        "d": "Een korte stilte die nadruk geeft en tijd laat om te verwerken."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Uit welke drie delen bestaat een voordracht?",
+        "o": [
+         "titel, tekst en plaatje",
+         "inleiding, kern en slot",
+         "vraag, antwoord en applaus",
+         "begin, pauze en einde"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een voordracht heeft een inleiding, een kern en een slot.",
+        "uo": [
+         "Koos je \"titel, tekst en plaatje\"? Dan denk je dat de opbouw van een voordracht gaat over wat er op een dia staat. Titel en plaatje zijn hulpmiddelen, geen delen van je verhaal. Een voordracht bouw je op met een begin, een midden en een eind.",
+         "Klopt: een voordracht heeft een begin dat aankondigt, een middendeel dat uitwerkt en een einde dat afsluit.",
+         "Koos je \"vraag, antwoord en applaus\"? Dan verwar je een voordracht met een vragenronde. Applaus en vragen komen na je verhaal en horen er niet bij. De drie delen zijn inleiding, kern en slot.",
+         "Koos je \"begin, pauze en einde\"? Dan denk je dat een pauze een onderdeel van de opbouw is. Een pauze is een tussenstop en geen deel van de inhoud. De opbouw bestaat uit inleiding, kern en slot."
+        ],
+        "uh": "Begin, midden, eind."
+       },
+       {
+        "v": "Wat doe je in de inleiding van een voordracht?",
+        "o": [
+         "alle details al vertellen",
+         "je conclusie al uitgebreid verdedigen",
+         "excuses maken voor je voorbereiding",
+         "aandacht trekken en aankondigen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "In de inleiding trek je de aandacht en kondig je het onderwerp en de opbouw aan.",
+        "uo": [
+         "Koos je \"alle details al vertellen\"? Dan denk je dat een inleiding de hele inhoud moet geven. Dan houd je niets over voor de kern. De inleiding kondigt aan en prikkelt, de kern werkt uit.",
+         "Koos je \"je conclusie al uitgebreid verdedigen\"? Dan verwar je de inleiding met het slot. De conclusie hoort aan het einde. In de inleiding trek je aandacht en kondig je aan.",
+         "Koos je \"excuses maken voor je voorbereiding\"? Dan denk je dat eerlijk zijn over twijfel een goede start is. Het ondermijnt je geloofwaardigheid. Begin zelfverzekerd en kondig je onderwerp aan.",
+         "Klopt: de inleiding trekt de aandacht en laat het publiek weten waarover je gaat spreken en in welke volgorde."
+        ],
+        "uh": "Aandacht + aankondigen."
+       },
+       {
+        "v": "Welke opening trekt de aandacht het best?",
+        "o": [
+         "een prikkelende vraag over het onderwerp",
+         "je begint met \"Ik ben niet goed voorbereid\"",
+         "je leest de titel van je presentatie langzaam voor",
+         "je begint meteen met de conclusie en bedankt iedereen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Een prikkelende vraag of een verrassend feit trekt aandacht.",
+        "uo": [
+         "Klopt: een vraag of verrassend feit maakt nieuwsgierig en trekt de aandacht van het publiek.",
+         "Koos je \"je begint met Ik ben niet goed voorbereid\"? Dan trek je negatieve aandacht. Het publiek luistert dan naar je twijfel, niet naar je onderwerp. Begin met iets wat nieuwsgierig maakt.",
+         "Koos je \"je leest de titel van je presentatie langzaam voor\"? Dan denk je dat een kale titel de aandacht pakt. Een titel alleen is weinig prikkelend. Een vraag of feit werkt sterker.",
+         "Koos je \"je begint meteen met de conclusie en bedankt...\"? Dan verwar je opening met afsluiting. Je mist de aankondiging en de aandacht. De opening hoort het onderwerp aan te kondigen."
+        ],
+        "uh": "Prikkel in het begin."
+       },
+       {
+        "v": "Wat doe je in het slot van een voordracht?",
+        "o": [
+         "een nieuw onderwerp beginnen",
+         "je uitleg opnieuw helemaal vertellen",
+         "de kern samenvatten en afsluiten",
+         "stoppen zonder iets te zeggen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "In het slot vat je samen en sluit je af.",
+        "uo": [
+         "Koos je \"een nieuw onderwerp beginnen\"? Dan denk je dat een slot ruimte is voor iets nieuws. Dan raakt je publiek de draad kwijt. Het slot rondt af wat je verteld hebt.",
+         "Koos je \"je uitleg opnieuw helemaal vertellen\"? Dan denk je dat herhalen alles is. Een samenvatting is kort en pakt de kern. Het slot vat alleen samen.",
+         "Klopt: in het slot haal je de belangrijkste punten terug en rond je je verhaal af.",
+         "Koos je \"stoppen zonder iets te zeggen\"? Dan laat je je verhaal onafgemaakt. Het publiek weet dan niet dat je klaar bent. Sluit af met een samenvatting en een afsluitende zin."
+        ],
+        "uh": "Samenvatten en afsluiten."
+       },
+       {
+        "v": "Waarvoor gebruik je overgangen als \"ten eerste\", \"vervolgens\" en \"tot slot\"?",
+        "o": [
+         "zodat je spreektijd langer wordt",
+         "zodat je niets hoeft te onthouden",
+         "zodat het publiek de opbouw kan volgen",
+         "zodat je minder dia's nodig hebt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Overgangen laten de opbouw van je verhaal horen.",
+        "uo": [
+         "Koos je \"zodat je spreektijd langer wordt\"? Dan denk je dat het woorden vullen is. Overgangen zijn bedoeld om structuur te geven, niet om tijd te rekken. Ze helpen het publiek de draad vast te houden.",
+         "Koos je \"zodat je niets hoeft te onthouden\"? Dan denk je dat overgangen je geheugen vervangen. Je moet de inhoud nog steeds kennen. Overgangen zijn wegwijzers voor het publiek.",
+         "Klopt: overgangen laten zien waar je bent in je verhaal en wat er komt.",
+         "Koos je \"zodat je minder dia's nodig hebt\"? Dan verwar je spreektaal met beeld. Overgangen werken ongeacht dia's. Ze maken je opbouw zichtbaar in woorden."
+        ],
+        "uh": "Wegwijzers in woorden."
+       },
+       {
+        "v": "Wat is een kenmerk van formeel taalgebruik?",
+        "o": [
+         "verzorgde woorden en zinnen",
+         "veel afkortingen en korte woorden",
+         "chattaal en smileys",
+         "dialect en spreektaal"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Formeel taalgebruik is verzorgd met volledige zinnen.",
+        "uo": [
+         "Klopt: formeel taalgebruik is verzorgd, zonder spreektaal of afkortingen.",
+         "Koos je \"veel afkortingen en korte woorden\"? Dan denk je dat afkortingen netjes zijn. Ze horen bij informeel taalgebruik en kunnen onduidelijk zijn. Formeel betekent volledige woorden en zinnen.",
+         "Koos je \"chattaal en smileys\"? Dan verwar je formeel met online communiceren. Chattaal past bij vrienden. Kies verzorgde woorden.",
+         "Koos je \"dialect en spreektaal\"? Dan denk je dat vertrouwde taal altijd past. Dialect en spreektaal passen niet bij een jury. Formeel is standaardtaal."
+        ],
+        "uh": "Formeel = verzorgd."
+       },
+       {
+        "v": "Wat is non-verbale communicatie?",
+        "o": [
+         "de woorden die je zegt",
+         "de opbouw van je verhaal",
+         "de dia's en plaatjes die je laat zien",
+         "houding, gebaren en oogcontact"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Non-verbale communicatie is wat je zonder woorden laat zien.",
+        "uo": [
+         "Koos je \"de woorden die je zegt\"? Dan verwar je woorden met lichaamstaal. Woorden zijn verbaal; non-verbaal gaat om wat je zonder woorden laat zien. Houding, gebaren en oogcontact zijn non-verbaal.",
+         "Koos je \"de opbouw van je verhaal\"? Dan denk je dat structuur een vorm van lichaamstaal is. Opbouw gaat over inhoud. Non-verbaal is wat je lichaam laat zien.",
+         "Koos je \"de dia's en plaatjes die je laat zien\"? Dan denk je dat beelden non-verbaal zijn. Dia's zijn hulpmiddelen, geen signalen van de spreker. Non-verbaal gaat over de spreker zelf.",
+         "Klopt: non-verbaal is alles wat je zonder woorden laat zien, zoals houding en gebaren."
+        ],
+        "uh": "Zonder woorden."
+       },
+       {
+        "v": "Waarom is oogcontact belangrijk bij een presentatie?",
+        "o": [
+         "zodat je je tekst beter kunt lezen",
+         "je laat zien dat je het publiek aanspreekt",
+         "zodat je minder hoeft te onthouden",
+         "zodat je sneller kunt praten"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Oogcontact laat zien dat je het publiek aanspreekt en maakt je geloofwaardiger.",
+        "uo": [
+         "Koos je \"zodat je je tekst beter kunt lezen\"? Dan denk je dat oogcontact met de tekst gaat. Dan kijk je naar je papier en niet naar het publiek. Oogcontact is contact met je luisteraars.",
+         "Klopt: wie het publiek aankijkt, maakt contact en komt betrouwbaarder over.",
+         "Koos je \"zodat je minder hoeft te onthouden\"? Dan denk je dat aankijken je geheugen overneemt. Het geeft alleen contact. Oogcontact is voor het publiek, niet voor jou.",
+         "Koos je \"zodat je sneller kunt praten\"? Dan denk je dat het tempo omhoog moet. Oogcontact werkt juist beter met een rustig tempo. Oogcontact maakt je verhaal persoonlijker."
+        ],
+        "uh": "Kijk je publiek aan."
+       },
+       {
+        "v": "Welke houding past bij een presentatie?",
+        "o": [
+         "met je rug naar het publiek staan",
+         "met je handen in je zakken naar de grond kijken",
+         "voortdurend heen en weer lopen",
+         "rechtop staan met rustige gebaren"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Een open houding met rustige gebaren werkt zelfverzekerd.",
+        "uo": [
+         "Koos je \"met je rug naar het publiek staan\"? Dan keer je het publiek de rug toe. Dan verlies je het contact en verstaan ze je slecht. Sta open naar het publiek toe.",
+         "Koos je \"met je handen in je zakken naar de grond kijken\"? Dan straal je onzekerheid uit. Dit kan onverschillig of nerveus overkomen. Kijk op en gebruik rustige gebaren.",
+         "Koos je \"voortdurend heen en weer lopen\"? Dan leid je het publiek af. Beweging zonder reden trekt de aandacht van de inhoud. Beweeg gericht en rustig.",
+         "Klopt: een open, rustige houding maakt je zelfverzekerd en betrouwbaar."
+        ],
+        "uh": "Rechtop en rustig."
+       },
+       {
+        "v": "Wat is articulatie?",
+        "o": [
+         "de snelheid waarmee je praat",
+         "het duidelijk uitspreken",
+         "de hoogte van je stem",
+         "het gebruik van moeilijke woorden"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Articulatie is het duidelijk uitspreken van woorden.",
+        "uo": [
+         "Koos je \"de snelheid waarmee je praat\"? Dan verwar je articulatie met tempo. Het tempo gaat over snelheid. Articulatie gaat over helder uitspreken.",
+         "Klopt: bij goede articulatie verstaat het publiek elke klank en elk woord.",
+         "Koos je \"de hoogte van je stem\"? Dan verwar je articulatie met toonhoogte. Dat is intonatie. Articulatie is duidelijkheid van uitspraak.",
+         "Koos je \"het gebruik van moeilijke woorden\"? Dan denk je dat articulatie met woordkeuze te maken heeft. Het gaat om uitspraak. Articuleren is helder uitspreken."
+        ],
+        "uh": "Duidelijk uitspreken."
+       },
+       {
+        "v": "Waarom lass je pauzes in na een belangrijk punt?",
+        "o": [
+         "zodat je spreektijd langer wordt",
+         "omdat je dan niets hoeft te zeggen",
+         "het publiek kan het verwerken",
+         "om je spieken te verbergen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Pauzes geven nadruk en tijd om te verwerken.",
+        "uo": [
+         "Koos je \"zodat je spreektijd langer wordt\"? Dan denk je dat pauzes tijd vullen. Pauzes geven nadruk en ruimte om te begrijpen. Een pauze is een middel, geen vulling.",
+         "Koos je \"omdat je dan niets hoeft te zeggen\"? Dan denk je dat zwijgen luiheid is. Een pauze is een bewuste keuze. Pauzes geven je publiek tijd.",
+         "Klopt: een korte stilte laat het punt landen en trekt de aandacht.",
+         "Koos je \"om je spieken te verbergen\"? Dan verwar je pauzes met verstoppen. Een pauze hoort bij vrij spreken. Gebruik pauzes bewust."
+        ],
+        "uh": "Pauze = nadruk."
+       },
+       {
+        "v": "Wat gebeurt er als je veel te snel praat?",
+        "o": [
+         "het publiek kan je niet goed volgen",
+         "het publiek vindt je zelfverzekerder",
+         "het publiek onthoudt meer",
+         "je voordracht duurt langer"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Te snel praten maakt je moeilijk te volgen.",
+        "uo": [
+         "Klopt: bij te hoog tempo komt niet alles over en haakt het publiek af.",
+         "Koos je \"het publiek vindt je zelfverzekerder\"? Dan denk je dat snel praten zekerheid uitstraalt. Het lijkt vaak nerveus en maakt je onduidelijk. Een rustig tempo komt zekerder over.",
+         "Koos je \"het publiek onthoudt meer\"? Dan denk je dat meer woorden meer bijblijft. Er blijft juist minder hangen. Een rustig tempo helpt onthouden.",
+         "Koos je \"je voordracht duurt langer\"? Dan draai je het om. Snel praten maakt je voordracht korter, niet langer. Tempo beïnvloedt begrijpelijkheid."
+        ],
+        "uh": "Rustig tempo."
+       },
+       {
+        "v": "Wat ontbreekt er in het slot?",
+        "o": [
+         "een samenvatting van de punten",
+         "een nieuwe inleiding op het onderwerp",
+         "een extra voorbeeld",
+         "een vraag aan de jury"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Een slot vat de belangrijkste punten samen en rondt af.",
+        "uo": [
+         "Klopt: het slot haalt de kern terug. \"Dat was het\" rondt niets af.",
+         "Koos je \"een nieuwe inleiding op het onderwerp\"? Dan denk je dat het slot opnieuw moet beginnen. Het slot rondt af wat er verteld is. Het slot vat samen.",
+         "Koos je \"een extra voorbeeld\"? Dan denk je dat een nieuw voorbeeld afsluit. Een voorbeeld hoort in de kern. Het slot herhaalt de kern in het kort.",
+         "Koos je \"een vraag aan de jury\"? Dan denk je dat je moet eindigen met een vraag aan de beoordelaars. Dat is geen afsluiting. Sluit af met een samenvatting."
+        ],
+        "uh": "Samenvatten, niet stoppen.",
+        "ctx": "Een voordracht begint met het onderwerp, gaat over naar drie punten en eindigt met de woorden: \"Dat was het.\""
+       },
+       {
+        "v": "Welk onderdeel van de voordracht is dit?",
+        "o": [
+         "de kern",
+         "het slot met een korte samenvatting",
+         "de inleiding met aankondiging",
+         "een overgang"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Het onderwerp en de volgorde aankondigen hoort in de inleiding.",
+        "uo": [
+         "Koos je \"de kern\"? Dan denk je dat het uitwerking is. Er worden alleen onderwerpen genoemd, niets uitgelegd. De kern bevat de uitleg.",
+         "Koos je \"het slot met een korte samenvatting\"? Dan verwar je een samenvatting met een aankondiging. Hier wordt vooruitgekeken, niet teruggeblikt. Een slot kijkt terug.",
+         "Klopt: de spreker noemt het onderwerp en de volgorde van de punten. Dat is wat een inleiding doet.",
+         "Koos je \"een overgang\"? Dan denk je dat het een tussenstap is. Dit is het begin van het verhaal. Het is de inleiding."
+        ],
+        "uh": "Aankondigen = inleiding.",
+        "ctx": "\"Goedemorgen. Ik ga het vandaag hebben over zonnepanelen. Eerst leg ik uit hoe ze werken, dan wat ze kosten en tot slot waarom ik ze aanraad.\""
+       },
+       {
+        "v": "Welke twee dingen doet deze spreker in het slot?",
+        "o": [
+         "hij kondigt aan en begint opnieuw",
+         "hij vat samen en sluit af",
+         "hij introduceert een nieuw onderwerp",
+         "hij stelt een vraag aan het publiek"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Een slot bestaat uit samenvatten en afsluiten.",
+        "uo": [
+         "Koos je \"hij kondigt aan en begint opnieuw\"? Dan denk je dat het een tweede inleiding is. Er wordt teruggeblikt, niet vooruitgekeken. Het slot rondt af.",
+         "Klopt: eerst een samenvatting, daarna een afsluiting met dank.",
+         "Koos je \"hij introduceert een nieuw onderwerp\"? Dan denk je dat hij iets nieuws begint. Hij herhaalt wat verteld is. Een slot sluit af.",
+         "Koos je \"hij stelt een vraag aan het publiek\"? Dan denk je dat de zin een vraag is. Er staat een samenvatting. Samenvatting en dank."
+        ],
+        "uh": "Samenvatten + afsluiten.",
+        "ctx": "\"Samengevat: zonnepanelen leveren stroom, ze zijn betaalbaar en daarom raad ik ze aan. Bedankt voor jullie aandacht.\""
+       },
+       {
+        "v": "Wat is de functie van \"ten eerste\", \"ten tweede\" en \"tot slot\"?",
+        "o": [
+         "ze zijn bedoeld om tijd te vullen",
+         "ze vervangen de kern van je verhaal",
+         "ze maken je presentatie informeler",
+         "ze maken de opbouw hoorbaar"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Overgangswoorden maken de opbouw hoorbaar.",
+        "uo": [
+         "Koos je \"ze zijn bedoeld om tijd te vullen\"? Dan denk je dat het opvulling is. Het zijn structuurwoorden. Ze maken de opbouw duidelijk.",
+         "Koos je \"ze vervangen de kern van je verhaal\"? Dan denk je dat zulke woorden inhoud zijn. De inhoud staat in wat erop volgt. Het zijn wegwijzers.",
+         "Koos je \"ze maken je presentatie informeler\"? Dan denk je dat zulke woorden toon veranderen. Ze zijn neutraal en zakelijk. Ze geven structuur.",
+         "Klopt: zulke woorden laten zien dat er een volgorde is en waar je bent."
+        ],
+        "uh": "Volgorde in woorden.",
+        "ctx": "Een spreker zegt: \"Ten eerste leg ik uit hoe het werkt. Ten tweede vertel ik wat het kost. Tot slot noem ik de voordelen.\""
+       },
+       {
+        "v": "Welke zin is een goede overgang?",
+        "o": [
+         "\"Dan gaan we maar weer door met het volgende.\"",
+         "\"Naast de kosten kom ik nu bij het milieu.\"",
+         "\"Ik ga maar door.\"",
+         "\"Wat zei ik ook alweer?\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een overgang sluit het vorige deel af en kondigt het volgende aan.",
+        "uo": [
+         "Koos je \"Dan gaan we maar weer door met het volgende.\"? Dan denk je dat een korte woordgroep volstaat. Het zegt niet waarover het gaat. Een goede overgang noemt het nieuwe deel.",
+         "Klopt: deze zin sluit af wat er was en kondigt het volgende aan.",
+         "Koos je \"Ik ga maar door.\"? Dan denk je dat doorgaan genoeg is. Het publiek weet niet waarheen. Maak duidelijk wat er komt.",
+         "Koos je \"Wat zei ik ook alweer?\"? Dan laat je zien dat je de draad kwijt bent. Dat is geen overgang. Een overgang geeft richting."
+        ],
+        "uh": "Terugblik + vooruitblik.",
+        "ctx": "Een spreker heeft het eerst over kosten en springt dan zonder overgang naar het milieu. Het publiek raakt even de draad kwijt."
+       },
+       {
+        "v": "Wat is er mis met het taalgebruik?",
+        "o": [
+         "het is te vaag en te informeel",
+         "het is veel te formeel voor een jury",
+         "het is te kort",
+         "het is te technisch"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Voor een jury gebruik je duidelijke, formele taal in plaats van vage spreektaal.",
+        "uo": [
+         "Klopt: vage woorden en spreektaal passen niet bij een formele beoordeling.",
+         "Koos je \"het is veel te formeel voor een jury\"? Dan draai je het om. De taal is juist te los voor een jury. Kies een verzorgd, helder register.",
+         "Koos je \"het is te kort\"? Dan denk je dat de lengte het probleem is. Het probleem is vaagheid en spreektaal. Maak je zinnen volledig en precies.",
+         "Koos je \"het is te technisch\"? Dan denk je dat er vakjargon in zit. Er staan juist vage woorden. Wees concreet en formeel."
+        ],
+        "uh": "Duidelijk en verzorgd.",
+        "ctx": "Een leerling zegt in een presentatie voor de jury: \"Nou ja, eh, gewoon dat ding, snap je? Het is, hoe zeg je dat, best wel lastig.\""
+       },
+       {
+        "v": "Welke zin past bij een formeel register?",
+        "o": [
+         "\"Ik ga jullie effe uitleggen waarom dit project mega belangrijk is.\"",
+         "\"Ik zal het jullie even vertellen, want het is cool.\"",
+         "\"Luister, dit project is gewoon heel belangrijk, snap je?\"",
+         "\"Ik wil u graag vertellen waarom dit project belangrijk is.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Een formele zin heeft verzorgde woorden en volledige zinsbouw.",
+        "uo": [
+         "Koos je \"Ik ga jullie effe uitleggen waarom dit project mega...\"? Dan denk je dat spreektaal altijd werkt. Effe en mega zijn losse spreektaal. Formeel vraagt verzorgde woorden.",
+         "Koos je \"Ik zal het jullie even vertellen, want het is cool.\"? Dan verwar je formeel met vriendelijk. \"Cool\" en \"even\" passen bij een informele situatie. Kies standaardtaal.",
+         "Koos je \"Luister, dit project is gewoon heel belangrijk,...\"? Dan denk je dat een stellige toon formeel is. \"Gewoon\" en \"snap je\" zijn spreektaal. Formeel is zakelijk en beleefd.",
+         "Klopt: dit is een beleefde, verzorgde zin met volledige woorden."
+        ],
+        "uh": "Verzorgd en beleefd."
+       },
+       {
+        "v": "Wat verbeter je het eerst?",
+        "o": [
+         "hij maakt de tekst op de dia kleiner",
+         "hij praat nog zachter",
+         "hij kijkt het publiek aan",
+         "hij leest sneller"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Draai naar het publiek, kijk op en spreek vrijer.",
+        "uo": [
+         "Koos je \"hij maakt de tekst op de dia kleiner\"? Dan denk je dat het formaat het probleem is. Hij leest voor en kijkt weg. Draai je naar het publiek.",
+         "Koos je \"hij praat nog zachter\"? Dan denk je dat zachter praten helpt. Met zijn rug naar het publiek is hij al moeilijk te verstaan. Kijk het publiek aan.",
+         "Klopt: contact met het publiek is het belangrijkste. Voorlezen van een dia verliest dat contact.",
+         "Koos je \"hij leest sneller\"? Dan denk je dat sneller klaar zijn beter is. Voorlezen blijft dan het probleem. Praat vrij en kijk op."
+        ],
+        "uh": "Contact eerst.",
+        "ctx": "Een spreker staat met zijn rug naar het publiek en leest zijn tekst van de dia."
+       },
+       {
+        "v": "Wat voor indruk geeft dat meestal bij het publiek?",
+        "o": [
+         "zelfverzekerd, bevlogen en overtuigend",
+         "grappig en aanstekelijk",
+         "onzeker en minder geloofwaardig",
+         "heel deskundig"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Houding, blik en stem bepalen de indruk, ook naast goede inhoud.",
+        "uo": [
+         "Koos je \"zelfverzekerd, bevlogen en overtuigend\"? Dan denk je dat rustig staan altijd sterk is. Hier komt het juist onzeker over door de blik naar beneden en het zachte praten. Zelfverzekerd zichtbaar maken vraagt contact.",
+         "Koos je \"grappig en aanstekelijk\"? Dan denk je dat het publiek lacht om onzekerheid. Meestal wekt het zorg of verveling. Houding en stem moeten je boodschap steunen.",
+         "Klopt: houding, blik en stem laten onzekerheid zien, ook als de inhoud goed is.",
+         "Koos je \"heel deskundig\"? Dan denk je dat zacht praten deskundigheid uitstraalt. Het kan het tegendeel doen. Deskundigheid blijkt uit contact en duidelijkheid."
+        ],
+        "uh": "Non-verbaal telt mee.",
+        "ctx": "Een spreker houdt zijn handen in zijn zakken, kijkt naar de grond en praat zacht."
+       },
+       {
+        "v": "Wat adviseer je?",
+        "o": [
+         "nog sneller praten zodat het afgelopen is",
+         "alles twee keer zeggen",
+         "de dia's weglaten",
+         "pauzes inlassen en rustiger praten"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Pauzes en een rustig tempo helpen het publiek te volgen.",
+        "uo": [
+         "Koos je \"nog sneller praten zodat het afgelopen is\"? Dan denk je dat sneller klaar zijn beter is. Het publiek haakt dan af. Rust en pauzes werken beter.",
+         "Koos je \"alles twee keer zeggen\"? Dan denk je dat herhalen het tempo oplost. Het tempo blijft te hoog. Verlaag het tempo.",
+         "Koos je \"de dia's weglaten\"? Dan denk je dat dia's het tempo bepalen. Het tempo hangt af van hoe je praat. Pas je tempo aan.",
+         "Klopt: rust geeft ruimte om te verwerken en maakt de boodschap beter verstaanbaar."
+        ],
+        "uh": "Tempo omlaag.",
+        "ctx": "Een spreker praat in één adem door en heeft een hoog tempo, zonder pauzes."
+       },
+       {
+        "v": "Waaraan moet hij vooral werken?",
+        "o": [
+         "articulatie: duidelijker praten",
+         "een groter publiek om voor te spreken",
+         "meer dia's",
+         "moeilijkere woorden"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Onduidelijke uitspraak los je op met betere articulatie.",
+        "uo": [
+         "Klopt: onduidelijke uitspraak maakt je verhaal moeilijk te verstaan.",
+         "Koos je \"een groter publiek om voor te spreken\"? Dan denk je dat de grootte van het publiek het probleem is. Het probleem is zijn uitspraak. Werk aan duidelijk spreken.",
+         "Koos je \"meer dia's\"? Dan denk je dat beelden het probleem oplossen. Als je niet te verstaan bent, helpen dia's weinig. Articuleer helder.",
+         "Koos je \"moeilijkere woorden\"? Dan denk je dat deskundiger woorden helpen. Dat maakt het erger. Spreek duidelijk."
+        ],
+        "uh": "Articuleren.",
+        "ctx": "Een spreker mompelt en laat woorden in elkaar overlopen. Het publiek begrijpt hem slecht."
+       },
+       {
+        "v": "Hoe verdeel je je tijd grofweg het best?",
+        "o": [
+         "een lange inleiding en een korte kern",
+         "kort inleiden, lang uitwerken, kort afsluiten",
+         "evenveel tijd voor alle drie de delen",
+         "alleen een kern, zonder inleiding en zonder slot erbij"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "De kern krijgt de meeste tijd; inleiding en slot zijn kort.",
+        "uo": [
+         "Koos je \"een lange inleiding en een korte kern\"? Dan denk je dat het begin het belangrijkste is. De uitleg zit in de kern. Geef de kern de meeste tijd.",
+         "Klopt: de kern bevat de uitleg en heeft de meeste tijd nodig. Inleiding en slot zijn kort.",
+         "Koos je \"evenveel tijd voor alle drie de delen\"? Dan denk je dat alles gelijk moet zijn. Inleiding en slot hoeven niet zo lang als de kern. Verdeel naar belang.",
+         "Koos je \"alleen een kern, zonder inleiding en zonder slot...\"? Dan laat je delen weg. Dan mist het publiek de context en afsluiting. Alle drie de delen zijn nodig, in verhouding."
+        ],
+        "uh": "Kern het langst.",
+        "ctx": "Je hebt vijf minuten voor een voordracht."
+       },
+       {
+        "v": "Waarom is dit een zwakke inleiding?",
+        "o": [
+         "het is een sterke manier om sympathie te winnen",
+         "het is te kort",
+         "het kondigt het onderwerp aan",
+         "het ondermijnt zijn geloofwaardigheid"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Zelf afbreken bij de start ondermijnt je geloofwaardigheid.",
+        "uo": [
+         "Koos je \"het is een sterke manier om sympathie te winnen\"? Dan denk je dat excuses sympathie opleveren. Het wekt eerder twijfel aan zijn kennis. Begin zelfverzekerd.",
+         "Koos je \"het is te kort\"? Dan denk je dat de lengte het probleem is. De inhoud is het probleem. Begin met een aankondiging.",
+         "Koos je \"het kondigt het onderwerp aan\"? Dan denk je dat het onderwerp wordt genoemd. Er is geen aankondiging. Noem je onderwerp.",
+         "Klopt: wie zichzelf neerhaalt, geeft het publiek reden om niet te luisteren."
+        ],
+        "uh": "Zelfverzekerd beginnen.",
+        "ctx": "Een leerling begint met: \"Sorry, ik heb er niet veel van gemaakt, het is vast niet goed.\""
+       },
+       {
+        "v": "Welke uitspraak klopt?",
+        "o": [
+         "de eerste komt geloofwaardiger over",
+         "de tweede komt geloofwaardiger over door zijn rust",
+         "er is geen verschil, want de inhoud is gelijk",
+         "alleen de tekst bepaalt de indruk"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Non-verbale signalen ondersteunen of ondermijnen je boodschap.",
+        "uo": [
+         "Klopt: non-verbale signalen ondersteunen de boodschap en maken haar overtuigender.",
+         "Koos je \"de tweede komt geloofwaardiger over door zijn rust\"? Dan draai je het om. Houding, blik en stem werken bij de eerste in zijn voordeel. Non-verbaal telt mee.",
+         "Koos je \"er is geen verschil, want de inhoud is gelijk\"? Dan denk je dat alleen inhoud telt. Hoe je het zegt, beïnvloedt hoe het overkomt. Inhoud én presentatie tellen.",
+         "Koos je \"alleen de tekst bepaalt de indruk\"? Dan denk je dat woorden alles zijn. Lichaamstaal en stem tellen mee. Non-verbaal ondersteunt de boodschap."
+        ],
+        "uh": "Hoe je het zegt telt mee.",
+        "ctx": "Twee sprekers houden dezelfde voordracht. De eerste kijkt het publiek aan, staat rustig en spreekt duidelijk. De tweede staat stijf en praat zacht."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een spreker begint zijn voordracht met: \"Goedemorgen. Ik ga het hebben over zonnepanelen. Eerst leg ik uit hoe ze werken, dan wat ze kosten en tot slot waarom ik ze aanraad.\"",
+        "v": "Welk onderdeel van de voordracht is dit en welke twee dingen doet de spreker?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Dit is de inleiding (1 punt). De spreker noemt het onderwerp en kondigt de opbouw aan (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een voordracht eindigt met: \"Dat was het.\"",
+        "v": "Wat ontbreekt in dit slot? Geef een betere afsluiting.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een samenvatting van de belangrijkste punten en een afsluitende zin ontbreken (1 punt). Bijvoorbeeld: \"Samengevat: zonnepanelen leveren stroom, zijn betaalbaar en daarom raad ik ze aan. Bedankt voor jullie aandacht.\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een spreker springt zonder overgang van de kosten naar het milieu.",
+        "v": "Wat is het gevolg voor het publiek en welke overgangszin zou je gebruiken?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het publiek raakt de draad kwijt (1 punt). Bijvoorbeeld: \"Naast de kosten wil ik nu laten zien wat het voor het milieu betekent\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt in een presentatie voor de jury: \"Gewoon dat ding, snap je? Het is best wel lastig, hoe zeg je dat.\"",
+        "v": "Welk register gebruikt hij en waarom past dat niet bij een jury?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een informeel register met spreektaal en vage woorden (1 punt). Een jury verwacht verzorgd, helder en formeel taalgebruik met volledige zinnen (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een spreker houdt zijn handen in zijn zakken, kijkt naar de grond en praat zacht.",
+        "v": "Welke indruk geeft dit bij het publiek en wat verbeter je?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het geeft een onzekere indruk en maakt hem minder geloofwaardig (1 punt). Verbeteren: rechtop staan, het publiek aankijken en duidelijker en luider spreken (1 punt)."
+       }
+      ]
      }
     ]
    },

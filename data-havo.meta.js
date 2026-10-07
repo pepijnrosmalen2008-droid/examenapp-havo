@@ -247,6 +247,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B3",
+      "lo": "nl.B.3",
+      "gs": 2,
+      "naam": "Een voordracht opbouwen en presenteren",
+      "beschrijving": "Je bouwt een voordracht op met inleiding, kern en slot en presenteert met passend taalgebruik, houding, oogcontact en stem.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Opbouw: inleiding, kern en slot",
+       "Inleiding en slot",
+       "Overgangen en structuur",
+       "Register en taalgebruik",
+       "Houding, oogcontact en gebaren",
+       "Stem: tempo, articulatie, pauzes"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
