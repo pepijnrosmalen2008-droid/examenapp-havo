@@ -161,6 +161,16 @@ def test_bot_never_exceeds_capital(db, market):
     assert spent <= 100
 
 
+def test_zero_equity_skips_cycle_without_halting(db, market):
+    """Een onleesbaar/leeg saldo (bv. API-key niet bevestigd → equity €0) mag de bot NIET
+    permanent killen als valse 100%-drawdown; hij slaat de cycle gewoon over."""
+    engine = build(db, market)
+    db.set_meta("bot_cash_eur", "0")        # geen bruikbaar EUR-saldo
+    engine.cycle(NOW)
+    assert not engine.risk.is_halted()      # geen valse kill-switch
+    assert not db.open_positions()          # en er is niets gekocht
+
+
 def test_buy_full_cash_not_rejected_by_rounding(db, market):
     """Bot-cash wordt op 6 decimalen bewaard; 'koop al je cash' mag niet stuk op een
     afrondings-epsilon (bug die news-koopjes weigerde bij een bijna-volledig belegde bot)."""

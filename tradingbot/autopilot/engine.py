@@ -193,6 +193,17 @@ class TradingEngine:
 
         cash = self._cash_eur()
         equity = cash + sum(p.amount * prices.get(p.pair, p.avg_price) for p in positions)
+
+        # Geen bruikbaar saldo (account nog niet gefund, of saldo onleesbaar door bv. een
+        # onbevestigde/kapotte API-key): dan is equity €0 géén "100% drawdown" maar simpelweg
+        # "niets te doen". NOOIT op zo'n nul-lezing de permanente kill-switch triggeren.
+        if equity <= 0:
+            log.warning("equity €%.2f — geen bruikbaar EUR-saldo (account leeg of saldo "
+                        "onleesbaar, bv. API-key niet bevestigd). Deze cycle niets doen; "
+                        "geen kill-switch.", equity)
+            self._record_decision({}, cash, equity, now, strategy_ran=False, prices=prices)
+            return
+
         self._day_rollover(now, equity)
         self._store_last_prices(prices, positions)
         self.db.snapshot_equity(equity, cash, self._bench_equity(prices))
