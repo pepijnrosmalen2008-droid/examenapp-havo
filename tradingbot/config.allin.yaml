@@ -24,7 +24,7 @@ seed:
   eur: 100                    # start met €100 papieren cash; pas aan naar wens
 
 risk:
-  max_position_pct: 30
+  max_position_pct: 15        # kleinere posities → kan over méér munten tegelijk spreiden
   stop_loss_pct: 15
   take_profit_pct: 25
   max_daily_loss_pct: 15
@@ -37,10 +37,10 @@ risk:
 strategy:
   name: adaptive
   params:
-    buy_threshold: 0.40       # alleen bij STERKE overtuiging kopen (-1..+1); geen ruis-trades
-    sell_threshold: -0.15     # verkoop zodra de overtuiging duidelijk kantelt
-    min_confidence: 0.45      # factoren moeten het eens én betrouwbaar zijn, anders niet handelen
-    max_positions: 4          # hooguit zoveel posities tegelijk
+    buy_threshold: 0.20       # koopt al bij een gematigd-positieve overtuiging → handelt actief
+    sell_threshold: -0.10     # verkoopt zodra de overtuiging kantelt
+    min_confidence: 0.10      # lage drempel: hij mag breed handelen (en leert van elke uitkomst)
+    max_positions: 8          # mag over veel munten tegelijk gespreid zitten
 
 # ALLE informatiebronnen tegelijk. Elke bron is een PROBE: hij mag voorstellen doen,
 # maar alles gaat door de confidence-poort én de risk engine, en wordt forward-only
@@ -56,24 +56,34 @@ research:
     - https://cointelegraph.com/rss
     - https://decrypt.co/feed
     - https://www.coindesk.com/arc/outboundfeeds/rss/
-  disclosure_sources: []                 # (dode gratis dataset — 403; vul een werkende bron in om aan te zetten)
+    - https://cryptoslate.com/feed/
+    - https://www.newsbtc.com/feed/
+    - https://cryptopotato.com/feed/
+    - https://ambcrypto.com/feed/
+    - https://beincrypto.com/feed/
+    - https://bitcoinist.com/feed/
+    - https://u.today/rss
+    - https://bitcoinmagazine.com/feed
+    - https://cointelegraph.com/rss/category/regulation   # regelgeving/politiek crypto-nieuws
+    - https://decrypt.co/feed/section/policy               # beleid & politiek
+  disclosure_sources: []                 # gratis keyless politici-TRADE-datasets zijn dood (403);
+                                         # met een API-sleutel (Quiver/Unusual Whales) later te wiren
   onchain_sources: []                    # vul je eigen whale/flow-JSON-bron in (optioneel ONCHAIN_API_KEY in .env)
 
 schedule:
   interval_minutes: 15
 
-# Circuit breaker gelijkgetrokken met de universe-filter: een munt die als liquide genoeg
-# geldt (spread ≤ 1.0%) mag die cycle ook echt verhandeld worden.
+# Circuit breaker gelijkgetrokken met de universe-filter.
 circuit_breaker:
-  max_spread_pct: 1.0
+  max_spread_pct: 1.5
 
-# Zelf het liquide universe scannen — maar met echt geld strenger: alleen munten met ruim
-# volume en een krappe spread, zodat de bot niet in illiquide micro-caps handelt.
+# Breed scannen: zoveel mogelijk munten overwegen zodat hij overal van kan leren en handelen.
+# Een bodem op volume/spread blijft nodig, anders kunnen orders niet fatsoenlijk vullen.
 universe:
   enabled: true
-  min_daily_volume_eur: 500000
-  max_spread_pct: 1.0
-  max_markets: 60
+  min_daily_volume_eur: 25000
+  max_spread_pct: 1.5
+  max_markets: 150
   always_include: [BTC-EUR, ETH-EUR, SOL-EUR, MOODENG-EUR]
 
 costs:
