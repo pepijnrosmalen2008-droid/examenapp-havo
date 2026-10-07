@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **8 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7). Werk dit getal bij bij elke afronding.
+> Voortgang: **9 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -39,7 +39,7 @@
   - [x] A6 · nl.A.6 Betoog beoordelen en drogredenen herkennen · 28 vragen (R1-R3), 18 begrippen, 4 schema's (zes beoordelingsvragen, drogredenen schema, drogredenen discussieregel, drie stappen), geen clip
   - [x] A7 · nl.A.7 Een tekst samenvatten · 25 vragen (R1-R3), 12 begrippen, 3 schema's (wat blijft/valt weg, vier stappen, controlelijst), geen clip
 - [ ] **HAVO · Nederlands** (`nl`) · domein B — Mondelinge taalvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2)
-  - [ ] B1 · nl.B.1 Informatie verzamelen en verwerken
+  - [x] B1 · nl.B.1 Informatie verzamelen en verwerken · 26 vragen (R1-R3), 12 begrippen, 3 schema's (bronbeoordeling, vier stappen, citaat/parafrase/plagiaat), geen clip
   - [ ] B2 · nl.B.2 Doel, publiek en gespreksvorm bepalen
   - [ ] B3 · nl.B.3 Een voordracht opbouwen en presenteren
   - [ ] B4 · nl.B.4 Deelnemen aan een discussie of debat

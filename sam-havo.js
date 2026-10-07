@@ -1714,5 +1714,46 @@ Object.assign(SAM_RICH,{
 <rect x="6" y="86" width="308" height="36" rx="6" fill="var(--orl)"/><text x="18" y="109" font-size="12" font-weight="700" fill="var(--dk)">3  Beknopt</text><text x="104" y="109" font-size="11" fill="var(--dk)">geen voorbeelden of details?</text>
 <rect x="6" y="126" width="308" height="46" rx="6" fill="var(--orl)"/><text x="18" y="146" font-size="12" font-weight="700" fill="var(--dk)">4  Eigen woorden</text><text x="18" y="163" font-size="11" fill="var(--dk)">niet letterlijk, zonder eigen mening?</text></g></svg><div class="sam-figcap">Controlelijst bij een gegeven samenvatting: kern, belangrijke steun, beknoptheid en eigen woorden zonder mening; mist een onderdeel, dan is de samenvatting niet goed.</div></div>
 <div class="sam-tip"><strong>Examentip:</strong> een samenvatting die alleen de hoofduitspraak geeft, is onvolledig; een samenvatting met voorbeelden of een eigen mening is niet beknopt of niet neutraal. Noem bij een afkeuring wat er ontbreekt of wat er te veel in staat.</div>
+</div>`,
+'havo_nl_B1':`<div class="sam-intro">Voordat je kunt <strong>presenteren</strong>, moet je weten waar je het over hebt. Voor een voordracht, discussie of debat <strong>verzamel</strong> je relevante informatie bij betrouwbare <strong>bronnen</strong>, <strong>selecteer</strong> je wat past en <strong>verwerk</strong> je het tot <strong>kernpunten</strong> in eigen woorden. In dit leerdoel leer je dat stap voor stap, en hoe je bronnen netjes vermeldt.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Bron</td><td>Waar je informatie vandaan haalt.</td></tr>
+<tr><td>Betrouwbare bron</td><td>Deskundige afzender, controleerbare informatie.</td></tr>
+<tr><td>Relevante informatie</td><td>Past bij je doel en je publiek.</td></tr>
+<tr><td>Selecteren</td><td>Kiezen wat je gebruikt en wat je weglaat.</td></tr>
+<tr><td>Kernpunt, kernwoorden</td><td>De belangrijkste punten en de woorden die ze dragen.</td></tr>
+<tr><td>Parafraseren</td><td>In eigen woorden, met dezelfde betekenis.</td></tr>
+<tr><td>Citaat, bronvermelding</td><td>Een letterlijk stuk met de bron erbij.</td></tr>
+<tr><td>Plagiaat</td><td>Andermans werk gebruiken zonder bron.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Bronnen zoeken en beoordelen</div>
+<p>Zoek bij voorkeur in meer dan één <strong>bron</strong>, zodat je kunt vergelijken. Een <strong>betrouwbare bron</strong> heeft een deskundige afzender en controleerbare informatie. Wees voorzichtig met bronnen met een <strong>belanghebbende</strong>: een bedrijf dat iets wil verkopen vertelt vaak alleen de voordelen. Een anonieme bron (bijvoorbeeld een forumbericht zonder naam) kun je niet beoordelen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Controlelijst om een bron te beoordelen op afzender, deskundigheid, controleerbaarheid en belang, met vragen die je stelt"><g font-family="inherit"><rect x="4" y="4" width="312" height="42" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Afzender</text><text x="12" y="38" font-size="11" fill="var(--dk)">Wie zegt dit, en is de afzender bekend?</text>
+<rect x="4" y="50" width="312" height="42" rx="6" fill="var(--orl)"/><text x="12" y="68" font-size="12" font-weight="700" fill="var(--dk)">Deskundigheid</text><text x="12" y="84" font-size="11" fill="var(--dk)">Weet de afzender hier echt iets van?</text>
+<rect x="4" y="96" width="312" height="42" rx="6" fill="var(--orl)"/><text x="12" y="114" font-size="12" font-weight="700" fill="var(--dk)">Controleerbaar</text><text x="12" y="130" font-size="11" fill="var(--dk)">Kun je het nagaan, met bron of cijfers?</text>
+<rect x="4" y="142" width="312" height="42" rx="6" fill="var(--orl)"/><text x="12" y="160" font-size="12" font-weight="700" fill="var(--dk)">Belang</text><text x="12" y="176" font-size="11" fill="var(--dk)">Heeft de afzender voordeel bij wat je gelooft?</text></g></svg><div class="sam-figcap">Vier vragen om een bron te beoordelen: wie het zegt, of hij deskundig is, of je het kunt controleren en of hij er belang bij heeft.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Selecteren en verwerken</div>
+<p>Je hebt altijd meer informatie dan je kunt vertellen. <strong>Selecteer</strong> daarom wat <strong>relevant</strong> is voor je doel en je publiek: informeer je groep 8, dan kies je eenvoudige uitleg en geen tabellen vol cijfers. Daarna <strong>verwerk</strong> je: je bepaalt je <strong>kernpunten</strong>, noteert <strong>kernwoorden</strong> en vertelt in eigen woorden.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 214" role="img" aria-label="Van bronnen naar voordracht in vier stappen: verzamelen, selecteren, kernpunten bepalen en kernwoorden noteren, vrij vertellen"><g font-family="inherit" text-anchor="middle"><rect x="10" y="4" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="20" font-size="12" font-weight="700" fill="var(--dk)">1  Verzamel</text><text x="160" y="35" font-size="11" fill="var(--dk)">uit meerdere betrouwbare bronnen</text>
+<path d="M160 42 V50" stroke="var(--or)" stroke-width="2.5"/><path d="M153 48 L160 56 L167 48 Z" fill="var(--or)"/>
+<rect x="10" y="56" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="72" font-size="12" font-weight="700" fill="var(--dk)">2  Selecteer</text><text x="160" y="87" font-size="11" fill="var(--dk)">wat past bij doel en publiek</text>
+<path d="M160 94 V102" stroke="var(--or)" stroke-width="2.5"/><path d="M153 100 L160 108 L167 100 Z" fill="var(--or)"/>
+<rect x="10" y="108" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="124" font-size="12" font-weight="700" fill="var(--dk)">3  Verwerk</text><text x="160" y="139" font-size="11" fill="var(--dk)">kernpunten en kernwoorden noteren</text>
+<path d="M160 146 V154" stroke="var(--or)" stroke-width="2.5"/><path d="M153 152 L160 160 L167 152 Z" fill="var(--or)"/>
+<rect x="10" y="160" width="300" height="44" rx="8" fill="var(--or)"/><text x="160" y="178" font-size="12" font-weight="700" fill="#fff">4  Vertel in eigen woorden</text><text x="160" y="194" font-size="11" fill="#fff">en noem je bronnen</text></g></svg><div class="sam-figcap">Van bron naar verhaal in vier stappen: verzamelen, selecteren, verwerken tot kernpunten en kernwoorden en vrij vertellen, met bronvermelding.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> je laat zien dat je het begrijpt door het in eigen woorden te vertellen; voorlezen verwerkt niets.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Bronnen vermelden en plagiaat voorkomen</div>
+<p>Gebruik je informatie van een ander, dan vermeld je de <strong>bron</strong>: wie het zei of schreef en waar. Letterlijke zinnen duid je aan als <strong>citaat</strong>. Zonder <strong>bronvermelding</strong> is het <strong>plagiaat</strong>, ook als je iets mondeling zegt. <strong>Parafraseren</strong> (eigen woorden) ontslaat je niet van de bron.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Vergelijking van letterlijk citeren met bronvermelding en parafraseren met bronvermelding, tegenover plagiaat zonder bron"><g font-family="inherit"><rect x="6" y="6" width="308" height="50" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="25" font-size="12" font-weight="700" fill="var(--dk)">Citaat</text><text x="16" y="45" font-size="11" fill="var(--dk)">letterlijk, tussen aanhalingstekens, met bron</text>
+<rect x="6" y="62" width="308" height="50" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="81" font-size="12" font-weight="700" fill="var(--dk)">Parafrase</text><text x="16" y="101" font-size="11" fill="var(--dk)">in eigen woorden, met bron</text>
+<rect x="6" y="118" width="308" height="50" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="16" y="137" font-size="12" font-weight="700" fill="var(--mu)">Plagiaat</text><text x="16" y="157" font-size="11" fill="var(--mu)">overnemen zonder bron te noemen</text></g></svg><div class="sam-figcap">Citeren en parafraseren zijn allebei goed zolang je de bron noemt; zonder bron (de stippellijn) is het plagiaat.</div></div>
+<div class="sam-tip"><strong>Tip voor je voordracht:</strong> zoek ook de andere kant van de zaak. Wie bij een debat alleen informatie kent die zijn standpunt steunt, is eenzijdig voorbereid en weet niet hoe hij tegenargumenten kan weerleggen.</div>
 </div>`
 });

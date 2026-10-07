@@ -203,7 +203,31 @@ var VAKKEN = [
     "nSv": 154,
     "nOe": 3,
     "nBeg": 30,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "nl.B.1",
+      "gs": 2,
+      "naam": "Informatie verzamelen en verwerken",
+      "beschrijving": "Je zoekt betrouwbare bronnen voor een voordracht, discussie of debat, kiest wat past bij je doel en publiek en verwerkt het in kernpunten en eigen woorden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Bronnen zoeken en kiezen",
+       "Betrouwbaarheid van bronnen beoordelen",
+       "Relevante informatie selecteren",
+       "Informatie verwerken tot kernpunten",
+       "Bronnen vermelden en plagiaat vermijden",
+       "Valkuilen bij informatie verzamelen"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "C",
