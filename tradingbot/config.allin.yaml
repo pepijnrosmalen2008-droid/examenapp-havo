@@ -64,6 +64,11 @@ research:
 schedule:
   interval_minutes: 15
 
+# Circuit breaker gelijkgetrokken met de universe-filter: een munt die als liquide genoeg
+# geldt (spread ≤ 1.5%) mag die cycle ook echt verhandeld worden.
+circuit_breaker:
+  max_spread_pct: 1.5
+
 # Zelf het hele liquide universe scannen: echt álle munten overwegen die genoeg
 # volume/liquiditeit hebben, elk met hun historische koers als input voor de factoren.
 universe:
