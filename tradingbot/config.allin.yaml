@@ -41,6 +41,8 @@ strategy:
     sell_threshold: -0.08     # verkoopt snel zodra de overtuiging kantelt
     min_confidence: 0.08
     max_positions: 6
+    edge_scale: 0.08          # kostenpoort: conviction × dit = verwachte beweging
+    cost_mult: 1.0            # koop pas als die beweging > 1× de rondreis-kosten (fee + spread)
 
 # ALLE informatiebronnen tegelijk. Elke bron is een PROBE: hij mag voorstellen doen,
 # maar alles gaat door de confidence-poort én de risk engine, en wordt forward-only
@@ -68,19 +70,21 @@ research:
   onchain_sources: []                    # vul je eigen whale/flow-JSON-bron in (optioneel ONCHAIN_API_KEY in .env)
 
 schedule:
-  interval_minutes: 1         # reflex-ritme: elke minuut opnieuw kijken
+  interval_seconds: 30        # scant elke 30s "live"; de kostenpoort zorgt dat hij alleen
+                              # handelt als het loont (3s is op 40 munten niet haalbaar binnen
+                              # de API-limieten én verandert de 15m-factoren toch niet)
 
 # Circuit breaker gelijkgetrokken met de universe-filter.
 circuit_breaker:
   max_spread_pct: 1.5
 
-# Breed scannen, maar bij 1-minuut-ritme kleiner gehouden zodat het binnen Bitvavo's
-# rate limits + op tijd per minuut rond is.
+# Breed scannen, maar bij dit snelle ritme kleiner gehouden zodat elke cyclus op tijd rond is
+# en binnen Bitvavo's rate limits blijft.
 universe:
   enabled: true
   min_daily_volume_eur: 50000
   max_spread_pct: 1.5
-  max_markets: 50
+  max_markets: 40
   always_include: [BTC-EUR, ETH-EUR, SOL-EUR, MOODENG-EUR]
 
 costs:

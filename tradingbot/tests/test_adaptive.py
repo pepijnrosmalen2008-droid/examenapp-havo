@@ -52,3 +52,23 @@ def test_respects_max_positions(db):
 def test_no_candles_no_signals(db):
     strat, _ = _strat(db, ["AAA-EUR"])
     assert strat.generate_signals({}, [], NOW) == []
+
+
+def test_cost_gate_blocks_when_fees_exceed_expected_edge(db):
+    # absurd hoge kosten → de kostenpoort laat zelfs een sterke uptrend niet door
+    cfg = make_config(pairs=["AAA-EUR"], costs={"taker_fee_pct": 2.0, "slippage_pct": 1.0},
+                      strategy={"name": "adaptive", "params": {"buy_threshold": 0.1,
+                                "min_confidence": 0.0, "edge_scale": 0.08}})
+    strat = get_strategy(cfg, db)
+    buys = [s for s in strat.generate_signals({"AAA-EUR": up()}, [], NOW) if s.side == Side.BUY]
+    assert buys == []
+
+
+def test_cost_gate_allows_when_edge_beats_fees(db):
+    # normale kosten → dezelfde sterke uptrend mag wél gekocht worden
+    cfg = make_config(pairs=["AAA-EUR"], costs={"taker_fee_pct": 0.25, "slippage_pct": 0.1},
+                      strategy={"name": "adaptive", "params": {"buy_threshold": 0.1,
+                                "min_confidence": 0.0, "edge_scale": 0.08}})
+    strat = get_strategy(cfg, db)
+    buys = [s for s in strat.generate_signals({"AAA-EUR": up()}, [], NOW) if s.side == Side.BUY]
+    assert buys

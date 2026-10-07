@@ -49,6 +49,14 @@ class AdaptiveFactorStrategy(Strategy):
         sell_threshold = float(self.params.get("sell_threshold", -0.10))
         min_confidence = float(self.params.get("min_confidence", 0.15))
         max_positions = int(self.params.get("max_positions", 5))
+        # Kostenpoort: alleen kopen als de verwachte beweging de rondreis-kosten (fee + spread)
+        # overtreft. conviction (−1..+1) × edge_scale = ruwe verwachte beweging; die moet groter
+        # zijn dan cost_mult × round-trip-kosten. Zo "zoekt" de bot altijd, maar handelt hij
+        # alleen als het de moeite loont — ongeacht hoe snel het ritme staat.
+        edge_scale = float(self.params.get("edge_scale", 0.08))
+        cost_mult = float(self.params.get("cost_mult", 1.0))
+        roundtrip = fl.roundtrip_cost(self.cfg)          # fractie: 2×(fee+slippage)
+        min_conviction_for_cost = (roundtrip * cost_mult) / edge_scale if edge_scale > 0 else 0.0
 
         pairs = list(self.cfg.pairs)  # door de engine al uitgebreid met het universe
         if not candles:
@@ -86,11 +94,11 @@ class AdaptiveFactorStrategy(Strategy):
                                           reason=f"overtuiging {read.conviction:+.2f} gekanteld "
                                                  f"(≤ {sell_threshold:+.2f})",
                                           strategy=self.name))
-            elif (read.conviction >= buy_threshold and read.confidence >= min_confidence
-                  and n_open < max_positions):
+            elif (read.conviction >= max(buy_threshold, min_conviction_for_cost)
+                  and read.confidence >= min_confidence and n_open < max_positions):
                 n_open += 1
                 signals.append(Signal(pair=pair, side=Side.BUY,  # grootte laat de risk engine bepalen
                                       reason=f"geleerde overtuiging {read.conviction:+.2f} "
-                                             f"(zekerheid {read.confidence:.0%})",
+                                             f"(zekerheid {read.confidence:.0%}, dekt kosten)",
                                       strategy=self.name))
         return signals

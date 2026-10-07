@@ -87,7 +87,10 @@ class RegimeConfig(BaseModel):
 class ScheduleConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    interval_minutes: int = Field(ge=1, le=24 * 60)
+    interval_minutes: int = Field(default=15, ge=1, le=24 * 60)
+    # Als gezet: ritme in seconden (overschrijft interval_minutes). Min 5s — korter is op een
+    # breed universe niet haalbaar binnen de API-rate-limits.
+    interval_seconds: int | None = Field(default=None, ge=5, le=24 * 60 * 60)
 
 
 class UniverseConfig(BaseModel):

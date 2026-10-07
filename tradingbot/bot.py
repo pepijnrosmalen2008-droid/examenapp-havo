@@ -112,8 +112,8 @@ def main() -> int:
     signal.signal(signal.SIGINT, _stop)
     signal.signal(signal.SIGTERM, _stop)
 
-    interval = cfg.schedule.interval_minutes * 60
-    HEARTBEAT = 60  # elke minuut equity verversen + naar de site sturen (zonder te handelen)
+    interval = cfg.schedule.interval_seconds or (cfg.schedule.interval_minutes * 60)
+    HEARTBEAT = min(60, interval)  # equity/portal verversen; nooit trager dan het handelsritme
     notifier = engine.notify
     portal = build_portal()
     if isinstance(notifier, TelegramNotifier):

@@ -90,7 +90,7 @@ def test_take_profit_closes_position(db, market):
     assert sells[0]["pair"] == "ETH-EUR"
 
 
-def test_daily_kill_switch_liquidates_and_pauses(db, market):
+def test_daily_loss_derisks_losers_keeps_winners_no_pause(db, market):
     cfg = make_config(risk={"max_position_pct": 50, "stop_loss_pct": 30, "take_profit_pct": 50,
                             "max_daily_loss_pct": 3, "max_drawdown_pct": 40},
                       strategy={"name": "dca", "params": {"amount_eur": 100, "every_hours": 1}})
@@ -98,21 +98,20 @@ def test_daily_kill_switch_liquidates_and_pauses(db, market):
     engine.cycle(NOW)
     assert len(db.open_positions()) == 2  # €100 BTC + €100 ETH
 
-    # markt -10% → verlies op €200 exposure ≈ -€20 op €500 = -4% dag → kill switch
-    market.prices = {"BTC-EUR": 45_000.0, "ETH-EUR": 2_250.0}
+    # BTC -20% (verliezer), ETH +4% (winnaar) → dagverlies breekt de drempel
+    market.prices = {"BTC-EUR": 40_000.0, "ETH-EUR": 2_600.0}
     engine.cycle(NOW + timedelta(hours=2))
 
-    assert len(db.open_positions()) == 0          # alles geliquideerd
-    assert engine.risk.is_paused(NOW + timedelta(hours=3))
-    assert not engine.risk.is_halted()
+    pairs = {p.pair for p in db.open_positions()}
+    assert "BTC-EUR" not in pairs                 # alleen de verliezer is gekapt
+    assert "ETH-EUR" in pairs                      # de winnaar wordt behouden
+    assert not engine.risk.is_halted()             # geen permanente stop
+    assert db.get_meta("derisked_date")            # de-risk één keer deze dag gemarkeerd
 
-    # tijdens de pauze geen nieuwe trades
-    n_orders = len(db.recent_orders(100))
-    engine.cycle(NOW + timedelta(hours=4))
-    assert len(db.recent_orders(100)) == n_orders
-
-    # na 24 uur weer wel
-    assert not engine.risk.is_paused(NOW + timedelta(hours=27))
+    # geen 24u-pauze: de bot blijft gewoon handelen (koopt BTC weer bij als de trend keert)
+    market.prices = {"BTC-EUR": 50_000.0, "ETH-EUR": 2_600.0}
+    engine.cycle(NOW + timedelta(hours=3))
+    assert any(o["side"] == "BUY" for o in db.recent_orders(100))
 
 
 def test_drawdown_kill_switch_halts_permanently(db, market):

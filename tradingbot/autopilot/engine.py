@@ -265,21 +265,24 @@ class TradingEngine:
             self._record_decision({}, cash, equity, now, strategy_ran=False, prices=prices)
             return
 
-        if not self.risk.is_paused(now):
-            breached, loss = self.risk.daily_loss_breached(equity)
-            if breached:
-                log.error("MAX DAGVERLIES bereikt: %.2f%% — posities sluiten, 24 uur pauze", loss)
-                self._liquidate_all(positions, prices, reason=f"dagverlies {loss:.2f}%")
-                self.risk.trigger_daily_pause(f"dagverlies {loss:.2f}% ≥ "
-                                              f"{self.cfg.risk.max_daily_loss_pct}%", now)
-                self.notify.send(f"🟠 Dag-kill-switch: verlies vandaag {loss:.2f}%. Alle posities "
-                                 f"gesloten; bot pauzeert 24 uur.")
-                self._record_decision({}, cash, equity, now, strategy_ran=False, prices=prices)
-                return
-        else:
-            log.info("cycle: dag-pauze actief, geen handel")
-            self._record_decision({}, cash, equity, now, strategy_ran=False, prices=prices)
-            return
+        # ── dag-verlies: GEEN alles-verkopen + pauze meer. In plaats daarvan één keer per
+        #    dag "de-risken": alleen de VERLIES-posities afstoten (bloeders kappen), de rest
+        #    houden, en gewoon blijven handelen/zoeken naar betere kansen. Alleen de harde
+        #    drawdown-kill (hierboven) verkoopt ooit álles. ─────────────────────────────────
+        breached, loss = self.risk.daily_loss_breached(equity)
+        today = now.astimezone(AMS).date().isoformat()
+        if breached and self.db.get_meta("derisked_date") != today:
+            losers = [p for p in positions if prices.get(p.pair) and p.pnl_pct(prices[p.pair]) < 0]
+            log.warning("Dagverlies %.2f%% — de-risk: %d verlies-positie(s) afstoten, winnaars "
+                        "houden, bot blijft zoeken (geen pauze).", loss, len(losers))
+            for pos in losers:
+                self._route_signal(Signal(pair=pos.pair, side=Side.SELL, amount_asset=pos.amount,
+                                          reason=f"de-risk dagverlies {loss:.2f}%: verlies-positie gesloten",
+                                          strategy="risk"), prices)
+            self.db.set_meta("derisked_date", today)
+            self.notify.send(f"🟠 Dagverlies {loss:.2f}%: {len(losers)} verlies-positie(s) gesloten, "
+                             f"winnaars behouden. Bot blijft actief zoeken.")
+            positions = self.db.open_positions()
 
         # ── per-positie SL/TP exits (gaan ook bij wijde spread altijd door:
         #    kapitaal beschermen weegt zwaarder dan fill-kwaliteit) ─────
@@ -654,6 +657,7 @@ class TradingEngine:
         if self.db.get_meta("day_date") != today:
             self.db.set_meta("day_date", today)
             self.db.set_meta("day_start_equity", f"{equity:.6f}")
+            self.db.del_meta("derisked_date")   # nieuwe dag → de-risk mag vandaag weer één keer
             log.info("nieuwe dag %s: dagverlies-anker gezet op €%.2f", today, equity)
 
     def _update_peaks(self, positions: list[Position], prices: dict[str, float]) -> None:
