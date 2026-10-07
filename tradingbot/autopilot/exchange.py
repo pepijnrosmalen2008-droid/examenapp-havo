@@ -27,11 +27,14 @@ INTERVAL_MS = {"1m": 60_000, "5m": 300_000, "15m": 900_000, "1h": 3_600_000, "4h
 
 
 def _new_ccxt(api_key: str = "", api_secret: str = "") -> ccxt.bitvavo:
+    # Bitvavo eist sinds een API-update een operatorId bij elke order (identificeert de
+    # 'operator'/trader; een vast geheel getal volstaat). Overschrijfbaar via BITVAVO_OPERATOR_ID.
+    operator_id = int(os.environ.get("BITVAVO_OPERATOR_ID", "1"))
     return ccxt.bitvavo({
         "apiKey": api_key,
         "secret": api_secret,
         "enableRateLimit": True,   # ccxt respecteert Bitvavo's rate limits automatisch
-        "options": {"adjustForTimeDifference": True},
+        "options": {"adjustForTimeDifference": True, "operatorId": operator_id},
     })
 
 

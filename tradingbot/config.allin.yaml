@@ -56,7 +56,6 @@ research:
     - https://cointelegraph.com/rss
     - https://decrypt.co/feed
     - https://www.coindesk.com/arc/outboundfeeds/rss/
-    - https://cryptoslate.com/feed/
     - https://www.newsbtc.com/feed/
     - https://cryptopotato.com/feed/
     - https://ambcrypto.com/feed/
@@ -64,8 +63,6 @@ research:
     - https://bitcoinist.com/feed/
     - https://u.today/rss
     - https://bitcoinmagazine.com/feed
-    - https://cointelegraph.com/rss/category/regulation   # regelgeving/politiek crypto-nieuws
-    - https://decrypt.co/feed/section/policy               # beleid & politiek
   disclosure_sources: []                 # gratis keyless politici-TRADE-datasets zijn dood (403);
                                          # met een API-sleutel (Quiver/Unusual Whales) later te wiren
   onchain_sources: []                    # vul je eigen whale/flow-JSON-bron in (optioneel ONCHAIN_API_KEY in .env)
