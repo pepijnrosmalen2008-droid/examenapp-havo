@@ -306,7 +306,7 @@ class Database:
     def journal_order_intent(self, pair: str, side: Side, *, amount_eur: float | None,
                              amount_asset: float | None, reason: str, strategy: str) -> str:
         """Stap 1 van elke order: intent vastleggen VOOR plaatsing. Geeft client_order_id terug."""
-        coid = uuid.uuid4().hex
+        coid = str(uuid.uuid4())   # volledige UUID mét streepjes — Bitvavo eist dat als clientOrderId
         now = utcnow()
         self.conn.execute(
             "INSERT INTO orders(client_order_id, pair, side, amount_eur, amount_asset, status, reason, strategy, created_at, updated_at) "
