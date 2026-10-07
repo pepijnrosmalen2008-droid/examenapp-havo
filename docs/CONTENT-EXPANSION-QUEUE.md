@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **11 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B3). Werk dit getal bij bij elke afronding.
+> Voortgang: **12 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B4). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -42,7 +42,7 @@
   - [x] B1 · nl.B.1 Informatie verzamelen en verwerken · 26 vragen (R1-R3), 12 begrippen, 3 schema's (bronbeoordeling, vier stappen, citaat/parafrase/plagiaat), geen clip
   - [x] B2 · nl.B.2 Doel, publiek en gespreksvorm bepalen · 25 vragen (R1-R3), 12 begrippen, 3 schema's (drie gespreksvormen, informeren vs overtuigen, afstemmen), geen clip
   - [x] B3 · nl.B.3 Een voordracht opbouwen en presenteren · 26 vragen (R1-R3), 12 begrippen, 4 schema's (opbouw, overgangen, houding, stem), geen clip
-  - [ ] B4 · nl.B.4 Deelnemen aan een discussie of debat
+  - [x] B4 · nl.B.4 Deelnemen aan een discussie of debat · 26 vragen (R1-R3), 12 begrippen, 3 schema's (argument in lagen, weerleggen, slotpleidooi), geen clip
   - [ ] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers
 - [ ] **HAVO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2)
   - [ ] C1 · nl.C.1 Informatie verzamelen, verwerken en verantwoorden

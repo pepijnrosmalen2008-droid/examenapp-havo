@@ -1,0 +1,656 @@
+{
+ "id": "B4",
+ "lo": "nl.B.4",
+ "gs": 2,
+ "naam": "Deelnemen aan een discussie of debat",
+ "beschrijving": "Je verdedigt een standpunt met sterke argumenten, weerlegt de argumenten van een ander zonder de persoon aan te vallen en rondt af met een slotpleidooi.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Voorbereiden: standpunt en argumenten",
+  "Beurten en regels",
+  "Sterke argumenten",
+  "Weerleggen",
+  "Slotpleidooi",
+  "Valkuilen in discussie en debat"
+ ],
+ "sam": "In een discussie of debat verdedig je een standpunt met argumenten, voorbeelden en redenering. Je luistert, wacht je beurt af en weerlegt het argument van de ander in plaats van de persoon. Een gespreksleider verdeelt de beurten. In het slotpleidooi vat je je sterkste argumenten samen zonder nieuwe argumenten te noemen.",
+ "begrippen": [
+  {
+   "t": "Standpunt",
+   "d": "De uitspraak die je in een discussie of debat verdedigt."
+  },
+  {
+   "t": "Debatargument",
+   "d": "Een argument met een standpunt, een redenering en bewijs."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een argument dat tegen het standpunt van de ander ingaat."
+  },
+  {
+   "t": "Weerlegging",
+   "d": "Aantonen dat een argument niet klopt of niet genoeg steunt."
+  },
+  {
+   "t": "Slotpleidooi",
+   "d": "De afsluiting waarin je je sterkste argumenten samenvat."
+  },
+  {
+   "t": "Gespreksleider",
+   "d": "Degene die beurten verdeelt en de regels bewaakt."
+  },
+  {
+   "t": "Beurt",
+   "d": "Het moment waarop jij het woord hebt."
+  },
+  {
+   "t": "Reageren",
+   "d": "Inhoudelijk antwoorden op wat de ander zei."
+  },
+  {
+   "t": "Persoonlijke aanval",
+   "d": "De persoon aanvallen in plaats van zijn argument."
+  },
+  {
+   "t": "Onderbreken",
+   "d": "Iemand in de rede vallen terwijl hij nog aan het woord is."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een concreet geval dat een argument ondersteunt."
+  },
+  {
+   "t": "Onderbouwen",
+   "d": "Een reden en bewijs geven voor wat je zegt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat bereid je voor een debat voor?",
+   "o": [
+    "alleen je eerste zin, de rest zie je wel",
+    "een standpunt met argumenten",
+    "een tekst die je helemaal wilt voorlezen",
+    "de zwakke punten van je eigen team"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Voor een debat bereid je standpunt, argumenten en voorbeelden voor.",
+   "uo": [
+    "Koos je \"alleen je eerste zin, de rest zie je wel\"? Dan denk je dat improviseren genoeg is. Zonder voorbereiding raak je de draad kwijt als de tegenpartij reageert. Bereid standpunt, argumenten en voorbeelden voor.",
+    "Klopt: een debat vraagt een helder standpunt met argumenten en voorbeelden waarmee je kunt overtuigen.",
+    "Koos je \"een tekst die je helemaal wilt voorlezen\"? Dan verwar je voorbereiden met uitschrijven. Voorlezen sluit reageren op de tegenpartij uit. Bereid kernpunten voor waarmee je vrij kunt spreken.",
+    "Koos je \"de zwakke punten van je eigen team\"? Dan denk je dat je vooral je eigen fouten moet kennen. Je moet ook sterke argumenten hebben om te winnen. Zorg voor een sterk eigen standpunt en argumenten."
+   ],
+   "uh": "Standpunt + argumenten."
+  },
+  {
+   "v": "Waarom bereid je ook de argumenten van de tegenpartij voor?",
+   "o": [
+    "zodat je ze kunt overnemen als eigen argumenten",
+    "zodat je minder hoeft te zeggen in het debat",
+    "zodat je ze kunt negeren als ze moeilijk zijn",
+    "zodat je er in het debat op kunt reageren"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Wie tegenargumenten kent, kan ze weerleggen.",
+   "uo": [
+    "Koos je \"zodat je ze kunt overnemen als eigen argumenten\"? Dan denk je dat je ze zomaar mag gebruiken. Het doel is ze te weerleggen, niet om ze over te nemen. Ken ze om erop te reageren.",
+    "Koos je \"zodat je minder hoeft te zeggen in het debat\"? Dan denk je dat voorbereiden je spreektijd vermindert. Je gebruikt je tijd juist beter. Voorbereid reageren maakt je sterker.",
+    "Koos je \"zodat je ze kunt negeren als ze moeilijk zijn\"? Dan kies je voor vermijden. Het publiek merkt dat je geen antwoord hebt. Bereid weerleggingen voor in plaats van negeren.",
+    "Klopt: wie de tegenargumenten kent, kan ze weerleggen en wordt niet verrast."
+   ],
+   "uh": "Ken de andere kant."
+  },
+  {
+   "v": "Wat doet een gespreksleider in een discussie of debat?",
+   "o": [
+    "de beurten verdelen en regels bewaken",
+    "zelf het beste standpunt kiezen",
+    "de argumenten van een partij verdedigen",
+    "de tegenpartij onderbreken en corrigeren"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "De gespreksleider verdeelt de beurten en bewaakt de regels.",
+   "uo": [
+    "Klopt: de gespreksleider zorgt dat iedereen aan bod komt en dat de regels worden nageleefd.",
+    "Koos je \"zelf het beste standpunt kiezen\"? Dan denk je dat de leider de winnaar bepaalt. Hij is onpartijdig en leidt alleen het gesprek. De leider houdt orde, hij kiest geen standpunt.",
+    "Koos je \"de argumenten van een partij verdedigen\"? Dan verwar je de leider met een deelnemer. De leider heeft geen partij. De leider is neutraal.",
+    "Koos je \"de tegenpartij onderbreken en corrigeren\"? Dan denk je dat leiden betekent ingrijpen in inhoud. Hij bewaakt alleen de spelregels. Hij verdeelt beurten."
+   ],
+   "uh": "Orde bewaren."
+  },
+  {
+   "v": "Je tegenstander praat nog. Wat doe je?",
+   "o": [
+    "er direct doorheen praten",
+    "je tegenstander uitlachen",
+    "wachten op je beurt en noteren",
+    "stoppen met luisteren en je tekst herlezen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Wacht je beurt af en maak aantekeningen.",
+   "uo": [
+    "Koos je \"er direct doorheen praten\"? Dan denk je dat dominant zijn beter is. Onderbreken ontneemt de ander zijn beurt en gaat tegen de regels in. Luister en wacht je beurt af.",
+    "Koos je \"je tegenstander uitlachen\"? Dan verwar je overtuigen met afbreken. Spot is een persoonlijke aanval en geen argument. Reageer inhoudelijk als je aan de beurt bent.",
+    "Klopt: je laat de ander uitspreken en noteert wat je wilt weerleggen.",
+    "Koos je \"stoppen met luisteren en je tekst herlezen\"? Dan denk je dat je tekst belangrijker is. Je moet juist luisteren om te kunnen reageren. Luister actief en noteer."
+   ],
+   "uh": "Eerst luisteren."
+  },
+  {
+   "v": "Waaruit bestaat een sterk debatargument?",
+   "o": [
+    "een stellige toon en een lange zin",
+    "alleen een mening",
+    "standpunt, redenering en bewijs",
+    "een voorbeeld zonder uitleg"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Een sterk argument heeft een standpunt, redenering en bewijs.",
+   "uo": [
+    "Koos je \"een stellige toon en een lange zin\"? Dan denk je dat stelligheid argumenten vervangt. Een toon bewijst niets. Een argument heeft redenering en bewijs.",
+    "Koos je \"alleen een mening\"? Dan denk je dat een mening een argument is. Zonder reden is het een bewering. Voeg een reden en bewijs toe.",
+    "Klopt: een sterk argument zegt wat je vindt, waarom, en waaruit dat blijkt.",
+    "Koos je \"een voorbeeld zonder uitleg\"? Dan denk je dat een voorbeeld alles zegt. Zonder uitleg blijft onduidelijk wat het bewijst. Leg uit waarom het voorbeeld je punt steunt."
+   ],
+   "uh": "Wat, waarom, bewijs."
+  },
+  {
+   "v": "Waarom voeg je een voorbeeld toe aan een argument?",
+   "o": [
+    "het maakt het argument concreet",
+    "het maakt je spreektijd langer en je betoog dikker",
+    "het vervangt de redenering",
+    "het is verplicht in elk debat"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Een voorbeeld maakt een argument concreet.",
+   "uo": [
+    "Klopt: een voorbeeld laat zien dat je argument in het echt klopt.",
+    "Koos je \"het maakt je spreektijd langer en je betoog dikker\"? Dan denk je dat een voorbeeld vult. Het doel is overtuigen, niet tijd vullen. Gebruik voorbeelden voor kracht.",
+    "Koos je \"het vervangt de redenering\"? Dan denk je dat een voorbeeld genoeg is. Het ondersteunt de redenering, vervangt haar niet. Redenering plus voorbeeld.",
+    "Koos je \"het is verplicht in elk debat\"? Dan denk je dat er een vaste regel is. Het is een manier om sterker te zijn. Gebruik een voorbeeld als het je punt steunt."
+   ],
+   "uh": "Voorbeeld = concreet maken."
+  },
+  {
+   "v": "Wat is weerleggen?",
+   "o": [
+    "hetzelfde argument nog eens luider herhalen",
+    "de spreker beledigen",
+    "het argument stilzwijgend overnemen",
+    "laten zien dat een argument niet klopt"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Weerleggen is laten zien dat een argument niet klopt of niet genoeg steunt.",
+   "uo": [
+    "Koos je \"hetzelfde argument nog eens luider herhalen\"? Dan denk je dat herhalen weerleggen is. Een tegenstander neemt dat niet over. Weerleggen betekent het argument ontkrachten.",
+    "Koos je \"de spreker beledigen\"? Dan verwar je argumenteren met aanvallen. Een belediging is een persoonlijke aanval. Weerleg het argument, niet de persoon.",
+    "Koos je \"het argument stilzwijgend overnemen\"? Dan denk je dat instemmen een weerlegging is. Dan geef je de ander gelijk. Weerleggen laat zien dat het niet klopt.",
+    "Klopt: bij weerleggen pak je het argument van de ander aan met een tegenargument of tegenvoorbeeld."
+   ],
+   "uh": "Argument ontkrachten."
+  },
+  {
+   "v": "Waarop richt een goede weerlegging zich?",
+   "o": [
+    "op het uiterlijk van de spreker",
+    "op het argument van de tegenpartij",
+    "op het standpunt van je eigen team",
+    "op de manier waarop de gespreksleider praat"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Weerleg het argument van de tegenpartij, niet de persoon.",
+   "uo": [
+    "Koos je \"op het uiterlijk van de spreker\"? Dan denk je dat uiterlijk iets met argumenten te maken heeft. Het is een persoonlijke aanval. Richt je op de inhoud.",
+    "Klopt: je reageert inhoudelijk op wat is gezegd.",
+    "Koos je \"op het standpunt van je eigen team\"? Dan verwar je weerleggen met jezelf verdedigen. Weerleggen is reageren op de ander. Reageer op de tegenpartij.",
+    "Koos je \"op de manier waarop de gespreksleider praat\"? Dan denk je dat de leider het doelwit is. Zijn rol is neutraal. Weerleg de tegenpartij."
+   ],
+   "uh": "Argument, niet persoon."
+  },
+  {
+   "v": "Wat doe je in een slotpleidooi?",
+   "o": [
+    "een volledig nieuw argument introduceren om te verrassen",
+    "je tegenstander bedanken en stoppen",
+    "je hele betoog opnieuw voorlezen",
+    "sterkste argumenten samenvatten en afsluiten"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "In het slotpleidooi vat je de sterkste argumenten samen en sluit je af.",
+   "uo": [
+    "Koos je \"een volledig nieuw argument introduceren om te...\"? Dan denk je dat het slot ruimte is voor iets nieuws. De tegenpartij kan er niet meer op reageren. Vat samen wat je al hebt gezegd.",
+    "Koos je \"je tegenstander bedanken en stoppen\"? Dan laat je het slot leeg. Je mist de kans om te overtuigen. Gebruik het slot om je sterkste punten te herhalen.",
+    "Koos je \"je hele betoog opnieuw voorlezen\"? Dan denk je dat herhalen alles is. Een slot is kort en pakt de kern. Vat samen in korte vorm.",
+    "Klopt: in het slotpleidooi vat je samen en overtuig je een laatste keer."
+   ],
+   "uh": "Samenvatten en overtuigen."
+  },
+  {
+   "v": "Waarom komt er in een slotpleidooi geen nieuw argument?",
+   "o": [
+    "omdat je dan te veel zegt",
+    "de tegenpartij kan niet meer reageren",
+    "omdat de gespreksleider het niet leuk vindt",
+    "omdat een slot altijd kort is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Een nieuw argument in het slotpleidooi is oneerlijk.",
+   "uo": [
+    "Koos je \"omdat je dan te veel zegt\"? Dan denk je dat de hoeveelheid het probleem is. Het gaat om eerlijkheid in de discussie. Nieuwe argumenten horen eerder.",
+    "Klopt: een nieuw argument aan het eind is oneerlijk, want er is geen kans meer om te weerleggen.",
+    "Koos je \"omdat de gespreksleider het niet leuk vindt\"? Dan denk je dat het een persoonlijke voorkeur van de leider is. Het is een afspraak in het debat. De reden is eerlijkheid naar de tegenpartij.",
+    "Koos je \"omdat een slot altijd kort is\"? Dan denk je dat de lengte de reden is. Het gaat om de kans om te reageren. Nieuw argument = geen weerlegging mogelijk."
+   ],
+   "uh": "Geen nieuws in het slot."
+  },
+  {
+   "v": "Wat is een persoonlijke aanval in een debat?",
+   "o": [
+    "een scherp tegenargument geven met bewijs",
+    "je eigen standpunt herhalen",
+    "de persoon aanvallen, niet het argument",
+    "om een voorbeeld vragen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Een persoonlijke aanval richt zich op de spreker en niet op zijn argument.",
+   "uo": [
+    "Koos je \"een scherp tegenargument geven met bewijs\"? Dan verwar je een stevig argument met een aanval. Een tegenargument is juist gewenst. Een persoonlijke aanval gaat over de persoon.",
+    "Koos je \"je eigen standpunt herhalen\"? Dan denk je dat herhalen een aanval is. Dat is hooguit zwak. Een aanval richt zich op de persoon.",
+    "Klopt: je reageert op de persoon in plaats van op wat hij zegt. Dat is een drogreden.",
+    "Koos je \"om een voorbeeld vragen\"? Dan denk je dat een vraag stellen aanvallen is. Dat is gewoon doorvragen. Aanvallen van de persoon is de fout."
+   ],
+   "uh": "Persoon of argument?"
+  },
+  {
+   "v": "Waarom is onderbreken storend in een debat?",
+   "o": [
+    "het breekt de regels van de beurt",
+    "omdat je dan te veel informatie krijgt",
+    "omdat de gespreksleider dan niets meer te doen heeft",
+    "omdat het publiek de ander dan leuker vindt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Onderbreken breekt de regels en de beurtverdeling.",
+   "uo": [
+    "Klopt: onderbreken is ongepast en verstoort de afgesproken volgorde.",
+    "Koos je \"omdat je dan te veel informatie krijgt\"? Dan denk je dat het om hoeveelheid gaat. Het gaat om de afspraken. Onderbreken schendt de beurtverdeling.",
+    "Koos je \"omdat de gespreksleider dan niets meer te doen heeft\"? Dan denk je dat de leider overbodig wordt. Hij moet juist ingrijpen. Onderbreken verstoort de orde.",
+    "Koos je \"omdat het publiek de ander dan leuker vindt\"? Dan denk je dat het om populariteit gaat. Het gaat om eerlijke beurten. Wacht je beurt af."
+   ],
+   "uh": "Beurt afwachten."
+  },
+  {
+   "v": "Welk argument past bij dit standpunt?",
+   "o": [
+    "tieners hebben meer slaap nodig",
+    "de lunch op school is te duur",
+    "sommige leraren fietsen naar school",
+    "de gymzaal is net opgeknapt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Een argument ondersteunt het standpunt met een reden.",
+   "uo": [
+    "Klopt: dit argument ondersteunt het standpunt met een reden.",
+    "Koos je \"de lunch op school is te duur\"? Dan denk je dat elk schoolonderwerp past. Dit argument heeft niets met de begintijd te maken. Een argument moet bij het standpunt passen.",
+    "Koos je \"sommige leraren fietsen naar school\"? Dan denk je dat een feit uit de omgeving een argument is. Het zegt niets over later beginnen. Zoek een reden die het standpunt steunt.",
+    "Koos je \"de gymzaal is net opgeknapt\"? Dan denk je dat nieuwtjes uit de school argumenten zijn. Het is niet relevant. Kies een argument dat ondersteunt."
+   ],
+   "uh": "Past het bij het standpunt?",
+   "ctx": "Team A verdedigt het standpunt: scholen moeten later beginnen."
+  },
+  {
+   "v": "Wat ontbreekt er in zijn argumentatie?",
+   "o": [
+    "een langere en stelligere zin",
+    "een boze toon",
+    "een redenering en bewijs",
+    "een andere spreker"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Een standpunt zonder redenering en bewijs overtuigt niet.",
+   "uo": [
+    "Koos je \"een langere en stelligere zin\"? Dan denk je dat lengte kracht is. Een lange zin zonder reden blijft zwak. Voeg een redenering toe.",
+    "Koos je \"een boze toon\"? Dan denk je dat emotie overtuigt. Een toon vervangt geen argument. Geef een reden.",
+    "Klopt: \"Het is gewoon zo\" is geen reden. Een argument heeft een onderbouwing nodig.",
+    "Koos je \"een andere spreker\"? Dan denk je dat de spreker het probleem is. Het probleem is het ontbreken van onderbouwing. Onderbouw je standpunt."
+   ],
+   "uh": "\"Gewoon zo\" is geen argument.",
+   "ctx": "Een debater zegt: \"Het huiswerk moet worden afgeschaft. Het is gewoon zo.\""
+  },
+  {
+   "v": "Welke formulering is het sterkste argument voor later beginnen?",
+   "o": [
+    "later beginnen is gewoon beter, dat weet iedereen en daar hoef ik niets meer over te zeggen",
+    "tieners slapen te weinig, dus een latere start geeft meer slaap",
+    "iedereen vindt dat later beginnen moet",
+    "wie vroeg begint, is dom"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Een sterk argument heeft een reden en een gevolg, zonder te overdrijven.",
+   "uo": [
+    "Koos je \"later beginnen is gewoon beter, dat weet iedereen...\"? Dan geef je een bewering zonder onderbouwing. Dat overtuigt niet. Voeg een reden toe.",
+    "Klopt: dit heeft een reden en een verwacht effect, zonder te overdrijven.",
+    "Koos je \"iedereen vindt dat later beginnen moet\"? Dan verwijs je naar de meerderheid zonder reden. Een menigte is geen bewijs. Geef een inhoudelijke reden.",
+    "Koos je \"wie vroeg begint, is dom\"? Dan val je de persoon aan en geef je geen argument. Dat is een persoonlijke aanval. Blijf bij de inhoud."
+   ],
+   "uh": "Reden + effect."
+  },
+  {
+   "v": "Welke reactie is een goede weerlegging?",
+   "o": [
+    "\"Jij hebt geen verstand van geld.\"",
+    "\"Dat vind ik niet.\"",
+    "\"Ik herhaal gewoon dat fruit gezond is en dat is genoeg.\"",
+    "\"Gezondere leerlingen besparen later kosten.\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Een weerlegging pakt het argument van de ander aan met een tegenargument.",
+   "uo": [
+    "Koos je \"Jij hebt geen verstand van geld.\"? Dan val je de persoon aan. Dat is geen inhoudelijke reactie. Reageer op het argument.",
+    "Koos je \"Dat vind ik niet.\"? Dan geef je alleen een tegenmening zonder reden. Dat weerlegt niets. Geef een reden.",
+    "Koos je \"Ik herhaal gewoon dat fruit gezond is en dat is...\"? Dan herhaal je je eigen argument. Je gaat niet in op de kosten. Reageer op wat gezegd is.",
+    "Klopt: je pakt het argument aan met een tegenargument over kosten."
+   ],
+   "uh": "Argument tegen argument.",
+   "ctx": "Een tegenstander zegt: \"Gratis fruit op school is te duur.\""
+  },
+  {
+   "v": "Hoe weerleg je dit het best?",
+   "o": [
+    "zeg dat hij dit in een debat helemaal niet mag zeggen",
+    "wijs erop dat hij uit twee gevallen een regel trekt",
+    "noem hem een slechte leerling",
+    "zeg dat gamen leuk is"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Wijs bij een overhaaste generalisatie op het te kleine aantal voorbeelden.",
+   "uo": [
+    "Koos je \"zeg dat hij dit in een debat helemaal niet mag...\"? Dan verbied je een uitspraak in plaats van haar te weerleggen. Dat overtuigt niet. Benoem wat er fout is in de redenering.",
+    "Klopt: je benoemt de overhaaste generalisatie en ontkracht zo het argument.",
+    "Koos je \"noem hem een slechte leerling\"? Dan val je de persoon aan. Dat is geen weerlegging. Weerleg de redenering.",
+    "Koos je \"zeg dat gamen leuk is\"? Dan geef je een tegenmening zonder te reageren op de redenering. Dat weerlegt het argument niet. Wijs op de fout in de redenering."
+   ],
+   "uh": "Twee gevallen is geen regel.",
+   "ctx": "Een tegenstander zegt: \"Twee jongeren in mijn klas gamen veel en halen slechte cijfers. Dus gamen is slecht voor alle jongeren.\""
+  },
+  {
+   "v": "Hoe reageer je het best?",
+   "o": [
+    "je zegt dat hij je standpunt verdraait",
+    "je geeft hem gelijk en zegt niets meer",
+    "je gaat even stil zitten",
+    "je zegt dat hij dom is"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bij een vertekend standpunt corrigeer je en leg je uit wat je echt vindt.",
+   "uo": [
+    "Klopt: je corrigeert de vertekening en verdedigt je eigen standpunt.",
+    "Koos je \"je geeft hem gelijk en zegt niets meer\"? Dan neem je zijn vertekening over. Dan klopt je standpunt niet meer. Corrigeer zijn weergave.",
+    "Koos je \"je gaat even stil zitten\"? Dan laat je de vertekening staan. Het publiek denkt dan dat hij gelijk heeft. Reageer meteen en uitleg je standpunt.",
+    "Koos je \"je zegt dat hij dom is\"? Dan val je de persoon aan. Dat lost de vertekening niet op. Blijf bij de inhoud."
+   ],
+   "uh": "Verdraaid? Corrigeren.",
+   "ctx": "Een tegenstander zegt: \"Jij wilt minder huiswerk, dus je wilt dat niemand nog iets leert.\""
+  },
+  {
+   "v": "Welk onderdeel van het debat is dit?",
+   "o": [
+    "de weerlegging",
+    "het openingsstatement",
+    "een persoonlijke aanval",
+    "het slotpleidooi"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Samenvatten met een afsluitende oproep is een slotpleidooi.",
+   "uo": [
+    "Koos je \"de weerlegging\"? Dan denk je dat er een argument van de ander wordt aangepakt. Hier wordt samengevat en afgesloten. Een weerlegging reageert op de tegenpartij.",
+    "Koos je \"het openingsstatement\"? Dan verwar je vooraf aankondigen met samenvatten. \"Samengevat\" wijst op een slot. Het opening kondigt aan, het slot vat samen.",
+    "Koos je \"een persoonlijke aanval\"? Dan denk je dat de oproep een aanval is. Er wordt niemand aangevallen. Het is een samenvatting met oproep.",
+    "Klopt: een samenvatting van de sterkste argumenten met een afsluitende oproep is een slotpleidooi."
+   ],
+   "uh": "Slot = samenvatten.",
+   "ctx": "\"Samengevat: later beginnen betekent meer slaap, betere cijfers en minder stress. Daarom vraag ik u: stem voor.\""
+  },
+  {
+   "v": "Wat is hier mis?",
+   "o": [
+    "het argument is te kort",
+    "het argument heeft geen onderwerp",
+    "de tegenpartij kan niet meer reageren",
+    "het slotpleidooi mag nooit iets noemen"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Een nieuw argument in het slot is oneerlijk jegens de tegenpartij.",
+   "uo": [
+    "Koos je \"het argument is te kort\"? Dan denk je dat de lengte het probleem is. Het probleem is het tijdstip. Nieuwe argumenten horen eerder.",
+    "Koos je \"het argument heeft geen onderwerp\"? Dan denk je dat het niet past. Het gaat over kosten, dat past bij het debat. Het probleem is eerlijkheid.",
+    "Klopt: een nieuw argument in het slot is oneerlijk, omdat het niet kan worden weerlegd.",
+    "Koos je \"het slotpleidooi mag nooit iets noemen\"? Dan denk je dat een slot niets mag zeggen. Het vat samen. Het slot noemt geen nieuwe argumenten."
+   ],
+   "uh": "Geen nieuws in het slot.",
+   "ctx": "Een debater brengt in zijn slotpleidooi ineens een nieuw argument over de kosten, waar de tegenpartij niet meer op kan reageren."
+  },
+  {
+   "v": "Wat is hier mis?",
+   "o": [
+    "hij spreekt te zacht",
+    "hij gebruikt te veel feiten",
+    "hij valt de persoon aan",
+    "hij is te kort"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Een persoonlijke aanval reageert niet op het argument.",
+   "uo": [
+    "Koos je \"hij spreekt te zacht\"? Dan denk je dat het volume het probleem is. Het gaat om wat hij zegt. Het probleem is dat hij de persoon aanvalt.",
+    "Koos je \"hij gebruikt te veel feiten\"? Dan denk je dat hij feiten noemt. Er worden geen feiten genoemd. Het probleem is de aanval.",
+    "Klopt: \"jij weet er niets van\" is een persoonlijke aanval en geeft geen inhoudelijke reactie.",
+    "Koos je \"hij is te kort\"? Dan denk je dat de lengte het probleem is. Het gaat om de inhoud van de reactie. Reageer op het argument, niet op de persoon."
+   ],
+   "uh": "Persoon aanvallen is geen weerlegging.",
+   "ctx": "Een spreker zegt: \"Je argument is flauwekul. Jij weet er niets van.\""
+  },
+  {
+   "v": "Waarom werkt dit niet in een debat?",
+   "o": [
+    "omdat voorlezen verboden is",
+    "omdat de tekst te lang is",
+    "omdat papier slecht leesbaar is",
+    "hij kan niet reageren"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "In een debat reageer je op de tegenpartij; voorlezen kan dat niet.",
+   "uo": [
+    "Koos je \"omdat voorlezen verboden is\"? Dan denk je dat voorlezen niet mag. Het probleem is dat je niet reageert. Een debat vraagt reageren.",
+    "Koos je \"omdat de tekst te lang is\"? Dan denk je dat de lengte het probleem is. Het gaat om reageren. Reageer op wat gezegd wordt.",
+    "Koos je \"omdat papier slecht leesbaar is\"? Dan denk je dat het om leesbaarheid gaat. Het gaat om interactie. Praat vrij en reageer.",
+    "Klopt: een debat vraagt dat je luistert en direct reageert. Voorlezen sluit dat uit."
+   ],
+   "uh": "Reageren, niet voorlezen.",
+   "ctx": "Een debater leest zijn tekst van papier voor en kijkt niet op wanneer de tegenpartij reageert."
+  },
+  {
+   "v": "Wat doet de gespreksleider hier?",
+   "o": [
+    "hij verdeelt de beurt",
+    "hij kiest een standpunt in het debat",
+    "hij wint het debat",
+    "hij valt Anna aan"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "De gespreksleider verdeelt de beurten en bewaakt de regels.",
+   "uo": [
+    "Klopt: hij zorgt dat iedereen om beurten aan het woord is.",
+    "Koos je \"hij kiest een standpunt in het debat\"? Dan denk je dat de leider partij kiest. Hij zegt alleen wie aan de beurt is. De leider is neutraal.",
+    "Koos je \"hij wint het debat\"? Dan denk je dat de leider een deelnemer is. Hij beslist niet over winst. Hij houdt de orde.",
+    "Koos je \"hij valt Anna aan\"? Dan denk je dat zijn opmerking een aanval is. Hij geeft haar de beurt. Een leider verdeelt beurten."
+   ],
+   "uh": "Orde bewaren.",
+   "ctx": "Twee leerlingen praten tegelijk. De gespreksleider zegt: \"Eén tegelijk, eerst Anna.\""
+  },
+  {
+   "v": "Wat doe je?",
+   "o": [
+    "je weigert mee te doen",
+    "je bereidt argumenten voor dat standpunt voor",
+    "je verdedigt het tegenovergestelde standpunt dat jij vindt",
+    "je zegt dat je het er niet mee eens bent"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "In een debat verdedig je soms een toegewezen standpunt met sterke argumenten.",
+   "uo": [
+    "Koos je \"je weigert mee te doen\"? Dan vermijd je de opdracht. Debatteren leert je argumenteren, ook voor standpunten die je niet deelt. Bereid argumenten voor.",
+    "Klopt: bij een debat verdedig je soms een toegewezen standpunt. Dat is een oefening in argumenteren.",
+    "Koos je \"je verdedigt het tegenovergestelde standpunt dat...\"? Dan laat je het toegewezen standpunt los. Dat is niet de opdracht. Verdedig wat is toegewezen.",
+    "Koos je \"je zegt dat je het er niet mee eens bent\"? Dan geef je je persoonlijke mening in plaats van argumenten. Dat helpt je team niet. Zoek argumenten voor het toegewezen standpunt."
+   ],
+   "uh": "Argumenteren als vaardigheid.",
+   "ctx": "Je krijgt in een debat een standpunt toegewezen dat je persoonlijk niet deelt."
+  },
+  {
+   "v": "Welke fout maakt hij?",
+   "o": [
+    "hij spreekt te kort",
+    "hij valt de persoon aan",
+    "hij gebruikt te veel voorbeelden",
+    "hij onderbouwt niets"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Zonder onderbouwing ontduik je de bewijslast.",
+   "uo": [
+    "Koos je \"hij spreekt te kort\"? Dan denk je dat de lengte de fout is. Het probleem is het ontbreken van onderbouwing. Onderbouw je standpunt.",
+    "Koos je \"hij valt de persoon aan\"? Dan denk je dat er iemand wordt aangevallen. Er wordt niemand genoemd. Het probleem is dat hij niets onderbouwt.",
+    "Koos je \"hij gebruikt te veel voorbeelden\"? Dan denk je dat hij voorbeelden noemt. Hij noemt niets. Er is geen onderbouwing.",
+    "Klopt: wie een standpunt inneemt, moet het onderbouwen. Dit is ontduiken van de bewijslast."
+   ],
+   "uh": "Beweren is niet bewijzen.",
+   "ctx": "Een debater zegt: \"Ik heb gewoon gelijk, daar hoef ik niets meer over te zeggen.\""
+  },
+  {
+   "v": "Welke zin is een goede toelichting bij dit argument?",
+   "o": [
+    "\"Leerlingen slapen dan langer.\"",
+    "\"Dat is nu eenmaal zo.\"",
+    "\"Iedereen weet dat.\"",
+    "\"Ik ben het er helemaal niet mee eens.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Een toelichting legt uit waarom een argument klopt.",
+   "uo": [
+    "Klopt: dit legt uit waarom het argument klopt.",
+    "Koos je \"Dat is nu eenmaal zo.\"? Dan geef je geen uitleg. Het blijft een bewering. Leg uit waarom.",
+    "Koos je \"Iedereen weet dat.\"? Dan verwijs je naar de menigte. Dat is geen toelichting. Geef een inhoudelijke reden.",
+    "Koos je \"Ik ben het er helemaal niet mee eens.\"? Dan spreek je het argument tegen in plaats van het toe te lichten. Het is een andere zet. Een toelichting steunt het argument."
+   ],
+   "uh": "Waarom klopt het?",
+   "ctx": "Argument: \"Later beginnen is goed voor leerlingen.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "In een debat zegt een tegenstander: \"Gratis fruit op school is te duur.\"",
+   "v": "Geef een goede weerlegging en leg uit waarom het een weerlegging is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: \"Gezondere leerlingen besparen later kosten, dus het is een investering\" (1 punt). Het is een weerlegging omdat het inhoudelijk ingaat op het argument over de kosten met een tegenargument (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een debater zegt: \"Je argument is flauwekul. Jij weet er niets van.\"",
+   "v": "Welke fout maakt hij en wat had hij moeten doen?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij valt de persoon aan in plaats van het argument (persoonlijke aanval) (1 punt). Hij had inhoudelijk moeten reageren op het argument met een tegenargument of tegenvoorbeeld (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een debater brengt in zijn slotpleidooi ineens een nieuw argument over kosten.",
+   "v": "Waarom is dat niet toegestaan en wat hoort wel in een slotpleidooi?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De tegenpartij kan er niet meer op reageren, dus het is oneerlijk (1 punt). In het slot vat je je sterkste argumenten samen en sluit je af (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tegenstander zegt: \"Jij wilt minder huiswerk, dus je wilt dat niemand nog iets leert.\"",
+   "v": "Welke drogreden gebruikt hij en hoe reageer je?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij vertekent je standpunt (1 punt). Je zegt dat hij je standpunt verdraait en legt uit wat je werkelijk vindt (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een debater zegt: \"Later beginnen is gewoon beter. Ik heb gelijk.\"",
+   "v": "Wat ontbreekt er in zijn argumentatie en hoe maak je haar sterker?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er ontbreken een redenering en bewijs; hij onderbouwt zijn standpunt niet (1 punt). Sterker: een reden geven (bijvoorbeeld meer slaap), een voorbeeld of bewijs toevoegen en uitleggen waarom dat het standpunt steunt (1 punt)."
+  }
+ ]
+}

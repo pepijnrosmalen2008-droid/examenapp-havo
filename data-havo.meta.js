@@ -269,6 +269,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B4",
+      "lo": "nl.B.4",
+      "gs": 2,
+      "naam": "Deelnemen aan een discussie of debat",
+      "beschrijving": "Je verdedigt een standpunt met sterke argumenten, weerlegt de argumenten van een ander zonder de persoon aan te vallen en rondt af met een slotpleidooi.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorbereiden: standpunt en argumenten",
+       "Beurten en regels",
+       "Sterke argumenten",
+       "Weerleggen",
+       "Slotpleidooi",
+       "Valkuilen in discussie en debat"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
