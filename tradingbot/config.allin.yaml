@@ -1,0 +1,75 @@
+# ═══════════════════════════════════════════════════════════════════════════
+#  ALL-IN BOT — één bot die alles kan: prijsstrategie + nieuws + politici +
+#  on-chain, met volledige risk-engine, execution-meting en gedachtegang.
+#  Eigen verse database (autopilot_allin.db) → geen gedoe met oude bots.
+#
+#  METEEN DRAAIEN (geen API-key nodig):   py bot.py --config config.allin.yaml
+#  Status bekijken:                        py status.py --db autopilot_allin.db
+#
+#  BITVAVO-KEY AANSLUITEN: zet BITVAVO_API_KEY/SECRET in .env. Deze bot blijft
+#  dan nog steeds PAPER (veilig, verzint geen echte orders). Wil je het volledige
+#  live-pad draaien mét je echte saldo als limiet, maar ZONDER orders te sturen,
+#  zet dan mode: SHADOW hieronder. Pas LIVE (echt geld) na de drie-slot-guardrail
+#  in .env.example — bewust niet standaard aan.
+# ═══════════════════════════════════════════════════════════════════════════
+
+mode: PAPER
+bot_id: allin
+capital_eur: 100
+
+pairs: [BTC-EUR, ETH-EUR, SOL-EUR, MOODENG-EUR]
+
+seed:
+  enabled: true
+  eur: 100                    # start met €100 papieren cash; pas aan naar wens
+
+risk:
+  max_position_pct: 30
+  stop_loss_pct: 15
+  take_profit_pct: 25
+  max_daily_loss_pct: 15
+  max_drawdown_pct: 40
+  max_portfolio_heat_pct: null
+
+# De prijsstrategie (trend volgen). Draait samen met de research-laag hieronder.
+strategy:
+  name: momentum_ma_cross
+  params: { fast: 12, slow: 26, rsi_period: 14, rsi_min: 50, rsi_max: 75 }
+
+# ALLE informatiebronnen tegelijk. Elke bron is een PROBE: hij mag voorstellen doen,
+# maar alles gaat door de confidence-poort én de risk engine, en wordt forward-only
+# per bron/entiteit afgerekend. Een lege bronlijst doet simpelweg niets.
+research:
+  enabled: true
+  agent: allin
+  min_confidence: 0.6
+  max_position_eur: 20
+  events_file: research_events.json     # handmatige events blijven mogelijk
+  fetch_minutes: 15
+  news_sources:
+    - https://cointelegraph.com/rss
+    - https://decrypt.co/feed
+    - https://www.coindesk.com/arc/outboundfeeds/rss/
+  disclosure_sources:
+    - https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json
+    - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com/aggregate/all_transactions.json
+  onchain_sources: []                    # vul je eigen whale/flow-JSON-bron in (optioneel ONCHAIN_API_KEY in .env)
+
+schedule:
+  interval_minutes: 15
+
+# Zelf het hele liquide universe scannen (naast de vaste pairs).
+universe:
+  enabled: true
+  min_daily_volume_eur: 100000
+  max_spread_pct: 1.0
+  max_markets: 40
+  always_include: [BTC-EUR, ETH-EUR, SOL-EUR, MOODENG-EUR]
+
+costs:
+  taker_fee_pct: 0.25
+  maker_fee_pct: 0.15
+  slippage_pct: 0.1
+
+execution:
+  mode: taker                 # eerlijk in PAPER; maker_first pas na fill-validatie in SHADOW/LIVE

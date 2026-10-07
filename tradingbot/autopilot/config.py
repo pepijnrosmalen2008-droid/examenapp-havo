@@ -113,8 +113,9 @@ class ResearchConfig(BaseModel):
 
     enabled: bool = False
     # 'rulebased' = handmatig events-bestand; 'newsfeed' = zelf publieke nieuwskoppen ophalen;
-    # 'disclosures' = publieke politici-transacties (STOCK Act); 'onchain' = grote on-chain flows.
-    agent: Literal["rulebased", "newsfeed", "disclosures", "onchain"] = "rulebased"
+    # 'disclosures' = publieke politici-transacties (STOCK Act); 'onchain' = grote on-chain flows;
+    # 'allin' = alle bronnen tegelijk in één bot (nieuws + politici + on-chain).
+    agent: Literal["rulebased", "newsfeed", "disclosures", "onchain", "allin"] = "rulebased"
     min_confidence: float = Field(default=0.6, ge=0, le=1,
                                   description="Onder deze zekerheid wordt een voorstel genegeerd")
     max_position_eur: float = Field(default=25, gt=0,
@@ -126,6 +127,13 @@ class ResearchConfig(BaseModel):
                                  "https://decrypt.co/feed",
                                  "https://www.coindesk.com/arc/outboundfeeds/rss/"],
         description="(newsfeed) RSS-bronnen met crypto-nieuwskoppen")
+    # Voor agent 'allin': aparte bronlijsten per sub-agent. Leeg = die bron doet niets.
+    news_sources: list[str] = Field(default_factory=list,
+                                    description="(allin) RSS-bronnen voor de nieuws-sub-agent")
+    disclosure_sources: list[str] = Field(default_factory=list,
+                                           description="(allin) JSON-bronnen voor politici-transacties")
+    onchain_sources: list[str] = Field(default_factory=list,
+                                        description="(allin) JSON-bronnen voor on-chain flows")
     fetch_minutes: int = Field(default=10, ge=1, le=24 * 60,
                                description="(newsfeed) hoogstens één keer per zoveel minuten ophalen")
 

@@ -401,6 +401,22 @@ puur voor verificatie + brokerage — dezelfde filosofie als de crypto-probes. H
 trades mag aandrijven of alleen mag informeren. Zichtbaar via `status.py`; enforcement in het
 fetch-pad van de research-agents is de volgende wiring-stap.
 
+## D34 — All-in bot: alle bronnen in één proces, verse database
+
+De gebruiker wilde "helemaal overnieuw" — één bot die alles kan en meteen op een Bitvavo-key kan,
+zonder opstart-gedoe met vijf losse processen. Gebouwd: `CompositeResearchAgent` (`agent: allin`)
+draait nieuws-, politici- en on-chain-sub-agents naast elkaar en voegt hun voorstellen samen; elke
+sub-agent houdt zijn eigen bronlijst (`research.news_sources/disclosure_sources/onchain_sources`) en
+eigen auto-events-bestand, dus geen botsing, en de factor-overlay zag alle drie al. Een lege bronlijst
+→ die sub-agent wordt niet eens aangemaakt (geen ruis, geen fouten); één dode bron breekt de rest niet.
+
+`config.allin.yaml` bundelt dit met de momentum-prijsstrategie, universe-scan, volledige risk-engine,
+execution-meting en gedachtegang, onder een nieuw `bot_id: allin` → eigen verse `autopilot_allin.db`,
+volledig los van de oude bots. Blijft PAPER by default (geen key nodig); SHADOW draait het volledige
+live-pad met de echte key als limiet zonder orders te sturen; LIVE blijft achter de drie-slot-guardrail.
+Discipline ongewijzigd: "alles in één bot" = meer informatie, niet minder toetsing — elk voorstel gaat
+nog door de confidence-poort, de risk engine en de forward-only afrekening per bron/entiteit.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

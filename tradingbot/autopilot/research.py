@@ -173,6 +173,9 @@ def get_research_agent(cfg: AppConfig) -> ResearchAgent | None:
         log.info("research-laag actief: on-chain flows (proactief), min_confidence %.2f",
                  cfg.research.min_confidence)
         return OnChainResearchAgent(cfg)
+    if cfg.research.agent == "allin":
+        from .composite import CompositeResearchAgent   # lazy: vermijdt circulaire import
+        return CompositeResearchAgent(cfg)
     cls = _AGENTS.get(cfg.research.agent)
     if cls is None:
         raise ValueError(f"Onbekende research-agent '{cfg.research.agent}'")
