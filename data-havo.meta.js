@@ -443,6 +443,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C6",
+      "lo": "nl.C.6",
+      "gs": 2,
+      "naam": "Een tekst reviseren op commentaar",
+      "beschrijving": "Je leest commentaar van een lezer, bepaalt wat het belangrijkste is, past je tekst gericht aan en controleert daarna het geheel.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Commentaar lezen en begrijpen",
+       "Soorten commentaar",
+       "Prioriteren",
+       "Aanpassen en controleren",
+       "Afwegen en afwijzen",
+       "Doorvragen en verwerken"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

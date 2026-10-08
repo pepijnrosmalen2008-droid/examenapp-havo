@@ -18481,6 +18481,667 @@ var VAKKEN = [
         "u": "\"Met vriendelijke groet, Sam Jansen\" (1 punt), want een sollicitatiebrief vraagt een formeel register en een volledige naam (1 punt)."
        }
       ]
+     },
+     {
+      "id": "C6",
+      "lo": "nl.C.6",
+      "gs": 2,
+      "naam": "Een tekst reviseren op commentaar",
+      "beschrijving": "Je leest commentaar van een lezer, bepaalt wat het belangrijkste is, past je tekst gericht aan en controleert daarna het geheel.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Commentaar lezen en begrijpen",
+       "Soorten commentaar",
+       "Prioriteren",
+       "Aanpassen en controleren",
+       "Afwegen en afwijzen",
+       "Doorvragen en verwerken"
+      ],
+      "sam": "Reviseren is je tekst verbeteren op grond van commentaar. Je leest het commentaar eerst goed, bepaalt of het over inhoud, opbouw, stijl of spelling gaat, pakt de grote punten (inhoud en opbouw) eerst aan en controleert daarna de hele tekst op nieuwe fouten en kapotte verwijzingen. Commentaar waar je het niet mee eens bent, weeg je af tegen je opdracht en wijs je alleen met een reden af; is het onduidelijk, dan vraag je door.",
+      "begrippen": [
+       {
+        "t": "Revisie",
+        "d": "Het verbeteren van een tekst op grond van commentaar."
+       },
+       {
+        "t": "Commentaar",
+        "d": "Opmerkingen van een lezer over je tekst."
+       },
+       {
+        "t": "Concept",
+        "d": "Een eerste versie van een tekst."
+       },
+       {
+        "t": "Eindversie",
+        "d": "De versie na revisie."
+       },
+       {
+        "t": "Inhoud",
+        "d": "Wat er in de tekst staat: argumenten, bewijs en conclusie."
+       },
+       {
+        "t": "Opbouw",
+        "d": "De ordening van de onderdelen van een tekst."
+       },
+       {
+        "t": "Stijl",
+        "d": "Woordkeus, toon en zinsbouw."
+       },
+       {
+        "t": "Spelling",
+        "d": "De juiste schrijfwijze van woorden."
+       },
+       {
+        "t": "Prioriteren",
+        "d": "Bepalen wat je eerst aanpakt."
+       },
+       {
+        "t": "Verwijzing",
+        "d": "Een woord of zin die naar iets anders in de tekst wijst."
+       },
+       {
+        "t": "Tegenstrijdigheid",
+        "d": "Twee uitspraken die elkaar tegenspreken."
+       },
+       {
+        "t": "Afwegen",
+        "d": "Beoordelen of commentaar bij je doel en opdracht past."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat doe je als eerste met commentaar op je tekst?",
+        "o": [
+         "meteen alle opmerkingen uitvoeren zonder erover na te denken",
+         "het goed lezen en bepalen wat de lezer bedoelt",
+         "de opmerkingen negeren die je niet leuk vindt en de rest laten liggen",
+         "de hele tekst opnieuw schrijven zonder naar het commentaar te kijken"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Lees commentaar eerst goed en begrijp wat er bedoeld wordt.",
+        "uo": [
+         "Koos je \"meteen alle opmerkingen uitvoeren zonder erover na...\"? Dan denk je dat snel aanpassen het beste is. Je kunt dan fouten maken of iets veranderen dat goed was, dus eerst begrijpen en dan aanpassen.",
+         "Klopt: je moet eerst begrijpen wat het commentaar zegt voordat je iets aanpast.",
+         "Koos je \"de opmerkingen negeren die je niet leuk vindt en de...\"? Dan denk je dat je kunt kiezen op gevoel. Elke opmerking verdient een weging, en afwijzen kan alleen met een reden.",
+         "Koos je \"de hele tekst opnieuw schrijven zonder naar het...\"? Dan denk je dat een nieuwe versie het commentaar overbodig maakt. Je gooit dan ook goede delen weg, en leert niet van wat de lezer zei."
+        ],
+        "uh": "Eerst begrijpen."
+       },
+       {
+        "v": "Waarom is commentaar van een lezer nuttig?",
+        "o": [
+         "omdat de lezer altijd gelijk heeft over je tekst",
+         "omdat je dan minder hoeft te schrijven",
+         "omdat een tekst pas af is als iemand hem goedkeurt",
+         "je ziet hoe iemand anders je tekst begrijpt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Commentaar laat zien hoe een lezer je tekst begrijpt.",
+        "uo": [
+         "Koos je \"omdat de lezer altijd gelijk heeft over je tekst\"? Dan denk je dat commentaar altijd klopt. Je weegt het zelf af, maar het geeft wel een andere kijk.",
+         "Koos je \"omdat je dan minder hoeft te schrijven\"? Dan denk je dat commentaar werk bespaart. Het geeft juist aanwijzingen voor aanpassing; het werk van herschrijven blijft.",
+         "Koos je \"omdat een tekst pas af is als iemand hem goedkeurt\"? Dan denk je dat goedkeuring het doel is. Het doel is een betere tekst, en dat helpt commentaar.",
+         "Klopt: een lezer toont waar je tekst onduidelijk of zwak is, wat jijzelf vaak niet ziet."
+        ],
+        "uh": "Lezer als spiegel."
+       },
+       {
+        "v": "Welk soort commentaar gaat over de inhoud van een tekst?",
+        "o": [
+         "\"Je argument heeft geen bewijs.\"",
+         "\"Je hebt drie spelfouten in de eerste alinea.\"",
+         "\"Je alinea's zijn te lang.\"",
+         "\"Je schrijft te informeel voor deze lezer.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Commentaar kan over inhoud, opbouw, stijl of spelling gaan.",
+        "uo": [
+         "Klopt: dit gaat over wat er staat, niet over de vorm.",
+         "Koos je \"Je hebt drie spelfouten in de eerste alinea.\"? Dan denk je dat dit over de inhoud gaat. Spelfouten gaan over de vorm, niet over wat er staat.",
+         "Koos je \"Je alinea's zijn te lang.\"? Dan denk je dat dit over de inhoud gaat. Het gaat over opbouw, niet over wat je zegt.",
+         "Koos je \"Je schrijft te informeel voor deze lezer.\"? Dan denk je dat dit over de inhoud gaat. Het gaat over stijl en register, niet over de inhoud."
+        ],
+        "uh": "Inhoud = wat je zegt."
+       },
+       {
+        "v": "Wat voor soort commentaar is dit?",
+        "o": [
+         "commentaar op de spelling, want er staat een fout in de zin",
+         "commentaar op de lay-out van de pagina",
+         "commentaar op de opbouw en onderbouwing van het betoog",
+         "commentaar op de aanhef van de brief"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Commentaar over een ontbrekende schakel gaat over opbouw en onderbouwing.",
+        "uo": [
+         "Koos je \"commentaar op de spelling, want er staat een fout...\"? Dan denk je dat dit spelling is. De lezer zegt niets over spelling, maar over de redenering.",
+         "Koos je \"commentaar op de lay-out van de pagina\"? Dan denk je dat het over lay-out gaat. De lezer bedoelt de logica; niet het uiterlijk.",
+         "Klopt: de lezer mist een schakel tussen argumenten en conclusie.",
+         "Koos je \"commentaar op de aanhef van de brief\"? Dan denk je dat het over de aanhef gaat. De opmerking gaat over de conclusie, niet over de aanhef."
+        ],
+        "uh": "Schakel ontbreekt.",
+        "ctx": "Een lezer schrijft in de kantlijn: \"Hier snap ik niet hoe je tot je conclusie komt.\""
+       },
+       {
+        "v": "Welk onderdeel van de tekst raakt dit commentaar?",
+        "o": [
+         "de spelling van werkwoorden",
+         "de bronvermelding",
+         "de stijl en het register",
+         "de lengte van de tekst"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Commentaar over te informeel taalgebruik gaat over stijl en register.",
+        "uo": [
+         "Koos je \"de spelling van werkwoorden\"? Dan denk je dat dit over werkwoordspelling gaat. De lezer bedoelt de toon, niet de spelling.",
+         "Koos je \"de bronvermelding\"? Dan denk je dat het over bronnen gaat. De opmerking gaat over toon, niet over bronnen.",
+         "Klopt: informeel taalgebruik is een stijl- of registerkwestie.",
+         "Koos je \"de lengte van de tekst\"? Dan denk je dat de lengte het probleem is. De lezer zegt iets over de toon, niet over de lengte."
+        ],
+        "uh": "Toon = stijl.",
+        "ctx": "Een lezer schrijft naast een alinea: \"Dit is te informeel voor een brief aan de directeur.\""
+       },
+       {
+        "v": "Welke volgorde is verstandig bij het reviseren?",
+        "o": [
+         "eerst de grote punten (inhoud en opbouw), daarna stijl en spelling",
+         "eerst alle spelfouten verbeteren en daarna pas naar de inhoud kijken",
+         "alleen de kleine dingen verbeteren en de rest laten staan",
+         "de volgorde maakt niet uit, zolang je alles maar doet"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Revisie begint bij inhoud en opbouw, daarna stijl en spelling.",
+        "uo": [
+         "Klopt: als je eerst spelling verbetert en daarna een alinea schrapt, is dat werk voor niets.",
+         "Koos je \"eerst alle spelfouten verbeteren en daarna pas naar...\"? Dan denk je dat spelling het eerst moet. Misschien schrap je later hele alinea's, dus dat werk is dan voor niets.",
+         "Koos je \"alleen de kleine dingen verbeteren en de rest laten...\"? Dan denk je dat grote problemen niet nodig zijn. De grote problemen bepalen de kwaliteit, dus die pak je eerst aan.",
+         "Koos je \"de volgorde maakt niet uit, zolang je alles maar...\"? Dan denk je dat de volgorde geen rol speelt. Aanpassen in de verkeerde volgorde kost werk, dus je begint met de grote punten."
+        ],
+        "uh": "Groot eerst."
+       },
+       {
+        "v": "Welke opmerking pak je het eerst aan?",
+        "o": [
+         "(3), want dat is het makkelijkst op te lossen",
+         "(2), want de aanspreekvorm is belangrijker dan bewijs",
+         "alle drie tegelijk, in willekeurige volgorde",
+         "(1), want het gaat over de inhoud van het betoog"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Bij revisie pak je inhoud en opbouw eerder aan dan spelling.",
+        "uo": [
+         "Koos je \"(3), want dat is het makkelijkst op te lossen\"? Dan denk je dat het gemakkelijkste eerst moet. De grote punten zijn belangrijker, en een fout in een zin kan verdwijnen als je de zin schrapt.",
+         "Koos je \"(2), want de aanspreekvorm is belangrijker dan...\"? Dan denk je dat de stijl voorgaat. Bewijs bepaalt of het betoog standhoudt, dus de inhoud gaat eerst.",
+         "Koos je \"alle drie tegelijk, in willekeurige volgorde\"? Dan denk je dat de volgorde onbelangrijk is. Je werkt beter door te prioriteren, en inhoud komt eerst.",
+         "Klopt: de inhoud bepaalt of je tekst overtuigt; de rest is afwerking."
+        ],
+        "uh": "Prioriteer.",
+        "ctx": "Een lezer geeft drie opmerkingen: (1) \"Je argumenten missen bewijs.\" (2) \"Je schrijft 'jij' in een formele brief.\" (3) \"Je hebt een d/t-fout in regel vier.\""
+       },
+       {
+        "v": "Wat doe je het best?",
+        "o": [
+         "de alinea laten staan en een kopje boven zetten",
+         "de alinea schrappen of verplaatsen, als hij niet bij het onderwerp hoort",
+         "de overige alinea's korter maken",
+         "de alinea in een andere kleur zetten"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Een alinea die niet bij het onderwerp past, schrap of verplaats je.",
+        "uo": [
+         "Koos je \"de alinea laten staan en een kopje boven zetten\"? Dan denk je dat een kopje het probleem oplost. Het maakt de afwijking zichtbaar, maar de alinea hoort er nog steeds niet.",
+         "Klopt: een alinea die niet past, haalt de tekst onderuit; schrappen of verplaatsen helpt.",
+         "Koos je \"de overige alinea's korter maken\"? Dan denk je dat korter overal helpt. Het probleem zit in één alinea, dus daar moet je ingrijpen.",
+         "Koos je \"de alinea in een andere kleur zetten\"? Dan denk je dat de opmaak het oplost. De inhoud blijft niet passend; dus verplaats of schrap hem."
+        ],
+        "uh": "Onderwerp bewaken.",
+        "ctx": "Je tekst is te lang en een lezer zegt dat een alinea niet bij het onderwerp past."
+       },
+       {
+        "v": "Waarom controleer je na het aanpassen opnieuw de hele tekst?",
+        "o": [
+         "omdat een tekst pas af is als je hem drie keer gelezen hebt",
+         "omdat je dan meer woorden krijgt",
+         "omdat de lezer dan geen commentaar meer kan geven",
+         "je aanpassing kan nieuwe fouten of tegenstrijdigheden veroorzaken"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Na een wijziging controleer je de hele tekst op nieuwe fouten.",
+        "uo": [
+         "Koos je \"omdat een tekst pas af is als je hem drie keer...\"? Dan denk je dat er een vast aantal keren is. Het gaat om controleren op nieuwe problemen, niet om een aantal keren.",
+         "Koos je \"omdat je dan meer woorden krijgt\"? Dan denk je dat het om woordenaantal gaat. Het gaat om de kwaliteit, en om fouten opsporen.",
+         "Koos je \"omdat de lezer dan geen commentaar meer kan geven\"? Dan denk je dat controle commentaar voorkomt. Controle zorgt dat de tekst klopt, maar de lezer kan nog steeds reageren.",
+         "Klopt: een wijziging kan elders een verwijzing of zin onjuist maken."
+        ],
+        "uh": "Controleer na aanpassen."
+       },
+       {
+        "v": "Waarom moet je dit nalopen?",
+        "o": [
+         "\"zoals\" mag in een betoog niet gebruikt worden",
+         "de verwijzing naar \"hierboven\" kan nu niet meer kloppen",
+         "het woord \"hierboven\" is altijd fout",
+         "er hoeft niets nagelopen te worden, want verplaatsen verandert niets"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer na verplaatsen of verwijzingen nog kloppen.",
+        "uo": [
+         "Koos je \"zoals mag in een betoog niet gebruikt worden\"? Dan denk je dat het woord niet mag. Het woord is gewoon correct; het probleem is de verwijzing.",
+         "Klopt: door het verplaatsen kan een verwijzing naar iets eerders onjuist worden.",
+         "Koos je \"het woord hierboven is altijd fout\"? Dan denk je dat het woord fout is. Het woord is prima, alleen moet de verwijzing kloppen.",
+         "Koos je \"er hoeft niets nagelopen te worden, want...\"? Dan denk je dat verplaatsen zonder gevolgen is. Verwijzingen kunnen kapot gaan, dus je controleert dat."
+        ],
+        "uh": "Verwijzingen nalopen.",
+        "ctx": "Je verplaatst een alinea in je betoog. Daarna staat in een latere alinea: \"Zoals hierboven genoemd ...\"."
+       },
+       {
+        "v": "Wat doe je met commentaar waar je het niet mee eens bent?",
+        "o": [
+         "je voert het alsnog uit, want de lezer heeft altijd gelijk",
+         "je negeert het zonder het te lezen",
+         "je weegt het af en wijst het af met een goede reden",
+         "je gooit de tekst weg en begint opnieuw"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Wijs commentaar alleen af met een inhoudelijke reden.",
+        "uo": [
+         "Koos je \"je voert het alsnog uit, want de lezer heeft altijd...\"? Dan denk je dat de lezer altijd gelijk heeft. Je weegt het zelf af, en soms past het niet bij je doel.",
+         "Koos je \"je negeert het zonder het te lezen\"? Dan denk je dat negeren oké is. Je moet het eerst begrijpen, en daarna beslis je.",
+         "Klopt: je kunt commentaar afwijzen, maar dan met een inhoudelijke reden.",
+         "Koos je \"je gooit de tekst weg en begint opnieuw\"? Dan denk je dat een nieuwe tekst het commentaar oplost. Je verliest goede delen, en je leert niets van het commentaar."
+        ],
+        "uh": "Afwijzen met reden."
+       },
+       {
+        "v": "Welke reactie past het best?",
+        "o": [
+         "de opdracht nalopen en het commentaar afwijzen als de lengte klopt met de opdracht",
+         "het betoog meteen halveren om het commentaar te volgen en de lezer tevreden te stellen",
+         "het commentaar negeren zonder iets te zeggen",
+         "de lezer vragen een andere tekst te lezen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Weeg commentaar af tegen de opdracht en je doel.",
+        "uo": [
+         "Klopt: de opdracht bepaalt de lengte; je kunt het commentaar dan met een reden afwijzen.",
+         "Koos je \"het betoog meteen halveren om het commentaar te...\"? Dan denk je dat je het commentaar moet volgen. De opdracht vraagt drie pagina's, dus korter maken zou de opdracht schenden.",
+         "Koos je \"het commentaar negeren zonder iets te zeggen\"? Dan denk je dat negeren oké is. Je kunt beter uitleggen waarom het niet past, zodat de lezer het begrijpt.",
+         "Koos je \"de lezer vragen een andere tekst te lezen\"? Dan denk je dat de lezer het verkeerd begrijpt. Hij leest je tekst; het commentaar moet je afwegen."
+        ],
+        "uh": "Opdracht als maat.",
+        "ctx": "Een lezer zegt: \"Je betoog moet korter.\" Jouw doel is een uitgebreid betoog van drie pagina's, zoals de opdracht vraagt."
+       },
+       {
+        "v": "Wat doe je het best?",
+        "o": [
+         "de lezer vragen wat er onduidelijk is",
+         "de hele alinea schrappen om zeker te zijn",
+         "de alinea langer maken, want dan is hij duidelijker",
+         "het commentaar negeren omdat het vaag is"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Vraag door als commentaar onduidelijk is.",
+        "uo": [
+         "Klopt: doorvragen voorkomt dat je het verkeerde aanpast.",
+         "Koos je \"de hele alinea schrappen om zeker te zijn\"? Dan denk je dat schrappen het veiligst is. Je verliest wellicht goede inhoud, en weet nog niet wat onduidelijk was.",
+         "Koos je \"de alinea langer maken, want dan is hij duidelijker\"? Dan denk je dat meer woorden duidelijker maken. Het kan het juist erger maken, dus eerst doorvragen.",
+         "Koos je \"het commentaar negeren omdat het vaag is\"? Dan denk je dat vaag commentaar niet telt. Je kunt het verhelderen door te vragen, en zo leer je ervan."
+        ],
+        "uh": "Doorvragen.",
+        "ctx": "Een lezer schrijft: \"Je alinea over kosten is onduidelijk.\" Jij weet niet wat hij precies bedoelt."
+       },
+       {
+        "v": "Wat is het meest verstandig?",
+        "o": [
+         "met de spelling beginnen, want dat is het kortst",
+         "met de stijl beginnen, want dat vind je het leukst",
+         "met de opbouw beginnen, omdat die het meeste effect heeft",
+         "alles tegelijk doen, zonder volgorde"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Begin met het punt dat de meeste verbetering oplevert.",
+        "uo": [
+         "Koos je \"met de spelling beginnen, want dat is het kortst\"? Dan denk je dat het kortste eerst hoort. De opbouw geeft het meeste effect, en spelling kun je later nalopen.",
+         "Koos je \"met de stijl beginnen, want dat vind je het leukst\"? Dan denk je dat voorkeur de volgorde bepaalt. Je kiest op effect, niet op wat je leuk vindt.",
+         "Klopt: de grootste verbetering haal je met de opbouw; kleine fouten kosten minder tijd.",
+         "Koos je \"alles tegelijk doen, zonder volgorde\"? Dan denk je dat tegelijk sneller gaat. Zonder prioriteit raak je het overzicht kwijt, en werk je minder efficiënt."
+        ],
+        "uh": "Prioriteit op effect.",
+        "ctx": "Je krijgt commentaar op drie punten: opbouw, stijl en spelling. Je hebt maar een halfuur."
+       },
+       {
+        "v": "Wat doet hij het best als hij het commentaar niet snapt?",
+        "o": [
+         "de tekst inleveren zonder aanpassing",
+         "vragen welke onderstrepingen waarover gaan en wat er beter kan",
+         "alle onderstrepingen negeren, want het zijn er te veel",
+         "de beoordelaar vragen de tekst zelf te verbeteren"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Vraag door op onduidelijk of vaag commentaar.",
+        "uo": [
+         "Koos je \"de tekst inleveren zonder aanpassing\"? Dan denk je dat inleveren genoeg is. Dan leer je niets, en de fouten blijven staan.",
+         "Klopt: concrete vragen leveren concreet commentaar en maken revisie mogelijk.",
+         "Koos je \"alle onderstrepingen negeren, want het zijn er te...\"? Dan denk je dat te veel opmerkingen niet te doen zijn. Je kunt ze sorteren en een volgorde kiezen, en zo aanpakken.",
+         "Koos je \"de beoordelaar vragen de tekst zelf te verbeteren\"? Dan denk je dat de beoordelaar de revisie moet doen. De schrijver is verantwoordelijk, en de beoordelaar geeft alleen commentaar."
+        ],
+        "uh": "Concreet maken.",
+        "ctx": "Een leerling krijgt een tekst terug met veel rode onderstrepingen en het commentaar \"Slordig\"."
+       },
+       {
+        "v": "Welke soort aanpassing is nodig?",
+        "o": [
+         "een spellingsaanpassing in de tweede zin van de alinea",
+         "een andere aanhef boven de alinea",
+         "een extra tussenkopje boven de alinea, zodat de lezer het zelf kan zien",
+         "een inhoudelijke aanpassing: kies één lijn en maak de redenering consistent"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Een tegenstrijdigheid los je op in de inhoud.",
+        "uo": [
+         "Koos je \"een spellingsaanpassing in de tweede zin van de...\"? Dan denk je dat het om spelling gaat. De zinnen zijn correct, maar tegenstrijdig.",
+         "Koos je \"een andere aanhef boven de alinea\"? Dan denk je dat de aanhef het oplost. Het is een inhoudelijk probleem, dus de aanhef verandert niets.",
+         "Koos je \"een extra tussenkopje boven de alinea, zodat de...\"? Dan denk je dat een kopje het probleem oplost. Het maakt de tegenstrijdigheid zichtbaar, maar lost haar niet op.",
+         "Klopt: een tegenstrijdigheid los je op door de inhoud aan te passen."
+        ],
+        "uh": "Consistent redeneren.",
+        "ctx": "Commentaar: \"In alinea 3 spreek je jezelf tegen: eerst zeg je dat het huiswerk nuttig is, daarna dat het tijdverspilling is.\""
+       },
+       {
+        "v": "Welke aanpassing sluit daarop aan?",
+        "o": [
+         "het sterkste argument weglaten, want het is kennelijk onduidelijk",
+         "het sterkste argument naar voren of naar het eind verplaatsen",
+         "alle argumenten in dezelfde alinea zetten",
+         "de stelling aan het eind zetten"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Zet het sterkste argument op een opvallende plek.",
+        "uo": [
+         "Koos je \"het sterkste argument weglaten, want het is...\"? Dan denk je dat de lezer het argument zwak vindt. Hij zegt alleen dat het op een slechte plek staat, dus verplaatsen is genoeg.",
+         "Klopt: je plaatst je sterkste argument op een opvallende plek.",
+         "Koos je \"alle argumenten in dezelfde alinea zetten\"? Dan denk je dat samenvoegen helpt. Het maakt het sterkste argument nog minder zichtbaar; verplaats het liever.",
+         "Koos je \"de stelling aan het eind zetten\"? Dan denk je dat de stelling het probleem is. De opmerking gaat over het argument, niet over de stelling."
+        ],
+        "uh": "Opvallende plek.",
+        "ctx": "Een leerling heeft een betoog met stelling, drie argumenten en conclusie. De lezer zegt: \"Mijn eerste indruk is dat het sterkste argument verstopt zit in het midden.\""
+       },
+       {
+        "v": "Hoe kan dat?",
+        "o": [
+         "door het aanpassen kunnen nieuwe fouten of inconsistenties zijn ontstaan",
+         "de lezer heeft de oude fouten gemist",
+         "een revisie voegt altijd fouten toe en is dus nutteloos",
+         "nieuwe fouten bestaan niet, het zijn altijd oude fouten"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Controleer de hele tekst opnieuw na revisie.",
+        "uo": [
+         "Klopt: wijzigingen kunnen elders in de tekst nieuwe fouten veroorzaken, daarom controleer je opnieuw.",
+         "Koos je \"de lezer heeft de oude fouten gemist\"? Dan denk je dat de lezer zich vergist. Het gaat om nieuwe fouten, die door de revisie zijn ontstaan.",
+         "Koos je \"een revisie voegt altijd fouten toe en is dus...\"? Dan denk je dat revisie nutteloos is. Revisie verbetert de tekst, maar je moet na afloop controleren.",
+         "Koos je \"nieuwe fouten bestaan niet, het zijn altijd oude...\"? Dan denk je dat nieuwe fouten onmogelijk zijn. Ze komen vaak door aanpassingen, dus je controleert."
+        ],
+        "uh": "Controle na revisie.",
+        "ctx": "Na een revisie leest een klasgenoot jouw tekst opnieuw en zegt: \"Nu zijn er twee nieuwe fouten bij gekomen.\""
+       },
+       {
+        "v": "Welke afweging is verstandig?",
+        "o": [
+         "alleen lezer A volgen, want die heeft het eerst commentaar gegeven",
+         "beide opmerkingen negeren",
+         "een tekst schrijven die beide uitvoert, ook als dat tegenstrijdig is",
+         "kijken wat de opdracht vraagt en daarmee tegenstrijdig commentaar afwegen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Weeg tegenstrijdig commentaar af tegen de opdracht.",
+        "uo": [
+         "Koos je \"alleen lezer A volgen, want die heeft het eerst...\"? Dan denk je dat de volgorde van commentaar telt. De opdracht bepaalt, niet wie het eerst reageert.",
+         "Koos je \"beide opmerkingen negeren\"? Dan denk je dat negeren de oplossing is. Je kunt ze afwegen met de opdracht, en daar nuttige delen uit halen.",
+         "Koos je \"een tekst schrijven die beide uitvoert, ook als dat...\"? Dan denk je dat je beide kunt uitvoeren. Korter en uitgebreider tegelijk kan niet, dus je kiest op basis van de opdracht.",
+         "Klopt: bij tegenstrijdig commentaar bepaalt de opdracht wat je doet."
+        ],
+        "uh": "Opdracht beslist.",
+        "ctx": "Een leerling krijgt commentaar van twee lezers: lezer A zegt \"Maak het betoog korter\", lezer B zegt \"Voeg nog twee argumenten toe\". De opdracht vraagt een betoog van minstens drie argumenten."
+       },
+       {
+        "v": "Welke revisie volgt hieruit?",
+        "o": [
+         "het slot schrappen, want het is kennelijk overbodig",
+         "een nieuw argument aan het slot toevoegen",
+         "een conclusie toevoegen die de stelling bevestigt",
+         "een vraag aan de lezer stellen en het daarbij laten"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Een zwak slot los je op met een duidelijke conclusie.",
+        "uo": [
+         "Koos je \"het slot schrappen, want het is kennelijk overbodig\"? Dan denk je dat het slot overbodig is. Het is nodig voor de conclusie, dus je verbetert het in plaats van het te schrappen.",
+         "Koos je \"een nieuw argument aan het slot toevoegen\"? Dan denk je dat een nieuw argument het slot sterker maakt. Het slot moet afronden, geen nieuw materiaal brengen.",
+         "Klopt: een slot hoort de conclusie te trekken.",
+         "Koos je \"een vraag aan de lezer stellen en het daarbij laten\"? Dan denk je dat een vraag een conclusie is. Een betoog sluit stellig af, dus een open vraag is niet genoeg."
+        ],
+        "uh": "Conclusie toevoegen.",
+        "ctx": "Een leerling vraagt na het commentaar: \"Wat bedoelt u met 'zwak slot'?\" De docent antwoordt: \"Je slot trekt geen conclusie.\""
+       },
+       {
+        "v": "Wat doe je met opmerkingen die al in een eerdere versie waren gemaakt?",
+        "o": [
+         "ze laten liggen, want de tekst is toch al veranderd",
+         "ze verwijderen uit de lijst zonder te kijken",
+         "nagaan of ze zijn verwerkt",
+         "ze uit je tekst halen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Controleer of eerdere opmerkingen zijn verwerkt.",
+        "uo": [
+         "Koos je \"ze laten liggen, want de tekst is toch al veranderd\"? Dan denk je dat oude opmerkingen vervallen. Ze kunnen nog gelden, dus je controleert ze.",
+         "Koos je \"ze verwijderen uit de lijst zonder te kijken\"? Dan denk je dat je ze mag wissen. Je weet dan niet of de fout is hersteld, dus nalopen is beter.",
+         "Klopt: je controleert dat eerdere opmerkingen echt zijn verwerkt, anders komen ze terug.",
+         "Koos je \"ze uit je tekst halen\"? Dan denk je dat opmerkingen in de tekst zelf staan. Ze staan in het commentaar, en je verwerkt ze in de tekst."
+        ],
+        "uh": "Nalopen."
+       },
+       {
+        "v": "Waarom bewaar je de oude versie van je tekst voordat je gaat reviseren?",
+        "o": [
+         "omdat een oude versie altijd beter is",
+         "omdat de lezer anders geen commentaar kan geven",
+         "omdat de opdracht dat vereist",
+         "je kunt terug als een aanpassing slechter blijkt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Bewaar de oude versie om te kunnen vergelijken.",
+        "uo": [
+         "Koos je \"omdat een oude versie altijd beter is\"? Dan denk je dat de oude versie beter is. Dat is niet zo, maar het is handig om te kunnen vergelijken.",
+         "Koos je \"omdat de lezer anders geen commentaar kan geven\"? Dan denk je dat de lezer de oude versie nodig heeft. Het commentaar is al gegeven, dus het gaat om jouw veiligheid.",
+         "Koos je \"omdat de opdracht dat vereist\"? Dan denk je dat dit een regel is. Het is een handige gewoonte, niet een verplichting.",
+         "Klopt: met de oude versie kun je vergelijken en terugkeren."
+        ],
+        "uh": "Terug kunnen."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "hij heeft de belangrijkste opmerking niet aangepakt",
+         "hij heeft te weinig spelfouten verbeterd",
+         "hij heeft de spelling niet hoeven aanpassen",
+         "hij had de tekst moeten inleveren zonder aanpassing"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Pak de belangrijkste opmerking eerst aan.",
+        "uo": [
+         "Klopt: de lezer noemde de inhoud als grootste probleem; spelling alleen is niet genoeg.",
+         "Koos je \"hij heeft te weinig spelfouten verbeterd\"? Dan denk je dat het aantal spelfouten het probleem is. Het gaat om de verkeerde prioriteit, de inhoud is het grootste punt.",
+         "Koos je \"hij heeft de spelling niet hoeven aanpassen\"? Dan denk je dat spelling niet mag. Spelling aanpassen is prima; het probleem is dat hij het grote punt negeerde.",
+         "Koos je \"hij had de tekst moeten inleveren zonder aanpassing\"? Dan denk je dat niets doen beter is. De tekst moet beter worden, en dat vraagt aanpak van de inhoud."
+        ],
+        "uh": "Belangrijkste eerst.",
+        "ctx": "Een leerling past na commentaar alleen de spelfouten aan, terwijl de lezer vooral zei dat de argumenten onvoldoende bewijs hebben."
+       },
+       {
+        "v": "Wat doe je eerst?",
+        "o": [
+         "de conclusie meteen veranderen in het tegendeel",
+         "navragen welk deel van de redenering hij niet volgt",
+         "de tekst laten zoals hij is, want meningen mogen verschillen",
+         "alle argumenten schrappen en nieuwe bedenken"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Vraag door welk deel van de redenering niet overtuigt.",
+        "uo": [
+         "Koos je \"de conclusie meteen veranderen in het tegendeel\"? Dan denk je dat de lezer het tegendeel wil. Je weet niet wat hij precies bedoelt, dus meteen veranderen kan het erger maken.",
+         "Klopt: door door te vragen weet je welk deel van het betoog je moet verbeteren.",
+         "Koos je \"de tekst laten zoals hij is, want meningen mogen...\"? Dan denk je dat verschillende meningen het commentaar overbodig maken. Hij zegt dat de redenering niet overtuigt, en dat moet je serieus nemen.",
+         "Koos je \"alle argumenten schrappen en nieuwe bedenken\"? Dan denk je dat een nieuw begin nodig is. Misschien klopt alleen één schakel niet, en dan gooi je goed werk weg."
+        ],
+        "uh": "Eerst doorvragen.",
+        "ctx": "Een lezer schrijft: \"Ik ben het niet eens met je conclusie.\" Je weet niet of hij je argumenten of de conclusie zelf bedoelt."
+       },
+       {
+        "v": "Wat doe je met dit commentaar?",
+        "o": [
+         "alle zinnen herschrijven in spreektaal",
+         "de brief inleveren zonder na te denken over het commentaar",
+         "de aanhef weghalen om informeler te zijn",
+         "het afwegen en afwijzen, want een brief aan een gemeente vraagt een formeel register"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Weeg het commentaar af tegen opdracht en lezer.",
+        "uo": [
+         "Koos je \"alle zinnen herschrijven in spreektaal\"? Dan denk je dat de lezer informeel wil. Voor een gemeente past een formeel register, dus informeel zou een stijlfout zijn.",
+         "Koos je \"de brief inleveren zonder na te denken over het...\"? Dan denk je dat negeren vanzelf klopt. Je moet het commentaar eerst afwegen, en met een reden afwijzen.",
+         "Koos je \"de aanhef weghalen om informeler te zijn\"? Dan denk je dat de aanhef het probleem is. De aanhef hoort bij een formele brief, en weghalen maakt de brief onvolledig.",
+         "Klopt: de opdracht en de lezer bepalen het register; het commentaar past hier niet."
+        ],
+        "uh": "Opdracht en lezer bepalen.",
+        "ctx": "Een lezer zegt: \"Je tekst is te formeel.\" Jouw opdracht is een brief aan een gemeente."
+       },
+       {
+        "v": "Wat is hier nodig?",
+        "o": [
+         "de verwijzing aanpassen of weghalen",
+         "de verwijzing laten staan, want de lezer ziet het niet",
+         "een nieuwe alinea 4 verzinnen die erbij past",
+         "de conclusie volledig schrappen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Pas verwijzingen aan als je tekst hebt verplaatst of geschrapt.",
+        "uo": [
+         "Klopt: na schrappen moet je verwijzingen naar die alinea herstellen.",
+         "Koos je \"de verwijzing laten staan, want de lezer ziet het...\"? Dan denk je dat de lezer het niet merkt. Een verwijzing naar iets wat er niet is, valt op, en maakt de tekst onzorgvuldig.",
+         "Koos je \"een nieuwe alinea 4 verzinnen die erbij past\"? Dan denk je dat je de verwijzing moet redden met nieuwe tekst. Dat verandert de inhoud ongevraagd, en het is niet nodig.",
+         "Koos je \"de conclusie volledig schrappen\"? Dan denk je dat de conclusie weg moet. Alleen de verwijzing moet worden aangepast, de conclusie zelf blijft nodig."
+        ],
+        "uh": "Verwijzing herstellen.",
+        "ctx": "Je hebt een alinea geschrapt. In de conclusie staat nog: \"Zoals in alinea 4 beschreven ...\" maar alinea 4 bestaat niet meer."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een lezer geeft drie opmerkingen: (1) \"Je argumenten missen bewijs.\" (2) \"Je schrijft jij in een formele brief.\" (3) \"Je hebt een d/t-fout in regel vier.\"",
+        "v": "Welke pak je het eerst aan en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Opmerking 1 (1 punt): de inhoud bepaalt of het betoog overtuigt, en spelling en stijl zijn afwerking die je daarna doet (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Je verplaatst een alinea in je betoog. Daarna staat in een latere alinea: \"Zoals hierboven genoemd ...\"",
+        "v": "Waarom moet je de tekst na het verplaatsen nalopen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De verwijzing naar \"hierboven\" kan niet meer kloppen (1 punt). Wijzigingen kunnen nieuwe fouten of tegenstrijdigheden veroorzaken, dus je controleert de hele tekst (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een lezer zegt: \"Je betoog moet korter.\" De opdracht vraagt een betoog van drie pagina's.",
+        "v": "Hoe ga je met dit commentaar om?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je weegt het af tegen de opdracht (1 punt) en wijst het met een inhoudelijke reden af, omdat de opdracht de lengte bepaalt (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een lezer schrijft: \"Je alinea over kosten is onduidelijk.\" Jij weet niet wat er onduidelijk is.",
+        "v": "Wat doe je?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je vraagt de lezer wat er precies onduidelijk is (1 punt), zodat je gericht kunt aanpassen en niets goeds weggooit (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling past na commentaar alleen de spelfouten aan, terwijl de lezer vooral zei dat de argumenten onvoldoende bewijs hebben.",
+        "v": "Wat is hier mis?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij heeft de belangrijkste opmerking niet aangepakt (1 punt): de inhoud is het grootste punt, spelling alleen verbetert het betoog niet genoeg (1 punt)."
+       }
+      ]
      }
     ]
    },
