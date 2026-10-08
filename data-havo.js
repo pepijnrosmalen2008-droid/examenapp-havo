@@ -15168,6 +15168,668 @@ var VAKKEN = [
       "t": "Commentaar",
       "d": "opmerkingen van een lezer over wat in je tekst beter kan"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "nl.C.1",
+      "gs": 2,
+      "naam": "Informatie verzamelen, verwerken en verantwoorden",
+      "beschrijving": "Je kiest betrouwbare bronnen, verwerkt wat je vindt als citaat of in eigen woorden en vermeldt je bronnen, zodat je werk geen plagiaat is.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Bronnen zoeken en kiezen",
+       "Betrouwbaarheid beoordelen",
+       "Citeren",
+       "Parafraseren en samenvatten",
+       "Bronvermelding",
+       "Plagiaat vermijden"
+      ],
+      "sam": "Bij een gedocumenteerde tekst zoek je bronnen, beoordeel je afzender, doel, actualiteit en onderbouwing, verwerk je informatie als citaat (letterlijk, tussen aanhalingstekens) of parafrase (eigen woorden, eigen zinsbouw) en vermeld je altijd de bron in de tekst en in een bronnenlijst. Zonder bronvermelding is overgenomen tekst of een overgenomen idee plagiaat.",
+      "begrippen": [
+       {
+        "t": "Gedocumenteerde tekst",
+        "d": "Een tekst waarin informatie uit bronnen is verwerkt en verantwoord."
+       },
+       {
+        "t": "Bron",
+        "d": "Een boek, artikel, website of rapport waaruit je informatie haalt."
+       },
+       {
+        "t": "Afzender",
+        "d": "Degene die de informatie heeft gemaakt of verspreidt."
+       },
+       {
+        "t": "Betrouwbaarheid",
+        "d": "De mate waarin je op een bron kunt vertrouwen."
+       },
+       {
+        "t": "Actualiteit",
+        "d": "Of de informatie nog bij de tijd is."
+       },
+       {
+        "t": "Onafhankelijke bron",
+        "d": "Een bron zonder eigen belang bij wat er staat."
+       },
+       {
+        "t": "Citaat",
+        "d": "Een letterlijk overgenomen tekstdeel tussen aanhalingstekens."
+       },
+       {
+        "t": "Aanhalingstekens",
+        "d": "De tekens die een letterlijk overgenomen tekst omsluiten."
+       },
+       {
+        "t": "Parafrase",
+        "d": "De inhoud van een bron in eigen woorden en zinsbouw."
+       },
+       {
+        "t": "Bronvermelding",
+        "d": "De gegevens waarmee een lezer de bron kan terugvinden."
+       },
+       {
+        "t": "Bronnenlijst",
+        "d": "Alfabetisch overzicht van alle gebruikte bronnen."
+       },
+       {
+        "t": "Plagiaat",
+        "d": "Andermans werk of ideeën als eigen werk presenteren."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke bron is het meest geschikt voor een werkstuk over de gevolgen van schermtijd bij jongeren?",
+        "o": [
+         "een willekeurig forumbericht waarin iemand zijn ervaring vertelt over zijn eigen kinderen",
+         "een rapport van een onderzoeksinstituut met een verantwoorde methode",
+         "een reclamefolder van een fabrikant van telefoons met een mooi lay-out en veel foto's",
+         "een anoniem bericht op een sociaal medium dat veel is gedeeld en geliket"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een geschikte bron heeft een bekende, deskundige afzender en laat zien hoe de informatie is verkregen.",
+        "uo": [
+         "Koos je \"een willekeurig forumbericht waarin iemand zijn...\"? Dan denk je dat een persoonlijke ervaring hetzelfde is als onderzoek. Eén verhaal zegt niets over jongeren in het algemeen, en je kunt niet nagaan hoe de schrijver aan zijn mening komt.",
+         "Klopt: een onderzoeksrapport met een beschreven methode laat zien hoe de conclusies tot stand zijn gekomen, dus je kunt de betrouwbaarheid toetsen.",
+         "Koos je \"een reclamefolder van een fabrikant van telefoons...\"? Dan denk je dat een professioneel uiterlijk betrouwbaarheid bewijst. Een fabrikant wil telefoons verkopen en kiest dus selectief, dus het belang van de afzender kleurt de informatie.",
+         "Koos je \"een anoniem bericht op een sociaal medium dat veel...\"? Dan denk je dat veel deelmomenten iets zeggen over de juistheid. Populariteit is geen bewijs, en zonder bekende afzender kun je de bron niet controleren."
+        ],
+        "uh": "Let op afzender en verantwoording."
+       },
+       {
+        "v": "Waarom gebruik je voor een gedocumenteerd werkstuk bij voorkeur meer dan één bron?",
+        "o": [
+         "omdat een werkstuk met één bron nooit een voldoende kan halen, wat de docent verplicht stelt",
+         "zodat je de tekst langer kunt maken door steeds hetzelfde uit meerdere bronnen over te nemen",
+         "omdat elke bron maar één zin bevat die je kunt gebruiken, ook al is hij nog zo lang",
+         "je kunt informatie vergelijken en controleren"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Meerdere bronnen laten je vergelijken en controleren.",
+        "uo": [
+         "Koos je \"omdat een werkstuk met één bron nooit een voldoende...\"? Dan denk je dat het om een regel van de docent gaat. Het echte doel van meer bronnen is inhoudelijk: je kunt controleren of de informatie klopt en je krijgt een vollediger beeld.",
+         "Koos je \"zodat je de tekst langer kunt maken door steeds...\"? Dan denk je dat meer bronnen vooral meer woorden opleveren. Een werkstuk wordt niet beter van herhaling, maar van vergelijking en een breder overzicht.",
+         "Koos je \"omdat elke bron maar één zin bevat die je kunt...\"? Dan denk je dat bronnen altijd erg beperkt zijn. Een goede bron bevat vaak veel, maar pas door vergelijking zie je welke informatie betrouwbaar is.",
+         "Klopt: bronnen die elkaar bevestigen of tegenspreken laten zien wat waarschijnlijk klopt en waar de meningen verschillen."
+        ],
+        "uh": "Vergelijk bronnen."
+       },
+       {
+        "v": "Waaraan herken je dat een website een commercieel belang kan hebben?",
+        "o": [
+         "de website wil je iets verkopen en noemt vooral voordelen",
+         "de website heeft een duidelijk menu en een zoekfunctie waarmee je makkelijk iets vindt",
+         "de website is recent aangepast en bevat de datum van de laatste wijziging bovenaan",
+         "de website heeft meer dan één pagina over hetzelfde onderwerp en is dus uitgebreid"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Een commercieel belang herken je aan verkopen en eenzijdig positieve informatie.",
+        "uo": [
+         "Klopt: wie iets verkoopt, laat meestal alleen de gunstige kanten zien. Dat kleurt de informatie.",
+         "Koos je \"de website heeft een duidelijk menu en een...\"? Dan denk je dat gebruiksgemak iets zegt over het belang van de afzender. Een goed menu zegt niets over wat de site wil bereiken, dus je moet kijken naar wat de afzender wil verkopen of bereiken.",
+         "Koos je \"de website is recent aangepast en bevat de datum...\"? Dan denk je dat actualiteit duidt op commercieel belang. Een recente datum zegt iets over actualiteit, niet over het belang van de afzender. Dat zie je aan wat de site aanbiedt.",
+         "Koos je \"de website heeft meer dan één pagina over hetzelfde...\"? Dan denk je dat omvang iets zegt over belangen. Een uitgebreide site kan neutraal zijn of juist verkopen; je beoordeelt het belang aan het doel van de afzender."
+        ],
+        "uh": "Doel van de afzender."
+       },
+       {
+        "v": "Waarom is de datum van een bron belangrijk bij onderwerpen als technologie of cijfers?",
+        "o": [
+         "omdat oude bronnen altijd onbetrouwbaar zijn, ongeacht het onderwerp",
+         "omdat de datum bepaalt hoeveel punten je krijgt voor je bronnenlijst volgens de docent",
+         "de informatie kan verouderd zijn",
+         "omdat een nieuwe bron altijd door meer mensen is gelezen en dus beter is"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bij snel veranderende onderwerpen moet een bron actueel zijn.",
+        "uo": [
+         "Koos je \"omdat oude bronnen altijd onbetrouwbaar zijn,...\"? Dan denk je dat leeftijd altijd tot onjuistheid leidt. Over veel onderwerpen, zoals een historische gebeurtenis, blijft een oude bron bruikbaar; de datum telt vooral bij snel veranderende onderwerpen.",
+         "Koos je \"omdat de datum bepaalt hoeveel punten je krijgt...\"? Dan denk je dat het om een puntentelling gaat. De datum is een controlepunt voor actualiteit, en hoort ook in de bronvermelding zelf.",
+         "Klopt: cijfers en techniek veranderen snel, dus een oude bron kan niet meer kloppen.",
+         "Koos je \"omdat een nieuwe bron altijd door meer mensen is...\"? Dan denk je dat leesbereik de kwaliteit bepaalt. Hoeveel mensen een bron lazen zegt niets over de juistheid; de datum zegt alleen of de informatie nog actueel kan zijn."
+        ],
+        "uh": "Check de datum."
+       },
+       {
+        "v": "Welke bron weegt voor de cijfers het zwaarst?",
+        "o": [
+         "het blog van de fietsenwinkel, omdat die dagelijks met fietsers te maken heeft",
+         "beide even zwaar, want elke bron over fietsen is een bron",
+         "het rapport van het statistiekbureau",
+         "het blog, omdat het persoonlijker is geschreven en dus eerlijker overkomt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Voor cijfers weegt een bron met een verantwoorde methode zwaarder dan een bron met een verkoopbelang.",
+        "uo": [
+         "Koos je \"het blog van de fietsenwinkel, omdat die dagelijks...\"? Dan denk je dat dagelijkse ervaring gelijkstaat aan onderzoek. De winkel ziet alleen zijn eigen klanten, en verkoopt fietsen, dus zijn cijfers zijn niet systematisch verzameld.",
+         "Koos je \"beide even zwaar, want elke bron over fietsen is...\"? Dan denk je dat bronnen niet te rangschikken zijn. Je weegt bronnen op afzender, doel en verantwoording, en het statistiekbureau scoort daar hoger op dan een verkoper.",
+         "Klopt: een statistiekbureau verzamelt cijfers als taak en legt de werkwijze vast, terwijl de winkel er belang bij heeft.",
+         "Koos je \"het blog, omdat het persoonlijker is geschreven en...\"? Dan denk je dat een persoonlijke toon eerlijkheid bewijst. Toon zegt niets over de juistheid van cijfers, terwijl een verantwoorde methode dat wel doet."
+        ],
+        "uh": "Methode en afzender.",
+        "ctx": "Een leerling zoekt informatie over het aantal fietsers in Nederland en vindt een blog van een fietsenwinkel en een rapport van een statistiekbureau."
+       },
+       {
+        "v": "Wanneer zet je een stuk tekst uit een bron tussen aanhalingstekens?",
+        "o": [
+         "als je het woordelijk overneemt",
+         "als je de inhoud in je eigen woorden samenvat, zodat duidelijk is dat het van een ander komt",
+         "altijd wanneer je een bron noemt, ook als je geen tekst overneemt",
+         "alleen als de tekst langer is dan drie regels, omdat korte stukjes vrij zijn"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Woordelijke overname is een citaat: aanhalingstekens en bron.",
+        "uo": [
+         "Klopt: een letterlijk overgenomen tekstdeel is een citaat en hoort tussen aanhalingstekens, met bronvermelding.",
+         "Koos je \"als je de inhoud in je eigen woorden samenvat,...\"? Dan denk je dat aanhalingstekens ook bij eigen woorden horen. Eigen woorden zijn geen citaat; alleen woordelijk overgenomen tekst zet je tussen aanhalingstekens.",
+         "Koos je \"altijd wanneer je een bron noemt, ook als je geen...\"? Dan denk je dat noemen en citeren hetzelfde zijn. Je noemt een bron bij elke verwerking, maar aanhalingstekens gebruik je alleen bij letterlijke overname.",
+         "Koos je \"alleen als de tekst langer is dan drie regels,...\"? Dan denk je dat er een vrije ondergrens is. Elk woordelijk overgenomen stuk, ook kort, is een citaat, dus ook het kleinste stukje krijgt aanhalingstekens en bron."
+        ],
+        "uh": "Letterlijk = citaat."
+       },
+       {
+        "v": "Wat ontbreekt er?",
+        "o": [
+         "de aanhalingstekens, want die staan er niet",
+         "het woord \"volgens\", want dat hoort in een citaat",
+         "een eigen mening van de leerling in dezelfde zin",
+         "een bronvermelding bij het citaat"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Een citaat heeft altijd een bronvermelding nodig.",
+        "uo": [
+         "Koos je \"de aanhalingstekens, want die staan er niet\"? Dan denk je dat de aanhalingstekens ontbreken. Ze staan er wel; wat mist is de vermelding van welk rapport het is, wie het schreef en wanneer.",
+         "Koos je \"het woord volgens, want dat hoort in een citaat\"? Dan denk je dat dat woord het probleem is. \"Volgens\" is een gewone verwijzing; de bronvermelding ontbreekt en dat maakt de zin onvolledig.",
+         "Koos je \"een eigen mening van de leerling in dezelfde zin\"? Dan denk je dat een eigen mening nodig is. Het gaat er niet om dat je meer zegt, maar dat de lezer de bron kan terugvinden.",
+         "Klopt: het citaat staat al tussen aanhalingstekens, maar de lezer weet niet uit welke bron het komt."
+        ],
+        "uh": "Citaat plus bron.",
+        "ctx": "Een leerling schrijft: Volgens het rapport \"neemt het gebruik van de fiets toe in steden\". Er staat geen bron bij."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "niets, want het cijfer is anders genoteerd en dus eigen werk",
+         "de zin is bijna letterlijk overgenomen zonder bron of aanhalingstekens",
+         "het cijfer klopt niet, want 12 procent is anders dan twaalf procent",
+         "de leerling had er een eigen conclusie bij moeten schrijven"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een bijna letterlijke overname zonder bron of aanhalingstekens is plagiaat.",
+        "uo": [
+         "Koos je \"niets, want het cijfer is anders genoteerd en dus...\"? Dan denk je dat een ander schrijfwijze van het getal de zin van jou maakt. Bijna alle woorden en de opbouw zijn gelijk, dus het blijft overgenomen tekst zonder bron.",
+         "Klopt: een bijna letterlijke overname is geen eigen formulering en heeft aanhalingstekens of een herformulering plus bron nodig.",
+         "Koos je \"het cijfer klopt niet, want 12 procent is anders...\"? Dan denk je dat het cijfer is veranderd. Twaalf en 12 is hetzelfde getal; het probleem is de zin zelf, die vrijwel gelijk is aan de bron.",
+         "Koos je \"de leerling had er een eigen conclusie bij moeten...\"? Dan denk je dat een conclusie nodig is. Het ontbreken van bron en herformulering is het probleem, niet het ontbreken van een eigen mening."
+        ],
+        "uh": "Herformuleer echt of citeer.",
+        "ctx": "Een bron zegt: \"Het aantal fietsers is de afgelopen tien jaar met twaalf procent gegroeid.\" Een leerling schrijft: Het aantal fietsers is in tien jaar met 12 procent gegroeid."
+       },
+       {
+        "v": "Wat houdt een goede parafrase in?",
+        "o": [
+         "een paar woorden uit de bron vervangen door synoniemen en de zin verder laten staan",
+         "de tekst letterlijk overnemen en er geen aanhalingstekens bij zetten",
+         "de kernzin laten staan en er een andere zin aan toevoegen over wat jij vindt",
+         "de inhoud in eigen woorden en eigen zinsbouw weergeven, mét bron"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Een parafrase is eigen woorden, eigen zinsbouw en bronvermelding.",
+        "uo": [
+         "Koos je \"een paar woorden uit de bron vervangen door...\"? Dan denk je dat het wisselen van losse woorden genoeg is. De zinsbouw blijft dan van de auteur, en dat geldt nog steeds als bijna letterlijk overgenomen tekst.",
+         "Koos je \"de tekst letterlijk overnemen en er geen...\"? Dan denk je dat je dan een parafrase hebt. Letterlijk overnemen zonder tekens is plagiaat, want je laat de lezer denken dat de zin van jou is.",
+         "Koos je \"de kernzin laten staan en er een andere zin aan...\"? Dan denk je dat een eigen toevoeging de overname goed maakt. De overgenomen kernzin blijft letterlijk, dus je moet hem alsnog citeren of herschrijven.",
+         "Klopt: je geeft de betekenis eerlijk weer in eigen woorden en vermeldt waar het vandaan komt."
+        ],
+        "uh": "Eigen woorden plus bron."
+       },
+       {
+        "v": "Welke parafrase is goed?",
+        "o": [
+         "Door de stijging van de zeespiegel lopen laaggelegen kustgebieden meer risico op overstromingen.",
+         "Doordat het zeewater stijgt, is de kans op wateroverlast in lage kuststreken groter (bron: Kustinstituut, 2023).",
+         "Door de stijging van de zeestand lopen lage kustgebieden meer risico op overstromingen (bron: Kustinstituut, 2023).",
+         "Doordat de zee stijgt, zullen lage kuststreken zeker onder water komen te staan (bron: Kustinstituut, 2023)."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Een goede parafrase behoudt de betekenis maar verandert woorden én zinsbouw.",
+        "uo": [
+         "Koos je \"Door de stijging van de zeespiegel lopen...\"? Dan kopieer je de zin letterlijk zonder aanhalingstekens of bron. Dat is geen parafrase maar overname, en zonder aanduiding presenteer je het als eigen tekst.",
+         "Klopt: de betekenis is gelijk gebleven, de woorden en zinsbouw zijn eigen werk en de bron staat erbij.",
+         "Koos je \"Door de stijging van de zeestand lopen lage...\"? Dan wisselt een paar woorden maar behoudt de hele zinsbouw. Dat is een te kleine wijziging, dus de zin is nog bijna letterlijk en daarom geen echte parafrase.",
+         "Koos je \"Doordat de zee stijgt, zullen lage kuststreken...\"? Dan maakt van een groter risico een zekerheid. Een parafrase moet de betekenis van de bron behouden, en deze zin zegt meer dan de bron beweert."
+        ],
+        "uh": "Betekenis blijft, vorm verandert.",
+        "ctx": "Bron: \"Door de stijging van de zeespiegel lopen laaggelegen kustgebieden meer risico op overstromingen.\""
+       },
+       {
+        "v": "Welke parafrase geeft de betekenis het minst eerlijk weer?",
+        "o": [
+         "Een groot deel van de jongeren slaapt te kort doordat het nog lang naar een scherm kijkt.",
+         "Schermgebruik voor het slapen is volgens de bron een reden dat jongeren vaak te weinig slapen.",
+         "Alle jongeren slapen te weinig door hun schermen.",
+         "Jongeren die voor het slapen lang op hun scherm kijken, slapen vaak te weinig."
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Bij een parafrase mag je de betekenis niet wijzigen, bijvoorbeeld door \"veel\" tot \"alle\" te maken.",
+        "uo": [
+         "Koos je \"Een groot deel van de jongeren slaapt te kort...\"? Dan geeft de betekenis juist wel goed weer, met \"groot deel\" voor \"veel\" en een eigen zinsbouw; hier is niets mis mee.",
+         "Koos je \"Schermgebruik voor het slapen is volgens de bron...\"? Dan geeft de bewering juist en eerlijk weer, met \"vaak\" voor \"veel\" en bevat een verwijzing naar de bron, dus hier is niets mis mee.",
+         "Klopt: de bron zegt \"veel jongeren\", deze zin maakt er \"alle\" van en wijzigt zo de betekenis.",
+         "Koos je \"Jongeren die voor het slapen lang op hun scherm...\"? Dan behoudt de betekenis van de bron, omdat het verband tussen schermtijd en slaaptekort blijft, dus ook hier is niets mis mee."
+        ],
+        "uh": "Gelijke betekenis.",
+        "ctx": "Bron: \"Veel jongeren slapen te weinig, omdat zij voor het slapengaan nog lang naar hun schermen kijken.\""
+       },
+       {
+        "v": "Welke gegevens horen in elk geval in een bronvermelding bij een website?",
+        "o": [
+         "auteur of organisatie, titel, datum en webadres",
+         "alleen de naam van de website, want de rest is niet nodig",
+         "alleen het webadres, want dan kan iedereen de pagina openen",
+         "de naam van de leerling die de bron zocht en de datum waarop hij hem las"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Een bronvermelding laat de lezer de bron terugvinden: auteur, titel, datum en vindplaats.",
+        "uo": [
+         "Klopt: met die gegevens kan een lezer de bron zelf terugvinden en de datum controleren.",
+         "Koos je \"alleen de naam van de website, want de rest is niet...\"? Dan denk je dat een naam genoeg is. De lezer moet de precieze pagina kunnen terugvinden, dus ook titel, datum en webadres horen erbij.",
+         "Koos je \"alleen het webadres, want dan kan iedereen de...\"? Dan denk je dat een link alleen volstaat. Pagina's verdwijnen of veranderen, dus je noteert ook auteur, titel en datum om de bron te herkennen.",
+         "Koos je \"de naam van de leerling die de bron zocht en de...\"? Dan denk je dat het om jezelf gaat. Een bronvermelding beschrijft de bron, niet de zoeker; de zoekdatum mag erbij, maar auteur en titel zijn onmisbaar."
+        ],
+        "uh": "Auteur, titel, datum, vindplaats."
+       },
+       {
+        "v": "Wat is hier gebruikelijk om aan te passen?",
+        "o": [
+         "de bronnen alfabetisch ordenen op de naam van de auteur",
+         "de bronnen sorteren op de lengte van de tekst, zodat het korte bovenaan staat",
+         "alle bronnen weglaten, want ze staan al in de tekst",
+         "de bronnen op de datum van publicatie zetten, de nieuwste bovenaan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Een bronnenlijst zet je meestal alfabetisch op auteur.",
+        "uo": [
+         "Klopt: een bronnenlijst is meestal alfabetisch, zodat de lezer snel een bron kan vinden.",
+         "Koos je \"de bronnen sorteren op de lengte van de tekst,...\"? Dan denk je dat lengte een logische volgorde is. De lezer zoekt op auteursnaam, dus alfabetisch is de gebruikelijke volgorde.",
+         "Koos je \"alle bronnen weglaten, want ze staan al in de tekst\"? Dan denk je dat de verwijzingen in de tekst genoeg zijn. De lijst geeft de volledige gegevens, zodat de lezer elke bron kan terugvinden.",
+         "Koos je \"de bronnen op de datum van publicatie zetten, de...\"? Dan denk je dat datum de standaard is. Sommige docenten vragen dat, maar alfabetisch op auteur is de gebruikelijke manier om bronnen snel terug te vinden."
+        ],
+        "uh": "Alfabetisch op auteur.",
+        "ctx": "Een leerling heeft de bronnenlijst voor zijn werkstuk gemaakt. In de lijst staan drie bronnen op volgorde van het moment waarop hij ze vond."
+       },
+       {
+        "v": "Welk probleem heeft dit werkstuk?",
+        "o": [
+         "er zijn te veel bronnen gebruikt, terwijl er één voldoende is",
+         "de bronnenlijst staat aan het einde in plaats van aan het begin van het werkstuk",
+         "de lezer kan niet nagaan welke bewering uit welke bron komt",
+         "de titels zijn te lang om in een lijst te zetten, dus verkort ze"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Zowel bronverwijzingen in de tekst als een bronnenlijst zijn nodig.",
+        "uo": [
+         "Koos je \"er zijn te veel bronnen gebruikt, terwijl er één...\"? Dan denk je dat meer bronnen een nadeel zijn. Vijf bronnen is prima; het probleem is de ontbrekende koppeling tussen tekst en bronnenlijst.",
+         "Koos je \"de bronnenlijst staat aan het einde in plaats van...\"? Dan denk je dat de plek van de lijst het probleem is. Aan het einde hoort hij juist; wat ontbreekt zijn de verwijzingen in de tekst zelf.",
+         "Klopt: bronvermelding in de tekst koppelt elke bewering aan een bron; een losse lijst alleen doet dat niet.",
+         "Koos je \"de titels zijn te lang om in een lijst te zetten,...\"? Dan denk je dat de lengte van titels uitmaakt. Het gaat niet om de vorm van de lijst, maar om de ontbrekende verwijzing van de bewering naar de bron."
+        ],
+        "uh": "Verwijs in de tekst en in de lijst.",
+        "ctx": "Een werkstuk bevat een bronnenlijst met vijf titels, maar in de tekst staat nergens welke informatie uit welke bron komt."
+       },
+       {
+        "v": "Hoe herken je plagiaat?",
+        "o": [
+         "een bron correct vermelden in je bronnenlijst en in de tekst",
+         "andermans tekst of ideeën als eigen werk presenteren",
+         "een citaat gebruiken met aanhalingstekens en een bron erbij",
+         "een tekst samenvatten in eigen woorden met bronvermelding"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Plagiaat is andermans werk als eigen werk presenteren.",
+        "uo": [
+         "Koos je \"een bron correct vermelden in je bronnenlijst en in...\"? Dan denk je dat bronvermelding plagiaat is. Het is juist het tegenovergestelde, want je maakt duidelijk wat van wie komt.",
+         "Klopt: plagiaat is andermans werk zonder bronvermelding als het jouwe laten voorkomen.",
+         "Koos je \"een citaat gebruiken met aanhalingstekens en een...\"? Dan denk je dat citeren verboden is. Een correct citaat met bron is toegestaan, want de lezer ziet dat de woorden van een ander komen.",
+         "Koos je \"een tekst samenvatten in eigen woorden met...\"? Dan denk je dat samenvatten hetzelfde is als overschrijven. Een eerlijke samenvatting met bron is gewoon verwerking, geen plagiaat."
+        ],
+        "uh": "Geen bron = plagiaat."
+       },
+       {
+        "v": "Is dit plagiaat?",
+        "o": [
+         "nee, want hij heeft twee woorden zelf toegevoegd",
+         "nee, want websites zijn openbaar en dus vrij te gebruiken",
+         "nee, want hij heeft de tekst niet van een boek maar van internet",
+         "ja, hij presenteert andermans tekst als eigen werk"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Zonder bron overgenomen tekst is plagiaat, ook als je er iets aan toevoegt.",
+        "uo": [
+         "Koos je \"nee, want hij heeft twee woorden zelf toegevoegd\"? Dan denk je dat een kleine toevoeging de tekst eigen maakt. De rest blijft van de website, dus zonder bron is het nog steeds plagiaat.",
+         "Koos je \"nee, want websites zijn openbaar en dus vrij te...\"? Dan denk je dat openbaar betekent zonder bron. Ook openbare teksten hebben een maker, en je moet die vermelden.",
+         "Koos je \"nee, want hij heeft de tekst niet van een boek maar...\"? Dan denk je dat het soort bron bepaalt of plagiaat telt. Het geldt voor elke bron, dus ook voor teksten van websites.",
+         "Klopt: een paar woorden veranderen of toevoegen maakt de tekst niet van jou en zonder bron is het plagiaat."
+        ],
+        "uh": "Altijd bron.",
+        "ctx": "Een leerling geeft een alinea uit een website op zijn eigen werkstuk door, maar voegt twee woorden toe en laat de bron weg."
+       },
+       {
+        "v": "Is zijn redenering juist?",
+        "o": [
+         "ja, want eigen woorden betekent eigen werk",
+         "nee, ook een overgenomen idee heeft een bronvermelding nodig",
+         "ja, want ideeën kunnen niet van iemand zijn",
+         "ja, maar alleen als het artikel niet erg bekend is"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Ook een idee in eigen woorden heeft een bron nodig.",
+        "uo": [
+         "Koos je \"ja, want eigen woorden betekent eigen werk\"? Dan denk je dat alleen de zinnen tellen. Een idee dat je ergens vandaan haalt blijft van de bedenker, dus je moet de bron noemen, ook als de woorden van jou zijn.",
+         "Klopt: het gaat om het idee. Ook als je het in eigen woorden zegt, moet je de bron noemen.",
+         "Koos je \"ja, want ideeën kunnen niet van iemand zijn\"? Dan denk je dat ideeën vrij zijn. Een uitgewerkt idee of onderzoeksresultaat is wel van de maker, en bronvermelding hoort bij verwerking.",
+         "Koos je \"ja, maar alleen als het artikel niet erg bekend is\"? Dan denk je dat bekendheid bepaalt of een bron genoemd moet worden. Dat maakt niets uit; je noemt altijd de bron van wat je gebruikt."
+        ],
+        "uh": "Idee = bron noemen.",
+        "ctx": "Een leerling schrijft in zijn werkstuk een idee uit een artikel op in eigen woorden, zonder het artikel te noemen. Hij vindt dat het mag, omdat de zinnen van hem zijn."
+       },
+       {
+        "v": "Welke bron gebruikt hij het best als hoofdbron?",
+        "o": [
+         "het geschiedenisboek van de uitgever",
+         "het blog, omdat het een spannend verhaal heeft",
+         "geen enkele bron, want over geschiedenis bestaat alleen een mening",
+         "alle drie even zwaar, omdat ze over hetzelfde onderwerp gaan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Kies bronnen met een deskundige afzender en onderbouwing boven stellige beweringen zonder bewijs.",
+        "uo": [
+         "Klopt: een uitgever laat de inhoud controleren door deskundigen, terwijl een blog zonder bewijs onbetrouwbaar is.",
+         "Koos je \"het blog, omdat het een spannend verhaal heeft\"? Dan denk je dat een spannend verhaal een betrouwbare verklaring is. Een bewering zonder bewijs is geen goede bron, ook niet als hij boeiend klinkt.",
+         "Koos je \"geen enkele bron, want over geschiedenis bestaat...\"? Dan denk je dat geschiedenis alleen een mening is. Historici gebruiken bronnen en verantwoorden hun conclusies, dus je kunt wel degelijk bronnen kiezen.",
+         "Koos je \"alle drie even zwaar, omdat ze over hetzelfde...\"? Dan denk je dat het onderwerp de waarde van een bron bepaalt. Je weegt bronnen op afzender en bewijs, en het blog heeft geen van beide."
+        ],
+        "uh": "Weeg de bronnen.",
+        "ctx": "Een leerling zoekt de oorzaken van de Eerste Wereldoorlog. Hij vindt een encyclopedie, een geschiedenisboek van een uitgever en een blog dat zegt dat \"alles een complot was\"."
+       },
+       {
+        "v": "Welke bron levert het sterkste bewijs en waarom?",
+        "o": [
+         "de fabrikant, want die kent het medicijn het best en weet dus wat werkt",
+         "de drie gebruikers, want persoonlijke verhalen zijn overtuigender",
+         "geen van beide, want je kunt nooit weten wat waar is",
+         "het onafhankelijke onderzoek, want het is breed en niet door de verkoper gedaan"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Onafhankelijk onderzoek met veel deelnemers is sterker bewijs dan ervaringen die een verkoper kiest.",
+        "uo": [
+         "Koos je \"de fabrikant, want die kent het medicijn het best...\"? Dan denk je dat kennis van het product genoeg is. De fabrikant wil verkopen en kiest zijn voorbeelden; dat maakt de bron minder onafhankelijk.",
+         "Koos je \"de drie gebruikers, want persoonlijke verhalen zijn...\"? Dan denk je dat ervaringen sterker zijn dan onderzoek. Drie verhalen zeggen weinig over alle gebruikers, en ze zijn door de fabrikant uitgekozen.",
+         "Koos je \"geen van beide, want je kunt nooit weten wat waar is\"? Dan denk je dat bronnen niet te beoordelen zijn. Je kunt wel degelijk beoordelen welke bron het sterkste bewijs levert; onafhankelijkheid en omvang zijn criteria.",
+         "Klopt: een grote, onafhankelijke steekproef zegt meer dan drie ervaringen die de verkoper zelf heeft gekozen."
+        ],
+        "uh": "Onafhankelijk en breed.",
+        "ctx": "Een leerling wil weten of een nieuw medicijn werkt. Hij vindt een pagina van de fabrikant met drie tevreden gebruikers en een samenvatting van een onafhankelijk onderzoek met 2000 deelnemers."
+       },
+       {
+        "v": "Hoe beoordeel je deze bron het best?",
+        "o": [
+         "als volledig betrouwbaar, want een diëtist is een deskundige",
+         "als onbetrouwbaar, want zuivel is gewoon slecht",
+         "met voorzichtigheid, want de afzender heeft belang bij het advies",
+         "als betrouwbaar, omdat het artikel op internet staat en dus gecontroleerd is"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Een afzender met een belang beoordeel je voorzichtig en controleer je met een andere bron.",
+        "uo": [
+         "Koos je \"als volledig betrouwbaar, want een diëtist is een...\"? Dan denk je dat deskundigheid genoeg is. Een deskundige kan ook belangen hebben, en dan controleer je het advies met een onafhankelijke bron.",
+         "Koos je \"als onbetrouwbaar, want zuivel is gewoon slecht\"? Dan denk je dat de bron meteen af te schrijven is. Het advies kan kloppen; je weegt het alleen voorzichtig en zoekt bevestiging bij een andere bron.",
+         "Klopt: de afzender heeft een commercieel belang, dus je zoekt een tweede, onafhankelijke bron.",
+         "Koos je \"als betrouwbaar, omdat het artikel op internet...\"? Dan denk je dat een publicatie automatisch controle betekent. Iedereen kan publiceren, dus je beoordeelt afzender en belang zelf."
+        ],
+        "uh": "Afzender, belang, controleren.",
+        "ctx": "Een artikel over voedsel is geschreven door een diëtist die in dienst is van een zuivelfabrikant. Het artikel adviseert elke dag drie glazen melk."
+       },
+       {
+        "v": "Wat is verstandiger?",
+        "o": [
+         "de vier zinnen letterlijk overnemen en er niets over zeggen",
+         "de vier zinnen overnemen zonder aanhalingstekens omdat het toch bekend materiaal is",
+         "de kern in eigen woorden weergeven en een korte passage citeren, met bron",
+         "de passage helemaal weglaten, want citeren mag nooit"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Gebruik een citaat kort en voor nadruk, de rest in eigen woorden met bron.",
+        "uo": [
+         "Koos je \"de vier zinnen letterlijk overnemen en er niets...\"? Dan denk je dat een citaat voor zich spreekt. Een lang citaat zonder eigen toelichting laat zien dat de schrijver zelf niets maakt, en het verdringt je eigen betoog.",
+         "Koos je \"de vier zinnen overnemen zonder aanhalingstekens...\"? Dan denk je dat bekende tekst vrij is. Zonder aanhalingstekens en bron is het plagiaat, ook als de tekst algemeen bekend is.",
+         "Klopt: een betoog heeft eigen woorden nodig; een kort citaat benadrukt iets, terwijl lange passages je eigen tekst verdringen.",
+         "Koos je \"de passage helemaal weglaten, want citeren mag nooit\"? Dan denk je dat citeren verboden is. Citeren mag wel, met aanhalingstekens en bron; het is alleen beter om kort te citeren en de rest te herschrijven."
+        ],
+        "uh": "Kort citeren, rest herschrijven.",
+        "ctx": "Een leerling wil in zijn betoog een lange passage uit een artikel gebruiken. Het gaat om vier zinnen die hij heel goed vindt."
+       },
+       {
+        "v": "Wat ontbreekt?",
+        "o": [
+         "aanhalingstekens, want het is een citaat",
+         "een eigen mening over de uitkomst van het onderzoek",
+         "niets, want de zin is al in eigen woorden geschreven",
+         "een bronvermelding van het onderzoek"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Ook een eigen formulering van een bewering uit een bron krijgt een bronvermelding.",
+        "uo": [
+         "Koos je \"aanhalingstekens, want het is een citaat\"? Dan denk je dat dit een citaat is. Het is een samenvatting in eigen woorden; aanhalingstekens horen bij letterlijke overname, dus de bron ontbreekt.",
+         "Koos je \"een eigen mening over de uitkomst van het onderzoek\"? Dan denk je dat een mening nodig is. Het gaat om de herkomst van de bewering, niet om een mening van de schrijver.",
+         "Koos je \"niets, want de zin is al in eigen woorden geschreven\"? Dan denk je dat eigen woorden de bron overbodig maken. De bewering komt uit een onderzoek, dus de bron moet erbij, ook zonder citaat.",
+         "Klopt: de inhoud is goed herformuleerd, maar zonder bron kan de lezer niet nagaan waar de bewering vandaan komt."
+        ],
+        "uh": "Parafrase = bron.",
+        "ctx": "Een leerling vat een nieuwsbericht samen: \"Volgens het onderzoek van de universiteit eten jongeren minder groente dan tien jaar geleden.\" Hij schrijft: Jongeren eten de laatste jaren minder groenten."
+       },
+       {
+        "v": "Waarom is deze bronvermelding onvoldoende?",
+        "o": [
+         "de lezer kan de bron niet terugvinden",
+         "omdat het jaartal te vaag is voor een website",
+         "omdat \"internet\" geen echte bron is maar een plek",
+         "omdat de bron niet in het Engels is geschreven"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Een bronvermelding moet genoeg gegevens bevatten om de bron terug te vinden.",
+        "uo": [
+         "Klopt: er ontbreken auteur of afzender, titel en webadres, dus niemand kan de bron controleren.",
+         "Koos je \"omdat het jaartal te vaag is voor een website\"? Dan denk je dat het jaartal het enige probleem is. Het jaartal is aanwezig; wat mist is de afzender, de titel en het webadres, zodat de bron niet is terug te vinden.",
+         "Koos je \"omdat internet geen echte bron is maar een plek\"? Dan denk je dat het woord internet de fout is. Dat klopt gedeeltelijk, maar het echte probleem is dat een lezer met deze gegevens de bron niet kan vinden.",
+         "Koos je \"omdat de bron niet in het Engels is geschreven\"? Dan denk je dat de taal een rol speelt. De taal doet niet ter zake; het gaat om de ontbrekende gegevens waarmee je de bron terugvindt."
+        ],
+        "uh": "Terugvindbaar.",
+        "ctx": "Een leerling noteert de bron als: \"internet, 2024\"."
+       },
+       {
+        "v": "Wat is de juiste conclusie over de tweede leerling?",
+        "o": [
+         "niets, want hij was eerlijk tegen de docent",
+         "hij pleegde plagiaat als hij de bron niet vermeldt",
+         "niets, want hij schreef het niet over van een boek",
+         "niets, want de eerste leerling heeft het ook gedaan"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Plagiaat is overnemen zonder bron, ook als je het later toegeeft.",
+        "uo": [
+         "Koos je \"niets, want hij was eerlijk tegen de docent\"? Dan denk je dat eerlijk zijn nadat het gebeurd is plagiaat ongedaan maakt. De bronvermelding moet in het werkstuk staan, niet alleen in een gesprek erna.",
+         "Klopt: zonder bronvermelding is overgenomen tekst plagiaat, ook als hij eerlijk zegt waar hij het vandaan heeft.",
+         "Koos je \"niets, want hij schreef het niet over van een boek\"? Dan denk je dat het soort bron bepaalt of er plagiaat is. Het geldt voor elke bron, dus ook voor een website.",
+         "Koos je \"niets, want de eerste leerling heeft het ook gedaan\"? Dan denk je dat andermans fout jouw fout goedmaakt. Elke leerling is zelf verantwoordelijk, en overnemen zonder bron blijft plagiaat."
+        ],
+        "uh": "Bron in het werkstuk.",
+        "ctx": "Twee leerlingen leveren bijna gelijke werkstukken in. De ene zegt dat hij alles zelf geschreven heeft, de andere dat hij het van een website heeft gehaald."
+       },
+       {
+        "v": "Welke vraag helpt het meest om de betrouwbaarheid van een bron te beoordelen?",
+        "o": [
+         "hoe mooi is de website vormgegeven met kleuren en foto's?",
+         "hoeveel mensen hebben de pagina geliket?",
+         "hoe lang is de tekst op de pagina in woorden?",
+         "wie heeft dit geschreven en waarom?"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Vraag naar afzender, doel en onderbouwing.",
+        "uo": [
+         "Koos je \"hoe mooi is de website vormgegeven met kleuren en...\"? Dan denk je dat het uiterlijk iets zegt over de juistheid. Een mooie site kan onbetrouwbaar zijn; de afzender en het doel zijn veel belangrijker.",
+         "Koos je \"hoeveel mensen hebben de pagina geliket?\"? Dan denk je dat populariteit bewijs is. Likes zeggen weinig over de juistheid, en veel gedeelde onzin blijft onzin.",
+         "Koos je \"hoe lang is de tekst op de pagina in woorden?\"? Dan denk je dat lengte een maat voor kwaliteit is. Een lange tekst kan ook onjuist zijn; je beoordeelt afzender en doel.",
+         "Klopt: afzender en doel laten zien of een bron deskundig en onafhankelijk is."
+        ],
+        "uh": "Wie en waarom."
+       },
+       {
+        "v": "Hoe werkt deze verwijzing?",
+        "o": [
+         "de verwijzing in de tekst koppelt aan de volledige gegevens in de lijst",
+         "de verwijzing hoeft niet te kloppen met de lijst, want de lijst staat los van de tekst",
+         "de verwijzing in de tekst is overbodig, want de lijst vermeldt Jansen al",
+         "de verwijzing noemt alleen de eerste letter van de auteur zodat hij kort blijft"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Verwijzing in de tekst en volledige vermelding in de lijst horen bij elkaar.",
+        "uo": [
+         "Klopt: auteur en jaar in de tekst wijzen naar de volledige bronvermelding in de bronnenlijst.",
+         "Koos je \"de verwijzing hoeft niet te kloppen met de lijst,...\"? Dan denk je dat de twee onafhankelijk zijn. De verwijzing in de tekst en de lijst horen bij elkaar, zodat een lezer van Jansen (2022) naar de volledige bron kan.",
+         "Koos je \"de verwijzing in de tekst is overbodig, want de...\"? Dan denk je dat de lijst genoeg is. Zonder verwijzing weet de lezer niet welke bewering uit welke bron komt, dus je hebt beide nodig.",
+         "Koos je \"de verwijzing noemt alleen de eerste letter van de...\"? Dan denk je dat een afgekorte naam volstaat. Een verwijzing moet de bron eenduidig aanwijzen, dus een achternaam met jaartal is minimaal."
+        ],
+        "uh": "Tekst en lijst koppelen.",
+        "ctx": "Een leerling schrijft: \"Volgens Jansen (2022) is overstappen op de fiets goed voor de gezondheid\" en zet Jansen in de bronnenlijst."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zoekt cijfers over fietsgebruik. Hij vindt een rapport van een statistiekbureau en het blog van een fietsenwinkel.",
+        "v": "Welke bron gebruikt hij het best voor de cijfers en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het rapport van het statistiekbureau (1 punt), want die bron heeft de cijfers volgens een vaste werkwijze verzameld en geen verkoopbelang, terwijl de winkel er belang bij heeft om fietsen te verkopen (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bron: \"Veel jongeren slapen te weinig, omdat zij voor het slapengaan nog lang naar hun schermen kijken.\" Een leerling schrijft: Alle jongeren slapen te weinig door hun schermen.",
+        "v": "Waarom is dit geen goede parafrase?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De betekenis is veranderd: \"veel jongeren\" is \"alle jongeren\" geworden (1 punt). Een parafrase moet de bewering van de bron eerlijk weergeven, zonder sterker of zwakker te maken (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling neemt een alinea van een website over, verandert twee woorden en vermeldt geen bron.",
+        "v": "Leg uit waarom dit plagiaat is en wat hij had moeten doen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij presenteert andermans tekst als zijn eigen werk (1 punt). Hij had de alinea in eigen woorden en eigen zinsbouw moeten weergeven met bronvermelding, of kort moeten citeren met aanhalingstekens en bron (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling noteert als bron: \"internet, 2024\".",
+        "v": "Waarom is dit onvoldoende en welke gegevens moeten er minimaal bij?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De lezer kan de bron niet terugvinden (1 punt). Minimaal nodig zijn auteur of organisatie, titel, datum en webadres (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling gebruikt een idee uit een artikel in eigen woorden en noemt het artikel niet. Hij zegt dat het mag, omdat de zinnen van hem zijn.",
+        "v": "Is zijn redenering juist? Leg uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Nee (1 punt). Ook een overgenomen idee komt van de bedenker, dus je moet de bron noemen, ook als de woorden van jou zijn (1 punt)."
+       }
+      ]
+     }
     ]
    },
    {

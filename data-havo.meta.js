@@ -332,7 +332,31 @@ var VAKKEN = [
     "nSv": 124,
     "nOe": 4,
     "nBeg": 23,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "nl.C.1",
+      "gs": 2,
+      "naam": "Informatie verzamelen, verwerken en verantwoorden",
+      "beschrijving": "Je kiest betrouwbare bronnen, verwerkt wat je vindt als citaat of in eigen woorden en vermeldt je bronnen, zodat je werk geen plagiaat is.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Bronnen zoeken en kiezen",
+       "Betrouwbaarheid beoordelen",
+       "Citeren",
+       "Parafraseren en samenvatten",
+       "Bronvermelding",
+       "Plagiaat vermijden"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "D",
