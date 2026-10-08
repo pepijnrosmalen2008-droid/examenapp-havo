@@ -1,0 +1,678 @@
+{
+ "id": "C4",
+ "lo": "nl.C.4",
+ "gs": 2,
+ "naam": "Tekst en alinea opbouwen",
+ "beschrijving": "Je bouwt een tekst op uit alinea's met een kernzin en uitwerking, begint en eindigt sterk en zorgt voor samenhang met signaalwoorden en tussenkopjes.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Alinea en kernzin",
+  "Openingsalinea",
+  "Slotalinea",
+  "Tussenkopjes",
+  "Signaalwoorden en samenhang",
+  "Volgorde van alinea's"
+ ],
+ "sam": "Een tekst bestaat uit alinea's: elke alinea behandelt één onderwerp, met een kernzin (meestal vooraan) en een uitwerking. De openingsalinea leidt het onderwerp in en trekt de aandacht, de slotalinea bevestigt de stelling of trekt de conclusie. Tussenkopjes en signaalwoorden (maar, daardoor, bovendien) geven de opbouw en de verbanden zichtbaar weer; samenhang heet coherentie.",
+ "begrippen": [
+  {
+   "t": "Alinea",
+   "d": "Een deel van een tekst over één onderwerp."
+  },
+  {
+   "t": "Kernzin",
+   "d": "De zin die de hoofdgedachte van een alinea samenvat."
+  },
+  {
+   "t": "Uitwerking",
+   "d": "De zinnen die de kernzin toelichten of onderbouwen."
+  },
+  {
+   "t": "Openingsalinea",
+   "d": "De eerste alinea, die het onderwerp inleidt."
+  },
+  {
+   "t": "Slotalinea",
+   "d": "De laatste alinea, die afrondt met een conclusie."
+  },
+  {
+   "t": "Tussenkopje",
+   "d": "Een kopje boven een deel van een tekst."
+  },
+  {
+   "t": "Coherentie",
+   "d": "De samenhang tussen zinnen en alinea's."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat het verband tussen zinnen aangeeft."
+  },
+  {
+   "t": "Middenstuk",
+   "d": "Het deel tussen opening en slot met de argumenten of uitleg."
+  },
+  {
+   "t": "Deelonderwerp",
+   "d": "Een onderdeel van het hoofdonderwerp."
+  },
+  {
+   "t": "Verwijswoord",
+   "d": "Een woord dat naar iets eerders verwijst, zoals \"dit\" of \"zij\"."
+  },
+  {
+   "t": "Opbouw",
+   "d": "De ordening van de onderdelen van een tekst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Hoeveel deelonderwerpen behandelt een goede alinea?",
+   "o": [
+    "twee of drie, zodat de tekst korter blijft en minder alinea's nodig heeft",
+    "één",
+    "zoveel als je maar kwijt kunt, zolang de alinea niet te lang wordt",
+    "geen, want een alinea hoeft geen onderwerp te hebben"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een alinea behandelt één onderwerp.",
+   "uo": [
+    "Koos je \"twee of drie, zodat de tekst korter blijft en...\"? Dan denk je dat meer onderwerpen in één alinea efficiënt is. De lezer verliest dan het overzicht, en kan de kern niet vinden.",
+    "Klopt: een alinea gaat over één onderwerp, zodat de lezer het overzicht houdt.",
+    "Koos je \"zoveel als je maar kwijt kunt, zolang de alinea...\"? Dan denk je dat de lengte de grens is. Het gaat om het onderwerp, niet om het aantal regels; één onderwerp per alinea.",
+    "Koos je \"geen, want een alinea hoeft geen onderwerp te hebben\"? Dan denk je dat een alinea losse zinnen is. Elke alinea heeft een kern, namelijk één onderwerp."
+   ],
+   "uh": "Eén onderwerp per alinea."
+  },
+  {
+   "v": "Hoe heet de zin die de hoofdgedachte van een alinea samenvat?",
+   "o": [
+    "slotzin van de tekst, die altijd aan het einde van het hele stuk staat",
+    "voorbeeldzin, die een voorbeeld geeft bij een argument zonder de kern te noemen",
+    "titelzin, die boven aan de pagina staat en de tekst een naam geeft",
+    "kernzin"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "De kernzin vat de hoofdgedachte van een alinea samen.",
+   "uo": [
+    "Koos je \"slotzin van de tekst, die altijd aan het einde van...\"? Dan denk je dat de kernzin altijd bij het einde hoort. Een kernzin staat in elke alinea, vaak aan het begin.",
+    "Koos je \"voorbeeldzin, die een voorbeeld geeft bij een...\"? Dan denk je dat een voorbeeldzin de kern is. Een voorbeeld ondersteunt de kern, maar is zelf de kern niet.",
+    "Koos je \"titelzin, die boven aan de pagina staat en de tekst...\"? Dan denk je dat de titel de kernzin is. De titel hoort bij de hele tekst, de kernzin bij één alinea.",
+    "Klopt: de kernzin geeft aan waar de alinea over gaat."
+   ],
+   "uh": "Kern in één zin."
+  },
+  {
+   "v": "Welke plek heeft de kernzin vaak in een alinea?",
+   "o": [
+    "aan het begin, gevolgd door de uitwerking",
+    "midden in de alinea, tussen twee voorbeelden in",
+    "alleen aan het einde, want de lezer moet eerst de uitleg lezen",
+    "in een tussenkopje boven de alinea in plaats van in de alinea zelf"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "De kernzin staat meestal aan het begin van de alinea.",
+   "uo": [
+    "Klopt: de kernzin staat meestal vooraan, daarna volgen uitleg, voorbeelden of argumenten.",
+    "Koos je \"midden in de alinea, tussen twee voorbeelden in\"? Dan denk je dat het midden de gewone plek is. Een kernzin in het midden is moeilijk te vinden, dus meestal staat hij vooraan.",
+    "Koos je \"alleen aan het einde, want de lezer moet eerst de...\"? Dan denk je dat de kernzin altijd achteraan staat. Dat kan, maar de gewone plek is voorop, zodat de lezer weet waar het over gaat.",
+    "Koos je \"in een tussenkopje boven de alinea in plaats van in...\"? Dan denk je dat een kopje de kernzin vervangt. Een kopje noemt het onderwerp, de kernzin staat in de tekst."
+   ],
+   "uh": "Kern voorop."
+  },
+  {
+   "v": "Wat is de kernzin?",
+   "o": [
+    "de laatste zin over slaap, omdat die het langst is",
+    "de tweede zin over het hart, omdat die het eerst een voordeel noemt",
+    "Sporten is gezond.",
+    "geen enkele zin, want de kern staat niet in de alinea"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "De kernzin vat de alinea samen; de rest werkt hem uit.",
+   "uo": [
+    "Koos je \"de laatste zin over slaap, omdat die het langst is\"? Dan denk je dat de laatste zin de kern is. Die zin werkt één voordeel uit, en is dus geen kern van de hele alinea.",
+    "Koos je \"de tweede zin over het hart, omdat die het eerst...\"? Dan denk je dat de eerste uitwerking de kern is. Een uitwerking hoort bij de kern, en is dus zelf niet de kern.",
+    "Klopt: deze zin noemt de hoofdgedachte, de rest werkt die uit.",
+    "Koos je \"geen enkele zin, want de kern staat niet in de...\"? Dan denk je dat de kern ontbreekt. De eerste zin vat de alinea samen, dus er is wel een kernzin."
+   ],
+   "uh": "Zin 1 = kern.",
+   "ctx": "Een alinea begint met: \"Sporten is gezond.\" Daarna volgen drie zinnen over de voordelen voor hart, spieren en slaap."
+  },
+  {
+   "v": "Wat is hier het probleem?",
+   "o": [
+    "de alinea is te kort, want een alinea moet altijd minstens tien zinnen hebben",
+    "er staat geen kernzin in, want een alinea mag geen kernzin hebben",
+    "er staan drie deelonderwerpen in één alinea",
+    "de alinea heeft geen tussenkopje, want elke alinea moet er één hebben"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Elk deelonderwerp krijgt een eigen alinea.",
+   "uo": [
+    "Koos je \"de alinea is te kort, want een alinea moet altijd...\"? Dan denk je dat er een vast minimum is. Een alinea heeft geen vast aantal zinnen, het gaat om het aantal onderwerpen.",
+    "Koos je \"er staat geen kernzin in, want een alinea mag geen...\"? Dan denk je dat een kernzin verboden is. Een kernzin hoort er juist bij; het probleem is het aantal onderwerpen.",
+    "Klopt: elk deelonderwerp verdient een eigen alinea.",
+    "Koos je \"de alinea heeft geen tussenkopje, want elke alinea...\"? Dan denk je dat een kopje vereist is. Kopjes zijn niet verplicht; het probleem is dat de alinea te veel onderwerpen heeft."
+   ],
+   "uh": "Splits de alinea.",
+   "ctx": "Een alinea gaat over drie onderwerpen: de kosten van een auto, het milieu en de files in de stad."
+  },
+  {
+   "v": "Wat moet een openingsalinea in elk geval doen?",
+   "o": [
+    "het onderwerp inleiden en de aandacht van de lezer trekken",
+    "het hele betoog al samenvatten, zodat er geen conclusie meer nodig is",
+    "alleen de bronnen noemen, zonder iets over het onderwerp te zeggen",
+    "een nieuw argument geven dat verderop niet meer terugkomt"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Een opening leidt het onderwerp in en trekt de aandacht.",
+   "uo": [
+    "Klopt: de opening maakt de lezer nieuwsgierig en laat zien waarover de tekst gaat.",
+    "Koos je \"het hele betoog al samenvatten, zodat er geen...\"? Dan denk je dat de opening alles zegt. Dan lees je de rest niet meer, en de tekst heeft geen opbouw.",
+    "Koos je \"alleen de bronnen noemen, zonder iets over het...\"? Dan denk je dat bronnen de opening zijn. De opening leidt het onderwerp in; bronnen komen later.",
+    "Koos je \"een nieuw argument geven dat verderop niet meer...\"? Dan denk je dat de opening argumenten geeft. De opening leidt in en trekt de aandacht; argumenten staan in het middenstuk."
+   ],
+   "uh": "Inleiden en pakken."
+  },
+  {
+   "v": "Welke opening past het best bij een tekst over te weinig slaap bij jongeren?",
+   "o": [
+    "Hallo allemaal, ik ga het vandaag hebben over slaap.",
+    "Slaap is een toestand waarin iemand rust, zoals beschreven in het woordenboek.",
+    "In dit hoofdstuk bespreek ik mijn mening over slaap in tien delen.",
+    "Eén op de drie tieners slaapt doordeweeks te weinig. Wat doet dat met hen?"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Een goede opening is concreet en wekt nieuwsgierigheid.",
+   "uo": [
+    "Koos je \"Hallo allemaal, ik ga het vandaag hebben over slaap.\"? Dan denk je dat een aankondiging een goede opening is. Het trekt geen aandacht en zegt niets inhoudelijks, dus de lezer haakt snel af.",
+    "Koos je \"Slaap is een toestand waarin iemand rust, zoals...\"? Dan denk je dat een woordenboekdefinitie boeit. Een definitie leidt het onderwerp niet aantrekkelijk in, en is vaak saai.",
+    "Koos je \"In dit hoofdstuk bespreek ik mijn mening over slaap...\"? Dan denk je dat dit de aandacht trekt. Het kondigt alleen aan, zonder iets te laten zien waarom het ertoe doet.",
+    "Klopt: een concreet feit plus een vraag maakt nieuwsgierig en leidt het onderwerp in."
+   ],
+   "uh": "Feit plus vraag."
+  },
+  {
+   "v": "Wat doet een slotalinea in een betoog?",
+   "o": [
+    "een volledig nieuw onderwerp beginnen dat verderop niet meer terugkomt",
+    "de stelling bevestigen en een conclusie trekken",
+    "de bronnenlijst herhalen met alle titels en auteurs",
+    "de lezer bedanken en verder niets zeggen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Het slot bevestigt de stelling en trekt de conclusie.",
+   "uo": [
+    "Koos je \"een volledig nieuw onderwerp beginnen dat verderop...\"? Dan denk je dat het slot ruimte is voor iets nieuws. Dan voelt de tekst onaf aan, en de lezer weet niet wat de conclusie is.",
+    "Klopt: het slot rondt af met de conclusie en bevestigt de stelling.",
+    "Koos je \"de bronnenlijst herhalen met alle titels en auteurs\"? Dan denk je dat het slot de bronnen herhaalt. De bronnenlijst staat apart; het slot trekt een conclusie.",
+    "Koos je \"de lezer bedanken en verder niets zeggen\"? Dan denk je dat een bedankje volstaat. Zonder conclusie blijft de tekst zonder afronding, dus het slot moet inhoud hebben."
+   ],
+   "uh": "Slotsom."
+  },
+  {
+   "v": "Waarvoor dient een tussenkopje?",
+   "o": [
+    "om de tekst langer te laten lijken zonder dat er iets bij komt",
+    "om de kernzin van een alinea te vervangen",
+    "om een conclusie te trekken voordat het betoog is afgerond",
+    "de lezer laten zien waar een deel over gaat"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Een tussenkopje geeft het onderwerp van het volgende deel aan.",
+   "uo": [
+    "Koos je \"om de tekst langer te laten lijken zonder dat er...\"? Dan denk je dat kopjes alleen opvulling zijn. Een kopje heeft een functie voor de lezer, namelijk het aangeven van het onderwerp.",
+    "Koos je \"om de kernzin van een alinea te vervangen\"? Dan denk je dat een kopje de kernzin overbodig maakt. Een kopje noemt het onderwerp, maar de kernzin staat nog steeds in de tekst.",
+    "Koos je \"om een conclusie te trekken voordat het betoog is...\"? Dan denk je dat een kopje een conclusie geeft. Een kopje benoemt het onderwerp van een deel, het trekt geen slotsom.",
+    "Klopt: een tussenkopje geeft het onderwerp van het volgende deel aan en helpt bij het zoeken."
+   ],
+   "uh": "Kopje = wegwijzer."
+  },
+  {
+   "v": "Wat doen deze kopjes voor de lezer?",
+   "o": [
+    "ze vervangen de inleiding en het slot van de tekst",
+    "ze maken de opbouw zichtbaar en helpen de lezer snel te vinden wat hij zoekt",
+    "ze bewijzen dat de schrijver de argumenten kent",
+    "ze geven aan dat de schrijver de tekst niet zelf bedacht heeft"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Tussenkopjes laten de opbouw zien en helpen scannen.",
+   "uo": [
+    "Koos je \"ze vervangen de inleiding en het slot van de tekst\"? Dan denk je dat kopjes de rest overbodig maken. Een tekst heeft nog steeds een inleiding en een slot, kopjes zijn een extra hulpmiddel.",
+    "Klopt: kopjes laten zien hoe de tekst is opgebouwd en maken scannen mogelijk.",
+    "Koos je \"ze bewijzen dat de schrijver de argumenten kent\"? Dan denk je dat een kopje een bewijs is. Een kopje is een wegwijzer, geen onderbouwing.",
+    "Koos je \"ze geven aan dat de schrijver de tekst niet zelf...\"? Dan denk je dat kopjes iets met bronnen te maken hebben. Ze hebben alleen een functie voor opbouw, en zeggen niets over herkomst."
+   ],
+   "uh": "Overzicht voor de lezer.",
+   "ctx": "Een tekst heeft twee tussenkopjes: \"Voordelen van thuiswerken\" en \"Nadelen van thuiswerken\"."
+  },
+  {
+   "v": "Welk woord legt een tegenstelling tussen twee zinnen?",
+   "o": [
+    "bovendien, dat een extra punt aan het vorige toevoegt",
+    "daarom, dat een gevolg uit het vorige aangeeft",
+    "maar",
+    "bijvoorbeeld, dat een illustratie introduceert"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "\"Maar\" geeft een tegenstelling aan.",
+   "uo": [
+    "Koos je \"bovendien, dat een extra punt aan het vorige...\"? Dan denk je dat \"bovendien\" een tegenstelling is. Het voegt iets toe dat dezelfde kant op gaat, het is geen tegenstelling.",
+    "Koos je \"daarom, dat een gevolg uit het vorige aangeeft\"? Dan denk je dat \"daarom\" een tegenstelling is. Het geeft juist een gevolg aan, en tegenstelling is iets anders.",
+    "Klopt: \"maar\" zet twee dingen tegenover elkaar.",
+    "Koos je \"bijvoorbeeld, dat een illustratie introduceert\"? Dan denk je dat \"bijvoorbeeld\" een tegenstelling is. Het introduceert een voorbeeld, geen contrast."
+   ],
+   "uh": "Tegenstelling = maar."
+  },
+  {
+   "v": "Welk verbindingswoord past tussen de zinnen als je een tegenstelling wilt aangeven?",
+   "o": [
+    "Echter,",
+    "Bovendien,",
+    "Daarom,",
+    "Bijvoorbeeld,"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Signaalwoorden als echter, maar en toch geven een tegenstelling aan.",
+   "uo": [
+    "Klopt: \"echter\" zet de tweede zin tegenover de eerste.",
+    "Koos je \"Bovendien,\"? Dan denk je dat dit een tegenstelling is. Het voegt iets toe, en laat de twee zinnen in dezelfde richting wijzen.",
+    "Koos je \"Daarom,\"? Dan denk je dat dit een tegenstelling is. Het geeft een gevolg aan, en dat past niet bij de zinnen hier.",
+    "Koos je \"Bijvoorbeeld,\"? Dan denk je dat dit een tegenstelling is. Het geeft een voorbeeld aan, terwijl de tweede zin geen voorbeeld is."
+   ],
+   "uh": "Contrast = echter.",
+   "ctx": "Een leerling schrijft: \"De school wil het huiswerk afschaffen. Veel ouders vinden dat een slecht idee.\""
+  },
+  {
+   "v": "Welk signaalwoord laat zien dat de tweede zin een gevolg is?",
+   "o": [
+    "Daardoor",
+    "Maar",
+    "Bijvoorbeeld",
+    "Hoewel"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "\"Daardoor\" geeft een gevolg aan.",
+   "uo": [
+    "Klopt: \"daardoor\" geeft een oorzaak-gevolgverband aan.",
+    "Koos je \"Maar\"? Dan denk je dat \"maar\" een gevolg aangeeft. Het geeft een tegenstelling aan, dus het past niet bij deze zinnen.",
+    "Koos je \"Bijvoorbeeld\"? Dan denk je dat \"bijvoorbeeld\" een gevolg aangeeft. Het geeft een voorbeeld, en de tweede zin is geen voorbeeld.",
+    "Koos je \"Hoewel\"? Dan denk je dat \"hoewel\" een gevolg aangeeft. Het geeft een tegenstelling, en dat past hier niet."
+   ],
+   "uh": "Gevolg = daardoor.",
+   "ctx": "Twee zinnen: \"Lucas oefende elke dag. Hij haalde een hoog cijfer.\""
+  },
+  {
+   "v": "Wat ontbreekt er om de zinnen samenhang te geven?",
+   "o": [
+    "meer zinnen, want een alinea moet minstens tien zinnen hebben",
+    "langere zinnen met moeilijkere woorden, zodat de alinea slimmer klinkt",
+    "verbindingen tussen de zinnen, bijvoorbeeld signaalwoorden en een gedeeld onderwerp",
+    "een tussenkopje boven elke zin, zodat elke zin een eigen onderwerp heeft"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Samenhang ontstaat door een gedeeld onderwerp en verbindende woorden.",
+   "uo": [
+    "Koos je \"meer zinnen, want een alinea moet minstens tien...\"? Dan denk je dat het om het aantal zinnen gaat. De samenhang ontbreekt, dus meer zinnen helpt niet.",
+    "Koos je \"langere zinnen met moeilijkere woorden, zodat de...\"? Dan denk je dat lengte en moeilijke woorden samenhang geven. Ze geven geen verband tussen de zinnen, dus het lost het probleem niet op.",
+    "Klopt: de zinnen hangen nu los van elkaar; samenhang ontstaat door een gedeeld onderwerp en verbindende woorden.",
+    "Koos je \"een tussenkopje boven elke zin, zodat elke zin een...\"? Dan denk je dat kopjes samenhang creëren. Ze maken de zinnen juist nog losser, en lossen het probleem van de losse zinnen niet op."
+   ],
+   "uh": "Zinnen verbinden.",
+   "ctx": "Een alinea: \"Ik wil graag naar Amsterdam. De trein is een goede manier om te reizen. Het is warm vandaag. Mijn oma woont in Utrecht.\""
+  },
+  {
+   "v": "Welke alinea staat waarschijnlijk op de verkeerde plek?",
+   "o": [
+    "A, want voordelen horen altijd aan het einde",
+    "D, want de geschiedenis hoort bij de inleiding of eerder in de tekst",
+    "B, want nadelen mogen nooit in een tekst staan",
+    "C, want de conclusie moet aan het begin staan"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "De opbouw is: inleiding, middenstuk, slot; nieuw materiaal na de conclusie past niet.",
+   "uo": [
+    "Koos je \"A, want voordelen horen altijd aan het einde\"? Dan denk je dat voordelen achteraan horen. Voordelen horen in het middenstuk, dus A staat goed.",
+    "Klopt: achtergrond staat vooraan; na de conclusie komt niets nieuws meer.",
+    "Koos je \"B, want nadelen mogen nooit in een tekst staan\"? Dan denk je dat nadelen niet mogen. Nadelen horen bij een afweging in het middenstuk; dus B staat goed.",
+    "Koos je \"C, want de conclusie moet aan het begin staan\"? Dan denk je dat de conclusie vooraan hoort. De conclusie staat aan het einde, dus C staat goed."
+   ],
+   "uh": "Opbouw bewaken.",
+   "ctx": "Een tekst bestaat uit de alinea's: A over voordelen van fietsen, B over nadelen van fietsen, C over de conclusie en D over de geschiedenis van de fiets."
+  },
+  {
+   "v": "Welk probleem levert dit op?",
+   "o": [
+    "de tekst heeft te weinig alinea's, want er moeten er minstens tien zijn",
+    "de tekst is te lang voor een betoog",
+    "de tekst gebruikt geen tussenkopjes",
+    "de opbouw klopt niet: de lezer verwacht na een conclusie geen nieuwe argumenten meer"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "De conclusie hoort aan het einde van de tekst.",
+   "uo": [
+    "Koos je \"de tekst heeft te weinig alinea's, want er moeten...\"? Dan denk je dat er een minimum aantal alinea's bestaat. Er is geen vast aantal; het probleem is de volgorde.",
+    "Koos je \"de tekst is te lang voor een betoog\"? Dan denk je dat de lengte telt. Lengte is hier niet het probleem; de opbouw is het probleem.",
+    "Koos je \"de tekst gebruikt geen tussenkopjes\"? Dan denk je dat kopjes het probleem zijn. Kopjes zijn niet verplicht; de opbouw klopt niet.",
+    "Klopt: een conclusie hoort aan het eind; daarna nog argumenten brengen verwart de lezer."
+   ],
+   "uh": "Conclusie laatst.",
+   "ctx": "Een leerling schrijft een tekst en zet de conclusie al in de tweede alinea. Daarna volgen nog drie alinea's met nieuwe argumenten."
+  },
+  {
+   "v": "Wat moet hij doen?",
+   "o": [
+    "de zinnen over de fiets laten staan, want alinea's mogen van onderwerp wisselen",
+    "de zinnen over de fiets in een eigen alinea zetten",
+    "de zinnen over Spanje schrappen, want een tekst gaat maar over één onderwerp",
+    "de fiets in de vakantie van Spanje verwerken zodat het toch past"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Een nieuw onderwerp krijgt een nieuwe alinea.",
+   "uo": [
+    "Koos je \"de zinnen over de fiets laten staan, want alinea's...\"? Dan denk je dat alinea's van onderwerp mogen wisselen. Dan verliest de lezer het overzicht, dus je splitst de alinea.",
+    "Klopt: een nieuw onderwerp krijgt een eigen alinea.",
+    "Koos je \"de zinnen over Spanje schrappen, want een tekst...\"? Dan denk je dat een tekst maar één onderwerp mag hebben. Een tekst kan meerdere deelonderwerpen hebben, elk in een eigen alinea.",
+    "Koos je \"de fiets in de vakantie van Spanje verwerken zodat...\"? Dan denk je dat je het onderwerp moet forceren. Het blijft een ander onderwerp; een eigen alinea is beter."
+   ],
+   "uh": "Nieuwe alinea.",
+   "ctx": "Een leerling schrijft een alinea over een vakantie in Spanje. Midden in de alinea begint hij ineens over zijn nieuwe fiets."
+  },
+  {
+   "v": "Welk probleem heeft deze alinea?",
+   "o": [
+    "de kernzin en de uitwerking passen niet bij elkaar",
+    "de kernzin staat aan het begin, wat in een alinea niet mag",
+    "de alinea heeft geen kernzin, want de eerste zin is een feit",
+    "de alinea is te lang om gelezen te worden"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Uitwerking en kernzin moeten bij elkaar passen.",
+   "uo": [
+    "Klopt: de uitwerking werkt een ander onderwerp uit dan de kernzin noemt.",
+    "Koos je \"de kernzin staat aan het begin, wat in een alinea...\"? Dan denk je dat de kernzin niet vooraan mag staan. Dat is juist gewoon; het probleem is dat de rest niet bij de kern past.",
+    "Koos je \"de alinea heeft geen kernzin, want de eerste zin is...\"? Dan denk je dat een feit geen kernzin kan zijn. Het kan wel een kern zijn; het probleem is dat de uitwerking afwijkt.",
+    "Koos je \"de alinea is te lang om gelezen te worden\"? Dan denk je dat lengte het probleem is. De lengte is niet bepaald; het probleem is dat de zinnen niet bij elkaar passen."
+   ],
+   "uh": "Kern en uitwerking.",
+   "ctx": "Een alinea begint met: \"Uit onderzoek blijkt dat studenten die ontbijten beter scoren.\" De rest van de alinea gaat over de geschiedenis van het ontbijt in Nederland."
+  },
+  {
+   "v": "Waarom is dit een zwakke opening?",
+   "o": [
+    "de opening is te kort om iets te zeggen",
+    "de opening noemt het onderwerp, wat in een opening niet mag",
+    "de opening bevat een bron, wat verboden is in een opening",
+    "het is een droge definitie die geen nieuwsgierigheid wekt"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Een goede opening wekt nieuwsgierigheid met een concreet feit of vraag.",
+   "uo": [
+    "Koos je \"de opening is te kort om iets te zeggen\"? Dan denk je dat de opening te kort is. De zin is juist lang; het probleem is dat hij saai en abstract is.",
+    "Koos je \"de opening noemt het onderwerp, wat in een opening...\"? Dan denk je dat het onderwerp niet genoemd mag worden. De opening mag het onderwerp noemen; het probleem is dat hij de lezer niet pakt.",
+    "Koos je \"de opening bevat een bron, wat verboden is in een...\"? Dan denk je dat een bron verboden is. Een bron mag overal staan; het probleem is de droge toon.",
+    "Klopt: een droge definitie trekt weinig aandacht; een concreet feit of vraag werkt beter."
+   ],
+   "uh": "Pak de lezer.",
+   "ctx": "Een tekst over zonne-energie begint met: \"Zonne-energie is een vorm van energie die wordt gewonnen uit zonlicht en die op verschillende manieren wordt toegepast, zoals beschreven in diverse naslagwerken.\""
+  },
+  {
+   "v": "Wat is een goed tussenkopje bij een alinea over de kosten van een auto?",
+   "o": [
+    "Hoofdstuk 3",
+    "Alinea over dingen",
+    "Wat een auto werkelijk kost",
+    "Zie hieronder voor meer informatie over de verschillende onderwerpen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Een tussenkopje noemt kort het onderwerp van het volgende deel.",
+   "uo": [
+    "Koos je \"Hoofdstuk 3\"? Dan denk je dat een nummer een kopje is. Een nummer zegt niets over de inhoud, dus het helpt de lezer niet.",
+    "Koos je \"Alinea over dingen\"? Dan denk je dat een vaag kopje volstaat. Het zegt niet wat er in de alinea staat, dus de lezer weet niet wat hij kan verwachten.",
+    "Klopt: het kopje noemt het onderwerp van de alinea en wekt interesse.",
+    "Koos je \"Zie hieronder voor meer informatie over de...\"? Dan denk je dat een lang vaag kopje beter is. Het noemt niet het onderwerp, en is te lang voor een kopje."
+   ],
+   "uh": "Kort en concreet."
+  },
+  {
+   "v": "Welke functies hebben \"daardoor\", \"toch\" en \"zo\" in deze volgorde?",
+   "o": [
+    "tegenstelling, gevolg en voorbeeld",
+    "voorbeeld, gevolg en tegenstelling",
+    "gevolg, tegenstelling en conclusie",
+    "reden, voorbeeld en tegenstelling"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Signaalwoorden geven verbanden aan: gevolg, tegenstelling, conclusie.",
+   "uo": [
+    "Koos je \"tegenstelling, gevolg en voorbeeld\"? Dan denk je dat \"daardoor\" een tegenstelling aangeeft. Het woord verbindt de fris aankomst als gevolg met het fietsen, en een tegenstelling zou \"maar\" of \"toch\" zijn.",
+    "Koos je \"voorbeeld, gevolg en tegenstelling\"? Dan denk je dat \"toch\" een gevolg aangeeft. De zin met \"toch\" zet de bus tegenover de fiets, dus het woord geeft een tegenstelling aan.",
+    "Klopt: \"daardoor\" geeft een gevolg, \"toch\" een tegenstelling en \"zo\" een slotsom.",
+    "Koos je \"reden, voorbeeld en tegenstelling\"? Dan denk je dat \"zo\" een tegenstelling aangeeft. De laatste zin vat samen dat de fiets populair blijft, dus \"zo\" leidt een conclusie in."
+   ],
+   "uh": "Verband herkennen.",
+   "ctx": "Een alinea: \"Veel jongeren fietsen naar school. Ze komen daardoor fris aan. Toch nemen sommigen de bus als het regent. Zo blijft de fiets populair.\""
+  },
+  {
+   "v": "Wat is het meest logisch om te doen met de zesde zin?",
+   "o": [
+    "laten staan, want elke alinea mag een afwijkende zin bevatten",
+    "er een kopje boven zetten zodat hij een eigen onderwerp lijkt",
+    "de andere vijf zinnen schrappen, want de nieuwe zin is belangrijker",
+    "schrappen of in een andere alinea zetten, want hij hoort niet bij het onderwerp"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Zinnen in een alinea horen bij de kernzin.",
+   "uo": [
+    "Koos je \"laten staan, want elke alinea mag een afwijkende...\"? Dan denk je dat afwijkingen geen kwaad kunnen. Ze breken de samenhang, en de lezer raakt de draad kwijt.",
+    "Koos je \"er een kopje boven zetten zodat hij een eigen...\"? Dan denk je dat een kopje één zin kan redden. Een kopje hoort bij een deel van de tekst, niet bij één losse zin.",
+    "Koos je \"de andere vijf zinnen schrappen, want de nieuwe zin...\"? Dan denk je dat de afwijkende zin voorrang krijgt. De kern van de alinea blijft thuiswerken, dus de losse zin is degene die weg moet.",
+    "Klopt: een zin die niet bij de kern past, haalt de alinea uit balans."
+   ],
+   "uh": "Past de zin bij de kern?",
+   "ctx": "Een alinea over thuiswerken bestaat uit zes zinnen. Vijf zinnen gaan over de voordelen, de zesde over het weer in Spanje."
+  },
+  {
+   "v": "Wat doe je in een openingsalinea niet?",
+   "o": [
+    "alle argumenten al uitgebreid behandelen",
+    "het onderwerp noemen waar de tekst over gaat",
+    "de aandacht van de lezer trekken met een feit of vraag",
+    "aangeven wat de lezer verwacht te lezen"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Argumenten werk je uit in het middenstuk, niet in de opening.",
+   "uo": [
+    "Klopt: de uitwerking van de argumenten hoort in het middenstuk.",
+    "Koos je \"het onderwerp noemen waar de tekst over gaat\"? Dan denk je dat dit niet mag. Het onderwerp noemen hoort bij de opening; je behandelt alleen de argumenten later.",
+    "Koos je \"de aandacht van de lezer trekken met een feit of...\"? Dan denk je dat dit niet mag. De opening moet de aandacht trekken, dus dit is juist wel gewenst.",
+    "Koos je \"aangeven wat de lezer verwacht te lezen\"? Dan denk je dat dit niet mag. Een korte aankondiging van de inhoud hoort bij de opening, en helpt de lezer."
+   ],
+   "uh": "Opening leidt in."
+  },
+  {
+   "v": "Welke volgorde is de juiste?",
+   "o": [
+    "1, 2, 3, 4",
+    "3, 4, 2, 1",
+    "3, 2, 4, 1",
+    "4, 3, 1, 2"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "De opbouw van een betoog: inleiding, argumenten, tegenwerping, conclusie.",
+   "uo": [
+    "Koos je \"1, 2, 3, 4\"? Dan denk je dat de conclusie voorop kan. In een betoog volgt de conclusie na de argumenten, dus dit klopt niet.",
+    "Klopt: eerst de inleiding met stelling, dan de argumenten, daarna de tegenwerping met weerlegging en tot slot de conclusie.",
+    "Koos je \"3, 2, 4, 1\"? Dan denk je dat de tegenwerping voor de argumenten komt. De argumenten onderbouwen de stelling eerst; de tegenwerping volgt daarna.",
+    "Koos je \"4, 3, 1, 2\"? Dan denk je dat de argumenten vóór de inleiding horen. De stelling moet eerst bekend zijn, dus de inleiding staat vooraan."
+   ],
+   "uh": "Vaste volgorde.",
+   "ctx": "Alinea's van een betoog door elkaar: 1. Conclusie, 2. Een tegenwerping met weerlegging, 3. Inleiding met stelling, 4. Argumenten."
+  },
+  {
+   "v": "Welk woord geeft een toevoeging aan?",
+   "o": [
+    "echter, dat een tegenstelling aangeeft",
+    "dus, dat een conclusie aankondigt",
+    "hoewel, dat een tegenstelling inleidt",
+    "bovendien"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "\"Bovendien\" voegt iets toe.",
+   "uo": [
+    "Koos je \"echter, dat een tegenstelling aangeeft\"? Dan denk je dat \"echter\" iets toevoegt. Het zet juist iets tegenover het vorige, dus het is een tegenstelling.",
+    "Koos je \"dus, dat een conclusie aankondigt\"? Dan denk je dat \"dus\" iets toevoegt. Het trekt een conclusie, en is dus geen toevoeging.",
+    "Koos je \"hoewel, dat een tegenstelling inleidt\"? Dan denk je dat \"hoewel\" iets toevoegt. Het zet twee dingen tegenover elkaar, en voegt niets toe.",
+    "Klopt: \"bovendien\" voegt iets toe aan wat al is gezegd."
+   ],
+   "uh": "Toevoegen = bovendien."
+  },
+  {
+   "v": "Wat kan de schrijver het best doen om de tekst leesbaarder te maken?",
+   "o": [
+    "tussenkopjes boven de delen zetten die over één vorm van energie gaan",
+    "alle alinea's tot één lange alinea samenvoegen",
+    "de kernzinnen uit de alinea's schrappen",
+    "de conclusie naar het begin verplaatsen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Tussenkopjes maken een lange tekst overzichtelijk.",
+   "uo": [
+    "Klopt: kopjes tonen de opbouw en laten de lezer snel vinden wat hij zoekt.",
+    "Koos je \"alle alinea's tot één lange alinea samenvoegen\"? Dan denk je dat één alinea overzichtelijker is. Het maakt de tekst juist een grote massa, en het onderwerp raakt zoek.",
+    "Koos je \"de kernzinnen uit de alinea's schrappen\"? Dan denk je dat kernzinnen de tekst langer maken. Ze geven juist houvast, en zonder kernzinnen is het moeilijker te volgen.",
+    "Koos je \"de conclusie naar het begin verplaatsen\"? Dan denk je dat dit de leesbaarheid verbetert. Een conclusie hoort aan het einde, en het verplaatsen helpt niet bij het vinden van onderdelen."
+   ],
+   "uh": "Kopjes voor overzicht.",
+   "ctx": "Een tekst van tien alinea's over verschillende vormen van energie heeft geen enkel tussenkopje."
+  },
+  {
+   "v": "Waaruit herken je dat een nieuwe alinea moet beginnen?",
+   "o": [
+    "de regel is vol en je moet naar de volgende regel",
+    "er komt een nieuw deelonderwerp",
+    "je hebt een komma gebruikt",
+    "je hebt een bijvoeglijk naamwoord gebruikt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Een nieuw deelonderwerp vraagt om een nieuwe alinea.",
+   "uo": [
+    "Koos je \"de regel is vol en je moet naar de volgende regel\"? Dan denk je dat het einde van een regel een nieuwe alinea is. Een regeleinde zegt niets over de inhoud, dus het is geen aanleiding.",
+    "Klopt: een nieuw deelonderwerp krijgt een eigen alinea.",
+    "Koos je \"je hebt een komma gebruikt\"? Dan denk je dat leestekens alinea's bepalen. Een komma staat midden in een zin; alinea's volgen het onderwerp.",
+    "Koos je \"je hebt een bijvoeglijk naamwoord gebruikt\"? Dan denk je dat woordsoorten alinea's bepalen. Alleen de inhoud telt, dus het onderwerp bepaalt het begin van een nieuwe alinea."
+   ],
+   "uh": "Nieuw onderwerp, nieuwe alinea."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een alinea gaat over de kosten van een auto, het milieu en de files in de stad.",
+   "v": "Wat is hier het probleem en hoe los je het op?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er staan drie deelonderwerpen in één alinea (1 punt). Splits de alinea in drie alinea's, elk met een eigen kernzin (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een alinea begint met: \"Sporten is gezond.\" Daarna volgen drie zinnen over hart, spieren en slaap.",
+   "v": "Wat is de kernzin en hoe heet de rest van de alinea?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De kernzin is \"Sporten is gezond.\" (1 punt); de rest is de uitwerking (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tekst over zonne-energie begint met een droge definitie uit een naslagwerk.",
+   "v": "Waarom is dit een zwakke opening en wat kan beter?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een droge definitie wekt geen nieuwsgierigheid (1 punt). Beter: een concreet feit of een vraag die de lezer pakt (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee zinnen: \"Lucas oefende elke dag. Hij haalde een hoog cijfer.\"",
+   "v": "Welk signaalwoord geeft het verband aan en welk verband is dat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld \"daardoor\" (1 punt); het is een oorzaak-gevolgverband (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zet de conclusie van zijn tekst in de tweede alinea en laat daarna nog drie alinea's met nieuwe argumenten volgen.",
+   "v": "Wat is hier mis?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De opbouw klopt niet (1 punt): de conclusie hoort aan het einde, nieuwe argumenten na de conclusie verwarren de lezer (1 punt)."
+  }
+ ]
+}

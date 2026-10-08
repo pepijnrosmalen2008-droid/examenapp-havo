@@ -399,6 +399,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C4",
+      "lo": "nl.C.4",
+      "gs": 2,
+      "naam": "Tekst en alinea opbouwen",
+      "beschrijving": "Je bouwt een tekst op uit alinea's met een kernzin en uitwerking, begint en eindigt sterk en zorgt voor samenhang met signaalwoorden en tussenkopjes.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Alinea en kernzin",
+       "Openingsalinea",
+       "Slotalinea",
+       "Tussenkopjes",
+       "Signaalwoorden en samenhang",
+       "Volgorde van alinea's"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

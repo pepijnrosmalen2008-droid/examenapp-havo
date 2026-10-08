@@ -2029,5 +2029,43 @@ Object.assign(SAM_RICH,{
 <path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
 <rect x="4" y="130" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="150" font-size="12" font-weight="700" fill="#fff">4  Slot met conclusie</text><text x="12" y="168" font-size="11" fill="#fff">"Dus: ..."</text></g></svg><div class="sam-figcap">De opbouw van een betoog: inleiding met stelling, argumenten met onderbouwing, tegenwerping met weerlegging en een slot met conclusie.</div></div>
 <div class="sam-tip"><strong>Tip:</strong> controleer vlak voor het inleveren drie dingen: staat de stelling vooraan, heeft elk argument een bewijs of voorbeeld en eindigt het betoog met een echte conclusie?</div>
+</div>`,
+'havo_nl_C4':`<div class="sam-intro">Een goede tekst is opgebouwd uit <strong>alinea's</strong>. Elke alinea heeft één onderwerp, een <strong>kernzin</strong> en een <strong>uitwerking</strong>. Een <strong>openingsalinea</strong> trekt de aandacht, een <strong>slotalinea</strong> rondt af. <strong>Tussenkopjes</strong> en <strong>signaalwoorden</strong> zorgen dat de lezer de opbouw ziet en de tekst als één geheel leest.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Alinea</td><td>Eén onderwerp.</td></tr>
+<tr><td>Kernzin</td><td>Vat de alinea samen, meestal vooraan.</td></tr>
+<tr><td>Uitwerking</td><td>Toelichting en onderbouwing van de kernzin.</td></tr>
+<tr><td>Openingsalinea, slotalinea</td><td>Inleiden en afronden.</td></tr>
+<tr><td>Middenstuk</td><td>De alinea's tussen opening en slot.</td></tr>
+<tr><td>Tussenkopje</td><td>Wegwijzer boven een deel.</td></tr>
+<tr><td>Coherentie, signaalwoord</td><td>Samenhang en woorden die verbanden aangeven.</td></tr>
+<tr><td>Verwijswoord</td><td>Verwijst terug, zoals "dit" of "zij".</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>De alinea: kernzin en uitwerking</div>
+<p>Een <strong>alinea</strong> behandelt één <strong>deelonderwerp</strong>. De <strong>kernzin</strong> vat de hoofdgedachte samen en staat meestal vooraan; daarna volgt de <strong>uitwerking</strong> met uitleg, voorbeelden of argumenten. Komt er een nieuw onderwerp, dan begin je een nieuwe alinea. Een alinea over de kosten, het milieu en de files tegelijk is dus te vol: splits hem. Zorg ook dat de uitwerking echt bij de kernzin past.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Opbouw van een alinea: kernzin vooraan, daarna uitwerking met uitleg, voorbeeld en argument"><g font-family="inherit"><rect x="4" y="4" width="312" height="44" rx="6" fill="var(--or)"/><text x="12" y="22" font-size="12" font-weight="700" fill="#fff">Kernzin</text><text x="12" y="39" font-size="11" fill="#fff">"Sporten is gezond."</text>
+<path d="M160 48 V56" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="56" width="312" height="116" rx="6" fill="var(--orl)"/><text x="12" y="74" font-size="12" font-weight="700" fill="var(--dk)">Uitwerking</text><text x="12" y="94" font-size="11" fill="var(--dk)">Het hart wordt sterker.</text><text x="12" y="112" font-size="11" fill="var(--dk)">Spieren worden steviger.</text><text x="12" y="130" font-size="11" fill="var(--dk)">Je slaapt beter.</text><text x="12" y="152" font-size="11" fill="var(--mu)">Alles gaat over hetzelfde onderwerp.</text></g></svg><div class="sam-figcap">Een alinea: de kernzin vooraan, daarna de uitwerking over datzelfde onderwerp.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> één onderwerp per alinea, de kernzin meestal vooraan.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Opbouw van de hele tekst</div>
+<p>De <strong>opbouw</strong> van een tekst heeft drie delen. De <strong>openingsalinea</strong> leidt het onderwerp in en trekt de aandacht, bijvoorbeeld met een concreet feit of een vraag; een droge definitie of een aankondiging doet dat niet. Het <strong>middenstuk</strong> bevat de argumenten of de uitleg, per deelonderwerp één alinea. De <strong>slotalinea</strong> bevestigt de stelling en trekt de conclusie. Na de conclusie komt niets nieuws meer. <strong>Tussenkopjes</strong> noemen kort het onderwerp van het volgende deel en helpen de lezer scannen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Opbouw van een tekst: openingsalinea, middenstuk met alinea's en tussenkopjes, slotalinea met conclusie"><g font-family="inherit"><rect x="4" y="4" width="312" height="40" rx="6" fill="var(--or)"/><text x="12" y="21" font-size="12" font-weight="700" fill="#fff">Opening</text><text x="12" y="37" font-size="11" fill="#fff">onderwerp inleiden, aandacht trekken</text>
+<rect x="4" y="50" width="312" height="84" rx="6" fill="var(--orl)"/><text x="12" y="67" font-size="12" font-weight="700" fill="var(--dk)">Middenstuk</text><text x="12" y="86" font-size="11" fill="var(--dk)">Tussenkopje: Voordelen</text><text x="12" y="102" font-size="11" fill="var(--dk)">Tussenkopje: Nadelen</text><text x="12" y="122" font-size="11" fill="var(--mu)">Per deelonderwerp een alinea</text>
+<rect x="4" y="140" width="312" height="44" rx="6" fill="var(--or)"/><text x="12" y="157" font-size="12" font-weight="700" fill="#fff">Slot</text><text x="12" y="174" font-size="11" fill="#fff">stelling bevestigen, conclusie trekken</text></g></svg><div class="sam-figcap">Een tekst heeft een opening, een middenstuk met per deelonderwerp een alinea en eventueel tussenkopjes, en een slot met conclusie.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Samenhang met signaalwoorden</div>
+<p><strong>Coherentie</strong> betekent dat zinnen en alinea's bij elkaar horen. Je bereikt dat met een gedeeld onderwerp, <strong>verwijswoorden</strong> (zoals "dit" of "zij") en <strong>signaalwoorden</strong> die het verband aangeven: "daardoor" voor een gevolg, "maar" of "echter" voor een tegenstelling, "bovendien" voor een toevoeging, "bijvoorbeeld" voor een voorbeeld en "dus" voor een conclusie. Losse zinnen zonder verband ("Ik wil naar Amsterdam. Het is warm. Mijn oma woont in Utrecht.") vormen geen alinea.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Signaalwoorden en het verband dat ze aangeven: gevolg, tegenstelling, toevoeging, voorbeeld, conclusie"><g font-family="inherit"><rect x="4" y="4" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="24" font-size="12" font-weight="700" fill="var(--dk)">daardoor  →  gevolg</text>
+<rect x="4" y="38" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="58" font-size="12" font-weight="700" fill="var(--dk)">maar, echter  →  tegenstelling</text>
+<rect x="4" y="72" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="92" font-size="12" font-weight="700" fill="var(--dk)">bovendien  →  toevoeging</text>
+<rect x="4" y="106" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="126" font-size="12" font-weight="700" fill="var(--dk)">bijvoorbeeld  →  voorbeeld</text>
+<rect x="4" y="140" width="312" height="32" rx="6" fill="var(--or)"/><text x="12" y="161" font-size="12" font-weight="700" fill="#fff">dus, kortom  →  conclusie</text></g></svg><div class="sam-figcap">Veelgebruikte signaalwoorden en het verband dat ze aangeven: gevolg, tegenstelling, toevoeging, voorbeeld en conclusie.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> lees je tekst na en onderstreep per alinea de kernzin. Kun je er geen vinden, of gaan er twee onderwerpen door elkaar, dan moet je de alinea herschrijven of splitsen.</div>
 </div>`
 });
