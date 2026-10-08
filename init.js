@@ -415,6 +415,7 @@ function updateBottomNav(id){
   document.querySelectorAll('.snav-btn').forEach(b=>{
     b.classList.toggle('active',!!b.dataset.screen&&b.dataset.screen===activeId);
   });
+  try{_zbPlan();}catch(e){}
   // Update profiel button label: Inloggen vs Profiel
   const lbl=document.getElementById('bnav-profiel-label');
   if(lbl)lbl.textContent=currentUser?'Profiel':'Inloggen';
@@ -516,9 +517,54 @@ const _MS_GROEPEN=[
     ['groep','Groep',"show('sc-groep');renderGroepScreen()",'met je klas'],
     ['winkel','Winkel',"openShop()",'']]]
 ];
+// ═══════ ZIJBALK (DESKTOP) ═══════
+// Op een breed scherm is de onderbalk een vaste zijbalk. Die krijgt dezelfde
+// taal als het telefoonmenu: nachtblauwe kop met Vonk en je stand, de zoekknop,
+// de Examentrainer als donkere kaart en de groepen Leren/Plannen/Spelen met de
+// tekeningen uit _MS_ART en per onderdeel wat er nu speelt (_msStand).
+const _ZB_SCHERM={mijnstof:'sc-mijnstof',examens:'sc-examens',herhalen:'sc-herhalen',fouten:'sc-foutenboek',plan:'sc-studieplan',rooster:'sc-schedule',cijfers:'sc-calc',arcade:'sc-arcade',wedstrijd:'sc-league',groep:'sc-groep',winkel:'sc-shop'};
+let _zbT=0;
+function renderZijbalk(){
+  if(window.innerWidth<900)return;
+  const nav=document.querySelector('#bottom-nav .bottom-nav-inner');if(!nav)return;
+  const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  let naam='';try{naam=(localStorage.getItem('slagio_naam')||'').trim().split(' ')[0];}catch(e){}
+  let streak=0,munten=0,lvl=1;
+  try{streak=calcStreak().current||0;}catch(e){}try{munten=getCoins();}catch(e){}try{lvl=getLevelForXP(getTotalXP());}catch(e){}
+  let kop=document.getElementById('zb-kop');
+  if(!kop){
+    kop=document.createElement('div');kop.id='zb-kop';kop.className='zb-kop';
+    const head=nav.querySelector('.bnav-head');head.after(kop);
+    const zk=document.createElement('button');zk.className='zb-zoek';zk.id='zb-zoek';zk.setAttribute('onclick','openZoek()');
+    zk.innerHTML=_msSvg('zoek')+'<span>Vraag het Slagio</span><kbd>/</kbd>';zk.title='Vraag het Slagio';kop.after(zk);
+  }
+  kop.innerHTML='<div class="zb-vonk" aria-hidden="true">'+((typeof mascotSVG==='function')?mascotSVG('blij',58):'')+'</div>'
+    +'<div class="zb-hoi">'+(naam?'Hoi '+esc(naam)+'!':'Hoi!')+'</div>'
+    +'<div class="zb-stats"><span title="Streak"><i class="ms-st-vuur"></i>'+streak+'</span><span title="Munten"><i class="ms-st-munt"></i>'+munten+'</span><span title="Level"><i class="ms-st-ster"></i>'+lvl+'</span></div>';
+  const sec=nav.querySelector('.snav-section');if(!sec)return;
+  const stand=_msStand();
+  const rij=([art,lbl,go,sub,extra],g)=>{
+    const st=stand[art]||(sub?{t:sub}:null);
+    const ic=art==='vonk'?'<span class="zb-art zb-art-vonk">'+((typeof mascotSVG==='function')?mascotSVG('kijk',30):'')+'</span>':'<span class="zb-art">'+_msArt(art)+'</span>';
+    return '<button class="snav-btn zb-rij'+(extra?' '+extra:'')+'"'+(_ZB_SCHERM[art]?' data-screen="'+_ZB_SCHERM[art]+'"':'')+' onclick="'+go.replace(/"/g,'&quot;')+'" title="'+lbl+'" aria-label="'+lbl+'">'+ic
+      +'<span class="zb-tx"><b>'+lbl+'</b>'+(st?'<small'+(st.heet?' class="heet"':'')+'>'+esc(st.t)+'</small>':'')+'</span></button>';
+  };
+  sec.innerHTML='<button class="snav-btn zb-trainer" data-screen="sc-plus" onclick="openExamentrainer()" title="Examentrainer" aria-label="Examentrainer"><span class="zb-art">'+_msArt('trainer')+'</span><span class="zb-tx"><b>Examentrainer</b><small>jouw verwachte cijfer</small></span></button>'
+    +_MS_GROEPEN.map(([kop,kl,items])=>'<div class="zb-groep '+kl+'"><div class="snav-label">'+kop+'</div>'+items.map(rij).join('')+'</div>').join('');
+  try{const a=document.querySelector('.sc.on');if(a)sec.querySelectorAll('.snav-btn').forEach(b=>b.classList.toggle('active',b.dataset.screen===a.id));}catch(e){}
+}
+function _zbPlan(){clearTimeout(_zbT);_zbT=setTimeout(renderZijbalk,60);}
+window.addEventListener('resize',()=>{if(window.innerWidth>=900&&!document.getElementById('zb-kop'))_zbPlan();});
+// "/" opent Vraag het Slagio op een laptop (niet tijdens typen).
+document.addEventListener('keydown',e=>{
+  if(e.key!=='/'||e.ctrlKey||e.metaKey||e.altKey)return;
+  const t=e.target;if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable))return;
+  const sc=document.querySelector('.sc.on');if(sc&&['sc-quiz','sc-flash','sc-race'].includes(sc.id))return;
+  if(typeof openZoek==='function'){e.preventDefault();openZoek();setTimeout(()=>{const q=document.getElementById('zoek-q');if(q)q.focus();},120);}
+});
 // Home: de tegels en de zoekbalk krijgen dezelfde tekeningen en Vonk als het menu.
 (function(){
-  try{document.querySelectorAll('.hm-tegel [data-art]').forEach(el=>{el.innerHTML=_msArt(el.dataset.art);});}catch(e){}
+  try{document.querySelectorAll('.hm-tegel [data-art],.pk-art[data-art]').forEach(el=>{el.innerHTML=_msArt(el.dataset.art);});}catch(e){}
   try{const v=document.getElementById('hm-zoekbalk-vonk');if(v&&typeof mascotSVG==='function')v.innerHTML=mascotSVG('kijk',40);}catch(e){}
 })();
 let _msY0=0,_msDY=0,_msT0=0,_msSleep=false,_msTerugFocus=null;

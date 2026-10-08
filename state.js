@@ -6,7 +6,7 @@ let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer
 
 // ═══════ UI HELPERS ═══════
 // ═══════ HASH ROUTING ═══════
-const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-studieplan':'studieplan','sc-calc':'rekenmachine','sc-streak':'streaks','sc-zoek':'zoek','sc-arcade':'arcade','sc-examens':'examens','sc-mijnstof':'mijnstof'};
+const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-studieplan':'studieplan','sc-calc':'rekenmachine','sc-zoek':'zoek','sc-arcade':'arcade','sc-examens':'examens','sc-mijnstof':'mijnstof'};
 // Vak ID → URL-slug (volledige naam)
 const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',be:'bedrijfseconomie',en:'engels',ec:'economie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',du:'duits',fr:'frans',la:'latijn',gr:'grieks',in:'informatica',wi:'wiskunde',na1:'natuur-scheikunde-1',na2:'natuur-scheikunde-2',ma:'maatschappijkunde',fa:'frans'};
 // Zoek de vak-id binnen één niveau op basis van de URL-slug. Nodig omdat dezelfde
@@ -568,7 +568,7 @@ function buildGradeInsight(){
     ${focusItems}
   </div>`:'';
   el.innerHTML=`<div class="grade-insight-card">
-    <div class="gi-head"><span class="gi-title">📊 Mijn SE-cijfers</span><button class="gi-edit-btn" onclick="event.stopPropagation();show('sc-cijfers');setTimeout(buildCijferGrid,50)">Bewerk</button></div>
+    <div class="gi-head"><span class="gi-title">📊 Mijn SE-cijfers</span><button class="gi-edit-btn" onclick="event.stopPropagation();show('sc-calc');setTimeout(prefillCalcFromSaved,50)">Bewerk</button></div>
     ${warnHtml}
     <div class="gi-rows">${rows}</div>
   </div>${focusCard}`;
