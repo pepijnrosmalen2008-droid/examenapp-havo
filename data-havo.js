@@ -10042,6 +10042,3267 @@ var VAKKEN = [
       "t": "Feedback",
       "d": "concrete informatie over hoe iets ging, bedoeld om het te verbeteren"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "nl.B.1",
+      "gs": 2,
+      "naam": "Informatie verzamelen en verwerken",
+      "beschrijving": "Je zoekt betrouwbare bronnen voor een voordracht, discussie of debat, kiest wat past bij je doel en publiek en verwerkt het in kernpunten en eigen woorden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Bronnen zoeken en kiezen",
+       "Betrouwbaarheid van bronnen beoordelen",
+       "Relevante informatie selecteren",
+       "Informatie verwerken tot kernpunten",
+       "Bronnen vermelden en plagiaat vermijden",
+       "Valkuilen bij informatie verzamelen"
+      ],
+      "sam": "Voor een voordracht, discussie of debat verzamel je relevante informatie bij betrouwbare bronnen. Een betrouwbare bron is deskundig en controleerbaar. Je selecteert wat past bij je doel en publiek, verwerkt het tot kernpunten en kernwoorden en formuleert in eigen woorden. Gebruik je informatie of een citaat van een ander, dan vermeld je de bron; anders is het plagiaat.",
+      "begrippen": [
+       {
+        "t": "Bron",
+        "d": "Een plek of persoon waar je informatie vandaan haalt."
+       },
+       {
+        "t": "Betrouwbare bron",
+        "d": "Een bron met controleerbare informatie van een deskundige afzender."
+       },
+       {
+        "t": "Relevante informatie",
+        "d": "Informatie die past bij je doel, je onderwerp en je publiek."
+       },
+       {
+        "t": "Selecteren",
+        "d": "Kiezen welke informatie je gebruikt en wat je weglaat."
+       },
+       {
+        "t": "Kernpunt",
+        "d": "Een van de belangrijkste punten die je wilt vertellen."
+       },
+       {
+        "t": "Kernwoorden",
+        "d": "De belangrijkste woorden waarmee je een punt onthoudt en toelicht."
+       },
+       {
+        "t": "Parafraseren",
+        "d": "Informatie in eigen woorden weergeven met dezelfde betekenis."
+       },
+       {
+        "t": "Citaat",
+        "d": "Een letterlijk overgenomen stuk tekst of uitspraak met bronvermelding."
+       },
+       {
+        "t": "Bronvermelding",
+        "d": "De verwijzing naar de bron van informatie of een citaat."
+       },
+       {
+        "t": "Plagiaat",
+        "d": "Andermans werk of woorden gebruiken zonder de bron te vermelden."
+       },
+       {
+        "t": "Eenzijdige informatie",
+        "d": "Informatie die maar één kant van een zaak laat zien."
+       },
+       {
+        "t": "Belanghebbende",
+        "d": "Iemand die voordeel heeft bij wat de lezer of luisteraar gelooft."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke bron past het best bij een voordracht over de geschiedenis van de fiets?",
+        "o": [
+         "een grappige video van een vlogger",
+         "een boek van een historicus",
+         "een reclame van een fietsenwinkel",
+         "een anoniem bericht op een forum"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Voor feiten kies je een bron van een deskundige die je kunt controleren.",
+        "uo": [
+         "Koos je \"een grappige video van een vlogger\"? Dan denk je dat een vermakelijke bron ook een goede bron is. Een vlogger hoeft geen deskundige te zijn en noemt zelden bronnen. Voor feiten kies je een afzender die het onderwerp kent en die je kunt controleren.",
+         "Klopt: een boek van een deskundige geeft gecontroleerde informatie over het onderwerp. Dat past bij een voordracht waarin je feiten uitlegt.",
+         "Koos je \"een reclame van een fietsenwinkel\"? Dan ga je voorbij aan het belang van de afzender. Een winkel wil fietsen verkopen en laat vooral voordelen zien. Een bron met een verkoopbelang is zelden neutraal over geschiedenis of feiten.",
+         "Koos je \"een anoniem bericht op een forum\"? Dan denk je dat iedere tekst online even bruikbaar is. Je weet niet wie het schreef en kunt de beweringen niet nagaan. Een bruikbare bron heeft een bekende, deskundige afzender."
+        ],
+        "uh": "Deskundig en controleerbaar."
+       },
+       {
+        "v": "Je gebruikt voor een voordracht liever meer dan één bron. Waarom?",
+        "o": [
+         "dan wordt je voordracht vanzelf langer",
+         "dan hoef je geen bronnen te noemen",
+         "dan is elke bron vanzelf betrouwbaar",
+         "je kunt informatie vergelijken"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Meer bronnen laten je vergelijken en maken de informatie degelijker.",
+        "uo": [
+         "Koos je \"dan wordt je voordracht vanzelf langer\"? Dan denk je dat het aantal bronnen de lengte van je verhaal bepaalt. De lengte volgt uit je keuzes en je spreektijd. Meer bronnen helpen je juist om de kwaliteit van je informatie te controleren.",
+         "Koos je \"dan hoef je geen bronnen te noemen\"? Dan denk je dat een stapel bronnen de verantwoording overbodig maakt. Dat is niet zo. Bij elke bron die je gebruikt hoort een vermelding, dus meer bronnen betekent meer te noemen bronnen.",
+         "Koos je \"dan is elke bron vanzelf betrouwbaar\"? Dan denk je dat de som van bronnen betrouwbaarheid oplevert. Een onbetrouwbare bron blijft onbetrouwbaar, ook naast andere. Je beoordeelt elke bron apart op afzender, deskundigheid en controleerbaarheid.",
+         "Klopt: bronnen kunnen elkaar aanvullen of tegenspreken. Door te vergelijken zie je wat klopt en welke kanten er zijn."
+        ],
+        "uh": "Vergelijk bronnen."
+       },
+       {
+        "v": "Je wilt cijfers over het aantal leerlingen in Nederland. Waar zoek je?",
+        "o": [
+         "bij een officiële statistiekbron",
+         "in een column van een journalist",
+         "op een forum met reacties",
+         "in een reclamefolder van een school"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Voor cijfers ga je naar een officiële, controleerbare bron.",
+        "uo": [
+         "Klopt: een officiële statistiekbron verzamelt cijfers volgens vaste regels en is controleerbaar. Daar komen cijfers vandaan waar je op kunt bouwen.",
+         "Koos je \"in een column van een journalist\"? Dan denk je dat een bekende schrijver ook cijfers levert. Een column geeft een persoonlijke mening, geen geverifieerde gegevens. Voor cijfers ga je naar de bron waar de cijfers vandaan komen.",
+         "Koos je \"op een forum met reacties\"? Dan kies je een plek waar iedereen iets mag schrijven zonder controle. De cijfers kunnen fout of verouderd zijn. Een betrouwbare bron laat zien wie de cijfers verzamelde en hoe.",
+         "Koos je \"in een reclamefolder van een school\"? Dan vertrouw je op een afzender die leerlingen wil werven. Die kiest de cijfers die gunstig zijn voor zichzelf. Neutrale landelijke cijfers vind je bij een onafhankelijke officiële bron."
+        ],
+        "uh": "Cijfers: officiële bron."
+       },
+       {
+        "v": "Wat maakt een bron betrouwbaar?",
+        "o": [
+         "de bron staat bovenaan in de zoekresultaten van de zoekmachine",
+         "de bron is mooi vormgegeven",
+         "de afzender is deskundig en het is controleerbaar",
+         "de bron wordt veel gedeeld"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Een betrouwbare bron is deskundig en controleerbaar.",
+        "uo": [
+         "Koos je \"de bron staat bovenaan in de zoekresultaten van de...\"? Dan denk je dat een hoge plek in het zoekresultaat kwaliteit bewijst. Die plek hangt ook af van populariteit en advertenties. Je beoordeelt zelf of de afzender deskundig is en of je het kunt controleren.",
+         "Koos je \"de bron is mooi vormgegeven\"? Dan laat je je leiden door de verpakking. Ook onbetrouwbare bronnen kunnen er professioneel uitzien. Kwaliteit zit in afzender en onderbouwing, niet in opmaak.",
+         "Klopt: bij een deskundige afzender en controleerbare gegevens kun je erop vertrouwen dat de informatie klopt.",
+         "Koos je \"de bron wordt veel gedeeld\"? Dan verwar je populair met juist. Een bericht kan duizenden keren gedeeld worden en toch onwaar zijn. Veel gedeeld zegt iets over bereik, niet over betrouwbaarheid."
+        ],
+        "uh": "Wie zegt het, en kun je het controleren?"
+       },
+       {
+        "v": "Twee bronnen spreken elkaar tegen. Wat doe je het eerst?",
+        "o": [
+         "de kortste bron kiezen",
+         "altijd de nieuwste bron kiezen die je kunt vinden",
+         "nagaan wie deskundiger en beter onderbouwd is",
+         "beide bronnen weglaten"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bij tegenstrijdige bronnen beoordeel je deskundigheid en onderbouwing.",
+        "uo": [
+         "Koos je \"de kortste bron kiezen\"? Dan denk je dat een korte bron eenvoudiger en dus juister is. Kort of lang zegt niets over juistheid. Je kiest op basis van deskundigheid en onderbouwing.",
+         "Koos je \"altijd de nieuwste bron kiezen die je kunt vinden\"? Dan denk je dat nieuw altijd beter is. Soms is een oudere bron deskundiger of gaat het over een onderwerp dat niet verandert. Kijk eerst naar afzender en onderbouwing, daarna naar de datum.",
+         "Klopt: je vergelijkt afzender, onderbouwing en belang. De bron die deskundiger en beter onderbouwd is, weegt zwaarder.",
+         "Koos je \"beide bronnen weglaten\"? Dan vermijd je de keuze. Dan verlies je belangrijke informatie en kun je niets zeggen over het onderwerp. Beter kies je bewust en beargumenteer je, eventueel met een derde bron erbij."
+        ],
+        "uh": "Wie weet het beter, en waarop baseert hij het?"
+       },
+       {
+        "v": "Welke informatie is relevant voor je voordracht?",
+        "o": [
+         "informatie die past bij je doel en je publiek",
+         "alle informatie die je kunt vinden",
+         "informatie die je zelf het leukst en het mooist vindt",
+         "informatie met de meeste cijfers"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Relevante informatie past bij doel en publiek.",
+        "uo": [
+         "Klopt: relevant is wat bijdraagt aan wat je wilt bereiken en wat je luisteraars interesseert of nodig hebben.",
+         "Koos je \"alle informatie die je kunt vinden\"? Dan denk je dat meer informatie altijd beter is. Dan verdrinkt je publiek in details die niets met je doel te maken hebben. Je selecteert juist wat past bij je doel en publiek.",
+         "Koos je \"informatie die je zelf het leukst en het mooist...\"? Dan laat je je eigen smaak bepalen. Jouw voorkeur zegt niets over wat je luisteraars nodig hebben. Relevant is wat helpt om je doel te halen bij dit publiek.",
+         "Koos je \"informatie met de meeste cijfers\"? Dan denk je dat meer cijfers meer gezag geven. Cijfers zijn niet altijd relevant of begrijpelijk voor je publiek. Relevantie gaat om doel en publiek, niet om het aantal getallen."
+        ],
+        "uh": "Doel en publiek eerst."
+       },
+       {
+        "v": "Je hebt veel informatie en weinig tijd. Wat doe je?",
+        "o": [
+         "alles heel snel vertellen",
+         "alleen het onderwerp noemen",
+         "je spreektijd ruim overschrijden om alles te zeggen",
+         "kiezen wat past bij doel en publiek"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Selecteer wat bij doel en publiek past en laat de rest weg.",
+        "uo": [
+         "Koos je \"alles heel snel vertellen\"? Dan probeer je alles erin te proppen. Dan kan het publiek je niet volgen en blijft er weinig hangen. Een goede voordracht draait om wat overkomt, niet om wat gezegd is.",
+         "Koos je \"alleen het onderwerp noemen\"? Dan ga je te ver in het weglaten. Dan vertel je niets over het onderwerp zelf. Je hebt kernpunten met een korte toelichting nodig om iets over te brengen.",
+         "Koos je \"je spreektijd ruim overschrijden om alles te zeggen\"? Dan denk je dat de afgesproken tijd niet telt. Je spreektijd is een afspraak met je publiek en de beoordelaar. Selecteren is de manier om binnen de tijd te blijven.",
+         "Klopt: selecteren betekent kiezen en weglaten. Je houdt wat past en laat bijzaken los."
+        ],
+        "uh": "Kies, laat weg."
+       },
+       {
+        "v": "Wat zijn kernpunten van een voordracht?",
+        "o": [
+         "de voorbeelden die je bij je punten wilt geven",
+         "de belangrijkste punten van je verhaal",
+         "de bronnen die je gebruikt",
+         "de woorden uit de titel"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Kernpunten zijn de belangrijkste punten die je wilt vertellen.",
+        "uo": [
+         "Koos je \"de voorbeelden die je bij je punten wilt geven\"? Dan denk je dat voorbeelden de kern zijn. Voorbeelden ondersteunen een punt, ze zijn het punt niet zelf. Zonder kernpunt zijn voorbeelden losse stukjes.",
+         "Klopt: kernpunten vormen de ruggengraat van je verhaal. Alle uitleg en voorbeelden hangen eraan.",
+         "Koos je \"de bronnen die je gebruikt\"? Dan verwar je de verantwoording met de inhoud. Bronnen laten zien waar je informatie vandaan komt. Kernpunten zijn de punten die je wilt overbrengen aan je publiek.",
+         "Koos je \"de woorden uit de titel\"? Dan denk je dat de titel het verhaal samenvat. De titel noemt het onderwerp, niet wat je erover zegt. Kernpunten zijn de boodschappen die je over het onderwerp geeft."
+        ],
+        "uh": "Kernpunten dragen het verhaal."
+       },
+       {
+        "v": "Waarom noteer je kernwoorden in plaats van hele zinnen?",
+        "o": [
+         "zo hoef je niets van het onderwerp te weten of te leren",
+         "zo duurt je voordracht altijd langer",
+         "zo kun je bronnen weglaten",
+         "zo kun je vrij spreken en blijf je bij de kern"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Kernwoorden helpen je vrij te spreken en bij de kern te blijven.",
+        "uo": [
+         "Koos je \"zo hoef je niets van het onderwerp te weten of te...\"? Dan denk je dat kernwoorden de kennis vervangen. Je moet het onderwerp juist goed kennen om erover te kunnen vertellen. Kernwoorden zijn een geheugensteun, geen vervanging van kennis.",
+         "Koos je \"zo duurt je voordracht altijd langer\"? Dan denk je dat kernwoorden iets met de duur te maken hebben. De duur hangt van je inhoud en tempo af. Kernwoorden helpen je juist om niet voor te lezen.",
+         "Koos je \"zo kun je bronnen weglaten\"? Dan verwar je het verkorten van aantekeningen met het weglaten van bronnen. De bronnen noem je altijd. Kernwoorden zijn een hulpmiddel bij het vertellen.",
+         "Klopt: met kernwoorden als steun spreek je in eigen woorden en blijf je bij wat belangrijk is."
+        ],
+        "uh": "Kernwoorden, geen hele zinnen."
+       },
+       {
+        "v": "Hoe verwerk je informatie uit een bron in eigen woorden?",
+        "o": [
+         "je schrijft de zinnen letterlijk over in je aantekeningen",
+         "je begrijpt het en zegt het op je eigen manier",
+         "je verandert de betekenis een beetje",
+         "je vervangt alleen een paar woorden"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Eerst begrijpen, dan in eigen woorden herformuleren.",
+        "uo": [
+         "Koos je \"je schrijft de zinnen letterlijk over in je...\"? Dan denk je dat overschrijven verwerken is. Dat is een citaat of, zonder bron, plagiaat. Eigen woorden betekent dat je de zin zelf opbouwt.",
+         "Klopt: eerst begrijpen, dan herformuleren. Dan blijft de betekenis gelijk en klinkt het als jouw verhaal.",
+         "Koos je \"je verandert de betekenis een beetje\"? Dan pas je de inhoud aan in plaats van de woorden. Dan klopt de informatie niet meer. Parafraseren behoudt de betekenis en verandert de formulering.",
+         "Koos je \"je vervangt alleen een paar woorden\"? Dan denk je dat een paar synoniemen genoeg zijn. Je zinsbouw blijft dan die van de bron. Echt parafraseren betekent de zin opnieuw opbouwen met je eigen woorden."
+        ],
+        "uh": "Begrijp en herformuleer."
+       },
+       {
+        "v": "Wanneer is een bronvermelding nodig?",
+        "o": [
+         "alleen bij letterlijke citaten",
+         "nooit bij een mondelinge voordracht in de klas",
+         "als je informatie van een ander gebruikt",
+         "als je docent erom vraagt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Gebruik je informatie van een ander, dan vermeld je de bron.",
+        "uo": [
+         "Koos je \"alleen bij letterlijke citaten\"? Dan denk je dat alleen letterlijke zinnen een bron nodig hebben. Ook informatie die je in eigen woorden zegt, komt van iemand. Bij elk gebruik van andermans informatie noem je de bron.",
+         "Koos je \"nooit bij een mondelinge voordracht in de klas\"? Dan denk je dat bronnen alleen bij schriftelijk werk horen. Je noemt ze ook hardop of op een dia. Eerlijk omgaan met informatie geldt in elke vorm.",
+         "Klopt: wat van een ander komt, verantwoord je met een bron. Zo is het duidelijk waar het vandaan komt.",
+         "Koos je \"als je docent erom vraagt\"? Dan maak je er een regel van die alleen geldt als iemand erom vraagt. Het hoort bij eerlijk werken. Je vermeldt de bron omdat het eerlijk is, niet omdat het moet."
+        ],
+        "uh": "Van een ander? Bron erbij."
+       },
+       {
+        "v": "Wat is plagiaat?",
+        "o": [
+         "andermans werk gebruiken zonder de bron te noemen",
+         "informatie uit meerdere bronnen combineren",
+         "een citaat tussen aanhalingstekens met bron",
+         "een samenvatting in eigen woorden met bronvermelding"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Plagiaat is andermans werk gebruiken zonder bronvermelding.",
+        "uo": [
+         "Klopt: het gaat om het gebruiken van andermans werk alsof het van jou is.",
+         "Koos je \"informatie uit meerdere bronnen combineren\"? Dan denk je dat combineren verboden is. Dat is juist goed verzamelen. Het probleem begint pas als je de bronnen niet noemt.",
+         "Koos je \"een citaat tussen aanhalingstekens met bron\"? Dan verwar je correct citeren met plagiaat. Een duidelijk citaat met bronvermelding is toegestaan. Het verschil met plagiaat is de bronvermelding en de aanhalingstekens.",
+         "Koos je \"een samenvatting in eigen woorden met bronvermelding\"? Dan denk je dat samenvatten met een bron fout is. Dat is netjes verwerken. Plagiaat is gebruik zonder bron, niet gebruik mét bron."
+        ],
+        "uh": "Zonder bron = plagiaat."
+       },
+       {
+        "v": "Waarom is voorlezen van een bron geen goede verwerking?",
+        "o": [
+         "je laat niet zien dat je het begrijpt",
+         "omdat voorlezen altijd te snel en te monotoon gaat",
+         "omdat voorlezen niet mag",
+         "omdat de bron dan niet meer klopt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Voorlezen is geen verwerking: je laat je begrip niet zien.",
+        "uo": [
+         "Klopt: voorlezen laat niet zien wat je begrijpt, en een voorgelezen tekst is minder levendig voor het publiek.",
+         "Koos je \"omdat voorlezen altijd te snel en te monotoon gaat\"? Dan denk je dat het probleem het tempo is. Je kunt ook langzaam voorlezen zonder iets te verwerken. Het probleem is dat je er niets van maakt.",
+         "Koos je \"omdat voorlezen niet mag\"? Dan denk je dat voorlezen verboden is. Een korte, aangeduide quote voorlezen mag wel. Het gaat erom dat je de hele voordracht niet bestaat uit voorlezen.",
+         "Koos je \"omdat de bron dan niet meer klopt\"? Dan denk je dat voorlezen de bron beschadigt. De bron blijft gelijk. Voorlezen laat zien dat je niets verwerkt hebt."
+        ],
+        "uh": "Spreek, lees niet voor."
+       },
+       {
+        "v": "Welke bronvermelding is bruikbaar?",
+        "o": [
+         "\"ergens op internet gelezen, ik weet niet meer waar\"",
+         "\"mijn vader zei dat\"",
+         "\"Volgens het rapport van het instituut uit 2023\"",
+         "\"ik weet het van vroeger\""
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Een bronvermelding noemt afzender en jaar of plaats.",
+        "uo": [
+         "Koos je \"ergens op internet gelezen, ik weet niet meer waar\"? Dan denk je dat een vaag verwijzing genoeg is. Zo kan niemand de bron terugvinden. Een bronvermelding noemt wie het zei en waar je het vindt.",
+         "Koos je \"mijn vader zei dat\"? Dan kies je een persoon als bron zonder dat zijn deskundigheid blijkt. Dat is niet te controleren. Een persoon is alleen een bruikbare bron als hij deskundig is en dat benoemd wordt.",
+         "Klopt: afzender en jaar maken de bron te vinden en te controleren.",
+         "Koos je \"ik weet het van vroeger\"? Dan denk je dat je eigen herinnering een bron is. Het is een bewering zonder afzender. Een vermelding moet verwijzen naar iets wat te vinden en te controleren is."
+        ],
+        "uh": "Wie en waar."
+       },
+       {
+        "v": "Waarom is de eerste zoekmachine-uitkomst niet altijd de beste bron?",
+        "o": [
+         "omdat de eerste uitkomst altijd onjuist of reclame is",
+         "zoekmachines kijken naar meer dan betrouwbaarheid",
+         "omdat de tweede uitkomst altijd beter is",
+         "omdat zoekmachines alleen reclame tonen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Rangschikking van zoekresultaten bewijst geen betrouwbaarheid.",
+        "uo": [
+         "Koos je \"omdat de eerste uitkomst altijd onjuist of reclame...\"? Dan denk je dat de eerste uitkomst fout moet zijn. Soms is hij prima, maar dat moet je zelf nagaan. Je beoordeelt elke uitkomst op afzender en controleerbaarheid.",
+         "Klopt: advertenties en populariteit tellen mee. Je beoordeelt de bron zelf.",
+         "Koos je \"omdat de tweede uitkomst altijd beter is\"? Dan denk je dat de volgorde omgekeerd werkt. Ook de tweede kan reclame of onzin zijn. De positie zegt niets over kwaliteit.",
+         "Koos je \"omdat zoekmachines alleen reclame tonen\"? Dan denk je dat alle resultaten reclame zijn. Er staan ook neutrale en deskundige bronnen tussen. Je moet kritisch kijken, niet alles afwijzen."
+        ],
+        "uh": "Beoordeel zelf."
+       },
+       {
+        "v": "Wat doe je met informatie nadat je die gevonden hebt?",
+        "o": [
+         "je leest haar integraal voor",
+         "je bewaart haar zonder te kijken",
+         "je plakt alle teksten achter elkaar",
+         "je selecteert en ordent haar"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Informatie verwerk je door te selecteren en ordenen.",
+        "uo": [
+         "Koos je \"je leest haar integraal voor\"? Dan denk je dat voorlezen verwerken is. Je geeft de tekst door zonder er iets mee te doen. Verwerken betekent kiezen, ordenen en in eigen woorden zeggen.",
+         "Koos je \"je bewaart haar zonder te kijken\"? Dan sla je de verwerking over. Dan heb je er bij je voordracht niets aan. Informatie wordt pas bruikbaar als je haar ordent.",
+         "Koos je \"je plakt alle teksten achter elkaar\"? Dan denk je dat samenvoegen genoeg is. Dat levert een onoverzichtelijk geheel op. Je kiest en ordent tot een verhaal met kernpunten.",
+         "Klopt: na verzamelen komt verwerken: kiezen en ordenen tot een verhaal met kernpunten."
+        ],
+        "uh": "Kiezen en ordenen."
+       },
+       {
+        "v": "Welke bron kies je als hoofdbron?",
+        "o": [
+         "de folder van het installatiebedrijf",
+         "het onderzoeksrapport",
+         "het forumbericht",
+         "de tekst zonder auteur"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Kies als hoofdbron de bron met deskundige, controleerbare informatie.",
+        "uo": [
+         "Koos je \"de folder van het installatiebedrijf\"? Dan vertrouw je op een afzender die iets wil verkopen. Het bedrijf benadrukt voordelen en laat nadelen weg. Voor een hoofdbron zoek je een neutrale, deskundige afzender.",
+         "Klopt: een onderzoeksinstituut is deskundig en het rapport is controleerbaar. Dat past bij een voordracht met feiten.",
+         "Koos je \"het forumbericht\"? Dan denk je dat een bericht dat ergens op staat betrouwbaar is. Iedereen kan op een forum iets schrijven zonder controle. Een forumbericht is geen deskundige, controleerbare bron.",
+         "Koos je \"de tekst zonder auteur\"? Dan kies je een bron waarvan je de afzender niet kent. Je kunt niet beoordelen of de schrijver deskundig is. Zonder auteur of bron kun je de informatie niet controleren."
+        ],
+        "uh": "Deskundig, onafhankelijk, controleerbaar.",
+        "ctx": "Je houdt een voordracht over zonnepanelen voor je klas. Je vindt een folder van een installatiebedrijf, een rapport van een onderzoeksinstituut, een forumbericht en een tekst zonder auteur."
+       },
+       {
+        "v": "Waarom is het energiebedrijf als bron minder betrouwbaar?",
+        "o": [
+         "het bedrijf heeft belang bij de verkoop",
+         "het bedrijf heeft geen website",
+         "een bedrijf kan niets weten over zonnepanelen",
+         "de website is te lang"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Een bron met een belang is minder neutraal.",
+        "uo": [
+         "Klopt: een belanghebbende kleurt informatie. Daarom weeg je zijn claim minder zwaar dan een onafhankelijk rapport.",
+         "Koos je \"het bedrijf heeft geen website\"? Dan lees je iets wat er niet staat. Het bedrijf heeft juist een website. Het probleem is niet de website maar het belang bij verkoop.",
+         "Koos je \"een bedrijf kan niets weten over zonnepanelen\"? Dan denk je dat een bedrijf geen kennis heeft. Een bedrijf kan veel weten van zijn producten. Het probleem is niet kennis maar het belang bij het resultaat.",
+         "Koos je \"de website is te lang\"? Dan beoordeel je de vorm in plaats van de afzender. Lengte zegt niets over betrouwbaarheid. Kijk wie het zegt en welk belang hij heeft."
+        ],
+        "uh": "Wie verdient eraan?",
+        "ctx": "Een energiebedrijf zegt op zijn website dat zonnepanelen altijd binnen drie jaar zijn terugverdiend. Een onderzoeksrapport noemt een veel langere terugverdientijd."
+       },
+       {
+        "v": "Wat doe je met deze bewering?",
+        "o": [
+         "je neemt haar over omdat iemand het op een forum heeft gezegd",
+         "je noemt haar als feit met de bron \"forum\"",
+         "je laat de tekst bij je presentatie zien als bewijs",
+         "je controleert haar eerst bij een betrouwbare bron"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Controleer onbekende beweringen bij een betrouwbare bron.",
+        "uo": [
+         "Koos je \"je neemt haar over omdat iemand het op een forum...\"? Dan denk je dat gezegd ook waar is. Iemand zonder naam of bron kan van alles beweren. Zonder controle zet je mogelijk onwaarheden in je voordracht.",
+         "Koos je \"je noemt haar als feit met de bron forum\"? Dan denk je dat \"forum\" een bronvermelding is. Een bron noemt een afzender die deskundig en vindbaar is. Een anonieme post is geen bron die je kunt verantwoorden.",
+         "Koos je \"je laat de tekst bij je presentatie zien als bewijs\"? Dan denk je dat een afbeelding van een bericht bewijskracht heeft. Een anonieme bewering is geen bewijs, ook niet op een dia. Je zou je publiek misleiden met niet-gecontroleerde informatie.",
+         "Klopt: een anonieme bewering zonder bron is niet te vertrouwen. Eerst controleren bij een betrouwbare bron."
+        ],
+        "uh": "Eerst controleren.",
+        "ctx": "Op een forum schrijft iemand zonder naam dat schoolexamens worden afgeschaft. Er staat geen bron bij."
+       },
+       {
+        "v": "Welke informatie selecteer je het best?",
+        "o": [
+         "de tabel met uitstoot per land in miljoenen tonnen",
+         "de uitleg over de ozonlaag",
+         "de eenvoudige uitleg van het broeikaseffect",
+         "alle drie even uitgebreid"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Selecteer informatie die bij het onderwerp én het publiek past.",
+        "uo": [
+         "Koos je \"de tabel met uitstoot per land in miljoenen tonnen\"? Dan denk je dat cijfers altijd overtuigen. Voor groep 8 zijn tonnen per land te abstract en te veel getallen. Je past je informatie aan op het publiek.",
+         "Koos je \"de uitleg over de ozonlaag\"? Dan verwar je het klimaat met een ander milieuonderwerp. De ozonlaag is een ander thema. De informatie moet bij je onderwerp passen, niet bij een verwant onderwerp.",
+         "Klopt: die past bij het onderwerp en is begrijpelijk voor groep 8.",
+         "Koos je \"alle drie even uitgebreid\"? Dan denk je dat alles erbij moet. Een deel past niet bij het onderwerp of het publiek. Je selecteert wat bij doel en publiek past."
+        ],
+        "uh": "Onderwerp + publiek.",
+        "ctx": "Je spreekt voor groep 8 over het klimaat. Je hebt een uitleg van het broeikaseffect in eenvoudige woorden, een tabel met CO2-uitstoot per land in tonnen en een uitleg over de ozonlaag."
+       },
+       {
+        "v": "Welke informatie is het meest relevant en betrouwbaar?",
+        "o": [
+         "de geschiedenis van de schoolbel",
+         "de lijst met pauzelengtes zonder bron",
+         "het onderzoek over concentratie",
+         "geen van de drie"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Kies informatie die relevant én controleerbaar is.",
+        "uo": [
+         "Koos je \"de geschiedenis van de schoolbel\"? Dan denk je dat alles over school past. Het is interessant maar ondersteunt je standpunt niet. Relevant is wat je argument steunt.",
+         "Koos je \"de lijst met pauzelengtes zonder bron\"? Dan kies je een passend onderwerp zonder te kijken naar de bron. Zonder bron kun je de lijst niet controleren. Relevant én betrouwbaar zijn allebei nodig.",
+         "Klopt: het sluit aan bij je standpunt en is een onderbouwd onderzoek.",
+         "Koos je \"geen van de drie\"? Dan denk je dat niets bruikbaar is. Het onderzoek past wel bij je standpunt en heeft een onderbouwing. Kijk naar relevantie en betrouwbaarheid per stuk."
+        ],
+        "uh": "Relevant en controleerbaar.",
+        "ctx": "Je wilt je klas overtuigen dat de pauze langer moet. Je hebt onderzoek dat de concentratie daalt na lange lessen, een stuk over de geschiedenis van de schoolbel en een lijst met pauzelengtes in andere landen zonder bron."
+       },
+       {
+        "v": "Welke kernwoorden noteer je?",
+        "o": [
+         "dak, school, jaar",
+         "het hele eerste zinsdeel letterlijk uit de tekst",
+         "geen kernwoorden, alleen de titel",
+         "zonnepanelen, tien huishoudens, besparing"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Kernwoorden zijn de belangrijkste woorden die de boodschap dragen.",
+        "uo": [
+         "Koos je \"dak, school, jaar\"? Dan kies je bijzaken. Deze woorden zeggen niets over de boodschap. Kernwoorden zijn de woorden die de boodschap dragen.",
+         "Koos je \"het hele eerste zinsdeel letterlijk uit de tekst\"? Dan schrijf je hele stukken tekst op. Dan lees je eigenlijk voor. Kernwoorden zijn korte steunwoorden waarmee je zelf kunt vertellen.",
+         "Koos je \"geen kernwoorden, alleen de titel\"? Dan denk je dat een titel genoeg steun geeft. De titel noemt het onderwerp, niet de punten die je wilt vertellen. Kernwoorden bevatten de belangrijkste informatie, niet alleen het onderwerp.",
+         "Klopt: deze kernwoorden dekken wat belangrijk is: wat het is, wat het levert en wat het bespaart."
+        ],
+        "uh": "Kort en dragend.",
+        "ctx": "De zonnepanelen op het dak van de school leveren per jaar genoeg stroom voor tien huishoudens, en de school bespaart daardoor elk jaar duizenden euro's op de energierekening."
+       },
+       {
+        "v": "Welke formulering is een goede parafrase?",
+        "o": [
+         "De accu slaat de stroom die je erin stopt op als chemische energie.",
+         "Bij het laden van de accu wordt elektrische energie omgezet in chemische energie.",
+         "De accu maakt elektrische energie uit chemische energie.",
+         "Een accu is een belangrijk apparaat voor de toekomst."
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Een parafrase behoudt de betekenis in eigen woorden.",
+        "uo": [
+         "Klopt: dezelfde betekenis in eigen woorden. Niets toegevoegd en niets weggelaten.",
+         "Koos je \"Bij het laden van de accu wordt elektrische energie...\"? Dan denk je dat het inkorten van een zin parafraseren is. Je hebt de zin bijna letterlijk gelaten. Een parafrase gebruikt eigen woorden en een eigen zinsbouw.",
+         "Koos je \"De accu maakt elektrische energie uit chemische...\"? Dan draai je de richting van het proces om. Bij laden wordt elektrische energie juist opgeslagen als chemische energie. Een parafrase moet de betekenis behouden.",
+         "Koos je \"Een accu is een belangrijk apparaat voor de...\"? Dan voeg je een eigen mening toe en laat je de inhoud weg. Dit zegt niets over het omzetten van energie. Een parafrase geeft de inhoud van de bron weer."
+        ],
+        "uh": "Zelfde betekenis, andere woorden.",
+        "ctx": "Bij het laden van de accu wordt elektrische energie omgezet in chemische energie die in de accu opgeslagen blijft."
+       },
+       {
+        "v": "Wat doe je?",
+        "o": [
+         "je zegt de zin alsof het je eigen idee is",
+         "je zegt dat het een citaat is en noemt de bron",
+         "je laat de bron weg omdat het een bekende zin is",
+         "je past de zin een beetje aan en noemt geen bron"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Een letterlijke zin gebruik je als citaat met bron.",
+        "uo": [
+         "Koos je \"je zegt de zin alsof het je eigen idee is\"? Dan neem je andermans woorden over als de jouwe. Dat is plagiaat. Letterlijke zinnen duid je altijd aan als citaat met bron.",
+         "Klopt: een letterlijke zin presenteer je als citaat met bron. Zo is helder dat het niet jouw woorden zijn.",
+         "Koos je \"je laat de bron weg omdat het een bekende zin is\"? Dan denk je dat een bekende zin geen bron nodig heeft. Ook bekende zinnen komen ergens vandaan. Je noemt de bron zodat het eerlijk blijft en je publiek het kan controleren.",
+         "Koos je \"je past de zin een beetje aan en noemt geen bron\"? Dan denk je dat een kleine aanpassing het jouwe maakt. Het blijft informatie van een ander. Ook bij een aangepaste zin noem je de bron."
+        ],
+        "uh": "Citaat + bron.",
+        "ctx": "Je wilt de zin \"Het klimaat verandert sneller dan verwacht\" letterlijk uit een rapport gebruiken in je voordracht."
+       },
+       {
+        "v": "Wat is hier mis?",
+        "o": [
+         "de zin is te kort om plagiaat te zijn",
+         "er is niets mis, want hij zegt het mondeling",
+         "het artikel is te oud",
+         "geen bronvermelding, dus plagiaat"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Letterlijk overnemen zonder bron is plagiaat.",
+        "uo": [
+         "Koos je \"de zin is te kort om plagiaat te zijn\"? Dan denk je dat een korte zin vrij te gebruiken is. Ook een korte letterlijke zin telt als plagiaat zonder bron. De lengte bepaalt niet of je de bron moet noemen.",
+         "Koos je \"er is niets mis, want hij zegt het mondeling\"? Dan denk je dat plagiaat alleen voor geschreven tekst geldt. Mondeling gebruik van andermans woorden zonder bron is ook plagiaat. Je noemt je bron ook bij een voordracht.",
+         "Koos je \"het artikel is te oud\"? Dan denk je dat de leeftijd van het artikel telt. Het gaat om het ontbreken van de bron. Ook een oud artikel moet je noemen als je het gebruikt.",
+         "Klopt: letterlijk overgenomen zonder bron is plagiaat."
+        ],
+        "uh": "Bron noemen, ook mondeling.",
+        "ctx": "Een leerling zegt in zijn voordracht: \"Zonnepanelen zijn de toekomst.\" Die zin komt letterlijk uit een artikel, maar hij noemt het artikel niet."
+       },
+       {
+        "v": "Wat is hier het probleem?",
+        "o": [
+         "je informatie is eenzijdig",
+         "je gebruikt te veel bronnen",
+         "je noemt je bronnen te vaak",
+         "je gebruikt bronnen die te betrouwbaar zijn"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Zoek ook andere kanten, zodat je tegenargumenten kent.",
+        "uo": [
+         "Klopt: eenzijdige informatie maakt je kwetsbaar in een discussie. Je moet tegenargumenten kennen.",
+         "Koos je \"je gebruikt te veel bronnen\"? Dan denk je dat het aantal het probleem is. Je kiest alleen bronnen die je mening steunen. Het probleem is eenzijdigheid, niet het aantal.",
+         "Koos je \"je noemt je bronnen te vaak\"? Dan denk je dat bronnen noemen overdreven kan zijn. Bronnen noemen is juist goed. Het probleem is dat je andere kanten negeert.",
+         "Koos je \"je gebruikt bronnen die te betrouwbaar zijn\"? Dan denk je dat betrouwbaar slecht kan zijn. Betrouwbaarheid is juist wat je zoekt. De kwestie is dat je alleen één kant laat zien."
+        ],
+        "uh": "Ken ook de tegenkant.",
+        "ctx": "Je zoekt alleen informatie die jouw standpunt steunt en laat artikelen met andere meningen weg."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Je houdt een voordracht over zonnepanelen op school. Je vindt een folder van een installatiebedrijf, een rapport van een onderzoeksinstituut en een anoniem forumbericht.",
+        "v": "Welke bron kies je als hoofdbron en waarom? Geef ook één reden waarom je een andere bron minder vertrouwt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hoofdbron: het rapport van het onderzoeksinstituut, want de afzender is deskundig en het rapport is controleerbaar (1 punt). De folder is minder betrouwbaar omdat het bedrijf belang heeft bij verkoop, of het forumbericht omdat de afzender onbekend is (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Je hebt veel informatie over het onderwerp \"slaap bij tieners\" maar maar vijf minuten spreektijd, en je publiek is groep 8.",
+        "v": "Welke twee dingen doe je om je informatie te selecteren? Leg uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ik kies wat past bij mijn doel en mijn publiek (1 punt) en laat details en moeilijke gegevens weg die groep 8 niet nodig heeft of niet begrijpt (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Je leest in een bron: \"Bij het laden van de accu wordt elektrische energie omgezet in chemische energie die in de accu blijft.\"",
+        "v": "Geef een parafrase van deze zin en leg uit waarom het geen letterlijke kopie is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld: \"De accu slaat de stroom op als chemische energie.\" (1 punt voor juiste betekenis). Het is eigen woorden en een eigen zinsbouw, dus geen letterlijke kopie (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt in zijn voordracht een zin uit een artikel, zonder het artikel te noemen.",
+        "v": "Wat is er mis? Wat had hij moeten doen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Dit is plagiaat: andermans woorden zonder bron (1 punt). Hij had de zin als citaat moeten aanduiden en de bron moeten noemen, of de informatie in eigen woorden moeten zeggen met bronvermelding (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zoekt voor een debat over een schoolreis alleen informatie die zijn standpunt steunt.",
+        "v": "Waarom is dat riskant voor het debat en wat doet hij beter?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij kent de tegenargumenten niet en kan er in het debat niet op reageren (1 punt). Beter: ook informatie zoeken die tegen zijn standpunt ingaat en daar weerleggingen bij voorbereiden (1 punt)."
+       }
+      ]
+     },
+     {
+      "id": "B2",
+      "lo": "nl.B.2",
+      "gs": 2,
+      "naam": "Doel, publiek en gespreksvorm bepalen",
+      "beschrijving": "Je bepaalt of je wilt informeren of overtuigen, voor wie je spreekt en of het een voordracht, discussie of debat is, en je stemt inhoud en taal daarop af.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gespreksvormen: voordracht, discussie, debat",
+       "Spreekdoel: informeren of overtuigen",
+       "Publiek en voorkennis",
+       "Inhoud, taal en toon afstemmen",
+       "Valkuilen bij afstemmen"
+      ],
+      "sam": "Voor een voordracht, discussie of debat bepaal je eerst het spreekdoel (informeren of overtuigen), het publiek en de gespreksvorm. Een voordracht heeft één spreker, een discussie wisselt meningen uit, een debat heeft vaste partijen en regels. Je stemt inhoud, taal, voorbeelden en register af op doel en publiek.",
+      "begrippen": [
+       {
+        "t": "Voordracht",
+        "d": "Een voorbereide mondelinge presentatie door één spreker voor een publiek."
+       },
+       {
+        "t": "Discussie",
+        "d": "Een gesprek waarin deelnemers hun meningen over een onderwerp uitwisselen."
+       },
+       {
+        "t": "Debat",
+        "d": "Een gestructureerd gesprek waarin partijen een tegengesteld standpunt verdedigen."
+       },
+       {
+        "t": "Gespreksvorm",
+        "d": "De vorm van een mondelinge situatie, zoals voordracht, discussie of debat."
+       },
+       {
+        "t": "Spreekdoel",
+        "d": "Wat de spreker bij het publiek wil bereiken, zoals informeren of overtuigen."
+       },
+       {
+        "t": "Informatieve presentatie",
+        "d": "Een presentatie die het publiek iets laat weten of begrijpen."
+       },
+       {
+        "t": "Overtuigende presentatie",
+        "d": "Een presentatie die het publiek aan de kant van een standpunt wil krijgen."
+       },
+       {
+        "t": "Publiek",
+        "d": "De groep luisteraars tot wie de spreker zich richt."
+       },
+       {
+        "t": "Voorkennis",
+        "d": "Wat het publiek al weet over het onderwerp."
+       },
+       {
+        "t": "Register",
+        "d": "De mate van formeel taalgebruik die bij de situatie past."
+       },
+       {
+        "t": "Vakjargon",
+        "d": "Woorden die alleen deskundigen kennen."
+       },
+       {
+        "t": "Afstemmen",
+        "d": "Inhoud en taal aanpassen aan doel, publiek en vorm."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke gespreksvorm heeft één spreker met een voorbereid verhaal?",
+        "o": [
+         "de discussie",
+         "de voordracht",
+         "het debat",
+         "het interview met vragen"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een voordracht is één spreker met een voorbereid verhaal.",
+        "uo": [
+         "Koos je \"de discussie\"? Dan denk je dat elke gespreksvorm met een spreker een discussie is. Bij een discussie wisselen meerdere deelnemers van beurt. Bij een voordracht is één spreker aan het woord en luistert het publiek.",
+         "Klopt: bij een voordracht presenteert één spreker een voorbereid verhaal aan een publiek dat luistert.",
+         "Koos je \"het debat\"? Dan verwar je een spreker met een debatteur. Bij een debat staan twee partijen met tegengestelde standpunten tegenover elkaar. Een debat heeft meerdere sprekers en regels voor weerleggen.",
+         "Koos je \"het interview met vragen\"? Dan denk je dat vragen en antwoorden hetzelfde zijn als een voordracht. Een interview bestaat uit vragen van de een aan de ander. Bij een voordracht vertelt één spreker en stelt het publiek geen vragen."
+        ],
+        "uh": "Eén spreker = voordracht."
+       },
+       {
+        "v": "In welke gespreksvorm verdedigen partijen tegengestelde standpunten volgens regels?",
+        "o": [
+         "de voordracht",
+         "de discussie",
+         "de spreekbeurt",
+         "het debat"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Een debat heeft tegengestelde partijen en regels.",
+        "uo": [
+         "Koos je \"de voordracht\"? Dan denk je dat een voordracht met een standpunt een debat is. Bij een voordracht is er één spreker en geen tegenpartij. Een debat heeft altijd een tegenpartij die reageert.",
+         "Koos je \"de discussie\"? Dan verwar je een vrije uitwisseling van meningen met een debat. Een discussie heeft meestal geen vaste partijen en regels. Bij een debat zijn standpunten en rollen vooraf afgesproken.",
+         "Koos je \"de spreekbeurt\"? Dan denk je dat een spreekbeurt een debat is. Een spreekbeurt is één persoon die iets vertelt. Bij een debat wordt actief gereageerd op de tegenpartij.",
+         "Klopt: een debat draait om tegengestelde standpunten die volgens afgesproken regels worden verdedigd en weerlegd."
+        ],
+        "uh": "Tegenover elkaar, met regels."
+       },
+       {
+        "v": "Wat is het belangrijkste verschil tussen een discussie en een debat?",
+        "o": [
+         "een debat heeft vaste regels",
+         "een discussie is altijd langer",
+         "in een discussie praat niemand",
+         "een debat heeft geen publiek"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Een debat heeft vaste partijen en regels; een discussie is vrijer.",
+        "uo": [
+         "Klopt: in een debat zijn standpunten, rollen en regels vooraf afgesproken. Een discussie is vrijer.",
+         "Koos je \"een discussie is altijd langer\"? Dan denk je dat het verschil in lengte zit. Een discussie kan kort zijn en een debat lang, of andersom. Het verschil zit in structuur en regels, niet in duur.",
+         "Koos je \"in een discussie praat niemand\"? Dan draai je het om. In een discussie praten juist meerdere mensen en wisselen zij meningen uit. Het verschil is dat een debat vaste rollen en regels heeft.",
+         "Koos je \"een debat heeft geen publiek\"? Dan denk je dat het publiek ontbreekt. Een debat kan een publiek of jury hebben. Publiek bepaalt de gespreksvorm niet; de regels en partijen wel."
+        ],
+        "uh": "Regels = debat."
+       },
+       {
+        "v": "Wat is het spreekdoel van een informatieve presentatie?",
+        "o": [
+         "de luisteraars overtuigen van een standpunt",
+         "de luisteraars laten lachen",
+         "de luisteraars iets laten weten",
+         "de luisteraars laten stemmen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Een informatieve presentatie wil de luisteraars informeren.",
+        "uo": [
+         "Koos je \"de luisteraars overtuigen van een standpunt\"? Dan denk je dat elke presentatie iets wil bereiken bij de mening. Een informatieve presentatie wil uitleg geven en geen mening veranderen. Overtuigen hoort bij een overtuigende presentatie.",
+         "Koos je \"de luisteraars laten lachen\"? Dan verwar je presenteren met entertainen. Humor kan helpen, maar is niet het doel van informeren. Het doel is dat de luisteraars iets weten of begrijpen.",
+         "Klopt: een informatieve presentatie wil de luisteraars iets laten weten of begrijpen, zonder een standpunt te verdedigen.",
+         "Koos je \"de luisteraars laten stemmen\"? Dan denk je dat informeren om een keuze vraagt. Zo'n opdracht hoort bij een overtuigend doel. Informeren vraagt niets van het publiek behalve begrijpen."
+        ],
+        "uh": "Informeren = uitleggen."
+       },
+       {
+        "v": "Wat is het spreekdoel van een overtuigende presentatie?",
+        "o": [
+         "de luisteraars iets uitleggen zonder standpunt",
+         "de luisteraars laten raden wat je vindt",
+         "de luisteraars aan je kant krijgen",
+         "de luisteraars een quiz laten doen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Een overtuigende presentatie wil de luisteraars overtuigen.",
+        "uo": [
+         "Koos je \"de luisteraars iets uitleggen zonder standpunt\"? Dan denk je dat uitleggen overtuigen is. Uitleggen zonder standpunt is informeren. Overtuigen vraagt een standpunt en argumenten.",
+         "Koos je \"de luisteraars laten raden wat je vindt\"? Dan verwar je een verborgen mening met overtuigen. Je moet je standpunt juist duidelijk maken. Overtuigen werkt met een helder standpunt en argumenten.",
+         "Klopt: een overtuigende presentatie wil de luisteraars van een standpunt overtuigen of tot actie aanzetten.",
+         "Koos je \"de luisteraars een quiz laten doen\"? Dan denk je dat een opdracht overtuigt. Een quiz toetst kennis, het overtuigt niet. Overtuigen doe je met argumenten, niet met opdrachten."
+        ],
+        "uh": "Overtuigen = standpunt + argumenten."
+       },
+       {
+        "v": "Waarom stem je je presentatie af op je publiek?",
+        "o": [
+         "zodat het publiek je kan volgen",
+         "zodat je minder hoeft voor te bereiden",
+         "zodat het publiek niet kan reageren",
+         "zodat je spreektijd korter wordt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Je stemt af op het publiek zodat het je begrijpt en blijft volgen.",
+        "uo": [
+         "Klopt: een presentatie werkt pas als de luisteraars hem begrijpen en volgen. Daarom pas je inhoud en taal aan.",
+         "Koos je \"zodat je minder hoeft voor te bereiden\"? Dan denk je dat afstemmen werk bespaart. Afstemmen kost juist denkwerk: je moet weten wie er luistert. Je bereidt je voor met het publiek in gedachten.",
+         "Koos je \"zodat het publiek niet kan reageren\"? Dan verwar je afstemmen met dichtdoen. Afstemmen maakt contact juist makkelijker. Het gaat erom dat het publiek je kan volgen.",
+         "Koos je \"zodat je spreektijd korter wordt\"? Dan denk je dat afstemmen over tijd gaat. De spreektijd is een aparte afspraak. Afstemmen gaat over inhoud, taal en voorbeelden."
+        ],
+        "uh": "Publiek bepaalt je aanpak."
+       },
+       {
+        "v": "Je gebruikt een begrip dat je publiek niet kent. Wat doe je?",
+        "o": [
+         "je laat het weg en doet alsof het niet bestaat",
+         "je herhaalt het woord vaker",
+         "je gebruikt nog moeilijkere woorden",
+         "je legt het uit met een voorbeeld"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Onbekende begrippen leg je uit met een voorbeeld.",
+        "uo": [
+         "Koos je \"je laat het weg en doet alsof het niet bestaat\"? Dan ga je het probleem uit de weg. Dan mis je een belangrijk onderdeel van je uitleg. Beter leg je het uit zodat je publiek je kan volgen.",
+         "Koos je \"je herhaalt het woord vaker\"? Dan denk je dat herhaling begrip schept. Een onbekend woord wordt niet duidelijker door herhaling. Uitleg met een voorbeeld doet dat wel.",
+         "Koos je \"je gebruikt nog moeilijkere woorden\"? Dan denk je dat een deskundige indruk helpt. Het publiek raakt juist de draad kwijt. Spreek in woorden die je publiek begrijpt.",
+         "Klopt: een kort voorbeeld maakt een onbekend begrip begrijpelijk zonder dat je publiek afhaakt."
+        ],
+        "uh": "Begrip + voorbeeld."
+       },
+       {
+        "v": "Welk taalgebruik past het best bij een presentatie voor een jury?",
+        "o": [
+         "losjes en met veel spreektaal",
+         "verzorgd en zakelijk",
+         "vol grapjes en afkortingen",
+         "zo kort mogelijk met losse woorden"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Voor een jury kies je een formeel, zakelijk register.",
+        "uo": [
+         "Koos je \"losjes en met veel spreektaal\"? Dan denk je dat een jury net zo is als vrienden. Spreektaal komt onverzorgd over en past niet bij een beoordeling. Kies een formeel register dat bij de situatie past.",
+         "Klopt: een jury verwacht een formeel register: volledige zinnen, verzorgde woorden en een zakelijke toon.",
+         "Koos je \"vol grapjes en afkortingen\"? Dan denk je dat humor altijd werkt. Afkortingen en grapjes kunnen afleiden en onzorgvuldig overkomen. Voor een jury is een zakelijke toon beter.",
+         "Koos je \"zo kort mogelijk met losse woorden\"? Dan denk je dat korter altijd beter is. Losse woorden zijn onvolledig en onduidelijk. Gebruik volledige zinnen."
+        ],
+        "uh": "Jury = formeel."
+       },
+       {
+        "v": "Welke aanpassing helpt bij een publiek met weinig voorkennis?",
+        "o": [
+         "veel vakjargon om deskundig te lijken",
+         "zo snel mogelijk praten",
+         "alleen cijfers noemen",
+         "korte zinnen en voorbeelden"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Bij weinig voorkennis gebruik je korte zinnen en voorbeelden.",
+        "uo": [
+         "Koos je \"veel vakjargon om deskundig te lijken\"? Dan denk je dat jargon indruk maakt. Wie het jargon niet kent, snapt je niet. Gebruik woorden die je publiek begrijpt.",
+         "Koos je \"zo snel mogelijk praten\"? Dan denk je dat een hoog tempo sterk overkomt. Een publiek met weinig voorkennis heeft juist tijd nodig om te volgen. Spreek in een rustig tempo.",
+         "Koos je \"alleen cijfers noemen\"? Dan denk je dat cijfers genoeg uitleg zijn. Zonder context zeggen cijfers weinig. Geef uitleg en voorbeelden erbij.",
+         "Klopt: eenvoudige zinsbouw en voorbeelden maken een onderwerp toegankelijk voor wie er weinig van weet."
+        ],
+        "uh": "Eenvoudig en met voorbeelden."
+       },
+       {
+        "v": "Wanneer is een presentatie adequaat?",
+        "o": [
+         "als hij zo lang mogelijk duurt",
+         "als doel, publiek en vorm kloppen",
+         "als er veel dia's in zitten",
+         "als de spreker zelf erg tevreden is over zijn verhaal"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Adequaat betekent afgestemd op doel, publiek en gespreksvorm.",
+        "uo": [
+         "Koos je \"als hij zo lang mogelijk duurt\"? Dan denk je dat lengte kwaliteit is. Een lange presentatie kan het publiek juist vermoeien. Kwaliteit zit in afstemming, niet in duur.",
+         "Klopt: een adequate presentatie past bij wat je wilt bereiken, bij wie luistert en bij de vorm waarin je spreekt.",
+         "Koos je \"als er veel dia's in zitten\"? Dan denk je dat een volle presentatie beter is. Dia's zijn een hulpmiddel, geen doel. Het gaat om doel, publiek en vorm.",
+         "Koos je \"als de spreker zelf erg tevreden is over zijn...\"? Dan beoordeel je vanuit jezelf. Een presentatie is pas goed als hij bij het publiek werkt. Afstemming op doel en publiek bepaalt de kwaliteit."
+        ],
+        "uh": "Doel, publiek, vorm."
+       },
+       {
+        "v": "Welke gespreksvorm is dit?",
+        "o": [
+         "een voordracht",
+         "een discussie",
+         "een debat",
+         "een interview"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Teams met tegengestelde standpunten, rondes en jury: een debat.",
+        "uo": [
+         "Koos je \"een voordracht\"? Dan verwar je meerdere sprekers met één spreker. Bij een voordracht is er geen tegenpartij. Hier staan twee teams tegenover elkaar.",
+         "Koos je \"een discussie\"? Dan denk je dat meningen uitwisselen altijd discussie is. Hier zijn partijen, rondes en een jury, dus is er meer structuur. Vaste rollen en een jury horen bij een debat.",
+         "Klopt: twee teams met tegengestelde standpunten, vaste rondes en een jury kenmerken een debat.",
+         "Koos je \"een interview\"? Dan denk je dat vragen en antwoorden een interview maken. Hier verdedigen teams elk een standpunt. Een interview heeft een vraagsteller en een antwoorder."
+        ],
+        "uh": "Rollen + jury = debat.",
+        "ctx": "Twee teams verdedigen elk een standpunt over huiswerk. Er zijn spreekrondes en een jury beslist wie wint."
+       },
+       {
+        "v": "Welke gespreksvorm is dit?",
+        "o": [
+         "een discussie",
+         "een voordracht",
+         "een debat",
+         "een spreekbeurt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Een gesprek met meerdere deelnemers zonder vaste partijen is een discussie.",
+        "uo": [
+         "Klopt: meerdere deelnemers wisselen meningen uit zonder vaste partijen of winnaar. Dat is een discussie.",
+         "Koos je \"een voordracht\"? Dan denk je dat het over één spreker gaat. Hier praten meerdere deelnemers. Bij een voordracht is er geen uitwisseling van meningen.",
+         "Koos je \"een debat\"? Dan verwar je een gesprek met meningen met een debat. Hier zijn geen vaste partijen en geen jury. Een debat vraagt rollen en regels.",
+         "Koos je \"een spreekbeurt\"? Dan denk je dat meerdere sprekers een reeks spreekbeurten vormen. Hier reageren ze op elkaar. Een spreekbeurt is een voorbereid verhaal van één persoon."
+        ],
+        "uh": "Vrij gesprek = discussie.",
+        "ctx": "Een groep leerlingen bespreekt of de pauze langer moet. Iedereen mag reageren, er zijn geen vaste partijen en niemand hoeft te winnen."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "hij houdt een voordracht, geen debat",
+         "hij spreekt te zacht",
+         "hij heeft te veel argumenten",
+         "hij praat over het verkeerde onderwerp"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "In een debat reageer je op de tegenpartij; een monoloog is een voordracht.",
+        "uo": [
+         "Klopt: een debat vraagt dat je reageert op de tegenpartij. Een monoloog is een voordracht.",
+         "Koos je \"hij spreekt te zacht\"? Dan denk je dat het probleem de stem is. Het gaat om de vorm: hij reageert niet. In een debat reageer je op de ander.",
+         "Koos je \"hij heeft te veel argumenten\"? Dan denk je dat te veel argumenten fout zijn. Argumenten zijn goed, zolang je ze inzet in een debat. Het probleem is dat hij niet reageert.",
+         "Koos je \"hij praat over het verkeerde onderwerp\"? Dan denk je dat het onderwerp niet klopt. Het onderwerp is het schooluniform. Het probleem is de vorm. Reageren op de ander hoort bij debatteren."
+        ],
+        "uh": "Debat = reageren.",
+        "ctx": "Tijdens een debat over een schooluniform houdt een leerling vijf minuten een monoloog en reageert niet op wat zijn tegenstander zegt."
+       },
+       {
+        "v": "Welk register past?",
+        "o": [
+         "een informeel register",
+         "dialect",
+         "een formeel register",
+         "afkortingen en chattaal"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Voor docenten en een jury kies je een formeel register.",
+        "uo": [
+         "Koos je \"een informeel register\"? Dan denk je dat een jury net zo is als vrienden. Spreektaal komt onverzorgd over. Kies een formeel register voor docenten en jury.",
+         "Koos je \"dialect\"? Dan kies je een taal die niet iedereen verstaat. Een jury beoordeelt verzorgd Nederlands. Een formeel register is standaardtaal.",
+         "Klopt: bij docenten en een jury hoort een verzorgd, formeel register met volledige zinnen.",
+         "Koos je \"afkortingen en chattaal\"? Dan denk je dat chattaal bij een presentatie past. Het is onzorgvuldig en onduidelijk. Gebruik volledige woorden en zinnen."
+        ],
+        "uh": "Jury = formeel.",
+        "ctx": "Je geeft een presentatie aan docenten en een jury over je afstudeeronderwerp."
+       },
+       {
+        "v": "Welk register past het best?",
+        "o": [
+         "een zeer formeel register met u-vorm",
+         "een losser register",
+         "geen register, je praat gewoon",
+         "alleen vakjargon"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Bij bekenden kies je een losser register dat nog wel duidelijk blijft.",
+        "uo": [
+         "Koos je \"een zeer formeel register met u-vorm\"? Dan denk je dat formeel altijd beter is. Bij vrienden voelt dat stijf en vreemd. Pas je register aan op de situatie.",
+         "Klopt: onder bekenden mag je losser praten, zolang het begrijpelijk en beleefd blijft.",
+         "Koos je \"geen register, je praat gewoon\"? Dan denk je dat register niets met situatie te maken heeft. Elke situatie vraagt een passende toon. Los is ook een keuze, maar wel een passende.",
+         "Koos je \"alleen vakjargon\"? Dan kies je woorden die je klasgenoten waarschijnlijk niet kennen. Dat past niet bij vertellen over vakantie. Je kiest woorden die je publiek kent."
+        ],
+        "uh": "Situatie bepaalt register.",
+        "ctx": "Je vertelt in je klas wat je in de vakantie deed en je klasgenoten kennen je goed."
+       },
+       {
+        "v": "Welk spreekdoel hoort hierbij?",
+        "o": [
+         "alleen informeren",
+         "laten lachen",
+         "een quizvraag aan het publiek stellen",
+         "overtuigen en tot actie aanzetten"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Een oproep om iets te doen hoort bij overtuigen.",
+        "uo": [
+         "Koos je \"alleen informeren\"? Dan denk je dat elke slotzin informeert. Hier vraagt de spreker iets van het publiek. Een oproep gaat verder dan uitleggen.",
+         "Koos je \"laten lachen\"? Dan denk je dat humor het doel is. Er is geen grap, wel een oproep. De oproep wijst op overtuigen.",
+         "Koos je \"een quizvraag aan het publiek stellen\"? Dan denk je dat het een vraag is. Het is een oproep om iets te doen. Overtuigen vraagt een standpunt en een actie.",
+         "Klopt: de spreker vraagt het publiek iets te doen. Dat past bij overtuigen en tot actie aanzetten."
+        ],
+        "uh": "Oproep = overtuigen.",
+        "ctx": "Een spreker eindigt met: \"Dus ik hoop dat jullie allemaal geld inleveren voor het goede doel.\""
+       },
+       {
+        "v": "Welk spreekdoel hoort hierbij?",
+        "o": [
+         "overtuigen",
+         "informeren",
+         "tot actie aanzetten",
+         "ter overweging aanbieden"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Neutrale uitleg zonder standpunt is informeren.",
+        "uo": [
+         "Koos je \"overtuigen\"? Dan denk je dat uitleg ook overtuigt. Zonder standpunt of argumenten is er niets te overtuigen. Informeren is neutraal uitleggen.",
+         "Klopt: de spreker legt uit zonder standpunt of oproep. Dat is informeren.",
+         "Koos je \"tot actie aanzetten\"? Dan denk je dat een tekening om actie vraagt. Er is geen oproep. Zonder oproep is er geen actie.",
+         "Koos je \"ter overweging aanbieden\"? Dan verwar je afwegen met uitleggen. Hier wordt niets afgewogen. Informeren legt een gang van zaken uit."
+        ],
+        "uh": "Uitleg = informeren.",
+        "ctx": "Een spreker legt neutraal uit hoe een windmolen werkt en laat daarbij een tekening zien."
+       },
+       {
+        "v": "Wat is hier het probleem?",
+        "o": [
+         "de taal past niet bij het publiek",
+         "het onderwerp is te saai voor groep 8",
+         "de leerling praat te zacht",
+         "er zijn te weinig dia's"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Vakwoorden zonder uitleg passen niet bij een publiek zonder voorkennis.",
+        "uo": [
+         "Klopt: groep 8 kent deze vakwoorden niet. Zonder uitleg haakt het publiek af.",
+         "Koos je \"het onderwerp is te saai voor groep 8\"? Dan denk je dat het onderwerp het probleem is. Vulkanen zijn juist spannend; de uitleg is te moeilijk. Het probleem is de taal, niet het onderwerp.",
+         "Koos je \"de leerling praat te zacht\"? Dan denk je dat het volume het probleem is. Het gaat om begrijpelijkheid. De woordkeus past niet bij het publiek.",
+         "Koos je \"er zijn te weinig dia's\"? Dan denk je dat meer dia's helpen. Zonder uitleg blijven de woorden onbegrijpelijk. Leg moeilijke woorden uit."
+        ],
+        "uh": "Spreek in woorden van je publiek.",
+        "ctx": "Een leerling geeft een voordracht voor groep 8 over de werking van een vulkaan. Hij gebruikt woorden als \"magmakamer\" en \"tektoniek\" zonder uitleg."
+       },
+       {
+        "v": "Wat ontbreekt?",
+        "o": [
+         "meer cijfers",
+         "een langere inleiding met een grap",
+         "een grap aan het einde",
+         "een standpunt met argumenten"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Wie overtuigt, geeft een standpunt met argumenten.",
+        "uo": [
+         "Koos je \"meer cijfers\"? Dan denk je dat meer cijfers meer overtuigen. Cijfers zonder standpunt blijven informatie. Je moet zeggen wat je wilt en waarom.",
+         "Koos je \"een langere inleiding met een grap\"? Dan denk je dat de inleiding de oplossing is. Het probleem zit in de kern: er is geen standpunt. Overtuigen vraagt standpunt plus argumenten.",
+         "Koos je \"een grap aan het einde\"? Dan denk je dat humor overtuigt. Een grap vervangt geen argumenten. Overtuigen draait om reden en standpunt.",
+         "Klopt: wie overtuigt, zegt wat hij vindt en waarom. Alleen cijfers vragen niets van het publiek."
+        ],
+        "uh": "Standpunt + argumenten.",
+        "ctx": "Een spreker wil de klas overtuigen om een zwerfafvalactie te steunen. Hij noemt alleen cijfers over de hoeveelheid afval."
+       },
+       {
+        "v": "Welke aanpak past bij dit publiek?",
+        "o": [
+         "alleen onderzoeksresultaten zonder uitleg",
+         "spreektaal en grappen over leerlingen",
+         "voorbeelden uit het dagelijks leven",
+         "zo snel mogelijk alles vertellen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Bij een volwassen publiek met weinig voorkennis gebruik je herkenbare voorbeelden.",
+        "uo": [
+         "Koos je \"alleen onderzoeksresultaten zonder uitleg\"? Dan denk je dat onderzoek op zich genoeg is. Zonder uitleg blijven cijfers abstract. Maak het begrijpelijk met voorbeelden.",
+         "Koos je \"spreektaal en grappen over leerlingen\"? Dan kies je een toon die niet past bij ouders. Dat kan onbeleefd overkomen. Kies een toon die bij het publiek past.",
+         "Klopt: ouders hebben vaak weinig voorkennis. Herkenbare voorbeelden en gewone woorden helpen.",
+         "Koos je \"zo snel mogelijk alles vertellen\"? Dan denk je dat een groot tempo professioneel is. Ouders hebben tijd nodig om te volgen. Spreek rustig."
+        ],
+        "uh": "Voorbeelden die ze kennen.",
+        "ctx": "Je presenteert op een ouderavond over schermtijd."
+       },
+       {
+        "v": "Wat hoort bij een goede voordracht?",
+        "o": [
+         "zoveel mogelijk onderwerpen noemen",
+         "de volgorde onverwacht houden",
+         "een duidelijke opbouw",
+         "geen overgangen gebruiken"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Een voordracht heeft een logische opbouw met aankondigingen.",
+        "uo": [
+         "Koos je \"zoveel mogelijk onderwerpen noemen\"? Dan denk je dat meer onderwerpen beter zijn. Dan verlies je focus en structuur. Kies een onderwerp en bouw het helder op.",
+         "Koos je \"de volgorde onverwacht houden\"? Dan denk je dat verrassen de beste vorm is. Een voordracht moet volgbaar zijn. Een duidelijke volgorde helpt het publiek.",
+         "Klopt: een voordracht heeft een logische opbouw. Aankondigingen laten het publiek zien waar je naartoe gaat.",
+         "Koos je \"geen overgangen gebruiken\"? Dan denk je dat overgangen overbodig zijn. Ze helpen het publiek om te volgen. Gebruik overgangen en aankondigingen."
+        ],
+        "uh": "Opbouw en aankondiging.",
+        "ctx": "Een spreker springt midden in zijn voordracht ineens naar een ander onderwerp, zonder aankondiging. Het publiek raakt het spoor bijster."
+       },
+       {
+        "v": "Wat is hier de fout in de afstemming?",
+        "o": [
+         "de spreker praat te hard",
+         "er zijn te weinig beelden",
+         "de presentatie is veel te kort voor het onderwerp",
+         "de uitleg past niet bij de voorkennis"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Wie te simpel begint, verveelt een publiek met voorkennis.",
+        "uo": [
+         "Koos je \"de spreker praat te hard\"? Dan denk je dat het volume het probleem is. Het gaat om de inhoud die niet aansluit. Pas de inhoud aan op wat het publiek al weet.",
+         "Koos je \"er zijn te weinig beelden\"? Dan denk je dat beelden de oplossing zijn. Meer beelden maken te simpele uitleg niet interessanter. Sluit aan bij de voorkennis.",
+         "Koos je \"de presentatie is veel te kort voor het onderwerp\"? Dan denk je dat meer tijd helpt. Het probleem is dat de inhoud niet nieuw is voor het publiek. Kies een diepgang die past bij de voorkennis.",
+         "Klopt: het publiek kent de basis al. Wie te simpel begint, verveelt zijn publiek."
+        ],
+        "uh": "Voorkennis bepaalt diepgang.",
+        "ctx": "Het publiek bestaat uit klasgenoten die al veel over gamen weten. De spreker legt tien minuten uit wat een controller is."
+       },
+       {
+        "v": "Welke uitleg past het best?",
+        "o": [
+         "prijzen worden langzaam hoger, dus je kunt minder kopen",
+         "de aanhoudende stijging van het algemene prijspeil door monetaire expansie",
+         "dat is economie, dat leren jullie later",
+         "dat kunnen jullie opzoeken"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Leg een begrip uit in woorden die het publiek kent.",
+        "uo": [
+         "Klopt: dit is een begrijpelijke uitleg met een voorbeeld uit het dagelijks leven.",
+         "Koos je \"de aanhoudende stijging van het algemene prijspeil...\"? Dan gebruik je vaktaal die groep 8 niet kent. De uitleg is correct maar onbegrijpelijk voor dit publiek. Pas je woorden aan op je publiek.",
+         "Koos je \"dat is economie, dat leren jullie later\"? Dan ontwijk je de vraag. Dan leert het publiek niets. Leg het uit in begrijpelijke woorden.",
+         "Koos je \"dat kunnen jullie opzoeken\"? Dan schuif je de uitleg door naar het publiek. Dat is niet jouw taak als spreker. Je legt het zelf eenvoudig uit."
+        ],
+        "uh": "Eenvoudig en herkenbaar.",
+        "ctx": "Je legt aan groep 8 uit wat inflatie is."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "er is te weinig informatie over het onderwerp",
+         "de doelen lopen door elkaar",
+         "hij praat te kort",
+         "de gespreksvorm is verkeerd"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Door een duidelijk hoofddoel te kiezen, weet het publiek wat het mag verwachten.",
+        "uo": [
+         "Koos je \"er is te weinig informatie over het onderwerp\"? Dan denk je dat er te weinig feiten zijn. Het probleem is dat het doel niet helder is. Kies één hoofddoel en houd daaraan vast.",
+         "Klopt: informeren en overtuigen zijn verschillende doelen. Wie ze mengt, laat het publiek in het ongewisse.",
+         "Koos je \"hij praat te kort\"? Dan denk je dat de duur het probleem is. De doelen lopen door elkaar. Maak duidelijk wat je wilt: informeren of overtuigen.",
+         "Koos je \"de gespreksvorm is verkeerd\"? Dan denk je dat de vorm niet past. Een voordracht kan beide doelen hebben, maar je moet kiezen. Het probleem is de vermenging van doelen."
+        ],
+        "uh": "Eén hoofddoel.",
+        "ctx": "Een leerling houdt een voordracht om te informeren over vleesconsumptie, maar geeft steeds zijn eigen mening en roept op minder vlees te eten."
+       },
+       {
+        "v": "Waarom past dit niet bij een debat?",
+        "o": [
+         "omdat voorlezen niet mag",
+         "omdat de tekst te lang is",
+         "omdat de tegenstander niet luistert",
+         "een debat vraagt om reageren"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "In een debat reageer je op de tegenpartij; voorlezen kan dat niet.",
+        "uo": [
+         "Koos je \"omdat voorlezen niet mag\"? Dan denk je dat voorlezen verboden is. Het probleem is dat je niet kunt reageren. Een debat vraagt een reactie op de tegenpartij.",
+         "Koos je \"omdat de tekst te lang is\"? Dan denk je dat de lengte het probleem is. Het gaat om reageren, niet om lengte. Voorlezen sluit reageren uit.",
+         "Koos je \"omdat de tegenstander niet luistert\"? Dan verschuif je de oorzaak naar de ander. Het gaat om wat de spreker zelf doet. Een debatteur luistert en reageert zelf ook.",
+         "Klopt: een debat bestaat uit actie en reactie. Voorlezen kan niet reageren op wat de tegenstander net zei."
+        ],
+        "uh": "Reageren, niet voorlezen.",
+        "ctx": "In een debat leest een leerling zijn tekst voor en kijkt niet naar zijn tegenstander."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling houdt een voordracht voor groep 8 over de werking van een vulkaan. Hij gebruikt woorden als magmakamer en tektoniek zonder uitleg.",
+        "v": "Wat is er mis met de afstemming op het publiek en wat doe je beter?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De woorden zijn te moeilijk voor groep 8 (1 punt). Beter: de woorden uitleggen met eenvoudige taal en een voorbeeld, zodat het publiek je kan volgen (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een spreker wil de klas overtuigen om een zwerfafvalactie te steunen. Hij noemt alleen cijfers over de hoeveelheid afval.",
+        "v": "Welk spreekdoel heeft de spreker en wat ontbreekt in zijn presentatie?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het doel is overtuigen (1 punt). Er ontbreekt een duidelijk standpunt met argumenten en een oproep; alleen cijfers geven informatie (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Twee teams verdedigen elk een standpunt over huiswerk, in rondes, en een jury beslist wie wint.",
+        "v": "Welke gespreksvorm is dit en waaraan zie je dat?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een debat (1 punt): er zijn twee partijen met tegengestelde standpunten, afgesproken rondes en een jury (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Je presenteert hetzelfde onderwerp eerst voor je klas en later voor de gemeenteraad.",
+        "v": "Wat pas je aan bij de gemeenteraad? Noem twee dingen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een formeler register en zakelijkere toon (1 punt); voorbeelden en uitleg die aansluiten bij de voorkennis en belangen van de gemeenteraad (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling houdt een voordracht om te informeren over vlees eten maar geeft steeds zijn mening en roept op minder te eten.",
+        "v": "Waarom is dit een probleem voor het publiek en wat adviseer je?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De doelen informeren en overtuigen lopen door elkaar, waardoor het publiek niet weet wat de spreker wil (1 punt). Advies: kies één hoofddoel en houd dat vast; eventueel scheid je informatie en oproep duidelijk (1 punt)."
+       }
+      ]
+     },
+     {
+      "id": "B3",
+      "lo": "nl.B.3",
+      "gs": 2,
+      "naam": "Een voordracht opbouwen en presenteren",
+      "beschrijving": "Je bouwt een voordracht op met inleiding, kern en slot en presenteert met passend taalgebruik, houding, oogcontact en stem.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Opbouw: inleiding, kern en slot",
+       "Inleiding en slot",
+       "Overgangen en structuur",
+       "Register en taalgebruik",
+       "Houding, oogcontact en gebaren",
+       "Stem: tempo, articulatie, pauzes"
+      ],
+      "sam": "Een voordracht bouw je op uit een inleiding (aandacht trekken en aankondigen), een kern (de punten uitwerken) en een slot (samenvatten en afsluiten). Overgangen laten de opbouw horen. Je kiest een register dat bij de situatie past en ondersteunt je boodschap met houding, oogcontact, gebaren en stemgebruik (tempo, articulatie, intonatie, pauzes).",
+      "begrippen": [
+       {
+        "t": "Voordracht",
+        "d": "Een voorbereide mondelinge presentatie door één spreker voor een publiek."
+       },
+       {
+        "t": "Inleiding",
+        "d": "Het begin van een voordracht waarin je aandacht trekt en aankondigt wat komt."
+       },
+       {
+        "t": "Kern",
+        "d": "Het middendeel van een voordracht met de belangrijkste punten en voorbeelden."
+       },
+       {
+        "t": "Slot",
+        "d": "Het einde van een voordracht waarin je samenvat en afsluit."
+       },
+       {
+        "t": "Overgang",
+        "d": "Een zin of woord dat het ene deel met het volgende verbindt."
+       },
+       {
+        "t": "Register",
+        "d": "De mate van formeel taalgebruik die bij de situatie past."
+       },
+       {
+        "t": "Non-verbale communicatie",
+        "d": "Communicatie via houding, gebaren en oogcontact."
+       },
+       {
+        "t": "Oogcontact",
+        "d": "Het aankijken van je publiek tijdens het spreken."
+       },
+       {
+        "t": "Spreektempo",
+        "d": "De snelheid waarmee je spreekt."
+       },
+       {
+        "t": "Articulatie",
+        "d": "Het duidelijk uitspreken van woorden."
+       },
+       {
+        "t": "Intonatie",
+        "d": "De variatie in toonhoogte en melodie van je stem."
+       },
+       {
+        "t": "Pauze",
+        "d": "Een korte stilte die nadruk geeft en tijd laat om te verwerken."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Uit welke drie delen bestaat een voordracht?",
+        "o": [
+         "titel, tekst en plaatje",
+         "inleiding, kern en slot",
+         "vraag, antwoord en applaus",
+         "begin, pauze en einde"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een voordracht heeft een inleiding, een kern en een slot.",
+        "uo": [
+         "Koos je \"titel, tekst en plaatje\"? Dan denk je dat de opbouw van een voordracht gaat over wat er op een dia staat. Titel en plaatje zijn hulpmiddelen, geen delen van je verhaal. Een voordracht bouw je op met een begin, een midden en een eind.",
+         "Klopt: een voordracht heeft een begin dat aankondigt, een middendeel dat uitwerkt en een einde dat afsluit.",
+         "Koos je \"vraag, antwoord en applaus\"? Dan verwar je een voordracht met een vragenronde. Applaus en vragen komen na je verhaal en horen er niet bij. De drie delen zijn inleiding, kern en slot.",
+         "Koos je \"begin, pauze en einde\"? Dan denk je dat een pauze een onderdeel van de opbouw is. Een pauze is een tussenstop en geen deel van de inhoud. De opbouw bestaat uit inleiding, kern en slot."
+        ],
+        "uh": "Begin, midden, eind."
+       },
+       {
+        "v": "Wat doe je in de inleiding van een voordracht?",
+        "o": [
+         "alle details al vertellen",
+         "je conclusie al uitgebreid verdedigen",
+         "excuses maken voor je voorbereiding",
+         "aandacht trekken en aankondigen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "In de inleiding trek je de aandacht en kondig je het onderwerp en de opbouw aan.",
+        "uo": [
+         "Koos je \"alle details al vertellen\"? Dan denk je dat een inleiding de hele inhoud moet geven. Dan houd je niets over voor de kern. De inleiding kondigt aan en prikkelt, de kern werkt uit.",
+         "Koos je \"je conclusie al uitgebreid verdedigen\"? Dan verwar je de inleiding met het slot. De conclusie hoort aan het einde. In de inleiding trek je aandacht en kondig je aan.",
+         "Koos je \"excuses maken voor je voorbereiding\"? Dan denk je dat eerlijk zijn over twijfel een goede start is. Het ondermijnt je geloofwaardigheid. Begin zelfverzekerd en kondig je onderwerp aan.",
+         "Klopt: de inleiding trekt de aandacht en laat het publiek weten waarover je gaat spreken en in welke volgorde."
+        ],
+        "uh": "Aandacht + aankondigen."
+       },
+       {
+        "v": "Welke opening trekt de aandacht het best?",
+        "o": [
+         "een prikkelende vraag over het onderwerp",
+         "je begint met \"Ik ben niet goed voorbereid\"",
+         "je leest de titel van je presentatie langzaam voor",
+         "je begint meteen met de conclusie en bedankt iedereen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Een prikkelende vraag of een verrassend feit trekt aandacht.",
+        "uo": [
+         "Klopt: een vraag of verrassend feit maakt nieuwsgierig en trekt de aandacht van het publiek.",
+         "Koos je \"je begint met Ik ben niet goed voorbereid\"? Dan trek je negatieve aandacht. Het publiek luistert dan naar je twijfel, niet naar je onderwerp. Begin met iets wat nieuwsgierig maakt.",
+         "Koos je \"je leest de titel van je presentatie langzaam voor\"? Dan denk je dat een kale titel de aandacht pakt. Een titel alleen is weinig prikkelend. Een vraag of feit werkt sterker.",
+         "Koos je \"je begint meteen met de conclusie en bedankt...\"? Dan verwar je opening met afsluiting. Je mist de aankondiging en de aandacht. De opening hoort het onderwerp aan te kondigen."
+        ],
+        "uh": "Prikkel in het begin."
+       },
+       {
+        "v": "Wat doe je in het slot van een voordracht?",
+        "o": [
+         "een nieuw onderwerp beginnen",
+         "je uitleg opnieuw helemaal vertellen",
+         "de kern samenvatten en afsluiten",
+         "stoppen zonder iets te zeggen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "In het slot vat je samen en sluit je af.",
+        "uo": [
+         "Koos je \"een nieuw onderwerp beginnen\"? Dan denk je dat een slot ruimte is voor iets nieuws. Dan raakt je publiek de draad kwijt. Het slot rondt af wat je verteld hebt.",
+         "Koos je \"je uitleg opnieuw helemaal vertellen\"? Dan denk je dat herhalen alles is. Een samenvatting is kort en pakt de kern. Het slot vat alleen samen.",
+         "Klopt: in het slot haal je de belangrijkste punten terug en rond je je verhaal af.",
+         "Koos je \"stoppen zonder iets te zeggen\"? Dan laat je je verhaal onafgemaakt. Het publiek weet dan niet dat je klaar bent. Sluit af met een samenvatting en een afsluitende zin."
+        ],
+        "uh": "Samenvatten en afsluiten."
+       },
+       {
+        "v": "Waarvoor gebruik je overgangen als \"ten eerste\", \"vervolgens\" en \"tot slot\"?",
+        "o": [
+         "zodat je spreektijd langer wordt",
+         "zodat je niets hoeft te onthouden",
+         "zodat het publiek de opbouw kan volgen",
+         "zodat je minder dia's nodig hebt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Overgangen laten de opbouw van je verhaal horen.",
+        "uo": [
+         "Koos je \"zodat je spreektijd langer wordt\"? Dan denk je dat het woorden vullen is. Overgangen zijn bedoeld om structuur te geven, niet om tijd te rekken. Ze helpen het publiek de draad vast te houden.",
+         "Koos je \"zodat je niets hoeft te onthouden\"? Dan denk je dat overgangen je geheugen vervangen. Je moet de inhoud nog steeds kennen. Overgangen zijn wegwijzers voor het publiek.",
+         "Klopt: overgangen laten zien waar je bent in je verhaal en wat er komt.",
+         "Koos je \"zodat je minder dia's nodig hebt\"? Dan verwar je spreektaal met beeld. Overgangen werken ongeacht dia's. Ze maken je opbouw zichtbaar in woorden."
+        ],
+        "uh": "Wegwijzers in woorden."
+       },
+       {
+        "v": "Wat is een kenmerk van formeel taalgebruik?",
+        "o": [
+         "verzorgde woorden en zinnen",
+         "veel afkortingen en korte woorden",
+         "chattaal en smileys",
+         "dialect en spreektaal"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Formeel taalgebruik is verzorgd met volledige zinnen.",
+        "uo": [
+         "Klopt: formeel taalgebruik is verzorgd, zonder spreektaal of afkortingen.",
+         "Koos je \"veel afkortingen en korte woorden\"? Dan denk je dat afkortingen netjes zijn. Ze horen bij informeel taalgebruik en kunnen onduidelijk zijn. Formeel betekent volledige woorden en zinnen.",
+         "Koos je \"chattaal en smileys\"? Dan verwar je formeel met online communiceren. Chattaal past bij vrienden. Kies verzorgde woorden.",
+         "Koos je \"dialect en spreektaal\"? Dan denk je dat vertrouwde taal altijd past. Dialect en spreektaal passen niet bij een jury. Formeel is standaardtaal."
+        ],
+        "uh": "Formeel = verzorgd."
+       },
+       {
+        "v": "Wat is non-verbale communicatie?",
+        "o": [
+         "de woorden die je zegt",
+         "de opbouw van je verhaal",
+         "de dia's en plaatjes die je laat zien",
+         "houding, gebaren en oogcontact"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Non-verbale communicatie is wat je zonder woorden laat zien.",
+        "uo": [
+         "Koos je \"de woorden die je zegt\"? Dan verwar je woorden met lichaamstaal. Woorden zijn verbaal; non-verbaal gaat om wat je zonder woorden laat zien. Houding, gebaren en oogcontact zijn non-verbaal.",
+         "Koos je \"de opbouw van je verhaal\"? Dan denk je dat structuur een vorm van lichaamstaal is. Opbouw gaat over inhoud. Non-verbaal is wat je lichaam laat zien.",
+         "Koos je \"de dia's en plaatjes die je laat zien\"? Dan denk je dat beelden non-verbaal zijn. Dia's zijn hulpmiddelen, geen signalen van de spreker. Non-verbaal gaat over de spreker zelf.",
+         "Klopt: non-verbaal is alles wat je zonder woorden laat zien, zoals houding en gebaren."
+        ],
+        "uh": "Zonder woorden."
+       },
+       {
+        "v": "Waarom is oogcontact belangrijk bij een presentatie?",
+        "o": [
+         "zodat je je tekst beter kunt lezen",
+         "je laat zien dat je het publiek aanspreekt",
+         "zodat je minder hoeft te onthouden",
+         "zodat je sneller kunt praten"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Oogcontact laat zien dat je het publiek aanspreekt en maakt je geloofwaardiger.",
+        "uo": [
+         "Koos je \"zodat je je tekst beter kunt lezen\"? Dan denk je dat oogcontact met de tekst gaat. Dan kijk je naar je papier en niet naar het publiek. Oogcontact is contact met je luisteraars.",
+         "Klopt: wie het publiek aankijkt, maakt contact en komt betrouwbaarder over.",
+         "Koos je \"zodat je minder hoeft te onthouden\"? Dan denk je dat aankijken je geheugen overneemt. Het geeft alleen contact. Oogcontact is voor het publiek, niet voor jou.",
+         "Koos je \"zodat je sneller kunt praten\"? Dan denk je dat het tempo omhoog moet. Oogcontact werkt juist beter met een rustig tempo. Oogcontact maakt je verhaal persoonlijker."
+        ],
+        "uh": "Kijk je publiek aan."
+       },
+       {
+        "v": "Welke houding past bij een presentatie?",
+        "o": [
+         "met je rug naar het publiek staan",
+         "met je handen in je zakken naar de grond kijken",
+         "voortdurend heen en weer lopen",
+         "rechtop staan met rustige gebaren"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Een open houding met rustige gebaren werkt zelfverzekerd.",
+        "uo": [
+         "Koos je \"met je rug naar het publiek staan\"? Dan keer je het publiek de rug toe. Dan verlies je het contact en verstaan ze je slecht. Sta open naar het publiek toe.",
+         "Koos je \"met je handen in je zakken naar de grond kijken\"? Dan straal je onzekerheid uit. Dit kan onverschillig of nerveus overkomen. Kijk op en gebruik rustige gebaren.",
+         "Koos je \"voortdurend heen en weer lopen\"? Dan leid je het publiek af. Beweging zonder reden trekt de aandacht van de inhoud. Beweeg gericht en rustig.",
+         "Klopt: een open, rustige houding maakt je zelfverzekerd en betrouwbaar."
+        ],
+        "uh": "Rechtop en rustig."
+       },
+       {
+        "v": "Wat is articulatie?",
+        "o": [
+         "de snelheid waarmee je praat",
+         "het duidelijk uitspreken",
+         "de hoogte van je stem",
+         "het gebruik van moeilijke woorden"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Articulatie is het duidelijk uitspreken van woorden.",
+        "uo": [
+         "Koos je \"de snelheid waarmee je praat\"? Dan verwar je articulatie met tempo. Het tempo gaat over snelheid. Articulatie gaat over helder uitspreken.",
+         "Klopt: bij goede articulatie verstaat het publiek elke klank en elk woord.",
+         "Koos je \"de hoogte van je stem\"? Dan verwar je articulatie met toonhoogte. Dat is intonatie. Articulatie is duidelijkheid van uitspraak.",
+         "Koos je \"het gebruik van moeilijke woorden\"? Dan denk je dat articulatie met woordkeuze te maken heeft. Het gaat om uitspraak. Articuleren is helder uitspreken."
+        ],
+        "uh": "Duidelijk uitspreken."
+       },
+       {
+        "v": "Waarom lass je pauzes in na een belangrijk punt?",
+        "o": [
+         "zodat je spreektijd langer wordt",
+         "omdat je dan niets hoeft te zeggen",
+         "het publiek kan het verwerken",
+         "om je spieken te verbergen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Pauzes geven nadruk en tijd om te verwerken.",
+        "uo": [
+         "Koos je \"zodat je spreektijd langer wordt\"? Dan denk je dat pauzes tijd vullen. Pauzes geven nadruk en ruimte om te begrijpen. Een pauze is een middel, geen vulling.",
+         "Koos je \"omdat je dan niets hoeft te zeggen\"? Dan denk je dat zwijgen luiheid is. Een pauze is een bewuste keuze. Pauzes geven je publiek tijd.",
+         "Klopt: een korte stilte laat het punt landen en trekt de aandacht.",
+         "Koos je \"om je spieken te verbergen\"? Dan verwar je pauzes met verstoppen. Een pauze hoort bij vrij spreken. Gebruik pauzes bewust."
+        ],
+        "uh": "Pauze = nadruk."
+       },
+       {
+        "v": "Wat gebeurt er als je veel te snel praat?",
+        "o": [
+         "het publiek kan je niet goed volgen",
+         "het publiek vindt je zelfverzekerder",
+         "het publiek onthoudt meer",
+         "je voordracht duurt langer"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Te snel praten maakt je moeilijk te volgen.",
+        "uo": [
+         "Klopt: bij te hoog tempo komt niet alles over en haakt het publiek af.",
+         "Koos je \"het publiek vindt je zelfverzekerder\"? Dan denk je dat snel praten zekerheid uitstraalt. Het lijkt vaak nerveus en maakt je onduidelijk. Een rustig tempo komt zekerder over.",
+         "Koos je \"het publiek onthoudt meer\"? Dan denk je dat meer woorden meer bijblijft. Er blijft juist minder hangen. Een rustig tempo helpt onthouden.",
+         "Koos je \"je voordracht duurt langer\"? Dan draai je het om. Snel praten maakt je voordracht korter, niet langer. Tempo beïnvloedt begrijpelijkheid."
+        ],
+        "uh": "Rustig tempo."
+       },
+       {
+        "v": "Wat ontbreekt er in het slot?",
+        "o": [
+         "een samenvatting van de punten",
+         "een nieuwe inleiding op het onderwerp",
+         "een extra voorbeeld",
+         "een vraag aan de jury"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Een slot vat de belangrijkste punten samen en rondt af.",
+        "uo": [
+         "Klopt: het slot haalt de kern terug. \"Dat was het\" rondt niets af.",
+         "Koos je \"een nieuwe inleiding op het onderwerp\"? Dan denk je dat het slot opnieuw moet beginnen. Het slot rondt af wat er verteld is. Het slot vat samen.",
+         "Koos je \"een extra voorbeeld\"? Dan denk je dat een nieuw voorbeeld afsluit. Een voorbeeld hoort in de kern. Het slot herhaalt de kern in het kort.",
+         "Koos je \"een vraag aan de jury\"? Dan denk je dat je moet eindigen met een vraag aan de beoordelaars. Dat is geen afsluiting. Sluit af met een samenvatting."
+        ],
+        "uh": "Samenvatten, niet stoppen.",
+        "ctx": "Een voordracht begint met het onderwerp, gaat over naar drie punten en eindigt met de woorden: \"Dat was het.\""
+       },
+       {
+        "v": "Welk onderdeel van de voordracht is dit?",
+        "o": [
+         "de kern",
+         "het slot met een korte samenvatting",
+         "de inleiding met aankondiging",
+         "een overgang"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Het onderwerp en de volgorde aankondigen hoort in de inleiding.",
+        "uo": [
+         "Koos je \"de kern\"? Dan denk je dat het uitwerking is. Er worden alleen onderwerpen genoemd, niets uitgelegd. De kern bevat de uitleg.",
+         "Koos je \"het slot met een korte samenvatting\"? Dan verwar je een samenvatting met een aankondiging. Hier wordt vooruitgekeken, niet teruggeblikt. Een slot kijkt terug.",
+         "Klopt: de spreker noemt het onderwerp en de volgorde van de punten. Dat is wat een inleiding doet.",
+         "Koos je \"een overgang\"? Dan denk je dat het een tussenstap is. Dit is het begin van het verhaal. Het is de inleiding."
+        ],
+        "uh": "Aankondigen = inleiding.",
+        "ctx": "\"Goedemorgen. Ik ga het vandaag hebben over zonnepanelen. Eerst leg ik uit hoe ze werken, dan wat ze kosten en tot slot waarom ik ze aanraad.\""
+       },
+       {
+        "v": "Welke twee dingen doet deze spreker in het slot?",
+        "o": [
+         "hij kondigt aan en begint opnieuw",
+         "hij vat samen en sluit af",
+         "hij introduceert een nieuw onderwerp",
+         "hij stelt een vraag aan het publiek"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Een slot bestaat uit samenvatten en afsluiten.",
+        "uo": [
+         "Koos je \"hij kondigt aan en begint opnieuw\"? Dan denk je dat het een tweede inleiding is. Er wordt teruggeblikt, niet vooruitgekeken. Het slot rondt af.",
+         "Klopt: eerst een samenvatting, daarna een afsluiting met dank.",
+         "Koos je \"hij introduceert een nieuw onderwerp\"? Dan denk je dat hij iets nieuws begint. Hij herhaalt wat verteld is. Een slot sluit af.",
+         "Koos je \"hij stelt een vraag aan het publiek\"? Dan denk je dat de zin een vraag is. Er staat een samenvatting. Samenvatting en dank."
+        ],
+        "uh": "Samenvatten + afsluiten.",
+        "ctx": "\"Samengevat: zonnepanelen leveren stroom, ze zijn betaalbaar en daarom raad ik ze aan. Bedankt voor jullie aandacht.\""
+       },
+       {
+        "v": "Wat is de functie van \"ten eerste\", \"ten tweede\" en \"tot slot\"?",
+        "o": [
+         "ze zijn bedoeld om tijd te vullen",
+         "ze vervangen de kern van je verhaal",
+         "ze maken je presentatie informeler",
+         "ze maken de opbouw hoorbaar"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Overgangswoorden maken de opbouw hoorbaar.",
+        "uo": [
+         "Koos je \"ze zijn bedoeld om tijd te vullen\"? Dan denk je dat het opvulling is. Het zijn structuurwoorden. Ze maken de opbouw duidelijk.",
+         "Koos je \"ze vervangen de kern van je verhaal\"? Dan denk je dat zulke woorden inhoud zijn. De inhoud staat in wat erop volgt. Het zijn wegwijzers.",
+         "Koos je \"ze maken je presentatie informeler\"? Dan denk je dat zulke woorden toon veranderen. Ze zijn neutraal en zakelijk. Ze geven structuur.",
+         "Klopt: zulke woorden laten zien dat er een volgorde is en waar je bent."
+        ],
+        "uh": "Volgorde in woorden.",
+        "ctx": "Een spreker zegt: \"Ten eerste leg ik uit hoe het werkt. Ten tweede vertel ik wat het kost. Tot slot noem ik de voordelen.\""
+       },
+       {
+        "v": "Welke zin is een goede overgang?",
+        "o": [
+         "\"Dan gaan we maar weer door met het volgende.\"",
+         "\"Naast de kosten kom ik nu bij het milieu.\"",
+         "\"Ik ga maar door.\"",
+         "\"Wat zei ik ook alweer?\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een overgang sluit het vorige deel af en kondigt het volgende aan.",
+        "uo": [
+         "Koos je \"Dan gaan we maar weer door met het volgende.\"? Dan denk je dat een korte woordgroep volstaat. Het zegt niet waarover het gaat. Een goede overgang noemt het nieuwe deel.",
+         "Klopt: deze zin sluit af wat er was en kondigt het volgende aan.",
+         "Koos je \"Ik ga maar door.\"? Dan denk je dat doorgaan genoeg is. Het publiek weet niet waarheen. Maak duidelijk wat er komt.",
+         "Koos je \"Wat zei ik ook alweer?\"? Dan laat je zien dat je de draad kwijt bent. Dat is geen overgang. Een overgang geeft richting."
+        ],
+        "uh": "Terugblik + vooruitblik.",
+        "ctx": "Een spreker heeft het eerst over kosten en springt dan zonder overgang naar het milieu. Het publiek raakt even de draad kwijt."
+       },
+       {
+        "v": "Wat is er mis met het taalgebruik?",
+        "o": [
+         "het is te vaag en te informeel",
+         "het is veel te formeel voor een jury",
+         "het is te kort",
+         "het is te technisch"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Voor een jury gebruik je duidelijke, formele taal in plaats van vage spreektaal.",
+        "uo": [
+         "Klopt: vage woorden en spreektaal passen niet bij een formele beoordeling.",
+         "Koos je \"het is veel te formeel voor een jury\"? Dan draai je het om. De taal is juist te los voor een jury. Kies een verzorgd, helder register.",
+         "Koos je \"het is te kort\"? Dan denk je dat de lengte het probleem is. Het probleem is vaagheid en spreektaal. Maak je zinnen volledig en precies.",
+         "Koos je \"het is te technisch\"? Dan denk je dat er vakjargon in zit. Er staan juist vage woorden. Wees concreet en formeel."
+        ],
+        "uh": "Duidelijk en verzorgd.",
+        "ctx": "Een leerling zegt in een presentatie voor de jury: \"Nou ja, eh, gewoon dat ding, snap je? Het is, hoe zeg je dat, best wel lastig.\""
+       },
+       {
+        "v": "Welke zin past bij een formeel register?",
+        "o": [
+         "\"Ik ga jullie effe uitleggen waarom dit project mega belangrijk is.\"",
+         "\"Ik zal het jullie even vertellen, want het is cool.\"",
+         "\"Luister, dit project is gewoon heel belangrijk, snap je?\"",
+         "\"Ik wil u graag vertellen waarom dit project belangrijk is.\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Een formele zin heeft verzorgde woorden en volledige zinsbouw.",
+        "uo": [
+         "Koos je \"Ik ga jullie effe uitleggen waarom dit project mega...\"? Dan denk je dat spreektaal altijd werkt. Effe en mega zijn losse spreektaal. Formeel vraagt verzorgde woorden.",
+         "Koos je \"Ik zal het jullie even vertellen, want het is cool.\"? Dan verwar je formeel met vriendelijk. \"Cool\" en \"even\" passen bij een informele situatie. Kies standaardtaal.",
+         "Koos je \"Luister, dit project is gewoon heel belangrijk,...\"? Dan denk je dat een stellige toon formeel is. \"Gewoon\" en \"snap je\" zijn spreektaal. Formeel is zakelijk en beleefd.",
+         "Klopt: dit is een beleefde, verzorgde zin met volledige woorden."
+        ],
+        "uh": "Verzorgd en beleefd."
+       },
+       {
+        "v": "Wat verbeter je het eerst?",
+        "o": [
+         "hij maakt de tekst op de dia kleiner",
+         "hij praat nog zachter",
+         "hij kijkt het publiek aan",
+         "hij leest sneller"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Draai naar het publiek, kijk op en spreek vrijer.",
+        "uo": [
+         "Koos je \"hij maakt de tekst op de dia kleiner\"? Dan denk je dat het formaat het probleem is. Hij leest voor en kijkt weg. Draai je naar het publiek.",
+         "Koos je \"hij praat nog zachter\"? Dan denk je dat zachter praten helpt. Met zijn rug naar het publiek is hij al moeilijk te verstaan. Kijk het publiek aan.",
+         "Klopt: contact met het publiek is het belangrijkste. Voorlezen van een dia verliest dat contact.",
+         "Koos je \"hij leest sneller\"? Dan denk je dat sneller klaar zijn beter is. Voorlezen blijft dan het probleem. Praat vrij en kijk op."
+        ],
+        "uh": "Contact eerst.",
+        "ctx": "Een spreker staat met zijn rug naar het publiek en leest zijn tekst van de dia."
+       },
+       {
+        "v": "Wat voor indruk geeft dat meestal bij het publiek?",
+        "o": [
+         "zelfverzekerd, bevlogen en overtuigend",
+         "grappig en aanstekelijk",
+         "onzeker en minder geloofwaardig",
+         "heel deskundig"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Houding, blik en stem bepalen de indruk, ook naast goede inhoud.",
+        "uo": [
+         "Koos je \"zelfverzekerd, bevlogen en overtuigend\"? Dan denk je dat rustig staan altijd sterk is. Hier komt het juist onzeker over door de blik naar beneden en het zachte praten. Zelfverzekerd zichtbaar maken vraagt contact.",
+         "Koos je \"grappig en aanstekelijk\"? Dan denk je dat het publiek lacht om onzekerheid. Meestal wekt het zorg of verveling. Houding en stem moeten je boodschap steunen.",
+         "Klopt: houding, blik en stem laten onzekerheid zien, ook als de inhoud goed is.",
+         "Koos je \"heel deskundig\"? Dan denk je dat zacht praten deskundigheid uitstraalt. Het kan het tegendeel doen. Deskundigheid blijkt uit contact en duidelijkheid."
+        ],
+        "uh": "Non-verbaal telt mee.",
+        "ctx": "Een spreker houdt zijn handen in zijn zakken, kijkt naar de grond en praat zacht."
+       },
+       {
+        "v": "Wat adviseer je?",
+        "o": [
+         "nog sneller praten zodat het afgelopen is",
+         "alles twee keer zeggen",
+         "de dia's weglaten",
+         "pauzes inlassen en rustiger praten"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Pauzes en een rustig tempo helpen het publiek te volgen.",
+        "uo": [
+         "Koos je \"nog sneller praten zodat het afgelopen is\"? Dan denk je dat sneller klaar zijn beter is. Het publiek haakt dan af. Rust en pauzes werken beter.",
+         "Koos je \"alles twee keer zeggen\"? Dan denk je dat herhalen het tempo oplost. Het tempo blijft te hoog. Verlaag het tempo.",
+         "Koos je \"de dia's weglaten\"? Dan denk je dat dia's het tempo bepalen. Het tempo hangt af van hoe je praat. Pas je tempo aan.",
+         "Klopt: rust geeft ruimte om te verwerken en maakt de boodschap beter verstaanbaar."
+        ],
+        "uh": "Tempo omlaag.",
+        "ctx": "Een spreker praat in één adem door en heeft een hoog tempo, zonder pauzes."
+       },
+       {
+        "v": "Waaraan moet hij vooral werken?",
+        "o": [
+         "articulatie: duidelijker praten",
+         "een groter publiek om voor te spreken",
+         "meer dia's",
+         "moeilijkere woorden"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Onduidelijke uitspraak los je op met betere articulatie.",
+        "uo": [
+         "Klopt: onduidelijke uitspraak maakt je verhaal moeilijk te verstaan.",
+         "Koos je \"een groter publiek om voor te spreken\"? Dan denk je dat de grootte van het publiek het probleem is. Het probleem is zijn uitspraak. Werk aan duidelijk spreken.",
+         "Koos je \"meer dia's\"? Dan denk je dat beelden het probleem oplossen. Als je niet te verstaan bent, helpen dia's weinig. Articuleer helder.",
+         "Koos je \"moeilijkere woorden\"? Dan denk je dat deskundiger woorden helpen. Dat maakt het erger. Spreek duidelijk."
+        ],
+        "uh": "Articuleren.",
+        "ctx": "Een spreker mompelt en laat woorden in elkaar overlopen. Het publiek begrijpt hem slecht."
+       },
+       {
+        "v": "Hoe verdeel je je tijd grofweg het best?",
+        "o": [
+         "een lange inleiding en een korte kern",
+         "kort inleiden, lang uitwerken, kort afsluiten",
+         "evenveel tijd voor alle drie de delen",
+         "alleen een kern, zonder inleiding en zonder slot erbij"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "De kern krijgt de meeste tijd; inleiding en slot zijn kort.",
+        "uo": [
+         "Koos je \"een lange inleiding en een korte kern\"? Dan denk je dat het begin het belangrijkste is. De uitleg zit in de kern. Geef de kern de meeste tijd.",
+         "Klopt: de kern bevat de uitleg en heeft de meeste tijd nodig. Inleiding en slot zijn kort.",
+         "Koos je \"evenveel tijd voor alle drie de delen\"? Dan denk je dat alles gelijk moet zijn. Inleiding en slot hoeven niet zo lang als de kern. Verdeel naar belang.",
+         "Koos je \"alleen een kern, zonder inleiding en zonder slot...\"? Dan laat je delen weg. Dan mist het publiek de context en afsluiting. Alle drie de delen zijn nodig, in verhouding."
+        ],
+        "uh": "Kern het langst.",
+        "ctx": "Je hebt vijf minuten voor een voordracht."
+       },
+       {
+        "v": "Waarom is dit een zwakke inleiding?",
+        "o": [
+         "het is een sterke manier om sympathie te winnen",
+         "het is te kort",
+         "het kondigt het onderwerp aan",
+         "het ondermijnt zijn geloofwaardigheid"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Zelf afbreken bij de start ondermijnt je geloofwaardigheid.",
+        "uo": [
+         "Koos je \"het is een sterke manier om sympathie te winnen\"? Dan denk je dat excuses sympathie opleveren. Het wekt eerder twijfel aan zijn kennis. Begin zelfverzekerd.",
+         "Koos je \"het is te kort\"? Dan denk je dat de lengte het probleem is. De inhoud is het probleem. Begin met een aankondiging.",
+         "Koos je \"het kondigt het onderwerp aan\"? Dan denk je dat het onderwerp wordt genoemd. Er is geen aankondiging. Noem je onderwerp.",
+         "Klopt: wie zichzelf neerhaalt, geeft het publiek reden om niet te luisteren."
+        ],
+        "uh": "Zelfverzekerd beginnen.",
+        "ctx": "Een leerling begint met: \"Sorry, ik heb er niet veel van gemaakt, het is vast niet goed.\""
+       },
+       {
+        "v": "Welke uitspraak klopt?",
+        "o": [
+         "de eerste komt geloofwaardiger over",
+         "de tweede komt geloofwaardiger over door zijn rust",
+         "er is geen verschil, want de inhoud is gelijk",
+         "alleen de tekst bepaalt de indruk"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Non-verbale signalen ondersteunen of ondermijnen je boodschap.",
+        "uo": [
+         "Klopt: non-verbale signalen ondersteunen de boodschap en maken haar overtuigender.",
+         "Koos je \"de tweede komt geloofwaardiger over door zijn rust\"? Dan draai je het om. Houding, blik en stem werken bij de eerste in zijn voordeel. Non-verbaal telt mee.",
+         "Koos je \"er is geen verschil, want de inhoud is gelijk\"? Dan denk je dat alleen inhoud telt. Hoe je het zegt, beïnvloedt hoe het overkomt. Inhoud én presentatie tellen.",
+         "Koos je \"alleen de tekst bepaalt de indruk\"? Dan denk je dat woorden alles zijn. Lichaamstaal en stem tellen mee. Non-verbaal ondersteunt de boodschap."
+        ],
+        "uh": "Hoe je het zegt telt mee.",
+        "ctx": "Twee sprekers houden dezelfde voordracht. De eerste kijkt het publiek aan, staat rustig en spreekt duidelijk. De tweede staat stijf en praat zacht."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een spreker begint zijn voordracht met: \"Goedemorgen. Ik ga het hebben over zonnepanelen. Eerst leg ik uit hoe ze werken, dan wat ze kosten en tot slot waarom ik ze aanraad.\"",
+        "v": "Welk onderdeel van de voordracht is dit en welke twee dingen doet de spreker?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Dit is de inleiding (1 punt). De spreker noemt het onderwerp en kondigt de opbouw aan (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een voordracht eindigt met: \"Dat was het.\"",
+        "v": "Wat ontbreekt in dit slot? Geef een betere afsluiting.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een samenvatting van de belangrijkste punten en een afsluitende zin ontbreken (1 punt). Bijvoorbeeld: \"Samengevat: zonnepanelen leveren stroom, zijn betaalbaar en daarom raad ik ze aan. Bedankt voor jullie aandacht.\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een spreker springt zonder overgang van de kosten naar het milieu.",
+        "v": "Wat is het gevolg voor het publiek en welke overgangszin zou je gebruiken?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het publiek raakt de draad kwijt (1 punt). Bijvoorbeeld: \"Naast de kosten wil ik nu laten zien wat het voor het milieu betekent\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt in een presentatie voor de jury: \"Gewoon dat ding, snap je? Het is best wel lastig, hoe zeg je dat.\"",
+        "v": "Welk register gebruikt hij en waarom past dat niet bij een jury?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een informeel register met spreektaal en vage woorden (1 punt). Een jury verwacht verzorgd, helder en formeel taalgebruik met volledige zinnen (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een spreker houdt zijn handen in zijn zakken, kijkt naar de grond en praat zacht.",
+        "v": "Welke indruk geeft dit bij het publiek en wat verbeter je?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het geeft een onzekere indruk en maakt hem minder geloofwaardig (1 punt). Verbeteren: rechtop staan, het publiek aankijken en duidelijker en luider spreken (1 punt)."
+       }
+      ]
+     },
+     {
+      "id": "B4",
+      "lo": "nl.B.4",
+      "gs": 2,
+      "naam": "Deelnemen aan een discussie of debat",
+      "beschrijving": "Je verdedigt een standpunt met sterke argumenten, weerlegt de argumenten van een ander zonder de persoon aan te vallen en rondt af met een slotpleidooi.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorbereiden: standpunt en argumenten",
+       "Beurten en regels",
+       "Sterke argumenten",
+       "Weerleggen",
+       "Slotpleidooi",
+       "Valkuilen in discussie en debat"
+      ],
+      "sam": "In een discussie of debat verdedig je een standpunt met argumenten, voorbeelden en redenering. Je luistert, wacht je beurt af en weerlegt het argument van de ander in plaats van de persoon. Een gespreksleider verdeelt de beurten. In het slotpleidooi vat je je sterkste argumenten samen zonder nieuwe argumenten te noemen.",
+      "begrippen": [
+       {
+        "t": "Standpunt",
+        "d": "De uitspraak die je in een discussie of debat verdedigt."
+       },
+       {
+        "t": "Debatargument",
+        "d": "Een argument met een standpunt, een redenering en bewijs."
+       },
+       {
+        "t": "Tegenargument",
+        "d": "Een argument dat tegen het standpunt van de ander ingaat."
+       },
+       {
+        "t": "Weerlegging",
+        "d": "Aantonen dat een argument niet klopt of niet genoeg steunt."
+       },
+       {
+        "t": "Slotpleidooi",
+        "d": "De afsluiting waarin je je sterkste argumenten samenvat."
+       },
+       {
+        "t": "Gespreksleider",
+        "d": "Degene die beurten verdeelt en de regels bewaakt."
+       },
+       {
+        "t": "Beurt",
+        "d": "Het moment waarop jij het woord hebt."
+       },
+       {
+        "t": "Reageren",
+        "d": "Inhoudelijk antwoorden op wat de ander zei."
+       },
+       {
+        "t": "Persoonlijke aanval",
+        "d": "De persoon aanvallen in plaats van zijn argument."
+       },
+       {
+        "t": "Onderbreken",
+        "d": "Iemand in de rede vallen terwijl hij nog aan het woord is."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een concreet geval dat een argument ondersteunt."
+       },
+       {
+        "t": "Onderbouwen",
+        "d": "Een reden en bewijs geven voor wat je zegt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat bereid je voor een debat voor?",
+        "o": [
+         "alleen je eerste zin, de rest zie je wel",
+         "een standpunt met argumenten",
+         "een tekst die je helemaal wilt voorlezen",
+         "de zwakke punten van je eigen team"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Voor een debat bereid je standpunt, argumenten en voorbeelden voor.",
+        "uo": [
+         "Koos je \"alleen je eerste zin, de rest zie je wel\"? Dan denk je dat improviseren genoeg is. Zonder voorbereiding raak je de draad kwijt als de tegenpartij reageert. Bereid standpunt, argumenten en voorbeelden voor.",
+         "Klopt: een debat vraagt een helder standpunt met argumenten en voorbeelden waarmee je kunt overtuigen.",
+         "Koos je \"een tekst die je helemaal wilt voorlezen\"? Dan verwar je voorbereiden met uitschrijven. Voorlezen sluit reageren op de tegenpartij uit. Bereid kernpunten voor waarmee je vrij kunt spreken.",
+         "Koos je \"de zwakke punten van je eigen team\"? Dan denk je dat je vooral je eigen fouten moet kennen. Je moet ook sterke argumenten hebben om te winnen. Zorg voor een sterk eigen standpunt en argumenten."
+        ],
+        "uh": "Standpunt + argumenten."
+       },
+       {
+        "v": "Waarom bereid je ook de argumenten van de tegenpartij voor?",
+        "o": [
+         "zodat je ze kunt overnemen als eigen argumenten",
+         "zodat je minder hoeft te zeggen in het debat",
+         "zodat je ze kunt negeren als ze moeilijk zijn",
+         "zodat je er in het debat op kunt reageren"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Wie tegenargumenten kent, kan ze weerleggen.",
+        "uo": [
+         "Koos je \"zodat je ze kunt overnemen als eigen argumenten\"? Dan denk je dat je ze zomaar mag gebruiken. Het doel is ze te weerleggen, niet om ze over te nemen. Ken ze om erop te reageren.",
+         "Koos je \"zodat je minder hoeft te zeggen in het debat\"? Dan denk je dat voorbereiden je spreektijd vermindert. Je gebruikt je tijd juist beter. Voorbereid reageren maakt je sterker.",
+         "Koos je \"zodat je ze kunt negeren als ze moeilijk zijn\"? Dan kies je voor vermijden. Het publiek merkt dat je geen antwoord hebt. Bereid weerleggingen voor in plaats van negeren.",
+         "Klopt: wie de tegenargumenten kent, kan ze weerleggen en wordt niet verrast."
+        ],
+        "uh": "Ken de andere kant."
+       },
+       {
+        "v": "Wat doet een gespreksleider in een discussie of debat?",
+        "o": [
+         "de beurten verdelen en regels bewaken",
+         "zelf het beste standpunt kiezen",
+         "de argumenten van een partij verdedigen",
+         "de tegenpartij onderbreken en corrigeren"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "De gespreksleider verdeelt de beurten en bewaakt de regels.",
+        "uo": [
+         "Klopt: de gespreksleider zorgt dat iedereen aan bod komt en dat de regels worden nageleefd.",
+         "Koos je \"zelf het beste standpunt kiezen\"? Dan denk je dat de leider de winnaar bepaalt. Hij is onpartijdig en leidt alleen het gesprek. De leider houdt orde, hij kiest geen standpunt.",
+         "Koos je \"de argumenten van een partij verdedigen\"? Dan verwar je de leider met een deelnemer. De leider heeft geen partij. De leider is neutraal.",
+         "Koos je \"de tegenpartij onderbreken en corrigeren\"? Dan denk je dat leiden betekent ingrijpen in inhoud. Hij bewaakt alleen de spelregels. Hij verdeelt beurten."
+        ],
+        "uh": "Orde bewaren."
+       },
+       {
+        "v": "Je tegenstander praat nog. Wat doe je?",
+        "o": [
+         "er direct doorheen praten",
+         "je tegenstander uitlachen",
+         "wachten op je beurt en noteren",
+         "stoppen met luisteren en je tekst herlezen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Wacht je beurt af en maak aantekeningen.",
+        "uo": [
+         "Koos je \"er direct doorheen praten\"? Dan denk je dat dominant zijn beter is. Onderbreken ontneemt de ander zijn beurt en gaat tegen de regels in. Luister en wacht je beurt af.",
+         "Koos je \"je tegenstander uitlachen\"? Dan verwar je overtuigen met afbreken. Spot is een persoonlijke aanval en geen argument. Reageer inhoudelijk als je aan de beurt bent.",
+         "Klopt: je laat de ander uitspreken en noteert wat je wilt weerleggen.",
+         "Koos je \"stoppen met luisteren en je tekst herlezen\"? Dan denk je dat je tekst belangrijker is. Je moet juist luisteren om te kunnen reageren. Luister actief en noteer."
+        ],
+        "uh": "Eerst luisteren."
+       },
+       {
+        "v": "Waaruit bestaat een sterk debatargument?",
+        "o": [
+         "een stellige toon en een lange zin",
+         "alleen een mening",
+         "standpunt, redenering en bewijs",
+         "een voorbeeld zonder uitleg"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Een sterk argument heeft een standpunt, redenering en bewijs.",
+        "uo": [
+         "Koos je \"een stellige toon en een lange zin\"? Dan denk je dat stelligheid argumenten vervangt. Een toon bewijst niets. Een argument heeft redenering en bewijs.",
+         "Koos je \"alleen een mening\"? Dan denk je dat een mening een argument is. Zonder reden is het een bewering. Voeg een reden en bewijs toe.",
+         "Klopt: een sterk argument zegt wat je vindt, waarom, en waaruit dat blijkt.",
+         "Koos je \"een voorbeeld zonder uitleg\"? Dan denk je dat een voorbeeld alles zegt. Zonder uitleg blijft onduidelijk wat het bewijst. Leg uit waarom het voorbeeld je punt steunt."
+        ],
+        "uh": "Wat, waarom, bewijs."
+       },
+       {
+        "v": "Waarom voeg je een voorbeeld toe aan een argument?",
+        "o": [
+         "het maakt het argument concreet",
+         "het maakt je spreektijd langer en je betoog dikker",
+         "het vervangt de redenering",
+         "het is verplicht in elk debat"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Een voorbeeld maakt een argument concreet.",
+        "uo": [
+         "Klopt: een voorbeeld laat zien dat je argument in het echt klopt.",
+         "Koos je \"het maakt je spreektijd langer en je betoog dikker\"? Dan denk je dat een voorbeeld vult. Het doel is overtuigen, niet tijd vullen. Gebruik voorbeelden voor kracht.",
+         "Koos je \"het vervangt de redenering\"? Dan denk je dat een voorbeeld genoeg is. Het ondersteunt de redenering, vervangt haar niet. Redenering plus voorbeeld.",
+         "Koos je \"het is verplicht in elk debat\"? Dan denk je dat er een vaste regel is. Het is een manier om sterker te zijn. Gebruik een voorbeeld als het je punt steunt."
+        ],
+        "uh": "Voorbeeld = concreet maken."
+       },
+       {
+        "v": "Wat is weerleggen?",
+        "o": [
+         "hetzelfde argument nog eens luider herhalen",
+         "de spreker beledigen",
+         "het argument stilzwijgend overnemen",
+         "laten zien dat een argument niet klopt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Weerleggen is laten zien dat een argument niet klopt of niet genoeg steunt.",
+        "uo": [
+         "Koos je \"hetzelfde argument nog eens luider herhalen\"? Dan denk je dat herhalen weerleggen is. Een tegenstander neemt dat niet over. Weerleggen betekent het argument ontkrachten.",
+         "Koos je \"de spreker beledigen\"? Dan verwar je argumenteren met aanvallen. Een belediging is een persoonlijke aanval. Weerleg het argument, niet de persoon.",
+         "Koos je \"het argument stilzwijgend overnemen\"? Dan denk je dat instemmen een weerlegging is. Dan geef je de ander gelijk. Weerleggen laat zien dat het niet klopt.",
+         "Klopt: bij weerleggen pak je het argument van de ander aan met een tegenargument of tegenvoorbeeld."
+        ],
+        "uh": "Argument ontkrachten."
+       },
+       {
+        "v": "Waarop richt een goede weerlegging zich?",
+        "o": [
+         "op het uiterlijk van de spreker",
+         "op het argument van de tegenpartij",
+         "op het standpunt van je eigen team",
+         "op de manier waarop de gespreksleider praat"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Weerleg het argument van de tegenpartij, niet de persoon.",
+        "uo": [
+         "Koos je \"op het uiterlijk van de spreker\"? Dan denk je dat uiterlijk iets met argumenten te maken heeft. Het is een persoonlijke aanval. Richt je op de inhoud.",
+         "Klopt: je reageert inhoudelijk op wat is gezegd.",
+         "Koos je \"op het standpunt van je eigen team\"? Dan verwar je weerleggen met jezelf verdedigen. Weerleggen is reageren op de ander. Reageer op de tegenpartij.",
+         "Koos je \"op de manier waarop de gespreksleider praat\"? Dan denk je dat de leider het doelwit is. Zijn rol is neutraal. Weerleg de tegenpartij."
+        ],
+        "uh": "Argument, niet persoon."
+       },
+       {
+        "v": "Wat doe je in een slotpleidooi?",
+        "o": [
+         "een volledig nieuw argument introduceren om te verrassen",
+         "je tegenstander bedanken en stoppen",
+         "je hele betoog opnieuw voorlezen",
+         "sterkste argumenten samenvatten en afsluiten"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "In het slotpleidooi vat je de sterkste argumenten samen en sluit je af.",
+        "uo": [
+         "Koos je \"een volledig nieuw argument introduceren om te...\"? Dan denk je dat het slot ruimte is voor iets nieuws. De tegenpartij kan er niet meer op reageren. Vat samen wat je al hebt gezegd.",
+         "Koos je \"je tegenstander bedanken en stoppen\"? Dan laat je het slot leeg. Je mist de kans om te overtuigen. Gebruik het slot om je sterkste punten te herhalen.",
+         "Koos je \"je hele betoog opnieuw voorlezen\"? Dan denk je dat herhalen alles is. Een slot is kort en pakt de kern. Vat samen in korte vorm.",
+         "Klopt: in het slotpleidooi vat je samen en overtuig je een laatste keer."
+        ],
+        "uh": "Samenvatten en overtuigen."
+       },
+       {
+        "v": "Waarom komt er in een slotpleidooi geen nieuw argument?",
+        "o": [
+         "omdat je dan te veel zegt",
+         "de tegenpartij kan niet meer reageren",
+         "omdat de gespreksleider het niet leuk vindt",
+         "omdat een slot altijd kort is"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Een nieuw argument in het slotpleidooi is oneerlijk.",
+        "uo": [
+         "Koos je \"omdat je dan te veel zegt\"? Dan denk je dat de hoeveelheid het probleem is. Het gaat om eerlijkheid in de discussie. Nieuwe argumenten horen eerder.",
+         "Klopt: een nieuw argument aan het eind is oneerlijk, want er is geen kans meer om te weerleggen.",
+         "Koos je \"omdat de gespreksleider het niet leuk vindt\"? Dan denk je dat het een persoonlijke voorkeur van de leider is. Het is een afspraak in het debat. De reden is eerlijkheid naar de tegenpartij.",
+         "Koos je \"omdat een slot altijd kort is\"? Dan denk je dat de lengte de reden is. Het gaat om de kans om te reageren. Nieuw argument = geen weerlegging mogelijk."
+        ],
+        "uh": "Geen nieuws in het slot."
+       },
+       {
+        "v": "Wat is een persoonlijke aanval in een debat?",
+        "o": [
+         "een scherp tegenargument geven met bewijs",
+         "je eigen standpunt herhalen",
+         "de persoon aanvallen, niet het argument",
+         "om een voorbeeld vragen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Een persoonlijke aanval richt zich op de spreker en niet op zijn argument.",
+        "uo": [
+         "Koos je \"een scherp tegenargument geven met bewijs\"? Dan verwar je een stevig argument met een aanval. Een tegenargument is juist gewenst. Een persoonlijke aanval gaat over de persoon.",
+         "Koos je \"je eigen standpunt herhalen\"? Dan denk je dat herhalen een aanval is. Dat is hooguit zwak. Een aanval richt zich op de persoon.",
+         "Klopt: je reageert op de persoon in plaats van op wat hij zegt. Dat is een drogreden.",
+         "Koos je \"om een voorbeeld vragen\"? Dan denk je dat een vraag stellen aanvallen is. Dat is gewoon doorvragen. Aanvallen van de persoon is de fout."
+        ],
+        "uh": "Persoon of argument?"
+       },
+       {
+        "v": "Waarom is onderbreken storend in een debat?",
+        "o": [
+         "het breekt de regels van de beurt",
+         "omdat je dan te veel informatie krijgt",
+         "omdat de gespreksleider dan niets meer te doen heeft",
+         "omdat het publiek de ander dan leuker vindt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Onderbreken breekt de regels en de beurtverdeling.",
+        "uo": [
+         "Klopt: onderbreken is ongepast en verstoort de afgesproken volgorde.",
+         "Koos je \"omdat je dan te veel informatie krijgt\"? Dan denk je dat het om hoeveelheid gaat. Het gaat om de afspraken. Onderbreken schendt de beurtverdeling.",
+         "Koos je \"omdat de gespreksleider dan niets meer te doen heeft\"? Dan denk je dat de leider overbodig wordt. Hij moet juist ingrijpen. Onderbreken verstoort de orde.",
+         "Koos je \"omdat het publiek de ander dan leuker vindt\"? Dan denk je dat het om populariteit gaat. Het gaat om eerlijke beurten. Wacht je beurt af."
+        ],
+        "uh": "Beurt afwachten."
+       },
+       {
+        "v": "Welk argument past bij dit standpunt?",
+        "o": [
+         "tieners hebben meer slaap nodig",
+         "de lunch op school is te duur",
+         "sommige leraren fietsen naar school",
+         "de gymzaal is net opgeknapt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Een argument ondersteunt het standpunt met een reden.",
+        "uo": [
+         "Klopt: dit argument ondersteunt het standpunt met een reden.",
+         "Koos je \"de lunch op school is te duur\"? Dan denk je dat elk schoolonderwerp past. Dit argument heeft niets met de begintijd te maken. Een argument moet bij het standpunt passen.",
+         "Koos je \"sommige leraren fietsen naar school\"? Dan denk je dat een feit uit de omgeving een argument is. Het zegt niets over later beginnen. Zoek een reden die het standpunt steunt.",
+         "Koos je \"de gymzaal is net opgeknapt\"? Dan denk je dat nieuwtjes uit de school argumenten zijn. Het is niet relevant. Kies een argument dat ondersteunt."
+        ],
+        "uh": "Past het bij het standpunt?",
+        "ctx": "Team A verdedigt het standpunt: scholen moeten later beginnen."
+       },
+       {
+        "v": "Wat ontbreekt er in zijn argumentatie?",
+        "o": [
+         "een langere en stelligere zin",
+         "een boze toon",
+         "een redenering en bewijs",
+         "een andere spreker"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Een standpunt zonder redenering en bewijs overtuigt niet.",
+        "uo": [
+         "Koos je \"een langere en stelligere zin\"? Dan denk je dat lengte kracht is. Een lange zin zonder reden blijft zwak. Voeg een redenering toe.",
+         "Koos je \"een boze toon\"? Dan denk je dat emotie overtuigt. Een toon vervangt geen argument. Geef een reden.",
+         "Klopt: \"Het is gewoon zo\" is geen reden. Een argument heeft een onderbouwing nodig.",
+         "Koos je \"een andere spreker\"? Dan denk je dat de spreker het probleem is. Het probleem is het ontbreken van onderbouwing. Onderbouw je standpunt."
+        ],
+        "uh": "\"Gewoon zo\" is geen argument.",
+        "ctx": "Een debater zegt: \"Het huiswerk moet worden afgeschaft. Het is gewoon zo.\""
+       },
+       {
+        "v": "Welke formulering is het sterkste argument voor later beginnen?",
+        "o": [
+         "later beginnen is gewoon beter, dat weet iedereen en daar hoef ik niets meer over te zeggen",
+         "tieners slapen te weinig, dus een latere start geeft meer slaap",
+         "iedereen vindt dat later beginnen moet",
+         "wie vroeg begint, is dom"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een sterk argument heeft een reden en een gevolg, zonder te overdrijven.",
+        "uo": [
+         "Koos je \"later beginnen is gewoon beter, dat weet iedereen...\"? Dan geef je een bewering zonder onderbouwing. Dat overtuigt niet. Voeg een reden toe.",
+         "Klopt: dit heeft een reden en een verwacht effect, zonder te overdrijven.",
+         "Koos je \"iedereen vindt dat later beginnen moet\"? Dan verwijs je naar de meerderheid zonder reden. Een menigte is geen bewijs. Geef een inhoudelijke reden.",
+         "Koos je \"wie vroeg begint, is dom\"? Dan val je de persoon aan en geef je geen argument. Dat is een persoonlijke aanval. Blijf bij de inhoud."
+        ],
+        "uh": "Reden + effect."
+       },
+       {
+        "v": "Welke reactie is een goede weerlegging?",
+        "o": [
+         "\"Jij hebt geen verstand van geld.\"",
+         "\"Dat vind ik niet.\"",
+         "\"Ik herhaal gewoon dat fruit gezond is en dat is genoeg.\"",
+         "\"Gezondere leerlingen besparen later kosten.\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Een weerlegging pakt het argument van de ander aan met een tegenargument.",
+        "uo": [
+         "Koos je \"Jij hebt geen verstand van geld.\"? Dan val je de persoon aan. Dat is geen inhoudelijke reactie. Reageer op het argument.",
+         "Koos je \"Dat vind ik niet.\"? Dan geef je alleen een tegenmening zonder reden. Dat weerlegt niets. Geef een reden.",
+         "Koos je \"Ik herhaal gewoon dat fruit gezond is en dat is...\"? Dan herhaal je je eigen argument. Je gaat niet in op de kosten. Reageer op wat gezegd is.",
+         "Klopt: je pakt het argument aan met een tegenargument over kosten."
+        ],
+        "uh": "Argument tegen argument.",
+        "ctx": "Een tegenstander zegt: \"Gratis fruit op school is te duur.\""
+       },
+       {
+        "v": "Hoe weerleg je dit het best?",
+        "o": [
+         "zeg dat hij dit in een debat helemaal niet mag zeggen",
+         "wijs erop dat hij uit twee gevallen een regel trekt",
+         "noem hem een slechte leerling",
+         "zeg dat gamen leuk is"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Wijs bij een overhaaste generalisatie op het te kleine aantal voorbeelden.",
+        "uo": [
+         "Koos je \"zeg dat hij dit in een debat helemaal niet mag...\"? Dan verbied je een uitspraak in plaats van haar te weerleggen. Dat overtuigt niet. Benoem wat er fout is in de redenering.",
+         "Klopt: je benoemt de overhaaste generalisatie en ontkracht zo het argument.",
+         "Koos je \"noem hem een slechte leerling\"? Dan val je de persoon aan. Dat is geen weerlegging. Weerleg de redenering.",
+         "Koos je \"zeg dat gamen leuk is\"? Dan geef je een tegenmening zonder te reageren op de redenering. Dat weerlegt het argument niet. Wijs op de fout in de redenering."
+        ],
+        "uh": "Twee gevallen is geen regel.",
+        "ctx": "Een tegenstander zegt: \"Twee jongeren in mijn klas gamen veel en halen slechte cijfers. Dus gamen is slecht voor alle jongeren.\""
+       },
+       {
+        "v": "Hoe reageer je het best?",
+        "o": [
+         "je zegt dat hij je standpunt verdraait",
+         "je geeft hem gelijk en zegt niets meer",
+         "je gaat even stil zitten",
+         "je zegt dat hij dom is"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Bij een vertekend standpunt corrigeer je en leg je uit wat je echt vindt.",
+        "uo": [
+         "Klopt: je corrigeert de vertekening en verdedigt je eigen standpunt.",
+         "Koos je \"je geeft hem gelijk en zegt niets meer\"? Dan neem je zijn vertekening over. Dan klopt je standpunt niet meer. Corrigeer zijn weergave.",
+         "Koos je \"je gaat even stil zitten\"? Dan laat je de vertekening staan. Het publiek denkt dan dat hij gelijk heeft. Reageer meteen en uitleg je standpunt.",
+         "Koos je \"je zegt dat hij dom is\"? Dan val je de persoon aan. Dat lost de vertekening niet op. Blijf bij de inhoud."
+        ],
+        "uh": "Verdraaid? Corrigeren.",
+        "ctx": "Een tegenstander zegt: \"Jij wilt minder huiswerk, dus je wilt dat niemand nog iets leert.\""
+       },
+       {
+        "v": "Welk onderdeel van het debat is dit?",
+        "o": [
+         "de weerlegging",
+         "het openingsstatement",
+         "een persoonlijke aanval",
+         "het slotpleidooi"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Samenvatten met een afsluitende oproep is een slotpleidooi.",
+        "uo": [
+         "Koos je \"de weerlegging\"? Dan denk je dat er een argument van de ander wordt aangepakt. Hier wordt samengevat en afgesloten. Een weerlegging reageert op de tegenpartij.",
+         "Koos je \"het openingsstatement\"? Dan verwar je vooraf aankondigen met samenvatten. \"Samengevat\" wijst op een slot. Het opening kondigt aan, het slot vat samen.",
+         "Koos je \"een persoonlijke aanval\"? Dan denk je dat de oproep een aanval is. Er wordt niemand aangevallen. Het is een samenvatting met oproep.",
+         "Klopt: een samenvatting van de sterkste argumenten met een afsluitende oproep is een slotpleidooi."
+        ],
+        "uh": "Slot = samenvatten.",
+        "ctx": "\"Samengevat: later beginnen betekent meer slaap, betere cijfers en minder stress. Daarom vraag ik u: stem voor.\""
+       },
+       {
+        "v": "Wat is hier mis?",
+        "o": [
+         "het argument is te kort",
+         "het argument heeft geen onderwerp",
+         "de tegenpartij kan niet meer reageren",
+         "het slotpleidooi mag nooit iets noemen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Een nieuw argument in het slot is oneerlijk jegens de tegenpartij.",
+        "uo": [
+         "Koos je \"het argument is te kort\"? Dan denk je dat de lengte het probleem is. Het probleem is het tijdstip. Nieuwe argumenten horen eerder.",
+         "Koos je \"het argument heeft geen onderwerp\"? Dan denk je dat het niet past. Het gaat over kosten, dat past bij het debat. Het probleem is eerlijkheid.",
+         "Klopt: een nieuw argument in het slot is oneerlijk, omdat het niet kan worden weerlegd.",
+         "Koos je \"het slotpleidooi mag nooit iets noemen\"? Dan denk je dat een slot niets mag zeggen. Het vat samen. Het slot noemt geen nieuwe argumenten."
+        ],
+        "uh": "Geen nieuws in het slot.",
+        "ctx": "Een debater brengt in zijn slotpleidooi ineens een nieuw argument over de kosten, waar de tegenpartij niet meer op kan reageren."
+       },
+       {
+        "v": "Wat is hier mis?",
+        "o": [
+         "hij spreekt te zacht",
+         "hij gebruikt te veel feiten",
+         "hij valt de persoon aan",
+         "hij is te kort"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Een persoonlijke aanval reageert niet op het argument.",
+        "uo": [
+         "Koos je \"hij spreekt te zacht\"? Dan denk je dat het volume het probleem is. Het gaat om wat hij zegt. Het probleem is dat hij de persoon aanvalt.",
+         "Koos je \"hij gebruikt te veel feiten\"? Dan denk je dat hij feiten noemt. Er worden geen feiten genoemd. Het probleem is de aanval.",
+         "Klopt: \"jij weet er niets van\" is een persoonlijke aanval en geeft geen inhoudelijke reactie.",
+         "Koos je \"hij is te kort\"? Dan denk je dat de lengte het probleem is. Het gaat om de inhoud van de reactie. Reageer op het argument, niet op de persoon."
+        ],
+        "uh": "Persoon aanvallen is geen weerlegging.",
+        "ctx": "Een spreker zegt: \"Je argument is flauwekul. Jij weet er niets van.\""
+       },
+       {
+        "v": "Waarom werkt dit niet in een debat?",
+        "o": [
+         "omdat voorlezen verboden is",
+         "omdat de tekst te lang is",
+         "omdat papier slecht leesbaar is",
+         "hij kan niet reageren"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "In een debat reageer je op de tegenpartij; voorlezen kan dat niet.",
+        "uo": [
+         "Koos je \"omdat voorlezen verboden is\"? Dan denk je dat voorlezen niet mag. Het probleem is dat je niet reageert. Een debat vraagt reageren.",
+         "Koos je \"omdat de tekst te lang is\"? Dan denk je dat de lengte het probleem is. Het gaat om reageren. Reageer op wat gezegd wordt.",
+         "Koos je \"omdat papier slecht leesbaar is\"? Dan denk je dat het om leesbaarheid gaat. Het gaat om interactie. Praat vrij en reageer.",
+         "Klopt: een debat vraagt dat je luistert en direct reageert. Voorlezen sluit dat uit."
+        ],
+        "uh": "Reageren, niet voorlezen.",
+        "ctx": "Een debater leest zijn tekst van papier voor en kijkt niet op wanneer de tegenpartij reageert."
+       },
+       {
+        "v": "Wat doet de gespreksleider hier?",
+        "o": [
+         "hij verdeelt de beurt",
+         "hij kiest een standpunt in het debat",
+         "hij wint het debat",
+         "hij valt Anna aan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "De gespreksleider verdeelt de beurten en bewaakt de regels.",
+        "uo": [
+         "Klopt: hij zorgt dat iedereen om beurten aan het woord is.",
+         "Koos je \"hij kiest een standpunt in het debat\"? Dan denk je dat de leider partij kiest. Hij zegt alleen wie aan de beurt is. De leider is neutraal.",
+         "Koos je \"hij wint het debat\"? Dan denk je dat de leider een deelnemer is. Hij beslist niet over winst. Hij houdt de orde.",
+         "Koos je \"hij valt Anna aan\"? Dan denk je dat zijn opmerking een aanval is. Hij geeft haar de beurt. Een leider verdeelt beurten."
+        ],
+        "uh": "Orde bewaren.",
+        "ctx": "Twee leerlingen praten tegelijk. De gespreksleider zegt: \"Eén tegelijk, eerst Anna.\""
+       },
+       {
+        "v": "Wat doe je?",
+        "o": [
+         "je weigert mee te doen",
+         "je bereidt argumenten voor dat standpunt voor",
+         "je verdedigt het tegenovergestelde standpunt dat jij vindt",
+         "je zegt dat je het er niet mee eens bent"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "In een debat verdedig je soms een toegewezen standpunt met sterke argumenten.",
+        "uo": [
+         "Koos je \"je weigert mee te doen\"? Dan vermijd je de opdracht. Debatteren leert je argumenteren, ook voor standpunten die je niet deelt. Bereid argumenten voor.",
+         "Klopt: bij een debat verdedig je soms een toegewezen standpunt. Dat is een oefening in argumenteren.",
+         "Koos je \"je verdedigt het tegenovergestelde standpunt dat...\"? Dan laat je het toegewezen standpunt los. Dat is niet de opdracht. Verdedig wat is toegewezen.",
+         "Koos je \"je zegt dat je het er niet mee eens bent\"? Dan geef je je persoonlijke mening in plaats van argumenten. Dat helpt je team niet. Zoek argumenten voor het toegewezen standpunt."
+        ],
+        "uh": "Argumenteren als vaardigheid.",
+        "ctx": "Je krijgt in een debat een standpunt toegewezen dat je persoonlijk niet deelt."
+       },
+       {
+        "v": "Welke fout maakt hij?",
+        "o": [
+         "hij spreekt te kort",
+         "hij valt de persoon aan",
+         "hij gebruikt te veel voorbeelden",
+         "hij onderbouwt niets"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Zonder onderbouwing ontduik je de bewijslast.",
+        "uo": [
+         "Koos je \"hij spreekt te kort\"? Dan denk je dat de lengte de fout is. Het probleem is het ontbreken van onderbouwing. Onderbouw je standpunt.",
+         "Koos je \"hij valt de persoon aan\"? Dan denk je dat er iemand wordt aangevallen. Er wordt niemand genoemd. Het probleem is dat hij niets onderbouwt.",
+         "Koos je \"hij gebruikt te veel voorbeelden\"? Dan denk je dat hij voorbeelden noemt. Hij noemt niets. Er is geen onderbouwing.",
+         "Klopt: wie een standpunt inneemt, moet het onderbouwen. Dit is ontduiken van de bewijslast."
+        ],
+        "uh": "Beweren is niet bewijzen.",
+        "ctx": "Een debater zegt: \"Ik heb gewoon gelijk, daar hoef ik niets meer over te zeggen.\""
+       },
+       {
+        "v": "Welke zin is een goede toelichting bij dit argument?",
+        "o": [
+         "\"Leerlingen slapen dan langer.\"",
+         "\"Dat is nu eenmaal zo.\"",
+         "\"Iedereen weet dat.\"",
+         "\"Ik ben het er helemaal niet mee eens.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Een toelichting legt uit waarom een argument klopt.",
+        "uo": [
+         "Klopt: dit legt uit waarom het argument klopt.",
+         "Koos je \"Dat is nu eenmaal zo.\"? Dan geef je geen uitleg. Het blijft een bewering. Leg uit waarom.",
+         "Koos je \"Iedereen weet dat.\"? Dan verwijs je naar de menigte. Dat is geen toelichting. Geef een inhoudelijke reden.",
+         "Koos je \"Ik ben het er helemaal niet mee eens.\"? Dan spreek je het argument tegen in plaats van het toe te lichten. Het is een andere zet. Een toelichting steunt het argument."
+        ],
+        "uh": "Waarom klopt het?",
+        "ctx": "Argument: \"Later beginnen is goed voor leerlingen.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "In een debat zegt een tegenstander: \"Gratis fruit op school is te duur.\"",
+        "v": "Geef een goede weerlegging en leg uit waarom het een weerlegging is.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld: \"Gezondere leerlingen besparen later kosten, dus het is een investering\" (1 punt). Het is een weerlegging omdat het inhoudelijk ingaat op het argument over de kosten met een tegenargument (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een debater zegt: \"Je argument is flauwekul. Jij weet er niets van.\"",
+        "v": "Welke fout maakt hij en wat had hij moeten doen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij valt de persoon aan in plaats van het argument (persoonlijke aanval) (1 punt). Hij had inhoudelijk moeten reageren op het argument met een tegenargument of tegenvoorbeeld (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een debater brengt in zijn slotpleidooi ineens een nieuw argument over kosten.",
+        "v": "Waarom is dat niet toegestaan en wat hoort wel in een slotpleidooi?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De tegenpartij kan er niet meer op reageren, dus het is oneerlijk (1 punt). In het slot vat je je sterkste argumenten samen en sluit je af (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een tegenstander zegt: \"Jij wilt minder huiswerk, dus je wilt dat niemand nog iets leert.\"",
+        "v": "Welke drogreden gebruikt hij en hoe reageer je?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij vertekent je standpunt (1 punt). Je zegt dat hij je standpunt verdraait en legt uit wat je werkelijk vindt (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een debater zegt: \"Later beginnen is gewoon beter. Ik heb gelijk.\"",
+        "v": "Wat ontbreekt er in zijn argumentatie en hoe maak je haar sterker?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Er ontbreken een redenering en bewijs; hij onderbouwt zijn standpunt niet (1 punt). Sterker: een reden geven (bijvoorbeeld meer slaap), een voorbeeld of bewijs toevoegen en uitleggen waarom dat het standpunt steunt (1 punt)."
+       }
+      ]
+     },
+     {
+      "id": "B5",
+      "lo": "nl.B.5",
+      "gs": 2,
+      "naam": "Adequaat reageren op luisteraars en deelnemers",
+      "beschrijving": "Je luistert actief, beantwoordt vragen eerlijk en gericht, vraagt door waar iets onduidelijk is en geeft en ontvangt bruikbare feedback.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Actief luisteren",
+       "Vragen beantwoorden",
+       "Doorvragen en verduidelijken",
+       "Reageren op kritiek en tegenspraak",
+       "Feedback geven",
+       "Feedback ontvangen"
+      ],
+      "sam": "Adequaat reageren betekent actief luisteren (meedenken, noteren, aankijken), vragen eerlijk en gericht beantwoorden, doorvragen bij iets onduidelijks, kritiek inhoudelijk beantwoorden en een terecht punt erkennen. Goede feedback is concreet en noemt wat goed ging en wat beter kan; feedback ontvang je door eerst te luisteren en erover na te denken.",
+      "begrippen": [
+       {
+        "t": "Actief luisteren",
+        "d": "Aandachtig luisteren, meedenken en kernpunten noteren."
+       },
+       {
+        "t": "Doorvragen",
+        "d": "Een vervolgvraag stellen om meer uitleg te krijgen."
+       },
+       {
+        "t": "Beurt",
+        "d": "Het moment waarop jij het woord hebt."
+       },
+       {
+        "t": "Reageren",
+        "d": "Inhoudelijk antwoorden op wat de ander zei."
+       },
+       {
+        "t": "Feedback",
+        "d": "Concrete informatie over hoe iets ging, bedoeld om het te verbeteren."
+       },
+       {
+        "t": "Concrete feedback",
+        "d": "Feedback die precies zegt wat goed ging en wat beter kan."
+       },
+       {
+        "t": "Verbeterpunt",
+        "d": "Een punt waarop iemand zich kan verbeteren."
+       },
+       {
+        "t": "Kritiek",
+        "d": "Een opmerking die aangeeft wat er niet klopt of beter kan."
+       },
+       {
+        "t": "Tegenwerping",
+        "d": "Een bezwaar tegen wat iemand zegt."
+       },
+       {
+        "t": "Erkennen",
+        "d": "Toegeven dat iets klopt wat de ander zegt."
+       },
+       {
+        "t": "Persoonlijke aanval",
+        "d": "De persoon aanvallen in plaats van zijn argument of gedrag."
+       },
+       {
+        "t": "Verduidelijken",
+        "d": "Duidelijker maken wat je bedoelt of wat de ander bedoelt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat hoort bij actief luisteren?",
+        "o": [
+         "je antwoord voorbereiden terwijl de ander nog praat",
+         "meedenken, noteren en doorvragen",
+         "de ander onderbreken zodra je het oneens bent",
+         "alleen luisteren naar wat je interessant vindt"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Actief luisteren is meedenken, noteren en doorvragen.",
+        "uo": [
+         "Koos je \"je antwoord voorbereiden terwijl de ander nog praat\"? Dan denk je dat luisteren en je eigen antwoord bedenken hetzelfde zijn. Dan mis je wat de ander zegt. Luister eerst helemaal, reageer daarna.",
+         "Klopt: bij actief luisteren denk je mee, noteer je kernpunten en vraag je door als iets onduidelijk is.",
+         "Koos je \"de ander onderbreken zodra je het oneens bent\"? Dan denk je dat reageren meteen moet. Onderbreken ontneemt de ander zijn beurt en je luistert niet af. Wacht je beurt en noteer wat je wilt zeggen.",
+         "Koos je \"alleen luisteren naar wat je interessant vindt\"? Dan denk je dat je kunt selecteren. Je mist dan de rest van wat de ander zegt. Luister naar het hele verhaal."
+        ],
+        "uh": "Meedenken en noteren."
+       },
+       {
+        "v": "Waarom kijk je een spreker aan terwijl hij praat?",
+        "o": [
+         "omdat je dan niets hoeft te onthouden",
+         "om hem sneller te laten praten en zijn verhaal te korten",
+         "zodat hij zijn tekst niet kan lezen",
+         "je laat zien dat je luistert"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Aankijken laat zien dat je luistert en maakt contact.",
+        "uo": [
+         "Koos je \"omdat je dan niets hoeft te onthouden\"? Dan denk je dat kijken je geheugen vervangt. Je moet nog steeds nadenken en soms noteren. Aankijken is een teken van aandacht.",
+         "Koos je \"om hem sneller te laten praten en zijn verhaal te...\"? Dan denk je dat je een spreker kunt opjagen. Aankijken is bedoeld voor contact. Een spreker heeft juist rust nodig.",
+         "Koos je \"zodat hij zijn tekst niet kan lezen\"? Dan denk je dat het hem afleidt van zijn papier. Het gaat om contact, niet om dwang. Kijk aan om te laten zien dat je meeluistert.",
+         "Klopt: aankijken laat zien dat je aandacht hebt voor de spreker en maakt hem zekerder."
+        ],
+        "uh": "Contact = aandacht."
+       },
+       {
+        "v": "Wat doe je als je een vraag niet kunt beantwoorden?",
+        "o": [
+         "eerlijk zeggen dat je het niet weet en het uitzoeken",
+         "iets verzinnen dat plausibel klinkt, zodat je er competent uitziet",
+         "de vraag negeren en gewoon doorgaan met je verhaal",
+         "zeggen dat de vraag niet relevant is"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Weet je het niet, zeg dat dan eerlijk en bied aan het uit te zoeken.",
+        "uo": [
+         "Klopt: eerlijk zijn is geloofwaardiger dan iets verzinnen. Bied aan het op te zoeken.",
+         "Koos je \"iets verzinnen dat plausibel klinkt, zodat je er...\"? Dan denk je dat een antwoord altijd beter is dan een eerlijk \"ik weet het niet\". Een verzonnen antwoord kan onjuist zijn. Eerlijk zijn is beter.",
+         "Koos je \"de vraag negeren en gewoon doorgaan met je verhaal\"? Dan denk je dat het publiek het vergeet. Het publiek merkt dat je niet antwoordt. Reageer eerlijk op de vraag.",
+         "Koos je \"zeggen dat de vraag niet relevant is\"? Dan wijs je de vraag af zonder reden. Dat komt arrogant over. Neem de vraag serieus en zeg wat je niet weet."
+        ],
+        "uh": "Eerlijk, niet verzinnen."
+       },
+       {
+        "v": "Hoe beantwoord je een vraag uit het publiek het best?",
+        "o": [
+         "met een lange uitleg over iets anders dat je zelf belangrijk vindt",
+         "met een wedervraag zonder antwoord",
+         "kort en gericht op de vraag",
+         "door te zeggen dat je het al hebt verteld"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Beantwoord een vraag kort en gericht.",
+        "uo": [
+         "Koos je \"met een lange uitleg over iets anders dat je zelf...\"? Dan denk je dat meer vertellen meer zegt. Je beantwoordt de vraag dan niet. Blijf bij wat gevraagd is.",
+         "Koos je \"met een wedervraag zonder antwoord\"? Dan denk je dat vragen terugkaatsen een antwoord is. Soms helpt het, maar je moet ook echt antwoorden. Geef eerst een antwoord.",
+         "Klopt: een kort, gericht antwoord laat zien dat je de vraag begrepen hebt.",
+         "Koos je \"door te zeggen dat je het al hebt verteld\"? Dan schuif je de vraag terug. Het publiek wil een antwoord. Leg het kort opnieuw uit."
+        ],
+        "uh": "Kort en gericht."
+       },
+       {
+        "v": "Waarvoor dient doorvragen?",
+        "o": [
+         "de ander in verlegenheid brengen door zijn zwakke plekken te laten zien",
+         "laten zien dat jij het beter weet dan de spreker",
+         "meer uitleg krijgen over iets onduidelijks",
+         "tijd rekken zonder iets te zeggen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Doorvragen verduidelijkt wat de ander bedoelt.",
+        "uo": [
+         "Koos je \"de ander in verlegenheid brengen door zijn zwakke...\"? Dan denk je dat doorvragen een aanval is. Het is bedoeld om het te begrijpen. Doorvragen is een hulpmiddel.",
+         "Koos je \"laten zien dat jij het beter weet dan de spreker\"? Dan verwar je vragen met opscheppen. Doorvragen is niet bedoeld om te winnen. Vraag omdat je iets wilt begrijpen.",
+         "Klopt: met doorvragen verduidelijk je wat de ander bedoelt voordat je reageert.",
+         "Koos je \"tijd rekken zonder iets te zeggen\"? Dan denk je dat het om uitstel gaat. Het doel is verduidelijking. Doorvragen levert informatie op."
+        ],
+        "uh": "Vraag om uitleg."
+       },
+       {
+        "v": "Welke doorvraag is het best?",
+        "o": [
+         "\"Kun je daar een voorbeeld van geven?\"",
+         "\"Wat een onzin, zeg.\"",
+         "\"Dat weet ik al.\"",
+         "\"Ja, ja, ga maar door.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Een goede doorvraag is open en vraagt om meer uitleg of een voorbeeld.",
+        "uo": [
+         "Klopt: deze vraag is open, gericht en vraagt om concretere uitleg.",
+         "Koos je \"Wat een onzin, zeg.\"? Dan geef je een oordeel in plaats van een vraag. Dat zet de ander op scherp. Vraag om uitleg.",
+         "Koos je \"Dat weet ik al.\"? Dan sluit je het gesprek af. Zo leer je niets van de ander. Stel een vraag die nieuwe informatie oplevert.",
+         "Koos je \"Ja, ja, ga maar door.\"? Dan gebruik je een onoprechte opmerking. Dat is geen doorvraag. Een goede doorvraag vraagt om meer uitleg."
+        ],
+        "uh": "Open vraag."
+       },
+       {
+        "v": "Iemand zegt dat je argument niet klopt. Wat doe je?",
+        "o": [
+         "boos worden en meteen alles ontkennen wat hij zegt",
+         "stoppen met praten",
+         "dezelfde zin nog eens herhalen",
+         "luisteren en inhoudelijk reageren"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Op kritiek reageer je door te luisteren en inhoudelijk te antwoorden.",
+        "uo": [
+         "Koos je \"boos worden en meteen alles ontkennen wat hij zegt\"? Dan denk je dat kritiek een aanval is. Dan los je het probleem niet op. Luister en reageer rustig.",
+         "Koos je \"stoppen met praten\"? Dan ontwijk je de kritiek. Het publiek denkt dat je geen antwoord hebt. Reageer met argumenten.",
+         "Koos je \"dezelfde zin nog eens herhalen\"? Dan denk je dat herhalen weerleggen is. De ander heeft er niets aan. Ga in op wat is gezegd.",
+         "Klopt: je neemt de kritiek serieus en gaat inhoudelijk in op wat is gezegd."
+        ],
+        "uh": "Luisteren, reageren."
+       },
+       {
+        "v": "Hoe reageer je als de ander een terecht punt maakt?",
+        "o": [
+         "doen alsof je het al wist",
+         "dat toegeven en je verhaal aanvullen",
+         "het punt negeren en rustig verder praten alsof niets is gezegd",
+         "hem aanvallen om af te leiden"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Erken een terecht punt en vul je verhaal aan.",
+        "uo": [
+         "Koos je \"doen alsof je het al wist\"? Dan denk je dat dat sterker overkomt. Het publiek merkt dat het niet klopt. Wees eerlijk.",
+         "Klopt: erkennen dat iets klopt, maakt je geloofwaardig en je betoog beter.",
+         "Koos je \"het punt negeren en rustig verder praten alsof...\"? Dan denk je dat het wel overwaait. Het publiek merkt dat je niet reageert. Erken wat klopt.",
+         "Koos je \"hem aanvallen om af te leiden\"? Dan denk je dat aanvallen helpt. Dat is een persoonlijke aanval. Erken en bouw verder."
+        ],
+        "uh": "Eerlijk erkennen."
+       },
+       {
+        "v": "Hoe herken je goede feedback?",
+        "o": [
+         "een algemeen oordeel zoals \"het was best oké\"",
+         "alleen kritiek op wat misging",
+         "een opmerking over de persoon zelf",
+         "concreet: wat ging goed en wat kan beter"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Goede feedback is concreet en noemt wat goed ging en wat beter kan.",
+        "uo": [
+         "Koos je \"een algemeen oordeel zoals het was best oké\"? Dan denk je dat een oordeel genoeg is. De ander weet dan niet wat hij moet doen. Wees concreet.",
+         "Koos je \"alleen kritiek op wat misging\"? Dan denk je dat feedback alleen negatief hoeft te zijn. Dan blijft de ander ontmoedigd. Noem ook wat goed ging.",
+         "Koos je \"een opmerking over de persoon zelf\"? Dan richt je je op de persoon in plaats van op de prestatie. Dat helpt niet. Gaat het over wat hij deed, niet wie hij is.",
+         "Klopt: bruikbare feedback noemt specifiek wat goed ging en wat beter kan."
+        ],
+        "uh": "Concreet."
+       },
+       {
+        "v": "Waarom noem je bij feedback ook wat goed ging?",
+        "o": [
+         "omdat het anders te kort wordt",
+         "zo weet de ander wat hij moet houden en blijft hij gemotiveerd",
+         "zodat hij niet boos wordt over het negatieve",
+         "omdat het publiek dat wil horen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Positieve punten laten zien wat behouden moet blijven en motiveren.",
+        "uo": [
+         "Koos je \"omdat het anders te kort wordt\"? Dan denk je dat het opvulling is. Het is inhoudelijk belangrijk. Positieve punten helpen de ander.",
+         "Klopt: hij weet wat hij moet behouden, en voelt zich gewaardeerd.",
+         "Koos je \"zodat hij niet boos wordt over het negatieve\"? Dan denk je dat het alleen een pleister is. Het geeft informatie over wat hij moet behouden. Het heeft inhoudelijk nut.",
+         "Koos je \"omdat het publiek dat wil horen\"? Dan denk je dat het voor het publiek is. Het is voor de ontvanger. Feedback is voor de ander."
+        ],
+        "uh": "Ook het goede noemen."
+       },
+       {
+        "v": "Wat doe je als je feedback krijgt?",
+        "o": [
+         "direct uitleggen waarom je gelijk had en waarom hij het mis heeft",
+         "de feedback negeren omdat je het zelf wel beter weet",
+         "luisteren en erover nadenken",
+         "de ander terugpakken met kritiek"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "Bij feedback luister je eerst en denk je erover na.",
+        "uo": [
+         "Koos je \"direct uitleggen waarom je gelijk had en waarom hij...\"? Dan denk je dat je jezelf moet verdedigen. Dan hoor je de feedback niet. Luister eerst.",
+         "Koos je \"de feedback negeren omdat je het zelf wel beter weet\"? Dan denk je dat je er niets mee hoeft. Dan leer je niet. Neem feedback serieus.",
+         "Klopt: je luistert eerst en bepaalt daarna wat je ermee doet.",
+         "Koos je \"de ander terugpakken met kritiek\"? Dan denk je dat je moet terugslaan. Dat is een persoonlijke aanval. Reageer rustig."
+        ],
+        "uh": "Eerst luisteren."
+       },
+       {
+        "v": "Waarom leg je jezelf niet meteen uit als je kritiek krijgt?",
+        "o": [
+         "je moet eerst begrijpen wat de ander bedoelt",
+         "omdat uitleg geven altijd onbeleefd en uit de toon is",
+         "omdat de ander altijd gelijk heeft",
+         "omdat je dan te veel praat"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Eerst luisteren en begrijpen, dan pas reageren.",
+        "uo": [
+         "Klopt: eerst luisteren en doorvragen voorkomt misverstanden.",
+         "Koos je \"omdat uitleg geven altijd onbeleefd en uit de toon...\"? Dan denk je dat uitleg nooit mag. Soms is uitleg nuttig, maar eerst moet je begrijpen wat bedoeld is. Luister eerst.",
+         "Koos je \"omdat de ander altijd gelijk heeft\"? Dan denk je dat feedback altijd klopt. Je beoordeelt zelf wat je ermee doet, maar eerst luister je. Neem het serieus en weeg het.",
+         "Koos je \"omdat je dan te veel praat\"? Dan denk je dat het om tijd gaat. Het gaat om begrip. Eerst begrijpen."
+        ],
+        "uh": "Begrijpen voor reageren."
+       },
+       {
+        "v": "Is dit actief luisteren?",
+        "o": [
+         "nee, hij is niet gericht op de spreker",
+         "ja, want hij knikt af en toe en zit er rustig bij",
+         "ja, want hij hoort het verhaal",
+         "ja, want de telefoon helpt noteren"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Actief luisteren vraagt gerichte aandacht voor de spreker.",
+        "uo": [
+         "Klopt: wie op zijn telefoon kijkt, volgt het verhaal niet en toont geen aandacht.",
+         "Koos je \"ja, want hij knikt af en toe en zit er rustig bij\"? Dan denk je dat knikken genoeg is. Knikken zonder aandacht is schijnluisteren. Actief luisteren vraagt aandacht.",
+         "Koos je \"ja, want hij hoort het verhaal\"? Dan denk je dat horen luisteren is. Je moet het ook verwerken. Luisteren vraagt aandacht.",
+         "Koos je \"ja, want de telefoon helpt noteren\"? Dan denk je dat een telefoon een notitieblok kan zijn. Hij kijkt niet naar de spreker. Noteer gericht, niet afgeleid."
+        ],
+        "uh": "Aandacht, geen telefoon.",
+        "ctx": "Een luisteraar kijkt op zijn telefoon en knikt af en toe terwijl de spreker praat."
+       },
+       {
+        "v": "Welke reactie is de beste?",
+        "o": [
+         "een bedrag noemen dat waarschijnlijk klopt",
+         "zeggen dat het niet belangrijk is",
+         "zeggen dat je het niet precies weet en het zult opzoeken",
+         "de vraag aan iemand anders doorschuiven"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Weet je het niet precies, zeg dat eerlijk en zoek het op.",
+        "uo": [
+         "Koos je \"een bedrag noemen dat waarschijnlijk klopt\"? Dan geef je een gok als feit. Het kan onjuist zijn en je verliest geloofwaardigheid. Zeg wat je niet weet.",
+         "Koos je \"zeggen dat het niet belangrijk is\"? Dan wuif je de vraag weg. Dat komt onbeleefd over. Neem de vraag serieus.",
+         "Klopt: eerlijk en behulpzaam. Je belooft geen onjuiste informatie.",
+         "Koos je \"de vraag aan iemand anders doorschuiven\"? Dan laat je de leerling zonder antwoord. Het is jouw voordracht. Bied aan het uit te zoeken."
+        ],
+        "uh": "Eerlijk en actief.",
+        "ctx": "Na afloop vraagt een leerling: \"Wat kosten zonnepanelen?\" De spreker weet het niet precies."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "hij praat niet lang genoeg",
+         "hij beantwoordt de gestelde vraag niet",
+         "hij praat over het verkeerde onderwerp, namelijk zonnepanelen",
+         "de luisteraar had niet mogen vragen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Een antwoord gaat in op de vraag die gesteld is.",
+        "uo": [
+         "Koos je \"hij praat niet lang genoeg\"? Dan denk je dat meer praten het oplost. Vijf minuten is lang, maar het is niet het antwoord. Antwoord op de vraag.",
+         "Klopt: een goed antwoord gaat in op de vraag. Hier wordt eromheen gepraat.",
+         "Koos je \"hij praat over het verkeerde onderwerp, namelijk...\"? Dan denk je dat het onderwerp fout is. Het onderwerp is goed, maar de vraag gaat over de vergelijking. Beantwoord de vergelijkingsvraag.",
+         "Koos je \"de luisteraar had niet mogen vragen\"? Dan denk je dat vragen stellen niet mag. Het is een normaal deel van een voordracht. De spreker moet antwoorden."
+        ],
+        "uh": "Vraag = antwoord.",
+        "ctx": "Een luisteraar vraagt: \"Waarom is dit beter dan windenergie?\" De spreker praat vijf minuten over zonnepanelen in het algemeen."
+       },
+       {
+        "v": "Welke doorvraag stel je?",
+        "o": [
+         "\"Dat is onzin, zeg dat maar niet zo stellig.\"",
+         "\"Ja, ja.\"",
+         "\"Waarom zeg je dat altijd?\"",
+         "\"Wat bedoel je precies met duidelijk?\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Vraag naar de betekenis als iets onduidelijk is.",
+        "uo": [
+         "Koos je \"Dat is onzin, zeg dat maar niet zo stellig.\"? Dan geef je een oordeel in plaats van een vraag. Dat lokt een verdediging uit. Vraag naar de betekenis.",
+         "Koos je \"Ja, ja.\"? Dan reageer je afwijzend zonder te vragen. Zo leer je niets. Stel een vraag.",
+         "Koos je \"Waarom zeg je dat altijd?\"? Dan stel je een beschuldigende vraag. Dat is een aanval. Vraag open en vriendelijk.",
+         "Klopt: een open vraag naar de betekenis verduidelijkt het begrip."
+        ],
+        "uh": "Open doorvraag.",
+        "ctx": "Een spreker zegt: \"Dit is gewoon duidelijk.\" Je wilt meer weten."
+       },
+       {
+        "v": "Welke doorvraag levert je het meest op?",
+        "o": [
+         "\"Waarom kun je niet gewoon beter luisteren?\"",
+         "\"Welk deel was voor jou onduidelijk?\"",
+         "\"Dat is jouw probleem, niet het mijne.\"",
+         "\"Zal ik alles nog een keer herhalen?\""
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een doorvraag naar het onduidelijke deel levert de meeste informatie op.",
+        "uo": [
+         "Koos je \"Waarom kun je niet gewoon beter luisteren?\"? Dan verwijt je de luisteraar iets. Dat sluit het gesprek. Vraag naar het onduidelijke deel.",
+         "Klopt: zo weet je precies wat je moet verbeteren.",
+         "Koos je \"Dat is jouw probleem, niet het mijne.\"? Dan wijs je de verantwoordelijkheid af. Je leert niets. Wees nieuwsgierig.",
+         "Koos je \"Zal ik alles nog een keer herhalen?\"? Dan biedt je alles aan zonder te weten waar het misging. Dat is inefficiënt. Vraag eerst wat onduidelijk was."
+        ],
+        "uh": "Precies vragen.",
+        "ctx": "Een luisteraar zegt na je presentatie: \"Ik vond je verhaal onduidelijk.\""
+       },
+       {
+        "v": "Welke reactie is goed?",
+        "o": [
+         "vragen welke cijfers hij bedoelt en ze controleren",
+         "zeggen dat ze wel kloppen en dat het klaar is",
+         "hem een slechte rekenaar noemen",
+         "stoppen met je betoog"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer kritiek op cijfers voordat je reageert.",
+        "uo": [
+         "Klopt: je vraagt door en controleert, in plaats van meteen ja of nee te zeggen.",
+         "Koos je \"zeggen dat ze wel kloppen en dat het klaar is\"? Dan verdedig je zonder te controleren. Als hij gelijk heeft, ben je zwak. Vraag door en controleer.",
+         "Koos je \"hem een slechte rekenaar noemen\"? Dan val je de persoon aan. Dat is een drogreden. Blijf bij de inhoud.",
+         "Koos je \"stoppen met je betoog\"? Dan geef je meteen op. Dat is niet nodig. Controleer eerst."
+        ],
+        "uh": "Eerst doorvragen en controleren.",
+        "ctx": "Een tegenstander zegt: \"Je cijfers kloppen niet.\""
+       },
+       {
+        "v": "Wat doe je het best?",
+        "o": [
+         "je doet alsof je het al wist",
+         "je ontkent dat het klopt",
+         "je gaat verder alsof er niets is gezegd",
+         "je geeft toe dat het klopt en vult je verhaal aan"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Erken een terecht punt en vul je verhaal aan.",
+        "uo": [
+         "Koos je \"je doet alsof je het al wist\"? Dan speel je een rol. Het publiek ziet dat het niet klopt. Erken het.",
+         "Koos je \"je ontkent dat het klopt\"? Dan houd je vol terwijl hij gelijk heeft. Dat maakt je minder geloofwaardig. Eerlijk zijn.",
+         "Koos je \"je gaat verder alsof er niets is gezegd\"? Dan negeer je de opmerking. Het publiek merkt dat je niet reageert. Reageer.",
+         "Klopt: eerlijk erkennen maakt je geloofwaardig en je verhaal beter."
+        ],
+        "uh": "Erkennen.",
+        "ctx": "Een luisteraar maakt een terecht punt dat je niet had bedacht."
+       },
+       {
+        "v": "Welke feedback is het meest bruikbaar?",
+        "o": [
+         "\"Het was best oké, denk ik, maar ik weet het niet.\"",
+         "\"Je bent gewoon geen goede spreker.\"",
+         "\"Je opening trok aandacht, maar in het midden sprak je te snel; neem daar pauzes.\"",
+         "\"Ik vond het saai en dat zeg ik eerlijk.\""
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Goede feedback is concreet en noemt zowel een sterk als een zwak punt.",
+        "uo": [
+         "Koos je \"Het was best oké, denk ik, maar ik weet het niet.\"? Dan geef je een vaag oordeel. De ander weet niet wat hij moet doen. Wees concreet.",
+         "Koos je \"Je bent gewoon geen goede spreker.\"? Dan oordeel je over de persoon. Dat helpt niet om iets te verbeteren. Praat over wat hij deed.",
+         "Klopt: concreet, met een sterk punt en een duidelijk verbeterpunt.",
+         "Koos je \"Ik vond het saai en dat zeg ik eerlijk.\"? Dan geef je eerlijkheid zonder uitleg. De ander weet niet waarom. Zeg wat saai was en hoe het beter kan."
+        ],
+        "uh": "Concreet en verbeterbaar.",
+        "ctx": "Vier klasgenoten geven feedback op je presentatie."
+       },
+       {
+        "v": "Wat klopt er niet aan deze feedback?",
+        "o": [
+         "het is te positief",
+         "het is te kort",
+         "het is een oordeel over de persoon zonder verbeterpunt",
+         "het is te eerlijk"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Feedback over de persoon helpt niet; feedback over het gedrag wel.",
+        "uo": [
+         "Koos je \"het is te positief\"? Dan draai je het om. De opmerking is juist negatief. Positieve en negatieve punten moeten concreet zijn.",
+         "Koos je \"het is te kort\"? Dan denk je dat de lengte het probleem is. Het probleem is dat er niets concreets in staat. Concreet maken.",
+         "Klopt: hij zegt niet wat er beter kan, alleen dat jij slecht bent.",
+         "Koos je \"het is te eerlijk\"? Dan denk je dat eerlijk zijn het probleem is. Eerlijk mag, maar met een verbeterpunt. Eerlijk én helpend."
+        ],
+        "uh": "Gedrag, niet persoon.",
+        "ctx": "Een klasgenoot zegt: \"Je presentatie was zwak, je bent gewoon geen goede spreker.\""
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "je geeft hem gelijk",
+         "je antwoordt te snel",
+         "je gebruikt te moeilijke woorden",
+         "je reageert op de persoon in plaats van de feedback aan te nemen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Reageer op feedback met luisteren, niet met een tegenaanval.",
+        "uo": [
+         "Koos je \"je geeft hem gelijk\"? Dan denk je dat je instemt. Je antwoordt met een wedervoorwerp. Luister en denk na.",
+         "Koos je \"je antwoordt te snel\"? Dan denk je dat het om snelheid gaat. Het gaat om de inhoud van je reactie. Neem de feedback aan.",
+         "Koos je \"je gebruikt te moeilijke woorden\"? Dan denk je dat de woordkeus het probleem is. Het probleem is de aanval. Reageer inhoudelijk.",
+         "Klopt: je valt aan in plaats van na te denken over wat hij zei."
+        ],
+        "uh": "Geen tegenaanval.",
+        "ctx": "Na afloop zegt een klasgenoot: \"Je sprak te zacht.\" Jij antwoordt: \"Nou, jij praat zelf ook niet beter.\""
+       },
+       {
+        "v": "Wat doe je het best met deze feedback?",
+        "o": [
+         "kiezen wat je gaat verbeteren en dat oefenen",
+         "alles tegelijk proberen te verbeteren, zodat niets achterblijft",
+         "de opmerkingen vergeten",
+         "alleen de positieve opmerking onthouden"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Kies de belangrijkste verbeterpunten uit feedback en oefen die.",
+        "uo": [
+         "Klopt: je weegt de feedback, kiest een of twee punten en oefent die.",
+         "Koos je \"alles tegelijk proberen te verbeteren, zodat niets...\"? Dan denk je dat alles tegelijk kan. Dan verlies je focus en verbetert er weinig. Kies en oefen.",
+         "Koos je \"de opmerkingen vergeten\"? Dan denk je dat je ze niet hoeft te gebruiken. Dan leer je niet. Gebruik feedback.",
+         "Koos je \"alleen de positieve opmerking onthouden\"? Dan denk je dat het negatieve negeerbaar is. Beide soorten zijn nuttig. Gebruik ook de verbeterpunten."
+        ],
+        "uh": "Kies en oefen.",
+        "ctx": "Je krijgt drie opmerkingen: je sprak te zacht, je voorbeelden waren goed en je keek te weinig naar het publiek."
+       },
+       {
+        "v": "Waarom is dit geen goed luisteren?",
+        "o": [
+         "hij luistert te goed",
+         "hij wacht op zijn beurt om te praten in plaats van te luisteren",
+         "hij praat te zacht",
+         "hij stelt te veel vragen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Onderbreken om zelf te praten is geen luisteren.",
+        "uo": [
+         "Koos je \"hij luistert te goed\"? Dan draai je het om. Hij luistert juist niet. Luisteren is meedenken.",
+         "Klopt: hij hoort niet wat de ander zegt, hij wil zelf praten.",
+         "Koos je \"hij praat te zacht\"? Dan denk je dat het volume het probleem is. Het gaat om het onderbreken. Wacht je beurt.",
+         "Koos je \"hij stelt te veel vragen\"? Dan denk je dat hij vragen stelt. Hij vertelt zijn eigen verhaal. Luister en reageer op de ander."
+        ],
+        "uh": "Luister, dan praat.",
+        "ctx": "Een deelnemer onderbreekt steeds de spreker om zijn eigen verhaal te vertellen."
+       },
+       {
+        "v": "Welke reactie is beter?",
+        "o": [
+         "hetzelfde nog eens luider zeggen",
+         "zeggen dat hij beter moet luisteren",
+         "de vraag overslaan en meteen naar de volgende gaan",
+         "het opnieuw uitleggen in andere woorden"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Leg het nog eens uit, in andere woorden.",
+        "uo": [
+         "Koos je \"hetzelfde nog eens luider zeggen\"? Dan denk je dat luider helpt. Het blijft onduidelijk. Gebruik andere woorden.",
+         "Koos je \"zeggen dat hij beter moet luisteren\"? Dan geef je de luisteraar de schuld. Dat sluit het gesprek. Leg het nogmaals uit.",
+         "Koos je \"de vraag overslaan en meteen naar de volgende gaan\"? Dan negeer je de vraag. Dat is onbeleefd. Beantwoord de vraag.",
+         "Klopt: wie iets niet begrijpt, heeft baat bij een andere uitleg."
+        ],
+        "uh": "Opnieuw, anders.",
+        "ctx": "Een luisteraar vraagt: \"Kunt u dat nog eens uitleggen?\" De spreker antwoordt: \"Ik heb het al gezegd.\""
+       },
+       {
+        "v": "Welke reactie is het meest bruikbaar?",
+        "o": [
+         "\"Waarom niet? Wat is jouw argument?\"",
+         "\"Dan heb je gewoon ongelijk.\"",
+         "\"Dat interesseert me niet, laten we doorgaan.\"",
+         "\"Dan stop ik hiermee, want dit heeft geen zin.\""
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Vraag bij oneens zijn naar het argument van de ander.",
+        "uo": [
+         "Klopt: je vraagt naar de reden zodat je inhoudelijk kunt reageren.",
+         "Koos je \"Dan heb je gewoon ongelijk.\"? Dan val je zijn mening af zonder te vragen waarom. Dat sluit de discussie. Vraag naar zijn argument.",
+         "Koos je \"Dat interesseert me niet, laten we doorgaan.\"? Dan sluit je het gesprek af. Zo komt er geen discussie. Wees nieuwsgierig.",
+         "Koos je \"Dan stop ik hiermee, want dit heeft geen zin.\"? Dan geef je meteen op. Dat is niet nodig. Vraag door."
+        ],
+        "uh": "Waarom? Dat is de vraag.",
+        "ctx": "Een deelnemer in een discussie zegt: \"Daar ben ik het niet mee eens.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Na afloop vraagt een leerling: \"Wat kosten zonnepanelen?\" De spreker weet het niet precies.",
+        "v": "Wat is de beste reactie en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Eerlijk zeggen dat je het niet precies weet en aanbieden het uit te zoeken (1 punt). Een verzonnen antwoord kan onjuist zijn en beschadigt je geloofwaardigheid (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een klasgenoot zegt: \"Je presentatie was zwak, je bent gewoon geen goede spreker.\"",
+        "v": "Wat is er mis met deze feedback en hoe zou je haar beter formuleren?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het is een oordeel over de persoon zonder concreet verbeterpunt (1 punt). Beter: noem wat goed ging en wat beter kan, bijvoorbeeld \"je opening trok aandacht, maar je sprak in het midden te snel; neem daar pauzes\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Na afloop zegt een klasgenoot: \"Je sprak te zacht.\" Jij antwoordt: \"Nou, jij praat zelf ook niet beter.\"",
+        "v": "Waarom is jouw reactie niet adequaat en wat doe je beter?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je valt de persoon aan in plaats van de feedback aan te nemen (1 punt). Beter: luisteren, doorvragen of erkennen en nadenken over hoe je luider kunt spreken (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een luisteraar maakt tijdens een discussie een terecht punt dat je niet had bedacht.",
+        "v": "Hoe reageer je adequaat?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je erkent dat het punt klopt (1 punt) en vult of past je verhaal daarop aan (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een luisteraar zegt: \"Ik vond je verhaal onduidelijk.\"",
+        "v": "Welke doorvraag stel je en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld: \"Welk deel was voor jou onduidelijk?\" (1 punt). Zo weet je precies wat je moet verbeteren in plaats van alles opnieuw uit te leggen (1 punt)."
+       }
+      ]
+     }
     ]
    },
    {
@@ -11906,6 +15167,3981 @@ var VAKKEN = [
      {
       "t": "Commentaar",
       "d": "opmerkingen van een lezer over wat in je tekst beter kan"
+     }
+    ],
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "nl.C.1",
+      "gs": 2,
+      "naam": "Informatie verzamelen, verwerken en verantwoorden",
+      "beschrijving": "Je kiest betrouwbare bronnen, verwerkt wat je vindt als citaat of in eigen woorden en vermeldt je bronnen, zodat je werk geen plagiaat is.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Bronnen zoeken en kiezen",
+       "Betrouwbaarheid beoordelen",
+       "Citeren",
+       "Parafraseren en samenvatten",
+       "Bronvermelding",
+       "Plagiaat vermijden"
+      ],
+      "sam": "Bij een gedocumenteerde tekst zoek je bronnen, beoordeel je afzender, doel, actualiteit en onderbouwing, verwerk je informatie als citaat (letterlijk, tussen aanhalingstekens) of parafrase (eigen woorden, eigen zinsbouw) en vermeld je altijd de bron in de tekst en in een bronnenlijst. Zonder bronvermelding is overgenomen tekst of een overgenomen idee plagiaat.",
+      "begrippen": [
+       {
+        "t": "Gedocumenteerde tekst",
+        "d": "Een tekst waarin informatie uit bronnen is verwerkt en verantwoord."
+       },
+       {
+        "t": "Bron",
+        "d": "Een boek, artikel, website of rapport waaruit je informatie haalt."
+       },
+       {
+        "t": "Afzender",
+        "d": "Degene die de informatie heeft gemaakt of verspreidt."
+       },
+       {
+        "t": "Betrouwbaarheid",
+        "d": "De mate waarin je op een bron kunt vertrouwen."
+       },
+       {
+        "t": "Actualiteit",
+        "d": "Of de informatie nog bij de tijd is."
+       },
+       {
+        "t": "Onafhankelijke bron",
+        "d": "Een bron zonder eigen belang bij wat er staat."
+       },
+       {
+        "t": "Citaat",
+        "d": "Een letterlijk overgenomen tekstdeel tussen aanhalingstekens."
+       },
+       {
+        "t": "Aanhalingstekens",
+        "d": "De tekens die een letterlijk overgenomen tekst omsluiten."
+       },
+       {
+        "t": "Parafrase",
+        "d": "De inhoud van een bron in eigen woorden en zinsbouw."
+       },
+       {
+        "t": "Bronvermelding",
+        "d": "De gegevens waarmee een lezer de bron kan terugvinden."
+       },
+       {
+        "t": "Bronnenlijst",
+        "d": "Alfabetisch overzicht van alle gebruikte bronnen."
+       },
+       {
+        "t": "Plagiaat",
+        "d": "Andermans werk of ideeën als eigen werk presenteren."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke bron is het meest geschikt voor een werkstuk over de gevolgen van schermtijd bij jongeren?",
+        "o": [
+         "een willekeurig forumbericht waarin iemand zijn ervaring vertelt over zijn eigen kinderen",
+         "een rapport van een onderzoeksinstituut met een verantwoorde methode",
+         "een reclamefolder van een fabrikant van telefoons met een mooi lay-out en veel foto's",
+         "een anoniem bericht op een sociaal medium dat veel is gedeeld en geliket"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een geschikte bron heeft een bekende, deskundige afzender en laat zien hoe de informatie is verkregen.",
+        "uo": [
+         "Koos je \"een willekeurig forumbericht waarin iemand zijn...\"? Dan denk je dat een persoonlijke ervaring hetzelfde is als onderzoek. Eén verhaal zegt niets over jongeren in het algemeen, en je kunt niet nagaan hoe de schrijver aan zijn mening komt.",
+         "Klopt: een onderzoeksrapport met een beschreven methode laat zien hoe de conclusies tot stand zijn gekomen, dus je kunt de betrouwbaarheid toetsen.",
+         "Koos je \"een reclamefolder van een fabrikant van telefoons...\"? Dan denk je dat een professioneel uiterlijk betrouwbaarheid bewijst. Een fabrikant wil telefoons verkopen en kiest dus selectief, dus het belang van de afzender kleurt de informatie.",
+         "Koos je \"een anoniem bericht op een sociaal medium dat veel...\"? Dan denk je dat veel deelmomenten iets zeggen over de juistheid. Populariteit is geen bewijs, en zonder bekende afzender kun je de bron niet controleren."
+        ],
+        "uh": "Let op afzender en verantwoording."
+       },
+       {
+        "v": "Waarom gebruik je voor een gedocumenteerd werkstuk bij voorkeur meer dan één bron?",
+        "o": [
+         "omdat een werkstuk met één bron nooit een voldoende kan halen, wat de docent verplicht stelt",
+         "zodat je de tekst langer kunt maken door steeds hetzelfde uit meerdere bronnen over te nemen",
+         "omdat elke bron maar één zin bevat die je kunt gebruiken, ook al is hij nog zo lang",
+         "je kunt informatie vergelijken en controleren"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Meerdere bronnen laten je vergelijken en controleren.",
+        "uo": [
+         "Koos je \"omdat een werkstuk met één bron nooit een voldoende...\"? Dan denk je dat het om een regel van de docent gaat. Het echte doel van meer bronnen is inhoudelijk: je kunt controleren of de informatie klopt en je krijgt een vollediger beeld.",
+         "Koos je \"zodat je de tekst langer kunt maken door steeds...\"? Dan denk je dat meer bronnen vooral meer woorden opleveren. Een werkstuk wordt niet beter van herhaling, maar van vergelijking en een breder overzicht.",
+         "Koos je \"omdat elke bron maar één zin bevat die je kunt...\"? Dan denk je dat bronnen altijd erg beperkt zijn. Een goede bron bevat vaak veel, maar pas door vergelijking zie je welke informatie betrouwbaar is.",
+         "Klopt: bronnen die elkaar bevestigen of tegenspreken laten zien wat waarschijnlijk klopt en waar de meningen verschillen."
+        ],
+        "uh": "Vergelijk bronnen."
+       },
+       {
+        "v": "Waaraan herken je dat een website een commercieel belang kan hebben?",
+        "o": [
+         "de website wil je iets verkopen en noemt vooral voordelen",
+         "de website heeft een duidelijk menu en een zoekfunctie waarmee je makkelijk iets vindt",
+         "de website is recent aangepast en bevat de datum van de laatste wijziging bovenaan",
+         "de website heeft meer dan één pagina over hetzelfde onderwerp en is dus uitgebreid"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Een commercieel belang herken je aan verkopen en eenzijdig positieve informatie.",
+        "uo": [
+         "Klopt: wie iets verkoopt, laat meestal alleen de gunstige kanten zien. Dat kleurt de informatie.",
+         "Koos je \"de website heeft een duidelijk menu en een...\"? Dan denk je dat gebruiksgemak iets zegt over het belang van de afzender. Een goed menu zegt niets over wat de site wil bereiken, dus je moet kijken naar wat de afzender wil verkopen of bereiken.",
+         "Koos je \"de website is recent aangepast en bevat de datum...\"? Dan denk je dat actualiteit duidt op commercieel belang. Een recente datum zegt iets over actualiteit, niet over het belang van de afzender. Dat zie je aan wat de site aanbiedt.",
+         "Koos je \"de website heeft meer dan één pagina over hetzelfde...\"? Dan denk je dat omvang iets zegt over belangen. Een uitgebreide site kan neutraal zijn of juist verkopen; je beoordeelt het belang aan het doel van de afzender."
+        ],
+        "uh": "Doel van de afzender."
+       },
+       {
+        "v": "Waarom is de datum van een bron belangrijk bij onderwerpen als technologie of cijfers?",
+        "o": [
+         "omdat oude bronnen altijd onbetrouwbaar zijn, ongeacht het onderwerp",
+         "omdat de datum bepaalt hoeveel punten je krijgt voor je bronnenlijst volgens de docent",
+         "de informatie kan verouderd zijn",
+         "omdat een nieuwe bron altijd door meer mensen is gelezen en dus beter is"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bij snel veranderende onderwerpen moet een bron actueel zijn.",
+        "uo": [
+         "Koos je \"omdat oude bronnen altijd onbetrouwbaar zijn,...\"? Dan denk je dat leeftijd altijd tot onjuistheid leidt. Over veel onderwerpen, zoals een historische gebeurtenis, blijft een oude bron bruikbaar; de datum telt vooral bij snel veranderende onderwerpen.",
+         "Koos je \"omdat de datum bepaalt hoeveel punten je krijgt...\"? Dan denk je dat het om een puntentelling gaat. De datum is een controlepunt voor actualiteit, en hoort ook in de bronvermelding zelf.",
+         "Klopt: cijfers en techniek veranderen snel, dus een oude bron kan niet meer kloppen.",
+         "Koos je \"omdat een nieuwe bron altijd door meer mensen is...\"? Dan denk je dat leesbereik de kwaliteit bepaalt. Hoeveel mensen een bron lazen zegt niets over de juistheid; de datum zegt alleen of de informatie nog actueel kan zijn."
+        ],
+        "uh": "Check de datum."
+       },
+       {
+        "v": "Welke bron weegt voor de cijfers het zwaarst?",
+        "o": [
+         "het blog van de fietsenwinkel, omdat die dagelijks met fietsers te maken heeft",
+         "beide even zwaar, want elke bron over fietsen is een bron",
+         "het rapport van het statistiekbureau",
+         "het blog, omdat het persoonlijker is geschreven en dus eerlijker overkomt"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Voor cijfers weegt een bron met een verantwoorde methode zwaarder dan een bron met een verkoopbelang.",
+        "uo": [
+         "Koos je \"het blog van de fietsenwinkel, omdat die dagelijks...\"? Dan denk je dat dagelijkse ervaring gelijkstaat aan onderzoek. De winkel ziet alleen zijn eigen klanten, en verkoopt fietsen, dus zijn cijfers zijn niet systematisch verzameld.",
+         "Koos je \"beide even zwaar, want elke bron over fietsen is...\"? Dan denk je dat bronnen niet te rangschikken zijn. Je weegt bronnen op afzender, doel en verantwoording, en het statistiekbureau scoort daar hoger op dan een verkoper.",
+         "Klopt: een statistiekbureau verzamelt cijfers als taak en legt de werkwijze vast, terwijl de winkel er belang bij heeft.",
+         "Koos je \"het blog, omdat het persoonlijker is geschreven en...\"? Dan denk je dat een persoonlijke toon eerlijkheid bewijst. Toon zegt niets over de juistheid van cijfers, terwijl een verantwoorde methode dat wel doet."
+        ],
+        "uh": "Methode en afzender.",
+        "ctx": "Een leerling zoekt informatie over het aantal fietsers in Nederland en vindt een blog van een fietsenwinkel en een rapport van een statistiekbureau."
+       },
+       {
+        "v": "Wanneer zet je een stuk tekst uit een bron tussen aanhalingstekens?",
+        "o": [
+         "als je het woordelijk overneemt",
+         "als je de inhoud in je eigen woorden samenvat, zodat duidelijk is dat het van een ander komt",
+         "altijd wanneer je een bron noemt, ook als je geen tekst overneemt",
+         "alleen als de tekst langer is dan drie regels, omdat korte stukjes vrij zijn"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Woordelijke overname is een citaat: aanhalingstekens en bron.",
+        "uo": [
+         "Klopt: een letterlijk overgenomen tekstdeel is een citaat en hoort tussen aanhalingstekens, met bronvermelding.",
+         "Koos je \"als je de inhoud in je eigen woorden samenvat,...\"? Dan denk je dat aanhalingstekens ook bij eigen woorden horen. Eigen woorden zijn geen citaat; alleen woordelijk overgenomen tekst zet je tussen aanhalingstekens.",
+         "Koos je \"altijd wanneer je een bron noemt, ook als je geen...\"? Dan denk je dat noemen en citeren hetzelfde zijn. Je noemt een bron bij elke verwerking, maar aanhalingstekens gebruik je alleen bij letterlijke overname.",
+         "Koos je \"alleen als de tekst langer is dan drie regels,...\"? Dan denk je dat er een vrije ondergrens is. Elk woordelijk overgenomen stuk, ook kort, is een citaat, dus ook het kleinste stukje krijgt aanhalingstekens en bron."
+        ],
+        "uh": "Letterlijk = citaat."
+       },
+       {
+        "v": "Wat ontbreekt er?",
+        "o": [
+         "de aanhalingstekens, want die staan er niet",
+         "het woord \"volgens\", want dat hoort in een citaat",
+         "een eigen mening van de leerling in dezelfde zin",
+         "een bronvermelding bij het citaat"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Een citaat heeft altijd een bronvermelding nodig.",
+        "uo": [
+         "Koos je \"de aanhalingstekens, want die staan er niet\"? Dan denk je dat de aanhalingstekens ontbreken. Ze staan er wel; wat mist is de vermelding van welk rapport het is, wie het schreef en wanneer.",
+         "Koos je \"het woord volgens, want dat hoort in een citaat\"? Dan denk je dat dat woord het probleem is. \"Volgens\" is een gewone verwijzing; de bronvermelding ontbreekt en dat maakt de zin onvolledig.",
+         "Koos je \"een eigen mening van de leerling in dezelfde zin\"? Dan denk je dat een eigen mening nodig is. Het gaat er niet om dat je meer zegt, maar dat de lezer de bron kan terugvinden.",
+         "Klopt: het citaat staat al tussen aanhalingstekens, maar de lezer weet niet uit welke bron het komt."
+        ],
+        "uh": "Citaat plus bron.",
+        "ctx": "Een leerling schrijft: Volgens het rapport \"neemt het gebruik van de fiets toe in steden\". Er staat geen bron bij."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "niets, want het cijfer is anders genoteerd en dus eigen werk",
+         "de zin is bijna letterlijk overgenomen zonder bron of aanhalingstekens",
+         "het cijfer klopt niet, want 12 procent is anders dan twaalf procent",
+         "de leerling had er een eigen conclusie bij moeten schrijven"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een bijna letterlijke overname zonder bron of aanhalingstekens is plagiaat.",
+        "uo": [
+         "Koos je \"niets, want het cijfer is anders genoteerd en dus...\"? Dan denk je dat een ander schrijfwijze van het getal de zin van jou maakt. Bijna alle woorden en de opbouw zijn gelijk, dus het blijft overgenomen tekst zonder bron.",
+         "Klopt: een bijna letterlijke overname is geen eigen formulering en heeft aanhalingstekens of een herformulering plus bron nodig.",
+         "Koos je \"het cijfer klopt niet, want 12 procent is anders...\"? Dan denk je dat het cijfer is veranderd. Twaalf en 12 is hetzelfde getal; het probleem is de zin zelf, die vrijwel gelijk is aan de bron.",
+         "Koos je \"de leerling had er een eigen conclusie bij moeten...\"? Dan denk je dat een conclusie nodig is. Het ontbreken van bron en herformulering is het probleem, niet het ontbreken van een eigen mening."
+        ],
+        "uh": "Herformuleer echt of citeer.",
+        "ctx": "Een bron zegt: \"Het aantal fietsers is de afgelopen tien jaar met twaalf procent gegroeid.\" Een leerling schrijft: Het aantal fietsers is in tien jaar met 12 procent gegroeid."
+       },
+       {
+        "v": "Wat houdt een goede parafrase in?",
+        "o": [
+         "een paar woorden uit de bron vervangen door synoniemen en de zin verder laten staan",
+         "de tekst letterlijk overnemen en er geen aanhalingstekens bij zetten",
+         "de kernzin laten staan en er een andere zin aan toevoegen over wat jij vindt",
+         "de inhoud in eigen woorden en eigen zinsbouw weergeven, mét bron"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Een parafrase is eigen woorden, eigen zinsbouw en bronvermelding.",
+        "uo": [
+         "Koos je \"een paar woorden uit de bron vervangen door...\"? Dan denk je dat het wisselen van losse woorden genoeg is. De zinsbouw blijft dan van de auteur, en dat geldt nog steeds als bijna letterlijk overgenomen tekst.",
+         "Koos je \"de tekst letterlijk overnemen en er geen...\"? Dan denk je dat je dan een parafrase hebt. Letterlijk overnemen zonder tekens is plagiaat, want je laat de lezer denken dat de zin van jou is.",
+         "Koos je \"de kernzin laten staan en er een andere zin aan...\"? Dan denk je dat een eigen toevoeging de overname goed maakt. De overgenomen kernzin blijft letterlijk, dus je moet hem alsnog citeren of herschrijven.",
+         "Klopt: je geeft de betekenis eerlijk weer in eigen woorden en vermeldt waar het vandaan komt."
+        ],
+        "uh": "Eigen woorden plus bron."
+       },
+       {
+        "v": "Welke parafrase is goed?",
+        "o": [
+         "Door de stijging van de zeespiegel lopen laaggelegen kustgebieden meer risico op overstromingen.",
+         "Doordat het zeewater stijgt, is de kans op wateroverlast in lage kuststreken groter (bron: Kustinstituut, 2023).",
+         "Door de stijging van de zeestand lopen lage kustgebieden meer risico op overstromingen (bron: Kustinstituut, 2023).",
+         "Doordat de zee stijgt, zullen lage kuststreken zeker onder water komen te staan (bron: Kustinstituut, 2023)."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Een goede parafrase behoudt de betekenis maar verandert woorden én zinsbouw.",
+        "uo": [
+         "Koos je \"Door de stijging van de zeespiegel lopen...\"? Dan kopieer je de zin letterlijk zonder aanhalingstekens of bron. Dat is geen parafrase maar overname, en zonder aanduiding presenteer je het als eigen tekst.",
+         "Klopt: de betekenis is gelijk gebleven, de woorden en zinsbouw zijn eigen werk en de bron staat erbij.",
+         "Koos je \"Door de stijging van de zeestand lopen lage...\"? Dan wisselt een paar woorden maar behoudt de hele zinsbouw. Dat is een te kleine wijziging, dus de zin is nog bijna letterlijk en daarom geen echte parafrase.",
+         "Koos je \"Doordat de zee stijgt, zullen lage kuststreken...\"? Dan maakt van een groter risico een zekerheid. Een parafrase moet de betekenis van de bron behouden, en deze zin zegt meer dan de bron beweert."
+        ],
+        "uh": "Betekenis blijft, vorm verandert.",
+        "ctx": "Bron: \"Door de stijging van de zeespiegel lopen laaggelegen kustgebieden meer risico op overstromingen.\""
+       },
+       {
+        "v": "Welke parafrase geeft de betekenis het minst eerlijk weer?",
+        "o": [
+         "Een groot deel van de jongeren slaapt te kort doordat het nog lang naar een scherm kijkt.",
+         "Schermgebruik voor het slapen is volgens de bron een reden dat jongeren vaak te weinig slapen.",
+         "Alle jongeren slapen te weinig door hun schermen.",
+         "Jongeren die voor het slapen lang op hun scherm kijken, slapen vaak te weinig."
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Bij een parafrase mag je de betekenis niet wijzigen, bijvoorbeeld door \"veel\" tot \"alle\" te maken.",
+        "uo": [
+         "Koos je \"Een groot deel van de jongeren slaapt te kort...\"? Dan geeft de betekenis juist wel goed weer, met \"groot deel\" voor \"veel\" en een eigen zinsbouw; hier is niets mis mee.",
+         "Koos je \"Schermgebruik voor het slapen is volgens de bron...\"? Dan geeft de bewering juist en eerlijk weer, met \"vaak\" voor \"veel\" en bevat een verwijzing naar de bron, dus hier is niets mis mee.",
+         "Klopt: de bron zegt \"veel jongeren\", deze zin maakt er \"alle\" van en wijzigt zo de betekenis.",
+         "Koos je \"Jongeren die voor het slapen lang op hun scherm...\"? Dan behoudt de betekenis van de bron, omdat het verband tussen schermtijd en slaaptekort blijft, dus ook hier is niets mis mee."
+        ],
+        "uh": "Gelijke betekenis.",
+        "ctx": "Bron: \"Veel jongeren slapen te weinig, omdat zij voor het slapengaan nog lang naar hun schermen kijken.\""
+       },
+       {
+        "v": "Welke gegevens horen in elk geval in een bronvermelding bij een website?",
+        "o": [
+         "auteur of organisatie, titel, datum en webadres",
+         "alleen de naam van de website, want de rest is niet nodig",
+         "alleen het webadres, want dan kan iedereen de pagina openen",
+         "de naam van de leerling die de bron zocht en de datum waarop hij hem las"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Een bronvermelding laat de lezer de bron terugvinden: auteur, titel, datum en vindplaats.",
+        "uo": [
+         "Klopt: met die gegevens kan een lezer de bron zelf terugvinden en de datum controleren.",
+         "Koos je \"alleen de naam van de website, want de rest is niet...\"? Dan denk je dat een naam genoeg is. De lezer moet de precieze pagina kunnen terugvinden, dus ook titel, datum en webadres horen erbij.",
+         "Koos je \"alleen het webadres, want dan kan iedereen de...\"? Dan denk je dat een link alleen volstaat. Pagina's verdwijnen of veranderen, dus je noteert ook auteur, titel en datum om de bron te herkennen.",
+         "Koos je \"de naam van de leerling die de bron zocht en de...\"? Dan denk je dat het om jezelf gaat. Een bronvermelding beschrijft de bron, niet de zoeker; de zoekdatum mag erbij, maar auteur en titel zijn onmisbaar."
+        ],
+        "uh": "Auteur, titel, datum, vindplaats."
+       },
+       {
+        "v": "Wat is hier gebruikelijk om aan te passen?",
+        "o": [
+         "de bronnen alfabetisch ordenen op de naam van de auteur",
+         "de bronnen sorteren op de lengte van de tekst, zodat het korte bovenaan staat",
+         "alle bronnen weglaten, want ze staan al in de tekst",
+         "de bronnen op de datum van publicatie zetten, de nieuwste bovenaan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Een bronnenlijst zet je meestal alfabetisch op auteur.",
+        "uo": [
+         "Klopt: een bronnenlijst is meestal alfabetisch, zodat de lezer snel een bron kan vinden.",
+         "Koos je \"de bronnen sorteren op de lengte van de tekst,...\"? Dan denk je dat lengte een logische volgorde is. De lezer zoekt op auteursnaam, dus alfabetisch is de gebruikelijke volgorde.",
+         "Koos je \"alle bronnen weglaten, want ze staan al in de tekst\"? Dan denk je dat de verwijzingen in de tekst genoeg zijn. De lijst geeft de volledige gegevens, zodat de lezer elke bron kan terugvinden.",
+         "Koos je \"de bronnen op de datum van publicatie zetten, de...\"? Dan denk je dat datum de standaard is. Sommige docenten vragen dat, maar alfabetisch op auteur is de gebruikelijke manier om bronnen snel terug te vinden."
+        ],
+        "uh": "Alfabetisch op auteur.",
+        "ctx": "Een leerling heeft de bronnenlijst voor zijn werkstuk gemaakt. In de lijst staan drie bronnen op volgorde van het moment waarop hij ze vond."
+       },
+       {
+        "v": "Welk probleem heeft dit werkstuk?",
+        "o": [
+         "er zijn te veel bronnen gebruikt, terwijl er één voldoende is",
+         "de bronnenlijst staat aan het einde in plaats van aan het begin van het werkstuk",
+         "de lezer kan niet nagaan welke bewering uit welke bron komt",
+         "de titels zijn te lang om in een lijst te zetten, dus verkort ze"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Zowel bronverwijzingen in de tekst als een bronnenlijst zijn nodig.",
+        "uo": [
+         "Koos je \"er zijn te veel bronnen gebruikt, terwijl er één...\"? Dan denk je dat meer bronnen een nadeel zijn. Vijf bronnen is prima; het probleem is de ontbrekende koppeling tussen tekst en bronnenlijst.",
+         "Koos je \"de bronnenlijst staat aan het einde in plaats van...\"? Dan denk je dat de plek van de lijst het probleem is. Aan het einde hoort hij juist; wat ontbreekt zijn de verwijzingen in de tekst zelf.",
+         "Klopt: bronvermelding in de tekst koppelt elke bewering aan een bron; een losse lijst alleen doet dat niet.",
+         "Koos je \"de titels zijn te lang om in een lijst te zetten,...\"? Dan denk je dat de lengte van titels uitmaakt. Het gaat niet om de vorm van de lijst, maar om de ontbrekende verwijzing van de bewering naar de bron."
+        ],
+        "uh": "Verwijs in de tekst en in de lijst.",
+        "ctx": "Een werkstuk bevat een bronnenlijst met vijf titels, maar in de tekst staat nergens welke informatie uit welke bron komt."
+       },
+       {
+        "v": "Hoe herken je plagiaat?",
+        "o": [
+         "een bron correct vermelden in je bronnenlijst en in de tekst",
+         "andermans tekst of ideeën als eigen werk presenteren",
+         "een citaat gebruiken met aanhalingstekens en een bron erbij",
+         "een tekst samenvatten in eigen woorden met bronvermelding"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Plagiaat is andermans werk als eigen werk presenteren.",
+        "uo": [
+         "Koos je \"een bron correct vermelden in je bronnenlijst en in...\"? Dan denk je dat bronvermelding plagiaat is. Het is juist het tegenovergestelde, want je maakt duidelijk wat van wie komt.",
+         "Klopt: plagiaat is andermans werk zonder bronvermelding als het jouwe laten voorkomen.",
+         "Koos je \"een citaat gebruiken met aanhalingstekens en een...\"? Dan denk je dat citeren verboden is. Een correct citaat met bron is toegestaan, want de lezer ziet dat de woorden van een ander komen.",
+         "Koos je \"een tekst samenvatten in eigen woorden met...\"? Dan denk je dat samenvatten hetzelfde is als overschrijven. Een eerlijke samenvatting met bron is gewoon verwerking, geen plagiaat."
+        ],
+        "uh": "Geen bron = plagiaat."
+       },
+       {
+        "v": "Is dit plagiaat?",
+        "o": [
+         "nee, want hij heeft twee woorden zelf toegevoegd",
+         "nee, want websites zijn openbaar en dus vrij te gebruiken",
+         "nee, want hij heeft de tekst niet van een boek maar van internet",
+         "ja, hij presenteert andermans tekst als eigen werk"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Zonder bron overgenomen tekst is plagiaat, ook als je er iets aan toevoegt.",
+        "uo": [
+         "Koos je \"nee, want hij heeft twee woorden zelf toegevoegd\"? Dan denk je dat een kleine toevoeging de tekst eigen maakt. De rest blijft van de website, dus zonder bron is het nog steeds plagiaat.",
+         "Koos je \"nee, want websites zijn openbaar en dus vrij te...\"? Dan denk je dat openbaar betekent zonder bron. Ook openbare teksten hebben een maker, en je moet die vermelden.",
+         "Koos je \"nee, want hij heeft de tekst niet van een boek maar...\"? Dan denk je dat het soort bron bepaalt of plagiaat telt. Het geldt voor elke bron, dus ook voor teksten van websites.",
+         "Klopt: een paar woorden veranderen of toevoegen maakt de tekst niet van jou en zonder bron is het plagiaat."
+        ],
+        "uh": "Altijd bron.",
+        "ctx": "Een leerling geeft een alinea uit een website op zijn eigen werkstuk door, maar voegt twee woorden toe en laat de bron weg."
+       },
+       {
+        "v": "Is zijn redenering juist?",
+        "o": [
+         "ja, want eigen woorden betekent eigen werk",
+         "nee, ook een overgenomen idee heeft een bronvermelding nodig",
+         "ja, want ideeën kunnen niet van iemand zijn",
+         "ja, maar alleen als het artikel niet erg bekend is"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Ook een idee in eigen woorden heeft een bron nodig.",
+        "uo": [
+         "Koos je \"ja, want eigen woorden betekent eigen werk\"? Dan denk je dat alleen de zinnen tellen. Een idee dat je ergens vandaan haalt blijft van de bedenker, dus je moet de bron noemen, ook als de woorden van jou zijn.",
+         "Klopt: het gaat om het idee. Ook als je het in eigen woorden zegt, moet je de bron noemen.",
+         "Koos je \"ja, want ideeën kunnen niet van iemand zijn\"? Dan denk je dat ideeën vrij zijn. Een uitgewerkt idee of onderzoeksresultaat is wel van de maker, en bronvermelding hoort bij verwerking.",
+         "Koos je \"ja, maar alleen als het artikel niet erg bekend is\"? Dan denk je dat bekendheid bepaalt of een bron genoemd moet worden. Dat maakt niets uit; je noemt altijd de bron van wat je gebruikt."
+        ],
+        "uh": "Idee = bron noemen.",
+        "ctx": "Een leerling schrijft in zijn werkstuk een idee uit een artikel op in eigen woorden, zonder het artikel te noemen. Hij vindt dat het mag, omdat de zinnen van hem zijn."
+       },
+       {
+        "v": "Welke bron gebruikt hij het best als hoofdbron?",
+        "o": [
+         "het geschiedenisboek van de uitgever",
+         "het blog, omdat het een spannend verhaal heeft",
+         "geen enkele bron, want over geschiedenis bestaat alleen een mening",
+         "alle drie even zwaar, omdat ze over hetzelfde onderwerp gaan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Kies bronnen met een deskundige afzender en onderbouwing boven stellige beweringen zonder bewijs.",
+        "uo": [
+         "Klopt: een uitgever laat de inhoud controleren door deskundigen, terwijl een blog zonder bewijs onbetrouwbaar is.",
+         "Koos je \"het blog, omdat het een spannend verhaal heeft\"? Dan denk je dat een spannend verhaal een betrouwbare verklaring is. Een bewering zonder bewijs is geen goede bron, ook niet als hij boeiend klinkt.",
+         "Koos je \"geen enkele bron, want over geschiedenis bestaat...\"? Dan denk je dat geschiedenis alleen een mening is. Historici gebruiken bronnen en verantwoorden hun conclusies, dus je kunt wel degelijk bronnen kiezen.",
+         "Koos je \"alle drie even zwaar, omdat ze over hetzelfde...\"? Dan denk je dat het onderwerp de waarde van een bron bepaalt. Je weegt bronnen op afzender en bewijs, en het blog heeft geen van beide."
+        ],
+        "uh": "Weeg de bronnen.",
+        "ctx": "Een leerling zoekt de oorzaken van de Eerste Wereldoorlog. Hij vindt een encyclopedie, een geschiedenisboek van een uitgever en een blog dat zegt dat \"alles een complot was\"."
+       },
+       {
+        "v": "Welke bron levert het sterkste bewijs en waarom?",
+        "o": [
+         "de fabrikant, want die kent het medicijn het best en weet dus wat werkt",
+         "de drie gebruikers, want persoonlijke verhalen zijn overtuigender",
+         "geen van beide, want je kunt nooit weten wat waar is",
+         "het onafhankelijke onderzoek, want het is breed en niet door de verkoper gedaan"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Onafhankelijk onderzoek met veel deelnemers is sterker bewijs dan ervaringen die een verkoper kiest.",
+        "uo": [
+         "Koos je \"de fabrikant, want die kent het medicijn het best...\"? Dan denk je dat kennis van het product genoeg is. De fabrikant wil verkopen en kiest zijn voorbeelden; dat maakt de bron minder onafhankelijk.",
+         "Koos je \"de drie gebruikers, want persoonlijke verhalen zijn...\"? Dan denk je dat ervaringen sterker zijn dan onderzoek. Drie verhalen zeggen weinig over alle gebruikers, en ze zijn door de fabrikant uitgekozen.",
+         "Koos je \"geen van beide, want je kunt nooit weten wat waar is\"? Dan denk je dat bronnen niet te beoordelen zijn. Je kunt wel degelijk beoordelen welke bron het sterkste bewijs levert; onafhankelijkheid en omvang zijn criteria.",
+         "Klopt: een grote, onafhankelijke steekproef zegt meer dan drie ervaringen die de verkoper zelf heeft gekozen."
+        ],
+        "uh": "Onafhankelijk en breed.",
+        "ctx": "Een leerling wil weten of een nieuw medicijn werkt. Hij vindt een pagina van de fabrikant met drie tevreden gebruikers en een samenvatting van een onafhankelijk onderzoek met 2000 deelnemers."
+       },
+       {
+        "v": "Hoe beoordeel je deze bron het best?",
+        "o": [
+         "als volledig betrouwbaar, want een diëtist is een deskundige",
+         "als onbetrouwbaar, want zuivel is gewoon slecht",
+         "met voorzichtigheid, want de afzender heeft belang bij het advies",
+         "als betrouwbaar, omdat het artikel op internet staat en dus gecontroleerd is"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Een afzender met een belang beoordeel je voorzichtig en controleer je met een andere bron.",
+        "uo": [
+         "Koos je \"als volledig betrouwbaar, want een diëtist is een...\"? Dan denk je dat deskundigheid genoeg is. Een deskundige kan ook belangen hebben, en dan controleer je het advies met een onafhankelijke bron.",
+         "Koos je \"als onbetrouwbaar, want zuivel is gewoon slecht\"? Dan denk je dat de bron meteen af te schrijven is. Het advies kan kloppen; je weegt het alleen voorzichtig en zoekt bevestiging bij een andere bron.",
+         "Klopt: de afzender heeft een commercieel belang, dus je zoekt een tweede, onafhankelijke bron.",
+         "Koos je \"als betrouwbaar, omdat het artikel op internet...\"? Dan denk je dat een publicatie automatisch controle betekent. Iedereen kan publiceren, dus je beoordeelt afzender en belang zelf."
+        ],
+        "uh": "Afzender, belang, controleren.",
+        "ctx": "Een artikel over voedsel is geschreven door een diëtist die in dienst is van een zuivelfabrikant. Het artikel adviseert elke dag drie glazen melk."
+       },
+       {
+        "v": "Wat is verstandiger?",
+        "o": [
+         "de vier zinnen letterlijk overnemen en er niets over zeggen",
+         "de vier zinnen overnemen zonder aanhalingstekens omdat het toch bekend materiaal is",
+         "de kern in eigen woorden weergeven en een korte passage citeren, met bron",
+         "de passage helemaal weglaten, want citeren mag nooit"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Gebruik een citaat kort en voor nadruk, de rest in eigen woorden met bron.",
+        "uo": [
+         "Koos je \"de vier zinnen letterlijk overnemen en er niets...\"? Dan denk je dat een citaat voor zich spreekt. Een lang citaat zonder eigen toelichting laat zien dat de schrijver zelf niets maakt, en het verdringt je eigen betoog.",
+         "Koos je \"de vier zinnen overnemen zonder aanhalingstekens...\"? Dan denk je dat bekende tekst vrij is. Zonder aanhalingstekens en bron is het plagiaat, ook als de tekst algemeen bekend is.",
+         "Klopt: een betoog heeft eigen woorden nodig; een kort citaat benadrukt iets, terwijl lange passages je eigen tekst verdringen.",
+         "Koos je \"de passage helemaal weglaten, want citeren mag nooit\"? Dan denk je dat citeren verboden is. Citeren mag wel, met aanhalingstekens en bron; het is alleen beter om kort te citeren en de rest te herschrijven."
+        ],
+        "uh": "Kort citeren, rest herschrijven.",
+        "ctx": "Een leerling wil in zijn betoog een lange passage uit een artikel gebruiken. Het gaat om vier zinnen die hij heel goed vindt."
+       },
+       {
+        "v": "Wat ontbreekt?",
+        "o": [
+         "aanhalingstekens, want het is een citaat",
+         "een eigen mening over de uitkomst van het onderzoek",
+         "niets, want de zin is al in eigen woorden geschreven",
+         "een bronvermelding van het onderzoek"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Ook een eigen formulering van een bewering uit een bron krijgt een bronvermelding.",
+        "uo": [
+         "Koos je \"aanhalingstekens, want het is een citaat\"? Dan denk je dat dit een citaat is. Het is een samenvatting in eigen woorden; aanhalingstekens horen bij letterlijke overname, dus de bron ontbreekt.",
+         "Koos je \"een eigen mening over de uitkomst van het onderzoek\"? Dan denk je dat een mening nodig is. Het gaat om de herkomst van de bewering, niet om een mening van de schrijver.",
+         "Koos je \"niets, want de zin is al in eigen woorden geschreven\"? Dan denk je dat eigen woorden de bron overbodig maken. De bewering komt uit een onderzoek, dus de bron moet erbij, ook zonder citaat.",
+         "Klopt: de inhoud is goed herformuleerd, maar zonder bron kan de lezer niet nagaan waar de bewering vandaan komt."
+        ],
+        "uh": "Parafrase = bron.",
+        "ctx": "Een leerling vat een nieuwsbericht samen: \"Volgens het onderzoek van de universiteit eten jongeren minder groente dan tien jaar geleden.\" Hij schrijft: Jongeren eten de laatste jaren minder groenten."
+       },
+       {
+        "v": "Waarom is deze bronvermelding onvoldoende?",
+        "o": [
+         "de lezer kan de bron niet terugvinden",
+         "omdat het jaartal te vaag is voor een website",
+         "omdat \"internet\" geen echte bron is maar een plek",
+         "omdat de bron niet in het Engels is geschreven"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Een bronvermelding moet genoeg gegevens bevatten om de bron terug te vinden.",
+        "uo": [
+         "Klopt: er ontbreken auteur of afzender, titel en webadres, dus niemand kan de bron controleren.",
+         "Koos je \"omdat het jaartal te vaag is voor een website\"? Dan denk je dat het jaartal het enige probleem is. Het jaartal is aanwezig; wat mist is de afzender, de titel en het webadres, zodat de bron niet is terug te vinden.",
+         "Koos je \"omdat internet geen echte bron is maar een plek\"? Dan denk je dat het woord internet de fout is. Dat klopt gedeeltelijk, maar het echte probleem is dat een lezer met deze gegevens de bron niet kan vinden.",
+         "Koos je \"omdat de bron niet in het Engels is geschreven\"? Dan denk je dat de taal een rol speelt. De taal doet niet ter zake; het gaat om de ontbrekende gegevens waarmee je de bron terugvindt."
+        ],
+        "uh": "Terugvindbaar.",
+        "ctx": "Een leerling noteert de bron als: \"internet, 2024\"."
+       },
+       {
+        "v": "Wat is de juiste conclusie over de tweede leerling?",
+        "o": [
+         "niets, want hij was eerlijk tegen de docent",
+         "hij pleegde plagiaat als hij de bron niet vermeldt",
+         "niets, want hij schreef het niet over van een boek",
+         "niets, want de eerste leerling heeft het ook gedaan"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Plagiaat is overnemen zonder bron, ook als je het later toegeeft.",
+        "uo": [
+         "Koos je \"niets, want hij was eerlijk tegen de docent\"? Dan denk je dat eerlijk zijn nadat het gebeurd is plagiaat ongedaan maakt. De bronvermelding moet in het werkstuk staan, niet alleen in een gesprek erna.",
+         "Klopt: zonder bronvermelding is overgenomen tekst plagiaat, ook als hij eerlijk zegt waar hij het vandaan heeft.",
+         "Koos je \"niets, want hij schreef het niet over van een boek\"? Dan denk je dat het soort bron bepaalt of er plagiaat is. Het geldt voor elke bron, dus ook voor een website.",
+         "Koos je \"niets, want de eerste leerling heeft het ook gedaan\"? Dan denk je dat andermans fout jouw fout goedmaakt. Elke leerling is zelf verantwoordelijk, en overnemen zonder bron blijft plagiaat."
+        ],
+        "uh": "Bron in het werkstuk.",
+        "ctx": "Twee leerlingen leveren bijna gelijke werkstukken in. De ene zegt dat hij alles zelf geschreven heeft, de andere dat hij het van een website heeft gehaald."
+       },
+       {
+        "v": "Welke vraag helpt het meest om de betrouwbaarheid van een bron te beoordelen?",
+        "o": [
+         "hoe mooi is de website vormgegeven met kleuren en foto's?",
+         "hoeveel mensen hebben de pagina geliket?",
+         "hoe lang is de tekst op de pagina in woorden?",
+         "wie heeft dit geschreven en waarom?"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Vraag naar afzender, doel en onderbouwing.",
+        "uo": [
+         "Koos je \"hoe mooi is de website vormgegeven met kleuren en...\"? Dan denk je dat het uiterlijk iets zegt over de juistheid. Een mooie site kan onbetrouwbaar zijn; de afzender en het doel zijn veel belangrijker.",
+         "Koos je \"hoeveel mensen hebben de pagina geliket?\"? Dan denk je dat populariteit bewijs is. Likes zeggen weinig over de juistheid, en veel gedeelde onzin blijft onzin.",
+         "Koos je \"hoe lang is de tekst op de pagina in woorden?\"? Dan denk je dat lengte een maat voor kwaliteit is. Een lange tekst kan ook onjuist zijn; je beoordeelt afzender en doel.",
+         "Klopt: afzender en doel laten zien of een bron deskundig en onafhankelijk is."
+        ],
+        "uh": "Wie en waarom."
+       },
+       {
+        "v": "Hoe werkt deze verwijzing?",
+        "o": [
+         "de verwijzing in de tekst koppelt aan de volledige gegevens in de lijst",
+         "de verwijzing hoeft niet te kloppen met de lijst, want de lijst staat los van de tekst",
+         "de verwijzing in de tekst is overbodig, want de lijst vermeldt Jansen al",
+         "de verwijzing noemt alleen de eerste letter van de auteur zodat hij kort blijft"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Verwijzing in de tekst en volledige vermelding in de lijst horen bij elkaar.",
+        "uo": [
+         "Klopt: auteur en jaar in de tekst wijzen naar de volledige bronvermelding in de bronnenlijst.",
+         "Koos je \"de verwijzing hoeft niet te kloppen met de lijst,...\"? Dan denk je dat de twee onafhankelijk zijn. De verwijzing in de tekst en de lijst horen bij elkaar, zodat een lezer van Jansen (2022) naar de volledige bron kan.",
+         "Koos je \"de verwijzing in de tekst is overbodig, want de...\"? Dan denk je dat de lijst genoeg is. Zonder verwijzing weet de lezer niet welke bewering uit welke bron komt, dus je hebt beide nodig.",
+         "Koos je \"de verwijzing noemt alleen de eerste letter van de...\"? Dan denk je dat een afgekorte naam volstaat. Een verwijzing moet de bron eenduidig aanwijzen, dus een achternaam met jaartal is minimaal."
+        ],
+        "uh": "Tekst en lijst koppelen.",
+        "ctx": "Een leerling schrijft: \"Volgens Jansen (2022) is overstappen op de fiets goed voor de gezondheid\" en zet Jansen in de bronnenlijst."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zoekt cijfers over fietsgebruik. Hij vindt een rapport van een statistiekbureau en het blog van een fietsenwinkel.",
+        "v": "Welke bron gebruikt hij het best voor de cijfers en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het rapport van het statistiekbureau (1 punt), want die bron heeft de cijfers volgens een vaste werkwijze verzameld en geen verkoopbelang, terwijl de winkel er belang bij heeft om fietsen te verkopen (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Bron: \"Veel jongeren slapen te weinig, omdat zij voor het slapengaan nog lang naar hun schermen kijken.\" Een leerling schrijft: Alle jongeren slapen te weinig door hun schermen.",
+        "v": "Waarom is dit geen goede parafrase?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De betekenis is veranderd: \"veel jongeren\" is \"alle jongeren\" geworden (1 punt). Een parafrase moet de bewering van de bron eerlijk weergeven, zonder sterker of zwakker te maken (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling neemt een alinea van een website over, verandert twee woorden en vermeldt geen bron.",
+        "v": "Leg uit waarom dit plagiaat is en wat hij had moeten doen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij presenteert andermans tekst als zijn eigen werk (1 punt). Hij had de alinea in eigen woorden en eigen zinsbouw moeten weergeven met bronvermelding, of kort moeten citeren met aanhalingstekens en bron (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling noteert als bron: \"internet, 2024\".",
+        "v": "Waarom is dit onvoldoende en welke gegevens moeten er minimaal bij?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De lezer kan de bron niet terugvinden (1 punt). Minimaal nodig zijn auteur of organisatie, titel, datum en webadres (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling gebruikt een idee uit een artikel in eigen woorden en noemt het artikel niet. Hij zegt dat het mag, omdat de zinnen van hem zijn.",
+        "v": "Is zijn redenering juist? Leg uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Nee (1 punt). Ook een overgenomen idee komt van de bedenker, dus je moet de bron noemen, ook als de woorden van jou zijn (1 punt)."
+       }
+      ]
+     },
+     {
+      "id": "C2",
+      "lo": "nl.C.2",
+      "gs": 2,
+      "naam": "Tekstsoort, doel en lezersgroep afstemmen",
+      "beschrijving": "Je kiest bij een schrijfopdracht de juiste tekstsoort (uiteenzetting, beschouwing of betoog) en stemt inhoud en taal af op doel en lezers.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Doel van een tekst bepalen",
+       "Uiteenzetting",
+       "Beschouwing",
+       "Betoog",
+       "Lezersgroep en voorkennis",
+       "Register en toon"
+      ],
+      "sam": "Eerst bepaal je het doel van je tekst: informeren, overtuigen of overwegen. Daarbij hoort een tekstsoort: een uiteenzetting legt iets uit, een betoog verdedigt een stelling met argumenten en een beschouwing weegt meerdere kanten af. Daarna stem je inhoud, woordkeus en toon af op de lezersgroep: wat weten ze al en welk register past?",
+      "begrippen": [
+       {
+        "t": "Tekstsoort",
+        "d": "Het type tekst dat past bij het doel: bijvoorbeeld uiteenzetting, beschouwing of betoog."
+       },
+       {
+        "t": "Doel",
+        "d": "Wat de schrijver met de tekst wil bereiken: informeren, overtuigen of overwegen."
+       },
+       {
+        "t": "Informeren",
+        "d": "De lezer iets uitleggen of laten weten."
+       },
+       {
+        "t": "Overtuigen",
+        "d": "De lezer laten instemmen met een standpunt."
+       },
+       {
+        "t": "Uiteenzetting",
+        "d": "Een tekst die objectief iets uitlegt."
+       },
+       {
+        "t": "Beschouwing",
+        "d": "Een tekst die meerdere kanten van een onderwerp afweegt."
+       },
+       {
+        "t": "Betoog",
+        "d": "Een tekst die een stelling met argumenten verdedigt."
+       },
+       {
+        "t": "Stelling",
+        "d": "Het standpunt dat de schrijver verdedigt."
+       },
+       {
+        "t": "Lezersgroep",
+        "d": "De mensen voor wie de tekst bedoeld is."
+       },
+       {
+        "t": "Voorkennis",
+        "d": "Wat de lezers al weten over het onderwerp."
+       },
+       {
+        "t": "Register",
+        "d": "De mate van formeel of informeel taalgebruik."
+       },
+       {
+        "t": "Aanspreekvorm",
+        "d": "Hoe je de lezer aanspreekt, bijvoorbeeld met je of u."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Je schrijft een tekst om lezers iets uit te leggen over hoe zonnepanelen werken. Welk doel heeft de tekst?",
+        "o": [
+         "de lezer overtuigen dat hij zonnepanelen moet kopen en meteen moet bestellen",
+         "informeren",
+         "de lezer amuseren met een grappig verhaal over de zon en een dak vol panelen",
+         "de lezer laten nadenken over voor- en nadelen zonder iets uit te leggen"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een tekst die uitlegt hoe iets werkt heeft als doel te informeren.",
+        "uo": [
+         "Koos je \"de lezer overtuigen dat hij zonnepanelen moet kopen...\"? Dan denk je dat uitleggen en verkopen hetzelfde zijn. Wie overtuigt wil dat de lezer iets vindt of doet; hier gaat het alleen om uitleg, dus om informeren.",
+         "Klopt: je legt uit hoe iets werkt zonder dat je de lezer van een mening wilt overtuigen.",
+         "Koos je \"de lezer amuseren met een grappig verhaal over de...\"? Dan denk je dat vermaak het doel is. Een grappige toon kan, maar het doel van een uitleg blijft dat de lezer na afloop begrijpt hoe het werkt.",
+         "Koos je \"de lezer laten nadenken over voor- en nadelen...\"? Dan denk je dat overwegen het doel is. Daarvoor weeg je meerdere kanten af; een uitleg over de werking vraagt eerst om informatie."
+        ],
+        "uh": "Uitleggen is informeren."
+       },
+       {
+        "v": "Welk doel past bij een tekst die de lezer wil laten instemmen met een stelling?",
+        "o": [
+         "informeren, want de lezer moet de feiten kennen en verder niets",
+         "vermaken, want een tekst moet leuk zijn om gelezen te worden",
+         "instrueren, want de lezer krijgt stap voor stap te horen wat hij moet doen",
+         "overtuigen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Instemming met een stelling vraagt om overtuigen.",
+        "uo": [
+         "Koos je \"informeren, want de lezer moet de feiten kennen en...\"? Dan denk je dat feiten alleen genoeg zijn. Wie wil dat de lezer instemt, doet meer dan informeren; hij onderbouwt een standpunt met argumenten om te overtuigen.",
+         "Koos je \"vermaken, want een tekst moet leuk zijn om gelezen...\"? Dan denk je dat de lezer vooral geamuseerd moet worden. Vermaak kan helpen, maar het doel van instemming is overtuigen.",
+         "Koos je \"instrueren, want de lezer krijgt stap voor stap te...\"? Dan denk je dat een instructie hetzelfde is als overtuigen. Een instructie geeft handelingen aan; overtuigen draait om een standpunt en argumenten.",
+         "Klopt: wie een stelling wil laten delen, wil de lezer overtuigen met argumenten."
+        ],
+        "uh": "Standpunt + argumenten = overtuigen."
+       },
+       {
+        "v": "Welke tekstsoort legt iets uit zonder dat de schrijver zijn mening geeft?",
+        "o": [
+         "uiteenzetting",
+         "betoog, want daarin staan altijd veel feiten en cijfers",
+         "beschouwing, want daarin wordt elke vraag beantwoord met een duidelijke mening",
+         "een brief aan de krant, want die gaat altijd over feiten uit de actualiteit"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Een uiteenzetting informeert objectief; een betoog overtuigt.",
+        "uo": [
+         "Klopt: een uiteenzetting informeert en blijft objectief; de schrijver zegt niet wat hij ervan vindt.",
+         "Koos je \"betoog, want daarin staan altijd veel feiten en...\"? Dan denk je dat veel feiten een tekst tot een uiteenzetting maken. Een betoog gebruikt feiten maar verdedigt een stelling; de schrijver wil dus overtuigen en blijft niet neutraal.",
+         "Koos je \"beschouwing, want daarin wordt elke vraag...\"? Dan denk je dat een beschouwing een scherpe mening geeft. Een beschouwing weegt verschillende kanten af; de schrijver doet niet vooral uitleg over één onderwerp.",
+         "Koos je \"een brief aan de krant, want die gaat altijd over...\"? Dan denk je dat het medium de tekstsoort bepaalt. Een brief aan de krant is meestal een betoog; het doel van de schrijver bepaalt de tekstsoort."
+        ],
+        "uh": "Uitleg zonder mening = uiteenzetting."
+       },
+       {
+        "v": "Hoe herken je een betoog?",
+        "o": [
+         "de schrijver legt rustig uit hoe een proces werkt in een aantal stappen",
+         "de schrijver vertelt een verhaal met personages en een spannende afloop",
+         "de schrijver verdedigt een stelling met argumenten",
+         "de schrijver somt op wat anderen vinden, zonder zelf een standpunt in te nemen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Een betoog verdedigt een stelling met argumenten.",
+        "uo": [
+         "Koos je \"de schrijver legt rustig uit hoe een proces werkt...\"? Dan denk je dat uitleg een betoog is. Zo'n tekst informeert, terwijl een betoog een stelling verdedigt.",
+         "Koos je \"de schrijver vertelt een verhaal met personages en...\"? Dan denk je dat het verhaal het betoog is. Een verhaal vermaakt of vertelt; een betoog onderbouwt een mening met argumenten.",
+         "Klopt: een betoog bestaat uit een standpunt dat met argumenten wordt onderbouwd om de lezer te overtuigen.",
+         "Koos je \"de schrijver somt op wat anderen vinden, zonder...\"? Dan denk je dat dit een betoog is. Wie alleen weergeeft wat anderen vinden, informeert of overweegt, maar overtuigt niet; een betoog neemt zelf stelling."
+        ],
+        "uh": "Stelling + argumenten."
+       },
+       {
+        "v": "Hoe verschilt een beschouwing van een betoog?",
+        "o": [
+         "een beschouwing is altijd langer dan een betoog en bevat meer cijfers",
+         "een beschouwing geeft alleen feiten en een betoog alleen meningen",
+         "een beschouwing weegt meerdere kanten af en een betoog verdedigt één stelling",
+         "een beschouwing is voor jonge lezers en een betoog voor volwassenen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Beschouwing = afwegen van meerdere kanten, betoog = één stelling verdedigen.",
+        "uo": [
+         "Koos je \"een beschouwing is altijd langer dan een betoog en...\"? Dan denk je dat het verschil in lengte zit. Lengte maakt geen tekstsoort; het gaat om het doel: afwegen of overtuigen.",
+         "Koos je \"een beschouwing geeft alleen feiten en een betoog...\"? Dan denk je dat het verschil is feiten tegenover meningen. Beide kunnen feiten én meningen bevatten; het verschil is de manier waarop ze met het onderwerp omgaan.",
+         "Klopt: een beschouwing overweegt, een betoog overtuigt van één standpunt.",
+         "Koos je \"een beschouwing is voor jonge lezers en een betoog...\"? Dan denk je dat de leeftijd van de lezer bepaalt wat het is. De lezersgroep beïnvloedt de taal, maar niet de tekstsoort; die volgt uit het doel."
+        ],
+        "uh": "Afwegen of verdedigen."
+       },
+       {
+        "v": "Welke tekstsoort is dit?",
+        "o": [
+         "beschouwing",
+         "betoog, want de tekst gaat over een omstreden onderwerp",
+         "uiteenzetting, want er worden voor- en nadelen genoemd met uitleg",
+         "reclametekst, want de schrijver stelt een vraag aan de lezer"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Wie voor- en nadelen afweegt zonder een kant te kiezen, schrijft een beschouwing.",
+        "uo": [
+         "Klopt: de schrijver weegt voor- en nadelen af en kiest geen vaste kant.",
+         "Koos je \"betoog, want de tekst gaat over een omstreden...\"? Dan denk je dat een omstreden onderwerp automatisch een betoog oplevert. In een betoog verdedigt de schrijver één kant; hier weegt de schrijver beide kanten af.",
+         "Koos je \"uiteenzetting, want er worden voor- en nadelen...\"? Dan denk je dat uitleg genoeg is voor een uiteenzetting. Een uiteenzetting legt iets uit; hier worden kanten tegen elkaar afgewogen, en dat is een beschouwing.",
+         "Koos je \"reclametekst, want de schrijver stelt een vraag aan...\"? Dan denk je dat een vraag aan de lezer reclame is. Een retorische vraag komt in veel teksten voor; het doel is hier overwegen en niet verkopen."
+        ],
+        "uh": "Afwegen = beschouwing.",
+        "ctx": "Een tekst begint met de vraag: \"Moet er een verbod komen op smartphones op school?\" De schrijver bespreekt voor- en nadelen en sluit af met de opmerking dat het afhangt van de situatie."
+       },
+       {
+        "v": "Welke tekstsoort is dit en waaraan zie je dat?",
+        "o": [
+         "een uiteenzetting, want de schrijver legt uit hoe smartphones werken",
+         "een beschouwing, want er worden drie punten genoemd naast elkaar",
+         "een verslag, want de tekst beschrijft wat er op school gebeurt",
+         "een betoog, want de schrijver neemt stelling en onderbouwt die"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Een stelling plus argumenten ter onderbouwing wijst op een betoog.",
+        "uo": [
+         "Koos je \"een uiteenzetting, want de schrijver legt uit hoe...\"? Dan denk je dat de tekst uitlegt hoe iets werkt. De tekst legt niet iets uit maar verdedigt een mening, dus het is een betoog.",
+         "Koos je \"een beschouwing, want er worden drie punten genoemd...\"? Dan denk je dat meerdere punten tot een beschouwing leiden. De punten zijn hier argumenten voor één kant; een beschouwing weegt kanten af, dit betoog kiest er één.",
+         "Koos je \"een verslag, want de tekst beschrijft wat er op...\"? Dan denk je dat de tekst beschrijft wat er gebeurd is. De tekst verdedigt een standpunt; daarom is het een betoog.",
+         "Klopt: de eerste zin is een stelling en de rest bestaat uit argumenten ter onderbouwing."
+        ],
+        "uh": "Stelling + argumenten.",
+        "ctx": "Een tekst luidt: \"Smartphones horen niet op school thuis. Ze leiden af, ze zorgen voor pestgedrag en ze maken leerlingen minder sociaal.\" De tekst gaat dan verder met drie uitgewerkte argumenten."
+       },
+       {
+        "v": "Welk probleem heeft de tekst als de opdracht een beschouwing was?",
+        "o": [
+         "de leerling noemt zowel voordelen als nadelen, wat niet mag in een beschouwing",
+         "de slotalinea kiest ineens één kant, terwijl een beschouwing afweegt",
+         "de tekst is te kort voor een beschouwing, wat altijd minstens twee pagina's moet zijn",
+         "de leerling noemt geen cijfers, terwijl een beschouwing altijd cijfers bevat"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Een beschouwing sluit af met een afweging, niet met een scherpe stelling.",
+        "uo": [
+         "Koos je \"de leerling noemt zowel voordelen als nadelen, wat...\"? Dan denk je dat het noemen van beide kanten fout is. Dat hoort juist bij een beschouwing; het probleem zit in de scherpe slotstelling.",
+         "Klopt: een beschouwing mag een voorzichtige afweging maken, maar niet eindigen als een scherpe stelling.",
+         "Koos je \"de tekst is te kort voor een beschouwing, wat...\"? Dan denk je dat er een vaste lengte voor een beschouwing is. Een beschouwing hangt niet af van een aantal bladzijden; het gaat om de afweging.",
+         "Koos je \"de leerling noemt geen cijfers, terwijl een...\"? Dan denk je dat cijfers verplicht zijn. Cijfers kunnen helpen, maar zijn geen kenmerk van de tekstsoort."
+        ],
+        "uh": "Afwegen, niet beslissen.",
+        "ctx": "Een leerling schrijft een tekst over verplichte uniformen. Hij noemt eerst voordelen en daarna nadelen. In de slotalinea schrijft hij: \"Uniformen zijn dus gewoon een slecht idee en moeten verdwijnen.\""
+       },
+       {
+        "v": "Waarom stem je een tekst af op de lezersgroep?",
+        "o": [
+         "omdat een tekst anders niet langer kan worden dan een halve pagina",
+         "omdat docenten bij elke tekst controleren of je de lezersgroep hebt genoemd",
+         "omdat alleen volwassenen mogen lezen wat er in een tekst staat",
+         "de tekst moet begrijpelijk zijn en passen bij wat de lezers weten"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Een tekst stem je af op de lezersgroep zodat hij begrijpelijk is en aansluit.",
+        "uo": [
+         "Koos je \"omdat een tekst anders niet langer kan worden dan...\"? Dan denk je dat het om lengte gaat. Lengte heeft niets met de lezersgroep te maken; het gaat om begrijpelijkheid en aansluiting.",
+         "Koos je \"omdat docenten bij elke tekst controleren of je de...\"? Dan denk je dat het een formaliteit is. De lezersgroep bepaalt echt hoe je schrijft, en zorgt dat de lezer de tekst begrijpt.",
+         "Koos je \"omdat alleen volwassenen mogen lezen wat er in een...\"? Dan denk je dat er leeftijdsregels zijn voor lezen. Elke groep leest, maar je past je tekst aan op wat zij weten en willen.",
+         "Klopt: je kiest woorden en voorbeelden die bij de kennis en belangstelling van de lezers passen."
+        ],
+        "uh": "Schrijf voor je lezer."
+       },
+       {
+        "v": "Welke formulering past het best?",
+        "o": [
+         "Het myocard verricht pompfuncties door ritmische contracties van de hartspiercellen.",
+         "Je hart is een spier die bloed door je lichaam pompt.",
+         "Het hart is een orgaan dat via een systeem van kleppen en kamers circulatie van bloed bewerkstelligt.",
+         "Kinderen, luister goed: je hart is wel supersnel en supergaaf, echt hoor!"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Voor jonge lezers kies je korte, concrete zinnen zonder vaktaal.",
+        "uo": [
+         "Koos je \"Het myocard verricht pompfuncties door ritmische...\"? Dan gebruikt vaktaal die tienjarigen niet kennen. Wie zo schrijft houdt geen rekening met de lezer, en kinderen haken af.",
+         "Klopt: een korte, concrete zin zonder vakwoorden is begrijpelijk voor kinderen.",
+         "Koos je \"Het hart is een orgaan dat via een systeem van...\"? Dan is te abstract en vol moeilijke woorden voor een kind. Je moet aansluiten bij de kennis van de lezers, en dat doet deze zin niet.",
+         "Koos je \"Kinderen, luister goed: je hart is wel supersnel en...\"? Dan probeert op kinderen te lijken, maar zegt niets over de werking. Een goede formulering is vooral duidelijk, niet alleen vrolijk."
+        ],
+        "uh": "Eenvoudig en concreet.",
+        "ctx": "Een tekst over de werking van het hart is bedoeld voor kinderen van tien."
+       },
+       {
+        "v": "Welke aanhef past het best?",
+        "o": [
+         "Hoi Bakker!",
+         "Yo meneer!",
+         "Geachte heer Bakker,",
+         "Aan wie het maar wil lezen,"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Een formele brief begint met een passende aanhef.",
+        "uo": [
+         "Koos je \"Hoi Bakker!\"? Dan is te informeel voor een brief aan een directeur. Het register past niet bij de lezer, en kan onbeleefd overkomen.",
+         "Koos je \"Yo meneer!\"? Dan is spreektaal en past niet in een schriftelijke formele brief. Je past je taal aan op de lezer, en dit maakt de brief minder serieus.",
+         "Klopt: tegen een directeur gebruik je een formele aanspreekvorm.",
+         "Koos je \"Aan wie het maar wil lezen,\"? Dan richt je tot niemand in het bijzonder, terwijl je de directeur kent. Een brief heeft een duidelijke geadresseerde, en deze aanhef is onpersoonlijk."
+        ],
+        "uh": "Formeel voor een directeur.",
+        "ctx": "Een leerling schrijft een brief aan de directeur van de school over een nieuw rooster."
+       },
+       {
+        "v": "Welke aanpassing hoort bij het artikel voor de artsen?",
+        "o": [
+         "vakwoorden gebruiken en onderzoeksresultaten noemen",
+         "alles in korte zinnen en met een grap schrijven, zodat het leuk blijft",
+         "vakwoorden vermijden en alleen over persoonlijke ervaringen schrijven",
+         "de tekst korter maken, omdat artsen minder tijd hebben dan brugklassers"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Kies taal en inhoud die bij de kennis van de lezersgroep passen.",
+        "uo": [
+         "Klopt: artsen verwachten vaktaal en verantwoorde onderzoeksresultaten.",
+         "Koos je \"alles in korte zinnen en met een grap schrijven,...\"? Dan denk je dat de aanpak voor brugklassers ook voor artsen werkt. Artsen verwachten vakkennis en bronnen, dus een grappige toon past hier minder.",
+         "Koos je \"vakwoorden vermijden en alleen over persoonlijke...\"? Dan denk je dat artsen eenvoudige taal willen. Vakwoorden zijn voor hen juist normaal, en ervaringen zijn minder bewijskrachtig dan onderzoek.",
+         "Koos je \"de tekst korter maken, omdat artsen minder tijd...\"? Dan denk je dat lengte het verschil maakt. De aanpassing zit in taal en inhoud, niet alleen in het aantal woorden."
+        ],
+        "uh": "Aansluiten op de lezer.",
+        "ctx": "Een leerling schrijft voor twee lezersgroepen over hetzelfde onderwerp, de gevaren van te weinig slaap: een artikel voor een schoolkrant van brugklassers en een artikel voor een tijdschrift voor artsen."
+       },
+       {
+        "v": "Wat past bij een formeel register?",
+        "o": [
+         "volledige zinnen en geen straattaal of afkortingen",
+         "korte kreten en veel afkortingen zoals \"idd\" en \"btw\" zonder uitleg",
+         "woorden als \"gozer\" en \"dope\" om de lezer te laten lachen",
+         "zinnen die beginnen met \"ja, dus\" zoals je ze zou zeggen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Een formeel register is volledig en correct, zonder spreektaal.",
+        "uo": [
+         "Klopt: formeel taalgebruik is correct, volledig en vermijdt spreektaal.",
+         "Koos je \"korte kreten en veel afkortingen zoals idd en btw...\"? Dan denk je dat kort altijd past. Afkortingen zoals \"idd\" zijn informeel; een formeel register gebruikt volledige woorden.",
+         "Koos je \"woorden als gozer en dope om de lezer te laten...\"? Dan denk je dat straattaal formeel kan zijn. Straattaal is informeel en past niet bij een formele lezer, dus je laat die weg.",
+         "Koos je \"zinnen die beginnen met ja, dus zoals je ze zou...\"? Dan denk je dat spreektaal ook in een formele tekst kan. Spreektaal heeft daar geen plek; schrijftaal heeft een verzorgde zinsbouw."
+        ],
+        "uh": "Formeel = verzorgd."
+       },
+       {
+        "v": "Wat past niet bij het doel en de lezer van deze brief?",
+        "o": [
+         "de leerling noemt dat hij graag wil werken, wat in een brief nooit mag",
+         "de leerling schrijft in de ik-vorm, terwijl een brief altijd in de wij-vorm hoort",
+         "de informele woorden \"echt gaaf\" in een formele brief",
+         "de leerling gebruikt het woord \"jullie\", dat in een brief verboden is"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "In een formele brief gebruik je geen spreektaal en motiveer je concreet.",
+        "uo": [
+         "Koos je \"de leerling noemt dat hij graag wil werken, wat in...\"? Dan denk je dat motivatie niet mag. Motivatie hoort in een sollicitatiebrief; het probleem zit in de manier waarop de leerling het zegt.",
+         "Koos je \"de leerling schrijft in de ik-vorm, terwijl een...\"? Dan denk je dat de ik-vorm niet mag. In een sollicitatiebrief is ik juist normaal; het register is het probleem.",
+         "Klopt: een sollicitatiebrief vraagt een formeel register en een onderbouwde motivatie.",
+         "Koos je \"de leerling gebruikt het woord jullie, dat in een...\"? Dan denk je dat dit woord verboden is. Het woord op zich is niet fout, de losse, informele toon wel."
+        ],
+        "uh": "Register en motivatie.",
+        "ctx": "Een leerling schrijft in een sollicitatiebrief: \"Ik wil echt wel bij jullie werken, want jullie zijn echt gaaf.\""
+       },
+       {
+        "v": "Welke tekstsoort kiest hij en waarom?",
+        "o": [
+         "betoog, want hij moet leerlingen laten zien dat het rooster goed is",
+         "uiteenzetting, want hij legt iets uit zonder te overtuigen",
+         "beschouwing, want hij moet de voor- en nadelen van het rooster afwegen",
+         "reclametekst, want hij wil dat leerlingen enthousiast worden over het rooster"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Wie uitlegt hoe iets werkt schrijft een uiteenzetting.",
+        "uo": [
+         "Koos je \"betoog, want hij moet leerlingen laten zien dat het...\"? Dan denk je dat hij het rooster moet verdedigen. Hij moet alleen uitleggen hoe het tot stand komt, dus een betoog past niet bij de opdracht.",
+         "Klopt: het doel is informeren, dus een uiteenzetting past.",
+         "Koos je \"beschouwing, want hij moet de voor- en nadelen van...\"? Dan denk je dat afwegen gevraagd wordt. De opdracht vraagt om uitleg; dat is een uiteenzetting.",
+         "Koos je \"reclametekst, want hij wil dat leerlingen...\"? Dan denk je dat het om reclame gaat. Het doel is informeren; enthousiasme is niet de opdracht."
+        ],
+        "uh": "Uitleg = uiteenzetting.",
+        "ctx": "Een leerling moet een tekst schrijven waarin hij leerlingen uitlegt hoe het rooster op school tot stand komt."
+       },
+       {
+        "v": "Welke tekstsoort en welk doel horen bij deze opdracht?",
+        "o": [
+         "uiteenzetting, met het doel de lezer te informeren over fietsroutes",
+         "beschouwing, met het doel de lezer te laten nadenken over voor- en nadelen",
+         "reportage, met het doel te vertellen wat je op de fiets hebt gezien",
+         "betoog, met het doel te overtuigen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Wie moet overtuigen schrijft een betoog.",
+        "uo": [
+         "Koos je \"uiteenzetting, met het doel de lezer te informeren...\"? Dan denk je dat informeren gevraagd wordt. De opdracht vraagt overtuigen, en dat past bij een betoog.",
+         "Koos je \"beschouwing, met het doel de lezer te laten...\"? Dan denk je dat de opdracht om afwegen vraagt. Je moet overtuigen van één kant, dus een beschouwing is te neutraal.",
+         "Koos je \"reportage, met het doel te vertellen wat je op de...\"? Dan denk je dat een verhaal gevraagd wordt. De opdracht wil overtuigen, en een reportage vertelt alleen wat je zag.",
+         "Klopt: de opdracht vraagt om overtuigen, dus een betoog met stelling en argumenten."
+        ],
+        "uh": "Overtuigen = betoog.",
+        "ctx": "Een opdracht luidt: \"Schrijf een tekst waarin je de lezers overtuigt om vaker de fiets te nemen.\""
+       },
+       {
+        "v": "Welke tekst past bij een betoog en welke bij een beschouwing?",
+        "o": [
+         "de eerste is een beschouwing en de tweede een betoog",
+         "de eerste is een betoog en de tweede een beschouwing",
+         "allebei zijn een betoog, want ze gaan over statiegeld",
+         "allebei zijn een uiteenzetting, want ze noemen feiten"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Stelling nemen is een betoog; kanten afwegen is een beschouwing.",
+        "uo": [
+         "Koos je \"de eerste is een beschouwing en de tweede een betoog\"? Dan draai je het om. Wie stelling neemt en onderbouwt schrijft een betoog; wie kanten afweegt schrijft een beschouwing.",
+         "Klopt: de eerste neemt stelling met een argument, de tweede weegt kanten af.",
+         "Koos je \"allebei zijn een betoog, want ze gaan over...\"? Dan denk je dat het onderwerp de tekstsoort bepaalt. Het gaat om wat de schrijver doet, en de tweede overweegt zonder te kiezen.",
+         "Koos je \"allebei zijn een uiteenzetting, want ze noemen...\"? Dan denk je dat feiten genoeg zijn. Een uiteenzetting is neutraal; de eerste verdedigt een mening en de tweede overweegt."
+        ],
+        "uh": "Kies of weeg.",
+        "ctx": "Twee leerlingen krijgen dezelfde opdracht over statiegeld. De eerste schrijft: \"Statiegeld op blikjes werkt omdat 95 procent wordt teruggebracht.\" De tweede schrijft: \"Voor statiegeld zijn argumenten, maar ook bezwaren; het is dus afhankelijk van hoe je het regelt.\""
+       },
+       {
+        "v": "Welk signaalwoord past bij een beschouwing?",
+        "o": [
+         "aan de ene kant ... aan de andere kant",
+         "ik ben er daarom van overtuigd dat",
+         "stap 1, stap 2, stap 3",
+         "er was eens, in een land hier ver vandaan"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Een beschouwing gebruikt signalen van afwegen zoals \"aan de ene kant ... aan de andere kant\".",
+        "uo": [
+         "Klopt: dit signaal verbindt twee kanten die je afweegt.",
+         "Koos je \"ik ben er daarom van overtuigd dat\"? Dan denk je dat dit past bij afwegen. Deze zin neemt een standpunt in, en dat past bij een betoog.",
+         "Koos je \"stap 1, stap 2, stap 3\"? Dan denk je dat de stappen passen bij een beschouwing. Zo'n opsomming hoort bij een instructie of uiteenzetting; het is geen afweging.",
+         "Koos je \"er was eens, in een land hier ver vandaan\"? Dan denk je dat dit past bij een tekst met argumenten. Het is een verhalende opening; geen signaalwoord voor een beschouwing."
+        ],
+        "uh": "Twee kanten."
+       },
+       {
+        "v": "Waaruit bestaat een betoog in elk geval?",
+        "o": [
+         "een verhaal met een held en een slechterik",
+         "een lijst met afkortingen en hun betekenis",
+         "een reeks vragen zonder antwoord",
+         "een stelling met argumenten"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Een betoog heeft een stelling en argumenten.",
+        "uo": [
+         "Koos je \"een verhaal met een held en een slechterik\"? Dan denk je dat verhaalelementen een betoog vormen. Een verhaal vermaakt; een betoog onderbouwt een stelling.",
+         "Koos je \"een lijst met afkortingen en hun betekenis\"? Dan denk je dat uitleg een betoog is. Een lijst met afkortingen informeert, maar verdedigt geen standpunt.",
+         "Koos je \"een reeks vragen zonder antwoord\"? Dan denk je dat vragen een betoog opleveren. Een betoog geeft antwoord en argumenten; alleen vragen overtuigen niet.",
+         "Klopt: een betoog verdedigt een stelling met argumenten."
+        ],
+        "uh": "Stelling + argumenten."
+       },
+       {
+        "v": "Voor welke lezers past deze toon?",
+        "o": [
+         "voor de inspectie van het onderwijs, die de school beoordeelt",
+         "voor een juridisch document waarin een school een gebeurtenis beschrijft",
+         "voor medeleerlingen in een informele schoolkrant",
+         "voor een wetenschappelijk tijdschrift over sportpsychologie"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Informele taal past bij een informele lezersgroep.",
+        "uo": [
+         "Koos je \"voor de inspectie van het onderwijs, die de school...\"? Dan denk je dat de toon past bij een officiële beoordeling. Een inspectie verwacht een zakelijk register, dus deze toon is te los.",
+         "Koos je \"voor een juridisch document waarin een school een...\"? Dan denk je dat deze toon bij een juridische tekst past. Zo'n document is formeel en nauwkeurig, en deze tekst is dat niet.",
+         "Klopt: de toon is informeel en past bij lezers die jij kent en die dezelfde taal spreken.",
+         "Koos je \"voor een wetenschappelijk tijdschrift over...\"? Dan denk je dat de toon past bij vakpublicaties. Vakblad-lezers verwachten een zakelijk, precies register; deze toon is te informeel."
+        ],
+        "uh": "Toon past bij lezer.",
+        "ctx": "Een leerling schrijft voor een schoolkrant: \"Lekker bezig, jongens! Jullie hebben het toernooi zo gaaf gewonnen!\""
+       },
+       {
+        "v": "Welke zin past niet bij deze opdracht?",
+        "o": [
+         "Zonnepanelen zetten zonlicht om in elektriciteit.",
+         "Een zonnepaneel bestaat uit cellen van silicium.",
+         "Zonne-energie is de beste oplossing voor het klimaatprobleem.",
+         "De opgewekte stroom kan worden teruggeleverd aan het net."
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bij een uiteenzetting laat je meningen weg.",
+        "uo": [
+         "Koos je \"Zonnepanelen zetten zonlicht om in elektriciteit.\"? Dan past juist bij de opdracht. Dit is een uitleg zonder mening, en dus precies wat gevraagd wordt.",
+         "Koos je \"Een zonnepaneel bestaat uit cellen van silicium.\"? Dan past juist bij de opdracht. Het is een feit dat de werking toelicht, zonder iets te vinden.",
+         "Klopt: dit is een mening, terwijl de opdracht om informeren zonder mening vraagt.",
+         "Koos je \"De opgewekte stroom kan worden teruggeleverd aan...\"? Dan past juist bij de opdracht. Het is een neutrale uitleg, dus hier zit geen mening in."
+        ],
+        "uh": "Alleen uitleg.",
+        "ctx": "Een leerling moet een tekst over zonne-energie schrijven. De opdracht zegt: \"Informeer de lezers over de werking en laat je mening weg.\""
+       },
+       {
+        "v": "Hoe pas je taal aan voor lezers die weinig voorkennis hebben?",
+        "o": [
+         "juist meer vaktaal gebruiken, zodat de tekst deskundig overkomt",
+         "de tekst korter maken door minder uitleg te geven",
+         "de tekst in het Engels schrijven, want dat begrijpt iedereen",
+         "vaktaal uitleggen of vervangen door gewone woorden"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Leg vaktaal uit of vervang haar door gewone woorden.",
+        "uo": [
+         "Koos je \"juist meer vaktaal gebruiken, zodat de tekst...\"? Dan denk je dat vaktaal altijd goed is. Wie de woorden niet kent, begrijpt de tekst niet, dus je moet ze uitleggen of vervangen.",
+         "Koos je \"de tekst korter maken door minder uitleg te geven\"? Dan denk je dat korter altijd beter is. Wie weinig weet heeft juist meer uitleg nodig, dus korter kan juist onduidelijk worden.",
+         "Koos je \"de tekst in het Engels schrijven, want dat begrijpt...\"? Dan denk je dat Engels hulp biedt. De lezers lezen de tekst in hun eigen taal, en de moeilijkheid zit in de woorden, niet in de taal.",
+         "Klopt: wie weinig voorkennis heeft, begrijpt vaktaal niet, dus je legt uit of kiest gewone woorden."
+        ],
+        "uh": "Aansluiten op voorkennis."
+       },
+       {
+        "v": "Welke tekstsoort past hierbij het best?",
+        "o": [
+         "beschouwing",
+         "betoog, want de zin gaat over een stelling",
+         "uiteenzetting, want de zin noemt onderzoeken",
+         "instructie, want de zin gebruikt \"je zou kunnen\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Kanten naast elkaar zetten zonder conclusie wijst op een beschouwing.",
+        "uo": [
+         "Klopt: de schrijver legt standpunten naast elkaar zonder conclusie, typisch voor een beschouwing.",
+         "Koos je \"betoog, want de zin gaat over een stelling\"? Dan denk je dat het onderwerp stelling betekent. De schrijver neemt geen stelling, en dat is nodig voor een betoog.",
+         "Koos je \"uiteenzetting, want de zin noemt onderzoeken\"? Dan denk je dat het noemen van onderzoek een uiteenzetting maakt. Hier worden standpunten afgewogen, en dat is een beschouwing.",
+         "Koos je \"instructie, want de zin gebruikt je zou kunnen\"? Dan denk je dat \"je zou kunnen\" een opdracht is. Het is een voorzichtige formulering; geen instructie."
+        ],
+        "uh": "Geen conclusie = beschouwing.",
+        "ctx": "Een tekst bevat de zin: \"Je zou kunnen zeggen dat extra huiswerk helpt, maar er zijn ook onderzoeken die het tegendeel suggereren.\" De schrijver trekt geen conclusie."
+       },
+       {
+        "v": "Welke eigenschap van een betoog ontbreekt?",
+        "o": [
+         "een opsomming van voorbeelden aan het eind",
+         "een duidelijke stelling of conclusie",
+         "een vraag aan de lezer die hem uitnodigt na te denken",
+         "een uitleg over hoe iets werkt in drie stappen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Een betoog heeft een duidelijke stelling of conclusie.",
+        "uo": [
+         "Koos je \"een opsomming van voorbeelden aan het eind\"? Dan denk je dat voorbeelden aan het einde nodig zijn. Voorbeelden horen bij de argumenten; het ontbrekende element is de duidelijke conclusie.",
+         "Klopt: een betoog eindigt met een duidelijke stelling of conclusie.",
+         "Koos je \"een vraag aan de lezer die hem uitnodigt na te...\"? Dan denk je dat een vraag het slot van een betoog is. Een betoog sluit af met een stelling, niet met een open vraag.",
+         "Koos je \"een uitleg over hoe iets werkt in drie stappen\"? Dan denk je dat uitleg hier nodig is. Een betoog verdedigt een standpunt; een duidelijke conclusie ontbreekt."
+        ],
+        "uh": "Duidelijk slot.",
+        "ctx": "Een leerling schrijft een betoog en eindigt met: \"Dus misschien is het zo, maar misschien ook niet.\""
+       },
+       {
+        "v": "Past deze toon bij de lezer?",
+        "o": [
+         "nee, want elke schriftelijke boodschap moet in een formeel register staan",
+         "nee, want je moet de lezer altijd met \"u\" aanspreken in een bericht",
+         "nee, want een bericht moet minstens drie volledige zinnen bevatten",
+         "ja, een informele toon past bij een klasgenoot die je goed kent"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Het register hoort bij de lezer: bij een klasgenoot mag het informeel.",
+        "uo": [
+         "Koos je \"nee, want elke schriftelijke boodschap moet in een...\"? Dan denk je dat schrijven altijd formeel moet. Je past je register aan op de lezer; voor een klasgenoot mag het gewoon informeel.",
+         "Koos je \"nee, want je moet de lezer altijd met u aanspreken...\"? Dan denk je dat \"u\" altijd verplicht is. Tegen een klasgenoot is \"je\" gebruikelijk; de aanspreekvorm volgt de relatie met de lezer.",
+         "Koos je \"nee, want een bericht moet minstens drie volledige...\"? Dan denk je dat er een vast aantal zinnen nodig is. Een kort bericht aan een klasgenoot is prima; het register past bij de lezer.",
+         "Klopt: bij een klasgenoot is een informeel register gewoon en duidelijk."
+        ],
+        "uh": "Toon past bij lezer.",
+        "ctx": "Een leerling schrijft aan een klasgenoot via de klassenapp: \"Hey, heb je morgen je boek mee?\""
+       },
+       {
+        "v": "Wat is hier verstandig om aan te passen?",
+        "o": [
+         "de schoolwoorden kort uitleggen, want ouders kennen ze nog niet",
+         "de woorden weglaten, want ouders hoeven niets over school te weten",
+         "de folder in de ik-vorm herschrijven, want dat leest vlotter voor ouders",
+         "de folder korter maken, want ouders lezen liever weinig"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Leg vakwoorden uit aan lezers die ze niet kennen.",
+        "uo": [
+         "Klopt: ouders van brugklassers kennen deze termen niet, dus een korte uitleg sluit aan op hun voorkennis.",
+         "Koos je \"de woorden weglaten, want ouders hoeven niets over...\"? Dan denk je dat ouders geen uitleg nodig hebben. De folder is juist bedoeld om hen te informeren, dus je legt de belangrijke termen uit in plaats van ze te schrappen.",
+         "Koos je \"de folder in de ik-vorm herschrijven, want dat...\"? Dan denk je dat de vorm het probleem is. De moeilijkheid zit in de onbekende woorden; de aanspreekvorm lost dat niet op.",
+         "Koos je \"de folder korter maken, want ouders lezen liever...\"? Dan denk je dat korter altijd helpt. Zonder uitleg blijven de termen onbegrijpelijk; het gaat om aansluiten op wat ouders weten."
+        ],
+        "uh": "Uitleggen, niet schrappen.",
+        "ctx": "Een leerling schrijft een folder voor ouders van brugklassers over de eerste schoolweek. Hij gebruikt woorden als \"mentoruur\", \"studiewijzer\" en \"PTA\" zonder uitleg."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling krijgt de opdracht: \"Leg uit hoe het rooster op school wordt gemaakt.\"",
+        "v": "Welke tekstsoort past en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een uiteenzetting (1 punt), want het doel is informeren zonder dat de schrijver een mening verdedigt (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een tekst begint: \"Moet er een verbod komen op smartphones op school?\" De schrijver bespreekt voor- en nadelen en sluit af met: \"Het hangt af van de situatie.\"",
+        "v": "Welke tekstsoort is dit en hoe herken je dat?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een beschouwing (1 punt): de schrijver weegt meerdere kanten af en kiest geen scherpe kant (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft voor brugklassers een tekst over het hart met de zin: \"Het myocard verricht pompfuncties door ritmische contracties.\"",
+        "v": "Waarom past deze zin niet bij de lezersgroep en hoe kan het beter?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De zin bevat vaktaal die brugklassers niet kennen (1 punt). Beter: een eenvoudige zin zoals \"Je hart is een spier die bloed door je lichaam pompt\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft in een sollicitatiebrief: \"Ik wil echt wel bij jullie werken, want jullie zijn echt gaaf.\"",
+        "v": "Wat past niet bij het register van deze brief?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De informele woordkeus (\"echt gaaf\") en losse toon passen niet bij een formele brief (1 punt). Een brief vraagt een verzorgd register en een concrete motivatie (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling krijgt de opdracht: \"Overtuig de lezers om vaker de fiets te nemen.\"",
+        "v": "Welke tekstsoort kiest hij en wat moet er in elk geval in staan?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een betoog (1 punt) met een duidelijke stelling en argumenten die haar onderbouwen (1 punt)."
+       }
+      ]
+     },
+     {
+      "id": "C3",
+      "lo": "nl.C.3",
+      "gs": 2,
+      "naam": "Een betoog schrijven",
+      "beschrijving": "Je schrijft een betoog met een duidelijke stelling, onderbouwde argumenten, een reactie op een tegenwerping en een conclusie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Een stelling formuleren",
+       "Argumenten en onderbouwing",
+       "Tegenwerping en weerlegging",
+       "Opbouw van een betoog",
+       "Signaalwoorden",
+       "Conclusie en slot"
+      ],
+      "sam": "Een betoog begint met een duidelijke stelling (een standpunt, geen feit of vraag), onderbouwt die met argumenten (reden plus voorbeeld of bewijs), noemt de belangrijkste tegenwerping en weerlegt die inhoudelijk, en eindigt met een conclusie. Signaalwoorden als ten eerste, natuurlijk zal iemand zeggen dat en dus maken de opbouw zichtbaar.",
+      "begrippen": [
+       {
+        "t": "Betoog",
+        "d": "Een tekst die een stelling met argumenten verdedigt."
+       },
+       {
+        "t": "Stelling",
+        "d": "Het standpunt dat je verdedigt, waarover je van mening kunt verschillen."
+       },
+       {
+        "t": "Argument",
+        "d": "Een reden die de stelling onderbouwt."
+       },
+       {
+        "t": "Onderbouwing",
+        "d": "Het bewijs of voorbeeld dat een argument sterker maakt."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een concreet geval dat een argument ondersteunt."
+       },
+       {
+        "t": "Tegenwerping",
+        "d": "Een bezwaar tegen je stelling."
+       },
+       {
+        "t": "Weerlegging",
+        "d": "De inhoudelijke reactie op een tegenwerping."
+       },
+       {
+        "t": "Conclusie",
+        "d": "De slotsom die volgt uit je argumenten."
+       },
+       {
+        "t": "Inleiding",
+        "d": "Het begin van een betoog, met de stelling."
+       },
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord dat de opbouw of het verband aangeeft."
+       },
+       {
+        "t": "Persoonlijke aanval",
+        "d": "De persoon aanvallen in plaats van het argument."
+       },
+       {
+        "t": "Slot",
+        "d": "Het einde van een betoog met de conclusie."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke zin is een goede stelling voor een betoog?",
+        "o": [
+         "Energiedrankjes bevatten cafeïne, taurine en suiker in wisselende hoeveelheden.",
+         "Er moet een verbod komen op energiedrankjes voor kinderen onder de zestien.",
+         "Wat zijn de gevolgen van het drinken van energiedrankjes voor jongeren?",
+         "Dit betoog gaat over energiedrankjes, hun gevolgen en wat we ermee moeten."
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een stelling is een standpunt waarover je van mening kunt verschillen.",
+        "uo": [
+         "Koos je \"Energiedrankjes bevatten cafeïne, taurine en suiker...\"? Dan denk je dat een feit een stelling is. Over een feit kun je niet van mening verschillen, dus er valt niets te betogen.",
+         "Klopt: de zin is een standpunt waar je het mee eens of oneens kunt zijn en dat je kunt onderbouwen.",
+         "Koos je \"Wat zijn de gevolgen van het drinken van...\"? Dan denk je dat een vraag een stelling is. Een vraag neemt geen standpunt in, terwijl een betoog juist een standpunt verdedigt.",
+         "Koos je \"Dit betoog gaat over energiedrankjes, hun gevolgen...\"? Dan denk je dat een aankondiging van het onderwerp een stelling is. Zo'n zin zegt niet wat jij vindt, dus de lezer weet niet welk standpunt je verdedigt."
+        ],
+        "uh": "Standpunt, geen feit of vraag."
+       },
+       {
+        "v": "Waarom is \"De zon schijnt vandaag\" geen goede stelling voor een betoog?",
+        "o": [
+         "omdat de zin te kort is voor een betoog",
+         "omdat de zin over het weer gaat en dat is geen serieus onderwerp",
+         "omdat de zin niet met een hoofdletter begint",
+         "het is een feit en daar valt niets over te betogen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Een stelling bevat een standpunt, geen feit.",
+        "uo": [
+         "Koos je \"omdat de zin te kort is voor een betoog\"? Dan denk je dat lengte het probleem is. Ook een korte zin kan een goede stelling zijn; het probleem is dat er geen standpunt in zit.",
+         "Koos je \"omdat de zin over het weer gaat en dat is geen...\"? Dan denk je dat het onderwerp het probleem is. Elk onderwerp kan, mits er een standpunt in zit; hier ontbreekt dat.",
+         "Koos je \"omdat de zin niet met een hoofdletter begint\"? Dan denk je dat de spelling het probleem is. De zin is gewoon correct geschreven; het ontbreken van een standpunt maakt hem ongeschikt.",
+         "Klopt: een feit kun je controleren, maar je kunt er niet van mening over verschillen."
+        ],
+        "uh": "Mening, geen feit."
+       },
+       {
+        "v": "Waaraan moet een argument voldoen?",
+        "o": [
+         "het onderbouwt de stelling met een reden",
+         "het herhaalt de stelling in andere woorden",
+         "het vertelt iets over jezelf dat niets met het onderwerp te maken heeft",
+         "het is een vraag aan de lezer om zelf na te denken"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Een argument geeft een reden voor de stelling.",
+        "uo": [
+         "Klopt: een argument geeft een reden waarom de stelling zou moeten kloppen.",
+         "Koos je \"het herhaalt de stelling in andere woorden\"? Dan denk je dat herhalen onderbouwen is. Een herhaling geeft geen nieuwe reden, dus de stelling blijft onbewezen.",
+         "Koos je \"het vertelt iets over jezelf dat niets met het...\"? Dan denk je dat persoonlijke informatie een argument is. Een argument moet bij de stelling horen, en dit zegt niets over de stelling.",
+         "Koos je \"het is een vraag aan de lezer om zelf na te denken\"? Dan denk je dat een vraag een argument is. Een argument is een bewering met een reden, geen vraag."
+        ],
+        "uh": "Reden voor de stelling."
+       },
+       {
+        "v": "Welk argument ondersteunt deze stelling het best?",
+        "o": [
+         "Scholen beginnen nu al heel vroeg in de ochtend.",
+         "Ik ben altijd moe op maandag.",
+         "Tieners hebben een later slaapritme, dus ze zijn later op de dag alerter.",
+         "Later beginnen is gewoon beter."
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Een goed argument noemt een reden die de stelling onderbouwt.",
+        "uo": [
+         "Koos je \"Scholen beginnen nu al heel vroeg in de ochtend.\"? Dan denk je dat een beschrijving van de situatie een argument is. Dit is een feit zonder verklaring, en zegt niet waarom later beginnen beter zou zijn.",
+         "Koos je \"Ik ben altijd moe op maandag.\"? Dan denk je dat een persoonlijke ervaring genoeg is. Eén ervaring is zwak en zegt niets over alle leerlingen, en het is geen reden voor de stelling.",
+         "Klopt: het argument noemt een reden die direct bij de stelling past.",
+         "Koos je \"Later beginnen is gewoon beter.\"? Dan denk je dat dit een argument is. Het herhaalt de stelling, zonder een reden te geven."
+        ],
+        "uh": "Reden, geen herhaling.",
+        "ctx": "Stelling: \"Scholen moeten later beginnen.\""
+       },
+       {
+        "v": "Welk argument is een goede onderbouwing met een concreet voorbeeld?",
+        "o": [
+         "Fietsen is leuk en gezond.",
+         "Sommige mensen vinden fietsen niet fijn.",
+         "In steden met veel fietspaden stappen meer mensen op de fiets, zoals in Utrecht.",
+         "Nederland is een mooi land met veel water."
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Onderbouw een argument met een concreet voorbeeld of feit.",
+        "uo": [
+         "Koos je \"Fietsen is leuk en gezond.\"? Dan denk je dat dit een sterk argument is. De zin is te algemeen en geeft geen bewijs, dus het onderbouwt de stelling niet.",
+         "Koos je \"Sommige mensen vinden fietsen niet fijn.\"? Dan denk je dat dit een argument voor de stelling is. De zin gaat juist tegen de stelling in, dus het ondersteunt haar niet.",
+         "Klopt: een concreet voorbeeld laat zien dat de bewering klopt.",
+         "Koos je \"Nederland is een mooi land met veel water.\"? Dan denk je dat dit bij de stelling past. De zin gaat over iets anders, en geeft geen reden voor meer fietsinfrastructuur."
+        ],
+        "uh": "Voorbeeld maakt het sterk.",
+        "ctx": "Stelling: \"Er moet meer fietsinfrastructuur komen.\""
+       },
+       {
+        "v": "Wat is een tegenwerping?",
+        "o": [
+         "een bezwaar dat iemand tegen je stelling inbrengt",
+         "een argument dat je stelling steunt en haar sterker maakt voor de lezer",
+         "de conclusie van je betoog, die aan het einde de stelling bevestigt",
+         "de titel van je betoog"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Een tegenwerping is een bezwaar tegen je stelling.",
+        "uo": [
+         "Klopt: een tegenwerping is een bezwaar van een lezer tegen je stelling.",
+         "Koos je \"een argument dat je stelling steunt en haar sterker...\"? Dan denk je dat een tegenwerping je helpt. Zo'n zin steunt je stelling, terwijl een tegenwerping er tegenin gaat.",
+         "Koos je \"de conclusie van je betoog, die aan het einde de...\"? Dan denk je dat de tegenwerping aan het einde komt. De conclusie is jouw slotstelling; een tegenwerping komt van de andere kant.",
+         "Koos je \"de titel van je betoog\"? Dan denk je dat dit de naam van je tekst is. De titel noemt het onderwerp, terwijl een tegenwerping een bezwaar is."
+        ],
+        "uh": "Bezwaar van de ander."
+       },
+       {
+        "v": "Welke reactie is een goede weerlegging?",
+        "o": [
+         "Dat is niet waar, want niemand gebruikt zijn telefoon voor opdrachten.",
+         "Jij begrijpt er niets van, want je zit zelf de hele dag op je telefoon.",
+         "Mijn stelling klopt gewoon, dus je hebt ongelijk.",
+         "Voor opdrachten kan de school laptops of schooltablets aanbieden, zodat de telefoon niet nodig is."
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Weerleg een tegenwerping door er inhoudelijk op in te gaan.",
+        "uo": [
+         "Koos je \"Dat is niet waar, want niemand gebruikt zijn...\"? Dan denk je dat ontkennen een weerlegging is. Een bewering zonder bewijs overtuigt niet, en de tegenwerping is zeker voor sommige leerlingen waar.",
+         "Koos je \"Jij begrijpt er niets van, want je zit zelf de hele...\"? Dan denk je dat de persoon aanvallen helpt. Dat is een persoonlijke aanval en geen weerlegging, dus het argument blijft staan.",
+         "Koos je \"Mijn stelling klopt gewoon, dus je hebt ongelijk.\"? Dan denk je dat herhalen een reactie is. Je herhaalt je stelling, zonder in te gaan op het bezwaar.",
+         "Klopt: de reactie neemt het bezwaar serieus en geeft een alternatief."
+        ],
+        "uh": "Reageer op het bezwaar.",
+        "ctx": "Stelling: \"Mobiele telefoons moeten in de les verboden zijn.\" Een mogelijke tegenwerping: \"Leerlingen gebruiken hun telefoon ook voor opdrachten.\""
+       },
+       {
+        "v": "Wat kan hij verbeteren?",
+        "o": [
+         "de tegenwerping verzwijgen, zodat niemand het bezwaar bedenkt",
+         "de tegenwerping noemen en weerleggen",
+         "nog meer argumenten noemen, zonder op het bezwaar in te gaan",
+         "de stelling veranderen in een vraag, zodat niemand bezwaar maakt"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Noem de belangrijkste tegenwerping en weerleg die.",
+        "uo": [
+         "Koos je \"de tegenwerping verzwijgen, zodat niemand het...\"? Dan denk je dat negeren verstandig is. Lezers bedenken het bezwaar zelf, dus een betoog zonder weerlegging is minder overtuigend.",
+         "Klopt: een sterk betoog noemt de belangrijkste tegenwerping en weerlegt die.",
+         "Koos je \"nog meer argumenten noemen, zonder op het bezwaar...\"? Dan denk je dat meer argumenten het bezwaar oplossen. Het bezwaar blijft dan staan, dus je moet erop ingaan.",
+         "Koos je \"de stelling veranderen in een vraag, zodat niemand...\"? Dan denk je dat een vraag het bezwaar wegneemt. Een vraag is geen stelling en dan is er geen betoog meer, dus dit lost het probleem niet op."
+        ],
+        "uh": "Tegenwerping weerleggen.",
+        "ctx": "Een leerling schrijft een betoog voor een schooluniform. Hij noemt drie argumenten maar negeert dat sommige leerlingen een uniform beperkend vinden."
+       },
+       {
+        "v": "Uit welke delen bestaat een betoog meestal?",
+        "o": [
+         "een verhaal met een begin, een spannend midden en een einde",
+         "alleen een lijst met feiten zonder samenhang",
+         "een reeks vragen zonder antwoorden",
+         "inleiding met stelling, argumenten en een slot met conclusie"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Een betoog heeft een inleiding met stelling, argumenten en een conclusie.",
+        "uo": [
+         "Koos je \"een verhaal met een begin, een spannend midden en...\"? Dan denk je dat een betoog een verhaal is. Een betoog verdedigt een standpunt, en heeft een andere opbouw.",
+         "Koos je \"alleen een lijst met feiten zonder samenhang\"? Dan denk je dat feiten genoeg zijn. Een betoog verbindt de feiten aan een stelling, en heeft een duidelijke opbouw.",
+         "Koos je \"een reeks vragen zonder antwoorden\"? Dan denk je dat vragen een betoog vormen. Een betoog geeft antwoord op een vraag; het begint niet met losse vragen.",
+         "Klopt: een betoog begint met de stelling, onderbouwt die met argumenten en sluit af met een conclusie."
+        ],
+        "uh": "Stelling, argumenten, conclusie."
+       },
+       {
+        "v": "Welke plek past het best voor de stelling in een betoog?",
+        "o": [
+         "pas helemaal aan het einde, als verrassing",
+         "in de inleiding, zodat de lezer weet wat je verdedigt",
+         "in het midden, tussen twee argumenten in",
+         "nergens, want een betoog hoeft geen stelling te hebben"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Zet de stelling in de inleiding.",
+        "uo": [
+         "Koos je \"pas helemaal aan het einde, als verrassing\"? Dan denk je dat uitstel de spanning verhoogt. In een betoog wil de lezer weten waarover het gaat, dus de stelling hoort vooraan.",
+         "Klopt: de stelling hoort vooraan, zodat de lezer het standpunt kent voor hij de argumenten leest.",
+         "Koos je \"in het midden, tussen twee argumenten in\"? Dan denk je dat de plek er niet toe doet. Een stelling in het midden leidt tot verwarring, want de lezer weet dan niet wat bewezen moet worden.",
+         "Koos je \"nergens, want een betoog hoeft geen stelling te...\"? Dan denk je dat een stelling optioneel is. Zonder stelling is er niets om te onderbouwen, dus het is een essentieel onderdeel."
+        ],
+        "uh": "Stelling vooraan."
+       },
+       {
+        "v": "Welk element ontbreekt in de inleiding?",
+        "o": [
+         "een grappige zin om de aandacht te trekken",
+         "een tegenwerping tegen de stelling",
+         "een duidelijk geformuleerde eigen stelling",
+         "een lijst met bronnen waarop de schrijver zich in de tekst beroept"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Formuleer je eigen stelling duidelijk in de inleiding.",
+        "uo": [
+         "Koos je \"een grappige zin om de aandacht te trekken\"? Dan denk je dat humor verplicht is. Een betoog kan zonder grap, maar niet zonder duidelijke stelling.",
+         "Koos je \"een tegenwerping tegen de stelling\"? Dan denk je dat een tegenwerping in de inleiding hoort. Die komt later; de inleiding heeft een duidelijke stelling nodig.",
+         "Klopt: de schrijver zegt waar hij het niet mee eens is, maar niet wat zijn eigen stelling is.",
+         "Koos je \"een lijst met bronnen waarop de schrijver zich in...\"? Dan denk je dat bronnen in de inleiding horen. Bronnen komen bij het onderbouwen; de inleiding noemt de stelling."
+        ],
+        "uh": "Eigen stelling zeggen.",
+        "ctx": "Een leerling schrijft: \"Ik ben het niet eens met de stelling dat huiswerk nodig is.\" Daarna volgen drie argumenten."
+       },
+       {
+        "v": "Waarom is dit een zwak slot?",
+        "o": [
+         "er is geen conclusie die de stelling herhaalt of afrondt",
+         "het slot is te kort om af te ronden",
+         "het slot noemt een nieuw argument dat nog niet eerder aan bod kwam",
+         "het slot is te enthousiast over de stelling"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Een sterk slot bevestigt de stelling en trekt een conclusie.",
+        "uo": [
+         "Klopt: een slot moet de stelling bevestigen of de conclusie trekken, niet alleen melden dat het klaar is.",
+         "Koos je \"het slot is te kort om af te ronden\"? Dan denk je dat de lengte het probleem is. Een kort slot kan prima, maar het moet een conclusie bevatten.",
+         "Koos je \"het slot noemt een nieuw argument dat nog niet...\"? Dan denk je dat het nieuw argument het probleem is. In dit slot staat geen nieuw argument; het probleem is dat er geen conclusie staat.",
+         "Koos je \"het slot is te enthousiast over de stelling\"? Dan denk je dat enthousiasme het probleem is. Het slot is neutraal; het probleem is dat de stelling niet wordt bevestigd."
+        ],
+        "uh": "Conclusie trekken.",
+        "ctx": "Een betoog over het afschaffen van cijfers noemt drie argumenten, weerlegt één tegenwerping en eindigt met: \"Dit waren mijn argumenten.\""
+       },
+       {
+        "v": "Welk signaalwoord leidt een conclusie in?",
+        "o": [
+         "dus",
+         "bijvoorbeeld",
+         "maar",
+         "omdat"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Een conclusie leid je in met een woord als dus of daarom.",
+        "uo": [
+         "Klopt: \"dus\" trekt een conclusie uit wat eerder is gezegd.",
+         "Koos je \"bijvoorbeeld\"? Dan denk je dat dit een conclusie aankondigt. \"Bijvoorbeeld\" introduceert een voorbeeld, geen slotsom.",
+         "Koos je \"maar\"? Dan denk je dat dit een conclusie inleidt. \"Maar\" zet iets tegenover het voorgaande, en trekt geen slotsom.",
+         "Koos je \"omdat\"? Dan denk je dat dit een conclusie aankondigt. \"Omdat\" geeft een reden, geen gevolgtrekking."
+        ],
+        "uh": "Dus = conclusie."
+       },
+       {
+        "v": "Welk signaalwoord past bij het noemen van een tegenwerping?",
+        "o": [
+         "ten eerste, ten tweede en ten derde",
+         "kortom, samenvattend gezegd",
+         "natuurlijk zal iemand zeggen dat",
+         "bovendien"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Noem een tegenwerping met een signaal als \"natuurlijk zal iemand zeggen dat\".",
+        "uo": [
+         "Koos je \"ten eerste, ten tweede en ten derde\"? Dan denk je dat dit een tegenwerping aankondigt. \"Ten eerste\" opent een rij argumenten, geen bezwaar.",
+         "Koos je \"kortom, samenvattend gezegd\"? Dan denk je dat dit een bezwaar aankondigt. \"Kortom\" rondt af, dus het hoort bij de conclusie.",
+         "Klopt: zo geef je aan dat een bezwaar volgt, dat je daarna weerlegt.",
+         "Koos je \"bovendien\"? Dan denk je dat dit een bezwaar inleidt. \"Bovendien\" voegt een extra argument toe, en gaat dus dezelfde kant op."
+        ],
+        "uh": "Signaal voor bezwaar."
+       },
+       {
+        "v": "Welke stelling is bruikbaarder voor een betoog en waarom?",
+        "o": [
+         "A, want ze is korter en dus makkelijker te onderbouwen",
+         "B, want ze is concreet en duidelijk een standpunt over wat er moet gebeuren",
+         "geen van beide, want stellingen over school mogen niet in betogen",
+         "allebei even goed, want ze gaan over hetzelfde onderwerp"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Een bruikbare stelling is concreet en duidelijk een standpunt.",
+        "uo": [
+         "Koos je \"A, want ze is korter en dus makkelijker te...\"? Dan denk je dat kort beter is. A is vaag: nuttig voor wie en waarvoor? een stelling moet concreet genoeg zijn om te onderbouwen.",
+         "Klopt: \"moet worden afgeschaft\" is een duidelijk standpunt dat je kunt onderbouwen.",
+         "Koos je \"geen van beide, want stellingen over school mogen...\"? Dan denk je dat het onderwerp verboden is. Elke kwestie waarover je het oneens kunt zijn is geschikt; schoolzaken zijn dat zeker.",
+         "Koos je \"allebei even goed, want ze gaan over hetzelfde...\"? Dan denk je dat het onderwerp de kwaliteit bepaalt. Concreetheid en duidelijkheid maken het verschil, en dat scoort B beter."
+        ],
+        "uh": "Concreet standpunt.",
+        "ctx": "Stelling A: \"Huiswerk is nuttig.\" Stelling B: \"Het huiswerk moet worden afgeschaft.\""
+       },
+       {
+        "v": "Waarom is dit een zwakke stelling voor een betoog?",
+        "o": [
+         "de zin bevat het woord \"sommigen\", wat in een betoog niet mag",
+         "de zin is te lang voor een stelling",
+         "de zin noemt twee kanten, terwijl een betoog drie kanten moet noemen",
+         "er wordt geen eigen standpunt ingenomen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Een betoogstelling neemt zelf stelling.",
+        "uo": [
+         "Koos je \"de zin bevat het woord sommigen, wat in een betoog...\"? Dan denk je dat een woord het probleem is. Het gaat niet om dat woord, maar om het ontbreken van een eigen standpunt.",
+         "Koos je \"de zin is te lang voor een stelling\"? Dan denk je dat lengte het probleem is. De zin is niet lang; het probleem is dat er geen keuze in zit.",
+         "Koos je \"de zin noemt twee kanten, terwijl een betoog drie...\"? Dan denk je dat een betoog een aantal kanten noemt. Een betoog kiest één kant; de zin kiest er geen.",
+         "Klopt: de zin beschrijft verschillende meningen, maar de schrijver kiest niet."
+        ],
+        "uh": "Kies een kant.",
+        "ctx": "Een leerling kiest de stelling: \"Sommigen vinden energiedrankjes ongezond, anderen niet.\""
+       },
+       {
+        "v": "Wat is er mis met dit argument?",
+        "o": [
+         "het argument is te lang",
+         "het geeft geen reden of bewijs",
+         "het argument noemt een tegenwerping",
+         "het argument is niet in de eerste persoon geschreven"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Een argument heeft een reden en bewijs nodig.",
+        "uo": [
+         "Koos je \"het argument is te lang\"? Dan denk je dat de lengte het probleem is. De zin is juist erg kort; het probleem is de ontbrekende reden.",
+         "Klopt: \"heel goed\" is een bewering zonder onderbouwing.",
+         "Koos je \"het argument noemt een tegenwerping\"? Dan denk je dat de zin een bezwaar bevat. Hij bevat helemaal geen reden; dat is het probleem.",
+         "Koos je \"het argument is niet in de eerste persoon geschreven\"? Dan denk je dat de persoonsvorm telt. De vorm doet er niet toe; de onderbouwing ontbreekt."
+        ],
+        "uh": "Reden en bewijs.",
+        "ctx": "Stelling: \"Studeren in het buitenland moet worden gestimuleerd.\" Een leerling schrijft als argument: \"Het is gewoon heel goed.\""
+       },
+       {
+        "v": "Welke onderdelen van een sterk argument herken je?",
+        "o": [
+         "een reden en een concreet bewijs",
+         "alleen een mening zonder bewijs",
+         "een tegenwerping en een weerlegging",
+         "een conclusie die de stelling herhaalt"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Een sterk argument heeft een reden en een bewijs.",
+        "uo": [
+         "Klopt: de reden is dat bomen de temperatuur verlagen en het bewijs zijn de metingen.",
+         "Koos je \"alleen een mening zonder bewijs\"? Dan denk je dat er geen bewijs staat. Er staat een verwijzing naar metingen, dus het is meer dan een mening.",
+         "Koos je \"een tegenwerping en een weerlegging\"? Dan denk je dat er een bezwaar in zit. Het argument steunt de stelling, en er wordt geen bezwaar genoemd.",
+         "Koos je \"een conclusie die de stelling herhaalt\"? Dan denk je dat het een slotzin is. Het is een argument midden in het betoog, geen conclusie."
+        ],
+        "uh": "Reden + bewijs.",
+        "ctx": "Stelling: \"Er moet meer groen in steden komen.\" Argument: \"Bomen verlagen de temperatuur in hete zomers, zoals metingen in Amsterdam laten zien.\""
+       },
+       {
+        "v": "Wat is hier mis met de reactie?",
+        "o": [
+         "hij noemt een feit dat niet klopt",
+         "hij is te beleefd tegen jou",
+         "hij stelt een open vraag",
+         "hij valt de persoon aan in plaats van het argument"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Weerleg het argument, niet de persoon.",
+        "uo": [
+         "Koos je \"hij noemt een feit dat niet klopt\"? Dan denk je dat het om een feit gaat. De opmerking over vlees eten kan best kloppen, maar het zegt niets over de argumenten.",
+         "Koos je \"hij is te beleefd tegen jou\"? Dan denk je dat de toon het probleem is. De opmerking is juist onbeleefd, en het echte probleem is dat hij de persoon aanvalt.",
+         "Koos je \"hij stelt een open vraag\"? Dan denk je dat er een vraag staat. Er staat een oordeel over jou, geen vraag.",
+         "Klopt: dit is een persoonlijke aanval en gaat niet in op de argumenten."
+        ],
+        "uh": "Argument, niet persoon.",
+        "ctx": "Een tegenstander zegt: \"Je betoog over vegetarisch eten is niets waard, want jij eet zelf vlees.\""
+       },
+       {
+        "v": "Waarom is een betoog zonder tegenwerping vaak minder overtuigend?",
+        "o": [
+         "omdat een betoog altijd uit twee delen moet bestaan, ook als dat nergens voor dient",
+         "omdat tegenwerpingen het betoog langer maken en daardoor beter",
+         "de lezer denkt zelf aan het bezwaar en vindt je betoog onvolledig",
+         "omdat een betoog zonder tegenwerping geen stelling heeft"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Een betoog wordt sterker als je de belangrijkste tegenwerping weerlegt.",
+        "uo": [
+         "Koos je \"omdat een betoog altijd uit twee delen moet...\"? Dan denk je dat het om een vormeis gaat. De tegenwerping heeft inhoudelijk een functie, namelijk de lezer overtuigen dat je alle kanten hebt bekeken.",
+         "Koos je \"omdat tegenwerpingen het betoog langer maken en...\"? Dan denk je dat lengte beter is. Het gaat om overtuigingskracht, niet om aantal woorden.",
+         "Klopt: de lezer bedenkt het bezwaar zelf en je laat dan zien dat je het niet hebt overwogen.",
+         "Koos je \"omdat een betoog zonder tegenwerping geen stelling...\"? Dan denk je dat de stelling afhangt van een tegenwerping. De stelling staat los daarvan; het gaat om overtuigingskracht."
+        ],
+        "uh": "Weerleg het bezwaar."
+       },
+       {
+        "v": "Welke functie heeft \"dus\" in de laatste zin?",
+        "o": [
+         "het noemt een nieuw argument",
+         "het noemt een tegenwerping",
+         "het leidt de conclusie in",
+         "het geeft een voorbeeld"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "\"Dus\" leidt een conclusie in.",
+        "uo": [
+         "Koos je \"het noemt een nieuw argument\"? Dan denk je dat \"dus\" iets toevoegt. Het trekt juist een slotsom, geen nieuw argument.",
+         "Koos je \"het noemt een tegenwerping\"? Dan denk je dat \"dus\" een bezwaar aankondigt. Het woord duidt op gevolg, niet op bezwaar.",
+         "Klopt: \"dus\" laat zien dat de laatste zin volgt uit de argumenten.",
+         "Koos je \"het geeft een voorbeeld\"? Dan denk je dat \"dus\" een voorbeeld inleidt. Het trekt een conclusie, geen illustratie."
+        ],
+        "uh": "Gevolgtrekking.",
+        "ctx": "Een leerling schrijft: \"Ten eerste kost een auto veel geld. Ten tweede is hij slecht voor het milieu. Tot slot dus: auto's zijn niet nodig.\""
+       },
+       {
+        "v": "Welke volgorde is verstandig?",
+        "o": [
+         "het zwakste argument eerst, zodat de lezer niet te veel hoeft te lezen",
+         "alle argumenten door elkaar, zodat de lezer verrast wordt",
+         "de argumenten in de volgorde waarin je ze bedacht",
+         "het sterkste argument het laatst of het eerst, en niet verstopt in het midden"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Zet het sterkste argument op een opvallende plek.",
+        "uo": [
+         "Koos je \"het zwakste argument eerst, zodat de lezer niet te...\"? Dan denk je dat een zwak begin helpt. Een zwak begin kan de lezer afschrikken, dus je kiest een sterk argument vooraan of als afsluiter.",
+         "Koos je \"alle argumenten door elkaar, zodat de lezer verrast...\"? Dan denk je dat chaos overtuigt. Een betoog is juist duidelijk geordend, zodat de lezer elk argument herkent.",
+         "Koos je \"de argumenten in de volgorde waarin je ze bedacht\"? Dan denk je dat de volgorde van bedenken de beste is. De lezer is gebaat bij een doordachte volgorde; dus je kiest bewust.",
+         "Klopt: zet je sterkste argument op een opvallende plek, vooraan of als afsluiter."
+        ],
+        "uh": "Sterk argument zichtbaar.",
+        "ctx": "Een betoog begint met de stelling, noemt drie argumenten, bespreekt een tegenwerping en eindigt met een conclusie. De leerling wil de volgorde van de argumenten bepalen."
+       },
+       {
+        "v": "Welke weerlegging is sterker en waarom?",
+        "o": [
+         "B, want ze geeft een concrete oplossing voor het bezwaar",
+         "A, want ze is kort en duidelijk",
+         "A, want ze laat zien dat jij het zeker weet",
+         "geen van beide, want weerleggen mag niet in een betoog"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Een sterke weerlegging gaat inhoudelijk in op het bezwaar.",
+        "uo": [
+         "Klopt: B gaat inhoudelijk in op het bezwaar met een oplossing.",
+         "Koos je \"A, want ze is kort en duidelijk\"? Dan denk je dat kort beter is. A ontkent alleen, zonder reden, en overtuigt dus niet.",
+         "Koos je \"A, want ze laat zien dat jij het zeker weet\"? Dan denk je dat zelfvertrouwen overtuigt. Zonder inhoud blijft het een bewering, en lezers zien dat.",
+         "Koos je \"geen van beide, want weerleggen mag niet in een...\"? Dan denk je dat weerleggen verboden is. Het hoort er juist bij, en maakt je betoog sterker."
+        ],
+        "uh": "Inhoud boven ontkennen.",
+        "ctx": "Stelling: \"Er moet een verplichte maatschappelijke stage komen.\" Tegenwerping: \"Leerlingen hebben al te weinig tijd.\" Weerlegging A: \"Dat is gewoon niet waar.\" Weerlegging B: \"De stage kan in de lestijd worden ingeroosterd, bijvoorbeeld één dag per jaar.\""
+       },
+       {
+        "v": "Welke verbetering is het belangrijkst?",
+        "o": [
+         "een derde argument toevoegen en verder alles laten staan",
+         "de stelling vooraan zetten en een conclusie toevoegen",
+         "de tegenwerping verwijderen, want die verwart de lezer",
+         "het betoog inkorten tot twee zinnen"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Een betoog heeft stelling vooraan en een conclusie aan het einde.",
+        "uo": [
+         "Koos je \"een derde argument toevoegen en verder alles laten...\"? Dan denk je dat een extra argument het probleem oplost. De opbouw blijft rommelig, zonder stelling vooraan en zonder slot.",
+         "Klopt: een betoog begint met de stelling en eindigt met een conclusie.",
+         "Koos je \"de tegenwerping verwijderen, want die verwart de...\"? Dan denk je dat een tegenwerping verwart. Een weerlegde tegenwerping sterkt het betoog; de opbouw is het probleem.",
+         "Koos je \"het betoog inkorten tot twee zinnen\"? Dan denk je dat korter beter is. Het ontbreken van structuur is het probleem, niet de lengte."
+        ],
+        "uh": "Structuur eerst.",
+        "ctx": "Een betoog heeft deze opbouw: een stelling in het midden, twee argumenten voor de stelling aan het begin, daarna een tegenwerping zonder weerlegging en geen slot."
+       },
+       {
+        "v": "Wat hoort in de conclusie van een betoog?",
+        "o": [
+         "een nieuw argument dat de lezer nog niet kende en dat het betoog ineens verandert",
+         "een uitgebreide verontschuldiging voor het geval de lezer het er niet mee eens is",
+         "een lange samenvatting van de hele tegenwerping zonder jouw standpunt te noemen",
+         "de stelling bevestigen, gesteund door de argumenten"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "De conclusie bevestigt de stelling op grond van de argumenten.",
+        "uo": [
+         "Koos je \"een nieuw argument dat de lezer nog niet kende en...\"? Dan denk je dat het slot ruimte voor iets nieuws is. De lezer kan er dan niet meer op reageren, en het verstoort de afronding.",
+         "Koos je \"een uitgebreide verontschuldiging voor het geval de...\"? Dan denk je dat twijfel in de conclusie past. Een betoog sluit stellig af, want je hebt je argumenten al gegeven.",
+         "Koos je \"een lange samenvatting van de hele tegenwerping...\"? Dan denk je dat het slot de tegenwerping herhaalt. De tegenwerping is al weerlegd; het slot bevestigt jouw stelling.",
+         "Klopt: de conclusie rondt af door de stelling te bevestigen op grond van wat is aangevoerd."
+        ],
+        "uh": "Stelling bevestigen."
+       },
+       {
+        "v": "Welke zin past het best als slot van een betoog voor een verbod op energiedrankjes?",
+        "o": [
+         "Kortom: een verbod op energiedrankjes voor kinderen is nodig.",
+         "Dit was mijn verhaal over energiedrankjes, bedankt voor het lezen van dit betoog.",
+         "Energiedrankjes bevatten veel suiker en cafeïne, en dat vinden sommigen niet erg.",
+         "Wie weet wat de toekomst brengt voor energiedrankjes en kinderen in Nederland?"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 5,
+        "u": "Een slot trekt de conclusie en bevestigt de stelling.",
+        "uo": [
+         "Klopt: de zin trekt de conclusie en herhaalt de stelling.",
+         "Koos je \"Dit was mijn verhaal over energiedrankjes, bedankt...\"? Dan denk je dat een afscheid een conclusie is. De zin bevestigt de stelling niet, dus het slot mist de slotsom.",
+         "Koos je \"Energiedrankjes bevatten veel suiker en cafeïne, en...\"? Dan denk je dat een feit het slot kan zijn. Het is een losse opmerking die de stelling niet bevestigt; er is geen conclusie.",
+         "Koos je \"Wie weet wat de toekomst brengt voor...\"? Dan denk je dat een open vraag een goed slot is. Een betoog sluit af met een duidelijk standpunt, geen vraag."
+        ],
+        "uh": "Kortom + stelling."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling kiest als stelling: \"Sommigen vinden energiedrankjes ongezond, anderen niet.\"",
+        "v": "Waarom is dit geen goede stelling en hoe verbeter je haar?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Er wordt geen eigen standpunt ingenomen (1 punt). Beter: \"Er moet een verbod komen op energiedrankjes voor kinderen onder de zestien\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Stelling: \"Er moet meer groen in steden komen.\" Argument van een leerling: \"Het is gewoon heel goed.\"",
+        "v": "Waarom is dit argument zwak en hoe maak je het sterker?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het geeft geen reden of bewijs (1 punt). Sterker: noem een reden en een voorbeeld, bijvoorbeeld dat bomen de temperatuur in hete zomers verlagen, met een concreet voorbeeld (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Stelling: \"Mobiele telefoons moeten in de les verboden zijn.\" Tegenwerping: \"Leerlingen gebruiken hun telefoon ook voor opdrachten.\"",
+        "v": "Geef een goede weerlegging.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld: voor opdrachten kan de school laptops of tablets aanbieden (1 punt), zodat de telefoon niet nodig is (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling antwoordt op een tegenwerping: \"Jij begrijpt er niets van, want je zit zelf de hele dag op je telefoon.\"",
+        "v": "Welke fout maakt hij en wat had hij moeten doen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij valt de persoon aan in plaats van het argument (1 punt). Hij had inhoudelijk op het bezwaar moeten ingaan (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een betoog eindigt met: \"Dit waren mijn argumenten.\"",
+        "v": "Waarom is dit een zwak slot en wat hoort er wel in?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Er staat geen conclusie in (1 punt). Een slot bevestigt de stelling en trekt een conclusie, bijvoorbeeld met \"dus\" (1 punt)."
+       }
+      ]
+     },
+     {
+      "id": "C4",
+      "lo": "nl.C.4",
+      "gs": 2,
+      "naam": "Tekst en alinea opbouwen",
+      "beschrijving": "Je bouwt een tekst op uit alinea's met een kernzin en uitwerking, begint en eindigt sterk en zorgt voor samenhang met signaalwoorden en tussenkopjes.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Alinea en kernzin",
+       "Openingsalinea",
+       "Slotalinea",
+       "Tussenkopjes",
+       "Signaalwoorden en samenhang",
+       "Volgorde van alinea's"
+      ],
+      "sam": "Een tekst bestaat uit alinea's: elke alinea behandelt één onderwerp, met een kernzin (meestal vooraan) en een uitwerking. De openingsalinea leidt het onderwerp in en trekt de aandacht, de slotalinea bevestigt de stelling of trekt de conclusie. Tussenkopjes en signaalwoorden (maar, daardoor, bovendien) geven de opbouw en de verbanden zichtbaar weer; samenhang heet coherentie.",
+      "begrippen": [
+       {
+        "t": "Alinea",
+        "d": "Een deel van een tekst over één onderwerp."
+       },
+       {
+        "t": "Kernzin",
+        "d": "De zin die de hoofdgedachte van een alinea samenvat."
+       },
+       {
+        "t": "Uitwerking",
+        "d": "De zinnen die de kernzin toelichten of onderbouwen."
+       },
+       {
+        "t": "Openingsalinea",
+        "d": "De eerste alinea, die het onderwerp inleidt."
+       },
+       {
+        "t": "Slotalinea",
+        "d": "De laatste alinea, die afrondt met een conclusie."
+       },
+       {
+        "t": "Tussenkopje",
+        "d": "Een kopje boven een deel van een tekst."
+       },
+       {
+        "t": "Coherentie",
+        "d": "De samenhang tussen zinnen en alinea's."
+       },
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord dat het verband tussen zinnen aangeeft."
+       },
+       {
+        "t": "Middenstuk",
+        "d": "Het deel tussen opening en slot met de argumenten of uitleg."
+       },
+       {
+        "t": "Deelonderwerp",
+        "d": "Een onderdeel van het hoofdonderwerp."
+       },
+       {
+        "t": "Verwijswoord",
+        "d": "Een woord dat naar iets eerders verwijst, zoals \"dit\" of \"zij\"."
+       },
+       {
+        "t": "Opbouw",
+        "d": "De ordening van de onderdelen van een tekst."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Hoeveel deelonderwerpen behandelt een goede alinea?",
+        "o": [
+         "twee of drie, zodat de tekst korter blijft en minder alinea's nodig heeft",
+         "één",
+         "zoveel als je maar kwijt kunt, zolang de alinea niet te lang wordt",
+         "geen, want een alinea hoeft geen onderwerp te hebben"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een alinea behandelt één onderwerp.",
+        "uo": [
+         "Koos je \"twee of drie, zodat de tekst korter blijft en...\"? Dan denk je dat meer onderwerpen in één alinea efficiënt is. De lezer verliest dan het overzicht, en kan de kern niet vinden.",
+         "Klopt: een alinea gaat over één onderwerp, zodat de lezer het overzicht houdt.",
+         "Koos je \"zoveel als je maar kwijt kunt, zolang de alinea...\"? Dan denk je dat de lengte de grens is. Het gaat om het onderwerp, niet om het aantal regels; één onderwerp per alinea.",
+         "Koos je \"geen, want een alinea hoeft geen onderwerp te hebben\"? Dan denk je dat een alinea losse zinnen is. Elke alinea heeft een kern, namelijk één onderwerp."
+        ],
+        "uh": "Eén onderwerp per alinea."
+       },
+       {
+        "v": "Hoe heet de zin die de hoofdgedachte van een alinea samenvat?",
+        "o": [
+         "slotzin van de tekst, die altijd aan het einde van het hele stuk staat",
+         "voorbeeldzin, die een voorbeeld geeft bij een argument zonder de kern te noemen",
+         "titelzin, die boven aan de pagina staat en de tekst een naam geeft",
+         "kernzin"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "De kernzin vat de hoofdgedachte van een alinea samen.",
+        "uo": [
+         "Koos je \"slotzin van de tekst, die altijd aan het einde van...\"? Dan denk je dat de kernzin altijd bij het einde hoort. Een kernzin staat in elke alinea, vaak aan het begin.",
+         "Koos je \"voorbeeldzin, die een voorbeeld geeft bij een...\"? Dan denk je dat een voorbeeldzin de kern is. Een voorbeeld ondersteunt de kern, maar is zelf de kern niet.",
+         "Koos je \"titelzin, die boven aan de pagina staat en de tekst...\"? Dan denk je dat de titel de kernzin is. De titel hoort bij de hele tekst, de kernzin bij één alinea.",
+         "Klopt: de kernzin geeft aan waar de alinea over gaat."
+        ],
+        "uh": "Kern in één zin."
+       },
+       {
+        "v": "Welke plek heeft de kernzin vaak in een alinea?",
+        "o": [
+         "aan het begin, gevolgd door de uitwerking",
+         "midden in de alinea, tussen twee voorbeelden in",
+         "alleen aan het einde, want de lezer moet eerst de uitleg lezen",
+         "in een tussenkopje boven de alinea in plaats van in de alinea zelf"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "De kernzin staat meestal aan het begin van de alinea.",
+        "uo": [
+         "Klopt: de kernzin staat meestal vooraan, daarna volgen uitleg, voorbeelden of argumenten.",
+         "Koos je \"midden in de alinea, tussen twee voorbeelden in\"? Dan denk je dat het midden de gewone plek is. Een kernzin in het midden is moeilijk te vinden, dus meestal staat hij vooraan.",
+         "Koos je \"alleen aan het einde, want de lezer moet eerst de...\"? Dan denk je dat de kernzin altijd achteraan staat. Dat kan, maar de gewone plek is voorop, zodat de lezer weet waar het over gaat.",
+         "Koos je \"in een tussenkopje boven de alinea in plaats van in...\"? Dan denk je dat een kopje de kernzin vervangt. Een kopje noemt het onderwerp, de kernzin staat in de tekst."
+        ],
+        "uh": "Kern voorop."
+       },
+       {
+        "v": "Wat is de kernzin?",
+        "o": [
+         "de laatste zin over slaap, omdat die het langst is",
+         "de tweede zin over het hart, omdat die het eerst een voordeel noemt",
+         "Sporten is gezond.",
+         "geen enkele zin, want de kern staat niet in de alinea"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "De kernzin vat de alinea samen; de rest werkt hem uit.",
+        "uo": [
+         "Koos je \"de laatste zin over slaap, omdat die het langst is\"? Dan denk je dat de laatste zin de kern is. Die zin werkt één voordeel uit, en is dus geen kern van de hele alinea.",
+         "Koos je \"de tweede zin over het hart, omdat die het eerst...\"? Dan denk je dat de eerste uitwerking de kern is. Een uitwerking hoort bij de kern, en is dus zelf niet de kern.",
+         "Klopt: deze zin noemt de hoofdgedachte, de rest werkt die uit.",
+         "Koos je \"geen enkele zin, want de kern staat niet in de...\"? Dan denk je dat de kern ontbreekt. De eerste zin vat de alinea samen, dus er is wel een kernzin."
+        ],
+        "uh": "Zin 1 = kern.",
+        "ctx": "Een alinea begint met: \"Sporten is gezond.\" Daarna volgen drie zinnen over de voordelen voor hart, spieren en slaap."
+       },
+       {
+        "v": "Wat is hier het probleem?",
+        "o": [
+         "de alinea is te kort, want een alinea moet altijd minstens tien zinnen hebben",
+         "er staat geen kernzin in, want een alinea mag geen kernzin hebben",
+         "er staan drie deelonderwerpen in één alinea",
+         "de alinea heeft geen tussenkopje, want elke alinea moet er één hebben"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Elk deelonderwerp krijgt een eigen alinea.",
+        "uo": [
+         "Koos je \"de alinea is te kort, want een alinea moet altijd...\"? Dan denk je dat er een vast minimum is. Een alinea heeft geen vast aantal zinnen, het gaat om het aantal onderwerpen.",
+         "Koos je \"er staat geen kernzin in, want een alinea mag geen...\"? Dan denk je dat een kernzin verboden is. Een kernzin hoort er juist bij; het probleem is het aantal onderwerpen.",
+         "Klopt: elk deelonderwerp verdient een eigen alinea.",
+         "Koos je \"de alinea heeft geen tussenkopje, want elke alinea...\"? Dan denk je dat een kopje vereist is. Kopjes zijn niet verplicht; het probleem is dat de alinea te veel onderwerpen heeft."
+        ],
+        "uh": "Splits de alinea.",
+        "ctx": "Een alinea gaat over drie onderwerpen: de kosten van een auto, het milieu en de files in de stad."
+       },
+       {
+        "v": "Wat moet een openingsalinea in elk geval doen?",
+        "o": [
+         "het onderwerp inleiden en de aandacht van de lezer trekken",
+         "het hele betoog al samenvatten, zodat er geen conclusie meer nodig is",
+         "alleen de bronnen noemen, zonder iets over het onderwerp te zeggen",
+         "een nieuw argument geven dat verderop niet meer terugkomt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Een opening leidt het onderwerp in en trekt de aandacht.",
+        "uo": [
+         "Klopt: de opening maakt de lezer nieuwsgierig en laat zien waarover de tekst gaat.",
+         "Koos je \"het hele betoog al samenvatten, zodat er geen...\"? Dan denk je dat de opening alles zegt. Dan lees je de rest niet meer, en de tekst heeft geen opbouw.",
+         "Koos je \"alleen de bronnen noemen, zonder iets over het...\"? Dan denk je dat bronnen de opening zijn. De opening leidt het onderwerp in; bronnen komen later.",
+         "Koos je \"een nieuw argument geven dat verderop niet meer...\"? Dan denk je dat de opening argumenten geeft. De opening leidt in en trekt de aandacht; argumenten staan in het middenstuk."
+        ],
+        "uh": "Inleiden en pakken."
+       },
+       {
+        "v": "Welke opening past het best bij een tekst over te weinig slaap bij jongeren?",
+        "o": [
+         "Hallo allemaal, ik ga het vandaag hebben over slaap.",
+         "Slaap is een toestand waarin iemand rust, zoals beschreven in het woordenboek.",
+         "In dit hoofdstuk bespreek ik mijn mening over slaap in tien delen.",
+         "Eén op de drie tieners slaapt doordeweeks te weinig. Wat doet dat met hen?"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Een goede opening is concreet en wekt nieuwsgierigheid.",
+        "uo": [
+         "Koos je \"Hallo allemaal, ik ga het vandaag hebben over slaap.\"? Dan denk je dat een aankondiging een goede opening is. Het trekt geen aandacht en zegt niets inhoudelijks, dus de lezer haakt snel af.",
+         "Koos je \"Slaap is een toestand waarin iemand rust, zoals...\"? Dan denk je dat een woordenboekdefinitie boeit. Een definitie leidt het onderwerp niet aantrekkelijk in, en is vaak saai.",
+         "Koos je \"In dit hoofdstuk bespreek ik mijn mening over slaap...\"? Dan denk je dat dit de aandacht trekt. Het kondigt alleen aan, zonder iets te laten zien waarom het ertoe doet.",
+         "Klopt: een concreet feit plus een vraag maakt nieuwsgierig en leidt het onderwerp in."
+        ],
+        "uh": "Feit plus vraag."
+       },
+       {
+        "v": "Wat doet een slotalinea in een betoog?",
+        "o": [
+         "een volledig nieuw onderwerp beginnen dat verderop niet meer terugkomt",
+         "de stelling bevestigen en een conclusie trekken",
+         "de bronnenlijst herhalen met alle titels en auteurs",
+         "de lezer bedanken en verder niets zeggen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Het slot bevestigt de stelling en trekt de conclusie.",
+        "uo": [
+         "Koos je \"een volledig nieuw onderwerp beginnen dat verderop...\"? Dan denk je dat het slot ruimte is voor iets nieuws. Dan voelt de tekst onaf aan, en de lezer weet niet wat de conclusie is.",
+         "Klopt: het slot rondt af met de conclusie en bevestigt de stelling.",
+         "Koos je \"de bronnenlijst herhalen met alle titels en auteurs\"? Dan denk je dat het slot de bronnen herhaalt. De bronnenlijst staat apart; het slot trekt een conclusie.",
+         "Koos je \"de lezer bedanken en verder niets zeggen\"? Dan denk je dat een bedankje volstaat. Zonder conclusie blijft de tekst zonder afronding, dus het slot moet inhoud hebben."
+        ],
+        "uh": "Slotsom."
+       },
+       {
+        "v": "Waarvoor dient een tussenkopje?",
+        "o": [
+         "om de tekst langer te laten lijken zonder dat er iets bij komt",
+         "om de kernzin van een alinea te vervangen",
+         "om een conclusie te trekken voordat het betoog is afgerond",
+         "de lezer laten zien waar een deel over gaat"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Een tussenkopje geeft het onderwerp van het volgende deel aan.",
+        "uo": [
+         "Koos je \"om de tekst langer te laten lijken zonder dat er...\"? Dan denk je dat kopjes alleen opvulling zijn. Een kopje heeft een functie voor de lezer, namelijk het aangeven van het onderwerp.",
+         "Koos je \"om de kernzin van een alinea te vervangen\"? Dan denk je dat een kopje de kernzin overbodig maakt. Een kopje noemt het onderwerp, maar de kernzin staat nog steeds in de tekst.",
+         "Koos je \"om een conclusie te trekken voordat het betoog is...\"? Dan denk je dat een kopje een conclusie geeft. Een kopje benoemt het onderwerp van een deel, het trekt geen slotsom.",
+         "Klopt: een tussenkopje geeft het onderwerp van het volgende deel aan en helpt bij het zoeken."
+        ],
+        "uh": "Kopje = wegwijzer."
+       },
+       {
+        "v": "Wat doen deze kopjes voor de lezer?",
+        "o": [
+         "ze vervangen de inleiding en het slot van de tekst",
+         "ze maken de opbouw zichtbaar en helpen de lezer snel te vinden wat hij zoekt",
+         "ze bewijzen dat de schrijver de argumenten kent",
+         "ze geven aan dat de schrijver de tekst niet zelf bedacht heeft"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Tussenkopjes laten de opbouw zien en helpen scannen.",
+        "uo": [
+         "Koos je \"ze vervangen de inleiding en het slot van de tekst\"? Dan denk je dat kopjes de rest overbodig maken. Een tekst heeft nog steeds een inleiding en een slot, kopjes zijn een extra hulpmiddel.",
+         "Klopt: kopjes laten zien hoe de tekst is opgebouwd en maken scannen mogelijk.",
+         "Koos je \"ze bewijzen dat de schrijver de argumenten kent\"? Dan denk je dat een kopje een bewijs is. Een kopje is een wegwijzer, geen onderbouwing.",
+         "Koos je \"ze geven aan dat de schrijver de tekst niet zelf...\"? Dan denk je dat kopjes iets met bronnen te maken hebben. Ze hebben alleen een functie voor opbouw, en zeggen niets over herkomst."
+        ],
+        "uh": "Overzicht voor de lezer.",
+        "ctx": "Een tekst heeft twee tussenkopjes: \"Voordelen van thuiswerken\" en \"Nadelen van thuiswerken\"."
+       },
+       {
+        "v": "Welk woord legt een tegenstelling tussen twee zinnen?",
+        "o": [
+         "bovendien, dat een extra punt aan het vorige toevoegt",
+         "daarom, dat een gevolg uit het vorige aangeeft",
+         "maar",
+         "bijvoorbeeld, dat een illustratie introduceert"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "\"Maar\" geeft een tegenstelling aan.",
+        "uo": [
+         "Koos je \"bovendien, dat een extra punt aan het vorige...\"? Dan denk je dat \"bovendien\" een tegenstelling is. Het voegt iets toe dat dezelfde kant op gaat, het is geen tegenstelling.",
+         "Koos je \"daarom, dat een gevolg uit het vorige aangeeft\"? Dan denk je dat \"daarom\" een tegenstelling is. Het geeft juist een gevolg aan, en tegenstelling is iets anders.",
+         "Klopt: \"maar\" zet twee dingen tegenover elkaar.",
+         "Koos je \"bijvoorbeeld, dat een illustratie introduceert\"? Dan denk je dat \"bijvoorbeeld\" een tegenstelling is. Het introduceert een voorbeeld, geen contrast."
+        ],
+        "uh": "Tegenstelling = maar."
+       },
+       {
+        "v": "Welk verbindingswoord past tussen de zinnen als je een tegenstelling wilt aangeven?",
+        "o": [
+         "Echter,",
+         "Bovendien,",
+         "Daarom,",
+         "Bijvoorbeeld,"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Signaalwoorden als echter, maar en toch geven een tegenstelling aan.",
+        "uo": [
+         "Klopt: \"echter\" zet de tweede zin tegenover de eerste.",
+         "Koos je \"Bovendien,\"? Dan denk je dat dit een tegenstelling is. Het voegt iets toe, en laat de twee zinnen in dezelfde richting wijzen.",
+         "Koos je \"Daarom,\"? Dan denk je dat dit een tegenstelling is. Het geeft een gevolg aan, en dat past niet bij de zinnen hier.",
+         "Koos je \"Bijvoorbeeld,\"? Dan denk je dat dit een tegenstelling is. Het geeft een voorbeeld aan, terwijl de tweede zin geen voorbeeld is."
+        ],
+        "uh": "Contrast = echter.",
+        "ctx": "Een leerling schrijft: \"De school wil het huiswerk afschaffen. Veel ouders vinden dat een slecht idee.\""
+       },
+       {
+        "v": "Welk signaalwoord laat zien dat de tweede zin een gevolg is?",
+        "o": [
+         "Daardoor",
+         "Maar",
+         "Bijvoorbeeld",
+         "Hoewel"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "\"Daardoor\" geeft een gevolg aan.",
+        "uo": [
+         "Klopt: \"daardoor\" geeft een oorzaak-gevolgverband aan.",
+         "Koos je \"Maar\"? Dan denk je dat \"maar\" een gevolg aangeeft. Het geeft een tegenstelling aan, dus het past niet bij deze zinnen.",
+         "Koos je \"Bijvoorbeeld\"? Dan denk je dat \"bijvoorbeeld\" een gevolg aangeeft. Het geeft een voorbeeld, en de tweede zin is geen voorbeeld.",
+         "Koos je \"Hoewel\"? Dan denk je dat \"hoewel\" een gevolg aangeeft. Het geeft een tegenstelling, en dat past hier niet."
+        ],
+        "uh": "Gevolg = daardoor.",
+        "ctx": "Twee zinnen: \"Lucas oefende elke dag. Hij haalde een hoog cijfer.\""
+       },
+       {
+        "v": "Wat ontbreekt er om de zinnen samenhang te geven?",
+        "o": [
+         "meer zinnen, want een alinea moet minstens tien zinnen hebben",
+         "langere zinnen met moeilijkere woorden, zodat de alinea slimmer klinkt",
+         "verbindingen tussen de zinnen, bijvoorbeeld signaalwoorden en een gedeeld onderwerp",
+         "een tussenkopje boven elke zin, zodat elke zin een eigen onderwerp heeft"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Samenhang ontstaat door een gedeeld onderwerp en verbindende woorden.",
+        "uo": [
+         "Koos je \"meer zinnen, want een alinea moet minstens tien...\"? Dan denk je dat het om het aantal zinnen gaat. De samenhang ontbreekt, dus meer zinnen helpt niet.",
+         "Koos je \"langere zinnen met moeilijkere woorden, zodat de...\"? Dan denk je dat lengte en moeilijke woorden samenhang geven. Ze geven geen verband tussen de zinnen, dus het lost het probleem niet op.",
+         "Klopt: de zinnen hangen nu los van elkaar; samenhang ontstaat door een gedeeld onderwerp en verbindende woorden.",
+         "Koos je \"een tussenkopje boven elke zin, zodat elke zin een...\"? Dan denk je dat kopjes samenhang creëren. Ze maken de zinnen juist nog losser, en lossen het probleem van de losse zinnen niet op."
+        ],
+        "uh": "Zinnen verbinden.",
+        "ctx": "Een alinea: \"Ik wil graag naar Amsterdam. De trein is een goede manier om te reizen. Het is warm vandaag. Mijn oma woont in Utrecht.\""
+       },
+       {
+        "v": "Welke alinea staat waarschijnlijk op de verkeerde plek?",
+        "o": [
+         "A, want voordelen horen altijd aan het einde",
+         "D, want de geschiedenis hoort bij de inleiding of eerder in de tekst",
+         "B, want nadelen mogen nooit in een tekst staan",
+         "C, want de conclusie moet aan het begin staan"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "De opbouw is: inleiding, middenstuk, slot; nieuw materiaal na de conclusie past niet.",
+        "uo": [
+         "Koos je \"A, want voordelen horen altijd aan het einde\"? Dan denk je dat voordelen achteraan horen. Voordelen horen in het middenstuk, dus A staat goed.",
+         "Klopt: achtergrond staat vooraan; na de conclusie komt niets nieuws meer.",
+         "Koos je \"B, want nadelen mogen nooit in een tekst staan\"? Dan denk je dat nadelen niet mogen. Nadelen horen bij een afweging in het middenstuk; dus B staat goed.",
+         "Koos je \"C, want de conclusie moet aan het begin staan\"? Dan denk je dat de conclusie vooraan hoort. De conclusie staat aan het einde, dus C staat goed."
+        ],
+        "uh": "Opbouw bewaken.",
+        "ctx": "Een tekst bestaat uit de alinea's: A over voordelen van fietsen, B over nadelen van fietsen, C over de conclusie en D over de geschiedenis van de fiets."
+       },
+       {
+        "v": "Welk probleem levert dit op?",
+        "o": [
+         "de tekst heeft te weinig alinea's, want er moeten er minstens tien zijn",
+         "de tekst is te lang voor een betoog",
+         "de tekst gebruikt geen tussenkopjes",
+         "de opbouw klopt niet: de lezer verwacht na een conclusie geen nieuwe argumenten meer"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "De conclusie hoort aan het einde van de tekst.",
+        "uo": [
+         "Koos je \"de tekst heeft te weinig alinea's, want er moeten...\"? Dan denk je dat er een minimum aantal alinea's bestaat. Er is geen vast aantal; het probleem is de volgorde.",
+         "Koos je \"de tekst is te lang voor een betoog\"? Dan denk je dat de lengte telt. Lengte is hier niet het probleem; de opbouw is het probleem.",
+         "Koos je \"de tekst gebruikt geen tussenkopjes\"? Dan denk je dat kopjes het probleem zijn. Kopjes zijn niet verplicht; de opbouw klopt niet.",
+         "Klopt: een conclusie hoort aan het eind; daarna nog argumenten brengen verwart de lezer."
+        ],
+        "uh": "Conclusie laatst.",
+        "ctx": "Een leerling schrijft een tekst en zet de conclusie al in de tweede alinea. Daarna volgen nog drie alinea's met nieuwe argumenten."
+       },
+       {
+        "v": "Wat moet hij doen?",
+        "o": [
+         "de zinnen over de fiets laten staan, want alinea's mogen van onderwerp wisselen",
+         "de zinnen over de fiets in een eigen alinea zetten",
+         "de zinnen over Spanje schrappen, want een tekst gaat maar over één onderwerp",
+         "de fiets in de vakantie van Spanje verwerken zodat het toch past"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Een nieuw onderwerp krijgt een nieuwe alinea.",
+        "uo": [
+         "Koos je \"de zinnen over de fiets laten staan, want alinea's...\"? Dan denk je dat alinea's van onderwerp mogen wisselen. Dan verliest de lezer het overzicht, dus je splitst de alinea.",
+         "Klopt: een nieuw onderwerp krijgt een eigen alinea.",
+         "Koos je \"de zinnen over Spanje schrappen, want een tekst...\"? Dan denk je dat een tekst maar één onderwerp mag hebben. Een tekst kan meerdere deelonderwerpen hebben, elk in een eigen alinea.",
+         "Koos je \"de fiets in de vakantie van Spanje verwerken zodat...\"? Dan denk je dat je het onderwerp moet forceren. Het blijft een ander onderwerp; een eigen alinea is beter."
+        ],
+        "uh": "Nieuwe alinea.",
+        "ctx": "Een leerling schrijft een alinea over een vakantie in Spanje. Midden in de alinea begint hij ineens over zijn nieuwe fiets."
+       },
+       {
+        "v": "Welk probleem heeft deze alinea?",
+        "o": [
+         "de kernzin en de uitwerking passen niet bij elkaar",
+         "de kernzin staat aan het begin, wat in een alinea niet mag",
+         "de alinea heeft geen kernzin, want de eerste zin is een feit",
+         "de alinea is te lang om gelezen te worden"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Uitwerking en kernzin moeten bij elkaar passen.",
+        "uo": [
+         "Klopt: de uitwerking werkt een ander onderwerp uit dan de kernzin noemt.",
+         "Koos je \"de kernzin staat aan het begin, wat in een alinea...\"? Dan denk je dat de kernzin niet vooraan mag staan. Dat is juist gewoon; het probleem is dat de rest niet bij de kern past.",
+         "Koos je \"de alinea heeft geen kernzin, want de eerste zin is...\"? Dan denk je dat een feit geen kernzin kan zijn. Het kan wel een kern zijn; het probleem is dat de uitwerking afwijkt.",
+         "Koos je \"de alinea is te lang om gelezen te worden\"? Dan denk je dat lengte het probleem is. De lengte is niet bepaald; het probleem is dat de zinnen niet bij elkaar passen."
+        ],
+        "uh": "Kern en uitwerking.",
+        "ctx": "Een alinea begint met: \"Uit onderzoek blijkt dat studenten die ontbijten beter scoren.\" De rest van de alinea gaat over de geschiedenis van het ontbijt in Nederland."
+       },
+       {
+        "v": "Waarom is dit een zwakke opening?",
+        "o": [
+         "de opening is te kort om iets te zeggen",
+         "de opening noemt het onderwerp, wat in een opening niet mag",
+         "de opening bevat een bron, wat verboden is in een opening",
+         "het is een droge definitie die geen nieuwsgierigheid wekt"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Een goede opening wekt nieuwsgierigheid met een concreet feit of vraag.",
+        "uo": [
+         "Koos je \"de opening is te kort om iets te zeggen\"? Dan denk je dat de opening te kort is. De zin is juist lang; het probleem is dat hij saai en abstract is.",
+         "Koos je \"de opening noemt het onderwerp, wat in een opening...\"? Dan denk je dat het onderwerp niet genoemd mag worden. De opening mag het onderwerp noemen; het probleem is dat hij de lezer niet pakt.",
+         "Koos je \"de opening bevat een bron, wat verboden is in een...\"? Dan denk je dat een bron verboden is. Een bron mag overal staan; het probleem is de droge toon.",
+         "Klopt: een droge definitie trekt weinig aandacht; een concreet feit of vraag werkt beter."
+        ],
+        "uh": "Pak de lezer.",
+        "ctx": "Een tekst over zonne-energie begint met: \"Zonne-energie is een vorm van energie die wordt gewonnen uit zonlicht en die op verschillende manieren wordt toegepast, zoals beschreven in diverse naslagwerken.\""
+       },
+       {
+        "v": "Wat is een goed tussenkopje bij een alinea over de kosten van een auto?",
+        "o": [
+         "Hoofdstuk 3",
+         "Alinea over dingen",
+         "Wat een auto werkelijk kost",
+         "Zie hieronder voor meer informatie over de verschillende onderwerpen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Een tussenkopje noemt kort het onderwerp van het volgende deel.",
+        "uo": [
+         "Koos je \"Hoofdstuk 3\"? Dan denk je dat een nummer een kopje is. Een nummer zegt niets over de inhoud, dus het helpt de lezer niet.",
+         "Koos je \"Alinea over dingen\"? Dan denk je dat een vaag kopje volstaat. Het zegt niet wat er in de alinea staat, dus de lezer weet niet wat hij kan verwachten.",
+         "Klopt: het kopje noemt het onderwerp van de alinea en wekt interesse.",
+         "Koos je \"Zie hieronder voor meer informatie over de...\"? Dan denk je dat een lang vaag kopje beter is. Het noemt niet het onderwerp, en is te lang voor een kopje."
+        ],
+        "uh": "Kort en concreet."
+       },
+       {
+        "v": "Welke functies hebben \"daardoor\", \"toch\" en \"zo\" in deze volgorde?",
+        "o": [
+         "tegenstelling, gevolg en voorbeeld",
+         "voorbeeld, gevolg en tegenstelling",
+         "gevolg, tegenstelling en conclusie",
+         "reden, voorbeeld en tegenstelling"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Signaalwoorden geven verbanden aan: gevolg, tegenstelling, conclusie.",
+        "uo": [
+         "Koos je \"tegenstelling, gevolg en voorbeeld\"? Dan denk je dat \"daardoor\" een tegenstelling aangeeft. Het woord verbindt de fris aankomst als gevolg met het fietsen, en een tegenstelling zou \"maar\" of \"toch\" zijn.",
+         "Koos je \"voorbeeld, gevolg en tegenstelling\"? Dan denk je dat \"toch\" een gevolg aangeeft. De zin met \"toch\" zet de bus tegenover de fiets, dus het woord geeft een tegenstelling aan.",
+         "Klopt: \"daardoor\" geeft een gevolg, \"toch\" een tegenstelling en \"zo\" een slotsom.",
+         "Koos je \"reden, voorbeeld en tegenstelling\"? Dan denk je dat \"zo\" een tegenstelling aangeeft. De laatste zin vat samen dat de fiets populair blijft, dus \"zo\" leidt een conclusie in."
+        ],
+        "uh": "Verband herkennen.",
+        "ctx": "Een alinea: \"Veel jongeren fietsen naar school. Ze komen daardoor fris aan. Toch nemen sommigen de bus als het regent. Zo blijft de fiets populair.\""
+       },
+       {
+        "v": "Wat is het meest logisch om te doen met de zesde zin?",
+        "o": [
+         "laten staan, want elke alinea mag een afwijkende zin bevatten",
+         "er een kopje boven zetten zodat hij een eigen onderwerp lijkt",
+         "de andere vijf zinnen schrappen, want de nieuwe zin is belangrijker",
+         "schrappen of in een andere alinea zetten, want hij hoort niet bij het onderwerp"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Zinnen in een alinea horen bij de kernzin.",
+        "uo": [
+         "Koos je \"laten staan, want elke alinea mag een afwijkende...\"? Dan denk je dat afwijkingen geen kwaad kunnen. Ze breken de samenhang, en de lezer raakt de draad kwijt.",
+         "Koos je \"er een kopje boven zetten zodat hij een eigen...\"? Dan denk je dat een kopje één zin kan redden. Een kopje hoort bij een deel van de tekst, niet bij één losse zin.",
+         "Koos je \"de andere vijf zinnen schrappen, want de nieuwe zin...\"? Dan denk je dat de afwijkende zin voorrang krijgt. De kern van de alinea blijft thuiswerken, dus de losse zin is degene die weg moet.",
+         "Klopt: een zin die niet bij de kern past, haalt de alinea uit balans."
+        ],
+        "uh": "Past de zin bij de kern?",
+        "ctx": "Een alinea over thuiswerken bestaat uit zes zinnen. Vijf zinnen gaan over de voordelen, de zesde over het weer in Spanje."
+       },
+       {
+        "v": "Wat doe je in een openingsalinea niet?",
+        "o": [
+         "alle argumenten al uitgebreid behandelen",
+         "het onderwerp noemen waar de tekst over gaat",
+         "de aandacht van de lezer trekken met een feit of vraag",
+         "aangeven wat de lezer verwacht te lezen"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Argumenten werk je uit in het middenstuk, niet in de opening.",
+        "uo": [
+         "Klopt: de uitwerking van de argumenten hoort in het middenstuk.",
+         "Koos je \"het onderwerp noemen waar de tekst over gaat\"? Dan denk je dat dit niet mag. Het onderwerp noemen hoort bij de opening; je behandelt alleen de argumenten later.",
+         "Koos je \"de aandacht van de lezer trekken met een feit of...\"? Dan denk je dat dit niet mag. De opening moet de aandacht trekken, dus dit is juist wel gewenst.",
+         "Koos je \"aangeven wat de lezer verwacht te lezen\"? Dan denk je dat dit niet mag. Een korte aankondiging van de inhoud hoort bij de opening, en helpt de lezer."
+        ],
+        "uh": "Opening leidt in."
+       },
+       {
+        "v": "Welke volgorde is de juiste?",
+        "o": [
+         "1, 2, 3, 4",
+         "3, 4, 2, 1",
+         "3, 2, 4, 1",
+         "4, 3, 1, 2"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "De opbouw van een betoog: inleiding, argumenten, tegenwerping, conclusie.",
+        "uo": [
+         "Koos je \"1, 2, 3, 4\"? Dan denk je dat de conclusie voorop kan. In een betoog volgt de conclusie na de argumenten, dus dit klopt niet.",
+         "Klopt: eerst de inleiding met stelling, dan de argumenten, daarna de tegenwerping met weerlegging en tot slot de conclusie.",
+         "Koos je \"3, 2, 4, 1\"? Dan denk je dat de tegenwerping voor de argumenten komt. De argumenten onderbouwen de stelling eerst; de tegenwerping volgt daarna.",
+         "Koos je \"4, 3, 1, 2\"? Dan denk je dat de argumenten vóór de inleiding horen. De stelling moet eerst bekend zijn, dus de inleiding staat vooraan."
+        ],
+        "uh": "Vaste volgorde.",
+        "ctx": "Alinea's van een betoog door elkaar: 1. Conclusie, 2. Een tegenwerping met weerlegging, 3. Inleiding met stelling, 4. Argumenten."
+       },
+       {
+        "v": "Welk woord geeft een toevoeging aan?",
+        "o": [
+         "echter, dat een tegenstelling aangeeft",
+         "dus, dat een conclusie aankondigt",
+         "hoewel, dat een tegenstelling inleidt",
+         "bovendien"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "\"Bovendien\" voegt iets toe.",
+        "uo": [
+         "Koos je \"echter, dat een tegenstelling aangeeft\"? Dan denk je dat \"echter\" iets toevoegt. Het zet juist iets tegenover het vorige, dus het is een tegenstelling.",
+         "Koos je \"dus, dat een conclusie aankondigt\"? Dan denk je dat \"dus\" iets toevoegt. Het trekt een conclusie, en is dus geen toevoeging.",
+         "Koos je \"hoewel, dat een tegenstelling inleidt\"? Dan denk je dat \"hoewel\" iets toevoegt. Het zet twee dingen tegenover elkaar, en voegt niets toe.",
+         "Klopt: \"bovendien\" voegt iets toe aan wat al is gezegd."
+        ],
+        "uh": "Toevoegen = bovendien."
+       },
+       {
+        "v": "Wat kan de schrijver het best doen om de tekst leesbaarder te maken?",
+        "o": [
+         "tussenkopjes boven de delen zetten die over één vorm van energie gaan",
+         "alle alinea's tot één lange alinea samenvoegen",
+         "de kernzinnen uit de alinea's schrappen",
+         "de conclusie naar het begin verplaatsen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Tussenkopjes maken een lange tekst overzichtelijk.",
+        "uo": [
+         "Klopt: kopjes tonen de opbouw en laten de lezer snel vinden wat hij zoekt.",
+         "Koos je \"alle alinea's tot één lange alinea samenvoegen\"? Dan denk je dat één alinea overzichtelijker is. Het maakt de tekst juist een grote massa, en het onderwerp raakt zoek.",
+         "Koos je \"de kernzinnen uit de alinea's schrappen\"? Dan denk je dat kernzinnen de tekst langer maken. Ze geven juist houvast, en zonder kernzinnen is het moeilijker te volgen.",
+         "Koos je \"de conclusie naar het begin verplaatsen\"? Dan denk je dat dit de leesbaarheid verbetert. Een conclusie hoort aan het einde, en het verplaatsen helpt niet bij het vinden van onderdelen."
+        ],
+        "uh": "Kopjes voor overzicht.",
+        "ctx": "Een tekst van tien alinea's over verschillende vormen van energie heeft geen enkel tussenkopje."
+       },
+       {
+        "v": "Waaruit herken je dat een nieuwe alinea moet beginnen?",
+        "o": [
+         "de regel is vol en je moet naar de volgende regel",
+         "er komt een nieuw deelonderwerp",
+         "je hebt een komma gebruikt",
+         "je hebt een bijvoeglijk naamwoord gebruikt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Een nieuw deelonderwerp vraagt om een nieuwe alinea.",
+        "uo": [
+         "Koos je \"de regel is vol en je moet naar de volgende regel\"? Dan denk je dat het einde van een regel een nieuwe alinea is. Een regeleinde zegt niets over de inhoud, dus het is geen aanleiding.",
+         "Klopt: een nieuw deelonderwerp krijgt een eigen alinea.",
+         "Koos je \"je hebt een komma gebruikt\"? Dan denk je dat leestekens alinea's bepalen. Een komma staat midden in een zin; alinea's volgen het onderwerp.",
+         "Koos je \"je hebt een bijvoeglijk naamwoord gebruikt\"? Dan denk je dat woordsoorten alinea's bepalen. Alleen de inhoud telt, dus het onderwerp bepaalt het begin van een nieuwe alinea."
+        ],
+        "uh": "Nieuw onderwerp, nieuwe alinea."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een alinea gaat over de kosten van een auto, het milieu en de files in de stad.",
+        "v": "Wat is hier het probleem en hoe los je het op?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Er staan drie deelonderwerpen in één alinea (1 punt). Splits de alinea in drie alinea's, elk met een eigen kernzin (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een alinea begint met: \"Sporten is gezond.\" Daarna volgen drie zinnen over hart, spieren en slaap.",
+        "v": "Wat is de kernzin en hoe heet de rest van de alinea?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De kernzin is \"Sporten is gezond.\" (1 punt); de rest is de uitwerking (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een tekst over zonne-energie begint met een droge definitie uit een naslagwerk.",
+        "v": "Waarom is dit een zwakke opening en wat kan beter?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een droge definitie wekt geen nieuwsgierigheid (1 punt). Beter: een concreet feit of een vraag die de lezer pakt (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Twee zinnen: \"Lucas oefende elke dag. Hij haalde een hoog cijfer.\"",
+        "v": "Welk signaalwoord geeft het verband aan en welk verband is dat?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld \"daardoor\" (1 punt); het is een oorzaak-gevolgverband (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zet de conclusie van zijn tekst in de tweede alinea en laat daarna nog drie alinea's met nieuwe argumenten volgen.",
+        "v": "Wat is hier mis?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De opbouw klopt niet (1 punt): de conclusie hoort aan het einde, nieuwe argumenten na de conclusie verwarren de lezer (1 punt)."
+       }
+      ]
+     },
+     {
+      "id": "C5",
+      "lo": "nl.C.5",
+      "gs": 2,
+      "naam": "Schrijftaal, stijl en correctheid",
+      "beschrijving": "Je schrijft in een register dat bij de lezer past, voorkomt stijlfouten, schrijft een formele brief en let op spelling en leestekens.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Schrijftaal en spreektaal",
+       "Stijlfouten voorkomen",
+       "Een formele brief",
+       "Spelling van werkwoorden",
+       "Leestekens",
+       "Een consequente aanspreekvorm"
+      ],
+      "sam": "Schrijftaal is verzorgd en volledig, spreektaal is los met stopwoorden en omgangstaal. Stijlfouten zijn bijvoorbeeld herhaling, omslachtige zinnen en onduidelijke verwijzingen. Een formele brief heeft een passende aanhef (Geachte ...), de aanspreekvorm u en een formele afsluiting. Let op werkwoordspelling (ik vind, hij vindt, hij werkte, gewerkt) en leestekens (vraagteken, komma in opsommingen, aanhalingstekens bij een citaat).",
+      "begrippen": [
+       {
+        "t": "Schrijftaal",
+        "d": "Verzorgde taal voor geschreven teksten."
+       },
+       {
+        "t": "Spreektaal",
+        "d": "Losse taal zoals je praat, met stopwoorden en omgangstaal."
+       },
+       {
+        "t": "Stijlfout",
+        "d": "Een fout in woordkeus of zinsbouw die de tekst onverzorgd maakt."
+       },
+       {
+        "t": "Formele brief",
+        "d": "Een brief aan een instantie of onbekende met een vaste opbouw."
+       },
+       {
+        "t": "Aanhef",
+        "d": "De begroeting aan het begin van een brief."
+       },
+       {
+        "t": "Aanspreekvorm",
+        "d": "Of je de lezer met u of je aanspreekt."
+       },
+       {
+        "t": "Spelling",
+        "d": "De juiste schrijfwijze van woorden."
+       },
+       {
+        "t": "Interpunctie",
+        "d": "De leestekens in een tekst."
+       },
+       {
+        "t": "Stam",
+        "d": "Het werkwoord zonder -en, bijvoorbeeld \"werk\" bij \"werken\"."
+       },
+       {
+        "t": "Verwijswoord",
+        "d": "Een woord dat naar iets eerders verwijst, zoals \"hij\" of \"dit\"."
+       },
+       {
+        "t": "Stopwoord",
+        "d": "Een overbodig woord dat vooral in spreektaal voorkomt."
+       },
+       {
+        "t": "Register",
+        "d": "De mate van formeel of informeel taalgebruik."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke zin is schrijftaal?",
+        "o": [
+         "Nou, dat huiswerk kost gewoon echt veel te veel tijd, zeg maar.",
+         "Ik ben van mening dat het huiswerk te veel tijd kost.",
+         "Huiswerk? Kost te veel tijd, man!",
+         "Huiswerk, joh, dat vreet echt tijd, hè."
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Schrijftaal is verzorgd en volledig, spreektaal is los en vol omgangstaal.",
+        "uo": [
+         "Koos je \"Nou, dat huiswerk kost gewoon echt veel te veel...\"? Dan denk je dat dit geschreven taal is. Woorden als \"nou\", \"gewoon\", \"echt\" en \"zeg maar\" horen bij spreektaal, en passen niet in een verzorgde tekst.",
+         "Klopt: een volledige, verzorgde zin zonder spreektaalwoorden is schrijftaal.",
+         "Koos je \"Huiswerk? Kost te veel tijd, man!\"? Dan denk je dat dit geschreven taal is. Het is een afgebroken, losse zin met een uitroep, typisch voor spreektaal.",
+         "Koos je \"Huiswerk, joh, dat vreet echt tijd, hè.\"? Dan denk je dat dit schrijftaal is. Woorden als \"joh\", \"vreet\" en \"hè\" zijn omgangstaal, dus niet geschikt voor een verzorgde tekst."
+        ],
+        "uh": "Schrijftaal = verzorgd."
+       },
+       {
+        "v": "Welk woord is typisch spreektaal en past niet in een formele tekst?",
+        "o": [
+         "bovendien, dat een toevoeging aangeeft",
+         "namelijk, dat een uitleg inleidt",
+         "derhalve, dat een gevolg aangeeft",
+         "zeg maar"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Stopwoorden als \"zeg maar\" horen bij spreektaal.",
+        "uo": [
+         "Koos je \"bovendien, dat een toevoeging aangeeft\"? Dan denk je dat dit spreektaal is. \"Bovendien\" is een gewoon signaalwoord in schrijftaal, en past goed in formele tekst.",
+         "Koos je \"namelijk, dat een uitleg inleidt\"? Dan denk je dat dit spreektaal is. \"Namelijk\" is een verbindend woord in schrijftaal, en is dus geschikt.",
+         "Koos je \"derhalve, dat een gevolg aangeeft\"? Dan denk je dat dit spreektaal is. \"Derhalve\" is juist formeel, en past dus in verzorgde tekst.",
+         "Klopt: \"zeg maar\" is een stopwoord uit gesproken taal."
+        ],
+        "uh": "Stopwoord = spreektaal."
+       },
+       {
+        "v": "Waarom is het herhalen van hetzelfde woord in drie opeenvolgende zinnen een stijlfout?",
+        "o": [
+         "de tekst wordt eentonig en onzorgvuldig",
+         "omdat een woord maar twee keer in een tekst mag voorkomen",
+         "omdat herhaling altijd spelfouten oplevert",
+         "omdat de lezer dan denkt dat je woorden hebt overgenomen uit een bron"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Veel herhaling maakt een tekst eentonig.",
+        "uo": [
+         "Klopt: afwisseling in woordkeus maakt een tekst prettiger leesbaar.",
+         "Koos je \"omdat een woord maar twee keer in een tekst mag...\"? Dan denk je dat er een vaste grens is. Er is geen vast aantal; het gaat om de eentonigheid binnen de zinnen.",
+         "Koos je \"omdat herhaling altijd spelfouten oplevert\"? Dan denk je dat herhalen spelfouten veroorzaakt. Herhaling heeft met stijl te maken, niet met spelling.",
+         "Koos je \"omdat de lezer dan denkt dat je woorden hebt...\"? Dan denk je dat herhaling plagiaat suggereert. Het gaat om stijl, niet om bronvermelding."
+        ],
+        "uh": "Varieer in woordkeus."
+       },
+       {
+        "v": "Wat is er stilistisch mis met deze zin?",
+        "o": [
+         "de zin is te kort om iets te betekenen en moet worden uitgebreid met meer voorbeelden",
+         "de zin bevat geen werkwoord, waardoor hij onvolledig is",
+         "te veel herhaling van \"idee\" en \"het is\", waardoor de zin omslachtig wordt",
+         "de zin is in de verleden tijd geschreven en dat past niet"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Herhaling en omslachtigheid maken een zin zwak.",
+        "uo": [
+         "Koos je \"de zin is te kort om iets te betekenen en moet...\"? Dan denk je dat de zin te kort is. Hij is juist te lang en omslachtig; de herhaling is het probleem.",
+         "Koos je \"de zin bevat geen werkwoord, waardoor hij...\"? Dan denk je dat er geen werkwoord staat. Er staan werkwoorden in, het probleem is dat dezelfde woorden steeds terugkomen.",
+         "Klopt: dezelfde woorden worden onnodig herhaald; je kunt dit veel korter zeggen.",
+         "Koos je \"de zin is in de verleden tijd geschreven en dat...\"? Dan denk je dat de tijd het probleem is. De tijd is juist, het probleem is de herhaling en omslachtigheid."
+        ],
+        "uh": "Korter en afwisselender.",
+        "ctx": "Een leerling schrijft: \"Het is een goed idee en het is een idee dat veel mensen vinden dat het een goed idee is.\""
+       },
+       {
+        "v": "Welk probleem zit hier in de verwijzing?",
+        "o": [
+         "\"gingen\" hoort in de tegenwoordige tijd te staan",
+         "\"wedstrijd\" moet met een hoofdletter geschreven worden",
+         "onduidelijk of \"hij\" de broer of de vader is",
+         "de twee zinnen moeten één zin worden"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Een verwijswoord moet eenduidig zijn.",
+        "uo": [
+         "Koos je \"gingen hoort in de tegenwoordige tijd te staan\"? Dan denk je dat de werkwoordstijd fout is. De tijd is hier niet het probleem; het probleem is dat \"hij\" onduidelijk is.",
+         "Koos je \"wedstrijd moet met een hoofdletter geschreven worden\"? Dan denk je dat hoofdletters het probleem zijn. Een gewoon zelfstandig naamwoord krijgt er geen, het probleem is de verwijzing.",
+         "Klopt: \"hij\" kan naar beide verwijzen, dus de lezer weet niet wie bedoeld is.",
+         "Koos je \"de twee zinnen moeten één zin worden\"? Dan denk je dat de zinnen te kort zijn. Samenvoegen lost de verwijzing niet op; de verwijzing moet duidelijk gemaakt worden."
+        ],
+        "uh": "Wie is \"hij\"?",
+        "ctx": "Een leerling schrijft: \"Mijn broer en mijn vader gingen naar de wedstrijd. Hij vond het geweldig.\""
+       },
+       {
+        "v": "Welke aanhef past in een formele brief aan een onbekende mevrouw?",
+        "o": [
+         "Geachte mevrouw,",
+         "Hallo mevrouwtje,",
+         "Yo mevrouw,",
+         "Hé hé, mevrouw,"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Een formele brief begint met \"Geachte ...\".",
+        "uo": [
+         "Klopt: \"Geachte mevrouw,\" is de gebruikelijke formele aanhef.",
+         "Koos je \"Hallo mevrouwtje,\"? Dan denk je dat dit netjes is. \"Hallo\" is informeel en \"mevrouwtje\" is brutaal, dus het past niet in een formele brief.",
+         "Koos je \"Yo mevrouw,\"? Dan denk je dat dit past. \"Yo\" is straattaal, en dat is niet formeel.",
+         "Koos je \"Hé hé, mevrouw,\"? Dan denk je dat dit past bij een formele brief. Het is spreektaal met een uitroepachtige toon, dus niet geschikt."
+        ],
+        "uh": "Formele aanhef."
+       },
+       {
+        "v": "Welke afsluiting past bij een formele brief?",
+        "o": [
+         "Doeg!",
+         "Tot later, lekker bezig!",
+         "Groetjes, joh,",
+         "Met vriendelijke groet,"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Een formele brief sluit af met \"Met vriendelijke groet,\".",
+        "uo": [
+         "Koos je \"Doeg!\"? Dan denk je dat dit past. \"Doeg\" is een informele groet, en past niet bij een formele brief.",
+         "Koos je \"Tot later, lekker bezig!\"? Dan denk je dat dit past bij een formele brief. Het is spreektaal en klinkt te los, dus het is niet geschikt.",
+         "Koos je \"Groetjes, joh,\"? Dan denk je dat dit past. \"Groetjes\" en \"joh\" zijn informeel, dus niet geschikt voor een formele brief.",
+         "Klopt: dit is een gebruikelijke formele afsluiting."
+        ],
+        "uh": "Formele afsluiting."
+       },
+       {
+        "v": "Welk probleem zit er in de aanspreekvorm?",
+        "o": [
+         "\"graag\" is te beleefd voor een formele brief, want daar hoort een zakelijke toon",
+         "\"jij\" past niet bij \"Geachte heer\", er hoort \"u\" te staan",
+         "\"Geachte\" moet vervangen worden door \"Beste\"",
+         "de zin hoeft geen vraag te bevatten"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Gebruik in een formele brief \"u\" en blijf daarbij.",
+        "uo": [
+         "Koos je \"graag is te beleefd voor een formele brief, want...\"? Dan denk je dat het woord te beleefd is. Beleefdheid past bij formele brieven; het probleem is de aanspreekvorm \"jij\".",
+         "Klopt: in een formele brief spreek je de ander met \"u\" aan en blijf je daarbij.",
+         "Koos je \"Geachte moet vervangen worden door Beste\"? Dan denk je dat de aanhef fout is. \"Geachte\" past bij een formele brief; het probleem is \"jij\" in plaats van \"u\".",
+         "Koos je \"de zin hoeft geen vraag te bevatten\"? Dan denk je dat het probleem de vraag is. Een vraag mag best in een formele brief; de aanspreekvorm moet kloppen."
+        ],
+        "uh": "U, niet jij.",
+        "ctx": "Een leerling schrijft aan de directeur: \"Geachte heer De Vries, Ik wil graag weten of jij mijn verzoek hebt gelezen.\""
+       },
+       {
+        "v": "Welke werkwoordsvorm hoort bij \"hij\" in de tegenwoordige tijd?",
+        "o": [
+         "Hij word morgen tien jaar.",
+         "Hij wort morgen tien jaar.",
+         "Hij wordd morgen tien jaar.",
+         "Hij wordt morgen tien jaar."
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Bij hij, zij en het krijgt het werkwoord stam + t.",
+        "uo": [
+         "Koos je \"Hij word morgen tien jaar.\"? Dan denk je dat de stam genoeg is. Bij \"hij\" hoort de stam plus -t, dus \"wordt\".",
+         "Koos je \"Hij wort morgen tien jaar.\"? Dan denk je dat de d niet geschreven wordt. De stam is \"word\" met een d, en bij \"hij\" komt er een t bij.",
+         "Koos je \"Hij wordd morgen tien jaar.\"? Dan denk je dat er een extra d moet. De stam is \"word\" en daar komt alleen een t bij, dus \"wordt\".",
+         "Klopt: bij \"hij\" krijgt het werkwoord een -t: wordt."
+        ],
+        "uh": "Hij wordt."
+       },
+       {
+        "v": "In welke zin staat de juiste vorm van \"vinden\" bij \"ik\"?",
+        "o": [
+         "Ik vindt het een goed plan.",
+         "Ik vind het een goed plan.",
+         "Ik vint het een goed plan.",
+         "Ik vinde het een goed plan."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Bij ik schrijf je de stam van het werkwoord.",
+        "uo": [
+         "Koos je \"Ik vindt het een goed plan.\"? Dan denk je dat bij \"ik\" een t hoort. Bij \"ik\" schrijf je alleen de stam, dus \"vind\".",
+         "Klopt: bij \"ik\" schrijf je alleen de stam van het werkwoord, dus \"vind\" met een d en zonder t.",
+         "Koos je \"Ik vint het een goed plan.\"? Dan denk je dat de d als t geschreven wordt. De stam is \"vind\" met een d, en dat blijft zo bij \"ik\".",
+         "Koos je \"Ik vinde het een goed plan.\"? Dan denk je dat er een -e achter moet. Bij \"ik\" is de vorm de stam, dus \"vind\"."
+        ],
+        "uh": "Ik vind."
+       },
+       {
+        "v": "Welke verleden tijd is goed gespeld?",
+        "o": [
+         "Hij werkde hard.",
+         "Hij werkdt hard.",
+         "Hij werkte hard.",
+         "Hij werkt hard."
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Na een stam op k ('t kofschip) komt -te in de verleden tijd.",
+        "uo": [
+         "Koos je \"Hij werkde hard.\"? Dan denk je dat het -de moet zijn. De stam eindigt op k, uit 't kofschip, dus het wordt -te.",
+         "Koos je \"Hij werkdt hard.\"? Dan denk je dat de uitgang wordt samengevoegd. Een verleden tijd heeft -te of -de als uitgang, geen losse -dt.",
+         "Klopt: de stam \"werk\" eindigt op een k, een medeklinker uit 't kofschip, dus de verleden tijd eindigt op -te.",
+         "Koos je \"Hij werkt hard.\"? Dan denk je dat dit de verleden tijd is. Dit is de tegenwoordige tijd, de verleden tijd is \"werkte\"."
+        ],
+        "uh": "'t kofschip: -te."
+       },
+       {
+        "v": "Welk leesteken hoort aan het einde van een vraag?",
+        "o": [
+         "een vraagteken",
+         "een punt",
+         "een komma",
+         "een puntkomma"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Een vraag eindigt met een vraagteken.",
+        "uo": [
+         "Klopt: een vraag eindigt met een vraagteken, dat laat zien dat de zin een vraag is.",
+         "Koos je \"een punt\"? Dan denk je dat een vraag met een punt eindigt. Een punt is voor mededelende zinnen, vragen krijgen een vraagteken.",
+         "Koos je \"een komma\"? Dan denk je dat een komma een zin afsluit. Een komma staat binnen een zin, niet aan het einde.",
+         "Koos je \"een puntkomma\"? Dan denk je dat een puntkomma een vraag afsluit. Een puntkomma verbindt delen van een zin, en sluit geen vraag af."
+        ],
+        "uh": "Vraag = ?"
+       },
+       {
+        "v": "Welke opsomming is goed geschreven?",
+        "o": [
+         "Ik koop appels, peren en bananen.",
+         "Ik koop appels peren en bananen.",
+         "Ik koop appels, peren, en, bananen.",
+         "Ik koop, appels peren en bananen."
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "In een opsomming scheid je de delen met komma's en gebruik je \"en\" voor het laatste.",
+        "uo": [
+         "Klopt: tussen de delen staan komma's en voor het laatste deel staat \"en\" zonder komma.",
+         "Koos je \"Ik koop appels peren en bananen.\"? Dan denk je dat de komma's wegkunnen. In een opsomming scheid je de eerste delen met komma's, anders is het niet duidelijk.",
+         "Koos je \"Ik koop appels, peren, en, bananen.\"? Dan denk je dat voor elk woord een komma hoort. Voor \"en\" staat geen komma, dus dit is te veel.",
+         "Koos je \"Ik koop, appels peren en bananen.\"? Dan denk je dat de komma achter het werkwoord hoort. Daar hoort geen komma, de komma's staan tussen de opgesomde delen."
+        ],
+        "uh": "Komma's + en."
+       },
+       {
+        "v": "Wat is er mis?",
+        "o": [
+         "niets, want aanhalingstekens zijn alleen voor titels",
+         "er moeten haakjes om de zin",
+         "woordelijk overgenomen tekst hoort tussen aanhalingstekens",
+         "er moet een uitroepteken achter"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Letterlijk overgenomen tekst hoort tussen aanhalingstekens.",
+        "uo": [
+         "Koos je \"niets, want aanhalingstekens zijn alleen voor titels\"? Dan denk je dat aanhalingstekens alleen voor titels zijn. Ze markeren ook letterlijk overgenomen tekst, en dat laat je niet weg.",
+         "Koos je \"er moeten haakjes om de zin\"? Dan denk je dat haakjes bij een citaat horen. Een citaat staat tussen aanhalingstekens, haakjes zijn voor een toevoeging.",
+         "Klopt: een citaat staat tussen aanhalingstekens, anders lijkt het eigen werk.",
+         "Koos je \"er moet een uitroepteken achter\"? Dan denk je dat een uitroepteken nodig is. Het is een gewone mededeling, dus geen uitroepteken."
+        ],
+        "uh": "Citaat = aanhalingstekens.",
+        "ctx": "Een leerling neemt een zin letterlijk over uit een rapport, maar zet er geen aanhalingstekens omheen."
+       },
+       {
+        "v": "Waarom blijf je in een tekst consequent bij \"u\" of \"je\"?",
+        "o": [
+         "omdat de spellingregels dat verplicht stellen en er een officiële regel voor bestaat",
+         "anders raakt de lezer in de war en lijkt de tekst onverzorgd",
+         "omdat \"u\" eigenlijk altijd beter is",
+         "omdat de lezer dan sneller leest"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 5,
+        "u": "Wissel niet tussen u en je in dezelfde tekst.",
+        "uo": [
+         "Koos je \"omdat de spellingregels dat verplicht stellen en er...\"? Dan denk je dat het een spellingregel is. Het gaat om stijl en samenhang, niet om spelling.",
+         "Klopt: wisselen tussen \"u\" en \"je\" valt op en past niet bij een verzorgde tekst.",
+         "Koos je \"omdat u eigenlijk altijd beter is\"? Dan denk je dat een van de twee beter is. Beide kunnen, maar je blijft bij je keuze.",
+         "Koos je \"omdat de lezer dan sneller leest\"? Dan denk je dat het om leessnelheid gaat. Het gaat om een verzorgde tekst, en consequent taalgebruik."
+        ],
+        "uh": "Blijf bij je keuze."
+       },
+       {
+        "v": "Welk stijlprobleem zit hierin?",
+        "o": [
+         "de brief is te beleefd en te lang voor wat de schrijver wil vragen",
+         "de brief gebruikt het woord \"bestelling\"",
+         "de brief is te kort",
+         "de aanspreekvorm wisselt van \"u\" naar \"jij\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Houd één aanspreekvorm aan.",
+        "uo": [
+         "Koos je \"de brief is te beleefd en te lang voor wat de...\"? Dan denk je dat de toon te beleefd is. Beleefdheid is gepast; het probleem is dat de aanspreekvorm wisselt.",
+         "Koos je \"de brief gebruikt het woord bestelling\"? Dan denk je dat dit woord een fout is. Het woord is correct; het probleem is de aanspreekvorm.",
+         "Koos je \"de brief is te kort\"? Dan denk je dat de lengte het probleem is. De lengte is hier niet het probleem; het probleem is dat de aanspreekvorm wisselt.",
+         "Klopt: wisselen van \"u\" naar \"jij\" in één brief is een stijlfout."
+        ],
+        "uh": "Consequent u.",
+        "ctx": "Een leerling schrijft in een brief aan een bedrijf: \"Geachte heer, u heeft mijn bestelling nog niet bezorgd. Jij moet dit snel oplossen.\""
+       },
+       {
+        "v": "Wat moet hij aanpassen?",
+        "o": [
+         "niets, want een mail mag altijd informeel zijn, ook als hij naar een bedrijf gaat",
+         "de spreektaal vervangen door verzorgde schrijftaal en een passende aanhef",
+         "alleen de laatste zin, want de rest is prima",
+         "de mail moet langer worden"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Een formele mail vraagt verzorgde schrijftaal.",
+        "uo": [
+         "Koos je \"niets, want een mail mag altijd informeel zijn, ook...\"? Dan denk je dat mail altijd informeel is. Bij een bedrijf past een formeel register, dus je past je taal aan.",
+         "Klopt: \"hoi\", \"echt super\", \"dus nou\" zijn spreektaal; een formele mail vraagt verzorgde taal.",
+         "Koos je \"alleen de laatste zin, want de rest is prima\"? Dan denk je dat alleen de laatste zin fout is. Ook \"hoi\" en \"echt super\" zijn te informeel, dus meer moet aangepast.",
+         "Koos je \"de mail moet langer worden\"? Dan denk je dat lengte het probleem is. Het probleem is de toon en woordkeus, niet de lengte."
+        ],
+        "uh": "Pas het register aan.",
+        "ctx": "Een leerling moet een formele mail schrijven aan een bedrijf. Hij schrijft: \"Hoi, ik vond jullie product echt super. Dus nou wil ik graag weten wat het kost.\""
+       },
+       {
+        "v": "Hoe verbeter je deze zin het best?",
+        "o": [
+         "kort en stellig: \"Het is belangrijk dat je het doet.\"",
+         "langer en vager, zodat niemand het oneens kan zijn",
+         "er nog meer afzwakkers aan toevoegen, zoals \"zeg maar\" en \"een beetje\"",
+         "de zin in de verleden tijd zetten"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Schrap overbodige woorden en maak de zin helder.",
+        "uo": [
+         "Klopt: de overbodige stopwoorden en afzwakkers verdwijnen, de boodschap blijft.",
+         "Koos je \"langer en vager, zodat niemand het oneens kan zijn\"? Dan denk je dat vaag veilig is. Vaagheid maakt de zin zwak, en de lezer weet niet wat je bedoelt.",
+         "Koos je \"er nog meer afzwakkers aan toevoegen, zoals zeg...\"? Dan denk je dat afzwakkers de zin beter maken. Ze maken hem juist omslachtig, en de kern verdwijnt.",
+         "Koos je \"de zin in de verleden tijd zetten\"? Dan denk je dat de tijd het probleem is. Het probleem is de omslachtige formulering, niet de werkwoordstijd."
+        ],
+        "uh": "Kort en helder.",
+        "ctx": "Een leerling schrijft: \"Ik denk dat ik vind dat je zou kunnen zeggen dat het eigenlijk wel een beetje belangrijk is dat je het misschien doet.\""
+       },
+       {
+        "v": "Wie heeft gelijk en waarom?",
+        "o": [
+         "de klasgenoot, want het voltooid deelwoord eindigt altijd op -d",
+         "geen van beiden, want het moet \"gewerkte\" zijn",
+         "allebei, want beide spellingen bestaan",
+         "de leerling, want de stam \"werk\" eindigt op k en het voltooid deelwoord krijgt een -t"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Na een stam op k eindigt het voltooid deelwoord op -t.",
+        "uo": [
+         "Koos je \"de klasgenoot, want het voltooid deelwoord eindigt...\"? Dan denk je dat het altijd -d is. Dat hangt van de stam af; bij een stam op k hoort -t.",
+         "Koos je \"geen van beiden, want het moet gewerkte zijn\"? Dan denk je dat het deelwoord met -e eindigt. Het voltooid deelwoord is \"gewerkt\", zonder -e.",
+         "Koos je \"allebei, want beide spellingen bestaan\"? Dan denk je dat beide vormen goed zijn. Er is maar één juiste spelling, namelijk \"gewerkt\".",
+         "Klopt: na een stam op k ('t kofschip) eindigt het voltooid deelwoord op -t."
+        ],
+        "uh": "'t kofschip: -t.",
+        "ctx": "Een leerling schrijft in een zin: \"Ik heb gisteren hard gewerkt.\" Een klasgenoot zegt dat \"gewerkd\" moet."
+       },
+       {
+        "v": "Welke aanpassing is verstandig?",
+        "o": [
+         "\"Doei, Sam\"",
+         "\"Tot snel!!!\"",
+         "\"Met vriendelijke groet, Sam Jansen\"",
+         "geen afsluiting, want een brief hoeft niet af te sluiten"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Een formele brief sluit af met een gebruikelijke groet en de volledige naam.",
+        "uo": [
+         "Koos je \"Doei, Sam\"? Dan denk je dat dit past. \"Doei\" is informeel, en past niet bij een sollicitatiebrief.",
+         "Koos je \"Tot snel!!!\"? Dan denk je dat dit enthousiast en passend is. Meerdere uitroeptekens zijn informeel, en passen niet bij een formele brief.",
+         "Klopt: een sollicitatiebrief sluit formeel af, met volledige naam.",
+         "Koos je \"geen afsluiting, want een brief hoeft niet af te...\"? Dan denk je dat de afsluiting overbodig is. Een brief heeft een passende afsluiting, en een naam eronder."
+        ],
+        "uh": "Formele afsluiting.",
+        "ctx": "Een leerling schrijft een sollicitatiebrief met als afsluiting: \"Groetjes, Sam\". Hij schrijft de brief aan een bedrijf waar hij wil werken."
+       },
+       {
+        "v": "Welk probleem heeft deze zin als het een formeel betoog is?",
+        "o": [
+         "de zin is te beleefd en te vriendelijk voor een betoog dat moet overtuigen",
+         "de zin bevat geen werkwoord",
+         "de woorden \"gewoon\", \"echt\" en \"stom\" zijn omgangstaal en geven geen argument",
+         "de zin is te lang voor een betoog"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Gebruik in een betoog zakelijke taal met argumenten.",
+        "uo": [
+         "Koos je \"de zin is te beleefd en te vriendelijk voor een...\"? Dan denk je dat de zin te beleefd is. De zin is juist onbeleefd en vaag; het probleem is omgangstaal zonder argument.",
+         "Koos je \"de zin bevat geen werkwoord\"? Dan denk je dat het werkwoord ontbreekt. \"Is\" is het werkwoord; het probleem is de woordkeus.",
+         "Klopt: omgangstaal en een oordeel zonder argument passen niet in een formeel betoog.",
+         "Koos je \"de zin is te lang voor een betoog\"? Dan denk je dat de lengte het probleem is. De zin is kort; het probleem is de woordkeus en het ontbreken van onderbouwing."
+        ],
+        "uh": "Zakelijk en onderbouwd.",
+        "ctx": "Een leerling schrijft in een betoog: \"Dit idee is gewoon echt zo erg stom.\""
+       },
+       {
+        "v": "Welke twee leestekens zijn onjuist of overdreven?",
+        "o": [
+         "de komma's in beide zinnen",
+         "de hoofdletters aan het begin van de zinnen",
+         "het woord \"gezond\" mist aanhalingstekens",
+         "de punt achter de vraag en de drie uitroeptekens"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Een vraag eindigt met een vraagteken; gebruik niet meerdere uitroeptekens in een formele tekst.",
+        "uo": [
+         "Koos je \"de komma's in beide zinnen\"? Dan denk je dat er komma's fout zijn. Er staan geen komma's in deze zinnen; het probleem zit bij de leestekens aan het einde.",
+         "Koos je \"de hoofdletters aan het begin van de zinnen\"? Dan denk je dat de hoofdletters fout zijn. Een zin begint met een hoofdletter, dus dat is juist goed.",
+         "Koos je \"het woord gezond mist aanhalingstekens\"? Dan denk je dat het aanhalingstekens nodig heeft. Het is geen citaat, dus nee.",
+         "Klopt: een vraag krijgt een vraagteken, en meerdere uitroeptekens zijn niet formeel."
+        ],
+        "uh": "Eén teken, het juiste teken.",
+        "ctx": "Een leerling schrijft: \"Waarom is het belangrijk om te sporten.\" Daarna schrijft hij: \"Ik denk dat het gezond is!!!\""
+       },
+       {
+        "v": "Hoe verbeter je deze tekst stilistisch?",
+        "o": [
+         "zinnen samenvoegen en het woord \"strand\" afwisselen met \"het\" of \"daar\"",
+         "het woord \"strand\" in elke zin herhalen zodat het duidelijk blijft",
+         "alle zinnen in de verleden tijd naar de tegenwoordige tijd veranderen",
+         "meer zinnen toevoegen over het strand, zodat de tekst langer wordt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Voeg zinnen samen en varieer in woordkeus.",
+        "uo": [
+         "Klopt: samenvoegen en variëren maakt de tekst vloeiender en minder eentonig.",
+         "Koos je \"het woord strand in elke zin herhalen zodat het...\"? Dan denk je dat herhaling duidelijkheid geeft. Zo'n tekst klinkt eentonig, terwijl verwijzen en samenvoegen even duidelijk is.",
+         "Koos je \"alle zinnen in de verleden tijd naar de...\"? Dan denk je dat de tijd het probleem is. De tijd klopt juist, het probleem is de eentonige herhaling.",
+         "Koos je \"meer zinnen toevoegen over het strand, zodat de...\"? Dan denk je dat meer zinnen de tekst verbeteren. Het maakt de eentonigheid groter, dus dit lost niets op."
+        ],
+        "uh": "Samenvoegen, variëren.",
+        "ctx": "Een leerling schrijft: \"Het was een leuke dag. We gingen naar het strand. Het strand was mooi. Het strand had zand. Het strand was groot.\""
+       },
+       {
+        "v": "Welke zin heeft de juiste vorm van het werkwoord?",
+        "o": [
+         "Jij word morgen tien jaar.",
+         "Jij wordt morgen tien jaar.",
+         "Jij wordd morgen tien jaar.",
+         "Jij wort morgen tien jaar."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Bij jij in een mededeling schrijf je stam + t.",
+        "uo": [
+         "Koos je \"Jij word morgen tien jaar.\"? Dan denk je dat bij \"jij\" alleen de stam hoort. In een mededeling krijgt \"jij\" stam plus t, dus \"wordt\".",
+         "Klopt: bij \"jij\" in een mededeling schrijf je de stam plus -t, dus \"wordt\".",
+         "Koos je \"Jij wordd morgen tien jaar.\"? Dan denk je dat er een extra d nodig is. De stam is \"word\" en daar komt alleen een t bij, dus \"wordt\" is juist.",
+         "Koos je \"Jij wort morgen tien jaar.\"? Dan denk je dat de d niet geschreven wordt. De stam bevat een d, en die blijft staan: \"wordt\"."
+        ],
+        "uh": "Jij wordt."
+       },
+       {
+        "v": "Wat moet hij bij de tweede boodschap aanpassen?",
+        "o": [
+         "niets, want beide lezers zijn mensen op school",
+         "alleen het woord \"morgen\"",
+         "alleen het vraagteken",
+         "de aanhef en de aanspreekvorm naar \"Geachte heer\" en \"u\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Pas de aanspreekvorm aan op de lezer.",
+        "uo": [
+         "Koos je \"niets, want beide lezers zijn mensen op school\"? Dan denk je dat dezelfde toon voor elke lezer past. Een directeur vraagt een formeler register, dus je past de aanhef en de aanspreekvorm aan.",
+         "Koos je \"alleen het woord morgen\"? Dan denk je dat het woord \"morgen\" het probleem is. Het woord is prima; het probleem is de aanhef en de aanspreekvorm.",
+         "Koos je \"alleen het vraagteken\"? Dan denk je dat het vraagteken fout is. Het vraagteken klopt, het probleem is het register.",
+         "Klopt: een directeur spreek je formeel aan, met een passende aanhef en met u."
+        ],
+        "uh": "Directeur = u.",
+        "ctx": "Een leerling schrijft aan een klasgenoot: \"Hoi, kun je me morgen helpen?\" Daarna schrijft hij aan de directeur: \"Hoi, kun je me morgen helpen?\""
+       },
+       {
+        "v": "Welke woorden maken de zin minder verzorgd?",
+        "o": [
+         "\"gewoon echt\", omdat het omgangstaal is",
+         "\"mening\", omdat dat in een betoog niet mag",
+         "\"sporten\", omdat dat een werkwoord is",
+         "\"want\", omdat een zin daar niet mee mag beginnen of eindigen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Omgangstaal als \"gewoon echt\" past niet in verzorgde schrijftaal.",
+        "uo": [
+         "Klopt: \"gewoon echt\" is gesproken taal, voegt geen betekenis toe en past niet in een verzorgde tekst.",
+         "Koos je \"mening, omdat dat in een betoog niet mag\"? Dan denk je dat het woord niet mag. Het woord is prima; het probleem zit in de omgangstaal.",
+         "Koos je \"sporten, omdat dat een werkwoord is\"? Dan denk je dat het werkwoord het probleem is. Het is hier een zelfstandig naamwoord, en het is niet het probleem.",
+         "Koos je \"want, omdat een zin daar niet mee mag beginnen of...\"? Dan denk je dat het woord het probleem is. Het woord is een gewone verbinding, en niet fout."
+        ],
+        "uh": "Schrap omgangstaal.",
+        "ctx": "Een leerling schrijft: \"Mijn mening is dat ik het jammer vind dat sporten op school te weinig aandacht krijgt, want het is gewoon echt belangrijk.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft in een betoog: \"Dit idee is gewoon echt zo erg stom.\"",
+        "v": "Welk probleem heeft deze zin en hoe verbeter je hem?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De woorden \"gewoon\", \"echt\" en \"stom\" zijn omgangstaal en geven geen argument (1 punt). Beter: een zakelijke zin met een reden, bijvoorbeeld \"Dit idee is onhandig, omdat het veel tijd kost\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft aan een directeur: \"Geachte heer De Vries, ik wil graag weten of jij mijn verzoek hebt gelezen.\"",
+        "v": "Welke fout zit hierin en hoe verbeter je hem?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De aanspreekvorm wisselt van \"u\" (Geachte heer) naar \"jij\" (1 punt). Verbeterd: \"of u mijn verzoek heeft gelezen\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft: \"Hij werkde hard en hij heeft gewerkd.\"",
+        "v": "Verbeter de twee werkwoordsvormen en leg uit waarom.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "\"werkte\" en \"gewerkt\" (1 punt): de stam \"werk\" eindigt op k, een medeklinker uit 't kofschip, dus -te in de verleden tijd en -t in het voltooid deelwoord (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft: \"Mijn broer en mijn vader gingen naar de wedstrijd. Hij vond het geweldig.\"",
+        "v": "Welk probleem zit hierin en hoe los je het op?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Onduidelijk wie \"hij\" is (1 punt). Oplossing: noem het onderwerp, bijvoorbeeld \"Mijn vader vond het geweldig\" (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling sluit een sollicitatiebrief af met \"Groetjes, Sam\".",
+        "v": "Welke afsluiting past beter en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "\"Met vriendelijke groet, Sam Jansen\" (1 punt), want een sollicitatiebrief vraagt een formeel register en een volledige naam (1 punt)."
+       }
+      ]
+     },
+     {
+      "id": "C6",
+      "lo": "nl.C.6",
+      "gs": 2,
+      "naam": "Een tekst reviseren op commentaar",
+      "beschrijving": "Je leest commentaar van een lezer, bepaalt wat het belangrijkste is, past je tekst gericht aan en controleert daarna het geheel.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Commentaar lezen en begrijpen",
+       "Soorten commentaar",
+       "Prioriteren",
+       "Aanpassen en controleren",
+       "Afwegen en afwijzen",
+       "Doorvragen en verwerken"
+      ],
+      "sam": "Reviseren is je tekst verbeteren op grond van commentaar. Je leest het commentaar eerst goed, bepaalt of het over inhoud, opbouw, stijl of spelling gaat, pakt de grote punten (inhoud en opbouw) eerst aan en controleert daarna de hele tekst op nieuwe fouten en kapotte verwijzingen. Commentaar waar je het niet mee eens bent, weeg je af tegen je opdracht en wijs je alleen met een reden af; is het onduidelijk, dan vraag je door.",
+      "begrippen": [
+       {
+        "t": "Revisie",
+        "d": "Het verbeteren van een tekst op grond van commentaar."
+       },
+       {
+        "t": "Commentaar",
+        "d": "Opmerkingen van een lezer over je tekst."
+       },
+       {
+        "t": "Concept",
+        "d": "Een eerste versie van een tekst."
+       },
+       {
+        "t": "Eindversie",
+        "d": "De versie na revisie."
+       },
+       {
+        "t": "Inhoud",
+        "d": "Wat er in de tekst staat: argumenten, bewijs en conclusie."
+       },
+       {
+        "t": "Opbouw",
+        "d": "De ordening van de onderdelen van een tekst."
+       },
+       {
+        "t": "Stijl",
+        "d": "Woordkeus, toon en zinsbouw."
+       },
+       {
+        "t": "Spelling",
+        "d": "De juiste schrijfwijze van woorden."
+       },
+       {
+        "t": "Prioriteren",
+        "d": "Bepalen wat je eerst aanpakt."
+       },
+       {
+        "t": "Verwijzing",
+        "d": "Een woord of zin die naar iets anders in de tekst wijst."
+       },
+       {
+        "t": "Tegenstrijdigheid",
+        "d": "Twee uitspraken die elkaar tegenspreken."
+       },
+       {
+        "t": "Afwegen",
+        "d": "Beoordelen of commentaar bij je doel en opdracht past."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat doe je als eerste met commentaar op je tekst?",
+        "o": [
+         "meteen alle opmerkingen uitvoeren zonder erover na te denken",
+         "het goed lezen en bepalen wat de lezer bedoelt",
+         "de opmerkingen negeren die je niet leuk vindt en de rest laten liggen",
+         "de hele tekst opnieuw schrijven zonder naar het commentaar te kijken"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Lees commentaar eerst goed en begrijp wat er bedoeld wordt.",
+        "uo": [
+         "Koos je \"meteen alle opmerkingen uitvoeren zonder erover na...\"? Dan denk je dat snel aanpassen het beste is. Je kunt dan fouten maken of iets veranderen dat goed was, dus eerst begrijpen en dan aanpassen.",
+         "Klopt: je moet eerst begrijpen wat het commentaar zegt voordat je iets aanpast.",
+         "Koos je \"de opmerkingen negeren die je niet leuk vindt en de...\"? Dan denk je dat je kunt kiezen op gevoel. Elke opmerking verdient een weging, en afwijzen kan alleen met een reden.",
+         "Koos je \"de hele tekst opnieuw schrijven zonder naar het...\"? Dan denk je dat een nieuwe versie het commentaar overbodig maakt. Je gooit dan ook goede delen weg, en leert niet van wat de lezer zei."
+        ],
+        "uh": "Eerst begrijpen."
+       },
+       {
+        "v": "Waarom is commentaar van een lezer nuttig?",
+        "o": [
+         "omdat de lezer altijd gelijk heeft over je tekst",
+         "omdat je dan minder hoeft te schrijven",
+         "omdat een tekst pas af is als iemand hem goedkeurt",
+         "je ziet hoe iemand anders je tekst begrijpt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Commentaar laat zien hoe een lezer je tekst begrijpt.",
+        "uo": [
+         "Koos je \"omdat de lezer altijd gelijk heeft over je tekst\"? Dan denk je dat commentaar altijd klopt. Je weegt het zelf af, maar het geeft wel een andere kijk.",
+         "Koos je \"omdat je dan minder hoeft te schrijven\"? Dan denk je dat commentaar werk bespaart. Het geeft juist aanwijzingen voor aanpassing; het werk van herschrijven blijft.",
+         "Koos je \"omdat een tekst pas af is als iemand hem goedkeurt\"? Dan denk je dat goedkeuring het doel is. Het doel is een betere tekst, en dat helpt commentaar.",
+         "Klopt: een lezer toont waar je tekst onduidelijk of zwak is, wat jijzelf vaak niet ziet."
+        ],
+        "uh": "Lezer als spiegel."
+       },
+       {
+        "v": "Welk soort commentaar gaat over de inhoud van een tekst?",
+        "o": [
+         "\"Je argument heeft geen bewijs.\"",
+         "\"Je hebt drie spelfouten in de eerste alinea.\"",
+         "\"Je alinea's zijn te lang.\"",
+         "\"Je schrijft te informeel voor deze lezer.\""
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Commentaar kan over inhoud, opbouw, stijl of spelling gaan.",
+        "uo": [
+         "Klopt: dit gaat over wat er staat, niet over de vorm.",
+         "Koos je \"Je hebt drie spelfouten in de eerste alinea.\"? Dan denk je dat dit over de inhoud gaat. Spelfouten gaan over de vorm, niet over wat er staat.",
+         "Koos je \"Je alinea's zijn te lang.\"? Dan denk je dat dit over de inhoud gaat. Het gaat over opbouw, niet over wat je zegt.",
+         "Koos je \"Je schrijft te informeel voor deze lezer.\"? Dan denk je dat dit over de inhoud gaat. Het gaat over stijl en register, niet over de inhoud."
+        ],
+        "uh": "Inhoud = wat je zegt."
+       },
+       {
+        "v": "Wat voor soort commentaar is dit?",
+        "o": [
+         "commentaar op de spelling, want er staat een fout in de zin",
+         "commentaar op de lay-out van de pagina",
+         "commentaar op de opbouw en onderbouwing van het betoog",
+         "commentaar op de aanhef van de brief"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Commentaar over een ontbrekende schakel gaat over opbouw en onderbouwing.",
+        "uo": [
+         "Koos je \"commentaar op de spelling, want er staat een fout...\"? Dan denk je dat dit spelling is. De lezer zegt niets over spelling, maar over de redenering.",
+         "Koos je \"commentaar op de lay-out van de pagina\"? Dan denk je dat het over lay-out gaat. De lezer bedoelt de logica; niet het uiterlijk.",
+         "Klopt: de lezer mist een schakel tussen argumenten en conclusie.",
+         "Koos je \"commentaar op de aanhef van de brief\"? Dan denk je dat het over de aanhef gaat. De opmerking gaat over de conclusie, niet over de aanhef."
+        ],
+        "uh": "Schakel ontbreekt.",
+        "ctx": "Een lezer schrijft in de kantlijn: \"Hier snap ik niet hoe je tot je conclusie komt.\""
+       },
+       {
+        "v": "Welk onderdeel van de tekst raakt dit commentaar?",
+        "o": [
+         "de spelling van werkwoorden",
+         "de bronvermelding",
+         "de stijl en het register",
+         "de lengte van de tekst"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Commentaar over te informeel taalgebruik gaat over stijl en register.",
+        "uo": [
+         "Koos je \"de spelling van werkwoorden\"? Dan denk je dat dit over werkwoordspelling gaat. De lezer bedoelt de toon, niet de spelling.",
+         "Koos je \"de bronvermelding\"? Dan denk je dat het over bronnen gaat. De opmerking gaat over toon, niet over bronnen.",
+         "Klopt: informeel taalgebruik is een stijl- of registerkwestie.",
+         "Koos je \"de lengte van de tekst\"? Dan denk je dat de lengte het probleem is. De lezer zegt iets over de toon, niet over de lengte."
+        ],
+        "uh": "Toon = stijl.",
+        "ctx": "Een lezer schrijft naast een alinea: \"Dit is te informeel voor een brief aan de directeur.\""
+       },
+       {
+        "v": "Welke volgorde is verstandig bij het reviseren?",
+        "o": [
+         "eerst de grote punten (inhoud en opbouw), daarna stijl en spelling",
+         "eerst alle spelfouten verbeteren en daarna pas naar de inhoud kijken",
+         "alleen de kleine dingen verbeteren en de rest laten staan",
+         "de volgorde maakt niet uit, zolang je alles maar doet"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Revisie begint bij inhoud en opbouw, daarna stijl en spelling.",
+        "uo": [
+         "Klopt: als je eerst spelling verbetert en daarna een alinea schrapt, is dat werk voor niets.",
+         "Koos je \"eerst alle spelfouten verbeteren en daarna pas naar...\"? Dan denk je dat spelling het eerst moet. Misschien schrap je later hele alinea's, dus dat werk is dan voor niets.",
+         "Koos je \"alleen de kleine dingen verbeteren en de rest laten...\"? Dan denk je dat grote problemen niet nodig zijn. De grote problemen bepalen de kwaliteit, dus die pak je eerst aan.",
+         "Koos je \"de volgorde maakt niet uit, zolang je alles maar...\"? Dan denk je dat de volgorde geen rol speelt. Aanpassen in de verkeerde volgorde kost werk, dus je begint met de grote punten."
+        ],
+        "uh": "Groot eerst."
+       },
+       {
+        "v": "Welke opmerking pak je het eerst aan?",
+        "o": [
+         "(3), want dat is het makkelijkst op te lossen",
+         "(2), want de aanspreekvorm is belangrijker dan bewijs",
+         "alle drie tegelijk, in willekeurige volgorde",
+         "(1), want het gaat over de inhoud van het betoog"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Bij revisie pak je inhoud en opbouw eerder aan dan spelling.",
+        "uo": [
+         "Koos je \"(3), want dat is het makkelijkst op te lossen\"? Dan denk je dat het gemakkelijkste eerst moet. De grote punten zijn belangrijker, en een fout in een zin kan verdwijnen als je de zin schrapt.",
+         "Koos je \"(2), want de aanspreekvorm is belangrijker dan...\"? Dan denk je dat de stijl voorgaat. Bewijs bepaalt of het betoog standhoudt, dus de inhoud gaat eerst.",
+         "Koos je \"alle drie tegelijk, in willekeurige volgorde\"? Dan denk je dat de volgorde onbelangrijk is. Je werkt beter door te prioriteren, en inhoud komt eerst.",
+         "Klopt: de inhoud bepaalt of je tekst overtuigt; de rest is afwerking."
+        ],
+        "uh": "Prioriteer.",
+        "ctx": "Een lezer geeft drie opmerkingen: (1) \"Je argumenten missen bewijs.\" (2) \"Je schrijft 'jij' in een formele brief.\" (3) \"Je hebt een d/t-fout in regel vier.\""
+       },
+       {
+        "v": "Wat doe je het best?",
+        "o": [
+         "de alinea laten staan en een kopje boven zetten",
+         "de alinea schrappen of verplaatsen, als hij niet bij het onderwerp hoort",
+         "de overige alinea's korter maken",
+         "de alinea in een andere kleur zetten"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Een alinea die niet bij het onderwerp past, schrap of verplaats je.",
+        "uo": [
+         "Koos je \"de alinea laten staan en een kopje boven zetten\"? Dan denk je dat een kopje het probleem oplost. Het maakt de afwijking zichtbaar, maar de alinea hoort er nog steeds niet.",
+         "Klopt: een alinea die niet past, haalt de tekst onderuit; schrappen of verplaatsen helpt.",
+         "Koos je \"de overige alinea's korter maken\"? Dan denk je dat korter overal helpt. Het probleem zit in één alinea, dus daar moet je ingrijpen.",
+         "Koos je \"de alinea in een andere kleur zetten\"? Dan denk je dat de opmaak het oplost. De inhoud blijft niet passend; dus verplaats of schrap hem."
+        ],
+        "uh": "Onderwerp bewaken.",
+        "ctx": "Je tekst is te lang en een lezer zegt dat een alinea niet bij het onderwerp past."
+       },
+       {
+        "v": "Waarom controleer je na het aanpassen opnieuw de hele tekst?",
+        "o": [
+         "omdat een tekst pas af is als je hem drie keer gelezen hebt",
+         "omdat je dan meer woorden krijgt",
+         "omdat de lezer dan geen commentaar meer kan geven",
+         "je aanpassing kan nieuwe fouten of tegenstrijdigheden veroorzaken"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Na een wijziging controleer je de hele tekst op nieuwe fouten.",
+        "uo": [
+         "Koos je \"omdat een tekst pas af is als je hem drie keer...\"? Dan denk je dat er een vast aantal keren is. Het gaat om controleren op nieuwe problemen, niet om een aantal keren.",
+         "Koos je \"omdat je dan meer woorden krijgt\"? Dan denk je dat het om woordenaantal gaat. Het gaat om de kwaliteit, en om fouten opsporen.",
+         "Koos je \"omdat de lezer dan geen commentaar meer kan geven\"? Dan denk je dat controle commentaar voorkomt. Controle zorgt dat de tekst klopt, maar de lezer kan nog steeds reageren.",
+         "Klopt: een wijziging kan elders een verwijzing of zin onjuist maken."
+        ],
+        "uh": "Controleer na aanpassen."
+       },
+       {
+        "v": "Waarom moet je dit nalopen?",
+        "o": [
+         "\"zoals\" mag in een betoog niet gebruikt worden",
+         "de verwijzing naar \"hierboven\" kan nu niet meer kloppen",
+         "het woord \"hierboven\" is altijd fout",
+         "er hoeft niets nagelopen te worden, want verplaatsen verandert niets"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Controleer na verplaatsen of verwijzingen nog kloppen.",
+        "uo": [
+         "Koos je \"zoals mag in een betoog niet gebruikt worden\"? Dan denk je dat het woord niet mag. Het woord is gewoon correct; het probleem is de verwijzing.",
+         "Klopt: door het verplaatsen kan een verwijzing naar iets eerders onjuist worden.",
+         "Koos je \"het woord hierboven is altijd fout\"? Dan denk je dat het woord fout is. Het woord is prima, alleen moet de verwijzing kloppen.",
+         "Koos je \"er hoeft niets nagelopen te worden, want...\"? Dan denk je dat verplaatsen zonder gevolgen is. Verwijzingen kunnen kapot gaan, dus je controleert dat."
+        ],
+        "uh": "Verwijzingen nalopen.",
+        "ctx": "Je verplaatst een alinea in je betoog. Daarna staat in een latere alinea: \"Zoals hierboven genoemd ...\"."
+       },
+       {
+        "v": "Wat doe je met commentaar waar je het niet mee eens bent?",
+        "o": [
+         "je voert het alsnog uit, want de lezer heeft altijd gelijk",
+         "je negeert het zonder het te lezen",
+         "je weegt het af en wijst het af met een goede reden",
+         "je gooit de tekst weg en begint opnieuw"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Wijs commentaar alleen af met een inhoudelijke reden.",
+        "uo": [
+         "Koos je \"je voert het alsnog uit, want de lezer heeft altijd...\"? Dan denk je dat de lezer altijd gelijk heeft. Je weegt het zelf af, en soms past het niet bij je doel.",
+         "Koos je \"je negeert het zonder het te lezen\"? Dan denk je dat negeren oké is. Je moet het eerst begrijpen, en daarna beslis je.",
+         "Klopt: je kunt commentaar afwijzen, maar dan met een inhoudelijke reden.",
+         "Koos je \"je gooit de tekst weg en begint opnieuw\"? Dan denk je dat een nieuwe tekst het commentaar oplost. Je verliest goede delen, en je leert niets van het commentaar."
+        ],
+        "uh": "Afwijzen met reden."
+       },
+       {
+        "v": "Welke reactie past het best?",
+        "o": [
+         "de opdracht nalopen en het commentaar afwijzen als de lengte klopt met de opdracht",
+         "het betoog meteen halveren om het commentaar te volgen en de lezer tevreden te stellen",
+         "het commentaar negeren zonder iets te zeggen",
+         "de lezer vragen een andere tekst te lezen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Weeg commentaar af tegen de opdracht en je doel.",
+        "uo": [
+         "Klopt: de opdracht bepaalt de lengte; je kunt het commentaar dan met een reden afwijzen.",
+         "Koos je \"het betoog meteen halveren om het commentaar te...\"? Dan denk je dat je het commentaar moet volgen. De opdracht vraagt drie pagina's, dus korter maken zou de opdracht schenden.",
+         "Koos je \"het commentaar negeren zonder iets te zeggen\"? Dan denk je dat negeren oké is. Je kunt beter uitleggen waarom het niet past, zodat de lezer het begrijpt.",
+         "Koos je \"de lezer vragen een andere tekst te lezen\"? Dan denk je dat de lezer het verkeerd begrijpt. Hij leest je tekst; het commentaar moet je afwegen."
+        ],
+        "uh": "Opdracht als maat.",
+        "ctx": "Een lezer zegt: \"Je betoog moet korter.\" Jouw doel is een uitgebreid betoog van drie pagina's, zoals de opdracht vraagt."
+       },
+       {
+        "v": "Wat doe je het best?",
+        "o": [
+         "de lezer vragen wat er onduidelijk is",
+         "de hele alinea schrappen om zeker te zijn",
+         "de alinea langer maken, want dan is hij duidelijker",
+         "het commentaar negeren omdat het vaag is"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Vraag door als commentaar onduidelijk is.",
+        "uo": [
+         "Klopt: doorvragen voorkomt dat je het verkeerde aanpast.",
+         "Koos je \"de hele alinea schrappen om zeker te zijn\"? Dan denk je dat schrappen het veiligst is. Je verliest wellicht goede inhoud, en weet nog niet wat onduidelijk was.",
+         "Koos je \"de alinea langer maken, want dan is hij duidelijker\"? Dan denk je dat meer woorden duidelijker maken. Het kan het juist erger maken, dus eerst doorvragen.",
+         "Koos je \"het commentaar negeren omdat het vaag is\"? Dan denk je dat vaag commentaar niet telt. Je kunt het verhelderen door te vragen, en zo leer je ervan."
+        ],
+        "uh": "Doorvragen.",
+        "ctx": "Een lezer schrijft: \"Je alinea over kosten is onduidelijk.\" Jij weet niet wat hij precies bedoelt."
+       },
+       {
+        "v": "Wat is het meest verstandig?",
+        "o": [
+         "met de spelling beginnen, want dat is het kortst",
+         "met de stijl beginnen, want dat vind je het leukst",
+         "met de opbouw beginnen, omdat die het meeste effect heeft",
+         "alles tegelijk doen, zonder volgorde"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Begin met het punt dat de meeste verbetering oplevert.",
+        "uo": [
+         "Koos je \"met de spelling beginnen, want dat is het kortst\"? Dan denk je dat het kortste eerst hoort. De opbouw geeft het meeste effect, en spelling kun je later nalopen.",
+         "Koos je \"met de stijl beginnen, want dat vind je het leukst\"? Dan denk je dat voorkeur de volgorde bepaalt. Je kiest op effect, niet op wat je leuk vindt.",
+         "Klopt: de grootste verbetering haal je met de opbouw; kleine fouten kosten minder tijd.",
+         "Koos je \"alles tegelijk doen, zonder volgorde\"? Dan denk je dat tegelijk sneller gaat. Zonder prioriteit raak je het overzicht kwijt, en werk je minder efficiënt."
+        ],
+        "uh": "Prioriteit op effect.",
+        "ctx": "Je krijgt commentaar op drie punten: opbouw, stijl en spelling. Je hebt maar een halfuur."
+       },
+       {
+        "v": "Wat doet hij het best als hij het commentaar niet snapt?",
+        "o": [
+         "de tekst inleveren zonder aanpassing",
+         "vragen welke onderstrepingen waarover gaan en wat er beter kan",
+         "alle onderstrepingen negeren, want het zijn er te veel",
+         "de beoordelaar vragen de tekst zelf te verbeteren"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Vraag door op onduidelijk of vaag commentaar.",
+        "uo": [
+         "Koos je \"de tekst inleveren zonder aanpassing\"? Dan denk je dat inleveren genoeg is. Dan leer je niets, en de fouten blijven staan.",
+         "Klopt: concrete vragen leveren concreet commentaar en maken revisie mogelijk.",
+         "Koos je \"alle onderstrepingen negeren, want het zijn er te...\"? Dan denk je dat te veel opmerkingen niet te doen zijn. Je kunt ze sorteren en een volgorde kiezen, en zo aanpakken.",
+         "Koos je \"de beoordelaar vragen de tekst zelf te verbeteren\"? Dan denk je dat de beoordelaar de revisie moet doen. De schrijver is verantwoordelijk, en de beoordelaar geeft alleen commentaar."
+        ],
+        "uh": "Concreet maken.",
+        "ctx": "Een leerling krijgt een tekst terug met veel rode onderstrepingen en het commentaar \"Slordig\"."
+       },
+       {
+        "v": "Welke soort aanpassing is nodig?",
+        "o": [
+         "een spellingsaanpassing in de tweede zin van de alinea",
+         "een andere aanhef boven de alinea",
+         "een extra tussenkopje boven de alinea, zodat de lezer het zelf kan zien",
+         "een inhoudelijke aanpassing: kies één lijn en maak de redenering consistent"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Een tegenstrijdigheid los je op in de inhoud.",
+        "uo": [
+         "Koos je \"een spellingsaanpassing in de tweede zin van de...\"? Dan denk je dat het om spelling gaat. De zinnen zijn correct, maar tegenstrijdig.",
+         "Koos je \"een andere aanhef boven de alinea\"? Dan denk je dat de aanhef het oplost. Het is een inhoudelijk probleem, dus de aanhef verandert niets.",
+         "Koos je \"een extra tussenkopje boven de alinea, zodat de...\"? Dan denk je dat een kopje het probleem oplost. Het maakt de tegenstrijdigheid zichtbaar, maar lost haar niet op.",
+         "Klopt: een tegenstrijdigheid los je op door de inhoud aan te passen."
+        ],
+        "uh": "Consistent redeneren.",
+        "ctx": "Commentaar: \"In alinea 3 spreek je jezelf tegen: eerst zeg je dat het huiswerk nuttig is, daarna dat het tijdverspilling is.\""
+       },
+       {
+        "v": "Welke aanpassing sluit daarop aan?",
+        "o": [
+         "het sterkste argument weglaten, want het is kennelijk onduidelijk",
+         "het sterkste argument naar voren of naar het eind verplaatsen",
+         "alle argumenten in dezelfde alinea zetten",
+         "de stelling aan het eind zetten"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Zet het sterkste argument op een opvallende plek.",
+        "uo": [
+         "Koos je \"het sterkste argument weglaten, want het is...\"? Dan denk je dat de lezer het argument zwak vindt. Hij zegt alleen dat het op een slechte plek staat, dus verplaatsen is genoeg.",
+         "Klopt: je plaatst je sterkste argument op een opvallende plek.",
+         "Koos je \"alle argumenten in dezelfde alinea zetten\"? Dan denk je dat samenvoegen helpt. Het maakt het sterkste argument nog minder zichtbaar; verplaats het liever.",
+         "Koos je \"de stelling aan het eind zetten\"? Dan denk je dat de stelling het probleem is. De opmerking gaat over het argument, niet over de stelling."
+        ],
+        "uh": "Opvallende plek.",
+        "ctx": "Een leerling heeft een betoog met stelling, drie argumenten en conclusie. De lezer zegt: \"Mijn eerste indruk is dat het sterkste argument verstopt zit in het midden.\""
+       },
+       {
+        "v": "Hoe kan dat?",
+        "o": [
+         "door het aanpassen kunnen nieuwe fouten of inconsistenties zijn ontstaan",
+         "de lezer heeft de oude fouten gemist",
+         "een revisie voegt altijd fouten toe en is dus nutteloos",
+         "nieuwe fouten bestaan niet, het zijn altijd oude fouten"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Controleer de hele tekst opnieuw na revisie.",
+        "uo": [
+         "Klopt: wijzigingen kunnen elders in de tekst nieuwe fouten veroorzaken, daarom controleer je opnieuw.",
+         "Koos je \"de lezer heeft de oude fouten gemist\"? Dan denk je dat de lezer zich vergist. Het gaat om nieuwe fouten, die door de revisie zijn ontstaan.",
+         "Koos je \"een revisie voegt altijd fouten toe en is dus...\"? Dan denk je dat revisie nutteloos is. Revisie verbetert de tekst, maar je moet na afloop controleren.",
+         "Koos je \"nieuwe fouten bestaan niet, het zijn altijd oude...\"? Dan denk je dat nieuwe fouten onmogelijk zijn. Ze komen vaak door aanpassingen, dus je controleert."
+        ],
+        "uh": "Controle na revisie.",
+        "ctx": "Na een revisie leest een klasgenoot jouw tekst opnieuw en zegt: \"Nu zijn er twee nieuwe fouten bij gekomen.\""
+       },
+       {
+        "v": "Welke afweging is verstandig?",
+        "o": [
+         "alleen lezer A volgen, want die heeft het eerst commentaar gegeven",
+         "beide opmerkingen negeren",
+         "een tekst schrijven die beide uitvoert, ook als dat tegenstrijdig is",
+         "kijken wat de opdracht vraagt en daarmee tegenstrijdig commentaar afwegen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Weeg tegenstrijdig commentaar af tegen de opdracht.",
+        "uo": [
+         "Koos je \"alleen lezer A volgen, want die heeft het eerst...\"? Dan denk je dat de volgorde van commentaar telt. De opdracht bepaalt, niet wie het eerst reageert.",
+         "Koos je \"beide opmerkingen negeren\"? Dan denk je dat negeren de oplossing is. Je kunt ze afwegen met de opdracht, en daar nuttige delen uit halen.",
+         "Koos je \"een tekst schrijven die beide uitvoert, ook als dat...\"? Dan denk je dat je beide kunt uitvoeren. Korter en uitgebreider tegelijk kan niet, dus je kiest op basis van de opdracht.",
+         "Klopt: bij tegenstrijdig commentaar bepaalt de opdracht wat je doet."
+        ],
+        "uh": "Opdracht beslist.",
+        "ctx": "Een leerling krijgt commentaar van twee lezers: lezer A zegt \"Maak het betoog korter\", lezer B zegt \"Voeg nog twee argumenten toe\". De opdracht vraagt een betoog van minstens drie argumenten."
+       },
+       {
+        "v": "Welke revisie volgt hieruit?",
+        "o": [
+         "het slot schrappen, want het is kennelijk overbodig",
+         "een nieuw argument aan het slot toevoegen",
+         "een conclusie toevoegen die de stelling bevestigt",
+         "een vraag aan de lezer stellen en het daarbij laten"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Een zwak slot los je op met een duidelijke conclusie.",
+        "uo": [
+         "Koos je \"het slot schrappen, want het is kennelijk overbodig\"? Dan denk je dat het slot overbodig is. Het is nodig voor de conclusie, dus je verbetert het in plaats van het te schrappen.",
+         "Koos je \"een nieuw argument aan het slot toevoegen\"? Dan denk je dat een nieuw argument het slot sterker maakt. Het slot moet afronden, geen nieuw materiaal brengen.",
+         "Klopt: een slot hoort de conclusie te trekken.",
+         "Koos je \"een vraag aan de lezer stellen en het daarbij laten\"? Dan denk je dat een vraag een conclusie is. Een betoog sluit stellig af, dus een open vraag is niet genoeg."
+        ],
+        "uh": "Conclusie toevoegen.",
+        "ctx": "Een leerling vraagt na het commentaar: \"Wat bedoelt u met 'zwak slot'?\" De docent antwoordt: \"Je slot trekt geen conclusie.\""
+       },
+       {
+        "v": "Wat doe je met opmerkingen die al in een eerdere versie waren gemaakt?",
+        "o": [
+         "ze laten liggen, want de tekst is toch al veranderd",
+         "ze verwijderen uit de lijst zonder te kijken",
+         "nagaan of ze zijn verwerkt",
+         "ze uit je tekst halen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Controleer of eerdere opmerkingen zijn verwerkt.",
+        "uo": [
+         "Koos je \"ze laten liggen, want de tekst is toch al veranderd\"? Dan denk je dat oude opmerkingen vervallen. Ze kunnen nog gelden, dus je controleert ze.",
+         "Koos je \"ze verwijderen uit de lijst zonder te kijken\"? Dan denk je dat je ze mag wissen. Je weet dan niet of de fout is hersteld, dus nalopen is beter.",
+         "Klopt: je controleert dat eerdere opmerkingen echt zijn verwerkt, anders komen ze terug.",
+         "Koos je \"ze uit je tekst halen\"? Dan denk je dat opmerkingen in de tekst zelf staan. Ze staan in het commentaar, en je verwerkt ze in de tekst."
+        ],
+        "uh": "Nalopen."
+       },
+       {
+        "v": "Waarom bewaar je de oude versie van je tekst voordat je gaat reviseren?",
+        "o": [
+         "omdat een oude versie altijd beter is",
+         "omdat de lezer anders geen commentaar kan geven",
+         "omdat de opdracht dat vereist",
+         "je kunt terug als een aanpassing slechter blijkt"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Bewaar de oude versie om te kunnen vergelijken.",
+        "uo": [
+         "Koos je \"omdat een oude versie altijd beter is\"? Dan denk je dat de oude versie beter is. Dat is niet zo, maar het is handig om te kunnen vergelijken.",
+         "Koos je \"omdat de lezer anders geen commentaar kan geven\"? Dan denk je dat de lezer de oude versie nodig heeft. Het commentaar is al gegeven, dus het gaat om jouw veiligheid.",
+         "Koos je \"omdat de opdracht dat vereist\"? Dan denk je dat dit een regel is. Het is een handige gewoonte, niet een verplichting.",
+         "Klopt: met de oude versie kun je vergelijken en terugkeren."
+        ],
+        "uh": "Terug kunnen."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "hij heeft de belangrijkste opmerking niet aangepakt",
+         "hij heeft te weinig spelfouten verbeterd",
+         "hij heeft de spelling niet hoeven aanpassen",
+         "hij had de tekst moeten inleveren zonder aanpassing"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Pak de belangrijkste opmerking eerst aan.",
+        "uo": [
+         "Klopt: de lezer noemde de inhoud als grootste probleem; spelling alleen is niet genoeg.",
+         "Koos je \"hij heeft te weinig spelfouten verbeterd\"? Dan denk je dat het aantal spelfouten het probleem is. Het gaat om de verkeerde prioriteit, de inhoud is het grootste punt.",
+         "Koos je \"hij heeft de spelling niet hoeven aanpassen\"? Dan denk je dat spelling niet mag. Spelling aanpassen is prima; het probleem is dat hij het grote punt negeerde.",
+         "Koos je \"hij had de tekst moeten inleveren zonder aanpassing\"? Dan denk je dat niets doen beter is. De tekst moet beter worden, en dat vraagt aanpak van de inhoud."
+        ],
+        "uh": "Belangrijkste eerst.",
+        "ctx": "Een leerling past na commentaar alleen de spelfouten aan, terwijl de lezer vooral zei dat de argumenten onvoldoende bewijs hebben."
+       },
+       {
+        "v": "Wat doe je eerst?",
+        "o": [
+         "de conclusie meteen veranderen in het tegendeel",
+         "navragen welk deel van de redenering hij niet volgt",
+         "de tekst laten zoals hij is, want meningen mogen verschillen",
+         "alle argumenten schrappen en nieuwe bedenken"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Vraag door welk deel van de redenering niet overtuigt.",
+        "uo": [
+         "Koos je \"de conclusie meteen veranderen in het tegendeel\"? Dan denk je dat de lezer het tegendeel wil. Je weet niet wat hij precies bedoelt, dus meteen veranderen kan het erger maken.",
+         "Klopt: door door te vragen weet je welk deel van het betoog je moet verbeteren.",
+         "Koos je \"de tekst laten zoals hij is, want meningen mogen...\"? Dan denk je dat verschillende meningen het commentaar overbodig maken. Hij zegt dat de redenering niet overtuigt, en dat moet je serieus nemen.",
+         "Koos je \"alle argumenten schrappen en nieuwe bedenken\"? Dan denk je dat een nieuw begin nodig is. Misschien klopt alleen één schakel niet, en dan gooi je goed werk weg."
+        ],
+        "uh": "Eerst doorvragen.",
+        "ctx": "Een lezer schrijft: \"Ik ben het niet eens met je conclusie.\" Je weet niet of hij je argumenten of de conclusie zelf bedoelt."
+       },
+       {
+        "v": "Wat doe je met dit commentaar?",
+        "o": [
+         "alle zinnen herschrijven in spreektaal",
+         "de brief inleveren zonder na te denken over het commentaar",
+         "de aanhef weghalen om informeler te zijn",
+         "het afwegen en afwijzen, want een brief aan een gemeente vraagt een formeel register"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Weeg het commentaar af tegen opdracht en lezer.",
+        "uo": [
+         "Koos je \"alle zinnen herschrijven in spreektaal\"? Dan denk je dat de lezer informeel wil. Voor een gemeente past een formeel register, dus informeel zou een stijlfout zijn.",
+         "Koos je \"de brief inleveren zonder na te denken over het...\"? Dan denk je dat negeren vanzelf klopt. Je moet het commentaar eerst afwegen, en met een reden afwijzen.",
+         "Koos je \"de aanhef weghalen om informeler te zijn\"? Dan denk je dat de aanhef het probleem is. De aanhef hoort bij een formele brief, en weghalen maakt de brief onvolledig.",
+         "Klopt: de opdracht en de lezer bepalen het register; het commentaar past hier niet."
+        ],
+        "uh": "Opdracht en lezer bepalen.",
+        "ctx": "Een lezer zegt: \"Je tekst is te formeel.\" Jouw opdracht is een brief aan een gemeente."
+       },
+       {
+        "v": "Wat is hier nodig?",
+        "o": [
+         "de verwijzing aanpassen of weghalen",
+         "de verwijzing laten staan, want de lezer ziet het niet",
+         "een nieuwe alinea 4 verzinnen die erbij past",
+         "de conclusie volledig schrappen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Pas verwijzingen aan als je tekst hebt verplaatst of geschrapt.",
+        "uo": [
+         "Klopt: na schrappen moet je verwijzingen naar die alinea herstellen.",
+         "Koos je \"de verwijzing laten staan, want de lezer ziet het...\"? Dan denk je dat de lezer het niet merkt. Een verwijzing naar iets wat er niet is, valt op, en maakt de tekst onzorgvuldig.",
+         "Koos je \"een nieuwe alinea 4 verzinnen die erbij past\"? Dan denk je dat je de verwijzing moet redden met nieuwe tekst. Dat verandert de inhoud ongevraagd, en het is niet nodig.",
+         "Koos je \"de conclusie volledig schrappen\"? Dan denk je dat de conclusie weg moet. Alleen de verwijzing moet worden aangepast, de conclusie zelf blijft nodig."
+        ],
+        "uh": "Verwijzing herstellen.",
+        "ctx": "Je hebt een alinea geschrapt. In de conclusie staat nog: \"Zoals in alinea 4 beschreven ...\" maar alinea 4 bestaat niet meer."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een lezer geeft drie opmerkingen: (1) \"Je argumenten missen bewijs.\" (2) \"Je schrijft jij in een formele brief.\" (3) \"Je hebt een d/t-fout in regel vier.\"",
+        "v": "Welke pak je het eerst aan en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Opmerking 1 (1 punt): de inhoud bepaalt of het betoog overtuigt, en spelling en stijl zijn afwerking die je daarna doet (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Je verplaatst een alinea in je betoog. Daarna staat in een latere alinea: \"Zoals hierboven genoemd ...\"",
+        "v": "Waarom moet je de tekst na het verplaatsen nalopen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De verwijzing naar \"hierboven\" kan niet meer kloppen (1 punt). Wijzigingen kunnen nieuwe fouten of tegenstrijdigheden veroorzaken, dus je controleert de hele tekst (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een lezer zegt: \"Je betoog moet korter.\" De opdracht vraagt een betoog van drie pagina's.",
+        "v": "Hoe ga je met dit commentaar om?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je weegt het af tegen de opdracht (1 punt) en wijst het met een inhoudelijke reden af, omdat de opdracht de lengte bepaalt (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een lezer schrijft: \"Je alinea over kosten is onduidelijk.\" Jij weet niet wat er onduidelijk is.",
+        "v": "Wat doe je?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Je vraagt de lezer wat er precies onduidelijk is (1 punt), zodat je gericht kunt aanpassen en niets goeds weggooit (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling past na commentaar alleen de spelfouten aan, terwijl de lezer vooral zei dat de argumenten onvoldoende bewijs hebben.",
+        "v": "Wat is hier mis?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij heeft de belangrijkste opmerking niet aangepakt (1 punt): de inhoud is het grootste punt, spelling alleen verbetert het betoog niet genoeg (1 punt)."
+       }
+      ]
      }
     ]
    },

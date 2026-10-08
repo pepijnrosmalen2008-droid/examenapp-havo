@@ -1,0 +1,659 @@
+{
+ "id": "C2",
+ "lo": "nl.C.2",
+ "gs": 2,
+ "naam": "Tekstsoort, doel en lezersgroep afstemmen",
+ "beschrijving": "Je kiest bij een schrijfopdracht de juiste tekstsoort (uiteenzetting, beschouwing of betoog) en stemt inhoud en taal af op doel en lezers.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Doel van een tekst bepalen",
+  "Uiteenzetting",
+  "Beschouwing",
+  "Betoog",
+  "Lezersgroep en voorkennis",
+  "Register en toon"
+ ],
+ "sam": "Eerst bepaal je het doel van je tekst: informeren, overtuigen of overwegen. Daarbij hoort een tekstsoort: een uiteenzetting legt iets uit, een betoog verdedigt een stelling met argumenten en een beschouwing weegt meerdere kanten af. Daarna stem je inhoud, woordkeus en toon af op de lezersgroep: wat weten ze al en welk register past?",
+ "begrippen": [
+  {
+   "t": "Tekstsoort",
+   "d": "Het type tekst dat past bij het doel: bijvoorbeeld uiteenzetting, beschouwing of betoog."
+  },
+  {
+   "t": "Doel",
+   "d": "Wat de schrijver met de tekst wil bereiken: informeren, overtuigen of overwegen."
+  },
+  {
+   "t": "Informeren",
+   "d": "De lezer iets uitleggen of laten weten."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "De lezer laten instemmen met een standpunt."
+  },
+  {
+   "t": "Uiteenzetting",
+   "d": "Een tekst die objectief iets uitlegt."
+  },
+  {
+   "t": "Beschouwing",
+   "d": "Een tekst die meerdere kanten van een onderwerp afweegt."
+  },
+  {
+   "t": "Betoog",
+   "d": "Een tekst die een stelling met argumenten verdedigt."
+  },
+  {
+   "t": "Stelling",
+   "d": "Het standpunt dat de schrijver verdedigt."
+  },
+  {
+   "t": "Lezersgroep",
+   "d": "De mensen voor wie de tekst bedoeld is."
+  },
+  {
+   "t": "Voorkennis",
+   "d": "Wat de lezers al weten over het onderwerp."
+  },
+  {
+   "t": "Register",
+   "d": "De mate van formeel of informeel taalgebruik."
+  },
+  {
+   "t": "Aanspreekvorm",
+   "d": "Hoe je de lezer aanspreekt, bijvoorbeeld met je of u."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Je schrijft een tekst om lezers iets uit te leggen over hoe zonnepanelen werken. Welk doel heeft de tekst?",
+   "o": [
+    "de lezer overtuigen dat hij zonnepanelen moet kopen en meteen moet bestellen",
+    "informeren",
+    "de lezer amuseren met een grappig verhaal over de zon en een dak vol panelen",
+    "de lezer laten nadenken over voor- en nadelen zonder iets uit te leggen"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een tekst die uitlegt hoe iets werkt heeft als doel te informeren.",
+   "uo": [
+    "Koos je \"de lezer overtuigen dat hij zonnepanelen moet kopen...\"? Dan denk je dat uitleggen en verkopen hetzelfde zijn. Wie overtuigt wil dat de lezer iets vindt of doet; hier gaat het alleen om uitleg, dus om informeren.",
+    "Klopt: je legt uit hoe iets werkt zonder dat je de lezer van een mening wilt overtuigen.",
+    "Koos je \"de lezer amuseren met een grappig verhaal over de...\"? Dan denk je dat vermaak het doel is. Een grappige toon kan, maar het doel van een uitleg blijft dat de lezer na afloop begrijpt hoe het werkt.",
+    "Koos je \"de lezer laten nadenken over voor- en nadelen...\"? Dan denk je dat overwegen het doel is. Daarvoor weeg je meerdere kanten af; een uitleg over de werking vraagt eerst om informatie."
+   ],
+   "uh": "Uitleggen is informeren."
+  },
+  {
+   "v": "Welk doel past bij een tekst die de lezer wil laten instemmen met een stelling?",
+   "o": [
+    "informeren, want de lezer moet de feiten kennen en verder niets",
+    "vermaken, want een tekst moet leuk zijn om gelezen te worden",
+    "instrueren, want de lezer krijgt stap voor stap te horen wat hij moet doen",
+    "overtuigen"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Instemming met een stelling vraagt om overtuigen.",
+   "uo": [
+    "Koos je \"informeren, want de lezer moet de feiten kennen en...\"? Dan denk je dat feiten alleen genoeg zijn. Wie wil dat de lezer instemt, doet meer dan informeren; hij onderbouwt een standpunt met argumenten om te overtuigen.",
+    "Koos je \"vermaken, want een tekst moet leuk zijn om gelezen...\"? Dan denk je dat de lezer vooral geamuseerd moet worden. Vermaak kan helpen, maar het doel van instemming is overtuigen.",
+    "Koos je \"instrueren, want de lezer krijgt stap voor stap te...\"? Dan denk je dat een instructie hetzelfde is als overtuigen. Een instructie geeft handelingen aan; overtuigen draait om een standpunt en argumenten.",
+    "Klopt: wie een stelling wil laten delen, wil de lezer overtuigen met argumenten."
+   ],
+   "uh": "Standpunt + argumenten = overtuigen."
+  },
+  {
+   "v": "Welke tekstsoort legt iets uit zonder dat de schrijver zijn mening geeft?",
+   "o": [
+    "uiteenzetting",
+    "betoog, want daarin staan altijd veel feiten en cijfers",
+    "beschouwing, want daarin wordt elke vraag beantwoord met een duidelijke mening",
+    "een brief aan de krant, want die gaat altijd over feiten uit de actualiteit"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Een uiteenzetting informeert objectief; een betoog overtuigt.",
+   "uo": [
+    "Klopt: een uiteenzetting informeert en blijft objectief; de schrijver zegt niet wat hij ervan vindt.",
+    "Koos je \"betoog, want daarin staan altijd veel feiten en...\"? Dan denk je dat veel feiten een tekst tot een uiteenzetting maken. Een betoog gebruikt feiten maar verdedigt een stelling; de schrijver wil dus overtuigen en blijft niet neutraal.",
+    "Koos je \"beschouwing, want daarin wordt elke vraag...\"? Dan denk je dat een beschouwing een scherpe mening geeft. Een beschouwing weegt verschillende kanten af; de schrijver doet niet vooral uitleg over één onderwerp.",
+    "Koos je \"een brief aan de krant, want die gaat altijd over...\"? Dan denk je dat het medium de tekstsoort bepaalt. Een brief aan de krant is meestal een betoog; het doel van de schrijver bepaalt de tekstsoort."
+   ],
+   "uh": "Uitleg zonder mening = uiteenzetting."
+  },
+  {
+   "v": "Hoe herken je een betoog?",
+   "o": [
+    "de schrijver legt rustig uit hoe een proces werkt in een aantal stappen",
+    "de schrijver vertelt een verhaal met personages en een spannende afloop",
+    "de schrijver verdedigt een stelling met argumenten",
+    "de schrijver somt op wat anderen vinden, zonder zelf een standpunt in te nemen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Een betoog verdedigt een stelling met argumenten.",
+   "uo": [
+    "Koos je \"de schrijver legt rustig uit hoe een proces werkt...\"? Dan denk je dat uitleg een betoog is. Zo'n tekst informeert, terwijl een betoog een stelling verdedigt.",
+    "Koos je \"de schrijver vertelt een verhaal met personages en...\"? Dan denk je dat het verhaal het betoog is. Een verhaal vermaakt of vertelt; een betoog onderbouwt een mening met argumenten.",
+    "Klopt: een betoog bestaat uit een standpunt dat met argumenten wordt onderbouwd om de lezer te overtuigen.",
+    "Koos je \"de schrijver somt op wat anderen vinden, zonder...\"? Dan denk je dat dit een betoog is. Wie alleen weergeeft wat anderen vinden, informeert of overweegt, maar overtuigt niet; een betoog neemt zelf stelling."
+   ],
+   "uh": "Stelling + argumenten."
+  },
+  {
+   "v": "Hoe verschilt een beschouwing van een betoog?",
+   "o": [
+    "een beschouwing is altijd langer dan een betoog en bevat meer cijfers",
+    "een beschouwing geeft alleen feiten en een betoog alleen meningen",
+    "een beschouwing weegt meerdere kanten af en een betoog verdedigt één stelling",
+    "een beschouwing is voor jonge lezers en een betoog voor volwassenen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Beschouwing = afwegen van meerdere kanten, betoog = één stelling verdedigen.",
+   "uo": [
+    "Koos je \"een beschouwing is altijd langer dan een betoog en...\"? Dan denk je dat het verschil in lengte zit. Lengte maakt geen tekstsoort; het gaat om het doel: afwegen of overtuigen.",
+    "Koos je \"een beschouwing geeft alleen feiten en een betoog...\"? Dan denk je dat het verschil is feiten tegenover meningen. Beide kunnen feiten én meningen bevatten; het verschil is de manier waarop ze met het onderwerp omgaan.",
+    "Klopt: een beschouwing overweegt, een betoog overtuigt van één standpunt.",
+    "Koos je \"een beschouwing is voor jonge lezers en een betoog...\"? Dan denk je dat de leeftijd van de lezer bepaalt wat het is. De lezersgroep beïnvloedt de taal, maar niet de tekstsoort; die volgt uit het doel."
+   ],
+   "uh": "Afwegen of verdedigen."
+  },
+  {
+   "v": "Welke tekstsoort is dit?",
+   "o": [
+    "beschouwing",
+    "betoog, want de tekst gaat over een omstreden onderwerp",
+    "uiteenzetting, want er worden voor- en nadelen genoemd met uitleg",
+    "reclametekst, want de schrijver stelt een vraag aan de lezer"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Wie voor- en nadelen afweegt zonder een kant te kiezen, schrijft een beschouwing.",
+   "uo": [
+    "Klopt: de schrijver weegt voor- en nadelen af en kiest geen vaste kant.",
+    "Koos je \"betoog, want de tekst gaat over een omstreden...\"? Dan denk je dat een omstreden onderwerp automatisch een betoog oplevert. In een betoog verdedigt de schrijver één kant; hier weegt de schrijver beide kanten af.",
+    "Koos je \"uiteenzetting, want er worden voor- en nadelen...\"? Dan denk je dat uitleg genoeg is voor een uiteenzetting. Een uiteenzetting legt iets uit; hier worden kanten tegen elkaar afgewogen, en dat is een beschouwing.",
+    "Koos je \"reclametekst, want de schrijver stelt een vraag aan...\"? Dan denk je dat een vraag aan de lezer reclame is. Een retorische vraag komt in veel teksten voor; het doel is hier overwegen en niet verkopen."
+   ],
+   "uh": "Afwegen = beschouwing.",
+   "ctx": "Een tekst begint met de vraag: \"Moet er een verbod komen op smartphones op school?\" De schrijver bespreekt voor- en nadelen en sluit af met de opmerking dat het afhangt van de situatie."
+  },
+  {
+   "v": "Welke tekstsoort is dit en waaraan zie je dat?",
+   "o": [
+    "een uiteenzetting, want de schrijver legt uit hoe smartphones werken",
+    "een beschouwing, want er worden drie punten genoemd naast elkaar",
+    "een verslag, want de tekst beschrijft wat er op school gebeurt",
+    "een betoog, want de schrijver neemt stelling en onderbouwt die"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Een stelling plus argumenten ter onderbouwing wijst op een betoog.",
+   "uo": [
+    "Koos je \"een uiteenzetting, want de schrijver legt uit hoe...\"? Dan denk je dat de tekst uitlegt hoe iets werkt. De tekst legt niet iets uit maar verdedigt een mening, dus het is een betoog.",
+    "Koos je \"een beschouwing, want er worden drie punten genoemd...\"? Dan denk je dat meerdere punten tot een beschouwing leiden. De punten zijn hier argumenten voor één kant; een beschouwing weegt kanten af, dit betoog kiest er één.",
+    "Koos je \"een verslag, want de tekst beschrijft wat er op...\"? Dan denk je dat de tekst beschrijft wat er gebeurd is. De tekst verdedigt een standpunt; daarom is het een betoog.",
+    "Klopt: de eerste zin is een stelling en de rest bestaat uit argumenten ter onderbouwing."
+   ],
+   "uh": "Stelling + argumenten.",
+   "ctx": "Een tekst luidt: \"Smartphones horen niet op school thuis. Ze leiden af, ze zorgen voor pestgedrag en ze maken leerlingen minder sociaal.\" De tekst gaat dan verder met drie uitgewerkte argumenten."
+  },
+  {
+   "v": "Welk probleem heeft de tekst als de opdracht een beschouwing was?",
+   "o": [
+    "de leerling noemt zowel voordelen als nadelen, wat niet mag in een beschouwing",
+    "de slotalinea kiest ineens één kant, terwijl een beschouwing afweegt",
+    "de tekst is te kort voor een beschouwing, wat altijd minstens twee pagina's moet zijn",
+    "de leerling noemt geen cijfers, terwijl een beschouwing altijd cijfers bevat"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Een beschouwing sluit af met een afweging, niet met een scherpe stelling.",
+   "uo": [
+    "Koos je \"de leerling noemt zowel voordelen als nadelen, wat...\"? Dan denk je dat het noemen van beide kanten fout is. Dat hoort juist bij een beschouwing; het probleem zit in de scherpe slotstelling.",
+    "Klopt: een beschouwing mag een voorzichtige afweging maken, maar niet eindigen als een scherpe stelling.",
+    "Koos je \"de tekst is te kort voor een beschouwing, wat...\"? Dan denk je dat er een vaste lengte voor een beschouwing is. Een beschouwing hangt niet af van een aantal bladzijden; het gaat om de afweging.",
+    "Koos je \"de leerling noemt geen cijfers, terwijl een...\"? Dan denk je dat cijfers verplicht zijn. Cijfers kunnen helpen, maar zijn geen kenmerk van de tekstsoort."
+   ],
+   "uh": "Afwegen, niet beslissen.",
+   "ctx": "Een leerling schrijft een tekst over verplichte uniformen. Hij noemt eerst voordelen en daarna nadelen. In de slotalinea schrijft hij: \"Uniformen zijn dus gewoon een slecht idee en moeten verdwijnen.\""
+  },
+  {
+   "v": "Waarom stem je een tekst af op de lezersgroep?",
+   "o": [
+    "omdat een tekst anders niet langer kan worden dan een halve pagina",
+    "omdat docenten bij elke tekst controleren of je de lezersgroep hebt genoemd",
+    "omdat alleen volwassenen mogen lezen wat er in een tekst staat",
+    "de tekst moet begrijpelijk zijn en passen bij wat de lezers weten"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Een tekst stem je af op de lezersgroep zodat hij begrijpelijk is en aansluit.",
+   "uo": [
+    "Koos je \"omdat een tekst anders niet langer kan worden dan...\"? Dan denk je dat het om lengte gaat. Lengte heeft niets met de lezersgroep te maken; het gaat om begrijpelijkheid en aansluiting.",
+    "Koos je \"omdat docenten bij elke tekst controleren of je de...\"? Dan denk je dat het een formaliteit is. De lezersgroep bepaalt echt hoe je schrijft, en zorgt dat de lezer de tekst begrijpt.",
+    "Koos je \"omdat alleen volwassenen mogen lezen wat er in een...\"? Dan denk je dat er leeftijdsregels zijn voor lezen. Elke groep leest, maar je past je tekst aan op wat zij weten en willen.",
+    "Klopt: je kiest woorden en voorbeelden die bij de kennis en belangstelling van de lezers passen."
+   ],
+   "uh": "Schrijf voor je lezer."
+  },
+  {
+   "v": "Welke formulering past het best?",
+   "o": [
+    "Het myocard verricht pompfuncties door ritmische contracties van de hartspiercellen.",
+    "Je hart is een spier die bloed door je lichaam pompt.",
+    "Het hart is een orgaan dat via een systeem van kleppen en kamers circulatie van bloed bewerkstelligt.",
+    "Kinderen, luister goed: je hart is wel supersnel en supergaaf, echt hoor!"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Voor jonge lezers kies je korte, concrete zinnen zonder vaktaal.",
+   "uo": [
+    "Koos je \"Het myocard verricht pompfuncties door ritmische...\"? Dan gebruikt vaktaal die tienjarigen niet kennen. Wie zo schrijft houdt geen rekening met de lezer, en kinderen haken af.",
+    "Klopt: een korte, concrete zin zonder vakwoorden is begrijpelijk voor kinderen.",
+    "Koos je \"Het hart is een orgaan dat via een systeem van...\"? Dan is te abstract en vol moeilijke woorden voor een kind. Je moet aansluiten bij de kennis van de lezers, en dat doet deze zin niet.",
+    "Koos je \"Kinderen, luister goed: je hart is wel supersnel en...\"? Dan probeert op kinderen te lijken, maar zegt niets over de werking. Een goede formulering is vooral duidelijk, niet alleen vrolijk."
+   ],
+   "uh": "Eenvoudig en concreet.",
+   "ctx": "Een tekst over de werking van het hart is bedoeld voor kinderen van tien."
+  },
+  {
+   "v": "Welke aanhef past het best?",
+   "o": [
+    "Hoi Bakker!",
+    "Yo meneer!",
+    "Geachte heer Bakker,",
+    "Aan wie het maar wil lezen,"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Een formele brief begint met een passende aanhef.",
+   "uo": [
+    "Koos je \"Hoi Bakker!\"? Dan is te informeel voor een brief aan een directeur. Het register past niet bij de lezer, en kan onbeleefd overkomen.",
+    "Koos je \"Yo meneer!\"? Dan is spreektaal en past niet in een schriftelijke formele brief. Je past je taal aan op de lezer, en dit maakt de brief minder serieus.",
+    "Klopt: tegen een directeur gebruik je een formele aanspreekvorm.",
+    "Koos je \"Aan wie het maar wil lezen,\"? Dan richt je tot niemand in het bijzonder, terwijl je de directeur kent. Een brief heeft een duidelijke geadresseerde, en deze aanhef is onpersoonlijk."
+   ],
+   "uh": "Formeel voor een directeur.",
+   "ctx": "Een leerling schrijft een brief aan de directeur van de school over een nieuw rooster."
+  },
+  {
+   "v": "Welke aanpassing hoort bij het artikel voor de artsen?",
+   "o": [
+    "vakwoorden gebruiken en onderzoeksresultaten noemen",
+    "alles in korte zinnen en met een grap schrijven, zodat het leuk blijft",
+    "vakwoorden vermijden en alleen over persoonlijke ervaringen schrijven",
+    "de tekst korter maken, omdat artsen minder tijd hebben dan brugklassers"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Kies taal en inhoud die bij de kennis van de lezersgroep passen.",
+   "uo": [
+    "Klopt: artsen verwachten vaktaal en verantwoorde onderzoeksresultaten.",
+    "Koos je \"alles in korte zinnen en met een grap schrijven,...\"? Dan denk je dat de aanpak voor brugklassers ook voor artsen werkt. Artsen verwachten vakkennis en bronnen, dus een grappige toon past hier minder.",
+    "Koos je \"vakwoorden vermijden en alleen over persoonlijke...\"? Dan denk je dat artsen eenvoudige taal willen. Vakwoorden zijn voor hen juist normaal, en ervaringen zijn minder bewijskrachtig dan onderzoek.",
+    "Koos je \"de tekst korter maken, omdat artsen minder tijd...\"? Dan denk je dat lengte het verschil maakt. De aanpassing zit in taal en inhoud, niet alleen in het aantal woorden."
+   ],
+   "uh": "Aansluiten op de lezer.",
+   "ctx": "Een leerling schrijft voor twee lezersgroepen over hetzelfde onderwerp, de gevaren van te weinig slaap: een artikel voor een schoolkrant van brugklassers en een artikel voor een tijdschrift voor artsen."
+  },
+  {
+   "v": "Wat past bij een formeel register?",
+   "o": [
+    "volledige zinnen en geen straattaal of afkortingen",
+    "korte kreten en veel afkortingen zoals \"idd\" en \"btw\" zonder uitleg",
+    "woorden als \"gozer\" en \"dope\" om de lezer te laten lachen",
+    "zinnen die beginnen met \"ja, dus\" zoals je ze zou zeggen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Een formeel register is volledig en correct, zonder spreektaal.",
+   "uo": [
+    "Klopt: formeel taalgebruik is correct, volledig en vermijdt spreektaal.",
+    "Koos je \"korte kreten en veel afkortingen zoals idd en btw...\"? Dan denk je dat kort altijd past. Afkortingen zoals \"idd\" zijn informeel; een formeel register gebruikt volledige woorden.",
+    "Koos je \"woorden als gozer en dope om de lezer te laten...\"? Dan denk je dat straattaal formeel kan zijn. Straattaal is informeel en past niet bij een formele lezer, dus je laat die weg.",
+    "Koos je \"zinnen die beginnen met ja, dus zoals je ze zou...\"? Dan denk je dat spreektaal ook in een formele tekst kan. Spreektaal heeft daar geen plek; schrijftaal heeft een verzorgde zinsbouw."
+   ],
+   "uh": "Formeel = verzorgd."
+  },
+  {
+   "v": "Wat past niet bij het doel en de lezer van deze brief?",
+   "o": [
+    "de leerling noemt dat hij graag wil werken, wat in een brief nooit mag",
+    "de leerling schrijft in de ik-vorm, terwijl een brief altijd in de wij-vorm hoort",
+    "de informele woorden \"echt gaaf\" in een formele brief",
+    "de leerling gebruikt het woord \"jullie\", dat in een brief verboden is"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "In een formele brief gebruik je geen spreektaal en motiveer je concreet.",
+   "uo": [
+    "Koos je \"de leerling noemt dat hij graag wil werken, wat in...\"? Dan denk je dat motivatie niet mag. Motivatie hoort in een sollicitatiebrief; het probleem zit in de manier waarop de leerling het zegt.",
+    "Koos je \"de leerling schrijft in de ik-vorm, terwijl een...\"? Dan denk je dat de ik-vorm niet mag. In een sollicitatiebrief is ik juist normaal; het register is het probleem.",
+    "Klopt: een sollicitatiebrief vraagt een formeel register en een onderbouwde motivatie.",
+    "Koos je \"de leerling gebruikt het woord jullie, dat in een...\"? Dan denk je dat dit woord verboden is. Het woord op zich is niet fout, de losse, informele toon wel."
+   ],
+   "uh": "Register en motivatie.",
+   "ctx": "Een leerling schrijft in een sollicitatiebrief: \"Ik wil echt wel bij jullie werken, want jullie zijn echt gaaf.\""
+  },
+  {
+   "v": "Welke tekstsoort kiest hij en waarom?",
+   "o": [
+    "betoog, want hij moet leerlingen laten zien dat het rooster goed is",
+    "uiteenzetting, want hij legt iets uit zonder te overtuigen",
+    "beschouwing, want hij moet de voor- en nadelen van het rooster afwegen",
+    "reclametekst, want hij wil dat leerlingen enthousiast worden over het rooster"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Wie uitlegt hoe iets werkt schrijft een uiteenzetting.",
+   "uo": [
+    "Koos je \"betoog, want hij moet leerlingen laten zien dat het...\"? Dan denk je dat hij het rooster moet verdedigen. Hij moet alleen uitleggen hoe het tot stand komt, dus een betoog past niet bij de opdracht.",
+    "Klopt: het doel is informeren, dus een uiteenzetting past.",
+    "Koos je \"beschouwing, want hij moet de voor- en nadelen van...\"? Dan denk je dat afwegen gevraagd wordt. De opdracht vraagt om uitleg; dat is een uiteenzetting.",
+    "Koos je \"reclametekst, want hij wil dat leerlingen...\"? Dan denk je dat het om reclame gaat. Het doel is informeren; enthousiasme is niet de opdracht."
+   ],
+   "uh": "Uitleg = uiteenzetting.",
+   "ctx": "Een leerling moet een tekst schrijven waarin hij leerlingen uitlegt hoe het rooster op school tot stand komt."
+  },
+  {
+   "v": "Welke tekstsoort en welk doel horen bij deze opdracht?",
+   "o": [
+    "uiteenzetting, met het doel de lezer te informeren over fietsroutes",
+    "beschouwing, met het doel de lezer te laten nadenken over voor- en nadelen",
+    "reportage, met het doel te vertellen wat je op de fiets hebt gezien",
+    "betoog, met het doel te overtuigen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Wie moet overtuigen schrijft een betoog.",
+   "uo": [
+    "Koos je \"uiteenzetting, met het doel de lezer te informeren...\"? Dan denk je dat informeren gevraagd wordt. De opdracht vraagt overtuigen, en dat past bij een betoog.",
+    "Koos je \"beschouwing, met het doel de lezer te laten...\"? Dan denk je dat de opdracht om afwegen vraagt. Je moet overtuigen van één kant, dus een beschouwing is te neutraal.",
+    "Koos je \"reportage, met het doel te vertellen wat je op de...\"? Dan denk je dat een verhaal gevraagd wordt. De opdracht wil overtuigen, en een reportage vertelt alleen wat je zag.",
+    "Klopt: de opdracht vraagt om overtuigen, dus een betoog met stelling en argumenten."
+   ],
+   "uh": "Overtuigen = betoog.",
+   "ctx": "Een opdracht luidt: \"Schrijf een tekst waarin je de lezers overtuigt om vaker de fiets te nemen.\""
+  },
+  {
+   "v": "Welke tekst past bij een betoog en welke bij een beschouwing?",
+   "o": [
+    "de eerste is een beschouwing en de tweede een betoog",
+    "de eerste is een betoog en de tweede een beschouwing",
+    "allebei zijn een betoog, want ze gaan over statiegeld",
+    "allebei zijn een uiteenzetting, want ze noemen feiten"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Stelling nemen is een betoog; kanten afwegen is een beschouwing.",
+   "uo": [
+    "Koos je \"de eerste is een beschouwing en de tweede een betoog\"? Dan draai je het om. Wie stelling neemt en onderbouwt schrijft een betoog; wie kanten afweegt schrijft een beschouwing.",
+    "Klopt: de eerste neemt stelling met een argument, de tweede weegt kanten af.",
+    "Koos je \"allebei zijn een betoog, want ze gaan over...\"? Dan denk je dat het onderwerp de tekstsoort bepaalt. Het gaat om wat de schrijver doet, en de tweede overweegt zonder te kiezen.",
+    "Koos je \"allebei zijn een uiteenzetting, want ze noemen...\"? Dan denk je dat feiten genoeg zijn. Een uiteenzetting is neutraal; de eerste verdedigt een mening en de tweede overweegt."
+   ],
+   "uh": "Kies of weeg.",
+   "ctx": "Twee leerlingen krijgen dezelfde opdracht over statiegeld. De eerste schrijft: \"Statiegeld op blikjes werkt omdat 95 procent wordt teruggebracht.\" De tweede schrijft: \"Voor statiegeld zijn argumenten, maar ook bezwaren; het is dus afhankelijk van hoe je het regelt.\""
+  },
+  {
+   "v": "Welk signaalwoord past bij een beschouwing?",
+   "o": [
+    "aan de ene kant ... aan de andere kant",
+    "ik ben er daarom van overtuigd dat",
+    "stap 1, stap 2, stap 3",
+    "er was eens, in een land hier ver vandaan"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Een beschouwing gebruikt signalen van afwegen zoals \"aan de ene kant ... aan de andere kant\".",
+   "uo": [
+    "Klopt: dit signaal verbindt twee kanten die je afweegt.",
+    "Koos je \"ik ben er daarom van overtuigd dat\"? Dan denk je dat dit past bij afwegen. Deze zin neemt een standpunt in, en dat past bij een betoog.",
+    "Koos je \"stap 1, stap 2, stap 3\"? Dan denk je dat de stappen passen bij een beschouwing. Zo'n opsomming hoort bij een instructie of uiteenzetting; het is geen afweging.",
+    "Koos je \"er was eens, in een land hier ver vandaan\"? Dan denk je dat dit past bij een tekst met argumenten. Het is een verhalende opening; geen signaalwoord voor een beschouwing."
+   ],
+   "uh": "Twee kanten."
+  },
+  {
+   "v": "Waaruit bestaat een betoog in elk geval?",
+   "o": [
+    "een verhaal met een held en een slechterik",
+    "een lijst met afkortingen en hun betekenis",
+    "een reeks vragen zonder antwoord",
+    "een stelling met argumenten"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Een betoog heeft een stelling en argumenten.",
+   "uo": [
+    "Koos je \"een verhaal met een held en een slechterik\"? Dan denk je dat verhaalelementen een betoog vormen. Een verhaal vermaakt; een betoog onderbouwt een stelling.",
+    "Koos je \"een lijst met afkortingen en hun betekenis\"? Dan denk je dat uitleg een betoog is. Een lijst met afkortingen informeert, maar verdedigt geen standpunt.",
+    "Koos je \"een reeks vragen zonder antwoord\"? Dan denk je dat vragen een betoog opleveren. Een betoog geeft antwoord en argumenten; alleen vragen overtuigen niet.",
+    "Klopt: een betoog verdedigt een stelling met argumenten."
+   ],
+   "uh": "Stelling + argumenten."
+  },
+  {
+   "v": "Voor welke lezers past deze toon?",
+   "o": [
+    "voor de inspectie van het onderwijs, die de school beoordeelt",
+    "voor een juridisch document waarin een school een gebeurtenis beschrijft",
+    "voor medeleerlingen in een informele schoolkrant",
+    "voor een wetenschappelijk tijdschrift over sportpsychologie"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Informele taal past bij een informele lezersgroep.",
+   "uo": [
+    "Koos je \"voor de inspectie van het onderwijs, die de school...\"? Dan denk je dat de toon past bij een officiële beoordeling. Een inspectie verwacht een zakelijk register, dus deze toon is te los.",
+    "Koos je \"voor een juridisch document waarin een school een...\"? Dan denk je dat deze toon bij een juridische tekst past. Zo'n document is formeel en nauwkeurig, en deze tekst is dat niet.",
+    "Klopt: de toon is informeel en past bij lezers die jij kent en die dezelfde taal spreken.",
+    "Koos je \"voor een wetenschappelijk tijdschrift over...\"? Dan denk je dat de toon past bij vakpublicaties. Vakblad-lezers verwachten een zakelijk, precies register; deze toon is te informeel."
+   ],
+   "uh": "Toon past bij lezer.",
+   "ctx": "Een leerling schrijft voor een schoolkrant: \"Lekker bezig, jongens! Jullie hebben het toernooi zo gaaf gewonnen!\""
+  },
+  {
+   "v": "Welke zin past niet bij deze opdracht?",
+   "o": [
+    "Zonnepanelen zetten zonlicht om in elektriciteit.",
+    "Een zonnepaneel bestaat uit cellen van silicium.",
+    "Zonne-energie is de beste oplossing voor het klimaatprobleem.",
+    "De opgewekte stroom kan worden teruggeleverd aan het net."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bij een uiteenzetting laat je meningen weg.",
+   "uo": [
+    "Koos je \"Zonnepanelen zetten zonlicht om in elektriciteit.\"? Dan past juist bij de opdracht. Dit is een uitleg zonder mening, en dus precies wat gevraagd wordt.",
+    "Koos je \"Een zonnepaneel bestaat uit cellen van silicium.\"? Dan past juist bij de opdracht. Het is een feit dat de werking toelicht, zonder iets te vinden.",
+    "Klopt: dit is een mening, terwijl de opdracht om informeren zonder mening vraagt.",
+    "Koos je \"De opgewekte stroom kan worden teruggeleverd aan...\"? Dan past juist bij de opdracht. Het is een neutrale uitleg, dus hier zit geen mening in."
+   ],
+   "uh": "Alleen uitleg.",
+   "ctx": "Een leerling moet een tekst over zonne-energie schrijven. De opdracht zegt: \"Informeer de lezers over de werking en laat je mening weg.\""
+  },
+  {
+   "v": "Hoe pas je taal aan voor lezers die weinig voorkennis hebben?",
+   "o": [
+    "juist meer vaktaal gebruiken, zodat de tekst deskundig overkomt",
+    "de tekst korter maken door minder uitleg te geven",
+    "de tekst in het Engels schrijven, want dat begrijpt iedereen",
+    "vaktaal uitleggen of vervangen door gewone woorden"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Leg vaktaal uit of vervang haar door gewone woorden.",
+   "uo": [
+    "Koos je \"juist meer vaktaal gebruiken, zodat de tekst...\"? Dan denk je dat vaktaal altijd goed is. Wie de woorden niet kent, begrijpt de tekst niet, dus je moet ze uitleggen of vervangen.",
+    "Koos je \"de tekst korter maken door minder uitleg te geven\"? Dan denk je dat korter altijd beter is. Wie weinig weet heeft juist meer uitleg nodig, dus korter kan juist onduidelijk worden.",
+    "Koos je \"de tekst in het Engels schrijven, want dat begrijpt...\"? Dan denk je dat Engels hulp biedt. De lezers lezen de tekst in hun eigen taal, en de moeilijkheid zit in de woorden, niet in de taal.",
+    "Klopt: wie weinig voorkennis heeft, begrijpt vaktaal niet, dus je legt uit of kiest gewone woorden."
+   ],
+   "uh": "Aansluiten op voorkennis."
+  },
+  {
+   "v": "Welke tekstsoort past hierbij het best?",
+   "o": [
+    "beschouwing",
+    "betoog, want de zin gaat over een stelling",
+    "uiteenzetting, want de zin noemt onderzoeken",
+    "instructie, want de zin gebruikt \"je zou kunnen\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Kanten naast elkaar zetten zonder conclusie wijst op een beschouwing.",
+   "uo": [
+    "Klopt: de schrijver legt standpunten naast elkaar zonder conclusie, typisch voor een beschouwing.",
+    "Koos je \"betoog, want de zin gaat over een stelling\"? Dan denk je dat het onderwerp stelling betekent. De schrijver neemt geen stelling, en dat is nodig voor een betoog.",
+    "Koos je \"uiteenzetting, want de zin noemt onderzoeken\"? Dan denk je dat het noemen van onderzoek een uiteenzetting maakt. Hier worden standpunten afgewogen, en dat is een beschouwing.",
+    "Koos je \"instructie, want de zin gebruikt je zou kunnen\"? Dan denk je dat \"je zou kunnen\" een opdracht is. Het is een voorzichtige formulering; geen instructie."
+   ],
+   "uh": "Geen conclusie = beschouwing.",
+   "ctx": "Een tekst bevat de zin: \"Je zou kunnen zeggen dat extra huiswerk helpt, maar er zijn ook onderzoeken die het tegendeel suggereren.\" De schrijver trekt geen conclusie."
+  },
+  {
+   "v": "Welke eigenschap van een betoog ontbreekt?",
+   "o": [
+    "een opsomming van voorbeelden aan het eind",
+    "een duidelijke stelling of conclusie",
+    "een vraag aan de lezer die hem uitnodigt na te denken",
+    "een uitleg over hoe iets werkt in drie stappen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Een betoog heeft een duidelijke stelling of conclusie.",
+   "uo": [
+    "Koos je \"een opsomming van voorbeelden aan het eind\"? Dan denk je dat voorbeelden aan het einde nodig zijn. Voorbeelden horen bij de argumenten; het ontbrekende element is de duidelijke conclusie.",
+    "Klopt: een betoog eindigt met een duidelijke stelling of conclusie.",
+    "Koos je \"een vraag aan de lezer die hem uitnodigt na te...\"? Dan denk je dat een vraag het slot van een betoog is. Een betoog sluit af met een stelling, niet met een open vraag.",
+    "Koos je \"een uitleg over hoe iets werkt in drie stappen\"? Dan denk je dat uitleg hier nodig is. Een betoog verdedigt een standpunt; een duidelijke conclusie ontbreekt."
+   ],
+   "uh": "Duidelijk slot.",
+   "ctx": "Een leerling schrijft een betoog en eindigt met: \"Dus misschien is het zo, maar misschien ook niet.\""
+  },
+  {
+   "v": "Past deze toon bij de lezer?",
+   "o": [
+    "nee, want elke schriftelijke boodschap moet in een formeel register staan",
+    "nee, want je moet de lezer altijd met \"u\" aanspreken in een bericht",
+    "nee, want een bericht moet minstens drie volledige zinnen bevatten",
+    "ja, een informele toon past bij een klasgenoot die je goed kent"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Het register hoort bij de lezer: bij een klasgenoot mag het informeel.",
+   "uo": [
+    "Koos je \"nee, want elke schriftelijke boodschap moet in een...\"? Dan denk je dat schrijven altijd formeel moet. Je past je register aan op de lezer; voor een klasgenoot mag het gewoon informeel.",
+    "Koos je \"nee, want je moet de lezer altijd met u aanspreken...\"? Dan denk je dat \"u\" altijd verplicht is. Tegen een klasgenoot is \"je\" gebruikelijk; de aanspreekvorm volgt de relatie met de lezer.",
+    "Koos je \"nee, want een bericht moet minstens drie volledige...\"? Dan denk je dat er een vast aantal zinnen nodig is. Een kort bericht aan een klasgenoot is prima; het register past bij de lezer.",
+    "Klopt: bij een klasgenoot is een informeel register gewoon en duidelijk."
+   ],
+   "uh": "Toon past bij lezer.",
+   "ctx": "Een leerling schrijft aan een klasgenoot via de klassenapp: \"Hey, heb je morgen je boek mee?\""
+  },
+  {
+   "v": "Wat is hier verstandig om aan te passen?",
+   "o": [
+    "de schoolwoorden kort uitleggen, want ouders kennen ze nog niet",
+    "de woorden weglaten, want ouders hoeven niets over school te weten",
+    "de folder in de ik-vorm herschrijven, want dat leest vlotter voor ouders",
+    "de folder korter maken, want ouders lezen liever weinig"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Leg vakwoorden uit aan lezers die ze niet kennen.",
+   "uo": [
+    "Klopt: ouders van brugklassers kennen deze termen niet, dus een korte uitleg sluit aan op hun voorkennis.",
+    "Koos je \"de woorden weglaten, want ouders hoeven niets over...\"? Dan denk je dat ouders geen uitleg nodig hebben. De folder is juist bedoeld om hen te informeren, dus je legt de belangrijke termen uit in plaats van ze te schrappen.",
+    "Koos je \"de folder in de ik-vorm herschrijven, want dat...\"? Dan denk je dat de vorm het probleem is. De moeilijkheid zit in de onbekende woorden; de aanspreekvorm lost dat niet op.",
+    "Koos je \"de folder korter maken, want ouders lezen liever...\"? Dan denk je dat korter altijd helpt. Zonder uitleg blijven de termen onbegrijpelijk; het gaat om aansluiten op wat ouders weten."
+   ],
+   "uh": "Uitleggen, niet schrappen.",
+   "ctx": "Een leerling schrijft een folder voor ouders van brugklassers over de eerste schoolweek. Hij gebruikt woorden als \"mentoruur\", \"studiewijzer\" en \"PTA\" zonder uitleg."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling krijgt de opdracht: \"Leg uit hoe het rooster op school wordt gemaakt.\"",
+   "v": "Welke tekstsoort past en waarom?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een uiteenzetting (1 punt), want het doel is informeren zonder dat de schrijver een mening verdedigt (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tekst begint: \"Moet er een verbod komen op smartphones op school?\" De schrijver bespreekt voor- en nadelen en sluit af met: \"Het hangt af van de situatie.\"",
+   "v": "Welke tekstsoort is dit en hoe herken je dat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een beschouwing (1 punt): de schrijver weegt meerdere kanten af en kiest geen scherpe kant (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft voor brugklassers een tekst over het hart met de zin: \"Het myocard verricht pompfuncties door ritmische contracties.\"",
+   "v": "Waarom past deze zin niet bij de lezersgroep en hoe kan het beter?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De zin bevat vaktaal die brugklassers niet kennen (1 punt). Beter: een eenvoudige zin zoals \"Je hart is een spier die bloed door je lichaam pompt\" (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft in een sollicitatiebrief: \"Ik wil echt wel bij jullie werken, want jullie zijn echt gaaf.\"",
+   "v": "Wat past niet bij het register van deze brief?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De informele woordkeus (\"echt gaaf\") en losse toon passen niet bij een formele brief (1 punt). Een brief vraagt een verzorgd register en een concrete motivatie (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling krijgt de opdracht: \"Overtuig de lezers om vaker de fiets te nemen.\"",
+   "v": "Welke tekstsoort kiest hij en wat moet er in elk geval in staan?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een betoog (1 punt) met een duidelijke stelling en argumenten die haar onderbouwen (1 punt)."
+  }
+ ]
+}

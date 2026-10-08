@@ -1714,5 +1714,438 @@ Object.assign(SAM_RICH,{
 <rect x="6" y="86" width="308" height="36" rx="6" fill="var(--orl)"/><text x="18" y="109" font-size="12" font-weight="700" fill="var(--dk)">3  Beknopt</text><text x="104" y="109" font-size="11" fill="var(--dk)">geen voorbeelden of details?</text>
 <rect x="6" y="126" width="308" height="46" rx="6" fill="var(--orl)"/><text x="18" y="146" font-size="12" font-weight="700" fill="var(--dk)">4  Eigen woorden</text><text x="18" y="163" font-size="11" fill="var(--dk)">niet letterlijk, zonder eigen mening?</text></g></svg><div class="sam-figcap">Controlelijst bij een gegeven samenvatting: kern, belangrijke steun, beknoptheid en eigen woorden zonder mening; mist een onderdeel, dan is de samenvatting niet goed.</div></div>
 <div class="sam-tip"><strong>Examentip:</strong> een samenvatting die alleen de hoofduitspraak geeft, is onvolledig; een samenvatting met voorbeelden of een eigen mening is niet beknopt of niet neutraal. Noem bij een afkeuring wat er ontbreekt of wat er te veel in staat.</div>
+</div>`,
+'havo_nl_B1':`<div class="sam-intro">Voordat je kunt <strong>presenteren</strong>, moet je weten waar je het over hebt. Voor een voordracht, discussie of debat <strong>verzamel</strong> je relevante informatie bij betrouwbare <strong>bronnen</strong>, <strong>selecteer</strong> je wat past en <strong>verwerk</strong> je het tot <strong>kernpunten</strong> in eigen woorden. In dit leerdoel leer je dat stap voor stap, en hoe je bronnen netjes vermeldt.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Bron</td><td>Waar je informatie vandaan haalt.</td></tr>
+<tr><td>Betrouwbare bron</td><td>Deskundige afzender, controleerbare informatie.</td></tr>
+<tr><td>Relevante informatie</td><td>Past bij je doel en je publiek.</td></tr>
+<tr><td>Selecteren</td><td>Kiezen wat je gebruikt en wat je weglaat.</td></tr>
+<tr><td>Kernpunt, kernwoorden</td><td>De belangrijkste punten en de woorden die ze dragen.</td></tr>
+<tr><td>Parafraseren</td><td>In eigen woorden, met dezelfde betekenis.</td></tr>
+<tr><td>Citaat, bronvermelding</td><td>Een letterlijk stuk met de bron erbij.</td></tr>
+<tr><td>Plagiaat</td><td>Andermans werk gebruiken zonder bron.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Bronnen zoeken en beoordelen</div>
+<p>Zoek bij voorkeur in meer dan één <strong>bron</strong>, zodat je kunt vergelijken. Een <strong>betrouwbare bron</strong> heeft een deskundige afzender en controleerbare informatie. Wees voorzichtig met bronnen met een <strong>belanghebbende</strong>: een bedrijf dat iets wil verkopen vertelt vaak alleen de voordelen. Een anonieme bron (bijvoorbeeld een forumbericht zonder naam) kun je niet beoordelen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Controlelijst om een bron te beoordelen op afzender, deskundigheid, controleerbaarheid en belang, met vragen die je stelt"><g font-family="inherit"><rect x="4" y="4" width="312" height="42" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Afzender</text><text x="12" y="38" font-size="11" fill="var(--dk)">Wie zegt dit, en is de afzender bekend?</text>
+<rect x="4" y="50" width="312" height="42" rx="6" fill="var(--orl)"/><text x="12" y="68" font-size="12" font-weight="700" fill="var(--dk)">Deskundigheid</text><text x="12" y="84" font-size="11" fill="var(--dk)">Weet de afzender hier echt iets van?</text>
+<rect x="4" y="96" width="312" height="42" rx="6" fill="var(--orl)"/><text x="12" y="114" font-size="12" font-weight="700" fill="var(--dk)">Controleerbaar</text><text x="12" y="130" font-size="11" fill="var(--dk)">Kun je het nagaan, met bron of cijfers?</text>
+<rect x="4" y="142" width="312" height="42" rx="6" fill="var(--orl)"/><text x="12" y="160" font-size="12" font-weight="700" fill="var(--dk)">Belang</text><text x="12" y="176" font-size="11" fill="var(--dk)">Heeft de afzender voordeel bij wat je gelooft?</text></g></svg><div class="sam-figcap">Vier vragen om een bron te beoordelen: wie het zegt, of hij deskundig is, of je het kunt controleren en of hij er belang bij heeft.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Selecteren en verwerken</div>
+<p>Je hebt altijd meer informatie dan je kunt vertellen. <strong>Selecteer</strong> daarom wat <strong>relevant</strong> is voor je doel en je publiek: informeer je groep 8, dan kies je eenvoudige uitleg en geen tabellen vol cijfers. Daarna <strong>verwerk</strong> je: je bepaalt je <strong>kernpunten</strong>, noteert <strong>kernwoorden</strong> en vertelt in eigen woorden.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 214" role="img" aria-label="Van bronnen naar voordracht in vier stappen: verzamelen, selecteren, kernpunten bepalen en kernwoorden noteren, vrij vertellen"><g font-family="inherit" text-anchor="middle"><rect x="10" y="4" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="20" font-size="12" font-weight="700" fill="var(--dk)">1  Verzamel</text><text x="160" y="35" font-size="11" fill="var(--dk)">uit meerdere betrouwbare bronnen</text>
+<path d="M160 42 V50" stroke="var(--or)" stroke-width="2.5"/><path d="M153 48 L160 56 L167 48 Z" fill="var(--or)"/>
+<rect x="10" y="56" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="72" font-size="12" font-weight="700" fill="var(--dk)">2  Selecteer</text><text x="160" y="87" font-size="11" fill="var(--dk)">wat past bij doel en publiek</text>
+<path d="M160 94 V102" stroke="var(--or)" stroke-width="2.5"/><path d="M153 100 L160 108 L167 100 Z" fill="var(--or)"/>
+<rect x="10" y="108" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="124" font-size="12" font-weight="700" fill="var(--dk)">3  Verwerk</text><text x="160" y="139" font-size="11" fill="var(--dk)">kernpunten en kernwoorden noteren</text>
+<path d="M160 146 V154" stroke="var(--or)" stroke-width="2.5"/><path d="M153 152 L160 160 L167 152 Z" fill="var(--or)"/>
+<rect x="10" y="160" width="300" height="44" rx="8" fill="var(--or)"/><text x="160" y="178" font-size="12" font-weight="700" fill="#fff">4  Vertel in eigen woorden</text><text x="160" y="194" font-size="11" fill="#fff">en noem je bronnen</text></g></svg><div class="sam-figcap">Van bron naar verhaal in vier stappen: verzamelen, selecteren, verwerken tot kernpunten en kernwoorden en vrij vertellen, met bronvermelding.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> je laat zien dat je het begrijpt door het in eigen woorden te vertellen; voorlezen verwerkt niets.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Bronnen vermelden en plagiaat voorkomen</div>
+<p>Gebruik je informatie van een ander, dan vermeld je de <strong>bron</strong>: wie het zei of schreef en waar. Letterlijke zinnen duid je aan als <strong>citaat</strong>. Zonder <strong>bronvermelding</strong> is het <strong>plagiaat</strong>, ook als je iets mondeling zegt. <strong>Parafraseren</strong> (eigen woorden) ontslaat je niet van de bron.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Vergelijking van letterlijk citeren met bronvermelding en parafraseren met bronvermelding, tegenover plagiaat zonder bron"><g font-family="inherit"><rect x="6" y="6" width="308" height="50" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="25" font-size="12" font-weight="700" fill="var(--dk)">Citaat</text><text x="16" y="45" font-size="11" fill="var(--dk)">letterlijk, tussen aanhalingstekens, met bron</text>
+<rect x="6" y="62" width="308" height="50" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="81" font-size="12" font-weight="700" fill="var(--dk)">Parafrase</text><text x="16" y="101" font-size="11" fill="var(--dk)">in eigen woorden, met bron</text>
+<rect x="6" y="118" width="308" height="50" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="16" y="137" font-size="12" font-weight="700" fill="var(--mu)">Plagiaat</text><text x="16" y="157" font-size="11" fill="var(--mu)">overnemen zonder bron te noemen</text></g></svg><div class="sam-figcap">Citeren en parafraseren zijn allebei goed zolang je de bron noemt; zonder bron (de stippellijn) is het plagiaat.</div></div>
+<div class="sam-tip"><strong>Tip voor je voordracht:</strong> zoek ook de andere kant van de zaak. Wie bij een debat alleen informatie kent die zijn standpunt steunt, is eenzijdig voorbereid en weet niet hoe hij tegenargumenten kan weerleggen.</div>
+</div>`,
+'havo_nl_B2':`<div class="sam-intro">Voordat je gaat presenteren, bepaal je drie dingen: wat wil je bereiken (<strong>spreekdoel</strong>), voor wie spreek je (<strong>publiek</strong>) en in welke <strong>gespreksvorm</strong> doe je het? Op het examen en in de les is een presentatie <strong>adequaat</strong> als die drie goed zijn afgestemd.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Voordracht</td><td>Eén spreker met een voorbereid verhaal.</td></tr>
+<tr><td>Discussie</td><td>Deelnemers wisselen meningen uit, zonder vaste partijen.</td></tr>
+<tr><td>Debat</td><td>Vaste partijen met tegengestelde standpunten en afgesproken regels.</td></tr>
+<tr><td>Spreekdoel</td><td>Wat je wilt bereiken: informeren of overtuigen.</td></tr>
+<tr><td>Publiek, voorkennis</td><td>Wie luistert en wat die al weet.</td></tr>
+<tr><td>Register</td><td>Formeel of informeel taalgebruik.</td></tr>
+<tr><td>Vakjargon</td><td>Woorden die alleen deskundigen kennen.</td></tr>
+<tr><td>Afstemmen</td><td>Inhoud en taal aanpassen aan doel, publiek en vorm.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Drie gespreksvormen</div>
+<p>Bij een <strong>voordracht</strong> vertelt één spreker een voorbereid verhaal en luistert het publiek. In een <strong>discussie</strong> wisselen meerdere deelnemers meningen uit; er zijn geen vaste partijen. Een <strong>debat</strong> heeft partijen met tegengestelde standpunten, afgesproken rollen en regels, vaak met een voorzitter of jury. Deze <strong>gespreksvorm</strong> bepaalt hoe je je voorbereidt en gedraagt.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Vergelijking van voordracht, discussie en debat naar wie er praat en welke regels er gelden"><g font-family="inherit"><rect x="4" y="4" width="312" height="58" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="14" y="23" font-size="12" font-weight="700" fill="var(--dk)">Voordracht</text><text x="14" y="41" font-size="11" fill="var(--dk)">één spreker, het publiek luistert</text><text x="14" y="56" font-size="11" fill="var(--mu)">voorbereide opbouw</text>
+<rect x="4" y="68" width="312" height="58" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="14" y="87" font-size="12" font-weight="700" fill="var(--dk)">Discussie</text><text x="14" y="105" font-size="11" fill="var(--dk)">meerdere deelnemers wisselen van beurt</text><text x="14" y="120" font-size="11" fill="var(--mu)">meningen uitwisselen, geen vaste partijen</text>
+<rect x="4" y="132" width="312" height="58" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="14" y="151" font-size="12" font-weight="700" fill="var(--dk)">Debat</text><text x="14" y="169" font-size="11" fill="var(--dk)">partijen met tegengestelde standpunten</text><text x="14" y="184" font-size="11" fill="var(--mu)">vaste regels en rollen, weerleggen</text></g></svg><div class="sam-figcap">Drie gespreksvormen naast elkaar: bij een voordracht praat één spreker, bij een discussie wisselen deelnemers meningen uit en bij een debat staan partijen met vaste regels tegenover elkaar.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> één spreker = voordracht; meningen delen = discussie; partijen en regels = debat.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Spreekdoel: informeren of overtuigen</div>
+<p>Een <strong>informatieve presentatie</strong> wil het publiek iets laten weten of begrijpen, zonder een standpunt te verdedigen. Een <strong>overtuigende presentatie</strong> wil het publiek aan de kant van een standpunt krijgen of tot actie aanzetten; daarvoor heb je een duidelijk standpunt en argumenten nodig. Vermeng de doelen niet: wie informeert én steeds zijn mening geeft, laat het publiek in het ongewisse.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Spreekdoelen informeren en overtuigen naast elkaar met een voorbeeld van een zin bij elk doel"><g font-family="inherit" text-anchor="middle"><rect x="6" y="6" width="150" height="156" rx="10" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="81" y="26" font-size="12" font-weight="700" fill="var(--dk)">Informeren</text><text x="81" y="50" font-size="11" fill="var(--dk)">uitleggen wat en hoe</text><text x="81" y="72" font-size="11" fill="var(--dk)">"Zo werkt een windmolen."</text><text x="81" y="104" font-size="11" fill="var(--mu)">geen standpunt nodig</text><text x="81" y="124" font-size="11" fill="var(--mu)">publiek begrijpt het</text>
+<rect x="164" y="6" width="150" height="156" rx="10" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="239" y="26" font-size="12" font-weight="700" fill="var(--dk)">Overtuigen</text><text x="239" y="50" font-size="11" fill="var(--dk)">standpunt met argumenten</text><text x="239" y="72" font-size="11" fill="var(--dk)">"Doe mee aan de actie."</text><text x="239" y="104" font-size="11" fill="var(--mu)">duidelijk standpunt nodig</text><text x="239" y="124" font-size="11" fill="var(--mu)">publiek kiest jouw kant</text></g></svg><div class="sam-figcap">Informeren legt uit zonder standpunt; overtuigen verdedigt een standpunt met argumenten en vraagt het publiek aan jouw kant te komen of iets te doen.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Afstemmen op publiek en vorm</div>
+<p>Je <strong>publiek</strong> bepaalt woordkeus en voorbeelden. Heeft het weinig <strong>voorkennis</strong> (bijvoorbeeld groep 8 of ouders), dan gebruik je korte zinnen, herkenbare voorbeelden en leg je <strong>vakjargon</strong> uit. Heeft het veel voorkennis, dan begin je niet te simpel. Het <strong>register</strong> hoort bij de situatie: formeel voor een jury, losser onder bekenden. En de gespreksvorm bepaalt je gedrag: in een debat <strong>reageer</strong> je op de tegenpartij, in een voordracht bouw je een eigen verhaal op.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 200" role="img" aria-label="Doel, publiek en gespreksvorm bepalen samen de inhoud, taal en uitstraling van een presentatie"><g font-family="inherit" text-anchor="middle"><rect x="6" y="6" width="96" height="48" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="54" y="26" font-size="12" font-weight="700" fill="var(--dk)">Doel</text><text x="54" y="44" font-size="11" fill="var(--dk)">informeren?</text>
+<rect x="112" y="6" width="96" height="48" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="26" font-size="12" font-weight="700" fill="var(--dk)">Publiek</text><text x="160" y="44" font-size="11" fill="var(--dk)">voorkennis?</text>
+<rect x="218" y="6" width="96" height="48" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="266" y="26" font-size="12" font-weight="700" fill="var(--dk)">Vorm</text><text x="266" y="44" font-size="11" fill="var(--dk)">debat?</text>
+<path d="M54 54 V84 M160 54 V84 M266 54 V84 M54 84 H266" stroke="var(--dk)" stroke-width="2" fill="none"/><path d="M160 84 V112" stroke="var(--or)" stroke-width="2.5"/><path d="M153 108 L160 118 L167 108 Z" fill="var(--or)"/>
+<rect x="30" y="120" width="260" height="70" rx="10" fill="var(--or)"/><text x="160" y="142" font-size="12" font-weight="700" fill="#fff">Afgestemde presentatie</text><text x="160" y="162" font-size="11" fill="#fff">inhoud, voorbeelden, taal en toon</text><text x="160" y="178" font-size="11" fill="#fff">passen bij doel, publiek en vorm</text></g></svg><div class="sam-figcap">Doel, publiek en gespreksvorm bepalen samen wat je vertelt en hoe je dat doet: inhoud, voorbeelden, taal en toon.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> controleer vooraf drie dingen: wat wil ik bereiken, wie luistert en wat weten ze al, en in welke vorm spreek ik? Past je voorbereiding daarbij?</div>
+</div>`,
+'havo_nl_B3':`<div class="sam-intro">Een goede <strong>voordracht</strong> heeft een duidelijke <strong>opbouw</strong> en een verzorgde uitvoering. In dit leerdoel leer je hoe je een verhaal opbouwt met <strong>inleiding</strong>, <strong>kern</strong> en <strong>slot</strong>, hoe je het publiek meeneemt met <strong>overgangen</strong>, welk <strong>register</strong> je kiest en hoe je <strong>houding</strong>, <strong>oogcontact</strong> en <strong>stem</strong> inzet.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Inleiding</td><td>Aandacht trekken en aankondigen.</td></tr>
+<tr><td>Kern</td><td>De punten uitwerken met voorbeelden.</td></tr>
+<tr><td>Slot</td><td>Samenvatten en afsluiten.</td></tr>
+<tr><td>Overgang</td><td>Verbindt twee delen en maakt de opbouw hoorbaar.</td></tr>
+<tr><td>Register</td><td>Formeel of informeel taalgebruik.</td></tr>
+<tr><td>Non-verbale communicatie</td><td>Houding, gebaren en oogcontact.</td></tr>
+<tr><td>Spreektempo, articulatie, intonatie</td><td>Snelheid, duidelijke uitspraak en melodie van je stem.</td></tr>
+<tr><td>Pauze</td><td>Stilte die nadruk geeft en laat verwerken.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>De opbouw: inleiding, kern en slot</div>
+<p>De <strong>inleiding</strong> trekt de aandacht (bijvoorbeeld met een prikkelende vraag) en kondigt het onderwerp en de opbouw aan. In de <strong>kern</strong> werk je je belangrijkste punten uit met voorbeelden. Het <strong>slot</strong> vat samen en sluit af. De kern krijgt de meeste tijd; inleiding en slot zijn kort.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 184" role="img" aria-label="Opbouw van een voordracht in inleiding, kern en slot, met bij elk deel de taak en de verhouding in tijd"><g font-family="inherit"><rect x="6" y="6" width="308" height="42" rx="8" fill="var(--or)"/><text x="16" y="24" font-size="12" font-weight="700" fill="#fff">Inleiding</text><text x="16" y="40" font-size="11" fill="#fff">aandacht trekken, onderwerp en opbouw aankondigen</text>
+<rect x="6" y="54" width="308" height="76" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="74" font-size="12" font-weight="700" fill="var(--dk)">Kern</text><text x="16" y="92" font-size="11" fill="var(--dk)">kernpunten uitwerken met voorbeelden</text><text x="16" y="108" font-size="11" fill="var(--dk)">het langste deel van je voordracht</text>
+<rect x="6" y="136" width="308" height="42" rx="8" fill="var(--or)"/><text x="16" y="154" font-size="12" font-weight="700" fill="#fff">Slot</text><text x="16" y="170" font-size="11" fill="#fff">kern samenvatten en afsluiten</text></g></svg><div class="sam-figcap">Een voordracht heeft drie delen: een korte inleiding die aankondigt, een lange kern die uitwerkt en een kort slot dat samenvat en afsluit.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> kondig aan wat je gaat vertellen, vertel het, en vat samen wat je verteld hebt.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Overgangen en taalgebruik</div>
+<p><strong>Overgangen</strong> als "ten eerste", "vervolgens" en "tot slot" laten het publiek horen waar je bent. Een goede overgang sluit het vorige deel af en kondigt het volgende aan. Je <strong>register</strong> past bij de situatie: formeel voor een jury (volledige zinnen, verzorgde woorden), losser onder bekenden. Vage woorden als "dat ding" en spreektaal passen niet bij een jury.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Overgangen verbinden de delen van een voordracht: ten eerste, vervolgens en tot slot, met een voorbeeldzin voor een goede overgang"><g font-family="inherit" text-anchor="middle"><rect x="6" y="6" width="92" height="44" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="52" y="32" font-size="12" font-weight="700" fill="var(--dk)">Ten eerste</text>
+<rect x="114" y="6" width="92" height="44" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="32" font-size="12" font-weight="700" fill="var(--dk)">Vervolgens</text>
+<rect x="222" y="6" width="92" height="44" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="268" y="32" font-size="12" font-weight="700" fill="var(--dk)">Tot slot</text>
+<path d="M98 28 H114 M206 28 H222" stroke="var(--or)" stroke-width="2.5"/><path d="M110 22 L118 28 L110 34 Z M218 22 L226 28 L218 34 Z" fill="var(--or)"/>
+<rect x="10" y="68" width="300" height="92" rx="10" fill="var(--or)"/><text x="160" y="90" font-size="12" font-weight="700" fill="#fff">Voorbeeld van een overgang</text><text x="160" y="112" font-size="11" fill="#fff">"Naast de kosten wil ik nu laten zien</text><text x="160" y="128" font-size="11" fill="#fff">wat het voor het milieu betekent."</text><text x="160" y="148" font-size="11" fill="#fff">sluit het vorige af, kondigt het volgende aan</text></g></svg><div class="sam-figcap">Overgangswoorden en een goede overgangszin verbinden de delen van je voordracht, zodat het publiek de opbouw kan volgen.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Houding en oogcontact</div>
+<p><strong>Non-verbale communicatie</strong> ondersteunt je boodschap. Sta rechtop met rustige gebaren, kijk het publiek aan (<strong>oogcontact</strong>) en praat vrij in plaats van voor te lezen. Een stijve houding, handen in de zakken en een blik naar de grond geven een onzekere indruk, ook als je inhoud goed is.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Vergelijking van een sterke en een zwakke houding bij een presentatie: oogcontact, rechtop staan en rustige gebaren tegenover naar de grond kijken en handen in de zakken"><g font-family="inherit"><rect x="6" y="6" width="150" height="156" rx="10" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="81" y="26" font-size="12" font-weight="700" fill="var(--dk)" text-anchor="middle">Wel</text><text x="16" y="52" font-size="11" fill="var(--dk)">kijk het publiek aan</text><text x="16" y="76" font-size="11" fill="var(--dk)">sta rechtop</text><text x="16" y="100" font-size="11" fill="var(--dk)">rustige gebaren</text><text x="16" y="124" font-size="11" fill="var(--dk)">praat vrij</text>
+<rect x="164" y="6" width="150" height="156" rx="10" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="239" y="26" font-size="12" font-weight="700" fill="var(--mu)" text-anchor="middle">Liever niet</text><text x="174" y="52" font-size="11" fill="var(--mu)">naar de grond kijken</text><text x="174" y="76" font-size="11" fill="var(--mu)">handen in zakken</text><text x="174" y="100" font-size="11" fill="var(--mu)">rug naar het publiek</text><text x="174" y="124" font-size="11" fill="var(--mu)">voorlezen</text></g></svg><div class="sam-figcap">Links wat het publiek helpt: oogcontact, een rechte houding en rustige gebaren. Rechts (stippellijn) wat contact en geloofwaardigheid verzwakt.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">4</span>Stemgebruik</div>
+<p>Met je stem geef je je verhaal kracht. Let op <strong>spreektempo</strong> (niet te snel), <strong>articulatie</strong> (woorden duidelijk uitspreken), <strong>intonatie</strong> (variatie in toonhoogte) en <strong>pauzes</strong> na belangrijke punten. Zo kan je publiek je volgen en blijft je boodschap hangen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Vier onderdelen van stemgebruik bij presenteren: spreektempo, articulatie, intonatie en pauzes met een korte tip bij elk"><g font-family="inherit"><rect x="4" y="4" width="152" height="74" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="12" y="24" font-size="12" font-weight="700" fill="var(--dk)">Tempo</text><text x="12" y="44" font-size="11" fill="var(--dk)">niet te snel</text><text x="12" y="62" font-size="11" fill="var(--mu)">publiek kan volgen</text>
+<rect x="164" y="4" width="152" height="74" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="172" y="24" font-size="12" font-weight="700" fill="var(--dk)">Articulatie</text><text x="172" y="44" font-size="11" fill="var(--dk)">duidelijk uitspreken</text><text x="172" y="62" font-size="11" fill="var(--mu)">niet mompelen</text>
+<rect x="4" y="86" width="152" height="74" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="12" y="106" font-size="12" font-weight="700" fill="var(--dk)">Intonatie</text><text x="12" y="126" font-size="11" fill="var(--dk)">variatie in toon</text><text x="12" y="144" font-size="11" fill="var(--mu)">niet monotoon</text>
+<rect x="164" y="86" width="152" height="74" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="172" y="106" font-size="12" font-weight="700" fill="var(--dk)">Pauzes</text><text x="172" y="126" font-size="11" fill="var(--dk)">na belangrijke punten</text><text x="172" y="144" font-size="11" fill="var(--mu)">geven nadruk</text></g></svg><div class="sam-figcap">Vier onderdelen van je stem: een rustig tempo, duidelijke articulatie, variatie in intonatie en pauzes na de belangrijkste punten.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> oefen hardop met een timer en vraag iemand om te letten op oogcontact, tempo en of je duidelijk te verstaan bent.</div>
+</div>`,
+'havo_nl_B4':`<div class="sam-intro">In een <strong>discussie</strong> of <strong>debat</strong> verdedig je een <strong>standpunt</strong> tegenover anderen. Je bereidt <strong>argumenten</strong> voor, wacht je <strong>beurt</strong> af, <strong>weerlegt</strong> wat de ander zegt en sluit af met een <strong>slotpleidooi</strong>. In dit leerdoel leer je hoe je dat netjes en overtuigend doet.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Standpunt</td><td>Wat je verdedigt.</td></tr>
+<tr><td>Debatargument</td><td>Standpunt, redenering en bewijs.</td></tr>
+<tr><td>Tegenargument</td><td>Een argument dat tegen het standpunt van de ander ingaat.</td></tr>
+<tr><td>Weerlegging</td><td>Laten zien dat een argument niet klopt of niet genoeg steunt.</td></tr>
+<tr><td>Slotpleidooi</td><td>Sterkste argumenten samenvatten en afsluiten.</td></tr>
+<tr><td>Gespreksleider</td><td>Verdeelt de beurten en bewaakt de regels.</td></tr>
+<tr><td>Persoonlijke aanval</td><td>De persoon aanvallen in plaats van zijn argument.</td></tr>
+<tr><td>Onderbouwen</td><td>Een reden en bewijs geven.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Voorbereiden en argumenteren</div>
+<p>Bereid een helder <strong>standpunt</strong> voor met sterke <strong>argumenten</strong>. Een <strong>debatargument</strong> heeft een standpunt, een redenering en bewijs, bijvoorbeeld een <strong>voorbeeld</strong>. Bereid ook de <strong>tegenargumenten</strong> voor, zodat je er in het debat op kunt reageren. Soms krijg je een standpunt toegewezen dat je niet deelt: dan oefen je argumenteren.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 172" role="img" aria-label="Opbouw van een sterk debatargument: standpunt, redenering en bewijs, met een voorbeeld over later beginnen"><g font-family="inherit" text-anchor="middle"><rect x="30" y="6" width="260" height="42" rx="8" fill="var(--or)"/><text x="160" y="24" font-size="12" font-weight="700" fill="#fff">Standpunt</text><text x="160" y="40" font-size="11" fill="#fff">Scholen moeten later beginnen.</text>
+<path d="M160 48 V60" stroke="var(--dk)" stroke-width="2"/><text x="190" y="58" font-size="11" fill="var(--dk)">want</text>
+<rect x="30" y="62" width="260" height="42" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="80" font-size="12" font-weight="700" fill="var(--dk)">Redenering</text><text x="160" y="96" font-size="11" fill="var(--dk)">Tieners hebben meer slaap nodig.</text>
+<path d="M160 104 V116" stroke="var(--dk)" stroke-width="2"/><text x="200" y="114" font-size="11" fill="var(--dk)">bijvoorbeeld</text>
+<rect x="30" y="118" width="260" height="46" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="160" y="136" font-size="12" font-weight="700" fill="var(--dk)">Bewijs of voorbeeld</text><text x="160" y="154" font-size="11" fill="var(--dk)">een proef op een school</text></g></svg><div class="sam-figcap">Een sterk argument heeft drie lagen: het standpunt, de redenering waarom het klopt en een voorbeeld of bewijs (de stippellijn) dat de redenering steunt.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een argument zegt wat je vindt, waarom, en waaruit dat blijkt.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Beurten, luisteren en weerleggen</div>
+<p>De <strong>gespreksleider</strong> verdeelt de beurten en bewaakt de regels. Je laat de ander uitspreken (niet <strong>onderbreken</strong>) en maakt intussen aantekeningen. Bij <strong>weerleggen</strong> pak je het argument aan: met een tegenargument, een tegenvoorbeeld of door te laten zien dat de redenering niet klopt. Je richt je op het argument, niet op de persoon.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Weerleggen: de ander noemt een argument, jij reageert met een tegenargument of tegenvoorbeeld op het argument, niet op de persoon"><g font-family="inherit" text-anchor="middle"><rect x="6" y="6" width="148" height="64" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="80" y="26" font-size="12" font-weight="700" fill="var(--dk)">De ander zegt</text><text x="80" y="46" font-size="11" fill="var(--dk)">"Gratis fruit is</text><text x="80" y="60" font-size="11" fill="var(--dk)">te duur."</text>
+<path d="M154 38 H160" stroke="var(--or)" stroke-width="2.5"/><path d="M156 32 L166 38 L156 44 Z" fill="var(--or)"/>
+<rect x="166" y="6" width="148" height="64" rx="8" fill="var(--or)"/><text x="240" y="26" font-size="12" font-weight="700" fill="#fff">Jij weerlegt</text><text x="240" y="46" font-size="11" fill="#fff">"Gezonde leerlingen</text><text x="240" y="60" font-size="11" fill="#fff">besparen kosten."</text>
+<rect x="6" y="88" width="148" height="92" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="80" y="110" font-size="12" font-weight="700" fill="var(--mu)">Niet doen</text><text x="80" y="130" font-size="11" fill="var(--mu)">de persoon aanvallen</text><text x="80" y="148" font-size="11" fill="var(--mu)">onderbreken</text><text x="80" y="166" font-size="11" fill="var(--mu)">niets onderbouwen</text>
+<rect x="166" y="88" width="148" height="92" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="240" y="110" font-size="12" font-weight="700" fill="var(--dk)">Wel doen</text><text x="240" y="130" font-size="11" fill="var(--dk)">argument aanpakken</text><text x="240" y="148" font-size="11" fill="var(--dk)">beurt afwachten</text><text x="240" y="166" font-size="11" fill="var(--dk)">redenen geven</text></g></svg><div class="sam-figcap">Bij weerleggen reageer je inhoudelijk op het argument; aanvallen op de persoon, onderbreken en niets onderbouwen doe je niet.</div></div>
+<p>Een discussie verloopt vrijer dan een debat, maar ook daar luister je naar elkaar, blijf je bij het onderwerp en geef je redenen voor wat je zegt. In een debat zijn rollen en regels vooraf afgesproken, vaak met een voorzitter of jury. Let op de valkuilen: een persoonlijke aanval, een vertekend standpunt of het ontduiken van de bewijslast zijn <strong>drogredenen</strong> die je niet wilt gebruiken.</p>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Het slotpleidooi</div>
+<p>Het <strong>slotpleidooi</strong> is je laatste kans om te overtuigen. Je vat je sterkste argumenten kort samen en sluit af, bijvoorbeeld met een oproep. Je brengt geen nieuwe argumenten meer in: de tegenpartij kan er dan niet meer op reageren, en dat is oneerlijk.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 156" role="img" aria-label="Slotpleidooi: de sterkste argumenten kort samenvatten en afsluiten, zonder nieuwe argumenten"><g font-family="inherit" text-anchor="middle"><rect x="10" y="6" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="22" font-size="12" font-weight="700" fill="var(--dk)">1  Vat je sterkste argumenten samen</text><text x="160" y="37" font-size="11" fill="var(--dk)">kort en in eigen woorden</text>
+<path d="M160 44 V54" stroke="var(--or)" stroke-width="2.5"/><path d="M153 52 L160 60 L167 52 Z" fill="var(--or)"/>
+<rect x="10" y="60" width="300" height="38" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="76" font-size="12" font-weight="700" fill="var(--dk)">2  Sluit af met een oproep</text><text x="160" y="91" font-size="11" fill="var(--dk)">bijvoorbeeld: stem voor</text>
+<rect x="10" y="108" width="300" height="40" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="160" y="126" font-size="12" font-weight="700" fill="var(--mu)">Geen nieuwe argumenten</text><text x="160" y="141" font-size="11" fill="var(--mu)">de tegenpartij kan niet meer reageren</text></g></svg><div class="sam-figcap">Een slotpleidooi vat samen en sluit af. Een nieuw argument (de stippellijn) hoort er niet meer in, omdat de tegenpartij niet meer kan reageren.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> bereid voor elk argument van de ander een weerlegging voor en oefen luisteren: noteer terwijl hij praat wat je wilt weerleggen.</div>
+</div>`,
+'havo_nl_B5':`<div class="sam-intro">Een presentatie of discussie is geen eenrichtingsverkeer. <strong>Adequaat reageren</strong> betekent dat je <strong>actief luistert</strong>, vragen <strong>eerlijk en gericht</strong> beantwoordt, <strong>doorvraagt</strong> bij iets onduidelijks, kritiek inhoudelijk beantwoordt en <strong>feedback</strong> geeft en ontvangt. In dit leerdoel leer je hoe dat werkt.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Actief luisteren</td><td>Meedenken, noteren, aankijken en doorvragen.</td></tr>
+<tr><td>Doorvragen</td><td>Een vervolgvraag voor meer uitleg.</td></tr>
+<tr><td>Reageren</td><td>Inhoudelijk antwoorden op wat de ander zei.</td></tr>
+<tr><td>Kritiek, tegenwerping</td><td>Een bezwaar tegen wat iemand zegt of doet.</td></tr>
+<tr><td>Erkennen</td><td>Toegeven dat iets klopt.</td></tr>
+<tr><td>Feedback</td><td>Concrete informatie om iets te verbeteren.</td></tr>
+<tr><td>Verbeterpunt</td><td>Een punt waarop iemand beter kan worden.</td></tr>
+<tr><td>Persoonlijke aanval</td><td>De persoon aanvallen in plaats van zijn argument.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Actief luisteren en doorvragen</div>
+<p>Bij <strong>actief luisteren</strong> kijk je de spreker aan, denk je mee, noteer je kernpunten en wacht je tot je aan de <strong>beurt</strong> bent. Is iets onduidelijk, dan <strong>vraag je door</strong>: een open vraag als "Wat bedoel je precies?" of "Kun je daar een voorbeeld van geven?" levert meer op dan een oordeel of een onoprechte opmerking.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Actief luisteren in vier stappen: aankijken, meedenken en noteren, wachten op je beurt, doorvragen bij onduidelijkheid"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="27" font-size="12" font-weight="700" fill="var(--dk)">1  Kijk de spreker aan</text>
+<rect x="4" y="44" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="67" font-size="12" font-weight="700" fill="var(--dk)">2  Denk mee en noteer kernpunten</text>
+<rect x="4" y="84" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="107" font-size="12" font-weight="700" fill="var(--dk)">3  Wacht op je beurt</text>
+<rect x="4" y="124" width="312" height="44" rx="6" fill="var(--or)"/><text x="12" y="143" font-size="12" font-weight="700" fill="#fff">4  Vraag door bij onduidelijkheid</text><text x="12" y="160" font-size="11" fill="#fff">"Wat bedoel je precies?"</text></g></svg><div class="sam-figcap">Vier onderdelen van actief luisteren: aankijken, meedenken en noteren, je beurt afwachten en doorvragen waar iets onduidelijk is.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Vragen en kritiek beantwoorden</div>
+<p>Beantwoord een vraag <strong>kort en gericht</strong>. Weet je het niet, zeg dat dan <strong>eerlijk</strong> en bied aan het uit te zoeken; verzin niets. Bij <strong>kritiek</strong> of een <strong>tegenwerping</strong> luister je eerst en ga je inhoudelijk in op wat is gezegd. Maakt de ander een terecht punt, dan <strong>erken</strong> je dat en vul je je verhaal aan. Val de persoon niet aan.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 180" role="img" aria-label="Reageren op een vraag of kritiek: luisteren, begrijpen, inhoudelijk antwoorden of erkennen, geen aanval op de persoon"><g font-family="inherit" text-anchor="middle"><rect x="10" y="4" width="300" height="40" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="22" font-size="12" font-weight="700" fill="var(--dk)">1  Luister en begrijp</text><text x="160" y="37" font-size="11" fill="var(--dk)">vraag door als het onduidelijk is</text>
+<path d="M160 44 V54" stroke="var(--or)" stroke-width="2.5"/><path d="M153 52 L160 60 L167 52 Z" fill="var(--or)"/>
+<rect x="10" y="60" width="300" height="40" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="160" y="78" font-size="12" font-weight="700" fill="var(--dk)">2  Reageer inhoudelijk</text><text x="160" y="93" font-size="11" fill="var(--dk)">of erken wat klopt</text>
+<rect x="10" y="112" width="300" height="60" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="160" y="132" font-size="12" font-weight="700" fill="var(--mu)">Niet doen</text><text x="160" y="150" font-size="11" fill="var(--mu)">de persoon aanvallen, iets verzinnen,</text><text x="160" y="164" font-size="11" fill="var(--mu)">de vraag negeren</text></g></svg><div class="sam-figcap">Reageren op een vraag of kritiek in twee stappen: eerst luisteren en begrijpen, dan inhoudelijk antwoorden of erkennen. Aanvallen, verzinnen en negeren (stippellijn) doe je niet.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een terecht punt erken je; een antwoord dat je niet weet, verzin je niet.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Feedback geven en ontvangen</div>
+<p><strong>Goede feedback</strong> is <strong>concreet</strong>: je noemt wat goed ging en wat beter kan, over het gedrag en niet over de persoon. "Je opening trok aandacht, maar je sprak in het midden te snel" is bruikbaar; "je bent geen goede spreker" is dat niet. Krijg je feedback, dan luister je eerst, vraag je zo nodig door, en kies je een of twee <strong>verbeterpunten</strong> om te oefenen. Reageer niet met een tegenaanval.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Concrete feedback bestaat uit wat goed ging, wat beter kan en een concreet verbeterpunt, tegenover vage feedback over de persoon"><g font-family="inherit"><rect x="6" y="6" width="308" height="88" rx="8" fill="var(--orl)" stroke="var(--mu)" stroke-width="1"/><text x="16" y="26" font-size="12" font-weight="700" fill="var(--dk)">Bruikbaar</text><text x="16" y="46" font-size="11" fill="var(--dk)">"Je opening trok de aandacht."</text><text x="16" y="62" font-size="11" fill="var(--dk)">"In het midden sprak je te snel:"</text><text x="16" y="78" font-size="11" fill="var(--dk)">"neem daar pauzes."</text>
+<rect x="6" y="102" width="308" height="68" rx="8" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="16" y="122" font-size="12" font-weight="700" fill="var(--mu)">Niet bruikbaar</text><text x="16" y="142" font-size="11" fill="var(--mu)">"Het was best oké."</text><text x="16" y="158" font-size="11" fill="var(--mu)">"Je bent geen goede spreker."</text></g></svg><div class="sam-figcap">Bruikbare feedback is concreet over wat goed ging en wat beter kan; vage opmerkingen en oordelen over de persoon (stippellijn) helpen niet.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> vraag na je presentatie om feedback op twee punten, bijvoorbeeld oogcontact en tempo. Zo krijg je concrete antwoorden en weet je waar je aan werkt.</div>
+</div>`,
+'havo_nl_C1':`<div class="sam-intro">Een <strong>gedocumenteerde tekst</strong> bevat informatie uit <strong>bronnen</strong>. Je zoekt ze, beoordeelt ze, verwerkt ze als <strong>citaat</strong> of <strong>parafrase</strong> en laat zien waar ze vandaan komen met een <strong>bronvermelding</strong>. Zo voorkom je <strong>plagiaat</strong> en kan je lezer controleren wat je schrijft.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Bron, afzender</td><td>Waar de informatie vandaan komt en wie haar maakte.</td></tr>
+<tr><td>Betrouwbaarheid</td><td>Hoe goed je op een bron kunt vertrouwen.</td></tr>
+<tr><td>Actualiteit</td><td>Of de informatie nog bij de tijd is.</td></tr>
+<tr><td>Onafhankelijke bron</td><td>Een bron zonder eigen belang.</td></tr>
+<tr><td>Citaat, aanhalingstekens</td><td>Letterlijke overname, tussen tekens, met bron.</td></tr>
+<tr><td>Parafrase</td><td>Eigen woorden, eigen zinsbouw, zelfde betekenis.</td></tr>
+<tr><td>Bronvermelding, bronnenlijst</td><td>De gegevens om de bron terug te vinden.</td></tr>
+<tr><td>Plagiaat</td><td>Andermans werk als eigen werk laten voorkomen.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Bronnen kiezen en beoordelen</div>
+<p>Gebruik liefst meer dan één bron, zodat je informatie kunt vergelijken en controleren. Beoordeel elke bron op vier punten: wie is de <strong>afzender</strong> en is die deskundig, wat is het doel en heeft de afzender een belang (bijvoorbeeld verkopen), is de informatie nog <strong>actueel</strong> en wordt ze onderbouwd? Een <strong>onafhankelijke bron</strong> met een beschreven methode is meestal <strong>betrouwbaarder</strong> dan een bron die iets wil verkopen of alleen een mening geeft. Likes en een mooi uiterlijk zeggen niets over de juistheid.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 196" role="img" aria-label="Vier vragen om een bron te beoordelen: wie is de afzender, wat is het doel, hoe actueel, hoe onderbouwd"><g font-family="inherit"><rect x="4" y="4" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="21" font-size="12" font-weight="700" fill="var(--dk)">1  Afzender</text><text x="12" y="37" font-size="11" fill="var(--dk)">Wie schreef dit en is die deskundig?</text>
+<rect x="4" y="48" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="65" font-size="12" font-weight="700" fill="var(--dk)">2  Doel en belang</text><text x="12" y="81" font-size="11" fill="var(--dk)">Wil de afzender iets verkopen of bereiken?</text>
+<rect x="4" y="92" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="109" font-size="12" font-weight="700" fill="var(--dk)">3  Actualiteit</text><text x="12" y="125" font-size="11" fill="var(--dk)">Hoe oud is de informatie?</text>
+<rect x="4" y="136" width="312" height="56" rx="6" fill="var(--or)"/><text x="12" y="153" font-size="12" font-weight="700" fill="#fff">4  Onderbouwing</text><text x="12" y="169" font-size="11" fill="#fff">Staat er hoe men aan de cijfers of de</text><text x="12" y="183" font-size="11" fill="#fff">conclusie kwam?</text></g></svg><div class="sam-figcap">Vier vragen om een bron te beoordelen: afzender, doel en belang, actualiteit en onderbouwing.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een bron met een verkoopbelang weeg je voorzichtiger en je controleert hem met een andere bron.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Citeren of parafraseren</div>
+<p>Een <strong>citaat</strong> is een letterlijk overgenomen tekstdeel: je zet het tussen <strong>aanhalingstekens</strong> en vermeldt de bron. Citeer kort en alleen waar de precieze woorden ertoe doen. In de meeste gevallen geef je de inhoud weer als <strong>parafrase</strong>: je gebruikt eigen woorden en een eigen zinsbouw en houdt de betekenis gelijk. Alleen een paar woorden vervangen is geen parafrase. Pas op dat je de betekenis niet wijzigt: van "veel jongeren" mag je geen "alle jongeren" maken.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Vergelijking van een citaat en een parafrase met dezelfde bronzin: het citaat staat tussen aanhalingstekens met bron, de parafrase gebruikt eigen woorden met bron"><g font-family="inherit"><rect x="4" y="4" width="312" height="52" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="21" font-size="12" font-weight="700" fill="var(--mu)">Bron</text><text x="12" y="38" font-size="11" fill="var(--mu)">"Lage kustgebieden lopen meer risico op</text><text x="12" y="51" font-size="11" fill="var(--mu)">overstromingen door zeespiegelstijging."</text>
+<rect x="4" y="62" width="312" height="56" rx="6" fill="var(--orl)"/><text x="12" y="79" font-size="12" font-weight="700" fill="var(--dk)">Citaat: letterlijk</text><text x="12" y="95" font-size="11" fill="var(--dk)">"Lage kustgebieden lopen meer risico"</text><text x="12" y="110" font-size="11" fill="var(--dk)">(Kustinstituut, 2023)</text>
+<rect x="4" y="124" width="312" height="60" rx="6" fill="var(--or)"/><text x="12" y="141" font-size="12" font-weight="700" fill="#fff">Parafrase: eigen woorden</text><text x="12" y="157" font-size="11" fill="#fff">Stijgt de zee, dan is de kans op wateroverlast</text><text x="12" y="172" font-size="11" fill="#fff">in lage kuststreken groter (Kustinstituut, 2023).</text></g></svg><div class="sam-figcap">Dezelfde bronzin als citaat (letterlijk, met aanhalingstekens en bron) en als parafrase (eigen woorden en zinsbouw, met bron).</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Bronnen vermelden en plagiaat voorkomen</div>
+<p>In de tekst verwijs je kort naar de bron, bijvoorbeeld met auteur en jaar. Aan het einde zet je een <strong>bronnenlijst</strong>, meestal alfabetisch op auteur. Een <strong>bronvermelding</strong> bevat genoeg gegevens om de bron terug te vinden: auteur of organisatie, titel, datum en bij een website het webadres. <strong>Plagiaat</strong> is andermans tekst of idee als eigen werk laten voorkomen. Het geldt ook voor een idee dat je in eigen woorden opschrijft, en ook als je een paar woorden verandert. Noem dus altijd de bron.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Onderdelen van een bronvermelding bij een website met een voorbeeld: auteur of organisatie, jaar, titel en webadres"><g font-family="inherit"><rect x="4" y="4" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="24" font-size="12" font-weight="700" fill="var(--dk)">Auteur of organisatie  ·  Kustinstituut</text>
+<rect x="4" y="38" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="58" font-size="12" font-weight="700" fill="var(--dk)">Jaar of datum  ·  2023</text>
+<rect x="4" y="72" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="92" font-size="12" font-weight="700" fill="var(--dk)">Titel  ·  Zeespiegelstijging</text>
+<rect x="4" y="106" width="312" height="30" rx="6" fill="var(--or)"/><text x="12" y="126" font-size="12" font-weight="700" fill="#fff">Webadres  ·  www.kustinstituut.example/...</text>
+<rect x="4" y="142" width="312" height="30" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="162" font-size="11" fill="var(--mu)">Niet genoeg: "internet, 2024"</text></g></svg><div class="sam-figcap">Een bronvermelding bij een website bevat organisatie, jaar, titel en webadres. "Internet, 2024" (stippellijn) is niet genoeg om de bron terug te vinden.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> noteer de gegevens van een bron meteen als je hem gebruikt. Achteraf een webadres of auteur terugzoeken kost veel tijd en leidt tot vergeten bronnen.</div>
+</div>`,
+'havo_nl_C2':`<div class="sam-intro">Voor je schrijft, bepaal je twee dingen: <strong>wat wil je bereiken</strong> (het <strong>doel</strong>) en <strong>voor wie schrijf je</strong> (de <strong>lezersgroep</strong>). Het doel bepaalt de <strong>tekstsoort</strong>: <strong>uiteenzetting</strong>, <strong>beschouwing</strong> of <strong>betoog</strong>. De lezers bepalen je woordkeus en toon.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Doel</td><td>Informeren, overtuigen of overwegen.</td></tr>
+<tr><td>Uiteenzetting</td><td>Legt objectief iets uit.</td></tr>
+<tr><td>Beschouwing</td><td>Weegt meerdere kanten af.</td></tr>
+<tr><td>Betoog</td><td>Verdedigt een stelling met argumenten.</td></tr>
+<tr><td>Stelling</td><td>Het standpunt dat je verdedigt.</td></tr>
+<tr><td>Lezersgroep, voorkennis</td><td>Voor wie je schrijft en wat zij al weten.</td></tr>
+<tr><td>Register, aanspreekvorm</td><td>Formeel of informeel en je of u.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Doel en tekstsoort</div>
+<p>Wil je <strong>informeren</strong>, dan schrijf je een <strong>uiteenzetting</strong>: je legt iets uit en geeft geen mening. Wil je <strong>overtuigen</strong>, dan schrijf je een <strong>betoog</strong>: je neemt een <strong>stelling</strong> in en onderbouwt die met argumenten. Wil je iets <strong>overwegen</strong>, dan schrijf je een <strong>beschouwing</strong>: je weegt meerdere kanten af en sluit voorzichtig af. Het onderwerp bepaalt de tekstsoort niet; over smartphones op school kun je alle drie schrijven.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Drie tekstsoorten naast elkaar: uiteenzetting informeert, beschouwing weegt af, betoog overtuigt met een stelling"><g font-family="inherit"><rect x="4" y="4" width="312" height="52" rx="6" fill="var(--orl)"/><text x="12" y="21" font-size="12" font-weight="700" fill="var(--dk)">Uiteenzetting: informeren</text><text x="12" y="37" font-size="11" fill="var(--dk)">Legt uit hoe iets werkt of is.</text><text x="12" y="50" font-size="11" fill="var(--dk)">Geen mening van de schrijver.</text>
+<rect x="4" y="62" width="312" height="52" rx="6" fill="var(--orl)"/><text x="12" y="79" font-size="12" font-weight="700" fill="var(--dk)">Beschouwing: overwegen</text><text x="12" y="95" font-size="11" fill="var(--dk)">Weegt meerdere kanten af.</text><text x="12" y="108" font-size="11" fill="var(--dk)">Sluit af zonder scherpe stelling.</text>
+<rect x="4" y="120" width="312" height="62" rx="6" fill="var(--or)"/><text x="12" y="137" font-size="12" font-weight="700" fill="#fff">Betoog: overtuigen</text><text x="12" y="153" font-size="11" fill="#fff">Verdedigt een stelling met argumenten.</text><text x="12" y="168" font-size="11" fill="#fff">Eindigt met een duidelijke conclusie.</text></g></svg><div class="sam-figcap">Drie tekstsoorten bij drie doelen: uiteenzetting (informeren), beschouwing (overwegen) en betoog (overtuigen).</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> het doel van de opdracht bepaalt de tekstsoort, niet het onderwerp.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>De lezersgroep: wat weten ze al?</div>
+<p>Stem je tekst af op je <strong>lezersgroep</strong>. Bedenk wat de lezers al weten (hun <strong>voorkennis</strong>) en wat ze willen weten. Voor kinderen gebruik je korte, concrete zinnen en voorbeelden uit hun wereld. Voor vakmensen zijn <strong>vaktaal</strong> en verwijzingen naar onderzoek juist passend. Wie weinig voorkennis heeft, krijgt vaktermen uitgelegd of vervangen door gewone woorden. Je aanspreekvorm hoort er ook bij: je of u.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Hetzelfde onderwerp voor twee lezersgroepen: kinderen krijgen korte concrete zinnen, vakmensen krijgen vaktaal en bronnen"><g font-family="inherit"><rect x="4" y="4" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="24" font-size="12" font-weight="700" fill="var(--dk)">Onderwerp: het hart</text>
+<rect x="4" y="42" width="150" height="130" rx="6" fill="var(--orl)"/><text x="12" y="60" font-size="12" font-weight="700" fill="var(--dk)">Kinderen</text><text x="12" y="80" font-size="11" fill="var(--dk)">Korte zinnen</text><text x="12" y="96" font-size="11" fill="var(--dk)">Gewone woorden</text><text x="12" y="112" font-size="11" fill="var(--dk)">Voorbeelden uit</text><text x="12" y="126" font-size="11" fill="var(--dk)">hun eigen wereld</text>
+<rect x="166" y="42" width="150" height="130" rx="6" fill="var(--or)"/><text x="174" y="60" font-size="12" font-weight="700" fill="#fff">Vakmensen</text><text x="174" y="80" font-size="11" fill="#fff">Vaktaal</text><text x="174" y="96" font-size="11" fill="#fff">Onderzoek en</text><text x="174" y="110" font-size="11" fill="#fff">bronnen noemen</text><text x="174" y="126" font-size="11" fill="#fff">Zakelijk register</text></g></svg><div class="sam-figcap">Hetzelfde onderwerp, twee lezersgroepen: kinderen krijgen korte zinnen en gewone woorden, vakmensen vaktaal en bronnen.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Register en toon</div>
+<p>Het <strong>register</strong> is hoe formeel je schrijft. Een brief aan een directeur, een sollicitatiebrief of een tekst voor de inspectie vraagt een formeel register: volledige zinnen, geen straattaal of afkortingen en een passende aanhef zoals "Geachte heer Bakker". Voor medeleerlingen in een schoolkrant mag de toon losser. Kies steeds de toon die bij de lezer past, en schrijf in beide gevallen correcte, begrijpelijke zinnen. Een bericht aan een klasgenoot mag informeel zijn; een brief aan een onbekende lezer of een instantie hoort verzorgd te zijn, met een duidelijke aanhef, een zakelijke toon en een nette afsluiting.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Formeel en informeel register naast elkaar met voorbeelden van aanhef en woordkeus"><g font-family="inherit"><rect x="4" y="4" width="312" height="76" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Formeel: directeur, sollicitatie</text><text x="12" y="42" font-size="11" fill="var(--dk)">"Geachte heer Bakker,"</text><text x="12" y="58" font-size="11" fill="var(--dk)">Volledige zinnen, geen straattaal</text><text x="12" y="72" font-size="11" fill="var(--dk)">of afkortingen</text>
+<rect x="4" y="88" width="312" height="76" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="106" font-size="12" font-weight="700" fill="var(--mu)">Informeel: schoolkrant</text><text x="12" y="126" font-size="11" fill="var(--mu)">"Lekker bezig, jongens!"</text><text x="12" y="142" font-size="11" fill="var(--mu)">Los taalgebruik past bij</text><text x="12" y="156" font-size="11" fill="var(--mu)">lezers die je goed kent</text></g></svg><div class="sam-figcap">Formeel register voor een directeur of sollicitatie, informeel (stippellijn) alleen voor lezers die je goed kent.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> lees de opdracht eerst op drie punten: wat is het doel, wie is de lezer en welk register past? Schrijf die drie dingen boven je concept.</div>
+</div>`,
+'havo_nl_C3':`<div class="sam-intro">Een <strong>betoog</strong> overtuigt de lezer van een <strong>stelling</strong>. Je onderbouwt haar met <strong>argumenten</strong>, gaat in op een <strong>tegenwerping</strong> en sluit af met een <strong>conclusie</strong>. In dit leerdoel leer je elk onderdeel goed maken en de samenhang zichtbaar houden.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Betoog</td><td>Verdedigt een stelling met argumenten.</td></tr>
+<tr><td>Stelling</td><td>Een standpunt waarover je kunt twisten.</td></tr>
+<tr><td>Argument, onderbouwing</td><td>Een reden, met voorbeeld of bewijs.</td></tr>
+<tr><td>Tegenwerping</td><td>Een bezwaar tegen je stelling.</td></tr>
+<tr><td>Weerlegging</td><td>Inhoudelijk antwoord op dat bezwaar.</td></tr>
+<tr><td>Conclusie, slot</td><td>De slotsom aan het einde.</td></tr>
+<tr><td>Signaalwoord</td><td>Maakt de opbouw zichtbaar.</td></tr>
+<tr><td>Persoonlijke aanval</td><td>De persoon aanvallen in plaats van het argument.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Een goede stelling en sterke argumenten</div>
+<p>Een goede <strong>stelling</strong> is een standpunt waarover je van mening kunt verschillen, bijvoorbeeld "Er moet een verbod komen op energiedrankjes voor kinderen onder de zestien". Een feit ("energiedrankjes bevatten cafeïne") is geen stelling, een vraag ook niet, en een zin die alleen twee meningen beschrijft evenmin. Een <strong>argument</strong> geeft een reden voor de stelling en heeft een <strong>onderbouwing</strong>: een feit, een cijfer of een concreet <strong>voorbeeld</strong>. "Het is gewoon beter" is geen argument, want er staat geen reden in. De stelling zet je in de <strong>inleiding</strong>, zodat de lezer weet wat je verdedigt.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Wat een stelling is en wat niet: standpunt is een stelling, feit en vraag zijn dat niet"><g font-family="inherit"><rect x="4" y="4" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="21" font-size="12" font-weight="700" fill="#fff">Stelling: een standpunt</text><text x="12" y="37" font-size="11" fill="#fff">"Er moet een verbod komen op</text><text x="12" y="50" font-size="11" fill="#fff">energiedrankjes voor kinderen."</text>
+<rect x="4" y="62" width="312" height="56" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="79" font-size="12" font-weight="700" fill="var(--mu)">Geen stelling: een feit</text><text x="12" y="95" font-size="11" fill="var(--mu)">"Energiedrankjes bevatten cafeïne."</text><text x="12" y="109" font-size="11" fill="var(--mu)">Over een feit twist je niet.</text>
+<rect x="4" y="124" width="312" height="58" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="141" font-size="12" font-weight="700" fill="var(--mu)">Geen stelling: een vraag</text><text x="12" y="157" font-size="11" fill="var(--mu)">"Wat zijn de gevolgen van</text><text x="12" y="171" font-size="11" fill="var(--mu)">energiedrankjes voor jongeren?"</text></g></svg><div class="sam-figcap">Een stelling is een standpunt; een feit en een vraag (stippellijn) zijn dat niet.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een argument heeft een reden en een bewijs of voorbeeld; de stelling staat in de inleiding.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Tegenwerping en weerlegging</div>
+<p>Een sterk betoog noemt de belangrijkste <strong>tegenwerping</strong> en <strong>weerlegt</strong> die inhoudelijk. Dat kan met een signaal als "natuurlijk zal iemand zeggen dat ...". Daarna geef je een alternatief, een tegenvoorbeeld of een reden waarom het bezwaar weinig weegt. Alleen ontkennen ("dat is niet waar") of de <strong>persoonlijke aanval</strong> ("jij begrijpt er niets van") is geen weerlegging. Een betoog zonder tegenwerping is zwakker: de lezer bedenkt het bezwaar zelf.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 178" role="img" aria-label="Een weerlegging in drie stappen: noem de tegenwerping, erken wat klopt, geef een oplossing of tegenargument"><g font-family="inherit"><rect x="4" y="4" width="312" height="46" rx="6" fill="var(--orl)"/><text x="12" y="21" font-size="12" font-weight="700" fill="var(--dk)">1  Tegenwerping noemen</text><text x="12" y="38" font-size="11" fill="var(--dk)">"Leerlingen gebruiken hun telefoon voor opdrachten."</text>
+<rect x="4" y="54" width="312" height="46" rx="6" fill="var(--orl)"/><text x="12" y="71" font-size="12" font-weight="700" fill="var(--dk)">2  Erkennen wat klopt</text><text x="12" y="88" font-size="11" fill="var(--dk)">"Dat is voor sommige opdrachten zo."</text>
+<rect x="4" y="104" width="312" height="70" rx="6" fill="var(--or)"/><text x="12" y="121" font-size="12" font-weight="700" fill="#fff">3  Weerleggen met een oplossing</text><text x="12" y="138" font-size="11" fill="#fff">"De school kan laptops of tablets geven,</text><text x="12" y="153" font-size="11" fill="#fff">dus de telefoon is niet nodig."</text></g></svg><div class="sam-figcap">Een weerlegging in drie stappen: noem de tegenwerping, erken wat klopt en geef dan een inhoudelijke oplossing of tegenargument.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Opbouw, signaalwoorden en slot</div>
+<p>Een betoog heeft een vaste opbouw: <strong>inleiding</strong> met stelling, argumenten, tegenwerping met weerlegging en een <strong>slot</strong> met conclusie. <strong>Signaalwoorden</strong> maken die opbouw zichtbaar: "ten eerste" en "ten tweede" voor argumenten, "natuurlijk zal iemand zeggen dat" voor een tegenwerping en "dus" of "kortom" voor de conclusie. Zet je sterkste argument op een opvallende plek, vooraan of als afsluiter. Het slot herhaalt of bevestigt de stelling; een zin als "dit waren mijn argumenten" is geen conclusie.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Opbouw van een betoog: inleiding met stelling, argumenten, tegenwerping met weerlegging, slot met conclusie"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--or)"/><text x="12" y="27" font-size="12" font-weight="700" fill="#fff">1  Inleiding met stelling</text>
+<path d="M160 40 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Argumenten met onderbouwing</text>
+<path d="M160 82 V88" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">3  Tegenwerping en weerlegging</text>
+<path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="130" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="150" font-size="12" font-weight="700" fill="#fff">4  Slot met conclusie</text><text x="12" y="168" font-size="11" fill="#fff">"Dus: ..."</text></g></svg><div class="sam-figcap">De opbouw van een betoog: inleiding met stelling, argumenten met onderbouwing, tegenwerping met weerlegging en een slot met conclusie.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> controleer vlak voor het inleveren drie dingen: staat de stelling vooraan, heeft elk argument een bewijs of voorbeeld en eindigt het betoog met een echte conclusie?</div>
+</div>`,
+'havo_nl_C4':`<div class="sam-intro">Een goede tekst is opgebouwd uit <strong>alinea's</strong>. Elke alinea heeft één onderwerp, een <strong>kernzin</strong> en een <strong>uitwerking</strong>. Een <strong>openingsalinea</strong> trekt de aandacht, een <strong>slotalinea</strong> rondt af. <strong>Tussenkopjes</strong> en <strong>signaalwoorden</strong> zorgen dat de lezer de opbouw ziet en de tekst als één geheel leest.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Alinea</td><td>Eén onderwerp.</td></tr>
+<tr><td>Kernzin</td><td>Vat de alinea samen, meestal vooraan.</td></tr>
+<tr><td>Uitwerking</td><td>Toelichting en onderbouwing van de kernzin.</td></tr>
+<tr><td>Openingsalinea, slotalinea</td><td>Inleiden en afronden.</td></tr>
+<tr><td>Middenstuk</td><td>De alinea's tussen opening en slot.</td></tr>
+<tr><td>Tussenkopje</td><td>Wegwijzer boven een deel.</td></tr>
+<tr><td>Coherentie, signaalwoord</td><td>Samenhang en woorden die verbanden aangeven.</td></tr>
+<tr><td>Verwijswoord</td><td>Verwijst terug, zoals "dit" of "zij".</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>De alinea: kernzin en uitwerking</div>
+<p>Een <strong>alinea</strong> behandelt één <strong>deelonderwerp</strong>. De <strong>kernzin</strong> vat de hoofdgedachte samen en staat meestal vooraan; daarna volgt de <strong>uitwerking</strong> met uitleg, voorbeelden of argumenten. Komt er een nieuw onderwerp, dan begin je een nieuwe alinea. Een alinea over de kosten, het milieu en de files tegelijk is dus te vol: splits hem. Zorg ook dat de uitwerking echt bij de kernzin past.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Opbouw van een alinea: kernzin vooraan, daarna uitwerking met uitleg, voorbeeld en argument"><g font-family="inherit"><rect x="4" y="4" width="312" height="44" rx="6" fill="var(--or)"/><text x="12" y="22" font-size="12" font-weight="700" fill="#fff">Kernzin</text><text x="12" y="39" font-size="11" fill="#fff">"Sporten is gezond."</text>
+<path d="M160 48 V56" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="56" width="312" height="116" rx="6" fill="var(--orl)"/><text x="12" y="74" font-size="12" font-weight="700" fill="var(--dk)">Uitwerking</text><text x="12" y="94" font-size="11" fill="var(--dk)">Het hart wordt sterker.</text><text x="12" y="112" font-size="11" fill="var(--dk)">Spieren worden steviger.</text><text x="12" y="130" font-size="11" fill="var(--dk)">Je slaapt beter.</text><text x="12" y="152" font-size="11" fill="var(--mu)">Alles gaat over hetzelfde onderwerp.</text></g></svg><div class="sam-figcap">Een alinea: de kernzin vooraan, daarna de uitwerking over datzelfde onderwerp.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> één onderwerp per alinea, de kernzin meestal vooraan.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Opbouw van de hele tekst</div>
+<p>De <strong>opbouw</strong> van een tekst heeft drie delen. De <strong>openingsalinea</strong> leidt het onderwerp in en trekt de aandacht, bijvoorbeeld met een concreet feit of een vraag; een droge definitie of een aankondiging doet dat niet. Het <strong>middenstuk</strong> bevat de argumenten of de uitleg, per deelonderwerp één alinea. De <strong>slotalinea</strong> bevestigt de stelling en trekt de conclusie. Na de conclusie komt niets nieuws meer. <strong>Tussenkopjes</strong> noemen kort het onderwerp van het volgende deel en helpen de lezer scannen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Opbouw van een tekst: openingsalinea, middenstuk met alinea's en tussenkopjes, slotalinea met conclusie"><g font-family="inherit"><rect x="4" y="4" width="312" height="40" rx="6" fill="var(--or)"/><text x="12" y="21" font-size="12" font-weight="700" fill="#fff">Opening</text><text x="12" y="37" font-size="11" fill="#fff">onderwerp inleiden, aandacht trekken</text>
+<rect x="4" y="50" width="312" height="84" rx="6" fill="var(--orl)"/><text x="12" y="67" font-size="12" font-weight="700" fill="var(--dk)">Middenstuk</text><text x="12" y="86" font-size="11" fill="var(--dk)">Tussenkopje: Voordelen</text><text x="12" y="102" font-size="11" fill="var(--dk)">Tussenkopje: Nadelen</text><text x="12" y="122" font-size="11" fill="var(--mu)">Per deelonderwerp een alinea</text>
+<rect x="4" y="140" width="312" height="44" rx="6" fill="var(--or)"/><text x="12" y="157" font-size="12" font-weight="700" fill="#fff">Slot</text><text x="12" y="174" font-size="11" fill="#fff">stelling bevestigen, conclusie trekken</text></g></svg><div class="sam-figcap">Een tekst heeft een opening, een middenstuk met per deelonderwerp een alinea en eventueel tussenkopjes, en een slot met conclusie.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Samenhang met signaalwoorden</div>
+<p><strong>Coherentie</strong> betekent dat zinnen en alinea's bij elkaar horen. Je bereikt dat met een gedeeld onderwerp, <strong>verwijswoorden</strong> (zoals "dit" of "zij") en <strong>signaalwoorden</strong> die het verband aangeven: "daardoor" voor een gevolg, "maar" of "echter" voor een tegenstelling, "bovendien" voor een toevoeging, "bijvoorbeeld" voor een voorbeeld en "dus" voor een conclusie. Losse zinnen zonder verband ("Ik wil naar Amsterdam. Het is warm. Mijn oma woont in Utrecht.") vormen geen alinea.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Signaalwoorden en het verband dat ze aangeven: gevolg, tegenstelling, toevoeging, voorbeeld, conclusie"><g font-family="inherit"><rect x="4" y="4" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="24" font-size="12" font-weight="700" fill="var(--dk)">daardoor  →  gevolg</text>
+<rect x="4" y="38" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="58" font-size="12" font-weight="700" fill="var(--dk)">maar, echter  →  tegenstelling</text>
+<rect x="4" y="72" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="92" font-size="12" font-weight="700" fill="var(--dk)">bovendien  →  toevoeging</text>
+<rect x="4" y="106" width="312" height="30" rx="6" fill="var(--orl)"/><text x="12" y="126" font-size="12" font-weight="700" fill="var(--dk)">bijvoorbeeld  →  voorbeeld</text>
+<rect x="4" y="140" width="312" height="32" rx="6" fill="var(--or)"/><text x="12" y="161" font-size="12" font-weight="700" fill="#fff">dus, kortom  →  conclusie</text></g></svg><div class="sam-figcap">Veelgebruikte signaalwoorden en het verband dat ze aangeven: gevolg, tegenstelling, toevoeging, voorbeeld en conclusie.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> lees je tekst na en onderstreep per alinea de kernzin. Kun je er geen vinden, of gaan er twee onderwerpen door elkaar, dan moet je de alinea herschrijven of splitsen.</div>
+</div>`,
+'havo_nl_C5':`<div class="sam-intro">Een tekst moet niet alleen kloppen, maar ook <strong>verzorgd</strong> zijn. In dit leerdoel leer je het verschil tussen <strong>schrijftaal</strong> en <strong>spreektaal</strong>, hoe je <strong>stijlfouten</strong> voorkomt, hoe een <strong>formele brief</strong> eruitziet en waar je op let bij <strong>spelling</strong> en <strong>interpunctie</strong>.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Schrijftaal, spreektaal</td><td>Verzorgd tegenover los.</td></tr>
+<tr><td>Register</td><td>Formeel of informeel taalgebruik.</td></tr>
+<tr><td>Stijlfout, stopwoord</td><td>Onverzorgde woordkeus of zinsbouw.</td></tr>
+<tr><td>Formele brief, aanhef</td><td>Vaste opbouw met "Geachte ...".</td></tr>
+<tr><td>Aanspreekvorm</td><td>U of je, consequent.</td></tr>
+<tr><td>Spelling, stam</td><td>Juiste schrijfwijze, ook van werkwoorden.</td></tr>
+<tr><td>Interpunctie</td><td>De leestekens.</td></tr>
+<tr><td>Verwijswoord</td><td>Moet eenduidig zijn.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Schrijftaal en stijl</div>
+<p><strong>Schrijftaal</strong> is verzorgd en volledig; <strong>spreektaal</strong> bevat <strong>stopwoorden</strong> als "zeg maar", omgangstaal als "echt super" en afgebroken zinnen. Past je <strong>register</strong> niet bij de lezer, dan is dat een <strong>stijlfout</strong>. Andere stijlfouten zijn eentonige herhaling van hetzelfde woord, omslachtige zinnen vol afzwakkers ("ik denk dat je misschien eigenlijk zou kunnen zeggen dat ...") en een onduidelijk <strong>verwijswoord</strong>: in "Mijn broer en mijn vader gingen naar de wedstrijd. Hij vond het geweldig" weet de lezer niet wie "hij" is.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Spreektaal tegenover schrijftaal met een voorbeeld: stopwoorden en omgangstaal worden een verzorgde zin"><g font-family="inherit"><rect x="4" y="4" width="312" height="64" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--mu)">Spreektaal</text><text x="12" y="42" font-size="11" fill="var(--mu)">"Nou, dat huiswerk kost echt</text><text x="12" y="58" font-size="11" fill="var(--mu)">veel te veel tijd, zeg maar."</text>
+<path d="M160 68 V80" stroke="var(--or)" stroke-width="2.5"/><path d="M153 78 L160 86 L167 78 Z" fill="var(--or)"/>
+<rect x="4" y="88" width="312" height="84" rx="6" fill="var(--or)"/><text x="12" y="108" font-size="12" font-weight="700" fill="#fff">Schrijftaal</text><text x="12" y="128" font-size="11" fill="#fff">"Het huiswerk kost te veel tijd."</text><text x="12" y="146" font-size="11" fill="#fff">Geen stopwoorden, geen omgangstaal,</text><text x="12" y="162" font-size="11" fill="#fff">een volledige zin.</text></g></svg><div class="sam-figcap">Van spreektaal (stippellijn) naar schrijftaal: stopwoorden en omgangstaal verdwijnen en de zin blijft volledig.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> kies het register dat bij de lezer past en schrap overbodige woorden.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Een formele brief</div>
+<p>Een <strong>formele brief</strong> heeft een vaste opbouw: een <strong>aanhef</strong> ("Geachte mevrouw Jansen,"), een duidelijke inhoud in verzorgde schrijftaal en een formele afsluiting ("Met vriendelijke groet,") met je volledige naam. Je spreekt de lezer met <strong>u</strong> aan en blijft daarbij: wisselen van "u" naar "jij" is een stijlfout. Informele groeten als "Hoi", "Groetjes" of "Doei" passen niet. Dat geldt ook voor een formele mail aan een bedrijf of voor een sollicitatiebrief.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Opbouw van een formele brief: aanhef, inhoud met u, afsluiting en naam"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--or)"/><text x="12" y="27" font-size="12" font-weight="700" fill="#fff">Aanhef: Geachte mevrouw Jansen,</text>
+<rect x="4" y="46" width="312" height="80" rx="6" fill="var(--orl)"/><text x="12" y="65" font-size="12" font-weight="700" fill="var(--dk)">Inhoud</text><text x="12" y="85" font-size="11" fill="var(--dk)">Verzorgde zinnen</text><text x="12" y="101" font-size="11" fill="var(--dk)">Aanspreken met "u", telkens</text><text x="12" y="117" font-size="11" fill="var(--dk)">Geen stopwoorden of straattaal</text>
+<rect x="4" y="132" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="152" font-size="12" font-weight="700" fill="#fff">Afsluiting: Met vriendelijke groet,</text><text x="12" y="170" font-size="11" fill="#fff">Sam Jansen</text></g></svg><div class="sam-figcap">Opbouw van een formele brief: aanhef, inhoud in schrijftaal met "u" en een formele afsluiting met volledige naam.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Spelling en leestekens</div>
+<p>Let bij de <strong>spelling</strong> van werkwoorden op de <strong>stam</strong>. Bij "ik" schrijf je de stam: "ik vind", "ik word". Bij "hij", "zij" en "het" komt er een t achter: "hij vindt", "hij wordt". In de verleden tijd en het voltooid deelwoord kijk je naar de laatste letter van de stam: eindigt die op een van de medeklinkers van 't kofschip (bijvoorbeeld k), dan schrijf je -te en -t: "hij werkte", "gewerkt". Bij <strong>interpunctie</strong> gelden vaste regels: een vraag eindigt op een vraagteken, in een opsomming staan komma's en voor het laatste deel "en" zonder komma, en een letterlijk overgenomen tekst staat tussen aanhalingstekens. Gebruik in formele tekst niet meerdere uitroeptekens.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Werkwoordspelling met de stam: ik vind, hij vindt, hij werkte, gewerkt"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="27" font-size="12" font-weight="700" fill="var(--dk)">ik + stam: ik vind, ik word</text>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">hij, zij, het + stam + t: hij vindt</text>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">stam op k, verleden tijd: hij werkte</text>
+<rect x="4" y="130" width="312" height="42" rx="6" fill="var(--or)"/><text x="12" y="148" font-size="12" font-weight="700" fill="#fff">stam op k, voltooid deelwoord:</text><text x="12" y="164" font-size="12" font-weight="700" fill="#fff">gewerkt</text></g></svg><div class="sam-figcap">Werkwoordspelling: bij "ik" de stam, bij "hij" stam plus t, en bij een stam op k ('t kofschip) -te en -t.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> lees je tekst na op drie dingen: spreektaal, aanspreekvorm en werkwoordsvormen. Lees hem ook hardop; zinnen die niet lekker lopen, kun je meestal inkorten.</div>
+</div>`,
+'havo_nl_C6':`<div class="sam-intro">Een eerste versie, het <strong>concept</strong>, is zelden af. Bij <strong>revisie</strong> verbeter je je tekst op grond van <strong>commentaar</strong>. Je leest het goed, bepaalt wat het belangrijkste is, past gericht aan en controleert daarna het geheel, zodat je een sterkere <strong>eindversie</strong> inlevert.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Revisie, commentaar</td><td>Verbeteren op grond van opmerkingen.</td></tr>
+<tr><td>Concept, eindversie</td><td>Eerste versie en versie na revisie.</td></tr>
+<tr><td>Inhoud, opbouw</td><td>Wat er staat en hoe het geordend is.</td></tr>
+<tr><td>Stijl, spelling</td><td>Woordkeus, toon en schrijfwijze.</td></tr>
+<tr><td>Prioriteren</td><td>Bepalen wat je eerst aanpakt.</td></tr>
+<tr><td>Verwijzing, tegenstrijdigheid</td><td>Wijst naar elders; twee uitspraken botsen.</td></tr>
+<tr><td>Afwegen</td><td>Commentaar toetsen aan je opdracht.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Commentaar begrijpen en indelen</div>
+<p>Lees <strong>commentaar</strong> eerst goed: wat bedoelt de lezer? Deel het daarna in. Gaat het over de <strong>inhoud</strong> ("je argument heeft geen bewijs", "je spreekt jezelf tegen"), over de <strong>opbouw</strong> ("de conclusie komt uit de lucht vallen"), over de <strong>stijl</strong> ("te informeel voor een brief aan de directeur") of over de <strong>spelling</strong> ("een d/t-fout")? Snap je een opmerking niet, vraag dan door wat er precies onduidelijk is; schrap of herschrijf niet op goed geluk, want dan kun je iets goeds weggooien.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Vier soorten commentaar: inhoud, opbouw, stijl en spelling, met een voorbeeldopmerking per soort"><g font-family="inherit"><rect x="4" y="4" width="312" height="40" rx="6" fill="var(--or)"/><text x="12" y="21" font-size="12" font-weight="700" fill="#fff">Inhoud</text><text x="12" y="37" font-size="11" fill="#fff">"Je argument heeft geen bewijs."</text>
+<rect x="4" y="48" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="65" font-size="12" font-weight="700" fill="var(--dk)">Opbouw</text><text x="12" y="81" font-size="11" fill="var(--dk)">"De conclusie komt uit de lucht vallen."</text>
+<rect x="4" y="92" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="109" font-size="12" font-weight="700" fill="var(--dk)">Stijl</text><text x="12" y="125" font-size="11" fill="var(--dk)">"Te informeel voor een brief."</text>
+<rect x="4" y="136" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="153" font-size="12" font-weight="700" fill="var(--dk)">Spelling</text><text x="12" y="169" font-size="11" fill="var(--dk)">"Een d/t-fout in regel vier."</text></g></svg><div class="sam-figcap">Vier soorten commentaar met een voorbeeld: inhoud, opbouw, stijl en spelling.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> begrijp het commentaar eerst en bepaal om welk soort het gaat.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Prioriteren en aanpassen</div>
+<p>Begin bij het <strong>prioriteren</strong> met de grote punten: eerst <strong>inhoud</strong> en <strong>opbouw</strong>, daarna <strong>stijl</strong> en tenslotte <strong>spelling</strong>. Verbeter je eerst de spelling en schrap je later een hele alinea, dan was dat werk voor niets. Een alinea die niet bij het onderwerp past, schrap of verplaats je; een <strong>tegenstrijdigheid</strong> (eerst "huiswerk is nuttig", later "huiswerk is tijdverspilling") los je op door één lijn te kiezen; het sterkste argument zet je op een opvallende plek. Bewaar eerst je oude versie, zodat je kunt terugkeren.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Volgorde bij revisie: eerst inhoud en opbouw, dan stijl, dan spelling, dan controle van de hele tekst"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--or)"/><text x="12" y="27" font-size="12" font-weight="700" fill="#fff">1  Inhoud en opbouw</text>
+<path d="M160 40 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Stijl en register</text>
+<path d="M160 82 V88" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">3  Spelling en leestekens</text>
+<path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="130" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="150" font-size="12" font-weight="700" fill="#fff">4  Hele tekst controleren</text><text x="12" y="168" font-size="11" fill="#fff">nieuwe fouten, verwijzingen, samenhang</text></g></svg><div class="sam-figcap">Revisie in volgorde: eerst inhoud en opbouw, dan stijl, dan spelling en tot slot de hele tekst controleren.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Afwegen, afwijzen en controleren</div>
+<p>Niet elk commentaar hoef je uit te voeren. Je gaat na of het past bij je opdracht en je doel (<strong>afwegen</strong>) en je wijst het alleen af met een inhoudelijke reden. Zegt een lezer "maak het korter" terwijl de opdracht drie pagina's vraagt, dan klopt de opdracht. Spreken twee lezers elkaar tegen, dan beslist de opdracht. Na het aanpassen controleer je de hele tekst: een <strong>verwijzing</strong> als "zoals hierboven genoemd" kan na het verplaatsen van een alinea onjuist zijn en een wijziging kan nieuwe fouten veroorzaken.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Een opmerking afwegen: past het bij de opdracht, dan aanpassen, zo niet dan afwijzen met reden, daarna controleren"><g font-family="inherit"><rect x="4" y="4" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="26" font-size="12" font-weight="700" fill="var(--dk)">Opmerking van de lezer</text>
+<path d="M160 38 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="68" font-size="12" font-weight="700" fill="var(--dk)">Past dit bij mijn opdracht?</text>
+<rect x="4" y="88" width="150" height="48" rx="6" fill="var(--or)"/><text x="12" y="108" font-size="12" font-weight="700" fill="#fff">Ja: aanpassen</text><text x="12" y="124" font-size="11" fill="#fff">en controleren</text>
+<rect x="166" y="88" width="150" height="48" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="174" y="108" font-size="12" font-weight="700" fill="var(--mu)">Nee: afwijzen</text><text x="174" y="124" font-size="11" fill="var(--mu)">met een reden</text>
+<text x="12" y="162" font-size="11" fill="var(--mu)">Onduidelijk? Vraag door voordat je beslist.</text></g></svg><div class="sam-figcap">Commentaar afwegen: past het bij de opdracht, dan pas je aan en controleer je; zo niet, dan wijs je het met een reden af. Is het onduidelijk, vraag dan door.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> houd een lijstje bij met de opmerkingen en zet er per opmerking bij wat je deed: aangepast, afgewezen met reden of doorgevraagd. Zo mis je niets en kun je je keuzes uitleggen.</div>
 </div>`
 });

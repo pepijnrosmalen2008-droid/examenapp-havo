@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **8 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7). Werk dit getal bij bij elke afronding.
+> Voortgang: **19 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -38,19 +38,19 @@
   - [x] A5 · nl.A.5 Standpunten, argumenten en schema's herkennen · 27 vragen (R1-R3), 16 begrippen, 4 schema's (feitelijk vs waarderend, structuren, zes schema's, tegenwerping), geen clip
   - [x] A6 · nl.A.6 Betoog beoordelen en drogredenen herkennen · 28 vragen (R1-R3), 18 begrippen, 4 schema's (zes beoordelingsvragen, drogredenen schema, drogredenen discussieregel, drie stappen), geen clip
   - [x] A7 · nl.A.7 Een tekst samenvatten · 25 vragen (R1-R3), 12 begrippen, 3 schema's (wat blijft/valt weg, vier stappen, controlelijst), geen clip
-- [ ] **HAVO · Nederlands** (`nl`) · domein B — Mondelinge taalvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2)
-  - [ ] B1 · nl.B.1 Informatie verzamelen en verwerken
-  - [ ] B2 · nl.B.2 Doel, publiek en gespreksvorm bepalen
-  - [ ] B3 · nl.B.3 Een voordracht opbouwen en presenteren
-  - [ ] B4 · nl.B.4 Deelnemen aan een discussie of debat
-  - [ ] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers
-- [ ] **HAVO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2)
-  - [ ] C1 · nl.C.1 Informatie verzamelen, verwerken en verantwoorden
-  - [ ] C2 · nl.C.2 Tekstsoort, doel en lezersgroep afstemmen
-  - [ ] C3 · nl.C.3 Een betoog schrijven
-  - [ ] C4 · nl.C.4 Tekst en alinea opbouwen
-  - [ ] C5 · nl.C.5 Schrijftaal, stijl en correctheid
-  - [ ] C6 · nl.C.6 Een tekst reviseren op commentaar
+- [x] **HAVO · Nederlands** (`nl`) · domein B — Mondelinge taalvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2) (5 van 5 leerdoelen op v2)
+  - [x] B1 · nl.B.1 Informatie verzamelen en verwerken · 26 vragen (R1-R3), 12 begrippen, 3 schema's (bronbeoordeling, vier stappen, citaat/parafrase/plagiaat), geen clip
+  - [x] B2 · nl.B.2 Doel, publiek en gespreksvorm bepalen · 25 vragen (R1-R3), 12 begrippen, 3 schema's (drie gespreksvormen, informeren vs overtuigen, afstemmen), geen clip
+  - [x] B3 · nl.B.3 Een voordracht opbouwen en presenteren · 26 vragen (R1-R3), 12 begrippen, 4 schema's (opbouw, overgangen, houding, stem), geen clip
+  - [x] B4 · nl.B.4 Deelnemen aan een discussie of debat · 26 vragen (R1-R3), 12 begrippen, 3 schema's (argument in lagen, weerleggen, slotpleidooi), geen clip
+  - [x] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers
+- [x] **HAVO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2) (6 van 6 leerdoelen op v2)
+  - [x] C1 · nl.C.1 Informatie verzamelen, verwerken en verantwoorden · 26 vragen (R1-R3), 12 begrippen, 3 schema's (bronbeoordeling, citaat tegenover parafrase, bronvermelding), geen clip
+  - [x] C2 · nl.C.2 Tekstsoort, doel en lezersgroep afstemmen · 26 vragen (R1-R3), 12 begrippen, 3 schema's (drie tekstsoorten, lezersgroepen, register), geen clip
+  - [x] C3 · nl.C.3 Een betoog schrijven · 26 vragen (R1-R3), 12 begrippen, 3 schema's (stelling tegenover feit en vraag, weerlegging in stappen, opbouw), geen clip
+  - [x] C4 · nl.C.4 Tekst en alinea opbouwen · 27 vragen (R1-R3), 12 begrippen, 3 schema's (alinea, tekstopbouw, signaalwoorden), geen clip
+  - [x] C5 · nl.C.5 Schrijftaal, stijl en correctheid · 26 vragen (R1-R3), 12 begrippen, 3 schema's (spreek- tegenover schrijftaal, formele brief, werkwoordspelling), geen clip
+  - [x] C6 · nl.C.6 Een tekst reviseren op commentaar · 26 vragen (R1-R3), 12 begrippen, 3 schema's (soorten commentaar, volgorde van revisie, afwegen), geen clip
 - [ ] **HAVO · Nederlands** (`nl`) · domein D — Samenvatten
 - [ ] **HAVO · Nederlands** (`nl`) · domein E — Argumentatieve vaardigheden
 - [ ] **HAVO · Nederlands** (`nl`) · domein F — Literatuur

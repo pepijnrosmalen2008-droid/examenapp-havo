@@ -1,0 +1,657 @@
+{
+ "id": "C5",
+ "lo": "nl.C.5",
+ "gs": 2,
+ "naam": "Schrijftaal, stijl en correctheid",
+ "beschrijving": "Je schrijft in een register dat bij de lezer past, voorkomt stijlfouten, schrijft een formele brief en let op spelling en leestekens.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Schrijftaal en spreektaal",
+  "Stijlfouten voorkomen",
+  "Een formele brief",
+  "Spelling van werkwoorden",
+  "Leestekens",
+  "Een consequente aanspreekvorm"
+ ],
+ "sam": "Schrijftaal is verzorgd en volledig, spreektaal is los met stopwoorden en omgangstaal. Stijlfouten zijn bijvoorbeeld herhaling, omslachtige zinnen en onduidelijke verwijzingen. Een formele brief heeft een passende aanhef (Geachte ...), de aanspreekvorm u en een formele afsluiting. Let op werkwoordspelling (ik vind, hij vindt, hij werkte, gewerkt) en leestekens (vraagteken, komma in opsommingen, aanhalingstekens bij een citaat).",
+ "begrippen": [
+  {
+   "t": "Schrijftaal",
+   "d": "Verzorgde taal voor geschreven teksten."
+  },
+  {
+   "t": "Spreektaal",
+   "d": "Losse taal zoals je praat, met stopwoorden en omgangstaal."
+  },
+  {
+   "t": "Stijlfout",
+   "d": "Een fout in woordkeus of zinsbouw die de tekst onverzorgd maakt."
+  },
+  {
+   "t": "Formele brief",
+   "d": "Een brief aan een instantie of onbekende met een vaste opbouw."
+  },
+  {
+   "t": "Aanhef",
+   "d": "De begroeting aan het begin van een brief."
+  },
+  {
+   "t": "Aanspreekvorm",
+   "d": "Of je de lezer met u of je aanspreekt."
+  },
+  {
+   "t": "Spelling",
+   "d": "De juiste schrijfwijze van woorden."
+  },
+  {
+   "t": "Interpunctie",
+   "d": "De leestekens in een tekst."
+  },
+  {
+   "t": "Stam",
+   "d": "Het werkwoord zonder -en, bijvoorbeeld \"werk\" bij \"werken\"."
+  },
+  {
+   "t": "Verwijswoord",
+   "d": "Een woord dat naar iets eerders verwijst, zoals \"hij\" of \"dit\"."
+  },
+  {
+   "t": "Stopwoord",
+   "d": "Een overbodig woord dat vooral in spreektaal voorkomt."
+  },
+  {
+   "t": "Register",
+   "d": "De mate van formeel of informeel taalgebruik."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin is schrijftaal?",
+   "o": [
+    "Nou, dat huiswerk kost gewoon echt veel te veel tijd, zeg maar.",
+    "Ik ben van mening dat het huiswerk te veel tijd kost.",
+    "Huiswerk? Kost te veel tijd, man!",
+    "Huiswerk, joh, dat vreet echt tijd, hè."
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijftaal is verzorgd en volledig, spreektaal is los en vol omgangstaal.",
+   "uo": [
+    "Koos je \"Nou, dat huiswerk kost gewoon echt veel te veel...\"? Dan denk je dat dit geschreven taal is. Woorden als \"nou\", \"gewoon\", \"echt\" en \"zeg maar\" horen bij spreektaal, en passen niet in een verzorgde tekst.",
+    "Klopt: een volledige, verzorgde zin zonder spreektaalwoorden is schrijftaal.",
+    "Koos je \"Huiswerk? Kost te veel tijd, man!\"? Dan denk je dat dit geschreven taal is. Het is een afgebroken, losse zin met een uitroep, typisch voor spreektaal.",
+    "Koos je \"Huiswerk, joh, dat vreet echt tijd, hè.\"? Dan denk je dat dit schrijftaal is. Woorden als \"joh\", \"vreet\" en \"hè\" zijn omgangstaal, dus niet geschikt voor een verzorgde tekst."
+   ],
+   "uh": "Schrijftaal = verzorgd."
+  },
+  {
+   "v": "Welk woord is typisch spreektaal en past niet in een formele tekst?",
+   "o": [
+    "bovendien, dat een toevoeging aangeeft",
+    "namelijk, dat een uitleg inleidt",
+    "derhalve, dat een gevolg aangeeft",
+    "zeg maar"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Stopwoorden als \"zeg maar\" horen bij spreektaal.",
+   "uo": [
+    "Koos je \"bovendien, dat een toevoeging aangeeft\"? Dan denk je dat dit spreektaal is. \"Bovendien\" is een gewoon signaalwoord in schrijftaal, en past goed in formele tekst.",
+    "Koos je \"namelijk, dat een uitleg inleidt\"? Dan denk je dat dit spreektaal is. \"Namelijk\" is een verbindend woord in schrijftaal, en is dus geschikt.",
+    "Koos je \"derhalve, dat een gevolg aangeeft\"? Dan denk je dat dit spreektaal is. \"Derhalve\" is juist formeel, en past dus in verzorgde tekst.",
+    "Klopt: \"zeg maar\" is een stopwoord uit gesproken taal."
+   ],
+   "uh": "Stopwoord = spreektaal."
+  },
+  {
+   "v": "Waarom is het herhalen van hetzelfde woord in drie opeenvolgende zinnen een stijlfout?",
+   "o": [
+    "de tekst wordt eentonig en onzorgvuldig",
+    "omdat een woord maar twee keer in een tekst mag voorkomen",
+    "omdat herhaling altijd spelfouten oplevert",
+    "omdat de lezer dan denkt dat je woorden hebt overgenomen uit een bron"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Veel herhaling maakt een tekst eentonig.",
+   "uo": [
+    "Klopt: afwisseling in woordkeus maakt een tekst prettiger leesbaar.",
+    "Koos je \"omdat een woord maar twee keer in een tekst mag...\"? Dan denk je dat er een vaste grens is. Er is geen vast aantal; het gaat om de eentonigheid binnen de zinnen.",
+    "Koos je \"omdat herhaling altijd spelfouten oplevert\"? Dan denk je dat herhalen spelfouten veroorzaakt. Herhaling heeft met stijl te maken, niet met spelling.",
+    "Koos je \"omdat de lezer dan denkt dat je woorden hebt...\"? Dan denk je dat herhaling plagiaat suggereert. Het gaat om stijl, niet om bronvermelding."
+   ],
+   "uh": "Varieer in woordkeus."
+  },
+  {
+   "v": "Wat is er stilistisch mis met deze zin?",
+   "o": [
+    "de zin is te kort om iets te betekenen en moet worden uitgebreid met meer voorbeelden",
+    "de zin bevat geen werkwoord, waardoor hij onvolledig is",
+    "te veel herhaling van \"idee\" en \"het is\", waardoor de zin omslachtig wordt",
+    "de zin is in de verleden tijd geschreven en dat past niet"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Herhaling en omslachtigheid maken een zin zwak.",
+   "uo": [
+    "Koos je \"de zin is te kort om iets te betekenen en moet...\"? Dan denk je dat de zin te kort is. Hij is juist te lang en omslachtig; de herhaling is het probleem.",
+    "Koos je \"de zin bevat geen werkwoord, waardoor hij...\"? Dan denk je dat er geen werkwoord staat. Er staan werkwoorden in, het probleem is dat dezelfde woorden steeds terugkomen.",
+    "Klopt: dezelfde woorden worden onnodig herhaald; je kunt dit veel korter zeggen.",
+    "Koos je \"de zin is in de verleden tijd geschreven en dat...\"? Dan denk je dat de tijd het probleem is. De tijd is juist, het probleem is de herhaling en omslachtigheid."
+   ],
+   "uh": "Korter en afwisselender.",
+   "ctx": "Een leerling schrijft: \"Het is een goed idee en het is een idee dat veel mensen vinden dat het een goed idee is.\""
+  },
+  {
+   "v": "Welk probleem zit hier in de verwijzing?",
+   "o": [
+    "\"gingen\" hoort in de tegenwoordige tijd te staan",
+    "\"wedstrijd\" moet met een hoofdletter geschreven worden",
+    "onduidelijk of \"hij\" de broer of de vader is",
+    "de twee zinnen moeten één zin worden"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Een verwijswoord moet eenduidig zijn.",
+   "uo": [
+    "Koos je \"gingen hoort in de tegenwoordige tijd te staan\"? Dan denk je dat de werkwoordstijd fout is. De tijd is hier niet het probleem; het probleem is dat \"hij\" onduidelijk is.",
+    "Koos je \"wedstrijd moet met een hoofdletter geschreven worden\"? Dan denk je dat hoofdletters het probleem zijn. Een gewoon zelfstandig naamwoord krijgt er geen, het probleem is de verwijzing.",
+    "Klopt: \"hij\" kan naar beide verwijzen, dus de lezer weet niet wie bedoeld is.",
+    "Koos je \"de twee zinnen moeten één zin worden\"? Dan denk je dat de zinnen te kort zijn. Samenvoegen lost de verwijzing niet op; de verwijzing moet duidelijk gemaakt worden."
+   ],
+   "uh": "Wie is \"hij\"?",
+   "ctx": "Een leerling schrijft: \"Mijn broer en mijn vader gingen naar de wedstrijd. Hij vond het geweldig.\""
+  },
+  {
+   "v": "Welke aanhef past in een formele brief aan een onbekende mevrouw?",
+   "o": [
+    "Geachte mevrouw,",
+    "Hallo mevrouwtje,",
+    "Yo mevrouw,",
+    "Hé hé, mevrouw,"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Een formele brief begint met \"Geachte ...\".",
+   "uo": [
+    "Klopt: \"Geachte mevrouw,\" is de gebruikelijke formele aanhef.",
+    "Koos je \"Hallo mevrouwtje,\"? Dan denk je dat dit netjes is. \"Hallo\" is informeel en \"mevrouwtje\" is brutaal, dus het past niet in een formele brief.",
+    "Koos je \"Yo mevrouw,\"? Dan denk je dat dit past. \"Yo\" is straattaal, en dat is niet formeel.",
+    "Koos je \"Hé hé, mevrouw,\"? Dan denk je dat dit past bij een formele brief. Het is spreektaal met een uitroepachtige toon, dus niet geschikt."
+   ],
+   "uh": "Formele aanhef."
+  },
+  {
+   "v": "Welke afsluiting past bij een formele brief?",
+   "o": [
+    "Doeg!",
+    "Tot later, lekker bezig!",
+    "Groetjes, joh,",
+    "Met vriendelijke groet,"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Een formele brief sluit af met \"Met vriendelijke groet,\".",
+   "uo": [
+    "Koos je \"Doeg!\"? Dan denk je dat dit past. \"Doeg\" is een informele groet, en past niet bij een formele brief.",
+    "Koos je \"Tot later, lekker bezig!\"? Dan denk je dat dit past bij een formele brief. Het is spreektaal en klinkt te los, dus het is niet geschikt.",
+    "Koos je \"Groetjes, joh,\"? Dan denk je dat dit past. \"Groetjes\" en \"joh\" zijn informeel, dus niet geschikt voor een formele brief.",
+    "Klopt: dit is een gebruikelijke formele afsluiting."
+   ],
+   "uh": "Formele afsluiting."
+  },
+  {
+   "v": "Welk probleem zit er in de aanspreekvorm?",
+   "o": [
+    "\"graag\" is te beleefd voor een formele brief, want daar hoort een zakelijke toon",
+    "\"jij\" past niet bij \"Geachte heer\", er hoort \"u\" te staan",
+    "\"Geachte\" moet vervangen worden door \"Beste\"",
+    "de zin hoeft geen vraag te bevatten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Gebruik in een formele brief \"u\" en blijf daarbij.",
+   "uo": [
+    "Koos je \"graag is te beleefd voor een formele brief, want...\"? Dan denk je dat het woord te beleefd is. Beleefdheid past bij formele brieven; het probleem is de aanspreekvorm \"jij\".",
+    "Klopt: in een formele brief spreek je de ander met \"u\" aan en blijf je daarbij.",
+    "Koos je \"Geachte moet vervangen worden door Beste\"? Dan denk je dat de aanhef fout is. \"Geachte\" past bij een formele brief; het probleem is \"jij\" in plaats van \"u\".",
+    "Koos je \"de zin hoeft geen vraag te bevatten\"? Dan denk je dat het probleem de vraag is. Een vraag mag best in een formele brief; de aanspreekvorm moet kloppen."
+   ],
+   "uh": "U, niet jij.",
+   "ctx": "Een leerling schrijft aan de directeur: \"Geachte heer De Vries, Ik wil graag weten of jij mijn verzoek hebt gelezen.\""
+  },
+  {
+   "v": "Welke werkwoordsvorm hoort bij \"hij\" in de tegenwoordige tijd?",
+   "o": [
+    "Hij word morgen tien jaar.",
+    "Hij wort morgen tien jaar.",
+    "Hij wordd morgen tien jaar.",
+    "Hij wordt morgen tien jaar."
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Bij hij, zij en het krijgt het werkwoord stam + t.",
+   "uo": [
+    "Koos je \"Hij word morgen tien jaar.\"? Dan denk je dat de stam genoeg is. Bij \"hij\" hoort de stam plus -t, dus \"wordt\".",
+    "Koos je \"Hij wort morgen tien jaar.\"? Dan denk je dat de d niet geschreven wordt. De stam is \"word\" met een d, en bij \"hij\" komt er een t bij.",
+    "Koos je \"Hij wordd morgen tien jaar.\"? Dan denk je dat er een extra d moet. De stam is \"word\" en daar komt alleen een t bij, dus \"wordt\".",
+    "Klopt: bij \"hij\" krijgt het werkwoord een -t: wordt."
+   ],
+   "uh": "Hij wordt."
+  },
+  {
+   "v": "In welke zin staat de juiste vorm van \"vinden\" bij \"ik\"?",
+   "o": [
+    "Ik vindt het een goed plan.",
+    "Ik vind het een goed plan.",
+    "Ik vint het een goed plan.",
+    "Ik vinde het een goed plan."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bij ik schrijf je de stam van het werkwoord.",
+   "uo": [
+    "Koos je \"Ik vindt het een goed plan.\"? Dan denk je dat bij \"ik\" een t hoort. Bij \"ik\" schrijf je alleen de stam, dus \"vind\".",
+    "Klopt: bij \"ik\" schrijf je alleen de stam van het werkwoord, dus \"vind\" met een d en zonder t.",
+    "Koos je \"Ik vint het een goed plan.\"? Dan denk je dat de d als t geschreven wordt. De stam is \"vind\" met een d, en dat blijft zo bij \"ik\".",
+    "Koos je \"Ik vinde het een goed plan.\"? Dan denk je dat er een -e achter moet. Bij \"ik\" is de vorm de stam, dus \"vind\"."
+   ],
+   "uh": "Ik vind."
+  },
+  {
+   "v": "Welke verleden tijd is goed gespeld?",
+   "o": [
+    "Hij werkde hard.",
+    "Hij werkdt hard.",
+    "Hij werkte hard.",
+    "Hij werkt hard."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Na een stam op k ('t kofschip) komt -te in de verleden tijd.",
+   "uo": [
+    "Koos je \"Hij werkde hard.\"? Dan denk je dat het -de moet zijn. De stam eindigt op k, uit 't kofschip, dus het wordt -te.",
+    "Koos je \"Hij werkdt hard.\"? Dan denk je dat de uitgang wordt samengevoegd. Een verleden tijd heeft -te of -de als uitgang, geen losse -dt.",
+    "Klopt: de stam \"werk\" eindigt op een k, een medeklinker uit 't kofschip, dus de verleden tijd eindigt op -te.",
+    "Koos je \"Hij werkt hard.\"? Dan denk je dat dit de verleden tijd is. Dit is de tegenwoordige tijd, de verleden tijd is \"werkte\"."
+   ],
+   "uh": "'t kofschip: -te."
+  },
+  {
+   "v": "Welk leesteken hoort aan het einde van een vraag?",
+   "o": [
+    "een vraagteken",
+    "een punt",
+    "een komma",
+    "een puntkomma"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Een vraag eindigt met een vraagteken.",
+   "uo": [
+    "Klopt: een vraag eindigt met een vraagteken, dat laat zien dat de zin een vraag is.",
+    "Koos je \"een punt\"? Dan denk je dat een vraag met een punt eindigt. Een punt is voor mededelende zinnen, vragen krijgen een vraagteken.",
+    "Koos je \"een komma\"? Dan denk je dat een komma een zin afsluit. Een komma staat binnen een zin, niet aan het einde.",
+    "Koos je \"een puntkomma\"? Dan denk je dat een puntkomma een vraag afsluit. Een puntkomma verbindt delen van een zin, en sluit geen vraag af."
+   ],
+   "uh": "Vraag = ?"
+  },
+  {
+   "v": "Welke opsomming is goed geschreven?",
+   "o": [
+    "Ik koop appels, peren en bananen.",
+    "Ik koop appels peren en bananen.",
+    "Ik koop appels, peren, en, bananen.",
+    "Ik koop, appels peren en bananen."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "In een opsomming scheid je de delen met komma's en gebruik je \"en\" voor het laatste.",
+   "uo": [
+    "Klopt: tussen de delen staan komma's en voor het laatste deel staat \"en\" zonder komma.",
+    "Koos je \"Ik koop appels peren en bananen.\"? Dan denk je dat de komma's wegkunnen. In een opsomming scheid je de eerste delen met komma's, anders is het niet duidelijk.",
+    "Koos je \"Ik koop appels, peren, en, bananen.\"? Dan denk je dat voor elk woord een komma hoort. Voor \"en\" staat geen komma, dus dit is te veel.",
+    "Koos je \"Ik koop, appels peren en bananen.\"? Dan denk je dat de komma achter het werkwoord hoort. Daar hoort geen komma, de komma's staan tussen de opgesomde delen."
+   ],
+   "uh": "Komma's + en."
+  },
+  {
+   "v": "Wat is er mis?",
+   "o": [
+    "niets, want aanhalingstekens zijn alleen voor titels",
+    "er moeten haakjes om de zin",
+    "woordelijk overgenomen tekst hoort tussen aanhalingstekens",
+    "er moet een uitroepteken achter"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Letterlijk overgenomen tekst hoort tussen aanhalingstekens.",
+   "uo": [
+    "Koos je \"niets, want aanhalingstekens zijn alleen voor titels\"? Dan denk je dat aanhalingstekens alleen voor titels zijn. Ze markeren ook letterlijk overgenomen tekst, en dat laat je niet weg.",
+    "Koos je \"er moeten haakjes om de zin\"? Dan denk je dat haakjes bij een citaat horen. Een citaat staat tussen aanhalingstekens, haakjes zijn voor een toevoeging.",
+    "Klopt: een citaat staat tussen aanhalingstekens, anders lijkt het eigen werk.",
+    "Koos je \"er moet een uitroepteken achter\"? Dan denk je dat een uitroepteken nodig is. Het is een gewone mededeling, dus geen uitroepteken."
+   ],
+   "uh": "Citaat = aanhalingstekens.",
+   "ctx": "Een leerling neemt een zin letterlijk over uit een rapport, maar zet er geen aanhalingstekens omheen."
+  },
+  {
+   "v": "Waarom blijf je in een tekst consequent bij \"u\" of \"je\"?",
+   "o": [
+    "omdat de spellingregels dat verplicht stellen en er een officiële regel voor bestaat",
+    "anders raakt de lezer in de war en lijkt de tekst onverzorgd",
+    "omdat \"u\" eigenlijk altijd beter is",
+    "omdat de lezer dan sneller leest"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 5,
+   "u": "Wissel niet tussen u en je in dezelfde tekst.",
+   "uo": [
+    "Koos je \"omdat de spellingregels dat verplicht stellen en er...\"? Dan denk je dat het een spellingregel is. Het gaat om stijl en samenhang, niet om spelling.",
+    "Klopt: wisselen tussen \"u\" en \"je\" valt op en past niet bij een verzorgde tekst.",
+    "Koos je \"omdat u eigenlijk altijd beter is\"? Dan denk je dat een van de twee beter is. Beide kunnen, maar je blijft bij je keuze.",
+    "Koos je \"omdat de lezer dan sneller leest\"? Dan denk je dat het om leessnelheid gaat. Het gaat om een verzorgde tekst, en consequent taalgebruik."
+   ],
+   "uh": "Blijf bij je keuze."
+  },
+  {
+   "v": "Welk stijlprobleem zit hierin?",
+   "o": [
+    "de brief is te beleefd en te lang voor wat de schrijver wil vragen",
+    "de brief gebruikt het woord \"bestelling\"",
+    "de brief is te kort",
+    "de aanspreekvorm wisselt van \"u\" naar \"jij\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Houd één aanspreekvorm aan.",
+   "uo": [
+    "Koos je \"de brief is te beleefd en te lang voor wat de...\"? Dan denk je dat de toon te beleefd is. Beleefdheid is gepast; het probleem is dat de aanspreekvorm wisselt.",
+    "Koos je \"de brief gebruikt het woord bestelling\"? Dan denk je dat dit woord een fout is. Het woord is correct; het probleem is de aanspreekvorm.",
+    "Koos je \"de brief is te kort\"? Dan denk je dat de lengte het probleem is. De lengte is hier niet het probleem; het probleem is dat de aanspreekvorm wisselt.",
+    "Klopt: wisselen van \"u\" naar \"jij\" in één brief is een stijlfout."
+   ],
+   "uh": "Consequent u.",
+   "ctx": "Een leerling schrijft in een brief aan een bedrijf: \"Geachte heer, u heeft mijn bestelling nog niet bezorgd. Jij moet dit snel oplossen.\""
+  },
+  {
+   "v": "Wat moet hij aanpassen?",
+   "o": [
+    "niets, want een mail mag altijd informeel zijn, ook als hij naar een bedrijf gaat",
+    "de spreektaal vervangen door verzorgde schrijftaal en een passende aanhef",
+    "alleen de laatste zin, want de rest is prima",
+    "de mail moet langer worden"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Een formele mail vraagt verzorgde schrijftaal.",
+   "uo": [
+    "Koos je \"niets, want een mail mag altijd informeel zijn, ook...\"? Dan denk je dat mail altijd informeel is. Bij een bedrijf past een formeel register, dus je past je taal aan.",
+    "Klopt: \"hoi\", \"echt super\", \"dus nou\" zijn spreektaal; een formele mail vraagt verzorgde taal.",
+    "Koos je \"alleen de laatste zin, want de rest is prima\"? Dan denk je dat alleen de laatste zin fout is. Ook \"hoi\" en \"echt super\" zijn te informeel, dus meer moet aangepast.",
+    "Koos je \"de mail moet langer worden\"? Dan denk je dat lengte het probleem is. Het probleem is de toon en woordkeus, niet de lengte."
+   ],
+   "uh": "Pas het register aan.",
+   "ctx": "Een leerling moet een formele mail schrijven aan een bedrijf. Hij schrijft: \"Hoi, ik vond jullie product echt super. Dus nou wil ik graag weten wat het kost.\""
+  },
+  {
+   "v": "Hoe verbeter je deze zin het best?",
+   "o": [
+    "kort en stellig: \"Het is belangrijk dat je het doet.\"",
+    "langer en vager, zodat niemand het oneens kan zijn",
+    "er nog meer afzwakkers aan toevoegen, zoals \"zeg maar\" en \"een beetje\"",
+    "de zin in de verleden tijd zetten"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Schrap overbodige woorden en maak de zin helder.",
+   "uo": [
+    "Klopt: de overbodige stopwoorden en afzwakkers verdwijnen, de boodschap blijft.",
+    "Koos je \"langer en vager, zodat niemand het oneens kan zijn\"? Dan denk je dat vaag veilig is. Vaagheid maakt de zin zwak, en de lezer weet niet wat je bedoelt.",
+    "Koos je \"er nog meer afzwakkers aan toevoegen, zoals zeg...\"? Dan denk je dat afzwakkers de zin beter maken. Ze maken hem juist omslachtig, en de kern verdwijnt.",
+    "Koos je \"de zin in de verleden tijd zetten\"? Dan denk je dat de tijd het probleem is. Het probleem is de omslachtige formulering, niet de werkwoordstijd."
+   ],
+   "uh": "Kort en helder.",
+   "ctx": "Een leerling schrijft: \"Ik denk dat ik vind dat je zou kunnen zeggen dat het eigenlijk wel een beetje belangrijk is dat je het misschien doet.\""
+  },
+  {
+   "v": "Wie heeft gelijk en waarom?",
+   "o": [
+    "de klasgenoot, want het voltooid deelwoord eindigt altijd op -d",
+    "geen van beiden, want het moet \"gewerkte\" zijn",
+    "allebei, want beide spellingen bestaan",
+    "de leerling, want de stam \"werk\" eindigt op k en het voltooid deelwoord krijgt een -t"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Na een stam op k eindigt het voltooid deelwoord op -t.",
+   "uo": [
+    "Koos je \"de klasgenoot, want het voltooid deelwoord eindigt...\"? Dan denk je dat het altijd -d is. Dat hangt van de stam af; bij een stam op k hoort -t.",
+    "Koos je \"geen van beiden, want het moet gewerkte zijn\"? Dan denk je dat het deelwoord met -e eindigt. Het voltooid deelwoord is \"gewerkt\", zonder -e.",
+    "Koos je \"allebei, want beide spellingen bestaan\"? Dan denk je dat beide vormen goed zijn. Er is maar één juiste spelling, namelijk \"gewerkt\".",
+    "Klopt: na een stam op k ('t kofschip) eindigt het voltooid deelwoord op -t."
+   ],
+   "uh": "'t kofschip: -t.",
+   "ctx": "Een leerling schrijft in een zin: \"Ik heb gisteren hard gewerkt.\" Een klasgenoot zegt dat \"gewerkd\" moet."
+  },
+  {
+   "v": "Welke aanpassing is verstandig?",
+   "o": [
+    "\"Doei, Sam\"",
+    "\"Tot snel!!!\"",
+    "\"Met vriendelijke groet, Sam Jansen\"",
+    "geen afsluiting, want een brief hoeft niet af te sluiten"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Een formele brief sluit af met een gebruikelijke groet en de volledige naam.",
+   "uo": [
+    "Koos je \"Doei, Sam\"? Dan denk je dat dit past. \"Doei\" is informeel, en past niet bij een sollicitatiebrief.",
+    "Koos je \"Tot snel!!!\"? Dan denk je dat dit enthousiast en passend is. Meerdere uitroeptekens zijn informeel, en passen niet bij een formele brief.",
+    "Klopt: een sollicitatiebrief sluit formeel af, met volledige naam.",
+    "Koos je \"geen afsluiting, want een brief hoeft niet af te...\"? Dan denk je dat de afsluiting overbodig is. Een brief heeft een passende afsluiting, en een naam eronder."
+   ],
+   "uh": "Formele afsluiting.",
+   "ctx": "Een leerling schrijft een sollicitatiebrief met als afsluiting: \"Groetjes, Sam\". Hij schrijft de brief aan een bedrijf waar hij wil werken."
+  },
+  {
+   "v": "Welk probleem heeft deze zin als het een formeel betoog is?",
+   "o": [
+    "de zin is te beleefd en te vriendelijk voor een betoog dat moet overtuigen",
+    "de zin bevat geen werkwoord",
+    "de woorden \"gewoon\", \"echt\" en \"stom\" zijn omgangstaal en geven geen argument",
+    "de zin is te lang voor een betoog"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Gebruik in een betoog zakelijke taal met argumenten.",
+   "uo": [
+    "Koos je \"de zin is te beleefd en te vriendelijk voor een...\"? Dan denk je dat de zin te beleefd is. De zin is juist onbeleefd en vaag; het probleem is omgangstaal zonder argument.",
+    "Koos je \"de zin bevat geen werkwoord\"? Dan denk je dat het werkwoord ontbreekt. \"Is\" is het werkwoord; het probleem is de woordkeus.",
+    "Klopt: omgangstaal en een oordeel zonder argument passen niet in een formeel betoog.",
+    "Koos je \"de zin is te lang voor een betoog\"? Dan denk je dat de lengte het probleem is. De zin is kort; het probleem is de woordkeus en het ontbreken van onderbouwing."
+   ],
+   "uh": "Zakelijk en onderbouwd.",
+   "ctx": "Een leerling schrijft in een betoog: \"Dit idee is gewoon echt zo erg stom.\""
+  },
+  {
+   "v": "Welke twee leestekens zijn onjuist of overdreven?",
+   "o": [
+    "de komma's in beide zinnen",
+    "de hoofdletters aan het begin van de zinnen",
+    "het woord \"gezond\" mist aanhalingstekens",
+    "de punt achter de vraag en de drie uitroeptekens"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Een vraag eindigt met een vraagteken; gebruik niet meerdere uitroeptekens in een formele tekst.",
+   "uo": [
+    "Koos je \"de komma's in beide zinnen\"? Dan denk je dat er komma's fout zijn. Er staan geen komma's in deze zinnen; het probleem zit bij de leestekens aan het einde.",
+    "Koos je \"de hoofdletters aan het begin van de zinnen\"? Dan denk je dat de hoofdletters fout zijn. Een zin begint met een hoofdletter, dus dat is juist goed.",
+    "Koos je \"het woord gezond mist aanhalingstekens\"? Dan denk je dat het aanhalingstekens nodig heeft. Het is geen citaat, dus nee.",
+    "Klopt: een vraag krijgt een vraagteken, en meerdere uitroeptekens zijn niet formeel."
+   ],
+   "uh": "Eén teken, het juiste teken.",
+   "ctx": "Een leerling schrijft: \"Waarom is het belangrijk om te sporten.\" Daarna schrijft hij: \"Ik denk dat het gezond is!!!\""
+  },
+  {
+   "v": "Hoe verbeter je deze tekst stilistisch?",
+   "o": [
+    "zinnen samenvoegen en het woord \"strand\" afwisselen met \"het\" of \"daar\"",
+    "het woord \"strand\" in elke zin herhalen zodat het duidelijk blijft",
+    "alle zinnen in de verleden tijd naar de tegenwoordige tijd veranderen",
+    "meer zinnen toevoegen over het strand, zodat de tekst langer wordt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Voeg zinnen samen en varieer in woordkeus.",
+   "uo": [
+    "Klopt: samenvoegen en variëren maakt de tekst vloeiender en minder eentonig.",
+    "Koos je \"het woord strand in elke zin herhalen zodat het...\"? Dan denk je dat herhaling duidelijkheid geeft. Zo'n tekst klinkt eentonig, terwijl verwijzen en samenvoegen even duidelijk is.",
+    "Koos je \"alle zinnen in de verleden tijd naar de...\"? Dan denk je dat de tijd het probleem is. De tijd klopt juist, het probleem is de eentonige herhaling.",
+    "Koos je \"meer zinnen toevoegen over het strand, zodat de...\"? Dan denk je dat meer zinnen de tekst verbeteren. Het maakt de eentonigheid groter, dus dit lost niets op."
+   ],
+   "uh": "Samenvoegen, variëren.",
+   "ctx": "Een leerling schrijft: \"Het was een leuke dag. We gingen naar het strand. Het strand was mooi. Het strand had zand. Het strand was groot.\""
+  },
+  {
+   "v": "Welke zin heeft de juiste vorm van het werkwoord?",
+   "o": [
+    "Jij word morgen tien jaar.",
+    "Jij wordt morgen tien jaar.",
+    "Jij wordd morgen tien jaar.",
+    "Jij wort morgen tien jaar."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bij jij in een mededeling schrijf je stam + t.",
+   "uo": [
+    "Koos je \"Jij word morgen tien jaar.\"? Dan denk je dat bij \"jij\" alleen de stam hoort. In een mededeling krijgt \"jij\" stam plus t, dus \"wordt\".",
+    "Klopt: bij \"jij\" in een mededeling schrijf je de stam plus -t, dus \"wordt\".",
+    "Koos je \"Jij wordd morgen tien jaar.\"? Dan denk je dat er een extra d nodig is. De stam is \"word\" en daar komt alleen een t bij, dus \"wordt\" is juist.",
+    "Koos je \"Jij wort morgen tien jaar.\"? Dan denk je dat de d niet geschreven wordt. De stam bevat een d, en die blijft staan: \"wordt\"."
+   ],
+   "uh": "Jij wordt."
+  },
+  {
+   "v": "Wat moet hij bij de tweede boodschap aanpassen?",
+   "o": [
+    "niets, want beide lezers zijn mensen op school",
+    "alleen het woord \"morgen\"",
+    "alleen het vraagteken",
+    "de aanhef en de aanspreekvorm naar \"Geachte heer\" en \"u\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Pas de aanspreekvorm aan op de lezer.",
+   "uo": [
+    "Koos je \"niets, want beide lezers zijn mensen op school\"? Dan denk je dat dezelfde toon voor elke lezer past. Een directeur vraagt een formeler register, dus je past de aanhef en de aanspreekvorm aan.",
+    "Koos je \"alleen het woord morgen\"? Dan denk je dat het woord \"morgen\" het probleem is. Het woord is prima; het probleem is de aanhef en de aanspreekvorm.",
+    "Koos je \"alleen het vraagteken\"? Dan denk je dat het vraagteken fout is. Het vraagteken klopt, het probleem is het register.",
+    "Klopt: een directeur spreek je formeel aan, met een passende aanhef en met u."
+   ],
+   "uh": "Directeur = u.",
+   "ctx": "Een leerling schrijft aan een klasgenoot: \"Hoi, kun je me morgen helpen?\" Daarna schrijft hij aan de directeur: \"Hoi, kun je me morgen helpen?\""
+  },
+  {
+   "v": "Welke woorden maken de zin minder verzorgd?",
+   "o": [
+    "\"gewoon echt\", omdat het omgangstaal is",
+    "\"mening\", omdat dat in een betoog niet mag",
+    "\"sporten\", omdat dat een werkwoord is",
+    "\"want\", omdat een zin daar niet mee mag beginnen of eindigen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Omgangstaal als \"gewoon echt\" past niet in verzorgde schrijftaal.",
+   "uo": [
+    "Klopt: \"gewoon echt\" is gesproken taal, voegt geen betekenis toe en past niet in een verzorgde tekst.",
+    "Koos je \"mening, omdat dat in een betoog niet mag\"? Dan denk je dat het woord niet mag. Het woord is prima; het probleem zit in de omgangstaal.",
+    "Koos je \"sporten, omdat dat een werkwoord is\"? Dan denk je dat het werkwoord het probleem is. Het is hier een zelfstandig naamwoord, en het is niet het probleem.",
+    "Koos je \"want, omdat een zin daar niet mee mag beginnen of...\"? Dan denk je dat het woord het probleem is. Het woord is een gewone verbinding, en niet fout."
+   ],
+   "uh": "Schrap omgangstaal.",
+   "ctx": "Een leerling schrijft: \"Mijn mening is dat ik het jammer vind dat sporten op school te weinig aandacht krijgt, want het is gewoon echt belangrijk.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft in een betoog: \"Dit idee is gewoon echt zo erg stom.\"",
+   "v": "Welk probleem heeft deze zin en hoe verbeter je hem?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De woorden \"gewoon\", \"echt\" en \"stom\" zijn omgangstaal en geven geen argument (1 punt). Beter: een zakelijke zin met een reden, bijvoorbeeld \"Dit idee is onhandig, omdat het veel tijd kost\" (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft aan een directeur: \"Geachte heer De Vries, ik wil graag weten of jij mijn verzoek hebt gelezen.\"",
+   "v": "Welke fout zit hierin en hoe verbeter je hem?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De aanspreekvorm wisselt van \"u\" (Geachte heer) naar \"jij\" (1 punt). Verbeterd: \"of u mijn verzoek heeft gelezen\" (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft: \"Hij werkde hard en hij heeft gewerkd.\"",
+   "v": "Verbeter de twee werkwoordsvormen en leg uit waarom.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"werkte\" en \"gewerkt\" (1 punt): de stam \"werk\" eindigt op k, een medeklinker uit 't kofschip, dus -te in de verleden tijd en -t in het voltooid deelwoord (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft: \"Mijn broer en mijn vader gingen naar de wedstrijd. Hij vond het geweldig.\"",
+   "v": "Welk probleem zit hierin en hoe los je het op?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Onduidelijk wie \"hij\" is (1 punt). Oplossing: noem het onderwerp, bijvoorbeeld \"Mijn vader vond het geweldig\" (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling sluit een sollicitatiebrief af met \"Groetjes, Sam\".",
+   "v": "Welke afsluiting past beter en waarom?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"Met vriendelijke groet, Sam Jansen\" (1 punt), want een sollicitatiebrief vraagt een formeel register en een volledige naam (1 punt)."
+  }
+ ]
+}

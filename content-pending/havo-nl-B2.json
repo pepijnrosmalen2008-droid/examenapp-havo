@@ -1,0 +1,637 @@
+{
+ "id": "B2",
+ "lo": "nl.B.2",
+ "gs": 2,
+ "naam": "Doel, publiek en gespreksvorm bepalen",
+ "beschrijving": "Je bepaalt of je wilt informeren of overtuigen, voor wie je spreekt en of het een voordracht, discussie of debat is, en je stemt inhoud en taal daarop af.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Gespreksvormen: voordracht, discussie, debat",
+  "Spreekdoel: informeren of overtuigen",
+  "Publiek en voorkennis",
+  "Inhoud, taal en toon afstemmen",
+  "Valkuilen bij afstemmen"
+ ],
+ "sam": "Voor een voordracht, discussie of debat bepaal je eerst het spreekdoel (informeren of overtuigen), het publiek en de gespreksvorm. Een voordracht heeft één spreker, een discussie wisselt meningen uit, een debat heeft vaste partijen en regels. Je stemt inhoud, taal, voorbeelden en register af op doel en publiek.",
+ "begrippen": [
+  {
+   "t": "Voordracht",
+   "d": "Een voorbereide mondelinge presentatie door één spreker voor een publiek."
+  },
+  {
+   "t": "Discussie",
+   "d": "Een gesprek waarin deelnemers hun meningen over een onderwerp uitwisselen."
+  },
+  {
+   "t": "Debat",
+   "d": "Een gestructureerd gesprek waarin partijen een tegengesteld standpunt verdedigen."
+  },
+  {
+   "t": "Gespreksvorm",
+   "d": "De vorm van een mondelinge situatie, zoals voordracht, discussie of debat."
+  },
+  {
+   "t": "Spreekdoel",
+   "d": "Wat de spreker bij het publiek wil bereiken, zoals informeren of overtuigen."
+  },
+  {
+   "t": "Informatieve presentatie",
+   "d": "Een presentatie die het publiek iets laat weten of begrijpen."
+  },
+  {
+   "t": "Overtuigende presentatie",
+   "d": "Een presentatie die het publiek aan de kant van een standpunt wil krijgen."
+  },
+  {
+   "t": "Publiek",
+   "d": "De groep luisteraars tot wie de spreker zich richt."
+  },
+  {
+   "t": "Voorkennis",
+   "d": "Wat het publiek al weet over het onderwerp."
+  },
+  {
+   "t": "Register",
+   "d": "De mate van formeel taalgebruik die bij de situatie past."
+  },
+  {
+   "t": "Vakjargon",
+   "d": "Woorden die alleen deskundigen kennen."
+  },
+  {
+   "t": "Afstemmen",
+   "d": "Inhoud en taal aanpassen aan doel, publiek en vorm."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke gespreksvorm heeft één spreker met een voorbereid verhaal?",
+   "o": [
+    "de discussie",
+    "de voordracht",
+    "het debat",
+    "het interview met vragen"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een voordracht is één spreker met een voorbereid verhaal.",
+   "uo": [
+    "Koos je \"de discussie\"? Dan denk je dat elke gespreksvorm met een spreker een discussie is. Bij een discussie wisselen meerdere deelnemers van beurt. Bij een voordracht is één spreker aan het woord en luistert het publiek.",
+    "Klopt: bij een voordracht presenteert één spreker een voorbereid verhaal aan een publiek dat luistert.",
+    "Koos je \"het debat\"? Dan verwar je een spreker met een debatteur. Bij een debat staan twee partijen met tegengestelde standpunten tegenover elkaar. Een debat heeft meerdere sprekers en regels voor weerleggen.",
+    "Koos je \"het interview met vragen\"? Dan denk je dat vragen en antwoorden hetzelfde zijn als een voordracht. Een interview bestaat uit vragen van de een aan de ander. Bij een voordracht vertelt één spreker en stelt het publiek geen vragen."
+   ],
+   "uh": "Eén spreker = voordracht."
+  },
+  {
+   "v": "In welke gespreksvorm verdedigen partijen tegengestelde standpunten volgens regels?",
+   "o": [
+    "de voordracht",
+    "de discussie",
+    "de spreekbeurt",
+    "het debat"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Een debat heeft tegengestelde partijen en regels.",
+   "uo": [
+    "Koos je \"de voordracht\"? Dan denk je dat een voordracht met een standpunt een debat is. Bij een voordracht is er één spreker en geen tegenpartij. Een debat heeft altijd een tegenpartij die reageert.",
+    "Koos je \"de discussie\"? Dan verwar je een vrije uitwisseling van meningen met een debat. Een discussie heeft meestal geen vaste partijen en regels. Bij een debat zijn standpunten en rollen vooraf afgesproken.",
+    "Koos je \"de spreekbeurt\"? Dan denk je dat een spreekbeurt een debat is. Een spreekbeurt is één persoon die iets vertelt. Bij een debat wordt actief gereageerd op de tegenpartij.",
+    "Klopt: een debat draait om tegengestelde standpunten die volgens afgesproken regels worden verdedigd en weerlegd."
+   ],
+   "uh": "Tegenover elkaar, met regels."
+  },
+  {
+   "v": "Wat is het belangrijkste verschil tussen een discussie en een debat?",
+   "o": [
+    "een debat heeft vaste regels",
+    "een discussie is altijd langer",
+    "in een discussie praat niemand",
+    "een debat heeft geen publiek"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Een debat heeft vaste partijen en regels; een discussie is vrijer.",
+   "uo": [
+    "Klopt: in een debat zijn standpunten, rollen en regels vooraf afgesproken. Een discussie is vrijer.",
+    "Koos je \"een discussie is altijd langer\"? Dan denk je dat het verschil in lengte zit. Een discussie kan kort zijn en een debat lang, of andersom. Het verschil zit in structuur en regels, niet in duur.",
+    "Koos je \"in een discussie praat niemand\"? Dan draai je het om. In een discussie praten juist meerdere mensen en wisselen zij meningen uit. Het verschil is dat een debat vaste rollen en regels heeft.",
+    "Koos je \"een debat heeft geen publiek\"? Dan denk je dat het publiek ontbreekt. Een debat kan een publiek of jury hebben. Publiek bepaalt de gespreksvorm niet; de regels en partijen wel."
+   ],
+   "uh": "Regels = debat."
+  },
+  {
+   "v": "Wat is het spreekdoel van een informatieve presentatie?",
+   "o": [
+    "de luisteraars overtuigen van een standpunt",
+    "de luisteraars laten lachen",
+    "de luisteraars iets laten weten",
+    "de luisteraars laten stemmen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Een informatieve presentatie wil de luisteraars informeren.",
+   "uo": [
+    "Koos je \"de luisteraars overtuigen van een standpunt\"? Dan denk je dat elke presentatie iets wil bereiken bij de mening. Een informatieve presentatie wil uitleg geven en geen mening veranderen. Overtuigen hoort bij een overtuigende presentatie.",
+    "Koos je \"de luisteraars laten lachen\"? Dan verwar je presenteren met entertainen. Humor kan helpen, maar is niet het doel van informeren. Het doel is dat de luisteraars iets weten of begrijpen.",
+    "Klopt: een informatieve presentatie wil de luisteraars iets laten weten of begrijpen, zonder een standpunt te verdedigen.",
+    "Koos je \"de luisteraars laten stemmen\"? Dan denk je dat informeren om een keuze vraagt. Zo'n opdracht hoort bij een overtuigend doel. Informeren vraagt niets van het publiek behalve begrijpen."
+   ],
+   "uh": "Informeren = uitleggen."
+  },
+  {
+   "v": "Wat is het spreekdoel van een overtuigende presentatie?",
+   "o": [
+    "de luisteraars iets uitleggen zonder standpunt",
+    "de luisteraars laten raden wat je vindt",
+    "de luisteraars aan je kant krijgen",
+    "de luisteraars een quiz laten doen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Een overtuigende presentatie wil de luisteraars overtuigen.",
+   "uo": [
+    "Koos je \"de luisteraars iets uitleggen zonder standpunt\"? Dan denk je dat uitleggen overtuigen is. Uitleggen zonder standpunt is informeren. Overtuigen vraagt een standpunt en argumenten.",
+    "Koos je \"de luisteraars laten raden wat je vindt\"? Dan verwar je een verborgen mening met overtuigen. Je moet je standpunt juist duidelijk maken. Overtuigen werkt met een helder standpunt en argumenten.",
+    "Klopt: een overtuigende presentatie wil de luisteraars van een standpunt overtuigen of tot actie aanzetten.",
+    "Koos je \"de luisteraars een quiz laten doen\"? Dan denk je dat een opdracht overtuigt. Een quiz toetst kennis, het overtuigt niet. Overtuigen doe je met argumenten, niet met opdrachten."
+   ],
+   "uh": "Overtuigen = standpunt + argumenten."
+  },
+  {
+   "v": "Waarom stem je je presentatie af op je publiek?",
+   "o": [
+    "zodat het publiek je kan volgen",
+    "zodat je minder hoeft voor te bereiden",
+    "zodat het publiek niet kan reageren",
+    "zodat je spreektijd korter wordt"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Je stemt af op het publiek zodat het je begrijpt en blijft volgen.",
+   "uo": [
+    "Klopt: een presentatie werkt pas als de luisteraars hem begrijpen en volgen. Daarom pas je inhoud en taal aan.",
+    "Koos je \"zodat je minder hoeft voor te bereiden\"? Dan denk je dat afstemmen werk bespaart. Afstemmen kost juist denkwerk: je moet weten wie er luistert. Je bereidt je voor met het publiek in gedachten.",
+    "Koos je \"zodat het publiek niet kan reageren\"? Dan verwar je afstemmen met dichtdoen. Afstemmen maakt contact juist makkelijker. Het gaat erom dat het publiek je kan volgen.",
+    "Koos je \"zodat je spreektijd korter wordt\"? Dan denk je dat afstemmen over tijd gaat. De spreektijd is een aparte afspraak. Afstemmen gaat over inhoud, taal en voorbeelden."
+   ],
+   "uh": "Publiek bepaalt je aanpak."
+  },
+  {
+   "v": "Je gebruikt een begrip dat je publiek niet kent. Wat doe je?",
+   "o": [
+    "je laat het weg en doet alsof het niet bestaat",
+    "je herhaalt het woord vaker",
+    "je gebruikt nog moeilijkere woorden",
+    "je legt het uit met een voorbeeld"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Onbekende begrippen leg je uit met een voorbeeld.",
+   "uo": [
+    "Koos je \"je laat het weg en doet alsof het niet bestaat\"? Dan ga je het probleem uit de weg. Dan mis je een belangrijk onderdeel van je uitleg. Beter leg je het uit zodat je publiek je kan volgen.",
+    "Koos je \"je herhaalt het woord vaker\"? Dan denk je dat herhaling begrip schept. Een onbekend woord wordt niet duidelijker door herhaling. Uitleg met een voorbeeld doet dat wel.",
+    "Koos je \"je gebruikt nog moeilijkere woorden\"? Dan denk je dat een deskundige indruk helpt. Het publiek raakt juist de draad kwijt. Spreek in woorden die je publiek begrijpt.",
+    "Klopt: een kort voorbeeld maakt een onbekend begrip begrijpelijk zonder dat je publiek afhaakt."
+   ],
+   "uh": "Begrip + voorbeeld."
+  },
+  {
+   "v": "Welk taalgebruik past het best bij een presentatie voor een jury?",
+   "o": [
+    "losjes en met veel spreektaal",
+    "verzorgd en zakelijk",
+    "vol grapjes en afkortingen",
+    "zo kort mogelijk met losse woorden"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Voor een jury kies je een formeel, zakelijk register.",
+   "uo": [
+    "Koos je \"losjes en met veel spreektaal\"? Dan denk je dat een jury net zo is als vrienden. Spreektaal komt onverzorgd over en past niet bij een beoordeling. Kies een formeel register dat bij de situatie past.",
+    "Klopt: een jury verwacht een formeel register: volledige zinnen, verzorgde woorden en een zakelijke toon.",
+    "Koos je \"vol grapjes en afkortingen\"? Dan denk je dat humor altijd werkt. Afkortingen en grapjes kunnen afleiden en onzorgvuldig overkomen. Voor een jury is een zakelijke toon beter.",
+    "Koos je \"zo kort mogelijk met losse woorden\"? Dan denk je dat korter altijd beter is. Losse woorden zijn onvolledig en onduidelijk. Gebruik volledige zinnen."
+   ],
+   "uh": "Jury = formeel."
+  },
+  {
+   "v": "Welke aanpassing helpt bij een publiek met weinig voorkennis?",
+   "o": [
+    "veel vakjargon om deskundig te lijken",
+    "zo snel mogelijk praten",
+    "alleen cijfers noemen",
+    "korte zinnen en voorbeelden"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Bij weinig voorkennis gebruik je korte zinnen en voorbeelden.",
+   "uo": [
+    "Koos je \"veel vakjargon om deskundig te lijken\"? Dan denk je dat jargon indruk maakt. Wie het jargon niet kent, snapt je niet. Gebruik woorden die je publiek begrijpt.",
+    "Koos je \"zo snel mogelijk praten\"? Dan denk je dat een hoog tempo sterk overkomt. Een publiek met weinig voorkennis heeft juist tijd nodig om te volgen. Spreek in een rustig tempo.",
+    "Koos je \"alleen cijfers noemen\"? Dan denk je dat cijfers genoeg uitleg zijn. Zonder context zeggen cijfers weinig. Geef uitleg en voorbeelden erbij.",
+    "Klopt: eenvoudige zinsbouw en voorbeelden maken een onderwerp toegankelijk voor wie er weinig van weet."
+   ],
+   "uh": "Eenvoudig en met voorbeelden."
+  },
+  {
+   "v": "Wanneer is een presentatie adequaat?",
+   "o": [
+    "als hij zo lang mogelijk duurt",
+    "als doel, publiek en vorm kloppen",
+    "als er veel dia's in zitten",
+    "als de spreker zelf erg tevreden is over zijn verhaal"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Adequaat betekent afgestemd op doel, publiek en gespreksvorm.",
+   "uo": [
+    "Koos je \"als hij zo lang mogelijk duurt\"? Dan denk je dat lengte kwaliteit is. Een lange presentatie kan het publiek juist vermoeien. Kwaliteit zit in afstemming, niet in duur.",
+    "Klopt: een adequate presentatie past bij wat je wilt bereiken, bij wie luistert en bij de vorm waarin je spreekt.",
+    "Koos je \"als er veel dia's in zitten\"? Dan denk je dat een volle presentatie beter is. Dia's zijn een hulpmiddel, geen doel. Het gaat om doel, publiek en vorm.",
+    "Koos je \"als de spreker zelf erg tevreden is over zijn...\"? Dan beoordeel je vanuit jezelf. Een presentatie is pas goed als hij bij het publiek werkt. Afstemming op doel en publiek bepaalt de kwaliteit."
+   ],
+   "uh": "Doel, publiek, vorm."
+  },
+  {
+   "v": "Welke gespreksvorm is dit?",
+   "o": [
+    "een voordracht",
+    "een discussie",
+    "een debat",
+    "een interview"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Teams met tegengestelde standpunten, rondes en jury: een debat.",
+   "uo": [
+    "Koos je \"een voordracht\"? Dan verwar je meerdere sprekers met één spreker. Bij een voordracht is er geen tegenpartij. Hier staan twee teams tegenover elkaar.",
+    "Koos je \"een discussie\"? Dan denk je dat meningen uitwisselen altijd discussie is. Hier zijn partijen, rondes en een jury, dus is er meer structuur. Vaste rollen en een jury horen bij een debat.",
+    "Klopt: twee teams met tegengestelde standpunten, vaste rondes en een jury kenmerken een debat.",
+    "Koos je \"een interview\"? Dan denk je dat vragen en antwoorden een interview maken. Hier verdedigen teams elk een standpunt. Een interview heeft een vraagsteller en een antwoorder."
+   ],
+   "uh": "Rollen + jury = debat.",
+   "ctx": "Twee teams verdedigen elk een standpunt over huiswerk. Er zijn spreekrondes en een jury beslist wie wint."
+  },
+  {
+   "v": "Welke gespreksvorm is dit?",
+   "o": [
+    "een discussie",
+    "een voordracht",
+    "een debat",
+    "een spreekbeurt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Een gesprek met meerdere deelnemers zonder vaste partijen is een discussie.",
+   "uo": [
+    "Klopt: meerdere deelnemers wisselen meningen uit zonder vaste partijen of winnaar. Dat is een discussie.",
+    "Koos je \"een voordracht\"? Dan denk je dat het over één spreker gaat. Hier praten meerdere deelnemers. Bij een voordracht is er geen uitwisseling van meningen.",
+    "Koos je \"een debat\"? Dan verwar je een gesprek met meningen met een debat. Hier zijn geen vaste partijen en geen jury. Een debat vraagt rollen en regels.",
+    "Koos je \"een spreekbeurt\"? Dan denk je dat meerdere sprekers een reeks spreekbeurten vormen. Hier reageren ze op elkaar. Een spreekbeurt is een voorbereid verhaal van één persoon."
+   ],
+   "uh": "Vrij gesprek = discussie.",
+   "ctx": "Een groep leerlingen bespreekt of de pauze langer moet. Iedereen mag reageren, er zijn geen vaste partijen en niemand hoeft te winnen."
+  },
+  {
+   "v": "Wat gaat hier mis?",
+   "o": [
+    "hij houdt een voordracht, geen debat",
+    "hij spreekt te zacht",
+    "hij heeft te veel argumenten",
+    "hij praat over het verkeerde onderwerp"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "In een debat reageer je op de tegenpartij; een monoloog is een voordracht.",
+   "uo": [
+    "Klopt: een debat vraagt dat je reageert op de tegenpartij. Een monoloog is een voordracht.",
+    "Koos je \"hij spreekt te zacht\"? Dan denk je dat het probleem de stem is. Het gaat om de vorm: hij reageert niet. In een debat reageer je op de ander.",
+    "Koos je \"hij heeft te veel argumenten\"? Dan denk je dat te veel argumenten fout zijn. Argumenten zijn goed, zolang je ze inzet in een debat. Het probleem is dat hij niet reageert.",
+    "Koos je \"hij praat over het verkeerde onderwerp\"? Dan denk je dat het onderwerp niet klopt. Het onderwerp is het schooluniform. Het probleem is de vorm. Reageren op de ander hoort bij debatteren."
+   ],
+   "uh": "Debat = reageren.",
+   "ctx": "Tijdens een debat over een schooluniform houdt een leerling vijf minuten een monoloog en reageert niet op wat zijn tegenstander zegt."
+  },
+  {
+   "v": "Welk register past?",
+   "o": [
+    "een informeel register",
+    "dialect",
+    "een formeel register",
+    "afkortingen en chattaal"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Voor docenten en een jury kies je een formeel register.",
+   "uo": [
+    "Koos je \"een informeel register\"? Dan denk je dat een jury net zo is als vrienden. Spreektaal komt onverzorgd over. Kies een formeel register voor docenten en jury.",
+    "Koos je \"dialect\"? Dan kies je een taal die niet iedereen verstaat. Een jury beoordeelt verzorgd Nederlands. Een formeel register is standaardtaal.",
+    "Klopt: bij docenten en een jury hoort een verzorgd, formeel register met volledige zinnen.",
+    "Koos je \"afkortingen en chattaal\"? Dan denk je dat chattaal bij een presentatie past. Het is onzorgvuldig en onduidelijk. Gebruik volledige woorden en zinnen."
+   ],
+   "uh": "Jury = formeel.",
+   "ctx": "Je geeft een presentatie aan docenten en een jury over je afstudeeronderwerp."
+  },
+  {
+   "v": "Welk register past het best?",
+   "o": [
+    "een zeer formeel register met u-vorm",
+    "een losser register",
+    "geen register, je praat gewoon",
+    "alleen vakjargon"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Bij bekenden kies je een losser register dat nog wel duidelijk blijft.",
+   "uo": [
+    "Koos je \"een zeer formeel register met u-vorm\"? Dan denk je dat formeel altijd beter is. Bij vrienden voelt dat stijf en vreemd. Pas je register aan op de situatie.",
+    "Klopt: onder bekenden mag je losser praten, zolang het begrijpelijk en beleefd blijft.",
+    "Koos je \"geen register, je praat gewoon\"? Dan denk je dat register niets met situatie te maken heeft. Elke situatie vraagt een passende toon. Los is ook een keuze, maar wel een passende.",
+    "Koos je \"alleen vakjargon\"? Dan kies je woorden die je klasgenoten waarschijnlijk niet kennen. Dat past niet bij vertellen over vakantie. Je kiest woorden die je publiek kent."
+   ],
+   "uh": "Situatie bepaalt register.",
+   "ctx": "Je vertelt in je klas wat je in de vakantie deed en je klasgenoten kennen je goed."
+  },
+  {
+   "v": "Welk spreekdoel hoort hierbij?",
+   "o": [
+    "alleen informeren",
+    "laten lachen",
+    "een quizvraag aan het publiek stellen",
+    "overtuigen en tot actie aanzetten"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Een oproep om iets te doen hoort bij overtuigen.",
+   "uo": [
+    "Koos je \"alleen informeren\"? Dan denk je dat elke slotzin informeert. Hier vraagt de spreker iets van het publiek. Een oproep gaat verder dan uitleggen.",
+    "Koos je \"laten lachen\"? Dan denk je dat humor het doel is. Er is geen grap, wel een oproep. De oproep wijst op overtuigen.",
+    "Koos je \"een quizvraag aan het publiek stellen\"? Dan denk je dat het een vraag is. Het is een oproep om iets te doen. Overtuigen vraagt een standpunt en een actie.",
+    "Klopt: de spreker vraagt het publiek iets te doen. Dat past bij overtuigen en tot actie aanzetten."
+   ],
+   "uh": "Oproep = overtuigen.",
+   "ctx": "Een spreker eindigt met: \"Dus ik hoop dat jullie allemaal geld inleveren voor het goede doel.\""
+  },
+  {
+   "v": "Welk spreekdoel hoort hierbij?",
+   "o": [
+    "overtuigen",
+    "informeren",
+    "tot actie aanzetten",
+    "ter overweging aanbieden"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Neutrale uitleg zonder standpunt is informeren.",
+   "uo": [
+    "Koos je \"overtuigen\"? Dan denk je dat uitleg ook overtuigt. Zonder standpunt of argumenten is er niets te overtuigen. Informeren is neutraal uitleggen.",
+    "Klopt: de spreker legt uit zonder standpunt of oproep. Dat is informeren.",
+    "Koos je \"tot actie aanzetten\"? Dan denk je dat een tekening om actie vraagt. Er is geen oproep. Zonder oproep is er geen actie.",
+    "Koos je \"ter overweging aanbieden\"? Dan verwar je afwegen met uitleggen. Hier wordt niets afgewogen. Informeren legt een gang van zaken uit."
+   ],
+   "uh": "Uitleg = informeren.",
+   "ctx": "Een spreker legt neutraal uit hoe een windmolen werkt en laat daarbij een tekening zien."
+  },
+  {
+   "v": "Wat is hier het probleem?",
+   "o": [
+    "de taal past niet bij het publiek",
+    "het onderwerp is te saai voor groep 8",
+    "de leerling praat te zacht",
+    "er zijn te weinig dia's"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Vakwoorden zonder uitleg passen niet bij een publiek zonder voorkennis.",
+   "uo": [
+    "Klopt: groep 8 kent deze vakwoorden niet. Zonder uitleg haakt het publiek af.",
+    "Koos je \"het onderwerp is te saai voor groep 8\"? Dan denk je dat het onderwerp het probleem is. Vulkanen zijn juist spannend; de uitleg is te moeilijk. Het probleem is de taal, niet het onderwerp.",
+    "Koos je \"de leerling praat te zacht\"? Dan denk je dat het volume het probleem is. Het gaat om begrijpelijkheid. De woordkeus past niet bij het publiek.",
+    "Koos je \"er zijn te weinig dia's\"? Dan denk je dat meer dia's helpen. Zonder uitleg blijven de woorden onbegrijpelijk. Leg moeilijke woorden uit."
+   ],
+   "uh": "Spreek in woorden van je publiek.",
+   "ctx": "Een leerling geeft een voordracht voor groep 8 over de werking van een vulkaan. Hij gebruikt woorden als \"magmakamer\" en \"tektoniek\" zonder uitleg."
+  },
+  {
+   "v": "Wat ontbreekt?",
+   "o": [
+    "meer cijfers",
+    "een langere inleiding met een grap",
+    "een grap aan het einde",
+    "een standpunt met argumenten"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Wie overtuigt, geeft een standpunt met argumenten.",
+   "uo": [
+    "Koos je \"meer cijfers\"? Dan denk je dat meer cijfers meer overtuigen. Cijfers zonder standpunt blijven informatie. Je moet zeggen wat je wilt en waarom.",
+    "Koos je \"een langere inleiding met een grap\"? Dan denk je dat de inleiding de oplossing is. Het probleem zit in de kern: er is geen standpunt. Overtuigen vraagt standpunt plus argumenten.",
+    "Koos je \"een grap aan het einde\"? Dan denk je dat humor overtuigt. Een grap vervangt geen argumenten. Overtuigen draait om reden en standpunt.",
+    "Klopt: wie overtuigt, zegt wat hij vindt en waarom. Alleen cijfers vragen niets van het publiek."
+   ],
+   "uh": "Standpunt + argumenten.",
+   "ctx": "Een spreker wil de klas overtuigen om een zwerfafvalactie te steunen. Hij noemt alleen cijfers over de hoeveelheid afval."
+  },
+  {
+   "v": "Welke aanpak past bij dit publiek?",
+   "o": [
+    "alleen onderzoeksresultaten zonder uitleg",
+    "spreektaal en grappen over leerlingen",
+    "voorbeelden uit het dagelijks leven",
+    "zo snel mogelijk alles vertellen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Bij een volwassen publiek met weinig voorkennis gebruik je herkenbare voorbeelden.",
+   "uo": [
+    "Koos je \"alleen onderzoeksresultaten zonder uitleg\"? Dan denk je dat onderzoek op zich genoeg is. Zonder uitleg blijven cijfers abstract. Maak het begrijpelijk met voorbeelden.",
+    "Koos je \"spreektaal en grappen over leerlingen\"? Dan kies je een toon die niet past bij ouders. Dat kan onbeleefd overkomen. Kies een toon die bij het publiek past.",
+    "Klopt: ouders hebben vaak weinig voorkennis. Herkenbare voorbeelden en gewone woorden helpen.",
+    "Koos je \"zo snel mogelijk alles vertellen\"? Dan denk je dat een groot tempo professioneel is. Ouders hebben tijd nodig om te volgen. Spreek rustig."
+   ],
+   "uh": "Voorbeelden die ze kennen.",
+   "ctx": "Je presenteert op een ouderavond over schermtijd."
+  },
+  {
+   "v": "Wat hoort bij een goede voordracht?",
+   "o": [
+    "zoveel mogelijk onderwerpen noemen",
+    "de volgorde onverwacht houden",
+    "een duidelijke opbouw",
+    "geen overgangen gebruiken"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Een voordracht heeft een logische opbouw met aankondigingen.",
+   "uo": [
+    "Koos je \"zoveel mogelijk onderwerpen noemen\"? Dan denk je dat meer onderwerpen beter zijn. Dan verlies je focus en structuur. Kies een onderwerp en bouw het helder op.",
+    "Koos je \"de volgorde onverwacht houden\"? Dan denk je dat verrassen de beste vorm is. Een voordracht moet volgbaar zijn. Een duidelijke volgorde helpt het publiek.",
+    "Klopt: een voordracht heeft een logische opbouw. Aankondigingen laten het publiek zien waar je naartoe gaat.",
+    "Koos je \"geen overgangen gebruiken\"? Dan denk je dat overgangen overbodig zijn. Ze helpen het publiek om te volgen. Gebruik overgangen en aankondigingen."
+   ],
+   "uh": "Opbouw en aankondiging.",
+   "ctx": "Een spreker springt midden in zijn voordracht ineens naar een ander onderwerp, zonder aankondiging. Het publiek raakt het spoor bijster."
+  },
+  {
+   "v": "Wat is hier de fout in de afstemming?",
+   "o": [
+    "de spreker praat te hard",
+    "er zijn te weinig beelden",
+    "de presentatie is veel te kort voor het onderwerp",
+    "de uitleg past niet bij de voorkennis"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Wie te simpel begint, verveelt een publiek met voorkennis.",
+   "uo": [
+    "Koos je \"de spreker praat te hard\"? Dan denk je dat het volume het probleem is. Het gaat om de inhoud die niet aansluit. Pas de inhoud aan op wat het publiek al weet.",
+    "Koos je \"er zijn te weinig beelden\"? Dan denk je dat beelden de oplossing zijn. Meer beelden maken te simpele uitleg niet interessanter. Sluit aan bij de voorkennis.",
+    "Koos je \"de presentatie is veel te kort voor het onderwerp\"? Dan denk je dat meer tijd helpt. Het probleem is dat de inhoud niet nieuw is voor het publiek. Kies een diepgang die past bij de voorkennis.",
+    "Klopt: het publiek kent de basis al. Wie te simpel begint, verveelt zijn publiek."
+   ],
+   "uh": "Voorkennis bepaalt diepgang.",
+   "ctx": "Het publiek bestaat uit klasgenoten die al veel over gamen weten. De spreker legt tien minuten uit wat een controller is."
+  },
+  {
+   "v": "Welke uitleg past het best?",
+   "o": [
+    "prijzen worden langzaam hoger, dus je kunt minder kopen",
+    "de aanhoudende stijging van het algemene prijspeil door monetaire expansie",
+    "dat is economie, dat leren jullie later",
+    "dat kunnen jullie opzoeken"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Leg een begrip uit in woorden die het publiek kent.",
+   "uo": [
+    "Klopt: dit is een begrijpelijke uitleg met een voorbeeld uit het dagelijks leven.",
+    "Koos je \"de aanhoudende stijging van het algemene prijspeil...\"? Dan gebruik je vaktaal die groep 8 niet kent. De uitleg is correct maar onbegrijpelijk voor dit publiek. Pas je woorden aan op je publiek.",
+    "Koos je \"dat is economie, dat leren jullie later\"? Dan ontwijk je de vraag. Dan leert het publiek niets. Leg het uit in begrijpelijke woorden.",
+    "Koos je \"dat kunnen jullie opzoeken\"? Dan schuif je de uitleg door naar het publiek. Dat is niet jouw taak als spreker. Je legt het zelf eenvoudig uit."
+   ],
+   "uh": "Eenvoudig en herkenbaar.",
+   "ctx": "Je legt aan groep 8 uit wat inflatie is."
+  },
+  {
+   "v": "Wat gaat hier mis?",
+   "o": [
+    "er is te weinig informatie over het onderwerp",
+    "de doelen lopen door elkaar",
+    "hij praat te kort",
+    "de gespreksvorm is verkeerd"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Door een duidelijk hoofddoel te kiezen, weet het publiek wat het mag verwachten.",
+   "uo": [
+    "Koos je \"er is te weinig informatie over het onderwerp\"? Dan denk je dat er te weinig feiten zijn. Het probleem is dat het doel niet helder is. Kies één hoofddoel en houd daaraan vast.",
+    "Klopt: informeren en overtuigen zijn verschillende doelen. Wie ze mengt, laat het publiek in het ongewisse.",
+    "Koos je \"hij praat te kort\"? Dan denk je dat de duur het probleem is. De doelen lopen door elkaar. Maak duidelijk wat je wilt: informeren of overtuigen.",
+    "Koos je \"de gespreksvorm is verkeerd\"? Dan denk je dat de vorm niet past. Een voordracht kan beide doelen hebben, maar je moet kiezen. Het probleem is de vermenging van doelen."
+   ],
+   "uh": "Eén hoofddoel.",
+   "ctx": "Een leerling houdt een voordracht om te informeren over vleesconsumptie, maar geeft steeds zijn eigen mening en roept op minder vlees te eten."
+  },
+  {
+   "v": "Waarom past dit niet bij een debat?",
+   "o": [
+    "omdat voorlezen niet mag",
+    "omdat de tekst te lang is",
+    "omdat de tegenstander niet luistert",
+    "een debat vraagt om reageren"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "In een debat reageer je op de tegenpartij; voorlezen kan dat niet.",
+   "uo": [
+    "Koos je \"omdat voorlezen niet mag\"? Dan denk je dat voorlezen verboden is. Het probleem is dat je niet kunt reageren. Een debat vraagt een reactie op de tegenpartij.",
+    "Koos je \"omdat de tekst te lang is\"? Dan denk je dat de lengte het probleem is. Het gaat om reageren, niet om lengte. Voorlezen sluit reageren uit.",
+    "Koos je \"omdat de tegenstander niet luistert\"? Dan verschuif je de oorzaak naar de ander. Het gaat om wat de spreker zelf doet. Een debatteur luistert en reageert zelf ook.",
+    "Klopt: een debat bestaat uit actie en reactie. Voorlezen kan niet reageren op wat de tegenstander net zei."
+   ],
+   "uh": "Reageren, niet voorlezen.",
+   "ctx": "In een debat leest een leerling zijn tekst voor en kijkt niet naar zijn tegenstander."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling houdt een voordracht voor groep 8 over de werking van een vulkaan. Hij gebruikt woorden als magmakamer en tektoniek zonder uitleg.",
+   "v": "Wat is er mis met de afstemming op het publiek en wat doe je beter?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De woorden zijn te moeilijk voor groep 8 (1 punt). Beter: de woorden uitleggen met eenvoudige taal en een voorbeeld, zodat het publiek je kan volgen (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een spreker wil de klas overtuigen om een zwerfafvalactie te steunen. Hij noemt alleen cijfers over de hoeveelheid afval.",
+   "v": "Welk spreekdoel heeft de spreker en wat ontbreekt in zijn presentatie?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het doel is overtuigen (1 punt). Er ontbreekt een duidelijk standpunt met argumenten en een oproep; alleen cijfers geven informatie (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Twee teams verdedigen elk een standpunt over huiswerk, in rondes, en een jury beslist wie wint.",
+   "v": "Welke gespreksvorm is dit en waaraan zie je dat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een debat (1 punt): er zijn twee partijen met tegengestelde standpunten, afgesproken rondes en een jury (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je presenteert hetzelfde onderwerp eerst voor je klas en later voor de gemeenteraad.",
+   "v": "Wat pas je aan bij de gemeenteraad? Noem twee dingen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een formeler register en zakelijkere toon (1 punt); voorbeelden en uitleg die aansluiten bij de voorkennis en belangen van de gemeenteraad (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling houdt een voordracht om te informeren over vlees eten maar geeft steeds zijn mening en roept op minder te eten.",
+   "v": "Waarom is dit een probleem voor het publiek en wat adviseer je?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De doelen informeren en overtuigen lopen door elkaar, waardoor het publiek niet weet wat de spreker wil (1 punt). Advies: kies één hoofddoel en houd dat vast; eventueel scheid je informatie en oproep duidelijk (1 punt)."
+  }
+ ]
+}

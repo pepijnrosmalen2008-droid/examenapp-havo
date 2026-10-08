@@ -203,7 +203,118 @@ var VAKKEN = [
     "nSv": 154,
     "nOe": 3,
     "nBeg": 30,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "nl.B.1",
+      "gs": 2,
+      "naam": "Informatie verzamelen en verwerken",
+      "beschrijving": "Je zoekt betrouwbare bronnen voor een voordracht, discussie of debat, kiest wat past bij je doel en publiek en verwerkt het in kernpunten en eigen woorden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Bronnen zoeken en kiezen",
+       "Betrouwbaarheid van bronnen beoordelen",
+       "Relevante informatie selecteren",
+       "Informatie verwerken tot kernpunten",
+       "Bronnen vermelden en plagiaat vermijden",
+       "Valkuilen bij informatie verzamelen"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "B2",
+      "lo": "nl.B.2",
+      "gs": 2,
+      "naam": "Doel, publiek en gespreksvorm bepalen",
+      "beschrijving": "Je bepaalt of je wilt informeren of overtuigen, voor wie je spreekt en of het een voordracht, discussie of debat is, en je stemt inhoud en taal daarop af.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Gespreksvormen: voordracht, discussie, debat",
+       "Spreekdoel: informeren of overtuigen",
+       "Publiek en voorkennis",
+       "Inhoud, taal en toon afstemmen",
+       "Valkuilen bij afstemmen"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "B3",
+      "lo": "nl.B.3",
+      "gs": 2,
+      "naam": "Een voordracht opbouwen en presenteren",
+      "beschrijving": "Je bouwt een voordracht op met inleiding, kern en slot en presenteert met passend taalgebruik, houding, oogcontact en stem.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Opbouw: inleiding, kern en slot",
+       "Inleiding en slot",
+       "Overgangen en structuur",
+       "Register en taalgebruik",
+       "Houding, oogcontact en gebaren",
+       "Stem: tempo, articulatie, pauzes"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "B4",
+      "lo": "nl.B.4",
+      "gs": 2,
+      "naam": "Deelnemen aan een discussie of debat",
+      "beschrijving": "Je verdedigt een standpunt met sterke argumenten, weerlegt de argumenten van een ander zonder de persoon aan te vallen en rondt af met een slotpleidooi.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorbereiden: standpunt en argumenten",
+       "Beurten en regels",
+       "Sterke argumenten",
+       "Weerleggen",
+       "Slotpleidooi",
+       "Valkuilen in discussie en debat"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "B5",
+      "lo": "nl.B.5",
+      "gs": 2,
+      "naam": "Adequaat reageren op luisteraars en deelnemers",
+      "beschrijving": "Je luistert actief, beantwoordt vragen eerlijk en gericht, vraagt door waar iets onduidelijk is en geeft en ontvangt bruikbare feedback.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Actief luisteren",
+       "Vragen beantwoorden",
+       "Doorvragen en verduidelijken",
+       "Reageren op kritiek en tegenspraak",
+       "Feedback geven",
+       "Feedback ontvangen"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "C",
@@ -221,7 +332,141 @@ var VAKKEN = [
     "nSv": 124,
     "nOe": 4,
     "nBeg": 23,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "C1",
+      "lo": "nl.C.1",
+      "gs": 2,
+      "naam": "Informatie verzamelen, verwerken en verantwoorden",
+      "beschrijving": "Je kiest betrouwbare bronnen, verwerkt wat je vindt als citaat of in eigen woorden en vermeldt je bronnen, zodat je werk geen plagiaat is.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Bronnen zoeken en kiezen",
+       "Betrouwbaarheid beoordelen",
+       "Citeren",
+       "Parafraseren en samenvatten",
+       "Bronvermelding",
+       "Plagiaat vermijden"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C2",
+      "lo": "nl.C.2",
+      "gs": 2,
+      "naam": "Tekstsoort, doel en lezersgroep afstemmen",
+      "beschrijving": "Je kiest bij een schrijfopdracht de juiste tekstsoort (uiteenzetting, beschouwing of betoog) en stemt inhoud en taal af op doel en lezers.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Doel van een tekst bepalen",
+       "Uiteenzetting",
+       "Beschouwing",
+       "Betoog",
+       "Lezersgroep en voorkennis",
+       "Register en toon"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C3",
+      "lo": "nl.C.3",
+      "gs": 2,
+      "naam": "Een betoog schrijven",
+      "beschrijving": "Je schrijft een betoog met een duidelijke stelling, onderbouwde argumenten, een reactie op een tegenwerping en een conclusie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Een stelling formuleren",
+       "Argumenten en onderbouwing",
+       "Tegenwerping en weerlegging",
+       "Opbouw van een betoog",
+       "Signaalwoorden",
+       "Conclusie en slot"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C4",
+      "lo": "nl.C.4",
+      "gs": 2,
+      "naam": "Tekst en alinea opbouwen",
+      "beschrijving": "Je bouwt een tekst op uit alinea's met een kernzin en uitwerking, begint en eindigt sterk en zorgt voor samenhang met signaalwoorden en tussenkopjes.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Alinea en kernzin",
+       "Openingsalinea",
+       "Slotalinea",
+       "Tussenkopjes",
+       "Signaalwoorden en samenhang",
+       "Volgorde van alinea's"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C5",
+      "lo": "nl.C.5",
+      "gs": 2,
+      "naam": "Schrijftaal, stijl en correctheid",
+      "beschrijving": "Je schrijft in een register dat bij de lezer past, voorkomt stijlfouten, schrijft een formele brief en let op spelling en leestekens.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Schrijftaal en spreektaal",
+       "Stijlfouten voorkomen",
+       "Een formele brief",
+       "Spelling van werkwoorden",
+       "Leestekens",
+       "Een consequente aanspreekvorm"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "C6",
+      "lo": "nl.C.6",
+      "gs": 2,
+      "naam": "Een tekst reviseren op commentaar",
+      "beschrijving": "Je leest commentaar van een lezer, bepaalt wat het belangrijkste is, past je tekst gericht aan en controleert daarna het geheel.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Commentaar lezen en begrijpen",
+       "Soorten commentaar",
+       "Prioriteren",
+       "Aanpassen en controleren",
+       "Afwegen en afwijzen",
+       "Doorvragen en verwerken"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "D",

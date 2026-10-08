@@ -1,0 +1,653 @@
+{
+ "id": "B1",
+ "lo": "nl.B.1",
+ "gs": 2,
+ "naam": "Informatie verzamelen en verwerken",
+ "beschrijving": "Je zoekt betrouwbare bronnen voor een voordracht, discussie of debat, kiest wat past bij je doel en publiek en verwerkt het in kernpunten en eigen woorden.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Bronnen zoeken en kiezen",
+  "Betrouwbaarheid van bronnen beoordelen",
+  "Relevante informatie selecteren",
+  "Informatie verwerken tot kernpunten",
+  "Bronnen vermelden en plagiaat vermijden",
+  "Valkuilen bij informatie verzamelen"
+ ],
+ "sam": "Voor een voordracht, discussie of debat verzamel je relevante informatie bij betrouwbare bronnen. Een betrouwbare bron is deskundig en controleerbaar. Je selecteert wat past bij je doel en publiek, verwerkt het tot kernpunten en kernwoorden en formuleert in eigen woorden. Gebruik je informatie of een citaat van een ander, dan vermeld je de bron; anders is het plagiaat.",
+ "begrippen": [
+  {
+   "t": "Bron",
+   "d": "Een plek of persoon waar je informatie vandaan haalt."
+  },
+  {
+   "t": "Betrouwbare bron",
+   "d": "Een bron met controleerbare informatie van een deskundige afzender."
+  },
+  {
+   "t": "Relevante informatie",
+   "d": "Informatie die past bij je doel, je onderwerp en je publiek."
+  },
+  {
+   "t": "Selecteren",
+   "d": "Kiezen welke informatie je gebruikt en wat je weglaat."
+  },
+  {
+   "t": "Kernpunt",
+   "d": "Een van de belangrijkste punten die je wilt vertellen."
+  },
+  {
+   "t": "Kernwoorden",
+   "d": "De belangrijkste woorden waarmee je een punt onthoudt en toelicht."
+  },
+  {
+   "t": "Parafraseren",
+   "d": "Informatie in eigen woorden weergeven met dezelfde betekenis."
+  },
+  {
+   "t": "Citaat",
+   "d": "Een letterlijk overgenomen stuk tekst of uitspraak met bronvermelding."
+  },
+  {
+   "t": "Bronvermelding",
+   "d": "De verwijzing naar de bron van informatie of een citaat."
+  },
+  {
+   "t": "Plagiaat",
+   "d": "Andermans werk of woorden gebruiken zonder de bron te vermelden."
+  },
+  {
+   "t": "Eenzijdige informatie",
+   "d": "Informatie die maar één kant van een zaak laat zien."
+  },
+  {
+   "t": "Belanghebbende",
+   "d": "Iemand die voordeel heeft bij wat de lezer of luisteraar gelooft."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke bron past het best bij een voordracht over de geschiedenis van de fiets?",
+   "o": [
+    "een grappige video van een vlogger",
+    "een boek van een historicus",
+    "een reclame van een fietsenwinkel",
+    "een anoniem bericht op een forum"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Voor feiten kies je een bron van een deskundige die je kunt controleren.",
+   "uo": [
+    "Koos je \"een grappige video van een vlogger\"? Dan denk je dat een vermakelijke bron ook een goede bron is. Een vlogger hoeft geen deskundige te zijn en noemt zelden bronnen. Voor feiten kies je een afzender die het onderwerp kent en die je kunt controleren.",
+    "Klopt: een boek van een deskundige geeft gecontroleerde informatie over het onderwerp. Dat past bij een voordracht waarin je feiten uitlegt.",
+    "Koos je \"een reclame van een fietsenwinkel\"? Dan ga je voorbij aan het belang van de afzender. Een winkel wil fietsen verkopen en laat vooral voordelen zien. Een bron met een verkoopbelang is zelden neutraal over geschiedenis of feiten.",
+    "Koos je \"een anoniem bericht op een forum\"? Dan denk je dat iedere tekst online even bruikbaar is. Je weet niet wie het schreef en kunt de beweringen niet nagaan. Een bruikbare bron heeft een bekende, deskundige afzender."
+   ],
+   "uh": "Deskundig en controleerbaar."
+  },
+  {
+   "v": "Je gebruikt voor een voordracht liever meer dan één bron. Waarom?",
+   "o": [
+    "dan wordt je voordracht vanzelf langer",
+    "dan hoef je geen bronnen te noemen",
+    "dan is elke bron vanzelf betrouwbaar",
+    "je kunt informatie vergelijken"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Meer bronnen laten je vergelijken en maken de informatie degelijker.",
+   "uo": [
+    "Koos je \"dan wordt je voordracht vanzelf langer\"? Dan denk je dat het aantal bronnen de lengte van je verhaal bepaalt. De lengte volgt uit je keuzes en je spreektijd. Meer bronnen helpen je juist om de kwaliteit van je informatie te controleren.",
+    "Koos je \"dan hoef je geen bronnen te noemen\"? Dan denk je dat een stapel bronnen de verantwoording overbodig maakt. Dat is niet zo. Bij elke bron die je gebruikt hoort een vermelding, dus meer bronnen betekent meer te noemen bronnen.",
+    "Koos je \"dan is elke bron vanzelf betrouwbaar\"? Dan denk je dat de som van bronnen betrouwbaarheid oplevert. Een onbetrouwbare bron blijft onbetrouwbaar, ook naast andere. Je beoordeelt elke bron apart op afzender, deskundigheid en controleerbaarheid.",
+    "Klopt: bronnen kunnen elkaar aanvullen of tegenspreken. Door te vergelijken zie je wat klopt en welke kanten er zijn."
+   ],
+   "uh": "Vergelijk bronnen."
+  },
+  {
+   "v": "Je wilt cijfers over het aantal leerlingen in Nederland. Waar zoek je?",
+   "o": [
+    "bij een officiële statistiekbron",
+    "in een column van een journalist",
+    "op een forum met reacties",
+    "in een reclamefolder van een school"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Voor cijfers ga je naar een officiële, controleerbare bron.",
+   "uo": [
+    "Klopt: een officiële statistiekbron verzamelt cijfers volgens vaste regels en is controleerbaar. Daar komen cijfers vandaan waar je op kunt bouwen.",
+    "Koos je \"in een column van een journalist\"? Dan denk je dat een bekende schrijver ook cijfers levert. Een column geeft een persoonlijke mening, geen geverifieerde gegevens. Voor cijfers ga je naar de bron waar de cijfers vandaan komen.",
+    "Koos je \"op een forum met reacties\"? Dan kies je een plek waar iedereen iets mag schrijven zonder controle. De cijfers kunnen fout of verouderd zijn. Een betrouwbare bron laat zien wie de cijfers verzamelde en hoe.",
+    "Koos je \"in een reclamefolder van een school\"? Dan vertrouw je op een afzender die leerlingen wil werven. Die kiest de cijfers die gunstig zijn voor zichzelf. Neutrale landelijke cijfers vind je bij een onafhankelijke officiële bron."
+   ],
+   "uh": "Cijfers: officiële bron."
+  },
+  {
+   "v": "Wat maakt een bron betrouwbaar?",
+   "o": [
+    "de bron staat bovenaan in de zoekresultaten van de zoekmachine",
+    "de bron is mooi vormgegeven",
+    "de afzender is deskundig en het is controleerbaar",
+    "de bron wordt veel gedeeld"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Een betrouwbare bron is deskundig en controleerbaar.",
+   "uo": [
+    "Koos je \"de bron staat bovenaan in de zoekresultaten van de...\"? Dan denk je dat een hoge plek in het zoekresultaat kwaliteit bewijst. Die plek hangt ook af van populariteit en advertenties. Je beoordeelt zelf of de afzender deskundig is en of je het kunt controleren.",
+    "Koos je \"de bron is mooi vormgegeven\"? Dan laat je je leiden door de verpakking. Ook onbetrouwbare bronnen kunnen er professioneel uitzien. Kwaliteit zit in afzender en onderbouwing, niet in opmaak.",
+    "Klopt: bij een deskundige afzender en controleerbare gegevens kun je erop vertrouwen dat de informatie klopt.",
+    "Koos je \"de bron wordt veel gedeeld\"? Dan verwar je populair met juist. Een bericht kan duizenden keren gedeeld worden en toch onwaar zijn. Veel gedeeld zegt iets over bereik, niet over betrouwbaarheid."
+   ],
+   "uh": "Wie zegt het, en kun je het controleren?"
+  },
+  {
+   "v": "Twee bronnen spreken elkaar tegen. Wat doe je het eerst?",
+   "o": [
+    "de kortste bron kiezen",
+    "altijd de nieuwste bron kiezen die je kunt vinden",
+    "nagaan wie deskundiger en beter onderbouwd is",
+    "beide bronnen weglaten"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Bij tegenstrijdige bronnen beoordeel je deskundigheid en onderbouwing.",
+   "uo": [
+    "Koos je \"de kortste bron kiezen\"? Dan denk je dat een korte bron eenvoudiger en dus juister is. Kort of lang zegt niets over juistheid. Je kiest op basis van deskundigheid en onderbouwing.",
+    "Koos je \"altijd de nieuwste bron kiezen die je kunt vinden\"? Dan denk je dat nieuw altijd beter is. Soms is een oudere bron deskundiger of gaat het over een onderwerp dat niet verandert. Kijk eerst naar afzender en onderbouwing, daarna naar de datum.",
+    "Klopt: je vergelijkt afzender, onderbouwing en belang. De bron die deskundiger en beter onderbouwd is, weegt zwaarder.",
+    "Koos je \"beide bronnen weglaten\"? Dan vermijd je de keuze. Dan verlies je belangrijke informatie en kun je niets zeggen over het onderwerp. Beter kies je bewust en beargumenteer je, eventueel met een derde bron erbij."
+   ],
+   "uh": "Wie weet het beter, en waarop baseert hij het?"
+  },
+  {
+   "v": "Welke informatie is relevant voor je voordracht?",
+   "o": [
+    "informatie die past bij je doel en je publiek",
+    "alle informatie die je kunt vinden",
+    "informatie die je zelf het leukst en het mooist vindt",
+    "informatie met de meeste cijfers"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Relevante informatie past bij doel en publiek.",
+   "uo": [
+    "Klopt: relevant is wat bijdraagt aan wat je wilt bereiken en wat je luisteraars interesseert of nodig hebben.",
+    "Koos je \"alle informatie die je kunt vinden\"? Dan denk je dat meer informatie altijd beter is. Dan verdrinkt je publiek in details die niets met je doel te maken hebben. Je selecteert juist wat past bij je doel en publiek.",
+    "Koos je \"informatie die je zelf het leukst en het mooist...\"? Dan laat je je eigen smaak bepalen. Jouw voorkeur zegt niets over wat je luisteraars nodig hebben. Relevant is wat helpt om je doel te halen bij dit publiek.",
+    "Koos je \"informatie met de meeste cijfers\"? Dan denk je dat meer cijfers meer gezag geven. Cijfers zijn niet altijd relevant of begrijpelijk voor je publiek. Relevantie gaat om doel en publiek, niet om het aantal getallen."
+   ],
+   "uh": "Doel en publiek eerst."
+  },
+  {
+   "v": "Je hebt veel informatie en weinig tijd. Wat doe je?",
+   "o": [
+    "alles heel snel vertellen",
+    "alleen het onderwerp noemen",
+    "je spreektijd ruim overschrijden om alles te zeggen",
+    "kiezen wat past bij doel en publiek"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Selecteer wat bij doel en publiek past en laat de rest weg.",
+   "uo": [
+    "Koos je \"alles heel snel vertellen\"? Dan probeer je alles erin te proppen. Dan kan het publiek je niet volgen en blijft er weinig hangen. Een goede voordracht draait om wat overkomt, niet om wat gezegd is.",
+    "Koos je \"alleen het onderwerp noemen\"? Dan ga je te ver in het weglaten. Dan vertel je niets over het onderwerp zelf. Je hebt kernpunten met een korte toelichting nodig om iets over te brengen.",
+    "Koos je \"je spreektijd ruim overschrijden om alles te zeggen\"? Dan denk je dat de afgesproken tijd niet telt. Je spreektijd is een afspraak met je publiek en de beoordelaar. Selecteren is de manier om binnen de tijd te blijven.",
+    "Klopt: selecteren betekent kiezen en weglaten. Je houdt wat past en laat bijzaken los."
+   ],
+   "uh": "Kies, laat weg."
+  },
+  {
+   "v": "Wat zijn kernpunten van een voordracht?",
+   "o": [
+    "de voorbeelden die je bij je punten wilt geven",
+    "de belangrijkste punten van je verhaal",
+    "de bronnen die je gebruikt",
+    "de woorden uit de titel"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 3,
+   "u": "Kernpunten zijn de belangrijkste punten die je wilt vertellen.",
+   "uo": [
+    "Koos je \"de voorbeelden die je bij je punten wilt geven\"? Dan denk je dat voorbeelden de kern zijn. Voorbeelden ondersteunen een punt, ze zijn het punt niet zelf. Zonder kernpunt zijn voorbeelden losse stukjes.",
+    "Klopt: kernpunten vormen de ruggengraat van je verhaal. Alle uitleg en voorbeelden hangen eraan.",
+    "Koos je \"de bronnen die je gebruikt\"? Dan verwar je de verantwoording met de inhoud. Bronnen laten zien waar je informatie vandaan komt. Kernpunten zijn de punten die je wilt overbrengen aan je publiek.",
+    "Koos je \"de woorden uit de titel\"? Dan denk je dat de titel het verhaal samenvat. De titel noemt het onderwerp, niet wat je erover zegt. Kernpunten zijn de boodschappen die je over het onderwerp geeft."
+   ],
+   "uh": "Kernpunten dragen het verhaal."
+  },
+  {
+   "v": "Waarom noteer je kernwoorden in plaats van hele zinnen?",
+   "o": [
+    "zo hoef je niets van het onderwerp te weten of te leren",
+    "zo duurt je voordracht altijd langer",
+    "zo kun je bronnen weglaten",
+    "zo kun je vrij spreken en blijf je bij de kern"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Kernwoorden helpen je vrij te spreken en bij de kern te blijven.",
+   "uo": [
+    "Koos je \"zo hoef je niets van het onderwerp te weten of te...\"? Dan denk je dat kernwoorden de kennis vervangen. Je moet het onderwerp juist goed kennen om erover te kunnen vertellen. Kernwoorden zijn een geheugensteun, geen vervanging van kennis.",
+    "Koos je \"zo duurt je voordracht altijd langer\"? Dan denk je dat kernwoorden iets met de duur te maken hebben. De duur hangt van je inhoud en tempo af. Kernwoorden helpen je juist om niet voor te lezen.",
+    "Koos je \"zo kun je bronnen weglaten\"? Dan verwar je het verkorten van aantekeningen met het weglaten van bronnen. De bronnen noem je altijd. Kernwoorden zijn een hulpmiddel bij het vertellen.",
+    "Klopt: met kernwoorden als steun spreek je in eigen woorden en blijf je bij wat belangrijk is."
+   ],
+   "uh": "Kernwoorden, geen hele zinnen."
+  },
+  {
+   "v": "Hoe verwerk je informatie uit een bron in eigen woorden?",
+   "o": [
+    "je schrijft de zinnen letterlijk over in je aantekeningen",
+    "je begrijpt het en zegt het op je eigen manier",
+    "je verandert de betekenis een beetje",
+    "je vervangt alleen een paar woorden"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Eerst begrijpen, dan in eigen woorden herformuleren.",
+   "uo": [
+    "Koos je \"je schrijft de zinnen letterlijk over in je...\"? Dan denk je dat overschrijven verwerken is. Dat is een citaat of, zonder bron, plagiaat. Eigen woorden betekent dat je de zin zelf opbouwt.",
+    "Klopt: eerst begrijpen, dan herformuleren. Dan blijft de betekenis gelijk en klinkt het als jouw verhaal.",
+    "Koos je \"je verandert de betekenis een beetje\"? Dan pas je de inhoud aan in plaats van de woorden. Dan klopt de informatie niet meer. Parafraseren behoudt de betekenis en verandert de formulering.",
+    "Koos je \"je vervangt alleen een paar woorden\"? Dan denk je dat een paar synoniemen genoeg zijn. Je zinsbouw blijft dan die van de bron. Echt parafraseren betekent de zin opnieuw opbouwen met je eigen woorden."
+   ],
+   "uh": "Begrijp en herformuleer."
+  },
+  {
+   "v": "Wanneer is een bronvermelding nodig?",
+   "o": [
+    "alleen bij letterlijke citaten",
+    "nooit bij een mondelinge voordracht in de klas",
+    "als je informatie van een ander gebruikt",
+    "als je docent erom vraagt"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Gebruik je informatie van een ander, dan vermeld je de bron.",
+   "uo": [
+    "Koos je \"alleen bij letterlijke citaten\"? Dan denk je dat alleen letterlijke zinnen een bron nodig hebben. Ook informatie die je in eigen woorden zegt, komt van iemand. Bij elk gebruik van andermans informatie noem je de bron.",
+    "Koos je \"nooit bij een mondelinge voordracht in de klas\"? Dan denk je dat bronnen alleen bij schriftelijk werk horen. Je noemt ze ook hardop of op een dia. Eerlijk omgaan met informatie geldt in elke vorm.",
+    "Klopt: wat van een ander komt, verantwoord je met een bron. Zo is het duidelijk waar het vandaan komt.",
+    "Koos je \"als je docent erom vraagt\"? Dan maak je er een regel van die alleen geldt als iemand erom vraagt. Het hoort bij eerlijk werken. Je vermeldt de bron omdat het eerlijk is, niet omdat het moet."
+   ],
+   "uh": "Van een ander? Bron erbij."
+  },
+  {
+   "v": "Wat is plagiaat?",
+   "o": [
+    "andermans werk gebruiken zonder de bron te noemen",
+    "informatie uit meerdere bronnen combineren",
+    "een citaat tussen aanhalingstekens met bron",
+    "een samenvatting in eigen woorden met bronvermelding"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Plagiaat is andermans werk gebruiken zonder bronvermelding.",
+   "uo": [
+    "Klopt: het gaat om het gebruiken van andermans werk alsof het van jou is.",
+    "Koos je \"informatie uit meerdere bronnen combineren\"? Dan denk je dat combineren verboden is. Dat is juist goed verzamelen. Het probleem begint pas als je de bronnen niet noemt.",
+    "Koos je \"een citaat tussen aanhalingstekens met bron\"? Dan verwar je correct citeren met plagiaat. Een duidelijk citaat met bronvermelding is toegestaan. Het verschil met plagiaat is de bronvermelding en de aanhalingstekens.",
+    "Koos je \"een samenvatting in eigen woorden met bronvermelding\"? Dan denk je dat samenvatten met een bron fout is. Dat is netjes verwerken. Plagiaat is gebruik zonder bron, niet gebruik mét bron."
+   ],
+   "uh": "Zonder bron = plagiaat."
+  },
+  {
+   "v": "Waarom is voorlezen van een bron geen goede verwerking?",
+   "o": [
+    "je laat niet zien dat je het begrijpt",
+    "omdat voorlezen altijd te snel en te monotoon gaat",
+    "omdat voorlezen niet mag",
+    "omdat de bron dan niet meer klopt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Voorlezen is geen verwerking: je laat je begrip niet zien.",
+   "uo": [
+    "Klopt: voorlezen laat niet zien wat je begrijpt, en een voorgelezen tekst is minder levendig voor het publiek.",
+    "Koos je \"omdat voorlezen altijd te snel en te monotoon gaat\"? Dan denk je dat het probleem het tempo is. Je kunt ook langzaam voorlezen zonder iets te verwerken. Het probleem is dat je er niets van maakt.",
+    "Koos je \"omdat voorlezen niet mag\"? Dan denk je dat voorlezen verboden is. Een korte, aangeduide quote voorlezen mag wel. Het gaat erom dat je de hele voordracht niet bestaat uit voorlezen.",
+    "Koos je \"omdat de bron dan niet meer klopt\"? Dan denk je dat voorlezen de bron beschadigt. De bron blijft gelijk. Voorlezen laat zien dat je niets verwerkt hebt."
+   ],
+   "uh": "Spreek, lees niet voor."
+  },
+  {
+   "v": "Welke bronvermelding is bruikbaar?",
+   "o": [
+    "\"ergens op internet gelezen, ik weet niet meer waar\"",
+    "\"mijn vader zei dat\"",
+    "\"Volgens het rapport van het instituut uit 2023\"",
+    "\"ik weet het van vroeger\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Een bronvermelding noemt afzender en jaar of plaats.",
+   "uo": [
+    "Koos je \"ergens op internet gelezen, ik weet niet meer waar\"? Dan denk je dat een vaag verwijzing genoeg is. Zo kan niemand de bron terugvinden. Een bronvermelding noemt wie het zei en waar je het vindt.",
+    "Koos je \"mijn vader zei dat\"? Dan kies je een persoon als bron zonder dat zijn deskundigheid blijkt. Dat is niet te controleren. Een persoon is alleen een bruikbare bron als hij deskundig is en dat benoemd wordt.",
+    "Klopt: afzender en jaar maken de bron te vinden en te controleren.",
+    "Koos je \"ik weet het van vroeger\"? Dan denk je dat je eigen herinnering een bron is. Het is een bewering zonder afzender. Een vermelding moet verwijzen naar iets wat te vinden en te controleren is."
+   ],
+   "uh": "Wie en waar."
+  },
+  {
+   "v": "Waarom is de eerste zoekmachine-uitkomst niet altijd de beste bron?",
+   "o": [
+    "omdat de eerste uitkomst altijd onjuist of reclame is",
+    "zoekmachines kijken naar meer dan betrouwbaarheid",
+    "omdat de tweede uitkomst altijd beter is",
+    "omdat zoekmachines alleen reclame tonen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Rangschikking van zoekresultaten bewijst geen betrouwbaarheid.",
+   "uo": [
+    "Koos je \"omdat de eerste uitkomst altijd onjuist of reclame...\"? Dan denk je dat de eerste uitkomst fout moet zijn. Soms is hij prima, maar dat moet je zelf nagaan. Je beoordeelt elke uitkomst op afzender en controleerbaarheid.",
+    "Klopt: advertenties en populariteit tellen mee. Je beoordeelt de bron zelf.",
+    "Koos je \"omdat de tweede uitkomst altijd beter is\"? Dan denk je dat de volgorde omgekeerd werkt. Ook de tweede kan reclame of onzin zijn. De positie zegt niets over kwaliteit.",
+    "Koos je \"omdat zoekmachines alleen reclame tonen\"? Dan denk je dat alle resultaten reclame zijn. Er staan ook neutrale en deskundige bronnen tussen. Je moet kritisch kijken, niet alles afwijzen."
+   ],
+   "uh": "Beoordeel zelf."
+  },
+  {
+   "v": "Wat doe je met informatie nadat je die gevonden hebt?",
+   "o": [
+    "je leest haar integraal voor",
+    "je bewaart haar zonder te kijken",
+    "je plakt alle teksten achter elkaar",
+    "je selecteert en ordent haar"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Informatie verwerk je door te selecteren en ordenen.",
+   "uo": [
+    "Koos je \"je leest haar integraal voor\"? Dan denk je dat voorlezen verwerken is. Je geeft de tekst door zonder er iets mee te doen. Verwerken betekent kiezen, ordenen en in eigen woorden zeggen.",
+    "Koos je \"je bewaart haar zonder te kijken\"? Dan sla je de verwerking over. Dan heb je er bij je voordracht niets aan. Informatie wordt pas bruikbaar als je haar ordent.",
+    "Koos je \"je plakt alle teksten achter elkaar\"? Dan denk je dat samenvoegen genoeg is. Dat levert een onoverzichtelijk geheel op. Je kiest en ordent tot een verhaal met kernpunten.",
+    "Klopt: na verzamelen komt verwerken: kiezen en ordenen tot een verhaal met kernpunten."
+   ],
+   "uh": "Kiezen en ordenen."
+  },
+  {
+   "v": "Welke bron kies je als hoofdbron?",
+   "o": [
+    "de folder van het installatiebedrijf",
+    "het onderzoeksrapport",
+    "het forumbericht",
+    "de tekst zonder auteur"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Kies als hoofdbron de bron met deskundige, controleerbare informatie.",
+   "uo": [
+    "Koos je \"de folder van het installatiebedrijf\"? Dan vertrouw je op een afzender die iets wil verkopen. Het bedrijf benadrukt voordelen en laat nadelen weg. Voor een hoofdbron zoek je een neutrale, deskundige afzender.",
+    "Klopt: een onderzoeksinstituut is deskundig en het rapport is controleerbaar. Dat past bij een voordracht met feiten.",
+    "Koos je \"het forumbericht\"? Dan denk je dat een bericht dat ergens op staat betrouwbaar is. Iedereen kan op een forum iets schrijven zonder controle. Een forumbericht is geen deskundige, controleerbare bron.",
+    "Koos je \"de tekst zonder auteur\"? Dan kies je een bron waarvan je de afzender niet kent. Je kunt niet beoordelen of de schrijver deskundig is. Zonder auteur of bron kun je de informatie niet controleren."
+   ],
+   "uh": "Deskundig, onafhankelijk, controleerbaar.",
+   "ctx": "Je houdt een voordracht over zonnepanelen voor je klas. Je vindt een folder van een installatiebedrijf, een rapport van een onderzoeksinstituut, een forumbericht en een tekst zonder auteur."
+  },
+  {
+   "v": "Waarom is het energiebedrijf als bron minder betrouwbaar?",
+   "o": [
+    "het bedrijf heeft belang bij de verkoop",
+    "het bedrijf heeft geen website",
+    "een bedrijf kan niets weten over zonnepanelen",
+    "de website is te lang"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Een bron met een belang is minder neutraal.",
+   "uo": [
+    "Klopt: een belanghebbende kleurt informatie. Daarom weeg je zijn claim minder zwaar dan een onafhankelijk rapport.",
+    "Koos je \"het bedrijf heeft geen website\"? Dan lees je iets wat er niet staat. Het bedrijf heeft juist een website. Het probleem is niet de website maar het belang bij verkoop.",
+    "Koos je \"een bedrijf kan niets weten over zonnepanelen\"? Dan denk je dat een bedrijf geen kennis heeft. Een bedrijf kan veel weten van zijn producten. Het probleem is niet kennis maar het belang bij het resultaat.",
+    "Koos je \"de website is te lang\"? Dan beoordeel je de vorm in plaats van de afzender. Lengte zegt niets over betrouwbaarheid. Kijk wie het zegt en welk belang hij heeft."
+   ],
+   "uh": "Wie verdient eraan?",
+   "ctx": "Een energiebedrijf zegt op zijn website dat zonnepanelen altijd binnen drie jaar zijn terugverdiend. Een onderzoeksrapport noemt een veel langere terugverdientijd."
+  },
+  {
+   "v": "Wat doe je met deze bewering?",
+   "o": [
+    "je neemt haar over omdat iemand het op een forum heeft gezegd",
+    "je noemt haar als feit met de bron \"forum\"",
+    "je laat de tekst bij je presentatie zien als bewijs",
+    "je controleert haar eerst bij een betrouwbare bron"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Controleer onbekende beweringen bij een betrouwbare bron.",
+   "uo": [
+    "Koos je \"je neemt haar over omdat iemand het op een forum...\"? Dan denk je dat gezegd ook waar is. Iemand zonder naam of bron kan van alles beweren. Zonder controle zet je mogelijk onwaarheden in je voordracht.",
+    "Koos je \"je noemt haar als feit met de bron forum\"? Dan denk je dat \"forum\" een bronvermelding is. Een bron noemt een afzender die deskundig en vindbaar is. Een anonieme post is geen bron die je kunt verantwoorden.",
+    "Koos je \"je laat de tekst bij je presentatie zien als bewijs\"? Dan denk je dat een afbeelding van een bericht bewijskracht heeft. Een anonieme bewering is geen bewijs, ook niet op een dia. Je zou je publiek misleiden met niet-gecontroleerde informatie.",
+    "Klopt: een anonieme bewering zonder bron is niet te vertrouwen. Eerst controleren bij een betrouwbare bron."
+   ],
+   "uh": "Eerst controleren.",
+   "ctx": "Op een forum schrijft iemand zonder naam dat schoolexamens worden afgeschaft. Er staat geen bron bij."
+  },
+  {
+   "v": "Welke informatie selecteer je het best?",
+   "o": [
+    "de tabel met uitstoot per land in miljoenen tonnen",
+    "de uitleg over de ozonlaag",
+    "de eenvoudige uitleg van het broeikaseffect",
+    "alle drie even uitgebreid"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Selecteer informatie die bij het onderwerp én het publiek past.",
+   "uo": [
+    "Koos je \"de tabel met uitstoot per land in miljoenen tonnen\"? Dan denk je dat cijfers altijd overtuigen. Voor groep 8 zijn tonnen per land te abstract en te veel getallen. Je past je informatie aan op het publiek.",
+    "Koos je \"de uitleg over de ozonlaag\"? Dan verwar je het klimaat met een ander milieuonderwerp. De ozonlaag is een ander thema. De informatie moet bij je onderwerp passen, niet bij een verwant onderwerp.",
+    "Klopt: die past bij het onderwerp en is begrijpelijk voor groep 8.",
+    "Koos je \"alle drie even uitgebreid\"? Dan denk je dat alles erbij moet. Een deel past niet bij het onderwerp of het publiek. Je selecteert wat bij doel en publiek past."
+   ],
+   "uh": "Onderwerp + publiek.",
+   "ctx": "Je spreekt voor groep 8 over het klimaat. Je hebt een uitleg van het broeikaseffect in eenvoudige woorden, een tabel met CO2-uitstoot per land in tonnen en een uitleg over de ozonlaag."
+  },
+  {
+   "v": "Welke informatie is het meest relevant en betrouwbaar?",
+   "o": [
+    "de geschiedenis van de schoolbel",
+    "de lijst met pauzelengtes zonder bron",
+    "het onderzoek over concentratie",
+    "geen van de drie"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Kies informatie die relevant én controleerbaar is.",
+   "uo": [
+    "Koos je \"de geschiedenis van de schoolbel\"? Dan denk je dat alles over school past. Het is interessant maar ondersteunt je standpunt niet. Relevant is wat je argument steunt.",
+    "Koos je \"de lijst met pauzelengtes zonder bron\"? Dan kies je een passend onderwerp zonder te kijken naar de bron. Zonder bron kun je de lijst niet controleren. Relevant én betrouwbaar zijn allebei nodig.",
+    "Klopt: het sluit aan bij je standpunt en is een onderbouwd onderzoek.",
+    "Koos je \"geen van de drie\"? Dan denk je dat niets bruikbaar is. Het onderzoek past wel bij je standpunt en heeft een onderbouwing. Kijk naar relevantie en betrouwbaarheid per stuk."
+   ],
+   "uh": "Relevant en controleerbaar.",
+   "ctx": "Je wilt je klas overtuigen dat de pauze langer moet. Je hebt onderzoek dat de concentratie daalt na lange lessen, een stuk over de geschiedenis van de schoolbel en een lijst met pauzelengtes in andere landen zonder bron."
+  },
+  {
+   "v": "Welke kernwoorden noteer je?",
+   "o": [
+    "dak, school, jaar",
+    "het hele eerste zinsdeel letterlijk uit de tekst",
+    "geen kernwoorden, alleen de titel",
+    "zonnepanelen, tien huishoudens, besparing"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Kernwoorden zijn de belangrijkste woorden die de boodschap dragen.",
+   "uo": [
+    "Koos je \"dak, school, jaar\"? Dan kies je bijzaken. Deze woorden zeggen niets over de boodschap. Kernwoorden zijn de woorden die de boodschap dragen.",
+    "Koos je \"het hele eerste zinsdeel letterlijk uit de tekst\"? Dan schrijf je hele stukken tekst op. Dan lees je eigenlijk voor. Kernwoorden zijn korte steunwoorden waarmee je zelf kunt vertellen.",
+    "Koos je \"geen kernwoorden, alleen de titel\"? Dan denk je dat een titel genoeg steun geeft. De titel noemt het onderwerp, niet de punten die je wilt vertellen. Kernwoorden bevatten de belangrijkste informatie, niet alleen het onderwerp.",
+    "Klopt: deze kernwoorden dekken wat belangrijk is: wat het is, wat het levert en wat het bespaart."
+   ],
+   "uh": "Kort en dragend.",
+   "ctx": "De zonnepanelen op het dak van de school leveren per jaar genoeg stroom voor tien huishoudens, en de school bespaart daardoor elk jaar duizenden euro's op de energierekening."
+  },
+  {
+   "v": "Welke formulering is een goede parafrase?",
+   "o": [
+    "De accu slaat de stroom die je erin stopt op als chemische energie.",
+    "Bij het laden van de accu wordt elektrische energie omgezet in chemische energie.",
+    "De accu maakt elektrische energie uit chemische energie.",
+    "Een accu is een belangrijk apparaat voor de toekomst."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Een parafrase behoudt de betekenis in eigen woorden.",
+   "uo": [
+    "Klopt: dezelfde betekenis in eigen woorden. Niets toegevoegd en niets weggelaten.",
+    "Koos je \"Bij het laden van de accu wordt elektrische energie...\"? Dan denk je dat het inkorten van een zin parafraseren is. Je hebt de zin bijna letterlijk gelaten. Een parafrase gebruikt eigen woorden en een eigen zinsbouw.",
+    "Koos je \"De accu maakt elektrische energie uit chemische...\"? Dan draai je de richting van het proces om. Bij laden wordt elektrische energie juist opgeslagen als chemische energie. Een parafrase moet de betekenis behouden.",
+    "Koos je \"Een accu is een belangrijk apparaat voor de...\"? Dan voeg je een eigen mening toe en laat je de inhoud weg. Dit zegt niets over het omzetten van energie. Een parafrase geeft de inhoud van de bron weer."
+   ],
+   "uh": "Zelfde betekenis, andere woorden.",
+   "ctx": "Bij het laden van de accu wordt elektrische energie omgezet in chemische energie die in de accu opgeslagen blijft."
+  },
+  {
+   "v": "Wat doe je?",
+   "o": [
+    "je zegt de zin alsof het je eigen idee is",
+    "je zegt dat het een citaat is en noemt de bron",
+    "je laat de bron weg omdat het een bekende zin is",
+    "je past de zin een beetje aan en noemt geen bron"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Een letterlijke zin gebruik je als citaat met bron.",
+   "uo": [
+    "Koos je \"je zegt de zin alsof het je eigen idee is\"? Dan neem je andermans woorden over als de jouwe. Dat is plagiaat. Letterlijke zinnen duid je altijd aan als citaat met bron.",
+    "Klopt: een letterlijke zin presenteer je als citaat met bron. Zo is helder dat het niet jouw woorden zijn.",
+    "Koos je \"je laat de bron weg omdat het een bekende zin is\"? Dan denk je dat een bekende zin geen bron nodig heeft. Ook bekende zinnen komen ergens vandaan. Je noemt de bron zodat het eerlijk blijft en je publiek het kan controleren.",
+    "Koos je \"je past de zin een beetje aan en noemt geen bron\"? Dan denk je dat een kleine aanpassing het jouwe maakt. Het blijft informatie van een ander. Ook bij een aangepaste zin noem je de bron."
+   ],
+   "uh": "Citaat + bron.",
+   "ctx": "Je wilt de zin \"Het klimaat verandert sneller dan verwacht\" letterlijk uit een rapport gebruiken in je voordracht."
+  },
+  {
+   "v": "Wat is hier mis?",
+   "o": [
+    "de zin is te kort om plagiaat te zijn",
+    "er is niets mis, want hij zegt het mondeling",
+    "het artikel is te oud",
+    "geen bronvermelding, dus plagiaat"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Letterlijk overnemen zonder bron is plagiaat.",
+   "uo": [
+    "Koos je \"de zin is te kort om plagiaat te zijn\"? Dan denk je dat een korte zin vrij te gebruiken is. Ook een korte letterlijke zin telt als plagiaat zonder bron. De lengte bepaalt niet of je de bron moet noemen.",
+    "Koos je \"er is niets mis, want hij zegt het mondeling\"? Dan denk je dat plagiaat alleen voor geschreven tekst geldt. Mondeling gebruik van andermans woorden zonder bron is ook plagiaat. Je noemt je bron ook bij een voordracht.",
+    "Koos je \"het artikel is te oud\"? Dan denk je dat de leeftijd van het artikel telt. Het gaat om het ontbreken van de bron. Ook een oud artikel moet je noemen als je het gebruikt.",
+    "Klopt: letterlijk overgenomen zonder bron is plagiaat."
+   ],
+   "uh": "Bron noemen, ook mondeling.",
+   "ctx": "Een leerling zegt in zijn voordracht: \"Zonnepanelen zijn de toekomst.\" Die zin komt letterlijk uit een artikel, maar hij noemt het artikel niet."
+  },
+  {
+   "v": "Wat is hier het probleem?",
+   "o": [
+    "je informatie is eenzijdig",
+    "je gebruikt te veel bronnen",
+    "je noemt je bronnen te vaak",
+    "je gebruikt bronnen die te betrouwbaar zijn"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Zoek ook andere kanten, zodat je tegenargumenten kent.",
+   "uo": [
+    "Klopt: eenzijdige informatie maakt je kwetsbaar in een discussie. Je moet tegenargumenten kennen.",
+    "Koos je \"je gebruikt te veel bronnen\"? Dan denk je dat het aantal het probleem is. Je kiest alleen bronnen die je mening steunen. Het probleem is eenzijdigheid, niet het aantal.",
+    "Koos je \"je noemt je bronnen te vaak\"? Dan denk je dat bronnen noemen overdreven kan zijn. Bronnen noemen is juist goed. Het probleem is dat je andere kanten negeert.",
+    "Koos je \"je gebruikt bronnen die te betrouwbaar zijn\"? Dan denk je dat betrouwbaar slecht kan zijn. Betrouwbaarheid is juist wat je zoekt. De kwestie is dat je alleen één kant laat zien."
+   ],
+   "uh": "Ken ook de tegenkant.",
+   "ctx": "Je zoekt alleen informatie die jouw standpunt steunt en laat artikelen met andere meningen weg."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je houdt een voordracht over zonnepanelen op school. Je vindt een folder van een installatiebedrijf, een rapport van een onderzoeksinstituut en een anoniem forumbericht.",
+   "v": "Welke bron kies je als hoofdbron en waarom? Geef ook één reden waarom je een andere bron minder vertrouwt.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hoofdbron: het rapport van het onderzoeksinstituut, want de afzender is deskundig en het rapport is controleerbaar (1 punt). De folder is minder betrouwbaar omdat het bedrijf belang heeft bij verkoop, of het forumbericht omdat de afzender onbekend is (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je hebt veel informatie over het onderwerp \"slaap bij tieners\" maar maar vijf minuten spreektijd, en je publiek is groep 8.",
+   "v": "Welke twee dingen doe je om je informatie te selecteren? Leg uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ik kies wat past bij mijn doel en mijn publiek (1 punt) en laat details en moeilijke gegevens weg die groep 8 niet nodig heeft of niet begrijpt (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je leest in een bron: \"Bij het laden van de accu wordt elektrische energie omgezet in chemische energie die in de accu blijft.\"",
+   "v": "Geef een parafrase van deze zin en leg uit waarom het geen letterlijke kopie is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: \"De accu slaat de stroom op als chemische energie.\" (1 punt voor juiste betekenis). Het is eigen woorden en een eigen zinsbouw, dus geen letterlijke kopie (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zegt in zijn voordracht een zin uit een artikel, zonder het artikel te noemen.",
+   "v": "Wat is er mis? Wat had hij moeten doen?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Dit is plagiaat: andermans woorden zonder bron (1 punt). Hij had de zin als citaat moeten aanduiden en de bron moeten noemen, of de informatie in eigen woorden moeten zeggen met bronvermelding (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling zoekt voor een debat over een schoolreis alleen informatie die zijn standpunt steunt.",
+   "v": "Waarom is dat riskant voor het debat en wat doet hij beter?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij kent de tegenargumenten niet en kan er in het debat niet op reageren (1 punt). Beter: ook informatie zoeken die tegen zijn standpunt ingaat en daar weerleggingen bij voorbereiden (1 punt)."
+  }
+ ]
+}
