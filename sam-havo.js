@@ -1989,5 +1989,45 @@ Object.assign(SAM_RICH,{
 <div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Formeel en informeel register naast elkaar met voorbeelden van aanhef en woordkeus"><g font-family="inherit"><rect x="4" y="4" width="312" height="76" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Formeel: directeur, sollicitatie</text><text x="12" y="42" font-size="11" fill="var(--dk)">"Geachte heer Bakker,"</text><text x="12" y="58" font-size="11" fill="var(--dk)">Volledige zinnen, geen straattaal</text><text x="12" y="72" font-size="11" fill="var(--dk)">of afkortingen</text>
 <rect x="4" y="88" width="312" height="76" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="106" font-size="12" font-weight="700" fill="var(--mu)">Informeel: schoolkrant</text><text x="12" y="126" font-size="11" fill="var(--mu)">"Lekker bezig, jongens!"</text><text x="12" y="142" font-size="11" fill="var(--mu)">Los taalgebruik past bij</text><text x="12" y="156" font-size="11" fill="var(--mu)">lezers die je goed kent</text></g></svg><div class="sam-figcap">Formeel register voor een directeur of sollicitatie, informeel (stippellijn) alleen voor lezers die je goed kent.</div></div>
 <div class="sam-tip"><strong>Tip:</strong> lees de opdracht eerst op drie punten: wat is het doel, wie is de lezer en welk register past? Schrijf die drie dingen boven je concept.</div>
+</div>`,
+'havo_nl_C3':`<div class="sam-intro">Een <strong>betoog</strong> overtuigt de lezer van een <strong>stelling</strong>. Je onderbouwt haar met <strong>argumenten</strong>, gaat in op een <strong>tegenwerping</strong> en sluit af met een <strong>conclusie</strong>. In dit leerdoel leer je elk onderdeel goed maken en de samenhang zichtbaar houden.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Betoog</td><td>Verdedigt een stelling met argumenten.</td></tr>
+<tr><td>Stelling</td><td>Een standpunt waarover je kunt twisten.</td></tr>
+<tr><td>Argument, onderbouwing</td><td>Een reden, met voorbeeld of bewijs.</td></tr>
+<tr><td>Tegenwerping</td><td>Een bezwaar tegen je stelling.</td></tr>
+<tr><td>Weerlegging</td><td>Inhoudelijk antwoord op dat bezwaar.</td></tr>
+<tr><td>Conclusie, slot</td><td>De slotsom aan het einde.</td></tr>
+<tr><td>Signaalwoord</td><td>Maakt de opbouw zichtbaar.</td></tr>
+<tr><td>Persoonlijke aanval</td><td>De persoon aanvallen in plaats van het argument.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Een goede stelling en sterke argumenten</div>
+<p>Een goede <strong>stelling</strong> is een standpunt waarover je van mening kunt verschillen, bijvoorbeeld "Er moet een verbod komen op energiedrankjes voor kinderen onder de zestien". Een feit ("energiedrankjes bevatten cafeïne") is geen stelling, een vraag ook niet, en een zin die alleen twee meningen beschrijft evenmin. Een <strong>argument</strong> geeft een reden voor de stelling en heeft een <strong>onderbouwing</strong>: een feit, een cijfer of een concreet <strong>voorbeeld</strong>. "Het is gewoon beter" is geen argument, want er staat geen reden in. De stelling zet je in de <strong>inleiding</strong>, zodat de lezer weet wat je verdedigt.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Wat een stelling is en wat niet: standpunt is een stelling, feit en vraag zijn dat niet"><g font-family="inherit"><rect x="4" y="4" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="21" font-size="12" font-weight="700" fill="#fff">Stelling: een standpunt</text><text x="12" y="37" font-size="11" fill="#fff">"Er moet een verbod komen op</text><text x="12" y="50" font-size="11" fill="#fff">energiedrankjes voor kinderen."</text>
+<rect x="4" y="62" width="312" height="56" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="79" font-size="12" font-weight="700" fill="var(--mu)">Geen stelling: een feit</text><text x="12" y="95" font-size="11" fill="var(--mu)">"Energiedrankjes bevatten cafeïne."</text><text x="12" y="109" font-size="11" fill="var(--mu)">Over een feit twist je niet.</text>
+<rect x="4" y="124" width="312" height="58" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="141" font-size="12" font-weight="700" fill="var(--mu)">Geen stelling: een vraag</text><text x="12" y="157" font-size="11" fill="var(--mu)">"Wat zijn de gevolgen van</text><text x="12" y="171" font-size="11" fill="var(--mu)">energiedrankjes voor jongeren?"</text></g></svg><div class="sam-figcap">Een stelling is een standpunt; een feit en een vraag (stippellijn) zijn dat niet.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een argument heeft een reden en een bewijs of voorbeeld; de stelling staat in de inleiding.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Tegenwerping en weerlegging</div>
+<p>Een sterk betoog noemt de belangrijkste <strong>tegenwerping</strong> en <strong>weerlegt</strong> die inhoudelijk. Dat kan met een signaal als "natuurlijk zal iemand zeggen dat ...". Daarna geef je een alternatief, een tegenvoorbeeld of een reden waarom het bezwaar weinig weegt. Alleen ontkennen ("dat is niet waar") of de <strong>persoonlijke aanval</strong> ("jij begrijpt er niets van") is geen weerlegging. Een betoog zonder tegenwerping is zwakker: de lezer bedenkt het bezwaar zelf.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 178" role="img" aria-label="Een weerlegging in drie stappen: noem de tegenwerping, erken wat klopt, geef een oplossing of tegenargument"><g font-family="inherit"><rect x="4" y="4" width="312" height="46" rx="6" fill="var(--orl)"/><text x="12" y="21" font-size="12" font-weight="700" fill="var(--dk)">1  Tegenwerping noemen</text><text x="12" y="38" font-size="11" fill="var(--dk)">"Leerlingen gebruiken hun telefoon voor opdrachten."</text>
+<rect x="4" y="54" width="312" height="46" rx="6" fill="var(--orl)"/><text x="12" y="71" font-size="12" font-weight="700" fill="var(--dk)">2  Erkennen wat klopt</text><text x="12" y="88" font-size="11" fill="var(--dk)">"Dat is voor sommige opdrachten zo."</text>
+<rect x="4" y="104" width="312" height="70" rx="6" fill="var(--or)"/><text x="12" y="121" font-size="12" font-weight="700" fill="#fff">3  Weerleggen met een oplossing</text><text x="12" y="138" font-size="11" fill="#fff">"De school kan laptops of tablets geven,</text><text x="12" y="153" font-size="11" fill="#fff">dus de telefoon is niet nodig."</text></g></svg><div class="sam-figcap">Een weerlegging in drie stappen: noem de tegenwerping, erken wat klopt en geef dan een inhoudelijke oplossing of tegenargument.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Opbouw, signaalwoorden en slot</div>
+<p>Een betoog heeft een vaste opbouw: <strong>inleiding</strong> met stelling, argumenten, tegenwerping met weerlegging en een <strong>slot</strong> met conclusie. <strong>Signaalwoorden</strong> maken die opbouw zichtbaar: "ten eerste" en "ten tweede" voor argumenten, "natuurlijk zal iemand zeggen dat" voor een tegenwerping en "dus" of "kortom" voor de conclusie. Zet je sterkste argument op een opvallende plek, vooraan of als afsluiter. Het slot herhaalt of bevestigt de stelling; een zin als "dit waren mijn argumenten" is geen conclusie.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Opbouw van een betoog: inleiding met stelling, argumenten, tegenwerping met weerlegging, slot met conclusie"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--or)"/><text x="12" y="27" font-size="12" font-weight="700" fill="#fff">1  Inleiding met stelling</text>
+<path d="M160 40 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Argumenten met onderbouwing</text>
+<path d="M160 82 V88" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">3  Tegenwerping en weerlegging</text>
+<path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="130" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="150" font-size="12" font-weight="700" fill="#fff">4  Slot met conclusie</text><text x="12" y="168" font-size="11" fill="#fff">"Dus: ..."</text></g></svg><div class="sam-figcap">De opbouw van een betoog: inleiding met stelling, argumenten met onderbouwing, tegenwerping met weerlegging en een slot met conclusie.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> controleer vlak voor het inleveren drie dingen: staat de stelling vooraan, heeft elk argument een bewijs of voorbeeld en eindigt het betoog met een echte conclusie?</div>
 </div>`
 });

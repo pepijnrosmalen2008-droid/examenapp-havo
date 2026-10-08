@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **15 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1, nl.C2). Werk dit getal bij bij elke afronding.
+> Voortgang: **16 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1, nl.C3). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -47,7 +47,7 @@
 - [ ] **HAVO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid (v1 op domeinniveau gedaan, nu per leerdoel naar v2)
   - [x] C1 · nl.C.1 Informatie verzamelen, verwerken en verantwoorden · 26 vragen (R1-R3), 12 begrippen, 3 schema's (bronbeoordeling, citaat tegenover parafrase, bronvermelding), geen clip
   - [x] C2 · nl.C.2 Tekstsoort, doel en lezersgroep afstemmen · 26 vragen (R1-R3), 12 begrippen, 3 schema's (drie tekstsoorten, lezersgroepen, register), geen clip
-  - [ ] C3 · nl.C.3 Een betoog schrijven
+  - [x] C3 · nl.C.3 Een betoog schrijven · 26 vragen (R1-R3), 12 begrippen, 3 schema's (stelling tegenover feit en vraag, weerlegging in stappen, opbouw), geen clip
   - [ ] C4 · nl.C.4 Tekst en alinea opbouwen
   - [ ] C5 · nl.C.5 Schrijftaal, stijl en correctheid
   - [ ] C6 · nl.C.6 Een tekst reviseren op commentaar

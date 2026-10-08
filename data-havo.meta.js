@@ -377,6 +377,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C3",
+      "lo": "nl.C.3",
+      "gs": 2,
+      "naam": "Een betoog schrijven",
+      "beschrijving": "Je schrijft een betoog met een duidelijke stelling, onderbouwde argumenten, een reactie op een tegenwerping en een conclusie.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Een stelling formuleren",
+       "Argumenten en onderbouwing",
+       "Tegenwerping en weerlegging",
+       "Opbouw van een betoog",
+       "Signaalwoorden",
+       "Conclusie en slot"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

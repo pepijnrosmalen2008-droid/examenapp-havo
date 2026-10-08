@@ -1,0 +1,658 @@
+{
+ "id": "C3",
+ "lo": "nl.C.3",
+ "gs": 2,
+ "naam": "Een betoog schrijven",
+ "beschrijving": "Je schrijft een betoog met een duidelijke stelling, onderbouwde argumenten, een reactie op een tegenwerping en een conclusie.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Een stelling formuleren",
+  "Argumenten en onderbouwing",
+  "Tegenwerping en weerlegging",
+  "Opbouw van een betoog",
+  "Signaalwoorden",
+  "Conclusie en slot"
+ ],
+ "sam": "Een betoog begint met een duidelijke stelling (een standpunt, geen feit of vraag), onderbouwt die met argumenten (reden plus voorbeeld of bewijs), noemt de belangrijkste tegenwerping en weerlegt die inhoudelijk, en eindigt met een conclusie. Signaalwoorden als ten eerste, natuurlijk zal iemand zeggen dat en dus maken de opbouw zichtbaar.",
+ "begrippen": [
+  {
+   "t": "Betoog",
+   "d": "Een tekst die een stelling met argumenten verdedigt."
+  },
+  {
+   "t": "Stelling",
+   "d": "Het standpunt dat je verdedigt, waarover je van mening kunt verschillen."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden die de stelling onderbouwt."
+  },
+  {
+   "t": "Onderbouwing",
+   "d": "Het bewijs of voorbeeld dat een argument sterker maakt."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een concreet geval dat een argument ondersteunt."
+  },
+  {
+   "t": "Tegenwerping",
+   "d": "Een bezwaar tegen je stelling."
+  },
+  {
+   "t": "Weerlegging",
+   "d": "De inhoudelijke reactie op een tegenwerping."
+  },
+  {
+   "t": "Conclusie",
+   "d": "De slotsom die volgt uit je argumenten."
+  },
+  {
+   "t": "Inleiding",
+   "d": "Het begin van een betoog, met de stelling."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat de opbouw of het verband aangeeft."
+  },
+  {
+   "t": "Persoonlijke aanval",
+   "d": "De persoon aanvallen in plaats van het argument."
+  },
+  {
+   "t": "Slot",
+   "d": "Het einde van een betoog met de conclusie."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin is een goede stelling voor een betoog?",
+   "o": [
+    "Energiedrankjes bevatten cafeïne, taurine en suiker in wisselende hoeveelheden.",
+    "Er moet een verbod komen op energiedrankjes voor kinderen onder de zestien.",
+    "Wat zijn de gevolgen van het drinken van energiedrankjes voor jongeren?",
+    "Dit betoog gaat over energiedrankjes, hun gevolgen en wat we ermee moeten."
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een stelling is een standpunt waarover je van mening kunt verschillen.",
+   "uo": [
+    "Koos je \"Energiedrankjes bevatten cafeïne, taurine en suiker...\"? Dan denk je dat een feit een stelling is. Over een feit kun je niet van mening verschillen, dus er valt niets te betogen.",
+    "Klopt: de zin is een standpunt waar je het mee eens of oneens kunt zijn en dat je kunt onderbouwen.",
+    "Koos je \"Wat zijn de gevolgen van het drinken van...\"? Dan denk je dat een vraag een stelling is. Een vraag neemt geen standpunt in, terwijl een betoog juist een standpunt verdedigt.",
+    "Koos je \"Dit betoog gaat over energiedrankjes, hun gevolgen...\"? Dan denk je dat een aankondiging van het onderwerp een stelling is. Zo'n zin zegt niet wat jij vindt, dus de lezer weet niet welk standpunt je verdedigt."
+   ],
+   "uh": "Standpunt, geen feit of vraag."
+  },
+  {
+   "v": "Waarom is \"De zon schijnt vandaag\" geen goede stelling voor een betoog?",
+   "o": [
+    "omdat de zin te kort is voor een betoog",
+    "omdat de zin over het weer gaat en dat is geen serieus onderwerp",
+    "omdat de zin niet met een hoofdletter begint",
+    "het is een feit en daar valt niets over te betogen"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Een stelling bevat een standpunt, geen feit.",
+   "uo": [
+    "Koos je \"omdat de zin te kort is voor een betoog\"? Dan denk je dat lengte het probleem is. Ook een korte zin kan een goede stelling zijn; het probleem is dat er geen standpunt in zit.",
+    "Koos je \"omdat de zin over het weer gaat en dat is geen...\"? Dan denk je dat het onderwerp het probleem is. Elk onderwerp kan, mits er een standpunt in zit; hier ontbreekt dat.",
+    "Koos je \"omdat de zin niet met een hoofdletter begint\"? Dan denk je dat de spelling het probleem is. De zin is gewoon correct geschreven; het ontbreken van een standpunt maakt hem ongeschikt.",
+    "Klopt: een feit kun je controleren, maar je kunt er niet van mening over verschillen."
+   ],
+   "uh": "Mening, geen feit."
+  },
+  {
+   "v": "Waaraan moet een argument voldoen?",
+   "o": [
+    "het onderbouwt de stelling met een reden",
+    "het herhaalt de stelling in andere woorden",
+    "het vertelt iets over jezelf dat niets met het onderwerp te maken heeft",
+    "het is een vraag aan de lezer om zelf na te denken"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Een argument geeft een reden voor de stelling.",
+   "uo": [
+    "Klopt: een argument geeft een reden waarom de stelling zou moeten kloppen.",
+    "Koos je \"het herhaalt de stelling in andere woorden\"? Dan denk je dat herhalen onderbouwen is. Een herhaling geeft geen nieuwe reden, dus de stelling blijft onbewezen.",
+    "Koos je \"het vertelt iets over jezelf dat niets met het...\"? Dan denk je dat persoonlijke informatie een argument is. Een argument moet bij de stelling horen, en dit zegt niets over de stelling.",
+    "Koos je \"het is een vraag aan de lezer om zelf na te denken\"? Dan denk je dat een vraag een argument is. Een argument is een bewering met een reden, geen vraag."
+   ],
+   "uh": "Reden voor de stelling."
+  },
+  {
+   "v": "Welk argument ondersteunt deze stelling het best?",
+   "o": [
+    "Scholen beginnen nu al heel vroeg in de ochtend.",
+    "Ik ben altijd moe op maandag.",
+    "Tieners hebben een later slaapritme, dus ze zijn later op de dag alerter.",
+    "Later beginnen is gewoon beter."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Een goed argument noemt een reden die de stelling onderbouwt.",
+   "uo": [
+    "Koos je \"Scholen beginnen nu al heel vroeg in de ochtend.\"? Dan denk je dat een beschrijving van de situatie een argument is. Dit is een feit zonder verklaring, en zegt niet waarom later beginnen beter zou zijn.",
+    "Koos je \"Ik ben altijd moe op maandag.\"? Dan denk je dat een persoonlijke ervaring genoeg is. Eén ervaring is zwak en zegt niets over alle leerlingen, en het is geen reden voor de stelling.",
+    "Klopt: het argument noemt een reden die direct bij de stelling past.",
+    "Koos je \"Later beginnen is gewoon beter.\"? Dan denk je dat dit een argument is. Het herhaalt de stelling, zonder een reden te geven."
+   ],
+   "uh": "Reden, geen herhaling.",
+   "ctx": "Stelling: \"Scholen moeten later beginnen.\""
+  },
+  {
+   "v": "Welk argument is een goede onderbouwing met een concreet voorbeeld?",
+   "o": [
+    "Fietsen is leuk en gezond.",
+    "Sommige mensen vinden fietsen niet fijn.",
+    "In steden met veel fietspaden stappen meer mensen op de fiets, zoals in Utrecht.",
+    "Nederland is een mooi land met veel water."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Onderbouw een argument met een concreet voorbeeld of feit.",
+   "uo": [
+    "Koos je \"Fietsen is leuk en gezond.\"? Dan denk je dat dit een sterk argument is. De zin is te algemeen en geeft geen bewijs, dus het onderbouwt de stelling niet.",
+    "Koos je \"Sommige mensen vinden fietsen niet fijn.\"? Dan denk je dat dit een argument voor de stelling is. De zin gaat juist tegen de stelling in, dus het ondersteunt haar niet.",
+    "Klopt: een concreet voorbeeld laat zien dat de bewering klopt.",
+    "Koos je \"Nederland is een mooi land met veel water.\"? Dan denk je dat dit bij de stelling past. De zin gaat over iets anders, en geeft geen reden voor meer fietsinfrastructuur."
+   ],
+   "uh": "Voorbeeld maakt het sterk.",
+   "ctx": "Stelling: \"Er moet meer fietsinfrastructuur komen.\""
+  },
+  {
+   "v": "Wat is een tegenwerping?",
+   "o": [
+    "een bezwaar dat iemand tegen je stelling inbrengt",
+    "een argument dat je stelling steunt en haar sterker maakt voor de lezer",
+    "de conclusie van je betoog, die aan het einde de stelling bevestigt",
+    "de titel van je betoog"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Een tegenwerping is een bezwaar tegen je stelling.",
+   "uo": [
+    "Klopt: een tegenwerping is een bezwaar van een lezer tegen je stelling.",
+    "Koos je \"een argument dat je stelling steunt en haar sterker...\"? Dan denk je dat een tegenwerping je helpt. Zo'n zin steunt je stelling, terwijl een tegenwerping er tegenin gaat.",
+    "Koos je \"de conclusie van je betoog, die aan het einde de...\"? Dan denk je dat de tegenwerping aan het einde komt. De conclusie is jouw slotstelling; een tegenwerping komt van de andere kant.",
+    "Koos je \"de titel van je betoog\"? Dan denk je dat dit de naam van je tekst is. De titel noemt het onderwerp, terwijl een tegenwerping een bezwaar is."
+   ],
+   "uh": "Bezwaar van de ander."
+  },
+  {
+   "v": "Welke reactie is een goede weerlegging?",
+   "o": [
+    "Dat is niet waar, want niemand gebruikt zijn telefoon voor opdrachten.",
+    "Jij begrijpt er niets van, want je zit zelf de hele dag op je telefoon.",
+    "Mijn stelling klopt gewoon, dus je hebt ongelijk.",
+    "Voor opdrachten kan de school laptops of schooltablets aanbieden, zodat de telefoon niet nodig is."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Weerleg een tegenwerping door er inhoudelijk op in te gaan.",
+   "uo": [
+    "Koos je \"Dat is niet waar, want niemand gebruikt zijn...\"? Dan denk je dat ontkennen een weerlegging is. Een bewering zonder bewijs overtuigt niet, en de tegenwerping is zeker voor sommige leerlingen waar.",
+    "Koos je \"Jij begrijpt er niets van, want je zit zelf de hele...\"? Dan denk je dat de persoon aanvallen helpt. Dat is een persoonlijke aanval en geen weerlegging, dus het argument blijft staan.",
+    "Koos je \"Mijn stelling klopt gewoon, dus je hebt ongelijk.\"? Dan denk je dat herhalen een reactie is. Je herhaalt je stelling, zonder in te gaan op het bezwaar.",
+    "Klopt: de reactie neemt het bezwaar serieus en geeft een alternatief."
+   ],
+   "uh": "Reageer op het bezwaar.",
+   "ctx": "Stelling: \"Mobiele telefoons moeten in de les verboden zijn.\" Een mogelijke tegenwerping: \"Leerlingen gebruiken hun telefoon ook voor opdrachten.\""
+  },
+  {
+   "v": "Wat kan hij verbeteren?",
+   "o": [
+    "de tegenwerping verzwijgen, zodat niemand het bezwaar bedenkt",
+    "de tegenwerping noemen en weerleggen",
+    "nog meer argumenten noemen, zonder op het bezwaar in te gaan",
+    "de stelling veranderen in een vraag, zodat niemand bezwaar maakt"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Noem de belangrijkste tegenwerping en weerleg die.",
+   "uo": [
+    "Koos je \"de tegenwerping verzwijgen, zodat niemand het...\"? Dan denk je dat negeren verstandig is. Lezers bedenken het bezwaar zelf, dus een betoog zonder weerlegging is minder overtuigend.",
+    "Klopt: een sterk betoog noemt de belangrijkste tegenwerping en weerlegt die.",
+    "Koos je \"nog meer argumenten noemen, zonder op het bezwaar...\"? Dan denk je dat meer argumenten het bezwaar oplossen. Het bezwaar blijft dan staan, dus je moet erop ingaan.",
+    "Koos je \"de stelling veranderen in een vraag, zodat niemand...\"? Dan denk je dat een vraag het bezwaar wegneemt. Een vraag is geen stelling en dan is er geen betoog meer, dus dit lost het probleem niet op."
+   ],
+   "uh": "Tegenwerping weerleggen.",
+   "ctx": "Een leerling schrijft een betoog voor een schooluniform. Hij noemt drie argumenten maar negeert dat sommige leerlingen een uniform beperkend vinden."
+  },
+  {
+   "v": "Uit welke delen bestaat een betoog meestal?",
+   "o": [
+    "een verhaal met een begin, een spannend midden en een einde",
+    "alleen een lijst met feiten zonder samenhang",
+    "een reeks vragen zonder antwoorden",
+    "inleiding met stelling, argumenten en een slot met conclusie"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Een betoog heeft een inleiding met stelling, argumenten en een conclusie.",
+   "uo": [
+    "Koos je \"een verhaal met een begin, een spannend midden en...\"? Dan denk je dat een betoog een verhaal is. Een betoog verdedigt een standpunt, en heeft een andere opbouw.",
+    "Koos je \"alleen een lijst met feiten zonder samenhang\"? Dan denk je dat feiten genoeg zijn. Een betoog verbindt de feiten aan een stelling, en heeft een duidelijke opbouw.",
+    "Koos je \"een reeks vragen zonder antwoorden\"? Dan denk je dat vragen een betoog vormen. Een betoog geeft antwoord op een vraag; het begint niet met losse vragen.",
+    "Klopt: een betoog begint met de stelling, onderbouwt die met argumenten en sluit af met een conclusie."
+   ],
+   "uh": "Stelling, argumenten, conclusie."
+  },
+  {
+   "v": "Welke plek past het best voor de stelling in een betoog?",
+   "o": [
+    "pas helemaal aan het einde, als verrassing",
+    "in de inleiding, zodat de lezer weet wat je verdedigt",
+    "in het midden, tussen twee argumenten in",
+    "nergens, want een betoog hoeft geen stelling te hebben"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Zet de stelling in de inleiding.",
+   "uo": [
+    "Koos je \"pas helemaal aan het einde, als verrassing\"? Dan denk je dat uitstel de spanning verhoogt. In een betoog wil de lezer weten waarover het gaat, dus de stelling hoort vooraan.",
+    "Klopt: de stelling hoort vooraan, zodat de lezer het standpunt kent voor hij de argumenten leest.",
+    "Koos je \"in het midden, tussen twee argumenten in\"? Dan denk je dat de plek er niet toe doet. Een stelling in het midden leidt tot verwarring, want de lezer weet dan niet wat bewezen moet worden.",
+    "Koos je \"nergens, want een betoog hoeft geen stelling te...\"? Dan denk je dat een stelling optioneel is. Zonder stelling is er niets om te onderbouwen, dus het is een essentieel onderdeel."
+   ],
+   "uh": "Stelling vooraan."
+  },
+  {
+   "v": "Welk element ontbreekt in de inleiding?",
+   "o": [
+    "een grappige zin om de aandacht te trekken",
+    "een tegenwerping tegen de stelling",
+    "een duidelijk geformuleerde eigen stelling",
+    "een lijst met bronnen waarop de schrijver zich in de tekst beroept"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Formuleer je eigen stelling duidelijk in de inleiding.",
+   "uo": [
+    "Koos je \"een grappige zin om de aandacht te trekken\"? Dan denk je dat humor verplicht is. Een betoog kan zonder grap, maar niet zonder duidelijke stelling.",
+    "Koos je \"een tegenwerping tegen de stelling\"? Dan denk je dat een tegenwerping in de inleiding hoort. Die komt later; de inleiding heeft een duidelijke stelling nodig.",
+    "Klopt: de schrijver zegt waar hij het niet mee eens is, maar niet wat zijn eigen stelling is.",
+    "Koos je \"een lijst met bronnen waarop de schrijver zich in...\"? Dan denk je dat bronnen in de inleiding horen. Bronnen komen bij het onderbouwen; de inleiding noemt de stelling."
+   ],
+   "uh": "Eigen stelling zeggen.",
+   "ctx": "Een leerling schrijft: \"Ik ben het niet eens met de stelling dat huiswerk nodig is.\" Daarna volgen drie argumenten."
+  },
+  {
+   "v": "Waarom is dit een zwak slot?",
+   "o": [
+    "er is geen conclusie die de stelling herhaalt of afrondt",
+    "het slot is te kort om af te ronden",
+    "het slot noemt een nieuw argument dat nog niet eerder aan bod kwam",
+    "het slot is te enthousiast over de stelling"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Een sterk slot bevestigt de stelling en trekt een conclusie.",
+   "uo": [
+    "Klopt: een slot moet de stelling bevestigen of de conclusie trekken, niet alleen melden dat het klaar is.",
+    "Koos je \"het slot is te kort om af te ronden\"? Dan denk je dat de lengte het probleem is. Een kort slot kan prima, maar het moet een conclusie bevatten.",
+    "Koos je \"het slot noemt een nieuw argument dat nog niet...\"? Dan denk je dat het nieuw argument het probleem is. In dit slot staat geen nieuw argument; het probleem is dat er geen conclusie staat.",
+    "Koos je \"het slot is te enthousiast over de stelling\"? Dan denk je dat enthousiasme het probleem is. Het slot is neutraal; het probleem is dat de stelling niet wordt bevestigd."
+   ],
+   "uh": "Conclusie trekken.",
+   "ctx": "Een betoog over het afschaffen van cijfers noemt drie argumenten, weerlegt één tegenwerping en eindigt met: \"Dit waren mijn argumenten.\""
+  },
+  {
+   "v": "Welk signaalwoord leidt een conclusie in?",
+   "o": [
+    "dus",
+    "bijvoorbeeld",
+    "maar",
+    "omdat"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Een conclusie leid je in met een woord als dus of daarom.",
+   "uo": [
+    "Klopt: \"dus\" trekt een conclusie uit wat eerder is gezegd.",
+    "Koos je \"bijvoorbeeld\"? Dan denk je dat dit een conclusie aankondigt. \"Bijvoorbeeld\" introduceert een voorbeeld, geen slotsom.",
+    "Koos je \"maar\"? Dan denk je dat dit een conclusie inleidt. \"Maar\" zet iets tegenover het voorgaande, en trekt geen slotsom.",
+    "Koos je \"omdat\"? Dan denk je dat dit een conclusie aankondigt. \"Omdat\" geeft een reden, geen gevolgtrekking."
+   ],
+   "uh": "Dus = conclusie."
+  },
+  {
+   "v": "Welk signaalwoord past bij het noemen van een tegenwerping?",
+   "o": [
+    "ten eerste, ten tweede en ten derde",
+    "kortom, samenvattend gezegd",
+    "natuurlijk zal iemand zeggen dat",
+    "bovendien"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Noem een tegenwerping met een signaal als \"natuurlijk zal iemand zeggen dat\".",
+   "uo": [
+    "Koos je \"ten eerste, ten tweede en ten derde\"? Dan denk je dat dit een tegenwerping aankondigt. \"Ten eerste\" opent een rij argumenten, geen bezwaar.",
+    "Koos je \"kortom, samenvattend gezegd\"? Dan denk je dat dit een bezwaar aankondigt. \"Kortom\" rondt af, dus het hoort bij de conclusie.",
+    "Klopt: zo geef je aan dat een bezwaar volgt, dat je daarna weerlegt.",
+    "Koos je \"bovendien\"? Dan denk je dat dit een bezwaar inleidt. \"Bovendien\" voegt een extra argument toe, en gaat dus dezelfde kant op."
+   ],
+   "uh": "Signaal voor bezwaar."
+  },
+  {
+   "v": "Welke stelling is bruikbaarder voor een betoog en waarom?",
+   "o": [
+    "A, want ze is korter en dus makkelijker te onderbouwen",
+    "B, want ze is concreet en duidelijk een standpunt over wat er moet gebeuren",
+    "geen van beide, want stellingen over school mogen niet in betogen",
+    "allebei even goed, want ze gaan over hetzelfde onderwerp"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Een bruikbare stelling is concreet en duidelijk een standpunt.",
+   "uo": [
+    "Koos je \"A, want ze is korter en dus makkelijker te...\"? Dan denk je dat kort beter is. A is vaag: nuttig voor wie en waarvoor? een stelling moet concreet genoeg zijn om te onderbouwen.",
+    "Klopt: \"moet worden afgeschaft\" is een duidelijk standpunt dat je kunt onderbouwen.",
+    "Koos je \"geen van beide, want stellingen over school mogen...\"? Dan denk je dat het onderwerp verboden is. Elke kwestie waarover je het oneens kunt zijn is geschikt; schoolzaken zijn dat zeker.",
+    "Koos je \"allebei even goed, want ze gaan over hetzelfde...\"? Dan denk je dat het onderwerp de kwaliteit bepaalt. Concreetheid en duidelijkheid maken het verschil, en dat scoort B beter."
+   ],
+   "uh": "Concreet standpunt.",
+   "ctx": "Stelling A: \"Huiswerk is nuttig.\" Stelling B: \"Het huiswerk moet worden afgeschaft.\""
+  },
+  {
+   "v": "Waarom is dit een zwakke stelling voor een betoog?",
+   "o": [
+    "de zin bevat het woord \"sommigen\", wat in een betoog niet mag",
+    "de zin is te lang voor een stelling",
+    "de zin noemt twee kanten, terwijl een betoog drie kanten moet noemen",
+    "er wordt geen eigen standpunt ingenomen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Een betoogstelling neemt zelf stelling.",
+   "uo": [
+    "Koos je \"de zin bevat het woord sommigen, wat in een betoog...\"? Dan denk je dat een woord het probleem is. Het gaat niet om dat woord, maar om het ontbreken van een eigen standpunt.",
+    "Koos je \"de zin is te lang voor een stelling\"? Dan denk je dat lengte het probleem is. De zin is niet lang; het probleem is dat er geen keuze in zit.",
+    "Koos je \"de zin noemt twee kanten, terwijl een betoog drie...\"? Dan denk je dat een betoog een aantal kanten noemt. Een betoog kiest één kant; de zin kiest er geen.",
+    "Klopt: de zin beschrijft verschillende meningen, maar de schrijver kiest niet."
+   ],
+   "uh": "Kies een kant.",
+   "ctx": "Een leerling kiest de stelling: \"Sommigen vinden energiedrankjes ongezond, anderen niet.\""
+  },
+  {
+   "v": "Wat is er mis met dit argument?",
+   "o": [
+    "het argument is te lang",
+    "het geeft geen reden of bewijs",
+    "het argument noemt een tegenwerping",
+    "het argument is niet in de eerste persoon geschreven"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Een argument heeft een reden en bewijs nodig.",
+   "uo": [
+    "Koos je \"het argument is te lang\"? Dan denk je dat de lengte het probleem is. De zin is juist erg kort; het probleem is de ontbrekende reden.",
+    "Klopt: \"heel goed\" is een bewering zonder onderbouwing.",
+    "Koos je \"het argument noemt een tegenwerping\"? Dan denk je dat de zin een bezwaar bevat. Hij bevat helemaal geen reden; dat is het probleem.",
+    "Koos je \"het argument is niet in de eerste persoon geschreven\"? Dan denk je dat de persoonsvorm telt. De vorm doet er niet toe; de onderbouwing ontbreekt."
+   ],
+   "uh": "Reden en bewijs.",
+   "ctx": "Stelling: \"Studeren in het buitenland moet worden gestimuleerd.\" Een leerling schrijft als argument: \"Het is gewoon heel goed.\""
+  },
+  {
+   "v": "Welke onderdelen van een sterk argument herken je?",
+   "o": [
+    "een reden en een concreet bewijs",
+    "alleen een mening zonder bewijs",
+    "een tegenwerping en een weerlegging",
+    "een conclusie die de stelling herhaalt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Een sterk argument heeft een reden en een bewijs.",
+   "uo": [
+    "Klopt: de reden is dat bomen de temperatuur verlagen en het bewijs zijn de metingen.",
+    "Koos je \"alleen een mening zonder bewijs\"? Dan denk je dat er geen bewijs staat. Er staat een verwijzing naar metingen, dus het is meer dan een mening.",
+    "Koos je \"een tegenwerping en een weerlegging\"? Dan denk je dat er een bezwaar in zit. Het argument steunt de stelling, en er wordt geen bezwaar genoemd.",
+    "Koos je \"een conclusie die de stelling herhaalt\"? Dan denk je dat het een slotzin is. Het is een argument midden in het betoog, geen conclusie."
+   ],
+   "uh": "Reden + bewijs.",
+   "ctx": "Stelling: \"Er moet meer groen in steden komen.\" Argument: \"Bomen verlagen de temperatuur in hete zomers, zoals metingen in Amsterdam laten zien.\""
+  },
+  {
+   "v": "Wat is hier mis met de reactie?",
+   "o": [
+    "hij noemt een feit dat niet klopt",
+    "hij is te beleefd tegen jou",
+    "hij stelt een open vraag",
+    "hij valt de persoon aan in plaats van het argument"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Weerleg het argument, niet de persoon.",
+   "uo": [
+    "Koos je \"hij noemt een feit dat niet klopt\"? Dan denk je dat het om een feit gaat. De opmerking over vlees eten kan best kloppen, maar het zegt niets over de argumenten.",
+    "Koos je \"hij is te beleefd tegen jou\"? Dan denk je dat de toon het probleem is. De opmerking is juist onbeleefd, en het echte probleem is dat hij de persoon aanvalt.",
+    "Koos je \"hij stelt een open vraag\"? Dan denk je dat er een vraag staat. Er staat een oordeel over jou, geen vraag.",
+    "Klopt: dit is een persoonlijke aanval en gaat niet in op de argumenten."
+   ],
+   "uh": "Argument, niet persoon.",
+   "ctx": "Een tegenstander zegt: \"Je betoog over vegetarisch eten is niets waard, want jij eet zelf vlees.\""
+  },
+  {
+   "v": "Waarom is een betoog zonder tegenwerping vaak minder overtuigend?",
+   "o": [
+    "omdat een betoog altijd uit twee delen moet bestaan, ook als dat nergens voor dient",
+    "omdat tegenwerpingen het betoog langer maken en daardoor beter",
+    "de lezer denkt zelf aan het bezwaar en vindt je betoog onvolledig",
+    "omdat een betoog zonder tegenwerping geen stelling heeft"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Een betoog wordt sterker als je de belangrijkste tegenwerping weerlegt.",
+   "uo": [
+    "Koos je \"omdat een betoog altijd uit twee delen moet...\"? Dan denk je dat het om een vormeis gaat. De tegenwerping heeft inhoudelijk een functie, namelijk de lezer overtuigen dat je alle kanten hebt bekeken.",
+    "Koos je \"omdat tegenwerpingen het betoog langer maken en...\"? Dan denk je dat lengte beter is. Het gaat om overtuigingskracht, niet om aantal woorden.",
+    "Klopt: de lezer bedenkt het bezwaar zelf en je laat dan zien dat je het niet hebt overwogen.",
+    "Koos je \"omdat een betoog zonder tegenwerping geen stelling...\"? Dan denk je dat de stelling afhangt van een tegenwerping. De stelling staat los daarvan; het gaat om overtuigingskracht."
+   ],
+   "uh": "Weerleg het bezwaar."
+  },
+  {
+   "v": "Welke functie heeft \"dus\" in de laatste zin?",
+   "o": [
+    "het noemt een nieuw argument",
+    "het noemt een tegenwerping",
+    "het leidt de conclusie in",
+    "het geeft een voorbeeld"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "\"Dus\" leidt een conclusie in.",
+   "uo": [
+    "Koos je \"het noemt een nieuw argument\"? Dan denk je dat \"dus\" iets toevoegt. Het trekt juist een slotsom, geen nieuw argument.",
+    "Koos je \"het noemt een tegenwerping\"? Dan denk je dat \"dus\" een bezwaar aankondigt. Het woord duidt op gevolg, niet op bezwaar.",
+    "Klopt: \"dus\" laat zien dat de laatste zin volgt uit de argumenten.",
+    "Koos je \"het geeft een voorbeeld\"? Dan denk je dat \"dus\" een voorbeeld inleidt. Het trekt een conclusie, geen illustratie."
+   ],
+   "uh": "Gevolgtrekking.",
+   "ctx": "Een leerling schrijft: \"Ten eerste kost een auto veel geld. Ten tweede is hij slecht voor het milieu. Tot slot dus: auto's zijn niet nodig.\""
+  },
+  {
+   "v": "Welke volgorde is verstandig?",
+   "o": [
+    "het zwakste argument eerst, zodat de lezer niet te veel hoeft te lezen",
+    "alle argumenten door elkaar, zodat de lezer verrast wordt",
+    "de argumenten in de volgorde waarin je ze bedacht",
+    "het sterkste argument het laatst of het eerst, en niet verstopt in het midden"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Zet het sterkste argument op een opvallende plek.",
+   "uo": [
+    "Koos je \"het zwakste argument eerst, zodat de lezer niet te...\"? Dan denk je dat een zwak begin helpt. Een zwak begin kan de lezer afschrikken, dus je kiest een sterk argument vooraan of als afsluiter.",
+    "Koos je \"alle argumenten door elkaar, zodat de lezer verrast...\"? Dan denk je dat chaos overtuigt. Een betoog is juist duidelijk geordend, zodat de lezer elk argument herkent.",
+    "Koos je \"de argumenten in de volgorde waarin je ze bedacht\"? Dan denk je dat de volgorde van bedenken de beste is. De lezer is gebaat bij een doordachte volgorde; dus je kiest bewust.",
+    "Klopt: zet je sterkste argument op een opvallende plek, vooraan of als afsluiter."
+   ],
+   "uh": "Sterk argument zichtbaar.",
+   "ctx": "Een betoog begint met de stelling, noemt drie argumenten, bespreekt een tegenwerping en eindigt met een conclusie. De leerling wil de volgorde van de argumenten bepalen."
+  },
+  {
+   "v": "Welke weerlegging is sterker en waarom?",
+   "o": [
+    "B, want ze geeft een concrete oplossing voor het bezwaar",
+    "A, want ze is kort en duidelijk",
+    "A, want ze laat zien dat jij het zeker weet",
+    "geen van beide, want weerleggen mag niet in een betoog"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Een sterke weerlegging gaat inhoudelijk in op het bezwaar.",
+   "uo": [
+    "Klopt: B gaat inhoudelijk in op het bezwaar met een oplossing.",
+    "Koos je \"A, want ze is kort en duidelijk\"? Dan denk je dat kort beter is. A ontkent alleen, zonder reden, en overtuigt dus niet.",
+    "Koos je \"A, want ze laat zien dat jij het zeker weet\"? Dan denk je dat zelfvertrouwen overtuigt. Zonder inhoud blijft het een bewering, en lezers zien dat.",
+    "Koos je \"geen van beide, want weerleggen mag niet in een...\"? Dan denk je dat weerleggen verboden is. Het hoort er juist bij, en maakt je betoog sterker."
+   ],
+   "uh": "Inhoud boven ontkennen.",
+   "ctx": "Stelling: \"Er moet een verplichte maatschappelijke stage komen.\" Tegenwerping: \"Leerlingen hebben al te weinig tijd.\" Weerlegging A: \"Dat is gewoon niet waar.\" Weerlegging B: \"De stage kan in de lestijd worden ingeroosterd, bijvoorbeeld één dag per jaar.\""
+  },
+  {
+   "v": "Welke verbetering is het belangrijkst?",
+   "o": [
+    "een derde argument toevoegen en verder alles laten staan",
+    "de stelling vooraan zetten en een conclusie toevoegen",
+    "de tegenwerping verwijderen, want die verwart de lezer",
+    "het betoog inkorten tot twee zinnen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Een betoog heeft stelling vooraan en een conclusie aan het einde.",
+   "uo": [
+    "Koos je \"een derde argument toevoegen en verder alles laten...\"? Dan denk je dat een extra argument het probleem oplost. De opbouw blijft rommelig, zonder stelling vooraan en zonder slot.",
+    "Klopt: een betoog begint met de stelling en eindigt met een conclusie.",
+    "Koos je \"de tegenwerping verwijderen, want die verwart de...\"? Dan denk je dat een tegenwerping verwart. Een weerlegde tegenwerping sterkt het betoog; de opbouw is het probleem.",
+    "Koos je \"het betoog inkorten tot twee zinnen\"? Dan denk je dat korter beter is. Het ontbreken van structuur is het probleem, niet de lengte."
+   ],
+   "uh": "Structuur eerst.",
+   "ctx": "Een betoog heeft deze opbouw: een stelling in het midden, twee argumenten voor de stelling aan het begin, daarna een tegenwerping zonder weerlegging en geen slot."
+  },
+  {
+   "v": "Wat hoort in de conclusie van een betoog?",
+   "o": [
+    "een nieuw argument dat de lezer nog niet kende en dat het betoog ineens verandert",
+    "een uitgebreide verontschuldiging voor het geval de lezer het er niet mee eens is",
+    "een lange samenvatting van de hele tegenwerping zonder jouw standpunt te noemen",
+    "de stelling bevestigen, gesteund door de argumenten"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "De conclusie bevestigt de stelling op grond van de argumenten.",
+   "uo": [
+    "Koos je \"een nieuw argument dat de lezer nog niet kende en...\"? Dan denk je dat het slot ruimte voor iets nieuws is. De lezer kan er dan niet meer op reageren, en het verstoort de afronding.",
+    "Koos je \"een uitgebreide verontschuldiging voor het geval de...\"? Dan denk je dat twijfel in de conclusie past. Een betoog sluit stellig af, want je hebt je argumenten al gegeven.",
+    "Koos je \"een lange samenvatting van de hele tegenwerping...\"? Dan denk je dat het slot de tegenwerping herhaalt. De tegenwerping is al weerlegd; het slot bevestigt jouw stelling.",
+    "Klopt: de conclusie rondt af door de stelling te bevestigen op grond van wat is aangevoerd."
+   ],
+   "uh": "Stelling bevestigen."
+  },
+  {
+   "v": "Welke zin past het best als slot van een betoog voor een verbod op energiedrankjes?",
+   "o": [
+    "Kortom: een verbod op energiedrankjes voor kinderen is nodig.",
+    "Dit was mijn verhaal over energiedrankjes, bedankt voor het lezen van dit betoog.",
+    "Energiedrankjes bevatten veel suiker en cafeïne, en dat vinden sommigen niet erg.",
+    "Wie weet wat de toekomst brengt voor energiedrankjes en kinderen in Nederland?"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "Een slot trekt de conclusie en bevestigt de stelling.",
+   "uo": [
+    "Klopt: de zin trekt de conclusie en herhaalt de stelling.",
+    "Koos je \"Dit was mijn verhaal over energiedrankjes, bedankt...\"? Dan denk je dat een afscheid een conclusie is. De zin bevestigt de stelling niet, dus het slot mist de slotsom.",
+    "Koos je \"Energiedrankjes bevatten veel suiker en cafeïne, en...\"? Dan denk je dat een feit het slot kan zijn. Het is een losse opmerking die de stelling niet bevestigt; er is geen conclusie.",
+    "Koos je \"Wie weet wat de toekomst brengt voor...\"? Dan denk je dat een open vraag een goed slot is. Een betoog sluit af met een duidelijk standpunt, geen vraag."
+   ],
+   "uh": "Kortom + stelling."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling kiest als stelling: \"Sommigen vinden energiedrankjes ongezond, anderen niet.\"",
+   "v": "Waarom is dit geen goede stelling en hoe verbeter je haar?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er wordt geen eigen standpunt ingenomen (1 punt). Beter: \"Er moet een verbod komen op energiedrankjes voor kinderen onder de zestien\" (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Stelling: \"Er moet meer groen in steden komen.\" Argument van een leerling: \"Het is gewoon heel goed.\"",
+   "v": "Waarom is dit argument zwak en hoe maak je het sterker?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het geeft geen reden of bewijs (1 punt). Sterker: noem een reden en een voorbeeld, bijvoorbeeld dat bomen de temperatuur in hete zomers verlagen, met een concreet voorbeeld (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Stelling: \"Mobiele telefoons moeten in de les verboden zijn.\" Tegenwerping: \"Leerlingen gebruiken hun telefoon ook voor opdrachten.\"",
+   "v": "Geef een goede weerlegging.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: voor opdrachten kan de school laptops of tablets aanbieden (1 punt), zodat de telefoon niet nodig is (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling antwoordt op een tegenwerping: \"Jij begrijpt er niets van, want je zit zelf de hele dag op je telefoon.\"",
+   "v": "Welke fout maakt hij en wat had hij moeten doen?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij valt de persoon aan in plaats van het argument (1 punt). Hij had inhoudelijk op het bezwaar moeten ingaan (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een betoog eindigt met: \"Dit waren mijn argumenten.\"",
+   "v": "Waarom is dit een zwak slot en wat hoort er wel in?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er staat geen conclusie in (1 punt). Een slot bevestigt de stelling en trekt een conclusie, bijvoorbeeld met \"dus\" (1 punt)."
+  }
+ ]
+}
