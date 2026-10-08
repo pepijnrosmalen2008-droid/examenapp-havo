@@ -472,6 +472,8 @@ const _MS_ART={
   wedstrijd:'<path d="M13 6h22v10a11 11 0 0 1-22 0z" fill="var(--t1)"/><path d="M13.5 10H8.5a5.5 5.5 0 0 0 6.5 8M34.5 10h5a5.5 5.5 0 0 1-6.5 8" stroke="var(--t1)" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="21.5" y="26" width="5" height="7" fill="var(--t1)"/><rect x="13" y="32" width="22" height="9" rx="3" fill="var(--t2)"/><path d="M24 10.5l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z" fill="#fff"/>',
   groep:'<circle cx="31.5" cy="16" r="6.5" fill="var(--t2)"/><path d="M20 38a11.5 11.5 0 0 1 23 0z" fill="var(--t2)"/><circle cx="18.5" cy="18.5" r="7.5" fill="var(--t1)"/><path d="M5 41a13.5 13.5 0 0 1 27 0z" fill="var(--t1)"/>',
   winkel:'<path d="M16.5 17v-3.5a7.5 7.5 0 0 1 15 0V17" stroke="var(--t1)" stroke-width="3.4" fill="none" stroke-linecap="round"/><rect x="7" y="15" width="31" height="26" rx="6" fill="var(--t1)"/><rect x="7" y="15" width="31" height="6" rx="3" fill="#000" opacity=".1"/><circle cx="35" cy="35" r="9" fill="#f6b11c"/><circle cx="35" cy="35" r="5.8" fill="#ffd45c"/><path d="M35 31.5v7" stroke="#d98a00" stroke-width="2.4" stroke-linecap="round"/>',
+  mijnstof:'<path d="M8 6.5A3.5 3.5 0 0 1 11.5 3H33l7 7v29.5a3.5 3.5 0 0 1-3.5 3.5h-25A3.5 3.5 0 0 1 8 39.5z" fill="var(--t2)"/><path d="M33 3v5.5a1.5 1.5 0 0 0 1.5 1.5H40z" fill="var(--t1)"/><rect x="14" y="16" width="16" height="3.2" rx="1.6" fill="var(--t1)"/><rect x="14" y="22.5" width="12" height="3.2" rx="1.6" fill="var(--t1)"/><path d="M27 41l2-7.5 12.5-12.5a2.8 2.8 0 0 1 4 4L33 37.5z" fill="var(--t1)"/><path d="M29 33.5l3.5 3.5" stroke="#fff" stroke-width="1.6" opacity=".7"/>',
+  toetsen:'<rect x="6" y="9" width="36" height="32" rx="6" fill="var(--t2)"/><path d="M6 15a6 6 0 0 1 6-6h24a6 6 0 0 1 6 6v4H6z" fill="var(--t1)"/><rect x="13" y="5" width="4" height="9" rx="2" fill="var(--t1)"/><rect x="31" y="5" width="4" height="9" rx="2" fill="var(--t1)"/><text x="24" y="35.5" text-anchor="middle" font-family="var(--font-head)" font-weight="900" font-size="14" fill="var(--t1)">7</text>',
   profiel:'<circle cx="24" cy="24" r="19" fill="var(--t2)"/><circle cx="24" cy="19.5" r="7" fill="var(--t1)"/><path d="M11.5 37.5a13 13 0 0 1 25 0A18.8 18.8 0 0 1 24 43a18.8 18.8 0 0 1-12.5-5.5z" fill="var(--t1)"/>'
 };
 function _msArt(n){return '<svg viewBox="0 0 48 48" aria-hidden="true">'+(_MS_ART[n]||'')+'</svg>';}
@@ -490,16 +492,19 @@ function _msStand(){
   try{const n=(typeof herhaalDueCount==='function')?herhaalDueCount():0;st.herhalen=n>0?{t:n+' klaar',heet:1}:{t:'alles bij'};}catch(e){}
   try{const t=getCountdownTarget();if(t){const d=Math.ceil(((t.dt||new Date(t.datum))-new Date())/864e5);st.rooster={t:'nog '+d+' dagen'};}}catch(e){}
   try{st.winkel={t:getCoins()+' munten'};}catch(e){}
+  try{const m=(typeof msStand==='function')?msStand():null;if(m){st.toetsen=m.t.indexOf('toets')===0?m:{t:'met aftelklok'};st.mijnstof=m.t.indexOf('toets')===0?{t:'kaartjes en quiz'}:m;}}catch(e){}
   try{const L=ensureLeague();const d=LEAGUE_DIVISIONS[L.division];if(d)st.wedstrijd={t:d.naam};}catch(e){}
   try{const m=getMijnVakken();st.plan={t:m.length?'voor '+m.length+' vakken':'maak je plan'};}catch(e){}
   return st;
 }
 const _MS_GROEPEN=[
   ['Leren','ms-g-leer',[
+    ['mijnstof','Mijn stof',"openMijnStof('stof')",''],
     ['examens','Examens',"openExamenBieb()",'met antwoorden'],
     ['herhalen','Herhalen',"openHerhalen()",''],
     ['fouten','Foutenboek',"openFoutenboek()",'','ms-rood'],
-    ['vonk','Vraag Vonk',"openVonkChat()",'stel je vraag']]],
+    ['vonk','Vraag Vonk',"openVonkChat()",'stel je vraag'],
+    ['toetsen','Mijn toetsen',"openMijnStof('toets')",'']]],
   ['Plannen','ms-g-plan',[
     ['plan','Studieplan',"show('sc-studieplan');renderStudieplan()",''],
     ['rooster','Rooster',"show('sc-schedule');renderSchedule()",'je examens'],

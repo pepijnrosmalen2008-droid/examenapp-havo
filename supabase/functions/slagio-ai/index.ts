@@ -356,6 +356,8 @@ async function handleGenerate(p: any): Promise<Result> {
   const onderwerp = (p.onderwerp || "").toString().slice(0, 200);
   if (!onderwerp) return { status: 400, body: { error: "geen onderwerp" }, charged: false };
   const aantal = Math.max(3, Math.min(8, parseInt(p.aantal) || 5));
+  // Eigen samenvatting van de leerling: vragen alleen uit die tekst.
+  const stof = typeof p.stof === "string" ? p.stof.slice(0, 9000).trim() : "";
   const voorbeelden = Array.isArray(p.voorbeelden)
     ? p.voorbeelden.filter((x: any) => typeof x === "string" && x.trim()).slice(0, 4).map((x: string) => x.slice(0, 300))
     : [];
@@ -367,8 +369,16 @@ async function handleGenerate(p: any): Promise<Result> {
     `Je maakt heldere meerkeuzevragen precies op examenniveau: niet te makkelijk, met plausibele afleiders die veelgemaakte fouten weerspiegelen. ` +
     `Schrijf de vragen, opties en uitleg met gewone leestekens; gebruik nooit een gedachtestreepje (—). ` +
     `Je antwoordt UITSLUITEND met geldige JSON, zonder enige tekst eromheen.`;
-  const prompt =
-    `Maak ${aantal} nieuwe meerkeuzevragen over het onderwerp "${onderwerp}"${vak ? ` voor ${vak}` : ""} (${niveau}).\n` +
+  const prompt = stof
+    ? `Hieronder staat de eigen samenvatting van een leerling (${niveau}${vak ? ", " + vak : ""}), titel "${onderwerp}".\n` +
+      `Maak ${aantal} meerkeuzevragen die je ALLEEN met deze tekst kunt beantwoorden. Voeg geen feiten toe die er niet in staan. ` +
+      `Staat er iets in dat volgens de examenstof niet klopt, maak daar dan geen vraag over. ` +
+      `Elke vraag heeft 4 opties met precies één juist antwoord; de afleiders zijn begrijpelijke denkfouten. Voeg een korte uitleg (max 2 zinnen) toe die naar de tekst verwijst. ` +
+      `Schrijf in het Nederlands.\n\nSAMENVATTING VAN DE LEERLING:\n<<<\n${stof}\n>>>\n\n` +
+      `Antwoord met exact dit JSON-formaat en niets anders:\n` +
+      `{"vragen":[{"v":"vraagtekst","o":["optie A","optie B","optie C","optie D"],"c":0,"uitleg":"waarom dit juist is"}]}\n` +
+      `"c" is de index (0-3) van het juiste antwoord.`
+    : `Maak ${aantal} nieuwe meerkeuzevragen over het onderwerp "${onderwerp}"${vak ? ` voor ${vak}` : ""} (${niveau}).\n` +
     `Elke vraag heeft 4 opties met precies één juist antwoord. Voeg een korte uitleg (max 2 zinnen) toe waarom dat antwoord klopt.\n` +
     `Varieer de invalshoek en moeilijkheid. Schrijf in het Nederlands. Verwijs nooit naar een bron, tekst of afbeelding die niet is meegegeven.${vbBlok}\n\n` +
     `Antwoord met exact dit JSON-formaat en niets anders:\n` +
@@ -402,7 +412,7 @@ async function handleGenerate(p: any): Promise<Result> {
       })
       .filter((q: any) => q.o.length >= 2);
     if (!schoon.length) return { status: 502, body: { error: "geen vragen" }, charged: false };
-    return { status: 200, body: { vragen: schoon }, charged: true };
+    return { status: 200, body: stof ? { vragen: schoon, bron: "stof" } : { vragen: schoon }, charged: true };
   } catch {
     return { status: 502, body: { error: "AI onbereikbaar" }, charged: false };
   }

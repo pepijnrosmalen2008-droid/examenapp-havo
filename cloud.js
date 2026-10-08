@@ -155,12 +155,15 @@ async function aiGenereerVragen(opts){
     const tok=await _aiUserToken();
     const body={mode:'generate', vak:opts.vak||'', niveau:opts.niveau||(typeof APP_LEVEL!=='undefined'?APP_LEVEL:'havo'),
       onderwerp:opts.onderwerp||'', voorbeelden:opts.voorbeelden||[], aantal:opts.aantal||5};
+    if(opts.stof) body.stof=String(opts.stof).slice(0,9000);   // eigen samenvatting (mijnstof.js)
     const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','apikey':SUPABASE_KEY,'authorization':'Bearer '+(tok||SUPABASE_KEY)},body:JSON.stringify(body)});
     const j=await r.json().catch(()=>null);
     if(r.status===401 || (j && j.reason==='login')) return {login:true};
     if(j && (j.locked||j.limit)) return {limit:true, plus:!!(j&&j.plus)};
     if(!r.ok) return {error:true};
-    if(j && Array.isArray(j.vragen) && j.vragen.length){ if(!isPlus) _aiGradeConsume(); try{ trackEvent('ai_generate',{vak:opts.vak, onderwerp:opts.onderwerp, n:j.vragen.length, plus:isPlus}); }catch(e){} return {vragen:j.vragen}; }
+    // Met eigen stof alleen accepteren als de server bevestigt dat hij die tekst gebruikte (bron:'stof').
+    if(opts.stof && !(j && j.bron==='stof')) return {error:true, oudeServer:true};
+    if(j && Array.isArray(j.vragen) && j.vragen.length){ if(!isPlus) _aiGradeConsume(); try{ trackEvent('ai_generate',{vak:opts.vak, onderwerp:opts.onderwerp, n:j.vragen.length, plus:isPlus, stof:!!opts.stof}); }catch(e){} return {vragen:j.vragen, bron:j.bron||''}; }
     return {error:true};
   }catch(e){ return {error:true}; }
 }

@@ -6,7 +6,7 @@ let ST = {vak:null,domein:null,mode:null,vragen:[],idx:0,score:0,antwrd:[],timer
 
 // ═══════ UI HELPERS ═══════
 // ═══════ HASH ROUTING ═══════
-const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-studieplan':'studieplan','sc-calc':'rekenmachine','sc-streak':'streaks','sc-zoek':'zoek','sc-arcade':'arcade','sc-examens':'examens'};
+const _SCREEN_HASHES={'sc-info':'info','sc-schedule':'rooster','sc-studieplan':'studieplan','sc-calc':'rekenmachine','sc-streak':'streaks','sc-zoek':'zoek','sc-arcade':'arcade','sc-examens':'examens','sc-mijnstof':'mijnstof'};
 // Vak ID → URL-slug (volledige naam)
 const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',sk:'scheikunde',na:'natuurkunde',be:'bedrijfseconomie',en:'engels',ec:'economie',gs:'geschiedenis',ak:'aardrijkskunde',mw:'maatschappijwetenschappen',du:'duits',fr:'frans',la:'latijn',gr:'grieks',in:'informatica',wi:'wiskunde',na1:'natuur-scheikunde-1',na2:'natuur-scheikunde-2',ma:'maatschappijkunde',fa:'frans'};
 // Zoek de vak-id binnen één niveau op basis van de URL-slug. Nodig omdat dezelfde
@@ -49,6 +49,7 @@ function _routeFromHash(){
   // zoekscherm: bouwt de index lazy op
   if(h==='zoek'){if(window.openZoek){openZoek();return;}}
   if(h==='examens'&&typeof openExamenBieb==='function'){openExamenBieb();return;}
+  if(h==='mijnstof'&&typeof openMijnStof==='function'){openMijnStof();return;}
   if(h==='arcade'&&typeof arcadeOpen==='function'){arcadeOpen();return;}
   if(h==='kingdom'&&typeof kingdomOpen==='function'){arcadeOpen(()=>kingdomOpen());return;}
   if(h==='clash'&&typeof arcadeOpen==='function'){arcadeOpen(()=>{if(typeof clashOpen==='function')clashOpen();});return;}

@@ -95,7 +95,10 @@ function _ebStart(soort) {
 // het scherm Echte examens, maar dan voor dit vak en zonder vakkiezer.
 function vdTab(t, stil) {
   const sc = document.getElementById('sc-detail'); if (!sc) return;
-  sc.classList.toggle('vd-t-ex', t === 'ex');
+  sc.classList.toggle('vd-t-ex', t === 'ex' || t === 'mijn');
+  sc.classList.toggle('vd-t-mijn', t === 'mijn');
+  const mijn = document.getElementById('vd-mijn');
+  if (mijn) { mijn.hidden = t !== 'mijn'; if (t === 'mijn' && ST.vak && typeof msVakHtml === 'function') { mijn.innerHTML = msVakHtml(ST.vak.id); if (!stil) try { trackEvent('vak_tab', { tab: 'mijnstof', vak: ST.vak.id }); } catch (e) {} } }
   try { if (ST.vak && ST.vak.kleur) sc.style.setProperty('--vk', ST.vak.kleur); } catch (e) {}
   sc.querySelectorAll('.vd-tab').forEach(b => { const on = b.dataset.t === t; b.classList.toggle('on', on); b.setAttribute('aria-selected', on); });
   const pane = document.getElementById('vd-examens');

@@ -1046,8 +1046,10 @@
     <span class="vd-tabs-pil" aria-hidden="true"></span>
     <button role="tab" class="vd-tab on" data-t="leer" aria-selected="true" onclick="vdTab('leer')">Onderwerpen</button>
     <button role="tab" class="vd-tab" data-t="ex" aria-selected="false" onclick="vdTab('ex')">Examens</button>
+    <button role="tab" class="vd-tab" data-t="mijn" aria-selected="false" onclick="vdTab('mijn')">Mijn stof</button>
   </div>
   <div id="vd-examens" class="vd-examens" role="tabpanel" hidden></div>
+  <div id="vd-mijn" class="vd-examens vd-mijn" role="tabpanel" hidden></div>
   <!-- Leerpad hero card -->
   <div class="lp-ec" onclick="showLeerpad()" id="lp-ec">
     <div class="lp-ec-glow"></div>
@@ -1805,7 +1807,7 @@
 
 <!-- FLASHCARDS -->
 <div id="sc-flash" class="sc">
-<div class="qtb"><span class="ql">📇</span><span class="qmeta" id="fc-meta"></span><button class="qstp" onclick="show('sc-detail')">✕ Stop</button></div>
+<div class="qtb"><span class="ql">📇</span><span class="qmeta" id="fc-meta"></span><button class="qstp" onclick="fcTerug()">✕ Stop</button></div>
 <div class="qbody" style="padding-top:18px">
   <div style="text-align:center"><span class="fc-ai-badge">Slim herhalen</span></div>
   <div class="fc-header">
@@ -2190,6 +2192,12 @@
 </div>
 </div>
 
+<!-- MIJN STOF: eigen samenvattingen en toetsen (mijnstof.js) -->
+<div id="sc-mijnstof" class="sc">
+<nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
+<div class="w ms-wrap" id="ms-inhoud"></div>
+</div>
+
 <!-- FOUTENBOEK 2.0 -->
 <div id="sc-foutenboek" class="sc">
 <nav class="nav"><div class="nav-inner"><div class="logo" onclick="show('sc-home')"><img src="/icon-192.png" alt="Slagio" style="width:26px;height:26px;border-radius:7px;object-fit:cover;flex-shrink:0">Slagio</div><button class="bk" onclick="show('sc-home')">Terug</button><button class="theme-btn" onclick="toggleDark()" title="Nachtmodus" style="margin-left:auto"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></nav>
@@ -2278,6 +2286,7 @@
 <script defer src="/v4.js"></script>
 <script defer src="/zoek.js"></script>
 <script defer src="/examenbieb.js"></script>
+<script defer src="/mijnstof.js"></script>
 <script defer src="/ce-oud.js"></script>
 <script defer src="/klas.js"></script>
 <script defer src="/notif-engine.js"></script>

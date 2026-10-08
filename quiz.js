@@ -53,7 +53,7 @@ function startQ(mode){
   ST.mode=mode;
   ST.idx=0;ST.score=0;ST.antwrd=[];ST.tijdPerVraag=[];ST.combo=0;ST.xpThisRound=0;ST.flagged=new Set();ST._interShown={};
   if(!ST.isDailyChallenge)ST.isDailyChallenge=false;
-  ST.isFoutenboek=false;
+  ST.isFoutenboek=!!(ST.vak&&ST.vak.id==='mijnstof'); // eigen stof telt niet mee voor topscores
   ST.adaptive=false;
   const pool=mode==='snel'?ST.domein.sv:ST.domein.oe;
   if(mode==='snel'){
@@ -1426,7 +1426,7 @@ function stopQ(){
   }else{
     _surgeActive=false;_surgeLeft=0;_removeSurgeBadge();
     _bankQuizXP();
-    show('sc-detail');
+    show(_quizTerugScherm());
   }
 }
 function _showQuitDialog(){
@@ -1447,7 +1447,7 @@ function _showQuitDialog(){
     </div>
     ${combo>=2?`<div class="quit-combo-warn">🔥 Je verliest je ${combo}× combo als je stopt!</div>`:''}
     <div style="display:flex;gap:10px">
-      <button onclick="try{_flushQBatch();trackEvent('quiz_abandoned',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,gestopt_bij:ST.idx,totaal:ST.vragen?.length,score_zo_ver:ST.score});}catch(e){}this.closest('.quit-overlay').remove();_surgeActive=false;_surgeLeft=0;_removeSurgeBadge();_bankQuizXP();show('sc-detail')" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
+      <button onclick="try{_flushQBatch();trackEvent('quiz_abandoned',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,gestopt_bij:ST.idx,totaal:ST.vragen?.length,score_zo_ver:ST.score});}catch(e){}this.closest('.quit-overlay').remove();_surgeActive=false;_surgeLeft=0;_removeSurgeBadge();_bankQuizXP();show(_quizTerugScherm())" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
       <button onclick="this.closest('.quit-overlay').remove();if(ST.mode==='snel'&&ST.tijd>0)startTimer(ST.tijd)" style="flex:2;padding:13px;background:var(--or);border:none;border-radius:12px;font-size:15px;font-weight:900;cursor:pointer;color:#fff;font-family:var(--font)">Doorgaan 🔥</button>
     </div>
   </div>`;
@@ -1796,7 +1796,9 @@ function _qCountUp(el,target,dur){
     if(p<1)requestAnimationFrame(tick);};
   requestAnimationFrame(tick);
 }
-function retryQ(){startQ(ST.mode);}
+function retryQ(){if(ST.vak&&ST.vak.id==='mijnstof'&&typeof msOpnieuw==='function'){msOpnieuw();return;}startQ(ST.mode);}
+// Waar een quiz heen terugkeert: eigen stof naar Mijn stof, de rest naar de vakpagina.
+function _quizTerugScherm(){return (ST.vak&&ST.vak.id==='mijnstof')?'sc-mijnstof':'sc-detail';}
 function switchMode(){show('sc-qmode');}
 // ═══════ ACCOUNT-UITNODIGING + WELKOMSTCADEAU ═══════
 // Anonieme leerlingen krijgen de uitnodiging al na hun eerste afgeronde quiz

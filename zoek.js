@@ -293,6 +293,7 @@ function _zkStats(){
 // ── Ga naar: onderdelen van de app zelf vinden ("foutenboek", "cijfer berekenen",
 // "duits examen") zodat je niet hoeft te weten achter welke knop iets zit. ──
 const _ZK_APP=[
+  ['Mijn stof','📝',['mijn stof','eigen samenvatting','mijn samenvatting','aantekeningen','notities','eigen stof','mijn toets','mijn toetsen','toetsweek','schooltoets','pta'],"openMijnStof('stof')"],
   ['Examens','📚',['examen','examens','oud examen','oude examens','proefexamen','correctievoorschrift','examenvragen','pdf'],"openExamenBieb(%V)"],
   ['Foutenboek','📕',['foutenboek','fouten','foute antwoorden','mijn fouten'],"openFoutenboek()"],
   ['Herhalen','🔁',['herhalen','herhaal','flashcard','flashcards','kaartjes','stampen'],"openHerhalen()"],
@@ -331,7 +332,7 @@ function _zkAppHtml(query){
 }
 function _zkSearch(query){
   const clr=document.getElementById('zoek-clr');if(clr)clr.classList.toggle('on',!!query);
-  const _app=document.getElementById('zoek-app'); if(_app)_app.innerHTML=_zkAppHtml(query);
+  const _app=document.getElementById('zoek-app'); if(_app)_app.innerHTML=_zkAppHtml(query)+((typeof msZoekHtml==='function')?msZoekHtml(query):'');
   const el=document.getElementById('zoek-res'),tabs=document.getElementById('zoek-tabs'),
         stats=document.getElementById('zoek-stats'),more=document.getElementById('zoek-more'),
         filt=document.getElementById('zoek-filters');

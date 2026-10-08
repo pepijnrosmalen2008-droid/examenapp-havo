@@ -1039,6 +1039,8 @@ function renderVandaagHub(){
       }
     }
   }catch(e){}
+  // Eigen toets binnen een week (mijnstof.js): die stof gaat voor.
+  try{ if(typeof msVandaagItems==='function') msVandaagItems().forEach(o=>items.unshift(o)); }catch(e){}
   leer.forEach(t=>{ const pct=Math.round(t.score*100);
     items.push({emoji:false, rc:t.color, ic:`<b>${pct}%</b>`, title:_esc(t.naam), sub:`${_esc(t.vakNaam)} · ${pct}% beheerst`, onclick:`focusStartLeerdoel('${t.vakId}','${_esc(t.ldId)}')`}); });
   if(herhaal>0) items.push({emoji:true, rc:'#22c55e', ic:'🔄', title:`Fris ${herhaal} ${herhaal===1?'onderdeel':'onderdelen'} op`, sub:'Deze zakken weg uit je geheugen', onclick:'herhaalOefen()'});

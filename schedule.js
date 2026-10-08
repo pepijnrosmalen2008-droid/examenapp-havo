@@ -661,6 +661,9 @@ function _parseSamCards(html){
   return cards;
 }
 
+// Terug/opnieuw na een kaartjessessie: eigen stof (mijnstof.js) zet FC.terug en FC.opnieuw.
+function fcTerug(){show((FC&&FC.terug)||'sc-detail');}
+function fcOpnieuw(){if(FC&&typeof FC.opnieuw==='function')FC.opnieuw();else startFlash();}
 function startFlash(){
   // Flashcards putten uit de rijke samenvatting (SAM_RICH, lazy geladen) - eerst zeker laden.
   if(typeof ensureSamData==='function'&&typeof samReady==='function'&&typeof APP_LEVEL!=='undefined'&&!samReady(APP_LEVEL)){ensureSamData(APP_LEVEL,startFlash);return;}
@@ -857,8 +860,8 @@ function _fcSummary(){
       <div class="fc-mastery-wrap"><div class="fc-mastery-bar" style="width:${Math.round(mastered/Math.max(1,FC.cards.length)*100)}%;background:${col}"></div></div>
       <div class="fc-mastery-lbl">${mastered}/${FC.cards.length} kaarten beheerst · ${pct}% goed deze sessie</div>
       <div style="font-size:11px;color:var(--mu);margin:10px 0 2px">⏰ Volgende herhaling: <strong>${nextLabel}</strong></div>
-      <button class="fc-sum-btn fc-sum-btn-primary" onclick="startFlash()">🔄 Nieuwe sessie</button>
-      <button class="fc-sum-btn fc-sum-btn-sec" onclick="show('sc-detail')">← Terug</button>
+      <button class="fc-sum-btn fc-sum-btn-primary" onclick="fcOpnieuw()">🔄 Nieuwe sessie</button>
+      <button class="fc-sum-btn fc-sum-btn-sec" onclick="fcTerug()">← Terug</button>
     </div>`;
   setTimeout(()=>showFeedbackPopup('flashcard'),2000);
 }
