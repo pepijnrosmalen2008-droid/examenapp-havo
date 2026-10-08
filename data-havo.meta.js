@@ -421,6 +421,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C5",
+      "lo": "nl.C.5",
+      "gs": 2,
+      "naam": "Schrijftaal, stijl en correctheid",
+      "beschrijving": "Je schrijft in een register dat bij de lezer past, voorkomt stijlfouten, schrijft een formele brief en let op spelling en leestekens.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Schrijftaal en spreektaal",
+       "Stijlfouten voorkomen",
+       "Een formele brief",
+       "Spelling van werkwoorden",
+       "Leestekens",
+       "Een consequente aanspreekvorm"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
