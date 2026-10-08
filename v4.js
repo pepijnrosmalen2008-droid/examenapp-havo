@@ -305,7 +305,9 @@ function applyVakWorld(){
     const onVak=active.some(id=>VAK_SCREENS.includes(id));
     const vak=(typeof ST!=='undefined'&&ST&&ST.vak)?ST.vak.id:null;
     const root=document.documentElement;
-    if(onVak&&vak)root.setAttribute('data-vak',vak);
+    // Alleen echte vakken krijgen een eigen wereld (Mijn stof, Foutenboek en Slim oefenen hebben geen vakkleur).
+    let echt=false;try{echt=!!(vak&&typeof getVK==='function'&&(getVK()||[]).some(v=>v.id===vak));}catch(e){}
+    if(onVak&&echt)root.setAttribute('data-vak',vak);
     else root.removeAttribute('data-vak');
   }catch(e){}
 }

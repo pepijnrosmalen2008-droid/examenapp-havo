@@ -464,6 +464,38 @@ async function handleHuiswerk(p: any): Promise<Result> {
   }
 }
 
+// Mijn stof: foto van een schrift of samenvatting omzetten naar tekst, met
+// begrippen als "begrip: uitleg" op een eigen regel (zo maakt de app er kaartjes van).
+async function handleFoto(p: any): Promise<Result> {
+  const key = Deno.env.get("ANTHROPIC_API_KEY");
+  if (!key) return { status: 500, body: { error: "server niet geconfigureerd" }, charged: false };
+  const fotos = (Array.isArray(p.fotos) ? p.fotos : [p.foto]).map(parseImage).filter(Boolean).slice(0, 4) as any[];
+  if (!fotos.length) return { status: 400, body: { error: "geen foto" }, charged: false };
+  const vak = (p.vak || "").toString().slice(0, 60);
+  const system =
+    `Je zet foto's van aantekeningen of een samenvatting van een leerling${vak ? " (" + vak + ")" : ""} om naar nette tekst. ` +
+    `Neem alleen over wat er echt staat; voeg niets toe en verbeter geen inhoud. Onleesbare stukken markeer je met [onleesbaar]. ` +
+    `Zet kopjes op een eigen regel met "# " ervoor. Zet elk begrip met uitleg op één regel als "begrip: uitleg". ` +
+    `Staat er een vraag met een antwoord, zet dan de vraag (eindigend op ?) op een regel en het antwoord op de regel eronder. ` +
+    `Andere tekst neem je over als gewone zinnen. Gebruik geen gedachtestreepje (—). Geef alleen de tekst, zonder inleiding.`;
+  const content: any[] = fotos.map((f: any) => ({ type: "image", source: { type: "base64", media_type: f.media_type, data: f.data } }));
+  content.push({ type: "text", text: fotos.length > 1 ? "Zet deze foto's in volgorde om naar tekst." : "Zet deze foto om naar tekst." });
+  try {
+    const resp = await fetch(ANTHROPIC_URL, {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model: MODEL, max_tokens: 3000, system, messages: [{ role: "user", content }] }),
+    });
+    if (!resp.ok) return { status: 502, body: { error: "AI-fout" }, charged: false };
+    const data = await resp.json().catch(() => null);
+    const text = (data?.content?.[0]?.text || "").trim();
+    if (!text) return { status: 502, body: { error: "geen tekst" }, charged: false };
+    return { status: 200, body: { text, kind: "foto" }, charged: true };
+  } catch {
+    return { status: 502, body: { error: "AI onbereikbaar" }, charged: false };
+  }
+}
+
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: CORS });
   if (req.method !== "POST") return json({ error: "POST verwacht" }, 405);
@@ -491,6 +523,7 @@ Deno.serve(async (req: Request) => {
     : mode === "chat" ? await handleChat(body)
     : mode === "generate" ? await handleGenerate(body)
     : mode === "huiswerk" ? await handleHuiswerk(body)
+    : mode === "foto" ? await handleFoto(body)
     : await handleUitleg(body);
 
   // Alleen een écht gelukte AI-call telt mee voor het quotum.

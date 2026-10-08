@@ -5945,7 +5945,7 @@ html[data-vak] .bottom-nav-inner{--or:var(--vak-or,#E85C0D);--or-rgb:var(--vak-o
 html[data-vak] #sc-detail .sh{border-left:4px solid rgba(var(--vak-or-rgb),.55)}
 /* Quiz-chrome subtiel meekleuren */
 html[data-vak] #sc-quiz{background:linear-gradient(180deg,
-  color-mix(in srgb,rgba(var(--vak-or-rgb),1) 8%,#0A0C10) 0%,#10131c 100%)}
+  color-mix(in srgb,rgba(var(--vak-or-rgb,232,88,12),1) 8%,#0A0C10) 0%,#10131c 100%)}
 
 /* Basis: elk vak-hub scherm krijgt een sfeer-tint bovenin + zijn motief.
    --vw-motif = de motieflaag(en); valt terug op niets. */
@@ -11724,7 +11724,7 @@ html.ms-open,html.ms-open body{overflow:hidden}
 .ms-tt{display:flex;flex-direction:column;min-width:0}
 .ms-tt b{font:800 15px/1.2 var(--font-head);letter-spacing:-.01em}
 .ms-tt small{font-size:12px;font-weight:600;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
-.ms-tt small.heet{color:#fff;background:var(--t1);border-radius:99px;padding:1px 7px;align-self:flex-start;font-weight:800;margin-top:3px}
+.ms-tt small.heet{color:#fff;background:var(--t1);border-radius:99px;padding:1px 7px;align-self:flex-start;font-weight:800;margin-top:3px;max-width:100%;box-sizing:border-box}
 /* groepskleuren: leren = niveaukleur, plannen = warm, spelen = paars */
 .ms-g-leer,.ms-k-profiel{--t1:var(--or);--t2:rgba(var(--or-rgb),.28)}
 .ms-g-plan{--t1:#ee8a12;--t2:rgba(238,138,18,.3)}
@@ -12095,3 +12095,62 @@ html.dark .sbar-ring-lvl{box-shadow:0 0 0 2px #1c2030}
 .zk-ms-item:first-of-type{border-top:0}
 .zk-ms-item small{display:block;color:var(--mu);font-size:12px;margin-top:2px}
 @media(max-width:380px){.ms-acties{grid-template-columns:1fr}.ms-veld-rij{grid-template-columns:1fr}}
+/* Mijn stof: drie tabbladen, bronknoppen, stand, toetsvoortgang, ezelsbruggetjes */
+.ms-seg{grid-template-columns:repeat(3,1fr)}
+.ms-seg button{font-size:14px;gap:5px;padding:0 4px;min-width:0}
+.ms-bronnen{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:2px 0 12px}
+.ms-bron{display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-width:0;padding:10px;border-radius:16px;border:2px solid var(--bo);background:var(--s);box-shadow:0 3px 0 var(--bo2);cursor:pointer;text-align:left;font-family:var(--font);color:var(--dk)}
+.ms-bron:active{transform:translateY(2px);box-shadow:0 1px 0 var(--bo2)}
+.ms-bron-ic{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:color-mix(in srgb,var(--or) 12%,transparent);color:var(--or);margin-bottom:5px}
+.ms-bron-ic svg{width:19px;height:19px}
+.ms-bron b{font:800 13px/1.2 var(--font-head)}
+.ms-bron small{font-size:11.5px;color:var(--mu)}
+.ms-bezig{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:16px;background:color-mix(in srgb,var(--or) 8%,var(--s));border:2px solid color-mix(in srgb,var(--or) 25%,var(--bo))}
+.ms-bezig-vonk{width:52px;height:52px;flex-shrink:0}
+.ms-bezig b{display:block;font:800 14.5px var(--font-head);color:var(--dk)}
+.ms-bezig small{font-size:12.5px;color:var(--mu)}
+.ms-score{display:flex;align-items:center;gap:8px;margin-top:6px;font:700 12px var(--font);color:var(--mu)}
+.ms-score-balk{flex:1;max-width:140px;height:6px;border-radius:99px;background:var(--bg2);overflow:hidden}
+.ms-score-balk i{display:block;height:100%;border-radius:99px;background:var(--vk,var(--or))}
+.ms-stand{margin:0 0 16px;padding:14px 16px;border-radius:18px;border:2px solid var(--bo);background:var(--s);box-shadow:0 4px 0 var(--bo2)}
+.ms-stand-kop{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.ms-stand-kop b{font:900 28px/1 var(--font-head);color:var(--or)}
+.ms-stand-kop span{font-size:13.5px;color:var(--mu)}
+.ms-stand-kop em{font-style:normal;font-weight:800;margin-left:4px}
+.ms-stand-kop em.op{color:#16a34a}.ms-stand-kop em.neer{color:#e5484d}
+.ms-stand-zwak{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:10px 0 12px;font-size:13px;color:var(--mu)}
+.ms-stand-zwak i{font-style:normal;font-weight:700;color:var(--dk);padding:3px 9px;border-radius:99px;background:color-mix(in srgb,#e5484d 12%,var(--s))}
+.ms-stand .ms-mini{height:36px;padding:0 16px}
+.ms-dagen{display:flex;gap:4px;margin:8px 0 6px;overflow:hidden}
+.ms-dag{flex:1;min-width:0;max-width:26px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.ms-dag i{width:14px;height:14px;border-radius:50%;border:2px solid var(--bo2);background:var(--s);box-sizing:border-box}
+.ms-dag small{font:700 9.5px var(--font);color:var(--mu);text-transform:uppercase}
+.ms-dag.gedaan i{background:#22c55e;border-color:#22c55e}
+.ms-dag.gemist i{background:var(--bg2);border-color:var(--bg2)}
+.ms-dag.nu i{border-color:var(--vk,var(--or));box-shadow:0 0 0 3px color-mix(in srgb,var(--vk,var(--or)) 22%,transparent)}
+.ms-dag.toets i{border-radius:4px;background:var(--vk,var(--or));border-color:var(--vk,var(--or))}
+.ms-dag.toets small{color:var(--vk,var(--or))}
+.ms-toets-zin{margin:0;font-size:12.5px;line-height:1.4;color:var(--mu)}
+.msx-lijst{display:flex;flex-direction:column;gap:6px;max-height:46vh;overflow-y:auto;margin:0 0 12px}
+.msx-optie{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 13px;border-radius:14px;border:2px solid var(--bo);background:var(--s);text-align:left;cursor:pointer;font-family:var(--font);color:var(--dk)}
+.msx-optie b{font:800 14px var(--font-head)}
+.msx-optie small{flex-shrink:0;font-size:12px;color:var(--mu)}
+.msx-ta{width:100%;box-sizing:border-box;margin:0 0 12px;padding:11px 13px;border-radius:14px;border:2px solid var(--bo);background:var(--bg2);color:var(--dk);font:500 16px/1.45 var(--font);resize:vertical;outline:none}
+.msx-ta:focus{border-color:var(--or)}
+.msx-vraag{padding:10px 12px;border-radius:12px;background:var(--bg2);color:var(--dk)!important;font-size:13.5px!important}
+.msx-vraag b{color:#16a34a}
+/* in de quiz (altijd donkere achtergrond) */
+.ms-ezel-fb{margin-top:10px}
+.ms-ezel-knop{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px 0 10px;border-radius:99px;border:1.5px dashed rgba(255,255,255,.35);background:rgba(255,255,255,.06);color:#f3f4f8;font:700 13.5px var(--font);cursor:pointer}
+.ms-ezel-ic{display:grid;place-items:center;width:24px;height:24px;border-radius:8px;background:rgba(250,204,21,.18);color:#facc15;flex-shrink:0}
+.ms-ezel-ic svg{width:16px;height:16px}
+.ms-ezel-toon{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:14px;background:rgba(250,204,21,.1);border:1px solid rgba(250,204,21,.3);color:#f3f4f8;font-size:14px;line-height:1.45;text-align:left}
+.ms-ezel-toon b{display:block;font:800 12px var(--font-head);letter-spacing:.04em;text-transform:uppercase;color:#facc15;margin-bottom:2px}
+.ms-ezel-toon>span:nth-child(2){flex:1;min-width:0}
+.ms-ezel-toon button{flex-shrink:0;border:0;background:none;color:#c9cdd8;font:700 12.5px var(--font);cursor:pointer;padding:2px 0}
+.ms-ezel-item .ms-ezel-v{display:block;font-size:12.5px;color:var(--mu);margin-bottom:2px}
+.ms-ezel-item b{color:#16a34a}
+.ms-ezel-t{display:block;margin-top:6px;padding:8px 10px;border-radius:10px;background:color-mix(in srgb,#facc15 16%,var(--s));font:600 14px/1.45 var(--font);color:var(--dk)}
+@media(max-width:380px){.ms-bronnen{grid-template-columns:1fr}.ms-bron{flex-direction:row;align-items:center;gap:10px}.ms-bron-ic{margin:0}.ms-seg button{font-size:13px}}
+.ms-acties .ms-actie:last-child:nth-child(even){grid-column:1/-1}
+.ms-dag small{text-transform:none;font-size:10px}

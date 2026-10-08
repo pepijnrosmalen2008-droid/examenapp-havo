@@ -474,6 +474,8 @@ function _kiesReveal(gekozen,correct,btns){
     const _vonkAsk=`<button class="q-vonk-ask" onclick="vonkCoachFromQuiz()"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H10l-4 4V16H4z"/></svg>Vraag het aan Vonk</button>`;
     fb.innerHTML=`<div class="fbt"><svg class="fb-ic" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Fout</div><div class="fbtx"><span class="fbtx-juist"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Juist:</span> ${correctText}</div>${_why}${_vonkAsk}`;
   }
+  // Eigen ezelsbruggetje (mijnstof.js): tonen als het er is, anders aanbieden na een fout.
+  try{if(typeof msEzelInFeedback==='function')msEzelInFeedback(fb,q,ok);}catch(e){}
   const nxt=document.getElementById('qnxt');
   nxt.style.display='block';
   nxt.textContent=ST.idx<((ST.adaptive?ST.aqTarget:ST.vragen.length)-1)?'Volgende →':'Bekijk resultaat →';

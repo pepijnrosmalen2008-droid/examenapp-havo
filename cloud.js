@@ -193,6 +193,28 @@ async function aiHuiswerkNakijk(opts){
   }catch(e){ return {error:true}; }
 }
 
+// Mijn stof: foto('s) van een schrift → tekst met "begrip: uitleg"-regels.
+// Retourneert {text} of {login|limit|error}; alleen geaccepteerd met kind:'foto'.
+async function aiFotoNaarTekst(opts){
+  opts=opts||{};
+  if(!SLAGIO_AI_ENDPOINT) return {error:true};
+  if(!currentUser) return {login:true};
+  const isPlus = plusActive();
+  if(!isPlus && aiGradeTrialLeft()<=0) return {limit:true};
+  const fotos=(opts.fotos||[]).filter(Boolean).slice(0,4);
+  if(!fotos.length) return {error:true};
+  try{
+    const tok=await _aiUserToken();
+    const r=await fetch(SLAGIO_AI_ENDPOINT,{method:'POST',headers:{'content-type':'application/json','apikey':SUPABASE_KEY,'authorization':'Bearer '+(tok||SUPABASE_KEY)},body:JSON.stringify({mode:'foto',vak:opts.vak||'',fotos})});
+    const j=await r.json().catch(()=>null);
+    if(r.status===401 || (j && j.reason==='login')) return {login:true};
+    if(j && (j.locked||j.limit)) return {limit:true, plus:!!(j&&j.plus)};
+    if(!r.ok) return {error:true};
+    if(j && j.text && j.kind==='foto'){ if(!isPlus) _aiGradeConsume(); try{ trackEvent('ai_foto',{n:fotos.length, plus:isPlus}); }catch(e){} return {text:String(j.text)}; }
+    return {error:true, oudeServer:true};
+  }catch(e){ return {error:true}; }
+}
+
 // ═══════ SUPABASE ═══════
 const SUPABASE_URL='https://wcfenegohryxhatzxvtw.supabase.co';
 const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndjZmVuZWdvaHJ5eGhhdHp4dnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyODcwMDAsImV4cCI6MjA5Njg2MzAwMH0.B3ygpkosBybQd53VLiRxqIbVxBPWw4V-Nj2IS3k4UFo';
@@ -640,7 +662,9 @@ function buildSyncBundle(){
     plus_h:_ls('slagio_plus_res_havo',[]),
     plus_v:_ls('slagio_plus_res_vwo',[]),
     plus_doel:_plusDoelBundle(),
-    plus_tijd:(function(){try{return localStorage.getItem('slagio_plus_tijd')||null;}catch(e){return null;}})()
+    plus_tijd:(function(){try{return localStorage.getItem('slagio_plus_tijd')||null;}catch(e){return null;}})(),
+    // Mijn stof gaat hier alleen mee zolang de kolom user_data.mijnstof nog niet bestaat.
+    ms:(typeof msCloudBundel==='function')?msCloudBundel():undefined
   };
 }
 // Verzamel alle per-vak Plus-doelen (slagio_plus_doel_<vak>).
@@ -700,6 +724,7 @@ function restoreSyncBundle(bundle){
     if(bundle.plus_doel) Object.keys(bundle.plus_doel).forEach(k=>{ if(localStorage.getItem(k)==null) localStorage.setItem(k,bundle.plus_doel[k]); });
     if(bundle.plus_tijd && localStorage.getItem('slagio_plus_tijd')==null) localStorage.setItem('slagio_plus_tijd',bundle.plus_tijd);
   }catch(e){}
+  try{ if(bundle.ms && typeof msCloudSamenvoegen==='function') msCloudSamenvoegen(bundle.ms,'bundel'); }catch(e){}
 }
 async function pushSyncBundle(){
   if(!currentUser)return;
@@ -771,6 +796,8 @@ async function syncFromCloud(){
     const cij=data[lvlCol('cijfers')];if(cij)localStorage.setItem('examenapp_'+lvlCol('cijfers'),JSON.stringify(cij));
     const favs=data[lvlCol('favs')];if(favs)localStorage.setItem('examenapp_'+lvlCol('favs'),JSON.stringify(favs.list||[]));
     const mijn=data[lvlCol('mijnvakken')];if(mijn)localStorage.setItem('examenapp_'+lvlCol('mijnvakken'),JSON.stringify(mijn.list||[]));
+    // Mijn stof: eigen kolom als die bestaat (anders ging het via de sync-bundle hierboven)
+    try{ if(typeof msCloudVanServer==='function') msCloudVanServer(data); }catch(e){}
     updateProfileNav();renderStreak();renderFavHome();renderXPHome();renderDailyChallenge();buildGrid();renderHomeStats();
     try{renderDecayAlert();}catch(e){}
     try{renderVandaagWidget();}catch(e){}

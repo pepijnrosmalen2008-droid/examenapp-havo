@@ -6,17 +6,21 @@
 // kaartjes in het herhaalritme (SM-2). Op verzoek maakt Vonk extra vragen uit
 // precies die tekst (aiGenereerVragen met stof). Daarnaast: eigen toetsen met
 // datum, gekoppelde stof en een doelcijfer; die verschijnen in het Vandaag-blok.
-// Alles staat lokaal per niveau in lvlCol('slagio_mijnstof').
+// Alles staat per niveau in lvlCol('slagio_mijnstof') en gaat met het account
+// mee: in de kolom user_data.mijnstof, of zolang die er niet is in de sync-bundel.
+// Ook: foto van je schrift naar tekst (aiFotoNaarTekst), Slagio-begrippen als
+// begin, scores en zwakke begrippen per samenvatting, voortgang per toets en
+// eigen ezelsbruggetjes bij quizvragen.
 
 const MS_STOP = new Set(['let op', 'tip', 'voorbeeld', 'bijvoorbeeld', 'opmerking', 'belangrijk', 'nb', 'n.b.', 'hoofdstuk', 'paragraaf', 'bron', 'bronnen', 'samenvatting', 'datum', 'naam', 'klas', 'vak', 'toets', 'zie', 'dus', 'conclusie', 'inleiding', 'stap 1', 'stap 2', 'stap 3']);
 let MS = { tab: 'stof', vak: '', view: 'lijst', id: null, terug: null };
 
 function _msKey() { return (typeof lvlCol === 'function') ? lvlCol('slagio_mijnstof') : 'slagio_mijnstof'; }
 function msLaad() {
-  try { const d = JSON.parse(localStorage.getItem(_msKey()) || 'null'); if (d && Array.isArray(d.n)) { d.t = d.t || []; return d; } } catch (e) {}
-  return { n: [], t: [] };
+  try { const d = JSON.parse(localStorage.getItem(_msKey()) || 'null'); if (d && Array.isArray(d.n)) { d.t = d.t || []; d.x = d.x || {}; d.e = d.e || {}; return d; } } catch (e) {}
+  return { n: [], t: [], x: {}, e: {} };
 }
-function msBewaar(d) { try { localStorage.setItem(_msKey(), JSON.stringify(d)); return true; } catch (e) { if (typeof showToast === 'function') showToast('Je opslag is vol. Verwijder een oude samenvatting.', '#ef4444', 3200); return false; } }
+function msBewaar(d, stil) { try { localStorage.setItem(_msKey(), JSON.stringify(d)); if (!stil) _msCloudPlan(); return true; } catch (e) { if (typeof showToast === 'function') showToast('Je opslag is vol. Verwijder een oude samenvatting.', '#ef4444', 3200); return false; } }
 function _msEsc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
 function _msId(p) { return p + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
 function _msVakNaam(id) { try { const v = (getVK() || []).find(x => x.id === id); if (v) return v.naam; } catch (e) {} return id ? 'Overig' : ''; }
@@ -61,7 +65,7 @@ function _msOpties(goed, pool) {
   const uniek = []; andere.forEach(x => { if (uniek.length < 3 && !uniek.some(u => u.toLowerCase() === x.toLowerCase())) uniek.push(x); });
   return uniek.length === 3 ? [goed].concat(uniek) : null;
 }
-function msBouwVragen(notities, max) {
+function msBouwVragen(notities, max, focus) {
   max = max || 10;
   const kaarten = [], gezien = new Set();
   notities.forEach(n => msKaarten(n.tekst).forEach(k => { const s = k.t.toLowerCase(); if (!gezien.has(s)) { gezien.add(s); kaarten.push(Object.assign({ nid: n.id }, k)); } }));
@@ -70,13 +74,13 @@ function msBouwVragen(notities, max) {
   const kand = [];
   begrip.forEach(k => {
     let o = _msOpties(k.d, defs);
-    if (o) kand.push({ v: `Wat betekent «${k.t}»?`, o, c: 0, u: `${k.t}: ${k.d}`, d: 1, _k: k.t });
+    if (o) kand.push({ v: `Wat betekent «${k.t}»?`, o, c: 0, u: `${k.t}: ${k.d}`, d: 1, _k: k.t, _nid: k.nid });
     o = _msOpties(k.t, termen);
-    if (o) kand.push({ v: `Welk begrip hoort bij deze uitleg?\n«${k.d}»`, o, c: 0, u: `${k.t}: ${k.d}`, d: 2, _k: k.t });
+    if (o) kand.push({ v: `Welk begrip hoort bij deze uitleg?\n«${k.d}»`, o, c: 0, u: `${k.t}: ${k.d}`, d: 2, _k: k.t, _nid: k.nid });
   });
   vraag.forEach(k => {
     const o = _msOpties(k.d, antw.length >= 4 ? antw : antw.concat(defs));
-    if (o) kand.push({ v: k.t, o, c: 0, u: k.d, d: 1, _k: k.t });
+    if (o) kand.push({ v: k.t, o, c: 0, u: k.d, d: 1, _k: k.t, _nid: k.nid });
   });
   // Invulzinnen: zinnen uit de lopende tekst waarin een begrip voorkomt
   if (termen.length >= 4) {
@@ -89,16 +93,18 @@ function msBouwVragen(notities, max) {
           if (!t) return;
           const o = _msOpties(t, termen); if (!o) return;
           const re = new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
-          kand.push({ v: 'Vul in:\n' + zin.replace(re, '_____'), o, c: 0, u: zin, d: 2, _k: t });
+          kand.push({ v: 'Vul in:\n' + zin.replace(re, '_____'), o, c: 0, u: zin, d: 2, _k: t, _nid: n.id });
         });
       });
     });
   }
   // Vragen die Vonk eerder uit deze tekst maakte
-  notities.forEach(n => { if (n.ai && n.ai.h === _msHash(n.tekst)) (n.ai.vragen || []).forEach(q => kand.push({ v: q.v, o: q.o.slice(0, 4), c: q.c, u: q.uitleg || '', d: 2, _ai: 1 })); });
+  notities.forEach(n => { if (n.ai && n.ai.h === _msHash(n.tekst)) (n.ai.vragen || []).forEach(q => kand.push({ v: q.v, o: q.o.slice(0, 4), c: q.c, u: q.uitleg || '', d: 2, _ai: 1, _nid: n.id })); });
   // Spreiden: niet twee keer hetzelfde begrip vlak na elkaar, AI-vragen mee in de mix
   const per = {}; _msMix(kand).forEach(q => { const s = q._k || ('ai' + Math.random()); (per[s] = per[s] || []).push(q); });
   const uit = []; let rest = Object.values(per);
+  // Zwakke begrippen eerst (Oefen wat je fout had)
+  if (focus && focus.size) { const f = rest.filter(g => focus.has(g[0]._k)); rest = rest.filter(g => !focus.has(g[0]._k)); _msMix(f).forEach(g => { while (g.length && uit.length < max && uit.filter(q => q._k === g[0]._k).length < 2) uit.push(g.shift()); }); }
   while (uit.length < max && rest.length) { rest = _msMix(rest); rest.forEach(g => { if (uit.length < max && g.length) uit.push(g.shift()); }); rest = rest.filter(g => g.length); }
   return { vragen: uit, nKaart: kaarten.length, kaarten };
 }
@@ -106,12 +112,12 @@ function _msHash(s) { let h = 0; s = String(s || ''); for (let i = 0; i < s.leng
 
 // ── Oefenen ──
 let _msLaatste = null;
-function msOefen(ids, titel) {
+function msOefen(ids, titel, focus) {
   const d = msLaad(), notities = d.n.filter(n => ids.indexOf(n.id) >= 0);
   if (!notities.length) return;
-  const r = msBouwVragen(notities, 10);
+  const r = msBouwVragen(notities, 10, focus ? new Set(focus) : null);
   if (r.vragen.length < 3) { msUitlegWeinig(r.nKaart); return; }
-  _msLaatste = { ids, titel };
+  _msLaatste = { ids, titel, focus };
   // opties en uitleg gaan als HTML het scherm op: eigen tekst eerst ontsmetten
   const qs = r.vragen.map(q => Object.assign({}, q, { o: q.o.map(_msEsc), u: _msEsc(q.u), bron: 'Mijn stof' }));
   ST.vak = { id: 'mijnstof', naam: 'Mijn stof', domeinen: [] };
@@ -131,7 +137,7 @@ function msOefen(ids, titel) {
   if (skel && body) { skel.style.display = 'flex'; body.style.display = 'none'; }
   requestAnimationFrame(() => requestAnimationFrame(() => { if (skel) skel.style.display = 'none'; if (body) body.style.display = ''; if (typeof toonV === 'function') toonV(); }));
 }
-function msOpnieuw() { if (_msLaatste) msOefen(_msLaatste.ids, _msLaatste.titel); else openMijnStof(); }
+function msOpnieuw() { if (_msLaatste) msOefen(_msLaatste.ids, _msLaatste.titel, _msLaatste.focus); else openMijnStof(); }
 function msUitlegWeinig(n) {
   const tekst = n ? `Ik vond pas ${n} ${n === 1 ? 'kaartje' : 'kaartjes'}. Voor een quiz heb ik er minstens 4 nodig.` : 'Ik vond nog geen begrippen in je tekst.';
   _msSheet(`<div class="msx-vonk">${typeof mascotSVG === 'function' ? mascotSVG('denk', 72) : ''}</div>
@@ -165,6 +171,7 @@ function msKaartjes(ids, titel) {
   const meta = document.getElementById('fc-meta'); if (meta) meta.textContent = 'Mijn stof · ' + (titel || notities[0].titel);
   try { _fcUpdateChips(); } catch (e) {}
   show('sc-flash'); showFlashcard();
+  _msOefendag(ids);
   try { playSound('start'); } catch (e) {}
   try { trackEvent('mijnstof_kaartjes', { n: queue.length }); } catch (e) {}
 }
@@ -229,12 +236,14 @@ function msRender() {
 
 function _msLijstHtml(d) {
   const vonk = typeof mascotSVG === 'function' ? mascotSVG(d.n.length ? 'blij' : 'kijk', 64) : '';
-  const tabs = `<div class="ms-seg" role="tablist"><button role="tab" class="${MS.tab === 'stof' ? 'on' : ''}" onclick="msTab('stof')">Samenvattingen<span>${d.n.length}</span></button><button role="tab" class="${MS.tab === 'toets' ? 'on' : ''}" onclick="msTab('toets')">Toetsen<span>${d.t.filter(t => _msDagen(t.datum) >= 0).length}</span></button></div>`;
+  const nE = Object.keys(d.e).length;
+  const tabs = `<div class="ms-seg" role="tablist"><button role="tab" class="${MS.tab === 'stof' ? 'on' : ''}" onclick="msTab('stof')">Stof<span>${d.n.length}</span></button><button role="tab" class="${MS.tab === 'toets' ? 'on' : ''}" onclick="msTab('toets')">Toetsen<span>${d.t.filter(t => _msDagen(t.datum) >= 0).length}</span></button><button role="tab" class="${MS.tab === 'ezel' ? 'on' : ''}" onclick="msTab('ezel')">Bruggetjes<span>${nE}</span></button></div>`;
   let h = `<div class="ms-kop2"><div class="ms-kop2-vonk">${vonk}</div><div><h2>Mijn stof</h2><p>${d.n.length ? 'Jouw eigen samenvattingen en toetsen. Ik maak er kaartjes en vragen van.' : 'Plak je eigen samenvatting en ik maak er kaartjes en een quiz van. Zet je toetsen erbij, dan plan ik mee.'}</p></div></div>` + tabs;
   if (MS.tab === 'toets') return h + _msToetsenHtml(d);
+  if (MS.tab === 'ezel') return h + _msEzelLijstHtml(d);
   const vakken = [...new Set(d.n.map(n => n.vak))];
   if (vakken.length > 1) h += `<div class="ms-chips"><button class="${!MS.vak ? 'on' : ''}" onclick="msFilter('')">Alles</button>${vakken.map(v => `<button class="${MS.vak === v ? 'on' : ''}" style="--vk:${_msVakKleur(v)}" onclick="msFilter('${v}')">${_msEsc(_msVakNaam(v))}</button>`).join('')}</div>`;
-  h += `<button class="ms-plus" onclick="msNieuw()"><span class="ms-plus-ic">+</span><span><b>Samenvatting toevoegen</b><small>Plakken of een tekstbestand kiezen</small></span></button>`;
+  h += `<button class="ms-plus" onclick="msNieuw()"><span class="ms-plus-ic">+</span><span><b>Samenvatting toevoegen</b><small>Plakken, een foto van je schrift of een tekstbestand</small></span></button>`;
   const lijst = d.n.filter(n => !MS.vak || n.vak === MS.vak).sort((a, b) => (b.ts || 0) - (a.ts || 0));
   if (!lijst.length) return h + _msLeegHtml();
   h += '<div class="ms-lijst2">' + lijst.map(n => {
@@ -244,6 +253,7 @@ function _msLijstHtml(d) {
       <span class="ms-item-vak">${_msEsc(_msVakNaam(n.vak))}</span>
       <b>${_msEsc(n.titel)}</b>
       <small>${k} ${k === 1 ? 'kaartje' : 'kaartjes'}${n.ai && n.ai.h === _msHash(n.tekst) ? ' · ' + n.ai.vragen.length + ' vragen van Vonk' : ''}${toets ? ` · <em>toets ${_msDagTekst(_msDagen(toets.datum))}</em>` : ''}</small>
+      ${_msScoreBalk(n)}
     </button>`;
   }).join('') + '</div>';
   return h;
@@ -261,7 +271,13 @@ function _msBewerkHtml(d) {
   return `<div class="ms-topbar"><button class="ms-terug" onclick="${n ? `msOpen('${n.id}')` : 'msTerugNaarLijst()'}">Annuleren</button><b>${n ? 'Samenvatting bewerken' : 'Nieuwe samenvatting'}</b><button class="ms-opslaan" onclick="msOpslaan()">Opslaan</button></div>
   <label class="ms-veld"><span>Titel</span><input id="ms-titel" maxlength="80" placeholder="Bijv. H3 Enzymen" value="${n ? _msEsc(n.titel) : ''}"></label>
   <label class="ms-veld"><span>Vak</span><select id="ms-vak">${_msVakOpties(vak)}</select></label>
-  <label class="ms-veld ms-veld-tekst"><span>Jouw samenvatting<button type="button" class="ms-bestand" onclick="document.getElementById('ms-file').click()">Tekstbestand kiezen</button></span>
+  <div class="ms-bronnen">
+    <button type="button" class="ms-bron" onclick="document.getElementById('ms-foto').click()"><span class="ms-bron-ic">${_msIc('foto')}</span><b>Foto van je schrift</b><small>Vonk zet het om</small></button>
+    <button type="button" class="ms-bron" onclick="msSlagioBegrippen()"><span class="ms-bron-ic">${_msIc('boek')}</span><b>Slagio-begrippen</b><small>als begin</small></button>
+    <button type="button" class="ms-bron" onclick="document.getElementById('ms-file').click()"><span class="ms-bron-ic">${_msIc('bestand')}</span><b>Tekstbestand</b><small>.txt of .md</small></button>
+  </div>
+  <input type="file" id="ms-foto" accept="image/*" multiple hidden onchange="msFotoGekozen(this)">
+  <label class="ms-veld ms-veld-tekst"><span>Jouw samenvatting</span>
   <textarea id="ms-tekst" rows="14" oninput="_msLive()" placeholder="Plak hier je samenvatting.
 
 Begrippen werken het best zo, elk op een eigen regel:
@@ -306,7 +322,7 @@ function msVerwijder(id) {
     <div class="msx-rij"><button class="msx-knop licht" onclick="_msSheetDicht()">Laat staan</button><button class="msx-knop rood" onclick="_msVerwijderJa('${id}')">Verwijderen</button></div>`);
 }
 function _msVerwijderJa(id) {
-  const d = msLaad(); d.n = d.n.filter(n => n.id !== id); d.t.forEach(t => { t.stof = (t.stof || []).filter(x => x !== id); }); msBewaar(d);
+  const d = msLaad(); d.n = d.n.filter(n => n.id !== id); d.x[id] = Date.now(); d.t.forEach(t => { t.stof = (t.stof || []).filter(x => x !== id); t.ts = Date.now(); }); msBewaar(d);
   _msSheetDicht(); msTerugNaarLijst();
 }
 
@@ -336,6 +352,7 @@ function _msLeesHtml(d) {
     <button class="ms-actie" onclick="msVonkVragen('${n.id}',this)"><span class="ms-actie-ic">${_msIc('ster')}</span><span><b>${aiOk ? 'Nieuwe vragen van Vonk' : 'Laat Vonk vragen maken'}</b><small>${aiOk ? n.ai.vragen.length + ' vragen staan al in je quiz' : 'alleen uit jouw tekst'}</small></span></button>
     <button class="ms-actie" onclick="msVraagVonk('${n.id}')"><span class="ms-actie-ic ms-actie-vonk">${typeof mascotSVG === 'function' ? mascotSVG('kijk', 34) : ''}</span><span><b>Vraag Vonk</b><small>over deze samenvatting</small></span></button>
   </div>
+  ${_msStandHtml(n)}
   <div class="ms-tekst">${_msOpmaak(n.tekst)}</div>
   <button class="ms-verwijder" onclick="msVerwijder('${n.id}')">Samenvatting verwijderen</button>`;
 }
@@ -344,7 +361,11 @@ function _msIc(n) {
     quiz: '<path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/>',
     kaart: '<rect x="3" y="6" width="14" height="14" rx="2.5"/><path d="M7 3h11.5A2.5 2.5 0 0 1 21 5.5V17"/>',
     ster: '<path d="M12 3l1.9 5.3L19 10l-5.1 1.7L12 17l-1.9-5.3L5 10l5.1-1.7z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/>',
-    toets: '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>'
+    toets: '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+    foto: '<path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/>',
+    boek: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/>',
+    bestand: '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>',
+    brug: '<path d="M3 17c3-6 15-6 18 0"/><path d="M3 17v3M21 17v3M8 13v7M16 13v7M12 12v8"/>'
   }[n] || '';
   return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
 }
@@ -361,6 +382,7 @@ function _msToetsenHtml(d) {
     return `<div class="ms-toets${n >= 0 && n <= 7 ? ' dichtbij' : ''}${n < 0 ? ' geweest' : ''}" style="--vk:${_msVakKleur(t.vak)}">
       <div class="ms-toets-dag"><b>${n < 0 ? '✓' : n}</b><small>${n < 0 ? 'geweest' : n === 1 ? 'dag' : 'dagen'}</small></div>
       <div class="ms-toets-tx"><span class="ms-item-vak">${_msEsc(_msVakNaam(t.vak))}</span><b>${_msEsc(t.naam)}</b><small>${datum}${t.doel ? ' · doel: ' + String(t.doel).replace('.', ',') : ''}${stof.length ? ' · ' + stof.length + ' samenvatting' + (stof.length === 1 ? '' : 'en') : ''}</small>
+      ${n >= 0 ? _msToetsVoortgang(t, stof) : ''}
       <div class="ms-toets-knoppen">${stof.length && n >= 0 ? `<button class="ms-mini hoofd" onclick="msOefenToets('${t.id}')">Oefen</button>` : ''}<button class="ms-mini" onclick="msToetsBewerk('${t.id}')">Wijzig</button></div></div></div>`;
   };
   h += kom.map(kaart).join('');
@@ -396,12 +418,12 @@ function msToetsOpslaan() {
   const stof = [...document.querySelectorAll('#ms-t-stof input:checked')].map(i => i.value);
   const d = msLaad(); let t = MS.id ? d.t.find(x => x.id === MS.id) : null;
   if (!t) { t = { id: _msId('t') }; d.t.push(t); }
-  Object.assign(t, { naam: naam || ('Toets ' + _msVakNaam(vak)), vak, datum, doel: (doel && !isNaN(doel)) ? Math.round(doel * 10) / 10 : null, stof });
+  Object.assign(t, { naam: naam || ('Toets ' + _msVakNaam(vak)), vak, datum, doel: (doel && !isNaN(doel)) ? Math.round(doel * 10) / 10 : null, stof, ts: Date.now() });
   msBewaar(d);
   try { trackEvent('mijnstof_toets', { dagen: _msDagen(datum), stof: stof.length }); } catch (e) {}
   MS.tab = 'toets'; MS.view = 'lijst'; MS.id = null; msRender();
 }
-function msToetsVerwijder(id) { const d = msLaad(); d.t = d.t.filter(t => t.id !== id); msBewaar(d); msTab('toets'); }
+function msToetsVerwijder(id) { const d = msLaad(); d.t = d.t.filter(t => t.id !== id); d.x[id] = Date.now(); msBewaar(d); msTab('toets'); }
 function msOefenToets(id) {
   const d = msLaad(), t = d.t.find(x => x.id === id); if (!t) return;
   const ids = (t.stof || []).filter(x => d.n.some(n => n.id === x));
@@ -422,7 +444,7 @@ function msVandaagItems() {
 function msStand() {
   try {
     const d = msLaad(), t = d.t.filter(x => _msDagen(x.datum) >= 0).sort((a, b) => a.datum < b.datum ? -1 : 1)[0];
-    if (t) { const n = _msDagen(t.datum); return { t: n === 0 ? 'toets vandaag' : n === 1 ? 'toets morgen' : 'toets: ' + n + ' dagen', heet: n <= 3 ? 1 : 0 }; }
+    if (t) { const n = _msDagen(t.datum); return { t: n === 0 ? 'vandaag' : n === 1 ? 'morgen' : 'over ' + n + ' dagen', toets: 1, heet: n <= 3 ? 1 : 0 }; }
     return { t: d.n.length ? d.n.length + ' ' + (d.n.length === 1 ? 'samenvatting' : 'samenvattingen') : 'je eigen stof' };
   } catch (e) { return null; }
 }
@@ -467,3 +489,225 @@ function _msSheetDicht(direct) { const ov = document.getElementById('msx-ov'); i
   const oud = msRender;
   msRender = function () { oud(); if (MS.view === 'toets') _msToetsStofLijst(); };
 })();
+
+// ═══════ MIJN STOF: SCORES EN VOORTGANG ═══════
+const _msVandaag = () => { const t = new Date(); return t.getFullYear() + '-' + String(t.getMonth() + 1).padStart(2, '0') + '-' + String(t.getDate()).padStart(2, '0'); };
+// Een dag waarop je stof van een toets oefende, telt mee in de voortgang van die toets.
+function _msOefendag(ids) {
+  const d = msLaad(), dag = _msVandaag(); let ver = false;
+  d.t.forEach(t => { if ((t.stof || []).some(x => ids.indexOf(x) >= 0)) { t.dagen = t.dagen || []; if (t.dagen.indexOf(dag) < 0) { t.dagen.push(dag); t.ts = Date.now(); ver = true; } } });
+  if (ver) msBewaar(d);
+}
+// Na een quiz uit eigen stof: score per samenvatting en per begrip bijhouden.
+function msNoteerQuiz() {
+  try {
+    if (!ST || !ST.vak || ST.vak.id !== 'mijnstof' || !(ST.antwrd || []).length) return;
+    const d = msLaad(), per = {};
+    ST.antwrd.forEach((a, i) => {
+      const q = ST.vragen[a.vi != null ? a.vi : i]; if (!q || !q._nid) return;
+      const p = per[q._nid] = per[q._nid] || { g: 0, n: 0, k: {} };
+      p.n++; p.g += a.pts || 0;
+      if (q._k) { const k = p.k[q._k] = p.k[q._k] || { g: 0, f: 0 }; if (a.pts) k.g++; else k.f++; }
+    });
+    Object.keys(per).forEach(id => {
+      const n = d.n.find(x => x.id === id); if (!n) return; const p = per[id];
+      n.sc = (n.sc || []).concat([{ ts: Date.now(), p: Math.round(p.g / p.n * 100) }]).slice(-8);
+      n.zw = n.zw || {};
+      Object.keys(p.k).forEach(t => { const z = n.zw[t] = n.zw[t] || { g: 0, f: 0 }; z.g += p.k[t].g; z.f += p.k[t].f; if (p.k[t].g && !p.k[t].f) z.f = Math.max(0, z.f - 1); });
+      n.ts = Date.now();
+    });
+    msBewaar(d);
+    _msOefendag(Object.keys(per));
+  } catch (e) {}
+}
+(function () {
+  if (typeof toonRes !== 'function') return;
+  const oud = toonRes;
+  toonRes = function () { const r = oud.apply(this, arguments); msNoteerQuiz(); return r; };
+})();
+function _msLaatsteScore(n) { const s = n && n.sc; return s && s.length ? s[s.length - 1].p : null; }
+function _msZwak(n) { return Object.keys((n && n.zw) || {}).filter(t => n.zw[t].f > 0).sort((a, b) => n.zw[b].f - n.zw[a].f); }
+function _msScoreBalk(n) {
+  const p = _msLaatsteScore(n); if (p == null) return '';
+  return `<span class="ms-score"><span class="ms-score-balk"><i style="width:${p}%"></i></span><span>${p}% goed</span></span>`;
+}
+function _msStandHtml(n) {
+  const p = _msLaatsteScore(n), zwak = _msZwak(n);
+  if (p == null) return '';
+  const vorige = n.sc.length > 1 ? n.sc[n.sc.length - 2].p : null;
+  const pijl = vorige == null ? '' : p > vorige ? `<em class="op">+${p - vorige}</em>` : p < vorige ? `<em class="neer">${p - vorige}</em>` : '';
+  return `<div class="ms-stand">
+    <div class="ms-stand-kop"><b>${p}%</b><span>goed bij je laatste quiz ${pijl}</span></div>
+    ${zwak.length ? `<div class="ms-stand-zwak"><span>Nog lastig:</span>${zwak.slice(0, 6).map(t => `<i>${_msEsc(t)}</i>`).join('')}</div>
+    <button class="ms-mini hoofd" onclick="msOefen(['${n.id}'],null,${_msEsc(JSON.stringify(zwak.slice(0, 6)))})">Oefen wat je fout had</button>` : '<div class="ms-stand-zwak"><span>Alles goed beantwoord. Morgen nog een keer, dan blijft het hangen.</span></div>'}
+  </div>`;
+}
+// Toets: geoefende dagen tot de toets, stand van je stof en je doel.
+function _msToetsVoortgang(t, stof) {
+  const n = _msDagen(t.datum), dagen = t.dagen || [], scores = stof.map(_msLaatsteScore).filter(x => x != null);
+  const gem = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null;
+  const vak = [], vandaag = new Date(); vandaag.setHours(12, 0, 0, 0);
+  for (let i = -3; i <= Math.min(n, 10); i++) {
+    const dt = new Date(vandaag.getTime() + i * 864e5), key = dt.getFullYear() + '-' + String(dt.getMonth() + 1).padStart(2, '0') + '-' + String(dt.getDate()).padStart(2, '0');
+    const kl = i === n ? 'toets' : dagen.indexOf(key) >= 0 ? 'gedaan' : i < 0 ? 'gemist' : i === 0 ? 'nu' : '';
+    vak.push(`<span class="ms-dag ${kl}" title="${dt.toLocaleDateString('nl-NL', { weekday: 'long', day: 'numeric', month: 'long' })}"><i></i><small>${['zo','ma','di','wo','do','vr','za'][dt.getDay()]}</small></span>`);
+  }
+  let zin;
+  if (gem == null) zin = stof.length ? 'Doe een eerste quiz, dan zie je waar je staat.' : 'Koppel een samenvatting, dan kun je ervoor oefenen.';
+  else if (gem >= 85) zin = `Je stof zit erin (${gem}% goed). Blijf elke dag even herhalen.`;
+  else if (gem >= 60) zin = `${gem}% goed. Oefen vooral wat je fout had.`;
+  else zin = `${gem}% goed. Plan er de komende dagen elke dag een quiz voor.`;
+  return `<div class="ms-dagen" aria-label="Geoefend op ${dagen.length} dagen">${vak.join('')}</div><p class="ms-toets-zin">${zin}</p>`;
+}
+
+// ═══════ MIJN STOF: FOTO EN SLAGIO-BEGRIPPEN ═══════
+function _msVerklein(file) {
+  return new Promise(res => {
+    const r = new FileReader();
+    r.onload = () => { const img = new Image(); img.onload = () => {
+      const max = 1600, f = Math.min(1, max / Math.max(img.width, img.height));
+      const c = document.createElement('canvas'); c.width = Math.round(img.width * f); c.height = Math.round(img.height * f);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); res(c.toDataURL('image/jpeg', .82));
+    }; img.onerror = () => res(null); img.src = r.result; };
+    r.onerror = () => res(null); r.readAsDataURL(file);
+  });
+}
+async function msFotoGekozen(inp) {
+  const files = [...(inp.files || [])].slice(0, 4); inp.value = ''; if (!files.length) return;
+  const box = document.getElementById('ms-gevonden');
+  if (box) box.innerHTML = `<div class="ms-bezig"><span class="ms-bezig-vonk">${typeof mascotSVG === 'function' ? mascotSVG('lees', 52) : ''}</span><span><b>Vonk leest je ${files.length > 1 ? files.length + " foto's" : 'foto'}…</b><small>Dit duurt een paar seconden.</small></span></div>`;
+  const fotos = (await Promise.all(files.map(_msVerklein))).filter(Boolean);
+  const vak = (document.getElementById('ms-vak') || {}).value || '';
+  const res = (typeof aiFotoNaarTekst === 'function') ? await aiFotoNaarTekst({ fotos, vak: _msVakNaam(vak) }) : { error: true };
+  if (res && res.text) {
+    const ta = document.getElementById('ms-tekst'); if (ta) ta.value = (ta.value.trim() ? ta.value.trim() + '\n\n' : '') + res.text.trim();
+    _msLive(); try { trackEvent('mijnstof_foto', { n: fotos.length }); } catch (e) {}
+    if (typeof showToast === 'function') showToast('Lees het even na: klopt alles wat Vonk las?', '#22c55e', 3200);
+    return;
+  }
+  _msLive();
+  let msg = 'Het lukte niet om je foto te lezen. Probeer een scherpere foto bij goed licht.';
+  if (res && res.login) msg = 'Log in om een foto van je schrift om te zetten.';
+  else if (res && res.limit) msg = 'Je gratis AI-gebruik voor deze week is op. Met Slagio Plus kan het onbeperkt.';
+  else if (res && res.oudeServer) msg = 'Foto omzetten komt er bijna aan. Typ of plak je tekst voor nu.';
+  if (typeof showToast === 'function') showToast(msg, '#f59e0b', 3800);
+}
+function msSlagioBegrippen() {
+  const vakId = (document.getElementById('ms-vak') || {}).value;
+  const vak = (getVK() || []).find(v => v.id === vakId);
+  if (!vak) { if (typeof showToast === 'function') showToast('Kies eerst een vak', '#f59e0b'); return; }
+  const lijst = (vak.domeinen || []).filter(dm => (dm.nBeg || (dm.begrippen || []).length) > 0);
+  _msSheet(`<h3>Begin met Slagio-begrippen</h3><p>Kies een onderwerp. Ik zet de begrippen in je samenvatting; daarna pas je ze aan in je eigen woorden.</p>
+    <div class="msx-lijst">${(lijst.length ? lijst : vak.domeinen || []).map(dm => `<button class="msx-optie" onclick="_msBegrippenErin('${vak.id}','${dm.id}')"><b>${_msEsc(dm.naam)}</b><small>${dm.nBeg || (dm.begrippen || []).length || ''} begrippen</small></button>`).join('')}</div>
+    <button class="msx-knop licht" onclick="_msSheetDicht()">Annuleren</button>`);
+}
+function _msBegrippenErin(vakId, domId) {
+  const zet = () => {
+    const vak = (getVK() || []).find(v => v.id === vakId), dm = vak && (vak.domeinen || []).find(x => x.id === domId);
+    const beg = (dm && dm.begrippen) || [];
+    if (!beg.length) { if (typeof showToast === 'function') showToast('Hier staan nog geen begrippen', '#f59e0b'); return; }
+    const ta = document.getElementById('ms-tekst'); if (!ta) return;
+    const regels = ['# ' + dm.naam].concat(beg.slice(0, 40).map(b => (b.t || '').replace(/[:\n]/g, ' ').trim() + ': ' + String(b.d || '').replace(/\n/g, ' ').trim()));
+    ta.value = (ta.value.trim() ? ta.value.trim() + '\n\n' : '') + regels.join('\n');
+    const ti = document.getElementById('ms-titel'); if (ti && !ti.value) ti.value = dm.naam.slice(0, 80);
+    _msSheetDicht(); _msLive();
+    try { trackEvent('mijnstof_slagio_begrippen', { vak: vakId, dom: domId, n: beg.length }); } catch (e) {}
+  };
+  if (typeof ensureVakData === 'function' && typeof vakHydrated === 'function' && !vakHydrated(APP_LEVEL, vakId)) ensureVakData(APP_LEVEL, vakId, zet); else zet();
+}
+
+// ═══════ MIJN STOF: EZELSBRUGGETJES ═══════
+// Na een fout antwoord kun je een eigen ezelsbruggetje bedenken; de volgende keer
+// dat je die vraag beantwoordt, staat het in de uitleg.
+function _msTekst(html) { const el = document.createElement('div'); el.innerHTML = String(html || ''); return el.textContent.trim(); }
+function _msEzelSleutel(q) { return 'e' + _msHash(_msTekst(q.v) + '|' + _msTekst(q.o && q.o[q.c])); }
+let _msEzelQ = null;
+function msEzelInFeedback(fb, q, ok) {
+  if (!fb || !q || !q.o) return;
+  const d = msLaad(), k = _msEzelSleutel(q), e = d.e[k];
+  const box = document.createElement('div'); box.className = 'ms-ezel-fb';
+  if (e) box.innerHTML = `<div class="ms-ezel-toon"><span class="ms-ezel-ic">${_msIc('brug')}</span><span><b>Jouw ezelsbruggetje</b>${_msEsc(e.t)}</span><button onclick="msEzelSchrijf()" aria-label="Ezelsbruggetje wijzigen">Wijzig</button></div>`;
+  else if (!ok) box.innerHTML = `<button class="ms-ezel-knop" onclick="msEzelSchrijf()"><span class="ms-ezel-ic">${_msIc('brug')}</span>Bedenk een ezelsbruggetje</button>`;
+  else return;
+  _msEzelQ = q; fb.appendChild(box);
+}
+function msEzelSchrijf(sleutel) {
+  const d = msLaad();
+  let q = _msEzelQ, k = sleutel || (q ? _msEzelSleutel(q) : null); if (!k) return;
+  const e = d.e[k] || {}, vraag = e.v || (q ? _msTekst(q.v) : ''), antw = e.a || (q ? _msTekst(q.o[q.c]) : '');
+  _msSheet(`<div class="msx-vonk">${typeof mascotSVG === 'function' ? mascotSVG('denk', 72) : ''}</div>
+    <h3>Jouw ezelsbruggetje</h3>
+    <p class="msx-vraag">${_msEsc(vraag)}<br><b>${_msEsc(antw)}</b></p>
+    <textarea id="ms-ezel-ta" class="msx-ta" rows="3" maxlength="240" placeholder="Iets geks, een rijmpje of een beeld in je hoofd. Hoe gekker, hoe beter het blijft hangen.">${_msEsc(e.t || '')}</textarea>
+    <div class="msx-rij">${e.t ? `<button class="msx-knop licht" onclick="_msEzelWeg('${k}')">Verwijderen</button>` : `<button class="msx-knop licht" onclick="_msSheetDicht()">Later</button>`}<button class="msx-knop" onclick="_msEzelOp('${k}')">Bewaren</button></div>`);
+  _msEzelData = { v: vraag, a: antw, vak: e.vak || (ST && ST.vak ? (ST.vak.id === 'mijnstof' ? (ST.domein && ST.domein.naam) : ST.vak.naam) : '') || '' };
+  setTimeout(() => { const ta = document.getElementById('ms-ezel-ta'); if (ta) ta.focus(); }, 250);
+}
+let _msEzelData = null;
+function _msEzelOp(k) {
+  const ta = document.getElementById('ms-ezel-ta'), t = ta ? ta.value.trim() : ''; if (!t) { _msSheetDicht(); return; }
+  const d = msLaad(); d.e[k] = Object.assign({}, d.e[k] || {}, _msEzelData || {}, { t, ts: Date.now() }); msBewaar(d);
+  _msSheetDicht(); try { trackEvent('mijnstof_ezel', {}); } catch (e) {}
+  const knop = document.querySelector('.ms-ezel-fb'); if (knop && _msEzelQ) { const fb = knop.parentNode; knop.remove(); msEzelInFeedback(fb, _msEzelQ, true); }
+  if (document.getElementById('sc-mijnstof') && document.getElementById('sc-mijnstof').classList.contains('on')) msRender();
+}
+function _msEzelWeg(k) { const d = msLaad(); delete d.e[k]; d.x['e:' + k] = Date.now(); msBewaar(d); _msSheetDicht(); if (document.getElementById('sc-mijnstof').classList.contains('on')) msRender(); }
+function _msEzelLijstHtml(d) {
+  const lijst = Object.keys(d.e).map(k => Object.assign({ k }, d.e[k])).sort((a, b) => (b.ts || 0) - (a.ts || 0));
+  if (!lijst.length) return `<div class="ms-leeg"><h3>Je eigen ezelsbruggetjes</h3><p>Heb je een vraag fout in een quiz? Tik dan op <b>Bedenk een ezelsbruggetje</b>. Het komt hier te staan en je ziet het terug als je die vraag weer krijgt.</p></div>`;
+  return '<div class="ms-lijst2">' + lijst.map(e => `<button class="ms-item ms-ezel-item" onclick="_msEzelQ=null;msEzelSchrijf('${e.k}')">${e.vak ? `<span class="ms-item-vak">${_msEsc(e.vak)}</span>` : ''}<small class="ms-ezel-v">${_msEsc(e.v || '')}</small><b>${_msEsc(e.a || '')}</b><span class="ms-ezel-t">${_msEsc(e.t)}</span></button>`).join('') + '</div>';
+}
+
+// ═══════ MIJN STOF: MET JE ACCOUNT ═══════
+// Opslag: kolom user_data.mijnstof (jsonb) met per niveau {n,t,x,e}. Bestaat die
+// kolom nog niet, dan gaat het mee in profiel.sync (vlag slagio_ms_bundel=1).
+// Samenvoegen per id: de nieuwste versie (ts) wint; verwijderd (x) blijft verwijderd.
+const _MS_NIV = ['havo', 'vwo', 'vmbo'];
+let _msCloudT = null;
+function msAlles() { const o = {}; _MS_NIV.forEach(n => { try { const v = localStorage.getItem('slagio_mijnstof_' + n); if (v) o[n] = JSON.parse(v); } catch (e) {} }); return o; }
+function _msCloudPlan() {
+  if (typeof currentUser === 'undefined' || !currentUser) return;
+  clearTimeout(_msCloudT); _msCloudT = setTimeout(_msCloudPush, 2500);
+}
+async function _msCloudPush() {
+  try {
+    if (typeof currentUser === 'undefined' || !currentUser || typeof SB === 'undefined') return;
+    if (localStorage.getItem('slagio_ms_bundel') === '1') { if (typeof pushSyncBundle === 'function') pushSyncBundle(); return; }
+    const { error } = await SB.from('user_data').upsert({ user_id: currentUser.id, mijnstof: msAlles(), updated_at: new Date().toISOString() }, { onConflict: 'user_id' });
+    if (error) { localStorage.setItem('slagio_ms_bundel', '1'); if (typeof pushSyncBundle === 'function') pushSyncBundle(); }
+  } catch (e) {}
+}
+function msCloudBundel() { try { return localStorage.getItem('slagio_ms_bundel') === '1' ? msAlles() : undefined; } catch (e) { return undefined; } }
+function _msTs(o) { return (o && (o.ts || o.gemaakt)) || 0; }
+function _msSamen(a, b) {
+  a = a || {}; b = b || {};
+  const x = Object.assign({}, a.x || {}); Object.keys(b.x || {}).forEach(k => { x[k] = Math.max(x[k] || 0, b.x[k]); });
+  const lijst = (l1, l2) => { const m = {}; (l1 || []).concat(l2 || []).forEach(o => { if (o && o.id && (!m[o.id] || _msTs(o) > _msTs(m[o.id]))) m[o.id] = o; }); return Object.values(m).filter(o => !(x[o.id] && x[o.id] >= _msTs(o))); };
+  const e = {}; [a.e || {}, b.e || {}].forEach(src => Object.keys(src).forEach(k => { if (!e[k] || (src[k].ts || 0) > (e[k].ts || 0)) e[k] = src[k]; }));
+  Object.keys(e).forEach(k => { if (x['e:' + k] && x['e:' + k] >= (e[k].ts || 0)) delete e[k]; });
+  return { n: lijst(a.n, b.n), t: lijst(a.t, b.t), x, e };
+}
+function msCloudSamenvoegen(obj, bron) {
+  if (!obj || typeof obj !== 'object') return;
+  let anders = false;
+  _MS_NIV.forEach(niv => {
+    const remote = obj[niv]; if (!remote) return;
+    let local = null; try { local = JSON.parse(localStorage.getItem('slagio_mijnstof_' + niv) || 'null'); } catch (e) {}
+    const m = _msSamen(local, remote), js = JSON.stringify(m);
+    localStorage.setItem('slagio_mijnstof_' + niv, js);
+    if (js !== JSON.stringify(_msSamen(remote, {}))) anders = true;
+  });
+  // lokaal had iets dat de cloud nog niet kende: terugsturen
+  _MS_NIV.forEach(niv => { if (!obj[niv] && localStorage.getItem('slagio_mijnstof_' + niv)) anders = true; });
+  if (anders && bron === 'kolom') _msCloudPlan();
+  try { if (document.getElementById('sc-mijnstof').classList.contains('on')) msRender(); } catch (e) {}
+}
+function msCloudVanServer(data) {
+  if (!data) return;
+  if (Object.prototype.hasOwnProperty.call(data, 'mijnstof')) {
+    const wasBundel = localStorage.getItem('slagio_ms_bundel') === '1';
+    localStorage.setItem('slagio_ms_bundel', '0');
+    if (data.mijnstof) msCloudSamenvoegen(data.mijnstof, 'kolom');
+    else if (Object.keys(msAlles()).length || wasBundel) _msCloudPlan();
+  } else localStorage.setItem('slagio_ms_bundel', '1');
+}

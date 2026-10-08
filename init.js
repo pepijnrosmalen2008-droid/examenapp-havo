@@ -492,7 +492,7 @@ function _msStand(){
   try{const n=(typeof herhaalDueCount==='function')?herhaalDueCount():0;st.herhalen=n>0?{t:n+' klaar',heet:1}:{t:'alles bij'};}catch(e){}
   try{const t=getCountdownTarget();if(t){const d=Math.ceil(((t.dt||new Date(t.datum))-new Date())/864e5);st.rooster={t:'nog '+d+' dagen'};}}catch(e){}
   try{st.winkel={t:getCoins()+' munten'};}catch(e){}
-  try{const m=(typeof msStand==='function')?msStand():null;if(m){st.toetsen=m.t.indexOf('toets')===0?m:{t:'met aftelklok'};st.mijnstof=m.t.indexOf('toets')===0?{t:'kaartjes en quiz'}:m;}}catch(e){}
+  try{const m=(typeof msStand==='function')?msStand():null;if(m){st.toetsen=m.toets?m:{t:'met aftelklok'};st.mijnstof=m.toets?{t:'kaartjes en quiz'}:m;}}catch(e){}
   try{const L=ensureLeague();const d=LEAGUE_DIVISIONS[L.division];if(d)st.wedstrijd={t:d.naam};}catch(e){}
   try{const m=getMijnVakken();st.plan={t:m.length?'voor '+m.length+' vakken':'maak je plan'};}catch(e){}
   return st;
