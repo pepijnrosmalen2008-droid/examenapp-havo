@@ -355,6 +355,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "C2",
+      "lo": "nl.C.2",
+      "gs": 2,
+      "naam": "Tekstsoort, doel en lezersgroep afstemmen",
+      "beschrijving": "Je kiest bij een schrijfopdracht de juiste tekstsoort (uiteenzetting, beschouwing of betoog) en stemt inhoud en taal af op doel en lezers.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Doel van een tekst bepalen",
+       "Uiteenzetting",
+       "Beschouwing",
+       "Betoog",
+       "Lezersgroep en voorkennis",
+       "Register en toon"
+      ],
+      "nSv": 26,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
