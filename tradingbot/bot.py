@@ -95,8 +95,10 @@ def main() -> int:
     banner = {TradingMode.PAPER: "PAPER TRADING (simulatie)",
               TradingMode.SHADOW: "SHADOW MODE (live-pad, orders worden NIET verstuurd)",
               TradingMode.LIVE: "⚠️  LIVE TRADING MET ECHT GELD ⚠️"}[mode]
-    log.info("Autopilot start — mode: %s, strategie: %s, pairs: %s, interval: %d min",
-             banner, cfg.strategy.name, cfg.pairs, cfg.schedule.interval_minutes)
+    ritme = (f"{cfg.schedule.interval_seconds}s" if cfg.schedule.interval_seconds
+             else f"{cfg.schedule.interval_minutes} min")
+    log.info("Autopilot start — mode: %s, strategie: %s, pairs: %s, ritme: %s",
+             banner, cfg.strategy.name, cfg.pairs, ritme)
 
     db = Database(db_path)
     engine = build_engine(cfg, db, mode)
