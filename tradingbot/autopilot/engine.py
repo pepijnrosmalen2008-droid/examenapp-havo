@@ -312,11 +312,16 @@ class TradingEngine:
         # ── research-laag (optioneel): VOORSTELLEN, gaan verplicht door de risk engine ──
         if self.research_agent is not None:
             from .research import to_trade_signals
+            # evaluate() haalt óók de bronnen op en bewaart de auto-events; die voeden de
+            # gedachtegang (factor-overlay) altijd. Alleen als research.trade_signals aan staat,
+            # worden de voorstellen ook als losse orders gerouteerd. Staat die uit (all-in bot),
+            # dan werkt nieuws puur via de overtuiging — door dezelfde kostenpoort + rotatie.
             proposals = self.research_agent.evaluate(list(self.cfg.pairs), now)
-            for sig in to_trade_signals(proposals, self.cfg):
-                if sig.pair in blocked_pairs:
-                    continue
-                self._route_signal(sig, prices, now=now)
+            if getattr(self.cfg.research, "trade_signals", True):
+                for sig in to_trade_signals(proposals, self.cfg):
+                    if sig.pair in blocked_pairs:
+                        continue
+                    self._route_signal(sig, prices, now=now)
 
         # ── gedachtegang vastleggen (factoren + netto-beslissing van deze cycle) ──
         self._record_decision(candles, cash, equity, now, strategy_ran=True, prices=prices)

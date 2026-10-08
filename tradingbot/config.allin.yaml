@@ -52,6 +52,8 @@ strategy:
 research:
   enabled: true
   agent: allin
+  trade_signals: false        # nieuws vuurt GEEN losse koopjes af; het voedt de overtuiging,
+                              # die via de kostenpoort + rotatie bepaalt of er gehandeld wordt
   min_confidence: 0.6
   max_position_eur: 20
   events_file: research_events.json     # handmatige events blijven mogelijk

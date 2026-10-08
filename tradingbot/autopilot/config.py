@@ -115,6 +115,10 @@ class ResearchConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     enabled: bool = False
+    # Fire de research-laag ook losse orders af (True), of voedt hij alléén de overtuiging/
+    # gedachtegang (False)? Bij 'adaptive' zet je dit op False: nieuws telt dan mee in de
+    # conviction en gaat zo door dezelfde kostenpoort + rotatie, i.p.v. ongegate losse koopjes.
+    trade_signals: bool = True
     # 'rulebased' = handmatig events-bestand; 'newsfeed' = zelf publieke nieuwskoppen ophalen;
     # 'disclosures' = publieke politici-transacties (STOCK Act); 'onchain' = grote on-chain flows;
     # 'allin' = alle bronnen tegelijk in één bot (nieuws + politici + on-chain).

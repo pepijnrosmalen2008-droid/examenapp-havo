@@ -79,3 +79,23 @@ def test_news_agent_drives_trade_through_engine(monkeypatch, tmp_path):
     fills = [o for o in db.recent_orders() if o["status"] == "FILLED"]
     assert any(o["pair"] == "BTC-EUR" and o["side"] == "BUY" for o in fills)
     assert any("nieuws" in (o["reason"] or "") for o in fills)
+
+
+def test_trade_signals_false_feeds_overlay_but_fires_no_orders(monkeypatch, tmp_path):
+    """Met research.trade_signals=False vuurt nieuws GEEN losse orders af, maar de auto-events
+    blijven wel bewaard voor de gedachtegang/overtuiging."""
+    monkeypatch.setattr(nf, "auto_path", lambda cfg: tmp_path / f"news_{cfg.bot_id}.json")
+    cfg = _cfg(tmp_path)
+    cfg = cfg.model_copy(update={"research": cfg.research.model_copy(update={"trade_signals": False})})
+    heads = [("Bitcoin rallies as adoption surges to record high", None, "decrypt.co")]
+    db = __import__("autopilot.database", fromlist=["Database"]).Database(":memory:")
+    paper = PaperExchange(db, FakeMarket(), capital_eur=cfg.capital_eur,
+                          taker_fee_pct=cfg.costs.taker_fee_pct, slippage_pct=cfg.costs.slippage_pct)
+    eng = TradingEngine(cfg, db, paper, RiskEngine(cfg, db), get_strategy(cfg, db),
+                        TradingMode.PAPER, research_agent=_agent(cfg, heads))
+    eng.startup()
+    eng.cycle(NOW)
+    # geen losse nieuws-order uitgevoerd ...
+    assert not any("nieuws" in (o["reason"] or "") for o in db.recent_orders())
+    # ... maar het event is wél opgehaald en bewaard (voedt de overtuiging)
+    assert nf.load_auto_events(cfg, NOW)
