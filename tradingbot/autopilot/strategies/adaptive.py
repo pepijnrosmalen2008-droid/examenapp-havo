@@ -24,6 +24,7 @@ import logging
 from datetime import datetime
 
 from .. import factor_learning as fl
+from ..config import MIN_ORDER_EUR
 from ..factors import compute_reads
 from ..models import Candle, Position, Side, Signal
 from . import Strategy, register
@@ -83,22 +84,48 @@ class AdaptiveFactorStrategy(Strategy):
 
         held = {p.pair for p in positions if p.amount > 0}
         n_open = len(held)
+        buy_floor = max(buy_threshold, min_conviction_for_cost)
+        available = self.db.get_meta_float("bot_cash_eur", self.cfg.capital_eur)
+        have_cash = available >= MIN_ORDER_EUR
         signals: list[Signal] = []
+        sold: set[str] = set()
 
         # sterkste overtuiging eerst, zodat nieuwe posities naar de beste kansen gaan
         for pair, read in sorted(reads.items(), key=lambda kv: kv[1].conviction, reverse=True):
             holding = pair in held
             if holding:
                 if read.conviction <= sell_threshold:
+                    sold.add(pair)
                     signals.append(Signal(pair=pair, side=Side.SELL,
                                           reason=f"overtuiging {read.conviction:+.2f} gekanteld "
                                                  f"(≤ {sell_threshold:+.2f})",
                                           strategy=self.name))
-            elif (read.conviction >= max(buy_threshold, min_conviction_for_cost)
+            elif (have_cash and read.conviction >= buy_floor
                   and read.confidence >= min_confidence and n_open < max_positions):
                 n_open += 1
                 signals.append(Signal(pair=pair, side=Side.BUY,  # grootte laat de risk engine bepalen
                                       reason=f"geleerde overtuiging {read.conviction:+.2f} "
                                              f"(zekerheid {read.confidence:.0%}, dekt kosten)",
                                       strategy=self.name))
+
+        # ── Rotatie: geen cash maar wél een duidelijk betere kans? Verkoop de ZWAKSTE holding
+        #    en koop de betere ervoor in de plaats. Zo blijft hij actief handelen ook als alles
+        #    in munten zit. Alleen als de winst in overtuiging ruim boven de kosten uitkomt. ──
+        rotate_margin = float(self.params.get("rotate_margin", 0.15))
+        if not have_cash:
+            keepers = [(p, reads[p].conviction) for p in held if p in reads and p not in sold]
+            cands = [(p, r) for p, r in reads.items()
+                     if p not in held and r.conviction >= buy_floor and r.confidence >= min_confidence]
+            if keepers and cands:
+                worst_pair, worst_conv = min(keepers, key=lambda x: x[1])
+                best_pair, best_read = max(cands, key=lambda x: x[1].conviction)
+                if best_read.conviction > worst_conv + rotate_margin:
+                    signals.append(Signal(pair=worst_pair, side=Side.SELL,  # eerst cash vrijmaken
+                                          reason=f"rotatie: ruil zwakste holding ({worst_conv:+.2f}) "
+                                                 f"voor sterkere kans {best_pair} ({best_read.conviction:+.2f})",
+                                          strategy=self.name))
+                    signals.append(Signal(pair=best_pair, side=Side.BUY,
+                                          reason=f"rotatie-koop: overtuiging {best_read.conviction:+.2f} "
+                                                 f"(zekerheid {best_read.confidence:.0%})",
+                                          strategy=self.name))
         return signals

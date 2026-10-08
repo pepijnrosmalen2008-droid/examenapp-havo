@@ -72,3 +72,33 @@ def test_cost_gate_allows_when_edge_beats_fees(db):
     strat = get_strategy(cfg, db)
     buys = [s for s in strat.generate_signals({"AAA-EUR": up()}, [], NOW) if s.side == Side.BUY]
     assert buys
+
+
+def test_rotation_sells_weakest_to_buy_better_when_no_cash(db):
+    # geen cash (alles in munten): BBB is een zwakke/vlakke holding (niet gekanteld),
+    # AAA een sterke kans → rotatie ruilt ze.
+    flat = [Candle(i * D, 100.0, 100.0, 100.0, 100.0, 1.0) for i in range(200)]
+    cfg = make_config(pairs=["AAA-EUR", "BBB-EUR"],
+                      strategy={"name": "adaptive", "params": {"buy_threshold": 0.1,
+                                "min_confidence": 0.0, "edge_scale": 0.08, "rotate_margin": 0.1}})
+    strat = get_strategy(cfg, db)
+    db.set_meta("bot_cash_eur", "0")                       # geen cash → alleen rotatie kan handelen
+    pos = [Position(pair="BBB-EUR", amount=1.0, avg_price=100.0, opened_at=NOW.isoformat())]
+    candles = {"AAA-EUR": up(), "BBB-EUR": flat}           # AAA sterk op, BBB vlak/zwak
+    sigs = strat.generate_signals(candles, pos, NOW)
+    assert any(s.pair == "BBB-EUR" and s.side == Side.SELL for s in sigs)   # zwakste eruit
+    assert any(s.pair == "AAA-EUR" and s.side == Side.BUY for s in sigs)    # sterkste erin
+    order = [s.pair for s in sigs]
+    assert order.index("BBB-EUR") < order.index("AAA-EUR")  # eerst verkopen (cash vrij), dan kopen
+
+
+def test_no_rotation_when_cash_is_available(db):
+    cfg = make_config(pairs=["AAA-EUR", "BBB-EUR"],
+                      strategy={"name": "adaptive", "params": {"buy_threshold": 0.1,
+                                "min_confidence": 0.0, "edge_scale": 0.08}})
+    strat = get_strategy(cfg, db)
+    db.set_meta("bot_cash_eur", "1000")                    # genoeg cash → geen rotatie nodig
+    pos = [Position(pair="BBB-EUR", amount=1.0, avg_price=100.0, opened_at=NOW.isoformat())]
+    sigs = strat.generate_signals({"AAA-EUR": up(), "BBB-EUR": down()}, pos, NOW)
+    # BBB wordt niet als rotatie-ruil verkocht (hooguit als de overtuiging kantelt via de normale regel)
+    assert not any(s.strategy == "adaptive" and "rotatie" in s.reason for s in sigs)

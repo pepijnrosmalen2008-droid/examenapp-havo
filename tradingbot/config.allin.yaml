@@ -25,24 +25,26 @@ seed:
 
 risk:
   max_position_pct: 25        # grotere posities (meer winst én meer verlies per trade)
-  stop_loss_pct: 8            # verliezers SNEL afkappen — niet wanhopig vasthouden
-  take_profit_pct: 12         # winst op een opleving vastklikken
+  stop_loss_pct: 3            # scalp: verlies snel afkappen
+  take_profit_pct: 1.5        # scalp: kleine winst snel vastklikken (dekt fee + marge)
   max_daily_loss_pct: 15
   max_drawdown_pct: 40
   max_portfolio_heat_pct: null
 
-# Self-learning strategie, afgesteld als reflex-daytrader op korte candles.
+# Self-learning strategie in SCALP-modus: pakt beginnende stijgers, verkoopt snel met kleine winst,
+# en roteert (verkoopt de zwakste holding om een betere kans te kopen als er geen cash is).
 strategy:
   name: adaptive
   params:
-    candle_interval: 15m      # korte candles → reageert op recente bewegingen, niet op dagtrend
+    candle_interval: 5m       # korte candles → pakt beginnende stijgers snel op
     candle_limit: 200
-    buy_threshold: 0.12       # gevoelig: pakt opkomende stijgers vroeg
-    sell_threshold: -0.08     # verkoopt snel zodra de overtuiging kantelt
-    min_confidence: 0.08
+    buy_threshold: 0.08       # gevoelig instappen
+    sell_threshold: -0.08
+    min_confidence: 0.06
     max_positions: 6
     edge_scale: 0.08          # kostenpoort: conviction × dit = verwachte beweging
-    cost_mult: 1.0            # koop pas als die beweging > 1× de rondreis-kosten (fee + spread)
+    cost_mult: 1.0            # koop pas als die beweging > de rondreis-kosten (fee + spread)
+    rotate_margin: 0.12       # roteren mag pas als de nieuwe kans duidelijk beter is dan de zwakste holding
 
 # ALLE informatiebronnen tegelijk. Elke bron is een PROBE: hij mag voorstellen doen,
 # maar alles gaat door de confidence-poort én de risk engine, en wordt forward-only
