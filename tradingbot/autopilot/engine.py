@@ -571,10 +571,15 @@ class TradingEngine:
         try:
             markets = self.x.eur_markets()
             stats = self.x.market_stats()
-        except Exception:  # noqa: BLE001 — val terug op vorige selectie of config
-            log.exception("universe: markten ophalen mislukt; vorige selectie behouden")
-            stored = self.db.get_meta("universe_pairs")
-            return json.loads(stored) if stored else list(self.cfg.pairs)
+        except Exception as e:  # noqa: BLE001 — val terug op vorige selectie of config
+            # Eén regel i.p.v. een volledige traceback, en gecachet voor vandaag zodat dit
+            # niet elke cyclus opnieuw logt (anders spamt een backtest/haperende bron het scherm).
+            fallback = json.loads(self.db.get_meta("universe_pairs") or "null") or list(self.cfg.pairs)
+            if self.db.get_meta("universe_warned") != today:
+                log.warning("universe: markten ophalen mislukt (%s); val terug op %d pairs",
+                            type(e).__name__, len(fallback))
+                self.db.set_meta("universe_warned", today)
+            return fallback
         from .universe import select_universe
         pairs = select_universe(self.cfg, markets, stats)
         self.db.set_meta("universe_date", today)

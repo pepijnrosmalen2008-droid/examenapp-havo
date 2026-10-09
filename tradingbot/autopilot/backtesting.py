@@ -57,6 +57,15 @@ class ReplayMarket:
     def spread_pct(self, pair: str) -> float | None:
         return None  # candles bevatten geen bid/ask; circuit breaker slaat dit dan over
 
+    def eur_markets(self) -> list[dict]:
+        # Backtest/replay kent alleen de meegegeven pairs; geen universe-expansie buiten de data.
+        return [{"pair": p, "active": True} for p in self.data]
+
+    def market_stats(self) -> dict[str, dict]:
+        # Ruim boven de universe-drempels zodat de replay-pairs altijd geselecteerd blijven;
+        # spread onbekend in candles → 0 (circuit breaker heeft geen bid/ask op replay).
+        return {p: {"volume_eur": 1e12, "spread_pct": 0.0} for p in self.data}
+
     def candles(self, pair: str, interval: str = "1h", limit: int = 200, since_ms=None):
         i = self.index[pair]
         if interval == "1d":
