@@ -152,7 +152,10 @@ function _lgRealRows(L){
   const seen={};const out=[];
   c.players.forEach(p=>{
     if(!p||!p.did||p.did===mine)return;                       // mijn eigen device
-    const nm=(p.naam||'Speler').trim();
+    let nm=(p.naam||'').trim();
+    // Spelers zonder eigen naam kwamen als "Jij" binnen: dat leek op jezelf (of op
+    // een bot die "jij" heet). Zij krijgen een vaste naam op basis van hun device.
+    if(_lgGeenNaam(nm))nm=_lgNaamVoor(p.did);
     const key=nm.toLowerCase();
     if(myName&&key===myName)return;                           // mijn naam op een ander device
     if(seen[key]!==undefined){                                // ontdubbel op naam → hoogste XP
@@ -165,6 +168,8 @@ function _lgRealRows(L){
   return out;
 }
 
+function _lgGeenNaam(nm){const k=(nm||'').trim().toLowerCase();return !k||k==='jij'||k==='speler'||k==='you'||k==='ik';}
+function _lgNaamVoor(did){const h=_lgHash('naam|'+(did||''));return _LG_VN[h%_LG_VN.length]+' '+_LG_AN[(h>>>7)%_LG_AN.length];}
 function _lgMeName(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');return (p.naam&&p.naam.trim())?p.naam.trim():'Jij';}catch(e){return 'Jij';}}
 function _lgMeAvatar(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');const xp=(typeof getTotalXP==='function')?getTotalXP():0;return {id:p.animalId||null,stage:(typeof getAnimalStageIdx==='function')?getAnimalStageIdx(xp):0};}catch(e){return {id:null,stage:0};}}
 // Rendert de echte app-avatar (SVG/emoji per stadium); valt terug op een ster/vos.
@@ -326,7 +331,7 @@ function _lgDedupeVsMe(bots){
     const myNameLc=(_lgMeName()||'').trim().toLowerCase();
     const myAv=_lgMeAvatar();
     bots.forEach((b,i)=>{
-      if((b.naam||'').trim().toLowerCase()===myNameLc){
+      if((b.naam||'').trim().toLowerCase()===myNameLc||_lgGeenNaam(b.naam)){
         const h=_lgHash((b.naam||'')+'|xn'+i);
         b.naam=_LG_VN[h%_LG_VN.length]+' '+_LG_AN[(h>>>7)%_LG_AN.length];
       }
@@ -409,7 +414,7 @@ function leagueSyncAndFetch(force){
   (async()=>{
     try{
       const sdiv=_lgSyncDiv(L.division);
-      await SB.rpc('league_sync',{p_did:_DID,p_naam:_lgMeName(),p_animal:me.id,p_stage:me.stage||0,p_division:sdiv,p_week:L.week,p_xp:L.weekXP||0});
+      await SB.rpc('league_sync',{p_did:_DID,p_naam:(_lgGeenNaam(_lgMeName())?_lgNaamVoor(_DID):_lgMeName()),p_animal:me.id,p_stage:me.stage||0,p_division:sdiv,p_week:L.week,p_xp:L.weekXP||0});
       const {data,error}=await SB.rpc('league_cohort',{p_division:sdiv,p_week:L.week});
       if(!error&&Array.isArray(data)){
         window._lgRealCache={week:L.week,division:L.division,players:data,ts:Date.now()};

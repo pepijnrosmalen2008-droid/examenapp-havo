@@ -267,6 +267,7 @@ function show(id,_noHash){
   }
   if(id==='sc-home'){try{renderComebackCard();}catch(e){}try{if(typeof renderRegHome==='function')renderRegHome();}catch(e){}try{if(typeof kingdomCheck==='function')setTimeout(kingdomCheck,900);}catch(e){}try{setTimeout(()=>{if(typeof _lgMaybeCeremony==='function')_lgMaybeCeremony();},700);}catch(e){}try{renderFeatDisc();}catch(e){}try{renderKlasHome();}catch(e){}try{setTimeout(()=>{if(typeof window._pwaProbeer==='function')window._pwaProbeer();},6000);}catch(e){}
     try{setTimeout(()=>{if(document.getElementById('sc-home')?.classList.contains('on')&&!document.querySelector('#ctuto-overlay[style*="block"]')&&typeof vonkOnboard==='function'&&(typeof homeMoment!=='function'||!window._homeMoment||window._homeMoment==='welkom')){let _al=false;try{_al=!!localStorage.getItem('slagio_vonk_welkom');}catch(e){}if(!_al&&homeMoment('welkom'))vonkOnboard('home');}},2000);}catch(e){}}
+  if(id==='sc-schedule'){try{schAllesOpen();}catch(e){}}
   if(id==='sc-schedule'&&localStorage.getItem('slagio_plan_generated')&&!document.getElementById('studieplan-content')?.children.length){try{renderStudieplan();}catch(e){}}
   if(id==='sc-studieplan'){try{spInitPrefs();}catch(e){}if(localStorage.getItem('slagio_plan_generated')){try{renderStudieplan();}catch(e){}}try{if(typeof renderFbStudieplanRow==='function')renderFbStudieplanRow();}catch(e){}try{setTimeout(()=>{if(typeof vonkOnboard==='function')vonkOnboard('studieplan');},900);}catch(e){}}
   // Welcome screen gets its own indigo theme; level pages get their own theme

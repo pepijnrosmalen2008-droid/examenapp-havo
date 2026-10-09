@@ -168,6 +168,8 @@ function updateSchYearUI(){
 }
 function getMijnVakken(){try{const d=JSON.parse(localStorage.getItem('examenapp_'+lvlCol('mijnvakken'))||'[]');return Array.isArray(d)?d:(d.list||[]);}catch(e){return [];}}
 function setMijnVakken(arr){cloudSet(lvlCol('mijnvakken'),{list:arr});try{pushSyncBundle();}catch(e){}}
+// Bij openen van het rooster staat alles uitgeklapt.
+function schAllesOpen(){[1,2,3].forEach(n=>{const sec=document.getElementById('sch-sec-'+n);if(!sec)return;sec.style.display='';const b=sec.previousElementSibling;if(b)b.classList.remove('sch-collapsed');});}
 function schToggle(n){
   const sec=document.getElementById('sch-sec-'+n);if(!sec)return;
   const btn=sec.previousElementSibling;
