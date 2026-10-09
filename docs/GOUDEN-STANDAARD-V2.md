@@ -23,6 +23,43 @@ niet wélke denkfout je maakte), grafieken zonder gelijke schaal, een bijschrift
 verkeerde kleur noemde, en een pH-figuur die een feitelijke fout bevatte (trypsine bij
 pH 7 op nul). v2 maakt die dingen controleerbaar.
 
+## 0. Strengere lat sinds 9 okt 2026: moeilijker en rijkere figuren
+
+De eerste 24 routine-leerdoelen (havo Nederlands A-D) waren correct en de uitleg per fout
+antwoord was goed, maar ze waren **makkelijker dan het examen** (contexten van één of twee
+zinnen, gemiddeld 6 R3-vragen) en de **figuren waren opgemaakte lijstjes** (gemiddeld 1-2
+tekenelementen per figuur, bi.M3 heeft er 4-18). Voor nieuwe leerdoelen gelden daarom deze
+extra eisen, hard in `check-leerdoel.mjs` (live modules krijgen alleen een waarschuwing):
+
+| | eis | waarom |
+|---|---|---|
+| R3 (examenniveau) | **min. 8 vragen**, waarvan 80% met een casus/tekst van ≥120 tekens | het examen begint bij een situatie |
+| R2 / R1 | R2 min. 8, R1 max. 7 | minder herkennen, meer toepassen |
+| contextvragen | min. 8, gemiddeld ≥150 tekens | een casus is meer dan één zin |
+| kale definitievragen | max. 3 | |
+| taalvak met CE | min. **2 leesteksten van 500-1400 tekens**, elk met min. 3 vragen (zelfde tekst in `ctx`) | het CE werkt met hele teksten |
+| examenvragen (`oe`) | min. 4 met een casus/bron ≥150 tekens; open vragen met puntenverdeling ("(1p)") | zoals een echt correctievoorschrift |
+| figuren | **min. 4** figuren/clips | |
+| lijstfiguur | max. 1 figuur met < 3 lijnen/paden/vormen (alleen vakjes met tekst) | een lijst kan ook als tekst |
+| rijke figuur | **min. 2** met ≥6 lijnen/paden/vormen en ≥5 labels (een clip telt mee) | een figuur moet iets laten zien |
+
+**bi.M3 blijft de referentie voor uitleg per fout antwoord en voor figuren**, maar haalt de nieuwe
+moeilijkheidseis zelf net niet (7 R3-vragen, 6 met context). Ga voor moeilijkheid uit van deze tabel.
+
+### Wat is een R3-vraag op examenniveau?
+- Er is een **situatie**: een proef met meetresultaten, een casus, een bron, een tekstfragment.
+- De leerling moet **twee stappen** zetten: eerst iets uit de bron halen, dan een begrip toepassen
+  of een conclusie trekken ("Welke conclusie is juist?", "Wat verklaart de daling na minuut 6?",
+  "Welke functie heeft alinea 4 ten opzichte van alinea 3?").
+- De afleiders zijn **plausibel voor wie half begrijpt**: een conclusie die te ver gaat, een
+  verklaring die klopt maar niet bij deze meting hoort, het verband omgedraaid.
+- Niet: een definitie herkennen met een zin ervoor geplakt.
+
+Slecht (R3 in nl.D3): ctx "Het regende hard. Daarom bleef de wedstrijd uit.": vraag "Welke zin is de
+oorzaak?" Dat is R1 met een fragment.
+Goed: een alinea van 6-8 zinnen met twee verbanden door elkaar, en de vraag "Welk verband bestaat er
+tussen zin 3 en zin 5?" met als afleiders het verband tussen twee andere zinnen en het omgekeerde verband.
+
 ## 1. De module (bestand `content-pending/<niveau>-<vak>-<id>.json`)
 
 ```js
@@ -51,7 +88,7 @@ Vorm per vraag: `{ v, o[4], c, d, s, u, uo[4], uh, ctx? }`.
 | `o` | 4 opties, uniek, ongeveer even lang. Juist antwoord in max. 40% de langste en max. 40% op één positie. |
 | `d` | R-niveau: 1 herkennen/begrijpen · 2 toepassen/onderscheiden · 3 casus/transfer/examenredeneren. **Min. 4 per niveau.** |
 | `s` | index in `onderwerpen`. **Elk onderwerp min. 2 vragen.** Hierop draait de adaptieve vervolgvraag. |
-| `ctx` | casus, meetreeks, tabel in tekst, bronfragment of tekstfragment (40-420 tekens). **Min. 5 per module.** |
+| `ctx` | casus, meetreeks, tabel in tekst, bronfragment of tekstfragment (40-600 tekens, bij taalvakken tot 1400 voor een leestekst). **Min. 8 per module, gemiddeld ≥150 tekens** (zie §0). |
 | `uo` | uitleg per optie, zie hieronder. |
 | `u` | de kernregel in één zin. |
 | `uh` | ezelsbruggetje: hoe herken je deze valkuil de volgende keer. |
@@ -113,7 +150,25 @@ Vaste opbouw (classes uit styles.css):
 - min. één `sam-tip` (examentip); waar nuttig `sam-onthoud`
 - 2.500-14.000 tekens leestekst; min. 80% van de begrippen komt erin voor.
 
-### Beelden die echt over de stof gaan
+### Beelden die echt over de stof gaan (min. 4, waarvan min. 2 rijk)
+Teken het **verband**, niet de lijst. Een rijtje vakjes met tekst ("oorzaak: omdat, doordat") is
+geen figuur maar een tabel: zet dat in een `sam-table` of in de tekst. Per vak een paar
+voorbeelden van rijke figuren:
+
+| vak | rijke figuur |
+|---|---|
+| biologie, scheikunde, natuurkunde | grafiek met assen, ticks op gelijke schaal, astitels en het kernpunt gemarkeerd; doorsnede met aanwijslijnen; proces/cyclus met pijlen en tussenstappen; opstelling van een proef |
+| wiskunde | grafiek met assenstelsel, roosterlijnen en de gevraagde waarde afgelezen met stippellijnen; meetkundige figuur met hoeken/lengtes |
+| economie, aardrijkskunde | vraag-aanbodgrafiek met evenwicht en verschuiving; kaartschets met legenda; stroomschema met geldstromen |
+| geschiedenis | tijdlijn met schaal, periodes en gebeurtenissen; oorzaak-gevolgketen met pijlen |
+| Nederlands en talen | **geannoteerd tekstfragment**: de alinea zelf, met haken, onderstrepingen en pijlen naar labels (standpunt, argument, signaalwoord); argumentatieboom met verbindingslijnen; tekststructuur als blokken met pijlen voor de verbanden |
+
+Het script telt per figuur de tekenelementen (`path`, `line`, `circle`, `ellipse`, `polygon`,
+`polyline`) en labels (`text`). Een figuur met < 3 tekenelementen is een lijstfiguur (max. 1).
+Een rijke figuur heeft ≥ 6 tekenelementen en ≥ 5 labels. Een viewBox van 320 × 180-320 is
+normaal; gebruik de hoogte als de figuur dat nodig heeft.
+
+Goede soorten (als aanvulling):
 Een beeld moet iets laten zien wat tekst slechter kan. Goede soorten:
 - **grafiek** met assen, ticks op een **gelijke schaal**, astitels en de kern gemarkeerd
   (optimum, snijpunt, verzadiging);
@@ -151,9 +206,14 @@ in `ctx`. **Verzin nooit een echte CE**: `bron` is "Examenstijl", nooit "CE 2023
 echt uit een examen komt (zie DoD §8).
 
 ## 5. Vaardigheidsvakken (Nederlands, talen, vaardigheden-domeinen)
-- Vragen werken op **fragmenten** in `ctx` (eigen, kort, max. 420 tekens): "Wat is de functie
-  van alinea 3?", "Welk verband geeft 'daardoor' aan?", "Welk argument ondersteunt het
-  standpunt?". Geen begripsdrill als de vaardigheid zelf getoetst wordt.
+- Vragen werken op **fragmenten** in `ctx`: "Wat is de functie van alinea 3?", "Welk verband
+  geeft 'daardoor' aan?", "Welk argument ondersteunt het standpunt?". Geen begripsdrill als de
+  vaardigheid zelf getoetst wordt.
+- **CE-domeinen (leesvaardigheid, samenvatten): min. 2 eigen leesteksten van 500-1400 tekens**
+  (4-7 genummerde alinea's, zoals in het examen), elk met min. 3 vragen. Zet dezelfde tekst in
+  `ctx` van elke vraag die erbij hoort; de poort vergelijkt die vragen dan alleen op de vraag zelf.
+  Schrijf de teksten zelf (betoog, beschouwing, uiteenzetting over een herkenbaar onderwerp);
+  neem nooit een echte examentekst over.
 - SE-onderdelen (mondeling, schrijven) toetsen wat toetsbaar is: kiezen tussen formuleringen,
   opbouw herkennen, fouten vinden, beoordelen met criteria.
 - Moderne vreemde talen: fragmenten en opties in de doeltaal, uitleg in het Nederlands.

@@ -9,6 +9,8 @@ const woorden = s => new Set(String(s || '').toLowerCase().normalize('NFD').repl
 const jaccard = (a, b) => { const A = woorden(a), B = woorden(b); if (!A.size || !B.size) return 0; let i = 0; A.forEach(w => { if (B.has(w)) i++; }); return i / (A.size + B.size - i); };
 const zichtbaar = html => String(html || '').replace(/<!--[\s\S]*?-->/g, '').replace(/<svg[\s\S]*?<\/svg>/g, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&[a-z]+;/g, 'x').replace(/\s+/g, ' ').trim();
 const DEF_STAM = /^(wat is|wat zijn|wat betekent|wat houdt|wat wordt (er )?bedoeld|welke omschrijving|hoe heet)/i;
+// Taalvakken: bij een CE-domein horen echte leesteksten (zie §5 van de lat).
+const TAALVAK = /^(nl|en|du|fa|sp|la|gr|fi|it|tu|ar|ch|ru)$/;
 const KAAL_NEE = /^(nee|fout|onjuist|niet juist|klopt niet)\b[^.]{0,45}\.?$/i;
 
 export function checkV2(ld, samHtml, opt = {}) {
@@ -17,6 +19,8 @@ export function checkV2(ld, samHtml, opt = {}) {
   // (check-leerdoel.mjs), zacht in CI voor modules die al live staan.
   const streng = opt.streng ? hard : soft;
   const sv = ld.sv || [], ond = ld.onderwerpen || [];
+  const vak = String(ld.lo || '').split('.')[0].toLowerCase();
+  const taal = TAALVAK.test(vak), ceTaal = taal && /CE/.test(String(ld.ceStatus || ''));
   if (!ond.length) hard.push('onderwerpen[] ontbreekt (nodig voor s-tags en adaptief oefenen)');
   // naam en beschrijving staan op het leerdoelenscherm: geschreven voor de leerling, zonder jargon
   if (/gouden|standaard|module|engine|\bR[1-5]\b|leerdoel-id|[a-z]{2}\.[A-Z]\.\d/i.test((ld.naam || '') + ' ' + (ld.beschrijving || ''))) hard.push('naam/beschrijving bevat intern jargon (gouden standaard, module, R-niveau, leerdoel-id): schrijf voor de leerling');
@@ -34,8 +38,9 @@ export function checkV2(ld, samHtml, opt = {}) {
     const v = String(q.v || '');
     if (/[«»]/.test(v)) hard.push(`${t}: sjabloonvraag met «» - schrijf een echte vraag`);
     if (DEF_STAM.test(v.trim())) defStam++;
-    if (q.ctx && String(q.ctx).trim().length >= 40) { metCtx++; if (String(q.ctx).length > 420) hard.push(`${t}: ctx te lang (${String(q.ctx).length} > 420): kort de casus in`); }
-    stammen.push((v + ' ' + (q.ctx || '')).trim());
+    const maxCtx = taal ? 1400 : 600;
+    if (q.ctx && String(q.ctx).trim().length >= 40) { metCtx++; if (String(q.ctx).length > maxCtx) hard.push(`${t}: ctx te lang (${String(q.ctx).length} > ${maxCtx}): kort de casus in`); }
+    stammen.push({ v, ctx: String(q.ctx || '').trim() });
     const uo = Array.isArray(q.uo) ? q.uo : [];
     uo.forEach((w, k) => {
       const s = String(w || '').trim();
@@ -71,8 +76,30 @@ export function checkV2(ld, samHtml, opt = {}) {
     if (k !== q.c && wc(o) <= 2 && wc((q.o || [])[q.c]) >= 3 && q.ctx && String(q.ctx).toLowerCase().includes(String(o).toLowerCase().trim())) nep.push(`Q${i + 1} "${o}"`);
   }));
   if (nep.length) streng.push(`opvulafleiders (los woord uit het fragment, meteen weg te strepen): ${nep.slice(0, 6).join(', ')}: vervang door een echte denkfout van leerlingen`);
-  for (let a = 0; a < stammen.length; a++) for (let b = a + 1; b < stammen.length; b++)
-    if (jaccard(stammen[a], stammen[b]) > 0.75) hard.push(`Q${a + 1} en Q${b + 1} zijn bijna dezelfde vraag`);
+  // Vragen bij dezelfde leestekst delen hun ctx: vergelijk dan alleen de vraag zelf.
+  for (let a = 0; a < stammen.length; a++) for (let b = a + 1; b < stammen.length; b++) {
+    const A = stammen[a], B = stammen[b], zelfdeTekst = A.ctx && A.ctx === B.ctx;
+    const sim = zelfdeTekst ? jaccard(A.v, B.v) : jaccard(A.v + ' ' + A.ctx, B.v + ' ' + B.ctx);
+    if (sim > (zelfdeTekst ? 0.6 : 0.75)) hard.push(`Q${a + 1} en Q${b + 1} zijn bijna dezelfde vraag`);
+  }
+
+  // ── Moeilijker (okt 2026, na de rating: routine-output was goed maar makkelijker dan het examen).
+  // Hard vóór integratie (streng), waarschuwing in CI voor modules die al live staan.
+  if (perD[3] < 8) streng.push(`R3: ${perD[3]} vragen (min. 8): meer examenniveau, met een casus of tekst en twee stappen redeneren`);
+  if (perD[2] < 8) streng.push(`R2: ${perD[2]} vragen (min. 8)`);
+  if (perD[1] > 7) streng.push(`R1: ${perD[1]} vragen (max. 7): minder herkennen, meer toepassen`);
+  const d3 = sv.filter(q => q.d === 3), d3ctx = d3.filter(q => String(q.ctx || '').trim().length >= 120).length;
+  if (d3.length && d3ctx / d3.length < 0.8) streng.push(`R3: ${d3ctx} van ${d3.length} met een casus/tekst van min. 120 tekens (min. 80%): examenvragen beginnen bij een situatie, niet bij een definitie`);
+  const ctxL = sv.map(q => String(q.ctx || '').trim().length).filter(n => n >= 40);
+  if (ctxL.length < 8) streng.push(`${ctxL.length} vragen met ctx (min. 8)`);
+  else if (ctxL.reduce((a, n) => a + n, 0) / ctxL.length < 150) streng.push(`ctx gemiddeld ${Math.round(ctxL.reduce((a, n) => a + n, 0) / ctxL.length)} tekens (min. 150): geef de leerling een echte casus, meetreeks of tekst, geen losse zin`);
+  if (defStam > 3) streng.push(`${defStam} kale definitievragen (max. 3 bij nieuwe leerdoelen)`);
+  if (ceTaal) {
+    const teksten = {};
+    sv.forEach(q => { const c = String(q.ctx || '').trim(); if (c.length >= 500) teksten[c] = (teksten[c] || 0) + 1; });
+    const lang = Object.values(teksten).filter(n => n >= 3).length;
+    if (lang < 2) streng.push(`leesteksten: ${lang} tekst(en) van 500-1400 tekens met min. 3 vragen (min. 2): het CE werkt met echte teksten, niet met losse zinnen. Zet dezelfde tekst in ctx van elke vraag erbij`);
+  }
   ond.forEach((o, k) => { if (perS[k] < 2) hard.push(`onderwerp ${k} "${o}": ${perS[k]} vraag/vragen (min. 2, zodat de vervolgvraag na een fout iets heeft)`); });
   [1, 2, 3].forEach(d => { if (perD[d] < 4) hard.push(`R${d}: ${perD[d]} vragen (min. 4 per niveau, voor de adaptieve trap)`); });
   if (defStam > 5) hard.push(`${defStam} kale definitievragen ("Wat is ...?"): max. 5, de rest toepassen/onderscheiden/redeneren`);
@@ -83,6 +110,11 @@ export function checkV2(ld, samHtml, opt = {}) {
   const oe = ld.oe || [];
   if (oe.length < 5) hard.push(`oe: ${oe.length} < 5 examenvragen`);
   oe.forEach((q, i) => { if (!q.u || String(q.u).trim().length < 60) hard.push(`oe ${i + 1}: modelantwoord (u) te kort (< 60): schrijf het antwoord zoals een correctievoorschrift`); });
+  const oeCtx = oe.filter(q => String(q.ctx || '').trim().length >= 150).length;
+  if (oe.length && oeCtx < Math.min(4, oe.length)) streng.push(`examenvragen: ${oeCtx} met een casus/bron van min. 150 tekens (min. 4)`);
+  const open = oe.filter(q => !Array.isArray(q.o) || !q.o.length); // meerkeuze = 1 punt, geen verdeling nodig
+  const oePunt = open.filter(q => /\(\s*\d\s*p\s*\)|\d\s*punt|\bpunt(en)?\b/i.test(String(q.u || ''))).length;
+  if (open.length && oePunt < open.length) streng.push(`examenvragen: ${open.length - oePunt} open modelantwoord(en) zonder puntenverdeling ("(1p)", "1 punt voor ..."), zoals in een correctievoorschrift`);
 
   if (samHtml != null) {
     const h = String(samHtml);
@@ -104,6 +136,15 @@ export function checkV2(ld, samHtml, opt = {}) {
       const m = caps.match(/\b(oranje|blauwe?|paarse?|groene?) (zone|lijn|curve|vlak|deel|gebied|pijl)\b/i);
       if (m) hard.push(`samenvatting verwijst naar "${m[0]}" maar var(--or) is per niveau een andere kleur: noem de vorm, niet de kleur`);
     }
+    // ── Uitgebreidere figuren (okt 2026): geen opgemaakte lijstjes, echte tekeningen.
+    const svgs = [...h.matchAll(/<div class="sam-(figure|clip)[^"]*">[\s\S]*?<svg[\s\S]*?<\/svg>/g)].map(m => ({ clip: m[1] === 'clip', svg: m[0] }));
+    const teken = x => (x.match(/<(path|line|circle|ellipse|polygon|polyline)\b/g) || []).length;
+    const labels = x => (x.match(/<text\b/g) || []).length;
+    if (svgs.length < 4) streng.push(`samenvatting: ${svgs.length} figuren/clips (min. 4)`);
+    const lijst = svgs.filter(f => !f.clip && teken(f.svg) < 3).length;
+    if (lijst > 1) streng.push(`samenvatting: ${lijst} figuren zijn alleen vakjes met tekst (max. 1): teken het verband (pijlen, lijnen, assen, haken, een doorsnede), geen opgemaakte lijst`);
+    const rijk = svgs.filter(f => f.clip || (teken(f.svg) >= 6 && labels(f.svg) >= 5)).length;
+    if (rijk < 2) streng.push(`samenvatting: ${rijk} rijke figuren (min. 2 met ≥6 lijnen/paden/vormen en ≥5 labels, of een clip): denk aan een grafiek met assen en ticks, een doorsnede, een proces met pijlen, een geannoteerd tekstfragment`);
     const sleutel = [...beg.map(b => b.t), ...ond].flatMap(x => String(x || '').toLowerCase().split(/[\s/(),&:]+/)).filter(w => w.length >= 5);
     const blokken = h.match(/<div class="sam-(figure|clip)[^"]*">[\s\S]*?(<\/svg>[\s\S]*?<\/div>)/g) || [];
     blokken.forEach((b, i) => {

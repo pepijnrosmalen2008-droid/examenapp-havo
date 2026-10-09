@@ -16,8 +16,9 @@ Je bent Claude Code en werkt aan Slagio, een examentrainer voor havo/vwo/vmbo. D
 
 STAP 0 - Lees eerst (schrijf nog niets):
 - `CLAUDE.md` (vooral "Adding content" en "Mini-clips").
-- `docs/GOUDEN-STANDAARD-V2.md`: dit is de lat, bindend.
-- De referentiemodule: `content-pending/havo-bi-M3.json` en `content-pending/havo-bi-M3.html`. Render hem één keer (`node scripts/render-leerdoel.mjs havo bi M3`) en bekijk de png's met de Read-tool, zodat je ziet hoe goed eruitziet.
+- `docs/GOUDEN-STANDAARD-V2.md`: dit is de lat, bindend. Lees §0 (strengere lat sinds 9 okt) als eerste: moeilijker en rijkere figuren.
+- De referentiemodule: `content-pending/havo-bi-M3.json` en `content-pending/havo-bi-M3.html`. Render hem één keer (`node scripts/render-leerdoel.mjs havo bi M3`) en bekijk de png's met de Read-tool, zodat je ziet hoe goed eruitziet. bi.M3 is het voorbeeld voor uitleg per fout antwoord en voor figuren; voor moeilijkheid geldt §0 van de lat (strenger dan bi.M3).
+- De Nederlands-leerdoelen A t/m D (havo-nl-*) zijn GEEN voorbeeld meer: ze zijn te makkelijk en hun figuren zijn lijstjes. Doe het beter.
 - `docs/CONTENT-EXPANSION-QUEUE.md`.
 
 STAP 1 - Kies het leerdoel:
@@ -28,16 +29,20 @@ STAP 1 - Kies het leerdoel:
 
 STAP 2 - Maak de module (bestanden `content-pending/<niveau>-<vak>-<id>.json` en `.html`):
 - Bronnen: de syllabus-tekst, het leerdoel in knowledge (met misconcepties), de bestaande domeinsamenvatting en domeinvragen als grondstof. Neem geen sjabloonvragen over ("Wat houdt «X» in?").
-- Volg `docs/GOUDEN-STANDAARD-V2.md` precies: `gs:2`, `lo`, 4-7 `onderwerpen`, 25-30 vragen met `s` per vraag (elk onderwerp min. 2), min. 4 vragen per R-niveau, min. 5 met een casus/meetreeks/fragment in `ctx`, max. 5 kale definitievragen, uitleg per fout antwoord die de denkfout benoemt (70-360 tekens) en uitleg bij het juiste antwoord die zegt waarom (vanaf "Klopt:"), min. 10 begrippen, 5 examenvragen met modelantwoord en `bron: "Examenstijl"`.
+- Volg `docs/GOUDEN-STANDAARD-V2.md` precies: `gs:2`, `lo`, 4-7 `onderwerpen`, 25-30 vragen met `s` per vraag (elk onderwerp min. 2), **R1 max. 7, R2 min. 8, R3 min. 8 op examenniveau (situatie + twee stappen redeneren, 80% met een casus van ≥120 tekens)**, **min. 8 vragen met ctx (gemiddeld ≥150 tekens)**, max. 3 kale definitievragen, **taalvak met CE: min. 2 eigen leesteksten van 500-1400 tekens met elk min. 3 vragen**, uitleg per fout antwoord die de denkfout benoemt (70-360 tekens) en uitleg bij het juiste antwoord die zegt waarom (vanaf "Klopt:"), min. 10 begrippen, 5 examenvragen met modelantwoord en `bron: "Examenstijl"`.
 - `naam` en `beschrijving` zijn voor de leerling: geen jargon zoals "gouden standaard", "module" of leerdoel-codes.
-- Samenvatting: intro, begrippenlijst, min. 3 hoofdstukken, elk met een figuur of clip die echt over de stof gaat (grafiek met gelijke schaal, proces in stappen, vergelijking, doorsnede; bij taalvakken tekst- of argumentatieschema), een examentip. Noem nooit een kleur in de tekst (de themakleur verschilt per niveau). Labels minimaal font-size 11 bij een viewBox van 320 breed.
+- Samenvatting: intro, begrippenlijst, min. 3 hoofdstukken, elk met een figuur of clip die echt over de stof gaat, een examentip. **Min. 4 figuren/clips, waarvan min. 2 rijk (≥6 lijnen/paden/vormen en ≥5 labels) en hooguit 1 lijstfiguur.** Teken het verband, niet de lijst: grafiek met assen en ticks, doorsnede met aanwijslijnen, proces met pijlen, bij taalvakken een geannoteerd tekstfragment (de alinea zelf met haken, onderstrepingen en pijlen naar labels) of een argumentatieboom met verbindingslijnen. Zie de tabel per vak in §3 van de lat.
+  Noem nooit een kleur in de tekst (de themakleur verschilt per niveau). Labels minimaal font-size 11 bij een viewBox van 320 breed.
+- Examenvragen: min. 4 van de 5 met een casus/bron van ≥150 tekens; open vragen met puntenverdeling ("(1p)").
 - Clips: hergebruik een bestaande clip als hij inhoudelijk past (pas labels en bijschriften aan). Een nieuwe clip mag alleen via de spec-engine (`SPECS` in sam-clip.js) en alleen als je de frames hebt bekeken en ze kloppen. Twijfel: maak een statische stappenfiguur.
-- Verzin nooit feiten, examenvragen of bronnen. Vaardigheidsvakken: vragen op korte, zelfgeschreven fragmenten in `ctx`.
+- Verzin nooit feiten, examenvragen of bronnen. Vaardigheidsvakken: vragen op zelfgeschreven fragmenten en leesteksten in `ctx` (bij een CE-domein min. 2 teksten van 500-1400 tekens, zie §5 van de lat); neem nooit een echte examentekst over.
 
 STAP 3 - Keur je eigen werk (herhaal tot alles klopt):
 - `node scripts/check-leerdoel.mjs content-pending/<x>.json content-pending/<x>.html` moet "KLAAR" geven.
 - `node scripts/render-leerdoel.mjs --html content-pending/<x>.html --uit /tmp/r-<x>` mag geen harde fouten geven. Bekijk daarna ELKE png met de Read-tool (pagina licht en donker, elke figuur, clipframes). Vraag je per figuur af: klopt dit inhoudelijk, is het leesbaar op een telefoon, leert een leerling er iets van? Zo niet: verbeteren en opnieuw renderen.
 - Lees daarna alle vragen na als een strenge docent: is er precies één juist antwoord, klopt het juiste antwoord met de syllabus, benoemt elke uitleg de echte denkfout, verraadt de vraag het antwoord niet? Verbeter wat niet klopt.
+- Toets de moeilijkheid: zou een gemiddelde examenkandidaat elke R3-vraag in één keer goed hebben zonder de bron te lezen? Dan is hij te makkelijk. Zijn afleiders weg te strepen zonder de stof te kennen? Vervangen.
+- Toets elke figuur: kan dit ook als een rijtje tekst? Dan is het geen figuur; teken het verband.
 
 STAP 4 - Integreren en poorten:
 - `node scripts/integreer-leerdoel.mjs <niveau> <vak> <domein> content-pending/<x>.json content-pending/<x>.html`
