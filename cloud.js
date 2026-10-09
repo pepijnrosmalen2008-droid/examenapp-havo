@@ -359,7 +359,7 @@ function _getSrc(){
   }catch(e){return 'direct';}
 }
 // Track app open once per browser session
-if(!sessionStorage.getItem('_slagio_ao')){sessionStorage.setItem('_slagio_ao','1');setTimeout(()=>trackEvent('app_open',{src:_getSrc()}),2000);}
+if(!sessionStorage.getItem('_slagio_ao')){sessionStorage.setItem('_slagio_ao','1');setTimeout(()=>trackEvent('app_open',Object.assign({src:_getSrc()},(typeof currentUser!=='undefined'&&currentUser&&currentUser.created_at)?{acc:currentUser.created_at}:{})),2000);}
 
 // ── INGANG-TRECHTER + BOT-FILTER ───────────────────────────────────────────
 // Eén event-type 'funnel' met een step, één keer per sessie per step. Zo zie je
@@ -909,7 +909,7 @@ async function doRegister(){
     // uitloggen is dit apparaat al leeg, dus er lekt geen data van een ander.
     try{ const _xp=(typeof getTotalXP==='function')?getTotalXP():0; if(_xp>0) prof.xp=_xp; }catch(e){}
     localStorage.setItem(PROF_KEY,JSON.stringify(prof));
-    if(data.user){currentUser=data.user;await cloudSet('profiel',prof);}
+    if(data.user){currentUser=data.user;await cloudSet('profiel',prof);try{trackEvent('account_aangemaakt',{acc:data.user.created_at||new Date().toISOString()});}catch(e){}}
     // Supabase may require email confirmation
     const needsConfirm=!data.session;
     if(needsConfirm){

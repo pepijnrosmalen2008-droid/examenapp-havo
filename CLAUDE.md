@@ -149,6 +149,12 @@ loadAll()  // fetches lb, ev, ao (app_open), fb (feedback), ql, ce in parallel
 render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[])  // single render, rebuilds entire #content
 ```
 
+**Ophalen**: `loadAll` haalt `leaderboard` en `events` gepagineerd op (`_admAlles`: eerst een telling, dan blokken van 1000 met 6 tegelijk, tot `ADM_DAGEN`=60 dagen of `ADM_MAX` rijen); de server geeft nooit meer dan 1000 rijen per verzoek. `ao`/`fb`/`ce` worden uit dezelfde events gefilterd. Ruwe data in `window._raw`; `_admToepassen()` filtert en rendert.
+
+**Mezelf verbergen** (knop `#adm-mij`, standaard aan, `adm_zonder_mij`): `_admIkke()` herkent automatisch dit apparaat (`slagio_did`), de profielnaam en het ingelogde app-account op dit domein; extra apparaten/accounts via "Dit ben ik" in Mensen (`admDitBenIk`, opgeslagen in `adm_ikke`).
+
+**Mensen** (`renderMensen`, `#mensen-panel`, via een wrapper om `render`): één rij per persoon (account `user_id`, met de apparaten en namen die ooit met dat account voorkwamen; anders per naam of apparaat). Account sinds = `meta.acc` (de app stuurt `currentUser.created_at` mee bij `app_open` en bij `account_aangemaakt`), anders "≤ eerst gezien". Zoeken op naam of apparaat-tag, filter iedereen/met/zonder account, sorteren, klik voor details. Nieuwe code in het hoofdscript zetten (vóór `<script src="/ico-swap.js">`), en `var` gebruiken voor constanten die `loadAll` nodig heeft: `init()` draait al tijdens het laden van het script.
+
 **Filter state** (persists across re-renders):
 - `window._filter`: `'all'|'7d'|'24h'` - time filter, applied at top of `render()`
 - `window._fbVak`, `window._fbDomein`: feedback section vak/domein filters

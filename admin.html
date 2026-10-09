@@ -201,6 +201,37 @@
     .filter-btn{padding:.28rem .75rem;border-radius:8px;font-size:.75rem;font-weight:600;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--muted);transition:all .15s;font-family:var(--font)}
     .filter-btn:hover{border-color:rgba(var(--or-rgb),.35);color:var(--text)}
     .filter-btn.active{background:rgba(var(--or-rgb),.12);border-color:rgba(var(--or-rgb),.4);color:var(--or)}
+
+    /* Mensen-overzicht */
+    .tb-btn.adm-mij.aan{background:rgba(var(--or-rgb),.14);border-color:rgba(var(--or-rgb),.45);color:var(--or)}
+    .tb-btn.adm-mij small{opacity:.75;font-weight:600}
+    .mens-balk{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-bottom:.8rem}
+    .mens-balk .live-search{flex:1;min-width:200px}
+    .mens-groep{display:flex;gap:.35rem}
+    .mens-sort{background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:.3rem .5rem;font:600 .75rem var(--font)}
+    .mens-tabel-wrap{overflow-x:auto}
+    .mens-tabel{width:100%;border-collapse:collapse;font-size:.8rem}
+    .mens-tabel th{text-align:left;color:var(--muted);font-weight:700;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;padding:.4rem .5rem;border-bottom:1px solid var(--border);white-space:nowrap}
+    .mens-tabel td{padding:.5rem;border-bottom:1px solid var(--border);vertical-align:middle;white-space:nowrap}
+    .mens-tabel .num{text-align:right;font-variant-numeric:tabular-nums}
+    .mens-rij{cursor:pointer}.mens-rij:hover td,.mens-rij.open td{background:rgba(255,255,255,.03)}
+    .mens-naam{font-weight:700;color:var(--text)}.mens-anon{color:var(--muted);font-style:italic;font-weight:600}
+    .mens-tags{display:flex;gap:.25rem;margin-top:.2rem}
+    .mens-acc{display:inline-block;font-size:.66rem;font-weight:800;padding:.1rem .45rem;border-radius:6px;background:rgba(34,197,94,.14);color:#22c55e;margin-right:.35rem}
+    .mens-tabel small{color:var(--muted)}.mens-geen{opacity:.7}
+    .mens-akt{display:inline-flex;align-items:center;gap:.35rem;font-weight:700;color:var(--text)}
+    .mens-akt::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--k)}
+    .mens-det td{background:rgba(255,255,255,.02);white-space:normal}
+    .mens-det-in{display:flex;flex-direction:column;gap:.5rem;padding:.3rem 0}
+    .mens-det-in>div{display:flex;flex-wrap:wrap;gap:.3rem;align-items:center}
+    .mens-det-in>div>b{font-size:.72rem;color:var(--muted);min-width:110px}
+    .mens-chip{font-size:.72rem;padding:.15rem .5rem;border-radius:6px;border:1px solid var(--border);color:var(--text)}
+    .mens-chip b{color:var(--or)}
+    .mens-knoppen{gap:.4rem!important}
+    .mens-leeg{text-align:center;color:var(--muted);padding:1rem!important}
+    .mens-meer{margin-top:.7rem}
+    .mens-voet{margin-top:.7rem;font-size:.72rem;color:var(--muted)}
+    .mens-link{background:none;border:0;color:var(--or);font:inherit;cursor:pointer;text-decoration:underline;padding:0}
   </style>
 </head>
 <body>
@@ -229,6 +260,7 @@
     <span class="live-chip">● Live</span>
     <span class="topbar-time" id="clock"></span>
     <button class="tb-btn" onclick="loadAll()">↺ Vernieuwen</button>
+    <button class="tb-btn adm-mij" id="adm-mij" onclick="admZonderMijWissel()">🙈 Zonder mij</button>
     <button class="tb-btn" id="tab-analytics" onclick="showTab('analytics')">📊 Analytics</button>
     <button class="tb-btn" id="tab-curriculum" onclick="showTab('curriculum')">📚 Curriculum</button>
     <button class="tb-btn danger" onclick="logout()">Uitloggen</button>
@@ -309,26 +341,99 @@ function startClock() {
   tick(); setInterval(tick, 1000);
 }
 
+// ═══════ DATA OPHALEN (gepagineerd) ═══════
+// De server geeft hooguit 1000 rijen per verzoek. We halen daarom in blokken van
+// 1000 op, tot ADM_DAGEN terug of ADM_MAX rijen, met een paar verzoeken tegelijk.
+var ADM_DAGEN = 60, ADM_MAX = 150000, ADM_BLOK = 1000;
+function _admLaad(t){ const el=document.getElementById('adm-laad'); if(el) el.textContent=t; }
+async function _admAlles(tabel, kolommen, sinds, datumKol){
+  datumKol = datumKol || 'created_at';
+  const telling = await SB.from(tabel).select('*',{count:'exact',head:true}).gte(datumKol,sinds);
+  if (telling.error) throw telling.error;
+  const totaal = Math.min(telling.count||0, ADM_MAX);
+  const blokken = Math.ceil(totaal/ADM_BLOK);
+  const uit = new Array(blokken);
+  let klaar = 0, volgende = 0;
+  async function werker(){
+    while (volgende < blokken){
+      const b = volgende++;
+      const r = await SB.from(tabel).select(kolommen).gte(datumKol,sinds).order(datumKol,{ascending:false}).range(b*ADM_BLOK, b*ADM_BLOK+ADM_BLOK-1);
+      if (r.error) throw r.error;
+      uit[b] = r.data||[]; klaar++;
+      _admLaad(tabel+': '+Math.min(klaar*ADM_BLOK,totaal).toLocaleString('nl-NL')+' van '+totaal.toLocaleString('nl-NL'));
+    }
+  }
+  await Promise.all(Array.from({length:Math.min(6,blokken)},werker));
+  return [].concat(...uit);
+}
+
+// ═══════ MEZELF FILTEREN ═══════
+// Herkent automatisch dit apparaat (did), de naam in het profiel en het ingelogde
+// app-account op dit domein. Extra apparaten/accounts markeer je met "Dit ben ik"
+// in het overzicht Mensen; dat wordt bewaard in localStorage (adm_ikke).
+function _admIkke(){
+  let ik={dids:[],uids:[],namen:[]};
+  try{ ik=Object.assign(ik, JSON.parse(localStorage.getItem('adm_ikke')||'{}')); }catch(e){}
+  try{ const d=localStorage.getItem('slagio_did'); if(d && !ik.dids.includes(d)) ik.dids.push(d); }catch(e){}
+  try{ const n=(JSON.parse(localStorage.getItem('examenapp_profiel')||'{}').naam||'').trim(); if(n && !ik.namen.includes(n)) ik.namen.push(n); }catch(e){}
+  try{ for(const k of Object.keys(localStorage)){ if(/^sb-.*-auth-token$/.test(k)){ const u=JSON.parse(localStorage.getItem(k)||'{}'); const id=(u.user||u.currentSession?.user||{}).id; if(id && !ik.uids.includes(id)) ik.uids.push(id); } } }catch(e){}
+  return ik;
+}
+function _admZonderMij(){ try{ return localStorage.getItem('adm_zonder_mij')!=='0'; }catch(e){ return true; } }
+function admZonderMijWissel(){ try{ localStorage.setItem('adm_zonder_mij', _admZonderMij()?'0':'1'); }catch(e){} _admToepassen(); }
+function _admIsIk(r, ik){
+  const did=r.meta&&r.meta.did;
+  if (did && ik.dids.includes(did)) return true;
+  if (r.user_id && ik.uids.includes(r.user_id)) return true;
+  const n=(r.naam||'').trim().toLowerCase();
+  return !!n && ik.namen.some(x=>x.toLowerCase()===n);
+}
+function admDitBenIk(sleutel){
+  const P=(window._mensen||{})[sleutel]; if(!P) return;
+  let ik={dids:[],uids:[],namen:[]}; try{ ik=Object.assign(ik, JSON.parse(localStorage.getItem('adm_ikke')||'{}')); }catch(e){}
+  P.dids.forEach(d=>{ if(!ik.dids.includes(d)) ik.dids.push(d); });
+  if (P.uid && !ik.uids.includes(P.uid)) ik.uids.push(P.uid);
+  try{ localStorage.setItem('adm_ikke', JSON.stringify(ik)); localStorage.setItem('adm_zonder_mij','1'); }catch(e){}
+  _admToepassen();
+}
+function admIkkeWissen(){ try{ localStorage.removeItem('adm_ikke'); }catch(e){} _admToepassen(); }
+function _admToepassen(){
+  const R=window._raw; if(!R) return;
+  const weg = _admZonderMij() ? _admIkke() : null;
+  const f = a => weg ? a.filter(r=>!_admIsIk(r,weg)) : a;
+  const lb=f(R.lb), ev=f(R.ev);
+  const ao=ev.filter(e=>e.event_type==='app_open');
+  const fb=ev.filter(e=>e.event_type==='feedback');
+  const ce=ev.filter(e=>e.event_type==='ce_cijfer');
+  window._lb = lb; window._ev = ev; window._evMissing = R.evMissing; window._ao = ao; window._fb = fb; window._ql = R.ql; window._ce = ce;
+  window._admWeg = weg ? (R.lb.length-lb.length)+(R.ev.length-ev.length) : 0;
+  render(lb, ev, R.evMissing, ao, fb, R.ql, ce);
+  try{ liveFilter(); }catch(e){}
+  _admTopbar();
+}
+function _admTopbar(){
+  const b=document.getElementById('adm-mij'); if(!b) return;
+  const aan=_admZonderMij();
+  b.classList.toggle('aan', aan);
+  b.innerHTML = aan ? '🙈 Zonder mij'+(window._admWeg?' <small>('+window._admWeg.toLocaleString('nl-NL')+' weg)</small>':'') : '👀 Met mij';
+  b.title = aan ? 'Je eigen activiteit is verborgen. Klik om hem weer te tonen.' : 'Je eigen activiteit telt mee. Klik om hem te verbergen.';
+}
+
 async function loadAll() {
+  await Promise.resolve(); // init() draait al tijdens het laden van dit script: eerst de rest laten definiëren
   try {
-    const [lbRes, evRes, aoRes, fbRes, qlRes, ceRes] = await Promise.all([
-      SB.from('leaderboard').select('user_id,naam,score,vak_naam,domein_naam,niveau,correct,total,avg_tijd,created_at').order('created_at',{ascending:false}).limit(1000),
-      SB.from('events').select('naam,event_type,vak_naam,niveau,meta,created_at').order('created_at',{ascending:false}).limit(2000),
-      SB.from('events').select('meta,niveau,created_at').eq('event_type','app_open').order('created_at',{ascending:false}).limit(5000),
-      SB.from('events').select('meta,vak_naam,created_at').eq('event_type','feedback').order('created_at',{ascending:false}).limit(2000),
-      SB.from('mastery').select('vak_id,data,niveau,updated_at').order('updated_at',{ascending:false}).limit(2000),
-      SB.from('events').select('meta,created_at').eq('event_type','ce_cijfer').order('created_at',{ascending:false}).limit(500)
+    const sinds = new Date(Date.now()-ADM_DAGEN*86400000).toISOString();
+    document.getElementById('content').innerHTML = '<div class="loading"><span class="spinner"></span><br><br>Data laden… <span id="adm-laad"></span></div>';
+    const [lbAll, evRes, qlRes] = await Promise.all([
+      _admAlles('leaderboard','user_id,naam,score,vak_naam,domein_naam,niveau,correct,total,avg_tijd,created_at',sinds),
+      _admAlles('events','user_id,naam,event_type,vak_naam,niveau,meta,created_at',sinds).then(d=>({data:d})).catch(e=>({data:[],error:e})),
+      SB.from('mastery').select('vak_id,data,niveau,updated_at').order('updated_at',{ascending:false}).limit(1000)
     ]);
-    const lb = (lbRes.data || []).filter(e => (e.score||0) <= 1000 && (e.total||0) > 5);
-    const ev = evRes.data || [];
-    const ao = aoRes.data || [];
-    const fb = fbRes.data || [];
-    const ql = qlRes.data || [];
-    const ce = ceRes.data || [];
-    const evMissing = !!evRes.error;
-    window._lb = lb; window._ev = ev; window._evMissing = evMissing; window._ao = ao; window._fb = fb; window._ql = ql; window._ce = ce;
-    render(lb, ev, evMissing, ao, fb, ql, ce);
-    try{ liveFilter(); }catch(e){} // sync apparaat-/niveau-/zoekfilter + balk na (her)render
+    const lb = (lbAll||[]).filter(e => (e.score||0) <= 1000 && (e.total||0) > 5);
+    window._raw = { lb, ev: evRes.data||[], evMissing: !!evRes.error, ql: qlRes.data||[] };
+    window._admGeladen = { dagen: ADM_DAGEN, ev: window._raw.ev.length, lb: lb.length,
+      oudste: window._raw.ev.length ? window._raw.ev[window._raw.ev.length-1].created_at : null };
+    _admToepassen();
   } catch(e) {
     document.getElementById('content').innerHTML =
       `<div class="loading" style="color:var(--red)">Laad-fout: ${e.message}</div>`;
@@ -523,6 +628,8 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     {key:'mijnstof_ezel',    label:'Mijn stof: ezelsbruggetje', icon:'🌉', color:'var(--or)'},
     {key:'account_prompt',   label:'Accountvraag getoond', icon:'🔑', color:'var(--or)'},
     {key:'naam_vraag',       label:'Naamvraag getoond', icon:'🏷️', color:'var(--or)'},
+    {key:'account_aangemaakt', label:'Account aangemaakt', icon:'🆕', color:'var(--green)'},
+    {key:'update_uitpakken', label:'Update uitgepakt', icon:'🎁', color:'var(--or)'},
     {key:'naam_ingesteld',   label:'Naam ingesteld', icon:'✍️', color:'var(--green)'},
     {key:'minigame',        label:'Arcade-games (uitgespeeld)', icon:'🕹️', color:'var(--purple)'},
     {key:'kingdom_open',    label:'Kingdom geopend',  icon:'🗺️', color:'var(--green)'},
@@ -848,10 +955,12 @@ function render(lb, ev, evMissing, ao=[], fb=[], ql=[], ce=[]) {
     <!-- ── Tijdfilter ── -->
     <div class="filter-bar">
       <span class="filter-lbl">Periode</span>
-      <button class="filter-btn ${window._filter==='all'?'active':''}" onclick="window._filter='all';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Altijd</button>
+      <button class="filter-btn ${window._filter==='all'?'active':''}" onclick="window._filter='all';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">${ADM_DAGEN} dagen</button>
       <button class="filter-btn ${window._filter==='7d'?'active':''}" onclick="window._filter='7d';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 7 dagen</button>
       <button class="filter-btn ${window._filter==='24h'?'active':''}" onclick="window._filter='24h';render(window._lb,window._ev,window._evMissing,window._ao||[],window._fb||[],window._ql||[],window._ce||[])">Afgelopen 24 uur</button>
     </div>
+
+    <div id="mensen-panel"></div>
 
     ${funnelPanel}
 
@@ -1478,7 +1587,131 @@ CREATE POLICY "ev_select" ON events FOR SELECT USING (true);</div>
   clearTimeout(window._rt);
   window._rt = setTimeout(loadAll, 60000);
 }
+
+// ═══════ MENSEN: wie, account sinds, hoe actief, zoeken ═══════
+// Eén rij per persoon. Een persoon = account (user_id); apparaten (did) en namen die
+// ooit samen met dat account voorkwamen horen erbij. Zonder account: per naam, anders
+// per apparaat. "Account sinds" komt uit meta.acc (app_open / account_aangemaakt);
+// ontbreekt dat (oudere versies), dan tonen we de eerste keer dat het account in de
+// geladen periode opdook, met "≤".
+window._mensZoek = window._mensZoek || '';
+window._mensSoort = window._mensSoort || 'alle';
+window._mensSort = window._mensSort || 'laatst';
+window._mensN = window._mensN || 60;
+window._mensOpen = window._mensOpen || null;
+var _QUIZ_EV = ['quiz','quiz_completed','oud_examen_quiz','minigame','clash_start','flashcard','simulatietoets','examen_resultaat'];
+function _mensBouw(){
+  const ev=window._ev||[], lb=window._lb||[];
+  const didUid={}, naamUid={}, didNaam={};
+  ev.forEach(e=>{ const d=e.meta&&e.meta.did; if(e.user_id){ if(d) didUid[d]=e.user_id; if(e.naam) naamUid[e.naam.trim().toLowerCase()]=e.user_id; } if(d&&e.naam&&!didNaam[d]) didNaam[d]=e.naam.trim(); });
+  lb.forEach(e=>{ if(e.user_id&&e.naam) naamUid[e.naam.trim().toLowerCase()]=e.user_id; });
+  const M={};
+  const sleutel=(r)=>{
+    const d=r.meta&&r.meta.did, n=(r.naam||'').trim(), nl=n.toLowerCase();
+    if(r.user_id) return 'u:'+r.user_id;
+    if(d&&didUid[d]) return 'u:'+didUid[d];
+    if(nl&&naamUid[nl]) return 'u:'+naamUid[nl];
+    if(nl) return 'n:'+nl;
+    if(d&&didNaam[d]) return 'n:'+didNaam[d].toLowerCase();
+    return d ? 'd:'+d : null;
+  };
+  const pak=(k)=> M[k] || (M[k]={k, uid:k.startsWith('u:')?k.slice(2):null, namen:{}, dids:new Set(), niv:new Set(), dev:new Set(), dagen:new Set(), n:0, quiz:0, eerst:null, laatst:null, acc:null, types:{}, vakken:{}});
+  const tel=(P,r,t)=>{
+    const ts=r.created_at; if(!ts) return;
+    P.n++; P.dagen.add(ts.slice(0,10));
+    if(!P.eerst||ts<P.eerst) P.eerst=ts; if(!P.laatst||ts>P.laatst) P.laatst=ts;
+    if(r.naam&&r.naam.trim()) { const n=r.naam.trim(); P.namen[n]=(P.namen[n]||'')>ts?P.namen[n]:ts; }
+    if(r.niveau) P.niv.add(r.niveau);
+    if(r.vak_naam) P.vakken[r.vak_naam]=(P.vakken[r.vak_naam]||0)+1;
+    P.types[t]=(P.types[t]||0)+1;
+  };
+  ev.forEach(e=>{
+    const k=sleutel(e); if(!k) return; const P=pak(k); const m=e.meta||{};
+    if(m.did) P.dids.add(m.did); if(m.device) P.dev.add(m.device);
+    if(m.acc && (!P.acc||m.acc<P.acc)) P.acc=m.acc;
+    if(_QUIZ_EV.includes(e.event_type)) P.quiz++;
+    tel(P,e,e.event_type||'?');
+  });
+  lb.forEach(e=>{ const k=sleutel(e); if(!k) return; const P=pak(k); P.quiz++; tel(P,e,'topscore'); });
+  Object.values(M).forEach(P=>{
+    const nm=Object.entries(P.namen).sort((a,b)=>b[1]>a[1]?1:-1)[0];
+    P.naam = nm ? nm[0] : null;
+    P.dids=[...P.dids];
+  });
+  window._mensen=M;
+  return Object.values(M);
+}
+function _mensDatum(iso){ if(!iso) return '–'; const d=new Date(iso); return d.toLocaleDateString('nl-NL',{day:'numeric',month:'short'})+(d.getFullYear()!==new Date().getFullYear()?' '+d.getFullYear():''); }
+function _mensEsc(s){ return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function _mensActief(P){
+  const dagen=P.dagen.size, dSinds=(Date.now()-new Date(P.laatst).getTime())/864e5;
+  if(dSinds>14) return ['slapend','#64748b'];
+  if(dagen>=10) return ['heel actief','#22c55e'];
+  if(dagen>=4) return ['actief','#84cc16'];
+  if(dagen>=2) return ['af en toe','#f59e0b'];
+  return ['één keer','#94a3b8'];
+}
+function renderMensen(){
+  const host=document.getElementById('mensen-panel'); if(!host) return;
+  const alle=_mensBouw();
+  const acc=alle.filter(P=>P.uid);
+  const w7=Date.now()-7*864e5;
+  const nieuwAcc=acc.filter(P=>P.acc&&new Date(P.acc).getTime()>=w7).length;
+  const actief7=alle.filter(P=>P.laatst&&new Date(P.laatst).getTime()>=w7).length;
+  const q=window._mensZoek.trim().toLowerCase();
+  let lijst=alle.filter(P=> window._mensSoort==='acc'?!!P.uid : window._mensSoort==='anon'?!P.uid : true);
+  if(q) lijst=lijst.filter(P=>Object.keys(P.namen).some(n=>n.toLowerCase().includes(q)) || P.dids.some(d=>(_didLabel(d)||'').toLowerCase()===q));
+  const srt={laatst:(a,b)=>(b.laatst||'')>(a.laatst||'')?1:-1, actief:(a,b)=>b.dagen.size-a.dagen.size||b.n-a.n, acc:(a,b)=>(b.acc||b.uid&&b.eerst||'')>(a.acc||a.uid&&a.eerst||'')?1:-1, quiz:(a,b)=>b.quiz-a.quiz};
+  lijst.sort(srt[window._mensSort]||srt.laatst);
+  const G=window._admGeladen||{};
+  const rij=(P)=>{
+    const [akt,kl]=_mensActief(P);
+    const naam=P.naam?_mensEsc(P.naam):'<span class="mens-anon">Anoniem</span>';
+    const tags=P.dids.slice(0,3).map(d=>`<span class="live-did" style="--c:${_didColor(d)}">◆ ${_didLabel(d)}</span>`).join('');
+    const accCel=P.uid?`<span class="mens-acc">Account</span><small>${P.acc?'sinds '+_mensDatum(P.acc):'sinds ≤ '+_mensDatum(P.eerst)}</small>`:'<small class="mens-geen">geen account</small>';
+    const open=window._mensOpen===P.k;
+    const det=open?`<tr class="mens-det"><td colspan="7"><div class="mens-det-in">
+        <div><b>Wat doet ${P.naam?_mensEsc(P.naam.split(' ')[0]):'deze persoon'}</b>${Object.entries(P.types).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([t,n])=>`<span class="mens-chip">${_mensEsc((typeof LIVE_LABELS!=='undefined'&&LIVE_LABELS[t])?LIVE_LABELS[t][1]:t)} <b>${n}</b></span>`).join('')}</div>
+        <div><b>Vakken</b>${Object.entries(P.vakken).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([v,n])=>`<span class="mens-chip">${_mensEsc(v)} <b>${n}</b></span>`).join('')||'<span class="mens-chip">nog geen</span>'}</div>
+        <div><b>Gegevens</b><span class="mens-chip">eerst gezien ${_mensDatum(P.eerst)}</span><span class="mens-chip">${[...P.niv].join('/').toUpperCase()||'–'}</span><span class="mens-chip">${[...P.dev].join(', ')||'–'}</span>${Object.keys(P.namen).length>1?`<span class="mens-chip">ook: ${_mensEsc(Object.keys(P.namen).filter(n=>n!==P.naam).join(', '))}</span>`:''}</div>
+        <div class="mens-knoppen">${P.dids[0]?`<button class="filter-btn" onclick="event.stopPropagation();liveSetDid('${P.dids[0]}');document.getElementById('live-search')?.scrollIntoView({behavior:'smooth',block:'center'})">Toon live activiteit</button>`:''}<button class="filter-btn" onclick="event.stopPropagation();admDitBenIk('${P.k.replace(/'/g,"\\'")}')">Dit ben ik (verbergen)</button></div>
+      </div></td></tr>`:'';
+    return `<tr class="mens-rij${open?' open':''}" onclick="window._mensOpen=window._mensOpen==='${P.k.replace(/'/g,"\\'")}'?null:'${P.k.replace(/'/g,"\\'")}';renderMensen()">
+      <td><div class="mens-naam">${naam}</div><div class="mens-tags">${tags}</div></td>
+      <td>${accCel}</td>
+      <td><span class="mens-akt" style="--k:${kl}">${akt}</span></td>
+      <td class="num">${P.dagen.size}</td>
+      <td class="num">${P.quiz}</td>
+      <td class="num">${P.n}</td>
+      <td title="${_mensEsc(P.laatst)}">${timeAgo(P.laatst)==="nu"?"nu":timeAgo(P.laatst)+" geleden"}</td>
+    </tr>${det}`;
+  };
+  host.innerHTML=`<div class="panel mens">
+    <div class="panel-h">Mensen <span>${alle.length.toLocaleString('nl-NL')} personen · ${acc.length} met account · ${nieuwAcc} nieuwe accounts deze week · ${actief7} actief deze week · data van de laatste ${G.dagen||'?'} dagen (${(G.ev||0).toLocaleString('nl-NL')} events${G.oudste?', oudste '+_mensDatum(G.oudste):''})</span></div>
+    <div class="mens-balk">
+      <input id="mens-zoek" class="live-search" type="search" placeholder="Zoek op naam of apparaat-tag…" value="${_mensEsc(window._mensZoek)}" oninput="window._mensZoek=this.value;window._mensN=60;_mensHerteken()">
+      <div class="mens-groep">${[['alle','Iedereen'],['acc','Met account'],['anon','Zonder account']].map(([k,l])=>`<button class="filter-btn ${window._mensSoort===k?'active':''}" onclick="window._mensSoort='${k}';renderMensen()">${l}</button>`).join('')}</div>
+      <select class="mens-sort" onchange="window._mensSort=this.value;renderMensen()">${[['laatst','Laatst actief'],['actief','Meest actieve dagen'],['quiz','Meeste quizzen'],['acc','Nieuwste account']].map(([k,l])=>`<option value="${k}" ${window._mensSort===k?'selected':''}>${l}</option>`).join('')}</select>
+    </div>
+    <div class="mens-tabel-wrap"><table class="mens-tabel">
+      <thead><tr><th>Naam</th><th>Account</th><th>Activiteit</th><th class="num" title="Dagen waarop iets gebeurde">Dagen</th><th class="num" title="Quizzen, kaartjes, spellen, examens">Oefensessies</th><th class="num">Acties</th><th>Laatst</th></tr></thead>
+      <tbody>${lijst.slice(0,window._mensN).map(rij).join('')||'<tr><td colspan="7" class="mens-leeg">Niemand gevonden</td></tr>'}</tbody>
+    </table></div>
+    ${lijst.length>window._mensN?`<button class="filter-btn mens-meer" onclick="window._mensN+=100;renderMensen()">Toon meer (${(lijst.length-window._mensN).toLocaleString('nl-NL')} over)</button>`:''}
+    ${_admZonderMij()?`<div class="mens-voet">Jij bent verborgen (dit apparaat${(_admIkke().dids.length>1)?' + '+(_admIkke().dids.length-1)+' gemarkeerde':''}). <button class="mens-link" onclick="admIkkeWissen()">Markeringen wissen</button></div>`:''}
+  </div>`;
+}
+// Bij typen niet de hele tabel met focusverlies opnieuw opbouwen: cursor terugzetten.
+function _mensHerteken(){
+  const el=document.getElementById('mens-zoek'); const pos=el?el.selectionStart:null;
+  renderMensen();
+  const n=document.getElementById('mens-zoek'); if(n){ n.focus(); if(pos!=null) try{n.setSelectionRange(pos,pos);}catch(e){} }
+}
+// Na elke render het overzicht vullen.
+var _renderZonderMensen = render;
+render = function(){ _renderZonderMensen.apply(this, arguments); try{ renderMensen(); }catch(e){ console.error(e); } };
 </script>
-<script src="/ico-swap.js"></script>
+<script src="/ico-swap.js">
+</script>
 </body>
 </html>
