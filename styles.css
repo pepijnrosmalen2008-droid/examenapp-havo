@@ -12297,3 +12297,20 @@ body:has(.ap-ov) .vonk-egg-bubble,body:has(.ap-ov) .vonk-react{display:none!impo
 .ms-concept{display:flex;align-items:center;gap:10px;margin:0 0 12px;padding:10px 12px;border-radius:12px;background:rgba(245,158,11,.12);border:1.5px solid rgba(245,158,11,.4);color:var(--tx);font-size:13.5px;line-height:1.35}
 .ms-concept span{flex:1}
 .ms-concept button{flex-shrink:0;background:none;border:1.5px solid var(--bo);border-radius:10px;padding:7px 11px;color:var(--tx2);font:600 13px var(--font);cursor:pointer}
+
+/* ═══════ TELLERBALK: DIKKE TEGELS, INHOUD IN HET MIDDEN ═══════ */
+.statbar{gap:10px;align-items:stretch}
+.sbar-pill{--sb:#8b5cf6;justify-content:center;gap:5px;padding:12px 4px 11px;border-width:2px;border-style:solid;
+  box-shadow:0 4px 0 color-mix(in srgb,var(--sb) 30%,var(--bo));transition:transform .12s ease,box-shadow .12s ease}
+.sbar-pill:active{transform:translateY(3px);box-shadow:0 1px 0 color-mix(in srgb,var(--sb) 30%,var(--bo))}
+.sbar-streak{--sb:#f97316}.sbar-coin{--sb:#f5b301}.sbar-div{--sb:var(--sb-col,#e8a91d)}
+.sbar-pill:not(.sbar-maatje) .sbar-top{flex-direction:column;gap:5px}
+.sbar-pill:not(.sbar-maatje) .sbar-ic{width:34px;height:34px;border-radius:50%;justify-content:center;background:color-mix(in srgb,var(--sb) 16%,transparent)}
+.sbar-pill:not(.sbar-maatje) .sbar-ic svg{width:20px;height:20px}
+.sbar-div .sbar-ic{width:auto!important;height:auto!important;background:none!important}
+.sbar-div-ic{font-size:30px}
+.sbar-val{font:800 20px/1 var(--font-head);font-variant-numeric:tabular-nums}
+.sbar-pill:not(.sbar-maatje) .sbar-lbl{color:color-mix(in srgb,var(--sb) 60%,var(--dk))}
+.sbar-streak .sbar-top,.sbar-coin .sbar-top{flex-direction:row}
+@media(max-width:640px){.statbar{gap:8px}.sbar-val{font-size:18px}.sbar-pill:not(.sbar-maatje) .sbar-ic{width:30px;height:30px}}
+@media(prefers-reduced-motion:reduce){.sbar-pill:active{transform:none}}
