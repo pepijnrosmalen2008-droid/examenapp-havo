@@ -450,6 +450,23 @@ min_volume €50k→€500k, max_spread 1.5%→1.0% (+ circuit breaker 1.0%), ma
 gratis politici-dataset (403) uit de bronnen gehaald. Eerlijke grens blijft: op een verse database
 heeft de bot nog niets geleerd; "beter worden" kan alleen voor zover er edge te vinden is.
 
+## D37 — Autonome kern: strategie-arena met bewijs-gated kapitaalallocatie
+
+Na een verliesgevende, fee-zware scalp-dag (−21%, >helft fees, geen factor met netto-edge) en de
+wens voor een echte autonome self-learning AI: eerste pijler gebouwd. `autopilot/arena.py` meet élke
+kandidaat-strategie LIVE forward-only — haar BUY-voorstellen worden observaties, na een horizon
+afgerekend op de werkelijke koersbeweging ná round-trip-kosten; per strategie groeien n/hit-rate/
+netto-edge (tabellen `strategy_obs`/`strategy_stats`). `strategies/autonomous.py` draait een roster
+kandidaten (adaptive-scalp, adaptive-swing, ema-cross, cross_sectional), laat elke cyclus de
+best-**bewezen** strategie (status *actief*: n ≥ min én netto-edge > 0) het echte handelen doen, en
+anders **cash** — zo stopt de bot zichzelf als niets werkt, i.p.v. fees te verbranden. De
+onafhankelijke risk-engine blijft eromheen; de arena kan geen limieten uitschakelen.
+
+Bewust dezelfde zuinige forward-only meting als de factor-lus (geen tweede engine per strategie).
+config.allin draait nu `autonomous`, veilig-standaard (verse start = cash tot er bewijs is). Dit is
+Fase 1 van AUTONOMOUS_ENGINE_PLAN.md; de verdere lagen (zelf hypotheses/strategieën genereren,
+patroon-ontdekking, meta-learning) komen als getoetste increments hierop.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

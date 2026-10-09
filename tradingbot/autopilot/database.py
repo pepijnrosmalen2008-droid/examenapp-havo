@@ -164,6 +164,24 @@ CREATE TABLE IF NOT EXISTS factor_stats_regime (
     PRIMARY KEY (factor_key, regime)
 );
 
+-- Strategie-arena: elke kandidaat-strategie wordt LIVE forward-only gemeten (net na kosten).
+-- Een BUY-voorstel wordt een observatie; na de horizon beoordeeld op de werkelijke koersbeweging.
+-- Zo kiest de autonome laag welke strategie echt kapitaal verdient — of cash als geen enkele wint.
+CREATE TABLE IF NOT EXISTS strategy_obs (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    ts         TEXT NOT NULL,
+    due_ts     TEXT NOT NULL,
+    strategy   TEXT NOT NULL,
+    pair       TEXT NOT NULL,
+    entry_price REAL NOT NULL
+);
+CREATE TABLE IF NOT EXISTS strategy_stats (
+    strategy  TEXT PRIMARY KEY,
+    n       INTEGER NOT NULL DEFAULT 0,
+    hits    INTEGER NOT NULL DEFAULT 0,
+    sum_edge REAL NOT NULL DEFAULT 0
+);
+
 -- Concept-drift-detector (Page-Hinkley) per factor: werkt een edge nog, of is hij
 -- recent gekanteld? Online bijgewerkt op de edge-stroom.
 CREATE TABLE IF NOT EXISTS factor_drift (
@@ -460,6 +478,47 @@ class Database:
                 "avg_latency_ms": r["avg_latency_ms"],
                 "avg_items": r["avg_items"] or 0,
                 "last_ok_age_s": age,
+            }
+        return out
+
+    # ── strategie-arena (forward-only per strategie) ─────────────────
+
+    def record_strategy_obs(self, *, ts: str, due_ts: str, strategy: str,
+                            pair: str, entry_price: float) -> None:
+        self.conn.execute(
+            "INSERT INTO strategy_obs(ts, due_ts, strategy, pair, entry_price) VALUES(?,?,?,?,?)",
+            (ts, due_ts, strategy, pair, entry_price))
+        self.conn.commit()
+
+    def pending_strategy_obs_pairs(self, strategy: str, after_iso: str) -> set:
+        """Pairs waarvoor deze strategie nog een lopende observatie heeft (tegen spam)."""
+        rows = self.conn.execute(
+            "SELECT DISTINCT pair FROM strategy_obs WHERE strategy=? AND ts>=?",
+            (strategy, after_iso)).fetchall()
+        return {r["pair"] for r in rows}
+
+    def due_strategy_obs(self, now_iso: str) -> list[sqlite3.Row]:
+        return self.conn.execute(
+            "SELECT * FROM strategy_obs WHERE due_ts <= ? ORDER BY id LIMIT 2000", (now_iso,)
+        ).fetchall()
+
+    def resolve_strategy_obs(self, obs_id: int, strategy: str, hit: bool, edge: float) -> None:
+        self.conn.execute(
+            "INSERT INTO strategy_stats(strategy, n, hits, sum_edge) VALUES(?,1,?,?) "
+            "ON CONFLICT(strategy) DO UPDATE SET n=n+1, hits=hits+?, sum_edge=sum_edge+?",
+            (strategy, int(hit), edge, int(hit), edge))
+        self.conn.execute("DELETE FROM strategy_obs WHERE id=?", (obs_id,))
+        self.conn.commit()
+
+    def strategy_stats(self) -> dict:
+        rows = self.conn.execute("SELECT * FROM strategy_stats").fetchall()
+        out = {}
+        for r in rows:
+            n = r["n"] or 0
+            out[r["strategy"]] = {
+                "n": n,
+                "hit_rate": (r["hits"] / n) if n else None,
+                "net_edge": (r["sum_edge"] / n) if n else None,
             }
         return out
 
