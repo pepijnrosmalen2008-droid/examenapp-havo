@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Automatisch gegenereerd door scripts/build-sitemap.mjs — niet met de hand bewerken. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://slagio.nl/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://slagio.nl/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://slagio.nl/havo</loc><lastmod>2026-09-19</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://slagio.nl/vmbo</loc><lastmod>2026-09-19</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://slagio.nl/vwo</loc><lastmod>2026-09-19</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
