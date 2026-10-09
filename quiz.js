@@ -1680,6 +1680,8 @@ function toonRes(){
   try{const _rc=document.getElementById('res-coach');if(_rc)_rc.innerHTML='';}catch(e){}
   // Maatje kiezen als beloning voor de eerste quiz (nieuwe bezoekers kregen een standaardmaatje)
   try{ if(!ST.isFoutenboek && typeof maatjeOpen==='function' && maatjeOpen()) _RC.maatje=true; }catch(e){}
+  // Naam nog niet ingesteld na een flink aantal quizzen: vraag er rustig om.
+  try{ if(!ST.isFoutenboek && _naamTellen() && _naamEligible()) _RC.naam=true; }catch(e){}
   // B2: account prompt bottom sheet (first win, anonymous only) - via de wachtrij
   try{
     if(!ST.isFoutenboek && typeof _regEligible==='function' && _regEligible()){
@@ -1777,6 +1779,7 @@ function _runResultChain(rc){
   if(rc.reg!=null&&regEerst)L.push(['reg',fin=>pqButton(fin,()=>_showRegPrompt(rc.reg))]);
   if(rc.level)L.push(['level',fin=>pqButton(fin,()=>{try{showLevelUp(rc.level.lvl,rc.level.name,rc.level.xp);}catch(e){try{slagioVlagUit('levelup');}catch(_){}pqNotifyClose();}})]);
   if(rc.chest)L.push(['chest',fin=>showChest(fin,rc.chest)]);
+  if(rc.naam)L.push(['naam',fin=>pqButton(fin,()=>_naamVraag())]);
   if(rc.reg!=null&&!regEerst)L.push(['reg',fin=>pqButton(fin,()=>_showRegPrompt(rc.reg))]);
   if(rc.rankInfo&&rc.rankInfo.climbed>0)L.push(['rank',fin=>showLeagueRankUp(rc.rankInfo,fin)]);
   if(rc.perfect)L.push(['perfect',fin=>pqAuto(fin,3200,()=>{try{slagioVlagUit('perfect');}catch(e){}})]);
@@ -1802,6 +1805,61 @@ function retryQ(){if(ST.vak&&ST.vak.id==='mijnstof'&&typeof msOpnieuw==='functio
 // Waar een quiz heen terugkeert: eigen stof naar Mijn stof, de rest naar de vakpagina.
 function _quizTerugScherm(){return (ST.vak&&ST.vak.id==='mijnstof')?'sc-mijnstof':'sc-detail';}
 function switchMode(){show('sc-qmode');}
+// ═══════ NAAM-HERINNERING ═══════
+// Wie veel quizzen maakt maar geen naam heeft, staat in de weekwedstrijd en de
+// topscores onder een verzonnen naam. Vanaf 5 quizzen vragen we er rustig om:
+// hooguit eens per 3 dagen en maximaal 4 keer, en altijd na een quiz (nooit tijdens).
+const NAAM_VANAF=5;
+function _naamHuidig(){try{return (JSON.parse(localStorage.getItem(PROF_KEY)||'{}').naam||'').trim();}catch(e){return '';}}
+function _naamOntbreekt(){const n=_naamHuidig().toLowerCase();return !n||n==='jij'||n==='speler';}
+function _naamTellen(){let n=0;try{n=(parseInt(localStorage.getItem('slagio_quiz_n')||'0',10)||0)+1;localStorage.setItem('slagio_quiz_n',String(n));}catch(e){}return n;}
+function _naamEligible(){
+  try{
+    if(!_naamOntbreekt())return false;
+    if((parseInt(localStorage.getItem('slagio_quiz_n')||'0',10)||0)<NAAM_VANAF)return false;
+    const shows=parseInt(localStorage.getItem('slagio_naam_shows')||'0',10)||0;
+    const last=parseInt(localStorage.getItem('slagio_naam_last')||'0',10)||0;
+    return shows<4&&Date.now()-last>=3*24*3600e3;
+  }catch(e){return false;}
+}
+function _naamVraag(){
+  try{
+    if(document.getElementById('naam-sheet')||!_naamOntbreekt()){try{pqNotifyClose();}catch(e){}return;}
+    try{localStorage.setItem('slagio_naam_shows',String((parseInt(localStorage.getItem('slagio_naam_shows')||'0',10)||0)+1));localStorage.setItem('slagio_naam_last',String(Date.now()));}catch(e){}
+    let n=0;try{n=parseInt(localStorage.getItem('slagio_quiz_n')||'0',10)||0;}catch(e){}
+    const el=document.createElement('div');
+    el.id='naam-sheet';el.className='regp-ov';
+    const vonk=(typeof mascotSVG==='function')?mascotSVG('blij',64):'';
+    el.innerHTML=`<div class="regp-card naam-card" role="dialog" aria-modal="true" aria-labelledby="naam-h">
+      <div class="regp-grip"></div>
+      <button class="regp-x" onclick="_naamSluit()" aria-label="Sluiten">✕</button>
+      <div class="naam-vonk" aria-hidden="true">${vonk}</div>
+      <h3 class="regp-h" id="naam-h">Al ${n} quizzen gemaakt. Hoe heet je?</h3>
+      <p class="regp-sub">In de weekwedstrijd en bij de topscores sta je nu onder een verzonnen naam. Met je eigen naam (of een bijnaam) zien anderen wie er zo hard werkt.</p>
+      <input id="naam-in" class="naam-in" maxlength="30" autocomplete="given-name" placeholder="Je naam of bijnaam" onkeydown="if(event.key==='Enter')_naamBewaar()">
+      <button class="regp-cta" onclick="_naamBewaar()">Opslaan</button>
+      <div class="regp-foot"><button class="regp-link" onclick="_naamSluit()">Later</button></div>
+    </div>`;
+    el.addEventListener('click',e=>{if(e.target===el)_naamSluit();});
+    el.addEventListener('keydown',e=>{if(e.key==='Escape')_naamSluit();});
+    document.body.appendChild(el);
+    try{trackEvent('naam_vraag',{quizzen:n});}catch(e){}
+  }catch(e){try{pqNotifyClose();}catch(_){}}
+}
+function _naamSluit(){const el=document.getElementById('naam-sheet');if(el)el.remove();try{pqNotifyClose();}catch(e){}}
+async function _naamBewaar(){
+  const inp=document.getElementById('naam-in');const naam=((inp&&inp.value)||'').trim().replace(/\s+/g,' ').slice(0,30);
+  if(!naam||/^(jij|speler)$/i.test(naam)){if(inp){inp.focus();inp.classList.add('naam-fout');setTimeout(()=>inp.classList.remove('naam-fout'),500);}return;}
+  let p={};try{p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');}catch(e){}
+  p.naam=naam;
+  try{localStorage.setItem(PROF_KEY,JSON.stringify(p));}catch(e){}
+  try{if(typeof currentUser!=='undefined'&&currentUser)cloudSet('profiel',p);}catch(e){}
+  try{if(typeof leagueSyncAndFetch==='function')leagueSyncAndFetch(true);}catch(e){}
+  try{if(typeof renderStatBar==='function')renderStatBar();}catch(e){}
+  try{trackEvent('naam_ingesteld',{via:'herinnering'});}catch(e){}
+  _naamSluit();
+  try{showToast('Top, '+naam.split(' ')[0]+'! Zo sta je nu in de wedstrijd.','#16a34a');}catch(e){}
+}
 // ═══════ ACCOUNT-UITNODIGING + WELKOMSTCADEAU ═══════
 // Anonieme leerlingen krijgen de uitnodiging al na hun eerste afgeronde quiz
 // (en als kaart op de home zodra ze iets verdiend hebben). Wie een account maakt,

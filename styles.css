@@ -12314,3 +12314,13 @@ body:has(.ap-ov) .vonk-egg-bubble,body:has(.ap-ov) .vonk-react{display:none!impo
 .sbar-streak .sbar-top,.sbar-coin .sbar-top{flex-direction:row}
 @media(max-width:640px){.statbar{gap:8px}.sbar-val{font-size:18px}.sbar-pill:not(.sbar-maatje) .sbar-ic{width:30px;height:30px}}
 @media(prefers-reduced-motion:reduce){.sbar-pill:active{transform:none}}
+
+/* ═══════ NAAM-HERINNERING (na een quiz) ═══════ */
+.naam-card{text-align:center}
+.naam-vonk{width:64px;height:64px;margin:0 auto 8px}
+.naam-vonk svg{width:100%;height:100%}
+.naam-in{display:block;width:100%;box-sizing:border-box;margin:0 0 12px;padding:13px 14px;border-radius:14px;border:2px solid var(--bo);border-bottom-width:4px;background:var(--bg);color:var(--dk);font:700 16px var(--font);text-align:center;outline:none}
+.naam-in:focus{border-color:var(--or)}
+.naam-in.naam-fout{animation:naamSchud .4s}
+@keyframes naamSchud{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+@media(prefers-reduced-motion:reduce){.naam-in.naam-fout{animation:none;border-color:#ef4444}}

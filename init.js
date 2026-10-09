@@ -566,6 +566,7 @@ document.addEventListener('keydown',e=>{
 // Escape sluit de bovenste pop-up die er geen eigen toets voor heeft.
 // Volgorde = wat er bovenop ligt. Tijdens typen met tekst in het vak sluit hij niet (dan ben je je tekst kwijt).
 const _ESC_LAGEN=[
+  ['naam-sheet',()=>_naamSluit()],
   ['fig-zoom-ov',()=>closeFigZoom(),'on'],
   ['reg-gift-ov',()=>document.getElementById('reg-gift-ov').remove()],
   ['plus-upsell',()=>closePlusUpsell()],
