@@ -17,7 +17,7 @@ function openVak(id,_noHash){
   // deelbaar en valt hij samen met wat Google indexeert; herladen serveert die pagina.
   if(!_noHash){
     const _p='/vakken/'+APP_LEVEL+'-'+(_VAK_SLUG[id]||id)+'.html';
-    try{history.pushState({vak:id,niv:APP_LEVEL},'',_p);}catch(e){}
+    _navUrl(_p);
   }
   document.getElementById('dtitle').textContent=ST.vak.naam;
   // Per-vak embleem (klein, solide) + groot hero-watermerk (sfeer) - zelfde icoon
@@ -780,7 +780,7 @@ function openLeerdoelen(domId,_noHash){
   const d=v.domeinen.find(x=>x.id===domId);
   if(!d||!(d.leerdoelen&&d.leerdoelen.length))return;
   ST.domein=d;
-  if(!_noHash){try{history.pushState({domLd:domId,vak:v.id,niv:APP_LEVEL},'','#leerdoelen='+v.id+'.'+domId);}catch(e){}}
+  if(!_noHash)_navUrl('#leerdoelen='+v.id+'.'+domId);
 
   const bc=document.getElementById('ld-breadcrumb');
   if(bc)bc.innerHTML=`<span class="det-bc-home" onclick="show('sc-home')"><svg class="ico" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg> Home</span><span class="det-bc-sep">›</span><span class="det-bc-home" onclick="backFromDomein()" style="cursor:pointer">${v.naam}</span><span class="det-bc-sep">›</span><span class="det-bc-cur">Domein ${d.id}</span>`;
@@ -854,7 +854,7 @@ function openDomein(domId,_noHash){
     const _p=_isLd
       ? '#leerdoel='+v.id+'.'+domId
       : '/vakken/'+APP_LEVEL+'-'+(_VAK_SLUG[v.id]||v.id)+'-domein-'+domId.toLowerCase()+'.html';
-    try{history.pushState({dom:domId,vak:v.id,niv:APP_LEVEL},'',_p);}catch(e){}
+    _navUrl(_p);
   }
 
   const bc=document.getElementById('dom-breadcrumb');
@@ -925,7 +925,7 @@ function openDomein(domId,_noHash){
 function backFromDomein(){
   // Zet de URL terug op de vak-pagina zodat adresbalk en scherm samenvallen.
   const v=ST.vak;
-  if(v){const _p='/vakken/'+APP_LEVEL+'-'+(_VAK_SLUG[v.id]||v.id)+'.html';try{history.pushState({vak:v.id,niv:APP_LEVEL},'',_p);}catch(e){}}
+  if(v)_navUrl('/vakken/'+APP_LEVEL+'-'+(_VAK_SLUG[v.id]||v.id)+'.html');
   show('sc-detail',true);
 }
 

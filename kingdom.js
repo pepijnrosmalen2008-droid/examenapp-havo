@@ -459,7 +459,7 @@ function openKingdom(){
   const klaar=()=>{kdRender();kdLaad3D();};
   let st=document.getElementById('kd-stage');
   if(!st){st=document.createElement('div');st.id='kd-stage';document.body.appendChild(st);}
-  st.className='kd-stage kd-'+kdDagdeel();st.hidden=false;document.documentElement.classList.add('kd-open');
+  st.className='kd-stage kd-'+kdDagdeel();st.hidden=false;document.documentElement.classList.add('kd-open');try{navLaag('kd');}catch(e){}
   st.innerHTML=`<div class="kd-lucht" aria-hidden="true"><div class="kd-sterren"></div><div class="kd-zon"></div><i class="kd-wolk w1"></i><i class="kd-wolk w2"></i><i class="kd-wolk w3"></i><i class="kd-wolk w4"></i></div>
     <div class="kd-kaart" id="kd-kaart"><svg id="kd-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Jouw eiland"></svg><div class="kd-labels" id="kd-labels"></div></div>
     <div class="kd-top"><button class="kd-x" onclick="kdSluit()" aria-label="Sluiten">✕</button>
@@ -493,6 +493,7 @@ function kdSluit(){
   KD._init=false;KD.sel=null;removeEventListener('resize',kdResize);
   if(st){st.classList.remove('on');setTimeout(()=>{if(!st.classList.contains('on')){st.hidden=true;st.innerHTML='';}},260);}
   document.documentElement.classList.remove('kd-open');
+  try{navLaagDicht('kd');}catch(e){}
   try{renderPlayRow();}catch(e){}
   try{const a=document.getElementById('sc-arcade');if(a&&a.classList.contains('on')&&typeof renderArcade==='function')renderArcade();}catch(e){}
 }

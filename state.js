@@ -14,7 +14,7 @@ const _VAK_SLUG={nl:'nederlands',wa:'wiskunde-a',wb:'wiskunde-b',bi:'biologie',s
 // op vmbo), dus een globale slug→id-tabel volstaat niet.
 function _vakIdFromSlug(slug){try{return (getVK().find(v=>(_VAK_SLUG[v.id]||v.id)===slug)||{}).id||null;}catch(e){return null;}}
 const _SLUG_VAK=Object.fromEntries(Object.entries(_VAK_SLUG).map(([k,v])=>[v,k]));
-function _pushHash(h){if((location.hash||'#').slice(1)!==h)history.pushState(null,'',h?'#'+h:location.pathname+location.search);}
+function _pushHash(h){if((location.hash||'#').slice(1)!==h)_navUrl(h?'#'+h:location.pathname+location.search);}
 function _routeFromHash(){
   const h=(location.hash||'').slice(1);
   if(!h){show('sc-home');return;}
@@ -107,9 +107,17 @@ function _routeVakkenPath(path){
 window.addEventListener('popstate',()=>{
   // Terugknop van telefoon/browser: volg de eigen geschiedenis van de app.
   // Arcade en Kingdom sluiten zelf hun scherm (eigen popstate).
+  if(_NAV.slik>0){_NAV.slik--;return;}
   try{
     const open=id=>{const st=document.getElementById(id);return st&&!st.hidden;};
-    if(_NAV.stapel.length&&!open('arc-stage')&&!open('kd-stage')){terug();return;}
+    if(_NAV.diepte>0)_NAV.diepte--;
+    // Een laag (Arcade/Kingdom) sluit zichzelf via zijn eigen popstate.
+    if(_NAV.lagen.length){_NAV.lagen.pop();return;}
+    if(open('arc-stage')||open('kd-stage'))return;
+    if(_NAV.stapel.length){_NAV.inPop=true;try{terug();}finally{_NAV.inPop=false;}return;}
+    // Stapel leeg maar wel op een ander scherm (bv. na herladen): naar de home.
+    const sc=document.querySelector('.sc.on');
+    if(sc&&sc.id!=='sc-home'&&sc.id!=='sc-welcome'&&(location.pathname==='/havo'||location.pathname==='/vwo'||location.pathname==='/vmbo')&&!location.hash){show('sc-home',true);return;}
   }catch(e){}
   const path=location.pathname.replace(/\/$/,'');
   if(_routeVakkenPath(path))return;
@@ -130,7 +138,32 @@ window.addEventListener('popstate',()=>{
 // gaat terug naar de fallback (of de home). Quiz, kaartjes, uitslag, inloggen en
 // de oefenmodus-kiezer zijn tussenstappen en komen niet op de stapel. De home is
 // het begin: wie daar komt, begint met een lege stapel.
-const _NAV={stapel:[],naar:null};
+// De browsergeschiedenis loopt gelijk met de stapel: elke stap op de stapel = één
+// history-item (_NAV.diepte telt ze). Adreswijzigingen (hash, /vakken/-URL) vervangen
+// alleen het huidige item via _navUrl, zodat vegen/terugknop van de telefoon precies
+// één scherm teruggaat. De terugknop in de app gaat ook in de geschiedenis terug
+// (_NAV.slik slikt de popstate die daarop volgt).
+const _NAV={stapel:[],naar:null,diepte:0,slik:0,inPop:false,volgUrl:null,lagen:[]};
+// Lagen over het scherm (Arcade-podium, Kingdom) krijgen ook één stap in de
+// geschiedenis: vegen sluit de laag, de sluitknop gaat zelf een stap terug.
+function navLaag(naam){if(_NAV.lagen.includes(naam))return;_NAV.lagen.push(naam);try{history.pushState({slagioLaag:naam},'',location.href);_NAV.diepte++;}catch(e){}}
+function navLaagDicht(naam){const i=_NAV.lagen.indexOf(naam);if(i<0)return;_NAV.lagen.splice(i,1);_navGa(1);}
+function _navUrl(url){
+  _NAV.volgUrl=url;
+  setTimeout(()=>{if(_NAV.volgUrl===url){_NAV.volgUrl=null;try{history.replaceState(history.state,'',url);}catch(e){}}},0);
+}
+function _navGa(n){if(n<=0)return;_NAV.diepte=Math.max(0,_NAV.diepte-n);_NAV.slik++;try{history.go(-n);}catch(e){_NAV.slik--;}}
+// Een stap binnen hetzelfde scherm (bv. Mijn stof: lijst → samenvatting → bewerken).
+function navStap(){
+  const sc=document.querySelector('.sc.on');if(!sc)return;
+  const m=_navMoment(sc.id);m.zelf=true;_NAV.stapel.push(m);
+  if(_NAV.stapel.length>30)_NAV.stapel.shift();
+  _navPush();
+}
+function _navPush(){
+  const url=_NAV.volgUrl||location.href;_NAV.volgUrl=null;
+  try{history.pushState({slagioNav:_NAV.stapel.length},'',url);_NAV.diepte++;}catch(e){}
+}
 const _NAV_SKIP=['sc-quiz','sc-flash','sc-res','sc-race','sc-race-res','sc-auth','sc-reset-pass','sc-intro','sc-welcome','sc-chal-intro','sc-qmode','sc-examsim','sc-examen','sc-review'];
 function _navMoment(id){
   const e={id,y:window.scrollY||0};
@@ -143,22 +176,32 @@ function _navMoment(id){
 }
 function _navOnthoud(prevId,nieuwId){
   if(!prevId||prevId===nieuwId)return;
-  if(nieuwId==='sc-home'||nieuwId==='sc-welcome'){_NAV.stapel=[];return;}
   if(_NAV.naar){const doel=_NAV.naar;_NAV.naar=null;if(doel===nieuwId)return;}
+  if(nieuwId==='sc-home'||nieuwId==='sc-welcome'){
+    // Naar de home (niet via terug): de geschiedenis van deze ronde opruimen,
+    // anders zou vegen op de home weer oude schermen ophalen.
+    _NAV.stapel=[];_NAV.lagen=[];if(!_NAV.inPop)_navGa(_NAV.diepte);else _NAV.diepte=0;return;
+  }
   if(_NAV_SKIP.includes(prevId))return;
   const top=_NAV.stapel[_NAV.stapel.length-1];
   // Heen en weer tussen twee schermen stapelt niet op
-  if(top&&top.id===prevId&&top.vak===(ST.vak&&ST.vak.id)&&top.dom===(ST.domein&&ST.domein.id))_NAV.stapel.pop();
+  const zelfde=top&&!top.zelf&&top.id===prevId&&top.vak===(ST.vak&&ST.vak.id)&&top.dom===(ST.domein&&ST.domein.id);
+  if(zelfde)_NAV.stapel.pop();
   _NAV.stapel.push(_navMoment(prevId));
   if(_NAV.stapel.length>30)_NAV.stapel.shift();
-  // Ook een stap in de browsergeschiedenis, zodat de terugknop van de telefoon
-  // of browser hetzelfde doet als de terugknop in de app (zie popstate).
-  try{history.pushState({slagioNav:_NAV.stapel.length},'',location.href);}catch(e){}
+  // Ook een stap in de browsergeschiedenis, zodat vegen of de terugknop van de
+  // telefoon hetzelfde doet als de terugknop in de app (zie popstate).
+  if(!zelfde)_navPush();else if(_NAV.volgUrl){const u=_NAV.volgUrl;_NAV.volgUrl=null;try{history.replaceState(history.state,'',u);}catch(e){}}
 }
 function terug(fallback){
   const huidig=(document.querySelector('.sc.on')||{}).id;
-  let e=null;
-  while(_NAV.stapel.length){const x=_NAV.stapel.pop();if(x.id!==huidig){e=x;break;}}
+  let e=null,k=0;
+  while(_NAV.stapel.length){const x=_NAV.stapel.pop();k++;if(x.id!==huidig||x.zelf){e=x;break;}}
+  // Geschiedenis gelijk houden: via de knop in de app gaan we net zoveel stappen
+  // terug als we van de stapel halen (bij vegen is er al één stap terug gegaan).
+  const naarHome=e&&e.id==='sc-home';
+  const stappen=naarHome?_NAV.diepte:Math.min(_NAV.inPop?k-1:k,_NAV.diepte);
+  if(stappen>0)_navGa(stappen);
   if(!e){
     if(typeof fallback==='function'){try{fallback();return;}catch(x){}}
     else if(typeof fallback==='string'){show(fallback);return;}
@@ -175,7 +218,7 @@ function terug(fallback){
       if(zelfde)show(e.id);
       else{ST.vak=getVK().find(v=>v.id===e.vak);if(e.id==='sc-leerdoelen')openLeerdoelen(e.dom);else openDomein(e.dom);}
     }else if(e.id==='sc-mijnstof'&&e.ms&&typeof MS!=='undefined'){
-      Object.assign(MS,e.ms);show('sc-mijnstof');try{msRender();}catch(x){}
+      Object.assign(MS,e.ms);if(huidig!=='sc-mijnstof')show('sc-mijnstof');else _NAV.naar=null;try{msRender();}catch(x){}
     }else if(e.id==='sc-examens'&&e.eb&&typeof openExamenBieb==='function'){
       openExamenBieb(e.eb);
     }else show(e.id);
@@ -213,9 +256,7 @@ function show(id,_noHash){
       // adresbalk expliciet terug naar de niveau-pagina - _pushHash('') alleen
       // strippen van de hash is niet genoeg als het pathname zelf afwijkt.
       const _hp=(APP_LEVEL==='havo'||APP_LEVEL==='vwo'||APP_LEVEL==='vmbo')?'/'+APP_LEVEL:'/';
-      if(location.pathname.replace(/\/$/,'')+location.hash!==_hp){
-        try{history.pushState(null,'',_hp);}catch(e){}
-      }
+      if(location.pathname.replace(/\/$/,'')+location.hash!==_hp)_navUrl(_hp);
     }
     else if(_SCREEN_HASHES[id])_pushHash(_SCREEN_HASHES[id]);
   }
@@ -232,7 +273,7 @@ function show(id,_noHash){
   if(id==='sc-welcome'){
     document.documentElement.classList.remove('level-havo','level-vwo','level-vmbo');
     document.documentElement.classList.add('level-welcome');
-    if(!_noHash&&location.pathname!=='/')history.pushState({},'','/');
+    if(!_noHash&&location.pathname!=='/')_navUrl('/');
     _updatePageSEO(null);
   } else {
     document.documentElement.classList.remove('level-welcome');

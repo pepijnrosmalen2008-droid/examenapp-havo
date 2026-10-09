@@ -157,6 +157,7 @@ function arcStage(theme,html){
   if(!st){st=document.createElement('div');st.id='arc-stage';document.body.appendChild(st);}
   st.className='arc-stage arc-t-'+theme;st.innerHTML=html;st.hidden=false;
   document.documentElement.classList.add('arc-open');
+  try{navLaag('arc');}catch(e){}
   requestAnimationFrame(()=>st.classList.add('on'));
   return st;
 }
@@ -166,6 +167,7 @@ function arcClose(){
   const st=document.getElementById('arc-stage');
   if(st){st.classList.remove('on');setTimeout(()=>{if(!st.classList.contains('on')){st.hidden=true;st.innerHTML='';}},220);}
   document.documentElement.classList.remove('arc-open');
+  try{navLaagDicht('arc');}catch(e){}
   try{renderArcade();}catch(e){}
 }
 function arcTop(titel,rechts){

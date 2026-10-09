@@ -211,14 +211,18 @@ function openMijnStof(tab, vak) {
   MS.tab = tab || MS.tab || 'stof'; MS.view = 'lijst'; MS.id = null;
   if (vak !== undefined) MS.vak = vak || '';
   show('sc-mijnstof'); msRender();
+  MS._vers = true; setTimeout(() => { MS._vers = false; }, 0);
   try { trackEvent('mijnstof_open', { tab: MS.tab }); } catch (e) {}
 }
 function msTab(t) { MS.tab = t; MS.view = 'lijst'; msRender(); }
 function msFilter(v) { MS.vak = v; msRender(); }
-function msOpen(id) { MS.view = 'lees'; MS.id = id; msRender(); window.scrollTo(0, 0); }
-function msNieuw(vak) { MS.view = 'bewerk'; MS.id = null; MS._nieuwVak = vak || MS.vak || ''; msRender(); window.scrollTo(0, 0); }
-function msBewerk(id) { MS.view = 'bewerk'; MS.id = id; msRender(); window.scrollTo(0, 0); }
-function msTerugNaarLijst() { MS.view = 'lijst'; MS.id = null; msRender(); }
+// Elke weergave binnen Mijn stof is een stap terug (vegen of terugknop), behalve
+// als het scherm net in dezelfde tik is geopend (dan telt de schermwissel al).
+function _msStap() { if (!MS._vers && typeof navStap === 'function') navStap(); }
+function msOpen(id) { _msStap(); MS.view = 'lees'; MS.id = id; msRender(); window.scrollTo(0, 0); }
+function msNieuw(vak) { _msStap(); MS.view = 'bewerk'; MS.id = null; MS._nieuwVak = vak || MS.vak || ''; msRender(); window.scrollTo(0, 0); }
+function msBewerk(id) { _msStap(); MS.view = 'bewerk'; MS.id = id; msRender(); window.scrollTo(0, 0); }
+function msTerugNaarLijst() { terug(() => { MS.view = 'lijst'; MS.id = null; msRender(); }); }
 
 function _msVakOpties(gekozen) {
   let vk = []; try { vk = getVK() || []; } catch (e) {}
@@ -268,7 +272,7 @@ function _msLeegHtml() {
 function _msBewerkHtml(d) {
   const n = MS.id ? d.n.find(x => x.id === MS.id) : null;
   const vak = n ? n.vak : (MS._nieuwVak || (ST && ST.vak && ST.vak.id !== 'mijnstof' ? ST.vak.id : ''));
-  return `<div class="ms-topbar"><button class="ms-terug" onclick="_msConceptWeg();${n ? `msOpen('${n.id}')` : 'msTerugNaarLijst()'}">Annuleren</button><b>${n ? 'Samenvatting bewerken' : 'Nieuwe samenvatting'}</b><button class="ms-opslaan" onclick="msOpslaan()">Opslaan</button></div>
+  return `<div class="ms-topbar"><button class="ms-terug" onclick="_msConceptWeg();msTerugNaarLijst()">Annuleren</button><b>${n ? 'Samenvatting bewerken' : 'Nieuwe samenvatting'}</b><button class="ms-opslaan" onclick="msOpslaan()">Opslaan</button></div>
   <label class="ms-veld"><span>Titel</span><input id="ms-titel" maxlength="80" oninput="_msConceptBewaar()" placeholder="Bijv. H3 Enzymen" value="${n ? _msEsc(n.titel) : ''}"></label>
   <label class="ms-veld"><span>Vak</span><select id="ms-vak">${_msVakOpties(vak)}</select></label>
   <div class="ms-bronnen">
@@ -339,7 +343,9 @@ function msOpslaan() {
   if (!msBewaar(d)) return;
   _msConceptWeg();
   try { trackEvent('mijnstof_opslaan', { nieuw, kaarten: msKaarten(n.tekst).length, lengte: n.tekst.length }); } catch (e) {}
-  msOpen(n.id);
+  // Bewerken kwam van de samenvatting: terug daarheen. Nieuw: de editor wordt de samenvatting.
+  if (nieuw) { MS.view = 'lees'; MS.id = n.id; msRender(); window.scrollTo(0, 0); }
+  else terug(() => { MS.view = 'lees'; MS.id = n.id; msRender(); });
 }
 function msVerwijder(id) {
   _msSheet(`<h3>Samenvatting verwijderen?</h3><p>Je kaartjes en de vragen van Vonk bij deze samenvatting verdwijnen ook.</p>
@@ -413,14 +419,14 @@ function _msToetsenHtml(d) {
   if (weg.length) h += '<h3 class="ms-sub-kop">Geweest</h3>' + weg.map(kaart).join('');
   return h;
 }
-function msToetsNieuw() { MS.view = 'toets'; MS.id = null; msRender(); window.scrollTo(0, 0); }
-function msToetsBewerk(id) { MS.view = 'toets'; MS.id = id; msRender(); window.scrollTo(0, 0); }
+function msToetsNieuw() { _msStap(); MS.view = 'toets'; MS.id = null; msRender(); window.scrollTo(0, 0); }
+function msToetsBewerk(id) { _msStap(); MS.view = 'toets'; MS.id = id; msRender(); window.scrollTo(0, 0); }
 function _msToetsBewerkHtml(d) {
   const t = MS.id ? d.t.find(x => x.id === MS.id) : null;
   const vak = t ? t.vak : (MS.vak || '');
   const morgen = new Date(Date.now() + 7 * 864e5).toISOString().slice(0, 10);
   const stof = t ? (t.stof || []) : [];
-  return `<div class="ms-topbar"><button class="ms-terug" onclick="msTab('toets')">Annuleren</button><b>${t ? 'Toets wijzigen' : 'Nieuwe toets'}</b><button class="ms-opslaan" onclick="msToetsOpslaan()">Opslaan</button></div>
+  return `<div class="ms-topbar"><button class="ms-terug" onclick="terug(() => msTab('toets'))">Annuleren</button><b>${t ? 'Toets wijzigen' : 'Nieuwe toets'}</b><button class="ms-opslaan" onclick="msToetsOpslaan()">Opslaan</button></div>
   <label class="ms-veld"><span>Wat voor toets?</span><input id="ms-t-naam" maxlength="60" placeholder="Bijv. Toets H3 en H4" value="${t ? _msEsc(t.naam) : ''}"></label>
   <div class="ms-veld-rij"><label class="ms-veld"><span>Vak</span><select id="ms-t-vak" onchange="_msToetsStofLijst()">${_msVakOpties(vak)}</select></label>
   <label class="ms-veld"><span>Datum</span><input type="date" id="ms-t-datum" value="${t ? t.datum : morgen}"></label></div>
@@ -445,7 +451,7 @@ function msToetsOpslaan() {
   Object.assign(t, { naam: naam || ('Toets ' + _msVakNaam(vak)), vak, datum, doel: (doel && !isNaN(doel)) ? Math.round(doel * 10) / 10 : null, stof, ts: Date.now() });
   msBewaar(d);
   try { trackEvent('mijnstof_toets', { dagen: _msDagen(datum), stof: stof.length }); } catch (e) {}
-  MS.tab = 'toets'; MS.view = 'lijst'; MS.id = null; msRender();
+  terug(() => { MS.tab = 'toets'; MS.view = 'lijst'; MS.id = null; msRender(); });
 }
 function msToetsVerwijder(id) { const d = msLaad(); d.t = d.t.filter(t => t.id !== id); d.x[id] = Date.now(); msBewaar(d); msTab('toets'); }
 function msOefenToets(id) {
