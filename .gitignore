@@ -27,3 +27,6 @@ syllabi/2027/*.pdf
 # container gegenereerd (13 MB Playwright), horen niet in git.
 node_modules/
 scripts/social/package-lock.json
+
+# Runtime-gegenereerde strategie-modules (de DB is het register; bestanden zijn reproduceerbaar)
+tradingbot/autopilot/strategies/generated/gen_*.py

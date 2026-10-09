@@ -55,11 +55,25 @@ class RiskConfig(BaseModel):
         return self
 
 
+KNOWN_STRATEGIES = {"dca", "momentum_ma_cross", "grid", "cross_sectional",
+                    "vol_target", "hold", "adaptive", "autonomous"}
+
+
 class StrategyConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    name: Literal["dca", "momentum_ma_cross", "grid", "cross_sectional", "vol_target", "hold", "adaptive", "autonomous"]
+    #: str i.p.v. Literal zodat de evolutie-laag zelf-geschreven strategieën (gen_<hash>) mag
+    #: aandragen; de validator houdt het verder streng (alleen bekende namen of gen_*).
+    name: str
     params: dict = Field(default_factory=dict)
+
+    @field_validator("name")
+    @classmethod
+    def _known_or_generated(cls, v: str) -> str:
+        if v in KNOWN_STRATEGIES or v.startswith("gen_"):
+            return v
+        raise ValueError(f"onbekende strategie '{v}'; kies uit {sorted(KNOWN_STRATEGIES)} "
+                         "of een gen_*-variant")
 
 
 class CircuitBreakerConfig(BaseModel):

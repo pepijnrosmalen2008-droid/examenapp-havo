@@ -84,8 +84,12 @@ haar eigen veiligheidslimieten niet verzwakken om een experiment te laten "slage
   suite en logt het oordeel in `research_log` (dedup via hkey); `research.py` is de offline CLI.
   `scorecard.py` geeft twee aparte cijfers (handelen vs. leren), getoond in `status.py`. De
   onderzoeker alloceert nooit zelf kapitaal — kandidaten gaan pas live na handmatige review.
-- **Fase 3 — strategie-varianten genereren + vergelijken** (binnen een vaste, veilige ruimte van
-  bouwstenen; géén vrije code-generatie live).
+- **Fase 3 — strategie-varianten genereren + zelf code schrijven** ✅ **GEBOUWD** (zie D39):
+  `evolution.py` verzint varianten binnen een begrensde ruimte, toetst ze offline en schrijft de
+  overlevers als echte `.py`-modules die (gated via de arena) live meedraaien; `auto_retire` rolt
+  bewezen-slechte zelf-geschreven strategieën automatisch terug. Harde grens: gegenereerde code kan
+  alleen Signals afgeven en raakt nooit de risk-/execution-/order-laag — géén vrije code-generatie
+  over de hele bot, wél zelf-geschreven strategieën achter de risk-governor en de bewijs-poort.
 - **Fase 4 — adaptieve selectie** tussen handelsstijlen op regime + bewijs.
 - **Fase 5 — meta-learning** (welke methoden werken).
 - **Fase 6 — doorlopende herbeoordeling** (drift → vertrouwen intrekken).

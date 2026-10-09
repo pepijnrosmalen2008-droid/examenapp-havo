@@ -485,6 +485,30 @@ drawdown-straf, netto P&L) en *leren* (arena-kalibratie + gezonde kandidaat-rati
 cash aanhouden op een markt zonder edge hoort een láág handelscijfer én een hóóg leercijfer te geven,
 in plaats van het te verdoezelen. `status.py` toont beide + het onderzoeksregister.
 
+## D39 — Evolutie-laag: de bot schrijft zijn eigen strategie-code (gated, met terugval)
+
+Fase 3: `autopilot/evolution.py` sluit de "self-coding"-lus. De bot verzint strategie-varianten
+(begrensde parameter-ruimte rond de `adaptive`-factorstrategie), toetst elke OFFLINE via de
+onderzoeker (D38), en schrijft alleen de overlevers als ECHTE `.py`-module in
+`autopilot/strategies/generated/` — een registreerbare `Strategy`-subklasse met de gekozen params
+in de code gebakken. Elke versie is een eigen onveranderlijk bestand (versiebeheer); de DB-tabel
+`generated_strategies` is het register (status kandidaat/actief/retired). `strategies/autonomous.py`
+importeert de niet-geretireerde modules en zet ze als extra roster-leden in de arena; ze krijgen pas
+echt kapitaal als ze zich óók forward-only (na kosten) bewijzen. `auto_retire` trekt een gegenereerde
+strategie met bewezen-negatieve live-edge automatisch uit de roster — de arena valt dan vanzelf terug
+op de volgende best-bewezen aanpak of cash. CLI: `evolve.py` (`--from/--to` om te genereren,
+`--promote-research` om onderzoeks-kandidaten om te zetten, `--show`). `StrategyConfig.name` werd van
+een Literal een gevalideerde `str` (bekende namen óf `gen_*`) zodat zelf-geschreven strategieën
+kunnen meedoen zonder de config-strengheid elders te verliezen.
+
+**Harde, niet-configureerbare veiligheidsgrens** (overgenomen uit AUTONOMOUS_ENGINE_PLAN.md §7): de
+generator schrijft uitsluitend `Strategy`-subklassen in die ene map, en die kunnen álleen Signals
+afgeven. Zelf-geschreven code raakt nooit de risk-engine, de execution-laag of de order-plaatsing aan
+en alloceert nooit zelf geld; de onafhankelijke risk-governor en de bewijs-gated arena blijven de
+enige poorten naar echt kapitaal. Zo "past de bot zichzelf live aan" zonder dat een slechte
+zelf-geschreven regel het saldo kan leegtrekken. Runtime-geschreven `gen_*.py` staan in `.gitignore`
+(reproduceerbaar uit de params in de DB); alleen de map-`__init__.py` is versiebeheerd.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

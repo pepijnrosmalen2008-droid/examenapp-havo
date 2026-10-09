@@ -198,6 +198,23 @@ CREATE TABLE IF NOT EXISTS research_log (
     flags      TEXT                      -- JSON-lijst met redenen
 );
 
+-- Zelf-geschreven strategieën: echte .py-modules die de evolutie-laag zelf genereert, offline
+-- toetst en (gated) in de live-arena meelaat draaien. Versiebeheer + automatische terugval:
+-- elke versie is een eigen onveranderlijke module; status stuurt of ze in de roster komt.
+CREATE TABLE IF NOT EXISTS generated_strategies (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    name       TEXT NOT NULL UNIQUE,     -- geregistreerde strategie-naam (gen_<hash>)
+    version    INTEGER NOT NULL DEFAULT 1,
+    parent     TEXT,                     -- afgeleid van (base-strategie of eerdere gen)
+    params     TEXT NOT NULL,            -- JSON
+    module     TEXT NOT NULL,            -- bestandsnaam van de geschreven module
+    status     TEXT NOT NULL,            -- kandidaat | actief | retired
+    excess_pct REAL,                     -- offline netto-excess bij geboorte
+    created_at TEXT NOT NULL,
+    retired_at TEXT,
+    reason     TEXT
+);
+
 -- Concept-drift-detector (Page-Hinkley) per factor: werkt een edge nog, of is hij
 -- recent gekanteld? Online bijgewerkt op de edge-stroom.
 CREATE TABLE IF NOT EXISTS factor_drift (
@@ -561,6 +578,39 @@ class Database:
         rows = self.conn.execute(
             "SELECT verdict, COUNT(*) c FROM research_log GROUP BY verdict").fetchall()
         return {r["verdict"]: r["c"] for r in rows}
+
+    # ── zelf-geschreven strategieën (evolutie-laag) ──────────────────
+
+    def record_generated(self, *, name: str, params: str, module: str, status: str,
+                         parent: str | None = None, version: int = 1,
+                         excess_pct: float | None = None) -> None:
+        self.conn.execute(
+            "INSERT OR REPLACE INTO generated_strategies(name, version, parent, params, module, "
+            "status, excess_pct, created_at) VALUES(?,?,?,?,?,?,?,?)",
+            (name, version, parent, params, module, status, excess_pct, utcnow()))
+        self.conn.commit()
+
+    def generated_by_status(self, statuses: tuple[str, ...]) -> list[dict]:
+        q = ",".join("?" * len(statuses))
+        rows = self.conn.execute(
+            f"SELECT * FROM generated_strategies WHERE status IN ({q}) ORDER BY id", statuses).fetchall()
+        return [dict(r) for r in rows]
+
+    def generated_all(self) -> list[dict]:
+        return [dict(r) for r in self.conn.execute(
+            "SELECT * FROM generated_strategies ORDER BY id DESC").fetchall()]
+
+    def set_generated_status(self, name: str, status: str, reason: str | None = None) -> None:
+        retired_at = utcnow() if status == "retired" else None
+        self.conn.execute(
+            "UPDATE generated_strategies SET status=?, reason=?, retired_at=? WHERE name=?",
+            (status, reason, retired_at, name))
+        self.conn.commit()
+
+    def generated_summary(self) -> dict:
+        rows = self.conn.execute(
+            "SELECT status, COUNT(*) c FROM generated_strategies GROUP BY status").fetchall()
+        return {r["status"]: r["c"] for r in rows}
 
     # ── factor-leerlus (forward-only betrouwbaarheid) ────────────────
 

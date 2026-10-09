@@ -39,6 +39,8 @@ strategy:
   params:
     candle_interval: 5m
     min_observations: 40      # zoveel afgerekende observaties vóór een strategie kapitaal verdient
+    self_evolve: true         # laat zelf-geschreven strategieën (evolve.py) gated meedraaien in de arena;
+                              # ze krijgen pas echt kapitaal als ze zich forward-only bewijzen
     roster:
       - { name: adaptive, label: scalp-5m,  params: { candle_interval: 5m,  buy_threshold: 0.08, sell_threshold: -0.08, min_confidence: 0.06, max_positions: 6 } }
       - { name: adaptive, label: swing-15m, params: { candle_interval: 15m, buy_threshold: 0.20, sell_threshold: -0.10, min_confidence: 0.15, max_positions: 4 } }

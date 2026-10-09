@@ -166,6 +166,14 @@ def main() -> int:
             print(f"   {len(kand)} kandidaat/kandidaten overleven alle toetsen — review handmatig; "
                   "de onderzoeker zet niets automatisch live. Zie: python research.py --show")
 
+    # Zelf-geschreven strategieën (evolutie-laag): echte, bot-gegenereerde code. Gated via de arena.
+    gsum = db.generated_summary()
+    if gsum:
+        parts = ", ".join(f"{v}× {k}" for k, v in sorted(gsum.items()))
+        print(f"\n Zelf-geschreven strategieën: {parts}")
+        print("   Actief/kandidaat draaien gated mee in de arena; retired = automatisch "
+              "teruggerold. Zie: python evolve.py --show")
+
     if args.balance:
         print("\n Echt Bitvavo-saldo (view-only):")
         try:
