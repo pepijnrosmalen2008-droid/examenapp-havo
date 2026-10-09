@@ -1231,7 +1231,7 @@ if('serviceWorker' in navigator){
   // allereerste installatie.
   const _hadController=!!navigator.serviceWorker.controller;
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
-    if(_hadController){const b=document.getElementById('sw-update-banner');if(b)b.classList.add('show');}
+    if(_hadController)swToonUpdate();
   });
   window.addEventListener('load',()=>{
     navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).then(reg=>{
@@ -1247,6 +1247,23 @@ if('serviceWorker' in navigator){
   });
 }
 
+// Nieuwe versie: zwevende kaart onder de notch met Vonk en een cadeautje.
+function swToonUpdate(){
+  const b=document.getElementById('sw-update-banner');if(!b)return;
+  try{const v=b.querySelector('.swu-vonk-svg');if(v&&!v.innerHTML&&typeof mascotSVG==='function')v.innerHTML=mascotSVG('wow',46);}catch(e){}
+  b.classList.remove('uitpak');b.classList.add('show');
+  try{if(typeof haptic==='function')haptic(10);}catch(e){}
+}
+// Uitpakken: deksel eraf, sterretjes, dan pas herladen.
+function swUitpakken(btn){
+  const b=document.getElementById('sw-update-banner');
+  if(btn)btn.disabled=true;
+  try{trackEvent('update_uitpakken');}catch(e){}
+  const snel=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(b)b.classList.add('uitpak');
+  try{if(typeof playSound==='function')playSound('open');}catch(e){}
+  setTimeout(swUpdate,snel?0:750);
+}
 // Veilige SW-update: skipWaiting → éénmalig controllerchange → herlaad
 function swUpdate(){
   navigator.serviceWorker.getRegistration().then(reg=>{

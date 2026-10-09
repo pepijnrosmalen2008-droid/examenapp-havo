@@ -61,7 +61,7 @@ Load order matters: `data.js`/`state.js` define globals the later modules use. `
 | `leren/` + `llms.txt` | **Gegenereerd** door `scripts/build-leren.mjs`: openbare leerpagina per leerdoel-module met rijke samenvatting (`/leren/<niveau>/<vak>/<leerdoel>.html`: samenvatting met figuren/clips, voorbeeldvragen met uitleg, schema.org `Quiz` + `LearningResource`), per vak een index en begrippenlijst, `/leren/` en `/llms.txt` voor AI-zoekmachines. Echte pagina's voor mens én zoekmachine (geen doorsturen). Knop "Oefen" linkt naar `/?niveau=&vak=&leerdoel=<id>&oefen=1` (init.js/vak.js openen dan meteen de quiz van dat leerdoel). Daarnaast per vak met een Slagio-proefexamen `/leren/<niveau>/<vak>/examenvragen.html`: alle vragen per opgave met context, figuur en uitklapbaar modelantwoord met puntenverdeling (schema.org `Quiz`), gelinkt vanuit `/leren/`, de vak-index en `llms.txt`. Smoke controleert met `--check` dat ze actueel zijn; `build-sitemap.mjs` neemt `leren/` mee. Niet met de hand bewerken. |
 | `examens.js` / `ce_data.js` | Exam PDF / CE question data |
 | `admin.html` | Standalone admin analytics dashboard (own Supabase client) |
-| `sw.js` | Service worker. `CACHE` const on line 1 + `ASSETS[]` list of cached files. |
+| `sw.js` | Service worker. `CACHE` const on line 1 + `ASSETS[]` list of cached files. Een nieuwe versie toont `#sw-update-banner` als zwevende kaart onder de notch (`env(safe-area-inset-top)`): Vonk met een cadeautje, knop Uitpakken (`swToonUpdate`/`swUitpakken` in init.js: deksel eraf en sterretjes, daarna `swUpdate`; event `update_uitpakken`). |
 | `manifest.json` | PWA manifest |
 | `vakken/*.html` | SEO landing pages per subject (no app logic) |
 

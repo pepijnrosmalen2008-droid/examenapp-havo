@@ -4917,11 +4917,6 @@ details[open]>.sp-cal-day-header .sp-cal-chev,details.sp-vak-block[open]>.sp-vak
 .acc-toggle input:checked+.acc-slider::before{transform:translateX(20px)}
 .dyslexie,.dyslexie *{font-family:'OpenDyslexic',sans-serif!important}
 .hoog-contrast{--s:#fff!important;--bg:#f5f5f5!important;--bg2:#e8e8e8!important;--dk:#000!important;--tx:#000!important;--mu:#444!important;--bo:#555!important}
-#sw-update-banner{position:fixed;top:0;left:0;right:0;z-index:99999;display:none;align-items:center;justify-content:center;gap:10px;padding:10px 16px;background:linear-gradient(135deg,#f97316,#f59e0b);color:#fff;font-size:13px;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.25)}
-#sw-update-banner.show{display:flex}
-#sw-update-banner button{padding:5px 14px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:700}
-#sw-update-banner .sw-banner-reload{background:#fff;color:#f97316}
-#sw-update-banner .sw-banner-dismiss{background:rgba(255,255,255,.2);color:#fff}
 /* (verouderde top-bar variant van #offline-banner verwijderd - botste met de pill-toast
    hierboven en veroorzaakte een half-zichtbaar, niet-weg-te-klikken blokkerend scherm) */
 
@@ -12324,3 +12319,30 @@ body:has(.ap-ov) .vonk-egg-bubble,body:has(.ap-ov) .vonk-react{display:none!impo
 .naam-in.naam-fout{animation:naamSchud .4s}
 @keyframes naamSchud{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
 @media(prefers-reduced-motion:reduce){.naam-in.naam-fout{animation:none;border-color:#ef4444}}
+
+/* ═══════ NIEUWE VERSIE: KAART ONDER DE NOTCH ═══════ */
+#sw-update-banner{position:fixed;left:0;right:0;top:0;z-index:99999;display:flex;justify-content:center;padding:calc(env(safe-area-inset-top,0px) + 10px) 12px 0;pointer-events:none;transform:translateY(-130%);transition:transform .45s cubic-bezier(.34,1.4,.64,1)}
+#sw-update-banner.show{transform:none}
+.swu-kaart{pointer-events:auto;display:flex;align-items:center;gap:10px;width:100%;max-width:460px;padding:8px 8px 8px 6px;border-radius:20px;background:#0f1530;color:#fff;border:2px solid rgba(255,255,255,.08);box-shadow:0 5px 0 #070a18,0 14px 34px rgba(5,8,20,.45);font-family:var(--font)}
+.swu-vonk{position:relative;flex:none;width:58px;height:50px}
+.swu-vonk-svg{position:absolute;left:0;bottom:-4px;width:46px;height:46px}
+.swu-vonk-svg svg{width:100%;height:100%}
+.swu-cadeau{position:absolute;right:-2px;bottom:0;width:28px;height:28px;animation:swuWiebel 1.6s ease-in-out infinite;transform-origin:50% 100%}
+.swu-deksel{transform-box:fill-box;transform-origin:50% 100%;transition:transform .45s cubic-bezier(.34,1.6,.64,1)}
+.swu-ster{position:absolute;right:10px;bottom:20px;width:7px;height:7px;background:#fde047;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);opacity:0}
+.swu-tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.swu-tx b{font:800 14px/1.2 var(--font-head)}
+.swu-tx small{font-size:12px;color:rgba(255,255,255,.65);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#sw-update-banner .sw-banner-reload{flex:none;padding:10px 14px;border:0;border-radius:13px;background:#f97316;color:#fff;font:800 13.5px var(--font-head);cursor:pointer;box-shadow:0 3px 0 #c2570c;transition:transform .1s,box-shadow .1s}
+#sw-update-banner .sw-banner-reload:active{transform:translateY(2px);box-shadow:0 1px 0 #c2570c}
+#sw-update-banner .sw-banner-dismiss{flex:none;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.1);color:rgba(255,255,255,.75);font-size:18px;line-height:1;cursor:pointer}
+#sw-update-banner.uitpak .swu-cadeau{animation:none}
+#sw-update-banner.uitpak .swu-deksel{transform:translate(4px,-12px) rotate(28deg)}
+#sw-update-banner.uitpak .swu-ster{animation:swuSter .7s ease-out forwards}
+#sw-update-banner.uitpak .s2{animation-delay:.08s}#sw-update-banner.uitpak .s3{animation-delay:.16s}
+#sw-update-banner.uitpak .swu-vonk-svg{animation:swuHup .5s cubic-bezier(.34,1.6,.64,1)}
+@keyframes swuWiebel{0%,70%,100%{transform:rotate(0)}76%{transform:rotate(-9deg)}84%{transform:rotate(8deg)}92%{transform:rotate(-4deg)}}
+@keyframes swuSter{0%{opacity:1;transform:translate(0,0) scale(.6)}100%{opacity:0;transform:translate(var(--sx,0),-26px) scale(1.4) rotate(90deg)}}
+.swu-ster.s1{--sx:-14px}.swu-ster.s2{--sx:2px}.swu-ster.s3{--sx:16px}
+@keyframes swuHup{40%{transform:translateY(-7px) scale(1.06)}}
+@media(prefers-reduced-motion:reduce){#sw-update-banner{transition:none}.swu-cadeau,#sw-update-banner.uitpak .swu-vonk-svg{animation:none}}

@@ -469,9 +469,15 @@
 })();
 </script>
 <div id="sw-update-banner" role="status" aria-live="polite">
-  <span><svg class="ico" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15l-3-3a11 11 0 0 1 8-8c1.5 0 3 .3 3 .3s.3 1.5.3 3a11 11 0 0 1-8 8z"/><path d="M9 12H5s.4-2.5 2-4 4-1 4-1"/><path d="M12 15v4s2.5-.4 4-2 1-4 1-4"/><path d="M5 18c-1 1-1.3 3.5-1.3 3.5S6 21.2 7 20"/></svg> Nieuwe versie beschikbaar</span>
-  <button class="sw-banner-reload" onclick="swUpdate()">Herlaad</button>
-  <button class="sw-banner-dismiss" onclick="this.closest('#sw-update-banner').classList.remove('show')" aria-label="Melding sluiten">×</button>
+  <div class="swu-kaart">
+    <div class="swu-vonk" aria-hidden="true"><span class="swu-vonk-svg"></span>
+      <svg class="swu-cadeau" viewBox="0 0 40 40"><g class="swu-deksel"><rect x="4" y="12" width="32" height="8" rx="2" fill="#ef4444"/><rect x="17" y="12" width="6" height="8" fill="#fde047"/><path d="M20 12c-3-6-10-6-9-2 1 3 9 2 9 2zm0 0c3-6 10-6 9-2-1 3-9 2-9 2z" fill="#fde047"/></g><rect x="6" y="20" width="28" height="16" rx="2" fill="#dc2626"/><rect x="17" y="20" width="6" height="16" fill="#facc15"/></svg>
+      <i class="swu-ster s1"></i><i class="swu-ster s2"></i><i class="swu-ster s3"></i>
+    </div>
+    <div class="swu-tx"><b>Er ligt een nieuwe Slagio klaar</b><small>Duurt maar een tel</small></div>
+    <button class="sw-banner-reload" onclick="swUitpakken(this)">Uitpakken</button>
+    <button class="sw-banner-dismiss" onclick="this.closest('#sw-update-banner').classList.remove('show')" aria-label="Melding sluiten">&times;</button>
+  </div>
 </div>
 <div id="offline-banner" role="status" aria-live="polite"><span id="offline-banner-text">Geen internet - je voortgang wordt lokaal opgeslagen</span><button id="offline-dismiss" type="button" aria-label="Melding sluiten">&times;</button></div>
 <a href="#main-content" class="skip-link">Ga naar inhoud</a>
