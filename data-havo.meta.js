@@ -573,6 +573,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D5",
+      "lo": "nl.D.5",
+      "gs": 2,
+      "naam": "Een samenvatting controleren op volledigheid en samenhang",
+      "beschrijving": "Je beoordeelt een samenvatting op volledigheid, juistheid, beknoptheid, samenhang en objectiviteit en verbetert wat ontbreekt of niet klopt.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Criteria voor een goede samenvatting",
+       "Volledigheid",
+       "Juistheid",
+       "Beknoptheid en limiet",
+       "Samenhang",
+       "Objectiviteit"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
