@@ -182,6 +182,22 @@ CREATE TABLE IF NOT EXISTS strategy_stats (
     sum_edge REAL NOT NULL DEFAULT 0
 );
 
+-- Hypothese-register: wat de autonome onderzoeker al heeft onderzocht, met uitkomst en oordeel.
+-- Voorkomt dat dezelfde ideeën eindeloos opnieuw getest worden (capaciteit 6: meta/geheugen).
+CREATE TABLE IF NOT EXISTS research_log (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    ts         TEXT NOT NULL,
+    hkey       TEXT NOT NULL UNIQUE,     -- deterministische sleutel (strategie+params)
+    strategy   TEXT NOT NULL,
+    params     TEXT NOT NULL,            -- JSON
+    return_pct REAL,
+    hold_pct   REAL,
+    excess_pct REAL,
+    trades     INTEGER,
+    verdict    TEXT NOT NULL,            -- kandidaat | verworpen | inconclusief
+    flags      TEXT                      -- JSON-lijst met redenen
+);
+
 -- Concept-drift-detector (Page-Hinkley) per factor: werkt een edge nog, of is hij
 -- recent gekanteld? Online bijgewerkt op de edge-stroom.
 CREATE TABLE IF NOT EXISTS factor_drift (
@@ -521,6 +537,30 @@ class Database:
                 "net_edge": (r["sum_edge"] / n) if n else None,
             }
         return out
+
+    # ── hypothese-register (autonome onderzoeker) ────────────────────
+
+    def research_seen(self, hkey: str) -> bool:
+        return self.conn.execute("SELECT 1 FROM research_log WHERE hkey=?", (hkey,)).fetchone() is not None
+
+    def record_research(self, *, hkey: str, strategy: str, params: str, return_pct: float | None,
+                        hold_pct: float | None, excess_pct: float | None, trades: int | None,
+                        verdict: str, flags: str) -> None:
+        self.conn.execute(
+            "INSERT OR REPLACE INTO research_log(ts, hkey, strategy, params, return_pct, hold_pct, "
+            "excess_pct, trades, verdict, flags) VALUES(?,?,?,?,?,?,?,?,?,?)",
+            (utcnow(), hkey, strategy, params, return_pct, hold_pct, excess_pct, trades, verdict, flags))
+        self.conn.commit()
+
+    def recent_research(self, limit: int = 50) -> list[dict]:
+        rows = self.conn.execute(
+            "SELECT * FROM research_log ORDER BY id DESC LIMIT ?", (limit,)).fetchall()
+        return [dict(r) for r in rows]
+
+    def research_summary(self) -> dict:
+        rows = self.conn.execute(
+            "SELECT verdict, COUNT(*) c FROM research_log GROUP BY verdict").fetchall()
+        return {r["verdict"]: r["c"] for r in rows}
 
     # ── factor-leerlus (forward-only betrouwbaarheid) ────────────────
 

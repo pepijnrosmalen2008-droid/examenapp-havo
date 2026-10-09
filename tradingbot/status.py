@@ -134,6 +134,38 @@ def main() -> int:
                 if amount > 0:
                     print(f"   {asset:<6} {amount:.8f}")
 
+    # Dubbele scorekaart: handelen (verdient het echte kapitaal?) vs. leren (vindt de
+    # onderzoeker echte edges / kalibreert de arena?). Bewust gescheiden — cash aanhouden
+    # op een markt zonder edge mag een láág handelscijfer geven én een hóóg leercijfer.
+    try:
+        from autopilot import scorecard as sc
+        card = sc.scorecard(db)
+    except Exception:  # noqa: BLE001 — scorekaart mag status nooit breken
+        card = None
+    if card:
+        t, r = card["trading"], card["research"]
+        print("\n Dubbele scorekaart (0–100):")
+        print(f"   Handelen:  {t['score']:>5}   rendement {t['return_pct']:+.2f}%  "
+              f"netto P&L {eur(t['net_pnl_eur'])}  max DD {t['max_drawdown_pct']:.1f}%  "
+              f"({t['closed_positions']} gesloten posities)")
+        print(f"   Leren:     {r['score']:>5}   arena {r['arena_positive_edge']}/"
+              f"{r['arena_strategies_graded']} met edge  "
+              f"hypotheses {r['hypotheses_kandidaat']}/{r['hypotheses_total']} kandidaat")
+
+    # Onderzoeksregister: offline getoetste hypotheses (raakt het live-kapitaal niet).
+    rsum = db.research_summary()
+    if rsum:
+        parts = ", ".join(f"{v}× {k}" for k, v in sorted(rsum.items()))
+        print(f"\n Onderzoeksregister: {parts}")
+        try:
+            from autopilot import researcher
+            kand = researcher.promoted(db)
+        except Exception:  # noqa: BLE001
+            kand = []
+        if kand:
+            print(f"   {len(kand)} kandidaat/kandidaten overleven alle toetsen — review handmatig; "
+                  "de onderzoeker zet niets automatisch live. Zie: python research.py --show")
+
     if args.balance:
         print("\n Echt Bitvavo-saldo (view-only):")
         try:

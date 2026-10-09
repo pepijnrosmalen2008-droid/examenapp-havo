@@ -467,6 +467,24 @@ config.allin draait nu `autonomous`, veilig-standaard (verse start = cash tot er
 Fase 1 van AUTONOMOUS_ENGINE_PLAN.md; de verdere lagen (zelf hypotheses/strategieën genereren,
 patroon-ontdekking, meta-learning) komen als getoetste increments hierop.
 
+## D38 — Autonome onderzoeker (offline) + dubbele scorekaart
+
+Fase 2 op D37: `autopilot/researcher.py` genereert zélf hypotheses (een grove parameter-grid per
+strategie), toetst elke streng offline — backtest + buy-and-hold-benchmark + de volledige
+adversariële suite (kosten-stress, shuffle/p_luck, vertraging, leave-one-out) — en schrijft het
+oordeel naar de nieuwe tabel `research_log` (uniek op `hkey`, zodat dezelfde hypothese niet eindeloos
+hertest wordt). Oordeel is falsificatie-eerst: default = *verworpen*; alleen positieve netto-excess
+én nul adversariële vlaggen → *kandidaat*; te weinig trades → *inconclusief*. `research.py` draait dit
+over gecachte/CSV-data (geen key nodig); `--show` toont het register.
+
+Harde scheiding met het live-pad: de onderzoeker alloceert **nooit** zelf echt kapitaal. Een
+kandidaat wordt alleen gerapporteerd en komt pas in de live-roster als een mens hem er bewust in zet —
+de arena (D37) blijft de enige router van echt geld en de risk-engine blijft onafhankelijk.
+`autopilot/scorecard.py` geeft twee aparte cijfers (0–100): *handelen* (rendement t.o.v. benchmark,
+drawdown-straf, netto P&L) en *leren* (arena-kalibratie + gezonde kandidaat-ratio). Bewust gescheiden:
+cash aanhouden op een markt zonder edge hoort een láág handelscijfer én een hóóg leercijfer te geven,
+in plaats van het te verdoezelen. `status.py` toont beide + het onderzoeksregister.
+
 ## D22 — Meerdere bots naast elkaar + seed-portefeuille
 
 Om strategieën eerlijk te vergelijken kan de bot met `--config` draaien; elke config

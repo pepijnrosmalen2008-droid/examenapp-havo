@@ -76,10 +76,14 @@ haar eigen veiligheidslimieten niet verzwakken om een experiment te laten "slage
 - **Fase 0 — nu, veiligheid:** de bloedende aggressieve scalp **de-churnen** naar een rustige
   nulmeting (fors hogere drempels / weinig trades), zodat we niet €16/dag aan fees verbranden
   terwijl we bouwen. Dit is jouw "Fase 1 live foundation = veilig draaien + betrouwbare nulmeting".
-- **Fase 1 — strategie-register + dubbele score + bewijs-gated allocatie** (grootste winst, laagste
-  risico): tilt de bestaande factor-bewijslogica naar strategie-niveau; kapitaal volgt bewijs.
-- **Fase 2 — onderzoeksplanner die bestaande tools autonoom draait** (backtest/MC/adversarial op
-  zelf-gekozen hypotheses) + hypothese-register.
+- **Fase 1 — strategie-register + bewijs-gated allocatie** ✅ **GEBOUWD** (zie D37): `arena.py` +
+  `strategies/autonomous.py` meten elke kandidaat forward-only na kosten; kapitaal volgt bewijs,
+  anders cash. Draait in `config.allin.yaml`.
+- **Fase 2 — autonome onderzoeker + dubbele score** ✅ **GEBOUWD** (zie D38): `researcher.py` genereert
+  zelf hypotheses (parameter-grid), toetst ze offline met backtest + buy-and-hold + de adversariële
+  suite en logt het oordeel in `research_log` (dedup via hkey); `research.py` is de offline CLI.
+  `scorecard.py` geeft twee aparte cijfers (handelen vs. leren), getoond in `status.py`. De
+  onderzoeker alloceert nooit zelf kapitaal — kandidaten gaan pas live na handmatige review.
 - **Fase 3 — strategie-varianten genereren + vergelijken** (binnen een vaste, veilige ruimte van
   bouwstenen; géén vrije code-generatie live).
 - **Fase 4 — adaptieve selectie** tussen handelsstijlen op regime + bewijs.
