@@ -1807,19 +1807,22 @@ function _quizTerugScherm(){return (ST.vak&&ST.vak.id==='mijnstof')?'sc-mijnstof
 function switchMode(){show('sc-qmode');}
 // ═══════ NAAM-HERINNERING ═══════
 // Wie veel quizzen maakt maar geen naam heeft, staat in de weekwedstrijd en de
-// topscores onder een verzonnen naam. Vanaf 5 quizzen vragen we er rustig om:
-// hooguit eens per 3 dagen en maximaal 4 keer, en altijd na een quiz (nooit tijdens).
-const NAAM_VANAF=5;
+// topscores onder een verzonnen naam. Vanaf 3 quizzen vragen we er rustig om:
+// hooguit eens per 2 dagen en maximaal 6 keer, en altijd na een quiz (nooit tijdens).
+const NAAM_VANAF=3,NAAM_MAX=6,NAAM_DAGEN=2;
 function _naamHuidig(){try{return (JSON.parse(localStorage.getItem(PROF_KEY)||'{}').naam||'').trim();}catch(e){return '';}}
 function _naamOntbreekt(){const n=_naamHuidig().toLowerCase();return !n||n==='jij'||n==='speler';}
-function _naamTellen(){let n=0;try{n=(parseInt(localStorage.getItem('slagio_quiz_n')||'0',10)||0)+1;localStorage.setItem('slagio_quiz_n',String(n));}catch(e){}return n;}
+function _naamTellen(){let n=0;try{let v=localStorage.getItem('slagio_quiz_n');
+  // Eerste keer: begin bij de quizzen die al in de lokale topscores staan.
+  if(v===null){try{v=String(getLbEntries().length);}catch(e){v='0';}}
+  n=(parseInt(v||'0',10)||0)+1;localStorage.setItem('slagio_quiz_n',String(n));}catch(e){}return n;}
 function _naamEligible(){
   try{
     if(!_naamOntbreekt())return false;
     if((parseInt(localStorage.getItem('slagio_quiz_n')||'0',10)||0)<NAAM_VANAF)return false;
     const shows=parseInt(localStorage.getItem('slagio_naam_shows')||'0',10)||0;
     const last=parseInt(localStorage.getItem('slagio_naam_last')||'0',10)||0;
-    return shows<4&&Date.now()-last>=3*24*3600e3;
+    return shows<NAAM_MAX&&Date.now()-last>=NAAM_DAGEN*24*3600e3;
   }catch(e){return false;}
 }
 function _naamVraag(){
