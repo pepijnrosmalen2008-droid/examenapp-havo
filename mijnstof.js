@@ -228,7 +228,7 @@ function _msVakOpties(gekozen) {
 function msRender() {
   const el = document.getElementById('ms-inhoud'); if (!el) return;
   const d = msLaad();
-  if (MS.view === 'bewerk') { el.innerHTML = _msBewerkHtml(d); _msLive(); return; }
+  if (MS.view === 'bewerk') { el.innerHTML = _msBewerkHtml(d); _msConceptTerug(d); _msLive(); return; }
   if (MS.view === 'lees') { el.innerHTML = _msLeesHtml(d); return; }
   if (MS.view === 'toets') { el.innerHTML = _msToetsBewerkHtml(d); return; }
   el.innerHTML = _msLijstHtml(d);
@@ -268,8 +268,8 @@ function _msLeegHtml() {
 function _msBewerkHtml(d) {
   const n = MS.id ? d.n.find(x => x.id === MS.id) : null;
   const vak = n ? n.vak : (MS._nieuwVak || (ST && ST.vak && ST.vak.id !== 'mijnstof' ? ST.vak.id : ''));
-  return `<div class="ms-topbar"><button class="ms-terug" onclick="${n ? `msOpen('${n.id}')` : 'msTerugNaarLijst()'}">Annuleren</button><b>${n ? 'Samenvatting bewerken' : 'Nieuwe samenvatting'}</b><button class="ms-opslaan" onclick="msOpslaan()">Opslaan</button></div>
-  <label class="ms-veld"><span>Titel</span><input id="ms-titel" maxlength="80" placeholder="Bijv. H3 Enzymen" value="${n ? _msEsc(n.titel) : ''}"></label>
+  return `<div class="ms-topbar"><button class="ms-terug" onclick="_msConceptWeg();${n ? `msOpen('${n.id}')` : 'msTerugNaarLijst()'}">Annuleren</button><b>${n ? 'Samenvatting bewerken' : 'Nieuwe samenvatting'}</b><button class="ms-opslaan" onclick="msOpslaan()">Opslaan</button></div>
+  <label class="ms-veld"><span>Titel</span><input id="ms-titel" maxlength="80" oninput="_msConceptBewaar()" placeholder="Bijv. H3 Enzymen" value="${n ? _msEsc(n.titel) : ''}"></label>
   <label class="ms-veld"><span>Vak</span><select id="ms-vak">${_msVakOpties(vak)}</select></label>
   <div class="ms-bronnen">
     <button type="button" class="ms-bron" onclick="document.getElementById('ms-foto').click()"><span class="ms-bron-ic">${_msIc('foto')}</span><b>Foto van je schrift</b><small>Vonk zet het om</small></button>
@@ -290,7 +290,30 @@ Ze leveren energie door verbranding.">${n ? _msEsc(n.tekst) : ''}</textarea></la
   <input type="file" id="ms-file" accept=".txt,.md,text/plain,text/markdown" hidden onchange="_msBestand(this)">
   <div class="ms-gevonden" id="ms-gevonden"></div>`;
 }
+// Concept: wat je typt blijft bewaard tot je opslaat of annuleert, ook als je per ongeluk wegklikt of de app sluit.
+function _msConceptKey() { return lvlCol('slagio_ms_concept'); }
+let _msConceptT = null;
+function _msConceptBewaar() {
+  clearTimeout(_msConceptT);
+  _msConceptT = setTimeout(() => {
+    const ta = document.getElementById('ms-tekst'), ti = document.getElementById('ms-titel'), vk = document.getElementById('ms-vak'); if (!ta) return;
+    try { localStorage.setItem(_msConceptKey(), JSON.stringify({ id: MS.id || 'nieuw', titel: ti ? ti.value : '', vak: vk ? vk.value : '', tekst: ta.value.slice(0, 60000), ts: Date.now() })); } catch (e) {}
+  }, 400);
+}
+function _msConceptWeg() { clearTimeout(_msConceptT); try { localStorage.removeItem(_msConceptKey()); } catch (e) {} }
+function _msConceptTerug(d) {
+  let c = null; try { c = JSON.parse(localStorage.getItem(_msConceptKey()) || 'null'); } catch (e) {}
+  if (!c || c.id !== (MS.id || 'nieuw')) return;
+  const n = MS.id ? d.n.find(x => x.id === MS.id) : null;
+  if (!c.tekst.trim() || (n && n.tekst === c.tekst.trim() && n.titel === c.titel.trim())) return;
+  const ta = document.getElementById('ms-tekst'), ti = document.getElementById('ms-titel'), vk = document.getElementById('ms-vak'); if (!ta) return;
+  ta.value = c.tekst; if (ti) ti.value = c.titel || ''; if (vk && c.vak && vk.querySelector(`option[value="${c.vak}"]`)) vk.value = c.vak;
+  const box = document.createElement('div'); box.className = 'ms-concept';
+  box.innerHTML = `<span>Je tekst van de vorige keer staat er weer. Hij was nog niet opgeslagen.</span><button type="button" onclick="_msConceptWeg();msRender()">Weggooien</button>`;
+  const top = document.querySelector('#ms-inhoud .ms-topbar') || document.querySelector('.ms-topbar'); if (top) top.after(box);
+}
 function _msLive() {
+  _msConceptBewaar();
   const ta = document.getElementById('ms-tekst'), box = document.getElementById('ms-gevonden'); if (!ta || !box) return;
   const k = msKaarten(ta.value);
   if (!ta.value.trim()) { box.innerHTML = ''; return; }
@@ -314,6 +337,7 @@ function msOpslaan() {
   n.titel = titel || (tekst.split(/\r?\n/).find(l => l.trim()) || 'Samenvatting').replace(/^#+\s*/, '').slice(0, 60);
   n.vak = vak; n.tekst = tekst.slice(0, 60000); n.ts = Date.now();
   if (!msBewaar(d)) return;
+  _msConceptWeg();
   try { trackEvent('mijnstof_opslaan', { nieuw, kaarten: msKaarten(n.tekst).length, lengte: n.tekst.length }); } catch (e) {}
   msOpen(n.id);
 }

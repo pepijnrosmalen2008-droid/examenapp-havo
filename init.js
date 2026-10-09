@@ -563,6 +563,40 @@ document.addEventListener('keydown',e=>{
   const sc=document.querySelector('.sc.on');if(sc&&['sc-quiz','sc-flash','sc-race'].includes(sc.id))return;
   if(typeof openZoek==='function'){e.preventDefault();openZoek();setTimeout(()=>{const q=document.getElementById('zoek-q');if(q)q.focus();},120);}
 });
+// Escape sluit de bovenste pop-up die er geen eigen toets voor heeft.
+// Volgorde = wat er bovenop ligt. Tijdens typen met tekst in het vak sluit hij niet (dan ben je je tekst kwijt).
+const _ESC_LAGEN=[
+  ['fig-zoom-ov',()=>closeFigZoom(),'on'],
+  ['reg-gift-ov',()=>document.getElementById('reg-gift-ov').remove()],
+  ['plus-upsell',()=>closePlusUpsell()],
+  ['zetquiz-ov',()=>closeZetQuiz(),'on'],
+  ['fb-popup',()=>_fbRemove()],
+  ['vu-ov',()=>vonkUitlegSluit()],
+  ['msx-ov',()=>_msSheetDicht()],
+  ['vonk-chat',()=>closeVonkChat(),'on'],
+  ['vonk-coach',()=>closeVonkCoach(),'on'],
+  ['rapport-modal',()=>closeRapport(),'open'],
+];
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Escape'||e.defaultPrevented)return;
+  const t=e.target;if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA')&&t.value)return;
+  for(const [id,sluit,klas] of _ESC_LAGEN){
+    const el=document.getElementById(id);
+    if(!el||(klas&&!el.classList.contains(klas)))continue;
+    try{sluit();e.preventDefault();}catch(x){}
+    return;
+  }
+});
+// Kaartjes op een laptop: spatie of Enter draait om, daarna 1-4 = Opnieuw/Moeilijk/Goed/Makkelijk.
+document.addEventListener('keydown',e=>{
+  if(e.ctrlKey||e.metaKey||e.altKey)return;
+  const sc=document.querySelector('.sc.on');if(!sc||sc.id!=='sc-flash'||typeof FC==='undefined')return;
+  const t=e.target;if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable))return;
+  const kaart=document.getElementById('fc-card');if(!kaart||kaart.style.display==='none')return;
+  if(!FC.flipped){if(e.key===' '||e.key==='Enter'){e.preventDefault();flipCard();}return;}
+  const q={'1':0,'2':2,'3':3,'4':5}[e.key];
+  if(q!==undefined){e.preventDefault();fcRate(q);}
+});
 // Home: de tegels en de zoekbalk krijgen dezelfde tekeningen en Vonk als het menu.
 (function(){
   try{document.querySelectorAll('.hm-tegel [data-art],.pk-art[data-art]').forEach(el=>{el.innerHTML=_msArt(el.dataset.art);});}catch(e){}

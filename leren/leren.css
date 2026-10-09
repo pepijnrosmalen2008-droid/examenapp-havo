@@ -302,6 +302,9 @@ html.dark{
 html.cl-sleept{cursor:grabbing}
 :root{--kn-glas:rgba(255,255,255,.74);--kn-rand:rgba(15,23,42,.08);--kn-schaduw:0 1px 2px rgba(15,23,42,.05),0 4px 14px rgba(15,23,42,.06)}
 html.dark{--kn-glas:rgba(44,48,62,.62);--kn-rand:rgba(255,255,255,.09);--kn-schaduw:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}
+.fp-chip,.det-bc-home,.sam-head-ck,.race-diff-btn,.auth-link button,.qstp{position:relative}
+.fp-chip::after,.det-bc-home::after,.sam-head-ck::after,.race-diff-btn::after,.auth-link button::after,.qstp::after{content:"";position:absolute;inset:-8px -4px}
+.sam-head-ck::after{inset:-11px}
 
 :root{--pg-bg:#f6f7fb;--pg-kaart:#fff;--pg-tekst:#141a26;--pg-zacht:#5b6476;--pg-lijn:#e3e6ee;--pg-accent:#2563eb;--pg-goed:#15803d;--pg-fout:#b42318}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--pg-bg:#0f1420;--pg-kaart:#171e2c;--pg-tekst:#e8ecf3;--pg-zacht:#9aa4b6;--pg-lijn:#283043;--pg-accent:#6ea0ff;--pg-goed:#4ade80;--pg-fout:#f87171}}

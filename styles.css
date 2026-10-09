@@ -12287,3 +12287,13 @@ body:has(.ap-ov) .vonk-egg-bubble,body:has(.ap-ov) .vonk-react{display:none!impo
   .bnav-collapse{border:2px solid var(--bo);background:var(--s);box-shadow:0 2px 0 var(--bo2)}
   body.sidebar-collapsed .bnav-collapse{width:40px;height:34px}
 }
+
+/* ═══════ GEMAK: GROTERE TIKVLAKKEN ═══════
+   Kleine knoppen houden hun uiterlijk, maar krijgen een onzichtbaar groter tikvlak (min. ~40px). */
+.fp-chip,.det-bc-home,.sam-head-ck,.race-diff-btn,.auth-link button,.qstp{position:relative}
+.fp-chip::after,.det-bc-home::after,.sam-head-ck::after,.race-diff-btn::after,.auth-link button::after,.qstp::after{content:"";position:absolute;inset:-8px -4px}
+.sam-head-ck::after{inset:-11px}
+.lp-card-name{overflow-wrap:anywhere;hyphens:auto}
+.ms-concept{display:flex;align-items:center;gap:10px;margin:0 0 12px;padding:10px 12px;border-radius:12px;background:rgba(245,158,11,.12);border:1.5px solid rgba(245,158,11,.4);color:var(--tx);font-size:13.5px;line-height:1.35}
+.ms-concept span{flex:1}
+.ms-concept button{flex-shrink:0;background:none;border:1.5px solid var(--bo);border-radius:10px;padding:7px 11px;color:var(--tx2);font:600 13px var(--font);cursor:pointer}
