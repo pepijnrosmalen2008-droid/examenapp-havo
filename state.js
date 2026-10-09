@@ -105,6 +105,12 @@ function _routeVakkenPath(path){
   return true;
 }
 window.addEventListener('popstate',()=>{
+  // Terugknop van telefoon/browser: volg de eigen geschiedenis van de app.
+  // Arcade en Kingdom sluiten zelf hun scherm (eigen popstate).
+  try{
+    const open=id=>{const st=document.getElementById(id);return st&&!st.hidden;};
+    if(_NAV.stapel.length&&!open('arc-stage')&&!open('kd-stage')){terug();return;}
+  }catch(e){}
   const path=location.pathname.replace(/\/$/,'');
   if(_routeVakkenPath(path))return;
   if(path==='/havo'||path==='/vwo'||path==='/vmbo'){_routeFromPath();return;}
@@ -117,8 +123,69 @@ window.addEventListener('popstate',()=>{
   _routeFromHash();
 });
 
+// ═══════ TERUG-GESCHIEDENIS ═══════
+// Elk scherm dat je verlaat komt op een stapel, met wat er nodig is om het precies
+// zo terug te zetten: vak, domein, tabblad, Mijn stof-weergave, examenvak en
+// scrollpositie. terug() haalt het bovenste scherm terug; is de stapel leeg, dan
+// gaat terug naar de fallback (of de home). Quiz, kaartjes, uitslag, inloggen en
+// de oefenmodus-kiezer zijn tussenstappen en komen niet op de stapel. De home is
+// het begin: wie daar komt, begint met een lege stapel.
+const _NAV={stapel:[],naar:null};
+const _NAV_SKIP=['sc-quiz','sc-flash','sc-res','sc-race','sc-race-res','sc-auth','sc-reset-pass','sc-intro','sc-welcome','sc-chal-intro','sc-qmode','sc-examsim','sc-examen','sc-review'];
+function _navMoment(id){
+  const e={id,y:window.scrollY||0};
+  try{if(ST.vak&&getVK().some(v=>v.id===ST.vak.id))e.vak=ST.vak.id;}catch(x){}
+  try{if(ST.domein&&ST.domein.id)e.dom=ST.domein.id;}catch(x){}
+  try{const d=document.getElementById('sc-detail');if(id==='sc-detail'&&d)e.tab=d.classList.contains('vd-t-mijn')?'mijn':d.classList.contains('vd-t-ex')?'ex':'leer';}catch(x){}
+  try{if(id==='sc-mijnstof'&&typeof MS!=='undefined')e.ms={tab:MS.tab,vak:MS.vak,view:MS.view,id:MS.id};}catch(x){}
+  try{if(id==='sc-examens'&&typeof _ebVak!=='undefined')e.eb=_ebVak;}catch(x){}
+  return e;
+}
+function _navOnthoud(prevId,nieuwId){
+  if(!prevId||prevId===nieuwId)return;
+  if(nieuwId==='sc-home'||nieuwId==='sc-welcome'){_NAV.stapel=[];return;}
+  if(_NAV.naar){const doel=_NAV.naar;_NAV.naar=null;if(doel===nieuwId)return;}
+  if(_NAV_SKIP.includes(prevId))return;
+  const top=_NAV.stapel[_NAV.stapel.length-1];
+  // Heen en weer tussen twee schermen stapelt niet op
+  if(top&&top.id===prevId&&top.vak===(ST.vak&&ST.vak.id)&&top.dom===(ST.domein&&ST.domein.id))_NAV.stapel.pop();
+  _NAV.stapel.push(_navMoment(prevId));
+  if(_NAV.stapel.length>30)_NAV.stapel.shift();
+  // Ook een stap in de browsergeschiedenis, zodat de terugknop van de telefoon
+  // of browser hetzelfde doet als de terugknop in de app (zie popstate).
+  try{history.pushState({slagioNav:_NAV.stapel.length},'',location.href);}catch(e){}
+}
+function terug(fallback){
+  const huidig=(document.querySelector('.sc.on')||{}).id;
+  let e=null;
+  while(_NAV.stapel.length){const x=_NAV.stapel.pop();if(x.id!==huidig){e=x;break;}}
+  if(!e){
+    if(typeof fallback==='function'){try{fallback();return;}catch(x){}}
+    else if(typeof fallback==='string'){show(fallback);return;}
+    show('sc-home');return;
+  }
+  _NAV.naar=e.id;
+  const scroll=()=>setTimeout(()=>{try{window.scrollTo(0,e.y||0);}catch(x){}},60);
+  try{
+    if(e.id==='sc-detail'&&e.vak){
+      if(!ST.vak||ST.vak.id!==e.vak||!document.getElementById('dlist')?.children.length)openVak(e.vak);else show('sc-detail');
+      if(e.tab&&e.tab!=='leer'&&typeof vdTab==='function')setTimeout(()=>{try{vdTab(e.tab,true);}catch(x){}},120);
+    }else if((e.id==='sc-domein'||e.id==='sc-leerdoelen')&&e.vak&&e.dom){
+      const zelfde=ST.vak&&ST.vak.id===e.vak&&ST.domein&&ST.domein.id===e.dom;
+      if(zelfde)show(e.id);
+      else{ST.vak=getVK().find(v=>v.id===e.vak);if(e.id==='sc-leerdoelen')openLeerdoelen(e.dom);else openDomein(e.dom);}
+    }else if(e.id==='sc-mijnstof'&&e.ms&&typeof MS!=='undefined'){
+      Object.assign(MS,e.ms);show('sc-mijnstof');try{msRender();}catch(x){}
+    }else if(e.id==='sc-examens'&&e.eb&&typeof openExamenBieb==='function'){
+      openExamenBieb(e.eb);
+    }else show(e.id);
+  }catch(x){show(e.id);}
+  scroll();
+}
+
 function show(id,_noHash){
   const prev=document.querySelector('.sc.on');
+  try{_navOnthoud(prev&&prev.id,id);}catch(e){}
   if(id==='sc-privacy'&&prev)window._privacyFrom=prev.id;
   // Stop quiz timer wanneer de gebruiker de quiz verlaat
   if(prev&&prev.id==='sc-q'&&id!=='sc-q')clearInterval(ST.timer);

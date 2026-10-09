@@ -172,7 +172,7 @@ function openOEPicker(){
   document.getElementById('oep-title').textContent=ST.domein._ce?`${ST.vak.naam} · Echte CE-examenvragen`:ST.domein._proef?`${ST.vak.naam} · Vragen uit het Slagio-proefexamen`:`${ST.vak.naam} · Domein ${ST.domein.id}: ${ST.domein.naam}`;
   document.getElementById('oep-count').textContent=oe.length+' '+(oe.length===1?'vraag':'vragen');
   const _terug=ST.domein._terug||'sc-qmode';
-  document.getElementById('oep-back-btn').onclick=()=>{if(_terug==='sc-examens'&&typeof openExamenBieb==='function')openExamenBieb(ST.vak&&ST.vak.id);else{show(_terug);if(_terug==='sc-detail'&&typeof vdTab==='function')vdTab('ex',true);}};
+  document.getElementById('oep-back-btn').onclick=()=>terug(()=>{if(_terug==='sc-examens'&&typeof openExamenBieb==='function')openExamenBieb(ST.vak&&ST.vak.id);else{show(_terug);if(_terug==='sc-detail'&&typeof vdTab==='function')vdTab('ex',true);}});
   // Attach clicks
   document.querySelectorAll('#oep-list .oep-card').forEach(card=>{
     card.addEventListener('click',()=>startOESingle(parseInt(card.dataset.oeidx)));
@@ -1428,7 +1428,7 @@ function stopQ(){
   }else{
     _surgeActive=false;_surgeLeft=0;_removeSurgeBadge();
     _bankQuizXP();
-    show(_quizTerugScherm());
+    terug(()=>show(_quizTerugScherm()));
   }
 }
 function _showQuitDialog(){
@@ -1449,7 +1449,7 @@ function _showQuitDialog(){
     </div>
     ${combo>=2?`<div class="quit-combo-warn">🔥 Je verliest je ${combo}× combo als je stopt!</div>`:''}
     <div style="display:flex;gap:10px">
-      <button onclick="try{_flushQBatch();trackEvent('quiz_abandoned',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,gestopt_bij:ST.idx,totaal:ST.vragen?.length,score_zo_ver:ST.score});}catch(e){}this.closest('.quit-overlay').remove();_surgeActive=false;_surgeLeft=0;_removeSurgeBadge();_bankQuizXP();show(_quizTerugScherm())" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
+      <button onclick="try{_flushQBatch();trackEvent('quiz_abandoned',{vak:ST.vak?.naam,vak_id:ST.vak?.id,domein_id:ST.domein?.id,mode:ST.mode,gestopt_bij:ST.idx,totaal:ST.vragen?.length,score_zo_ver:ST.score});}catch(e){}this.closest('.quit-overlay').remove();_surgeActive=false;_surgeLeft=0;_removeSurgeBadge();_bankQuizXP();terug(()=>show(_quizTerugScherm()))" style="flex:1;padding:13px;background:var(--s);border:1px solid var(--bo);border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;color:var(--mu);font-family:var(--font)">Stoppen</button>
       <button onclick="this.closest('.quit-overlay').remove();if(ST.mode==='snel'&&ST.tijd>0)startTimer(ST.tijd)" style="flex:2;padding:13px;background:var(--or);border:none;border-radius:12px;font-size:15px;font-weight:900;cursor:pointer;color:#fff;font-family:var(--font)">Doorgaan 🔥</button>
     </div>
   </div>`;

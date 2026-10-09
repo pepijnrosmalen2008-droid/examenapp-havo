@@ -662,7 +662,7 @@ function _parseSamCards(html){
 }
 
 // Terug/opnieuw na een kaartjessessie: eigen stof (mijnstof.js) zet FC.terug en FC.opnieuw.
-function fcTerug(){show((FC&&FC.terug)||'sc-detail');}
+function fcTerug(){terug(()=>show((FC&&FC.terug)||'sc-detail'));}
 function fcOpnieuw(){if(FC&&typeof FC.opnieuw==='function')FC.opnieuw();else startFlash();}
 function startFlash(){
   // Flashcards putten uit de rijke samenvatting (SAM_RICH, lazy geladen) - eerst zeker laden.
