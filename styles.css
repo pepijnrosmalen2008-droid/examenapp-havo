@@ -12276,3 +12276,14 @@ html.dark .sbar-ring-lvl{box-shadow:0 0 0 2px #1c2030}
 @media(prefers-reduced-motion:reduce){.ap-kaart,.ap-vonk{transition:none}}
 /* geen losse Vonk-wolkjes boven de accountvraag */
 body:has(.ap-ov) .vonk-egg-bubble,body:has(.ap-ov) .vonk-react{display:none!important}
+/* Zijbalk: kop met logo en inklapknop blijft altijd bovenaan staan, ook bij scrollen */
+@media(min-width:900px){
+  .bottom-nav-inner{padding-top:0!important}
+  .bnav-head{position:sticky;top:0;z-index:5;margin:0 -14px 2px;padding:14px 14px 10px!important;background:linear-gradient(var(--nav-bg),var(--nav-bg)),var(--bg);box-shadow:0 1px 0 transparent;transition:box-shadow .2s}
+  .bnav-head .bnav-brand{padding:0;margin:0}
+  body.sidebar-collapsed .bnav-head{flex-direction:column;gap:8px;margin:0 -12px 2px;padding:14px 12px 10px!important}
+  body.sidebar-collapsed .bnav-brand{display:flex;font-size:0;gap:0;justify-content:center}
+  body.sidebar-collapsed .bnav-brand img{width:36px;height:36px;border-radius:10px}
+  .bnav-collapse{border:2px solid var(--bo);background:var(--s);box-shadow:0 2px 0 var(--bo2)}
+  body.sidebar-collapsed .bnav-collapse{width:40px;height:34px}
+}

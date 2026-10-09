@@ -444,10 +444,11 @@ function updateBottomNav(id){
 // ── Desktop-zijbalk in-/uitklappen (voorkeur onthouden) ──
 function toggleSidebar(){
   const c=document.body.classList.toggle('sidebar-collapsed');
-  try{localStorage.setItem('slagio_sidebar_collapsed',c?'1':'0');}catch(e){}
+  try{localStorage.setItem('slagio_zijbalk_open',c?'0':'1');}catch(e){}
 }
 // Voorkeur direct toepassen (voor de eerste paint, zonder flikker).
-try{if(localStorage.getItem('slagio_sidebar_collapsed')==='1')document.body.classList.add('sidebar-collapsed');}catch(e){}
+// Standaard ingeklapt; alleen wie de zijbalk zelf openklapt, houdt hem open.
+try{if(localStorage.getItem('slagio_zijbalk_open')!=='1')document.body.classList.add('sidebar-collapsed');}catch(e){document.body.classList.add('sidebar-collapsed');}
 // Hover-tooltips op de nav-knoppen (nuttig als de zijbalk is ingeklapt).
 try{document.querySelectorAll('#bottom-nav .bnav-btn,#bottom-nav .snav-btn,#bottom-nav .bnav-fab').forEach(function(b){
   if(!b.title){var t=b.getAttribute('aria-label')||(b.textContent||'').trim();if(t)b.title=t;}
