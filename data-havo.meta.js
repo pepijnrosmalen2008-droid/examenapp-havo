@@ -595,6 +595,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D6",
+      "lo": "nl.D.6",
+      "gs": 2,
+      "naam": "Een betogende en een informatieve tekst samenvatten",
+      "beschrijving": "Je past je samenvatting aan op de tekstsoort: bij een betoog geef je stelling en argumenten weer, bij een informatieve tekst het onderwerp en de kernpunten.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Betoog: stelling en argumenten",
+       "Informatieve tekst: onderwerp en kernpunten",
+       "Tekststructuren herkennen",
+       "Wat je weglaat",
+       "De samenvatting formuleren",
+       "Veelgemaakte fouten"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -2346,5 +2346,46 @@ Object.assign(SAM_RICH,{
 <path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
 <rect x="4" y="130" width="312" height="42" rx="6" fill="var(--or)"/><text x="12" y="148" font-size="12" font-weight="700" fill="#fff">4  Oordeel met reden</text><text x="12" y="164" font-size="11" fill="#fff">bijvoorbeeld: onvolledig, want punt 4 mist</text></g></svg><div class="sam-figcap">Een gegeven samenvatting beoordelen in vier stappen: hoofdpunten zoeken, elk punt controleren, fouten benoemen en een oordeel met reden geven.</div></div>
 <div class="sam-tip"><strong>Tip:</strong> noem bij een beoordeling altijd het ontbrekende of onjuiste punt zelf, bijvoorbeeld "het compromis ontbreekt"; alleen "onvolledig" zeggen levert geen punt op.</div>
+</div>`,
+'havo_nl_D6':`<div class="sam-intro">Niet elke tekst vat je op dezelfde manier samen. Bij een <strong>betoog</strong> zoek je de <strong>stelling</strong> en de <strong>argumenten</strong>; bij een <strong>informatieve tekst</strong> het onderwerp en de kernpunten per <strong>deelonderwerp</strong>. Je herkent de <strong>structuur</strong> van de tekst en laat je samenvatting daarop aansluiten.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Betoog, stelling</td><td>Verdedigt een standpunt.</td></tr>
+<tr><td>Argument</td><td>Reden voor de stelling.</td></tr>
+<tr><td>Tegenwerping, weerlegging</td><td>Bezwaar en de reactie erop.</td></tr>
+<tr><td>Informatieve tekst</td><td>Legt iets uit.</td></tr>
+<tr><td>Deelonderwerp</td><td>Onderdeel van het onderwerp.</td></tr>
+<tr><td>Opsomming, oorzaak, gevolg</td><td>Veelvoorkomende structuren.</td></tr>
+<tr><td>Structuur</td><td>Hoe de tekst is opgebouwd.</td></tr>
+<tr><td>Toevoeging</td><td>Staat niet in de tekst.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Een betoog samenvatten</div>
+<p>De kern van een <strong>betoog</strong> is de <strong>stelling</strong>: wat wil de schrijver bewijzen? Daaronder vallen de belangrijkste <strong>argumenten</strong>, vaak ook de <strong>tegenwerping</strong> met de <strong>weerlegging</strong>. Een samenvatting van "Mobiele telefoons horen niet in de klas. Ze leiden af en leerlingen gebruiken ze om te spieken. Sommigen zeggen dat ze handig zijn voor opdrachten, maar scholen kunnen laptops geven" bevat dus: geen telefoons in de klas, omdat ze afleiden en spieken mogelijk maken, en het bezwaar over opdrachten is op te lossen met laptops. Noem altijd de stelling, anders weet de lezer niet wat de argumenten onderbouwen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Samenvatting van een betoog: stelling, argumenten en weerlegging, met een voorbeeld over telefoons in de klas"><g font-family="inherit"><rect x="4" y="4" width="312" height="44" rx="6" fill="var(--or)"/><text x="12" y="22" font-size="12" font-weight="700" fill="#fff">Stelling</text><text x="12" y="39" font-size="11" fill="#fff">Geen telefoons in de klas</text>
+<rect x="4" y="54" width="312" height="52" rx="6" fill="var(--orl)"/><text x="12" y="72" font-size="12" font-weight="700" fill="var(--dk)">Argumenten</text><text x="12" y="90" font-size="11" fill="var(--dk)">Ze leiden af en maken spieken mogelijk</text>
+<rect x="4" y="112" width="312" height="52" rx="6" fill="var(--orl)"/><text x="12" y="130" font-size="12" font-weight="700" fill="var(--dk)">Weerlegging</text><text x="12" y="148" font-size="11" fill="var(--dk)">Opdrachten kunnen op laptops</text>
+<rect x="4" y="168" width="312" height="18" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="181" font-size="11" fill="var(--mu)">Voorbeelden laat je weg</text></g></svg><div class="sam-figcap">Een betoog samengevat: de stelling, de belangrijkste argumenten en de weerlegging. Voorbeelden (stippellijn) laat je weg.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> bij een betoog noem je altijd de stelling én de belangrijkste argumenten.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Een informatieve tekst samenvatten</div>
+<p>Een <strong>informatieve tekst</strong> legt iets uit en heeft meestal geen mening. Je zoekt het onderwerp en per <strong>deelonderwerp</strong> de kern. Herken eerst de <strong>structuur</strong>: een <strong>opsomming</strong> van soorten met kenmerken (drie wolksoorten), <strong>oorzaak</strong> en <strong>gevolg</strong> ("de lucht is vuil, daardoor krijgen mensen longziekten"), een probleem met een oplossing of een vergelijking. Volg bij het samenvatten de opbouw van de tekst: noem alle soorten of alle delen in korte zinnen. Een oordeel ("bijen zijn goed") of een voorbeeld over één persoon hoort er niet in.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Structuren van een informatieve tekst: opsomming, oorzaak en gevolg, probleem en oplossing, vergelijking"><g font-family="inherit"><rect x="4" y="4" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="26" font-size="12" font-weight="700" fill="var(--dk)">Opsomming: soorten met kenmerken</text>
+<rect x="4" y="42" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="64" font-size="12" font-weight="700" fill="var(--dk)">Oorzaak en gevolg: daardoor, daarom</text>
+<rect x="4" y="80" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="102" font-size="12" font-weight="700" fill="var(--dk)">Probleem en oplossing</text>
+<rect x="4" y="118" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="140" font-size="12" font-weight="700" fill="var(--dk)">Vergelijking: overeenkomst, verschil</text>
+<text x="12" y="168" font-size="11" fill="var(--mu)">Herken eerst de structuur</text></g></svg><div class="sam-figcap">Vier veelvoorkomende structuren van een informatieve tekst: opsomming, oorzaak en gevolg, probleem en oplossing en vergelijking.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Aanpak en veelgemaakte fouten</div>
+<p>Begin met de vraag: is dit een betoog of een uitleg? Bij een betoog zoek je de stelling, bij een uitleg het onderwerp. Veelgemaakte fouten zijn: de stelling weglaten, alleen het argument noemen, een voorbeeld of persoon opnemen, een oordeel toevoegen en <strong>toevoegingen</strong> verzinnen die niet in de tekst staan. Gebruik "dus" alleen als de tekst die conclusie ook trekt. Een samenvatting van een betoog die zegt "er zijn argumenten voor en tegen" zonder stelling en argumenten zegt niets over wat de schrijver beweert. Pas ook je formulering aan: "In deze tekst wordt uitgelegd dat ..." past bij een uitleg, niet bij een betoog.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Eerst de tekstsoort bepalen: betoog, dan stelling en argumenten; uitleg, dan onderwerp en kernpunten"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="27" font-size="12" font-weight="700" fill="var(--dk)">Welke tekstsoort is het?</text>
+<path d="M80 40 V54" stroke="var(--dk)" stroke-width="2"/><path d="M240 40 V54" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="54" width="150" height="76" rx="6" fill="var(--or)"/><text x="12" y="72" font-size="12" font-weight="700" fill="#fff">Betoog</text><text x="12" y="92" font-size="11" fill="#fff">Stelling</text><text x="12" y="108" font-size="11" fill="#fff">Argumenten</text><text x="12" y="124" font-size="11" fill="#fff">Weerlegging</text>
+<rect x="166" y="54" width="150" height="76" rx="6" fill="var(--orl)"/><text x="174" y="72" font-size="12" font-weight="700" fill="var(--dk)">Uitleg</text><text x="174" y="92" font-size="11" fill="var(--dk)">Onderwerp</text><text x="174" y="108" font-size="11" fill="var(--dk)">Kernpunten</text><text x="174" y="124" font-size="11" fill="var(--dk)">Structuur</text>
+<rect x="4" y="138" width="312" height="32" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="158" font-size="11" fill="var(--mu)">Geen oordeel, voorbeeld of toevoeging</text></g></svg><div class="sam-figcap">Bepaal eerst de tekstsoort: bij een betoog noem je stelling, argumenten en weerlegging, bij een uitleg het onderwerp, de kernpunten en de structuur.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> schrijf boven je samenvatting in drie woorden wat voor tekst het is: betoog, uitleg of beschouwing. Dat bepaalt wat je als eerste opschrijft.</div>
 </div>`
 });

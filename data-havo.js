@@ -23775,6 +23775,649 @@ var VAKKEN = [
         "u": "De zinnen staan los van elkaar, de verbanden ontbreken (1 punt). Voeg signaalwoorden toe, bijvoorbeeld \"omdat\", \"maar\" en \"daarom\" (1 punt)."
        }
       ]
+     },
+     {
+      "id": "D6",
+      "lo": "nl.D.6",
+      "gs": 2,
+      "naam": "Een betogende en een informatieve tekst samenvatten",
+      "beschrijving": "Je past je samenvatting aan op de tekstsoort: bij een betoog geef je stelling en argumenten weer, bij een informatieve tekst het onderwerp en de kernpunten.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Betoog: stelling en argumenten",
+       "Informatieve tekst: onderwerp en kernpunten",
+       "Tekststructuren herkennen",
+       "Wat je weglaat",
+       "De samenvatting formuleren",
+       "Veelgemaakte fouten"
+      ],
+      "sam": "Bij een betoog bestaat de samenvatting uit de stelling, de belangrijkste argumenten en eventueel de weerlegging van een tegenwerping. Bij een informatieve tekst geef je het onderwerp en per deelonderwerp de kern weer, in de opbouw van de tekst (opsomming, oorzaak en gevolg, probleem en oplossing, vergelijking). Voorbeelden, oordelen en toevoegingen laat je weg; \"dus\" gebruik je alleen bij een conclusie uit de tekst.",
+      "begrippen": [
+       {
+        "t": "Betoog",
+        "d": "Een tekst die een stelling met argumenten verdedigt."
+       },
+       {
+        "t": "Informatieve tekst",
+        "d": "Een tekst die iets uitlegt of beschrijft."
+       },
+       {
+        "t": "Stelling",
+        "d": "Het standpunt dat de schrijver verdedigt."
+       },
+       {
+        "t": "Argument",
+        "d": "Een reden die de stelling onderbouwt."
+       },
+       {
+        "t": "Tegenwerping",
+        "d": "Een bezwaar tegen de stelling."
+       },
+       {
+        "t": "Weerlegging",
+        "d": "De reactie op een tegenwerping."
+       },
+       {
+        "t": "Deelonderwerp",
+        "d": "Een onderdeel van het onderwerp."
+       },
+       {
+        "t": "Opsomming",
+        "d": "Een rij gelijkwaardige punten of soorten."
+       },
+       {
+        "t": "Oorzaak",
+        "d": "De reden waarom iets gebeurt."
+       },
+       {
+        "t": "Gevolg",
+        "d": "Wat uit een oorzaak voortkomt."
+       },
+       {
+        "t": "Structuur",
+        "d": "De manier waarop een tekst is opgebouwd."
+       },
+       {
+        "t": "Toevoeging",
+        "d": "Informatie die niet in de tekst staat."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Wat zoek je als eerste bij het samenvatten van een betoog?",
+        "o": [
+         "alle voorbeelden die de schrijver geeft, in volgorde",
+         "de stelling en de belangrijkste argumenten",
+         "de titel en de bladzijdenummers van het artikel",
+         "de naam van de schrijver en zijn geboortejaar"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Bij een betoog zoek je de stelling en de argumenten.",
+        "uo": [
+         "Koos je \"alle voorbeelden die de schrijver geeft, in volgorde\"? Dan denk je dat voorbeelden de kern zijn. Voorbeelden illustreren de argumenten, en laat je meestal weg.",
+         "Klopt: een betoog draait om een stelling die met argumenten wordt onderbouwd.",
+         "Koos je \"de titel en de bladzijdenummers van het artikel\"? Dan denk je dat dit de inhoud weergeeft. Titel en nummers zeggen weinig over de redenering, de stelling en argumenten wel.",
+         "Koos je \"de naam van de schrijver en zijn geboortejaar\"? Dan denk je dat de schrijver de kern is. Voor een samenvatting telt wat hij betoogt, niet wie hij is."
+        ],
+        "uh": "Stelling en argumenten."
+       },
+       {
+        "v": "Wat zoek je als eerste bij het samenvatten van een informatieve tekst?",
+        "o": [
+         "de mening van de schrijver, want die bepaalt alles",
+         "de laatste zin, want die bevat altijd het hele verhaal",
+         "het aantal alinea's en de lengte van de tekst",
+         "het onderwerp en de belangrijkste informatie per deelonderwerp"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Bij een informatieve tekst zoek je onderwerp en kernpunten.",
+        "uo": [
+         "Koos je \"de mening van de schrijver, want die bepaalt alles\"? Dan denk je dat een mening de kern is. Een informatieve tekst heeft meestal geen mening, het gaat om uitleg.",
+         "Koos je \"de laatste zin, want die bevat altijd het hele...\"? Dan denk je dat de laatste zin genoeg is. Hij kan een conclusie bevatten, maar de uitleg staat verspreid over de tekst.",
+         "Koos je \"het aantal alinea's en de lengte van de tekst\"? Dan denk je dat dit de kern is. Het zegt niets over de inhoud, je zoekt onderwerp en informatie.",
+         "Klopt: een informatieve tekst legt iets uit, dus je zoekt wat er wordt uitgelegd."
+        ],
+        "uh": "Onderwerp en uitleg."
+       },
+       {
+        "v": "Welke hoofdpunten bevat dit betoog?",
+        "o": [
+         "stelling, twee argumenten en een weerlegging",
+         "alleen dat sommigen telefoons handig vinden",
+         "alleen het woord \"bovendien\" en wat erna komt",
+         "dat scholen laptops hebben"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Een betoog bevat stelling, argumenten en vaak een weerlegging.",
+        "uo": [
+         "Klopt: stelling (geen telefoons), argumenten (afleiding, spieken) en weerlegging (laptops) vormen samen de kern van het betoog.",
+         "Koos je \"alleen dat sommigen telefoons handig vinden\"? Dan denk je dat de tegenwerping de kern is. Ze is een deel van het betoog, de stelling en argumenten zijn de kern.",
+         "Koos je \"alleen het woord bovendien en wat erna komt\"? Dan denk je dat één signaalwoord de kern aanwijst. Het zegt niets over de volledige redenering, je zoekt stelling en argumenten.",
+         "Koos je \"dat scholen laptops hebben\"? Dan denk je dat dit de hoofdzaak is. Het is een weerlegging in het betoog, de stelling staat in de eerste zin."
+        ],
+        "uh": "Stelling, argumenten, weerlegging.",
+        "ctx": "Tekst: \"Mobiele telefoons horen niet in de klas. Ze leiden af. Bovendien gebruiken leerlingen ze om te spieken. Sommigen zeggen dat telefoons handig zijn voor opdrachten, maar scholen kunnen daarvoor laptops geven.\""
+       },
+       {
+        "v": "Welke samenvatting is goed?",
+        "o": [
+         "Bijen zijn nuttige beestjes die veel werk doen.",
+         "Een bij verzamelt nectar uit bloemen, brengt die naar de korf en andere bijen verwerken die daar tot honing.",
+         "Bijen verzamelen nectar en maken daar in de korf honing van.",
+         "Honing is zoet en lekker op brood."
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Een samenvatting van een proces geeft de kernstappen kort weer.",
+        "uo": [
+         "Koos je \"Bijen zijn nuttige beestjes die veel werk doen.\"? Dan denk je dat dit de kern is. Het is een algemeen oordeel zonder inhoud, en het beschrijft het proces niet.",
+         "Koos je \"Een bij verzamelt nectar uit bloemen, brengt die...\"? Dan denk je dat dit beknopt genoeg is. Het is bijna een kopie van de tekst, zonder samen te vatten.",
+         "Klopt: de samenvatting noemt de kern van het proces in korte zinnen.",
+         "Koos je \"Honing is zoet en lekker op brood.\"? Dan denk je dat dit de kern is. Het staat niet in de tekst, het is een toevoeging."
+        ],
+        "uh": "Kernstappen.",
+        "ctx": "Tekst: \"Een bij maakt honing van nectar. Eerst verzamelt ze nectar uit bloemen. Daarna brengt ze die naar de bijenkorf. Daar verwerken andere bijen de nectar tot honing.\""
+       },
+       {
+        "v": "Welke opbouw heeft een informatieve tekst vaak?",
+        "o": [
+         "stelling, argumenten en conclusie",
+         "aanleiding, spanning en afloop",
+         "onderwerp, deelonderwerpen en afronding",
+         "titel, tekening en bronnenlijst"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Informatieve teksten bestaan uit onderwerp, deelonderwerpen en afronding.",
+        "uo": [
+         "Koos je \"stelling, argumenten en conclusie\"? Dan denk je dat dit een informatieve tekst is. Dit is de opbouw van een betoog, een informatieve tekst heeft onderwerp en deelonderwerpen.",
+         "Koos je \"aanleiding, spanning en afloop\"? Dan denk je dat dit een informatieve tekst is. Dit is de opbouw van een verhaal, dus niet van uitleg.",
+         "Klopt: eerst het onderwerp, dan de onderdelen, dan een afronding.",
+         "Koos je \"titel, tekening en bronnenlijst\"? Dan denk je dat dit de opbouw is. Dit zijn onderdelen van een publicatie, niet de opbouw van de tekst."
+        ],
+        "uh": "Onderwerp en delen."
+       },
+       {
+        "v": "Welke tekststructuur herken je?",
+        "o": [
+         "een opsomming van soorten met kenmerken",
+         "een oorzaak-gevolgketen",
+         "een probleem met oplossing",
+         "een vergelijking tussen twee dingen"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Herken de structuur: opsomming, oorzaak-gevolg, probleem-oplossing of vergelijking.",
+        "uo": [
+         "Klopt: elke soort krijgt een eigen beschrijving met kenmerken.",
+         "Koos je \"een oorzaak-gevolgketen\"? Dan denk je dat het oorzaak en gevolg is. De zinnen noemen geen oorzaken, maar soorten met kenmerken.",
+         "Koos je \"een probleem met oplossing\"? Dan denk je dat er een probleem is. Er is geen probleem of oplossing, alleen een beschrijving.",
+         "Koos je \"een vergelijking tussen twee dingen\"? Dan denk je dat het een vergelijking van twee is. Er worden drie soorten beschreven, dus het is een opsomming."
+        ],
+        "uh": "Structuur herkennen.",
+        "ctx": "Tekst: \"Er zijn drie soorten wolken: stapelwolken, sluierwolken en regenwolken. Stapelwolken zijn dik en wit. Sluierwolken zijn dun en hoog. Regenwolken zijn donker en brengen regen.\""
+       },
+       {
+        "v": "Welke structuur heeft deze tekst?",
+        "o": [
+         "een opsomming van drie soorten verkeer",
+         "een tegenstelling tussen twee meningen",
+         "een beschrijving van een plaats",
+         "oorzaak en gevolg met een oplossing"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Oorzaak, gevolg en oplossing kunnen samen een structuur vormen.",
+        "uo": [
+         "Koos je \"een opsomming van drie soorten verkeer\"? Dan denk je dat het een opsomming is. De zinnen verwijzen naar elkaar met \"daardoor\" en \"daarom\", dus het is oorzaak en gevolg.",
+         "Koos je \"een tegenstelling tussen twee meningen\"? Dan denk je dat twee meningen botsen. De tekst noemt geen tegengestelde mening, maar een keten.",
+         "Koos je \"een beschrijving van een plaats\"? Dan denk je dat het een plaatsbeschrijving is. De tekst legt een verband uit, en stelt een maatregel voor.",
+         "Klopt: de vuile lucht leidt tot ziekten en de gemeente stelt een maatregel voor."
+        ],
+        "uh": "Keten herkennen.",
+        "ctx": "Tekst: \"De lucht in steden is vuil door verkeer. Daardoor krijgen mensen vaker last van longziekten. Daarom wil de gemeente auto's weren uit het centrum.\""
+       },
+       {
+        "v": "Wat ontbreekt er?",
+        "o": [
+         "een voorbeeld bij elk argument",
+         "de stelling",
+         "de bronnenlijst van de schrijver",
+         "de titel van het artikel"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Neem bij een betoog altijd de stelling op.",
+        "uo": [
+         "Koos je \"een voorbeeld bij elk argument\"? Dan denk je dat voorbeelden ontbreken. Voorbeelden laat je juist weg, het ontbrekende is de stelling.",
+         "Klopt: zonder stelling weet de lezer niet wat de argumenten onderbouwen, dus ze is een noodzakelijk onderdeel.",
+         "Koos je \"de bronnenlijst van de schrijver\"? Dan denk je dat de bronnenlijst nodig is. Die hoort niet in de samenvatting, het gaat om de stelling.",
+         "Koos je \"de titel van het artikel\"? Dan denk je dat de titel nodig is. Hij is niet de stelling, dus daar gaat het niet om."
+        ],
+        "uh": "Stelling vooraan.",
+        "ctx": "Een leerling vat een betoog samen en noemt alleen de argumenten, niet de stelling."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "de zin is te kort",
+         "de zin bevat een voorbeeld",
+         "de zin is in de verleden tijd geschreven",
+         "het is een oordeel zonder inhoud"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Een samenvatting van een informatieve tekst geeft informatie, geen oordeel.",
+        "uo": [
+         "Koos je \"de zin is te kort\"? Dan denk je dat de lengte het probleem is. Het probleem is de inhoud, de zin bevat geen informatie uit de tekst.",
+         "Koos je \"de zin bevat een voorbeeld\"? Dan denk je dat er een voorbeeld in staat. Er staat een oordeel, dat is het probleem.",
+         "Koos je \"de zin is in de verleden tijd geschreven\"? Dan denk je dat de tijd fout is. De tijd is hier niet het probleem, de inhoud is dat wel.",
+         "Klopt: een samenvatting van een informatieve tekst geeft de informatie weer, geen oordeel."
+        ],
+        "uh": "Informatie, geen oordeel.",
+        "ctx": "Een leerling vat een informatieve tekst over bijen samen met \"Bijen zijn goed, want honing is lekker.\""
+       },
+       {
+        "v": "Hoe verschilt de samenvatting van A en B?",
+        "o": [
+         "A en B worden op dezelfde manier samengevat, met alle voorbeelden",
+         "A: stelling en argumenten; B: onderwerp en stappen of onderdelen",
+         "A: onderwerp en stappen; B: stelling en argumenten",
+         "A en B bevatten allebei vooral oordelen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Pas je aanpak aan op de tekstsoort.",
+        "uo": [
+         "Koos je \"A en B worden op dezelfde manier samengevat, met...\"? Dan denk je dat de aanpak gelijk is. Het doel van de tekst bepaalt wat je selecteert, en voorbeelden laat je weg.",
+         "Klopt: bij A geef je de redenering weer, bij B de uitleg.",
+         "Koos je \"A: onderwerp en stappen; B: stelling en argumenten\"? Dan denk je dat het omgedraaid is. A is een betoog en B een uitleg, dus de kern verschilt andersom.",
+         "Koos je \"A en B bevatten allebei vooral oordelen\"? Dan denk je dat beide oordelen bevatten. B legt uit en bevat geen oordeel, A betoogt maar dat is anders dan een samenvatting."
+        ],
+        "uh": "Aanpak per tekstsoort.",
+        "ctx": "Tekst A is een betoog over minder huiswerk. Tekst B legt uit hoe een zonnepaneel werkt."
+       },
+       {
+        "v": "Welke samenvatting klopt het best?",
+        "o": [
+         "Jongeren hebben een ander slaapritme dan ouders.",
+         "Ouders vinden dat school later moet beginnen.",
+         "School moet later beginnen omdat jongeren dan alerter zijn.",
+         "School begint vroeg en dat is slecht."
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Een samenvatting van een betoog bevat stelling, argument en weerlegging.",
+        "uo": [
+         "Koos je \"Jongeren hebben een ander slaapritme dan ouders.\"? Dan denk je dat dit de kern is. Het is een deel van het argument, de stelling ontbreekt.",
+         "Koos je \"Ouders vinden dat school later moet beginnen.\"? Dan denk je dat de ouders de stelling dragen. Zij brengen een bezwaar in, de stelling is dat school later moet beginnen.",
+         "Klopt: stelling en argument staan er beknopt in, en het onderwerp klopt met de tekst.",
+         "Koos je \"School begint vroeg en dat is slecht.\"? Dan denk je dat dit de kern is. Het mist het argument en de reden, en is te algemeen."
+        ],
+        "uh": "Betoog compleet.",
+        "ctx": "Tekst: \"School moet later beginnen. Jongeren hebben een ander slaapritme. Ze zijn dan alerter. Sommigen zeggen dat het ritme van ouders ermee botst, maar ouders kunnen hun werk aanpassen.\""
+       },
+       {
+        "v": "Hoe bouw je de samenvatting op?",
+        "o": [
+         "in drie delen volgens de opbouw van de tekst, elk met één zin",
+         "als één lange alinea zonder structuur",
+         "alleen het laatste deel, want dat is de oplossing",
+         "met een eigen mening over plastic"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Volg de opbouw van de tekst in je samenvatting.",
+        "uo": [
+         "Klopt: de samenvatting volgt de opbouw van de tekst en blijft beknopt.",
+         "Koos je \"als één lange alinea zonder structuur\"? Dan denk je dat structuur niet uitmaakt. Een volgorde volgens de tekst maakt de samenvatting begrijpelijk, dus je volgt de opbouw.",
+         "Koos je \"alleen het laatste deel, want dat is de oplossing\"? Dan denk je dat het laatste deel genoeg is. De samenvatting moet alle delen dekken, dus ook het probleem.",
+         "Koos je \"met een eigen mening over plastic\"? Dan denk je dat een mening hoort bij de samenvatting. Een samenvatting is objectief, dus geen mening."
+        ],
+        "uh": "Opbouw volgen.",
+        "ctx": "Een informatieve tekst heeft drie delen: wat plastic is, waarom het een probleem is en wat er aan gedaan wordt."
+       },
+       {
+        "v": "Wat is hier gebeurd?",
+        "o": [
+         "de stelling ontbreekt",
+         "hij noemt de stelling, maar laat het argument weg",
+         "hij heeft de tegenwerping weggelaten",
+         "hij heeft een voorbeeld toegevoegd"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Neem stelling én argument op.",
+        "uo": [
+         "Klopt: de stelling \"Fietsen is gezond\" ontbreekt, dus de samenvatting is onvolledig.",
+         "Koos je \"hij noemt de stelling, maar laat het argument weg\"? Dan denk je dat de stelling erin staat. \"Fietsen versterkt het hart\" is het argument, de stelling ontbreekt.",
+         "Koos je \"hij heeft de tegenwerping weggelaten\"? Dan denk je dat de tegenwerping ontbreekt. Er was geen tegenwerping genoemd, het probleem is de ontbrekende stelling.",
+         "Koos je \"hij heeft een voorbeeld toegevoegd\"? Dan denk je dat er een voorbeeld in staat. Er staat geen voorbeeld, het probleem is de ontbrekende stelling."
+        ],
+        "uh": "Beide noemen.",
+        "ctx": "Een betoog geeft als argument: \"Fietsen is gezond, want het versterkt het hart.\" Een leerling vat samen: \"Fietsen versterkt het hart.\""
+       },
+       {
+        "v": "Hoe herken je in een betoog de stelling?",
+        "o": [
+         "het is de zin met de meeste cijfers",
+         "het is altijd de allerlaatste zin van de tekst",
+         "ze is wat de schrijver wil bewijzen",
+         "het is de zin met een voorbeeld"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "De stelling is wat de schrijver wil bewijzen.",
+        "uo": [
+         "Koos je \"het is de zin met de meeste cijfers\"? Dan denk je dat cijfers de stelling aanwijzen. Cijfers zijn vaak onderbouwing, geen standpunt.",
+         "Koos je \"het is altijd de allerlaatste zin van de tekst\"? Dan denk je dat de stelling altijd achteraan staat. Ze staat vaak vooraan, je herkent haar aan de functie.",
+         "Klopt: de stelling is het standpunt waarvoor de argumenten worden gegeven.",
+         "Koos je \"het is de zin met een voorbeeld\"? Dan denk je dat een voorbeeld de stelling is. Een voorbeeld ondersteunt een argument, en is geen standpunt."
+        ],
+        "uh": "Standpunt herkennen."
+       },
+       {
+        "v": "Wat gaat hier fout?",
+        "o": [
+         "de zin is te beknopt, maar verder prima",
+         "een voorbeeld en geen werking",
+         "de zin gebruikt een verkeerd werkwoord",
+         "de zin noemt het onderwerp niet"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Laat voorbeelden weg en geef de informatie weer.",
+        "uo": [
+         "Koos je \"de zin is te beknopt, maar verder prima\"? Dan denk je dat de zin alleen te kort is. Hij mist de inhoud en bevat een voorbeeld, dus er is meer mis.",
+         "Klopt: een voorbeeld is bijzaak en de werking van het hart wordt niet uitgelegd, dus de informatie ontbreekt.",
+         "Koos je \"de zin gebruikt een verkeerd werkwoord\"? Dan denk je dat het werkwoord fout is. Het werkwoord is prima, het gaat om voorbeeld en ontbrekende inhoud.",
+         "Koos je \"de zin noemt het onderwerp niet\"? Dan denk je dat het onderwerp ontbreekt. Het hart staat erin, het probleem is het voorbeeld en de ontbrekende werking."
+        ],
+        "uh": "Informatie, geen voorbeeld.",
+        "ctx": "Een leerling vat een informatieve tekst over de werking van het hart samen met de zin: \"Het hart is een belangrijke spier, zoals Anna vorig jaar merkte toen ze sportte.\""
+       },
+       {
+        "v": "Welke tekst vat je samen met een stelling?",
+        "o": [
+         "tekst B, want die gaat over techniek",
+         "allebei, want ze hebben hetzelfde onderwerp",
+         "geen van beide, want een samenvatting heeft nooit een stelling",
+         "tekst A"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Alleen een betoog heeft een stelling in de samenvatting.",
+        "uo": [
+         "Koos je \"tekst B, want die gaat over techniek\"? Dan denk je dat techniek een stelling oplevert. Tekst B legt uit, en heeft geen standpunt.",
+         "Koos je \"allebei, want ze hebben hetzelfde onderwerp\"? Dan denk je dat het onderwerp de stelling bepaalt. Alleen een betoog heeft een stelling, dus alleen A.",
+         "Koos je \"geen van beide, want een samenvatting heeft nooit...\"? Dan denk je dat een stelling niet in een samenvatting hoort. Bij een betoog hoort de stelling juist erin, omdat ze de kern is.",
+         "Klopt: een betoog heeft een stelling, dus bij tekst A noem je haar in de samenvatting."
+        ],
+        "uh": "Betoog = stelling.",
+        "ctx": "Twee teksten gaan over dezelfde kwestie: windmolens. Tekst A zegt dat er meer windmolens moeten komen, tekst B beschrijft hoe een windmolen stroom opwekt."
+       },
+       {
+        "v": "Wat moet hij schrappen?",
+        "o": [
+         "\"het is goedkoop\", want dat is een voorbeeld",
+         "\"mijn buurman gebruikt het ook\"",
+         "\"het is veilig\", want dat is een herhaling",
+         "niets, want alles is belangrijk"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Voeg niets toe wat niet in de tekst staat.",
+        "uo": [
+         "Koos je \"het is goedkoop, want dat is een voorbeeld\"? Dan denk je dat dit bijzaak is. Het is een argument, en hoort in de samenvatting.",
+         "Klopt: het is een toevoeging die niet in het betoog staat.",
+         "Koos je \"het is veilig, want dat is een herhaling\"? Dan denk je dat dit een herhaling is. Het is een apart argument, en blijft.",
+         "Koos je \"niets, want alles is belangrijk\"? Dan denk je dat alles blijft. Een toevoeging die niet in de tekst staat hoort er niet in, dus die moet weg."
+        ],
+        "uh": "Toevoeging weg.",
+        "ctx": "Een betoog heeft als argumenten: (1) het is goedkoop, (2) het is veilig. Een leerling vat samen: \"Het is goedkoop, veilig, en mijn buurman gebruikt het ook.\""
+       },
+       {
+        "v": "Welke samenvatting klopt?",
+        "o": [
+         "Op daken besparen ze ruimte, op land leveren ze meer stroom.",
+         "Zonnepanelen zijn handig.",
+         "Zonnepanelen op het dak zijn beter dan op het land.",
+         "Zonnepanelen leveren stroom op het land."
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Noem bij een indeling alle soorten met hun kenmerk.",
+        "uo": [
+         "Klopt: beide soorten staan erin met hun belangrijkste kenmerk.",
+         "Koos je \"Zonnepanelen zijn handig.\"? Dan denk je dat dit de samenvatting is. Het is een oordeel zonder informatie, en noemt de soorten niet.",
+         "Koos je \"Zonnepanelen op het dak zijn beter dan op het land.\"? Dan denk je dat dit klopt. De tekst vergelijkt zonder te oordelen, dus dit is een eigen mening.",
+         "Koos je \"Zonnepanelen leveren stroom op het land.\"? Dan denk je dat dit genoeg is. De soort op het dak ontbreekt, dus de samenvatting is onvolledig."
+        ],
+        "uh": "Alle soorten.",
+        "ctx": "Tekst: \"Er zijn twee soorten zonnepanelen: die op het dak en die op het land. Panelen op het dak nemen geen extra ruimte in. Panelen op het land leveren meer stroom.\""
+       },
+       {
+        "v": "Welke elementen neem je in een korte samenvatting het eerst op?",
+        "o": [
+         "alleen de tegenwerping, want die is het interessantst",
+         "alleen het slot, want dat herhaalt alles",
+         "de drie voorbeelden, zodat het concreet is",
+         "de stelling en de belangrijkste argumenten"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Begin bij stelling en belangrijkste argumenten.",
+        "uo": [
+         "Koos je \"alleen de tegenwerping, want die is het...\"? Dan denk je dat de tegenwerping de kern is. Ze is belangrijk maar niet de kern, de stelling en argumenten zijn dat.",
+         "Koos je \"alleen het slot, want dat herhaalt alles\"? Dan denk je dat het slot genoeg is. Het slot herhaalt de stelling maar mist de argumenten, dus de samenvatting is dan te dun.",
+         "Koos je \"de drie voorbeelden, zodat het concreet is\"? Dan denk je dat voorbeelden de kern zijn. Ze illustreren de argumenten, en laat je weg.",
+         "Klopt: de stelling en de belangrijkste argumenten vormen de kern."
+        ],
+        "uh": "Kern eerst.",
+        "ctx": "Een betoog heeft deze opbouw: stelling, drie argumenten, een tegenwerping met weerlegging en een slot."
+       },
+       {
+        "v": "Welke samenvatting past?",
+        "o": [
+         "Files zijn vervelend.",
+         "Files ontstaan, daar kun je niets aan doen.",
+         "Door verkeer en werkzaamheden ontstaan files, die tijd en geld kosten.",
+         "Files kosten tijd."
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Noem bij oorzaak en gevolg beide delen.",
+        "uo": [
+         "Koos je \"Files zijn vervelend.\"? Dan denk je dat dit de samenvatting is. Het is een oordeel zonder inhoud, en geeft geen oorzaken of gevolgen.",
+         "Koos je \"Files ontstaan, daar kun je niets aan doen.\"? Dan denk je dat dit de kern is. Het is een mening, die niet in de tekst staat.",
+         "Klopt: de samenvatting noemt oorzaken en gevolgen kort.",
+         "Koos je \"Files kosten tijd.\"? Dan denk je dat dit genoeg is. De oorzaken ontbreken, dus de samenvatting is onvolledig."
+        ],
+        "uh": "Beide delen.",
+        "ctx": "Een informatieve tekst gaat over twee delen: de oorzaken van files en de gevolgen ervan."
+       },
+       {
+        "v": "Wat valt je op aan de formulering?",
+        "o": [
+         "er is geen stelling aanwezig",
+         "er staan geen argumenten in",
+         "\"dus\" mag alleen bij een conclusie",
+         "de samenvatting is te lang voor een betoog"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Gebruik \"dus\" alleen bij een conclusie uit de tekst.",
+        "uo": [
+         "Koos je \"er is geen stelling aanwezig\"? Dan denk je dat de stelling ontbreekt. \"Men moet fietsen\" is de stelling, dus die staat erin.",
+         "Koos je \"er staan geen argumenten in\"? Dan denk je dat de argumenten ontbreken. Gezond en goedkoop zijn de argumenten, dus die staan erin.",
+         "Klopt: \"dus\" mag alleen als de tekst die conclusie ook trekt, anders is het een toevoeging.",
+         "Koos je \"de samenvatting is te lang voor een betoog\"? Dan denk je dat de lengte het probleem is. Ze is kort, het gaat om juist gebruik van \"dus\"."
+        ],
+        "uh": "Dus klopt alleen bij conclusie.",
+        "ctx": "Een leerling vat een betoog samen: \"De schrijver vindt dat men moet fietsen. Hij zegt dat het gezond is, dat het goedkoop is en dat men dus meer moet fietsen.\""
+       },
+       {
+        "v": "Waarom is dat niet verstandig?",
+        "o": [
+         "omdat een standaardzin altijd verboden is",
+         "omdat de zin te lang is",
+         "omdat uitleg nooit in een samenvatting hoort",
+         "een betoog vraagt om een stelling"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Laat de formulering aansluiten bij de tekstsoort.",
+        "uo": [
+         "Koos je \"omdat een standaardzin altijd verboden is\"? Dan denk je dat standaardzinnen niet mogen. Ze mogen wel, maar ze moeten bij de tekstsoort passen.",
+         "Koos je \"omdat de zin te lang is\"? Dan denk je dat de lengte het probleem is. Het probleem is dat de zin niet bij een betoog past, dus je past hem aan.",
+         "Koos je \"omdat uitleg nooit in een samenvatting hoort\"? Dan denk je dat uitleg verboden is. Uitleg hoort bij een informatieve tekst, alleen niet bij een betoog.",
+         "Klopt: de aanhef moet bij de tekstsoort passen, en een betoog heeft een stelling."
+        ],
+        "uh": "Tekstsoort bepaalt formulering.",
+        "ctx": "Een leerling moet twee teksten samenvatten: een betoog en een uitleg. Hij gebruikt voor beide dezelfde standaardzin: \"In deze tekst wordt uitgelegd dat...\""
+       },
+       {
+        "v": "Waarom is dit onvoldoende?",
+        "o": [
+         "stelling en argumenten ontbreken",
+         "er staat te veel informatie in",
+         "de samenvatting is niet objectief",
+         "de samenvatting bevat een voorbeeld"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Een samenvatting van een betoog noemt de stelling en argumenten.",
+        "uo": [
+         "Klopt: de samenvatting zegt niets over wat de schrijver beweert.",
+         "Koos je \"er staat te veel informatie in\"? Dan denk je dat er te veel staat. De samenvatting is juist te leeg, ze mist stelling en argumenten.",
+         "Koos je \"de samenvatting is niet objectief\"? Dan denk je dat er een oordeel in staat. Er staat geen oordeel, het probleem is dat er geen inhoud is.",
+         "Koos je \"de samenvatting bevat een voorbeeld\"? Dan denk je dat er een voorbeeld in staat. Er staat geen voorbeeld, het probleem is dat stelling en argumenten ontbreken."
+        ],
+        "uh": "Inhoud nodig.",
+        "ctx": "Een leerling vat een betoog over statiegeld samen: \"Er zijn argumenten voor, maar ook tegen.\""
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "er is niets mis, want één soort is genoeg",
+         "de beweegbare brug ontbreekt",
+         "de vaste brug is bijzaak",
+         "er staat een oordeel in"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Noem alle soorten die de tekst behandelt.",
+        "uo": [
+         "Koos je \"er is niets mis, want één soort is genoeg\"? Dan denk je dat één soort volstaat. Beide soorten worden uitgelegd, dus beide horen erin.",
+         "Klopt: beide soorten zijn hoofdpunten, dus de samenvatting is zonder de tweede onvolledig.",
+         "Koos je \"de vaste brug is bijzaak\"? Dan denk je dat de vaste brug weg mag. Hij is een hoofdpunt, dus hij blijft.",
+         "Koos je \"er staat een oordeel in\"? Dan denk je dat er een oordeel in staat. Dat blijkt niet, het probleem is de ontbrekende soort."
+        ],
+        "uh": "Beide soorten.",
+        "ctx": "Een informatieve tekst gaat over twee soorten bruggen: een vaste brug en een beweegbare brug. Een leerling noemt alleen de vaste brug."
+       },
+       {
+        "v": "Waaruit bestaat de samenvatting van een betoog minimaal?",
+        "o": [
+         "alleen voorbeelden met bronnen erbij, zoals de schrijver ze noemt",
+         "alleen de tegenwerping, omdat die het spannendst is voor de lezer",
+         "de titel en de naam van de schrijver, voor de volledigheid",
+         "stelling en argumenten"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Een samenvatting van een betoog bevat stelling en argumenten.",
+        "uo": [
+         "Koos je \"alleen voorbeelden met bronnen erbij, zoals de...\"? Dan denk je dat voorbeelden de kern zijn. Ze illustreren een argument, en laat je weg.",
+         "Koos je \"alleen de tegenwerping, omdat die het spannendst is...\"? Dan denk je dat de tegenwerping de kern is. Ze hoort bij het betoog, maar zonder stelling en argument is ze betekenisloos.",
+         "Koos je \"de titel en de naam van de schrijver, voor de...\"? Dan denk je dat dit de inhoud weergeeft. Het zegt niets over de redenering, dus het is geen samenvatting.",
+         "Klopt: dit zijn de twee onmisbare delen van een betoog, dus ze horen in elke samenvatting."
+        ],
+        "uh": "Stelling en argumenten."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Tekst: \"Mobiele telefoons horen niet in de klas. Ze leiden af. Bovendien gebruiken leerlingen ze om te spieken. Sommigen zeggen dat telefoons handig zijn voor opdrachten, maar scholen kunnen daarvoor laptops geven.\"",
+        "v": "Noem de hoofdpunten van dit betoog.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Stelling: geen telefoons in de klas (1 punt). Argumenten: afleiding en spieken, en de weerlegging met laptops (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling vat een betoog samen: \"Fietsen versterkt het hart.\" De tekst had als stelling: \"Fietsen is gezond.\"",
+        "v": "Wat ontbreekt er en waarom is dat een fout?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De stelling ontbreekt (1 punt); zonder stelling weet de lezer niet wat het argument onderbouwt (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Tekst: \"Er zijn drie soorten wolken: stapelwolken, sluierwolken en regenwolken. Stapelwolken zijn dik en wit. Sluierwolken zijn dun en hoog. Regenwolken zijn donker en brengen regen.\"",
+        "v": "Welke structuur heeft de tekst en hoe vat je haar samen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een opsomming van soorten met kenmerken (1 punt). Samenvatting: er zijn drie wolksoorten, elk met eigen kenmerken (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling vat een informatieve tekst over bijen samen met: \"Bijen zijn goed, want honing is lekker.\"",
+        "v": "Wat is hier mis?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het is een oordeel zonder inhoud (1 punt); de informatie over het proces ontbreekt (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling schrijft in een samenvatting van een betoog: \"Het is goedkoop, veilig, en mijn buurman gebruikt het ook.\"",
+        "v": "Wat moet hij schrappen en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "\"mijn buurman gebruikt het ook\" (1 punt), want het staat niet in de tekst: het is een toevoeging (1 punt)."
+       }
+      ]
      }
     ]
    },
