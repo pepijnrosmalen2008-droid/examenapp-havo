@@ -163,11 +163,15 @@ function _lgRealRows(L){
       return;
     }
     seen[key]=out.length;
-    out.push({naam:nm,animalId:p.animal_id||null,stage:p.stage||0,xp:Math.max(0,p.xp||0),me:false,real:true});
+    out.push({naam:nm,animalId:_lgDierOk(p.animal_id)?p.animal_id:_lgDierVoor(p.did||nm),stage:p.stage||0,xp:Math.max(0,p.xp||0),me:false,real:true});
   });
   return out;
 }
 
+// Spelers zonder (geldig) maatje krijgen een vast getekend dier op basis van hun
+// device, nooit meer de losse vos-emoji.
+function _lgDierOk(id){try{return !!(id&&typeof getAnimalById==='function'&&getAnimalById(id));}catch(e){return false;}}
+function _lgDierVoor(sleutel){return _LG_DIER[_lgHash('dier|'+(sleutel||''))%_LG_DIER.length];}
 function _lgGeenNaam(nm){const k=(nm||'').trim().toLowerCase();return !k||k==='jij'||k==='speler'||k==='you'||k==='ik';}
 function _lgNaamVoor(did){const h=_lgHash('naam|'+(did||''));return _LG_VN[h%_LG_VN.length]+' '+_LG_AN[(h>>>7)%_LG_AN.length];}
 function _lgMeName(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{}');return (p.naam&&p.naam.trim())?p.naam.trim():'Jij';}catch(e){return 'Jij';}}
@@ -176,7 +180,8 @@ function _lgMeAvatar(){try{const p=JSON.parse(localStorage.getItem(PROF_KEY)||'{
 function _lgAvatar(r){
   let acc='';
   if(r.me&&typeof avatarSkinHTML==='function'){try{acc=avatarSkinHTML(r.animalId,r.stage);}catch(e){}}
-  if(r.animalId&&typeof getAnimalDisplay==='function'){try{const h=getAnimalDisplay(r.animalId,r.stage||0,26,acc);if(h)return h;}catch(e){}}
+  const dier=_lgDierOk(r.animalId)?r.animalId:(r.me&&typeof MAATJE_STD!=='undefined'?MAATJE_STD:_lgDierVoor(r.naam));
+  if(typeof getAnimalDisplay==='function'){try{const h=getAnimalDisplay(dier,r.stage||0,26,acc);if(h)return h;}catch(e){}}
   return '<span style="font-size:22px">'+(r.me?'⭐':'🦊')+'</span>';
 }
 
@@ -414,7 +419,7 @@ function leagueSyncAndFetch(force){
   (async()=>{
     try{
       const sdiv=_lgSyncDiv(L.division);
-      await SB.rpc('league_sync',{p_did:_DID,p_naam:(_lgGeenNaam(_lgMeName())?_lgNaamVoor(_DID):_lgMeName()),p_animal:me.id,p_stage:me.stage||0,p_division:sdiv,p_week:L.week,p_xp:L.weekXP||0});
+      await SB.rpc('league_sync',{p_did:_DID,p_naam:(_lgGeenNaam(_lgMeName())?_lgNaamVoor(_DID):_lgMeName()),p_animal:(_lgDierOk(me.id)?me.id:(typeof MAATJE_STD!=='undefined'?MAATJE_STD:_lgDierVoor(_DID))),p_stage:me.stage||0,p_division:sdiv,p_week:L.week,p_xp:L.weekXP||0});
       const {data,error}=await SB.rpc('league_cohort',{p_division:sdiv,p_week:L.week});
       if(!error&&Array.isArray(data)){
         window._lgRealCache={week:L.week,division:L.division,players:data,ts:Date.now()};
