@@ -1,0 +1,641 @@
+{
+ "id": "D3",
+ "lo": "nl.D.3",
+ "gs": 2,
+ "naam": "Verbanden en signaalwoorden gebruiken bij samenvatten",
+ "beschrijving": "Je herkent verbanden als oorzaak, gevolg, tegenstelling, toevoeging, voorwaarde en conclusie en neemt ze juist op in je samenvatting zonder er een te verzinnen.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Waarom verbanden",
+  "Oorzaak en gevolg",
+  "Toevoeging en opsomming",
+  "Tegenstelling",
+  "Voorwaarde en conclusie",
+  "Verbanden in je samenvatting"
+ ],
+ "sam": "Een samenvatting is een samenhangend geheel, geen rij losse kernen. Verbanden zijn onder meer oorzaak (omdat, doordat), gevolg (daardoor, daarom), toevoeging (bovendien), tegenstelling (maar, toch, echter), voorwaarde (als) en conclusie (dus, kortom). Signaalwoorden in de tekst helpen je het verband te herkennen. Neem de verbanden uit de tekst over in je samenvatting en verzin er geen: een verzonnen of omgedraaid verband is een fout.",
+ "begrippen": [
+  {
+   "t": "Verband",
+   "d": "De relatie tussen twee zinnen of tekstdelen."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat een verband aangeeft."
+  },
+  {
+   "t": "Oorzaak",
+   "d": "De reden waarom iets gebeurt."
+  },
+  {
+   "t": "Gevolg",
+   "d": "Wat uit een oorzaak voortkomt."
+  },
+  {
+   "t": "Tegenstelling",
+   "d": "Een verband waarin twee dingen tegenover elkaar staan."
+  },
+  {
+   "t": "Toevoeging",
+   "d": "Een extra punt in dezelfde richting."
+  },
+  {
+   "t": "Opsomming",
+   "d": "Een rij gelijkwaardige punten."
+  },
+  {
+   "t": "Voorwaarde",
+   "d": "Wat moet gelden om iets te laten gebeuren."
+  },
+  {
+   "t": "Conclusie",
+   "d": "De slotsom uit het voorgaande."
+  },
+  {
+   "t": "Samenhang",
+   "d": "Het geheel waarin zinnen bij elkaar horen."
+  },
+  {
+   "t": "Concessie",
+   "d": "Iets toegeven om het daarna tegen te spreken, bijvoorbeeld met hoewel."
+  },
+  {
+   "t": "Verwijswoord",
+   "d": "Een woord dat terugwijst, zoals dit of daardoor."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waarom is het belangrijk om verbanden tussen zinnen te herkennen bij samenvatten?",
+   "o": [
+    "omdat verbanden altijd het belangrijkste deel van de tekst zijn",
+    "je moet laten zien hoe de hoofdpunten bij elkaar horen",
+    "omdat je dan meer woorden krijgt in je samenvatting",
+    "omdat de docent verbanden telt bij het nakijken"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Verbanden maken van losse kernen een samenhangende samenvatting.",
+   "uo": [
+    "Koos je \"omdat verbanden altijd het belangrijkste deel van...\"? Dan denk je dat verbanden hoofdzaak zijn. Ze verbinden de hoofdzaken, maar de inhoud zelf blijft de kern.",
+    "Klopt: een samenvatting is meer dan een rij kernen; de verbanden maken er een geheel van.",
+    "Koos je \"omdat je dan meer woorden krijgt in je samenvatting\"? Dan denk je dat meer woorden beter zijn. Een samenvatting moet beknopt blijven, verbanden zorgen voor samenhang, niet voor lengte.",
+    "Koos je \"omdat de docent verbanden telt bij het nakijken\"? Dan denk je dat het om een telling gaat. Het gaat om de kwaliteit van je samenvatting, en die wordt beter door duidelijke verbanden."
+   ],
+   "uh": "Kernen verbinden."
+  },
+  {
+   "v": "Welk woord geeft een tegenstelling aan?",
+   "o": [
+    "omdat, dat een reden aangeeft",
+    "bovendien, dat iets toevoegt",
+    "daarom, dat een gevolg aangeeft",
+    "maar"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "\"Maar\" geeft een tegenstelling aan.",
+   "uo": [
+    "Koos je \"omdat, dat een reden aangeeft\"? Dan denk je dat \"omdat\" een tegenstelling aangeeft. Het geeft een oorzaak, en geen contrast.",
+    "Koos je \"bovendien, dat iets toevoegt\"? Dan denk je dat \"bovendien\" een tegenstelling aangeeft. Het voegt juist iets toe in dezelfde richting, dus het is geen contrast.",
+    "Koos je \"daarom, dat een gevolg aangeeft\"? Dan denk je dat \"daarom\" een tegenstelling aangeeft. Het leidt een gevolg in, dus het is geen contrast.",
+    "Klopt: \"maar\" zet twee uitspraken tegenover elkaar."
+   ],
+   "uh": "Maar = contrast."
+  },
+  {
+   "v": "Welk woord geeft een oorzaak aan?",
+   "o": [
+    "omdat",
+    "hoewel, dat een tegenstelling aangeeft in het midden van een zin",
+    "bijvoorbeeld, dat een voorbeeld aangeeft bij een bewering",
+    "kortom, dat een samenvatting aangeeft aan het einde van een alinea"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "\"Omdat\" en \"doordat\" geven een oorzaak aan.",
+   "uo": [
+    "Klopt: \"omdat\" leidt de reden of oorzaak in, dus de zin erna verklaart waarom iets gebeurt.",
+    "Koos je \"hoewel, dat een tegenstelling aangeeft in het...\"? Dan verwart je een concessie met een reden. \"Hoewel\" zegt dat iets tegen de verwachting in gebeurt, terwijl een oorzaak uitlegt waaróm iets gebeurt.",
+    "Koos je \"bijvoorbeeld, dat een voorbeeld aangeeft bij een...\"? Dan haal je een illustratie door elkaar met een reden. Een voorbeeld laat zien dat iets zo is, maar het verklaart niet waarom het zo is.",
+    "Koos je \"kortom, dat een samenvatting aangeeft aan het einde...\"? Dan denk je dat \"kortom\" naar de reden verwijst. Het woord rondt af met een samenvatting, en kijkt vooruit in plaats van terug naar een oorzaak."
+   ],
+   "uh": "Omdat = oorzaak."
+  },
+  {
+   "v": "Welke zin is de oorzaak en welke het gevolg?",
+   "o": [
+    "oorzaak: de wedstrijd bleef uit; gevolg: het regende hard",
+    "er is geen oorzaak, want de zinnen staan los",
+    "oorzaak: het regende hard; gevolg: de wedstrijd bleef uit",
+    "beide zinnen zijn een oorzaak"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "\"Daarom\" leidt het gevolg in; de zin ervoor is de oorzaak.",
+   "uo": [
+    "Koos je \"oorzaak: de wedstrijd bleef uit; gevolg: het...\"? Dan denk je dat de volgorde omgedraaid is. \"Daarom\" staat voor het gevolg, dus de regen is de oorzaak.",
+    "Koos je \"er is geen oorzaak, want de zinnen staan los\"? Dan denk je dat de zinnen onafhankelijk zijn. \"Daarom\" verbindt ze tot een oorzaak-gevolgrelatie, dus er is wel een verband.",
+    "Klopt: \"daarom\" leidt het gevolg in, dus de zin ervoor is de oorzaak.",
+    "Koos je \"beide zinnen zijn een oorzaak\"? Dan denk je dat het twee oorzaken zijn. De tweede zin is het gevolg van de eerste, dus er is één oorzaak en één gevolg."
+   ],
+   "uh": "Oorzaak voor gevolg.",
+   "ctx": "Het regende hard. Daarom bleef de wedstrijd uit."
+  },
+  {
+   "v": "Welk woord geeft een opsomming of toevoeging aan?",
+   "o": [
+    "echter, dat in een nieuwe zin iets tegenover het voorgaande zet",
+    "dus, dat aan het einde van een redenering een conclusie trekt",
+    "bovendien",
+    "hoewel, dat een concessie of tegenstelling in een bijzin inleidt"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "\"Bovendien\" en \"daarnaast\" voegen iets toe.",
+   "uo": [
+    "Koos je \"echter, dat in een nieuwe zin iets tegenover het...\"? Dan denk je dat \"echter\" iets toevoegt. Het zet iets tegenover, dus het is een tegenstelling.",
+    "Koos je \"dus, dat aan het einde van een redenering een...\"? Dan denk je dat \"dus\" iets toevoegt. Het trekt een conclusie, en voegt niets toe.",
+    "Klopt: \"bovendien\" voegt iets toe aan wat al is gezegd.",
+    "Koos je \"hoewel, dat een concessie of tegenstelling in een...\"? Dan denk je dat \"hoewel\" iets toevoegt. Het geeft een concessie of tegenstelling aan, dus het is geen toevoeging."
+   ],
+   "uh": "Toevoegen."
+  },
+  {
+   "v": "Welk verband geeft \"bovendien\" hier aan?",
+   "o": [
+    "een toevoeging: een tweede punt in dezelfde richting",
+    "een tegenstelling tussen sporten en schermtijd",
+    "een oorzaak-gevolgrelatie: sporten veroorzaakt schermtijd",
+    "een voorbeeld van sporten"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "\"Bovendien\" geeft een toevoeging aan.",
+   "uo": [
+    "Klopt: beide zinnen noemen een probleem dat in dezelfde richting wijst.",
+    "Koos je \"een tegenstelling tussen sporten en schermtijd\"? Dan denk je dat de zinnen elkaar tegenspreken. Beide zijn negatieve ontwikkelingen, dus er is geen tegenstelling.",
+    "Koos je \"een oorzaak-gevolgrelatie: sporten veroorzaakt...\"? Dan denk je dat de ene zin de andere veroorzaakt. \"Bovendien\" voegt alleen iets toe, het geeft geen oorzaak aan.",
+    "Koos je \"een voorbeeld van sporten\"? Dan denk je dat de tweede zin een voorbeeld is. Hij noemt een apart probleem, geen voorbeeld van sporten."
+   ],
+   "uh": "Extra punt.",
+   "ctx": "Jongeren sporten steeds minder. Bovendien zitten ze steeds langer achter een scherm."
+  },
+  {
+   "v": "Welk woord leidt een conclusie in?",
+   "o": [
+    "bijvoorbeeld",
+    "maar",
+    "omdat",
+    "dus"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "\"Dus\", \"daarom\" en \"kortom\" leiden een conclusie in.",
+   "uo": [
+    "Koos je \"bijvoorbeeld\"? Dan denk je dat \"bijvoorbeeld\" een conclusie inleidt. Het leidt een voorbeeld in, geen slotsom.",
+    "Koos je \"maar\"? Dan denk je dat \"maar\" een conclusie inleidt. Het zet iets tegenover, dus het is geen slotsom.",
+    "Koos je \"omdat\"? Dan denk je dat \"omdat\" een conclusie inleidt. Het geeft een reden, geen gevolgtrekking.",
+    "Klopt: \"dus\" trekt een conclusie uit het voorgaande."
+   ],
+   "uh": "Dus = conclusie."
+  },
+  {
+   "v": "Welk verband geeft \"daardoor\"?",
+   "o": [
+    "tegenstelling: fietsen is slecht voor de lucht",
+    "gevolg: schonere lucht komt voort uit het fietsen",
+    "toevoeging: ook de lucht fietst mee",
+    "voorbeeld: de lucht is een voorbeeld van fietsen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "\"Daardoor\" geeft een gevolg aan.",
+   "uo": [
+    "Koos je \"tegenstelling: fietsen is slecht voor de lucht\"? Dan denk je dat het een tegenstelling is. \"Daardoor\" geeft aan dat de lucht schoner werd door het fietsen, dus het is een gevolg.",
+    "Klopt: \"daardoor\" leidt het gevolg in en laat zien dat de schone lucht uit het fietsen voortkomt.",
+    "Koos je \"toevoeging: ook de lucht fietst mee\"? Dan denk je dat het een toevoeging is. \"Daardoor\" geeft een gevolg aan, geen extra punt.",
+    "Koos je \"voorbeeld: de lucht is een voorbeeld van fietsen\"? Dan denk je dat de lucht een voorbeeld is. De zin noemt het gevolg, niet een voorbeeld."
+   ],
+   "uh": "Daardoor wijst op een gevolg.",
+   "ctx": "Veel mensen fietsen naar hun werk. De lucht is daardoor schoner geworden."
+  },
+  {
+   "v": "Welk verband geeft \"toch\" aan?",
+   "o": [
+    "een oorzaak: het project werd uitgevoerd omdat het duur was",
+    "een conclusie: dus het project was goedkoop",
+    "een voorbeeld van een duur project",
+    "een tegenstelling: het gebeurde ondanks de kosten"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "\"Toch\" en \"echter\" geven een tegenstelling aan.",
+   "uo": [
+    "Koos je \"een oorzaak: het project werd uitgevoerd omdat het...\"? Dan denk je dat \"toch\" een oorzaak aangeeft. Het geeft een tegenstelling aan, dus niet dat de kosten de reden waren.",
+    "Koos je \"een conclusie: dus het project was goedkoop\"? Dan denk je dat \"toch\" een conclusie aangeeft. Het zegt niets over goedkoop, maar over uitvoeren ondanks de prijs.",
+    "Koos je \"een voorbeeld van een duur project\"? Dan denk je dat de tweede zin een voorbeeld is. Hij geeft een tegenstelling, geen illustratie.",
+    "Klopt: \"toch\" geeft aan dat het resultaat tegen de verwachting in is."
+   ],
+   "uh": "Ondanks = toch.",
+   "ctx": "Het project was duur. Toch werd het uitgevoerd."
+  },
+  {
+   "v": "Welk woord geeft een voorwaarde aan?",
+   "o": [
+    "hoewel",
+    "als",
+    "omdat",
+    "bovendien"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 5,
+   "u": "\"Als\" geeft een voorwaarde aan.",
+   "uo": [
+    "Koos je \"hoewel\"? Dan haal je een tegenstelling door elkaar met een voorwaarde. \"Hoewel\" geeft aan dat iets ondanks iets anders gebeurt, terwijl een voorwaarde zegt wat moet gelden om iets te laten gebeuren.",
+    "Klopt: \"als\" geeft aan onder welke voorwaarde iets geldt, en zegt wat moet gebeuren.",
+    "Koos je \"omdat\"? Dan verwart je een reden met een voorwaarde. \"Omdat\" legt uit waarom iets al zo is, terwijl een voorwaarde aangeeft wat nog moet gebeuren.",
+    "Koos je \"bovendien\"? Dan denk je dat een extra punt een voorwaarde is. \"Bovendien\" voegt iets toe aan wat al geldt, en stelt geen eis aan wat volgt."
+   ],
+   "uh": "Als = voorwaarde."
+  },
+  {
+   "v": "Welk verband zit in deze zin?",
+   "o": [
+    "een oorzaak",
+    "een tegenstelling",
+    "een voorwaarde",
+    "een voorbeeld"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "\"Als\" koppelt een gevolg aan een voorwaarde.",
+   "uo": [
+    "Koos je \"een oorzaak\"? Dan denk je dat het een oorzaak is. De voldoende is geen gevolg van inleveren in een causale zin, maar hangt af van een voorwaarde.",
+    "Koos je \"een tegenstelling\"? Dan denk je dat de zin een contrast bevat. Er staat niets wat elkaar tegenspreekt, dus het is geen tegenstelling.",
+    "Klopt: \"als\" koppelt het resultaat aan een voorwaarde.",
+    "Koos je \"een voorbeeld\"? Dan denk je dat de zin een voorbeeld bevat. Er staat geen illustratie, alleen een voorwaarde."
+   ],
+   "uh": "Voorwaarde.",
+   "ctx": "Je krijgt alleen een voldoende als je tijdig inlevert."
+  },
+  {
+   "v": "Wat ontbreekt er in zijn samenvatting?",
+   "o": [
+    "het oorzaak-gevolgverband tussen regen en uitstel",
+    "een voorbeeld van regen, zodat de lezer zich het weer kan voorstellen",
+    "een tegenstelling tussen regen en wedstrijd, omdat ze botsen met elkaar",
+    "een extra zin over het weer met meer details over de regen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Neem verbanden op in je samenvatting.",
+   "uo": [
+    "Klopt: de lezer ziet niet dat de wedstrijd uitviel door de regen.",
+    "Koos je \"een voorbeeld van regen, zodat de lezer zich het...\"? Dan denk je dat een voorbeeld ontbreekt. Het ontbrekende is het verband, niet een voorbeeld.",
+    "Koos je \"een tegenstelling tussen regen en wedstrijd, omdat...\"? Dan denk je dat er een tegenstelling is. Het verband is oorzaak en gevolg, geen contrast.",
+    "Koos je \"een extra zin over het weer met meer details over...\"? Dan denk je dat meer informatie nodig is. Het verband tussen de zinnen mist, niet extra informatie."
+   ],
+   "uh": "Verband erbij.",
+   "ctx": "Een leerling vat samen: \"Het regende. De wedstrijd bleef uit.\" Hij laat het verband weg."
+  },
+  {
+   "v": "Welke samenvatting geeft de verbanden het best weer?",
+   "o": [
+    "Er worden meer elektrische auto's verkocht, hoewel de accu's duur zijn, omdat de overheid subsidie geeft.",
+    "Er worden meer elektrische auto's verkocht. De accu's zijn duur. De overheid geeft subsidie.",
+    "Er worden meer elektrische auto's verkocht, daarom zijn de accu's duur.",
+    "De overheid geeft subsidie, dus de accu's zijn duur."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Zet verbanden in je samenvatting, maar verzin er geen.",
+   "uo": [
+    "Klopt: de zin bevat een tegenstelling (hoewel) en een oorzaak (omdat) die de tekst impliceert.",
+    "Koos je \"Er worden meer elektrische auto's verkocht. De...\"? Dan denk je dat de zinnen achter elkaar zetten genoeg is. Je laat dan de verbanden weg, en de lezer ziet niet hoe het bij elkaar hoort.",
+    "Koos je \"Er worden meer elektrische auto's verkocht, daarom...\"? Dan denk je dat de verkoop de prijs veroorzaakt. Dat staat niet in de tekst, je draait het verband om.",
+    "Koos je \"De overheid geeft subsidie, dus de accu's zijn duur.\"? Dan denk je dat subsidie de prijs veroorzaakt. De tekst zegt dat niet, dus je verzint een verband."
+   ],
+   "uh": "Juiste verbanden.",
+   "ctx": "Tekst: \"Er worden steeds meer elektrische auto's verkocht. De accu's zijn nog duur. De overheid geeft subsidie.\""
+  },
+  {
+   "v": "Welk verband zie je tussen online bestellen en winkels?",
+   "o": [
+    "winkels sluiten, en daardoor bestellen mensen online",
+    "online bestellen en winkels hebben niets met elkaar te maken",
+    "online bestellen veroorzaakt het sluiten van winkels",
+    "beide zijn een voorbeeld van boodschappen doen"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "\"Daardoor\" geeft een oorzaak-gevolgrelatie aan.",
+   "uo": [
+    "Koos je \"winkels sluiten, en daardoor bestellen mensen online\"? Dan denk je dat de volgorde omgedraaid is. De tekst zegt dat online bestellen leidt tot sluiting, niet andersom.",
+    "Koos je \"online bestellen en winkels hebben niets met elkaar...\"? Dan denk je dat er geen verband is. \"Daardoor\" verbindt ze, dus er is een verband.",
+    "Klopt: \"daardoor\" geeft een oorzaak-gevolgrelatie aan.",
+    "Koos je \"beide zijn een voorbeeld van boodschappen doen\"? Dan denk je dat het voorbeelden zijn. De tekst geeft een gevolg aan, geen opsomming van voorbeelden."
+   ],
+   "uh": "Oorzaak voor gevolg.",
+   "ctx": "Tekst: \"Vroeger deden mensen boodschappen in de winkel. Nu bestellen veel mensen online. Daardoor sluiten winkels.\""
+  },
+  {
+   "v": "Hoe verwerk je dit in een samenvatting met de juiste verbanden?",
+   "o": [
+    "Scholen willen digitale boeken en papier is populair.",
+    "Scholen willen digitale boeken, maar papier blijft populair doordat leerlingen liever op papier lezen.",
+    "Scholen willen digitale boeken, dus papier is populair.",
+    "Papier is populair, daarom willen scholen digitale boeken."
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Gebruik de verbanden uit de tekst en verzin er geen.",
+   "uo": [
+    "Koos je \"Scholen willen digitale boeken en papier is...\"? Dan denk je dat \"en\" volstaat. Dan verdwijnt de tegenstelling, en ook de reden.",
+    "Klopt: de zin bevat tegenstelling (maar) en reden (doordat).",
+    "Koos je \"Scholen willen digitale boeken, dus papier is...\"? Dan denk je dat het wensen van digitale boeken papier populair maakt. Dat is een verzonnen gevolg, de tekst geeft een tegenstelling.",
+    "Koos je \"Papier is populair, daarom willen scholen digitale...\"? Dan denk je dat de populariteit de wens veroorzaakt. Dat staat er niet, je draait de verhouding om."
+   ],
+   "uh": "Verband klopt.",
+   "ctx": "Tekst: \"Scholen willen graag digitale boeken. Toch zijn papieren boeken nog populair. Veel leerlingen lezen liever op papier.\""
+  },
+  {
+   "v": "Waar let je op bij het gebruik van \"dus\" in je samenvatting?",
+   "o": [
+    "dat je het zo vaak mogelijk gebruikt, omdat het de tekst overtuigender maakt",
+    "dat je het vooraan elke zin van de samenvatting zet, zodat alles samenhangt",
+    "dat je het weglaat, want het is een verboden woord",
+    "dat er echt een conclusie volgt uit het voorgaande"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Gebruik \"dus\" alleen bij een echte conclusie.",
+   "uo": [
+    "Koos je \"dat je het zo vaak mogelijk gebruikt, omdat het de...\"? Dan denk je dat meer \"dus\" beter is. Het woord claimt een gevolg, dus je gebruikt het alleen waar het klopt.",
+    "Koos je \"dat je het vooraan elke zin van de samenvatting...\"? Dan denk je dat het overal past. Het hoort alleen bij een conclusie, niet bij elke zin.",
+    "Koos je \"dat je het weglaat, want het is een verboden woord\"? Dan denk je dat \"dus\" nooit mag. Het woord is prima, als het verband klopt, en vaak nodig.",
+    "Klopt: \"dus\" mag alleen als de tekst die conclusie ook trekt."
+   ],
+   "uh": "Dus = echte conclusie."
+  },
+  {
+   "v": "Wat is hier mis?",
+   "o": [
+    "hij laat het woord \"dus\" weg uit zijn samenvatting van de tekst",
+    "hij voegt een verband toe dat niet in de tekst staat",
+    "hij maakt de zin te kort en te weinig informatief voor de lezer",
+    "hij gebruikt geen voorbeeld om zijn samenvatting te ondersteunen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Verzin geen verbanden of informatie bij samenvatten.",
+   "uo": [
+    "Koos je \"hij laat het woord dus weg uit zijn samenvatting...\"? Dan denk je dat \"dus\" ontbreekt. Hij gebruikt \"dus\", het probleem is de toegevoegde informatie.",
+    "Klopt: \"maar niemand had zwemkleren\" is verzonnen; een samenvatting geeft alleen wat in de tekst staat.",
+    "Koos je \"hij maakt de zin te kort en te weinig informatief...\"? Dan denk je dat de zin te kort is. De zin is juist te lang, door verzonnen informatie.",
+    "Koos je \"hij gebruikt geen voorbeeld om zijn samenvatting te...\"? Dan denk je dat een voorbeeld nodig is. Een samenvatting laat voorbeelden juist weg, het probleem is de toevoeging."
+   ],
+   "uh": "Alleen wat er staat.",
+   "ctx": "Een leerling schrijft: \"Het was warm, dus ging iedereen zwemmen, maar niemand had zwemkleren bij.\" De tekst zei alleen dat het warm was en iedereen ging zwemmen."
+  },
+  {
+   "v": "Wat klopt er niet aan dit verband?",
+   "o": [
+    "het verband is tegenstrijdig met wat in de zin staat",
+    "er staat geen voorwaarde in de zin, want er is geen woord dat een voorwaarde aangeeft",
+    "de zin is te kort om een verband te tonen tussen regen en droog weer",
+    "er ontbreekt een voorbeeld dat het verband duidelijk maakt voor de lezer"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Controleer of een verband logisch klopt.",
+   "uo": [
+    "Klopt: regen en droog sluiten elkaar uit, dus de voorwaarde klopt niet met het gevolg.",
+    "Koos je \"er staat geen voorwaarde in de zin, want er is geen...\"? Dan denk je dat de zin geen voorwaarde heeft. Er staat \"als\", dus er is wel een voorwaarde, maar het gevolg klopt niet.",
+    "Koos je \"de zin is te kort om een verband te tonen tussen...\"? Dan denk je dat de zin te kort is. Lengte maakt niet uit; het verband zelf is onlogisch.",
+    "Koos je \"er ontbreekt een voorbeeld dat het verband...\"? Dan denk je dat een voorbeeld nodig is. Het probleem is de logica van het verband, niet een voorbeeld."
+   ],
+   "uh": "Logica bewaken.",
+   "ctx": "Een leerling schrijft in een samenvatting: \"Als het regent, dan blijft het droog.\""
+  },
+  {
+   "v": "Wat mist deze samenvatting?",
+   "o": [
+    "een voorbeeld van een oplossing om de samenvatting te verduidelijken",
+    "een tegenstelling tussen A en B, omdat ze twee verschillende onderwerpen hebben",
+    "meer details over schermtijd, zodat de lezer alle feiten krijgt",
+    "het verband: de oplossingen zijn bedoeld voor de gevolgen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Verbind de delen van je samenvatting met het juiste verband.",
+   "uo": [
+    "Koos je \"een voorbeeld van een oplossing om de samenvatting...\"? Dan denk je dat een voorbeeld ontbreekt. Het verband tussen de delen ontbreekt, dat is belangrijker.",
+    "Koos je \"een tegenstelling tussen A en B, omdat ze twee...\"? Dan denk je dat A en B tegenover elkaar staan. B reageert juist op A, dus er is geen tegenstelling.",
+    "Koos je \"meer details over schermtijd, zodat de lezer alle...\"? Dan denk je dat details nodig zijn. Details horen niet in een samenvatting, het verband ontbreekt.",
+    "Klopt: B volgt uit A, dus het verband tussen de delen ontbreekt in deze samenvatting."
+   ],
+   "uh": "Delen verbinden.",
+   "ctx": "Twee alinea's: A gaat over de gevolgen van schermtijd, B over oplossingen. Een leerling vat samen: \"Schermtijd heeft gevolgen. Er zijn oplossingen.\""
+  },
+  {
+   "v": "Wat is hier mis?",
+   "o": [
+    "de samenvatting is te lang en bevat te veel verzonnen informatie",
+    "de samenvatting laat de trein weg en noemt alleen de vertraging",
+    "\"dus\" geeft een oorzaak-gevolg aan dat de tekst niet noemt",
+    "de samenvatting gebruikt een voorbeeld dat niet in de tekst staat"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Voeg geen oorzaak-gevolg toe dat niet in de tekst staat.",
+   "uo": [
+    "Koos je \"de samenvatting is te lang en bevat te veel...\"? Dan denk je dat de samenvatting te lang is. Ze is kort, het probleem is het verzonnen verband.",
+    "Koos je \"de samenvatting laat de trein weg en noemt alleen...\"? Dan denk je dat de trein ontbreekt. Hij staat er, het probleem is het verband.",
+    "Klopt: de tekst zegt niet dat de vertraging de vermoeidheid veroorzaakte.",
+    "Koos je \"de samenvatting gebruikt een voorbeeld dat niet in...\"? Dan denk je dat er een voorbeeld in staat. Er staat geen voorbeeld, het probleem is het verzonnen verband."
+   ],
+   "uh": "Geen verzonnen oorzaak.",
+   "ctx": "Tekst: \"Het was al laat toen de trein kwam. De mensen waren moe.\" Een leerling vat samen: \"De trein kwam laat, dus waren de mensen moe.\""
+  },
+  {
+   "v": "Welke verbanden verbinden de alinea's?",
+   "o": [
+    "oorzaak tussen 1 en 2, voorbeeld tussen 2 en 3, want de alinea's volgen op elkaar",
+    "tegenstelling tussen 1 en 2, toevoeging tussen 2 en 3",
+    "toevoeging tussen 1 en 2, tegenstelling tussen 2 en 3",
+    "alles is een opsomming"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Signaalwoorden verbinden alinea's met toevoeging, tegenstelling en meer.",
+   "uo": [
+    "Koos je \"oorzaak tussen 1 en 2, voorbeeld tussen 2 en 3,...\"? Dan denk je dat de verbanden anders zijn. \"Daarnaast\" voegt toe, en \"toch\" is een tegenstelling.",
+    "Koos je \"tegenstelling tussen 1 en 2, toevoeging tussen 2 en...\"? Dan denk je dat het omgedraaid is. De signaalwoorden geven toevoeging en tegenstelling in de andere volgorde, dus dit klopt niet.",
+    "Klopt: \"daarnaast\" voegt toe en \"toch\" zet tegenover.",
+    "Koos je \"alles is een opsomming\"? Dan denk je dat alles bij elkaar opgeteld wordt. \"Toch\" is geen opsomming, maar een tegenstelling."
+   ],
+   "uh": "Let op signalen.",
+   "ctx": "Alinea 1: \"Veel jongeren hebben een bijbaantje.\" Alinea 2: \"Daarnaast sparen ze voor een rijbewijs.\" Alinea 3: \"Toch lijden hun schoolresultaten daaronder.\""
+  },
+  {
+   "v": "Welk verband zit tussen de tweede en de derde zin?",
+   "o": [
+    "tegenstelling: de wachttijden staan tegenover de productie, ze botsen met elkaar",
+    "toevoeging: de wachttijden zijn een extra voorbeeld van fabrikanten die niets doen",
+    "voorwaarde: de wachttijden lopen alleen op als fabrikanten stoppen met produceren",
+    "oorzaak en gevolg: de fabrikanten kunnen de vraag niet bijhouden, dus lopen de wachttijden op"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Zoek bij twee zinnen: verklaart de ene de andere?",
+   "uo": [
+    "Koos je \"tegenstelling: de wachttijden staan tegenover de...\"? Dan denk je dat de zinnen elkaar tegenspreken. Beide zinnen wijzen dezelfde kant op, en de tweede verklaart de derde.",
+    "Koos je \"toevoeging: de wachttijden zijn een extra voorbeeld...\"? Dan denk je dat het een opsomming is. De derde zin volgt logisch uit de tweede, dus het is een gevolg, geen extra punt.",
+    "Koos je \"voorwaarde: de wachttijden lopen alleen op als...\"? Dan denk je dat de derde zin een voorwaarde is. De tekst stelt geen voorwaarde, maar beschrijft een uitkomst.",
+    "Klopt: de beperkte productie is de oorzaak, de lange wachttijd het gevolg."
+   ],
+   "uh": "Verklaart de ene de andere?",
+   "ctx": "Tekst: \"De vraag naar elektrische fietsen groeit. Fabrikanten kunnen de vraag niet bijhouden. Wachttijden lopen op.\""
+  },
+  {
+   "v": "Welk verband zit in deze zinnen?",
+   "o": [
+    "een opsomming van activiteiten, die in dezelfde richting wijzen",
+    "een tegenstelling tussen scholen met sport en scholen met muziek",
+    "een oorzaak: sport veroorzaakt het aanbod van muziek en toneel",
+    "een voorwaarde: muziek is er alleen als er sport is"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Een rij zinnen die steeds iets toevoegen is een opsomming.",
+   "uo": [
+    "Klopt: elke zin voegt een activiteit toe aan het aanbod.",
+    "Koos je \"een tegenstelling tussen scholen met sport en...\"? Dan denk je dat de scholen tegenover elkaar staan. De zinnen noemen steeds meer aanbod, dus ze wijzen dezelfde kant op.",
+    "Koos je \"een oorzaak: sport veroorzaakt het aanbod van...\"? Dan denk je dat de ene activiteit de andere veroorzaakt. De tekst noemt geen oorzaak, alleen opeenvolgende toevoegingen.",
+    "Koos je \"een voorwaarde: muziek is er alleen als er sport is\"? Dan denk je dat de zinnen een eis stellen. Ze noemen alleen aanbod, zonder voorwaarde."
+   ],
+   "uh": "Toevoegen = opsomming.",
+   "ctx": "Tekst: \"Veel scholen bieden sport aan. Sommige scholen bieden ook muziek aan. Een enkele school heeft zelfs een toneelgroep.\""
+  },
+  {
+   "v": "Welk verband mist in deze twee zinnen, als je een samenvatting schrijft?",
+   "o": [
+    "oorzaak en gevolg: de reizigers bleven kalm doordat de trein vertraging had",
+    "er is geen verband genoemd; je mag er geen verzinnen",
+    "tegenstelling: de reizigers bleven kalm ondanks de vertraging, in plaats van boos te worden",
+    "voorwaarde: de reizigers bleven kalm als de trein vertraging had"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Verzin geen verband dat de tekst niet noemt.",
+   "uo": [
+    "Koos je \"oorzaak en gevolg: de reizigers bleven kalm doordat...\"? Dan denk je dat de vertraging de kalmte veroorzaakte. Dat staat niet in de tekst, dus je mag het niet toevoegen.",
+    "Klopt: de tekst legt geen verband tussen vertraging en kalmte, dus je laat dat verband ook weg.",
+    "Koos je \"tegenstelling: de reizigers bleven kalm ondanks de...\"? Dan denk je dat de zinnen een contrast bevatten. Er staat geen signaalwoord dat dat zegt, dus je zou het verband zelf verzinnen.",
+    "Koos je \"voorwaarde: de reizigers bleven kalm als de trein...\"? Dan denk je dat de kalmte een voorwaarde heeft. De tekst zegt dat niet, dus je mag die niet toevoegen."
+   ],
+   "uh": "Geen verband verzinnen.",
+   "ctx": "Tekst: \"De trein had vertraging. De reizigers bleven kalm.\""
+  },
+  {
+   "v": "Wat is hier mis?",
+   "o": [
+    "de samenvatting is te kort",
+    "\"dus\" is een verboden woord in een samenvatting van een tekst met verbanden",
+    "de leerling gebruikt te weinig voorbeelden in zijn samenvatting",
+    "\"dus\" suggereert overal een conclusie, terwijl niet elk verband een gevolg is"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Gebruik een signaalwoord alleen als het verband klopt.",
+   "uo": [
+    "Koos je \"de samenvatting is te kort\"? Dan denk je dat de lengte het probleem is. Het probleem is het verkeerde verband, dat \"dus\" overal suggereert.",
+    "Koos je \"dus is een verboden woord in een samenvatting van...\"? Dan denk je dat het woord nooit mag. Het mag, als er echt een conclusie volgt, maar niet overal.",
+    "Koos je \"de leerling gebruikt te weinig voorbeelden in zijn...\"? Dan denk je dat voorbeelden nodig zijn. Een samenvatting laat voorbeelden weg, het probleem is het gebruik van \"dus\".",
+    "Klopt: het woord claimt een gevolg dat niet in elke zin staat."
+   ],
+   "uh": "Verband moet kloppen.",
+   "ctx": "Een leerling vat een tekst samen en gebruikt na elke zin het woord \"dus\"."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het regende hard. Daarom bleef de wedstrijd uit.",
+   "v": "Geef de oorzaak en het gevolg.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Oorzaak: het regende hard (1 punt). Gevolg: de wedstrijd bleef uit; \"daarom\" leidt het gevolg in (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Tekst: \"Er worden steeds meer elektrische auto's verkocht. De accu's zijn nog duur. De overheid geeft subsidie.\"",
+   "v": "Schrijf één samenvattende zin met de juiste verbanden.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: \"Er worden meer elektrische auto's verkocht, hoewel de accu's duur zijn, omdat de overheid subsidie geeft.\" (2 punten: een tegenstelling en een reden die in de tekst passen)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft: \"De trein kwam laat, dus waren de mensen moe.\" De tekst zegt alleen dat de trein laat kwam en dat de mensen moe waren.",
+   "v": "Wat is hier mis?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij voegt een oorzaak-gevolgverband toe dat niet in de tekst staat (1 punt). Een samenvatting geeft alleen de verbanden uit de tekst (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het project was duur. Toch werd het uitgevoerd.",
+   "v": "Welk verband geeft \"toch\" aan en wat betekent dat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een tegenstelling (1 punt): het project werd uitgevoerd ondanks de kosten (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling vat twee alinea's samen als: \"Schermtijd heeft gevolgen. Er zijn oplossingen.\"",
+   "v": "Wat ontbreekt er?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het verband: de oplossingen zijn bedoeld voor de gevolgen (1 punt), waardoor de samenvatting samenhang mist (1 punt)."
+  }
+ ]
+}

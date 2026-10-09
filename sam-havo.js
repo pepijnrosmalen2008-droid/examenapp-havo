@@ -2227,5 +2227,45 @@ Object.assign(SAM_RICH,{
 <path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
 <rect x="4" y="130" width="312" height="38" rx="6" fill="var(--or)"/><text x="12" y="154" font-size="12" font-weight="700" fill="#fff">4  Noteer één zin, eigen woorden</text></g></svg><div class="sam-figcap">Van alinea naar kern in vier stappen: lezen, hoofdgedachte zoeken, voorbeeld en detail schrappen en één zin noteren.</div></div>
 <div class="sam-tip"><strong>Tip:</strong> lees alleen de kernzinnen achter elkaar. Vormen ze samen een samenhangend verhaal, dan heb je de goede kernen gevonden.</div>
+</div>`,
+'havo_nl_D3':`<div class="sam-intro">Een goede samenvatting leest als één verhaal. Dat komt door <strong>verbanden</strong>: wat is <strong>oorzaak</strong> en wat <strong>gevolg</strong>, wat is een <strong>tegenstelling</strong>, wat een <strong>toevoeging</strong>? <strong>Signaalwoorden</strong> in de tekst helpen je die verbanden te herkennen en over te nemen.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Verband, samenhang</td><td>Hoe zinnen en delen bij elkaar horen.</td></tr>
+<tr><td>Signaalwoord</td><td>Geeft het verband aan.</td></tr>
+<tr><td>Oorzaak, gevolg</td><td>Reden en uitkomst.</td></tr>
+<tr><td>Tegenstelling, concessie</td><td>Twee dingen tegenover elkaar.</td></tr>
+<tr><td>Toevoeging, opsomming</td><td>Extra punt in dezelfde richting.</td></tr>
+<tr><td>Voorwaarde</td><td>Wat moet gelden.</td></tr>
+<tr><td>Conclusie</td><td>Slotsom uit het voorgaande.</td></tr>
+<tr><td>Verwijswoord</td><td>Wijst terug naar iets eerders.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Verbanden en hun signaalwoorden</div>
+<p>Elk <strong>verband</strong> heeft zijn eigen <strong>signaalwoorden</strong>. Een <strong>oorzaak</strong> herken je aan "omdat" of "doordat", een <strong>gevolg</strong> aan "daarom", "daardoor" of "dus". Een <strong>toevoeging</strong> of <strong>opsomming</strong> wordt aangegeven met "bovendien" of "daarnaast", een <strong>tegenstelling</strong> met "maar", "echter" of "toch" en een <strong>voorwaarde</strong> met "als". Een <strong>conclusie</strong> leid je in met "dus" of "kortom". Soms staat er geen signaalwoord; dan lees je het verband uit de inhoud, bijvoorbeeld: "Het regende. De wedstrijd bleef uit."</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Verbanden met hun signaalwoorden: oorzaak, gevolg, toevoeging, tegenstelling, voorwaarde, conclusie"><g font-family="inherit"><rect x="4" y="4" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">oorzaak: omdat, doordat</text>
+<rect x="4" y="34" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="52" font-size="12" font-weight="700" fill="var(--dk)">gevolg: daarom, daardoor</text>
+<rect x="4" y="64" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="82" font-size="12" font-weight="700" fill="var(--dk)">toevoeging: bovendien, daarnaast</text>
+<rect x="4" y="94" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="112" font-size="12" font-weight="700" fill="var(--dk)">tegenstelling: maar, echter, toch</text>
+<rect x="4" y="124" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="142" font-size="12" font-weight="700" fill="var(--dk)">voorwaarde: als</text>
+<rect x="4" y="154" width="312" height="30" rx="6" fill="var(--or)"/><text x="12" y="174" font-size="12" font-weight="700" fill="#fff">conclusie: dus, kortom</text></g></svg><div class="sam-figcap">Zes verbanden met hun signaalwoorden: oorzaak, gevolg, toevoeging, tegenstelling, voorwaarde en conclusie.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> leg bij elk signaalwoord vast welk verband het aangeeft.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Verbanden herkennen</div>
+<p>Kijk naar twee zinnen en vraag: wat doet de tweede met de eerste? Bij "Het regende hard. Daarom bleef de wedstrijd uit" is de regen de oorzaak en het uitstel het gevolg. Bij "Het project was duur. Toch werd het uitgevoerd" staat het resultaat tegenover de verwachting: een tegenstelling. Let op de richting: "daardoor" staat voor het gevolg, dus de zin ervoor is de oorzaak. Draai die nooit om. Ook tussen alinea's zitten verbanden: "daarnaast" voegt toe en "toch" zet tegenover.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Oorzaak en gevolg: het regende hard (oorzaak) en daarom bleef de wedstrijd uit (gevolg), met een pijl"><g font-family="inherit"><rect x="4" y="4" width="312" height="52" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Oorzaak</text><text x="12" y="42" font-size="11" fill="var(--dk)">Het regende hard.</text>
+<path d="M160 56 V68" stroke="var(--or)" stroke-width="2.5"/><path d="M153 66 L160 74 L167 66 Z" fill="var(--or)"/><text x="176" y="68" font-size="11" fill="var(--dk)">daarom</text>
+<rect x="4" y="78" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="96" font-size="12" font-weight="700" fill="#fff">Gevolg</text><text x="12" y="116" font-size="11" fill="#fff">De wedstrijd bleef uit.</text>
+<rect x="4" y="138" width="312" height="32" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="158" font-size="11" fill="var(--mu)">Draai oorzaak en gevolg nooit om.</text></g></svg><div class="sam-figcap">Oorzaak en gevolg met het signaalwoord "daarom": de oorzaak staat vooraan, het gevolg volgt. Draai ze niet om.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Verbanden in je samenvatting</div>
+<p>Neem de belangrijkste verbanden over in je samenvatting. Maak van "Scholen willen digitale boeken. Toch zijn papieren boeken populair. Veel leerlingen lezen liever op papier" één zin: "Scholen willen digitale boeken, maar papier blijft populair doordat leerlingen liever op papier lezen." Zo ontstaat <strong>samenhang</strong>. Verzin geen verband dat niet in de tekst staat: "De trein kwam laat, dus waren de mensen moe" is fout als de tekst dat verband niet legt. Controleer ook of een verband logisch klopt: "Als het regent, dan blijft het droog" is onlogisch.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 172" role="img" aria-label="Van drie losse zinnen naar één samenhangende zin met maar en doordat"><g font-family="inherit"><rect x="4" y="4" width="312" height="62" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--mu)">Losse zinnen</text><text x="12" y="40" font-size="11" fill="var(--mu)">Scholen willen digitale boeken.</text><text x="12" y="55" font-size="11" fill="var(--mu)">Papier blijft populair.</text>
+<path d="M160 66 V78" stroke="var(--or)" stroke-width="2.5"/><path d="M153 76 L160 84 L167 76 Z" fill="var(--or)"/>
+<rect x="4" y="88" width="312" height="80" rx="6" fill="var(--or)"/><text x="12" y="106" font-size="12" font-weight="700" fill="#fff">Samenhangende zin</text><text x="12" y="126" font-size="11" fill="#fff">Scholen willen digitale boeken,</text><text x="12" y="142" font-size="11" fill="#fff">maar papier blijft populair doordat</text><text x="12" y="158" font-size="11" fill="#fff">leerlingen liever op papier lezen.</text></g></svg><div class="sam-figcap">Van losse zinnen naar één samenhangende zin: "maar" geeft de tegenstelling aan en "doordat" de reden.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> lees je samenvatting na op twee dingen: staat bij elk signaalwoord een verband dat ook in de tekst staat, en klopt de richting van oorzaak en gevolg?</div>
 </div>`
 });

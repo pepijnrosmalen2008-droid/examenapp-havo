@@ -529,6 +529,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D3",
+      "lo": "nl.D.3",
+      "gs": 2,
+      "naam": "Verbanden en signaalwoorden gebruiken bij samenvatten",
+      "beschrijving": "Je herkent verbanden als oorzaak, gevolg, tegenstelling, toevoeging, voorwaarde en conclusie en neemt ze juist op in je samenvatting zonder er een te verzinnen.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Waarom verbanden",
+       "Oorzaak en gevolg",
+       "Toevoeging en opsomming",
+       "Tegenstelling",
+       "Voorwaarde en conclusie",
+       "Verbanden in je samenvatting"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
