@@ -21208,6 +21208,647 @@ var VAKKEN = [
         "u": "Eerst enkele minuten globaal lezen (1 punt), dan de kern noteren, schrijven en controleren (1 punt)."
        }
       ]
+     },
+     {
+      "id": "D2",
+      "lo": "nl.D.2",
+      "gs": 2,
+      "naam": "Kernzinnen en hoofdpunten per alinea vinden",
+      "beschrijving": "Je vindt per alinea de kernzin, scheidt hoofdzaak van bijzaak (voorbeelden, details, herhaling) en formuleert zelf de kern als die er niet staat.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat is een kernzin",
+       "Hoofdzaak en bijzaak",
+       "Zelf een kern formuleren",
+       "Signaalwoorden voor kern en voorbeeld",
+       "Per alinea noteren",
+       "Veelgemaakte fouten"
+      ],
+      "sam": "Elke alinea heeft een kern: de kernzin geeft de hoofdgedachte en staat vaak vooraan of achteraan. Voorbeelden, details en herhaling zijn bijzaak. Signaalwoorden als bijvoorbeeld en zoals wijzen op een voorbeeld, kortom, dus en al met al op de kern. Staat er geen kernzin, formuleer die dan zelf in één zin. Noteer per alinea één korte zin in eigen woorden.",
+      "begrippen": [
+       {
+        "t": "Kernzin",
+        "d": "De zin die de hoofdgedachte van een alinea weergeeft."
+       },
+       {
+        "t": "Hoofdzaak",
+        "d": "Wat in de alinea de kern vormt."
+       },
+       {
+        "t": "Bijzaak",
+        "d": "Wat de kern ondersteunt maar weggelaten kan worden."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een geval dat de kern illustreert."
+       },
+       {
+        "t": "Detail",
+        "d": "Een kleine bijzonderheid zoals een getal of naam."
+       },
+       {
+        "t": "Herhaling",
+        "d": "Iets wat al gezegd is en niets toevoegt."
+       },
+       {
+        "t": "Aanloopzin",
+        "d": "Een zin die het onderwerp aankondigt zonder kern."
+       },
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord dat het verband of de functie aangeeft."
+       },
+       {
+        "t": "Conclusie",
+        "d": "De slotsom die uit de voorgaande zinnen volgt."
+       },
+       {
+        "t": "Oorzaak",
+        "d": "De reden waarom iets gebeurt."
+       },
+       {
+        "t": "Gevolg",
+        "d": "Wat er uit een oorzaak volgt."
+       },
+       {
+        "t": "Kern",
+        "d": "De hoofdgedachte van een alinea of tekst."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Waaraan herken je een kernzin?",
+        "o": [
+         "de langste zin van de alinea, omdat die de meeste informatie bevat",
+         "de zin die de hoofdgedachte van een alinea weergeeft",
+         "de eerste zin van elke tekst, ook als die alleen een aanloop is",
+         "een zin met een voorbeeld, omdat voorbeelden de kern verduidelijken"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "De kernzin geeft de hoofdgedachte van de alinea.",
+        "uo": [
+         "Koos je \"de langste zin van de alinea, omdat die de meeste...\"? Dan denk je dat lengte de kern aanwijst. Een lange zin kan een uitwerking zijn, de kernzin kan ook kort zijn.",
+         "Klopt: de kernzin vat samen waar de alinea over gaat en wat de schrijver erover zegt.",
+         "Koos je \"de eerste zin van elke tekst, ook als die alleen...\"? Dan denk je dat de kern altijd vooraan staat. Dat is vaak zo, maar niet altijd; je kijkt naar de inhoud, niet naar de plek.",
+         "Koos je \"een zin met een voorbeeld, omdat voorbeelden de...\"? Dan denk je dat een voorbeeld de kern is. Een voorbeeld ondersteunt de kern, maar is zelf bijzaak."
+        ],
+        "uh": "Kern = hoofdgedachte."
+       },
+       {
+        "v": "Waar staat de kernzin vaak in een alinea?",
+        "o": [
+         "altijd precies in het midden van de alinea",
+         "in de titel boven de alinea",
+         "in de voetnoot onderaan de pagina",
+         "aan het begin of aan het einde"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Een kernzin staat vaak vooraan of achteraan in de alinea.",
+        "uo": [
+         "Koos je \"altijd precies in het midden van de alinea\"? Dan denk je dat de kern altijd in het midden staat. De kern kan overal staan, maar het midden is zeldzaam.",
+         "Koos je \"in de titel boven de alinea\"? Dan denk je dat de titel de kernzin is. Een titel hoort niet bij de alinea zelf; de kernzin staat in de tekst.",
+         "Koos je \"in de voetnoot onderaan de pagina\"? Dan denk je dat de kernzin in een voetnoot staat. Voetnoten bevatten bijzaken of bronnen, de kern staat in de alinea.",
+         "Klopt: meestal staat de kernzin vooraan of als slotzin, maar niet altijd."
+        ],
+        "uh": "Begin of slot."
+       },
+       {
+        "v": "Welke zin is de kernzin?",
+        "o": [
+         "Fietsen is gezond.",
+         "Het versterkt je spieren.",
+         "Het is goed voor je hart.",
+         "Je slaapt er beter van."
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "De kernzin vat de alinea samen; de andere zinnen werken hem uit.",
+        "uo": [
+         "Klopt: de eerste zin vat de alinea samen, de rest werkt hem uit.",
+         "Koos je \"Het versterkt je spieren.\"? Dan denk je dat het eerste voorbeeld de kern is. Het is een van de uitwerkingen, de kernzin staat in de eerste zin.",
+         "Koos je \"Het is goed voor je hart.\"? Dan denk je dat de middelste zin de kern is. Het is een tweede uitwerking, geen samenvatting van de alinea.",
+         "Koos je \"Je slaapt er beter van.\"? Dan denk je dat de slotzin de kern is. Hij geeft nog een voorbeeld, de kern is de brede stelling vooraan."
+        ],
+        "uh": "Kernzin eerst.",
+        "ctx": "Fietsen is gezond. Het versterkt je spieren, het is goed voor je hart en je slaapt er beter van."
+       },
+       {
+        "v": "Wat betekent \"kortom\" hier?",
+        "o": [
+         "de zin die volgt is een voorbeeld",
+         "de zin die volgt is een tegenstelling",
+         "de zin die volgt geeft de kern van de alinea",
+         "de zin die volgt is overbodig en kan weg"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "\"Kortom\", \"dus\" en \"al met al\" kondigen vaak de kern aan.",
+        "uo": [
+         "Koos je \"de zin die volgt is een voorbeeld\"? Dan denk je dat \"kortom\" een voorbeeld aankondigt. Het woord kondigt een conclusie of samenvatting aan, geen voorbeeld.",
+         "Koos je \"de zin die volgt is een tegenstelling\"? Dan denk je dat \"kortom\" een contrast aangeeft. Dat doet \"maar\" of \"echter\", \"kortom\" rondt af.",
+         "Klopt: \"kortom\" kondigt de samenvatting of kern aan.",
+         "Koos je \"de zin die volgt is overbodig en kan weg\"? Dan denk je dat de zin na \"kortom\" onbelangrijk is. Juist daar staat vaak de kern, dus je laat hem niet weg."
+        ],
+        "uh": "Signaal voor de kern.",
+        "ctx": "Een alinea eindigt met: \"Kortom: wie te weinig slaapt, presteert minder.\""
+       },
+       {
+        "v": "Welke zin is bijzaak in een alinea?",
+        "o": [
+         "de zin die de hoofdgedachte noemt",
+         "de zin met de conclusie van de alinea",
+         "een zin met een voorbeeld bij de kern",
+         "de zin die het onderwerp van de alinea noemt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Voorbeelden en details zijn bijzaak.",
+        "uo": [
+         "Koos je \"de zin die de hoofdgedachte noemt\"? Dan denk je dat de kern bijzaak is. De hoofdgedachte is hoofdzaak, en blijft in de samenvatting.",
+         "Koos je \"de zin met de conclusie van de alinea\"? Dan denk je dat de conclusie bijzaak is. De conclusie hoort juist bij de kern, dus ze blijft.",
+         "Klopt: een voorbeeld verduidelijkt de kern, maar je kunt het in een samenvatting weglaten.",
+         "Koos je \"de zin die het onderwerp van de alinea noemt\"? Dan denk je dat het onderwerp bijzaak is. Zonder onderwerp is de alinea onbegrijpelijk, dus het blijft in de samenvatting."
+        ],
+        "uh": "Voorbeeld = bijzaak."
+       },
+       {
+        "v": "Welke uitspraak is de hoofdzaak in deze alinea?",
+        "o": [
+         "het museumbezoek verschilt per regio",
+         "precies hoeveel mensen er in Rotterdam naar een museum gingen",
+         "dat Zeeland het mooiste museum van Nederland heeft",
+         "dat musea in 2020 gesloten waren"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Cijfers zijn vaak voorbeelden van een grotere uitspraak.",
+        "uo": [
+         "Klopt: de cijfers zijn voorbeelden van het regionale verschil.",
+         "Koos je \"precies hoeveel mensen er in Rotterdam naar een...\"? Dan denk je dat het exacte cijfer de kern is. Dat is een detail, de kern is het verschil tussen regio's.",
+         "Koos je \"dat Zeeland het mooiste museum van Nederland heeft\"? Dan denk je dat Zeeland een hoofdrol heeft. De tekst zegt niets over het mooiste museum, het gaat om bezoekcijfers.",
+         "Koos je \"dat musea in 2020 gesloten waren\"? Dan denk je dat er gesloten musea in de alinea staan. De alinea noemt bezoekcijfers, niet de sluiting."
+        ],
+        "uh": "Cijfers illustreren.",
+        "ctx": "In 2020 bezocht gemiddeld een derde van de Nederlanders een museum. In Rotterdam was dat zelfs meer dan de helft. In Zeeland was het maar een kwart."
+       },
+       {
+        "v": "Welke zinnen zijn bijzaak?",
+        "o": [
+         "de eerste zin, want die is algemeen",
+         "geen enkele zin, want alle zinnen zijn even belangrijk",
+         "de eerste en de laatste zin samen",
+         "de zinnen over Sam"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Een voorbeeld met een persoon illustreert de kern en is bijzaak.",
+        "uo": [
+         "Koos je \"de eerste zin, want die is algemeen\"? Dan denk je dat een algemene zin bijzaak is. De eerste zin is juist de kern, en blijft in de samenvatting.",
+         "Koos je \"geen enkele zin, want alle zinnen zijn even...\"? Dan denk je dat alles even belangrijk is. Een voorbeeld is geen hoofdzaak, dus je kunt het weglaten.",
+         "Koos je \"de eerste en de laatste zin samen\"? Dan denk je dat de buitenste zinnen bijzaak zijn. De eerste zin is de kern; alleen het voorbeeld in het midden is bijzaak.",
+         "Klopt: het voorbeeld van Sam illustreert de kern \"Veel jongeren slapen te weinig\"."
+        ],
+        "uh": "Voorbeeld weglaten.",
+        "ctx": "Veel jongeren slapen te weinig. Zo ging Sam gisteren pas om twee uur naar bed. Hij was de volgende dag zo moe dat hij in de les in slaap viel."
+       },
+       {
+        "v": "Wat doe je als een alinea geen kernzin heeft?",
+        "o": [
+         "je slaat de alinea over, want zonder kernzin is er geen kern",
+         "je formuleert zelf in één zin de hoofdgedachte",
+         "je neemt de eerste zin over, ook als die iets anders zegt",
+         "je schrijft alle zinnen van de alinea over"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Zonder kernzin formuleer je de hoofdgedachte zelf.",
+        "uo": [
+         "Koos je \"je slaat de alinea over, want zonder kernzin is er...\"? Dan denk je dat een alinea zonder kernzin niets zegt. De kern is dan impliciet, en je formuleert hem zelf.",
+         "Klopt: je vat de alinea samen in je eigen woorden.",
+         "Koos je \"je neemt de eerste zin over, ook als die iets...\"? Dan denk je dat de eerste zin altijd de kern is. Dat is niet zo, dus je beoordeelt eerst wat de alinea zegt.",
+         "Koos je \"je schrijft alle zinnen van de alinea over\"? Dan denk je dat dit een samenvatting is. Dan reduceer je niets, en de kern wordt niet zichtbaar."
+        ],
+        "uh": "Zelf formuleren."
+       },
+       {
+        "v": "Welke zin is de beste kern van deze alinea?",
+        "o": [
+         "Zonnepanelen bestaan al dertig jaar.",
+         "Bijna iedereen kan een paneel kopen.",
+         "Zonnepanelen leveren stroom op.",
+         "Zonnepanelen worden goedkoper en beter."
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Een goede kern vat alle hoofdpunten van de alinea samen.",
+        "uo": [
+         "Koos je \"Zonnepanelen bestaan al dertig jaar.\"? Dan denk je dat de tijdsaanduiding de kern is. De alinea zegt iets over ontwikkeling, niet alleen over de leeftijd van panelen.",
+         "Koos je \"Bijna iedereen kan een paneel kopen.\"? Dan denk je dat één zin de hele alinea dekt. Dit is slechts een deel, en mist de verbetering.",
+         "Koos je \"Zonnepanelen leveren stroom op.\"? Dan denk je dat dit de kern is. Het is een algemene waarheid die de alinea niet samenvat, want de ontwikkeling ontbreekt.",
+         "Klopt: deze zin noemt de twee lijnen uit de alinea in één uitspraak."
+        ],
+        "uh": "Alles in één zin.",
+        "ctx": "Zonnepanelen worden goedkoper. Dertig jaar geleden kostte een paneel een fortuin; nu kan bijna iedereen er een kopen. Ook leveren de panelen steeds meer stroom op."
+       },
+       {
+        "v": "Welk signaalwoord kondigt vaak een voorbeeld aan?",
+        "o": [
+         "kortom",
+         "bijvoorbeeld",
+         "daarom",
+         "echter"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "\"Bijvoorbeeld\" en \"zoals\" kondigen voorbeelden aan.",
+        "uo": [
+         "Koos je \"kortom\"? Dan denk je dat \"kortom\" een voorbeeld aankondigt. Het woord rondt juist af met een samenvatting, dus de zin erna hoort bij de kern.",
+         "Klopt: \"bijvoorbeeld\" leidt een voorbeeld in, dus de zin erna is bijzaak.",
+         "Koos je \"daarom\"? Dan denk je dat \"daarom\" een voorbeeld aankondigt. Het woord leidt een gevolg in, dus er volgt een uitkomst van wat eerder staat.",
+         "Koos je \"echter\"? Dan denk je dat \"echter\" een voorbeeld aankondigt. Het woord zet iets tegenover het voorgaande, dus er volgt een contrast en geen illustratie."
+        ],
+        "uh": "Bijvoorbeeld = voorbeeld."
+       },
+       {
+        "v": "Welk woord wijst op bijzaak?",
+        "o": [
+         "Veel",
+         "online",
+         "Zo",
+         "terug"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Woorden als \"zo\", \"zoals\" en \"bijvoorbeeld\" leiden een voorbeeld in.",
+        "uo": [
+         "Koos je \"Veel\"? Dan denk je dat \"veel\" een voorbeeld aankondigt. Het is een telwoord in de kernzin, geen signaal voor een voorbeeld.",
+         "Koos je \"online\"? Dan denk je dat \"online\" een voorbeeld aankondigt. Het is een bijwoord bij kopen, en geen signaal.",
+         "Klopt: \"zo\" leidt hier een voorbeeld in, en een voorbeeld is bijzaak.",
+         "Koos je \"terug\"? Dan denk je dat \"terug\" een voorbeeld aankondigt. Het hoort bij \"sturen\", geen signaal voor bijzaak."
+        ],
+        "uh": "Let op signalen.",
+        "ctx": "Veel mensen kopen kleding online. Zo bestelde Anna vorige maand zes jurken. De meeste stuurde ze terug."
+       },
+       {
+        "v": "Hoe noteer je de kern van elke alinea het best?",
+        "o": [
+         "in één korte zin in eigen woorden",
+         "door de hele alinea over te schrijven",
+         "door alleen het eerste woord te noteren",
+         "door een tekening te maken zonder tekst"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 5,
+        "u": "Noteer per alinea één korte zin met de kern.",
+        "uo": [
+         "Klopt: één zin per alinea maakt de lijn van de tekst zichtbaar.",
+         "Koos je \"door de hele alinea over te schrijven\"? Dan denk je dat overschrijven kernpunten oplevert. Dan reduceer je niets, en de lijn blijft onzichtbaar.",
+         "Koos je \"door alleen het eerste woord te noteren\"? Dan denk je dat één woord genoeg is. Het is te weinig om de kern te laten zien, één zin is beter.",
+         "Koos je \"door een tekening te maken zonder tekst\"? Dan denk je dat een tekening de kern vervangt. Dat kan nuttig zijn, maar voor een samenvatting formuleer je de kern in woorden."
+        ],
+        "uh": "Eén zin per alinea."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "hij reduceert niet tot de kern",
+         "hij schrijft te weinig op",
+         "hij gebruikt te moeilijke woorden",
+         "hij gebruikt geen kleur"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Noteer de kern, niet de hele alinea.",
+        "uo": [
+         "Klopt: zo kopieert hij de tekst in plaats van de kern te noteren.",
+         "Koos je \"hij schrijft te weinig op\"? Dan denk je dat het te weinig is. Hij schrijft juist te veel, en reduceert niet.",
+         "Koos je \"hij gebruikt te moeilijke woorden\"? Dan denk je dat de woordkeus het probleem is. Het probleem is de hoeveelheid, niet de woordkeus.",
+         "Koos je \"hij gebruikt geen kleur\"? Dan denk je dat kleur uitmaakt. Het gaat om selecteren, niet om kleuren."
+        ],
+        "uh": "Kern in korte vorm.",
+        "ctx": "Een leerling noteert bij elke alinea een hele alinea aan tekst."
+       },
+       {
+        "v": "Welke zin geeft hier de kern?",
+        "o": [
+         "de kinderen speelden buiten",
+         "de zon scheen",
+         "de school liet het schoolreisje doorgaan vanwege het mooie weer",
+         "het schoolreisje bestaat"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "De kern combineert oorzaak en gevolg.",
+        "uo": [
+         "Koos je \"de kinderen speelden buiten\"? Dan denk je dat dit de kern is. Het is een detail dat het mooie weer illustreert, geen kern.",
+         "Koos je \"de zon scheen\"? Dan denk je dat dit de kern is. Het is een deel van de oorzaak, de kern is het besluit van de school.",
+         "Klopt: de kern is het gevolg, de weeromstandigheden zijn de oorzaak.",
+         "Koos je \"het schoolreisje bestaat\"? Dan denk je dat dit de kern is. Het is een vaststelling zonder uitspraak, de alinea gaat over het doorgaan."
+        ],
+        "uh": "Oorzaak en gevolg.",
+        "ctx": "Een alinea: \"Het weer was die dag heerlijk. De zon scheen en de kinderen speelden buiten. Daarom besloot de school het schoolreisje door te laten gaan.\""
+       },
+       {
+        "v": "Waarom lees je deze slotzin goed?",
+        "o": [
+         "\"zoals gezegd\" kondigt altijd een nieuw onderwerp aan",
+         "\"zoals gezegd\" herhaalt de kern van de alinea",
+         "\"zoals gezegd\" is een stopwoord dat je mag negeren",
+         "\"zoals gezegd\" wijst op een voorbeeld"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "\"Zoals gezegd\" herhaalt de kern.",
+        "uo": [
+         "Koos je \"zoals gezegd kondigt altijd een nieuw onderwerp aan\"? Dan denk je dat \"zoals gezegd\" een nieuw onderwerp aankondigt. Het verwijst juist terug, naar wat al is gezegd.",
+         "Klopt: een herhaling aan het eind is vaak de kernzin of een bevestiging ervan.",
+         "Koos je \"zoals gezegd is een stopwoord dat je mag negeren\"? Dan denk je dat het een leeg woord is. Het markeert vaak de kern, dus je mag het niet negeren.",
+         "Koos je \"zoals gezegd wijst op een voorbeeld\"? Dan denk je dat het een voorbeeld inleidt. Het herhaalt iets al gezegde, en geeft geen illustratie."
+        ],
+        "uh": "Herhaling = kern.",
+        "ctx": "Een alinea eindigt met \"Zoals gezegd: snelheid is een belangrijke oorzaak van ongelukken.\""
+       },
+       {
+        "v": "Welke beweringen zijn hoofdzaak?",
+        "o": [
+         "alleen dat bomen mooi zijn",
+         "alleen wat de burgemeester zegt",
+         "niets, want alles is een mening",
+         "dat de gemeente meer groen wil, met als reden de lagere temperatuur"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Hoofdzaak is de wens met de belangrijkste reden.",
+        "uo": [
+         "Koos je \"alleen dat bomen mooi zijn\"? Dan denk je dat het esthetische argument de kern is. Het is een secundair argument, de hoofdlijn is de wens en de temperatuur.",
+         "Koos je \"alleen wat de burgemeester zegt\"? Dan denk je dat de bron van de uitspraak de kern is. Wie iets zegt is bijzaak, de inhoud telt.",
+         "Koos je \"niets, want alles is een mening\"? Dan denk je dat alles even relatief is. De wens van de gemeente en haar belangrijkste reden zijn de kern, dus je kunt wel degelijk kiezen.",
+         "Klopt: de wens en de belangrijkste reden zijn hoofdzaak; de esthetische reden is secundair."
+        ],
+        "uh": "Kern kiezen.",
+        "ctx": "Alinea: \"De gemeente wil meer groen. Planten verlagen de temperatuur, zeggen onderzoekers. Daarnaast, schrijft de burgemeester, zijn bomen mooi.\""
+       },
+       {
+        "v": "Welke zin formuleer je als kern?",
+        "o": [
+         "Het schoolplein is koel.",
+         "Het schoolplein moet groener worden om drie redenen.",
+         "De concentratie is belangrijk.",
+         "Het schoolplein is mooi en groen."
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Formuleer de kern zo dat alle redenen eronder passen.",
+        "uo": [
+         "Koos je \"Het schoolplein is koel.\"? Dan denk je dat één reden de kern is. Dan mis je de overige redenen, en de wens zelf.",
+         "Klopt: de zin noemt de wens en dat er redenen zijn, zonder details.",
+         "Koos je \"De concentratie is belangrijk.\"? Dan denk je dat dit de kern is. Het is één van de redenen, de kern is de wens voor een groener plein.",
+         "Koos je \"Het schoolplein is mooi en groen.\"? Dan denk je dat dit de kern is. De alinea beschrijft het plein niet, maar bepleit verandering."
+        ],
+        "uh": "Overkoepelende zin.",
+        "ctx": "Een alinea geeft drie redenen waarom het schoolplein groener moet: het is koeler, het is mooier en het is beter voor de concentratie. Er staat geen kernzin."
+       },
+       {
+        "v": "Wat gaat hier mis?",
+        "o": [
+         "de eerste zin is een voorbeeld en hoort er niet in",
+         "de tweede zin hoort er niet in",
+         "er staat niets mis, want beide zinnen zijn belangrijk",
+         "hij had een citaat moeten gebruiken"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Voorbeelden laat je in een samenvatting weg.",
+        "uo": [
+         "Klopt: \"bijvoorbeeld\" duidt op een voorbeeld, dat je in een samenvatting weglaat.",
+         "Koos je \"de tweede zin hoort er niet in\"? Dan denk je dat de tweede zin bijzaak is. Die zin generaliseert juist en kan de kern ondersteunen, het voorbeeld in de eerste zin laat je weg.",
+         "Koos je \"er staat niets mis, want beide zinnen zijn...\"? Dan denk je dat alle zinnen hoofdzaak zijn. Een voorbeeld is bijzaak, dus de eerste zin kan weg.",
+         "Koos je \"hij had een citaat moeten gebruiken\"? Dan denk je dat een citaat nodig is. Het gaat om selecteren, niet om citeren."
+        ],
+        "uh": "Voorbeeld weg.",
+        "ctx": "In een alinea staat: \"Dit is bijvoorbeeld te zien aan de gemeente Utrecht. Maar ook in andere steden zie je dat.\" Een leerling neemt beide zinnen in zijn samenvatting op."
+       },
+       {
+        "v": "Wat klopt er niet aan deze keuze?",
+        "o": [
+         "de zin is te lang en daarom ongeschikt",
+         "de zin bevat een getal en een getal kan nooit de kern zijn",
+         "de zin staat niet aan het begin van de alinea",
+         "de zin is een voorbeeld, niet de hoofdgedachte over de gevolgen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Een voorbeeld is geen kern.",
+        "uo": [
+         "Koos je \"de zin is te lang en daarom ongeschikt\"? Dan denk je dat lengte het probleem is. Het probleem is de inhoud, want de zin noemt een voorbeeld.",
+         "Koos je \"de zin bevat een getal en een getal kan nooit de...\"? Dan denk je dat getallen niet kunnen. Het getal is niet het probleem, de zin illustreert slechts.",
+         "Koos je \"de zin staat niet aan het begin van de alinea\"? Dan denk je dat de positie bepalend is. De positie is niet het probleem; het gaat om de inhoud.",
+         "Klopt: de kern gaat over de gevolgen van veel huiswerk, niet over één leerling."
+        ],
+        "uh": "Voorbeeld ≠ kern.",
+        "ctx": "Een leerling kiest als kern van een alinea over huiswerk de zin \"Een leerling uit 4 havo vertelde dat zij elke avond twee uur huiswerk heeft.\" De alinea gaat verder over de gevolgen van veel huiswerk."
+       },
+       {
+        "v": "Welke uitdrukking leidt de gevolgtrekking in?",
+        "o": [
+         "Dit project is een succes geworden",
+         "De leerlingen werkten goed samen",
+         "Het is dan ook geen wonder dat",
+         "de docenten waren tevreden"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Uitdrukkingen als \"dus\", \"dan ook\" en \"daarom\" leiden een gevolg in.",
+        "uo": [
+         "Koos je \"Dit project is een succes geworden\"? Dan denk je dat deze zin de conclusie inleidt. Hij is de stelling vooraan, de gevolgtrekking komt later.",
+         "Koos je \"De leerlingen werkten goed samen\"? Dan denk je dat dit de conclusie inleidt. Het is een reden, geen gevolgtrekking.",
+         "Klopt: deze zin trekt de conclusie uit de voorgaande zinnen.",
+         "Koos je \"de docenten waren tevreden\"? Dan denk je dat dit de conclusie inleidt. Het is nog een reden, en geen slotsom."
+        ],
+        "uh": "Gevolgtrekking herkennen.",
+        "ctx": "Alinea over een schoolproject: \"Dit project is een succes geworden. De leerlingen werkten goed samen en de docenten waren tevreden. Het is dan ook geen wonder dat andere scholen het willen overnemen.\""
+       },
+       {
+        "v": "Wat doe je met een herhaling in een alinea?",
+        "o": [
+         "je neemt hem altijd twee keer op, want de schrijver vond hem belangrijk",
+         "je maakt er een nieuwe alinea van",
+         "je neemt hem één keer op of laat hem weg",
+         "je schrijft hem in hoofdletters op"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Herhalingen laat je weg of noteer je één keer.",
+        "uo": [
+         "Koos je \"je neemt hem altijd twee keer op, want de schrijver...\"? Dan denk je dat herhaling extra gewicht geeft. Voor een samenvatting telt de inhoud een keer, dus je noteert het niet dubbel.",
+         "Koos je \"je maakt er een nieuwe alinea van\"? Dan denk je dat herhaling een nieuw deel is. Het is dezelfde inhoud, dus een nieuwe alinea is niet nodig.",
+         "Klopt: herhaling voegt niets toe en blijft buiten de samenvatting.",
+         "Koos je \"je schrijft hem in hoofdletters op\"? Dan denk je dat de vorm moet benadrukken. Een samenvatting is kort, en benadrukken helpt niet."
+        ],
+        "uh": "Herhaling = bijzaak."
+       },
+       {
+        "v": "Welke zin of uitspraak is de kern?",
+        "o": [
+         "ik ga het hebben over mijn vakantie",
+         "het weer was mooi",
+         "de mensen waren aardig",
+         "de vakantie was geweldig door het weer en de mensen"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Aankondigingen zijn aanloop, de kern komt daarna.",
+        "uo": [
+         "Koos je \"ik ga het hebben over mijn vakantie\"? Dan denk je dat een aankondiging de kern is. Het is een aanloopzin, de inhoud volgt daarna.",
+         "Koos je \"het weer was mooi\"? Dan denk je dat dit de kern is. Het is één reden, de kern is dat de vakantie geweldig was.",
+         "Koos je \"de mensen waren aardig\"? Dan denk je dat dit de kern is. Het is de andere reden, de kern combineert de uitspraak met de redenen.",
+         "Klopt: de eerste zin kondigt aan, de tweede bevat de eigenlijke kern."
+        ],
+        "uh": "Zoek de uitspraak.",
+        "ctx": "Een alinea begint met: \"Ik ga het hebben over mijn vakantie. Mijn vakantie was geweldig, want het weer was mooi en de mensen waren aardig.\""
+       },
+       {
+        "v": "Wat betekent dit?",
+        "o": [
+         "de kernen vormen de ruggengraat van de samenvatting",
+         "de samenvatting is al klaar en hoeft niet meer geschreven te worden",
+         "de tekst was erg simpel",
+         "de leerling heeft te veel genoteerd"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Samenhangende kernen vormen de basis voor je samenvatting.",
+        "uo": [
+         "Klopt: een rij samenhangende kernen is de basis voor je samenvatting.",
+         "Koos je \"de samenvatting is al klaar en hoeft niet meer...\"? Dan denk je dat de aantekeningen de samenvatting zijn. Je moet ze nog tot een tekst verwerken, in eigen woorden en samenhangend.",
+         "Koos je \"de tekst was erg simpel\"? Dan denk je dat dit iets zegt over moeilijkheid. Het zegt iets over de opbouw, namelijk dat de lijn duidelijk is.",
+         "Koos je \"de leerling heeft te veel genoteerd\"? Dan denk je dat zes kernen te veel zijn. Zes alinea's geven zes kernen, dat hoort bij de tekst."
+        ],
+        "uh": "Kernen verbinden.",
+        "ctx": "Een leerling heeft zes alinea's gelezen en noteert per alinea de kern. De zes kernen lezen als één verhaal."
+       },
+       {
+        "v": "Welke zin vat de kern het best samen?",
+        "o": [
+         "Utrecht plant een voetgangersgebied en Amsterdam haalt parkeerplaatsen weg.",
+         "Veel steden willen autoluw worden om de lucht schoner te maken.",
+         "De lucht wordt schoner.",
+         "Er zijn veel steden in Nederland."
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Een goede kern bevat wens en doel en laat voorbeelden weg.",
+        "uo": [
+         "Koos je \"Utrecht plant een voetgangersgebied en Amsterdam...\"? Dan denk je dat de twee voorbeelden de kern zijn. Ze illustreren de kern, en horen niet in de samenvatting.",
+         "Klopt: de zin bevat de wens en het doel en laat de voorbeelden over Utrecht en Amsterdam weg.",
+         "Koos je \"De lucht wordt schoner.\"? Dan denk je dat de verwachte uitkomst de kern is. De alinea gaat over wat steden willen, dus de wens ontbreekt.",
+         "Koos je \"Er zijn veel steden in Nederland.\"? Dan denk je dat dit de kern is. Het zegt niets over de wens of het doel, dus het is geen samenvatting."
+        ],
+        "uh": "Kern zonder voorbeelden.",
+        "ctx": "Alinea: \"Veel steden willen autoluw worden. Zo plant Utrecht een extra voetgangersgebied. Ook in Amsterdam worden parkeerplaatsen weggehaald. Dit alles moet de lucht schoner maken.\""
+       },
+       {
+        "v": "Wat laat je zien deze rij kernen?",
+        "o": [
+         "een willekeurige rij losse zinnen zonder verband",
+         "alleen details uit de tekst",
+         "drie voorbeelden van hetzelfde",
+         "een samenhangende lijn van probleem via gevolg naar oplossing"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Kernen vormen samen de lijn van een tekst.",
+        "uo": [
+         "Koos je \"een willekeurige rij losse zinnen zonder verband\"? Dan denk je dat de zinnen los staan. Ze vormen samen een redenering, van probleem via gevolg naar oplossing.",
+         "Koos je \"alleen details uit de tekst\"? Dan denk je dat het details zijn. Het zijn kernen van afzonderlijke alinea's, dus hoofdzaak.",
+         "Koos je \"drie voorbeelden van hetzelfde\"? Dan denk je dat het drie voorbeelden zijn. Elke zin heeft een eigen functie, en samen vormen ze de redenering.",
+         "Klopt: de kernen volgen elkaar logisch op en vormen de lijn van de tekst."
+        ],
+        "uh": "Lijn van de tekst.",
+        "ctx": "Een leerling noteert als kernen: alinea 1 \"Veel jongeren slapen te weinig\", alinea 2 \"Slaaptekort heeft gevolgen voor het geheugen\", alinea 3 \"Daarom moet school later beginnen\"."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fietsen is gezond. Het versterkt je spieren, het is goed voor je hart en je slaapt er beter van.",
+        "v": "Welke zin is de kernzin en wat zijn de andere zinnen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "\"Fietsen is gezond.\" (1 punt) De andere zinnen zijn uitwerkingen van deze kern (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Veel jongeren slapen te weinig. Zo ging Sam gisteren pas om twee uur naar bed.",
+        "v": "Welke zin is bijzaak en waarom?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De zin over Sam (1 punt), want het is een voorbeeld dat de kern illustreert en weggelaten kan worden (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een alinea eindigt met: \"Kortom: wie te weinig slaapt, presteert minder.\"",
+        "v": "Welke functie heeft het woord \"kortom\"?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het kondigt een samenvatting of conclusie aan (1 punt), dus de zin erna bevat de kern van de alinea (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een alinea noemt drie redenen waarom het schoolplein groener moet: koeler, mooier, beter voor de concentratie. Er staat geen kernzin.",
+        "v": "Formuleer zelf een kernzin.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bijvoorbeeld: \"Het schoolplein moet groener worden om drie redenen.\" (1 punt); de zin dekt de wens en de redenen zonder details (1 punt)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling noteert bij elke alinea de hele alinea.",
+        "v": "Wat gaat hier mis en wat moet hij doen?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij reduceert niet tot de kern (1 punt). Hij moet per alinea één korte zin met de kern in eigen woorden noteren (1 punt)."
+       }
+      ]
      }
     ]
    },

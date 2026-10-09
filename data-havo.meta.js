@@ -507,6 +507,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D2",
+      "lo": "nl.D.2",
+      "gs": 2,
+      "naam": "Kernzinnen en hoofdpunten per alinea vinden",
+      "beschrijving": "Je vindt per alinea de kernzin, scheidt hoofdzaak van bijzaak (voorbeelden, details, herhaling) en formuleert zelf de kern als die er niet staat.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat is een kernzin",
+       "Hoofdzaak en bijzaak",
+       "Zelf een kern formuleren",
+       "Signaalwoorden voor kern en voorbeeld",
+       "Per alinea noteren",
+       "Veelgemaakte fouten"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
