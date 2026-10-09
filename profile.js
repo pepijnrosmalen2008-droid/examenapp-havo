@@ -823,8 +823,8 @@ function openProfiel(){
     _onAuthReady(user=>{
       if(user)openProfiel();
       else _showAccountPrompt(
-        'Account nodig',
-        'Maak een gratis account aan om je profiel te zien, voortgang te synchroniseren en op het leaderboard te verschijnen.'
+        'Bewaar alles wat je doet',
+        'Met een gratis account heb je je eigen profiel en gaat je voortgang mee naar elk apparaat.'
       );
     });
     return;

@@ -12243,3 +12243,36 @@ html.dark .sbar-ring-lvl{box-shadow:0 0 0 2px #1c2030}
 #sc-schedule .sch-section .tv3-info{border-width:1px}
 #sc-schedule .sp-gen-btn,#sc-schedule .tv3-add{border-radius:14px!important;font-family:var(--font-head)!important;font-weight:800!important;box-shadow:0 4px 0 color-mix(in srgb,var(--or) 60%,#000)!important;border:0!important}
 #sc-schedule .sp-gen-btn:active,#sc-schedule .tv3-add:active{transform:translateY(3px);box-shadow:0 1px 0 color-mix(in srgb,var(--or) 60%,#000)!important}
+
+/* ═══════ ACCOUNTVRAAG (_showAccountPrompt in cloud.js) ═══════ */
+.ap-ov{position:fixed;inset:0;z-index:9300;display:flex;align-items:flex-end;justify-content:center;background:rgba(8,10,18,0);transition:background .25s ease;-webkit-backdrop-filter:blur(0);backdrop-filter:blur(0)}
+.ap-ov.open{background:rgba(8,10,18,.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.ap-kaart{width:100%;max-width:460px;background:var(--s);color:var(--dk);border-radius:28px 28px 0 0;padding:0 0 calc(18px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 40px rgba(0,0,0,.25);transform:translateY(100%);transition:transform .42s cubic-bezier(.22,1.2,.36,1);overflow:visible}
+.ap-ov.open .ap-kaart{transform:none}
+.ap-kop{position:relative;margin:0 0 4px;padding:12px 22px 20px;border-radius:28px 28px 22px 22px;color:#fff;
+  background:radial-gradient(110% 120% at 85% -20%,rgba(var(--or-rgb),.75),transparent 58%),radial-gradient(80% 90% at 0% 120%,rgba(var(--or-rgb),.28),transparent 60%),linear-gradient(160deg,#0c0d1a 0%,#0f1022 55%,#080912 100%);
+  box-shadow:0 10px 30px -14px rgba(var(--or-rgb),.6),inset 0 1px 0 rgba(255,255,255,.08)}
+.ap-grip{width:42px;height:5px;border-radius:3px;background:rgba(255,255,255,.35);margin:0 auto 12px}
+.ap-vonk{position:absolute;right:14px;top:-50px;width:96px;height:96px;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35));transform:translateY(40px) scale(.6);opacity:0;transition:transform .6s cubic-bezier(.34,1.56,.64,1) .25s,opacity .25s ease .25s}
+.ap-vonk svg{width:100%;height:100%;display:block}
+.ap-ov.open .ap-vonk{transform:none;opacity:1}
+.ap-chip{display:inline-flex;height:24px;align-items:center;padding:0 10px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);font:800 11px var(--font-head);letter-spacing:.06em;text-transform:uppercase;color:#fff}
+.ap-kop h2{margin:10px 0 4px;padding-right:86px;font:900 25px/1.1 var(--font-head);letter-spacing:-.02em;color:#fff}
+.ap-kop p{margin:0;font-size:14px;line-height:1.5;color:rgba(255,255,255,.74);max-width:36ch}
+.ap-voordelen{list-style:none;margin:14px 0 4px;padding:0 18px;display:flex;flex-direction:column;gap:8px}
+.ap-voordelen li{display:flex;align-items:center;gap:12px;padding:9px 12px 9px 9px;border-radius:16px;border:2px solid var(--bo);background:var(--s);box-shadow:0 3px 0 var(--bo2)}
+.ap-art{flex-shrink:0;width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:color-mix(in srgb,var(--t1) 11%,transparent)}
+.ap-art svg{width:32px;height:32px}
+.ap-voordelen b{display:block;font:800 14.5px/1.25 var(--font-head);color:var(--dk)}
+.ap-voordelen small{display:block;font-size:12.5px;line-height:1.35;color:var(--mu);margin-top:1px}
+.ap-knoppen{display:flex;flex-direction:column;gap:9px;padding:14px 18px 0}
+.ap-knop{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;border-radius:16px;border:0;background:var(--or);color:#fff;font:800 16px var(--font-head);cursor:pointer;box-shadow:0 4px 0 color-mix(in srgb,var(--or) 60%,#000);transition:transform .1s ease,box-shadow .1s ease}
+.ap-knop:active{transform:translateY(3px);box-shadow:0 1px 0 color-mix(in srgb,var(--or) 60%,#000)}
+.ap-knop.licht{height:48px;background:var(--s);color:var(--dk);border:2px solid var(--bo);box-shadow:0 3px 0 var(--bo2);font-size:15px}
+.ap-knop.licht:active{box-shadow:0 1px 0 var(--bo2)}
+.ap-knop:focus-visible,.ap-niet:focus-visible{outline:3px solid rgba(var(--or-rgb),.55);outline-offset:2px}
+.ap-niet{border:0;background:none;color:var(--mu);font:700 14px var(--font);padding:6px;cursor:pointer}
+@media(min-width:900px){.ap-ov{align-items:center}.ap-kaart{border-radius:28px;transform:translateY(24px) scale(.97);opacity:0;transition:transform .35s cubic-bezier(.22,1.2,.36,1),opacity .2s;padding-bottom:18px;box-shadow:0 6px 0 var(--bo2),0 30px 60px rgba(0,0,0,.3)}.ap-ov.open .ap-kaart{transform:none;opacity:1}.ap-grip{display:none}.ap-kop{padding-top:20px}}
+@media(prefers-reduced-motion:reduce){.ap-kaart,.ap-vonk{transition:none}}
+/* geen losse Vonk-wolkjes boven de accountvraag */
+body:has(.ap-ov) .vonk-egg-bubble,body:has(.ap-ov) .vonk-react{display:none!important}

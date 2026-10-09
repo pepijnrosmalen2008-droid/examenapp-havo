@@ -989,29 +989,46 @@ function doLogout(){
   });
 }
 
-// ── Account-prompt bottom sheet (herbruikbaar voor alle account-gated features) ──
+// ── Account-prompt (herbruikbaar voor alle account-gated features) ──
+// In de stijl van het menu: nachtblauwe kop met Vonk, drie voordelen met de
+// tekeningen uit _MS_ART en dikke knoppen. Kleuren via tokens, dus leesbaar
+// in licht en donker. Telefoon: blad van onderen; laptop: kaart in het midden.
 function _showAccountPrompt(title, desc, onRegister){
   if(document.getElementById('acct-prompt-sheet'))return;
+  const art=n=>(typeof _msArt==='function')?_msArt(n):'';
+  const vonk=(typeof mascotSVG==='function')?mascotSVG('blij',96):'';
   const el=document.createElement('div');
-  el.id='acct-prompt-sheet';
-  el.style.cssText='position:fixed;inset:0;z-index:9300;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.5);backdrop-filter:blur(5px);animation:_lbFdIn .22s ease';
-  el.innerHTML=`<div style="background:var(--card,#1e2130);border-radius:22px 22px 0 0;padding:28px 24px 40px;width:100%;max-width:480px;box-shadow:0 -8px 40px rgba(0,0,0,.4);animation:_lbSlUp .3s cubic-bezier(.22,1,.36,1)">
-    <div style="width:36px;height:4px;background:rgba(255,255,255,.15);border-radius:2px;margin:0 auto 20px"></div>
-    <div style="text-align:center;margin-bottom:20px">
-      <div style="font-size:30px;margin-bottom:10px">🔑</div>
-      <div style="font-size:17px;font-weight:900;color:var(--dk,#e2e8f0);margin-bottom:6px">${title}</div>
-      <div style="font-size:13px;color:var(--mu,#94a3b8);line-height:1.5">${desc}</div>
+  el.id='acct-prompt-sheet';el.className='ap-ov';
+  el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');el.setAttribute('aria-labelledby','ap-titel');
+  el.innerHTML=`<div class="ap-kaart">
+    <div class="ap-kop">
+      <div class="ap-grip" aria-hidden="true"></div>
+      <div class="ap-vonk" aria-hidden="true">${vonk}</div>
+      <div class="ap-chip">Gratis account</div>
+      <h2 id="ap-titel">${escapeHtml(title)}</h2>
+      <p>${escapeHtml(desc)}</p>
     </div>
-    <button id="acct-prompt-reg" style="display:block;width:100%;padding:14px;background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;border:none;border-radius:14px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--font);margin-bottom:10px">Account aanmaken - gratis →</button>
-    <button id="acct-prompt-login" style="display:block;width:100%;padding:12px;background:rgba(255,255,255,.07);color:var(--dk,#e2e8f0);border:none;border-radius:12px;font-size:14px;font-weight:600;cursor:pointer;font-family:var(--font);margin-bottom:8px">Al een account? Inloggen</button>
-    <button id="acct-prompt-skip" style="display:block;width:100%;padding:8px;background:none;border:none;color:var(--mu,#94a3b8);font-size:13px;cursor:pointer;font-family:var(--font)">Niet nu</button>
+    <ul class="ap-voordelen">
+      <li class="ms-g-leer"><span class="ap-art">${art('voortgang')}</span><span><b>Al je voortgang bewaard</b><small>Streak, XP, cijfers en Mijn stof op elk apparaat.</small></span></li>
+      <li class="ms-g-spel"><span class="ap-art">${art('wedstrijd')}</span><span><b>Meedoen in de wedstrijd</b><small>Topscores, je divisie en een groep met je klas.</small></span></li>
+      <li class="ms-g-plan"><span class="ap-art">${art('plan')}</span><span><b>Een plan dat meegroeit</b><small>Studieplan en herhalen op basis van wat jij doet.</small></span></li>
+    </ul>
+    <div class="ap-knoppen">
+      <button id="acct-prompt-reg" class="ap-knop">Maak een account<span aria-hidden="true">→</span></button>
+      <button id="acct-prompt-login" class="ap-knop licht">Ik heb al een account</button>
+      <button id="acct-prompt-skip" class="ap-niet">Niet nu</button>
+    </div>
   </div>`;
-  const close=()=>{el.style.animation='_lbFdIn .18s ease reverse';setTimeout(()=>el.remove(),180);};
+  const close=()=>{el.classList.remove('open');setTimeout(()=>el.remove(),260);document.removeEventListener('keydown',esc);};
+  const esc=e=>{if(e.key==='Escape')close();};
   el.addEventListener('click',e=>{if(e.target===el)close();});
+  document.addEventListener('keydown',esc);
   el.querySelector('#acct-prompt-reg').onclick=()=>{close();if(typeof onRegister==='function')onRegister();else{switchAuthTab&&switchAuthTab('register');show('sc-auth');}};
   el.querySelector('#acct-prompt-login').onclick=()=>{close();switchAuthTab&&switchAuthTab('login');show('sc-auth');};
   el.querySelector('#acct-prompt-skip').onclick=close;
   document.body.appendChild(el);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add('open')));
+  try{trackEvent('account_prompt',{titel:String(title).slice(0,40)});}catch(e){}
 }
 
 function updateCloudStatusBar(){
