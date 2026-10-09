@@ -1,0 +1,640 @@
+{
+ "id": "D1",
+ "lo": "nl.D.1",
+ "gs": 2,
+ "naam": "Een tekst globaal verkennen",
+ "beschrijving": "Je krijgt snel overzicht over een tekst via titel, kopjes, opmaak en inleiding en slot, zodat je weet waar hij over gaat, wat de schrijver wil en hoe hij is opgebouwd.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Waarom globaal lezen",
+  "Titel, kopjes en opmaak",
+  "Inleiding en slot",
+  "Onderwerp en hoofdgedachte",
+  "Opbouw van de tekst",
+  "Vragen en aanpak"
+ ],
+ "sam": "Voor je samenvat, lees je de tekst globaal: via titel, kopjes, vetgedrukte woorden en de eerste en laatste alinea bepaal je het onderwerp, de hoofdgedachte en het doel van de schrijver en zie je de opbouw (inleiding, kern, slot). Het onderwerp is waar het over gaat, de hoofdgedachte is wat de schrijver erover zegt.",
+ "begrippen": [
+  {
+   "t": "Globaal lezen",
+   "d": "Snel lezen om onderwerp, doel en opbouw te bepalen."
+  },
+  {
+   "t": "Onderwerp",
+   "d": "Waar de tekst over gaat."
+  },
+  {
+   "t": "Hoofdgedachte",
+   "d": "De uitspraak die de schrijver over het onderwerp doet."
+  },
+  {
+   "t": "Doel",
+   "d": "Wat de schrijver met de tekst wil bereiken."
+  },
+  {
+   "t": "Titel",
+   "d": "De naam van de tekst, vaak met een hint over het onderwerp."
+  },
+  {
+   "t": "Tussenkopje",
+   "d": "Een kopje boven een deel van de tekst."
+  },
+  {
+   "t": "Inleiding",
+   "d": "Het begin van een tekst, dat het onderwerp introduceert."
+  },
+  {
+   "t": "Slot",
+   "d": "Het einde van een tekst, vaak met de conclusie."
+  },
+  {
+   "t": "Kern",
+   "d": "Het middenstuk waarin de hoofdpunten worden uitgewerkt."
+  },
+  {
+   "t": "Kernwoord",
+   "d": "Een woord dat steeds terugkomt en het onderwerp aangeeft."
+  },
+  {
+   "t": "Opbouw",
+   "d": "De ordening van de delen van een tekst."
+  },
+  {
+   "t": "Deelonderwerp",
+   "d": "Een onderdeel van het hoofdonderwerp."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waarom lees je een tekst eerst globaal voordat je gaat samenvatten?",
+   "o": [
+    "omdat je dan alle details al onthoudt en niets meer hoeft te noteren",
+    "je krijgt overzicht over onderwerp, doel en opbouw",
+    "omdat de samenvatting dan meteen af is zonder nog iets op te schrijven",
+    "omdat docenten het vaak verplicht stellen bij een examentekst"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Globaal lezen geeft overzicht voordat je de kern selecteert.",
+   "uo": [
+    "Koos je \"omdat je dan alle details al onthoudt en niets meer...\"? Dan denk je dat globaal lezen details oplevert. Je leest juist snel en let niet op alles, de details komen later aan bod.",
+    "Klopt: met een eerste overzicht begrijp je daarna beter wat hoofdzaak en bijzaak is.",
+    "Koos je \"omdat de samenvatting dan meteen af is zonder nog...\"? Dan denk je dat een eerste leesronde de samenvatting vervangt. Je legt alleen de basis, en moet daarna nog kernpunten vinden en opschrijven.",
+    "Koos je \"omdat docenten het vaak verplicht stellen bij een...\"? Dan denk je dat het een vorm is. Globaal lezen helpt echt om de tekst te begrijpen, en het bespaart tijd bij het verdere werk."
+   ],
+   "uh": "Eerst overzicht."
+  },
+  {
+   "v": "Welke twee dingen wil je na het globaal lezen kunnen zeggen?",
+   "o": [
+    "hoeveel woorden de tekst heeft en hoeveel alinea's hij telt",
+    "welke woorden je niet kent en hoe je ze moet opzoeken",
+    "wie de schrijver is en wanneer hij geboren is",
+    "waar de tekst over gaat en wat de schrijver wil"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Na globaal lezen weet je het onderwerp en het doel van de schrijver.",
+   "uo": [
+    "Koos je \"hoeveel woorden de tekst heeft en hoeveel alinea's...\"? Dan denk je dat de omvang het belangrijkste is. Aantallen helpen je niet met de inhoud, je wilt weten waar het over gaat en wat de schrijver beoogt.",
+    "Koos je \"welke woorden je niet kent en hoe je ze moet...\"? Dan denk je dat onbekende woorden de kern zijn. Dat kan nuttig zijn, maar eerst wil je onderwerp en doel kennen.",
+    "Koos je \"wie de schrijver is en wanneer hij geboren is\"? Dan denk je dat de levensloop belangrijk is. Dat is hooguit bijzaak; voor een samenvatting telt wat de tekst zegt.",
+    "Klopt: onderwerp en doel (of hoofdgedachte) zijn de basis voor je samenvatting."
+   ],
+   "uh": "Onderwerp en doel."
+  },
+  {
+   "v": "Wat zegt de titel van een tekst vaak?",
+   "o": [
+    "waar de tekst over gaat",
+    "wat elke alinea precies zegt, zin voor zin",
+    "wat de conclusie van de schrijver is, altijd letterlijk",
+    "hoeveel tijd het kost om de tekst te lezen"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Een titel noemt meestal het onderwerp of hint naar de kern.",
+   "uo": [
+    "Klopt: een titel noemt meestal het onderwerp of geeft een hint over de hoofdgedachte.",
+    "Koos je \"wat elke alinea precies zegt, zin voor zin\"? Dan denk je dat een titel alles samenvat. Een titel is kort en geeft alleen een hint, de details staan in de tekst zelf.",
+    "Koos je \"wat de conclusie van de schrijver is, altijd...\"? Dan denk je dat de titel de conclusie noemt. Soms hint hij daarop, maar vaak noemt hij alleen het onderwerp.",
+    "Koos je \"hoeveel tijd het kost om de tekst te lezen\"? Dan denk je dat de titel de leestijd aangeeft. Een titel zegt iets over de inhoud, niet over de leestijd."
+   ],
+   "uh": "Titel = hint."
+  },
+  {
+   "v": "Wat leer je uit alleen deze kopjes?",
+   "o": [
+    "de volledige argumenten van de schrijver over plastic",
+    "dat de tekst een verhaal is met een spannende afloop",
+    "de opbouw: eerst uitleg, dan het probleem, daarna oplossingen",
+    "dat de schrijver tegen plastic is zonder dat dat nog verder uitleg nodig heeft"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kopjes laten de opbouw van een tekst zien.",
+   "uo": [
+    "Koos je \"de volledige argumenten van de schrijver over...\"? Dan denk je dat kopjes alle argumenten bevatten. Ze geven alleen de opbouw aan, de argumenten staan in de alinea's.",
+    "Koos je \"dat de tekst een verhaal is met een spannende afloop\"? Dan denk je dat de kopjes een verhaal aankondigen. De vragen wijzen op een informatieve tekst, niet op een spannend verhaal.",
+    "Klopt: de kopjes laten de volgorde van de tekst zien voordat je de alinea's leest.",
+    "Koos je \"dat de schrijver tegen plastic is zonder dat dat...\"? Dan denk je dat de houding vaststaat. De kopjes geven opbouw, niet de mening van de schrijver."
+   ],
+   "uh": "Kopjes = routekaart.",
+   "ctx": "Een artikel heeft de kopjes: \"Wat is plastic?\", \"Waarom is plastic een probleem?\", \"Wat kunnen we eraan doen?\""
+  },
+  {
+   "v": "Welke alinea geeft vaak aan waar de tekst over gaat en wat de schrijver wil?",
+   "o": [
+    "de voorlaatste alinea, want daar staat de belangrijkste informatie",
+    "een willekeurige alinea in het midden van de tekst",
+    "de eerste alinea",
+    "geen enkele alinea, want de schrijver noemt dit nooit"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "De eerste alinea leidt in en noemt vaak onderwerp en doel.",
+   "uo": [
+    "Koos je \"de voorlaatste alinea, want daar staat de...\"? Dan denk je dat de hoofdgedachte altijd bijna aan het einde staat. Dat kan, maar de eerste alinea geeft vaak al het overzicht, dus daar begin je.",
+    "Koos je \"een willekeurige alinea in het midden van de tekst\"? Dan denk je dat het midden de kern geeft. Het midden werkt de kern uit, maar noemt hem meestal niet.",
+    "Klopt: de inleiding noemt meestal het onderwerp en vaak de hoofdgedachte of het doel.",
+    "Koos je \"geen enkele alinea, want de schrijver noemt dit...\"? Dan denk je dat schrijvers dit verbergen. Veel schrijvers noemen het onderwerp en hun doel al aan het begin, dus het loont om te kijken."
+   ],
+   "uh": "Begin bij de inleiding."
+  },
+  {
+   "v": "Wat zegt de laatste alinea hier?",
+   "o": [
+    "de stelling en de belangrijkste reden",
+    "een volledig nieuw onderwerp dat nog niet eerder aan bod kwam",
+    "alleen een bedankje aan de lezer, zonder inhoud",
+    "een lijst met bronnen waarop de tekst is gebaseerd"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "De laatste alinea bevat vaak de conclusie of kern van de tekst.",
+   "uo": [
+    "Klopt: het slot herhaalt vaak de kern, hier de stelling met de belangrijkste reden.",
+    "Koos je \"een volledig nieuw onderwerp dat nog niet eerder...\"? Dan denk je dat het slot iets nieuws brengt. Het slot rondt af, en herhaalt meestal wat al is gezegd.",
+    "Koos je \"alleen een bedankje aan de lezer, zonder inhoud\"? Dan denk je dat het slot een afscheid is. Hier staat inhoud, namelijk de stelling en de reden.",
+    "Koos je \"een lijst met bronnen waarop de tekst is gebaseerd\"? Dan denk je dat het slot de bronnen noemt. De bronnenlijst staat apart, dit slot vat de kern samen."
+   ],
+   "uh": "Slot = kern herhaald.",
+   "ctx": "Een tekst eindigt met: \"Kortom: scholen moeten uiterlijk om negen uur beginnen, omdat jongeren dan beter leren.\""
+  },
+  {
+   "v": "Waaruit herken je het onderwerp van een tekst?",
+   "o": [
+    "uit het eerste woord van elke zin van elke alinea in de tekst",
+    "uit de lengte van de zinnen en de alinea's in de hele tekst",
+    "uit het aantal komma's per alinea en per bladzijde in de tekst",
+    "uit de woorden die steeds terugkomen, vooral in titel en kopjes"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Het onderwerp herken je aan terugkerende kernwoorden en de titel.",
+   "uo": [
+    "Koos je \"uit het eerste woord van elke zin van elke alinea...\"? Dan denk je dat het eerste woord het onderwerp aangeeft. Dat is geen betrouwbare aanwijzing, kernwoorden die terugkomen wel.",
+    "Koos je \"uit de lengte van de zinnen en de alinea's in de...\"? Dan denk je dat zinslengte iets zegt over het onderwerp. Lengte zegt iets over stijl, niet over het onderwerp.",
+    "Koos je \"uit het aantal komma's per alinea en per bladzijde...\"? Dan denk je dat leestekens het onderwerp bepalen. Ze zeggen daar niets over, de woorden zelf wel.",
+    "Klopt: terugkerende kernwoorden wijzen op het onderwerp."
+   ],
+   "uh": "Kernwoorden volgen."
+  },
+  {
+   "v": "Wat is het onderwerp en wat is de hoofdgedachte?",
+   "o": [
+    "onderwerp: slimme investering; hoofdgedachte: zonne-energie",
+    "onderwerp: zonnepanelen; hoofdgedachte: het is een slimme investering",
+    "onderwerp en hoofdgedachte zijn hetzelfde: zonnepanelen",
+    "onderwerp: subsidie; hoofdgedachte: kosten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Onderwerp is waar het over gaat; hoofdgedachte is wat de schrijver erover zegt.",
+   "uo": [
+    "Koos je \"onderwerp: slimme investering; hoofdgedachte:...\"? Dan denk je dat het onderwerp en de hoofdgedachte omgedraaid zijn. Het onderwerp is waar het over gaat (zonnepanelen), de hoofdgedachte is de bewering erover.",
+    "Klopt: het onderwerp is waar het over gaat, de hoofdgedachte is wat de schrijver erover vindt of beweert.",
+    "Koos je \"onderwerp en hoofdgedachte zijn hetzelfde:...\"? Dan denk je dat ze samenvallen. Een onderwerp is een thema, een hoofdgedachte is een uitspraak over dat thema.",
+    "Koos je \"onderwerp: subsidie; hoofdgedachte: kosten\"? Dan denk je dat deelonderwerpen de kern zijn. Subsidie en kosten zijn deelonderwerpen, het hoofdonderwerp is zonnepanelen."
+   ],
+   "uh": "Thema versus uitspraak.",
+   "ctx": "Een tekst over zonne-energie noemt op veel plaatsen zonnepanelen, kosten, terugverdientijd en subsidie. De schrijver eindigt met: \"Zonnepanelen zijn dus een slimme investering.\""
+  },
+  {
+   "v": "Welke indeling heeft een tekst vaak?",
+   "o": [
+    "alleen een kern, zonder begin of einde",
+    "drie gelijke delen van precies even veel zinnen",
+    "een titel, een tekening en een bronnenlijst",
+    "inleiding, kern en slot"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "De opbouw is meestal inleiding, kern en slot.",
+   "uo": [
+    "Koos je \"alleen een kern, zonder begin of einde\"? Dan denk je dat een tekst alleen uit de kern bestaat. De meeste teksten hebben een inleiding en een slot, die de kern omlijsten.",
+    "Koos je \"drie gelijke delen van precies even veel zinnen\"? Dan denk je dat de delen even lang zijn. De lengte verschilt per tekst, en de indeling gaat over functie, niet over lengte.",
+    "Koos je \"een titel, een tekening en een bronnenlijst\"? Dan denk je dat dit de indeling is. Dit zijn onderdelen van een publicatie, niet de opbouw van de tekst.",
+    "Klopt: veel teksten hebben een begin, een middenstuk en een einde."
+   ],
+   "uh": "Begin, midden, einde."
+  },
+  {
+   "v": "Welke opbouw herken je?",
+   "o": [
+    "alleen een oproep, want de rest is bijzaak",
+    "inleiding met een voorbeeld, kern met argumenten, slot met een oproep",
+    "inleiding met argumenten, kern met een voorbeeld, slot zonder inhoud",
+    "de tekst heeft geen opbouw en bestaat uit losse zinnen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Een tekst is opgebouwd uit delen met elk een eigen functie.",
+   "uo": [
+    "Koos je \"alleen een oproep, want de rest is bijzaak\"? Dan denk je dat de oproep het enige belangrijke is. De argumenten dragen de oproep, dus ze zijn geen bijzaak.",
+    "Klopt: elk deel heeft een eigen functie: inleiden, uitwerken en afsluiten.",
+    "Koos je \"inleiding met argumenten, kern met een voorbeeld,...\"? Dan denk je dat de volgorde omgedraaid is. Het voorbeeld staat vooraan en de oproep aan het einde; zo zit de opbouw in elkaar.",
+    "Koos je \"de tekst heeft geen opbouw en bestaat uit losse...\"? Dan denk je dat de tekst geen structuur heeft. Er is duidelijk een begin, midden en einde, dus er is wel opbouw."
+   ],
+   "uh": "Functie per deel.",
+   "ctx": "Een artikel begint met een opvallend voorbeeld, werkt in drie alinea's argumenten uit en eindigt met een oproep."
+  },
+  {
+   "v": "Welke vraag stel je het eerst aan een tekst die je gaat samenvatten?",
+   "o": [
+    "hoeveel woorden mag ik weglaten zonder dat de docent het merkt?",
+    "welke zin vind ik het mooist geschreven?",
+    "waar gaat het over en wat wil de schrijver?",
+    "wie heeft de tekst het langst gelezen?"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Begin met de vragen: waar gaat het over en wat wil de schrijver?",
+   "uo": [
+    "Koos je \"hoeveel woorden mag ik weglaten zonder dat de...\"? Dan denk je dat het om weglaten gaat. Je wilt eerst begrijpen wat de kern is, daarna bepaal je wat je weglaat.",
+    "Koos je \"welke zin vind ik het mooist geschreven?\"? Dan denk je dat schoonheid telt. Een samenvatting gaat over inhoud, niet over stijl van de schrijver.",
+    "Klopt: dit zijn de basisvragen voor onderwerp en doel.",
+    "Koos je \"wie heeft de tekst het langst gelezen?\"? Dan denk je dat het om leestijd gaat. Dat zegt niets over de inhoud, dus het is geen nuttige vraag."
+   ],
+   "uh": "Onderwerp en doel."
+  },
+  {
+   "v": "Wat mist hij?",
+   "o": [
+    "een globale leesronde om onderwerp, doel en opbouw te bepalen",
+    "een tekening of schema bij de tekst die hij zelf bedenkt voordat hij schrijft",
+    "een langere tekst om te lezen, zodat hij meer achtergrond heeft",
+    "een bronvermelding onder de samenvatting met titel en auteur van de tekst"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Lees eerst globaal voordat je schrijft.",
+   "uo": [
+    "Klopt: zonder overzicht weet hij niet wat hoofdzaak is.",
+    "Koos je \"een tekening of schema bij de tekst die hij zelf...\"? Dan denk je dat een illustratie het probleem oplost. Hij mist geen plaatje, hij mist overzicht van onderwerp en doel.",
+    "Koos je \"een langere tekst om te lezen, zodat hij meer...\"? Dan denk je dat méér lezen helpt. De bestaande tekst is genoeg; hij moet die globaal doorlopen in plaats van meer erbij te zoeken.",
+    "Koos je \"een bronvermelding onder de samenvatting met titel...\"? Dan denk je dat de bronvermelding ontbreekt. Een bron noem je achteraf, maar het eigenlijke gebrek is dat hij geen overzicht van de tekst heeft."
+   ],
+   "uh": "Eerst overzicht.",
+   "ctx": "Een leerling moet een tekst samenvatten. Hij begint meteen te schrijven na één zin gelezen te hebben."
+  },
+  {
+   "v": "Wat is hier niet efficiënt aan?",
+   "o": [
+    "hij maakt geen onderscheid tussen hoofdzaak en bijzaak",
+    "hij leest te snel, waardoor hij niets begrijpt",
+    "hij gebruikt een verkeerde kleur potlood",
+    "hij leest in plaats van te kijken naar de plaatjes"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Selectief markeren maakt de kern zichtbaar.",
+   "uo": [
+    "Klopt: door alles te onderstrepen blijft de kern onzichtbaar.",
+    "Koos je \"hij leest te snel, waardoor hij niets begrijpt\"? Dan denk je dat hij te snel leest. Hij leest juist traag en volledig, en onderscheidt de kern niet.",
+    "Koos je \"hij gebruikt een verkeerde kleur potlood\"? Dan denk je dat de kleur uitmaakt. Het gaat om wát je markeert, niet om de kleur.",
+    "Koos je \"hij leest in plaats van te kijken naar de plaatjes\"? Dan denk je dat plaatjes de oplossing zijn. De tekst bevat de kern; hij moet alleen selectief lezen."
+   ],
+   "uh": "Niet alles onderstrepen.",
+   "ctx": "Een leerling leest een artikel van tien alinea's woord voor woord en onderstreept bijna alles."
+  },
+  {
+   "v": "Wat leren de vetgedrukte woorden je?",
+   "o": [
+    "ze zijn alleen versiering en zeggen niets over de inhoud",
+    "ze zijn het enige dat in de samenvatting moet komen",
+    "het zijn waarschijnlijk kernbegrippen van de tekst",
+    "ze zijn de fouten in de spelling"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Vetgedrukte woorden wijzen vaak op kernbegrippen.",
+   "uo": [
+    "Koos je \"ze zijn alleen versiering en zeggen niets over de...\"? Dan denk je dat opmaak geen betekenis heeft. Vet drukt vaak kernbegrippen uit, dus je let erop.",
+    "Koos je \"ze zijn het enige dat in de samenvatting moet komen\"? Dan denk je dat vetgedrukte woorden de samenvatting zijn. Ze helpen je bij het zoeken naar de kern, maar zijn geen samenvatting.",
+    "Klopt: vetgedrukte woorden zijn vaak belangrijke begrippen.",
+    "Koos je \"ze zijn de fouten in de spelling\"? Dan denk je dat vet fouten aangeeft. Vet is bedoeld om aandacht te vestigen op begrippen, niet om fouten te markeren."
+   ],
+   "uh": "Vet = belangrijk.",
+   "ctx": "Bij een tekst staan in vet gedrukt: \"plasticsoep\", \"microplastics\" en \"statiegeld\"."
+  },
+  {
+   "v": "Wat leidt de eerste alinea in en welke kern geeft de laatste?",
+   "o": [
+    "de eerste alinea geeft al de conclusie en de laatste herhaalt alleen de vraag",
+    "de eerste alinea leidt het onderwerp in en stelt een vraag; de laatste geeft een voorwaardelijke conclusie",
+    "beide alinea's noemen dezelfde bewering zonder verschil",
+    "de eerste alinea noemt de bronnen en de laatste een nieuw onderwerp"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "De inleiding stelt vaak de vraag; het slot geeft het antwoord.",
+   "uo": [
+    "Koos je \"de eerste alinea geeft al de conclusie en de...\"? Dan denk je dat de volgorde omgedraaid is. De vraag staat vooraan en het antwoord achteraan, dus de eerste alinea geeft de conclusie niet.",
+    "Klopt: de vraag aan het begin wordt aan het eind beantwoord met een voorwaarde.",
+    "Koos je \"beide alinea's noemen dezelfde bewering zonder...\"? Dan denk je dat de twee gelijk zijn. De eerste stelt een vraag, de tweede beantwoordt hem met een voorwaarde.",
+    "Koos je \"de eerste alinea noemt de bronnen en de laatste een...\"? Dan denk je dat bronnen en een nieuw onderwerp erin staan. Geen van beide staat in de fragmenten, de alinea's gaan over het bijbaantje."
+   ],
+   "uh": "Vraag en antwoord.",
+   "ctx": "Een tekst begint met \"Veel jongeren hebben een bijbaantje. Maar is dat wel verstandig?\" en eindigt met \"Een bijbaantje is dus alleen verstandig als je schoolresultaten niet lijden.\""
+  },
+  {
+   "v": "Wat is het hoofdonderwerp en wat is de hoofdgedachte?",
+   "o": [
+    "hoofdonderwerp: de geschiedenis; hoofdgedachte: de soorten fietsen",
+    "hoofdonderwerp en hoofdgedachte zijn allebei \"de fiets\"",
+    "hoofdonderwerp: onderhoud; hoofdgedachte: de geschiedenis",
+    "hoofdonderwerp: de fiets; hoofdgedachte: onderhoud verlengt het plezier"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Het hoofdonderwerp is het thema; de hoofdgedachte is de uitspraak.",
+   "uo": [
+    "Koos je \"hoofdonderwerp: de geschiedenis; hoofdgedachte: de...\"? Dan denk je dat een deelonderwerp het hoofdonderwerp is. De geschiedenis is een onderdeel, het hoofdonderwerp is de fiets als geheel.",
+    "Koos je \"hoofdonderwerp en hoofdgedachte zijn allebei de...\"? Dan denk je dat ze gelijk zijn. De hoofdgedachte is een uitspraak, het onderwerp een thema.",
+    "Koos je \"hoofdonderwerp: onderhoud; hoofdgedachte: de...\"? Dan denk je dat het omgedraaid is. Onderhoud is een deelonderwerp dat de hoofdgedachte draagt, het hoofdonderwerp is breder.",
+    "Klopt: de fiets is het thema, de uitspraak in het slot is de hoofdgedachte."
+   ],
+   "uh": "Thema en uitspraak.",
+   "ctx": "Een tekst gaat uitgebreid over de geschiedenis van de fiets, de soorten fietsen en fietsonderhoud. Op het eind staat: \"Wie regelmatig onderhoud pleegt, heeft langer plezier van zijn fiets.\""
+  },
+  {
+   "v": "Waar zoek je de kern van de tekst?",
+   "o": [
+    "alleen in alinea 3, want die staat in het midden",
+    "vooral in alinea 1 en 6, aangevuld met de kernzinnen van 2 t/m 5",
+    "in elke zin van alle alinea's even sterk",
+    "nergens, want alle alinea's zijn bijzaak"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "De kern vind je in inleiding, slot en de kernzinnen van de alinea's.",
+   "uo": [
+    "Koos je \"alleen in alinea 3, want die staat in het midden\"? Dan denk je dat het midden de kern is. Het midden is één argument, de kern is breder.",
+    "Klopt: inleiding en slot geven de lijn, de kernzinnen geven de argumenten.",
+    "Koos je \"in elke zin van alle alinea's even sterk\"? Dan denk je dat alles even belangrijk is. Dan blijft de kern onzichtbaar, en maak je niet echt een samenvatting.",
+    "Koos je \"nergens, want alle alinea's zijn bijzaak\"? Dan denk je dat niets de kern is. Zonder kern is er geen tekst, dus je zoekt eerst waar hij staat."
+   ],
+   "uh": "Kern in opbouw.",
+   "ctx": "Een tekst bestaat uit zes alinea's. Alinea 1 introduceert het onderwerp, 2 t/m 5 geven elk een argument en alinea 6 trekt de conclusie."
+  },
+  {
+   "v": "Waarom is dit een zwakke start?",
+   "o": [
+    "het zegt niets over onderwerp of doel, want hij heeft geen overzicht",
+    "de zin is te lang voor een eerste zin van een samenvatting in eigen woorden",
+    "de zin bevat een werkwoord, wat in een samenvatting van een tekst niet mag",
+    "de zin begint met het woord \"in\", wat aan het begin van een zin niet mag"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Een samenvatting begint met onderwerp en hoofdgedachte.",
+   "uo": [
+    "Klopt: een goede start noemt onderwerp en hoofdgedachte, en die vind je door eerst globaal te lezen.",
+    "Koos je \"de zin is te lang voor een eerste zin van een...\"? Dan denk je dat de lengte het probleem is. De zin is juist kort; het probleem is dat hij niets zegt.",
+    "Koos je \"de zin bevat een werkwoord, wat in een samenvatting...\"? Dan denk je dat een werkwoord fout is. Dat is gewoon nodig; het probleem is de inhoud.",
+    "Koos je \"de zin begint met het woord in, wat aan het begin...\"? Dan denk je dat het beginwoord fout is. Het woord is niet het probleem; de zin is inhoudelijk leeg."
+   ],
+   "uh": "Niet vaag beginnen.",
+   "ctx": "Een leerling begint een samenvatting met: \"In de tekst staat veel.\" Hij heeft de tekst niet globaal gelezen."
+  },
+  {
+   "v": "Welk onderdeel van een tekst valt vaak het eerst op en helpt je bij het globaal lezen?",
+   "o": [
+    "de voetnoten onderaan elke pagina",
+    "de laatste zin van elke alinea afzonderlijk",
+    "de bladzijdenummers",
+    "de tussenkopjes"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Tussenkopjes geven snel overzicht van een tekst.",
+   "uo": [
+    "Koos je \"de voetnoten onderaan elke pagina\"? Dan denk je dat voetnoten de opbouw geven. Ze geven bijzaken of bronnen, niet het overzicht.",
+    "Koos je \"de laatste zin van elke alinea afzonderlijk\"? Dan denk je dat dit het eerst opvalt. Dat is werk voor later; kopjes bieden meteen overzicht.",
+    "Koos je \"de bladzijdenummers\"? Dan denk je dat nummers helpen. Ze zeggen niets over inhoud, dus ze helpen niet bij het globaal lezen.",
+    "Klopt: tussenkopjes tonen de onderdelen van de tekst in één oogopslag."
+   ],
+   "uh": "Kopjes eerst bekijken."
+  },
+  {
+   "v": "Hoe verken je deze tekst efficiënt?",
+   "o": [
+    "elke alinea woord voor woord lezen en aantekeningen maken",
+    "alleen de eerste zin van de tekst lezen",
+    "titel, kopjes, vetgedrukte woorden en eerste en laatste alinea doorlopen",
+    "de tekst op de kop lezen om te kijken hoe hij is opgebouwd"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Verken een tekst via titel, kopjes, opmaak en inleiding en slot.",
+   "uo": [
+    "Koos je \"elke alinea woord voor woord lezen en aantekeningen...\"? Dan denk je dat dit globaal lezen is. Dat is juist grondig lezen, en kost veel tijd.",
+    "Koos je \"alleen de eerste zin van de tekst lezen\"? Dan denk je dat dat genoeg is. Eén zin geeft te weinig overzicht, dus je mist de opbouw en de kern.",
+    "Klopt: zo haal je in korte tijd de opbouw en de kern naar boven.",
+    "Koos je \"de tekst op de kop lezen om te kijken hoe hij is...\"? Dan denk je dat dat helpt. Dat is geen nuttige techniek; titel en kopjes geven al de opbouw."
+   ],
+   "uh": "Slim verkennen.",
+   "ctx": "Een tekst is opgebouwd uit kopjes, vetgedrukte woorden en korte alinea's."
+  },
+  {
+   "v": "Wat verschilt in het doel van de teksten?",
+   "o": [
+    "A overtuigt, B informeert",
+    "beide informeren, want het gaat over dezelfde oorlog",
+    "A informeert, B wil overtuigen",
+    "beide overtuigen, want elke tekst wil de lezer iets laten geloven"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Hetzelfde onderwerp kan verschillende doelen hebben.",
+   "uo": [
+    "Koos je \"A overtuigt, B informeert\"? Dan denk je dat het omgedraaid is. A legt uit, B betoogt, dus B overtuigt.",
+    "Koos je \"beide informeren, want het gaat over dezelfde oorlog\"? Dan denk je dat het onderwerp het doel bepaalt. Het doel hangt af van wat de schrijver wil, en B betoogt een stelling.",
+    "Klopt: A geeft informatie, B verdedigt een stelling.",
+    "Koos je \"beide overtuigen, want elke tekst wil de lezer iets...\"? Dan denk je dat elke tekst overtuigt. Een uiteenzetting wil informeren, alleen een betoog overtuigt."
+   ],
+   "uh": "Doel per tekst.",
+   "ctx": "Twee teksten gaan over hetzelfde onderwerp: de Eerste Wereldoorlog. Tekst A legt uit hoe het is begonnen, tekst B betoogt dat de oorlog te voorkomen was."
+  },
+  {
+   "v": "Hoe verdeelt hij zijn tijd het best?",
+   "o": [
+    "alles in één keer woord voor woord lezen en dan meteen schrijven",
+    "de eerste alinea samenvatten en de rest laten liggen",
+    "direct schrijven en achteraf lezen wat er stond",
+    "eerst enkele minuten globaal lezen, dan de kern noteren, dan schrijven en controleren"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Verdeel je tijd over verkennen, kern noteren, schrijven en controleren.",
+   "uo": [
+    "Koos je \"alles in één keer woord voor woord lezen en dan...\"? Dan denk je dat grondig lezen genoeg is. Zonder overzicht verlies je de kern, en je hebt geen tijd om te controleren.",
+    "Koos je \"de eerste alinea samenvatten en de rest laten liggen\"? Dan denk je dat één alinea genoeg is. De samenvatting moet de hele tekst dekken, dus alleen de eerste alinea is te weinig.",
+    "Koos je \"direct schrijven en achteraf lezen wat er stond\"? Dan denk je dat schrijven vooraf kan. Je moet eerst weten wat de kern is, anders schrijf je het verkeerde op.",
+    "Klopt: overzicht, kernpunten, schrijven en controle in die volgorde geeft de beste samenvatting."
+   ],
+   "uh": "Plan je tijd.",
+   "ctx": "Een leerling heeft twintig minuten voor een tekst van vier pagina's en moet een samenvatting schrijven."
+  },
+  {
+   "v": "Welke beschrijving van de opbouw klopt?",
+   "o": [
+    "achtergrond, dan probleem, dan oplossing",
+    "oplossing, probleem, achtergrond, omdat de oplossing het belangrijkst is en dus vooraan hoort",
+    "probleem, achtergrond, oplossing, omdat het probleem het eerst genoemd wordt",
+    "achtergrond, oplossing, probleem, omdat een oplossing nooit na een probleem kan komen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Benoem de delen van een tekst in de volgorde waarin ze staan.",
+   "uo": [
+    "Klopt: de delen volgen elkaar in de volgorde waarin de tekst ze behandelt, en die volgorde bepaalt de lijn van je samenvatting.",
+    "Koos je \"oplossing, probleem, achtergrond, omdat de...\"? Dan denk je dat het belangrijkste vooraan staat. Je beschrijft de opbouw zoals de tekst haar bevat, niet op belang; hier staat de oplossing juist aan het eind.",
+    "Koos je \"probleem, achtergrond, oplossing, omdat het...\"? Dan denk je dat het probleem de opening is. De tekst begint met drie alinea's achtergrond, pas daarna komt het probleem.",
+    "Koos je \"achtergrond, oplossing, probleem, omdat een...\"? Dan denk je dat een oplossing vóór het probleem komt. In deze tekst volgt de oplossing op het probleem, want eerst wordt het probleem uitgewerkt."
+   ],
+   "uh": "Volgorde tonen.",
+   "ctx": "Een tekst begint met drie alinea's achtergrond, gaat dan twee alinea's over het probleem en eindigt met één alinea met de oplossing."
+  },
+  {
+   "v": "Wat is hier de hoofdgedachte?",
+   "o": [
+    "vroeg opstaan is voor iedereen gezond, zoals veel mensen denken",
+    "vroeg opstaan is maar gedeeltelijk gezond",
+    "veel mensen denken iets over gezondheid, zonder dat het onderwerp wordt genoemd",
+    "er zijn drie alinea's met voor- en nadelen in de tekst"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "De hoofdgedachte is de uitspraak die de schrijver over het onderwerp doet.",
+   "uo": [
+    "Koos je \"vroeg opstaan is voor iedereen gezond, zoals veel...\"? Dan denk je dat de schrijver de gangbare opvatting overneemt. Hij zegt juist dat die maar deels klopt, dus dit is niet zijn hoofdgedachte.",
+    "Klopt: de schrijver zegt dat de gangbare opvatting maar deels klopt; dat is de uitspraak over het onderwerp.",
+    "Koos je \"veel mensen denken iets over gezondheid, zonder dat...\"? Dan denk je dat de eerste zin de kern is. Die zin schetst alleen een algemene opvatting, de eigen uitspraak van de schrijver volgt in de tweede zin.",
+    "Koos je \"er zijn drie alinea's met voor- en nadelen in de...\"? Dan denk je dat de opbouw de hoofdgedachte is. De alinea's werken de uitspraak uit, maar zijn zelf niet de kern."
+   ],
+   "uh": "Uitspraak, niet thema.",
+   "ctx": "Een tekst begint: \"Veel mensen denken dat vroeg opstaan gezond is. Dat klopt maar gedeeltelijk.\" Daarna volgen drie alinea's met voor- en nadelen."
+  },
+  {
+   "v": "Wat zegt de eerste zin je als je globaal leest?",
+   "o": [
+    "alleen de titel van het artikel",
+    "dat de schrijver het oneens is met anderen over insecten",
+    "hoeveel alinea's het artikel telt en hoe lang elke alinea is",
+    "het onderwerp (insecten als eiwitbron) en het doel (uitleggen)"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "De inleiding noemt vaak onderwerp en doel.",
+   "uo": [
+    "Koos je \"alleen de titel van het artikel\"? Dan denk je dat de zin alleen de titel noemt. Hij zegt meer, namelijk onderwerp en doel van de schrijver.",
+    "Koos je \"dat de schrijver het oneens is met anderen over...\"? Dan denk je dat de tekst een betoog is. De zin kondigt een uitleg aan, er staat geen tegenstelling in.",
+    "Koos je \"hoeveel alinea's het artikel telt en hoe lang elke...\"? Dan denk je dat de zin de omvang noemt. Hij noemt geen aantallen, maar wel onderwerp en doel.",
+    "Klopt: de inleiding geeft onderwerp en doel direct aan."
+   ],
+   "uh": "Inleiding lezen.",
+   "ctx": "Een tekst begint met de zin: \"In dit artikel leg ik uit waarom insecten een goede eiwitbron zijn.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling begint meteen te schrijven na één zin gelezen te hebben.",
+   "v": "Wat mist hij en waarom is dat belangrijk?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij mist een globale leesronde (1 punt). Zonder overzicht van onderwerp, doel en opbouw weet hij niet wat hoofdzaak is (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tekst over zonne-energie noemt vaak zonnepanelen, kosten en subsidie. Het slot zegt: \"Zonnepanelen zijn dus een slimme investering.\"",
+   "v": "Geef het onderwerp en de hoofdgedachte.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Onderwerp: zonnepanelen (1 punt). Hoofdgedachte: zonnepanelen zijn een slimme investering (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een artikel heeft de kopjes \"Wat is plastic?\", \"Waarom is plastic een probleem?\" en \"Wat kunnen we eraan doen?\"",
+   "v": "Wat leer je uit alleen de kopjes?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De opbouw: eerst uitleg, dan het probleem, daarna oplossingen (1 punt). De kopjes werken als routekaart voor het globaal lezen (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een tekst begint met \"Veel jongeren hebben een bijbaantje. Maar is dat wel verstandig?\" en eindigt met \"Een bijbaantje is dus alleen verstandig als je schoolresultaten niet lijden.\"",
+   "v": "Welke functie hebben de eerste en de laatste alinea?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De eerste alinea leidt het onderwerp in en stelt de vraag (1 punt), de laatste geeft het antwoord als conclusie (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling heeft twintig minuten voor een tekst van vier pagina's.",
+   "v": "Hoe verdeelt hij zijn tijd het best?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Eerst enkele minuten globaal lezen (1 punt), dan de kern noteren, schrijven en controleren (1 punt)."
+  }
+ ]
+}

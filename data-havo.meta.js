@@ -484,7 +484,31 @@ var VAKKEN = [
     "nSv": 95,
     "nOe": 3,
     "nBeg": 18,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "nl.D.1",
+      "gs": 2,
+      "naam": "Een tekst globaal verkennen",
+      "beschrijving": "Je krijgt snel overzicht over een tekst via titel, kopjes, opmaak en inleiding en slot, zodat je weet waar hij over gaat, wat de schrijver wil en hoe hij is opgebouwd.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Waarom globaal lezen",
+       "Titel, kopjes en opmaak",
+       "Inleiding en slot",
+       "Onderwerp en hoofdgedachte",
+       "Opbouw van de tekst",
+       "Vragen en aanpak"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "E",

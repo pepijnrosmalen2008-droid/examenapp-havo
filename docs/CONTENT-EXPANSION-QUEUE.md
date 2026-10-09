@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **19 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6). Werk dit getal bij bij elke afronding.
+> Voortgang: **20 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -52,6 +52,12 @@
   - [x] C5 · nl.C.5 Schrijftaal, stijl en correctheid · 26 vragen (R1-R3), 12 begrippen, 3 schema's (spreek- tegenover schrijftaal, formele brief, werkwoordspelling), geen clip
   - [x] C6 · nl.C.6 Een tekst reviseren op commentaar · 26 vragen (R1-R3), 12 begrippen, 3 schema's (soorten commentaar, volgorde van revisie, afwegen), geen clip
 - [ ] **HAVO · Nederlands** (`nl`) · domein D — Samenvatten
+  - [x] D1 · nl.D.1 Een tekst globaal verkennen · 25 vragen (R1-R3), 12 begrippen, 3 schema's (wegwijzers, onderwerp en hoofdgedachte, aanpak), geen clip
+  - [ ] D2 · nl.D.2 Kernzinnen en hoofdpunten per alinea vinden
+  - [ ] D3 · nl.D.3 Verbanden en signaalwoorden gebruiken bij samenvatten
+  - [ ] D4 · nl.D.4 Beknopt schrijven in eigen woorden
+  - [ ] D5 · nl.D.5 Een samenvatting controleren op volledigheid en samenhang
+  - [ ] D6 · nl.D.6 Een betogende en een informatieve tekst samenvatten
 - [ ] **HAVO · Nederlands** (`nl`) · domein E — Argumentatieve vaardigheden
 - [ ] **HAVO · Nederlands** (`nl`) · domein F — Literatuur
 - [ ] **VWO · Nederlands** (`nl`) · domein A — Leesvaardigheid

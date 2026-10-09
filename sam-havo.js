@@ -2147,5 +2147,47 @@ Object.assign(SAM_RICH,{
 <rect x="166" y="88" width="150" height="48" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="174" y="108" font-size="12" font-weight="700" fill="var(--mu)">Nee: afwijzen</text><text x="174" y="124" font-size="11" fill="var(--mu)">met een reden</text>
 <text x="12" y="162" font-size="11" fill="var(--mu)">Onduidelijk? Vraag door voordat je beslist.</text></g></svg><div class="sam-figcap">Commentaar afwegen: past het bij de opdracht, dan pas je aan en controleer je; zo niet, dan wijs je het met een reden af. Is het onduidelijk, vraag dan door.</div></div>
 <div class="sam-tip"><strong>Tip:</strong> houd een lijstje bij met de opmerkingen en zet er per opmerking bij wat je deed: aangepast, afgewezen met reden of doorgevraagd. Zo mis je niets en kun je je keuzes uitleggen.</div>
+</div>`,
+'havo_nl_D1':`<div class="sam-intro">Wie een tekst gaat samenvatten, begint niet te schrijven maar te <strong>verkennen</strong>. Bij <strong>globaal lezen</strong> kijk je naar <strong>titel</strong>, <strong>kopjes</strong>, opmaak, <strong>inleiding</strong> en <strong>slot</strong> en weet je in korte tijd waar de tekst over gaat, wat de schrijver wil en hoe hij is opgebouwd.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Globaal lezen</td><td>Snel overzicht krijgen.</td></tr>
+<tr><td>Onderwerp</td><td>Waar de tekst over gaat.</td></tr>
+<tr><td>Hoofdgedachte</td><td>Wat de schrijver erover zegt.</td></tr>
+<tr><td>Doel</td><td>Wat de schrijver wil bereiken.</td></tr>
+<tr><td>Titel, tussenkopje</td><td>Wegwijzers naar de inhoud.</td></tr>
+<tr><td>Inleiding, kern, slot</td><td>De drie delen van de tekst.</td></tr>
+<tr><td>Kernwoord</td><td>Een woord dat steeds terugkomt.</td></tr>
+<tr><td>Deelonderwerp</td><td>Een onderdeel van het onderwerp.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Wegwijzers: titel, kopjes en opmaak</div>
+<p>Begin bij de <strong>titel</strong>: die noemt meestal het onderwerp of geeft een hint. De <strong>tussenkopjes</strong> laten de opbouw zien: bij "Wat is plastic?", "Waarom is plastic een probleem?" en "Wat kunnen we eraan doen?" weet je al dat eerst wordt uitgelegd, dan het probleem komt en daarna de oplossingen. Vetgedrukte woorden zijn vaak kernbegrippen en <strong>kernwoorden</strong> die steeds terugkomen wijzen op het onderwerp. Je leest dus niet alles, maar je kijkt waar de tekst je zelf de weg wijst.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Wegwijzers in een tekst: titel, tussenkopjes, vetgedrukte woorden, eerste en laatste alinea"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--or)"/><text x="12" y="27" font-size="12" font-weight="700" fill="#fff">Titel: het onderwerp of een hint</text>
+<rect x="4" y="46" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="63" font-size="12" font-weight="700" fill="var(--dk)">Tussenkopjes</text><text x="12" y="79" font-size="11" fill="var(--dk)">laten de opbouw zien</text>
+<rect x="4" y="92" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="109" font-size="12" font-weight="700" fill="var(--dk)">Vetgedrukte woorden</text><text x="12" y="125" font-size="11" fill="var(--dk)">wijzen op kernbegrippen</text>
+<rect x="4" y="138" width="312" height="46" rx="6" fill="var(--or)"/><text x="12" y="157" font-size="12" font-weight="700" fill="#fff">Eerste en laatste alinea</text><text x="12" y="174" font-size="11" fill="#fff">onderwerp, doel en conclusie</text></g></svg><div class="sam-figcap">Vier wegwijzers voor globaal lezen: titel, tussenkopjes, vetgedrukte woorden en de eerste en laatste alinea.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> globaal lezen betekent selectief kijken, niet alles woord voor woord lezen.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Onderwerp en hoofdgedachte</div>
+<p>Het <strong>onderwerp</strong> is waar de tekst over gaat, bijvoorbeeld "zonnepanelen". De <strong>hoofdgedachte</strong> is wat de schrijver erover zegt, bijvoorbeeld "zonnepanelen zijn een slimme investering". Een onderwerp is dus een thema, een hoofdgedachte een uitspraak. Delen als kosten en subsidie zijn <strong>deelonderwerpen</strong>. Het <strong>doel</strong> van de schrijver (informeren of overtuigen) bepaalt hoe je de hoofdgedachte leest: een uiteenzetting legt uit, een betoog verdedigt een stelling. De inleiding noemt vaak het onderwerp en het <strong>slot</strong> de conclusie.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Onderwerp en hoofdgedachte met een voorbeeld over zonnepanelen en de deelonderwerpen"><g font-family="inherit"><rect x="4" y="4" width="312" height="48" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Onderwerp: zonnepanelen</text><text x="12" y="40" font-size="11" fill="var(--dk)">Deelonderwerpen: kosten, subsidie</text>
+<path d="M160 52 V62" stroke="var(--or)" stroke-width="2.5"/><path d="M153 60 L160 68 L167 60 Z" fill="var(--or)"/>
+<rect x="4" y="72" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="92" font-size="12" font-weight="700" fill="#fff">Hoofdgedachte</text><text x="12" y="110" font-size="11" fill="#fff">"Zonnepanelen zijn een slimme investering."</text>
+<rect x="4" y="130" width="312" height="34" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="152" font-size="11" fill="var(--mu)">Onderwerp = thema, hoofdgedachte = uitspraak</text></g></svg><div class="sam-figcap">Het onderwerp is het thema; de hoofdgedachte is wat de schrijver erover zegt. Deelonderwerpen zijn onderdelen van het onderwerp.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Opbouw en aanpak</div>
+<p>De <strong>opbouw</strong> van veel teksten is <strong>inleiding</strong>, <strong>kern</strong> en slot. In de inleiding staat het onderwerp, in de kern de uitwerking in argumenten of onderdelen, in het slot de conclusie. Bij een tekst met achtergrond, probleem en oplossing benoem je de delen in die volgorde. Stel jezelf drie vragen: waar gaat het over, wat wil de schrijver en hoe is de tekst opgebouwd? Verdeel je tijd: eerst enkele minuten verkennen, dan de kern noteren, dan schrijven en controleren.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Aanpak bij een samenvatting: eerst globaal lezen, dan kern noteren, dan schrijven, dan controleren"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--or)"/><text x="12" y="27" font-size="12" font-weight="700" fill="#fff">1  Globaal lezen: onderwerp, doel, opbouw</text>
+<path d="M160 40 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Kern noteren</text>
+<path d="M160 82 V88" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">3  Samenvatting schrijven</text>
+<path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="130" width="312" height="40" rx="6" fill="var(--or)"/><text x="12" y="155" font-size="12" font-weight="700" fill="#fff">4  Controleren</text></g></svg><div class="sam-figcap">De aanpak voor een samenvatting: eerst globaal lezen, dan de kern noteren, dan schrijven en tot slot controleren.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> schrijf na het globaal lezen in één zin het onderwerp en in één zin de hoofdgedachte op. Kun je dat niet, lees dan de inleiding en het slot nog eens.</div>
 </div>`
 });
