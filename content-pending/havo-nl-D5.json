@@ -1,0 +1,644 @@
+{
+ "id": "D5",
+ "lo": "nl.D.5",
+ "gs": 2,
+ "naam": "Een samenvatting controleren op volledigheid en samenhang",
+ "beschrijving": "Je beoordeelt een samenvatting op volledigheid, juistheid, beknoptheid, samenhang en objectiviteit en verbetert wat ontbreekt of niet klopt.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Criteria voor een goede samenvatting",
+  "Volledigheid",
+  "Juistheid",
+  "Beknoptheid en limiet",
+  "Samenhang",
+  "Objectiviteit"
+ ],
+ "sam": "Een goede samenvatting is volledig (alle hoofdpunten), juist (geen fouten, geen omgedraaide verbanden, geen verzonnen informatie), beknopt (binnen de limiet, zonder voorbeelden en herhaling), samenhangend (verbanden tussen de zinnen) en objectief (geen eigen mening). Controleer in die volgorde: eerst de inhoud, daarna de vorm. Vergelijk je samenvatting met de hoofdpunten die je in de tekst hebt gemarkeerd.",
+ "begrippen": [
+  {
+   "t": "Volledigheid",
+   "d": "Alle hoofdpunten van de tekst staan in de samenvatting."
+  },
+  {
+   "t": "Juistheid",
+   "d": "De samenvatting geeft de inhoud en de verbanden correct weer."
+  },
+  {
+   "t": "Beknoptheid",
+   "d": "De samenvatting is kort en zonder bijzaken."
+  },
+  {
+   "t": "Samenhang",
+   "d": "De zinnen sluiten logisch op elkaar aan."
+  },
+  {
+   "t": "Objectiviteit",
+   "d": "De samenvatting bevat geen eigen mening of oordeel."
+  },
+  {
+   "t": "Hoofdpunt",
+   "d": "Een punt dat in de samenvatting moet staan."
+  },
+  {
+   "t": "Toevoeging",
+   "d": "Informatie die niet in de tekst staat."
+  },
+  {
+   "t": "Herhaling",
+   "d": "Iets wat al gezegd is."
+  },
+  {
+   "t": "Woordenlimiet",
+   "d": "Het maximum aantal woorden."
+  },
+  {
+   "t": "Verband",
+   "d": "De relatie tussen zinnen of tekstdelen."
+  },
+  {
+   "t": "Oordeel",
+   "d": "Een eigen mening over de tekst of de inhoud."
+  },
+  {
+   "t": "Controlelijst",
+   "d": "Een rij punten die je afloopt bij het nakijken."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke eigenschappen moet een goede samenvatting hebben?",
+   "o": [
+    "uitgebreid, grappig en persoonlijk",
+    "volledig, beknopt en juist",
+    "zo lang mogelijk en vol voorbeelden uit de tekst",
+    "kort, maar vol met eigen meningen over de tekst"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Een goede samenvatting is volledig, beknopt en juist.",
+   "uo": [
+    "Koos je \"uitgebreid, grappig en persoonlijk\"? Dan denk je dat een samenvatting boeiend moet zijn. Een samenvatting is zakelijk en kort, met alleen de inhoud van de tekst.",
+    "Klopt: alle hoofdpunten, zonder bijzaken en zonder fouten of toevoegingen.",
+    "Koos je \"zo lang mogelijk en vol voorbeelden uit de tekst\"? Dan denk je dat lang beter is. Een samenvatting is juist beknopt, en voorbeelden laat je weg.",
+    "Koos je \"kort, maar vol met eigen meningen over de tekst\"? Dan denk je dat een mening erbij hoort. Een samenvatting geeft alleen de inhoud weer, objectief en zonder oordeel."
+   ],
+   "uh": "Volledig, beknopt, juist."
+  },
+  {
+   "v": "Wat controleer je als eerste bij een samenvatting?",
+   "o": [
+    "of de samenvatting mooi geschreven is",
+    "of de samenvatting zo lang is als de tekst",
+    "of de samenvatting de woorden van de schrijver gebruikt",
+    "of alle hoofdpunten van de tekst erin staan"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Controleer eerst of alle hoofdpunten erin staan.",
+   "uo": [
+    "Koos je \"of de samenvatting mooi geschreven is\"? Dan denk je dat schoonheid het belangrijkste is. Eerst gaat het om de inhoud, daarna om de verzorging.",
+    "Koos je \"of de samenvatting zo lang is als de tekst\"? Dan denk je dat lengte het doel is. Een samenvatting is korter, en gaat om de hoofdpunten.",
+    "Koos je \"of de samenvatting de woorden van de schrijver...\"? Dan denk je dat letterlijk overnemen wordt gevraagd. Eigen woorden zijn juist de bedoeling, je controleert eerst de inhoud.",
+    "Klopt: een samenvatting zonder een hoofdpunt is onvolledig."
+   ],
+   "uh": "Hoofdpunten eerst."
+  },
+  {
+   "v": "Welk hoofdpunt ontbreekt in deze samenvatting?",
+   "o": [
+    "het kluisje tot de pauze",
+    "een voorbeeld van een ouder",
+    "de reden waarom docenten voor het verbod zijn",
+    "de mening van de samenvatter over het verbod"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Controleer of elk hoofdpunt (ook de oplossing) in de samenvatting staat.",
+   "uo": [
+    "Klopt: de oplossing die de scholen zoeken is een hoofdpunt dat in deze samenvatting ontbreekt.",
+    "Koos je \"een voorbeeld van een ouder\"? Dan denk je dat een voorbeeld ontbreekt. Voorbeelden laat je juist weg, het ontbrekende is het compromis.",
+    "Koos je \"de reden waarom docenten voor het verbod zijn\"? Dan denk je dat de reden van de docenten ontbreekt. Die staat er wel (\"beter opletten\"), het compromis ontbreekt.",
+    "Koos je \"de mening van de samenvatter over het verbod\"? Dan denk je dat een mening ontbreekt. Een mening hoort er niet in, het compromis ontbreekt."
+   ],
+   "uh": "Oplossing ook.",
+   "ctx": "Tekst: \"Scholen verbieden telefoons in de klas, want leerlingen letten dan beter op. Ouders vinden dat lastig, omdat ze hun kind niet kunnen bereiken. Daarom blijven telefoons tot de pauze in een kluisje.\" Samenvatting: \"Scholen verbieden telefoons omdat leerlingen dan beter opletten, maar ouders vinden dat lastig.\""
+  },
+  {
+   "v": "Welke fout zit er in het verband van deze samenvatting?",
+   "o": [
+    "de samenvatting is te lang",
+    "de samenvatting noemt geen voorbeeld",
+    "protest is een reactie, geen reden van de gemeente",
+    "de samenvatting is te algemeen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Controleer of de samenvatting de inhoud juist weergeeft, ook de verbanden.",
+   "uo": [
+    "Koos je \"de samenvatting is te lang\"? Dan denk je dat de lengte het probleem is. De zin is kort, het probleem is dat de inhoud niet klopt.",
+    "Koos je \"de samenvatting noemt geen voorbeeld\"? Dan denk je dat een voorbeeld nodig is. Voorbeelden laat je weg, het probleem is het onjuiste verband.",
+    "Klopt: het protest van inwoners is verkeerd weergegeven als reden van de gemeente; de reden is het dalende bezoek.",
+    "Koos je \"de samenvatting is te algemeen\"? Dan denk je dat de zin te algemeen is. Hij is onjuist, niet alleen algemeen."
+   ],
+   "uh": "Juistheid.",
+   "ctx": "Tekst: \"De gemeente sluit het zwembad, want het bezoek daalde. Inwoners protesteren, maar de gemeente blijft bij haar besluit.\" Samenvatting: \"De gemeente sluit het zwembad omdat inwoners protesteren.\""
+  },
+  {
+   "v": "Waarom zijn de namen in deze samenvatting een fout?",
+   "o": [
+    "de samenvatting is te beknopt",
+    "de samenvatting noemt het verbod niet",
+    "ze staan niet in de tekst: het zijn toevoegingen",
+    "de samenvatting heeft te weinig verbanden"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Een samenvatting bevat geen informatie die niet in de tekst staat.",
+   "uo": [
+    "Koos je \"de samenvatting is te beknopt\"? Dan denk je dat de samenvatting te kort is. De zin bevat juist te veel, namelijk toevoegingen.",
+    "Koos je \"de samenvatting noemt het verbod niet\"? Dan denk je dat het verbod ontbreekt. Het hoofdprobleem is het toevoegen van namen, die niet in de tekst staan.",
+    "Klopt: Jansen en Mila komen niet in de tekst voor, dus het zijn verzonnen toevoegingen.",
+    "Koos je \"de samenvatting heeft te weinig verbanden\"? Dan denk je dat de verbanden het probleem zijn. Het probleem is dat er verzonnen details zijn, namen die de tekst niet noemt."
+   ],
+   "uh": "Alleen wat er staat.",
+   "ctx": "Tekst: \"Een school start met een huiswerkklas. Leerlingen maken daar hun opdrachten onder begeleiding.\" Samenvatting: \"Docent Jansen start een huiswerkklas waar leerlingen zoals Mila onder begeleiding werken.\""
+  },
+  {
+   "v": "Waarom past \"wat terecht is\" niet in deze samenvatting?",
+   "o": [
+    "het is een eigen oordeel",
+    "de samenvatting is te lang",
+    "de samenvatting noemt het compromis",
+    "de samenvatting gebruikt de verleden tijd"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Een samenvatting geeft geen eigen oordeel.",
+   "uo": [
+    "Klopt: een samenvatting is objectief en geeft geen mening.",
+    "Koos je \"de samenvatting is te lang\"? Dan denk je dat de lengte het probleem is. De lengte is niet het probleem, de mening is dat wel.",
+    "Koos je \"de samenvatting noemt het compromis\"? Dan denk je dat het compromis erin staat. Het staat er niet in, het probleem is de mening.",
+    "Koos je \"de samenvatting gebruikt de verleden tijd\"? Dan denk je dat de tijd het probleem is. Het is de mening die niet in de tekst staat, dat is het probleem."
+   ],
+   "uh": "Objectief blijven.",
+   "ctx": "Tekst: \"De bibliotheek is op zondag voortaan open. Het aantal bezoekers is gestegen.\" Samenvatting: \"De bibliotheek is zondag open, wat eindelijk verstandig is, want er komen meer bezoekers.\""
+  },
+  {
+   "v": "Welke samenvatting is volledig, beknopt en juist?",
+   "o": [
+    "Scholen verbieden telefoons.",
+    "Scholen verbieden telefoons in de klas, want leerlingen letten dan beter op. Ouders vinden dat lastig, omdat ze hun kind niet kunnen bereiken. Daarom blijven telefoons tot de pauze in een kluisje.",
+    "Scholen verbieden telefoons omdat het slecht is voor leerlingen, wat ik ook vind.",
+    "Scholen verbieden telefoons in de klas omdat leerlingen dan beter opletten; ouders vinden dat lastig vanwege de bereikbaarheid, dus telefoons blijven nu tot de pauze in het kluisje."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Een goede samenvatting bevat alle hoofdpunten in eigen woorden en kort.",
+   "uo": [
+    "Koos je \"Scholen verbieden telefoons.\"? Dan denk je dat één zin genoeg is. Hij mist de reden, het bezwaar en het compromis, dus hij is onvolledig.",
+    "Koos je \"Scholen verbieden telefoons in de klas, want...\"? Dan is vrijwel een kopie van de tekst. Dat is niet beknopt, en het zijn niet je eigen woorden.",
+    "Koos je \"Scholen verbieden telefoons omdat het slecht is...\"? Dan voegt een eigen mening en een verzonnen reden toe. Een samenvatting blijft bij de tekst, en bevat geen \"ik vind\".",
+    "Klopt: alle hoofdpunten, juiste verbanden en geen bijzaken of mening."
+   ],
+   "uh": "Volledig en beknopt.",
+   "ctx": "Tekst: \"Scholen verbieden telefoons in de klas, want leerlingen letten dan beter op. Ouders vinden dat lastig, omdat ze hun kind niet kunnen bereiken. Daarom blijven telefoons tot de pauze in een kluisje.\""
+  },
+  {
+   "v": "Welke twee gebreken heeft deze samenvatting?",
+   "o": [
+    "de samenvatting is te kort, ze moet meer voorbeelden hebben",
+    "herhaling en een ontbrekend hoofdpunt",
+    "de samenvatting bevat een mening",
+    "de samenvatting is niet in eigen woorden"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Controleer op herhaling en ontbrekende hoofdpunten.",
+   "uo": [
+    "Koos je \"de samenvatting is te kort, ze moet meer...\"? Dan denk je dat voorbeelden nodig zijn. Voorbeelden laat je weg, het probleem is de herhaling en het ontbrekende hoofdpunt.",
+    "Klopt: herhaling is bijzaak en de oplossing ontbreekt.",
+    "Koos je \"de samenvatting bevat een mening\"? Dan denk je dat er een mening in staat. Er staat geen oordeel, het probleem is herhaling en onvolledigheid.",
+    "Koos je \"de samenvatting is niet in eigen woorden\"? Dan denk je dat het geen eigen woorden zijn. Dat is hier niet het hoofdprobleem, het gaat om herhaling en de ontbrekende oplossing."
+   ],
+   "uh": "Geen herhaling, wel compleet.",
+   "ctx": "Een samenvatting van een tekst over fietsen luidt: \"Fietsen is gezond. Het is goed voor je hart. Het is ook goed voor je spieren. Fietsen is dus gezond.\" De tekst gaf ook de oplossing om fietsen veilig te maken."
+  },
+  {
+   "v": "Hoe controleer je samenhang in een samenvatting?",
+   "o": [
+    "je telt het aantal zinnen",
+    "je controleert of elke zin met een hoofdletter begint",
+    "je kijkt of er genoeg bijvoeglijke naamwoorden in staan",
+    "je leest hem na op logische verbanden tussen de zinnen"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Samenhang controleer je door de logica tussen zinnen na te lezen.",
+   "uo": [
+    "Koos je \"je telt het aantal zinnen\"? Dan denk je dat het aantal zinnen samenhang meet. Zinnen tellen zegt niets over verbanden, daarvoor lees je de logica na.",
+    "Koos je \"je controleert of elke zin met een hoofdletter...\"? Dan denk je dat hoofdletters samenhang bepalen. Ze horen bij spelling, niet bij de verbanden tussen zinnen.",
+    "Koos je \"je kijkt of er genoeg bijvoeglijke naamwoorden in...\"? Dan denk je dat woordsoorten samenhang geven. Dat doen ze niet, de verbanden doen dat.",
+    "Klopt: samenhang betekent dat zinnen logisch op elkaar aansluiten."
+   ],
+   "uh": "Logica nalezen."
+  },
+  {
+   "v": "Welk probleem zit er in de samenhang?",
+   "o": [
+    "de samenvatting is te lang en bevat te veel details",
+    "de zinnen staan los van elkaar, de verbanden ontbreken",
+    "de samenvatting bevat een eigen mening",
+    "de samenvatting is in de verkeerde tijd geschreven"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Voeg verbanden toe zodat zinnen op elkaar aansluiten.",
+   "uo": [
+    "Koos je \"de samenvatting is te lang en bevat te veel details\"? Dan denk je dat de samenvatting te lang is. Ze is juist kort, het probleem zijn de ontbrekende verbanden.",
+    "Klopt: ze hangen niet logisch aaneen; signaalwoorden en verbanden ontbreken.",
+    "Koos je \"de samenvatting bevat een eigen mening\"? Dan denk je dat er een mening in staat. Er staat geen mening, het probleem is dat de zinnen los staan.",
+    "Koos je \"de samenvatting is in de verkeerde tijd geschreven\"? Dan denk je dat de tijd het probleem is. De tijd klopt, het gaat om de verbanden."
+   ],
+   "uh": "Verbanden toevoegen.",
+   "ctx": "Een samenvatting: \"Scholen verbieden telefoons. Leerlingen letten beter op. Ouders vinden het lastig. Kluisjes zijn een compromis.\""
+  },
+  {
+   "v": "Wanneer is een samenvatting te lang?",
+   "o": [
+    "als hij meer dan één zin bevat",
+    "als hij alle hoofdpunten bevat",
+    "als hij boven de limiet zit of bijzaken bevat",
+    "als hij de verbanden noemt"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Te lang betekent boven de limiet of met bijzaken.",
+   "uo": [
+    "Koos je \"als hij meer dan één zin bevat\"? Dan denk je dat één zin de norm is. Een samenvatting heeft meestal meerdere zinnen, de limiet en de bijzaken beslissen.",
+    "Koos je \"als hij alle hoofdpunten bevat\"? Dan denk je dat volledigheid te veel is. Alle hoofdpunten horen erin, dus dat maakt hem niet te lang.",
+    "Klopt: de limiet en de bijzaken bepalen of een samenvatting beknopt is.",
+    "Koos je \"als hij de verbanden noemt\"? Dan denk je dat verbanden te veel zijn. Ze zorgen voor samenhang, en horen erin."
+   ],
+   "uh": "Limiet en bijzaak."
+  },
+  {
+   "v": "Hoe beoordeel je deze samenvatting?",
+   "o": [
+    "onvoldoende, ook al is de limiet gehaald",
+    "goed, want de limiet is gehaald",
+    "goed, want voorbeelden maken de samenvatting duidelijker",
+    "voldoende, want niemand merkt het ontbrekende hoofdpunt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Voldoen aan de limiet is niet genoeg: de inhoud moet ook kloppen.",
+   "uo": [
+    "Klopt: de limiet is gehaald, maar de inhoud klopt niet.",
+    "Koos je \"goed, want de limiet is gehaald\"? Dan denk je dat de limiet alles bepaalt. De inhoud moet ook kloppen, en die is hier onvolledig.",
+    "Koos je \"goed, want voorbeelden maken de samenvatting...\"? Dan denk je dat voorbeelden helpen. Voorbeelden laat je weg, omdat ze de kern niet vormen.",
+    "Koos je \"voldoende, want niemand merkt het ontbrekende...\"? Dan denk je dat het ontbrekende niet opvalt. Een docent beoordeelt de volledigheid, dus het wordt gemist."
+   ],
+   "uh": "Inhoud én limiet.",
+   "ctx": "Een samenvatting heeft een limiet van 40 woorden. De leerling schrijft 38 woorden, maar de samenvatting bevat twee voorbeelden en mist het compromis."
+  },
+  {
+   "v": "In welke volgorde pakt hij problemen het best aan?",
+   "o": [
+    "eerst inhoud, dan beknoptheid, dan vorm",
+    "eerst de spelling en daarna pas de inhoud",
+    "alleen de samenhang, want de rest is minder belangrijk",
+    "in willekeurige volgorde"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Controleer eerst de inhoud, dan de vorm.",
+   "uo": [
+    "Klopt: de inhoud gaat voor de vorm, want een fout in de inhoud kan zinnen laten vervallen.",
+    "Koos je \"eerst de spelling en daarna pas de inhoud\"? Dan denk je dat de spelling eerst moet. Een inhoudelijke fout kan hele zinnen schrappen, dus de inhoud gaat voor.",
+    "Koos je \"alleen de samenhang, want de rest is minder...\"? Dan denk je dat samenhang genoeg is. Volledigheid en juistheid zijn minstens zo belangrijk, dus je pakt ze eerst aan.",
+    "Koos je \"in willekeurige volgorde\"? Dan denk je dat de volgorde niet uitmaakt. Je werkt efficiënter van groot naar klein, dus je begint met inhoud."
+   ],
+   "uh": "Inhoud eerst.",
+   "ctx": "Een leerling controleert zijn samenvatting op vijf punten: volledig, juist, beknopt, samenhang en objectief."
+  },
+  {
+   "v": "Welke twee fouten staan in deze samenvatting?",
+   "o": [
+    "er staat te veel informatie in",
+    "de samenvatting is te objectief",
+    "een mening en een ontbrekende reden",
+    "er ontbreekt een voorbeeld"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Samenvattingen oordelen niet en bevatten de reden voor de hoofdzaak.",
+   "uo": [
+    "Koos je \"er staat te veel informatie in\"? Dan denk je dat er te veel informatie is. De samenvatting is juist te kort, en bevat een oordeel.",
+    "Koos je \"de samenvatting is te objectief\"? Dan denk je dat objectief een nadeel is. Objectief is juist de bedoeling, dit is dat niet.",
+    "Klopt: de samenvatting oordeelt en laat de reden (dalend bezoek en stijgende kosten) weg.",
+    "Koos je \"er ontbreekt een voorbeeld\"? Dan denk je dat een voorbeeld ontbreekt. Voorbeelden laat je weg, het probleem is de mening en de ontbrekende reden."
+   ],
+   "uh": "Geen mening, wel reden.",
+   "ctx": "Tekst: \"De gemeente sluit twee zwembaden. Het bezoek daalde en de kosten stegen. Inwoners protesteren, maar de gemeente blijft bij haar besluit.\" Samenvatting: \"De gemeente sluit zwembaden, wat inwoners terecht kwaad maakt.\""
+  },
+  {
+   "v": "Welke samenvatting laat een bijzaak weg en houdt de kern?",
+   "o": [
+    "Een jongen uit Groningen verkoopt kleding.",
+    "Jonge ondernemers starten steeds vaker een bedrijf en sommigen groeien snel.",
+    "Jonge ondernemers beginnen op zolder in Groningen.",
+    "Starten is moeilijk."
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Houd de kern en laat voorbeelden weg.",
+   "uo": [
+    "Koos je \"Een jongen uit Groningen verkoopt kleding.\"? Dan denk je dat het voorbeeld de kern is. Het voorbeeld illustreert alleen, de kern gaat over jonge ondernemers.",
+    "Klopt: de kern blijft staan en het voorbeeld uit Groningen valt weg.",
+    "Koos je \"Jonge ondernemers beginnen op zolder in Groningen.\"? Dan denk je dat details de kern vormen. Zolder en Groningen zijn details, de kern is dat steeds meer jongeren een bedrijf starten.",
+    "Koos je \"Starten is moeilijk.\"? Dan denk je dat dit de kern is. Het staat niet in de tekst, het is een toevoeging."
+   ],
+   "uh": "Kern, geen voorbeeld.",
+   "ctx": "Tekst: \"Jonge ondernemers starten steeds vaker een bedrijf. Het begint vaak op zolder. Sommigen groeien snel, zoals een jongen uit Groningen die kleding verkoopt.\""
+  },
+  {
+   "v": "Welk element moet je schrappen en waarom?",
+   "o": [
+    "\"De vertraging komt door het weer\": het is een verband",
+    "\"Het project loopt vertraging op\": het is de kern",
+    "niets, want de hele zin is goed",
+    "\"dat is heel spijtig\": het is een oordeel"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Schrap oordelen uit een samenvatting.",
+   "uo": [
+    "Koos je \"De vertraging komt door het weer: het is een verband\"? Dan denk je dat het verband niet mag. Een juist verband hoort erin, alleen het oordeel moet weg.",
+    "Koos je \"Het project loopt vertraging op: het is de kern\"? Dan denk je dat de kern weg moet. De kern blijft altijd, het oordeel is bijzaak.",
+    "Koos je \"niets, want de hele zin is goed\"? Dan denk je dat alles mag blijven. Een oordeel hoort niet in een samenvatting, dus één zin moet weg.",
+    "Klopt: een samenvatting is objectief en geeft geen oordeel over de gebeurtenis."
+   ],
+   "uh": "Oordeel weg.",
+   "ctx": "Samenvatting: \"Het project loopt vertraging op en dat is heel spijtig. De vertraging komt door het weer.\""
+  },
+  {
+   "v": "Welke heeft de betere samenhang en waarom?",
+   "o": [
+    "B, omdat korte zinnen altijd beter zijn",
+    "A, omdat de verbanden (omdat, maar, daarom) de zinnen verbinden",
+    "allebei even goed, want ze noemen dezelfde punten",
+    "geen van beide, want samenhang bestaat niet in een samenvatting"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Samenhang ontstaat door verbanden tussen de zinnen.",
+   "uo": [
+    "Koos je \"B, omdat korte zinnen altijd beter zijn\"? Dan denk je dat kort altijd beter is. B is kort maar heeft geen verbanden, dus de zinnen staan los.",
+    "Klopt: A laat zien hoe de delen bij elkaar horen.",
+    "Koos je \"allebei even goed, want ze noemen dezelfde punten\"? Dan denk je dat het om de punten gaat. De verbanden verschillen, en A heeft ze, B niet.",
+    "Koos je \"geen van beide, want samenhang bestaat niet in een...\"? Dan denk je dat samenhang geen eis is. Samenhang is juist belangrijk, en A heeft die."
+   ],
+   "uh": "Verbanden maken het geheel.",
+   "ctx": "Samenvatting A: \"Scholen verbieden telefoons omdat leerlingen dan beter opletten, maar ouders vinden het lastig; daarom blijven telefoons nu tot de pauze in kluisjes.\" Samenvatting B: \"Scholen verbieden telefoons. Ouders vinden het lastig. Er zijn kluisjes.\""
+  },
+  {
+   "v": "Welke fout is hier het duidelijkst?",
+   "o": [
+    "de samenvatting is niet beknopt",
+    "er is te weinig informatie in de samenvatting",
+    "de samenvatting bevat een eigen mening",
+    "de samenvatting gebruikt de verkeerde tijd"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Controleer of de samenvatting echt korter is dan de tekst.",
+   "uo": [
+    "Klopt: ze is nauwelijks korter dan de tekst en dus niet beknopt.",
+    "Koos je \"er is te weinig informatie in de samenvatting\"? Dan denk je dat de informatie ontbreekt. Er is juist te veel, dus het probleem is de beknoptheid.",
+    "Koos je \"de samenvatting bevat een eigen mening\"? Dan denk je dat er een oordeel staat. Dat blijkt niet uit de gegevens, het probleem is de lengte.",
+    "Koos je \"de samenvatting gebruikt de verkeerde tijd\"? Dan denk je dat de tijd het probleem is. Daar zeggen de gegevens niets over, het probleem is de lengte."
+   ],
+   "uh": "Beknopt controleren.",
+   "ctx": "Een leerling vat een tekst van 300 woorden samen in 280 woorden, met alle voorbeelden."
+  },
+  {
+   "v": "Wat betekent dit voor zijn samenvatting?",
+   "o": [
+    "zijn samenvatting is te kort, dus altijd goed",
+    "de tekst bevatte te veel hoofdpunten",
+    "hij heeft te veel details opgenomen",
+    "zijn samenvatting is onvolledig"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Vergelijk je samenvatting met de gemarkeerde hoofdpunten van de tekst.",
+   "uo": [
+    "Koos je \"zijn samenvatting is te kort, dus altijd goed\"? Dan denk je dat korter altijd beter is. Ontbrekende hoofdpunten zijn een gebrek, geen voordeel.",
+    "Koos je \"de tekst bevatte te veel hoofdpunten\"? Dan denk je dat de tekst het probleem is. Hoofdpunten horen in de samenvatting, dus het ligt aan de samenvatting.",
+    "Koos je \"hij heeft te veel details opgenomen\"? Dan denk je dat er te veel details staan. Dat blijkt niet uit het ontbreken van hoofdpunten, dus het probleem is onvolledigheid.",
+    "Klopt: ontbrekende hoofdpunten betekenen onvolledigheid."
+   ],
+   "uh": "Vergelijken met de tekst.",
+   "ctx": "Een leerling vergelijkt zijn samenvatting met de tekst en markeert in de tekst de hoofdpunten. Hij ziet dat twee gemarkeerde punten niet in zijn samenvatting staan."
+  },
+  {
+   "v": "Welke fout zit er in de richting van het verband?",
+   "o": [
+    "er staat een voorbeeld in",
+    "er ontbreekt een hoofdpunt",
+    "oorzaak en gevolg zijn omgedraaid",
+    "de samenvatting is te lang"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Controleer of oorzaak en gevolg juist staan.",
+   "uo": [
+    "Koos je \"er staat een voorbeeld in\"? Dan denk je dat er een voorbeeld is. Er staat geen voorbeeld, het probleem is het omgedraaide verband.",
+    "Koos je \"er ontbreekt een hoofdpunt\"? Dan denk je dat een hoofdpunt mist. Beide punten staan erin, alleen de richting is fout.",
+    "Klopt: de tekst zegt dat de prijs stijgt en mensen daardoor zuiniger worden.",
+    "Koos je \"de samenvatting is te lang\"? Dan denk je dat de lengte het probleem is. De zin is kort, het probleem is het omgedraaide verband."
+   ],
+   "uh": "Richting controleren.",
+   "ctx": "Tekst: \"De prijs van energie stijgt. Daardoor gaan mensen zuiniger leven.\" Samenvatting: \"Mensen leven zuiniger, daardoor stijgt de prijs van energie.\""
+  },
+  {
+   "v": "Waarom zegt deze zin niets bruikbaars over de tekst?",
+   "o": [
+    "de zin is te lang",
+    "de zin bevat een werkwoord",
+    "hij bevat een oordeel in plaats van inhoud",
+    "de zin is te beknopt"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Geef de inhoud weer, niet een oordeel over de tekst.",
+   "uo": [
+    "Koos je \"de zin is te lang\"? Dan denk je dat de lengte het probleem is. De zin is kort, het probleem is dat hij geen inhoud geeft.",
+    "Koos je \"de zin bevat een werkwoord\"? Dan denk je dat een werkwoord fout is. Dat is gewoon nodig, het probleem is het oordeel zonder inhoud.",
+    "Klopt: een samenvatting geeft de inhoud, geen oordeel over de tekst.",
+    "Koos je \"de zin is te beknopt\"? Dan denk je dat beknopt fout is. Beknopt is goed, maar de zin zegt niets over de inhoud."
+   ],
+   "uh": "Inhoud, geen oordeel.",
+   "ctx": "Een leerling schrijft in zijn samenvatting: \"Het was een boeiende tekst, waarin de schrijver zijn mening geeft.\""
+  },
+  {
+   "v": "Mist deze samenvatting een hoofdpunt?",
+   "o": [
+    "nee, want alle hoofdpunten staan erin",
+    "ja: een voorbeeld van een bezoeker",
+    "ja: de mening van het museum over de verlenging",
+    "ja: de korting voor scholen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Controleer elk hoofdpunt, ook het laatste.",
+   "uo": [
+    "Koos je \"nee, want alle hoofdpunten staan erin\"? Dan denk je dat het compleet is. Het slotpunt over het kluisje ontbreekt, dus de samenvatting is onvolledig.",
+    "Koos je \"ja: een voorbeeld van een bezoeker\"? Dan denk je dat een voorbeeld ontbreekt. De tekst geeft geen voorbeeld van een bezoeker, het gaat om de ontbrekende korting.",
+    "Koos je \"ja: de mening van het museum over de verlenging\"? Dan denk je dat de mening ontbreekt. De tekst geeft geen mening, het ontbrekende punt is de korting.",
+    "Klopt: de samenvatting noemt de verlenging en de bezoekers, maar niet de korting voor scholen."
+   ],
+   "uh": "Oplossing meetellen.",
+   "ctx": "Tekst: \"Het museum verlengt de openingstijden. Daardoor komen meer bezoekers. Ook geeft het museum korting aan scholen.\" Samenvatting: \"Het museum verlengt de openingstijden en krijgt daardoor meer bezoekers.\""
+  },
+  {
+   "v": "Welke eis is het best vervuld?",
+   "o": [
+    "de samenvatting is volledig, juist en samenhangend",
+    "de samenvatting is beknopt omdat ze nauwelijks korter is dan de tekst",
+    "de samenvatting bevat een mening die goed onderbouwd is",
+    "de samenvatting is origineel omdat ze nieuwe informatie toevoegt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Een goede samenvatting is volledig, juist en samenhangend.",
+   "uo": [
+    "Klopt: alle hoofdpunten staan erin, de verbanden kloppen met de tekst en er is geen mening of toevoeging.",
+    "Koos je \"de samenvatting is beknopt omdat ze nauwelijks...\"? Dan denk je dat ze veel korter is dan de tekst. Ze is vrijwel even lang, dus beknopt is niet de beste omschrijving.",
+    "Koos je \"de samenvatting bevat een mening die goed...\"? Dan denk je dat er een mening in staat. Er staat geen oordeel, de samenvatting is objectief.",
+    "Koos je \"de samenvatting is origineel omdat ze nieuwe...\"? Dan denk je dat toevoegingen een pluspunt zijn. Er is geen nieuwe informatie toegevoegd, en dat hoort ook zo."
+   ],
+   "uh": "Complete, juiste samenvatting.",
+   "ctx": "Tekst: \"Het park krijgt meer bomen, want het wordt in de zomer te heet. Ook komen er extra bankjes in de schaduw.\" Samenvatting: \"Het park krijgt meer bomen omdat het in de zomer te heet wordt; ook komen er bankjes in de schaduw.\""
+  },
+  {
+   "v": "Wat moet hij doen?",
+   "o": [
+    "de limiet negeren, want twee woorden maken niets uit",
+    "twee woorden of een bijzaak schrappen",
+    "een hoofdpunt schrappen om ruim onder de limiet te komen",
+    "de samenvatting in kleinere letters schrijven"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Houd je aan de limiet door bijzaken te schrappen.",
+   "uo": [
+    "Koos je \"de limiet negeren, want twee woorden maken niets uit\"? Dan denk je dat een kleine overschrijding mag. De limiet is een eis, dus hij moet inkorten.",
+    "Klopt: hij moet de limiet halen, bijvoorbeeld door een detail of herhaling weg te halen.",
+    "Koos je \"een hoofdpunt schrappen om ruim onder de limiet te...\"? Dan denk je dat een hoofdpunt weg mag. Dan klopt de inhoud niet meer, hij schrapt liever een bijzaak.",
+    "Koos je \"de samenvatting in kleinere letters schrijven\"? Dan denk je dat letters tellen. Het gaat om woorden, dus kleiner schrijven helpt niet."
+   ],
+   "uh": "Bijzaak schrappen.",
+   "ctx": "Een leerling heeft een samenvatting van 52 woorden bij een limiet van 50."
+  },
+  {
+   "v": "Welk deel hoort niet in de samenvatting?",
+   "o": [
+    "\"Fietsen is gezond\"",
+    "\"omdat het hart sterker wordt\"",
+    "geen enkel deel, want alles is hoofdzaak",
+    "\"aldus Piet Jansen, die elke dag fietst\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Laat voorbeelden over personen weg.",
+   "uo": [
+    "Koos je \"Fietsen is gezond\"? Dan denk je dat de kern weg moet. De kern is de hoofdzaak, dus die blijft.",
+    "Koos je \"omdat het hart sterker wordt\"? Dan denk je dat de reden weg moet. De reden verklaart de kern, dus die blijft.",
+    "Koos je \"geen enkel deel, want alles is hoofdzaak\"? Dan denk je dat alles blijft. Een voorbeeld over één persoon is bijzaak, dus dat deel kan weg.",
+    "Klopt: een persoon als voorbeeld is bijzaak en kan weg."
+   ],
+   "uh": "Persoon als voorbeeld weg.",
+   "ctx": "Samenvatting van een tekst over fietsen: \"Fietsen is gezond omdat het hart sterker wordt, aldus Piet Jansen, die elke dag fietst.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Tekst: \"Steeds meer scholen verbieden mobiele telefoons in de klas. Docenten zeggen dat leerlingen daardoor beter opletten. Sommige ouders vinden het verbod lastig, omdat ze hun kind overdag niet kunnen bereiken. Daarom zoeken scholen naar een compromis: telefoons mogen mee, maar blijven in de kluisjes tot de pauze.\" Samenvatting: \"Scholen verbieden telefoons omdat leerlingen dan beter opletten, maar ouders vinden dat lastig.\"",
+   "v": "Wat ontbreekt er en waarom is dat een fout?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het compromis met de kluisjes tot de pauze (1 punt). Het is een hoofdpunt, dus de samenvatting is onvolledig (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Samenvatting bij dezelfde tekst: \"Scholen verbieden telefoons omdat ouders hun kind niet kunnen bereiken.\"",
+   "v": "Wat is hier mis?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het verband is verkeerd (1 punt): het bezwaar van de ouders wordt als reden van de scholen weergegeven, dus de samenvatting is onjuist (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Samenvatting bij dezelfde tekst: \"Scholen verbieden telefoons, wat terecht is, omdat leerlingen beter opletten.\"",
+   "v": "Wat is hier mis?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Er staat een eigen oordeel (\"wat terecht is\") in (1 punt); een samenvatting is objectief en geeft alleen de inhoud weer (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling vat een tekst van 300 woorden samen in 280 woorden, met alle voorbeelden.",
+   "v": "Welke eis van een samenvatting wordt geschonden?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Beknoptheid (1 punt): de samenvatting is nauwelijks korter dan de tekst en bevat voorbeelden die er niet in horen (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een samenvatting: \"Scholen verbieden telefoons. Leerlingen letten beter op. Ouders vinden het lastig. Kluisjes zijn een compromis.\"",
+   "v": "Welk probleem zit er in de samenhang en hoe verbeter je dat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De zinnen staan los van elkaar, de verbanden ontbreken (1 punt). Voeg signaalwoorden toe, bijvoorbeeld \"omdat\", \"maar\" en \"daarom\" (1 punt)."
+  }
+ ]
+}

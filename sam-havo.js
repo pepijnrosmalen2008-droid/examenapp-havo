@@ -2147,5 +2147,245 @@ Object.assign(SAM_RICH,{
 <rect x="166" y="88" width="150" height="48" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="174" y="108" font-size="12" font-weight="700" fill="var(--mu)">Nee: afwijzen</text><text x="174" y="124" font-size="11" fill="var(--mu)">met een reden</text>
 <text x="12" y="162" font-size="11" fill="var(--mu)">Onduidelijk? Vraag door voordat je beslist.</text></g></svg><div class="sam-figcap">Commentaar afwegen: past het bij de opdracht, dan pas je aan en controleer je; zo niet, dan wijs je het met een reden af. Is het onduidelijk, vraag dan door.</div></div>
 <div class="sam-tip"><strong>Tip:</strong> houd een lijstje bij met de opmerkingen en zet er per opmerking bij wat je deed: aangepast, afgewezen met reden of doorgevraagd. Zo mis je niets en kun je je keuzes uitleggen.</div>
+</div>`,
+'havo_nl_D1':`<div class="sam-intro">Wie een tekst gaat samenvatten, begint niet te schrijven maar te <strong>verkennen</strong>. Bij <strong>globaal lezen</strong> kijk je naar <strong>titel</strong>, <strong>kopjes</strong>, opmaak, <strong>inleiding</strong> en <strong>slot</strong> en weet je in korte tijd waar de tekst over gaat, wat de schrijver wil en hoe hij is opgebouwd.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Globaal lezen</td><td>Snel overzicht krijgen.</td></tr>
+<tr><td>Onderwerp</td><td>Waar de tekst over gaat.</td></tr>
+<tr><td>Hoofdgedachte</td><td>Wat de schrijver erover zegt.</td></tr>
+<tr><td>Doel</td><td>Wat de schrijver wil bereiken.</td></tr>
+<tr><td>Titel, tussenkopje</td><td>Wegwijzers naar de inhoud.</td></tr>
+<tr><td>Inleiding, kern, slot</td><td>De drie delen van de tekst.</td></tr>
+<tr><td>Kernwoord</td><td>Een woord dat steeds terugkomt.</td></tr>
+<tr><td>Deelonderwerp</td><td>Een onderdeel van het onderwerp.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Wegwijzers: titel, kopjes en opmaak</div>
+<p>Begin bij de <strong>titel</strong>: die noemt meestal het onderwerp of geeft een hint. De <strong>tussenkopjes</strong> laten de opbouw zien: bij "Wat is plastic?", "Waarom is plastic een probleem?" en "Wat kunnen we eraan doen?" weet je al dat eerst wordt uitgelegd, dan het probleem komt en daarna de oplossingen. Vetgedrukte woorden zijn vaak kernbegrippen en <strong>kernwoorden</strong> die steeds terugkomen wijzen op het onderwerp. Je leest dus niet alles, maar je kijkt waar de tekst je zelf de weg wijst.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Wegwijzers in een tekst: titel, tussenkopjes, vetgedrukte woorden, eerste en laatste alinea"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--or)"/><text x="12" y="27" font-size="12" font-weight="700" fill="#fff">Titel: het onderwerp of een hint</text>
+<rect x="4" y="46" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="63" font-size="12" font-weight="700" fill="var(--dk)">Tussenkopjes</text><text x="12" y="79" font-size="11" fill="var(--dk)">laten de opbouw zien</text>
+<rect x="4" y="92" width="312" height="40" rx="6" fill="var(--orl)"/><text x="12" y="109" font-size="12" font-weight="700" fill="var(--dk)">Vetgedrukte woorden</text><text x="12" y="125" font-size="11" fill="var(--dk)">wijzen op kernbegrippen</text>
+<rect x="4" y="138" width="312" height="46" rx="6" fill="var(--or)"/><text x="12" y="157" font-size="12" font-weight="700" fill="#fff">Eerste en laatste alinea</text><text x="12" y="174" font-size="11" fill="#fff">onderwerp, doel en conclusie</text></g></svg><div class="sam-figcap">Vier wegwijzers voor globaal lezen: titel, tussenkopjes, vetgedrukte woorden en de eerste en laatste alinea.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> globaal lezen betekent selectief kijken, niet alles woord voor woord lezen.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Onderwerp en hoofdgedachte</div>
+<p>Het <strong>onderwerp</strong> is waar de tekst over gaat, bijvoorbeeld "zonnepanelen". De <strong>hoofdgedachte</strong> is wat de schrijver erover zegt, bijvoorbeeld "zonnepanelen zijn een slimme investering". Een onderwerp is dus een thema, een hoofdgedachte een uitspraak. Delen als kosten en subsidie zijn <strong>deelonderwerpen</strong>. Het <strong>doel</strong> van de schrijver (informeren of overtuigen) bepaalt hoe je de hoofdgedachte leest: een uiteenzetting legt uit, een betoog verdedigt een stelling. De inleiding noemt vaak het onderwerp en het <strong>slot</strong> de conclusie.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Onderwerp en hoofdgedachte met een voorbeeld over zonnepanelen en de deelonderwerpen"><g font-family="inherit"><rect x="4" y="4" width="312" height="48" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Onderwerp: zonnepanelen</text><text x="12" y="40" font-size="11" fill="var(--dk)">Deelonderwerpen: kosten, subsidie</text>
+<path d="M160 52 V62" stroke="var(--or)" stroke-width="2.5"/><path d="M153 60 L160 68 L167 60 Z" fill="var(--or)"/>
+<rect x="4" y="72" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="92" font-size="12" font-weight="700" fill="#fff">Hoofdgedachte</text><text x="12" y="110" font-size="11" fill="#fff">"Zonnepanelen zijn een slimme investering."</text>
+<rect x="4" y="130" width="312" height="34" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="152" font-size="11" fill="var(--mu)">Onderwerp = thema, hoofdgedachte = uitspraak</text></g></svg><div class="sam-figcap">Het onderwerp is het thema; de hoofdgedachte is wat de schrijver erover zegt. Deelonderwerpen zijn onderdelen van het onderwerp.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Opbouw en aanpak</div>
+<p>De <strong>opbouw</strong> van veel teksten is <strong>inleiding</strong>, <strong>kern</strong> en slot. In de inleiding staat het onderwerp, in de kern de uitwerking in argumenten of onderdelen, in het slot de conclusie. Bij een tekst met achtergrond, probleem en oplossing benoem je de delen in die volgorde. Stel jezelf drie vragen: waar gaat het over, wat wil de schrijver en hoe is de tekst opgebouwd? Verdeel je tijd: eerst enkele minuten verkennen, dan de kern noteren, dan schrijven en controleren.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Aanpak bij een samenvatting: eerst globaal lezen, dan kern noteren, dan schrijven, dan controleren"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--or)"/><text x="12" y="27" font-size="12" font-weight="700" fill="#fff">1  Globaal lezen: onderwerp, doel, opbouw</text>
+<path d="M160 40 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Kern noteren</text>
+<path d="M160 82 V88" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">3  Samenvatting schrijven</text>
+<path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="130" width="312" height="40" rx="6" fill="var(--or)"/><text x="12" y="155" font-size="12" font-weight="700" fill="#fff">4  Controleren</text></g></svg><div class="sam-figcap">De aanpak voor een samenvatting: eerst globaal lezen, dan de kern noteren, dan schrijven en tot slot controleren.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> schrijf na het globaal lezen in één zin het onderwerp en in één zin de hoofdgedachte op. Kun je dat niet, lees dan de inleiding en het slot nog eens.</div>
+</div>`,
+'havo_nl_D2':`<div class="sam-intro">Een tekst bestaat uit alinea's en elke alinea heeft een <strong>kern</strong>. Bij samenvatten zoek je die kern op en laat je de <strong>bijzaak</strong> weg. De <strong>kernzin</strong> geeft de hoofdgedachte; <strong>voorbeelden</strong>, <strong>details</strong> en <strong>herhaling</strong> ondersteunen hem alleen. In dit leerdoel leer je dat onderscheid te maken.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Kernzin</td><td>De zin met de hoofdgedachte.</td></tr>
+<tr><td>Hoofdzaak, bijzaak</td><td>Wat blijft en wat weg mag.</td></tr>
+<tr><td>Voorbeeld, detail</td><td>Illustratie of bijzonderheid.</td></tr>
+<tr><td>Herhaling</td><td>Iets wat al gezegd is.</td></tr>
+<tr><td>Aanloopzin</td><td>Kondigt het onderwerp aan, zonder kern.</td></tr>
+<tr><td>Signaalwoord</td><td>Wijst de functie van een zin aan.</td></tr>
+<tr><td>Conclusie</td><td>Slotsom uit de voorgaande zinnen.</td></tr>
+<tr><td>Oorzaak, gevolg</td><td>Reden en uitkomst.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>De kernzin vinden</div>
+<p>De <strong>kernzin</strong> vat de alinea samen en staat vaak aan het begin of aan het eind. In "Fietsen is gezond. Het versterkt je spieren, het is goed voor je hart en je slaapt er beter van" is de eerste zin de kern; de rest werkt hem uit. Een <strong>aanloopzin</strong> als "Ik ga het hebben over mijn vakantie" kondigt alleen aan; de kern is de zin met de uitspraak. Een slotzin met "kortom", "dus" of "zoals gezegd" herhaalt of bevestigt vaak de <strong>kern</strong>. Je kijkt dus naar de inhoud, niet alleen naar de plek.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Een alinea met kernzin en uitwerking: de kernzin staat vooraan en drie zinnen werken hem uit"><g font-family="inherit"><rect x="4" y="4" width="312" height="40" rx="6" fill="var(--or)"/><text x="12" y="21" font-size="12" font-weight="700" fill="#fff">Kernzin</text><text x="12" y="37" font-size="11" fill="#fff">Fietsen is gezond.</text>
+<rect x="4" y="50" width="312" height="120" rx="6" fill="var(--orl)"/><text x="12" y="68" font-size="12" font-weight="700" fill="var(--dk)">Uitwerking</text><text x="12" y="88" font-size="11" fill="var(--dk)">Het versterkt je spieren.</text><text x="12" y="106" font-size="11" fill="var(--dk)">Het is goed voor je hart.</text><text x="12" y="124" font-size="11" fill="var(--dk)">Je slaapt er beter van.</text><text x="12" y="150" font-size="11" fill="var(--mu)">Drie voorbeelden van de kern</text></g></svg><div class="sam-figcap">Een alinea: de kernzin vooraan, daarna drie uitwerkingen die de kern illustreren.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> de kernzin geeft de hoofdgedachte; alles wat hem uitwerkt, is bijzaak.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Hoofdzaak en bijzaak</div>
+<p>Wat laat je weg? <strong>Voorbeelden</strong> (zinnen met "bijvoorbeeld", "zoals" of "zo"), <strong>details</strong> zoals precieze cijfers of namen en <strong>herhalingen</strong>. Staat er in een alinea "In Rotterdam ging meer dan de helft naar een museum, in Zeeland een kwart", dan is de hoofdzaak dat het museumbezoek per regio verschilt, niet het exacte getal. Een voorbeeld over één persoon, zoals Sam die om twee uur naar bed ging, illustreert alleen de kern "veel jongeren slapen te weinig". Redenen en uitkomsten, de <strong>oorzaak</strong> en het <strong>gevolg</strong>, blijven wel.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Wat blijft en wat weg mag bij samenvatten: kern, oorzaak en gevolg blijven; voorbeeld, detail en herhaling gaan weg"><g font-family="inherit"><rect x="4" y="4" width="312" height="82" rx="6" fill="var(--or)"/><text x="12" y="22" font-size="12" font-weight="700" fill="#fff">Blijft in de samenvatting</text><text x="12" y="42" font-size="11" fill="#fff">De kern van de alinea</text><text x="12" y="58" font-size="11" fill="#fff">Oorzaak en gevolg</text><text x="12" y="74" font-size="11" fill="#fff">De conclusie</text>
+<rect x="4" y="92" width="312" height="92" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="110" font-size="12" font-weight="700" fill="var(--mu)">Mag weg</text><text x="12" y="130" font-size="11" fill="var(--mu)">Voorbeelden ("bijvoorbeeld", "zoals", "zo")</text><text x="12" y="148" font-size="11" fill="var(--mu)">Details: exacte cijfers en namen</text><text x="12" y="166" font-size="11" fill="var(--mu)">Herhalingen</text></g></svg><div class="sam-figcap">Bij samenvatten blijven kern, oorzaak en gevolg en de conclusie staan; voorbeelden, details en herhalingen (stippellijn) laat je weg.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Per alinea één zin noteren</div>
+<p>Noteer na elke alinea in één korte zin in eigen woorden de kern. Staat er geen <strong>kernzin</strong>, formuleer dan zelf een zin die alle <strong>hoofdzaken</strong> dekt, zoals "Het schoolplein moet groener worden om drie redenen". Neem nooit de hele alinea over: dan reduceer je niets. Een rij samenhangende kernen vormt de ruggengraat van je samenvatting; die moet je daarna nog tot een lopende tekst verwerken. Controleer ook of je geen voorbeeld als kern hebt gekozen: een zin over één leerling is zelden de hoofdgedachte.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 172" role="img" aria-label="Van alinea naar kern: lees de alinea, zoek de hoofdgedachte, noteer één zin in eigen woorden"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="27" font-size="12" font-weight="700" fill="var(--dk)">1  Lees de alinea</text>
+<path d="M160 40 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Zoek de hoofdgedachte</text>
+<path d="M160 82 V88" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">3  Schrap voorbeeld en detail</text>
+<path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="130" width="312" height="38" rx="6" fill="var(--or)"/><text x="12" y="154" font-size="12" font-weight="700" fill="#fff">4  Noteer één zin, eigen woorden</text></g></svg><div class="sam-figcap">Van alinea naar kern in vier stappen: lezen, hoofdgedachte zoeken, voorbeeld en detail schrappen en één zin noteren.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> lees alleen de kernzinnen achter elkaar. Vormen ze samen een samenhangend verhaal, dan heb je de goede kernen gevonden.</div>
+</div>`,
+'havo_nl_D3':`<div class="sam-intro">Een goede samenvatting leest als één verhaal. Dat komt door <strong>verbanden</strong>: wat is <strong>oorzaak</strong> en wat <strong>gevolg</strong>, wat is een <strong>tegenstelling</strong>, wat een <strong>toevoeging</strong>? <strong>Signaalwoorden</strong> in de tekst helpen je die verbanden te herkennen en over te nemen.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Verband, samenhang</td><td>Hoe zinnen en delen bij elkaar horen.</td></tr>
+<tr><td>Signaalwoord</td><td>Geeft het verband aan.</td></tr>
+<tr><td>Oorzaak, gevolg</td><td>Reden en uitkomst.</td></tr>
+<tr><td>Tegenstelling, concessie</td><td>Twee dingen tegenover elkaar.</td></tr>
+<tr><td>Toevoeging, opsomming</td><td>Extra punt in dezelfde richting.</td></tr>
+<tr><td>Voorwaarde</td><td>Wat moet gelden.</td></tr>
+<tr><td>Conclusie</td><td>Slotsom uit het voorgaande.</td></tr>
+<tr><td>Verwijswoord</td><td>Wijst terug naar iets eerders.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Verbanden en hun signaalwoorden</div>
+<p>Elk <strong>verband</strong> heeft zijn eigen <strong>signaalwoorden</strong>. Een <strong>oorzaak</strong> herken je aan "omdat" of "doordat", een <strong>gevolg</strong> aan "daarom", "daardoor" of "dus". Een <strong>toevoeging</strong> of <strong>opsomming</strong> wordt aangegeven met "bovendien" of "daarnaast", een <strong>tegenstelling</strong> met "maar", "echter" of "toch" en een <strong>voorwaarde</strong> met "als". Een <strong>conclusie</strong> leid je in met "dus" of "kortom". Soms staat er geen signaalwoord; dan lees je het verband uit de inhoud, bijvoorbeeld: "Het regende. De wedstrijd bleef uit."</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Verbanden met hun signaalwoorden: oorzaak, gevolg, toevoeging, tegenstelling, voorwaarde, conclusie"><g font-family="inherit"><rect x="4" y="4" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">oorzaak: omdat, doordat</text>
+<rect x="4" y="34" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="52" font-size="12" font-weight="700" fill="var(--dk)">gevolg: daarom, daardoor</text>
+<rect x="4" y="64" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="82" font-size="12" font-weight="700" fill="var(--dk)">toevoeging: bovendien, daarnaast</text>
+<rect x="4" y="94" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="112" font-size="12" font-weight="700" fill="var(--dk)">tegenstelling: maar, echter, toch</text>
+<rect x="4" y="124" width="312" height="26" rx="6" fill="var(--orl)"/><text x="12" y="142" font-size="12" font-weight="700" fill="var(--dk)">voorwaarde: als</text>
+<rect x="4" y="154" width="312" height="30" rx="6" fill="var(--or)"/><text x="12" y="174" font-size="12" font-weight="700" fill="#fff">conclusie: dus, kortom</text></g></svg><div class="sam-figcap">Zes verbanden met hun signaalwoorden: oorzaak, gevolg, toevoeging, tegenstelling, voorwaarde en conclusie.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> leg bij elk signaalwoord vast welk verband het aangeeft.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Verbanden herkennen</div>
+<p>Kijk naar twee zinnen en vraag: wat doet de tweede met de eerste? Bij "Het regende hard. Daarom bleef de wedstrijd uit" is de regen de oorzaak en het uitstel het gevolg. Bij "Het project was duur. Toch werd het uitgevoerd" staat het resultaat tegenover de verwachting: een tegenstelling. Let op de richting: "daardoor" staat voor het gevolg, dus de zin ervoor is de oorzaak. Draai die nooit om. Ook tussen alinea's zitten verbanden: "daarnaast" voegt toe en "toch" zet tegenover.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Oorzaak en gevolg: het regende hard (oorzaak) en daarom bleef de wedstrijd uit (gevolg), met een pijl"><g font-family="inherit"><rect x="4" y="4" width="312" height="52" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Oorzaak</text><text x="12" y="42" font-size="11" fill="var(--dk)">Het regende hard.</text>
+<path d="M160 56 V68" stroke="var(--or)" stroke-width="2.5"/><path d="M153 66 L160 74 L167 66 Z" fill="var(--or)"/><text x="176" y="68" font-size="11" fill="var(--dk)">daarom</text>
+<rect x="4" y="78" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="96" font-size="12" font-weight="700" fill="#fff">Gevolg</text><text x="12" y="116" font-size="11" fill="#fff">De wedstrijd bleef uit.</text>
+<rect x="4" y="138" width="312" height="32" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="158" font-size="11" fill="var(--mu)">Draai oorzaak en gevolg nooit om.</text></g></svg><div class="sam-figcap">Oorzaak en gevolg met het signaalwoord "daarom": de oorzaak staat vooraan, het gevolg volgt. Draai ze niet om.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Verbanden in je samenvatting</div>
+<p>Neem de belangrijkste verbanden over in je samenvatting. Maak van "Scholen willen digitale boeken. Toch zijn papieren boeken populair. Veel leerlingen lezen liever op papier" één zin: "Scholen willen digitale boeken, maar papier blijft populair doordat leerlingen liever op papier lezen." Zo ontstaat <strong>samenhang</strong>. Verzin geen verband dat niet in de tekst staat: "De trein kwam laat, dus waren de mensen moe" is fout als de tekst dat verband niet legt. Controleer ook of een verband logisch klopt: "Als het regent, dan blijft het droog" is onlogisch.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 172" role="img" aria-label="Van drie losse zinnen naar één samenhangende zin met maar en doordat"><g font-family="inherit"><rect x="4" y="4" width="312" height="62" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--mu)">Losse zinnen</text><text x="12" y="40" font-size="11" fill="var(--mu)">Scholen willen digitale boeken.</text><text x="12" y="55" font-size="11" fill="var(--mu)">Papier blijft populair.</text>
+<path d="M160 66 V78" stroke="var(--or)" stroke-width="2.5"/><path d="M153 76 L160 84 L167 76 Z" fill="var(--or)"/>
+<rect x="4" y="88" width="312" height="80" rx="6" fill="var(--or)"/><text x="12" y="106" font-size="12" font-weight="700" fill="#fff">Samenhangende zin</text><text x="12" y="126" font-size="11" fill="#fff">Scholen willen digitale boeken,</text><text x="12" y="142" font-size="11" fill="#fff">maar papier blijft populair doordat</text><text x="12" y="158" font-size="11" fill="#fff">leerlingen liever op papier lezen.</text></g></svg><div class="sam-figcap">Van losse zinnen naar één samenhangende zin: "maar" geeft de tegenstelling aan en "doordat" de reden.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> lees je samenvatting na op twee dingen: staat bij elk signaalwoord een verband dat ook in de tekst staat, en klopt de richting van oorzaak en gevolg?</div>
+</div>`,
+'havo_nl_D4':`<div class="sam-intro">Een samenvatting is <strong>beknopt</strong> en in <strong>eigen woorden</strong>. Je kopieert niet, je <strong>reduceert</strong> tot de kern, <strong>generaliseert</strong> voorbeelden, houdt je aan de <strong>woordenlimiet</strong> en blijft <strong>objectief</strong>. In dit leerdoel oefen je dat formuleren.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Eigen woorden, parafraseren</td><td>Eigen zinsbouw, zelfde betekenis.</td></tr>
+<tr><td>Generaliseren, verzamelnaam</td><td>Voorbeelden samenvatten in één term.</td></tr>
+<tr><td>Beknopt, reduceren</td><td>Terugbrengen tot de kern.</td></tr>
+<tr><td>Woordenlimiet</td><td>Maximum aantal woorden.</td></tr>
+<tr><td>Voorbeeld, detail, herhaling</td><td>Bijzaken die wegvallen.</td></tr>
+<tr><td>Objectief</td><td>Zonder eigen mening.</td></tr>
+<tr><td>Citaat</td><td>Letterlijk, tussen aanhalingstekens.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Eigen woorden en generaliseren</div>
+<p>Schrijf de inhoud in <strong>eigen woorden</strong> met een eigen zinsbouw: dat laat zien dat je de tekst begrijpt. Drie woorden vervangen door synoniemen maakt een zin niet eigen, en aanhalingstekens maken van een kopie geen samenvatting. <strong>Generaliseren</strong> helpt bij beknoptheid: "appels, peren en bananen" wordt "fruit", vier namen van leerlingen worden "vier leerlingen". Kies een <strong>verzamelnaam</strong> die klopt en toch informatief is; "groente" voor fruit is fout en "planten" voor tulpen is te vaag.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Generaliseren: appels, peren en bananen worden de verzamelnaam fruit"><g font-family="inherit"><rect x="4" y="4" width="312" height="62" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Voorbeelden in de tekst</text><text x="12" y="42" font-size="11" fill="var(--dk)">appels, peren en bananen</text><text x="12" y="58" font-size="11" fill="var(--mu)">drie losse voorbeelden</text>
+<path d="M160 66 V78" stroke="var(--or)" stroke-width="2.5"/><path d="M153 76 L160 84 L167 76 Z" fill="var(--or)"/>
+<rect x="4" y="88" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="106" font-size="12" font-weight="700" fill="#fff">Verzamelnaam in je samenvatting</text><text x="12" y="126" font-size="11" fill="#fff">fruit</text>
+<rect x="4" y="146" width="312" height="20" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="160" font-size="11" fill="var(--mu)">De verzamelnaam moet kloppen.</text></g></svg><div class="sam-figcap">Generaliseren: drie voorbeelden worden één verzamelnaam die klopt voor alle voorbeelden.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een paar woorden vervangen is geen eigen formulering; verander ook de zinsbouw.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Wat weg mag en wat blijft</div>
+<p>Laat <strong>voorbeelden</strong>, <strong>details</strong> en <strong>herhalingen</strong> weg. "Veel jongeren sporten. Jan voetbalt twee keer per week, Piet zwemt elke dinsdag" wordt "Veel jongeren sporten", want Jan en Piet illustreren alleen. Een samenvatting is veel korter dan de tekst: 390 woorden uit een tekst van 400 is geen <strong>reductie</strong>. Heb je een <strong>woordenlimiet</strong>, bijvoorbeeld vijftig woorden, dan houd je je daaraan en schrap je eerst herhalingen en details; de kern en de conclusie blijven. Zit je ruim onder de limiet met alle hoofdpunten erin, dan is dat prima.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Inkorten tot de woordenlimiet: eerst herhaling en details schrappen, dan voorbeelden, de kern blijft"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="27" font-size="12" font-weight="700" fill="var(--dk)">1  Herhalingen en details weg</text>
+<path d="M160 40 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Voorbeelden generaliseren of weg</text>
+<path d="M160 82 V88" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">3  Woorden tellen en inkorten</text>
+<path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="130" width="312" height="42" rx="6" fill="var(--or)"/><text x="12" y="148" font-size="12" font-weight="700" fill="#fff">De kern en de conclusie</text><text x="12" y="164" font-size="11" fill="#fff">blijven altijd staan</text></g></svg><div class="sam-figcap">Inkorten tot de woordenlimiet: eerst herhalingen en details schrappen, dan voorbeelden generaliseren, tellen; de kern blijft.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Objectief en verzorgd schrijven</div>
+<p>Een samenvatting geeft de inhoud weer en is <strong>objectief</strong>: geen "volgens mij", geen "de schrijver heeft gelijk" en geen eigen oordeel. Schrijf meestal in de tegenwoordige tijd. Verwijs niet in elke zin naar "de schrijver zegt dat ..."; formuleer de inhoud zelf, met een verwijzing hooguit aan het begin. Een <strong>citaat</strong> in je samenvatting is meestal niet nodig: je werkt in <strong>eigen woorden</strong>. Controleer na het schrijven of de betekenis gelijk is gebleven en of je geen informatie hebt toegevoegd die niet in de tekst staat.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Wel en niet in een samenvatting: inhoud weergeven, geen eigen mening"><g font-family="inherit"><rect x="4" y="4" width="312" height="70" rx="6" fill="var(--or)"/><text x="12" y="22" font-size="12" font-weight="700" fill="#fff">Wel</text><text x="12" y="42" font-size="11" fill="#fff">Inhoud van de tekst weergeven</text><text x="12" y="58" font-size="11" fill="#fff">Eigen woorden, tegenwoordige tijd</text>
+<rect x="4" y="82" width="312" height="82" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="100" font-size="12" font-weight="700" fill="var(--mu)">Niet</text><text x="12" y="120" font-size="11" fill="var(--mu)">"Volgens mij ..." of "Hij heeft gelijk"</text><text x="12" y="138" font-size="11" fill="var(--mu)">Herhaling van "de schrijver zegt"</text><text x="12" y="154" font-size="11" fill="var(--mu)">Een kopie met aanhalingstekens</text></g></svg><div class="sam-figcap">Wel: inhoud in eigen woorden en tegenwoordige tijd. Niet (stippellijn): eigen mening, herhaling van "de schrijver zegt" en kopieën.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> tel je woorden pas als de samenvatting inhoudelijk klopt; schrap daarna eerst herhaling en details, nooit de kern.</div>
+</div>`,
+'havo_nl_D5':`<div class="sam-intro">Na het schrijven controleer je je <strong>samenvatting</strong>. Een goede samenvatting is <strong>volledig</strong>, <strong>juist</strong>, <strong>beknopt</strong>, heeft <strong>samenhang</strong> en is <strong>objectief</strong>. Met een <strong>controlelijst</strong> loop je die punten af en verbeter je wat ontbreekt of niet klopt. Dit is ook de vaardigheid waarmee je een gegeven samenvatting beoordeelt.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Volledigheid</td><td>Alle hoofdpunten staan erin.</td></tr>
+<tr><td>Juistheid</td><td>Inhoud en verbanden kloppen.</td></tr>
+<tr><td>Beknoptheid, woordenlimiet</td><td>Kort, zonder bijzaken, binnen de limiet.</td></tr>
+<tr><td>Samenhang, verband</td><td>Zinnen sluiten logisch aan.</td></tr>
+<tr><td>Objectiviteit, oordeel</td><td>Geen eigen mening.</td></tr>
+<tr><td>Toevoeging, herhaling</td><td>Informatie die niet of dubbel in de tekst staat.</td></tr>
+<tr><td>Controlelijst</td><td>De punten die je afloopt.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Volledig en juist</div>
+<p>Markeer in de tekst de <strong>hoofdpunten</strong> en vergelijk ze met je samenvatting. Ontbreekt er een, dan is de samenvatting niet <strong>volledig</strong>. Neem het voorbeeld van scholen die telefoons verbieden: een samenvatting die alleen het verbod en het bezwaar van ouders noemt, mist het compromis met de kluisjes. Controleer ook de <strong>juistheid</strong>: staan <strong>oorzaak</strong> en gevolg in de goede richting, is een bezwaar niet als reden weergegeven en is er geen <strong>toevoeging</strong>, zoals een naam die de tekst niet noemt?</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Hoofdpunten uit de tekst naast de samenvatting: één hoofdpunt ontbreekt"><g font-family="inherit"><rect x="4" y="4" width="312" height="94" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Hoofdpunten in de tekst</text><text x="12" y="42" font-size="11" fill="var(--dk)">1  Scholen verbieden telefoons</text><text x="12" y="58" font-size="11" fill="var(--dk)">2  Leerlingen letten beter op</text><text x="12" y="74" font-size="11" fill="var(--dk)">3  Ouders vinden het lastig</text><text x="12" y="90" font-size="11" fill="var(--dk)">4  Compromis: kluisjes tot de pauze</text>
+<rect x="4" y="106" width="312" height="58" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="124" font-size="12" font-weight="700" fill="var(--mu)">Samenvatting noemt 1, 2 en 3</text><text x="12" y="144" font-size="11" fill="var(--mu)">Punt 4 ontbreekt: onvolledig</text></g></svg><div class="sam-figcap">Vier hoofdpunten in de tekst; de samenvatting noemt er drie. Het ontbrekende compromis maakt haar onvolledig.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> volledig is alle hoofdpunten; juist is geen fouten, geen omgedraaide verbanden en geen toevoegingen.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Beknopt, samenhangend en objectief</div>
+<p>Een goede samenvatting is <strong>beknopt</strong>: ze zit binnen de <strong>woordenlimiet</strong> en bevat geen voorbeelden of <strong>herhalingen</strong>. Een samenvatting van 280 woorden bij een tekst van 300 woorden is niet beknopt. Voor <strong>samenhang</strong> controleer je of de zinnen op elkaar aansluiten met <strong>verbanden</strong> als "omdat", "maar" en "daarom"; losse zinnen zonder verbanden vormen geen geheel. Voor <strong>objectiviteit</strong> schrap je elk <strong>oordeel</strong>, zoals "wat terecht is" of "een boeiende tekst": een samenvatting geeft de inhoud weer, niet je mening.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Vijf controlevragen bij een samenvatting: volledig, juist, beknopt, samenhang, objectief"><g font-family="inherit"><rect x="4" y="4" width="312" height="28" rx="6" fill="var(--or)"/><text x="12" y="23" font-size="12" font-weight="700" fill="#fff">1  Volledig? Alle hoofdpunten erin</text>
+<rect x="4" y="36" width="312" height="28" rx="6" fill="var(--or)"/><text x="12" y="55" font-size="12" font-weight="700" fill="#fff">2  Juist? Geen fouten of toevoegingen</text>
+<rect x="4" y="68" width="312" height="28" rx="6" fill="var(--orl)"/><text x="12" y="87" font-size="12" font-weight="700" fill="var(--dk)">3  Beknopt? Binnen de limiet</text>
+<rect x="4" y="100" width="312" height="28" rx="6" fill="var(--orl)"/><text x="12" y="119" font-size="12" font-weight="700" fill="var(--dk)">4  Samenhang? Verbanden tussen zinnen</text>
+<rect x="4" y="132" width="312" height="28" rx="6" fill="var(--orl)"/><text x="12" y="151" font-size="12" font-weight="700" fill="var(--dk)">5  Objectief? Geen eigen mening</text></g></svg><div class="sam-figcap">Controlelijst met vijf vragen: volledig, juist, beknopt, samenhang en objectief; de inhoud (1 en 2) gaat voor de vorm.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Een gegeven samenvatting beoordelen</div>
+<p>Op het examen krijg je soms een samenvatting en moet je beoordelen of die de hoofdpunten bevat. Werk dan met de <strong>controlelijst</strong>: zoek de hoofdpunten in de tekst, controleer elk punt in de samenvatting en let op drie dingen: ontbreekt er een hoofdpunt, staat er iets wat niet in de tekst staat, is een verband omgedraaid of een bezwaar als reden weergegeven? Voldoen aan de limiet is niet genoeg: een samenvatting van 38 woorden die het compromis mist en twee voorbeelden bevat, is onvoldoende. Pak eerst de inhoud aan en daarna de vorm.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Beoordelen in drie stappen: hoofdpunten zoeken, samenvatting vergelijken, fouten benoemen"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="27" font-size="12" font-weight="700" fill="var(--dk)">1  Hoofdpunten in de tekst zoeken</text>
+<path d="M160 40 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Elk punt in de samenvatting zoeken</text>
+<path d="M160 82 V88" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">3  Ontbrekend of onjuist benoemen</text>
+<path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="130" width="312" height="42" rx="6" fill="var(--or)"/><text x="12" y="148" font-size="12" font-weight="700" fill="#fff">4  Oordeel met reden</text><text x="12" y="164" font-size="11" fill="#fff">bijvoorbeeld: onvolledig, want punt 4 mist</text></g></svg><div class="sam-figcap">Een gegeven samenvatting beoordelen in vier stappen: hoofdpunten zoeken, elk punt controleren, fouten benoemen en een oordeel met reden geven.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> noem bij een beoordeling altijd het ontbrekende of onjuiste punt zelf, bijvoorbeeld "het compromis ontbreekt"; alleen "onvolledig" zeggen levert geen punt op.</div>
+</div>`,
+'havo_nl_D6':`<div class="sam-intro">Niet elke tekst vat je op dezelfde manier samen. Bij een <strong>betoog</strong> zoek je de <strong>stelling</strong> en de <strong>argumenten</strong>; bij een <strong>informatieve tekst</strong> het onderwerp en de kernpunten per <strong>deelonderwerp</strong>. Je herkent de <strong>structuur</strong> van de tekst en laat je samenvatting daarop aansluiten.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Betoog, stelling</td><td>Verdedigt een standpunt.</td></tr>
+<tr><td>Argument</td><td>Reden voor de stelling.</td></tr>
+<tr><td>Tegenwerping, weerlegging</td><td>Bezwaar en de reactie erop.</td></tr>
+<tr><td>Informatieve tekst</td><td>Legt iets uit.</td></tr>
+<tr><td>Deelonderwerp</td><td>Onderdeel van het onderwerp.</td></tr>
+<tr><td>Opsomming, oorzaak, gevolg</td><td>Veelvoorkomende structuren.</td></tr>
+<tr><td>Structuur</td><td>Hoe de tekst is opgebouwd.</td></tr>
+<tr><td>Toevoeging</td><td>Staat niet in de tekst.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Een betoog samenvatten</div>
+<p>De kern van een <strong>betoog</strong> is de <strong>stelling</strong>: wat wil de schrijver bewijzen? Daaronder vallen de belangrijkste <strong>argumenten</strong>, vaak ook de <strong>tegenwerping</strong> met de <strong>weerlegging</strong>. Een samenvatting van "Mobiele telefoons horen niet in de klas. Ze leiden af en leerlingen gebruiken ze om te spieken. Sommigen zeggen dat ze handig zijn voor opdrachten, maar scholen kunnen laptops geven" bevat dus: geen telefoons in de klas, omdat ze afleiden en spieken mogelijk maken, en het bezwaar over opdrachten is op te lossen met laptops. Noem altijd de stelling, anders weet de lezer niet wat de argumenten onderbouwen.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 188" role="img" aria-label="Samenvatting van een betoog: stelling, argumenten en weerlegging, met een voorbeeld over telefoons in de klas"><g font-family="inherit"><rect x="4" y="4" width="312" height="44" rx="6" fill="var(--or)"/><text x="12" y="22" font-size="12" font-weight="700" fill="#fff">Stelling</text><text x="12" y="39" font-size="11" fill="#fff">Geen telefoons in de klas</text>
+<rect x="4" y="54" width="312" height="52" rx="6" fill="var(--orl)"/><text x="12" y="72" font-size="12" font-weight="700" fill="var(--dk)">Argumenten</text><text x="12" y="90" font-size="11" fill="var(--dk)">Ze leiden af en maken spieken mogelijk</text>
+<rect x="4" y="112" width="312" height="52" rx="6" fill="var(--orl)"/><text x="12" y="130" font-size="12" font-weight="700" fill="var(--dk)">Weerlegging</text><text x="12" y="148" font-size="11" fill="var(--dk)">Opdrachten kunnen op laptops</text>
+<rect x="4" y="168" width="312" height="18" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="181" font-size="11" fill="var(--mu)">Voorbeelden laat je weg</text></g></svg><div class="sam-figcap">Een betoog samengevat: de stelling, de belangrijkste argumenten en de weerlegging. Voorbeelden (stippellijn) laat je weg.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> bij een betoog noem je altijd de stelling én de belangrijkste argumenten.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Een informatieve tekst samenvatten</div>
+<p>Een <strong>informatieve tekst</strong> legt iets uit en heeft meestal geen mening. Je zoekt het onderwerp en per <strong>deelonderwerp</strong> de kern. Herken eerst de <strong>structuur</strong>: een <strong>opsomming</strong> van soorten met kenmerken (drie wolksoorten), <strong>oorzaak</strong> en <strong>gevolg</strong> ("de lucht is vuil, daardoor krijgen mensen longziekten"), een probleem met een oplossing of een vergelijking. Volg bij het samenvatten de opbouw van de tekst: noem alle soorten of alle delen in korte zinnen. Een oordeel ("bijen zijn goed") of een voorbeeld over één persoon hoort er niet in.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Structuren van een informatieve tekst: opsomming, oorzaak en gevolg, probleem en oplossing, vergelijking"><g font-family="inherit"><rect x="4" y="4" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="26" font-size="12" font-weight="700" fill="var(--dk)">Opsomming: soorten met kenmerken</text>
+<rect x="4" y="42" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="64" font-size="12" font-weight="700" fill="var(--dk)">Oorzaak en gevolg: daardoor, daarom</text>
+<rect x="4" y="80" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="102" font-size="12" font-weight="700" fill="var(--dk)">Probleem en oplossing</text>
+<rect x="4" y="118" width="312" height="34" rx="6" fill="var(--orl)"/><text x="12" y="140" font-size="12" font-weight="700" fill="var(--dk)">Vergelijking: overeenkomst, verschil</text>
+<text x="12" y="168" font-size="11" fill="var(--mu)">Herken eerst de structuur</text></g></svg><div class="sam-figcap">Vier veelvoorkomende structuren van een informatieve tekst: opsomming, oorzaak en gevolg, probleem en oplossing en vergelijking.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Aanpak en veelgemaakte fouten</div>
+<p>Begin met de vraag: is dit een betoog of een uitleg? Bij een betoog zoek je de stelling, bij een uitleg het onderwerp. Veelgemaakte fouten zijn: de stelling weglaten, alleen het argument noemen, een voorbeeld of persoon opnemen, een oordeel toevoegen en <strong>toevoegingen</strong> verzinnen die niet in de tekst staan. Gebruik "dus" alleen als de tekst die conclusie ook trekt. Een samenvatting van een betoog die zegt "er zijn argumenten voor en tegen" zonder stelling en argumenten zegt niets over wat de schrijver beweert. Pas ook je formulering aan: "In deze tekst wordt uitgelegd dat ..." past bij een uitleg, niet bij een betoog.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Eerst de tekstsoort bepalen: betoog, dan stelling en argumenten; uitleg, dan onderwerp en kernpunten"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="27" font-size="12" font-weight="700" fill="var(--dk)">Welke tekstsoort is het?</text>
+<path d="M80 40 V54" stroke="var(--dk)" stroke-width="2"/><path d="M240 40 V54" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="54" width="150" height="76" rx="6" fill="var(--or)"/><text x="12" y="72" font-size="12" font-weight="700" fill="#fff">Betoog</text><text x="12" y="92" font-size="11" fill="#fff">Stelling</text><text x="12" y="108" font-size="11" fill="#fff">Argumenten</text><text x="12" y="124" font-size="11" fill="#fff">Weerlegging</text>
+<rect x="166" y="54" width="150" height="76" rx="6" fill="var(--orl)"/><text x="174" y="72" font-size="12" font-weight="700" fill="var(--dk)">Uitleg</text><text x="174" y="92" font-size="11" fill="var(--dk)">Onderwerp</text><text x="174" y="108" font-size="11" fill="var(--dk)">Kernpunten</text><text x="174" y="124" font-size="11" fill="var(--dk)">Structuur</text>
+<rect x="4" y="138" width="312" height="32" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="158" font-size="11" fill="var(--mu)">Geen oordeel, voorbeeld of toevoeging</text></g></svg><div class="sam-figcap">Bepaal eerst de tekstsoort: bij een betoog noem je stelling, argumenten en weerlegging, bij een uitleg het onderwerp, de kernpunten en de structuur.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> schrijf boven je samenvatting in drie woorden wat voor tekst het is: betoog, uitleg of beschouwing. Dat bepaalt wat je als eerste opschrijft.</div>
 </div>`
 });

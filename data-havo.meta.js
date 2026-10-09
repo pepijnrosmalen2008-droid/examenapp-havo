@@ -484,7 +484,141 @@ var VAKKEN = [
     "nSv": 95,
     "nOe": 3,
     "nBeg": 18,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "D1",
+      "lo": "nl.D.1",
+      "gs": 2,
+      "naam": "Een tekst globaal verkennen",
+      "beschrijving": "Je krijgt snel overzicht over een tekst via titel, kopjes, opmaak en inleiding en slot, zodat je weet waar hij over gaat, wat de schrijver wil en hoe hij is opgebouwd.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Waarom globaal lezen",
+       "Titel, kopjes en opmaak",
+       "Inleiding en slot",
+       "Onderwerp en hoofdgedachte",
+       "Opbouw van de tekst",
+       "Vragen en aanpak"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D2",
+      "lo": "nl.D.2",
+      "gs": 2,
+      "naam": "Kernzinnen en hoofdpunten per alinea vinden",
+      "beschrijving": "Je vindt per alinea de kernzin, scheidt hoofdzaak van bijzaak (voorbeelden, details, herhaling) en formuleert zelf de kern als die er niet staat.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Wat is een kernzin",
+       "Hoofdzaak en bijzaak",
+       "Zelf een kern formuleren",
+       "Signaalwoorden voor kern en voorbeeld",
+       "Per alinea noteren",
+       "Veelgemaakte fouten"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D3",
+      "lo": "nl.D.3",
+      "gs": 2,
+      "naam": "Verbanden en signaalwoorden gebruiken bij samenvatten",
+      "beschrijving": "Je herkent verbanden als oorzaak, gevolg, tegenstelling, toevoeging, voorwaarde en conclusie en neemt ze juist op in je samenvatting zonder er een te verzinnen.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Waarom verbanden",
+       "Oorzaak en gevolg",
+       "Toevoeging en opsomming",
+       "Tegenstelling",
+       "Voorwaarde en conclusie",
+       "Verbanden in je samenvatting"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D4",
+      "lo": "nl.D.4",
+      "gs": 2,
+      "naam": "Beknopt schrijven in eigen woorden",
+      "beschrijving": "Je formuleert een samenvatting in eigen woorden en eigen zinsbouw, generaliseert voorbeelden, houdt je aan een woordenlimiet en laat je eigen mening weg.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Eigen woorden",
+       "Generaliseren",
+       "Weglaten wat bijzaak is",
+       "Woordenlimiet",
+       "Objectief blijven",
+       "Taalgebruik in een samenvatting"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D5",
+      "lo": "nl.D.5",
+      "gs": 2,
+      "naam": "Een samenvatting controleren op volledigheid en samenhang",
+      "beschrijving": "Je beoordeelt een samenvatting op volledigheid, juistheid, beknoptheid, samenhang en objectiviteit en verbetert wat ontbreekt of niet klopt.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Criteria voor een goede samenvatting",
+       "Volledigheid",
+       "Juistheid",
+       "Beknoptheid en limiet",
+       "Samenhang",
+       "Objectiviteit"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     },
+     {
+      "id": "D6",
+      "lo": "nl.D.6",
+      "gs": 2,
+      "naam": "Een betogende en een informatieve tekst samenvatten",
+      "beschrijving": "Je past je samenvatting aan op de tekstsoort: bij een betoog geef je stelling en argumenten weer, bij een informatieve tekst het onderwerp en de kernpunten.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Betoog: stelling en argumenten",
+       "Informatieve tekst: onderwerp en kernpunten",
+       "Tekststructuren herkennen",
+       "Wat je weglaat",
+       "De samenvatting formuleren",
+       "Veelgemaakte fouten"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "E",
