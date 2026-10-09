@@ -1,0 +1,641 @@
+{
+ "id": "D4",
+ "lo": "nl.D.4",
+ "gs": 2,
+ "naam": "Beknopt schrijven in eigen woorden",
+ "beschrijving": "Je formuleert een samenvatting in eigen woorden en eigen zinsbouw, generaliseert voorbeelden, houdt je aan een woordenlimiet en laat je eigen mening weg.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Eigen woorden",
+  "Generaliseren",
+  "Weglaten wat bijzaak is",
+  "Woordenlimiet",
+  "Objectief blijven",
+  "Taalgebruik in een samenvatting"
+ ],
+ "sam": "Een samenvatting schrijf je in eigen woorden en eigen zinsbouw; een paar woorden vervangen is niet genoeg en aanhalingstekens maken van een kopie nog geen samenvatting. Je generaliseert voorbeelden tot een verzamelnaam, laat voorbeelden, details en herhaling weg, houdt je aan de woordenlimiet, schrijft meestal in de tegenwoordige tijd en geeft geen eigen mening.",
+ "begrippen": [
+  {
+   "t": "Eigen woorden",
+   "d": "Je formuleert de inhoud zelf, met eigen zinsbouw."
+  },
+  {
+   "t": "Generaliseren",
+   "d": "Voorbeelden samenvatten in een verzamelnaam."
+  },
+  {
+   "t": "Verzamelnaam",
+   "d": "Een woord dat meerdere voorbeelden omvat, zoals fruit."
+  },
+  {
+   "t": "Beknopt",
+   "d": "Kort en zonder bijzaken."
+  },
+  {
+   "t": "Woordenlimiet",
+   "d": "Het maximale aantal woorden dat je mag gebruiken."
+  },
+  {
+   "t": "Reduceren",
+   "d": "Terugbrengen tot de kern."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat de kern illustreert en weg mag."
+  },
+  {
+   "t": "Detail",
+   "d": "Een kleine bijzonderheid zoals een naam of getal."
+  },
+  {
+   "t": "Herhaling",
+   "d": "Iets wat al gezegd is."
+  },
+  {
+   "t": "Objectief",
+   "d": "Zonder eigen mening of oordeel."
+  },
+  {
+   "t": "Citaat",
+   "d": "Een letterlijk overgenomen tekstdeel tussen aanhalingstekens."
+  },
+  {
+   "t": "Parafraseren",
+   "d": "De inhoud met andere woorden en zinsbouw weergeven."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waarom schrijf je een samenvatting in eigen woorden?",
+   "o": [
+    "omdat overschrijven verboden is door de wet op het auteursrecht",
+    "je laat zien dat je de tekst begrijpt",
+    "omdat eigen woorden altijd korter zijn dan de woorden van de schrijver",
+    "omdat de docent anders niet kan zien wie de tekst gekopieerd heeft"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Eigen woorden laten zien dat je de tekst begrijpt.",
+   "uo": [
+    "Koos je \"omdat overschrijven verboden is door de wet op het...\"? Dan denk je dat het om een wet gaat. Het gaat om begrip en beknoptheid, overschrijven laat niet zien dat je de tekst begrijpt.",
+    "Klopt: wie een tekst in eigen woorden weergeeft, toont dat hij de inhoud snapt en niet alleen overschrijft.",
+    "Koos je \"omdat eigen woorden altijd korter zijn dan de...\"? Dan denk je dat eigen woorden vanzelf korter zijn. Dat is niet zo, je moet bewust beknopt formuleren.",
+    "Koos je \"omdat de docent anders niet kan zien wie de tekst...\"? Dan denk je dat het om controle gaat. Het hoofddoel is begrip en samenvatten, niet controle van kopiëren."
+   ],
+   "uh": "Begrip tonen."
+  },
+  {
+   "v": "Welke zin geeft dit in eigen woorden weer: \"De bevolking groeide in tien jaar met twintig procent\"?",
+   "o": [
+    "De bevolking van de stad groeide in tien jaar met twintig procent.",
+    "De bevolking van de stad groeide in tien jaar met twintig procent, dat is veel.",
+    "De stad heeft een grote bevolking.",
+    "De stad kreeg in tien jaar een vijfde meer inwoners."
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Eigen woorden houden de betekenis gelijk, de formulering is nieuw.",
+   "uo": [
+    "Koos je \"De bevolking van de stad groeide in tien jaar met...\"? Dan denk je dat dit een formulering in eigen woorden is. Het is een letterlijke kopie, zonder aanhalingstekens.",
+    "Koos je \"De bevolking van de stad groeide in tien jaar met...\"? Dan denk je dat een extra zinsdeel de zin eigen maakt. De kern is nog letterlijk, en je voegt een mening toe.",
+    "Koos je \"De stad heeft een grote bevolking.\"? Dan denk je dat dit de betekenis geeft. De informatie over groei in tien jaar ontbreekt, dus de betekenis is niet dezelfde.",
+    "Klopt: de betekenis is gelijk en de woorden en zinsbouw zijn eigen werk."
+   ],
+   "uh": "Zelfde betekenis, nieuwe woorden."
+  },
+  {
+   "v": "Wat bedoel je met generaliseren?",
+   "o": [
+    "meerdere voorbeelden samenvatten in een verzamelnaam of algemene uitspraak",
+    "elk voorbeeld uitgebreid beschrijven, met alle details",
+    "een voorbeeld letterlijk uit de tekst overnemen als citaat",
+    "een mening geven over de voorbeelden in de tekst"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Generaliseren is voorbeelden vervangen door een verzamelnaam.",
+   "uo": [
+    "Klopt: je vervangt een opsomming door één overkoepelend begrip.",
+    "Koos je \"elk voorbeeld uitgebreid beschrijven, met alle...\"? Dan denk je dat generaliseren uitbreiden is. Het is juist het tegenovergestelde, je maakt het korter en algemener.",
+    "Koos je \"een voorbeeld letterlijk uit de tekst overnemen als...\"? Dan denk je dat een citaat generaliseert. Een citaat houdt het voorbeeld vast, generaliseren vervangt het door een algemene term.",
+    "Koos je \"een mening geven over de voorbeelden in de tekst\"? Dan denk je dat een mening generaliseren is. Een samenvatting bevat geen mening; generaliseren is een verzamelnaam gebruiken."
+   ],
+   "uh": "Verzamelnaam."
+  },
+  {
+   "v": "Welke generalisatie is goed?",
+   "o": [
+    "Veel mensen eten groente.",
+    "Veel mensen eten appels.",
+    "Veel mensen eten fruit.",
+    "Veel mensen eten gezond."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Een generalisatie gebruikt een verzamelnaam die alle voorbeelden dekt.",
+   "uo": [
+    "Koos je \"Veel mensen eten groente.\"? Dan denk je dat de verzamelnaam groente is. Appels, peren en bananen zijn geen groente, dus de generalisatie klopt niet.",
+    "Koos je \"Veel mensen eten appels.\"? Dan denk je dat één voorbeeld de verzamelnaam is. Dan blijven de andere voorbeelden weg, en dat is geen generalisatie.",
+    "Klopt: \"fruit\" is de verzamelnaam voor de drie voorbeelden.",
+    "Koos je \"Veel mensen eten gezond.\"? Dan denk je dat dit een generalisatie is. De tekst zegt niets over gezond eten, je voegt een eigen oordeel toe."
+   ],
+   "uh": "Passende verzamelnaam.",
+   "ctx": "Tekst: \"Veel mensen eten appels, peren en bananen.\""
+  },
+  {
+   "v": "Wat laat je in een samenvatting meestal weg?",
+   "o": [
+    "de hoofdgedachte en de conclusie",
+    "alle werkwoorden, omdat die niet belangrijk zijn",
+    "voorbeelden, details en herhalingen",
+    "de titel en het onderwerp van de tekst"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Voorbeelden, details en herhaling laat je weg.",
+   "uo": [
+    "Koos je \"de hoofdgedachte en de conclusie\"? Dan denk je dat je de kern mag weglaten. Dan blijft er niets over, de kern is juist wat je bewaart.",
+    "Koos je \"alle werkwoorden, omdat die niet belangrijk zijn\"? Dan denk je dat werkwoorden bijzaak zijn. Zonder werkwoorden zijn er geen zinnen, je selecteert op inhoud, niet op woordsoort.",
+    "Klopt: samenvatten is reduceren tot de kern; bijzaken verdwijnen.",
+    "Koos je \"de titel en het onderwerp van de tekst\"? Dan denk je dat die weggelaten mogen worden. Het onderwerp is hoofdzaak, dus dat laat je niet weg."
+   ],
+   "uh": "Bijzaken weg."
+  },
+  {
+   "v": "Wat gaat hier mis?",
+   "o": [
+    "het is een voorbeeld dat in een samenvatting niet hoort",
+    "er staat geen werkwoord in de zin",
+    "de zin is te kort",
+    "er ontbreekt een voegwoord"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Een voorbeeld over één persoon hoort niet in een samenvatting.",
+   "uo": [
+    "Klopt: het gaat om één persoon als voorbeeld, wat bijzaak is.",
+    "Koos je \"er staat geen werkwoord in de zin\"? Dan denk je dat het werkwoord ontbreekt. \"Bezocht\" is het werkwoord; het probleem is de bijzaak.",
+    "Koos je \"de zin is te kort\"? Dan denk je dat de zin te kort is. De zin is niet te kort, het probleem is dat hij een voorbeeld bevat.",
+    "Koos je \"er ontbreekt een voegwoord\"? Dan denk je dat een voegwoord nodig is. Dat is niet het probleem, de zin hoort niet in de samenvatting."
+   ],
+   "uh": "Voorbeeld weglaten.",
+   "ctx": "Een leerling heeft in zijn samenvatting overgenomen: \"Zo bezocht Mila vorige zomer Spanje en Italië.\""
+  },
+  {
+   "v": "Wat doe je met een woordenlimiet bij een samenvatting?",
+   "o": [
+    "je negeert hem als de tekst lang is",
+    "je gebruikt hem als streefwaarde en gaat er ruim overheen",
+    "je telt alleen de zinnen, niet de woorden",
+    "je zorgt dat je binnen het aantal woorden blijft"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Een woordenlimiet is een eis; houd je eraan.",
+   "uo": [
+    "Koos je \"je negeert hem als de tekst lang is\"? Dan denk je dat een lange tekst een uitzondering geeft. De limiet geldt altijd, dus je moet kiezen wat je weglaat.",
+    "Koos je \"je gebruikt hem als streefwaarde en gaat er ruim...\"? Dan denk je dat het een richtlijn is. Het is een eis, en ruim overschrijden is niet toegestaan.",
+    "Koos je \"je telt alleen de zinnen, niet de woorden\"? Dan denk je dat zinnen de maat zijn. Een limiet gaat over woorden, dus je telt woorden.",
+    "Klopt: een limiet is een eis; overschrijden kost punten."
+   ],
+   "uh": "Binnen de limiet."
+  },
+  {
+   "v": "Wat moet hij doen?",
+   "o": [
+    "de limiet negeren, want zestig is dichtbij vijftig",
+    "woorden schrappen door bijzaken en herhaling weg te halen",
+    "de kernzin weghalen en de voorbeelden laten staan",
+    "kleiner schrijven zodat het niet opvalt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Schrap bijzaken om binnen de limiet te komen.",
+   "uo": [
+    "Koos je \"de limiet negeren, want zestig is dichtbij vijftig\"? Dan denk je dat een kleine overschrijding mag. De limiet is een eis, dus hij moet inkorten.",
+    "Klopt: hij moet meer reduceren tot de kern, zodat hij onder de limiet blijft.",
+    "Koos je \"de kernzin weghalen en de voorbeelden laten staan\"? Dan denk je dat voorbeelden belangrijker zijn. Dat is het omgekeerde, de kern blijft, voorbeelden gaan weg.",
+    "Koos je \"kleiner schrijven zodat het niet opvalt\"? Dan denk je dat de letters tellen. Het gaat om het aantal woorden, dus kleiner schrijven helpt niet."
+   ],
+   "uh": "Inkorten op bijzaak.",
+   "ctx": "Een samenvatting mag maximaal vijftig woorden zijn. Een leerling schrijft zestig woorden."
+  },
+  {
+   "v": "Wat geef je in een samenvatting niet weer?",
+   "o": [
+    "de hoofdgedachte van de schrijver",
+    "de belangrijkste argumenten",
+    "de conclusie van de tekst",
+    "je eigen mening over de tekst"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Een samenvatting is objectief en bevat geen eigen mening.",
+   "uo": [
+    "Koos je \"de hoofdgedachte van de schrijver\"? Dan denk je dat dit niet hoort. De hoofdgedachte is de kern, en moet er juist in.",
+    "Koos je \"de belangrijkste argumenten\"? Dan denk je dat argumenten niet horen. Ze zijn hoofdzaak, dus ze moeten erin.",
+    "Koos je \"de conclusie van de tekst\"? Dan denk je dat de conclusie niet hoort. Ze hoort er juist in, omdat ze de kern afrondt.",
+    "Klopt: een samenvatting geeft alleen de inhoud van de tekst weer."
+   ],
+   "uh": "Geen mening."
+  },
+  {
+   "v": "Wat klopt er niet aan deze zin in een samenvatting?",
+   "o": [
+    "de zin is te lang",
+    "hij geeft zijn eigen oordeel (\"heeft gelijk\") in plaats van de inhoud",
+    "er staat geen werkwoord",
+    "de zin noemt de schrijver"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Laat eigen oordelen weg uit een samenvatting.",
+   "uo": [
+    "Koos je \"de zin is te lang\"? Dan denk je dat de lengte het probleem is. Het probleem is de mening, niet de lengte.",
+    "Klopt: een samenvatting beoordeelt niet, ze geeft weer.",
+    "Koos je \"er staat geen werkwoord\"? Dan denk je dat een werkwoord ontbreekt. Er staan werkwoorden in, het probleem is het oordeel.",
+    "Koos je \"de zin noemt de schrijver\"? Dan denk je dat de schrijver niet genoemd mag worden. Verwijzen naar de schrijver mag, maar zonder eigen oordeel."
+   ],
+   "uh": "Geen oordeel.",
+   "ctx": "Een leerling schrijft: \"De schrijver heeft gelijk, want sporten is echt gezond.\""
+  },
+  {
+   "v": "In welke tijd schrijf je een samenvatting meestal?",
+   "o": [
+    "altijd in de verleden tijd",
+    "in de toekomende tijd",
+    "in de tegenwoordige tijd",
+    "dat maakt niet uit, wissel maar af"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Gebruik meestal de tegenwoordige tijd.",
+   "uo": [
+    "Koos je \"altijd in de verleden tijd\"? Dan denk je dat de verleden tijd de regel is. Meestal gebruik je de tegenwoordige tijd, omdat je weergeeft wat de tekst zegt.",
+    "Koos je \"in de toekomende tijd\"? Dan denk je dat de toekomstige tijd past. Dat past niet, de tekst bestaat al.",
+    "Klopt: een samenvatting beschrijft wat de tekst zegt, meestal in de tegenwoordige tijd.",
+    "Koos je \"dat maakt niet uit, wissel maar af\"? Dan denk je dat de tijd er niet toe doet. Consequent gebruik zorgt voor een verzorgde samenvatting, dus je kiest er één."
+   ],
+   "uh": "Tegenwoordige tijd."
+  },
+  {
+   "v": "Waarom is dit geen eigen formulering?",
+   "o": [
+    "de zinsbouw en bijna alle woorden zijn van de schrijver gebleven",
+    "hij heeft te weinig synoniemen gebruikt in de rest van de tekst",
+    "synoniemen zijn verboden bij samenvatten",
+    "hij heeft de tekst niet in het Engels vertaald"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Een eigen formulering vraagt andere zinsbouw, niet alleen andere woorden.",
+   "uo": [
+    "Klopt: een paar woorden vervangen maakt de zin niet eigen.",
+    "Koos je \"hij heeft te weinig synoniemen gebruikt in de rest...\"? Dan denk je dat meer synoniemen het oplossen. Je moet de zin zelf opbouwen, niet losse woorden vervangen.",
+    "Koos je \"synoniemen zijn verboden bij samenvatten\"? Dan denk je dat synoniemen niet mogen. Ze mogen wel, maar alleen vervangen is niet genoeg.",
+    "Koos je \"hij heeft de tekst niet in het Engels vertaald\"? Dan denk je dat vertalen nodig is. De tekst blijft in het Nederlands, het gaat om eigen formulering."
+   ],
+   "uh": "Zinsbouw veranderen.",
+   "ctx": "Een leerling heeft een alinea gekopieerd en daarna drie woorden vervangen door synoniemen."
+  },
+  {
+   "v": "Welke samenvatting is beknopt en klopt?",
+   "o": [
+    "De gemeente plant bloembollen in het park.",
+    "De gemeente plant planten in het park.",
+    "De gemeente plant tulpen in het park.",
+    "De gemeente plant bomen in het park."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Kies een verzamelnaam die klopt en toch informatief is.",
+   "uo": [
+    "Klopt: \"bloembollen\" is een correcte verzamelnaam voor tulpen, narcissen en krokussen.",
+    "Koos je \"De gemeente plant planten in het park.\"? Dan denk je dat \"planten\" een goede verzamelnaam is. Het is te algemeen en zegt weinig, je verliest de informatie.",
+    "Koos je \"De gemeente plant tulpen in het park.\"? Dan denk je dat één voorbeeld volstaat. Je laat de andere weg, en dat is geen generalisatie.",
+    "Koos je \"De gemeente plant bomen in het park.\"? Dan denk je dat bomen de verzamelnaam zijn. Tulpen, narcissen en krokussen zijn geen bomen, dus de generalisatie klopt niet."
+   ],
+   "uh": "Passende generalisatie.",
+   "ctx": "Tekst: \"De gemeente plant tulpen, narcissen en krokussen in het park.\""
+  },
+  {
+   "v": "Welke samenvatting is beknopt?",
+   "o": [
+    "Jan voetbalt en Piet zwemt, dus ze zijn gezond.",
+    "Veel jongeren sporten, bijvoorbeeld Jan en Piet.",
+    "Veel jongeren sporten en zijn daardoor gezond.",
+    "Sporten is leuk."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Laat voorbeelden met personen weg in een samenvatting.",
+   "uo": [
+    "Koos je \"Jan voetbalt en Piet zwemt, dus ze zijn gezond.\"? Dan denk je dat de twee voorbeelden de kern zijn. Ze illustreren alleen, en horen niet in de samenvatting.",
+    "Koos je \"Veel jongeren sporten, bijvoorbeeld Jan en Piet.\"? Dan denk je dat de voorbeelden nodig zijn. Een samenvatting laat voorbeelden weg, dus dit is te uitgebreid.",
+    "Klopt: voorbeelden over Jan en Piet vallen weg.",
+    "Koos je \"Sporten is leuk.\"? Dan denk je dat dit de kern is. Het is een eigen oordeel dat niet in de tekst staat, en het mist de gezondheid."
+   ],
+   "uh": "Voorbeelden weg.",
+   "ctx": "Alinea: \"Veel jongeren sporten. Bijvoorbeeld, Jan voetbalt twee keer per week. Piet zwemt elke dinsdag. Samen zijn ze gezond.\""
+  },
+  {
+   "v": "Wat schrapt hij het best?",
+   "o": [
+    "de kernzin en de conclusie",
+    "herhalingen en details, behalve de kern",
+    "alle werkwoorden zodat het korter wordt",
+    "de eerste zin, want die is vast niet belangrijk"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Schrap eerst herhaling en details.",
+   "uo": [
+    "Koos je \"de kernzin en de conclusie\"? Dan denk je dat de kern weg mag. Dan klopt de samenvatting niet meer, dus de kern blijft staan.",
+    "Klopt: herhalingen en details zijn bijzaak en kosten woorden zonder iets toe te voegen.",
+    "Koos je \"alle werkwoorden zodat het korter wordt\"? Dan denk je dat werkwoorden bijzaak zijn. Zonder werkwoorden is de samenvatting niet te lezen, dus dat is geen oplossing.",
+    "Koos je \"de eerste zin, want die is vast niet belangrijk\"? Dan denk je dat de eerste zin bijzaak is. De eerste zin noemt vaak onderwerp of kern, dus je beoordeelt eerst de inhoud."
+   ],
+   "uh": "Bijzaken eerst.",
+   "ctx": "Een leerling heeft een samenvatting van 70 woorden terwijl 50 de limiet is. Hij kan kiezen wat hij schrapt."
+  },
+  {
+   "v": "Wat gaat hier fout?",
+   "o": [
+    "de leerling gebruikt het woord \"schrijver\" verkeerd",
+    "de zin is niet in de tegenwoordige tijd geschreven",
+    "de zin is te kort voor een samenvatting",
+    "het is een eigen mening in plaats van een weergave van de tekst"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Een samenvatting bevat geen eigen mening.",
+   "uo": [
+    "Koos je \"de leerling gebruikt het woord schrijver verkeerd\"? Dan denk je dat het woord fout is. Het woord is correct, het probleem is de mening.",
+    "Koos je \"de zin is niet in de tegenwoordige tijd geschreven\"? Dan denk je dat de tijd het probleem is. De tijd is hier niet het probleem, de inhoud is dat wel.",
+    "Koos je \"de zin is te kort voor een samenvatting\"? Dan denk je dat de lengte telt. De zin bevat geen inhoud van de tekst, dat is het probleem.",
+    "Klopt: een samenvatting beoordeelt niet en bevat geen \"volgens mij\"."
+   ],
+   "uh": "Objectief blijven.",
+   "ctx": "Een leerling schrijft in zijn samenvatting: \"Volgens mij is de schrijver te negatief, want ik ben optimistisch.\""
+  },
+  {
+   "v": "Welk deel is hier niet beknopt?",
+   "o": [
+    "het woord \"dat\"",
+    "de herhaling van \"de schrijver zegt\"",
+    "de tegenwoordige tijd",
+    "de puntjes"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Herhaal niet steeds \"de schrijver zegt\" maar formuleer de inhoud.",
+   "uo": [
+    "Koos je \"het woord dat\"? Dan denk je dat \"dat\" het probleem is. Het is een gewoon voegwoord, het probleem is de herhaling van \"de schrijver zegt\".",
+    "Klopt: je kunt de inhoud beknopter weergeven zonder die herhaling.",
+    "Koos je \"de tegenwoordige tijd\"? Dan denk je dat de tijd het probleem is. De tijd is juist goed, de herhaling maakt het niet beknopt.",
+    "Koos je \"de puntjes\"? Dan denk je dat de puntjes het probleem zijn. Ze zijn hier alleen weergave van tekst, de herhaling is het probleem."
+   ],
+   "uh": "Inhoud voor verwijzing.",
+   "ctx": "Een leerling schrijft: \"De schrijver zegt dat... en hij zegt ook dat... en dan zegt hij nog dat...\""
+  },
+  {
+   "v": "Wat gaat hier fout?",
+   "o": [
+    "een citaat is geen eigen formulering",
+    "er mogen geen aanhalingstekens in een samenvatting",
+    "de leerling heeft de zin te kort gemaakt",
+    "de leerling heeft het verkeerde leesteken gebruikt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Eigen woorden betekent eigen formulering, niet een citaat.",
+   "uo": [
+    "Klopt: aanhalingstekens maken van een kopie nog geen eigen weergave.",
+    "Koos je \"er mogen geen aanhalingstekens in een samenvatting\"? Dan denk je dat aanhalingstekens verboden zijn. Ze mogen bij een citaat, maar een samenvatting is eigen weergave.",
+    "Koos je \"de leerling heeft de zin te kort gemaakt\"? Dan denk je dat de lengte het probleem is. Het probleem is dat het geen eigen woorden zijn, de lengte is niet het punt.",
+    "Koos je \"de leerling heeft het verkeerde leesteken gebruikt\"? Dan denk je dat het leesteken fout is. Het leesteken klopt bij een citaat, het is de bedoeling van een samenvatting die niet klopt."
+   ],
+   "uh": "Geen kopie.",
+   "ctx": "Een leerling kopieert een zin en zet er aanhalingstekens omheen. Hij zegt: \"Nu is het een samenvatting in eigen woorden.\""
+  },
+  {
+   "v": "Welke formulering is een goede generalisatie?",
+   "o": [
+    "In de klas zaten Anna en Bas.",
+    "In de klas zaten er veel leerlingen.",
+    "In de klas zat een leerling.",
+    "In de klas zaten vier leerlingen."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Generaliseer zonder de feiten te veranderen.",
+   "uo": [
+    "Koos je \"In de klas zaten Anna en Bas.\"? Dan denk je dat twee namen genoeg zijn. Je laat dan twee leerlingen weg, en de generalisatie klopt niet.",
+    "Koos je \"In de klas zaten er veel leerlingen.\"? Dan denk je dat \"veel\" een generalisatie is. Er zijn er precies vier, dus \"veel\" klopt niet.",
+    "Koos je \"In de klas zat een leerling.\"? Dan denk je dat één leerling het geheel dekt. Dat klopt niet, het zijn er vier.",
+    "Klopt: de aantallen blijven, de namen vallen weg."
+   ],
+   "uh": "Telwoord behouden.",
+   "ctx": "Tekst: \"In de klas zaten Anna, Bas, Chris en Dana.\""
+  },
+  {
+   "v": "Wat gaat hier fout?",
+   "o": [
+    "de samenvatting is te kort",
+    "de samenvatting bevat te weinig voorbeelden",
+    "het is geen reductie tot de kern",
+    "de samenvatting is te lang, maar dat mag soms"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Een samenvatting is veel korter dan de oorspronkelijke tekst.",
+   "uo": [
+    "Koos je \"de samenvatting is te kort\"? Dan denk je dat 390 woorden te weinig is. Het is bijna evenveel als de tekst, dus het is niet beknopt.",
+    "Koos je \"de samenvatting bevat te weinig voorbeelden\"? Dan denk je dat voorbeelden nodig zijn. Voorbeelden laat je weg, dus het probleem is dat er te veel staat.",
+    "Klopt: een samenvatting is veel korter dan de tekst en bevat alleen de kern.",
+    "Koos je \"de samenvatting is te lang, maar dat mag soms\"? Dan denk je dat een samenvatting zo lang mag zijn. Een samenvatting is beknopt, en dit is nauwelijks korter dan de tekst."
+   ],
+   "uh": "Reduceren.",
+   "ctx": "Een leerling vat een tekst van 400 woorden samen in 390 woorden."
+  },
+  {
+   "v": "Hoe beoordeel je deze samenvatting?",
+   "o": [
+    "slecht, want hij mag nooit onder de limiet blijven",
+    "slecht, want hij heeft de voorbeelden weggelaten",
+    "goed: binnen de limiet en volledig",
+    "onvoldoende, want hij heeft geen citaten gebruikt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Een samenvatting is goed als hij binnen de limiet blijft en alle hoofdpunten bevat.",
+   "uo": [
+    "Koos je \"slecht, want hij mag nooit onder de limiet blijven\"? Dan denk je dat je de limiet moet vullen. Onder de limiet is prima, mits alle hoofdpunten erin staan.",
+    "Koos je \"slecht, want hij heeft de voorbeelden weggelaten\"? Dan denk je dat voorbeelden erin horen. Voorbeelden laat je juist weg, dus dat is goed.",
+    "Klopt: de samenvatting voldoet aan de eisen: binnen de limiet en met alle hoofdpunten.",
+    "Koos je \"onvoldoende, want hij heeft geen citaten gebruikt\"? Dan denk je dat citaten verplicht zijn. Een samenvatting is in eigen woorden, citaten zijn niet nodig."
+   ],
+   "uh": "Eisen controleren.",
+   "ctx": "Een leerling heeft een woordenlimiet van 60 woorden. Zijn samenvatting heeft 58 woorden en bevat alle hoofdpunten, zonder voorbeelden."
+  },
+  {
+   "v": "Welke generalisatie klopt?",
+   "o": [
+    "Een jongen speelt voetbal.",
+    "Er zijn veel sporters in Nederland.",
+    "Jongens houden niet van sport.",
+    "Drie jongens beoefenen sport."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Een generalisatie behoudt de betekenis en vervangt voorbeelden door een verzamelnaam.",
+   "uo": [
+    "Koos je \"Een jongen speelt voetbal.\"? Dan denk je dat één jongen en één sport genoeg is. Je laat dan twee jongens en twee sporten weg, en de generalisatie klopt niet.",
+    "Koos je \"Er zijn veel sporters in Nederland.\"? Dan denk je dat dit de tekst weergeeft. De tekst gaat over drie jongens, en niet over Nederland.",
+    "Koos je \"Jongens houden niet van sport.\"? Dan denk je dat dit een generalisatie is. Het is het tegendeel van wat de tekst zegt, dus je wijzigt de betekenis.",
+    "Klopt: de aantallen blijven en de sporten vormen samen de verzamelnaam sport."
+   ],
+   "uh": "Betekenis houden.",
+   "ctx": "Tekst: \"Jan, Piet en Kees spelen voetbal, hockey en tennis.\""
+  },
+  {
+   "v": "Welke zin is bijzaak?",
+   "o": [
+    "Het gebouw wordt in juni opgeleverd.",
+    "De school bouwt een nieuwe gymzaal.",
+    "De oude zaal was te klein.",
+    "Er is geld van de gemeente gekomen."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Details zoals data zijn bijzaak; kern en redenen blijven.",
+   "uo": [
+    "Klopt: de opleveringsdatum is een detail; de kern is het bouwen met de reden.",
+    "Koos je \"De school bouwt een nieuwe gymzaal.\"? Dan denk je dat de kern bijzaak is. De zin noemt waar de alinea over gaat, dus hij blijft.",
+    "Koos je \"De oude zaal was te klein.\"? Dan denk je dat de reden bijzaak is. De reden verklaart de bouw, en hoort bij de hoofdzaak.",
+    "Koos je \"Er is geld van de gemeente gekomen.\"? Dan denk je dat de financiering bijzaak is. Het is een voorwaarde die de bouw mogelijk maakt, en hoort dus bij de kern."
+   ],
+   "uh": "Detail weg.",
+   "ctx": "Alinea: \"De school bouwt een nieuwe gymzaal. De oude zaal was te klein. Er is bovendien geld van de gemeente gekomen. Het gebouw wordt in juni opgeleverd.\""
+  },
+  {
+   "v": "Wat is hier mis?",
+   "o": [
+    "hij zit te ver onder de limiet en moet vullen met voorbeelden",
+    "hij is te kort en laat hoofdpunten weg",
+    "er is niets mis, want korter is altijd beter",
+    "hij heeft de limiet overschreden"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Blijf onder de limiet maar laat geen hoofdpunten weg.",
+   "uo": [
+    "Koos je \"hij zit te ver onder de limiet en moet vullen met...\"? Dan denk je dat de limiet gevuld moet worden. Je vult niet met voorbeelden, maar met de ontbrekende hoofdpunten.",
+    "Klopt: onder de limiet is prima, maar alle hoofdpunten moeten erin staan.",
+    "Koos je \"er is niets mis, want korter is altijd beter\"? Dan denk je dat korter altijd beter is. Hoofdpunten laat je niet weg, dus de samenvatting is onvolledig.",
+    "Koos je \"hij heeft de limiet overschreden\"? Dan denk je dat hij te veel schreef. Twintig is minder dan veertig, het probleem is het ontbreken van hoofdpunten."
+   ],
+   "uh": "Compleet en kort.",
+   "ctx": "Een samenvatting heeft een limiet van veertig woorden. Een leerling schrijft er twintig, maar mist twee hoofdpunten."
+  },
+  {
+   "v": "Wat gaat hier mis?",
+   "o": [
+    "de zin is te kort voor een samenvatting",
+    "er staat geen werkwoord in",
+    "de zin is in de verleden tijd geschreven",
+    "hij schrijft een interpretatie die niet in de tekst staat"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Voeg geen bedoelingen of oordelen toe die de tekst niet noemt.",
+   "uo": [
+    "Koos je \"de zin is te kort voor een samenvatting\"? Dan denk je dat de lengte het probleem is. Het probleem is de inhoud, want de bewering staat niet in de tekst.",
+    "Koos je \"er staat geen werkwoord in\"? Dan denk je dat het werkwoord ontbreekt. \"Wil\" is het werkwoord; het probleem is de verzonnen bedoeling.",
+    "Koos je \"de zin is in de verleden tijd geschreven\"? Dan denk je dat de tijd fout is. De tijd is hier juist, de inhoud is het probleem.",
+    "Klopt: een samenvatting geeft de inhoud weer, geen verzonnen bedoelingen."
+   ],
+   "uh": "Alleen wat er staat.",
+   "ctx": "Een leerling schrijft in zijn samenvatting: \"De schrijver wil ons voor de gek houden.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Tekst: \"Veel mensen eten appels, peren en bananen.\" Een leerling wil dit beknopt weergeven.",
+   "v": "Geef een goede generalisatie en leg uit wat generaliseren is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: \"Veel mensen eten fruit.\" (1 punt). Generaliseren is voorbeelden vervangen door een verzamelnaam (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft: \"De schrijver heeft gelijk, want sporten is echt gezond.\"",
+   "v": "Wat is hier mis in een samenvatting?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij geeft een eigen oordeel (\"heeft gelijk\") (1 punt); een samenvatting geeft alleen de inhoud weer, objectief (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling kopieert een zin, vervangt drie woorden door synoniemen en laat de rest staan.",
+   "v": "Waarom is dit geen samenvatting in eigen woorden?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De zinsbouw en bijna alle woorden zijn van de schrijver gebleven (1 punt). Eigen woorden vragen een andere zinsbouw, niet alleen andere woorden (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een samenvatting mag maximaal vijftig woorden zijn. Een leerling schrijft zestig woorden.",
+   "v": "Wat moet hij doen en wat schrapt hij?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Inkorten (1 punt) door bijzaken, details en herhalingen te schrappen en de kern te behouden (1 punt)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling noteert in zijn samenvatting: \"Zo bezocht Mila vorige zomer Spanje en Italië.\"",
+   "v": "Wat is hier mis?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het is een voorbeeld over één persoon (1 punt) en dat hoort niet in een samenvatting (1 punt)."
+  }
+ ]
+}

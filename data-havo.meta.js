@@ -551,6 +551,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "D4",
+      "lo": "nl.D.4",
+      "gs": 2,
+      "naam": "Beknopt schrijven in eigen woorden",
+      "beschrijving": "Je formuleert een samenvatting in eigen woorden en eigen zinsbouw, generaliseert voorbeelden, houdt je aan een woordenlimiet en laat je eigen mening weg.",
+      "ceStatus": "CE+SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Eigen woorden",
+       "Generaliseren",
+       "Weglaten wat bijzaak is",
+       "Woordenlimiet",
+       "Objectief blijven",
+       "Taalgebruik in een samenvatting"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -2267,5 +2267,44 @@ Object.assign(SAM_RICH,{
 <path d="M160 66 V78" stroke="var(--or)" stroke-width="2.5"/><path d="M153 76 L160 84 L167 76 Z" fill="var(--or)"/>
 <rect x="4" y="88" width="312" height="80" rx="6" fill="var(--or)"/><text x="12" y="106" font-size="12" font-weight="700" fill="#fff">Samenhangende zin</text><text x="12" y="126" font-size="11" fill="#fff">Scholen willen digitale boeken,</text><text x="12" y="142" font-size="11" fill="#fff">maar papier blijft populair doordat</text><text x="12" y="158" font-size="11" fill="#fff">leerlingen liever op papier lezen.</text></g></svg><div class="sam-figcap">Van losse zinnen naar één samenhangende zin: "maar" geeft de tegenstelling aan en "doordat" de reden.</div></div>
 <div class="sam-tip"><strong>Tip:</strong> lees je samenvatting na op twee dingen: staat bij elk signaalwoord een verband dat ook in de tekst staat, en klopt de richting van oorzaak en gevolg?</div>
+</div>`,
+'havo_nl_D4':`<div class="sam-intro">Een samenvatting is <strong>beknopt</strong> en in <strong>eigen woorden</strong>. Je kopieert niet, je <strong>reduceert</strong> tot de kern, <strong>generaliseert</strong> voorbeelden, houdt je aan de <strong>woordenlimiet</strong> en blijft <strong>objectief</strong>. In dit leerdoel oefen je dat formuleren.</div>
+
+<div class="sam-head">Begrippenlijst</div>
+<table class="sam-table"><thead><tr><th>Begrip</th><th>Kern</th></tr></thead><tbody>
+<tr><td>Eigen woorden, parafraseren</td><td>Eigen zinsbouw, zelfde betekenis.</td></tr>
+<tr><td>Generaliseren, verzamelnaam</td><td>Voorbeelden samenvatten in één term.</td></tr>
+<tr><td>Beknopt, reduceren</td><td>Terugbrengen tot de kern.</td></tr>
+<tr><td>Woordenlimiet</td><td>Maximum aantal woorden.</td></tr>
+<tr><td>Voorbeeld, detail, herhaling</td><td>Bijzaken die wegvallen.</td></tr>
+<tr><td>Objectief</td><td>Zonder eigen mening.</td></tr>
+<tr><td>Citaat</td><td>Letterlijk, tussen aanhalingstekens.</td></tr>
+</tbody></table>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">1</span>Eigen woorden en generaliseren</div>
+<p>Schrijf de inhoud in <strong>eigen woorden</strong> met een eigen zinsbouw: dat laat zien dat je de tekst begrijpt. Drie woorden vervangen door synoniemen maakt een zin niet eigen, en aanhalingstekens maken van een kopie geen samenvatting. <strong>Generaliseren</strong> helpt bij beknoptheid: "appels, peren en bananen" wordt "fruit", vier namen van leerlingen worden "vier leerlingen". Kies een <strong>verzamelnaam</strong> die klopt en toch informatief is; "groente" voor fruit is fout en "planten" voor tulpen is te vaag.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Generaliseren: appels, peren en bananen worden de verzamelnaam fruit"><g font-family="inherit"><rect x="4" y="4" width="312" height="62" rx="6" fill="var(--orl)"/><text x="12" y="22" font-size="12" font-weight="700" fill="var(--dk)">Voorbeelden in de tekst</text><text x="12" y="42" font-size="11" fill="var(--dk)">appels, peren en bananen</text><text x="12" y="58" font-size="11" fill="var(--mu)">drie losse voorbeelden</text>
+<path d="M160 66 V78" stroke="var(--or)" stroke-width="2.5"/><path d="M153 76 L160 84 L167 76 Z" fill="var(--or)"/>
+<rect x="4" y="88" width="312" height="52" rx="6" fill="var(--or)"/><text x="12" y="106" font-size="12" font-weight="700" fill="#fff">Verzamelnaam in je samenvatting</text><text x="12" y="126" font-size="11" fill="#fff">fruit</text>
+<rect x="4" y="146" width="312" height="20" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="160" font-size="11" fill="var(--mu)">De verzamelnaam moet kloppen.</text></g></svg><div class="sam-figcap">Generaliseren: drie voorbeelden worden één verzamelnaam die klopt voor alle voorbeelden.</div></div>
+<div class="sam-onthoud"><strong>Onthoud:</strong> een paar woorden vervangen is geen eigen formulering; verander ook de zinsbouw.</div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">2</span>Wat weg mag en wat blijft</div>
+<p>Laat <strong>voorbeelden</strong>, <strong>details</strong> en <strong>herhalingen</strong> weg. "Veel jongeren sporten. Jan voetbalt twee keer per week, Piet zwemt elke dinsdag" wordt "Veel jongeren sporten", want Jan en Piet illustreren alleen. Een samenvatting is veel korter dan de tekst: 390 woorden uit een tekst van 400 is geen <strong>reductie</strong>. Heb je een <strong>woordenlimiet</strong>, bijvoorbeeld vijftig woorden, dan houd je je daaraan en schrap je eerst herhalingen en details; de kern en de conclusie blijven. Zit je ruim onder de limiet met alle hoofdpunten erin, dan is dat prima.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 176" role="img" aria-label="Inkorten tot de woordenlimiet: eerst herhaling en details schrappen, dan voorbeelden, de kern blijft"><g font-family="inherit"><rect x="4" y="4" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="27" font-size="12" font-weight="700" fill="var(--dk)">1  Herhalingen en details weg</text>
+<path d="M160 40 V46" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="46" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="69" font-size="12" font-weight="700" fill="var(--dk)">2  Voorbeelden generaliseren of weg</text>
+<path d="M160 82 V88" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="88" width="312" height="36" rx="6" fill="var(--orl)"/><text x="12" y="111" font-size="12" font-weight="700" fill="var(--dk)">3  Woorden tellen en inkorten</text>
+<path d="M160 124 V130" stroke="var(--dk)" stroke-width="2"/>
+<rect x="4" y="130" width="312" height="42" rx="6" fill="var(--or)"/><text x="12" y="148" font-size="12" font-weight="700" fill="#fff">De kern en de conclusie</text><text x="12" y="164" font-size="11" fill="#fff">blijven altijd staan</text></g></svg><div class="sam-figcap">Inkorten tot de woordenlimiet: eerst herhalingen en details schrappen, dan voorbeelden generaliseren, tellen; de kern blijft.</div></div>
+</div>
+
+<div class="sam-chapter"><div class="sam-ch-title"><span class="sam-ch-n">3</span>Objectief en verzorgd schrijven</div>
+<p>Een samenvatting geeft de inhoud weer en is <strong>objectief</strong>: geen "volgens mij", geen "de schrijver heeft gelijk" en geen eigen oordeel. Schrijf meestal in de tegenwoordige tijd. Verwijs niet in elke zin naar "de schrijver zegt dat ..."; formuleer de inhoud zelf, met een verwijzing hooguit aan het begin. Een <strong>citaat</strong> in je samenvatting is meestal niet nodig: je werkt in <strong>eigen woorden</strong>. Controleer na het schrijven of de betekenis gelijk is gebleven en of je geen informatie hebt toegevoegd die niet in de tekst staat.</p>
+<div class="sam-figure"><svg viewBox="0 0 320 168" role="img" aria-label="Wel en niet in een samenvatting: inhoud weergeven, geen eigen mening"><g font-family="inherit"><rect x="4" y="4" width="312" height="70" rx="6" fill="var(--or)"/><text x="12" y="22" font-size="12" font-weight="700" fill="#fff">Wel</text><text x="12" y="42" font-size="11" fill="#fff">Inhoud van de tekst weergeven</text><text x="12" y="58" font-size="11" fill="#fff">Eigen woorden, tegenwoordige tijd</text>
+<rect x="4" y="82" width="312" height="82" rx="6" fill="none" stroke="var(--mu)" stroke-width="1" stroke-dasharray="5 3"/><text x="12" y="100" font-size="12" font-weight="700" fill="var(--mu)">Niet</text><text x="12" y="120" font-size="11" fill="var(--mu)">"Volgens mij ..." of "Hij heeft gelijk"</text><text x="12" y="138" font-size="11" fill="var(--mu)">Herhaling van "de schrijver zegt"</text><text x="12" y="154" font-size="11" fill="var(--mu)">Een kopie met aanhalingstekens</text></g></svg><div class="sam-figcap">Wel: inhoud in eigen woorden en tegenwoordige tijd. Niet (stippellijn): eigen mening, herhaling van "de schrijver zegt" en kopieën.</div></div>
+<div class="sam-tip"><strong>Tip:</strong> tel je woorden pas als de samenvatting inhoudelijk klopt; schrap daarna eerst herhaling en details, nooit de kern.</div>
 </div>`
 });
