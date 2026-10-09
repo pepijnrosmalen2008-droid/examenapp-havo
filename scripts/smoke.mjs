@@ -82,6 +82,9 @@ try {
   const sw = read('sw.js');
   const cache = (sw.match(/const CACHE\s*=\s*'([^']+)'/) || [])[1];
   cache ? ok('cache-versie: ' + cache) : bad('geen CACHE-versie gevonden in sw.js');
+  // Een sw.js die niet parseert (bv. achtergebleven merge-conflict) laat elke telefoon op de oude versie hangen.
+  try { new Function(sw); /<<<<<<<|>>>>>>>|^=======$/m.test(sw) ? bad('sw.js bevat conflictmarkeringen') : ok('sw.js is geldige JavaScript'); }
+  catch (e) { bad('sw.js is geen geldige JavaScript: ' + e.message); }
   const assets = (sw.match(/const ASSETS\s*=\s*\[([\s\S]*?)\]/) || [])[1] || '';
   const files = [...assets.matchAll(/'([^']+)'/g)].map(m => m[1]).filter(p => p !== '/' && !p.startsWith('http'));
   let miss = files.filter(p => !fs.existsSync(path.join(ROOT, p.replace(/^\//, ''))));
