@@ -29473,6 +29473,649 @@ var VAKKEN = [
         "u": "V is literair (1p), H is een gebruikstekst (1p). H geeft aanwijzingen om iets te doen, V roept met een gewoon voorwerp gemis op en vraagt interpretatie (1p)."
        }
       ]
+     },
+     {
+      "id": "F2",
+      "lo": "nl.F.2",
+      "gs": 2,
+      "naam": "Verteller, vertelperspectief en focalisatie",
+      "beschrijving": "Je bepaalt wie er vertelt en wat die verteller kan weten (ik, personaal, alwetend, neutraal), door wiens ogen je het verhaal ziet en hoe betrouwbaar de verteller is.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Ik-verteller",
+       "Personale verteller",
+       "Alwetende verteller",
+       "Neutrale verteller",
+       "Focalisatie",
+       "Betrouwbaarheid van de verteller"
+      ],
+      "sam": "Het vertelperspectief is het standpunt van waaruit een verhaal wordt verteld. Een ik-verteller is zelf personage en kent alleen zijn eigen gedachten. Een personale verteller (hij/zij) volgt één personage van binnenuit. Een alwetende verteller kent de gedachten van meer personages en kan zelfs commentaar geven. Een neutrale verteller vertelt alleen wat waarneembaar is. Focalisatie is door wiens ogen je de wereld ziet. Een ik-verteller is niet automatisch betrouwbaar.",
+      "begrippen": [
+       {
+        "t": "Vertelperspectief",
+        "d": "Het standpunt van waaruit een verhaal wordt verteld."
+       },
+       {
+        "t": "Ik-verteller",
+        "d": "Een verteller die zelf personage is en \"ik\" zegt."
+       },
+       {
+        "t": "Personale verteller",
+        "d": "Een hij/zij-verteller die één personage van binnenuit volgt."
+       },
+       {
+        "t": "Alwetende verteller",
+        "d": "Een verteller die de gedachten van meer personages kent."
+       },
+       {
+        "t": "Auctoriale verteller",
+        "d": "Een alwetende verteller die commentaar geeft op het verhaal."
+       },
+       {
+        "t": "Neutrale verteller",
+        "d": "Een verteller die alleen het waarneembare vertelt."
+       },
+       {
+        "t": "Focalisatie",
+        "d": "Door wiens ogen de wereld van het verhaal wordt waargenomen."
+       },
+       {
+        "t": "Focalisator",
+        "d": "Het personage door wiens ogen je het verhaal ziet."
+       },
+       {
+        "t": "Beperkt perspectief",
+        "d": "Het perspectief waarin je maar een deel van de waarheid ziet."
+       },
+       {
+        "t": "Onbetrouwbare verteller",
+        "d": "Een verteller wiens verhaal niet te vertrouwen is."
+       },
+       {
+        "t": "Binnenwereld",
+        "d": "De gedachten en gevoelens van een personage."
+       },
+       {
+        "t": "Misverstand",
+        "d": "Dat personages elkaar verkeerd begrijpen, terwijl de lezer meer weet."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welk vertelperspectief heeft fragment A?",
+        "o": [
+         "personaal perspectief, want het volgt één personage",
+         "ik-perspectief",
+         "alwetend perspectief, want de verteller weet alles",
+         "neutraal perspectief, want er staat geen mening in"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een verteller die \"ik\" zegt, heeft het ik-perspectief.",
+        "uo": [
+         "Koos je \"personaal perspectief, want het volgt één personage\"? Dan verwart de ik-vorm met het volgen van één personage. Personaal is een hij/zij-verhaal, hier zegt de verteller zelf \"ik\".",
+         "Klopt: de verteller is zelf een personage en vertelt in de eerste persoon.",
+         "Koos je \"alwetend perspectief, want de verteller weet alles\"? Dan denk je dat de verteller alles weet. De ik kent alleen wat hij zelf meemaakt, dus het is geen alwetend perspectief.",
+         "Koos je \"neutraal perspectief, want er staat geen mening in\"? Dan denk je dat een ik neutraal is. De ik vertelt zijn eigen gedachten (\"dacht ik\"), dus het is een ik-perspectief."
+        ],
+        "uh": "Ik zegt: ik-perspectief.",
+        "ctx": "Fragment A: \"Ik wist het al voordat ze de deur opendeed. Haar blik gleed langs mij heen, naar de gang, alsof ze nog iemand verwachtte. Ik zei niets over de bloemen die ik meebracht; ze lagen warm en zwaar in mijn hand. Misschien, dacht ik, was dit geen goed moment. Maar ik stond er nu eenmaal.\""
+       },
+       {
+        "v": "Wat kan de ik-verteller van fragment A níet met zekerheid weten?",
+        "o": [
+         "wat hijzelf zich voorneemt als de deur opengaat",
+         "hoe zwaar de bloemen in zijn eigen hand liggen",
+         "dat hij al van tevoren wist hoe het bezoek zou lopen",
+         "wat de vrouw achter de deur denkt en voelt"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Een ik-verteller kent alleen zijn eigen gedachten.",
+        "uo": [
+         "Koos je \"wat hijzelf zich voorneemt als de deur opengaat\"? Dan denk je dat de ik zijn eigen gedachten niet kent. Die kent hij wel, de gedachten van de vrouw niet.",
+         "Koos je \"hoe zwaar de bloemen in zijn eigen hand liggen\"? Dan denk je dat dit verborgen is. Hij voelt het zelf, dus dat kan hij vertellen.",
+         "Koos je \"dat hij al van tevoren wist hoe het bezoek zou lopen\"? Dan denk je dat dit onzeker is. Hij zegt het zelf al van tevoren, dus dat weet hij wel van zichzelf.",
+         "Klopt: een ik-verteller kent alleen zijn eigen gedachten, anderen kan hij alleen waarnemen."
+        ],
+        "uh": "Beperkt perspectief.",
+        "ctx": "Fragment A: \"Ik wist het al voordat ze de deur opendeed. Haar blik gleed langs mij heen, naar de gang, alsof ze nog iemand verwachtte. Ik zei niets over de bloemen die ik meebracht; ze lagen warm en zwaar in mijn hand. Misschien, dacht ik, was dit geen goed moment. Maar ik stond er nu eenmaal.\""
+       },
+       {
+        "v": "Welke zin laat zien dat de ik-verteller de vrouw alleen van buitenaf ziet?",
+        "o": [
+         "\"alsof ze nog iemand verwachtte\"",
+         "\"Ik wist het al voordat ze de deur opendeed\"",
+         "\"ze lagen warm en zwaar in mijn hand\"",
+         "\"Maar ik stond er nu eenmaal\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Met \"alsof\" interpreteert een ik-verteller wat een ander denkt.",
+        "uo": [
+         "Klopt: met \"alsof\" gokt hij naar haar gedachten, hij weet het niet.",
+         "Koos je \"Ik wist het al voordat ze de deur opendeed\"? Dan denk je dat dit van buitenaf is. Dit gaat over zijn eigen voorgevoel, niet over haar gedachten.",
+         "Koos je \"ze lagen warm en zwaar in mijn hand\"? Dan denk je dat dit over haar gaat. Dit beschrijft zijn eigen gevoel, en zegt niets over de vrouw.",
+         "Koos je \"Maar ik stond er nu eenmaal\"? Dan denk je dat dit de vrouw betreft. Dit gaat weer over hemzelf, niet over haar gedachten."
+        ],
+        "uh": "Alsof = gok.",
+        "ctx": "Fragment A: \"Ik wist het al voordat ze de deur opendeed. Haar blik gleed langs mij heen, naar de gang, alsof ze nog iemand verwachtte. Ik zei niets over de bloemen die ik meebracht; ze lagen warm en zwaar in mijn hand. Misschien, dacht ik, was dit geen goed moment. Maar ik stond er nu eenmaal.\""
+       },
+       {
+        "v": "Welk vertelperspectief heeft fragment B?",
+        "o": [
+         "ik-perspectief, omdat Sanne centraal staat",
+         "alwetend perspectief, want de verteller kent haar gedachten",
+         "personaal perspectief",
+         "neutraal perspectief, want er staan korte zinnen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Een hij/zij-verteller die één personage volgt, is personaal.",
+        "uo": [
+         "Koos je \"ik-perspectief, omdat Sanne centraal staat\"? Dan denk je dat het hoofdpersonage het perspectief bepaalt. Dan zou het \"ik\" zijn, maar er staat \"Sanne\" en \"ze\".",
+         "Koos je \"alwetend perspectief, want de verteller kent haar...\"? Dan denk je dat gedachten van één personage alwetend zijn. Een alwetende kent die van alle personages, hier alleen die van Sanne.",
+         "Klopt: de verteller volgt Sanne en vertelt wat zij ziet en denkt.",
+         "Koos je \"neutraal perspectief, want er staan korte zinnen\"? Dan denk je dat korte zinnen neutraal zijn. Een neutrale verteller kent geen gedachten, hier staat \"dacht ze\"."
+        ],
+        "uh": "Eén personage volgen.",
+        "ctx": "Fragment B: \"Sanne drukte de bel in en wachtte. Zodra de deur openging, wist ze dat ze te vroeg was: haar tante had haar jas nog aan en keek langs haar heen. Sanne voelde de bloemen zwaar worden in haar hand. Ze had beter moeten bellen, dacht ze.\""
+       },
+       {
+        "v": "Waaruit blijkt dat de verteller in B geen alwetende verteller is?",
+        "o": [
+         "Sanne wordt in het fragment steeds bij haar voornaam genoemd",
+         "er staan geen aanhalingstekens in het hele fragment",
+         "we kennen alleen de gedachten van Sanne, niet die van haar tante",
+         "het fragment is in de verleden tijd geschreven en niet in het heden"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Bij personaal perspectief ken je de gedachten van één personage.",
+        "uo": [
+         "Koos je \"Sanne wordt in het fragment steeds bij haar...\"? Dan denk je dat een voornaam personaal maakt. Ook alwetende vertellers noemen namen, het bewijs zit in wiens gedachten we kennen.",
+         "Koos je \"er staan geen aanhalingstekens in het hele fragment\"? Dan denk je dat aanhalingstekens het perspectief bepalen. Ze zeggen daar niets over, het gaat om wiens gedachten bekend zijn.",
+         "Klopt: de tante wordt alleen van buitenaf beschreven, zoals Sanne haar ziet.",
+         "Koos je \"het fragment is in de verleden tijd geschreven en...\"? Dan denk je dat de tijd het perspectief bepaalt. Alle perspectieven kunnen verleden tijd hebben, het gaat om wiens gedachten bekend zijn."
+        ],
+        "uh": "Eén binnenwereld.",
+        "ctx": "Fragment B: \"Sanne drukte de bel in en wachtte. Zodra de deur openging, wist ze dat ze te vroeg was: haar tante had haar jas nog aan en keek langs haar heen. Sanne voelde de bloemen zwaar worden in haar hand. Ze had beter moeten bellen, dacht ze.\""
+       },
+       {
+        "v": "In B staat: \"haar tante had haar jas nog aan en keek langs haar heen.\" Door wiens ogen zie je de tante?",
+        "o": [
+         "door de ogen van Sanne, het personage dat gevolgd wordt",
+         "door de ogen van de tante, omdat zij het onderwerp is",
+         "door de ogen van een verteller die alles weet",
+         "door niemands ogen, want het is een neutrale beschrijving"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "De focalisator is degene door wiens ogen je de wereld ziet.",
+        "uo": [
+         "Klopt: de focalisator is Sanne; wat we van de tante zien, neemt Sanne waar.",
+         "Koos je \"door de ogen van de tante, omdat zij het onderwerp...\"? Dan denk je dat het onderwerp de focalisator is. De focalisator is wie waarneemt, en dat is Sanne.",
+         "Koos je \"door de ogen van een verteller die alles weet\"? Dan denk je dat een alwetende kijkt. Het perspectief is personaal, dus Sanne ziet.",
+         "Koos je \"door niemands ogen, want het is een neutrale...\"? Dan denk je dat het neutraal is. Het gaat om wat Sanne opvalt, dus het is haar waarneming."
+        ],
+        "uh": "Wie neemt waar?",
+        "ctx": "Fragment B: \"Sanne drukte de bel in en wachtte. Zodra de deur openging, wist ze dat ze te vroeg was: haar tante had haar jas nog aan en keek langs haar heen. Sanne voelde de bloemen zwaar worden in haar hand. Ze had beter moeten bellen, dacht ze.\""
+       },
+       {
+        "v": "Welk kenmerk van C wijst op een alwetende verteller?",
+        "o": [
+         "de verteller noemt Sanne steeds bij haar eigen naam",
+         "de verteller gebruikt de verleden tijd in alle zinnen",
+         "de verteller zegt dat Sanne vol hoop is en aan de bloemen ruikt",
+         "de verteller kent de gedachten en het verleden van Tante Ria"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Een alwetende verteller kent gedachten van meerdere personages.",
+        "uo": [
+         "Koos je \"de verteller noemt Sanne steeds bij haar eigen naam\"? Dan denk je dat een naam alwetend maakt. Ook personale vertellers noemen namen, het bewijs is de kennis die verder reikt.",
+         "Koos je \"de verteller gebruikt de verleden tijd in alle...\"? Dan denk je dat de tijd alwetend maakt. De verleden tijd komt in alle perspectieven voor, het bewijs is de kennis van Ria.",
+         "Koos je \"de verteller zegt dat Sanne vol hoop is en aan de...\"? Dan denk je dat dit de alwetendheid bewijst. Dat kan ook een personale verteller van haar weten, het bewijs zit bij Ria.",
+         "Klopt: hij weet wat Ria voelt en doet, buiten Sannes waarneming om."
+        ],
+        "uh": "Meer dan één binnenwereld.",
+        "ctx": "Fragment C: \"Sanne drukte de bel in en wachtte. Wat zij niet wist, was dat haar tante al een uur naar de gang keek, bang voor het nieuws dat dit bezoek zou brengen. Tante Ria had de hele nacht niet geslapen en zou later die dag haar huis verlaten. Sanne, vol hoop, rook aan de bloemen. Zo gaat het vaak: wie bloemen brengt, weet zelden wat hij komt halen.\""
+       },
+       {
+        "v": "Welke functie heeft de slotzin \"Zo gaat het vaak: wie bloemen brengt, weet zelden wat hij komt halen.\"?",
+        "o": [
+         "het is een gedachte van Sanne zelf, terwijl ze op de deur wacht",
+         "de verteller geeft een algemeen commentaar buiten het verhaal",
+         "het is een dialoog tussen Sanne en Ria bij de voordeur",
+         "het is een regieaanwijzing voor de speler in een toneeltekst"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Algemene opmerkingen van de verteller wijzen op een auctoriale verteller.",
+        "uo": [
+         "Koos je \"het is een gedachte van Sanne zelf, terwijl ze op...\"? Dan denk je dat Sanne dit denkt. Sanne heeft geen weet van wat Ria weet, de zin is van de verteller.",
+         "Klopt: de verteller spreekt als verteller, niet als personage: dat is kenmerkend voor een auctoriale verteller.",
+         "Koos je \"het is een dialoog tussen Sanne en Ria bij de...\"? Dan denk je dat er gesproken wordt. Er staan geen aanhalingstekens, de verteller spreekt zelf.",
+         "Koos je \"het is een regieaanwijzing voor de speler in een...\"? Dan denk je dat dit toneel is. Dit is proza met een verteller, geen toneelaanwijzing."
+        ],
+        "uh": "Verteller grijpt in.",
+        "ctx": "Fragment C: \"Sanne drukte de bel in en wachtte. Wat zij niet wist, was dat haar tante al een uur naar de gang keek, bang voor het nieuws dat dit bezoek zou brengen. Tante Ria had de hele nacht niet geslapen en zou later die dag haar huis verlaten. Sanne, vol hoop, rook aan de bloemen. Zo gaat het vaak: wie bloemen brengt, weet zelden wat hij komt halen.\""
+       },
+       {
+        "v": "Beide fragmenten beginnen gelijk. Welk verschil in informatie volgt na de eerste zin?",
+        "o": [
+         "B is langer dan C en geeft daardoor veel meer informatie",
+         "B vertelt in de ik-vorm en C vertelt in de hij-vorm",
+         "B en C verschillen niet: ze hebben precies dezelfde verteller",
+         "B kent alleen Sannes binnenwereld, C ook die van Ria en de toekomst"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Vergelijk wiens gedachten en kennis in de tekst staan.",
+        "uo": [
+         "Koos je \"B is langer dan C en geeft daardoor veel meer...\"? Dan denk je dat lengte meer informatie geeft. C bevat juist meer informatie in de kortere vorm, het verschil is wiens kennis wordt getoond.",
+         "Koos je \"B vertelt in de ik-vorm en C vertelt in de hij-vorm\"? Dan denk je dat B een ik-verhaal is. Beide zijn hij/zij-verhalen, het verschil is de kennis van de verteller.",
+         "Koos je \"B en C verschillen niet: ze hebben precies dezelfde...\"? Dan denk je dat ze gelijk zijn. De kennis van Ria en de toekomst staan alleen in C, dus het perspectief verschilt.",
+         "Klopt: C weet meer dan Sanne, B weet precies zoveel als Sanne."
+        ],
+        "uh": "Wie weet wat?",
+        "ctx": "Fragment B: \"Sanne drukte de bel in en wachtte. Zodra de deur openging, wist ze dat ze te vroeg was: haar tante had haar jas nog aan en keek langs haar heen. Sanne voelde de bloemen zwaar worden in haar hand. Ze had beter moeten bellen, dacht ze.\" Fragment C: \"Sanne drukte de bel in en wachtte. Wat zij niet wist, was dat haar tante al een uur naar de gang keek, bang voor het nieuws dat dit bezoek zou brengen. Tante Ria had de hele nacht niet geslapen en zou later die dag haar huis verlaten. Sanne, vol hoop, rook aan de bloemen. Zo gaat het vaak: wie bloemen brengt, weet zelden wat hij komt halen.\""
+       },
+       {
+        "v": "Welk vertelperspectief heeft fragment D en waaraan herken je dat?",
+        "o": [
+         "personaal: we volgen het meisje van binnenuit door haar gedachten",
+         "neutraal: alleen wat je kunt zien of horen wordt verteld",
+         "ik-perspectief: het is een getuigenverslag van iemand die erbij was",
+         "alwetend: de verteller toont ook alles wat er in hoofden speelt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Een neutrale verteller vertelt alleen wat waarneembaar is.",
+        "uo": [
+         "Koos je \"personaal: we volgen het meisje van binnenuit door...\"? Dan denk je dat we haar gedachten kennen. Er staat geen gedachte of gevoel, dus het is niet personaal.",
+         "Klopt: er staat niets over gedachten of gevoelens, alleen waarneembare feiten.",
+         "Koos je \"ik-perspectief: het is een getuigenverslag van...\"? Dan denk je dat een getuige \"ik\" is. Er staat geen ik in het fragment, dus het is geen ik-verhaal.",
+         "Koos je \"alwetend: de verteller toont ook alles wat er in...\"? Dan denk je dat de verteller veel weet. Hij vertelt niets over binnenwerelden, dus hij is neutraal."
+        ],
+        "uh": "Alleen zichtbaar.",
+        "ctx": "Fragment D: \"De bel ging. Een vrouw opende de deur, met een jas aan. Een meisje met bloemen stond op de stoep. De vrouw keek langs het meisje heen. Ze zeiden niets. Na enkele seconden stapte het meisje naar binnen.\""
+       },
+       {
+        "v": "Welke toevoeging past níet bij de neutrale verteller van fragment D?",
+        "o": [
+         "\"Het meisje deed een stap naar voren, richting de deur.\"",
+         "\"De vrouw schudde haar hoofd en zei niets.\"",
+         "\"Het meisje voelde zich ongemakkelijk.\"",
+         "\"De deur sloeg dicht met een harde klap.\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Een neutrale verteller vertelt geen gevoelens of gedachten.",
+        "uo": [
+         "Koos je \"Het meisje deed een stap naar voren, richting de...\"? Dan denk je dat dit niet past. Een stap is zichtbaar, dus het past wel bij een neutrale verteller.",
+         "Koos je \"De vrouw schudde haar hoofd en zei niets.\"? Dan denk je dat dit niet past. Dit is een zichtbare handeling, en dus neutraal.",
+         "Klopt: een gevoel is niet waarneembaar, dus dat past niet bij een neutrale verteller.",
+         "Koos je \"De deur sloeg dicht met een harde klap.\"? Dan denk je dat dit niet past. Dit is hoorbaar en zichtbaar, dus het past wel."
+        ],
+        "uh": "Alleen waarneembaar.",
+        "ctx": "Fragment D: \"De bel ging. Een vrouw opende de deur, met een jas aan. Een meisje met bloemen stond op de stoep. De vrouw keek langs het meisje heen. Ze zeiden niets. Na enkele seconden stapte het meisje naar binnen.\""
+       },
+       {
+        "v": "Van wie kent de verteller in fragment E de gedachten?",
+        "o": [
+         "van zowel Karel als Els",
+         "alleen van Karel, want hij kijkt naar de klok",
+         "alleen van Els, want zij ziet zijn zucht",
+         "van niemand: het zijn alleen zichtbare gebaren"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Wie wisselt tussen gedachten van meer personages, is alwetend.",
+        "uo": [
+         "Klopt: de verteller toont wat beiden denken, dus hij springt tussen de personages.",
+         "Koos je \"alleen van Karel, want hij kijkt naar de klok\"? Dan mist de zin over Els. Er staat dat Els dacht dat hij haar gerecht afkeurde, dus ook haar gedachten zijn bekend.",
+         "Koos je \"alleen van Els, want zij ziet zijn zucht\"? Dan mist de zin over Karel. Er staat dat Karel aan de vergadering dacht, dus ook zijn gedachten zijn bekend.",
+         "Koos je \"van niemand: het zijn alleen zichtbare gebaren\"? Dan denk je dat er alleen gebaren zijn. \"Dacht\" toont gedachten, dus de verteller kent ze."
+        ],
+        "uh": "Beiden binnenstebuiten.",
+        "ctx": "Fragment E: \"Karel keek naar de klok en zuchtte. Els zag zijn zucht en dacht dat hij haar nieuwe gerecht afkeurde. Karel dacht aan de vergadering van morgen; hij had niets gemerkt van wat zij op tafel had gezet. Hij nam een hap en zei dat het lekker was.\""
+       },
+       {
+        "v": "Welk effect heeft het perspectief van E op de lezer?",
+        "o": [
+         "de lezer ziet het misverstand dat Karel en Els zelf niet zien",
+         "de lezer weet minder dan Karel en Els zelf",
+         "de lezer ziet het hele verhaal alleen door de ogen van Els",
+         "de lezer kan niet raden wat er in hen gebeurt"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Een alwetende verteller geeft de lezer een voorsprong op de personages.",
+        "uo": [
+         "Klopt: de lezer weet meer dan de personages en ziet dat zij elkaar verkeerd begrijpen.",
+         "Koos je \"de lezer weet minder dan Karel en Els zelf\"? Dan denk je dat de lezer minder weet. De lezer kent beide gedachten, en zij kennen alleen die van zichzelf.",
+         "Koos je \"de lezer ziet het hele verhaal alleen door de ogen...\"? Dan denk je dat er één focalisator is. Het perspectief wisselt tussen beiden, dus de lezer ziet meer.",
+         "Koos je \"de lezer kan niet raden wat er in hen gebeurt\"? Dan denk je dat er geen spanning is. Juist doordat de lezer meer weet, ontstaat het misverstand dat hij ziet."
+        ],
+        "uh": "Lezer weet meer.",
+        "ctx": "Fragment E: \"Karel keek naar de klok en zuchtte. Els zag zijn zucht en dacht dat hij haar nieuwe gerecht afkeurde. Karel dacht aan de vergadering van morgen; hij had niets gemerkt van wat zij op tafel had gezet. Hij nam een hap en zei dat het lekker was.\""
+       },
+       {
+        "v": "Een leerling noemt E \"personaal, want het gaat over twee personen\". Waarom klopt dat niet?",
+        "o": [
+         "E is een ik-verhaal met twee ikken die om beurten vertellen",
+         "personaal werkt alleen bij toneel en niet bij proza",
+         "personaal volgt één personage, hier springt het tussen Karel en Els",
+         "er staat geen enkele gedachte van een personage in het fragment"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Personaal blijft bij één personage; wisselen wijst op alwetend.",
+        "uo": [
+         "Koos je \"E is een ik-verhaal met twee ikken die om beurten...\"? Dan denk je dat er twee vertellers zijn. Er staat geen \"ik\", de wisseling is van één verteller.",
+         "Koos je \"personaal werkt alleen bij toneel en niet bij proza\"? Dan denk je dat personaal bij drama hoort. Het is een perspectief in proza, dus dat klopt niet.",
+         "Klopt: een personale verteller blijft bij één personage, hier wisselt de focalisatie.",
+         "Koos je \"er staat geen enkele gedachte van een personage in...\"? Dan denk je dat gedachten ontbreken. \"dacht dat\" en \"dacht aan\" tonen gedachten, dus de redenering is onjuist."
+        ],
+        "uh": "Eén of meer?",
+        "ctx": "Fragment E: \"Karel keek naar de klok en zuchtte. Els zag zijn zucht en dacht dat hij haar nieuwe gerecht afkeurde. Karel dacht aan de vergadering van morgen; hij had niets gemerkt van wat zij op tafel had gezet. Hij nam een hap en zei dat het lekker was.\""
+       },
+       {
+        "v": "Wat valt op aan de manier waarop de ik-verteller in F over zichzelf praat?",
+        "o": [
+         "hij vertelt alles neutraal en zonder enig oordeel",
+         "hij verdedigt zichzelf en geeft anderen de schuld",
+         "hij weet precies wat de buurvrouw van hem denkt",
+         "hij verandert halverwege van perspectief naar een hij-vorm"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Een ik-verteller kan zichzelf mooier voorstellen dan hij is.",
+        "uo": [
+         "Koos je \"hij vertelt alles neutraal en zonder enig oordeel\"? Dan denk je dat hij neutraal is. Hij oordeelt over de buurvrouw en zichzelf, dus hij is niet neutraal.",
+         "Klopt: hij zegt eerlijk te zijn, maar zijn eigen verhaal spreekt dat tegen.",
+         "Koos je \"hij weet precies wat de buurvrouw van hem denkt\"? Dan denk je dat hij haar gedachten kent. Hij gokt hoe zij erover denkt, dus hij weet het niet.",
+         "Koos je \"hij verandert halverwege van perspectief naar een...\"? Dan denk je dat het perspectief wisselt. Het blijft een ik-verteller, het gaat om zijn betrouwbaarheid."
+        ],
+        "uh": "Let op de ik.",
+        "ctx": "Fragment F: \"Ik ben altijd eerlijk geweest, tegen iedereen. Dat de buurvrouw anders zegt, komt doordat ze mij nooit mocht. Ik heb haar nooit iets misdaan, behalve die ene keer dat ik haar fiets tegen de schutting zette omdat hij in de weg stond. Toen hij kapotging, was dat niet mijn schuld.\""
+       },
+       {
+        "v": "Welke zin in F laat de lezer twijfelen aan de betrouwbaarheid van de verteller?",
+        "o": [
+         "\"Ik ben altijd eerlijk geweest, tegen iedereen\" (bewering)",
+         "\"Dat de buurvrouw anders zegt, komt doordat\"",
+         "\"Toen hij kapotging, was dat niet mijn schuld\" (afschuiven)",
+         "\"Ik heb haar nooit iets misdaan, behalve die ene keer\""
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Let op ontkenning gevolgd door een uitzondering.",
+        "uo": [
+         "Koos je \"Ik ben altijd eerlijk geweest, tegen iedereen...\"? Dan denk je dat deze zin de twijfel opwekt. Hij is een bewering die je eerst nog kunt geloven, de tegenspraak volgt later.",
+         "Koos je \"Dat de buurvrouw anders zegt, komt doordat\"? Dan denk je dat hier de twijfel zit. Het is een neutraal zinsdeel, de tegenspraak zit in de misdaad-zin.",
+         "Koos je \"Toen hij kapotging, was dat niet mijn schuld...\"? Dan denk je dat dit de twijfel is. Het is een nieuw bezwaar, maar de tegenspraak zit eerder.",
+         "Klopt: hij ontkent iets en geeft het daarna meteen toe."
+        ],
+        "uh": "Tegenspraak = twijfel.",
+        "ctx": "Fragment F: \"Ik ben altijd eerlijk geweest, tegen iedereen. Dat de buurvrouw anders zegt, komt doordat ze mij nooit mocht. Ik heb haar nooit iets misdaan, behalve die ene keer dat ik haar fiets tegen de schutting zette omdat hij in de weg stond. Toen hij kapotging, was dat niet mijn schuld.\""
+       },
+       {
+        "v": "Waarom is een ik-verteller geschikt om onbetrouwbaarheid te laten zien?",
+        "o": [
+         "de lezer hoort ook de versie van de buurvrouw zelf",
+         "de lezer heeft alleen zijn eigen versie en kan die toetsen aan details",
+         "een ik-verteller kent alle gedachten van alle personages",
+         "een ik-verteller vertelt altijd de hele waarheid"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Een ik-verteller is niet automatisch betrouwbaar.",
+        "uo": [
+         "Koos je \"de lezer hoort ook de versie van de buurvrouw zelf\"? Dan denk je dat de lezer beide kanten hoort. Het verhaal is alleen van de ik, dus de lezer moet zelf toetsen.",
+         "Klopt: wie alleen één kant hoort, let op tegenstrijdigheden in het verhaal zelf.",
+         "Koos je \"een ik-verteller kent alle gedachten van alle...\"? Dan denk je dat een ik alles weet. Een ik kent alleen zichzelf, daarom kan zijn verhaal gekleurd zijn.",
+         "Koos je \"een ik-verteller vertelt altijd de hele waarheid\"? Dan denk je dat een ik betrouwbaar is. Een ik kan zichzelf mooier maken, en dat is hier het geval."
+        ],
+        "uh": "Toetsen aan details.",
+        "ctx": "Fragment F: \"Ik ben altijd eerlijk geweest, tegen iedereen. Dat de buurvrouw anders zegt, komt doordat ze mij nooit mocht. Ik heb haar nooit iets misdaan, behalve die ene keer dat ik haar fiets tegen de schutting zette omdat hij in de weg stond. Toen hij kapotging, was dat niet mijn schuld.\""
+       },
+       {
+        "v": "Wat betekent vertelperspectief?",
+        "o": [
+         "wie vertelt en vanuit welk standpunt het verhaal wordt verteld",
+         "de volgorde van de gebeurtenissen in het hele verhaal",
+         "het onderwerp waar het hele verhaal over gaat",
+         "de plaats en de tijd waar het verhaal speelt"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Het perspectief is het standpunt van de verteller.",
+        "uo": [
+         "Klopt: het gaat om de verteller en wat hij kan zien en weten.",
+         "Koos je \"de volgorde van de gebeurtenissen in het hele...\"? Dan denk je dat het perspectief de volgorde is. De volgorde heet chronologie, het perspectief gaat over de verteller.",
+         "Koos je \"het onderwerp waar het hele verhaal over gaat\"? Dan denk je dat het perspectief het onderwerp is. Het onderwerp is thema, het perspectief gaat om wie vertelt.",
+         "Koos je \"de plaats en de tijd waar het verhaal speelt\"? Dan denk je dat het perspectief de plaats is. De plaats heet ruimte, perspectief is het standpunt van de verteller."
+        ],
+        "uh": "Wie vertelt?"
+       },
+       {
+        "v": "Welk voornaamwoord hoort bij een hij/zij-verteller?",
+        "o": [
+         "ik, want de verteller vertelt",
+         "wij, want de verteller spreekt namens de groep",
+         "jij, want de verteller richt zich tot de lezer",
+         "hij of zij (en haar naam)"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Een hij/zij-verteller zegt hij of zij.",
+        "uo": [
+         "Koos je \"ik, want de verteller vertelt\"? Dan denk je dat de verteller altijd ik is. Alleen een ik-verteller zegt ik, een hij/zij-verteller niet.",
+         "Koos je \"wij, want de verteller spreekt namens de groep\"? Dan denk je dat wij het standaardvoornaamwoord is. Dat komt zelden voor, de hij/zij-vorm is de gewone.",
+         "Koos je \"jij, want de verteller richt zich tot de lezer\"? Dan denk je dat de verteller jij zegt. Dat gebeurt zelden, de standaard is hij of zij.",
+         "Klopt: in een hij/zij-verhaal staat de verteller buiten het verhaal en spreekt over personages."
+        ],
+        "uh": "Derde persoon."
+       },
+       {
+        "v": "Wat kenmerkt een alwetende verteller?",
+        "o": [
+         "hij kent alleen zijn eigen gedachten en gevoelens",
+         "hij vertelt alleen wat je kunt zien en horen",
+         "hij kent de gedachten van alle personages",
+         "hij is zelf een personage in het verhaal"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Alwetend betekent: kent de gedachten van meerdere personages.",
+        "uo": [
+         "Koos je \"hij kent alleen zijn eigen gedachten en gevoelens\"? Dan denk je dat een alwetende alleen zijn eigen gedachten kent. Dat is de ik-verteller, een alwetende kent die van allen.",
+         "Koos je \"hij vertelt alleen wat je kunt zien en horen\"? Dan denk je dat een alwetende alleen waarneemt. Dat is de neutrale verteller, de alwetende kent gedachten.",
+         "Klopt: hij weet meer dan elk personage afzonderlijk.",
+         "Koos je \"hij is zelf een personage in het verhaal\"? Dan denk je dat een alwetende een personage is. Hij staat meestal buiten het verhaal, dat is de ik-verteller."
+        ],
+        "uh": "Alles weten."
+       },
+       {
+        "v": "Wat kenmerkt een neutrale verteller?",
+        "o": [
+         "hij vertelt alle gedachten van alle personages",
+         "hij vertelt alleen zijn eigen gedachten",
+         "hij vertelt alleen wat waarneembaar is",
+         "hij volgt één personage van binnenuit"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Een neutrale verteller vertelt alleen het waarneembare.",
+        "uo": [
+         "Koos je \"hij vertelt alle gedachten van alle personages\"? Dan denk je dat een neutrale alles vertelt. Dat is de alwetende, een neutrale beperkt zich tot het zichtbare.",
+         "Koos je \"hij vertelt alleen zijn eigen gedachten\"? Dan denk je dat een neutrale zichzelf toont. Dat is de ik-verteller, een neutrale vertelt het zichtbare.",
+         "Klopt: gedachten en gevoelens blijven buiten beeld.",
+         "Koos je \"hij volgt één personage van binnenuit\"? Dan denk je dat een neutrale één personage volgt. Dat is de personale, een neutrale blijft aan de buitenkant."
+        ],
+        "uh": "Buitenkant."
+       },
+       {
+        "v": "Wat is focalisatie?",
+        "o": [
+         "de volgorde waarin de gebeurtenissen worden verteld in het verhaal",
+         "het thema of de boodschap waar het verhaal over gaat",
+         "de overgang van een beschrijving naar een dialoog",
+         "door wiens ogen de wereld van het verhaal wordt waargenomen"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Focalisatie is het standpunt van waaruit wordt waargenomen.",
+        "uo": [
+         "Koos je \"de volgorde waarin de gebeurtenissen worden verteld...\"? Dan denk je dat focalisatie de volgorde is. De volgorde heet chronologie, focalisatie gaat over waarnemen.",
+         "Koos je \"het thema of de boodschap waar het verhaal over gaat\"? Dan denk je dat focalisatie het thema is. Het thema is de kern, focalisatie is het waarneemstandpunt.",
+         "Koos je \"de overgang van een beschrijving naar een dialoog\"? Dan denk je dat focalisatie een overgang is. Het is niet een vorm van wisselen, maar het zien en weten.",
+         "Klopt: de focalisator is degene die waarneemt of ziet."
+        ],
+        "uh": "Wie ziet?"
+       },
+       {
+        "v": "Een leerling zegt: \"De ik-verteller in A is objectief.\" Welk argument weerlegt dat?",
+        "o": [
+         "hij gebruikt woorden als \"misschien\" en \"dacht ik\" die zijn eigen mening geven",
+         "hij noemt de bloemen, een neutrale feitelijkheid",
+         "hij vertelt in de verleden tijd, een neutrale keuze",
+         "hij noemt de deur, ook een neutrale vermelding"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Een ik-verteller geeft zijn eigen gedachten en aarzeling weer.",
+        "uo": [
+         "Klopt: een ik-verteller kleurt zijn verhaal met eigen gedachten en aarzeling.",
+         "Koos je \"hij noemt de bloemen, een neutrale feitelijkheid\"? Dan denk je dat de bloemen subjectief zijn. Een voorwerp noemen is neutraal, het bewijs zit in \"misschien\" en \"dacht ik\".",
+         "Koos je \"hij vertelt in de verleden tijd, een neutrale keuze\"? Dan denk je dat de tijd subjectief maakt. De tijd zegt niets over objectiviteit, het gaat om zijn gedachten.",
+         "Koos je \"hij noemt de deur, ook een neutrale vermelding\"? Dan denk je dat de deur subjectief is. Een deur is een feit, het bewijs zit in zijn gedachten."
+        ],
+        "uh": "Subjectief.",
+        "ctx": "Fragment A: \"Ik wist het al voordat ze de deur opendeed. Haar blik gleed langs mij heen, naar de gang, alsof ze nog iemand verwachtte. Ik zei niets over de bloemen die ik meebracht; ze lagen warm en zwaar in mijn hand. Misschien, dacht ik, was dit geen goed moment. Maar ik stond er nu eenmaal.\""
+       },
+       {
+        "v": "Een leerling herschrijft B als ik-verhaal. Welke aanpassing hoort daarbij?",
+        "o": [
+         "alleen de naam Sanne verandert in \"ik\", de rest blijft gelijk",
+         "\"Sanne\" en \"ze\" worden \"ik\", en \"dacht ze\" wordt \"dacht ik\"",
+         "de tante wordt ook \"ik\" en vertelt dan mee",
+         "het fragment moet in de toekomende tijd staan"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Ik-vorm betekent alle verwijzingen naar de verteller veranderen naar ik.",
+        "uo": [
+         "Koos je \"alleen de naam Sanne verandert in ik, de rest...\"? Dan denk je dat één woord volstaat. Ook \"ze\" en \"haar\" moeten naar \"ik\" en \"mijn\", anders klopt het niet.",
+         "Klopt: de persoonsvormen en voornaamwoorden veranderen naar de eerste persoon.",
+         "Koos je \"de tante wordt ook ik en vertelt dan mee\"? Dan denk je dat de tante meevertelt. Het is één ik, Sanne, en de tante blijft \"zij\".",
+         "Koos je \"het fragment moet in de toekomende tijd staan\"? Dan denk je dat de tijd verandert. De tijd blijft hetzelfde, alleen de persoon verandert."
+        ],
+        "uh": "Ik-vorm.",
+        "ctx": "Fragment B: \"Sanne drukte de bel in en wachtte. Zodra de deur openging, wist ze dat ze te vroeg was: haar tante had haar jas nog aan en keek langs haar heen. Sanne voelde de bloemen zwaar worden in haar hand. Ze had beter moeten bellen, dacht ze.\""
+       },
+       {
+        "v": "Welk perspectief past bij die zin?",
+        "o": [
+         "personaal, want Sanne is de focalisator van de zin",
+         "ik-perspectief, want er staat \"zij\" in de zin",
+         "neutraal, want er staat geen gevoel in de zin",
+         "alwetend, want de verteller weet meer dan Sanne"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Een zin als \"wat zij niet wist\" wijst op een alwetende verteller.",
+        "uo": [
+         "Koos je \"personaal, want Sanne is de focalisator van de zin\"? Dan denk je dat de zin Sannes weten toont. Hij toont juist wat zij niet weet, dus niet personaal.",
+         "Koos je \"ik-perspectief, want er staat zij in de zin\"? Dan denk je dat \"zij\" de ik aanwijst. Een ik zegt \"ik\", dit is een buitenstaander.",
+         "Koos je \"neutraal, want er staat geen gevoel in de zin\"? Dan denk je dat het neutraal is. De zin toont wat Sanne niet weet, een neutrale kent dat niet.",
+         "Klopt: zo'n zin wijst op een verteller die buiten Sannes waarneming staat."
+        ],
+        "uh": "Meer weten dan het personage.",
+        "ctx": "Een leerling schrijft: \"Wat de verteller hier doet, is meer weten dan Sanne en de lezer waarschuwen.\" Het gaat om de zin \"Wat zij niet wist, was ...\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Sanne drukte de bel in en wachtte. Zodra de deur openging, wist ze dat ze te vroeg was: haar tante had haar jas nog aan en keek langs haar heen. Sanne voelde de bloemen zwaar worden in haar hand. Ze had beter moeten bellen, dacht ze.\"",
+        "v": "Welk vertelperspectief heeft dit fragment? Geef twee argumenten uit de tekst.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Personaal (1p). Argumenten: de verteller volgt alleen Sanne en kent haar gedachten (\"dacht ze\", \"wist ze\") (1p); de tante wordt alleen van buitenaf beschreven, zoals Sanne haar ziet (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Sanne drukte de bel in en wachtte. Wat zij niet wist, was dat haar tante al een uur naar de gang keek, bang voor het nieuws dat dit bezoek zou brengen. Tante Ria had de hele nacht niet geslapen en zou later die dag haar huis verlaten. Zo gaat het vaak: wie bloemen brengt, weet zelden wat hij komt halen.\"",
+        "v": "Welk vertelperspectief heeft dit fragment en welke zin laat zien dat de verteller commentaar geeft?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Alwetend of auctoriaal (1p), want de verteller weet meer dan Sanne (1p). De slotzin \"Zo gaat het vaak ...\" is algemeen commentaar van de verteller (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"De bel ging. Een vrouw opende de deur, met een jas aan. Een meisje met bloemen stond op de stoep. De vrouw keek langs het meisje heen. Ze zeiden niets. Na enkele seconden stapte het meisje naar binnen.\"",
+        "v": "Welk perspectief is dit? Waarom kan de zin \"Het meisje voelde zich ongemakkelijk\" er niet in?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Neutraal (1p). Een neutrale verteller vertelt alleen wat waarneembaar is (1p); een gevoel is niet zichtbaar of hoorbaar (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Karel keek naar de klok en zuchtte. Els zag zijn zucht en dacht dat hij haar nieuwe gerecht afkeurde. Karel dacht aan de vergadering van morgen; hij had niets gemerkt van wat zij op tafel had gezet. Hij nam een hap en zei dat het lekker was.\"",
+        "v": "Welk misverstand ziet de lezer dat Karel en Els niet zien? Welk perspectief maakt dat mogelijk?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Els denkt dat Karel haar gerecht afkeurt, terwijl Karel aan zijn werk denkt (1p). Het is een alwetend perspectief dat tussen beide personages wisselt, zodat de lezer meer weet dan zij (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Ik ben altijd eerlijk geweest, tegen iedereen. Dat de buurvrouw anders zegt, komt doordat ze mij nooit mocht. Ik heb haar nooit iets misdaan, behalve die ene keer dat ik haar fiets tegen de schutting zette omdat hij in de weg stond. Toen hij kapotging, was dat niet mijn schuld.\"",
+        "v": "Waarom is de verteller in dit fragment niet betrouwbaar? Noem twee aanwijzingen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij zegt eerlijk te zijn, maar geeft zelf toe iets te hebben gedaan (1p). Hij schuift de schuld af op een ander (\"niet mijn schuld\") en veronderstelt wat de buurvrouw denkt (1p)."
+       }
+      ]
      }
     ]
    }

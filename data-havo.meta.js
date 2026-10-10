@@ -677,6 +677,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "F2",
+      "lo": "nl.F.2",
+      "gs": 2,
+      "naam": "Verteller, vertelperspectief en focalisatie",
+      "beschrijving": "Je bepaalt wie er vertelt en wat die verteller kan weten (ik, personaal, alwetend, neutraal), door wiens ogen je het verhaal ziet en hoe betrouwbaar de verteller is.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Ik-verteller",
+       "Personale verteller",
+       "Alwetende verteller",
+       "Neutrale verteller",
+       "Focalisatie",
+       "Betrouwbaarheid van de verteller"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
