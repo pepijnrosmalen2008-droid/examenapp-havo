@@ -28786,6 +28786,694 @@ var VAKKEN = [
       "t": "Hyperbool",
       "d": "sterke overdrijving ik heb je duizend keer gebeld"
      }
+    ],
+    "leerdoelen": [
+     {
+      "id": "F1",
+      "lo": "nl.F.1",
+      "gs": 2,
+      "naam": "Literaire tekstsoorten herkennen en onderscheiden",
+      "beschrijving": "Je herkent proza, poëzie en drama aan hun vorm, onderscheidt een literaire tekst van een gebruikstekst en onderbouwt wat een tekst bij je oproept.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Proza, poëzie en drama herkennen",
+       "Drama: dialoog, monoloog en regieaanwijzing",
+       "Poëzie: versregel en strofe",
+       "Roman, novelle en kort verhaal",
+       "Literair of gebruikstekst",
+       "Een leeservaring onderbouwen"
+      ],
+      "sam": "Literaire teksten zijn proza (verteller, doorlopende zinnen), poëzie (versregels, vaak in strofen) of drama (sprekers met namen, dialoog, monoloog en regieaanwijzingen). De vorm bepaalt de soort, niet het onderwerp, de lengte van de zinnen of het medium. Een literaire tekst verschilt van een gebruikstekst doordat beleving en interpretatie ertoe doen. Een leeservaring noemt wat een tekst oproept en onderbouwt dat met een detail uit het werk.",
+      "begrippen": [
+       {
+        "t": "Proza",
+        "d": "Verhalende tekst in doorlopende zinnen en alinea's, met een verteller."
+       },
+       {
+        "t": "Poëzie",
+        "d": "Tekst in versregels, vaak gegroepeerd in strofen."
+       },
+       {
+        "t": "Drama",
+        "d": "Tekst bedoeld voor toneel, met sprekers, dialoog en regieaanwijzingen."
+       },
+       {
+        "t": "Strofe",
+        "d": "Een groep versregels in een gedicht."
+       },
+       {
+        "t": "Versregel",
+        "d": "Een regel van een gedicht."
+       },
+       {
+        "t": "Dialoog",
+        "d": "Gesprek tussen twee of meer personages."
+       },
+       {
+        "t": "Monoloog",
+        "d": "Lange tekst van één personage."
+       },
+       {
+        "t": "Regieaanwijzing",
+        "d": "Aanwijzing voor spelers over handeling of toon, vaak tussen haakjes."
+       },
+       {
+        "t": "Roman",
+        "d": "Lang verhalend werk, vaak met meerdere verhaallijnen."
+       },
+       {
+        "t": "Novelle",
+        "d": "Compacter verhalend werk dan een roman."
+       },
+       {
+        "t": "Gebruikstekst",
+        "d": "Een tekst met een praktisch doel, zoals een handleiding."
+       },
+       {
+        "t": "Leeservaring",
+        "d": "Wat een tekst bij jou oproept, onderbouwd met iets uit het werk."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke tekstsoort is fragment P?",
+        "o": [
+         "poëzie, omdat het fragment beeldend is geschreven met de grijze straat",
+         "proza",
+         "drama, omdat er iets wordt gezegd en gedaan",
+         "een gebruikstekst, omdat het een gebeurtenis beschrijft"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Doorlopende zinnen met een verteller horen bij proza.",
+        "uo": [
+         "Koos je \"poëzie, omdat het fragment beeldend is geschreven...\"? Dan denk je dat beeldend taalgebruik poëzie maakt. Poëzie herken je aan versregels en strofen, en dit zijn doorlopende zinnen in een alinea.",
+         "Klopt: een verteller vertelt in doorlopende zinnen wat er gebeurt, zonder versregels of toneeltekst.",
+         "Koos je \"drama, omdat er iets wordt gezegd en gedaan\"? Dan denk je dat een gesprek drama is. In drama spreken de personages zelf zonder verteller, maar hier vertelt een verteller wat zij zegt en doet.",
+         "Koos je \"een gebruikstekst, omdat het een gebeurtenis...\"? Dan denk je dat een beschrijving een gebruikstekst is. Het fragment heeft geen praktisch doel, maar roept een stemming op en is dus literair proza."
+        ],
+        "uh": "Verteller = proza.",
+        "ctx": "Fragment P: \"Ze stond al een kwartier bij het raam toen de bus eindelijk de hoek om kwam. Haar moeder had gezegd dat ze niet moest wachten, maar wachten was het enige wat ze kon doen. 'Hij komt vast niet,' mompelde ze, en toch bleef ze staan, met haar jas al aan en de sleutels in haar hand. Buiten kleurde de straat grijs. Pas toen de bus doorreed zonder te stoppen, voelde ze hoe zwaar haar tas was.\""
+       },
+       {
+        "v": "Waaruit blijkt in fragment P dat er een verteller is?",
+        "o": [
+         "uit de aanhalingstekens, want alleen een verteller gebruikt die",
+         "uit de naam van het personage, want die ontbreekt bewust",
+         "uit de lengte van het fragment, want lange teksten hebben een verteller",
+         "uit zinnen als \"mompelde ze\" en \"voelde ze\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Vertellende zinnen als \"mompelde ze\" tonen dat er een verteller is.",
+        "uo": [
+         "Koos je \"uit de aanhalingstekens, want alleen een verteller...\"? Dan denk je dat aanhalingstekens de verteller aanwijzen. Ook personages in een gesprek krijgen aanhalingstekens, dus het bewijs zit in de beschrijvende zinnen eromheen.",
+         "Koos je \"uit de naam van het personage, want die ontbreekt...\"? Dan denk je dat een naam een verteller bewijst. Het fragment noemt geen naam, maar toch is er een verteller, en wel via de vertellende zinnen.",
+         "Koos je \"uit de lengte van het fragment, want lange teksten...\"? Dan denk je dat lengte een verteller aanwijst. Ook korte stukken proza hebben een verteller, en dat zie je aan wat er wordt verteld.",
+         "Klopt: een stem buiten het personage vertelt wat zij zegt en voelt, zoals alleen in proza kan."
+        ],
+        "uh": "Wie vertelt?",
+        "ctx": "Fragment P: \"Ze stond al een kwartier bij het raam toen de bus eindelijk de hoek om kwam. Haar moeder had gezegd dat ze niet moest wachten, maar wachten was het enige wat ze kon doen. 'Hij komt vast niet,' mompelde ze, en toch bleef ze staan, met haar jas al aan en de sleutels in haar hand. Buiten kleurde de straat grijs. Pas toen de bus doorreed zonder te stoppen, voelde ze hoe zwaar haar tas was.\""
+       },
+       {
+        "v": "Een leerling vindt fragment P sterk \"door de zware tas aan het eind\". Waarom is dat een goede leeservaring?",
+        "o": [
+         "hij noemt een indruk en onderbouwt die met een detail",
+         "hij geeft zijn mening, en een eerlijke mening is genoeg",
+         "hij vat de inhoud samen en geeft er een cijfer bij",
+         "hij zegt dat het uit een roman komt, wat zijn oordeel bevestigt"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Een leeservaring bevat een indruk plus een onderbouwing uit het werk.",
+        "uo": [
+         "Klopt: een beargumenteerde leeservaring noemt de beleving én een concreet onderdeel van het werk als bewijs.",
+         "Koos je \"hij geeft zijn mening, en een eerlijke mening is...\"? Dan denk je dat een mening zonder onderbouwing volstaat. Het gaat erom dat je je indruk met iets uit het werk staaft, en dat doet hij hier met de tas.",
+         "Koos je \"hij vat de inhoud samen en geeft er een cijfer bij\"? Dan denk je dat samenvatten en een cijfer genoeg zijn. Dit is een onderbouwde indruk, geen samenvatting of cijfer.",
+         "Koos je \"hij zegt dat het uit een roman komt, wat zijn...\"? Dan denk je dat de herkomst een leeservaring is. De leerling noemt geen herkomst; hij onderbouwt zijn indruk met de tas."
+        ],
+        "uh": "Indruk + bewijs.",
+        "ctx": "Fragment P: \"Ze stond al een kwartier bij het raam toen de bus eindelijk de hoek om kwam. Haar moeder had gezegd dat ze niet moest wachten, maar wachten was het enige wat ze kon doen. 'Hij komt vast niet,' mompelde ze, en toch bleef ze staan, met haar jas al aan en de sleutels in haar hand. Buiten kleurde de straat grijs. Pas toen de bus doorreed zonder te stoppen, voelde ze hoe zwaar haar tas was.\""
+       },
+       {
+        "v": "Een klasgenoot zegt: \"Dit is vast een roman, want het gaat over een meisje.\" Welke reactie is juist?",
+        "o": [
+         "klopt, want proza over een personage is altijd een roman",
+         "nee, want een roman bevat nooit zo'n korte scène",
+         "nee: het is proza, maar de omvang blijft onbekend",
+         "klopt, want alleen een roman heeft een verteller"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Uit een fragment lees je de tekstsoort, niet de omvang van het werk.",
+        "uo": [
+         "Koos je \"klopt, want proza over een personage is altijd een...\"? Dan denk je dat proza over een personage vanzelf een roman is. Novelles en korte verhalen gaan ook over personages, dus het onderwerp bepaalt het niet.",
+         "Koos je \"nee, want een roman bevat nooit zo'n korte scène\"? Dan denk je dat romans geen korte scènes hebben. Een roman bestaat uit veel scènes, dus dit kan er best één van zijn.",
+         "Klopt: het fragment toont de tekstsoort (proza), niet de lengte van het hele werk.",
+         "Koos je \"klopt, want alleen een roman heeft een verteller\"? Dan denk je dat alleen romans een verteller hebben. Elk proza heeft een verteller, dus dat bewijst niets over de omvang."
+        ],
+        "uh": "Fragment ≠ geheel.",
+        "ctx": "Fragment P: \"Ze stond al een kwartier bij het raam toen de bus eindelijk de hoek om kwam. Haar moeder had gezegd dat ze niet moest wachten, maar wachten was het enige wat ze kon doen. 'Hij komt vast niet,' mompelde ze, en toch bleef ze staan, met haar jas al aan en de sleutels in haar hand. Buiten kleurde de straat grijs. Pas toen de bus doorreed zonder te stoppen, voelde ze hoe zwaar haar tas was.\""
+       },
+       {
+        "v": "Welke tekstsoort is fragment G?",
+        "o": [
+         "proza, omdat de zinnen een verhaaltje vormen",
+         "drama, omdat er \"jij\" en \"ik\" in voorkomen",
+         "poëzie",
+         "een brief, omdat de spreker iemand aanspreekt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Versregels in strofen wijzen op poëzie.",
+        "uo": [
+         "Koos je \"proza, omdat de zinnen een verhaaltje vormen\"? Dan denk je dat een verhaaltje proza is. Proza loopt door in alinea's, dit staat in versregels met lege regels ertussen.",
+         "Koos je \"drama, omdat er jij en ik in voorkomen\"? Dan denk je dat jij en ik drama aanduiden. Er zijn geen namen met dialoog of regieaanwijzingen, dus het is geen toneeltekst.",
+         "Klopt: korte versregels, gegroepeerd in strofen, zijn kenmerkend voor een gedicht.",
+         "Koos je \"een brief, omdat de spreker iemand aanspreekt\"? Dan denk je dat aanspreken een brief is. Het is een gedicht dat zich tot een \"jij\" richt, maar de regelindeling blijft poëzie."
+        ],
+        "uh": "Regels en strofen.",
+        "ctx": "Fragment G: \"Het huis is stil / de klok loopt voort / op een andere tijd // Jouw jas hangt nog / aan dezelfde haak / alsof je zo terugkomt // Ik laat het licht aan\" (de schuine strepen geven een nieuwe regel aan, de dubbele een lege regel)."
+       },
+       {
+        "v": "Hoeveel strofen heeft fragment G en hoeveel regels telt de laatste?",
+        "o": [
+         "drie strofen; de laatste heeft één regel",
+         "twee strofen; de laatste heeft drie regels",
+         "drie strofen; de laatste heeft drie regels",
+         "zeven strofen, één per regel"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Tel de groepen regels tussen de lege regels.",
+        "uo": [
+         "Klopt: de lege regels scheiden drie groepen, de laatste groep bestaat uit \"Ik laat het licht aan\".",
+         "Koos je \"twee strofen; de laatste heeft drie regels\"? Dan denk je dat er twee groepen zijn. Er zijn twee lege regels, dus drie groepen, en de laatste groep is één regel.",
+         "Koos je \"drie strofen; de laatste heeft drie regels\"? Dan denk je dat alle strofen gelijk zijn. De laatste strofe is korter dan de andere, namelijk één regel.",
+         "Koos je \"zeven strofen, één per regel\"? Dan denk je dat elke regel een strofe is. Een strofe is een groep regels, en hier zijn er drie groepen."
+        ],
+        "uh": "Strofen tellen.",
+        "ctx": "Fragment G: \"Het huis is stil / de klok loopt voort / op een andere tijd // Jouw jas hangt nog / aan dezelfde haak / alsof je zo terugkomt // Ik laat het licht aan\" (de schuine strepen geven een nieuwe regel aan, de dubbele een lege regel)."
+       },
+       {
+        "v": "Het gedicht rijmt niet. Een leerling zegt daarom dat het geen poëzie is. Hoe beoordeel je dat?",
+        "o": [
+         "juist: poëzie rijmt altijd, dus dit gedicht is proza",
+         "juist: zonder rijm is het gewoon een gebruikstekst",
+         "onjuist: poëzie rijmt nooit, in geen enkel gedicht",
+         "onjuist: rijm is niet vereist, regels en strofen wel"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Poëzie hoeft niet te rijmen.",
+        "uo": [
+         "Koos je \"juist: poëzie rijmt altijd, dus dit gedicht is proza\"? Dan denk je dat rijm verplicht is. Dan zouden veel gedichten geen poëzie zijn, terwijl vorm en regelindeling de soort bepalen.",
+         "Koos je \"juist: zonder rijm is het gewoon een gebruikstekst\"? Dan denk je dat rijm een tekst literair maakt. Dit gedicht heeft beeld en strofen, dus het is literair en geen gebruikstekst.",
+         "Koos je \"onjuist: poëzie rijmt nooit, in geen enkel gedicht\"? Dan denk je dat rijm in poëzie verboden is. Rijm komt vaak voor, maar hoeft niet, dus \"nooit\" is net zo fout als \"altijd\".",
+         "Klopt: veel gedichten rijmen niet, de vorm van regels en strofen bepaalt de soort."
+        ],
+        "uh": "Rijm is geen eis.",
+        "ctx": "Fragment G: \"Het huis is stil / de klok loopt voort / op een andere tijd // Jouw jas hangt nog / aan dezelfde haak / alsof je zo terugkomt // Ik laat het licht aan\" (de schuine strepen geven een nieuwe regel aan, de dubbele een lege regel)."
+       },
+       {
+        "v": "Wat valt op aan de vorm van de laatste strofe in fragment G en welk effect heeft dat?",
+        "o": [
+         "ze is langer dan de andere strofen en geeft daardoor rust",
+         "één regel, die daardoor nadruk krijgt",
+         "ze rijmt op de eerste strofe en sluit zo de cirkel",
+         "ze bevat dialoog tussen twee personages"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Een afwijkende strofe kan een regel nadruk geven.",
+        "uo": [
+         "Koos je \"ze is langer dan de andere strofen en geeft...\"? Dan denk je dat de laatste strofe lang is. Ze is juist de kortste, en dat maakt de slotregel opvallend.",
+         "Klopt: de afwijkende, korte laatste strofe laat de slotregel apart uitkomen.",
+         "Koos je \"ze rijmt op de eerste strofe en sluit zo de cirkel\"? Dan denk je dat er rijm is. Het gedicht rijmt niet, de nadruk zit in de korte strofe.",
+         "Koos je \"ze bevat dialoog tussen twee personages\"? Dan denk je dat er een gesprek is. Er spreekt één \"ik\", en de vorm laat de slotregel alleen staan."
+        ],
+        "uh": "Vorm = effect.",
+        "ctx": "Fragment G: \"Het huis is stil / de klok loopt voort / op een andere tijd // Jouw jas hangt nog / aan dezelfde haak / alsof je zo terugkomt // Ik laat het licht aan\" (de schuine strepen geven een nieuwe regel aan, de dubbele een lege regel)."
+       },
+       {
+        "v": "Welke tekstsoort is fragment D?",
+        "o": [
+         "proza, omdat het een verhaal in een keuken is",
+         "poëzie, omdat de beurten kort zijn",
+         "een verslag, omdat er een tijd en plaats staan",
+         "drama"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Sprekers met namen en regieaanwijzingen horen bij drama.",
+        "uo": [
+         "Koos je \"proza, omdat het een verhaal in een keuken is\"? Dan denk je dat een verhaal altijd proza is. Hier spreken personages zelf zonder verteller, met namen en haakjes: dat is toneel.",
+         "Koos je \"poëzie, omdat de beurten kort zijn\"? Dan denk je dat korte beurten poëzie zijn. Poëzie heeft versregels en strofen, dit heeft sprekers en regieaanwijzingen.",
+         "Koos je \"een verslag, omdat er een tijd en plaats staan\"? Dan denk je dat tijd en plaats een verslag aanwijzen. Ze staan hier als decorinformatie van het bedrijf, en horen bij toneel.",
+         "Klopt: personages met naamaanduiding spreken zelf en regieaanwijzingen sturen de spelers."
+        ],
+        "uh": "Namen + regie = drama.",
+        "ctx": "Fragment D: \"Tweede bedrijf. Een keuken, 's avonds. (Els staat bij het fornuis. Karel komt binnen met zijn jas nog aan.) KAREL: Je hebt niet gewacht. ELS (zonder om te kijken): Ik wacht al twintig jaar. KAREL: Dat is niet eerlijk. ELS: Nee. (Ze zet twee borden op tafel en zet er daarna één terug in de kast.)\""
+       },
+       {
+        "v": "Wat zijn de gedeelten tussen haakjes in fragment D?",
+        "o": [
+         "gedachten van Els en Karel die het publiek hoort",
+         "regieaanwijzingen voor de spelers",
+         "tekst van een verteller die het toneelstuk toelicht",
+         "gesproken tekst die zachter wordt uitgesproken"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Tussen haakjes staan regieaanwijzingen.",
+        "uo": [
+         "Koos je \"gedachten van Els en Karel die het publiek hoort\"? Dan denk je dat de haakjes gedachten bevatten. Gedachten komen in toneel via een monoloog of aparte tekst, en de haakjes bevatten aanwijzingen.",
+         "Klopt: ze zeggen wat de spelers doen en hoe ze iets zeggen, zonder dat het gesproken tekst is.",
+         "Koos je \"tekst van een verteller die het toneelstuk toelicht\"? Dan denk je dat er een verteller is. Toneel kent meestal geen verteller, de haakjes zijn aanwijzingen van de schrijver.",
+         "Koos je \"gesproken tekst die zachter wordt uitgesproken\"? Dan denk je dat haakjes zachte tekst zijn. Een toon staat soms in haakjes bij een naam, maar de losse haakjes zijn handelingen."
+        ],
+        "uh": "Haakjes = regie.",
+        "ctx": "Fragment D: \"Tweede bedrijf. Een keuken, 's avonds. (Els staat bij het fornuis. Karel komt binnen met zijn jas nog aan.) KAREL: Je hebt niet gewacht. ELS (zonder om te kijken): Ik wacht al twintig jaar. KAREL: Dat is niet eerlijk. ELS: Nee. (Ze zet twee borden op tafel en zet er daarna één terug in de kast.)\""
+       },
+       {
+        "v": "Wat zegt de laatste regieaanwijzing van fragment D wat de dialoog niet zegt, en waarom past dat bij drama?",
+        "o": [
+         "Els en Karel gaan eten; een regieaanwijzing is altijd een gewone handeling",
+         "de keuken is te klein; de verteller licht dat nog even toe aan het publiek",
+         "Els sluit Karel buiten; zonder verteller toont een handeling wat niemand zegt",
+         "Karel is te laat; maar de dialoog vertelt dat al, dus de regie voegt niets toe"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "In drama laat een handeling zien wat niet wordt gezegd.",
+        "uo": [
+         "Koos je \"Els en Karel gaan eten; een regieaanwijzing is...\"? Dan denk je dat het gebaar niets bijzonders betekent. Eén bord terugzetten wijkt af van het dekken van twee borden, dus het heeft een betekenis.",
+         "Koos je \"de keuken is te klein; de verteller licht dat nog...\"? Dan denk je dat de keuken het onderwerp is. Er is geen verteller, en het gebaar gaat over de verhouding tussen Els en Karel.",
+         "Klopt: het gebaar laat zien wat Els voelt, zonder dat iemand het uitspreekt.",
+         "Koos je \"Karel is te laat; maar de dialoog vertelt dat al,...\"? Dan denk je dat dit het nieuwe punt is. Karel zegt zelf al dat zij niet gewacht heeft, het gebaar voegt toe dat ze hem uitsluit."
+        ],
+        "uh": "Gebaar = betekenis.",
+        "ctx": "Fragment D: \"Tweede bedrijf. Een keuken, 's avonds. (Els staat bij het fornuis. Karel komt binnen met zijn jas nog aan.) KAREL: Je hebt niet gewacht. ELS (zonder om te kijken): Ik wacht al twintig jaar. KAREL: Dat is niet eerlijk. ELS: Nee. (Ze zet twee borden op tafel en zet er daarna één terug in de kast.)\""
+       },
+       {
+        "v": "Hoe herken je in fragment D wie er spreekt?",
+        "o": [
+         "aan de naam in hoofdletters voor de tekst",
+         "aan de aanhalingstekens rond de gesproken zinnen van elk personage",
+         "aan \"zei hij\" en \"zei zij\" die na de zinnen staan",
+         "aan de volgorde van de beurten, zonder dat er namen nodig zijn"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "In toneelteksten staan namen voor de beurten.",
+        "uo": [
+         "Klopt: in toneelteksten staat de naam van de spreker voor elke beurt.",
+         "Koos je \"aan de aanhalingstekens rond de gesproken zinnen...\"? Dan denk je dat aanhalingstekens de sprekers aanwijzen. Die ontbreken hier juist, de naam voor de tekst geeft de spreker.",
+         "Koos je \"aan zei hij en zei zij die na de zinnen staan\"? Dan denk je dat een verteller de sprekers noemt. Dat gebeurt in proza, hier staat de naam voor de tekst.",
+         "Koos je \"aan de volgorde van de beurten, zonder dat er namen...\"? Dan denk je dat de volgorde genoeg is. In toneelteksten staan altijd namen, zodat de speler weet wanneer hij moet spreken."
+        ],
+        "uh": "Naam voor de tekst.",
+        "ctx": "Fragment D: \"Tweede bedrijf. Een keuken, 's avonds. (Els staat bij het fornuis. Karel komt binnen met zijn jas nog aan.) KAREL: Je hebt niet gewacht. ELS (zonder om te kijken): Ik wacht al twintig jaar. KAREL: Dat is niet eerlijk. ELS: Nee. (Ze zet twee borden op tafel en zet er daarna één terug in de kast.)\""
+       },
+       {
+        "v": "Welke gespreksvorm is fragment M en waaraan herken je dat?",
+        "o": [
+         "een monoloog, want één personage spreekt lang tot de zaal",
+         "een dialoog, want hij noemt \"zij\" en \"jullie\"",
+         "een vertelling, want hij vertelt over dertig jaar",
+         "een regieaanwijzing, want de eerste regel staat tussen haakjes"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Eén spreker die lang aan het woord is, geeft een monoloog.",
+        "uo": [
+         "Klopt: Lucas is de enige spreker en richt zich tot het publiek.",
+         "Koos je \"een dialoog, want hij noemt zij en jullie\"? Dan denk je dat het noemen van anderen een dialoog maakt. Er antwoordt niemand, dus het is één spreker: een monoloog.",
+         "Koos je \"een vertelling, want hij vertelt over dertig jaar\"? Dan denk je dat vertellen proza is. Hier spreekt een personage in een toneeltekst, en dat heet een monoloog.",
+         "Koos je \"een regieaanwijzing, want de eerste regel staat...\"? Dan denk je dat de hele tekst regie is. Alleen het deel tussen haakjes is regie, de rest is Lucas die spreekt."
+        ],
+        "uh": "Eén stem = monoloog.",
+        "ctx": "Fragment M: \"(Het podium is leeg. Lucas staat in het licht en spreekt tot de zaal.) LUCAS: Dertig jaar heb ik gezwegen. Dertig jaar heb ik gedaan alsof de stilte in dit huis een vorm van rust was. Nu zeg ik het, hier, tegen jullie, omdat zij niet meer luistert.\""
+       },
+       {
+        "v": "Een leerling noemt fragment M proza. Welke twee kenmerken weerleggen dat?",
+        "o": [
+         "de aanhalingstekens en de verleden tijd van de zinnen",
+         "de lengte van het fragment en het ontbreken van komma's",
+         "de naam LUCAS en de regieaanwijzing",
+         "het onderwerp (dertig jaar) en het woord \"jullie\""
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Namen voor de tekst en regieaanwijzingen: dan is het drama.",
+        "uo": [
+         "Koos je \"de aanhalingstekens en de verleden tijd van de...\"? Dan denk je dat die tekens drama aanwijzen. Er staan geen aanhalingstekens in het fragment, de kenmerken zijn naam en regie.",
+         "Koos je \"de lengte van het fragment en het ontbreken van...\"? Dan denk je dat lengte en komma's de soort bepalen. Ze zeggen niets over proza of drama, de naam en regie wel.",
+         "Klopt: namen voor de beurten en regieaanwijzingen horen bij toneel, niet bij een vertelling.",
+         "Koos je \"het onderwerp (dertig jaar) en het woord jullie\"? Dan denk je dat het onderwerp bepalend is. Ook in proza kan het over dertig jaar gaan, de vorm bepaalt de soort."
+        ],
+        "uh": "Vorm bewijst.",
+        "ctx": "Fragment M: \"(Het podium is leeg. Lucas staat in het licht en spreekt tot de zaal.) LUCAS: Dertig jaar heb ik gezwegen. Dertig jaar heb ik gedaan alsof de stilte in dit huis een vorm van rust was. Nu zeg ik het, hier, tegen jullie, omdat zij niet meer luistert.\""
+       },
+       {
+        "v": "Beide teksten gaan over koffie zetten. Welk verschil bepaalt dat V literair is en H een gebruikstekst?",
+        "o": [
+         "V is langer dan H en daarom literair, want lengte telt",
+         "V roept gemis op, H geeft alleen aanwijzingen",
+         "V bevat geen werkwoorden, terwijl H er veel heeft",
+         "H is fictie en V is non-fictie, dat bepaalt het verschil"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Literair is wat beleving en interpretatie vraagt, niet wat het onderwerp is.",
+        "uo": [
+         "Koos je \"V is langer dan H en daarom literair, want lengte...\"? Dan denk je dat lengte literair maakt. V en H zijn ongeveer even lang, het verschil zit in doel en betekenis.",
+         "Klopt: het gaat om doel en vorm, niet om het onderwerp.",
+         "Koos je \"V bevat geen werkwoorden, terwijl H er veel heeft\"? Dan denk je dat werkwoorden het verschil maken. Beide teksten bevatten werkwoorden, het verschil is het doel.",
+         "Koos je \"H is fictie en V is non-fictie, dat bepaalt het...\"? Dan denk je dat het om waarheid gaat. V is fictie, H is een instructie, en het criterium is doel en betekenis."
+        ],
+        "uh": "Doel en vorm.",
+        "ctx": "Tekst H: \"Zet het apparaat op een vlakke ondergrond. Vul het waterreservoir tot de streep MAX. Plaats een filter in de houder en doe er twee schepjes koffie in. Druk op de aan-knop. Na vijf minuten is de koffie klaar.\" Tekst V: \"Elke ochtend zette ze twee koppen koffie, ook nu hij er niet meer was. De tweede kop liet ze koud worden, zoals haar vader nooit had gedaan. Het apparaat pruttelde zoals vroeger, en ze luisterde ernaar alsof het een antwoord kon geven.\""
+       },
+       {
+        "v": "Een leerling zegt: \"Over koffie schrijf je geen literatuur.\" Hoe weerleg je dat met tekst V?",
+        "o": [
+         "V is een gebruikstekst, want elke tekst over een alledaags onderwerp is er een",
+         "H is ook literair, want het beschrijft een handeling stap voor stap",
+         "V is literair omdat het langer is dan H",
+         "het onderwerp beslist niet: V toont met koffie gemis"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Het onderwerp bepaalt niet of een tekst literair is.",
+        "uo": [
+         "Koos je \"V is een gebruikstekst, want elke tekst over een...\"? Dan denk je dat een alledaags onderwerp een gebruikstekst oplevert. Literatuur maakt gewone dingen betekenisvol, dus het onderwerp beslist niet.",
+         "Koos je \"H is ook literair, want het beschrijft een...\"? Dan denk je dat een beschrijving literair maakt. H heeft een praktisch doel, en vraagt geen interpretatie.",
+         "Koos je \"V is literair omdat het langer is dan H\"? Dan denk je dat lengte de reden is. V en H zijn even lang, het verschil zit in beleving en interpretatie.",
+         "Klopt: V gebruikt een gewoon voorwerp om een gevoel te tonen."
+        ],
+        "uh": "Behandeling telt.",
+        "ctx": "Tekst H: \"Zet het apparaat op een vlakke ondergrond. Vul het waterreservoir tot de streep MAX. Plaats een filter in de houder en doe er twee schepjes koffie in. Druk op de aan-knop. Na vijf minuten is de koffie klaar.\" Tekst V: \"Elke ochtend zette ze twee koppen koffie, ook nu hij er niet meer was. De tweede kop liet ze koud worden, zoals haar vader nooit had gedaan. Het apparaat pruttelde zoals vroeger, en ze luisterde ernaar alsof het een antwoord kon geven.\""
+       },
+       {
+        "v": "Welke tekstsoort is tekst H?",
+        "o": [
+         "proza, omdat er gewone zinnen in staan",
+         "een gebruikstekst: een instructie",
+         "poëzie, omdat de zinnen kort en bondig zijn",
+         "drama, omdat er opdrachten aan de lezer in staan"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Een instructie is een gebruikstekst.",
+        "uo": [
+         "Koos je \"proza, omdat er gewone zinnen in staan\"? Dan denk je dat zinnen proza maken. Proza is verhalend en literair, deze tekst is een instructie.",
+         "Klopt: de tekst vertelt je wat je moet doen en heeft geen literaire beleving als doel.",
+         "Koos je \"poëzie, omdat de zinnen kort en bondig zijn\"? Dan denk je dat korte zinnen poëzie opleveren. Er zijn geen versregels of strofen, het is een gebruikstekst.",
+         "Koos je \"drama, omdat er opdrachten aan de lezer in staan\"? Dan denk je dat opdrachten drama zijn. Er zijn geen sprekers of regieaanwijzingen, dus het is een instructie."
+        ],
+        "uh": "Doel = praktisch.",
+        "ctx": "Tekst H: \"Zet het apparaat op een vlakke ondergrond. Vul het waterreservoir tot de streep MAX. Plaats een filter in de houder en doe er twee schepjes koffie in. Druk op de aan-knop. Na vijf minuten is de koffie klaar.\""
+       },
+       {
+        "v": "Waaruit bestaat een gedicht?",
+        "o": [
+         "uit versregels, vaak gegroepeerd in strofen",
+         "uit hoofdstukken met alinea's, zoals een roman",
+         "uit beurten met sprekers en regieaanwijzingen",
+         "uit kopjes en opsommingen met tekens"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Een gedicht is opgebouwd uit versregels en strofen.",
+        "uo": [
+         "Klopt: regels en strofen vormen de opbouw van poëzie.",
+         "Koos je \"uit hoofdstukken met alinea's, zoals een roman\"? Dan denk je dat een gedicht hoofdstukken heeft. Hoofdstukken horen bij proza, een gedicht heeft regels en strofen.",
+         "Koos je \"uit beurten met sprekers en regieaanwijzingen\"? Dan denk je dat een gedicht beurten heeft. Dat is drama, poëzie heeft regels en strofen.",
+         "Koos je \"uit kopjes en opsommingen met tekens\"? Dan denk je dat een gedicht kopjes heeft. Dat is een zakelijke tekst, een gedicht heeft regels en strofen."
+        ],
+        "uh": "Regel en strofe."
+       },
+       {
+        "v": "Waarin verschilt een novelle meestal van een roman?",
+        "o": [
+         "ze rijmt altijd, een roman niet",
+         "ze is geschreven voor toneel in plaats van voor lezers",
+         "ze is waar gebeurd, een roman is verzonnen",
+         "ze is korter en gerichter"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Een novelle is korter en compacter dan een roman.",
+        "uo": [
+         "Koos je \"ze rijmt altijd, een roman niet\"? Dan denk je dat een novelle rijmt. Beide zijn proza en rijmen niet, het verschil is omvang en opzet.",
+         "Koos je \"ze is geschreven voor toneel in plaats van voor...\"? Dan denk je dat een novelle toneel is. Dat is drama, een novelle is verhalend proza.",
+         "Koos je \"ze is waar gebeurd, een roman is verzonnen\"? Dan denk je dat waarheid het verschil maakt. Beide zijn fictie, het verschil is omvang en opzet.",
+         "Klopt: een novelle is compacter opgezet dan een roman."
+        ],
+        "uh": "Compact verhaal."
+       },
+       {
+        "v": "Wat is een dialoog?",
+        "o": [
+         "een lange tekst van één personage tot het publiek",
+         "een beschrijving die een verteller geeft van het decor",
+         "een gesprek tussen personages",
+         "een groep versregels binnen een gedicht"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Een dialoog is een gesprek tussen personages.",
+        "uo": [
+         "Koos je \"een lange tekst van één personage tot het publiek\"? Dan denk je dat een dialoog één spreker heeft. Dat is een monoloog, een dialoog heeft minstens twee sprekers.",
+         "Koos je \"een beschrijving die een verteller geeft van het...\"? Dan denk je dat een dialoog een beschrijving is. Een verteller beschrijft in proza, een dialoog is gesproken tekst.",
+         "Klopt: in een dialoog wisselen sprekers elkaar af.",
+         "Koos je \"een groep versregels binnen een gedicht\"? Dan denk je dat een dialoog een strofe is. Strofen horen bij poëzie, dialoog bij gesprekken."
+        ],
+        "uh": "Twee of meer sprekers."
+       },
+       {
+        "v": "Een leerling noteert: \"Dit boek heeft 300 pagina's.\" Is dat een literaire leeservaring?",
+        "o": [
+         "ja, want het noemt feiten over het boek en dat is genoeg",
+         "ja, want elke opmerking over een boek is literair van aard",
+         "nee, want het zegt niets over wat het oproept",
+         "nee, want een leeservaring mag nooit feiten bevatten"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Een leeservaring noemt beleving én onderbouwing.",
+        "uo": [
+         "Koos je \"ja, want het noemt feiten over het boek en dat is...\"? Dan denk je dat feiten een leeservaring zijn. Een leeservaring gaat over wat het werk met je doet, en de aantal pagina's zegt dat niet.",
+         "Koos je \"ja, want elke opmerking over een boek is literair...\"? Dan denk je dat elke opmerking telt. Een leeservaring is beargumenteerd, met beleving en voorbeeld.",
+         "Klopt: een leeservaring bevat een beleving, onderbouwd met iets uit het werk.",
+         "Koos je \"nee, want een leeservaring mag nooit feiten bevatten\"? Dan denk je dat feiten verboden zijn. Feiten mogen, maar alleen als onderbouwing van een beleving."
+        ],
+        "uh": "Beleving + bewijs."
+       },
+       {
+        "v": "Welke tekstsoorten horen bij deze fragmenten, in die volgorde?",
+        "o": [
+         "proza, drama en poëzie",
+         "poëzie, proza en drama",
+         "drama, proza en poëzie",
+         "drama, poëzie en proza"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Herken per fragment de vorm.",
+        "uo": [
+         "Koos je \"proza, drama en poëzie\"? Dan neemt de namen met haakjes voor proza. Zulke namen en haakjes zijn kenmerkend voor toneel, dus het eerste fragment is drama.",
+         "Koos je \"poëzie, proza en drama\"? Dan neemt het eerste fragment voor een gedicht. Gedichten hebben geen sprekersnamen, alleen versregels en strofen.",
+         "Koos je \"drama, proza en poëzie\"? Dan verwart het tweede met proza. Korte regels met lege regels ertussen vormen strofen, dus het tweede fragment is poëzie.",
+         "Klopt: namen en haakjes wijzen op drama, regels en lege regels op poëzie, doorlopende zinnen met \"vroeg ze\" op proza."
+        ],
+        "uh": "Vorm per fragment.",
+        "ctx": "Een leerling heeft drie fragmenten: één met naam, dubbele punt en haakjes; één met korte regels en lege regels; één met doorlopende zinnen en \"vroeg ze\"."
+       },
+       {
+        "v": "Hoe beoordeel je dat?",
+        "o": [
+         "onjuist: de vorm bepaalt de soort, ook bij lezen",
+         "juist: zodra een tekst in een boek staat, is het proza",
+         "juist: drama bestaat alleen als er een opvoering is",
+         "onjuist: een toneelstuk is altijd poëzie in dialoogvorm"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "De vorm bepaalt de soort, niet het medium.",
+        "uo": [
+         "Klopt: een toneeltekst blijft drama, ook in boekvorm.",
+         "Koos je \"juist: zodra een tekst in een boek staat, is het...\"? Dan denk je dat het medium de soort bepaalt. De vorm van de tekst bepaalt dat, en een toneeltekst blijft drama.",
+         "Koos je \"juist: drama bestaat alleen als er een opvoering is\"? Dan denk je dat drama alleen opvoering is. Er bestaan toneelteksten die gelezen worden, en die blijven drama.",
+         "Koos je \"onjuist: een toneelstuk is altijd poëzie in...\"? Dan denk je dat toneel poëzie is. Toneelteksten bestaan uit dialoog, en zijn geen gedichten."
+        ],
+        "uh": "Vorm voor medium.",
+        "ctx": "Een leerling schrijft: \"Een toneelstuk is alleen drama zolang het wordt opgevoerd; in een boek is het proza.\""
+       },
+       {
+        "v": "Wat verschilt in de manier van vertellen?",
+        "o": [
+         "zin 1 is poëzie, zin 2 is proza, want de eerste klinkt dichterlijk",
+         "zin 1 heeft een ik-verteller, zin 2 een buitenstaander",
+         "zin 1 is een dialoog, zin 2 een monoloog, want er wordt gepraat",
+         "zin 1 is een gebruikstekst, zin 2 is literair proza"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "De beginzin laat zien wie er vertelt.",
+        "uo": [
+         "Koos je \"zin 1 is poëzie, zin 2 is proza, want de eerste...\"? Dan denk je dat de soort verschilt. Beide zijn proza, het verschil zit in de verteller.",
+         "Klopt: het verschil zit in wie vertelt, een ik of een derde persoon.",
+         "Koos je \"zin 1 is een dialoog, zin 2 een monoloog, want er...\"? Dan denk je dat er sprekers zijn. Beide zijn verhalende zinnen, dus er is geen dialoog.",
+         "Koos je \"zin 1 is een gebruikstekst, zin 2 is literair proza\"? Dan denk je dat een zin een gebruikstekst is. Beide zijn literair proza, met een andere verteller."
+        ],
+        "uh": "Ik of derde persoon.",
+        "ctx": "Beginzin 1: \"Ik herinner me de zomer dat het niet ophield met regenen.\" Beginzin 2: \"Op een regenachtige dag liep Tom naar school.\""
+       },
+       {
+        "v": "Welke reactie is het meest juist?",
+        "o": [
+         "juist, want ze gaan alle drie over hetzelfde onderwerp",
+         "onjuist, want alleen poëzie kan over wachten gaan",
+         "juist, want alle drie de fragmenten zijn heel kort",
+         "de vorm onderscheidt ze, het onderwerp niet"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Vorm onderscheidt tekstsoorten, niet het onderwerp.",
+        "uo": [
+         "Koos je \"juist, want ze gaan alle drie over hetzelfde...\"? Dan denk je dat het onderwerp de soort bepaalt. Het onderwerp is gelijk, maar de vorm verschilt.",
+         "Koos je \"onjuist, want alleen poëzie kan over wachten gaan\"? Dan denk je dat alleen gedichten dit thema hebben. Het thema komt in alle soorten voor, de vorm bepaalt het verschil.",
+         "Koos je \"juist, want alle drie de fragmenten zijn heel kort\"? Dan denk je dat lengte de soort bepaalt. Lengte zegt niets over de soort, de vorm wel.",
+         "Klopt: dezelfde thematiek kan in proza, poëzie en drama staan."
+        ],
+        "uh": "Vorm voor thema.",
+        "ctx": "Een leerling vergelijkt fragment P (proza), fragment G (poëzie) en fragment D (drama). Hij zegt: \"Ze gaan alle drie over wachten, dus het is dezelfde tekstsoort.\""
+       },
+       {
+        "v": "Welk antwoord is het meest verstandig?",
+        "o": [
+         "per werk vorm en bedoeling bepalen",
+         "geen van drieën is literair, want literatuur is alleen een boek",
+         "alle drie zijn proza, want ze vertellen alle drie iets",
+         "alle drie zijn drama, want ze worden opgevoerd of bekeken"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Bepaal de soort per werk aan vorm en betekenis.",
+        "uo": [
+         "Klopt: de indeling in proza, poëzie en drama helpt, maar je kijkt naar vorm en betekenis van het werk.",
+         "Koos je \"geen van drieën is literair, want literatuur is...\"? Dan denk je dat literatuur bij een boek hoort. Ook gedichten, toneel en songteksten kunnen literair zijn, dus het medium beslist niet.",
+         "Koos je \"alle drie zijn proza, want ze vertellen alle drie...\"? Dan denk je dat vertellen proza is. Een songtekst heeft regels, een script heeft dialoog, dus de vorm verschilt.",
+         "Koos je \"alle drie zijn drama, want ze worden opgevoerd of...\"? Dan denk je dat opvoeren drama maakt. Een songtekst is vaak poëzie, dus de vorm bepaalt de soort."
+        ],
+        "uh": "Per werk kijken.",
+        "ctx": "Een leerling noemt een strip, een songtekst en een filmscript en vraagt of dit literaire tekstsoorten zijn."
+       },
+       {
+        "v": "Welke vraag beslist of dit poëzie of proza is?",
+        "o": [
+         "of de zinnen kort zijn of lang",
+         "of er versregels of alinea's zijn",
+         "of er een \"ik\" in de tekst voorkomt",
+         "of het woord \"regen\" erin voorkomt"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "De indeling in regels of alinea's bepaalt de soort.",
+        "uo": [
+         "Koos je \"of de zinnen kort zijn of lang\"? Dan denk je dat korte zinnen poëzie aanduiden. Proza kan ook korte zinnen hebben, dus de lengte beslist niet.",
+         "Klopt: de indeling in regels of alinea's bepaalt de soort, niet de lengte van de zinnen.",
+         "Koos je \"of er een ik in de tekst voorkomt\"? Dan denk je dat een ik poëzie aanduidt. Ook proza heeft ik-vertellers, dus dit beslist niet.",
+         "Koos je \"of het woord regen erin voorkomt\"? Dan denk je dat een woord de soort bepaalt. Het onderwerp bepaalt de soort niet, de indeling wel."
+        ],
+        "uh": "Indeling beslist.",
+        "ctx": "Fragment: \"Het is zondag. Ik loop door de straat. Het regent. Ik denk aan jou.\" Een leerling beweert dat dit poëzie is omdat de zinnen kort zijn."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Tweede bedrijf. Een keuken, 's avonds. (Els staat bij het fornuis. Karel komt binnen met zijn jas nog aan.) KAREL: Je hebt niet gewacht. ELS (zonder om te kijken): Ik wacht al twintig jaar. KAREL: Dat is niet eerlijk. ELS: Nee. (Ze zet twee borden op tafel en zet er daarna één terug in de kast.)\"",
+        "v": "Welke tekstsoort is dit fragment? Noem twee kenmerken waaraan je dat herkent.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Drama (1p). Twee kenmerken, bijvoorbeeld de naam van de spreker voor de tekst (KAREL, ELS) en de regieaanwijzingen tussen haakjes (1p per kenmerk, max. 2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Tweede bedrijf. Een keuken, 's avonds. (Els staat bij het fornuis. Karel komt binnen met zijn jas nog aan.) KAREL: Je hebt niet gewacht. ELS (zonder om te kijken): Ik wacht al twintig jaar. KAREL: Dat is niet eerlijk. ELS: Nee. (Ze zet twee borden op tafel en zet er daarna één terug in de kast.)\"",
+        "v": "Wat vertelt de laatste regieaanwijzing (twee borden op tafel, één terug in de kast) dat de dialoog niet zegt? Leg uit waarom dat typisch is voor drama.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Els sluit Karel buiten, ze zet geen bord voor hem klaar (1p). In drama is er geen verteller, dus betekenis komt ook uit handelingen die de lezer of het publiek moet interpreteren (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Het huis is stil / de klok loopt voort / op een andere tijd // Jouw jas hangt nog / aan dezelfde haak / alsof je zo terugkomt // Ik laat het licht aan\" (/ = nieuwe regel, // = lege regel)",
+        "v": "Een leerling zegt dat dit geen poëzie is omdat het niet rijmt. Beoordeel die bewering en geef een argument uit het fragment.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Onjuist (1p): poëzie herken je aan versregels en strofen, rijm is niet vereist (1p). Argument uit het fragment: drie strofen van korte regels met lege regels ertussen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Ze stond al een kwartier bij het raam toen de bus eindelijk de hoek om kwam. Haar moeder had gezegd dat ze niet moest wachten, maar wachten was het enige wat ze kon doen. 'Hij komt vast niet,' mompelde ze, en toch bleef ze staan, met haar jas al aan en de sleutels in haar hand.\"",
+        "v": "Welke tekstsoort is dit en hoe weet je dat er een verteller is? Leg uit waarom je uit dit fragment niet kunt afleiden of het uit een roman of novelle komt.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Proza (1p). De verteller blijkt uit zinnen als \"mompelde ze\" die beschrijven wat zij zegt en doet (1p). Een fragment zegt iets over de soort, niet over de omvang van het hele werk (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Tekst H: \"Zet het apparaat op een vlakke ondergrond. Vul het waterreservoir tot de streep MAX. Plaats een filter in de houder en doe er twee schepjes koffie in. Druk op de aan-knop.\" Tekst V: \"Elke ochtend zette ze twee koppen koffie, ook nu hij er niet meer was. De tweede kop liet ze koud worden, zoals haar vader nooit had gedaan.\"",
+        "v": "Welke tekst is literair en welke een gebruikstekst? Onderbouw je antwoord met het verschil in doel.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "V is literair (1p), H is een gebruikstekst (1p). H geeft aanwijzingen om iets te doen, V roept met een gewoon voorwerp gemis op en vraagt interpretatie (1p)."
+       }
+      ]
+     }
     ]
    }
   ]

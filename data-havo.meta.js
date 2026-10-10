@@ -654,7 +654,31 @@ var VAKKEN = [
     "nSv": 196,
     "nOe": 3,
     "nBeg": 42,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "F1",
+      "lo": "nl.F.1",
+      "gs": 2,
+      "naam": "Literaire tekstsoorten herkennen en onderscheiden",
+      "beschrijving": "Je herkent proza, poëzie en drama aan hun vorm, onderscheidt een literaire tekst van een gebruikstekst en onderbouwt wat een tekst bij je oproept.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Proza, poëzie en drama herkennen",
+       "Drama: dialoog, monoloog en regieaanwijzing",
+       "Poëzie: versregel en strofe",
+       "Roman, novelle en kort verhaal",
+       "Literair of gebruikstekst",
+       "Een leeservaring onderbouwen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    }
   ]
  },

@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **25 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6). Werk dit getal bij bij elke afronding.
+> Voortgang: **26 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -58,8 +58,14 @@
   - [x] D4 · nl.D.4 Beknopt schrijven in eigen woorden · 25 vragen (R1-R3), 12 begrippen, 3 schema's (generaliseren, inkorten tot de limiet, wel en niet), geen clip
   - [x] D5 · nl.D.5 Een samenvatting controleren op volledigheid en samenhang · 25 vragen (R1-R3), 12 begrippen, 3 schema's (hoofdpunten tegenover samenvatting, controlelijst, beoordelen in stappen), geen clip
   - [x] D6 · nl.D.6 Een betogende en een informatieve tekst samenvatten · 25 vragen (R1-R3), 12 begrippen, 3 schema's (samenvatting van een betoog, structuren van een uitleg, tekstsoort eerst), geen clip
-- [ ] **HAVO · Nederlands** (`nl`) · domein E — Argumentatieve vaardigheden
+- [x] **HAVO · Nederlands** (`nl`) · domein E — Argumentatieve vaardigheden (overgeslagen: eindterm 6 is volledig gedekt door A5 en A6, nieuwe leerdoelen zouden dubbel werk zijn)
 - [ ] **HAVO · Nederlands** (`nl`) · domein F — Literatuur
+  - [x] F1 · nl.F.1 Literaire tekstsoorten herkennen en onderscheiden · 27 vragen (R2 en R3 ruim), 12 begrippen, 5 figuren (vormen, beslisboom, geannoteerd toneelfragment, gedicht met strofen, leeservaring), geen clip
+  - [ ] F2 · nl.F.2 Verteller, vertelperspectief en focalisatie
+  - [ ] F3 · nl.F.3 Tijd, ruimte en opbouw van een verhaal
+  - [ ] F4 · nl.F.4 Personages, thema en motief
+  - [ ] F5 · nl.F.5 Stijlfiguren en poëzie
+  - [ ] F6 · nl.F.6 Literatuurgeschiedenis in hoofdlijnen
 - [ ] **VWO · Nederlands** (`nl`) · domein A — Leesvaardigheid
 - [ ] **VWO · Nederlands** (`nl`) · domein B — Mondeling
 - [ ] **VWO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid
