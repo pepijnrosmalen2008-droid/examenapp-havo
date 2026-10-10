@@ -30806,6 +30806,654 @@ var VAKKEN = [
         "u": "Een sfeer van verval en stilstand (1p). De klok die niet meer loopt is symbolisch voor de stilstaande tijd (1p), met woorden als \"verwilderde\" en \"vocht\" als sfeerwoorden (1p)."
        }
       ]
+     },
+     {
+      "id": "F4",
+      "lo": "nl.F.4",
+      "gs": 2,
+      "naam": "Personages, thema en motief",
+      "beschrijving": "Je karakteriseert personages (direct en indirect), herkent hun rol en ontwikkeling en legt uit hoe motieven en symbolen het thema van een verhaal ondersteunen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Karakterisering en rollen",
+       "Ontwikkeling van personages",
+       "Thema herkennen",
+       "Thema blijkt uit details",
+       "Motief en symbool",
+       "Motief en thema samen"
+      ],
+      "sam": "Personages leer je kennen door directe karakterisering (de verteller noemt een eigenschap) en indirecte karakterisering (je leidt het af uit gedrag, spraak, uiterlijk en omgeving). Een personage kan hoofdpersoon, tegenspeler of bijfiguur zijn, vlak of rond, statisch of dynamisch. Het thema is het abstracte idee waar het verhaal om draait, zoals eenzaamheid. Een motief is een concreet element dat terugkeert (een geur), een symbool verwijst naar iets abstracts (een knop voor hoop). Motieven en symbolen ondersteunen het thema.",
+      "begrippen": [
+       {
+        "t": "Karakterisering",
+        "d": "Hoe de lezer een personage leert kennen."
+       },
+       {
+        "t": "Directe karakterisering",
+        "d": "De verteller noemt zelf een eigenschap."
+       },
+       {
+        "t": "Indirecte karakterisering",
+        "d": "Je leidt een eigenschap af uit gedrag, spraak of omgeving."
+       },
+       {
+        "t": "Hoofdpersoon",
+        "d": "Het personage dat het verhaal draagt."
+       },
+       {
+        "t": "Tegenspeler",
+        "d": "Een personage dat de hoofdpersoon tegenwerkt."
+       },
+       {
+        "t": "Bijfiguur",
+        "d": "Een personage met een kleine rol."
+       },
+       {
+        "t": "Vlak personage",
+        "d": "Een personage met één eigenschap."
+       },
+       {
+        "t": "Rond personage",
+        "d": "Een personage met meerdere eigenschappen."
+       },
+       {
+        "t": "Dynamisch personage",
+        "d": "Een personage dat verandert."
+       },
+       {
+        "t": "Thema",
+        "d": "Het abstracte idee waar het verhaal om draait."
+       },
+       {
+        "t": "Motief",
+        "d": "Een concreet element dat steeds terugkomt."
+       },
+       {
+        "t": "Symbool",
+        "d": "Een beeld dat verwijst naar iets abstracts."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welk soort karakterisering is \"Bram was een zuinig man\"?",
+        "o": [
+         "indirecte karakterisering, omdat het over Bram gaat",
+         "directe karakterisering",
+         "symboliek, omdat zuinig meer betekent",
+         "een motief, omdat de koffie terugkomt"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "De verteller noemt een eigenschap: directe karakterisering.",
+        "uo": [
+         "Koos je \"indirecte karakterisering, omdat het over Bram gaat\"? Dan denk je dat elke zin over een personage indirect is. Bij indirecte karakterisering laat de tekst zien, hier zegt de verteller het gewoon.",
+         "Klopt: de verteller zegt zelf welke eigenschap Bram heeft.",
+         "Koos je \"symboliek, omdat zuinig meer betekent\"? Dan denk je dat zuinig een symbool is. Het is een eigenschap die direct wordt genoemd, geen beeld met een diepere betekenis.",
+         "Koos je \"een motief, omdat de koffie terugkomt\"? Dan denk je dat de koffie al een motief is. De zin zelf noemt een eigenschap, dus het is directe karakterisering."
+        ],
+        "uh": "Verteller zegt het.",
+        "ctx": "Fragment 1: \"Bram was een zuinig man. Dat zag je aan de manier waarop hij zijn koffie telde: twee schepjes, nooit drie. Toen zijn buurman om een lening vroeg, keek Bram hem lang aan en zei dat hij het even moest uitrekenen. Hij rekende drie dagen. Daarna zei hij nee en bood een kop thee aan.\""
+       },
+       {
+        "v": "Welke zin in fragment 1 is een voorbeeld van indirecte karakterisering?",
+        "o": [
+         "\"Bram was een zuinig man\", de openingszin van het fragment",
+         "\"Daarna zei hij nee\" tegen de buurman na lang rekenen",
+         "\"bood een kop thee aan\" als vriendelijk gebaar",
+         "\"twee schepjes, nooit drie\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Gedrag laat een eigenschap zien zonder haar te noemen.",
+        "uo": [
+         "Koos je \"Bram was een zuinig man, de openingszin van het...\"? Dan denk je dat dit indirect is. Hier noemt de verteller de eigenschap zelf, dus het is direct.",
+         "Koos je \"Daarna zei hij nee tegen de buurman na lang rekenen\"? Dan denk je dat dit de eigenschap toont. Het is een handeling, maar zonder zuinigheid te laten zien, de koffie doet dat duidelijker.",
+         "Koos je \"bood een kop thee aan als vriendelijk gebaar\"? Dan denk je dat dit zuinigheid toont. Het toont vooral beleefdheid, de zuinigheid zit in de koffie en het uitrekenen.",
+         "Klopt: je leidt uit zijn gedrag af dat hij zuinig is."
+        ],
+        "uh": "Tonen, niet noemen.",
+        "ctx": "Fragment 1: \"Bram was een zuinig man. Dat zag je aan de manier waarop hij zijn koffie telde: twee schepjes, nooit drie. Toen zijn buurman om een lening vroeg, keek Bram hem lang aan en zei dat hij het even moest uitrekenen. Hij rekende drie dagen. Daarna zei hij nee en bood een kop thee aan.\""
+       },
+       {
+        "v": "Wat zegt het drie dagen rekenen over Bram, en hoe is dat gekarakteriseerd?",
+        "o": [
+         "berekenend, afgeleid uit zijn gedrag (indirect)",
+         "hij is gul en wil de buurman helpen; dat noemt de verteller direct",
+         "hij is dom en kan niet rekenen; dat blijkt uit zijn uiterlijk",
+         "hij is angstig voor zijn buurman; dat blijkt uit een gedachte"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Indirecte karakterisering: je leidt eigenschappen af uit handelingen.",
+        "uo": [
+         "Klopt: de lezer leidt de eigenschap af uit wat hij doet.",
+         "Koos je \"hij is gul en wil de buurman helpen; dat noemt de...\"? Dan denk je dat hij gul is. Hij weigert na drie dagen rekenen, en de verteller noemt dit niet direct.",
+         "Koos je \"hij is dom en kan niet rekenen; dat blijkt uit zijn...\"? Dan denk je dat rekenen zwakte is. Het toont juist berekening, en zijn uiterlijk wordt niet genoemd.",
+         "Koos je \"hij is angstig voor zijn buurman; dat blijkt uit...\"? Dan denk je dat angst de reden is. Er staat geen gedachte of angst, alleen zijn handelwijze."
+        ],
+        "uh": "Afleiden uit gedrag.",
+        "ctx": "Fragment 1: \"Bram was een zuinig man. Dat zag je aan de manier waarop hij zijn koffie telde: twee schepjes, nooit drie. Toen zijn buurman om een lening vroeg, keek Bram hem lang aan en zei dat hij het even moest uitrekenen. Hij rekende drie dagen. Daarna zei hij nee en bood een kop thee aan.\""
+       },
+       {
+        "v": "Welk type personage is Iris in fragment 2?",
+        "o": [
+         "een statisch personage: ze blijft gelijk",
+         "een bijfiguur: ze speelt een kleine rol",
+         "een dynamisch personage: ze verandert",
+         "een antagonist: ze werkt de baas tegen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Een personage dat verandert is dynamisch.",
+        "uo": [
+         "Koos je \"een statisch personage: ze blijft gelijk\"? Dan denk je dat ze niet verandert. Ze gaat van instemmen naar tegenspreken, dus ze ontwikkelt zich.",
+         "Koos je \"een bijfiguur: ze speelt een kleine rol\"? Dan denk je dat ze een bijrol heeft. Het fragment volgt haar ontwikkeling, dus ze is een hoofdpersoon.",
+         "Klopt: Iris laat in het begin alles over zich heen komen en spreekt later haar baas tegen.",
+         "Koos je \"een antagonist: ze werkt de baas tegen\"? Dan denk je dat ze de tegenstander is. Ze ontwikkelt zich zelf, dus ze is niet noodzakelijk de antagonist."
+        ],
+        "uh": "Verandert = dynamisch.",
+        "ctx": "Fragment 2: \"In het begin liet Iris elke opmerking van haar baas over zich heen komen. Ze knikte, glimlachte en nam het werk mee naar huis. Maar na de zomer, toen ze haar eerste vergadering voorzat, onderbrak ze hem midden in een zin. 'Dat klopt niet,' zei ze, kalm en luid genoeg. Niemand sprak. Hij schoof zijn stoel terug.\""
+       },
+       {
+        "v": "Welk detail toont het keerpunt in Iris' ontwikkeling het duidelijkst?",
+        "o": [
+         "dat ze het werk mee naar huis nam, zoals altijd",
+         "dat ze glimlacht en knikt bij elke opmerking",
+         "dat ze hem midden in een zin onderbreekt",
+         "dat de vergadering pas na de zomer plaatsvindt"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Een keerpunt toont zich in een afwijkende handeling.",
+        "uo": [
+         "Koos je \"dat ze het werk mee naar huis nam, zoals altijd\"? Dan denk je dat dit het keerpunt is. Dit is haar oude gedrag, voor het keerpunt.",
+         "Koos je \"dat ze glimlacht en knikt bij elke opmerking\"? Dan denk je dat dit het keerpunt is. Dit is eveneens haar oude gedrag, dus het ligt voor het keerpunt.",
+         "Klopt: haar daad en de reactie van de anderen tonen dat haar positie is veranderd.",
+         "Koos je \"dat de vergadering pas na de zomer plaatsvindt\"? Dan denk je dat de zomer de verandering toont. Het is alleen een tijdsaanduiding, de verandering zit in haar optreden."
+        ],
+        "uh": "Afwijkend gedrag.",
+        "ctx": "Fragment 2: \"In het begin liet Iris elke opmerking van haar baas over zich heen komen. Ze knikte, glimlachte en nam het werk mee naar huis. Maar na de zomer, toen ze haar eerste vergadering voorzat, onderbrak ze hem midden in een zin. 'Dat klopt niet,' zei ze, kalm en luid genoeg. Niemand sprak. Hij schoof zijn stoel terug.\""
+       },
+       {
+        "v": "Wie is in fragment 6 de hoofdpersoon?",
+        "o": [
+         "Lotte",
+         "de vader, want hij spreekt het vaakst",
+         "het dorp, want alles speelt zich daar af",
+         "de vader van de vader, want hij schonk de boerderij"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "De hoofdpersoon is het personage dat het verhaal volgt.",
+        "uo": [
+         "Klopt: het fragment volgt Lotte en haar wens het dorp te verlaten.",
+         "Koos je \"de vader, want hij spreekt het vaakst\"? Dan denk je dat spreken hoofdpersoon maakt. Het verhaal volgt Lotte, de vader is de tegenspeler.",
+         "Koos je \"het dorp, want alles speelt zich daar af\"? Dan denk je dat een plaats hoofdpersoon is. Een hoofdpersoon is een personage, en dat is Lotte.",
+         "Koos je \"de vader van de vader, want hij schonk de boerderij\"? Dan denk je dat de grootvader centraal staat. Hij wordt alleen genoemd, de focus ligt op Lotte."
+        ],
+        "uh": "Wie volgt het verhaal?",
+        "ctx": "Fragment 6: \"Lotte wilde het dorp verlaten, maar haar vader hield haar tegen. Hij had de boerderij van zijn vader geërfd en verwachtte dat zij die zou overnemen. Elke avond, aan tafel, zei hij hetzelfde zinnetje: 'Een mens verlaat zijn land niet.' Lotte zweeg, maar ze telde in stilte de dagen tot haar examen.\""
+       },
+       {
+        "v": "Welke rol speelt Lottes vader tegenover haar wens, en waaruit blijkt dat?",
+        "o": [
+         "helper: hij steunt haar plan om het dorp te verlaten en geeft raad",
+         "verteller: hij vertelt het verhaal over Lotte aan de lezer",
+         "bijzaak: hij speelt geen enkele rol in haar keuzes of plannen",
+         "tegenspeler: hij werkt haar plan tegen"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Een tegenspeler staat haar wens in de weg.",
+        "uo": [
+         "Koos je \"helper: hij steunt haar plan om het dorp te...\"? Dan denk je dat hij haar helpt. Hij zegt \"een mens verlaat zijn land niet\", dus hij werkt tegen.",
+         "Koos je \"verteller: hij vertelt het verhaal over Lotte aan...\"? Dan denk je dat hij vertelt. De verteller staat buiten het verhaal, de vader is een personage.",
+         "Koos je \"bijzaak: hij speelt geen enkele rol in haar keuzes...\"? Dan denk je dat hij onbelangrijk is. Hij bepaalt de spanning, dus hij is belangrijk.",
+         "Klopt: hij wil iets anders dan zij en houdt haar tegen."
+        ],
+        "uh": "Tegenspeler = obstakel.",
+        "ctx": "Fragment 6: \"Lotte wilde het dorp verlaten, maar haar vader hield haar tegen. Hij had de boerderij van zijn vader geërfd en verwachtte dat zij die zou overnemen. Elke avond, aan tafel, zei hij hetzelfde zinnetje: 'Een mens verlaat zijn land niet.' Lotte zweeg, maar ze telde in stilte de dagen tot haar examen.\""
+       },
+       {
+        "v": "Hoe karakteriseer je Lotte op grond van haar zwijgen en het dagen tellen?",
+        "o": [
+         "als gehoorzaam: ze doet precies wat haar vader van haar zegt",
+         "vastberaden: ze zwijgt maar zet door",
+         "als onzeker: ze durft haar vader niets te zeggen over haar plan",
+         "als boos: ze schreeuwt in stilte tegen de man aan tafel"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Gedrag laat zien of iemand toegeeft of doorzet.",
+        "uo": [
+         "Koos je \"als gehoorzaam: ze doet precies wat haar vader van...\"? Dan denk je dat zwijgen instemming is. Ze telt de dagen tot haar examen, dus ze zet door.",
+         "Klopt: ze geeft niet toe en blijft in stilte werken aan haar doel.",
+         "Koos je \"als onzeker: ze durft haar vader niets te zeggen...\"? Dan denk je dat zwijgen onzekerheid toont. Het dagen tellen toont een plan, en dat past niet bij onzekerheid.",
+         "Koos je \"als boos: ze schreeuwt in stilte tegen de man aan...\"? Dan denk je dat ze boos is. Er staat niets over woede, alleen over zwijgen en een plan."
+        ],
+        "uh": "Plan onder zwijgen.",
+        "ctx": "Fragment 6: \"Lotte wilde het dorp verlaten, maar haar vader hield haar tegen. Hij had de boerderij van zijn vader geërfd en verwachtte dat zij die zou overnemen. Elke avond, aan tafel, zei hij hetzelfde zinnetje: 'Een mens verlaat zijn land niet.' Lotte zweeg, maar ze telde in stilte de dagen tot haar examen.\""
+       },
+       {
+        "v": "Welk thema hoort het best bij fragment 4?",
+        "o": [
+         "honger, omdat er taarten worden gebakken",
+         "kookkunst, omdat ze goed kan bakken",
+         "dierenliefde, omdat ze tegen de kat praat",
+         "eenzaamheid"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Het thema is het abstracte idee waar het fragment om draait.",
+        "uo": [
+         "Koos je \"honger, omdat er taarten worden gebakken\"? Dan denk je dat bakken om honger gaat. Ze bakt voor anderen die niet komen, dus het gaat om gemis.",
+         "Koos je \"kookkunst, omdat ze goed kan bakken\"? Dan denk je dat het om talent gaat. Er wordt niets over kwaliteit gezegd, het gaat om haar situatie.",
+         "Koos je \"dierenliefde, omdat ze tegen de kat praat\"? Dan denk je dat de kat het thema is. De kat is een detail, het thema is groter.",
+         "Klopt: Marloes bakt en dekt voor mensen die niet komen."
+        ],
+        "uh": "Idee achter het verhaal.",
+        "ctx": "Fragment 4: \"Marloes bakte elke zondag een taart voor de buren die nooit meer kwamen. Ze dekte de tafel voor zes, al woonde ze alleen. 'Het is maar gewoonte,' zei ze tegen de kat. In de gang lag nog het stapeltje ongeopende post, bovenop de krant van een week geleden.\""
+       },
+       {
+        "v": "Hoe tonen de details in fragment 4 het thema zonder het te noemen?",
+        "o": [
+         "door te zeggen dat Marloes eenzaam is, in zo veel woorden",
+         "door de gedekte tafel en de ongeopende post",
+         "door de naam van de kat te noemen, die haar gezelschap houdt",
+         "door de datum van de krant te noemen, die een week oud is"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Een thema blijkt uit concrete details.",
+        "uo": [
+         "Koos je \"door te zeggen dat Marloes eenzaam is, in zo veel...\"? Dan denk je dat het thema genoemd wordt. Het woord eenzaam staat nergens, het blijkt uit de details.",
+         "Klopt: concrete details wijzen indirect op het thema eenzaamheid.",
+         "Koos je \"door de naam van de kat te noemen, die haar...\"? Dan denk je dat de kat het thema toont. Hij wordt maar even genoemd, de details zijn de tafel en de post.",
+         "Koos je \"door de datum van de krant te noemen, die een week...\"? Dan denk je dat de krant het thema is. De oude krant ondersteunt het, maar de tafel en taart zijn sterker."
+        ],
+        "uh": "Details wijzen naar thema.",
+        "ctx": "Fragment 4: \"Marloes bakte elke zondag een taart voor de buren die nooit meer kwamen. Ze dekte de tafel voor zes, al woonde ze alleen. 'Het is maar gewoonte,' zei ze tegen de kat. In de gang lag nog het stapeltje ongeopende post, bovenop de krant van een week geleden.\""
+       },
+       {
+        "v": "Welk motief komt in fragment 3 steeds terug?",
+        "o": [
+         "de bibliotheek, omdat hij daar komt",
+         "de trein, omdat hij daarin zit",
+         "de geur van pijptabak",
+         "de zakdoek, omdat hij erin zoekt"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "Een motief is een element dat steeds terugkomt.",
+        "uo": [
+         "Koos je \"de bibliotheek, omdat hij daar komt\"? Dan denk je dat de bibliotheek terugkeert. Ze komt eenmaal voor, de geur komt vaker terug.",
+         "Koos je \"de trein, omdat hij daarin zit\"? Dan denk je dat de trein een motief is. Hij wordt eenmaal genoemd, de geur keert steeds terug.",
+         "Klopt: de geur verschijnt telkens en verbindt Kees met zijn vader.",
+         "Koos je \"de zakdoek, omdat hij erin zoekt\"? Dan denk je dat de zakdoek het motief is. Hij komt aan het eind voor, de geur keert steeds terug."
+        ],
+        "uh": "Herhaling = motief.",
+        "ctx": "Fragment 3: \"Elke keer dat Kees aan zijn vader dacht, rook hij pijptabak. In de trein, bij het ontbijt, zelfs in de bibliotheek waar niemand rookte. Op de dag van de begrafenis bleef de geur weg. Hij zocht in zijn jaszak naar de zakdoek die zijn vader hem had gegeven en vond alleen de lege hoes van een pijp.\""
+       },
+       {
+        "v": "Welke betekenis krijgt de weggebleven geur op de dag van de begrafenis?",
+        "o": [
+         "het verlies van zijn vader",
+         "de vader rookt niet meer, en dat is goed nieuws voor iedereen",
+         "Kees begint zelf te roken, zoals zijn vader deed",
+         "de bibliotheek heeft een nieuw rookverbod ingesteld voor bezoekers"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Het verdwijnen van een motief kan een verlies betekenen.",
+        "uo": [
+         "Klopt: het motief verdwijnt precies waar het verlies begint.",
+         "Koos je \"de vader rookt niet meer, en dat is goed nieuws...\"? Dan denk je dat dit goed nieuws is. Het gaat om rouw, niet om gezondheid.",
+         "Koos je \"Kees begint zelf te roken, zoals zijn vader deed\"? Dan denk je dat hij zelf rookt. Dat staat niet in de tekst, het gaat om het gemis.",
+         "Koos je \"de bibliotheek heeft een nieuw rookverbod ingesteld...\"? Dan denk je dat de regel is veranderd. Het gaat niet over regels, maar over het verlies."
+        ],
+        "uh": "Motief weg = verlies.",
+        "ctx": "Fragment 3: \"Elke keer dat Kees aan zijn vader dacht, rook hij pijptabak. In de trein, bij het ontbijt, zelfs in de bibliotheek waar niemand rookte. Op de dag van de begrafenis bleef de geur weg. Hij zocht in zijn jaszak naar de zakdoek die zijn vader hem had gegeven en vond alleen de lege hoes van een pijp.\""
+       },
+       {
+        "v": "Welk symbool komt in fragment 5 voor en wat betekent het?",
+        "o": [
+         "de knop: nieuw leven",
+         "de kop thee: een troost die ze elke ochtend neemt",
+         "de telefoon: techniek die niet werkt zoals zou moeten",
+         "de winter: een seizoen dat een kale tak verklaart"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Een symbool verwijst naar iets abstracts.",
+        "uo": [
+         "Klopt: de knop in maart staat voor hoop en herstel.",
+         "Koos je \"de kop thee: een troost die ze elke ochtend neemt\"? Dan denk je dat thee het symbool is. Thee is een alledaags detail, de knop heeft symbolische betekenis.",
+         "Koos je \"de telefoon: techniek die niet werkt zoals zou...\"? Dan denk je dat de telefoon het thema is. Hij toont wachten en gemis, de knop is het symbool.",
+         "Koos je \"de winter: een seizoen dat een kale tak verklaart\"? Dan denk je dat winter alleen een seizoen is. Hij staat voor kou en stilstand, het symbool dat verandert is de knop."
+        ],
+        "uh": "Knop = hoop.",
+        "ctx": "Fragment 5: \"De tak boven het raam bleef de hele winter kaal. Annelies keek er elke ochtend naar, tegelijk met de kop thee en de gedachte aan de telefoon die niet ging. In maart liep ze voor het eerst weer naar buiten en zag aan de kaalste punt van de tak een knop.\""
+       },
+       {
+        "v": "Hoe hangt het symbool van de tak samen met Annelies' toestand aan het begin en het eind?",
+        "o": [
+         "de tak toont haar kou, de knop toont dat ze het weer warm krijgt",
+         "de tak en de knop zijn beide gewone, neutrale details zonder betekenis",
+         "tak: leegte, knop: hoop",
+         "de knop toont dat de telefoon eindelijk gaat rinkelen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Een symbool verandert mee met het personage.",
+        "uo": [
+         "Koos je \"de tak toont haar kou, de knop toont dat ze het...\"? Dan denk je dat het om temperatuur gaat. Het gaat om haar gevoel, van leegte naar hoop.",
+         "Koos je \"de tak en de knop zijn beide gewone, neutrale...\"? Dan denk je dat ze geen betekenis hebben. De verteller koppelt ze aan haar wachten, dus ze zijn symbolisch.",
+         "Klopt: de tak verandert mee met haar innerlijke ontwikkeling.",
+         "Koos je \"de knop toont dat de telefoon eindelijk gaat...\"? Dan denk je dat de knop met de telefoon samenhangt. Dat staat er niet, de knop toont hoop."
+        ],
+        "uh": "Verandering in beeld.",
+        "ctx": "Fragment 5: \"De tak boven het raam bleef de hele winter kaal. Annelies keek er elke ochtend naar, tegelijk met de kop thee en de gedachte aan de telefoon die niet ging. In maart liep ze voor het eerst weer naar buiten en zag aan de kaalste punt van de tak een knop.\""
+       },
+       {
+        "v": "Beide fragmenten hebben terugkerende beelden. Wat is het verschil?",
+        "o": [
+         "in 3 is het een thema van verlies; in 5 een motief van een tak",
+         "3: terugkerende geur (motief); 5: tak (symbool)",
+         "in 3 en 5 gaat het in beide gevallen om hetzelfde motief",
+         "in 3 is de geur een symbool; in 5 is de tak een motief"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Motief herhaalt zich, symbool verwijst naar een idee.",
+        "uo": [
+         "Koos je \"in 3 is het een thema van verlies; in 5 een motief...\"? Dan denk je dat de geur een thema is. Het thema is verlies, de geur is het motief.",
+         "Klopt: een motief herhaalt zich, een symbool verwijst naar een abstract idee.",
+         "Koos je \"in 3 en 5 gaat het in beide gevallen om hetzelfde...\"? Dan denk je dat ze gelijk zijn. De geur herhaalt zich, de tak verandert en symboliseert.",
+         "Koos je \"in 3 is de geur een symbool; in 5 is de tak een...\"? Dan denk je dat het omgekeerd is. De geur keert terug (motief), de tak staat voor hoop (symbool)."
+        ],
+        "uh": "Herhaling of verwijzing.",
+        "ctx": "Fragment 3: \"Elke keer dat Kees aan zijn vader dacht, rook hij pijptabak. In de trein, bij het ontbijt, zelfs in de bibliotheek waar niemand rookte. Op de dag van de begrafenis bleef de geur weg. Hij zocht in zijn jaszak naar de zakdoek die zijn vader hem had gegeven en vond alleen de lege hoes van een pijp.\" Fragment 5: \"De tak boven het raam bleef de hele winter kaal. Annelies keek er elke ochtend naar, tegelijk met de kop thee en de gedachte aan de telefoon die niet ging. In maart liep ze voor het eerst weer naar buiten en zag aan de kaalste punt van de tak een knop.\""
+       },
+       {
+        "v": "Hoe verschilt de personagetekening van Bram (fragment 1) en Marloes (fragment 4)?",
+        "o": [
+         "Bram via sfeer en voorwerpen, Marloes via haar gedrag",
+         "beiden vooral via wat de verteller direct zegt",
+         "beiden vooral via hun uiterlijk en kleding",
+         "Bram wordt via gedrag getekend, Marloes via voorwerpen en gewoontes"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Personages worden getoond via gedrag, spraak en voorwerpen.",
+        "uo": [
+         "Koos je \"Bram via sfeer en voorwerpen, Marloes via haar...\"? Dan draait het om. Bij Bram draait het om wat hij doet met de koffie en de lening, bij Marloes spreken juist de voorwerpen.",
+         "Koos je \"beiden vooral via wat de verteller direct zegt\"? Dan mist het tonen. Bij beiden laat de tekst details zien, en de verteller noemt nauwelijks eigenschappen.",
+         "Koos je \"beiden vooral via hun uiterlijk en kleding\"? Dan ziet uiterlijk over het hoofd waar het niet staat. Er staat niets over hun uiterlijk, alleen over handelingen en spullen.",
+         "Klopt: bij Bram zie je hem handelen, bij Marloes spreken de gedekte tafel en de post."
+        ],
+        "uh": "Wat toont hen?",
+        "ctx": "Fragment 1: \"Bram was een zuinig man. Dat zag je aan de manier waarop hij zijn koffie telde: twee schepjes, nooit drie. Toen zijn buurman om een lening vroeg, keek Bram hem lang aan en zei dat hij het even moest uitrekenen. Hij rekende drie dagen. Daarna zei hij nee en bood een kop thee aan.\" Fragment 4: \"Marloes bakte elke zondag een taart voor de buren die nooit meer kwamen. Ze dekte de tafel voor zes, al woonde ze alleen. 'Het is maar gewoonte,' zei ze tegen de kat. In de gang lag nog het stapeltje ongeopende post, bovenop de krant van een week geleden.\""
+       },
+       {
+        "v": "Wat heet een personage met één vaste eigenschap?",
+        "o": [
+         "een rond personage met meerdere eigenschappen",
+         "een vlak personage",
+         "een antagonist, de tegenspeler van de hoofdpersoon",
+         "een verteller die het verhaal vertelt"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Vlak is één eigenschap, rond is meerdere.",
+        "uo": [
+         "Koos je \"een rond personage met meerdere eigenschappen\"? Dan denk je dat rond bij één eigenschap hoort. Rond staat juist voor meerdere, dus het is vlak.",
+         "Klopt: een vlak personage heeft één eigenschap en maakt geen ontwikkeling door.",
+         "Koos je \"een antagonist, de tegenspeler van de hoofdpersoon\"? Dan denk je dat dit de naam voor één eigenschap is. Antagonist is een rol, geen soort karakter.",
+         "Koos je \"een verteller die het verhaal vertelt\"? Dan denk je dat dit het personage is. Een verteller is geen karakter, maar een stem."
+        ],
+        "uh": "Eén of meer.",
+        "ctx": "Een ronde personage heeft meerdere eigenschappen en verandert vaak. Een vlak personage heeft er één en blijft gelijk."
+       },
+       {
+        "v": "Welk personage is hij?",
+        "o": [
+         "een bijfiguur",
+         "een hoofdpersoon",
+         "een tegenspeler",
+         "een dynamisch personage"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Een bijfiguur heeft een kleine rol.",
+        "uo": [
+         "Klopt: hij heeft een kleine rol en geen ontwikkeling.",
+         "Koos je \"een hoofdpersoon\"? Dan denk je dat hij centraal staat. Hij komt even langs, dus hij is bijfiguur.",
+         "Koos je \"een tegenspeler\"? Dan denk je dat hij de hoofdpersoon tegenwerkt. Hij bezorgt alleen een brief, dus dat past niet.",
+         "Koos je \"een dynamisch personage\"? Dan denk je dat hij verandert. Hij komt maar even, er is geen ontwikkeling."
+        ],
+        "uh": "Klein = bijfiguur.",
+        "ctx": "In een verhaal komt een jongen voor die alleen even langskomt om een brief te bezorgen en daarna nooit meer terugkeert."
+       },
+       {
+        "v": "Waarom is dit geen thema?",
+        "o": [
+         "het is te kort om een thema te zijn, want thema's zijn lang",
+         "een thema moet altijd een personage zijn dat iets doet",
+         "er staat geen werkwoord in, dus het is geen volledige zin",
+         "het is een gebeurtenis"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Een thema is een abstract idee, geen gebeurtenis.",
+        "uo": [
+         "Koos je \"het is te kort om een thema te zijn, want thema's...\"? Dan denk je dat de lengte telt. Het gaat om abstractie, dit is een handeling.",
+         "Koos je \"een thema moet altijd een personage zijn dat iets...\"? Dan denk je dat een thema een persoon is. Een thema is een idee, geen personage.",
+         "Koos je \"er staat geen werkwoord in, dus het is geen...\"? Dan denk je dat dat het probleem is. Het gaat om de aard van de uitspraak, het is een gebeurtenis.",
+         "Klopt: een thema is een idee zoals vrijheid of angst."
+        ],
+        "uh": "Idee, geen actie.",
+        "ctx": "Een leerling noemt als thema van een verhaal: \"Het meisje loopt door het bos.\""
+       },
+       {
+        "v": "Welk thema past het best bij fragment 6?",
+        "o": [
+         "kookkunst en oude tradities op het platteland",
+         "dierenwelzijn op een boerderij in het dorp",
+         "vrijheid tegenover verplichting",
+         "wiskundig inzicht en rekenvaardigheid voor het examen"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 5,
+        "u": "Thema = het idee waar het conflict om draait.",
+        "uo": [
+         "Koos je \"kookkunst en oude tradities op het platteland\"? Dan denk je dat het om koken gaat. Er wordt niets gekookt, het gaat om de wens om weg te gaan.",
+         "Koos je \"dierenwelzijn op een boerderij in het dorp\"? Dan denk je dat het om dieren gaat. Er is een boerderij maar geen dier, het thema is vrijheid versus verplichting.",
+         "Klopt: Lotte wil weg, haar vader houdt haar aan het land en de familie vast.",
+         "Koos je \"wiskundig inzicht en rekenvaardigheid voor het...\"? Dan denk je dat het om rekenen gaat. Dat speelt niet, de spanning gaat over blijven of weggaan."
+        ],
+        "uh": "Conflict wijst thema.",
+        "ctx": "Fragment 6: \"Lotte wilde het dorp verlaten, maar haar vader hield haar tegen. Hij had de boerderij van zijn vader geërfd en verwachtte dat zij die zou overnemen. Elke avond, aan tafel, zei hij hetzelfde zinnetje: 'Een mens verlaat zijn land niet.' Lotte zweeg, maar ze telde in stilte de dagen tot haar examen.\""
+       },
+       {
+        "v": "Welk motief in fragment 6 ondersteunt het thema het best?",
+        "o": [
+         "het examen aan het eind van het fragment",
+         "het dorp waar alles zich afspeelt",
+         "het herhaalde zinnetje van de vader",
+         "de boerderij die hij heeft geërfd"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Een motief is een herhaald element dat het thema ondersteunt.",
+        "uo": [
+         "Koos je \"het examen aan het eind van het fragment\"? Dan denk je dat het examen het motief is. Het komt eenmaal voor, de herhaling zit in het zinnetje.",
+         "Koos je \"het dorp waar alles zich afspeelt\"? Dan denk je dat het dorp terugkeert. Het is de plek, het motief is de herhaling.",
+         "Klopt: de herhaling toont de druk om te blijven.",
+         "Koos je \"de boerderij die hij heeft geërfd\"? Dan denk je dat de boerderij steeds terugkomt. Ze komt eenmaal voor, het zinnetje herhaalt zich."
+        ],
+        "uh": "Herhaling ondersteunt.",
+        "ctx": "Fragment 6: \"Lotte wilde het dorp verlaten, maar haar vader hield haar tegen. Hij had de boerderij van zijn vader geërfd en verwachtte dat zij die zou overnemen. Elke avond, aan tafel, zei hij hetzelfde zinnetje: 'Een mens verlaat zijn land niet.' Lotte zweeg, maar ze telde in stilte de dagen tot haar examen.\""
+       },
+       {
+        "v": "Welke ontwikkeling maakt Iris door?",
+        "o": [
+         "van zelfbewust naar onderdanig in de loop van het verhaal",
+         "van boos naar blij, zoals de stemming wisselt",
+         "ze verandert niet, want ze blijft dezelfde persoon",
+         "onderdanig, daarna zelfbewust"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Een ontwikkeling laat een verschil zien tussen begin en eind.",
+        "uo": [
+         "Koos je \"van zelfbewust naar onderdanig in de loop van het...\"? Dan denk je dat het omgekeerd is. Eerst is ze onderdanig, later zelfbewust.",
+         "Koos je \"van boos naar blij, zoals de stemming wisselt\"? Dan denk je dat het om stemming gaat. Het gaat om haar houding, niet om blij of boos.",
+         "Koos je \"ze verandert niet, want ze blijft dezelfde persoon\"? Dan denk je dat er geen ontwikkeling is. Ze onderbreekt de baas, dus ze is veranderd.",
+         "Klopt: eerst laat ze alles toe, later spreekt ze tegen."
+        ],
+        "uh": "Begin versus eind.",
+        "ctx": "Fragment 2: \"In het begin liet Iris elke opmerking van haar baas over zich heen komen. Ze knikte, glimlachte en nam het werk mee naar huis. Maar na de zomer, toen ze haar eerste vergadering voorzat, onderbrak ze hem midden in een zin. 'Dat klopt niet,' zei ze, kalm en luid genoeg. Niemand sprak. Hij schoof zijn stoel terug.\""
+       },
+       {
+        "v": "Beide fragmenten gaan over eenzaamheid, maar verschillen in hoe het thema verloopt. Welk verschil?",
+        "o": [
+         "4 stilstand, 5 begin van herstel",
+         "beide tonen herstel van de eenzaamheid aan het eind",
+         "4 toont herstel, 5 toont stilstand en wachten",
+         "beide tonen woede over de eenzaamheid"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Hetzelfde thema kan anders verlopen.",
+        "uo": [
+         "Klopt: Marloes blijft hangen in gewoonte, Annelies krijgt een teken van hoop.",
+         "Koos je \"beide tonen herstel van de eenzaamheid aan het eind\"? Dan denk je dat beide eindigen in herstel. In 4 verandert niets, dus er is geen herstel.",
+         "Koos je \"4 toont herstel, 5 toont stilstand en wachten\"? Dan denk je dat het omgekeerd is. Marloes blijft hangen, Annelies krijgt hoop.",
+         "Koos je \"beide tonen woede over de eenzaamheid\"? Dan denk je dat er woede is. Dat staat nergens, het gaat om gemis en hoop."
+        ],
+        "uh": "Thema, ander verloop.",
+        "ctx": "Fragment 4: \"Marloes bakte elke zondag een taart voor de buren die nooit meer kwamen. Ze dekte de tafel voor zes, al woonde ze alleen. 'Het is maar gewoonte,' zei ze tegen de kat. In de gang lag nog het stapeltje ongeopende post, bovenop de krant van een week geleden.\" Fragment 5: \"De tak boven het raam bleef de hele winter kaal. Annelies keek er elke ochtend naar, tegelijk met de kop thee en de gedachte aan de telefoon die niet ging. In maart liep ze voor het eerst weer naar buiten en zag aan de kaalste punt van de tak een knop.\""
+       },
+       {
+        "v": "Wat is het verschil in karakter tussen Bram en Iris?",
+        "o": [
+         "Bram ontwikkelt zich, Iris blijft precies hetzelfde",
+         "Bram statisch, Iris dynamisch",
+         "beide blijven gedurende het fragment hetzelfde",
+         "beide veranderen volledig van karakter"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Statisch blijft gelijk, dynamisch verandert.",
+        "uo": [
+         "Koos je \"Bram ontwikkelt zich, Iris blijft precies hetzelfde\"? Dan denk je dat het omgekeerd is. Bram blijft zuinig, Iris verandert.",
+         "Klopt: Bram is consequent zuinig, Iris verandert.",
+         "Koos je \"beide blijven gedurende het fragment hetzelfde\"? Dan denk je dat Iris gelijk blijft. Ze verandert, dus ze is dynamisch.",
+         "Koos je \"beide veranderen volledig van karakter\"? Dan denk je dat Bram verandert. Hij blijft zuinig, dus hij is statisch."
+        ],
+        "uh": "Blijft of verandert.",
+        "ctx": "Fragment 1: \"Bram was een zuinig man. Dat zag je aan de manier waarop hij zijn koffie telde: twee schepjes, nooit drie. Toen zijn buurman om een lening vroeg, keek Bram hem lang aan en zei dat hij het even moest uitrekenen. Hij rekende drie dagen. Daarna zei hij nee en bood een kop thee aan.\" Fragment 2: \"In het begin liet Iris elke opmerking van haar baas over zich heen komen. Ze knikte, glimlachte en nam het werk mee naar huis. Maar na de zomer, toen ze haar eerste vergadering voorzat, onderbrak ze hem midden in een zin. 'Dat klopt niet,' zei ze, kalm en luid genoeg. Niemand sprak. Hij schoof zijn stoel terug.\""
+       },
+       {
+        "v": "Een leerling zegt: \"Motief en thema zijn hetzelfde.\" Wat is een goede reactie, uitgaande van fragment 3 en 4?",
+        "o": [
+         "ja, want beide herhalen zich door het hele verhaal",
+         "nee, een thema is concreet en een motief is abstract",
+         "ja, want beide staan in elk verhaal even duidelijk aanwezig",
+         "nee: motief is concreet, thema abstract"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Een motief is concreet, een thema is abstract.",
+        "uo": [
+         "Koos je \"ja, want beide herhalen zich door het hele verhaal\"? Dan denk je dat beide herhaling zijn. Een motief herhaalt zich, een thema is het idee eronder.",
+         "Koos je \"nee, een thema is concreet en een motief is abstract\"? Dan denk je dat het omgekeerd is. Het motief is concreet, het thema abstract.",
+         "Koos je \"ja, want beide staan in elk verhaal even duidelijk...\"? Dan denk je dat beide altijd aanwezig zijn. Niet elk verhaal heeft een duidelijk motief, en een thema is niet hetzelfde.",
+         "Klopt: een motief is concreet en terugkerend, het thema abstract, en het motief ondersteunt het thema."
+        ],
+        "uh": "Concreet versus abstract.",
+        "ctx": "Fragment 1: \"Bram was een zuinig man. Dat zag je aan de manier waarop hij zijn koffie telde: twee schepjes, nooit drie. Toen zijn buurman om een lening vroeg, keek Bram hem lang aan en zei dat hij het even moest uitrekenen. Hij rekende drie dagen. Daarna zei hij nee en bood een kop thee aan.\" Fragment 3: \"Elke keer dat Kees aan zijn vader dacht, rook hij pijptabak. In de trein, bij het ontbijt, zelfs in de bibliotheek waar niemand rookte. Op de dag van de begrafenis bleef de geur weg. Hij zocht in zijn jaszak naar de zakdoek die zijn vader hem had gegeven en vond alleen de lege hoes van een pijp.\" Fragment 4: \"Marloes bakte elke zondag een taart voor de buren die nooit meer kwamen. Ze dekte de tafel voor zes, al woonde ze alleen. 'Het is maar gewoonte,' zei ze tegen de kat. In de gang lag nog het stapeltje ongeopende post, bovenop de krant van een week geleden.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Bram was een zuinig man. Dat zag je aan de manier waarop hij zijn koffie telde: twee schepjes, nooit drie. Toen zijn buurman om een lening vroeg, keek Bram hem lang aan en zei dat hij het even moest uitrekenen. Hij rekende drie dagen. Daarna zei hij nee en bood een kop thee aan.\"",
+        "v": "Geef een voorbeeld van directe en van indirecte karakterisering in dit fragment en leg het verschil uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Direct: \"Bram was een zuinig man\" (1p). Indirect: bijvoorbeeld \"twee schepjes, nooit drie\" of drie dagen rekenen (1p). Bij direct noemt de verteller de eigenschap, bij indirect leid je haar af uit gedrag (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"In het begin liet Iris elke opmerking van haar baas over zich heen komen. Ze knikte, glimlachte en nam het werk mee naar huis. Maar na de zomer, toen ze haar eerste vergadering voorzat, onderbrak ze hem midden in een zin. 'Dat klopt niet,' zei ze, kalm en luid genoeg. Niemand sprak. Hij schoof zijn stoel terug.\"",
+        "v": "Wat voor personage is Iris (statisch of dynamisch) en welk detail toont het keerpunt?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Dynamisch (1p), want ze verandert van onderdanig naar zelfbewust (1p). Het keerpunt: ze onderbreekt haar baas midden in een zin en niemand spreekt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Elke keer dat Kees aan zijn vader dacht, rook hij pijptabak. In de trein, bij het ontbijt, zelfs in de bibliotheek waar niemand rookte. Op de dag van de begrafenis bleef de geur weg. Hij zocht in zijn jaszak naar de zakdoek die zijn vader hem had gegeven en vond alleen de lege hoes van een pijp.\"",
+        "v": "Welk motief keert steeds terug en welke betekenis krijgt het wegblijven ervan op de dag van de begrafenis?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De geur van pijptabak (1p). Het wegblijven toont het verlies van de vader: de verbinding is verbroken (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Marloes bakte elke zondag een taart voor de buren die nooit meer kwamen. Ze dekte de tafel voor zes, al woonde ze alleen. 'Het is maar gewoonte,' zei ze tegen de kat. In de gang lag nog het stapeltje ongeopende post, bovenop de krant van een week geleden.\"",
+        "v": "Welk thema past bij dit fragment en door welke twee details blijkt dat, zonder dat het thema wordt genoemd?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Eenzaamheid (1p). Details: de tafel gedekt voor zes terwijl ze alleen woont en de ongeopende post of de taart voor wie niet komt (1p per detail, max. 2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"De tak boven het raam bleef de hele winter kaal. Annelies keek er elke ochtend naar, tegelijk met de kop thee en de gedachte aan de telefoon die niet ging. In maart liep ze voor het eerst weer naar buiten en zag aan de kaalste punt van de tak een knop.\"",
+        "v": "Welk symbool komt voor en hoe verandert de betekenis tussen het begin en het eind van het fragment?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De tak (1p). Eerst staat de kale tak voor leegte en wachten, aan het eind toont de knop hoop op nieuw leven (1p)."
+       }
+      ]
      }
     ]
    }

@@ -721,6 +721,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "F4",
+      "lo": "nl.F.4",
+      "gs": 2,
+      "naam": "Personages, thema en motief",
+      "beschrijving": "Je karakteriseert personages (direct en indirect), herkent hun rol en ontwikkeling en legt uit hoe motieven en symbolen het thema van een verhaal ondersteunen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Karakterisering en rollen",
+       "Ontwikkeling van personages",
+       "Thema herkennen",
+       "Thema blijkt uit details",
+       "Motief en symbool",
+       "Motief en thema samen"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
