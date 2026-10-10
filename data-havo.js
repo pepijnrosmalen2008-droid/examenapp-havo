@@ -32102,6 +32102,694 @@ var VAKKEN = [
         "u": "Eufemisme (1p): een pijnlijk woord wordt verzacht. Understatement (1p): een ernstige zaak wordt kleiner voorgesteld dan ze is (1p)."
        }
       ]
+     },
+     {
+      "id": "F6",
+      "lo": "nl.F.6",
+      "gs": 2,
+      "naam": "Literatuurgeschiedenis in hoofdlijnen",
+      "beschrijving": "Je kent de hoofdlijnen van de literatuurgeschiedenis (van Middeleeuwen tot postmodernisme), herkent bij een fragment de stroming en legt uit hoe stromingen op elkaar reageren.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Middeleeuwen en de volgorde van de stromingen",
+       "Verlichting en Romantiek",
+       "Renaissance en Gouden Eeuw",
+       "Realisme",
+       "Naturalisme",
+       "Modernisme",
+       "Postmodernisme"
+      ],
+      "sam": "De hoofdlijnen van de literatuurgeschiedenis volgen op elkaar en reageren vaak op elkaar: Middeleeuwen (geloof, ridderlijkheid, les), Renaissance en Gouden Eeuw (pracht, vergankelijkheid, klassieke thema's), Verlichting (rede, nut), Romantiek (gevoel, natuur, verlangen), Realisme (nuchtere werkelijkheid), Naturalisme (determinisme), Modernisme (experiment, versplintering) en Postmodernisme (spel met vorm en lezer). Je herkent een stroming aan kenmerken in een fragment, niet aan jaartallen alleen.",
+      "begrippen": [
+       {
+        "t": "Stroming",
+        "d": "Een groep werken met gedeelde kenmerken in een bepaalde periode."
+       },
+       {
+        "t": "Middeleeuwen",
+        "d": "Periode met literatuur over geloof, ridderlijkheid en een les."
+       },
+       {
+        "t": "Renaissance",
+        "d": "Periode met interesse in klassieke cultuur en de mens."
+       },
+       {
+        "t": "Barok",
+        "d": "Stijl met pracht en nadruk op vergankelijkheid."
+       },
+       {
+        "t": "Verlichting",
+        "d": "Stroming die rede en nut centraal stelt (18e eeuw)."
+       },
+       {
+        "t": "Romantiek",
+        "d": "Stroming die gevoel, natuur en verlangen centraal stelt."
+       },
+       {
+        "t": "Realisme",
+        "d": "Stroming die de alledaagse werkelijkheid nuchter toont."
+       },
+       {
+        "t": "Naturalisme",
+        "d": "Stroming die de mens ziet als bepaald door erfelijkheid en milieu."
+       },
+       {
+        "t": "Determinisme",
+        "d": "Het idee dat afkomst en omgeving het lot bepalen."
+       },
+       {
+        "t": "Modernisme",
+        "d": "Stroming met experiment en een versplinterde ervaring."
+       },
+       {
+        "t": "Postmodernisme",
+        "d": "Stroming die speelt met vorm, ironie en de lezer."
+       },
+       {
+        "t": "Reactie",
+        "d": "Een stroming die zich afzet tegen de vorige."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke stroming past het best bij fragment A?",
+        "o": [
+         "Romantiek, omdat er een gebed is",
+         "Middeleeuwen",
+         "Realisme, omdat een ridder wordt beschreven",
+         "Modernisme, omdat de tekst kort is"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Geloof, ridderlijkheid en een les passen bij de Middeleeuwen.",
+        "uo": [
+         "Koos je \"Romantiek, omdat er een gebed is\"? Dan denk je dat gevoel hier de kern is. Het fragment draait om geloof en een les, dat past bij de Middeleeuwen.",
+         "Klopt: een ridder, een gebed en een les over het hiernamaals zijn typisch voor de middeleeuwse literatuur.",
+         "Koos je \"Realisme, omdat een ridder wordt beschreven\"? Dan denk je dat een beschrijving realistisch is. Er is geen alledaagse werkelijkheid, maar een ideaal van ridderlijkheid en geloof.",
+         "Koos je \"Modernisme, omdat de tekst kort is\"? Dan denk je dat korte tekst modern is. Er is geen experiment, maar een traditionele les."
+        ],
+        "uh": "Ridder en geloof.",
+        "ctx": "Fragment A: \"De ridder knielde bij het kruis en bad: God, geef mij kracht om de weduwe te beschermen. Zo sprak hij, terwijl zijn zwaard rustte op zijn knie. Wie goed leeft, zo leert dit verhaal, vindt na de dood de poort open.\""
+       },
+       {
+        "v": "Welk kenmerk van fragment A is typisch voor de Middeleeuwen?",
+        "o": [
+         "de aandacht voor de individuele gevoelens van de ridder",
+         "de kritiek op sociale misstanden in de samenleving",
+         "de spot met de verteller en de lezer",
+         "de nadruk op geloof en een les over een goed leven"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Middeleeuws: geloof, ridderlijkheid, les.",
+        "uo": [
+         "Koos je \"de aandacht voor de individuele gevoelens van de...\"? Dan denk je dat het om individuele gevoelens gaat. Dat is later (Romantiek), hier staat de les centraal, en het ideaal van de ridder.",
+         "Koos je \"de kritiek op sociale misstanden in de samenleving\"? Dan denk je dat het om sociale kritiek gaat. Dat is realisme, hier staat een religieuze les.",
+         "Koos je \"de spot met de verteller en de lezer\"? Dan denk je dat het ironisch is. Dat is postmodern, hier is de toon ernstig.",
+         "Klopt: veel middeleeuwse teksten willen leren hoe je goed leeft met het oog op het hiernamaals."
+        ],
+        "uh": "Les en geloof.",
+        "ctx": "Fragment A: \"De ridder knielde bij het kruis en bad: God, geef mij kracht om de weduwe te beschermen. Zo sprak hij, terwijl zijn zwaard rustte op zijn knie. Wie goed leeft, zo leert dit verhaal, vindt na de dood de poort open.\""
+       },
+       {
+        "v": "Welke stroming past bij fragment B en waaraan blijkt dat?",
+        "o": [
+         "Verlichting: rede en nut staan centraal",
+         "Romantiek: gevoel en natuur staan centraal in het fragment",
+         "Naturalisme: erfelijkheid bepaalt het lot van de dochter",
+         "Middeleeuwen: geloof in het hiernamaals staat centraal"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Rede, opvoeding en burgerlijke deugd: Verlichting.",
+        "uo": [
+         "Klopt: de nadruk op verstand, arbeid en nut past bij de 18e-eeuwse Verlichting.",
+         "Koos je \"Romantiek: gevoel en natuur staan centraal in het...\"? Dan denk je dat het om gevoel gaat. Het fragment preekt juist rede en nut, dat is Verlichting.",
+         "Koos je \"Naturalisme: erfelijkheid bepaalt het lot van de...\"? Dan denk je dat het om determinisme gaat. Er staat niets over erfelijkheid, maar over redelijk handelen.",
+         "Koos je \"Middeleeuwen: geloof in het hiernamaals staat...\"? Dan denk je dat het om geloof gaat. Er is geen hiernamaals, wel nuttige deugden voor een burger."
+        ],
+        "uh": "Rede en nut.",
+        "ctx": "Fragment B: \"Mijnheer De Wijze sprak tot zijn dochter over de nuttige deugden van arbeid en verstand. Wie redelijk handelt, zo betoogde hij, wordt een nuttig burger. Zij beloofde zijn lessen ter harte te nemen en las die avond een boek over zuinigheid.\""
+       },
+       {
+        "v": "Wat is het opvoedkundige doel van fragment B en waarom past dat bij de Verlichting?",
+        "o": [
+         "de lezer laten dromen over vroeger, want de Verlichting vereert het verleden",
+         "de lezer schokken met de armoede, want de Verlichting is sociaal",
+         "leren redelijk en nuttig te handelen",
+         "de lezer laten twijfelen aan de verteller, want de Verlichting is ironisch"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Verlichting: rede, opvoeding en vooruitgang.",
+        "uo": [
+         "Koos je \"de lezer laten dromen over vroeger, want de...\"? Dan denk je dat het om nostalgie gaat. Dat is de Romantiek, de Verlichting kijkt naar rede en vooruitgang.",
+         "Koos je \"de lezer schokken met de armoede, want de...\"? Dan denk je dat het om armoede gaat. Dat is realisme, hier gaat het om deugd en verstand.",
+         "Klopt: opvoeding tot een redelijk burger sluit aan bij het ideaal van de Verlichting.",
+         "Koos je \"de lezer laten twijfelen aan de verteller, want de...\"? Dan denk je dat twijfel het doel is. Dat is postmodern, hier is de les duidelijk."
+        ],
+        "uh": "Opvoeden met rede.",
+        "ctx": "Fragment B: \"Mijnheer De Wijze sprak tot zijn dochter over de nuttige deugden van arbeid en verstand. Wie redelijk handelt, zo betoogde hij, wordt een nuttig burger. Zij beloofde zijn lessen ter harte te nemen en las die avond een boek over zuinigheid.\""
+       },
+       {
+        "v": "Welke stroming past bij fragment C en welk thema blijkt?",
+        "o": [
+         "Romantiek, met het thema verlangen naar vroeger",
+         "Modernisme, met het thema vervreemding in de stad",
+         "Gouden Eeuw (barok): vergankelijkheid",
+         "Realisme, met het thema armoede en sociale misstanden"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Vergankelijkheid is een barokthema.",
+        "uo": [
+         "Koos je \"Romantiek, met het thema verlangen naar vroeger\"? Dan denk je dat het om verlangen gaat. Het fragment gaat over vergankelijkheid, dat past bij de barok.",
+         "Koos je \"Modernisme, met het thema vervreemding in de stad\"? Dan denk je dat het om vervreemding gaat. De tekst is ordelijk en ernstig, en gaat over vergankelijkheid.",
+         "Klopt: de pracht die vergaat en de dood voor iedereen zijn typisch voor de barok.",
+         "Koos je \"Realisme, met het thema armoede en sociale...\"? Dan denk je dat het om armoede gaat. De tekst gaat over dood voor koning en bedelaar, dus vergankelijkheid."
+        ],
+        "uh": "Vergaat alles.",
+        "ctx": "Fragment C: \"Wat is de mens? Een bloem die bloeit en vergaat. Vergeet niet dat alle pracht van goud en zijde vergankelijk is, en dat de dood geen rang kent: de koning en de bedelaar worden beiden stof.\""
+       },
+       {
+        "v": "Welke stroming past het best bij fragment D?",
+        "o": [
+         "Romantiek",
+         "Verlichting, omdat er verstand wordt gebruikt",
+         "Naturalisme, omdat het de natuur beschrijft",
+         "Realisme, omdat het een eenzame beschrijft"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Gevoel, natuur en verlangen: Romantiek.",
+        "uo": [
+         "Klopt: gevoel, natuur en verlangen naar vroeger zijn kenmerken van de Romantiek.",
+         "Koos je \"Verlichting, omdat er verstand wordt gebruikt\"? Dan denk je dat er rede is. Het fragment draait om gevoel, dus Romantiek.",
+         "Koos je \"Naturalisme, omdat het de natuur beschrijft\"? Dan denk je dat natuur naturalisme is. Hier is de natuur een sfeer van verlangen, dat past bij Romantiek.",
+         "Koos je \"Realisme, omdat het een eenzame beschrijft\"? Dan denk je dat het sociaal is. Het fragment gaat om gevoel, geen alledaagse werkelijkheid."
+        ],
+        "uh": "Gevoel en natuur.",
+        "ctx": "Fragment D: \"O, wanneer ik dwaal door het zachte avondlicht, voel ik mijn hart zwellen van verlangen naar vroeger. De bomen fluisteren mij oude liederen en ik, eenzame, geef mij over aan hun treurige zoetheid.\""
+       },
+       {
+        "v": "Fragment B (Verlichting) en D (Romantiek) verschillen. Welk verschil is kenmerkend?",
+        "o": [
+         "B vertrouwt op gevoel en D op rede",
+         "B en D zijn allebei gericht op sociale misstanden",
+         "B en D hebben dezelfde stroming",
+         "B op rede en nut, D op gevoel"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Romantiek tegenover Verlichting: gevoel tegenover rede.",
+        "uo": [
+         "Koos je \"B vertrouwt op gevoel en D op rede\"? Dan denk je dat het omgekeerd is. B preekt rede en D toont gevoel, dus dit klopt niet.",
+         "Koos je \"B en D zijn allebei gericht op sociale misstanden\"? Dan denk je dat beide sociaal kritisch zijn. Dat is realisme, geen van beide fragmenten gaat over armoede.",
+         "Koos je \"B en D hebben dezelfde stroming\"? Dan denk je dat ze gelijk zijn. Ze verschillen sterk in toon en thema, dus ze hebben een andere stroming.",
+         "Klopt: de Romantiek reageert op de Verlichting door gevoel en verlangen centraal te stellen."
+        ],
+        "uh": "Gevoel of rede.",
+        "ctx": "Fragment D: \"O, wanneer ik dwaal door het zachte avondlicht, voel ik mijn hart zwellen van verlangen naar vroeger. De bomen fluisteren mij oude liederen en ik, eenzame, geef mij over aan hun treurige zoetheid.\" Fragment B: \"Mijnheer De Wijze sprak tot zijn dochter over de nuttige deugden van arbeid en verstand. Wie redelijk handelt, zo betoogde hij, wordt een nuttig burger. Zij beloofde zijn lessen ter harte te nemen en las die avond een boek over zuinigheid.\""
+       },
+       {
+        "v": "Welke stroming past bij fragment E en waaraan blijkt dat?",
+        "o": [
+         "Romantiek: er is verlangen naar vroeger in de tekst",
+         "Realisme: nuchter beschreven werkelijkheid",
+         "Naturalisme: erfelijkheid bepaalt het lot van de dochter",
+         "Modernisme: de tekst is fragmentarisch en experimenteel"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Realisme beschrijft de werkelijkheid nuchter en alledaags.",
+        "uo": [
+         "Koos je \"Romantiek: er is verlangen naar vroeger in de tekst\"? Dan denk je dat er verlangen is. Er staat een zakelijke beschrijving, geen gevoelsuitbarsting.",
+         "Klopt: loon, kamer en eten worden zakelijk en zonder commentaar beschreven.",
+         "Koos je \"Naturalisme: erfelijkheid bepaalt het lot van de...\"? Dan denk je dat het om determinisme gaat. Er staat niets over erfelijkheid, alleen de werkelijkheid.",
+         "Koos je \"Modernisme: de tekst is fragmentarisch en...\"? Dan denk je dat het experiment is. De tekst is helder en lineair, dus realisme."
+        ],
+        "uh": "Nuchtere beschrijving.",
+        "ctx": "Fragment E: \"Om zes uur ging Jans vader naar de fabriek. Voor twaalf uur arbeid kreeg hij acht gulden in de week. De kamer waar het gezin sliep was vochtig; een kachel was er niet. Jan at brood met stroop en ging naar bed.\""
+       },
+       {
+        "v": "Welk detail in fragment E toont sociale kritiek zonder dat de verteller zijn mening geeft?",
+        "o": [
+         "dat Jan brood met stroop eet als avondeten",
+         "dat de vader om zes uur naar de fabriek vertrekt",
+         "dat Jan aan het eind naar bed gaat",
+         "het lage loon en de vochtige kamer"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Realisme toont misstanden via feiten, zonder commentaar.",
+        "uo": [
+         "Koos je \"dat Jan brood met stroop eet als avondeten\"? Dan denk je dat dit de kritiek is. Het is een beschrijving van eten, de kritiek zit in het loon en de kamer.",
+         "Koos je \"dat de vader om zes uur naar de fabriek vertrekt\"? Dan denk je dat dit de kritiek is. Het is een tijdstip, de kritiek zit in loon en woonomstandigheden.",
+         "Koos je \"dat Jan aan het eind naar bed gaat\"? Dan denk je dat dit de kritiek is. Het is een gewone handeling, de kritiek zit in loon en kamer.",
+         "Klopt: de feiten spreken voor zich, de verteller oordeelt niet."
+        ],
+        "uh": "Feiten, geen oordeel.",
+        "ctx": "Fragment E: \"Om zes uur ging Jans vader naar de fabriek. Voor twaalf uur arbeid kreeg hij acht gulden in de week. De kamer waar het gezin sliep was vochtig; een kachel was er niet. Jan at brood met stroop en ging naar bed.\""
+       },
+       {
+        "v": "Welke stroming past bij fragment F en welk idee is kenmerkend?",
+        "o": [
+         "Realisme: de verteller beschrijft nuchter het dagelijks leven",
+         "Naturalisme: erfelijkheid en milieu bepalen de mens",
+         "Romantiek: de eenzame mens zoekt zichzelf",
+         "Verlichting: de mens handelt redelijk"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Naturalisme: determinisme door erfelijkheid en milieu.",
+        "uo": [
+         "Koos je \"Realisme: de verteller beschrijft nuchter het...\"? Dan denk je dat het alleen nuchter beschrijven is. Het gaat om determinisme, dat is naturalisme.",
+         "Klopt: Piet kan er niets aan doen, zijn lot ligt vast door afkomst en omgeving.",
+         "Koos je \"Romantiek: de eenzame mens zoekt zichzelf\"? Dan denk je dat het om gevoel gaat. Het gaat om erfelijkheid en milieu, dus naturalisme.",
+         "Koos je \"Verlichting: de mens handelt redelijk\"? Dan denk je dat het om rede gaat. Piet handelt niet vrij, dus naturalisme."
+        ],
+        "uh": "Erfelijk en milieu.",
+        "ctx": "Fragment F: \"Zijn vader was een drinker geweest en zijn grootvader ook. Piet kon er niets aan doen dat zijn handen beefden zodra hij een kroeg rook: het milieu van de achterbuurt en het bloed van zijn voorouders hadden hem gemaakt tot wat hij was.\""
+       },
+       {
+        "v": "Fragment E (realisme) en F (naturalisme) beschrijven beide armoede. Wat verschilt?",
+        "o": [
+         "E verklaart het lot uit erfelijkheid, F toont alleen de omstandigheden",
+         "E en F verschillen niet van elkaar in aanpak of idee",
+         "E toont feiten, F verklaart het lot",
+         "E bevat veel gevoel, F bevat verlangen naar vroeger"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Realisme toont, naturalisme verklaart met determinisme.",
+        "uo": [
+         "Koos je \"E verklaart het lot uit erfelijkheid, F toont...\"? Dan denk je dat het omgekeerd is. F noemt erfelijkheid, E toont alleen feiten.",
+         "Koos je \"E en F verschillen niet van elkaar in aanpak of idee\"? Dan denk je dat ze gelijk zijn. F voegt determinisme toe, dat staat niet in E.",
+         "Klopt: naturalisme voegt het idee toe dat de mens bepaald is door afkomst en omgeving.",
+         "Koos je \"E bevat veel gevoel, F bevat verlangen naar vroeger\"? Dan denk je dat beide romantisch zijn. Geen van beide gaat om verlangen, het gaat om feiten en determinisme."
+        ],
+        "uh": "Tonen of verklaren.",
+        "ctx": "Fragment F: \"Zijn vader was een drinker geweest en zijn grootvader ook. Piet kon er niets aan doen dat zijn handen beefden zodra hij een kroeg rook: het milieu van de achterbuurt en het bloed van zijn voorouders hadden hem gemaakt tot wat hij was.\" Fragment E: \"Om zes uur ging Jans vader naar de fabriek. Voor twaalf uur arbeid kreeg hij acht gulden in de week. De kamer waar het gezin sliep was vochtig; een kachel was er niet. Jan at brood met stroop en ging naar bed.\""
+       },
+       {
+        "v": "Welke stroming past bij fragment G en waaraan blijkt dat?",
+        "o": [
+         "Modernisme: fragmentarisch en experimenteel",
+         "Verlichting: het is logisch en overzichtelijk opgebouwd",
+         "Realisme: het beschrijft het stadsleven nuchter en zakelijk",
+         "Middeleeuwen: er is een les voor de lezer"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Fragmentarisch en experimenteel: Modernisme.",
+        "uo": [
+         "Klopt: de losse zinsflarden en gedachtestroom tonen een gebroken ervaring.",
+         "Koos je \"Verlichting: het is logisch en overzichtelijk...\"? Dan denk je dat het logisch is. Het fragment is juist gebroken, dus modernisme.",
+         "Koos je \"Realisme: het beschrijft het stadsleven nuchter en...\"? Dan denk je dat het nuchter beschreven is. Het is een gedachtestroom, geen heldere beschrijving.",
+         "Koos je \"Middeleeuwen: er is een les voor de lezer\"? Dan denk je dat er een les is. Er is geen les, alleen een versplinterd beeld."
+        ],
+        "uh": "Versplinterd.",
+        "ctx": "Fragment G: \"tram / gezichten / een raam dat mij terugkaatst / wie kijkt / de stad is stuk, in stukjes, in woorden die niet passen / ik, jij, het / wacht\""
+       },
+       {
+        "v": "Hoe past de vorm (streepjes, losse woorden) bij de inhoud (\"de stad is stuk\")?",
+        "o": [
+         "de gebroken vorm toont de gebroken ervaring",
+         "de vorm is willekeurig en zegt niets over de inhoud van het fragment",
+         "de vorm is een gewoon verhaal, zonder enig experiment of breuk",
+         "de vorm toont de les die de verteller wil geven"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Modernisme laat de vorm de ervaring weerspiegelen.",
+        "uo": [
+         "Klopt: vorm en inhoud versterken elkaar, kenmerkend voor het modernisme.",
+         "Koos je \"de vorm is willekeurig en zegt niets over de inhoud...\"? Dan denk je dat de vorm niets zegt. Hij toont de breuk, en past bij de inhoud.",
+         "Koos je \"de vorm is een gewoon verhaal, zonder enig...\"? Dan denk je dat het een gewoon verhaal is. Het is fragmentarisch, dus experimenteel.",
+         "Koos je \"de vorm toont de les die de verteller wil geven\"? Dan denk je dat er een les is. Er is geen les, alleen een gebroken vorm."
+        ],
+        "uh": "Vorm = ervaring.",
+        "ctx": "Fragment G: \"tram / gezichten / een raam dat mij terugkaatst / wie kijkt / de stad is stuk, in stukjes, in woorden die niet passen / ik, jij, het / wacht\""
+       },
+       {
+        "v": "Welke stroming past bij fragment H en welke eigenschap blijkt?",
+        "o": [
+         "Romantiek: een eenzame verteller met een gevoel van verlangen",
+         "Realisme: de tekst is nuchter en zakelijk geschreven",
+         "Postmodernisme: spel met vertelling en lezer",
+         "Middeleeuwen: een gebed en een les over het leven"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 6,
+        "u": "Postmodernisme speelt met vorm en lezer.",
+        "uo": [
+         "Koos je \"Romantiek: een eenzame verteller met een gevoel van...\"? Dan denk je dat het om gevoel gaat. Het is een spel met vorm, dat is postmodern.",
+         "Koos je \"Realisme: de tekst is nuchter en zakelijk geschreven\"? Dan denk je dat het een alledaagse werkelijkheid is. De tekst speelt met zichzelf, dus postmodern.",
+         "Klopt: de verteller speelt met zichzelf en met de lezer, en doorbreekt de illusie.",
+         "Koos je \"Middeleeuwen: een gebed en een les over het leven\"? Dan denk je dat het religieus is. Er is geen les, alleen spel."
+        ],
+        "uh": "Spel met de tekst.",
+        "ctx": "Fragment H: \"Dit is het deel waar de verteller zegt dat dit het deel is waar de verteller iets zegt. Lezer, als u dit leest, weet dan dat een ander het ook las, in een boek dat niet bestaat.\""
+       },
+       {
+        "v": "Fragment G (modernisme) en H (postmodernisme) zijn beide experimenteel. Wat verschilt?",
+        "o": [
+         "G speelt ironisch met de lezer, H toont een gebroken ervaring van de stad",
+         "G gebroken ervaring, H spel met de lezer",
+         "G en H hebben dezelfde toon en dezelfde bedoeling",
+         "G is realistisch, H is romantisch, ondanks het experiment"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 6,
+        "u": "Modernisme: gebroken ervaring; postmodernisme: spel.",
+        "uo": [
+         "Koos je \"G speelt ironisch met de lezer, H toont een...\"? Dan denk je dat het omgekeerd is. G is gebroken, H speelt, dus dit klopt niet.",
+         "Klopt: modernisme zoekt betekenis in versplintering, postmodernisme speelt met de tekst zelf.",
+         "Koos je \"G en H hebben dezelfde toon en dezelfde bedoeling\"? Dan denk je dat ze gelijk zijn. G is gebroken en ernstig, H is spelend en ironisch.",
+         "Koos je \"G is realistisch, H is romantisch, ondanks het...\"? Dan denk je dat ze zo benoemd kunnen worden. Geen van beide is realistisch of romantisch, het zijn experimenten."
+        ],
+        "uh": "Gebroken of spelend.",
+        "ctx": "Fragment H: \"Dit is het deel waar de verteller zegt dat dit het deel is waar de verteller iets zegt. Lezer, als u dit leest, weet dan dat een ander het ook las, in een boek dat niet bestaat.\" Fragment G: \"tram / gezichten / een raam dat mij terugkaatst / wie kijkt / de stad is stuk, in stukjes, in woorden die niet passen / ik, jij, het / wacht\""
+       },
+       {
+        "v": "In welke volgorde staan de stromingen: Romantiek, Verlichting, Realisme?",
+        "o": [
+         "Romantiek, Verlichting, Realisme",
+         "Realisme, Romantiek, Verlichting",
+         "Verlichting, Realisme, Romantiek",
+         "Verlichting, Romantiek, Realisme"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Verlichting (18e), Romantiek (begin 19e), Realisme (midden 19e).",
+        "uo": [
+         "Koos je \"Romantiek, Verlichting, Realisme\"? Dan zet de Romantiek vooraan. De Verlichting is een eeuw ouder, en de Romantiek is juist een reactie erop.",
+         "Koos je \"Realisme, Romantiek, Verlichting\"? Dan draait de hele rij om. Het realisme is de jongste van de drie, de Verlichting de oudste.",
+         "Koos je \"Verlichting, Realisme, Romantiek\"? Dan laat het realisme te vroeg komen. Het realisme reageert op de Romantiek, dus het komt daarna.",
+         "Klopt: 18e eeuw, begin 19e eeuw, midden 19e eeuw."
+        ],
+        "uh": "In tijdsvolgorde."
+       },
+       {
+        "v": "Welke stroming hoort bij ongeveer de late 19e eeuw en legt de nadruk op determinisme (erfelijkheid en milieu)?",
+        "o": [
+         "Romantiek",
+         "Naturalisme",
+         "Verlichting",
+         "Postmodernisme"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 4,
+        "u": "Naturalisme: determinisme.",
+        "uo": [
+         "Koos je \"Romantiek\"? Dan denk je dat Romantiek determinisme kent. Romantiek draait om gevoel, dus het is naturalisme.",
+         "Klopt: determinisme is het kenmerk van het naturalisme.",
+         "Koos je \"Verlichting\"? Dan denk je dat Verlichting determinisme kent. Verlichting gaat om rede, dus het is naturalisme.",
+         "Koos je \"Postmodernisme\"? Dan denk je dat dit modern is. Determinisme is 19e-eeuws, dus naturalisme."
+        ],
+        "uh": "Erfelijkheid en milieu."
+       },
+       {
+        "v": "Welke stroming vanaf ongeveer 1970 speelt met vorm en verwijst naar andere teksten?",
+        "o": [
+         "Postmodernisme",
+         "Realisme, een nuchtere werkelijkheid",
+         "Romantiek, een stroming van gevoel",
+         "Verlichting, een stroming van rede"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 6,
+        "u": "Postmodernisme: spel, verwijzingen, ironie.",
+        "uo": [
+         "Klopt: spel en verwijzingen zijn kenmerken van het postmodernisme.",
+         "Koos je \"Realisme, een nuchtere werkelijkheid\"? Dan denk je dat realisme speelt met vorm. Realisme beschrijft nuchter, dus postmodernisme.",
+         "Koos je \"Romantiek, een stroming van gevoel\"? Dan denk je dat de Romantiek speelt met teksten. Zij draait om gevoel, dus past postmodernisme beter.",
+         "Koos je \"Verlichting, een stroming van rede\"? Dan verwacht spel bij de Verlichting. Zij draait om rede en nut, dus past postmodernisme beter."
+        ],
+        "uh": "Spel met de tekst."
+       },
+       {
+        "v": "Hoe beoordeel je dat?",
+        "o": [
+         "juist: beide stromingen stellen de rede centraal in alles",
+         "juist: beide stromingen komen uit dezelfde eeuw en periode",
+         "onjuist: de Romantiek is ouder dan de Verlichting zelf",
+         "onjuist: de Romantiek reageert met gevoel op rede"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Elke stroming reageert vaak op de vorige.",
+        "uo": [
+         "Koos je \"juist: beide stromingen stellen de rede centraal in...\"? Dan denk je dat beide rede centraal stellen. De Romantiek stelt gevoel centraal, dus het is een reactie.",
+         "Koos je \"juist: beide stromingen komen uit dezelfde eeuw en...\"? Dan denk je dat ze dezelfde tijd hebben. De Verlichting is 18e eeuw, de Romantiek begin 19e eeuw.",
+         "Koos je \"onjuist: de Romantiek is ouder dan de Verlichting...\"? Dan denk je dat de Romantiek eerder is. De Verlichting is eerder, de Romantiek volgt.",
+         "Klopt: de Romantiek is een reactie op de nadruk op rede."
+        ],
+        "uh": "Reactie.",
+        "ctx": "Een leerling beweert dat de Romantiek een voortzetting is van de Verlichting, omdat beide over de mens gaan."
+       },
+       {
+        "v": "Welk antwoord is het meest juist?",
+        "o": [
+         "het realisme wilde meer gevoel dan de Romantiek tonen",
+         "het realisme wilde terug naar de middeleeuwen en het geloof",
+         "nuchter de werkelijkheid tonen in plaats van gevoel",
+         "het realisme wilde de rede boven de werkelijkheid stellen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Realisme reageert op Romantiek met nuchtere werkelijkheid.",
+        "uo": [
+         "Koos je \"het realisme wilde meer gevoel dan de Romantiek...\"? Dan denk je dat realisme meer gevoel wil. Het wil nuchter tonen, dus minder gevoelsuitbarsting.",
+         "Koos je \"het realisme wilde terug naar de middeleeuwen en...\"? Dan denk je dat het middeleeuws wil zijn. Het wil de eigen werkelijkheid tonen, geen middeleeuwen.",
+         "Klopt: de aandacht verschuift van gevoel naar de alledaagse werkelijkheid.",
+         "Koos je \"het realisme wilde de rede boven de werkelijkheid...\"? Dan denk je dat rede de kern is. Dat is de Verlichting, realisme toont de werkelijkheid."
+        ],
+        "uh": "Werkelijkheid voor gevoel.",
+        "ctx": "Een docent zegt: \"Het realisme was een reactie op de Romantiek.\" Een leerling vraagt waarom."
+       },
+       {
+        "v": "Klopt deze beschrijving?",
+        "o": [
+         "nee: de Gouden Eeuw ging alleen over het geloof van de middeleeuwen",
+         "nee: de Gouden Eeuw ging over determinisme en milieu",
+         "ja: pracht, klassieke voorbeelden, vergankelijkheid",
+         "nee: de Gouden Eeuw ging over experiment met de vorm"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "De Gouden Eeuw kent pracht, vergankelijkheid en klassieke thema's.",
+        "uo": [
+         "Koos je \"nee: de Gouden Eeuw ging alleen over het geloof van...\"? Dan denk je dat het alleen om geloof gaat. Er is ook pracht en klassiek voorbeeld, dus de beschrijving klopt.",
+         "Koos je \"nee: de Gouden Eeuw ging over determinisme en milieu\"? Dan denk je dat het om determinisme gaat. Dat is naturalisme, de Gouden Eeuw heeft andere kenmerken.",
+         "Klopt: de beschrijving past bij Renaissance en barok in de Gouden Eeuw.",
+         "Koos je \"nee: de Gouden Eeuw ging over experiment met de vorm\"? Dan denk je dat het experiment is. Dat is modernisme, de Gouden Eeuw was klassiek en pompeus."
+        ],
+        "uh": "Pracht en vergankelijk.",
+        "ctx": "Een leerling noemt als kenmerk van de Gouden Eeuw: \"pracht, vergankelijkheid en klassieke voorbeelden\"."
+       },
+       {
+        "v": "Fragment F en D tonen beide een eenzaam mens. Waardoor verschilt de oorzaak?",
+        "o": [
+         "F: gevoel en verlangen; D: erfelijkheid en milieu",
+         "F en D: dezelfde oorzaak, namelijk het gemis",
+         "F: rede en nut; D: geloof en ridderlijkheid",
+         "F: erfelijkheid en milieu; D: gevoel"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Naturalisme: determinisme; Romantiek: gevoel.",
+        "uo": [
+         "Koos je \"F: gevoel en verlangen; D: erfelijkheid en milieu\"? Dan denk je dat het omgekeerd is. F is determinisme, D is gevoel.",
+         "Koos je \"F en D: dezelfde oorzaak, namelijk het gemis\"? Dan denk je dat de oorzaak gelijk is. De oorzaken verschillen, dus de stromingen ook.",
+         "Koos je \"F: rede en nut; D: geloof en ridderlijkheid\"? Dan denk je dat het om rede en geloof gaat. Geen van beide fragmenten gaat daarover, het gaat om determinisme en gevoel.",
+         "Klopt: de naturalistische mens is bepaald door afkomst, de romantische door gevoel."
+        ],
+        "uh": "Bepaald of verlangend.",
+        "ctx": "Fragment F: \"Zijn vader was een drinker geweest en zijn grootvader ook. Piet kon er niets aan doen dat zijn handen beefden zodra hij een kroeg rook: het milieu van de achterbuurt en het bloed van zijn voorouders hadden hem gemaakt tot wat hij was.\" Fragment D: \"O, wanneer ik dwaal door het zachte avondlicht, voel ik mijn hart zwellen van verlangen naar vroeger. De bomen fluisteren mij oude liederen en ik, eenzame, geef mij over aan hun treurige zoetheid.\""
+       },
+       {
+        "v": "Welke stroming staat het dichtst bij ons in de tijd?",
+        "o": [
+         "Postmodernisme",
+         "Modernisme, omdat het begin 20e eeuw is",
+         "Naturalisme, omdat het eind 19e eeuw is",
+         "Middeleeuwen, omdat ze het langst duurden"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Volgorde van oud naar jong: van Middeleeuwen tot Postmodernisme.",
+        "uo": [
+         "Klopt: het postmodernisme is de jongste stroming op de tijdlijn.",
+         "Koos je \"Modernisme, omdat het begin 20e eeuw is\"? Dan denk je dat Modernisme de jongste is. Het postmodernisme komt daarna, dus dat is de jongste.",
+         "Koos je \"Naturalisme, omdat het eind 19e eeuw is\"? Dan denk je dat Naturalisme het jongst is. Het is eerder dan Modernisme, en dus ouder.",
+         "Koos je \"Middeleeuwen, omdat ze het langst duurden\"? Dan denk je dat de duur telt. De Middeleeuwen zijn de oudste, niet de jongste."
+        ],
+        "uh": "Oud naar jong.",
+        "ctx": "Een tijdlijn heeft de stromingen: Middeleeuwen, Renaissance en Gouden Eeuw, Verlichting, Romantiek, Realisme, Naturalisme, Modernisme, Postmodernisme."
+       },
+       {
+        "v": "Wat is hier mis?",
+        "o": [
+         "niets, want ze vallen samen in dezelfde periode",
+         "er zitten ongeveer twee eeuwen tussen",
+         "de Romantiek komt vóór de Gouden Eeuw in de tijd",
+         "de Gouden Eeuw ligt in de 19e eeuw, vlak voor het realisme"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Houd de volgorde en eeuwen van de stromingen in het oog.",
+        "uo": [
+         "Koos je \"niets, want ze vallen samen in dezelfde periode\"? Dan denk je dat ze samenvallen. Ze liggen twee eeuwen uit elkaar, dus dat klopt niet.",
+         "Klopt: 17e eeuw en begin 19e eeuw liggen ver uit elkaar, met de Verlichting ertussen.",
+         "Koos je \"de Romantiek komt vóór de Gouden Eeuw in de tijd\"? Dan denk je dat de Romantiek eerder is. Ze komt later, na de Verlichting.",
+         "Koos je \"de Gouden Eeuw ligt in de 19e eeuw, vlak voor het...\"? Dan denk je dat de Gouden Eeuw 19e eeuws is. Ze is 17e eeuws, dus eerder."
+        ],
+        "uh": "Eeuwen controleren.",
+        "ctx": "Een leerling schrijft: \"De Gouden Eeuw (17e eeuw) valt in dezelfde tijd als de Romantiek (begin 19e eeuw).\""
+       },
+       {
+        "v": "Bij welke stroming zoekt hij het best?",
+        "o": [
+         "Realisme",
+         "Naturalisme",
+         "Postmodernisme",
+         "Romantiek"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Natuur, verlangen en eenzaamheid horen bij de Romantiek.",
+        "uo": [
+         "Koos je \"Realisme\"? Dan denk je dat realisme natuur bezingt. Realisme beschrijft nuchter, dus Romantiek past beter.",
+         "Koos je \"Naturalisme\"? Dan denk je dat naturalisme natuur bezingt. Het draait om determinisme, dus Romantiek past beter.",
+         "Koos je \"Postmodernisme\"? Dan denk je dat postmodernisme hierbij past. Het speelt met vorm, dus Romantiek past beter.",
+         "Klopt: natuur, verlangen en eenzaamheid zijn romantische thema's."
+        ],
+        "uh": "Natuur en verlangen.",
+        "ctx": "Een leerling zoekt een gedicht dat de natuur bezingt, verlangen toont en waarin de dichter zich eenzaam voelt."
+       },
+       {
+        "v": "Welke stroming past hier het best bij?",
+        "o": [
+         "Postmodernisme",
+         "Realisme, een nuchtere werkelijkheid",
+         "Verlichting, een stroming van rede",
+         "Middeleeuwen, een stroming met een les"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 6,
+        "u": "Spel met de tekst wijst op postmodernisme.",
+        "uo": [
+         "Klopt: spel met de vertelling en de lezer is postmodern.",
+         "Koos je \"Realisme, een nuchtere werkelijkheid\"? Dan denk je dat het nuchter beschrijft. De tekst speelt met zichzelf, dus postmodern.",
+         "Koos je \"Verlichting, een stroming van rede\"? Dan denk je dat het om rede gaat. De tekst speelt, dus postmodern.",
+         "Koos je \"Middeleeuwen, een stroming met een les\"? Dan denk je dat het een les is. Er is geen les, dus postmodern."
+        ],
+        "uh": "Tekst over tekst.",
+        "ctx": "Een leerling leest een tekst waarin een verteller zegt dat hij een tekst schrijft en de lezer toespreekt over het schrijven."
+       },
+       {
+        "v": "Welke redenering is juist?",
+        "o": [
+         "de eerste: het naturalisme benadrukt de vrije wil van Piet",
+         "de tweede: Piet is bepaald, niet vrij",
+         "geen van beiden, Piet is een romantische held met verlangen",
+         "beiden, want Piet is zowel dom als een slachtoffer van zijn afkomst"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Naturalisme: de mens is bepaald, niet vrij.",
+        "uo": [
+         "Koos je \"de eerste: het naturalisme benadrukt de vrije wil...\"? Dan denk je dat vrije wil de kern is. Het naturalisme benadrukt determinisme, dus Piet kan er niets aan doen.",
+         "Klopt: determinisme neemt de vrije keuze weg.",
+         "Koos je \"geen van beiden, Piet is een romantische held met...\"? Dan denk je dat Piet romantisch is. Er is geen gevoel, het is determinisme.",
+         "Koos je \"beiden, want Piet is zowel dom als een slachtoffer...\"? Dan denk je dat beide redeneringen kloppen. Ze sluiten elkaar uit, en het naturalisme ziet hem als slachtoffer."
+        ],
+        "uh": "Slachtoffer, niet schuldig.",
+        "ctx": "Een leerling noemt Piet uit fragment F \"dom, want hij kiest zelf voor drank\". Een ander zegt dat het naturalisme Piet juist als slachtoffer ziet."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"De ridder knielde bij het kruis en bad: God, geef mij kracht om de weduwe te beschermen. Zo sprak hij, terwijl zijn zwaard rustte op zijn knie. Wie goed leeft, zo leert dit verhaal, vindt na de dood de poort open.\"",
+        "v": "Welke stroming past bij dit fragment? Noem twee kenmerken.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Middeleeuwen (1p). Kenmerken: geloof en een gebed, een ridder met een ideaal, een les over het leven na de dood (1p per kenmerk, max. 2p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Om zes uur ging Jans vader naar de fabriek. Voor twaalf uur arbeid kreeg hij acht gulden in de week. De kamer waar het gezin sliep was vochtig; een kachel was er niet. Jan at brood met stroop en ging naar bed.\"",
+        "v": "Welke stroming past bij dit fragment? Hoe toont het sociale kritiek zonder commentaar van de verteller?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Realisme (1p). De verteller beschrijft nuchter het lage loon en de vochtige kamer zonder oordeel (1p); de feiten spreken voor zich (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Zijn vader was een drinker geweest en zijn grootvader ook. Piet kon er niets aan doen dat zijn handen beefden zodra hij een kroeg rook: het milieu van de achterbuurt en het bloed van zijn voorouders hadden hem gemaakt tot wat hij was.\"",
+        "v": "Welke stroming past bij dit fragment en welk idee is kenmerkend?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Naturalisme (1p). Determinisme: erfelijkheid en milieu bepalen de mens, hij heeft geen vrije keuze (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"tram / gezichten / een raam dat mij terugkaatst / wie kijkt / de stad is stuk, in stukjes, in woorden die niet passen / ik, jij, het / wacht\"",
+        "v": "Welke stroming past bij dit fragment en hoe past de vorm bij de inhoud?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Modernisme (1p). De gebroken vorm met streepjes en losse woorden weerspiegelt de versplinterde ervaring van de stad (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment D: \"O, wanneer ik dwaal door het zachte avondlicht, voel ik mijn hart zwellen van verlangen naar vroeger.\" Fragment B: \"Mijnheer De Wijze sprak tot zijn dochter over de nuttige deugden van arbeid en verstand.\"",
+        "v": "Welke stromingen horen bij D en B en welk verschil is kenmerkend?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "D is Romantiek, B is Verlichting (1p). De Romantiek stelt gevoel en verlangen centraal, de Verlichting rede en nut (1p), als reactie op elkaar."
+       }
+      ]
      }
     ]
    }

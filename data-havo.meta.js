@@ -765,6 +765,29 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "F6",
+      "lo": "nl.F.6",
+      "gs": 2,
+      "naam": "Literatuurgeschiedenis in hoofdlijnen",
+      "beschrijving": "Je kent de hoofdlijnen van de literatuurgeschiedenis (van Middeleeuwen tot postmodernisme), herkent bij een fragment de stroming en legt uit hoe stromingen op elkaar reageren.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Middeleeuwen en de volgorde van de stromingen",
+       "Verlichting en Romantiek",
+       "Renaissance en Gouden Eeuw",
+       "Realisme",
+       "Naturalisme",
+       "Modernisme",
+       "Postmodernisme"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }

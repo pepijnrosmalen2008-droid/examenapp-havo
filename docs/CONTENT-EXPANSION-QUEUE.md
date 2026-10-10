@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **30 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F5). Werk dit getal bij bij elke afronding.
+> Voortgang: **31 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -59,13 +59,13 @@
   - [x] D5 · nl.D.5 Een samenvatting controleren op volledigheid en samenhang · 25 vragen (R1-R3), 12 begrippen, 3 schema's (hoofdpunten tegenover samenvatting, controlelijst, beoordelen in stappen), geen clip
   - [x] D6 · nl.D.6 Een betogende en een informatieve tekst samenvatten · 25 vragen (R1-R3), 12 begrippen, 3 schema's (samenvatting van een betoog, structuren van een uitleg, tekstsoort eerst), geen clip
 - [x] **HAVO · Nederlands** (`nl`) · domein E — Argumentatieve vaardigheden (overgeslagen: eindterm 6 is volledig gedekt door A5 en A6, nieuwe leerdoelen zouden dubbel werk zijn)
-- [ ] **HAVO · Nederlands** (`nl`) · domein F — Literatuur
+- [x] **HAVO · Nederlands** (`nl`) · domein F — Literatuur (6 van 6 leerdoelen op v2)
   - [x] F1 · nl.F.1 Literaire tekstsoorten herkennen en onderscheiden · 27 vragen (R2 en R3 ruim), 12 begrippen, 5 figuren (vormen, beslisboom, geannoteerd toneelfragment, gedicht met strofen, leeservaring), geen clip
   - [x] F2 · nl.F.2 Verteller, vertelperspectief en focalisatie · 25 vragen (R1 7, R2 9, R3 9, 6 fragmenten), 12 begrippen, 5 figuren (vier vertellers, schaal, geannoteerd alwetend fragment, personaal tegenover alwetend, onbetrouwbare verteller), geen clip
   - [x] F3 · nl.F.3 Tijd, ruimte en opbouw van een verhaal · 27 vragen (R1 6, R2 11, R3 10, 8 fragmenten), 12 begrippen, 5 figuren (tijdlijn, tempo, geannoteerde ruimte, spanningsboog, raamvertelling), geen clip
   - [x] F4 · nl.F.4 Personages, thema en motief · 25 vragen (R1 7, R2 8, R3 10, 6 fragmenten), 12 begrippen, 5 figuren (karakterisering, rollen, ontwikkeling, motief naar thema, symbool), geen clip
   - [x] F5 · nl.F.5 Stijlfiguren en poëzie · 25 vragen (R1 5, R2 11, R3 9, 7 fragmenten en gedichten), 12 begrippen, 5 figuren (beeldspraak, verzwakken en overdrijven, rijmschema's, enjambement, sonnet), geen clip
-  - [ ] F6 · nl.F.6 Literatuurgeschiedenis in hoofdlijnen
+  - [x] F6 · nl.F.6 Literatuurgeschiedenis in hoofdlijnen · 27 vragen (R1 5, R2 12, R3 10, 8 fragmenten), 12 begrippen, 4 figuren (tijdlijn, reacties, geannoteerd naturalisme, modernisme tegenover postmodernisme), geen clip
 - [ ] **VWO · Nederlands** (`nl`) · domein A — Leesvaardigheid
 - [ ] **VWO · Nederlands** (`nl`) · domein B — Mondeling
 - [ ] **VWO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid
