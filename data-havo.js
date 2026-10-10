@@ -30116,6 +30116,696 @@ var VAKKEN = [
         "u": "Hij zegt eerlijk te zijn, maar geeft zelf toe iets te hebben gedaan (1p). Hij schuift de schuld af op een ander (\"niet mijn schuld\") en veronderstelt wat de buurvrouw denkt (1p)."
        }
       ]
+     },
+     {
+      "id": "F3",
+      "lo": "nl.F.3",
+      "gs": 2,
+      "naam": "Tijd, ruimte en opbouw van een verhaal",
+      "beschrijving": "Je herkent terug- en vooruitblikken, tempo, de rol van de ruimte en de opbouw met spanningsboog, begin en slot, en je benoemt wat dat met de lezer doet.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Volgorde: chronologie en in medias res",
+       "Analepse en prolepsis",
+       "Verteltijd en vertelde tijd",
+       "Ruimte en sfeer",
+       "Spanningsboog en einde",
+       "Raamvertelling"
+      ],
+      "sam": "Een verhaal kan chronologisch verteld worden of de volgorde doorbreken met een analepse (terugblik) of prolepsis (vooruitblik). Verteltijd is de leestijd, vertelde tijd de tijd die het verhaal beslaat: tijdsverdichting, tijdsrek, ellips en pauze bepalen het tempo. De ruimte geeft sfeer en soms symbolische betekenis. De opbouw volgt vaak een spanningsboog met beginsituatie, verwikkeling, climax, ontknoping en slot; een raamvertelling plaatst een verhaal in een kader.",
+      "begrippen": [
+       {
+        "t": "Chronologie",
+        "d": "De gebeurtenissen in de volgorde van de tijd."
+       },
+       {
+        "t": "Analepse",
+        "d": "Een terugblik op iets wat eerder gebeurde."
+       },
+       {
+        "t": "Prolepsis",
+        "d": "Een vooruitblik op iets wat later gebeurt."
+       },
+       {
+        "t": "In medias res",
+        "d": "Beginnen midden in de handeling."
+       },
+       {
+        "t": "Verteltijd",
+        "d": "De tijd die het kost om het verhaal te lezen."
+       },
+       {
+        "t": "Vertelde tijd",
+        "d": "De tijd die het verhaal in het verhaal beslaat."
+       },
+       {
+        "t": "Tijdsverdichting",
+        "d": "Een lange periode kort samenvatten."
+       },
+       {
+        "t": "Tijdsrek",
+        "d": "Een kort moment langer uitspinnen dan het duurde."
+       },
+       {
+        "t": "Ellips",
+        "d": "Een tijdsprong waarbij niets wordt verteld."
+       },
+       {
+        "t": "Spanningsboog",
+        "d": "De opbouw van spanning naar een hoogtepunt en afloop."
+       },
+       {
+        "t": "Climax",
+        "d": "Het hoogtepunt van de spanning."
+       },
+       {
+        "t": "Raamvertelling",
+        "d": "Een verhaal dat in een kaderverhaal is ingebed."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welk deel van fragment 1 is een analepse?",
+        "o": [
+         "dat Mara op de trap blijft staan en wacht",
+         "de terugblik op het vertrek van haar broer",
+         "dat de trap smaller lijkt dan drie jaar geleden",
+         "dat ze uiteindelijk naar boven loopt"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Een analepse is een sprong terug in de tijd.",
+        "uo": [
+         "Koos je \"dat Mara op de trap blijft staan en wacht\"? Dan denk je dat het heden de terugblik is. Dat staat in de tijd van het verhaal zelf, de terugblik begint bij \"drie jaar eerder\".",
+         "Klopt: de verteller springt drie jaar terug in de tijd.",
+         "Koos je \"dat de trap smaller lijkt dan drie jaar geleden\"? Dan denk je dat dit de terugblik is. Het is een vergelijking in het heden, de terugblik gaat over het vertrek van de broer.",
+         "Koos je \"dat ze uiteindelijk naar boven loopt\"? Dan denk je dat dit de terugblik is. Het is een handeling in het heden, de terugblik zit in de herinnering."
+        ],
+        "uh": "Terug = analepse.",
+        "ctx": "Fragment 1: \"Op de trap bleef Mara staan. Drie jaar eerder had ze hier ook gestaan, op de dag dat haar broer vertrok met alleen een rugzak en zonder omkijken. Ze herinnerde zich nog het geluid van de deur, een droog, definitief klikje. Nu was de trap smaller dan toen, of misschien was zij groter geworden. Ze liep naar boven.\""
+       },
+       {
+        "v": "Waaruit blijkt dat de analepse in fragment 1 eindigt?",
+        "o": [
+         "met \"droog, definitief klikje\", omdat het geluid stopt",
+         "met \"vertrok met alleen een rugzak\", want daar stopt de zin",
+         "met \"Ze liep naar boven\", omdat dit de slotzin is",
+         "met \"Nu was de trap smaller\", terug in het heden"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Signaalwoorden als \"nu\" markeren de terugkeer naar het heden.",
+        "uo": [
+         "Koos je \"met droog, definitief klikje, omdat het geluid stopt\"? Dan denk je dat het geluid het einde is. Dat hoort nog bij de herinnering, het \"Nu\" markeert de terugkeer.",
+         "Koos je \"met vertrok met alleen een rugzak, want daar stopt...\"? Dan denk je dat de zin het einde is. Het vertrek is nog de terugblik, de terugkeer volgt later met \"Nu\".",
+         "Koos je \"met Ze liep naar boven, omdat dit de slotzin is\"? Dan denk je dat de slotzin de overgang is. De overgang zit eerder, namelijk bij \"Nu was de trap smaller\".",
+         "Klopt: \"Nu\" brengt het verhaal terug naar het moment van Mara op de trap."
+        ],
+        "uh": "Nu = terug in het heden.",
+        "ctx": "Fragment 1: \"Op de trap bleef Mara staan. Drie jaar eerder had ze hier ook gestaan, op de dag dat haar broer vertrok met alleen een rugzak en zonder omkijken. Ze herinnerde zich nog het geluid van de deur, een droog, definitief klikje. Nu was de trap smaller dan toen, of misschien was zij groter geworden. Ze liep naar boven.\""
+       },
+       {
+        "v": "Welke functie heeft de terugblik in fragment 1 voor de lezer?",
+        "o": [
+         "ze verklaart waarom Mara aarzelt op de trap",
+         "ze doet de gebeurtenissen sneller verlopen",
+         "ze maakt het verhaal korter dan de vertelde tijd",
+         "ze toont dat de verteller liegt over het verleden"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Een analepse geeft achtergrond bij wat er in het heden gebeurt.",
+        "uo": [
+         "Klopt: de herinnering aan het vertrek geeft betekenis aan haar aarzeling in het heden.",
+         "Koos je \"ze doet de gebeurtenissen sneller verlopen\"? Dan denk je dat een terugblik tempo maakt. Ze vertraagt eerder het heden, en geeft juist achtergrond.",
+         "Koos je \"ze maakt het verhaal korter dan de vertelde tijd\"? Dan denk je dat het om de tijdsduur gaat. De functie is verklaren, niet inkorten.",
+         "Koos je \"ze toont dat de verteller liegt over het verleden\"? Dan denk je dat de terugblik onbetrouwbaar is. Er is geen aanwijzing voor onbetrouwbaarheid, de terugblik verklaart haar gevoel."
+        ],
+        "uh": "Achtergrond.",
+        "ctx": "Fragment 1: \"Op de trap bleef Mara staan. Drie jaar eerder had ze hier ook gestaan, op de dag dat haar broer vertrok met alleen een rugzak en zonder omkijken. Ze herinnerde zich nog het geluid van de deur, een droog, definitief klikje. Nu was de trap smaller dan toen, of misschien was zij groter geworden. Ze liep naar boven.\""
+       },
+       {
+        "v": "Welke techniek is \"Later zou men zeggen ...\" in fragment 2?",
+        "o": [
+         "analepse, omdat het over het verleden gaat",
+         "ellips, omdat er tijd wordt overgeslagen",
+         "prolepsis",
+         "pauze, omdat de handeling stilstaat"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Een prolepsis is een vooruitblik op wat later gebeurt.",
+        "uo": [
+         "Koos je \"analepse, omdat het over het verleden gaat\"? Dan denk je dat het verleden de richting is. \"Later zou men\" kijkt juist vooruit, dat is een prolepsis.",
+         "Koos je \"ellips, omdat er tijd wordt overgeslagen\"? Dan denk je dat tijd wordt overgeslagen. Er wordt vooruitgekeken, een ellips slaat tijd over zonder vooruit te kijken.",
+         "Klopt: de verteller kijkt vooruit op iets dat later pas komt.",
+         "Koos je \"pauze, omdat de handeling stilstaat\"? Dan denk je dat de handeling stilstaat. Het gaat om een vooruitblik in de tijd, niet om een beschrijving."
+        ],
+        "uh": "Vooruit = prolepsis.",
+        "ctx": "Fragment 2: \"Niemand in het dorp kon toen vermoeden dat de brief die Joost die ochtend op de mat vond, hun leven ingrijpend zou veranderen. Later zou men zeggen dat alles met dat envelopje begon. Joost zelf legde het gewoon op de keukentafel, naast de koffie, en las de krant verder.\""
+       },
+       {
+        "v": "Welk effect heeft de prolepsis in fragment 2 op de lezer?",
+        "o": [
+         "verrassing: de lezer ziet de brief niet aankomen en schrikt",
+         "verwarring: de lezer weet niet waar het verhaal begint of eindigt",
+         "spanning: de lezer weet meer dan Joost",
+         "rust: de lezer weet dat het goed afloopt voor het dorp"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Een prolepsis wekt spanning doordat de lezer meer weet.",
+        "uo": [
+         "Koos je \"verrassing: de lezer ziet de brief niet aankomen en...\"? Dan denk je dat de lezer verrast wordt. De verteller geeft juist een hint vooraf, dus verrassing is er niet.",
+         "Koos je \"verwarring: de lezer weet niet waar het verhaal...\"? Dan denk je dat het verhaal onduidelijk is. De prolepsis maakt het verloop juist duidelijker, en spannender.",
+         "Klopt: de lezer weet meer dan Joost en leest met die voorsprong.",
+         "Koos je \"rust: de lezer weet dat het goed afloopt voor het...\"? Dan denk je dat de afloop goed is. De tekst zegt \"ingrijpend veranderen\", en dat roept spanning op."
+        ],
+        "uh": "Voorsprong = spanning.",
+        "ctx": "Fragment 2: \"Niemand in het dorp kon toen vermoeden dat de brief die Joost die ochtend op de mat vond, hun leven ingrijpend zou veranderen. Later zou men zeggen dat alles met dat envelopje begon. Joost zelf legde het gewoon op de keukentafel, naast de koffie, en las de krant verder.\""
+       },
+       {
+        "v": "Welke tijdsvorm past bij \"Het eerste jaar ... was een lange reeks dagen\" in fragment 3?",
+        "o": [
+         "tijdsverdichting: een jaar in één zin samengevat",
+         "tijdsrek: een seconde die lang wordt uitgesponnen",
+         "tijdsequivalent: verteltijd en vertelde tijd zijn gelijk",
+         "pauze: de tijd staat stil voor een beschrijving"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Een lange periode in één zin is tijdsverdichting.",
+        "uo": [
+         "Klopt: de vertelde tijd is een jaar, de verteltijd één zin.",
+         "Koos je \"tijdsrek: een seconde die lang wordt uitgesponnen\"? Dan denk je dat het uitrekken is. Hier wordt juist een jaar ingekort, dus het is verdichting.",
+         "Koos je \"tijdsequivalent: verteltijd en vertelde tijd zijn...\"? Dan denk je dat de tijden gelijk zijn. Een jaar past niet in een zin gelijk, dus er is verdichting.",
+         "Koos je \"pauze: de tijd staat stil voor een beschrijving\"? Dan denk je dat de tijd stilstaat. Hier loopt de tijd door, in een jaar, maar de zin vat samen."
+        ],
+        "uh": "Samenvatten = verdichten.",
+        "ctx": "Fragment 3: \"Het eerste jaar op de nieuwe school was een lange, grijze reeks dagen waarin Ilse leerde dat vriendschap geen vanzelfsprekendheid was. Pas in de zomer, toen ze veertien werd, vond ze een bankje bij de rivier. Daar zat ze elke middag.\""
+       },
+       {
+        "v": "Hoe verhouden verteltijd en vertelde tijd zich in de eerste zin van fragment 3?",
+        "o": [
+         "verteltijd een jaar, vertelde tijd een korte zin",
+         "allebei een jaar, want de zin gaat over een heel jaar",
+         "allebei enkele seconden, want de zin is zo kort",
+         "korte leestijd, een jaar verteld"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Verteltijd is de leestijd; vertelde tijd is de tijd in het verhaal.",
+        "uo": [
+         "Koos je \"verteltijd een jaar, vertelde tijd een korte zin\"? Dan denk je dat de begrippen omgedraaid zijn. De vertelde tijd is wat het verhaal beslaat (een jaar), de verteltijd is de leestijd (kort).",
+         "Koos je \"allebei een jaar, want de zin gaat over een heel...\"? Dan denk je dat de verteltijd ook een jaar is. Het lezen kost seconden, de vertelde tijd is een jaar.",
+         "Koos je \"allebei enkele seconden, want de zin is zo kort\"? Dan denk je dat de zin alleen seconden beslaat. De zin beslaat een jaar in het verhaal, alleen het lezen duurt seconden.",
+         "Klopt: de verteltijd is de leestijd, de vertelde tijd de tijd die het verhaal beslaat."
+        ],
+        "uh": "Lezen versus verhaal.",
+        "ctx": "Fragment 3: \"Het eerste jaar op de nieuwe school was een lange, grijze reeks dagen waarin Ilse leerde dat vriendschap geen vanzelfsprekendheid was. Pas in de zomer, toen ze veertien werd, vond ze een bankje bij de rivier. Daar zat ze elke middag.\""
+       },
+       {
+        "v": "Welke tijdsprong zit vóór \"Pas in de zomer\" en wat doet die met het verhaal?",
+        "o": [
+         "een pauze: de verteller beschrijft het bankje uitgebreid en rustig",
+         "een ellips: maanden worden overgeslagen",
+         "een analepse: de verteller springt terug naar vroeger in haar leven",
+         "een prolepsis: de verteller kijkt vooruit op wat later volgt"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een ellips slaat tijd over waar niets belangrijks gebeurt.",
+        "uo": [
+         "Koos je \"een pauze: de verteller beschrijft het bankje...\"? Dan denk je dat er een beschrijving is. Er wordt tijd overgeslagen, geen pauze genomen.",
+         "Klopt: een ellips laat uit wat niet belangrijk is, zodat de aandacht op het bankje valt.",
+         "Koos je \"een analepse: de verteller springt terug naar...\"? Dan denk je dat er een terugblik is. De tijd loopt vooruit naar de zomer, dus het is geen analepse.",
+         "Koos je \"een prolepsis: de verteller kijkt vooruit op wat...\"? Dan denk je dat er een vooruitblik is. De gebeurtenissen volgen elkaar gewoon, met een sprong ertussen."
+        ],
+        "uh": "Overslaan = ellips.",
+        "ctx": "Fragment 3: \"Het eerste jaar op de nieuwe school was een lange, grijze reeks dagen waarin Ilse leerde dat vriendschap geen vanzelfsprekendheid was. Pas in de zomer, toen ze veertien werd, vond ze een bankje bij de rivier. Daar zat ze elke middag.\""
+       },
+       {
+        "v": "Welke tijdsvorm hoort bij fragment 4 (een paar seconden in vijf zinnen)?",
+        "o": [
+         "tijdsverdichting: een lange tijd in een paar zinnen",
+         "ellips: er wordt tijd overgeslagen",
+         "tijdsequivalent: lezen en gebeuren duren evenlang",
+         "tijdsrek: lezen duurt langer dan het gebeurt"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Tijdsrek rekt een kort moment uit.",
+        "uo": [
+         "Koos je \"tijdsverdichting: een lange tijd in een paar zinnen\"? Dan denk je dat er verdichting is. Hier is de vertelde tijd een paar seconden, dus de verteltijd is langer.",
+         "Koos je \"ellips: er wordt tijd overgeslagen\"? Dan denk je dat er tijd wordt overgeslagen. Er wordt niets overgeslagen, maar juist uitgebreid.",
+         "Koos je \"tijdsequivalent: lezen en gebeuren duren evenlang\"? Dan denk je dat de tijden gelijk zijn. Het lezen duurt langer dan de seconden, dus er is tijdsrek.",
+         "Klopt: een kort moment wordt uitgesponnen, zodat de lezer de spanning meebeleeft."
+        ],
+        "uh": "Rekken = spanning.",
+        "ctx": "Fragment 4: \"De secondenwijzer van de klok kroop vooruit. Hij zag de scheur in het plafond, de verbleekte bloemen op het behang, het druppelen van de kraan, de stofdeeltjes in de lichtbalk. Eén seconde. Nog één. De deur bleef dicht.\""
+       },
+       {
+        "v": "Welk effect heeft het tempo van fragment 4 op de lezer?",
+        "o": [
+         "de lezer raakt de draad kwijt door de vele details",
+         "de spanning stijgt, want de lezer wacht samen met hem",
+         "de lezer leest sneller, omdat de details onbelangrijk zijn",
+         "de lezer vergeet de deur, omdat de aandacht verdeeld is"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een traag tempo bij een kort moment bouwt spanning op.",
+        "uo": [
+         "Koos je \"de lezer raakt de draad kwijt door de vele details\"? Dan denk je dat de details verwarren. Ze vertragen het tempo bewust, en vergroten de spanning.",
+         "Klopt: de uitgerekte tijd laat de wachttijd voelbaar worden.",
+         "Koos je \"de lezer leest sneller, omdat de details...\"? Dan denk je dat de details weinig betekenen. Ze zorgen juist dat de lezer langzamer leest, en de spanning voelt.",
+         "Koos je \"de lezer vergeet de deur, omdat de aandacht...\"? Dan denk je dat de deur vergeten wordt. Het slot noemt de deur opnieuw, dus ze blijft de focus."
+        ],
+        "uh": "Rekken bouwt spanning.",
+        "ctx": "Fragment 4: \"De secondenwijzer van de klok kroop vooruit. Hij zag de scheur in het plafond, de verbleekte bloemen op het behang, het druppelen van de kraan, de stofdeeltjes in de lichtbalk. Eén seconde. Nog één. De deur bleef dicht.\""
+       },
+       {
+        "v": "Welke functie heeft de beschrijving van de ruimte in fragment 5?",
+        "o": [
+         "ze toont alleen waar het huis staat",
+         "ze vertelt wat de hoofdpersoon denkt",
+         "ze roept een sfeer van stilstand en verval op",
+         "ze versnelt het verhaal door tijd over te slaan"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Ruimte kan sfeer en betekenis geven.",
+        "uo": [
+         "Koos je \"ze toont alleen waar het huis staat\"? Dan denk je dat het alleen een plaatsbepaling is. Details als de klok en het vocht geven sfeer, dus de ruimte betekent meer.",
+         "Koos je \"ze vertelt wat de hoofdpersoon denkt\"? Dan denk je dat de ruimte gedachten bevat. Er staat geen gedachte, alleen beschrijving met sfeer.",
+         "Klopt: de ruimte zegt iets over de toestand van de bewoners en het verleden.",
+         "Koos je \"ze versnelt het verhaal door tijd over te slaan\"? Dan denk je dat de ruimte tijd overslaat. Een beschrijving vertraagt eerder, en geeft sfeer."
+        ],
+        "uh": "Plek = sfeer.",
+        "ctx": "Fragment 5: \"Het huis stond aan het einde van een doodlopende weg, tussen verwilderde struiken die de ramen half bedekten. Binnen rook het naar vocht en oud papier. In de gang hing een klok die al jaren niet meer liep. Wie hier binnenkwam, begreep dat de tijd hier was blijven stilstaan.\""
+       },
+       {
+        "v": "Welk detail in fragment 5 heeft een symbolische betekenis en welke?",
+        "o": [
+         "de klok die stilstaat: de tijd staat stil",
+         "de doodlopende weg: het huis is moeilijk te vinden voor bezoekers",
+         "de struiken voor de ramen: er is veel natuur in de tuin",
+         "de geur van oud papier: er staan veel boeken in huis"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Een symbolisch detail verwijst naar iets abstracts, zoals tijd.",
+        "uo": [
+         "Klopt: de klok die niet meer loopt symboliseert dat het verleden niet verder gaat.",
+         "Koos je \"de doodlopende weg: het huis is moeilijk te vinden...\"? Dan denk je dat de weg alleen praktisch is. De doodlopende weg kan ook symbool zijn, maar de klok is het duidelijkst symbolisch.",
+         "Koos je \"de struiken voor de ramen: er is veel natuur in de...\"? Dan denk je dat de struiken alleen planten zijn. Ze isoleren het huis, maar de klok verwijst expliciet naar de tijd.",
+         "Koos je \"de geur van oud papier: er staan veel boeken in huis\"? Dan denk je dat de geur een boekenverwijzing is. Hij geeft sfeer, maar de klok is het symbool."
+        ],
+        "uh": "Klok = tijd.",
+        "ctx": "Fragment 5: \"Het huis stond aan het einde van een doodlopende weg, tussen verwilderde struiken die de ramen half bedekten. Binnen rook het naar vocht en oud papier. In de gang hing een klok die al jaren niet meer liep. Wie hier binnenkwam, begreep dat de tijd hier was blijven stilstaan.\""
+       },
+       {
+        "v": "Welke stap in het verhaal is de climax?",
+        "o": [
+         "stap 4: de keuze tussen delen en vluchten",
+         "stap 1, waar hij naar een nieuw dorp verhuist en niemand kent",
+         "stap 2, waar hij in de tuin het oude kompas vindt",
+         "stap 5, waar de twee jongens vrienden worden"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "De climax is het hoogtepunt van de spanning.",
+        "uo": [
+         "Klopt: de climax is het hoogtepunt waar de spanning het grootst is en de beslissing valt.",
+         "Koos je \"stap 1, waar hij naar een nieuw dorp verhuist en...\"? Dan denk je dat de verhuizing de climax is. Dat is de beginsituatie, de spanning is dan nog klein.",
+         "Koos je \"stap 2, waar hij in de tuin het oude kompas vindt\"? Dan denk je dat het kompas de climax is. Het kompas begint de verwikkeling, de beslissing valt later.",
+         "Koos je \"stap 5, waar de twee jongens vrienden worden\"? Dan denk je dat het slot de climax is. Dat is de ontknoping, de afloop na het hoogtepunt."
+        ],
+        "uh": "Hoogste spanning.",
+        "ctx": "Verhaal in vijf stappen: (1) Een jongen verhuist naar een dorp waar hij niemand kent. (2) Hij vindt een oud kompas in de tuin. (3) Het kompas wijst naar een verstopte kist en een andere jongen volgt hem. (4) Bij de kist moet hij kiezen: delen of vluchten. (5) Hij deelt de kist en ze worden vrienden."
+       },
+       {
+        "v": "Welke stap is de beginsituatie (exposition) van het verhaal?",
+        "o": [
+         "stap 3: het kompas wijst naar een verstopte kist",
+         "stap 4: hij moet kiezen tussen delen en vluchten",
+         "stap 1: hij verhuist naar een dorp",
+         "stap 5: ze worden vrienden na het delen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 4,
+        "u": "De beginsituatie stelt personages en omstandigheden voor.",
+        "uo": [
+         "Koos je \"stap 3: het kompas wijst naar een verstopte kist\"? Dan denk je dat dit de beginsituatie is. Dit is de verwikkeling waar spanning ontstaat, de beginsituatie komt eerder.",
+         "Koos je \"stap 4: hij moet kiezen tussen delen en vluchten\"? Dan denk je dat dit de beginsituatie is. Dit is de climax, de beginsituatie stelt de uitgangssituatie voor.",
+         "Klopt: de beginsituatie stelt personages en omstandigheden voor.",
+         "Koos je \"stap 5: ze worden vrienden na het delen\"? Dan denk je dat dit de beginsituatie is. Dit is het slot, de beginsituatie komt vooraan."
+        ],
+        "uh": "Begin = uitgangspunt.",
+        "ctx": "Verhaal in vijf stappen: (1) Een jongen verhuist naar een dorp waar hij niemand kent. (2) Hij vindt een oud kompas in de tuin. (3) Het kompas wijst naar een verstopte kist en een andere jongen volgt hem. (4) Bij de kist moet hij kiezen: delen of vluchten. (5) Hij deelt de kist en ze worden vrienden."
+       },
+       {
+        "v": "Wat levert de ontknoping in stap 5 op voor de vraag die het verhaal opriep?",
+        "o": [
+         "het conflict blijft open: de lezer weet niet wat hij koos bij de kist",
+         "het conflict is opgelost en hij vindt een vriend",
+         "er ontstaat een nieuw conflict met de andere jongen uit het dorp",
+         "de hoofdpersoon verliest het kompas bij de kist"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "De ontknoping lost het centrale conflict op.",
+        "uo": [
+         "Koos je \"het conflict blijft open: de lezer weet niet wat...\"? Dan denk je dat het einde open is. Stap 5 vertelt expliciet dat hij deelt, dus het is gesloten.",
+         "Klopt: de ontknoping beantwoordt de vraag waar de spanning om draaide.",
+         "Koos je \"er ontstaat een nieuw conflict met de andere jongen...\"? Dan denk je dat het conflict doorgaat. Ze worden juist vrienden, dus het conflict is opgelost.",
+         "Koos je \"de hoofdpersoon verliest het kompas bij de kist\"? Dan denk je dat het kompas verloren gaat. Dat staat niet in stap 5, de afloop gaat over het delen en vriendschap."
+        ],
+        "uh": "Slot = oplossing.",
+        "ctx": "Verhaal in vijf stappen: (1) Een jongen verhuist naar een dorp waar hij niemand kent. (2) Hij vindt een oud kompas in de tuin. (3) Het kompas wijst naar een verstopte kist en een andere jongen volgt hem. (4) Bij de kist moet hij kiezen: delen of vluchten. (5) Hij deelt de kist en ze worden vrienden."
+       },
+       {
+        "v": "Welke vertelvorm heeft fragment 7?",
+        "o": [
+         "een analepse, een sprong terug in de tijd",
+         "een prolepsis, een sprong vooruit in de tijd",
+         "een ellips, een tijdsprong waarin niets gebeurt",
+         "een raamvertelling"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Een verhaal in een verhaal is een raamvertelling.",
+        "uo": [
+         "Koos je \"een analepse, een sprong terug in de tijd\"? Dan denk je dat er een sprong terug in de tijd is. Het gaat om een verhaal in een verhaal, dus een raamvertelling.",
+         "Koos je \"een prolepsis, een sprong vooruit in de tijd\"? Dan denk je dat er een vooruitblik is. Er is geen vooruitblik, maar een kaderverhaal met een binnenverhaal.",
+         "Koos je \"een ellips, een tijdsprong waarin niets gebeurt\"? Dan denk je dat er tijd wordt overgeslagen. Er is een kader met een ingebed verhaal, dat heet een raamvertelling.",
+         "Klopt: een verhaal (de man in Havana) wordt ingebed in een kader van de opa die vertelt."
+        ],
+        "uh": "Kader + binnenverhaal.",
+        "ctx": "Fragment 7: \"Opa begon altijd met dezelfde woorden: 'Dit verhaal heb ik zelf gehoord, van een man in Havana.' Dan volgde het verhaal van die man, vol zeilschepen en stormen, en pas aan het eind keerde opa terug naar de kamer waar wij zaten te luisteren.\""
+       },
+       {
+        "v": "Welk effect heeft het kader (opa en de luisteraars) in fragment 7?",
+        "o": [
+         "het binnenverhaal wordt korter en minder belangrijk voor de lezer",
+         "het verhaal krijgt sfeer en een verteller",
+         "het verhaal wordt een dagboek dat opa zelf bijhoudt",
+         "de luisteraars worden de hoofdpersonen van het binnenverhaal zelf"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "Een kader geeft het binnenverhaal sfeer en een verteller.",
+        "uo": [
+         "Koos je \"het binnenverhaal wordt korter en minder belangrijk...\"? Dan denk je dat het kader het binnenverhaal inkort. Het kader geeft er juist sfeer aan, en laat het gelden.",
+         "Klopt: het kader laat zien wie vertelt en tegen wie, en geeft het binnenverhaal een eigen sfeer.",
+         "Koos je \"het verhaal wordt een dagboek dat opa zelf bijhoudt\"? Dan denk je dat het een dagboek is. Opa vertelt het mondeling, dus het is geen dagboek.",
+         "Koos je \"de luisteraars worden de hoofdpersonen van het...\"? Dan denk je dat de luisteraars meespelen. Zij zitten in het kader, niet in het verhaal van de man."
+        ],
+        "uh": "Kader geeft context.",
+        "ctx": "Fragment 7: \"Opa begon altijd met dezelfde woorden: 'Dit verhaal heb ik zelf gehoord, van een man in Havana.' Dan volgde het verhaal van die man, vol zeilschepen en stormen, en pas aan het eind keerde opa terug naar de kamer waar wij zaten te luisteren.\""
+       },
+       {
+        "v": "Welke volgorde heeft dit verhaal?",
+        "o": [
+         "chronologisch",
+         "niet-chronologisch, want er is een begin en een einde",
+         "achterstevoren, want het verhaal eindigt op 3 mei",
+         "cyclisch, want de dagen herhalen zich"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Chronologisch betekent in de volgorde van de tijd.",
+        "uo": [
+         "Klopt: de gebeurtenissen worden in de volgorde van de tijd verteld.",
+         "Koos je \"niet-chronologisch, want er is een begin en een...\"? Dan denk je dat begin en einde de volgorde verstoren. Chronologisch betekent dat de tijd loopt zoals hij gebeurt, en dat doet het verhaal.",
+         "Koos je \"achterstevoren, want het verhaal eindigt op 3 mei\"? Dan denk je dat het verhaal omgekeerd is. De volgorde gaat van 1 naar 3 mei, dus vooruit.",
+         "Koos je \"cyclisch, want de dagen herhalen zich\"? Dan denk je dat het cyclisch is. De dagen verschillen, en de tijd loopt gewoon door."
+        ],
+        "uh": "Tijdlijn volgen.",
+        "ctx": "Een verhaal begint op 1 mei, daarna gaat het naar 2 mei en 3 mei, zonder terug- of vooruitblikken."
+       },
+       {
+        "v": "Welke techniek gebruikt het verhaal?",
+        "o": [
+         "een raamvertelling, omdat er twee verhalen zijn",
+         "een prolepsis, omdat het slot al wordt genoemd",
+         "tijdsrek, omdat de man lang aan de rand hangt",
+         "in medias res: beginnen midden in de handeling"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "In medias res begint midden in de handeling.",
+        "uo": [
+         "Koos je \"een raamvertelling, omdat er twee verhalen zijn\"? Dan denk je dat er een kader is. Er is één verhaal dat midden in de actie begint, dat heet in medias res.",
+         "Koos je \"een prolepsis, omdat het slot al wordt genoemd\"? Dan denk je dat het slot wordt genoemd. De rotswand is het begin van de handeling, niet het slot.",
+         "Koos je \"tijdsrek, omdat de man lang aan de rand hangt\"? Dan denk je dat het om tempo gaat. Het gaat om de plek in het verhaal, namelijk het begin midden in de actie.",
+         "Klopt: het verhaal start in de spanning en vult het verleden later aan."
+        ],
+        "uh": "Midden erin.",
+        "ctx": "Een verhaal begint op het hoogtepunt: een man hangt aan een rotswand. Daarna vertelt de verteller hoe hij daar kwam."
+       },
+       {
+        "v": "Beide fragmenten springen in de tijd. Welk verschil is er?",
+        "o": [
+         "1 springt vooruit, 2 springt terug in de tijd",
+         "beide springen terug in de tijd naar eerder",
+         "1 terug (analepse), 2 vooruit (prolepsis)",
+         "beide springen vooruit in de tijd naar later"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Terug is analepse, vooruit is prolepsis.",
+        "uo": [
+         "Koos je \"1 springt vooruit, 2 springt terug in de tijd\"? Dan draait de twee om: fragment 1 haalt een herinnering op, en fragment 2 kondigt aan wat nog komen gaat.",
+         "Koos je \"beide springen terug in de tijd naar eerder\"? Dan ziet fragment 2 over het hoofd als vooruitblik: \"zou\" en \"later\" zijn woorden van de toekomst, geen woorden van een herinnering.",
+         "Klopt: de richting van de tijdsprong verschilt.",
+         "Koos je \"beide springen vooruit in de tijd naar later\"? Dan mist dat fragment 1 een herinnering is: \"had ze hier ook gestaan\" staat in de voltooid verleden tijd, en dat past bij een terugblik."
+        ],
+        "uh": "Richting bepaalt.",
+        "ctx": "Fragment 1: \"Op de trap bleef Mara staan. Drie jaar eerder had ze hier ook gestaan, op de dag dat haar broer vertrok met alleen een rugzak en zonder omkijken. Ze herinnerde zich nog het geluid van de deur, een droog, definitief klikje. Nu was de trap smaller dan toen, of misschien was zij groter geworden. Ze liep naar boven.\" Fragment 2: \"Niemand in het dorp kon toen vermoeden dat de brief die Joost die ochtend op de mat vond, hun leven ingrijpend zou veranderen. Later zou men zeggen dat alles met dat envelopje begon. Joost zelf legde het gewoon op de keukentafel, naast de koffie, en las de krant verder.\""
+       },
+       {
+        "v": "Vergelijk fragment 3 en 4. Wat verschilt in de verhouding tussen verteltijd en vertelde tijd?",
+        "o": [
+         "3 en 4 hebben allebei een kortere verteltijd dan vertelde tijd",
+         "3: verteltijd langer; 4: verteltijd korter dan vertelde tijd",
+         "3 verdicht, 4 rekt",
+         "3 en 4 hebben allebei een gelijke verteltijd en vertelde tijd"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Verdichten is korter vertellen dan het duurde; rekken is langer.",
+        "uo": [
+         "Koos je \"3 en 4 hebben allebei een kortere verteltijd dan...\"? Dan denk je dat beide verdichten. Fragment 4 rekt juist uit, dus de verhoudingen verschillen.",
+         "Koos je \"3: verteltijd langer; 4: verteltijd korter dan...\"? Dan denk je dat het omgekeerd is. Fragment 3 vat een jaar kort samen, dus de verteltijd is daar korter.",
+         "Klopt: 3 vat een jaar samen, 4 rekt seconden uit.",
+         "Koos je \"3 en 4 hebben allebei een gelijke verteltijd en...\"? Dan denk je dat het gelijk is. Een jaar in één zin en seconden in veel zinnen, dus geen van beide is gelijk."
+        ],
+        "uh": "Verdichten of rekken.",
+        "ctx": "Fragment 3: \"Het eerste jaar op de nieuwe school was een lange, grijze reeks dagen waarin Ilse leerde dat vriendschap geen vanzelfsprekendheid was. Pas in de zomer, toen ze veertien werd, vond ze een bankje bij de rivier. Daar zat ze elke middag.\" Fragment 4: \"De secondenwijzer van de klok kroop vooruit. Hij zag de scheur in het plafond, de verbleekte bloemen op het behang, het druppelen van de kraan, de stofdeeltjes in de lichtbalk. Eén seconde. Nog één. De deur bleef dicht.\""
+       },
+       {
+        "v": "Welke woorden in fragment 5 geven de sfeer van verval?",
+        "o": [
+         "\"einde\", \"weg\", \"gang\" en \"binnen\"",
+         "\"huis\", \"ramen\", \"klok\" en \"struiken\"",
+         "\"binnen\", \"buiten\", \"begreep\" en \"hier\"",
+         "\"verwilderde\" en \"vocht\""
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Sfeerwoorden zijn vaak bijvoeglijke naamwoorden en geuren.",
+        "uo": [
+         "Koos je \"einde, weg, gang en binnen\"? Dan denk je dat dit de sfeer bepaalt. Het zijn neutrale plaatsaanduidingen, de sfeer zit in de woorden van verval.",
+         "Koos je \"huis, ramen, klok en struiken\"? Dan denk je dat dit de sfeer geeft. Het zijn gewone zelfstandige naamwoorden, de sfeer komt uit de bijvoeglijke woorden.",
+         "Koos je \"binnen, buiten, begreep en hier\"? Dan denk je dat dit de sfeer geeft. Het zijn neutrale woorden, de sfeer zit in verwilderd en vocht.",
+         "Klopt: deze woorden roepen verwaarlozing en ouderdom op."
+        ],
+        "uh": "Let op de sfeerwoorden.",
+        "ctx": "Fragment 5: \"Het huis stond aan het einde van een doodlopende weg, tussen verwilderde struiken die de ramen half bedekten. Binnen rook het naar vocht en oud papier. In de gang hing een klok die al jaren niet meer liep. Wie hier binnenkwam, begreep dat de tijd hier was blijven stilstaan.\""
+       },
+       {
+        "v": "Wat voor soort einde is dit?",
+        "o": [
+         "een open einde",
+         "een gesloten einde, want er staat een vraag",
+         "een in medias res-einde, want het verhaal stopt midden in actie",
+         "een raamvertelling, want er wordt een vraag gesteld"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Een open einde laat de afloop aan de lezer.",
+        "uo": [
+         "Klopt: de lezer weet niet hoe het afloopt, want de vraag blijft onbeantwoord.",
+         "Koos je \"een gesloten einde, want er staat een vraag\"? Dan denk je dat een vraag sluit. De vraag blijft onbeantwoord, dus het einde is open.",
+         "Koos je \"een in medias res-einde, want het verhaal stopt...\"? Dan denk je dat dit een techniek aan het begin is. Het gaat om het slot, en dat is open.",
+         "Koos je \"een raamvertelling, want er wordt een vraag gesteld\"? Dan denk je dat er een kader is. Het gaat om het slot, dat heet een open einde."
+        ],
+        "uh": "Vraag blijft open.",
+        "ctx": "Een verhaal eindigt met de zin: \"Zou hij ooit terugkomen?\" Er wordt geen antwoord gegeven."
+       },
+       {
+        "v": "Hoe beoordeel je die bewering?",
+        "o": [
+         "juist: elke stap waar het spannend wordt is een climax",
+         "onjuist: stap 3 is verwikkeling, stap 4 climax",
+         "onjuist: de climax is stap 5, waar het conflict wordt opgelost",
+         "juist: stap 3 is de climax omdat het kompas verschijnt"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "De climax is het hoogtepunt, niet elk spannend moment.",
+        "uo": [
+         "Koos je \"juist: elke stap waar het spannend wordt is een...\"? Dan denk je dat elk spannend moment een climax is. De climax is het hoogtepunt, en dat is stap 4.",
+         "Klopt: de spanning bouwt op tot stap 4, de beslissing.",
+         "Koos je \"onjuist: de climax is stap 5, waar het conflict...\"? Dan denk je dat het einde de climax is. Stap 5 is de ontknoping, de beslissing valt in stap 4.",
+         "Koos je \"juist: stap 3 is de climax omdat het kompas...\"? Dan denk je dat het kompas het hoogtepunt is. Het kompas is een begin van de verwikkeling, het hoogtepunt volgt later."
+        ],
+        "uh": "Hoogtepunt = beslissing.",
+        "ctx": "Verhaal in vijf stappen: (1) Een jongen verhuist naar een dorp waar hij niemand kent. (2) Hij vindt een oud kompas in de tuin. (3) Het kompas wijst naar een verstopte kist en een andere jongen volgt hem. (4) Bij de kist moet hij kiezen: delen of vluchten. (5) Hij deelt de kist en ze worden vrienden. Een leerling zegt: \"Stap 3 is de climax, want daar wordt het spannend.\""
+       },
+       {
+        "v": "Welke fout zit in de bewering van de leerling?",
+        "o": [
+         "niets: opa vertelt het dus dat is zijn eigen tijd",
+         "het binnenverhaal is een analepse van de man in Havana",
+         "er is geen kader, alleen een binnenverhaal over Havana",
+         "het binnenverhaal heeft een eigen tijd"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Binnenverhaal en kader hebben elk een eigen tijd.",
+        "uo": [
+         "Koos je \"niets: opa vertelt het dus dat is zijn eigen tijd\"? Dan denk je dat opa's vertellen alles is. Het binnenverhaal speelt zich af in Havana, dus dat is een andere vertelde tijd.",
+         "Koos je \"het binnenverhaal is een analepse van de man in...\"? Dan denk je dat het een terugblik is. Het binnenverhaal is een apart verhaal, dat past bij een raamvertelling.",
+         "Koos je \"er is geen kader, alleen een binnenverhaal over...\"? Dan denk je dat het kader ontbreekt. Opa en de luisteraars vormen het kader, dus er zijn twee lagen.",
+         "Klopt: opa vertelt een verhaal dat zich elders afspeelt, met een eigen tijd en plaats."
+        ],
+        "uh": "Twee lagen.",
+        "ctx": "Opa vertelt zijn kleinkinderen een verhaal over een man in Havana. Een leerling zegt: \"De tijd in het verhaal over Havana is dezelfde tijd als waarin opa praat.\""
+       },
+       {
+        "v": "Welk element van de zin is een prolepsis?",
+        "o": [
+         "\"zou vertrekken\"",
+         "\"Terwijl Anna in de keuken stond\" en nog niets wist",
+         "\"wist zij nog niet\" dat het zou gebeuren",
+         "\"in de keuken\" als plaatsaanduiding"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Een prolepsis noemt iets wat nog moet gebeuren.",
+        "uo": [
+         "Klopt: de vooruitblik kondigt iets aan dat later gebeurt.",
+         "Koos je \"Terwijl Anna in de keuken stond en nog niets wist\"? Dan denk je dat dit de vooruitblik is. Dit is het heden van het verhaal, de vooruitblik zit in \"zou vertrekken\".",
+         "Koos je \"wist zij nog niet dat het zou gebeuren\"? Dan denk je dat deze woorden de prolepsis zijn. Ze leiden de vooruitblik in, maar de vooruitblik zelf is het vertrek.",
+         "Koos je \"in de keuken als plaatsaanduiding\"? Dan denk je dat de plaats een vooruitblik is. De plaats is de ruimte, de vooruitblik gaat over het vertrek."
+        ],
+        "uh": "Later gebeurt iets.",
+        "ctx": "Een verteller zegt: \"Terwijl Anna in de keuken stond, wist zij nog niet dat haar vader die middag zou vertrekken.\""
+       },
+       {
+        "v": "Wat voegt de ruimte hier toe?",
+        "o": [
+         "niets, want de ruimte is slechts decor voor de handeling",
+         "contrast met zijn eenzaamheid",
+         "tempo: de scène gaat sneller door de drukte om hem heen",
+         "spanning, omdat een station altijd een spannende plek is"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Ruimte kan een personage versterken of contrasteren.",
+        "uo": [
+         "Koos je \"niets, want de ruimte is slechts decor voor de...\"? Dan denk je dat een ruimte decor is. De drukte bepaalt de sfeer, dus ze voegt betekenis toe.",
+         "Klopt: de drukke ruimte versterkt het gevoel van alleen zijn.",
+         "Koos je \"tempo: de scène gaat sneller door de drukte om hem...\"? Dan denk je dat de ruimte het tempo bepaalt. Het gaat om sfeer en contrast, niet om snelheid.",
+         "Koos je \"spanning, omdat een station altijd een spannende...\"? Dan denk je dat een station spanning betekent. Het is het contrast met zijn eenzaamheid, dat betekenis geeft."
+        ],
+        "uh": "Ruimte en gevoel.",
+        "ctx": "In een verhaal speelt een scène zich af in een vol, rumoerig station, waar de hoofdpersoon alleen staat."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Op de trap bleef Mara staan. Drie jaar eerder had ze hier ook gestaan, op de dag dat haar broer vertrok met alleen een rugzak en zonder omkijken. Ze herinnerde zich nog het geluid van de deur, een droog, definitief klikje. Nu was de trap smaller dan toen, of misschien was zij groter geworden. Ze liep naar boven.\"",
+        "v": "Welke techniek zit in dit fragment en waar eindigt die? Welke functie heeft ze voor de lezer?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Analepse (1p), die eindigt bij \"Nu was de trap smaller\" (1p). De terugblik verklaart waarom Mara aarzelt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Niemand in het dorp kon toen vermoeden dat de brief die Joost die ochtend op de mat vond, hun leven ingrijpend zou veranderen. Later zou men zeggen dat alles met dat envelopje begon. Joost zelf legde het gewoon op de keukentafel, naast de koffie, en las de krant verder.\"",
+        "v": "Hoe heet de vooruitblik in dit fragment en welk effect heeft ze op de lezer?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Prolepsis (1p). De lezer weet meer dan Joost en leest met spanning verder (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"De secondenwijzer van de klok kroop vooruit. Hij zag de scheur in het plafond, de verbleekte bloemen op het behang, het druppelen van de kraan, de stofdeeltjes in de lichtbalk. Eén seconde. Nog één. De deur bleef dicht.\"",
+        "v": "Welke verhouding tussen verteltijd en vertelde tijd zie je en welk effect heeft dat?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Tijdsrek: de verteltijd is langer dan de vertelde tijd van een paar seconden (1p). Het trage tempo bouwt spanning op: de lezer wacht mee (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Verhaal in vijf stappen: (1) Een jongen verhuist naar een dorp waar hij niemand kent. (2) Hij vindt een oud kompas in de tuin. (3) Het kompas wijst naar een verstopte kist en een andere jongen volgt hem. (4) Bij de kist moet hij kiezen: delen of vluchten. (5) Hij deelt de kist en ze worden vrienden.",
+        "v": "Welke stap is de beginsituatie, welke de climax en welke de ontknoping?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Beginsituatie: stap 1 (1p). Climax: stap 4, de keuze (1p). Ontknoping: stap 5, het conflict is opgelost (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Het huis stond aan het einde van een doodlopende weg, tussen verwilderde struiken die de ramen half bedekten. Binnen rook het naar vocht en oud papier. In de gang hing een klok die al jaren niet meer liep. Wie hier binnenkwam, begreep dat de tijd hier was blijven stilstaan.\"",
+        "v": "Welke sfeer roept de ruimte op en welk detail is symbolisch? Leg uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een sfeer van verval en stilstand (1p). De klok die niet meer loopt is symbolisch voor de stilstaande tijd (1p), met woorden als \"verwilderde\" en \"vocht\" als sfeerwoorden (1p)."
+       }
+      ]
      }
     ]
    }

@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **27 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1, nl.F2). Werk dit getal bij bij elke afronding.
+> Voortgang: **28 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F3). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -62,7 +62,7 @@
 - [ ] **HAVO · Nederlands** (`nl`) · domein F — Literatuur
   - [x] F1 · nl.F.1 Literaire tekstsoorten herkennen en onderscheiden · 27 vragen (R2 en R3 ruim), 12 begrippen, 5 figuren (vormen, beslisboom, geannoteerd toneelfragment, gedicht met strofen, leeservaring), geen clip
   - [x] F2 · nl.F.2 Verteller, vertelperspectief en focalisatie · 25 vragen (R1 7, R2 9, R3 9, 6 fragmenten), 12 begrippen, 5 figuren (vier vertellers, schaal, geannoteerd alwetend fragment, personaal tegenover alwetend, onbetrouwbare verteller), geen clip
-  - [ ] F3 · nl.F.3 Tijd, ruimte en opbouw van een verhaal
+  - [x] F3 · nl.F.3 Tijd, ruimte en opbouw van een verhaal · 27 vragen (R1 6, R2 11, R3 10, 8 fragmenten), 12 begrippen, 5 figuren (tijdlijn, tempo, geannoteerde ruimte, spanningsboog, raamvertelling), geen clip
   - [ ] F4 · nl.F.4 Personages, thema en motief
   - [ ] F5 · nl.F.5 Stijlfiguren en poëzie
   - [ ] F6 · nl.F.6 Literatuurgeschiedenis in hoofdlijnen

@@ -699,6 +699,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "F3",
+      "lo": "nl.F.3",
+      "gs": 2,
+      "naam": "Tijd, ruimte en opbouw van een verhaal",
+      "beschrijving": "Je herkent terug- en vooruitblikken, tempo, de rol van de ruimte en de opbouw met spanningsboog, begin en slot, en je benoemt wat dat met de lezer doet.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Volgorde: chronologie en in medias res",
+       "Analepse en prolepsis",
+       "Verteltijd en vertelde tijd",
+       "Ruimte en sfeer",
+       "Spanningsboog en einde",
+       "Raamvertelling"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
