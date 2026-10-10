@@ -1,6 +1,16 @@
 # Slagio
 
-> Gratis examentrainer voor havo, vwo en vmbo in Nederland. Per leerdoel van het officiële examenprogramma (syllabi CvTE, examenblad.nl): een samenvatting met figuren, oefenvragen met uitleg bij elk antwoord, begrippenlijsten en examenvragen in examenstijl. Adaptief oefenen in de app op https://slagio.nl.
+> Gratis examentrainer voor havo, vwo en vmbo (GL/TL) in Nederland. Per leerdoel van het officiële examenprogramma (syllabi CvTE, examenblad.nl): een samenvatting met figuren, oefenvragen met uitleg bij elk antwoord, begrippenlijsten en examenvragen in examenstijl. Adaptief oefenen in de app op https://slagio.nl.
+
+Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
+
+## In het kort
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.257 oefenvragen en 4.346 begrippen.
+- Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
+- Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
+- Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
+- Mijn stof: eigen samenvattingen van school worden kaartjes en een quiz.
+- Gratis en zonder account; een betaalde aanvulling (Slagio Plus, extra persoonlijke feedback) is in voorbereiding en nog niet te koop.
 
 ## Leerpagina's per onderwerp
 - [Tekstsoort en schrijfdoel bepalen (Nederlands HAVO)](https://slagio.nl/leren/havo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html): Je herkent of een tekst uiteenzettend, beschouwend of betogend is en je bepaalt wat de schrijver met de tekst wil bereiken.

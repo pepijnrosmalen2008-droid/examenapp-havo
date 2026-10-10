@@ -65,4 +65,4 @@ Allow: /
 Sitemap: https://slagio.nl/sitemap.xml
 
 # LLMs.txt — beschrijving voor AI-assistenten
-# https://slagio.nl/llms.txt
+# https://slagio.nl/llms.txt (kort) en https://slagio.nl/llms-full.txt (volledig)

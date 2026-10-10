@@ -1,0 +1,69 @@
+# Slagio: volledig overzicht
+
+> Bron voor `/llms-full.txt` (gegenereerd door `scripts/build-leren.mjs`). Getallen tussen dubbele
+> accolades vult het script automatisch in uit de data, zodat ze nooit verouderen. Alleen openbare
+> feiten: geen gebruikscijfers, geen interne plannen.
+
+# Slagio
+
+Slagio (https://slagio.nl) is een gratis examentrainer voor leerlingen in het Nederlandse voortgezet onderwijs die eindexamen doen: havo, vwo en vmbo (gemengde/theoretische leerweg). Het werkt als app in de browser en is te installeren op telefoon en computer (PWA). Er is geen account nodig om te oefenen. De getallen hieronder worden bij elke inhoudsupdate automatisch bijgewerkt.
+
+## Voor wie en waarvoor
+
+Voor examenkandidaten die zich voorbereiden op het centraal examen (CE) en de schoolexamens. De inhoud volgt de syllabi van het College voor Toetsen en Examens (CvTE, examenblad.nl) voor 2027. Slagio richt zich op één vraag: wat heeft deze leerling nu nodig om beter te worden?
+
+## Inhoud
+
+| | havo | vwo | vmbo |
+|---|---|---|---|
+| vakken | {{HAVO_VAKKEN}} | {{VWO_VAKKEN}} | {{VMBO_VAKKEN}} |
+| domeinen (onderdelen van het examenprogramma) | {{HAVO_DOMEINEN}} | {{VWO_DOMEINEN}} | {{VMBO_DOMEINEN}} |
+| oefenvragen | {{HAVO_VRAGEN}} | {{VWO_VRAGEN}} | {{VMBO_VRAGEN}} |
+| vragen in examenstijl met modelantwoord | {{HAVO_OE}} | {{VWO_OE}} | {{VMBO_OE}} |
+| begrippen met definitie | {{HAVO_BEGRIPPEN}} | {{VWO_BEGRIPPEN}} | {{VMBO_BEGRIPPEN}} |
+| leerdoelen met een eigen module (samenvatting, vragen, begrippen) | {{HAVO_LEERDOELEN}} | {{VWO_LEERDOELEN}} | {{VMBO_LEERDOELEN}} |
+
+Vakken havo: {{HAVO_LIJST}}.
+Vakken vwo: {{VWO_LIJST}}.
+Vakken vmbo: {{VMBO_LIJST}}.
+
+**Leerdoel-modules.** De inhoud wordt per leerdoel van het examenprogramma uitgewerkt. Een volledige module bevat een samenvatting met minstens drie hoofdstukken en figuren of korte animaties, minstens 25 oefenvragen op drie niveaus (herkennen, toepassen, examenredeneren) met bij elk fout antwoord uitleg over de denkfout, minstens tien begrippen en vijf vragen in examenstijl met modelantwoord. Er komen elke dag modules bij. Onderwerpen die nog geen volledige module hebben, hebben wel oefenvragen en (bij havo en vwo) een samenvatting per domein.
+
+**Examenvragen.** Per vak een Slagio-proefexamen in examenstijl, met figuren, modelantwoord en puntenverdeling ({{PROEFEXAMENS}} vakken, havo en vwo samen). Deze vragen zijn zelf geschreven in de stijl van het examen; het zijn geen officiële examenvragen. Daarnaast verwijst de examenbibliotheek naar de officiële oude examens per jaar en tijdvak.
+
+## Wat je in de app kunt doen
+
+- **Adaptief oefenen.** Een quiz past de moeilijkheid aan op je antwoorden. Na een fout komt meteen een vraag over hetzelfde onderwerp, een niveau makkelijker. Onderwerpen waar je vaak fout gaat, komen vaker terug.
+- **Uitleg bij elk antwoord.** Bij een fout antwoord zie je waarom jouw keuze niet klopt en wat het juiste onderscheid is. Na de quiz vat het maatje Vonk samen waar het misging, met "Bekijk uitleg" en "Test me" (een korte herhaling over hetzelfde onderwerp).
+- **Foutenboek en herhalen.** Foute vragen worden bewaard en komen terug volgens gespreide herhaling (SM-2), net als flashcards.
+- **Beheersing per leerdoel.** Slagio houdt per leerdoel bij hoe goed je het beheerst. Het Vandaag-blok op de home zegt wat je volgende stap is, laat je weekvoortgang zien en wat morgen klaar staat om te herhalen.
+- **Studieplan.** Een planning tot je examens op basis van je vakken en het officiële examenrooster.
+- **Examens.** Examen met klok, interactieve examens, proefexamens (heel of per vraag) en het archief met officiële oude examens.
+- **Vraag het Slagio.** Zoeken in alle stof: een vraag als "wat is osmose?" geeft de definitie en de uitleg uit de samenvatting. Pas als de stof het niet weet, kan een AI-antwoord worden gevraagd; dat beantwoordt alleen leer- en examenvragen.
+- **Mijn stof.** Leerlingen plakken hun eigen samenvatting van school (of maken een foto van hun schrift). Slagio maakt daar kaartjes en een quiz van en plant eigen toetsen in.
+- **Cijfers.** Schoolexamencijfers invullen en uitrekenen wat je op het CE nodig hebt.
+- **Motivatie.** XP en levels, streaks, munten, een maatje dat meegroeit, een weekwedstrijd in divisies en een Arcade met spellen op echte examenstof (Slagio Clash, een kaartgevecht met begrippen; Slagio Kingdom, een eiland dat groeit met je beheersing; zes minigames).
+- **Openbare leerpagina's.** Elke volledige module staat ook als gewone webpagina op https://slagio.nl/leren/, met samenvatting, figuren en voorbeeldvragen met uitleg.
+
+## Prijs
+
+Oefenen, alle vragen, alle examens, modelantwoorden, uitleg, foutenboek, studieplan en de spellen zijn gratis, zonder limiet en zonder account. Er is een betaalde aanvulling in voorbereiding (Slagio Plus) voor extra persoonlijke feedback, zoals AI-nakijken van open antwoorden en een verwacht cijfer. Die is nog niet te koop. De regel is: alles wat je nodig hebt om te slagen blijft gratis.
+
+## Wat Slagio niet is
+
+- Geen vervanging van de officiële examens en correctievoorschriften; voor echte examens verwijst Slagio naar examenblad.nl en de oude examens.
+- Geen huiswerkbegeleiding met een docent.
+- De vragen in examenstijl zijn zelf geschreven, geen officiële CE-vragen.
+
+## Kwaliteitsbewaking
+
+Elke nieuwe module wordt automatisch gekeurd voordat hij live gaat: aantal vragen per niveau, uitleg bij elk fout antwoord (de denkfout benoemen), geen sjabloonvragen, casussen en leesteksten op examenniveau, figuren die echt iets tekenen, leesbaarheid op de telefoon en een controle dat de samenvatting de begrippen behandelt. Inhoudelijke juistheid wordt daarnaast door de maker nagelezen tegen de syllabus.
+
+## Links
+
+- App: https://slagio.nl (havo: /havo, vwo: /vwo, vmbo: /vmbo)
+- Leerpagina's: https://slagio.nl/leren/
+- Korte index voor AI-assistenten: https://slagio.nl/llms.txt
+- Examenrooster 2027: https://slagio.nl/examenrooster-2027.html
+- Eindcijfer berekenen: https://slagio.nl/eindcijfer-calculator.html
+- Over Slagio: https://slagio.nl/over-ons.html

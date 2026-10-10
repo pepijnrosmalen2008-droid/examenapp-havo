@@ -2,7 +2,7 @@
 /**
  * build-leren.mjs - openbare leerpagina's uit de eigen content (geen extra werk per leerdoel).
  *
- *   node scripts/build-leren.mjs           → schrijft leren/** + llms.txt
+ *   node scripts/build-leren.mjs           → schrijft leren/** + llms.txt + llms-full.txt (uit docs/SLAGIO-OVERZICHT.md)
  *   node scripts/build-leren.mjs --check   → exit 1 als de pagina's verouderd zijn
  *
  * Per leerdoel-module met een rijke samenvatting (SAM_RICH['<niveau>_<vak>_<id>']):
@@ -277,9 +277,38 @@ ${[...perVak.entries()].map(([k, os]) => `<h2><a href="/leren/${k}/" style="colo
 ${voet}
 </main></body></html>
 `);
+// ── volledig overzicht voor AI-assistenten (/llms-full.txt) ──
+// Tekst uit docs/SLAGIO-OVERZICHT.md; {{GETALLEN}} komen uit de data, zodat ze nooit verouderen.
+const tel = {};
+for (const n of ['havo', 'vwo', 'vmbo']) {
+  const V = data[n] || []; let d = 0, sv = 0, oe = 0, beg = 0, ld = 0;
+  for (const v of V) for (const x of v.domeinen || []) {
+    d++; sv += (x.sv || []).length; oe += (x.oe || []).length; beg += (x.begrippen || []).length;
+    for (const l of x.leerdoelen || []) { if ((l.sv || []).length) ld++; sv += (l.sv || []).length; oe += (l.oe || []).length; }
+  }
+  const N = n.toUpperCase(), nl = x => x.toLocaleString('nl-NL');
+  Object.assign(tel, { [N + '_VAKKEN']: V.length, [N + '_DOMEINEN']: d, [N + '_VRAGEN']: nl(sv), [N + '_OE']: nl(oe), [N + '_BEGRIPPEN']: nl(beg), [N + '_LEERDOELEN']: ld, [N + '_LIJST']: V.map(v => v.naam).join(', ') });
+}
+tel.PROEFEXAMENS = examenPaginas.length;
+const ovz = lees('docs/SLAGIO-OVERZICHT.md');
+const llmsFull = ovz.slice(ovz.indexOf('\n# Slagio') + 1).replace(/\{\{(\w+)\}\}/g, (m, k) => tel[k] != null ? String(tel[k]) : m);
+if (/\{\{\w+\}\}/.test(llmsFull)) throw new Error('llms-full.txt: onbekende plaatshouder ' + llmsFull.match(/\{\{\w+\}\}/)[0]);
+zet('llms-full.txt', llmsFull);
+const totaal = k => ['HAVO', 'VWO', 'VMBO'].reduce((a, n) => a + Number(String(tel[n + k]).replace(/\./g, '')), 0).toLocaleString('nl-NL');
+
 zet('llms.txt', `# Slagio
 
-> Gratis examentrainer voor havo, vwo en vmbo in Nederland. Per leerdoel van het officiële examenprogramma (syllabi CvTE, examenblad.nl): een samenvatting met figuren, oefenvragen met uitleg bij elk antwoord, begrippenlijsten en examenvragen in examenstijl. Adaptief oefenen in de app op ${ORIGIN}.
+> Gratis examentrainer voor havo, vwo en vmbo (GL/TL) in Nederland. Per leerdoel van het officiële examenprogramma (syllabi CvTE, examenblad.nl): een samenvatting met figuren, oefenvragen met uitleg bij elk antwoord, begrippenlijsten en examenvragen in examenstijl. Adaptief oefenen in de app op ${ORIGIN}.
+
+Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): ${ORIGIN}/llms-full.txt
+
+## In het kort
+- ${tel.HAVO_VAKKEN} vakken havo, ${tel.VWO_VAKKEN} vakken vwo, ${tel.VMBO_VAKKEN} vakken vmbo; ${totaal('_VRAGEN')} oefenvragen en ${totaal('_BEGRIPPEN')} begrippen.
+- Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
+- Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
+- Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
+- Mijn stof: eigen samenvattingen van school worden kaartjes en een quiz.
+- Gratis en zonder account; een betaalde aanvulling (Slagio Plus, extra persoonlijke feedback) is in voorbereiding en nog niet te koop.
 
 ## Leerpagina's per onderwerp
 ${overzicht.map(o => `- [${o.naam} (${o.vakNaam})](${o.url}): ${o.besch}`).join('\n')}
