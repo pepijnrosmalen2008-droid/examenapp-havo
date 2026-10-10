@@ -31454,6 +31454,654 @@ var VAKKEN = [
         "u": "De tak (1p). Eerst staat de kale tak voor leegte en wachten, aan het eind toont de knop hoop op nieuw leven (1p)."
        }
       ]
+     },
+     {
+      "id": "F5",
+      "lo": "nl.F.5",
+      "gs": 2,
+      "naam": "Stijlfiguren en poëzie",
+      "beschrijving": "Je herkent stijlfiguren zoals metafoor, vergelijking, personificatie, hyperbool en ironie, en je beschrijft rijm, enjambement en de opbouw van een gedicht, met het effect ervan.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Beeldspraak en overdrijving",
+       "Rijm en rijmschema",
+       "Enjambement en regelindeling",
+       "Klank en ironie",
+       "Understatement, retorische vraag, antithese en eufemisme",
+       "Sonnet en opbouw van gedichten"
+      ],
+      "sam": "Stijlfiguren geven een tekst kracht. Beeldspraak: metafoor (zonder als), vergelijking (met als of zoals), personificatie (menselijke eigenschappen voor dingen). Overdrijven heet hyperbool, verzwakken understatement, het tegendeel zeggen ironie. Klankfiguren zijn alliteratie (zelfde beginklank) en assonantie (zelfde klinker). In poëzie let je op rijm (gepaard aabb, gekruist abab, omarmend abba), enjambement (zin loopt door over de regelgrens), strofen en de opbouw van een sonnet (8 + 6 regels).",
+      "begrippen": [
+       {
+        "t": "Metafoor",
+        "d": "Beeldspraak zonder \"als\": iets wordt gelijkgesteld aan iets anders."
+       },
+       {
+        "t": "Vergelijking",
+        "d": "Beeldspraak met \"als\" of \"zoals\"."
+       },
+       {
+        "t": "Personificatie",
+        "d": "Een ding of dier krijgt menselijke eigenschappen."
+       },
+       {
+        "t": "Hyperbool",
+        "d": "Een overdrijving."
+       },
+       {
+        "t": "Understatement",
+        "d": "Iets kleiner of zwakker voorstellen dan het is."
+       },
+       {
+        "t": "Ironie",
+        "d": "Iets zeggen en het tegendeel bedoelen."
+       },
+       {
+        "t": "Alliteratie",
+        "d": "Herhaling van dezelfde beginklank."
+       },
+       {
+        "t": "Assonantie",
+        "d": "Herhaling van dezelfde klinker."
+       },
+       {
+        "t": "Rijm",
+        "d": "Gelijke klank aan het einde van versregels."
+       },
+       {
+        "t": "Enjambement",
+        "d": "Een zin die doorloopt over de regelgrens."
+       },
+       {
+        "t": "Retorische vraag",
+        "d": "Een vraag waarop geen antwoord wordt verwacht."
+       },
+       {
+        "t": "Sonnet",
+        "d": "Een gedicht van veertien regels: twee kwatrijnen en twee terzinen."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Welke stijlfiguur is \"Het examen is een berg\"?",
+        "o": [
+         "vergelijking, omdat er twee dingen worden vergeleken",
+         "metafoor",
+         "personificatie, omdat het examen iets lijkt te doen",
+         "hyperbool, omdat het een overdrijving is"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een metafoor is een beeldspraak zonder \"als\".",
+        "uo": [
+         "Koos je \"vergelijking, omdat er twee dingen worden vergeleken\"? Dan denk je dat elke vergelijking een vergelijking is. Zonder \"als\" of \"zoals\" is het een metafoor, met een directe gelijkstelling.",
+         "Klopt: het examen wordt zonder \"als\" gelijkgesteld aan een berg.",
+         "Koos je \"personificatie, omdat het examen iets lijkt te doen\"? Dan denk je dat het examen menselijk wordt. Het examen wordt een berg genoemd, niet een mens.",
+         "Koos je \"hyperbool, omdat het een overdrijving is\"? Dan denk je dat het alleen een overdrijving is. Het is een beeld waarin het examen een berg is, dat heet een metafoor."
+        ],
+        "uh": "Zonder als = metafoor.",
+        "ctx": "Fragment 1: \"'Het examen is een berg,' zei hij. 'En ik sta er als een mier aan de voet van.' Zijn zus lachte: 'Fijn, dan heb je tenminste uitzicht.' Buiten huilde de wind om het huis en de bomen bogen diep, alsof ze iets wilden vragen. Honderd keer had hij dit hoofdstuk al gelezen.\""
+       },
+       {
+        "v": "Welke stijlfiguur is \"ik sta er als een mier aan de voet van\"?",
+        "o": [
+         "metafoor, omdat het een beeld is",
+         "personificatie, omdat een mier wordt genoemd",
+         "understatement, omdat hij zichzelf klein maakt",
+         "vergelijking"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "Een vergelijking gebruikt \"als\" of \"zoals\".",
+        "uo": [
+         "Koos je \"metafoor, omdat het een beeld is\"? Dan denk je dat elk beeld een metafoor is. Hier staat \"als\", dus het is een vergelijking.",
+         "Koos je \"personificatie, omdat een mier wordt genoemd\"? Dan denk je dat een mier mensachtig wordt. Er wordt vergeleken met een mier, niet een mier die menselijk handelt.",
+         "Koos je \"understatement, omdat hij zichzelf klein maakt\"? Dan denk je dat het een verzwakking is. Het gaat om een beeld met \"als\", niet om verzwakking.",
+         "Klopt: het gebruikt \"als\" om twee dingen te vergelijken."
+        ],
+        "uh": "Als = vergelijking.",
+        "ctx": "Fragment 1: \"'Het examen is een berg,' zei hij. 'En ik sta er als een mier aan de voet van.' Zijn zus lachte: 'Fijn, dan heb je tenminste uitzicht.' Buiten huilde de wind om het huis en de bomen bogen diep, alsof ze iets wilden vragen. Honderd keer had hij dit hoofdstuk al gelezen.\""
+       },
+       {
+        "v": "Welke stijlfiguur is \"de bomen bogen diep, alsof ze iets wilden vragen\"?",
+        "o": [
+         "personificatie",
+         "hyperbool, omdat de bomen diep buigen",
+         "metafoor, omdat het een beeld is",
+         "alliteratie, omdat de b herhaald wordt"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Personificatie geeft dingen menselijke eigenschappen.",
+        "uo": [
+         "Klopt: de bomen krijgen een menselijke eigenschap, vragen.",
+         "Koos je \"hyperbool, omdat de bomen diep buigen\"? Dan denk je dat dit een overdrijving is. De bomen krijgen menselijke trekken, dat heet personificatie.",
+         "Koos je \"metafoor, omdat het een beeld is\"? Dan denk je dat het een directe gelijkstelling is. Het gaat om menselijk gedrag van bomen, dus personificatie.",
+         "Koos je \"alliteratie, omdat de b herhaald wordt\"? Dan denk je dat het om klank gaat. Het gaat om menselijk gedrag van de bomen, dus personificatie."
+        ],
+        "uh": "Dingen als mensen.",
+        "ctx": "Fragment 1: \"'Het examen is een berg,' zei hij. 'En ik sta er als een mier aan de voet van.' Zijn zus lachte: 'Fijn, dan heb je tenminste uitzicht.' Buiten huilde de wind om het huis en de bomen bogen diep, alsof ze iets wilden vragen. Honderd keer had hij dit hoofdstuk al gelezen.\""
+       },
+       {
+        "v": "Welke stijlfiguur gebruikt de zus in \"Fijn, dan heb je tenminste uitzicht\" en wat bedoelt ze?",
+        "o": [
+         "hyperbool: ze overdrijft het uitzicht bij het examen",
+         "understatement: ze maakt het examen kleiner dan het is",
+         "ironie: een grapje om hem op te vrolijken",
+         "retorische vraag: ze vraagt naar het uitzicht zonder antwoord"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Ironie zegt iets anders dan het bedoelt, vaak om te relativeren.",
+        "uo": [
+         "Koos je \"hyperbool: ze overdrijft het uitzicht bij het examen\"? Dan denk je dat ze overdrijft. Ze zegt iets anders dan ze bedoelt, dat heet ironie.",
+         "Koos je \"understatement: ze maakt het examen kleiner dan het...\"? Dan denk je dat ze verzwakt. Ze zegt iets vrolijks bij iets zwaars, dat is ironie.",
+         "Klopt: ze zegt iets positiefs terwijl de situatie moeilijk is.",
+         "Koos je \"retorische vraag: ze vraagt naar het uitzicht...\"? Dan denk je dat het een vraag is. Er staat geen vraag, dus het is ironie."
+        ],
+        "uh": "Anders gezegd dan bedoeld.",
+        "ctx": "Fragment 1: \"'Het examen is een berg,' zei hij. 'En ik sta er als een mier aan de voet van.' Zijn zus lachte: 'Fijn, dan heb je tenminste uitzicht.' Buiten huilde de wind om het huis en de bomen bogen diep, alsof ze iets wilden vragen. Honderd keer had hij dit hoofdstuk al gelezen.\""
+       },
+       {
+        "v": "Welke stijlfiguur is \"Honderd keer had hij dit hoofdstuk al gelezen\"?",
+        "o": [
+         "understatement, omdat het klein klinkt",
+         "ironie, omdat het niet echt zo is",
+         "hyperbool",
+         "vergelijking, omdat er een getal wordt genoemd"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Een hyperbool is een overdrijving.",
+        "uo": [
+         "Koos je \"understatement, omdat het klein klinkt\"? Dan denk je dat het verzwakt. Honderd keer is juist veel, dus het is een hyperbool.",
+         "Koos je \"ironie, omdat het niet echt zo is\"? Dan denk je dat het ironie is. Er is geen tegenstelling tussen wat gezegd en bedoeld wordt, het is een overdrijving.",
+         "Klopt: het is een overdrijving om te benadrukken hoe vaak hij het las.",
+         "Koos je \"vergelijking, omdat er een getal wordt genoemd\"? Dan denk je dat een getal een vergelijking is. Er is geen \"als\", dus het is een hyperbool."
+        ],
+        "uh": "Groter gemaakt.",
+        "ctx": "Fragment 1: \"'Het examen is een berg,' zei hij. 'En ik sta er als een mier aan de voet van.' Zijn zus lachte: 'Fijn, dan heb je tenminste uitzicht.' Buiten huilde de wind om het huis en de bomen bogen diep, alsof ze iets wilden vragen. Honderd keer had hij dit hoofdstuk al gelezen.\""
+       },
+       {
+        "v": "Welk rijmschema heeft gedicht 2?",
+        "o": [
+         "aabb (gepaard rijm)",
+         "abab (gekruist rijm), omdat de regels om en om rijmen",
+         "abba (omarmend rijm), omdat de buitenste regels rijmen",
+         "er is geen rijm, het is vrije poëzie"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Gepaard rijm is aabb.",
+        "uo": [
+         "Klopt: de eerste twee regels rijmen (kust/rust), de laatste twee ook (toe/moe).",
+         "Koos je \"abab (gekruist rijm), omdat de regels om en om...\"? Dan schuift de rijmparen op. \"Kust\" en \"rust\" staan direct onder elkaar, dus de regels rijmen twee aan twee en niet om en om.",
+         "Koos je \"abba (omarmend rijm), omdat de buitenste regels...\"? Dan vergelijkt de eerste en laatste regel. \"Kust\" en \"moe\" klinken niet hetzelfde, dus de buitenste regels omarmen niets.",
+         "Koos je \"er is geen rijm, het is vrije poëzie\"? Dan luistert niet naar de eindklanken. Twee regelparen eindigen op dezelfde klank, dus er is wel degelijk rijm."
+        ],
+        "uh": "Twee aan twee.",
+        "ctx": "Gedicht 2: \"De zon gaat onder aan de kust / en laat de golven zonder rust. / De vissers varen naar huis toe / met netten vol, en blij, en moe.\""
+       },
+       {
+        "v": "Welke woorden rijmen in gedicht 3?",
+        "o": [
+         "straat en zacht; gaat en nacht, want ze rijmen op elkaar",
+         "sneeuw en lantaarn, want beide staan in de eerste twee regels",
+         "alleen de eerste en laatste regel, want die omarmen het gedicht",
+         "straat en gaat; zacht en nacht"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Rijm zit aan het einde van de versregels.",
+        "uo": [
+         "Koos je \"straat en zacht; gaat en nacht, want ze rijmen op...\"? Dan koppelt woorden die niet op elkaar rijmen. Straat en zacht eindigen op een andere klank, dus de rijmparen zijn straat/gaat en zacht/nacht.",
+         "Koos je \"sneeuw en lantaarn, want beide staan in de eerste...\"? Dan kiest woorden uit het midden van de regel. Rijm zit aan het einde van de regels, en daar staan straat, zacht, gaat en nacht.",
+         "Koos je \"alleen de eerste en laatste regel, want die omarmen...\"? Dan ziet een omarmend schema waar het gekruist is. Regel 1 rijmt met regel 3, en niet met de laatste regel.",
+         "Klopt: de eerste en derde regel rijmen op elkaar, de tweede en vierde ook."
+        ],
+        "uh": "Eindwoorden vergelijken.",
+        "ctx": "Gedicht 3: \"Er valt een stille sneeuw op straat / het licht van de lantaarn is zacht / niemand die nog naar buiten gaat / ik loop alleen door de nacht\""
+       },
+       {
+        "v": "Welk rijmschema is dit?",
+        "o": [
+         "gekruist rijm (abab), omdat er om en om gerijmd wordt",
+         "omarmend rijm (abba)",
+         "gepaard rijm (aabb), omdat regels twee aan twee rijmen",
+         "vrij vers, omdat er geen vast schema is"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Omarmend rijm is abba.",
+        "uo": [
+         "Koos je \"gekruist rijm (abab), omdat er om en om gerijmd...\"? Dan denk je dat de regels om en om rijmen. Hier rijmen de buitenste regels en de binnenste, dus het is omarmend rijm.",
+         "Klopt: de buitenste regels omarmen de binnenste rijmende regels.",
+         "Koos je \"gepaard rijm (aabb), omdat regels twee aan twee...\"? Dan denk je dat opeenvolgende regels rijmen. Regel 1 en 2 rijmen hier niet, dus het is omarmend.",
+         "Koos je \"vrij vers, omdat er geen vast schema is\"? Dan denk je dat het niet rijmt. Er is wel een vast schema (abba), dus het is omarmend rijm."
+        ],
+        "uh": "Buiten omarmt binnen.",
+        "ctx": "Een dichter schrijft vier regels waarin regel 1 rijmt op regel 4 en regel 2 op regel 3, zoals in \"regen / mist / wist / zwegen\"."
+       },
+       {
+        "v": "Beide gedichten hebben vier regels. Hoe verschilt het rijm?",
+        "o": [
+         "3 en 4 hebben allebei gepaard rijm (aabb) in vier regels",
+         "3 heeft geen rijm en 4 heeft wel rijm in de buitenste regels",
+         "3 is omarmend en 4 is gekruist, want de volgorde wisselt",
+         "3 om en om, 4 omarmend"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Let op welke regels met elkaar rijmen.",
+        "uo": [
+         "Koos je \"3 en 4 hebben allebei gepaard rijm (aabb) in vier...\"? Dan denk je dat beide aabb hebben. Regel 1 rijmt in 3 met regel 3, in 4 met regel 4, dus ze verschillen.",
+         "Koos je \"3 heeft geen rijm en 4 heeft wel rijm in de...\"? Dan denk je dat 3 niet rijmt. Straat/gaat en zacht/nacht rijmen, dus beide rijmen.",
+         "Koos je \"3 is omarmend en 4 is gekruist, want de volgorde...\"? Dan denk je dat het omgekeerd is. 3 rijmt om en om, 4 omarmt.",
+         "Klopt: de volgorde van de rijmende regels verschilt."
+        ],
+        "uh": "Rijmschema vergelijken.",
+        "ctx": "Gedicht 3: \"Er valt een stille sneeuw op straat / het licht van de lantaarn is zacht / niemand die nog naar buiten gaat / ik loop alleen door de nacht\" Gedicht 4: \"De dag begon met regen / en eindigde in mist / waar niemand iets van wist / dan zij, die bleef zwegen\" (rijmklanken: regen en zwegen, mist en wist)."
+       },
+       {
+        "v": "Wat is hier een enjambement?",
+        "o": [
+         "elke regel eindigt met een punt, dus ze zijn afgerond",
+         "de zin loopt door over de regel",
+         "elke regel rijmt op de volgende regel van het gedicht",
+         "er is een herhaling van een woord aan het begin"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Een enjambement is een zin die doorloopt over de regelgrens.",
+        "uo": [
+         "Koos je \"elke regel eindigt met een punt, dus ze zijn...\"? Dan denk je dat de regels afgerond zijn. Ze lopen juist door, dat is een enjambement.",
+         "Klopt: \"een / antwoord\" loopt door op de volgende regel.",
+         "Koos je \"elke regel rijmt op de volgende regel van het...\"? Dan denk je dat rijm het enjambement is. Het gaat om doorlopende zinnen, niet om rijm.",
+         "Koos je \"er is een herhaling van een woord aan het begin\"? Dan denk je dat het om herhaling gaat. Het gaat om een zin die doorloopt, over de regelgrens."
+        ],
+        "uh": "Zin loopt door.",
+        "ctx": "Gedicht 5: \"Hij zocht tussen de boeken een / antwoord dat er niet was en las / tot het licht werd, tot de dag zijn naam / begon te roepen.\""
+       },
+       {
+        "v": "Welk effect heeft het enjambement \"een / antwoord\"?",
+        "o": [
+         "het gedicht wordt korter door de regelafbreking",
+         "het gedicht gaat rijmen door de doorlopende zin",
+         "ander tempo, nadruk op \"antwoord\"",
+         "het gedicht wordt een verhaal met een verteller"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Een enjambement verlegt het tempo en geeft nadruk.",
+        "uo": [
+         "Koos je \"het gedicht wordt korter door de regelafbreking\"? Dan denk je dat het inkort. Het gedicht blijft even lang, maar het tempo verandert.",
+         "Koos je \"het gedicht gaat rijmen door de doorlopende zin\"? Dan denk je dat het rijm veroorzaakt. Het enjambement heeft met rijm niets te maken, maar met doorlopen.",
+         "Klopt: de lezer moet doorlezen en het woord valt op.",
+         "Koos je \"het gedicht wordt een verhaal met een verteller\"? Dan denk je dat het een verhaal wordt. Het blijft een gedicht, met doorlopende zin."
+        ],
+        "uh": "Doorlopen = nadruk.",
+        "ctx": "Gedicht 5: \"Hij zocht tussen de boeken een / antwoord dat er niet was en las / tot het licht werd, tot de dag zijn naam / begon te roepen.\""
+       },
+       {
+        "v": "Welke stijlfiguur is \"Woeste wolken wiegen waterig weg\"?",
+        "o": [
+         "alliteratie",
+         "assonantie, omdat dezelfde klinkers in het hele vers voorkomen",
+         "ironie, omdat het een mooie zin is die iets anders lijkt te bedoelen",
+         "hyperbool, omdat het over woeste wolken gaat die overdreven worden beschreven"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Alliteratie herhaalt dezelfde beginklank.",
+        "uo": [
+         "Klopt: de beginklank w wordt in meerdere woorden herhaald, en dat heet alliteratie.",
+         "Koos je \"assonantie, omdat dezelfde klinkers in het hele...\"? Dan denk je dat het klinkers betreft. Het gaat om dezelfde beginklank (w), dus het is alliteratie.",
+         "Koos je \"ironie, omdat het een mooie zin is die iets anders...\"? Dan denk je dat het ironie is. Er is geen tegenstelling, het gaat om klank.",
+         "Koos je \"hyperbool, omdat het over woeste wolken gaat die...\"? Dan denk je dat het overdrijving is. Het gaat om herhaling van klank, niet om overdrijving."
+        ],
+        "uh": "Zelfde begin.",
+        "ctx": "Fragment 6: \"Woeste wolken wiegen waterig weg. 'Wat een prachtig weer,' zei Joris, terwijl de regen door het open raam naar binnen waaide en zijn boek doorweekte.\""
+       },
+       {
+        "v": "Welke stijlfiguur is \"Wat een prachtig weer\" bij binnenwaaiende regen?",
+        "o": [
+         "ironie",
+         "understatement, omdat hij het weer kleiner maakt",
+         "hyperbool, omdat prachtig overdreven is",
+         "metafoor, omdat het beeldend is"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Ironie zegt het tegenovergestelde van wat bedoeld wordt.",
+        "uo": [
+         "Klopt: Joris zegt het tegenovergestelde van wat hij bedoelt.",
+         "Koos je \"understatement, omdat hij het weer kleiner maakt\"? Dan denk je dat hij verzwakt. Hij zegt iets positiefs bij slecht weer, dat is ironie.",
+         "Koos je \"hyperbool, omdat prachtig overdreven is\"? Dan denk je dat het een overdrijving is. Het gaat om een tegenstelling, tussen woorden en situatie.",
+         "Koos je \"metafoor, omdat het beeldend is\"? Dan denk je dat het een beeld is. Het is het tegendeel zeggen, dat is ironie."
+        ],
+        "uh": "Tegendeel gezegd.",
+        "ctx": "Fragment 6: \"Woeste wolken wiegen waterig weg. 'Wat een prachtig weer,' zei Joris, terwijl de regen door het open raam naar binnen waaide en zijn boek doorweekte.\""
+       },
+       {
+        "v": "Welk effect heeft de ironie in fragment 6?",
+        "o": [
+         "ze maakt de zin korter en zakelijker",
+         "ze toont dat hij echt tevreden is",
+         "contrast tussen woorden en gebeurtenis, met humor",
+         "ze laat de lezer de regen vergeten"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Ironie wekt humor of wrangheid door contrast.",
+        "uo": [
+         "Koos je \"ze maakt de zin korter en zakelijker\"? Dan denk je dat ironie inkort. Ze zorgt juist voor een contrast, dat humor of wrangheid geeft.",
+         "Koos je \"ze toont dat hij echt tevreden is\"? Dan denk je dat hij het meent. Zijn boek wordt nat, dus het is niet gemeend.",
+         "Klopt: het contrast tussen \"prachtig\" en doorweekt boek maakt het grappig of wrang.",
+         "Koos je \"ze laat de lezer de regen vergeten\"? Dan denk je dat de regen naar de achtergrond gaat. De regen is juist de reden, van de ironie."
+        ],
+        "uh": "Contrast.",
+        "ctx": "Fragment 6: \"Woeste wolken wiegen waterig weg. 'Wat een prachtig weer,' zei Joris, terwijl de regen door het open raam naar binnen waaide en zijn boek doorweekte.\""
+       },
+       {
+        "v": "Welke stijlfiguur hoort bij de tweede uitspraak?",
+        "o": [
+         "hyperbool, omdat het groot klinkt",
+         "understatement",
+         "personificatie, omdat iets menselijk wordt",
+         "alliteratie, omdat het om klank gaat"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Understatement maakt iets kleiner dan het is.",
+        "uo": [
+         "Koos je \"hyperbool, omdat het groot klinkt\"? Dan denk je dat het een overdrijving is. Er wordt juist verzwakt, dat is understatement.",
+         "Klopt: een ernstige gebeurtenis wordt verzwakt weergegeven.",
+         "Koos je \"personificatie, omdat iets menselijk wordt\"? Dan denk je dat iets menselijk wordt. Er wordt iets verzwakt, dat is understatement.",
+         "Koos je \"alliteratie, omdat het om klank gaat\"? Dan denk je dat het om klank gaat. Het gaat om verzwakken, dus understatement."
+        ],
+        "uh": "Kleiner gezegd.",
+        "ctx": "Een leerling zegt na een lange wandeling: \"Ik ben bekaf\" en na een ramp: \"Dat is niet helemaal ideaal.\""
+       },
+       {
+        "v": "Welke stijlfiguren komen respectievelijk voor?",
+        "o": [
+         "hyperbool en ironie, want het is overdreven en tegenovergesteld",
+         "metafoor en vergelijking, want het zijn beelden",
+         "alliteratie en climax, want het klinkt opklimmend",
+         "retorische vraag, antithese"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Een retorische vraag verwacht geen antwoord; een antithese zet tegenover.",
+        "uo": [
+         "Koos je \"hyperbool en ironie, want het is overdreven en...\"? Dan denk je dat het overdrijving en ironie is. Er is geen overdrijving, het gaat om vragen en een tegenstelling.",
+         "Koos je \"metafoor en vergelijking, want het zijn beelden\"? Dan denk je dat er beelden zijn. Er zijn geen beelden, het gaat om vragen en een contrast.",
+         "Koos je \"alliteratie en climax, want het klinkt opklimmend\"? Dan denk je dat het klank en opklimming is. Er is geen klankherhaling, het gaat om vragen en een tegenstelling.",
+         "Klopt: de eerste stelt vragen zonder antwoord te verwachten, de tweede zet tegenover."
+        ],
+        "uh": "Vraag en tegenstelling.",
+        "ctx": "Een spreker zegt: \"Wie wil dat nu niet? Wie wil geen schone lucht, schoon water, een schone toekomst?\" Een andere zegt: \"Hoe meer je haast hebt, hoe langzamer het gaat.\""
+       },
+       {
+        "v": "Welke stijlfiguur is dit?",
+        "o": [
+         "hyperbool, omdat het overdrijft",
+         "eufemisme",
+         "metafoor, omdat het een beeld is",
+         "ironie, omdat het iets anders zegt"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Een eufemisme verzacht een pijnlijk woord.",
+        "uo": [
+         "Koos je \"hyperbool, omdat het overdrijft\"? Dan denk je dat het overdrijving is. Het gaat om verzachten, dus eufemisme.",
+         "Klopt: een pijnlijk woord wordt vervangen door een milder woord.",
+         "Koos je \"metafoor, omdat het een beeld is\"? Dan denk je dat het beeldspraak is. Het is een mildere uitdrukking, dus eufemisme.",
+         "Koos je \"ironie, omdat het iets anders zegt\"? Dan denk je dat het het tegendeel is. Het is een zachte benaming, dus eufemisme."
+        ],
+        "uh": "Zachter zeggen.",
+        "ctx": "Een leerling zegt: \"Hij is heengegaan\" in plaats van \"Hij is dood\"."
+       },
+       {
+        "v": "Hoeveel regels telt het deel van de twee terzinen samen?",
+        "o": [
+         "zes",
+         "vier regels",
+         "acht regels",
+         "veertien regels"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Een sonnet heeft 8 + 6 regels.",
+        "uo": [
+         "Klopt: de twee terzinen tellen elk drie regels, dus samen zes.",
+         "Koos je \"vier regels\"? Dan denk je dat het één kwatrijn is. Terzinen hebben elk drie regels, dus samen zes.",
+         "Koos je \"acht regels\"? Dan denk je dat het de twee kwatrijnen zijn. Die tellen acht regels, de terzinen zes.",
+         "Koos je \"veertien regels\"? Dan denk je dat het het hele sonnet is. Dat zijn alle regels, de terzinen zijn zes."
+        ],
+        "uh": "Acht plus zes regels.",
+        "ctx": "Een sonnet heeft veertien regels: twee kwatrijnen van vier regels en twee terzinen van drie regels."
+       },
+       {
+        "v": "Hoe verschilt de opbouw van gedicht 2 en 3 qua rijm?",
+        "o": [
+         "2 heeft gekruist rijm, 3 heeft gepaard rijm, want ze zijn verwisseld",
+         "2 en 3 hebben allebei gepaard rijm (aabb) en dus hetzelfde schema",
+         "2 heeft omarmend rijm, 3 heeft geen rijm in de regels",
+         "2: aabb; 3: abab"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Vergelijk welke regels met elkaar rijmen.",
+        "uo": [
+         "Koos je \"2 heeft gekruist rijm, 3 heeft gepaard rijm, want...\"? Dan denk je dat het omgekeerd is. 2 rijmt twee aan twee, 3 om en om.",
+         "Koos je \"2 en 3 hebben allebei gepaard rijm (aabb) en dus...\"? Dan denk je dat beide gepaard zijn. 3 rijmt om en om, dus het verschilt.",
+         "Koos je \"2 heeft omarmend rijm, 3 heeft geen rijm in de...\"? Dan denk je dat 3 niet rijmt. 3 rijmt wel (abab), en 2 is gepaard.",
+         "Klopt: gedicht 2 rijmt twee aan twee, gedicht 3 om en om, dus het rijmschema verschilt."
+        ],
+        "uh": "Schema verschilt.",
+        "ctx": "Gedicht 2: \"De zon gaat onder aan de kust / en laat de golven zonder rust. / De vissers varen naar huis toe / met netten vol, en blij, en moe.\" Gedicht 3: \"Er valt een stille sneeuw op straat / het licht van de lantaarn is zacht / niemand die nog naar buiten gaat / ik loop alleen door de nacht\""
+       },
+       {
+        "v": "Waarom is het rijm in gedicht 4 omarmend?",
+        "o": [
+         "omdat alle vier de regels op elkaar rijmen",
+         "omdat regel 1 en 2 op elkaar rijmen",
+         "regel 1 en 4 omarmen 2 en 3",
+         "omdat de regels om en om op elkaar rijmen"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Omarmend rijm is abba.",
+        "uo": [
+         "Koos je \"omdat alle vier de regels op elkaar rijmen\"? Dan denk je dat alle regels rijmen. Er zijn twee rijmklanken, a en b.",
+         "Koos je \"omdat regel 1 en 2 op elkaar rijmen\"? Dan denk je dat opeenvolgende regels rijmen. Regel 1 en 2 rijmen niet, dus het is omarmend.",
+         "Klopt: a-b-b-a, de buitenste regels rijmen op elkaar.",
+         "Koos je \"omdat de regels om en om op elkaar rijmen\"? Dan denk je dat het om en om is. Dat is gekruist, dit rijmt a-b-b-a."
+        ],
+        "uh": "Buiten omarmt binnen.",
+        "ctx": "Gedicht 4: \"De dag begon met regen / en eindigde in mist / waar niemand iets van wist / dan zij, die bleef zwegen\" (rijmklanken: regen en zwegen, mist en wist)."
+       },
+       {
+        "v": "Een leerling zegt: \"In dit gedicht staat een vraag.\" Wat is er dan mis?",
+        "o": [
+         "er staat wel een vraag, dus de bewering klopt",
+         "er staan meerdere vragen in het gedicht, niet één",
+         "er staat geen vraag, alleen doorlopende regels",
+         "de vraag staat in de titel van het gedicht"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Controleer of de bewering klopt met de tekst.",
+        "uo": [
+         "Koos je \"er staat wel een vraag, dus de bewering klopt\"? Dan denk je dat er een vraag is. Er staat geen vraagteken, dus de bewering klopt niet.",
+         "Koos je \"er staan meerdere vragen in het gedicht, niet één\"? Dan denk je dat er meerdere vragen zijn. Er zijn er geen, alleen een enjambement.",
+         "Klopt: het gedicht heeft geen vraagteken of vraag.",
+         "Koos je \"de vraag staat in de titel van het gedicht\"? Dan denk je dat de titel een vraag is. Het gedicht heeft geen vraag, alleen doorlopende zinnen."
+        ],
+        "uh": "Zoek de vraag.",
+        "ctx": "Gedicht 5: \"Hij zocht tussen de boeken een / antwoord dat er niet was en las / tot het licht werd, tot de dag zijn naam / begon te roepen.\""
+       },
+       {
+        "v": "Vergelijk fragment 1 en 6. Welk verschil in stijlfiguren is er?",
+        "o": [
+         "1 en 6 bevatten precies dezelfde stijlfiguren",
+         "1 bevat alliteratie en ironie; 6 bevat vooral metafoor en vergelijking",
+         "geen van beide fragmenten bevat stijlfiguren van betekenis",
+         "1 beeldspraak; 6 klank en ironie"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Benoem welke stijlfiguur waar voorkomt.",
+        "uo": [
+         "Koos je \"1 en 6 bevatten precies dezelfde stijlfiguren\"? Dan denk je dat ze gelijk zijn. De middelen verschillen, 1 beeldspraak, 6 klank en ironie.",
+         "Koos je \"1 bevat alliteratie en ironie; 6 bevat vooral...\"? Dan denk je dat het omgekeerd is. 1 heeft beeldspraak, 6 klank en ironie.",
+         "Koos je \"geen van beide fragmenten bevat stijlfiguren van...\"? Dan denk je dat er geen stijlfiguren zijn. Er staan er meerdere in, dus dat klopt niet.",
+         "Klopt: de fragmenten gebruiken andere middelen."
+        ],
+        "uh": "Per fragment.",
+        "ctx": "Fragment 1: \"'Het examen is een berg,' zei hij. 'En ik sta er als een mier aan de voet van.' Zijn zus lachte: 'Fijn, dan heb je tenminste uitzicht.' Buiten huilde de wind om het huis en de bomen bogen diep, alsof ze iets wilden vragen. Honderd keer had hij dit hoofdstuk al gelezen.\" Fragment 6: \"Woeste wolken wiegen waterig weg. 'Wat een prachtig weer,' zei Joris, terwijl de regen door het open raam naar binnen waaide en zijn boek doorweekte.\""
+       },
+       {
+        "v": "Welk verschil is er tussen de twee beeldende uitspraken?",
+        "o": [
+         "de eerste is een hyperbool, de tweede een vergelijking",
+         "de eerste is een vergelijking, de tweede een hyperbool, want ze zijn verwisseld",
+         "beide zijn een metafoor, want het zijn beelden",
+         "beide zijn personificatie, want de wereld en hond worden menselijk"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Zonder als is metafoor of hyperbool; met als is vergelijking.",
+        "uo": [
+         "Klopt: de eerste overdrijft, de tweede vergelijkt met \"als\".",
+         "Koos je \"de eerste is een vergelijking, de tweede een...\"? Dan denk je dat het omgekeerd is. De eerste heeft geen \"als\", dus het is een hyperbool.",
+         "Koos je \"beide zijn een metafoor, want het zijn beelden\"? Dan denk je dat beide metaforen zijn. De tweede heeft \"als\", dus het is een vergelijking.",
+         "Koos je \"beide zijn personificatie, want de wereld en hond...\"? Dan denk je dat de wereld of hond menselijk wordt. De eerste overdrijft, de tweede vergelijkt."
+        ],
+        "uh": "Als herkent vergelijking.",
+        "ctx": "Een dichter schrijft: \"Ik ben zo moe dat de wereld op de kop staat.\" Een andere dichter schrijft in een ander gedicht: \"Ik ben zo moe als een hond.\""
+       },
+       {
+        "v": "Wat valt op aan de zinnen?",
+        "o": [
+         "de zinnen zijn lang en doorlopend",
+         "de zinnen zijn korte versregels",
+         "de zinnen hebben namen voor de tekst",
+         "de zinnen zijn genummerd"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 2,
+        "u": "Korte regels zijn een kenmerk van poëzie.",
+        "uo": [
+         "Koos je \"de zinnen zijn lang en doorlopend\"? Dan denk je dat het proza is. Het zijn korte regels, dus poëzie.",
+         "Klopt: korte regels zijn typisch voor poëzie.",
+         "Koos je \"de zinnen hebben namen voor de tekst\"? Dan denk je dat het toneel is. Er staan geen namen, dus het is poëzie.",
+         "Koos je \"de zinnen zijn genummerd\"? Dan denk je dat het een lijst is. Het zijn versregels, geen genummerde zinnen."
+        ],
+        "uh": "Korte regels.",
+        "ctx": "Een gedicht begint met: \"De zon zakt weg, / de dag gaat slapen, / de straat wordt stil.\""
+       },
+       {
+        "v": "Wie heeft gelijk?",
+        "o": [
+         "de tweede: dezelfde klinkers komen in alle woorden voor",
+         "geen van beiden, het is ironie in een zin over zee",
+         "beiden, want alle klanken van de zin tellen mee",
+         "de eerste: de s herhaalt zich aan het woordbegin"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Alliteratie is dezelfde beginklank; assonantie dezelfde klinker.",
+        "uo": [
+         "Koos je \"de tweede: dezelfde klinkers komen in alle woorden...\"? Dan denk je dat klinkers het kenmerk zijn. De s is een medeklinker aan het begin, dus alliteratie.",
+         "Koos je \"geen van beiden, het is ironie in een zin over zee\"? Dan denk je dat het ironie is. Het gaat om klankherhaling, dus alliteratie.",
+         "Koos je \"beiden, want alle klanken van de zin tellen mee\"? Dan denk je dat beide waar zijn. De s is een beginklank, dus alliteratie.",
+         "Klopt: dezelfde beginklank s herhaalt zich, dus het is alliteratie en geen assonantie."
+        ],
+        "uh": "Begin of klinker.",
+        "ctx": "Een leerling schrijft: \"Het schip schoof soepel door de zee.\" Hij zegt: \"Dit is alliteratie.\" Een ander zegt: \"Dit is assonantie.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"'Het examen is een berg,' zei hij. 'En ik sta er als een mier aan de voet van.' Zijn zus lachte: 'Fijn, dan heb je tenminste uitzicht.' Buiten huilde de wind om het huis en de bomen bogen diep, alsof ze iets wilden vragen.\"",
+        "v": "Benoem de stijlfiguren in \"Het examen is een berg\", \"als een mier\" en \"de bomen bogen diep, alsof ze iets wilden vragen\".",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Metafoor (1p) bij \"een berg\", vergelijking (1p) bij \"als een mier\", personificatie (1p) bij de bomen die iets vragen."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Fragment: \"Woeste wolken wiegen waterig weg. 'Wat een prachtig weer,' zei Joris, terwijl de regen door het open raam naar binnen waaide en zijn boek doorweekte, en de ramen beslagen raakten.\"",
+        "v": "Welke twee stijlfiguren komen voor en welk effect heeft de tweede?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Alliteratie (1p) en ironie (1p). De ironie toont het contrast tussen \"prachtig\" en de doorweekte boeken en geeft humor of wrangheid (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Gedicht: \"Er valt een stille sneeuw op straat / het licht van de lantaarn is zacht / niemand die nog naar buiten gaat / ik loop alleen door de nacht\" (vier regels, eindwoorden straat, zacht, gaat, nacht).",
+        "v": "Welk rijmschema heeft dit gedicht? Leg uit welke regels rijmen.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Gekruist rijm, abab (1p). Regel 1 en 3 rijmen (straat/gaat) en regel 2 en 4 rijmen (zacht/nacht) (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Gedicht: \"Hij zocht tussen de boeken een / antwoord dat er niet was en las / tot het licht werd, tot de dag zijn naam / begon te roepen.\"",
+        "v": "Welke vormeigenschap hebben de regelovergangen en welk effect heeft die?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Enjambement: de zin loopt door over het einde van de regel (1p). Het verlegt het tempo en geeft nadruk aan het woord na de overgang, zoals \"antwoord\" (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Een leerling zegt over zijn overleden opa: \"Hij is heengegaan\" in plaats van \"Hij is dood\", en na een grote ramp met veel schade zegt hij: \"Dat is niet helemaal ideaal.\"",
+        "v": "Benoem de twee stijlfiguren en leg het verschil uit.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Eufemisme (1p): een pijnlijk woord wordt verzacht. Understatement (1p): een ernstige zaak wordt kleiner voorgesteld dan ze is (1p)."
+       }
+      ]
      }
     ]
    }

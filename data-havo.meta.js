@@ -743,6 +743,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "F5",
+      "lo": "nl.F.5",
+      "gs": 2,
+      "naam": "Stijlfiguren en poëzie",
+      "beschrijving": "Je herkent stijlfiguren zoals metafoor, vergelijking, personificatie, hyperbool en ironie, en je beschrijft rijm, enjambement en de opbouw van een gedicht, met het effect ervan.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Beeldspraak en overdrijving",
+       "Rijm en rijmschema",
+       "Enjambement en regelindeling",
+       "Klank en ironie",
+       "Understatement, retorische vraag, antithese en eufemisme",
+       "Sonnet en opbouw van gedichten"
+      ],
+      "nSv": 25,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    }
