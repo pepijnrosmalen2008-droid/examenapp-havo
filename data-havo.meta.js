@@ -2270,6 +2270,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A4",
+      "lo": "en.A.4",
+      "gs": 2,
+      "naam": "Present perfect of past simple kiezen",
+      "beschrijving": "Je kiest in een Engelse zin of het present perfect of de past simple past, gebruikt for, since, just, already, yet, ever en never goed en kent de belangrijkste onregelmatige werkwoorden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Het present perfect vormen",
+       "De past simple gebruiken",
+       "For en since",
+       "Just, already, yet, ever en never",
+       "Afgerond moment tegenover resultaat nu",
+       "Onregelmatige werkwoorden"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

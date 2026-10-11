@@ -104365,6 +104365,685 @@ var VAKKEN = [
         "u": "Over the moon: dolblij (1p). Keep an eye on: in de gaten houden (1p). Actually: eigenlijk, in feite, niet actueel (1p)."
        }
       ]
+     },
+     {
+      "id": "A4",
+      "lo": "en.A.4",
+      "gs": 2,
+      "naam": "Present perfect of past simple kiezen",
+      "beschrijving": "Je kiest in een Engelse zin of het present perfect of de past simple past, gebruikt for, since, just, already, yet, ever en never goed en kent de belangrijkste onregelmatige werkwoorden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Het present perfect vormen",
+       "De past simple gebruiken",
+       "For en since",
+       "Just, already, yet, ever en never",
+       "Afgerond moment tegenover resultaat nu",
+       "Onregelmatige werkwoorden"
+      ],
+      "sam": "Het present perfect (have of has plus voltooid deelwoord) verbindt het verleden met nu: het gaat om een resultaat, een ervaring of een situatie die nog doorloopt. De past simple beschrijft een afgeronde gebeurtenis met een duidelijk tijdstip (yesterday, last week, in 2019, two years ago). For gebruik je met een periode, since met een beginpunt. Just, already, yet, ever en never horen bij het present perfect. Veel werkwoorden zijn onregelmatig: go, went, gone.",
+      "begrippen": [
+       {
+        "t": "Present perfect",
+        "d": "Een tijd met have of has plus voltooid deelwoord, voor een verband tussen verleden en nu."
+       },
+       {
+        "t": "Past simple",
+        "d": "Een tijd voor een afgeronde gebeurtenis met een duidelijk tijdstip in het verleden."
+       },
+       {
+        "t": "Voltooid deelwoord",
+        "d": "De vorm die je na have of has gebruikt, zoals worked of seen."
+       },
+       {
+        "t": "Hulpwerkwoord",
+        "d": "Een werkwoord als have of did dat helpt een tijd te vormen."
+       },
+       {
+        "t": "Afgerond moment",
+        "d": "Een tijdsaanduiding die in het verleden ligt, zoals yesterday of two years ago."
+       },
+       {
+        "t": "For",
+        "d": "Voorzetsel bij een periode, zoals for three years."
+       },
+       {
+        "t": "Since",
+        "d": "Voorzetsel bij een beginpunt, zoals since 2015."
+       },
+       {
+        "t": "Just",
+        "d": "Zojuist, bij het present perfect: I have just arrived."
+       },
+       {
+        "t": "Already",
+        "d": "Al, bij het present perfect: she has already left."
+       },
+       {
+        "t": "Yet",
+        "d": "Nog, in ontkenningen en vragen bij het present perfect: I have not finished yet."
+       },
+       {
+        "t": "Ever en never",
+        "d": "Ooit en nooit, bij ervaringen tot nu: Have you ever been to Rome?"
+       },
+       {
+        "t": "Onregelmatig werkwoord",
+        "d": "Een werkwoord met eigen vormen voor verleden tijd en voltooid deelwoord, zoals go, went, gone."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which form is the present perfect of \"see\"?",
+        "o": [
+         "saw",
+         "has seen",
+         "has saw",
+         "is seeing"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Present perfect: have of has plus het voltooid deelwoord.",
+        "uo": [
+         "Koos je \"saw\"? Dan denk je dat saw het present perfect is. Dat is de verleden tijd zonder hulpwerkwoord, het present perfect gebruikt has of have.",
+         "Klopt: het present perfect is have of has plus het voltooid deelwoord seen.",
+         "Koos je \"has saw\"? Dan denk je dat het hulpwerkwoord genoeg is. Na has hoort het voltooid deelwoord seen, niet de verleden tijd.",
+         "Koos je \"is seeing\"? Dan denk je dat is seeing een voltooide tijd is. Dat is de tegenwoordige tijd van het gebeuren, het present perfect heeft has of have nodig."
+        ],
+        "uh": "Has plus seen."
+       },
+       {
+        "v": "Which sentence is in the past simple?",
+        "o": [
+         "She has visited Paris this year.",
+         "She is visiting Paris.",
+         "She will visit Paris.",
+         "She visited Paris last year."
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Past simple: een afgerond tijdstip met de verleden tijd van het werkwoord.",
+        "uo": [
+         "Koos je \"She has visited Paris this year.\"? Dan denk je dat het verleden hier simpel is. Met has plus visited gebruik je het present perfect, dat is een andere tijd.",
+         "Koos je \"She is visiting Paris.\"? Dan denk je dat het een verleden is. Is visiting is de tegenwoordige tijd, het gebeurt nu.",
+         "Koos je \"She will visit Paris.\"? Dan denk je dat het verleden is. Will visit is de toekomende tijd, het moet nog gebeuren.",
+         "Klopt: visited is de verleden tijd en last year noemt een afgerond tijdstip."
+        ],
+        "uh": "Afgerond tijdstip."
+       },
+       {
+        "v": "Which word completes: \"I have lived here ___ 2015.\"",
+        "o": [
+         "since",
+         "for",
+         "ago",
+         "during"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Since plus beginpunt, for plus periode.",
+        "uo": [
+         "Klopt: since gebruik je met een beginpunt, hier het jaar 2015.",
+         "Koos je \"for\"? Dan denk je dat for bij een jaartal past. For gebruik je met een periode, bijvoorbeeld for ten years, niet met een beginpunt.",
+         "Koos je \"ago\"? Dan denk je dat ago het beginpunt aangeeft. Ago hoort bij de verleden tijd, zoals two years ago.",
+         "Koos je \"during\"? Dan denk je dat during hier past. During is voor een gebeurtenis, niet voor een beginpunt."
+        ],
+        "uh": "Since: beginpunt."
+       },
+       {
+        "v": "Which word completes: \"She has been ill ___ three days.\"",
+        "o": [
+         "since",
+         "ago",
+         "for",
+         "from"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "For plus periode, since plus beginpunt.",
+        "uo": [
+         "Koos je \"since\"? Dan denk je dat since bij een getal past. Since hoort bij een beginpunt zoals Monday, niet bij een periode.",
+         "Koos je \"ago\"? Dan denk je dat ago hier past. Ago gebruik je met de verleden tijd, niet met has been.",
+         "Klopt: for gebruik je met een periode, hier drie dagen.",
+         "Koos je \"from\"? Dan denk je dat from een periode aangeeft. From vraagt een eindpunt zoals from Monday to Friday, hier gaat het om for."
+        ],
+        "uh": "For: periode."
+       },
+       {
+        "v": "What is the past participle of \"write\"?",
+        "o": [
+         "wrote",
+         "writed",
+         "written",
+         "writen"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 5,
+        "u": "Onregelmatige werkwoorden leer je als reeks: write, wrote, written.",
+        "uo": [
+         "Koos je \"wrote\"? Dan denk je dat wrote het voltooid deelwoord is. Wrote is de verleden tijd, het voltooid deelwoord is written.",
+         "Koos je \"writed\"? Dan denk je dat write regelmatig is. Het is een onregelmatig werkwoord, dus geen -ed.",
+         "Klopt: write, wrote, written: het voltooid deelwoord is written.",
+         "Koos je \"writen\"? Dan denk je dat er maar een t is. De juiste spelling heeft twee t's, written."
+        ],
+        "uh": "Write, wrote, written."
+       },
+       {
+        "v": "Which time word goes with the past simple?",
+        "o": [
+         "yesterday",
+         "already",
+         "ever",
+         "so far"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Past simple met yesterday, last week, in 2019, ago.",
+        "uo": [
+         "Klopt: yesterday noemt een afgerond moment, dus je gebruikt de verleden tijd.",
+         "Koos je \"already\"? Dan denk je dat already bij de verleden tijd past. Already hoort bij het present perfect, het geeft een stand tot nu.",
+         "Koos je \"ever\"? Dan denk je dat ever bij de verleden tijd past. Ever gebruik je in vragen met het present perfect, het gaat over je hele leven tot nu.",
+         "Koos je \"so far\"? Dan denk je dat so far een tijdstip is. So far betekent tot nu toe, dat hoort bij het present perfect."
+        ],
+        "uh": "Yesterday."
+       },
+       {
+        "v": "Which word completes: \"Have you ___ been to London?\"",
+        "o": [
+         "yet",
+         "already",
+         "just",
+         "ever"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Ever in vragen, never in antwoorden: Have you ever, I have never.",
+        "uo": [
+         "Koos je \"yet\"? Dan denk je dat yet in elke vraag past. Yet hoort bij iets wat je verwacht, niet bij je hele leven.",
+         "Koos je \"already\"? Dan denk je dat already een vraagwoord is. Already hoort bij iets wat al gebeurd is, niet bij een vraag over ervaring.",
+         "Koos je \"just\"? Dan denk je dat just hier past. Just betekent zojuist, hier gaat het om je hele leven.",
+         "Klopt: ever gebruik je in vragen over je ervaringen tot nu."
+        ],
+        "uh": "Ever in vragen."
+       },
+       {
+        "v": "Which sentence has a correct present perfect?",
+        "o": [
+         "He have finished his homework.",
+         "He has finished his homework.",
+         "He has finish his homework.",
+         "He has finishing his homework."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Has bij he, she, it; have bij I, you, we, they.",
+        "uo": [
+         "Koos je \"He have finished his homework.\"? Dan denk je dat have bij he past. Bij he, she en it gebruik je has, dus has finished.",
+         "Klopt: has plus het voltooid deelwoord finished vormt het present perfect.",
+         "Koos je \"He has finish his homework.\"? Dan denk je dat het werkwoord niet verandert. Na has hoort het voltooid deelwoord, dus finished.",
+         "Koos je \"He has finishing his homework.\"? Dan denk je dat de -ing-vorm past. Na has volgt het voltooid deelwoord, dus finished."
+        ],
+        "uh": "Has finished."
+       },
+       {
+        "v": "Which verb form fits the gap?",
+        "o": [
+         "have moved",
+         "move",
+         "are moving",
+         "moved"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Een jaartal vraagt de past simple.",
+        "uo": [
+         "Koos je \"have moved\"? Dan denk je dat het present perfect past omdat ze er nog wonen. Met een jaartal gebruik je de verleden tijd, dus moved.",
+         "Koos je \"move\"? Dan denk je dat de tegenwoordige tijd past omdat ze er wonen. De verhuizing zelf was in 1990, dus verleden tijd.",
+         "Koos je \"are moving\"? Dan denk je dat het bezig is. De verhuizing was lang geleden, dus een afgeronde gebeurtenis.",
+         "Klopt: 1990 is een afgerond tijdstip, dus de verleden tijd moved."
+        ],
+        "uh": "Jaartal: past simple.",
+        "ctx": "My grandparents ______ to Spain in 1990 and still live there today."
+       },
+       {
+        "v": "Which word fits the gap?",
+        "o": [
+         "for",
+         "since",
+         "ago",
+         "while"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Since kan ook voor een bijzin staan met een verleden tijd.",
+        "uo": [
+         "Koos je \"for\"? Dan denk je dat for ook voor een bijzin past. For hoort bij een periode, hier staat een beginpunt als bijzin.",
+         "Klopt: since gebruik je ook met een bijzin die het beginpunt aangeeft.",
+         "Koos je \"ago\"? Dan denk je dat ago het beginpunt uitdrukt. Ago past bij de verleden tijd, hier is het present perfect gebruikt.",
+         "Koos je \"while\"? Dan denk je dat while een beginpunt is. While betekent terwijl, het geeft geen beginpunt."
+        ],
+        "uh": "Since plus bijzin.",
+        "ctx": "She has worked at the hospital ______ she left school at the age of sixteen."
+       },
+       {
+        "v": "Which word fits the gap?",
+        "o": [
+         "already",
+         "ever",
+         "yet",
+         "just"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Yet in ontkenningen en vragen, already in bevestigende zinnen.",
+        "uo": [
+         "Koos je \"already\"? Dan denk je dat already in ontkenningen past. Already hoort bij bevestigende zinnen, met yet geef je aan dat iets nog moet.",
+         "Koos je \"ever\"? Dan denk je dat ever past bij een ontkenning. Ever hoort bij ervaring in vragen, hier gaat het om iets wat nog moet.",
+         "Klopt: yet gebruik je in een ontkenning of vraag voor iets wat je nog verwacht.",
+         "Koos je \"just\"? Dan denk je dat just zojuist betekent. Dat past niet bij not finished, yet geeft aan dat het nog moet."
+        ],
+        "uh": "Yet: nog niet.",
+        "ctx": "I have not finished my essay ______, so I cannot go out with my friends tonight."
+       },
+       {
+        "v": "Which word fits the gap?",
+        "o": [
+         "already",
+         "yet",
+         "ever",
+         "ago"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Already: al, eerder dan verwacht.",
+        "uo": [
+         "Klopt: already betekent al en past in een bevestigende zin over iets wat eerder dan verwacht gebeurd is.",
+         "Koos je \"yet\"? Dan denk je dat yet al betekent. Yet hoort bij nog niet in ontkenningen en vragen, hier past already.",
+         "Koos je \"ever\"? Dan denk je dat ever hier past. Ever hoort bij ervaringen, het gaat om iets eerder dan verwacht.",
+         "Koos je \"ago\"? Dan denk je dat ago past bij het present perfect. Ago gebruik je met de verleden tijd, hier gaat het om already."
+        ],
+        "uh": "Already: al.",
+        "ctx": "She has ______ visited three museums, and it is only noon."
+       },
+       {
+        "v": "Which sentence is correct?",
+        "o": [
+         "I saw him two hours ago.",
+         "I have seen him two hours ago.",
+         "I see him two hours ago.",
+         "I have saw him two hours ago."
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Ago past bij de past simple.",
+        "uo": [
+         "Klopt: ago noemt een afgerond moment, dus je gebruikt de verleden tijd saw.",
+         "Koos je \"I have seen him two hours ago.\"? Dan denk je dat het present perfect past bij een recent moment. Met ago gebruik je de verleden tijd, dus saw.",
+         "Koos je \"I see him two hours ago.\"? Dan denk je dat de tegenwoordige tijd past. Ago verwijst naar het verleden, dus saw.",
+         "Koos je \"I have saw him two hours ago.\"? Dan denk je dat het hulpwerkwoord have met de verleden tijd samengaat. Na have hoort seen, en met ago past saw zonder have."
+        ],
+        "uh": "Ago: past simple."
+       },
+       {
+        "v": "Which question is correct?",
+        "o": [
+         "When have you bought this bike?",
+         "When you bought this bike?",
+         "When did you buy this bike?",
+         "When do you bought this bike?"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "When en een afgerond moment: past simple met did.",
+        "uo": [
+         "Koos je \"When have you bought this bike?\"? Dan denk je dat het present perfect bij when past. Bij when gebruik je de past simple, dus did you buy.",
+         "Koos je \"When you bought this bike?\"? Dan denk je dat een vraag zonder hulpwerkwoord kan. Je hebt did nodig, dus When did you buy.",
+         "Klopt: bij when en een afgeronde gebeurtenis gebruik je de past simple met did.",
+         "Koos je \"When do you bought this bike?\"? Dan denk je dat do en bought samen kunnen. Na do gebruik je de stam, na did ook."
+        ],
+        "uh": "When did you."
+       },
+       {
+        "v": "Which verb form is correct: \"Yesterday we ___ to the cinema.\"",
+        "o": [
+         "gone",
+         "went",
+         "goed",
+         "have gone"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Go, went, gone: let op de drie vormen.",
+        "uo": [
+         "Koos je \"gone\"? Dan denk je dat gone de verleden tijd is. Gone is het voltooid deelwoord, na we zonder have gebruik je went.",
+         "Klopt: go, went, gone: yesterday vraagt de verleden tijd went.",
+         "Koos je \"goed\"? Dan denk je dat go regelmatig is. Het is een onregelmatig werkwoord, dus went.",
+         "Koos je \"have gone\"? Dan denk je dat yesterday bij het present perfect past. Yesterday vraagt de verleden tijd, dus went."
+        ],
+        "uh": "Went: past simple."
+       },
+       {
+        "v": "Which verb form fits the gap?",
+        "o": [
+         "broke",
+         "breaked",
+         "break",
+         "broken"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Break, broke, broken.",
+        "uo": [
+         "Koos je \"broke\"? Dan denk je dat broke het voltooid deelwoord is. Broke is de verleden tijd, na has hoort broken.",
+         "Koos je \"breaked\"? Dan denk je dat break regelmatig is. Het is een onregelmatig werkwoord, dus broken.",
+         "Koos je \"break\"? Dan denk je dat de stam genoeg is. Na has hoort een voltooid deelwoord, dus broken.",
+         "Klopt: het present perfect heeft het voltooid deelwoord broken nodig."
+        ],
+        "uh": "Broken: participle.",
+        "ctx": "He has ______ his phone twice this week, so he bought a stronger case."
+       },
+       {
+        "v": "Which sentence in the letter uses the past simple for an action with a time word?",
+        "o": [
+         "I have just arrived in Madrid.",
+         "Yesterday I met Carlos.",
+         "I have not unpacked yet.",
+         "I have already found a lovely cafe."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Yesterday vraagt de past simple.",
+        "uo": [
+         "Koos je \"I have just arrived in Madrid.\"? Dan denk je dat een aankomst van net een tijdstip noemt. Just geeft geen afgerond tijdstip, het geeft een recent resultaat met een verband met nu.",
+         "Klopt: yesterday noemt een afgerond moment, dus de schrijver gebruikt de verleden tijd.",
+         "Koos je \"I have not unpacked yet.\"? Dan denk je dat een ontkenning bij de verleden tijd hoort. Yet kijkt vooruit naar iets wat nog moet gebeuren, je ziet hier geen afgerond moment.",
+         "Koos je \"I have already found a lovely cafe.\"? Dan denk je dat already bij een afgeronde gebeurtenis hoort. Already zegt dat iets eerder dan verwacht klaar is, maar het noemt geen tijdstip."
+        ],
+        "uh": "Yesterday: past simple.",
+        "ctx": "Dear Jo, I have just arrived in Madrid. The flight was long because we waited two hours at the airport in Amsterdam. I have not unpacked yet, but I have already found a lovely cafe near the hotel. Yesterday I met Carlos, whom I have known since school. We had dinner together and talked until midnight."
+       },
+       {
+        "v": "Why is \"presented\" in the past simple?",
+        "o": [
+         "it names a finished time",
+         "the backpack no longer exists",
+         "news reports always use the past simple",
+         "the verb is a regular verb"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Een afgerond tijdstip vraagt de past simple.",
+        "uo": [
+         "Klopt: last Saturday is een afgerond tijdstip, dus de verleden tijd presented.",
+         "Koos je \"the backpack no longer exists\"? Dan denk je dat de tijdvorm iets zegt over het bestaan. Dat doet het niet, het gaat om het afgeronde tijdstip.",
+         "Koos je \"news reports always use the past simple\"? Dan denk je dat de tekstsoort de tijd bepaalt. Nieuws gebruikt ook het present perfect, hier is het de tijdsaanduiding.",
+         "Koos je \"the verb is a regular verb\"? Dan denk je dat regelmatige werkwoorden de verleden tijd vragen. De tijdvorm hangt af van het moment, niet van het werkwoord."
+        ],
+        "uh": "Last Saturday.",
+        "ctx": "Last Saturday, a young inventor from Leeds presented a solar-powered backpack at a technology fair. She has worked on the design since 2021 and has already tested it in three countries. \"I have never given up,\" she told reporters, \"even when the first prototype broke down in the rain.\" The backpack has won two prizes so far, and she plans to start selling it next spring."
+       },
+       {
+        "v": "What does \"has worked on the design since 2021\" tell us?",
+        "o": [
+         "the work stopped for good in 2021",
+         "the work happened only once, in 2021",
+         "she will begin the work again in 2021",
+         "the work began in 2021 and continues"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Present perfect plus since: begin in het verleden, nog steeds bezig.",
+        "uo": [
+         "Koos je \"the work stopped for good in 2021\"? Dan denk je dat het present perfect een einde aangeeft. Het geeft juist een doorlopende situatie, tot nu.",
+         "Koos je \"the work happened only once, in 2021\"? Dan denk je dat het om een eenmalige gebeurtenis gaat. Since geeft een periode, die nog loopt.",
+         "Koos je \"she will begin the work again in 2021\"? Dan denk je dat het om de toekomst gaat. 2021 ligt in het verleden, dus het begin was toen.",
+         "Klopt: present perfect plus since geeft een begin in het verleden dat doorloopt tot nu."
+        ],
+        "uh": "Since: tot nu.",
+        "ctx": "Last Saturday, a young inventor from Leeds presented a solar-powered backpack at a technology fair. She has worked on the design since 2021 and has already tested it in three countries. \"I have never given up,\" she told reporters, \"even when the first prototype broke down in the rain.\" The backpack has won two prizes so far, and she plans to start selling it next spring."
+       },
+       {
+        "v": "Why does the inventor say \"I have never given up\" and not \"I never gave up\"?",
+        "o": [
+         "she is describing one single finished event",
+         "never always needs have",
+         "she looks back on her experience until now",
+         "she is talking about next year"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Never in het present perfect: ervaring tot nu.",
+        "uo": [
+         "Koos je \"she is describing one single finished event\"? Dan denk je dat het om een enkele gebeurtenis gaat. Dan zou je een tijdstip noemen, hier gaat het om haar ervaring tot nu.",
+         "Koos je \"never always needs have\"? Dan denk je dat never een regel heeft. Never kan ook bij de past simple staan, hier past het present perfect bij tot nu.",
+         "Klopt: het present perfect met never kijkt terug op een periode tot nu, zonder een specifiek moment te noemen.",
+         "Koos je \"she is talking about next year\"? Dan denk je dat het om de toekomst gaat. Het gaat om haar tot nu, dus present perfect."
+        ],
+        "uh": "Ervaring tot nu.",
+        "ctx": "Last Saturday, a young inventor from Leeds presented a solar-powered backpack at a technology fair. She has worked on the design since 2021 and has already tested it in three countries. \"I have never given up,\" she told reporters, \"even when the first prototype broke down in the rain.\" The backpack has won two prizes so far, and she plans to start selling it next spring."
+       },
+       {
+        "v": "Why does Sara change from \"I have\" to \"I went\"?",
+        "o": [
+         "she wants to sound more polite",
+         "the present perfect cannot be used after \"yes\"",
+         "the trip is finished: three years ago",
+         "went is the past participle of go"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Zodra je een afgerond moment noemt, gebruik je de past simple.",
+        "uo": [
+         "Koos je \"she wants to sound more polite\"? Dan denk je dat het een kwestie van beleefdheid is. De tijdvorm hangt af van het moment, niet van de toon.",
+         "Koos je \"the present perfect cannot be used after yes\"? Dan denk je dat er een verbod is. Dat is niet zo, de tijdsaanduiding bepaalt de vorm.",
+         "Klopt: three years ago noemt een afgerond moment, dus ze gebruikt de verleden tijd went.",
+         "Koos je \"went is the past participle of go\"? Dan denk je dat went het voltooid deelwoord is. Dat is gone, went is de verleden tijd."
+        ],
+        "uh": "Three years ago.",
+        "ctx": "Mark: Have you ever been to Scotland? Sara: Yes, I have. I went there with my parents three years ago. We stayed in a small village near Loch Ness and we visited the castle twice. I have wanted to go back ever since."
+       },
+       {
+        "v": "What does \"ever since\" mean in \"I have wanted to go back ever since\"?",
+        "o": [
+         "only during the trip",
+         "that she will never return again",
+         "for exactly one year",
+         "from that moment until now"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Ever since: vanaf dat moment tot nu.",
+        "uo": [
+         "Koos je \"only during the trip\"? Dan denk je dat het alleen over de reis gaat. Ever since verwijst naar daarna, tot nu.",
+         "Koos je \"that she will never return again\"? Dan denk je dat het over nooit gaat. Ze wil terug, vanaf toen tot nu.",
+         "Koos je \"for exactly one year\"? Dan denk je dat het om een jaar gaat. Dat staat er niet, het loopt tot nu.",
+         "Klopt: ever since betekent vanaf toen tot nu, en past bij het present perfect."
+        ],
+        "uh": "Ever since.",
+        "ctx": "Mark: Have you ever been to Scotland? Sara: Yes, I have. I went there with my parents three years ago. We stayed in a small village near Loch Ness and we visited the castle twice. I have wanted to go back ever since."
+       },
+       {
+        "v": "What does \"I have not unpacked yet\" suggest?",
+        "o": [
+         "she plans to unpack later",
+         "she has decided never to unpack",
+         "she unpacked already",
+         "she lost her bags"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Not yet betekent nog niet, maar waarschijnlijk wel straks.",
+        "uo": [
+         "Klopt: not yet betekent nog niet, en dat suggereert dat het later wel gebeurt.",
+         "Koos je \"she has decided never to unpack\"? Dan denk je dat yet nooit betekent. Yet betekent nog niet, dus het gebeurt later.",
+         "Koos je \"she unpacked already\"? Dan denk je dat not yet al uitpakken betekent. Not yet betekent nog niet, dus het is niet gebeurd.",
+         "Koos je \"she lost her bags\"? Dan denk je dat er iets kwijt is. Dat staat er niet, ze heeft nog niet uitgepakt."
+        ],
+        "uh": "Not yet.",
+        "ctx": "Dear Jo, I have just arrived in Madrid. The flight was long because we waited two hours at the airport in Amsterdam. I have not unpacked yet, but I have already found a lovely cafe near the hotel. Yesterday I met Carlos, whom I have known since school. We had dinner together and talked until midnight."
+       },
+       {
+        "v": "What does \"whom I have known since school\" tell us about Carlos?",
+        "o": [
+         "Jo met him only once while they were at school",
+         "Jo has known him from school until now",
+         "Jo does not know him any more",
+         "Jo will meet him at school"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Since school geeft het beginpunt van een situatie die nog duurt.",
+        "uo": [
+         "Koos je \"Jo met him only once while they were at school\"? Dan denk je dat het om een eenmalige ontmoeting gaat. Het present perfect duidt op een doorlopende situatie, tot nu.",
+         "Klopt: since school geeft het beginpunt, en het present perfect laat zien dat de vriendschap doorloopt tot nu.",
+         "Koos je \"Jo does not know him any more\"? Dan denk je dat het ophoudt. Het present perfect houdt de situatie tot nu vast, dus ze kennen elkaar nog.",
+         "Koos je \"Jo will meet him at school\"? Dan denk je dat het om de toekomst gaat. Since verwijst naar het verleden, dus het begon op school."
+        ],
+        "uh": "Sinds school.",
+        "ctx": "Dear Jo, I have just arrived in Madrid. The flight was long because we waited two hours at the airport in Amsterdam. I have not unpacked yet, but I have already found a lovely cafe near the hotel. Yesterday I met Carlos, whom I have known since school. We had dinner together and talked until midnight."
+       },
+       {
+        "v": "Which is the correct version of the three sentences?",
+        "o": [
+         "I have visited my aunt yesterday and I have seen my cousins. We have played football for two hours.",
+         "I visited my aunt yesterday and I have seen my cousins. We played football for two hours.",
+         "I have visited my aunt yesterday and I saw my cousins. We played football for two hours.",
+         "I visited my aunt yesterday and I saw my cousins. We played football for two hours."
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Yesterday en een afgerond moment: past simple voor alle zinnen.",
+        "uo": [
+         "Koos je \"I have visited my aunt yesterday and I have seen my...\"? Dan denk je dat het present perfect past omdat het recent is. Yesterday noemt een afgerond moment, dus past simple.",
+         "Koos je \"I visited my aunt yesterday and I have seen my...\"? Dan denk je dat de tweede zin present perfect kan zijn. Het gaat om dezelfde dag, dus past simple.",
+         "Koos je \"I have visited my aunt yesterday and I saw my...\"? Dan denk je dat het eerste deel present perfect is. Yesterday vraagt de verleden tijd, dus visited.",
+         "Klopt: yesterday vraagt de past simple, dus visited, saw en played, zonder have."
+        ],
+        "uh": "Yesterday: past simple.",
+        "ctx": "A student wrote: \"I have visited my aunt yesterday and I have see my cousins. We have played football for two hours.\""
+       },
+       {
+        "v": "Which sentence tells us that Mrs Evans is still a teacher now?",
+        "o": [
+         "Mrs Evans has taught for twenty years.",
+         "She started in 2004.",
+         "Last month she announced that she would retire.",
+         "She would retire next summer."
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Present perfect plus for geeft een periode tot nu.",
+        "uo": [
+         "Klopt: present perfect met for toont dat de situatie doorloopt tot nu.",
+         "Koos je \"She started in 2004.\"? Dan denk je dat het begin het nu aangeeft. Started is de past simple, het zegt niets over nu.",
+         "Koos je \"Last month she announced that she would retire.\"? Dan denk je dat de aankondiging zegt dat ze al gestopt is. Ze stopt nog, pas volgend jaar.",
+         "Koos je \"She would retire next summer.\"? Dan denk je dat dit nu aangeeft. Het gaat over de toekomst, dus geen stand van nu."
+        ],
+        "uh": "Present perfect: tot nu.",
+        "ctx": "Mrs Evans has taught at our school for twenty years. She started in 2004, and since then she has helped thousands of students. Last month she announced that she would retire next summer."
+       },
+       {
+        "v": "What does the present perfect show here?",
+        "o": [
+         "the loss happened a long time ago",
+         "the loss still matters now",
+         "he lost his keys many times",
+         "he will lose his keys tomorrow"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Present perfect: een gebeurtenis in het verleden met een gevolg nu.",
+        "uo": [
+         "Koos je \"the loss happened a long time ago\"? Dan denk je dat het present perfect een lang geleden moment noemt. Het kijkt juist naar het gevolg nu, niet naar het moment zelf.",
+         "Klopt: het present perfect legt de nadruk op het resultaat nu, hij staat buiten zonder sleutels.",
+         "Koos je \"he lost his keys many times\"? Dan denk je dat het om herhaling gaat. Het gaat om een gebeurtenis met een resultaat nu, niet om herhaling.",
+         "Koos je \"he will lose his keys tomorrow\"? Dan denk je dat het om de toekomst gaat. Het gebeurde al, met een gevolg nu."
+        ],
+        "uh": "Gevolg nu.",
+        "ctx": "Tom is standing outside his house in the rain. He is looking in his bag and in his pockets, and then he says to his neighbour: \"I have lost my keys.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Sam writes to his friend from his holiday: \"I have arrived in Berlin two days ago. I have already visited the museum and I did not see the castle yet. Yesterday I have met a girl who has lived here since five years.\"",
+        "v": "Find three mistakes in Sam's text and correct them.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Arrived two days ago (past simple met ago) (1p). Have not seen the castle yet, present perfect met yet (1p). Yesterday I met (past simple) (1p). Since five years wordt for five years (1p, de vierde fout telt als extra juist)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Last summer we went to Italy with my parents. We stayed in a small hotel near the sea for two weeks. I have always wanted to go there, and now I have finally seen the Colosseum and tasted real pizza.",
+        "v": "Explain why \"went\" and \"stayed\" are in the past simple but \"have always wanted\" and \"have seen\" are in the present perfect.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Went en stayed horen bij Last summer, een afgerond moment (1p). Have always wanted: een wens die doorloopt tot nu (1p). Have seen: een ervaring met een resultaat nu (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Anna has lived in Utrecht since 2019. She moved there after she finished school. She has already visited the Dom Tower and has never missed a market day.",
+        "v": "Which sentences are in the present perfect and which in the past simple? Explain why for two of them.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Present perfect: has lived since 2019, has already visited, has never missed (1p). Past simple: moved, finished (1p). Reden: moved en finished beschrijven een afgeronde gebeurtenis in het verleden, has lived since 2019 loopt door tot nu (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Tom explains to his teacher: \"I have not done my homework yet because I was ill yesterday and stayed in bed all day. I have just finished the first exercise, but I have not started the second one.\"",
+        "v": "Why does Tom use \"was ill yesterday\" and \"have not done yet\"? Explain each tense.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Was ill yesterday: past simple met yesterday, afgerond moment (1p). Have not done yet: present perfect, nog niet gebeurd tot nu (1p). Have just finished: recent resultaat (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Complete the dialogue. Anna: \"___ you ever ___ (be) to Spain?\" Ben: \"Yes, I have. We went there two years ago.\" Anna: \"When ___ you ___ (go) exactly, and how long did you stay?\"",
+        "v": "Fill in the correct forms and explain the choice of tense.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Have you ever been, present perfect voor een ervaring tot nu (1p). When did you go, past simple omdat when naar een afgerond moment vraagt (1p). Been is het voltooid deelwoord van be, go is de stam na did (1p)."
+       }
+      ]
      }
     ]
    },
