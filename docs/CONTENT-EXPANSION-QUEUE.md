@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **32 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1). Werk dit getal bij bij elke afronding.
+> Voortgang: **33 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -78,7 +78,7 @@
 - [ ] **VMBO · Nederlands** (`nl`) · domein E — Fictie
 - [ ] **HAVO · Engels** (`en`) · domein A — Woordenschat & grammatica
   - [x] A1 · en.A.1 Woordbetekenis afleiden uit de context (ook synoniemen en tegenstellingen) · 27 vragen (R1 7, R2 9, R3 11, 11 met tekst), 12 begrippen, 4 figuren (aanwijzing in de zin, tegenstelling en gevolg, meer betekenissen, controleren), geen clip
-  - [ ] A2 · en.A.2 Woordvorming: voor- en achtervoegsels
+  - [x] A2 · en.A.2 Woordvorming: voor- en achtervoegsels · 28 vragen (R1 7, R2 12, R3 9, 17 met tekst), 12 begrippen, 4 figuren (delen van een woord, voorvoegsels, woordfamilie, spelling), geen clip
   - [ ] A3 · en.A.3 Collocaties, vaste uitdrukkingen en false friends
   - [ ] A4 · en.A.4 Tijden: present perfect en past simple
   - [ ] A5 · en.A.5 Modale werkwoorden

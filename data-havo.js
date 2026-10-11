@@ -102960,6 +102960,709 @@ var VAKKEN = [
         "u": "Stap 1: lees de context, alleen bewoners mogen parkeren, dus er komen minder auto's (1p). Stap 2: het gevolg is stillere straten en schonere lucht, dus \"curb\" = beperken (1p). Controle: vul \"limit\" in en kijk of de zin klopt (1p)."
        }
       ]
+     },
+     {
+      "id": "A2",
+      "lo": "en.A.2",
+      "gs": 2,
+      "naam": "Woorden bouwen met voor- en achtervoegsels",
+      "beschrijving": "Je herkent voorvoegsels en achtervoegsels in Engelse woorden, leidt daaruit de betekenis af en kiest de juiste woordsoort in een zin.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorvoegsels die iets ontkennen (un-, in-, im-, il-, dis-)",
+       "Andere voorvoegsels (re-, mis-, over-, under-, pre-)",
+       "Achtervoegsels en woordsoort (-ness, -ly, -tion)",
+       "Betekenis van achtervoegsels (-less, -ful, -able, -er)",
+       "Het juiste woord in de zin kiezen",
+       "Spelling en valkuilen"
+      ],
+      "sam": "Veel Engelse woorden bestaan uit delen: een voorvoegsel (un-, re-, mis-), een stam en een achtervoegsel (-less, -ful, -ness, -ly). Het voorvoegsel verandert de betekenis, het achtervoegsel verandert vaak de woordsoort. Wie de delen kent, kan onbekende woorden ontleden: un + forget + able = niet te vergeten. Kies bij een invulzin eerst de woordsoort die op de plek hoort, en let op spelling (happy, happiness) en op woorden die alleen lijken op een voorvoegsel (uncle).",
+      "begrippen": [
+       {
+        "t": "Voorvoegsel",
+        "d": "Een woorddeel vooraan dat de betekenis verandert, zoals un- of re-."
+       },
+       {
+        "t": "Achtervoegsel",
+        "d": "Een woorddeel achteraan dat vaak de woordsoort verandert, zoals -ness of -ly."
+       },
+       {
+        "t": "Stam",
+        "d": "Het kernwoord waaraan voor- en achtervoegsels worden vastgemaakt."
+       },
+       {
+        "t": "Woordfamilie",
+        "d": "Een groep woorden met dezelfde stam, zoals create, creation en creative."
+       },
+       {
+        "t": "Ontkenning",
+        "d": "Een voorvoegsel dat het tegendeel maakt, zoals un-, in-, im-, il- en dis-."
+       },
+       {
+        "t": "Zelfstandig naamwoord",
+        "d": "Een woord dat een zaak, persoon of eigenschap noemt, zoals happiness."
+       },
+       {
+        "t": "Bijvoeglijk naamwoord",
+        "d": "Een woord dat een zelfstandig naamwoord beschrijft, zoals happy."
+       },
+       {
+        "t": "Bijwoord",
+        "d": "Een woord dat beschrijft hoe iets gebeurt, vaak met -ly, zoals clearly."
+       },
+       {
+        "t": "Woordsoort",
+        "d": "De categorie van een woord: werkwoord, zelfstandig naamwoord, bijvoeglijk naamwoord of bijwoord."
+       },
+       {
+        "t": "Vol van en zonder",
+        "d": "-ful betekent vol van en -less betekent zonder: hopeful en hopeless."
+       },
+       {
+        "t": "Spellingsverandering",
+        "d": "Een aanpassing van de stam bij het toevoegen van een achtervoegsel, zoals y wordt i."
+       },
+       {
+        "t": "Nepvoorvoegsel",
+        "d": "Een woordbegin dat lijkt op een voorvoegsel maar het niet is, zoals un- in uncle."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which prefix makes the opposite of \"possible\"?",
+        "o": [
+         "un-",
+         "im-",
+         "dis-",
+         "mis-"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Voor p en m gebruik je im-, zoals in impossible en immature.",
+        "uo": [
+         "Koos je \"un-\"? Dan denk je dat un- bij alle woorden past. Bij possible gebruik je dat niet, het tegendeel is impossible.",
+         "Klopt: voor een p schrijf je im-, dus impossible is het tegendeel van possible.",
+         "Koos je \"dis-\"? Dan denk je dat dis- het tegendeel van elk woord maakt. Dat hoort bij woorden als agree, bij possible hoort im-.",
+         "Koos je \"mis-\"? Dan denk je dat mis- iets ontkent. Het betekent verkeerd, zoals in misread, en maakt geen tegendeel van possible."
+        ],
+        "uh": "Voor p: im-."
+       },
+       {
+        "v": "What does the prefix in \"disagree\" show?",
+        "o": [
+         "doing it again",
+         "before something happens",
+         "too much of something",
+         "the opposite of agree"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Dis- draait het woord om, zoals in dislike en disappear.",
+        "uo": [
+         "Koos je \"doing it again\"? Dan denk je dat het voorvoegsel opnieuw betekent. Dat is re-, het voorvoegsel dis- geeft het tegendeel.",
+         "Koos je \"before something happens\"? Dan denk je dat het om voorafgaand gaat. Dat is pre-, dis- geeft een ontkenning.",
+         "Koos je \"too much of something\"? Dan denk je dat het om te veel gaat. Dat is over-, dis- betekent niet of tegendeel.",
+         "Klopt: dis- draait de betekenis om: disagree is het tegendeel van agree."
+        ],
+        "uh": "Tegendeel."
+       },
+       {
+        "v": "What does \"rebuild\" mean?",
+        "o": [
+         "build again",
+         "build before",
+         "build badly",
+         "build too much"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Re- betekent opnieuw: rewrite, redo, rebuild.",
+        "uo": [
+         "Klopt: het voorvoegsel re- betekent opnieuw, dus rebuild is opnieuw bouwen.",
+         "Koos je \"build before\"? Dan denk je dat re- vooraf betekent. Dat is pre-, re- betekent opnieuw.",
+         "Koos je \"build badly\"? Dan denk je dat het om slecht bouwen gaat. Dat is mis-, re- verandert niets aan de kwaliteit.",
+         "Koos je \"build too much\"? Dan denk je dat re- te veel betekent. Dat is over-, re- betekent opnieuw."
+        ],
+        "uh": "Opnieuw."
+       },
+       {
+        "v": "Which word is a noun?",
+        "o": [
+         "unhappily",
+         "unhappiest",
+         "happiness",
+         "happier"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "-ness maakt een zelfstandig naamwoord, -ly een bijwoord.",
+        "uo": [
+         "Koos je \"unhappily\"? Dan denk je dat -ly een zelfstandig naamwoord maakt. Het maakt een bijwoord, unhappily beschrijft hoe iets gebeurt.",
+         "Koos je \"unhappiest\"? Dan denk je dat de overtreffende trap een zaak noemt. Het is een bijvoeglijk naamwoord, het beschrijft een persoon of ding.",
+         "Klopt: het achtervoegsel -ness maakt van het bijvoeglijk naamwoord happy het zelfstandig naamwoord happiness.",
+         "Koos je \"happier\"? Dan denk je dat de vergrotende trap een zelfstandig naamwoord is. Het vergelijkt twee dingen, het is een bijvoeglijk naamwoord."
+        ],
+        "uh": "Het woord eindigt op -ness: noun."
+       },
+       {
+        "v": "What does the suffix -less mean in \"hopeless\"?",
+        "o": [
+         "full of",
+         "able to",
+         "without",
+         "once more"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "-less betekent zonder: hopeless, careless, useless.",
+        "uo": [
+         "Koos je \"full of\"? Dan denk je dat -less hetzelfde is als -ful. Het is het tegendeel, -ful betekent vol van.",
+         "Koos je \"able to\"? Dan denk je dat het om mogelijkheid gaat. Dat is -able, -less betekent zonder.",
+         "Klopt: -less betekent zonder, dus hopeless betekent zonder hoop.",
+         "Koos je \"once more\"? Dan denk je dat het opnieuw betekent. Dat is het voorvoegsel re-, -less is een achtervoegsel met de betekenis zonder."
+        ],
+        "uh": "Zonder: het tegendeel van -ful."
+       },
+       {
+        "v": "Which suffix can make a word that means \"a person who does something\"?",
+        "o": [
+         "-er",
+         "-ness",
+         "-ful",
+         "-less"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "-er en -or maken personen: teacher, actor.",
+        "uo": [
+         "Klopt: -er maakt van teach het woord teacher, de persoon die lesgeeft.",
+         "Koos je \"-ness\"? Dan denk je dat -ness een persoon maakt. Het maakt een eigenschap, zoals in kindness.",
+         "Koos je \"-ful\"? Dan denk je dat -ful een persoon aangeeft. Het is een achtervoegsel voor bijvoeglijke naamwoorden, het betekent vol van.",
+         "Koos je \"-less\"? Dan denk je dat -less een persoon maakt. Het betekent zonder, het noemt geen persoon."
+        ],
+        "uh": "Persoon: -er."
+       },
+       {
+        "v": "Which word does NOT begin with a prefix?",
+        "o": [
+         "unfair",
+         "unkind",
+         "unsafe",
+         "uncle"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 5,
+        "u": "Niet elk woord dat met un- begint heeft een voorvoegsel.",
+        "uo": [
+         "Koos je \"unfair\"? Dan denk je dat dit woord geen voorvoegsel heeft. Fair betekent eerlijk en un- maakt er oneerlijk van, dus un- is hier een echt voorvoegsel.",
+         "Koos je \"unkind\"? Dan denk je dat un- hier gewoon bij het woord hoort. Kind staat los en betekent vriendelijk, un- ontkent het en is dus een voorvoegsel.",
+         "Koos je \"unsafe\"? Dan denk je dat deze woorden niet te splitsen zijn. Safe betekent veilig, dus onveilig is un- plus safe, een echt voorvoegsel.",
+         "Klopt: bij uncle is \"un\" geen voorvoegsel, want \"cle\" is geen woord dat je kunt verbinden."
+        ],
+        "uh": "Haal un- eraf: blijft er een woord over?"
+       },
+       {
+        "v": "Which word in the text means \"cannot be trusted\"?",
+        "o": [
+         "disorganised",
+         "unreliable",
+         "inconsistent",
+         "unacceptable"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Reliable plus un- betekent niet betrouwbaar.",
+        "uo": [
+         "Koos je \"disorganised\"? Dan denk je dat dis- hier een gebrek aan vertrouwen toont. Het gaat om slecht georganiseerd zijn, niet om betrouwbaarheid.",
+         "Klopt: reliable betekent betrouwbaar, en het voorvoegsel un- maakt er niet betrouwbaar van.",
+         "Koos je \"inconsistent\"? Dan denk je dat dit over vertrouwen gaat. Het betekent veranderlijk, niet betrouwbaar.",
+         "Koos je \"unacceptable\"? Dan denk je dat dit woord over vertrouwen gaat. Het betekent niet te accepteren, het gaat over gedrag, niet over betrouwbaarheid."
+        ],
+        "uh": "Un- plus reliable.",
+        "ctx": "The new manager was widely disliked because she was unreliable and often disorganised. Her decisions were inconsistent, and several employees found her behaviour unacceptable."
+       },
+       {
+        "v": "What does \"inconsistent\" mean in the text?",
+        "o": [
+         "always the same",
+         "hidden inside a group",
+         "easy to understand",
+         "not staying the same from one time to the next"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 0,
+        "u": "In- kan niet betekenen, zoals in inconsistent en incorrect.",
+        "uo": [
+         "Koos je \"always the same\"? Dan denk je dat consistent en inconsistent hetzelfde betekenen. Het voorvoegsel in- keert de betekenis om, dus het is wisselend.",
+         "Koos je \"hidden inside a group\"? Dan denk je dat in- binnenin betekent. Hier is het een ontkenning, de beslissingen waren wisselend.",
+         "Koos je \"easy to understand\"? Dan denk je dat het over begrijpelijkheid gaat. De zin zegt iets over de volgorde van beslissingen, niet over duidelijkheid.",
+         "Klopt: in- betekent hier niet en consistent betekent gelijkblijvend, dus inconsistent is wisselend."
+        ],
+        "uh": "In- = niet.",
+        "ctx": "The new manager was widely disliked because she was unreliable and often disorganised. Her decisions were inconsistent, and several employees found her behaviour unacceptable."
+       },
+       {
+        "v": "What does \"misspelled\" mean?",
+        "o": [
+         "spelled again",
+         "spelled wrongly",
+         "spelled before",
+         "spelled too slowly"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Mis- betekent verkeerd: misread, mislead, misunderstand.",
+        "uo": [
+         "Koos je \"spelled again\"? Dan denk je dat mis- opnieuw betekent. Dat is re-, mis- betekent verkeerd.",
+         "Klopt: het voorvoegsel mis- betekent verkeerd, dus misspelled is verkeerd gespeld.",
+         "Koos je \"spelled before\"? Dan denk je dat het om eerder gaat. Dat is pre-, mis- betekent verkeerd.",
+         "Koos je \"spelled too slowly\"? Dan denk je dat het om te veel of te weinig gaat. Dat is over- of under-, mis- betekent verkeerd."
+        ],
+        "uh": "Mis- = verkeerd.",
+        "ctx": "The teacher told Ben that he had misspelled the name of the city three times in his essay."
+       },
+       {
+        "v": "Which prefix fits the meaning \"paid too little\"?",
+        "o": [
+         "over-",
+         "re-",
+         "under-",
+         "pre-"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Under- is te weinig, over- is te veel.",
+        "uo": [
+         "Koos je \"over-\"? Dan denk je dat over- te weinig betekent. Het betekent te veel, overpaid is te veel betaald.",
+         "Koos je \"re-\"? Dan denk je dat re- hier past. Het betekent opnieuw, repaid betekent teruggegeven.",
+         "Klopt: under- betekent te weinig, dus underpaid is te weinig betaald.",
+         "Koos je \"pre-\"? Dan denk je dat pre- te weinig betekent. Het betekent vooraf, prepaid is vooraf betaald."
+        ],
+        "uh": "Te weinig: under-.",
+        "ctx": "He worked long hours but received less money than his colleagues, so he asked for a raise. He felt he was ______paid."
+       },
+       {
+        "v": "Which form of \"kind\" fits the gap?",
+        "o": [
+         "kindness",
+         "kindly",
+         "kinder",
+         "kindest"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Na \"her\" of \"the\" past vaak een zelfstandig naamwoord.",
+        "uo": [
+         "Klopt: na \"her\" hoort een zelfstandig naamwoord, en kindness is het zelfstandig naamwoord bij kind.",
+         "Koos je \"kindly\"? Dan denk je dat kindly een eigenschap noemt. Kindly is een bijwoord of bijvoeglijk woord, na \"her\" is een zelfstandig naamwoord nodig.",
+         "Koos je \"kinder\"? Dan denk je dat een vergrotende trap past. Kinder vergelijkt twee personen, maar in de zin wordt niets vergeleken.",
+         "Koos je \"kindest\"? Dan denk je dat de overtreffende trap past. Kindest toont de hoogste graad, dat staat er niet: er is een eigenschap nodig."
+        ],
+        "uh": "Noun: -ness.",
+        "ctx": "Her ______ made every guest feel welcome from the moment they arrived."
+       },
+       {
+        "v": "Which form of \"clear\" fits the gap?",
+        "o": [
+         "clearly",
+         "clear",
+         "clearness",
+         "clearer"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Een werkwoord beschrijf je met een bijwoord op -ly.",
+        "uo": [
+         "Klopt: het gat beschrijft hoe ze antwoordde, dus een bijwoord op -ly is nodig.",
+         "Koos je \"clear\"? Dan denk je dat het bijvoeglijk naamwoord past. Het woord beschrijft een werkwoord, dus je hebt een bijwoord nodig.",
+         "Koos je \"clearness\"? Dan denk je dat een zelfstandig naamwoord past. Na \"answered\" beschrijft het hoe, dus een bijwoord.",
+         "Koos je \"clearer\"? Dan denk je dat de vergrotende trap past. Er wordt niets vergeleken, er is een bijwoord nodig."
+        ],
+        "uh": "Hoe antwoordde ze?",
+        "ctx": "She answered the difficult question ______ and without any hesitation."
+       },
+       {
+        "v": "Which form of \"friend\" fits the gap?",
+        "o": [
+         "friendship",
+         "friendless",
+         "friendly",
+         "friendliness"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Voor een zelfstandig naamwoord past een bijvoeglijk naamwoord.",
+        "uo": [
+         "Koos je \"friendship\"? Dan denk je dat de band tussen vrienden bedoeld is. Friendship is een zelfstandig naamwoord, voor \"people\" is een beschrijvend woord nodig.",
+         "Koos je \"friendless\"? Dan denk je dat het om mensen zonder vrienden gaat. Dat past niet bij werken met klanten, de bedoeling is vriendelijk.",
+         "Klopt: voor \"people\" past een bijvoeglijk naamwoord, en friendly is dat bij friend.",
+         "Koos je \"friendliness\"? Dan denk je dat de eigenschap vriendelijkheid past. Je zou \"people with friendliness\" moeten zeggen, de zin vraagt om een woord dat de mensen zelf beschrijft."
+        ],
+        "uh": "Adjective: -ly.",
+        "ctx": "The company is looking for ______ people to work with customers at the new shop."
+       },
+       {
+        "v": "Which word fits the gap and means \"impossible to forget\"?",
+        "o": [
+         "forgotten",
+         "unforgettable",
+         "forgetful",
+         "forgettable"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Un- plus -able: niet te vergeten.",
+        "uo": [
+         "Koos je \"forgotten\"? Dan denk je dat het voltooid deelwoord vergeten past. De zin zegt dat ze elk detail onthield, de dag werd dus juist niet vergeten.",
+         "Klopt: un- plus forget plus -able betekent niet te vergeten, dus onvergetelijk.",
+         "Koos je \"forgetful\"? Dan denk je dat het goed past. Forgetful beschrijft iemand die vaak vergeet, geen dag die je niet vergeet.",
+         "Koos je \"forgettable\"? Dan denk je dat de goede vorm met -able bedoeld is. Het voorvoegsel un- ontbreekt, forgettable betekent makkelijk te vergeten."
+        ],
+        "uh": "Un- en -able.",
+        "ctx": "Her wedding day was ______, and she remembered every detail for the rest of her life."
+       },
+       {
+        "v": "Which pair shows a spelling change when the suffix is added?",
+        "o": [
+         "kind and kindness",
+         "care and careless",
+         "child and childhood",
+         "happy and happiness"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Bij -ness volgt y→i: happy, happiness, lazy, laziness.",
+        "uo": [
+         "Koos je \"kind and kindness\"? Dan denk je dat er iets verandert. Kind blijft kind, er komt alleen -ness achter.",
+         "Koos je \"care and careless\"? Dan denk je dat de e wegvalt. Dat gebeurt hier niet, care blijft care in careless.",
+         "Koos je \"child and childhood\"? Dan denk je dat het woord verandert. Child blijft child, er komt alleen -hood achter.",
+         "Klopt: bij happiness verandert de y in een i voordat -ness wordt toegevoegd."
+        ],
+        "uh": "y wordt i."
+       },
+       {
+        "v": "What would the critics fear if readers \"misinterpret\" difficult texts?",
+        "o": [
+         "that readers would translate the texts",
+         "that readers understand the texts wrongly",
+         "that readers would not buy the books",
+         "that the texts would be copied by hand"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Mis- betekent verkeerd: misinterpret is verkeerd uitleggen of begrijpen.",
+        "uo": [
+         "Koos je \"that readers would translate the texts\"? Dan denk je dat interpret vertalen is. Het gaat om begrip, niet om taal, en mis- maakt er verkeerd van.",
+         "Klopt: mis- betekent verkeerd en interpret betekent uitleggen of begrijpen, dus de angst was verkeerd begrip.",
+         "Koos je \"that readers would not buy the books\"? Dan denk je dat het om kopen gaat. De tekst gaat over lezers, mis- betekent verkeerd, niet weinig kopen.",
+         "Koos je \"that the texts would be copied by hand\"? Dan denk je dat het om de productie gaat. Dat is de situatie voor de drukpers, de angst van de critici ging over lezers."
+        ],
+        "uh": "Mis- = verkeerd.",
+        "ctx": "Many people regard the invention of the printing press as one of the most important developments in history. Before its arrival, books were copied by hand, which was slow and expensive. The press made books cheaper and more widely available, so literacy increased. Critics at the time were fearful that ordinary readers would misinterpret difficult texts, but the effect on education was undeniable. The process of printing also required cooperation between many skilled workers."
+       },
+       {
+        "v": "What does \"undeniable\" mean in the text?",
+        "o": [
+         "impossible to say that it is not true",
+         "impossible to see",
+         "denied by many critics",
+         "not important at all"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Un- en -able samen: niet te ontkennen.",
+        "uo": [
+         "Klopt: un- plus deny plus -able betekent niet te ontkennen, en dat past bij het \"but\" na de vrees van critici.",
+         "Koos je \"impossible to see\"? Dan denk je dat het om zichtbaarheid gaat. Dat staat niet in de zin, het gaat om waarheid.",
+         "Koos je \"denied by many critics\"? Dan denk je dat de critici het ontkenden. Het \"but\" laat juist zien dat het effect wel waar was, ondanks hun vrees.",
+         "Koos je \"not important at all\"? Dan denk je dat het om belang gaat. De tekst zegt dat het effect groot was, niet onbelangrijk."
+        ],
+        "uh": "Deny, un- en -able.",
+        "ctx": "Many people regard the invention of the printing press as one of the most important developments in history. Before its arrival, books were copied by hand, which was slow and expensive. The press made books cheaper and more widely available, so literacy increased. Critics at the time were fearful that ordinary readers would misinterpret difficult texts, but the effect on education was undeniable. The process of printing also required cooperation between many skilled workers."
+       },
+       {
+        "v": "Critics were \"fearful\". What does -ful add and what does the word mean?",
+        "o": [
+         "-ful means \"without\", so fearful means unafraid",
+         "-ful means \"again\", so fearful means afraid again",
+         "-ful means \"able to\", so fearful means able to be feared",
+         "-ful means \"full of\", so fearful means afraid"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "-ful is vol van, -less is zonder.",
+        "uo": [
+         "Koos je \"-ful means without, so fearful means unafraid\"? Dan denk je dat -ful zonder betekent. Dat is -less, daarom is fearful niet onbevreesd.",
+         "Koos je \"-ful means again, so fearful means afraid again\"? Dan denk je dat -ful opnieuw betekent. Dat is re-, -ful geeft vol van.",
+         "Koos je \"-ful means able to, so fearful means able to be...\"? Dan denk je dat -ful hetzelfde is als -able. Het betekent vol van, dus bang.",
+         "Klopt: -ful betekent vol van, dus fearful is vol angst, bang."
+        ],
+        "uh": "Vol van: -ful.",
+        "ctx": "Many people regard the invention of the printing press as one of the most important developments in history. Before its arrival, books were copied by hand, which was slow and expensive. The press made books cheaper and more widely available, so literacy increased. Critics at the time were fearful that ordinary readers would misinterpret difficult texts, but the effect on education was undeniable. The process of printing also required cooperation between many skilled workers."
+       },
+       {
+        "v": "What does \"impassable\" mean in the text?",
+        "o": [
+         "easy to cross",
+         "passed by many hikers",
+         "not possible to walk along",
+         "closed by the authorities"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 3,
+        "u": "Im- plus pass plus -able: niet te passeren.",
+        "uo": [
+         "Koos je \"easy to cross\"? Dan denk je dat het het tegendeel is. Het voorvoegsel im- ontkent, het pad is juist niet begaanbaar.",
+         "Koos je \"passed by many hikers\"? Dan denk je dat het om vele wandelaars gaat. Het woord gaat over het pad zelf, niet over mensen.",
+         "Klopt: im- betekent niet, pass betekent passeren, -able betekent mogelijk, dus niet te passeren.",
+         "Koos je \"closed by the authorities\"? Dan denk je dat het om een verbod gaat. De tekst noemt de storm, geen autoriteiten."
+        ],
+        "uh": "Im- = niet.",
+        "ctx": "Jess had always been an adventurous hiker, but the storm made the mountain path almost impassable. Her equipment was lightweight, yet it was useless against the wind, and her map was unreadable in the rain. She felt hopeless until she remembered an old shelter. With renewed energy she walked on, and the kindness of the keeper there made her stay unforgettable."
+       },
+       {
+        "v": "What does \"lightweight\" tell us about her equipment?",
+        "o": [
+         "it gives off little light",
+         "it is of poor quality",
+         "it weighs very little",
+         "it can only be used once"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Lightweight: licht van gewicht.",
+        "uo": [
+         "Koos je \"it gives off little light\"? Dan denk je dat light hier lamplicht is. Het gaat om gewicht, de tekst zegt niets over lamplicht.",
+         "Koos je \"it is of poor quality\"? Dan denk je dat licht ook slecht betekent. Het woord zegt niets over kwaliteit, alleen over gewicht.",
+         "Klopt: light betekent licht en weight is gewicht, dus lightweight is van laag gewicht.",
+         "Koos je \"it can only be used once\"? Dan denk je dat het om eenmalig gebruik gaat. Dat staat niet in de tekst, het woord gaat over gewicht."
+        ],
+        "uh": "Gewicht.",
+        "ctx": "Jess had always been an adventurous hiker, but the storm made the mountain path almost impassable. Her equipment was lightweight, yet it was useless against the wind, and her map was unreadable in the rain. She felt hopeless until she remembered an old shelter. With renewed energy she walked on, and the kindness of the keeper there made her stay unforgettable."
+       },
+       {
+        "v": "Which sentence has the same meaning as \"her map was unreadable\"?",
+        "o": [
+         "The map was read twice.",
+         "She did not want to read the map.",
+         "The map was easy to read.",
+         "The map could not be read."
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Un- en -able: niet te lezen.",
+        "uo": [
+         "Koos je \"The map was read twice.\"? Dan denk je dat un- opnieuw betekent. Dat is re-, un- is een ontkenning.",
+         "Koos je \"She did not want to read the map.\"? Dan denk je dat het om willen gaat. Unreadable zegt dat het niet kon, niet dat ze niet wilde.",
+         "Koos je \"The map was easy to read.\"? Dan denk je dat het het tegendeel is. Het voorvoegsel un- ontkent, het was niet te lezen.",
+         "Klopt: un- plus read plus -able betekent niet te lezen, dus de kaart kon niet gelezen worden."
+        ],
+        "uh": "Un- en -able.",
+        "ctx": "Jess had always been an adventurous hiker, but the storm made the mountain path almost impassable. Her equipment was lightweight, yet it was useless against the wind, and her map was unreadable in the rain. She felt hopeless until she remembered an old shelter. With renewed energy she walked on, and the kindness of the keeper there made her stay unforgettable."
+       },
+       {
+        "v": "What does \"renewed\" mean in \"renewed energy\"?",
+        "o": [
+         "made new again, because re- means \"again\"",
+         "never used, because re- means \"not\"",
+         "very strong, because re- means \"too much\"",
+         "very old, because re- means \"back in time\""
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Re- betekent opnieuw: renewed is opnieuw nieuw gemaakt.",
+        "uo": [
+         "Klopt: re- betekent opnieuw, dus renewed energy is energie die opnieuw nieuw is.",
+         "Koos je \"never used, because re- means not\"? Dan denk je dat re- niet betekent. Dat is un-, re- betekent opnieuw.",
+         "Koos je \"very strong, because re- means too much\"? Dan denk je dat re- te veel betekent. Dat is over-, re- betekent opnieuw.",
+         "Koos je \"very old, because re- means back in time\"? Dan denk je dat re- het verleden is. Het betekent opnieuw, renewed is weer nieuw."
+        ],
+        "uh": "Re- = opnieuw.",
+        "ctx": "Jess had always been an adventurous hiker, but the storm made the mountain path almost impassable. Her equipment was lightweight, yet it was useless against the wind, and her map was unreadable in the rain. She felt hopeless until she remembered an old shelter. With renewed energy she walked on, and the kindness of the keeper there made her stay unforgettable."
+       },
+       {
+        "v": "Which two words from the text both end in a suffix that means \"without\"?",
+        "o": [
+         "lightweight and adventurous",
+         "useless and hopeless",
+         "unreadable and unforgettable",
+         "kindness and renewed"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 5,
+        "u": "-less betekent zonder: useless, hopeless.",
+        "uo": [
+         "Koos je \"lightweight and adventurous\"? Dan denk je dat deze woorden een achtervoegsel met zonder hebben. Ze hebben -weight en -ous, dat zijn andere vormen.",
+         "Klopt: -less betekent zonder, dus useless en hopeless eindigen allebei op zonder.",
+         "Koos je \"unreadable and unforgettable\"? Dan denk je dat -able zonder betekent. Het betekent mogelijk, het voorvoegsel un- ontkent.",
+         "Koos je \"kindness and renewed\"? Dan denk je dat -ness en -ed zonder betekenen. Het zijn andere vormen, -ness maakt een zelfstandig naamwoord."
+        ],
+        "uh": "Zonder: -less.",
+        "ctx": "Jess had always been an adventurous hiker, but the storm made the mountain path almost impassable. Her equipment was lightweight, yet it was useless against the wind, and her map was unreadable in the rain. She felt hopeless until she remembered an old shelter. With renewed energy she walked on, and the kindness of the keeper there made her stay unforgettable."
+       },
+       {
+        "v": "Which form of \"attend\" fits the gap?",
+        "o": [
+         "attendant",
+         "attentive",
+         "attending",
+         "attendance"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Attendance is het aantal aanwezigen.",
+        "uo": [
+         "Koos je \"attendant\"? Dan denk je dat attendant het zelfstandig naamwoord is. Dat is een persoon, bijvoorbeeld een medewerker, hier gaat het om het aantal aanwezigen.",
+         "Koos je \"attentive\"? Dan denk je dat het bijvoeglijk naamwoord past. Na \"the\" hoort een zelfstandig naamwoord, attentive betekent oplettend.",
+         "Koos je \"attending\"? Dan denk je dat de -ing-vorm past. Na \"the\" hoort een zelfstandig naamwoord, attendance noemt het aantal.",
+         "Klopt: na \"the\" hoort een zelfstandig naamwoord, en attendance is het aantal aanwezigen."
+        ],
+        "uh": "Noun: attendance.",
+        "ctx": "The organisers had hoped for a large audience. In the end, the ______ at the concert was disappointing: only forty people came."
+       },
+       {
+        "v": "Which form of \"honest\" fits the gap?",
+        "o": [
+         "honesty",
+         "honestly",
+         "honourable",
+         "dishonest"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Honesty is de eigenschap eerlijkheid.",
+        "uo": [
+         "Klopt: na \"that\" met \"was\" volgt een zelfstandig naamwoord, en honesty is de eigenschap eerlijkheid.",
+         "Koos je \"honestly\"? Dan denk je dat het bijwoord past. Honestly beschrijft een werkwoord, hier is een zelfstandig naamwoord nodig.",
+         "Koos je \"honourable\"? Dan denk je dat dit woord hetzelfde betekent. Het gaat om eervol, niet om de eigenschap eerlijk zijn.",
+         "Koos je \"dishonest\"? Dan denk je dat het tegendeel past. Het is een bijvoeglijk naamwoord, hier is de eigenschap eerlijkheid nodig."
+        ],
+        "uh": "Noun: honesty.",
+        "ctx": "Sam was always honest with his friends. He felt that ______ was the basis of any good friendship, so he never told lies."
+       },
+       {
+        "v": "Which form of \"simple\" fits the gap?",
+        "o": [
+         "simply",
+         "simplicity",
+         "simplify",
+         "simplest"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Simple wordt simplicity (de -ity eindigt het zelfstandig naamwoord).",
+        "uo": [
+         "Koos je \"simply\"? Dan denk je dat het bijwoord past. Simply beschrijft een werkwoord, hier is een zelfstandig naamwoord nodig.",
+         "Klopt: na \"its\" hoort een zelfstandig naamwoord, en simplicity is het zelfstandig naamwoord bij simple.",
+         "Koos je \"simplify\"? Dan denk je dat het werkwoord past. Na \"its\" hoort een zelfstandig naamwoord, simplify betekent vereenvoudigen.",
+         "Koos je \"simplest\"? Dan denk je dat de overtreffende trap past. Het is een bijvoeglijk naamwoord, hier is een zelfstandig naamwoord nodig."
+        ],
+        "uh": "Noun: simplicity.",
+        "ctx": "The new phone is cheap and simple. Its ______ makes it popular with older people, who do not like complicated menus."
+       },
+       {
+        "v": "Which prefix is used to make \"logical\" the opposite?",
+        "o": [
+         "un- (unlogical)",
+         "im- (imlogical)",
+         "il- (illogical)",
+         "dis- (dislogical)"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 0,
+        "u": "Voor l gebruik je il-: illegal, illogical.",
+        "uo": [
+         "Koos je \"un- (unlogical)\"? Dan denk je dat un- bij alle bijvoeglijke naamwoorden past. Dat geldt voor unfair, maar logical krijgt het tegendeel met il-.",
+         "Koos je \"im- (imlogical)\"? Dan denk je dat im- hier past. Het wordt gebruikt voor een p of m, zoals impossible, niet voor een l.",
+         "Klopt: voor een l gebruik je il-, dus illogical is het tegendeel van logical.",
+         "Koos je \"dis- (dislogical)\"? Dan denk je dat dis- het tegendeel maakt. Het hoort bij woorden als disagree, bij logical hoort il-."
+        ],
+        "uh": "Voor l: il-.",
+        "ctx": "Anna thought the rule was unfair. Marc thought it was impossible to follow, and their teacher found it illogical. Nobody was entirely happy."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "The festival was a great success. The organisers were unable to predict the large attendance, and many visitors found the queues unacceptable. Some people even felt that the long waiting time was unfair.",
+        "v": "Explain what \"unable\" and \"unacceptable\" mean by naming prefix, stam and suffix of each word.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Unable: un- (niet) plus able (in staat), dus niet in staat (1p). Unacceptable: un- (niet) plus accept plus -able (mogelijk), dus niet te accepteren (1p). Beide woorden gebruiken het voorvoegsel un- als ontkenning (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Last year the company organised a creative competition for its employees. The winning team showed great imagination, and the manager praised their cooperation. The creation of the new logo took only two weeks.",
+        "v": "Name two words from the same family as \"create\" in the text and give their word class. What does the suffix do?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Creative: bijvoeglijk naamwoord (1p). Creation: zelfstandig naamwoord (1p). De achtervoegsels -ive en -ion veranderen de woordsoort van de stam create, een werkwoord (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "After the lesson Fatima rewrote her essay. She realised that she had misspelled several names and misunderstood the question. Her teacher was pleased with the improvement.",
+        "v": "What do the prefixes in \"rewrote\" and \"misspelled\" mean? Explain with the meaning of each word.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Re- betekent opnieuw, dus rewrote betekent opnieuw schrijven (1p). Mis- betekent verkeerd, dus misspelled betekent verkeerd gespeld (1p). Beide voorvoegsels veranderen de betekenis van de stam (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "The hikers were hopeless at reading the map, and their guide was careless with the equipment. Fortunately a friendly farmer helped them, and they stayed safe.",
+        "v": "Which two words contain a suffix that means \"without\"? Explain each word.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hopeless betekent zonder hoop of niet goed in iets (1p) en careless betekent zonder zorg (1p). Het achtervoegsel is bij beide -less, dat betekent zonder (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "She was a very honest person. Her honesty made her popular, and nobody ever doubted her kindness. She spoke clearly and always listened carefully.",
+        "v": "Name two nouns and one adverb in the text that are formed with a suffix, and name each suffix.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Zelfstandige naamwoorden: honesty (-y) en kindness (-ness) (1p per woord met juist achtervoegsel, max. 2p). Bijwoord: clearly of carefully, met achtervoegsel -ly (1p)."
+       }
+      ]
      }
     ]
    },

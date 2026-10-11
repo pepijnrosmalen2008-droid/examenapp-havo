@@ -2226,6 +2226,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A2",
+      "lo": "en.A.2",
+      "gs": 2,
+      "naam": "Woorden bouwen met voor- en achtervoegsels",
+      "beschrijving": "Je herkent voorvoegsels en achtervoegsels in Engelse woorden, leidt daaruit de betekenis af en kiest de juiste woordsoort in een zin.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Voorvoegsels die iets ontkennen (un-, in-, im-, il-, dis-)",
+       "Andere voorvoegsels (re-, mis-, over-, under-, pre-)",
+       "Achtervoegsels en woordsoort (-ness, -ly, -tion)",
+       "Betekenis van achtervoegsels (-less, -ful, -able, -er)",
+       "Het juiste woord in de zin kiezen",
+       "Spelling en valkuilen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
