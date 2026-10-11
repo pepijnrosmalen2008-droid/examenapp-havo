@@ -2335,6 +2335,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A7",
+      "lo": "en.A.7",
+      "gs": 2,
+      "naam": "Passief en actief",
+      "beschrijving": "Je vormt het passief in verschillende tijden, zet actieve zinnen om in passieve zinnen en andersom, en weet wanneer het passief past en welke fouten je moet vermijden.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Het passief vormen in de eenvoudige tijden",
+       "Het passief in andere tijden en met modale werkwoorden",
+       "Van actief naar passief",
+       "Wanneer je het passief gebruikt",
+       "Fouten en bijzondere gevallen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

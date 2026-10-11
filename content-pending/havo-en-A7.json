@@ -1,0 +1,672 @@
+{
+ "id": "A7",
+ "lo": "en.A.7",
+ "gs": 2,
+ "naam": "Passief en actief",
+ "beschrijving": "Je vormt het passief in verschillende tijden, zet actieve zinnen om in passieve zinnen en andersom, en weet wanneer het passief past en welke fouten je moet vermijden.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Het passief vormen in de eenvoudige tijden",
+  "Het passief in andere tijden en met modale werkwoorden",
+  "Van actief naar passief",
+  "Wanneer je het passief gebruikt",
+  "Fouten en bijzondere gevallen"
+ ],
+ "sam": "Een passieve zin vorm je met een vorm van be en het voltooid deelwoord: the window was broken. Het object van de actieve zin wordt het onderwerp, het onderwerp wordt de dader met by (die je vaak weglaat). De tijd blijft hetzelfde: is built, was built, has been built, will be built, can be built, is being built. Je gebruikt het passief als de dader onbekend of onbelangrijk is of als de handeling of het object voorop staat. Onovergankelijke werkwoorden (happen, arrive) hebben geen passief.",
+ "begrippen": [
+  {
+   "t": "Actief",
+   "d": "Een zin waarin het onderwerp de handeling uitvoert, zoals a ball broke the window."
+  },
+  {
+   "t": "Passief",
+   "d": "Een zin waarin het onderwerp de handeling ondergaat, zoals the window was broken."
+  },
+  {
+   "t": "Voltooid deelwoord",
+   "d": "De vorm die in het passief na be staat, zoals broken of built."
+  },
+  {
+   "t": "Dader",
+   "d": "Degene die de handeling uitvoert, in het passief na by."
+  },
+  {
+   "t": "Lijdend voorwerp",
+   "d": "Het deel waar de handeling op gericht is en dat in het passief onderwerp wordt."
+  },
+  {
+   "t": "Hulpwerkwoord be",
+   "d": "De vorm van be die samen met het voltooid deelwoord het passief maakt."
+  },
+  {
+   "t": "Present perfect passive",
+   "d": "Has of have been plus voltooid deelwoord: the letter has been sent."
+  },
+  {
+   "t": "Future passive",
+   "d": "Will be plus voltooid deelwoord: the road will be repaired."
+  },
+  {
+   "t": "Modaal passief",
+   "d": "Modaal werkwoord plus be plus voltooid deelwoord: it must be saved."
+  },
+  {
+   "t": "Continuous passive",
+   "d": "Is of are being plus voltooid deelwoord: the pipe is being installed."
+  },
+  {
+   "t": "Onovergankelijk werkwoord",
+   "d": "Een werkwoord zonder lijdend voorwerp, zoals happen, dat geen passief heeft."
+  },
+  {
+   "t": "By-dader",
+   "d": "Het deel met by dat de dader noemt: by the police."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which sentence is passive?",
+   "o": [
+    "A ball broke the window.",
+    "The window was broken by a ball.",
+    "The ball is breaking the window.",
+    "A ball will break the window."
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Passief: be plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"A ball broke the window.\"? Dan denk je dat een zin met een lijdend voorwerp passief is. Hier doet a ball de handeling en the window ondergaat hem, dus de zin is actief.",
+    "Klopt: was broken is be plus voltooid deelwoord, en by a ball noemt de dader.",
+    "Koos je \"The ball is breaking the window.\"? Dan denk je dat de -ing-vorm passief maakt. Dat is alleen de voortdurende vorm van een actieve zin, het onderwerp the ball handelt zelf.",
+    "Koos je \"A ball will break the window.\"? Dan denk je dat een hulpwerkwoord als will passief maakt. Will maakt de toekomst, zonder be en voltooid deelwoord is het actief."
+   ],
+   "uh": "Be plus participle."
+  },
+  {
+   "v": "What is the passive form of \"They build houses.\"?",
+   "o": [
+    "Houses build.",
+    "Houses are building.",
+    "Houses were built.",
+    "Houses are built."
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Passief behoudt de tijd van de actieve zin.",
+   "uo": [
+    "Koos je \"Houses build.\"? Dan denk je dat het object zonder hulpwerkwoord kan. Het werkwoord moet be plus voltooid deelwoord zijn, dus are built.",
+    "Koos je \"Houses are building.\"? Dan denk je dat de -ing-vorm passief is. Dat is de actieve voortdurende vorm, de passieve vorm is are built.",
+    "Koos je \"Houses were built.\"? Dan denk je dat de verleden tijd past. De actieve zin staat in de tegenwoordige tijd, dus de passieve ook.",
+    "Klopt: het object houses wordt onderwerp en het werkwoord wordt are built."
+   ],
+   "uh": "Present: are built."
+  },
+  {
+   "v": "Which helping verb is used to form the passive?",
+   "o": [
+    "be",
+    "have",
+    "do",
+    "can"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Passief: be plus voltooid deelwoord.",
+   "uo": [
+    "Klopt: het passief wordt gevormd met een vorm van be en het voltooid deelwoord.",
+    "Koos je \"have\"? Dan denk je dat have het passief vormt. Have vormt het present perfect actief, het passief gebruikt be.",
+    "Koos je \"do\"? Dan denk je dat do het passief vormt. Do gebruik je voor vragen en ontkenningen, het passief gebruikt be.",
+    "Koos je \"can\"? Dan denk je dat can het passief vormt. Can is een modaal werkwoord, het passief gebruikt be."
+   ],
+   "uh": "Be: hulpwerkwoord."
+  },
+  {
+   "v": "In \"The cake was eaten by the children\", what is \"the children\"?",
+   "o": [
+    "the subject of the sentence",
+    "the verb",
+    "the agent",
+    "the participle"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "De dader staat na by.",
+   "uo": [
+    "Koos je \"the subject of the sentence\"? Dan denk je dat de dader het onderwerp is. In het passief is het onderwerp the cake, de dader staat na by.",
+    "Koos je \"the verb\"? Dan denk je dat de dader het werkwoord is. Het werkwoord is was eaten, de dader is the children.",
+    "Klopt: de dader staat na by en doet de handeling in de passieve zin.",
+    "Koos je \"the participle\"? Dan denk je dat de dader het voltooid deelwoord is. Het voltooid deelwoord is eaten, de dader is een ander deel van de zin."
+   ],
+   "uh": "De dader: after by."
+  },
+  {
+   "v": "What becomes the subject in the passive sentence?",
+   "o": [
+    "the verb",
+    "the agent",
+    "the object of the active sentence",
+    "the adverb"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Object wordt onderwerp, onderwerp wordt by-dader.",
+   "uo": [
+    "Koos je \"the verb\"? Dan denk je dat het werkwoord de plaats van het onderwerp inneemt. Het werkwoord blijft werkwoord, alleen zijn vorm verandert.",
+    "Koos je \"the agent\"? Dan denk je dat de dader onderwerp blijft. Die verhuist naar het eind met by, dus het object neemt zijn plaats in.",
+    "Klopt: het lijdend voorwerp van de actieve zin wordt het onderwerp van de passieve zin.",
+    "Koos je \"the adverb\"? Dan denk je dat een bijwoord onderwerp kan worden. Een bijwoord geeft alleen extra informatie, het lijdend voorwerp wordt onderwerp."
+   ],
+   "uh": "Object wordt onderwerp."
+  },
+  {
+   "v": "Why is the passive used in \"My bike was stolen\"?",
+   "o": [
+    "we do not know who did it",
+    "the bike is the verb",
+    "the sentence is in the future",
+    "it is a question"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Passief als de dader onbekend of onbelangrijk is.",
+   "uo": [
+    "Klopt: de dader is onbekend of onbelangrijk, dus het passief is handig.",
+    "Koos je \"the bike is the verb\"? Dan denk je dat de fiets het werkwoord is. Het werkwoord is was stolen, de fiets is het onderwerp.",
+    "Koos je \"the sentence is in the future\"? Dan denk je dat het over de toekomst gaat. De zin staat in de verleden tijd, het passief heeft een andere reden.",
+    "Koos je \"it is a question\"? Dan denk je dat het een vraag is. Er is geen vraagteken, het is een mededeling."
+   ],
+   "uh": "Dader onbekend."
+  },
+  {
+   "v": "Which sentence is the passive of \"They will repair the road\"?",
+   "o": [
+    "The road is repaired.",
+    "The road will repair.",
+    "The road would be repaired.",
+    "The road will be repaired."
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Passief behoudt de tijd: will be plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"The road is repaired.\"? Dan denk je dat de tijd mag veranderen. De actieve zin staat in de toekomst, dus will be repaired.",
+    "Koos je \"The road will repair.\"? Dan denk je dat het voltooid deelwoord niet nodig is. Je mist be repaired, het passief heeft be nodig.",
+    "Koos je \"The road would be repaired.\"? Dan denk je dat would hetzelfde is als will. Would is een andere modaal, het moet will zijn.",
+    "Klopt: de toekomende tijd blijft will, gevolgd door be plus voltooid deelwoord."
+   ],
+   "uh": "Will be repaired."
+  },
+  {
+   "v": "Complete the sentence: \"English ___ in many countries.\"",
+   "o": [
+    "speaks",
+    "is spoken",
+    "is speaking",
+    "was spoken"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Present simple passive: is of are plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"speaks\"? Dan denk je dat het actief kan. Het onderwerp English doet niet de handeling, dus passief is spoken.",
+    "Klopt: de zin gaat over nu in het algemeen, dus is spoken in de tegenwoordige tijd.",
+    "Koos je \"is speaking\"? Dan denk je dat de voortdurende vorm past. Dat is actief, hier is het passief nodig.",
+    "Koos je \"was spoken\"? Dan denk je dat de verleden tijd past. De zin gaat over nu, dus is spoken."
+   ],
+   "uh": "Is spoken."
+  },
+  {
+   "v": "Complete the sentence: \"The painting ___ in 1889.\"",
+   "o": [
+    "is painted",
+    "has painted",
+    "painted",
+    "was painted"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Past simple passive: was of were plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"is painted\"? Dan denk je dat de tegenwoordige tijd past. 1889 ligt in het verleden, dus was painted.",
+    "Koos je \"has painted\"? Dan denk je dat het present perfect past. Dat is actief en de schilderij doet niets, dus was painted.",
+    "Koos je \"painted\"? Dan denk je dat de actieve verleden tijd past. De schilderij schildert niets, dus het moet passief.",
+    "Klopt: 1889 is een afgerond tijdstip en de schilderij is het onderwerp, dus was painted."
+   ],
+   "uh": "Was painted."
+  },
+  {
+   "v": "Complete the sentence: \"Your parcel ___ yet.\"",
+   "o": [
+    "has not delivered",
+    "has not been delivered",
+    "is not delivering",
+    "did not been delivered"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Present perfect passive: has of have been plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"has not delivered\"? Dan denk je dat het actief is. Het pakket bezorgt niets, dus been delivered.",
+    "Klopt: yet vraagt het present perfect, en het pakket is het onderwerp, dus has not been delivered.",
+    "Koos je \"is not delivering\"? Dan denk je dat de voortdurende vorm past. Het pakket bezorgt niets, dus passief.",
+    "Koos je \"did not been delivered\"? Dan denk je dat did past bij be. Na did gebruik je de stam, bij het present perfect heb je has been nodig."
+   ],
+   "uh": "Has been delivered."
+  },
+  {
+   "v": "Complete the sentence: \"The new stadium ___ by the mayor next year.\"",
+   "o": [
+    "will open",
+    "is opened",
+    "will be opened",
+    "will be opening"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Future passive: will be plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"will open\"? Dan denk je dat het actief past. By the mayor laat zien dat het stadion niet zelf opent, dus passief.",
+    "Koos je \"is opened\"? Dan denk je dat de tegenwoordige tijd past. Next year vraagt de toekomst, dus will be opened.",
+    "Klopt: by the mayor laat zien dat het passief is, en next year vraagt will be.",
+    "Koos je \"will be opening\"? Dan denk je dat de -ing-vorm past. Dat is de voortdurende vorm, het passief is will be opened."
+   ],
+   "uh": "Will be opened."
+  },
+  {
+   "v": "Complete the sentence: \"The rules ___ by everyone.\"",
+   "o": [
+    "must be followed",
+    "must follow",
+    "must be following",
+    "must been followed"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Modal passive: modaal plus be plus voltooid deelwoord.",
+   "uo": [
+    "Klopt: een modaal passief is modaal plus be plus voltooid deelwoord.",
+    "Koos je \"must follow\"? Dan denk je dat het actief is. De regels volgen niets, dus passief.",
+    "Koos je \"must be following\"? Dan denk je dat de -ing-vorm past. Dat is de voortdurende vorm, het passief is must be followed.",
+    "Koos je \"must been followed\"? Dan denk je dat been past. Na een modaal werkwoord gebruik je be, dus must be followed."
+   ],
+   "uh": "Must be followed."
+  },
+  {
+   "v": "Which is the passive of \"Shakespeare wrote Hamlet\"?",
+   "o": [
+    "Hamlet was written by Shakespeare.",
+    "Hamlet is written by Shakespeare.",
+    "Hamlet wrote Shakespeare.",
+    "Hamlet has been written Shakespeare."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Object wordt onderwerp, by plus dader.",
+   "uo": [
+    "Klopt: het object wordt onderwerp, de dader komt achter by, en het werkwoord wordt was written.",
+    "Koos je \"Hamlet is written by Shakespeare.\"? Dan denk je dat de tegenwoordige tijd past bij een boek dat nog bestaat. De actieve zin heeft wrote, een verleden tijd, dus was written.",
+    "Koos je \"Hamlet wrote Shakespeare.\"? Dan denk je dat je alleen de volgorde hoeft om te draaien. Dan schrijft het toneelstuk de schrijver, de betekenis klopt niet.",
+    "Koos je \"Hamlet has been written Shakespeare.\"? Dan denk je dat de dader zonder woordje kan blijven staan. Zonder by klopt de zin niet, en het present perfect past niet bij wrote."
+   ],
+   "uh": "Was written by."
+  },
+  {
+   "v": "Which is the passive of \"The teacher is explaining the rule\"?",
+   "o": [
+    "The rule is explained by the teacher.",
+    "The rule was explained by the teacher.",
+    "The rule is being explained by the teacher.",
+    "The rule is explaining by the teacher."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Continuous passive: is of are being plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"The rule is explained by the teacher.\"? Dan denk je dat het eenvoudige passief genoeg is. De actieve zin is voortdurend (is explaining), dus het passief heeft being nodig.",
+    "Koos je \"The rule was explained by the teacher.\"? Dan denk je dat de verleden tijd past. De actieve zin staat in de tegenwoordige tijd, dus de passieve zin ook.",
+    "Klopt: de voortdurende tegenwoordige tijd wordt is being plus voltooid deelwoord.",
+    "Koos je \"The rule is explaining by the teacher.\"? Dan denk je dat de -ing-vorm direct passief is. Het voltooid deelwoord ontbreekt, je mist being explained."
+   ],
+   "uh": "Is being explained."
+  },
+  {
+   "v": "Which sentence is passive and does NOT mention the agent?",
+   "o": [
+    "The road was closed by the police.",
+    "The road was closed.",
+    "The police closed the road.",
+    "They closed the road."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Passief zonder by laat de dader weg.",
+   "uo": [
+    "Koos je \"The road was closed by the police.\"? Dan denk je dat de dader ontbreekt. Achter by staat de dader, dus de dader is wel genoemd.",
+    "Klopt: was closed is passief en er staat geen by-dader.",
+    "Koos je \"The police closed the road.\"? Dan denk je dat een zin zonder by passief is. Hier doet de politie iets, dus de zin is actief.",
+    "Koos je \"They closed the road.\"? Dan denk je dat they de dader weglaat. They is zelf het onderwerp dat handelt, dus de zin is actief."
+   ],
+   "uh": "Zonder by."
+  },
+  {
+   "v": "Which sentence is correct?",
+   "o": [
+    "The accident was happened last night.",
+    "The accident has been happened last night.",
+    "Last night was happened by the accident.",
+    "The accident happened last night."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Onovergankelijke werkwoorden hebben geen passief.",
+   "uo": [
+    "Koos je \"The accident was happened last night.\"? Dan denk je dat happen een passief heeft. Zonder lijdend voorwerp is er geen passief, dus was happened bestaat niet.",
+    "Koos je \"The accident has been happened last night.\"? Dan denk je dat been het passief mogelijk maakt. Bij happen bestaat geen passief, en last night vraagt de past simple.",
+    "Koos je \"Last night was happened by the accident.\"? Dan denk je dat een omgedraaide zin met by werkt. Er is geen handelend onderwerp dat een voorwerp raakt, dus de zin heeft geen passief.",
+    "Klopt: happen is een onovergankelijk werkwoord en heeft geen passief."
+   ],
+   "uh": "Happen: geen passief."
+  },
+  {
+   "v": "Which sentence uses \"get\" to form a passive?",
+   "o": [
+    "She got a promotion yesterday.",
+    "She got promoted last year.",
+    "She got to the station early.",
+    "She got her bag from the shelf."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Get plus voltooid deelwoord kan een informeel passief zijn.",
+   "uo": [
+    "Koos je \"She got a promotion yesterday.\"? Dan denk je dat get hier een passief maakt. Hier is promotion het lijdend voorwerp van get, dus actief.",
+    "Klopt: got promoted betekent werd bevorderd, een passief met get.",
+    "Koos je \"She got to the station early.\"? Dan denk je dat get altijd passief is. Hier betekent het aankomen, dus een actieve zin.",
+    "Koos je \"She got her bag from the shelf.\"? Dan denk je dat get een passief vormt. Het betekent hier pakken met een voorwerp, dus actief."
+   ],
+   "uh": "Get plus participle."
+  },
+  {
+   "v": "Why is \"was built in 1905\" passive?",
+   "o": [
+    "the building is the subject and the builder is not important",
+    "the verb build is irregular",
+    "it describes the future",
+    "it is a question"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Passief als het object belangrijker is dan de dader.",
+   "uo": [
+    "Klopt: het gebouw is het onderwerp en de bouwer is onbelangrijk, dus het passief.",
+    "Koos je \"the verb build is irregular\"? Dan denk je dat een onregelmatig werkwoord passief maakt. Dat doet het niet, het passief gaat over be plus voltooid deelwoord.",
+    "Koos je \"it describes the future\"? Dan denk je dat het over de toekomst gaat. Was built is verleden, het passief is hier verleden.",
+    "Koos je \"it is a question\"? Dan denk je dat het een vraag is. Er is geen vraagvorm, het is een mededeling."
+   ],
+   "uh": "Object belangrijker.",
+   "ctx": "The old library on Main Street was built in 1905. It was closed last year because the roof was damaged during a storm. Next month the building will be repaired by a local company, and the books will be moved to the town hall. The mayor said that the library has been loved by generations of residents and that it must be saved."
+  },
+  {
+   "v": "Which tense is \"will be repaired by a local company\"?",
+   "o": [
+    "present passive",
+    "past passive",
+    "present perfect passive",
+    "future passive"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Future passive: will be plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"present passive\"? Dan denk je dat de tegenwoordige tijd past omdat er be in zit. Het werkwoord begint met will, dus de tijd ligt in de toekomst.",
+    "Koos je \"past passive\"? Dan denk je dat de tijd verleden is omdat het gebouw oud is. Het woord next month geeft de toekomst aan, dus will be.",
+    "Koos je \"present perfect passive\"? Dan denk je dat been een present perfect aangeeft. Hier staat been niet in de zin, de vorm is will be repaired.",
+    "Klopt: will be plus voltooid deelwoord is het passief van de toekomst."
+   ],
+   "uh": "Future passive.",
+   "ctx": "The old library on Main Street was built in 1905. It was closed last year because the roof was damaged during a storm. Next month the building will be repaired by a local company, and the books will be moved to the town hall. The mayor said that the library has been loved by generations of residents and that it must be saved."
+  },
+  {
+   "v": "What does \"has been loved by generations\" show?",
+   "o": [
+    "a finished event with a date",
+    "a plan for the future",
+    "a situation from the past that still holds now",
+    "a general rule"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Present perfect passive: verleden tot nu.",
+   "uo": [
+    "Koos je \"a finished event with a date\"? Dan denk je dat er een datum is. Het present perfect heeft geen datum, het toont een situatie die nog geldt.",
+    "Koos je \"a plan for the future\"? Dan denk je dat het over de toekomst gaat. Het is present perfect, dus verleden tot nu.",
+    "Klopt: het present perfect passief toont iets uit het verleden dat nog geldt.",
+    "Koos je \"a general rule\"? Dan denk je dat het een regel is. Het gaat over een situatie met een verleden, tot nu."
+   ],
+   "uh": "Verleden tot nu.",
+   "ctx": "The old library on Main Street was built in 1905. It was closed last year because the roof was damaged during a storm. Next month the building will be repaired by a local company, and the books will be moved to the town hall. The mayor said that the library has been loved by generations of residents and that it must be saved."
+  },
+  {
+   "v": "Why does the text use the passive for the coffee process?",
+   "o": [
+    "the workers are famous",
+    "the verbs are irregular",
+    "the process matters more than who does it",
+    "it describes the past"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Passief bij een proces: de handeling staat voorop.",
+   "uo": [
+    "Koos je \"the workers are famous\"? Dan denk je dat de werkers belangrijk zijn. De tekst noemt ze niet, de handeling is belangrijker.",
+    "Koos je \"the verbs are irregular\"? Dan denk je dat de werkwoorden onregelmatig zijn. Het passief hangt daar niet van af, het gaat om be plus voltooid deelwoord.",
+    "Klopt: bij een proces is de handeling belangrijker dan de dader, dus het passief.",
+    "Koos je \"it describes the past\"? Dan denk je dat het over het verleden gaat. De tekst beschrijft een gewoon proces, in de tegenwoordige tijd."
+   ],
+   "uh": "Proces voorop.",
+   "ctx": "Coffee is grown in many tropical countries. The beans are picked by hand, then they are washed and dried in the sun. After that, the beans are roasted and packed, and finally they are shipped all over the world. In the Netherlands alone, millions of cups are consumed every week."
+  },
+  {
+   "v": "Which active sentence matches \"the beans are roasted and packed\"?",
+   "o": [
+    "The beans roast and pack somebody.",
+    "Somebody roasted and packed the beans.",
+    "Somebody is roasting and packing the beans.",
+    "Somebody roasts and packs the beans."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Passief naar actief: dezelfde tijd, object blijft object.",
+   "uo": [
+    "Koos je \"The beans roast and pack somebody.\"? Dan denk je dat de volgorde omgedraaid kan. Dan roosteren de bonen iemand, de betekenis klopt niet.",
+    "Koos je \"Somebody roasted and packed the beans.\"? Dan denk je dat de verleden tijd past. De passieve zin staat in de tegenwoordige tijd, dus ook de actieve.",
+    "Koos je \"Somebody is roasting and packing the beans.\"? Dan denk je dat de voortdurende vorm past. De passieve zin is eenvoudig, dus roasts and packs.",
+    "Klopt: de actieve vorm heeft een onderwerp dat roosteren en inpakken doet, in dezelfde tijd."
+   ],
+   "uh": "Dezelfde tijd.",
+   "ctx": "Coffee is grown in many tropical countries. The beans are picked by hand, then they are washed and dried in the sun. After that, the beans are roasted and packed, and finally they are shipped all over the world. In the Netherlands alone, millions of cups are consumed every week."
+  },
+  {
+   "v": "Which sentence correctly continues the text?",
+   "o": [
+    "In the Netherlands alone, millions of cups are consumed every week.",
+    "In the Netherlands alone, millions of cups consume every week.",
+    "In the Netherlands alone, millions of cups is consumed every week.",
+    "In the Netherlands alone, millions of cups are consuming every week."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Passief meervoud: are plus voltooid deelwoord.",
+   "uo": [
+    "Klopt: de zin is een passief in de tegenwoordige tijd met are consumed.",
+    "Koos je \"In the Netherlands alone, millions of cups consume...\"? Dan denk je dat de cups zelf consumeren. De cups worden gedronken, dus passief.",
+    "Koos je \"In the Netherlands alone, millions of cups is...\"? Dan denk je dat is bij een meervoud past. Millions of cups is meervoud, dus are consumed.",
+    "Koos je \"In the Netherlands alone, millions of cups are...\"? Dan denk je dat de -ing-vorm past. Dat is actief en voortdurend, hier is het passief nodig."
+   ],
+   "uh": "Are consumed.",
+   "ctx": "Coffee is grown in many tropical countries. The beans are picked by hand, then they are washed and dried in the sun. After that, the beans are roasted and packed, and finally they are shipped all over the world. In the Netherlands alone, millions of cups are consumed every week."
+  },
+  {
+   "v": "What does \"is being installed\" tell us?",
+   "o": [
+    "it will happen next year",
+    "the installation is happening at this moment",
+    "it was finished last week",
+    "it happens every year"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Continuous passive: is being plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"it will happen next year\"? Dan denk je dat het over de toekomst gaat. Is being is tegenwoordig, het gebeurt nu.",
+    "Klopt: is being plus voltooid deelwoord is het continuous passive en toont wat nu gebeurt.",
+    "Koos je \"it was finished last week\"? Dan denk je dat het over het verleden gaat. Is being is tegenwoordig, het gebeurt nu.",
+    "Koos je \"it happens every year\"? Dan denk je dat het een gewoonte is. Is being toont iets dat nu bezig is, geen gewoonte."
+   ],
+   "uh": "Nu bezig.",
+   "ctx": "Dear residents, the street will be closed on Saturday because a new water pipe is being installed. Cars can be parked in the square behind the church. The work was planned months ago, and all neighbours have been informed by letter."
+  },
+  {
+   "v": "Which form in the notice is a modal passive?",
+   "o": [
+    "will be closed",
+    "was being planned",
+    "have been informed",
+    "can be parked"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Modaal passief: can, must of should plus be plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"will be closed\"? Dan denk je dat dit een modaal passief is. Will is hier de toekomst, geen modaal als can.",
+    "Koos je \"was being planned\"? Dan denk je dat dit een modaal passief is. Het is een past continuous passive, zonder modaal werkwoord.",
+    "Koos je \"have been informed\"? Dan denk je dat dit een modaal passief is. Het is een present perfect passive, zonder modaal werkwoord.",
+    "Klopt: can plus be plus voltooid deelwoord is een modaal passief."
+   ],
+   "uh": "Can be parked.",
+   "ctx": "Dear residents, the street will be closed on Saturday because a new water pipe is being installed. Cars can be parked in the square behind the church. The work was planned months ago, and all neighbours have been informed by letter."
+  },
+  {
+   "v": "Which is the correct version?",
+   "o": [
+    "The letter was written by my aunt. It was sent yesterday and it arrived this morning.",
+    "The letter was wrote by my aunt. It was sent yesterday and it arrived this morning.",
+    "The letter was written by my aunt. It is sent yesterday and it arrived this morning.",
+    "The letter was written by my aunt. It was sent yesterday and it was arrived this morning."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Controleer voltooid deelwoord, tijd en onovergankelijke werkwoorden.",
+   "uo": [
+    "Klopt: written en sent zijn de juiste voltooide deelwoorden en arrive heeft geen passief.",
+    "Koos je \"The letter was wrote by my aunt. It was sent...\"? Dan denk je dat wrote het voltooid deelwoord is. Het voltooid deelwoord is written, de rest is goed.",
+    "Koos je \"The letter was written by my aunt. It is sent...\"? Dan denk je dat is bij yesterday past. Yesterday vraagt was, dus was sent.",
+    "Koos je \"The letter was written by my aunt. It was sent...\"? Dan denk je dat arrive een passief heeft. Het is een onovergankelijk werkwoord, dus arrived."
+   ],
+   "uh": "Written, sent, arrived.",
+   "ctx": "A student wrote: \"The letter was wrote by my aunt. It is send yesterday and it was arrived this morning.\""
+  },
+  {
+   "v": "Which sentence is a negative present perfect passive?",
+   "o": [
+    "I was born in 2008.",
+    "The thief has not been found yet.",
+    "My bike was stolen last week.",
+    "The police have been informed."
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Present perfect passive negatief: have not been plus voltooid deelwoord.",
+   "uo": [
+    "Koos je \"I was born in 2008.\"? Dan denk je dat dit een present perfect passive is. Dit is past simple passive, zonder have en been.",
+    "Klopt: has not been found is have plus not plus been plus voltooid deelwoord.",
+    "Koos je \"My bike was stolen last week.\"? Dan denk je dat dit een present perfect passive is. Dit is past simple passive, met het tijdstip last week.",
+    "Koos je \"The police have been informed.\"? Dan denk je dat dit negatief is. Het is wel present perfect passive, maar er staat geen not."
+   ],
+   "uh": "Has not been found.",
+   "ctx": "Mark said: \"I was born in 2008. My bike was stolen last week, and the police have been informed. The thief has not been found yet.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "A visitor writes: \"The museum was opened in 1990. Many paintings are shown there, and a new hall will be built next year. The collection has been visited by thousands of people.\"",
+   "v": "Name the tense and the form of the passive of \"was opened\", \"will be built\" and \"has been visited\".",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Was opened: past simple passive, was plus voltooid deelwoord (1p). Will be built: future passive, will be plus voltooid deelwoord (1p). Has been visited: present perfect passive, has been plus voltooid deelwoord (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A student wrote: \"My bike was steal yesterday. The police has been informed. The thief was disappeared and the bike hasn't found yet.\"",
+   "v": "Find three mistakes in the student's text and correct them.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Was stolen (voltooid deelwoord) (1p). Have been informed (meervoud, the police is meervoud) (1p). Disappeared heeft geen passief: the thief disappeared (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In a school newsletter you read two active sentences: \"The teacher corrects the tests every Friday afternoon.\" and \"Somebody stole my phone from the bag during the break.\" The editor wants to turn both into the passive.",
+   "v": "Write the two passive sentences and explain which agent you leave out.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "The tests are corrected by the teacher (1p). My phone was stolen (1p). Somebody laat je weg omdat de dader onbekend is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "The text says: \"Coffee is grown in many countries. The beans are picked by hand and are shipped all over the world. Millions of cups are drunk every day.\"",
+   "v": "Explain why the writer uses the passive in this text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het proces en de bonen staan voorop (1p). De dader is onbelangrijk of onbekend (1p). Het passief geeft een algemene beschrijving van een proces (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Complete the passive forms in this notice: (1) The rules ___ by everyone. (modal must, follow) (2) The street ___ at the moment because of the market. (close, continuous) (3) The letter ___ yesterday afternoon. (send, past)",
+   "v": "Fill in the correct passive forms and name the tense.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(1) must be followed, modaal passief (1p). (2) is being closed, continuous passive (1p). (3) was sent, past simple passive (1p)."
+  }
+ ]
+}

@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **37 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6). Werk dit getal bij bij elke afronding.
+> Voortgang: **38 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -83,7 +83,7 @@
   - [x] A4 · en.A.4 Tijden: present perfect en past simple · 27 vragen (R1 7, R2 10, R3 10, 17 met tekst), 12 begrippen, 5 figuren (vormen, onregelmatige werkwoorden, tijdlijn, signaalwoorden, keuzeschema), geen clip
   - [x] A5 · en.A.5 Modale werkwoorden · 27 vragen (R1 7, R2 10, R3 10, 18 met tekst), 12 begrippen, 4 figuren (vorm, functies, zekerheidsschaal, verleden), geen clip
   - [x] A6 · en.A.6 Conditionals (type 1, 2 en 3) · 27 vragen (R1 7, R2 10, R3 10, 17 met tekst), 12 begrippen, 4 figuren (drie types, tijdlijn, unless en in case, keuzeschema), geen clip
-  - [ ] A7 · en.A.7 Passief en actief
+  - [x] A7 · en.A.7 Passief en actief · 27 vragen (R1 7, R2 10, R3 10, 17 met tekst), 12 begrippen, 4 figuren (tijden, actief naar passief, wanneer passief, fouten), geen clip
   - [ ] A8 · en.A.8 Zinsbouw, verbindingswoorden en formeel tegenover informeel
 - [ ] **HAVO · Engels** (`en`) · domein B — Leesvaardigheid
 - [ ] **HAVO · Engels** (`en`) · domein C — Kijk- en luistervaardigheid
