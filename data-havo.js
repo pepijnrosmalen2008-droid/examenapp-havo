@@ -103663,6 +103663,708 @@ var VAKKEN = [
         "u": "Zelfstandige naamwoorden: honesty (-y) en kindness (-ness) (1p per woord met juist achtervoegsel, max. 2p). Bijwoord: clearly of carefully, met achtervoegsel -ly (1p)."
        }
       ]
+     },
+     {
+      "id": "A3",
+      "lo": "en.A.3",
+      "gs": 2,
+      "naam": "Collocaties, uitdrukkingen en false friends",
+      "beschrijving": "Je kent de vaste woordcombinaties van het Engels (make a plan, heavy rain), begrijpt uitdrukkingen als break the ice en trapt niet in woorden die op Nederlandse woorden lijken maar iets anders betekenen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Werkwoord en zelfstandig naamwoord (make, do, take, have)",
+       "Bijvoeglijk naamwoord en zelfstandig naamwoord",
+       "Vaste uitdrukkingen en idioom",
+       "False friends",
+       "Voorzetsels bij werkwoorden en bijvoeglijke naamwoorden",
+       "Strategie bij onbekende uitdrukkingen"
+      ],
+      "sam": "Engels is vol vaste combinaties: je make a plan maar do the shopping, je take a photo en have a chat. Ook bijvoeglijke naamwoorden kiezen hun partner (heavy rain, strong coffee). Uitdrukkingen als break the ice of a piece of cake vertaal je niet woord voor woord. False friends zoals eventually (uiteindelijk), actually (eigenlijk) en sensible (verstandig) lijken op Nederlandse woorden maar betekenen iets anders. Ook voorzetsels volgen vaste patronen: good at, afraid of, depend on.",
+      "begrippen": [
+       {
+        "t": "Collocatie",
+        "d": "Een vaste combinatie van woorden die samen natuurlijk klinkt, zoals heavy rain."
+       },
+       {
+        "t": "Make en do",
+        "d": "Make gaat vaak over maken (a plan, a mistake), do over taken (homework, the shopping)."
+       },
+       {
+        "t": "Take en have",
+        "d": "Take hoort bij a photo, a break en a bus; have bij a chat, a look en lunch."
+       },
+       {
+        "t": "Uitdrukking",
+        "d": "Een vaste combinatie met een overdrachtelijke betekenis, zoals a piece of cake."
+       },
+       {
+        "t": "Idioom",
+        "d": "Een uitdrukking waarvan de betekenis niet uit de losse woorden volgt."
+       },
+       {
+        "t": "Letterlijk",
+        "d": "De gewone, directe betekenis van de woorden."
+       },
+       {
+        "t": "Overdrachtelijk",
+        "d": "Een betekenis die niet letterlijk bedoeld is, zoals break the ice."
+       },
+       {
+        "t": "False friend",
+        "d": "Een woord dat lijkt op een Nederlands woord maar iets anders betekent."
+       },
+       {
+        "t": "Eventually",
+        "d": "Uiteindelijk, niet eventueel (dat is possibly)."
+       },
+       {
+        "t": "Actually",
+        "d": "Eigenlijk of in feite, niet actueel (dat is current)."
+       },
+       {
+        "t": "Sensible",
+        "d": "Verstandig, niet gevoelig (dat is sensitive)."
+       },
+       {
+        "t": "Vast voorzetsel",
+        "d": "Een voorzetsel dat bij een werkwoord of bijvoeglijk naamwoord hoort, zoals depend on."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which sentence is correct?",
+        "o": [
+         "She did a mistake in the test.",
+         "She made a mistake in the test.",
+         "She took a mistake in the test.",
+         "She has had a mistake in the test."
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Make a mistake, do homework, take a break, have a chat.",
+        "uo": [
+         "Koos je \"She did a mistake in the test.\"? Dan denk je dat do bij elke handeling past. Do hoort bij taken zoals homework en the dishes, een fout hoort bij make.",
+         "Klopt: een fout maak je met make, dus make a mistake is de vaste combinatie.",
+         "Koos je \"She took a mistake in the test.\"? Dan denk je dat take een fout kan nemen. Take hoort bij photo, bus of break, niet bij een fout.",
+         "Koos je \"She has had a mistake in the test.\"? Dan denk je dat je een fout kunt hebben. Have a mistake bestaat niet, het juiste werkwoord is make."
+        ],
+        "uh": "Make a mistake."
+       },
+       {
+        "v": "Which verb completes the collocation: \"___ homework\"?",
+        "o": [
+         "make",
+         "take",
+         "have",
+         "do"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Do homework, do the shopping, do the dishes.",
+        "uo": [
+         "Koos je \"make\"? Dan denk je dat make bij alle klussen past. Make hoort bij maken, zoals a plan of a mistake, huiswerk is een taak en gaat met do.",
+         "Koos je \"take\"? Dan denk je dat je huiswerk neemt. Take hoort bij bijvoorbeeld a photo, huiswerk is een taak en gaat met do.",
+         "Koos je \"have\"? Dan denk je dat je huiswerk hebt. Dat zegt een Nederlander wel, maar in het Engels is het do homework.",
+         "Klopt: huiswerk is een taak die je uitvoert, dus de vaste combinatie is do homework."
+        ],
+        "uh": "Do homework."
+       },
+       {
+        "v": "Which adjective collocates naturally with \"coffee\" in \"a ___ cup of coffee\"?",
+        "o": [
+         "strong",
+         "heavy",
+         "high",
+         "big"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Strong coffee, heavy rain: de bijvoeglijke naamwoorden zijn gekoppeld aan het zelfstandig naamwoord.",
+        "uo": [
+         "Klopt: koffie is strong of weak, en een sterke kop koffie is a strong cup of coffee.",
+         "Koos je \"heavy\"? Dan denk je dat sterke koffie heavy is. Heavy hoort bij rain, traffic en smokers, niet bij koffie.",
+         "Koos je \"high\"? Dan denk je dat hoog een vloeistof kan beschrijven. High hoort bij hoogte, niet bij de smaak van koffie.",
+         "Koos je \"big\"? Dan denk je dat big de kracht van koffie beschrijft. Big gaat over de grootte van het kopje, niet over de sterkte."
+        ],
+        "uh": "Strong coffee."
+       },
+       {
+        "v": "What does \"a piece of cake\" mean in \"The test was a piece of cake\"?",
+        "o": [
+         "very long",
+         "sweet and enjoyable",
+         "very easy",
+         "served at a party"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Een uitdrukking vertaal je niet letterlijk: a piece of cake is heel makkelijk.",
+        "uo": [
+         "Koos je \"very long\"? Dan denk je dat het om de lengte van de toets gaat. Het gaat niet over lengte, maar over het gemak.",
+         "Koos je \"sweet and enjoyable\"? Dan denk je dat de toets lekker was. De uitdrukking gaat over moeilijkheid, niet over smaak.",
+         "Klopt: a piece of cake is een uitdrukking voor iets wat heel makkelijk is.",
+         "Koos je \"served at a party\"? Dan denk je dat het letterlijk taart is. Het is een figuurlijke uitdrukking, de toets was makkelijk."
+        ],
+        "uh": "Niet letterlijk."
+       },
+       {
+        "v": "What does \"library\" mean?",
+        "o": [
+         "a shop that sells books",
+         "a room for private letters",
+         "a place where you can borrow books",
+         "a school for adults"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Library betekent bibliotheek: false friend van het Nederlandse woord librije.",
+        "uo": [
+         "Koos je \"a shop that sells books\"? Dan denk je dat library een winkel is. Dat is een bookshop, een library leent boeken uit.",
+         "Koos je \"a room for private letters\"? Dan denk je dat library over brieven gaat. Het is een plek met boeken, je kunt ze lenen.",
+         "Klopt: library is een bibliotheek, geen boekwinkel.",
+         "Koos je \"a school for adults\"? Dan denk je dat library een school is. Het is een plek met boeken, geen school."
+        ],
+        "uh": "Bibliotheek."
+       },
+       {
+        "v": "Which preposition completes: \"I am interested ___ history.\"",
+        "o": [
+         "in",
+         "on",
+         "at",
+         "for"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 4,
+        "u": "Interested in, good at, afraid of: de voorzetsel hoort bij het woord.",
+        "uo": [
+         "Klopt: het Engels combineert interested vast met het voorzetsel in, dus interested in history.",
+         "Koos je \"on\"? Dan denk je dat on bij onderwerpen past. On gaat over een boek of een gesprek, je bent interested in.",
+         "Koos je \"at\"? Dan denk je dat at hier past, zoals in good at. Dat hoort bij een vaardigheid, interested hoort bij in.",
+         "Koos je \"for\"? Dan denk je dat for past, zoals in wait for. Dat is een ander werkwoord, interested hoort bij in."
+        ],
+        "uh": "Interested in."
+       },
+       {
+        "v": "Which preposition completes: \"She is very good ___ maths.\"",
+        "o": [
+         "in",
+         "on",
+         "with",
+         "at"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Good at, bad at, interested in: let op het verschil met het Nederlands.",
+        "uo": [
+         "Koos je \"in\"? Dan denk je dat je dit letterlijk uit het Nederlands vertaalt (goed in). Het Engels gebruikt at, good at maths.",
+         "Koos je \"on\"? Dan denk je dat on past bij een vak. On hoort bij onderwerpen of dagen, zoals on Monday, good gaat met at.",
+         "Koos je \"with\"? Dan denk je aan gezelschap of hulpmiddel, zoals with a pen. Met een vaardigheid gebruik je at, good at maths.",
+         "Klopt: je bent good at iets, in het Nederlands goed in."
+        ],
+        "uh": "Good at."
+       },
+       {
+        "v": "Which verb forms a fixed collocation with \"photo\" in the text?",
+        "o": [
+         "make",
+         "take",
+         "do",
+         "have"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Take a photo, take a break, take a bus.",
+        "uo": [
+         "Koos je \"make\"? Dan denk je dat je een foto maakt, zoals in het Nederlands. Het Engels gebruikt take, take a photo.",
+         "Klopt: je neemt een foto in het Engels, take a photo.",
+         "Koos je \"do\"? Dan denk je dat do bij een foto past. Do hoort bij taken zoals the shopping, een foto gaat met take.",
+         "Koos je \"have\"? Dan denk je dat have hier past. Have hoort bij een chat of lunch, een foto gaat met take."
+        ],
+        "uh": "Take a photo.",
+        "ctx": "The weather forecast promised heavy rain, so we decided to make a plan for the evening. My sister said she would do the shopping, and I offered to make the dinner. While we waited for the storm to pass, we took a photo of the garden and had a long chat about our holiday."
+       },
+       {
+        "v": "Which adjective goes with \"rain\" in the text?",
+        "o": [
+         "strong",
+         "big",
+         "thick",
+         "heavy"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Heavy rain, strong wind, thick fog.",
+        "uo": [
+         "Koos je \"strong\"? Dan denk je dat sterke regen strong is. Strong hoort bij koffie of wind, regen is heavy.",
+         "Koos je \"big\"? Dan denk je dat de grootte van regen big is. Big is te algemeen, de vaste combinatie is heavy.",
+         "Koos je \"thick\"? Dan denk je dat dikke regen een natuurlijke combinatie is. Thick gaat over mist of soep, regen is heavy.",
+         "Klopt: heavy rain is de vaste combinatie voor zware regen."
+        ],
+        "uh": "Heavy rain.",
+        "ctx": "The weather forecast promised heavy rain, so we decided to make a plan for the evening. My sister said she would do the shopping, and I offered to make the dinner. While we waited for the storm to pass, we took a photo of the garden and had a long chat about our holiday."
+       },
+       {
+        "v": "Which verb fits the gap?",
+        "o": [
+         "make",
+         "take",
+         "do",
+         "put"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Take a break, make a plan, do homework.",
+        "uo": [
+         "Koos je \"make\"? Dan denk je dat je een pauze maakt zoals in het Nederlands. Het Engels gebruikt take, take a break.",
+         "Klopt: een pauze gaat in het Engels met take, dus take a break is de vaste combinatie.",
+         "Koos je \"do\"? Dan denk je dat do bij een pauze past. Do hoort bij taken, een pauze gaat met take.",
+         "Koos je \"put\"? Dan denk je dat put iets zet. Put a break bestaat niet, het juiste werkwoord is take."
+        ],
+        "uh": "Take a break.",
+        "ctx": "It was raining so hard that we decided to ______ a break and wait inside for a while."
+       },
+       {
+        "v": "What does \"broke the ice\" mean here?",
+        "o": [
+         "ended the meeting early",
+         "damaged the table",
+         "made people feel more relaxed",
+         "stopped everybody talking"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Break the ice is een uitdrukking voor het ontspannen van de sfeer.",
+        "uo": [
+         "Koos je \"ended the meeting early\"? Dan denk je dat het om het einde gaat. Break the ice gaat over het begin, de sfeer ontspant.",
+         "Koos je \"damaged the table\"? Dan denk je dat er iets kapotging. Het is een figuurlijke uitdrukking, geen echt ijs.",
+         "Klopt: break the ice betekent een gespannen sfeer ontspannen, vaak met een grapje.",
+         "Koos je \"stopped everybody talking\"? Dan denk je dat het om stilte gaat. Het was juist stil, na het verhaal werd het praten makkelijker."
+        ],
+        "uh": "Letterlijk of figuurlijk?",
+        "ctx": "At the start of the meeting nobody spoke, so the chairman broke the ice with a funny story."
+       },
+       {
+        "v": "What does \"hit the nail on the head\" mean?",
+        "o": [
+         "described exactly what is true",
+         "made a serious mistake",
+         "got very angry",
+         "worked very quickly"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Hit the nail on the head betekent de kern precies raken.",
+        "uo": [
+         "Klopt: de uitdrukking betekent precies de kern raken.",
+         "Koos je \"made a serious mistake\"? Dan denk je dat er iets fout ging. De uitdrukking is positief, hij had gelijk.",
+         "Koos je \"got very angry\"? Dan denk je dat de nagel boos maakt. Het is een figuurlijke uitdrukking, hij zei iets juists.",
+         "Koos je \"worked very quickly\"? Dan denk je dat hij hard werkte. De zin gaat over wat hij zei, niet over snelheid."
+        ],
+        "uh": "Precies raak.",
+        "ctx": "He hit the nail on the head when he said that the real problem was the lack of time."
+       },
+       {
+        "v": "What does \"eventually\" mean in Tom's sentence?",
+        "o": [
+         "in the end, after some time",
+         "possibly or perhaps",
+         "at this moment",
+         "for the first time"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Eventually is uiteindelijk, niet eventueel.",
+        "uo": [
+         "Klopt: eventually betekent uiteindelijk, terwijl het Nederlandse eventueel mogelijk betekent.",
+         "Koos je \"possibly or perhaps\"? Dan denk je dat eventually hetzelfde is als eventueel. Dat is een false friend, eventually is uiteindelijk.",
+         "Koos je \"at this moment\"? Dan denk je dat het over nu gaat. Het gaat over een langere tijd, uiteindelijk leer je het.",
+         "Koos je \"for the first time\"? Dan denk je dat het om een eerste keer gaat. Dat past niet bij \"you learn\", het gaat om de lange termijn."
+        ],
+        "uh": "Uiteindelijk.",
+        "ctx": "Anna's English exchange student, Tom, was very sympathetic when she failed her test. He did not say much, but he gave her a bar of chocolate and a gift card for the library. \"Actually, I once failed an exam too,\" he said. \"Eventually you learn that one bad grade is not the end of the world.\" Anna felt better and decided to be more sensible about her studying."
+       },
+       {
+        "v": "Which preposition fits the gap?",
+        "o": [
+         "from",
+         "of",
+         "on",
+         "at"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Depend on, rely on, count on.",
+        "uo": [
+         "Koos je \"from\"? Dan denk je dat je van letterlijk vertaalt. Het Engels gebruikt on, depend on.",
+         "Koos je \"of\"? Dan denk je dat of past, zoals in afraid of. Depend gaat met on, niet met of.",
+         "Klopt: depend on is de vaste combinatie, in het Nederlands afhangen van.",
+         "Koos je \"at\"? Dan denk je dat at hier past. At hoort bij good at of arrive at, depend gaat met on."
+        ],
+        "uh": "Depend on.",
+        "ctx": "The success of the picnic depends ______ the weather."
+       },
+       {
+        "v": "Which preposition fits both gaps?",
+        "o": [
+         "for",
+         "of",
+         "from",
+         "about"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Afraid of, scared of, proud of.",
+        "uo": [
+         "Koos je \"for\"? Dan denk je dat je bang voor vertaalt met for. Het Engels gebruikt of, afraid of.",
+         "Klopt: bij afraid en scared hoort het voorzetsel of: afraid of spiders, scared of them.",
+         "Koos je \"from\"? Dan denk je dat from past bij bang zijn. From hoort bij herkomst, afraid of.",
+         "Koos je \"about\"? Dan denk je dat about past. About gaat over bezorgd zijn, afraid gaat met of."
+        ],
+        "uh": "Afraid of.",
+        "ctx": "As a child he was afraid ______ spiders, but now he is no longer scared ______ them."
+       },
+       {
+        "v": "What does \"keep an eye on\" mean here?",
+        "o": [
+         "look at it with only one eye",
+         "take it away",
+         "ignore it",
+         "watch it carefully"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Keep an eye on betekent goed opletten.",
+        "uo": [
+         "Koos je \"look at it with only one eye\"? Dan denk je dat het letterlijk is. Het is een uitdrukking, je moet de soep in de gaten houden.",
+         "Koos je \"take it away\"? Dan denk je dat de soep weg moet. Dat staat er niet, de soep blijft staan.",
+         "Koos je \"ignore it\"? Dan denk je dat hij niet hoeft te kijken. Het is juist het tegendeel, hij moet opletten.",
+         "Klopt: keep an eye on betekent in de gaten houden."
+        ],
+        "uh": "In de gaten houden.",
+        "ctx": "She told him to keep an eye on the soup while she answered the phone."
+       },
+       {
+        "v": "Which expression from the text uses \"do\" in a fixed collocation?",
+        "o": [
+         "make a plan",
+         "do the shopping",
+         "take a photo",
+         "have a chat"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Do the shopping, make dinner, take a photo, have a chat.",
+        "uo": [
+         "Koos je \"make a plan\"? Dan denk je dat make a plan do is. Make hoort bij het maken van een plan, dat is een andere vaste combinatie.",
+         "Klopt: do the shopping is een vaste combinatie met do.",
+         "Koos je \"take a photo\"? Dan denk je dat take hier do is. Take hoort bij foto en pauze, do hoort bij taken.",
+         "Koos je \"have a chat\"? Dan denk je dat have do is. Have hoort bij een praatje of lunch, do hoort bij taken."
+        ],
+        "uh": "Do the shopping.",
+        "ctx": "The weather forecast promised heavy rain, so we decided to make a plan for the evening. My sister said she would do the shopping, and I offered to make the dinner. While we waited for the storm to pass, we took a photo of the garden and had a long chat about our holiday."
+       },
+       {
+        "v": "What is the best way to understand an unknown idiom in a text?",
+        "o": [
+         "use the situation and the context",
+         "translate every word into Dutch",
+         "skip the idiom and continue reading",
+         "look for a Dutch word that sounds the same"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 5,
+        "u": "Een idioom lees je uit de situatie, niet woord voor woord.",
+        "uo": [
+         "Klopt: een idioom heeft een overdrachtelijke betekenis die uit de situatie blijkt.",
+         "Koos je \"translate every word into Dutch\"? Dan denk je dat letterlijke vertaling werkt. Een idioom heeft een andere betekenis, dan de woorden samen.",
+         "Koos je \"skip the idiom and continue reading\"? Dan denk je dat je het kunt overslaan. Soms is het de kern van de zin, dus je mist informatie.",
+         "Koos je \"look for a Dutch word that sounds the same\"? Dan denk je dat klank je helpt. Dat leidt vaak tot false friends, de context geeft de betekenis."
+        ],
+        "uh": "Lees de situatie."
+       },
+       {
+        "v": "Which Dutch word is a false friend of \"eventually\"?",
+        "o": [
+         "uiteindelijk",
+         "uiteraard",
+         "eveneens",
+         "eventueel"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Eventually is uiteindelijk, eventueel is possibly.",
+        "uo": [
+         "Koos je \"uiteindelijk\"? Dan denk je dat dit een false friend is. Het is de juiste vertaling, dus geen vals vriendje.",
+         "Koos je \"uiteraard\"? Dan denk je dat dit lijkt op eventually. De woorden lijken niet op elkaar, het gaat om eventueel.",
+         "Koos je \"eveneens\"? Dan denk je dat dit lijkt op eventually. De betekenis is anders, maar de false friend is eventueel.",
+         "Klopt: eventueel lijkt op eventually, maar betekent possibly."
+        ],
+        "uh": "Eventueel."
+       },
+       {
+        "v": "What does \"broke the ice\" suggest about the atmosphere before the joke?",
+        "o": [
+         "it was cheerful and noisy",
+         "it was very cold in the room",
+         "it was tense and quiet",
+         "it was too hot to work"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Break the ice betekent een gespannen sfeer verbreken.",
+        "uo": [
+         "Koos je \"it was cheerful and noisy\"? Dan denk je dat het al gezellig was. Dan was een grap niet nodig, de sfeer was juist stil.",
+         "Koos je \"it was very cold in the room\"? Dan denk je dat het letterlijk ijs is. Het is een uitdrukking, de sfeer was gespannen.",
+         "Klopt: break the ice betekent een gespannen sfeer ontspannen, dus voor de grap was het stil en gespannen.",
+         "Koos je \"it was too hot to work\"? Dan denk je dat het over temperatuur gaat. Het gaat over de sfeer, niet over het weer."
+        ],
+        "uh": "Wat was de sfeer?",
+        "ctx": "Last week our team had to meet a tight deadline. At first nobody wanted to speak up, so the manager broke the ice by telling a joke. After that the discussion took off, and by Friday we had finished the report. It was a piece of cake in the end, but Liam said he had been walking on eggshells all week because he did not want to upset the manager."
+       },
+       {
+        "v": "What does \"walking on eggshells\" mean in the text?",
+        "o": [
+         "walking slowly because the floor was fragile",
+         "working very hard all week",
+         "being very careful not to upset someone",
+         "hiding from the manager"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Walk on eggshells betekent heel voorzichtig zijn om niet te kwetsen.",
+        "uo": [
+         "Koos je \"walking slowly because the floor was fragile\"? Dan denk je dat het letterlijk is. Het is een uitdrukking, Liam wilde de manager niet boos maken.",
+         "Koos je \"working very hard all week\"? Dan denk je dat het om werken gaat. De zin zegt waarom hij oplette, namelijk om de manager niet te ergeren.",
+         "Klopt: wie on eggshells loopt, past op om iemand niet te ergeren, zoals Liam bij de manager.",
+         "Koos je \"hiding from the manager\"? Dan denk je dat hij zich verstopte. De uitdrukking gaat over voorzichtig zijn, hij bleef aanwezig."
+        ],
+        "uh": "Voorzichtig.",
+        "ctx": "Last week our team had to meet a tight deadline. At first nobody wanted to speak up, so the manager broke the ice by telling a joke. After that the discussion took off, and by Friday we had finished the report. It was a piece of cake in the end, but Liam said he had been walking on eggshells all week because he did not want to upset the manager."
+       },
+       {
+        "v": "Which expression could replace \"a piece of cake\" in the text without changing the meaning?",
+        "o": [
+         "a tough nut to crack",
+         "a storm in a teacup",
+         "a drop in the ocean",
+         "child's play"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "A piece of cake en child's play zijn uitdrukkingen voor heel makkelijk.",
+        "uo": [
+         "Koos je \"a tough nut to crack\"? Dan denk je dat dit makkelijk betekent. Dat is een moeilijk probleem, het tegendeel van makkelijk.",
+         "Koos je \"a storm in a teacup\"? Dan denk je dat dit makkelijk betekent. Het gaat over veel ophef om niets, niet over gemak.",
+         "Koos je \"a drop in the ocean\"? Dan denk je dat dit makkelijk betekent. Het gaat over een veel te kleine hoeveelheid, niet over gemak.",
+         "Klopt: child's play is een uitdrukking voor iets heel makkelijks, net als a piece of cake."
+        ],
+        "uh": "Makkelijk.",
+        "ctx": "Last week our team had to meet a tight deadline. At first nobody wanted to speak up, so the manager broke the ice by telling a joke. After that the discussion took off, and by Friday we had finished the report. It was a piece of cake in the end, but Liam said he had been walking on eggshells all week because he did not want to upset the manager."
+       },
+       {
+        "v": "What does \"sympathetic\" mean in the text?",
+        "o": [
+         "showing understanding for someone's sadness",
+         "pleasant and friendly to meet",
+         "looking like someone else",
+         "unwilling to help"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Sympathetic is medelevend, sympathiek is nice.",
+        "uo": [
+         "Klopt: sympathetic betekent medelevend, en Tom troostte Anna na haar mislukte toets.",
+         "Koos je \"pleasant and friendly to meet\"? Dan denk je dat sympathetic hetzelfde is als het Nederlandse sympathiek. Dat is een false friend, het gaat om medeleven.",
+         "Koos je \"looking like someone else\"? Dan denk je dat het om gelijkenis gaat. Dat staat niet in de tekst, Tom troost haar.",
+         "Koos je \"unwilling to help\"? Dan denk je dat hij niet wilde helpen. Hij gaf haar chocolade en een kaart, dus hij helpt wel."
+        ],
+        "uh": "Medeleven.",
+        "ctx": "Anna's English exchange student, Tom, was very sympathetic when she failed her test. He did not say much, but he gave her a bar of chocolate and a gift card for the library. \"Actually, I once failed an exam too,\" he said. \"Eventually you learn that one bad grade is not the end of the world.\" Anna felt better and decided to be more sensible about her studying."
+       },
+       {
+        "v": "What does \"actually\" mean in \"Actually, I once failed an exam too\"?",
+        "o": [
+         "at the moment",
+         "in fact",
+         "in the latest news",
+         "probably"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Actually is eigenlijk, actueel is current.",
+        "uo": [
+         "Koos je \"at the moment\"? Dan denk je dat het hetzelfde is als actueel. Dat is een false friend, actually betekent eigenlijk.",
+         "Klopt: actually betekent eigenlijk of in feite, niet actueel.",
+         "Koos je \"in the latest news\"? Dan denk je dat het over nieuws gaat. Dat is de betekenis van actueel, actually is eigenlijk.",
+         "Koos je \"probably\"? Dan denk je dat het waarschijnlijk betekent. Dat is probably, actually geeft een feit aan."
+        ],
+        "uh": "Actually = in fact.",
+        "ctx": "Anna's English exchange student, Tom, was very sympathetic when she failed her test. He did not say much, but he gave her a bar of chocolate and a gift card for the library. \"Actually, I once failed an exam too,\" he said. \"Eventually you learn that one bad grade is not the end of the world.\" Anna felt better and decided to be more sensible about her studying."
+       },
+       {
+        "v": "What does \"sensible\" mean in the last sentence?",
+        "o": [
+         "sensitive to emotions",
+         "able to be felt",
+         "quick to complain",
+         "reasonable and practical"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Sensible is verstandig, sensitive is gevoelig.",
+        "uo": [
+         "Koos je \"sensitive to emotions\"? Dan denk je dat sensible gevoelig betekent. Dat is false friend sensibel, sensible is verstandig.",
+         "Koos je \"able to be felt\"? Dan denk je dat sensible voelbaar betekent. Dat is een andere betekenis, Anna wil verstandiger studeren.",
+         "Koos je \"quick to complain\"? Dan denk je dat het over klagen gaat. Dat staat niet in de zin, het gaat om verstandig.",
+         "Klopt: sensible betekent verstandig, niet gevoelig."
+        ],
+        "uh": "Verstandig.",
+        "ctx": "Anna's English exchange student, Tom, was very sympathetic when she failed her test. He did not say much, but he gave her a bar of chocolate and a gift card for the library. \"Actually, I once failed an exam too,\" he said. \"Eventually you learn that one bad grade is not the end of the world.\" Anna felt better and decided to be more sensible about her studying."
+       },
+       {
+        "v": "A student writes: \"We did a plan and made the shopping.\" What is the correct sentence?",
+        "o": [
+         "We made a plan and did the shopping.",
+         "We did a plan and did the shopping.",
+         "We took a plan and made the shopping.",
+         "We made a plan and made the shopping."
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Make a plan, do the shopping.",
+        "uo": [
+         "Klopt: make a plan en do the shopping zijn de vaste combinaties.",
+         "Koos je \"We did a plan and did the shopping.\"? Dan denk je dat do bij alle taken past. Een plan maak je met make, de tweede helft is wel juist.",
+         "Koos je \"We took a plan and made the shopping.\"? Dan denk je dat take bij een plan past. Take hoort bij foto en pauze, de boodschappen doe je met do.",
+         "Koos je \"We made a plan and made the shopping.\"? Dan denk je dat make overal past. Boodschappen doe je met do, alleen de eerste helft is juist."
+        ],
+        "uh": "Plan: make, shopping: do.",
+        "ctx": "The weather forecast promised heavy rain, so we decided to make a plan for the evening. My sister said she would do the shopping, and I offered to make the dinner. While we waited for the storm to pass, we took a photo of the garden and had a long chat about our holiday."
+       },
+       {
+        "v": "Which prepositions complete the gaps in order?",
+        "o": [
+         "in, for, of",
+         "at, of, on",
+         "at, from, on",
+         "in, of, from"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Bad at, afraid of, depend on: leer de combinaties als geheel.",
+        "uo": [
+         "Koos je \"in, for, of\"? Dan denk je dat je de Nederlandse voorzetsels letterlijk vertaalt. De Engelse vaste combinaties zijn anders, bad at, afraid of, depend on.",
+         "Klopt: bad at, afraid of en depend on zijn de vaste combinaties.",
+         "Koos je \"at, from, on\"? Dan denk je dat from past bij bang zijn. Dat hoort bij herkomst, afraid of is de vaste combinatie.",
+         "Koos je \"in, of, from\"? Dan denk je dat in en from passen. Het Engels gebruikt bad at en depend on, alleen afraid of is juist."
+        ],
+        "uh": "At, of, on.",
+        "ctx": "He says he is very bad ______ remembering names, but he is afraid ______ forgetting them completely. Luckily, he depends ______ his notes every day."
+       },
+       {
+        "v": "What does \"over the moon\" mean?",
+        "o": [
+         "very far away",
+         "sad and lonely",
+         "extremely happy",
+         "dreaming at night"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Over the moon betekent dolblij.",
+        "uo": [
+         "Koos je \"very far away\"? Dan denk je dat het letterlijk is. Het is een uitdrukking, Lisa was dolblij.",
+         "Koos je \"sad and lonely\"? Dan denk je dat de maan eenzaamheid betekent. De zin zegt dat ze lachte, ze was blij.",
+         "Klopt: over the moon betekent dolblij, en dat past bij haar telefoontjes en haar glimlach.",
+         "Koos je \"dreaming at night\"? Dan denk je dat de maan de nacht is. De uitdrukking gaat over gevoel, niet over dromen."
+        ],
+        "uh": "Dolblij.",
+        "ctx": "When Lisa heard that she had won first prize, she was over the moon. She called everyone she knew and could not stop smiling."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "The team had a tight deadline. At the first meeting nobody spoke, so the manager broke the ice with a joke. Soon the discussion took off, and the report was finished on Friday. In the end it was a piece of cake.",
+        "v": "Explain what \"broke the ice\" and \"a piece of cake\" mean in this text.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Break the ice: een gespannen sfeer ontspannen, hier met een grap (1p). A piece of cake: iets heel makkelijks (1p). Beide zijn uitdrukkingen die je niet letterlijk vertaalt (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "After the exam Marie said that the test was sympathetic and that she would eventually go to the party. Her English friend looked confused because Marie meant something else.",
+        "v": "Which two words are false friends in Marie's sentence? Explain what she meant and what the English words mean.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Sympathetic betekent medelevend, Marie bedoelde nice of sympathiek (1p). Eventually betekent uiteindelijk, Marie bedoelde eventueel, possibly (1p). Het zijn false friends door de gelijkenis met Nederlandse woorden (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "We decided to do a plan for the weekend. My brother would make the shopping and I would do the dinner. In the afternoon we did a photo of the garden and made a nice chat.",
+        "v": "Correct the four collocation mistakes in the text.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Make a plan (1p), do the shopping (1p), make the dinner (1p), take a photo (1p). Have a chat telt als extra juist maar is niet verplicht."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Tom said that he was bad in maths, afraid for exams and that his success depended from his teacher. He is interested at science.",
+        "v": "Correct the four preposition mistakes in Tom's sentence.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bad at maths (1p), afraid of exams (1p), depended on his teacher (1p), interested in science (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "When Lisa heard the news, she was over the moon. Her friend told her to keep an eye on the clock, because the party would start soon. \"Actually, I forgot the time,\" Lisa said.",
+        "v": "Explain what \"over the moon\", \"keep an eye on\" and \"actually\" mean in this text.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Over the moon: dolblij (1p). Keep an eye on: in de gaten houden (1p). Actually: eigenlijk, in feite, niet actueel (1p)."
+       }
+      ]
      }
     ]
    },

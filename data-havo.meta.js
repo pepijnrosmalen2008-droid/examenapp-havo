@@ -2248,6 +2248,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A3",
+      "lo": "en.A.3",
+      "gs": 2,
+      "naam": "Collocaties, uitdrukkingen en false friends",
+      "beschrijving": "Je kent de vaste woordcombinaties van het Engels (make a plan, heavy rain), begrijpt uitdrukkingen als break the ice en trapt niet in woorden die op Nederlandse woorden lijken maar iets anders betekenen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Werkwoord en zelfstandig naamwoord (make, do, take, have)",
+       "Bijvoeglijk naamwoord en zelfstandig naamwoord",
+       "Vaste uitdrukkingen en idioom",
+       "False friends",
+       "Voorzetsels bij werkwoorden en bijvoeglijke naamwoorden",
+       "Strategie bij onbekende uitdrukkingen"
+      ],
+      "nSv": 28,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
