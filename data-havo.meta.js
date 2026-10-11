@@ -2292,6 +2292,28 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A5",
+      "lo": "en.A.5",
+      "gs": 2,
+      "naam": "Modale werkwoorden: can, must, should en might",
+      "beschrijving": "Je gebruikt can, must, should, might en hun varianten goed: voor kunnen, moeten, mogen, advies, kans en gevolgtrekking, ook in het verleden (should have, could have, must have).",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vorm en gebruik van modale werkwoorden",
+       "Moeten, niet hoeven en niet mogen",
+       "Advies en beleefdheid",
+       "Kans en gevolgtrekking",
+       "Aanbod en verzoek",
+       "Modale werkwoorden in het verleden"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

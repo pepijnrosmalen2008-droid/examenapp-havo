@@ -105044,6 +105044,684 @@ var VAKKEN = [
         "u": "Have you ever been, present perfect voor een ervaring tot nu (1p). When did you go, past simple omdat when naar een afgerond moment vraagt (1p). Been is het voltooid deelwoord van be, go is de stam na did (1p)."
        }
       ]
+     },
+     {
+      "id": "A5",
+      "lo": "en.A.5",
+      "gs": 2,
+      "naam": "Modale werkwoorden: can, must, should en might",
+      "beschrijving": "Je gebruikt can, must, should, might en hun varianten goed: voor kunnen, moeten, mogen, advies, kans en gevolgtrekking, ook in het verleden (should have, could have, must have).",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Vorm en gebruik van modale werkwoorden",
+       "Moeten, niet hoeven en niet mogen",
+       "Advies en beleefdheid",
+       "Kans en gevolgtrekking",
+       "Aanbod en verzoek",
+       "Modale werkwoorden in het verleden"
+      ],
+      "sam": "Modale werkwoorden (can, could, must, should, might, may, will, would, shall) krijgen geen -s, hebben geen to en vormen hun eigen vraag en ontkenning. Ze drukken kunnen, moeten, advies, kans en gevolgtrekking uit. Must is verplicht, mustn't is verboden, don't have to is niet hoeven. Might is een kleine kans, must be een stevige gevolgtrekking. In het verleden gebruik je een modaal werkwoord met have plus voltooid deelwoord: should have (spijt), could have (gemiste kans) en must have (gevolgtrekking).",
+      "begrippen": [
+       {
+        "t": "Modaal werkwoord",
+        "d": "Een hulpwerkwoord als can of must dat een houding uitdrukt, zoals kunnen of moeten."
+       },
+       {
+        "t": "Stam",
+        "d": "De basisvorm van het werkwoord die na een modaal werkwoord volgt, zonder to en zonder -s."
+       },
+       {
+        "t": "Verplichting",
+        "d": "Iets wat moet, uitgedrukt met must of have to."
+       },
+       {
+        "t": "Verbod",
+        "d": "Iets wat niet mag, uitgedrukt met must not of mustn't."
+       },
+       {
+        "t": "Niet hoeven",
+        "d": "Iets wat niet nodig is, uitgedrukt met do not have to."
+       },
+       {
+        "t": "Advies",
+        "d": "Een raad, uitgedrukt met should of ought to."
+       },
+       {
+        "t": "Toestemming",
+        "d": "Dat iets mag of kan, uitgedrukt met can of may."
+       },
+       {
+        "t": "Kans",
+        "d": "Een mogelijkheid die onzeker is, uitgedrukt met might, may of could."
+       },
+       {
+        "t": "Gevolgtrekking",
+        "d": "Een conclusie uit aanwijzingen, uitgedrukt met must be of can't be."
+       },
+       {
+        "t": "Beleefd verzoek",
+        "d": "Een vraag met could you of would you."
+       },
+       {
+        "t": "Aanbod",
+        "d": "Een voorstel om te helpen, uitgedrukt met shall I."
+       },
+       {
+        "t": "Modaal werkwoord in het verleden",
+        "d": "Een modaal werkwoord met have plus voltooid deelwoord, zoals should have."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which sentence is correct?",
+        "o": [
+         "She cans swim very well.",
+         "She can swim very well.",
+         "She can to swim very well.",
+         "She can swimming very well."
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Modaal werkwoord plus stam: geen -s, geen to.",
+        "uo": [
+         "Koos je \"She cans swim very well.\"? Dan denk je dat can een -s krijgt bij she. Een modaal werkwoord blijft hetzelfde, dus can.",
+         "Klopt: na een modaal werkwoord volgt de stam zonder -s en zonder to.",
+         "Koos je \"She can to swim very well.\"? Dan denk je dat to na can nodig is. Na een modaal werkwoord volgt de stam zonder to, dus can swim.",
+         "Koos je \"She can swimming very well.\"? Dan denk je dat de -ing-vorm volgt. Na can komt de stam, dus swim."
+        ],
+        "uh": "Can plus stam."
+       },
+       {
+        "v": "Which modal expresses a strong rule: \"You ___ wear a seat belt in the car.\"",
+        "o": [
+         "might",
+         "could",
+         "may",
+         "must"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Must is een sterke verplichting.",
+        "uo": [
+         "Koos je \"might\"? Dan denk je dat might een regel is. Might drukt een kleine kans uit, geen verplichting.",
+         "Koos je \"could\"? Dan denk je dat could een regel is. Could gaat over mogelijkheid of een vraag, geen verplichting.",
+         "Koos je \"may\"? Dan denk je dat may een verplichting is. May geeft toestemming of een kans, geen regel.",
+         "Klopt: must drukt een sterke verplichting of regel uit."
+        ],
+        "uh": "Must: verplicht."
+       },
+       {
+        "v": "What does \"You mustn't smoke here\" mean?",
+        "o": [
+         "smoking is forbidden",
+         "smoking is not necessary",
+         "smoking is possible",
+         "smoking is advised"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Mustn't is verboden, don't have to is niet nodig.",
+        "uo": [
+         "Klopt: mustn't betekent dat iets verboden is.",
+         "Koos je \"smoking is not necessary\"? Dan denk je dat mustn't hetzelfde is als don't have to. Mustn't is een verbod, niet nodig is don't have to.",
+         "Koos je \"smoking is possible\"? Dan denk je dat mustn't een mogelijkheid is. Het is het tegendeel, het is verboden.",
+         "Koos je \"smoking is advised\"? Dan denk je dat mustn't een advies is. Een advies is should, mustn't is een verbod."
+        ],
+        "uh": "Mustn't: verbod."
+       },
+       {
+        "v": "What does \"You don't have to come\" mean?",
+        "o": [
+         "you are not allowed to come at all",
+         "you must come",
+         "it is not necessary to come",
+         "you cannot come"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Don't have to is niet nodig, mustn't is verboden.",
+        "uo": [
+         "Koos je \"you are not allowed to come at all\"? Dan denk je dat don't have to een verbod is. Dat is mustn't, don't have to is niet hoeven.",
+         "Koos je \"you must come\"? Dan denk je dat don't have to een verplichting is. Het is het tegendeel, het hoeft niet.",
+         "Klopt: don't have to betekent dat iets niet hoeft.",
+         "Koos je \"you cannot come\"? Dan denk je dat don't have to onmogelijk betekent. Het betekent dat het niet hoeft, je mag wel komen."
+        ],
+        "uh": "Niet nodig."
+       },
+       {
+        "v": "Which sentence gives advice?",
+        "o": [
+         "You must be really thirsty now.",
+         "You can drink water.",
+         "You should drink more water.",
+         "You will drink water."
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Should en ought to geven advies.",
+        "uo": [
+         "Koos je \"You must be really thirsty now.\"? Dan denk je dat must hier advies geeft. Must be drukt een gevolgtrekking uit, geen advies.",
+         "Koos je \"You can drink water.\"? Dan denk je dat can advies is. Can geeft toestemming, geen advies.",
+         "Klopt: should is het modale werkwoord voor advies, de andere zinnen betekenen iets anders.",
+         "Koos je \"You will drink water.\"? Dan denk je dat will advies is. Will is een voorspelling, geen advies."
+        ],
+        "uh": "Should: advies."
+       },
+       {
+        "v": "Which modal expresses a small possibility: \"It ___ rain tomorrow.\"",
+        "o": [
+         "might",
+         "must",
+         "has to",
+         "needs"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 3,
+        "u": "Might, may en could drukken een mogelijkheid uit.",
+        "uo": [
+         "Klopt: might is het modale werkwoord voor een kleine, onzekere kans op regen.",
+         "Koos je \"must\"? Dan denk je dat must een kans uitdrukt. Must geeft een verplichting of zekerheid, niet een kleine kans.",
+         "Koos je \"has to\"? Dan denk je dat has to een kans is. Het is een verplichting, geen kans.",
+         "Koos je \"needs\"? Dan denk je dat needs hier past. Het is geen modaal werkwoord, en het drukt geen kans uit."
+        ],
+        "uh": "Might: mogelijk."
+       },
+       {
+        "v": "Which sentence is a polite request?",
+        "o": [
+         "You open the window, right now!",
+         "Open the window now, and be quick.",
+         "You must open the window at once.",
+         "Could you open the window?"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Could you en would you voor beleefde verzoeken.",
+        "uo": [
+         "Koos je \"You open the window, right now!\"? Dan denk je dat een bevel met you beleefd klinkt. Het is een opdracht zonder modaal werkwoord, dus niet beleefd.",
+         "Koos je \"Open the window now, and be quick.\"? Dan denk je dat het woord now een verzoek maakt. Het is een stellend bevel, beleefd vragen doe je met een vraag.",
+         "Koos je \"You must open the window at once.\"? Dan denk je dat must beleefd is. Het legt een verplichting op, een verzoek is een vraag.",
+         "Klopt: could you als vraag maakt het verzoek beleefd, omdat de ander kan weigeren."
+        ],
+        "uh": "Could you."
+       },
+       {
+        "v": "Which question is correct?",
+        "o": [
+         "Do you can help me?",
+         "Can you help me?",
+         "Can you to help me?",
+         "Can helps you me?"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Een modaal werkwoord vormt zelf de vraag.",
+        "uo": [
+         "Koos je \"Do you can help me?\"? Dan denk je dat do nodig is. Een modaal werkwoord gebruikt geen do, dus can you.",
+         "Klopt: bij een modaal werkwoord zet je het modaal werkwoord voor het onderwerp.",
+         "Koos je \"Can you to help me?\"? Dan denk je dat to nodig is. Na can volgt de stam, dus help.",
+         "Koos je \"Can helps you me?\"? Dan denk je dat het werkwoord verandert. Na can blijft het stam, de volgorde is can you help."
+        ],
+        "uh": "Can you."
+       },
+       {
+        "v": "Which modal fits the gap?",
+        "o": [
+         "are not allowed to",
+         "cannot possibly",
+         "should not",
+         "do not have to"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Do not have to betekent niet hoeven.",
+        "uo": [
+         "Koos je \"are not allowed to\"? Dan denk je dat het verboden is. Het hoeft alleen niet, dat is do not have to.",
+         "Koos je \"cannot possibly\"? Dan denk je dat het onmogelijk is. Het hoeft niet, maar kan wel.",
+         "Koos je \"should not\"? Dan denk je dat het advies is. Het gaat om niet hoeven, dus do not have to.",
+         "Klopt: op een vrije dag hoef je niet naar school, dus don't have to."
+        ],
+        "uh": "Niet hoeven.",
+        "ctx": "Tomorrow is a national holiday, so we ______ go to school."
+       },
+       {
+        "v": "Which modal fits the gap?",
+        "o": [
+         "might",
+         "should",
+         "can",
+         "would"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Should geeft advies.",
+        "uo": [
+         "Koos je \"might\"? Dan denk je dat might advies geeft. Might drukt een kleine kans uit, geen advies.",
+         "Klopt: should geeft advies, hier om vroeg naar bed te gaan.",
+         "Koos je \"can\"? Dan denk je dat can advies geeft. Can geeft toestemming, geen advies.",
+         "Koos je \"would\"? Dan denk je dat would advies geeft. Would past bij een voorwaarde, hier is should nodig."
+        ],
+        "uh": "Should: advies.",
+        "ctx": "You look very tired. I think you ______ go to bed early tonight."
+       },
+       {
+        "v": "Which modal fits the gap?",
+        "o": [
+         "must",
+         "has to",
+         "might",
+         "shall"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Might is een kleine kans, must is zekerheid.",
+        "uo": [
+         "Koos je \"must\"? Dan denk je dat must een kans uitdrukt. Must geeft zekerheid, dat past niet bij I am not sure.",
+         "Koos je \"has to\"? Dan denk je dat has to hier past. Het is een verplichting, geen kans.",
+         "Klopt: I am not sure past bij might, een kleine kans.",
+         "Koos je \"shall\"? Dan denk je dat shall past. Shall hoort bij aanbiedingen, niet bij kans."
+        ],
+        "uh": "Not sure: might.",
+        "ctx": "I am not sure, but he ______ be in a meeting."
+       },
+       {
+        "v": "Which sentence is an offer?",
+        "o": [
+         "Shall I carry your bag?",
+         "You carry my heavy bag now.",
+         "I carried your bag yesterday.",
+         "Can't you carry my bag, please?"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Shall I is een aanbod.",
+        "uo": [
+         "Klopt: met shall I plus een werkwoord bied je aan om iets voor iemand te doen.",
+         "Koos je \"You carry my heavy bag now.\"? Dan denk je dat een opdracht een aanbod is. Je zegt wat de ander moet doen, bij een aanbod bied jij zelf iets aan.",
+         "Koos je \"I carried your bag yesterday.\"? Dan denk je dat de verleden tijd een aanbod is. Dat vertelt wat al gebeurd is, een aanbod gaat over wat je nu wilt doen.",
+         "Koos je \"Can't you carry my bag, please?\"? Dan denk je dat can't you een aanbod is. Het vraagt de ander iets te doen, bij een aanbod gaat het om jouw hulp."
+        ],
+        "uh": "Shall I."
+       },
+       {
+        "v": "Which modal fits the gap?",
+        "o": [
+         "must",
+         "might",
+         "should",
+         "can't"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Must drukt een sterke gevolgtrekking uit.",
+        "uo": [
+         "Klopt: de aanwijzingen zijn sterk, dus must drukt een stevige gevolgtrekking uit.",
+         "Koos je \"might\"? Dan denk je dat might de aanwijzingen goed samenvat. Might is een kleine kans, de aanwijzingen zijn sterk.",
+         "Koos je \"should\"? Dan denk je dat should een gevolgtrekking is. Should is een advies of verwachting, must is sterker.",
+         "Koos je \"can't\"? Dan denk je dat can't past. Can't betekent onmogelijk, de aanwijzingen laten het tegendeel zien."
+        ],
+        "uh": "Must: zeker.",
+        "ctx": "The lights are on and I can hear his voice in the kitchen, so he ______ be at home."
+       },
+       {
+        "v": "Which form is correct: \"Yesterday I ___ get up at six.\"",
+        "o": [
+         "must",
+         "have to",
+         "had to",
+         "musted"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Had to is de verleden tijd van must.",
+        "uo": [
+         "Koos je \"must\"? Dan denk je dat must ook de verleden tijd is. Must heeft geen verleden tijd, je gebruikt had to.",
+         "Koos je \"have to\"? Dan denk je dat have to hier past. Het is de tegenwoordige tijd, yesterday vraagt had to.",
+         "Klopt: must heeft geen verleden tijd, dus je gebruikt had to voor verplichting in het verleden.",
+         "Koos je \"musted\"? Dan denk je dat must regelmatig is. Het is een modaal werkwoord, de verleden tijd is had to."
+        ],
+        "uh": "Had to: verleden tijd."
+       },
+       {
+        "v": "Which form is correct: \"He ___ taken the bus, but he walked.\"",
+        "o": [
+         "could has",
+         "could have",
+         "can have",
+         "could to have"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 5,
+        "u": "Could have plus voltooid deelwoord: een gemiste mogelijkheid.",
+        "uo": [
+         "Koos je \"could has\"? Dan denk je dat has bij he past. Na een modaal werkwoord gebruik je have, dus could have.",
+         "Klopt: could have plus voltooid deelwoord drukt een gemiste mogelijkheid uit.",
+         "Koos je \"can have\"? Dan denk je dat can have de verleden tijd is. Dat is could have, can past niet.",
+         "Koos je \"could to have\"? Dan denk je dat to nodig is. Na een modaal werkwoord volgt have, zonder to."
+        ],
+        "uh": "Could have."
+       },
+       {
+        "v": "Which sentence expresses regret about the past?",
+        "o": [
+         "I should study more next time.",
+         "I must have studied more for it.",
+         "I can study more.",
+         "I should have studied more."
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 5,
+        "u": "Should have plus voltooid deelwoord: spijt of kritiek.",
+        "uo": [
+         "Koos je \"I should study more next time.\"? Dan denk je dat should past. Dat gaat over nu of de toekomst, niet over het verleden.",
+         "Koos je \"I must have studied more for it.\"? Dan denk je dat must have spijt is. Het is een gevolgtrekking, geen spijt.",
+         "Koos je \"I can study more.\"? Dan denk je dat can spijt is. Het is een mogelijkheid, geen spijt.",
+         "Klopt: should have plus voltooid deelwoord drukt spijt uit over iets in het verleden."
+        ],
+        "uh": "Spijt: should have."
+       },
+       {
+        "v": "Which expression does Anna use to give advice?",
+        "o": [
+         "you will probably learn",
+         "you ought to go",
+         "you must send",
+         "I would be happy to help"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Ought to en should geven advies.",
+        "uo": [
+         "Koos je \"you will probably learn\"? Dan denk je dat will advies is. Will is een voorspelling, geen advies.",
+         "Klopt: ought to geeft advies, net als should.",
+         "Koos je \"you must send\"? Dan denk je dat must advies is. Must is een verplichting, geen advies.",
+         "Koos je \"I would be happy to help\"? Dan denk je dat would advies is. Het is een aanbod, geen advies."
+        ],
+        "uh": "Ought to: advies.",
+        "ctx": "Hi Sam, thanks for your email. You asked whether you should apply for the exchange year. I think you ought to go: it might be hard at first, but you will probably learn a lot. You do not have to decide today, but you must send your application before 1 March. Could you ask your teacher for a recommendation? I would be happy to help. Anna"
+       },
+       {
+        "v": "What does \"You do not have to bring a towel\" mean for visitors?",
+        "o": [
+         "bringing a towel is not necessary",
+         "bringing a towel is forbidden",
+         "a towel is the only thing to bring",
+         "visitors cannot bring a towel"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Do not have to betekent niet hoeven.",
+        "uo": [
+         "Klopt: do not have to betekent niet hoeven, omdat het zwembad handdoeken geeft.",
+         "Koos je \"bringing a towel is forbidden\"? Dan denk je dat do not have to een verbod is. Dat is must not, hier hoeft het alleen niet.",
+         "Koos je \"a towel is the only thing to bring\"? Dan denk je dat het een verplichting is. Het is het tegendeel, handdoeken zijn aanwezig.",
+         "Koos je \"visitors cannot bring a towel\"? Dan denk je dat het onmogelijk is. Het hoeft alleen niet, je mag er een meenemen."
+        ],
+        "uh": "Niet hoeven.",
+        "ctx": "Notice for visitors: You must shower before entering the pool. Children under ten must be accompanied by an adult, and running is not allowed. You do not have to bring a towel because the pool provides them, but you should wear a swimming cap if you have long hair. If you cannot swim, you can ask a lifeguard for a float."
+       },
+       {
+        "v": "Which description of the notice is correct?",
+        "o": [
+         "\"must shower\" is advice, \"should wear a cap\" is an obligation",
+         "both are obligations",
+         "both are advice",
+         "\"must shower\" is an obligation, \"should wear a cap\" is advice"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Must is verplicht, should is advies.",
+        "uo": [
+         "Koos je \"must shower is advice, should wear a cap is an...\"? Dan denk je dat de twee zijn omgedraaid. Must is verplicht, should is advies.",
+         "Koos je \"both are obligations\"? Dan denk je dat should net zo sterk is als must. Should is zwakker, het is een advies.",
+         "Koos je \"both are advice\"? Dan denk je dat must advies is. Must is een regel, het is verplicht.",
+         "Klopt: must is een verplichting en should is een advies."
+        ],
+        "uh": "Must tegenover should.",
+        "ctx": "Notice for visitors: You must shower before entering the pool. Children under ten must be accompanied by an adult, and running is not allowed. You do not have to bring a towel because the pool provides them, but you should wear a swimming cap if you have long hair. If you cannot swim, you can ask a lifeguard for a float."
+       },
+       {
+        "v": "What does \"you can ask a lifeguard for a float\" express?",
+        "o": [
+         "a strict obligation for everybody",
+         "friendly advice from the lifeguard",
+         "permission or possibility",
+         "a clear prohibition at the pool"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Can geeft mogelijkheid of toestemming.",
+        "uo": [
+         "Koos je \"a strict obligation for everybody\"? Dan denk je dat je de lifeguard móét vragen. Dan zou er must staan, can laat een keuze en een mogelijkheid.",
+         "Koos je \"friendly advice from the lifeguard\"? Dan denk je dat de tekst je aanraadt een lifeguard te vragen. Dan zou er should staan, can noemt alleen dat het mag of kan.",
+         "Klopt: can drukt hier toestemming of mogelijkheid uit.",
+         "Koos je \"a clear prohibition at the pool\"? Dan denk je dat can iets verbiedt. Dan zou er must not staan, can zegt juist dat het kan."
+        ],
+        "uh": "Can: mogelijk.",
+        "ctx": "Notice for visitors: You must shower before entering the pool. Children under ten must be accompanied by an adult, and running is not allowed. You do not have to bring a towel because the pool provides them, but you should wear a swimming cap if you have long hair. If you cannot swim, you can ask a lifeguard for a float."
+       },
+       {
+        "v": "What does \"She should have left home earlier\" tell us?",
+        "o": [
+         "she left early and caught the train",
+         "she will leave earlier tomorrow",
+         "she did not leave early enough, and it was a mistake",
+         "she is not allowed to leave home early"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 5,
+        "u": "Should have: de handeling is niet gebeurd en dat was een fout.",
+        "uo": [
+         "Koos je \"she left early and caught the train\"? Dan denk je dat should have betekent dat ze deed. Het geeft juist aan dat ze het niet deed, dat was een fout.",
+         "Koos je \"she will leave earlier tomorrow\"? Dan denk je dat should have de toekomst is. Het gaat over het verleden, niet morgen.",
+         "Klopt: should have plus voltooid deelwoord drukt kritiek of spijt uit over iets in het verleden.",
+         "Koos je \"she is not allowed to leave home early\"? Dan denk je dat het een verbod is. Het is een kritiek over het verleden, geen regel."
+        ],
+        "uh": "Verleden: kritiek.",
+        "ctx": "Eva arrived at the station at ten past eight, but her train had already left. She should have left home earlier, but she had overslept. Her brother said she could have taken the bus, though that would have been slower. \"You might have caught the 8.15 train if you had run,\" he joked. \"Or you must have been very tired last night.\" Eva laughed and decided to buy an alarm clock."
+       },
+       {
+        "v": "What does \"she could have taken the bus\" mean?",
+        "o": [
+         "she took the bus and arrived later",
+         "she was not able to take the bus",
+         "she must take the bus next time",
+         "taking the bus was possible, but she did not do it"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 5,
+        "u": "Could have: mogelijk, maar niet gedaan.",
+        "uo": [
+         "Koos je \"she took the bus and arrived later\"? Dan denk je dat could have vertelt wat er gebeurde. De zin zegt juist dat het kon, maar dat ze het niet deed.",
+         "Koos je \"she was not able to take the bus\"? Dan denk je dat could have onmogelijk betekent. Het was wel mogelijk, ze koos er alleen niet voor.",
+         "Koos je \"she must take the bus next time\"? Dan denk je dat could have een afspraak voor later is. Het kijkt terug, het geeft geen regel voor de toekomst.",
+         "Klopt: could have plus voltooid deelwoord drukt een gemiste mogelijkheid uit."
+        ],
+        "uh": "Gemiste kans.",
+        "ctx": "Eva arrived at the station at ten past eight, but her train had already left. She should have left home earlier, but she had overslept. Her brother said she could have taken the bus, though that would have been slower. \"You might have caught the 8.15 train if you had run,\" he joked. \"Or you must have been very tired last night.\" Eva laughed and decided to buy an alarm clock."
+       },
+       {
+        "v": "What does \"you must have been very tired last night\" express?",
+        "o": [
+         "a strong deduction about the past",
+         "an obligation that existed in the past",
+         "a prohibition for people at the station",
+         "a polite request to somebody else now"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 5,
+        "u": "Must have plus voltooid deelwoord: een sterke gevolgtrekking over het verleden.",
+        "uo": [
+         "Klopt: must have plus voltooid deelwoord is een stevige gevolgtrekking over het verleden.",
+         "Koos je \"an obligation that existed in the past\"? Dan denk je dat must have een verplichting is. Dat is had to, must have is een gevolgtrekking.",
+         "Koos je \"a prohibition for people at the station\"? Dan denk je dat must have een verbod is. Dat is must not, must have is een gevolgtrekking.",
+         "Koos je \"a polite request to somebody else now\"? Dan denk je dat must have een verzoek is. Dat is could you, must have is een gevolgtrekking."
+        ],
+        "uh": "Must have: gevolgtrekking.",
+        "ctx": "Eva arrived at the station at ten past eight, but her train had already left. She should have left home earlier, but she had overslept. Her brother said she could have taken the bus, though that would have been slower. \"You might have caught the 8.15 train if you had run,\" he joked. \"Or you must have been very tired last night.\" Eva laughed and decided to buy an alarm clock."
+       },
+       {
+        "v": "Why does Anna write \"it might be hard at first\"?",
+        "o": [
+         "she is sure it will be hard",
+         "she thinks it is possible but not certain",
+         "she forbids Sam to go",
+         "she offers to help"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Might drukt een kleine kans uit.",
+        "uo": [
+         "Koos je \"she is sure it will be hard\"? Dan denk je dat might zekerheid is. Might is een kleine kans, geen zekerheid.",
+         "Klopt: might drukt een kleine kans uit, niet zekerheid.",
+         "Koos je \"she forbids Sam to go\"? Dan denk je dat might een verbod is. Dat is must not, might gaat over kans.",
+         "Koos je \"she offers to help\"? Dan denk je dat might een aanbod is. Dat is shall I, might gaat over kans."
+        ],
+        "uh": "Might: kans.",
+        "ctx": "Hi Sam, thanks for your email. You asked whether you should apply for the exchange year. I think you ought to go: it might be hard at first, but you will probably learn a lot. You do not have to decide today, but you must send your application before 1 March. Could you ask your teacher for a recommendation? I would be happy to help. Anna"
+       },
+       {
+        "v": "What is the difference between \"do not have to decide today\" and \"must send your application before 1 March\"?",
+        "o": [
+         "both are required",
+         "the first is forbidden, the second is advice",
+         "both are advice",
+         "the first is not necessary, the second is required"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Do not have to is niet nodig, must is verplicht.",
+        "uo": [
+         "Koos je \"both are required\"? Dan denk je dat do not have to hetzelfde is als must. Het is het tegendeel, het hoeft niet.",
+         "Koos je \"the first is forbidden, the second is advice\"? Dan denk je dat do not have to een verbod is. Dat is must not, en must is geen advies.",
+         "Koos je \"both are advice\"? Dan denk je dat must advies is. Must is een regel, het is verplicht.",
+         "Klopt: do not have to betekent niet hoeven en must betekent verplicht."
+        ],
+        "uh": "Niet nodig tegenover verplicht.",
+        "ctx": "Hi Sam, thanks for your email. You asked whether you should apply for the exchange year. I think you ought to go: it might be hard at first, but you will probably learn a lot. You do not have to decide today, but you must send your application before 1 March. Could you ask your teacher for a recommendation? I would be happy to help. Anna"
+       },
+       {
+        "v": "Which is the correct version?",
+        "o": [
+         "She can speak three languages, but she must learn French. Yesterday she had to go to the dentist.",
+         "She can speak three languages, but she must to learn French. Yesterday she had to go to the dentist.",
+         "She cans speak three languages, but she must learn French. Yesterday she had to go to the dentist.",
+         "She can speak three languages, but she must learn French. Yesterday she must go to the dentist."
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Modaal werkwoord plus stam, en had to als verleden tijd van must.",
+        "uo": [
+         "Klopt: can en must krijgen geen -s of to, en must heeft de verleden tijd had to.",
+         "Koos je \"She can speak three languages, but she must to...\"? Dan is alleen de eerste en de laatste fout hersteld. Na must staat nog to, terwijl een modaal werkwoord geen to krijgt.",
+         "Koos je \"She cans speak three languages, but she must learn...\"? Dan is can nog steeds met -s geschreven. Een modaal werkwoord blijft onveranderd, dus alleen de rest is verbeterd.",
+         "Koos je \"She can speak three languages, but she must learn...\"? Dan is de verleden tijd nog niet hersteld. Must bestaat niet in het verleden, dus had to is nodig."
+        ],
+        "uh": "Can, must, had to.",
+        "ctx": "A student wrote: \"She cans speak three languages, but she must to learn French. Yesterday she musted go to the dentist.\""
+       },
+       {
+        "v": "Which form fits the gap?",
+        "o": [
+         "could just about",
+         "were able to",
+         "can manage to",
+         "must have been able to"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Voor een enkele gelukte poging gebruik je was of were able to.",
+        "uo": [
+         "Koos je \"could just about\"? Dan denk je dat could altijd de verleden tijd van can is. Voor een enkele gelukte poging gebruik je were able to, could is voor algemeen kunnen.",
+         "Klopt: bij een gelukte poging op een bepaald moment gebruik je was of were able to.",
+         "Koos je \"can manage to\"? Dan denk je dat can de verleden tijd is. Het is tegenwoordige tijd, finally verwijst naar het verleden.",
+         "Koos je \"must have been able to\"? Dan denk je dat must hier kunnen betekent. Het is een verplichting of gevolgtrekking, geen vermogen."
+        ],
+        "uh": "Were able to.",
+        "ctx": "The mountain path was blocked by snow and the weather was getting worse. After two hours of hard digging, the rescuers finally ______ reach the injured hikers."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "A student wrote: \"My brother cans play the guitar, but he must to practise every day. Yesterday he musted go to a lesson, but he don't have to pay.\"",
+        "v": "Find four mistakes in the text and correct them.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Can play (geen -s) (1p). Must practise (geen to) (1p). Had to go (verleden tijd van must) (1p). Does not have to pay (juiste vorm van niet hoeven) (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "At the library the sign says: \"You must be silent. You should not use your phone. You do not have to return the books today, but you must return them before Friday.\"",
+        "v": "Explain what each of the three rules means: must, should not and do not have to.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Must be silent: verplicht (1p). Should not use your phone: advies of afraden, niet verboden (1p). Do not have to return the books today: niet nodig vandaag, maar wel voor vrijdag (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Lena was late for school. She said: \"I should have left earlier. I could have taken my bike, but it was raining. My brother says I might have caught the bus if I had hurried. He thinks I must have been very tired.\"",
+        "v": "Explain what \"should have left\", \"could have taken\" and \"must have been\" mean in this text.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Should have left: ze had eerder moeten vertrekken, maar deed het niet, spijt of kritiek (1p). Could have taken: ze had de fiets kunnen nemen, maar deed het niet (1p). Must have been: een sterke gevolgtrekking over het verleden (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Mark is not sure where Eva is. He says: \"She might be at home. She may be at the shop, or she could be on her way. She can't be at school, because it is Sunday.\"",
+        "v": "Rank the four expressions from least to most certain and explain.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Might, may en could drukken een kleine kans uit (1p). Can't be drukt onmogelijkheid uit (1p), met als reden dat het zondag is (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Complete the dialogue. Anna: \"Could you ___ me with my bag, please?\" Ben: \"Of course. ___ I carry it upstairs?\" Anna: \"You ___ carry it all the way, only to the door. Thank you.\" Ben: \"You ___ to see a doctor about your back.\"",
+        "v": "Fill in the missing forms and explain which function each modal has.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Help (stam na could you, verzoek) (1p). Shall (aanbod) (1p). Do not have to / needn't (niet nodig) (1p). Ought / should (advies) (1p)."
+       }
+      ]
      }
     ]
    },
