@@ -2314,6 +2314,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A6",
+      "lo": "en.A.6",
+      "gs": 2,
+      "naam": "Conditionals: type 1, 2 en 3",
+      "beschrijving": "Je vormt en herkent de drie soorten if-zinnen (echte kans, onwerkelijk nu, onwerkelijk in het verleden), gebruikt unless en in case en kiest in een tekst het juiste type.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Type 1: echte mogelijkheid in de toekomst",
+       "Type 2: onwerkelijk nu",
+       "Type 3: onwerkelijk in het verleden",
+       "Unless, in case en if I were",
+       "Het juiste type kiezen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

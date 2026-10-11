@@ -105722,6 +105722,680 @@ var VAKKEN = [
         "u": "Help (stam na could you, verzoek) (1p). Shall (aanbod) (1p). Do not have to / needn't (niet nodig) (1p). Ought / should (advies) (1p)."
        }
       ]
+     },
+     {
+      "id": "A6",
+      "lo": "en.A.6",
+      "gs": 2,
+      "naam": "Conditionals: type 1, 2 en 3",
+      "beschrijving": "Je vormt en herkent de drie soorten if-zinnen (echte kans, onwerkelijk nu, onwerkelijk in het verleden), gebruikt unless en in case en kiest in een tekst het juiste type.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Type 1: echte mogelijkheid in de toekomst",
+       "Type 2: onwerkelijk nu",
+       "Type 3: onwerkelijk in het verleden",
+       "Unless, in case en if I were",
+       "Het juiste type kiezen"
+      ],
+      "sam": "Een conditional heeft een if-zin en een hoofdzin. Type 1 (if plus present simple, will) gaat over een echte mogelijkheid in de toekomst. Type 2 (if plus past simple, would) beschrijft een onwerkelijke situatie nu, ook voor advies met if I were you. Type 3 (if plus past perfect, would have plus voltooid deelwoord) gaat over het verleden dat niet gebeurd is. Unless betekent if not en in case betekent voor het geval dat. Zet would of will nooit in de if-zin.",
+      "begrippen": [
+       {
+        "t": "Conditional",
+        "d": "Een zin met een voorwaarde (if-zin) en een gevolg (hoofdzin)."
+       },
+       {
+        "t": "If-zin",
+        "d": "Het deel van de zin dat met if begint en de voorwaarde noemt."
+       },
+       {
+        "t": "Hoofdzin",
+        "d": "Het deel van de zin dat het gevolg noemt."
+       },
+       {
+        "t": "Type 1",
+        "d": "If plus present simple, dan will plus stam: een echte mogelijkheid in de toekomst."
+       },
+       {
+        "t": "Type 2",
+        "d": "If plus past simple, dan would plus stam: een onwerkelijke situatie nu."
+       },
+       {
+        "t": "Type 3",
+        "d": "If plus past perfect, dan would have plus voltooid deelwoord: een onwerkelijke situatie in het verleden."
+       },
+       {
+        "t": "Onwerkelijk",
+        "d": "Een situatie die niet waar is of niet gebeurd is."
+       },
+       {
+        "t": "Unless",
+        "d": "Een woord dat if not betekent: tenzij."
+       },
+       {
+        "t": "In case",
+        "d": "Voor het geval dat: een voorzorgsmaatregel."
+       },
+       {
+        "t": "If I were you",
+        "d": "Een vaste uitdrukking om advies te geven."
+       },
+       {
+        "t": "Voorwaarde",
+        "d": "Iets wat moet gebeuren voordat iets anders gebeurt."
+       },
+       {
+        "t": "Gevolg",
+        "d": "Wat er gebeurt als de voorwaarde klopt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Complete the sentence: \"If it rains tomorrow, we ___ at home.\"",
+        "o": [
+         "would stay",
+         "will stay",
+         "stayed",
+         "would have stayed"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Type 1: if plus present simple, dan will plus stam.",
+        "uo": [
+         "Koos je \"would stay\"? Dan denk je dat would hier past. Would hoort bij een onwerkelijke situatie, hier gaat het om een echte mogelijkheid met will.",
+         "Klopt: bij een echte mogelijkheid in de toekomst gebruik je if plus present simple, gevolgd door will.",
+         "Koos je \"stayed\"? Dan denk je dat de verleden tijd past. De zin gaat over morgen, dus will stay.",
+         "Koos je \"would have stayed\"? Dan denk je dat de derde soort past. Dat gaat over het verleden, hier gaat het om morgen."
+        ],
+        "uh": "Type 1: will."
+       },
+       {
+        "v": "Complete the sentence: \"If I had more time, I ___ learn Spanish.\"",
+        "o": [
+         "will",
+         "had",
+         "would have",
+         "would"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Type 2: if plus past simple, dan would plus stam.",
+        "uo": [
+         "Koos je \"will\"? Dan denk je dat will past. Will hoort bij een echte mogelijkheid, hier is de situatie onwerkelijk.",
+         "Koos je \"had\"? Dan denk je dat had ook in de hoofdzin staat. Had is al gebruikt in de if-zin, de hoofdzin heeft would nodig.",
+         "Koos je \"would have\"? Dan denk je dat would have past. Dat is voor het verleden, hier gaat het om nu.",
+         "Klopt: if plus past simple vraagt would in de hoofdzin voor een onwerkelijke situatie nu."
+        ],
+        "uh": "Type 2: would."
+       },
+       {
+        "v": "Complete the sentence: \"If she had studied, she ___ the exam.\"",
+        "o": [
+         "would have passed",
+         "would certainly pass",
+         "will probably pass",
+         "had definitely passed"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Type 3: if plus past perfect, dan would have plus voltooid deelwoord.",
+        "uo": [
+         "Klopt: if plus past perfect vraagt would have plus voltooid deelwoord voor een onwerkelijke situatie in het verleden.",
+         "Koos je \"would certainly pass\"? Dan denk je dat would pass past. Dat is type 2 voor nu, hier gaat het om het verleden.",
+         "Koos je \"will probably pass\"? Dan denk je dat will pass past. Dat is type 1 voor de toekomst, de zin gaat over iets wat voorbij is.",
+         "Koos je \"had definitely passed\"? Dan denk je dat had passed past. Dat is de tijd van de if-zin, de hoofdzin heeft would have nodig."
+        ],
+        "uh": "Type 3: would have."
+       },
+       {
+        "v": "Which word means \"if not\"?",
+        "o": [
+         "until",
+         "while",
+         "unless",
+         "although"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 3,
+        "u": "Unless betekent if not.",
+        "uo": [
+         "Koos je \"until\"? Dan denk je dat until als niet betekent. Until betekent totdat, het geeft een eindpunt.",
+         "Koos je \"while\"? Dan denk je dat while een voorwaarde is. While betekent terwijl, het geeft gelijktijdigheid.",
+         "Klopt: unless betekent als niet, dus het is hetzelfde als if not.",
+         "Koos je \"although\"? Dan denk je dat although een voorwaarde is. Although betekent hoewel, het geeft een tegenstelling."
+        ],
+        "uh": "Unless: tenzij."
+       },
+       {
+        "v": "Which sentence is a type 2 conditional?",
+        "o": [
+         "If I win the lottery, I will travel the world.",
+         "If I had won the lottery, I would have travelled the world.",
+         "If I won the lottery, I would travel the world.",
+         "If I win the lottery, I travel the world."
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Type 2: past simple en would.",
+        "uo": [
+         "Koos je \"If I win the lottery, I will travel the world.\"? Dan denk je dat dit type 2 is. Het is type 1 met een echte kans, if plus present en will.",
+         "Koos je \"If I had won the lottery, I would have travelled...\"? Dan denk je dat dit type 2 is. Het is type 3 voor het verleden, if plus past perfect.",
+         "Klopt: if plus past simple en would plus stam drukken een onwerkelijke situatie nu uit.",
+         "Koos je \"If I win the lottery, I travel the world.\"? Dan denk je dat dit een conditional van type 2 is. Het is een algemene waarheid, zonder would of will."
+        ],
+        "uh": "Past simple en would: type 2."
+       },
+       {
+        "v": "Which tense follows \"if\" in a type 1 conditional?",
+        "o": [
+         "present simple",
+         "will plus a verb",
+         "past simple tense",
+         "past perfect tense"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Type 1: if plus present simple.",
+        "uo": [
+         "Klopt: in een type 1 conditional staat het werkwoord na if in de present simple.",
+         "Koos je \"will plus a verb\"? Dan denk je dat will na if mag staan. Will hoort in de hoofdzin, niet in de voorwaarde, dus na if volgt de present simple.",
+         "Koos je \"past simple tense\"? Dan denk je dat de verleden tijd bij een echte kans hoort. Dat is de vorm van type 2 voor onwerkelijke situaties, type 1 kijkt vooruit.",
+         "Koos je \"past perfect tense\"? Dan denk je dat een voltooide tijd voor de toekomst past. Die vorm zie je in type 3 over het verleden, type 1 gaat over de toekomst."
+        ],
+        "uh": "If plus present."
+       },
+       {
+        "v": "Which form is correct in a type 2 sentence: \"If I ___ you, I would ask for help.\"",
+        "o": [
+         "am",
+         "will be",
+         "have been",
+         "were"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "If I were you: advies in type 2.",
+        "uo": [
+         "Koos je \"am\"? Dan denk je dat am past. Dat is de tegenwoordige tijd, type 2 gebruikt de verleden tijd.",
+         "Koos je \"will be\"? Dan denk je dat will be past. Will hoort niet in de if-zin, na if gebruik je de verleden tijd.",
+         "Koos je \"have been\"? Dan denk je dat have been past. Dat is het present perfect, type 2 gebruikt de verleden tijd.",
+         "Klopt: in een onwerkelijke if-zin gebruik je vaak were voor alle personen."
+        ],
+        "uh": "If I were."
+       },
+       {
+        "v": "Which sentence about a real future possibility is correct?",
+        "o": [
+         "If it will be sunny, we will go to the beach.",
+         "If it is sunny, we will go to the beach.",
+         "If it is sunny, we would go to the beach.",
+         "If it was sunny, we will go to the beach."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Type 1: present simple in de if-zin, will in de hoofdzin.",
+        "uo": [
+         "Koos je \"If it will be sunny, we will go to the beach.\"? Dan denk je dat will in de if-zin past. Na if staat de present simple, dus if it is sunny.",
+         "Klopt: if plus present simple en will in de hoofdzin vormen een type 1.",
+         "Koos je \"If it is sunny, we would go to the beach.\"? Dan denk je dat would in de hoofdzin past. Would hoort bij onwerkelijke situaties, bij een echte kans gebruik je will.",
+         "Koos je \"If it was sunny, we will go to the beach.\"? Dan denk je dat de verleden tijd in de if-zin kan. Type 1 vraagt de present simple, dus is."
+        ],
+        "uh": "Present en will: type 1."
+       },
+       {
+        "v": "Which conditional sentence about an unreal present is correct?",
+        "o": [
+         "If she would have a car, she would drive to work.",
+         "If she has a car, she would drive to work.",
+         "If she had a car, she will drive to work.",
+         "If she had a car, she would drive to work."
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Type 2: past simple en would, niet would in de if-zin.",
+        "uo": [
+         "Koos je \"If she would have a car, she would drive to work.\"? Dan denk je dat would in de if-zin past. Na if staat de past simple, dus if she had.",
+         "Koos je \"If she has a car, she would drive to work.\"? Dan denk je dat de present simple bij would past. Dat zijn twee verschillende types, mix ze niet.",
+         "Koos je \"If she had a car, she will drive to work.\"? Dan denk je dat will bij de past simple past. Type 2 gebruikt would, will hoort bij type 1.",
+         "Klopt: if plus past simple en would plus stam is type 2."
+        ],
+        "uh": "Past simple en would: type 2."
+       },
+       {
+        "v": "Which conditional sentence about an unreal past is correct?",
+        "o": [
+         "If we would have left earlier, we would have caught the train.",
+         "If we had left earlier, we would have caught the train.",
+         "If we had left earlier, we would catch the train.",
+         "If we left earlier, we would have caught the train."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Type 3: past perfect in de if-zin, would have in de hoofdzin.",
+        "uo": [
+         "Koos je \"If we would have left earlier, we would have caught...\"? Dan denk je dat would have ook in de if-zin kan. De if-zin vraagt de past perfect, zonder would.",
+         "Klopt: if plus past perfect en would have plus voltooid deelwoord is type 3.",
+         "Koos je \"If we had left earlier, we would catch the train.\"? Dan denk je dat de hoofdzin zoals type 2 klinkt. Voor iets wat voorbij is heb je would have plus een voltooid deelwoord nodig, niet de stam.",
+         "Koos je \"If we left earlier, we would have caught the train.\"? Dan denk je dat de if-zin de past simple kan hebben. Dan mis je had left, de voltooid verleden tijd van type 3."
+        ],
+        "uh": "Past perfect en would have: type 3."
+       },
+       {
+        "v": "Which word fits the gap?",
+        "o": [
+         "if",
+         "because",
+         "unless",
+         "until"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Unless betekent if not.",
+        "uo": [
+         "Koos je \"if\"? Dan denk je dat de gewone voorwaarde past. Dan zeg je dat we de bus missen als we ons haasten, dat is het tegendeel.",
+         "Koos je \"because\"? Dan denk je dat de zin een oorzaak geeft. Because noemt een reden, hier hoort een voorwaarde.",
+         "Klopt: unless betekent if not, dus we missen de bus tenzij we ons haasten.",
+         "Koos je \"until\"? Dan denk je dat de zin een eindpunt geeft. Until betekent totdat, hier gaat het om een voorwaarde."
+        ],
+        "uh": "Unless: tenzij.",
+        "ctx": "We will miss the bus ______ we hurry."
+       },
+       {
+        "v": "Which expression fits the gap?",
+        "o": [
+         "in case",
+         "unless",
+         "until",
+         "as soon as"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "In case betekent voor het geval dat.",
+        "uo": [
+         "Klopt: in case betekent voor het geval dat, een voorzorgsmaatregel.",
+         "Koos je \"unless\"? Dan denk je dat unless past. Dan zou je geen paraplu nemen tenzij het regent, dat is anders dan een voorzorg.",
+         "Koos je \"until\"? Dan denk je dat until past. Until geeft een eindpunt, geen voorzorgsmaatregel.",
+         "Koos je \"as soon as\"? Dan denk je dat as soon as past. Dat betekent zodra, je neemt de paraplu al mee voordat het regent."
+        ],
+        "uh": "In case.",
+        "ctx": "Take an umbrella ______ it rains later this afternoon."
+       },
+       {
+        "v": "What does a type 1 conditional express?",
+        "o": [
+         "a real possibility in the future",
+         "an unreal situation that is not true now",
+         "an impossible event somewhere in the past",
+         "a habit that you have every day"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 4,
+        "u": "Type 1 is een echte mogelijkheid in de toekomst.",
+        "uo": [
+         "Klopt: type 1 gaat over iets wat echt kan gebeuren in de toekomst.",
+         "Koos je \"an unreal situation that is not true now\"? Dan denk je dat type 1 onwerkelijk is. Dat is type 2, type 1 is een echte mogelijkheid.",
+         "Koos je \"an impossible event somewhere in the past\"? Dan denk je dat type 1 over het verleden gaat. Dat is type 3, type 1 gaat over de toekomst.",
+         "Koos je \"a habit that you have every day\"? Dan denk je dat het om een gewoonte gaat. Dat is een zero conditional, type 1 gaat over een mogelijkheid."
+        ],
+        "uh": "Type 1: echt."
+       },
+       {
+        "v": "Which meaning belongs to a type 3 conditional?",
+        "o": [
+         "a possible situation in the future",
+         "an unreal situation in the present",
+         "an unreal past that cannot change",
+         "a general truth that is always right"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Type 3 is een onwerkelijke situatie in het verleden.",
+        "uo": [
+         "Koos je \"a possible situation in the future\"? Dan denk je dat type 3 over de toekomst gaat. Dat is type 1, type 3 kijkt terug.",
+         "Koos je \"an unreal situation in the present\"? Dan denk je dat type 3 over nu gaat. Dat is type 2, type 3 gaat over het verleden.",
+         "Klopt: type 3 kijkt terug op iets wat niet gebeurd is en niet meer verandert.",
+         "Koos je \"a general truth that is always right\"? Dan denk je dat het om een algemene regel gaat. Dat is een zero conditional, type 3 is onwerkelijk in het verleden."
+        ],
+        "uh": "Type 3: verleden."
+       },
+       {
+        "v": "What does \"If I were you, I would ask for help\" express?",
+        "o": [
+         "a rule",
+         "advice",
+         "a past event",
+         "a promise"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "If I were you geeft advies.",
+        "uo": [
+         "Koos je \"a rule\"? Dan denk je dat het een regel is. Een regel gebruikt must, hier is het advies.",
+         "Klopt: if I were you gebruik je om advies te geven.",
+         "Koos je \"a past event\"? Dan denk je dat het over het verleden gaat. Het gaat over een onwerkelijke situatie nu, met advies.",
+         "Koos je \"a promise\"? Dan denk je dat het een belofte is. Een belofte gebruikt will, hier is het advies."
+        ],
+        "uh": "If I were you: advies."
+       },
+       {
+        "v": "Which sentence means \"He did not study, so he failed\"?",
+        "o": [
+         "If he studies hard, he will pass the test.",
+         "If he studied hard, he would pass the test.",
+         "If he had studied, he will pass the test.",
+         "If he had studied, he would have passed."
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 2,
+        "u": "Type 3 beschrijft wat niet gebeurd is.",
+        "uo": [
+         "Koos je \"If he studies hard, he will pass the test.\"? Dan denk je dat het om de toekomst gaat. Het gaat om iets wat voorbij is, dus type 3.",
+         "Koos je \"If he studied hard, he would pass the test.\"? Dan denk je dat type 2 past. Dat is voor nu, de zin gaat over het verleden.",
+         "Koos je \"If he had studied, he will pass the test.\"? Dan denk je dat will bij had studied past. Type 3 vraagt would have, dus de hoofdzin klopt niet.",
+         "Klopt: type 3 beschrijft wat niet gebeurd is en het gevolg dat had kunnen zijn."
+        ],
+        "uh": "Past perfect: type 3, verleden."
+       },
+       {
+        "v": "Which sentence is a promise?",
+        "o": [
+         "If I had ten euros, I would help you.",
+         "If you help me, I will give you ten euros.",
+         "If I had helped you, you would have been happy.",
+         "If I were rich, I would help you."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Will in een type 1 kan een belofte zijn.",
+        "uo": [
+         "Koos je \"If I had ten euros, I would help you.\"? Dan denk je dat dit een belofte is. Het is een onwerkelijke situatie, geen belofte.",
+         "Klopt: will bij een echte mogelijkheid kan een belofte uitdrukken.",
+         "Koos je \"If I had helped you, you would have been happy.\"? Dan denk je dat dit een belofte is. Het is een gemiste mogelijkheid in het verleden, geen belofte.",
+         "Koos je \"If I were rich, I would help you.\"? Dan denk je dat dit een belofte is. Het is een droom over een onwerkelijke situatie, zonder echte belofte."
+        ],
+        "uh": "Belofte: will."
+       },
+       {
+        "v": "Why does Mr Visser use \"will leave\" in \"unless everybody arrives on time, the bus will leave\"?",
+        "o": [
+         "it is a real possibility",
+         "it is an unreal situation now",
+         "it happened in the past",
+         "it is advice from Mr Visser"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Type 1: een echte mogelijkheid met will.",
+        "uo": [
+         "Klopt: de bus kan echt vertrekken, dus het is een type 1 met will.",
+         "Koos je \"it is an unreal situation now\"? Dan denk je dat het onwerkelijk is. Het kan echt gebeuren, dus will.",
+         "Koos je \"it happened in the past\"? Dan denk je dat het over het verleden gaat. Het gaat over de reis van volgende week, dus de toekomst.",
+         "Koos je \"it is advice from Mr Visser\"? Dan denk je dat het advies is. Het is een waarschuwing over een echte mogelijkheid, geen advies."
+        ],
+        "uh": "Real: will.",
+        "ctx": "Our school trip to Berlin is next week. If the weather is good, we will visit the Brandenburg Gate on Monday. If it rains, we will go to the museum instead. Mr Visser says that unless everybody arrives on time, the bus will leave without them. Last year, if the bus had not broken down, we would have reached the hotel before dinner."
+       },
+       {
+        "v": "What does \"unless everybody arrives on time\" mean?",
+        "o": [
+         "if everybody arrives on time",
+         "until everybody arrives",
+         "because everybody arrives on time",
+         "if not everybody arrives on time"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Unless betekent if not.",
+        "uo": [
+         "Koos je \"if everybody arrives on time\"? Dan denk je dat unless gewoon als betekent. Dan zou iedereen op tijd moeten zijn om te mogen vertrekken, dat is het tegendeel.",
+         "Koos je \"until everybody arrives\"? Dan denk je dat unless totdat betekent. Dat woord is until, het geeft een eindpunt, geen voorwaarde.",
+         "Koos je \"because everybody arrives on time\"? Dan denk je dat unless een reden aangeeft. Het geeft een voorwaarde, en wel een ontkennende.",
+         "Klopt: unless betekent if not, dus tenzij iedereen op tijd komt."
+        ],
+        "uh": "Unless: if not.",
+        "ctx": "Our school trip to Berlin is next week. If the weather is good, we will visit the Brandenburg Gate on Monday. If it rains, we will go to the museum instead. Mr Visser says that unless everybody arrives on time, the bus will leave without them. Last year, if the bus had not broken down, we would have reached the hotel before dinner."
+       },
+       {
+        "v": "What does \"if the bus had not broken down, we would have reached the hotel\" tell us about last year?",
+        "o": [
+         "the bus did not break down and they arrived early",
+         "the bus will break down next week",
+         "the bus broke down and they were late",
+         "they might reach the hotel before dinner"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Type 3: het tegendeel is gebeurd.",
+        "uo": [
+         "Koos je \"the bus did not break down and they arrived early\"? Dan denk je dat de zin zegt wat gebeurde. Type 3 zegt wat niet gebeurde, dus de bus ging wel stuk.",
+         "Koos je \"the bus will break down next week\"? Dan denk je dat het over de toekomst gaat. Het gaat over vorig jaar, dus het verleden.",
+         "Klopt: type 3 beschrijft wat niet gebeurd is: de bus ging stuk en ze kwamen niet op tijd.",
+         "Koos je \"they might reach the hotel before dinner\"? Dan denk je dat het een kans is. Het gaat om iets wat voorbij is, dus onwerkelijk."
+        ],
+        "uh": "Type 3: verleden.",
+        "ctx": "Our school trip to Berlin is next week. If the weather is good, we will visit the Brandenburg Gate on Monday. If it rains, we will go to the museum instead. Mr Visser says that unless everybody arrives on time, the bus will leave without them. Last year, if the bus had not broken down, we would have reached the hotel before dinner."
+       },
+       {
+        "v": "Why does Mia use \"would buy\" in \"If I had a million euros, I would buy a house\"?",
+        "o": [
+         "she is sure that she will win the prize again",
+         "it happened last year",
+         "she imagines an unlikely situation now",
+         "she makes a promise to her friend"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Type 2: een onwerkelijke situatie nu.",
+        "uo": [
+         "Koos je \"she is sure that she will win the prize again\"? Dan denk je dat ze zeker is. Would geeft aan dat ze het zich alleen voorstelt, het is niet zeker.",
+         "Koos je \"it happened last year\"? Dan denk je dat het over het verleden gaat. Het is een droom over nu, type 2.",
+         "Klopt: if plus past simple en would drukken een onwerkelijke situatie nu uit.",
+         "Koos je \"she makes a promise to her friend\"? Dan denk je dat het een belofte is. Het is een droom, geen belofte."
+        ],
+        "uh": "Type 2: droom.",
+        "ctx": "Mia has just won a small prize in a lottery. \"If I had a million euros,\" she dreams, \"I would buy a house by the sea. If I lived there, I would swim every morning. But if I were really rich, I would probably be less happy, because I would always worry about money.\" Her friend laughs and says that if Mia wins again, she will invite everyone to a party."
+       },
+       {
+        "v": "Why does Mia say \"if I were really rich\" and not \"if I was\"?",
+        "o": [
+         "were is only used with plural subjects, like we and they",
+         "was is simply a spelling mistake in English",
+         "were is the old past form of the verb will in questions",
+         "in standard English were is used for all persons"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "If I were: de standaardvorm in onwerkelijke if-zinnen.",
+        "uo": [
+         "Koos je \"were is only used with plural subjects, like we and...\"? Dan denk je dat were alleen meervoud is. In een onwerkelijke if-zin gebruik je het ook bij I, dat is de standaardvorm.",
+         "Koos je \"was is simply a spelling mistake in English\"? Dan denk je dat was fout is. In informeel Engels hoor je het wel, maar were is standaard.",
+         "Koos je \"were is the old past form of the verb will in...\"? Dan denk je dat were van will komt. Het hoort bij be, de vorm voor onwerkelijke if-zinnen.",
+         "Klopt: in een onwerkelijke if-zin gebruik je netjes were, ook bij I."
+        ],
+        "uh": "If I were.",
+        "ctx": "Mia has just won a small prize in a lottery. \"If I had a million euros,\" she dreams, \"I would buy a house by the sea. If I lived there, I would swim every morning. But if I were really rich, I would probably be less happy, because I would always worry about money.\" Her friend laughs and says that if Mia wins again, she will invite everyone to a party."
+       },
+       {
+        "v": "Which sentence in the text is a type 1 conditional?",
+        "o": [
+         "if Mia wins again, she will invite everyone to a party",
+         "If I lived there, I would swim every morning.",
+         "if I were really rich, I would probably be less happy",
+         "If I had a million euros, I would buy a house by the sea."
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Type 1 herken je aan if plus present en will.",
+        "uo": [
+         "Klopt: if plus present simple en will is type 1.",
+         "Koos je \"If I lived there, I would swim every morning.\"? Dan denk je dat dit type 1 is. Het is type 2, if plus past en would.",
+         "Koos je \"if I were really rich, I would probably be less...\"? Dan denk je dat dit type 1 is. Het is type 2, if plus were en would.",
+         "Koos je \"If I had a million euros, I would buy a house by...\"? Dan denk je dat dit type 1 is. Het is type 2, een droom met would."
+        ],
+        "uh": "Present en will: type 1.",
+        "ctx": "Mia has just won a small prize in a lottery. \"If I had a million euros,\" she dreams, \"I would buy a house by the sea. If I lived there, I would swim every morning. But if I were really rich, I would probably be less happy, because I would always worry about money.\" Her friend laughs and says that if Mia wins again, she will invite everyone to a party."
+       },
+       {
+        "v": "What does \"If he had set his alarm, he would have woken up on time\" mean?",
+        "o": [
+         "he set his alarm and woke up on time",
+         "he forgot his alarm and overslept",
+         "he is going to set his alarm tomorrow",
+         "he may set his alarm"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Type 3: het tegendeel is gebeurd.",
+        "uo": [
+         "Koos je \"he set his alarm and woke up on time\"? Dan denk je dat de zin zegt wat gebeurde. Type 3 zegt wat niet gebeurde, dus hij zette geen wekker.",
+         "Klopt: type 3 zegt dat het tegendeel gebeurd is.",
+         "Koos je \"he is going to set his alarm tomorrow\"? Dan denk je dat het over morgen gaat. Het gaat over het verleden, dus een gemiste kans.",
+         "Koos je \"he may set his alarm\"? Dan denk je dat het een kans is. Het is onwerkelijk, het is al gebeurd."
+        ],
+        "uh": "Past perfect: type 3, verleden.",
+        "ctx": "Tom missed an important exam. If he had set his alarm, he would have woken up on time. If he had taken the earlier bus, he would not have been late. \"If I had known how important this test was, I would have studied harder,\" he says now. If he fails, he will have to retake the exam in June."
+       },
+       {
+        "v": "Which sentence from the text shows a real possibility?",
+        "o": [
+         "If he had taken the earlier bus, he would not have been late.",
+         "If I had known how important this test was, I would have studied harder.",
+         "If he had set his alarm, he would have woken up on time.",
+         "If he fails, he will have to retake the exam in June."
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Type 1: een echte mogelijkheid.",
+        "uo": [
+         "Koos je \"If he had taken the earlier bus, he would not have...\"? Dan denk je dat dit een echte kans is. Het is type 3, een gemiste kans in het verleden.",
+         "Koos je \"If I had known how important this test was, I would...\"? Dan denk je dat dit een echte kans is. Het is type 3, een spijt over het verleden.",
+         "Koos je \"If he had set his alarm, he would have woken up on...\"? Dan denk je dat dit een echte kans is. Het is type 3, dat is voorbij.",
+         "Klopt: if plus present en will is een echte mogelijkheid in de toekomst."
+        ],
+        "uh": "Type 1: toekomst.",
+        "ctx": "Tom missed an important exam. If he had set his alarm, he would have woken up on time. If he had taken the earlier bus, he would not have been late. \"If I had known how important this test was, I would have studied harder,\" he says now. If he fails, he will have to retake the exam in June."
+       },
+       {
+        "v": "Which is the correct version?",
+        "o": [
+         "If I had more time, I would learn the guitar. If I had known, I would have helped you.",
+         "If I would have more time, I would learn the guitar. If I had known, I would have helped you.",
+         "If I had more time, I would learn the guitar. If I would have known, I would have helped you.",
+         "If I had more time, I will learn the guitar. If I had known, I would have helped you."
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "If-zin zonder would, hoofdzin met would.",
+        "uo": [
+         "Klopt: de if-zin krijgt de verleden tijd of past perfect, de hoofdzin would of would have.",
+         "Koos je \"If I would have more time, I would learn the...\"? Dan denk je dat would na if kan. In de eerste zin staat dan nog would have, terwijl de past simple nodig is.",
+         "Koos je \"If I had more time, I would learn the guitar. If I...\"? Dan denk je dat de tweede if-zin ook would kan hebben. Je mist dan de past perfect had known, in de voorwaarde.",
+         "Koos je \"If I had more time, I will learn the guitar. If I...\"? Dan denk je dat will bij had past. In de hoofdzin van type 2 hoort would, niet will."
+        ],
+        "uh": "If-zin: geen would.",
+        "ctx": "A student wrote: \"If I would have more time, I will learn guitar. If I would have known, I would helped you.\""
+       },
+       {
+        "v": "Which two conditional types does Anna use?",
+        "o": [
+         "type 1 (real) and type 3 (unreal past)",
+         "type 1 (real) and type 2 (unreal)",
+         "type 2 (unreal) and type 3 (past)",
+         "only type 1 (real possibilities)"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Herken het type aan de tijd in de if-zin.",
+        "uo": [
+         "Koos je \"type 1 (real) and type 3 (unreal past)\"? Dan denk je dat de laatste zin type 3 is. Er staat geen past perfect, het is type 2.",
+         "Klopt: if I pass en will is type 1, if I could choose en would is type 2.",
+         "Koos je \"type 2 (unreal) and type 3 (past)\"? Dan denk je dat de eerste zinnen type 2 zijn. Ze gebruiken present en will, dat is type 1.",
+         "Koos je \"only type 1 (real possibilities)\"? Dan denk je dat alle zinnen type 1 zijn. De laatste zin gebruikt could en would, dat is type 2."
+        ],
+        "uh": "Type 1 en 2.",
+        "ctx": "Anna is thinking about her future. She says: \"If I pass my exams, I will go to university. If I don't pass, I will repeat the year. But if I could choose, I would travel for a year first.\""
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "A student wrote: \"If I will have time tomorrow, I would call you. If I had known about the party, I will come. Unless you will hurry, we miss the train.\"",
+        "v": "Find three mistakes in the student's text and correct them.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "If I have time tomorrow, I will call you (1p). If I had known about the party, I would have come (1p). Unless you hurry, we will miss the train (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Last week I missed the bus. If I had left home five minutes earlier, I would have caught it. If I leave earlier tomorrow, I will not be late again. If I were you, I would also buy a bike.",
+        "v": "Which sentences are type 1, 2 and 3? Explain each in one sentence.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "If I had left earlier, I would have caught it: type 3, het is niet gebeurd (1p). If I leave earlier tomorrow, I will not be late: type 1, een echte mogelijkheid (1p). If I were you, I would also buy a bike: type 2, advies (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Mia dreams: \"If I won a million euros, I would buy a house by the sea. If I lived there, I would swim every morning.\" Her friend answers: \"If you win, you will invite me, won't you?\"",
+        "v": "Which sentences are type 2 and which are type 1? Explain.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Type 2: if I won, I would buy en if I lived there, I would swim: onwerkelijk nu (1p). Type 1: if you win, you will invite me: echte mogelijkheid (1p). Reden: type 2 gebruikt past simple en would, type 1 present simple en will (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "The teacher says: \"Unless everybody finishes the test, we will not go on the trip. Take your phone in case you need to call home. If I were you, I would study more.\"",
+        "v": "Explain the meaning of \"unless\", \"in case\" and \"if I were you\".",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Unless betekent if not, tenzij (1p). In case betekent voor het geval dat, een voorzorgsmaatregel (1p). If I were you geeft advies in type 2 (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Complete the sentences: (1) If it rains, we ___ at home. (2) If I ___ rich, I would travel the world. (3) If she ___ earlier, she would have caught the train.",
+        "v": "Fill in the correct forms and name the type of each sentence.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "(1) will stay, type 1 (1p). (2) were, type 2 (1p). (3) had left, type 3 (1p)."
+       }
+      ]
      }
     ]
    },

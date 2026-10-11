@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.394 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.421 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -85,6 +85,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Collocaties, uitdrukkingen en false friends (Engels HAVO)](https://slagio.nl/leren/havo/engels/collocaties-uitdrukkingen-en-false-friends.html): Je kent de vaste woordcombinaties van het Engels (make a plan, heavy rain), begrijpt uitdrukkingen als break the ice en trapt niet in woorden die op…
 - [Present perfect of past simple kiezen (Engels HAVO)](https://slagio.nl/leren/havo/engels/present-perfect-of-past-simple-kiezen.html): Je kiest in een Engelse zin of het present perfect of de past simple past, gebruikt for, since, just, already, yet, ever en never goed en kent de…
 - [Modale werkwoorden: can, must, should en might (Engels HAVO)](https://slagio.nl/leren/havo/engels/modale-werkwoorden-can-must-should-en-might.html): Je gebruikt can, must, should, might en hun varianten goed: voor kunnen, moeten, mogen, advies, kans en gevolgtrekking, ook in het verleden (should have,…
+- [Conditionals: type 1, 2 en 3 (Engels HAVO)](https://slagio.nl/leren/havo/engels/conditionals-type-1-2-en-3.html): Je vormt en herkent de drie soorten if-zinnen (echte kans, onwerkelijk nu, onwerkelijk in het verleden), gebruikt unless en in case en kiest in een tekst het…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
