@@ -2202,7 +2202,32 @@ var VAKKEN = [
     "nSv": 129,
     "nOe": 7,
     "nBeg": 25,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "A1",
+      "lo": "en.A.1",
+      "gs": 2,
+      "naam": "Woordbetekenis afleiden uit de context",
+      "beschrijving": "Je leert de betekenis van een onbekend Engels woord te vinden met aanwijzingen uit de zin eromheen: uitleg, voorbeelden, tegenstellingen en gevolgen. Je herkent ook synoniemen, antoniemen en woorden met meer betekenissen.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Uitleg en herformulering in de zin",
+       "Voorbeelden en opsommingen als aanwijzing",
+       "Tegenstellingen en signaalwoorden",
+       "Oorzaak, gevolg en gedrag",
+       "Woorden met meer betekenissen en figuurlijk gebruik",
+       "Een betekenis controleren",
+       "Synoniemen en antoniemen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "B",

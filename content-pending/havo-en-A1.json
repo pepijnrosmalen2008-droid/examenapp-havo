@@ -1,0 +1,689 @@
+{
+ "id": "A1",
+ "lo": "en.A.1",
+ "gs": 2,
+ "naam": "Woordbetekenis afleiden uit de context",
+ "beschrijving": "Je leert de betekenis van een onbekend Engels woord te vinden met aanwijzingen uit de zin eromheen: uitleg, voorbeelden, tegenstellingen en gevolgen. Je herkent ook synoniemen, antoniemen en woorden met meer betekenissen.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Uitleg en herformulering in de zin",
+  "Voorbeelden en opsommingen als aanwijzing",
+  "Tegenstellingen en signaalwoorden",
+  "Oorzaak, gevolg en gedrag",
+  "Woorden met meer betekenissen en figuurlijk gebruik",
+  "Een betekenis controleren",
+  "Synoniemen en antoniemen"
+ ],
+ "sam": "Een onbekend woord hoef je bij een Engelse tekst niet te laten liggen. De zin eromheen geeft aanwijzingen: een uitleg (\"in other words\"), voorbeelden (\"such as\"), een tegenstelling (\"but\", \"unlike\", \"although\") of een gevolg (\"so\"). Woorden kunnen meer betekenissen hebben (\"bank\", \"firm\", \"light\") en soms figuurlijk gebruikt worden (\"weather a storm\"). Controleer altijd of de gekozen betekenis in de zin past.",
+ "begrippen": [
+  {
+   "t": "Context",
+   "d": "De woorden en zinnen rondom een woord, die helpen de betekenis te vinden."
+  },
+  {
+   "t": "Aanwijzing",
+   "d": "Een woord of zinsdeel in de context dat de betekenis van een onbekend woord verraadt."
+  },
+  {
+   "t": "Definitie in de zin",
+   "d": "Een uitleg van een woord die direct in de zin staat, vaak tussen komma's of na \"that is\"."
+  },
+  {
+   "t": "Herformulering",
+   "d": "Een zin die hetzelfde nog eens zegt, vaak ingeleid door \"in other words\"."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat de groep laat zien, vaak na \"such as\" of \"for example\"."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat het verband tussen zinsdelen aangeeft, zoals \"but\", \"unlike\" of \"so\"."
+  },
+  {
+   "t": "Tegenstelling",
+   "d": "Een verband waarbij twee dingen elkaars tegendeel zijn."
+  },
+  {
+   "t": "Synoniem",
+   "d": "Een woord met (bijna) dezelfde betekenis als een ander woord."
+  },
+  {
+   "t": "Antoniem",
+   "d": "Een woord met de tegengestelde betekenis van een ander woord."
+  },
+  {
+   "t": "Meerdere betekenissen",
+   "d": "Eén woord dat in verschillende zinnen iets anders betekent, zoals \"bank\"."
+  },
+  {
+   "t": "Figuurlijk gebruik",
+   "d": "Een woord dat niet letterlijk bedoeld is, maar iets overdrachtelijks betekent."
+  },
+  {
+   "t": "Controleren",
+   "d": "Je gekozen betekenis in de zin invullen om te kijken of de zin nog klopt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "At the exam you may not use a dictionary. What is the best first step with an unknown word?",
+   "o": [
+    "stop reading and wait until you remember the word",
+    "read the sentence around it and look for clues",
+    "translate the word letter by letter into Dutch first",
+    "choose the answer option that has the longest word"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 5,
+   "u": "Eerst de context lezen en pas daarna een betekenis kiezen.",
+   "uo": [
+    "Koos je \"stop reading and wait until you remember the word\"? Dan denk je dat je het woord eerst moet kennen. Dan blijf je hangen, terwijl de zin eromheen juist de aanwijzingen levert.",
+    "Klopt: de woorden om het onbekende woord heen geven vaak genoeg aanwijzingen om de betekenis te raden.",
+    "Koos je \"translate the word letter by letter into Dutch first\"? Dan denk je dat letters je de betekenis geven. Dat werkt niet, omdat Engelse woorden niet letter voor letter te vertalen zijn.",
+    "Koos je \"choose the answer option that has the longest word\"? Dan denk je dat lengte iets zegt over het goede antwoord. Dat is gokken, de tekst bepaalt de betekenis, niet de lengte."
+   ],
+   "uh": "Lees de zin eromheen."
+  },
+  {
+   "v": "What does \"nomad\" mean here?",
+   "o": [
+    "someone who only lives in a tent in one place",
+    "someone who builds tents for other people",
+    "someone who is afraid of travelling far away",
+    "someone without a fixed home who keeps moving"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Een uitleg tussen komma's is een definitie in de context.",
+   "uo": [
+    "Koos je \"someone who only lives in a tent in one place\"? Dan denk je dat de tent de woonplaats vastlegt. De uitleg zegt juist dat een nomade van plaats naar plaats trekt, zonder vaste woning.",
+    "Koos je \"someone who builds tents for other people\"? Dan denk je dat een nomade tenten maakt. De tent is alleen een mogelijke slaapplaats, de uitleg zegt wat een nomade doet.",
+    "Koos je \"someone who is afraid of travelling far away\"? Dan denk je dat een nomade bang is om te reizen. De uitleg zegt het tegenovergestelde: een nomade trekt juist rond.",
+    "Klopt: tussen de komma's staat een uitleg van het woord, een zogenoemde definitie in de zin zelf."
+   ],
+   "uh": "Tussen komma's.",
+   "ctx": "A nomad, a person who travels from place to place and has no fixed home, can live in a tent."
+  },
+  {
+   "v": "What does \"citrus fruits\" refer to?",
+   "o": [
+    "fruits like lemons and oranges",
+    "vegetables that grow in the sun",
+    "medicines for a cold",
+    "fruit that is very expensive"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Voorbeelden na \"such as\" laten zien welke groep bedoeld is.",
+   "uo": [
+    "Klopt: na \"such as\" volgen voorbeelden, en die laten zien welke soort vruchten bedoeld wordt.",
+    "Koos je \"vegetables that grow in the sun\"? Dan denk je dat het om groenten gaat. De voorbeelden zijn allemaal vruchten, dus dat past niet.",
+    "Koos je \"medicines for a cold\"? Dan denk je dat vitamine C medicijn betekent. Het woord \"vitamin\" zegt dat niet, de zin noemt gewoon vruchten met veel vitamine C.",
+    "Koos je \"fruit that is very expensive\"? Dan denk je dat zeldzaam of duur bedoeld is. Daar staat niets over, de voorbeelden geven alleen de soort aan."
+   ],
+   "uh": "Kijk naar de voorbeelden.",
+   "ctx": "Citrus fruits, such as lemons, oranges and grapefruits, are rich in vitamin C."
+  },
+  {
+   "v": "What does \"gloomy\" mean here?",
+   "o": [
+    "very busy",
+    "extremely tired",
+    "sad and without hope",
+    "more cheerful than usual"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Het signaalwoord \"but\" laat een tegenstelling zien.",
+   "uo": [
+    "Koos je \"very busy\"? Dan denk je dat Tom het druk heeft. Er staat niets over werk, \"but\" wijst op een tegenstelling met vrolijk.",
+    "Koos je \"extremely tired\"? Dan denk je dat het om vermoeidheid gaat. Dat zegt de zin niet, het gaat om de stemming die tegenover vrolijk staat.",
+    "Klopt: \"but\" zet \"gloomy\" tegenover \"cheerful\", dus het woord is het tegenovergestelde van vrolijk.",
+    "Koos je \"more cheerful than usual\"? Dan denk je dat het woord hetzelfde betekent als \"cheerful\". Het signaalwoord \"but\" laat zien dat het juist een tegenstelling is, dus niet vrolijk."
+   ],
+   "uh": "Let op \"but\".",
+   "ctx": "Tom is usually cheerful, but today he looks gloomy."
+  },
+  {
+   "v": "What does \"ravenous\" mean?",
+   "o": [
+    "very sleepy",
+    "extremely angry",
+    "extremely hungry",
+    "not hungry at all"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Oorzaak en gevolg (so) wijzen naar honger.",
+   "uo": [
+    "Koos je \"very sleepy\"? Dan denk je dat de avond slaap betekent. De zin gaat over eten, het gevolg is dus honger.",
+    "Koos je \"extremely angry\"? Dan denk je dat boosheid hoort bij een lege maag. Dat is een eigen aanname, de zin zegt alleen dat hij niet at.",
+    "Klopt: \"so\" geeft het gevolg: wie de hele dag niet heeft gegeten, heeft veel honger.",
+    "Koos je \"not hungry at all\"? Dan denk je dat het woord het tegenovergestelde betekent. Met \"so\" volgt juist het logische gevolg van niet eten, namelijk veel honger."
+   ],
+   "uh": "Oorzaak en gevolg.",
+   "ctx": "He had not eaten all day, so by evening he was ravenous."
+  },
+  {
+   "v": "What does \"bank\" mean here?",
+   "o": [
+    "the land along the side of a river",
+    "a place where you keep money",
+    "a long wooden seat in a park",
+    "a large group of fish together"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Een woord met meer betekenissen: de context kiest.",
+   "uo": [
+    "Klopt: bij een rivier hoort een oever. Het woord \"river\" bepaalt welke betekenis van \"bank\" bedoeld is.",
+    "Koos je \"a place where you keep money\"? Dan denk je aan de bekendste betekenis. Bij een rivier past die niet, want daar gaat het om land naast het water.",
+    "Koos je \"a long wooden seat in a park\"? Dan denk je dat \"bank\" hier een zitbank is. Bij \"river\" en \"flowers\" past oever beter, de zin gaat over de rand van het water.",
+    "Koos je \"a large group of fish together\"? Dan denk je aan een school of vissen. Dat staat er niet, de vergelijking met \"the river\" wijst op de oever."
+   ],
+   "uh": "De rest van de zin kiest.",
+   "ctx": "The bank of the river was covered with flowers."
+  },
+  {
+   "v": "Which two words are synonyms?",
+   "o": [
+    "brave and frightened",
+    "quiet and very noisy",
+    "begin and finish later",
+    "huge and enormous"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 6,
+   "u": "Synoniemen betekenen (bijna) hetzelfde, antoniemen zijn tegenstellingen.",
+   "uo": [
+    "Koos je \"brave and frightened\"? Dan denk je dat deze woorden hetzelfde betekenen. Ze zijn tegenstellingen, moedig en bang.",
+    "Koos je \"quiet and very noisy\"? Dan denk je dat het om gelijke woorden gaat. Het zijn antoniemen, stil tegenover luidruchtig.",
+    "Koos je \"begin and finish later\"? Dan denk je dat beide met een gebeurtenis te maken hebben. Het zijn tegenstellingen, beginnen tegenover eindigen.",
+    "Klopt: beide woorden betekenen heel groot, dus het zijn synoniemen."
+   ],
+   "uh": "Gelijk of tegengesteld?"
+  },
+  {
+   "v": "What does \"ephemeral\" mean here?",
+   "o": [
+    "very expensive",
+    "lasting only a short time",
+    "famous all over the world",
+    "held inside a large building"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "De bijzin na de komma licht het woord toe.",
+   "uo": [
+    "Koos je \"very expensive\"? Dan denk je dat het om de prijs gaat. Daar staat niets over, de zin noemt de duur van de markt.",
+    "Klopt: de bijzin zegt dat de markt maar één weekend duurde en op maandag verdwenen was.",
+    "Koos je \"famous all over the world\"? Dan denk je dat het woord hetzelfde zegt als \"famous\". \"Famous\" staat er al apart, \"ephemeral\" beschrijft hoe lang de markt duurt.",
+    "Koos je \"held inside a large building\"? Dan denk je dat het om een plek gaat. De zin noemt stalls en een weekend, geen gebouw."
+   ],
+   "uh": "Hoe lang duurde het?",
+   "ctx": "The village was famous for its ephemeral market, a fair that lasted only one weekend each year. Visitors had to buy quickly, because by Monday morning every stall had disappeared."
+  },
+  {
+   "v": "Which phrase signals the meaning of \"acumen\"?",
+   "o": [
+    "was known for",
+    "Nobody could fool him",
+    "quickly and accurately",
+    "in other words"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "\"In other words\" kondigt een uitleg of herformulering aan.",
+   "uo": [
+    "Koos je \"was known for\"? Dan denk je dat dit de uitleg aankondigt. Het zegt alleen dat hij bekend was om iets, zonder uitleg van het woord.",
+    "Koos je \"Nobody could fool him\"? Dan denk je dat de laatste zin de betekenis geeft. Die zin is een gevolg, het is niet de uitleg van \"acumen\".",
+    "Koos je \"quickly and accurately\"? Dan denk je dat dit stuk het signaal is. Het is zelf al een deel van de uitleg, het signaal is het woord dat de uitleg inleidt.",
+    "Klopt: \"in other words\" kondigt een herformulering aan, en daarna staat wat \"acumen\" betekent."
+   ],
+   "uh": "Kijk naar het signaal.",
+   "ctx": "The detective was known for his acumen, in other words his ability to judge situations quickly and accurately. Nobody could fool him."
+  },
+  {
+   "v": "What does \"nocturnal\" mean?",
+   "o": [
+    "very rare",
+    "active at night",
+    "living in trees",
+    "dangerous to people"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Voorbeelden met \"such as\" geven de betekenis weg.",
+   "uo": [
+    "Koos je \"very rare\"? Dan denk je dat de voorbeelden zeldzaam zijn. Dat blijkt niet uit de zin, het gaat om wanneer ze actief zijn.",
+    "Klopt: de voorbeelden slapen overdag en zoeken 's nachts voedsel, dus ze zijn actief in de nacht.",
+    "Koos je \"living in trees\"? Dan denk je dat alle voorbeelden in bomen wonen. Een egel doet dat niet, de zin noemt slapen overdag en voedsel zoeken 's nachts.",
+    "Koos je \"dangerous to people\"? Dan denk je aan gevaar. Daar staat niets over, de voorbeelden laten juist een leefritme zien."
+   ],
+   "uh": "Wat doen ze 's nachts?",
+   "ctx": "Many nocturnal animals, such as owls, bats and hedgehogs, sleep during the day and look for food at night."
+  },
+  {
+   "v": "What does \"taciturn\" mean?",
+   "o": [
+    "angry with her family",
+    "very funny",
+    "saying very little",
+    "good at telling stories"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "\"Unlike\" en \"while\" signaleren de tegenstelling met haar broer.",
+   "uo": [
+    "Koos je \"angry with her family\"? Dan denk je dat ze boos is. Daar staat niets over, \"hardly said a word\" gaat over zwijgen, niet over woede.",
+    "Koos je \"very funny\"? Dan denk je dat ze grappig is. Dat past niet bij \"hardly said a word\", haar broer is degene die verhalen vertelt.",
+    "Klopt: \"unlike\" zet haar tegenover haar spraakzame broer, en ze zei bijna niets.",
+    "Koos je \"good at telling stories\"? Dan denk je dat ze net als haar broer is. \"Unlike\" zegt juist dat ze anders is, ze vertelt niets."
+   ],
+   "uh": "Zoek de tegenstelling.",
+   "ctx": "Unlike her talkative brother, Mira was taciturn. At family dinners she hardly said a word, while he told stories for hours."
+  },
+  {
+   "v": "What does \"verbose\" mean?",
+   "o": [
+    "using too many words",
+    "speaking very softly",
+    "telling the truth",
+    "speaking with great confidence"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "\"Although\" zet verbose tegenover concise.",
+   "uo": [
+    "Klopt: \"although\" zet verbose tegenover \"concise\", en de tweede spreker had twee zinnen nodig.",
+    "Koos je \"speaking very softly\"? Dan denk je dat het om volume gaat. De zin gaat over woordaantal, \"concise\" betekent kort en bondig.",
+    "Koos je \"telling the truth\"? Dan denk je dat het om eerlijkheid gaat. Dat staat er niet, de tegenstelling is lang tegenover kort.",
+    "Koos je \"speaking with great confidence\"? Dan denk je dat het om zelfvertrouwen gaat. De zin vergelijkt de lengte, niet het zelfvertrouwen."
+   ],
+   "uh": "Tegenstelling met concise.",
+   "ctx": "Although the first speaker was verbose, the second one was admirably concise: she explained the plan in two sentences."
+  },
+  {
+   "v": "What does \"livid\" mean?",
+   "o": [
+    "extremely angry",
+    "very surprised",
+    "deeply embarrassed",
+    "a little worried"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Het gedrag in de tekst laat de gevoelens zien.",
+   "uo": [
+    "Klopt: deuren dichtsmijten, schreeuwen en niet meer praten laten zien dat ze woedend is.",
+    "Koos je \"very surprised\"? Dan denk je dat ze verrast was. Verrassing leidt niet tot schreeuwen en deuren slaan, dat past bij woede.",
+    "Koos je \"deeply embarrassed\"? Dan denk je dat ze zich schaamt. Wie zich schaamt, schreeuwt niet naar het team, de gedragingen wijzen op boosheid.",
+    "Koos je \"a little worried\"? Dan denk je dat het om lichte zorgen gaat. Deuren slaan en schreeuwen zijn sterk gedrag, dat past bij woede."
+   ],
+   "uh": "Wat doet ze?",
+   "ctx": "The manager was livid when she saw the report. She slammed the door, shouted at the team and refused to speak to anyone for the rest of the day."
+  },
+  {
+   "v": "What does \"firm\" mean in the first sentence?",
+   "o": [
+    "hard and strong",
+    "completely certain",
+    "a company",
+    "a manager of a shop"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Dezelfde spelling, twee betekenissen: de zin kiest.",
+   "uo": [
+    "Koos je \"hard and strong\"? Dan denk je dat de betekenis uit de tweede zin hier geldt. Die hoort bij \"handshake\", in de eerste zin gaat het om een organisatie.",
+    "Koos je \"completely certain\"? Dan denk je aan \"a firm belief\". Een bedrijf dat meubels maakt kan niet zeker zijn van iets, hier is het een zelfstandig naamwoord.",
+    "Klopt: een \"firm that makes furniture\" met een \"owner\" is een bedrijf. Het woord heeft ook een andere betekenis.",
+    "Koos je \"a manager of a shop\"? Dan denk je dat het om een persoon gaat. \"Its owner\" laat zien dat \"firm\" een organisatie is, de eigenaar is een andere persoon."
+   ],
+   "uh": "Bedrijf of eigenschap?",
+   "ctx": "The firm that makes our furniture has moved to a new building. Its owner has a firm handshake and a friendly smile."
+  },
+  {
+   "v": "What does \"light\" mean here?",
+   "o": [
+    "not heavy in weight",
+    "not serious and easy to enjoy",
+    "bright, with a lot of light",
+    "pale in colour"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Figuurlijk gebruik: de zin bepaalt de betekenis.",
+   "uo": [
+    "Koos je \"not heavy in weight\"? Dan denk je dat het om gewicht gaat. Een film heeft geen gewicht, het woord beschrijft de toon van de komedie.",
+    "Klopt: tegenover \"a heavy week\" past een luchtige komedie. \"Light\" gaat hier over de toon, niet over gewicht.",
+    "Koos je \"bright, with a lot of light\"? Dan denk je dat het om licht gaat. Dat zegt de zin niet, \"comedy\" en \"heavy week\" wijzen op luchtig.",
+    "Koos je \"pale in colour\"? Dan denk je dat het om kleur gaat. Een komedie heeft geen kleur, het gaat om de sfeer."
+   ],
+   "uh": "Past bij \"heavy week\".",
+   "ctx": "The film was a light comedy, so after a heavy week it was exactly what we needed."
+  },
+  {
+   "v": "Which word is the best synonym of \"reluctant\" here?",
+   "o": [
+    "eager to start",
+    "able to do it",
+    "allowed to speak",
+    "unwilling"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 6,
+   "u": "Synoniem: unwilling. Tegenstelling: eager.",
+   "uo": [
+    "Koos je \"eager to start\"? Dan denk je dat hij er zin in heeft. Dat is het tegenovergestelde van \"reluctant\", \"eager\" betekent enthousiast.",
+    "Koos je \"able to do it\"? Dan denk je dat het om kunnen gaat. \"Reluctant\" gaat over willen, niet over de mogelijkheid.",
+    "Koos je \"allowed to speak\"? Dan denk je dat het om toestemming gaat. Dat is een andere betekenis, \"reluctant\" gaat over de wil van de spreker.",
+    "Klopt: wie niet graag voor de klas spreekt, is onwillig, ofwel \"unwilling\"."
+   ],
+   "uh": "Willen of niet?",
+   "ctx": "He was reluctant to speak in front of the class."
+  },
+  {
+   "v": "What does \"sceptical\" mean in the text?",
+   "o": [
+    "proud and pleased with the result",
+    "doubtful about whether something will work",
+    "angry with the farmers",
+    "eager to take part in the festival"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Het signaal \"but\" en de redenen verklaren twijfel.",
+   "uo": [
+    "Koos je \"proud and pleased with the result\"? Dan denk je dat het hetzelfde is als de boeren. \"But\" laat juist een tegenstelling zien, de inwoners zijn het niet eens.",
+    "Klopt: \"but\" zet de sceptische inwoners tegenover de trotse boeren, en de stijgende kosten en dalende bezoekersaantallen verklaren hun twijfel.",
+    "Koos je \"angry with the farmers\"? Dan denk je dat het om boosheid gaat. De tekst noemt alleen kosten en minder toeristen, dat zijn redenen voor twijfel.",
+    "Koos je \"eager to take part in the festival\"? Dan denk je dat ze erbij willen zijn. De stijgende kosten maken ze juist voorzichtig, dat is twijfel."
+   ],
+   "uh": "\"But\" en de kosten.",
+   "ctx": "Every autumn, the town of Hartley holds a festival to celebrate the harvest. For three days the main square is full of stalls that sell homemade jam, honey and bread. Local farmers are proud of the event, but some residents are sceptical about its future: the costs keep rising, while fewer tourists come each year. The mayor remains optimistic. \"We have weathered worse storms than this,\" she said, \"and the festival has always bounced back.\""
+  },
+  {
+   "v": "What does \"optimistic\" mean, judging by the mayor's words?",
+   "o": [
+    "hopeful that things will turn out well",
+    "afraid that the festival will end",
+    "certain that costs will fall",
+    "unwilling to talk about problems"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Wat iemand zegt laat de houding zien: hoopvol.",
+   "uo": [
+    "Klopt: de burgemeester zegt dat het festival altijd terugkomt, en dat is hoopvol en tegenovergesteld aan sceptisch.",
+    "Koos je \"afraid that the festival will end\"? Dan denk je dat de burgemeester angstig is. Haar citaat zegt dat het festival terugveert, ze verwacht dus een goede afloop.",
+    "Koos je \"certain that costs will fall\"? Dan denk je dat ze zeker weet dat kosten dalen. Dat zegt ze niet, ze vertrouwt op eerdere herstelkracht.",
+    "Koos je \"unwilling to talk about problems\"? Dan denk je dat ze problemen negeert. Ze noemt zelf \"worse storms\", ze erkent dus problemen en blijft hoopvol."
+   ],
+   "uh": "Lees haar citaat.",
+   "ctx": "Every autumn, the town of Hartley holds a festival to celebrate the harvest. For three days the main square is full of stalls that sell homemade jam, honey and bread. Local farmers are proud of the event, but some residents are sceptical about its future: the costs keep rising, while fewer tourists come each year. The mayor remains optimistic. \"We have weathered worse storms than this,\" she said, \"and the festival has always bounced back.\""
+  },
+  {
+   "v": "What does \"weathered\" mean in \"We have weathered worse storms than this\"?",
+   "o": [
+    "damaged by sun, wind and rain",
+    "predicted well in advance",
+    "watched from far away",
+    "survived difficult times"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Figuurlijk: \"storms\" zijn problemen, \"weather\" is doorstaan.",
+   "uo": [
+    "Koos je \"damaged by sun, wind and rain\"? Dan denk je aan de letterlijke betekenis van verweren. Het festival is geen gebouw, \"storms\" staat voor problemen, het is figuurlijk.",
+    "Koos je \"predicted well in advance\"? Dan denk je dat het om voorspellen gaat. Dat past niet bij \"bounced back\", de burgemeester zegt dat het festival eerder herstelde.",
+    "Koos je \"watched from far away\"? Dan denk je dat \"weather\" kijken betekent. Dat is een verkeerd idee, het gaat om doorstaan.",
+    "Klopt: \"storms\" staat hier voor problemen en \"bounced back\" bevestigt dat het festival ze doorstond."
+   ],
+   "uh": "Letterlijk of figuurlijk?",
+   "ctx": "Every autumn, the town of Hartley holds a festival to celebrate the harvest. For three days the main square is full of stalls that sell homemade jam, honey and bread. Local farmers are proud of the event, but some residents are sceptical about its future: the costs keep rising, while fewer tourists come each year. The mayor remains optimistic. \"We have weathered worse storms than this,\" she said, \"and the festival has always bounced back.\""
+  },
+  {
+   "v": "What does \"meticulous\" mean in the text?",
+   "o": [
+    "very fast and extremely efficient",
+    "secretive about all her work",
+    "extremely careful about details",
+    "very strict about deadlines"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Gedrag in de tekst (drie keer controleren) verklaart het woord.",
+   "uo": [
+    "Koos je \"very fast and extremely efficient\"? Dan denk je dat ze snel werkt. Ze zegt zelf liever langzaam en juist te zijn, dus snelheid past niet.",
+    "Koos je \"secretive about all her work\"? Dan denk je dat ze geheimzinnig is. Ze vraagt juist een collega om te herhalen, dus ze deelt haar werk.",
+    "Klopt: wie elk cijfer drie keer controleert en een collega het experiment laat herhalen, let heel nauwkeurig op details.",
+    "Koos je \"very strict about deadlines\"? Dan denk je dat het om tijd gaat. De tekst noemt controle van cijfers, niet het halen van deadlines."
+   ],
+   "uh": "Wat doet ze?",
+   "ctx": "Dr. Okafor is known for her meticulous approach. Before she publishes a result, she checks every figure at least three times and asks a colleague to repeat the experiment. Some people find this tiresome, but her students call it a gift: with her, a mistake in a lab report cannot stay hidden. \"I would rather be slow and right than quick and wrong,\" she says."
+  },
+  {
+   "v": "What does \"tiresome\" most likely mean?",
+   "o": [
+    "exciting and impressive",
+    "dangerous for the lab",
+    "annoying because it takes extra effort",
+    "too expensive for the university"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "\"But\" zet vervelend tegenover waardevol.",
+   "uo": [
+    "Koos je \"exciting and impressive\"? Dan denk je dat het positief is. Dat is wat de studenten vinden, \"but\" laat het contrast zien, \"tiresome\" is wat sommigen vinden.",
+    "Koos je \"dangerous for the lab\"? Dan denk je dat het om gevaar gaat. Er is geen sprake van risico, de controle kost alleen tijd en moeite.",
+    "Klopt: \"but\" zet \"tiresome\" tegenover \"a gift\", dus het is vervelend omdat het veel moeite kost.",
+    "Koos je \"too expensive for the university\"? Dan denk je dat het om geld gaat. Daar staat niets over, de bezwaren gaan over het werk dat het kost."
+   ],
+   "uh": "Let op \"but\".",
+   "ctx": "Dr. Okafor is known for her meticulous approach. Before she publishes a result, she checks every figure at least three times and asks a colleague to repeat the experiment. Some people find this tiresome, but her students call it a gift: with her, a mistake in a lab report cannot stay hidden. \"I would rather be slow and right than quick and wrong,\" she says."
+  },
+  {
+   "v": "Which words show that \"meticulous\" is a positive quality for her students?",
+   "o": [
+    "some people find this tiresome",
+    "checks every figure at least three times",
+    "before she publishes a result",
+    "her students call it a gift"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Zoek woorden die een oordeel geven, niet alleen gedrag.",
+   "uo": [
+    "Koos je \"some people find this tiresome\"? Dan denk je dat dit een positieve reactie is. Het is juist de negatieve kant, de studenten zien het anders.",
+    "Koos je \"checks every figure at least three times\"? Dan denk je dat deze zin een oordeel geeft. Hij beschrijft alleen gedrag, zonder waardering.",
+    "Koos je \"before she publishes a result\"? Dan denk je dat deze woorden waardering uitdrukken. Ze geven alleen het moment aan, zonder oordeel.",
+    "Klopt: de studenten noemen haar werkwijze \"a gift\", en haar eigen uitspraak over liever langzaam en juist bevestigt dat."
+   ],
+   "uh": "Wie oordeelt positief?",
+   "ctx": "Dr. Okafor is known for her meticulous approach. Before she publishes a result, she checks every figure at least three times and asks a colleague to repeat the experiment. Some people find this tiresome, but her students call it a gift: with her, a mistake in a lab report cannot stay hidden. \"I would rather be slow and right than quick and wrong,\" she says."
+  },
+  {
+   "v": "What does \"ease\" mean in \"meant to ease traffic\"?",
+   "o": [
+    "make less of a problem",
+    "make bigger and busier",
+    "move it to another place",
+    "measure it very carefully"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "\"Opposite effect\" laat zien wat de bedoeling was.",
+   "uo": [
+    "Klopt: de brug moest het verkeer verlichten, maar het effect was het tegenovergestelde: langere files.",
+    "Koos je \"make bigger and busier\"? Dan denk je dat de brug het verkeer vergroot. Dat is het tegenovergestelde van de bedoeling, het woord \"ease\" betekent verlichten.",
+    "Koos je \"move it to another place\"? Dan denk je dat verkeer verplaatst wordt. Dat is niet wat \"ease\" betekent, de bedoeling was het probleem te verminderen.",
+    "Koos je \"measure it very carefully\"? Dan denk je dat het om meten gaat. Dat past niet bij \"opposite effect\", de brug moest iets beter maken."
+   ],
+   "uh": "Wat was de bedoeling?",
+   "ctx": "The new bridge was meant to ease traffic. In practice, it has had the opposite effect. Commuters who used to take the old road now crowd onto the bridge, and queues have grown longer than ever. Local shopkeepers, who had hoped for more customers, are disheartened: their street has become quieter, not busier."
+  },
+  {
+   "v": "What does \"disheartened\" mean?",
+   "o": [
+    "surprised and rather amused",
+    "discouraged and less hopeful",
+    "relieved and quite calm",
+    "angry with the daily commuters"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Verwachting tegenover uitkomst leidt tot ontmoediging.",
+   "uo": [
+    "Koos je \"surprised and rather amused\"? Dan denk je dat ze lachen. De tekst noemt teleurstelling, geen humor.",
+    "Klopt: de winkeliers hoopten op meer klanten, maar hun straat is stiller geworden. Dat ontmoedigt.",
+    "Koos je \"relieved and quite calm\"? Dan denk je dat ze opgelucht zijn. De straat is stiller geworden, terwijl ze meer klanten hoopten, dat is teleurstellend.",
+    "Koos je \"angry with the daily commuters\"? Dan denk je dat ze boos zijn op forenzen. De tekst noemt alleen hun teleurstelling, geen boosheid."
+   ],
+   "uh": "Hoop en uitkomst.",
+   "ctx": "The new bridge was meant to ease traffic. In practice, it has had the opposite effect. Commuters who used to take the old road now crowd onto the bridge, and queues have grown longer than ever. Local shopkeepers, who had hoped for more customers, are disheartened: their street has become quieter, not busier."
+  },
+  {
+   "v": "Which part of the text shows that \"disheartened\" cannot mean \"pleased\"?",
+   "o": [
+    "the new bridge was meant to ease the traffic",
+    "commuters who used to take the old road",
+    "queues have grown longer than ever before",
+    "their street has become quieter, not busier"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Bewijs voor een betekenis staat bij de personen om wie het gaat.",
+   "uo": [
+    "Koos je \"the new bridge was meant to ease the traffic\"? Dan denk je dat dit over de winkeliers gaat. Het gaat over het doel van de brug, niet over hun gevoel.",
+    "Koos je \"commuters who used to take the old road\"? Dan denk je dat deze zin hun gevoel toont. Hij beschrijft het gedrag van forenzen, niet de winkeliers.",
+    "Koos je \"queues have grown longer than ever before\"? Dan denk je dat files hun gevoel laten zien. Het gaat om het verkeer, de winkeliers worden pas later genoemd.",
+    "Klopt: de winkeliers hoopten op meer klanten maar kregen minder, dus ze kunnen niet tevreden zijn."
+   ],
+   "uh": "Wie voelt zich zo?",
+   "ctx": "The new bridge was meant to ease traffic. In practice, it has had the opposite effect. Commuters who used to take the old road now crowd onto the bridge, and queues have grown longer than ever. Local shopkeepers, who had hoped for more customers, are disheartened: their street has become quieter, not busier."
+  },
+  {
+   "v": "What does \"ran at a loss\" mean?",
+   "o": [
+    "spent more money than it earned",
+    "travelled too fast to make a profit",
+    "was closed for a year",
+    "earned more than expected"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Vaste uitdrukking: \"run at a loss\" betekent verlies maken.",
+   "uo": [
+    "Klopt: \"but this year it is doing better\" laat zien dat het vorig jaar slecht ging: er ging meer geld uit dan erin kwam.",
+    "Koos je \"travelled too fast to make a profit\"? Dan denk je dat \"ran\" een beweging is. Een winkel loopt niet, het gaat om bedrijfsresultaat, \"at a loss\" betekent verlies.",
+    "Koos je \"was closed for a year\"? Dan denk je dat de winkel dicht was. Ze zegt dat het nu beter gaat, de winkel was dus open maar verliesgevend.",
+    "Koos je \"earned more than expected\"? Dan denk je dat het goed ging. \"But this year it is doing better\" laat zien dat vorig jaar juist slecht was, dus verlies."
+   ],
+   "uh": "Wat zegt \"but\"?",
+   "ctx": "She runs a small bakery near the station. Last year the shop ran at a loss, but this year it is doing better. Her neighbour, who owns a bookshop, says the street is quiet in winter."
+  },
+  {
+   "v": "Which word could replace \"dull\" without changing the meaning?",
+   "o": [
+    "lively and fun",
+    "boring",
+    "sharp and pointed",
+    "quiet and calm"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 6,
+   "u": "Synoniem: boring. \"In contrast\" wijst naar het antoniem lively.",
+   "uo": [
+    "Koos je \"lively and fun\"? Dan denk je dat het hetzelfde betekent. \"In contrast\" laat juist een tegenstelling zien, \"lively\" is het antoniem.",
+    "Klopt: studenten vielen in slaap, en \"in contrast\" laat zien dat de volgende lezing het tegenovergestelde was, dus \"dull\" is saai.",
+    "Koos je \"sharp and pointed\"? Dan denk je aan een mes. Een stompe lezing betekent hier saai, \"sharp\" is geen synoniem in deze zin.",
+    "Koos je \"quiet and calm\"? Dan denk je dat stil hetzelfde is als saai. De tekst gaat over interesse, niet over geluid."
+   ],
+   "uh": "Zoek de tegenstelling.",
+   "ctx": "The lecture was dull, and half of the students fell asleep. The next lecture, in contrast, was so lively that nobody checked their phone."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Marta is a frugal person. She brings lunch from home, repairs her own bike and never buys things she does not need. Her friends, who spend freely, sometimes tease her, but she has saved enough for a trip around the world.",
+   "v": "What does \"frugal\" mean? Give two clues from the text.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zuinig, niet meer geld uitgeven dan nodig (1p). Aanwijzingen: ze brengt lunch mee van huis, repareert haar eigen fiets, koopt niets wat ze niet nodig heeft, of de tegenstelling met vrienden die gul uitgeven (1p per aanwijzing, max. 2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Whereas the old director was arrogant and ignored advice, the new one is humble. She asks every team member for ideas and admits openly when she makes a mistake.",
+   "v": "What does \"humble\" mean? Which signal word helps you, and why?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bescheiden, jezelf niet beter vinden dan anderen (1p). Het signaalwoord is \"whereas\" (1p): het zet de nieuwe directeur tegenover de arrogante oude directeur, dus \"humble\" is het tegendeel van \"arrogant\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "After the failed exam, Jonas felt as if the ground had been pulled from under his feet. For days he could not concentrate, but his teacher encouraged him to try again.",
+   "v": "Is \"the ground had been pulled from under his feet\" literal or figurative? Explain what it means.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Figuurlijk (1p). Hij voelt zich geschokt en onzeker, zijn zekerheid is weg (1p). \"Could not concentrate\" laat het gevolg van dat gevoel zien, hij is niet echt gevallen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "She could not stand the noise in the office, so she asked to work from home. Her manager did not mind and stood by her decision.",
+   "v": "Give the meaning of \"stand\" in \"could not stand the noise\" and of \"stood by\" in the last sentence.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"Could not stand\" = niet kunnen verdragen (1p). \"Stood by\" = achter haar beslissing blijven staan, steunen (1p). Hetzelfde werkwoord heeft verschillende betekenissen, de context bepaalt welke (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "The city council has decided to curb the number of cars in the centre. From next year only residents may park there, so the streets will be quieter and the air cleaner.",
+   "v": "Explain in two steps how you can work out the meaning of \"curb\" without a dictionary.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Stap 1: lees de context, alleen bewoners mogen parkeren, dus er komen minder auto's (1p). Stap 2: het gevolg is stillere straten en schonere lucht, dus \"curb\" = beperken (1p). Controle: vul \"limit\" in en kijk of de zin klopt (1p)."
+  }
+ ]
+}

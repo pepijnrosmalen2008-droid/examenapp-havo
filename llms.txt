@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.257 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.284 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -80,6 +80,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Vermogen en energie (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/vermogen-en-energie.html): Rekenen met elektrisch vermogen (P = U x I) en energie (E = P x t), omgaan met de eenheden watt, joule en kWh en energiekosten berekenen.
 - [Geleiders, isolatoren en sensoren (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/geleiders-isolatoren-en-sensoren.html): Geleiders en isolatoren herkennen en verklaren, en begrijpen hoe niet-ohmse onderdelen werken: gloeilamp, LDR, NTC en diode.
 - [Elektrische veiligheid (Natuurkunde HAVO)](https://slagio.nl/leren/havo/natuurkunde/elektrische-veiligheid.html): Begrijpen wat kortsluiting en overbelasting zijn en hoe zekeringen, aarding en de aardlekschakelaar mensen en huizen beschermen tegen schokken en brand.
+- [Woordbetekenis afleiden uit de context (Engels HAVO)](https://slagio.nl/leren/havo/engels/woordbetekenis-afleiden-uit-de-context.html): Je leert de betekenis van een onbekend Engels woord te vinden met aanwijzingen uit de zin eromheen: uitleg, voorbeelden, tegenstellingen en gevolgen. Je…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
@@ -115,6 +116,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Begrippen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/begrippen.html)
 - [Begrippen Biologie HAVO](https://slagio.nl/leren/havo/biologie/begrippen.html)
 - [Begrippen Natuurkunde HAVO](https://slagio.nl/leren/havo/natuurkunde/begrippen.html)
+- [Begrippen Engels HAVO](https://slagio.nl/leren/havo/engels/begrippen.html)
 
 ## Overig
 - [Examenrooster 2027](https://slagio.nl/examenrooster-2027.html)
