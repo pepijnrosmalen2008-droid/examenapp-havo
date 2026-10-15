@@ -564,7 +564,7 @@ function openVonkChat(opts) {
   _vchat = { messages: [], ctx: { vak: opts.vak || '', niveau: (typeof APP_LEVEL !== 'undefined' ? APP_LEVEL : ''), onderwerp: opts.onderwerp || '' }, bron: opts.bron || '', busy: false };
   let el = document.getElementById('vonk-chat');
   if (!el) { el = document.createElement('div'); el.id = 'vonk-chat'; document.body.appendChild(el); }
-  const sub = opts.onderwerp ? _fbEsc(opts.onderwerp) : (opts.vak ? _fbEsc(opts.vak) : 'je studiecoach');
+  const sub = opts.onderwerp ? _fbEsc(opts.onderwerp) : (opts.vak ? _fbEsc(opts.vak) : 'alle vakken');
   el.innerHTML = `
     <div class="vchat-back" onclick="closeVonkChat()"></div>
     <div class="vchat-card" role="dialog" aria-label="Chat met Vonk">
@@ -576,7 +576,7 @@ function openVonkChat(opts) {
       </div>
       <div class="vchat-msgs" id="vchat-msgs"></div>
       <div class="vchat-input" id="vchat-inputbar">
-        <textarea id="vchat-ta" rows="1" placeholder="Stel Vonk een vraag over ${sub}…" oninput="_vchatGrow(this)" onkeydown="_vchatKey(event)"></textarea>
+        <textarea id="vchat-ta" rows="1" placeholder="${(opts.onderwerp || opts.vak) ? 'Stel Vonk een vraag over ' + sub + '…' : 'Vraag Vonk iets over elk vak…'}" oninput="_vchatGrow(this)" onkeydown="_vchatKey(event)"></textarea>
         <button class="vchat-send" id="vchat-send" onclick="sendVonkChat()" aria-label="Versturen"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
       </div>
     </div>`;
@@ -584,7 +584,7 @@ function openVonkChat(opts) {
   _vchatUpdateQuota();
   const intro = opts.intro || (opts.onderwerp
     ? `Hoi! Ik ben Vonk 🦊 Stel me gerust een vraag over <b>${_fbEsc(opts.onderwerp)}</b> - ik leg het je zo helder mogelijk uit.`
-    : `Hoi! Ik ben Vonk 🦊 Waar wil je meer over weten? Ik help je met de examenstof.`);
+    : `Hoi! Ik ben Vonk 🦊 Vraag me alles over je examenstof, van welk vak ook. Ook plannen of leren mag.`);
   _vchatPush('assistant', intro, true);
   if (!opts.seedUser) _vchatChips(opts);
   try { trackEvent('vonk_chat_open', { vak: opts.vak, onderwerp: opts.onderwerp }); } catch (e) {}
@@ -622,7 +622,7 @@ function _vchatChips(opts) {
   const o = opts || {};
   const list = o.onderwerp
     ? ['Leg ' + o.onderwerp + ' kort uit', 'Geef een voorbeeld', 'Waarom is dit belangrijk?', 'Overhoor me hierover']
-    : ['Leg een lastig onderwerp uit', 'Overhoor me', 'Geef me een studietip'];
+    : ['Leg een lastig onderwerp uit', 'Overhoor me over een vak', 'Hoe plan ik mijn examens?'];
   const box = document.getElementById('vchat-msgs'); if (!box) return;
   const row = document.createElement('div'); row.id = 'vchat-chips'; row.className = 'vchat-chips';
   row.innerHTML = list.map(t => `<button class="vchat-chip" data-q="${_fbEsc(t)}" onclick="sendVonkChat(this.dataset.q)">${_fbEsc(t)}</button>`).join('');
