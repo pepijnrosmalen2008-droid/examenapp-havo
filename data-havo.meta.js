@@ -2356,6 +2356,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "A8",
+      "lo": "en.A.8",
+      "gs": 2,
+      "naam": "Zinsbouw, verbindingswoorden en toon",
+      "beschrijving": "Je bouwt Engelse zinnen met de juiste woordvolgorde, verbindt zinnen met voegwoorden en verbindingswoorden, gebruikt who, which, that en whose en kiest een formele of informele toon.",
+      "ceStatus": "SE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Woordvolgorde in zinnen en vragen",
+       "Voegwoorden en verbindingswoorden",
+       "Relatieve bijzinnen",
+       "Formeel en informeel taalgebruik",
+       "Zinnen verbinden en leestekens"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

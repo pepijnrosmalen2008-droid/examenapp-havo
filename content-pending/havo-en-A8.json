@@ -1,0 +1,679 @@
+{
+ "id": "A8",
+ "lo": "en.A.8",
+ "gs": 2,
+ "naam": "Zinsbouw, verbindingswoorden en toon",
+ "beschrijving": "Je bouwt Engelse zinnen met de juiste woordvolgorde, verbindt zinnen met voegwoorden en verbindingswoorden, gebruikt who, which, that en whose en kiest een formele of informele toon.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Woordvolgorde in zinnen en vragen",
+  "Voegwoorden en verbindingswoorden",
+  "Relatieve bijzinnen",
+  "Formeel en informeel taalgebruik",
+  "Zinnen verbinden en leestekens"
+ ],
+ "sam": "Een Engelse zin heeft de volgorde onderwerp, werkwoord, voorwerp, en een bijwoord van frequentie staat voor het werkwoord (maar na be). Een vraag heeft een hulpwerkwoord. Met voegwoorden en verbindingswoorden geef je contrast (but, however, although, despite), reden (because, since), gevolg (so, as a result) en toevoeging (and, in addition). Een relatieve bijzin met who, which, that, whose of where voegt informatie toe. Formeel en informeel verschillen in woordkeuze, aanhef en afsluiting. Verbind hoofdzinnen met een voegwoord, anders ontstaat een comma splice.",
+ "begrippen": [
+  {
+   "t": "Hoofdzin",
+   "d": "Een zin die zelfstandig kan staan, zoals it was raining."
+  },
+  {
+   "t": "Bijzin",
+   "d": "Een zin die van een hoofdzin afhangt, zoals because it was raining."
+  },
+  {
+   "t": "Woordvolgorde",
+   "d": "De vaste volgorde van de zinsdelen: onderwerp, werkwoord, voorwerp."
+  },
+  {
+   "t": "Bijwoord van frequentie",
+   "d": "Een bijwoord als always of never, dat voor het hoofdwerkwoord staat."
+  },
+  {
+   "t": "Voegwoord",
+   "d": "Een woord dat zinnen verbindt, zoals because, although of so."
+  },
+  {
+   "t": "Verbindingswoord",
+   "d": "Een woord dat een verband tussen zinnen aangeeft, zoals however of as a result."
+  },
+  {
+   "t": "Contrast",
+   "d": "Een tegenstelling, aangegeven met but, however, although of despite."
+  },
+  {
+   "t": "Relatieve bijzin",
+   "d": "Een bijzin met who, which, that, whose of where die informatie toevoegt."
+  },
+  {
+   "t": "Relatief voornaamwoord",
+   "d": "Het woord dat een relatieve bijzin begint, zoals who of whose."
+  },
+  {
+   "t": "Formeel",
+   "d": "Taalgebruik zonder samentrekkingen of spreektaal, voor brieven en zakelijke e-mails."
+  },
+  {
+   "t": "Informeel",
+   "d": "Taalgebruik met samentrekkingen en korte uitdrukkingen, voor vrienden."
+  },
+  {
+   "t": "Comma splice",
+   "d": "Een fout waarbij twee hoofdzinnen alleen met een komma worden verbonden."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Which sentence has the correct word order?",
+   "o": [
+    "She drinks always tea in the morning.",
+    "She always drinks tea in the morning.",
+    "Always she drinks tea in the morning.",
+    "She drinks tea always in the early morning."
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Bijwoorden van frequentie staan voor het hoofdwerkwoord.",
+   "uo": [
+    "Koos je \"She drinks always tea in the morning.\"? Dan denk je dat always achter het werkwoord mag. Always staat vóór het hoofdwerkwoord, en het object volgt direct op het werkwoord.",
+    "Klopt: een bijwoord van frequentie zoals always staat voor het hoofdwerkwoord.",
+    "Koos je \"Always she drinks tea in the morning.\"? Dan denk je dat always de zin kan openen. Dat klinkt onnatuurlijk in een gewone mededeling, always hoort voor het werkwoord.",
+    "Koos je \"She drinks tea always in the early morning.\"? Dan denk je dat always aan het eind past. In een gewone zin staat always voor het werkwoord, niet achter het object."
+   ],
+   "uh": "Always voor het werkwoord."
+  },
+  {
+   "v": "Which question is correct?",
+   "o": [
+    "Where you live?",
+    "Where live you?",
+    "Where do you lives?",
+    "Where do you live?"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Vraagvolgorde: vraagwoord, hulpwerkwoord, onderwerp, stam.",
+   "uo": [
+    "Koos je \"Where you live?\"? Dan denk je dat je do kunt weglaten. Een vraag heeft een hulpwerkwoord nodig, dus where do you live.",
+    "Koos je \"Where live you?\"? Dan denk je dat het onderwerp na het werkwoord kan. Dat is de volgorde van het Nederlands, het Engels gebruikt do you live.",
+    "Koos je \"Where do you lives?\"? Dan denk je dat het werkwoord een -s houdt. Na do gebruik je de stam, dus live.",
+    "Klopt: een vraag met where gebruikt do plus onderwerp plus stam."
+   ],
+   "uh": "Vraagwoord plus do."
+  },
+  {
+   "v": "Which word shows a contrast?",
+   "o": [
+    "but",
+    "because",
+    "so",
+    "and"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "But, however en although geven een contrast.",
+   "uo": [
+    "Klopt: but zet twee zinsdelen tegenover elkaar, zoals in cheap but good.",
+    "Koos je \"because\"? Dan denk je dat because twee dingen tegenover elkaar zet. Het noemt de reden van iets, zoals in because it rained.",
+    "Koos je \"so\"? Dan denk je dat so een tegenstelling aangeeft. Het noemt het gevolg van iets, zoals in he was tired, so he slept.",
+    "Koos je \"and\"? Dan denk je dat and een tegenstelling aangeeft. Het telt dingen alleen bij elkaar op, zonder iets tegenover te zetten."
+   ],
+   "uh": "But: contrast."
+  },
+  {
+   "v": "Which word shows a reason?",
+   "o": [
+    "although",
+    "however",
+    "because",
+    "but"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Because, since en as geven een reden.",
+   "uo": [
+    "Koos je \"although\"? Dan denk je dat although een reden aangeeft. Het zet iets tegenover iets anders, en betekent hoewel.",
+    "Koos je \"however\"? Dan denk je dat however een reden aangeeft. Het staat tussen twee zinnen, en betekent toch of echter.",
+    "Klopt: because geeft de reden van iets, zoals in he slept because he was tired.",
+    "Koos je \"but\"? Dan denk je dat but een reden aangeeft. Het verbindt twee zinsdelen die elkaar tegenspreken, dus het is geen reden."
+   ],
+   "uh": "Because: reden."
+  },
+  {
+   "v": "Which relative pronoun is used for people?",
+   "o": [
+    "which",
+    "where",
+    "who",
+    "when"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Who voor mensen, which voor dingen.",
+   "uo": [
+    "Koos je \"which\"? Dan denk je dat which voor mensen is. Which gebruik je voor dingen, niet voor personen.",
+    "Koos je \"where\"? Dan denk je dat where voor mensen is. Where wijst naar een plaats, zoals in the town where I live.",
+    "Klopt: who verwijst naar personen, zoals in the girl who sings.",
+    "Koos je \"when\"? Dan denk je dat when voor mensen is. When wijst naar een tijdstip, zoals in the day when we met."
+   ],
+   "uh": "Who: personen."
+  },
+  {
+   "v": "Which greeting is formal?",
+   "o": [
+    "Dear Sir or Madam,",
+    "Hi there, how are you?",
+    "Hey, how is it going?",
+    "Yo, what is up?"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 3,
+   "u": "Dear Sir or Madam is formeel, hi en hey zijn informeel.",
+   "uo": [
+    "Klopt: Dear Sir or Madam is een formele aanhef voor iemand die je niet kent.",
+    "Koos je \"Hi there, how are you?\"? Dan denk je dat hi there formeel is. Het is een vriendelijke groet voor vrienden, en past niet in een zakelijke brief.",
+    "Koos je \"Hey, how is it going?\"? Dan denk je dat hey formeel is. Het is een korte uitroep uit spreektaal, te los voor een brief.",
+    "Koos je \"Yo, what is up?\"? Dan denk je dat yo formeel is. Het is straattaal, bijna nooit geschikt voor een schriftelijke groet."
+   ],
+   "uh": "Dear: formeel."
+  },
+  {
+   "v": "Which sentence is more formal?",
+   "o": [
+    "I wanna ask about the course, if that is ok.",
+    "Just wondering about the course and stuff.",
+    "Tell me about the course right now.",
+    "I would like to enquire about the course."
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Formeel: volledige zinnen, beleefde uitdrukkingen, geen spreektaal.",
+   "uo": [
+    "Koos je \"I wanna ask about the course, if that is ok.\"? Dan denk je dat wanna formeel is. Het is spreektaal, in een formele brief schrijf je want to.",
+    "Koos je \"Just wondering about the course and stuff.\"? Dan denk je dat deze zin formeel is. Het is een afgekorte spreektaalzin met stuff, niet voor een brief.",
+    "Koos je \"Tell me about the course right now.\"? Dan denk je dat deze zin formeel is. Het is een bevel, zonder beleefdheid.",
+    "Klopt: I would like to enquire is beleefd en formeel, zonder spreektaal."
+   ],
+   "uh": "Formeel: volledig."
+  },
+  {
+   "v": "Which word fits the gap?",
+   "o": [
+    "because",
+    "so",
+    "although",
+    "but"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "So geeft een gevolg, because een reden.",
+   "uo": [
+    "Koos je \"because\"? Dan denk je dat because past. Dan zou het een reden zijn, maar het gevolg staat hier.",
+    "Klopt: so geeft het gevolg: moe, dus vroeg naar bed.",
+    "Koos je \"although\"? Dan denk je dat although past. Dat geeft een tegenstelling, hier is het gevolg nodig.",
+    "Koos je \"but\"? Dan denk je dat but past. Dat zet twee dingen tegenover elkaar, hier is een gevolg."
+   ],
+   "uh": "So: gevolg.",
+   "ctx": "He was very tired, ______ he went to bed early."
+  },
+  {
+   "v": "Which word fits the gap?",
+   "o": [
+    "Because",
+    "As a result",
+    "Therefore",
+    "Although"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Although geeft een tegenstelling.",
+   "uo": [
+    "Koos je \"Because\"? Dan denk je dat because past. Koud weer is geen reden om te zwemmen, although geeft de tegenstelling.",
+    "Koos je \"As a result\"? Dan denk je dat as a result past. Dat woord noemt een gevolg van iets, hier is een tegenstelling nodig.",
+    "Koos je \"Therefore\"? Dan denk je dat therefore past. Dat geeft een conclusie, hier hoort een bijzin met tegenstelling.",
+    "Klopt: although geeft een tegenstelling: het was koud, maar we gingen zwemmen."
+   ],
+   "uh": "Although: contrast.",
+   "ctx": "______ it was cold, we went swimming in the lake."
+  },
+  {
+   "v": "Which word fits the gap?",
+   "o": [
+    "Because",
+    "However",
+    "Moreover",
+    "So"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "However geeft een tegenstelling tussen zinnen.",
+   "uo": [
+    "Koos je \"Because\"? Dan denk je dat because past. Because noemt een reden en wordt gevolgd door een bijzin, geen tegenstelling.",
+    "Klopt: however geeft een tegenstelling tussen twee zinnen: zij houdt van thee, haar broer niet.",
+    "Koos je \"Moreover\"? Dan denk je dat moreover past. Moreover voegt een extra punt toe in dezelfde richting, hier is een tegenstelling.",
+    "Koos je \"So\"? Dan denk je dat so past. So noemt het gevolg van de vorige zin, hier is een tegenstelling."
+   ],
+   "uh": "However: contrast.",
+   "ctx": "She likes tea. ______, her brother prefers coffee."
+  },
+  {
+   "v": "Which expression fits the gap?",
+   "o": [
+    "because",
+    "although",
+    "because of",
+    "in spite of"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Because of plus zelfstandig naamwoord, because plus zin.",
+   "uo": [
+    "Koos je \"because\"? Dan denk je dat because past. Het wordt gevolgd door een hele zin met onderwerp en werkwoord, niet door alleen een naamwoord.",
+    "Koos je \"although\"? Dan denk je dat although past. Het geeft een tegenstelling, terwijl hier een reden nodig is.",
+    "Klopt: because of wordt gevolgd door een zelfstandig naamwoord, hier the delay.",
+    "Koos je \"in spite of\"? Dan denk je dat in spite of past. Het betekent ondanks en geeft een tegenstelling, geen reden."
+   ],
+   "uh": "Because of: naamwoord.",
+   "ctx": "We missed the train ______ the delay on the motorway."
+  },
+  {
+   "v": "Which expression fits the gap?",
+   "o": [
+    "Despite",
+    "Although",
+    "Because",
+    "However"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Despite plus zelfstandig naamwoord, although plus zin.",
+   "uo": [
+    "Klopt: despite geeft een tegenstelling en wordt gevolgd door een zelfstandig naamwoord.",
+    "Koos je \"Although\"? Dan denk je dat although past. Het wordt gevolgd door een hele zin, hier staat een zelfstandig naamwoord.",
+    "Koos je \"Because\"? Dan denk je dat because past. Regen is geen reden voor een picknick, despite geeft een tegenstelling.",
+    "Koos je \"However\"? Dan denk je dat however past. Het staat tussen twee zinnen, niet voor een zelfstandig naamwoord."
+   ],
+   "uh": "Despite: naamwoord.",
+   "ctx": "______ the heavy rain, we had a great picnic in the park."
+  },
+  {
+   "v": "Which relative pronoun fits the gap?",
+   "o": [
+    "that",
+    "who",
+    "whose",
+    "where"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "That of which voor dingen, who voor mensen.",
+   "uo": [
+    "Klopt: that verwijst naar een ding in een bepalende bijzin.",
+    "Koos je \"who\"? Dan denk je dat who past. Who is voor mensen, een boek is een ding.",
+    "Koos je \"whose\"? Dan denk je dat whose past. Whose geeft bezit aan, er is geen bezitter.",
+    "Koos je \"where\"? Dan denk je dat where past. Where verwijst naar een plaats, een boek is geen plaats."
+   ],
+   "uh": "That: dingen.",
+   "ctx": "The book ______ I bought yesterday is excellent."
+  },
+  {
+   "v": "Which relative pronoun fits the gap?",
+   "o": [
+    "who has",
+    "which is",
+    "whose",
+    "that has"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Whose geeft bezit aan.",
+   "uo": [
+    "Koos je \"who has\"? Dan denk je dat who has de zin goed maakt. Dan staat has voor het bezit en mist de zin een naamwoord, whose geeft het bezit in een woord.",
+    "Koos je \"which is\"? Dan denk je dat which is past. Which is voor dingen, hier gaat het om een meisje.",
+    "Klopt: whose geeft bezit aan: de fiets van het meisje.",
+    "Koos je \"that has\"? Dan denk je dat that has past. Dat geeft geen bezitter aan, whose wel."
+   ],
+   "uh": "Whose: bezit.",
+   "ctx": "The girl ______ bike was stolen called the police."
+  },
+  {
+   "v": "Which expression is informal?",
+   "o": [
+    "I look forward to meeting you.",
+    "Can't wait to see you!",
+    "I would be grateful for your reply.",
+    "Please find attached the report."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Informeel: samentrekkingen en korte uitroepen.",
+   "uo": [
+    "Koos je \"I look forward to meeting you.\"? Dan denk je dat dit informeel is. Het is een beleefde formele uitdrukking, voor een brief.",
+    "Klopt: can't wait is een samentrekking in spreektaal, passend tussen vrienden.",
+    "Koos je \"I would be grateful for your reply.\"? Dan denk je dat dit informeel is. Het is zeer beleefd en formeel, voor een brief.",
+    "Koos je \"Please find attached the report.\"? Dan denk je dat dit informeel is. Het is een formele zakelijke zin, voor een e-mail."
+   ],
+   "uh": "Informeel: kort."
+  },
+  {
+   "v": "Which sentence is punctuated correctly?",
+   "o": [
+    "It was raining, we stayed inside.",
+    "It was raining so, we stayed inside.",
+    "It was raining. So we stayed, inside.",
+    "It was raining, so we stayed inside."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Komma plus voegwoord verbindt twee zinnen.",
+   "uo": [
+    "Koos je \"It was raining, we stayed inside.\"? Dan denk je dat een komma twee zinnen verbindt. Twee hoofdzinnen met alleen een komma vormen een comma splice, je mist een voegwoord.",
+    "Koos je \"It was raining so, we stayed inside.\"? Dan denk je dat de komma achter so hoort. De komma hoort voor het voegwoord, niet erachter.",
+    "Koos je \"It was raining. So we stayed, inside.\"? Dan denk je dat de komma voor inside past. Midden in het zinsdeel we stayed inside hoort geen komma, de scheiding zit voor so.",
+    "Klopt: een komma plus voegwoord so verbindt twee zinnen correct."
+   ],
+   "uh": "Komma plus so."
+  },
+  {
+   "v": "Which sentence has a correct adverb position?",
+   "o": [
+    "He never is late for his school.",
+    "He is never late for school.",
+    "He is late never for school.",
+    "Never he is late for school now."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bij be staat het bijwoord erachter, bij andere werkwoorden ervoor.",
+   "uo": [
+    "Koos je \"He never is late for his school.\"? Dan denk je dat never voor is staat. Bij be staat het bijwoord erachter, dus is never.",
+    "Klopt: never staat achter het hulpwerkwoord is en voor het bijvoeglijk naamwoord.",
+    "Koos je \"He is late never for school.\"? Dan denk je dat never aan het eind past. Het hoort direct na is, niet na late.",
+    "Koos je \"Never he is late for school now.\"? Dan denk je dat never aan het begin kan. Dat vraagt een omgekeerde volgorde, hier niet."
+   ],
+   "uh": "Be: erachter."
+  },
+  {
+   "v": "Which feature makes message A formal?",
+   "o": [
+    "polite, full sentences with a formal closing",
+    "short sentences with a lot of exclamation marks",
+    "the use of first names only in the greeting",
+    "abbreviations and slang from daily speech"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Formele brief: beleefde volledige zinnen en een formele afsluiting.",
+   "uo": [
+    "Klopt: lange beleefde zinnen en een afsluiting zoals Yours sincerely maken de brief formeel.",
+    "Koos je \"short sentences with a lot of exclamation marks\"? Dan denk je dat uitroeptekens formeel zijn. Ze horen bij informele berichten, zoals bericht B.",
+    "Koos je \"the use of first names only in the greeting\"? Dan denk je dat voornamen formeel zijn. Een formele brief gebruikt Dear plus achternaam, dus Mr Jansen.",
+    "Koos je \"abbreviations and slang from daily speech\"? Dan denk je dat afkortingen formeel zijn. Ze horen bij spreektaal, niet bij een formele brief."
+   ],
+   "uh": "Beleefd en volledig.",
+   "ctx": "Message A: Dear Mr Jansen, I am writing to enquire about the position advertised on your website. I would be grateful if you could send me further information. Yours sincerely, Eva de Vries. Message B: Hi Tom, just wanted to ask if you could send me the info about the job. Thanks a lot! Cheers, Eva"
+  },
+  {
+   "v": "What does message B show about the relationship between Eva and Tom?",
+   "o": [
+    "Tom is her manager at the company",
+    "Eva is angry with Tom about something",
+    "they have never met each other before",
+    "they know each other well"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "De toon laat de relatie zien: informeel is bekend.",
+   "uo": [
+    "Koos je \"Tom is her manager at the company\"? Dan denk je dat de ontvanger een baas is. Tegen een baas schrijf je formeler, zoals in bericht A.",
+    "Koos je \"Eva is angry with Tom about something\"? Dan denk je dat de toon boos is. De uitroepen zijn vriendelijk, geen boosheid.",
+    "Koos je \"they have never met each other before\"? Dan denk je dat ze elkaar niet kennen. Wie een onbekende schrijft is formeler, zoals in bericht A.",
+    "Klopt: de informele toon met Hi en Cheers laat zien dat ze goed bekend zijn."
+   ],
+   "uh": "Toon: informeel.",
+   "ctx": "Message A: Dear Mr Jansen, I am writing to enquire about the position advertised on your website. I would be grateful if you could send me further information. Yours sincerely, Eva de Vries. Message B: Hi Tom, just wanted to ask if you could send me the info about the job. Thanks a lot! Cheers, Eva"
+  },
+  {
+   "v": "Which phrase could Eva use in message A instead of \"just wanted to ask\"?",
+   "o": [
+    "I wanna know about the job and stuff",
+    "Hey, quick question about the job",
+    "I am writing to enquire about",
+    "I was just wondering about the job"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Formele opening: I am writing to enquire about.",
+   "uo": [
+    "Koos je \"I wanna know about the job and stuff\"? Dan denk je dat wanna formeel is. Het is spreektaal, niet voor een brief.",
+    "Koos je \"Hey, quick question about the job\"? Dan denk je dat deze opening formeel is. Het is een informele groet met een korte vraag, niet voor een brief.",
+    "Klopt: I am writing to enquire about is een formele manier om een vraag in te leiden.",
+    "Koos je \"I was just wondering about the job\"? Dan denk je dat just wondering formeel is. Het is een informele afzwakking, je gebruikt I am writing to."
+   ],
+   "uh": "Formele opening.",
+   "ctx": "Message A: Dear Mr Jansen, I am writing to enquire about the position advertised on your website. I would be grateful if you could send me further information. Yours sincerely, Eva de Vries. Message B: Hi Tom, just wanted to ask if you could send me the info about the job. Thanks a lot! Cheers, Eva"
+  },
+  {
+   "v": "What does \"However\" at the start of the second sentence do?",
+   "o": [
+    "it gives the reason for the first sentence",
+    "it adds an example of the first sentence",
+    "it sets up a contrast",
+    "it shows the time order of the sentences"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "However introduceert een contrast.",
+   "uo": [
+    "Koos je \"it gives the reason for the first sentence\"? Dan denk je dat however een reden geeft. Het geeft een contrast, geen reden.",
+    "Koos je \"it adds an example of the first sentence\"? Dan denk je dat however een voorbeeld geeft. Het zet twee zinnen tegenover elkaar, een voorbeeld gebruikt for example.",
+    "Klopt: however zet de tweede zin tegenover de eerste, vooral thuis studeren tegenover moeilijk concentreren.",
+    "Koos je \"it shows the time order of the sentences\"? Dan denk je dat however een volgorde in tijd geeft. Het geeft een tegenstelling, geen tijd."
+   ],
+   "uh": "However: contrast.",
+   "ctx": "Many students prefer studying at home. However, some find it difficult to concentrate there because of distractions. Although the library is quiet, it closes at five. As a result, many students study in cafes instead, despite the noise. In addition, cafes offer free wifi, so they are popular."
+  },
+  {
+   "v": "What does \"As a result\" show in the text?",
+   "o": [
+    "a contrast with the previous sentence",
+    "an example of the previous sentence",
+    "a time order of the events in the text",
+    "a result of the situation before"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "As a result introduceert een gevolg.",
+   "uo": [
+    "Koos je \"a contrast with the previous sentence\"? Dan denk je dat as a result een tegenstelling geeft. Dat is de rol van however, as a result kijkt naar de uitkomst van het eerder genoemde.",
+    "Koos je \"an example of the previous sentence\"? Dan denk je dat as a result een voorbeeld geeft. Een voorbeeld begint met for example, as a result noemt wat eruit volgt.",
+    "Koos je \"a time order of the events in the text\"? Dan denk je dat as a result een volgorde in tijd geeft. Een tijdsvolgorde gebruikt then of after that, as a result gaat over oorzaak en gevolg.",
+    "Klopt: as a result introduceert het gevolg: omdat de bieb dicht is, studeren mensen in cafes."
+   ],
+   "uh": "As a result: gevolg.",
+   "ctx": "Many students prefer studying at home. However, some find it difficult to concentrate there because of distractions. Although the library is quiet, it closes at five. As a result, many students study in cafes instead, despite the noise. In addition, cafes offer free wifi, so they are popular."
+  },
+  {
+   "v": "What does \"despite the noise\" mean in the text?",
+   "o": [
+    "even though there is noise",
+    "because of all the noise around them",
+    "after all the noise has finally stopped",
+    "without any noise at all in the cafe"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Despite betekent ondanks.",
+   "uo": [
+    "Klopt: despite geeft een tegenstelling: ze studeren in cafes ondanks het lawaai.",
+    "Koos je \"because of all the noise around them\"? Dan denk je dat despite een reden geeft. Despite betekent ondanks, het tegendeel van een reden zoals because of.",
+    "Koos je \"after all the noise has finally stopped\"? Dan denk je dat despite een tijd geeft. After geeft een tijdsvolgorde, despite zet het lawaai en het studeren tegenover elkaar.",
+    "Koos je \"without any noise at all in the cafe\"? Dan denk je dat despite geen lawaai betekent. Het lawaai is er echt, ze studeren er ondanks."
+   ],
+   "uh": "Despite: ondanks.",
+   "ctx": "Many students prefer studying at home. However, some find it difficult to concentrate there because of distractions. Although the library is quiet, it closes at five. As a result, many students study in cafes instead, despite the noise. In addition, cafes offer free wifi, so they are popular."
+  },
+  {
+   "v": "Why does the writer use \"In addition\" before the last sentence?",
+   "o": [
+    "to contrast with the previous point",
+    "to add another point",
+    "to give a reason for the previous point",
+    "to conclude the text"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "In addition voegt een extra punt toe.",
+   "uo": [
+    "Koos je \"to contrast with the previous point\"? Dan denk je dat in addition een tegenstelling geeft. Dat is however, in addition voegt iets toe.",
+    "Klopt: in addition voegt een extra punt toe, hier de gratis wifi.",
+    "Koos je \"to give a reason for the previous point\"? Dan denk je dat in addition een reden geeft. Dat is because, in addition voegt iets toe.",
+    "Koos je \"to conclude the text\"? Dan denk je dat in addition de afsluiting is. Dat is in conclusion, in addition voegt iets toe."
+   ],
+   "uh": "In addition: toevoegen.",
+   "ctx": "Many students prefer studying at home. However, some find it difficult to concentrate there because of distractions. Although the library is quiet, it closes at five. As a result, many students study in cafes instead, despite the noise. In addition, cafes offer free wifi, so they are popular."
+  },
+  {
+   "v": "What does \"whose\" show in \"the neighbour whose dog barks all night\"?",
+   "o": [
+    "the neighbour belongs to the dog and its owner",
+    "the neighbour is talking about a dog",
+    "the neighbour is himself a dog",
+    "the dog belongs to the neighbour"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Whose geeft bezit aan.",
+   "uo": [
+    "Koos je \"the neighbour belongs to the dog and its owner\"? Dan denk je dat de buurman van de hond is. Whose wijst op de bezitter vóór het woord, de hond is van de buurman, niet andersom.",
+    "Koos je \"the neighbour is talking about a dog\"? Dan denk je dat de buurman over een hond praat. Een bezitsvorm zegt niets over praten, whose hoort bij eigendom.",
+    "Koos je \"the neighbour is himself a dog\"? Dan denk je dat de buurman een hond is. De buurman is een persoon en geen dier, whose koppelt alleen bezit.",
+    "Klopt: whose geeft bezit aan: de hond van de buurman."
+   ],
+   "uh": "Whose: bezit.",
+   "ctx": "My cousin, who lives in Toronto, has just bought a house that was built in 1920. The street where it stands is quiet, and the neighbour whose dog barks all night has promised to move. The agent who sold the house, which needed a new roof, gave her a discount."
+  },
+  {
+   "v": "Which relative clause is non-defining, extra information between commas?",
+   "o": [
+    "who lives in Toronto",
+    "that was built in 1920",
+    "where it stands",
+    "whose dog barks all night"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Tussen komma's: extra informatie, zonder komma's: bepalend.",
+   "uo": [
+    "Klopt: de bijzin staat tussen komma's en voegt extra informatie toe zonder de identiteit te bepalen.",
+    "Koos je \"that was built in 1920\"? Dan denk je dat deze bijzin extra informatie geeft. Zonder hem weet je niet welk huis bedoeld is, dus hij is bepalend.",
+    "Koos je \"where it stands\"? Dan denk je dat deze bijzin een bijzaak is. Hij wijst de straat aan, en bepalende bijzinnen krijgen geen komma's.",
+    "Koos je \"whose dog barks all night\"? Dan denk je dat deze bijzin alleen een toevoeging is. Hij onderscheidt deze buurman van andere buren, dus hij is bepalend."
+   ],
+   "uh": "Komma's: extra.",
+   "ctx": "My cousin, who lives in Toronto, has just bought a house that was built in 1920. The street where it stands is quiet, and the neighbour whose dog barks all night has promised to move. The agent who sold the house, which needed a new roof, gave her a discount."
+  },
+  {
+   "v": "Which is the correct version?",
+   "o": [
+    "My cousin which lives in Toronto bought a house. It is very big. Although it was expensive, she likes it.",
+    "My cousin, who lives in Toronto, bought a house. It is very big. Although it was expensive, she likes it.",
+    "My cousin, who lives in Toronto, bought a house, it is very big. Although it was expensive, she likes it.",
+    "My cousin, who lives in Toronto, bought a house. It is very big. Although it was expensive, but she likes it."
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Controleer relatieve voornaamwoorden, comma splice en dubbele voegwoorden.",
+   "uo": [
+    "Koos je \"My cousin which lives in Toronto bought a house. It...\"? Dan denk je dat which voor een persoon kan. Voor mensen gebruik je who, de rest is verbeterd.",
+    "Klopt: who voor een persoon met komma's, een punt in plaats van een komma splice, en although zonder but.",
+    "Koos je \"My cousin, who lives in Toronto, bought a house, it...\"? Dan denk je dat een komma twee zinnen verbindt. Je maakt een comma splice, je hebt een punt nodig.",
+    "Koos je \"My cousin, who lives in Toronto, bought a house. It...\"? Dan denk je dat although en but samen kunnen. Eén voegwoord is genoeg, dus weg met but."
+   ],
+   "uh": "Who, punt, geen but.",
+   "ctx": "A student wrote: \"My cousin which lives in Toronto bought a house, it is very big. Although it was expensive, but she likes it.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "A student writes an email to a school: \"Hi, my name is Sam and I wanna ask about the exchange year. Can you send me the info? Thanks a lot! Cheers, Sam.\" The school asks him to make the email formal.",
+   "v": "Rewrite the greeting, the request and the closing in a formal way.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Greeting: Dear Sir or Madam (1p). Request: I would like to enquire about the exchange year / Could you please send me information (1p). Closing: Yours faithfully / Yours sincerely, Sam (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Read three sentences from a school blog. Choose the correct connector and explain: (1) It was cold, ___ we went swimming. (but / so) (2) ___ the noise in the cafe, we studied for hours. (Despite / Because) (3) She was ill, ___ she stayed at home. (but / so)",
+   "v": "Fill in the gaps and explain which relation each connector shows.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "(1) but, contrast (1p). (2) Despite, contrast met een zelfstandig naamwoord (1p). (3) so, gevolg (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A student wrote a paragraph about the neighbours: \"The man which lives next door is a doctor, he helps everyone in the street. The woman who her dog barks all night is angry, and she complains every morning.\"",
+   "v": "Find three mistakes and correct them.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "The man who lives next door (who voor personen) (1p). A doctor. He helps everyone, of met voegwoord (comma splice) (1p). The woman whose dog barks (whose voor bezit) (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "A pen friend sent these sentences to practise: \"He always drinks tea in the morning. She never is late for school. Where you live? Because of it was raining, we stayed home.\" Her teacher asked her to check the word order and the connectors.",
+   "v": "Find three mistakes in the sentences and correct them.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "She is never late (bijwoord na be) (1p). Where do you live? (hulpwerkwoord in de vraag) (1p). Because it was raining of Because of the rain (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "My sister, who lives in London, has bought a flat that is in the city centre. The flat, which needed a new roof, was expensive. The agent whose phone number I had was very helpful.",
+   "v": "Name the relative pronoun in each clause and say what it refers to.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Who verwijst naar my sister (persoon) (1p). That en which verwijzen naar het flat (ding) (1p). Whose verwijst naar de agent en geeft bezit aan (1p)."
+  }
+ ]
+}

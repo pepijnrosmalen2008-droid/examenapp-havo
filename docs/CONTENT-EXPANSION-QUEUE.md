@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **38 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7). Werk dit getal bij bij elke afronding.
+> Voortgang: **39 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -76,7 +76,7 @@
 - [ ] **VMBO · Nederlands** (`nl`) · domein C — Leesvaardigheid
 - [ ] **VMBO · Nederlands** (`nl`) · domein D — Schrijfvaardigheid
 - [ ] **VMBO · Nederlands** (`nl`) · domein E — Fictie
-- [ ] **HAVO · Engels** (`en`) · domein A — Woordenschat & grammatica
+- [x] **HAVO · Engels** (`en`) · domein A — Woordenschat & grammatica (8 van 8 leerdoelen op v2)
   - [x] A1 · en.A.1 Woordbetekenis afleiden uit de context (ook synoniemen en tegenstellingen) · 27 vragen (R1 7, R2 9, R3 11, 11 met tekst), 12 begrippen, 4 figuren (aanwijzing in de zin, tegenstelling en gevolg, meer betekenissen, controleren), geen clip
   - [x] A2 · en.A.2 Woordvorming: voor- en achtervoegsels · 28 vragen (R1 7, R2 12, R3 9, 17 met tekst), 12 begrippen, 4 figuren (delen van een woord, voorvoegsels, woordfamilie, spelling), geen clip
   - [x] A3 · en.A.3 Collocaties, vaste uitdrukkingen en false friends · 28 vragen (R1 7, R2 12, R3 9, 16 met tekst), 12 begrippen, 4 figuren (collocaties, uitdrukking, false friends, voorzetsels), geen clip
@@ -84,7 +84,7 @@
   - [x] A5 · en.A.5 Modale werkwoorden · 27 vragen (R1 7, R2 10, R3 10, 18 met tekst), 12 begrippen, 4 figuren (vorm, functies, zekerheidsschaal, verleden), geen clip
   - [x] A6 · en.A.6 Conditionals (type 1, 2 en 3) · 27 vragen (R1 7, R2 10, R3 10, 17 met tekst), 12 begrippen, 4 figuren (drie types, tijdlijn, unless en in case, keuzeschema), geen clip
   - [x] A7 · en.A.7 Passief en actief · 27 vragen (R1 7, R2 10, R3 10, 17 met tekst), 12 begrippen, 4 figuren (tijden, actief naar passief, wanneer passief, fouten), geen clip
-  - [ ] A8 · en.A.8 Zinsbouw, verbindingswoorden en formeel tegenover informeel
+  - [x] A8 · en.A.8 Zinsbouw, verbindingswoorden en formeel tegenover informeel · 27 vragen (R1 7, R2 10, R3 10, 17 met tekst), 12 begrippen, 4 figuren (woordvolgorde, voegwoorden, relatieve bijzinnen, formeel en informeel), geen clip
 - [ ] **HAVO · Engels** (`en`) · domein B — Leesvaardigheid
 - [ ] **HAVO · Engels** (`en`) · domein C — Kijk- en luistervaardigheid
 - [ ] **HAVO · Engels** (`en`) · domein D — Gespreksvaardigheid
