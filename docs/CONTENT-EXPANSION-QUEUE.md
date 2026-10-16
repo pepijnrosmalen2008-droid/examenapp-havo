@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **43 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4). Werk dit getal bij bij elke afronding.
+> Voortgang: **44 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -90,7 +90,7 @@
   - [x] B2 · en.B.2 De hoofdgedachte van een tekst aangeven · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 670-730 tekens), 12 begrippen, 4 figuren (piramide, plaatsen, breed en smal, signaalwoorden), geen clip
   - [x] B3 · en.B.3 De betekenis van woorden en zinsdelen in een tekst · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 670-730 tekens), 12 begrippen, 4 figuren (context, letterlijk tegenover figuurlijk, verwijswoorden, parafrase), geen clip
   - [x] B4 · en.B.4 Relaties tussen tekstdelen herkennen · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 635-670 tekens), 12 begrippen, 4 figuren (signaalwoorden, oorzaak en gevolg, tegenstelling en concessie, tekststructuur), geen clip
-  - [ ] B5 · en.B.5 Conclusies trekken over de bedoeling en de opvatting van de schrijver
+  - [x] B5 · en.B.5 Conclusies trekken over de bedoeling en de opvatting van de schrijver · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 600-650 tekens), 12 begrippen, 4 figuren (doel, woordkeuze, expliciet en impliciet, aanwijzingen), geen clip
   - [ ] B6 · en.B.6 Feiten, meningen en argumenten onderscheiden
   - [ ] B7 · en.B.7 Brieven en e-mails lezen
   - [ ] B8 · en.B.8 Een tekst samenvatten en parafraseren

@@ -2482,6 +2482,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B5",
+      "lo": "en.B.5",
+      "gs": 2,
+      "naam": "Conclusies trekken over de schrijver en zijn bedoeling",
+      "beschrijving": "Je leert uit een Engelse tekst af te leiden wat de schrijver wil bereiken, welke toon hij gebruikt, wat hij vindt of voelt, voor wie de tekst bedoeld is en wat niet letterlijk gezegd wordt.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Doel van de schrijver",
+       "Toon en stemming",
+       "Houding en mening van de schrijver",
+       "Impliciete informatie en conclusies",
+       "Publiek en aanwijzingen in woordkeuze"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

@@ -112203,6 +112203,692 @@ var VAKKEN = [
         "u": "Therefore verbindt het resultaat (veel bezoekers) met het besluit om zondag open te blijven (1p). However geeft een tegenstelling: de bibliothecarissen vragen extra loon (1p). Samen laten ze een besluit met een bezwaar zien (1p)."
        }
       ]
+     },
+     {
+      "id": "B5",
+      "lo": "en.B.5",
+      "gs": 2,
+      "naam": "Conclusies trekken over de schrijver en zijn bedoeling",
+      "beschrijving": "Je leert uit een Engelse tekst af te leiden wat de schrijver wil bereiken, welke toon hij gebruikt, wat hij vindt of voelt, voor wie de tekst bedoeld is en wat niet letterlijk gezegd wordt.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Doel van de schrijver",
+       "Toon en stemming",
+       "Houding en mening van de schrijver",
+       "Impliciete informatie en conclusies",
+       "Publiek en aanwijzingen in woordkeuze"
+      ],
+      "sam": "Een schrijver heeft een doel: informeren, overtuigen, vermaken of waarschuwen. Aan de woordkeuze zie je de toon (humorous, serious, critical) en de houding (positief, negatief, sceptisch). Niet alles staat er letterlijk: wat impliciet is trek je als conclusie uit aanwijzingen zoals aanhalingstekens, een enkel woord als a few, of een vergelijking. Let ook op wie het publiek is en op woorden als urge, advise of honestly die de bedoeling verraden.",
+      "begrippen": [
+       {
+        "t": "Doel",
+        "d": "Wat de schrijver wil bereiken: informeren, overtuigen, vermaken of waarschuwen."
+       },
+       {
+        "t": "Overtuigen",
+        "d": "Persuade: de lezer laten instemmen met een mening."
+       },
+       {
+        "t": "Waarschuwen",
+        "d": "Warn: de lezer op een gevaar wijzen."
+       },
+       {
+        "t": "Toon",
+        "d": "De sfeer van een tekst, zoals humorous, serious of critical."
+       },
+       {
+        "t": "Houding",
+        "d": "Wat de schrijver vindt of voelt over het onderwerp."
+       },
+       {
+        "t": "Ironie",
+        "d": "Iets zeggen en het tegendeel bedoelen, vaak met aanhalingstekens."
+       },
+       {
+        "t": "Expliciet",
+        "d": "Wat er letterlijk in de tekst staat."
+       },
+       {
+        "t": "Impliciet",
+        "d": "Wat niet letterlijk staat maar wel uit de tekst volgt."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Wat je uit aanwijzingen afleidt over de bedoeling of mening."
+       },
+       {
+        "t": "Publiek",
+        "d": "De lezers voor wie de tekst bedoeld is."
+       },
+       {
+        "t": "Woordkeuze",
+        "d": "De woorden die de schrijver kiest en die zijn mening verraden."
+       },
+       {
+        "t": "Aanwijzing",
+        "d": "Een woord of zin die iets laat zien over doel, toon of houding."
+       }
+      ],
+      "sv": [
+       {
+        "v": "What is the purpose of a text that tries to make the reader agree with the writer?",
+        "o": [
+         "to inform the reader about facts only",
+         "to persuade the reader",
+         "to amuse the reader with a funny story",
+         "to describe a place or a person in detail"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Persuade = overtuigen, inform = informeren, entertain = vermaken.",
+        "uo": [
+         "Koos je \"to inform the reader about facts only\"? Dan denk je dat het alleen om feiten gaat. Informeren geeft feiten zonder standpunt, overtuigen wil een mening veranderen.",
+         "Klopt: een tekst die de lezer wil laten instemmen wil overtuigen, ofwel persuade.",
+         "Koos je \"to amuse the reader with a funny story\"? Dan denk je dat het om vermaak gaat. Amuseren is grappig bedoeld, overtuigen wil een mening veranderen.",
+         "Koos je \"to describe a place or a person in detail\"? Dan denk je dat het om beschrijven gaat. Beschrijven toont hoe iets is, overtuigen wil de lezer laten instemmen."
+        ],
+        "uh": "Overtuigen."
+       },
+       {
+        "v": "Which word describes a funny and light tone?",
+        "o": [
+         "serious and very formal indeed",
+         "angry and full of complaints",
+         "formal and quite official in style",
+         "humorous"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Humorous = grappig, serious = ernstig, critical = kritisch.",
+        "uo": [
+         "Koos je \"serious and very formal indeed\"? Dan denk je dat de toon grappig is. Serieus is het tegendeel, dus niet luchtig.",
+         "Koos je \"angry and full of complaints\"? Dan denk je dat boos grappig is. Boosheid is een stemming, geen humor.",
+         "Koos je \"formal and quite official in style\"? Dan denk je dat formeel grappig is. Formeel is een stijl, geen toon van humor.",
+         "Klopt: humorous betekent grappig en luchtig, en past dus bij een lichte toon."
+        ],
+        "uh": "Humorous."
+       },
+       {
+        "v": "What does the \"attitude\" of an author mean?",
+        "o": [
+         "what the author thinks or feels about the subject",
+         "the number of sentences that the author writes",
+         "the place where the author was born",
+         "the topic that the text is about in general"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Attitude = houding: mening of gevoel over iets.",
+        "uo": [
+         "Klopt: de houding van de schrijver is wat hij of zij vindt of voelt over het onderwerp.",
+         "Koos je \"the number of sentences that the author writes\"? Dan denk je dat het om de lengte gaat. De houding gaat over een mening, niet over aantallen.",
+         "Koos je \"the place where the author was born\"? Dan denk je dat het om afkomst gaat. De houding zit in de tekst, niet in de biografie.",
+         "Koos je \"the topic that the text is about in general\"? Dan denk je dat het om het onderwerp gaat. De houding is wat de schrijver ervan vindt, niet het onderwerp zelf."
+        ],
+        "uh": "Houding."
+       },
+       {
+        "v": "What is the main purpose of the text about the phone rule?",
+        "o": [
+         "to give neutral facts about phones at schools",
+         "to make readers laugh about school rules",
+         "to convince readers that the rule is a good idea",
+         "to warn readers about the danger of phones"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Zoek naar advies en mening om het doel te bepalen.",
+        "uo": [
+         "Koos je \"to give neutral facts about phones at schools\"? Dan denk je dat de tekst neutraal is. De schrijver geeft persoonlijke meningen, het is een betoog.",
+         "Koos je \"to make readers laugh about school rules\"? Dan denk je dat de tekst grappig bedoeld is. De toon is serieus en overtuigend, niet komisch.",
+         "Klopt: de schrijver verandert van mening en adviseert ook andere scholen de regel te proberen.",
+         "Koos je \"to warn readers about the danger of phones\"? Dan denk je dat de tekst waarschuwt. De schrijver zegt dat telefoons niet slecht zijn, het gaat om lessen."
+        ],
+        "uh": "Overtuigen.",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it."
+       },
+       {
+        "v": "What is the tone of the text about the holiday?",
+        "o": [
+         "angry and full of complaints",
+         "serious and rather formal in style",
+         "humorous and warm",
+         "sad and very disappointed about it"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 1,
+        "u": "Toon zie je aan woordkeuze en grapjes.",
+        "uo": [
+         "Koos je \"angry and full of complaints\"? Dan denk je dat de schrijver boos is. De problemen worden luchtig verteld, dus niet boos.",
+         "Koos je \"serious and rather formal in style\"? Dan denk je dat de toon ernstig is. De schrijver gebruikt grapjes, dus luchtig.",
+         "Klopt: de schrijver lacht om de problemen, maar vertelt het met warmte.",
+         "Koos je \"sad and very disappointed about it\"? Dan denk je dat de schrijver teleurgesteld is. Het was juist de beste vakantie, dus niet verdrietig."
+        ],
+        "uh": "Grappig en warm.",
+        "ctx": "Our family holiday began with a small misunderstanding. My father had booked a \"charming cottage by the sea\", which, according to the photo, looked like a postcard. When we arrived, the sea turned out to be a muddy river some twenty minutes' walk away, and the charming cottage had a door that refused to close. My mother, always the optimist, praised the \"fresh air\" that blew through the living room all night. By the third day we had named the door Gerald and stopped trying to shut him out. Strangely, it was the best holiday we ever had, mostly because we have been laughing about it ever since."
+       },
+       {
+        "v": "What is the main purpose of the text about the email?",
+        "o": [
+         "to warn people about a trick",
+         "to advertise a new bank product",
+         "to entertain readers with a story",
+         "to describe how the bank works"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Warn = waarschuwen: let op advies als urged.",
+        "uo": [
+         "Klopt: de tekst vertelt over een oplichtingsmail en adviseert wat lezers moeten doen.",
+         "Koos je \"to advertise a new bank product\"? Dan denk je dat de tekst reclame maakt. De bank wordt alleen genoemd als slachtoffer, de tekst waarschuwt.",
+         "Koos je \"to entertain readers with a story\"? Dan denk je dat de tekst vermaakt. Het is een ernstig bericht, het doel is waarschuwen.",
+         "Koos je \"to describe how the bank works\"? Dan denk je dat de tekst de bank uitlegt. Dat staat nergens, het gaat om een waarschuwing."
+        ],
+        "uh": "Waarschuwen.",
+        "ctx": "Last month, an elderly woman in our town received an email from her \"bank\". It asked her to confirm her password because of a \"security problem\". The message looked real: it used the bank's colours, and even the sender's address was almost identical. Luckily, she phoned her grandson before clicking, and he recognised the trick at once. Police report that cases like this are becoming more common, and that older people are often the target. Banks never ask for passwords by email, an officer explained. Residents are therefore urged to delete such messages and to talk to relatives if they are unsure."
+       },
+       {
+        "v": "How did the writer feel about the rule before the three weeks?",
+        "o": [
+         "very enthusiastic from the first day on",
+         "angry, the writer wanted to protest",
+         "indifferent, the writer did not care at all",
+         "doubtful, the writer did not expect to like it"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "Eerder gevoel: zoek naar uitspraken uit het verleden.",
+        "uo": [
+         "Koos je \"very enthusiastic from the first day on\"? Dan denk je dat de schrijver meteen enthousiast was. De zin zegt het tegendeel, er was eerst twijfel.",
+         "Koos je \"angry, the writer wanted to protest\"? Dan denk je dat de schrijver boos was. Er staat geen protest, alleen twijfel.",
+         "Koos je \"indifferent, the writer did not care at all\"? Dan denk je dat de schrijver onverschillig was. De schrijver verwachtte iets, namelijk dat hij het niet leuk zou vinden.",
+         "Klopt: \"I did not expect to like it\" laat zien dat de schrijver eerst twijfelde."
+        ],
+        "uh": "Eerst twijfel.",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it."
+       },
+       {
+        "v": "What is the writer's opinion about phones in general?",
+        "o": [
+         "phones are evil and should be forbidden",
+         "phones are not bad, but lessons are not the place",
+         "phones should be allowed everywhere at all times",
+         "phones are important for emergencies only"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Houding: zoek wat de schrijver zelf zegt met I believe of I would say.",
+        "uo": [
+         "Koos je \"phones are evil and should be forbidden\"? Dan denk je dat de schrijver telefoons slecht vindt. De schrijver zegt het tegendeel, ze zijn niet kwaad.",
+         "Klopt: de schrijver zegt dat telefoons niet slecht zijn, maar dat lessen voor leren zijn.",
+         "Koos je \"phones should be allowed everywhere at all times\"? Dan denk je dat de schrijver telefoons overal toelaat. In de les hoort het niet, de pauze is genoeg.",
+         "Koos je \"phones are important for emergencies only\"? Dan denk je dat noodgevallen het enige zijn. De schrijver noemt dat als bezwaar van anderen, niet zijn mening."
+        ],
+        "uh": "Niet slecht, wel in de pauze.",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it."
+       },
+       {
+        "v": "What does \"teachers no longer have to compete with glowing screens\" suggest?",
+        "o": [
+         "teachers want to use screens in class",
+         "students were better behaved before the rule",
+         "the school bought new screens for lessons",
+         "phones used to distract the students in lessons"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Impliciete informatie: concurreren met schermen betekent dat ze afleidden.",
+        "uo": [
+         "Koos je \"teachers want to use screens in class\"? Dan denk je dat leraren schermen willen gebruiken. De zin zegt dat ze niet meer hoeven te concurreren, dus nu niet meer.",
+         "Koos je \"students were better behaved before the rule\"? Dan denk je dat het eerder beter ging. De zin zegt dat nu minder concurrentie is, dus eerder erger.",
+         "Koos je \"the school bought new screens for lessons\"? Dan denk je dat er nieuwe schermen kwamen. Dat staat nergens, het gaat om telefoons.",
+         "Klopt: de zin laat zien dat telefoons eerder de aandacht van leerlingen afleidden."
+        ],
+        "uh": "Afleiding.",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it."
+       },
+       {
+        "v": "What does \"my advice is simple: do it\" show about the writer's tone?",
+        "o": [
+         "unsure and very careful in tone",
+         "confident and direct",
+         "shy and rather hesitant about it",
+         "jokes and plays with the readers"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Korte stellige zinnen tonen zekerheid.",
+        "uo": [
+         "Koos je \"unsure and very careful in tone\"? Dan denk je dat de schrijver twijfelt. Het advies is juist kort en stellig, dus zeker.",
+         "Klopt: een kort, stellig advies klinkt zeker en direct.",
+         "Koos je \"shy and rather hesitant about it\"? Dan denk je dat de schrijver verlegen is. Het advies staat in een korte, stellige zin, dus niet verlegen.",
+         "Koos je \"jokes and plays with the readers\"? Dan denk je dat de schrijver grappen maakt. De zin is serieus bedoeld, het is een advies."
+        ],
+        "uh": "Stellig.",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it."
+       },
+       {
+        "v": "Who is the writer addressing in the last sentence?",
+        "o": [
+         "the students who grumble about the rule",
+         "the parents who send messages to students",
+         "other schools that are thinking about the rule",
+         "the teachers of the school of the writer"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Wie wordt aangesproken: kijk naar if other schools.",
+        "uo": [
+         "Koos je \"the students who grumble about the rule\"? Dan denk je dat de laatste zin de klagers aanspreekt. Die worden eerder in de tekst genoemd, maar de laatste zin kijkt naar andere scholen.",
+         "Koos je \"the parents who send messages to students\"? Dan denk je dat ouders worden aangesproken. Zij komen alleen voor als afzender van berichten, het advies richt zich op andere scholen.",
+         "Klopt: de laatste zin richt zich op scholen die twijfelen over dezelfde regel.",
+         "Koos je \"the teachers of the school of the writer\"? Dan denk je dat de eigen leraren worden aangesproken. Zij hoeven de regel al te volgen, het advies gaat naar scholen die nog twijfelen."
+        ],
+        "uh": "Andere scholen.",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it."
+       },
+       {
+        "v": "Why does the writer put \"charming cottage by the sea\" in quotation marks?",
+        "o": [
+         "to show that the description was not true",
+         "to quote the words of the owner",
+         "to show that the cottage was really lovely",
+         "to explain the name of a famous hotel"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Aanhalingstekens kunnen ironie of twijfel tonen.",
+        "uo": [
+         "Klopt: de aanhalingstekens laten zien dat de werkelijkheid anders bleek, ironisch bedoeld.",
+         "Koos je \"to quote the words of the owner\"? Dan denk je dat het een citaat is. De aanhalingstekens geven ironie aan, niet een bron.",
+         "Koos je \"to show that the cottage was really lovely\"? Dan denk je dat het huisje mooi was. De tekst laat zien dat het tegenviel, dus ironisch.",
+         "Koos je \"to explain the name of a famous hotel\"? Dan denk je dat het een naam van een hotel is. Dat staat nergens, het is een beschrijving."
+        ],
+        "uh": "Ironie in aanhalingstekens.",
+        "ctx": "Our family holiday began with a small misunderstanding. My father had booked a \"charming cottage by the sea\", which, according to the photo, looked like a postcard. When we arrived, the sea turned out to be a muddy river some twenty minutes' walk away, and the charming cottage had a door that refused to close. My mother, always the optimist, praised the \"fresh air\" that blew through the living room all night. By the third day we had named the door Gerald and stopped trying to shut him out. Strangely, it was the best holiday we ever had, mostly because we have been laughing about it ever since."
+       },
+       {
+        "v": "What is the writer's attitude to the holiday in the end?",
+        "o": [
+         "positive, even though it started badly",
+         "negative, it was the worst holiday ever",
+         "neutral, the writer has no real opinion",
+         "angry, the writer blames the father"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Slotzinnen tonen vaak de houding van de schrijver.",
+        "uo": [
+         "Klopt: de schrijver noemt het de beste vakantie ooit, ondanks de problemen.",
+         "Koos je \"negative, it was the worst holiday ever\"? Dan denk je dat de vakantie slecht was. De tekst zegt het tegendeel, het was de beste ooit.",
+         "Koos je \"neutral, the writer has no real opinion\"? Dan denk je dat de schrijver geen mening heeft. De schrijver noemt het de beste vakantie, dus positief.",
+         "Koos je \"angry, the writer blames the father\"? Dan denk je dat de schrijver boos is. De toon is humoristisch, geen verwijt."
+        ],
+        "uh": "Positief.",
+        "ctx": "Our family holiday began with a small misunderstanding. My father had booked a \"charming cottage by the sea\", which, according to the photo, looked like a postcard. When we arrived, the sea turned out to be a muddy river some twenty minutes' walk away, and the charming cottage had a door that refused to close. My mother, always the optimist, praised the \"fresh air\" that blew through the living room all night. By the third day we had named the door Gerald and stopped trying to shut him out. Strangely, it was the best holiday we ever had, mostly because we have been laughing about it ever since."
+       },
+       {
+        "v": "What does the mother's remark about the \"fresh air\" show?",
+        "o": [
+         "she did not notice the problem with the door",
+         "she was very angry about the broken door",
+         "she looked for the positive side of a problem",
+         "she wanted to open all windows at night"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Een positieve term voor een probleem is ironisch of optimistisch.",
+        "uo": [
+         "Koos je \"she did not notice the problem with the door\"? Dan denk je dat ze de deur niet zag. Ze noemt de tocht juist, dus ze ziet het probleem.",
+         "Koos je \"she was very angry about the broken door\"? Dan denk je dat ze boos was. Ze gebruikt een positieve term, dus niet boos.",
+         "Klopt: ze noemt de tocht in huis frisse lucht, en dat is een positieve draai aan een probleem.",
+         "Koos je \"she wanted to open all windows at night\"? Dan denk je dat ze de ramen wilde openen. Het ging om de deur die niet sloot, niet om ramen."
+        ],
+        "uh": "Positief bekeken.",
+        "ctx": "Our family holiday began with a small misunderstanding. My father had booked a \"charming cottage by the sea\", which, according to the photo, looked like a postcard. When we arrived, the sea turned out to be a muddy river some twenty minutes' walk away, and the charming cottage had a door that refused to close. My mother, always the optimist, praised the \"fresh air\" that blew through the living room all night. By the third day we had named the door Gerald and stopped trying to shut him out. Strangely, it was the best holiday we ever had, mostly because we have been laughing about it ever since."
+       },
+       {
+        "v": "What can you conclude about the grandson?",
+        "o": [
+         "he works at the bank of his grandmother",
+         "he knew that such emails can be scams",
+         "he sent the email to his grandmother",
+         "he was the target of the same trick"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Impliciet: at once herkennen betekent kennis van de truc.",
+        "uo": [
+         "Koos je \"he works at the bank of his grandmother\"? Dan denk je dat hij bij de bank werkt. Dat staat nergens, hij herkende de truc.",
+         "Klopt: hij herkende de truc meteen en dus wist hij van oplichting.",
+         "Koos je \"he sent the email to his grandmother\"? Dan denk je dat hij de mail verstuurde. De mail kwam van een oplichter, dus niet van hem.",
+         "Koos je \"he was the target of the same trick\"? Dan denk je dat hij het doelwit was. De oma kreeg de mail, hij herkende hem alleen."
+        ],
+        "uh": "Kende de truc.",
+        "ctx": "Last month, an elderly woman in our town received an email from her \"bank\". It asked her to confirm her password because of a \"security problem\". The message looked real: it used the bank's colours, and even the sender's address was almost identical. Luckily, she phoned her grandson before clicking, and he recognised the trick at once. Police report that cases like this are becoming more common, and that older people are often the target. Banks never ask for passwords by email, an officer explained. Residents are therefore urged to delete such messages and to talk to relatives if they are unsure."
+       },
+       {
+        "v": "For whom is this text mainly meant?",
+        "o": [
+         "bank employees who work in the town",
+         "police officers who are looking for scammers",
+         "young people who are learning about computers",
+         "residents of the town, especially older people"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Doelgroep: kijk naar wie wordt aangesproken en wie het doelwit is.",
+        "uo": [
+         "Koos je \"bank employees who work in the town\"? Dan denk je dat de tekst voor bankmedewerkers is. De tekst geeft advies aan inwoners, niet aan medewerkers.",
+         "Koos je \"police officers who are looking for scammers\"? Dan denk je dat de tekst voor agenten is. De agent wordt geciteerd, de tekst is voor inwoners.",
+         "Koos je \"young people who are learning about computers\"? Dan denk je dat de tekst voor jongeren is. Ouderen worden genoemd als doelwit, dus die zijn bedoeld.",
+         "Klopt: de tekst eindigt met advies aan inwoners en noemt ouderen als doelwit."
+        ],
+        "uh": "Inwoners en ouderen.",
+        "ctx": "Last month, an elderly woman in our town received an email from her \"bank\". It asked her to confirm her password because of a \"security problem\". The message looked real: it used the bank's colours, and even the sender's address was almost identical. Luckily, she phoned her grandson before clicking, and he recognised the trick at once. Police report that cases like this are becoming more common, and that older people are often the target. Banks never ask for passwords by email, an officer explained. Residents are therefore urged to delete such messages and to talk to relatives if they are unsure."
+       },
+       {
+        "v": "What does \"urged\" show about the writer's attitude?",
+        "o": [
+         "the writer thinks that nothing can be done",
+         "the writer thinks it is important to act",
+         "the writer finds the matter rather funny",
+         "the writer has no real opinion on this"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Woorden als urge, advise en warn tonen de houding.",
+        "uo": [
+         "Koos je \"the writer thinks that nothing can be done\"? Dan denk je dat de schrijver machteloos is. Urged betekent dringend aanraden, dus er kan wel iets.",
+         "Klopt: urge betekent dringend aanraden, en laat zien dat de schrijver het belangrijk vindt.",
+         "Koos je \"the writer finds the matter rather funny\"? Dan denk je dat de schrijver lacht. De toon is serieus, niet grappig.",
+         "Koos je \"the writer has no real opinion on this\"? Dan denk je dat de schrijver neutraal is. Urged toont een dringende mening, dus niet neutraal."
+        ],
+        "uh": "Dringend.",
+        "ctx": "Last month, an elderly woman in our town received an email from her \"bank\". It asked her to confirm her password because of a \"security problem\". The message looked real: it used the bank's colours, and even the sender's address was almost identical. Luckily, she phoned her grandson before clicking, and he recognised the trick at once. Police report that cases like this are becoming more common, and that older people are often the target. Banks never ask for passwords by email, an officer explained. Residents are therefore urged to delete such messages and to talk to relatives if they are unsure."
+       },
+       {
+        "v": "What can you conclude about the students' reaction to the rule?",
+        "o": [
+         "most students seem to accept it, only a few complain",
+         "almost all students strongly protest against it",
+         "no student has a problem with the rule at all",
+         "students want to throw their phones away"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Impliciet: a few geeft aan dat de meesten het accepteren.",
+        "uo": [
+         "Klopt: alleen \"a few students grumble\", dus de meeste leerlingen lijken het te accepteren.",
+         "Koos je \"almost all students strongly protest against it\"? Dan denk je dat bijna iedereen protesteert. De tekst noemt maar een paar klagers, dus de meeste accepteren het.",
+         "Koos je \"no student has a problem with the rule at all\"? Dan denk je dat niemand klaagt. De tekst noemt een paar klagers, dus niet niemand.",
+         "Koos je \"students want to throw their phones away\"? Dan denk je dat ze hun telefoon weg willen. Dat staat nergens, het gaat om berichtjes van ouders."
+        ],
+        "uh": "A few = weinig.",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it."
+       },
+       {
+        "v": "What is the effect of \"Honestly\" at the beginning of the second sentence?",
+        "o": [
+         "it shows that the writer is telling a lie",
+         "it shows that the writer is very angry",
+         "it makes the sentence a question",
+         "it shows an open, personal opinion"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Honestly en frankly tonen een persoonlijke mening.",
+        "uo": [
+         "Koos je \"it shows that the writer is telling a lie\"? Dan denk je dat honestly leugens aankondigt. Het geeft juist eerlijkheid aan, dus een open mening.",
+         "Koos je \"it shows that the writer is very angry\"? Dan denk je dat honestly boosheid toont. Het toont openheid, geen woede.",
+         "Koos je \"it makes the sentence a question\"? Dan denk je dat honestly een vraag maakt. Het is een stellende zin, een persoonlijke opmerking.",
+         "Klopt: honestly geeft aan dat de schrijver eerlijk zijn eigen mening vertelt."
+        ],
+        "uh": "Persoonlijk.",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it."
+       },
+       {
+        "v": "How would you describe the writer's attitude to students who grumble?",
+        "o": [
+         "angry, the writer wants to punish them",
+         "fully agreeing, the writer shares their view",
+         "understanding, but not convinced by them",
+         "indifferent, the writer ignores their problem"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Of course en yet tonen erkennen en weerleggen.",
+        "uo": [
+         "Koos je \"angry, the writer wants to punish them\"? Dan denk je dat de schrijver boos is. De schrijver erkent het bezwaar, niet boos.",
+         "Koos je \"fully agreeing, the writer shares their view\"? Dan denk je dat de schrijver het eens is. Na Yet volgt een weerlegging, dus niet helemaal.",
+         "Klopt: \"Of course\" erkent hun bezwaar, \"Yet\" weerlegt het.",
+         "Koos je \"indifferent, the writer ignores their problem\"? Dan denk je dat de schrijver het negeert. De schrijver reageert met een oplossing, dus niet onverschillig."
+        ],
+        "uh": "Erkennen en weerleggen.",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it."
+       },
+       {
+        "v": "Which words best describe the tone of \"we had named the door Gerald\"?",
+        "o": [
+         "serious and rather formal",
+         "aggressive and very threatening",
+         "playful and ironic",
+         "sad and filled with disappointment"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Speelse details tonen een humoristische toon.",
+        "uo": [
+         "Koos je \"serious and rather formal\"? Dan denk je dat het ernstig is. Een deur een naam geven is een grap, dus speels.",
+         "Koos je \"aggressive and very threatening\"? Dan denk je dat het dreigend is. De zin is vriendelijk grappig, dus niet dreigend.",
+         "Klopt: de deur een naam geven is speels, en tegelijk een grapje over het probleem.",
+         "Koos je \"sad and filled with disappointment\"? Dan denk je dat het verdrietig is. De zin is een grap, geen verdriet."
+        ],
+        "uh": "Speels en ironisch.",
+        "ctx": "Our family holiday began with a small misunderstanding. My father had booked a \"charming cottage by the sea\", which, according to the photo, looked like a postcard. When we arrived, the sea turned out to be a muddy river some twenty minutes' walk away, and the charming cottage had a door that refused to close. My mother, always the optimist, praised the \"fresh air\" that blew through the living room all night. By the third day we had named the door Gerald and stopped trying to shut him out. Strangely, it was the best holiday we ever had, mostly because we have been laughing about it ever since."
+       },
+       {
+        "v": "What can you conclude about the writer's family?",
+        "o": [
+         "they never go on holiday again together",
+         "they are angry with the father for ever",
+         "they have a lot of money for holidays",
+         "they can laugh about problems together"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Impliciet: laughing about it ever since toont een band.",
+        "uo": [
+         "Koos je \"they never go on holiday again together\"? Dan denk je dat ze nooit meer op vakantie gaan. De tekst zegt dat het de beste was, dus niet nooit.",
+         "Koos je \"they are angry with the father for ever\"? Dan denk je dat ze boos zijn. De tekst zegt dat ze lachen, dus niet boos.",
+         "Koos je \"they have a lot of money for holidays\"? Dan denk je dat ze rijk zijn. Daar staat niets over, het gaat om humor.",
+         "Klopt: ze lachen er nog steeds om, dus ze kunnen samen grappen maken over problemen."
+        ],
+        "uh": "Samen lachen.",
+        "ctx": "Our family holiday began with a small misunderstanding. My father had booked a \"charming cottage by the sea\", which, according to the photo, looked like a postcard. When we arrived, the sea turned out to be a muddy river some twenty minutes' walk away, and the charming cottage had a door that refused to close. My mother, always the optimist, praised the \"fresh air\" that blew through the living room all night. By the third day we had named the door Gerald and stopped trying to shut him out. Strangely, it was the best holiday we ever had, mostly because we have been laughing about it ever since."
+       },
+       {
+        "v": "What is the writer's main purpose in this text?",
+        "o": [
+         "to entertain with a funny family story",
+         "to warn readers about bad cottages",
+         "to persuade readers to book at the sea",
+         "to inform readers about a muddy river"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Een anekdote met grapjes wil vermaken.",
+        "uo": [
+         "Klopt: de tekst vertelt een grappig verhaal en wil vooral vermaken.",
+         "Koos je \"to warn readers about bad cottages\"? Dan denk je dat de tekst waarschuwt. De toon is grappig, niet waarschuwend.",
+         "Koos je \"to persuade readers to book at the sea\"? Dan denk je dat de tekst wil overtuigen. De tekst vertelt een anekdote, geen advies.",
+         "Koos je \"to inform readers about a muddy river\"? Dan denk je dat de tekst informeert. De rivier is een grappig detail, geen hoofdzaak."
+        ],
+        "uh": "Vermaken.",
+        "ctx": "Our family holiday began with a small misunderstanding. My father had booked a \"charming cottage by the sea\", which, according to the photo, looked like a postcard. When we arrived, the sea turned out to be a muddy river some twenty minutes' walk away, and the charming cottage had a door that refused to close. My mother, always the optimist, praised the \"fresh air\" that blew through the living room all night. By the third day we had named the door Gerald and stopped trying to shut him out. Strangely, it was the best holiday we ever had, mostly because we have been laughing about it ever since."
+       },
+       {
+        "v": "What does the text imply about older people?",
+        "o": [
+         "they are better at spotting scams than the young",
+         "they are more often the target of scammers",
+         "they never use email in their daily lives",
+         "they work together with the police to catch scammers"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Implicatie: vaak doelwit betekent een groter risico.",
+        "uo": [
+         "Koos je \"they are better at spotting scams than the young\"? Dan denk je dat ouderen oplichting beter herkennen. De tekst zegt dat zij vaak doelwit zijn, dus kwetsbaarder.",
+         "Klopt: de politie zegt dat ouderen vaak het doelwit zijn, en daarom richt de tekst zich op hen.",
+         "Koos je \"they never use email in their daily lives\"? Dan denk je dat ouderen geen e-mail gebruiken. De oma kreeg een mail, dus wel.",
+         "Koos je \"they work together with the police to catch scammers\"? Dan denk je dat ouderen met de politie werken. Dat staat nergens, het gaat om doelwit."
+        ],
+        "uh": "Doelwit.",
+        "ctx": "Last month, an elderly woman in our town received an email from her \"bank\". It asked her to confirm her password because of a \"security problem\". The message looked real: it used the bank's colours, and even the sender's address was almost identical. Luckily, she phoned her grandson before clicking, and he recognised the trick at once. Police report that cases like this are becoming more common, and that older people are often the target. Banks never ask for passwords by email, an officer explained. Residents are therefore urged to delete such messages and to talk to relatives if they are unsure."
+       },
+       {
+        "v": "Why does the writer mention that the message used the bank's colours?",
+        "o": [
+         "to advertise the colours of the bank",
+         "to explain why the bank is so popular",
+         "to show that the bank sent the email",
+         "to show how real the trick looked"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Details kunnen laten zien hoe overtuigend iets lijkt.",
+        "uo": [
+         "Koos je \"to advertise the colours of the bank\"? Dan denk je dat het reclame is. Het gaat om de schijn van echtheid, niet om reclame.",
+         "Koos je \"to explain why the bank is so popular\"? Dan denk je dat de populariteit van de bank wordt verklaard. Dat staat nergens, het gaat om echtheid.",
+         "Koos je \"to show that the bank sent the email\"? Dan denk je dat de bank de mail stuurde. De mail was nep, de kleuren maken hem overtuigend.",
+         "Klopt: de kleuren van de bank laten zien hoe overtuigend de nepmail eruitzag."
+        ],
+        "uh": "Echt lijken.",
+        "ctx": "Last month, an elderly woman in our town received an email from her \"bank\". It asked her to confirm her password because of a \"security problem\". The message looked real: it used the bank's colours, and even the sender's address was almost identical. Luckily, she phoned her grandson before clicking, and he recognised the trick at once. Police report that cases like this are becoming more common, and that older people are often the target. Banks never ask for passwords by email, an officer explained. Residents are therefore urged to delete such messages and to talk to relatives if they are unsure."
+       },
+       {
+        "v": "How does the writer sound in the text about the email?",
+        "o": [
+         "serious and informative",
+         "humorous and light in style",
+         "angry and full of strong words",
+         "sad and rather hopeless in mood"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Zakelijke taal met feiten betekent een serieuze, informatieve toon.",
+        "uo": [
+         "Klopt: de tekst geeft feiten en adviseert op een ernstige toon.",
+         "Koos je \"humorous and light in style\"? Dan denk je dat de tekst grappig is. Het onderwerp is oplichting, dus ernstig.",
+         "Koos je \"angry and full of strong words\"? Dan denk je dat de tekst boos is. De tekst blijft zakelijk, dus informatief.",
+         "Koos je \"sad and rather hopeless in mood\"? Dan denk je dat de tekst somber is. Er is juist advies, dus niet hopeloos."
+        ],
+        "uh": "Serieus en zakelijk.",
+        "ctx": "Last month, an elderly woman in our town received an email from her \"bank\". It asked her to confirm her password because of a \"security problem\". The message looked real: it used the bank's colours, and even the sender's address was almost identical. Luckily, she phoned her grandson before clicking, and he recognised the trick at once. Police report that cases like this are becoming more common, and that older people are often the target. Banks never ask for passwords by email, an officer explained. Residents are therefore urged to delete such messages and to talk to relatives if they are unsure."
+       },
+       {
+        "v": "Which advice does the text NOT give?",
+        "o": [
+         "delete such messages at once",
+         "click on the link to check the message",
+         "talk to relatives if you are unsure",
+         "remember that banks do not ask for passwords by email"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Controleer bij NOT welke adviezen in de tekst staan.",
+        "uo": [
+         "Koos je \"delete such messages at once\"? Dan denk je dat dit niet wordt geadviseerd. De laatste zin raadt het juist aan, dus wel.",
+         "Klopt: de tekst raadt juist aan het bericht te verwijderen, niet om te klikken.",
+         "Koos je \"talk to relatives if you are unsure\"? Dan denk je dat dit niet wordt geadviseerd. De tekst raadt het aan, dus wel.",
+         "Koos je \"remember that banks do not ask for passwords by...\"? Dan denk je dat dit niet wordt gezegd. De agent zegt het, dus wel."
+        ],
+        "uh": "Niet geadviseerd.",
+        "ctx": "Last month, an elderly woman in our town received an email from her \"bank\". It asked her to confirm her password because of a \"security problem\". The message looked real: it used the bank's colours, and even the sender's address was almost identical. Luckily, she phoned her grandson before clicking, and he recognised the trick at once. Police report that cases like this are becoming more common, and that older people are often the target. Banks never ask for passwords by email, an officer explained. Residents are therefore urged to delete such messages and to talk to relatives if they are unsure."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "The new rule at our school says that phones must stay in lockers during lessons. Honestly, I did not expect to like it, but after three weeks I have changed my mind. Conversations in the corridors have returned, and teachers no longer have to compete with glowing screens. Of course, a few students grumble that they cannot check messages from their parents. Yet in an emergency the school office can be called, as it always could. I would not say that phones are evil; I simply believe that lessons are for learning and that the break is long enough for scrolling. If other schools are wondering whether to try the same rule, my advice is simple: do it.",
+        "v": "What is the writer's purpose in the text about the phone rule? Which sentence shows it most clearly?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het doel is overtuigen (1p). De zin \"my advice is simple: do it\" toont het duidelijkst (1p). De schrijver geeft een stellend advies aan andere scholen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Our family holiday began with a small misunderstanding. My father had booked a \"charming cottage by the sea\", which, according to the photo, looked like a postcard. When we arrived, the sea turned out to be a muddy river some twenty minutes' walk away, and the charming cottage had a door that refused to close. My mother, always the optimist, praised the \"fresh air\" that blew through the living room all night. By the third day we had named the door Gerald and stopped trying to shut him out. Strangely, it was the best holiday we ever had, mostly because we have been laughing about it ever since.",
+        "v": "Explain what the quotation marks around \"charming cottage by the sea\" show and what the writer wants to achieve.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De aanhalingstekens tonen ironie: het huisje bleek niet charmant (1p). De schrijver wil de teleurstelling grappig maken (1p). Het doel is vermaken met een anekdote (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Last month, an elderly woman in our town received an email from her \"bank\". It asked her to confirm her password because of a \"security problem\". The message looked real: it used the bank's colours, and even the sender's address was almost identical. Luckily, she phoned her grandson before clicking, and he recognised the trick at once. Police report that cases like this are becoming more common, and that older people are often the target. Banks never ask for passwords by email, an officer explained. Residents are therefore urged to delete such messages and to talk to relatives if they are unsure.",
+        "v": "What is the writer's attitude to the scammers and how do you know?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De houding is bezorgd of afkeurend (1p). Woorden als trick, target en urged tonen dat (1p). De tekst waarschuwt en geeft advies (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "The mayor said the new swimming pool would be \"a gift to every family\". Yet the entry fee is 12 euros, and the opening hours stop at six, when most parents are still at work.",
+        "v": "What does the writer think about the mayor's claim? Explain with two clues from the text.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De schrijver is sceptisch of kritisch (1p). Yet toont een tegenstelling (1p). De prijs van 12 euros en de sluitingstijd om zes uur laten zien dat het niet voor elk gezin een cadeau is (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "After the team lost 8-0 again, the captain looked at the empty stands and said: \"Well, that went brilliantly.\" Nobody laughed.",
+        "v": "What is the tone of the captain's remark and what does \"Nobody laughed\" show?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De opmerking is ironisch of sarcastisch (1p). Brilliantly betekent hier het tegendeel (1p). Nobody laughed laat zien dat de sfeer bitter is en de grap niet grappig werd ontvangen (1p)."
+       }
+      ]
      }
     ]
    },
