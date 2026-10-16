@@ -2419,6 +2419,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B2",
+      "lo": "en.B.2",
+      "gs": 2,
+      "naam": "De hoofdgedachte van een Engelse tekst aangeven",
+      "beschrijving": "Je leert het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte te onderscheiden, kernzinnen en slotzinnen te herkennen en voorbeelden van hoofdzaken te scheiden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderwerp en hoofdgedachte onderscheiden",
+       "Kernzin en alinea",
+       "Titel en slotzin als aanwijzing",
+       "Hoofdzaak en voorbeeld",
+       "Niet te breed en niet te smal formuleren"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

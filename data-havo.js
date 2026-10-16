@@ -110146,6 +110146,691 @@ var VAKKEN = [
         "u": "Tot vrijdag 18.00 (1p). Scannen op sleutelwoorden als online en until (1p). Je hoeft de rest niet te lezen en bespaart tijd (1p)."
        }
       ]
+     },
+     {
+      "id": "B2",
+      "lo": "en.B.2",
+      "gs": 2,
+      "naam": "De hoofdgedachte van een Engelse tekst aangeven",
+      "beschrijving": "Je leert het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte te onderscheiden, kernzinnen en slotzinnen te herkennen en voorbeelden van hoofdzaken te scheiden.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Onderwerp en hoofdgedachte onderscheiden",
+       "Kernzin en alinea",
+       "Titel en slotzin als aanwijzing",
+       "Hoofdzaak en voorbeeld",
+       "Niet te breed en niet te smal formuleren"
+      ],
+      "sam": "Het onderwerp van een tekst is waar hij over gaat, de hoofdgedachte is wat de schrijver erover zegt. Een kernzin staat vaak aan het begin of eind van een alinea, en titel en slotzin geven aanwijzingen. Voorbeelden en cijfers ondersteunen de hoofdgedachte maar zijn zelf niet de kern. Signaalwoorden als however en therefore laten zien waar een tegenstelling of conclusie staat. Een goede hoofdgedachte is een volledige zin die niet te breed en niet te smal is.",
+      "begrippen": [
+       {
+        "t": "Onderwerp",
+        "d": "Waar een tekst over gaat, in een paar woorden."
+       },
+       {
+        "t": "Hoofdgedachte",
+        "d": "De kernboodschap: wat de schrijver over het onderwerp zegt."
+       },
+       {
+        "t": "Kernzin",
+        "d": "De zin die het hoofdpunt van een alinea of tekst noemt (topic sentence)."
+       },
+       {
+        "t": "Slotzin",
+        "d": "De laatste zin, vaak een conclusie of advies."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een geval dat een bewering ondersteunt, vaak ingeleid door for example."
+       },
+       {
+        "t": "Detail",
+        "d": "Een klein gegeven dat bij een voorbeeld of verklaring hoort."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Een uitkomst of advies, vaak ingeleid door therefore of so."
+       },
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord dat het verband tussen zinnen toont, zoals however of therefore."
+       },
+       {
+        "t": "Te breed",
+        "d": "Een samenvatting die over meer gaat dan de tekst."
+       },
+       {
+        "t": "Te smal",
+        "d": "Een samenvatting die maar een deel van de tekst dekt."
+       },
+       {
+        "t": "Titel",
+        "d": "De kop van de tekst, vaak een aanwijzing voor de hoofdgedachte."
+       },
+       {
+        "t": "Argument",
+        "d": "Een reden die de hoofdgedachte ondersteunt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "What is the main idea of a text?",
+        "o": [
+         "the first sentence of the text",
+         "the central message of the author",
+         "the longest paragraph of the whole text",
+         "an interesting example from daily life"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "De hoofdgedachte is de kernboodschap van de tekst.",
+        "uo": [
+         "Koos je \"the first sentence of the text\"? Dan denk je dat de hoofdgedachte altijd de eerste zin is. Soms staat hij elders, en hij is meer dan een losse zin.",
+         "Klopt: de hoofdgedachte is de kern van wat de schrijver wil zeggen, in één zin samen te vatten.",
+         "Koos je \"the longest paragraph of the whole text\"? Dan denk je dat de langste alinea de kern bevat. De lengte zegt niets, de kern gaat over de hele tekst.",
+         "Koos je \"an interesting example from daily life\"? Dan denk je dat een voorbeeld de kern is. Een voorbeeld ondersteunt de kern, het is niet de kern zelf."
+        ],
+        "uh": "Kernboodschap."
+       },
+       {
+        "v": "What is the difference between the topic and the main idea?",
+        "o": [
+         "there is no difference between them at all, they are the same",
+         "the topic is a whole sentence, the main idea is just one word",
+         "the topic is about the author, the main idea is about the reader",
+         "the topic is the theme, the main idea is what is said about it"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Onderwerp: waar gaat het over. Hoofdgedachte: wat wordt erover gezegd.",
+        "uo": [
+         "Koos je \"there is no difference between them at all, they...\"? Dan denk je dat ze hetzelfde zijn. Het onderwerp is een thema in een paar woorden, de hoofdgedachte is een hele bewering.",
+         "Koos je \"the topic is a whole sentence, the main idea is...\"? Dan denk je dat het onderwerp een zin is. Het is juist een paar woorden, en de hoofdgedachte is een zin.",
+         "Koos je \"the topic is about the author, the main idea is...\"? Dan denk je dat het onderwerp over de schrijver gaat. Dat klopt niet, het onderwerp gaat over de inhoud.",
+         "Klopt: het onderwerp is het thema, de hoofdgedachte is de bewering die de schrijver erover doet."
+        ],
+        "uh": "Thema tegenover bewering."
+       },
+       {
+        "v": "Where do you often find the topic sentence of a paragraph?",
+        "o": [
+         "at the beginning of the paragraph",
+         "somewhere in the middle of the paragraph",
+         "in the title of the whole text only",
+         "in the very last word of the paragraph"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "De kernzin staat vaak aan het begin of aan het eind van een alinea.",
+        "uo": [
+         "Klopt: veel alinea's openen met een zin die het hoofdpunt noemt.",
+         "Koos je \"somewhere in the middle of the paragraph\"? Dan denk je dat de kernzin in het midden staat. Dat gebeurt zelden, meestal staat hij vooraan.",
+         "Koos je \"in the title of the whole text only\"? Dan denk je dat de kernzin in de titel staat. De titel hoort bij de hele tekst, een kernzin staat in de alinea.",
+         "Koos je \"in the very last word of the paragraph\"? Dan denk je dat het laatste woord de kernzin is. Een kernzin is een hele zin, geen woord."
+        ],
+        "uh": "Vaak vooraan."
+       },
+       {
+        "v": "Which parts of an article often give a clue to the main idea?",
+        "o": [
+         "the examples in the middle of the text",
+         "the numbers and the dates in the text",
+         "the title and the last paragraph",
+         "the names of all the people mentioned"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Kijk bij de hoofdgedachte naar titel, eerste zin en slotzin.",
+        "uo": [
+         "Koos je \"the examples in the middle of the text\"? Dan denk je dat voorbeelden de kern geven. Voorbeelden ondersteunen de kern maar zeggen niet wat de kern is, ze zijn dus geen aanwijzing voor de kern.",
+         "Koos je \"the numbers and the dates in the text\"? Dan denk je dat getallen de kern geven. Cijfers onderbouwen een bewering, maar ze zijn zelf geen boodschap.",
+         "Klopt: de titel en de slotalinea vatten de boodschap vaak samen.",
+         "Koos je \"the names of all the people mentioned\"? Dan denk je dat namen de kern geven. Namen horen bij voorbeelden, en ze zeggen niet waar de tekst over gaat."
+        ],
+        "uh": "Titel en slot."
+       },
+       {
+        "v": "What is the topic of the text?",
+        "o": [
+         "sports clubs and part-time jobs of teenagers",
+         "the long history of schools in many countries",
+         "sleep and school start times for teenagers",
+         "the studies of scientists in several countries"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Het onderwerp is het thema in een paar woorden.",
+        "uo": [
+         "Koos je \"sports clubs and part-time jobs of teenagers\"? Dan denk je dat de tekst over sportclubs gaat. Die worden alleen als nadeel genoemd, het onderwerp is slaap en schooltijden.",
+         "Koos je \"the long history of schools in many countries\"? Dan denk je dat het over de geschiedenis gaat. Daar staat niets over, het gaat om begintijden.",
+         "Klopt: de tekst gaat over slaap en de begintijden van school voor tieners.",
+         "Koos je \"the studies of scientists in several countries\"? Dan denk je dat het over wetenschap in het algemeen gaat. De studies zijn bewijs, het onderwerp is slaap en schooltijd."
+        ],
+        "uh": "Onderwerp is een thema.",
+        "ctx": "Many teenagers feel tired at school, and scientists think they know why. During puberty the body clock moves: young people fall asleep later and also wake up later. Yet most schools still start at eight o'clock or earlier, which means that many students miss an hour or two of sleep every night. Researchers in several countries have tested later starts. In one study, schools that began at 9.30 saw fewer students arriving late and better results in the first lessons. Of course, a later start also makes the school day end later, and sports clubs and part-time jobs may suffer. But the evidence is growing that rest matters more for learning than an early bell. Schools should therefore take the sleep needs of teenagers seriously."
+       },
+       {
+        "v": "What is the text about?",
+        "o": [
+         "bees in cities",
+         "honey in supermarkets",
+         "farms in the countryside",
+         "gardens and balconies"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Het onderwerp is het thema in een paar woorden.",
+        "uo": [
+         "Klopt: de tekst gaat over bijen in steden en over de voor- en nadelen daarvan.",
+         "Koos je \"honey in supermarkets\"? Dan denk je dat het over honing in winkels gaat. Honing wordt alleen genoemd als bewijs, het onderwerp is bijen in steden.",
+         "Koos je \"farms in the countryside\"? Dan denk je dat het over boerderijen gaat. De boerderijen zijn vergelijkingsmateriaal, het onderwerp zijn stadsbijen.",
+         "Koos je \"gardens and balconies\"? Dan denk je dat het over tuinen gaat. Tuinen zijn een deel van de verklaring, het onderwerp zijn bijen."
+        ],
+        "uh": "Onderwerp is een thema.",
+        "ctx": "Big cities are not the first place you would expect to find bees, but they are surprisingly good homes for them. In the countryside, large farms often grow only one crop and use strong chemicals, so wild bees find little food. Cities, on the other hand, are full of gardens, balconies and parks with many different flowers that bloom at different times of the year. Beekeepers in London and Amsterdam report that city hives produce more honey than hives in nearby farmland. Still, the success of urban bees creates a new problem: there are now so many honeybees in some cities that wild bees have to compete with them for food. Experts therefore advise cities to plant more flowers instead of simply adding more hives."
+       },
+       {
+        "v": "Who changed the writer's mind about the guitar?",
+        "o": [
+         "a famous guitar player",
+         "a teacher at school",
+         "a friend in the band",
+         "the writer's uncle"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Zoek bij wie-vragen naar de naam of persoon in de tekst.",
+        "uo": [
+         "Koos je \"a famous guitar player\"? Dan denk je dat een beroemde gitarist hielp. De oom speelde geen beroemde solo, hij liet één akkoord zien.",
+         "Koos je \"a teacher at school\"? Dan denk je dat een leraar hielp. Dat staat er niet, de oom hielp.",
+         "Koos je \"a friend in the band\"? Dan denk je dat een vriend in de band hielp. De band komt pas later, de oom hielp eerder.",
+         "Klopt: het was een oom die liet zien hoe je met kleine stapjes verder komt."
+        ],
+        "uh": "Zoek bij wie de persoon.",
+        "ctx": "When I got my first guitar at fourteen, I thought I would be playing my favourite songs within a month. Of course, I was wrong. My fingers hurt, the chords sounded awful and after three weeks the guitar was lying under my bed. It was my uncle who changed my mind. He did not play me a famous solo, but showed me one simple chord and asked me to play it for five minutes every day. After a month I could change between three chords without looking. Slowly, I understood that learning an instrument is not about talent or speed, but about small steps repeated every day. These days I play in a small band, and I still practise for five minutes before I start any big song."
+       },
+       {
+        "v": "What is the main idea of the text?",
+        "o": [
+         "teenagers are lazy and like staying up late every night",
+         "schools should start later: teenagers need sleep",
+         "later school days cause many problems for sports clubs",
+         "scientists disagree about how the body clock works"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Hoofdgedachte: schooltijden moeten bij het slaapritme van tieners passen.",
+        "uo": [
+         "Koos je \"teenagers are lazy and like staying up late every...\"? Dan denk je dat tieners lui zijn. De tekst noemt een biologische oorzaak, het lichaamsritme verschuift.",
+         "Klopt: de schrijver betoogt dat een latere start beter past bij het slaapritme van tieners.",
+         "Koos je \"later school days cause many problems for sports...\"? Dan denk je dat de nadelen de hoofdzaak zijn. Ze worden genoemd maar niet gekozen, de schrijver kiest voor slaap.",
+         "Koos je \"scientists disagree about how the body clock works\"? Dan denk je dat er twijfel is. De tekst zegt dat het bewijs groeit, de schrijver is stellig."
+        ],
+        "uh": "Betoog voor later beginnen.",
+        "ctx": "Many teenagers feel tired at school, and scientists think they know why. During puberty the body clock moves: young people fall asleep later and also wake up later. Yet most schools still start at eight o'clock or earlier, which means that many students miss an hour or two of sleep every night. Researchers in several countries have tested later starts. In one study, schools that began at 9.30 saw fewer students arriving late and better results in the first lessons. Of course, a later start also makes the school day end later, and sports clubs and part-time jobs may suffer. But the evidence is growing that rest matters more for learning than an early bell. Schools should therefore take the sleep needs of teenagers seriously."
+       },
+       {
+        "v": "Which sentence is the topic sentence of the whole text?",
+        "o": [
+         "Yet most schools still start at eight o'clock or earlier, which costs many students sleep.",
+         "In one study, schools that began at 9.30 saw fewer students arriving late.",
+         "Of course, a later start also makes the school day end later in the afternoon.",
+         "Many teenagers feel tired at school, and scientists think they know why."
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "De kernzin staat vaak aan het begin en noemt het onderwerp en het probleem.",
+        "uo": [
+         "Koos je \"Yet most schools still start at eight o'clock or...\"? Dan denk je dat dit de kernzin is. Deze zin geeft een gevolg, de opening noemt het probleem.",
+         "Koos je \"In one study, schools that began at 9.30 saw fewer...\"? Dan denk je dat dit de kernzin is. Het is een voorbeeld, geen opening.",
+         "Koos je \"Of course, a later start also makes the school day...\"? Dan denk je dat dit de kernzin is. Het is een nadeel dat de schrijver erkent, geen opening.",
+         "Klopt: de openingszin noemt het probleem waar de rest van de tekst op ingaat."
+        ],
+        "uh": "Opening.",
+        "ctx": "Many teenagers feel tired at school, and scientists think they know why. During puberty the body clock moves: young people fall asleep later and also wake up later. Yet most schools still start at eight o'clock or earlier, which means that many students miss an hour or two of sleep every night. Researchers in several countries have tested later starts. In one study, schools that began at 9.30 saw fewer students arriving late and better results in the first lessons. Of course, a later start also makes the school day end later, and sports clubs and part-time jobs may suffer. But the evidence is growing that rest matters more for learning than an early bell. Schools should therefore take the sleep needs of teenagers seriously."
+       },
+       {
+        "v": "What is the function of the study with schools that began at 9.30?",
+        "o": [
+         "it gives the main idea of the text",
+         "it gives evidence for the writer's view",
+         "it shows an exception to the writer's view",
+         "it explains the problems of sports clubs"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Een voorbeeld of onderzoek ondersteunt de hoofdgedachte.",
+        "uo": [
+         "Koos je \"it gives the main idea of the text\"? Dan denk je dat de studie de hoofdgedachte is. Het is een voorbeeld, de hoofdgedachte is breder.",
+         "Klopt: de studie laat zien dat later beginnen werkt en ondersteunt de visie van de schrijver.",
+         "Koos je \"it shows an exception to the writer's view\"? Dan denk je dat de studie de visie tegenspreekt. Hij bevestigt juist, dus het is bewijs.",
+         "Koos je \"it explains the problems of sports clubs\"? Dan denk je dat het over sportclubs gaat. Dat zijn andere zinnen, de studie noemt resultaten."
+        ],
+        "uh": "Voorbeeld is bewijs.",
+        "ctx": "Many teenagers feel tired at school, and scientists think they know why. During puberty the body clock moves: young people fall asleep later and also wake up later. Yet most schools still start at eight o'clock or earlier, which means that many students miss an hour or two of sleep every night. Researchers in several countries have tested later starts. In one study, schools that began at 9.30 saw fewer students arriving late and better results in the first lessons. Of course, a later start also makes the school day end later, and sports clubs and part-time jobs may suffer. But the evidence is growing that rest matters more for learning than an early bell. Schools should therefore take the sleep needs of teenagers seriously."
+       },
+       {
+        "v": "What is the function of \"Of course, a later start also makes the school day end later\"?",
+        "o": [
+         "it gives the main idea of the text",
+         "it repeats the first sentence",
+         "it admits a disadvantage first",
+         "it introduces a new topic"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Of course en but geven aan dat een nadeel wordt erkend en weerlegd.",
+        "uo": [
+         "Koos je \"it gives the main idea of the text\"? Dan denk je dat dit de hoofdgedachte is. De hoofdgedachte staat in de slotzin, dit is een nadeel.",
+         "Koos je \"it repeats the first sentence\"? Dan denk je dat de zin de opening herhaalt. Hij brengt iets nieuws, een nadeel.",
+         "Klopt: de schrijver erkent een nadeel en weerlegt het in de volgende zin met \"But\".",
+         "Koos je \"it introduces a new topic\"? Dan denk je dat een nieuw onderwerp begint. Het gaat nog steeds over schooltijden, dus geen nieuw onderwerp."
+        ],
+        "uh": "Erkennen en weerleggen.",
+        "ctx": "Many teenagers feel tired at school, and scientists think they know why. During puberty the body clock moves: young people fall asleep later and also wake up later. Yet most schools still start at eight o'clock or earlier, which means that many students miss an hour or two of sleep every night. Researchers in several countries have tested later starts. In one study, schools that began at 9.30 saw fewer students arriving late and better results in the first lessons. Of course, a later start also makes the school day end later, and sports clubs and part-time jobs may suffer. But the evidence is growing that rest matters more for learning than an early bell. Schools should therefore take the sleep needs of teenagers seriously."
+       },
+       {
+        "v": "Which statement is only a detail and not the main idea?",
+        "o": [
+         "beekeepers report more honey in cities",
+         "cities can be surprisingly good homes for bees",
+         "too many hives create a problem for wild bees",
+         "cities should plant more flowers in their parks"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Details ondersteunen, de hoofdgedachte draagt de tekst.",
+        "uo": [
+         "Klopt: het honingbericht is een voorbeeld dat het hoofdpunt ondersteunt.",
+         "Koos je \"cities can be surprisingly good homes for bees\"? Dan denk je dat dit een detail is. Dit is het hoofdpunt van de tekst, de rest ondersteunt het.",
+         "Koos je \"too many hives create a problem for wild bees\"? Dan denk je dat dit een detail is. Dit is een tweede hoofdpunt, het gaat om de kern.",
+         "Koos je \"cities should plant more flowers in their parks\"? Dan denk je dat dit een detail is. Dit is het advies van de tekst, de kern van de conclusie."
+        ],
+        "uh": "Detail ondersteunt.",
+        "ctx": "Big cities are not the first place you would expect to find bees, but they are surprisingly good homes for them. In the countryside, large farms often grow only one crop and use strong chemicals, so wild bees find little food. Cities, on the other hand, are full of gardens, balconies and parks with many different flowers that bloom at different times of the year. Beekeepers in London and Amsterdam report that city hives produce more honey than hives in nearby farmland. Still, the success of urban bees creates a new problem: there are now so many honeybees in some cities that wild bees have to compete with them for food. Experts therefore advise cities to plant more flowers instead of simply adding more hives."
+       },
+       {
+        "v": "Which title fits the text best?",
+        "o": [
+         "City bees: a success with a catch",
+         "How to keep bees at home in the garden",
+         "The best honey that you can buy in Europe",
+         "Why big farms need so many chemicals"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Een goede titel dekt de hele tekst.",
+        "uo": [
+         "Klopt: de tekst laat zien dat steden goed zijn voor bijen, maar dat te veel korven een probleem geven.",
+         "Koos je \"How to keep bees at home in the garden\"? Dan denk je dat de tekst een gids is. Hij geeft geen instructies, alleen een analyse.",
+         "Koos je \"The best honey that you can buy in Europe\"? Dan denk je dat het over de beste honing gaat. Honing is alleen een bewijs, het gaat om stadsbijen.",
+         "Koos je \"Why big farms need so many chemicals\"? Dan denk je dat het om boeren gaat. Dat is een bijzaak, de kern is stadsbijen."
+        ],
+        "uh": "Dekkend.",
+        "ctx": "Big cities are not the first place you would expect to find bees, but they are surprisingly good homes for them. In the countryside, large farms often grow only one crop and use strong chemicals, so wild bees find little food. Cities, on the other hand, are full of gardens, balconies and parks with many different flowers that bloom at different times of the year. Beekeepers in London and Amsterdam report that city hives produce more honey than hives in nearby farmland. Still, the success of urban bees creates a new problem: there are now so many honeybees in some cities that wild bees have to compete with them for food. Experts therefore advise cities to plant more flowers instead of simply adding more hives."
+       },
+       {
+        "v": "Which summary of the whole text is correct?",
+        "o": [
+         "Cities are good places for bees and for beekeepers, who collect more honey.",
+         "Bees are very important for our food and for the whole world.",
+         "Cities suit bees, but too many hives hurt wild bees, so plant more flowers.",
+         "Wild bees are disappearing because of the chemicals used on farms."
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 4,
+        "u": "Een goede samenvatting is niet te breed en niet te smal.",
+        "uo": [
+         "Koos je \"Cities are good places for bees and for beekeepers,...\"? Dan denk je dat dit genoeg is. Dit is te smal, het probleem en het advies ontbreken.",
+         "Koos je \"Bees are very important for our food and for the...\"? Dan denk je dat dit de samenvatting is. Dit is te breed, de tekst gaat over steden.",
+         "Klopt: deze samenvatting bevat de kern, het probleem en het advies.",
+         "Koos je \"Wild bees are disappearing because of the chemicals...\"? Dan denk je dat de tekst over verdwijnende bijen gaat. De nadruk ligt op stadsbijen, niet op boerderijen."
+        ],
+        "uh": "Kern, probleem, advies.",
+        "ctx": "Big cities are not the first place you would expect to find bees, but they are surprisingly good homes for them. In the countryside, large farms often grow only one crop and use strong chemicals, so wild bees find little food. Cities, on the other hand, are full of gardens, balconies and parks with many different flowers that bloom at different times of the year. Beekeepers in London and Amsterdam report that city hives produce more honey than hives in nearby farmland. Still, the success of urban bees creates a new problem: there are now so many honeybees in some cities that wild bees have to compete with them for food. Experts therefore advise cities to plant more flowers instead of simply adding more hives."
+       },
+       {
+        "v": "What is the main idea of the text?",
+        "o": [
+         "guitars are very hard to play for beginners",
+         "progress comes from small daily steps",
+         "you need a lot of natural talent to learn music",
+         "the uncle is a famous musician in a big band"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Hoofdgedachte: kleine dagelijkse stappen leiden tot vooruitgang.",
+        "uo": [
+         "Koos je \"guitars are very hard to play for beginners\"? Dan denk je dat de tekst over moeilijkheid gaat. Het is een beginprobleem, de les is oefenen in kleine stappen.",
+         "Klopt: de schrijver leerde dat dagelijks klein oefenen belangrijker is dan talent of snelheid.",
+         "Koos je \"you need a lot of natural talent to learn music\"? Dan denk je dat talent nodig is. De tekst zegt het tegendeel, dus oefenen.",
+         "Koos je \"the uncle is a famous musician in a big band\"? Dan denk je dat de oom beroemd is. Hij speelt geen beroemde solo, de les is belangrijker dan hij."
+        ],
+        "uh": "Kleine stappen.",
+        "ctx": "When I got my first guitar at fourteen, I thought I would be playing my favourite songs within a month. Of course, I was wrong. My fingers hurt, the chords sounded awful and after three weeks the guitar was lying under my bed. It was my uncle who changed my mind. He did not play me a famous solo, but showed me one simple chord and asked me to play it for five minutes every day. After a month I could change between three chords without looking. Slowly, I understood that learning an instrument is not about talent or speed, but about small steps repeated every day. These days I play in a small band, and I still practise for five minutes before I start any big song."
+       },
+       {
+        "v": "Why does the writer mention that the fingers hurt?",
+        "o": [
+         "to give the main idea of the whole text",
+         "to describe a guitar shop in the city",
+         "to complain about the uncle's advice",
+         "to show the problems at the start"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Een detail laat vaak een fase zien: hier de moeilijke start.",
+        "uo": [
+         "Koos je \"to give the main idea of the whole text\"? Dan denk je dat dit de hoofdgedachte is. Het is een beginprobleem, de les komt later.",
+         "Koos je \"to describe a guitar shop in the city\"? Dan denk je dat er een winkel is. Dat staat nergens, het gaat om beginproblemen.",
+         "Koos je \"to complain about the uncle's advice\"? Dan denk je dat de oom het probleem was. Hij hielp juist, de pijn hoort bij het begin.",
+         "Klopt: de pijnlijke vingers laten de moeilijke start zien, waarna de oom verandering brengt."
+        ],
+        "uh": "Beginprobleem.",
+        "ctx": "When I got my first guitar at fourteen, I thought I would be playing my favourite songs within a month. Of course, I was wrong. My fingers hurt, the chords sounded awful and after three weeks the guitar was lying under my bed. It was my uncle who changed my mind. He did not play me a famous solo, but showed me one simple chord and asked me to play it for five minutes every day. After a month I could change between three chords without looking. Slowly, I understood that learning an instrument is not about talent or speed, but about small steps repeated every day. These days I play in a small band, and I still practise for five minutes before I start any big song."
+       },
+       {
+        "v": "Which sentence states the lesson most directly?",
+        "o": [
+         "I thought I would be playing my favourite songs within a month of practising.",
+         "Slowly, I understood that learning an instrument is about small steps.",
+         "He showed me one simple chord and asked me to play it for five minutes every day.",
+         "These days I play in a small band, and I still practise a little."
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "De les staat vaak in de zin met slowly of finally.",
+        "uo": [
+         "Koos je \"I thought I would be playing my favourite songs...\"? Dan denk je dat dit de les is. Dit is de verwachting aan het begin, de les komt later.",
+         "Klopt: deze zin noemt de les direct, en de rest van de tekst ondersteunt hem.",
+         "Koos je \"He showed me one simple chord and asked me to play...\"? Dan denk je dat dit de les is. Het is wat de oom deed, de les staat in de conclusie.",
+         "Koos je \"These days I play in a small band, and I still...\"? Dan denk je dat dit de les is. Het is een gevolg, de les staat eerder."
+        ],
+        "uh": "Conclusiezin.",
+        "ctx": "When I got my first guitar at fourteen, I thought I would be playing my favourite songs within a month. Of course, I was wrong. My fingers hurt, the chords sounded awful and after three weeks the guitar was lying under my bed. It was my uncle who changed my mind. He did not play me a famous solo, but showed me one simple chord and asked me to play it for five minutes every day. After a month I could change between three chords without looking. Slowly, I understood that learning an instrument is not about talent or speed, but about small steps repeated every day. These days I play in a small band, and I still practise for five minutes before I start any big song."
+       },
+       {
+        "v": "Which statement is too general to be the main idea of the text?",
+        "o": [
+         "sleep is important for everyone",
+         "a later start fits the body clock of teenagers",
+         "a later start also has some disadvantages",
+         "a study found better results with later starts"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Een hoofdgedachte is niet te breed en niet te smal.",
+        "uo": [
+         "Klopt: deze zin is te breed, want de tekst gaat specifiek over tieners en schooltijden.",
+         "Koos je \"a later start fits the body clock of teenagers\"? Dan denk je dat dit te breed is. Dit is precies de kern, het past bij de tekst.",
+         "Koos je \"a later start also has some disadvantages\"? Dan denk je dat dit de hoofdgedachte is. Het is een nadeel dat wordt genoemd, maar niet de kern.",
+         "Koos je \"a study found better results with later starts\"? Dan denk je dat dit te breed is. Het is een specifiek bewijs, dus te smal."
+        ],
+        "uh": "Tekstspecifiek.",
+        "ctx": "Many teenagers feel tired at school, and scientists think they know why. During puberty the body clock moves: young people fall asleep later and also wake up later. Yet most schools still start at eight o'clock or earlier, which means that many students miss an hour or two of sleep every night. Researchers in several countries have tested later starts. In one study, schools that began at 9.30 saw fewer students arriving late and better results in the first lessons. Of course, a later start also makes the school day end later, and sports clubs and part-time jobs may suffer. But the evidence is growing that rest matters more for learning than an early bell. Schools should therefore take the sleep needs of teenagers seriously."
+       },
+       {
+        "v": "How does the last sentence relate to the main idea?",
+        "o": [
+         "it gives a new example",
+         "it contradicts the first sentences",
+         "it introduces a new topic",
+         "it states the main idea as advice"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 1,
+        "u": "Therefore en should geven een conclusie of advies.",
+        "uo": [
+         "Koos je \"it gives a new example\"? Dan denk je dat het een voorbeeld is. Er staat geen voorbeeld, het is een advies.",
+         "Koos je \"it contradicts the first sentences\"? Dan denk je dat het de tekst tegenspreekt. Het ondersteunt ze, het is de conclusie.",
+         "Koos je \"it introduces a new topic\"? Dan denk je dat een nieuw onderwerp begint. Het gaat over schooltijden, dus de conclusie.",
+         "Klopt: \"Schools should therefore...\" vat de boodschap samen en geeft een advies."
+        ],
+        "uh": "Conclusie.",
+        "ctx": "Many teenagers feel tired at school, and scientists think they know why. During puberty the body clock moves: young people fall asleep later and also wake up later. Yet most schools still start at eight o'clock or earlier, which means that many students miss an hour or two of sleep every night. Researchers in several countries have tested later starts. In one study, schools that began at 9.30 saw fewer students arriving late and better results in the first lessons. Of course, a later start also makes the school day end later, and sports clubs and part-time jobs may suffer. But the evidence is growing that rest matters more for learning than an early bell. Schools should therefore take the sleep needs of teenagers seriously."
+       },
+       {
+        "v": "Which opinion does the writer share?",
+        "o": [
+         "sports clubs and jobs matter more than school lessons",
+         "schools should keep starting at eight o'clock or earlier",
+         "rest matters more for learning than an early bell",
+         "teenagers need much less sleep than grown-up adults"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "De mening van de schrijver staat in zijn conclusie.",
+        "uo": [
+         "Koos je \"sports clubs and jobs matter more than school...\"? Dan denk je dat sportclubs belangrijker zijn. De schrijver noemt ze alleen als nadeel, niet als belangrijkste.",
+         "Koos je \"schools should keep starting at eight o'clock or...\"? Dan denk je dat de schrijver acht uur wil. Hij wil later, dus niet acht uur.",
+         "Klopt: de schrijver zegt dat rust voor leren belangrijker is dan een vroege bel.",
+         "Koos je \"teenagers need much less sleep than grown-up adults\"? Dan denk je dat tieners minder slaap nodig hebben. De tekst zegt dat ze slaap missen, dus ze hebben genoeg nodig."
+        ],
+        "uh": "Mening staat in conclusie.",
+        "ctx": "Many teenagers feel tired at school, and scientists think they know why. During puberty the body clock moves: young people fall asleep later and also wake up later. Yet most schools still start at eight o'clock or earlier, which means that many students miss an hour or two of sleep every night. Researchers in several countries have tested later starts. In one study, schools that began at 9.30 saw fewer students arriving late and better results in the first lessons. Of course, a later start also makes the school day end later, and sports clubs and part-time jobs may suffer. But the evidence is growing that rest matters more for learning than an early bell. Schools should therefore take the sleep needs of teenagers seriously."
+       },
+       {
+        "v": "Which sentence best expresses the writer's message about urban bees?",
+        "o": [
+         "Cities are full of flowers and balconies for bees to visit.",
+         "Beekeepers should add as many hives as possible in every city.",
+         "Cities suit bees, but more flowers will help all bees.",
+         "Farms are better places for bees than cities are in every way."
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "De boodschap bevat de kern, het probleem en het advies.",
+        "uo": [
+         "Koos je \"Cities are full of flowers and balconies for bees...\"? Dan denk je dat dit de boodschap is. Het is een verklaring, geen boodschap.",
+         "Koos je \"Beekeepers should add as many hives as possible in...\"? Dan denk je dat de tekst meer korven wil. De experts adviseren juist bloemen, dus niet meer korven.",
+         "Klopt: deze zin bevat zowel het goede nieuws als het probleem en het advies.",
+         "Koos je \"Farms are better places for bees than cities are in...\"? Dan denk je dat boerderijen beter zijn. De tekst zegt het tegendeel, steden zijn beter."
+        ],
+        "uh": "Kern en advies.",
+        "ctx": "Big cities are not the first place you would expect to find bees, but they are surprisingly good homes for them. In the countryside, large farms often grow only one crop and use strong chemicals, so wild bees find little food. Cities, on the other hand, are full of gardens, balconies and parks with many different flowers that bloom at different times of the year. Beekeepers in London and Amsterdam report that city hives produce more honey than hives in nearby farmland. Still, the success of urban bees creates a new problem: there are now so many honeybees in some cities that wild bees have to compete with them for food. Experts therefore advise cities to plant more flowers instead of simply adding more hives."
+       },
+       {
+        "v": "How does \"Still, the success of urban bees creates a new problem\" relate to the sentences before?",
+        "o": [
+         "it repeats the positive picture of the city",
+         "it gives an example of honey production in cities",
+         "it concludes the text and gives the answer",
+         "it adds a problem to the positive picture"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Still en yet geven een tegenstelling met wat eerder staat.",
+        "uo": [
+         "Koos je \"it repeats the positive picture of the city\"? Dan denk je dat de zin herhaalt wat eerder stond. Still geeft een tegenstelling, dus een probleem.",
+         "Koos je \"it gives an example of honey production in cities\"? Dan denk je dat het over honing gaat. Dat stond eerder, nu volgt een probleem.",
+         "Koos je \"it concludes the text and gives the answer\"? Dan denk je dat de tekst eindigt. Er volgt nog advies, dus geen einde.",
+         "Klopt: still zet een probleem tegenover het eerdere succes."
+        ],
+        "uh": "Still: tegenstelling.",
+        "ctx": "Big cities are not the first place you would expect to find bees, but they are surprisingly good homes for them. In the countryside, large farms often grow only one crop and use strong chemicals, so wild bees find little food. Cities, on the other hand, are full of gardens, balconies and parks with many different flowers that bloom at different times of the year. Beekeepers in London and Amsterdam report that city hives produce more honey than hives in nearby farmland. Still, the success of urban bees creates a new problem: there are now so many honeybees in some cities that wild bees have to compete with them for food. Experts therefore advise cities to plant more flowers instead of simply adding more hives."
+       },
+       {
+        "v": "What is the function of the last sentence of the text?",
+        "o": [
+         "it gives the advice of the experts",
+         "it gives an extra example of urban bees",
+         "it introduces a second new problem for bees",
+         "it repeats the first sentence of the text"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "De slotzin geeft vaak een conclusie of advies.",
+        "uo": [
+         "Klopt: therefore leidt het advies in als gevolg van het probleem.",
+         "Koos je \"it gives an extra example of urban bees\"? Dan denk je dat het een voorbeeld is. Het is een advies, geen voorbeeld.",
+         "Koos je \"it introduces a second new problem for bees\"? Dan denk je dat er een nieuw probleem komt. Het probleem staat in de vorige zin, de laatste zin geeft een oplossing.",
+         "Koos je \"it repeats the first sentence of the text\"? Dan denk je dat de eerste zin terugkomt. De laatste zin gaat over het advies, niet over de opening."
+        ],
+        "uh": "Slotzin: advies.",
+        "ctx": "Big cities are not the first place you would expect to find bees, but they are surprisingly good homes for them. In the countryside, large farms often grow only one crop and use strong chemicals, so wild bees find little food. Cities, on the other hand, are full of gardens, balconies and parks with many different flowers that bloom at different times of the year. Beekeepers in London and Amsterdam report that city hives produce more honey than hives in nearby farmland. Still, the success of urban bees creates a new problem: there are now so many honeybees in some cities that wild bees have to compete with them for food. Experts therefore advise cities to plant more flowers instead of simply adding more hives."
+       },
+       {
+        "v": "What do the last two sentences suggest about the writer today?",
+        "o": [
+         "the writer has given up the guitar for good",
+         "the writer still follows the lesson",
+         "the writer is now famous in the country",
+         "the writer practises only for the big songs"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een slot laat vaak zien hoe de les doorwerkt.",
+        "uo": [
+         "Koos je \"the writer has given up the guitar for good\"? Dan denk je dat de schrijver gestopt is. Hij speelt in een band, dus hij is niet gestopt.",
+         "Klopt: de schrijver oefent nog elke dag even, zoals de oom adviseerde.",
+         "Koos je \"the writer is now famous in the country\"? Dan denk je dat de schrijver beroemd is. Hij speelt in een kleine band, geen roem.",
+         "Koos je \"the writer practises only for the big songs\"? Dan denk je dat hij alleen grote nummers oefent. Hij oefent vijf minuten vooraf, voor elk groot nummer."
+        ],
+        "uh": "Les werkt door.",
+        "ctx": "When I got my first guitar at fourteen, I thought I would be playing my favourite songs within a month. Of course, I was wrong. My fingers hurt, the chords sounded awful and after three weeks the guitar was lying under my bed. It was my uncle who changed my mind. He did not play me a famous solo, but showed me one simple chord and asked me to play it for five minutes every day. After a month I could change between three chords without looking. Slowly, I understood that learning an instrument is not about talent or speed, but about small steps repeated every day. These days I play in a small band, and I still practise for five minutes before I start any big song."
+       },
+       {
+        "v": "What is the function of \"He did not play me a famous solo, but showed me one simple chord\"?",
+        "o": [
+         "it shows that the uncle cannot play the guitar well",
+         "it gives the main idea of the whole text at last",
+         "it explains why the guitar was so expensive at first",
+         "it shows the uncle's method: simple steps first"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Een contrast als not ... but toont de aanpak of les.",
+        "uo": [
+         "Koos je \"it shows that the uncle cannot play the guitar well\"? Dan denk je dat de oom niet kan spelen. Hij kiest bewust voor eenvoud, dat is zijn methode.",
+         "Koos je \"it gives the main idea of the whole text at last\"? Dan denk je dat dit de hoofdgedachte is. De hoofdgedachte komt later, dit is de methode.",
+         "Koos je \"it explains why the guitar was so expensive at first\"? Dan denk je dat het over de prijs gaat. Dat staat nergens, het is de methode.",
+         "Klopt: de zin laat de aanpak van de oom zien, die de kern van de les voorbereidt."
+        ],
+        "uh": "Methode.",
+        "ctx": "When I got my first guitar at fourteen, I thought I would be playing my favourite songs within a month. Of course, I was wrong. My fingers hurt, the chords sounded awful and after three weeks the guitar was lying under my bed. It was my uncle who changed my mind. He did not play me a famous solo, but showed me one simple chord and asked me to play it for five minutes every day. After a month I could change between three chords without looking. Slowly, I understood that learning an instrument is not about talent or speed, but about small steps repeated every day. These days I play in a small band, and I still practise for five minutes before I start any big song."
+       },
+       {
+        "v": "Which title fits the whole text best?",
+        "o": [
+         "Five minutes a day",
+         "The day I became famous",
+         "My uncle's guitar collection",
+         "Why guitars hurt"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Een goede titel dekt de hele tekst en de boodschap.",
+        "uo": [
+         "Klopt: de titel verwijst naar de vijf minuten per dag, de kern van de les.",
+         "Koos je \"The day I became famous\"? Dan denk je dat de tekst over roem gaat. Roem komt niet voor, de les gaat over oefenen.",
+         "Koos je \"My uncle's guitar collection\"? Dan denk je dat de tekst over een verzameling gaat. Die komt niet voor, het gaat om oefenen.",
+         "Koos je \"Why guitars hurt\"? Dan denk je dat pijn de kern is. Pijn is een beginprobleem, niet de les."
+        ],
+        "uh": "Dekkend.",
+        "ctx": "When I got my first guitar at fourteen, I thought I would be playing my favourite songs within a month. Of course, I was wrong. My fingers hurt, the chords sounded awful and after three weeks the guitar was lying under my bed. It was my uncle who changed my mind. He did not play me a famous solo, but showed me one simple chord and asked me to play it for five minutes every day. After a month I could change between three chords without looking. Slowly, I understood that learning an instrument is not about talent or speed, but about small steps repeated every day. These days I play in a small band, and I still practise for five minutes before I start any big song."
+       },
+       {
+        "v": "Why is \"Experts therefore advise\" a good clue to the main message?",
+        "o": [
+         "experts always give the main idea of an article",
+         "therefore points to a conclusion by the author",
+         "advise is always the very first word of a paragraph",
+         "it repeats the exact title of the whole text"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Therefore, so en thus signaleren een conclusie.",
+        "uo": [
+         "Koos je \"experts always give the main idea of an article\"? Dan denk je dat experts altijd de hoofdgedachte geven. Dat is niet zo, het woord therefore is het signaal.",
+         "Klopt: therefore leidt een gevolgtrekking in, en die bevat vaak de kern van de boodschap.",
+         "Koos je \"advise is always the very first word of a paragraph\"? Dan denk je dat advise vooraan staat. Dat is geen regel, therefore is het signaal.",
+         "Koos je \"it repeats the exact title of the whole text\"? Dan denk je dat de zin de titel herhaalt. Hij geeft een conclusie, dat is iets anders."
+        ],
+        "uh": "Therefore: conclusie.",
+        "ctx": "Big cities are not the first place you would expect to find bees, but they are surprisingly good homes for them. In the countryside, large farms often grow only one crop and use strong chemicals, so wild bees find little food. Cities, on the other hand, are full of gardens, balconies and parks with many different flowers that bloom at different times of the year. Beekeepers in London and Amsterdam report that city hives produce more honey than hives in nearby farmland. Still, the success of urban bees creates a new problem: there are now so many honeybees in some cities that wild bees have to compete with them for food. Experts therefore advise cities to plant more flowers instead of simply adding more hives."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "In many countries people throw away millions of tonnes of food every year, while shops often reject vegetables because they look strange. Some supermarkets now sell these \"ugly\" vegetables at a lower price. Customers like the idea, and farmers earn money from crops that were wasted before. Experts therefore believe this simple change could reduce food waste a lot.",
+        "v": "Write the main idea of the text in one sentence.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Selling ugly vegetables cheaper reduces food waste (2p: probleem of afval en de oplossing). Ook goed als het gevolg voor boeren en klanten kort wordt genoemd (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "In many countries people throw away millions of tonnes of food every year, while shops often reject vegetables because they look strange. Some supermarkets now sell these \"ugly\" vegetables at a lower price. Customers like the idea, and farmers earn money from crops that were wasted before. Experts therefore believe this simple change could reduce food waste a lot.",
+        "v": "Which signal word shows the conclusion of the text and what does the conclusion say?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Therefore (1p). De conclusie zegt dat deze verandering het voedselafval veel kan verminderen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Many teenagers feel tired at school, and scientists think they know why. During puberty the body clock moves: young people fall asleep later and also wake up later. Yet most schools still start at eight o'clock or earlier, which means that many students miss an hour or two of sleep every night. Researchers in several countries have tested later starts. In one study, schools that began at 9.30 saw fewer students arriving late and better results in the first lessons. Of course, a later start also makes the school day end later, and sports clubs and part-time jobs may suffer. But the evidence is growing that rest matters more for learning than an early bell. Schools should therefore take the sleep needs of teenagers seriously.",
+        "v": "Give a title for the text about school start times and explain why it fits.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een titel zoals \"Let teenagers sleep\" of \"School should start later\" (1p). Uitleg: de titel noemt het onderwerp en de boodschap (1p) en dekt de hele tekst, niet alleen een voorbeeld (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Cycling to school is cheap and healthy. However, many parents worry about traffic accidents. For example, last year two pupils were hurt at a busy crossing. A few schools now organise safe cycle groups led by older students. The results are positive: more children cycle and parents feel calmer.",
+        "v": "What is the function of \"For example, last year two pupils were hurt at a busy crossing\" in this text?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het is een voorbeeld dat de zorg van de ouders illustreert (1p). Het is een detail en niet de hoofdgedachte (1p). For example is het signaal (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Big cities are not the first place you would expect to find bees, but they are surprisingly good homes for them. In the countryside, large farms often grow only one crop and use strong chemicals, so wild bees find little food. Cities, on the other hand, are full of gardens, balconies and parks with many different flowers that bloom at different times of the year. Beekeepers in London and Amsterdam report that city hives produce more honey than hives in nearby farmland. Still, the success of urban bees creates a new problem: there are now so many honeybees in some cities that wild bees have to compete with them for food. Experts therefore advise cities to plant more flowers instead of simply adding more hives.",
+        "v": "Write a one-sentence summary of the text about urban bees that is not too broad and not too narrow.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Steden zijn goed voor bijen, maar te veel korven vormen een probleem voor wilde bijen, dus er moeten meer bloemen komen (3p: succes, probleem, advies; 1p per onderdeel)."
+       }
+      ]
      }
     ]
    },
