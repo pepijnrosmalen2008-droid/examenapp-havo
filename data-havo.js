@@ -112889,6 +112889,692 @@ var VAKKEN = [
         "u": "De opmerking is ironisch of sarcastisch (1p). Brilliantly betekent hier het tegendeel (1p). Nobody laughed laat zien dat de sfeer bitter is en de grap niet grappig werd ontvangen (1p)."
        }
       ]
+     },
+     {
+      "id": "B6",
+      "lo": "en.B.6",
+      "gs": 2,
+      "naam": "Feiten, meningen en argumenten onderscheiden",
+      "beschrijving": "Je leert in Engelse teksten feiten van meningen te scheiden, het standpunt van de schrijver te vinden en argumenten, bewijs en tegenargumenten te herkennen en te beoordelen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Feit en mening",
+       "Standpunt en argumenten",
+       "Signaalwoorden voor meningen en bronnen",
+       "Soorten bewijs",
+       "Zwakke argumenten en tegenargumenten"
+      ],
+      "sam": "Een feit kun je controleren, een mening is een oordeel. Het standpunt van de schrijver staat vaak in de slotzin of na therefore. Argumenten ondersteunen het standpunt met bewijs zoals statistieken, onderzoek, voorbeelden, deskundigen en eigen ervaringen. Signaalwoorden als in my opinion, I believe, clearly en should wijzen op meningen, en claim, argue en according to op uitspraken van anderen. Een enkel voorbeeld of everybody knows is zwak bewijs, en een goede schrijver erkent een tegenargument (it is true that) en weerlegt het (however).",
+      "begrippen": [
+       {
+        "t": "Feit",
+        "d": "Iets wat je kunt controleren, zoals een cijfer of een gebeurtenis."
+       },
+       {
+        "t": "Mening",
+        "d": "Een oordeel of gevoel dat je niet kunt bewijzen."
+       },
+       {
+        "t": "Standpunt",
+        "d": "Wat de schrijver vindt over het onderwerp."
+       },
+       {
+        "t": "Argument",
+        "d": "Een reden die het standpunt ondersteunt."
+       },
+       {
+        "t": "Statistiek",
+        "d": "Een cijfer of enquêteresultaat dat als bewijs dient."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een geval dat een bewering illustreert."
+       },
+       {
+        "t": "Persoonlijke ervaring",
+        "d": "Iets wat de schrijver zelf meemaakte, als argument."
+       },
+       {
+        "t": "Deskundige",
+        "d": "Iemand met kennis die als bron wordt genoemd."
+       },
+       {
+        "t": "Tegenargument",
+        "d": "Een argument dat de bewering van de ander tegenspreekt."
+       },
+       {
+        "t": "Generalisatie",
+        "d": "Een bewering over iedereen zonder bewijs, zoals everybody knows."
+       },
+       {
+        "t": "Retorische vraag",
+        "d": "Een vraag die de lezer naar een antwoord stuurt."
+       },
+       {
+        "t": "Bron",
+        "d": "Waar een bewering vandaan komt, aangegeven met according to."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which sentence is a fact?",
+        "o": [
+         "Water is the best drink in the whole world.",
+         "Water boils at 100 degrees at sea level.",
+         "Everyone should drink more water every day.",
+         "Cold water tastes nicer than warm water."
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Een feit kun je controleren, een mening niet.",
+        "uo": [
+         "Koos je \"Water is the best drink in the whole world.\"? Dan denk je dat dit een feit is. Het woord best geeft een oordeel, dat is een mening.",
+         "Klopt: dit kun je meten en controleren, dus het is een feit.",
+         "Koos je \"Everyone should drink more water every day.\"? Dan denk je dat dit een feit is. Het woord should geeft een advies, dat is een mening.",
+         "Koos je \"Cold water tastes nicer than warm water.\"? Dan denk je dat dit een feit is. Smaak is persoonlijk, dat is een mening."
+        ],
+        "uh": "Controleerbaar."
+       },
+       {
+        "v": "Which sentence is an opinion?",
+        "o": [
+         "Dogs are mammals that live with people.",
+         "Cats sleep for many hours a day.",
+         "Some dogs live for fifteen years or longer.",
+         "Dogs are better pets than cats."
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Een mening bevat een oordeel zoals better of best.",
+        "uo": [
+         "Koos je \"Dogs are mammals that live with people.\"? Dan denk je dat dit een mening is. Je kunt het controleren, dus het is een feit.",
+         "Koos je \"Cats sleep for many hours a day.\"? Dan denk je dat dit een mening is. Je kunt het meten, dus het is een feit.",
+         "Koos je \"Some dogs live for fifteen years or longer.\"? Dan denk je dat dit een mening is. Je kunt het controleren, dus het is een feit.",
+         "Klopt: better is een oordeel dat niet te bewijzen is, dus een mening."
+        ],
+        "uh": "Oordeel."
+       },
+       {
+        "v": "What is a standpoint in a text?",
+        "o": [
+         "the opinion of the writer about a subject",
+         "a proven fact about the subject of the text",
+         "a number or a date in the text itself",
+         "the title of the text and nothing more"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "Standpunt = stelling of mening van de schrijver.",
+        "uo": [
+         "Klopt: het standpunt is wat de schrijver vindt over het onderwerp.",
+         "Koos je \"a proven fact about the subject of the text\"? Dan denk je dat het standpunt een feit is. Een standpunt is een mening, geen bewezen feit.",
+         "Koos je \"a number or a date in the text itself\"? Dan denk je dat het een getal is. Een standpunt is een stelling, geen cijfer.",
+         "Koos je \"the title of the text and nothing more\"? Dan denk je dat het de titel is. De titel kan hints geven, maar het standpunt is een mening."
+        ],
+        "uh": "Mening van de schrijver."
+       },
+       {
+        "v": "Which sentence in the zoo text is an opinion of the writer?",
+        "o": [
+         "Zoos have been part of city life for centuries.",
+         "Some animals, such as the Arabian oryx, have been saved by programmes.",
+         "In my opinion, the money would do more good in wild areas.",
+         "Critics argue that most animals are not endangered."
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "In my opinion en I think tonen een eigen mening.",
+        "uo": [
+         "Koos je \"Zoos have been part of city life for centuries.\"? Dan denk je dat dit een mening is. Het is een historisch feit, te controleren.",
+         "Koos je \"Some animals, such as the Arabian oryx, have been...\"? Dan denk je dat dit een mening is. Het is een resultaat dat je kunt controleren, dus een feit.",
+         "Klopt: \"In my opinion\" markeert de persoonlijke mening van de schrijver.",
+         "Koos je \"Critics argue that most animals are not endangered.\"? Dan denk je dat dit een mening van de schrijver is. Het is de mening van critici, niet van de schrijver."
+        ],
+        "uh": "In my opinion.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "Which fact does the writer give about his own trip?",
+        "o": [
+         "he never has to wait for a bus again",
+         "he loves electric scooters very much",
+         "he crossed town in ten minutes",
+         "he thinks scooters are cheap and fast"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Een concrete gebeurtenis is een feit, een gevoel is een mening.",
+        "uo": [
+         "Koos je \"he never has to wait for a bus again\"? Dan denk je dat dit een feit over de reis is. Dit is een algemene bewering, geen concrete reis.",
+         "Koos je \"he loves electric scooters very much\"? Dan denk je dat dit een feit is. Het is een gevoel, dus een mening.",
+         "Klopt: dit is een concrete gebeurtenis die de schrijver meemaakte, dus een feit over zijn reis.",
+         "Koos je \"he thinks scooters are cheap and fast\"? Dan denk je dat dit een feit is. Het is zijn oordeel, dus een mening."
+        ],
+        "uh": "Gebeurtenis.",
+        "ctx": "Electric scooters have appeared in many cities, and opinions are divided. I love them: they are cheap, fast and I never have to wait for a bus. Last week, I crossed town in ten minutes. Of course, my neighbour insists that scooters are dangerous because riders do not wear helmets. That may be true for some riders, but accident figures for our city show that only one in a thousand trips ends in injury. Surely that is not a big risk? Besides, everybody knows that cities are too crowded with cars anyway. The council should therefore welcome scooters instead of banning them."
+       },
+       {
+        "v": "What percentage of pupils bring their own lunch?",
+        "o": [
+         "62 percent",
+         "28 percent (the canteen buyers)",
+         "10 percent (those who skip lunch)",
+         "90 percent (all the others together)"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Zoek bij cijfers wat erbij staat: own lunch.",
+        "uo": [
+         "Klopt: het enquêteresultaat noemt 62 procent.",
+         "Koos je \"28 percent (the canteen buyers)\"? Dan denk je dat dit het aandeel met eigen lunch is. Het gaat om het aandeel dat in de kantine koopt, dus niet eigen lunch.",
+         "Koos je \"10 percent (those who skip lunch)\"? Dan denk je dat dit het aandeel eigen lunch is. Dit getal hoort bij leerlingen die niet lunchen, een ander deel van de tekst.",
+         "Koos je \"90 percent (all the others together)\"? Dan denk je dat de overige leerlingen samen het antwoord geven. Dat getal staat niet in de tekst, het antwoord is 62."
+        ],
+        "uh": "62 percent.",
+        "ctx": "A new school survey shows that 62 percent of pupils bring their own lunch, while 28 percent buy it in the canteen. The remaining 10 percent usually skip lunch. The canteen manager said that prices will rise by 20 cents next month because of higher costs. Some parents say this is unfair, but the school board points out that the canteen has not increased its prices for three years. The board will decide in March whether to introduce a free fruit scheme. Researchers who studied a similar scheme at another school found that pupils ate more fruit but that the cost per pupil doubled."
+       },
+       {
+        "v": "Which expression signals a personal opinion in the zoo text?",
+        "o": [
+         "according to a survey",
+         "it is true that",
+         "such as the Arabian oryx",
+         "in my opinion"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 2,
+        "u": "In my opinion, I think en I believe tonen een mening.",
+        "uo": [
+         "Koos je \"according to a survey\"? Dan denk je dat dit een eigen mening toont. According to wijst op een bron, dus op een feit of een uitspraak van anderen.",
+         "Koos je \"it is true that\"? Dan denk je dat dit een eigen mening toont. It is true that erkent een feit, geen mening.",
+         "Koos je \"such as the Arabian oryx\"? Dan denk je dat dit een mening toont. Such as geeft een voorbeeld, geen mening.",
+         "Klopt: in my opinion is een vaste uitdrukking voor een eigen mening."
+        ],
+        "uh": "Mening-signaal.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "What is the writer's standpoint about zoos?",
+        "o": [
+         "zoos are the best way to save every species",
+         "zoos must change or disappear",
+         "zoos are only a problem for children",
+         "nobody should ever visit an animal park"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Het standpunt staat vaak in de slotzin.",
+        "uo": [
+         "Koos je \"zoos are the best way to save every species\"? Dan denk je dat de schrijver zoos steunt. Hij geeft juist kritiek, dus niet voor.",
+         "Klopt: de laatste zin geeft het standpunt van de schrijver.",
+         "Koos je \"zoos are only a problem for children\"? Dan denk je dat het om kinderen gaat. Dat noemt de tekst alleen bij voorstanders, het standpunt is breder.",
+         "Koos je \"nobody should ever visit an animal park\"? Dan denk je dat bezoek verboden is. De schrijver zegt dat zoos moeten veranderen, niet dat niemand mag komen."
+        ],
+        "uh": "Slotzin.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "What kind of argument is \"According to a survey among visitors, two out of three people say...\"?",
+        "o": [
+         "a personal experience of the writer",
+         "an example from history",
+         "a statement by an expert",
+         "a survey result or statistic"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Een statistiek noemt cijfers of een enquêteresultaat.",
+        "uo": [
+         "Koos je \"a personal experience of the writer\"? Dan denk je dat het een ervaring van de schrijver is. De zin noemt een enquête, geen persoonlijke ervaring.",
+         "Koos je \"an example from history\"? Dan denk je dat het een historisch voorbeeld is. De zin noemt een enquête, dat is een statistiek.",
+         "Koos je \"a statement by an expert\"? Dan denk je dat het een deskundige is. De zin noemt bezoekers, geen experts.",
+         "Klopt: according to een enquête met een deel van de bezoekers is een statistiek."
+        ],
+        "uh": "Statistiek.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "Which argument do the supporters of zoos give?",
+        "o": [
+         "zoos are cheap to visit for most families",
+         "zoos protect species and teach children",
+         "zoos are better than natural habitats",
+         "zoos make more money than wild areas"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Zoek bij supporters claim naar de argumenten.",
+        "uo": [
+         "Koos je \"zoos are cheap to visit for most families\"? Dan denk je dat de prijs genoemd wordt. Dat staat niet in de tekst, de steunbetuigers noemen bescherming.",
+         "Klopt: de steunbetuigers noemen soortenbescherming en educatie.",
+         "Koos je \"zoos are better than natural habitats\"? Dan denk je dat zoos beter zijn dan natuur. Dat zeggen de critici juist niet, en de steunbetuigers ook niet.",
+         "Koos je \"zoos make more money than wild areas\"? Dan denk je dat het om geld gaat. Dat noemt de schrijver als kritiek, niet de steunbetuigers."
+        ],
+        "uh": "Supporters claim.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "What does \"critics argue\" tell you about the next statement?",
+        "o": [
+         "it is a fact that has been proven",
+         "it is the opinion of the writer himself",
+         "it is the opinion of critics",
+         "it is a joke that is not meant seriously"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Claim, argue en say geven een bewering van anderen aan.",
+        "uo": [
+         "Koos je \"it is a fact that has been proven\"? Dan denk je dat argue een bewezen feit inleidt. Argue geeft een bewering aan, geen bewijs.",
+         "Koos je \"it is the opinion of the writer himself\"? Dan denk je dat de schrijver het zelf vindt. De bewering is van critici, niet van de schrijver.",
+         "Klopt: argue geeft aan dat de zin een standpunt of bewering van critici is.",
+         "Koos je \"it is a joke that is not meant seriously\"? Dan denk je dat het een grap is. De toon is serieus, het is een bewering."
+        ],
+        "uh": "Bewering.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "What kind of argument is \"Last week, I crossed town in ten minutes\"?",
+        "o": [
+         "a personal experience",
+         "a statistic about the whole city",
+         "a statement of an expert",
+         "a general law about scooters"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Een eigen ervaring is een argument, maar geen bewijs voor iedereen.",
+        "uo": [
+         "Klopt: de schrijver vertelt iets wat hijzelf meemaakte.",
+         "Koos je \"a statistic about the whole city\"? Dan denk je dat het cijfers van de stad zijn. De zin gaat over één reis, dus een persoonlijke ervaring.",
+         "Koos je \"a statement of an expert\"? Dan denk je dat een deskundige spreekt. De schrijver spreekt zelf, dus een ervaring.",
+         "Koos je \"a general law about scooters\"? Dan denk je dat het een wet is. De zin beschrijft één reis, een ervaring."
+        ],
+        "uh": "Eigen ervaring.",
+        "ctx": "Electric scooters have appeared in many cities, and opinions are divided. I love them: they are cheap, fast and I never have to wait for a bus. Last week, I crossed town in ten minutes. Of course, my neighbour insists that scooters are dangerous because riders do not wear helmets. That may be true for some riders, but accident figures for our city show that only one in a thousand trips ends in injury. Surely that is not a big risk? Besides, everybody knows that cities are too crowded with cars anyway. The council should therefore welcome scooters instead of banning them."
+       },
+       {
+        "v": "What kind of argument is \"only one in a thousand trips ends in injury\"?",
+        "o": [
+         "a statistic that backs his view",
+         "a personal story about the writer",
+         "an opinion of the neighbour",
+         "a joke about the scooter riders"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "Cijfers als one in a thousand zijn statistieken.",
+        "uo": [
+         "Klopt: het noemt cijfers uit de stad om te laten zien dat het risico klein is.",
+         "Koos je \"a personal story about the writer\"? Dan denk je dat het een persoonlijk verhaal is. De zin noemt cijfers, dus een statistiek.",
+         "Koos je \"an opinion of the neighbour\"? Dan denk je dat het van de buurman is. De buurman noemt gevaar, de cijfers komen uit de stad.",
+         "Koos je \"a joke about the scooter riders\"? Dan denk je dat het een grap is. De toon is zakelijk, het zijn cijfers."
+        ],
+        "uh": "Statistiek.",
+        "ctx": "Electric scooters have appeared in many cities, and opinions are divided. I love them: they are cheap, fast and I never have to wait for a bus. Last week, I crossed town in ten minutes. Of course, my neighbour insists that scooters are dangerous because riders do not wear helmets. That may be true for some riders, but accident figures for our city show that only one in a thousand trips ends in injury. Surely that is not a big risk? Besides, everybody knows that cities are too crowded with cars anyway. The council should therefore welcome scooters instead of banning them."
+       },
+       {
+        "v": "What is the writer's standpoint about electric scooters?",
+        "o": [
+         "they should be allowed only for adults",
+         "they are a danger for every rider and citizen",
+         "the council should welcome scooters",
+         "they are too expensive for most families"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Het standpunt volgt vaak op therefore.",
+        "uo": [
+         "Koos je \"they should be allowed only for adults\"? Dan denk je dat de schrijver een leeftijdsgrens wil. Dat staat nergens, hij wil ze verwelkomen.",
+         "Koos je \"they are a danger for every rider and citizen\"? Dan denk je dat hij ze gevaarlijk vindt. Dat vindt de buurman, niet de schrijver.",
+         "Klopt: de laatste zin geeft het standpunt: scooters verwelkomen in plaats van verbieden.",
+         "Koos je \"they are too expensive for most families\"? Dan denk je dat de prijs een bezwaar is. De schrijver noemt ze juist goedkoop, dus niet duur."
+        ],
+        "uh": "Therefore.",
+        "ctx": "Electric scooters have appeared in many cities, and opinions are divided. I love them: they are cheap, fast and I never have to wait for a bus. Last week, I crossed town in ten minutes. Of course, my neighbour insists that scooters are dangerous because riders do not wear helmets. That may be true for some riders, but accident figures for our city show that only one in a thousand trips ends in injury. Surely that is not a big risk? Besides, everybody knows that cities are too crowded with cars anyway. The council should therefore welcome scooters instead of banning them."
+       },
+       {
+        "v": "Which part of the text is the opinion of someone?",
+        "o": [
+         "62 percent of pupils bring their own lunch",
+         "some parents say this is unfair",
+         "the canteen has not increased prices for three years",
+         "the board will decide in March"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Een oordeel als unfair is een mening.",
+        "uo": [
+         "Koos je \"62 percent of pupils bring their own lunch\"? Dan denk je dat dit een mening is. Het is een meetbaar resultaat, dus een feit.",
+         "Klopt: say this is unfair geeft een oordeel van ouders weer.",
+         "Koos je \"the canteen has not increased prices for three years\"? Dan denk je dat dit een mening is. Dat kun je controleren, dus een feit.",
+         "Koos je \"the board will decide in March\"? Dan denk je dat dit een mening is. Het is een planning, dus een feit."
+        ],
+        "uh": "Unfair is een oordeel.",
+        "ctx": "A new school survey shows that 62 percent of pupils bring their own lunch, while 28 percent buy it in the canteen. The remaining 10 percent usually skip lunch. The canteen manager said that prices will rise by 20 cents next month because of higher costs. Some parents say this is unfair, but the school board points out that the canteen has not increased its prices for three years. The board will decide in March whether to introduce a free fruit scheme. Researchers who studied a similar scheme at another school found that pupils ate more fruit but that the cost per pupil doubled."
+       },
+       {
+        "v": "What kind of evidence is \"researchers who studied a similar scheme ... found that pupils ate more fruit\"?",
+        "o": [
+         "a personal story of a pupil",
+         "an opinion of the parents",
+         "a joke about school lunches",
+         "research results"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Onderzoek en cijfers zijn sterk bewijs.",
+        "uo": [
+         "Koos je \"a personal story of a pupil\"? Dan denk je dat een leerling vertelt. De tekst noemt onderzoekers, dus onderzoeksresultaten.",
+         "Koos je \"an opinion of the parents\"? Dan denk je dat de ouders spreken. De tekst noemt onderzoekers, dus onderzoek.",
+         "Koos je \"a joke about school lunches\"? Dan denk je dat het een grap is. De toon is zakelijk, het is onderzoek.",
+         "Klopt: onderzoek van deskundigen is bewijs dat een bewering ondersteunt."
+        ],
+        "uh": "Onderzoek.",
+        "ctx": "A new school survey shows that 62 percent of pupils bring their own lunch, while 28 percent buy it in the canteen. The remaining 10 percent usually skip lunch. The canteen manager said that prices will rise by 20 cents next month because of higher costs. Some parents say this is unfair, but the school board points out that the canteen has not increased its prices for three years. The board will decide in March whether to introduce a free fruit scheme. Researchers who studied a similar scheme at another school found that pupils ate more fruit but that the cost per pupil doubled."
+       },
+       {
+        "v": "What does \"the school board points out\" suggest?",
+        "o": [
+         "the board agrees with the parents",
+         "the board answers with a fact",
+         "the board is angry with the parents",
+         "the board has no answer to the complaint"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Points out leidt een feit in als antwoord.",
+        "uo": [
+         "Koos je \"the board agrees with the parents\"? Dan denk je dat het bestuur instemt. Het wijst op een feit tegen de klacht, dus niet instemmen.",
+         "Klopt: points out introduceert een feit waarmee het bestuur op de klacht reageert.",
+         "Koos je \"the board is angry with the parents\"? Dan denk je dat het bestuur boos is. De toon is zakelijk, geen boosheid.",
+         "Koos je \"the board has no answer to the complaint\"? Dan denk je dat het bestuur geen antwoord heeft. Het geeft een feit, dus wel een antwoord."
+        ],
+        "uh": "Feit als antwoord.",
+        "ctx": "A new school survey shows that 62 percent of pupils bring their own lunch, while 28 percent buy it in the canteen. The remaining 10 percent usually skip lunch. The canteen manager said that prices will rise by 20 cents next month because of higher costs. Some parents say this is unfair, but the school board points out that the canteen has not increased its prices for three years. The board will decide in March whether to introduce a free fruit scheme. Researchers who studied a similar scheme at another school found that pupils ate more fruit but that the cost per pupil doubled."
+       },
+       {
+        "v": "Why is \"Clearly, zoos must change or disappear\" an opinion and not a fact?",
+        "o": [
+         "it is a judgement nobody can prove",
+         "it is written in the last sentence of the text",
+         "it contains the word zoos, which is a topic",
+         "it is shorter than the other sentences"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Clearly en must tonen een oordeel dat je niet kunt controleren.",
+        "uo": [
+         "Klopt: must en clearly tonen een oordeel dat je niet kunt bewijzen.",
+         "Koos je \"it is written in the last sentence of the text\"? Dan denk je dat de plaats het een mening maakt. Dat is niet zo, het gaat om het oordeel.",
+         "Koos je \"it contains the word zoos, which is a topic\"? Dan denk je dat het onderwerp het een mening maakt. Dat is niet zo, het gaat om het oordeel.",
+         "Koos je \"it is shorter than the other sentences\"? Dan denk je dat de lengte het een mening maakt. Dat is niet zo, het gaat om het oordeel."
+        ],
+        "uh": "Oordeel.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "What is the weakness of the survey argument about visitors?",
+        "o": [
+         "the survey was held among far too many people",
+         "two out of three is always a small number",
+         "surveys are never used in newspapers",
+         "feeling sorry does not prove zoos are wrong"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Gevoelens van mensen zijn geen bewijs voor een feit.",
+        "uo": [
+         "Koos je \"the survey was held among far too many people\"? Dan denk je dat te veel mensen een zwakte is. Een grote steekproef is juist sterk, dat is geen zwakte.",
+         "Koos je \"two out of three is always a small number\"? Dan denk je dat twee van de drie klein is. Het is een meerderheid, geen kleine groep.",
+         "Koos je \"surveys are never used in newspapers\"? Dan denk je dat enquêtes niet worden gebruikt. Ze worden vaak gebruikt, dat is geen zwakte.",
+         "Klopt: wat bezoekers voelen is een mening en geen bewijs dat dierentuinen verkeerd zijn."
+        ],
+        "uh": "Gevoel is geen bewijs.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "Which sentence gives a counter-argument to the supporters of zoos?",
+        "o": [
+         "zoos teach children about nature",
+         "some animals have been saved by breeding",
+         "most zoo animals are not endangered",
+         "zoos have existed for centuries in cities"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Een tegenargument ondermijnt het argument van de ander.",
+        "uo": [
+         "Koos je \"zoos teach children about nature\"? Dan denk je dat dit een tegenargument is. Dit is een argument van voorstanders, geen kritiek.",
+         "Koos je \"some animals have been saved by breeding\"? Dan denk je dat dit een tegenargument is. Dit ondersteunt de voorstanders, het is geen kritiek.",
+         "Klopt: dit ondermijnt het argument dat zoos bedreigde soorten beschermen.",
+         "Koos je \"zoos have existed for centuries in cities\"? Dan denk je dat dit een tegenargument is. Het is een feit zonder oordeel, geen kritiek."
+        ],
+        "uh": "Tegenargument.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "How does the writer respond to the example of the Arabian oryx?",
+        "o": [
+         "he says the example is a lie",
+         "he agrees that all zoos are therefore truly needed",
+         "he admits it is true but says it is not enough",
+         "he ignores the example completely"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Erkennen en weerleggen: it is true ... however.",
+        "uo": [
+         "Koos je \"he says the example is a lie\"? Dan denk je dat de schrijver het voorbeeld ontkent. Hij noemt het juist waar, met it is true.",
+         "Koos je \"he agrees that all zoos are therefore truly needed\"? Dan denk je dat hij alles accepteert. De zin na However geeft een bezwaar, dus niet.",
+         "Klopt: \"It is true\" erkent het feit en \"However\" laat zien dat het niet alle zoos rechtvaardigt.",
+         "Koos je \"he ignores the example completely\"? Dan denk je dat hij het negeert. Hij reageert erop met it is true, en een tegenstelling."
+        ],
+        "uh": "Erkennen en weerleggen.",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear."
+       },
+       {
+        "v": "What is wrong with \"everybody knows that cities are too crowded with cars\"?",
+        "o": [
+         "it is a statistic from an official source",
+         "it is a personal experience of the writer",
+         "it is an expert opinion on city traffic",
+         "it is a generalisation without proof"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Everybody knows is een veel gemaakte denkfout zonder bewijs.",
+        "uo": [
+         "Koos je \"it is a statistic from an official source\"? Dan denk je dat het een statistiek is. Er staat geen cijfer, het is een bewering.",
+         "Koos je \"it is a personal experience of the writer\"? Dan denk je dat het een ervaring is. Er is geen ervaring genoemd, het is een generalisatie.",
+         "Koos je \"it is an expert opinion on city traffic\"? Dan denk je dat een deskundige spreekt. De schrijver zegt het zelf, zonder bron.",
+         "Klopt: everybody knows is een overdrijving die geen bewijs geeft."
+        ],
+        "uh": "Generalisatie.",
+        "ctx": "Electric scooters have appeared in many cities, and opinions are divided. I love them: they are cheap, fast and I never have to wait for a bus. Last week, I crossed town in ten minutes. Of course, my neighbour insists that scooters are dangerous because riders do not wear helmets. That may be true for some riders, but accident figures for our city show that only one in a thousand trips ends in injury. Surely that is not a big risk? Besides, everybody knows that cities are too crowded with cars anyway. The council should therefore welcome scooters instead of banning them."
+       },
+       {
+        "v": "What does \"Surely that is not a big risk?\" do?",
+        "o": [
+         "a question that steers the reader",
+         "it asks the reader for a real answer",
+         "it gives a statistic about accidents",
+         "it shows that the writer is unsure"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Een retorische vraag stuurt de lezer naar een mening.",
+        "uo": [
+         "Klopt: surely in een vraag stuurt de lezer naar het antwoord van de schrijver.",
+         "Koos je \"it asks the reader for a real answer\"? Dan denk je dat de schrijver echt iets vraagt. Het is een retorische vraag, geen echte vraag.",
+         "Koos je \"it gives a statistic about accidents\"? Dan denk je dat het een cijfer is. Het cijfer staat in de zin ervoor, deze zin is een vraag.",
+         "Koos je \"it shows that the writer is unsure\"? Dan denk je dat de schrijver twijfelt. Hij stuurt de lezer, dus zeker."
+        ],
+        "uh": "Retorisch.",
+        "ctx": "Electric scooters have appeared in many cities, and opinions are divided. I love them: they are cheap, fast and I never have to wait for a bus. Last week, I crossed town in ten minutes. Of course, my neighbour insists that scooters are dangerous because riders do not wear helmets. That may be true for some riders, but accident figures for our city show that only one in a thousand trips ends in injury. Surely that is not a big risk? Besides, everybody knows that cities are too crowded with cars anyway. The council should therefore welcome scooters instead of banning them."
+       },
+       {
+        "v": "Which type of argument is least convincing as proof for a whole city?",
+        "o": [
+         "accident figures for the city",
+         "a single personal experience",
+         "a statement by the neighbour",
+         "the number of cars in the city"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Een enkel geval is zwak bewijs voor een algemene bewering.",
+        "uo": [
+         "Koos je \"accident figures for the city\"? Dan denk je dat cijfers zwak zijn. Ze gaan over de hele stad, dus sterker.",
+         "Klopt: een eigen reis zegt weinig over alle gebruikers in een stad.",
+         "Koos je \"a statement by the neighbour\"? Dan denk je dat dit het zwakst is. Het is een mening van een ander, maar niet de zwakste voor de hele stad.",
+         "Koos je \"the number of cars in the city\"? Dan denk je dat het aantal auto's zwak is. Het is een telbaar gegeven, dus sterker."
+        ],
+        "uh": "Eén geval.",
+        "ctx": "Electric scooters have appeared in many cities, and opinions are divided. I love them: they are cheap, fast and I never have to wait for a bus. Last week, I crossed town in ten minutes. Of course, my neighbour insists that scooters are dangerous because riders do not wear helmets. That may be true for some riders, but accident figures for our city show that only one in a thousand trips ends in injury. Surely that is not a big risk? Besides, everybody knows that cities are too crowded with cars anyway. The council should therefore welcome scooters instead of banning them."
+       },
+       {
+        "v": "Which statement can be checked and is therefore a fact?",
+        "o": [
+         "this price rise of 20 cents is unfair",
+         "a free fruit scheme would be a great idea for all",
+         "the canteen food is far too expensive",
+         "62 percent of pupils bring their own lunch"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 0,
+        "u": "Een controleerbaar cijfer is een feit.",
+        "uo": [
+         "Koos je \"this price rise of 20 cents is unfair\"? Dan denk je dat dit een feit is. Unfair is een oordeel, dus een mening.",
+         "Koos je \"a free fruit scheme would be a great idea for all\"? Dan denk je dat dit een feit is. Great idea is een oordeel, dus een mening.",
+         "Koos je \"the canteen food is far too expensive\"? Dan denk je dat dit een feit is. Too expensive is een oordeel, dus een mening.",
+         "Klopt: een percentage uit een enquête kun je controleren."
+        ],
+        "uh": "Controleerbaar.",
+        "ctx": "A new school survey shows that 62 percent of pupils bring their own lunch, while 28 percent buy it in the canteen. The remaining 10 percent usually skip lunch. The canteen manager said that prices will rise by 20 cents next month because of higher costs. Some parents say this is unfair, but the school board points out that the canteen has not increased its prices for three years. The board will decide in March whether to introduce a free fruit scheme. Researchers who studied a similar scheme at another school found that pupils ate more fruit but that the cost per pupil doubled."
+       },
+       {
+        "v": "What does the last sentence of the text suggest about the fruit scheme?",
+        "o": [
+         "it has both an advantage and a cost",
+         "it has only advantages for the pupils",
+         "it has no effect on the pupils",
+         "it is cheaper than the canteen"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Zoek in een slotzin naar voor- en nadelen samen.",
+        "uo": [
+         "Klopt: leerlingen aten meer fruit, maar de kosten per leerling verdubbelden.",
+         "Koos je \"it has only advantages for the pupils\"? Dan denk je dat er alleen voordelen zijn. De zin noemt ook de verdubbelde kosten, dus niet alleen voordelen.",
+         "Koos je \"it has no effect on the pupils\"? Dan denk je dat het niets doet. De leerlingen aten meer fruit, dus er is een effect.",
+         "Koos je \"it is cheaper than the canteen\"? Dan denk je dat het goedkoper is. De kosten verdubbelden, dus niet goedkoper."
+        ],
+        "uh": "Voor- en nadeel.",
+        "ctx": "A new school survey shows that 62 percent of pupils bring their own lunch, while 28 percent buy it in the canteen. The remaining 10 percent usually skip lunch. The canteen manager said that prices will rise by 20 cents next month because of higher costs. Some parents say this is unfair, but the school board points out that the canteen has not increased its prices for three years. The board will decide in March whether to introduce a free fruit scheme. Researchers who studied a similar scheme at another school found that pupils ate more fruit but that the cost per pupil doubled."
+       },
+       {
+        "v": "Is the text mainly facts or opinions?",
+        "o": [
+         "mainly the personal opinion of the writer",
+         "mainly facts and reported statements",
+         "only jokes and made-up stories",
+         "only opinions without any numbers"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Een zakelijke tekst met cijfers en bronnen geeft vooral feiten.",
+        "uo": [
+         "Koos je \"mainly the personal opinion of the writer\"? Dan denk je dat de schrijver zijn mening geeft. De tekst blijft zakelijk, met cijfers en uitspraken.",
+         "Klopt: de tekst noemt vooral cijfers en uitspraken, en mening komt van ouders en bestuur.",
+         "Koos je \"only jokes and made-up stories\"? Dan denk je dat het fictie is. De tekst geeft enquêtecijfers, dus feiten.",
+         "Koos je \"only opinions without any numbers\"? Dan denk je dat er geen cijfers zijn. De tekst noemt percentages, dus feiten."
+        ],
+        "uh": "Zakelijk.",
+        "ctx": "A new school survey shows that 62 percent of pupils bring their own lunch, while 28 percent buy it in the canteen. The remaining 10 percent usually skip lunch. The canteen manager said that prices will rise by 20 cents next month because of higher costs. Some parents say this is unfair, but the school board points out that the canteen has not increased its prices for three years. The board will decide in March whether to introduce a free fruit scheme. Researchers who studied a similar scheme at another school found that pupils ate more fruit but that the cost per pupil doubled."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Zoos have been part of city life for centuries, but should they continue to exist? Supporters claim that zoos protect endangered species and teach children about nature. It is true that some animals, such as the Arabian oryx, have been saved by breeding programmes. However, critics argue that most animals in zoos are not endangered at all and that cages can never replace a natural habitat. In my opinion, the money spent on zoos would do more good if it were used to protect wild areas. According to a survey among visitors, two out of three people say they feel sorry for animals that walk the same path all day. Clearly, zoos must change or disappear.",
+        "v": "Give one fact and one opinion from the text about zoos.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een feit zoals \"Some animals, such as the Arabian oryx, have been saved by breeding programmes\" of \"Zoos have been part of city life for centuries\" (1p). Een mening zoals \"In my opinion, the money would do more good in wild areas\" of \"Zoos must change or disappear\" (1p). Je noemt de reden waarom het een mening is: het is een oordeel (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Electric scooters have appeared in many cities, and opinions are divided. I love them: they are cheap, fast and I never have to wait for a bus. Last week, I crossed town in ten minutes. Of course, my neighbour insists that scooters are dangerous because riders do not wear helmets. That may be true for some riders, but accident figures for our city show that only one in a thousand trips ends in injury. Surely that is not a big risk? Besides, everybody knows that cities are too crowded with cars anyway. The council should therefore welcome scooters instead of banning them.",
+        "v": "Which two kinds of arguments does the writer use about scooters and which of them is stronger?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een persoonlijke ervaring (de reis in tien minuten) (1p). Een statistiek (een op duizend ritten eindigt in letsel) (1p). De statistiek is sterker omdat zij over de hele stad gaat (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A new school survey shows that 62 percent of pupils bring their own lunch, while 28 percent buy it in the canteen. The remaining 10 percent usually skip lunch. The canteen manager said that prices will rise by 20 cents next month because of higher costs. Some parents say this is unfair, but the school board points out that the canteen has not increased its prices for three years. The board will decide in March whether to introduce a free fruit scheme. Researchers who studied a similar scheme at another school found that pupils ate more fruit but that the cost per pupil doubled.",
+        "v": "Which words in the text show that something is the opinion of others and not of the writer?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "\"Some parents say\" (1p). \"the school board points out\" (1p). De schrijver meldt uitspraken en geeft zelf geen oordeel (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "A hotel advert says: \"Everyone agrees that our hotel is the best in town. Last year, 9 out of 10 guests said they would come back. Our chef is a famous expert.\"",
+        "v": "Which statement is the weakest argument and which is the strongest? Explain.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De zwakste is \"Everyone agrees\", een generalisatie zonder bewijs (1p). De sterkste is \"9 out of 10 guests\", een statistiek (1p). \"famous expert\" is zwak omdat er geen bewijs of bron bij staat (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Electric scooters have appeared in many cities, and opinions are divided. I love them: they are cheap, fast and I never have to wait for a bus. Last week, I crossed town in ten minutes. Of course, my neighbour insists that scooters are dangerous because riders do not wear helmets. That may be true for some riders, but accident figures for our city show that only one in a thousand trips ends in injury. Surely that is not a big risk? Besides, everybody knows that cities are too crowded with cars anyway. The council should therefore welcome scooters instead of banning them.",
+        "v": "How does the writer answer his neighbour's claim that scooters are dangerous? Quote the words that show it.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij erkent het eerst met \"That may be true for some riders\" (1p). Hij weerlegt het met \"but accident figures ... show\" (1p). Het cijfer \"only one in a thousand trips ends in injury\" is het bewijs (1p)."
+       }
+      ]
      }
     ]
    },

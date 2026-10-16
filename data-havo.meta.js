@@ -2503,6 +2503,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B6",
+      "lo": "en.B.6",
+      "gs": 2,
+      "naam": "Feiten, meningen en argumenten onderscheiden",
+      "beschrijving": "Je leert in Engelse teksten feiten van meningen te scheiden, het standpunt van de schrijver te vinden en argumenten, bewijs en tegenargumenten te herkennen en te beoordelen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Feit en mening",
+       "Standpunt en argumenten",
+       "Signaalwoorden voor meningen en bronnen",
+       "Soorten bewijs",
+       "Zwakke argumenten en tegenargumenten"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
