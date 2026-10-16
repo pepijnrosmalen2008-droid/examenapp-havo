@@ -2545,6 +2545,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B8",
+      "lo": "en.B.8",
+      "gs": 2,
+      "naam": "Een Engelse tekst samenvatten en parafraseren",
+      "beschrijving": "Je leert de hoofdpunten van een Engelse tekst te kiezen, details en voorbeelden weg te laten, zinnen in eigen woorden te zeggen en te beoordelen of een samenvatting goed, te kort, te lang of subjectief is.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Hoofdpunten kiezen",
+       "Parafraseren in eigen woorden",
+       "Een samenvatting beoordelen",
+       "Signaalwoorden en kernzinnen gebruiken",
+       "Tekst per alinea en als geheel samenvatten"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

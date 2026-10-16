@@ -1,0 +1,686 @@
+{
+ "id": "B8",
+ "lo": "en.B.8",
+ "gs": 2,
+ "naam": "Een Engelse tekst samenvatten en parafraseren",
+ "beschrijving": "Je leert de hoofdpunten van een Engelse tekst te kiezen, details en voorbeelden weg te laten, zinnen in eigen woorden te zeggen en te beoordelen of een samenvatting goed, te kort, te lang of subjectief is.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Hoofdpunten kiezen",
+  "Parafraseren in eigen woorden",
+  "Een samenvatting beoordelen",
+  "Signaalwoorden en kernzinnen gebruiken",
+  "Tekst per alinea en als geheel samenvatten"
+ ],
+ "sam": "Een samenvatting geeft alleen de hoofdpunten in eigen woorden en laat voorbeelden, details en eigen mening weg. Je vindt de hoofdpunten met kernzinnen, signaalwoorden (first of all, in short, therefore) en de slotzin. Parafraseren is dezelfde betekenis met andere woorden zeggen: keeps them fit wordt makes them healthier. Een goede samenvatting is kort maar compleet, geeft geen eigen oordeel en blijft dicht bij de tekst. Te kort betekent dat hoofdpunten ontbreken, te lang dat er details in staan.",
+ "begrippen": [
+  {
+   "t": "Samenvatting",
+   "d": "Een korte tekst met alleen de hoofdpunten van de originele tekst."
+  },
+  {
+   "t": "Hoofdpunt",
+   "d": "Een kernpunt dat in de samenvatting hoort."
+  },
+  {
+   "t": "Detail",
+   "d": "Een klein gegeven dat je weglaat, zoals een kleur of een naam."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval bij een bewering dat je meestal weglaat."
+  },
+  {
+   "t": "Parafrase",
+   "d": "Dezelfde betekenis in andere woorden."
+  },
+  {
+   "t": "Eigen woorden",
+   "d": "Zinnen die je zelf formuleert in plaats van over te nemen."
+  },
+  {
+   "t": "Kernzin",
+   "d": "De zin met het hoofdpunt van een alinea."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat de structuur toont, zoals first of all of in short."
+  },
+  {
+   "t": "Te kort",
+   "d": "Een samenvatting waarin hoofdpunten ontbreken."
+  },
+  {
+   "t": "Te lang",
+   "d": "Een samenvatting met te veel details."
+  },
+  {
+   "t": "Eigen mening",
+   "d": "Een oordeel van de samenvatter dat niet in de tekst staat."
+  },
+  {
+   "t": "Conclusie",
+   "d": "Het slotpunt van de tekst, vaak met in short of therefore."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What is a summary?",
+   "o": [
+    "a copy of the text with some words removed",
+    "a short text with only the main points",
+    "a text with your own opinion about the topic",
+    "a long list with every detail of the text"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Samenvatting: kort, hoofdpunten, eigen woorden, geen mening.",
+   "uo": [
+    "Koos je \"a copy of the text with some words removed\"? Dan denk je dat knippen en plakken genoeg is. Een samenvatting is in eigen woorden, en korter dan de tekst.",
+    "Klopt: een samenvatting geeft alleen de hoofdpunten, korter en in eigen woorden.",
+    "Koos je \"a text with your own opinion about the topic\"? Dan denk je dat je mening erbij hoort. Een samenvatting geeft alleen wat de schrijver zegt, zonder jouw mening.",
+    "Koos je \"a long list with every detail of the text\"? Dan denk je dat alle details erin horen. Een samenvatting houdt de hoofdpunten, en laat details weg."
+   ],
+   "uh": "Kort en in eigen woorden."
+  },
+  {
+   "v": "What should you leave out of a summary?",
+   "o": [
+    "the main point of each paragraph",
+    "the conclusion of the writer",
+    "the main idea of the whole text",
+    "examples and small details"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Laat voorbeelden, cijfers en details weg.",
+   "uo": [
+    "Koos je \"the main point of each paragraph\"? Dan denk je dat je de hoofdpunten kunt weglaten. Die vormen juist de samenvatting, laat details weg.",
+    "Koos je \"the conclusion of the writer\"? Dan denk je dat de conclusie wegmag. De conclusie hoort er meestal wel in, laat voorbeelden weg.",
+    "Koos je \"the main idea of the whole text\"? Dan denk je dat de hoofdgedachte wegmag. Die staat juist centraal, details vallen weg.",
+    "Klopt: voorbeelden en details ondersteunen de hoofdpunten, maar horen er niet in."
+   ],
+   "uh": "Details weg."
+  },
+  {
+   "v": "What does \"paraphrase\" mean?",
+   "o": [
+    "say the same thing in other words",
+    "repeat the same words of the text",
+    "add your own opinion to the sentence",
+    "translate the sentence into Dutch words"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Parafraseren: dezelfde betekenis, andere woorden.",
+   "uo": [
+    "Klopt: parafraseren is dezelfde inhoud met andere woorden zeggen.",
+    "Koos je \"repeat the same words of the text\"? Dan denk je dat parafraseren overschrijven is. Dat is citeren, parafraseren gebruikt andere woorden.",
+    "Koos je \"add your own opinion to the sentence\"? Dan denk je dat je er een mening bij zet. Dat verandert de betekenis, parafraseren houdt hem gelijk.",
+    "Koos je \"translate the sentence into Dutch words\"? Dan denk je dat het vertalen is. Parafraseren is in dezelfde taal, met andere woorden."
+   ],
+   "uh": "Andere woorden."
+  },
+  {
+   "v": "What is the main point of the cycling text?",
+   "o": [
+    "bad weather makes cycling impossible",
+    "schools should buy more bicycles",
+    "cycling to school is good",
+    "teenagers do not like cycling"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "De hoofdgedachte staat vaak in de eerste of laatste zin.",
+   "uo": [
+    "Koos je \"bad weather makes cycling impossible\"? Dan denk je dat het weer het hoofdpunt is. Dat is een bezwaar dat wordt opgelost, niet het hoofdpunt.",
+    "Koos je \"schools should buy more bicycles\"? Dan denk je dat scholen fietsen moeten kopen. Dat staat nergens, scholen bieden alleen opslag.",
+    "Klopt: de eerste en laatste zin noemen dat fietsen goed is voor leerlingen.",
+    "Koos je \"teenagers do not like cycling\"? Dan denk je dat tieners niet graag fietsen. De tekst zegt het tegendeel, het is goed voor hen."
+   ],
+   "uh": "Fietsen is goed.",
+   "ctx": "Cycling to school is good for teenagers in many ways. First of all, it keeps them fit: a daily ride of twenty minutes is enough to improve their health. Second, cycling is cheaper than taking the bus or being driven by parents. Third, students who cycle often arrive more awake and focused in the first lesson. Of course, bad weather and busy roads can be a problem, but good clothes and safe cycle paths solve most of these difficulties. Some schools therefore offer bicycle storage, repair workshops and cycling lessons. In short, cycling to school helps pupils' health, wallet and concentration."
+  },
+  {
+   "v": "Why did Marken become a popular place for tourists?",
+   "o": [
+    "the houses were repainted in new colours",
+    "the fishing became much more profitable",
+    "a dam connected the island to land",
+    "a museum was opened in the village"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Zoek de oorzaak: after a dam was built.",
+   "uo": [
+    "Koos je \"the houses were repainted in new colours\"? Dan denk je dat de verf de reden is. Dat staat nergens, de dam maakte het bereikbaar.",
+    "Koos je \"the fishing became much more profitable\"? Dan denk je dat de visserij beter werd. De visserij wordt als vroeger genoemd, niet als oorzaak.",
+    "Klopt: na de bouw van de dam werd het dorp bereikbaar voor toeristen.",
+    "Koos je \"a museum was opened in the village\"? Dan denk je dat het museum de reden was. Het museum is een maatregel van de gemeente, later."
+   ],
+   "uh": "Dam als oorzaak.",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history."
+  },
+  {
+   "v": "What is the main idea of the sleep text?",
+   "o": [
+    "the best amount of sleep differs",
+    "everyone needs exactly eight hours of sleep",
+    "people sleep too little in modern times",
+    "screens are the main cause of bad sleep"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Zoek bij de hoofdgedachte een yet-zin met correctie.",
+   "uo": [
+    "Klopt: de tekst zegt dat het verschilt per persoon en dat kwaliteit belangrijker is.",
+    "Koos je \"everyone needs exactly eight hours of sleep\"? Dan denk je dat acht uur voor iedereen geldt. De tekst zegt het tegendeel, het verschilt.",
+    "Koos je \"people sleep too little in modern times\"? Dan denk je dat de tekst klaagt over te weinig slaap. Dat staat nergens, het gaat om verschil en kwaliteit.",
+    "Koos je \"screens are the main cause of bad sleep\"? Dan denk je dat schermen de hoofdoorzaak zijn. Ze zijn een van de adviezen, niet de hoofdgedachte."
+   ],
+   "uh": "Verschil en kwaliteit.",
+   "ctx": "Many people think that sleeping eight hours is the only healthy choice. Yet researchers have found that the best amount of sleep differs from person to person. Some adults feel fine on seven hours, while others need nine. What matters more than the number is the quality: a person who wakes up often will not rest well, even after ten hours in bed. Experts therefore advise going to bed at the same time every night, avoiding screens in the last hour and keeping the bedroom dark and cool. These habits help the body to fall asleep faster and to stay asleep longer."
+  },
+  {
+   "v": "What does \"In short\" signal?",
+   "o": [
+    "a new example of the benefits",
+    "a contrast with the earlier points",
+    "the cause of the earlier problems",
+    "a summing up of the main points"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "In short en to sum up leiden een samenvatting in.",
+   "uo": [
+    "Koos je \"a new example of the benefits\"? Dan denk je dat in short een voorbeeld opent. Dat doet for example, in short vat samen.",
+    "Koos je \"a contrast with the earlier points\"? Dan denk je dat het een contrast is. Dat doet however, in short vat samen.",
+    "Koos je \"the cause of the earlier problems\"? Dan denk je dat het een oorzaak geeft. Dat doet because, in short vat samen.",
+    "Klopt: in short leidt een korte samenvatting van de hoofdpunten in."
+   ],
+   "uh": "In short = kortom.",
+   "ctx": "Cycling to school is good for teenagers in many ways. First of all, it keeps them fit: a daily ride of twenty minutes is enough to improve their health. Second, cycling is cheaper than taking the bus or being driven by parents. Third, students who cycle often arrive more awake and focused in the first lesson. Of course, bad weather and busy roads can be a problem, but good clothes and safe cycle paths solve most of these difficulties. Some schools therefore offer bicycle storage, repair workshops and cycling lessons. In short, cycling to school helps pupils' health, wallet and concentration."
+  },
+  {
+   "v": "Which sentence should NOT be in a summary of the cycling text?",
+   "o": [
+    "Cycling keeps teenagers fit and healthy.",
+    "Some schools offer storage and workshops.",
+    "Cycling costs less than other transport.",
+    "Cycling helps students concentrate in lessons."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Houd hoofdpunten, laat details en voorbeelden weg.",
+   "uo": [
+    "Koos je \"Cycling keeps teenagers fit and healthy.\"? Dan denk je dat dit wegmag. Gezondheid is het eerste hoofdpunt, dus erin.",
+    "Klopt: dit is een detail over wat sommige scholen doen, geen hoofdpunt.",
+    "Koos je \"Cycling costs less than other transport.\"? Dan denk je dat dit wegmag. Kosten zijn het tweede hoofdpunt, dus erin.",
+    "Koos je \"Cycling helps students concentrate in lessons.\"? Dan denk je dat dit wegmag. Concentratie is het derde hoofdpunt, dus erin."
+   ],
+   "uh": "Detail weg.",
+   "ctx": "Cycling to school is good for teenagers in many ways. First of all, it keeps them fit: a daily ride of twenty minutes is enough to improve their health. Second, cycling is cheaper than taking the bus or being driven by parents. Third, students who cycle often arrive more awake and focused in the first lesson. Of course, bad weather and busy roads can be a problem, but good clothes and safe cycle paths solve most of these difficulties. Some schools therefore offer bicycle storage, repair workshops and cycling lessons. In short, cycling to school helps pupils' health, wallet and concentration."
+  },
+  {
+   "v": "Which sentence is the best paraphrase of \"it keeps them fit\"?",
+   "o": [
+    "It makes them very tired.",
+    "It makes them go slower.",
+    "It costs them a lot of money.",
+    "It makes them healthier."
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Een parafrase behoudt de betekenis met andere woorden.",
+   "uo": [
+    "Koos je \"It makes them very tired.\"? Dan denk je dat fit vermoeid betekent. Het is het tegendeel, fit is gezond.",
+    "Koos je \"It makes them go slower.\"? Dan denk je dat het om snelheid gaat. Fit gaat over gezondheid, niet om snelheid.",
+    "Koos je \"It costs them a lot of money.\"? Dan denk je dat het om geld gaat. Dat is het tweede punt, fit gaat over gezondheid.",
+    "Klopt: fit houden betekent gezonder en conditioneel sterk houden."
+   ],
+   "uh": "Gezonder.",
+   "ctx": "Cycling to school is good for teenagers in many ways. First of all, it keeps them fit: a daily ride of twenty minutes is enough to improve their health. Second, cycling is cheaper than taking the bus or being driven by parents. Third, students who cycle often arrive more awake and focused in the first lesson. Of course, bad weather and busy roads can be a problem, but good clothes and safe cycle paths solve most of these difficulties. Some schools therefore offer bicycle storage, repair workshops and cycling lessons. In short, cycling to school helps pupils' health, wallet and concentration."
+  },
+  {
+   "v": "Which summary of the cycling text is best?",
+   "o": [
+    "Cycling is good.",
+    "Cycling to school improves health, saves money and helps concentration.",
+    "Cycling to school is good and I think everybody should do it every day.",
+    "Some schools offer cycle storage, repair shops and cycling lessons for pupils."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Een goede samenvatting is kort maar bevat de hoofdpunten.",
+   "uo": [
+    "Koos je \"Cycling is good.\"? Dan denk je dat dit genoeg is. Dit is te kort, de hoofdpunten ontbreken.",
+    "Klopt: de samenvatting noemt de drie hoofdpunten kort en zonder details.",
+    "Koos je \"Cycling to school is good and I think everybody...\"? Dan denk je dat je je mening mag toevoegen. Een samenvatting bevat geen mening, alleen de tekst.",
+    "Koos je \"Some schools offer cycle storage, repair shops and...\"? Dan denk je dat dit de samenvatting is. Dit is een detail, de hoofdpunten ontbreken."
+   ],
+   "uh": "Hoofdpunten.",
+   "ctx": "Cycling to school is good for teenagers in many ways. First of all, it keeps them fit: a daily ride of twenty minutes is enough to improve their health. Second, cycling is cheaper than taking the bus or being driven by parents. Third, students who cycle often arrive more awake and focused in the first lesson. Of course, bad weather and busy roads can be a problem, but good clothes and safe cycle paths solve most of these difficulties. Some schools therefore offer bicycle storage, repair workshops and cycling lessons. In short, cycling to school helps pupils' health, wallet and concentration."
+  },
+  {
+   "v": "Which information is a detail that can be left out of a summary?",
+   "o": [
+    "the island is now connected by a dam",
+    "some residents welcome the tourists",
+    "the houses are green and made of wood",
+    "the municipality limits the tourist buses"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 0,
+   "u": "Een bijzaak is een beschrijving zonder invloed op het hoofdpunt.",
+   "uo": [
+    "Koos je \"the island is now connected by a dam\"? Dan denk je dat dit een detail is. Het verklaart de verandering, dus een hoofdpunt.",
+    "Koos je \"some residents welcome the tourists\"? Dan denk je dat dit een detail is. Het is een van de twee meningen, dus een hoofdpunt.",
+    "Klopt: dit is een beschrijving die niet bijdraagt aan het hoofdpunt.",
+    "Koos je \"the municipality limits the tourist buses\"? Dan denk je dat dit een detail is. Het is de oplossing van de gemeente, dus een hoofdpunt."
+   ],
+   "uh": "Beschrijving weg.",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history."
+  },
+  {
+   "v": "Which sentence is the best paraphrase of \"lost its quiet atmosphere\"?",
+   "o": [
+    "The village is no longer calm.",
+    "The village has become quieter than before.",
+    "The village has lost its name.",
+    "The village has no more shops."
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Atmosphere = sfeer: lost its quiet atmosphere = niet meer rustig.",
+   "uo": [
+    "Klopt: de rustige sfeer is verdwenen, dus het is niet meer kalm.",
+    "Koos je \"The village has become quieter than before.\"? Dan denk je dat het stiller werd. De tekst zegt het tegendeel, de rust is weg.",
+    "Koos je \"The village has lost its name.\"? Dan denk je dat de naam weg is. Dat staat nergens, de sfeer is weg.",
+    "Koos je \"The village has no more shops.\"? Dan denk je dat de winkels weg zijn. De tekst zegt dat toeristen geld brengen, dus er zijn winkels."
+   ],
+   "uh": "Niet meer rustig.",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history."
+  },
+  {
+   "v": "How does the text show the two sides of the tourism?",
+   "o": [
+    "some welcome visitors, others complain",
+    "the municipality and the museum disagree",
+    "tourists and fishermen disagree",
+    "the dam and the island disagree"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Some ... others zet twee groepen tegenover elkaar.",
+   "uo": [
+    "Klopt: some en others zetten de twee meningen van inwoners tegenover elkaar.",
+    "Koos je \"the municipality and the museum disagree\"? Dan denk je dat het om twee instanties gaat. Het gaat om inwoners, met twee meningen.",
+    "Koos je \"tourists and fishermen disagree\"? Dan denk je dat toeristen en vissers het oneens zijn. Dat staat niet, het gaat om inwoners.",
+    "Koos je \"the dam and the island disagree\"? Dan denk je dat de dam en het eiland het oneens zijn. Dat is een figuurlijke gedachte, niet in de tekst."
+   ],
+   "uh": "Some en others.",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history."
+  },
+  {
+   "v": "Which summary contains an opinion of the summary writer and is therefore wrong?",
+   "o": [
+    "Marken has become popular with tourists since a dam was built.",
+    "Some residents like the visitors, while others complain.",
+    "Marken is sadly ruined by tourists, which is a pity.",
+    "The municipality now limits tourist buses."
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Een samenvatting bevat geen eigen oordeel.",
+   "uo": [
+    "Koos je \"Marken has become popular with tourists since a dam...\"? Dan denk je dat dit een mening is. Het is een feit uit de tekst, dus goed.",
+    "Koos je \"Some residents like the visitors, while others...\"? Dan denk je dat dit een mening is. Het geeft de meningen van de inwoners weer, dus goed.",
+    "Klopt: sadly en a pity zijn eigen oordelen, die niet in de tekst staan.",
+    "Koos je \"The municipality now limits tourist buses.\"? Dan denk je dat dit een mening is. Het is een maatregel uit de tekst, dus goed."
+   ],
+   "uh": "Geen eigen mening.",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history."
+  },
+  {
+   "v": "What matters more than the number of hours of sleep?",
+   "o": [
+    "the time of going to bed only",
+    "the quality of the sleep",
+    "the colour of the bedroom walls",
+    "the number of people in the room"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "What matters more than ... geeft de hoofdzaak.",
+   "uo": [
+    "Koos je \"the time of going to bed only\"? Dan denk je dat de tijd het enige is. De tekst noemt de tijd als advies, de kwaliteit is belangrijker.",
+    "Klopt: de tekst zegt dat de kwaliteit belangrijker is dan het aantal uren.",
+    "Koos je \"the colour of the bedroom walls\"? Dan denk je dat de kleur ertoe doet. Dat staat nergens, de kwaliteit telt.",
+    "Koos je \"the number of people in the room\"? Dan denk je dat het om mensen gaat. Dat staat nergens, de kwaliteit telt."
+   ],
+   "uh": "Kwaliteit.",
+   "ctx": "Many people think that sleeping eight hours is the only healthy choice. Yet researchers have found that the best amount of sleep differs from person to person. Some adults feel fine on seven hours, while others need nine. What matters more than the number is the quality: a person who wakes up often will not rest well, even after ten hours in bed. Experts therefore advise going to bed at the same time every night, avoiding screens in the last hour and keeping the bedroom dark and cool. These habits help the body to fall asleep faster and to stay asleep longer."
+  },
+  {
+   "v": "What does \"therefore\" introduce in the text?",
+   "o": [
+    "a contrast with all the earlier information",
+    "an example of the earlier information",
+    "the question of the researchers",
+    "advice based on the earlier information"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Therefore leidt een conclusie of advies in.",
+   "uo": [
+    "Koos je \"a contrast with all the earlier information\"? Dan denk je dat therefore een contrast geeft. Een contrast wordt aangegeven met however of but, therefore geeft een gevolg of advies.",
+    "Koos je \"an example of the earlier information\"? Dan denk je dat het een voorbeeld geeft. Een voorbeeld opent met for example, therefore noemt wat volgt uit het voorgaande.",
+    "Koos je \"the question of the researchers\"? Dan denk je dat het een vraag opent. Therefore opent geen vraag, maar een advies dat volgt uit de eerdere gegevens.",
+    "Klopt: therefore leidt het advies in dat volgt uit de eerdere informatie."
+   ],
+   "uh": "Therefore: advies.",
+   "ctx": "Many people think that sleeping eight hours is the only healthy choice. Yet researchers have found that the best amount of sleep differs from person to person. Some adults feel fine on seven hours, while others need nine. What matters more than the number is the quality: a person who wakes up often will not rest well, even after ten hours in bed. Experts therefore advise going to bed at the same time every night, avoiding screens in the last hour and keeping the bedroom dark and cool. These habits help the body to fall asleep faster and to stay asleep longer."
+  },
+  {
+   "v": "Which sentence is the best paraphrase of \"differs from person to person\"?",
+   "o": [
+    "Everybody needs exactly the same amount of sleep.",
+    "Everybody needs a different amount.",
+    "Some people never sleep at all.",
+    "Only adults need to sleep."
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Person to person betekent per persoon.",
+   "uo": [
+    "Koos je \"Everybody needs exactly the same amount of sleep.\"? Dan denk je dat het gelijk is. De tekst zegt het tegendeel, het verschilt.",
+    "Klopt: verschilt van persoon tot persoon betekent dat ieder een ander aantal nodig heeft.",
+    "Koos je \"Some people never sleep at all.\"? Dan denk je dat sommigen niet slapen. Dat staat nergens, het verschilt per persoon.",
+    "Koos je \"Only adults need to sleep.\"? Dan denk je dat alleen volwassenen slapen. De tekst gaat over volwassenen, maar niet alleen, het verschilt."
+   ],
+   "uh": "Per persoon.",
+   "ctx": "Many people think that sleeping eight hours is the only healthy choice. Yet researchers have found that the best amount of sleep differs from person to person. Some adults feel fine on seven hours, while others need nine. What matters more than the number is the quality: a person who wakes up often will not rest well, even after ten hours in bed. Experts therefore advise going to bed at the same time every night, avoiding screens in the last hour and keeping the bedroom dark and cool. These habits help the body to fall asleep faster and to stay asleep longer."
+  },
+  {
+   "v": "Which summary of the cycling text is too short to be useful?",
+   "o": [
+    "Cycling is good.",
+    "Cycling helps pupils' health, wallet and concentration, despite bad weather.",
+    "Cycling to school keeps teenagers fit, costs less and helps them focus.",
+    "Cycling is healthy, cheap and good for concentration, so schools help."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Een goede samenvatting noemt de hoofdpunten.",
+   "uo": [
+    "Klopt: de samenvatting noemt geen reden en is daarom te kort.",
+    "Koos je \"Cycling helps pupils' health, wallet and...\"? Dan denk je dat dit te kort is. Het noemt de drie hoofdpunten, dus bruikbaar.",
+    "Koos je \"Cycling to school keeps teenagers fit, costs less...\"? Dan denk je dat dit te kort is. Het noemt de drie punten, dus bruikbaar.",
+    "Koos je \"Cycling is healthy, cheap and good for...\"? Dan denk je dat dit te kort is. Het noemt de drie punten en de conclusie, dus bruikbaar."
+   ],
+   "uh": "Te kort.",
+   "ctx": "Cycling to school is good for teenagers in many ways. First of all, it keeps them fit: a daily ride of twenty minutes is enough to improve their health. Second, cycling is cheaper than taking the bus or being driven by parents. Third, students who cycle often arrive more awake and focused in the first lesson. Of course, bad weather and busy roads can be a problem, but good clothes and safe cycle paths solve most of these difficulties. Some schools therefore offer bicycle storage, repair workshops and cycling lessons. In short, cycling to school helps pupils' health, wallet and concentration."
+  },
+  {
+   "v": "Which words connect the three benefits in the cycling text?",
+   "o": [
+    "However, in contrast and whereas",
+    "Because, as a result and therefore",
+    "For example, such as and for instance",
+    "First of all, second and third"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Rangordewoorden als first, second en third tonen opsomming.",
+   "uo": [
+    "Koos je \"However, in contrast and whereas\"? Dan denk je dat deze woorden de voordelen verbinden. Het zijn contrastwoorden, de voordelen volgen elkaar op.",
+    "Koos je \"Because, as a result and therefore\"? Dan denk je dat deze woorden de voordelen verbinden. Het zijn oorzaakwoorden, de voordelen staan naast elkaar.",
+    "Koos je \"For example, such as and for instance\"? Dan denk je dat deze woorden de voordelen verbinden. Het zijn voorbeeldwoorden, de voordelen staan op een rij.",
+    "Klopt: first of all, second en third zetten de drie voordelen in volgorde."
+   ],
+   "uh": "Opsomming.",
+   "ctx": "Cycling to school is good for teenagers in many ways. First of all, it keeps them fit: a daily ride of twenty minutes is enough to improve their health. Second, cycling is cheaper than taking the bus or being driven by parents. Third, students who cycle often arrive more awake and focused in the first lesson. Of course, bad weather and busy roads can be a problem, but good clothes and safe cycle paths solve most of these difficulties. Some schools therefore offer bicycle storage, repair workshops and cycling lessons. In short, cycling to school helps pupils' health, wallet and concentration."
+  },
+  {
+   "v": "How can you shorten the three benefits into one phrase?",
+   "o": [
+    "bad weather, busy roads and storage",
+    "schools, parents and teenagers",
+    "health, cost and concentration",
+    "bicycles, buses and cars"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 0,
+   "u": "Zoek in de slotzin naar een korte samenvatting.",
+   "uo": [
+    "Koos je \"bad weather, busy roads and storage\"? Dan denk je dat dit de drie voordelen zijn. Het zijn problemen en een detail, geen voordelen.",
+    "Koos je \"schools, parents and teenagers\"? Dan denk je dat dit de voordelen zijn. Het zijn groepen mensen, geen voordelen.",
+    "Klopt: de laatste zin noemt de drie hoofdpunten in drie woorden.",
+    "Koos je \"bicycles, buses and cars\"? Dan denk je dat dit de voordelen zijn. Het zijn vervoersmiddelen, geen voordelen."
+   ],
+   "uh": "Gezondheid, geld, aandacht.",
+   "ctx": "Cycling to school is good for teenagers in many ways. First of all, it keeps them fit: a daily ride of twenty minutes is enough to improve their health. Second, cycling is cheaper than taking the bus or being driven by parents. Third, students who cycle often arrive more awake and focused in the first lesson. Of course, bad weather and busy roads can be a problem, but good clothes and safe cycle paths solve most of these difficulties. Some schools therefore offer bicycle storage, repair workshops and cycling lessons. In short, cycling to school helps pupils' health, wallet and concentration."
+  },
+  {
+   "v": "Which summary of the Marken text is correct?",
+   "o": [
+    "Marken has green wooden houses and a museum.",
+    "Marken is a fishing island and nothing has changed at all.",
+    "Marken became a tourist place, with money and problems.",
+    "Tourists ruined Marken and young people left for good."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Een samenvatting noemt de hoofdlijn zonder oordeel.",
+   "uo": [
+    "Koos je \"Marken has green wooden houses and a museum.\"? Dan denk je dat dit de samenvatting is. Het noemt alleen details, de verandering ontbreekt.",
+    "Koos je \"Marken is a fishing island and nothing has changed...\"? Dan denk je dat er niets veranderde. De tekst zegt dat het een toeristenplaats werd, dus wel veranderd.",
+    "Klopt: deze samenvatting noemt de verandering, de voordelen, de nadelen en blijft kort.",
+    "Koos je \"Tourists ruined Marken and young people left for...\"? Dan denk je dat dit de samenvatting is. Het is te sterk en bevat een oordeel, de tekst noemt meningen."
+   ],
+   "uh": "Hoofdlijn.",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history."
+  },
+  {
+   "v": "Which paraphrase of \"young people can no longer afford to stay\" is correct?",
+   "o": [
+    "Houses are cheap, so young people stay.",
+    "Young people do not like the quiet village any more.",
+    "Houses have become smaller than before.",
+    "Houses are so expensive that young people leave."
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Een parafrase behoudt de betekenis: prijzen stijgen, jongeren vertrekken.",
+   "uo": [
+    "Koos je \"Houses are cheap, so young people stay.\"? Dan denk je dat de prijzen laag zijn. De tekst zegt het tegendeel, ze stegen.",
+    "Koos je \"Young people do not like the quiet village any more.\"? Dan denk je dat het om smaak gaat. De tekst noemt prijzen, niet smaak.",
+    "Koos je \"Houses have become smaller than before.\"? Dan denk je dat het om de grootte gaat. De tekst noemt prijzen, niet maat.",
+    "Klopt: stijgen van prijzen en niet meer kunnen betalen betekent te duur om te blijven."
+   ],
+   "uh": "Te duur.",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history."
+  },
+  {
+   "v": "What is the function of the last sentence of the Marken text?",
+   "o": [
+    "it shows the measures of the municipality",
+    "it gives another complaint of the residents",
+    "it describes the history of the island",
+    "it repeats the first sentence of the text"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Een slotzin geeft vaak een oplossing of conclusie.",
+   "uo": [
+    "Klopt: de gemeente beperkt bussen en opent een museum als reactie op de klachten.",
+    "Koos je \"it gives another complaint of the residents\"? Dan denk je dat er een klacht bij komt. De zin noemt maatregelen, geen klacht.",
+    "Koos je \"it describes the history of the island\"? Dan denk je dat de zin de geschiedenis geeft. Het museum is een maatregel, geen geschiedenis.",
+    "Koos je \"it repeats the first sentence of the text\"? Dan denk je dat de zin de eerste herhaalt. Hij geeft een oplossing, geen herhaling."
+   ],
+   "uh": "Oplossing.",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history."
+  },
+  {
+   "v": "Which summary of the sleep text is correct?",
+   "o": [
+    "Everyone should sleep eight hours and avoid all screens in bed.",
+    "The best amount of sleep differs, and quality matters most.",
+    "Sleep is important for adults who work.",
+    "People who wake up often sleep ten hours."
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Een goede samenvatting noemt kern en conclusie.",
+   "uo": [
+    "Koos je \"Everyone should sleep eight hours and avoid all...\"? Dan denk je dat acht uur de regel is. De tekst zegt dat het verschilt, dus niet iedereen.",
+    "Klopt: deze samenvatting noemt de hoofdgedachte en het advies kort.",
+    "Koos je \"Sleep is important for adults who work.\"? Dan denk je dat dit de samenvatting is. Dit is te breed, het noemt de kern niet.",
+    "Koos je \"People who wake up often sleep ten hours.\"? Dan denk je dat dit de samenvatting is. Dit is een detail, de kern ontbreekt."
+   ],
+   "uh": "Kern en advies.",
+   "ctx": "Many people think that sleeping eight hours is the only healthy choice. Yet researchers have found that the best amount of sleep differs from person to person. Some adults feel fine on seven hours, while others need nine. What matters more than the number is the quality: a person who wakes up often will not rest well, even after ten hours in bed. Experts therefore advise going to bed at the same time every night, avoiding screens in the last hour and keeping the bedroom dark and cool. These habits help the body to fall asleep faster and to stay asleep longer."
+  },
+  {
+   "v": "Which sentence in the sleep text can be left out of a summary?",
+   "o": [
+    "the best amount of sleep differs from person to person",
+    "experts advise going to bed at the same time every night",
+    "quality matters more than the number of hours",
+    "the example of the person who wakes often"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Een voorbeeld bij een bewering kun je weglaten.",
+   "uo": [
+    "Koos je \"the best amount of sleep differs from person to...\"? Dan denk je dat dit wegmag. Dit is de hoofdgedachte, dus erin.",
+    "Koos je \"experts advise going to bed at the same time every...\"? Dan denk je dat dit wegmag. Dit is het advies, dus erin.",
+    "Koos je \"quality matters more than the number of hours\"? Dan denk je dat dit wegmag. Dit is een hoofdpunt, dus erin.",
+    "Klopt: dit is een voorbeeld bij de bewering over kwaliteit, geen hoofdpunt."
+   ],
+   "uh": "Voorbeeld weg.",
+   "ctx": "Many people think that sleeping eight hours is the only healthy choice. Yet researchers have found that the best amount of sleep differs from person to person. Some adults feel fine on seven hours, while others need nine. What matters more than the number is the quality: a person who wakes up often will not rest well, even after ten hours in bed. Experts therefore advise going to bed at the same time every night, avoiding screens in the last hour and keeping the bedroom dark and cool. These habits help the body to fall asleep faster and to stay asleep longer."
+  },
+  {
+   "v": "Which is the best paraphrase of \"avoiding screens in the last hour\"?",
+   "o": [
+    "not using phones or tablets just before bed",
+    "turning off all the lights in the house all day long",
+    "watching television for a whole hour",
+    "sleeping for one hour with the screen on"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Avoiding = vermijden: parafraseer met niet gebruiken.",
+   "uo": [
+    "Klopt: screens zijn telefoons en tablets, en de laatste uur is vlak voor het slapen.",
+    "Koos je \"turning off all the lights in the house all day long\"? Dan denk je dat het om licht gaat. Het gaat om schermen, niet om alle lampen.",
+    "Koos je \"watching television for a whole hour\"? Dan denk je dat het kijken juist moet. De tekst adviseert het te vermijden, dus niet kijken.",
+    "Koos je \"sleeping for one hour with the screen on\"? Dan denk je dat het slapen met scherm is. De tekst adviseert geen schermen, dus niet."
+   ],
+   "uh": "Geen schermen.",
+   "ctx": "Many people think that sleeping eight hours is the only healthy choice. Yet researchers have found that the best amount of sleep differs from person to person. Some adults feel fine on seven hours, while others need nine. What matters more than the number is the quality: a person who wakes up often will not rest well, even after ten hours in bed. Experts therefore advise going to bed at the same time every night, avoiding screens in the last hour and keeping the bedroom dark and cool. These habits help the body to fall asleep faster and to stay asleep longer."
+  },
+  {
+   "v": "What is the relation between the first and the second sentence of the sleep text?",
+   "o": [
+    "the second sentence gives an example of the first",
+    "a common belief is corrected",
+    "the second sentence gives the cause of the first",
+    "the second sentence repeats the first"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Yet tussen twee zinnen geeft een correctie of tegenstelling.",
+   "uo": [
+    "Koos je \"the second sentence gives an example of the first\"? Dan denk je dat de zin een voorbeeld is. Een voorbeeld begint met for example, yet corrigeert juist wat de eerste zin zegt.",
+    "Klopt: yet toont een tegenstelling waarmee de gangbare opvatting wordt gecorrigeerd.",
+    "Koos je \"the second sentence gives the cause of the first\"? Dan denk je dat de zin een oorzaak geeft. Een oorzaak begint met because, yet zet de tweede zin tegenover de eerste.",
+    "Koos je \"the second sentence repeats the first\"? Dan denk je dat de zin hetzelfde nog eens zegt. Yet verandert juist de boodschap, het is een correctie."
+   ],
+   "uh": "Yet: correctie.",
+   "ctx": "Many people think that sleeping eight hours is the only healthy choice. Yet researchers have found that the best amount of sleep differs from person to person. Some adults feel fine on seven hours, while others need nine. What matters more than the number is the quality: a person who wakes up often will not rest well, even after ten hours in bed. Experts therefore advise going to bed at the same time every night, avoiding screens in the last hour and keeping the bedroom dark and cool. These habits help the body to fall asleep faster and to stay asleep longer."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Cycling to school is good for teenagers in many ways. First of all, it keeps them fit: a daily ride of twenty minutes is enough to improve their health. Second, cycling is cheaper than taking the bus or being driven by parents. Third, students who cycle often arrive more awake and focused in the first lesson. Of course, bad weather and busy roads can be a problem, but good clothes and safe cycle paths solve most of these difficulties. Some schools therefore offer bicycle storage, repair workshops and cycling lessons. In short, cycling to school helps pupils' health, wallet and concentration.",
+   "v": "Write a summary of the cycling text in one sentence.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een zin met de drie hoofdpunten, zoals \"Cycling to school improves pupils' health, saves money and helps them concentrate\" (2p). Zonder details zoals reparatieworkshops (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history.",
+   "v": "Name two details you can leave out of a summary of the Marken text and explain why.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld de groene houten huizen en het museum (1p per detail, max. 2p). Het zijn details die niet nodig zijn voor de hoofdlijn: van eiland naar toeristenplaats met voor- en nadelen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Many people think that sleeping eight hours is the only healthy choice. Yet researchers have found that the best amount of sleep differs from person to person. Some adults feel fine on seven hours, while others need nine. What matters more than the number is the quality: a person who wakes up often will not rest well, even after ten hours in bed. Experts therefore advise going to bed at the same time every night, avoiding screens in the last hour and keeping the bedroom dark and cool. These habits help the body to fall asleep faster and to stay asleep longer.",
+   "v": "Paraphrase \"avoiding screens in the last hour\" and \"keeping the bedroom dark and cool\".",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Not using phones or tablets just before bed (1p). Making sure the bedroom is not light or hot (1p). Je gebruikt andere woorden en houdt de betekenis gelijk (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Some people say that homework is useless. However, a recent study of 3,000 students found that those who did thirty minutes a day scored higher in tests. Teachers add that homework teaches students to plan their time. Homework is therefore worth keeping, but it should not be too long.",
+   "v": "Which detail can you leave out and what is the main point of the text?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het detail is het aantal van 3.000 leerlingen of de dertig minuten (1p). Het hoofdpunt is dat huiswerk waardevol is maar niet te lang moet zijn (1p). Therefore laat de conclusie zien (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "The Dutch village of Marken used to be an island. Until 1957 it could only be reached by boat, and its inhabitants lived mainly from fishing. After a dam was built, the village became a popular place for tourists, who come to admire the green wooden houses on small hills. Some residents welcome the visitors, because they bring money to local shops. Others complain that the village has lost its quiet atmosphere and that house prices have risen so much that young people can no longer afford to stay. The municipality now limits the number of tourist buses and has opened a museum to teach visitors about the island's history.",
+   "v": "Write a one-sentence summary of the text about Marken.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Marken veranderde van een eiland van vissers in een toeristenplaats en de gemeente probeert de nadelen te beperken (3p: verandering, voor- en nadelen, maatregelen; 1p per onderdeel)."
+  }
+ ]
+}

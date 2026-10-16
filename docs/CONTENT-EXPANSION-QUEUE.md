@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **46 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7). Werk dit getal bij bij elke afronding.
+> Voortgang: **47 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -85,7 +85,7 @@
   - [x] A6 · en.A.6 Conditionals (type 1, 2 en 3) · 27 vragen (R1 7, R2 10, R3 10, 17 met tekst), 12 begrippen, 4 figuren (drie types, tijdlijn, unless en in case, keuzeschema), geen clip
   - [x] A7 · en.A.7 Passief en actief · 27 vragen (R1 7, R2 10, R3 10, 17 met tekst), 12 begrippen, 4 figuren (tijden, actief naar passief, wanneer passief, fouten), geen clip
   - [x] A8 · en.A.8 Zinsbouw, verbindingswoorden en formeel tegenover informeel · 27 vragen (R1 7, R2 10, R3 10, 17 met tekst), 12 begrippen, 4 figuren (woordvolgorde, voegwoorden, relatieve bijzinnen, formeel en informeel), geen clip
-- [ ] **HAVO · Engels** (`en`) · domein B — Leesvaardigheid
+- [x] **HAVO · Engels** (`en`) · domein B — Leesvaardigheid (8 van 8 leerdoelen op v2)
   - [x] B1 · en.B.1 Relevante informatie vinden (scannen en skimmen) · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 690-700 tekens), 12 begrippen, 4 figuren (skimmen en scannen, details, voorwaarden, kiezen), geen clip
   - [x] B2 · en.B.2 De hoofdgedachte van een tekst aangeven · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 670-730 tekens), 12 begrippen, 4 figuren (piramide, plaatsen, breed en smal, signaalwoorden), geen clip
   - [x] B3 · en.B.3 De betekenis van woorden en zinsdelen in een tekst · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 670-730 tekens), 12 begrippen, 4 figuren (context, letterlijk tegenover figuurlijk, verwijswoorden, parafrase), geen clip
@@ -93,7 +93,7 @@
   - [x] B5 · en.B.5 Conclusies trekken over de bedoeling en de opvatting van de schrijver · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 600-650 tekens), 12 begrippen, 4 figuren (doel, woordkeuze, expliciet en impliciet, aanwijzingen), geen clip
   - [x] B6 · en.B.6 Feiten, meningen en argumenten onderscheiden · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 580-660 tekens), 12 begrippen, 4 figuren (feit en mening, standpunt en argumenten, kracht van bewijs, tegenargument), geen clip
   - [x] B7 · en.B.7 Brieven en e-mails lezen · 27 vragen (R1 7, R2 10, R3 10, 3 eigen brieven van 570-630 tekens), 12 begrippen, 4 figuren (opbouw van een brief, formeel en informeel, signalen, details), geen clip
-  - [ ] B8 · en.B.8 Een tekst samenvatten en parafraseren
+  - [x] B8 · en.B.8 Een tekst samenvatten en parafraseren · 27 vragen (R1 7, R2 10, R3 10, 3 eigen leesteksten van 565-630 tekens), 12 begrippen, 4 figuren (trechter, blijft en vervalt, parafrase, beoordelen), geen clip
 - [ ] **HAVO · Engels** (`en`) · domein C — Kijk- en luistervaardigheid
 - [ ] **HAVO · Engels** (`en`) · domein D — Gespreksvaardigheid
 - [ ] **HAVO · Engels** (`en`) · domein E — Schrijfvaardigheid
