@@ -111517,6 +111517,692 @@ var VAKKEN = [
         "u": "Een heel klein bedrag vergeleken met wat nodig is (1p). Aanwijzingen: only, two euros per year en far too little (2p voor twee goede aanwijzingen)."
        }
       ]
+     },
+     {
+      "id": "B4",
+      "lo": "en.B.4",
+      "gs": 2,
+      "naam": "Relaties tussen tekstdelen herkennen",
+      "beschrijving": "Je leert te zien hoe zinnen en alinea's in een Engelse tekst met elkaar samenhangen: oorzaak en gevolg, tegenstelling, voorbeeld, toevoeging, doel en volgorde in de tijd, en hoe de tekst is opgebouwd.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Oorzaak en gevolg",
+       "Tegenstelling en concessie",
+       "Voorbeeld en toevoeging",
+       "Doel en functie van een zin",
+       "Volgorde en tekststructuur"
+      ],
+      "sam": "Zinnen en alinea's hangen samen via relaties: oorzaak en gevolg (because, as a result, therefore), tegenstelling (but, however, although, whereas, in contrast), voorbeeld (for example), toevoeging (also, in addition), doel (to plus werkwoord) en volgorde (first, after that, meanwhile, finally). Signaalwoorden laten zien welke relatie bedoeld is. Een tekst heeft vaak een structuur zoals probleem-oplossing, vergelijking of volgorde in de tijd. Bij although en whereas ligt de nadruk op de hoofdzin.",
+      "begrippen": [
+       {
+        "t": "Relatie",
+        "d": "Het verband tussen twee zinnen of tekstdelen, zoals oorzaak en gevolg."
+       },
+       {
+        "t": "Signaalwoord",
+        "d": "Een woord dat een relatie aangeeft, zoals because of however."
+       },
+       {
+        "t": "Oorzaak en gevolg",
+        "d": "Een relatie waarbij het ene het resultaat van het andere is."
+       },
+       {
+        "t": "Tegenstelling",
+        "d": "Een relatie waarbij twee dingen tegenover elkaar staan."
+       },
+       {
+        "t": "Concessie",
+        "d": "Een bezwaar dat de schrijver erkent met although, waarna de hoofdzin telt."
+       },
+       {
+        "t": "Voorbeeld",
+        "d": "Een geval dat een bewering illustreert, ingeleid door for example."
+       },
+       {
+        "t": "Toevoeging",
+        "d": "Iets wat bij het vorige komt, ingeleid door also of in addition."
+       },
+       {
+        "t": "Doel",
+        "d": "Waarom iets gebeurt, vaak uitgedrukt met to plus werkwoord."
+       },
+       {
+        "t": "Volgorde in de tijd",
+        "d": "De stappen na elkaar met first, after that, meanwhile en finally."
+       },
+       {
+        "t": "Conclusie",
+        "d": "Een uitkomst, vaak ingeleid door therefore of that is why."
+       },
+       {
+        "t": "Probleem en oplossing",
+        "d": "Een tekststructuur die met een probleem begint en een oplossing noemt."
+       },
+       {
+        "t": "Tekststructuur",
+        "d": "De manier waarop een tekst is opgebouwd."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which word shows a cause-and-effect relation between two sentences?",
+        "o": [
+         "however",
+         "because",
+         "for example",
+         "meanwhile"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 0,
+        "u": "Because en so geven oorzaak en gevolg aan.",
+        "uo": [
+         "Koos je \"however\"? Dan denk je dat however een oorzaak geeft. Het zet twee zinnen tegenover elkaar, dat is een contrast.",
+         "Klopt: because geeft de reden of oorzaak van iets aan.",
+         "Koos je \"for example\"? Dan denk je dat for example een oorzaak geeft. Het introduceert een voorbeeld, dat is geen reden.",
+         "Koos je \"meanwhile\"? Dan denk je dat meanwhile een oorzaak geeft. Het zegt dat iets tegelijk gebeurt, dat is gelijktijdigheid."
+        ],
+        "uh": "Oorzaak en gevolg."
+       },
+       {
+        "v": "Which word shows a contrast between two parts of a text?",
+        "o": [
+         "therefore",
+         "finally",
+         "such as",
+         "whereas"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Whereas, however en but geven een contrast.",
+        "uo": [
+         "Koos je \"therefore\"? Dan denk je dat therefore twee dingen tegenover elkaar zet. Het trekt een conclusie uit het voorgaande, het toont geen tegenstelling.",
+         "Koos je \"finally\"? Dan denk je dat finally een tegenstelling aangeeft. Het hoort bij een reeks stappen en markeert de laatste, niet een contrast.",
+         "Koos je \"such as\"? Dan denk je dat such as twee dingen tegenover elkaar zet. Het opent een lijstje voorbeelden, en zegt niets over een tegenstelling.",
+         "Klopt: whereas zet twee dingen tegenover elkaar, zoals in \"A is groot, whereas B klein is\"."
+        ],
+        "uh": "Contrast: whereas."
+       },
+       {
+        "v": "What does \"for example\" introduce in a text?",
+        "o": [
+         "a case that illustrates what was said before",
+         "the opposite of what was said before",
+         "a reason for what comes next",
+         "the end of the text and also a conclusion about it"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "For example en such as openen een voorbeeld.",
+        "uo": [
+         "Klopt: for example opent een voorbeeld dat een eerdere bewering illustreert.",
+         "Koos je \"the opposite of what was said before\"? Dan denk je dat for example een tegenstelling opent. Dat doet however, for example geeft een voorbeeld.",
+         "Koos je \"a reason for what comes next\"? Dan denk je dat het een reden geeft. Dat doet because, for example geeft een voorbeeld.",
+         "Koos je \"the end of the text and also a conclusion about it\"? Dan denk je dat het de afsluiting opent. Dat doet therefore, for example geeft een voorbeeld."
+        ],
+        "uh": "Voorbeeld."
+       },
+       {
+        "v": "Why did swans and ducks become ill?",
+        "o": [
+         "they were fed bread by visitors",
+         "the river was too warm in summer",
+         "they swallowed pieces of plastic",
+         "the council had cut the grass too short"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Zoek de oorzaak bij as a result.",
+        "uo": [
+         "Koos je \"they were fed bread by visitors\"? Dan denk je dat brood de oorzaak is. Dat staat er niet, de tekst noemt plastic.",
+         "Koos je \"the river was too warm in summer\"? Dan denk je dat de zomerwarmte de oorzaak is. Daar staat niets over, plastic is de oorzaak.",
+         "Klopt: de zin met as a result noemt dat de vogels plastic doorslikten en ziek werden.",
+         "Koos je \"the council had cut the grass too short\"? Dan denk je dat de gemeente iets deed. Dat staat er niet, plastic veroorzaakte het."
+        ],
+        "uh": "Oorzaak: plastic.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "What is the example in the text about?",
+        "o": [
+         "shoppers who return their empty bottles to a machine",
+         "people who complained about the queues",
+         "volunteers who find fewer bottles on the riverbank",
+         "the council that introduced a deposit"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 2,
+        "u": "Het voorbeeld staat na for example.",
+        "uo": [
+         "Koos je \"shoppers who return their empty bottles to a machine\"? Dan denk je dat dit het voorbeeld is. Dat is de beschrijving van het systeem, niet het bewijs van succes.",
+         "Koos je \"people who complained about the queues\"? Dan denk je dat het voorbeeld klachten zijn. De klachten staan in de bijzin met although, niet in het voorbeeld.",
+         "Klopt: for example opent het voorbeeld van vrijwilligers die minder flessen vinden.",
+         "Koos je \"the council that introduced a deposit\"? Dan denk je dat het voorbeeld de gemeente is. De gemeente voerde het systeem in, het voorbeeld is het resultaat."
+        ],
+        "uh": "Na for example.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "What do \"On the one hand\" and \"On the other hand\" show?",
+        "o": [
+         "the advantages and the disadvantages",
+         "the time of day for working",
+         "a list of equal examples",
+         "the cause and the result of working from home"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 1,
+        "u": "On the one hand en on the other hand zetten twee kanten tegenover elkaar.",
+        "uo": [
+         "Klopt: de uitdrukkingen zetten voordelen en nadelen van thuiswerken tegenover elkaar.",
+         "Koos je \"the time of day for working\"? Dan denk je dat ze een tijd aangeven. Het zijn signalen voor een contrast, niet voor tijd.",
+         "Koos je \"a list of equal examples\"? Dan denk je dat ze een opsomming starten. Ze zetten juist twee kanten tegenover elkaar, dat is geen opsomming.",
+         "Koos je \"the cause and the result of working from home\"? Dan denk je dat ze oorzaak en gevolg geven. Ze tonen twee kanten, geen oorzaak."
+        ],
+        "uh": "Twee kanten.",
+        "ctx": "Working from home has become normal for millions of employees. On the one hand, it saves time and money, because nobody has to travel to the office every morning. Workers can also organise their day more freely, which many say makes them more productive. On the other hand, home workers sometimes feel lonely, and it is harder to separate work from free time. In contrast, offices offer a social atmosphere, but they also bring noise and long journeys. That is why a growing number of companies choose a mixture: two days at home and three in the office. Whereas managers used to fear that staff at home would do less, many now admit that results have hardly changed."
+       },
+       {
+        "v": "What must candidates do first according to the text?",
+        "o": [
+         "put up posters in the school hall and corridors",
+         "give a speech to the headteacher",
+         "vote online on a single afternoon",
+         "hand in a short plan and collect signatures"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 4,
+        "u": "Volgorde in de tijd: first, after that, finally.",
+        "uo": [
+         "Koos je \"put up posters in the school hall and corridors\"? Dan denk je dat posters de eerste stap zijn. Die komen in de campagne, na de eerste stap.",
+         "Koos je \"give a speech to the headteacher\"? Dan denk je dat de speech de eerste stap is. Die komt tijdens de campagne, en niet voor de directeur.",
+         "Koos je \"vote online on a single afternoon\"? Dan denk je dat stemmen eerst komt. Het komt na de campagne, dus niet de eerste stap.",
+         "Klopt: de eerste stap is een plan inleveren en twintig handtekeningen verzamelen."
+        ],
+        "uh": "First: plan.",
+        "ctx": "The student council election at Hillside School begins in September. First, candidates hand in a short plan and collect twenty signatures from classmates. After that, a two-week campaign starts, during which candidates put up posters and give a speech in the hall. Meanwhile, the media class interviews each candidate for the school website. Once the campaign is over, all students vote online on a single afternoon. Finally, the results are announced the next morning, and the winners meet the headteacher within a week. Because the process is so clear, almost every student takes part, and last year the turnout was higher than ever."
+       },
+       {
+        "v": "What does \"As a result\" connect in the text?",
+        "o": [
+         "the council and the supermarket in the town",
+         "plastic bottles in the river and ill birds",
+         "the deposit and the returned money",
+         "the volunteers and the cleaned riverbank"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "As a result geeft het gevolg van de zin ervoor.",
+        "uo": [
+         "Koos je \"the council and the supermarket in the town\"? Dan denk je dat het om instanties gaat. As a result verbindt een oorzaak en een gevolg, geen instanties.",
+         "Klopt: as a result verbindt de oorzaak (flessen) met het gevolg (zieke vogels).",
+         "Koos je \"the deposit and the returned money\"? Dan denk je dat het om het statiegeld gaat. Dat komt later in de tekst, as a result verwijst naar vogels.",
+         "Koos je \"the volunteers and the cleaned riverbank\"? Dan denk je dat het om vrijwilligers gaat. Zij komen later voor, as a result verbindt oorzaak en gevolg."
+        ],
+        "uh": "As a result: gevolg.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "What is the purpose of the deposit of 25 cents?",
+        "o": [
+         "to pay for the work of the volunteers",
+         "to make plastic bottles cheaper to buy",
+         "to punish shoppers who forget to return their bottles",
+         "to tackle the problem of the bottles in the river"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "To plus werkwoord geeft vaak het doel aan.",
+        "uo": [
+         "Koos je \"to pay for the work of the volunteers\"? Dan denk je dat het geld voor vrijwilligers is. Dat staat er niet, het doel is het probleem aanpakken.",
+         "Koos je \"to make plastic bottles cheaper to buy\"? Dan denk je dat flessen goedkoper worden. Het statiegeld is een extra bedrag, dus niet goedkoper.",
+         "Koos je \"to punish shoppers who forget to return their...\"? Dan denk je dat het een straf is. Het is een terugkrijgbare borg, geen straf.",
+         "Klopt: \"To tackle the problem\" geeft het doel van het statiegeld."
+        ],
+        "uh": "Doel: to tackle.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "What does \"Although some people complained\" show?",
+        "o": [
+         "the system failed in the end",
+         "a problem that was smaller than the success",
+         "the complaints were completely right about the system",
+         "the complaints caused the success"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Although noemt een bezwaar waar de hoofdzin tegenin gaat.",
+        "uo": [
+         "Koos je \"the system failed in the end\"? Dan denk je dat het systeem mislukte. De hoofdzin zegt het tegendeel, het was een succes.",
+         "Klopt: although noemt een bezwaar, maar de hoofdzin legt de nadruk op het succes.",
+         "Koos je \"the complaints were completely right about the...\"? Dan denk je dat de klagers gelijk hadden. De zin geeft hen geen gelijk, het succes weegt zwaarder.",
+         "Koos je \"the complaints caused the success\"? Dan denk je dat de klachten het succes veroorzaakten. Although geeft een tegenstelling, geen oorzaak."
+        ],
+        "uh": "Although: concessie.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "What is the function of \"For example, volunteers ... collected far fewer bottles\"?",
+        "o": [
+         "it gives the main idea of the text",
+         "it describes how the machine in the shop works",
+         "it gives proof that the system works",
+         "it introduces a new problem"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 2,
+        "u": "Een voorbeeld ondersteunt een eerdere bewering.",
+        "uo": [
+         "Koos je \"it gives the main idea of the text\"? Dan denk je dat het de hoofdgedachte is. Het is een voorbeeld, een bewijs voor het succes.",
+         "Koos je \"it describes how the machine in the shop works\"? Dan denk je dat het over de machine gaat. Dat staat in een eerdere zin, dit is bewijs.",
+         "Klopt: het voorbeeld ondersteunt de bewering dat het systeem een succes was.",
+         "Koos je \"it introduces a new problem\"? Dan denk je dat er een nieuw probleem komt. Het geeft een positief resultaat, geen probleem."
+        ],
+        "uh": "Voorbeeld = bewijs.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "Why do many residents want to extend the deposit?",
+        "o": [
+         "because the system has worked well so far",
+         "because there are still many bottles in the river",
+         "because the council ordered it",
+         "because the queues were too long"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 0,
+        "u": "Therefore geeft een gevolgtrekking uit de zin ervoor.",
+        "uo": [
+         "Klopt: therefore verwijst naar het succes van het systeem als reden.",
+         "Koos je \"because there are still many bottles in the river\"? Dan denk je dat er nog veel flessen zijn. De tekst zegt dat er minder zijn, het succes is de reden.",
+         "Koos je \"because the council ordered it\"? Dan denk je dat de gemeente het beveelt. De inwoners willen het zelf, vanwege het succes.",
+         "Koos je \"because the queues were too long\"? Dan denk je dat de rijen de reden zijn. De rijen waren een klacht, de reden is het succes."
+        ],
+        "uh": "Therefore: gevolg.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "What does \"In contrast\" introduce?",
+        "o": [
+         "a comparison with the situation at the office",
+         "an example of working at home",
+         "a result of working at home for such a long time",
+         "a repeat of the first sentence"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "In contrast en on the other hand geven een contrast.",
+        "uo": [
+         "Klopt: in contrast zet het kantoor tegenover thuiswerken.",
+         "Koos je \"an example of working at home\"? Dan denk je dat het een voorbeeld introduceert. Een voorbeeld begint met for example, maar in contrast zet het kantoor tegenover thuis.",
+         "Koos je \"a result of working at home for such a long time\"? Dan denk je dat het een gevolg introduceert. Een gevolg krijg je met as a result, in contrast zet twee situaties naast elkaar.",
+         "Koos je \"a repeat of the first sentence\"? Dan denk je dat de zin de opening herhaalt. Hij brengt juist de andere kant, het kantoor."
+        ],
+        "uh": "Contrast.",
+        "ctx": "Working from home has become normal for millions of employees. On the one hand, it saves time and money, because nobody has to travel to the office every morning. Workers can also organise their day more freely, which many say makes them more productive. On the other hand, home workers sometimes feel lonely, and it is harder to separate work from free time. In contrast, offices offer a social atmosphere, but they also bring noise and long journeys. That is why a growing number of companies choose a mixture: two days at home and three in the office. Whereas managers used to fear that staff at home would do less, many now admit that results have hardly changed."
+       },
+       {
+        "v": "What does \"whereas\" show in the last sentence?",
+        "o": [
+         "a reason for the managers' fear of working at home",
+         "an example of the managers' fear",
+         "a contrast between the old fear and the new view",
+         "the result of the managers' fear"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Whereas zet twee dingen tegenover elkaar.",
+        "uo": [
+         "Koos je \"a reason for the managers' fear of working at home\"? Dan denk je dat whereas een reden geeft. Een reden begint met because, whereas zet de oude angst tegenover de nieuwe mening.",
+         "Koos je \"an example of the managers' fear\"? Dan denk je dat whereas een voorbeeld geeft. Een voorbeeld begint met for example, whereas laat twee tijden naast elkaar zien.",
+         "Klopt: whereas zet de angst van vroeger tegenover wat managers nu zeggen.",
+         "Koos je \"the result of the managers' fear\"? Dan denk je dat whereas een gevolg geeft. Een gevolg begint met so of as a result, whereas stelt tegenover."
+        ],
+        "uh": "Whereas: contrast.",
+        "ctx": "Working from home has become normal for millions of employees. On the one hand, it saves time and money, because nobody has to travel to the office every morning. Workers can also organise their day more freely, which many say makes them more productive. On the other hand, home workers sometimes feel lonely, and it is harder to separate work from free time. In contrast, offices offer a social atmosphere, but they also bring noise and long journeys. That is why a growing number of companies choose a mixture: two days at home and three in the office. Whereas managers used to fear that staff at home would do less, many now admit that results have hardly changed."
+       },
+       {
+        "v": "Why do many companies choose a mixture of home and office?",
+        "o": [
+         "all workers live very far from the office in town",
+         "both ways have advantages and disadvantages",
+         "managers want to work less at home",
+         "offices are always empty on Mondays"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "That is why leidt een conclusie in.",
+        "uo": [
+         "Koos je \"all workers live very far from the office in town\"? Dan denk je dat het om afstand gaat. Dat staat er niet, de reden zijn voor- en nadelen.",
+         "Klopt: \"That is why\" geeft de conclusie uit de voor- en nadelen van beide manieren.",
+         "Koos je \"managers want to work less at home\"? Dan denk je dat managers minder willen werken. Daar staat niets over, het gaat om beide kanten.",
+         "Koos je \"offices are always empty on Mondays\"? Dan denk je dat kantoren leeg zijn. Dat staat nergens, het gaat om voor- en nadelen."
+        ],
+        "uh": "That is why: conclusie.",
+        "ctx": "Working from home has become normal for millions of employees. On the one hand, it saves time and money, because nobody has to travel to the office every morning. Workers can also organise their day more freely, which many say makes them more productive. On the other hand, home workers sometimes feel lonely, and it is harder to separate work from free time. In contrast, offices offer a social atmosphere, but they also bring noise and long journeys. That is why a growing number of companies choose a mixture: two days at home and three in the office. Whereas managers used to fear that staff at home would do less, many now admit that results have hardly changed."
+       },
+       {
+        "v": "What is the correct order of the steps in the election?",
+        "o": [
+         "campaign, plan, then the results, then the vote",
+         "vote, plan, campaign, results",
+         "results, vote, campaign, plan",
+         "plan, campaign, vote, results"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Zoek de volgorde met first, after that en finally.",
+        "uo": [
+         "Koos je \"campaign, plan, then the results, then the vote\"? Dan denk je dat de campagne eerst komt. Een kandidaat heeft eerst een plan nodig om mee te doen, dus de campagne kan niet vooraf gaan.",
+         "Koos je \"vote, plan, campaign, results\"? Dan denk je dat stemmen eerst gebeurt. Stemmen kan pas als de campagne voorbij is (once the campaign is over), dus later.",
+         "Koos je \"results, vote, campaign, plan\"? Dan denk je dat de uitslag eerst komt. De uitslag volgt de volgende ochtend na het stemmen (finally), niet ervoor.",
+         "Klopt: eerst het plan, dan de campagne, daarna het stemmen en tot slot de uitslag."
+        ],
+        "uh": "Volgorde in de tijd.",
+        "ctx": "The student council election at Hillside School begins in September. First, candidates hand in a short plan and collect twenty signatures from classmates. After that, a two-week campaign starts, during which candidates put up posters and give a speech in the hall. Meanwhile, the media class interviews each candidate for the school website. Once the campaign is over, all students vote online on a single afternoon. Finally, the results are announced the next morning, and the winners meet the headteacher within a week. Because the process is so clear, almost every student takes part, and last year the turnout was higher than ever."
+       },
+       {
+        "v": "Why does almost every student take part in the election?",
+        "o": [
+         "the winners meet the headteacher",
+         "the process is so clear",
+         "the election takes two weeks",
+         "the media class interviews all students"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Because leidt de reden in.",
+        "uo": [
+         "Koos je \"the winners meet the headteacher\"? Dan denk je dat de ontmoeting de reden is. Dat gebeurt na de uitslag, het gaat om de duidelijkheid.",
+         "Klopt: because geeft de reden: het proces is duidelijk.",
+         "Koos je \"the election takes two weeks\"? Dan denk je dat de lengte de reden is. Dat noemt de tekst niet als reden, het gaat om duidelijkheid.",
+         "Koos je \"the media class interviews all students\"? Dan denk je dat alle leerlingen worden geïnterviewd. De klas interviewt kandidaten, geen leerlingen."
+        ],
+        "uh": "Because: reden.",
+        "ctx": "The student council election at Hillside School begins in September. First, candidates hand in a short plan and collect twenty signatures from classmates. After that, a two-week campaign starts, during which candidates put up posters and give a speech in the hall. Meanwhile, the media class interviews each candidate for the school website. Once the campaign is over, all students vote online on a single afternoon. Finally, the results are announced the next morning, and the winners meet the headteacher within a week. Because the process is so clear, almost every student takes part, and last year the turnout was higher than ever."
+       },
+       {
+        "v": "What is the function of the second sentence of the text?",
+        "o": [
+         "it gives a consequence of the first sentence",
+         "it gives an example of the first sentence",
+         "it contrasts with the first sentence",
+         "it repeats the first sentence in slightly other words"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "As a result introduceert een gevolg.",
+        "uo": [
+         "Klopt: as a result noemt een gevolg van de eerste zin.",
+         "Koos je \"it gives an example of the first sentence\"? Dan denk je dat de zin een voorbeeld is. As a result geeft een gevolg, geen voorbeeld.",
+         "Koos je \"it contrasts with the first sentence\"? Dan denk je dat er een contrast is. As a result geeft een gevolg, geen tegenstelling.",
+         "Koos je \"it repeats the first sentence in slightly other...\"? Dan denk je dat de zin herhaalt. De zin brengt iets nieuws, een gevolg."
+        ],
+        "uh": "As a result: gevolg.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "How is the text structured?",
+        "o": [
+         "a story about one town told in time order",
+         "a comparison of two towns",
+         "a list of different opinions",
+         "problem, solution, result, advice"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Problem-solution: probleem, oplossing, resultaat.",
+        "uo": [
+         "Koos je \"a story about one town told in time order\"? Dan denk je dat het een verhaal is. De zinnen volgen niet alleen de tijd, het is een probleem en oplossing.",
+         "Koos je \"a comparison of two towns\"? Dan denk je dat twee steden worden vergeleken. Er is maar een stad, het is probleem en oplossing.",
+         "Koos je \"a list of different opinions\"? Dan denk je dat het een lijst met meningen is. Het zijn feiten en gevolgen, geen meningen.",
+         "Klopt: de tekst begint met een probleem, noemt de oplossing, het resultaat en eindigt met een wens."
+        ],
+        "uh": "Probleem en oplossing.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "Which part is more important for the writer: the complaints or the success?",
+        "o": [
+         "the complaints, because they come first in the sentence",
+         "both are equally important",
+         "the success, because it follows \"although\"",
+         "neither, the sentence is only a detail"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 1,
+        "u": "Bij although staat de nadruk op de hoofdzin.",
+        "uo": [
+         "Koos je \"the complaints, because they come first in the...\"? Dan denk je dat het eerste het belangrijkste is. Although opent een bezwaar, de hoofdzin telt zwaarder.",
+         "Koos je \"both are equally important\"? Dan denk je dat ze gelijk zijn. Although geeft een ongelijke verhouding, het succes weegt zwaarder.",
+         "Klopt: wat na although in de hoofdzin staat is het punt van de schrijver.",
+         "Koos je \"neither, the sentence is only a detail\"? Dan denk je dat de zin een detail is. De zin brengt een conclusie, het succes is de kern."
+        ],
+        "uh": "Hoofdzin telt.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "What does \"therefore\" in the last sentence connect to?",
+        "o": [
+         "the queues and the complaints",
+         "the first problem of the plastic bottles in the river",
+         "the success of the system and the residents' wish",
+         "the money returned to shoppers"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 0,
+        "u": "Therefore verwijst naar de zin ervoor.",
+        "uo": [
+         "Koos je \"the queues and the complaints\"? Dan denk je dat therefore naar de klachten verwijst. Die staan in de bijzin met although, therefore verwijst naar het succes.",
+         "Koos je \"the first problem of the plastic bottles in the...\"? Dan denk je dat therefore naar het probleem verwijst. Dat staat veel eerder, therefore verwijst naar het succes.",
+         "Klopt: therefore verbindt het succes van het systeem met de wens om het uit te breiden.",
+         "Koos je \"the money returned to shoppers\"? Dan denk je dat therefore naar het teruggegeven geld verwijst. Dat is de werking, therefore verwijst naar het resultaat."
+        ],
+        "uh": "Therefore: succes.",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well."
+       },
+       {
+        "v": "What is the function of \"That is why a growing number of companies choose a mixture\"?",
+        "o": [
+         "it gives a new example of working at home",
+         "it introduces a new disadvantage",
+         "it repeats the first sentence of the text",
+         "it draws a conclusion from both sides"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "That is why leidt een conclusie in.",
+        "uo": [
+         "Koos je \"it gives a new example of working at home\"? Dan denk je dat de zin een voorbeeld is. Het is een conclusie, geen voorbeeld.",
+         "Koos je \"it introduces a new disadvantage\"? Dan denk je dat er een nadeel komt. De zin leidt een conclusie in, dus geen nadeel.",
+         "Koos je \"it repeats the first sentence of the text\"? Dan denk je dat de zin de opening herhaalt. De zin trekt een conclusie, dat is anders.",
+         "Klopt: that is why leidt een conclusie in uit het voorgaande."
+        ],
+        "uh": "Conclusie.",
+        "ctx": "Working from home has become normal for millions of employees. On the one hand, it saves time and money, because nobody has to travel to the office every morning. Workers can also organise their day more freely, which many say makes them more productive. On the other hand, home workers sometimes feel lonely, and it is harder to separate work from free time. In contrast, offices offer a social atmosphere, but they also bring noise and long journeys. That is why a growing number of companies choose a mixture: two days at home and three in the office. Whereas managers used to fear that staff at home would do less, many now admit that results have hardly changed."
+       },
+       {
+        "v": "What is the function of \"Workers can also organise their day more freely\"?",
+        "o": [
+         "it adds another advantage of working at home",
+         "it gives a disadvantage of working at home",
+         "it gives the final conclusion of the whole text",
+         "it repeats the first sentence in other words"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "Also en moreover voegen iets toe.",
+        "uo": [
+         "Klopt: also voegt een tweede voordeel toe aan het eerste.",
+         "Koos je \"it gives a disadvantage of working at home\"? Dan denk je dat het een nadeel is. Het is een voordeel, dus een toevoeging.",
+         "Koos je \"it gives the final conclusion of the whole text\"? Dan denk je dat het de conclusie is. De conclusie staat later, dit is een toevoeging.",
+         "Koos je \"it repeats the first sentence in other words\"? Dan denk je dat het de eerste zin herhaalt. Het voegt iets nieuws toe, een tweede voordeel."
+        ],
+        "uh": "Also: toevoegen.",
+        "ctx": "Working from home has become normal for millions of employees. On the one hand, it saves time and money, because nobody has to travel to the office every morning. Workers can also organise their day more freely, which many say makes them more productive. On the other hand, home workers sometimes feel lonely, and it is harder to separate work from free time. In contrast, offices offer a social atmosphere, but they also bring noise and long journeys. That is why a growing number of companies choose a mixture: two days at home and three in the office. Whereas managers used to fear that staff at home would do less, many now admit that results have hardly changed."
+       },
+       {
+        "v": "How is the text structured?",
+        "o": [
+         "a problem followed by a solution",
+         "two sides compared, then a conclusion",
+         "events told in the order of time",
+         "a list of unrelated opinions from experts"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 4,
+        "u": "Vergelijkingstekst: twee kanten, dan een conclusie.",
+        "uo": [
+         "Koos je \"a problem followed by a solution\"? Dan denk je dat het probleem en oplossing is. Er is geen probleem, maar twee kanten, het is een vergelijking.",
+         "Klopt: voordelen en nadelen worden vergeleken en daarna volgt een conclusie.",
+         "Koos je \"events told in the order of time\"? Dan denk je dat de tijd de volgorde bepaalt. De volgorde is vergelijken en concluderen, niet tijd.",
+         "Koos je \"a list of unrelated opinions from experts\"? Dan denk je dat het een rijtje meningen is. De delen horen bij elkaar, ze worden vergeleken."
+        ],
+        "uh": "Vergelijken.",
+        "ctx": "Working from home has become normal for millions of employees. On the one hand, it saves time and money, because nobody has to travel to the office every morning. Workers can also organise their day more freely, which many say makes them more productive. On the other hand, home workers sometimes feel lonely, and it is harder to separate work from free time. In contrast, offices offer a social atmosphere, but they also bring noise and long journeys. That is why a growing number of companies choose a mixture: two days at home and three in the office. Whereas managers used to fear that staff at home would do less, many now admit that results have hardly changed."
+       },
+       {
+        "v": "What does \"Meanwhile\" show?",
+        "o": [
+         "the result of the campaign",
+         "a contrast between the two best candidates",
+         "the reason for the campaign",
+         "two things happen at the same time"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Meanwhile = ondertussen: gelijktijdig.",
+        "uo": [
+         "Koos je \"the result of the campaign\"? Dan denk je dat meanwhile een gevolg geeft. Een resultaat krijg je met as a result, meanwhile geeft alleen aan dat dingen samen gebeuren.",
+         "Koos je \"a contrast between the two best candidates\"? Dan denk je dat meanwhile een contrast geeft. Een contrast krijg je met however, meanwhile zegt dat het mediawerk tegelijk loopt.",
+         "Koos je \"the reason for the campaign\"? Dan denk je dat meanwhile een reden geeft. Een reden krijg je met because, meanwhile betekent ondertussen.",
+         "Klopt: meanwhile geeft aan dat twee dingen gelijktijdig gebeuren."
+        ],
+        "uh": "Meanwhile: tegelijk.",
+        "ctx": "The student council election at Hillside School begins in September. First, candidates hand in a short plan and collect twenty signatures from classmates. After that, a two-week campaign starts, during which candidates put up posters and give a speech in the hall. Meanwhile, the media class interviews each candidate for the school website. Once the campaign is over, all students vote online on a single afternoon. Finally, the results are announced the next morning, and the winners meet the headteacher within a week. Because the process is so clear, almost every student takes part, and last year the turnout was higher than ever."
+       },
+       {
+        "v": "How does the last sentence relate to the rest of the text?",
+        "o": [
+         "it gives a result explained by the clear process",
+         "it gives a contrast with the first step",
+         "it repeats the first sentence",
+         "it introduces a new step in the election process"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 0,
+        "u": "Because verbindt oorzaak en gevolg.",
+        "uo": [
+         "Klopt: because verbindt de hoge opkomst met het duidelijke proces.",
+         "Koos je \"it gives a contrast with the first step\"? Dan denk je dat de laatste zin een contrast geeft. Because geeft een oorzaak, geen contrast.",
+         "Koos je \"it repeats the first sentence\"? Dan denk je dat de laatste zin de eerste herhaalt. De zin geeft een gevolg, geen herhaling.",
+         "Koos je \"it introduces a new step in the election process\"? Dan denk je dat er een stap bijkomt. Het is een conclusie, geen stap."
+        ],
+        "uh": "Because: oorzaak.",
+        "ctx": "The student council election at Hillside School begins in September. First, candidates hand in a short plan and collect twenty signatures from classmates. After that, a two-week campaign starts, during which candidates put up posters and give a speech in the hall. Meanwhile, the media class interviews each candidate for the school website. Once the campaign is over, all students vote online on a single afternoon. Finally, the results are announced the next morning, and the winners meet the headteacher within a week. Because the process is so clear, almost every student takes part, and last year the turnout was higher than ever."
+       },
+       {
+        "v": "Which sentence of the text does NOT describe a step of the election?",
+        "o": [
+         "After that, a two-week campaign starts, during which candidates put up posters.",
+         "Because the process is so clear, almost every student takes part.",
+         "Once the campaign is over, all students vote online.",
+         "Finally, the results are announced the next morning."
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "Een stap staat in tijdsvolgorde, een gevolg geeft een resultaat.",
+        "uo": [
+         "Koos je \"After that, a two-week campaign starts, during...\"? Dan denk je dat dit geen stap is. De campagne is een stap, na het plan.",
+         "Klopt: deze zin geeft een gevolg van het proces en is zelf geen stap.",
+         "Koos je \"Once the campaign is over, all students vote online.\"? Dan denk je dat stemmen geen stap is. Het is een stap, na de campagne.",
+         "Koos je \"Finally, the results are announced the next morning.\"? Dan denk je dat de uitslag geen stap is. Het is de laatste stap, na het stemmen."
+        ],
+        "uh": "Geen stap.",
+        "ctx": "The student council election at Hillside School begins in September. First, candidates hand in a short plan and collect twenty signatures from classmates. After that, a two-week campaign starts, during which candidates put up posters and give a speech in the hall. Meanwhile, the media class interviews each candidate for the school website. Once the campaign is over, all students vote online on a single afternoon. Finally, the results are announced the next morning, and the winners meet the headteacher within a week. Because the process is so clear, almost every student takes part, and last year the turnout was higher than ever."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "In the town of Lakeside, thousands of plastic bottles used to end up in the river every summer. As a result, swans and ducks often swallowed pieces of plastic and became ill. To tackle the problem, the council introduced a deposit of 25 cents on every small bottle. Shoppers now get their money back when they return an empty bottle to a machine in the supermarket. Although some people complained about the queues at first, the system turned out to be a success. For example, volunteers who clean the riverbank every month collected far fewer bottles this year than last year. Many residents therefore want the deposit to be extended to cans and larger bottles as well.",
+        "v": "What is the relation between the first and the second sentence and which words show it?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het is een oorzaak-gevolgrelatie (1p). De woorden as a result tonen dat (1p). De flessen in de rivier zijn de oorzaak en zieke vogels het gevolg (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "The school canteen used to sell mainly sweets and crisps. Because many students complained of feeling tired in the afternoon, the canteen introduced fruit and sandwiches. Although the new food is a little more expensive, sales have gone up. For example, the fruit bowl is empty by lunch every day.",
+        "v": "Name the connectors that show a cause and a contrast and say what each one connects.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Because geeft een oorzaak: klachten over moeheid leiden tot fruit en broodjes (1p). Although geeft een tegenstelling: het is duurder maar de verkoop stijgt (1p). For example geeft een voorbeeld van het succes (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Working from home has become normal for millions of employees. On the one hand, it saves time and money, because nobody has to travel to the office every morning. Workers can also organise their day more freely, which many say makes them more productive. On the other hand, home workers sometimes feel lonely, and it is harder to separate work from free time. In contrast, offices offer a social atmosphere, but they also bring noise and long journeys. That is why a growing number of companies choose a mixture: two days at home and three in the office. Whereas managers used to fear that staff at home would do less, many now admit that results have hardly changed.",
+        "v": "How is the text structured and which expressions show it?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Twee kanten worden vergeleken en daarna volgt een conclusie (1p). On the one hand en on the other hand tonen de twee kanten (1p). That is why leidt de conclusie in (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "The student council election at Hillside School begins in September. First, candidates hand in a short plan and collect twenty signatures from classmates. After that, a two-week campaign starts, during which candidates put up posters and give a speech in the hall. Meanwhile, the media class interviews each candidate for the school website. Once the campaign is over, all students vote online on a single afternoon. Finally, the results are announced the next morning, and the winners meet the headteacher within a week. Because the process is so clear, almost every student takes part, and last year the turnout was higher than ever.",
+        "v": "Give the first three steps of the election with the words that show the order.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "First: plan en handtekeningen (1p). After that: de campagne van twee weken (1p). Meanwhile: gelijktijdig interviewt de mediaklas de kandidaten (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Last year the library opened on Sunday for the first time. It was an experiment, but the results were clear: more than two hundred visitors came every week. Therefore, the council decided to keep the Sunday opening. However, the librarians asked for extra pay.",
+        "v": "What does \"Therefore\" connect and what does \"However\" add?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Therefore verbindt het resultaat (veel bezoekers) met het besluit om zondag open te blijven (1p). However geeft een tegenstelling: de bibliothecarissen vragen extra loon (1p). Samen laten ze een besluit met een bezwaar zien (1p)."
+       }
+      ]
      }
     ]
    },

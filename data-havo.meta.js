@@ -2461,6 +2461,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B4",
+      "lo": "en.B.4",
+      "gs": 2,
+      "naam": "Relaties tussen tekstdelen herkennen",
+      "beschrijving": "Je leert te zien hoe zinnen en alinea's in een Engelse tekst met elkaar samenhangen: oorzaak en gevolg, tegenstelling, voorbeeld, toevoeging, doel en volgorde in de tijd, en hoe de tekst is opgebouwd.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Oorzaak en gevolg",
+       "Tegenstelling en concessie",
+       "Voorbeeld en toevoeging",
+       "Doel en functie van een zin",
+       "Volgorde en tekststructuur"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
