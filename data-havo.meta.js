@@ -2440,6 +2440,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B3",
+      "lo": "en.B.3",
+      "gs": 2,
+      "naam": "De betekenis van woorden en verwijzingen in een tekst",
+      "beschrijving": "Je leert de betekenis van onbekende woorden, figuurlijke uitdrukkingen en verwijswoorden als it, this en they in een Engelse tekst te bepalen en een zin in eigen woorden te herhalen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Woorden uit de context afleiden",
+       "Woorden met meer betekenissen in de tekst",
+       "Figuurlijke taal en uitdrukkingen",
+       "Verwijswoorden",
+       "Een zin in eigen woorden zeggen"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },

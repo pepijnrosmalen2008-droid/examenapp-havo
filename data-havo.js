@@ -110831,6 +110831,692 @@ var VAKKEN = [
         "u": "Steden zijn goed voor bijen, maar te veel korven vormen een probleem voor wilde bijen, dus er moeten meer bloemen komen (3p: succes, probleem, advies; 1p per onderdeel)."
        }
       ]
+     },
+     {
+      "id": "B3",
+      "lo": "en.B.3",
+      "gs": 2,
+      "naam": "De betekenis van woorden en verwijzingen in een tekst",
+      "beschrijving": "Je leert de betekenis van onbekende woorden, figuurlijke uitdrukkingen en verwijswoorden als it, this en they in een Engelse tekst te bepalen en een zin in eigen woorden te herhalen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Woorden uit de context afleiden",
+       "Woorden met meer betekenissen in de tekst",
+       "Figuurlijke taal en uitdrukkingen",
+       "Verwijswoorden",
+       "Een zin in eigen woorden zeggen"
+      ],
+      "sam": "In een Engelse tekst bepaal je de betekenis van een woord of zinsdeel met de woorden eromheen. Let op woorden met meer betekenissen (lined, extended) en op figuurlijke taal (closing in, carried him through, blessing in disguise): die zijn niet letterlijk bedoeld. Verwijswoorden als it, this, they en such wijzen terug naar iets uit de zin ervoor. Controleer je antwoord door een zin in eigen woorden te herhalen: past de betekenis nog in de tekst?",
+      "begrippen": [
+       {
+        "t": "Context",
+        "d": "De woorden en zinnen rondom een woord of zinsdeel."
+       },
+       {
+        "t": "Verwijswoord",
+        "d": "Een woord als it, this, they of such dat naar iets eerder in de tekst wijst."
+       },
+       {
+        "t": "Antecedent",
+        "d": "Datgene waar een verwijswoord naar verwijst."
+       },
+       {
+        "t": "Figuurlijk",
+        "d": "Niet letterlijk bedoeld: de woorden hebben een overdrachtelijke betekenis."
+       },
+       {
+        "t": "Letterlijk",
+        "d": "De gewone betekenis van de woorden."
+       },
+       {
+        "t": "Uitdrukking",
+        "d": "Een vaste combinatie met een eigen betekenis, zoals a blessing in disguise."
+       },
+       {
+        "t": "Parafrase",
+        "d": "Dezelfde betekenis in andere woorden."
+       },
+       {
+        "t": "Meerdere betekenissen",
+        "d": "Eén woord dat in verschillende zinnen iets anders betekent."
+       },
+       {
+        "t": "Synoniem",
+        "d": "Een woord met bijna dezelfde betekenis."
+       },
+       {
+        "t": "Aanwijzing",
+        "d": "Een woord in de context dat de betekenis verraadt."
+       },
+       {
+        "t": "Gevolg van de zin",
+        "d": "Wat uit de zin ervoor volgt en waar this naar kan verwijzen."
+       },
+       {
+        "t": "Controleren",
+        "d": "Je antwoord in de zin invullen om te zien of het klopt."
+       }
+      ],
+      "sv": [
+       {
+        "v": "What is a reference word in a text?",
+        "o": [
+         "a word that you must look up in a dictionary",
+         "a word like \"it\" that points back",
+         "a word that gives the title of the text",
+         "a word that ends every paragraph in the text"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 3,
+        "u": "Een verwijswoord wijst naar iets uit de zin ervoor of erna.",
+        "uo": [
+         "Koos je \"a word that you must look up in a dictionary\"? Dan denk je dat het om een moeilijk woord gaat. Een verwijswoord is juist kort, het wijst naar iets anders in de tekst.",
+         "Klopt: een verwijswoord als it, this of they verwijst naar iets wat eerder in de tekst genoemd is.",
+         "Koos je \"a word that gives the title of the text\"? Dan denk je dat het de titel betreft. Een verwijswoord staat midden in de zin, het wijst terug naar iets eerder.",
+         "Koos je \"a word that ends every paragraph in the text\"? Dan denk je dat het een slotwoord is. Een verwijswoord kan overal staan, het gaat om de verwijzing."
+        ],
+        "uh": "Verwijst terug."
+       },
+       {
+        "v": "What is the best first step with an unknown word in a text?",
+        "o": [
+         "stop reading and look up the word in a dictionary at home",
+         "skip the whole paragraph that has the unknown word in it",
+         "translate the word letter by letter into Dutch words",
+         "read the sentences around the word"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 0,
+        "u": "Begin altijd bij de zinnen om het onbekende woord heen.",
+        "uo": [
+         "Koos je \"stop reading and look up the word in a dictionary...\"? Dan denk je dat je het woord eerst moet kennen. Dat is niet nodig, de context helpt je al.",
+         "Koos je \"skip the whole paragraph that has the unknown word...\"? Dan denk je dat je de alinea moet overslaan. Je mist dan informatie, de context kan het woord uitleggen.",
+         "Koos je \"translate the word letter by letter into Dutch words\"? Dan denk je dat je letter voor letter kunt vertalen. Dat werkt niet bij Engels, kijk naar de context.",
+         "Klopt: de zinnen eromheen geven meestal genoeg aanwijzingen voor de betekenis."
+        ],
+        "uh": "Lees de context."
+       },
+       {
+        "v": "What does \"figurative\" mean for a phrase in a text?",
+        "o": [
+         "it is not meant literally",
+         "it is meant exactly as the words say it",
+         "it is a number or a date in the text",
+         "it is a long sentence with many commas"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 2,
+        "u": "Figuurlijk is niet letterlijk bedoeld.",
+        "uo": [
+         "Klopt: een figuurlijke uitdrukking betekent iets anders dan de losse woorden zeggen.",
+         "Koos je \"it is meant exactly as the words say it\"? Dan denk je dat figuurlijk letterlijk betekent. Het is het tegendeel, de woorden betekenen iets anders.",
+         "Koos je \"it is a number or a date in the text\"? Dan denk je dat het om cijfers gaat. Figuurlijk gaat over betekenis, niet over cijfers.",
+         "Koos je \"it is a long sentence with many commas\"? Dan denk je dat het over lengte gaat. Figuurlijk gaat over betekenis, niet over zinslengte."
+        ],
+        "uh": "Overdrachtelijk."
+       },
+       {
+        "v": "What does \"compact\" mean in the text?",
+        "o": [
+         "old and not safe at all",
+         "very expensive for most buyers",
+         "small and efficiently built",
+         "built far away in the countryside"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Compact is klein en handig gebouwd.",
+        "uo": [
+         "Koos je \"old and not safe at all\"? Dan denk je dat compact oud en onveilig betekent. De tekst noemt alleen de kleine afmeting, niet de staat van het huis.",
+         "Koos je \"very expensive for most buyers\"? Dan denk je dat compact duur betekent. De tekst zegt dat ze kosten besparen, dus niet duur.",
+         "Klopt: de tekst noemt kleine huizen van minder dan dertig vierkante meter.",
+         "Koos je \"built far away in the countryside\"? Dan denk je dat het om de plaats gaat. De tekst noemt de grootte, niet de plaats."
+        ],
+        "uh": "Compact = klein.",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds."
+       },
+       {
+        "v": "What does \"gradually\" mean in the text?",
+        "o": [
+         "all at once, in a single day",
+         "in a very careless way",
+         "slowly, step by step",
+         "only on the weekend, never more"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Gradually betekent langzaam en stap voor stap.",
+        "uo": [
+         "Koos je \"all at once, in a single day\"? Dan denk je dat gradually ineens betekent. Het is het tegendeel, het gaat om kleine stappen.",
+         "Koos je \"in a very careless way\"? Dan denk je dat gradually onzorgvuldig betekent. Het gaat om het tempo, niet om de zorg.",
+         "Klopt: hij breidde zijn training stap voor stap uit.",
+         "Koos je \"only on the weekend, never more\"? Dan denk je dat het om weekenden gaat. De tekst zegt drie keer per week, en daarna meer."
+        ],
+        "uh": "Stap voor stap.",
+        "ctx": "Last spring Daan, a 45-year-old accountant, ran his first marathon. A year earlier he could hardly run for ten minutes without losing his breath. What changed? \"I stopped comparing myself with others,\" he says. His training plan was modest at first: three short runs a week, which he gradually extended. When a knee injury threatened to ruin the whole project, he did not give up but swapped running for swimming for a month. This turned out to be a blessing in disguise, because the pool strengthened his muscles without straining his joints. On the day of the race, thousands of spectators lined the streets. Their cheering carried him through the last difficult kilometres, and he crossed the finish line in just under five hours."
+       },
+       {
+        "v": "Which word means the same as \"costly\" in the last part?",
+        "o": [
+         "expensive",
+         "dangerous for older people",
+         "very old and out of date",
+         "quick to carry out in a week"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Costly = duur: let op \"pay off\" in de volgende zin.",
+        "uo": [
+         "Klopt: de plannen kosten veel geld, maar ze betalen zich uiteindelijk terug.",
+         "Koos je \"dangerous for older people\"? Dan denk je dat costly gevaarlijk betekent. Het gaat over geld, niet over veiligheid.",
+         "Koos je \"very old and out of date\"? Dan denk je dat costly oud betekent. Het gaat over kosten, niet over leeftijd.",
+         "Koos je \"quick to carry out in a week\"? Dan denk je dat het snel betekent. De plannen zijn voor de lange termijn, en kosten veel."
+        ],
+        "uh": "Costly = duur.",
+        "ctx": "When the temperature in the city reached thirty-eight degrees last July, the council opened air-conditioned rooms in libraries and community centres. Elderly residents were especially welcome, since heat can be dangerous for them. Volunteers handed out bottles of water and checked on neighbours who lived alone. Critics said that such measures merely treat the symptoms. In their view, the real remedy is planting more trees and replacing grey pavements with grass, which keep streets cooler. The council admits that these long-term plans are costly, but argues they will pay off in the end. \"We cannot wait for the next heatwave to take action,\" said a spokesperson."
+       },
+       {
+        "v": "What do \"These compact houses\" refer to?",
+        "o": [
+         "the ordinary homes of other people in town",
+         "the number of square metres in each house",
+         "the owners of the tiny houses themselves",
+         "the tiny houses in the first sentence"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "These wijst terug naar het meervoud ervoor: tiny houses.",
+        "uo": [
+         "Koos je \"the ordinary homes of other people in town\"? Dan denk je dat het om gewone huizen gaat. De zin ervoor noemt tiny houses, dus daar verwijst these naar.",
+         "Koos je \"the number of square metres in each house\"? Dan denk je dat het om oppervlakte gaat. These slaat op huizen, niet op meters.",
+         "Koos je \"the owners of the tiny houses themselves\"? Dan denk je dat het om eigenaren gaat. These compact houses zijn huizen, geen mensen.",
+         "Klopt: these verwijst naar de tiny houses die in de zin ervoor genoemd zijn."
+        ],
+        "uh": "These: tiny houses.",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds."
+       },
+       {
+        "v": "Owners want to avoid \"clutter\" in the text. What is it?",
+        "o": [
+         "a loud noise in the neighbourhood",
+         "a lot of unnecessary things",
+         "a deep feeling of fear and worry",
+         "a piece of furniture for a kitchen"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 0,
+        "u": "Clutter = rommel: te veel spullen die niet nodig zijn.",
+        "uo": [
+         "Koos je \"a loud noise in the neighbourhood\"? Dan denk je dat clutter lawaai betekent. Het gaat om spullen in huis, niet om geluid.",
+         "Klopt: omdat de ruimte klein is, is er geen plaats voor onnodige spullen.",
+         "Koos je \"a deep feeling of fear and worry\"? Dan denk je dat het een gevoel is. Clutter gaat over voorwerpen, niet over angst.",
+         "Koos je \"a piece of furniture for a kitchen\"? Dan denk je dat het meubilair is. Clutter is een hoop spullen, geen meubel."
+        ],
+        "uh": "Clutter = rommel.",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds."
+       },
+       {
+        "v": "What does \"cut their costs\" mean?",
+        "o": [
+         "make their houses much smaller by cutting",
+         "earn much more money than before",
+         "pay more taxes to the government",
+         "spend less money than before"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Cut costs betekent kosten verminderen.",
+        "uo": [
+         "Koos je \"make their houses much smaller by cutting\"? Dan denk je dat cut zagen betekent. Het gaat figuurlijk over geld, niet over zagen.",
+         "Koos je \"earn much more money than before\"? Dan denk je dat costs inkomsten zijn. Costs zijn uitgaven, dus minder uitgeven.",
+         "Koos je \"pay more taxes to the government\"? Dan denk je dat het om belasting gaat. Daar staat niets over, het gaat om minder uitgeven.",
+         "Klopt: cut betekent hier verminderen, dus minder geld uitgeven."
+        ],
+        "uh": "Cut = verminderen.",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds."
+       },
+       {
+        "v": "What does \"the walls feel as if they are closing in\" suggest?",
+        "o": [
+         "the walls are really moving towards you",
+         "the house starts to feel too small",
+         "the house is being built again",
+         "the house is quiet and very calm"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "\"As if\" geeft een figuurlijke vergelijking aan.",
+        "uo": [
+         "Koos je \"the walls are really moving towards you\"? Dan denk je dat de muren echt bewegen. Het is een figuurlijk beeld, het gaat om een gevoel.",
+         "Klopt: de beschrijving is figuurlijk: het huis voelt benauwd en te klein.",
+         "Koos je \"the house is being built again\"? Dan denk je dat er wordt gebouwd. Dat staat nergens, het gaat om het gevoel van ruimte.",
+         "Koos je \"the house is quiet and very calm\"? Dan denk je dat de rust bedoeld is. De zin beschrijft benauwdheid, geen rust."
+        ],
+        "uh": "As if: figuurlijk.",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds."
+       },
+       {
+        "v": "What does \"extended\" mean in \"which he gradually extended\"?",
+        "o": [
+         "stopped for good",
+         "made much shorter",
+         "made longer",
+         "sold to other runners"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 1,
+        "u": "Extend betekent verlengen of uitbreiden.",
+        "uo": [
+         "Koos je \"stopped for good\"? Dan denk je dat extended stoppen betekent. Het betekent verlengen, dus langer maken.",
+         "Koos je \"made much shorter\"? Dan denk je dat het korter betekent. Het is het tegendeel, hij liep steeds meer.",
+         "Klopt: hij maakte zijn trainingen geleidelijk langer.",
+         "Koos je \"sold to other runners\"? Dan denk je dat extended verkopen betekent. Dat staat nergens, het gaat om langer maken."
+        ],
+        "uh": "Extend = verlengen.",
+        "ctx": "Last spring Daan, a 45-year-old accountant, ran his first marathon. A year earlier he could hardly run for ten minutes without losing his breath. What changed? \"I stopped comparing myself with others,\" he says. His training plan was modest at first: three short runs a week, which he gradually extended. When a knee injury threatened to ruin the whole project, he did not give up but swapped running for swimming for a month. This turned out to be a blessing in disguise, because the pool strengthened his muscles without straining his joints. On the day of the race, thousands of spectators lined the streets. Their cheering carried him through the last difficult kilometres, and he crossed the finish line in just under five hours."
+       },
+       {
+        "v": "What does \"a blessing in disguise\" mean?",
+        "o": [
+         "a bad thing that turns out well",
+         "a prayer said before a race",
+         "a good thing that is easy to see",
+         "something good that turns out badly"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "A blessing in disguise: eerst slecht, later goed.",
+        "uo": [
+         "Klopt: de blessure leek een ramp maar leidde tot sterkere spieren.",
+         "Koos je \"a prayer said before a race\"? Dan denk je dat het een gebed is. Het is een uitdrukking, de betekenis is overdrachtelijk.",
+         "Koos je \"a good thing that is easy to see\"? Dan denk je dat het een duidelijke zegen is. In disguise betekent verborgen, dus niet duidelijk.",
+         "Koos je \"something good that turns out badly\"? Dan denk je dat het omgekeerd is. De uitdrukking gaat van slecht naar goed, niet andersom."
+        ],
+        "uh": "Slecht wordt goed.",
+        "ctx": "Last spring Daan, a 45-year-old accountant, ran his first marathon. A year earlier he could hardly run for ten minutes without losing his breath. What changed? \"I stopped comparing myself with others,\" he says. His training plan was modest at first: three short runs a week, which he gradually extended. When a knee injury threatened to ruin the whole project, he did not give up but swapped running for swimming for a month. This turned out to be a blessing in disguise, because the pool strengthened his muscles without straining his joints. On the day of the race, thousands of spectators lined the streets. Their cheering carried him through the last difficult kilometres, and he crossed the finish line in just under five hours."
+       },
+       {
+        "v": "What does \"This\" refer to in \"This turned out to be a blessing in disguise\"?",
+        "o": [
+         "swapping running for swimming",
+         "the knee injury itself",
+         "the marathon on the day of the race",
+         "the first training plan"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 3,
+        "u": "This verwijst vaak naar de hele zin ervoor.",
+        "uo": [
+         "Klopt: this verwijst naar de zin ervoor, waarin hij hardlopen verwisselt voor zwemmen.",
+         "Koos je \"the knee injury itself\"? Dan denk je dat this de blessure is. De blessure is niet de zegen, de zegen is het zwemmen.",
+         "Koos je \"the marathon on the day of the race\"? Dan denk je dat this de marathon is. Die komt later in de tekst, this verwijst naar zwemmen.",
+         "Koos je \"the first training plan\"? Dan denk je dat this het trainingsplan is. Dat staat eerder, this wijst naar de zin ervoor."
+        ],
+        "uh": "This: zin ervoor.",
+        "ctx": "Last spring Daan, a 45-year-old accountant, ran his first marathon. A year earlier he could hardly run for ten minutes without losing his breath. What changed? \"I stopped comparing myself with others,\" he says. His training plan was modest at first: three short runs a week, which he gradually extended. When a knee injury threatened to ruin the whole project, he did not give up but swapped running for swimming for a month. This turned out to be a blessing in disguise, because the pool strengthened his muscles without straining his joints. On the day of the race, thousands of spectators lined the streets. Their cheering carried him through the last difficult kilometres, and he crossed the finish line in just under five hours."
+       },
+       {
+        "v": "Who are \"them\" in \"since heat can be dangerous for them\"?",
+        "o": [
+         "volunteers who hand out water",
+         "the critics of the council",
+         "elderly residents",
+         "the people who run the council"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Them verwijst naar een meervoud in de zin ervoor.",
+        "uo": [
+         "Koos je \"volunteers who hand out water\"? Dan denk je dat them vrijwilligers zijn. De zin ervoor noemt de ouderen, daar verwijst them naar.",
+         "Koos je \"the critics of the council\"? Dan denk je dat them critici zijn. Die komen later in de tekst, them wijst naar ouderen.",
+         "Klopt: them verwijst naar de ouderen die in de zin ervoor genoemd zijn.",
+         "Koos je \"the people who run the council\"? Dan denk je dat them het gemeentebestuur is. Dat opent de ruimtes, het gaat om kwetsbare mensen."
+        ],
+        "uh": "Them: ouderen.",
+        "ctx": "When the temperature in the city reached thirty-eight degrees last July, the council opened air-conditioned rooms in libraries and community centres. Elderly residents were especially welcome, since heat can be dangerous for them. Volunteers handed out bottles of water and checked on neighbours who lived alone. Critics said that such measures merely treat the symptoms. In their view, the real remedy is planting more trees and replacing grey pavements with grass, which keep streets cooler. The council admits that these long-term plans are costly, but argues they will pay off in the end. \"We cannot wait for the next heatwave to take action,\" said a spokesperson."
+       },
+       {
+        "v": "What does \"pay off\" mean in the last part of the text?",
+        "o": [
+         "cost even more money later",
+         "give a good result in the end",
+         "be finished by next summer",
+         "be paid in cash to the council"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 1,
+        "u": "Pay off betekent dat iets uiteindelijk loont.",
+        "uo": [
+         "Koos je \"cost even more money later\"? Dan denk je dat pay off duurder betekent. De tekst bedoelt het tegendeel, het levert iets op.",
+         "Klopt: de plannen kosten geld maar leveren uiteindelijk iets op.",
+         "Koos je \"be finished by next summer\"? Dan denk je dat het om tijd gaat. Pay off gaat over resultaat, niet over deadlines.",
+         "Koos je \"be paid in cash to the council\"? Dan denk je dat het om een betaling gaat. Het is figuurlijk, het gaat om resultaat."
+        ],
+        "uh": "Pay off = loont.",
+        "ctx": "When the temperature in the city reached thirty-eight degrees last July, the council opened air-conditioned rooms in libraries and community centres. Elderly residents were especially welcome, since heat can be dangerous for them. Volunteers handed out bottles of water and checked on neighbours who lived alone. Critics said that such measures merely treat the symptoms. In their view, the real remedy is planting more trees and replacing grey pavements with grass, which keep streets cooler. The council admits that these long-term plans are costly, but argues they will pay off in the end. \"We cannot wait for the next heatwave to take action,\" said a spokesperson."
+       },
+       {
+        "v": "What do the critics mean by \"merely treat the symptoms\"?",
+        "o": [
+         "the measures only help sick people in the heat",
+         "the measures cure all the problems for good",
+         "the measures are very new and still untested",
+         "the measures help briefly, not the cause"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 4,
+        "u": "Treat the symptoms = symptomen bestrijden, niet de oorzaak.",
+        "uo": [
+         "Koos je \"the measures only help sick people in the heat\"? Dan denk je dat het om zieke mensen gaat. De uitdrukking is figuurlijk, het gaat om oorzaak en gevolg.",
+         "Koos je \"the measures cure all the problems for good\"? Dan denk je dat het alles oplost. De critici zeggen het tegendeel, het is te weinig.",
+         "Koos je \"the measures are very new and still untested\"? Dan denk je dat het om nieuwheid gaat. Dat staat nergens, de kritiek gaat over de oorzaak.",
+         "Klopt: symptomen behandelen is een figuurlijk beeld voor oplossen zonder de oorzaak aan te pakken."
+        ],
+        "uh": "Oorzaak aanpakken.",
+        "ctx": "When the temperature in the city reached thirty-eight degrees last July, the council opened air-conditioned rooms in libraries and community centres. Elderly residents were especially welcome, since heat can be dangerous for them. Volunteers handed out bottles of water and checked on neighbours who lived alone. Critics said that such measures merely treat the symptoms. In their view, the real remedy is planting more trees and replacing grey pavements with grass, which keep streets cooler. The council admits that these long-term plans are costly, but argues they will pay off in the end. \"We cannot wait for the next heatwave to take action,\" said a spokesperson."
+       },
+       {
+        "v": "What does the writer mean by \"This is not cheating\"?",
+        "o": [
+         "the owners never play games with guests",
+         "building a shed is fair, not a trick",
+         "the shed is not allowed in the garden",
+         "the tiny house is cheaper than a normal one"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 4,
+        "u": "Cheating is hier figuurlijk: valsspelen, een trucje.",
+        "uo": [
+         "Koos je \"the owners never play games with guests\"? Dan denk je dat het om spelletjes gaat. Cheating betekent hier valsspelen, figuurlijk gebruikt.",
+         "Klopt: this verwijst naar het bouwen van een schuur, en de eigenaren vinden dat eerlijk.",
+         "Koos je \"the shed is not allowed in the garden\"? Dan denk je dat de schuur verboden is. De eigenaren noemen hem een eerlijke oplossing, geen overtreding.",
+         "Koos je \"the tiny house is cheaper than a normal one\"? Dan denk je dat het over de prijs gaat. This verwijst naar de schuur, niet naar de huizen."
+        ],
+        "uh": "Geen trucje.",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds."
+       },
+       {
+        "v": "What does \"they\" refer to in \"This is not cheating, they argue\"?",
+        "o": [
+         "some owners of tiny houses",
+         "the guests around the kitchen table",
+         "the walls of the tiny houses",
+         "the people who make the garden sheds"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Controleer bij they of het een persoon of een ding is.",
+        "uo": [
+         "Klopt: they verwijst naar de eigenaren die de schuur bouwen, in de zin ervoor.",
+         "Koos je \"the guests around the kitchen table\"? Dan denk je dat they de gasten zijn. Zij bouwen geen schuur, de eigenaren beargumenteren het.",
+         "Koos je \"the walls of the tiny houses\"? Dan denk je dat they de muren zijn. Muren kunnen niets beweren, het zijn mensen.",
+         "Koos je \"the people who make the garden sheds\"? Dan denk je dat they de bouwers zijn. De tekst zegt niets over fabrikanten, de eigenaren bouwen zelf."
+        ],
+        "uh": "They: eigenaren.",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds."
+       },
+       {
+        "v": "What does \"the best of both worlds\" mean here?",
+        "o": [
+         "the advantages of living in two distant houses",
+         "a house with a garden and a swimming pool",
+         "the best homes of two different countries",
+         "the benefits of a small house and extra space"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Best of both worlds: twee voordelen tegelijk.",
+        "uo": [
+         "Koos je \"the advantages of living in two distant houses\"? Dan denk je dat het om twee huizen op afstand gaat. Het is figuurlijk, het gaat om twee voordelen.",
+         "Koos je \"a house with a garden and a swimming pool\"? Dan denk je dat het om luxe gaat. Dat staat niet in de tekst, het gaat om ruimte.",
+         "Koos je \"the best homes of two different countries\"? Dan denk je dat het om landen gaat. Worlds is figuurlijk, het gaat om twee voordelen.",
+         "Klopt: de eigenaren combineren de voordelen van een klein huis met extra ruimte."
+        ],
+        "uh": "Beide voordelen.",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds."
+       },
+       {
+        "v": "Which sentence is closest in meaning to \"clutter simply has no place to hide\"?",
+        "o": [
+         "Owners hide their things in the garden.",
+         "Tiny houses are tidy because of cleaners.",
+         "There is no room for unnecessary things.",
+         "Owners enjoy having many objects around."
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Parafraseer figuurlijke taal met gewone woorden.",
+        "uo": [
+         "Koos je \"Owners hide their things in the garden.\"? Dan denk je dat de tekst over verstoppen in de tuin gaat. Het is figuurlijk, er is geen plaats voor rommel.",
+         "Koos je \"Tiny houses are tidy because of cleaners.\"? Dan denk je dat er schoonmakers zijn. Dat staat nergens, het gaat om ruimtegebrek.",
+         "Klopt: er is geen ruimte om rommel te verstoppen, dus je koopt minder.",
+         "Koos je \"Owners enjoy having many objects around.\"? Dan denk je dat ze veel spullen willen. De tekst zegt het tegendeel, ze kopen selectief."
+        ],
+        "uh": "Geen ruimte.",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds."
+       },
+       {
+        "v": "What does \"carried him through the last difficult kilometres\" mean?",
+        "o": [
+         "spectators lifted him up and carried him",
+         "he had to be taken to the finish by car",
+         "the cheering gave him strength to keep going",
+         "the last kilometres were flat and easy"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "Carry through: figuurlijk voor ondersteunen.",
+        "uo": [
+         "Koos je \"spectators lifted him up and carried him\"? Dan denk je dat ze hem fysiek droegen. Het is figuurlijk, het gaat om steun.",
+         "Koos je \"he had to be taken to the finish by car\"? Dan denk je dat hij werd gereden. Hij liep zelf over de finish, de uitdrukking is figuurlijk.",
+         "Klopt: carry is hier figuurlijk: het publiek hielp hem de laatste kilometers vol te houden.",
+         "Koos je \"the last kilometres were flat and easy\"? Dan denk je dat de route makkelijk was. De tekst noemt moeilijke kilometers, het publiek hielp."
+        ],
+        "uh": "Steun geven aan.",
+        "ctx": "Last spring Daan, a 45-year-old accountant, ran his first marathon. A year earlier he could hardly run for ten minutes without losing his breath. What changed? \"I stopped comparing myself with others,\" he says. His training plan was modest at first: three short runs a week, which he gradually extended. When a knee injury threatened to ruin the whole project, he did not give up but swapped running for swimming for a month. This turned out to be a blessing in disguise, because the pool strengthened his muscles without straining his joints. On the day of the race, thousands of spectators lined the streets. Their cheering carried him through the last difficult kilometres, and he crossed the finish line in just under five hours."
+       },
+       {
+        "v": "Which sentence is closest in meaning to \"I stopped comparing myself with others\"?",
+        "o": [
+         "He ran faster than all the other runners in the race.",
+         "He stopped talking to other runners.",
+         "He asked others to compare their results.",
+         "He no longer measured himself against others."
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Parafraseren: zeg hetzelfde met andere woorden.",
+        "uo": [
+         "Koos je \"He ran faster than all the other runners in the...\"? Dan denk je dat hij sneller was. Daar gaat de zin niet over, het gaat om vergelijken.",
+         "Koos je \"He stopped talking to other runners.\"? Dan denk je dat hij niet meer praatte. De zin gaat over vergelijken, niet over praten.",
+         "Koos je \"He asked others to compare their results.\"? Dan denk je dat hij anderen liet vergelijken. De zin gaat over hemzelf, niet over anderen.",
+         "Klopt: vergelijken met anderen is het vergelijken van je voortgang met die van anderen."
+        ],
+        "uh": "Geen vergelijking.",
+        "ctx": "Last spring Daan, a 45-year-old accountant, ran his first marathon. A year earlier he could hardly run for ten minutes without losing his breath. What changed? \"I stopped comparing myself with others,\" he says. His training plan was modest at first: three short runs a week, which he gradually extended. When a knee injury threatened to ruin the whole project, he did not give up but swapped running for swimming for a month. This turned out to be a blessing in disguise, because the pool strengthened his muscles without straining his joints. On the day of the race, thousands of spectators lined the streets. Their cheering carried him through the last difficult kilometres, and he crossed the finish line in just under five hours."
+       },
+       {
+        "v": "What does \"lined\" mean in \"thousands of spectators lined the streets\"?",
+        "o": [
+         "stood in rows along the sides of",
+         "drew lines on the road for the race",
+         "covered the inside of the buildings",
+         "walked the whole length of the street"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 1,
+        "u": "Line the streets: in rijen langs de straat staan.",
+        "uo": [
+         "Klopt: lined betekent hier in rijen langs de kant staan.",
+         "Koos je \"drew lines on the road for the race\"? Dan denk je dat lined strepen trekken is. Hier gaat het om mensen, die langs de kant staan.",
+         "Koos je \"covered the inside of the buildings\"? Dan denk je dat lined bekleden is. Dat past niet bij mensen, ze staan langs de straat.",
+         "Koos je \"walked the whole length of the street\"? Dan denk je dat ze de straat afliepen. Ze keken toe langs de kant, ze liepen niet mee."
+        ],
+        "uh": "Langs de kant.",
+        "ctx": "Last spring Daan, a 45-year-old accountant, ran his first marathon. A year earlier he could hardly run for ten minutes without losing his breath. What changed? \"I stopped comparing myself with others,\" he says. His training plan was modest at first: three short runs a week, which he gradually extended. When a knee injury threatened to ruin the whole project, he did not give up but swapped running for swimming for a month. This turned out to be a blessing in disguise, because the pool strengthened his muscles without straining his joints. On the day of the race, thousands of spectators lined the streets. Their cheering carried him through the last difficult kilometres, and he crossed the finish line in just under five hours."
+       },
+       {
+        "v": "What does \"ruin\" suggest about the knee injury?",
+        "o": [
+         "the injury could improve his plan",
+         "the injury could destroy his plan",
+         "the injury made him famous at once",
+         "the injury was caused by the plan"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 0,
+        "u": "Threatened to ruin: dreigde te verpesten.",
+        "uo": [
+         "Koos je \"the injury could improve his plan\"? Dan denk je dat ruin verbeteren betekent. Het is het tegendeel, het gaat om kapotmaken.",
+         "Klopt: ruin betekent kapotmaken, dus de blessure bedreigde zijn plan.",
+         "Koos je \"the injury made him famous at once\"? Dan denk je dat de blessure beroemd maakte. Dat staat nergens, ruin gaat om beschadigen.",
+         "Koos je \"the injury was caused by the plan\"? Dan denk je dat de blessure door het plan kwam. Dat staat er niet, ruin gaat om een bedreiging."
+        ],
+        "uh": "Ruin = verpesten.",
+        "ctx": "Last spring Daan, a 45-year-old accountant, ran his first marathon. A year earlier he could hardly run for ten minutes without losing his breath. What changed? \"I stopped comparing myself with others,\" he says. His training plan was modest at first: three short runs a week, which he gradually extended. When a knee injury threatened to ruin the whole project, he did not give up but swapped running for swimming for a month. This turned out to be a blessing in disguise, because the pool strengthened his muscles without straining his joints. On the day of the race, thousands of spectators lined the streets. Their cheering carried him through the last difficult kilometres, and he crossed the finish line in just under five hours."
+       },
+       {
+        "v": "What does \"such measures\" in the third sentence of the text refer to?",
+        "o": [
+         "planting more trees and putting in grass",
+         "closing the libraries for the whole summer",
+         "checking the cars of all the neighbours",
+         "opening cool rooms and giving water"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 3,
+        "u": "Such verwijst terug naar eerder genoemde dingen.",
+        "uo": [
+         "Koos je \"planting more trees and putting in grass\"? Dan denk je dat het om bomen gaat. Dat noemen de critici later, such measures kijkt terug.",
+         "Koos je \"closing the libraries for the whole summer\"? Dan denk je dat de bibliotheken sluiten. Ze worden juist geopend, such measures gaat over openen.",
+         "Koos je \"checking the cars of all the neighbours\"? Dan denk je dat het om auto's gaat. Er staat dat vrijwilligers buren controleerden, niet auto's.",
+         "Klopt: such measures verwijst naar wat de gemeente en vrijwilligers deden in de zinnen ervoor."
+        ],
+        "uh": "Such: terug.",
+        "ctx": "When the temperature in the city reached thirty-eight degrees last July, the council opened air-conditioned rooms in libraries and community centres. Elderly residents were especially welcome, since heat can be dangerous for them. Volunteers handed out bottles of water and checked on neighbours who lived alone. Critics said that such measures merely treat the symptoms. In their view, the real remedy is planting more trees and replacing grey pavements with grass, which keep streets cooler. The council admits that these long-term plans are costly, but argues they will pay off in the end. \"We cannot wait for the next heatwave to take action,\" said a spokesperson."
+       },
+       {
+        "v": "What is the spokesperson's point in \"We cannot wait for the next heatwave to take action\"?",
+        "o": [
+         "action is needed before the next one",
+         "the council will do nothing until summer",
+         "heatwaves will never come back",
+         "volunteers should plan the next waves"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Parafraseer: wat wil de spreker dat er gebeurt?",
+        "uo": [
+         "Klopt: de woordvoerder zegt dat je niet moet wachten, maar nu moet handelen.",
+         "Koos je \"the council will do nothing until summer\"? Dan denk je dat de gemeente wacht. De zin zegt het tegendeel, er moet nu iets gebeuren.",
+         "Koos je \"heatwaves will never come back\"? Dan denk je dat hittegolven niet meer komen. Daar staat niets over, hij waarschuwt voor de volgende.",
+         "Koos je \"volunteers should plan the next waves\"? Dan denk je dat vrijwilligers moeten plannen. De zin gaat over de gemeente, niet over vrijwilligers."
+        ],
+        "uh": "Nu handelen.",
+        "ctx": "When the temperature in the city reached thirty-eight degrees last July, the council opened air-conditioned rooms in libraries and community centres. Elderly residents were especially welcome, since heat can be dangerous for them. Volunteers handed out bottles of water and checked on neighbours who lived alone. Critics said that such measures merely treat the symptoms. In their view, the real remedy is planting more trees and replacing grey pavements with grass, which keep streets cooler. The council admits that these long-term plans are costly, but argues they will pay off in the end. \"We cannot wait for the next heatwave to take action,\" said a spokesperson."
+       },
+       {
+        "v": "What does \"remedy\" mean in \"the real remedy is planting more trees\"?",
+        "o": [
+         "a medicine for people who are sick",
+         "a solution to the underlying problem",
+         "a kind of decoration for the streets",
+         "a punishment for the city council"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 2,
+        "u": "Remedy = oplossing, geneesmiddel in figuurlijke zin.",
+        "uo": [
+         "Koos je \"a medicine for people who are sick\"? Dan denk je dat remedy medicijn betekent. Het is figuurlijk gebruikt, het gaat om een oplossing.",
+         "Klopt: remedy betekent hier oplossing van het onderliggende probleem.",
+         "Koos je \"a kind of decoration for the streets\"? Dan denk je dat het een versiering is. Bomen zijn een oplossing, geen decoratie.",
+         "Koos je \"a punishment for the city council\"? Dan denk je dat het een straf is. Het is een oplossing, geen straf."
+        ],
+        "uh": "Remedy = oplossing.",
+        "ctx": "When the temperature in the city reached thirty-eight degrees last July, the council opened air-conditioned rooms in libraries and community centres. Elderly residents were especially welcome, since heat can be dangerous for them. Volunteers handed out bottles of water and checked on neighbours who lived alone. Critics said that such measures merely treat the symptoms. In their view, the real remedy is planting more trees and replacing grey pavements with grass, which keep streets cooler. The council admits that these long-term plans are costly, but argues they will pay off in the end. \"We cannot wait for the next heatwave to take action,\" said a spokesperson."
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "The new bike lanes have been a mixed blessing. On the one hand, cycling to work is now much safer. On the other hand, shopkeepers complain that customers can no longer park in front of their shops.",
+        "v": "What does \"a mixed blessing\" mean here? Give one good and one bad thing from the text.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Iets met zowel goede als slechte kanten (1p). Goed: fietsen is veiliger (1p). Slecht: klanten kunnen niet meer voor de winkel parkeren (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Over the past decade, \"tiny houses\" have become a popular alternative to ordinary homes. These compact houses, usually smaller than thirty square metres, appeal to people who want to cut their costs and live more simply. Owners say that having less space forces them to be selective about what they buy; clutter simply has no place to hide. However, life in a tiny house is not without drawbacks. Guests have to squeeze in around the kitchen table, and a rainy weekend can make the walls feel as if they are closing in. Some owners therefore build a small garden shed as an extra room. This is not cheating, they argue, but a sensible way to get the best of both worlds.",
+        "v": "What do \"These compact houses\" and \"they\" in the last sentence refer to?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "These compact houses verwijst naar de tiny houses uit de zin ervoor (1p). They verwijst naar some owners, de eigenaren die een schuur bouwen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Last spring Daan, a 45-year-old accountant, ran his first marathon. A year earlier he could hardly run for ten minutes without losing his breath. What changed? \"I stopped comparing myself with others,\" he says. His training plan was modest at first: three short runs a week, which he gradually extended. When a knee injury threatened to ruin the whole project, he did not give up but swapped running for swimming for a month. This turned out to be a blessing in disguise, because the pool strengthened his muscles without straining his joints. On the day of the race, thousands of spectators lined the streets. Their cheering carried him through the last difficult kilometres, and he crossed the finish line in just under five hours.",
+        "v": "Explain what \"carried him through the last difficult kilometres\" means and why it is figurative.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het publiek gaf hem de kracht om vol te houden (1p). Het is figuurlijk omdat de toeschouwers hem niet echt droegen (1p). De uitdrukking staat voor steun of aanmoediging (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "When the temperature in the city reached thirty-eight degrees last July, the council opened air-conditioned rooms in libraries and community centres. Elderly residents were especially welcome, since heat can be dangerous for them. Volunteers handed out bottles of water and checked on neighbours who lived alone. Critics said that such measures merely treat the symptoms. In their view, the real remedy is planting more trees and replacing grey pavements with grass, which keep streets cooler. The council admits that these long-term plans are costly, but argues they will pay off in the end. \"We cannot wait for the next heatwave to take action,\" said a spokesperson.",
+        "v": "Rewrite \"merely treat the symptoms\" in your own words.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "De maatregelen verminderen alleen de gevolgen, maar lossen de oorzaak niet op (2p). Een goede parafrase gebruikt eigen woorden en behoudt de betekenis (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "The mayor said that the new tax was \"a drop in the ocean\". Residents had hoped for lower prices, but the tax would only raise two euros per year per household, far too little to pay for the repairs to the old bridge.",
+        "v": "What does \"a drop in the ocean\" mean and which words in the text help you?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Een heel klein bedrag vergeleken met wat nodig is (1p). Aanwijzingen: only, two euros per year en far too little (2p voor twee goede aanwijzingen)."
+       }
+      ]
      }
     ]
    },
