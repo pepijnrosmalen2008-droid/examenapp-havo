@@ -2397,7 +2397,30 @@ var VAKKEN = [
     "nSv": 113,
     "nOe": 7,
     "nBeg": 22,
-    "hasSam": true
+    "hasSam": true,
+    "leerdoelen": [
+     {
+      "id": "B1",
+      "lo": "en.B.1",
+      "gs": 2,
+      "naam": "Relevante informatie vinden in een Engelse tekst",
+      "beschrijving": "Je leert in folders, mededelingen en advertenties snel de informatie te vinden die je nodig hebt: tijden, prijzen, voorwaarden en uitzonderingen, door te skimmen en te scannen en door te kiezen wat bij de vraag past.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Skimmen en scannen",
+       "Gegevens vinden: tijden, prijzen en plaatsen",
+       "Voorwaarden en uitzonderingen",
+       "Informatie kiezen bij een behoefte",
+       "Hoofdzaak en bijzaak onderscheiden"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
+     }
+    ]
    },
    {
     "id": "C",

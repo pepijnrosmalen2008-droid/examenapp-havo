@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.475 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.502 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -88,6 +88,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Conditionals: type 1, 2 en 3 (Engels HAVO)](https://slagio.nl/leren/havo/engels/conditionals-type-1-2-en-3.html): Je vormt en herkent de drie soorten if-zinnen (echte kans, onwerkelijk nu, onwerkelijk in het verleden), gebruikt unless en in case en kiest in een tekst het…
 - [Passief en actief (Engels HAVO)](https://slagio.nl/leren/havo/engels/passief-en-actief.html): Je vormt het passief in verschillende tijden, zet actieve zinnen om in passieve zinnen en andersom, en weet wanneer het passief past en welke fouten je moet…
 - [Zinsbouw, verbindingswoorden en toon (Engels HAVO)](https://slagio.nl/leren/havo/engels/zinsbouw-verbindingswoorden-en-toon.html): Je bouwt Engelse zinnen met de juiste woordvolgorde, verbindt zinnen met voegwoorden en verbindingswoorden, gebruikt who, which, that en whose en kiest een…
+- [Relevante informatie vinden in een Engelse tekst (Engels HAVO)](https://slagio.nl/leren/havo/engels/relevante-informatie-vinden-in-een-engelse-tekst.html): Je leert in folders, mededelingen en advertenties snel de informatie te vinden die je nodig hebt: tijden, prijzen, voorwaarden en uitzonderingen, door te…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen

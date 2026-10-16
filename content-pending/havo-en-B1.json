@@ -1,0 +1,686 @@
+{
+ "id": "B1",
+ "lo": "en.B.1",
+ "gs": 2,
+ "naam": "Relevante informatie vinden in een Engelse tekst",
+ "beschrijving": "Je leert in folders, mededelingen en advertenties snel de informatie te vinden die je nodig hebt: tijden, prijzen, voorwaarden en uitzonderingen, door te skimmen en te scannen en door te kiezen wat bij de vraag past.",
+ "ceStatus": "CE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Skimmen en scannen",
+  "Gegevens vinden: tijden, prijzen en plaatsen",
+  "Voorwaarden en uitzonderingen",
+  "Informatie kiezen bij een behoefte",
+  "Hoofdzaak en bijzaak onderscheiden"
+ ],
+ "sam": "Bij een Engelse folder of mededeling hoef je niet alles te lezen. Je leest eerst de opdracht en haalt er sleutelwoorden uit. Daarna skim je om te zien waar de tekst over gaat en scan je op het gevraagde gegeven: een tijd, een prijs of een voorwaarde. Let op woorden als only, unless, except, at least en up to: ze veranderen wie of wanneer iets geldt. Reken zo nodig na (korting, dagen te laat, uren) en controleer of de informatie echt bij de vraag past.",
+ "begrippen": [
+  {
+   "t": "Skimmen",
+   "d": "Een tekst snel doorlezen om te weten waar hij over gaat."
+  },
+  {
+   "t": "Scannen",
+   "d": "Gericht zoeken naar één gegeven, zoals een tijd of een prijs."
+  },
+  {
+   "t": "Sleutelwoord",
+   "d": "Een belangrijk woord in de opdracht dat je in de tekst zoekt."
+  },
+  {
+   "t": "Relevante informatie",
+   "d": "Informatie die een antwoord geeft op de vraag of de behoefte."
+  },
+  {
+   "t": "Detail",
+   "d": "Een klein gegeven in de tekst, zoals een tijd, een prijs of een aantal."
+  },
+  {
+   "t": "Voorwaarde",
+   "d": "Iets wat moet kloppen voordat iets geldt, vaak ingeleid door if of only."
+  },
+  {
+   "t": "Uitzondering",
+   "d": "Een geval waarvoor de regel niet geldt, ingeleid door except of unless."
+  },
+  {
+   "t": "Behoefte",
+   "d": "Wat de lezer wil weten of kunnen, zoals een goedkope kaart of een openingstijd."
+  },
+  {
+   "t": "Bijzaak",
+   "d": "Informatie die niet nodig is voor de vraag."
+  },
+  {
+   "t": "Tijdsaanduiding",
+   "d": "Een woord of getal dat tijd aangeeft, zoals weekdays of before 1 May."
+  },
+  {
+   "t": "Korting",
+   "d": "Een bedrag of percentage dat van de prijs afgaat."
+  },
+  {
+   "t": "Narekenen",
+   "d": "Uitrekenen met de gegevens uit de tekst, zoals dagen te laat maal een bedrag."
+  }
+ ],
+ "sv": [
+  {
+   "v": "What does \"scanning\" mean when you read a text?",
+   "o": [
+    "reading every word slowly and carefully",
+    "looking quickly for one specific detail",
+    "reading only the first sentence of the text",
+    "translating each sentence into Dutch"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Scannen: gericht zoeken naar een detail.",
+   "uo": [
+    "Koos je \"reading every word slowly and carefully\"? Dan denk je dat scannen hetzelfde is als zorgvuldig lezen. Dan lees je alles, terwijl scannen juist alleen naar het gegeven zoekt.",
+    "Klopt: bij scannen zoek je gericht naar één gegeven, zoals een tijd of een prijs, en lees je de rest niet.",
+    "Koos je \"reading only the first sentence of the text\"? Dan denk je dat scannen betekent dat je maar een zin leest. Dat is een deel van skimmen, scannen zoekt in de hele tekst naar één detail.",
+    "Koos je \"translating each sentence into Dutch\"? Dan denk je dat vertalen bij scannen hoort. Dat kost veel tijd, bij scannen hoef je niet te vertalen."
+   ],
+   "uh": "Scannen is zoeken."
+  },
+  {
+   "v": "Which strategy is best for finding an opening time in a notice?",
+   "o": [
+    "read the text word for word from the top",
+    "guess the time from the title only",
+    "look up every unknown word first",
+    "scan the text for numbers and days"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Zoek bij een tijd of prijs naar cijfers en dagnamen.",
+   "uo": [
+    "Koos je \"read the text word for word from the top\"? Dan denk je dat alles lezen sneller is. Je verspilt tijd, want de tijd staat tussen veel bijzaken.",
+    "Koos je \"guess the time from the title only\"? Dan denk je dat de titel de tijd noemt. Meestal staat hij in de tekst, dus je moet in de tekst zoeken.",
+    "Koos je \"look up every unknown word first\"? Dan denk je dat je eerst alle woorden moet kennen. Dat kost tijd, voor een tijd heb je ze niet nodig.",
+    "Klopt: een openingstijd bestaat uit getallen en dagen, dus scan je op cijfers en dagnamen."
+   ],
+   "uh": "Scan op cijfers."
+  },
+  {
+   "v": "You must find out which text answers a task. What should you do first?",
+   "o": [
+    "read the task, then find key words",
+    "read the whole text twice before the task",
+    "choose the text with the most pictures",
+    "skip the task and look at the pictures"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Begin altijd bij de opdracht en haal er de sleutelwoorden uit.",
+   "uo": [
+    "Klopt: eerst weet je wat je zoekt, dan zoek je die sleutelwoorden in de tekst.",
+    "Koos je \"read the whole text twice before the task\"? Dan denk je dat je eerst alles moet lezen. Je weet dan nog niet waar je op let, dus lees je eerst de opdracht.",
+    "Koos je \"choose the text with the most pictures\"? Dan denk je dat de langste tekst de meeste antwoorden heeft. De lengte zegt niets, de opdracht bepaalt wat relevant is.",
+    "Koos je \"skip the task and look at the pictures\"? Dan denk je dat plaatjes genoeg zijn. Ze geven maar een deel, de opdracht zegt wat je moet vinden."
+   ],
+   "uh": "Eerst de opdracht."
+  },
+  {
+   "v": "What is the normal price of the camp?",
+   "o": [
+    "255 euros (the early bird price)",
+    "40 euros",
+    "295 euros",
+    "80 euros"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "De gewone prijs is 295 euros.",
+   "uo": [
+    "Koos je \"255 euros (the early bird price)\"? Dan denk je dat dit de gewone prijs is. 255 is 295 min 40 en geldt alleen bij vroeg boeken, de gewone prijs is 295.",
+    "Koos je \"40 euros\"? Dan denk je dat 40 de prijs is. Dat is alleen de korting, geen kampprijs.",
+    "Klopt: de tekst noemt de prijs 295 euros; het early bird-bedrag is lager en geldt alleen vóór 1 mei.",
+    "Koos je \"80 euros\"? Dan denk je dat 80 de prijs is. Dat is een percentage bij annuleren, geen prijs."
+   ],
+   "uh": "Prijs: 295.",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  },
+  {
+   "v": "On which day does the library close at 17.00?",
+   "o": [
+    "Monday",
+    "Saturday",
+    "Friday",
+    "Sunday"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Vrijdag sluit de bieb om 17.00.",
+   "uo": [
+    "Koos je \"Monday\"? Dan denk je dat maandag eerder sluit. Maandag tot en met donderdag sluit om 20.00, vrijdag om 17.00.",
+    "Koos je \"Saturday\"? Dan denk je dat zaterdag om 17.00 sluit. Op zaterdag sluit de bieb om 14.00, vrijdag om 17.00.",
+    "Klopt: op vrijdag sluit de bieb eerder, om 17.00 uur.",
+    "Koos je \"Sunday\"? Dan denk je dat zondag open is. Op zondag is de bieb dicht, vrijdag sluit om 17.00."
+   ],
+   "uh": "Vrijdag: 17.00.",
+   "ctx": "Westbrook Public Library: new opening hours from 1 September. Monday to Thursday we are open from 9.00 to 20.00. On Friday we close earlier, at 17.00, and on Saturday the library is open from 10.00 until 14.00. We are closed on Sundays and public holidays. Members can borrow up to ten books for four weeks; DVDs may be kept for one week only. If you return an item late, you pay 20 cents per day, except for children under 12, who never pay a fine. Study rooms must be booked at the desk at least one day in advance and can be used for two hours at a time. Please note that from October the cafe on the ground floor will be closed for repairs, but coffee is still available at the front desk."
+  },
+  {
+   "v": "At what time do the gates open?",
+   "o": [
+    "19.30",
+    "21.15, when the film starts",
+    "19.00",
+    "18.00"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Gates open: 19.30.",
+   "uo": [
+    "Klopt: de poorten gaan om 19.30 uur open, de film begint pas als het donker is.",
+    "Koos je \"21.15, when the film starts\"? Dan denk je dat de poort om 21.15 opengaat. Dat is het tijdstip waarop de film begint, de poort gaat eerder open.",
+    "Koos je \"19.00\"? Dan denk je dat de poort om 19.00 opengaat. Dat staat er niet, de tekst noemt 19.30.",
+    "Koos je \"18.00\"? Dan denk je dat 18.00 de openingstijd is. Dat is de uiterste tijd voor online kopen, op vrijdag."
+   ],
+   "uh": "Poort: 19.30.",
+   "ctx": "Open Air Film Night in Greenfield Park, Saturday 14 August. Gates open at 19.30 and the film starts when it gets dark, at about 21.15. Tickets cost 9 euros (7 euros for students with a valid card) and can only be bought online until Friday 18.00; if the evening is not sold out, a few tickets will be sold at the gate for 11 euros. Bring a blanket or a folding chair, because seats are not provided. Food trucks will be selling snacks from 19.30, but outside drinks and glass bottles are not allowed. If it rains heavily, the film is moved to Sunday 15 August at the same time. Dogs on a lead are welcome. Visitors in wheelchairs can use the special entrance at the east gate, where volunteers will help."
+  },
+  {
+   "v": "From which station does the bus leave?",
+   "o": [
+    "Amsterdam",
+    "The Hague",
+    "the coast",
+    "Utrecht"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "De bus vertrekt bij Utrecht station.",
+   "uo": [
+    "Koos je \"Amsterdam\"? Dan denk je dat het kamp bij Amsterdam begint. Dat staat nergens, de tekst noemt Utrecht.",
+    "Koos je \"The Hague\"? Dan denk je dat de bus in Den Haag vertrekt. Dat staat er niet, de tekst noemt Utrecht.",
+    "Koos je \"the coast\"? Dan denk je dat de bus bij de kust vertrekt. De kust is waar het kamp is, het vertrekpunt is Utrecht station.",
+    "Klopt: de bus vertrekt bij het station van Utrecht om 8.30 uur."
+   ],
+   "uh": "Utrecht.",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  },
+  {
+   "v": "How much does Mia pay if she registers on 20 April?",
+   "o": [
+    "295 euros (the full price)",
+    "255 euros",
+    "335 euros",
+    "215 euros"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Vóór 1 mei is het 40 euros goedkoper.",
+   "uo": [
+    "Koos je \"295 euros (the full price)\"? Dan denk je dat de korting niet geldt. 20 april is vóór 1 mei, dus is de korting wel van toepassing.",
+    "Klopt: vóór 1 mei geldt de early bird-korting, dus 295 min 40 is 255 euros.",
+    "Koos je \"335 euros\"? Dan denk je dat je de korting erbij optelt. Een korting trek je af, dus 295 min 40.",
+    "Koos je \"215 euros\"? Dan denk je dat je de korting twee keer aftrekt. De korting is eenmalig 40 euros, dus 255."
+   ],
+   "uh": "Rekenen: 295 min 40.",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  },
+  {
+   "v": "Someone who paid 295 euros cancels 40 days before the start. How much money does she get back?",
+   "o": [
+    "295 euros, everything she paid",
+    "59 euros",
+    "255 euros",
+    "236 euros"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Annuleren tot 30 dagen vooraf: 80% terug.",
+   "uo": [
+    "Koos je \"295 euros, everything she paid\"? Dan denk je dat je alles terugkrijgt. Het is maar 80%, dus niet het hele bedrag.",
+    "Koos je \"59 euros\"? Dan denk je dat je alleen de 20% terugkrijgt. Dat is wat je kwijt bent, je krijgt 80% terug.",
+    "Koos je \"255 euros\"? Dan denk je dat dit het bedrag na korting is. Dit is niet de terugbetaling, 80% van 295 is 236.",
+    "Klopt: meer dan 30 dagen vooraf krijg je 80% terug, en 80% van 295 is 236."
+   ],
+   "uh": "80% van 295.",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  },
+  {
+   "v": "What is NOT included in the price?",
+   "o": [
+    "meals",
+    "travel insurance",
+    "a bus from Utrecht station",
+    "equipment"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek na Not included naar wat extra kost.",
+   "uo": [
+    "Koos je \"meals\"? Dan denk je dat eten niet inbegrepen is. Meals staan bij de prijs inbegrepen, dus ze zijn inbegrepen.",
+    "Klopt: onder \"Not included\" staan reisverzekering en zakgeld.",
+    "Koos je \"a bus from Utrecht station\"? Dan denk je dat de bus extra kost. De bus is bij de prijs inbegrepen, dus ze is inbegrepen.",
+    "Koos je \"equipment\"? Dan denk je dat materiaal niet inbegrepen is. Equipment staat bij de prijs, dus het is inbegrepen."
+   ],
+   "uh": "Not included.",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  },
+  {
+   "v": "Who never pays a fine for late items?",
+   "o": [
+    "members over 65",
+    "students",
+    "children under 12",
+    "people who borrow DVDs only"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Let op except: een uitzondering op de regel.",
+   "uo": [
+    "Koos je \"members over 65\"? Dan denk je dat ouderen vrijgesteld zijn. Daar staat niets over, alleen kinderen onder 12 betalen nooit.",
+    "Koos je \"students\"? Dan denk je dat studenten niets betalen. Dat staat niet in de tekst, alleen kinderen onder 12 zijn vrijgesteld.",
+    "Klopt: de uitzondering \"except for children under 12\" geldt voor boetes.",
+    "Koos je \"people who borrow DVDs only\"? Dan denk je dat een dvd een vrijstelling geeft. Een dvd mag maar een week, en te laat betaal je 20 cent per dag."
+   ],
+   "uh": "Except: uitzondering.",
+   "ctx": "Westbrook Public Library: new opening hours from 1 September. Monday to Thursday we are open from 9.00 to 20.00. On Friday we close earlier, at 17.00, and on Saturday the library is open from 10.00 until 14.00. We are closed on Sundays and public holidays. Members can borrow up to ten books for four weeks; DVDs may be kept for one week only. If you return an item late, you pay 20 cents per day, except for children under 12, who never pay a fine. Study rooms must be booked at the desk at least one day in advance and can be used for two hours at a time. Please note that from October the cafe on the ground floor will be closed for repairs, but coffee is still available at the front desk."
+  },
+  {
+   "v": "How long can a visitor use a study room at a time?",
+   "o": [
+    "two hours",
+    "one day",
+    "four weeks",
+    "one hour"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Studieruimte: twee uur per keer.",
+   "uo": [
+    "Klopt: een studieruimte mag twee uur per keer worden gebruikt.",
+    "Koos je \"one day\"? Dan denk je dat je een hele dag mag blijven. Een dag is de tijd om vooraf te boeken, niet de gebruiksduur.",
+    "Koos je \"four weeks\"? Dan denk je dat vier weken geldt. Dat is de leentijd van boeken, niet van studieruimtes.",
+    "Koos je \"one hour\"? Dan denk je dat het een uur is. De tekst noemt twee uur, per keer."
+   ],
+   "uh": "Twee uur.",
+   "ctx": "Westbrook Public Library: new opening hours from 1 September. Monday to Thursday we are open from 9.00 to 20.00. On Friday we close earlier, at 17.00, and on Saturday the library is open from 10.00 until 14.00. We are closed on Sundays and public holidays. Members can borrow up to ten books for four weeks; DVDs may be kept for one week only. If you return an item late, you pay 20 cents per day, except for children under 12, who never pay a fine. Study rooms must be booked at the desk at least one day in advance and can be used for two hours at a time. Please note that from October the cafe on the ground floor will be closed for repairs, but coffee is still available at the front desk."
+  },
+  {
+   "v": "Under which condition is the film moved to Sunday?",
+   "o": [
+    "if it rains heavily",
+    "if the tickets are sold out",
+    "if it gets dark early",
+    "if a dog arrives without a lead"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek bij voorwaarden naar if.",
+   "uo": [
+    "Klopt: bij zware regen verhuist de film naar zondag 15 augustus.",
+    "Koos je \"if the tickets are sold out\"? Dan denk je dat uitverkocht de film verplaatst. Uitverkocht betekent alleen geen kaartjes aan de poort, de film blijft.",
+    "Koos je \"if it gets dark early\"? Dan denk je dat het donker worden de film verplaatst. De film begint juist als het donker is, dat is het normale plan.",
+    "Koos je \"if a dog arrives without a lead\"? Dan denk je dat honden de film verplaatsen. Honden aan de lijn zijn welkom, dat verandert niets."
+   ],
+   "uh": "If: voorwaarde.",
+   "ctx": "Open Air Film Night in Greenfield Park, Saturday 14 August. Gates open at 19.30 and the film starts when it gets dark, at about 21.15. Tickets cost 9 euros (7 euros for students with a valid card) and can only be bought online until Friday 18.00; if the evening is not sold out, a few tickets will be sold at the gate for 11 euros. Bring a blanket or a folding chair, because seats are not provided. Food trucks will be selling snacks from 19.30, but outside drinks and glass bottles are not allowed. If it rains heavily, the film is moved to Sunday 15 August at the same time. Dogs on a lead are welcome. Visitors in wheelchairs can use the special entrance at the east gate, where volunteers will help."
+  },
+  {
+   "v": "How much does a student pay if he buys online on Friday at 15.00?",
+   "o": [
+    "9 euros",
+    "11 euros",
+    "7 euros",
+    "5 euros"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Online voor 18.00: 9 euros, studenten 7 euros.",
+   "uo": [
+    "Koos je \"9 euros\"? Dan denk je dat studenten het normale tarief betalen. Studenten hebben korting met een geldige kaart, dus 7 euros.",
+    "Koos je \"11 euros\"? Dan denk je dat dit de prijs online is. Dat is de prijs aan de poort, online betalen is goedkoper.",
+    "Klopt: studenten betalen online 7 euros, en vrijdag 15.00 is vóór de deadline van 18.00.",
+    "Koos je \"5 euros\"? Dan denk je dat studenten nog minder betalen. De tekst noemt 7 euros, niet 5."
+   ],
+   "uh": "Student online: 7.",
+   "ctx": "Open Air Film Night in Greenfield Park, Saturday 14 August. Gates open at 19.30 and the film starts when it gets dark, at about 21.15. Tickets cost 9 euros (7 euros for students with a valid card) and can only be bought online until Friday 18.00; if the evening is not sold out, a few tickets will be sold at the gate for 11 euros. Bring a blanket or a folding chair, because seats are not provided. Food trucks will be selling snacks from 19.30, but outside drinks and glass bottles are not allowed. If it rains heavily, the film is moved to Sunday 15 August at the same time. Dogs on a lead are welcome. Visitors in wheelchairs can use the special entrance at the east gate, where volunteers will help."
+  },
+  {
+   "v": "What is NOT allowed in the park?",
+   "o": [
+    "dogs on a lead",
+    "glass bottles",
+    "blankets",
+    "folding chairs"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Zoek bij verboden naar not allowed.",
+   "uo": [
+    "Koos je \"dogs on a lead\"? Dan denk je dat honden verboden zijn. Honden aan de lijn worden juist als welkom genoemd, dus ze mogen het park in.",
+    "Klopt: de tekst verbiedt drank van buiten en glazen flessen.",
+    "Koos je \"blankets\"? Dan denk je dat dekens verboden zijn. Een deken wordt juist gevraagd, want er zijn geen stoelen.",
+    "Koos je \"folding chairs\"? Dan denk je dat klapstoelen verboden zijn. Ze staan naast de deken als iets om mee te nemen, dus ze zijn toegestaan."
+   ],
+   "uh": "Not allowed.",
+   "ctx": "Open Air Film Night in Greenfield Park, Saturday 14 August. Gates open at 19.30 and the film starts when it gets dark, at about 21.15. Tickets cost 9 euros (7 euros for students with a valid card) and can only be bought online until Friday 18.00; if the evening is not sold out, a few tickets will be sold at the gate for 11 euros. Bring a blanket or a folding chair, because seats are not provided. Food trucks will be selling snacks from 19.30, but outside drinks and glass bottles are not allowed. If it rains heavily, the film is moved to Sunday 15 August at the same time. Dogs on a lead are welcome. Visitors in wheelchairs can use the special entrance at the east gate, where volunteers will help."
+  },
+  {
+   "v": "How many hours is the library open on Saturday?",
+   "o": [
+    "eight hours",
+    "five hours",
+    "three hours",
+    "four hours"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Reken de tijden uit: eindtijd min begintijd.",
+   "uo": [
+    "Koos je \"eight hours\"? Dan denk je dat zaterdag even lang is als een gewone dag. Zaterdag sluit al om 14.00, dus vier uur.",
+    "Koos je \"five hours\"? Dan denk je dat je beide tijdstippen meetelt. 10, 11, 12, 13 en 14 zijn vijf tijdstippen, maar de uren daartussen zijn vier.",
+    "Koos je \"three hours\"? Dan denk je dat de bieb om 13.00 sluit. Hij sluit pas om 14.00, dus het zijn vier uur.",
+    "Klopt: zaterdag van 10.00 tot 14.00 is vier uur."
+   ],
+   "uh": "14 min 10.",
+   "ctx": "Westbrook Public Library: new opening hours from 1 September. Monday to Thursday we are open from 9.00 to 20.00. On Friday we close earlier, at 17.00, and on Saturday the library is open from 10.00 until 14.00. We are closed on Sundays and public holidays. Members can borrow up to ten books for four weeks; DVDs may be kept for one week only. If you return an item late, you pay 20 cents per day, except for children under 12, who never pay a fine. Study rooms must be booked at the desk at least one day in advance and can be used for two hours at a time. Please note that from October the cafe on the ground floor will be closed for repairs, but coffee is still available at the front desk."
+  },
+  {
+   "v": "Why does the leaflet mention the number 15 in connection with bikes?",
+   "o": [
+    "a bike costs 15 euros",
+    "room for 15 bikes, so book early",
+    "15 people may ride one bike together",
+    "a bike trip takes 15 days"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Cijfers kunnen een aantal, een prijs of een tijd zijn: kijk wat erbij staat.",
+   "uo": [
+    "Koos je \"a bike costs 15 euros\"? Dan denk je dat 15 een prijs is. Het is een aantal fietsen, geen prijs.",
+    "Klopt: er is plaats voor 15 fietsen, dus je moet bij het inschrijven boeken.",
+    "Koos je \"15 people may ride one bike together\"? Dan denk je dat het aantal mensen per fiets is. Het gaat om de plaatsen voor fietsen, niet om mensen.",
+    "Koos je \"a bike trip takes 15 days\"? Dan denk je dat het kamp 15 dagen duurt. Het kamp duurt tien dagen, 15 is het aantal fietsen."
+   ],
+   "uh": "Wat telt 15?",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  },
+  {
+   "v": "Which teenager should be advised NOT to join this camp?",
+   "o": [
+    "Sara, 17, who likes sailing",
+    "Tom, 13, who has never climbed",
+    "Lisa, 15, who wants to bring her bike",
+    "Ben, 12, who needs a train to Utrecht"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Controleer eerst de voorwaarde (leeftijd) voordat je kiest.",
+   "uo": [
+    "Klopt: het kamp is voor jongeren van 12 tot en met 16, dus 17 is te oud, hoe leuk ze zeilen ook vindt.",
+    "Koos je \"Tom, 13, who has never climbed\"? Dan denk je dat ervaring nodig is. De tekst zegt dat niemand ervaring nodig heeft, Tom valt binnen de leeftijd.",
+    "Koos je \"Lisa, 15, who wants to bring her bike\"? Dan denk je dat een fiets niet mag. Er is plaats voor 15 fietsen, Lisa moet alleen boeken.",
+    "Koos je \"Ben, 12, who needs a train to Utrecht\"? Dan denk je dat het station een probleem is. De bus vertrekt juist bij het station, Ben valt binnen de leeftijd."
+   ],
+   "uh": "Leeftijd 12-16.",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  },
+  {
+   "v": "Jan registered on 5 May and wants to cancel on 1 July without a reason. What does he get back?",
+   "o": [
+    "80% of the full price, 236 euros",
+    "80% of the early bird price, 204 euros",
+    "the whole price of 295 euros",
+    "nothing, unless he has a note"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Let op de deadline: eerst de datum, dan de regel.",
+   "uo": [
+    "Koos je \"80% of the full price, 236 euros\"? Dan denk je dat hij 80% terugkrijgt. Dat geldt alleen tot 30 dagen vooraf, 1 juli is te laat.",
+    "Koos je \"80% of the early bird price, 204 euros\"? Dan denk je dat hij de early bird-prijs betaalde. Hij schreef zich in na 1 mei, en is te laat voor teruggave.",
+    "Koos je \"the whole price of 295 euros\"? Dan denk je dat hij alles terugkrijgt. Dat geldt nooit zonder reden, na de termijn is er niets.",
+    "Klopt: 1 juli is minder dan 30 dagen voor 12 juli, dus alleen met een doktersverklaring krijg je geld terug."
+   ],
+   "uh": "30 dagen vooraf.",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  },
+  {
+   "v": "A parent wants to phone Maria on Saturday morning. What does the leaflet say?",
+   "o": [
+    "yes, Maria answers the phone every day",
+    "yes, but only after 16.00 in the afternoon",
+    "no, the line is for weekdays only",
+    "no, there is no phone number at all"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Combineer dag en tijd om te zien of iets kan.",
+   "uo": [
+    "Koos je \"yes, Maria answers the phone every day\"? Dan denk je dat er elke dag iemand is. De tekst noemt alleen weekdagen, zaterdag valt erbuiten.",
+    "Koos je \"yes, but only after 16.00 in the afternoon\"? Dan denk je dat er na 16.00 wel iemand is. De uren zijn 10.00-16.00, alleen op weekdagen.",
+    "Klopt: Maria is op weekdagen tussen 10.00 en 16.00 bereikbaar, dus niet op zaterdag.",
+    "Koos je \"no, there is no phone number at all\"? Dan denk je dat er geen nummer is. Het nummer staat in de tekst, maar alleen op weekdagen te bellen."
+   ],
+   "uh": "Weekdagen only.",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  },
+  {
+   "v": "Emma, 15, borrows a DVD on 1 September and returns it on 12 September. How much does she pay?",
+   "o": [
+    "2.80 euros",
+    "nothing",
+    "80 cents",
+    "20 cents"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Reken: deadline, dagen te laat, dagbedrag.",
+   "uo": [
+    "Koos je \"2.80 euros\"? Dan denk je dat je 14 dagen telt. De deadline is na een week, alleen de dagen daarna tellen.",
+    "Koos je \"nothing\"? Dan denk je dat ze niets betaalt. Alleen kinderen onder 12 zijn vrijgesteld, Emma is 15.",
+    "Klopt: een dvd mag een week, dus 8 september is de deadline, en 4 dagen te laat is 4 maal 20 cent.",
+    "Koos je \"20 cents\"? Dan denk je dat het een vast bedrag is. Je betaalt 20 cent per dag, dus meer dan een dag kost meer."
+   ],
+   "uh": "8 sept deadline.",
+   "ctx": "Westbrook Public Library: new opening hours from 1 September. Monday to Thursday we are open from 9.00 to 20.00. On Friday we close earlier, at 17.00, and on Saturday the library is open from 10.00 until 14.00. We are closed on Sundays and public holidays. Members can borrow up to ten books for four weeks; DVDs may be kept for one week only. If you return an item late, you pay 20 cents per day, except for children under 12, who never pay a fine. Study rooms must be booked at the desk at least one day in advance and can be used for two hours at a time. Please note that from October the cafe on the ground floor will be closed for repairs, but coffee is still available at the front desk."
+  },
+  {
+   "v": "It is Sunday. Jim wants to book a study room for Monday. What is the problem?",
+   "o": [
+    "rooms can only be booked for two hours at a time",
+    "he has to book four weeks ahead of time",
+    "study rooms are closed from October on",
+    "closed on Sunday, so he cannot book at the desk"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Combineer twee regels: aan de balie en minstens een dag vooraf.",
+   "uo": [
+    "Koos je \"rooms can only be booked for two hours at a time\"? Dan denk je dat twee uur een probleem is. Dat is de gebruiksduur, niet de boekingsregel.",
+    "Koos je \"he has to book four weeks ahead of time\"? Dan denk je dat je vier weken vooraf moet boeken. Vier weken is de leentijd, niet de boekingstermijn.",
+    "Koos je \"study rooms are closed from October on\"? Dan denk je dat de studieruimtes dicht zijn. Alleen het cafe is vanaf oktober dicht, de studieruimtes niet.",
+    "Klopt: boeken moet aan de balie, minstens een dag vooraf, en op zondag is de bieb dicht."
+   ],
+   "uh": "Balie plus zondag.",
+   "ctx": "Westbrook Public Library: new opening hours from 1 September. Monday to Thursday we are open from 9.00 to 20.00. On Friday we close earlier, at 17.00, and on Saturday the library is open from 10.00 until 14.00. We are closed on Sundays and public holidays. Members can borrow up to ten books for four weeks; DVDs may be kept for one week only. If you return an item late, you pay 20 cents per day, except for children under 12, who never pay a fine. Study rooms must be booked at the desk at least one day in advance and can be used for two hours at a time. Please note that from October the cafe on the ground floor will be closed for repairs, but coffee is still available at the front desk."
+  },
+  {
+   "v": "What is the purpose of the last sentence about the cafe?",
+   "o": [
+    "to warn about a change from October",
+    "to advertise the new coffee in the library",
+    "to ask visitors for money for the repairs",
+    "to explain how visitors can borrow books"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "\"Please note\" kondigt belangrijke informatie aan.",
+   "uo": [
+    "Klopt: \"Please note\" kondigt een verandering aan: het cafe gaat vanaf oktober dicht.",
+    "Koos je \"to advertise the new coffee in the library\"? Dan denk je dat het een reclame is. De zin meldt een sluiting, geen nieuw product.",
+    "Koos je \"to ask visitors for money for the repairs\"? Dan denk je dat er geld gevraagd wordt. Er staat niets over geld, het is een mededeling.",
+    "Koos je \"to explain how visitors can borrow books\"? Dan denk je dat het over lenen gaat. Dat staat eerder in de tekst, deze zin gaat over het cafe."
+   ],
+   "uh": "Please note.",
+   "ctx": "Westbrook Public Library: new opening hours from 1 September. Monday to Thursday we are open from 9.00 to 20.00. On Friday we close earlier, at 17.00, and on Saturday the library is open from 10.00 until 14.00. We are closed on Sundays and public holidays. Members can borrow up to ten books for four weeks; DVDs may be kept for one week only. If you return an item late, you pay 20 cents per day, except for children under 12, who never pay a fine. Study rooms must be booked at the desk at least one day in advance and can be used for two hours at a time. Please note that from October the cafe on the ground floor will be closed for repairs, but coffee is still available at the front desk."
+  },
+  {
+   "v": "Which advice is best for a visitor in a wheelchair?",
+   "o": [
+    "buy a ticket at the gate on Saturday",
+    "use the east gate with volunteers",
+    "arrive after 21.15 when the film starts",
+    "bring only a folding chair and a blanket"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek bij een doelgroep naar de bijpassende informatie.",
+   "uo": [
+    "Koos je \"buy a ticket at the gate on Saturday\"? Dan denk je dat de poort de ingang is. Kaartjes aan de poort zijn er maar beperkt, de speciale ingang is oost.",
+    "Klopt: de tekst noemt een speciale ingang bij de oostpoort met hulp van vrijwilligers.",
+    "Koos je \"arrive after 21.15 when the film starts\"? Dan denk je dat je later moet komen. Daar staat niets over, de speciale ingang is er altijd.",
+    "Koos je \"bring only a folding chair and a blanket\"? Dan denk je dat een klapstoel de oplossing is. Je hebt een rolstoel, de tekst noemt de oostpoort."
+   ],
+   "uh": "Doelgroep: oostpoort.",
+   "ctx": "Open Air Film Night in Greenfield Park, Saturday 14 August. Gates open at 19.30 and the film starts when it gets dark, at about 21.15. Tickets cost 9 euros (7 euros for students with a valid card) and can only be bought online until Friday 18.00; if the evening is not sold out, a few tickets will be sold at the gate for 11 euros. Bring a blanket or a folding chair, because seats are not provided. Food trucks will be selling snacks from 19.30, but outside drinks and glass bottles are not allowed. If it rains heavily, the film is moved to Sunday 15 August at the same time. Dogs on a lead are welcome. Visitors in wheelchairs can use the special entrance at the east gate, where volunteers will help."
+  },
+  {
+   "v": "The forecast for Saturday 14 August shows heavy rain. What should Anna plan?",
+   "o": [
+    "to come on Saturday at 19.30 anyway",
+    "to ask for her money back at the gate",
+    "to bring a tent to the park",
+    "to come on Sunday at the same time"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Zoek bij het weer naar de voorwaarde met rain.",
+   "uo": [
+    "Koos je \"to come on Saturday at 19.30 anyway\"? Dan denk je dat de film gewoon doorgaat. Bij zware regen is hij verplaatst, dus zondag.",
+    "Koos je \"to ask for her money back at the gate\"? Dan denk je dat de tekst teruggave noemt. Daar staat niets over, alleen de verplaatsing.",
+    "Koos je \"to bring a tent to the park\"? Dan denk je dat een tent de oplossing is. De tekst noemt een andere dag, geen tent.",
+    "Klopt: bij zware regen wordt de film verplaatst naar zondag 15 augustus op hetzelfde tijdstip."
+   ],
+   "uh": "Rain: zondag.",
+   "ctx": "Open Air Film Night in Greenfield Park, Saturday 14 August. Gates open at 19.30 and the film starts when it gets dark, at about 21.15. Tickets cost 9 euros (7 euros for students with a valid card) and can only be bought online until Friday 18.00; if the evening is not sold out, a few tickets will be sold at the gate for 11 euros. Bring a blanket or a folding chair, because seats are not provided. Food trucks will be selling snacks from 19.30, but outside drinks and glass bottles are not allowed. If it rains heavily, the film is moved to Sunday 15 August at the same time. Dogs on a lead are welcome. Visitors in wheelchairs can use the special entrance at the east gate, where volunteers will help."
+  },
+  {
+   "v": "Why does the text say \"seats are not provided\"?",
+   "o": [
+    "visitors bring their own seat",
+    "the park has no benches for dogs",
+    "tickets include no chairs for students",
+    "seats are for wheelchairs only"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Lees een zin als een instructie: wat moet de lezer doen?",
+   "uo": [
+    "Klopt: er zijn geen stoelen, dus je neemt zelf een deken of klapstoel mee.",
+    "Koos je \"the park has no benches for dogs\"? Dan denk je dat het om honden gaat. De zin gaat over bezoekers, je moet zelf een zitplek meenemen.",
+    "Koos je \"tickets include no chairs for students\"? Dan denk je dat het om studentenkaartjes gaat. Het geldt voor iedereen, je brengt zelf iets mee.",
+    "Koos je \"seats are for wheelchairs only\"? Dan denk je dat stoelen alleen voor rolstoelen zijn. De zin zegt dat er geen stoelen zijn, neem zelf iets mee."
+   ],
+   "uh": "Zelf meenemen.",
+   "ctx": "Open Air Film Night in Greenfield Park, Saturday 14 August. Gates open at 19.30 and the film starts when it gets dark, at about 21.15. Tickets cost 9 euros (7 euros for students with a valid card) and can only be bought online until Friday 18.00; if the evening is not sold out, a few tickets will be sold at the gate for 11 euros. Bring a blanket or a folding chair, because seats are not provided. Food trucks will be selling snacks from 19.30, but outside drinks and glass bottles are not allowed. If it rains heavily, the film is moved to Sunday 15 August at the same time. Dogs on a lead are welcome. Visitors in wheelchairs can use the special entrance at the east gate, where volunteers will help."
+  },
+  {
+   "v": "Which part of the leaflet can you skip if you only need the departure time?",
+   "o": [
+    "the sentence with the bus and the date",
+    "the part about the cancellation rules",
+    "the heading with the dates",
+    "the line about 8.30"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Sla over wat geen antwoord op de vraag geeft.",
+   "uo": [
+    "Koos je \"the sentence with the bus and the date\"? Dan denk je dat dit niet nodig is. Daar staat de vertrektijd, dus lees je dit wel.",
+    "Klopt: de annuleringsregels bevatten geen vertrektijd, dus die kun je overslaan.",
+    "Koos je \"the heading with the dates\"? Dan denk je dat de kop onbelangrijk is. Daar staan de kampdata, relevant voor de vertrekdag.",
+    "Koos je \"the line about 8.30\"? Dan denk je dat de tijd onbelangrijk is. 8.30 is de vertrektijd, dus relevant."
+   ],
+   "uh": "Niet relevant: annuleren.",
+   "ctx": "Sunnyside Summer Camp, 12-23 July. Are you between 12 and 16 and do you love being outdoors? Join us on the coast for ten days of sailing, climbing and campfires. The price is 295 euros and includes meals, equipment and a bus from Utrecht station (departure 8.30 on 12 July). Bringing your own bike? There is room for 15 bikes only, so please book that when you register. Early bird: register before 1 May and pay 40 euros less. Not included: travel insurance and pocket money. Cancelling? Up to 30 days before the start you get back 80% of the price; after that no money is returned unless you have a doctor's note. Questions? Call Maria on 030 555 0147 (weekdays 10.00-16.00) or send an email."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Harbour Hostel offers beds from 22 euros per night in a shared room of six. Breakfast costs 6 euros extra and is served from 7.30 to 10.00. Check-in is possible from 15.00; if you arrive after 22.00 you must call ahead. Luggage can be stored free of charge on the day of departure. Pets are not allowed, except guide dogs.",
+   "v": "Mara arrives at 23.30 and wants breakfast at 10.30. Which two problems does she have?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze komt na 22.00 en moet vooraf bellen (1p). Het ontbijt eindigt om 10.00, dus 10.30 is te laat (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Sale at Bookworm: 30% off all paperbacks, but not on new releases. Hardbacks are 15% off when you buy two or more. The sale ends on Sunday at 17.00. Students show a card for an extra 5% off. Returns are possible within 14 days with a receipt.",
+   "v": "Lena buys one hardback and one old paperback. Which discounts apply and which not? Explain.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Paperback (geen nieuwe uitgave): 30% korting (1p). Hardback: de korting geldt alleen bij twee of meer, dus niet (1p). Studentenkorting alleen met kaart (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Riverside Tennis Club welcomes new members. A trial lesson costs 10 euros and rackets can be borrowed for free. You do not need to bring balls, but you must wear sports shoes with a flat sole. Lessons are on Tuesday and Thursday evenings from 19.00 to 20.00. Members pay 240 euros per year, but students under 21 pay half.",
+   "v": "A 19-year-old student wants to join. What does he pay as a member and what must he bring?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij betaalt de helft van 240, dus 120 euros (1p). Hij moet sportschoenen met een vlakke zool meenemen (1p). Ballen en racket hoeven niet (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Zoo tickets: adults 18 euros, children aged 4 to 11 euros 11, under 4 free. Family card (2 adults and up to 3 children) 55 euros. Parking costs 5 euros per car. Opening hours: 9.00 to 17.00 every day, last entrance at 16.00.",
+   "v": "Two adults and two children (aged 8 and 3) visit the zoo. What is the cheapest way to pay for the tickets? Explain.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Losse kaartjes: 2 maal 18 plus 11 plus 0 is 47 euros (1p). De familiekaart kost 55 euros en is duurder (1p). Het kind van 3 is gratis (1p). Parkeren is extra."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Open Air Film Night in Greenfield Park, Saturday 14 August. Gates open at 19.30. Tickets can only be bought online until Friday 18.00; a few tickets are sold at the gate for 11 euros if the evening is not sold out. If it rains heavily, the film is moved to Sunday.",
+   "v": "Until when can you buy tickets online? Explain why scanning is the best strategy for this question.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Tot vrijdag 18.00 (1p). Scannen op sleutelwoorden als online en until (1p). Je hoeft de rest niet te lezen en bespaart tijd (1p)."
+  }
+ ]
+}
