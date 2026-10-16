@@ -113575,6 +113575,692 @@ var VAKKEN = [
         "u": "Hij erkent het eerst met \"That may be true for some riders\" (1p). Hij weerlegt het met \"but accident figures ... show\" (1p). Het cijfer \"only one in a thousand trips ends in injury\" is het bewijs (1p)."
        }
       ]
+     },
+     {
+      "id": "B7",
+      "lo": "en.B.7",
+      "gs": 2,
+      "naam": "Brieven en e-mails lezen",
+      "beschrijving": "Je leert in Engelse brieven en e-mails het doel te herkennen, formeel en informeel taalgebruik te onderscheiden, verzoeken, afspraken en voorwaarden te vinden en de toon van de schrijver te begrijpen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Doel van de brief of e-mail",
+       "Formeel en informeel",
+       "Verzoeken en wat de lezer moet doen",
+       "Details en afspraken",
+       "Toon en gevoelens"
+      ],
+      "sam": "Een brief of e-mail heeft een doel: een klacht, een verzoek, een uitnodiging, een bedankje of nieuws. Aanhef en afsluiting laten zien of de toon formeel (Dear Sir or Madam, Yours faithfully) of informeel (Hi, Take care) is. Zoek wat de schrijver van de lezer wil: een verzoek (I would like to ask you), een uiterste datum (at the latest), een voorwaarde (if) of iets wat niet nodig is (no need to). Let op details als data, plaatsen en namen en op de toon: beleefd maar stellig, vriendelijk of enthousiast.",
+      "begrippen": [
+       {
+        "t": "Aanhef",
+        "d": "De begroeting aan het begin, zoals Dear Sir or Madam of Hi Jonas."
+       },
+       {
+        "t": "Afsluiting",
+        "d": "De groet aan het eind, zoals Yours faithfully of Take care."
+       },
+       {
+        "t": "Formeel",
+        "d": "Beleefd taalgebruik zonder spreektaal, voor onbekenden en bedrijven."
+       },
+       {
+        "t": "Informeel",
+        "d": "Los taalgebruik voor vrienden, met spreektaal en korte zinnen."
+       },
+       {
+        "t": "Doel",
+        "d": "Waarom de schrijver schrijft: klacht, verzoek, uitnodiging, bedankje."
+       },
+       {
+        "t": "Klacht",
+        "d": "Een brief waarin iemand zegt dat iets niet goed is."
+       },
+       {
+        "t": "Uitnodiging",
+        "d": "Een bericht waarin iemand vraagt of je komt, met datum en plaats."
+       },
+       {
+        "t": "Verzoek",
+        "d": "Een vraag aan de lezer om iets te doen."
+       },
+       {
+        "t": "Bijlage",
+        "d": "Iets dat bij de brief zit, zoals een bon (enclosed)."
+       },
+       {
+        "t": "Uiterste datum",
+        "d": "Het laatste moment om te reageren, aangegeven met at the latest."
+       },
+       {
+        "t": "Voorwaarde",
+        "d": "Iets wat moet kloppen, aangegeven met if."
+       },
+       {
+        "t": "Toon",
+        "d": "De sfeer van het bericht, zoals polite but firm of friendly."
+       }
+      ],
+      "sv": [
+       {
+        "v": "Which closing is formal in a letter to a company?",
+        "o": [
+         "Cheers, and see you soon!",
+         "Yours faithfully,",
+         "Take care, speak soon, bye!",
+         "See you later, alligator!"
+        ],
+        "c": 1,
+        "d": 1,
+        "s": 1,
+        "u": "Formeel: Yours faithfully of Yours sincerely, informeel: Cheers.",
+        "uo": [
+         "Koos je \"Cheers, and see you soon!\"? Dan denk je dat cheers formeel is. Het is een los woord tussen vrienden, niet voor een bedrijf.",
+         "Klopt: Yours faithfully past bij een formele brief aan Dear Sir or Madam.",
+         "Koos je \"Take care, speak soon, bye!\"? Dan denk je dat take care formeel is. Het is een vriendelijke afsluiting tussen bekenden, niet zakelijk.",
+         "Koos je \"See you later, alligator!\"? Dan denk je dat dit formeel is. Het is een grap tussen vrienden, niet voor een brief."
+        ],
+        "uh": "Yours faithfully."
+       },
+       {
+        "v": "Which greeting is informal?",
+        "o": [
+         "Dear Sir or Madam,",
+         "Dear Mr Ahmed, on behalf of us",
+         "To whom it may concern,",
+         "Hi Jonas,"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 1,
+        "u": "Informeel: Hi en een voornaam, formeel: Dear plus Sir, Madam of achternaam.",
+        "uo": [
+         "Koos je \"Dear Sir or Madam,\"? Dan denk je dat dit informeel is. Het is een formele aanhef voor een onbekende, dus formeel.",
+         "Koos je \"Dear Mr Ahmed, on behalf of us\"? Dan denk je dat dit informeel is. Dear plus achternaam is formeel, voor een zakelijke brief.",
+         "Koos je \"To whom it may concern,\"? Dan denk je dat dit informeel is. Het is een zeer formele aanhef, voor een onbekende.",
+         "Klopt: Hi plus een voornaam is informeel, voor een vriend."
+        ],
+        "uh": "Hi = informeel."
+       },
+       {
+        "v": "What does \"enclosed\" mean in \"I have enclosed a copy of the receipt\"?",
+        "o": [
+         "it is included with the letter",
+         "it is hidden in another envelope",
+         "it is sent by a different post",
+         "it is still waiting to be written"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Enclosed = bijgesloten, attached = bijgevoegd.",
+        "uo": [
+         "Klopt: enclosed betekent bijgesloten bij de brief.",
+         "Koos je \"it is hidden in another envelope\"? Dan denk je dat het verborgen is. Enclosed betekent bijgevoegd, niet verborgen.",
+         "Koos je \"it is sent by a different post\"? Dan denk je dat het apart wordt verstuurd. Enclosed betekent in dezelfde brief, niet apart.",
+         "Koos je \"it is still waiting to be written\"? Dan denk je dat het nog niet bestaat. Het is al bijgevoegd, dus aanwezig."
+        ],
+        "uh": "Bijgesloten."
+       },
+       {
+        "v": "Why is Marta writing the letter?",
+        "o": [
+         "to order new headphones from the shop",
+         "to thank the company for good service",
+         "to complain about faulty headphones",
+         "to ask for a job in the company"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Het doel staat vaak in de eerste zin: I am writing to ...",
+        "uo": [
+         "Koos je \"to order new headphones from the shop\"? Dan denk je dat ze een bestelling plaatst. Ze klaagt over een gekocht product, geen nieuwe bestelling.",
+         "Koos je \"to thank the company for good service\"? Dan denk je dat ze bedankt. Ze klaagt juist, dus geen dank.",
+         "Klopt: de eerste zin zegt dat ze een klacht indient over defecte koptelefoon.",
+         "Koos je \"to ask for a job in the company\"? Dan denk je dat ze solliciteert. Ze koopt een product, geen baan."
+        ],
+        "uh": "Een klacht is het doel.",
+        "ctx": "Dear Sir or Madam, I am writing to complain about the headphones I bought from your website on 3 March (order number 48213). The box arrived on time, but after only two weeks the left speaker stopped working. I have tried to contact your customer service twice by phone, but nobody answered. I would therefore like to ask you either to replace the headphones or to return my money. I have enclosed a copy of the receipt. If I do not receive a reply within ten days, I will contact a consumer organisation. I look forward to hearing from you. Yours faithfully, Marta Klein"
+       },
+       {
+        "v": "Why is Eva writing the email to Jonas?",
+        "o": [
+         "to complain about his exam results",
+         "to ask him for money for the move",
+         "to share news and to invite him",
+         "to apply for a job at his company"
+        ],
+        "c": 2,
+        "d": 1,
+        "s": 0,
+        "u": "Een persoonlijke e-mail heeft vaak nieuws en een uitnodiging.",
+        "uo": [
+         "Koos je \"to complain about his exam results\"? Dan denk je dat ze klaagt. Ze wenst hem juist succes, dus geen klacht.",
+         "Koos je \"to ask him for money for the move\"? Dan denk je dat ze geld vraagt. Dat staat nergens, ze nodigt hem uit.",
+         "Klopt: ze vertelt over de verhuizing en nodigt hem uit voor een barbecue.",
+         "Koos je \"to apply for a job at his company\"? Dan denk je dat ze solliciteert. Het is een vriendelijke e-mail, geen sollicitatie."
+        ],
+        "uh": "Nieuws en uitnodiging.",
+        "ctx": "Hi Jonas, How are you? I hope your exams went okay! Sorry I haven't written for ages, but things have been crazy here. Guess what? We're moving to a flat in the city centre next month, which means I'll finally live ten minutes from the station. Mum says you're welcome to stay with us in the holidays; there's a sofa bed in the living room, though it isn't very comfy. Anyway, are you free on 15 June? A few of us are going to the lake for a barbecue, and it'd be great if you could come along. Just bring a towel and something to drink. Let me know soon, so I can tell the others! Take care, Eva"
+       },
+       {
+        "v": "Why is Sarah writing to Mr Ahmed?",
+        "o": [
+         "to invite him to an interview",
+         "to tell him that he did not get the job",
+         "to ask him for a copy of his certificates",
+         "to complain about his application"
+        ],
+        "c": 0,
+        "d": 1,
+        "s": 0,
+        "u": "Een uitnodiging noemt datum, tijd en plaats.",
+        "uo": [
+         "Klopt: de brief nodigt hem uit voor een gesprek op 12 mei.",
+         "Koos je \"to tell him that he did not get the job\"? Dan denk je dat de brief afwijst. De brief nodigt juist uit, dus positief.",
+         "Koos je \"to ask him for a copy of his certificates\"? Dan denk je dat ze papieren vraagt. Er staat dat het niet nodig is, dus geen kopieën.",
+         "Koos je \"to complain about his application\"? Dan denk je dat ze klaagt. Ze noemt zijn cv positief, dus geen klacht."
+        ],
+        "uh": "Uitnodiging.",
+        "ctx": "Dear Mr Ahmed, Thank you for your application for the position of assistant at Greenfield Library. We were impressed by your CV and would like to invite you to an interview on Tuesday 12 May at 14.00. Please go to the main entrance, where Ms Harper will meet you. The interview will take about thirty minutes, and you will also meet the team. If this date is not convenient, please let us know by Friday 8 May at the latest, and we will suggest another time. Please bring your passport or ID card, but there is no need to bring copies of your certificates. We look forward to meeting you. Kind regards, Sarah Williams, Human Resources"
+       },
+       {
+        "v": "When did Marta buy the headphones?",
+        "o": [
+         "two weeks ago from now",
+         "ten days before the letter",
+         "on the day she wrote the letter",
+         "on 3 March"
+        ],
+        "c": 3,
+        "d": 1,
+        "s": 3,
+        "u": "Zoek datums bij het werkwoord bought.",
+        "uo": [
+         "Koos je \"two weeks ago from now\"? Dan denk je dat het twee weken geleden was. Twee weken is de tijd tot het defect, niet de koop.",
+         "Koos je \"ten days before the letter\"? Dan denk je dat het tien dagen geleden was. Tien dagen is de deadline, niet de koop.",
+         "Koos je \"on the day she wrote the letter\"? Dan denk je dat ze het op de briefdag kocht. De brief noemt 3 maart, de koop was eerder.",
+         "Klopt: de brief noemt de koop op 3 maart, de datum bij het werkwoord bought."
+        ],
+        "uh": "3 March.",
+        "ctx": "Dear Sir or Madam, I am writing to complain about the headphones I bought from your website on 3 March (order number 48213). The box arrived on time, but after only two weeks the left speaker stopped working. I have tried to contact your customer service twice by phone, but nobody answered. I would therefore like to ask you either to replace the headphones or to return my money. I have enclosed a copy of the receipt. If I do not receive a reply within ten days, I will contact a consumer organisation. I look forward to hearing from you. Yours faithfully, Marta Klein"
+       },
+       {
+        "v": "What does Marta ask the company to do?",
+        "o": [
+         "send her a new catalogue of products",
+         "replace the headphones or return her money",
+         "give her a discount on her next order",
+         "repair the headphones for free at once"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Zoek bij verzoeken naar I would like to ask you.",
+        "uo": [
+         "Koos je \"send her a new catalogue of products\"? Dan denk je dat ze een catalogus wil. Dat staat nergens, ze vraagt om vervanging.",
+         "Klopt: ze vraagt om een vervanging of terugbetaling.",
+         "Koos je \"give her a discount on her next order\"? Dan denk je dat ze korting wil. De brief noemt geen korting, ze vraagt vervanging of geld terug.",
+         "Koos je \"repair the headphones for free at once\"? Dan denk je dat ze reparatie vraagt. Ze noemt vervangen of terugbetalen, geen reparatie."
+        ],
+        "uh": "Verzoek: vervangen of terug.",
+        "ctx": "Dear Sir or Madam, I am writing to complain about the headphones I bought from your website on 3 March (order number 48213). The box arrived on time, but after only two weeks the left speaker stopped working. I have tried to contact your customer service twice by phone, but nobody answered. I would therefore like to ask you either to replace the headphones or to return my money. I have enclosed a copy of the receipt. If I do not receive a reply within ten days, I will contact a consumer organisation. I look forward to hearing from you. Yours faithfully, Marta Klein"
+       },
+       {
+        "v": "What happened after two weeks?",
+        "o": [
+         "the box arrived late at her home",
+         "the order number was changed by the shop",
+         "both speakers stopped working at once",
+         "the left speaker stopped working"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 3,
+        "u": "Let op de details: after only two weeks.",
+        "uo": [
+         "Koos je \"the box arrived late at her home\"? Dan denk je dat de doos laat kwam. De doos kwam op tijd, het defect kwam later.",
+         "Koos je \"the order number was changed by the shop\"? Dan denk je dat het ordernummer veranderde. Dat staat nergens, de speaker faalde.",
+         "Koos je \"both speakers stopped working at once\"? Dan denk je dat beide speakers stopten. Alleen de linker, dus niet beide.",
+         "Klopt: na twee weken hield de linkerspeaker ermee op."
+        ],
+        "uh": "Linkerspeaker.",
+        "ctx": "Dear Sir or Madam, I am writing to complain about the headphones I bought from your website on 3 March (order number 48213). The box arrived on time, but after only two weeks the left speaker stopped working. I have tried to contact your customer service twice by phone, but nobody answered. I would therefore like to ask you either to replace the headphones or to return my money. I have enclosed a copy of the receipt. If I do not receive a reply within ten days, I will contact a consumer organisation. I look forward to hearing from you. Yours faithfully, Marta Klein"
+       },
+       {
+        "v": "What will Marta do if there is no reply within ten days?",
+        "o": [
+         "phone the shop again every day",
+         "contact a consumer organisation",
+         "buy new headphones in another shop",
+         "write a second complaint to the shop"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "If plus tijd geeft een voorwaarde met gevolg.",
+        "uo": [
+         "Koos je \"phone the shop again every day\"? Dan denk je dat ze blijft bellen. Dat staat er niet, ze neemt contact op met een organisatie.",
+         "Klopt: dat is haar waarschuwing als er geen antwoord komt.",
+         "Koos je \"buy new headphones in another shop\"? Dan denk je dat ze elders koopt. Dat staat nergens, ze waarschuwt.",
+         "Koos je \"write a second complaint to the shop\"? Dan denk je dat ze opnieuw schrijft. Ze noemt een consumentenorganisatie, geen tweede brief."
+        ],
+        "uh": "Consumentenorganisatie.",
+        "ctx": "Dear Sir or Madam, I am writing to complain about the headphones I bought from your website on 3 March (order number 48213). The box arrived on time, but after only two weeks the left speaker stopped working. I have tried to contact your customer service twice by phone, but nobody answered. I would therefore like to ask you either to replace the headphones or to return my money. I have enclosed a copy of the receipt. If I do not receive a reply within ten days, I will contact a consumer organisation. I look forward to hearing from you. Yours faithfully, Marta Klein"
+       },
+       {
+        "v": "When and where is the barbecue?",
+        "o": [
+         "next month at the new flat",
+         "in the holidays at Eva's house",
+         "on 15 June at the lake",
+         "on 15 May in the city centre"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "Combineer datum en plaats uit de tekst.",
+        "uo": [
+         "Koos je \"next month at the new flat\"? Dan denk je dat het barbecue bij de nieuwe flat is. De verhuizing is volgende maand, het meer is voor de barbecue.",
+         "Koos je \"in the holidays at Eva's house\"? Dan denk je dat het in de vakantie bij Eva is. Dat is het logeerbed, de barbecue is bij het meer.",
+         "Klopt: de tekst noemt 15 juni als datum en het meer als plaats van de barbecue.",
+         "Koos je \"on 15 May in the city centre\"? Dan denk je dat de datum 15 mei is. De tekst noemt juni, en het meer."
+        ],
+        "uh": "15 June, lake.",
+        "ctx": "Hi Jonas, How are you? I hope your exams went okay! Sorry I haven't written for ages, but things have been crazy here. Guess what? We're moving to a flat in the city centre next month, which means I'll finally live ten minutes from the station. Mum says you're welcome to stay with us in the holidays; there's a sofa bed in the living room, though it isn't very comfy. Anyway, are you free on 15 June? A few of us are going to the lake for a barbecue, and it'd be great if you could come along. Just bring a towel and something to drink. Let me know soon, so I can tell the others! Take care, Eva"
+       },
+       {
+        "v": "What should Jonas bring to the barbecue?",
+        "o": [
+         "a towel and something to drink",
+         "a sofa bed for the holidays",
+         "food for everybody at the lake",
+         "his exam results from this year"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 2,
+        "u": "Zoek bij instructies naar bring.",
+        "uo": [
+         "Klopt: de tekst vraagt om een handdoek en iets te drinken.",
+         "Koos je \"a sofa bed for the holidays\"? Dan denk je dat hij een bank meeneemt. Het logeerbed staat bij Eva thuis, niet voor de barbecue.",
+         "Koos je \"food for everybody at the lake\"? Dan denk je dat hij eten meebrengt. Dat staat er niet, alleen handdoek en drinken.",
+         "Koos je \"his exam results from this year\"? Dan denk je dat hij resultaten meeneemt. Dat staat nergens, handdoek en drinken."
+        ],
+        "uh": "Handdoek en drinken.",
+        "ctx": "Hi Jonas, How are you? I hope your exams went okay! Sorry I haven't written for ages, but things have been crazy here. Guess what? We're moving to a flat in the city centre next month, which means I'll finally live ten minutes from the station. Mum says you're welcome to stay with us in the holidays; there's a sofa bed in the living room, though it isn't very comfy. Anyway, are you free on 15 June? A few of us are going to the lake for a barbecue, and it'd be great if you could come along. Just bring a towel and something to drink. Let me know soon, so I can tell the others! Take care, Eva"
+       },
+       {
+        "v": "Which expression in Eva's email shows an informal style?",
+        "o": [
+         "Guess what?",
+         "I look forward to hearing from you",
+         "I am writing to inform you",
+         "Yours sincerely and with kind regards"
+        ],
+        "c": 0,
+        "d": 2,
+        "s": 1,
+        "u": "Guess what, anyway en crazy zijn informeel.",
+        "uo": [
+         "Klopt: een vraag aan de lezer in spreektaal is informeel.",
+         "Koos je \"I look forward to hearing from you\"? Dan denk je dat dit informeel is. Het is een formele afsluiting, dus formeel.",
+         "Koos je \"I am writing to inform you\"? Dan denk je dat dit informeel is. Het is een formele opening, dus formeel.",
+         "Koos je \"Yours sincerely and with kind regards\"? Dan denk je dat dit informeel is. Het is een formele afsluiting, dus formeel."
+        ],
+        "uh": "Spreektaal.",
+        "ctx": "Hi Jonas, How are you? I hope your exams went okay! Sorry I haven't written for ages, but things have been crazy here. Guess what? We're moving to a flat in the city centre next month, which means I'll finally live ten minutes from the station. Mum says you're welcome to stay with us in the holidays; there's a sofa bed in the living room, though it isn't very comfy. Anyway, are you free on 15 June? A few of us are going to the lake for a barbecue, and it'd be great if you could come along. Just bring a towel and something to drink. Let me know soon, so I can tell the others! Take care, Eva"
+       },
+       {
+        "v": "What must Mr Ahmed do if the date is not convenient?",
+        "o": [
+         "come to the library anyway on Tuesday",
+         "send copies of his certificates by post",
+         "let them know by Friday 8 May at the latest",
+         "call Ms Harper at the main entrance"
+        ],
+        "c": 2,
+        "d": 2,
+        "s": 3,
+        "u": "At the latest geeft een uiterste datum.",
+        "uo": [
+         "Koos je \"come to the library anyway on Tuesday\"? Dan denk je dat hij toch moet komen. De brief biedt een andere tijd, dus hij kan het melden.",
+         "Koos je \"send copies of his certificates by post\"? Dan denk je dat hij papieren moet sturen. Dat is niet nodig, hij moet reageren.",
+         "Klopt: hij moet uiterlijk 8 mei laten weten dat het niet past.",
+         "Koos je \"call Ms Harper at the main entrance\"? Dan denk je dat hij Ms Harper moet bellen. Zij wacht bij de ingang, hij moet het laten weten."
+        ],
+        "uh": "Uiterlijk 8 mei.",
+        "ctx": "Dear Mr Ahmed, Thank you for your application for the position of assistant at Greenfield Library. We were impressed by your CV and would like to invite you to an interview on Tuesday 12 May at 14.00. Please go to the main entrance, where Ms Harper will meet you. The interview will take about thirty minutes, and you will also meet the team. If this date is not convenient, please let us know by Friday 8 May at the latest, and we will suggest another time. Please bring your passport or ID card, but there is no need to bring copies of your certificates. We look forward to meeting you. Kind regards, Sarah Williams, Human Resources"
+       },
+       {
+        "v": "What should Mr Ahmed bring to the interview?",
+        "o": [
+         "copies of all his certificates",
+         "his passport or ID card",
+         "a letter from his previous employer",
+         "a list of questions for the team"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 3,
+        "u": "Let op please bring ... but no need.",
+        "uo": [
+         "Koos je \"copies of all his certificates\"? Dan denk je dat hij kopieën moet meenemen. De brief zegt dat dat niet nodig is, alleen identiteitsbewijs.",
+         "Klopt: de brief vraagt om een paspoort of identiteitskaart.",
+         "Koos je \"a letter from his previous employer\"? Dan denk je dat hij een brief meebrengt. Dat staat nergens, alleen identiteitsbewijs.",
+         "Koos je \"a list of questions for the team\"? Dan denk je dat hij vragen meebrengt. Dat staat nergens, alleen identiteitsbewijs."
+        ],
+        "uh": "Identiteitsbewijs.",
+        "ctx": "Dear Mr Ahmed, Thank you for your application for the position of assistant at Greenfield Library. We were impressed by your CV and would like to invite you to an interview on Tuesday 12 May at 14.00. Please go to the main entrance, where Ms Harper will meet you. The interview will take about thirty minutes, and you will also meet the team. If this date is not convenient, please let us know by Friday 8 May at the latest, and we will suggest another time. Please bring your passport or ID card, but there is no need to bring copies of your certificates. We look forward to meeting you. Kind regards, Sarah Williams, Human Resources"
+       },
+       {
+        "v": "Which phrase shows the formal style of the letter?",
+        "o": [
+         "Guess what, we loved your CV",
+         "Can't wait to see you there!",
+         "Anyway, let us know soon",
+         "We look forward to meeting you"
+        ],
+        "c": 3,
+        "d": 2,
+        "s": 1,
+        "u": "Look forward to en kind regards zijn formeel.",
+        "uo": [
+         "Koos je \"Guess what, we loved your CV\"? Dan denk je dat dit formeel is. Het is spreektaal, niet voor een brief.",
+         "Koos je \"Can't wait to see you there!\"? Dan denk je dat dit formeel is. Het is een samentrekking met uitroepteken, dus informeel.",
+         "Koos je \"Anyway, let us know soon\"? Dan denk je dat dit formeel is. Anyway is spreektaal, dus informeel.",
+         "Klopt: look forward to is een beleefde, formele afsluiting."
+        ],
+        "uh": "Formeel.",
+        "ctx": "Dear Mr Ahmed, Thank you for your application for the position of assistant at Greenfield Library. We were impressed by your CV and would like to invite you to an interview on Tuesday 12 May at 14.00. Please go to the main entrance, where Ms Harper will meet you. The interview will take about thirty minutes, and you will also meet the team. If this date is not convenient, please let us know by Friday 8 May at the latest, and we will suggest another time. Please bring your passport or ID card, but there is no need to bring copies of your certificates. We look forward to meeting you. Kind regards, Sarah Williams, Human Resources"
+       },
+       {
+        "v": "Who will meet Mr Ahmed at the main entrance?",
+        "o": [
+         "Sarah Williams of Human Resources",
+         "Ms Harper",
+         "the whole team of the library",
+         "the headteacher of the school"
+        ],
+        "c": 1,
+        "d": 2,
+        "s": 2,
+        "u": "Zoek bij wie-vragen naar de naam.",
+        "uo": [
+         "Koos je \"Sarah Williams of Human Resources\"? Dan denk je dat Sarah komt. Zij schrijft de brief, Ms Harper wacht bij de ingang.",
+         "Klopt: de tekst noemt Ms Harper bij de hoofdingang.",
+         "Koos je \"the whole team of the library\"? Dan denk je dat het team komt. Het team ontmoet hij later, Ms Harper wacht bij de ingang.",
+         "Koos je \"the headteacher of the school\"? Dan denk je dat het de directeur is. Dat staat nergens, Ms Harper wacht bij de ingang."
+        ],
+        "uh": "Ms Harper.",
+        "ctx": "Dear Mr Ahmed, Thank you for your application for the position of assistant at Greenfield Library. We were impressed by your CV and would like to invite you to an interview on Tuesday 12 May at 14.00. Please go to the main entrance, where Ms Harper will meet you. The interview will take about thirty minutes, and you will also meet the team. If this date is not convenient, please let us know by Friday 8 May at the latest, and we will suggest another time. Please bring your passport or ID card, but there is no need to bring copies of your certificates. We look forward to meeting you. Kind regards, Sarah Williams, Human Resources"
+       },
+       {
+        "v": "What is the tone of Marta's letter?",
+        "o": [
+         "polite but firm",
+         "angry and full of insults towards the shop",
+         "friendly and rather jokey in style",
+         "unsure and very careful in her words"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 4,
+        "u": "Toon in een brief: beleefd maar stellig.",
+        "uo": [
+         "Klopt: ze is beleefd (I look forward) maar stellig (a deadline en een waarschuwing).",
+         "Koos je \"angry and full of insults towards the shop\"? Dan denk je dat ze beledigt. De toon blijft zakelijk, dus niet boos.",
+         "Koos je \"friendly and rather jokey in style\"? Dan denk je dat de toon grappig is. Het is een formele klacht, dus serieus.",
+         "Koos je \"unsure and very careful in her words\"? Dan denk je dat ze twijfelt. Ze stelt een deadline, dus stellig."
+        ],
+        "uh": "Beleefd en stellig.",
+        "ctx": "Dear Sir or Madam, I am writing to complain about the headphones I bought from your website on 3 March (order number 48213). The box arrived on time, but after only two weeks the left speaker stopped working. I have tried to contact your customer service twice by phone, but nobody answered. I would therefore like to ask you either to replace the headphones or to return my money. I have enclosed a copy of the receipt. If I do not receive a reply within ten days, I will contact a consumer organisation. I look forward to hearing from you. Yours faithfully, Marta Klein"
+       },
+       {
+        "v": "Why does Marta mention that she phoned twice?",
+        "o": [
+         "to complain about the price of calls",
+         "to ask the company for a new phone",
+         "to thank the staff for helping her",
+         "to show she tried to solve the problem first"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Voorgeschiedenis in een klacht toont inspanning.",
+        "uo": [
+         "Koos je \"to complain about the price of calls\"? Dan denk je dat het om belkosten gaat. Dat staat nergens, het gaat om haar inspanning.",
+         "Koos je \"to ask the company for a new phone\"? Dan denk je dat ze een telefoon wil. Dat staat nergens, ze laat zien wat ze deed.",
+         "Koos je \"to thank the staff for helping her\"? Dan denk je dat ze bedankt. Er was niemand die opnam, dus geen dank.",
+         "Klopt: ze laat zien dat ze eerst contact zocht voordat ze een brief schreef."
+        ],
+        "uh": "Eerder geprobeerd.",
+        "ctx": "Dear Sir or Madam, I am writing to complain about the headphones I bought from your website on 3 March (order number 48213). The box arrived on time, but after only two weeks the left speaker stopped working. I have tried to contact your customer service twice by phone, but nobody answered. I would therefore like to ask you either to replace the headphones or to return my money. I have enclosed a copy of the receipt. If I do not receive a reply within ten days, I will contact a consumer organisation. I look forward to hearing from you. Yours faithfully, Marta Klein"
+       },
+       {
+        "v": "What is the function of \"If I do not receive a reply within ten days ...\"?",
+        "o": [
+         "it is a promise of a reward for the shop",
+         "it is an excuse for the late payment",
+         "it is a warning with a deadline",
+         "it is a question about the order number"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 2,
+        "u": "If met een termijn is een waarschuwing of voorwaarde.",
+        "uo": [
+         "Koos je \"it is a promise of a reward for the shop\"? Dan denk je dat de zin een beloning belooft. Het is een waarschuwing, geen beloning.",
+         "Koos je \"it is an excuse for the late payment\"? Dan denk je dat het een excuus is. Er is geen late betaling, het is een waarschuwing.",
+         "Klopt: de zin noemt een termijn en een gevolg als de winkel niet reageert.",
+         "Koos je \"it is a question about the order number\"? Dan denk je dat het een vraag is. Het is een voorwaarde, geen vraag."
+        ],
+        "uh": "Termijn en gevolg.",
+        "ctx": "Dear Sir or Madam, I am writing to complain about the headphones I bought from your website on 3 March (order number 48213). The box arrived on time, but after only two weeks the left speaker stopped working. I have tried to contact your customer service twice by phone, but nobody answered. I would therefore like to ask you either to replace the headphones or to return my money. I have enclosed a copy of the receipt. If I do not receive a reply within ten days, I will contact a consumer organisation. I look forward to hearing from you. Yours faithfully, Marta Klein"
+       },
+       {
+        "v": "How does Eva feel about the move to the city centre?",
+        "o": [
+         "worried, because it is too far from her friends",
+         "angry, because her parents decided it alone",
+         "excited, because she will live near the station",
+         "indifferent, because she does not care at all"
+        ],
+        "c": 2,
+        "d": 3,
+        "s": 4,
+        "u": "Woorden als finally en guess what tonen enthousiasme.",
+        "uo": [
+         "Koos je \"worried, because it is too far from her friends\"? Dan denk je dat ze zich zorgen maakt. De toon is enthousiast, ze woont dichter bij het station.",
+         "Koos je \"angry, because her parents decided it alone\"? Dan denk je dat ze boos is. Daar staat niets over, ze is blij.",
+         "Klopt: finally en guess what laten enthousiasme zien.",
+         "Koos je \"indifferent, because she does not care at all\"? Dan denk je dat het haar niets kan schelen. Ze vertelt het als groot nieuws, dus enthousiast."
+        ],
+        "uh": "Enthousiast.",
+        "ctx": "Hi Jonas, How are you? I hope your exams went okay! Sorry I haven't written for ages, but things have been crazy here. Guess what? We're moving to a flat in the city centre next month, which means I'll finally live ten minutes from the station. Mum says you're welcome to stay with us in the holidays; there's a sofa bed in the living room, though it isn't very comfy. Anyway, are you free on 15 June? A few of us are going to the lake for a barbecue, and it'd be great if you could come along. Just bring a towel and something to drink. Let me know soon, so I can tell the others! Take care, Eva"
+       },
+       {
+        "v": "What does \"it'd be great if you could come along\" show?",
+        "o": [
+         "a strict order that Jonas must follow",
+         "a warning about the barbecue at the lake",
+         "a complaint that Jonas never comes",
+         "a friendly invitation, not an order"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 2,
+        "u": "Would be great if you could is een beleefde uitnodiging.",
+        "uo": [
+         "Koos je \"a strict order that Jonas must follow\"? Dan denk je dat Jonas moet komen. De zin zegt dat het fijn zou zijn, dus geen bevel.",
+         "Koos je \"a warning about the barbecue at the lake\"? Dan denk je dat de zin waarschuwt. Hij nodigt uit, dus geen waarschuwing.",
+         "Koos je \"a complaint that Jonas never comes\"? Dan denk je dat Eva klaagt. De toon is vriendelijk, dus geen klacht.",
+         "Klopt: het is een vriendelijke uitnodiging in plaats van een bevel."
+        ],
+        "uh": "Uitnodiging.",
+        "ctx": "Hi Jonas, How are you? I hope your exams went okay! Sorry I haven't written for ages, but things have been crazy here. Guess what? We're moving to a flat in the city centre next month, which means I'll finally live ten minutes from the station. Mum says you're welcome to stay with us in the holidays; there's a sofa bed in the living room, though it isn't very comfy. Anyway, are you free on 15 June? A few of us are going to the lake for a barbecue, and it'd be great if you could come along. Just bring a towel and something to drink. Let me know soon, so I can tell the others! Take care, Eva"
+       },
+       {
+        "v": "What can you conclude about the sofa bed at Eva's?",
+        "o": [
+         "it is available, but not very comfortable",
+         "it is brand new and very comfortable",
+         "it is not available during the holidays",
+         "it is too small for any visitor"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 3,
+        "u": "Een kleine bijzin kan een voorbehoud geven: though it isn't very comfy.",
+        "uo": [
+         "Klopt: er is een logeerbed maar het is niet erg comfortabel, aldus de tekst.",
+         "Koos je \"it is brand new and very comfortable\"? Dan denk je dat het nieuw en comfortabel is. De tekst zegt dat het niet erg comfy is, dus niet comfortabel.",
+         "Koos je \"it is not available during the holidays\"? Dan denk je dat het niet beschikbaar is. De tekst zegt dat Jonas welkom is, dus wel.",
+         "Koos je \"it is too small for any visitor\"? Dan denk je dat het te klein is. Daar staat niets over, alleen niet erg comfy."
+        ],
+        "uh": "Voorbehoud.",
+        "ctx": "Hi Jonas, How are you? I hope your exams went okay! Sorry I haven't written for ages, but things have been crazy here. Guess what? We're moving to a flat in the city centre next month, which means I'll finally live ten minutes from the station. Mum says you're welcome to stay with us in the holidays; there's a sofa bed in the living room, though it isn't very comfy. Anyway, are you free on 15 June? A few of us are going to the lake for a barbecue, and it'd be great if you could come along. Just bring a towel and something to drink. Let me know soon, so I can tell the others! Take care, Eva"
+       },
+       {
+        "v": "What is NOT necessary according to the letter?",
+        "o": [
+         "his passport or ID card",
+         "copies of his certificates",
+         "being present at the interview itself",
+         "telling them if the date does not suit him"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 3,
+        "u": "No need to betekent niet nodig.",
+        "uo": [
+         "Koos je \"his passport or ID card\"? Dan denk je dat dit niet nodig is. Dat moet hij juist meenemen, dus nodig.",
+         "Klopt: \"there is no need to bring copies of your certificates\".",
+         "Koos je \"being present at the interview itself\"? Dan denk je dat dit niet nodig is. Het gesprek is de uitnodiging, dus nodig.",
+         "Koos je \"telling them if the date does not suit him\"? Dan denk je dat dit niet nodig is. Dat moet hij doen, uiterlijk 8 mei."
+        ],
+        "uh": "Niet nodig.",
+        "ctx": "Dear Mr Ahmed, Thank you for your application for the position of assistant at Greenfield Library. We were impressed by your CV and would like to invite you to an interview on Tuesday 12 May at 14.00. Please go to the main entrance, where Ms Harper will meet you. The interview will take about thirty minutes, and you will also meet the team. If this date is not convenient, please let us know by Friday 8 May at the latest, and we will suggest another time. Please bring your passport or ID card, but there is no need to bring copies of your certificates. We look forward to meeting you. Kind regards, Sarah Williams, Human Resources"
+       },
+       {
+        "v": "What does \"We were impressed by your CV\" suggest?",
+        "o": [
+         "the library did not read his CV at all",
+         "the library wants a different applicant",
+         "the library thinks his CV was too long",
+         "the library has a good opinion of his application"
+        ],
+        "c": 3,
+        "d": 3,
+        "s": 4,
+        "u": "Impressed is positief: let op woorden die waardering tonen.",
+        "uo": [
+         "Koos je \"the library did not read his CV at all\"? Dan denk je dat het cv niet is gelezen. Ze zijn onder de indruk, dus wel gelezen.",
+         "Koos je \"the library wants a different applicant\"? Dan denk je dat ze een ander willen. Ze nodigen hem uit, dus positief.",
+         "Koos je \"the library thinks his CV was too long\"? Dan denk je dat het cv te lang was. Impressed is een compliment, geen kritiek.",
+         "Klopt: impressed betekent onder de indruk, dus positief over zijn cv."
+        ],
+        "uh": "Positief.",
+        "ctx": "Dear Mr Ahmed, Thank you for your application for the position of assistant at Greenfield Library. We were impressed by your CV and would like to invite you to an interview on Tuesday 12 May at 14.00. Please go to the main entrance, where Ms Harper will meet you. The interview will take about thirty minutes, and you will also meet the team. If this date is not convenient, please let us know by Friday 8 May at the latest, and we will suggest another time. Please bring your passport or ID card, but there is no need to bring copies of your certificates. We look forward to meeting you. Kind regards, Sarah Williams, Human Resources"
+       },
+       {
+        "v": "What is the purpose of \"let us know by Friday 8 May at the latest\"?",
+        "o": [
+         "to set a deadline for his reply",
+         "to ask for his CV before the interview",
+         "to announce the date of a new interview",
+         "to tell him when the library will close"
+        ],
+        "c": 0,
+        "d": 3,
+        "s": 2,
+        "u": "At the latest = uiterlijk: een deadline.",
+        "uo": [
+         "Klopt: at the latest geeft de uiterste datum voor zijn antwoord aan.",
+         "Koos je \"to ask for his CV before the interview\"? Dan denk je dat het om een cv gaat. Het gaat om een antwoord, met een termijn.",
+         "Koos je \"to announce the date of a new interview\"? Dan denk je dat het een nieuwe datum is. Het is een deadline voor zijn reactie, geen nieuwe datum.",
+         "Koos je \"to tell him when the library will close\"? Dan denk je dat het over sluiting gaat. Het gaat om zijn antwoord, met een termijn."
+        ],
+        "uh": "Deadline.",
+        "ctx": "Dear Mr Ahmed, Thank you for your application for the position of assistant at Greenfield Library. We were impressed by your CV and would like to invite you to an interview on Tuesday 12 May at 14.00. Please go to the main entrance, where Ms Harper will meet you. The interview will take about thirty minutes, and you will also meet the team. If this date is not convenient, please let us know by Friday 8 May at the latest, and we will suggest another time. Please bring your passport or ID card, but there is no need to bring copies of your certificates. We look forward to meeting you. Kind regards, Sarah Williams, Human Resources"
+       },
+       {
+        "v": "Why would \"Dear Sir or Madam\" be wrong in Eva's email?",
+        "o": [
+         "it is too short for an email to a friend",
+         "it is too formal for a message to a friend",
+         "it is only used in emails to the family",
+         "it is always wrong in an English email"
+        ],
+        "c": 1,
+        "d": 3,
+        "s": 1,
+        "u": "Pas aanhef en toon aan op de lezer.",
+        "uo": [
+         "Koos je \"it is too short for an email to a friend\"? Dan denk je dat het te kort is. Het gaat om de formaliteit, niet om de lengte.",
+         "Klopt: Dear Sir or Madam is een formele aanhef voor een onbekende, niet voor een vriend.",
+         "Koos je \"it is only used in emails to the family\"? Dan denk je dat het voor familie is. Het is voor onbekenden, niet voor familie.",
+         "Koos je \"it is always wrong in an English email\"? Dan denk je dat het nooit mag. Het is juist goed in een brief aan een bedrijf, alleen niet voor een vriend."
+        ],
+        "uh": "Aanhef past bij lezer.",
+        "ctx": "Hi Jonas, How are you? I hope your exams went okay! Sorry I haven't written for ages, but things have been crazy here. Guess what? We're moving to a flat in the city centre next month, which means I'll finally live ten minutes from the station. Mum says you're welcome to stay with us in the holidays; there's a sofa bed in the living room, though it isn't very comfy. Anyway, are you free on 15 June? A few of us are going to the lake for a barbecue, and it'd be great if you could come along. Just bring a towel and something to drink. Let me know soon, so I can tell the others! Take care, Eva"
+       }
+      ],
+      "oe": [
+       {
+        "bron": "Examenstijl",
+        "ctx": "Dear Sir or Madam, I am writing to complain about the headphones I bought from your website on 3 March (order number 48213). The box arrived on time, but after only two weeks the left speaker stopped working. I have tried to contact your customer service twice by phone, but nobody answered. I would therefore like to ask you either to replace the headphones or to return my money. I have enclosed a copy of the receipt. If I do not receive a reply within ten days, I will contact a consumer organisation. I look forward to hearing from you. Yours faithfully, Marta Klein",
+        "v": "What does Marta want from the company and what will she do if she gets no reply?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Ze wil dat de koptelefoon wordt vervangen of dat ze haar geld terugkrijgt (1p). Ze zal binnen tien dagen zonder antwoord contact opnemen met een consumentenorganisatie (1p). Dat is een waarschuwing met een termijn (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Hi Jonas, How are you? I hope your exams went okay! Sorry I haven't written for ages, but things have been crazy here. Guess what? We're moving to a flat in the city centre next month, which means I'll finally live ten minutes from the station. Mum says you're welcome to stay with us in the holidays; there's a sofa bed in the living room, though it isn't very comfy. Anyway, are you free on 15 June? A few of us are going to the lake for a barbecue, and it'd be great if you could come along. Just bring a towel and something to drink. Let me know soon, so I can tell the others! Take care, Eva",
+        "v": "Name two features of Eva's email that show it is informal.",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Informele aanhef Hi (1p). Spreektaal of uitroepen zoals \"Guess what?\" of \"crazy\" (1p). Informele afsluiting Take care (1p). Twee van de drie zijn voldoende voor 2p; een goede uitleg levert het derde punt."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Dear Mr Ahmed, Thank you for your application for the position of assistant at Greenfield Library. We were impressed by your CV and would like to invite you to an interview on Tuesday 12 May at 14.00. Please go to the main entrance, where Ms Harper will meet you. The interview will take about thirty minutes, and you will also meet the team. If this date is not convenient, please let us know by Friday 8 May at the latest, and we will suggest another time. Please bring your passport or ID card, but there is no need to bring copies of your certificates. We look forward to meeting you. Kind regards, Sarah Williams, Human Resources",
+        "v": "What must Mr Ahmed do before 8 May if he cannot come on 12 May, and what must he bring?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Hij moet uiterlijk 8 mei laten weten dat het niet past (1p). Hij moet zijn paspoort of identiteitskaart meenemen (1p). Kopieën van zijn certificaten zijn niet nodig (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Dear Sir or Madam, I am writing to ask whether you have a room for two nights from 10 to 12 July. We would like a quiet room with a view of the garden. Could you also tell me whether breakfast is included? I look forward to your reply. Yours faithfully, Tom Berg",
+        "v": "What is the purpose of the letter and which two questions does the writer ask?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Het doel is een kamer voor twee nachten aanvragen (1p). Vraag een: is er een rustige kamer met uitzicht op de tuin beschikbaar van 10 tot 12 juli (1p). Vraag twee: is het ontbijt inbegrepen (1p)."
+       },
+       {
+        "bron": "Examenstijl",
+        "ctx": "Hi Anna, thanks so much for the lovely present! I wore the scarf today and everybody liked it. Sorry I didn't call, but I was busy with exams. Let's meet soon! Love, Lisa",
+        "v": "What are the two purposes of this email and how can you tell that it is informal?",
+        "o": [
+         ""
+        ],
+        "c": 0,
+        "u": "Bedanken voor het cadeau (1p) en zich verontschuldigen dat ze niet belde (1p). Informeel door Hi, Love, Let's en uitroeptekens (1p)."
+       }
+      ]
      }
     ]
    },

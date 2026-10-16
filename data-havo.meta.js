@@ -2524,6 +2524,27 @@ var VAKKEN = [
       "nOe": 5,
       "nBeg": 12,
       "hasSam": true
+     },
+     {
+      "id": "B7",
+      "lo": "en.B.7",
+      "gs": 2,
+      "naam": "Brieven en e-mails lezen",
+      "beschrijving": "Je leert in Engelse brieven en e-mails het doel te herkennen, formeel en informeel taalgebruik te onderscheiden, verzoeken, afspraken en voorwaarden te vinden en de toon van de schrijver te begrijpen.",
+      "ceStatus": "CE",
+      "binas": "",
+      "val": "",
+      "onderwerpen": [
+       "Doel van de brief of e-mail",
+       "Formeel en informeel",
+       "Verzoeken en wat de lezer moet doen",
+       "Details en afspraken",
+       "Toon en gevoelens"
+      ],
+      "nSv": 27,
+      "nOe": 5,
+      "nBeg": 12,
+      "hasSam": true
      }
     ]
    },
