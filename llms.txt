@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.691 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.718 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -96,6 +96,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Feiten, meningen en argumenten onderscheiden (Engels HAVO)](https://slagio.nl/leren/havo/engels/feiten-meningen-en-argumenten-onderscheiden.html): Je leert in Engelse teksten feiten van meningen te scheiden, het standpunt van de schrijver te vinden en argumenten, bewijs en tegenargumenten te herkennen en…
 - [Brieven en e-mails lezen (Engels HAVO)](https://slagio.nl/leren/havo/engels/brieven-en-e-mails-lezen.html): Je leert in Engelse brieven en e-mails het doel te herkennen, formeel en informeel taalgebruik te onderscheiden, verzoeken, afspraken en voorwaarden te vinden…
 - [Een Engelse tekst samenvatten en parafraseren (Engels HAVO)](https://slagio.nl/leren/havo/engels/een-engelse-tekst-samenvatten-en-parafraseren.html): Je leert de hoofdpunten van een Engelse tekst te kiezen, details en voorbeelden weg te laten, zinnen in eigen woorden te zeggen en te beoordelen of een…
+- [Tekstsoort en schrijfdoel bepalen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html): Je bepaalt of een tekst of tekstgedeelte uiteenzettend, beschouwend of betogend is, wat de schrijver ermee wil bereiken en wat het belangrijkste doel is als…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
@@ -132,6 +133,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Begrippen Biologie HAVO](https://slagio.nl/leren/havo/biologie/begrippen.html)
 - [Begrippen Natuurkunde HAVO](https://slagio.nl/leren/havo/natuurkunde/begrippen.html)
 - [Begrippen Engels HAVO](https://slagio.nl/leren/havo/engels/begrippen.html)
+- [Begrippen Nederlands VWO](https://slagio.nl/leren/vwo/nederlands/begrippen.html)
 
 ## Overig
 - [Examenrooster 2027](https://slagio.nl/examenrooster-2027.html)

@@ -1,0 +1,686 @@
+{
+ "id": "A1",
+ "lo": "nl.A.1",
+ "gs": 2,
+ "naam": "Tekstsoort en schrijfdoel bepalen",
+ "beschrijving": "Je bepaalt of een tekst of tekstgedeelte uiteenzettend, beschouwend of betogend is, wat de schrijver ermee wil bereiken en wat het belangrijkste doel is als een tekst meerdere doelen heeft.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De drie tekstsoorten herkennen",
+  "Het schrijfdoel bij elke tekstsoort",
+  "Signalen in taal en opbouw",
+  "Mengvormen en het belangrijkste doel",
+  "Tekstgedeelte of hele tekst",
+  "Valkuilen bij het bepalen"
+ ],
+ "sam": "Examenteksten zijn uiteenzettend, beschouwend of betogend. Een uiteenzetting legt uit, beschrijft, verklaart of deelt mee en wil informeren. Een beschouwing biedt interpretaties en opvattingen ter overweging aan en laat de lezer nadenken zonder hem voor een kant te winnen. Een betoog verdedigt een beargumenteerd standpunt en wil de lezer overtuigen of tot actie aanzetten. Het schrijfdoel volgt uit de soort, en bij een mengvorm bepaal je het belangrijkste doel: waar werkt de tekst naartoe? Ook een tekstgedeelte heeft een eigen doel.",
+ "begrippen": [
+  {
+   "t": "Uiteenzettende tekst",
+   "d": "Een tekst die iets uitlegt, beschrijft, verklaart of meedeelt om de lezer te informeren."
+  },
+  {
+   "t": "Beschouwende tekst",
+   "d": "Een tekst die interpretaties en opvattingen ter overweging aanbiedt, zonder één kant te kiezen."
+  },
+  {
+   "t": "Betogende tekst",
+   "d": "Een tekst waarin een beargumenteerd standpunt wordt verdedigd om de lezer te overtuigen."
+  },
+  {
+   "t": "Schrijfdoel",
+   "d": "Wat de schrijver met de tekst of het tekstgedeelte bij de lezer wil bereiken."
+  },
+  {
+   "t": "Informeren",
+   "d": "Het doel van een uiteenzetting: de lezer iets laten weten over een stand of gang van zaken."
+  },
+  {
+   "t": "Ter overweging aanbieden",
+   "d": "Het doel van een beschouwing: de lezer laten nadenken over een kwestie."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "Het doel van een betoog: de lezer van een standpunt laten overnemen."
+  },
+  {
+   "t": "Tot actie aanzetten",
+   "d": "Een oproep aan de lezer of een instantie om iets te doen."
+  },
+  {
+   "t": "Standpunt",
+   "d": "Een uitspraak waarmee de schrijver kiest in een kwestie en die hij verdedigt."
+  },
+  {
+   "t": "Mengvorm",
+   "d": "Een tekst met delen van verschillende soorten, bijvoorbeeld uitleg gevolgd door een standpunt."
+  },
+  {
+   "t": "Tekstgedeelte",
+   "d": "Een deel van een tekst, zoals een alinea of enkele zinnen, dat een eigen doel kan hebben."
+  },
+  {
+   "t": "Signaal",
+   "d": "Een woord of opbouwkenmerk dat het doel verraadt, zoals \"moet\", \"enerzijds\" of \"onderzoekers verklaren\"."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke tekstsoort biedt opvattingen ter overweging aan, zonder de lezer voor één kant te winnen?",
+   "o": [
+    "de betogende tekst",
+    "de beschouwende tekst",
+    "de uiteenzettende tekst",
+    "de verhalende tekst"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Beschouwing: opvattingen ter overweging, zonder de lezer te winnen.",
+   "uo": [
+    "Koos je \"de betogende tekst\"? Dan denk je dat elke tekst met meningen een betoog is. Een betoog verdedigt één standpunt, een beschouwing weegt opvattingen af.",
+    "Klopt: een beschouwing laat de lezer nadenken over een kwestie en wil hem niet voor één standpunt winnen.",
+    "Koos je \"de uiteenzettende tekst\"? Dan denk je dat opvattingen alleen worden meegedeeld. Een uiteenzetting informeert feitelijk, een beschouwing biedt opvattingen aan om over na te denken.",
+    "Koos je \"de verhalende tekst\"? Dan denk je aan een tekst met personages en een plot. Dat is fictie; op het examen lees je uiteenzettende, beschouwende en betogende teksten."
+   ],
+   "uh": "Nadenken, niet overtuigen."
+  },
+  {
+   "v": "Welk schrijfdoel hoort bij een betogende tekst?",
+   "o": [
+    "de lezer neutraal informeren over een stand van zaken",
+    "de lezer een kwestie ter overweging voorleggen",
+    "de lezer vermaken met een spannend verhaal",
+    "de lezer overtuigen of tot actie aanzetten"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Betoog: standpunt verdedigen, overtuigen of tot actie aanzetten.",
+   "uo": [
+    "Koos je \"de lezer neutraal informeren over een stand van...\"? Dan denk je aan het doel van een uiteenzetting. Die legt alleen uit en neemt geen standpunt in, een betoog wil overtuigen.",
+    "Koos je \"de lezer een kwestie ter overweging voorleggen\"? Dan denk je aan het doel van een beschouwing. Die laat de lezer zelf afwegen, een betoog wil hem winnen voor één standpunt.",
+    "Koos je \"de lezer vermaken met een spannend verhaal\"? Dan denk je aan fictie. Een betoog is een zakelijke tekst met argumenten, geen verhaal om te vermaken.",
+    "Klopt: een betoog verdedigt een standpunt en wil dat de lezer het overneemt of er iets mee doet."
+   ],
+   "uh": "Standpunt verdedigen."
+  },
+  {
+   "v": "Welk schrijfdoel past bij een uiteenzetting?",
+   "o": [
+    "de lezer informeren over een stand van zaken",
+    "de lezer van een standpunt overtuigen",
+    "de lezer een kwestie ter overweging aanbieden",
+    "de lezer tot een bepaalde actie aanzetten"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Uiteenzetting: uitleggen, beschrijven, verklaren, meedelen: informeren.",
+   "uo": [
+    "Klopt: een uiteenzetting legt uit, beschrijft of verklaart en wil de lezer informeren.",
+    "Koos je \"de lezer van een standpunt overtuigen\"? Dan denk je dat elke tekst met feiten wil overtuigen. Een uiteenzetting neemt geen standpunt in, ze informeert alleen.",
+    "Koos je \"de lezer een kwestie ter overweging aanbieden\"? Dan denk je aan het doel van een beschouwing. Daarin worden opvattingen afgewogen, een uiteenzetting stelt alleen vast hoe iets zit.",
+    "Koos je \"de lezer tot een bepaalde actie aanzetten\"? Dan denk je aan een oproep. Zo'n oproep hoort bij een betoog, een uiteenzetting wil alleen laten weten."
+   ],
+   "uh": "Alleen informeren."
+  },
+  {
+   "v": "Tot welke tekstsoort behoort deze tekst?",
+   "o": [
+    "betogend: er wordt een standpunt verdedigd",
+    "beschouwend: er worden opvattingen afgewogen",
+    "uiteenzettend: het verschijnsel wordt uitgelegd",
+    "betogend: de schrijver adviseert de lezer iets te doen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Uitleggen en verklaren zonder standpunt: uiteenzettend.",
+   "uo": [
+    "Koos je \"betogend: er wordt een standpunt verdedigd\"? Dan denk je dat het woord \"verklaren\" op argumenteren wijst. Hier wordt een oorzaak uitgelegd, zonder dat de schrijver iets wil bereiken.",
+    "Koos je \"beschouwend: er worden opvattingen afgewogen\"? Dan denk je dat de twee mechanismen twee meningen zijn. Het zijn verklaringen van onderzoekers, geen opvattingen die worden afgewogen.",
+    "Klopt: de schrijver beschrijft en verklaart het omstandereffect en verdedigt geen standpunt.",
+    "Koos je \"betogend: de schrijver adviseert de lezer iets te...\"? Dan denk je dat de laatste zin een advies is. Hij beschrijft hoe het effect verdwijnt, hij vraagt de lezer niets te doen."
+   ],
+   "uh": "Uitleg, geen standpunt.",
+   "ctx": "Psychologen noemen het verschijnsel het omstandereffect: hoe meer mensen getuige zijn van een noodsituatie, hoe kleiner de kans dat een individu ingrijpt. Onderzoekers verklaren dit met twee mechanismen. Het eerste is verspreiding van verantwoordelijkheid: iedere omstander neemt aan dat een ander wel zal helpen. Het tweede is sociale beïnvloeding: als niemand reageert, concluderen mensen dat er kennelijk niets ernstigs aan de hand is. Dit effect treedt vooral op in situaties die onduidelijk zijn. Wanneer iemand één persoon rechtstreeks om hulp vraagt, verdwijnt het effect grotendeels, omdat de verantwoordelijkheid dan weer bij een concreet iemand ligt."
+  },
+  {
+   "v": "Welk onderdeel van de eerste zin laat zien dat de schrijver een standpunt verdedigt?",
+   "o": [
+    "\"stemleeftijd\": een woord dat altijd naar een betoog verwijst",
+    "\"zestien jaar\": een exact cijfer dat feitelijk bewijs levert",
+    "\"moet worden verlaagd\": een eis aan anderen",
+    "\"verlaagd\": de schrijver meldt wat er al is gebeurd"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "\"Moet\" in de stelling is een signaal dat een standpunt wordt verdedigd.",
+   "uo": [
+    "Koos je \"stemleeftijd: een woord dat altijd naar een betoog...\"? Dan denk je dat het onderwerp zelf het standpunt is. Een onderwerp kan ook in een uiteenzetting staan, de eis zit in \"moet\".",
+    "Koos je \"zestien jaar: een exact cijfer dat feitelijk bewijs...\"? Dan denk je dat een cijfer een tekst feitelijk maakt. Hier is het de gewenste leeftijd, dus een voorstel en geen gegeven.",
+    "Klopt: \"moet\" drukt uit wat er zou moeten gebeuren; dat is een standpunt en geen mededeling.",
+    "Koos je \"verlaagd: de schrijver meldt wat er al is gebeurd\"? Dan denk je dat het een mededeling over het verleden is. De zin zegt \"moet worden verlaagd\", dus het is nog niet gebeurd."
+   ],
+   "uh": "Let op \"moet\".",
+   "ctx": "De stemleeftijd moet worden verlaagd naar zestien jaar. Ten eerste worden zestienjarigen rechtstreeks geraakt door beslissingen over onderwijs, klimaat en de woningmarkt, dus zij hebben recht op inspraak. Ten tweede wijzen ervaringen in landen waar zestienjarigen al mogen stemmen erop dat jongeren bij hun eerste verkiezing vaak goed geïnformeerd zijn, vooral als school aandacht besteedt aan politiek. Tegenstanders beweren dat jongeren nog te onvolwassen zijn. Dat argument overtuigt niet: ook veel volwassenen stemmen op grond van een vluchtige indruk, en niemand pleit ervoor hun het stemrecht te ontnemen. De Tweede Kamer moet daarom de wet aanpassen en het stemrecht uitbreiden."
+  },
+  {
+   "v": "Welk schrijfdoel past het best bij deze tekst?",
+   "o": [
+    "de lezer laten nadenken over een kwestie",
+    "de lezer overtuigen dat sociale media het debat verrijken",
+    "de lezer uitleggen hoe algoritmen berichten selecteren",
+    "de lezer aanzetten het gebruik van sociale media te beperken"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Twee kanten, geen winnaar: de lezer moet zelf nadenken.",
+   "uo": [
+    "Klopt: de schrijver legt twee kanten naast elkaar en laat de afweging aan de lezer.",
+    "Koos je \"de lezer overtuigen dat sociale media het debat...\"? Dan denk je dat de eerste kant de mening van de schrijver is. De tweede kant krijgt even veel aandacht, dus er wordt niet overtuigd.",
+    "Koos je \"de lezer uitleggen hoe algoritmen berichten...\"? Dan denk je dat het algoritme het onderwerp van de tekst is. Het is slechts één argument, de tekst gaat over de waarde van sociale media.",
+    "Koos je \"de lezer aanzetten het gebruik van sociale media te...\"? Dan denk je dat de slotzin een oproep is. Die zegt alleen dat ons gebruik telt, er wordt geen actie gevraagd."
+   ],
+   "uh": "Afwegen, niet winnen.",
+   "ctx": "Sociale media zijn de afgelopen jaren uitgegroeid tot een belangrijk podium voor het publieke debat, maar de vraag of dat een winst is, laat zich niet eenvoudig beantwoorden. Aan de ene kant krijgen mensen die vroeger nauwelijks gehoord werden nu een stem, en kunnen onderwerpen die de gevestigde media negeren plotseling veel aandacht krijgen. Aan de andere kant belonen de algoritmen vooral berichten die sterke emoties oproepen, waardoor genuanceerde meningen het onderspit delven. Sommigen zien in dit proces een verrijking van de democratie; anderen vrezen een verschraling van het gesprek. Misschien ligt de waarheid ergens in het midden: het medium zelf is niet goed of slecht, maar de manier waarop wij het gebruiken, bepaalt wat het oplevert."
+  },
+  {
+   "v": "Bij een examenvraag over één alinea moet je de tekstsoort van die alinea bepalen. Wat doe je?",
+   "o": [
+    "de soort van de hele tekst overnemen",
+    "de soort bepalen aan de lengte van de alinea",
+    "de soort bepalen aan het onderwerp van de alinea",
+    "kijken naar het doel van die alinea zelf"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Bij een tekstgedeelte beoordeel je het doel van dat gedeelte zelf.",
+   "uo": [
+    "Koos je \"de soort van de hele tekst overnemen\"? Dan denk je dat alle alinea's dezelfde soort hebben. Een tekst kan bijvoorbeeld uitleggen en pas daarna een standpunt innemen, dus kijk naar de alinea zelf.",
+    "Koos je \"de soort bepalen aan de lengte van de alinea\"? Dan denk je dat lange alinea's uitleg zijn. De lengte zegt niets over het doel, het gaat om wat de schrijver wil bereiken.",
+    "Koos je \"de soort bepalen aan het onderwerp van de alinea\"? Dan denk je dat een onderwerp bij één soort hoort. Over hetzelfde onderwerp kun je uitleggen, afwegen of betogen, het doel beslist.",
+    "Klopt: een tekstgedeelte kan van de rest afwijken, dus beoordeel je het doel van dat gedeelte zelf."
+   ],
+   "uh": "Het gedeelte zelf."
+  },
+  {
+   "v": "Welke zin uit de tekst is typisch voor een uiteenzetting en niet voor een betoog?",
+   "o": [
+    "\"Dit effect treedt vooral op in situaties die onduidelijk zijn.\"",
+    "\"Onderzoekers verklaren dit met twee mechanismen.\"",
+    "\"Wanneer iemand één persoon rechtstreeks om hulp vraagt, verdwijnt het effect.\"",
+    "\"Het eerste is verspreiding van verantwoordelijkheid.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Zinnen die verwijzen naar onderzoek en verklaren passen bij een uiteenzetting.",
+   "uo": [
+    "Koos je \"Dit effect treedt vooral op in situaties die...\"? Dan denk je dat deze zin een bewering is die moet overtuigen. Hij meldt echter een bevinding, en past daarom ook bij een uiteenzetting.",
+    "Klopt: de zin legt uit en verwijst naar onderzoek; hij verdedigt geen standpunt en vraagt niets van de lezer.",
+    "Koos je \"Wanneer iemand één persoon rechtstreeks om hulp...\"? Dan denk je dat dit een advies is. De zin beschrijft wat er gebeurt, hij zegt niet wat de lezer moet doen.",
+    "Koos je \"Het eerste is verspreiding van verantwoordelijkheid.\"? Dan denk je dat een opsomming een betoog verraadt. Hier worden mechanismen uitgelegd, geen argumenten voor een standpunt."
+   ],
+   "uh": "Uitleg, geen standpunt.",
+   "ctx": "Psychologen noemen het verschijnsel het omstandereffect: hoe meer mensen getuige zijn van een noodsituatie, hoe kleiner de kans dat een individu ingrijpt. Onderzoekers verklaren dit met twee mechanismen. Het eerste is verspreiding van verantwoordelijkheid: iedere omstander neemt aan dat een ander wel zal helpen. Het tweede is sociale beïnvloeding: als niemand reageert, concluderen mensen dat er kennelijk niets ernstigs aan de hand is. Dit effect treedt vooral op in situaties die onduidelijk zijn. Wanneer iemand één persoon rechtstreeks om hulp vraagt, verdwijnt het effect grotendeels, omdat de verantwoordelijkheid dan weer bij een concreet iemand ligt."
+  },
+  {
+   "v": "Welk kenmerk van de tekst laat het best zien dat het een beschouwing is?",
+   "o": [
+    "de tekst noemt veel feiten over de werking van algoritmen",
+    "de tekst gebruikt sterke woorden zoals \"verschraling\"",
+    "de tekst noemt het onderwerp in de eerste zin",
+    "twee kanten krijgen evenveel aandacht, zonder keuze"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Afwegen zonder keuze: kenmerk van een beschouwing.",
+   "uo": [
+    "Koos je \"de tekst noemt veel feiten over de werking van...\"? Dan denk je dat feiten een tekst tot beschouwing maken. Ook een uiteenzetting of betoog noemt feiten, het gaat om hoe de kwestie wordt afgewogen.",
+    "Koos je \"de tekst gebruikt sterke woorden zoals verschraling\"? Dan denk je dat sterk taalgebruik een standpunt verraadt. Het woord staat bij wat anderen vrezen, het is geen eigen oordeel.",
+    "Koos je \"de tekst noemt het onderwerp in de eerste zin\"? Dan denk je dat het onderwerp de tekstsoort bepaalt. Elke soort kan met het onderwerp beginnen, het doel bepaalt de soort.",
+    "Klopt: de afweging zonder keuze is het kenmerk van een beschouwing; de lezer trekt zelf de conclusie."
+   ],
+   "uh": "Afweging zonder keuze.",
+   "ctx": "Sociale media zijn de afgelopen jaren uitgegroeid tot een belangrijk podium voor het publieke debat, maar de vraag of dat een winst is, laat zich niet eenvoudig beantwoorden. Aan de ene kant krijgen mensen die vroeger nauwelijks gehoord werden nu een stem, en kunnen onderwerpen die de gevestigde media negeren plotseling veel aandacht krijgen. Aan de andere kant belonen de algoritmen vooral berichten die sterke emoties oproepen, waardoor genuanceerde meningen het onderspit delven. Sommigen zien in dit proces een verrijking van de democratie; anderen vrezen een verschraling van het gesprek. Misschien ligt de waarheid ergens in het midden: het medium zelf is niet goed of slecht, maar de manier waarop wij het gebruiken, bepaalt wat het oplevert."
+  },
+  {
+   "v": "Welk schrijfdoel is het belangrijkst in deze tekst?",
+   "o": [
+    "informeren over de stemleeftijd in andere landen",
+    "overtuigen en tot actie aanzetten",
+    "ter overweging aanbieden of jongeren wel mogen stemmen",
+    "uitleggen hoe de verkiezingen in Nederland werken"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Standpunt + oproep: overtuigen en tot actie aanzetten.",
+   "uo": [
+    "Koos je \"informeren over de stemleeftijd in andere landen\"? Dan denk je dat de verwijzing naar andere landen het doel is. Zij dient als argument, het doel is het standpunt te verdedigen.",
+    "Klopt: de schrijver verdedigt een standpunt en eindigt met een oproep aan de Tweede Kamer.",
+    "Koos je \"ter overweging aanbieden of jongeren wel mogen...\"? Dan denk je dat de tegenwerping betekent dat de schrijver afweegt. Zij wordt echter weerlegd, dus de keuze staat vast.",
+    "Koos je \"uitleggen hoe de verkiezingen in Nederland werken\"? Dan denk je dat de tekst uitleg over verkiezingen geeft. Er staat niets over de procedure, de tekst wil de wet veranderd zien."
+   ],
+   "uh": "Standpunt plus oproep.",
+   "ctx": "De stemleeftijd moet worden verlaagd naar zestien jaar. Ten eerste worden zestienjarigen rechtstreeks geraakt door beslissingen over onderwijs, klimaat en de woningmarkt, dus zij hebben recht op inspraak. Ten tweede wijzen ervaringen in landen waar zestienjarigen al mogen stemmen erop dat jongeren bij hun eerste verkiezing vaak goed geïnformeerd zijn, vooral als school aandacht besteedt aan politiek. Tegenstanders beweren dat jongeren nog te onvolwassen zijn. Dat argument overtuigt niet: ook veel volwassenen stemmen op grond van een vluchtige indruk, en niemand pleit ervoor hun het stemrecht te ontnemen. De Tweede Kamer moet daarom de wet aanpassen en het stemrecht uitbreiden."
+  },
+  {
+   "v": "De tekst noemt ook tegenstanders. Waarom blijft het toch een betoog?",
+   "o": [
+    "omdat de tekst beide kanten even zwaar laat wegen",
+    "omdat er veel cijfers en onderzoeken in de tekst staan",
+    "hij weerlegt hun argument en houdt zijn standpunt vast",
+    "omdat een tekst met tegenstanders altijd een beschouwing is"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 5,
+   "u": "Een weerlegde tegenwerping hoort bij een betoog.",
+   "uo": [
+    "Koos je \"omdat de tekst beide kanten even zwaar laat wegen\"? Dan denk je dat het noemen van een tegenstander een beschouwing is. Hier wordt hij echter weerlegd, dus de kanten wegen niet gelijk.",
+    "Koos je \"omdat er veel cijfers en onderzoeken in de tekst...\"? Dan denk je dat cijfers de soort bepalen. Er staan zelfs geen cijfers in de tekst, het gaat om standpunt en doel.",
+    "Klopt: een tegenwerping weerleggen hoort bij betogen; de schrijver kiest en blijft bij zijn standpunt.",
+    "Koos je \"omdat een tekst met tegenstanders altijd een...\"? Dan denk je dat tegenstanders het kenmerk van beschouwen zijn. Een betoog bevat ze vaak, omdat de schrijver ze wil weerleggen."
+   ],
+   "uh": "Weerleggen is betogen.",
+   "ctx": "De stemleeftijd moet worden verlaagd naar zestien jaar. Ten eerste worden zestienjarigen rechtstreeks geraakt door beslissingen over onderwijs, klimaat en de woningmarkt, dus zij hebben recht op inspraak. Ten tweede wijzen ervaringen in landen waar zestienjarigen al mogen stemmen erop dat jongeren bij hun eerste verkiezing vaak goed geïnformeerd zijn, vooral als school aandacht besteedt aan politiek. Tegenstanders beweren dat jongeren nog te onvolwassen zijn. Dat argument overtuigt niet: ook veel volwassenen stemmen op grond van een vluchtige indruk, en niemand pleit ervoor hun het stemrecht te ontnemen. De Tweede Kamer moet daarom de wet aanpassen en het stemrecht uitbreiden."
+  },
+  {
+   "v": "In de tekst staan voordelen en nadelen van sociale media. Waarom is het geen betoog?",
+   "o": [
+    "de schrijver kiest niet en neemt geen standpunt in",
+    "omdat een betoog nooit voordelen en nadelen tegelijk noemt",
+    "omdat de tekst te weinig feiten bevat",
+    "omdat de tekst een slotzin heeft"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Geen standpunt, wel afweging: beschouwing.",
+   "uo": [
+    "Klopt: een betoog verdedigt een standpunt, terwijl hier beide kanten open blijven voor de lezer.",
+    "Koos je \"omdat een betoog nooit voordelen en nadelen...\"? Dan denk je dat voor- en nadelen alleen in beschouwingen staan. Ook een betoog noemt ze, maar dan om één kant te kiezen.",
+    "Koos je \"omdat de tekst te weinig feiten bevat\"? Dan denk je dat een betoog meer feiten nodig heeft. Het aantal feiten bepaalt de soort niet, het doel bepaalt hem.",
+    "Koos je \"omdat de tekst een slotzin heeft\"? Dan denk je dat een slotzin een betoog verraadt. De slotzin zegt hier alleen dat het gebruik telt, er wordt geen standpunt verdedigd."
+   ],
+   "uh": "Geen standpunt.",
+   "ctx": "Sociale media zijn de afgelopen jaren uitgegroeid tot een belangrijk podium voor het publieke debat, maar de vraag of dat een winst is, laat zich niet eenvoudig beantwoorden. Aan de ene kant krijgen mensen die vroeger nauwelijks gehoord werden nu een stem, en kunnen onderwerpen die de gevestigde media negeren plotseling veel aandacht krijgen. Aan de andere kant belonen de algoritmen vooral berichten die sterke emoties oproepen, waardoor genuanceerde meningen het onderspit delven. Sommigen zien in dit proces een verrijking van de democratie; anderen vrezen een verschraling van het gesprek. Misschien ligt de waarheid ergens in het midden: het medium zelf is niet goed of slecht, maar de manier waarop wij het gebruiken, bepaalt wat het oplevert."
+  },
+  {
+   "v": "Welke soort is de eerste helft van deze tekst (tot \"Toch is die ontwikkeling nog niet af\")?",
+   "o": [
+    "uiteenzettend: er wordt uitleg gegeven",
+    "betogend: er wordt al een standpunt verdedigd",
+    "beschouwend: er worden opvattingen afgewogen",
+    "een oproep: de lezer moet iets doen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Eerste helft: beschrijven en uitleggen.",
+   "uo": [
+    "Klopt: de eerste helft beschrijft hoe publiceren werkt en neemt nog geen standpunt in.",
+    "Koos je \"betogend: er wordt al een standpunt verdedigd\"? Dan denk je dat het verschil tussen tijdschrift en open access een mening is. Het is een beschrijving, het standpunt komt pas aan het eind.",
+    "Koos je \"beschouwend: er worden opvattingen afgewogen\"? Dan denk je dat twee manieren van publiceren twee opvattingen zijn. De tekst beschrijft ze alleen, hij weegt ze nog niet af.",
+    "Koos je \"een oproep: de lezer moet iets doen\"? Dan denk je dat de uitleg al een oproep is. Een oproep volgt pas in de laatste zin, de eerste helft informeert."
+   ],
+   "uh": "Eerst alleen uitleg.",
+   "ctx": "Wetenschappelijke artikelen verschijnen traditioneel in tijdschriften waarvoor lezers of hun bibliotheken moeten betalen. De onderzoeker krijgt voor een publicatie geen geld; de uitgever verdient aan de abonnementen. Bij open access daarentegen is een artikel direct gratis te lezen, omdat de auteur, zijn instituut of een financier de kosten van publicatie betaalt. Veel universiteiten sluiten inmiddels afspraken met uitgevers om hun onderzoekers open access te laten publiceren. Toch is die ontwikkeling nog niet af. Onderzoek dat met publiek geld is betaald, hoort voor iedereen toegankelijk te zijn. Overheden moeten daarom open access verplicht stellen voor alle gesubsidieerd onderzoek."
+  },
+  {
+   "v": "Alleen de laatste twee zinnen van deze tekst worden voorgelegd. Welke tekstsoort is dat gedeelte?",
+   "o": [
+    "uiteenzettend: de zinnen leggen het systeem uit",
+    "beschouwend: de zinnen wegen opvattingen af",
+    "betogend: een standpunt met een oproep",
+    "geen tekstsoort: het zijn losse zinnen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Een tekstgedeelte kan een ander doel hebben dan het begin van de tekst.",
+   "uo": [
+    "Koos je \"uiteenzettend: de zinnen leggen het systeem uit\"? Dan denk je dat de hele tekst uiteenzettend is. Dit gedeelte legt niets uit, het zegt wat er moet gebeuren.",
+    "Koos je \"beschouwend: de zinnen wegen opvattingen af\"? Dan denk je dat het onderwerp een kwestie is. De zinnen wegen echter niets af, ze kiezen één kant.",
+    "Klopt: \"hoort\" en \"moeten\" drukken een standpunt uit en de laatste zin vraagt de overheid iets te doen.",
+    "Koos je \"geen tekstsoort: het zijn losse zinnen\"? Dan denk je dat twee zinnen geen soort hebben. Ook een tekstgedeelte heeft een doel, hier overtuigen."
+   ],
+   "uh": "Kijk naar dit gedeelte.",
+   "ctx": "Wetenschappelijke artikelen verschijnen traditioneel in tijdschriften waarvoor lezers of hun bibliotheken moeten betalen. De onderzoeker krijgt voor een publicatie geen geld; de uitgever verdient aan de abonnementen. Bij open access daarentegen is een artikel direct gratis te lezen, omdat de auteur, zijn instituut of een financier de kosten van publicatie betaalt. Veel universiteiten sluiten inmiddels afspraken met uitgevers om hun onderzoekers open access te laten publiceren. Toch is die ontwikkeling nog niet af. Onderzoek dat met publiek geld is betaald, hoort voor iedereen toegankelijk te zijn. Overheden moeten daarom open access verplicht stellen voor alle gesubsidieerd onderzoek."
+  },
+  {
+   "v": "Welke zin komt uit een betogende tekst?",
+   "o": [
+    "zin 1, want er staat een duidelijke stijging in de cijfers",
+    "zin 3, want de schrijver zegt wat gemeenten moeten doen",
+    "zin 2, want er staat \"misschien\"",
+    "alle drie, want alle zinnen gaan over warmtepompen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Bepaal de soort aan het doel: zin 3 verdedigt een standpunt.",
+   "uo": [
+    "Koos je \"zin 1, want er staat een duidelijke stijging in de...\"? Dan denk je dat een stijging een standpunt is. Dit is een meetbare mededeling, geen standpunt of argument.",
+    "Klopt: \"moeten\" met een argument (\"want\") toont een standpunt dat verdedigd wordt.",
+    "Koos je \"zin 2, want er staat misschien\"? Dan denk je dat onzekerheid betoog verraadt. \"Misschien\" wijst op afwegen, dus op een beschouwing.",
+    "Koos je \"alle drie, want alle zinnen gaan over warmtepompen\"? Dan denk je dat het onderwerp de soort bepaalt. De doelen verschillen, dus de soorten ook."
+   ],
+   "uh": "Zoek het standpunt.",
+   "ctx": "Zin 1: Het aantal huishoudens met een warmtepomp is de afgelopen jaren sterk gestegen. Zin 2: Misschien is een warmtepomp voor sommigen aantrekkelijk, terwijl anderen vooral de hoge aanschafkosten zien. Zin 3: Gemeenten moeten huiseigenaren verplichten een warmtepomp te installeren, want alleen dan worden de klimaatdoelen gehaald."
+  },
+  {
+   "v": "Welke woorden in zin A wijzen op een beschouwing in plaats van een betoog?",
+   "o": [
+    "\"levert tijdwinst op\" en \"contact met collega's\"",
+    "\"thuiswerken\" en \"collega's\"",
+    "\"moeten\" en \"want\" uit de tweede zin",
+    "\"enerzijds ... anderzijds\" en \"wie weet\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Enerzijds-anderzijds en \"wie weet\" zijn signalen van een beschouwing.",
+   "uo": [
+    "Koos je \"levert tijdwinst op en contact met collega's\"? Dan denk je dat de inhoudswoorden de soort bepalen. Het gaat om de formulering van de afweging, niet om het onderwerp.",
+    "Koos je \"thuiswerken en collega's\"? Dan denk je dat de onderwerpen de soort bepalen. Hetzelfde onderwerp past in elke soort, het doel wijst de soort aan.",
+    "Koos je \"moeten en want uit de tweede zin\"? Dan denk je dat deze woorden in zin A staan. Ze staan in zin B, daar verdedigt de schrijver een standpunt.",
+    "Klopt: deze woorden zetten twee kanten naast elkaar en laten de keuze open."
+   ],
+   "uh": "Twee kanten, geen keuze.",
+   "ctx": "Zin A: Enerzijds levert thuiswerken tijdwinst op, anderzijds dreigt het contact met collega's te verslappen; wie weet wat zwaarder weegt. Zin B: Bedrijven moeten thuiswerken verbieden, want zonder kantoor verdwijnt de bedrijfscultuur."
+  },
+  {
+   "v": "Welk schrijfdoel hoort bij dit tekstgedeelte?",
+   "o": [
+    "informeren over het schoolplein",
+    "tot actie aanzetten",
+    "ter overweging aanbieden of het plein groen moet",
+    "vermaken met een verhaal"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Concrete oproep: tot actie aanzetten.",
+   "uo": [
+    "Koos je \"informeren over het schoolplein\"? Dan denk je dat de tekst vooral uitlegt hoe het plein eruitziet. Er wordt niets beschreven, er wordt iets gevraagd.",
+    "Klopt: de schrijver vraagt de lezer concreet iets te doen, namelijk tekenen en anderen vragen.",
+    "Koos je \"ter overweging aanbieden of het plein groen moet\"? Dan denk je dat de schrijver twijfelt. De schrijver is overtuigd, de lezer moet nu handelen.",
+    "Koos je \"vermaken met een verhaal\"? Dan denk je dat uitroepen op amusement wijzen. Het is een zakelijke oproep, geen verhaal."
+   ],
+   "uh": "Een concrete oproep.",
+   "ctx": "Teken de petitie voor een groen schoolplein! Samen kunnen we het gemeentebestuur overtuigen om nog dit jaar te beginnen, dus zet vandaag nog je naam onder de lijst en vraag je klasgenoten hetzelfde te doen."
+  },
+  {
+   "v": "Welk schrijfdoel is het belangrijkst in de tekst als geheel?",
+   "o": [
+    "overtuigen: de uitleg bereidt het standpunt aan het slot voor",
+    "informeren, want de meeste zinnen leggen iets uit",
+    "ter overweging aanbieden, want twee systemen worden vergeleken",
+    "er is geen belangrijkste doel, het is een mengvorm"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Bij een mengvorm bepaalt het doel waar de tekst naartoe werkt: hier het standpunt.",
+   "uo": [
+    "Klopt: de tekst werkt naar het standpunt in de slotzin toe; de uitleg dient als onderbouwing.",
+    "Koos je \"informeren, want de meeste zinnen leggen iets uit\"? Dan denk je dat het aantal zinnen het doel bepaalt. Je kijkt waar de tekst naartoe werkt, en dat is het standpunt in de slotzin.",
+    "Koos je \"ter overweging aanbieden, want twee systemen worden...\"? Dan denk je dat een vergelijking een beschouwing is. De schrijver kiest uiteindelijk, dus er is geen open afweging.",
+    "Koos je \"er is geen belangrijkste doel, het is een mengvorm\"? Dan denk je dat een mengvorm geen hoofddoel heeft. Je moet toch het belangrijkste doel bepalen, en dat is hier overtuigen."
+   ],
+   "uh": "Waar werkt de tekst naartoe?",
+   "ctx": "Wetenschappelijke artikelen verschijnen traditioneel in tijdschriften waarvoor lezers of hun bibliotheken moeten betalen. De onderzoeker krijgt voor een publicatie geen geld; de uitgever verdient aan de abonnementen. Bij open access daarentegen is een artikel direct gratis te lezen, omdat de auteur, zijn instituut of een financier de kosten van publicatie betaalt. Veel universiteiten sluiten inmiddels afspraken met uitgevers om hun onderzoekers open access te laten publiceren. Toch is die ontwikkeling nog niet af. Onderzoek dat met publiek geld is betaald, hoort voor iedereen toegankelijk te zijn. Overheden moeten daarom open access verplicht stellen voor alle gesubsidieerd onderzoek."
+  },
+  {
+   "v": "Een leerling zegt: \"De laatste zin beveelt de lezer iets aan, dus het is een betoog.\" Wat is jouw oordeel?",
+   "o": [
+    "juist: elke slotzin met een oordeel maakt een tekst tot betoog",
+    "juist: er staat \"misschien\" en dat is een opdracht",
+    "onjuist: de laatste zin is een feit en geen mening",
+    "onjuist: de zin kiest geen kant en laat de lezer afwegen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Een slotzin die geen kant kiest, laat de beschouwing intact.",
+   "uo": [
+    "Koos je \"juist: elke slotzin met een oordeel maakt een tekst...\"? Dan denk je dat één oordeel genoeg is. Een betoog verdedigt een duidelijk standpunt met argumenten, hier ontbreekt dat standpunt.",
+    "Koos je \"juist: er staat misschien en dat is een opdracht\"? Dan denk je dat \"misschien\" een eis is. Het woord drukt twijfel uit, dus een beschouwing.",
+    "Koos je \"onjuist: de laatste zin is een feit en geen mening\"? Dan denk je dat de zin een meetbaar gegeven noemt. Hij is een afweging, geen feit en geen standpunt.",
+    "Klopt: \"ligt ergens in het midden\" en \"bepaalt wat het oplevert\" kiezen geen kant; het blijft een beschouwing."
+   ],
+   "uh": "Kiest de zin een kant?",
+   "ctx": "Sociale media zijn de afgelopen jaren uitgegroeid tot een belangrijk podium voor het publieke debat, maar de vraag of dat een winst is, laat zich niet eenvoudig beantwoorden. Aan de ene kant krijgen mensen die vroeger nauwelijks gehoord werden nu een stem, en kunnen onderwerpen die de gevestigde media negeren plotseling veel aandacht krijgen. Aan de andere kant belonen de algoritmen vooral berichten die sterke emoties oproepen, waardoor genuanceerde meningen het onderspit delven. Sommigen zien in dit proces een verrijking van de democratie; anderen vrezen een verschraling van het gesprek. Misschien ligt de waarheid ergens in het midden: het medium zelf is niet goed of slecht, maar de manier waarop wij het gebruiken, bepaalt wat het oplevert."
+  },
+  {
+   "v": "Welk signaal in het midden van de tekst laat zien dat de schrijver een tegenstander weerlegt?",
+   "o": [
+    "\"Tegenstanders beweren\": de schrijver sluit zich bij hen aan",
+    "\"ook veel volwassenen stemmen\": een neutrale vaststelling",
+    "\"Dat argument overtuigt niet\": een afwijzing",
+    "\"nog te onvolwassen\": de mening van de schrijver"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Een afwijzing van een bezwaar is een signaal van betogen.",
+   "uo": [
+    "Koos je \"Tegenstanders beweren: de schrijver sluit zich bij...\"? Dan denk je dat \"beweren\" instemming uitdrukt. Het woord geeft het standpunt van anderen weer, de schrijver is het er niet mee eens.",
+    "Koos je \"ook veel volwassenen stemmen: een neutrale...\"? Dan denk je dat de zin een mededeling is. Hij dient als tegenargument, dus hij hoort bij het weerleggen.",
+    "Klopt: de schrijver noemt het bezwaar van tegenstanders en wijst het direct af; dat is betogen.",
+    "Koos je \"nog te onvolwassen: de mening van de schrijver\"? Dan denk je dat de woorden van de schrijver zijn. Ze geven de mening van de tegenstanders weer, de schrijver verwerpt ze."
+   ],
+   "uh": "Wie zegt wat precies?",
+   "ctx": "De stemleeftijd moet worden verlaagd naar zestien jaar. Ten eerste worden zestienjarigen rechtstreeks geraakt door beslissingen over onderwijs, klimaat en de woningmarkt, dus zij hebben recht op inspraak. Ten tweede wijzen ervaringen in landen waar zestienjarigen al mogen stemmen erop dat jongeren bij hun eerste verkiezing vaak goed geïnformeerd zijn, vooral als school aandacht besteedt aan politiek. Tegenstanders beweren dat jongeren nog te onvolwassen zijn. Dat argument overtuigt niet: ook veel volwassenen stemmen op grond van een vluchtige indruk, en niemand pleit ervoor hun het stemrecht te ontnemen. De Tweede Kamer moet daarom de wet aanpassen en het stemrecht uitbreiden."
+  },
+  {
+   "v": "\"Dit effect treedt vooral op in situaties die onduidelijk zijn\" wordt los voorgelegd. Welke soort is dat?",
+   "o": [
+    "betogend: de zin bevat een stellige bewering over het effect",
+    "beschouwend: de zin zegt \"vooral\"",
+    "uiteenzettend: er wordt een bevinding meegedeeld",
+    "dat is niet te bepalen zonder de rest"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Een losse zin kan een duidelijk doel hebben: hier informeren.",
+   "uo": [
+    "Koos je \"betogend: de zin bevat een stellige bewering over...\"? Dan denk je dat elke bewering een standpunt is. Deze bewering is een bevinding, zonder dat de schrijver iets verdedigt.",
+    "Koos je \"beschouwend: de zin zegt vooral\"? Dan denk je dat \"vooral\" een afweging is. Het woord geeft aan in welke gevallen, het weegt niets af.",
+    "Klopt: de zin deelt mee wanneer het effect optreedt en neemt geen standpunt in.",
+    "Koos je \"dat is niet te bepalen zonder de rest\"? Dan denk je dat de soort van een zin alleen met de hele tekst te bepalen is. Een losse zin kan duidelijk informeren, zoals hier."
+   ],
+   "uh": "Wat wil deze zin?",
+   "ctx": "Psychologen noemen het verschijnsel het omstandereffect: hoe meer mensen getuige zijn van een noodsituatie, hoe kleiner de kans dat een individu ingrijpt. Onderzoekers verklaren dit met twee mechanismen. Het eerste is verspreiding van verantwoordelijkheid: iedere omstander neemt aan dat een ander wel zal helpen. Het tweede is sociale beïnvloeding: als niemand reageert, concluderen mensen dat er kennelijk niets ernstigs aan de hand is. Dit effect treedt vooral op in situaties die onduidelijk zijn. Wanneer iemand één persoon rechtstreeks om hulp vraagt, verdwijnt het effect grotendeels, omdat de verantwoordelijkheid dan weer bij een concreet iemand ligt."
+  },
+  {
+   "v": "Waarin verschillen tekst A en tekst B?",
+   "o": [
+    "A overtuigt de lezer, B informeert hem over de niveaus",
+    "beide informeren, want ze gaan over onderwijs",
+    "beide zijn beschouwingen, want ze noemen niveaus",
+    "A informeert over de niveaus, B verdedigt een standpunt"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Informeren tegenover standpunt verdedigen: uiteenzetting tegenover betoog.",
+   "uo": [
+    "Koos je \"A overtuigt de lezer, B informeert hem over de...\"? Dan denk je dat de teksten zijn omgedraaid. Tekst A noemt alleen de niveaus, tekst B bepleit iets.",
+    "Koos je \"beide informeren, want ze gaan over onderwijs\"? Dan denk je dat het onderwerp de soort bepaalt. De doelen verschillen, tekst B kiest een kant.",
+    "Koos je \"beide zijn beschouwingen, want ze noemen niveaus\"? Dan denk je dat het noemen van niveaus afweging is. Er wordt niets afgewogen, A meldt en B bepleit.",
+    "Klopt: tekst A meldt hoe het systeem werkt, tekst B bepleit een verandering en geeft een reden."
+   ],
+   "uh": "Mededeling tegenover pleidooi.",
+   "ctx": "Tekst A: Het voortgezet onderwijs kent drie niveaus: vmbo, havo en vwo. Na het vmbo stromen leerlingen door naar het mbo, na havo kiezen veel leerlingen voor het hbo en na vwo voor de universiteit. Tekst B: Het voortgezet onderwijs moet leerlingen langer de tijd geven om te kiezen. Wie al op twaalfjarige leeftijd een niveau krijgt toegewezen, verliest kansen die hij later wel zou hebben benut. Scholen horen daarom brede brugklassen aan te bieden."
+  },
+  {
+   "v": "Waarom is \"tot actie aanzetten\" ook een passend doel van deze tekst?",
+   "o": [
+    "omdat de slotzin de Tweede Kamer iets vraagt",
+    "omdat de tekst jongeren oproept te gaan stemmen",
+    "omdat de tekst een ervaring in andere landen noemt",
+    "omdat de tegenstanders worden genoemd"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Een oproep aan een instantie is een concrete vraag tot actie.",
+   "uo": [
+    "Klopt: de laatste zin richt zich tot een instantie en vraagt een concrete handeling.",
+    "Koos je \"omdat de tekst jongeren oproept te gaan stemmen\"? Dan denk je dat de oproep de jongeren zelf betreft. De oproep is gericht aan de Tweede Kamer, niet aan de jongeren.",
+    "Koos je \"omdat de tekst een ervaring in andere landen noemt\"? Dan denk je dat het noemen van een ervaring een oproep is. Het is informatie, die het argument ondersteunt.",
+    "Koos je \"omdat de tegenstanders worden genoemd\"? Dan denk je dat het noemen van een bezwaar tot actie aanzet. Het bezwaar wordt weerlegd, het is geen oproep."
+   ],
+   "uh": "Wie wordt aangesproken?",
+   "ctx": "De stemleeftijd moet worden verlaagd naar zestien jaar. Ten eerste worden zestienjarigen rechtstreeks geraakt door beslissingen over onderwijs, klimaat en de woningmarkt, dus zij hebben recht op inspraak. Ten tweede wijzen ervaringen in landen waar zestienjarigen al mogen stemmen erop dat jongeren bij hun eerste verkiezing vaak goed geïnformeerd zijn, vooral als school aandacht besteedt aan politiek. Tegenstanders beweren dat jongeren nog te onvolwassen zijn. Dat argument overtuigt niet: ook veel volwassenen stemmen op grond van een vluchtige indruk, en niemand pleit ervoor hun het stemrecht te ontnemen. De Tweede Kamer moet daarom de wet aanpassen en het stemrecht uitbreiden."
+  },
+  {
+   "v": "Een leerling zegt: \"De tekst verklaart een verschijnsel, dus het is een beschouwing.\" Wat is jouw oordeel?",
+   "o": [
+    "juist: een verklaring is een opvatting",
+    "onjuist: verklaren hoort bij uiteenzetten",
+    "juist: er staan twee mechanismen, dus twee kanten",
+    "onjuist: het is een betoog, want er staat een conclusie"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Verklaren hoort bij een uiteenzetting.",
+   "uo": [
+    "Koos je \"juist: een verklaring is een opvatting\"? Dan denk je dat een verklaring een mening is. Onderzoekers verklaren op grond van onderzoek, dat is geen opvatting die wordt afgewogen.",
+    "Klopt: bij een uiteenzetting wordt iets uitgelegd, beschreven of verklaard; er worden geen opvattingen afgewogen.",
+    "Koos je \"juist: er staan twee mechanismen, dus twee kanten\"? Dan denk je dat twee mechanismen twee kanten van een kwestie zijn. Beide verklaren hetzelfde effect, ze staan niet tegenover elkaar.",
+    "Koos je \"onjuist: het is een betoog, want er staat een...\"? Dan denk je dat de laatste zin een standpunt is. Hij beschrijft het effect, er wordt niets verdedigd."
+   ],
+   "uh": "Verklaren is informeren.",
+   "ctx": "Psychologen noemen het verschijnsel het omstandereffect: hoe meer mensen getuige zijn van een noodsituatie, hoe kleiner de kans dat een individu ingrijpt. Onderzoekers verklaren dit met twee mechanismen. Het eerste is verspreiding van verantwoordelijkheid: iedere omstander neemt aan dat een ander wel zal helpen. Het tweede is sociale beïnvloeding: als niemand reageert, concluderen mensen dat er kennelijk niets ernstigs aan de hand is. Dit effect treedt vooral op in situaties die onduidelijk zijn. Wanneer iemand één persoon rechtstreeks om hulp vraagt, verdwijnt het effect grotendeels, omdat de verantwoordelijkheid dan weer bij een concreet iemand ligt."
+  },
+  {
+   "v": "Welke formulering in de tekst past het best bij een beschouwing?",
+   "o": [
+    "\"Sociale media zijn uitgegroeid tot een belangrijk podium\"",
+    "\"belonen de algoritmen vooral berichten met sterke emoties\"",
+    "\"onderwerpen die de gevestigde media negeren\"",
+    "\"Sommigen zien ... anderen vrezen ...\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "\"Sommigen ... anderen ...\" zet twee opvattingen naast elkaar.",
+   "uo": [
+    "Koos je \"Sociale media zijn uitgegroeid tot een belangrijk...\"? Dan denk je dat deze zin het kenmerk van een beschouwing is. Het is een vaststelling, de afweging volgt pas daarna.",
+    "Koos je \"belonen de algoritmen vooral berichten met sterke...\"? Dan denk je dat deze zin een afweging is. Het is een argument voor één kant, de afweging zit in het geheel.",
+    "Koos je \"onderwerpen die de gevestigde media negeren\"? Dan denk je dat deze woorden een mening tonen. Ze beschrijven een feit, ze wegen niets af.",
+    "Klopt: de schrijver legt twee opvattingen naast elkaar zonder te kiezen."
+   ],
+   "uh": "Twee opvattingen.",
+   "ctx": "Sociale media zijn de afgelopen jaren uitgegroeid tot een belangrijk podium voor het publieke debat, maar de vraag of dat een winst is, laat zich niet eenvoudig beantwoorden. Aan de ene kant krijgen mensen die vroeger nauwelijks gehoord werden nu een stem, en kunnen onderwerpen die de gevestigde media negeren plotseling veel aandacht krijgen. Aan de andere kant belonen de algoritmen vooral berichten die sterke emoties oproepen, waardoor genuanceerde meningen het onderspit delven. Sommigen zien in dit proces een verrijking van de democratie; anderen vrezen een verschraling van het gesprek. Misschien ligt de waarheid ergens in het midden: het medium zelf is niet goed of slecht, maar de manier waarop wij het gebruiken, bepaalt wat het oplevert."
+  },
+  {
+   "v": "Welke zin moet je schrappen om van de tekst een zuivere uiteenzetting te maken?",
+   "o": [
+    "de laatste twee zinnen",
+    "de eerste twee zinnen",
+    "de zin \"Toch is die ontwikkeling nog niet af\"",
+    "de zin over universiteiten en uitgevers"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Weg met standpunt en oproep: dan blijft uitleg over.",
+   "uo": [
+    "Klopt: die zinnen bevatten het standpunt en de oproep; zonder die zinnen blijft alleen uitleg over.",
+    "Koos je \"de eerste twee zinnen\"? Dan denk je dat de uitleg over de tijdschriften weg moet. Die zinnen informeren juist, ze horen in een uiteenzetting.",
+    "Koos je \"de zin Toch is die ontwikkeling nog niet af\"? Dan denk je dat die zin het standpunt is. Hij meldt dat de ontwikkeling nog doorgaat, het eigenlijke standpunt volgt daarna.",
+    "Koos je \"de zin over universiteiten en uitgevers\"? Dan denk je dat deze zin een mening bevat. Hij beschrijft afspraken, hij hoort bij de uitleg."
+   ],
+   "uh": "Wat is meer dan uitleg?",
+   "ctx": "Wetenschappelijke artikelen verschijnen traditioneel in tijdschriften waarvoor lezers of hun bibliotheken moeten betalen. De onderzoeker krijgt voor een publicatie geen geld; de uitgever verdient aan de abonnementen. Bij open access daarentegen is een artikel direct gratis te lezen, omdat de auteur, zijn instituut of een financier de kosten van publicatie betaalt. Veel universiteiten sluiten inmiddels afspraken met uitgevers om hun onderzoekers open access te laten publiceren. Toch is die ontwikkeling nog niet af. Onderzoek dat met publiek geld is betaald, hoort voor iedereen toegankelijk te zijn. Overheden moeten daarom open access verplicht stellen voor alle gesubsidieerd onderzoek."
+  },
+  {
+   "v": "Alleen de laatste twee zinnen van de tekst worden voorgelegd. Welke tekstsoort is dat gedeelte?",
+   "o": [
+    "uiteenzettend: de zinnen leggen uit waarom volwassenen stemmen",
+    "betogend: weerlegging van een argument plus een oproep",
+    "beschouwend: er worden twee kanten genoemd",
+    "geen enkele soort, want de zinnen horen bij de rest"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Ook een los gedeelte heeft een doel: weerleggen en een oproep zijn betogen.",
+   "uo": [
+    "Koos je \"uiteenzettend: de zinnen leggen uit waarom...\"? Dan denk je dat het gedeelte vooral uitlegt. Het weerlegt echter een argument, dus het wil overtuigen.",
+    "Klopt: \"overtuigt niet\" weerlegt een bezwaar en \"moet daarom\" is een oproep, dus overtuigen.",
+    "Koos je \"beschouwend: er worden twee kanten genoemd\"? Dan denk je dat de tegenstanders een tweede kant zijn. Zij worden weerlegd, dus het is geen afweging.",
+    "Koos je \"geen enkele soort, want de zinnen horen bij de rest\"? Dan denk je dat een gedeelte zonder context geen soort heeft. Ook los is het doel duidelijk, namelijk overtuigen."
+   ],
+   "uh": "Wat wil dit gedeelte?",
+   "ctx": "De stemleeftijd moet worden verlaagd naar zestien jaar. Ten eerste worden zestienjarigen rechtstreeks geraakt door beslissingen over onderwijs, klimaat en de woningmarkt, dus zij hebben recht op inspraak. Ten tweede wijzen ervaringen in landen waar zestienjarigen al mogen stemmen erop dat jongeren bij hun eerste verkiezing vaak goed geïnformeerd zijn, vooral als school aandacht besteedt aan politiek. Tegenstanders beweren dat jongeren nog te onvolwassen zijn. Dat argument overtuigt niet: ook veel volwassenen stemmen op grond van een vluchtige indruk, en niemand pleit ervoor hun het stemrecht te ontnemen. De Tweede Kamer moet daarom de wet aanpassen en het stemrecht uitbreiden."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Psychologen noemen het verschijnsel het omstandereffect: hoe meer mensen getuige zijn van een noodsituatie, hoe kleiner de kans dat een individu ingrijpt. Onderzoekers verklaren dit met twee mechanismen. Het eerste is verspreiding van verantwoordelijkheid: iedere omstander neemt aan dat een ander wel zal helpen. Het tweede is sociale beïnvloeding: als niemand reageert, concluderen mensen dat er kennelijk niets ernstigs aan de hand is. Dit effect treedt vooral op in situaties die onduidelijk zijn. Wanneer iemand één persoon rechtstreeks om hulp vraagt, verdwijnt het effect grotendeels, omdat de verantwoordelijkheid dan weer bij een concreet iemand ligt.",
+   "v": "Bepaal de tekstsoort van deze tekst en noem twee kenmerken waaraan je dat ziet.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Uiteenzettend (1p). Een verschijnsel wordt uitgelegd en verklaard met twee mechanismen (1p). De schrijver neemt geen standpunt in en vraagt de lezer niets te doen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Sociale media zijn de afgelopen jaren uitgegroeid tot een belangrijk podium voor het publieke debat, maar de vraag of dat een winst is, laat zich niet eenvoudig beantwoorden. Aan de ene kant krijgen mensen die vroeger nauwelijks gehoord werden nu een stem, en kunnen onderwerpen die de gevestigde media negeren plotseling veel aandacht krijgen. Aan de andere kant belonen de algoritmen vooral berichten die sterke emoties oproepen, waardoor genuanceerde meningen het onderspit delven. Sommigen zien in dit proces een verrijking van de democratie; anderen vrezen een verschraling van het gesprek. Misschien ligt de waarheid ergens in het midden: het medium zelf is niet goed of slecht, maar de manier waarop wij het gebruiken, bepaalt wat het oplevert.",
+   "v": "Leg uit waarom deze tekst een beschouwing is en geen betoog, ondanks de slotzin.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Beschouwend (1p). Beide kanten, kansen voor mensen en emotionele algoritmen, krijgen evenveel aandacht (1p). De slotzin kiest geen kant: het gebruik bepaalt de uitkomst, dus de lezer moet zelf afwegen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De stemleeftijd moet worden verlaagd naar zestien jaar. Ten eerste worden zestienjarigen rechtstreeks geraakt door beslissingen over onderwijs, klimaat en de woningmarkt, dus zij hebben recht op inspraak. Ten tweede wijzen ervaringen in landen waar zestienjarigen al mogen stemmen erop dat jongeren bij hun eerste verkiezing vaak goed geïnformeerd zijn, vooral als school aandacht besteedt aan politiek. Tegenstanders beweren dat jongeren nog te onvolwassen zijn. Dat argument overtuigt niet: ook veel volwassenen stemmen op grond van een vluchtige indruk, en niemand pleit ervoor hun het stemrecht te ontnemen. De Tweede Kamer moet daarom de wet aanpassen en het stemrecht uitbreiden.",
+   "v": "Noem het schrijfdoel van deze tekst en twee signalen waaraan je dat doel herkent.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Overtuigen en tot actie aanzetten (1p). Signaal 1: \"moet worden verlaagd\" in de eerste zin is een eis (1p). Signaal 2: de laatste zin richt zich tot de Tweede Kamer, of de weerlegging \"Dat argument overtuigt niet\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Wetenschappelijke artikelen verschijnen traditioneel in tijdschriften waarvoor lezers of hun bibliotheken moeten betalen. De onderzoeker krijgt voor een publicatie geen geld; de uitgever verdient aan de abonnementen. Bij open access daarentegen is een artikel direct gratis te lezen, omdat de auteur, zijn instituut of een financier de kosten van publicatie betaalt. Veel universiteiten sluiten inmiddels afspraken met uitgevers om hun onderzoekers open access te laten publiceren. Toch is die ontwikkeling nog niet af. Onderzoek dat met publiek geld is betaald, hoort voor iedereen toegankelijk te zijn. Overheden moeten daarom open access verplicht stellen voor alle gesubsidieerd onderzoek.",
+   "v": "Wat is het belangrijkste schrijfdoel van deze tekst? Licht je antwoord toe met de opbouw.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Overtuigen (1p). De eerste helft informeert over twee manieren van publiceren (1p). Het slot verdedigt het standpunt dat open access verplicht moet worden en werkt daar naartoe, dus het standpunt is het hoofddoel (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Tekst A: Het voortgezet onderwijs kent drie niveaus: vmbo, havo en vwo. Na het vmbo stromen leerlingen door naar het mbo, na havo kiezen veel leerlingen voor het hbo en na vwo voor de universiteit. Tekst B: Het voortgezet onderwijs moet leerlingen langer de tijd geven om te kiezen. Wie al op twaalfjarige leeftijd een niveau krijgt toegewezen, verliest kansen die hij later wel zou hebben benut. Scholen horen daarom brede brugklassen aan te bieden.",
+   "v": "Beschrijf het verschil in schrijfdoel tussen tekst A en tekst B.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Tekst A informeert over de niveaus (1p). Tekst B verdedigt het standpunt dat leerlingen langer moeten kunnen kiezen en geeft daarvoor een reden (1p). Dus A is uiteenzettend en B betogend (1p)."
+  }
+ ]
+}

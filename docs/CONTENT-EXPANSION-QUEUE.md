@@ -9,7 +9,7 @@
 1. Pak het **bovenste open domein** (`- [ ]`) hieronder.
    - Heeft het nog geen leerdoel-regels eronder? Zet ze er eerst onder (4-8 leerdoelen, uit
      `knowledge/<niveau>/<vak>.json` of `syllabi/2027/<niveau>-<vak>.txt`), in de vorm
-     `  - [ ] A1 · nl.A.1 Naam`.
+     `  - [x] A1 · nl.A.1 Naam`. · 27 vragen (R1 7, R2 10, R3 10, 4 eigen leesteksten van 570-700 tekens), 12 begrippen, 4 figuren (drie soorten, beslisboom, mengvorm, valkuilen), geen clip
    - Werk de open leerdoelen van boven naar beneden af; minimaal 5 per run, liefst het hele
      domein (max. 8). Domein af en nog geen 5? Door naar het volgende domein.
    - Per leerdoel: maken, keuren, integreren, poorten, commit en push.
@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **47 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8). Werk dit getal bij bij elke afronding.
+> Voortgang: **48 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -67,6 +67,13 @@
   - [x] F5 · nl.F.5 Stijlfiguren en poëzie · 25 vragen (R1 5, R2 11, R3 9, 7 fragmenten en gedichten), 12 begrippen, 5 figuren (beeldspraak, verzwakken en overdrijven, rijmschema's, enjambement, sonnet), geen clip
   - [x] F6 · nl.F.6 Literatuurgeschiedenis in hoofdlijnen · 27 vragen (R1 5, R2 12, R3 10, 8 fragmenten), 12 begrippen, 4 figuren (tijdlijn, reacties, geannoteerd naturalisme, modernisme tegenover postmodernisme), geen clip
 - [ ] **VWO · Nederlands** (`nl`) · domein A — Leesvaardigheid
+  - [ ] A1 · nl.A.1 Tekstsoort en schrijfdoel bepalen (uiteenzettend, beschouwend, betogend)
+  - [ ] A2 · nl.A.2 Onderwerp en hoofdgedachte aangeven, expliciet en impliciet
+  - [ ] A3 · nl.A.3 Inhoudelijke en functionele relaties tussen tekstdelen benoemen
+  - [ ] A4 · nl.A.4 Conclusies trekken over intenties, opvattingen en gevoelens van de auteur
+  - [ ] A5 · nl.A.5 Standpunten, argumenten en argumentatieschema's herkennen
+  - [ ] A6 · nl.A.6 Een betoog beoordelen en drogredenen herkennen
+  - [ ] A7 · nl.A.7 Een tekst samenvatten: hoofd- en ondergeschikte uitspraken
 - [ ] **VWO · Nederlands** (`nl`) · domein B — Mondeling
 - [ ] **VWO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid
 - [ ] **VWO · Nederlands** (`nl`) · domein D — Argumentatieve vaardigheden
