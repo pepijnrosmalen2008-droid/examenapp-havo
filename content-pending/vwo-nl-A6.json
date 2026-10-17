@@ -1,0 +1,689 @@
+{
+ "id": "A6",
+ "lo": "nl.A.6",
+ "gs": 2,
+ "naam": "Een betoog beoordelen en drogredenen herkennen",
+ "beschrijving": "Je beoordeelt een betoog op aanvaardbaarheid, controleerbaarheid, betrouwbaarheid van bronnen, relevantie, consistentie en toereikendheid, en je herkent drogredenen: onjuist gebruik van een argumentatieschema en overtreding van een discussieregel.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Aanvaardbaarheid, controleerbaarheid en bronnen",
+  "Relevantie, consistentie en toereikendheid",
+  "Drogredenen bij oorzaak-gevolg en kenmerk",
+  "Drogredenen bij voor- en nadelen, voorbeeld, vergelijking en autoriteit",
+  "Drogredenen tegen de discussieregels",
+  "Een drogreden benoemen en uitleggen"
+ ],
+ "sam": "Een betoog beoordeel je op zes punten: aanvaardbaarheid en controleerbaarheid van feitelijke argumenten, betrouwbaarheid van bronnen, aanvaardbaarheid van waarderende argumenten, relevantie, consistentie en toereikendheid. Een drogreden is een onjuist gebruik van een argumentatieschema of een overtreding van een discussieregel. Je benoemt de drogreden en legt in één zin uit waarom het een fout is.",
+ "begrippen": [
+  {
+   "t": "Aanvaardbaarheid",
+   "d": "Of een argument klopt (feitelijk) of redelijk is (waarderend)."
+  },
+  {
+   "t": "Controleerbaarheid",
+   "d": "Of je een feitelijk argument met een bron of cijfers kunt nagaan."
+  },
+  {
+   "t": "Betrouwbare bron",
+   "d": "Een onafhankelijke, deskundige bron met een representatieve steekproef."
+  },
+  {
+   "t": "Relevantie",
+   "d": "Of een argument iets zegt over het standpunt."
+  },
+  {
+   "t": "Consistentie",
+   "d": "Of de argumenten elkaar niet tegenspreken."
+  },
+  {
+   "t": "Toereikendheid",
+   "d": "Of de argumenten samen genoeg zijn om het standpunt te dragen."
+  },
+  {
+   "t": "Drogreden",
+   "d": "Een onjuist gebruik van een schema of een overtreding van een discussieregel."
+  },
+  {
+   "t": "Overhaaste generalisatie",
+   "d": "Uit een of enkele gevallen een algemene regel trekken."
+  },
+  {
+   "t": "Vals dilemma",
+   "d": "Doen alsof er maar twee keuzes zijn terwijl er meer zijn."
+  },
+  {
+   "t": "Verkeerde vergelijking",
+   "d": "Twee gevallen gelijkstellen die op het beslissende punt verschillen."
+  },
+  {
+   "t": "Persoonlijke aanval",
+   "d": "De persoon aanvallen in plaats van zijn argumenten."
+  },
+  {
+   "t": "Cirkelredenering",
+   "d": "Een argument dat de conclusie veronderstelt die het moet bewijzen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat controleer je bij de aanvaardbaarheid van een feitelijk argument?",
+   "o": [
+    "of de schrijver het goed vindt klinken",
+    "of het klopt en te controleren is",
+    "of de lezer het er eerlijk mee eens is",
+    "of het argument lang genoeg is"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Feitelijke argumenten: juist en controleerbaar.",
+   "uo": [
+    "Koos je \"of de schrijver het goed vindt klinken\"? Dan denk je dat de formulering telt. Aanvaardbaar is wat klopt, niet wat mooi klinkt.",
+    "Klopt: een feitelijk argument moet juist en controleerbaar zijn, bijvoorbeeld met een bron.",
+    "Koos je \"of de lezer het er eerlijk mee eens is\"? Dan denk je dat een gevoel het criterium is. Dat past bij waarderende argumenten, een feit controleer je met gegevens.",
+    "Koos je \"of het argument lang genoeg is\"? Dan denk je dat de lengte iets zegt over de waarde. De lengte zegt niets, de juistheid is van belang."
+   ],
+   "uh": "Klopt het?"
+  },
+  {
+   "v": "Welke bron levert het feitelijke argument in zin 2?",
+   "o": [
+    "een onderzoek van een statistiekbureau",
+    "een ervaringsverhaal van een werknemer",
+    "een uitspraak van een minister",
+    "een enquête onder lezers"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Noem de bron precies zoals de tekst die geeft.",
+   "uo": [
+    "Koos je \"een onderzoek van een statistiekbureau\"? Dan denk je dat de bron een bureau voor statistiek is. Dat staat er niet, er is alleen een magazine genoemd.",
+    "Koos je \"een ervaringsverhaal van een werknemer\"? Dan denk je dat het om één persoon gaat. Het gaat om tweehonderd lezers, dus niet om één verhaal.",
+    "Koos je \"een uitspraak van een minister\"? Dan denk je dat er een politicus wordt aangehaald. Er is geen minister genoemd, de bron is een enquête.",
+    "Klopt: zin 2 noemt een enquête onder tweehonderd lezers van een magazine als bron."
+   ],
+   "uh": "Wie of wat is de bron?",
+   "ctx": "[1] Er moet een vierdaagse werkweek komen voor alle werknemers in Nederland. [2] Volgens een enquête onder tweehonderd lezers van een lifestylemagazine is zeventig procent van de Nederlanders minder gestrest bij vier werkdagen, zo meldde het blad. [3] Bovendien wonen veel werknemers ver van hun werk, zodat reizen veel tijd kost. [4] Mensen werken tegenwoordig ook vaak thuis, dus hoeven ze nauwelijks te reizen om hun werk te doen. [5] Een kortere werkweek is daarom ook goed voor het milieu en voor de gezondheid."
+  },
+  {
+   "v": "Welke fout maakt de schrijver als hij uit de aanrijding van de buurman een algemene regel afleidt?",
+   "o": [
+    "overhaaste generalisatie",
+    "persoonlijke aanval op de buurman",
+    "vals dilemma met twee keuzes",
+    "cirkelredenering over fietsen"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Overhaaste generalisatie: van één geval naar een algemene regel.",
+   "uo": [
+    "Klopt: uit één geval wordt een algemene regel getrokken; dat is te weinig.",
+    "Koos je \"persoonlijke aanval op de buurman\"? Dan denk je dat de buurman wordt aangevallen. Er wordt niemand aangevallen, één geval wordt algemeen gemaakt.",
+    "Koos je \"vals dilemma met twee keuzes\"? Dan denk je dat er maar twee keuzes zijn. Zin 4 noemt geen keuzes, het gaat om één geval.",
+    "Koos je \"cirkelredenering over fietsen\"? Dan denk je dat de zin zichzelf bewijst. Hier wordt een regel uit een enkel voorval getrokken, dat is geen cirkel."
+   ],
+   "uh": "Eén geval is niet genoeg.",
+   "ctx": "[1] In onze stad is het aantal winkeldiefstallen gestegen sinds de gemeente vorig jaar fietsstroken heeft aangelegd langs de grote doorgaande wegen. [2] Fietsstroken zijn dus slecht voor de veiligheid in de binnenstad. [3] Een bekende zanger heeft bovendien verklaard dat fietsen ongezond is vanwege de uitlaatgassen van auto's die er vlak langs rijden. [4] Mijn buurman is vorige maand op de fiets aangereden, dus fietsen is gevaarlijk. [5] De gemeente moet de fietsstroken daarom weer weghalen, voordat het nog erger wordt."
+  },
+  {
+   "v": "Welke fout zit in de conclusie van zin 2 over de fietsstroken?",
+   "o": [
+    "een persoonlijke aanval op de gemeente",
+    "een beroep op een deskundige",
+    "een onjuist beroep op oorzaak-gevolg",
+    "een vergelijking met een andere stad"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Twee gebeurtenissen na elkaar zijn niet per se oorzaak en gevolg.",
+   "uo": [
+    "Koos je \"een persoonlijke aanval op de gemeente\"? Dan denk je dat de gemeente wordt aangevallen. Zin 2 trekt een conclusie over fietsstroken, er is geen aanval.",
+    "Koos je \"een beroep op een deskundige\"? Dan denk je dat zin 2 een expert noemt. Dat gebeurt pas in zin 3, zin 2 trekt een oorzakelijke conclusie.",
+    "Klopt: dat twee dingen na elkaar gebeuren, betekent niet dat het ene het andere veroorzaakt.",
+    "Koos je \"een vergelijking met een andere stad\"? Dan denk je dat zin 2 twee steden vergelijkt. Er is geen vergelijking, het gaat om een veronderstelde oorzaak."
+   ],
+   "uh": "Toeval of oorzaak?",
+   "ctx": "[1] In onze stad is het aantal winkeldiefstallen gestegen sinds de gemeente vorig jaar fietsstroken heeft aangelegd langs de grote doorgaande wegen. [2] Fietsstroken zijn dus slecht voor de veiligheid in de binnenstad. [3] Een bekende zanger heeft bovendien verklaard dat fietsen ongezond is vanwege de uitlaatgassen van auto's die er vlak langs rijden. [4] Mijn buurman is vorige maand op de fiets aangereden, dus fietsen is gevaarlijk. [5] De gemeente moet de fietsstroken daarom weer weghalen, voordat het nog erger wordt."
+  },
+  {
+   "v": "Welke drogreden gebruikt de schrijver als hij in zin 2 de persoon van de minister bekritiseert?",
+   "o": [
+    "een cirkelredenering",
+    "een overhaaste generalisatie",
+    "een persoonlijke aanval",
+    "een vals dilemma"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Persoonlijke aanval: de persoon aanvallen in plaats van het argument.",
+   "uo": [
+    "Koos je \"een cirkelredenering\"? Dan denk je dat de zin zichzelf bewijst. Hier wordt de persoon aangevallen, geen eigen conclusie herhaald.",
+    "Koos je \"een overhaaste generalisatie\"? Dan denk je dat er van één geval wordt gegeneraliseerd. Er wordt geen geval genoemd, de persoon wordt aangevallen.",
+    "Klopt: de schrijver richt zich op de minister als persoon in plaats van op zijn argumenten.",
+    "Koos je \"een vals dilemma\"? Dan denk je dat er twee keuzes worden gegeven. Er zijn geen keuzes, de zin richt zich op de persoon."
+   ],
+   "uh": "Persoon of argument?",
+   "ctx": "[1] De stelling van de minister dat de btw op boeken omlaag moet, is onzin. [2] Hij heeft zelf nooit een boek uitgegeven, dus wat weet hij ervan? [3] Wie ons plan wil tegenhouden, moet maar bewijzen dat het niet werkt, anders is het goed. [4] Het plan is goed omdat het verstandig is, en verstandig is het omdat het goed is, zoals iedereen kan zien. [5] Zijn tegenstander beweert dat boeken helemaal gratis moeten zijn, en dat is natuurlijk belachelijk. [6] Alle weldenkende Nederlanders weten dat dit de enige juiste keuze is."
+  },
+  {
+   "v": "Welke fout maakt de redenering in zin 4 waarin twee eigenschappen elkaar verklaren?",
+   "o": [
+    "een cirkelredenering",
+    "een persoonlijke aanval",
+    "een beroep op een autoriteit",
+    "een verkeerde vergelijking"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Cirkelredenering: het argument veronderstelt wat bewezen moet worden.",
+   "uo": [
+    "Klopt: het plan is goed omdat het verstandig is en verstandig omdat het goed is; het argument draait rond.",
+    "Koos je \"een persoonlijke aanval\"? Dan denk je dat de zin iemand aanvalt. Er wordt niemand genoemd, het argument herhaalt de conclusie.",
+    "Koos je \"een beroep op een autoriteit\"? Dan denk je dat er een deskundige wordt genoemd. Er is geen deskundige, het argument draait rond.",
+    "Koos je \"een verkeerde vergelijking\"? Dan denk je dat twee zaken worden vergeleken. Er is geen tweede zaak, de zin herhaalt zichzelf."
+   ],
+   "uh": "Draait het rond?",
+   "ctx": "[1] De stelling van de minister dat de btw op boeken omlaag moet, is onzin. [2] Hij heeft zelf nooit een boek uitgegeven, dus wat weet hij ervan? [3] Wie ons plan wil tegenhouden, moet maar bewijzen dat het niet werkt, anders is het goed. [4] Het plan is goed omdat het verstandig is, en verstandig is het omdat het goed is, zoals iedereen kan zien. [5] Zijn tegenstander beweert dat boeken helemaal gratis moeten zijn, en dat is natuurlijk belachelijk. [6] Alle weldenkende Nederlanders weten dat dit de enige juiste keuze is."
+  },
+  {
+   "v": "Welke fout zit in de beperking tot twee opties in zin 2?",
+   "o": [
+    "een overhaaste generalisatie",
+    "een persoonlijke aanval",
+    "een beroep op autoriteit",
+    "een vals dilemma"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 3,
+   "u": "Vals dilemma: alleen twee opties noemen terwijl er meer zijn.",
+   "uo": [
+    "Koos je \"een overhaaste generalisatie\"? Dan denk je dat één geval wordt gegeneraliseerd. De zin noemt geen geval, maar beperkt de keuze tot twee.",
+    "Koos je \"een persoonlijke aanval\"? Dan denk je dat de zin iemand aanvalt. Hij beperkt alleen de keuze, er is geen aanval.",
+    "Koos je \"een beroep op autoriteit\"? Dan denk je dat er een expert wordt aangehaald. Dat is niet zo, de zin noemt twee opties.",
+    "Klopt: er worden maar twee opties gegeven, terwijl er meer mogelijkheden zijn."
+   ],
+   "uh": "Zijn er echt maar twee?",
+   "ctx": "[1] Wie niet voor het afschaffen van de bijbaan voor scholieren is, wil dat jongeren hun school verwaarlozen. [2] Er zijn maar twee keuzes: of leerlingen werken en halen slechte cijfers, of ze werken niet en leren iets op school. [3] Een bijbaan is bovendien net als roken: het lijkt onschuldig, maar je raakt eraan verslaafd en kunt er niet meer mee stoppen. [4] De nadelen zijn enorm, want één keer een toets missen kan een hele loopbaan ruïneren. [5] Scholen moeten bijbaantjes dus verbieden, voordat het te laat is."
+  },
+  {
+   "v": "Waarom is het beroep op de zanger in zin 3 onjuist?",
+   "o": [
+    "omdat zangers nooit gelijk hebben over iets",
+    "hij is geen deskundige op dit gebied",
+    "omdat hij te veel verdient",
+    "omdat hij uit een andere stad komt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Een autoriteit moet deskundig zijn op het onderwerp.",
+   "uo": [
+    "Koos je \"omdat zangers nooit gelijk hebben over iets\"? Dan denk je dat een beroep nooit mag. Een expert mag worden aangehaald, maar deze is geen deskundige op dit gebied.",
+    "Klopt: een autoriteit moet deskundig zijn op het onderwerp; beroemd zijn is niet genoeg.",
+    "Koos je \"omdat hij te veel verdient\"? Dan denk je dat het om zijn inkomen gaat. Dat is niet relevant, het gaat om deskundigheid.",
+    "Koos je \"omdat hij uit een andere stad komt\"? Dan denk je dat de herkomst van belang is. De herkomst zegt niets, de deskundigheid wel."
+   ],
+   "uh": "Is hij expert?",
+   "ctx": "[1] In onze stad is het aantal winkeldiefstallen gestegen sinds de gemeente vorig jaar fietsstroken heeft aangelegd langs de grote doorgaande wegen. [2] Fietsstroken zijn dus slecht voor de veiligheid in de binnenstad. [3] Een bekende zanger heeft bovendien verklaard dat fietsen ongezond is vanwege de uitlaatgassen van auto's die er vlak langs rijden. [4] Mijn buurman is vorige maand op de fiets aangereden, dus fietsen is gevaarlijk. [5] De gemeente moet de fietsstroken daarom weer weghalen, voordat het nog erger wordt."
+  },
+  {
+   "v": "Welk criterium schenden zin 3 en zin 4 samen?",
+   "o": [
+    "relevantie: ze gaan niet over het standpunt",
+    "toereikendheid: er zijn te weinig argumenten",
+    "aanvaardbaarheid: de feiten zijn onjuist",
+    "consistentie: ze spreken elkaar tegen"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Consistentie: argumenten mogen elkaar niet tegenspreken.",
+   "uo": [
+    "Koos je \"relevantie: ze gaan niet over het standpunt\"? Dan denk je dat de zinnen er niets mee te maken hebben. Ze gaan over werkweek en reizen, het probleem is de tegenspraak.",
+    "Koos je \"toereikendheid: er zijn te weinig argumenten\"? Dan denk je dat er te weinig argumenten zijn. Het probleem is de tegenstrijdigheid, niet het aantal.",
+    "Koos je \"aanvaardbaarheid: de feiten zijn onjuist\"? Dan denk je dat de feiten fout zijn. Het gaat erom dat ze elkaar tegenspreken, dus het is geen kwestie van juistheid.",
+    "Klopt: zin 3 zegt dat veel mensen ver reizen, zin 4 dat ze nauwelijks reizen."
+   ],
+   "uh": "Spreken ze elkaar tegen?",
+   "ctx": "[1] Er moet een vierdaagse werkweek komen voor alle werknemers in Nederland. [2] Volgens een enquête onder tweehonderd lezers van een lifestylemagazine is zeventig procent van de Nederlanders minder gestrest bij vier werkdagen, zo meldde het blad. [3] Bovendien wonen veel werknemers ver van hun werk, zodat reizen veel tijd kost. [4] Mensen werken tegenwoordig ook vaak thuis, dus hoeven ze nauwelijks te reizen om hun werk te doen. [5] Een kortere werkweek is daarom ook goed voor het milieu en voor de gezondheid."
+  },
+  {
+   "v": "Waarom is de bron in zin 2 niet betrouwbaar genoeg?",
+   "o": [
+    "omdat een enquête nooit betrouwbaar is",
+    "de steekproef is klein",
+    "omdat zeventig procent te weinig is",
+    "omdat er een lifestylemagazine in staat"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Betrouwbaar: groot en representatief voor de groep waarover je concludeert.",
+   "uo": [
+    "Koos je \"omdat een enquête nooit betrouwbaar is\"? Dan denk je dat enquêtes niets waard zijn. Een goede enquête kan betrouwbaar zijn, deze heeft een kleine, eenzijdige steekproef.",
+    "Klopt: tweehonderd lezers van één magazine zeggen weinig over alle Nederlanders.",
+    "Koos je \"omdat zeventig procent te weinig is\"? Dan denk je dat het percentage het probleem is. Het percentage zegt niets zonder de steekproef, die is te klein.",
+    "Koos je \"omdat er een lifestylemagazine in staat\"? Dan denk je dat een magazine altijd onbetrouwbaar is. Het gaat om de groep lezers, die niet voor alle Nederlanders spreekt."
+   ],
+   "uh": "Voor wie spreekt de enquête?",
+   "ctx": "[1] Er moet een vierdaagse werkweek komen voor alle werknemers in Nederland. [2] Volgens een enquête onder tweehonderd lezers van een lifestylemagazine is zeventig procent van de Nederlanders minder gestrest bij vier werkdagen, zo meldde het blad. [3] Bovendien wonen veel werknemers ver van hun werk, zodat reizen veel tijd kost. [4] Mensen werken tegenwoordig ook vaak thuis, dus hoeven ze nauwelijks te reizen om hun werk te doen. [5] Een kortere werkweek is daarom ook goed voor het milieu en voor de gezondheid."
+  },
+  {
+   "v": "Welke fout bevat de vergelijking tussen een bijbaan en roken in zin 3?",
+   "o": [
+    "een cirkelredenering over verslaving",
+    "een vals dilemma met twee opties",
+    "een verkeerde vergelijking",
+    "een persoonlijke aanval op rokers"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Verkeerde vergelijking: de gevallen verschillen op een belangrijk punt.",
+   "uo": [
+    "Koos je \"een cirkelredenering over verslaving\"? Dan denk je dat de zin zichzelf bewijst. Hier worden twee dingen vergeleken, dat is geen cirkel.",
+    "Koos je \"een vals dilemma met twee opties\"? Dan denk je dat er twee keuzes worden genoemd. Er is geen keuze, de zin vergelijkt twee zaken.",
+    "Klopt: een bijbaan en roken verschillen op het punt waar het om gaat, namelijk verslaving en gezondheidsschade.",
+    "Koos je \"een persoonlijke aanval op rokers\"? Dan denk je dat iemand wordt aangevallen. Er wordt niemand aangevallen, er wordt iets vergeleken."
+   ],
+   "uh": "Zijn ze echt gelijk?",
+   "ctx": "[1] Wie niet voor het afschaffen van de bijbaan voor scholieren is, wil dat jongeren hun school verwaarlozen. [2] Er zijn maar twee keuzes: of leerlingen werken en halen slechte cijfers, of ze werken niet en leren iets op school. [3] Een bijbaan is bovendien net als roken: het lijkt onschuldig, maar je raakt eraan verslaafd en kunt er niet meer mee stoppen. [4] De nadelen zijn enorm, want één keer een toets missen kan een hele loopbaan ruïneren. [5] Scholen moeten bijbaantjes dus verbieden, voordat het te laat is."
+  },
+  {
+   "v": "Welke fout bevat de bewering in zin 4 over de gevolgen van één gemiste toets?",
+   "o": [
+    "het overdrijven van de nadelen",
+    "het overdrijven van de voordelen",
+    "een overhaaste generalisatie",
+    "een beroep op autoriteit"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Overdrijven: een nadeel of voordeel groter maken dan het is.",
+   "uo": [
+    "Klopt: één gemiste toets zou een hele loopbaan ruïneren is een sterke overdrijving.",
+    "Koos je \"het overdrijven van de voordelen\"? Dan denk je dat de zin een voordeel overdrijft. De zin noemt een nadeel, dus de overdrijving betreft de nadelen.",
+    "Koos je \"een overhaaste generalisatie\"? Dan denk je dat de zin van één geval naar een regel gaat. Hier wordt een mogelijk gevolg opgeblazen, dat is overdrijving.",
+    "Koos je \"een beroep op autoriteit\"? Dan denk je dat een deskundige wordt genoemd. Dat is niet zo, de zin overdrijft een nadeel."
+   ],
+   "uh": "Hoe groot is het echt?",
+   "ctx": "[1] Wie niet voor het afschaffen van de bijbaan voor scholieren is, wil dat jongeren hun school verwaarlozen. [2] Er zijn maar twee keuzes: of leerlingen werken en halen slechte cijfers, of ze werken niet en leren iets op school. [3] Een bijbaan is bovendien net als roken: het lijkt onschuldig, maar je raakt eraan verslaafd en kunt er niet meer mee stoppen. [4] De nadelen zijn enorm, want één keer een toets missen kan een hele loopbaan ruïneren. [5] Scholen moeten bijbaantjes dus verbieden, voordat het te laat is."
+  },
+  {
+   "v": "Welke fout maakt de schrijver in zin 5 met het standpunt van de tegenstander?",
+   "o": [
+    "het vertekenen van een standpunt",
+    "een persoonlijke aanval op de tegenstander",
+    "een cirkelredenering in dezelfde zin",
+    "het ontduiken van de bewijslast voor het plan"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Vertekenen: een karikatuur van het standpunt van de ander bestrijden.",
+   "uo": [
+    "Klopt: de tegenstander krijgt een extreem standpunt toegeschreven dat hij niet heeft.",
+    "Koos je \"een persoonlijke aanval op de tegenstander\"? Dan denk je dat de tegenstander wordt aangevallen. Zijn standpunt wordt vervormd, dat is iets anders dan de persoon aanvallen.",
+    "Koos je \"een cirkelredenering in dezelfde zin\"? Dan denk je dat de zin zichzelf bewijst. Hier wordt het standpunt van een ander vertekend, geen cirkel.",
+    "Koos je \"het ontduiken van de bewijslast voor het plan\"? Dan denk je dat de schrijver iets weigert te bewijzen. De schrijver vervormt een standpunt, dat is een ander soort fout."
+   ],
+   "uh": "Zegt de ander dit echt?",
+   "ctx": "[1] De stelling van de minister dat de btw op boeken omlaag moet, is onzin. [2] Hij heeft zelf nooit een boek uitgegeven, dus wat weet hij ervan? [3] Wie ons plan wil tegenhouden, moet maar bewijzen dat het niet werkt, anders is het goed. [4] Het plan is goed omdat het verstandig is, en verstandig is het omdat het goed is, zoals iedereen kan zien. [5] Zijn tegenstander beweert dat boeken helemaal gratis moeten zijn, en dat is natuurlijk belachelijk. [6] Alle weldenkende Nederlanders weten dat dit de enige juiste keuze is."
+  },
+  {
+   "v": "Welke fout maakt de schrijver in zin 3 met de bewijslast voor zijn plan?",
+   "o": [
+    "het vertekenen van een standpunt",
+    "het bespelen van het publiek",
+    "het ontduiken van de bewijslast",
+    "een cirkelredenering"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Bewijslast: wie iets beweert, moet het onderbouwen.",
+   "uo": [
+    "Koos je \"het vertekenen van een standpunt\"? Dan denk je dat het standpunt wordt vervormd. Er wordt niets vervormd, de bewijslast wordt verschoven.",
+    "Koos je \"het bespelen van het publiek\"? Dan denk je dat het publiek wordt bespeeld. Dat gebeurt in zin 6, zin 3 verschuift de bewijslast.",
+    "Klopt: wie een plan voorstelt, moet het onderbouwen; de bewijslast wordt bij de tegenstander gelegd.",
+    "Koos je \"een cirkelredenering\"? Dan denk je dat de zin zichzelf bewijst. De zin legt de bewijslast bij de ander, dat is geen cirkel."
+   ],
+   "uh": "Wie moet bewijzen?",
+   "ctx": "[1] De stelling van de minister dat de btw op boeken omlaag moet, is onzin. [2] Hij heeft zelf nooit een boek uitgegeven, dus wat weet hij ervan? [3] Wie ons plan wil tegenhouden, moet maar bewijzen dat het niet werkt, anders is het goed. [4] Het plan is goed omdat het verstandig is, en verstandig is het omdat het goed is, zoals iedereen kan zien. [5] Zijn tegenstander beweert dat boeken helemaal gratis moeten zijn, en dat is natuurlijk belachelijk. [6] Alle weldenkende Nederlanders weten dat dit de enige juiste keuze is."
+  },
+  {
+   "v": "Waarom is de argumentatie in deze tekst niet toereikend?",
+   "o": [
+    "omdat er te veel argumenten voor het standpunt staan",
+    "het ontbreken van kosten en productiviteit",
+    "omdat de tekst te lang is",
+    "omdat de schrijver geen mening heeft"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Toereikend: de argumenten dekken het standpunt, ook de bezwaren.",
+   "uo": [
+    "Koos je \"omdat er te veel argumenten voor het standpunt staan\"? Dan denk je dat het aantal te hoog is. Toereikend gaat over of het genoeg is, niet over te veel.",
+    "Klopt: een belangrijk bezwaar tegen de vierdaagse werkweek wordt niet besproken, dus de argumentatie dekt het standpunt niet.",
+    "Koos je \"omdat de tekst te lang is\"? Dan denk je dat de lengte het probleem is. Het probleem is wat ontbreekt, namelijk een belangrijk bezwaar.",
+    "Koos je \"omdat de schrijver geen mening heeft\"? Dan denk je dat het standpunt ontbreekt. Het staat in zin 1, de argumenten ondersteunen het niet voldoende."
+   ],
+   "uh": "Wat ontbreekt?",
+   "ctx": "[1] Er moet een vierdaagse werkweek komen voor alle werknemers in Nederland. [2] Volgens een enquête onder tweehonderd lezers van een lifestylemagazine is zeventig procent van de Nederlanders minder gestrest bij vier werkdagen, zo meldde het blad. [3] Bovendien wonen veel werknemers ver van hun werk, zodat reizen veel tijd kost. [4] Mensen werken tegenwoordig ook vaak thuis, dus hoeven ze nauwelijks te reizen om hun werk te doen. [5] Een kortere werkweek is daarom ook goed voor het milieu en voor de gezondheid."
+  },
+  {
+   "v": "Welke fout zit in de zin over wie niet voor afschaffen van bijbaantjes is?",
+   "o": [
+    "een persoonlijke aanval op scholieren",
+    "een overhaaste generalisatie",
+    "een beroep op autoriteit",
+    "vertekening van het standpunt"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Vertekening: de tegenstander een karikatuur-standpunt geven.",
+   "uo": [
+    "Koos je \"een persoonlijke aanval op scholieren\"? Dan denk je dat scholieren worden aangevallen. Hier wordt een standpunt vervormd, geen persoon aangevallen.",
+    "Koos je \"een overhaaste generalisatie\"? Dan denk je dat één geval wordt gegeneraliseerd. Er wordt geen geval genoemd, de tegenstander krijgt een vervormd standpunt.",
+    "Koos je \"een beroep op autoriteit\"? Dan denk je dat een expert wordt aangehaald. Dat is niet zo, er wordt iets aan de tegenstander toegeschreven.",
+    "Klopt: wie niet voor afschaffen is, krijgt de wens toegeschreven dat jongeren hun school verwaarlozen."
+   ],
+   "uh": "Wat zegt de tegenstander echt?",
+   "ctx": "[1] Wie niet voor het afschaffen van de bijbaan voor scholieren is, wil dat jongeren hun school verwaarlozen. [2] Er zijn maar twee keuzes: of leerlingen werken en halen slechte cijfers, of ze werken niet en leren iets op school. [3] Een bijbaan is bovendien net als roken: het lijkt onschuldig, maar je raakt eraan verslaafd en kunt er niet meer mee stoppen. [4] De nadelen zijn enorm, want één keer een toets missen kan een hele loopbaan ruïneren. [5] Scholen moeten bijbaantjes dus verbieden, voordat het te laat is."
+  },
+  {
+   "v": "Welke twee gegevens in zin 1 worden zonder bewijs aan elkaar gekoppeld?",
+   "o": [
+    "de gemeente en de binnenstad",
+    "de diefstallen en de fietsstroken",
+    "de uitlaatgassen en de fietsers",
+    "de buurman en de gemeente van de stad"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Schijnverband: twee gebeurtenissen aan elkaar koppelen zonder bewijs.",
+   "uo": [
+    "Koos je \"de gemeente en de binnenstad\"? Dan denk je dat de koppeling tussen bestuurder en gebied gaat. Dat is een feit, geen causale bewering.",
+    "Klopt: de schrijver doet alsof de fietsstroken de winkeldiefstallen veroorzaken zonder dat te onderbouwen.",
+    "Koos je \"de uitlaatgassen en de fietsers\"? Dan denk je dat zin 1 over uitlaatgassen gaat. Dat staat in zin 3, zin 1 koppelt iets anders.",
+    "Koos je \"de buurman en de gemeente van de stad\"? Dan denk je dat zin 1 over een buurman gaat. Dat is zin 4, in zin 1 gaat het om de diefstallen."
+   ],
+   "uh": "Wat is gekoppeld?",
+   "ctx": "[1] In onze stad is het aantal winkeldiefstallen gestegen sinds de gemeente vorig jaar fietsstroken heeft aangelegd langs de grote doorgaande wegen. [2] Fietsstroken zijn dus slecht voor de veiligheid in de binnenstad. [3] Een bekende zanger heeft bovendien verklaard dat fietsen ongezond is vanwege de uitlaatgassen van auto's die er vlak langs rijden. [4] Mijn buurman is vorige maand op de fiets aangereden, dus fietsen is gevaarlijk. [5] De gemeente moet de fietsstroken daarom weer weghalen, voordat het nog erger wordt."
+  },
+  {
+   "v": "Hoe laat je zien dat er in zin 1 en 2 geen oorzaak-gevolgverband is?",
+   "o": [
+    "andere oorzaken of toeval aantonen",
+    "bewijzen dat fietsstroken gevaarlijk zijn",
+    "aantonen dat winkeldiefstallen nooit stijgen",
+    "de gemeente aanvallen om haar beleid"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Laat zien dat het verband niet bewezen is of andere oorzaken heeft.",
+   "uo": [
+    "Klopt: zonder bewijs voor een oorzakelijk verband kan de stijging ook een andere oorzaak hebben of toeval zijn.",
+    "Koos je \"bewijzen dat fietsstroken gevaarlijk zijn\"? Dan denk je dat je de stelling van de schrijver bevestigt. Je hoeft alleen het verband te weerleggen, niet de fietsstroken te beoordelen.",
+    "Koos je \"aantonen dat winkeldiefstallen nooit stijgen\"? Dan denk je dat je een algemene regel moet weerleggen. Het gaat om dit verband, dat je ter discussie stelt.",
+    "Koos je \"de gemeente aanvallen om haar beleid\"? Dan denk je dat je de bestuurders moet aanvallen. Dat is een drogreden zelf, het gaat om het verband."
+   ],
+   "uh": "Zijn er andere oorzaken?",
+   "ctx": "[1] In onze stad is het aantal winkeldiefstallen gestegen sinds de gemeente vorig jaar fietsstroken heeft aangelegd langs de grote doorgaande wegen. [2] Fietsstroken zijn dus slecht voor de veiligheid in de binnenstad. [3] Een bekende zanger heeft bovendien verklaard dat fietsen ongezond is vanwege de uitlaatgassen van auto's die er vlak langs rijden. [4] Mijn buurman is vorige maand op de fiets aangereden, dus fietsen is gevaarlijk. [5] De gemeente moet de fietsstroken daarom weer weghalen, voordat het nog erger wordt."
+  },
+  {
+   "v": "Een leerling zegt: \"Zin 3 is een goed argument, want de zanger is beroemd.\" Wat klopt er niet?",
+   "o": [
+    "niets: bekende mensen hebben altijd gelijk",
+    "dat zangers geen mening mogen hebben",
+    "dat de zanger te weinig verdient",
+    "beroemd is niet deskundig"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Autoriteit = deskundigheid op het betreffende onderwerp.",
+   "uo": [
+    "Koos je \"niets: bekende mensen hebben altijd gelijk\"? Dan denk je dat beroemdheid gezag geeft. Gezag komt van deskundigheid, niet van bekendheid.",
+    "Koos je \"dat zangers geen mening mogen hebben\"? Dan denk je dat het om het recht op een mening gaat. Iedereen mag een mening hebben, maar het is geen bewijs.",
+    "Koos je \"dat de zanger te weinig verdient\"? Dan denk je dat het om geld gaat. Het gaat om deskundigheid, niet om inkomen.",
+    "Klopt: een autoriteit moet verstand van het onderwerp hebben; bekendheid is niet genoeg."
+   ],
+   "uh": "Beroemd of deskundig?",
+   "ctx": "[1] In onze stad is het aantal winkeldiefstallen gestegen sinds de gemeente vorig jaar fietsstroken heeft aangelegd langs de grote doorgaande wegen. [2] Fietsstroken zijn dus slecht voor de veiligheid in de binnenstad. [3] Een bekende zanger heeft bovendien verklaard dat fietsen ongezond is vanwege de uitlaatgassen van auto's die er vlak langs rijden. [4] Mijn buurman is vorige maand op de fiets aangereden, dus fietsen is gevaarlijk. [5] De gemeente moet de fietsstroken daarom weer weghalen, voordat het nog erger wordt."
+  },
+  {
+   "v": "Waarom is zin 4 een overhaaste generalisatie en wat is nodig om wel te concluderen?",
+   "o": [
+    "omdat de buurman een ongeluk had; dat bewijst dat fietsen gevaarlijk is",
+    "omdat fietsen nooit gevaarlijk is",
+    "één geval is te weinig; je hebt veel gevallen of cijfers nodig",
+    "omdat de buurman zelf niet voorzichtig was"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Generaliseer pas bij voldoende en representatieve gevallen.",
+   "uo": [
+    "Koos je \"omdat de buurman een ongeluk had; dat bewijst dat...\"? Dan denk je dat één voorval genoeg is. Eén geval is toevallig, het bewijst geen algemene regel.",
+    "Koos je \"omdat fietsen nooit gevaarlijk is\"? Dan denk je dat fietsen altijd veilig is. Dat is ook een generalisatie, het gaat om voldoende gegevens.",
+    "Klopt: één aanrijding zegt niets over fietsen in het algemeen; je hebt representatieve gegevens nodig.",
+    "Koos je \"omdat de buurman zelf niet voorzichtig was\"? Dan denk je dat de schuldvraag telt. Het gaat om het aantal gevallen, niet om de buurman."
+   ],
+   "uh": "Hoeveel gevallen zijn er?",
+   "ctx": "[1] In onze stad is het aantal winkeldiefstallen gestegen sinds de gemeente vorig jaar fietsstroken heeft aangelegd langs de grote doorgaande wegen. [2] Fietsstroken zijn dus slecht voor de veiligheid in de binnenstad. [3] Een bekende zanger heeft bovendien verklaard dat fietsen ongezond is vanwege de uitlaatgassen van auto's die er vlak langs rijden. [4] Mijn buurman is vorige maand op de fiets aangereden, dus fietsen is gevaarlijk. [5] De gemeente moet de fietsstroken daarom weer weghalen, voordat het nog erger wordt."
+  },
+  {
+   "v": "In zin 2 staat een vals dilemma. Welke middenweg wordt genegeerd?",
+   "o": [
+    "helemaal niet naar school gaan en werken",
+    "meer uren werken dan leren",
+    "beperkt werken en toch goede cijfers",
+    "alleen cijfers halen zonder bijbaan"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Vals dilemma: de middenweg wordt verzwegen.",
+   "uo": [
+    "Koos je \"helemaal niet naar school gaan en werken\"? Dan denk je dat dit een extra keuze is. Dat is een extreme optie, geen realistische middenweg.",
+    "Koos je \"meer uren werken dan leren\"? Dan denk je dat het een middenweg is. Het is dezelfde keuze als de eerste optie, dus het is geen nieuw alternatief.",
+    "Klopt: het dilemma doet alsof werken en goede cijfers elkaar uitsluiten, maar een beperkte bijbaan is mogelijk.",
+    "Koos je \"alleen cijfers halen zonder bijbaan\"? Dan denk je dat dit de genegeerde optie is. Het is de tweede optie uit zin 2, dus hij wordt wel genoemd."
+   ],
+   "uh": "Welke optie ontbreekt?",
+   "ctx": "[1] Wie niet voor het afschaffen van de bijbaan voor scholieren is, wil dat jongeren hun school verwaarlozen. [2] Er zijn maar twee keuzes: of leerlingen werken en halen slechte cijfers, of ze werken niet en leren iets op school. [3] Een bijbaan is bovendien net als roken: het lijkt onschuldig, maar je raakt eraan verslaafd en kunt er niet meer mee stoppen. [4] De nadelen zijn enorm, want één keer een toets missen kan een hele loopbaan ruïneren. [5] Scholen moeten bijbaantjes dus verbieden, voordat het te laat is."
+  },
+  {
+   "v": "Waarom is de vergelijking van een bijbaan met roken in zin 3 een verkeerde vergelijking?",
+   "o": [
+    "omdat roken geen onderwerp is in de tekst",
+    "omdat een vergelijking nooit een geldig argument kan zijn",
+    "omdat een bijbaan altijd gezond is",
+    "roken schaadt de gezondheid, een bijbaan niet per se"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Een vergelijking is verkeerd als de gevallen op het beslissende punt verschillen.",
+   "uo": [
+    "Koos je \"omdat roken geen onderwerp is in de tekst\"? Dan denk je dat het onderwerp niet past. Het gaat om de overeenkomst, die ontbreekt op het beslissende punt.",
+    "Koos je \"omdat een vergelijking nooit een geldig argument...\"? Dan denk je dat vergelijkingen altijd fout zijn. Een goede vergelijking is een geldig argument, deze is verkeerd.",
+    "Koos je \"omdat een bijbaan altijd gezond is\"? Dan denk je dat een bijbaan altijd goed is. Dat is ook een generalisatie, het gaat om de overeenkomst.",
+    "Klopt: de vergelijking werkt alleen als ze op het beslissende punt overeenkomen, en dat doen ze niet."
+   ],
+   "uh": "Zijn ze gelijk waar het telt?",
+   "ctx": "[1] Wie niet voor het afschaffen van de bijbaan voor scholieren is, wil dat jongeren hun school verwaarlozen. [2] Er zijn maar twee keuzes: of leerlingen werken en halen slechte cijfers, of ze werken niet en leren iets op school. [3] Een bijbaan is bovendien net als roken: het lijkt onschuldig, maar je raakt eraan verslaafd en kunt er niet meer mee stoppen. [4] De nadelen zijn enorm, want één keer een toets missen kan een hele loopbaan ruïneren. [5] Scholen moeten bijbaantjes dus verbieden, voordat het te laat is."
+  },
+  {
+   "v": "Welke drogreden zit in zin 6 en wat doet de schrijver?",
+   "o": [
+    "het bespelen van het publiek",
+    "een persoonlijke aanval op de minister",
+    "het ontduiken van de bewijslast",
+    "een cirkelredenering"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Publiek bespelen: een beroep doen op groepsgevoel in plaats van argumenteren.",
+   "uo": [
+    "Klopt: \"alle weldenkende Nederlanders\" werkt op het gevoel erbij te willen horen in plaats van met een argument.",
+    "Koos je \"een persoonlijke aanval op de minister\"? Dan denk je dat de minister wordt aangevallen. Dat gebeurde in zin 2, zin 6 spreekt het publiek aan.",
+    "Koos je \"het ontduiken van de bewijslast\"? Dan denk je dat de bewijslast wordt verschoven. Dat gebeurt in zin 3, zin 6 speelt in op het publiek.",
+    "Koos je \"een cirkelredenering\"? Dan denk je dat de zin zichzelf bewijst. Dat gebeurt in zin 4, zin 6 beroept zich op het gevoel van de groep."
+   ],
+   "uh": "Wie spreekt hij aan?",
+   "ctx": "[1] De stelling van de minister dat de btw op boeken omlaag moet, is onzin. [2] Hij heeft zelf nooit een boek uitgegeven, dus wat weet hij ervan? [3] Wie ons plan wil tegenhouden, moet maar bewijzen dat het niet werkt, anders is het goed. [4] Het plan is goed omdat het verstandig is, en verstandig is het omdat het goed is, zoals iedereen kan zien. [5] Zijn tegenstander beweert dat boeken helemaal gratis moeten zijn, en dat is natuurlijk belachelijk. [6] Alle weldenkende Nederlanders weten dat dit de enige juiste keuze is."
+  },
+  {
+   "v": "Een leerling zegt: \"Zin 2 is terecht, want de minister heeft nooit een boek uitgegeven.\" Wat is het probleem?",
+   "o": [
+    "niets: het feit klopt dus het is een geldig argument",
+    "het gaat om de persoon, niet om de zaak",
+    "dat de leerling het feit niet kan controleren",
+    "dat de minister geen boek had mogen uitgeven"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Waar maar irrelevant: de persoon zegt niets over de zaak.",
+   "uo": [
+    "Koos je \"niets: het feit klopt dus het is een geldig argument\"? Dan denk je dat een waar feit een argument is. Een waar feit kan irrelevant zijn, hier gaat het niet over het standpunt.",
+    "Klopt: ook als het feit klopt, zegt het niets over of de btw omlaag moet.",
+    "Koos je \"dat de leerling het feit niet kan controleren\"? Dan denk je dat het feit onjuist is. Ook als het klopt, is het geen argument, het is irrelevant.",
+    "Koos je \"dat de minister geen boek had mogen uitgeven\"? Dan denk je dat het om het recht gaat. Het gaat om het soort argument, niet om recht."
+   ],
+   "uh": "Gaat het over de zaak?",
+   "ctx": "[1] De stelling van de minister dat de btw op boeken omlaag moet, is onzin. [2] Hij heeft zelf nooit een boek uitgegeven, dus wat weet hij ervan? [3] Wie ons plan wil tegenhouden, moet maar bewijzen dat het niet werkt, anders is het goed. [4] Het plan is goed omdat het verstandig is, en verstandig is het omdat het goed is, zoals iedereen kan zien. [5] Zijn tegenstander beweert dat boeken helemaal gratis moeten zijn, en dat is natuurlijk belachelijk. [6] Alle weldenkende Nederlanders weten dat dit de enige juiste keuze is."
+  },
+  {
+   "v": "Wat is een betere bron voor het feitelijke argument in zin 2?",
+   "o": [
+    "een grotere enquête onder lezers van hetzelfde magazine",
+    "een uitspraak van een bekende werknemer",
+    "een stelling van de schrijver zelf",
+    "een representatief onderzoek onder alle werkenden"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Betrouwbare bron: onafhankelijk, groot en representatief.",
+   "uo": [
+    "Koos je \"een grotere enquête onder lezers van hetzelfde...\"? Dan denk je dat een grotere groep dezelfde lezers genoeg is. Ze blijven niet representatief, dus meer van hetzelfde helpt niet.",
+    "Koos je \"een uitspraak van een bekende werknemer\"? Dan denk je dat een bekende persoon bewijs levert. Eén persoon zegt niets over iedereen, dus dit is niet representatief.",
+    "Koos je \"een stelling van de schrijver zelf\"? Dan denk je dat de schrijver zijn eigen bewering kan bevestigen. Dat is geen onafhankelijke bron, dus het bewijst niets.",
+    "Klopt: een grote, representatieve steekproef geeft betrouwbare uitspraken over alle Nederlanders."
+   ],
+   "uh": "Voor wie geldt het onderzoek?",
+   "ctx": "[1] Er moet een vierdaagse werkweek komen voor alle werknemers in Nederland. [2] Volgens een enquête onder tweehonderd lezers van een lifestylemagazine is zeventig procent van de Nederlanders minder gestrest bij vier werkdagen, zo meldde het blad. [3] Bovendien wonen veel werknemers ver van hun werk, zodat reizen veel tijd kost. [4] Mensen werken tegenwoordig ook vaak thuis, dus hoeven ze nauwelijks te reizen om hun werk te doen. [5] Een kortere werkweek is daarom ook goed voor het milieu en voor de gezondheid."
+  },
+  {
+   "v": "Een leerling zegt: \"Zin 1 is een persoonlijke aanval.\" Wat is jouw oordeel?",
+   "o": [
+    "onjuist: het is een vertekening",
+    "juist: er wordt een groep mensen genoemd",
+    "juist: het woord \"verwaarlozen\" is beledigend",
+    "onjuist: het is een cirkelredenering"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Vertekening: een standpunt toeschrijven dat de ander niet heeft.",
+   "uo": [
+    "Klopt: de tegenstander krijgt een standpunt toegeschreven dat hij niet heeft; dat is vertekening.",
+    "Koos je \"juist: er wordt een groep mensen genoemd\"? Dan denk je dat het noemen van een groep een aanval is. Het gaat om het standpunt, niet om de groep zelf.",
+    "Koos je \"juist: het woord verwaarlozen is beledigend\"? Dan denk je dat een beladen woord een persoonlijke aanval is. De zin vervormt het standpunt, dat is een ander soort fout.",
+    "Koos je \"onjuist: het is een cirkelredenering\"? Dan denk je dat de zin zichzelf bewijst. Hij legt de tegenstander iets in de mond, dus het is vertekening."
+   ],
+   "uh": "Persoon of standpunt?",
+   "ctx": "[1] Wie niet voor het afschaffen van de bijbaan voor scholieren is, wil dat jongeren hun school verwaarlozen. [2] Er zijn maar twee keuzes: of leerlingen werken en halen slechte cijfers, of ze werken niet en leren iets op school. [3] Een bijbaan is bovendien net als roken: het lijkt onschuldig, maar je raakt eraan verslaafd en kunt er niet meer mee stoppen. [4] De nadelen zijn enorm, want één keer een toets missen kan een hele loopbaan ruïneren. [5] Scholen moeten bijbaantjes dus verbieden, voordat het te laat is."
+  },
+  {
+   "v": "Zin 5 volgt uit zin 3 en 4. Waarom is die conclusie niet aanvaardbaar?",
+   "o": [
+    "omdat het milieu niet bij werkweken hoort",
+    "zin 3 en 4 spreken elkaar tegen",
+    "omdat er te weinig zinnen zijn",
+    "omdat een conclusie nooit in zin 5 mag staan"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Conclusies moeten steunen op consistente argumenten.",
+   "uo": [
+    "Koos je \"omdat het milieu niet bij werkweken hoort\"? Dan denk je dat het onderwerp niet past. Het onderwerp is niet het probleem, de tegenspraak tussen de argumenten is dat.",
+    "Klopt: een conclusie kan niet steunen op argumenten die elkaar tegenspreken.",
+    "Koos je \"omdat er te weinig zinnen zijn\"? Dan denk je dat het aantal zinnen telt. Het gaat om wat de zinnen zeggen, ze spreken elkaar tegen.",
+    "Koos je \"omdat een conclusie nooit in zin 5 mag staan\"? Dan denk je dat de plaats het probleem is. De plaats is niet relevant, de tegenspraak wel."
+   ],
+   "uh": "Steunen de argumenten elkaar?",
+   "ctx": "[1] Er moet een vierdaagse werkweek komen voor alle werknemers in Nederland. [2] Volgens een enquête onder tweehonderd lezers van een lifestylemagazine is zeventig procent van de Nederlanders minder gestrest bij vier werkdagen, zo meldde het blad. [3] Bovendien wonen veel werknemers ver van hun werk, zodat reizen veel tijd kost. [4] Mensen werken tegenwoordig ook vaak thuis, dus hoeven ze nauwelijks te reizen om hun werk te doen. [5] Een kortere werkweek is daarom ook goed voor het milieu en voor de gezondheid."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] In onze stad is het aantal winkeldiefstallen gestegen sinds de gemeente vorig jaar fietsstroken heeft aangelegd langs de grote doorgaande wegen. [2] Fietsstroken zijn dus slecht voor de veiligheid in de binnenstad. [3] Een bekende zanger heeft bovendien verklaard dat fietsen ongezond is vanwege de uitlaatgassen van auto's die er vlak langs rijden. [4] Mijn buurman is vorige maand op de fiets aangereden, dus fietsen is gevaarlijk. [5] De gemeente moet de fietsstroken daarom weer weghalen, voordat het nog erger wordt.",
+   "v": "Benoem de drogreden in zin 2 en in zin 4 en leg uit waarom het fouten zijn.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zin 2: onjuist beroep op oorzaak-gevolg (1p); een stijging na de aanleg bewijst geen oorzaak (1p). Zin 4: overhaaste generalisatie (1p); één geval is te weinig voor een algemene regel (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Wie niet voor het afschaffen van de bijbaan voor scholieren is, wil dat jongeren hun school verwaarlozen. [2] Er zijn maar twee keuzes: of leerlingen werken en halen slechte cijfers, of ze werken niet en leren iets op school. [3] Een bijbaan is bovendien net als roken: het lijkt onschuldig, maar je raakt eraan verslaafd en kunt er niet meer mee stoppen. [4] De nadelen zijn enorm, want één keer een toets missen kan een hele loopbaan ruïneren. [5] Scholen moeten bijbaantjes dus verbieden, voordat het te laat is.",
+   "v": "Benoem de drogreden in zin 2 en zin 3.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zin 2: vals dilemma, er zijn meer mogelijkheden dan twee (2p). Zin 3: verkeerde vergelijking, bijbaan en roken verschillen op het beslissende punt gezondheid en verslaving (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] De stelling van de minister dat de btw op boeken omlaag moet, is onzin. [2] Hij heeft zelf nooit een boek uitgegeven, dus wat weet hij ervan? [3] Wie ons plan wil tegenhouden, moet maar bewijzen dat het niet werkt, anders is het goed. [4] Het plan is goed omdat het verstandig is, en verstandig is het omdat het goed is, zoals iedereen kan zien. [5] Zijn tegenstander beweert dat boeken helemaal gratis moeten zijn, en dat is natuurlijk belachelijk. [6] Alle weldenkende Nederlanders weten dat dit de enige juiste keuze is.",
+   "v": "Welke drogreden zit in zin 3 en in zin 5? Leg beide uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zin 3: ontduiken van de bewijslast, de schrijver legt de bewijslast bij de ander (2p). Zin 5: vertekenen van het standpunt, de tegenstander krijgt een extreem standpunt toegeschreven (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Er moet een vierdaagse werkweek komen voor alle werknemers in Nederland. [2] Volgens een enquête onder tweehonderd lezers van een lifestylemagazine is zeventig procent van de Nederlanders minder gestrest bij vier werkdagen, zo meldde het blad. [3] Bovendien wonen veel werknemers ver van hun werk, zodat reizen veel tijd kost. [4] Mensen werken tegenwoordig ook vaak thuis, dus hoeven ze nauwelijks te reizen om hun werk te doen. [5] Een kortere werkweek is daarom ook goed voor het milieu en voor de gezondheid.",
+   "v": "Beoordeel de argumentatie op betrouwbaarheid van de bron en op consistentie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Betrouwbaarheid: de enquête onder tweehonderd lezers van een magazine is niet representatief voor alle Nederlanders (2p). Consistentie: zin 3 zegt dat veel werknemers ver reizen en zin 4 dat ze nauwelijks reizen, dus ze spreken elkaar tegen (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] De stelling van de minister dat de btw op boeken omlaag moet, is onzin. [2] Hij heeft zelf nooit een boek uitgegeven, dus wat weet hij ervan? [3] Wie ons plan wil tegenhouden, moet maar bewijzen dat het niet werkt, anders is het goed. [4] Het plan is goed omdat het verstandig is, en verstandig is het omdat het goed is, zoals iedereen kan zien. [5] Zijn tegenstander beweert dat boeken helemaal gratis moeten zijn, en dat is natuurlijk belachelijk. [6] Alle weldenkende Nederlanders weten dat dit de enige juiste keuze is.",
+   "v": "Welke drogreden bevat zin 6 en waarom werkt die drogreden op lezers?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bespelen van het publiek (1p). De schrijver doet een beroep op het willen horen bij de groep in plaats van een argument te geven (1p). Zo wordt kritiek moeilijker te uiten (1p)."
+  }
+ ]
+}
