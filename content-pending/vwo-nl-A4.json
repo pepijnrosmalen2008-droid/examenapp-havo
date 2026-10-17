@@ -1,0 +1,689 @@
+{
+ "id": "A4",
+ "lo": "nl.A.4",
+ "gs": 2,
+ "naam": "Conclusies trekken over de auteur",
+ "beschrijving": "Je trekt onderbouwde conclusies over de bedoeling, de opvatting en de gevoelens van de schrijver, aan de hand van woordkeus, ironie, toon en opbouw, en je onderscheidt zijn woorden van die van anderen.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Intentie van de schrijver herkennen",
+  "Opvatting van de schrijver afleiden",
+  "Gevoel, toon en ironie",
+  "Tekstbewijs aanwijzen",
+  "Woorden van anderen en afstand nemen",
+  "Valkuilen: overinterpretatie en eigen mening"
+ ],
+ "sam": "Bij een conclusie over de auteur bepaal je drie dingen: zijn intentie (wat wil hij bereiken), zijn opvatting (wat vindt hij) en zijn gevoel (wat voelt hij). Je leidt ze af uit woordkeus, beladen of neutraal taalgebruik, ironie, toon en opbouw, en je onderbouwt elke conclusie met tekstbewijs. Woorden van anderen herken je aan citaten en bronvermelding, en daarvan neemt de schrijver soms afstand. Wat niet in de tekst staat, mag je niet concluderen.",
+ "begrippen": [
+  {
+   "t": "Intentie",
+   "d": "Wat de schrijver met de tekst bij de lezer wil bereiken, zoals overtuigen of waarschuwen."
+  },
+  {
+   "t": "Opvatting",
+   "d": "Wat de schrijver vindt van het onderwerp, ook als hij het niet letterlijk zegt."
+  },
+  {
+   "t": "Gevoel",
+   "d": "Wat de schrijver voelt, zoals verontwaardiging, spot of trots, zichtbaar in zijn woorden."
+  },
+  {
+   "t": "Ironie",
+   "d": "Iets zeggen terwijl je het tegenovergestelde bedoelt, vaak met overdreven lof."
+  },
+  {
+   "t": "Beladen taalgebruik",
+   "d": "Woorden met een sterke positieve of negatieve bijklank, zoals lokken of overspoeld."
+  },
+  {
+   "t": "Neutraal taalgebruik",
+   "d": "Woorden zonder waardeoordeel, die alleen beschrijven wat er gebeurt."
+  },
+  {
+   "t": "Woordkeus",
+   "d": "De woorden die een schrijver kiest en die zijn houding verraden."
+  },
+  {
+   "t": "Tekstbewijs",
+   "d": "Een woord of zin uit de tekst waarmee je een conclusie onderbouwt."
+  },
+  {
+   "t": "Citaat",
+   "d": "Woorden van een ander die in de tekst worden aangehaald."
+  },
+  {
+   "t": "Afstand nemen",
+   "d": "Laten zien dat je de woorden van anderen niet deelt, bijvoorbeeld met zogenaamd of aanhalingstekens."
+  },
+  {
+   "t": "Toon",
+   "d": "De stemming van een tekst, bijvoorbeeld spottend, zakelijk of verontwaardigd."
+  },
+  {
+   "t": "Conclusie trekken",
+   "d": "Uit de tekst afleiden wat de schrijver wil, vindt of voelt, met bewijs uit die tekst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welk schrijfdoel heeft de schrijver van deze tekst?",
+   "o": [
+    "de lezer informeren over kortingsbonnen",
+    "de politiek overtuigen om in te grijpen",
+    "de lezer vermaken met een anekdote",
+    "de ketens een goed idee geven voor reclame"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Beladen woorden plus een oproep: overtuigen.",
+   "uo": [
+    "Koos je \"de lezer informeren over kortingsbonnen\"? Dan denk je dat de tekst vooral feiten meedeelt. De kortingsbonnen zijn echter een argument, geen doel op zich.",
+    "Klopt: de laatste zin roept de politiek op iets te doen, en de beladen woorden zijn bedoeld om te overtuigen.",
+    "Koos je \"de lezer vermaken met een anekdote\"? Dan denk je dat de speelgoedjes een verhaaltje zijn. Het is een zakelijke tekst met een standpunt, geen amusement.",
+    "Koos je \"de ketens een goed idee geven voor reclame\"? Dan denk je dat de schrijver adviseert aan de ketens. Hij richt zich tegen de ketens, niet tot hen."
+   ],
+   "uh": "Zoek de oproep.",
+   "ctx": "Fastfoodketens lokken kinderen met speelgoedjes naar hun filialen, en ouders worden zonder pardon overspoeld met kortingsbonnen. Deze bedrijven verdienen hun geld aan de zwakste consument: het kind dat nog niet doorheeft hoe het wordt bespeeld. Een gezonde maaltijd heeft geen speelgoedje nodig om aantrekkelijk te zijn. De ketens noemen dit \"gezellig\", maar ouders voelen zich vaak gedwongen toe te geven, want wie nee zegt, krijgt thuis een kind dat de hele terugweg om een kindermenu zeurt. Het is hoog tijd dat de politiek hier een einde aan maakt."
+  },
+  {
+   "v": "Welke zin is neutraal geformuleerd?",
+   "o": [
+    "zin 1, met \"zogenaamde\"",
+    "zin 3, met \"prachtig\"",
+    "alle drie, want ze noemen allemaal het plan",
+    "zin 2"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Neutraal = geen waarderende woorden of ironie.",
+   "uo": [
+    "Koos je \"zin 1, met zogenaamde\"? Dan denk je dat \"zogenaamde\" neutraal is. Het woord laat twijfel zien over de naam \"innovatieplan\", dus de schrijver is kritisch.",
+    "Koos je \"zin 3, met prachtig\"? Dan denk je dat \"prachtig\" lof uitdrukt. In deze zin is het ironisch bedoeld, dus hij is niet neutraal.",
+    "Koos je \"alle drie, want ze noemen allemaal het plan\"? Dan denk je dat het onderwerp bepaalt of een zin neutraal is. De woordkeus bepaalt dat, en die verschilt per zin.",
+    "Klopt: zin 2 meldt alleen wat de directie deed, zonder waarderende woorden of ironie."
+   ],
+   "uh": "Zonder oordeel.",
+   "ctx": "Zin 1: Het zogenaamde \"innovatieplan\" van de directie bestaat uit bezuinigen op koffie. Zin 2: De directie presenteerde een nieuw plan om de kosten te verlagen. Zin 3: Wat een prachtig plan, wie had dat ooit kunnen bedenken: ze besparen op koffie en verbazen zich over de sfeer."
+  },
+  {
+   "v": "Welk woord in zin 1 laat zien dat de schrijver kritisch is?",
+   "o": [
+    "\"zogenaamde\"",
+    "\"de directie\"",
+    "\"bezuinigen op koffie\"",
+    "\"op koffie\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "\"Zogenaamde\" zet de naam in een kritisch licht.",
+   "uo": [
+    "Klopt: \"zogenaamde\" geeft aan dat de schrijver de naam \"innovatieplan\" niet vindt passen.",
+    "Koos je \"de directie\"? Dan denk je dat de naam van de groep kritiek uitdrukt. \"Directie\" is een neutrale aanduiding, geen waardeoordeel.",
+    "Koos je \"bezuinigen op koffie\"? Dan denk je dat het werkwoord beladen is. \"Bezuinigen\" beschrijft wat er gebeurt, de kritiek zit in het woord ervoor.",
+    "Koos je \"op koffie\"? Dan denk je dat het onderwerp beladen is. Koffie is hier gewoon het voorbeeld, het woord zegt niets over de mening."
+   ],
+   "uh": "Let op de woordkeus.",
+   "ctx": "Zin 1: Het zogenaamde \"innovatieplan\" van de directie bestaat uit bezuinigen op koffie. Zin 2: De directie presenteerde een nieuw plan om de kosten te verlagen. Zin 3: Wat een prachtig plan, wie had dat ooit kunnen bedenken: ze besparen op koffie en verbazen zich over de sfeer."
+  },
+  {
+   "v": "Van wie is de uitspraak \"gewoon op orde\"?",
+   "o": [
+    "van de schrijver zelf",
+    "van de huisartsen in de regio",
+    "van het ministerie",
+    "van de patiënten die wachten"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Aanhalingstekens en \"volgens\" tonen wiens woorden het zijn.",
+   "uo": [
+    "Koos je \"van de schrijver zelf\"? Dan denk je dat elke zin de mening van de schrijver weergeeft. De aanhalingstekens en \"volgens\" tonen afstand, het zijn woorden van anderen.",
+    "Koos je \"van de huisartsen in de regio\"? Dan denk je dat de huisartsen dit zeggen. Zij spreken juist van een piek die blijft, dus niet van \"op orde\".",
+    "Klopt: de zin begint met \"Volgens het ministerie\" en de aanhalingstekens tonen dat het hun woorden zijn.",
+    "Koos je \"van de patiënten die wachten\"? Dan denk je dat patiënten dit vinden. Zij kregen te horen dat er pas over zes weken plek is, dus ze zien het niet zo."
+   ],
+   "uh": "Wie zegt dit?",
+   "ctx": "Volgens het ministerie is de huisartsenzorg in de regio \"gewoon op orde\". Wie deze maand een afspraak probeerde te maken, kreeg echter te horen dat de eerstvolgende plek over zes weken vrij is. Een woordvoerder verklaarde dat het gaat om \"een tijdelijke piek\". Dezelfde piek wordt al sinds vorig jaar gemeld door huisartsen die hun patiëntenstop niet kunnen opheffen. Intussen bellen patiënten urenlang tevergeefs naar praktijken die geen nieuwe mensen meer aannemen. Het ministerie houdt vast aan zijn woorden; de praktijk spreekt ze tegen."
+  },
+  {
+   "v": "Welke woorden in de tekst wijzen op ironie?",
+   "o": [
+    "\"een rapport van tweehonderd pagina's\"",
+    "\"voor nader onderzoek\"",
+    "\"een briljante zet\" en \"de wijsheid\"",
+    "\"de nieuwe fietsbrug\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Ironie: je prijst iets terwijl je het bedoelt af te keuren.",
+   "uo": [
+    "Koos je \"een rapport van tweehonderd pagina's\"? Dan denk je dat deze woorden een ironisch oordeel zijn. Ze noemen een omvang, de ironie zit in de lof.",
+    "Koos je \"voor nader onderzoek\"? Dan denk je dat de aanhalingstekens op ironie wijzen. Ze geven een officiële formule aan, zonder de lof van een ironische toon.",
+    "Klopt: de schrijver prijst iets wat hij duidelijk onzinnig vindt; dat is ironie.",
+    "Koos je \"de nieuwe fietsbrug\"? Dan denk je dat het onderwerp ironisch bedoeld is. Het is de naam van het project, geen waardeoordeel."
+   ],
+   "uh": "Lof die niet meent.",
+   "ctx": "De gemeente heeft het weer gedaan. Na drie jaar vergaderen en een rapport van tweehonderd pagina's is besloten de nieuwe fietsbrug nog een jaar uit te stellen, voor \"nader onderzoek\". Een briljante zet: wie de brug niet bouwt, kan er ook niet over struikelen. Het onderzoek wordt uitgevoerd door hetzelfde bureau dat het vorige rapport schreef. Wie de brug zoekt, vindt voorlopig alleen een bord met de tekst \"binnenkort meer informatie\". De omwonenden, die al sinds jaar en dag omrijden, zullen de wijsheid van het bestuur ongetwijfeld waarderen."
+  },
+  {
+   "v": "Hoe beoordeelt de schrijver het museum volgens de tekst?",
+   "o": [
+    "het gebouw staat boven de collectie",
+    "de collectie is groot en het gebouw is een bonus",
+    "het museum is vooral geschikt voor kunstkenners",
+    "het museum is vooral lelijk gebouwd"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Contrast: veel bijzaken, weinig kunst: dat is de kritiek.",
+   "uo": [
+    "Klopt: de schrijver somt eerst de bijzaken op en zet daar de magere collectie tegenover.",
+    "Koos je \"de collectie is groot en het gebouw is een bonus\"? Dan denk je dat de tekst de collectie prijst. Er hangen slechts twaalf schilderijen, dus hij prijst haar niet.",
+    "Koos je \"het museum is vooral geschikt voor kunstkenners\"? Dan denk je dat de kunstkenners het meest te zien krijgen. Zij vertrekken na een uur, dus het museum biedt hen weinig.",
+    "Koos je \"het museum is vooral lelijk gebouwd\"? Dan denk je dat de kritiek over het uiterlijk gaat. De gevel wordt modern genoemd, de kritiek betreft de collectie."
+   ],
+   "uh": "Wat staat tegenover wat?",
+   "ctx": "Het nieuwe museum heeft veel te bieden: een moderne gevel, een café met uitzicht en een ruime parkeergarage. Over de collectie zelf wordt minder gezegd. De zalen bevatten twaalf schilderijen uit de zeventiende eeuw en een wisselende tentoonstelling die nog moet worden ingericht. De directeur noemt dit \"een nieuwe vorm van gastvrijheid\". Op de website prijkt vooral het café, met een grote foto van het terras. De bezoeker die voor de kunst komt, vertrekt na een uur; de bezoeker die voor de koffie komt, blijft de hele middag."
+  },
+  {
+   "v": "Waarop moet je een conclusie over de auteur baseren?",
+   "o": [
+    "op wat jij zelf over het onderwerp vindt",
+    "op wat de auteur waarschijnlijk in het echt vindt",
+    "op het eerste gevoel dat de tekst oproept",
+    "op wat in de tekst staat"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Conclusies over de auteur bewijs je met de tekst.",
+   "uo": [
+    "Koos je \"op wat jij zelf over het onderwerp vindt\"? Dan denk je dat je eigen mening telt. De vraag gaat over de auteur, niet over jouw standpunt.",
+    "Koos je \"op wat de auteur waarschijnlijk in het echt vindt\"? Dan denk je dat je buiten de tekst kunt gokken. De opdracht beperkt zich tot de tekst, dus je kunt dat niet beantwoorden.",
+    "Koos je \"op het eerste gevoel dat de tekst oproept\"? Dan denk je dat je gevoel bewijs is. Een gevoel is geen tekstbewijs, zoek de woorden waaruit het blijkt.",
+    "Klopt: een conclusie moet in de tekst onderbouwd zijn; eigen opvattingen of gissingen horen daar niet bij."
+   ],
+   "uh": "Bewijs in de tekst."
+  },
+  {
+   "v": "Wat wil de schrijver bereiken met deze tekst?",
+   "o": [
+    "de lezer neutraal informeren over de brug",
+    "het besluit bespotten en bekritiseren",
+    "de gemeente prijzen om haar zorgvuldigheid",
+    "de lezer oproepen om zelf een brug te bouwen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Spot en kritiek: ironie met een bedoeling.",
+   "uo": [
+    "Koos je \"de lezer neutraal informeren over de brug\"? Dan denk je dat de tekst alleen meldt wat er gebeurt. De toon is spottend, dus de bedoeling gaat verder dan melden.",
+    "Klopt: de ironie is bedoeld om de gemeente belachelijk te maken en kritiek te uiten.",
+    "Koos je \"de gemeente prijzen om haar zorgvuldigheid\"? Dan denk je dat de lof serieus is. De lof is ironisch bedoeld, dus de schrijver bekritiseert juist.",
+    "Koos je \"de lezer oproepen om zelf een brug te bouwen\"? Dan denk je dat de tekst een oproep bevat. Er staat geen oproep in, alleen spot en kritiek."
+   ],
+   "uh": "Spotten met bedoeling.",
+   "ctx": "De gemeente heeft het weer gedaan. Na drie jaar vergaderen en een rapport van tweehonderd pagina's is besloten de nieuwe fietsbrug nog een jaar uit te stellen, voor \"nader onderzoek\". Een briljante zet: wie de brug niet bouwt, kan er ook niet over struikelen. Het onderzoek wordt uitgevoerd door hetzelfde bureau dat het vorige rapport schreef. Wie de brug zoekt, vindt voorlopig alleen een bord met de tekst \"binnenkort meer informatie\". De omwonenden, die al sinds jaar en dag omrijden, zullen de wijsheid van het bestuur ongetwijfeld waarderen."
+  },
+  {
+   "v": "Hoe zie je dat de schrijver niet meent wat hij zegt?",
+   "o": [
+    "omdat hij het woord \"nader onderzoek\" gebruikt",
+    "omdat hij het getal tweehonderd noemt",
+    "omdat de tekst een column is",
+    "hij prijst iets wat duidelijk onzinnig is"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Ironie herken je aan lof of instemming die niet kan kloppen.",
+   "uo": [
+    "Koos je \"omdat hij het woord nader onderzoek gebruikt\"? Dan denk je dat de formule de ironie is. Het is een citaat van de gemeente, de ironie zit in zijn lof.",
+    "Koos je \"omdat hij het getal tweehonderd noemt\"? Dan denk je dat een getal ironisch is. Het getal geeft de omvang, het draagt geen toon.",
+    "Koos je \"omdat de tekst een column is\"? Dan denk je dat een tekstsoort ironie bewijst. Ook een column kan serieus zijn, je moet de woordkeus aanwijzen.",
+    "Klopt: lof voor een besluit dat de omwonenden schaadt is een signaal van ironie."
+   ],
+   "uh": "Lof die niet klopt.",
+   "ctx": "De gemeente heeft het weer gedaan. Na drie jaar vergaderen en een rapport van tweehonderd pagina's is besloten de nieuwe fietsbrug nog een jaar uit te stellen, voor \"nader onderzoek\". Een briljante zet: wie de brug niet bouwt, kan er ook niet over struikelen. Het onderzoek wordt uitgevoerd door hetzelfde bureau dat het vorige rapport schreef. Wie de brug zoekt, vindt voorlopig alleen een bord met de tekst \"binnenkort meer informatie\". De omwonenden, die al sinds jaar en dag omrijden, zullen de wijsheid van het bestuur ongetwijfeld waarderen."
+  },
+  {
+   "v": "Welke opvatting heeft de schrijver over fastfoodketens?",
+   "o": [
+    "ze doen goed werk voor gezinnen",
+    "ze misbruiken de kwetsbaarheid van kinderen",
+    "ze zijn gewoon een bedrijf zonder bijzonderheden",
+    "ze verdienen te weinig aan de kinderen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Beladen woorden tonen een afkeurende opvatting.",
+   "uo": [
+    "Koos je \"ze doen goed werk voor gezinnen\"? Dan denk je dat de schrijver de ketens verdedigt. De woorden zijn juist afkeurend, dus hij is kritisch.",
+    "Klopt: \"zwakste consument\" en \"bespeeld\" tonen dat hij vindt dat de ketens misbruik maken van kinderen.",
+    "Koos je \"ze zijn gewoon een bedrijf zonder bijzonderheden\"? Dan denk je dat de schrijver neutraal is. De beladen woorden laten een oordeel zien, dus het is niet neutraal.",
+    "Koos je \"ze verdienen te weinig aan de kinderen\"? Dan denk je dat de schrijver medelijden heeft met de ketens. Hij richt zich op de kinderen, niet op de winst van de ketens."
+   ],
+   "uh": "Welke woorden oordelen?",
+   "ctx": "Fastfoodketens lokken kinderen met speelgoedjes naar hun filialen, en ouders worden zonder pardon overspoeld met kortingsbonnen. Deze bedrijven verdienen hun geld aan de zwakste consument: het kind dat nog niet doorheeft hoe het wordt bespeeld. Een gezonde maaltijd heeft geen speelgoedje nodig om aantrekkelijk te zijn. De ketens noemen dit \"gezellig\", maar ouders voelen zich vaak gedwongen toe te geven, want wie nee zegt, krijgt thuis een kind dat de hele terugweg om een kindermenu zeurt. Het is hoog tijd dat de politiek hier een einde aan maakt."
+  },
+  {
+   "v": "Welke woorden laten het gevoel van de schrijver het best zien?",
+   "o": [
+    "\"filialen\" en \"kortingsbonnen\"",
+    "\"consument\" en \"maaltijd\"",
+    "\"overspoeld\" en \"bespeeld\"",
+    "\"politiek\" en \"bedrijven\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Beladen woordkeus toont gevoel; neutrale benamingen niet.",
+   "uo": [
+    "Koos je \"filialen en kortingsbonnen\"? Dan denk je dat zelfstandige naamwoorden gevoel tonen. Het zijn neutrale benamingen, de beladen woorden zijn werkwoorden en bijwoorden.",
+    "Koos je \"consument en maaltijd\"? Dan denk je dat het gebruik van gewone woorden iets zegt. Het zijn neutrale woorden, geen uiting van gevoel.",
+    "Klopt: deze woorden zijn sterk en beladen en tonen verontwaardiging.",
+    "Koos je \"politiek en bedrijven\"? Dan denk je dat de namen van de actoren het gevoel dragen. Ze benoemen alleen wie het zijn, zonder waardeoordeel."
+   ],
+   "uh": "Sterke woorden.",
+   "ctx": "Fastfoodketens lokken kinderen met speelgoedjes naar hun filialen, en ouders worden zonder pardon overspoeld met kortingsbonnen. Deze bedrijven verdienen hun geld aan de zwakste consument: het kind dat nog niet doorheeft hoe het wordt bespeeld. Een gezonde maaltijd heeft geen speelgoedje nodig om aantrekkelijk te zijn. De ketens noemen dit \"gezellig\", maar ouders voelen zich vaak gedwongen toe te geven, want wie nee zegt, krijgt thuis een kind dat de hele terugweg om een kindermenu zeurt. Het is hoog tijd dat de politiek hier een einde aan maakt."
+  },
+  {
+   "v": "Waaraan zie je dat de slotzin een oproep is?",
+   "o": [
+    "\"het is hoog tijd\"",
+    "\"de politiek\" en \"hier\"",
+    "\"een gezonde maaltijd\" en \"aantrekkelijk\"",
+    "alleen het woord \"politiek\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Een oproep herken je aan formuleringen als \"het is hoog tijd\".",
+   "uo": [
+    "Klopt: deze woorden vragen om verandering door de politiek; dat is een oproep.",
+    "Koos je \"de politiek en hier\"? Dan denk je dat de aanspreking een oproep is. De aanspreking wijst alleen een adres aan, de oproep zit in \"hoog tijd\".",
+    "Koos je \"een gezonde maaltijd en aantrekkelijk\"? Dan denk je dat deze woorden het slot vormen. Ze staan in de zin ervoor, en zijn een argument.",
+    "Koos je \"alleen het woord politiek\"? Dan denk je dat één woord de oproep draagt. Je hebt een formulering nodig, zoals \"hoog tijd\" en \"een einde aan maakt\"."
+   ],
+   "uh": "Wat wordt gevraagd?",
+   "ctx": "Fastfoodketens lokken kinderen met speelgoedjes naar hun filialen, en ouders worden zonder pardon overspoeld met kortingsbonnen. Deze bedrijven verdienen hun geld aan de zwakste consument: het kind dat nog niet doorheeft hoe het wordt bespeeld. Een gezonde maaltijd heeft geen speelgoedje nodig om aantrekkelijk te zijn. De ketens noemen dit \"gezellig\", maar ouders voelen zich vaak gedwongen toe te geven, want wie nee zegt, krijgt thuis een kind dat de hele terugweg om een kindermenu zeurt. Het is hoog tijd dat de politiek hier een einde aan maakt."
+  },
+  {
+   "v": "Wat bedoelt de schrijver met de zin over de directeur?",
+   "o": [
+    "hij zet zijn woorden ironisch neer",
+    "hij is het eens met de directeur",
+    "hij geeft alleen een mededeling zonder oordeel",
+    "hij prijst het museum voor zijn gastvrijheid"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Een citaat met afstand en ironie: de schrijver neemt het niet serieus.",
+   "uo": [
+    "Klopt: de aanhalingstekens en de zin ervoor tonen dat de schrijver de directeur niet serieus neemt.",
+    "Koos je \"hij is het eens met de directeur\"? Dan denk je dat een citaat instemming betekent. Hier geeft de schrijver het citaat met afstand, dus hij is het er niet mee eens.",
+    "Koos je \"hij geeft alleen een mededeling zonder oordeel\"? Dan denk je dat de zin neutraal is. De combinatie met de magere collectie is spottend, dus er is wel een oordeel.",
+    "Koos je \"hij prijst het museum voor zijn gastvrijheid\"? Dan denk je dat de directeur gelijk krijgt. De schrijver laat zien dat gastvrijheid de kunst vervangt, dus hij prijst niet."
+   ],
+   "uh": "Afstand nemen.",
+   "ctx": "Het nieuwe museum heeft veel te bieden: een moderne gevel, een café met uitzicht en een ruime parkeergarage. Over de collectie zelf wordt minder gezegd. De zalen bevatten twaalf schilderijen uit de zeventiende eeuw en een wisselende tentoonstelling die nog moet worden ingericht. De directeur noemt dit \"een nieuwe vorm van gastvrijheid\". Op de website prijkt vooral het café, met een grote foto van het terras. De bezoeker die voor de kunst komt, vertrekt na een uur; de bezoeker die voor de koffie komt, blijft de hele middag."
+  },
+  {
+   "v": "Hoe maakt de schrijver zichtbaar welke woorden van anderen zijn?",
+   "o": [
+    "met uitroeptekens achter de zinnen",
+    "met vet gedrukte woorden",
+    "met \"volgens\" en aanhalingstekens",
+    "met een andere zinsbouw"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Bronvermelding en aanhalingstekens markeren de woorden van anderen.",
+   "uo": [
+    "Koos je \"met uitroeptekens achter de zinnen\"? Dan denk je dat uitroeptekens citaten markeren. Er staan geen uitroeptekens in de tekst, de afstand blijkt uit andere woorden.",
+    "Koos je \"met vet gedrukte woorden\"? Dan denk je dat de typografie het citaat aangeeft. Er is geen vet gebruikt, alleen \"volgens\" en aanhalingstekens.",
+    "Klopt: deze signalen laten zien dat het om aangehaalde woorden gaat en niet om de mening van de schrijver.",
+    "Koos je \"met een andere zinsbouw\"? Dan denk je dat de zinsbouw het citaat verraadt. De zinsbouw blijft gelijk, de signalen zitten in de bronvermelding."
+   ],
+   "uh": "Wie spreekt?",
+   "ctx": "Volgens het ministerie is de huisartsenzorg in de regio \"gewoon op orde\". Wie deze maand een afspraak probeerde te maken, kreeg echter te horen dat de eerstvolgende plek over zes weken vrij is. Een woordvoerder verklaarde dat het gaat om \"een tijdelijke piek\". Dezelfde piek wordt al sinds vorig jaar gemeld door huisartsen die hun patiëntenstop niet kunnen opheffen. Intussen bellen patiënten urenlang tevergeefs naar praktijken die geen nieuwe mensen meer aannemen. Het ministerie houdt vast aan zijn woorden; de praktijk spreekt ze tegen."
+  },
+  {
+   "v": "Welke opvatting blijkt uit de zin \"Een gezonde maaltijd heeft geen speelgoedje nodig\"?",
+   "o": [
+    "speelgoed is een goede aanvulling op gezond eten",
+    "goed eten verkoopt zichzelf",
+    "ouders moeten leren om speelgoed te kopen",
+    "gezonde maaltijden zijn duurder dan fastfood"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Zo'n zin geeft een oordeel zonder het letterlijk te zeggen.",
+   "uo": [
+    "Koos je \"speelgoed is een goede aanvulling op gezond eten\"? Dan denk je dat de schrijver speelgoed prijst. De zin zegt dat het niet nodig is, dus hij wijst het af.",
+    "Klopt: de zin laat zien dat de schrijver het speelgoed als lokmiddel beschouwt dat nodig is voor minder gezond eten.",
+    "Koos je \"ouders moeten leren om speelgoed te kopen\"? Dan denk je dat de schrijver ouders aanspreekt. De zin gaat over het aanbod van de ketens, niet over de ouders.",
+    "Koos je \"gezonde maaltijden zijn duurder dan fastfood\"? Dan denk je dat de schrijver prijzen vergelijkt. De zin noemt geen prijs, alleen de behoefte aan speelgoed."
+   ],
+   "uh": "Wat suggereert de zin?",
+   "ctx": "Fastfoodketens lokken kinderen met speelgoedjes naar hun filialen, en ouders worden zonder pardon overspoeld met kortingsbonnen. Deze bedrijven verdienen hun geld aan de zwakste consument: het kind dat nog niet doorheeft hoe het wordt bespeeld. Een gezonde maaltijd heeft geen speelgoedje nodig om aantrekkelijk te zijn. De ketens noemen dit \"gezellig\", maar ouders voelen zich vaak gedwongen toe te geven, want wie nee zegt, krijgt thuis een kind dat de hele terugweg om een kindermenu zeurt. Het is hoog tijd dat de politiek hier een einde aan maakt."
+  },
+  {
+   "v": "Een leerling zegt: \"De schrijver vindt het museum lelijk.\" Wat klopt er niet?",
+   "o": [
+    "niets: de schrijver noemt het gebouw uitdrukkelijk lelijk",
+    "de leerling moet \"duur\" zeggen in plaats van \"lelijk\"",
+    "de schrijver vindt het museum perfect",
+    "dat staat er niet; de kritiek gaat over de collectie"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Controleer of een conclusie echt in de tekst staat.",
+   "uo": [
+    "Koos je \"niets: de schrijver noemt het gebouw uitdrukkelijk...\"? Dan denk je dat de woorden over de gevel negatief zijn. Ze zijn juist positief of neutraal, de kritiek zit elders.",
+    "Koos je \"de leerling moet duur zeggen in plaats van lelijk\"? Dan denk je dat de kritiek over de kosten gaat. Er staan geen kosten in de tekst, je mag niets toevoegen.",
+    "Koos je \"de schrijver vindt het museum perfect\"? Dan denk je dat hij het museum bewondert. De toon is spottend over de collectie, dus hij is niet enthousiast.",
+    "Klopt: de gevel heet modern en het café heeft uitzicht; de teleurstelling betreft de kunst."
+   ],
+   "uh": "Staat het er echt?",
+   "ctx": "Het nieuwe museum heeft veel te bieden: een moderne gevel, een café met uitzicht en een ruime parkeergarage. Over de collectie zelf wordt minder gezegd. De zalen bevatten twaalf schilderijen uit de zeventiende eeuw en een wisselende tentoonstelling die nog moet worden ingericht. De directeur noemt dit \"een nieuwe vorm van gastvrijheid\". Op de website prijkt vooral het café, met een grote foto van het terras. De bezoeker die voor de kunst komt, vertrekt na een uur; de bezoeker die voor de koffie komt, blijft de hele middag."
+  },
+  {
+   "v": "Welke zin is ironisch bedoeld?",
+   "o": [
+    "zin 1: \"innovatieplan\"",
+    "zin 3: \"Wat een prachtig plan\"",
+    "zin 2: \"een nieuw plan\"",
+    "geen enkele zin, want alle zinnen noemen een plan"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Ironie: lof die door de context wordt tegengesproken.",
+   "uo": [
+    "Koos je \"zin 1: innovatieplan\"? Dan denk je dat de naam alleen ironie is. Het woord \"zogenaamde\" laat kritiek zien, maar de ironie zit in de lof van zin 3.",
+    "Klopt: de lof wordt gevolgd door de bezuiniging op koffie en de verbazing over de sfeer, dus hij bedoelt het omgekeerde.",
+    "Koos je \"zin 2: een nieuw plan\"? Dan denk je dat deze zin spottend is. Hij beschrijft alleen wat de directie deed, zonder toon.",
+    "Koos je \"geen enkele zin, want alle zinnen noemen een plan\"? Dan denk je dat het onderwerp ironie uitsluit. De woordkeus en het contrast bepalen dat, dus zin 3 is ironisch."
+   ],
+   "uh": "Lof tegenover feiten.",
+   "ctx": "Zin 1: Het zogenaamde \"innovatieplan\" van de directie bestaat uit bezuinigen op koffie. Zin 2: De directie presenteerde een nieuw plan om de kosten te verlagen. Zin 3: Wat een prachtig plan, wie had dat ooit kunnen bedenken: ze besparen op koffie en verbazen zich over de sfeer."
+  },
+  {
+   "v": "Wat kun je concluderen over de opvatting van de schrijver over de zorg in de regio?",
+   "o": [
+    "hij vindt dat de zorg onder druk staat",
+    "hij vindt dat de zorg goed op orde is",
+    "hij vindt dat huisartsen te veel klagen",
+    "hij heeft geen opvatting, want hij citeert alleen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "De opbouw en de slotzin tonen dat de schrijver het ministerie tegenspreekt.",
+   "uo": [
+    "Klopt: de praktijk (wachttijd en patiëntenstop) spreekt de woorden van het ministerie tegen.",
+    "Koos je \"hij vindt dat de zorg goed op orde is\"? Dan denk je dat de schrijver het ministerie gelijk geeft. Hij zet de woorden van het ministerie tegenover de praktijk, dus hij is het er niet mee eens.",
+    "Koos je \"hij vindt dat huisartsen te veel klagen\"? Dan denk je dat de schrijver de artsen bekritiseert. Hij gebruikt hun melding als bewijs, dus hij steunt hen.",
+    "Koos je \"hij heeft geen opvatting, want hij citeert alleen\"? Dan denk je dat citeren neutraal is. De opbouw van de tekst en de slotzin tonen wel een oordeel, dus hij heeft er een."
+   ],
+   "uh": "Wat staat tegenover wat?",
+   "ctx": "Volgens het ministerie is de huisartsenzorg in de regio \"gewoon op orde\". Wie deze maand een afspraak probeerde te maken, kreeg echter te horen dat de eerstvolgende plek over zes weken vrij is. Een woordvoerder verklaarde dat het gaat om \"een tijdelijke piek\". Dezelfde piek wordt al sinds vorig jaar gemeld door huisartsen die hun patiëntenstop niet kunnen opheffen. Intussen bellen patiënten urenlang tevergeefs naar praktijken die geen nieuwe mensen meer aannemen. Het ministerie houdt vast aan zijn woorden; de praktijk spreekt ze tegen."
+  },
+  {
+   "v": "Welke gevoelens van de schrijver blijken uit de slotzin?",
+   "o": [
+    "tevredenheid over het bestuur",
+    "onverschilligheid over de brug",
+    "medelijden met het bestuur",
+    "sarcasme en ergernis"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Sarcasme tegenover beleid met nadelige gevolgen.",
+   "uo": [
+    "Koos je \"tevredenheid over het bestuur\"? Dan denk je dat \"wijsheid\" oprecht is. Het woord is ironisch gebruikt, de schrijver is juist kritisch.",
+    "Koos je \"onverschilligheid over de brug\"? Dan denk je dat de zin neutraal is. De spot toont betrokkenheid, geen onverschilligheid.",
+    "Koos je \"medelijden met het bestuur\"? Dan denk je dat de schrijver het bestuur in bescherming neemt. De spot richt zich tegen hen, niet voor hen.",
+    "Klopt: \"ongetwijfeld waarderen\" is sarcastisch bedoeld en richt zich op de mensen die omrijden."
+   ],
+   "uh": "Spot en ergernis.",
+   "ctx": "De gemeente heeft het weer gedaan. Na drie jaar vergaderen en een rapport van tweehonderd pagina's is besloten de nieuwe fietsbrug nog een jaar uit te stellen, voor \"nader onderzoek\". Een briljante zet: wie de brug niet bouwt, kan er ook niet over struikelen. Het onderzoek wordt uitgevoerd door hetzelfde bureau dat het vorige rapport schreef. Wie de brug zoekt, vindt voorlopig alleen een bord met de tekst \"binnenkort meer informatie\". De omwonenden, die al sinds jaar en dag omrijden, zullen de wijsheid van het bestuur ongetwijfeld waarderen."
+  },
+  {
+   "v": "Welk tekstbewijs ondersteunt het best dat de schrijver het museum kritisch beoordeelt?",
+   "o": [
+    "het museum heeft een moderne gevel",
+    "de collectie bestaat uit twaalf schilderijen uit de zeventiende eeuw",
+    "de bezoeker voor de kunst vertrekt na een uur",
+    "het museum ligt in een stad"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Bewijs = een zin die het oordeel zichtbaar maakt.",
+   "uo": [
+    "Koos je \"het museum heeft een moderne gevel\"? Dan denk je dat de eerste zin kritisch is. De zin noemt een positief punt, geen kritiek.",
+    "Koos je \"de collectie bestaat uit twaalf schilderijen uit de...\"? Dan denk je dat een telling bewijs is. Het getal is een feit, de waardering zit in het contrast met koffie.",
+    "Klopt: deze zin zet de kunst tegenover de koffie en maakt de kritiek concreet.",
+    "Koos je \"het museum ligt in een stad\"? Dan denk je dat de ligging kritiek is. Er staat niets over de ligging, dit is geen tekstbewijs."
+   ],
+   "uh": "Welke zin toont het oordeel?",
+   "ctx": "Het nieuwe museum heeft veel te bieden: een moderne gevel, een café met uitzicht en een ruime parkeergarage. Over de collectie zelf wordt minder gezegd. De zalen bevatten twaalf schilderijen uit de zeventiende eeuw en een wisselende tentoonstelling die nog moet worden ingericht. De directeur noemt dit \"een nieuwe vorm van gastvrijheid\". Op de website prijkt vooral het café, met een grote foto van het terras. De bezoeker die voor de kunst komt, vertrekt na een uur; de bezoeker die voor de koffie komt, blijft de hele middag."
+  },
+  {
+   "v": "Waarom is het onjuist om te zeggen dat de schrijver het ministerie gelijk geeft?",
+   "o": [
+    "omdat hij het ministerie niet noemt",
+    "omdat de woordvoerder geen enkel citaat geeft in de tekst",
+    "hij citeert het ministerie en spreekt het tegen",
+    "omdat de tekst geen mening bevat"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Wie citeert en tegenspreekt, geeft de bron geen gelijk.",
+   "uo": [
+    "Koos je \"omdat hij het ministerie niet noemt\"? Dan denk je dat het ministerie niet voorkomt. Het staat in de eerste zin, dus dat argument klopt niet.",
+    "Koos je \"omdat de woordvoerder geen enkel citaat geeft in de...\"? Dan denk je dat de woordvoerder niets zegt. Er staat dat hij verklaarde, dus er is wel een citaat.",
+    "Klopt: de aanhalingstekens, \"echter\" en de slotzin tonen dat de schrijver de woorden van het ministerie bestrijdt.",
+    "Koos je \"omdat de tekst geen mening bevat\"? Dan denk je dat de tekst alleen feiten noemt. De slotzin geeft een duidelijk oordeel, dus er is een mening."
+   ],
+   "uh": "Citeren is niet instemmen.",
+   "ctx": "Volgens het ministerie is de huisartsenzorg in de regio \"gewoon op orde\". Wie deze maand een afspraak probeerde te maken, kreeg echter te horen dat de eerstvolgende plek over zes weken vrij is. Een woordvoerder verklaarde dat het gaat om \"een tijdelijke piek\". Dezelfde piek wordt al sinds vorig jaar gemeld door huisartsen die hun patiëntenstop niet kunnen opheffen. Intussen bellen patiënten urenlang tevergeefs naar praktijken die geen nieuwe mensen meer aannemen. Het ministerie houdt vast aan zijn woorden; de praktijk spreekt ze tegen."
+  },
+  {
+   "v": "Een leerling zegt: \"Het doel is alleen informeren over kortingsbonnen.\" Waarom klopt dat niet?",
+   "o": [
+    "omdat de tekst geen enkele kortingsbon noemt in het stuk",
+    "omdat informeren altijd onmogelijk is",
+    "omdat het een lang stuk is",
+    "de woordkeus is beladen en er is een oproep"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Beladen woorden en een oproep: het doel is overtuigen.",
+   "uo": [
+    "Koos je \"omdat de tekst geen enkele kortingsbon noemt in het...\"? Dan denk je dat de kortingsbonnen ontbreken. Ze staan in de eerste zin, dus het bezwaar klopt niet.",
+    "Koos je \"omdat informeren altijd onmogelijk is\"? Dan denk je dat een tekst nooit informeert. Een tekst kan informeren, maar hier is dat niet het doel.",
+    "Koos je \"omdat het een lang stuk is\"? Dan denk je dat de lengte het doel bepaalt. De lengte zegt niets, de woordkeus en oproep wel.",
+    "Klopt: beladen woorden en een oproep wijzen op overtuigen, niet op alleen informeren."
+   ],
+   "uh": "Informeren of overtuigen?",
+   "ctx": "Fastfoodketens lokken kinderen met speelgoedjes naar hun filialen, en ouders worden zonder pardon overspoeld met kortingsbonnen. Deze bedrijven verdienen hun geld aan de zwakste consument: het kind dat nog niet doorheeft hoe het wordt bespeeld. Een gezonde maaltijd heeft geen speelgoedje nodig om aantrekkelijk te zijn. De ketens noemen dit \"gezellig\", maar ouders voelen zich vaak gedwongen toe te geven, want wie nee zegt, krijgt thuis een kind dat de hele terugweg om een kindermenu zeurt. Het is hoog tijd dat de politiek hier een einde aan maakt."
+  },
+  {
+   "v": "Een leerling concludeert: \"De schrijver wil zelf de fietsbrug bouwen.\" Wat is het probleem?",
+   "o": [
+    "dat staat er niet in de tekst",
+    "niets: de schrijver zegt dat expliciet",
+    "dat de brug nooit gebouwd wordt",
+    "dat de gemeente de brug zelf wil uitstellen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Een conclusie moet in de tekst staan; extra wensen zijn speculatie.",
+   "uo": [
+    "Klopt: de tekst toont kritiek op het uitstel, maar zegt niets over de wens zelf te bouwen.",
+    "Koos je \"niets: de schrijver zegt dat expliciet\"? Dan denk je dat de tekst dit uitspreekt. Er staat niets over zelf bouwen, dus het is een gok.",
+    "Koos je \"dat de brug nooit gebouwd wordt\"? Dan denk je dat je dit kunt voorspellen. De tekst zegt dat de brug wordt uitgesteld, niet dat hij nooit komt.",
+    "Koos je \"dat de gemeente de brug zelf wil uitstellen\"? Dan denk je dat de gemeente niet kiest. De tekst zegt dat de gemeente het besluit nam, het probleem zit in de conclusie van de leerling."
+   ],
+   "uh": "Staat het erin?",
+   "ctx": "De gemeente heeft het weer gedaan. Na drie jaar vergaderen en een rapport van tweehonderd pagina's is besloten de nieuwe fietsbrug nog een jaar uit te stellen, voor \"nader onderzoek\". Een briljante zet: wie de brug niet bouwt, kan er ook niet over struikelen. Het onderzoek wordt uitgevoerd door hetzelfde bureau dat het vorige rapport schreef. Wie de brug zoekt, vindt voorlopig alleen een bord met de tekst \"binnenkort meer informatie\". De omwonenden, die al sinds jaar en dag omrijden, zullen de wijsheid van het bestuur ongetwijfeld waarderen."
+  },
+  {
+   "v": "Welke zin is het sterkste bewijs dat de schrijver de woordvoerder tegenspreekt?",
+   "o": [
+    "\"Een woordvoerder verklaarde dat het gaat om een tijdelijke piek\"",
+    "\"Dezelfde piek wordt al sinds vorig jaar gemeld door huisartsen\"",
+    "\"Volgens het ministerie is de zorg gewoon op orde\"",
+    "\"Wie een afspraak probeerde te maken, kreeg te horen\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Tegenspraak = een feit dat de bewering ongeloofwaardig maakt.",
+   "uo": [
+    "Koos je \"Een woordvoerder verklaarde dat het gaat om een...\"? Dan denk je dat de woorden van de woordvoerder zelf bewijs zijn. Het is de bewering, de weerlegging volgt daarna.",
+    "Klopt: deze zin maakt het begrip \"tijdelijke piek\" onwaarschijnlijk, dus hij weerlegt de woordvoerder.",
+    "Koos je \"Volgens het ministerie is de zorg gewoon op orde\"? Dan denk je dat de eerste zin bewijs bevat. Hij geeft de mening van het ministerie, dus niet die van de schrijver.",
+    "Koos je \"Wie een afspraak probeerde te maken, kreeg te horen\"? Dan denk je dat dit de weerlegging is. Het is een mededeling over de wachttijd, de weerlegging van de piek volgt in de zin erna."
+   ],
+   "uh": "Weerlegt de zin de bewering?",
+   "ctx": "Volgens het ministerie is de huisartsenzorg in de regio \"gewoon op orde\". Wie deze maand een afspraak probeerde te maken, kreeg echter te horen dat de eerstvolgende plek over zes weken vrij is. Een woordvoerder verklaarde dat het gaat om \"een tijdelijke piek\". Dezelfde piek wordt al sinds vorig jaar gemeld door huisartsen die hun patiëntenstop niet kunnen opheffen. Intussen bellen patiënten urenlang tevergeefs naar praktijken die geen nieuwe mensen meer aannemen. Het ministerie houdt vast aan zijn woorden; de praktijk spreekt ze tegen."
+  },
+  {
+   "v": "Welk neutraal woord kan \"lokken\" vervangen, zodat de kritiek uit de zin verdwijnt?",
+   "o": [
+    "\"verleiden\"",
+    "\"dwingen\"",
+    "\"misleiden\"",
+    "\"trekken\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Neutraal = zonder waardeoordeel in het woord zelf.",
+   "uo": [
+    "Koos je \"verleiden\"? Dan denk je dat dit woord neutraal is. \"Verleiden\" heeft nog steeds een negatieve bijklank, dus de kritiek blijft.",
+    "Koos je \"dwingen\"? Dan denk je dat dit woord neutraler is. \"Dwingen\" is sterker en beladener, het maakt de kritiek groter.",
+    "Koos je \"misleiden\"? Dan denk je dat dit woord de kritiek weghaalt. \"Misleiden\" bevat een beschuldiging, het is dus nog sterker dan \"lokken\".",
+    "Klopt: \"trekken\" beschrijft alleen dat kinderen naar de filialen gaan, zonder oordeel over de middelen."
+   ],
+   "uh": "Zonder bijsmaak.",
+   "ctx": "Fastfoodketens lokken kinderen met speelgoedjes naar hun filialen, en ouders worden zonder pardon overspoeld met kortingsbonnen. Deze bedrijven verdienen hun geld aan de zwakste consument: het kind dat nog niet doorheeft hoe het wordt bespeeld. Een gezonde maaltijd heeft geen speelgoedje nodig om aantrekkelijk te zijn. De ketens noemen dit \"gezellig\", maar ouders voelen zich vaak gedwongen toe te geven, want wie nee zegt, krijgt thuis een kind dat de hele terugweg om een kindermenu zeurt. Het is hoog tijd dat de politiek hier een einde aan maakt."
+  },
+  {
+   "v": "Wat wil de schrijver bij de lezer bereiken met deze tekst?",
+   "o": [
+    "de lezer laten twijfelen over het museum",
+    "de lezer overhalen het museum te bezoeken",
+    "de lezer informeren over de openingstijden",
+    "de directeur adviseren hoe hij het moet aanpakken"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Contrast en ironie zetten de lezer aan het denken.",
+   "uo": [
+    "Klopt: de schrijver stelt het gebouw en café tegenover de magere collectie en zet de lezer aan het denken.",
+    "Koos je \"de lezer overhalen het museum te bezoeken\"? Dan denk je dat de tekst lof bevat. De toon is spottend, dus hij haalt niet over.",
+    "Koos je \"de lezer informeren over de openingstijden\"? Dan denk je dat de tekst feiten geeft over het museum. Hij noemt geen tijden, de tekst gaat over de waarde.",
+    "Koos je \"de directeur adviseren hoe hij het moet aanpakken\"? Dan denk je dat de directeur de lezer is. De tekst richt zich tot bezoekers, niet tot de directeur."
+   ],
+   "uh": "Twijfel zaaien.",
+   "ctx": "Het nieuwe museum heeft veel te bieden: een moderne gevel, een café met uitzicht en een ruime parkeergarage. Over de collectie zelf wordt minder gezegd. De zalen bevatten twaalf schilderijen uit de zeventiende eeuw en een wisselende tentoonstelling die nog moet worden ingericht. De directeur noemt dit \"een nieuwe vorm van gastvrijheid\". Op de website prijkt vooral het café, met een grote foto van het terras. De bezoeker die voor de kunst komt, vertrekt na een uur; de bezoeker die voor de koffie komt, blijft de hele middag."
+  },
+  {
+   "v": "Een leerling zegt: \"De schrijver is blij met het museum, want hij noemt een café.\" Wat is het probleem?",
+   "o": [
+    "niets: de lof is oprecht",
+    "de leerling leest alleen de eerste zin",
+    "het probleem is dat het museum geen café heeft",
+    "de leerling had de collectie moeten prijzen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Lees de hele tekst: een toon kan omslaan.",
+   "uo": [
+    "Koos je \"niets: de lof is oprecht\"? Dan denk je dat de opsomming oprecht is. De tekst laat daarna zien dat de bijzaken de kunst niet vervangen, dus de lof is ironisch.",
+    "Klopt: de opsomming van bijzaken wordt gevolgd door \"over de collectie wordt minder gezegd\", en dat draait de toon om.",
+    "Koos je \"het probleem is dat het museum geen café heeft\"? Dan denk je dat de details onjuist zijn. Het café staat in de tekst, het probleem zit in de conclusie.",
+    "Koos je \"de leerling had de collectie moeten prijzen\"? Dan denk je dat de schrijver de collectie prijst. De collectie is juist het zwakke punt, dus prijzen kan niet."
+   ],
+   "uh": "Lees verder dan zin 1.",
+   "ctx": "Het nieuwe museum heeft veel te bieden: een moderne gevel, een café met uitzicht en een ruime parkeergarage. Over de collectie zelf wordt minder gezegd. De zalen bevatten twaalf schilderijen uit de zeventiende eeuw en een wisselende tentoonstelling die nog moet worden ingericht. De directeur noemt dit \"een nieuwe vorm van gastvrijheid\". Op de website prijkt vooral het café, met een grote foto van het terras. De bezoeker die voor de kunst komt, vertrekt na een uur; de bezoeker die voor de koffie komt, blijft de hele middag."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "De gemeente heeft het weer gedaan. Na drie jaar vergaderen en een rapport van tweehonderd pagina's is besloten de nieuwe fietsbrug nog een jaar uit te stellen, voor \"nader onderzoek\". Een briljante zet: wie de brug niet bouwt, kan er ook niet over struikelen. Het onderzoek wordt uitgevoerd door hetzelfde bureau dat het vorige rapport schreef. Wie de brug zoekt, vindt voorlopig alleen een bord met de tekst \"binnenkort meer informatie\". De omwonenden, die al sinds jaar en dag omrijden, zullen de wijsheid van het bestuur ongetwijfeld waarderen.",
+   "v": "Welke tekstkenmerken tonen dat de schrijver het besluit van de gemeente bekritiseert? Noem er twee.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De ironische lof, bijvoorbeeld \"een briljante zet\" of \"de wijsheid van het bestuur\" (1p). Het spottende voorbeeld dat dezelfde bureau het vorige rapport schreef, of de sarcastische slotzin over de omwonenden (1p). Zo blijkt dat hij het niet meent en kritiek uit (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Fastfoodketens lokken kinderen met speelgoedjes naar hun filialen, en ouders worden zonder pardon overspoeld met kortingsbonnen. Deze bedrijven verdienen hun geld aan de zwakste consument: het kind dat nog niet doorheeft hoe het wordt bespeeld. Een gezonde maaltijd heeft geen speelgoedje nodig om aantrekkelijk te zijn. De ketens noemen dit \"gezellig\", maar ouders voelen zich vaak gedwongen toe te geven, want wie nee zegt, krijgt thuis een kind dat de hele terugweg om een kindermenu zeurt. Het is hoog tijd dat de politiek hier een einde aan maakt.",
+   "v": "Noem twee beladen woorden of woordgroepen uit de tekst en leg uit welk gevoel van de schrijver ze tonen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld \"lokken\" en \"zonder pardon overspoeld\" of \"bespeeld\" (1p per woord, max. 2p). Ze tonen verontwaardiging en afkeuring over de ketens (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Het nieuwe museum heeft veel te bieden: een moderne gevel, een café met uitzicht en een ruime parkeergarage. Over de collectie zelf wordt minder gezegd. De zalen bevatten twaalf schilderijen uit de zeventiende eeuw en een wisselende tentoonstelling die nog moet worden ingericht. De directeur noemt dit \"een nieuwe vorm van gastvrijheid\". Op de website prijkt vooral het café, met een grote foto van het terras. De bezoeker die voor de kunst komt, vertrekt na een uur; de bezoeker die voor de koffie komt, blijft de hele middag.",
+   "v": "Welke conclusie trek je over de opvatting van de schrijver over het museum? Geef een tekstbewijs.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij vindt dat het museum meer aandacht besteedt aan gebouw en café dan aan de kunst (1p). Bewijs: de zin dat de bezoeker die voor de kunst komt na een uur vertrekt en degene voor de koffie blijft (1p), of het contrast tussen de voorzieningen en twaalf schilderijen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Volgens het ministerie is de huisartsenzorg in de regio \"gewoon op orde\". Wie deze maand een afspraak probeerde te maken, kreeg echter te horen dat de eerstvolgende plek over zes weken vrij is. Een woordvoerder verklaarde dat het gaat om \"een tijdelijke piek\". Dezelfde piek wordt al sinds vorig jaar gemeld door huisartsen die hun patiëntenstop niet kunnen opheffen. Intussen bellen patiënten urenlang tevergeefs naar praktijken die geen nieuwe mensen meer aannemen. Het ministerie houdt vast aan zijn woorden; de praktijk spreekt ze tegen.",
+   "v": "Van wie zijn de woorden \"gewoon op orde\" en hoe maakt de schrijver zijn afstand zichtbaar?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Van het ministerie (1p). Hij gebruikt aanhalingstekens en \"volgens het ministerie\" (1p), en zet er \"echter\" en praktijkgegevens tegenover (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Volgens het ministerie is de huisartsenzorg in de regio \"gewoon op orde\". Wie deze maand een afspraak probeerde te maken, kreeg echter te horen dat de eerstvolgende plek over zes weken vrij is. Een woordvoerder verklaarde dat het gaat om \"een tijdelijke piek\". Dezelfde piek wordt al sinds vorig jaar gemeld door huisartsen die hun patiëntenstop niet kunnen opheffen. Intussen bellen patiënten urenlang tevergeefs naar praktijken die geen nieuwe mensen meer aannemen. Het ministerie houdt vast aan zijn woorden; de praktijk spreekt ze tegen.",
+   "v": "Welke conclusie over de opvatting van de schrijver past bij de laatste zin en waarom is dat bewijs sterk?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hij vindt dat het ministerie de werkelijkheid ontkent (1p). De laatste zin zet de woorden van het ministerie tegenover de praktijk (1p). Daarmee vat hij zijn oordeel samen (1p)."
+  }
+ ]
+}
