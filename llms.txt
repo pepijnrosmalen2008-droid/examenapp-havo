@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.718 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.745 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -97,6 +97,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Brieven en e-mails lezen (Engels HAVO)](https://slagio.nl/leren/havo/engels/brieven-en-e-mails-lezen.html): Je leert in Engelse brieven en e-mails het doel te herkennen, formeel en informeel taalgebruik te onderscheiden, verzoeken, afspraken en voorwaarden te vinden…
 - [Een Engelse tekst samenvatten en parafraseren (Engels HAVO)](https://slagio.nl/leren/havo/engels/een-engelse-tekst-samenvatten-en-parafraseren.html): Je leert de hoofdpunten van een Engelse tekst te kiezen, details en voorbeelden weg te laten, zinnen in eigen woorden te zeggen en te beoordelen of een…
 - [Tekstsoort en schrijfdoel bepalen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekstsoort-en-schrijfdoel-bepalen.html): Je bepaalt of een tekst of tekstgedeelte uiteenzettend, beschouwend of betogend is, wat de schrijver ermee wil bereiken en wat het belangrijkste doel is als…
+- [Onderwerp en hoofdgedachte aangeven (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/onderwerp-en-hoofdgedachte-aangeven.html): Je geeft het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte aan: letterlijk als de kernzin er staat, en in eigen woorden als de hoofdgedachte…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen

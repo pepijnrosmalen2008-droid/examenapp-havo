@@ -1,0 +1,686 @@
+{
+ "id": "A2",
+ "lo": "nl.A.2",
+ "gs": 2,
+ "naam": "Onderwerp en hoofdgedachte aangeven",
+ "beschrijving": "Je geeft het onderwerp en de hoofdgedachte van een tekst of tekstgedeelte aan: letterlijk als de kernzin er staat, en in eigen woorden als de hoofdgedachte alleen impliciet aanwezig is.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Onderwerp en hoofdgedachte onderscheiden",
+  "Een expliciete hoofdgedachte vinden",
+  "Een impliciete hoofdgedachte verwoorden",
+  "Plaats en opbouw: waar staat de kernzin",
+  "Parafraseren",
+  "Valkuilen: voorbeeld, deel en te breed"
+ ],
+ "sam": "Het onderwerp is waarover een tekst gaat, de hoofdgedachte is wat de schrijver daarover beweert. Staat de hoofdgedachte expliciet in een kernzin, dan wijs je hem aan of parafraseer je hem. Is hij impliciet, dan verwoord je hem zelf in één zin die alles samenvat wat de tekst laat zien. De kernzin staat vooraan, in het midden of aan het slot, vaak herkenbaar aan signaalwoorden als dus en kortom. Voorbeelden en details ondersteunen de hoofdgedachte, maar zijn hem niet.",
+ "begrippen": [
+  {
+   "t": "Onderwerp",
+   "d": "Waarover de tekst of het tekstgedeelte gaat, meestal in een paar woorden te noemen."
+  },
+  {
+   "t": "Hoofdgedachte",
+   "d": "De kernboodschap: wat de schrijver over het onderwerp beweert of aantoont."
+  },
+  {
+   "t": "Kernzin",
+   "d": "De zin waarin de hoofdgedachte van een tekst of alinea staat."
+  },
+  {
+   "t": "Expliciet",
+   "d": "Letterlijk in de tekst aanwezig en dus aan te wijzen."
+  },
+  {
+   "t": "Impliciet",
+   "d": "Niet letterlijk gezegd: je leidt het af uit de samenhang en verwoordt het zelf."
+  },
+  {
+   "t": "Parafraseren",
+   "d": "Een zin in andere woorden weergeven met dezelfde betekenis."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat de hoofdgedachte onderbouwt maar er niet de kern van is."
+  },
+  {
+   "t": "Deelonderwerp",
+   "d": "Een onderdeel van het onderwerp dat maar in een deel van de tekst voorkomt."
+  },
+  {
+   "t": "Alinea",
+   "d": "Een tekstdeel met een eigen kernzin of eigen hoofdpunt."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord als dus, want of kortom dat de opbouw of de conclusie aanwijst."
+  },
+  {
+   "t": "Conclusie",
+   "d": "De uitspraak waarin voorgaande gegevens uitmonden, vaak met dus."
+  },
+  {
+   "t": "Tekstopbouw",
+   "d": "De volgorde van kern, uitwerking en voorbeelden in een tekst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waarin verschilt de hoofdgedachte van het onderwerp van een tekst?",
+   "o": [
+    "de hoofdgedachte is één woord en het onderwerp een zin",
+    "de hoofdgedachte zegt wat de schrijver over het onderwerp beweert",
+    "het onderwerp is de mening van de schrijver, de hoofdgedachte het thema",
+    "er is geen verschil: beide noemen waar het over gaat"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Onderwerp = waarover; hoofdgedachte = wat de schrijver daarover zegt.",
+   "uo": [
+    "Koos je \"de hoofdgedachte is één woord en het onderwerp een...\"? Dan denk je dat de lengte het verschil bepaalt. Een onderwerp is meestal kort, maar de hoofdgedachte is de volledige boodschap over dat onderwerp.",
+    "Klopt: het onderwerp is waar de tekst over gaat, de hoofdgedachte is de kernboodschap daarover.",
+    "Koos je \"het onderwerp is de mening van de schrijver, de...\"? Dan denk je dat de begrippen zijn omgedraaid. Het onderwerp noemt alleen waarover het gaat, de hoofdgedachte bevat wat de schrijver zegt.",
+    "Koos je \"er is geen verschil: beide noemen waar het over gaat\"? Dan denk je dat het onderwerp en de hoofdgedachte hetzelfde zijn. Het onderwerp is \"verveling\", de hoofdgedachte zegt iets over verveling."
+   ],
+   "uh": "Waarover tegenover wat."
+  },
+  {
+   "v": "Welk onderwerp heeft deze tekst?",
+   "o": [
+    "creativiteit van proefpersonen",
+    "het gebruik van schermen",
+    "het gevoel van onrust bij saaie taken",
+    "verveling"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Het onderwerp is het geheel waarover de tekst gaat: verveling.",
+   "uo": [
+    "Koos je \"creativiteit van proefpersonen\"? Dan denk je dat een onderdeel het onderwerp is. De creativiteit komt alleen ter sprake als gevolg van verveling, dus het is een deelonderwerp.",
+    "Koos je \"het gebruik van schermen\"? Dan denk je dat het scherm centraal staat. Het scherm wordt eenmaal genoemd als alternatief, het is een bijzaak in de tekst.",
+    "Koos je \"het gevoel van onrust bij saaie taken\"? Dan denk je dat het onaangename gevoel het onderwerp is. Het wordt genoemd als bezwaar, het onderwerp is verveling zelf.",
+    "Klopt: de hele tekst gaat over verveling en wat die oplevert; dat is het onderwerp."
+   ],
+   "uh": "Waar gaat het over?",
+   "ctx": "Verveling heeft een slechte reputatie, maar ze is nuttiger dan we denken. Wie zich verveelt, laat zijn gedachten dwalen en komt daardoor soms op ideeën die tijdens een drukke dag nooit opkomen. Onderzoekers die proefpersonen een saaie taak lieten doen, zagen dat die achteraf creatiever waren bij een daaropvolgende opdracht. Dat betekent niet dat verveling prettig is; het gevoel is vaak onaangenaam. Toch dwingt juist dat ongemak ons om zelf iets te bedenken in plaats van het scherm te pakken. Een leven zonder enige leegte is dus niet het ideaal, want zonder verveling ontbreekt de ruimte waarin nieuwe ideeën kunnen ontstaan."
+  },
+  {
+   "v": "Welke zin geeft de hoofdgedachte van de tekst expliciet weer?",
+   "o": [
+    "de eerste zin: verveling is nuttiger dan gedacht",
+    "de zin over proefpersonen die een saaie taak kregen",
+    "de zin dat verveling vaak onaangenaam is",
+    "er staat geen zin in die de hoofdgedachte noemt"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "De hoofdgedachte staat expliciet in de eerste zin.",
+   "uo": [
+    "Klopt: de openingszin zegt wat de schrijver over verveling beweert; de rest werkt dat uit.",
+    "Koos je \"de zin over proefpersonen die een saaie taak kregen\"? Dan denk je dat de onderzoeksuitkomst de kern is. Ze dient als bewijs, de eigenlijke boodschap staat in de openingszin.",
+    "Koos je \"de zin dat verveling vaak onaangenaam is\"? Dan denk je dat dit de hoofdzaak is. Het is een bezwaar dat de schrijver erkent, maar daarna zwakt hij het af.",
+    "Koos je \"er staat geen zin in die de hoofdgedachte noemt\"? Dan denk je dat de hoofdgedachte verborgen blijft. Hij staat vooraan en wordt in de slotzin herhaald, dus hij is expliciet."
+   ],
+   "uh": "Begin en slot.",
+   "ctx": "Verveling heeft een slechte reputatie, maar ze is nuttiger dan we denken. Wie zich verveelt, laat zijn gedachten dwalen en komt daardoor soms op ideeën die tijdens een drukke dag nooit opkomen. Onderzoekers die proefpersonen een saaie taak lieten doen, zagen dat die achteraf creatiever waren bij een daaropvolgende opdracht. Dat betekent niet dat verveling prettig is; het gevoel is vaak onaangenaam. Toch dwingt juist dat ongemak ons om zelf iets te bedenken in plaats van het scherm te pakken. Een leven zonder enige leegte is dus niet het ideaal, want zonder verveling ontbreekt de ruimte waarin nieuwe ideeën kunnen ontstaan."
+  },
+  {
+   "v": "Op welke plaats in de tekst staat de kernzin?",
+   "o": [
+    "vooraan, in de eerste zin",
+    "in het midden, bij de zin over de appjes",
+    "aan het slot, met \"dus\" als conclusie",
+    "er is geen kernzin in deze tekst"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "De kernzin kan aan het slot staan, herkenbaar aan \"dus\".",
+   "uo": [
+    "Koos je \"vooraan, in de eerste zin\"? Dan denk je dat de openingszin altijd de kernzin is. Hier noemt hij alleen een situatie op school, de kern volgt pas aan het eind.",
+    "Koos je \"in het midden, bij de zin over de appjes\"? Dan denk je dat het voorbeeld de kern is. Het voorbeeld laat zien dat dialect leeft, de conclusie staat in de slotzin.",
+    "Klopt: de laatste zin trekt met \"dus\" de conclusie uit de voorgaande zinnen en bevat de hoofdgedachte.",
+    "Koos je \"er is geen kernzin in deze tekst\"? Dan denk je dat een tekst zonder opening geen kernzin heeft. De kernzin staat hier achteraan, herkenbaar aan \"dus\"."
+   ],
+   "uh": "Let op \"dus\".",
+   "ctx": "Op school leren kinderen de standaardtaal, maar thuis spreken veel van hen nog een dialect. Dat dialect wordt vaak gezien als een overblijfsel uit het verleden, dat vanzelf zal verdwijnen. Toch ontstaan er voortdurend nieuwe woorden en uitdrukkingen in streektalen, bijvoorbeeld door jongeren die ze gebruiken in appjes en filmpjes. In sommige regio's krijgen kinderen zelfs op de basisschool les in de streektaal. Ook taalkundigen die taalverandering bestuderen, zien dat dialecten meebewegen met hun sprekers en niet stilstaan. Dialect is dus geen achterhaald restant, maar een levende vorm van taal."
+  },
+  {
+   "v": "Hoe heet het weergeven van een zin in andere woorden met dezelfde betekenis?",
+   "o": [
+    "citeren",
+    "samenvatten",
+    "parafraseren",
+    "interpreteren"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Parafraseren: dezelfde inhoud, andere woorden.",
+   "uo": [
+    "Koos je \"citeren\"? Dan denk je dat een zin overnemen hetzelfde is. Bij citeren gebruik je de woorden van de schrijver, bij parafraseren gebruik je eigen woorden.",
+    "Koos je \"samenvatten\"? Dan denk je dat het inkorten van de hele tekst bedoeld wordt. Parafraseren houdt de betekenis van één zin vast, samenvatten reduceert tot de hoofdpunten.",
+    "Klopt: parafraseren is dezelfde inhoud in eigen woorden zeggen, zonder iets toe te voegen of weg te laten.",
+    "Koos je \"interpreteren\"? Dan denk je dat je er je eigen betekenis aan geeft. Parafraseren voegt niets toe, de inhoud blijft gelijk."
+   ],
+   "uh": "Andere woorden."
+  },
+  {
+   "v": "Staat de hoofdgedachte van deze tekst letterlijk in een zin?",
+   "o": [
+    "nee: je verwoordt hem zelf uit de tekstgegevens",
+    "ja, in de eerste zin over de verdwijning van kranten",
+    "ja, in de zin over de nieuwsbrief van de gemeente",
+    "ja, in de zin over minder mensen die gaan stemmen"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Zonder kernzin is de hoofdgedachte impliciet: verwoord hem zelf.",
+   "uo": [
+    "Klopt: er is geen zin die de kernboodschap noemt; de hoofdgedachte is impliciet en volgt uit de samenhang.",
+    "Koos je \"ja, in de eerste zin over de verdwijning van kranten\"? Dan denk je dat de openingszin de hoofdgedachte bevat. Hij meldt alleen een feit, de boodschap over de gevolgen volgt uit de hele tekst.",
+    "Koos je \"ja, in de zin over de nieuwsbrief van de gemeente\"? Dan denk je dat de slotzin de kern is. Hij beschrijft een poging tot oplossing, niet de hoofdgedachte.",
+    "Koos je \"ja, in de zin over minder mensen die gaan stemmen\"? Dan denk je dat deze zin alles samenvat. Hij noemt één gevolg, de hoofdgedachte omvat meer dan dat gevolg."
+   ],
+   "uh": "Zelf verwoorden.",
+   "ctx": "In veel landen zijn lokale kranten de afgelopen decennia verdwenen of samengevoegd met grotere bladen. Waar een lokale redactie sluit, besteedt niemand nog structureel aandacht aan de gemeenteraad. Raadsvergaderingen worden niet meer verslagen, wethouders krijgen minder kritische vragen en kleine schandalen blijven onopgemerkt. Onderzoek uit verschillende landen suggereert bovendien dat in gemeenten zonder lokale krant minder mensen gaan stemmen. Sommige gemeenten proberen het gat te vullen met een eigen nieuwsbrief, maar die wordt geschreven door het gemeentebestuur zelf."
+  },
+  {
+   "v": "Waarom is \"het gaat over verveling\" onvoldoende als weergave van een hoofdgedachte?",
+   "o": [
+    "omdat een hoofdgedachte altijd uit minstens twee zinnen moet bestaan",
+    "omdat verveling geen onderwerp van een tekst kan zijn",
+    "omdat de hoofdgedachte altijd een voorbeeld moet noemen",
+    "het noemt alleen het onderwerp, niet wat de schrijver beweert"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Te breed: alleen het onderwerp, zonder boodschap.",
+   "uo": [
+    "Koos je \"omdat een hoofdgedachte altijd uit minstens twee...\"? Dan denk je dat de lengte de eis is. Eén goede zin kan voldoende zijn, als hij maar een boodschap bevat.",
+    "Koos je \"omdat verveling geen onderwerp van een tekst kan...\"? Dan denk je dat het onderwerp niet geschikt is. Verveling is een prima onderwerp, maar het is nog geen hoofdgedachte.",
+    "Koos je \"omdat de hoofdgedachte altijd een voorbeeld moet...\"? Dan denk je dat voorbeelden verplicht zijn. Voorbeelden ondersteunen de hoofdgedachte, ze zijn er niet de kern van.",
+    "Klopt: een hoofdgedachte bevat een uitspraak over het onderwerp; alleen het onderwerp noemen is te breed."
+   ],
+   "uh": "Onderwerp is niet genoeg."
+  },
+  {
+   "v": "Welke formulering geeft de hoofdgedachte juist weer?",
+   "o": [
+    "verveling is onprettig en moet je dus vermijden",
+    "verveling is nuttig, want ze geeft ruimte voor nieuwe ideeën",
+    "onderzoekers lieten proefpersonen een saaie taak doen",
+    "schermen zijn de belangrijkste oorzaak van verveling bij mensen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Hoofdgedachte: verveling is nuttig, want ze maakt ruimte voor ideeën.",
+   "uo": [
+    "Koos je \"verveling is onprettig en moet je dus vermijden\"? Dan denk je dat het onaangename gevoel de kern is. Dat noemt de schrijver juist als bezwaar, de conclusie is het tegendeel.",
+    "Klopt: deze zin bevat zowel de bewering als de reden uit de tekst.",
+    "Koos je \"onderzoekers lieten proefpersonen een saaie taak...\"? Dan denk je dat het voorbeeld de kern is. Het onderzoek dient als bewijs, het is niet de boodschap zelf.",
+    "Koos je \"schermen zijn de belangrijkste oorzaak van...\"? Dan denk je dat de schrijver schermen als oorzaak noemt. De tekst noemt het scherm alleen als vluchtweg, niet als oorzaak."
+   ],
+   "uh": "Bewering plus reden.",
+   "ctx": "Verveling heeft een slechte reputatie, maar ze is nuttiger dan we denken. Wie zich verveelt, laat zijn gedachten dwalen en komt daardoor soms op ideeën die tijdens een drukke dag nooit opkomen. Onderzoekers die proefpersonen een saaie taak lieten doen, zagen dat die achteraf creatiever waren bij een daaropvolgende opdracht. Dat betekent niet dat verveling prettig is; het gevoel is vaak onaangenaam. Toch dwingt juist dat ongemak ons om zelf iets te bedenken in plaats van het scherm te pakken. Een leven zonder enige leegte is dus niet het ideaal, want zonder verveling ontbreekt de ruimte waarin nieuwe ideeën kunnen ontstaan."
+  },
+  {
+   "v": "Welke formulering geeft de impliciete hoofdgedachte juist weer?",
+   "o": [
+    "gemeenten moeten zelf een eigen nieuwsbrief gaan uitgeven",
+    "lokale kranten zijn de afgelopen decennia verdwenen of samengevoegd",
+    "raadsvergaderingen worden niet meer verslagen",
+    "het verdwijnen van lokale kranten bedreigt de democratie"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Impliciet: verwoord wat alle gegevens samen aantonen.",
+   "uo": [
+    "Koos je \"gemeenten moeten zelf een eigen nieuwsbrief gaan...\"? Dan denk je dat de nieuwsbrief de oplossing is. De tekst noemt hem als onvoldoende poging, niet als aanbeveling.",
+    "Koos je \"lokale kranten zijn de afgelopen decennia verdwenen...\"? Dan denk je dat het openingsfeit de kern is. Het feit is de aanleiding, de hoofdgedachte gaat over de gevolgen daarvan.",
+    "Koos je \"raadsvergaderingen worden niet meer verslagen\"? Dan denk je dat dit detail de kern is. Het is één van de gevolgen, de hoofdgedachte omvat ze allemaal.",
+    "Klopt: deze zin vat samen wat de gegevens samen laten zien: minder controle en minder betrokkenheid."
+   ],
+   "uh": "Wat tonen de gegevens samen?",
+   "ctx": "In veel landen zijn lokale kranten de afgelopen decennia verdwenen of samengevoegd met grotere bladen. Waar een lokale redactie sluit, besteedt niemand nog structureel aandacht aan de gemeenteraad. Raadsvergaderingen worden niet meer verslagen, wethouders krijgen minder kritische vragen en kleine schandalen blijven onopgemerkt. Onderzoek uit verschillende landen suggereert bovendien dat in gemeenten zonder lokale krant minder mensen gaan stemmen. Sommige gemeenten proberen het gat te vullen met een eigen nieuwsbrief, maar die wordt geschreven door het gemeentebestuur zelf."
+  },
+  {
+   "v": "Welk onderwerp heeft deze tekst?",
+   "o": [
+    "gezonde voeding op scholen en in kantines",
+    "nudges: subtiel sturen van gedrag",
+    "pensioensparen als standaardkeuze",
+    "manipulatie van mensen door bedrijven"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Voorbeelden illustreren, het onderwerp omvat ze allemaal.",
+   "uo": [
+    "Koos je \"gezonde voeding op scholen en in kantines\"? Dan denk je dat de kantine het onderwerp is. De kantine is slechts het eerste voorbeeld, de tekst gaat over nudges in het algemeen.",
+    "Klopt: alle voorbeelden en meningen gaan over nudges; dat is het onderwerp.",
+    "Koos je \"pensioensparen als standaardkeuze\"? Dan denk je dat het sparen het thema is. Het is een tweede voorbeeld, het is geen onderwerp op zichzelf.",
+    "Koos je \"manipulatie van mensen door bedrijven\"? Dan denk je dat de kritiek het onderwerp is. Manipulatie noemen alleen de critici, het onderwerp is breder."
+   ],
+   "uh": "Het geheel.",
+   "ctx": "In sommige schoolkantines liggen de gezonde producten op ooghoogte en het snoep onderin. Er is niets verboden, maar leerlingen kiezen vaker voor fruit. Gedragswetenschappers noemen zo'n subtiele duw een nudge. De overheid en bedrijven gebruiken nudges steeds vaker, bijvoorbeeld door pensioensparen als standaardkeuze in te stellen, zodat mensen zich actief moeten afmelden. Voorstanders zeggen dat nudges mensen helpen betere keuzes te maken zonder hun vrijheid te beperken. Critici vinden dat het sturen van gedrag zonder dat mensen het merken een vorm van manipulatie is, en dat de overheid daar terughoudend mee moet zijn."
+  },
+  {
+   "v": "Waarom staat de hoofdgedachte van deze tekst niet in de eerste zin?",
+   "o": [
+    "omdat de eerste zin van een tekst altijd alleen een inleiding is",
+    "omdat de hoofdgedachte vooraan niet mag staan",
+    "de eerste zin geeft een voorbeeld dat later wordt veralgemeend",
+    "omdat de eerste zin over de schrijver gaat"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Een openingsvoorbeeld is niet de hoofdgedachte.",
+   "uo": [
+    "Koos je \"omdat de eerste zin van een tekst altijd alleen een...\"? Dan denk je dat de eerste zin nooit de kern bevat. Soms doet hij dat wel, hier is hij een voorbeeld.",
+    "Koos je \"omdat de hoofdgedachte vooraan niet mag staan\"? Dan denk je dat de plaats verboden is. Teksten mogen vooraan beginnen, deze doet dat niet.",
+    "Klopt: de kantine illustreert; pas daarna volgt wat nudges zijn en wat er over wordt gezegd.",
+    "Koos je \"omdat de eerste zin over de schrijver gaat\"? Dan denk je dat de zin iets over de schrijver zegt. Hij beschrijft een kantine, dat is een voorbeeld."
+   ],
+   "uh": "Voorbeeld eerst.",
+   "ctx": "In sommige schoolkantines liggen de gezonde producten op ooghoogte en het snoep onderin. Er is niets verboden, maar leerlingen kiezen vaker voor fruit. Gedragswetenschappers noemen zo'n subtiele duw een nudge. De overheid en bedrijven gebruiken nudges steeds vaker, bijvoorbeeld door pensioensparen als standaardkeuze in te stellen, zodat mensen zich actief moeten afmelden. Voorstanders zeggen dat nudges mensen helpen betere keuzes te maken zonder hun vrijheid te beperken. Critici vinden dat het sturen van gedrag zonder dat mensen het merken een vorm van manipulatie is, en dat de overheid daar terughoudend mee moet zijn."
+  },
+  {
+   "v": "Hoe is deze tekst opgebouwd?",
+   "o": [
+    "eerst waarnemingen, daarna de conclusie aan het slot",
+    "eerst de hoofdgedachte, daarna de uitwerking met voorbeelden",
+    "alleen een opsomming zonder hoofdgedachte",
+    "de hoofdgedachte staat in het midden"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Deductief tegenover inductief: hier voorbeelden eerst, conclusie laatst.",
+   "uo": [
+    "Klopt: de schrijver gaat van voorbeelden en waarnemingen naar de conclusie met \"dus\".",
+    "Koos je \"eerst de hoofdgedachte, daarna de uitwerking met...\"? Dan denk je dat de tekst begint met de kern. De openingszin beschrijft alleen een situatie, de kern komt pas aan het eind.",
+    "Koos je \"alleen een opsomming zonder hoofdgedachte\"? Dan denk je dat de zinnen los naast elkaar staan. Ze werken toe naar een conclusie, de slotzin met \"dus\".",
+    "Koos je \"de hoofdgedachte staat in het midden\"? Dan denk je dat de zin over de appjes de kern is. Hij is een voorbeeld, de kern is de slotzin."
+   ],
+   "uh": "Waar eindigt de redenering?",
+   "ctx": "Op school leren kinderen de standaardtaal, maar thuis spreken veel van hen nog een dialect. Dat dialect wordt vaak gezien als een overblijfsel uit het verleden, dat vanzelf zal verdwijnen. Toch ontstaan er voortdurend nieuwe woorden en uitdrukkingen in streektalen, bijvoorbeeld door jongeren die ze gebruiken in appjes en filmpjes. In sommige regio's krijgen kinderen zelfs op de basisschool les in de streektaal. Ook taalkundigen die taalverandering bestuderen, zien dat dialecten meebewegen met hun sprekers en niet stilstaan. Dialect is dus geen achterhaald restant, maar een levende vorm van taal."
+  },
+  {
+   "v": "Welke weergave van \"Dat betekent niet dat verveling prettig is\" is een goede parafrase?",
+   "o": [
+    "dat verveling nuttig is, wil niet zeggen dat ze prettig is",
+    "verveling is dus altijd prettig",
+    "verveling is nuttig, juist omdat ze zo prettig aanvoelt",
+    "wie zich verveelt, is dus niet nuttig bezig met zijn tijd"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Een parafrase behoudt de betekenis, inclusief de ontkenning.",
+   "uo": [
+    "Klopt: dezelfde betekenis in andere woorden, zonder iets toe te voegen of weg te laten.",
+    "Koos je \"verveling is dus altijd prettig\"? Dan denk je dat de ontkenning wegvalt. De zin zegt juist dat het niet prettig is, dus je verandert de betekenis.",
+    "Koos je \"verveling is nuttig, juist omdat ze zo prettig...\"? Dan denk je dat nut en genot samenhangen. De tekst zegt het tegenovergestelde, het nut komt ondanks het ongemak.",
+    "Koos je \"wie zich verveelt, is dus niet nuttig bezig met...\"? Dan denk je dat de zin over de persoon gaat. Hij gaat over het gevoel, niet over de nuttigheid van de persoon."
+   ],
+   "uh": "Zelfde betekenis.",
+   "ctx": "Verveling heeft een slechte reputatie, maar ze is nuttiger dan we denken. Wie zich verveelt, laat zijn gedachten dwalen en komt daardoor soms op ideeën die tijdens een drukke dag nooit opkomen. Onderzoekers die proefpersonen een saaie taak lieten doen, zagen dat die achteraf creatiever waren bij een daaropvolgende opdracht. Dat betekent niet dat verveling prettig is; het gevoel is vaak onaangenaam. Toch dwingt juist dat ongemak ons om zelf iets te bedenken in plaats van het scherm te pakken. Een leven zonder enige leegte is dus niet het ideaal, want zonder verveling ontbreekt de ruimte waarin nieuwe ideeën kunnen ontstaan."
+  },
+  {
+   "v": "Welke zin is de kernzin van deze alinea?",
+   "o": [
+    "de eerste: de polders ontstonden doordat water werd weggepompt",
+    "de tweede: de duinen worden beheerd",
+    "de laatste: wat wij natuur noemen, is vaak cultuurlandschap",
+    "de derde: zelfs de heide is door mensen gemaakt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kernzin = de zin waarin de voorbeelden uitmonden.",
+   "uo": [
+    "Koos je \"de eerste: de polders ontstonden doordat water werd...\"? Dan denk je dat de eerste zin de kern is. Hij is het eerste voorbeeld, de kern volgt na de voorbeelden.",
+    "Koos je \"de tweede: de duinen worden beheerd\"? Dan denk je dat het duinvoorbeeld de kern is. Het is een tweede voorbeeld, geen conclusie.",
+    "Klopt: de voorbeelden over polders, duinen en heide leiden naar deze conclusie.",
+    "Koos je \"de derde: zelfs de heide is door mensen gemaakt\"? Dan denk je dat het sterkste voorbeeld de kern is. Het is nog steeds een voorbeeld, de kern is de conclusie met \"dus\"."
+   ],
+   "uh": "Waar leiden de voorbeelden heen?",
+   "ctx": "De polders ontstonden doordat water werd weggepompt. De duinen worden beheerd om de kust te beschermen. Zelfs de heide is het resultaat van eeuwenlang grazen door schaapskuddes. Wat wij natuur noemen, is dus vaak cultuurlandschap."
+  },
+  {
+   "v": "De hoofdgedachte staat niet letterlijk in de tekst. Hoe vind je hem dan?",
+   "o": [
+    "door de eerste zin van de tekst letterlijk over te nemen",
+    "door de gegevens samen in één eigen zin te verwoorden",
+    "door de langste zin van de tekst te kiezen",
+    "door te raden wat de schrijver prettig vindt"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Impliciete hoofdgedachte: verwoord wat de gegevens samen laten zien.",
+   "uo": [
+    "Koos je \"door de eerste zin van de tekst letterlijk over te...\"? Dan denk je dat de eerste zin altijd de kern is. Zonder kernzin bevat hij meestal alleen een feit, dus neem je hem niet over.",
+    "Klopt: je zoekt wat de gegevens samen aantonen en schrijft dat zelf op als bewering.",
+    "Koos je \"door de langste zin van de tekst te kiezen\"? Dan denk je dat lengte de kern verraadt. Een lange zin kan een detail bevatten, de kern vraagt samenhang.",
+    "Koos je \"door te raden wat de schrijver prettig vindt\"? Dan denk je dat de hoofdgedachte een gevoel is. Je baseert je op wat in de tekst staat, niet op een gok."
+   ],
+   "uh": "Zelf samenvatten."
+  },
+  {
+   "v": "Een leerling noemt als hoofdgedachte: \"verveling is onprettig\". Wat klopt er niet?",
+   "o": [
+    "er klopt niets niet: dit is de volledige kern van de tekst",
+    "de leerling had \"verveling is verboden\" moeten noemen als kern",
+    "de leerling had alleen het onderwerp moeten noemen",
+    "dat is één deel: de tekst zegt dat verveling toch nuttig is"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Een half beeld: het bezwaar telt mee, maar de kern is het nut.",
+   "uo": [
+    "Koos je \"er klopt niets niet: dit is de volledige kern van...\"? Dan denk je dat de eerste kant de hele tekst dekt. De schrijver noemt dit als bezwaar, het gaat juist om wat daartegenover staat.",
+    "Koos je \"de leerling had verveling is verboden moeten noemen...\"? Dan denk je dat het verbieden in de tekst staat. Er is geen sprake van een verbod, het gaat om het nut.",
+    "Koos je \"de leerling had alleen het onderwerp moeten noemen\"? Dan denk je dat het onderwerp als hoofdgedachte volstaat. Een hoofdgedachte bevat een bewering, geen kaal onderwerp.",
+    "Klopt: de schrijver erkent het ongemak, maar zijn kern is dat verveling toch waardevol is."
+   ],
+   "uh": "Kern is het nut.",
+   "ctx": "Verveling heeft een slechte reputatie, maar ze is nuttiger dan we denken. Wie zich verveelt, laat zijn gedachten dwalen en komt daardoor soms op ideeën die tijdens een drukke dag nooit opkomen. Onderzoekers die proefpersonen een saaie taak lieten doen, zagen dat die achteraf creatiever waren bij een daaropvolgende opdracht. Dat betekent niet dat verveling prettig is; het gevoel is vaak onaangenaam. Toch dwingt juist dat ongemak ons om zelf iets te bedenken in plaats van het scherm te pakken. Een leven zonder enige leegte is dus niet het ideaal, want zonder verveling ontbreekt de ruimte waarin nieuwe ideeën kunnen ontstaan."
+  },
+  {
+   "v": "Welke weergave van de slotzin is een goede parafrase?",
+   "o": [
+    "dialecten zijn vroeger belangrijker geweest dan ze nu zijn",
+    "dialecten verdwijnen niet maar leven en veranderen mee",
+    "dialecten zijn oud en moeten worden bewaard",
+    "dialecten zijn inmiddels de standaardtaal geworden"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Levende vorm van taal: ze veranderen mee en verdwijnen niet vanzelf.",
+   "uo": [
+    "Koos je \"dialecten zijn vroeger belangrijker geweest dan ze...\"? Dan denk je dat de zin over het verleden gaat. De slotzin ontkent juist het achterhaald zijn, dus je kantelt de betekenis.",
+    "Klopt: dezelfde betekenis: geen restant, maar iets dat leeft en verandert.",
+    "Koos je \"dialecten zijn oud en moeten worden bewaard\"? Dan denk je dat de schrijver wil behouden. De tekst stelt vast dat ze leven, hij doet geen oproep tot bewaren.",
+    "Koos je \"dialecten zijn inmiddels de standaardtaal geworden\"? Dan denk je dat levend gelijkstaat aan standaard. De tekst zegt alleen dat dialecten veranderen, niet dat ze standaardtaal zijn."
+   ],
+   "uh": "Zelfde boodschap.",
+   "ctx": "Op school leren kinderen de standaardtaal, maar thuis spreken veel van hen nog een dialect. Dat dialect wordt vaak gezien als een overblijfsel uit het verleden, dat vanzelf zal verdwijnen. Toch ontstaan er voortdurend nieuwe woorden en uitdrukkingen in streektalen, bijvoorbeeld door jongeren die ze gebruiken in appjes en filmpjes. In sommige regio's krijgen kinderen zelfs op de basisschool les in de streektaal. Ook taalkundigen die taalverandering bestuderen, zien dat dialecten meebewegen met hun sprekers en niet stilstaan. Dialect is dus geen achterhaald restant, maar een levende vorm van taal."
+  },
+  {
+   "v": "Welke weergave van de hoofdgedachte is volledig en niet te smal of te breed?",
+   "o": [
+    "nudges sturen gedrag zonder verbod, maar zijn omstreden",
+    "nudges helpen leerlingen in kantines gezonder te eten",
+    "nudges zijn een vorm van manipulatie",
+    "de overheid gebruikt nudges onder meer voor pensioensparen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Hoofdgedachte: verschijnsel plus de kern van de discussie.",
+   "uo": [
+    "Klopt: deze zin bevat het verschijnsel én de kern van de discussie: voor- en tegenstanders.",
+    "Koos je \"nudges helpen leerlingen in kantines gezonder te...\"? Dan denk je dat het kantinevoorbeeld de hele tekst dekt. Het is één toepassing, de tekst gaat veel breder.",
+    "Koos je \"nudges zijn een vorm van manipulatie\"? Dan denk je dat de kritiek de hele tekst dekt. Voorstanders komen ook aan het woord, dus dit is te eenzijdig.",
+    "Koos je \"de overheid gebruikt nudges onder meer voor...\"? Dan denk je dat de pensioenkeuze de kern is. Het is een voorbeeld van toepassing, niet de boodschap."
+   ],
+   "uh": "Geheel, niet één deel.",
+   "ctx": "In sommige schoolkantines liggen de gezonde producten op ooghoogte en het snoep onderin. Er is niets verboden, maar leerlingen kiezen vaker voor fruit. Gedragswetenschappers noemen zo'n subtiele duw een nudge. De overheid en bedrijven gebruiken nudges steeds vaker, bijvoorbeeld door pensioensparen als standaardkeuze in te stellen, zodat mensen zich actief moeten afmelden. Voorstanders zeggen dat nudges mensen helpen betere keuzes te maken zonder hun vrijheid te beperken. Critici vinden dat het sturen van gedrag zonder dat mensen het merken een vorm van manipulatie is, en dat de overheid daar terughoudend mee moet zijn."
+  },
+  {
+   "v": "Een leerling zegt: \"De hoofdgedachte staat in de laatste zin.\" Wat is jouw oordeel?",
+   "o": [
+    "juist: de laatste zin sluit de tekst af en bevat dus altijd de kern",
+    "juist: de critici hebben het laatste woord",
+    "onjuist: de hoofdgedachte staat in de eerste zin",
+    "onjuist: de slotzin geeft alleen de kritiek van de critici"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "De slotzin is hier maar een deel van de kern.",
+   "uo": [
+    "Koos je \"juist: de laatste zin sluit de tekst af en bevat...\"? Dan denk je dat de slotzin altijd de kern is. Hier bevat hij een deel van de discussie, niet het geheel.",
+    "Koos je \"juist: de critici hebben het laatste woord\"? Dan denk je dat het laatste woord gelijkstaat aan de hoofdgedachte. De schrijver kiest niet, dus de kern omvat ook de voorstanders.",
+    "Koos je \"onjuist: de hoofdgedachte staat in de eerste zin\"? Dan denk je dat de openingszin de kern bevat. Hij geeft een voorbeeld, dat later wordt veralgemeend.",
+    "Klopt: de slotzin bevat alleen de visie van de critici; de hoofdgedachte omvat beide kanten."
+   ],
+   "uh": "Kies je het geheel?",
+   "ctx": "In sommige schoolkantines liggen de gezonde producten op ooghoogte en het snoep onderin. Er is niets verboden, maar leerlingen kiezen vaker voor fruit. Gedragswetenschappers noemen zo'n subtiele duw een nudge. De overheid en bedrijven gebruiken nudges steeds vaker, bijvoorbeeld door pensioensparen als standaardkeuze in te stellen, zodat mensen zich actief moeten afmelden. Voorstanders zeggen dat nudges mensen helpen betere keuzes te maken zonder hun vrijheid te beperken. Critici vinden dat het sturen van gedrag zonder dat mensen het merken een vorm van manipulatie is, en dat de overheid daar terughoudend mee moet zijn."
+  },
+  {
+   "v": "Een leerling schrijft: \"De overheid moet lokale kranten redden.\" Waarom is dat geen goede hoofdgedachte?",
+   "o": [
+    "omdat het te weinig details bevat om de tekst te dekken",
+    "omdat de overheid in de tekst een tegenstander is",
+    "de tekst noemt geen oplossing, alleen een bedreiging",
+    "omdat lokale kranten niet in de tekst voorkomen"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Voeg niets toe: de hoofdgedachte volgt alleen uit de tekst.",
+   "uo": [
+    "Koos je \"omdat het te weinig details bevat om de tekst te...\"? Dan denk je dat details nodig zijn. Het probleem is niet de omvang, maar dat de zin iets toevoegt dat de tekst niet zegt.",
+    "Koos je \"omdat de overheid in de tekst een tegenstander is\"? Dan denk je dat de tekst kritiek op de overheid uit. De overheid komt niet voor, de leerling voegt haar toe.",
+    "Klopt: een aanbeveling die er niet staat is een toevoeging; de hoofdgedachte volgt uit wat de tekst zegt.",
+    "Koos je \"omdat lokale kranten niet in de tekst voorkomen\"? Dan denk je dat het onderwerp ontbreekt. De kranten staan centraal, de aanbeveling komt van de leerling."
+   ],
+   "uh": "Staat het in de tekst?",
+   "ctx": "In veel landen zijn lokale kranten de afgelopen decennia verdwenen of samengevoegd met grotere bladen. Waar een lokale redactie sluit, besteedt niemand nog structureel aandacht aan de gemeenteraad. Raadsvergaderingen worden niet meer verslagen, wethouders krijgen minder kritische vragen en kleine schandalen blijven onopgemerkt. Onderzoek uit verschillende landen suggereert bovendien dat in gemeenten zonder lokale krant minder mensen gaan stemmen. Sommige gemeenten proberen het gat te vullen met een eigen nieuwsbrief, maar die wordt geschreven door het gemeentebestuur zelf."
+  },
+  {
+   "v": "De hoofdgedachte staat in de eerste én in de laatste zin. Wat voegt de slotzin toe?",
+   "o": [
+    "niets: ze herhaalt alleen de eerste zin letterlijk, zonder reden",
+    "een nieuw onderwerp: het ideale leven",
+    "ze geeft de reden: zonder verveling geen ruimte voor ideeën",
+    "een tegenwerping: verveling is vervelend"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "De slotzin met \"want\" geeft de reden bij de hoofdgedachte.",
+   "uo": [
+    "Koos je \"niets: ze herhaalt alleen de eerste zin letterlijk,...\"? Dan denk je dat een herhaling geen nieuwe informatie geeft. De slotzin voegt met \"want\" een reden toe, dus hij is meer dan een herhaling.",
+    "Koos je \"een nieuw onderwerp: het ideale leven\"? Dan denk je dat het ideale leven nieuw is. Het sluit aan op het nut van verveling, het onderwerp blijft verveling.",
+    "Klopt: de slotzin herhaalt de bewering en onderbouwt hem met \"want zonder verveling ontbreekt...\".",
+    "Koos je \"een tegenwerping: verveling is vervelend\"? Dan denk je dat de slotzin het bezwaar noemt. Het bezwaar staat eerder in de tekst, de slotzin geeft de reden voor het nut."
+   ],
+   "uh": "Let op \"want\".",
+   "ctx": "Verveling heeft een slechte reputatie, maar ze is nuttiger dan we denken. Wie zich verveelt, laat zijn gedachten dwalen en komt daardoor soms op ideeën die tijdens een drukke dag nooit opkomen. Onderzoekers die proefpersonen een saaie taak lieten doen, zagen dat die achteraf creatiever waren bij een daaropvolgende opdracht. Dat betekent niet dat verveling prettig is; het gevoel is vaak onaangenaam. Toch dwingt juist dat ongemak ons om zelf iets te bedenken in plaats van het scherm te pakken. Een leven zonder enige leegte is dus niet het ideaal, want zonder verveling ontbreekt de ruimte waarin nieuwe ideeën kunnen ontstaan."
+  },
+  {
+   "v": "Welke parafrase van de tweede zin klopt?",
+   "o": [
+    "dialect is een overblijfsel dat zorgvuldig bewaard moet worden",
+    "de schrijver vindt dat dialect uit het verleden komt en verdwijnt",
+    "dialect is nuttig omdat het uit het verleden komt",
+    "veel mensen denken dat dialect een oud restant is dat verdwijnt"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Let op wiens mening een zin weergeeft: \"vaak gezien als\" is niet die van de schrijver.",
+   "uo": [
+    "Koos je \"dialect is een overblijfsel dat zorgvuldig bewaard...\"? Dan denk je dat de zin een oproep tot behoud is. Hij beschrijft een opvatting, de oproep staat er niet.",
+    "Koos je \"de schrijver vindt dat dialect uit het verleden...\"? Dan denk je dat de schrijver zijn eigen mening geeft. Hij geeft die van anderen weer, en bestrijdt haar.",
+    "Koos je \"dialect is nuttig omdat het uit het verleden komt\"? Dan denk je dat herkomst het nut verklaart. De zin zegt dat het verleden juist een reden is om het weg te zetten, niet om het te waarderen.",
+    "Klopt: de zin geeft de mening van anderen weer (\"vaak gezien als\"), die de schrijver daarna ontkracht."
+   ],
+   "uh": "Wie vindt dit?",
+   "ctx": "Op school leren kinderen de standaardtaal, maar thuis spreken veel van hen nog een dialect. Dat dialect wordt vaak gezien als een overblijfsel uit het verleden, dat vanzelf zal verdwijnen. Toch ontstaan er voortdurend nieuwe woorden en uitdrukkingen in streektalen, bijvoorbeeld door jongeren die ze gebruiken in appjes en filmpjes. In sommige regio's krijgen kinderen zelfs op de basisschool les in de streektaal. Ook taalkundigen die taalverandering bestuderen, zien dat dialecten meebewegen met hun sprekers en niet stilstaan. Dialect is dus geen achterhaald restant, maar een levende vorm van taal."
+  },
+  {
+   "v": "Welke combinatie van onderwerp en hoofdgedachte klopt?",
+   "o": [
+    "onderwerp: nudges; hoofdgedachte: sturen zonder verbod, omstreden",
+    "onderwerp: nudges sturen zonder verbod; hoofdgedachte: nudges zelf",
+    "onderwerp: de schoolkantine; hoofdgedachte: gezond eten",
+    "onderwerp en hoofdgedachte: beide \"nudges\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Onderwerp: nudges. Hoofdgedachte: wat de tekst over nudges zegt.",
+   "uo": [
+    "Klopt: het onderwerp is het geheel waarover het gaat, de hoofdgedachte zegt daar iets over.",
+    "Koos je \"onderwerp: nudges sturen zonder verbod;...\"? Dan denk je dat de twee zijn verwisseld. Het onderwerp is kort, de hoofdgedachte bevat de uitspraak, dus je draait ze om.",
+    "Koos je \"onderwerp: de schoolkantine; hoofdgedachte: gezond...\"? Dan denk je dat het openingsvoorbeeld het onderwerp is. De kantine is een voorbeeld, de tekst is breder.",
+    "Koos je \"onderwerp en hoofdgedachte: beide nudges\"? Dan denk je dat ze samenvallen. De hoofdgedachte bevat een uitspraak over het onderwerp, dus ze verschillen."
+   ],
+   "uh": "Waarover en wat.",
+   "ctx": "In sommige schoolkantines liggen de gezonde producten op ooghoogte en het snoep onderin. Er is niets verboden, maar leerlingen kiezen vaker voor fruit. Gedragswetenschappers noemen zo'n subtiele duw een nudge. De overheid en bedrijven gebruiken nudges steeds vaker, bijvoorbeeld door pensioensparen als standaardkeuze in te stellen, zodat mensen zich actief moeten afmelden. Voorstanders zeggen dat nudges mensen helpen betere keuzes te maken zonder hun vrijheid te beperken. Critici vinden dat het sturen van gedrag zonder dat mensen het merken een vorm van manipulatie is, en dat de overheid daar terughoudend mee moet zijn."
+  },
+  {
+   "v": "Waarom staat de kernzin van deze alinea pas aan het eind?",
+   "o": [
+    "omdat een alinea altijd met enkele voorbeelden moet beginnen",
+    "de voorbeelden komen eerst en leiden naar de conclusie",
+    "omdat de laatste zin altijd de kernzin is",
+    "omdat de alinea geen kernzin heeft"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Voorbeelden eerst en conclusie laatst: de kernzin staat aan het eind.",
+   "uo": [
+    "Koos je \"omdat een alinea altijd met enkele voorbeelden moet...\"? Dan denk je dat voorbeelden altijd vooraan staan. Veel alinea's beginnen juist met de kern, dit is een andere volgorde.",
+    "Klopt: de schrijver bouwt op van voorbeelden naar een algemene uitspraak; \"dus\" markeert de conclusie.",
+    "Koos je \"omdat de laatste zin altijd de kernzin is\"? Dan denk je dat de slotzin altijd de kern is. Dat hangt van de opbouw af, hier is het zo vanwege \"dus\".",
+    "Koos je \"omdat de alinea geen kernzin heeft\"? Dan denk je dat de zin aan het eind een gewone zin is. Hij is de conclusie, dus de kernzin."
+   ],
+   "uh": "Waar leiden voorbeelden heen?",
+   "ctx": "De polders ontstonden doordat water werd weggepompt. De duinen worden beheerd om de kust te beschermen. Zelfs de heide is het resultaat van eeuwenlang grazen door schaapskuddes. Wat wij natuur noemen, is dus vaak cultuurlandschap."
+  },
+  {
+   "v": "Welke zin is de kernzin van de tekst en waarom?",
+   "o": [
+    "de eerste zin, omdat die het onderwerp noemt",
+    "de derde zin, omdat die een voorbeeld geeft",
+    "de vijfde zin, omdat daar taalkundigen worden genoemd",
+    "de slotzin, want die trekt met \"dus\" de conclusie"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Kernzin: de zin die de voorgaande zinnen samenvat, vaak met \"dus\".",
+   "uo": [
+    "Koos je \"de eerste zin, omdat die het onderwerp noemt\"? Dan denk je dat de zin met het onderwerp de kern is. Hij beschrijft alleen de situatie, er volgt geen uitspraak.",
+    "Koos je \"de derde zin, omdat die een voorbeeld geeft\"? Dan denk je dat een zin met voorbeelden de kern is. Voorbeelden ondersteunen, ze zijn de kern niet.",
+    "Koos je \"de vijfde zin, omdat daar taalkundigen worden...\"? Dan denk je dat een verwijzing naar wetenschap de kern is. Het is een extra argument, het is niet de conclusie.",
+    "Klopt: \"dus\" markeert dat de schrijver de samenhang van de voorgaande zinnen in één uitspraak vat."
+   ],
+   "uh": "Signaalwoord \"dus\".",
+   "ctx": "Op school leren kinderen de standaardtaal, maar thuis spreken veel van hen nog een dialect. Dat dialect wordt vaak gezien als een overblijfsel uit het verleden, dat vanzelf zal verdwijnen. Toch ontstaan er voortdurend nieuwe woorden en uitdrukkingen in streektalen, bijvoorbeeld door jongeren die ze gebruiken in appjes en filmpjes. In sommige regio's krijgen kinderen zelfs op de basisschool les in de streektaal. Ook taalkundigen die taalverandering bestuderen, zien dat dialecten meebewegen met hun sprekers en niet stilstaan. Dialect is dus geen achterhaald restant, maar een levende vorm van taal."
+  },
+  {
+   "v": "Een leerling zegt: \"De hoofdgedachte is dat onderzoekers verveling hebben onderzocht.\" Waarom is dat onjuist?",
+   "o": [
+    "het onderzoek onderbouwt de bewering als voorbeeld",
+    "omdat de tekst helemaal niet over onderzoek gaat",
+    "omdat onderzoekers niet de hoofdpersoon zijn",
+    "omdat een hoofdgedachte nooit over onderzoek mag gaan"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Een voorbeeld of onderzoek onderbouwt de hoofdgedachte, het is hem niet.",
+   "uo": [
+    "Klopt: het onderzoek dient als bewijs; de boodschap is dat verveling nuttig is.",
+    "Koos je \"omdat de tekst helemaal niet over onderzoek gaat\"? Dan denk je dat onderzoek niet voorkomt. Het komt wel voor, maar als onderbouwing, niet als kern.",
+    "Koos je \"omdat onderzoekers niet de hoofdpersoon zijn\"? Dan denk je dat het om de persoon gaat. De vraag is welke rol het onderzoek speelt, het is bewijs voor de bewering.",
+    "Koos je \"omdat een hoofdgedachte nooit over onderzoek mag...\"? Dan denk je dat onderzoek verboden is. Een hoofdgedachte mag onderzoek noemen, maar hier is het ondersteunend."
+   ],
+   "uh": "Bewijs, geen kern.",
+   "ctx": "Verveling heeft een slechte reputatie, maar ze is nuttiger dan we denken. Wie zich verveelt, laat zijn gedachten dwalen en komt daardoor soms op ideeën die tijdens een drukke dag nooit opkomen. Onderzoekers die proefpersonen een saaie taak lieten doen, zagen dat die achteraf creatiever waren bij een daaropvolgende opdracht. Dat betekent niet dat verveling prettig is; het gevoel is vaak onaangenaam. Toch dwingt juist dat ongemak ons om zelf iets te bedenken in plaats van het scherm te pakken. Een leven zonder enige leegte is dus niet het ideaal, want zonder verveling ontbreekt de ruimte waarin nieuwe ideeën kunnen ontstaan."
+  },
+  {
+   "v": "Welke zin kun je weglaten zonder dat de impliciete hoofdgedachte verandert?",
+   "o": [
+    "de zin over het niet meer verslaan van raadsvergaderingen",
+    "de zin over gemeenten met een eigen nieuwsbrief",
+    "de zin over minder mensen die gaan stemmen",
+    "de zin over minder kritische vragen aan wethouders"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Wat niet bijdraagt aan de kern, kun je weglaten.",
+   "uo": [
+    "Koos je \"de zin over het niet meer verslaan van...\"? Dan denk je dat dit een detail is. Het is een gevolg waaruit de kern wordt afgeleid, dus je kunt hem niet missen.",
+    "Klopt: de nieuwsbrief is een bijzaak; de gegevens over minder controle en minder stemmers dragen de kern.",
+    "Koos je \"de zin over minder mensen die gaan stemmen\"? Dan denk je dat deze zin een bijzaak is. Hij toont het effect op de democratie, dus hij hoort bij de kern.",
+    "Koos je \"de zin over minder kritische vragen aan wethouders\"? Dan denk je dat deze zin overbodig is. Hij onderbouwt het verlies aan controle, dus hij is nodig."
+   ],
+   "uh": "Draagt het bij?",
+   "ctx": "In veel landen zijn lokale kranten de afgelopen decennia verdwenen of samengevoegd met grotere bladen. Waar een lokale redactie sluit, besteedt niemand nog structureel aandacht aan de gemeenteraad. Raadsvergaderingen worden niet meer verslagen, wethouders krijgen minder kritische vragen en kleine schandalen blijven onopgemerkt. Onderzoek uit verschillende landen suggereert bovendien dat in gemeenten zonder lokale krant minder mensen gaan stemmen. Sommige gemeenten proberen het gat te vullen met een eigen nieuwsbrief, maar die wordt geschreven door het gemeentebestuur zelf."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Verveling heeft een slechte reputatie, maar ze is nuttiger dan we denken. Wie zich verveelt, laat zijn gedachten dwalen en komt daardoor soms op ideeën die tijdens een drukke dag nooit opkomen. Onderzoekers die proefpersonen een saaie taak lieten doen, zagen dat die achteraf creatiever waren bij een daaropvolgende opdracht. Dat betekent niet dat verveling prettig is; het gevoel is vaak onaangenaam. Toch dwingt juist dat ongemak ons om zelf iets te bedenken in plaats van het scherm te pakken. Een leven zonder enige leegte is dus niet het ideaal, want zonder verveling ontbreekt de ruimte waarin nieuwe ideeën kunnen ontstaan.",
+   "v": "Geef het onderwerp en de hoofdgedachte van deze tekst weer.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Onderwerp: verveling (1p). Hoofdgedachte: verveling is nuttig (1p), omdat ze ruimte geeft aan nieuwe ideeën (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In veel landen zijn lokale kranten de afgelopen decennia verdwenen of samengevoegd met grotere bladen. Waar een lokale redactie sluit, besteedt niemand nog structureel aandacht aan de gemeenteraad. Raadsvergaderingen worden niet meer verslagen, wethouders krijgen minder kritische vragen en kleine schandalen blijven onopgemerkt. Onderzoek uit verschillende landen suggereert bovendien dat in gemeenten zonder lokale krant minder mensen gaan stemmen. Sommige gemeenten proberen het gat te vullen met een eigen nieuwsbrief, maar die wordt geschreven door het gemeentebestuur zelf.",
+   "v": "Verwoord de impliciete hoofdgedachte in één zin en leg uit waarom die niet letterlijk in de tekst staat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het verdwijnen van lokale kranten bedreigt de lokale democratie (1p). Er is geen zin die dit zegt (1p); je leidt het af uit minder verslaggeving, minder kritische vragen en minder stemmers (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Op school leren kinderen de standaardtaal, maar thuis spreken veel van hen nog een dialect. Dat dialect wordt vaak gezien als een overblijfsel uit het verleden, dat vanzelf zal verdwijnen. Toch ontstaan er voortdurend nieuwe woorden en uitdrukkingen in streektalen, bijvoorbeeld door jongeren die ze gebruiken in appjes en filmpjes. In sommige regio's krijgen kinderen zelfs op de basisschool les in de streektaal. Ook taalkundigen die taalverandering bestuderen, zien dat dialecten meebewegen met hun sprekers en niet stilstaan. Dialect is dus geen achterhaald restant, maar een levende vorm van taal.",
+   "v": "Welke zin bevat de hoofdgedachte? Leg uit waaraan je dat ziet.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De laatste zin: \"Dialect is dus geen achterhaald restant, maar een levende vorm van taal\" (1p). \"Dus\" markeert de conclusie uit de voorgaande zinnen (1p) en de rest geeft voorbeelden en waarnemingen als onderbouwing (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "In sommige schoolkantines liggen de gezonde producten op ooghoogte en het snoep onderin. Er is niets verboden, maar leerlingen kiezen vaker voor fruit. Gedragswetenschappers noemen zo'n subtiele duw een nudge. De overheid en bedrijven gebruiken nudges steeds vaker, bijvoorbeeld door pensioensparen als standaardkeuze in te stellen, zodat mensen zich actief moeten afmelden. Voorstanders zeggen dat nudges mensen helpen betere keuzes te maken zonder hun vrijheid te beperken. Critici vinden dat het sturen van gedrag zonder dat mensen het merken een vorm van manipulatie is, en dat de overheid daar terughoudend mee moet zijn.",
+   "v": "Parafraseer de zin \"Critici vinden dat het sturen van gedrag zonder dat mensen het merken een vorm van manipulatie is.\"",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: Tegenstanders zeggen dat het misleidend is om mensen ongemerkt te sturen (2p: ongemerkt sturen en manipulatie/misleiding in andere woorden). De betekenis blijft gelijk en je voegt niets toe (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "De polders ontstonden doordat water werd weggepompt. De duinen worden beheerd om de kust te beschermen. Zelfs de heide is het resultaat van eeuwenlang grazen door schaapskuddes. Wat wij natuur noemen, is dus vaak cultuurlandschap.",
+   "v": "Waarom staat de kernzin aan het eind van deze alinea en wat zegt hij?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De voorbeelden over polders, duinen en heide komen eerst en leiden naar de conclusie (1p). De kernzin zegt dat wat wij natuur noemen vaak cultuurlandschap is (1p). \"Dus\" wijst de conclusie aan (1p)."
+  }
+ ]
+}
