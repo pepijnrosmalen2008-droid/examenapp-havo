@@ -1,0 +1,687 @@
+{
+ "id": "A7",
+ "lo": "nl.A.7",
+ "gs": 2,
+ "naam": "Een tekst samenvatten",
+ "beschrijving": "Je reduceert een tekst of tekstgedeelte tot de hoofduitspraak met de belangrijke ondergeschikte uitspraken, ordent de informatie in eigen woorden en beoordeelt of een gegeven samenvatting volledig, beknopt en trouw aan de tekst is.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Hoofd- en ondergeschikte uitspraken onderscheiden",
+  "Reduceren: wat blijft en wat vervalt",
+  "Herordenen en in eigen woorden formuleren",
+  "Een samenvatting beoordelen",
+  "Voorbeelden, tegenwerpingen en bijzaken",
+  "Valkuilen: eigen mening, te lang en te kort"
+ ],
+ "sam": "Een samenvatting geeft de hoofduitspraak met de belangrijke ondergeschikte uitspraken, korter en in eigen woorden. Je reduceert door voorbeelden, herhaling en bijzaken weg te laten, je herordent de informatie logisch en je voegt geen eigen mening toe. Een gegeven samenvatting beoordeel je op volledigheid, beknoptheid en trouw aan de tekst.",
+ "begrippen": [
+  {
+   "t": "Samenvatting",
+   "d": "Een korte weergave van de hoofduitspraak met belangrijke ondergeschikte uitspraken."
+  },
+  {
+   "t": "Hoofduitspraak",
+   "d": "De kernboodschap van de tekst of het tekstgedeelte."
+  },
+  {
+   "t": "Ondergeschikte uitspraak",
+   "d": "Een uitspraak die de hoofduitspraak onderbouwt, verklaart of aanvult."
+  },
+  {
+   "t": "Reduceren",
+   "d": "Een tekst inkorten door voorbeelden, details en herhaling te laten vervallen."
+  },
+  {
+   "t": "Herordenen",
+   "d": "De informatie in een logische volgorde zetten, ook als de tekst een andere volgorde heeft."
+  },
+  {
+   "t": "Eigen woorden",
+   "d": "Zinnen die je zelf formuleert, met dezelfde betekenis als de tekst."
+  },
+  {
+   "t": "Voorbeeld",
+   "d": "Een geval dat een uitspraak illustreert en in een samenvatting meestal vervalt."
+  },
+  {
+   "t": "Tegenwerping",
+   "d": "Een bezwaar dat de schrijver noemt, vaak om het te weerleggen."
+  },
+  {
+   "t": "Herhaling",
+   "d": "Dezelfde informatie in andere woorden, die je maar één keer opneemt."
+  },
+  {
+   "t": "Eigen mening",
+   "d": "Een oordeel van de samenvatter dat niet in de tekst staat."
+  },
+  {
+   "t": "Beknopt",
+   "d": "Zonder overbodige zinnen of details."
+  },
+  {
+   "t": "Volledig",
+   "d": "Met alle hoofdpunten en belangrijke ondergeschikte uitspraken."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Hoe heet een uitspraak die de kern van een tekst vormt?",
+   "o": [
+    "voorbeeld uit de tekst",
+    "hoofduitspraak",
+    "een aanname van de schrijver",
+    "een bijzaak in de tekst"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Hoofduitspraak: de kern; ondergeschikt: ondersteunend.",
+   "uo": [
+    "Koos je \"voorbeeld uit de tekst\"? Dan denk je dat een voorbeeld de kern is. Een voorbeeld ondersteunt de kern, het is er niet de kern van.",
+    "Klopt: de hoofduitspraak is de kernboodschap; alle andere uitspraken zijn ondergeschikt.",
+    "Koos je \"een aanname van de schrijver\"? Dan denk je dat de kern een veronderstelling is. De kern is wat de tekst beweert, niet wat de schrijver aanneemt.",
+    "Koos je \"een bijzaak in de tekst\"? Dan denk je dat de kern een bijzaak is. Een bijzaak is juist wat je weglaat, de hoofduitspraak blijft."
+   ],
+   "uh": "Kern tegenover bijzaak."
+  },
+  {
+   "v": "Welke zin is een voorbeeld dat in een samenvatting vervalt?",
+   "o": [
+    "zin 2: de winters waren kouder",
+    "zin 3: de mogelijke oorzaken",
+    "zin 4: de gevolgen voor de landbouw",
+    "zin 5: de schilders"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Voorbeelden en illustraties vallen weg; de kern en belangrijke gevolgen blijven.",
+   "uo": [
+    "Koos je \"zin 2: de winters waren kouder\"? Dan denk je dat deze zin een voorbeeld is. Hij beschrijft juist de kern van de periode, dus hij hoort in de samenvatting.",
+    "Koos je \"zin 3: de mogelijke oorzaken\"? Dan denk je dat de oorzaken een bijzaak zijn. Ze verklaren de kou, dus ze zijn een belangrijke ondergeschikte uitspraak.",
+    "Koos je \"zin 4: de gevolgen voor de landbouw\"? Dan denk je dat de gevolgen een voorbeeld zijn. Ze geven aan wat de kou deed, dus ze horen erbij.",
+    "Klopt: de schilders zijn een voorbeeld bij de kou; het gevolg zelf (de kou) blijft in de samenvatting."
+   ],
+   "uh": "Voorbeeld of kern?",
+   "ctx": "[1] Historici noemen de periode tussen ongeveer 1300 en 1850 de Kleine IJstijd. [2] In die eeuwen waren de winters in Europa gemiddeld kouder dan nu, en rivieren en kanalen vroren vaker dicht. [3] Als mogelijke oorzaken noemen onderzoekers vulkaanuitbarstingen en een tijdelijk lagere zonneactiviteit, al blijft er discussie over het gewicht van elke oorzaak. [4] De kou had gevolgen voor de landbouw: oogsten mislukten en voedsel werd duurder. [5] In Nederland leverde de kou ook iets moois op, want de grachten waren zo vaak bevroren dat schilders het schaatsen vastlegden. [6] Dankzij die schilderijen weten we vandaag hoe belangrijk het ijs in het dagelijks leven was."
+  },
+  {
+   "v": "Welke uitspraak is de hoofduitspraak van deze tekst?",
+   "o": [
+    "de winters in Europa waren tussen 1300 en 1850 kouder",
+    "schilders in Nederland legden het schaatsen op bevroren grachten vast",
+    "vulkanen en een zwakkere zon zorgden voor de kou",
+    "voedsel werd duurder door mislukte oogsten"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Hoofduitspraak: het geheel van periode, verschijnsel en gevolgen.",
+   "uo": [
+    "Klopt: deze uitspraak bevat de periode, het verschijnsel en het belangrijkste gevolg.",
+    "Koos je \"schilders in Nederland legden het schaatsen op...\"? Dan denk je dat de schilderijen de kern zijn. Ze zijn een voorbeeld, de kern is de koudere periode.",
+    "Koos je \"vulkanen en een zwakkere zon zorgden voor de kou\"? Dan denk je dat de oorzaak de hoofdzaak is. De oorzaken zijn onzeker en ondergeschikt, de kern is de periode.",
+    "Koos je \"voedsel werd duurder door mislukte oogsten\"? Dan denk je dat het gevolg de hele tekst dekt. Het is één gevolg, de hoofduitspraak omvat meer."
+   ],
+   "uh": "Wat dekt alles?",
+   "ctx": "[1] Historici noemen de periode tussen ongeveer 1300 en 1850 de Kleine IJstijd. [2] In die eeuwen waren de winters in Europa gemiddeld kouder dan nu, en rivieren en kanalen vroren vaker dicht. [3] Als mogelijke oorzaken noemen onderzoekers vulkaanuitbarstingen en een tijdelijk lagere zonneactiviteit, al blijft er discussie over het gewicht van elke oorzaak. [4] De kou had gevolgen voor de landbouw: oogsten mislukten en voedsel werd duurder. [5] In Nederland leverde de kou ook iets moois op, want de grachten waren zo vaak bevroren dat schilders het schaatsen vastlegden. [6] Dankzij die schilderijen weten we vandaag hoe belangrijk het ijs in het dagelijks leven was."
+  },
+  {
+   "v": "Welke zin bevat de hoofduitspraak van de tekst?",
+   "o": [
+    "zin 2: het verzetten van de klok verstoort het bioritme",
+    "zin 4: voorstanders wijzen op lange zomeravonden",
+    "zin 1: Nederland moet de zomertijd afschaffen",
+    "zin 5: de overheid moet een vaste tijd kiezen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "In een betoog is het standpunt de hoofduitspraak.",
+   "uo": [
+    "Koos je \"zin 2: het verzetten van de klok verstoort het...\"? Dan denk je dat de eerste reden de hoofduitspraak is. Zin 2 is een argument, geen standpunt.",
+    "Koos je \"zin 4: voorstanders wijzen op lange zomeravonden\"? Dan denk je dat de tegenwerping de kern is. Zin 4 is een bezwaar, de schrijver weerlegt het.",
+    "Klopt: dit is het standpunt, de hoofduitspraak; de andere zinnen onderbouwen het.",
+    "Koos je \"zin 5: de overheid moet een vaste tijd kiezen\"? Dan denk je dat de slotzin de hoofduitspraak is. Zin 5 is een uitwerking, het standpunt staat vooraan."
+   ],
+   "uh": "Wat moet er gebeuren?",
+   "ctx": "[1] Nederland moet de zomertijd afschaffen. [2] Het twee keer per jaar verzetten van de klok verstoort het bioritme van mensen, waardoor vooral kinderen en ouderen enkele dagen slecht slapen. [3] De energiebesparing die het systeem ooit moest opleveren, is volgens onderzoekers tegenwoordig nauwelijks meer meetbaar. [4] Voorstanders van de zomertijd wijzen op de lange zomeravonden, maar die zijn net zo goed te krijgen door in de zomer vroeger te beginnen met werken. [5] Daarom moet de overheid in Europees verband een vaste tijd kiezen."
+  },
+  {
+   "v": "Welke fout hoort niet in een goede samenvatting?",
+   "o": [
+    "de hoofdpunten in andere woorden weergeven",
+    "voorbeelden en details weglaten",
+    "je eigen mening toevoegen",
+    "de volgorde van de informatie aanpassen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 5,
+   "u": "Geen eigen mening in een samenvatting.",
+   "uo": [
+    "Koos je \"de hoofdpunten in andere woorden weergeven\"? Dan denk je dat andere woorden een fout zijn. Eigen woorden zijn juist gewenst, mits de betekenis gelijk blijft.",
+    "Koos je \"voorbeelden en details weglaten\"? Dan denk je dat weglaten een fout is. Het weglaten van details hoort bij samenvatten, alleen belangrijke zaken blijven.",
+    "Klopt: een samenvatting geeft weer wat de schrijver zegt; een eigen mening verandert de inhoud.",
+    "Koos je \"de volgorde van de informatie aanpassen\"? Dan denk je dat dit verboden is. Herordenen is toegestaan, zolang de inhoud klopt."
+   ],
+   "uh": "Wat zegt de schrijver?"
+  },
+  {
+   "v": "Je geeft de tekst weer in je eigen woorden. Wat is een voordeel daarvan?",
+   "o": [
+    "het laat zien dat je de tekst begrijpt",
+    "de samenvatting wordt altijd korter",
+    "je mag zelf nieuwe informatie toevoegen",
+    "de schrijver wordt minder belangrijk"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Eigen woorden tonen begrip en voorkomen kopiëren.",
+   "uo": [
+    "Klopt: wie in eigen woorden formuleert, toont begrip en voorkomt overschrijven.",
+    "Koos je \"de samenvatting wordt altijd korter\"? Dan denk je dat eigen woorden altijd korter zijn. Ze kunnen even lang zijn, het voordeel is dat je begrip laat zien.",
+    "Koos je \"je mag zelf nieuwe informatie toevoegen\"? Dan denk je dat eigen woorden toestemming geven voor extra informatie. De inhoud blijft gelijk, alleen de woorden zijn anders.",
+    "Koos je \"de schrijver wordt minder belangrijk\"? Dan denk je dat eigen woorden de bron wegdrukken. De bron blijft de basis, je formuleert alleen anders."
+   ],
+   "uh": "Begrijp je het?"
+  },
+  {
+   "v": "Welke zin geeft een verklaring en is dus een ondergeschikte uitspraak?",
+   "o": [
+    "zin 1: kinderen van hoogopgeleide ouders gaan vaker naar het vwo",
+    "zin 2: onderzoekers noemen dit sociale herkomst",
+    "zin 5: onderzoek loopt nog",
+    "zin 3: ouders begeleiden hun kinderen beter"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Een verklaring zegt waarom iets zo is: ondergeschikt aan de kern.",
+   "uo": [
+    "Koos je \"zin 1: kinderen van hoogopgeleide ouders gaan vaker...\"? Dan denk je dat deze zin een verklaring is. Hij beschrijft het verschil, dat is de kern.",
+    "Koos je \"zin 2: onderzoekers noemen dit sociale herkomst\"? Dan denk je dat deze zin een verklaring is. Hij geeft een naam aan het effect, geen oorzaak.",
+    "Koos je \"zin 5: onderzoek loopt nog\"? Dan denk je dat deze zin verklaart. Hij zegt dat er nog onzekerheid is, dus geen verklaring.",
+    "Klopt: zin 3 verklaart het verschil uit zin 1; het is een belangrijke ondergeschikte uitspraak."
+   ],
+   "uh": "Wat verklaart wat?",
+   "ctx": "[1] Kinderen van hoogopgeleide ouders gaan gemiddeld vaker naar het vwo dan kinderen van laagopgeleide ouders, ook als hun toetsresultaten op de basisschool even hoog zijn. [2] Onderzoekers noemen dit het effect van sociale herkomst op het schooladvies. [3] Een verklaring is dat hoogopgeleide ouders hun kinderen beter kunnen begeleiden en vaker bij docenten aandringen op een hoger advies. [4] Scholen proberen dat te corrigeren door het advies later vast te stellen en door naast de toets ook de ontwikkeling van het kind mee te laten wegen. [5] Of die maatregelen genoeg zijn, is nog onderwerp van onderzoek."
+  },
+  {
+   "v": "Welke zinnen horen als belangrijke ondergeschikte uitspraken bij de hoofduitspraak?",
+   "o": [
+    "zin 5 en 6: de schilders en hun schilderijen",
+    "zin 3 en 4: oorzaken en gevolgen",
+    "zin 2 en 6: de bevroren rivieren en de schilderijen",
+    "alleen zin 1: de periode"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Belangrijke ondergeschikte uitspraken: oorzaken en gevolgen.",
+   "uo": [
+    "Koos je \"zin 5 en 6: de schilders en hun schilderijen\"? Dan denk je dat het bijzondere voorbeeld belangrijk is. Het is een illustratie, die kun je weglaten.",
+    "Klopt: oorzaken en gevolgen verklaren en verbreden de kern; ze horen in een volledige samenvatting.",
+    "Koos je \"zin 2 en 6: de bevroren rivieren en de schilderijen\"? Dan denk je dat de details samen de kern dragen. Ze beschrijven slechts delen, de oorzaken en gevolgen zijn belangrijker.",
+    "Koos je \"alleen zin 1: de periode\"? Dan denk je dat alleen de kern voldoende is. Belangrijke ondergeschikte uitspraken horen er ook in, zoals oorzaken en gevolgen."
+   ],
+   "uh": "Wat verklaart de kern?",
+   "ctx": "[1] Historici noemen de periode tussen ongeveer 1300 en 1850 de Kleine IJstijd. [2] In die eeuwen waren de winters in Europa gemiddeld kouder dan nu, en rivieren en kanalen vroren vaker dicht. [3] Als mogelijke oorzaken noemen onderzoekers vulkaanuitbarstingen en een tijdelijk lagere zonneactiviteit, al blijft er discussie over het gewicht van elke oorzaak. [4] De kou had gevolgen voor de landbouw: oogsten mislukten en voedsel werd duurder. [5] In Nederland leverde de kou ook iets moois op, want de grachten waren zo vaak bevroren dat schilders het schaatsen vastlegden. [6] Dankzij die schilderijen weten we vandaag hoe belangrijk het ijs in het dagelijks leven was."
+  },
+  {
+   "v": "Welke herformulering van zin 3 en 4 tot één zin klopt?",
+   "o": [
+    "vulkanen en de zon veroorzaakten zeker de kou en daarom mislukten alle oogsten in heel Europa",
+    "de oogsten mislukten omdat voedsel duurder werd",
+    "er was discussie over de oorzaken van mislukte oogsten",
+    "mogelijke oorzaken zoals vulkanen veroorzaakten kou die oogsten liet mislukken"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Herformuleren: oorzaak en gevolg behouden, onzekerheid bewaren.",
+   "uo": [
+    "Koos je \"vulkanen en de zon veroorzaakten zeker de kou en...\"? Dan denk je dat de oorzaken zeker zijn. De tekst zegt \"mogelijke oorzaken\", dus je verandert de betekenis.",
+    "Koos je \"de oogsten mislukten omdat voedsel duurder werd\"? Dan denk je dat het gevolg de oorzaak is. In de tekst is duurder voedsel het gevolg, je draait de relatie om.",
+    "Koos je \"er was discussie over de oorzaken van mislukte...\"? Dan denk je dat de discussie over de oogsten gaat. De discussie betreft het gewicht van de oorzaken van kou, niet van oogsten.",
+    "Klopt: de zin bundelt oorzaak en gevolg en behoudt het woord \"mogelijk\"."
+   ],
+   "uh": "Wat is zeker, wat mogelijk?",
+   "ctx": "[1] Historici noemen de periode tussen ongeveer 1300 en 1850 de Kleine IJstijd. [2] In die eeuwen waren de winters in Europa gemiddeld kouder dan nu, en rivieren en kanalen vroren vaker dicht. [3] Als mogelijke oorzaken noemen onderzoekers vulkaanuitbarstingen en een tijdelijk lagere zonneactiviteit, al blijft er discussie over het gewicht van elke oorzaak. [4] De kou had gevolgen voor de landbouw: oogsten mislukten en voedsel werd duurder. [5] In Nederland leverde de kou ook iets moois op, want de grachten waren zo vaak bevroren dat schilders het schaatsen vastlegden. [6] Dankzij die schilderijen weten we vandaag hoe belangrijk het ijs in het dagelijks leven was."
+  },
+  {
+   "v": "Welke samenvatting is volledig en beknopt?",
+   "o": [
+    "het was koud",
+    "tussen 1300 en 1850 werd het in Europa kouder, mogelijk door vulkanen en een zwakkere zon, met mislukte oogsten",
+    "er was een Kleine IJstijd, waarin schilders het schaatsen op de bevroren Nederlandse grachten vastlegden en rivieren dichtvroren",
+    "helaas leden mensen onder de kou en dat had nooit mogen gebeuren"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Volledig: kern plus belangrijke ondergeschikte uitspraken. Beknopt: zonder voorbeelden.",
+   "uo": [
+    "Koos je \"het was koud\"? Dan denk je dat korter altijd beter is. Een samenvatting moet de hoofdpunten bevatten, deze mist periode, oorzaken en gevolgen.",
+    "Klopt: de samenvatting bevat de hoofduitspraak en belangrijke ondergeschikte uitspraken, zonder voorbeeld.",
+    "Koos je \"er was een Kleine IJstijd, waarin schilders het...\"? Dan denk je dat het mooiste detail de kern is. De schilders zijn een voorbeeld, geen hoofdpunt.",
+    "Koos je \"helaas leden mensen onder de kou en dat had nooit...\"? Dan denk je dat een oordeel hoort bij een samenvatting. Dat is een eigen mening, geen weergave van de tekst."
+   ],
+   "uh": "Kern en gevolgen.",
+   "ctx": "[1] Historici noemen de periode tussen ongeveer 1300 en 1850 de Kleine IJstijd. [2] In die eeuwen waren de winters in Europa gemiddeld kouder dan nu, en rivieren en kanalen vroren vaker dicht. [3] Als mogelijke oorzaken noemen onderzoekers vulkaanuitbarstingen en een tijdelijk lagere zonneactiviteit, al blijft er discussie over het gewicht van elke oorzaak. [4] De kou had gevolgen voor de landbouw: oogsten mislukten en voedsel werd duurder. [5] In Nederland leverde de kou ook iets moois op, want de grachten waren zo vaak bevroren dat schilders het schaatsen vastlegden. [6] Dankzij die schilderijen weten we vandaag hoe belangrijk het ijs in het dagelijks leven was."
+  },
+  {
+   "v": "Welke zin geeft de visie van de voorstanders en is dus een belangrijke ondergeschikte uitspraak?",
+   "o": [
+    "zin 1: de vraag of er een canon moet komen",
+    "zin 4: elke lijst sluit iets uit",
+    "zin 2: gedeelde basiskennis verbindt",
+    "zin 5: de waarde zit in het gesprek"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "De standpunten van beide groepen zijn belangrijke ondergeschikte uitspraken.",
+   "uo": [
+    "Koos je \"zin 1: de vraag of er een canon moet komen\"? Dan denk je dat de vraag een standpunt is. De vraag stelt het onderwerp, de visie komt in zin 2.",
+    "Koos je \"zin 4: elke lijst sluit iets uit\"? Dan denk je dat dit de visie van de voorstanders is. Het is een erkenning van beide groepen, geen standpunt van de voorstanders.",
+    "Klopt: zin 2 zet het standpunt van de voorstanders neer en hoort bij de kern van de discussie.",
+    "Koos je \"zin 5: de waarde zit in het gesprek\"? Dan denk je dat deze zin het standpunt van de voorstanders is. Het is de slotbeschouwing, niet hun visie."
+   ],
+   "uh": "Wie zegt wat?",
+   "ctx": "[1] Moet het onderwijs een vaste canon van boeken, schilderijen en gebeurtenissen aanwijzen die iedere leerling kent? [2] Voorstanders zeggen dat een gedeelde basiskennis mensen verbindt: wie dezelfde verhalen kent, kan sneller met elkaar praten over de samenleving. [3] Tegenstanders vrezen dat een canon vooral laat zien wat de macht van het moment belangrijk vindt, en dat stemmen van minderheden zo buiten beeld blijven. [4] Beide groepen erkennen dat het lastig is te kiezen: elke lijst sluit iets uit. [5] Misschien is de waarde van een canon dan minder de lijst zelf dan het gesprek dat de keuze oproept."
+  },
+  {
+   "v": "Welke uitspraak is de hoofduitspraak van de tekst over de canon?",
+   "o": [
+    "over een canon bestaat discussie tussen voor- en tegenstanders",
+    "een canon is nodig voor een gedeelde basiskennis van alle leerlingen",
+    "een canon sluit minderheden uit",
+    "scholen moeten de canon afschaffen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Beschouwing: hoofduitspraak met beide kanten, geen keuze.",
+   "uo": [
+    "Klopt: de tekst legt twee kanten naast elkaar, dus de hoofduitspraak noemt beide.",
+    "Koos je \"een canon is nodig voor een gedeelde basiskennis...\"? Dan denk je dat de schrijver kiest voor de voorstanders. De tekst biedt beide kanten aan, dus dit is te eenzijdig.",
+    "Koos je \"een canon sluit minderheden uit\"? Dan denk je dat de tegenstanders gelijk krijgen. De tekst geeft beide kanten gelijk gewicht, dus dit is te eenzijdig.",
+    "Koos je \"scholen moeten de canon afschaffen\"? Dan denk je dat de schrijver adviseert. Er is geen advies in de tekst, alleen een afweging."
+   ],
+   "uh": "Beide kanten.",
+   "ctx": "[1] Moet het onderwijs een vaste canon van boeken, schilderijen en gebeurtenissen aanwijzen die iedere leerling kent? [2] Voorstanders zeggen dat een gedeelde basiskennis mensen verbindt: wie dezelfde verhalen kent, kan sneller met elkaar praten over de samenleving. [3] Tegenstanders vrezen dat een canon vooral laat zien wat de macht van het moment belangrijk vindt, en dat stemmen van minderheden zo buiten beeld blijven. [4] Beide groepen erkennen dat het lastig is te kiezen: elke lijst sluit iets uit. [5] Misschien is de waarde van een canon dan minder de lijst zelf dan het gesprek dat de keuze oproept."
+  },
+  {
+   "v": "Welke zin is een tegenwerping en dus ondergeschikt aan het standpunt?",
+   "o": [
+    "zin 4: voorstanders wijzen op de lange zomeravonden",
+    "zin 2: het verzetten van de klok verstoort het slapen",
+    "zin 3: de energiebesparing is nauwelijks meetbaar",
+    "zin 5: de overheid moet een vaste tijd kiezen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Tegenwerping: een bezwaar dat de schrijver noemt en weerlegt.",
+   "uo": [
+    "Klopt: de schrijver noemt een bezwaar van tegenstanders en weerlegt het meteen.",
+    "Koos je \"zin 2: het verzetten van de klok verstoort het...\"? Dan denk je dat dit een bezwaar is. Zin 2 is een argument voor het standpunt, geen tegenwerping.",
+    "Koos je \"zin 3: de energiebesparing is nauwelijks meetbaar\"? Dan denk je dat dit een bezwaar is. Zin 3 ondersteunt het standpunt, het is een tweede argument.",
+    "Koos je \"zin 5: de overheid moet een vaste tijd kiezen\"? Dan denk je dat dit een bezwaar is. Zin 5 is de conclusie, geen tegenwerping."
+   ],
+   "uh": "Voor of tegen?",
+   "ctx": "[1] Nederland moet de zomertijd afschaffen. [2] Het twee keer per jaar verzetten van de klok verstoort het bioritme van mensen, waardoor vooral kinderen en ouderen enkele dagen slecht slapen. [3] De energiebesparing die het systeem ooit moest opleveren, is volgens onderzoekers tegenwoordig nauwelijks meer meetbaar. [4] Voorstanders van de zomertijd wijzen op de lange zomeravonden, maar die zijn net zo goed te krijgen door in de zomer vroeger te beginnen met werken. [5] Daarom moet de overheid in Europees verband een vaste tijd kiezen."
+  },
+  {
+   "v": "Welke formulering van zin 2 is een goede parafrase?",
+   "o": [
+    "wie de klok verzet slaapt altijd een hele week slecht, ook volwassenen",
+    "kinderen en ouderen moeten vaker slapen",
+    "de klok verzetten verstoort het slaapritme van vooral kinderen en ouderen",
+    "het slaapritme verandert door de zomertijd bij alle mensen even sterk en dat lang"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Parafraseren: betekenis behouden, bijzonderheden bewaren.",
+   "uo": [
+    "Koos je \"wie de klok verzet slaapt altijd een hele week...\"? Dan denk je dat het effect een week duurt voor iedereen. De tekst zegt \"enkele dagen\" en \"vooral kinderen en ouderen\", dus je overdrijft.",
+    "Koos je \"kinderen en ouderen moeten vaker slapen\"? Dan denk je dat de tekst een advies geeft. Hij beschrijft een gevolg, geen advies.",
+    "Klopt: dezelfde betekenis in andere woorden, met behoud van de doelgroep.",
+    "Koos je \"het slaapritme verandert door de zomertijd bij alle...\"? Dan denk je dat het effect voor iedereen gelijk is. De tekst noemt vooral twee groepen, dus je laat dat weg."
+   ],
+   "uh": "Zelfde betekenis.",
+   "ctx": "[1] Nederland moet de zomertijd afschaffen. [2] Het twee keer per jaar verzetten van de klok verstoort het bioritme van mensen, waardoor vooral kinderen en ouderen enkele dagen slecht slapen. [3] De energiebesparing die het systeem ooit moest opleveren, is volgens onderzoekers tegenwoordig nauwelijks meer meetbaar. [4] Voorstanders van de zomertijd wijzen op de lange zomeravonden, maar die zijn net zo goed te krijgen door in de zomer vroeger te beginnen met werken. [5] Daarom moet de overheid in Europees verband een vaste tijd kiezen."
+  },
+  {
+   "v": "Waarom is \"Het is schandalig dat laagopgeleide kinderen lagere adviezen krijgen\" geen goede samenvatting?",
+   "o": [
+    "omdat het veel te kort is voor een samenvatting",
+    "het is een eigen oordeel",
+    "omdat het geen onderzoekers noemt",
+    "omdat het in de verkeerde volgorde staat"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Een samenvatting geeft weer, een oordeel hoort er niet in.",
+   "uo": [
+    "Koos je \"omdat het veel te kort is voor een samenvatting\"? Dan denk je dat de lengte het probleem is. De zin is kort, maar het probleem is het oordeel.",
+    "Klopt: de tekst beschrijft het verschil, maar noemt het niet schandalig.",
+    "Koos je \"omdat het geen onderzoekers noemt\"? Dan denk je dat de bron ontbreekt. Een samenvatting hoeft niet alle bronnen te noemen, het oordeel is de fout.",
+    "Koos je \"omdat het in de verkeerde volgorde staat\"? Dan denk je dat de volgorde de fout is. Het gaat om de inhoud, namelijk het oordeel."
+   ],
+   "uh": "Oordeel of weergave?",
+   "ctx": "[1] Kinderen van hoogopgeleide ouders gaan gemiddeld vaker naar het vwo dan kinderen van laagopgeleide ouders, ook als hun toetsresultaten op de basisschool even hoog zijn. [2] Onderzoekers noemen dit het effect van sociale herkomst op het schooladvies. [3] Een verklaring is dat hoogopgeleide ouders hun kinderen beter kunnen begeleiden en vaker bij docenten aandringen op een hoger advies. [4] Scholen proberen dat te corrigeren door het advies later vast te stellen en door naast de toets ook de ontwikkeling van het kind mee te laten wegen. [5] Of die maatregelen genoeg zijn, is nog onderwerp van onderzoek."
+  },
+  {
+   "v": "Welke samenvatting is te kort?",
+   "o": [
+    "kinderen van hoogopgeleide ouders krijgen bij gelijke toetsen vaker een hoger advies; scholen proberen dit te corrigeren",
+    "hoogopgeleide ouders begeleiden hun kinderen beter en dringen aan op hogere adviezen",
+    "scholen leggen het advies later vast en wegen de ontwikkeling mee",
+    "er zijn verschillen in schooladvies"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 3,
+   "u": "Te kort: de hoofdpunten ontbreken.",
+   "uo": [
+    "Koos je \"kinderen van hoogopgeleide ouders krijgen bij...\"? Dan denk je dat deze zin te kort is. Hij bevat de hoofduitspraak en belangrijke ondergeschikte uitspraken, dus hij is volledig.",
+    "Koos je \"hoogopgeleide ouders begeleiden hun kinderen beter...\"? Dan denk je dat dit te kort is. Het bevat een belangrijke verklaring, maar mist het verschil zelf.",
+    "Koos je \"scholen leggen het advies later vast en wegen de...\"? Dan denk je dat dit te kort is. Het bevat de maatregelen, maar mist het verschil.",
+    "Klopt: de zin noemt geen oorzaak, groep of maatregelen en mist dus de hoofdpunten."
+   ],
+   "uh": "Wat mist er?",
+   "ctx": "[1] Kinderen van hoogopgeleide ouders gaan gemiddeld vaker naar het vwo dan kinderen van laagopgeleide ouders, ook als hun toetsresultaten op de basisschool even hoog zijn. [2] Onderzoekers noemen dit het effect van sociale herkomst op het schooladvies. [3] Een verklaring is dat hoogopgeleide ouders hun kinderen beter kunnen begeleiden en vaker bij docenten aandringen op een hoger advies. [4] Scholen proberen dat te corrigeren door het advies later vast te stellen en door naast de toets ook de ontwikkeling van het kind mee te laten wegen. [5] Of die maatregelen genoeg zijn, is nog onderwerp van onderzoek."
+  },
+  {
+   "v": "Welke zin kan in een samenvatting van twee zinnen vervallen?",
+   "o": [
+    "zin 1: kinderen van hoogopgeleide ouders gaan vaker naar het vwo",
+    "zin 5: of de maatregelen genoeg zijn, wordt nog onderzocht",
+    "zin 3: de verklaring over begeleiding",
+    "zin 4: de maatregelen van de scholen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "In een korte samenvatting vervalt wat de kern niet draagt.",
+   "uo": [
+    "Koos je \"zin 1: kinderen van hoogopgeleide ouders gaan vaker...\"? Dan denk je dat deze zin kan vervallen. Hij bevat de hoofduitspraak, dus hij blijft.",
+    "Klopt: de slotzin is een nuance die in een korte samenvatting kan wegvallen zonder dat de kern verloren gaat.",
+    "Koos je \"zin 3: de verklaring over begeleiding\"? Dan denk je dat de verklaring kan vervallen. Ze is een belangrijke ondergeschikte uitspraak, dus ze past in twee zinnen.",
+    "Koos je \"zin 4: de maatregelen van de scholen\"? Dan denk je dat de maatregelen kunnen vervallen. Ze zijn een belangrijke ondergeschikte uitspraak, dus ze blijven."
+   ],
+   "uh": "Draagt het de kern?",
+   "ctx": "[1] Kinderen van hoogopgeleide ouders gaan gemiddeld vaker naar het vwo dan kinderen van laagopgeleide ouders, ook als hun toetsresultaten op de basisschool even hoog zijn. [2] Onderzoekers noemen dit het effect van sociale herkomst op het schooladvies. [3] Een verklaring is dat hoogopgeleide ouders hun kinderen beter kunnen begeleiden en vaker bij docenten aandringen op een hoger advies. [4] Scholen proberen dat te corrigeren door het advies later vast te stellen en door naast de toets ook de ontwikkeling van het kind mee te laten wegen. [5] Of die maatregelen genoeg zijn, is nog onderwerp van onderzoek."
+  },
+  {
+   "v": "Welke formulering geeft de hoofduitspraak én de belangrijkste ondergeschikte uitspraak weer?",
+   "o": [
+    "Nederland moet de zomertijd afschaffen, omdat de klokwisseling het slapen verstoort en de energiewinst is verdwenen",
+    "Nederland moet de zomertijd afschaffen",
+    "Nederland moet de zomertijd afschaffen, want kinderen slapen dan een paar dagen slecht en voorstanders wijzen op avonden",
+    "Nederland moet de zomertijd afschaffen en dat is terecht, want het is een slecht systeem"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Hoofdpunt plus belangrijkste argumenten, zonder oordeel en zonder bezwaar.",
+   "uo": [
+    "Klopt: ze bevat het standpunt en de twee belangrijkste argumenten.",
+    "Koos je \"Nederland moet de zomertijd afschaffen\"? Dan denk je dat het standpunt alleen volstaat. Belangrijke ondergeschikte uitspraken horen erbij, dus dit is onvolledig.",
+    "Koos je \"Nederland moet de zomertijd afschaffen, want...\"? Dan denk je dat elke zin erin moet. Het bezwaar van voorstanders is minder belangrijk, dus dit is te uitgebreid.",
+    "Koos je \"Nederland moet de zomertijd afschaffen en dat is...\"? Dan denk je dat een oordeel erbij hoort. Het eigen oordeel is geen weergave, dus het is een fout."
+   ],
+   "uh": "Standpunt en argumenten.",
+   "ctx": "[1] Nederland moet de zomertijd afschaffen. [2] Het twee keer per jaar verzetten van de klok verstoort het bioritme van mensen, waardoor vooral kinderen en ouderen enkele dagen slecht slapen. [3] De energiebesparing die het systeem ooit moest opleveren, is volgens onderzoekers tegenwoordig nauwelijks meer meetbaar. [4] Voorstanders van de zomertijd wijzen op de lange zomeravonden, maar die zijn net zo goed te krijgen door in de zomer vroeger te beginnen met werken. [5] Daarom moet de overheid in Europees verband een vaste tijd kiezen."
+  },
+  {
+   "v": "Een leerling schrijft: \"De canon is fout, want hij sluit minderheden uit.\" Wat klopt er niet?",
+   "o": [
+    "niets: de tekst noemt de tegenstanders",
+    "dat de zin te lang is",
+    "dat de minderheden niet in de tekst voorkomen",
+    "er staat een eigen standpunt in"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Een samenvatting weerspiegelt de tekst, ook als die twee kanten toont.",
+   "uo": [
+    "Koos je \"niets: de tekst noemt de tegenstanders\"? Dan denk je dat het noemen van een kant genoeg is. De tekst geeft beide kanten weer, je mag er niet één kiezen.",
+    "Koos je \"dat de zin te lang is\"? Dan denk je dat de lengte de fout is. De zin is kort, de fout is het eenzijdige oordeel.",
+    "Koos je \"dat de minderheden niet in de tekst voorkomen\"? Dan denk je dat de minderheden ontbreken. Ze staan in zin 3, de fout is dat de leerling kiest.",
+    "Klopt: de tekst laat beide kanten zien; de leerling kiest alsnog voor de tegenstanders."
+   ],
+   "uh": "Kiest de tekst een kant?",
+   "ctx": "[1] Moet het onderwijs een vaste canon van boeken, schilderijen en gebeurtenissen aanwijzen die iedere leerling kent? [2] Voorstanders zeggen dat een gedeelde basiskennis mensen verbindt: wie dezelfde verhalen kent, kan sneller met elkaar praten over de samenleving. [3] Tegenstanders vrezen dat een canon vooral laat zien wat de macht van het moment belangrijk vindt, en dat stemmen van minderheden zo buiten beeld blijven. [4] Beide groepen erkennen dat het lastig is te kiezen: elke lijst sluit iets uit. [5] Misschien is de waarde van een canon dan minder de lijst zelf dan het gesprek dat de keuze oproept."
+  },
+  {
+   "v": "Welke herordening van de informatie is correct?",
+   "o": [
+    "eerst de schilders, dan de oorzaken, dan de periode",
+    "eerst de gevolgen, dan de periode, dan de oorzaken",
+    "eerst kou, dan oorzaken, dan gevolgen",
+    "eerst de oorzaken, dan de schilders, dan de kou"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Logische volgorde: verschijnsel, oorzaak, gevolg.",
+   "uo": [
+    "Koos je \"eerst de schilders, dan de oorzaken, dan de periode\"? Dan denk je dat het voorbeeld voorop kan. Een voorbeeld hoort bij de uitwerking, niet aan het begin.",
+    "Koos je \"eerst de gevolgen, dan de periode, dan de oorzaken\"? Dan denk je dat gevolgen eerst mogen. Zonder periode en kou is onduidelijk waar het over gaat, dus de volgorde is verwarrend.",
+    "Klopt: van verschijnsel naar oorzaak naar gevolg is een logische samenvattingsvolgorde.",
+    "Koos je \"eerst de oorzaken, dan de schilders, dan de kou\"? Dan denk je dat de oorzaak vóór het verschijnsel moet. Zonder het verschijnsel mist de lezer het onderwerp, dus dit is onhandig."
+   ],
+   "uh": "Eerst wat, dan waarom.",
+   "ctx": "[1] Historici noemen de periode tussen ongeveer 1300 en 1850 de Kleine IJstijd. [2] In die eeuwen waren de winters in Europa gemiddeld kouder dan nu, en rivieren en kanalen vroren vaker dicht. [3] Als mogelijke oorzaken noemen onderzoekers vulkaanuitbarstingen en een tijdelijk lagere zonneactiviteit, al blijft er discussie over het gewicht van elke oorzaak. [4] De kou had gevolgen voor de landbouw: oogsten mislukten en voedsel werd duurder. [5] In Nederland leverde de kou ook iets moois op, want de grachten waren zo vaak bevroren dat schilders het schaatsen vastlegden. [6] Dankzij die schilderijen weten we vandaag hoe belangrijk het ijs in het dagelijks leven was."
+  },
+  {
+   "v": "Welke zinnen vallen weg in een samenvatting van één zin over de hoofdzaak?",
+   "o": [
+    "zin 1 en 2: het verschil en de naam ervan",
+    "zin 3: de verklaring over begeleiding",
+    "zin 4 en 5: maatregelen en open vraag",
+    "zin 1 en 3: het verschil en de verklaring"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 1,
+   "u": "Houd kern en verklaring, laat nuance en maatregelen weg.",
+   "uo": [
+    "Koos je \"zin 1 en 2: het verschil en de naam ervan\"? Dan denk je dat het verschil kan weg. Zin 1 is de kern, dus hij blijft altijd.",
+    "Koos je \"zin 3: de verklaring over begeleiding\"? Dan denk je dat de verklaring kan vervallen. In één zin past ze er soms nog bij, ze is belangrijker dan zin 4 en 5.",
+    "Klopt: de kern en de verklaring blijven; de maatregelen en nuance zijn voor een korte samenvatting minder belangrijk.",
+    "Koos je \"zin 1 en 3: het verschil en de verklaring\"? Dan denk je dat kern en verklaring kunnen vervallen. Dat zou de samenvatting leeg maken, dus dit kan niet."
+   ],
+   "uh": "Wat is minst belangrijk?",
+   "ctx": "[1] Kinderen van hoogopgeleide ouders gaan gemiddeld vaker naar het vwo dan kinderen van laagopgeleide ouders, ook als hun toetsresultaten op de basisschool even hoog zijn. [2] Onderzoekers noemen dit het effect van sociale herkomst op het schooladvies. [3] Een verklaring is dat hoogopgeleide ouders hun kinderen beter kunnen begeleiden en vaker bij docenten aandringen op een hoger advies. [4] Scholen proberen dat te corrigeren door het advies later vast te stellen en door naast de toets ook de ontwikkeling van het kind mee te laten wegen. [5] Of die maatregelen genoeg zijn, is nog onderwerp van onderzoek."
+  },
+  {
+   "v": "Waarom is \"Kinderen van laagopgeleide ouders hebben pech\" geen goede samenvatting?",
+   "o": [
+    "omdat de tekst geen kinderen noemt",
+    "omdat de zin te lang is",
+    "omdat de tekst \"pech\" nooit gebruikt",
+    "het is een oordeel"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Een samenvatting geeft de inhoud weer, geen waardeoordeel.",
+   "uo": [
+    "Koos je \"omdat de tekst geen kinderen noemt\"? Dan denk je dat de kinderen ontbreken. Ze staan in zin 1, het probleem is het oordeel.",
+    "Koos je \"omdat de zin te lang is\"? Dan denk je dat de lengte het probleem is. De zin is kort, het gaat om het oordeel.",
+    "Koos je \"omdat de tekst pech nooit gebruikt\"? Dan denk je dat het woord alleen fout is als het niet in de tekst staat. Het gaat erom dat het een oordeel is, ook als een tekst het woord zou gebruiken.",
+    "Klopt: de tekst beschrijft een verschil in adviezen; \"pech\" is een waardeoordeel."
+   ],
+   "uh": "Pech is een oordeel.",
+   "ctx": "[1] Kinderen van hoogopgeleide ouders gaan gemiddeld vaker naar het vwo dan kinderen van laagopgeleide ouders, ook als hun toetsresultaten op de basisschool even hoog zijn. [2] Onderzoekers noemen dit het effect van sociale herkomst op het schooladvies. [3] Een verklaring is dat hoogopgeleide ouders hun kinderen beter kunnen begeleiden en vaker bij docenten aandringen op een hoger advies. [4] Scholen proberen dat te corrigeren door het advies later vast te stellen en door naast de toets ook de ontwikkeling van het kind mee te laten wegen. [5] Of die maatregelen genoeg zijn, is nog onderwerp van onderzoek."
+  },
+  {
+   "v": "Welke samenvatting bevat details die in een goede samenvatting ontbreken?",
+   "o": [
+    "tussen 1300 en 1850 was het koud; rivieren vroren dicht en Nederlandse schilders legden het schaatsen vast",
+    "de Kleine IJstijd had koudere winters, mogelijk door vulkanen en een zwakkere zon, en leidde tot mislukte oogsten",
+    "de periode van 1300 tot 1850 was kouder in Europa",
+    "in Europa werd het kouder door vulkanen en lagere zonneactiviteit"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Details en voorbeelden horen niet in de samenvatting.",
+   "uo": [
+    "Klopt: de schilders zijn een voorbeeld; in een samenvatting vervalt dat, terwijl oorzaken en gevolgen ontbreken.",
+    "Koos je \"de Kleine IJstijd had koudere winters, mogelijk...\"? Dan denk je dat deze samenvatting te veel details bevat. Ze bevat alleen de kern en belangrijke ondergeschikte uitspraken, dus ze is goed.",
+    "Koos je \"de periode van 1300 tot 1850 was kouder in Europa\"? Dan denk je dat deze samenvatting details bevat. Ze noemt alleen de kern, dus ze is korter en mist hooguit iets.",
+    "Koos je \"in Europa werd het kouder door vulkanen en lagere...\"? Dan denk je dat deze samenvatting details bevat. Ze noemt kern en oorzaak, dus de details ontbreken."
+   ],
+   "uh": "Kern of detail?",
+   "ctx": "[1] Historici noemen de periode tussen ongeveer 1300 en 1850 de Kleine IJstijd. [2] In die eeuwen waren de winters in Europa gemiddeld kouder dan nu, en rivieren en kanalen vroren vaker dicht. [3] Als mogelijke oorzaken noemen onderzoekers vulkaanuitbarstingen en een tijdelijk lagere zonneactiviteit, al blijft er discussie over het gewicht van elke oorzaak. [4] De kou had gevolgen voor de landbouw: oogsten mislukten en voedsel werd duurder. [5] In Nederland leverde de kou ook iets moois op, want de grachten waren zo vaak bevroren dat schilders het schaatsen vastlegden. [6] Dankzij die schilderijen weten we vandaag hoe belangrijk het ijs in het dagelijks leven was."
+  },
+  {
+   "v": "Welke ondergeschikte uitspraak is belangrijk genoeg voor een samenvatting van twee zinnen?",
+   "o": [
+    "zin 1: de vraag of er een canon moet komen",
+    "zin 3: tegenstanders vrezen uitsluiting",
+    "zin 4: elke lijst sluit iets uit",
+    "zin 5: de waarde zit in het gesprek"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Standpunten van beide kanten zijn de kern van een beschouwing.",
+   "uo": [
+    "Koos je \"zin 1: de vraag of er een canon moet komen\"? Dan denk je dat de vraag een uitspraak is. Ze stelt het onderwerp, er wordt niets beweerd.",
+    "Klopt: de standpunten van voor- en tegenstanders zijn de kern van de discussie.",
+    "Koos je \"zin 4: elke lijst sluit iets uit\"? Dan denk je dat dit de belangrijkste ondergeschikte uitspraak is. Het is een gedeelde erkenning, minder inhoudelijk dan de standpunten.",
+    "Koos je \"zin 5: de waarde zit in het gesprek\"? Dan denk je dat deze zin ondergeschikt is. Het is juist de slotbeschouwing, die hoort bij de kern van de tekst."
+   ],
+   "uh": "Wie vindt wat?",
+   "ctx": "[1] Moet het onderwijs een vaste canon van boeken, schilderijen en gebeurtenissen aanwijzen die iedere leerling kent? [2] Voorstanders zeggen dat een gedeelde basiskennis mensen verbindt: wie dezelfde verhalen kent, kan sneller met elkaar praten over de samenleving. [3] Tegenstanders vrezen dat een canon vooral laat zien wat de macht van het moment belangrijk vindt, en dat stemmen van minderheden zo buiten beeld blijven. [4] Beide groepen erkennen dat het lastig is te kiezen: elke lijst sluit iets uit. [5] Misschien is de waarde van een canon dan minder de lijst zelf dan het gesprek dat de keuze oproept."
+  },
+  {
+   "v": "Welke samenvatting is een goede herordening in eigen woorden?",
+   "o": [
+    "kinderen van hoogopgeleide ouders zijn slimmer en krijgen daarom een hoger advies op school",
+    "hoogopgeleide ouders gaan vaker naar het vwo en scholen proberen dat te corrigeren",
+    "scholen leggen het advies later vast en wegen de ontwikkeling mee",
+    "bij gelijke toetsen krijgen kinderen van hoogopgeleide ouders vaker een hoger advies"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Goede herordening: verschil, verklaring, maatregelen, in eigen woorden.",
+   "uo": [
+    "Koos je \"kinderen van hoogopgeleide ouders zijn slimmer en...\"? Dan denk je dat het verschil door intelligentie komt. De tekst zegt dat de toetsresultaten gelijk zijn, dus je verandert de inhoud.",
+    "Koos je \"hoogopgeleide ouders gaan vaker naar het vwo en...\"? Dan denk je dat de groepen zijn verwisseld. In de tekst gaat het om de kinderen van hoogopgeleide ouders, niet om de ouders zelf.",
+    "Koos je \"scholen leggen het advies later vast en wegen de...\"? Dan denk je dat de maatregelen de samenvatting dekken. Het verschil en de verklaring ontbreken, dus ze is onvolledig.",
+    "Klopt: de samenvatting bevat het verschil, de verklaring en de maatregelen in eigen woorden."
+   ],
+   "uh": "Kern, verklaring, maatregel.",
+   "ctx": "[1] Kinderen van hoogopgeleide ouders gaan gemiddeld vaker naar het vwo dan kinderen van laagopgeleide ouders, ook als hun toetsresultaten op de basisschool even hoog zijn. [2] Onderzoekers noemen dit het effect van sociale herkomst op het schooladvies. [3] Een verklaring is dat hoogopgeleide ouders hun kinderen beter kunnen begeleiden en vaker bij docenten aandringen op een hoger advies. [4] Scholen proberen dat te corrigeren door het advies later vast te stellen en door naast de toets ook de ontwikkeling van het kind mee te laten wegen. [5] Of die maatregelen genoeg zijn, is nog onderwerp van onderzoek."
+  },
+  {
+   "v": "Welke zinnen vormen de belangrijke ondergeschikte uitspraken bij de hoofduitspraak?",
+   "o": [
+    "zin 2 en 3: slapen en energiewinst",
+    "zin 4: de lange zomeravonden",
+    "zin 5: de overheid kiest een vaste tijd",
+    "alleen zin 1: het standpunt"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Argumenten zijn de belangrijkste ondergeschikte uitspraken in een betoog.",
+   "uo": [
+    "Klopt: dit zijn de twee argumenten voor het standpunt; ze horen in een samenvatting.",
+    "Koos je \"zin 4: de lange zomeravonden\"? Dan denk je dat de tegenwerping de belangrijkste ondergeschikte uitspraak is. Ze is een bezwaar, dat de schrijver weerlegt.",
+    "Koos je \"zin 5: de overheid kiest een vaste tijd\"? Dan denk je dat de slotzin een argument is. Hij is een uitwerking, geen argument.",
+    "Koos je \"alleen zin 1: het standpunt\"? Dan denk je dat de hoofduitspraak genoeg is. Belangrijke ondergeschikte uitspraken horen erbij, zoals de argumenten."
+   ],
+   "uh": "Wat onderbouwt het standpunt?",
+   "ctx": "[1] Nederland moet de zomertijd afschaffen. [2] Het twee keer per jaar verzetten van de klok verstoort het bioritme van mensen, waardoor vooral kinderen en ouderen enkele dagen slecht slapen. [3] De energiebesparing die het systeem ooit moest opleveren, is volgens onderzoekers tegenwoordig nauwelijks meer meetbaar. [4] Voorstanders van de zomertijd wijzen op de lange zomeravonden, maar die zijn net zo goed te krijgen door in de zomer vroeger te beginnen met werken. [5] Daarom moet de overheid in Europees verband een vaste tijd kiezen."
+  },
+  {
+   "v": "Een leerling vat samen: \"Voorstanders en tegenstanders zijn het niet eens, wat jammer is.\" Wat is er mis?",
+   "o": [
+    "niets: de zin is kort en duidelijk",
+    "\"wat jammer is\" is een eigen mening",
+    "er ontbreken de standpunten van beide groepen",
+    "de zin noemt de tegenstanders niet"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Een samenvatting bevat geen waardeoordelen van de samenvatter.",
+   "uo": [
+    "Koos je \"niets: de zin is kort en duidelijk\"? Dan denk je dat kort altijd goed is. De zin bevat een oordeel, dus hij is fout.",
+    "Klopt: de tekst noemt de oneenigheid, maar niet dat het jammer is.",
+    "Koos je \"er ontbreken de standpunten van beide groepen\"? Dan denk je dat de zin te kort is. Het probleem is vooral het oordeel, dat in de tekst niet voorkomt.",
+    "Koos je \"de zin noemt de tegenstanders niet\"? Dan denk je dat de tegenstanders ontbreken. Ze worden genoemd als groep, het probleem is de mening."
+   ],
+   "uh": "Wie vindt het jammer?",
+   "ctx": "[1] Moet het onderwijs een vaste canon van boeken, schilderijen en gebeurtenissen aanwijzen die iedere leerling kent? [2] Voorstanders zeggen dat een gedeelde basiskennis mensen verbindt: wie dezelfde verhalen kent, kan sneller met elkaar praten over de samenleving. [3] Tegenstanders vrezen dat een canon vooral laat zien wat de macht van het moment belangrijk vindt, en dat stemmen van minderheden zo buiten beeld blijven. [4] Beide groepen erkennen dat het lastig is te kiezen: elke lijst sluit iets uit. [5] Misschien is de waarde van een canon dan minder de lijst zelf dan het gesprek dat de keuze oproept."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Historici noemen de periode tussen ongeveer 1300 en 1850 de Kleine IJstijd. [2] In die eeuwen waren de winters in Europa gemiddeld kouder dan nu, en rivieren en kanalen vroren vaker dicht. [3] Als mogelijke oorzaken noemen onderzoekers vulkaanuitbarstingen en een tijdelijk lagere zonneactiviteit, al blijft er discussie over het gewicht van elke oorzaak. [4] De kou had gevolgen voor de landbouw: oogsten mislukten en voedsel werd duurder. [5] In Nederland leverde de kou ook iets moois op, want de grachten waren zo vaak bevroren dat schilders het schaatsen vastlegden. [6] Dankzij die schilderijen weten we vandaag hoe belangrijk het ijs in het dagelijks leven was.",
+   "v": "Vat de tekst samen in twee zinnen: de hoofduitspraak en de belangrijkste ondergeschikte uitspraken.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Hoofduitspraak: tussen ongeveer 1300 en 1850 waren de winters in Europa kouder (1p). Ondergeschikt: mogelijk door vulkanen en een zwakkere zon (1p) en met mislukte oogsten en duurder voedsel tot gevolg (1p). Het voorbeeld van de schilders ontbreekt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Moet het onderwijs een vaste canon van boeken, schilderijen en gebeurtenissen aanwijzen die iedere leerling kent? [2] Voorstanders zeggen dat een gedeelde basiskennis mensen verbindt: wie dezelfde verhalen kent, kan sneller met elkaar praten over de samenleving. [3] Tegenstanders vrezen dat een canon vooral laat zien wat de macht van het moment belangrijk vindt, en dat stemmen van minderheden zo buiten beeld blijven. [4] Beide groepen erkennen dat het lastig is te kiezen: elke lijst sluit iets uit. [5] Misschien is de waarde van een canon dan minder de lijst zelf dan het gesprek dat de keuze oproept.",
+   "v": "Vat de tekst over de canon samen in één zin zonder eigen mening.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Over een canon bestaat discussie: voorstanders zien verbinding door gedeelde kennis, tegenstanders vrezen uitsluiting van minderheden (3p: de discussie, de voorstanders, de tegenstanders; 1p per onderdeel)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Nederland moet de zomertijd afschaffen. [2] Het twee keer per jaar verzetten van de klok verstoort het bioritme van mensen, waardoor vooral kinderen en ouderen enkele dagen slecht slapen. [3] De energiebesparing die het systeem ooit moest opleveren, is volgens onderzoekers tegenwoordig nauwelijks meer meetbaar. [4] Voorstanders van de zomertijd wijzen op de lange zomeravonden, maar die zijn net zo goed te krijgen door in de zomer vroeger te beginnen met werken. [5] Daarom moet de overheid in Europees verband een vaste tijd kiezen.",
+   "v": "Welke twee argumenten horen in een samenvatting van het betoog en welke tegenwerping vervalt?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Argumenten: het verzetten van de klok verstoort het slapen (1p) en de energiewinst is nauwelijks meetbaar (1p). De tegenwerping over de lange zomeravonden vervalt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Kinderen van hoogopgeleide ouders gaan gemiddeld vaker naar het vwo dan kinderen van laagopgeleide ouders, ook als hun toetsresultaten op de basisschool even hoog zijn. [2] Onderzoekers noemen dit het effect van sociale herkomst op het schooladvies. [3] Een verklaring is dat hoogopgeleide ouders hun kinderen beter kunnen begeleiden en vaker bij docenten aandringen op een hoger advies. [4] Scholen proberen dat te corrigeren door het advies later vast te stellen en door naast de toets ook de ontwikkeling van het kind mee te laten wegen. [5] Of die maatregelen genoeg zijn, is nog onderwerp van onderzoek.",
+   "v": "Vat de tekst samen in twee zinnen: het verschil, de verklaring en de maatregelen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bij gelijke toetsen krijgen kinderen van hoogopgeleide ouders vaker een hoger advies (1p), onder meer doordat die ouders beter begeleiden en aandringen (1p). Scholen proberen dit te corrigeren met een later advies en aandacht voor ontwikkeling (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Historici noemen de periode tussen ongeveer 1300 en 1850 de Kleine IJstijd. [2] In die eeuwen waren de winters in Europa gemiddeld kouder dan nu, en rivieren en kanalen vroren vaker dicht. [3] Als mogelijke oorzaken noemen onderzoekers vulkaanuitbarstingen en een tijdelijk lagere zonneactiviteit, al blijft er discussie over het gewicht van elke oorzaak. [4] De kou had gevolgen voor de landbouw: oogsten mislukten en voedsel werd duurder. [5] In Nederland leverde de kou ook iets moois op, want de grachten waren zo vaak bevroren dat schilders het schaatsen vastlegden. [6] Dankzij die schilderijen weten we vandaag hoe belangrijk het ijs in het dagelijks leven was.",
+   "v": "Leg uit waarom de zin over de schilders in een samenvatting vervalt en welke twee zinnen blijven.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De schilders zijn een voorbeeld dat de kou illustreert (1p), dus de kern blijft zonder hen overeind (1p). Blijven: de zin over de koudere winters en de zinnen over oorzaken en gevolgen (1p)."
+  }
+ ]
+}
