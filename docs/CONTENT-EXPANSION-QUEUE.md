@@ -67,7 +67,7 @@
   - [x] F5 · nl.F.5 Stijlfiguren en poëzie · 25 vragen (R1 5, R2 11, R3 9, 7 fragmenten en gedichten), 12 begrippen, 5 figuren (beeldspraak, verzwakken en overdrijven, rijmschema's, enjambement, sonnet), geen clip
   - [x] F6 · nl.F.6 Literatuurgeschiedenis in hoofdlijnen · 27 vragen (R1 5, R2 12, R3 10, 8 fragmenten), 12 begrippen, 4 figuren (tijdlijn, reacties, geannoteerd naturalisme, modernisme tegenover postmodernisme), geen clip
 - [x] **VWO · Nederlands** (`nl`) · domein A — Leesvaardigheid (7 van 7 leerdoelen op v2)
-  - [ ] A1 · nl.A.1 Tekstsoort en schrijfdoel bepalen (uiteenzettend, beschouwend, betogend)
+  - [x] A1 · nl.A.1 Tekstsoort en schrijfdoel bepalen (uiteenzettend, beschouwend, betogend) · 27 vragen (R1 7, R2 10, R3 10, 4 eigen leesteksten van 570-700 tekens), 12 begrippen, 4 figuren (drie soorten, beslisboom, mengvorm, valkuilen), geen clip
   - [x] A2 · nl.A.2 Onderwerp en hoofdgedachte aangeven, expliciet en impliciet · 27 vragen (R1 7, R2 10, R3 10, 4 eigen leesteksten van 520-660 tekens en een alinea), 12 begrippen, 4 figuren (onderwerp naar hoofdgedachte, plaats kernzin, impliciete hoofdgedachte, valkuilen), geen clip
   - [x] A3 · nl.A.3 Inhoudelijke en functionele relaties tussen tekstdelen benoemen · 27 vragen (R1 7, R2 10, R3 10, 4 eigen leesteksten van 560-690 tekens met genummerde zinnen), 12 begrippen, 4 figuren (verwijzingen, oorzaak-gevolg en doel-middel, argumentatiestructuur, signaalwoorden), geen clip
   - [x] A4 · nl.A.4 Conclusies trekken over intenties, opvattingen en gevoelens van de auteur · 27 vragen (R1 7, R2 10, R3 10, 4 eigen leesteksten van 500-570 tekens en een zinnenreeks), 12 begrippen, 4 figuren (intentie opvatting gevoel, schaal beladen, ironie, tekstbewijs in stappen), geen clip
