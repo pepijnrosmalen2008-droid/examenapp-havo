@@ -1,0 +1,689 @@
+{
+ "id": "A3",
+ "lo": "nl.A.3",
+ "gs": 2,
+ "naam": "Relaties tussen tekstdelen benoemen",
+ "beschrijving": "Je benoemt inhoudelijke en functionele relaties tussen tekstdelen: verwijzingen, oorzaak en gevolg, doel en middel, standpunt met argumenten en subargumenten, en algemene uitspraken met hun toelichting.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Verwijzingsrelaties",
+  "Oorzaak en gevolg",
+  "Doel en middel",
+  "Standpunt, argument en subargument",
+  "Algemene uitspraak en toelichting",
+  "Signaalwoorden en impliciete relaties"
+ ],
+ "sam": "Tekstdelen hangen op vijf manieren samen: door verwijzing, als oorzaak en gevolg, als doel en middel, als standpunt met argumenten en subargumenten en als algemene uitspraak met toelichting. Signaalwoorden als omdat, zodat, namelijk, echter en dus verraden de relatie, maar ze ontbreken soms. Je bepaalt altijd de functie van een tekstdeel: wat doet deze zin voor het geheel, en waarop reageert hij?",
+ "begrippen": [
+  {
+   "t": "Verwijzing",
+   "d": "Een woord of woordgroep dat terugwijst of vooruitwijst naar iets uit de tekst."
+  },
+  {
+   "t": "Verwijswoord",
+   "d": "Een woord als dit, die, zij of daar dat naar eerder of later genoemde informatie wijst."
+  },
+  {
+   "t": "Oorzaak-gevolg",
+   "d": "Een relatie waarbij het ene tekstdeel de reden is van wat het andere beschrijft."
+  },
+  {
+   "t": "Doel-middel",
+   "d": "Een relatie waarbij het ene deel de handeling is en het andere deel het beoogde resultaat."
+  },
+  {
+   "t": "Standpunt",
+   "d": "De uitspraak waarvoor in een betoog argumenten worden gegeven."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden die het standpunt rechtstreeks ondersteunt."
+  },
+  {
+   "t": "Subargument",
+   "d": "Een reden die een argument ondersteunt in plaats van het standpunt zelf."
+  },
+  {
+   "t": "Tegenwerping",
+   "d": "Een bezwaar tegen het standpunt, vaak genoemd om het daarna te weerleggen."
+  },
+  {
+   "t": "Algemene uitspraak",
+   "d": "Een bewering op hoofdlijnen, die daarna met voorbeelden wordt toegelicht."
+  },
+  {
+   "t": "Toelichting",
+   "d": "Een tekstdeel dat een uitspraak verduidelijkt met uitleg of een voorbeeld."
+  },
+  {
+   "t": "Signaalwoord",
+   "d": "Een woord dat de relatie tussen tekstdelen aanwijst, zoals omdat, zodat of echter."
+  },
+  {
+   "t": "Functie",
+   "d": "Wat een tekstdeel doet voor het geheel, bijvoorbeeld onderbouwen of weerleggen."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Waarnaar verwijst \"Dit\" aan het begin van zin 3?",
+   "o": [
+    "naar de Nederlandse binnensteden uit zin 1",
+    "naar het sluiten van winkels (zin 2)",
+    "naar de gemeenten die in zin 4 optreden",
+    "naar de wandelaars uit dezelfde zin"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Dit vat de vorige zin samen: wat staat er in zin 2?",
+   "uo": [
+    "Koos je \"naar de Nederlandse binnensteden uit zin 1\"? Dan denk je dat een verwijswoord naar het eerste zelfstandig naamwoord terugwijst. \"Dit\" slaat op een hele gebeurtenis, niet op de binnensteden.",
+    "Klopt: \"Dit\" vat de gebeurtenis uit zin 2 samen en geeft daarna het gevolg: leegstand.",
+    "Koos je \"naar de gemeenten die in zin 4 optreden\"? Dan denk je dat het verwijswoord vooruitwijst. \"Dit\" staat in zin 3 en verwijst naar iets dat al is genoemd, de gemeenten komen pas daarna.",
+    "Koos je \"naar de wandelaars uit dezelfde zin\"? Dan denk je dat het verwijswoord naar het laatste woord wijst. De wandelaars komen later in de zin voor, het verwijswoord blikt terug."
+   ],
+   "uh": "Terugkijken.",
+   "ctx": "[1] De Nederlandse binnensteden veranderen snel. [2] Steeds meer winkels sluiten hun deuren, omdat consumenten hun aankopen online doen. [3] Dit leidt tot leegstand, waardoor straten minder aantrekkelijk worden voor wandelaars. [4] Gemeenten proberen die ontwikkeling te keren door horeca toe te laten in oude winkelpanden. [5] Zij hopen op die manier dat bezoekers de binnenstad blijven bezoeken. [6] Deze aanpak werkt in grote steden redelijk, maar in kleinere gemeenten ontbreken de bezoekers om de nieuwe cafés te vullen."
+  },
+  {
+   "v": "Welk verband legt \"omdat\" in zin 2 tussen de twee zinsdelen?",
+   "o": [
+    "doel-middel: online kopen is het middel om winkels te sluiten",
+    "tegenstelling: winkels sluiten, terwijl ze online kopen",
+    "opsomming: winkels sluiten en consumenten kopen online",
+    "oorzaak-gevolg: online kopen veroorzaakt het sluiten"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "\"Omdat\" is een signaalwoord voor oorzaak-gevolg.",
+   "uo": [
+    "Koos je \"doel-middel: online kopen is het middel om winkels...\"? Dan denk je dat de consument winkels wil sluiten. Consumenten kopen online om andere redenen, het sluiten is het gevolg.",
+    "Koos je \"tegenstelling: winkels sluiten, terwijl ze online...\"? Dan denk je dat \"omdat\" een contrast aangeeft. Het woord geeft een reden, geen tegenstelling.",
+    "Koos je \"opsomming: winkels sluiten en consumenten kopen...\"? Dan denk je dat het twee losse feiten zijn. \"Omdat\" verbindt ze als oorzaak en gevolg, dus het is geen opsomming.",
+    "Klopt: \"omdat\" geeft de oorzaak van de winkelsluitingen aan."
+   ],
+   "uh": "Reden aangeven.",
+   "ctx": "[1] De Nederlandse binnensteden veranderen snel. [2] Steeds meer winkels sluiten hun deuren, omdat consumenten hun aankopen online doen. [3] Dit leidt tot leegstand, waardoor straten minder aantrekkelijk worden voor wandelaars. [4] Gemeenten proberen die ontwikkeling te keren door horeca toe te laten in oude winkelpanden. [5] Zij hopen op die manier dat bezoekers de binnenstad blijven bezoeken. [6] Deze aanpak werkt in grote steden redelijk, maar in kleinere gemeenten ontbreken de bezoekers om de nieuwe cafés te vullen."
+  },
+  {
+   "v": "Welk woord in zin 5 kondigt een doel aan?",
+   "o": [
+    "\"zodat\"",
+    "\"daarom\"",
+    "\"voor\"",
+    "\"veel\""
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Signaalwoorden voor doel: zodat, om te, opdat.",
+   "uo": [
+    "Klopt: \"zodat ze niet in de verleiding komen\" noemt het doel van de telefoon verleggen.",
+    "Koos je \"daarom\"? Dan denk je dat \"daarom\" een doel inleidt. Het woord verwijst naar een reden uit de vorige zin, het geeft een oorzaak.",
+    "Koos je \"voor\"? Dan denk je dat \"voor het slapengaan\" een doel geeft. Het is een tijdsaanduiding, geen doelaanduiding.",
+    "Koos je \"veel\"? Dan denk je dat het hoeveelheidswoord een verband aangeeft. Het zegt hoeveel mensen het doen, het legt geen relatie tussen zinsdelen."
+   ],
+   "uh": "Zodat, om te.",
+   "ctx": "[1] Wie 's nachts slecht slaapt, presteert overdag minder goed. [2] Slaaponderzoekers raden daarom aan om vaste bedtijden aan te houden. [3] Regelmatig naar bed gaan helpt het lichaam namelijk een vast ritme op te bouwen. [4] Ook schermen vlak voor het slapengaan kunnen de slaap verstoren; het licht ervan remt de aanmaak van het slaaphormoon melatonine. [5] Veel mensen leggen hun telefoon daarom voor het slapengaan in een andere kamer, zodat ze niet in de verleiding komen. [6] Wie die maatregelen combineert, slaapt doorgaans sneller in en wordt minder vaak wakker."
+  },
+  {
+   "v": "Welke zin bevat het standpunt van de schrijver?",
+   "o": [
+    "zin 2, het eerste argument",
+    "zin 5, de tegenwerping",
+    "zin 1",
+    "zin 6, de slotzin"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Het standpunt staat vooraan; de rest verdedigt het.",
+   "uo": [
+    "Koos je \"zin 2, het eerste argument\"? Dan denk je dat de eerste reden het standpunt is. Zin 2 begint met \"namelijk\" en onderbouwt het standpunt uit zin 1.",
+    "Koos je \"zin 5, de tegenwerping\"? Dan denk je dat de tegenwerping het standpunt is. Dat zijn de woorden van tegenstanders, de schrijver bestrijdt ze.",
+    "Klopt: \"zouden moeten verbieden\" is een standpunt; de andere zinnen verdedigen of bestrijden het.",
+    "Koos je \"zin 6, de slotzin\"? Dan denk je dat de slotzin altijd het standpunt bevat. Zin 6 weerlegt een tegenwerping, het standpunt staat al in zin 1."
+   ],
+   "uh": "Wat moet er gebeuren?",
+   "ctx": "[1] Scholen zouden het gebruik van mobiele telefoons tijdens de les moeten verbieden. [2] Telefoons leiden leerlingen namelijk af van de stof. [3] Zelfs een telefoon die alleen op tafel ligt, trekt de aandacht, omdat leerlingen bang zijn een bericht te missen. [4] Bovendien zorgt een verbod voor rust in de klas, want de docent hoeft niet voortdurend op te treden. [5] Tegenstanders voeren aan dat leerlingen telefoons nodig hebben om op te zoeken wat ze niet weten. [6] Dat argument gaat niet op: een schoolcomputer of de bibliotheek biedt dezelfde mogelijkheid, zonder de verleidingen van een telefoon."
+  },
+  {
+   "v": "Welke functie heeft zin 2 ten opzichte van zin 1?",
+   "o": [
+    "een tegenwerping tegen zin 1",
+    "een oorzaak van de uitspraak in zin 1",
+    "een toelichting met een voorbeeld",
+    "een conclusie uit zin 1"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Zo + voorbeeld: toelichting op een algemene uitspraak.",
+   "uo": [
+    "Koos je \"een tegenwerping tegen zin 1\"? Dan denk je dat zin 2 de uitspraak ontkent. Zin 2 bevestigt hem juist met een voorbeeld, er is geen tegenstelling.",
+    "Koos je \"een oorzaak van de uitspraak in zin 1\"? Dan denk je dat de zin een reden geeft. Zin 2 illustreert de uitspraak alleen, hij verklaart hem niet.",
+    "Klopt: \"Zo\" geeft aan dat zin 2 een voorbeeld is bij de algemene uitspraak in zin 1.",
+    "Koos je \"een conclusie uit zin 1\"? Dan denk je dat de zin de afsluiting is. Zin 2 staat vooraan en werkt uit, hij concludeert niet."
+   ],
+   "uh": "Een voorbeeld erbij.",
+   "ctx": "[1] Het idee dat taal in verval is, is zo oud als de schrijfkunst zelf. [2] Zo klaagden Romeinse schrijvers al over de slordige uitspraak van jongeren. [3] Ook in de zeventiende eeuw verzuchtten Nederlandse taalliefhebbers dat de taal werd bedorven door vreemde woorden. [4] Taalkundigen wijzen er echter op dat verandering bij een levende taal hoort. [5] Een taal die niet verandert, wordt immers niet meer gebruikt, zoals het Latijn. [6] De klacht over verval zegt dus meer over de klager dan over de taal."
+  },
+  {
+   "v": "Welk woord in zin 3 geeft een reden bij zin 2?",
+   "o": [
+    "\"namelijk\"",
+    "\"regelmatig\", het eerste woord van zin 3",
+    "\"daarom\" uit de zin ervoor",
+    "\"helpt\", het werkwoord van de zin"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "\"Namelijk\" is een signaalwoord voor een reden of onderbouwing.",
+   "uo": [
+    "Klopt: \"namelijk\" leidt de uitleg in waarom vaste bedtijden worden aanbevolen.",
+    "Koos je \"regelmatig, het eerste woord van zin 3\"? Dan denk je dat het eerste woord de relatie aangeeft. \"Regelmatig\" beschrijft hoe vaak, het geeft geen reden.",
+    "Koos je \"daarom uit de zin ervoor\"? Dan denk je dat dit woord in zin 3 een reden geeft. \"Daarom\" staat in zin 2 en wijst op een gevolg, niet op de reden.",
+    "Koos je \"helpt, het werkwoord van de zin\"? Dan denk je dat het werkwoord het verband legt. \"Helpt\" beschrijft de werking, de reden zit in \"namelijk\"."
+   ],
+   "uh": "Namelijk geeft de reden.",
+   "ctx": "[1] Wie 's nachts slecht slaapt, presteert overdag minder goed. [2] Slaaponderzoekers raden daarom aan om vaste bedtijden aan te houden. [3] Regelmatig naar bed gaan helpt het lichaam namelijk een vast ritme op te bouwen. [4] Ook schermen vlak voor het slapengaan kunnen de slaap verstoren; het licht ervan remt de aanmaak van het slaaphormoon melatonine. [5] Veel mensen leggen hun telefoon daarom voor het slapengaan in een andere kamer, zodat ze niet in de verleiding komen. [6] Wie die maatregelen combineert, slaapt doorgaans sneller in en wordt minder vaak wakker."
+  },
+  {
+   "v": "Welk signaalwoord wijst op een tegenstelling?",
+   "o": [
+    "daarom",
+    "namelijk",
+    "bovendien",
+    "echter"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Echter, maar, toch, daarentegen: tegenstelling.",
+   "uo": [
+    "Koos je \"daarom\"? Dan denk je dat \"daarom\" een tegenstelling aangeeft. Het woord geeft een gevolg of conclusie, het is geen contrast.",
+    "Koos je \"namelijk\"? Dan denk je dat \"namelijk\" iets tegenovergestelds inleidt. Het woord geeft een reden, het zet niets tegenover elkaar.",
+    "Koos je \"bovendien\"? Dan denk je dat \"bovendien\" een tegenstelling aangeeft. Het voegt iets toe in dezelfde richting, het is een opsomming.",
+    "Klopt: \"echter\" zet iets tegenover het voorafgaande."
+   ],
+   "uh": "Contrast."
+  },
+  {
+   "v": "Waarnaar verwijst \"die ontwikkeling\" in zin 4?",
+   "o": [
+    "naar de komst van horeca in oude panden",
+    "naar de winkelsluitingen en de leegstand",
+    "naar het groeiende aantal bezoekers van de stad",
+    "naar de plannen van de gemeenten zelf"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Zoek terug naar het proces dat wordt gekeerd.",
+   "uo": [
+    "Koos je \"naar de komst van horeca in oude panden\"? Dan denk je dat de ontwikkeling het nieuwe is. Horeca is juist het middel om de ontwikkeling te keren, dus ze verwijst niet naar horeca.",
+    "Klopt: de gemeenten willen de afname van winkels en de gevolgen daarvan keren.",
+    "Koos je \"naar het groeiende aantal bezoekers van de stad\"? Dan denk je dat het om meer bezoekers gaat. Het aantal wandelaars neemt af, daarom willen de gemeenten ingrijpen.",
+    "Koos je \"naar de plannen van de gemeenten zelf\"? Dan denk je dat de ontwikkeling een plan is. De gemeenten reageren op de ontwikkeling, ze zijn er niet de oorzaak van."
+   ],
+   "uh": "Wat wil men keren?",
+   "ctx": "[1] De Nederlandse binnensteden veranderen snel. [2] Steeds meer winkels sluiten hun deuren, omdat consumenten hun aankopen online doen. [3] Dit leidt tot leegstand, waardoor straten minder aantrekkelijk worden voor wandelaars. [4] Gemeenten proberen die ontwikkeling te keren door horeca toe te laten in oude winkelpanden. [5] Zij hopen op die manier dat bezoekers de binnenstad blijven bezoeken. [6] Deze aanpak werkt in grote steden redelijk, maar in kleinere gemeenten ontbreken de bezoekers om de nieuwe cafés te vullen."
+  },
+  {
+   "v": "Hoe verhouden zin 2 en zin 3 zich tot elkaar?",
+   "o": [
+    "zin 3 is een voorbeeld bij wat zin 2 zegt",
+    "zin 3 spreekt de bewering van zin 2 tegen",
+    "zin 3 geeft het doel van zin 2",
+    "zin 2 noemt de oorzaak van zin 3"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Oorzaak in zin 2, gevolg in zin 3: \"leidt tot\" en \"waardoor\".",
+   "uo": [
+    "Koos je \"zin 3 is een voorbeeld bij wat zin 2 zegt\"? Dan denk je dat leegstand een voorbeeld van winkelsluiting is. Leegstand ontstaat echter ná de sluiting en is daar een gevolg van, dus niet een soort sluiting.",
+    "Koos je \"zin 3 spreekt de bewering van zin 2 tegen\"? Dan denk je dat de twee zinnen botsen omdat zin 3 negatief klinkt. De zinnen volgen elkaar logisch op, er staat geen \"echter\" of \"maar\" tussen.",
+    "Koos je \"zin 3 geeft het doel van zin 2\"? Dan denk je dat winkels sluiten om leegstand te krijgen. Niemand streeft leegstand na, dus het is een ongewenst gevolg en geen doel.",
+    "Klopt: de sluiting van winkels (zin 2) leidt tot leegstand en minder aantrekkelijke straten (zin 3)."
+   ],
+   "uh": "Wat veroorzaakt wat?",
+   "ctx": "[1] De Nederlandse binnensteden veranderen snel. [2] Steeds meer winkels sluiten hun deuren, omdat consumenten hun aankopen online doen. [3] Dit leidt tot leegstand, waardoor straten minder aantrekkelijk worden voor wandelaars. [4] Gemeenten proberen die ontwikkeling te keren door horeca toe te laten in oude winkelpanden. [5] Zij hopen op die manier dat bezoekers de binnenstad blijven bezoeken. [6] Deze aanpak werkt in grote steden redelijk, maar in kleinere gemeenten ontbreken de bezoekers om de nieuwe cafés te vullen."
+  },
+  {
+   "v": "Welke relatie bestaat tussen vaste bedtijden en het opbouwen van een vast ritme?",
+   "o": [
+    "oorzaak-gevolg: het ritme veroorzaakt de bedtijden",
+    "doel-middel: de bedtijden zijn het middel, het ritme is het doel",
+    "tegenstelling: vaste bedtijden staan tegenover een vast ritme",
+    "voorbeeld: het ritme is een voorbeeld van bedtijden"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Middel (vaste bedtijden) leidt tot doel (vast ritme).",
+   "uo": [
+    "Koos je \"oorzaak-gevolg: het ritme veroorzaakt de bedtijden\"? Dan denk je dat het ritme eerst komt. De bedtijden zijn juist het middel om het ritme te krijgen, dus de volgorde is omgekeerd.",
+    "Klopt: wie vaste bedtijden aanhoudt, bouwt zo een vast ritme op.",
+    "Koos je \"tegenstelling: vaste bedtijden staan tegenover een...\"? Dan denk je dat het twee uitersten zijn. Ze werken samen, dus er is geen tegenstelling.",
+    "Koos je \"voorbeeld: het ritme is een voorbeeld van bedtijden\"? Dan denk je dat het ritme een soort bedtijd is. Het is een ander begrip, het resultaat van de bedtijden."
+   ],
+   "uh": "Hoe bereik je het?",
+   "ctx": "[1] Wie 's nachts slecht slaapt, presteert overdag minder goed. [2] Slaaponderzoekers raden daarom aan om vaste bedtijden aan te houden. [3] Regelmatig naar bed gaan helpt het lichaam namelijk een vast ritme op te bouwen. [4] Ook schermen vlak voor het slapengaan kunnen de slaap verstoren; het licht ervan remt de aanmaak van het slaaphormoon melatonine. [5] Veel mensen leggen hun telefoon daarom voor het slapengaan in een andere kamer, zodat ze niet in de verleiding komen. [6] Wie die maatregelen combineert, slaapt doorgaans sneller in en wordt minder vaak wakker."
+  },
+  {
+   "v": "Welke functie heeft zin 4 ten opzichte van zin 2 en 3?",
+   "o": [
+    "een tegenwerping tegen de aanbeveling in zin 2",
+    "een conclusie uit zin 2 en 3",
+    "een extra aanbeveling voor betere slaap",
+    "een voorbeeld van een vast ritme"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "\"Ook\" voegt een nieuwe aanbeveling toe naast de vorige.",
+   "uo": [
+    "Koos je \"een tegenwerping tegen de aanbeveling in zin 2\"? Dan denk je dat zin 4 de aanbeveling bestrijdt. \"Ook\" voegt iets toe, het bestrijdt niets.",
+    "Koos je \"een conclusie uit zin 2 en 3\"? Dan denk je dat zin 4 afsluit. Hij staat halverwege en voegt iets toe, de conclusie is zin 6.",
+    "Klopt: \"Ook\" voegt een tweede aanbeveling toe, naast het vaste ritme uit zin 3.",
+    "Koos je \"een voorbeeld van een vast ritme\"? Dan denk je dat schermen een soort ritme zijn. Zin 4 noemt een ander probleem, dus geen voorbeeld."
+   ],
+   "uh": "Ook = erbij.",
+   "ctx": "[1] Wie 's nachts slecht slaapt, presteert overdag minder goed. [2] Slaaponderzoekers raden daarom aan om vaste bedtijden aan te houden. [3] Regelmatig naar bed gaan helpt het lichaam namelijk een vast ritme op te bouwen. [4] Ook schermen vlak voor het slapengaan kunnen de slaap verstoren; het licht ervan remt de aanmaak van het slaaphormoon melatonine. [5] Veel mensen leggen hun telefoon daarom voor het slapengaan in een andere kamer, zodat ze niet in de verleiding komen. [6] Wie die maatregelen combineert, slaapt doorgaans sneller in en wordt minder vaak wakker."
+  },
+  {
+   "v": "Welke zin is het directe argument bij het standpunt in zin 1?",
+   "o": [
+    "zin 2",
+    "zin 3, de tweede zin na zin 1",
+    "zin 5, de zin met \"tegenstanders\"",
+    "zin 6, de weerlegging"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Standpunt (zin 1) wordt direct ondersteund door het argument in zin 2.",
+   "uo": [
+    "Klopt: zin 2 (\"namelijk\") geeft de reden voor het verbod en ondersteunt het standpunt rechtstreeks.",
+    "Koos je \"zin 3, de tweede zin na zin 1\"? Dan denk je dat de eerste zin na zin 1 al het argument is. Zin 3 ondersteunt zin 2, dus het is een subargument en geen direct argument.",
+    "Koos je \"zin 5, de zin met tegenstanders\"? Dan denk je dat de zin met \"tegenstanders\" een argument voor het standpunt is. Zin 5 noemt een argument tegen het standpunt, dus de schrijver bestrijdt het.",
+    "Koos je \"zin 6, de weerlegging\"? Dan denk je dat zin 6 het argument is. Hij weerlegt een tegenwerping, hij is geen argument voor het standpunt zelf."
+   ],
+   "uh": "Wat zegt \"namelijk\"?",
+   "ctx": "[1] Scholen zouden het gebruik van mobiele telefoons tijdens de les moeten verbieden. [2] Telefoons leiden leerlingen namelijk af van de stof. [3] Zelfs een telefoon die alleen op tafel ligt, trekt de aandacht, omdat leerlingen bang zijn een bericht te missen. [4] Bovendien zorgt een verbod voor rust in de klas, want de docent hoeft niet voortdurend op te treden. [5] Tegenstanders voeren aan dat leerlingen telefoons nodig hebben om op te zoeken wat ze niet weten. [6] Dat argument gaat niet op: een schoolcomputer of de bibliotheek biedt dezelfde mogelijkheid, zonder de verleidingen van een telefoon."
+  },
+  {
+   "v": "Welke functie heeft zin 3 binnen de argumentatie?",
+   "o": [
+    "subargument: ondersteunt het argument in zin 2",
+    "het standpunt dat de schrijver in dit stuk verdedigt",
+    "een tegenwerping van de tegenpartij",
+    "de conclusie van het betoog"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Subargument: ondersteunt een argument in plaats van het standpunt.",
+   "uo": [
+    "Klopt: zin 3 onderbouwt waarom telefoons afleiden (zin 2), dus het is een subargument.",
+    "Koos je \"het standpunt dat de schrijver in dit stuk verdedigt\"? Dan denk je dat de zin het standpunt formuleert. Het standpunt staat in zin 1, zin 3 onderbouwt een argument.",
+    "Koos je \"een tegenwerping van de tegenpartij\"? Dan denk je dat de zin bezwaren noemt. Hij ondersteunt juist de schrijver, de tegenwerping staat in zin 5.",
+    "Koos je \"de conclusie van het betoog\"? Dan denk je dat de zin het geheel afsluit. Hij staat vooraan, de weerlegging in zin 6 sluit af."
+   ],
+   "uh": "Wat ondersteunt het?",
+   "ctx": "[1] Scholen zouden het gebruik van mobiele telefoons tijdens de les moeten verbieden. [2] Telefoons leiden leerlingen namelijk af van de stof. [3] Zelfs een telefoon die alleen op tafel ligt, trekt de aandacht, omdat leerlingen bang zijn een bericht te missen. [4] Bovendien zorgt een verbod voor rust in de klas, want de docent hoeft niet voortdurend op te treden. [5] Tegenstanders voeren aan dat leerlingen telefoons nodig hebben om op te zoeken wat ze niet weten. [6] Dat argument gaat niet op: een schoolcomputer of de bibliotheek biedt dezelfde mogelijkheid, zonder de verleidingen van een telefoon."
+  },
+  {
+   "v": "Wat betekent \"echter\" in zin 4 voor de opbouw van de tekst?",
+   "o": [
+    "nog een voorbeeld van de klachten over taalverval",
+    "een oorzaak van de klachten",
+    "tegenstelling: taalkundigen zien het anders",
+    "een herhaling van zin 1"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "\"Echter\" markeert een omslag: eerst de klacht, dan de tegenstem.",
+   "uo": [
+    "Koos je \"nog een voorbeeld van de klachten over taalverval\"? Dan denk je dat zin 4 nog een klacht is. Het woord \"echter\" kondigt een ander standpunt aan, geen extra voorbeeld.",
+    "Koos je \"een oorzaak van de klachten\"? Dan denk je dat zin 4 verklaart waarom men klaagt. De zin noemt juist een tegenpositie, geen oorzaak.",
+    "Klopt: \"echter\" zet de visie van taalkundigen tegenover de klachten uit de eerdere zinnen.",
+    "Koos je \"een herhaling van zin 1\"? Dan denk je dat zin 4 hetzelfde zegt als zin 1. Hij spreekt het idee uit zin 1 tegen, het is geen herhaling."
+   ],
+   "uh": "Wie vindt iets anders?",
+   "ctx": "[1] Het idee dat taal in verval is, is zo oud als de schrijfkunst zelf. [2] Zo klaagden Romeinse schrijvers al over de slordige uitspraak van jongeren. [3] Ook in de zeventiende eeuw verzuchtten Nederlandse taalliefhebbers dat de taal werd bedorven door vreemde woorden. [4] Taalkundigen wijzen er echter op dat verandering bij een levende taal hoort. [5] Een taal die niet verandert, wordt immers niet meer gebruikt, zoals het Latijn. [6] De klacht over verval zegt dus meer over de klager dan over de taal."
+  },
+  {
+   "v": "Welke relatie legt \"immers\" in zin 5 met zin 4?",
+   "o": [
+    "een tegenstelling met wat zin 4 beweert",
+    "reden of onderbouwing bij zin 4",
+    "een gevolg dat uit zin 4 voortvloeit",
+    "een opsomming van meer feiten bij zin 4"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "\"Immers\" is een signaalwoord voor onderbouwing.",
+   "uo": [
+    "Koos je \"een tegenstelling met wat zin 4 beweert\"? Dan denk je dat \"immers\" een contrast aangeeft. Het woord geeft een reden, geen tegenstelling.",
+    "Klopt: \"immers\" noemt waarom verandering bij een levende taal hoort.",
+    "Koos je \"een gevolg dat uit zin 4 voortvloeit\"? Dan denk je dat zin 5 volgt uit zin 4. Zin 5 verklaart juist zin 4, de richting is omgekeerd.",
+    "Koos je \"een opsomming van meer feiten bij zin 4\"? Dan denk je dat zin 5 iets toevoegt. \"Immers\" onderbouwt, het telt niet op."
+   ],
+   "uh": "Immers = want.",
+   "ctx": "[1] Het idee dat taal in verval is, is zo oud als de schrijfkunst zelf. [2] Zo klaagden Romeinse schrijvers al over de slordige uitspraak van jongeren. [3] Ook in de zeventiende eeuw verzuchtten Nederlandse taalliefhebbers dat de taal werd bedorven door vreemde woorden. [4] Taalkundigen wijzen er echter op dat verandering bij een levende taal hoort. [5] Een taal die niet verandert, wordt immers niet meer gebruikt, zoals het Latijn. [6] De klacht over verval zegt dus meer over de klager dan over de taal."
+  },
+  {
+   "v": "Welke relatie legt \"Zij hopen op die manier\" in zin 5 met zin 4?",
+   "o": [
+    "oorzaak-gevolg: horeca leidt altijd tot bezoekers",
+    "tegenstelling: bezoekers blijven weg ondanks horeca",
+    "toelichting zonder doel: de zin legt alleen uit",
+    "doel-middel: horeca als middel, bezoekers als doel"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Middel in zin 4, doel in zin 5.",
+   "uo": [
+    "Koos je \"oorzaak-gevolg: horeca leidt altijd tot bezoekers\"? Dan denk je dat het zeker is dat bezoekers komen. De zin zegt dat gemeenten dat hopen, dus het is een doel en geen zekerheid.",
+    "Koos je \"tegenstelling: bezoekers blijven weg ondanks horeca\"? Dan denk je dat zin 5 een contrast is. Zin 5 noemt de bedoeling, de tegenstelling volgt pas in zin 6.",
+    "Koos je \"toelichting zonder doel: de zin legt alleen uit\"? Dan denk je dat zin 5 niets nieuws zegt. De zin noemt waarom gemeenten dit doen, dat is het doel.",
+    "Klopt: de gemeenten laten horeca toe om bezoekers te behouden."
+   ],
+   "uh": "Wat hopen ze?",
+   "ctx": "[1] De Nederlandse binnensteden veranderen snel. [2] Steeds meer winkels sluiten hun deuren, omdat consumenten hun aankopen online doen. [3] Dit leidt tot leegstand, waardoor straten minder aantrekkelijk worden voor wandelaars. [4] Gemeenten proberen die ontwikkeling te keren door horeca toe te laten in oude winkelpanden. [5] Zij hopen op die manier dat bezoekers de binnenstad blijven bezoeken. [6] Deze aanpak werkt in grote steden redelijk, maar in kleinere gemeenten ontbreken de bezoekers om de nieuwe cafés te vullen."
+  },
+  {
+   "v": "Waarnaar verwijst \"Dat argument\" in zin 6?",
+   "o": [
+    "naar het argument van de schrijver in zin 2",
+    "naar de bewering van de tegenstanders",
+    "naar het standpunt van de schrijver in zin 1",
+    "naar het subargument van de schrijver in zin 3"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "\"Dat argument\" kijkt terug naar het argument dat net is genoemd.",
+   "uo": [
+    "Koos je \"naar het argument van de schrijver in zin 2\"? Dan denk je dat \"dat argument\" het eigen argument van de schrijver is. De schrijver zegt dat het niet opgaat, dus het is een argument van de tegenpartij.",
+    "Klopt: zin 6 reageert op wat tegenstanders in zin 5 aanvoeren.",
+    "Koos je \"naar het standpunt van de schrijver in zin 1\"? Dan denk je dat het standpunt wordt bedoeld. Het standpunt van de schrijver gaat natuurlijk op, het gaat om de tegenwerping.",
+    "Koos je \"naar het subargument van de schrijver in zin 3\"? Dan denk je dat het subargument wordt bedoeld. Het ondersteunt de schrijver, de weerlegging treft de tegenstanders."
+   ],
+   "uh": "Wie voert het aan?",
+   "ctx": "[1] Scholen zouden het gebruik van mobiele telefoons tijdens de les moeten verbieden. [2] Telefoons leiden leerlingen namelijk af van de stof. [3] Zelfs een telefoon die alleen op tafel ligt, trekt de aandacht, omdat leerlingen bang zijn een bericht te missen. [4] Bovendien zorgt een verbod voor rust in de klas, want de docent hoeft niet voortdurend op te treden. [5] Tegenstanders voeren aan dat leerlingen telefoons nodig hebben om op te zoeken wat ze niet weten. [6] Dat argument gaat niet op: een schoolcomputer of de bibliotheek biedt dezelfde mogelijkheid, zonder de verleidingen van een telefoon."
+  },
+  {
+   "v": "Zin 6 begint met \"Deze aanpak\" en bevat \"maar\". Welke functie heeft zin 6?",
+   "o": [
+    "een beperking: de aanpak werkt niet overal",
+    "een conclusie waarin de aanpak wordt aanbevolen",
+    "de oorzaak van de leegstand in de binnensteden",
+    "een voorbeeld van de aanpak in een grote stad"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Deze aanpak + maar: een kanttekening bij de oplossing.",
+   "uo": [
+    "Klopt: de zin nuanceert het succes van de aanpak en geeft aan waarom hij in kleine gemeenten tekortschiet.",
+    "Koos je \"een conclusie waarin de aanpak wordt aanbevolen\"? Dan denk je dat de slotzin altijd beveelt. Hier plaatst de zin een kanttekening, dus hij beveelt niet aan.",
+    "Koos je \"de oorzaak van de leegstand in de binnensteden\"? Dan denk je dat \"maar\" een oorzaak aankondigt. De oorzaken staan in zin 2 en 3, zin 6 gaat over de aanpak.",
+    "Koos je \"een voorbeeld van de aanpak in een grote stad\"? Dan denk je dat zin 6 vooral de grote steden beschrijft. De nadruk ligt op wat ontbreekt, dus het is een beperking."
+   ],
+   "uh": "Wat zegt \"maar\"?",
+   "ctx": "[1] De Nederlandse binnensteden veranderen snel. [2] Steeds meer winkels sluiten hun deuren, omdat consumenten hun aankopen online doen. [3] Dit leidt tot leegstand, waardoor straten minder aantrekkelijk worden voor wandelaars. [4] Gemeenten proberen die ontwikkeling te keren door horeca toe te laten in oude winkelpanden. [5] Zij hopen op die manier dat bezoekers de binnenstad blijven bezoeken. [6] Deze aanpak werkt in grote steden redelijk, maar in kleinere gemeenten ontbreken de bezoekers om de nieuwe cafés te vullen."
+  },
+  {
+   "v": "Wat doet zin 6 met de tegenwerping uit zin 5?",
+   "o": [
+    "een nieuw argument voor het standpunt",
+    "het standpunt van de tegenstanders",
+    "een subargument bij zin 3",
+    "weerlegging van een tegenwerping"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Weerlegging: een tegenwerping wordt onderuitgehaald.",
+   "uo": [
+    "Koos je \"een nieuw argument voor het standpunt\"? Dan denk je dat zin 6 een extra reden geeft. Hij reageert op zin 5, dus hij weerlegt in plaats van onderbouwt.",
+    "Koos je \"het standpunt van de tegenstanders\"? Dan denk je dat zin 6 de opvatting van de tegenpartij weergeeft. Zin 5 doet dat, zin 6 bestrijdt haar.",
+    "Koos je \"een subargument bij zin 3\"? Dan denk je dat zin 6 verder bouwt op zin 3. Zin 6 hangt aan zin 5, niet aan zin 3.",
+    "Klopt: de schrijver neemt het argument van tegenstanders en laat zien dat het niet opgaat."
+   ],
+   "uh": "Reageren op de tegenpartij.",
+   "ctx": "[1] Scholen zouden het gebruik van mobiele telefoons tijdens de les moeten verbieden. [2] Telefoons leiden leerlingen namelijk af van de stof. [3] Zelfs een telefoon die alleen op tafel ligt, trekt de aandacht, omdat leerlingen bang zijn een bericht te missen. [4] Bovendien zorgt een verbod voor rust in de klas, want de docent hoeft niet voortdurend op te treden. [5] Tegenstanders voeren aan dat leerlingen telefoons nodig hebben om op te zoeken wat ze niet weten. [6] Dat argument gaat niet op: een schoolcomputer of de bibliotheek biedt dezelfde mogelijkheid, zonder de verleidingen van een telefoon."
+  },
+  {
+   "v": "Een leerling zegt: \"Zin 6 is een nieuwe aanbeveling.\" Wat is jouw oordeel?",
+   "o": [
+    "juist: elke zin met \"wie\" is een advies",
+    "juist: de zin noemt nog een maatregel",
+    "onjuist: zin 6 vat het resultaat samen",
+    "onjuist: zin 6 is een tegenwerping"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Zin 6 = resultaat en afsluiting van de aanbevelingen.",
+   "uo": [
+    "Koos je \"juist: elke zin met wie is een advies\"? Dan denk je dat \"wie ... \" altijd een advies inleidt. Hier beschrijft de zin een uitkomst, geen opdracht.",
+    "Koos je \"juist: de zin noemt nog een maatregel\"? Dan denk je dat zin 6 een nieuwe maatregel noemt. Hij noemt het effect van de eerder genoemde maatregelen, dus geen nieuwe.",
+    "Klopt: zin 6 beschrijft het resultaat van het combineren van de maatregelen, geen nieuw advies.",
+    "Koos je \"onjuist: zin 6 is een tegenwerping\"? Dan denk je dat zin 6 bezwaren noemt. De zin is positief over de maatregelen, dus geen tegenwerping."
+   ],
+   "uh": "Advies of resultaat?",
+   "ctx": "[1] Wie 's nachts slecht slaapt, presteert overdag minder goed. [2] Slaaponderzoekers raden daarom aan om vaste bedtijden aan te houden. [3] Regelmatig naar bed gaan helpt het lichaam namelijk een vast ritme op te bouwen. [4] Ook schermen vlak voor het slapengaan kunnen de slaap verstoren; het licht ervan remt de aanmaak van het slaaphormoon melatonine. [5] Veel mensen leggen hun telefoon daarom voor het slapengaan in een andere kamer, zodat ze niet in de verleiding komen. [6] Wie die maatregelen combineert, slaapt doorgaans sneller in en wordt minder vaak wakker."
+  },
+  {
+   "v": "Welke omschrijving van doel en middel in zin 5 klopt?",
+   "o": [
+    "niet in verleiding komen is het middel, de telefoon verleggen het doel",
+    "de telefoon verleggen is de oorzaak, het slapen het gevolg",
+    "telefoon verleggen = middel; niet in verleiding komen = doel",
+    "er is geen doel, alleen een gewoonte"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Middel: de actie. Doel: wat je ermee bereikt, na \"zodat\".",
+   "uo": [
+    "Koos je \"niet in verleiding komen is het middel, de telefoon...\"? Dan denk je dat het doel en het middel zijn verwisseld. Het verleggen is de handeling, het doel volgt daarna met \"zodat\".",
+    "Koos je \"de telefoon verleggen is de oorzaak, het slapen het...\"? Dan denk je dat zin 5 een oorzaak-gevolgketen is. De zin gaat over een bewuste keuze, dus over een doel.",
+    "Klopt: de telefoon uit de slaapkamer halen is de handeling, het doel is niet in de verleiding komen.",
+    "Koos je \"er is geen doel, alleen een gewoonte\"? Dan denk je dat het verleggen een routine is. \"Zodat\" kondigt een doel aan, dus er is wel een doel."
+   ],
+   "uh": "Wat doe je en waarom?",
+   "ctx": "[1] Wie 's nachts slecht slaapt, presteert overdag minder goed. [2] Slaaponderzoekers raden daarom aan om vaste bedtijden aan te houden. [3] Regelmatig naar bed gaan helpt het lichaam namelijk een vast ritme op te bouwen. [4] Ook schermen vlak voor het slapengaan kunnen de slaap verstoren; het licht ervan remt de aanmaak van het slaaphormoon melatonine. [5] Veel mensen leggen hun telefoon daarom voor het slapengaan in een andere kamer, zodat ze niet in de verleiding komen. [6] Wie die maatregelen combineert, slaapt doorgaans sneller in en wordt minder vaak wakker."
+  },
+  {
+   "v": "Een leerling zegt: \"Zij\" in zin 5 verwijst naar de bezoekers. Wat klopt er niet?",
+   "o": [
+    "niets: bezoekers hopen dat ze blijven komen",
+    "zij verwijst naar de consumenten uit zin 2",
+    "zij verwijst naar de winkels uit zin 2",
+    "zij wijst naar de gemeenten uit zin 4"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Een verwijswoord past in getal en betekenis bij wat eerder is genoemd.",
+   "uo": [
+    "Koos je \"niets: bezoekers hopen dat ze blijven komen\"? Dan denk je dat het onderwerp \"bezoekers\" is. De bezoekers hopen hier niets, de gemeenten hopen.",
+    "Koos je \"zij verwijst naar de consumenten uit zin 2\"? Dan denk je dat het verwijswoord ver terugwijst. De dichtstbijzijnde passende groep is de gemeenten, in zin 4.",
+    "Koos je \"zij verwijst naar de winkels uit zin 2\"? Dan denk je dat winkels hopen. Winkels kunnen niet hopen, dus dit kan het antecedent niet zijn.",
+    "Klopt: \"Zij hopen\" slaat terug op \"Gemeenten\" in zin 4; de bezoekers zijn het object van het hopen."
+   ],
+   "uh": "Wie kan hopen?",
+   "ctx": "[1] De Nederlandse binnensteden veranderen snel. [2] Steeds meer winkels sluiten hun deuren, omdat consumenten hun aankopen online doen. [3] Dit leidt tot leegstand, waardoor straten minder aantrekkelijk worden voor wandelaars. [4] Gemeenten proberen die ontwikkeling te keren door horeca toe te laten in oude winkelpanden. [5] Zij hopen op die manier dat bezoekers de binnenstad blijven bezoeken. [6] Deze aanpak werkt in grote steden redelijk, maar in kleinere gemeenten ontbreken de bezoekers om de nieuwe cafés te vullen."
+  },
+  {
+   "v": "Welke redenering klopt bij zin 6?",
+   "o": [
+    "zin 6 is een conclusie uit de voorgaande zinnen",
+    "zin 6 is een extra voorbeeld bij het Latijn in zin 5",
+    "zin 6 is een tegenstelling met het idee uit zin 1",
+    "zin 6 is een extra voorbeeld van een klacht"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Dus = conclusie uit eerdere zinnen.",
+   "uo": [
+    "Klopt: \"dus\" markeert dat de schrijver uit de voorgaande zinnen een conclusie trekt.",
+    "Koos je \"zin 6 is een extra voorbeeld bij het Latijn in zin 5\"? Dan denk je dat het Latijn nog eens wordt genoemd. Zin 6 noemt het Latijn niet, hij trekt een conclusie.",
+    "Koos je \"zin 6 is een tegenstelling met het idee uit zin 1\"? Dan denk je dat de zin het tegendeel zegt van het idee uit zin 1. Hij verklaart het idee, dus hij is een conclusie, geen contrast.",
+    "Koos je \"zin 6 is een extra voorbeeld van een klacht\"? Dan denk je dat zin 6 nog een klacht noemt. De zin oordeelt over de klachten, hij is er geen."
+   ],
+   "uh": "Wat volgt uit de rest?",
+   "ctx": "[1] Het idee dat taal in verval is, is zo oud als de schrijfkunst zelf. [2] Zo klaagden Romeinse schrijvers al over de slordige uitspraak van jongeren. [3] Ook in de zeventiende eeuw verzuchtten Nederlandse taalliefhebbers dat de taal werd bedorven door vreemde woorden. [4] Taalkundigen wijzen er echter op dat verandering bij een levende taal hoort. [5] Een taal die niet verandert, wordt immers niet meer gebruikt, zoals het Latijn. [6] De klacht over verval zegt dus meer over de klager dan over de taal."
+  },
+  {
+   "v": "In zin 4 staan \"Bovendien\" en \"want\". Welke relaties geven ze aan?",
+   "o": [
+    "\"bovendien\" geeft een oorzaak, \"want\" een tegenstelling",
+    "\"bovendien\" voegt een argument toe, \"want\" geeft de reden",
+    "beide woorden zetten iets tegenover het voorgaande",
+    "\"bovendien\" geeft een doel aan, \"want\" een gevolg ervan"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Bovendien: extra argument. Want: reden bij het argument.",
+   "uo": [
+    "Koos je \"bovendien geeft een oorzaak, want een tegenstelling\"? Dan denk je dat de functies van de woorden zijn verwisseld. \"Bovendien\" telt op, \"want\" geeft de reden.",
+    "Klopt: de zin noemt een tweede argument voor het verbod en onderbouwt dat meteen met een reden.",
+    "Koos je \"beide woorden zetten iets tegenover het voorgaande\"? Dan denk je dat ze iets tegenover elkaar zetten. Geen van beide doet dat, ze bouwen het argument op.",
+    "Koos je \"bovendien geeft een doel aan, want een gevolg ervan\"? Dan denk je dat \"want\" een gevolg aangeeft. Het woord leidt een reden in, geen gevolg."
+   ],
+   "uh": "Optellen en onderbouwen.",
+   "ctx": "[1] Scholen zouden het gebruik van mobiele telefoons tijdens de les moeten verbieden. [2] Telefoons leiden leerlingen namelijk af van de stof. [3] Zelfs een telefoon die alleen op tafel ligt, trekt de aandacht, omdat leerlingen bang zijn een bericht te missen. [4] Bovendien zorgt een verbod voor rust in de klas, want de docent hoeft niet voortdurend op te treden. [5] Tegenstanders voeren aan dat leerlingen telefoons nodig hebben om op te zoeken wat ze niet weten. [6] Dat argument gaat niet op: een schoolcomputer of de bibliotheek biedt dezelfde mogelijkheid, zonder de verleidingen van een telefoon."
+  },
+  {
+   "v": "Welke reeks van standpunt, argument en subargument klopt?",
+   "o": [
+    "standpunt zin 2; argument zin 1; subargument zin 3",
+    "standpunt zin 1; argument zin 3; subargument zin 2",
+    "standpunt zin 1; argument zin 5; subargument zin 6",
+    "standpunt 1; argument 2; subargument 3"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Standpunt, direct argument, subargument: volgorde van onderbouwing.",
+   "uo": [
+    "Koos je \"standpunt zin 2; argument zin 1; subargument zin 3\"? Dan denk je dat de volgorde omgekeerd is. De zin met \"namelijk\" is het argument, het standpunt staat vooraan.",
+    "Koos je \"standpunt zin 1; argument zin 3; subargument zin 2\"? Dan denk je dat de zinnen van functie zijn gewisseld. Zin 3 ondersteunt zin 2, dus hij is het subargument.",
+    "Koos je \"standpunt zin 1; argument zin 5; subargument zin 6\"? Dan denk je dat de tegenwerping een argument is. Zin 5 is een tegenwerping, zin 6 weerlegt die.",
+    "Klopt: zin 1 verdedigt het verbod, zin 2 geeft de reden en zin 3 onderbouwt die reden."
+   ],
+   "uh": "Wie ondersteunt wie?",
+   "ctx": "[1] Scholen zouden het gebruik van mobiele telefoons tijdens de les moeten verbieden. [2] Telefoons leiden leerlingen namelijk af van de stof. [3] Zelfs een telefoon die alleen op tafel ligt, trekt de aandacht, omdat leerlingen bang zijn een bericht te missen. [4] Bovendien zorgt een verbod voor rust in de klas, want de docent hoeft niet voortdurend op te treden. [5] Tegenstanders voeren aan dat leerlingen telefoons nodig hebben om op te zoeken wat ze niet weten. [6] Dat argument gaat niet op: een schoolcomputer of de bibliotheek biedt dezelfde mogelijkheid, zonder de verleidingen van een telefoon."
+  },
+  {
+   "v": "Zin 2 en zin 3 zijn beide voorbeelden. Waarvan?",
+   "o": [
+    "van de algemene uitspraak in zin 1",
+    "van de conclusie die in zin 6 wordt getrokken",
+    "van de tegenstelling die in zin 4 volgt",
+    "van het beroep op het Latijn in zin 5"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Voorbeelden verduidelijken de algemene uitspraak vooraan.",
+   "uo": [
+    "Klopt: de klachten van Romeinse en zeventiende-eeuwse schrijvers illustreren zin 1.",
+    "Koos je \"van de conclusie die in zin 6 wordt getrokken\"? Dan denk je dat voorbeelden bij de conclusie horen. Ze komen vóór de conclusie, en illustreren de uitspraak uit zin 1.",
+    "Koos je \"van de tegenstelling die in zin 4 volgt\"? Dan denk je dat ze het contrast illustreren. De voorbeelden staan vóór het contrast, ze horen bij zin 1.",
+    "Koos je \"van het beroep op het Latijn in zin 5\"? Dan denk je dat het Latijn de uitspraak toelicht. Het Latijn dient in zin 5 als voorbeeld van een taal zonder verandering, niet van de klachten."
+   ],
+   "uh": "Wat illustreren ze?",
+   "ctx": "[1] Het idee dat taal in verval is, is zo oud als de schrijfkunst zelf. [2] Zo klaagden Romeinse schrijvers al over de slordige uitspraak van jongeren. [3] Ook in de zeventiende eeuw verzuchtten Nederlandse taalliefhebbers dat de taal werd bedorven door vreemde woorden. [4] Taalkundigen wijzen er echter op dat verandering bij een levende taal hoort. [5] Een taal die niet verandert, wordt immers niet meer gebruikt, zoals het Latijn. [6] De klacht over verval zegt dus meer over de klager dan over de taal."
+  },
+  {
+   "v": "Welke relatie is er tussen zin 3 en zin 4 en waaraan zie je dat?",
+   "o": [
+    "zin 4 is de oorzaak van het probleem in zin 3",
+    "zin 4 reageert op het probleem uit zin 3",
+    "zin 4 is een voorbeeld van wat zin 3 beschrijft",
+    "er is geen relatie, het zijn losse zinnen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Een verwijzing als \"die ontwikkeling\" verbindt een zin met wat eraan voorafgaat.",
+   "uo": [
+    "Koos je \"zin 4 is de oorzaak van het probleem in zin 3\"? Dan denk je dat de gemeenten de leegstand veroorzaken. Zij reageren erop, dus de relatie is omgekeerd.",
+    "Klopt: de gemeenten reageren op de leegstand en de verdwijnende bezoekers; het verwijzende \"die ontwikkeling\" verbindt de zinnen.",
+    "Koos je \"zin 4 is een voorbeeld van wat zin 3 beschrijft\"? Dan denk je dat horeca een voorbeeld van leegstand is. Horeca is een oplossing, geen voorbeeld.",
+    "Koos je \"er is geen relatie, het zijn losse zinnen\"? Dan denk je dat de zinnen onafhankelijk zijn. Het woord \"die ontwikkeling\" laat zien dat zin 4 op het voorgaande verder bouwt, dus ze hangen samen."
+   ],
+   "uh": "Waar kijkt de zin naar terug?",
+   "ctx": "[1] De Nederlandse binnensteden veranderen snel. [2] Steeds meer winkels sluiten hun deuren, omdat consumenten hun aankopen online doen. [3] Dit leidt tot leegstand, waardoor straten minder aantrekkelijk worden voor wandelaars. [4] Gemeenten proberen die ontwikkeling te keren door horeca toe te laten in oude winkelpanden. [5] Zij hopen op die manier dat bezoekers de binnenstad blijven bezoeken. [6] Deze aanpak werkt in grote steden redelijk, maar in kleinere gemeenten ontbreken de bezoekers om de nieuwe cafés te vullen."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] De Nederlandse binnensteden veranderen snel. [2] Steeds meer winkels sluiten hun deuren, omdat consumenten hun aankopen online doen. [3] Dit leidt tot leegstand, waardoor straten minder aantrekkelijk worden voor wandelaars. [4] Gemeenten proberen die ontwikkeling te keren door horeca toe te laten in oude winkelpanden. [5] Zij hopen op die manier dat bezoekers de binnenstad blijven bezoeken. [6] Deze aanpak werkt in grote steden redelijk, maar in kleinere gemeenten ontbreken de bezoekers om de nieuwe cafés te vullen.",
+   "v": "Waarnaar verwijst \"Dit\" in zin 3 en welke relatie legt zin 3 met zin 2?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"Dit\" verwijst naar het sluiten van winkels doordat mensen online kopen (1p). De relatie is oorzaak-gevolg (1p): de sluiting leidt tot leegstand, met signaal \"leidt tot\" of \"waardoor\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Wie 's nachts slecht slaapt, presteert overdag minder goed. [2] Slaaponderzoekers raden daarom aan om vaste bedtijden aan te houden. [3] Regelmatig naar bed gaan helpt het lichaam namelijk een vast ritme op te bouwen. [4] Ook schermen vlak voor het slapengaan kunnen de slaap verstoren; het licht ervan remt de aanmaak van het slaaphormoon melatonine. [5] Veel mensen leggen hun telefoon daarom voor het slapengaan in een andere kamer, zodat ze niet in de verleiding komen. [6] Wie die maatregelen combineert, slaapt doorgaans sneller in en wordt minder vaak wakker.",
+   "v": "Benoem in zin 5 een oorzaak-gevolgrelatie en een doel-middelrelatie, met de bijbehorende signaalwoorden.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Oorzaak-gevolg: schermen verstoren de slaap (zin 4), dus mensen leggen de telefoon weg, signaal \"daarom\" (2p). Doel-middel: de telefoon in een andere kamer leggen is het middel, niet in de verleiding komen het doel, signaal \"zodat\" (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Scholen zouden het gebruik van mobiele telefoons tijdens de les moeten verbieden. [2] Telefoons leiden leerlingen namelijk af van de stof. [3] Zelfs een telefoon die alleen op tafel ligt, trekt de aandacht, omdat leerlingen bang zijn een bericht te missen. [4] Bovendien zorgt een verbod voor rust in de klas, want de docent hoeft niet voortdurend op te treden. [5] Tegenstanders voeren aan dat leerlingen telefoons nodig hebben om op te zoeken wat ze niet weten. [6] Dat argument gaat niet op: een schoolcomputer of de bibliotheek biedt dezelfde mogelijkheid, zonder de verleidingen van een telefoon.",
+   "v": "Geef de argumentatiestructuur van de zinnen 1 tot en met 3: standpunt, argument en subargument.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: zin 1, scholen moeten telefoons tijdens de les verbieden (1p). Argument: zin 2, telefoons leiden af (1p). Subargument: zin 3, ook een telefoon die op tafel ligt trekt de aandacht (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Het idee dat taal in verval is, is zo oud als de schrijfkunst zelf. [2] Zo klaagden Romeinse schrijvers al over de slordige uitspraak van jongeren. [3] Ook in de zeventiende eeuw verzuchtten Nederlandse taalliefhebbers dat de taal werd bedorven door vreemde woorden. [4] Taalkundigen wijzen er echter op dat verandering bij een levende taal hoort. [5] Een taal die niet verandert, wordt immers niet meer gebruikt, zoals het Latijn. [6] De klacht over verval zegt dus meer over de klager dan over de taal.",
+   "v": "Welke functie hebben zin 2 en 3 ten opzichte van zin 1 en welke functie heeft zin 6?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zin 2 en 3 zijn toelichtingen met voorbeelden bij de algemene uitspraak in zin 1 (2p). Zin 6 is een conclusie die met \"dus\" uit de voorgaande zinnen wordt getrokken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Scholen zouden het gebruik van mobiele telefoons tijdens de les moeten verbieden. [2] Telefoons leiden leerlingen namelijk af van de stof. [3] Zelfs een telefoon die alleen op tafel ligt, trekt de aandacht, omdat leerlingen bang zijn een bericht te missen. [4] Bovendien zorgt een verbod voor rust in de klas, want de docent hoeft niet voortdurend op te treden. [5] Tegenstanders voeren aan dat leerlingen telefoons nodig hebben om op te zoeken wat ze niet weten. [6] Dat argument gaat niet op: een schoolcomputer of de bibliotheek biedt dezelfde mogelijkheid, zonder de verleidingen van een telefoon.",
+   "v": "Welke functie hebben zin 5 en zin 6 samen in de argumentatie?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zin 5 is een tegenwerping van tegenstanders (1p). Zin 6 weerlegt die tegenwerping (1p) door een alternatief te noemen dat dezelfde mogelijkheid biedt zonder verleidingen (1p)."
+  }
+ ]
+}
