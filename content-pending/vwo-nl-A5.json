@@ -1,0 +1,668 @@
+{
+ "id": "A5",
+ "lo": "nl.A.5",
+ "gs": 2,
+ "naam": "Standpunten, argumenten en schema's herkennen",
+ "beschrijving": "Je vindt in een betoog het standpunt en de argumenten, bepaalt de structuur van de argumentatie, onderscheidt feitelijke en waarderende argumenten en herkent de zes argumentatieschema's van het examen.",
+ "ceStatus": "CE+SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Standpunt en argument vinden",
+  "Argumentatiestructuren",
+  "Feitelijke en waarderende argumenten",
+  "Schema's: oorzaak-gevolg en kenmerk",
+  "Schema's: voor- en nadelen, voorbeeld, vergelijking, autoriteit",
+  "Tegenwerping en valkuilen"
+ ],
+ "sam": "Een betoog heeft een standpunt en argumenten. De structuur van de argumentatie is enkelvoudig, nevenschikkend of onderschikkend. Een argument is feitelijk (controleerbaar) of waarderend (een oordeel). Het examen kent zes argumentatieschema's: oorzaak-gevolg, kenmerk of eigenschap, voor- en nadelen, voorbeelden, vergelijking en autoriteit. Een tegenwerping is een bezwaar dat de schrijver noemt om te weerleggen.",
+ "begrippen": [
+  {
+   "t": "Standpunt",
+   "d": "De uitspraak waarvoor in een betoog argumenten worden gegeven."
+  },
+  {
+   "t": "Argument",
+   "d": "Een reden die het standpunt of een ander argument ondersteunt."
+  },
+  {
+   "t": "Enkelvoudige argumentatie",
+   "d": "Een standpunt dat met één argument wordt ondersteund."
+  },
+  {
+   "t": "Nevenschikkende argumentatie",
+   "d": "Meerdere zelfstandige argumenten die elk het standpunt rechtstreeks ondersteunen."
+  },
+  {
+   "t": "Onderschikkende argumentatie",
+   "d": "Een keten waarin een argument door een volgend argument wordt ondersteund."
+  },
+  {
+   "t": "Feitelijk argument",
+   "d": "Een argument dat je kunt controleren met cijfers, onderzoek of bronnen."
+  },
+  {
+   "t": "Waarderend argument",
+   "d": "Een argument dat een oordeel bevat, zoals eerlijk, beter of belangrijk."
+  },
+  {
+   "t": "Argumentatieschema",
+   "d": "Het patroon waarmee een argument het standpunt ondersteunt."
+  },
+  {
+   "t": "Oorzaak-gevolgschema",
+   "d": "Een argument dat zegt dat A tot B leidt en daarom een standpunt ondersteunt."
+  },
+  {
+   "t": "Voorbeeldschema",
+   "d": "Een argument dat één of enkele gevallen gebruikt om een algemene bewering te ondersteunen."
+  },
+  {
+   "t": "Vergelijkingsschema",
+   "d": "Een argument dat zegt dat wat voor het ene geval geldt, ook voor een vergelijkbaar geval geldt."
+  },
+  {
+   "t": "Autoriteitsschema",
+   "d": "Een argument dat steunt op wat een deskundige of instantie zegt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin bevat het standpunt van de schrijver?",
+   "o": [
+    "zin 2: de kans op werkloosheid is groter",
+    "zin 1: de leerplicht moet worden verlengd",
+    "zin 4: de kosten van uitkeringen zijn hoger",
+    "zin 5: scholen kunnen begeleiding geven"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Standpunt: wat moet of is waar? Argumenten ondersteunen dat.",
+   "uo": [
+    "Koos je \"zin 2: de kans op werkloosheid is groter\"? Dan denk je dat de eerste reden het standpunt is. Zin 2 is een argument, het standpunt staat in zin 1.",
+    "Klopt: \"moet\" in zin 1 is het standpunt; de andere zinnen ondersteunen het.",
+    "Koos je \"zin 4: de kosten van uitkeringen zijn hoger\"? Dan denk je dat de laatste redenering het standpunt is. Zin 4 is een argument, het is niet de stelling zelf.",
+    "Koos je \"zin 5: scholen kunnen begeleiding geven\"? Dan denk je dat de slotzin altijd het standpunt bevat. Zin 5 werkt het voorstel uit, het standpunt staat vooraan."
+   ],
+   "uh": "Wat moet er gebeuren?",
+   "ctx": "[1] Nederland moet de leerplicht verlengen tot achttien jaar. [2] Jongeren die zonder diploma van school gaan, hebben een grotere kans op werkloosheid. [3] Bovendien is een extra jaar onderwijs eerlijk: iedereen heeft recht op een goede start. [4] Ten slotte kost een verlengde leerplicht de samenleving minder dan de uitkeringen die later nodig zijn voor wie geen kwalificatie heeft. [5] Scholen en gemeenten kunnen jongeren daarbij ondersteunen met begeleiding op maat. [6] De overheid moet daarvoor wel extra geld uittrekken."
+  },
+  {
+   "v": "Welke zin bevat een feitelijk argument?",
+   "o": [
+    "zin 2: huurders betalen meer dan kopers",
+    "zin 3: honden zijn betere huisdieren",
+    "alle drie, want ze zijn stellig geformuleerd",
+    "zin 1: een getal dat je kunt controleren"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 2,
+   "u": "Feitelijk = controleerbaar met cijfers of onderzoek.",
+   "uo": [
+    "Koos je \"zin 2: huurders betalen meer dan kopers\"? Dan denk je dat het een vaststelling is. \"Niet eerlijk\" is een waardeoordeel, dat je niet kunt meten.",
+    "Koos je \"zin 3: honden zijn betere huisdieren\"? Dan denk je dat het een feit is omdat het stellig klinkt. \"Beter\" is een mening, geen controleerbaar gegeven.",
+    "Koos je \"alle drie, want ze zijn stellig geformuleerd\"? Dan denk je dat stelligheid een feit maakt. Een feit is controleerbaar, een mening is dat niet.",
+    "Klopt: het aantal inwoners is vast te stellen met tellingen, dus het is feitelijk."
+   ],
+   "uh": "Controleerbaar of niet.",
+   "ctx": "Zin 1: Er wonen in Nederland meer dan zeventien miljoen mensen. Zin 2: Het is niet eerlijk dat huurders meer betalen dan kopers. Zin 3: Honden zijn betere huisdieren dan katten."
+  },
+  {
+   "v": "Waarom is zin 2 een waarderend argument?",
+   "o": [
+    "een oordeel dat je niet kunt meten",
+    "omdat er een getal in de zin ontbreekt",
+    "omdat de zin over huurders gaat",
+    "omdat de zin lang is"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Waarderend = een oordeel over goed of slecht, eerlijk of oneerlijk.",
+   "uo": [
+    "Klopt: \"eerlijk\" is een waardeoordeel; mensen kunnen het ermee oneens zijn.",
+    "Koos je \"omdat er een getal in de zin ontbreekt\"? Dan denk je dat een getal alles feitelijk maakt. Een getal kan ook bij een mening staan, het gaat om de controleerbaarheid.",
+    "Koos je \"omdat de zin over huurders gaat\"? Dan denk je dat het onderwerp een waardeoordeel maakt. Over huurders kun je ook feiten noemen, het gaat om het woord \"eerlijk\".",
+    "Koos je \"omdat de zin lang is\"? Dan denk je dat de lengte iets zegt. De lengte bepaalt niets, waarderend is wat je beoordeelt."
+   ],
+   "uh": "Is het een oordeel?",
+   "ctx": "Zin 1: Er wonen in Nederland meer dan zeventien miljoen mensen. Zin 2: Het is niet eerlijk dat huurders meer betalen dan kopers. Zin 3: Honden zijn betere huisdieren dan katten."
+  },
+  {
+   "v": "Op welk argumentatieschema berust zin 2?",
+   "o": [
+    "vergelijking: vuurwerk lijkt op roken",
+    "autoriteit: een arts zegt dit",
+    "oorzaak-gevolg: vuurwerk geeft letsel",
+    "voorbeeld: een geval met vuurwerk"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Oorzaak-gevolg: A veroorzaakt B.",
+   "uo": [
+    "Koos je \"vergelijking: vuurwerk lijkt op roken\"? Dan denk je dat twee zaken worden vergeleken. De vergelijking staat in zin 3, zin 2 noemt een gevolg.",
+    "Koos je \"autoriteit: een arts zegt dit\"? Dan denk je dat een deskundige wordt aangehaald. Zin 2 noemt geen bron, dat doet zin 4.",
+    "Klopt: zin 2 stelt dat vuurwerk (oorzaak) letsel (gevolg) veroorzaakt.",
+    "Koos je \"voorbeeld: een geval met vuurwerk\"? Dan denk je dat er een voorbeeld wordt gegeven. Zin 2 noemt geen enkel geval, het is een algemeen verband."
+   ],
+   "uh": "Wat veroorzaakt wat?",
+   "ctx": "[1] De gemeente moet het afsteken van vuurwerk verbieden. [2] Vuurwerk veroorzaakt jaarlijks veel letsel, vooral bij jongeren die het zelf afsteken. [3] Net zoals roken in cafés is verboden om mensen te beschermen, kan ook vuurwerk worden verboden om de veiligheid te vergroten. [4] Volgens een arts van het ziekenhuis is een deel van die verwondingen blijvend. [5] Bovendien levert vuurwerk luchtvervuiling op, een kenmerk dat slecht past bij een feest dat iedereen moet kunnen vieren, ook mensen met astma of ouderen."
+  },
+  {
+   "v": "Welke zin bevat een beroep op een deskundige?",
+   "o": [
+    "zin 2: vuurwerk veroorzaakt veel letsel",
+    "zin 3: net zoals roken in cafés",
+    "zin 4: volgens een arts",
+    "zin 5: bovendien luchtvervuiling"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Autoriteit: een argument dat steunt op een expert of instantie.",
+   "uo": [
+    "Koos je \"zin 2: vuurwerk veroorzaakt veel letsel\"? Dan denk je dat het feit zelf een deskundige is. Zin 2 noemt geen bron, dus geen autoriteit.",
+    "Koos je \"zin 3: net zoals roken in cafés\"? Dan denk je dat het voorbeeld een bron is. Zin 3 vergelijkt, het noemt geen deskundige.",
+    "Klopt: \"volgens een arts van het ziekenhuis\" is een beroep op een deskundige.",
+    "Koos je \"zin 5: bovendien luchtvervuiling\"? Dan denk je dat de zin een bron aanhaalt. Er is geen bron, het is een kenmerk van vuurwerk."
+   ],
+   "uh": "Wie is de bron?",
+   "ctx": "[1] De gemeente moet het afsteken van vuurwerk verbieden. [2] Vuurwerk veroorzaakt jaarlijks veel letsel, vooral bij jongeren die het zelf afsteken. [3] Net zoals roken in cafés is verboden om mensen te beschermen, kan ook vuurwerk worden verboden om de veiligheid te vergroten. [4] Volgens een arts van het ziekenhuis is een deel van die verwondingen blijvend. [5] Bovendien levert vuurwerk luchtvervuiling op, een kenmerk dat slecht past bij een feest dat iedereen moet kunnen vieren, ook mensen met astma of ouderen."
+  },
+  {
+   "v": "Hoe heet een structuur waarbij argumenten los naast elkaar het standpunt ondersteunen?",
+   "o": [
+    "nevenschikkend",
+    "onderschikkend",
+    "enkelvoudig (één argument)",
+    "tegenstrijdig"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Nevenschikkend: meerdere zelfstandige argumenten.",
+   "uo": [
+    "Klopt: bij nevenschikking staat elk argument op zichzelf en ondersteunt het standpunt rechtstreeks.",
+    "Koos je \"onderschikkend\"? Dan denk je dat elk argument het vorige ondersteunt. Dat is onderschikking, hier staan de argumenten naast elkaar.",
+    "Koos je \"enkelvoudig (één argument)\"? Dan denk je dat er maar één argument is. Enkelvoudig betekent één argument, hier zijn er meerdere.",
+    "Koos je \"tegenstrijdig\"? Dan denk je dat de argumenten elkaar tegenspreken. Ze ondersteunen hetzelfde standpunt, dus ze versterken elkaar."
+   ],
+   "uh": "Naast elkaar."
+  },
+  {
+   "v": "Welk deel van deze tekst is een tegenwerping tegen het standpunt?",
+   "o": [
+    "zin 2: het voorbeeld van Lisa",
+    "zin 4: slaaptekort en vergelijkingsdrang",
+    "zin 1: het standpunt zelf",
+    "zin 3: de voordelen van sociale media"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Een tegenwerping is een bezwaar dat de schrijver noemt om te weerleggen.",
+   "uo": [
+    "Koos je \"zin 2: het voorbeeld van Lisa\"? Dan denk je dat het voorbeeld de tegenpartij is. Het voorbeeld ondersteunt het standpunt, het is geen bezwaar.",
+    "Koos je \"zin 4: slaaptekort en vergelijkingsdrang\"? Dan denk je dat de nadelen de tegenwerping zijn. Ze zijn juist de weerlegging, de schrijver wint er mee.",
+    "Koos je \"zin 1: het standpunt zelf\"? Dan denk je dat het standpunt de tegenwerping is. Het standpunt staat los van de tegenpartij, het is de stelling.",
+    "Klopt: zin 3 noemt voordelen, dus argumenten tegen het beperken van sociale media."
+   ],
+   "uh": "Welk bezwaar?",
+   "ctx": "[1] Ouders moeten het gebruik van sociale media door hun kinderen beperken. [2] Neem Lisa, die na een maand op Instagram steeds onzekerder werd over haar uiterlijk. [3] Natuurlijk zijn er ook voordelen: je blijft in contact met vrienden en je ontdekt nieuwe interesses. [4] Maar die voordelen wegen niet op tegen de nadelen, want slaaptekort en vergelijkingsdrang beïnvloeden het dagelijks leven van een kind sterk. [5] Ouders die dat moeilijk vinden, kunnen beginnen met vaste schermvrije uren aan tafel en voor het slapengaan."
+  },
+  {
+   "v": "Welke structuur heeft de argumentatie in deze tekst?",
+   "o": [
+    "onderschikkend: elk argument steunt het vorige",
+    "nevenschikkend: drie zelfstandige argumenten",
+    "enkelvoudig: er is één argument voor het standpunt",
+    "tegenstrijdig: de argumenten spreken elkaar tegen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Nevenschikkend: argumenten naast elkaar, elk met bijvoorbeeld \"bovendien\".",
+   "uo": [
+    "Koos je \"onderschikkend: elk argument steunt het vorige\"? Dan denk je dat de zinnen op elkaar bouwen. Elk argument kan op zichzelf staan, dus het is niet onderschikkend.",
+    "Klopt: de zinnen 2, 3 en 4 ondersteunen elk het standpunt op zichzelf, ingeleid met \"bovendien\" en \"ten slotte\".",
+    "Koos je \"enkelvoudig: er is één argument voor het standpunt\"? Dan denk je dat er maar één argument is. Er zijn drie argumenten, dus de structuur is niet enkelvoudig.",
+    "Koos je \"tegenstrijdig: de argumenten spreken elkaar tegen\"? Dan denk je dat de argumenten botsen. Ze versterken elkaar, ze wijzen dezelfde kant op."
+   ],
+   "uh": "Naast elkaar.",
+   "ctx": "[1] Nederland moet de leerplicht verlengen tot achttien jaar. [2] Jongeren die zonder diploma van school gaan, hebben een grotere kans op werkloosheid. [3] Bovendien is een extra jaar onderwijs eerlijk: iedereen heeft recht op een goede start. [4] Ten slotte kost een verlengde leerplicht de samenleving minder dan de uitkeringen die later nodig zijn voor wie geen kwalificatie heeft. [5] Scholen en gemeenten kunnen jongeren daarbij ondersteunen met begeleiding op maat. [6] De overheid moet daarvoor wel extra geld uittrekken."
+  },
+  {
+   "v": "Welke structuur hebben de zinnen 2 tot en met 4 samen?",
+   "o": [
+    "nevenschikkend: drie argumenten naast elkaar",
+    "enkelvoudig: één argument zonder ondersteuning",
+    "geen structuur: het zijn losse zinnen",
+    "onderschikkend: argument steunt argument"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Onderschikkend: argument, onderbouwing van het argument, onderbouwing daarvan.",
+   "uo": [
+    "Koos je \"nevenschikkend: drie argumenten naast elkaar\"? Dan denk je dat de zinnen los staan. Ze zijn aan elkaar gekoppeld met \"immers\" en \"en\", dus ze bouwen op.",
+    "Koos je \"enkelvoudig: één argument zonder ondersteuning\"? Dan denk je dat er één argument is. Er zijn meerdere zinnen die elkaar onderbouwen, dus het is meervoudig.",
+    "Koos je \"geen structuur: het zijn losse zinnen\"? Dan denk je dat de zinnen niet samenhangen. Ze vormen een redenering, van reiskosten tot studieprestaties.",
+    "Klopt: zin 3 en 4 onderbouwen de bewering in zin 2 in een keten."
+   ],
+   "uh": "Een keten.",
+   "ctx": "[1] Studenten zouden gratis openbaar vervoer moeten krijgen. [2] Reizen is voor veel studenten een zware kostenpost, vooral als zij ver van hun opleiding wonen, en dat drukt hun studieprestaties. [3] Wie een groot deel van zijn geld aan reiskosten kwijt is, moet immers meer bijbaantjes nemen om de huur en het eten te kunnen betalen. [4] En wie meer uren werkt, heeft minder tijd om te studeren. [5] Het is dus in het belang van de samenleving dat studenten niet door geldzorgen worden afgeleid van hun opleiding."
+  },
+  {
+   "v": "Welke zin bevat een waarderend argument?",
+   "o": [
+    "zin 2: een grotere kans op werkloosheid",
+    "zin 3: een extra jaar onderwijs is eerlijk",
+    "zin 4: de kosten voor de samenleving",
+    "zin 5: scholen en gemeenten kunnen begeleiden"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Waarderend: eerlijk, recht, belangrijk. Feitelijk: controleerbaar.",
+   "uo": [
+    "Koos je \"zin 2: een grotere kans op werkloosheid\"? Dan denk je dat deze zin een oordeel bevat. Hij noemt een controleerbaar verband, dus het is feitelijk.",
+    "Klopt: \"eerlijk\" en \"recht op een goede start\" zijn waardeoordelen.",
+    "Koos je \"zin 4: de kosten voor de samenleving\"? Dan denk je dat kosten een waardeoordeel zijn. Kosten zijn berekenbaar, dus het is feitelijk.",
+    "Koos je \"zin 5: scholen en gemeenten kunnen begeleiden\"? Dan denk je dat deze zin een oordeel bevat. Hij beschrijft een mogelijkheid, geen waardeoordeel."
+   ],
+   "uh": "Zoek het oordeel.",
+   "ctx": "[1] Nederland moet de leerplicht verlengen tot achttien jaar. [2] Jongeren die zonder diploma van school gaan, hebben een grotere kans op werkloosheid. [3] Bovendien is een extra jaar onderwijs eerlijk: iedereen heeft recht op een goede start. [4] Ten slotte kost een verlengde leerplicht de samenleving minder dan de uitkeringen die later nodig zijn voor wie geen kwalificatie heeft. [5] Scholen en gemeenten kunnen jongeren daarbij ondersteunen met begeleiding op maat. [6] De overheid moet daarvoor wel extra geld uittrekken."
+  },
+  {
+   "v": "Hoe controleer je het feitelijke argument in zin 2?",
+   "o": [
+    "door te vragen of je het er eerlijk mee eens bent",
+    "door te kijken naar het aantal zinnen",
+    "met onderzoek of cijfers over werkloosheid",
+    "door te raden wat de schrijver vindt"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Feitelijke argumenten controleer je met cijfers, onderzoek of bronnen.",
+   "uo": [
+    "Koos je \"door te vragen of je het er eerlijk mee eens bent\"? Dan denk je dat je met je gevoel controleert. Dat past bij een waarderend argument, niet bij een feit.",
+    "Koos je \"door te kijken naar het aantal zinnen\"? Dan denk je dat de lengte de waarde bepaalt. Ze zegt niets over de juistheid, je zoekt gegevens.",
+    "Klopt: een feitelijk argument controleer je met gegevens.",
+    "Koos je \"door te raden wat de schrijver vindt\"? Dan denk je dat de mening van de schrijver het bewijs is. Een feit is onafhankelijk van zijn mening, je moet gegevens zoeken."
+   ],
+   "uh": "Zoek gegevens.",
+   "ctx": "[1] Nederland moet de leerplicht verlengen tot achttien jaar. [2] Jongeren die zonder diploma van school gaan, hebben een grotere kans op werkloosheid. [3] Bovendien is een extra jaar onderwijs eerlijk: iedereen heeft recht op een goede start. [4] Ten slotte kost een verlengde leerplicht de samenleving minder dan de uitkeringen die later nodig zijn voor wie geen kwalificatie heeft. [5] Scholen en gemeenten kunnen jongeren daarbij ondersteunen met begeleiding op maat. [6] De overheid moet daarvoor wel extra geld uittrekken."
+  },
+  {
+   "v": "Op welk patroon van redeneren berust zin 3?",
+   "o": [
+    "vergelijking: roken in cafés en vuurwerk",
+    "oorzaak-gevolg: roken veroorzaakt vuurwerk",
+    "autoriteit: een wet zegt dit",
+    "voorbeeld: roken is één geval van verbod"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Vergelijking: wat in het ene geval geldt, geldt ook in het andere.",
+   "uo": [
+    "Klopt: de zin stelt twee vergelijkbare gevallen naast elkaar om hetzelfde te concluderen.",
+    "Koos je \"oorzaak-gevolg: roken veroorzaakt vuurwerk\"? Dan denk je dat het om een oorzaak gaat. Roken veroorzaakt geen vuurwerk, de zin vergelijkt twee situaties.",
+    "Koos je \"autoriteit: een wet zegt dit\"? Dan denk je dat een wet het bewijs is. De wet is alleen het vergelijkingspunt, het argument leunt op de vergelijking.",
+    "Koos je \"voorbeeld: roken is één geval van verbod\"? Dan denk je dat roken een voorbeeld is. Het wordt vergeleken met vuurwerk, het is geen voorbeeld voor een algemene regel."
+   ],
+   "uh": "Twee gevallen naast elkaar.",
+   "ctx": "[1] De gemeente moet het afsteken van vuurwerk verbieden. [2] Vuurwerk veroorzaakt jaarlijks veel letsel, vooral bij jongeren die het zelf afsteken. [3] Net zoals roken in cafés is verboden om mensen te beschermen, kan ook vuurwerk worden verboden om de veiligheid te vergroten. [4] Volgens een arts van het ziekenhuis is een deel van die verwondingen blijvend. [5] Bovendien levert vuurwerk luchtvervuiling op, een kenmerk dat slecht past bij een feest dat iedereen moet kunnen vieren, ook mensen met astma of ouderen."
+  },
+  {
+   "v": "Welk schema gebruikt zin 5?",
+   "o": [
+    "kenmerk: luchtvervuiling past niet bij feest",
+    "oorzaak-gevolg: vuurwerk veroorzaakt feest",
+    "voor- en nadelen: het feest heeft ook voordelen",
+    "autoriteit: de gemeente zegt dat vuurwerk slecht is"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Kenmerk: een eigenschap van X maakt X wel of niet geschikt.",
+   "uo": [
+    "Klopt: de zin noemt een eigenschap van vuurwerk en trekt daaruit een conclusie.",
+    "Koos je \"oorzaak-gevolg: vuurwerk veroorzaakt feest\"? Dan denk je dat de zin een oorzaak noemt. De eigenschap, luchtvervuiling, wordt aangewezen, niet de oorzaak van het feest.",
+    "Koos je \"voor- en nadelen: het feest heeft ook voordelen\"? Dan denk je dat voor- en nadelen worden vergeleken. Er staat alleen een nadeel, zonder voordelen ertegenover.",
+    "Koos je \"autoriteit: de gemeente zegt dat vuurwerk slecht is\"? Dan denk je dat een instantie wordt aangehaald. Er is geen bron, de zin noemt een eigenschap."
+   ],
+   "uh": "Welke eigenschap?",
+   "ctx": "[1] De gemeente moet het afsteken van vuurwerk verbieden. [2] Vuurwerk veroorzaakt jaarlijks veel letsel, vooral bij jongeren die het zelf afsteken. [3] Net zoals roken in cafés is verboden om mensen te beschermen, kan ook vuurwerk worden verboden om de veiligheid te vergroten. [4] Volgens een arts van het ziekenhuis is een deel van die verwondingen blijvend. [5] Bovendien levert vuurwerk luchtvervuiling op, een kenmerk dat slecht past bij een feest dat iedereen moet kunnen vieren, ook mensen met astma of ouderen."
+  },
+  {
+   "v": "Welk schema gebruikt zin 2 in deze tekst?",
+   "o": [
+    "vergelijking: Lisa is vergeleken met andere meisjes",
+    "autoriteit: Lisa is een expert",
+    "voorbeeld: het geval van Lisa",
+    "oorzaak-gevolg: Instagram veroorzaakt onzekerheid bij iedereen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Voorbeeld: één geval ondersteunt een algemene bewering.",
+   "uo": [
+    "Koos je \"vergelijking: Lisa is vergeleken met andere meisjes\"? Dan denk je dat Lisa met anderen wordt vergeleken. Ze staat op zichzelf, als geval.",
+    "Koos je \"autoriteit: Lisa is een expert\"? Dan denk je dat Lisa een deskundige is. Ze is een gebruiker, geen expert.",
+    "Klopt: één geval wordt gebruikt om een algemene bewering te ondersteunen.",
+    "Koos je \"oorzaak-gevolg: Instagram veroorzaakt onzekerheid...\"? Dan denk je dat de zin een algemeen verband beweert. Hij beschrijft één persoon, dus het is een voorbeeld."
+   ],
+   "uh": "Eén geval.",
+   "ctx": "[1] Ouders moeten het gebruik van sociale media door hun kinderen beperken. [2] Neem Lisa, die na een maand op Instagram steeds onzekerder werd over haar uiterlijk. [3] Natuurlijk zijn er ook voordelen: je blijft in contact met vrienden en je ontdekt nieuwe interesses. [4] Maar die voordelen wegen niet op tegen de nadelen, want slaaptekort en vergelijkingsdrang beïnvloeden het dagelijks leven van een kind sterk. [5] Ouders die dat moeilijk vinden, kunnen beginnen met vaste schermvrije uren aan tafel en voor het slapengaan."
+  },
+  {
+   "v": "Welk schema vormen zin 3 en 4 samen?",
+   "o": [
+    "vergelijking: sociale media en school",
+    "voor- en nadelen: nadelen wegen zwaarder",
+    "autoriteit: de voordelen zijn van een expert",
+    "voorbeeld: contact met vrienden is een voorbeeld"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Voor- en nadelen: afwegen en kiezen op basis van het gewicht.",
+   "uo": [
+    "Koos je \"vergelijking: sociale media en school\"? Dan denk je dat twee gevallen worden vergeleken. Het gaat om de afweging van voordelen en nadelen, niet om gelijke situaties.",
+    "Klopt: voordelen en nadelen worden gewogen en de schrijver kiest voor de nadelen.",
+    "Koos je \"autoriteit: de voordelen zijn van een expert\"? Dan denk je dat een bron wordt aangehaald. Er is geen bron, het gaat om afwegen.",
+    "Koos je \"voorbeeld: contact met vrienden is een voorbeeld\"? Dan denk je dat de voordelen voorbeelden zijn. Het zijn voordelen in een afweging, geen voorbeeld bij een algemene regel."
+   ],
+   "uh": "Wat weegt zwaarder?",
+   "ctx": "[1] Ouders moeten het gebruik van sociale media door hun kinderen beperken. [2] Neem Lisa, die na een maand op Instagram steeds onzekerder werd over haar uiterlijk. [3] Natuurlijk zijn er ook voordelen: je blijft in contact met vrienden en je ontdekt nieuwe interesses. [4] Maar die voordelen wegen niet op tegen de nadelen, want slaaptekort en vergelijkingsdrang beïnvloeden het dagelijks leven van een kind sterk. [5] Ouders die dat moeilijk vinden, kunnen beginnen met vaste schermvrije uren aan tafel en voor het slapengaan."
+  },
+  {
+   "v": "Welke zin is het argument dat direct het standpunt ondersteunt?",
+   "o": [
+    "zin 3: wie veel aan reizen uitgeeft, moet bijbaantjes nemen",
+    "zin 4: wie meer werkt, heeft minder tijd",
+    "zin 5: het belang van de samenleving",
+    "zin 2: reizen is een zware kostenpost voor studenten"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Direct argument: de reden die het standpunt zelf steunt.",
+   "uo": [
+    "Koos je \"zin 3: wie veel aan reizen uitgeeft, moet...\"? Dan denk je dat zin 3 het eerste argument is. Zin 3 ondersteunt zin 2, dus het is een onderbouwing.",
+    "Koos je \"zin 4: wie meer werkt, heeft minder tijd\"? Dan denk je dat de laatste stap het argument is. Zin 4 is een onderbouwing, het argument is zin 2.",
+    "Koos je \"zin 5: het belang van de samenleving\"? Dan denk je dat de slotzin het directe argument is. Zin 5 is een tweede, waarderend argument, de eerste staat in zin 2.",
+    "Klopt: zin 2 geeft de eerste reden voor gratis ov; zin 3 en 4 ondersteunen dat argument."
+   ],
+   "uh": "Wat steunt zin 1?",
+   "ctx": "[1] Studenten zouden gratis openbaar vervoer moeten krijgen. [2] Reizen is voor veel studenten een zware kostenpost, vooral als zij ver van hun opleiding wonen, en dat drukt hun studieprestaties. [3] Wie een groot deel van zijn geld aan reiskosten kwijt is, moet immers meer bijbaantjes nemen om de huur en het eten te kunnen betalen. [4] En wie meer uren werkt, heeft minder tijd om te studeren. [5] Het is dus in het belang van de samenleving dat studenten niet door geldzorgen worden afgeleid van hun opleiding."
+  },
+  {
+   "v": "Welke functie heeft zin 4 in deze tekst?",
+   "o": [
+    "een tweede tegenwerping",
+    "weerlegging van zin 3",
+    "een herhaling van het voorbeeld",
+    "een conclusie van het hele betoog"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Weerlegging: een tegenwerping onderuit halen.",
+   "uo": [
+    "Koos je \"een tweede tegenwerping\"? Dan denk je dat zin 4 weer een bezwaar noemt. Zin 4 weerlegt het bezwaar uit zin 3, dus het is geen nieuw bezwaar.",
+    "Klopt: \"maar\" zet de nadelen tegenover de voordelen en de schrijver kiest voor het standpunt.",
+    "Koos je \"een herhaling van het voorbeeld\"? Dan denk je dat zin 4 het voorbeeld herhaalt. Hij gaat over voordelen en nadelen, niet over Lisa.",
+    "Koos je \"een conclusie van het hele betoog\"? Dan denk je dat zin 4 afsluit. Het is een weerlegging, er volgt geen eindoordeel."
+   ],
+   "uh": "Wat doet \"maar\"?",
+   "ctx": "[1] Ouders moeten het gebruik van sociale media door hun kinderen beperken. [2] Neem Lisa, die na een maand op Instagram steeds onzekerder werd over haar uiterlijk. [3] Natuurlijk zijn er ook voordelen: je blijft in contact met vrienden en je ontdekt nieuwe interesses. [4] Maar die voordelen wegen niet op tegen de nadelen, want slaaptekort en vergelijkingsdrang beïnvloeden het dagelijks leven van een kind sterk. [5] Ouders die dat moeilijk vinden, kunnen beginnen met vaste schermvrije uren aan tafel en voor het slapengaan."
+  },
+  {
+   "v": "Zin 3 en 4 vormen samen een keten. Waarom is dat onderschikkend en niet nevenschikkend?",
+   "o": [
+    "ze onderbouwen het argument in zin 2",
+    "omdat ze beide met \"en\" zijn verbonden",
+    "omdat ze later in de tekst staan",
+    "omdat ze beide het standpunt direct steunen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Onderschikkend: een argument onderbouwt een ander argument.",
+   "uo": [
+    "Klopt: zonder zin 2 hebben zin 3 en 4 geen functie; ze ondersteunen dat argument.",
+    "Koos je \"omdat ze beide met en zijn verbonden\"? Dan denk je dat het voegwoord de structuur bepaalt. De structuur volgt uit wat ze ondersteunen, niet uit het voegwoord.",
+    "Koos je \"omdat ze later in de tekst staan\"? Dan denk je dat de volgorde de structuur bepaalt. Wat telt is de relatie, niet de plaats.",
+    "Koos je \"omdat ze beide het standpunt direct steunen\"? Dan denk je dat ze rechtstreeks aan zin 1 hangen. Ze hangen aan zin 2, dus ze zijn onderschikt."
+   ],
+   "uh": "Wat onderbouwen ze?",
+   "ctx": "[1] Studenten zouden gratis openbaar vervoer moeten krijgen. [2] Reizen is voor veel studenten een zware kostenpost, vooral als zij ver van hun opleiding wonen, en dat drukt hun studieprestaties. [3] Wie een groot deel van zijn geld aan reiskosten kwijt is, moet immers meer bijbaantjes nemen om de huur en het eten te kunnen betalen. [4] En wie meer uren werkt, heeft minder tijd om te studeren. [5] Het is dus in het belang van de samenleving dat studenten niet door geldzorgen worden afgeleid van hun opleiding."
+  },
+  {
+   "v": "Welke zin in deze tekst is geen argument maar een uitwerking van het voorstel?",
+   "o": [
+    "zin 2: de kans op werkloosheid",
+    "zin 3: een extra jaar is eerlijk",
+    "zin 4: de kosten voor de samenleving",
+    "zin 5: scholen kunnen begeleiden"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Een uitwerking zegt hoe, een argument zegt waarom.",
+   "uo": [
+    "Koos je \"zin 2: de kans op werkloosheid\"? Dan denk je dat deze zin een uitwerking is. Hij noemt een reden, dus het is een argument.",
+    "Koos je \"zin 3: een extra jaar is eerlijk\"? Dan denk je dat deze zin geen argument is omdat hij kort is. Hij noemt een waarderende reden, dus het is wel een argument.",
+    "Koos je \"zin 4: de kosten voor de samenleving\"? Dan denk je dat kosten een uitwerking zijn. Het is een reden om het standpunt over te nemen, dus een argument.",
+    "Klopt: zin 5 zegt hoe het kan, maar geeft geen reden om het standpunt over te nemen."
+   ],
+   "uh": "Hoe of waarom?",
+   "ctx": "[1] Nederland moet de leerplicht verlengen tot achttien jaar. [2] Jongeren die zonder diploma van school gaan, hebben een grotere kans op werkloosheid. [3] Bovendien is een extra jaar onderwijs eerlijk: iedereen heeft recht op een goede start. [4] Ten slotte kost een verlengde leerplicht de samenleving minder dan de uitkeringen die later nodig zijn voor wie geen kwalificatie heeft. [5] Scholen en gemeenten kunnen jongeren daarbij ondersteunen met begeleiding op maat. [6] De overheid moet daarvoor wel extra geld uittrekken."
+  },
+  {
+   "v": "Een leerling noemt zin 5 een feitelijk argument. Wat is jouw oordeel?",
+   "o": [
+    "juist: er staat \"dus\" en dat woord kondigt altijd een feit aan",
+    "juist: de zin noemt studenten, een telbare groep",
+    "onjuist: \"belang van de samenleving\" is een oordeel",
+    "onjuist: de zin is een tegenwerping"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Belang en eerlijkheid zijn oordelen, geen feiten.",
+   "uo": [
+    "Koos je \"juist: er staat dus en dat woord kondigt altijd een...\"? Dan denk je dat \"dus\" een feit aankondigt. Het woord geeft een conclusie aan, de inhoud blijft een oordeel.",
+    "Koos je \"juist: de zin noemt studenten, een telbare groep\"? Dan denk je dat een telbare groep de zin feitelijk maakt. Het gaat om het belang, en dat is een oordeel.",
+    "Klopt: \"in het belang van de samenleving\" kun je niet met cijfers controleren; het is waarderend.",
+    "Koos je \"onjuist: de zin is een tegenwerping\"? Dan denk je dat de zin een bezwaar noemt. De zin ondersteunt het standpunt, dus het is een argument."
+   ],
+   "uh": "Is het controleerbaar?",
+   "ctx": "[1] Studenten zouden gratis openbaar vervoer moeten krijgen. [2] Reizen is voor veel studenten een zware kostenpost, vooral als zij ver van hun opleiding wonen, en dat drukt hun studieprestaties. [3] Wie een groot deel van zijn geld aan reiskosten kwijt is, moet immers meer bijbaantjes nemen om de huur en het eten te kunnen betalen. [4] En wie meer uren werkt, heeft minder tijd om te studeren. [5] Het is dus in het belang van de samenleving dat studenten niet door geldzorgen worden afgeleid van hun opleiding."
+  },
+  {
+   "v": "Waarom is zin 2 een feitelijk argument met een oorzaak-gevolgschema?",
+   "o": [
+    "omdat de zin een mening bevat over vuurwerk en over jongeren zelf",
+    "omdat de zin vuurwerk vergelijkt met roken",
+    "een controleerbaar gevolg wordt aan een oorzaak gekoppeld",
+    "omdat een arts het zegt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Feitelijk schema: oorzaak-gevolg, toetsbaar met gegevens.",
+   "uo": [
+    "Koos je \"omdat de zin een mening bevat over vuurwerk en over...\"? Dan denk je dat de zin een oordeel is. De zin beschrijft een verband, geen waardeoordeel.",
+    "Koos je \"omdat de zin vuurwerk vergelijkt met roken\"? Dan denk je dat de vergelijking in zin 2 staat. Die staat in zin 3, zin 2 noemt een gevolg.",
+    "Klopt: het verband tussen vuurwerk en letsel is met ziekenhuiscijfers te toetsen.",
+    "Koos je \"omdat een arts het zegt\"? Dan denk je dat een bron nodig is. De bron staat in zin 4, zin 2 noemt zelf een gevolg."
+   ],
+   "uh": "Is het toetsbaar?",
+   "ctx": "[1] De gemeente moet het afsteken van vuurwerk verbieden. [2] Vuurwerk veroorzaakt jaarlijks veel letsel, vooral bij jongeren die het zelf afsteken. [3] Net zoals roken in cafés is verboden om mensen te beschermen, kan ook vuurwerk worden verboden om de veiligheid te vergroten. [4] Volgens een arts van het ziekenhuis is een deel van die verwondingen blijvend. [5] Bovendien levert vuurwerk luchtvervuiling op, een kenmerk dat slecht past bij een feest dat iedereen moet kunnen vieren, ook mensen met astma of ouderen."
+  },
+  {
+   "v": "Welke redenering klopt bij zin 2 en het voorbeeldschema?",
+   "o": [
+    "een algemene bewering wordt gebruikt om één geval te verklaren",
+    "er wordt een deskundige aangehaald voor een bewering",
+    "twee gevallen worden gelijkgesteld",
+    "een geval ondersteunt een algemene bewering"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Voorbeeld: van één geval naar de algemene bewering.",
+   "uo": [
+    "Koos je \"een algemene bewering wordt gebruikt om één geval...\"? Dan denk je dat de redenering omgekeerd is. Bij een voorbeeld gaat het van geval naar algemeen, niet andersom.",
+    "Koos je \"er wordt een deskundige aangehaald voor een bewering\"? Dan denk je dat Lisa expert is. Ze is een voorbeeld, geen autoriteit.",
+    "Koos je \"twee gevallen worden gelijkgesteld\"? Dan denk je dat Lisa met iemand wordt vergeleken. Er is één geval, dus geen vergelijking.",
+    "Klopt: Lisa staat voor kinderen in het algemeen; dat is het voorbeeldschema."
+   ],
+   "uh": "Van geval naar regel.",
+   "ctx": "[1] Ouders moeten het gebruik van sociale media door hun kinderen beperken. [2] Neem Lisa, die na een maand op Instagram steeds onzekerder werd over haar uiterlijk. [3] Natuurlijk zijn er ook voordelen: je blijft in contact met vrienden en je ontdekt nieuwe interesses. [4] Maar die voordelen wegen niet op tegen de nadelen, want slaaptekort en vergelijkingsdrang beïnvloeden het dagelijks leven van een kind sterk. [5] Ouders die dat moeilijk vinden, kunnen beginnen met vaste schermvrije uren aan tafel en voor het slapengaan."
+  },
+  {
+   "v": "Een leerling zegt: \"Zin 3 ondersteunt het standpunt.\" Wat is jouw oordeel?",
+   "o": [
+    "onjuist: zin 3 is een tegenwerping",
+    "juist: zin 3 noemt een voordeel van beperken",
+    "juist: \"natuurlijk\" laat zien dat de schrijver het ermee eens is",
+    "onjuist: zin 3 is het standpunt zelf"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Een tegenwerping hoort bij de tegenpartij, niet bij het standpunt.",
+   "uo": [
+    "Klopt: zin 3 noemt voordelen van sociale media en past dus niet bij het standpunt.",
+    "Koos je \"juist: zin 3 noemt een voordeel van beperken\"? Dan denk je dat de voordelen voordelen van beperken zijn. Het zijn voordelen van sociale media, dus ze steunen het niet.",
+    "Koos je \"juist: natuurlijk laat zien dat de schrijver het...\"? Dan denk je dat \"natuurlijk\" instemming met het standpunt aangeeft. Het woord erkent het bezwaar, daarna volgt \"maar\".",
+    "Koos je \"onjuist: zin 3 is het standpunt zelf\"? Dan denk je dat zin 3 het standpunt is. Het standpunt staat in zin 1, zin 3 is een bezwaar."
+   ],
+   "uh": "Voor of tegen?",
+   "ctx": "[1] Ouders moeten het gebruik van sociale media door hun kinderen beperken. [2] Neem Lisa, die na een maand op Instagram steeds onzekerder werd over haar uiterlijk. [3] Natuurlijk zijn er ook voordelen: je blijft in contact met vrienden en je ontdekt nieuwe interesses. [4] Maar die voordelen wegen niet op tegen de nadelen, want slaaptekort en vergelijkingsdrang beïnvloeden het dagelijks leven van een kind sterk. [5] Ouders die dat moeilijk vinden, kunnen beginnen met vaste schermvrije uren aan tafel en voor het slapengaan."
+  },
+  {
+   "v": "Een leerling zegt: \"Zin 3 is een voorbeeld.\" Wat is jouw oordeel?",
+   "o": [
+    "juist: roken in cafés is een geval van een verbod",
+    "onjuist: er worden twee gevallen vergeleken",
+    "juist: elke zin met \"net zoals\" is een voorbeeld",
+    "onjuist: zin 3 noemt een oorzaak"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Vergelijking: twee gevallen; voorbeeld: één geval voor een regel.",
+   "uo": [
+    "Koos je \"juist: roken in cafés is een geval van een verbod\"? Dan denk je dat roken één geval is dat de regel bewijst. Het wordt vergeleken met vuurwerk, dat is geen voorbeeld bij een regel.",
+    "Klopt: roken en vuurwerk worden naast elkaar gezet; dat is een vergelijking.",
+    "Koos je \"juist: elke zin met net zoals is een voorbeeld\"? Dan denk je dat deze woorden een voorbeeld aankondigen. Ze duiden een vergelijking aan, dus ze wijzen op een ander schema.",
+    "Koos je \"onjuist: zin 3 noemt een oorzaak\"? Dan denk je dat zin 3 een oorzaak-gevolg geeft. Er staat geen oorzaak, de zin vergelijkt twee gevallen."
+   ],
+   "uh": "Twee of één?",
+   "ctx": "[1] De gemeente moet het afsteken van vuurwerk verbieden. [2] Vuurwerk veroorzaakt jaarlijks veel letsel, vooral bij jongeren die het zelf afsteken. [3] Net zoals roken in cafés is verboden om mensen te beschermen, kan ook vuurwerk worden verboden om de veiligheid te vergroten. [4] Volgens een arts van het ziekenhuis is een deel van die verwondingen blijvend. [5] Bovendien levert vuurwerk luchtvervuiling op, een kenmerk dat slecht past bij een feest dat iedereen moet kunnen vieren, ook mensen met astma of ouderen."
+  },
+  {
+   "v": "Zin 3 gebruikt \"immers\". Welk schema ligt eronder?",
+   "o": [
+    "vergelijking: studenten en werknemers",
+    "autoriteit: een expert zegt dat studenten moeten werken",
+    "voorbeeld: één student met veel reiskosten",
+    "oorzaak-gevolg: reiskosten dwingen tot bijbaantjes"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Oorzaak-gevolg: A leidt tot B, hier reiskosten tot bijbaantjes.",
+   "uo": [
+    "Koos je \"vergelijking: studenten en werknemers\"? Dan denk je dat twee groepen worden vergeleken. Er staat geen vergelijking, het gaat om een gevolg.",
+    "Koos je \"autoriteit: een expert zegt dat studenten moeten...\"? Dan denk je dat een bron wordt genoemd. Er is geen bron, de zin noemt een gevolg.",
+    "Koos je \"voorbeeld: één student met veel reiskosten\"? Dan denk je dat een geval wordt beschreven. De zin is algemeen, het gaat om een verband.",
+    "Klopt: hoge reiskosten leiden tot meer werken, en dat is een oorzaak-gevolgverband."
+   ],
+   "uh": "Wat leidt waartoe?",
+   "ctx": "[1] Studenten zouden gratis openbaar vervoer moeten krijgen. [2] Reizen is voor veel studenten een zware kostenpost, vooral als zij ver van hun opleiding wonen, en dat drukt hun studieprestaties. [3] Wie een groot deel van zijn geld aan reiskosten kwijt is, moet immers meer bijbaantjes nemen om de huur en het eten te kunnen betalen. [4] En wie meer uren werkt, heeft minder tijd om te studeren. [5] Het is dus in het belang van de samenleving dat studenten niet door geldzorgen worden afgeleid van hun opleiding."
+  },
+  {
+   "v": "Welke formulering geeft het standpunt van deze tekst juist weer?",
+   "o": [
+    "ouders moeten het gebruik van sociale media beperken",
+    "sociale media zijn slecht voor Lisa en voor andere meisjes",
+    "sociale media hebben voor- en nadelen",
+    "kinderen moeten meer contact met vrienden hebben"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Standpunt: de eis of stelling die de rest ondersteunt.",
+   "uo": [
+    "Klopt: zin 1 bevat deze eis aan ouders; de andere zinnen onderbouwen of bestrijden hem.",
+    "Koos je \"sociale media zijn slecht voor Lisa en voor andere...\"? Dan denk je dat het voorbeeld het standpunt is. Het voorbeeld ondersteunt het standpunt, het is niet de stelling zelf.",
+    "Koos je \"sociale media hebben voor- en nadelen\"? Dan denk je dat de afweging het standpunt is. De afweging is een argument, de schrijver kiest een kant.",
+    "Koos je \"kinderen moeten meer contact met vrienden hebben\"? Dan denk je dat een voordeel het standpunt is. Het voordeel is een bezwaar, het standpunt gaat over beperken."
+   ],
+   "uh": "Wat moet er gebeuren?",
+   "ctx": "[1] Ouders moeten het gebruik van sociale media door hun kinderen beperken. [2] Neem Lisa, die na een maand op Instagram steeds onzekerder werd over haar uiterlijk. [3] Natuurlijk zijn er ook voordelen: je blijft in contact met vrienden en je ontdekt nieuwe interesses. [4] Maar die voordelen wegen niet op tegen de nadelen, want slaaptekort en vergelijkingsdrang beïnvloeden het dagelijks leven van een kind sterk. [5] Ouders die dat moeilijk vinden, kunnen beginnen met vaste schermvrije uren aan tafel en voor het slapengaan."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Nederland moet de leerplicht verlengen tot achttien jaar. [2] Jongeren die zonder diploma van school gaan, hebben een grotere kans op werkloosheid. [3] Bovendien is een extra jaar onderwijs eerlijk: iedereen heeft recht op een goede start. [4] Ten slotte kost een verlengde leerplicht de samenleving minder dan de uitkeringen die later nodig zijn voor wie geen kwalificatie heeft. [5] Scholen en gemeenten kunnen jongeren daarbij ondersteunen met begeleiding op maat. [6] De overheid moet daarvoor wel extra geld uittrekken.",
+   "v": "Geef het standpunt van de tekst en de structuur van de argumentatie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: de leerplicht moet worden verlengd tot achttien jaar (1p). De argumentatie is nevenschikkend (1p): de zinnen 2, 3 en 4 ondersteunen elk zelfstandig het standpunt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Studenten zouden gratis openbaar vervoer moeten krijgen. [2] Reizen is voor veel studenten een zware kostenpost, vooral als zij ver van hun opleiding wonen, en dat drukt hun studieprestaties. [3] Wie een groot deel van zijn geld aan reiskosten kwijt is, moet immers meer bijbaantjes nemen om de huur en het eten te kunnen betalen. [4] En wie meer uren werkt, heeft minder tijd om te studeren. [5] Het is dus in het belang van de samenleving dat studenten niet door geldzorgen worden afgeleid van hun opleiding.",
+   "v": "Wat is het standpunt en welke structuur hebben de zinnen 2 tot en met 4? Leg uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Standpunt: studenten moeten gratis openbaar vervoer krijgen (1p). De structuur is onderschikkend (1p): zin 3 en 4 onderbouwen het argument in zin 2 (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] De gemeente moet het afsteken van vuurwerk verbieden. [2] Vuurwerk veroorzaakt jaarlijks veel letsel, vooral bij jongeren die het zelf afsteken. [3] Net zoals roken in cafés is verboden om mensen te beschermen, kan ook vuurwerk worden verboden om de veiligheid te vergroten. [4] Volgens een arts van het ziekenhuis is een deel van die verwondingen blijvend. [5] Bovendien levert vuurwerk luchtvervuiling op, een kenmerk dat slecht past bij een feest dat iedereen moet kunnen vieren, ook mensen met astma of ouderen.",
+   "v": "Benoem het argumentatieschema van zin 2, zin 3 en zin 4.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zin 2: oorzaak-gevolg (1p). Zin 3: vergelijking (1p). Zin 4: autoriteit (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Ouders moeten het gebruik van sociale media door hun kinderen beperken. [2] Neem Lisa, die na een maand op Instagram steeds onzekerder werd over haar uiterlijk. [3] Natuurlijk zijn er ook voordelen: je blijft in contact met vrienden en je ontdekt nieuwe interesses. [4] Maar die voordelen wegen niet op tegen de nadelen, want slaaptekort en vergelijkingsdrang beïnvloeden het dagelijks leven van een kind sterk. [5] Ouders die dat moeilijk vinden, kunnen beginnen met vaste schermvrije uren aan tafel en voor het slapengaan.",
+   "v": "Is zin 2 een feitelijk of een waarderend argument, en welk schema gebruikt het? Licht toe.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het is een feitelijk argument met een voorbeeldschema (1p). Het geval van Lisa wordt gebruikt om een algemene bewering over sociale media te ondersteunen (1p). Het is wel controleerbaar, maar één geval bewijst weinig (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "[1] Ouders moeten het gebruik van sociale media door hun kinderen beperken. [2] Neem Lisa, die na een maand op Instagram steeds onzekerder werd over haar uiterlijk. [3] Natuurlijk zijn er ook voordelen: je blijft in contact met vrienden en je ontdekt nieuwe interesses. [4] Maar die voordelen wegen niet op tegen de nadelen, want slaaptekort en vergelijkingsdrang beïnvloeden het dagelijks leven van een kind sterk. [5] Ouders die dat moeilijk vinden, kunnen beginnen met vaste schermvrije uren aan tafel en voor het slapengaan.",
+   "v": "Welke functie hebben zin 3 en zin 4 in de argumentatie?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Zin 3 is een tegenwerping: de voordelen van sociale media (1p). Zin 4 weerlegt die tegenwerping met een voor- en nadelenschema: de nadelen wegen zwaarder (2p)."
+  }
+ ]
+}

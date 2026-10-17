@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **51 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4). Werk dit getal bij bij elke afronding.
+> Voortgang: **52 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -71,7 +71,7 @@
   - [x] A2 · nl.A.2 Onderwerp en hoofdgedachte aangeven, expliciet en impliciet · 27 vragen (R1 7, R2 10, R3 10, 4 eigen leesteksten van 520-660 tekens en een alinea), 12 begrippen, 4 figuren (onderwerp naar hoofdgedachte, plaats kernzin, impliciete hoofdgedachte, valkuilen), geen clip
   - [x] A3 · nl.A.3 Inhoudelijke en functionele relaties tussen tekstdelen benoemen · 27 vragen (R1 7, R2 10, R3 10, 4 eigen leesteksten van 560-690 tekens met genummerde zinnen), 12 begrippen, 4 figuren (verwijzingen, oorzaak-gevolg en doel-middel, argumentatiestructuur, signaalwoorden), geen clip
   - [x] A4 · nl.A.4 Conclusies trekken over intenties, opvattingen en gevoelens van de auteur · 27 vragen (R1 7, R2 10, R3 10, 4 eigen leesteksten van 500-570 tekens en een zinnenreeks), 12 begrippen, 4 figuren (intentie opvatting gevoel, schaal beladen, ironie, tekstbewijs in stappen), geen clip
-  - [ ] A5 · nl.A.5 Standpunten, argumenten en argumentatieschema's herkennen
+  - [x] A5 · nl.A.5 Standpunten, argumenten en argumentatieschema's herkennen · 26 vragen (R1 7, R2 9, R3 10, 4 eigen teksten van 510-530 tekens met genummerde zinnen), 12 begrippen, 4 figuren (structuren, feitelijk of waarderend, zes schema's, analyse in stappen), geen clip
   - [ ] A6 · nl.A.6 Een betoog beoordelen en drogredenen herkennen
   - [ ] A7 · nl.A.7 Een tekst samenvatten: hoofd- en ondergeschikte uitspraken
 - [ ] **VWO · Nederlands** (`nl`) · domein B — Mondeling
