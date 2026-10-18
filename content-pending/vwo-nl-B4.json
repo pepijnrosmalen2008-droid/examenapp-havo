@@ -1,0 +1,690 @@
+{
+ "id": "B4",
+ "lo": "nl.B.4",
+ "gs": 2,
+ "naam": "Deelnemen aan een discussie of debat",
+ "beschrijving": "Je bereidt je voor op een discussie of debat, verdedigt je standpunt met onderbouwde argumenten, weerlegt tegenargumenten eerlijk, houdt je aan beurten en regels en sluit af met een slotpleidooi.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Voorbereiden: standpunt en argumenten",
+  "Beurten, rollen en regels",
+  "Argumenten onderbouwen",
+  "Tegenargumenten weerleggen",
+  "Het slotpleidooi",
+  "Valkuilen: aanval, vertekening en onderbreken"
+ ],
+ "sam": "In een debat verdedig je een standpunt met argumenten die je onderbouwt met een voorbeeld of bewijs. Je bereidt je voor op bezwaren, weerlegt tegenargumenten door ze te erkennen en te beantwoorden, en houdt je aan beurten en spreektijd. Het slotpleidooi vat samen en voegt niets nieuws toe. Valkuilen zijn de persoonlijke aanval, het vertekenen van het standpunt van de ander en onderbreken.",
+ "begrippen": [
+  {
+   "t": "Standpunt",
+   "d": "De stelling die je verdedigt in een discussie of debat."
+  },
+  {
+   "t": "Debatargument",
+   "d": "Een reden voor je standpunt, onderbouwd met een voorbeeld of bewijs."
+  },
+  {
+   "t": "Onderbouwing",
+   "d": "Het bewijs, het voorbeeld of de reden waarmee je een argument sterk maakt."
+  },
+  {
+   "t": "Tegenargument",
+   "d": "Een argument van de andere kant tegen jouw standpunt."
+  },
+  {
+   "t": "Weerlegging",
+   "d": "Een antwoord waarmee je een tegenargument krachteloos maakt."
+  },
+  {
+   "t": "Afweging",
+   "d": "Twee belangen tegen elkaar zetten en uitleggen welke zwaarder weegt."
+  },
+  {
+   "t": "Slotpleidooi",
+   "d": "De laatste bijdrage waarin je je argumenten samenvat en concludeert."
+  },
+  {
+   "t": "Gespreksleider",
+   "d": "De persoon die beurten, spreektijd en orde bewaakt."
+  },
+  {
+   "t": "Beurt",
+   "d": "Het moment waarop jij mag spreken, zonder onderbroken te worden."
+  },
+  {
+   "t": "Spreektijd",
+   "d": "De afgesproken tijd die ieder team of deelnemer krijgt."
+  },
+  {
+   "t": "Stroman",
+   "d": "Het standpunt van de ander vervormen en dat vervormde standpunt bestrijden."
+  },
+  {
+   "t": "Persoonlijke aanval",
+   "d": "De persoon aanvallen in plaats van zijn argument."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Wat doe je als eerste bij de voorbereiding?",
+   "o": [
+    "de tegenstander uitlachen om te winnen",
+    "standpunt en argumenten bepalen",
+    "wachten tot het andere team iets zegt",
+    "alleen je mening zonder redenen opschrijven"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Voorbereiden: standpunt, argumenten, voorbeelden, tegenargumenten.",
+   "uo": [
+    "Koos je \"de tegenstander uitlachen om te winnen\"? Dan denk je dat spot een voorbereiding is. Je bereidt je voor met argumenten, niet met aanvallen.",
+    "Klopt: eerst weet je wat je verdedigt en met welke redenen.",
+    "Koos je \"wachten tot het andere team iets zegt\"? Dan denk je dat je kunt improviseren. Een debat vraagt voorbereiding, zodat je argumenten klaar hebt.",
+    "Koos je \"alleen je mening zonder redenen opschrijven\"? Dan denk je dat een mening genoeg is. Je hebt argumenten nodig, anders overtuig je niemand."
+   ],
+   "uh": "Standpunt en argumenten.",
+   "ctx": "Je krijgt de stelling \"Sociale media moeten verboden worden voor kinderen onder de zestien\" en moet Team Voor verdedigen. Je hebt een kwartier om je voor te bereiden. Je verwacht dat het andere team zal zeggen dat zo'n verbod niet te handhaven is."
+  },
+  {
+   "v": "Welk tegenargument verwacht je van het andere team?",
+   "o": [
+    "kinderen vinden sociale media leuk",
+    "sociale media zijn gratis",
+    "zestien jaar is een mooi getal",
+    "een verbod is niet te handhaven"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Verwacht de sterkste bezwaren en bereid een antwoord voor.",
+   "uo": [
+    "Koos je \"kinderen vinden sociale media leuk\"? Dan denk je dat het plezier van kinderen het tegenargument is. Dat staat niet in de opdracht, het genoemde bezwaar is handhaving.",
+    "Koos je \"sociale media zijn gratis\"? Dan denk je dat de prijs het bezwaar is. De prijs is niet genoemd, het gaat om uitvoerbaarheid.",
+    "Koos je \"zestien jaar is een mooi getal\"? Dan denk je dat het getal het bezwaar is. Het getal is geen argument, het gaat om handhaven.",
+    "Klopt: de context noemt dit bezwaar; je bereidt een antwoord voor."
+   ],
+   "uh": "Wat zeggen zij?",
+   "ctx": "Je krijgt de stelling \"Sociale media moeten verboden worden voor kinderen onder de zestien\" en moet Team Voor verdedigen. Je hebt een kwartier om je voor te bereiden. Je verwacht dat het andere team zal zeggen dat zo'n verbod niet te handhaven is."
+  },
+  {
+   "v": "Wie bewaakt de spreektijd in een debat?",
+   "o": [
+    "de gespreksleider",
+    "het team dat aan het woord is",
+    "de jury die de punten geeft",
+    "het publiek in de zaal"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Gespreksleider: beurten, tijd en orde.",
+   "uo": [
+    "Klopt: de gespreksleider let op beurten en tijd.",
+    "Koos je \"het team dat aan het woord is\"? Dan denk je dat teams hun eigen tijd regelen. Dat leidt tot ruzie, de gespreksleider bewaakt het.",
+    "Koos je \"de jury die de punten geeft\"? Dan denk je dat de jury de tijd bewaakt. De jury beoordeelt, de gespreksleider bewaakt de tijd.",
+    "Koos je \"het publiek in de zaal\"? Dan denk je dat het publiek ingrijpt. Het publiek luistert, de gespreksleider leidt."
+   ],
+   "uh": "Wie leidt het debat?",
+   "ctx": "De gespreksleider geeft elk team twee minuten per ronde. Team Voor gebruikt drie minuten. De gespreksleider zegt: \"Je tijd is op.\" Het team praat gewoon door en kijkt naar de jury."
+  },
+  {
+   "v": "Welke zin van Team Voor bevat een argument?",
+   "o": [
+    "\"Scholen moeten later beginnen.\"",
+    "\"Team Tegen zegt dat het langer duurt.\"",
+    "\"Tieners hebben een ander bioritme.\"",
+    "\"Sporttrainingen komen in de knel.\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Argument: een reden die het standpunt ondersteunt.",
+   "uo": [
+    "Koos je \"Scholen moeten later beginnen.\"? Dan denk je dat het standpunt een argument is. Het is het standpunt zelf, de reden volgt erna.",
+    "Koos je \"Team Tegen zegt dat het langer duurt.\"? Dan denk je dat dit een argument van Team Voor is. Het is het bezwaar van de tegenpartij, dus niet hun argument.",
+    "Klopt: een argument geeft een reden voor het standpunt.",
+    "Koos je \"Sporttrainingen komen in de knel.\"? Dan denk je dat dit een argument van Voor is. Het is een argument van Tegen, dus tegen het standpunt."
+   ],
+   "uh": "Waarom? Dat is de reden.",
+   "ctx": "Stelling: scholen moeten de lessen een uur later laten beginnen. Team Voor zegt: \"Tieners hebben een ander bioritme; wie later begint, slaapt langer en presteert beter.\" Team Tegen zegt: \"Een latere start betekent dat de schooldag langer duurt en dat sporttrainingen in de knel komen.\""
+  },
+  {
+   "v": "Wat doet Team Voor met het bezwaar over de lange schooldag?",
+   "o": [
+    "het negeren en een ander onderwerp kiezen",
+    "het volledig ontkennen zonder reden",
+    "het erkennen en een oplossing noemen",
+    "de tegenstander aanvallen"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Weerleggen: erkennen, oplossing of tegenargument geven.",
+   "uo": [
+    "Koos je \"het negeren en een ander onderwerp kiezen\"? Dan denk je dat negeren werkt. Dan blijft het bezwaar staan, dus je moet erop reageren.",
+    "Koos je \"het volledig ontkennen zonder reden\"? Dan denk je dat ontkennen genoeg is. Je moet het weerleggen met argumenten, anders is het kaal.",
+    "Klopt: het team erkent het bezwaar en laat zien dat het oplosbaar is.",
+    "Koos je \"de tegenstander aanvallen\"? Dan denk je dat een aanval een weerlegging is. Een aanval raakt het argument niet, dus het is geen weerlegging."
+   ],
+   "uh": "Reageer op het argument.",
+   "ctx": "Team Voor antwoordt op het bezwaar: \"Een lange schooldag is een reëel bezwaar, maar scholen kunnen de pauzes inkorten. Bovendien levert een uur extra slaap meer op dan een uur extra vrije tijd, want leerlingen onthouden beter als ze uitgerust zijn.\""
+  },
+  {
+   "v": "Welke fout maakt Daan?",
+   "o": [
+    "hij valt de persoon aan",
+    "hij noemt een slecht voorbeeld",
+    "hij praat veel te zacht tegen Eva",
+    "hij stelt een vraag aan Lotte"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "Persoonlijke aanval: de persoon in plaats van het argument.",
+   "uo": [
+    "Klopt: \"wat weet jij ervan\" gaat over Eva, niet over wat zij zegt.",
+    "Koos je \"hij noemt een slecht voorbeeld\"? Dan denk je dat hij een voorbeeld geeft. Hij noemt een persoonlijk verwijt, geen voorbeeld.",
+    "Koos je \"hij praat veel te zacht tegen Eva\"? Dan denk je dat het volume het probleem is. Het gaat om de inhoud, namelijk de aanval op de persoon.",
+    "Koos je \"hij stelt een vraag aan Lotte\"? Dan denk je dat een vraag fout is. Vragen zijn goed, maar deze vraag valt de persoon aan."
+   ],
+   "uh": "Persoon of argument?",
+   "ctx": "Tijdens een discussie over huiswerk zegt Daan: \"Jij hebt toch nooit je huiswerk af, dus wat weet jij ervan?\" Lotte onderbreekt Eva midden in haar zin en praat luider. De gespreksleider grijpt niet in en het gesprek loopt uit de hand."
+  },
+  {
+   "v": "Welk slotpleidooi is correct?",
+   "o": [
+    "slotpleidooi B: nieuwe onderwerpen noemen",
+    "geen van beide, want een slotpleidooi bestaat niet",
+    "beide, want meer onderwerpen is beter",
+    "slotpleidooi A: samenvatten en een conclusie"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Slotpleidooi: samenvatten en concluderen, geen nieuwe punten.",
+   "uo": [
+    "Koos je \"slotpleidooi B: nieuwe onderwerpen noemen\"? Dan denk je dat het slot ruimte biedt voor nieuwe punten. Een slot vat samen, en voegt niets toe.",
+    "Koos je \"geen van beide, want een slotpleidooi bestaat niet\"? Dan denk je dat het niet bestaat. Een slotpleidooi is een vast onderdeel van een debat, dus A klopt.",
+    "Koos je \"beide, want meer onderwerpen is beter\"? Dan denk je dat meer punten overtuigender zijn. Een slot moet kort en gericht zijn, dus B is niet goed.",
+    "Klopt: A vat de argumenten samen en sluit af met een conclusie."
+   ],
+   "uh": "Kort en gericht.",
+   "ctx": "Slotpleidooi A: \"Tot slot: slaap helpt leren, een latere start levert betere resultaten, en daarom moeten scholen later beginnen.\" Slotpleidooi B: \"Ik wil ook nog zeggen dat schoolkantines gezonder moeten zijn en dat huiswerk afgeschaft moet worden.\""
+  },
+  {
+   "v": "Wat is de juiste reactie als de gespreksleider zegt dat de tijd op is?",
+   "o": [
+    "gewoon doorgaan en de jury aankijken",
+    "de zin afmaken en afronden",
+    "luider gaan praten",
+    "boos worden op de gespreksleider"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Houd je aan de spreektijd: afronden als de tijd om is.",
+   "uo": [
+    "Koos je \"gewoon doorgaan en de jury aankijken\"? Dan denk je dat de jury je beloont voor doorgaan. Dat is oneerlijk, en kost punten.",
+    "Klopt: je respecteert de tijd en rondt af; doorgaan benadeelt het andere team.",
+    "Koos je \"luider gaan praten\"? Dan denk je dat volume je tijd verlengt. Het verlengt niets, en het is onbeleefd.",
+    "Koos je \"boos worden op de gespreksleider\"? Dan denk je dat de gespreksleider ongelijk heeft. De regels gelden voor iedereen, dus je volgt ze."
+   ],
+   "uh": "Afronden.",
+   "ctx": "De gespreksleider geeft elk team twee minuten per ronde. Team Voor gebruikt drie minuten. De gespreksleider zegt: \"Je tijd is op.\" Het team praat gewoon door en kijkt naar de jury."
+  },
+  {
+   "v": "Hoe maak je het argument van Team Voor sterker?",
+   "o": [
+    "door het veel harder te zeggen",
+    "door het twee keer te herhalen",
+    "door de tegenstander te onderbreken",
+    "met een voorbeeld of onderzoek"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Onderbouwen: voorbeeld, cijfers, onderzoek.",
+   "uo": [
+    "Koos je \"door het veel harder te zeggen\"? Dan denk je dat volume overtuigt. Een argument wordt sterker door bewijs, niet door geluid.",
+    "Koos je \"door het twee keer te herhalen\"? Dan denk je dat herhalen onderbouwt. Herhaling voegt niets toe, je hebt bewijs nodig.",
+    "Koos je \"door de tegenstander te onderbreken\"? Dan denk je dat onderbreken je argument sterker maakt. Het schaadt je geloofwaardigheid, en onderbouwt niets.",
+    "Klopt: onderbouwing maakt een argument overtuigender."
+   ],
+   "uh": "Bewijs erbij.",
+   "ctx": "Stelling: scholen moeten de lessen een uur later laten beginnen. Team Voor zegt: \"Tieners hebben een ander bioritme; wie later begint, slaapt langer en presteert beter.\" Team Tegen zegt: \"Een latere start betekent dat de schooldag langer duurt en dat sporttrainingen in de knel komen.\""
+  },
+  {
+   "v": "Welk onderdeel ontbreekt aan de bewering van Team Tegen?",
+   "o": [
+    "een duidelijk standpunt",
+    "bewijs voor de bewering",
+    "een groet aan de jury vooraf",
+    "een vraag aan de tegenstander terug"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Een claim heeft onderbouwing nodig.",
+   "uo": [
+    "Koos je \"een duidelijk standpunt\"? Dan denk je dat het standpunt ontbreekt. Het standpunt is duidelijk, de onderbouwing ontbreekt.",
+    "Klopt: de bewering is een claim zonder onderbouwing.",
+    "Koos je \"een groet aan de jury vooraf\"? Dan denk je dat een groet ontbreekt. Dat is niet het probleem, het gaat om onderbouwing.",
+    "Koos je \"een vraag aan de tegenstander terug\"? Dan denk je dat een vraag ontbreekt. Een vraag is optioneel, de onderbouwing is nodig."
+   ],
+   "uh": "Waarom? Voorbeeld?",
+   "ctx": "Stelling: scholen moeten de lessen een uur later laten beginnen. Team Voor zegt: \"Tieners hebben een ander bioritme; wie later begint, slaapt langer en presteert beter.\" Team Tegen zegt: \"Een latere start betekent dat de schooldag langer duurt en dat sporttrainingen in de knel komen.\""
+  },
+  {
+   "v": "Welke fout maakt het lid van Team Voor in zijn antwoord?",
+   "o": [
+    "hij noemt een voorbeeld uit het nieuws",
+    "hij beantwoordt de vraag niet in zijn beurt",
+    "hij vervormt het standpunt van Tegen",
+    "hij gebruikt een verkeerd cijfer"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Vertekenen: een karikatuur van het standpunt bestrijden.",
+   "uo": [
+    "Koos je \"hij noemt een voorbeeld uit het nieuws\"? Dan denk je dat hij een voorbeeld geeft. Hij vervormt een standpunt, dat is geen voorbeeld.",
+    "Koos je \"hij beantwoordt de vraag niet in zijn beurt\"? Dan denk je dat hij te laat reageert. Hij reageert direct, maar op een vervormd standpunt.",
+    "Klopt: Team Tegen noemde een langere schooldag, niet dat slaap onbelangrijk is.",
+    "Koos je \"hij gebruikt een verkeerd cijfer\"? Dan denk je dat hij cijfers noemt. Er staat geen cijfer, het gaat om vertekening."
+   ],
+   "uh": "Zei de ander dit echt?",
+   "ctx": "Team Tegen zegt: \"Een latere start betekent een langere schooldag, dus een uur later naar huis.\" Een lid van Team Voor antwoordt: \"Mijn tegenstanders vinden dus dat slaap niet belangrijk is, en dat is natuurlijk belachelijk.\""
+  },
+  {
+   "v": "Waarom is dit een goede weerlegging?",
+   "o": [
+    "erkennen, oplossen en afwegen",
+    "omdat ze het bezwaar gewoon negeert",
+    "omdat ze kort is en dus sterk",
+    "omdat ze de tegenstander flink aanvalt"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Weerleggen: erkennen, oplossen, afwegen.",
+   "uo": [
+    "Klopt: erkennen, oplossen en afwegen maakt de reactie sterk en eerlijk.",
+    "Koos je \"omdat ze het bezwaar gewoon negeert\"? Dan denk je dat negeren sterk is. Ze gaat juist in op het bezwaar, dus ze negeert niet.",
+    "Koos je \"omdat ze kort is en dus sterk\"? Dan denk je dat korte antwoorden altijd goed zijn. Kort kan goed zijn, als het inhoud heeft.",
+    "Koos je \"omdat ze de tegenstander flink aanvalt\"? Dan denk je dat een aanval sterk is. Ze valt niet aan, ze weerlegt met argumenten."
+   ],
+   "uh": "Hoe sterk is de reactie?",
+   "ctx": "Team Voor antwoordt op het bezwaar: \"Een lange schooldag is een reëel bezwaar, maar scholen kunnen de pauzes inkorten. Bovendien levert een uur extra slaap meer op dan een uur extra vrije tijd, want leerlingen onthouden beter als ze uitgerust zijn.\""
+  },
+  {
+   "v": "Wat is er mis met Lotte's gedrag?",
+   "o": [
+    "ze onderbreekt Eva",
+    "ze praat veel te kort",
+    "ze houdt zich aan alle regels",
+    "ze gebruikt veel te veel voorbeelden"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 5,
+   "u": "Laat anderen uitspreken en wacht op je beurt.",
+   "uo": [
+    "Klopt: onderbreken schendt de beurtregels en verhindert een eerlijk gesprek.",
+    "Koos je \"ze praat veel te kort\"? Dan denk je dat de lengte het probleem is. Het probleem is het onderbreken, niet de duur.",
+    "Koos je \"ze houdt zich aan alle regels\"? Dan denk je dat ze zich aan de regels houdt. Onderbreken is tegen de regels, dus dit klopt niet.",
+    "Koos je \"ze gebruikt veel te veel voorbeelden\"? Dan denk je dat voorbeelden het probleem zijn. Er is geen enkel voorbeeld, het gaat om onderbreken."
+   ],
+   "uh": "Wie is aan de beurt?",
+   "ctx": "Tijdens een discussie over huiswerk zegt Daan: \"Jij hebt toch nooit je huiswerk af, dus wat weet jij ervan?\" Lotte onderbreekt Eva midden in haar zin en praat luider. De gespreksleider grijpt niet in en het gesprek loopt uit de hand."
+  },
+  {
+   "v": "Waarom is slotpleidooi B niet goed?",
+   "o": [
+    "omdat het veel te kort is",
+    "omdat het een conclusie bevat",
+    "het voegt nieuwe onderwerpen toe",
+    "omdat het in de eerste persoon is geschreven"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Geen nieuwe punten in een slotpleidooi.",
+   "uo": [
+    "Koos je \"omdat het veel te kort is\"? Dan denk je dat de lengte het probleem is. B is niet te kort, het probleem is de nieuwe inhoud.",
+    "Koos je \"omdat het een conclusie bevat\"? Dan denk je dat een conclusie fout is. Een conclusie hoort juist in het slot, B bevat geen conclusie.",
+    "Klopt: een slot vat samen wat is besproken en voegt niets nieuws toe.",
+    "Koos je \"omdat het in de eerste persoon is geschreven\"? Dan denk je dat \"ik\" fout is. Je mag \"ik\" gebruiken, het probleem is nieuwe onderwerpen."
+   ],
+   "uh": "Samenvatten, niet uitbreiden.",
+   "ctx": "Slotpleidooi A: \"Tot slot: slaap helpt leren, een latere start levert betere resultaten, en daarom moeten scholen later beginnen.\" Slotpleidooi B: \"Ik wil ook nog zeggen dat schoolkantines gezonder moeten zijn en dat huiswerk afgeschaft moet worden.\""
+  },
+  {
+   "v": "Welke voorbereiding past bij een sterk betoog?",
+   "o": [
+    "één argument en de rest improviseren",
+    "drie argumenten met voorbeelden",
+    "veel argumenten zonder enige onderbouwing",
+    "alleen een sterke slotzin bedenken"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Voorbereiden: argumenten, onderbouwing, antwoord op bezwaar.",
+   "uo": [
+    "Koos je \"één argument en de rest improviseren\"? Dan denk je dat improviseren genoeg is. Je hebt voorbereiding nodig, dus één argument is te weinig.",
+    "Klopt: argumenten, onderbouwing en een voorbereid antwoord maken je sterk.",
+    "Koos je \"veel argumenten zonder enige onderbouwing\"? Dan denk je dat aantal telt. Zonder onderbouwing overtuigen ze niet, je hebt voorbeelden nodig.",
+    "Koos je \"alleen een sterke slotzin bedenken\"? Dan denk je dat een slotzin volstaat. Een slotzin vraagt een betoog ervoor, dus de kern ontbreekt."
+   ],
+   "uh": "Onderbouwd en voorbereid.",
+   "ctx": "Je krijgt de stelling \"Sociale media moeten verboden worden voor kinderen onder de zestien\" en moet Team Voor verdedigen. Je hebt een kwartier om je voor te bereiden. Je verwacht dat het andere team zal zeggen dat zo'n verbod niet te handhaven is."
+  },
+  {
+   "v": "Welke regel hoort bij beurtwisseling in een discussie?",
+   "o": [
+    "wie het hardst praat, mag verder",
+    "praat door als je een goed argument hebt",
+    "alleen de beste debater mag spreken",
+    "laat iedereen uitspreken"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Beurtwisseling: wachten, woord vragen, uitspreken.",
+   "uo": [
+    "Koos je \"wie het hardst praat, mag verder\"? Dan denk je dat volume de beurt bepaalt. Dan wint wie het luidst is, niet wie het beste argument heeft.",
+    "Koos je \"praat door als je een goed argument hebt\"? Dan denk je dat een goed argument onderbreken rechtvaardigt. Ook een goed argument wacht op de beurt, dus onderbreken mag niet.",
+    "Koos je \"alleen de beste debater mag spreken\"? Dan denk je dat alleen goede sprekers aan het woord komen. Iedereen heeft recht op een beurt, dus dat klopt niet.",
+    "Klopt: beurten verlopen via de gespreksleider zonder onderbreken."
+   ],
+   "uh": "Wie is aan de beurt?",
+   "ctx": "Tijdens een discussie over huiswerk zegt Daan: \"Jij hebt toch nooit je huiswerk af, dus wat weet jij ervan?\" Lotte onderbreekt Eva midden in haar zin en praat luider. De gespreksleider grijpt niet in en het gesprek loopt uit de hand."
+  },
+  {
+   "v": "Hoe begin je een slotpleidooi voor Team Voor het best?",
+   "o": [
+    "met een nieuw argument erbij",
+    "met een korte samenvatting",
+    "met een grap over de tegenstander",
+    "met een excuus aan de jury"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Slot: samenvatten, concluderen, afsluiten.",
+   "uo": [
+    "Koos je \"met een nieuw argument erbij\"? Dan denk je dat nieuwe argumenten werken. Ze blijven onbesproken, dus ze overtuigen niet.",
+    "Klopt: een slot begint vaak met een samenvatting; daarna volgt de conclusie.",
+    "Koos je \"met een grap over de tegenstander\"? Dan denk je dat een grap sterk is. Een grap op kosten van de ander schaadt je, en het raakt de argumenten niet.",
+    "Koos je \"met een excuus aan de jury\"? Dan denk je dat je je moet verontschuldigen. Dat zwakt je betoog af, en het voegt niets toe."
+   ],
+   "uh": "Samenvatting eerst.",
+   "ctx": "Stelling: scholen moeten de lessen een uur later laten beginnen. Team Voor zegt: \"Tieners hebben een ander bioritme; wie later begint, slaapt langer en presteert beter.\" Team Tegen zegt: \"Een latere start betekent dat de schooldag langer duurt en dat sporttrainingen in de knel komen.\""
+  },
+  {
+   "v": "Welke weerlegging van de bewering \"een langere schooldag\" is het sterkst?",
+   "o": [
+    "\"Kortere pauzes compenseren dat.\"",
+    "\"Langer naar school is helemaal niet erg, hoor.\"",
+    "\"Dat zegt iemand die graag tv kijkt.\"",
+    "\"Dat is onzin, ga maar verder.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Weerleggen: erkennen, oplossing of tegenargument.",
+   "uo": [
+    "Klopt: de reactie geeft een oplossing voor het bezwaar in plaats van het alleen te ontkennen.",
+    "Koos je \"Langer naar school is helemaal niet erg, hoor.\"? Dan denk je dat een stellige bewering weerlegt. Je geeft geen reden, dus het overtuigt niet.",
+    "Koos je \"Dat zegt iemand die graag tv kijkt.\"? Dan denk je dat een persoonlijke opmerking weerlegt. Het raakt de persoon, niet het argument.",
+    "Koos je \"Dat is onzin, ga maar verder.\"? Dan denk je dat afkappen een weerlegging is. Er is geen enkel tegenargument, dus het overtuigt niet."
+   ],
+   "uh": "Reageer inhoudelijk.",
+   "ctx": "Team Tegen zegt: \"Een latere start betekent een langere schooldag, dus een uur later naar huis.\" Een lid van Team Voor antwoordt: \"Mijn tegenstanders vinden dus dat slaap niet belangrijk is, en dat is natuurlijk belachelijk.\""
+  },
+  {
+   "v": "Welk voorbeeld ondersteunt het argument over het bioritme het best?",
+   "o": [
+    "een verhaal over een klasgenoot die moe is",
+    "de mening van een ouder over sport",
+    "een lijst met alle schooltijden van Nederland",
+    "een onderzoek naar langer slapen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Een sterk voorbeeld laat het effect zien, het liefst met onderzoek.",
+   "uo": [
+    "Koos je \"een verhaal over een klasgenoot die moe is\"? Dan denk je dat één verhaal genoeg is. Eén geval bewijst weinig, je hebt een onderzoek nodig.",
+    "Koos je \"de mening van een ouder over sport\"? Dan denk je dat een mening bewijs is. Het gaat om slaap en prestaties, niet om sport.",
+    "Koos je \"een lijst met alle schooltijden van Nederland\"? Dan denk je dat tijden bewijs zijn. Ze zeggen niets over effect, je hebt resultaten nodig.",
+    "Klopt: een onderzoek laat het effect zien en onderbouwt het argument."
+   ],
+   "uh": "Laat het effect zien.",
+   "ctx": "Stelling: scholen moeten de lessen een uur later laten beginnen. Team Voor zegt: \"Tieners hebben een ander bioritme; wie later begint, slaapt langer en presteert beter.\" Team Tegen zegt: \"Een latere start betekent dat de schooldag langer duurt en dat sporttrainingen in de knel komen.\""
+  },
+  {
+   "v": "Waarom is de reactie van het lid van Team Voor een stroman?",
+   "o": [
+    "ze valt de persoon van Tegen aan",
+    "ze noemt geen enkel argument voor haar standpunt",
+    "ze bestrijdt een vervormd standpunt",
+    "ze onderbreekt Team Tegen tijdens de beurt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Stroman: een karikatuur van het standpunt aanvallen.",
+   "uo": [
+    "Koos je \"ze valt de persoon van Tegen aan\"? Dan denk je dat het een persoonlijke aanval is. De fout is dat het standpunt wordt vervormd, geen persoonlijke aanval.",
+    "Koos je \"ze noemt geen enkel argument voor haar standpunt\"? Dan denk je dat er geen argument is. Het argument is er wel, maar gericht op iets dat niet gezegd is.",
+    "Klopt: Team Tegen noemde alleen een langere schooldag.",
+    "Koos je \"ze onderbreekt Team Tegen tijdens de beurt\"? Dan denk je dat ze onderbreekt. Ze antwoordt in haar beurt, maar op een vervorming."
+   ],
+   "uh": "Zei de ander dit?",
+   "ctx": "Team Tegen zegt: \"Een latere start betekent een langere schooldag, dus een uur later naar huis.\" Een lid van Team Voor antwoordt: \"Mijn tegenstanders vinden dus dat slaap niet belangrijk is, en dat is natuurlijk belachelijk.\""
+  },
+  {
+   "v": "Welke reactie op Daans opmerking is het best?",
+   "o": [
+    "teruggeven: \"Jij hebt ook nooit je huiswerk af.\"",
+    "stoppen met praten en weglopen",
+    "rustig terug naar het onderwerp",
+    "luider praten dan Daan"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 5,
+   "u": "Reageer op een aanval met een terugkeer naar het argument.",
+   "uo": [
+    "Koos je \"teruggeven: Jij hebt ook nooit je huiswerk af.\"? Dan denk je dat terugslaan helpt. Dan wordt het een ruzie, en het onderwerp raakt zoek.",
+    "Koos je \"stoppen met praten en weglopen\"? Dan denk je dat weglopen sterk is. Je laat de discussie vallen, dus je wint niets.",
+    "Klopt: je negeert de aanval en herstelt het gesprek op inhoud.",
+    "Koos je \"luider praten dan Daan\"? Dan denk je dat volume wint. Het maakt het chaotischer, en het raakt het argument niet."
+   ],
+   "uh": "Terug naar de zaak.",
+   "ctx": "Tijdens een discussie over huiswerk zegt Daan: \"Jij hebt toch nooit je huiswerk af, dus wat weet jij ervan?\" Lotte onderbreekt Eva midden in haar zin en praat luider. De gespreksleider grijpt niet in en het gesprek loopt uit de hand."
+  },
+  {
+   "v": "Welke onderdelen bevat het beste slotpleidooi?",
+   "o": [
+    "een nieuw argument en een grap",
+    "een lijst met namen van de tegenstanders",
+    "alleen de woorden \"dat was het\"",
+    "samenvatting, conclusie en oproep"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Slot: samenvatten, concluderen, oproepen.",
+   "uo": [
+    "Koos je \"een nieuw argument en een grap\"? Dan denk je dat nieuw materiaal sterk is. Het kan niet meer worden onderbouwd, en de grap leidt af.",
+    "Koos je \"een lijst met namen van de tegenstanders\"? Dan denk je dat de tegenstanders genoemd moeten worden. Het slot gaat over je eigen standpunt, niet over personen.",
+    "Koos je \"alleen de woorden dat was het\"? Dan denk je dat een korte afsluiting genoeg is. Zonder samenvatting blijft de boodschap vaag, dus het is te zwak.",
+    "Klopt: een slot bundelt wat is gezegd en rondt af."
+   ],
+   "uh": "Bundelen en afronden.",
+   "ctx": "Slotpleidooi A: \"Tot slot: slaap helpt leren, een latere start levert betere resultaten, en daarom moeten scholen later beginnen.\" Slotpleidooi B: \"Ik wil ook nog zeggen dat schoolkantines gezonder moeten zijn en dat huiswerk afgeschaft moet worden.\""
+  },
+  {
+   "v": "Welk gevolg kan doorgaan na \"je tijd is op\" hebben?",
+   "o": [
+    "het andere team wordt benadeeld",
+    "het team krijgt extra tijd van de jury erbij",
+    "er gebeurt niets, want regels zijn flexibel",
+    "de gespreksleider mag de jury vervangen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Spreektijd is eerlijk verdeeld; doorgaan benadeelt de ander.",
+   "uo": [
+    "Klopt: spreektijd is gelijk voor beide teams; wie doorgaat schendt dat.",
+    "Koos je \"het team krijgt extra tijd van de jury erbij\"? Dan denk je dat doorgaan beloond wordt. De regels zijn gelijk voor beide teams, dus het levert punten kosten op.",
+    "Koos je \"er gebeurt niets, want regels zijn flexibel\"? Dan denk je dat tijd geen belang heeft. Tijd is een kernregel, schenden heeft gevolgen.",
+    "Koos je \"de gespreksleider mag de jury vervangen\"? Dan denk je dat de gespreksleider de jury is. De jury beoordeelt, de gespreksleider leidt."
+   ],
+   "uh": "Is het eerlijk?",
+   "ctx": "De gespreksleider geeft elk team twee minuten per ronde. Team Voor gebruikt drie minuten. De gespreksleider zegt: \"Je tijd is op.\" Het team praat gewoon door en kijkt naar de jury."
+  },
+  {
+   "v": "Welke aanpak past bij het verwachte tegenargument?",
+   "o": [
+    "het bezwaar niet noemen en hopen dat het wegblijft",
+    "vooraf een antwoord voorbereiden",
+    "steeds hetzelfde argument herhalen",
+    "zeggen dat het niet uitmaakt"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 0,
+   "u": "Anticipeer: bereid een antwoord op het verwachte bezwaar voor.",
+   "uo": [
+    "Koos je \"het bezwaar niet noemen en hopen dat het wegblijft\"? Dan denk je dat negeren werkt. Het bezwaar komt waarschijnlijk, en dan sta je met lege handen.",
+    "Klopt: een bezwaar kun je voorkomen door er vooraf een antwoord op te hebben.",
+    "Koos je \"steeds hetzelfde argument herhalen\"? Dan denk je dat herhalen weerlegt. Herhaling beantwoordt het bezwaar niet, je hebt een eigen antwoord nodig.",
+    "Koos je \"zeggen dat het niet uitmaakt\"? Dan denk je dat een bezwaar niet telt. Het telt voor de jury, dus je moet erop ingaan."
+   ],
+   "uh": "Voorbereid op bezwaren.",
+   "ctx": "Je krijgt de stelling \"Sociale media moeten verboden worden voor kinderen onder de zestien\" en moet Team Voor verdedigen. Je hebt een kwartier om je voor te bereiden. Je verwacht dat het andere team zal zeggen dat zo'n verbod niet te handhaven is."
+  },
+  {
+   "v": "Welke combinatie maakt een argument sterk?",
+   "o": [
+    "alleen een stellige bewering",
+    "een bewering met een grap",
+    "een lange opsomming zonder enige volgorde",
+    "bewering, reden en bewijs"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Sterk argument: bewering, reden, voorbeeld.",
+   "uo": [
+    "Koos je \"alleen een stellige bewering\"? Dan denk je dat stelligheid overtuigt. Zonder reden is het een claim, geen argument.",
+    "Koos je \"een bewering met een grap\"? Dan denk je dat een grap onderbouwt. Een grap bewijst niets, dus het argument blijft zwak.",
+    "Koos je \"een lange opsomming zonder enige volgorde\"? Dan denk je dat lengte overtuigt. Zonder structuur raakt het publiek de draad kwijt, dus het is niet sterk.",
+    "Klopt: de reden onderbouwt de bewering en het voorbeeld maakt het concreet."
+   ],
+   "uh": "Claim, reden, bewijs.",
+   "ctx": "Je krijgt de stelling \"Sociale media moeten verboden worden voor kinderen onder de zestien\" en moet Team Voor verdedigen. Je hebt een kwartier om je voor te bereiden. Je verwacht dat het andere team zal zeggen dat zo'n verbod niet te handhaven is."
+  },
+  {
+   "v": "Welke zin in de weerlegging is de afweging?",
+   "o": [
+    "\"Een uur extra slaap levert meer op.\"",
+    "\"Een lange schooldag is een reëel bezwaar.\"",
+    "\"Scholen kunnen de pauzes inkorten.\"",
+    "\"Leerlingen onthouden beter als ze uitgerust zijn.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 3,
+   "u": "Afwegen: twee belangen tegen elkaar zetten.",
+   "uo": [
+    "Klopt: deze zin weegt twee belangen tegen elkaar af.",
+    "Koos je \"Een lange schooldag is een reëel bezwaar.\"? Dan denk je dat dit de afweging is. Het is de erkenning van het bezwaar, de afweging volgt later.",
+    "Koos je \"Scholen kunnen de pauzes inkorten.\"? Dan denk je dat dit de afweging is. Het is de oplossing, geen afweging.",
+    "Koos je \"Leerlingen onthouden beter als ze uitgerust zijn.\"? Dan denk je dat dit de afweging is. Het is de reden voor de afweging, niet de afweging zelf."
+   ],
+   "uh": "Wat weegt zwaarder?",
+   "ctx": "Team Voor antwoordt op het bezwaar: \"Een lange schooldag is een reëel bezwaar, maar scholen kunnen de pauzes inkorten. Bovendien levert een uur extra slaap meer op dan een uur extra vrije tijd, want leerlingen onthouden beter als ze uitgerust zijn.\""
+  },
+  {
+   "v": "Een team zegt: \"Jullie argument is onzin.\" Wat is het probleem?",
+   "o": [
+    "het is veel te beleefd gezegd",
+    "het is een oordeel zonder reden",
+    "het is een goede weerlegging omdat het kort is",
+    "het is een voorbeeld van een argument"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Weerleggen vraagt een reden, niet alleen een oordeel.",
+   "uo": [
+    "Koos je \"het is veel te beleefd gezegd\"? Dan denk je dat het te beleefd is. Het is juist onbeleefd, en het mist een reden.",
+    "Klopt: een weerlegging vraagt een tegenargument, geen kwalificatie.",
+    "Koos je \"het is een goede weerlegging omdat het kort is\"? Dan denk je dat kort sterk is. Zonder reden overtuigt het niet, dus het is geen weerlegging.",
+    "Koos je \"het is een voorbeeld van een argument\"? Dan denk je dat het een voorbeeld is. Er is geen voorbeeld, alleen een oordeel."
+   ],
+   "uh": "Waarom is het onzin?",
+   "ctx": "Stelling: scholen moeten de lessen een uur later laten beginnen. Team Voor zegt: \"Tieners hebben een ander bioritme; wie later begint, slaapt langer en presteert beter.\" Team Tegen zegt: \"Een latere start betekent dat de schooldag langer duurt en dat sporttrainingen in de knel komen.\""
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je krijgt de stelling \"Sociale media moeten verboden worden voor kinderen onder de zestien\" en moet Team Voor verdedigen. Je hebt een kwartier om je voor te bereiden. Je verwacht dat het andere team zal zeggen dat zo'n verbod niet te handhaven is.",
+   "v": "Noem drie dingen die je voorbereidt voor het debat over sociale media.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Je standpunt en argumenten (1p), voorbeelden of bewijs bij elk argument (1p), een antwoord op het verwachte bezwaar dat een verbod niet te handhaven is (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Team Tegen zegt: \"Een latere start betekent een langere schooldag, dus een uur later naar huis.\" Een lid van Team Voor antwoordt: \"Mijn tegenstanders vinden dus dat slaap niet belangrijk is, en dat is natuurlijk belachelijk.\"",
+   "v": "Welke fout maakt het lid van Team Voor en hoe reageer je correct?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Stroman: hij vervormt het standpunt van Team Tegen (1p). Correct: erkennen dat een langere schooldag een bezwaar is en een oplossing of afweging noemen (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Team Voor antwoordt op het bezwaar: \"Een lange schooldag is een reëel bezwaar, maar scholen kunnen de pauzes inkorten. Bovendien levert een uur extra slaap meer op dan een uur extra vrije tijd, want leerlingen onthouden beter als ze uitgerust zijn.\"",
+   "v": "Beschrijf in drie stappen waarom deze weerlegging sterk is.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze erkent het bezwaar (1p), geeft een oplossing door de pauzes in te korten (1p) en weegt af dat extra slaap meer oplevert dan extra vrije tijd (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Tijdens een discussie over huiswerk zegt Daan: \"Jij hebt toch nooit je huiswerk af, dus wat weet jij ervan?\" Lotte onderbreekt Eva midden in haar zin en praat luider. De gespreksleider grijpt niet in en het gesprek loopt uit de hand.",
+   "v": "Welke twee regels worden geschonden en hoe grijpt de gespreksleider in?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Persoonlijke aanval door Daan (1p) en onderbreken door Lotte (1p). De gespreksleider zegt dat iedereen mag uitspreken en vraagt Daan bij het onderwerp te blijven (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Slotpleidooi A: \"Tot slot: slaap helpt leren, een latere start levert betere resultaten, en daarom moeten scholen later beginnen.\" Slotpleidooi B: \"Ik wil ook nog zeggen dat schoolkantines gezonder moeten zijn en dat huiswerk afgeschaft moet worden.\"",
+   "v": "Schrijf een slotpleidooi van twee zinnen voor Team Voor over later beginnen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een korte samenvatting van de argumenten (1p) en een conclusie of oproep (1p), zonder nieuw argument (1p)."
+  }
+ ]
+}

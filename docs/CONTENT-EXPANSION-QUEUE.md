@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **57 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3). Werk dit getal bij bij elke afronding.
+> Voortgang: **58 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -78,7 +78,7 @@
   - [x] B1 · nl.B.1 Informatie verzamelen, vergelijken en verwerken · 27 vragen (R1 7, R2 10, R3 10, 6 eigen bronnenscenario's van 280-450 tekens), 12 begrippen, 4 figuren (vier bronvragen, bronnen wegen, van artikel naar kernpunten, citaat parafrase plagiaat), geen clip
   - [x] B2 · nl.B.2 Doel, publiek en gespreksvorm bepalen en afstemmen · 27 vragen (R1 7, R2 10, R3 10, 6 eigen spreeksituaties van 230-280 tekens), 12 begrippen, 4 figuren (drie gespreksvormen, publiek analyseren, register op een schaal, van opdracht naar plan), geen clip
   - [x] B3 · nl.B.3 Een voordracht opbouwen en presenteren · 27 vragen (R1 7, R2 10, R3 10, 6 eigen spreekfragmenten van 190-380 tekens), 12 begrippen, 4 figuren (opbouw als balk, inleiding in drie stappen, kern met overgangen en rode draad, presenteren), geen clip
-  - [ ] B4 · nl.B.4 Deelnemen aan een discussie of debat
+  - [x] B4 · nl.B.4 Deelnemen aan een discussie of debat · 27 vragen (R1 7, R2 10, R3 10, 7 eigen debatfragmenten van 190-300 tekens), 12 begrippen, 4 figuren (opbouw argument, weerleggen in stappen, fout en goed, verloop van een debat), geen clip
   - [ ] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers
 - [ ] **VWO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid
 - [ ] **VWO · Nederlands** (`nl`) · domein D — Argumentatieve vaardigheden
