@@ -1,0 +1,688 @@
+{
+ "id": "B2",
+ "lo": "nl.B.2",
+ "gs": 2,
+ "naam": "Doel, publiek en gespreksvorm afstemmen",
+ "beschrijving": "Je bepaalt het spreekdoel, analyseert je publiek en kiest de gespreksvorm (voordracht, discussie of debat), en stemt inhoud, voorbeelden en taalgebruik daarop af.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Het spreekdoel bepalen",
+  "De gespreksvorm herkennen",
+  "Het publiek analyseren",
+  "Inhoud en voorbeelden afstemmen",
+  "Taal en register afstemmen",
+  "Valkuilen: verwarren en vergeten"
+ ],
+ "sam": "Voor een voordracht, discussie of debat bepaal je eerst je spreekdoel (informeren, ter overweging aanbieden of overtuigen), je publiek en de gespreksvorm. Een voordracht is één spreker voor een publiek, een discussie is gezamenlijk onderzoeken en een debat is een standpunt verdedigen tegenover een jury of publiek. Daarna stem je inhoud, voorbeelden en register af op voorkennis, belangstelling en gelegenheid.",
+ "begrippen": [
+  {
+   "t": "Spreekdoel",
+   "d": "Wat je met je gesprek of voordracht bij het publiek wilt bereiken."
+  },
+  {
+   "t": "Informeren",
+   "d": "Het publiek kennis geven zonder een standpunt te verdedigen."
+  },
+  {
+   "t": "Overtuigen",
+   "d": "Het publiek een standpunt laten overnemen of tot actie aanzetten."
+  },
+  {
+   "t": "Ter overweging aanbieden",
+   "d": "Opvattingen voorleggen zodat het publiek er zelf over nadenkt."
+  },
+  {
+   "t": "Publiek",
+   "d": "De mensen tot wie je spreekt, met hun leeftijd, voorkennis en belangstelling."
+  },
+  {
+   "t": "Voorkennis",
+   "d": "Wat het publiek al weet over het onderwerp."
+  },
+  {
+   "t": "Gespreksvorm",
+   "d": "De vorm van het gesprek: voordracht, discussie of debat."
+  },
+  {
+   "t": "Voordracht",
+   "d": "Een voorbereid verhaal van één spreker voor een publiek."
+  },
+  {
+   "t": "Discussie",
+   "d": "Een gesprek waarin deelnemers samen opvattingen onderzoeken, zonder te winnen."
+  },
+  {
+   "t": "Debat",
+   "d": "Een gesprek waarin teams een standpunt verdedigen tegenover een jury of publiek."
+  },
+  {
+   "t": "Register",
+   "d": "De toon van je taal, formeel of informeel, afgestemd op de gelegenheid."
+  },
+  {
+   "t": "Gelegenheid",
+   "d": "De situatie waarin je spreekt, bijvoorbeeld een les of een zakelijke bijeenkomst."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Bij welke gespreksvorm spreekt één persoon tot een publiek?",
+   "o": [
+    "een discussie",
+    "een voordracht",
+    "een debat tussen twee teams",
+    "een groepsgesprek in de pauze"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 1,
+   "u": "Voordracht: één spreker, één boodschap, een publiek.",
+   "uo": [
+    "Koos je \"een discussie\"? Dan denk je dat in een discussie één persoon spreekt. Bij een discussie praten meerdere mensen met elkaar, onder leiding van een gespreksleider.",
+    "Klopt: bij een voordracht houdt één spreker een verhaal voor een publiek.",
+    "Koos je \"een debat tussen twee teams\"? Dan denk je dat een debat een monoloog is. Een debat heeft twee kanten die op elkaar reageren, dus het is geen voordracht.",
+    "Koos je \"een groepsgesprek in de pauze\"? Dan denk je dat elk gesprek een voordracht is. Een voordracht is voorbereid en gericht op een publiek, geen spontane praat."
+   ],
+   "uh": "Eén spreker."
+  },
+  {
+   "v": "Welke gespreksvorm past bij deze situatie?",
+   "o": [
+    "een debat",
+    "een voordracht",
+    "een interview",
+    "een discussie"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Discussie: gezamenlijk zoeken, niemand hoeft te winnen.",
+   "uo": [
+    "Koos je \"een debat\"? Dan denk je dat elk gesprek met twee kanten een debat is. Bij een debat probeer je een jury of publiek te overtuigen, hier hoeft niemand te winnen.",
+    "Koos je \"een voordracht\"? Dan denk je dat de gespreksleider de enige spreker is. Meerdere leerlingen praten mee, dus het is geen voordracht.",
+    "Koos je \"een interview\"? Dan denk je dat de gespreksleider alleen vragen stelt. De leerlingen praten onderling met elkaar, dus het is meer dan een interview.",
+    "Klopt: de deelnemers wisselen opvattingen uit zonder dat iemand hoeft te winnen."
+   ],
+   "uh": "Samen zoeken.",
+   "ctx": "Vier leerlingen praten onder leiding van een gespreksleider over de vraag of de schooldag korter kan. Niemand hoeft te winnen: ze willen samen ontdekken welke mogelijkheden er zijn en wat de voor- en nadelen van elke mogelijkheid zijn."
+  },
+  {
+   "v": "Hoe noem je de vorm van dit gesprek?",
+   "o": [
+    "een debat",
+    "een discussie",
+    "een voordracht",
+    "een vergadering"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Debat: twee kanten, jury, doel overtuigen.",
+   "uo": [
+    "Klopt: twee teams verdedigen een stelling tegenover een jury.",
+    "Koos je \"een discussie\"? Dan denk je dat elke bespreking een discussie is. Bij een discussie is er geen jury en hoeft niemand te winnen, hier moet de jury worden overtuigd.",
+    "Koos je \"een voordracht\"? Dan denk je dat het één spreker is. Er zijn twee teams die op elkaar reageren, dus het is geen voordracht.",
+    "Koos je \"een vergadering\"? Dan denk je dat men besluiten neemt. Hier gaat het om overtuigen met argumenten, geen besluitvorming."
+   ],
+   "uh": "Winnen met argumenten.",
+   "ctx": "Op school is een debat over de stelling dat sociale media pas vanaf zestien jaar mogen. Er zijn twee teams, een gespreksleider en een jury. Elk team heeft per ronde vier minuten spreektijd en moet de jury overtuigen dat zijn standpunt het sterkst is."
+  },
+  {
+   "v": "Wat wil je bij dit publiek bereiken?",
+   "o": [
+    "de leerlingen overtuigen dat de regels fout zijn",
+    "de leerlingen vermaken met een verhaal",
+    "de leerlingen informeren over de nieuwe regels",
+    "de leerlingen laten stemmen over de regels"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 0,
+   "u": "Spreekdoel: informeren, overtuigen of ter overweging aanbieden.",
+   "uo": [
+    "Koos je \"de leerlingen overtuigen dat de regels fout zijn\"? Dan denk je dat je hier een mening verkoopt. De opdracht is informeren, geen kritiek leveren.",
+    "Koos je \"de leerlingen vermaken met een verhaal\"? Dan denk je dat het doel plezier is. De opdracht is zakelijk, het gaat om kennisoverdracht.",
+    "Klopt: het doel is dat de leerlingenraad de regels leert kennen en begrijpt.",
+    "Koos je \"de leerlingen laten stemmen over de regels\"? Dan denk je dat het publiek moet beslissen. De regels zijn al vastgesteld, dus je informeert alleen."
+   ],
+   "uh": "Wat moet het publiek weten?",
+   "ctx": "Je krijgt de opdracht om de leerlingenraad te informeren over de nieuwe regels voor mobiele telefoons op school. Je publiek bestaat uit twaalf leerlingen uit verschillende klassen. Zij kennen de nieuwe regels nog niet en hebben tien minuten de tijd."
+  },
+  {
+   "v": "Welk kenmerk van het publiek bepaalt hier je uitleg?",
+   "o": [
+    "ze zitten in verschillende klassen",
+    "ze zijn met twaalf personen",
+    "ze kennen de regels niet",
+    "ze hebben tien minuten"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Voorkennis van het publiek bepaalt hoe uitgebreid je uitlegt.",
+   "uo": [
+    "Koos je \"ze zitten in verschillende klassen\"? Dan denk je dat de klas bepalend is. De regels gelden voor iedereen, dus de klas is minder belangrijk.",
+    "Koos je \"ze zijn met twaalf personen\"? Dan denk je dat het aantal het kenmerk is. Twaalf mensen zeggen weinig over wat ze weten, de voorkennis is het belangrijkst.",
+    "Klopt: wie de regels niet kent, heeft een duidelijke uitleg nodig.",
+    "Koos je \"ze hebben tien minuten\"? Dan denk je dat de tijd het publiek bepaalt. De tijd bepaalt je lengte, niet wat ze al weten."
+   ],
+   "uh": "Wat weten ze al?",
+   "ctx": "Je krijgt de opdracht om de leerlingenraad te informeren over de nieuwe regels voor mobiele telefoons op school. Je publiek bestaat uit twaalf leerlingen uit verschillende klassen. Zij kennen de nieuwe regels nog niet en hebben tien minuten de tijd."
+  },
+  {
+   "v": "Waarom debatteren teams met elkaar?",
+   "o": [
+    "om de jury te overtuigen",
+    "om samen een oplossing te vinden",
+    "om de ander te beledigen",
+    "om elkaar uit te leggen hoe iets in elkaar zit en werkt"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Debat: standpunt verdedigen om te overtuigen.",
+   "uo": [
+    "Klopt: het doel van een debat is een jury of publiek overtuigen.",
+    "Koos je \"om samen een oplossing te vinden\"? Dan denk je dat teams samenwerken. Bij een debat staan twee kanten tegenover elkaar, gezamenlijk zoeken hoort bij een discussie.",
+    "Koos je \"om de ander te beledigen\"? Dan denk je dat het doel winnen is door te kleineren. Dat is een drogreden, je overtuigt met argumenten.",
+    "Koos je \"om elkaar uit te leggen hoe iets in elkaar zit en...\"? Dan denk je dat het doel informeren is. Bij een debat verdedig je een standpunt, je legt niet alleen uit."
+   ],
+   "uh": "Overtuigen met argumenten."
+  },
+  {
+   "v": "Welke opening past bij een bijeenkomst voor ondernemers?",
+   "o": [
+    "opening 1, want die klinkt vlot en luchtig",
+    "geen van beide, want je moet met een grap beginnen",
+    "beide even goed, want de inhoud telt",
+    "opening 2, met \"u\" en een beleefde aanhef"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 4,
+   "u": "Formeel publiek, formele aanhef.",
+   "uo": [
+    "Koos je \"opening 1, want die klinkt vlot en luchtig\"? Dan denk je dat vlot altijd werkt. Bij een formele gelegenheid met volwassenen past die toon niet, dus je maakt een verkeerde start.",
+    "Koos je \"geen van beide, want je moet met een grap beginnen\"? Dan denk je dat een grap altijd past. Je kiest je opening bij je publiek, en deze gelegenheid is formeel.",
+    "Koos je \"beide even goed, want de inhoud telt\"? Dan denk je dat de toon er niet toe doet. De toon bepaalt hoe het publiek je ontvangt, dus de opening moet passen.",
+    "Klopt: een formele gelegenheid vraagt een beleefde, formele aanhef."
+   ],
+   "uh": "Wie zit er?",
+   "ctx": "Opening 1: \"Hé jongens, check dit even, het is echt super boeiend.\" Opening 2: \"Geachte aanwezigen, hartelijk dank dat u hier vandaag bent. Ik wil u vertellen over een onderwerp dat mij na aan het hart ligt.\" Een bijeenkomst voor ondernemers is een formele gelegenheid."
+  },
+  {
+   "v": "Waarom past Anouks inleiding niet bij groep 7?",
+   "o": [
+    "omdat ze te zacht praat",
+    "ze gebruikt moeilijke vaktaal",
+    "omdat bijen geen onderwerp voor kinderen van die leeftijd zijn",
+    "omdat ze met een groet begint"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Taal afstemmen op het publiek: geen vaktaal bij kinderen.",
+   "uo": [
+    "Koos je \"omdat ze te zacht praat\"? Dan denk je dat het volume het probleem is. De kinderen reageren op de inhoud, de woorden zijn het probleem.",
+    "Klopt: woorden als bestuivingsefficiëntie en ecosystemen zijn te moeilijk voor dit publiek.",
+    "Koos je \"omdat bijen geen onderwerp voor kinderen van die...\"? Dan denk je dat het onderwerp ongeschikt is. Kinderen vinden bijen vaak interessant, het gaat om de formulering.",
+    "Koos je \"omdat ze met een groet begint\"? Dan denk je dat een groet fout is. Een groet is prima, het probleem is de moeilijke taal."
+   ],
+   "uh": "Begrijpen de kinderen dit?",
+   "ctx": "Anouk houdt een voordracht over bijen voor groep 7 van de basisschool. Ze begint: \"Goedemiddag, vandaag bespreek ik de bestuivingsefficiëntie van het honingbijvolk, de apis mellifera, binnen agrarische ecosystemen.\" De kinderen kijken elkaar aan en een jongen begint te kauwen op zijn pen."
+  },
+  {
+   "v": "Welke aanpassing maakt haar taal passend?",
+   "o": [
+    "nog meer vakwoorden gebruiken",
+    "sneller praten zodat het sneller afgelopen is",
+    "alleen in het Engels praten",
+    "korte zinnen en gewone woorden"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Taal en voorbeelden aanpassen aan het publiek.",
+   "uo": [
+    "Koos je \"nog meer vakwoorden gebruiken\"? Dan denk je dat vaktaal serieus klinkt. Voor kinderen is het onbegrijpelijk, dus het maakt het erger.",
+    "Koos je \"sneller praten zodat het sneller afgelopen is\"? Dan denk je dat snelheid de oplossing is. De taal blijft te moeilijk, en het tempo maakt het onduidelijker.",
+    "Koos je \"alleen in het Engels praten\"? Dan denk je dat een andere taal helpt. Het publiek spreekt Nederlands, dus dit maakt het moeilijker.",
+    "Klopt: eenvoudige taal en een voorbeeld sluiten aan bij kinderen van groep 7."
+   ],
+   "uh": "Kinderen begrijpen eenvoud.",
+   "ctx": "Anouk houdt een voordracht over bijen voor groep 7 van de basisschool. Ze begint: \"Goedemiddag, vandaag bespreek ik de bestuivingsefficiëntie van het honingbijvolk, de apis mellifera, binnen agrarische ecosystemen.\" De kinderen kijken elkaar aan en een jongen begint te kauwen op zijn pen."
+  },
+  {
+   "v": "Welk gegeven over dit publiek bepaalt je inhoud het meest?",
+   "o": [
+    "ze zijn met vijftig mensen in de zaal",
+    "ze zijn nieuwsgierig maar weten weinig",
+    "ze hebben allemaal een eigen bedrijf",
+    "ze zijn zelf al lang geen scholier meer"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Publiek: leeftijd, belangstelling en voorkennis.",
+   "uo": [
+    "Koos je \"ze zijn met vijftig mensen in de zaal\"? Dan denk je dat het aantal bepalend is. Het aantal bepaalt je geluid, niet je inhoud.",
+    "Klopt: ze hebben belangstelling maar weinig voorkennis; je legt uit en gebruikt herkenbare voorbeelden.",
+    "Koos je \"ze hebben allemaal een eigen bedrijf\"? Dan denk je dat het bedrijf de inhoud bepaalt. Het zegt iets over hun interesse, maar niets over hun voorkennis.",
+    "Koos je \"ze zijn zelf al lang geen scholier meer\"? Dan denk je dat dit het enige gegeven is. Het is een deel, de combinatie van belangstelling en voorkennis telt."
+   ],
+   "uh": "Interesse en voorkennis.",
+   "ctx": "Een bedrijf nodigt jou uit voor een bijeenkomst van vijftig ondernemers. Je spreekt tien minuten over werkdruk bij scholieren. De meeste aanwezigen zijn boven de vijfenveertig, hebben zelf kinderen op school en zijn geïnteresseerd, maar kennen het onderwijs van nu niet van binnenuit."
+  },
+  {
+   "v": "Welk voorbeeld past het best bij dit publiek?",
+   "o": [
+    "een voorbeeld uit een les wiskunde",
+    "een grap over huiswerk maken",
+    "werkdruk in een bedrijf",
+    "een lijst met cijfers zonder uitleg"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Voorbeelden: herkenbaar voor het publiek.",
+   "uo": [
+    "Koos je \"een voorbeeld uit een les wiskunde\"? Dan denk je dat een schoolvoorbeeld herkenbaar is. Voor ondernemers is dat ver weg, dus het sluit niet aan.",
+    "Koos je \"een grap over huiswerk maken\"? Dan denk je dat een grap altijd werkt. Een grap zonder herkenbare inhoud, zegt weinig over werkdruk.",
+    "Klopt: ondernemers herkennen werkdruk uit hun eigen werk en begrijpen zo wat scholieren ervaren.",
+    "Koos je \"een lijst met cijfers zonder uitleg\"? Dan denk je dat cijfers altijd overtuigen. Zonder uitleg begrijpt het publiek ze niet, dus ze missen hun doel."
+   ],
+   "uh": "Herkent het publiek dit?",
+   "ctx": "Een bedrijf nodigt jou uit voor een bijeenkomst van vijftig ondernemers. Je spreekt tien minuten over werkdruk bij scholieren. De meeste aanwezigen zijn boven de vijfenveertig, hebben zelf kinderen op school en zijn geïnteresseerd, maar kennen het onderwijs van nu niet van binnenuit."
+  },
+  {
+   "v": "Waarom is dit geen debat?",
+   "o": [
+    "niemand hoeft te winnen",
+    "omdat er vier mensen aan het gesprek meedoen",
+    "omdat er een gespreksleider is",
+    "omdat het over school gaat"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 1,
+   "u": "Discussie: gezamenlijk zoeken; debat: overtuigen en winnen.",
+   "uo": [
+    "Klopt: een debat draait om overtuigen en winnen; hier gaat het om gezamenlijk onderzoeken.",
+    "Koos je \"omdat er vier mensen aan het gesprek meedoen\"? Dan denk je dat het aantal personen de vorm bepaalt. Een debat kan ook uit meer dan twee mensen bestaan, het doel verschilt.",
+    "Koos je \"omdat er een gespreksleider is\"? Dan denk je dat een gespreksleider een debat uitsluit. Ook bij een debat is er een leider, het gaat om het doel.",
+    "Koos je \"omdat het over school gaat\"? Dan denk je dat het onderwerp bepalend is. Een debat kan over school gaan, het gaat om hoe het gesprek wordt gevoerd."
+   ],
+   "uh": "Doel van het gesprek.",
+   "ctx": "Vier leerlingen praten onder leiding van een gespreksleider over de vraag of de schooldag korter kan. Niemand hoeft te winnen: ze willen samen ontdekken welke mogelijkheden er zijn en wat de voor- en nadelen van elke mogelijkheid zijn."
+  },
+  {
+   "v": "Welk doel heeft elk team in dit debat?",
+   "o": [
+    "de jury overtuigen",
+    "het andere team overtuigen om mee te doen met het plan",
+    "alle aanwezigen informeren over sociale media",
+    "zo kort mogelijk spreken"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Debatdoel: de jury winnen met argumenten.",
+   "uo": [
+    "Klopt: de jury beslist op argumenten, dus elk team wil haar overtuigen.",
+    "Koos je \"het andere team overtuigen om mee te doen met het...\"? Dan denk je dat het doel het andere team is. De jury beslist, het andere team blijft tegenstander.",
+    "Koos je \"alle aanwezigen informeren over sociale media\"? Dan denk je dat het doel informeren is. Bij een debat verdedig je een standpunt, dat is meer dan uitleggen.",
+    "Koos je \"zo kort mogelijk spreken\"? Dan denk je dat kort altijd beter is. Je gebruikt je spreektijd om te overtuigen, dus korter is niet het doel."
+   ],
+   "uh": "Wie beslist?",
+   "ctx": "Op school is een debat over de stelling dat sociale media pas vanaf zestien jaar mogen. Er zijn twee teams, een gespreksleider en een jury. Elk team heeft per ronde vier minuten spreektijd en moet de jury overtuigen dat zijn standpunt het sterkst is."
+  },
+  {
+   "v": "Welk register past bij dit publiek?",
+   "o": [
+    "informeel met jongerentaal",
+    "zo moeilijk mogelijk om serieus te lijken",
+    "formeel, met \"u\" en zakelijke woorden",
+    "alleen korte kreten zonder zinnen"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Register: kies de toon die bij publiek en gelegenheid past.",
+   "uo": [
+    "Koos je \"informeel met jongerentaal\"? Dan denk je dat jongerentaal je geloofwaardig maakt. Voor dit publiek werkt het afstandelijk, dus het past niet.",
+    "Koos je \"zo moeilijk mogelijk om serieus te lijken\"? Dan denk je dat moeilijk serieus is. Moeilijke taal maakt je onduidelijk, dus het schaadt je boodschap.",
+    "Klopt: ondernemers boven de vijfenveertig vragen een beleefde, zakelijke toon.",
+    "Koos je \"alleen korte kreten zonder zinnen\"? Dan denk je dat kreten genoeg zijn. Een voordracht van tien minuten vraagt volledige zinnen, dus kreten zijn te weinig."
+   ],
+   "uh": "Formeel of informeel?",
+   "ctx": "Een bedrijf nodigt jou uit voor een bijeenkomst van vijftig ondernemers. Je spreekt tien minuten over werkdruk bij scholieren. De meeste aanwezigen zijn boven de vijfenveertig, hebben zelf kinderen op school en zijn geïnteresseerd, maar kennen het onderwijs van nu niet van binnenuit."
+  },
+  {
+   "v": "Welke fout maakt Anouk bij haar publiek?",
+   "o": [
+    "ze kijkt te veel naar de kinderen",
+    "ze past haar taal niet aan",
+    "ze kiest een onderwerp dat te kort is voor de tijd",
+    "ze praat met te veel voorbeelden"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Publiek vergeten: de taal past niet bij de kinderen.",
+   "uo": [
+    "Koos je \"ze kijkt te veel naar de kinderen\"? Dan denk je dat oogcontact het probleem is. Oogcontact is juist goed, het probleem is de moeilijke taal.",
+    "Klopt: ze denkt niet aan wat het publiek weet en begrijpt.",
+    "Koos je \"ze kiest een onderwerp dat te kort is voor de tijd\"? Dan denk je dat het onderwerp te klein is. Het onderwerp is prima, het gaat om de formulering.",
+    "Koos je \"ze praat met te veel voorbeelden\"? Dan denk je dat voorbeelden het probleem zijn. Ze gebruikt geen enkel voorbeeld, het ontbreken ervan is het probleem."
+   ],
+   "uh": "Wie luistert er?",
+   "ctx": "Anouk houdt een voordracht over bijen voor groep 7 van de basisschool. Ze begint: \"Goedemiddag, vandaag bespreek ik de bestuivingsefficiëntie van het honingbijvolk, de apis mellifera, binnen agrarische ecosystemen.\" De kinderen kijken elkaar aan en een jongen begint te kauwen op zijn pen."
+  },
+  {
+   "v": "Waaraan zie je dat het hoofddoel informeren is?",
+   "o": [
+    "omdat het publiek uit meerdere klassen bestaat",
+    "omdat je tien minuten de tijd hebt om te spreken",
+    "omdat je zelf een duidelijke mening hebt over de regels",
+    "de opdracht zegt: informeren"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Het doel staat meestal in de opdracht.",
+   "uo": [
+    "Koos je \"omdat het publiek uit meerdere klassen bestaat\"? Dan denk je dat een groot publiek het doel bepaalt. Het aantal zegt niets over het doel, de opdracht wel.",
+    "Koos je \"omdat je tien minuten de tijd hebt om te spreken\"? Dan denk je dat de tijd het doel bepaalt. De tijd bepaalt je lengte, niet je doel.",
+    "Koos je \"omdat je zelf een duidelijke mening hebt over de...\"? Dan denk je dat je een standpunt verdedigt. Dat staat niet in de opdracht, je informeert.",
+    "Klopt: informeren staat in de opdracht en het publiek moet iets leren."
+   ],
+   "uh": "Wat vraagt de opdracht?",
+   "ctx": "Je krijgt de opdracht om de leerlingenraad te informeren over de nieuwe regels voor mobiele telefoons op school. Je publiek bestaat uit twaalf leerlingen uit verschillende klassen. Zij kennen de nieuwe regels nog niet en hebben tien minuten de tijd."
+  },
+  {
+   "v": "Welke vraag stel je jezelf over dit publiek?",
+   "o": [
+    "hoe laat vinden zij het leuk om te eindigen?",
+    "wat weten zij al en wat willen ze weten?",
+    "hoe groot is mijn spreektijd in minuten?",
+    "welke kleur kleding draag ik?"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Publiek: voorkennis en behoefte.",
+   "uo": [
+    "Koos je \"hoe laat vinden zij het leuk om te eindigen?\"? Dan denk je dat de eindtijd de inhoud bepaalt. Die bepaalt de lengte, niet wat je uitlegt.",
+    "Klopt: voorkennis en informatiebehoefte bepalen wat je uitlegt.",
+    "Koos je \"hoe groot is mijn spreektijd in minuten?\"? Dan denk je dat tijd het publiek is. Tijd bepaalt je opbouw, niet je inhoud voor dit publiek.",
+    "Koos je \"welke kleur kleding draag ik?\"? Dan denk je dat kleding het publiek bepaalt. Je uiterlijk is bijzaak, de inhoud telt."
+   ],
+   "uh": "Wat weten ze al?",
+   "ctx": "Je krijgt de opdracht om de leerlingenraad te informeren over de nieuwe regels voor mobiele telefoons op school. Je publiek bestaat uit twaalf leerlingen uit verschillende klassen. Zij kennen de nieuwe regels nog niet en hebben tien minuten de tijd."
+  },
+  {
+   "v": "Een leerling zegt: \"Dit is gewoon een discussie.\" Wat is jouw oordeel?",
+   "o": [
+    "onjuist: twee teams, een jury, overtuigen",
+    "juist: er wordt in de groep over een onderwerp gesproken",
+    "juist: er is een gespreksleider",
+    "onjuist: er is geen enkele regel"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Debat: twee teams, jury, overtuigen.",
+   "uo": [
+    "Klopt: dat zijn de kenmerken van een debat, niet van een discussie.",
+    "Koos je \"juist: er wordt in de groep over een onderwerp...\"? Dan denk je dat praten over een onderwerp een discussie is. Een debat gaat ook over een onderwerp, de vorm bepaalt het verschil.",
+    "Koos je \"juist: er is een gespreksleider\"? Dan denk je dat een gespreksleider een discussie aanwijst. Ook bij een debat is er een leider, dus dat bewijst niets.",
+    "Koos je \"onjuist: er is geen enkele regel\"? Dan denk je dat een debat geen regels heeft. Er zijn regels voor spreektijd en beurten, maar dat is niet het verschil."
+   ],
+   "uh": "Jury en winnen.",
+   "ctx": "Op school is een debat over de stelling dat sociale media pas vanaf zestien jaar mogen. Er zijn twee teams, een gespreksleider en een jury. Elk team heeft per ronde vier minuten spreektijd en moet de jury overtuigen dat zijn standpunt het sterkst is."
+  },
+  {
+   "v": "Welke selectie van inhoud past bij tien minuten voor ondernemers?",
+   "o": [
+    "alles wat je weet over scholieren opsommen in tien minuten",
+    "één cijfer noemen en dan stoppen",
+    "alleen anekdotes zonder boodschap",
+    "drie kernpunten met voorbeelden"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Selecteer drie kernpunten, vul ze aan met voorbeelden.",
+   "uo": [
+    "Koos je \"alles wat je weet over scholieren opsommen in tien...\"? Dan denk je dat meer informatie beter is. Je publiek raakt de draad kwijt, dus je moet kiezen.",
+    "Koos je \"één cijfer noemen en dan stoppen\"? Dan denk je dat kort genoeg is. Tien minuten vraagt meer uitleg, dus één cijfer is te weinig.",
+    "Koos je \"alleen anekdotes zonder boodschap\"? Dan denk je dat verhalen genoeg zijn. Zonder boodschap blijft het publiek met vragen zitten, dus er is geen kern.",
+    "Klopt: een beperkt aantal punten, duidelijk uitgelegd, past bij het publiek en de tijd."
+   ],
+   "uh": "Tijd en publiek.",
+   "ctx": "Een bedrijf nodigt jou uit voor een bijeenkomst van vijftig ondernemers. Je spreekt tien minuten over werkdruk bij scholieren. De meeste aanwezigen zijn boven de vijfenveertig, hebben zelf kinderen op school en zijn geïnteresseerd, maar kennen het onderwijs van nu niet van binnenuit."
+  },
+  {
+   "v": "Welke formulering past bij het register?",
+   "o": [
+    "\"Even checken wat die jongeren allemaal doen.\"",
+    "\"Zoals u weet, jongens, is dit boeiend.\"",
+    "\"Ik wil u graag iets vertellen over scholieren.\"",
+    "\"Dit is dus echt wel heftig, hè.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Formeel register: u, beleefde taal, zakelijke woorden.",
+   "uo": [
+    "Koos je \"Even checken wat die jongeren allemaal doen.\"? Dan denk je dat dit vlot klinkt. Het is te informeel voor dit publiek, dus het past niet.",
+    "Koos je \"Zoals u weet, jongens, is dit boeiend.\"? Dan denk je dat een mengvorm werkt. Je spreekt volwassenen aan als jongens, dus het register is onjuist.",
+    "Klopt: de zin is beleefd, zakelijk en gebruikt \"u\", dus hij past bij het publiek.",
+    "Koos je \"Dit is dus echt wel heftig, hè.\"? Dan denk je dat spreektaal past. Het is vrijblijvend en informeel, dus het past niet bij een zakelijke gelegenheid."
+   ],
+   "uh": "Beleefd en zakelijk.",
+   "ctx": "Een bedrijf nodigt jou uit voor een bijeenkomst van vijftig ondernemers. Je spreekt tien minuten over werkdruk bij scholieren. De meeste aanwezigen zijn boven de vijfenveertig, hebben zelf kinderen op school en zijn geïnteresseerd, maar kennen het onderwijs van nu niet van binnenuit."
+  },
+  {
+   "v": "Waarom is een voorbeeld uit de klas minder geschikt voor dit publiek?",
+   "o": [
+    "omdat klassen te klein zijn voor een goed voorbeeld",
+    "omdat voorbeelden uit de klas altijd fout zijn",
+    "ondernemers herkennen het niet",
+    "omdat ondernemers geen voorbeelden willen"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Voorbeelden moeten herkenbaar zijn voor het publiek.",
+   "uo": [
+    "Koos je \"omdat klassen te klein zijn voor een goed voorbeeld\"? Dan denk je dat de grootte van de klas het probleem is. Het gaat om herkenbaarheid, niet om het aantal leerlingen.",
+    "Koos je \"omdat voorbeelden uit de klas altijd fout zijn\"? Dan denk je dat het nooit mag. Het kan wel, als het publiek het herkent, hier is dat niet zo.",
+    "Klopt: een herkenbaar voorbeeld helpt het publiek de werkdruk te begrijpen.",
+    "Koos je \"omdat ondernemers geen voorbeelden willen\"? Dan denk je dat het publiek geen voorbeelden wil. Voorbeelden helpen iedereen, mits ze herkenbaar zijn."
+   ],
+   "uh": "Is het herkenbaar?",
+   "ctx": "Een bedrijf nodigt jou uit voor een bijeenkomst van vijftig ondernemers. Je spreekt tien minuten over werkdruk bij scholieren. De meeste aanwezigen zijn boven de vijfenveertig, hebben zelf kinderen op school en zijn geïnteresseerd, maar kennen het onderwijs van nu niet van binnenuit."
+  },
+  {
+   "v": "Welk spreekdoel hebben de deelnemers van deze discussie?",
+   "o": [
+    "het publiek overtuigen van één enkel standpunt",
+    "een lange monoloog afsteken",
+    "een besluit afdwingen",
+    "opvattingen delen en samen onderzoeken"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Discussie: samen onderzoeken, niemand hoeft te winnen.",
+   "uo": [
+    "Koos je \"het publiek overtuigen van één enkel standpunt\"? Dan denk je dat de deelnemers een standpunt verdedigen. Ze zoeken samen, er is geen jury of publiek.",
+    "Koos je \"een lange monoloog afsteken\"? Dan denk je dat de deelnemers een voordracht houden. Ze wisselen beurten, dus het is geen monoloog.",
+    "Koos je \"een besluit afdwingen\"? Dan denk je dat de discussie een besluit moet opleveren. Het doel is onderzoeken, geen besluit nemen.",
+    "Klopt: de deelnemers willen samen ontdekken welke opties er zijn; niemand hoeft te winnen."
+   ],
+   "uh": "Samen zoeken.",
+   "ctx": "Vier leerlingen praten onder leiding van een gespreksleider over de vraag of de schooldag korter kan. Niemand hoeft te winnen: ze willen samen ontdekken welke mogelijkheden er zijn en wat de voor- en nadelen van elke mogelijkheid zijn."
+  },
+  {
+   "v": "Een team spreekt vier minuten zonder te reageren op het andere team. Wat is de fout?",
+   "o": [
+    "ze reageren niet op de tegenstander",
+    "het team praat te lang voor de afgesproken tijd",
+    "het team heeft geen standpunt",
+    "het team gebruikt te veel verschillende argumenten"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Debat: reageren op elkaars argumenten.",
+   "uo": [
+    "Klopt: het debat vraagt reageren op elkaar, niet alleen een eigen verhaal.",
+    "Koos je \"het team praat te lang voor de afgesproken tijd\"? Dan denk je dat vier minuten te lang is. Het is de toegestane spreektijd, het probleem is het ontbreken van reactie.",
+    "Koos je \"het team heeft geen standpunt\"? Dan denk je dat het standpunt ontbreekt. Het standpunt kan er wel zijn, de interactie ontbreekt.",
+    "Koos je \"het team gebruikt te veel verschillende argumenten\"? Dan denk je dat meer argumenten fout is. Meer argumenten zijn niet het probleem, het niet reageren is dat wel."
+   ],
+   "uh": "Reageer op de ander.",
+   "ctx": "Op school is een debat over de stelling dat sociale media pas vanaf zestien jaar mogen. Er zijn twee teams, een gespreksleider en een jury. Elk team heeft per ronde vier minuten spreektijd en moet de jury overtuigen dat zijn standpunt het sterkst is."
+  },
+  {
+   "v": "Welke vorm past hier het best en waarom?",
+   "o": [
+    "een debat: jij en de leerlingenraad wisselen opvattingen uit",
+    "een voordracht: één spreker informeert een publiek",
+    "een discussie: je zoekt samen met de raad nieuwe regels",
+    "een interview: je stelt alleen vragen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 1,
+   "u": "Voordracht: één spreker die informeert.",
+   "uo": [
+    "Koos je \"een debat: jij en de leerlingenraad wisselen...\"? Dan denk je dat het publiek een tegenstander is. Er is geen standpunt dat je verdedigt, dus het is geen debat.",
+    "Klopt: je informeert twaalf leerlingen over nieuwe regels; dat is een voordracht.",
+    "Koos je \"een discussie: je zoekt samen met de raad nieuwe...\"? Dan denk je dat de regels nog moeten worden bedacht. De regels zijn vastgesteld, dus je informeert.",
+    "Koos je \"een interview: je stelt alleen vragen\"? Dan denk je dat je vragen stelt. Je geeft informatie, dus het is een voordracht."
+   ],
+   "uh": "Informeren, geen debat.",
+   "ctx": "Je krijgt de opdracht om de leerlingenraad te informeren over de nieuwe regels voor mobiele telefoons op school. Je publiek bestaat uit twaalf leerlingen uit verschillende klassen. Zij kennen de nieuwe regels nog niet en hebben tien minuten de tijd."
+  },
+  {
+   "v": "Welke volgorde past bij een publiek dat de regels niet kent?",
+   "o": [
+    "eerst alle uitzonderingen, dan pas de regels",
+    "alleen wat leerlingen verboden is",
+    "eerst een grap, dan stoppen",
+    "eerst wat verandert, dan waarom, dan wat te doen"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Volgorde: wat, waarom, wat te doen.",
+   "uo": [
+    "Koos je \"eerst alle uitzonderingen, dan pas de regels\"? Dan denk je dat uitzonderingen eerst kunnen. Zonder kennis van de regel begrijpt het publiek de uitzondering niet, dus de volgorde is verwarrend.",
+    "Koos je \"alleen wat leerlingen verboden is\"? Dan denk je dat een opsomming van verboden genoeg is. Een uitleg heeft ook de reden nodig, anders blijft het onduidelijk.",
+    "Koos je \"eerst een grap, dan stoppen\"? Dan denk je dat een grap volstaat. Zonder inhoud heeft het publiek niets geleerd, dus je informeert niet.",
+    "Klopt: van kern naar reden en handelen is een heldere volgorde voor beginners."
+   ],
+   "uh": "Van kern naar handeling.",
+   "ctx": "Je krijgt de opdracht om de leerlingenraad te informeren over de nieuwe regels voor mobiele telefoons op school. Je publiek bestaat uit twaalf leerlingen uit verschillende klassen. Zij kennen de nieuwe regels nog niet en hebben tien minuten de tijd."
+  },
+  {
+   "v": "Welke herformulering past bij groep 7?",
+   "o": [
+    "\"Bijen vliegen van bloem naar bloem en helpen planten.\"",
+    "\"De apis mellifera vervult een essentiële functie in het ecosysteem.\"",
+    "\"Bijen zijn insecten die behoren tot de orde van de vliesvleugeligen.\"",
+    "\"Insecten bestuiven gewassen en bevorderen zo de agrarische productie.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Eenvoudige woorden, korte zinnen, concreet beeld.",
+   "uo": [
+    "Klopt: korte zin, alledaagse woorden, concreet beeld.",
+    "Koos je \"De apis mellifera vervult een essentiële functie in...\"? Dan denk je dat dit beter klinkt. Het is dezelfde moeilijke taal, dus het past niet bij kinderen.",
+    "Koos je \"Bijen zijn insecten die behoren tot de orde van de...\"? Dan denk je dat een biologische omschrijving uitleg is. Het is te abstract voor dit publiek, dus het sluit niet aan.",
+    "Koos je \"Insecten bestuiven gewassen en bevorderen zo de...\"? Dan denk je dat dit eenvoudig is. Het gebruikt nog steeds abstracte woorden, dus het is te moeilijk."
+   ],
+   "uh": "Concreet en kort.",
+   "ctx": "Anouk houdt een voordracht over bijen voor groep 7 van de basisschool. Ze begint: \"Goedemiddag, vandaag bespreek ik de bestuivingsefficiëntie van het honingbijvolk, de apis mellifera, binnen agrarische ecosystemen.\" De kinderen kijken elkaar aan en een jongen begint te kauwen op zijn pen."
+  },
+  {
+   "v": "Een spreker houdt voor ondernemers een luchtige praat vol jongerentaal. Welke fout maakt hij?",
+   "o": [
+    "hij praat te zacht en te snel",
+    "het register past niet",
+    "hij kiest een onderwerp dat niet past",
+    "hij spreekt veel te kort voor de tijd"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Register moet bij publiek en gelegenheid passen.",
+   "uo": [
+    "Koos je \"hij praat te zacht en te snel\"? Dan denk je dat volume het probleem is. Het gaat om de woorden, niet om het geluid.",
+    "Klopt: voor een formele gelegenheid met volwassenen past een zakelijke toon.",
+    "Koos je \"hij kiest een onderwerp dat niet past\"? Dan denk je dat het onderwerp fout is. Werkdruk is passend, de toon is het probleem.",
+    "Koos je \"hij spreekt veel te kort voor de tijd\"? Dan denk je dat de lengte fout is. Het gaat om register, niet om tijd."
+   ],
+   "uh": "Toon en gelegenheid.",
+   "ctx": "Een bedrijf nodigt jou uit voor een bijeenkomst van vijftig ondernemers. Je spreekt tien minuten over werkdruk bij scholieren. De meeste aanwezigen zijn boven de vijfenveertig, hebben zelf kinderen op school en zijn geïnteresseerd, maar kennen het onderwijs van nu niet van binnenuit."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Anouk houdt een voordracht over bijen voor groep 7 van de basisschool. Ze begint: \"Goedemiddag, vandaag bespreek ik de bestuivingsefficiëntie van het honingbijvolk, de apis mellifera, binnen agrarische ecosystemen.\" De kinderen kijken elkaar aan en een jongen begint te kauwen op zijn pen.",
+   "v": "Leg uit waarom de inleiding van Anouk niet past bij haar publiek en herschrijf de eerste zin.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Te moeilijke vaktaal en abstracte woorden voor kinderen van groep 7 (1p) en geen voorbeeld (1p). Herschrijving, bijvoorbeeld: Bijen vliegen van bloem naar bloem en helpen zo dat planten vruchten krijgen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Op school is een debat over de stelling dat sociale media pas vanaf zestien jaar mogen. Er zijn twee teams, een gespreksleider en een jury. Elk team heeft per ronde vier minuten spreektijd en moet de jury overtuigen dat zijn standpunt het sterkst is.",
+   "v": "Noem twee kenmerken waaraan je ziet dat dit een debat is en geen discussie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Twee teams staan tegenover elkaar (1p), er is een jury die wordt overtuigd (1p) en het doel is winnen met argumenten (1p, max. 2p voor twee kenmerken)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Vier leerlingen praten onder leiding van een gespreksleider over de vraag of de schooldag korter kan. Niemand hoeft te winnen: ze willen samen ontdekken welke mogelijkheden er zijn en wat de voor- en nadelen van elke mogelijkheid zijn.",
+   "v": "Welk spreekdoel hebben de deelnemers en hoe verschilt dat van een debat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Samen onderzoeken en opvattingen uitwisselen (1p). Niemand hoeft te winnen (1p). Bij een debat verdedigen teams een standpunt tegenover een jury om te overtuigen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je krijgt de opdracht om de leerlingenraad te informeren over de nieuwe regels voor mobiele telefoons op school. Je publiek bestaat uit twaalf leerlingen uit verschillende klassen. Zij kennen de nieuwe regels nog niet en hebben tien minuten de tijd.",
+   "v": "Beschrijf je publiek, je doel en de vorm die je kiest.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Publiek: twaalf leerlingen die de regels niet kennen (1p). Doel: informeren (1p). Vorm: voordracht, één spreker die uitlegt (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een bedrijf nodigt jou uit voor een bijeenkomst van vijftig ondernemers. Je spreekt tien minuten over werkdruk bij scholieren. De meeste aanwezigen zijn boven de vijfenveertig, hebben zelf kinderen op school en zijn geïnteresseerd, maar kennen het onderwijs van nu niet van binnenuit.",
+   "v": "Welke drie keuzes maak je voor dit publiek: register, voorbeeld en aantal kernpunten?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Register: formeel met \"u\" (1p). Voorbeeld: een vergelijking met werkdruk in een bedrijf (1p). Kernpunten: ongeveer drie, gezien de tien minuten (1p)."
+  }
+ ]
+}
