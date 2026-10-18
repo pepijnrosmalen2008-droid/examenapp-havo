@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **59 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5). Werk dit getal bij bij elke afronding.
+> Voortgang: **60 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5, vwo nl.C1). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -81,6 +81,12 @@
   - [x] B4 · nl.B.4 Deelnemen aan een discussie of debat · 27 vragen (R1 7, R2 10, R3 10, 7 eigen debatfragmenten van 190-300 tekens), 12 begrippen, 4 figuren (opbouw argument, weerleggen in stappen, fout en goed, verloop van een debat), geen clip
   - [x] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers · 27 vragen (R1 7, R2 10, R3 10, 7 eigen gespreksfragmenten van 190-260 tekens), 12 begrippen, 4 figuren (actief luisteren, vraag beantwoorden, omgaan met kritiek, feedback in drie delen), geen clip
 - [ ] **VWO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid
+  - [x] C1 · nl.C.1 Informatie verzamelen, verwerken en verantwoorden · 27 vragen (R1 7, R2 10, R3 10, 6 eigen schrijfsituaties van 200-310 tekens), 12 begrippen, 4 figuren (zoeken van breed naar specifiek, aantekening, citaat parafrase plagiaat, verwijzing naar bronnenlijst), geen clip
+  - [ ] C2 · nl.C.2 Tekstsoort, doel en lezersgroep afstemmen
+  - [ ] C3 · nl.C.3 Een betoog schrijven
+  - [ ] C4 · nl.C.4 Tekst en alinea opbouwen
+  - [ ] C5 · nl.C.5 Schrijftaal, stijl en correctheid
+  - [ ] C6 · nl.C.6 Een tekst reviseren op commentaar
 - [ ] **VWO · Nederlands** (`nl`) · domein D — Argumentatieve vaardigheden
 - [ ] **VWO · Nederlands** (`nl`) · domein E — Literatuur
 - [ ] **VMBO · Nederlands** (`nl`) · domein A — Luister- en kijkvaardigheid

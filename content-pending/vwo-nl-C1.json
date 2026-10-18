@@ -1,0 +1,690 @@
+{
+ "id": "C1",
+ "lo": "nl.C.1",
+ "gs": 2,
+ "naam": "Informatie verzamelen, verwerken en verantwoorden",
+ "beschrijving": "Je zoekt gericht informatie voor een gedocumenteerde tekst, beoordeelt en weegt bronnen, maakt bruikbare aantekeningen, verwerkt informatie als citaat of parafrase en verantwoordt je bronnen met verwijzingen en een bronnenlijst.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Gericht zoeken en bronnen kiezen",
+  "Bronnen beoordelen en wegen",
+  "Aantekeningen maken",
+  "Citeren en parafraseren in je eigen tekst",
+  "Bronvermelding in de tekst en in de lijst",
+  "Valkuilen: plagiaat, eenzijdig en overschrijven"
+ ],
+ "sam": "Voor een gedocumenteerde tekst zoek je gericht met specifieke zoektermen, beoordeel je bronnen op afzender, belang en controleerbaarheid en weeg je tegenstrijdige bronnen. Je maakt aantekeningen met kernpunten en bron, verwerkt informatie als citaat of parafrase en verantwoordt alles met een verwijzing in de tekst en een volledige bronnenlijst. Zonder bron is het plagiaat.",
+ "begrippen": [
+  {
+   "t": "Zoekterm",
+   "d": "Een woord waarmee je in een zoekmachine naar informatie zoekt."
+  },
+  {
+   "t": "Betrouwbare bron",
+   "d": "Een bron met een deskundige afzender en controleerbare gegevens."
+  },
+  {
+   "t": "Onafhankelijke bron",
+   "d": "Een bron waarvan de maker geen belang heeft bij de uitkomst."
+  },
+  {
+   "t": "Representatief",
+   "d": "Een onderzoek dat past bij de hele groep waarover je iets wilt zeggen."
+  },
+  {
+   "t": "Aantekeningen",
+   "d": "Korte notities met kernpunten en bron, in eigen woorden."
+  },
+  {
+   "t": "Citaat",
+   "d": "Een letterlijk overgenomen zin tussen aanhalingstekens, met auteur en jaar."
+  },
+  {
+   "t": "Parafrase",
+   "d": "Een weergave in eigen woorden met dezelfde betekenis en een bron."
+  },
+  {
+   "t": "Verwijzing",
+   "d": "Een korte aanduiding in de tekst, zoals (De Vries, 2024), die naar de bronnenlijst leidt."
+  },
+  {
+   "t": "Bronnenlijst",
+   "d": "De lijst met volledige gegevens van alle bronnen die je gebruikte."
+  },
+  {
+   "t": "Bronvermelding",
+   "d": "De gegevens waarmee een lezer de bron kan terugvinden."
+  },
+  {
+   "t": "Plagiaat",
+   "d": "Andermans tekst of idee presenteren zonder bron."
+  },
+  {
+   "t": "Verantwoording",
+   "d": "Laten zien waar je informatie vandaan komt."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zoekopdracht levert de bruikbaarste resultaten?",
+   "o": [
+    "\"sociale media\" in één zoekopdracht alleen",
+    "\"verslaving sociale media tieners 2023\"",
+    "\"media\" met de tekst van je opdracht erbij",
+    "\"verslaving\" zonder verdere termen"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Specifiek zoeken: onderwerp, doelgroep, soort bron en jaartal.",
+   "uo": [
+    "Koos je \"sociale media in één zoekopdracht alleen\"? Dan denk je dat een kort woord genoeg is. Een te algemene term levert miljoenen resultaten, waarvan veel onbruikbaar.",
+    "Klopt: meerdere specifieke zoektermen en een jaartal beperken de resultaten tot wat je nodig hebt.",
+    "Koos je \"media met de tekst van je opdracht erbij\"? Dan denk je dat de opdracht zelf een zoekopdracht is. Dat is te breed, en het levert veel ruis.",
+    "Koos je \"verslaving zonder verdere termen\"? Dan denk je dat één term genoeg is. Ook dat is te breed, want het gaat om tieners en schermen."
+   ],
+   "uh": "Wees specifiek.",
+   "ctx": "Je schrijft een beschouwing over verslaving aan sociale media bij tieners. Je zoekt eerst op \"sociale media\" en krijgt miljoenen resultaten. Daarna probeer je \"verslaving sociale media tieners onderzoek 2023\" en krijgt een korte, bruikbare lijst met onder meer een universitair rapport en een nieuwsartikel."
+  },
+  {
+   "v": "Waarom geeft \"sociale media\" zoveel resultaten?",
+   "o": [
+    "omdat er veel studenten zoeken op deze term",
+    "omdat de zoekmachine fouten maakt in dit geval",
+    "omdat tieners veel op sociale media zitten nu",
+    "de term is te algemeen"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Te breed zoeken geeft te veel resultaten.",
+   "uo": [
+    "Koos je \"omdat er veel studenten zoeken op deze term\"? Dan denk je dat het aantal zoekers het aantal resultaten bepaalt. Het aantal resultaten hangt af van de zoekterm, niet van het aantal zoekers.",
+    "Koos je \"omdat de zoekmachine fouten maakt in dit geval\"? Dan denk je dat de zoekmachine slecht werkt. Hij doet precies wat je vraagt, en jij vraagt te breed.",
+    "Koos je \"omdat tieners veel op sociale media zitten nu\"? Dan denk je dat het aantal gebruikers de reden is. De reden is de brede formulering, niet het aantal gebruikers.",
+    "Klopt: een brede zoekterm vindt alles wat erover gaat."
+   ],
+   "uh": "Hoe specifiek zoek je?",
+   "ctx": "Je schrijft een beschouwing over verslaving aan sociale media bij tieners. Je zoekt eerst op \"sociale media\" en krijgt miljoenen resultaten. Daarna probeer je \"verslaving sociale media tieners onderzoek 2023\" en krijgt een korte, bruikbare lijst met onder meer een universitair rapport en een nieuwsartikel."
+  },
+  {
+   "v": "Welke bron is het betrouwbaarst?",
+   "o": [
+    "bron 1, het universitaire onderzoek",
+    "bron 2, de webshop voor schermdeksels",
+    "beide even, want ze beweren allebei iets",
+    "geen van beide, want bronnen kloppen nooit"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Betrouwbaar: deskundig, onafhankelijk, controleerbaar.",
+   "uo": [
+    "Klopt: een universiteit heeft deskundigheid en geen verkoopbelang.",
+    "Koos je \"bron 2, de webshop voor schermdeksels\"? Dan denk je dat een winkel de feiten weet. Een winkel heeft een verkoopbelang, en is dus niet onafhankelijk.",
+    "Koos je \"beide even, want ze beweren allebei iets\"? Dan denk je dat beweren genoeg is. Betrouwbaarheid hangt af van afzender en methode, dus ze verschillen.",
+    "Koos je \"geen van beide, want bronnen kloppen nooit\"? Dan denk je dat bronnen onbetrouwbaar zijn. Je beoordeelt kwaliteit, dus bron 1 is sterker."
+   ],
+   "uh": "Wie heeft belang?",
+   "ctx": "Bron 1 (een onderzoek van een universiteit): tieners die dagelijks meer dan drie uur achter een scherm zitten, slapen gemiddeld korter. Bron 2 (een webshop voor schermdeksels): schermen hebben geen enkele invloed op slaap. Je moet in je tekst laten zien welke bron je zwaarder weegt."
+  },
+  {
+   "v": "Wat hoort in een bronnenlijst naast de auteur?",
+   "o": [
+    "alleen de naam van de website",
+    "alleen een bijzondere eigen opmerking",
+    "titel, datum en de krant",
+    "het aantal pagina's dat je las"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Bronvermelding: auteur, titel, datum, uitgever.",
+   "uo": [
+    "Koos je \"alleen de naam van de website\"? Dan denk je dat de site genoeg is. Een bronvermelding moet het artikel terugvinden, met auteur, titel en datum.",
+    "Koos je \"alleen een bijzondere eigen opmerking\"? Dan denk je dat je eigen mening in de lijst hoort. De lijst bevat de gegevens van de bron, geen opmerkingen.",
+    "Klopt: met deze gegevens kan een lezer het artikel terugvinden.",
+    "Koos je \"het aantal pagina's dat je las\"? Dan denk je dat je leesomvang telt. Het gaat om het terugvinden van de bron, niet om jouw leeswerk."
+   ],
+   "uh": "Kan een lezer het terugvinden?",
+   "ctx": "Je gebruikt een artikel van journalist Eva de Vries uit de krant Het Dagblad van 12 mei 2024, getiteld \"Tieners en schermen\". In je tekst citeer je één zin en vat je het artikel verder in eigen woorden samen. Je docent vraagt om een bronvermelding."
+  },
+  {
+   "v": "Wat ontbreekt bij de zin van de hoogleraar?",
+   "o": [
+    "een overbodige herhaling van de zin",
+    "aanhalingstekens rondom de hele alinea",
+    "de bron van de zin",
+    "een extra uitroepteken aan het eind"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Citaat: aanhalingstekens én bron.",
+   "uo": [
+    "Koos je \"een overbodige herhaling van de zin\"? Dan denk je dat de zin zelf iets mist. De zin is volledig, de herkomst ontbreekt.",
+    "Koos je \"aanhalingstekens rondom de hele alinea\"? Dan denk je dat meer aanhalingstekens helpen. De zin heeft ze al, maar de bron ontbreekt.",
+    "Klopt: een citaat heeft een auteur en bron nodig, anders lijkt het eigen werk.",
+    "Koos je \"een extra uitroepteken aan het eind\"? Dan denk je dat leestekens het probleem zijn. Het probleem is de herkomst, niet de interpunctie."
+   ],
+   "uh": "Van wie is het?",
+   "ctx": "Je wilt in je betoog een zin van een hoogleraar gebruiken. Je schrijft: \"De hersenen van pubers zijn nog in ontwikkeling.\" Daarna ga je verder met je eigen tekst, zonder aan te geven van wie de zin komt en waar je hem vond."
+  },
+  {
+   "v": "Wat doe je beter bij het maken van aantekeningen?",
+   "o": [
+    "kernpunten noteren in eigen woorden",
+    "alles letterlijk overschrijven voor de zekerheid",
+    "geen aantekeningen maken en alles onthouden",
+    "alleen de voorbeelden en cijfers noteren"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Aantekeningen: selecteer kernpunten, schrijf in eigen woorden.",
+   "uo": [
+    "Klopt: selecteren en samenvatten geeft overzicht.",
+    "Koos je \"alles letterlijk overschrijven voor de zekerheid\"? Dan denk je dat veel schrijven veiligheid geeft. Het maakt je aantekeningen even lang, en de hoofdlijn verdwijnt.",
+    "Koos je \"geen aantekeningen maken en alles onthouden\"? Dan denk je dat aantekeningen overbodig zijn. Je vergeet snel de bron, en details gaan verloren.",
+    "Koos je \"alleen de voorbeelden en cijfers noteren\"? Dan denk je dat voorbeelden de kern zijn. De kern is de hoofdlijn, de voorbeelden ondersteunen die."
+   ],
+   "uh": "Kern, niet alles.",
+   "ctx": "Je leest een artikel van tien pagina's. Je schrijft elke zin over, ook de voorbeelden en de cijfers. Daarna merk je dat je aantekeningen bijna net zo lang zijn als het artikel en dat je de hoofdlijn niet meer ziet."
+  },
+  {
+   "v": "Wat ontbreekt in de bronnenlijst?",
+   "o": [
+    "de handtekening van de auteur",
+    "het aantal woorden van de bron",
+    "een foto van de auteur",
+    "de titel en herkomst"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Een volledige vermelding: auteur, jaar, titel, herkomst.",
+   "uo": [
+    "Koos je \"de handtekening van de auteur\"? Dan denk je dat een handtekening hoort bij een bron. Een bronvermelding noemt titel en uitgever, geen handtekening.",
+    "Koos je \"het aantal woorden van de bron\"? Dan denk je dat de lengte telt. De lengte is niet nodig, de herkomst wel.",
+    "Koos je \"een foto van de auteur\"? Dan denk je dat een foto de bron verklaart. Een lezer heeft titel en herkomst nodig, geen portret.",
+    "Klopt: auteur en jaar zijn niet genoeg om de bron terug te vinden."
+   ],
+   "uh": "Terug te vinden?",
+   "ctx": "In je tekst staat: \"Volgens onderzoek slapen tieners te weinig (Bos, 2022).\" In je bronnenlijst staat alleen: Bos, 2022. Je docent zegt dat de vermelding onvolledig is en dat een lezer de bron zo niet kan terugvinden."
+  },
+  {
+   "v": "Waarom is bron 2 minder geschikt?",
+   "o": [
+    "omdat een webshop te veel plaatjes heeft",
+    "de webshop heeft een verkoopbelang",
+    "omdat bron 2 korter is dan bron 1",
+    "omdat bron 2 altijd onwaar is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Verkoopbelang: niet onafhankelijk.",
+   "uo": [
+    "Koos je \"omdat een webshop te veel plaatjes heeft\"? Dan denk je dat het aantal plaatjes ertoe doet. Het gaat om het belang van de afzender, niet om het uiterlijk.",
+    "Klopt: de afzender verdient aan de boodschap, dus de informatie is niet onafhankelijk.",
+    "Koos je \"omdat bron 2 korter is dan bron 1\"? Dan denk je dat lengte betrouwbaarheid bepaalt. Het gaat om afzender en methode, niet om lengte.",
+    "Koos je \"omdat bron 2 altijd onwaar is\"? Dan denk je dat een belanghebbende altijd liegt. Hij kan gelijk hebben, maar je moet het controleren."
+   ],
+   "uh": "Wie verdient eraan?",
+   "ctx": "Bron 1 (een onderzoek van een universiteit): tieners die dagelijks meer dan drie uur achter een scherm zitten, slapen gemiddeld korter. Bron 2 (een webshop voor schermdeksels): schermen hebben geen enkele invloed op slaap. Je moet in je tekst laten zien welke bron je zwaarder weegt."
+  },
+  {
+   "v": "Hoe ga je om met tegenstrijdige bronnen in je tekst?",
+   "o": [
+    "alleen de bron noemen die je bevalt",
+    "een gemiddelde van beide uitspraken nemen",
+    "geen van beide noemen en niets schrijven",
+    "beide noemen en je keuze motiveren"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Tegenstrijdig: noem beide en motiveer.",
+   "uo": [
+    "Koos je \"alleen de bron noemen die je bevalt\"? Dan denk je dat je kunt kiezen zonder uitleg. Dat is eenzijdig, en de lezer mist de afweging.",
+    "Koos je \"een gemiddelde van beide uitspraken nemen\"? Dan denk je dat een gemiddelde de waarheid is. Een gemiddelde van tegenstrijdige uitspraken klopt vaak niet, dus je moet kiezen.",
+    "Koos je \"geen van beide noemen en niets schrijven\"? Dan denk je dat zwijgen werkt. De lezer heeft juist baat bij de afweging, dus je noemt ze.",
+    "Klopt: een lezer wil weten welke bron je zwaarder weegt en waarom."
+   ],
+   "uh": "Weeg en leg uit.",
+   "ctx": "Bron 1 (een onderzoek van een universiteit): tieners die dagelijks meer dan drie uur achter een scherm zitten, slapen gemiddeld korter. Bron 2 (een webshop voor schermdeksels): schermen hebben geen enkele invloed op slaap. Je moet in je tekst laten zien welke bron je zwaarder weegt."
+  },
+  {
+   "v": "Waarom zijn deze aantekeningen niet handig?",
+   "o": [
+    "omdat ze te kort zijn om iets te zeggen",
+    "ze zijn bijna net zo lang",
+    "omdat je ze met de hand schrijft",
+    "omdat je cijfers hebt overgenomen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Selecteer, niet kopiëren.",
+   "uo": [
+    "Koos je \"omdat ze te kort zijn om iets te zeggen\"? Dan denk je dat het probleem de lengte naar beneden is. Het zijn juist te lange aantekeningen, dus dat klopt niet.",
+    "Klopt: zonder selectie zie je de hoofdlijn niet en heb je niets bespaard.",
+    "Koos je \"omdat je ze met de hand schrijft\"? Dan denk je dat de schrijfwijze telt. Het gaat om selectie, niet om handschrift.",
+    "Koos je \"omdat je cijfers hebt overgenomen\"? Dan denk je dat cijfers het probleem zijn. Cijfers kunnen belangrijk zijn, alles overnemen is het probleem."
+   ],
+   "uh": "Hoofdlijn of alles?",
+   "ctx": "Je leest een artikel van tien pagina's. Je schrijft elke zin over, ook de voorbeelden en de cijfers. Daarna merk je dat je aantekeningen bijna net zo lang zijn als het artikel en dat je de hoofdlijn niet meer ziet."
+  },
+  {
+   "v": "Hoe maak je van de zin een correct citaat?",
+   "o": [
+    "de zin in kleine letters zetten",
+    "er \"volgens mij\" voor zetten",
+    "met aanhalingstekens en de bron",
+    "hem herhalen in de volgende alinea"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Citaat: aanhalingstekens plus auteur en jaar.",
+   "uo": [
+    "Koos je \"de zin in kleine letters zetten\"? Dan denk je dat opmaak een citaat maakt. Het gaat om herkomst, en dat blijft onduidelijk.",
+    "Koos je \"er volgens mij voor zetten\"? Dan denk je dat jij de bron bent. De zin komt van de hoogleraar, dus je noemt hem.",
+    "Klopt: citaat plus auteur en bron laat zien van wie de woorden zijn.",
+    "Koos je \"hem herhalen in de volgende alinea\"? Dan denk je dat herhalen een bron geeft. Herhalen noemt de herkomst niet, dus het blijft zonder bron."
+   ],
+   "uh": "Van wie?",
+   "ctx": "Je wilt in je betoog een zin van een hoogleraar gebruiken. Je schrijft: \"De hersenen van pubers zijn nog in ontwikkeling.\" Daarna ga je verder met je eigen tekst, zonder aan te geven van wie de zin komt en waar je hem vond."
+  },
+  {
+   "v": "Hoe parafraseer je de zin in eigen woorden?",
+   "o": [
+    "\"Bij pubers ontwikkelen de hersenen zich nog\" (bron)",
+    "\"De hersenen van pubers zijn nog in ontwikkeling\" zonder bron",
+    "\"Pubers zijn dom\" met bron",
+    "\"Hoogleraren weten alles\" met bron"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Parafrase: eigen woorden, zelfde betekenis, met bron.",
+   "uo": [
+    "Klopt: eigen zinsbouw met dezelfde betekenis en bron.",
+    "Koos je \"De hersenen van pubers zijn nog in ontwikkeling...\"? Dan denk je dat dezelfde zin zonder aanhalingstekens parafraseren is. Het is gekopieerd, dus het is plagiaat.",
+    "Koos je \"Pubers zijn dom met bron\"? Dan denk je dat een parafrase een eigen mening mag zijn. De betekenis moet gelijk blijven, dus dit klopt niet.",
+    "Koos je \"Hoogleraren weten alles met bron\"? Dan denk je dat een algemene opmerking een parafrase is. De inhoud van de zin ontbreekt, dus het is geen parafrase."
+   ],
+   "uh": "Eigen woorden en bron.",
+   "ctx": "Je wilt in je betoog een zin van een hoogleraar gebruiken. Je schrijft: \"De hersenen van pubers zijn nog in ontwikkeling.\" Daarna ga je verder met je eigen tekst, zonder aan te geven van wie de zin komt en waar je hem vond."
+  },
+  {
+   "v": "Welke vermelding in de lopende tekst past?",
+   "o": [
+    "(De Vries, 2024)",
+    "(Het Dagblad)",
+    "(Tieners en schermen)",
+    "(mei 2024)"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Verwijzing in de tekst: auteur en jaar.",
+   "uo": [
+    "Klopt: auteur en jaar verwijzen naar de bronnenlijst.",
+    "Koos je \"(Het Dagblad)\"? Dan denk je dat de krant volstaat. Een verwijzing heeft de auteur nodig, anders is niet duidelijk welk artikel.",
+    "Koos je \"(Tieners en schermen)\"? Dan denk je dat de titel de verwijzing is. De verwijzing bevat meestal auteur en jaar, niet alleen de titel.",
+    "Koos je \"(mei 2024)\"? Dan denk je dat de datum genoeg is. Zonder auteur kan een lezer het niet vinden, dus het is onvolledig."
+   ],
+   "uh": "Auteur en jaar.",
+   "ctx": "Je gebruikt een artikel van journalist Eva de Vries uit de krant Het Dagblad van 12 mei 2024, getiteld \"Tieners en schermen\". In je tekst citeer je één zin en vat je het artikel verder in eigen woorden samen. Je docent vraagt om een bronvermelding."
+  },
+  {
+   "v": "Wat is het verband tussen \"(Bos, 2022)\" in de tekst en de bronnenlijst?",
+   "o": [
+    "er is geen verband, het zijn twee losse dingen",
+    "de lijst vervangt de verwijzing in de tekst",
+    "de verwijzing leidt naar de vermelding",
+    "de verwijzing in de tekst is de belangrijkste"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Verwijzing en bronnenlijst vormen samen de verantwoording.",
+   "uo": [
+    "Koos je \"er is geen verband, het zijn twee losse dingen\"? Dan denk je dat tekst en lijst los staan. Ze horen bij elkaar, de verwijzing wijst naar de lijst.",
+    "Koos je \"de lijst vervangt de verwijzing in de tekst\"? Dan denk je dat één van de twee genoeg is. Je hebt beide nodig, de verwijzing plus de volledige vermelding.",
+    "Klopt: de lezer zoekt Bos in de lijst en vindt daar titel en herkomst.",
+    "Koos je \"de verwijzing in de tekst is de belangrijkste\"? Dan denk je dat de verwijzing alleen telt. Zonder volledige vermelding kan niemand de bron vinden, dus de lijst is ook nodig."
+   ],
+   "uh": "Tekst en lijst.",
+   "ctx": "In je tekst staat: \"Volgens onderzoek slapen tieners te weinig (Bos, 2022).\" In je bronnenlijst staat alleen: Bos, 2022. Je docent zegt dat de vermelding onvolledig is en dat een lezer de bron zo niet kan terugvinden."
+  },
+  {
+   "v": "Welke zoektermen kun je toevoegen om resultaten te beperken?",
+   "o": [
+    "alleen je eigen naam toevoegen aan de zoekopdracht",
+    "leeftijd, onderwerp en jaartal",
+    "meer algemene woorden zoals \"media\" en \"mensen\"",
+    "alleen het woord \"internet\" toevoegen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Beperk met onderwerp, doelgroep en jaar.",
+   "uo": [
+    "Koos je \"alleen je eigen naam toevoegen aan de zoekopdracht\"? Dan denk je dat jouw naam iets beperkt. De naam beperkt niets, de onderwerpsspecifieke termen wel.",
+    "Klopt: zulke termen maken de zoekopdracht specifieker.",
+    "Koos je \"meer algemene woorden zoals media en mensen\"? Dan denk je dat algemene woorden beperken. Ze verruimen juist, en geven meer resultaten.",
+    "Koos je \"alleen het woord internet toevoegen\"? Dan denk je dat dit woord helpt. Het is bijna overal van toepassing, dus het beperkt niets."
+   ],
+   "uh": "Specifiek.",
+   "ctx": "Je schrijft een beschouwing over verslaving aan sociale media bij tieners. Je zoekt eerst op \"sociale media\" en krijgt miljoenen resultaten. Daarna probeer je \"verslaving sociale media tieners onderzoek 2023\" en krijgt een korte, bruikbare lijst met onder meer een universitair rapport en een nieuwsartikel."
+  },
+  {
+   "v": "Welke valkuil zit in het kiezen van alleen bron 2?",
+   "o": [
+    "veel te veel bronnen gebruiken in je tekst",
+    "een te oude bron",
+    "een bron zonder cijfers",
+    "eenzijdige en belanghebbende informatie"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Eenzijdig en belanghebbend: gebruik een onafhankelijke bron erbij.",
+   "uo": [
+    "Koos je \"veel te veel bronnen gebruiken in je tekst\"? Dan denk je dat het aantal het probleem is. Je gebruikt maar één bron, de kwaliteit is het probleem.",
+    "Koos je \"een te oude bron\"? Dan denk je dat de datum het probleem is. Er staat geen datum, het probleem is het belang van de afzender.",
+    "Koos je \"een bron zonder cijfers\"? Dan denk je dat cijfers ontbreken. Bron 2 noemt geen cijfers, maar het hoofdprobleem is het belang.",
+    "Klopt: je laat andere onderzoeksresultaten weg en gebruikt een commerciële bron."
+   ],
+   "uh": "Wie zegt dit?",
+   "ctx": "Bron 1 (een onderzoek van een universiteit): tieners die dagelijks meer dan drie uur achter een scherm zitten, slapen gemiddeld korter. Bron 2 (een webshop voor schermdeksels): schermen hebben geen enkele invloed op slaap. Je moet in je tekst laten zien welke bron je zwaarder weegt."
+  },
+  {
+   "v": "Hoe verwerk je het gevonden universitaire rapport in je aantekeningen?",
+   "o": [
+    "alles uit het rapport overschrijven",
+    "hoofdpunten noteren met auteur",
+    "alleen de titel opschrijven",
+    "een foto van de omslag bewaren"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Aantekeningen: kernpunten plus bron.",
+   "uo": [
+    "Koos je \"alles uit het rapport overschrijven\"? Dan denk je dat het zekerste is. Je krijgt een berg tekst zonder selectie, en je verliest overzicht.",
+    "Klopt: kernpunten plus bron zorgen dat je later kunt verwijzen.",
+    "Koos je \"alleen de titel opschrijven\"? Dan denk je dat de titel genoeg is. Zonder inhoud heb je niets, je moet de kernpunten noteren.",
+    "Koos je \"een foto van de omslag bewaren\"? Dan denk je dat de omslag genoeg is. De inhoud en bron zijn nodig, geen plaatje."
+   ],
+   "uh": "Wat en van wie?",
+   "ctx": "Je schrijft een beschouwing over verslaving aan sociale media bij tieners. Je zoekt eerst op \"sociale media\" en krijgt miljoenen resultaten. Daarna probeer je \"verslaving sociale media tieners onderzoek 2023\" en krijgt een korte, bruikbare lijst met onder meer een universitair rapport en een nieuwsartikel."
+  },
+  {
+   "v": "Welke aanpak levert de beste zoekstrategie op?",
+   "o": [
+    "breed beginnen, dan verfijnen",
+    "alleen de eerste pagina van de resultaten lezen",
+    "steeds nieuwe zoektermen zonder te selecteren",
+    "alleen bronnen kiezen die je al kent"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Zoeken: breed beginnen, verfijnen, beoordelen.",
+   "uo": [
+    "Klopt: van breed naar specifiek geeft overzicht en daarna de beste bronnen.",
+    "Koos je \"alleen de eerste pagina van de resultaten lezen\"? Dan denk je dat de eerste resultaten altijd de beste zijn. De rangorde zegt niets over kwaliteit, je moet beoordelen.",
+    "Koos je \"steeds nieuwe zoektermen zonder te selecteren\"? Dan denk je dat veel zoeken beter is. Zonder selectie raak je de weg kwijt, en verlies je tijd.",
+    "Koos je \"alleen bronnen kiezen die je al kent\"? Dan denk je dat bekende bronnen genoeg zijn. Dan mis je nieuwe informatie, en je blijft eenzijdig."
+   ],
+   "uh": "Van breed naar specifiek.",
+   "ctx": "Je schrijft een beschouwing over verslaving aan sociale media bij tieners. Je zoekt eerst op \"sociale media\" en krijgt miljoenen resultaten. Daarna probeer je \"verslaving sociale media tieners onderzoek 2023\" en krijgt een korte, bruikbare lijst met onder meer een universitair rapport en een nieuwsartikel."
+  },
+  {
+   "v": "Welke weging in je tekst is eerlijk?",
+   "o": [
+    "\"Bron 1 is beter, want ik vind dat gewoon mooier.\"",
+    "\"Beide bronnen hebben gelijk, dus het maakt niet uit welke ik kies.\"",
+    "\"Bron 2 is veel nieuwer, dus beter en betrouwbaarder.\"",
+    "\"Het onderzoek is betrouwbaarder: de webshop heeft verkoopbelang.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Weeg bronnen op kwaliteit en motiveer je keuze.",
+   "uo": [
+    "Koos je \"Bron 1 is beter, want ik vind dat gewoon mooier.\"? Dan denk je dat een persoonlijke voorkeur genoeg is. Je moet een reden geven, anders overtuigt het niet.",
+    "Koos je \"Beide bronnen hebben gelijk, dus het maakt niet uit...\"? Dan denk je dat tegenstrijdigheid verdwijnt. Beide kunnen niet waar zijn, dus je moet kiezen.",
+    "Koos je \"Bron 2 is veel nieuwer, dus beter en betrouwbaarder.\"? Dan denk je dat de datum de kwaliteit bepaalt. Het gaat om afzender en methode, niet om nieuw of oud.",
+    "Klopt: de keuze is gemotiveerd met een reden."
+   ],
+   "uh": "Waarom die bron?",
+   "ctx": "Bron 1 (een onderzoek van een universiteit): tieners die dagelijks meer dan drie uur achter een scherm zitten, slapen gemiddeld korter. Bron 2 (een webshop voor schermdeksels): schermen hebben geen enkele invloed op slaap. Je moet in je tekst laten zien welke bron je zwaarder weegt."
+  },
+  {
+   "v": "Welke aantekening is het meest bruikbaar?",
+   "o": [
+    "\"Het artikel gaat over het slapen van tieners en schermen.\"",
+    "\"Bos zegt dat tieners slapen.\"",
+    "\"Slaaptekort hangt samen met schermtijd (Bos, 2022).\"",
+    "\"Zie bladzijde 4 tot 7 van het artikel.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Aantekening: kern, eigen woorden, bron.",
+   "uo": [
+    "Koos je \"Het artikel gaat over het slapen van tieners en...\"? Dan denk je dat een onderwerp een aantekening is. Je mist de bevinding, dus het is te vaag.",
+    "Koos je \"Bos zegt dat tieners slapen.\"? Dan denk je dat een algemene opmerking helpt. Je mist de kern van de bevinding, dus het is onvolledig.",
+    "Klopt: kern, in eigen woorden, met bron, zodat je later weet waar het vandaan komt.",
+    "Koos je \"Zie bladzijde 4 tot 7 van het artikel.\"? Dan denk je dat een verwijzing genoeg is. Je noteert geen inhoud, dus je moet alsnog zoeken."
+   ],
+   "uh": "Kern met bron.",
+   "ctx": "Je leest een artikel van tien pagina's. Je schrijft elke zin over, ook de voorbeelden en de cijfers. Daarna merk je dat je aantekeningen bijna net zo lang zijn als het artikel en dat je de hoofdlijn niet meer ziet."
+  },
+  {
+   "v": "Welke versie is een correct citaat?",
+   "o": [
+    "De hersenen van pubers zijn nog in ontwikkeling, dat is gewoon bekend.",
+    "Pubers hebben geen goede hersenen, zegt De Wit in een interview.",
+    "De Wit: \"De hersenen van pubers zijn nog in ontwikkeling\" (2021).",
+    "Volgens iemand zijn pubers nog in ontwikkeling, aldus een bekende."
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Citaat: letterlijk, tussen aanhalingstekens, met auteur en jaar.",
+   "uo": [
+    "Koos je \"De hersenen van pubers zijn nog in ontwikkeling,...\"? Dan denk je dat de zin alleen genoeg is. Zonder aanhalingstekens en bron is het plagiaat, je moet de herkomst noemen.",
+    "Koos je \"Pubers hebben geen goede hersenen, zegt De Wit in...\"? Dan denk je dat dit een citaat is. Het is een vervormde parafrase, geen letterlijk citaat.",
+    "Klopt: aanhalingstekens, auteur en jaar maken het een correct citaat.",
+    "Koos je \"Volgens iemand zijn pubers nog in ontwikkeling,...\"? Dan denk je dat \"iemand\" een bron is. Een bron heeft een naam en jaar nodig, dus dit is onvolledig."
+   ],
+   "uh": "Letterlijk en bron.",
+   "ctx": "Je wilt in je betoog een zin van een hoogleraar gebruiken. Je schrijft: \"De hersenen van pubers zijn nog in ontwikkeling.\" Daarna ga je verder met je eigen tekst, zonder aan te geven van wie de zin komt en waar je hem vond."
+  },
+  {
+   "v": "Welke versie is plagiaat?",
+   "o": [
+    "Hoogleraar De Wit (2021) zegt dat de hersenen van pubers zich nog ontwikkelen.",
+    "Hoogleraar De Wit stelt: \"De hersenen van pubers zijn nog in ontwikkeling\" (2021).",
+    "Volgens De Wit (2021) hebben pubers nog een rijpende hersenstructuur.",
+    "\"De hersenen van pubers zijn nog in ontwikkeling\", zonder bron in de tekst"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 3,
+   "u": "Plagiaat: andermans tekst zonder bron.",
+   "uo": [
+    "Koos je \"Hoogleraar De Wit (2021) zegt dat de hersenen van...\"? Dan denk je dat deze versie plagiaat is. Ze noemt de bron en gebruikt eigen woorden, dus het is een correcte parafrase.",
+    "Koos je \"Hoogleraar De Wit stelt: De hersenen van pubers...\"? Dan denk je dat deze versie plagiaat is. Het is een correct citaat met bron, dus het is toegestaan.",
+    "Koos je \"Volgens De Wit (2021) hebben pubers nog een...\"? Dan denk je dat dit plagiaat is. De betekenis is in eigen woorden weergegeven met bron, dus het is een parafrase.",
+    "Klopt: de zin is letterlijk overgenomen en de herkomst ontbreekt."
+   ],
+   "uh": "Staat de bron erbij?",
+   "ctx": "Je wilt in je betoog een zin van een hoogleraar gebruiken. Je schrijft: \"De hersenen van pubers zijn nog in ontwikkeling.\" Daarna ga je verder met je eigen tekst, zonder aan te geven van wie de zin komt en waar je hem vond."
+  },
+  {
+   "v": "Welke volledige vermelding past in de bronnenlijst?",
+   "o": [
+    "De Vries, E. (2024). Tieners en schermen. Het Dagblad.",
+    "De Vries (2024). Het Dagblad van de maand mei, pagina twee.",
+    "Tieners en schermen, Het Dagblad, 2024, krant over schermen.",
+    "Eva, krant, mei, over tieners en schermen en veel meer."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Bronnenlijst: auteur, jaar of datum, titel, herkomst.",
+   "uo": [
+    "Klopt: auteur, datum, titel en krant maken de bron volledig terug te vinden.",
+    "Koos je \"De Vries (2024). Het Dagblad van de maand mei,...\"? Dan denk je dat deze vermelding genoeg is. De titel ontbreekt, dus de lezer kan het artikel niet vinden.",
+    "Koos je \"Tieners en schermen, Het Dagblad, 2024, krant over...\"? Dan denk je dat titel en jaar volstaan. De auteur en de krant ontbreken, dus de bron is onvolledig.",
+    "Koos je \"Eva, krant, mei, over tieners en schermen en veel...\"? Dan denk je dat een globale omschrijving volstaat. Dit is te vaag, je moet exacte gegevens noemen."
+   ],
+   "uh": "Volledig noteren.",
+   "ctx": "Je gebruikt een artikel van journalist Eva de Vries uit de krant Het Dagblad van 12 mei 2024, getiteld \"Tieners en schermen\". In je tekst citeer je één zin en vat je het artikel verder in eigen woorden samen. Je docent vraagt om een bronvermelding."
+  },
+  {
+   "v": "Wat is er mis aan \"Bos, 2022\" in de bronnenlijst?",
+   "o": [
+    "het jaar klopt niet",
+    "te kort om de bron te vinden",
+    "er staat een naam in de lijst",
+    "het staat tussen haakjes"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "Bronnenlijst: volledige gegevens, niet alleen auteur en jaar.",
+   "uo": [
+    "Koos je \"het jaar klopt niet\"? Dan denk je dat het jaar fout is. Het jaar is genoemd, maar de rest ontbreekt.",
+    "Klopt: titel en herkomst ontbreken, dus de bron is niet terug te vinden.",
+    "Koos je \"er staat een naam in de lijst\"? Dan denk je dat een naam niet hoort. Een naam hoort erbij, maar als onderdeel van de volledige vermelding.",
+    "Koos je \"het staat tussen haakjes\"? Dan denk je dat haakjes het probleem zijn. De opmaak is niet het probleem, de onvolledigheid is dat wel."
+   ],
+   "uh": "Kan het worden teruggevonden?",
+   "ctx": "In je tekst staat: \"Volgens onderzoek slapen tieners te weinig (Bos, 2022).\" In je bronnenlijst staat alleen: Bos, 2022. Je docent zegt dat de vermelding onvolledig is en dat een lezer de bron zo niet kan terugvinden."
+  },
+  {
+   "v": "Waarom blijft de tekst zonder bron plagiaat, ook met aanhalingstekens?",
+   "o": [
+    "omdat aanhalingstekens verboden zijn",
+    "omdat de zin te kort is",
+    "omdat hoogleraren geen bronnen mogen zijn",
+    "de lezer weet niet van wie"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Aanhalingstekens zijn niet genoeg: de bron moet erbij.",
+   "uo": [
+    "Koos je \"omdat aanhalingstekens verboden zijn\"? Dan denk je dat aanhalingstekens fout zijn. Ze zijn juist nodig, alleen niet genoeg.",
+    "Koos je \"omdat de zin te kort is\"? Dan denk je dat korte zinnen vrij zijn. Ook korte zinnen vragen een bron, dus lengte telt niet.",
+    "Koos je \"omdat hoogleraren geen bronnen mogen zijn\"? Dan denk je dat hoogleraren niet geciteerd mogen worden. Ze mogen wel, mits je de bron noemt.",
+    "Klopt: aanhalingstekens tonen dat het geciteerd is, maar de herkomst moet erbij."
+   ],
+   "uh": "Wie zei het?",
+   "ctx": "Je wilt in je betoog een zin van een hoogleraar gebruiken. Je schrijft: \"De hersenen van pubers zijn nog in ontwikkeling.\" Daarna ga je verder met je eigen tekst, zonder aan te geven van wie de zin komt en waar je hem vond."
+  },
+  {
+   "v": "Waarom is dit artikel een goede bron voor een tekst over tienerschermgebruik?",
+   "o": [
+    "het is recent, heeft een auteur en komt uit een krant",
+    "omdat het in een krant staat, en kranten hebben altijd gelijk",
+    "omdat de titel kort is",
+    "omdat het artikel een foto bevat"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Goede bron: bekend auteur, recent, geschikt onderwerp.",
+   "uo": [
+    "Klopt: auteur, datum en uitgever zijn bekend, en het onderwerp past.",
+    "Koos je \"omdat het in een krant staat, en kranten hebben...\"? Dan denk je dat een krant genoeg is. Je beoordeelt auteur en bronnen, niet alleen de krant.",
+    "Koos je \"omdat de titel kort is\"? Dan denk je dat een korte titel de kwaliteit bepaalt. Titel zegt weinig, de afzender wel.",
+    "Koos je \"omdat het artikel een foto bevat\"? Dan denk je dat een foto de betrouwbaarheid bepaalt. Een foto zegt niets, over de gegevens."
+   ],
+   "uh": "Wie en wanneer?",
+   "ctx": "Je gebruikt een artikel van journalist Eva de Vries uit de krant Het Dagblad van 12 mei 2024, getiteld \"Tieners en schermen\". In je tekst citeer je één zin en vat je het artikel verder in eigen woorden samen. Je docent vraagt om een bronvermelding."
+  },
+  {
+   "v": "Wat is het risico van letterlijk overschrijven bij je aantekeningen?",
+   "o": [
+    "je aantekeningen worden veel te kort en te vaag",
+    "je neemt later zinnen over zonder bron",
+    "je gebruikt te weinig bronnen",
+    "je vergeet het onderwerp"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Markeer citaten en noteer de bron, ook in aantekeningen.",
+   "uo": [
+    "Koos je \"je aantekeningen worden veel te kort en te vaag\"? Dan denk je dat overschrijven kort is. Je maakt ze juist te lang, en onoverzichtelijk.",
+    "Klopt: wie overschrijft zonder te markeren, schrijft later onbewust plagiaat.",
+    "Koos je \"je gebruikt te weinig bronnen\"? Dan denk je dat overschrijven het aantal bronnen verkleint. Het probleem is het zelfde als zonder markering, namelijk plagiaat.",
+    "Koos je \"je vergeet het onderwerp\"? Dan denk je dat overschrijven het onderwerp doet vergeten. Het probleem is dat je onbedoeld kopieert, zonder bron."
+   ],
+   "uh": "Wat is van wie?",
+   "ctx": "Je leest een artikel van tien pagina's. Je schrijft elke zin over, ook de voorbeelden en de cijfers. Daarna merk je dat je aantekeningen bijna net zo lang zijn als het artikel en dat je de hoofdlijn niet meer ziet."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je schrijft een beschouwing over verslaving aan sociale media bij tieners. Je zoekt eerst op \"sociale media\" en krijgt miljoenen resultaten. Daarna probeer je \"verslaving sociale media tieners onderzoek 2023\" en krijgt een korte, bruikbare lijst met onder meer een universitair rapport en een nieuwsartikel.",
+   "v": "Waarom is de tweede zoekopdracht beter en welke drie soorten termen bevat ze?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ze is specifieker en geeft minder, bruikbaarder resultaten (1p). Ze bevat het onderwerp (verslaving, sociale media), de doelgroep (tieners) en soort en jaar (onderzoek 2023) (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je gebruikt een artikel van journalist Eva de Vries uit de krant Het Dagblad van 12 mei 2024, getiteld \"Tieners en schermen\". In je tekst citeer je één zin en vat je het artikel verder in eigen woorden samen. Je docent vraagt om een bronvermelding.",
+   "v": "Schrijf de verwijzing in de tekst en de volledige vermelding voor de bronnenlijst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Verwijzing: (De Vries, 2024) (1p). Lijst: De Vries, E. (2024, 12 mei). Tieners en schermen. Het Dagblad. (2p voor auteur, datum, titel en krant; 1p bij een ontbrekend onderdeel)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je wilt in je betoog een zin van een hoogleraar gebruiken. Je schrijft: \"De hersenen van pubers zijn nog in ontwikkeling.\" Daarna ga je verder met je eigen tekst, zonder aan te geven van wie de zin komt en waar je hem vond.",
+   "v": "Herschrijf de zin als parafrase en als citaat, steeds met bron.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Parafrase: Volgens hoogleraar De Wit (2021) ontwikkelen de hersenen van pubers zich nog (1p). Citaat: De Wit stelt: \"De hersenen van pubers zijn nog in ontwikkeling\" (2021) (1p). Beide met bron (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bron 1 (een onderzoek van een universiteit): tieners die dagelijks meer dan drie uur achter een scherm zitten, slapen gemiddeld korter. Bron 2 (een webshop voor schermdeksels): schermen hebben geen enkele invloed op slaap. Je moet in je tekst laten zien welke bron je zwaarder weegt.",
+   "v": "Welke bron weeg je zwaarder en waarom? Formuleer dit voor je tekst.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bron 1 weegt zwaarder: een universiteit is onafhankelijk en deskundig (1p). Bron 2 is een webshop met verkoopbelang (1p). Formulering met reden, bijvoorbeeld: het universitaire onderzoek is betrouwbaarder omdat de webshop een verkoopbelang heeft (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je leest een artikel van tien pagina's. Je schrijft elke zin over, ook de voorbeelden en de cijfers. Daarna merk je dat je aantekeningen bijna net zo lang zijn als het artikel en dat je de hoofdlijn niet meer ziet.",
+   "v": "Leg uit waarom deze aantekeningen niet werken en maak er een goede van.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Alles overschrijven geeft geen selectie en geen overzicht (1p). Goed: Schermtijd boven drie uur hangt samen met korter slapen bij tieners (1p), met bron (Universiteit, jaar) (1p)."
+  }
+ ]
+}
