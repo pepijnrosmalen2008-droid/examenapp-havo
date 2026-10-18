@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.879 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 22.906 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -103,6 +103,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Standpunten, argumenten en schema's herkennen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/standpunten-argumenten-en-schema-s-herkennen.html): Je vindt in een betoog het standpunt en de argumenten, bepaalt de structuur van de argumentatie, onderscheidt feitelijke en waarderende argumenten en herkent…
 - [Een betoog beoordelen en drogredenen herkennen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/een-betoog-beoordelen-en-drogredenen-herkennen.html): Je beoordeelt een betoog op aanvaardbaarheid, controleerbaarheid, betrouwbaarheid van bronnen, relevantie, consistentie en toereikendheid, en je herkent…
 - [Een tekst samenvatten (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/een-tekst-samenvatten.html): Je reduceert een tekst of tekstgedeelte tot de hoofduitspraak met de belangrijke ondergeschikte uitspraken, ordent de informatie in eigen woorden en…
+- [Informatie verzamelen en verwerken (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/informatie-verzamelen-en-verwerken.html): Je zoekt voor een voordracht, discussie of debat bronnen, beoordeelt hun betrouwbaarheid, vergelijkt tegenstrijdige informatie, verwerkt die tot kernpunten in…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen

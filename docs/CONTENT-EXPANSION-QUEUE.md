@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **54 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7). Werk dit getal bij bij elke afronding.
+> Voortgang: **55 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -75,6 +75,11 @@
   - [x] A6 · nl.A.6 Een betoog beoordelen en drogredenen herkennen · 27 vragen (R1 7, R2 10, R3 10, 4 eigen teksten van 515-530 tekens met genummerde zinnen), 12 begrippen, 4 figuren (zes criteria, drogreden per schema, cirkelredenering en persoonlijke aanval, drie stappen), geen clip
   - [x] A7 · nl.A.7 Een tekst samenvatten: hoofd- en ondergeschikte uitspraken · 27 vragen (R1 7, R2 10, R3 10, 4 eigen teksten van 540-670 tekens met genummerde zinnen), 12 begrippen, 4 figuren (gewicht van uitspraken, wat blijft en vervalt, herordenen, samenvatting beoordelen), geen clip
 - [ ] **VWO · Nederlands** (`nl`) · domein B — Mondeling
+  - [x] B1 · nl.B.1 Informatie verzamelen, vergelijken en verwerken · 27 vragen (R1 7, R2 10, R3 10, 6 eigen bronnenscenario's van 280-450 tekens), 12 begrippen, 4 figuren (vier bronvragen, bronnen wegen, van artikel naar kernpunten, citaat parafrase plagiaat), geen clip
+  - [ ] B2 · nl.B.2 Doel, publiek en gespreksvorm bepalen en afstemmen
+  - [ ] B3 · nl.B.3 Een voordracht opbouwen en presenteren
+  - [ ] B4 · nl.B.4 Deelnemen aan een discussie of debat
+  - [ ] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers
 - [ ] **VWO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid
 - [ ] **VWO · Nederlands** (`nl`) · domein D — Argumentatieve vaardigheden
 - [ ] **VWO · Nederlands** (`nl`) · domein E — Literatuur

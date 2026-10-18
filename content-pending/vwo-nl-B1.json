@@ -1,0 +1,688 @@
+{
+ "id": "B1",
+ "lo": "nl.B.1",
+ "gs": 2,
+ "naam": "Informatie verzamelen en verwerken",
+ "beschrijving": "Je zoekt voor een voordracht, discussie of debat bronnen, beoordeelt hun betrouwbaarheid, vergelijkt tegenstrijdige informatie, verwerkt die tot kernpunten in eigen woorden en vermeldt je bronnen zonder te plagiëren.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Bronnen zoeken en kiezen",
+  "Betrouwbaarheid en belang van de afzender",
+  "Bronnen vergelijken",
+  "Kernpunten en parafraseren",
+  "Citeren, bronvermelding en plagiaat",
+  "Valkuilen: eenzijdig, verouderd en overgenomen"
+ ],
+ "sam": "Voor een voordracht, discussie of debat verzamel je informatie bij bronnen die je kunt controleren. Je beoordeelt auteur, belang, actualiteit en controleerbaarheid, vergelijkt bronnen die elkaar tegenspreken en verwerkt de informatie tot kernpunten in eigen woorden. Een letterlijk citaat staat tussen aanhalingstekens, een parafrase is in eigen woorden, en beide krijgen een bronvermelding; zonder bron is het plagiaat.",
+ "begrippen": [
+  {
+   "t": "Bron",
+   "d": "De plaats waar de informatie vandaan komt, zoals een rapport, boek of website."
+  },
+  {
+   "t": "Betrouwbare bron",
+   "d": "Een bron met een bekende, deskundige afzender en controleerbare gegevens."
+  },
+  {
+   "t": "Onafhankelijke bron",
+   "d": "Een bron waarvan de maker geen belang heeft bij een bepaalde uitkomst."
+  },
+  {
+   "t": "Belanghebbende",
+   "d": "Iemand die voordeel heeft bij een bepaalde boodschap, zoals een verkoper."
+  },
+  {
+   "t": "Actualiteit",
+   "d": "Hoe recent een bron is en of die past bij de huidige situatie."
+  },
+  {
+   "t": "Kernpunt",
+   "d": "Een hoofdpunt dat je in je voordracht of debat nodig hebt."
+  },
+  {
+   "t": "Selecteren",
+   "d": "Alleen kiezen wat bij je doel en onderwerp past."
+  },
+  {
+   "t": "Parafraseren",
+   "d": "Informatie in eigen woorden weergeven met dezelfde betekenis."
+  },
+  {
+   "t": "Citaat",
+   "d": "Een letterlijk overgenomen tekst tussen aanhalingstekens, met bron."
+  },
+  {
+   "t": "Bronvermelding",
+   "d": "De gegevens waarmee iemand de bron kan terugvinden: auteur, titel, jaar en herkomst."
+  },
+  {
+   "t": "Plagiaat",
+   "d": "Andermans tekst of idee als eigen werk presenteren, zonder bron."
+  },
+  {
+   "t": "Eenzijdige informatie",
+   "d": "Informatie die maar één kant van een kwestie laat zien."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke bron kies je eerst voor een voordracht over een wetenschappelijk onderwerp?",
+   "o": [
+    "een blog van een enthousiaste liefhebber",
+    "een universitair rapport",
+    "een reclamefolder van een bedrijf",
+    "een anoniem bericht met veel reacties"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Betrouwbaar: deskundige auteur, controleerbare bronnen en methode.",
+   "uo": [
+    "Koos je \"een blog van een enthousiaste liefhebber\"? Dan denk je dat enthousiasme betrouwbaarheid is. Een blog kan inspireren, maar je kunt de informatie niet controleren.",
+    "Klopt: een rapport met bronnenlijst en methode is controleerbaar en door deskundigen geschreven.",
+    "Koos je \"een reclamefolder van een bedrijf\"? Dan denk je dat een bedrijf neutraal informeert. Een folder wil verkopen, dus de informatie kan eenzijdig zijn.",
+    "Koos je \"een anoniem bericht met veel reacties\"? Dan denk je dat populariteit waarheid bewijst. Het aantal reacties zegt niets, de afzender is onbekend."
+   ],
+   "uh": "Deskundig en controleerbaar."
+  },
+  {
+   "v": "Welke bron is het minst betrouwbaar?",
+   "o": [
+    "bron 1: het universitaire rapport uit 2023",
+    "bron 2: de website van een bedrijf voor wasmachinefilters",
+    "bron 3: een krantenartikel zonder auteur",
+    "bron 4: een anoniem forumbericht"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Anoniem en zonder bronnen: het minst betrouwbaar.",
+   "uo": [
+    "Koos je \"bron 1: het universitaire rapport uit 2023\"? Dan denk je dat een rapport onbetrouwbaar is omdat het lang is. Het noemt methode en bronnen, dus het is controleerbaar.",
+    "Koos je \"bron 2: de website van een bedrijf voor...\"? Dan denk je dat bron 2 het minst betrouwbaar is. Het bedrijf heeft een belang, maar de afzender is wel bekend.",
+    "Koos je \"bron 3: een krantenartikel zonder auteur\"? Dan denk je dat een krant altijd betrouwbaar is. Bron 3 noemt geen auteur, maar bron 4 is nog minder te controleren.",
+    "Klopt: de afzender is onbekend en er is niets te controleren."
+   ],
+   "uh": "Wie is de afzender?",
+   "ctx": "Je houdt een voordracht over microplastics in zee en vindt vier bronnen. Bron 1: een rapport van een universiteit uit 2023, met uitleg over de meetmethode en een lijst van bronnen. Bron 2: de website van een bedrijf dat filters voor wasmachines verkoopt. Bron 3: een krantenartikel zonder auteur en zonder bronvermelding. Bron 4: een forumbericht van een anonieme gebruiker met veel uitroeptekens."
+  },
+  {
+   "v": "Waarom is bron 2 niet onafhankelijk?",
+   "o": [
+    "het bedrijf heeft belang bij het probleem",
+    "omdat de website geen plaatjes of filmpjes bevat",
+    "omdat een bedrijf nooit iets zinnigs zegt",
+    "omdat de website van recent is"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Belang van de afzender: niet onafhankelijk.",
+   "uo": [
+    "Klopt: wie iets verkoopt, heeft belang bij een bepaalde boodschap.",
+    "Koos je \"omdat de website geen plaatjes of filmpjes bevat\"? Dan denk je dat de vormgeving de onafhankelijkheid bepaalt. Plaatjes zeggen niets over het belang, dat zit in de afzender.",
+    "Koos je \"omdat een bedrijf nooit iets zinnigs zegt\"? Dan denk je dat bedrijven altijd liegen. Ze kunnen gegevens correct noemen, maar ze zijn niet neutraal.",
+    "Koos je \"omdat de website van recent is\"? Dan denk je dat een nieuwe site onbetrouwbaar is. De datum zegt niets over het belang, de afzender wel."
+   ],
+   "uh": "Wie verdient eraan?",
+   "ctx": "Je houdt een voordracht over microplastics in zee en vindt vier bronnen. Bron 1: een rapport van een universiteit uit 2023, met uitleg over de meetmethode en een lijst van bronnen. Bron 2: de website van een bedrijf dat filters voor wasmachines verkoopt. Bron 3: een krantenartikel zonder auteur en zonder bronvermelding. Bron 4: een forumbericht van een anonieme gebruiker met veel uitroeptekens."
+  },
+  {
+   "v": "Hoe heet het weergeven van informatie in eigen woorden?",
+   "o": [
+    "citeren: letterlijk overnemen",
+    "kopiëren van een hele tekst",
+    "parafraseren",
+    "plagiëren van andermans werk"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Parafraseren: eigen woorden, zelfde betekenis, mét bronvermelding.",
+   "uo": [
+    "Koos je \"citeren: letterlijk overnemen\"? Dan denk je dat een zin overnemen hetzelfde is. Bij citeren neem je letterlijk over, met aanhalingstekens en bron.",
+    "Koos je \"kopiëren van een hele tekst\"? Dan denk je dat kopiëren een vorm van verwerken is. Kopiëren neemt alles over, zonder eigen verwerking.",
+    "Klopt: parafraseren is dezelfde inhoud met eigen woorden weergeven.",
+    "Koos je \"plagiëren van andermans werk\"? Dan denk je dat plagiëren een techniek is. Plagiëren is andermans werk als eigen werk presenteren, dat is verboden."
+   ],
+   "uh": "Eigen woorden."
+  },
+  {
+   "v": "Wat zet je bij een letterlijk overgenomen zin?",
+   "o": [
+    "alleen de naam van de website",
+    "niets, als de zin kort is",
+    "aanhalingstekens en de bron",
+    "alleen je eigen naam"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Letterlijk = aanhalingstekens plus bron.",
+   "uo": [
+    "Koos je \"alleen de naam van de website\"? Dan denk je dat de naam van de site genoeg is. Een bronvermelding moet de bron controleerbaar maken, met auteur en jaar of datum.",
+    "Koos je \"niets, als de zin kort is\"? Dan denk je dat korte zinnen vrij mogen. Ook korte letterlijke stukken moet je vermelden, anders is het plagiaat.",
+    "Klopt: een citaat staat tussen aanhalingstekens, met auteur en bron.",
+    "Koos je \"alleen je eigen naam\"? Dan denk je dat jij de bron bent. Je noemt de maker van de tekst, niet jezelf."
+   ],
+   "uh": "Citaat en bron.",
+   "ctx": "Aan het eind van je presentatie noem je je bronnen. Je hebt een citaat uit een boek gebruikt, een grafiek van een website en een eigen samenvatting van een tijdschriftartikel. Je docent vraagt om een bronvermelding bij alle drie en zegt dat alleen de herkomst noemen niet genoeg is."
+  },
+  {
+   "v": "Welk gegeven laat je weg uit je voordracht van twee minuten?",
+   "o": [
+    "dat de rector van fietsen houdt",
+    "dat het dak plek biedt aan 120 panelen",
+    "dat de investering in acht jaar is terugverdiend",
+    "dat de panelen stroom leveren voor 25 huishoudens"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "Kernpunten: wat bij je doel en onderwerp past.",
+   "uo": [
+    "Klopt: dit gegeven is geen kernpunt voor je onderwerp.",
+    "Koos je \"dat het dak plek biedt aan 120 panelen\"? Dan denk je dat dit detail overbodig is. Het is een belangrijk kernpunt, want het laat de schaal zien.",
+    "Koos je \"dat de investering in acht jaar is terugverdiend\"? Dan denk je dat het financiële gegeven weg kan. Het is een kernpunt, want het beantwoordt de vraag of het loont.",
+    "Koos je \"dat de panelen stroom leveren voor 25 huishoudens\"? Dan denk je dat dit detail weg kan. Het is juist het resultaat, dus het hoort erbij."
+   ],
+   "uh": "Past het bij het onderwerp?",
+   "ctx": "Een artikel van 900 woorden over zonnepanelen op schooldaken vertelt onder meer: de kantine is geverfd, de school bestaat zestig jaar, het dak is groot genoeg voor 120 panelen, de panelen leveren stroom voor 25 huishoudens, de investering verdient zich in acht jaar terug en de rector houdt van fietsen. Jij hebt twee minuten voor je voordracht."
+  },
+  {
+   "v": "Welke bron past het best bij de situatie van nu?",
+   "o": [
+    "het onderzoek uit 2012",
+    "de blog van een gamer",
+    "een boek uit het jaar 2000",
+    "het CBS-nieuwsbericht"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Actualiteit: kies de recentste betrouwbare bron voor een actueel onderwerp.",
+   "uo": [
+    "Koos je \"het onderzoek uit 2012\"? Dan denk je dat een universitair onderzoek altijd voldoet. Het is te oud voor de situatie van nu, dus de cijfers kunnen veranderd zijn.",
+    "Koos je \"de blog van een gamer\"? Dan denk je dat een persoonlijk verhaal cijfers vervangt. Een blog geeft een ervaring, geen representatief aantal.",
+    "Koos je \"een boek uit het jaar 2000\"? Dan denk je dat een boek betrouwbaarder is dan een nieuwsbericht. Het is veel te oud, dus het past niet bij nu.",
+    "Klopt: het is recent en verwijst naar een officiële cijferbron."
+   ],
+   "uh": "Hoe oud is de bron?",
+   "ctx": "Je zoekt informatie voor een voordracht over het aantal jongeren dat dagelijks gamet. Je vindt een onderzoek uit 2012 van een universiteit, een nieuwsbericht van vorige maand dat verwijst naar cijfers van het Centraal Bureau voor de Statistiek en een persoonlijke blog van een gamer. De voordracht gaat over de situatie van nu."
+  },
+  {
+   "v": "Waarom is bron 3 onvoldoende als enige bron?",
+   "o": [
+    "omdat een krant nooit betrouwbaar is",
+    "geen auteur en geen bronnen",
+    "omdat het artikel te kort is",
+    "omdat het niet over zee gaat"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Zonder auteur en bronnen is een bericht niet controleerbaar.",
+   "uo": [
+    "Koos je \"omdat een krant nooit betrouwbaar is\"? Dan denk je dat kranten onbetrouwbaar zijn. Veel kranten zijn betrouwbaar, maar dit artikel noemt geen bronnen.",
+    "Klopt: zonder auteur en bronnen kun je niet nagaan waar de informatie vandaan komt.",
+    "Koos je \"omdat het artikel te kort is\"? Dan denk je dat de lengte telt. Een kort artikel kan juist zijn, het probleem is de herkomst.",
+    "Koos je \"omdat het niet over zee gaat\"? Dan denk je dat het onderwerp ontbreekt. Het gaat wel over microplastics, het is de controleerbaarheid die schort."
+   ],
+   "uh": "Kun je het nagaan?",
+   "ctx": "Je houdt een voordracht over microplastics in zee en vindt vier bronnen. Bron 1: een rapport van een universiteit uit 2023, met uitleg over de meetmethode en een lijst van bronnen. Bron 2: de website van een bedrijf dat filters voor wasmachines verkoopt. Bron 3: een krantenartikel zonder auteur en zonder bronvermelding. Bron 4: een forumbericht van een anonieme gebruiker met veel uitroeptekens."
+  },
+  {
+   "v": "Welke bron is betrouwbaarder en waarom?",
+   "o": [
+    "bron B: een vereniging weet het beste",
+    "bron B: een folder is makkelijker te lezen",
+    "geen van beide: bronnen spreken elkaar tegen",
+    "bron A: methode openbaar, met cijfers"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Betrouwbaar: openbare methode, onafhankelijk, cijfers.",
+   "uo": [
+    "Koos je \"bron B: een vereniging weet het beste\"? Dan denk je dat de belanghebbende de grootste kennis heeft. De vereniging heeft een belang, en noemt geen cijfers.",
+    "Koos je \"bron B: een folder is makkelijker te lezen\"? Dan denk je dat leesbaarheid betrouwbaarheid is. Een folder wil overtuigen, dus hij is niet neutraal.",
+    "Koos je \"geen van beide: bronnen spreken elkaar tegen\"? Dan denk je dat tegenspraak alles onbetrouwbaar maakt. Je vergelijkt de kwaliteit, dan blijkt bron A sterker.",
+    "Klopt: openbare methode en cijfers maken het onderzoek controleerbaar."
+   ],
+   "uh": "Methode en belang.",
+   "ctx": "Voor een debat over elektrische auto's lees je twee bronnen. Bron A is een onderzoek van een instituut voor duurzame mobiliteit dat de uitstoot over de hele levensduur berekent en zijn methode openbaar maakt: elektrische auto's stoten in totaal minder CO2 uit. Bron B is een folder van een vereniging van brandstofhandelaren: elektrische auto's zijn volgens hen niet schoner, omdat accu's bij de productie vervuilen. De folder noemt geen cijfers."
+  },
+  {
+   "v": "Wat doe je met tegenstrijdige informatie in je voordracht?",
+   "o": [
+    "alleen de bron kiezen die je zelf het leukst vindt",
+    "beide noemen en bron A beargumenteerd kiezen",
+    "het gemiddelde van de twee uitspraken noemen",
+    "de informatie weglaten omdat die tegenstrijdig is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Tegenstrijdig: beide noemen, bronnen beoordelen, keuze onderbouwen.",
+   "uo": [
+    "Koos je \"alleen de bron kiezen die je zelf het leukst vindt\"? Dan denk je dat voorkeur genoeg is. Je moet je keuze onderbouwen, met argumenten over de kwaliteit.",
+    "Klopt: je toont beide standpunten en onderbouwt je keuze.",
+    "Koos je \"het gemiddelde van de twee uitspraken noemen\"? Dan denk je dat een gemiddelde de waarheid is. Een gemiddelde van tegenstrijdige uitspraken klopt vaak niet, je weegt de bronnen.",
+    "Koos je \"de informatie weglaten omdat die tegenstrijdig is\"? Dan denk je dat je moet zwijgen bij tegenspraak. Je lezers hebben juist baat bij de afweging, dus je noemt beide."
+   ],
+   "uh": "Weeg de bronnen.",
+   "ctx": "Voor een debat over elektrische auto's lees je twee bronnen. Bron A is een onderzoek van een instituut voor duurzame mobiliteit dat de uitstoot over de hele levensduur berekent en zijn methode openbaar maakt: elektrische auto's stoten in totaal minder CO2 uit. Bron B is een folder van een vereniging van brandstofhandelaren: elektrische auto's zijn volgens hen niet schoner, omdat accu's bij de productie vervuilen. De folder noemt geen cijfers."
+  },
+  {
+   "v": "Welke kernpunten kies je voor twee minuten?",
+   "o": [
+    "de verf van de kantine, de leeftijd van de school en de hobby van de rector",
+    "alleen de leeftijd van de school",
+    "plek voor 120 panelen, 25 huishoudens, acht jaar",
+    "alle gegevens in de volgorde van het artikel"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 3,
+   "u": "Selecteer wat bij het doel past; laat details weg.",
+   "uo": [
+    "Koos je \"de verf van de kantine, de leeftijd van de school...\"? Dan denk je dat details kernpunten zijn. Ze zeggen niets over het onderwerp, dus je laat ze weg.",
+    "Koos je \"alleen de leeftijd van de school\"? Dan denk je dat één gegeven voldoende is. Het is geen kernpunt, en het beantwoordt de vraag niet.",
+    "Klopt: schaal, opbrengst en terugverdientijd beantwoorden de vraag of het loont.",
+    "Koos je \"alle gegevens in de volgorde van het artikel\"? Dan denk je dat alles erin moet. In twee minuten moet je selecteren, anders is het te veel."
+   ],
+   "uh": "Wat doet er toe?",
+   "ctx": "Een artikel van 900 woorden over zonnepanelen op schooldaken vertelt onder meer: de kantine is geverfd, de school bestaat zestig jaar, het dak is groot genoeg voor 120 panelen, de panelen leveren stroom voor 25 huishoudens, de investering verdient zich in acht jaar terug en de rector houdt van fietsen. Jij hebt twee minuten voor je voordracht."
+  },
+  {
+   "v": "Welke leerling parafraseert goed?",
+   "o": [
+    "leerling B: eigen woorden met bron",
+    "leerling A, die de zin vrijwel letterlijk overneemt",
+    "geen van beide, want parafraseren is verboden",
+    "beide, want ze noemen hetzelfde onderzoek"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Parafrase: eigen woorden, bron genoemd.",
+   "uo": [
+    "Klopt: eigen woorden, zelfde betekenis en een vermelding van de bron.",
+    "Koos je \"leerling A, die de zin vrijwel letterlijk overneemt\"? Dan denk je dat weglaten van een bijzin parafraseren is. De formulering is nog van de bron, dus het is geen parafrase.",
+    "Koos je \"geen van beide, want parafraseren is verboden\"? Dan denk je dat parafraseren niet mag. Het mag juist, mits je de bron noemt, en eigen woorden gebruikt.",
+    "Koos je \"beide, want ze noemen hetzelfde onderzoek\"? Dan denk je dat dezelfde inhoud genoeg is. Leerling A gebruikt de woorden van de bron, leerling B formuleert zelf."
+   ],
+   "uh": "Eigen woorden en bron.",
+   "ctx": "Origineel: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school, ook als zij overdag even veel rust nemen.\" Leerling A schrijft in zijn presentatie: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school.\" Leerling B schrijft: \"Wie te weinig slaapt, kan zich op school slechter concentreren, ook als hij overdag uitrust (Slaapinstituut Noord, 2022).\""
+  },
+  {
+   "v": "Waarom is de tekst van leerling A plagiaat?",
+   "o": [
+    "bijna letterlijk overgenomen zonder bron",
+    "omdat de zin te lang is",
+    "omdat de leerling in zijn presentatie een onderzoek noemt",
+    "omdat de zin over slapen gaat"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Letterlijk overnemen zonder bron is plagiaat.",
+   "uo": [
+    "Klopt: wat je overneemt zonder bron, presenteer je als eigen werk.",
+    "Koos je \"omdat de zin te lang is\"? Dan denk je dat de lengte het probleem is. De lengte is niet bepalend, het gaat om het ontbreken van bron en citaat.",
+    "Koos je \"omdat de leerling in zijn presentatie een onderzoek...\"? Dan denk je dat het noemen van onderzoek verboden is. Het gaat om het niet noemen van de bron, niet om het onderzoek zelf.",
+    "Koos je \"omdat de zin over slapen gaat\"? Dan denk je dat het onderwerp een probleem is. Het onderwerp is prima, het gaat om de overname."
+   ],
+   "uh": "Eigen werk of overgenomen?",
+   "ctx": "Origineel: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school, ook als zij overdag even veel rust nemen.\" Leerling A schrijft in zijn presentatie: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school.\" Leerling B schrijft: \"Wie te weinig slaapt, kan zich op school slechter concentreren, ook als hij overdag uitrust (Slaapinstituut Noord, 2022).\""
+  },
+  {
+   "v": "Welke bronvermelding is volledig?",
+   "o": [
+    "alleen \"internet\"",
+    "alleen de naam van de uitgever",
+    "auteur, titel, jaar en uitgever",
+    "alleen de datum waarop je het las"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Een bronvermelding: auteur, titel, jaar en herkomst.",
+   "uo": [
+    "Koos je \"alleen internet\"? Dan denk je dat de herkomst genoeg is. \"Internet\" zegt niets, je moet de bron kunnen terugvinden.",
+    "Koos je \"alleen de naam van de uitgever\"? Dan denk je dat één gegeven genoeg is. Zonder titel en auteur, is de bron niet te vinden.",
+    "Klopt: met deze gegevens kan iemand de bron terugvinden.",
+    "Koos je \"alleen de datum waarop je het las\"? Dan denk je dat je eigen leesdatum de bron is. Je noemt de bron zelf, niet wanneer jij hem las."
+   ],
+   "uh": "Kan iemand het terugvinden?",
+   "ctx": "Aan het eind van je presentatie noem je je bronnen. Je hebt een citaat uit een boek gebruikt, een grafiek van een website en een eigen samenvatting van een tijdschriftartikel. Je docent vraagt om een bronvermelding bij alle drie en zegt dat alleen de herkomst noemen niet genoeg is."
+  },
+  {
+   "v": "Waarom is het onderzoek uit 2012 minder geschikt?",
+   "o": [
+    "omdat een universiteit niet betrouwbaar is",
+    "het is verouderd voor de situatie van nu",
+    "omdat een onderzoek nooit gebruikt mag worden",
+    "omdat het te veel getallen bevat"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Actualiteit: oude gegevens passen niet bij nu.",
+   "uo": [
+    "Koos je \"omdat een universiteit niet betrouwbaar is\"? Dan denk je dat een universiteit onbetrouwbaar is. Het is een betrouwbare afzender, maar de gegevens zijn oud.",
+    "Klopt: bij een actueel onderwerp telt de actualiteit van de bron.",
+    "Koos je \"omdat een onderzoek nooit gebruikt mag worden\"? Dan denk je dat onderzoeken niet mogen. Ze mogen wel, als ze actueel genoeg zijn.",
+    "Koos je \"omdat het te veel getallen bevat\"? Dan denk je dat cijfers storend zijn. Cijfers maken het onderzoek juist sterk, het probleem is de leeftijd."
+   ],
+   "uh": "Wanneer was dit?",
+   "ctx": "Je zoekt informatie voor een voordracht over het aantal jongeren dat dagelijks gamet. Je vindt een onderzoek uit 2012 van een universiteit, een nieuwsbericht van vorige maand dat verwijst naar cijfers van het Centraal Bureau voor de Statistiek en een persoonlijke blog van een gamer. De voordracht gaat over de situatie van nu."
+  },
+  {
+   "v": "Hoe gebruik je bron 2 verantwoord in je voordracht?",
+   "o": [
+    "de informatie als waarheid overnemen",
+    "de bron nooit gebruiken",
+    "de bron verzwijgen en de gegevens als eigen onderzoek presenteren",
+    "noemen dat het bedrijf belang heeft en de cijfers controleren"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Belanghebbende bronnen: noemen en controleren.",
+   "uo": [
+    "Koos je \"de informatie als waarheid overnemen\"? Dan denk je dat een bedrijf neutraal is. Het heeft belang, dus je moet de informatie toetsen.",
+    "Koos je \"de bron nooit gebruiken\"? Dan denk je dat een belanghebbende nooit iets nuttigs zegt. Je mag het gebruiken, met vermelding en controle.",
+    "Koos je \"de bron verzwijgen en de gegevens als eigen...\"? Dan denk je dat het niet uitmaakt wie het zegt. Dat is plagiaat, en het verbergt het belang.",
+    "Klopt: je vermeldt het belang en toetst de informatie aan een onafhankelijke bron."
+   ],
+   "uh": "Belang noemen.",
+   "ctx": "Je houdt een voordracht over microplastics in zee en vindt vier bronnen. Bron 1: een rapport van een universiteit uit 2023, met uitleg over de meetmethode en een lijst van bronnen. Bron 2: de website van een bedrijf dat filters voor wasmachines verkoopt. Bron 3: een krantenartikel zonder auteur en zonder bronvermelding. Bron 4: een forumbericht van een anonieme gebruiker met veel uitroeptekens."
+  },
+  {
+   "v": "Welke fout maakt een spreker die alleen bron B noemt?",
+   "o": [
+    "hij gebruikt een bron die te veel cijfers bevat",
+    "hij noemt alleen de belanghebbende bron",
+    "hij noemt een bron die te nieuw is",
+    "hij vergelijkt bron A met bron B"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Eenzijdig: alleen de belanghebbende bron noemen.",
+   "uo": [
+    "Koos je \"hij gebruikt een bron die te veel cijfers bevat\"? Dan denk je dat bron B te veel cijfers heeft. Bron B noemt juist geen cijfers, dus dat klopt niet.",
+    "Klopt: bron B heeft belang en noemt geen cijfers, dus de spreker laat andere informatie weg.",
+    "Koos je \"hij noemt een bron die te nieuw is\"? Dan denk je dat de actualiteit het probleem is. Het gaat om eenzijdigheid, niet om de datum.",
+    "Koos je \"hij vergelijkt bron A met bron B\"? Dan denk je dat vergelijken fout is. Vergelijken is juist goed, alleen B noemen is eenzijdig."
+   ],
+   "uh": "Alleen B is eenzijdig.",
+   "ctx": "Voor een debat over elektrische auto's lees je twee bronnen. Bron A is een onderzoek van een instituut voor duurzame mobiliteit dat de uitstoot over de hele levensduur berekent en zijn methode openbaar maakt: elektrische auto's stoten in totaal minder CO2 uit. Bron B is een folder van een vereniging van brandstofhandelaren: elektrische auto's zijn volgens hen niet schoner, omdat accu's bij de productie vervuilen. De folder noemt geen cijfers."
+  },
+  {
+   "v": "Welke formulering in de voordracht is evenwichtig en eerlijk?",
+   "o": [
+    "\"Het instituut rekent minder uitstoot voor; de vereniging noemt geen cijfers.\"",
+    "\"Elektrische auto's zijn altijd schoner en de tegenstanders hebben gewoon ongelijk.\"",
+    "\"Elektrische auto's en brandstofauto's zijn precies even schoon.\"",
+    "\"Niemand weet het, dus ik zeg er niets over.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Evenwichtig: beide bronnen noemen en hun kwaliteit beoordelen.",
+   "uo": [
+    "Klopt: de spreker noemt beide kanten en laat zien dat de tweede bron geen onderbouwing geeft.",
+    "Koos je \"Elektrische auto's zijn altijd schoner en de...\"? Dan denk je dat een stellige uitspraak eerlijk is. Hij laat de andere bron weg, en is dus eenzijdig.",
+    "Koos je \"Elektrische auto's en brandstofauto's zijn precies...\"? Dan denk je dat gelijkheid de oplossing is. De bronnen spreken elkaar tegen, dus gelijkheid is een verzonnen compromis.",
+    "Koos je \"Niemand weet het, dus ik zeg er niets over.\"? Dan denk je dat tegenspraak je tot zwijgen dwingt. Je kunt de bronnen beoordelen, en dat doet de spreker niet."
+   ],
+   "uh": "Eerlijk en evenwichtig.",
+   "ctx": "Voor een debat over elektrische auto's lees je twee bronnen. Bron A is een onderzoek van een instituut voor duurzame mobiliteit dat de uitstoot over de hele levensduur berekent en zijn methode openbaar maakt: elektrische auto's stoten in totaal minder CO2 uit. Bron B is een folder van een vereniging van brandstofhandelaren: elektrische auto's zijn volgens hen niet schoner, omdat accu's bij de productie vervuilen. De folder noemt geen cijfers."
+  },
+  {
+   "v": "Een leerling gebruikt bron 1 en bron 2 even zwaar. Waarom is dat onverstandig?",
+   "o": [
+    "omdat bron 2 altijd onwaar is",
+    "omdat bron 1 te lang is",
+    "omdat je nooit twee bronnen naast elkaar mag gebruiken",
+    "bron 1 is onafhankelijk, bron 2 heeft belang"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Weeg bronnen naar betrouwbaarheid, niet allemaal gelijk.",
+   "uo": [
+    "Koos je \"omdat bron 2 altijd onwaar is\"? Dan denk je dat een belanghebbende altijd liegt. De informatie kan juist zijn, maar je weegt haar minder zwaar.",
+    "Koos je \"omdat bron 1 te lang is\"? Dan denk je dat de lengte iets zegt over de betrouwbaarheid. Het gaat om controleerbaarheid, niet om lengte.",
+    "Koos je \"omdat je nooit twee bronnen naast elkaar mag...\"? Dan denk je dat combineren verboden is. Je mag bronnen combineren, maar je weegt hun kwaliteit.",
+    "Klopt: de bronnen verschillen in betrouwbaarheid; dat hoort in de weging te blijken."
+   ],
+   "uh": "Zijn ze even sterk?",
+   "ctx": "Je houdt een voordracht over microplastics in zee en vindt vier bronnen. Bron 1: een rapport van een universiteit uit 2023, met uitleg over de meetmethode en een lijst van bronnen. Bron 2: de website van een bedrijf dat filters voor wasmachines verkoopt. Bron 3: een krantenartikel zonder auteur en zonder bronvermelding. Bron 4: een forumbericht van een anonieme gebruiker met veel uitroeptekens."
+  },
+  {
+   "v": "Welke verbetering maakt de tekst van leerling A tot een goede parafrase?",
+   "o": [
+    "een paar woorden vervangen door synoniemen",
+    "het onderzoek helemaal weglaten",
+    "in eigen woorden herschrijven met bron",
+    "er aanhalingstekens om zetten en de bron weglaten"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Parafraseren: eigen zinsbouw plus bron.",
+   "uo": [
+    "Koos je \"een paar woorden vervangen door synoniemen\"? Dan denk je dat synoniemen genoeg zijn. De zinsbouw blijft dan van de bron, en de bron ontbreekt nog.",
+    "Koos je \"het onderzoek helemaal weglaten\"? Dan denk je dat weglaten de oplossing is. Dan heb je geen informatie meer, de oplossing is herschrijven met bron.",
+    "Klopt: eigen woorden én bronvermelding maken er een parafrase van.",
+    "Koos je \"er aanhalingstekens om zetten en de bron weglaten\"? Dan denk je dat aanhalingstekens genoeg zijn. Je moet de bron noemen, anders mist de herkomst."
+   ],
+   "uh": "Eigen woorden en bron.",
+   "ctx": "Origineel: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school, ook als zij overdag even veel rust nemen.\" Leerling A schrijft in zijn presentatie: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school.\" Leerling B schrijft: \"Wie te weinig slaapt, kan zich op school slechter concentreren, ook als hij overdag uitrust (Slaapinstituut Noord, 2022).\""
+  },
+  {
+   "v": "Waarom is de bronvermelding bij leerling B nodig, al is de tekst herschreven?",
+   "o": [
+    "omdat de tekst nog niet af is",
+    "omdat een parafrase altijd een citaat is",
+    "het idee blijft van de onderzoeker",
+    "omdat de docent dat leuk vindt"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 4,
+   "u": "Wie een idee overneemt, noemt de bron, ook in eigen woorden.",
+   "uo": [
+    "Koos je \"omdat de tekst nog niet af is\"? Dan denk je dat de bron alleen bij onaffe teksten hoort. De bron hoort bij elk overgenomen idee, ook bij een afgeronde tekst.",
+    "Koos je \"omdat een parafrase altijd een citaat is\"? Dan denk je dat parafrase en citaat hetzelfde zijn. Een parafrase is in eigen woorden, maar de bron blijft nodig.",
+    "Klopt: ook in eigen woorden gebruik je andermans resultaat, dus je noemt de bron.",
+    "Koos je \"omdat de docent dat leuk vindt\"? Dan denk je dat het om voorkeur gaat. Het gaat om eerlijkheid naar de maker, en controleerbaarheid."
+   ],
+   "uh": "Van wie is het idee?",
+   "ctx": "Origineel: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school, ook als zij overdag even veel rust nemen.\" Leerling A schrijft in zijn presentatie: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school.\" Leerling B schrijft: \"Wie te weinig slaapt, kan zich op school slechter concentreren, ook als hij overdag uitrust (Slaapinstituut Noord, 2022).\""
+  },
+  {
+   "v": "Je spreekt vijf minuten voor klasgenoten. Welke combinatie levert de beste informatie?",
+   "o": [
+    "alleen het onderzoek uit 2012 voor alle cijfers",
+    "alleen de blog, want die is persoonlijk en dus eerlijk",
+    "alle drie even zwaar, want meer bronnen is beter",
+    "het CBS-bericht voor cijfers en de blog als voorbeeld"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Combineer: betrouwbare, actuele cijfers plus illustratie.",
+   "uo": [
+    "Koos je \"alleen het onderzoek uit 2012 voor alle cijfers\"? Dan denk je dat een universitair onderzoek altijd genoeg is. Het is te oud voor nu, dus je mist de actuele cijfers.",
+    "Koos je \"alleen de blog, want die is persoonlijk en dus...\"? Dan denk je dat een persoonlijk verhaal representatief is. Het geeft één ervaring, geen aantal.",
+    "Koos je \"alle drie even zwaar, want meer bronnen is beter\"? Dan denk je dat het aantal telt. Je weegt de kwaliteit, niet alleen het aantal.",
+    "Klopt: de cijfers komen uit de betrouwbare, actuele bron; de blog geeft een voorbeeld."
+   ],
+   "uh": "Cijfers en voorbeeld.",
+   "ctx": "Je zoekt informatie voor een voordracht over het aantal jongeren dat dagelijks gamet. Je vindt een onderzoek uit 2012 van een universiteit, een nieuwsbericht van vorige maand dat verwijst naar cijfers van het Centraal Bureau voor de Statistiek en een persoonlijke blog van een gamer. De voordracht gaat over de situatie van nu."
+  },
+  {
+   "v": "Welke valkuil zit in het gebruiken van alleen bron 4?",
+   "o": [
+    "je neemt informatie over zonder controle",
+    "je gebruikt te veel bronnen",
+    "je gebruikt een bron die te recent is",
+    "je citeert te veel letterlijk uit het forumbericht"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 5,
+   "u": "Anoniem en zonder bron: niet te controleren.",
+   "uo": [
+    "Klopt: zonder bekende afzender of bron is de informatie niet te toetsen.",
+    "Koos je \"je gebruikt te veel bronnen\"? Dan denk je dat het aantal bronnen het probleem is. Je gebruikt maar één bron, de kwaliteit is het probleem.",
+    "Koos je \"je gebruikt een bron die te recent is\"? Dan denk je dat een recente bron een probleem is. Het gaat om herkomst, niet om de datum.",
+    "Koos je \"je citeert te veel letterlijk uit het forumbericht\"? Dan denk je dat citeren het probleem is. Het gaat om de betrouwbaarheid, ook zonder citaat."
+   ],
+   "uh": "Wie zegt dit?",
+   "ctx": "Je houdt een voordracht over microplastics in zee en vindt vier bronnen. Bron 1: een rapport van een universiteit uit 2023, met uitleg over de meetmethode en een lijst van bronnen. Bron 2: de website van een bedrijf dat filters voor wasmachines verkoopt. Bron 3: een krantenartikel zonder auteur en zonder bronvermelding. Bron 4: een forumbericht van een anonieme gebruiker met veel uitroeptekens."
+  },
+  {
+   "v": "Welke aanpak levert een goede verwerking in twee minuten?",
+   "o": [
+    "het artikel voorlezen en bij tijdnood stoppen",
+    "drie kernpunten kiezen en vrij vertellen",
+    "alles uit het artikel opsommen zo snel mogelijk",
+    "alleen een cijfer noemen en stoppen"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Selecteren, voorbeeld, eigen woorden.",
+   "uo": [
+    "Koos je \"het artikel voorlezen en bij tijdnood stoppen\"? Dan denk je dat voorlezen genoeg is. Dan verwerk je niets, en het past niet in twee minuten.",
+    "Klopt: selecteren en in eigen woorden presenteren past in de beschikbare tijd.",
+    "Koos je \"alles uit het artikel opsommen zo snel mogelijk\"? Dan denk je dat snelheid de oplossing is. Je publiek haakt af, door te veel details.",
+    "Koos je \"alleen een cijfer noemen en stoppen\"? Dan denk je dat één gegeven volstaat. Dan mis je de context, en je onderwerp blijft onduidelijk."
+   ],
+   "uh": "Kies, vertel, voorbeeld.",
+   "ctx": "Een artikel van 900 woorden over zonnepanelen op schooldaken vertelt onder meer: de kantine is geverfd, de school bestaat zestig jaar, het dak is groot genoeg voor 120 panelen, de panelen leveren stroom voor 25 huishoudens, de investering verdient zich in acht jaar terug en de rector houdt van fietsen. Jij hebt twee minuten voor je voordracht."
+  },
+  {
+   "v": "Waarom is bron B niet zonder meer onbruikbaar?",
+   "o": [
+    "omdat een folder altijd de waarheid vertelt",
+    "omdat de folder cijfers bevat",
+    "omdat elke bron even goed is",
+    "ze toont wat de belanghebbende beweert"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 2,
+   "u": "Standpunt van een belanghebbende: noemen als standpunt.",
+   "uo": [
+    "Koos je \"omdat een folder altijd de waarheid vertelt\"? Dan denk je dat folders betrouwbaar zijn. Ze zijn niet onafhankelijk, dus je moet voorzichtig zijn.",
+    "Koos je \"omdat de folder cijfers bevat\"? Dan denk je dat er cijfers staan. De folder noemt geen cijfers, dus dit argument gaat niet op.",
+    "Koos je \"omdat elke bron even goed is\"? Dan denk je dat bronnen gelijkwaardig zijn. Ze verschillen in betrouwbaarheid, en je vermeldt wat de bron is.",
+    "Klopt: je kunt de folder gebruiken om te laten zien wat de belanghebbende beweert, mits je dat vermeldt."
+   ],
+   "uh": "Wat is het voor bron?",
+   "ctx": "Voor een debat over elektrische auto's lees je twee bronnen. Bron A is een onderzoek van een instituut voor duurzame mobiliteit dat de uitstoot over de hele levensduur berekent en zijn methode openbaar maakt: elektrische auto's stoten in totaal minder CO2 uit. Bron B is een folder van een vereniging van brandstofhandelaren: elektrische auto's zijn volgens hen niet schoner, omdat accu's bij de productie vervuilen. De folder noemt geen cijfers."
+  },
+  {
+   "v": "Welke vermelding ontbreekt als je een grafiek van een website zonder bron plaatst?",
+   "o": [
+    "de herkomst: maker, site en datum",
+    "alleen de titel van de grafiek",
+    "niets, want afbeeldingen mogen vrij",
+    "alleen je eigen naam"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Ook grafieken en afbeeldingen vragen een bronvermelding.",
+   "uo": [
+    "Klopt: een grafiek is ook gegevens van iemand anders; je noemt de maker en de bron.",
+    "Koos je \"alleen de titel van de grafiek\"? Dan denk je dat de titel de bron is. Een titel zegt niets over de herkomst, dus je mist de maker.",
+    "Koos je \"niets, want afbeeldingen mogen vrij\"? Dan denk je dat afbeeldingen geen bron nodig hebben. Ook een grafiek heeft een maker, dus een bron.",
+    "Koos je \"alleen je eigen naam\"? Dan denk je dat jij de bron bent. Jij hebt de grafiek niet gemaakt, dus je noemt de maker."
+   ],
+   "uh": "Wie maakte dit?",
+   "ctx": "Aan het eind van je presentatie noem je je bronnen. Je hebt een citaat uit een boek gebruikt, een grafiek van een website en een eigen samenvatting van een tijdschriftartikel. Je docent vraagt om een bronvermelding bij alle drie en zegt dat alleen de herkomst noemen niet genoeg is."
+  },
+  {
+   "v": "Een leerling leest zijn artikel van 900 woorden gewoon voor. Wat is het probleem?",
+   "o": [
+    "hij leest te zacht en te snel voor zijn publiek",
+    "er is niets tot kernpunten verwerkt",
+    "het artikel is te kort voor de beschikbare tijd",
+    "hij noemt de bron van zijn artikel"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Informatie verwerken: selecteren, kernpunten, eigen woorden.",
+   "uo": [
+    "Koos je \"hij leest te zacht en te snel voor zijn publiek\"? Dan denk je dat het volume het probleem is. Dat is een presentatieprobleem, het inhoudelijke probleem is het ontbreken van verwerking.",
+    "Klopt: voorlezen verwerkt niets; je moet selecteren en in eigen woorden formuleren.",
+    "Koos je \"het artikel is te kort voor de beschikbare tijd\"? Dan denk je dat de lengte te klein is. Het artikel is juist te lang, voor twee minuten.",
+    "Koos je \"hij noemt de bron van zijn artikel\"? Dan denk je dat het noemen van de bron fout is. Dat is juist goed, het probleem is de verwerking."
+   ],
+   "uh": "Voorlezen is geen verwerken.",
+   "ctx": "Een artikel van 900 woorden over zonnepanelen op schooldaken vertelt onder meer: de kantine is geverfd, de school bestaat zestig jaar, het dak is groot genoeg voor 120 panelen, de panelen leveren stroom voor 25 huishoudens, de investering verdient zich in acht jaar terug en de rector houdt van fietsen. Jij hebt twee minuten voor je voordracht."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je houdt een voordracht over microplastics in zee en vindt vier bronnen. Bron 1: een rapport van een universiteit uit 2023, met uitleg over de meetmethode en een lijst van bronnen. Bron 2: de website van een bedrijf dat filters voor wasmachines verkoopt. Bron 3: een krantenartikel zonder auteur en zonder bronvermelding. Bron 4: een forumbericht van een anonieme gebruiker met veel uitroeptekens.",
+   "v": "Rangschik de vier bronnen van betrouwbaar naar onbetrouwbaar en geef één reden.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Volgorde: bron 1, bron 3, bron 2, bron 4 (2p; volgorde 2 of 3 gelijkwaardig als redenering klopt). Reden: bron 1 heeft methode en bronnen en is controleerbaar (1p); bron 4 is anoniem zonder bron (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Voor een debat over elektrische auto's lees je twee bronnen. Bron A is een onderzoek van een instituut voor duurzame mobiliteit dat de uitstoot over de hele levensduur berekent en zijn methode openbaar maakt: elektrische auto's stoten in totaal minder CO2 uit. Bron B is een folder van een vereniging van brandstofhandelaren: elektrische auto's zijn volgens hen niet schoner, omdat accu's bij de productie vervuilen. De folder noemt geen cijfers.",
+   "v": "Welke bron weeg je zwaarder en hoe verwerk je beide in je debat?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bron A weegt zwaarder: methode openbaar en cijfers (1p). Bron B komt van een belanghebbende zonder cijfers (1p). In het debat noem je beide, leg je uit waarom A sterker is en toon je dat B een belang heeft (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Origineel: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school, ook als zij overdag even veel rust nemen.\" Leerling A schrijft in zijn presentatie: \"Jongeren die minder dan zeven uur slapen hebben vaker last van concentratieproblemen op school.\" Leerling B schrijft: \"Wie te weinig slaapt, kan zich op school slechter concentreren, ook als hij overdag uitrust (Slaapinstituut Noord, 2022).\"",
+   "v": "Maak van de zin van leerling A een goede parafrase met bronvermelding.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: Wie minder dan zeven uur slaapt, concentreert zich op school slechter, ook als hij overdag uitrust (Slaapinstituut Noord, 2022) (3p: eigen woorden, zelfde betekenis, bronvermelding)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een artikel van 900 woorden over zonnepanelen op schooldaken vertelt onder meer: de kantine is geverfd, de school bestaat zestig jaar, het dak is groot genoeg voor 120 panelen, de panelen leveren stroom voor 25 huishoudens, de investering verdient zich in acht jaar terug en de rector houdt van fietsen. Jij hebt twee minuten voor je voordracht.",
+   "v": "Kies drie kernpunten voor je voordracht van twee minuten en leg uit waarom je andere gegevens weglaat.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Kernpunten: plek voor 120 panelen, stroom voor 25 huishoudens, terugverdiend in acht jaar (2p voor 2 of 3 juiste). Je laat details weg zoals de verf van de kantine en de leeftijd van de school, omdat ze niet bij het onderwerp passen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Aan het eind van je presentatie noem je je bronnen. Je hebt een citaat uit een boek gebruikt, een grafiek van een website en een eigen samenvatting van een tijdschriftartikel. Je docent vraagt om een bronvermelding bij alle drie en zegt dat alleen de herkomst noemen niet genoeg is.",
+   "v": "Welke gegevens vermeld je bij het citaat uit een boek en bij de grafiek van een website?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Boek: auteur, titel, jaar en uitgever, en aanhalingstekens bij het citaat (2p). Website: maker of site, titel en datum of link waar de grafiek vandaan komt (2p)."
+  }
+ ]
+}
