@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.041 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.068 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -109,6 +109,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Deelnemen aan een discussie of debat (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/deelnemen-aan-een-discussie-of-debat.html): Je bereidt je voor op een discussie of debat, verdedigt je standpunt met onderbouwde argumenten, weerlegt tegenargumenten eerlijk, houdt je aan beurten en…
 - [Adequaat reageren op luisteraars en deelnemers (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/adequaat-reageren-op-luisteraars-en-deelnemers.html): Je luistert actief, vraagt door, beantwoordt vragen eerlijk, gaat rustig om met kritiek en geeft en ontvangt feedback die concreet en bruikbaar is.
 - [Informatie verzamelen, verwerken en verantwoorden (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/informatie-verzamelen-verwerken-en-verantwoorden.html): Je zoekt gericht informatie voor een gedocumenteerde tekst, beoordeelt en weegt bronnen, maakt bruikbare aantekeningen, verwerkt informatie als citaat of…
+- [Tekstsoort, doel en lezersgroep afstemmen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekstsoort-doel-en-lezersgroep-afstemmen.html): Je kiest bij een schrijfopdracht de juiste tekstsoort (uiteenzetting, beschouwing of betoog), bepaalt je schrijfdoel en je lezers, en stemt inhoud, woordkeus…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen

@@ -1,0 +1,690 @@
+{
+ "id": "C2",
+ "lo": "nl.C.2",
+ "gs": 2,
+ "naam": "Tekstsoort, doel en lezersgroep afstemmen",
+ "beschrijving": "Je kiest bij een schrijfopdracht de juiste tekstsoort (uiteenzetting, beschouwing of betoog), bepaalt je schrijfdoel en je lezers, en stemt inhoud, woordkeus en register daarop af.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "De opdracht lezen en de tekstsoort kiezen",
+  "Het schrijfdoel bepalen",
+  "De lezersgroep analyseren",
+  "Inhoud en opbouw afstemmen",
+  "Woordkeus en register afstemmen",
+  "Valkuilen: verkeerde soort en verkeerde toon"
+ ],
+ "sam": "Bij een schrijfopdracht lees je eerst wat gevraagd wordt: uitleg geeft een uiteenzetting, twee kanten naast elkaar een beschouwing, een standpunt met argumenten een betoog. Daarna bepaal je je schrijfdoel, analyseer je de lezers (leeftijd, kennis, belangstelling, tijd) en stem je inhoud, woordkeus en register af. Een formele brief vraagt een beleefd en zakelijk register, kinderen vragen eenvoudige woorden en korte zinnen.",
+ "begrippen": [
+  {
+   "t": "Tekstsoort",
+   "d": "Het soort tekst dat wordt gevraagd: uiteenzetting, beschouwing of betoog."
+  },
+  {
+   "t": "Uiteenzetting",
+   "d": "Een tekst die uitlegt of beschrijft en informeert, zonder standpunt."
+  },
+  {
+   "t": "Beschouwing",
+   "d": "Een tekst die opvattingen ter overweging aanbiedt en geen kant kiest."
+  },
+  {
+   "t": "Betoog",
+   "d": "Een tekst die een standpunt verdedigt met argumenten om te overtuigen."
+  },
+  {
+   "t": "Schrijfdoel",
+   "d": "Wat je met je tekst bij de lezer wilt bereiken."
+  },
+  {
+   "t": "Lezersgroep",
+   "d": "De mensen voor wie je schrijft, met hun leeftijd, kennis en belangstelling."
+  },
+  {
+   "t": "Voorkennis",
+   "d": "Wat de lezers al weten over het onderwerp."
+  },
+  {
+   "t": "Register",
+   "d": "De toon van je taal: formeel of informeel."
+  },
+  {
+   "t": "Formeel",
+   "d": "Beleefd en zakelijk, zonder spreektaal."
+  },
+  {
+   "t": "Informeel",
+   "d": "Los en alledaags, zoals bij vrienden."
+  },
+  {
+   "t": "Woordkeus",
+   "d": "De woorden die je kiest, afgestemd op de lezers."
+  },
+  {
+   "t": "Opdracht",
+   "d": "De opgave waarin staat welke tekst je moet schrijven en voor wie."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke tekstsoort past bij deze opdracht?",
+   "o": [
+    "een uiteenzetting",
+    "een betoog",
+    "een beschouwing",
+    "een verhaal"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Betoog: standpunt kiezen en overtuigen.",
+   "uo": [
+    "Koos je \"een uiteenzetting\"? Dan denk je dat elke krantentekst uitleg is. Bij een uiteenzetting informeer je zonder standpunt, hier moet je overtuigen.",
+    "Klopt: je kiest een standpunt en wilt de lezers overtuigen.",
+    "Koos je \"een beschouwing\"? Dan denk je dat je twee kanten moet afwegen. Je mag zelf kiezen en wilt overtuigen, dus een beschouwing past niet.",
+    "Koos je \"een verhaal\"? Dan denk je dat een schoolkrant verhalen vraagt. De opdracht vraagt een zakelijke tekst met standpunt, geen verhaal."
+   ],
+   "uh": "Standpunt en overtuigen.",
+   "ctx": "Opdracht: schrijf een tekst voor de schoolkrant over het gebruik van mobiele telefoons in de les. Je mag zelf een standpunt kiezen en je wilt de lezers van dat standpunt overtuigen. Je lezers zijn leerlingen en docenten van de school."
+  },
+  {
+   "v": "Welke tekstsoort past bij deze opdracht?",
+   "o": [
+    "een betoog",
+    "een beschouwing",
+    "een brief met klachten",
+    "een uiteenzetting"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 0,
+   "u": "Uiteenzetting: uitleggen en informeren.",
+   "uo": [
+    "Koos je \"een betoog\"? Dan denk je dat elke tekst op de website een standpunt heeft. Hier hoef je geen mening te geven, dus het is geen betoog.",
+    "Koos je \"een beschouwing\"? Dan denk je dat je moet afwegen. De opdracht vraagt alleen uitleg, geen afweging.",
+    "Koos je \"een brief met klachten\"? Dan denk je dat een tekst op de website een klacht is. De opdracht vraagt uitleg, geen klacht.",
+    "Klopt: je legt uit hoe iets werkt zonder eigen mening."
+   ],
+   "uh": "Uitleg zonder mening.",
+   "ctx": "Opdracht: leg aan alle leerlingen uit hoe de nieuwe regels voor telefoons werken. Je hoeft geen mening te geven en de lezers moeten na afloop precies weten wat wel en niet mag. De tekst komt op de website van de school te staan."
+  },
+  {
+   "v": "Welke tekstsoort past bij deze opdracht?",
+   "o": [
+    "een beschouwing",
+    "een betoog",
+    "een uiteenzetting",
+    "een reclametekst"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 0,
+   "u": "Beschouwing: opvattingen afwegen, geen standpunt.",
+   "uo": [
+    "Klopt: je legt twee kanten naast elkaar en laat de lezer nadenken.",
+    "Koos je \"een betoog\"? Dan denk je dat je een kant moet kiezen. De opdracht zegt dat je geen standpunt inneemt, dus het is geen betoog.",
+    "Koos je \"een uiteenzetting\"? Dan denk je dat je alleen uitlegt. Je zet opvattingen naast elkaar, dat is meer dan uitleg.",
+    "Koos je \"een reclametekst\"? Dan denk je dat de tekst iets verkoopt. Het doel is nadenken, geen verkopen."
+   ],
+   "uh": "Twee kanten.",
+   "ctx": "Opdracht: schrijf een tekst waarin je twee kanten van de discussie over huiswerk bespreekt en de lezer laat nadenken. Je neemt zelf geen standpunt in en je zet voor- en nadelen naast elkaar, zodat de lezer zelf kan afwegen."
+  },
+  {
+   "v": "Welk schrijfdoel past bij de opdracht?",
+   "o": [
+    "overtuigen",
+    "vermaken",
+    "informeren",
+    "ter overweging aanbieden"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 1,
+   "u": "Informeren: duidelijk uitleggen.",
+   "uo": [
+    "Koos je \"overtuigen\"? Dan denk je dat de tekst een standpunt verdedigt. Je hoeft geen mening te geven, dus overtuigen past niet.",
+    "Koos je \"vermaken\"? Dan denk je dat een schooltekst grappig moet zijn. Het doel is zakelijk, namelijk uitleggen.",
+    "Klopt: de lezers moeten na afloop precies weten wat mag.",
+    "Koos je \"ter overweging aanbieden\"? Dan denk je dat de lezer moet nadenken. Hij moet vooral weten wat de regels zijn, dus informeren."
+   ],
+   "uh": "Wat moet de lezer weten?",
+   "ctx": "Opdracht: leg aan alle leerlingen uit hoe de nieuwe regels voor telefoons werken. Je hoeft geen mening te geven en de lezers moeten na afloop precies weten wat wel en niet mag. De tekst komt op de website van de school te staan."
+  },
+  {
+   "v": "Wie zijn de lezers van dit artikel?",
+   "o": [
+    "docenten van de basisschool",
+    "wetenschappers die klimaat onderzoeken",
+    "kinderen van tien tot twaalf jaar",
+    "ouders van de kinderen in groep 8"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Lezersgroep: wie leest, hoe oud, wat weten ze.",
+   "uo": [
+    "Koos je \"docenten van de basisschool\"? Dan denk je dat docenten de lezers zijn. De opdracht noemt groep 8, dus de kinderen zijn de lezers.",
+    "Koos je \"wetenschappers die klimaat onderzoeken\"? Dan denk je dat de lezers deskundigen zijn. Het artikel is voor kinderen, geen deskundigen.",
+    "Klopt: groep 8 betekent kinderen van deze leeftijd.",
+    "Koos je \"ouders van de kinderen in groep 8\"? Dan denk je dat ouders de lezers zijn. Ouders staan er niet bij, de kinderen zijn de lezers."
+   ],
+   "uh": "Wie leest dit?",
+   "ctx": "Je schrijft een artikel over klimaatverandering voor groep 8 van de basisschool. Je eerste zin luidt: \"Antropogene broeikasgasemissies veroorzaken een toename van de gemiddelde mondiale temperatuur.\" De kinderen zijn tien tot twaalf jaar oud."
+  },
+  {
+   "v": "Welke fout zit in de eerste zin van de brief?",
+   "o": [
+    "het register is te informeel",
+    "de zin is te lang",
+    "er staat geen spelfout in",
+    "de brief heeft geen onderwerp"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Formele brief: beleefde aanhef en zakelijke taal.",
+   "uo": [
+    "Klopt: \"Hé meneer\" en \"ff\" passen niet bij een brief aan een wethouder.",
+    "Koos je \"de zin is te lang\"? Dan denk je dat de lengte het probleem is. De zin is kort, het probleem is de toon.",
+    "Koos je \"er staat geen spelfout in\"? Dan denk je dat een spelfout het probleem is. Er staat geen spelfout, de toon is het probleem.",
+    "Koos je \"de brief heeft geen onderwerp\"? Dan denk je dat het onderwerp ontbreekt. De zin noemt de sporthal, het gaat om de toon."
+   ],
+   "uh": "Past de toon?",
+   "ctx": "Je schrijft een brief aan de wethouder van onderwijs om een nieuwe sporthal voor je school te vragen. Je eerste zin luidt: \"Hé meneer, ik wou ff zeggen dat we echt een nieuwe sporthal nodig hebben.\" De wethouder kent jou niet."
+  },
+  {
+   "v": "Wat gaat er mis in de tekst van de leerling?",
+   "o": [
+    "de leerling heeft geen stelling",
+    "de tekst is te kort voor de opdracht",
+    "er staan geen feiten in de tekst",
+    "betoog in plaats van uiteenzetting"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Controleer of je de gevraagde tekstsoort schrijft.",
+   "uo": [
+    "Koos je \"de leerling heeft geen stelling\"? Dan denk je dat de stelling ontbreekt. Er is een stelling, maar de opdracht vroeg geen betoog.",
+    "Koos je \"de tekst is te kort voor de opdracht\"? Dan denk je dat de lengte het probleem is. Het probleem is het soort tekst, niet de lengte.",
+    "Koos je \"er staan geen feiten in de tekst\"? Dan denk je dat feiten ontbreken. Daar gaat het niet om, de tekstsoort klopt niet.",
+    "Klopt: de opdracht vroeg een uitleg zonder eigen mening."
+   ],
+   "uh": "Wat vraagt de opdracht?",
+   "ctx": "Je krijgt de opdracht een tekst te schrijven over de gevolgen van fastfood voor kinderen. Een leerling schrijft een betoog met de stelling dat fastfood verboden moet worden. De opdracht vroeg om een uitleg zonder eigen mening."
+  },
+  {
+   "v": "Hoe herken je in de opdracht dat een betoog wordt gevraagd?",
+   "o": [
+    "er staat dat het een schoolkrant is",
+    "standpunt kiezen en overtuigen",
+    "er staat dat het om telefoons gaat",
+    "er staat dat docenten meelezen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Standpunt en overtuigen: betoog.",
+   "uo": [
+    "Koos je \"er staat dat het een schoolkrant is\"? Dan denk je dat het medium de soort bepaalt. Het medium zegt niets, de opdracht zelf wel.",
+    "Klopt: standpunt en overtuigen horen bij een betoog.",
+    "Koos je \"er staat dat het om telefoons gaat\"? Dan denk je dat het onderwerp de soort bepaalt. Over telefoons kun je elke soort schrijven, het doel bepaalt.",
+    "Koos je \"er staat dat docenten meelezen\"? Dan denk je dat de lezers de soort bepalen. Ze bepalen je toon, niet de soort."
+   ],
+   "uh": "Wat moet je bereiken?",
+   "ctx": "Opdracht: schrijf een tekst voor de schoolkrant over het gebruik van mobiele telefoons in de les. Je mag zelf een standpunt kiezen en je wilt de lezers van dat standpunt overtuigen. Je lezers zijn leerlingen en docenten van de school."
+  },
+  {
+   "v": "Welke eigenschappen van de ouders bepalen je tekst?",
+   "o": [
+    "dat ze veel verdienen en dus meer weten",
+    "dat ze graag lange teksten lezen",
+    "dat ze het onderwijs goed kennen",
+    "weinig kennis en tijd"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 2,
+   "u": "Lezersgroep: kennis, belangstelling, tijd.",
+   "uo": [
+    "Koos je \"dat ze veel verdienen en dus meer weten\"? Dan denk je dat inkomen de tekst bepaalt. Het gaat om kennis, zorgen en tijd, niet om inkomen.",
+    "Koos je \"dat ze graag lange teksten lezen\"? Dan denk je dat ze veel tijd hebben. De opdracht zegt dat ze weinig tijd hebben, dus kort schrijven.",
+    "Koos je \"dat ze het onderwijs goed kennen\"? Dan denk je dat ze veel weten. De opdracht zegt dat ze het onderwijs niet goed kennen, dus leg uit.",
+    "Klopt: je schrijft kort, duidelijk en geruststellend."
+   ],
+   "uh": "Wie leest en wat weet die?",
+   "ctx": "Je schrijft een tekst voor ouders over de studiekeuze van hun kind. De ouders kennen het onderwijs niet goed, maken zich zorgen over de keuze en hebben weinig tijd om een lange tekst te lezen."
+  },
+  {
+   "v": "Welke inhoud kies je voor deze ouders?",
+   "o": [
+    "alle details van elke opleiding op een rij",
+    "korte uitleg zonder vakjargon",
+    "vooral vakjargon om serieus over te komen",
+    "alleen een lijst met namen van scholen"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Inhoud afstemmen: selecteren en duidelijk uitleggen.",
+   "uo": [
+    "Koos je \"alle details van elke opleiding op een rij\"? Dan denk je dat meer informatie beter is. De ouders hebben weinig tijd, dus je moet selecteren.",
+    "Klopt: duidelijk, kort en zonder moeilijke woorden.",
+    "Koos je \"vooral vakjargon om serieus over te komen\"? Dan denk je dat jargon serieus klinkt. De ouders kennen het onderwijs niet, dus het schrikt af.",
+    "Koos je \"alleen een lijst met namen van scholen\"? Dan denk je dat een lijst genoeg is. Zonder uitleg weten ze niet wat te kiezen, dus het helpt niet."
+   ],
+   "uh": "Wat hebben ze nodig?",
+   "ctx": "Je schrijft een tekst voor ouders over de studiekeuze van hun kind. De ouders kennen het onderwijs niet goed, maken zich zorgen over de keuze en hebben weinig tijd om een lange tekst te lezen."
+  },
+  {
+   "v": "Welke aanpassing maakt de eerste zin geschikt voor groep 8?",
+   "o": [
+    "\"De emissies nemen toe.\"",
+    "\"Broeikasgassen veroorzaken een stijging van de temperatuur.\"",
+    "\"Door het gebruik van olie en gas wordt de aarde warmer.\"",
+    "\"Het is een heel ingewikkeld probleem.\""
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Gewone woorden en korte zinnen bij kinderen.",
+   "uo": [
+    "Koos je \"De emissies nemen toe.\"? Dan denk je dat korter altijd beter is. De zin wordt wel korter, maar blijft abstract voor kinderen.",
+    "Koos je \"Broeikasgassen veroorzaken een stijging van de...\"? Dan denk je dat dit eenvoudiger is. Het blijft vaktaal, dus het past niet bij kinderen.",
+    "Klopt: korte zin, gewone woorden, concrete oorzaak.",
+    "Koos je \"Het is een heel ingewikkeld probleem.\"? Dan denk je dat dit bij kinderen past. De zin legt niets uit, dus het helpt niet."
+   ],
+   "uh": "Eenvoudig en concreet.",
+   "ctx": "Je schrijft een artikel over klimaatverandering voor groep 8 van de basisschool. Je eerste zin luidt: \"Antropogene broeikasgasemissies veroorzaken een toename van de gemiddelde mondiale temperatuur.\" De kinderen zijn tien tot twaalf jaar oud."
+  },
+  {
+   "v": "Welk register past bij een brief aan een wethouder?",
+   "o": [
+    "formeel, met een beleefde aanhef",
+    "informeel, zoals bij vrienden",
+    "zo moeilijk mogelijk, met veel jargon",
+    "kort en zonder aanhef"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Formele brief: aanhef, beleefde en zakelijke taal.",
+   "uo": [
+    "Klopt: de wethouder kent je niet en verwacht een zakelijke toon.",
+    "Koos je \"informeel, zoals bij vrienden\"? Dan denk je dat een brief altijd vriendelijk-informeel mag. Een wethouder verwacht een formele toon, dus informeel past niet.",
+    "Koos je \"zo moeilijk mogelijk, met veel jargon\"? Dan denk je dat moeilijk serieus is. Het wordt onduidelijk, dus het schaadt je boodschap.",
+    "Koos je \"kort en zonder aanhef\"? Dan denk je dat een aanhef overbodig is. Een formele brief begint met een aanhef, zoals Geachte wethouder."
+   ],
+   "uh": "Wie is de lezer?",
+   "ctx": "Je schrijft een brief aan de wethouder van onderwijs om een nieuwe sporthal voor je school te vragen. Je eerste zin luidt: \"Hé meneer, ik wou ff zeggen dat we echt een nieuwe sporthal nodig hebben.\" De wethouder kent jou niet."
+  },
+  {
+   "v": "Waarom is deze tekst geen betoog?",
+   "o": [
+    "er is geen standpunt",
+    "omdat er voor- en nadelen in staan",
+    "omdat het over huiswerk gaat",
+    "omdat het te lang is"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 0,
+   "u": "Geen standpunt: geen betoog.",
+   "uo": [
+    "Klopt: een betoog verdedigt een standpunt; hier blijft de keuze aan de lezer.",
+    "Koos je \"omdat er voor- en nadelen in staan\"? Dan denk je dat voor- en nadelen alleen bij een beschouwing horen. Ook een betoog noemt ze, maar kiest dan een kant.",
+    "Koos je \"omdat het over huiswerk gaat\"? Dan denk je dat het onderwerp de soort bepaalt. Het gaat om het doel, niet om het onderwerp.",
+    "Koos je \"omdat het te lang is\"? Dan denk je dat de lengte de soort bepaalt. Lengte zegt niets, het doel bepaalt."
+   ],
+   "uh": "Kiest de schrijver?",
+   "ctx": "Opdracht: schrijf een tekst waarin je twee kanten van de discussie over huiswerk bespreekt en de lezer laat nadenken. Je neemt zelf geen standpunt in en je zet voor- en nadelen naast elkaar, zodat de lezer zelf kan afwegen."
+  },
+  {
+   "v": "Welk doel heeft deze tekst?",
+   "o": [
+    "de lezer overtuigen van één kant",
+    "de lezer vermaken",
+    "de lezer laten nadenken",
+    "de lezer uitleg geven over huiswerkregels"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Beschouwing: ter overweging aanbieden.",
+   "uo": [
+    "Koos je \"de lezer overtuigen van één kant\"? Dan denk je dat de schrijver wil winnen. Hij kiest geen kant, dus het doel is nadenken.",
+    "Koos je \"de lezer vermaken\"? Dan denk je dat het doel plezier is. Het is een zakelijke afweging, geen amusement.",
+    "Klopt: de schrijver biedt opvattingen ter overweging aan.",
+    "Koos je \"de lezer uitleg geven over huiswerkregels\"? Dan denk je dat het doel informeren is. De tekst zet opvattingen naast elkaar, meer dan uitleg."
+   ],
+   "uh": "Wat doet de lezer?",
+   "ctx": "Opdracht: schrijf een tekst waarin je twee kanten van de discussie over huiswerk bespreekt en de lezer laat nadenken. Je neemt zelf geen standpunt in en je zet voor- en nadelen naast elkaar, zodat de lezer zelf kan afwegen."
+  },
+  {
+   "v": "Welke inhoud hoort in een betoog voor de schoolkrant?",
+   "o": [
+    "alleen een lijst met feiten over telefoons",
+    "stelling, argumenten, tegenwerping",
+    "alleen een persoonlijk verhaal over je telefoon",
+    "alleen de nadelen van telefoons"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Betoog: stelling, argumenten, tegenwerping, conclusie.",
+   "uo": [
+    "Koos je \"alleen een lijst met feiten over telefoons\"? Dan denk je dat een feitenlijst overtuigt. Zonder stelling is het geen betoog, dus het mist de kern.",
+    "Klopt: zo bouw je een overtuigend betoog met een stelling en een reactie op de tegenpartij.",
+    "Koos je \"alleen een persoonlijk verhaal over je telefoon\"? Dan denk je dat een anekdote genoeg is. Een betoog vraagt argumenten, niet alleen een verhaal.",
+    "Koos je \"alleen de nadelen van telefoons\"? Dan denk je dat eenzijdig genoeg is. Een betoog reageert ook op de tegenpartij, dus je mist een deel."
+   ],
+   "uh": "Wat hoort erin?",
+   "ctx": "Opdracht: schrijf een tekst voor de schoolkrant over het gebruik van mobiele telefoons in de les. Je mag zelf een standpunt kiezen en je wilt de lezers van dat standpunt overtuigen. Je lezers zijn leerlingen en docenten van de school."
+  },
+  {
+   "v": "Welke fout maakt de schrijver van dit artikel?",
+   "o": [
+    "de zin is veel te kort voor kinderen",
+    "er staat helemaal geen onderwerp in",
+    "de zin is veel te informeel voor kinderen",
+    "de taal is te moeilijk"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 5,
+   "u": "Lezersgroep vergeten: te moeilijke taal.",
+   "uo": [
+    "Koos je \"de zin is veel te kort voor kinderen\"? Dan denk je dat de zin te kort is. De zin is lang, het probleem is de moeilijke taal.",
+    "Koos je \"er staat helemaal geen onderwerp in\"? Dan denk je dat het onderwerp ontbreekt. Het gaat over klimaat, maar de taal is te moeilijk.",
+    "Koos je \"de zin is veel te informeel voor kinderen\"? Dan denk je dat het te los is. De zin is juist te formeel, te moeilijk voor kinderen.",
+    "Klopt: vaktaal past niet bij tien- tot twaalfjarigen."
+   ],
+   "uh": "Passen de woorden?",
+   "ctx": "Je schrijft een artikel over klimaatverandering voor groep 8 van de basisschool. Je eerste zin luidt: \"Antropogene broeikasgasemissies veroorzaken een toename van de gemiddelde mondiale temperatuur.\" De kinderen zijn tien tot twaalf jaar oud."
+  },
+  {
+   "v": "Wat betekent het dat leerlingen en docenten de lezers zijn?",
+   "o": [
+    "je schrijft alleen voor de docenten in de school",
+    "je taal moet voor beide groepen passen",
+    "je schrijft alleen voor de leerlingen",
+    "je gebruikt zoveel mogelijk jongerentaal"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Gemengde lezersgroep: toegankelijk en passend voor beide.",
+   "uo": [
+    "Koos je \"je schrijft alleen voor de docenten in de school\"? Dan denk je dat docenten belangrijker zijn. Je schrijft voor beide groepen, dus je moet allebei bedienen.",
+    "Klopt: je kiest een toon die bij allebei past.",
+    "Koos je \"je schrijft alleen voor de leerlingen\"? Dan denk je dat leerlingen genoeg zijn. Docenten lezen ook mee, dus de toon moet breed passen.",
+    "Koos je \"je gebruikt zoveel mogelijk jongerentaal\"? Dan denk je dat leerlingen jongerentaal verwachten. Docenten lezen ook mee, dus het is te informeel."
+   ],
+   "uh": "Wie leest mee?",
+   "ctx": "Opdracht: schrijf een tekst voor de schoolkrant over het gebruik van mobiele telefoons in de les. Je mag zelf een standpunt kiezen en je wilt de lezers van dat standpunt overtuigen. Je lezers zijn leerlingen en docenten van de school."
+  },
+  {
+   "v": "Welke aanpassing maakt van de tekst een goede uiteenzetting?",
+   "o": [
+    "stelling schrappen, neutraal uitleggen",
+    "een veel sterkere stelling toevoegen aan de tekst",
+    "de tekst korter maken en verder niets aanpassen",
+    "een oproep aan de lezer toevoegen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Uiteenzetting: geen standpunt, wel informatie.",
+   "uo": [
+    "Klopt: een uiteenzetting informeert zonder standpunt.",
+    "Koos je \"een veel sterkere stelling toevoegen aan de tekst\"? Dan denk je dat meer overtuigen beter is. De opdracht vroeg uitleg, dus een sterker standpunt past niet.",
+    "Koos je \"de tekst korter maken en verder niets aanpassen\"? Dan denk je dat de lengte het probleem is. Het gaat om de soort, dus korter lost niets op.",
+    "Koos je \"een oproep aan de lezer toevoegen\"? Dan denk je dat een oproep past. Een oproep hoort bij een betoog, niet bij een uiteenzetting."
+   ],
+   "uh": "Standpunt eruit.",
+   "ctx": "Je krijgt de opdracht een tekst te schrijven over de gevolgen van fastfood voor kinderen. Een leerling schrijft een betoog met de stelling dat fastfood verboden moet worden. De opdracht vroeg om een uitleg zonder eigen mening."
+  },
+  {
+   "v": "Welke formulering past bij het doel van deze tekst?",
+   "o": [
+    "\"Deze regels zijn gewoon belachelijk en moeten helemaal weg.\"",
+    "\"Telefoons zijn een plaag, dus gelukkig is er nu een regel.\"",
+    "\"Misschien zijn de regels goed, misschien ook niet.\"",
+    "\"De regels werken zo: de telefoon blijft in je tas.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Informerende tekst: duidelijk en zonder mening.",
+   "uo": [
+    "Koos je \"Deze regels zijn gewoon belachelijk en moeten...\"? Dan denk je dat een mening past. De opdracht vraagt uitleg, dus een mening hoort er niet in.",
+    "Koos je \"Telefoons zijn een plaag, dus gelukkig is er nu een...\"? Dan denk je dat een oordeel past. De opdracht vraagt neutrale uitleg, dus een oordeel past niet.",
+    "Koos je \"Misschien zijn de regels goed, misschien ook niet.\"? Dan denk je dat twijfel past. De opdracht vraagt duidelijkheid, dus twijfel past niet.",
+    "Klopt: het is duidelijk, zakelijk en informerend."
+   ],
+   "uh": "Uitleggen, niet oordelen.",
+   "ctx": "Opdracht: leg aan alle leerlingen uit hoe de nieuwe regels voor telefoons werken. Je hoeft geen mening te geven en de lezers moeten na afloop precies weten wat wel en niet mag. De tekst komt op de website van de school te staan."
+  },
+  {
+   "v": "Welke openingszin past het best bij deze ouders?",
+   "o": [
+    "\"Hierbij een uitgebreid overzicht van alle opleidingen in Nederland.\"",
+    "\"Studiekeuze is een complex proces met veel variabelen en gevolgen.\"",
+    "\"U maakt zich zorgen; deze tekst helpt u op weg.\"",
+    "\"Ouders moeten hun kind laten kiezen.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Begin bij de lezer: begrip en een belofte van hulp.",
+   "uo": [
+    "Koos je \"Hierbij een uitgebreid overzicht van alle...\"? Dan denk je dat volledigheid helpt. De ouders hebben weinig tijd, dus het schrikt af.",
+    "Koos je \"Studiekeuze is een complex proces met veel...\"? Dan denk je dat een deskundig begin past. Het is abstract en onpersoonlijk, dus het bereikt de ouders niet.",
+    "Klopt: de zin is persoonlijk, begripvol en duidelijk voor deze ouders.",
+    "Koos je \"Ouders moeten hun kind laten kiezen.\"? Dan denk je dat een bevel past. Het geeft geen uitleg, en het klinkt belerend."
+   ],
+   "uh": "Wie lees je?",
+   "ctx": "Je schrijft een tekst voor ouders over de studiekeuze van hun kind. De ouders kennen het onderwijs niet goed, maken zich zorgen over de keuze en hebben weinig tijd om een lange tekst te lezen."
+  },
+  {
+   "v": "Welke volgorde van informatie past bij deze ouders?",
+   "o": [
+    "eerst alle uitzonderingen en details, dan de keuze",
+    "eerst de geschiedenis van het onderwijs",
+    "eerst de keuze, dan opties, dan advies",
+    "alleen een advies zonder uitleg"
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Volgorde: kern, opties, advies.",
+   "uo": [
+    "Koos je \"eerst alle uitzonderingen en details, dan de keuze\"? Dan denk je dat details eerst kunnen. De ouders hebben weinig tijd, dus de kern hoort vooraan.",
+    "Koos je \"eerst de geschiedenis van het onderwijs\"? Dan denk je dat achtergrond eerst moet. De ouders willen weten wat ze moeten doen, dus de achtergrond is bijzaak.",
+    "Klopt: van kern naar uitwerking naar handelen, kort en duidelijk.",
+    "Koos je \"alleen een advies zonder uitleg\"? Dan denk je dat een advies volstaat. Zonder uitleg begrijpen ze het niet, dus de opties ontbreken."
+   ],
+   "uh": "Wat eerst?",
+   "ctx": "Je schrijft een tekst voor ouders over de studiekeuze van hun kind. De ouders kennen het onderwijs niet goed, maken zich zorgen over de keuze en hebben weinig tijd om een lange tekst te lezen."
+  },
+  {
+   "v": "Welke versie van de eerste zin past bij de brief?",
+   "o": [
+    "\"Hallo wethouder, wat een gedoe met die sporthal toch.\"",
+    "\"Beste meneer, ik wou ff vragen of u een sporthal heeft.\"",
+    "\"Wij eisen een nieuwe sporthal en wel meteen.\"",
+    "\"Geachte wethouder, ik schrijf u over een nieuwe sporthal.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Formele aanhef en beleefd doel noemen.",
+   "uo": [
+    "Koos je \"Hallo wethouder, wat een gedoe met die sporthal...\"? Dan denk je dat dit vriendelijk is. Het is informeel en negatief, dus het past niet.",
+    "Koos je \"Beste meneer, ik wou ff vragen of u een sporthal...\"? Dan denk je dat dit netjes is. \"Ff\" en \"wou\" zijn spreektaal, en de vraag is onduidelijk.",
+    "Koos je \"Wij eisen een nieuwe sporthal en wel meteen.\"? Dan denk je dat een eis sterk is. Een eis klinkt onbeleefd, dus de wethouder wordt boos.",
+    "Klopt: formeel, beleefd en met het doel van de brief."
+   ],
+   "uh": "Beleefd en zakelijk.",
+   "ctx": "Je schrijft een brief aan de wethouder van onderwijs om een nieuwe sporthal voor je school te vragen. Je eerste zin luidt: \"Hé meneer, ik wou ff zeggen dat we echt een nieuwe sporthal nodig hebben.\" De wethouder kent jou niet."
+  },
+  {
+   "v": "Welke woordkeus past bij groep 8?",
+   "o": [
+    "\"warmer worden\" en \"uitstoot\"",
+    "\"mondiale opwarming\" en \"antropogeen\"",
+    "\"een stijging van gemiddelde temperaturen\"",
+    "\"emissiereductie\" en \"broeikaseffect\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Concrete, alledaagse woorden voor kinderen.",
+   "uo": [
+    "Klopt: alledaagse woorden met een concreet beeld.",
+    "Koos je \"mondiale opwarming en antropogeen\"? Dan denk je dat vaktaal serieus klinkt. Kinderen kennen die woorden niet, dus het is te moeilijk.",
+    "Koos je \"een stijging van gemiddelde temperaturen\"? Dan denk je dat dit eenvoudig is. Het blijft abstract, en het is niet voor kinderen geschreven.",
+    "Koos je \"emissiereductie en broeikaseffect\"? Dan denk je dat deze begrippen bekend zijn. Zonder uitleg begrijpen kinderen ze niet, dus je moet ze uitleggen."
+   ],
+   "uh": "Zo zeg je het tegen een kind.",
+   "ctx": "Je schrijft een artikel over klimaatverandering voor groep 8 van de basisschool. Je eerste zin luidt: \"Antropogene broeikasgasemissies veroorzaken een toename van de gemiddelde mondiale temperatuur.\" De kinderen zijn tien tot twaalf jaar oud."
+  },
+  {
+   "v": "Welk effect heeft \"Hé meneer, ik wou ff zeggen\" op de wethouder?",
+   "o": [
+    "de wethouder vindt de brief juist leuk",
+    "het wekt de indruk van onbeleefdheid",
+    "er verandert niets aan het effect",
+    "de wethouder zegt meteen ja"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Register bepaalt hoe serieus de lezer je neemt.",
+   "uo": [
+    "Koos je \"de wethouder vindt de brief juist leuk\"? Dan denk je dat informeel altijd sympathiek is. Bij een formeel verzoek werkt het averechts, dus het schaadt.",
+    "Klopt: een verkeerd register schaadt de boodschap.",
+    "Koos je \"er verandert niets aan het effect\"? Dan denk je dat de toon niets uitmaakt. De toon bepaalt hoe serieus de lezer je neemt, dus het maakt wel uit.",
+    "Koos je \"de wethouder zegt meteen ja\"? Dan denk je dat informeel overtuigt. Het kan het tegendeel veroorzaken, dus een snelle ja is onwaarschijnlijk."
+   ],
+   "uh": "Hoe komt het over?",
+   "ctx": "Je schrijft een brief aan de wethouder van onderwijs om een nieuwe sporthal voor je school te vragen. Je eerste zin luidt: \"Hé meneer, ik wou ff zeggen dat we echt een nieuwe sporthal nodig hebben.\" De wethouder kent jou niet."
+  },
+  {
+   "v": "Welke stelling past bij een betoog voor de schoolkrant?",
+   "o": [
+    "\"Telefoons zijn apparaten met een scherm.\"",
+    "\"Vindt u dat telefoons mogen in de les?\"",
+    "\"Wat zijn de voordelen en nadelen van telefoons?\"",
+    "\"Telefoons horen in de les verboden te zijn.\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Stelling: een standpunt dat je verdedigt.",
+   "uo": [
+    "Koos je \"Telefoons zijn apparaten met een scherm.\"? Dan denk je dat een feit een stelling is. Een stelling is een standpunt, geen beschrijving.",
+    "Koos je \"Vindt u dat telefoons mogen in de les?\"? Dan denk je dat een vraag een stelling is. Een stelling is een bewering, geen vraag.",
+    "Koos je \"Wat zijn de voordelen en nadelen van telefoons?\"? Dan denk je dat dit een stelling is. Het is een vraag voor een beschouwing, geen standpunt.",
+    "Klopt: het is een standpunt dat je kunt verdedigen."
+   ],
+   "uh": "Standpunt of feit?",
+   "ctx": "Opdracht: schrijf een tekst voor de schoolkrant over het gebruik van mobiele telefoons in de les. Je mag zelf een standpunt kiezen en je wilt de lezers van dat standpunt overtuigen. Je lezers zijn leerlingen en docenten van de school."
+  },
+  {
+   "v": "Welke formulering laat zien dat de schrijver geen standpunt kiest?",
+   "o": [
+    "\"Voorstanders zeggen ..., tegenstanders ...\"",
+    "\"Huiswerk moet worden afgeschaft, punt uit.\"",
+    "\"Huiswerk is het beste wat er bestaat.\"",
+    "\"Ik vind dat iedereen hierin gelijk heeft.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Beschouwing: beide kanten noemen, zonder keuze.",
+   "uo": [
+    "Klopt: beide kanten krijgen aandacht zonder keuze.",
+    "Koos je \"Huiswerk moet worden afgeschaft, punt uit.\"? Dan denk je dat dit een neutrale zin is. Het is een standpunt, dus het past niet bij een beschouwing.",
+    "Koos je \"Huiswerk is het beste wat er bestaat.\"? Dan denk je dat dit een neutrale zin is. Het is een oordeel, dus het kiest een kant.",
+    "Koos je \"Ik vind dat iedereen hierin gelijk heeft.\"? Dan denk je dat deze zin neutraal is. Hij weigert een afweging, en geeft geen kanten weer."
+   ],
+   "uh": "Wie zegt wat?",
+   "ctx": "Opdracht: schrijf een tekst waarin je twee kanten van de discussie over huiswerk bespreekt en de lezer laat nadenken. Je neemt zelf geen standpunt in en je zet voor- en nadelen naast elkaar, zodat de lezer zelf kan afwegen."
+  },
+  {
+   "v": "Welke inhoud hoort in een uiteenzetting over fastfood?",
+   "o": [
+    "een oproep tot een verbod op fastfood",
+    "gevolgen voor gezondheid met feiten",
+    "een mening over wat kinderen mogen eten",
+    "een verhaal over je eigen fastfoodbezoek"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 3,
+   "u": "Uiteenzetting: feiten, uitleg, geen mening.",
+   "uo": [
+    "Koos je \"een oproep tot een verbod op fastfood\"? Dan denk je dat een oproep past. Een oproep hoort bij een betoog, dus het past niet.",
+    "Klopt: een uiteenzetting legt uit en baseert zich op feiten in plaats van meningen.",
+    "Koos je \"een mening over wat kinderen mogen eten\"? Dan denk je dat een mening past. De opdracht vroeg geen mening, dus het past niet.",
+    "Koos je \"een verhaal over je eigen fastfoodbezoek\"? Dan denk je dat een anekdote volstaat. Een uiteenzetting vraagt feiten, geen persoonlijk verhaal."
+   ],
+   "uh": "Wat weet je zeker?",
+   "ctx": "Je krijgt de opdracht een tekst te schrijven over de gevolgen van fastfood voor kinderen. Een leerling schrijft een betoog met de stelling dat fastfood verboden moet worden. De opdracht vroeg om een uitleg zonder eigen mening."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Opdracht: schrijf een tekst voor de schoolkrant over het gebruik van mobiele telefoons in de les. Je mag zelf een standpunt kiezen en je wilt de lezers van dat standpunt overtuigen. Je lezers zijn leerlingen en docenten van de school.",
+   "v": "Welke tekstsoort wordt gevraagd en waaraan zie je dat? Noem ook je schrijfdoel.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een betoog (1p). Je kiest zelf een standpunt en wilt de lezers overtuigen (1p). Schrijfdoel: overtuigen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Opdracht: leg aan alle leerlingen uit hoe de nieuwe regels voor telefoons werken. Je hoeft geen mening te geven en de lezers moeten na afloop precies weten wat wel en niet mag. De tekst komt op de website van de school te staan.",
+   "v": "Welke tekstsoort past en wat laat je weg?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Een uiteenzetting (1p). Je laat je eigen mening weg (1p) en legt alleen uit hoe de regels werken (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Opdracht: schrijf een tekst waarin je twee kanten van de discussie over huiswerk bespreekt en de lezer laat nadenken. Je neemt zelf geen standpunt in en je zet voor- en nadelen naast elkaar, zodat de lezer zelf kan afwegen.",
+   "v": "Leg uit waarom dit een beschouwing is en geef een passende openingszin.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "De opdracht vraagt twee kanten zonder standpunt (1p) en de lezer laten nadenken (1p). Openingszin, bijvoorbeeld: Over huiswerk lopen de meningen uiteen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je schrijft een artikel over klimaatverandering voor groep 8 van de basisschool. Je eerste zin luidt: \"Antropogene broeikasgasemissies veroorzaken een toename van de gemiddelde mondiale temperatuur.\" De kinderen zijn tien tot twaalf jaar oud.",
+   "v": "Herschrijf de eerste zin voor groep 8 en benoem twee aanpassingen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: Door olie en gas te gebruiken wordt de aarde warmer (1p). Aanpassingen: gewone woorden in plaats van vaktaal (1p) en een kortere zin met een concrete oorzaak (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Je schrijft een brief aan de wethouder van onderwijs om een nieuwe sporthal voor je school te vragen. Je eerste zin luidt: \"Hé meneer, ik wou ff zeggen dat we echt een nieuwe sporthal nodig hebben.\" De wethouder kent jou niet.",
+   "v": "Schrijf een formele eerste zin voor de brief en noem twee kenmerken van het register.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: Geachte wethouder, ik schrijf u om een nieuwe sporthal voor onze school te vragen (1p). Kenmerken: beleefde aanhef (1p) en zakelijke taal zonder spreektaal (1p)."
+  }
+ ]
+}
