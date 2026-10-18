@@ -19,7 +19,7 @@
    leerdoelen van het domein af, vink dan ook het domein af.
 4. Bij een rode poort: niets pushen, wél melden.
 
-> Voortgang: **58 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4). Werk dit getal bij bij elke afronding.
+> Voortgang: **59 leerdoelen op v2** (havo bi.M3, nl.A1 t/m nl.A7, nl.B1 t/m nl.B5, nl.C1 t/m nl.C6, nl.D1 t/m nl.D6, nl.F1 t/m nl.F6, en.A1, en.A2, en.A3, en.A4, en.A5, en.A6, en.A7, en.A8, en.B1, en.B2, en.B3, en.B4, en.B5, en.B6, en.B7, en.B8, vwo nl.A1, vwo nl.A2, vwo nl.A3, vwo nl.A4, vwo nl.A5, vwo nl.A6, vwo nl.A7, vwo nl.B1, vwo nl.B2, vwo nl.B3, vwo nl.B4, vwo nl.B5). Werk dit getal bij bij elke afronding.
 > Oude stand (v1, domeinniveau): 7/220 domeinen; die tellen niet meer als af.
 >
 > **Omvang (okt 2026):** 220 domeinen (havo 59, vwo 84, vmbo 77) × gemiddeld ~6 leerdoelen
@@ -74,12 +74,12 @@
   - [x] A5 · nl.A.5 Standpunten, argumenten en argumentatieschema's herkennen · 26 vragen (R1 7, R2 10, R3 9, 4 eigen teksten van 510-530 tekens met genummerde zinnen), 12 begrippen, 4 figuren (structuren, feitelijk of waarderend, zes schema's, analyse in stappen), geen clip
   - [x] A6 · nl.A.6 Een betoog beoordelen en drogredenen herkennen · 27 vragen (R1 7, R2 10, R3 10, 4 eigen teksten van 515-530 tekens met genummerde zinnen), 12 begrippen, 4 figuren (zes criteria, drogreden per schema, cirkelredenering en persoonlijke aanval, drie stappen), geen clip
   - [x] A7 · nl.A.7 Een tekst samenvatten: hoofd- en ondergeschikte uitspraken · 27 vragen (R1 7, R2 10, R3 10, 4 eigen teksten van 540-670 tekens met genummerde zinnen), 12 begrippen, 4 figuren (gewicht van uitspraken, wat blijft en vervalt, herordenen, samenvatting beoordelen), geen clip
-- [ ] **VWO · Nederlands** (`nl`) · domein B — Mondeling
+- [x] **VWO · Nederlands** (`nl`) · domein B — Mondeling (5 van 5 leerdoelen op v2)
   - [x] B1 · nl.B.1 Informatie verzamelen, vergelijken en verwerken · 27 vragen (R1 7, R2 10, R3 10, 6 eigen bronnenscenario's van 280-450 tekens), 12 begrippen, 4 figuren (vier bronvragen, bronnen wegen, van artikel naar kernpunten, citaat parafrase plagiaat), geen clip
   - [x] B2 · nl.B.2 Doel, publiek en gespreksvorm bepalen en afstemmen · 27 vragen (R1 7, R2 10, R3 10, 6 eigen spreeksituaties van 230-280 tekens), 12 begrippen, 4 figuren (drie gespreksvormen, publiek analyseren, register op een schaal, van opdracht naar plan), geen clip
   - [x] B3 · nl.B.3 Een voordracht opbouwen en presenteren · 27 vragen (R1 7, R2 10, R3 10, 6 eigen spreekfragmenten van 190-380 tekens), 12 begrippen, 4 figuren (opbouw als balk, inleiding in drie stappen, kern met overgangen en rode draad, presenteren), geen clip
   - [x] B4 · nl.B.4 Deelnemen aan een discussie of debat · 27 vragen (R1 7, R2 10, R3 10, 7 eigen debatfragmenten van 190-300 tekens), 12 begrippen, 4 figuren (opbouw argument, weerleggen in stappen, fout en goed, verloop van een debat), geen clip
-  - [ ] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers
+  - [x] B5 · nl.B.5 Adequaat reageren op luisteraars en deelnemers · 27 vragen (R1 7, R2 10, R3 10, 7 eigen gespreksfragmenten van 190-260 tekens), 12 begrippen, 4 figuren (actief luisteren, vraag beantwoorden, omgaan met kritiek, feedback in drie delen), geen clip
 - [ ] **VWO · Nederlands** (`nl`) · domein C — Schrijfvaardigheid
 - [ ] **VWO · Nederlands** (`nl`) · domein D — Argumentatieve vaardigheden
 - [ ] **VWO · Nederlands** (`nl`) · domein E — Literatuur
