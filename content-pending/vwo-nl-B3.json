@@ -1,0 +1,688 @@
+{
+ "id": "B3",
+ "lo": "nl.B.3",
+ "gs": 2,
+ "naam": "Een voordracht opbouwen en presenteren",
+ "beschrijving": "Je bouwt een voordracht op met inleiding, kern en slot, verbindt de punten met overgangen en een rode draad, en presenteert met stem, houding, oogcontact en passende dia's.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Opbouw: inleiding, kern en slot",
+  "De inleiding",
+  "Kern, overgangen en rode draad",
+  "Het slot",
+  "Presenteren: stem, houding en dia's",
+  "Valkuilen: voorlezen, tekst op dia's en geen slot"
+ ],
+ "sam": "Een voordracht heeft een inleiding, een kern en een slot. De inleiding trekt aandacht, noemt het onderwerp en kondigt de opbouw aan. De kern bevat drie of vier punten, verbonden door overgangen en een rode draad. Het slot vat samen en geeft een boodschap mee, zonder nieuwe argumenten. Bij het presenteren spreek je vrij, kijk je naar je publiek, varieer je tempo en stem en gebruik je dia's met weinig tekst.",
+ "begrippen": [
+  {
+   "t": "Inleiding",
+   "d": "Het begin van een voordracht: aandacht trekken, onderwerp noemen en de opbouw aankondigen."
+  },
+  {
+   "t": "Kern",
+   "d": "Het middendeel met de belangrijkste punten, onderbouwd met argumenten en voorbeelden."
+  },
+  {
+   "t": "Slot",
+   "d": "Het einde van een voordracht: samenvatten en een boodschap meegeven."
+  },
+  {
+   "t": "Aandachtstrekker",
+   "d": "Een beeld, vraag of stelling waarmee je de aandacht wekt."
+  },
+  {
+   "t": "Overgang",
+   "d": "Een zin die het ene punt met het volgende verbindt."
+  },
+  {
+   "t": "Rode draad",
+   "d": "Het idee of de vraag die door de hele voordracht terugkomt."
+  },
+  {
+   "t": "Kernpunt",
+   "d": "Een hoofdpunt dat je in de kern uitwerkt."
+  },
+  {
+   "t": "Boodschap",
+   "d": "Wat het publiek na afloop moet onthouden of doen."
+  },
+  {
+   "t": "Oogcontact",
+   "d": "Het publiek aankijken terwijl je spreekt."
+  },
+  {
+   "t": "Tempo",
+   "d": "De snelheid waarmee je spreekt, afwisselend met pauzes."
+  },
+  {
+   "t": "Dia",
+   "d": "Een beeld met weinig tekst dat je verhaal ondersteunt."
+  },
+  {
+   "t": "Trefwoorden",
+   "d": "Korte steekwoorden op een kaartje of dia om je te helpen vrij te spreken."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Uit welke drie delen bestaat een voordracht?",
+   "o": [
+    "aanhef, uitleg en vragen",
+    "inleiding, kern en slot",
+    "titel, tekst en bronnen",
+    "begin, midden en lege ruimte"
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Opbouw: inleiding, kern, slot.",
+   "uo": [
+    "Koos je \"aanhef, uitleg en vragen\"? Dan denk je dat een voordracht uit uitleg en vragen bestaat. Vragen kunnen volgen, maar het slot ontbreekt.",
+    "Klopt: een voordracht begint met een inleiding, heeft een kern met de punten en eindigt met een slot.",
+    "Koos je \"titel, tekst en bronnen\"? Dan denk je dat het de onderdelen van een tekst zijn. Een voordracht is gesproken, dus de opbouw is anders.",
+    "Koos je \"begin, midden en lege ruimte\"? Dan denk je dat het een figuurlijk beeld is. De drie delen zijn de inleiding, de kern en het slot."
+   ],
+   "uh": "Begin, midden, einde."
+  },
+  {
+   "v": "Welke opening trekt de aandacht het sterkst?",
+   "o": [
+    "opening A, omdat zij alles netjes noemt",
+    "geen van beide, want een opening trekt nooit aandacht",
+    "opening A, omdat ze begint met een groet",
+    "opening B, met een beeld"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Aandachtstrekker: een beeld, vraag of stelling.",
+   "uo": [
+    "Koos je \"opening A, omdat zij alles netjes noemt\"? Dan denk je dat netjes noemen aandacht trekt. Opening A informeert alleen, de aandacht trekt ze niet.",
+    "Koos je \"geen van beide, want een opening trekt nooit...\"? Dan denk je dat het niet kan. Een goede opening trekt juist aandacht, bijvoorbeeld met een beeld of vraag.",
+    "Koos je \"opening A, omdat ze begint met een groet\"? Dan denk je dat een groet de aandacht trekt. Een groet is beleefd, maar niet bijzonder.",
+    "Klopt: een aandachtstrekker als \"stel je voor\" wekt belangstelling voordat het onderwerp wordt genoemd."
+   ],
+   "uh": "Wat boeit?",
+   "ctx": "Opening A: \"Goedemorgen. Mijn naam is Sem. Ik ga het hebben over zonne-energie. Eerst leg ik uit wat zonnepanelen zijn, dan bespreek ik de kosten en tot slot vertel ik waarom het loont.\" Opening B: \"Stel je voor: je telefoon is leeg, je bent op vakantie en nergens is een stopcontact. Dan zou je wensen dat de zon kon opladen. Vandaag vertel ik hoe dat kan.\""
+  },
+  {
+   "v": "Wat kondigt Sem aan in opening A?",
+   "o": [
+    "de volgorde van de punten",
+    "zijn leeftijd en zijn woonplaats",
+    "een grap over zonne-energie",
+    "de uitkomst van zijn onderzoek"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 1,
+   "u": "Een aankondiging noemt de opbouw van de voordracht.",
+   "uo": [
+    "Klopt: hij noemt welke onderdelen er komen, zodat het publiek de structuur kent.",
+    "Koos je \"zijn leeftijd en zijn woonplaats\"? Dan denk je dat een inleiding persoonlijke gegevens noemt. Sem noemt alleen zijn naam, verder niet.",
+    "Koos je \"een grap over zonne-energie\"? Dan denk je dat de opening een grap bevat. Er staat geen grap, alleen een aankondiging.",
+    "Koos je \"de uitkomst van zijn onderzoek\"? Dan denk je dat Sem de conclusie noemt. Hij kondigt alleen aan, de conclusie komt aan het slot."
+   ],
+   "uh": "Welke volgorde?",
+   "ctx": "Opening A: \"Goedemorgen. Mijn naam is Sem. Ik ga het hebben over zonne-energie. Eerst leg ik uit wat zonnepanelen zijn, dan bespreek ik de kosten en tot slot vertel ik waarom het loont.\" Opening B: \"Stel je voor: je telefoon is leeg, je bent op vakantie en nergens is een stopcontact. Dan zou je wensen dat de zon kon opladen. Vandaag vertel ik hoe dat kan.\""
+  },
+  {
+   "v": "Welke woorden laten het publiek merken dat een nieuw punt begint?",
+   "o": [
+    "\"de prijs\" en \"de opbrengst\" van zonnepanelen",
+    "\"enkele duizenden euro's\"",
+    "\"mijn eerste punt\" en \"mijn tweede\"",
+    "\"een deel van de stroom\""
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 2,
+   "u": "Signaalzinnen: eerste punt, tweede punt, tot slot.",
+   "uo": [
+    "Koos je \"de prijs en de opbrengst van zonnepanelen\"? Dan denk je dat de onderwerpen de overgang zijn. Ze zijn de inhoud, de overgang zit in \"mijn eerste punt\".",
+    "Koos je \"enkele duizenden euro's\"? Dan denk je dat een cijfer een overgang is. Het is een gegeven, geen aankondiging van een nieuw punt.",
+    "Klopt: zulke zinnen markeren de overgang naar een volgend punt.",
+    "Koos je \"een deel van de stroom\"? Dan denk je dat deze woorden een overgang zijn. Ze beschrijven een feit, geen nieuw punt."
+   ],
+   "uh": "Aankondigen.",
+   "ctx": "Mijn voordracht gaat over de vraag of zonnepanelen lonen. Mijn eerste punt is de prijs: een installatie kost enkele duizenden euro's. Dat brengt me bij mijn tweede punt, de opbrengst: de panelen leveren een deel van de stroom van een gezin. Mijn derde punt is de terugverdientijd. Dit brengt me terug bij de vraag waarmee ik begon: loont het?"
+  },
+  {
+   "v": "Welk slot is het sterkst?",
+   "o": [
+    "slot A, omdat het kort is",
+    "geen van beide, want een slot is overbodig",
+    "slot B, met samenvatting en oproep",
+    "slot A, omdat het vriendelijk is"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Een sterk slot: samenvatten en een boodschap meegeven.",
+   "uo": [
+    "Koos je \"slot A, omdat het kort is\"? Dan denk je dat kort sterk is. Slot A bevat geen boodschap, dus het is zwak.",
+    "Koos je \"geen van beide, want een slot is overbodig\"? Dan denk je dat een slot niet hoeft. Het slot geeft de boodschap die blijft hangen, dus het is nodig.",
+    "Klopt: slot B vat de kern samen en geeft het publiek een boodschap mee.",
+    "Koos je \"slot A, omdat het vriendelijk is\"? Dan denk je dat vriendelijkheid genoeg is. Het slot moet de kern herhalen, en dat doet slot A niet."
+   ],
+   "uh": "Kern en boodschap.",
+   "ctx": "Slot A: \"Dat was het, ik hoop dat jullie het leuk vonden.\" Slot B: \"Samengevat: zonnepanelen kosten geld maar leveren stroom en verdienen zich terug. Mijn oproep: kijk eens naar je eigen dak.\" Beide slotwoorden komen na een voordracht van vijf minuten over zonne-energie."
+  },
+  {
+   "v": "Wat doet Mila fout bij het presenteren?",
+   "o": [
+    "ze leest voor in plaats van te vertellen",
+    "ze praat veel te zacht voor de achterste rij",
+    "ze komt te laat binnen bij de voordracht",
+    "ze gebruikt geen dia bij haar verhaal"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 4,
+   "u": "Vrij vertellen werkt beter dan voorlezen.",
+   "uo": [
+    "Klopt: voorlezen verbreekt het contact met het publiek.",
+    "Koos je \"ze praat veel te zacht voor de achterste rij\"? Dan denk je dat het volume het probleem is. Er staat niets over volume, het probleem is voorlezen.",
+    "Koos je \"ze komt te laat binnen bij de voordracht\"? Dan denk je dat het om tijd gaat. Er staat niets over te laat komen, het gaat om presenteren.",
+    "Koos je \"ze gebruikt geen dia bij haar verhaal\"? Dan denk je dat een dia ontbreekt. Er is wel een dia, maar ze leest die voor."
+   ],
+   "uh": "Voorlezen of vertellen?",
+   "ctx": "Mila leest haar voordracht van een papier af, kijkt naar de grond, praat snel en laat geen pauzes vallen. Op haar dia staan drie alinea's tekst, die ze ook voorleest. Het publiek begint op de klok te kijken en een leerling gaapt."
+  },
+  {
+   "v": "Wat ontbreekt in de voordracht van Bram?",
+   "o": [
+    "een inleiding met aandachtstrekker",
+    "een kern met meerdere punten",
+    "een dia met veel plaatjes",
+    "een slot met samenvatting"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 5,
+   "u": "Een voordracht heeft altijd een slot.",
+   "uo": [
+    "Koos je \"een inleiding met aandachtstrekker\"? Dan denk je dat de inleiding ontbreekt. Bram heeft een inleiding, alleen het slot ontbreekt.",
+    "Koos je \"een kern met meerdere punten\"? Dan denk je dat de kern ontbreekt. Bram heeft drie kernpunten, dus de kern is er.",
+    "Koos je \"een dia met veel plaatjes\"? Dan denk je dat een dia verplicht is. Een dia is niet nodig, het slot wel.",
+    "Klopt: zonder slot weet het publiek niet wat de kern was."
+   ],
+   "uh": "Wat sluit af?",
+   "ctx": "Bram heeft een inleiding, drie kernpunten en geen slot. Na zijn derde punt zegt hij: \"Dat was het, dank je.\" Zijn publiek klapt aarzelend en weet niet wat de belangrijkste boodschap was."
+  },
+  {
+   "v": "Waarom heeft een voordracht een inleiding?",
+   "o": [
+    "om de tijd te vullen voordat je begint",
+    "om het publiek te boeien",
+    "om de conclusie alvast te noemen",
+    "om je bronnen te laten zien"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Inleiding: aandacht trekken, onderwerp noemen, opbouw aankondigen.",
+   "uo": [
+    "Koos je \"om de tijd te vullen voordat je begint\"? Dan denk je dat de inleiding opvulling is. De inleiding heeft een functie, namelijk het publiek voorbereiden.",
+    "Klopt: de inleiding trekt de aandacht, noemt het onderwerp en kondigt aan wat komt.",
+    "Koos je \"om de conclusie alvast te noemen\"? Dan denk je dat het slot vooruit moet. De conclusie hoort aan het slot, de inleiding bereidt voor.",
+    "Koos je \"om je bronnen te laten zien\"? Dan denk je dat de inleiding een bronnenlijst is. De bronnen horen bij de kern, of de bronvermelding."
+   ],
+   "uh": "Wat doet het publiek?"
+  },
+  {
+   "v": "Waarom is de aankondiging \"eerst, dan, tot slot\" nuttig?",
+   "o": [
+    "de spreker hoeft minder te onthouden",
+    "de voordracht wordt korter",
+    "het publiek hoeft niet meer te luisteren",
+    "het publiek weet waar het naartoe gaat"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Een aankondiging geeft overzicht en helpt volgen.",
+   "uo": [
+    "Koos je \"de spreker hoeft minder te onthouden\"? Dan denk je dat de aankondiging voor de spreker is. Ze helpt vooral het publiek, dat de structuur kent.",
+    "Koos je \"de voordracht wordt korter\"? Dan denk je dat een aankondiging tijd bespaart. Ze kost een paar seconden, maar geeft overzicht.",
+    "Koos je \"het publiek hoeft niet meer te luisteren\"? Dan denk je dat het publiek na de aankondiging klaar is. Het luistert juist gerichter, omdat het weet wat komt.",
+    "Klopt: een structuur aankondigen helpt het publiek je te volgen."
+   ],
+   "uh": "Weet het publiek waar het heen gaat?",
+   "ctx": "Opening A: \"Goedemorgen. Mijn naam is Sem. Ik ga het hebben over zonne-energie. Eerst leg ik uit wat zonnepanelen zijn, dan bespreek ik de kosten en tot slot vertel ik waarom het loont.\" Opening B: \"Stel je voor: je telefoon is leeg, je bent op vakantie en nergens is een stopcontact. Dan zou je wensen dat de zon kon opladen. Vandaag vertel ik hoe dat kan.\""
+  },
+  {
+   "v": "Welke functie hebben \"Dat brengt me bij\" en \"Dit brengt me terug bij\"?",
+   "o": [
+    "ze zijn een onderdeel van de inleiding",
+    "overgangen die de punten verbinden",
+    "ze zijn een grap voor de sfeer",
+    "ze bevatten nieuwe argumenten"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 2,
+   "u": "Overgangen: sturen het publiek door de voordracht.",
+   "uo": [
+    "Koos je \"ze zijn een onderdeel van de inleiding\"? Dan denk je dat deze zinnen de inleiding vormen. Ze staan in de kern, als overgang tussen punten.",
+    "Klopt: zulke formuleringen leiden naar een volgend punt of terug naar de hoofdvraag.",
+    "Koos je \"ze zijn een grap voor de sfeer\"? Dan denk je dat ze alleen sfeer maken. Ze dienen de structuur, dus ze hebben een functie.",
+    "Koos je \"ze bevatten nieuwe argumenten\"? Dan denk je dat ze argumenten noemen. Ze verwijzen alleen, en brengen niets nieuws."
+   ],
+   "uh": "Hoe loop je van punt naar punt?",
+   "ctx": "Mijn voordracht gaat over de vraag of zonnepanelen lonen. Mijn eerste punt is de prijs: een installatie kost enkele duizenden euro's. Dat brengt me bij mijn tweede punt, de opbrengst: de panelen leveren een deel van de stroom van een gezin. Mijn derde punt is de terugverdientijd. Dit brengt me terug bij de vraag waarmee ik begon: loont het?"
+  },
+  {
+   "v": "Wat vormt in deze voordracht de rode draad?",
+   "o": [
+    "het aantal punten dat hij noemt",
+    "het gebruik van cijfers",
+    "de vraag of zonnepanelen lonen",
+    "de naam"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 2,
+   "u": "Rode draad: één vraag of idee dat terugkeert.",
+   "uo": [
+    "Koos je \"het aantal punten dat hij noemt\"? Dan denk je dat het aantal punten de draad is. Het aantal zegt niets over de samenhang, de terugkerende vraag wel.",
+    "Koos je \"het gebruik van cijfers\"? Dan denk je dat cijfers de draad vormen. Ze zijn gegevens, geen samenbindende gedachte.",
+    "Klopt: de spreker begint met de vraag en komt er aan het eind op terug.",
+    "Koos je \"de naam\"? Dan denk je dat de spreker de draad is. De draad is een vraag of idee, geen persoon."
+   ],
+   "uh": "Wat keert terug?",
+   "ctx": "Mijn voordracht gaat over de vraag of zonnepanelen lonen. Mijn eerste punt is de prijs: een installatie kost enkele duizenden euro's. Dat brengt me bij mijn tweede punt, de opbrengst: de panelen leveren een deel van de stroom van een gezin. Mijn derde punt is de terugverdientijd. Dit brengt me terug bij de vraag waarmee ik begon: loont het?"
+  },
+  {
+   "v": "Waarom is slot A zwak?",
+   "o": [
+    "geen samenvatting en geen boodschap",
+    "omdat het slot veel te lang is voor de voordracht",
+    "omdat het een groet bevat die niet netjes is",
+    "omdat het een oproep bevat die te stellig is"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Zwak slot: geen samenvatting, geen boodschap.",
+   "uo": [
+    "Klopt: de zin sluit af maar laat niets achter wat het publiek onthoudt.",
+    "Koos je \"omdat het slot veel te lang is voor de voordracht\"? Dan denk je dat het slot te lang is. Het is juist erg kort, en bevat geen inhoud.",
+    "Koos je \"omdat het een groet bevat die niet netjes is\"? Dan denk je dat een groet fout is. Een groet is prima, maar alleen een groet is te weinig.",
+    "Koos je \"omdat het een oproep bevat die te stellig is\"? Dan denk je dat slot A een oproep doet. Er staat geen oproep, dat doet slot B."
+   ],
+   "uh": "Wat blijft hangen?",
+   "ctx": "Slot A: \"Dat was het, ik hoop dat jullie het leuk vonden.\" Slot B: \"Samengevat: zonnepanelen kosten geld maar leveren stroom en verdienen zich terug. Mijn oproep: kijk eens naar je eigen dak.\" Beide slotwoorden komen na een voordracht van vijf minuten over zonne-energie."
+  },
+  {
+   "v": "Welke verbetering past bij Mila's tempo en stem?",
+   "o": [
+    "rustiger praten met pauzes",
+    "sneller praten zodat het eerder klaar is",
+    "zachter praten om rustig te lijken",
+    "alles twee keer herhalen"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 4,
+   "u": "Tempo laag, pauzes, variatie in stem.",
+   "uo": [
+    "Klopt: tempo, pauzes en variatie houden het publiek bij het verhaal.",
+    "Koos je \"sneller praten zodat het eerder klaar is\"? Dan denk je dat snel praten een oplossing is. Het publiek begrijpt het niet, dus het wordt erger.",
+    "Koos je \"zachter praten om rustig te lijken\"? Dan denk je dat zacht praten rust is. Het publiek verstaat het niet, dus het werkt niet.",
+    "Koos je \"alles twee keer herhalen\"? Dan denk je dat herhalen het probleem oplost. Het probleem is het tempo, niet de inhoud."
+   ],
+   "uh": "Rustig en gevarieerd.",
+   "ctx": "Mila leest haar voordracht van een papier af, kijkt naar de grond, praat snel en laat geen pauzes vallen. Op haar dia staan drie alinea's tekst, die ze ook voorleest. Het publiek begint op de klok te kijken en een leerling gaapt."
+  },
+  {
+   "v": "Welke dia ondersteunt de spreker het best?",
+   "o": [
+    "dia 2: vijf alinea's tekst",
+    "geen van beide, want dia's zijn altijd slecht",
+    "dia 1: titel, foto en drie trefwoorden",
+    "beide even goed, want ze hebben allebei tekst"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Dia: weinig tekst, een beeld, ondersteunend.",
+   "uo": [
+    "Koos je \"dia 2: vijf alinea's tekst\"? Dan denk je dat meer tekst beter informeert. Het publiek leest dan mee, in plaats van te luisteren.",
+    "Koos je \"geen van beide, want dia's zijn altijd slecht\"? Dan denk je dat een dia nooit helpt. Een goede dia ondersteunt, dus dia 1 werkt.",
+    "Klopt: een beeld en weinig tekst ondersteunen wat je zegt zonder af te leiden.",
+    "Koos je \"beide even goed, want ze hebben allebei tekst\"? Dan denk je dat de hoeveelheid tekst niet uitmaakt. Het maakt veel uit, weinig tekst werkt beter."
+   ],
+   "uh": "Eén blik.",
+   "ctx": "Dia 1: een titel, een foto van een zonnepaneel en drie trefwoorden. Dia 2: vijf alinea's tekst in kleine letters. De voordracht duurt vijf minuten en wordt gehouden voor een klas van dertig leerlingen."
+  },
+  {
+   "v": "Waarom is dia 2 een valkuil?",
+   "o": [
+    "omdat de letters te groot zijn voor de zaal",
+    "het publiek leest mee, luistert niet",
+    "omdat tekst nooit op een dia mag",
+    "omdat de voordracht te kort is"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Veel tekst op een dia leidt af van de spreker.",
+   "uo": [
+    "Koos je \"omdat de letters te groot zijn voor de zaal\"? Dan denk je dat de letters te groot zijn. Ze zijn juist klein, en dus slecht leesbaar.",
+    "Klopt: een dia vol tekst concurreert met de spreker.",
+    "Koos je \"omdat tekst nooit op een dia mag\"? Dan denk je dat tekst verboden is. Een paar trefwoorden mogen, maar niet alinea's.",
+    "Koos je \"omdat de voordracht te kort is\"? Dan denk je dat de lengte van de voordracht het probleem is. Het probleem is de hoeveelheid tekst, niet de tijd."
+   ],
+   "uh": "Lezen of luisteren?",
+   "ctx": "Dia 1: een titel, een foto van een zonnepaneel en drie trefwoorden. Dia 2: vijf alinea's tekst in kleine letters. De voordracht duurt vijf minuten en wordt gehouden voor een klas van dertig leerlingen."
+  },
+  {
+   "v": "Waarom begin je met een beeld of vraag?",
+   "o": [
+    "om de spreker de tijd te geven zijn kaartje te vinden",
+    "om het onderwerp zo lang mogelijk te verbergen",
+    "om de conclusie weg te geven",
+    "om de aandacht te wekken"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 1,
+   "u": "Aandachtstrekker: nieuwsgierig maken en naar het onderwerp leiden.",
+   "uo": [
+    "Koos je \"om de spreker de tijd te geven zijn kaartje te...\"? Dan denk je dat de opening de spreker helpt. Ze is bedoeld voor het publiek, niet voor de spreker.",
+    "Koos je \"om het onderwerp zo lang mogelijk te verbergen\"? Dan denk je dat verbergen nodig is. Je brengt het publiek juist naar het onderwerp, dus niet verbergen.",
+    "Koos je \"om de conclusie weg te geven\"? Dan denk je dat de opening de uitkomst vertelt. Een goede opening maakt nieuwsgierig, de conclusie komt aan het slot.",
+    "Klopt: een aandachtstrekker maakt het publiek nieuwsgierig voordat je uitlegt."
+   ],
+   "uh": "Nieuwsgierig maken.",
+   "ctx": "Opening A: \"Goedemorgen. Mijn naam is Sem. Ik ga het hebben over zonne-energie. Eerst leg ik uit wat zonnepanelen zijn, dan bespreek ik de kosten en tot slot vertel ik waarom het loont.\" Opening B: \"Stel je voor: je telefoon is leeg, je bent op vakantie en nergens is een stopcontact. Dan zou je wensen dat de zon kon opladen. Vandaag vertel ik hoe dat kan.\""
+  },
+  {
+   "v": "Waarom hoort in het slot geen nieuw argument?",
+   "o": [
+    "omdat slot en argument nooit samengaan",
+    "een nieuw argument blijft onbesproken",
+    "omdat het slot altijd kort moet zijn",
+    "omdat het publiek geen argumenten wil"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 3,
+   "u": "Het slot vat samen en voegt niets nieuws toe.",
+   "uo": [
+    "Koos je \"omdat slot en argument nooit samengaan\"? Dan denk je dat dit een regel zonder reden is. De reden is dat nieuwe punten niet meer kunnen worden uitgewerkt, dus ze vallen weg.",
+    "Klopt: een nieuw argument in het slot blijft onbesproken, dus het overtuigt niet.",
+    "Koos je \"omdat het slot altijd kort moet zijn\"? Dan denk je dat de lengte de reden is. Een slot mag best uitgebreid zijn, maar zonder nieuwe punten.",
+    "Koos je \"omdat het publiek geen argumenten wil\"? Dan denk je dat het publiek geen argumenten wil. Het wil ze juist, maar in de kern, niet in het slot."
+   ],
+   "uh": "Samenvatten, niet uitbreiden.",
+   "ctx": "Bram heeft een inleiding, drie kernpunten en geen slot. Na zijn derde punt zegt hij: \"Dat was het, dank je.\" Zijn publiek klapt aarzelend en weet niet wat de belangrijkste boodschap was."
+  },
+  {
+   "v": "Welke herziene opbouw is het best?",
+   "o": [
+    "inleiding, kern met overgangen, slot",
+    "inleiding, drie kernpunten en stoppen",
+    "drie kernpunten zonder inleiding, met een groot slot",
+    "inleiding en slot, zonder kernpunten"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Voordracht: inleiding, kern met overgangen, slot.",
+   "uo": [
+    "Klopt: een voordracht met alle drie de delen en duidelijke overgangen is af en overtuigend.",
+    "Koos je \"inleiding, drie kernpunten en stoppen\"? Dan denk je dat het slot overbodig is. Zonder slot weet het publiek niet wat de kern is, dus het is onaf.",
+    "Koos je \"drie kernpunten zonder inleiding, met een groot slot\"? Dan denk je dat de inleiding weg kan. Het publiek heeft die nodig, om te weten waar het over gaat.",
+    "Koos je \"inleiding en slot, zonder kernpunten\"? Dan denk je dat de kern weg kan. De kern bevat de argumenten, dus zonder kern is er geen voordracht."
+   ],
+   "uh": "Alle drie de delen.",
+   "ctx": "Bram heeft een inleiding, drie kernpunten en geen slot. Na zijn derde punt zegt hij: \"Dat was het, dank je.\" Zijn publiek klapt aarzelend en weet niet wat de belangrijkste boodschap was."
+  },
+  {
+   "v": "Welke combinatie vormt een sterke inleiding?",
+   "o": [
+    "alleen een groet en je naam",
+    "alle details en cijfers alvast",
+    "meteen de conclusie en dan weer stoppen",
+    "aandachtstrekker, onderwerp, aankondiging"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Inleiding: aandacht, onderwerp, structuur.",
+   "uo": [
+    "Koos je \"alleen een groet en je naam\"? Dan denk je dat een groet genoeg is. Er ontbreken onderwerp en aandacht, dus het is een zwakke inleiding.",
+    "Koos je \"alle details en cijfers alvast\"? Dan denk je dat de inleiding de inhoud bevat. De details horen in de kern, dus de inleiding wordt te lang.",
+    "Koos je \"meteen de conclusie en dan weer stoppen\"? Dan denk je dat de conclusie de inleiding is. De conclusie hoort in het slot, de inleiding bereidt voor.",
+    "Klopt: opening, onderwerp en structuur bereiden het publiek voor."
+   ],
+   "uh": "Drie onderdelen.",
+   "ctx": "Opening A: \"Goedemorgen. Mijn naam is Sem. Ik ga het hebben over zonne-energie. Eerst leg ik uit wat zonnepanelen zijn, dan bespreek ik de kosten en tot slot vertel ik waarom het loont.\" Opening B: \"Stel je voor: je telefoon is leeg, je bent op vakantie en nergens is een stopcontact. Dan zou je wensen dat de zon kon opladen. Vandaag vertel ik hoe dat kan.\""
+  },
+  {
+   "v": "Welke overgangszin verbindt punt 1 en punt 2 het best?",
+   "o": [
+    "\"Dan hebben we nu dit.\"",
+    "\"Zonnepanelen zijn leuk, ze staan op daken.\"",
+    "\"Na de prijs kijken we naar de opbrengst.\"",
+    "\"Dat was punt een, punt twee komt later.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Goede overgang: terugblik, vooruitblik, rode draad.",
+   "uo": [
+    "Koos je \"Dan hebben we nu dit.\"? Dan denk je dat een korte zin genoeg is. De zin zegt niets over de inhoud, dus de overgang is vaag.",
+    "Koos je \"Zonnepanelen zijn leuk, ze staan op daken.\"? Dan denk je dat dit een overgang is. De zin voegt een losse opmerking toe, zonder te verbinden.",
+    "Klopt: de zin kijkt terug en vooruit en houdt de rode draad vast.",
+    "Koos je \"Dat was punt een, punt twee komt later.\"? Dan denk je dat dit een overgang is. De zin kondigt vaag aan, zonder de samenhang te laten zien."
+   ],
+   "uh": "Kijk terug en vooruit.",
+   "ctx": "Mijn voordracht gaat over de vraag of zonnepanelen lonen. Mijn eerste punt is de prijs: een installatie kost enkele duizenden euro's. Dat brengt me bij mijn tweede punt, de opbrengst: de panelen leveren een deel van de stroom van een gezin. Mijn derde punt is de terugverdientijd. Dit brengt me terug bij de vraag waarmee ik begon: loont het?"
+  },
+  {
+   "v": "Welk deel van slot B vormt de boodschap?",
+   "o": [
+    "de zin dat zonnepanelen geld kosten",
+    "de zin dat zonnepanelen stroom leveren",
+    "de oproep: kijk eens naar je dak",
+    "het woord \"samengevat\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Boodschap: wat het publiek moet onthouden of doen.",
+   "uo": [
+    "Koos je \"de zin dat zonnepanelen geld kosten\"? Dan denk je dat deze zin het slot afsluit met een boodschap. Het is een gegeven uit de kern, een boodschap vraagt het publiek iets te doen.",
+    "Koos je \"de zin dat zonnepanelen stroom leveren\"? Dan denk je dat de opbrengst het belangrijkste is om te onthouden. Het vat de inhoud samen, maar zegt niet wat het publiek moet doen.",
+    "Klopt: de oproep geeft het publiek iets om mee te nemen en te doen.",
+    "Koos je \"het woord samengevat\"? Dan denk je dat dit woord de boodschap is. Het is een overgang, geen boodschap."
+   ],
+   "uh": "Wat neemt het publiek mee?",
+   "ctx": "Slot A: \"Dat was het, ik hoop dat jullie het leuk vonden.\" Slot B: \"Samengevat: zonnepanelen kosten geld maar leveren stroom en verdienen zich terug. Mijn oproep: kijk eens naar je eigen dak.\" Beide slotwoorden komen na een voordracht van vijf minuten over zonne-energie."
+  },
+  {
+   "v": "Wat is het effect van Mila's papier en naar de grond kijken?",
+   "o": [
+    "het publiek vindt haar eerlijker",
+    "het publiek onthoudt meer",
+    "er verandert niets aan het effect op het publiek",
+    "weinig contact, dus minder overtuigend"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Oogcontact en vrij spreken versterken de boodschap.",
+   "uo": [
+    "Koos je \"het publiek vindt haar eerlijker\"? Dan denk je dat naar de grond kijken eerlijk lijkt. Het wekt eerder onzekerheid, dus het werkt averechts.",
+    "Koos je \"het publiek onthoudt meer\"? Dan denk je dat voorlezen helpt onthouden. Het publiek haakt af, dus ze onthouden minder.",
+    "Koos je \"er verandert niets aan het effect op het publiek\"? Dan denk je dat houding niet uitmaakt. Houding en oogcontact bepalen of je overtuigt, dus het maakt wel uit.",
+    "Klopt: oogcontact en vrij spreken maken een spreker geloofwaardig."
+   ],
+   "uh": "Kijk je naar het publiek?",
+   "ctx": "Mila leest haar voordracht van een papier af, kijkt naar de grond, praat snel en laat geen pauzes vallen. Op haar dia staan drie alinea's tekst, die ze ook voorleest. Het publiek begint op de klok te kijken en een leerling gaapt."
+  },
+  {
+   "v": "Welke dia-aanpak is het best voor vijf minuten?",
+   "o": [
+    "één beeld per punt met weinig tekst",
+    "één dia met al je tekst",
+    "twintig dia's snel achter elkaar met veel tekst",
+    "geen dia en geen aantekeningen"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Dia's: weinig tekst, beeld per punt.",
+   "uo": [
+    "Klopt: de dia ondersteunt wat je zegt en laat het publiek naar jou luisteren.",
+    "Koos je \"één dia met al je tekst\"? Dan denk je dat alles op één dia past. Het publiek leest mee, en luistert niet.",
+    "Koos je \"twintig dia's snel achter elkaar met veel tekst\"? Dan denk je dat veel dia's indruk maken. Bij vijf minuten raakt het publiek de draad kwijt, dus je hebt er te veel.",
+    "Koos je \"geen dia en geen aantekeningen\"? Dan denk je dat een dia fout is. Een dia kan helpen, als hij ondersteunt."
+   ],
+   "uh": "Beeld per punt.",
+   "ctx": "Dia 1: een titel, een foto van een zonnepaneel en drie trefwoorden. Dia 2: vijf alinea's tekst in kleine letters. De voordracht duurt vijf minuten en wordt gehouden voor een klas van dertig leerlingen."
+  },
+  {
+   "v": "Mila zegt: \"Ik moet alles opschrijven, anders vergeet ik het.\" Welk advies past?",
+   "o": [
+    "schrijf alles uit en lees het goed voor",
+    "trefwoorden of kaartjes en hardop oefenen",
+    "leer alles uit je hoofd zonder aantekeningen",
+    "praat zo snel mogelijk"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Trefwoorden en oefenen geven houvast zonder voorlezen.",
+   "uo": [
+    "Koos je \"schrijf alles uit en lees het goed voor\"? Dan denk je dat een volledige tekst veilig is. Voorlezen verbreekt het contact, dus het advies helpt niet.",
+    "Klopt: trefwoorden helpen onthouden zonder voor te lezen.",
+    "Koos je \"leer alles uit je hoofd zonder aantekeningen\"? Dan denk je dat alles uit het hoofd beter is. Dat is voor veel mensen te stressvol, trefwoorden zijn handiger.",
+    "Koos je \"praat zo snel mogelijk\"? Dan denk je dat snelheid helpt. Het publiek volgt het niet, dus snel praten werkt niet."
+   ],
+   "uh": "Houvast zonder tekst.",
+   "ctx": "Mila leest haar voordracht van een papier af, kijkt naar de grond, praat snel en laat geen pauzes vallen. Op haar dia staan drie alinea's tekst, die ze ook voorleest. Het publiek begint op de klok te kijken en een leerling gaapt."
+  },
+  {
+   "v": "Hoe is de kern van deze voordracht opgebouwd?",
+   "o": [
+    "in willekeurige volgorde",
+    "van onbelangrijk naar belangrijk zonder reden",
+    "alleen met voorbeelden zonder punten",
+    "punten in logische volgorde"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 0,
+   "u": "Kern: punten in logische volgorde met overgangen.",
+   "uo": [
+    "Koos je \"in willekeurige volgorde\"? Dan denk je dat de volgorde niet uitmaakt. De volgorde prijs, opbrengst, terugverdientijd is logisch, dus het is niet willekeurig.",
+    "Koos je \"van onbelangrijk naar belangrijk zonder reden\"? Dan denk je dat de punten oplopen in belang. De volgorde volgt de vraag naar de winst, niet het belang.",
+    "Koos je \"alleen met voorbeelden zonder punten\"? Dan denk je dat de kern geen punten bevat. Hij heeft drie duidelijke punten, dus dat klopt niet.",
+    "Klopt: de punten volgen elkaar logisch en eindigen bij de vraag of het loont."
+   ],
+   "uh": "Welke volgorde?",
+   "ctx": "Mijn voordracht gaat over de vraag of zonnepanelen lonen. Mijn eerste punt is de prijs: een installatie kost enkele duizenden euro's. Dat brengt me bij mijn tweede punt, de opbrengst: de panelen leveren een deel van de stroom van een gezin. Mijn derde punt is de terugverdientijd. Dit brengt me terug bij de vraag waarmee ik begon: loont het?"
+  },
+  {
+   "v": "Welke formulering maakt de rode draad het best zichtbaar?",
+   "o": [
+    "\"Dit brengt me terug bij de vraag.\"",
+    "\"Dan nog een ding, dan zijn we er bijna.\"",
+    "\"Zonnepanelen zijn blauw en glimmend, zoals je ziet.\"",
+    "\"Ik ga nu verder met iets anders.\""
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 2,
+   "u": "Rode draad: verwijs naar de hoofdvraag.",
+   "uo": [
+    "Klopt: de zin verwijst naar de hoofdvraag en bindt de punten.",
+    "Koos je \"Dan nog een ding, dan zijn we er bijna.\"? Dan denk je dat dit een overgang is. De zin verwijst nergens naar, dus de draad blijft verborgen.",
+    "Koos je \"Zonnepanelen zijn blauw en glimmend, zoals je ziet.\"? Dan denk je dat een beschrijving de draad is. De zin zegt niets over de vraag, dus het is geen draad.",
+    "Koos je \"Ik ga nu verder met iets anders.\"? Dan denk je dat dit een overgang is. De zin is vaag, en laat de draad los."
+   ],
+   "uh": "Terug naar de vraag.",
+   "ctx": "Mijn voordracht gaat over de vraag of zonnepanelen lonen. Mijn eerste punt is de prijs: een installatie kost enkele duizenden euro's. Dat brengt me bij mijn tweede punt, de opbrengst: de panelen leveren een deel van de stroom van een gezin. Mijn derde punt is de terugverdientijd. Dit brengt me terug bij de vraag waarmee ik begon: loont het?"
+  },
+  {
+   "v": "Wat zijn de gevolgen als het slot ontbreekt?",
+   "o": [
+    "het publiek vindt de voordracht korter",
+    "het publiek mist samenvatting en boodschap",
+    "er verandert niets, want de inhoud blijft gelijk",
+    "het publiek onthoudt de kernpunten beter"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 5,
+   "u": "Het slot bepaalt wat het publiek onthoudt.",
+   "uo": [
+    "Koos je \"het publiek vindt de voordracht korter\"? Dan denk je dat het slot tijd kost. Het publiek wil een afronding, dus korter is niet beter.",
+    "Klopt: zonder slot weet het publiek niet wat de kern was; zo ontstaat een onaf gevoel.",
+    "Koos je \"er verandert niets, want de inhoud blijft gelijk\"? Dan denk je dat alleen de inhoud telt. Het slot bepaalt wat het publiek onthoudt, dus het verandert wel iets.",
+    "Koos je \"het publiek onthoudt de kernpunten beter\"? Dan denk je dat een ontbrekend slot helpt. Het publiek mist de samenvatting, dus ze onthouden minder."
+   ],
+   "uh": "Wat blijft hangen?",
+   "ctx": "Bram heeft een inleiding, drie kernpunten en geen slot. Na zijn derde punt zegt hij: \"Dat was het, dank je.\" Zijn publiek klapt aarzelend en weet niet wat de belangrijkste boodschap was."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Opening A: \"Goedemorgen. Mijn naam is Sem. Ik ga het hebben over zonne-energie. Eerst leg ik uit wat zonnepanelen zijn, dan bespreek ik de kosten en tot slot vertel ik waarom het loont.\" Opening B: \"Stel je voor: je telefoon is leeg, je bent op vakantie en nergens is een stopcontact. Dan zou je wensen dat de zon kon opladen. Vandaag vertel ik hoe dat kan.\"",
+   "v": "Welke opening is het sterkst en welke drie onderdelen bevat een goede inleiding?",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Opening B, met een aandachtstrekker (1p). Een goede inleiding bevat een aandachtstrekker, het onderwerp en een aankondiging van de opbouw (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Mijn voordracht gaat over de vraag of zonnepanelen lonen. Mijn eerste punt is de prijs: een installatie kost enkele duizenden euro's. Dat brengt me bij mijn tweede punt, de opbrengst: de panelen leveren een deel van de stroom van een gezin. Mijn derde punt is de terugverdientijd. Dit brengt me terug bij de vraag waarmee ik begon: loont het?",
+   "v": "Noem twee overgangszinnen uit de kern en de rode draad.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "\"Dat brengt me bij mijn tweede punt\" en \"Dit brengt me terug bij de vraag\" (2p). Rode draad: de vraag of zonnepanelen lonen (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Slot A: \"Dat was het, ik hoop dat jullie het leuk vonden.\" Slot B: \"Samengevat: zonnepanelen kosten geld maar leveren stroom en verdienen zich terug. Mijn oproep: kijk eens naar je eigen dak.\" Beide slotwoorden komen na een voordracht van vijf minuten over zonne-energie.",
+   "v": "Leg uit waarom slot B sterker is dan slot A en noem de boodschap.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Slot B vat de kern samen en geeft een boodschap mee, slot A is alleen beleefd (2p). Boodschap: kijk eens naar je eigen dak (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Mila leest haar voordracht van een papier af, kijkt naar de grond, praat snel en laat geen pauzes vallen. Op haar dia staan drie alinea's tekst, die ze ook voorleest. Het publiek begint op de klok te kijken en een leerling gaapt.",
+   "v": "Geef drie verbeteringen voor Mila's presentatie.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld vrij spreken met trefwoorden (1p), oogcontact met het publiek (1p), rustiger tempo met pauzes en een dia met weinig tekst (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Bram heeft een inleiding, drie kernpunten en geen slot. Na zijn derde punt zegt hij: \"Dat was het, dank je.\" Zijn publiek klapt aarzelend en weet niet wat de belangrijkste boodschap was.",
+   "v": "Welk deel ontbreekt bij Bram en schrijf een slot van twee zinnen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Het slot ontbreekt (1p). Voorbeeld: Samengevat, zonnepanelen kosten geld maar verdienen zich terug (1p). Mijn oproep: kijk eens naar je eigen dak (1p)."
+  }
+ ]
+}
