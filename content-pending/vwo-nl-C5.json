@@ -1,0 +1,682 @@
+{
+ "id": "C5",
+ "lo": "nl.C.5",
+ "gs": 2,
+ "naam": "Schrijftaal, stijl en correctheid",
+ "beschrijving": "Je schrijft in verzorgde schrijftaal met een toon die bij lezer en doel past, kiest precieze woorden en overzichtelijke zinnen en controleert spelling, grammatica en leestekens.",
+ "ceStatus": "SE",
+ "binas": "",
+ "val": "",
+ "onderwerpen": [
+  "Schrijftaal en spreektaal",
+  "Register: formeel en informeel",
+  "Woordkeus: precies en beknopt",
+  "Zinnen: lengte en bouw",
+  "Spelling en grammatica",
+  "Leestekens en verzorgde opmaak"
+ ],
+ "sam": "Schrijftaal is volledig, correct en zonder stopwoorden, anders dan spreektaal. Het register past bij lezer en doel: formeel voor een onbekende of een sollicitatie, informeel voor een vriend. Kies precieze woorden in plaats van vage, en houd zinnen kort genoeg om te volgen. Controleer de spelling van werkwoorden, hun en hen, als en dan, die en dat, en gebruik hoofdletters en leestekens goed.",
+ "begrippen": [
+  {
+   "t": "Schrijftaal",
+   "d": "Taal die volledig, correct en verzorgd is, zonder stopwoorden of spreektaalvormen."
+  },
+  {
+   "t": "Spreektaal",
+   "d": "Taal zoals je praat, met stopwoorden en afkortingen als nou, gewoon en 't."
+  },
+  {
+   "t": "Register",
+   "d": "De toon van een tekst, formeel of informeel, passend bij lezer en doel."
+  },
+  {
+   "t": "Formeel",
+   "d": "Beleefd en zakelijk, met u en een aanhef als Geachte."
+  },
+  {
+   "t": "Informeel",
+   "d": "Los en vertrouwd, met je en een groet als Hoi."
+  },
+  {
+   "t": "Stopwoord",
+   "d": "Een woord dat niets toevoegt, zoals gewoon of nou ja."
+  },
+  {
+   "t": "Vaag woord",
+   "d": "Een woord dat niet zegt wat je precies bedoelt, zoals ding of een soort van."
+  },
+  {
+   "t": "Beknoptheid",
+   "d": "Zo weinig woorden als nodig is, zonder informatie te verliezen."
+  },
+  {
+   "t": "Bijzin",
+   "d": "Een zinsdeel met een eigen persoonsvorm, dat bij een hoofdzin hoort."
+  },
+  {
+   "t": "Werkwoordspelling",
+   "d": "De regels voor stam plus t of d bij vervoegingen en voltooid deelwoord."
+  },
+  {
+   "t": "Leesteken",
+   "d": "Een teken als punt, komma of vraagteken dat de zin ordent."
+  },
+  {
+   "t": "Aanhef",
+   "d": "De openingsgroet van een brief, zoals Geachte heer De Vries."
+  }
+ ],
+ "sv": [
+  {
+   "v": "Welke zin is geschreven in schrijftaal?",
+   "o": [
+    "\"Nou, de school gaat dus gewoon later beginnen, hè.\"",
+    "\"De school heeft besloten later te beginnen.\"",
+    "\"Die school begint straks later, snap je?\"",
+    "\"Ze gaan daar lekker later beginnen of zo.\""
+   ],
+   "c": 1,
+   "d": 1,
+   "s": 0,
+   "u": "Schrijftaal is volledig, correct en zonder stopwoorden.",
+   "uo": [
+    "Koos je \"Nou, de school gaat dus gewoon later beginnen, hè.\"? Dan denk je dat spreektaalwoorden als \"nou\" en \"hè\" in schrijftaal passen. Zulke woorden horen bij praten, in schrijftaal laat je ze weg.",
+    "Klopt: de zin heeft volledige woorden en geen spreektaalwoorden.",
+    "Koos je \"Die school begint straks later, snap je?\"? Dan denk je dat een vraag aan de lezer schrijftaal is. \"Snap je\" is spreektaal, het is een gesprek met de lezer.",
+    "Koos je \"Ze gaan daar lekker later beginnen of zo.\"? Dan denk je dat \"lekker\" en \"of zo\" in schrijftaal kunnen. Dat zijn spreektaalwoorden, ze maken de zin vaag en informeel."
+   ],
+   "uh": "Zou je het zo opschrijven?"
+  },
+  {
+   "v": "Welke aanhef hoort bij een formele brief aan een onbekende?",
+   "o": [
+    "Hoi mevrouw Jansen, hoe gaat het ermee?",
+    "Hallo Jansen, ik heb een vraag!",
+    "Hey mevrouw, even een vraagje,",
+    "Geachte mevrouw Jansen,"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "Formeel: Geachte, met vriendelijke groet.",
+   "uo": [
+    "Koos je \"Hoi mevrouw Jansen, hoe gaat het ermee?\"? Dan denk je dat \"hoi\" past bij een onbekende. \"Hoi\" is informeel, en komt in een formele brief onbeleefd over.",
+    "Koos je \"Hallo Jansen, ik heb een vraag!\"? Dan denk je dat de achternaam alleen genoeg is. Dat is te direct en informeel, voor een onbekende past een beleefde aanhef.",
+    "Koos je \"Hey mevrouw, even een vraagje,\"? Dan denk je dat \"hey\" en \"vraagje\" kunnen. Beide zijn informeel, dus niet geschikt voor een formele brief.",
+    "Klopt: \"Geachte\" is de beleefde, formele aanhef."
+   ],
+   "uh": "Aan wie schrijf je?"
+  },
+  {
+   "v": "Welk deel van de eerste zin is vaag?",
+   "o": [
+    "\"een heleboel dingen\"",
+    "\"in het museum\", de plaatsaanduiding",
+    "\"is gebeurd\", het werkwoord",
+    "\"er is\", het begin van de zin"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 2,
+   "u": "Vage woorden zijn \"dingen\" en \"een heleboel\".",
+   "uo": [
+    "Klopt: de woorden zeggen niet wat er precies gebeurde.",
+    "Koos je \"in het museum, de plaatsaanduiding\"? Dan denk je dat de plaats vaag is. \"In het museum\" is juist duidelijk, het is de aanduiding van de plaats.",
+    "Koos je \"is gebeurd, het werkwoord\"? Dan denk je dat de werkwoordsvorm vaag is. Het werkwoord zegt dat iets gebeurde, maar niet wat, en dat zit in \"dingen\".",
+    "Koos je \"er is, het begin van de zin\"? Dan denk je dat \"er is\" de vage uitdrukking is. Het is geen echt vage uitdrukking, de vaagheid zit in \"een heleboel dingen\"."
+   ],
+   "uh": "Wat gebeurde er precies?",
+   "ctx": "Een leerling schrijft over een museumbezoek: \"Er is een heleboel dingen gebeurd in het museum. Het was echt wel een soort van mooi, vond ik, en ik wil er nog een keer heen.\""
+  },
+  {
+   "v": "Wat maakt een zin vaak moeilijk om te lezen?",
+   "o": [
+    "de zin bevat één onderwerp en één werkwoord",
+    "de zin begint met een hoofdletter",
+    "te veel bijzinnen die in elkaar zitten",
+    "de zin eindigt met een punt"
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 3,
+   "u": "Te veel bijzinnen maken een zin zwaar.",
+   "uo": [
+    "Koos je \"de zin bevat één onderwerp en één werkwoord\"? Dan denk je dat een korte zin lastig is. Een korte zin met onderwerp en werkwoord is juist duidelijk, de lezer volgt hem makkelijk.",
+    "Koos je \"de zin begint met een hoofdletter\"? Dan denk je dat de hoofdletter de lezer hindert. Een hoofdletter hoort bij de eerste letter van een zin, hij maakt de zin niet moeilijk.",
+    "Klopt: de lezer verliest dan het begin van de zin uit het oog.",
+    "Koos je \"de zin eindigt met een punt\"? Dan denk je dat de punt een zin ingewikkeld maakt. Een punt geeft rust, juist een zin zonder punt is vaak te lang."
+   ],
+   "uh": "Waar moet je terugkijken?"
+  },
+  {
+   "v": "Welke zin is goed gespeld?",
+   "o": [
+    "Hij word boos.",
+    "Hij worden boos.",
+    "Hij wordt boos.",
+    "Hij wort boos."
+   ],
+   "c": 2,
+   "d": 1,
+   "s": 4,
+   "u": "Hij, zij of het: stam plus -t.",
+   "uo": [
+    "Koos je \"Hij word boos.\"? Dan denk je dat de stam alleen voldoende is. Bij \"hij\" hoort stam plus -t, dus het moet \"wordt\" zijn.",
+    "Koos je \"Hij worden boos.\"? Dan denk je dat bij \"hij\" de hele infinitief past. De infinitief is niet de persoonsvorm, bij \"hij\" hoort stam plus -t.",
+    "Klopt: bij \"hij\" krijgt de stam \"word\" een -t.",
+    "Koos je \"Hij wort boos.\"? Dan denk je dat één d genoeg is. De stam van \"worden\" is \"word\", en bij \"hij\" komt er een -t achter."
+   ],
+   "uh": "Stam plus -t."
+  },
+  {
+   "v": "Welke woorden schrijf je met een hoofdletter in \"anna reisde in juli naar parijs\"?",
+   "o": [
+    "Anna en Parijs",
+    "Anna, Juli en Parijs",
+    "alleen het eerste woord, Anna",
+    "Anna, reisde en Parijs"
+   ],
+   "c": 0,
+   "d": 1,
+   "s": 5,
+   "u": "Hoofdletter bij zinsbegin en namen, niet bij maanden.",
+   "uo": [
+    "Klopt: namen van personen en plaatsen krijgen een hoofdletter, de maand niet.",
+    "Koos je \"Anna, Juli en Parijs\"? Dan denk je dat een maand een hoofdletter krijgt. In het Nederlands schrijf je maanden met een kleine letter, dus \"juli\" blijft klein.",
+    "Koos je \"alleen het eerste woord, Anna\"? Dan denk je dat alleen het zinsbegin telt. Ook namen van plaatsen krijgen een hoofdletter, dus Parijs hoort er ook bij.",
+    "Koos je \"Anna, reisde en Parijs\"? Dan denk je dat een werkwoord een hoofdletter krijgt. Alleen namen en het zinsbegin krijgen een hoofdletter, \"reisde\" blijft klein."
+   ],
+   "uh": "Wat is een naam?"
+  },
+  {
+   "v": "In welke situatie gebruik je \"u\" in plaats van \"je\"?",
+   "o": [
+    "in een appje aan een vriend",
+    "in een verhaal over jezelf",
+    "in een berichtje aan je broertje",
+    "in een brief aan een onbekende"
+   ],
+   "c": 3,
+   "d": 1,
+   "s": 1,
+   "u": "U gebruik je voor een formele of onbekende lezer.",
+   "uo": [
+    "Koos je \"in een appje aan een vriend\"? Dan denk je dat \"u\" past bij vrienden. Dat is te afstandelijk, in een appje aan een vriend gebruik je \"je\".",
+    "Koos je \"in een verhaal over jezelf\"? Dan denk je dat \"u\" past voor jezelf. Over jezelf schrijf je met \"ik\", \"u\" is een aanspreekvorm voor een lezer.",
+    "Koos je \"in een berichtje aan je broertje\"? Dan denk je dat \"u\" past bij familie. Bij familie gebruik je meestal \"je\", \"u\" is voor formele situaties.",
+    "Klopt: voor een onbekende of een hoger geplaatste past een beleefde aanspreekvorm."
+   ],
+   "uh": "Ken je de lezer?"
+  },
+  {
+   "v": "Welke herschrijving van het fragment is schrijftaal?",
+   "o": [
+    "\"Ik vond dat boek eigenlijk gewoon wel heel erg spannend.\"",
+    "\"Ik vond het boek zeer spannend.\"",
+    "\"Het boek was echt wel super spannend en zo.\"",
+    "\"Nou, het boek was best wel spannend, of zo.\""
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 0,
+   "u": "Schrijftaal laat stopwoorden en slordige woorden weg.",
+   "uo": [
+    "Koos je \"Ik vond dat boek eigenlijk gewoon wel heel erg...\"? Dan denk je dat extra woorden de zin formeler maken. \"Eigenlijk gewoon wel\" zijn juist stopwoorden, ze horen bij spreektaal.",
+    "Klopt: de zin is volledig en heeft geen stopwoorden.",
+    "Koos je \"Het boek was echt wel super spannend en zo.\"? Dan denk je dat deze zin schrijftaal is. \"Super\" en \"en zo\" zijn spreektaal, ze passen niet in een formeel verslag.",
+    "Koos je \"Nou, het boek was best wel spannend, of zo.\"? Dan denk je dat \"nou\" en \"of zo\" in schrijftaal passen. Zulke woorden horen bij praten, je laat ze weg als je schrijft."
+   ],
+   "uh": "Welke woorden zijn nodig?",
+   "ctx": "Een leerling schrijft in een boekverslag: \"Ik vond dat boek eigenlijk best wel echt super leuk, want het was gewoon, nou ja, heel spannend en zo.\""
+  },
+  {
+   "v": "Welke woorden in het fragment zijn typisch spreektaal?",
+   "o": [
+    "\"boek\", \"spannend\" en \"leuk\", de inhoudswoorden",
+    "\"ik\", \"vond\" en \"dat\", de kernwoorden van de zin",
+    "\"want\" en \"heel\", de verbindende woorden",
+    "\"gewoon\", \"nou ja\" en \"en zo\""
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 0,
+   "u": "Gewoon, nou ja en en zo zijn stopwoorden.",
+   "uo": [
+    "Koos je \"boek, spannend en leuk, de inhoudswoorden\"? Dan denk je dat de zelfstandige naamwoorden spreektaal zijn. Het zijn gewone woorden voor de inhoud, de spreektaalwoorden zijn de stopwoorden.",
+    "Koos je \"ik, vond en dat, de kernwoorden van de zin\"? Dan denk je dat de kernwoorden van de zin spreektaal zijn. Het zijn gewone woorden, die ook in schrijftaal horen.",
+    "Koos je \"want en heel, de verbindende woorden\"? Dan denk je dat deze woorden altijd spreektaal zijn. \"Want\" is een gewoon voegwoord, de stopwoorden zijn andere woorden.",
+    "Klopt: dit zijn stopwoorden en vage uitdrukkingen."
+   ],
+   "uh": "Welke woorden voegen niets toe?",
+   "ctx": "Een leerling schrijft in een boekverslag: \"Ik vond dat boek eigenlijk best wel echt super leuk, want het was gewoon, nou ja, heel spannend en zo.\""
+  },
+  {
+   "v": "Wat maakt brief B informeel?",
+   "o": [
+    "de vermelding van de functie kassamedewerker",
+    "de aanhef \"Hoi meneer\" en de groet \"Groetjes\"",
+    "het gebruik van het woord \"u\" in de brief",
+    "het feit dat Sam zijn voornaam ondertekent"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 1,
+   "u": "Hoi en groetjes zijn informeel, geachte en met vriendelijke groet formeel.",
+   "uo": [
+    "Koos je \"de vermelding van de functie kassamedewerker\"? Dan denk je dat de functie informeel is. De functie noemen is juist zakelijk, het informele zit in de aanhef en de groet.",
+    "Klopt: beide wijken af van de formele conventies voor een brief.",
+    "Koos je \"het gebruik van het woord u in de brief\"? Dan denk je dat \"u\" informeel is. \"U\" is juist de formele aanspreekvorm, het informele zit in de aanhef en de groet.",
+    "Koos je \"het feit dat Sam zijn voornaam ondertekent\"? Dan denk je dat een voornaam informeel is. Dat kan in veel brieven, het informele zit in de aanhef en de groet."
+   ],
+   "uh": "Welke woorden zijn informeel?",
+   "ctx": "Brief A: \"Geachte heer De Vries, graag solliciteer ik naar de functie van kassamedewerker. Met vriendelijke groet, Sam Bakker.\" Brief B: \"Hoi meneer, ik wil wel graag bij u werken, ik weet nog niet wat precies. Groetjes, Sam.\""
+  },
+  {
+   "v": "Waarom past brief A beter bij een sollicitatie?",
+   "o": [
+    "de brief is langer dan brief B",
+    "de brief bevat meer vragen aan de lezer",
+    "de toon is formeel en beleefd",
+    "de brief is vrolijker geschreven"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 1,
+   "u": "Kies het register dat bij lezer en doel past.",
+   "uo": [
+    "Koos je \"de brief is langer dan brief B\"? Dan denk je dat de lengte telt. Een korte brief kan ook formeel zijn, het gaat om de toon.",
+    "Koos je \"de brief bevat meer vragen aan de lezer\"? Dan denk je dat het om vragen gaat. Er staan geen vragen in, het gaat om de formele toon.",
+    "Klopt: de lezer verwacht een formele toon bij een sollicitatie.",
+    "Koos je \"de brief is vrolijker geschreven\"? Dan denk je dat een vrolijke toon beter is. Een sollicitatiebrief hoort zakelijk te zijn, en niet vooral vrolijk."
+   ],
+   "uh": "Wie leest de brief?",
+   "ctx": "Brief A: \"Geachte heer De Vries, graag solliciteer ik naar de functie van kassamedewerker. Met vriendelijke groet, Sam Bakker.\" Brief B: \"Hoi meneer, ik wil wel graag bij u werken, ik weet nog niet wat precies. Groetjes, Sam.\""
+  },
+  {
+   "v": "Welke herschrijving van de museumzin is preciezer?",
+   "o": [
+    "\"Het museum opende drie nieuwe tentoonstellingen.\"",
+    "\"In het museum gebeurden best wel veel dingen, en dat was mooi.\"",
+    "\"In het museum was een soort van tentoonstelling, wel leuk.\"",
+    "\"In het museum was echt heel veel te zien en te doen.\""
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 2,
+   "u": "Vervang vage woorden door concrete.",
+   "uo": [
+    "Klopt: de zin noemt concreet wat er in het museum gebeurde.",
+    "Koos je \"In het museum gebeurden best wel veel dingen, en...\"? Dan denk je dat dit preciezer is. \"Best wel veel dingen\" is net zo vaag, het zegt niet wat er gebeurde.",
+    "Koos je \"In het museum was een soort van tentoonstelling,...\"? Dan denk je dat deze zin concreet is. \"Een soort van\" en \"wel leuk\" zijn vaag, je weet niet wat het was.",
+    "Koos je \"In het museum was echt heel veel te zien en te doen.\"? Dan denk je dat \"heel veel\" precies is. Het zegt niets over wat er te zien was, de woorden blijven vaag."
+   ],
+   "uh": "Wat was het precies?",
+   "ctx": "Een leerling schrijft over een museumbezoek: \"Er is een heleboel dingen gebeurd in het museum. Het was echt wel een soort van mooi, vond ik, en ik wil er nog een keer heen.\""
+  },
+  {
+   "v": "Hoe verbeter je deze zin het best?",
+   "o": [
+    "splits hem in meerdere korte zinnen",
+    "voeg nog meer bijzinnen toe",
+    "laat alle komma's weg",
+    "maak er één lange zin zonder punt van"
+   ],
+   "c": 0,
+   "d": 2,
+   "s": 3,
+   "u": "Splits te lange zinnen op.",
+   "uo": [
+    "Klopt: korte zinnen zijn makkelijker te volgen dan één zin met veel bijzinnen.",
+    "Koos je \"voeg nog meer bijzinnen toe\"? Dan denk je dat meer bijzinnen de zin duidelijker maken. Dat maakt hem juist zwaarder, de lezer raakt de draad kwijt.",
+    "Koos je \"laat alle komma's weg\"? Dan denk je dat komma's het probleem zijn. De bijzinnen blijven staan, zonder komma's wordt de zin nog onduidelijker.",
+    "Koos je \"maak er één lange zin zonder punt van\"? Dan denk je dat een lange zin beter samenhangt. Hij maakt de zin alleen zwaarder, de lezer verliest het begin."
+   ],
+   "uh": "Hoe lang is de zin?",
+   "ctx": "Uit een schoolkrant: \"De school, die al jaren worstelt met een tekort aan lokalen, dat zich vooral bij de exacte vakken voordoet, waar ook nog lesuitval plaatsvindt wegens ziekte, gaat verbouwen.\""
+  },
+  {
+   "v": "Welke fout zit in de eerste zin van het fragment?",
+   "o": [
+    "\"boos\" moet \"booz\" zijn",
+    "\"fiets\" moet \"viets\" zijn",
+    "\"word\" moet \"wordt\" zijn",
+    "\"broer\" moet \"broor\" zijn"
+   ],
+   "c": 2,
+   "d": 2,
+   "s": 4,
+   "u": "Hij, zij, het: stam plus -t.",
+   "uo": [
+    "Koos je \"boos moet booz zijn\"? Dan denk je dat de s in \"boos\" een z wordt. In het woord \"boos\" blijft het een s, de fout zit in \"word\".",
+    "Koos je \"fiets moet viets zijn\"? Dan denk je dat de f een v moet worden. In \"fiets\" blijft de f staan, de fout zit in \"word\".",
+    "Klopt: bij \"hij\" komt er een -t achter de stam.",
+    "Koos je \"broer moet broor zijn\"? Dan denk je dat de klinkers fout zijn. Het woord is goed gespeld, de fout zit in \"word\"."
+   ],
+   "uh": "Welk werkwoord klopt niet?",
+   "ctx": "Een leerling schrijft: \"Hij word boos als zijn broer zijn fiets leent. Gisteren heeft hij zijn broer uitgescholden en is hij weggefietst naar een vriend.\""
+  },
+  {
+   "v": "Welke fout zit in de tweede zin van het fragment?",
+   "o": [
+    "\"vroeg\" moet \"vroegt\" zijn",
+    "\"aan hun\" moet \"aan hen\" zijn",
+    "\"docent\" moet \"docend\" zijn",
+    "\"vragen\" moet \"vraagen\" zijn"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 4,
+   "u": "Na een voorzetsel: hen. Bij een meewerkend voorwerp: hun.",
+   "uo": [
+    "Koos je \"vroeg moet vroegt zijn\"? Dan denk je dat \"vroeg\" een -t nodig heeft. Dat geldt voor de tegenwoordige tijd, maar dit is verleden tijd, dus \"vroeg\" is goed.",
+    "Klopt: na een voorzetsel als \"aan\" gebruik je \"hen\".",
+    "Koos je \"docent moet docend zijn\"? Dan denk je dat \"docent\" op een d eindigt. Het woord schrijf je met een t, net als \"student\", dus het is goed gespeld.",
+    "Koos je \"vragen moet vraagen zijn\"? Dan denk je dat de klinker moet verdubbelen. In \"vragen\" staat één a in een open lettergreep, dus het woord is goed gespeld."
+   ],
+   "uh": "Staat er een voorzetsel?",
+   "ctx": "Uit een verslag van een klas: \"De docent gaf de leerlingen een boekverslag mee. Hij vroeg aan hun of ze vragen hadden. Hun ouders mochten het verslag ook lezen, want het was een open avond.\""
+  },
+  {
+   "v": "Welke verbetering van het eerste deel van het fragment klopt?",
+   "o": [
+    "groter als ik; net zo snel dan ik",
+    "groter dan ik; net zo snel dan ik",
+    "groter als ik; net zo snel als ik",
+    "groter dan ik; net zo snel als ik"
+   ],
+   "c": 3,
+   "d": 2,
+   "s": 4,
+   "u": "Dan bij een verschil, als bij gelijkheid.",
+   "uo": [
+    "Koos je \"de twee voegwoorden zijn omgewisseld\"? Dan denk je dat de twee voegwoorden onderling kunnen wisselen. Elk heeft zijn eigen plek, en hier staan ze op de verkeerde plaats.",
+    "Koos je \"dan na beide vergelijkingen\"? Dan denk je dat \"dan\" ook na \"net zo\" hoort. Bij een gelijkheid als \"net zo snel\", schrijf je \"als\".",
+    "Koos je \"als na beide vergelijkingen\"? Dan denk je dat \"als\" ook na \"groter\" hoort. Een verschil vraagt om \"dan\", pas bij gelijkheid gebruik je \"als\".",
+    "Klopt: dan na een ongelijkheid en als na een gelijkheid."
+   ],
+   "uh": "Verschil of gelijk?",
+   "ctx": "Een leerling schrijft over zijn broer: \"Mijn broer is groter als ik, maar hij is net zo snel dan ik. Dat vind ik jammer, want ik zou graag sneller zijn dan hij.\""
+  },
+  {
+   "v": "Waarom staan er komma's in \"chips, cola, fruit en een taart\"?",
+   "o": [
+    "elke zin heeft komma's nodig na elk woord",
+    "het is een opsomming met \"en\" aan het eind",
+    "komma's staan altijd tussen zelfstandige naamwoorden",
+    "er hoort een komma voor elke \"en\" in de zin"
+   ],
+   "c": 1,
+   "d": 2,
+   "s": 5,
+   "u": "Een opsomming: komma's en \"en\" voor het laatste.",
+   "uo": [
+    "Koos je \"elke zin heeft komma's nodig na elk woord\"? Dan denk je dat elk woord een komma krijgt. Dat is niet zo, alleen een opsomming wordt zo gescheiden.",
+    "Klopt: bij een opsomming scheid je de delen met komma's en gebruik je \"en\" voor het laatste.",
+    "Koos je \"komma's staan altijd tussen zelfstandige naamwoorden\"? Dan denk je dat de woordsoort telt. Het gaat om het opsommen van delen, niet om de woordsoort.",
+    "Koos je \"er hoort een komma voor elke en in de zin\"? Dan denk je dat \"en\" altijd een komma krijgt. Dat is niet nodig, bij het laatste onderdeel staat \"en\" zonder komma."
+   ],
+   "uh": "Wat wordt er opgesomd?",
+   "ctx": "Uit een uitnodiging: \"Voor het feest kocht Anna chips, cola, fruit en een taart. Daarna deed zij de slingers op en nodigde zij haar vrienden uit voor de zaterdagavond.\""
+  },
+  {
+   "v": "Welke versie van de e-mail past het best bij een leerling die een docent iets vraagt?",
+   "o": [
+    "versie 2",
+    "versie 1",
+    "versie 3",
+    "versie 1 en 2 zijn even goed"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 1,
+   "u": "Kies een register tussen te informeel en te stijf.",
+   "uo": [
+    "Klopt: ze is beleefd en duidelijk, zonder stijf te worden.",
+    "Koos je \"versie 1\"? Dan denk je dat een informele mail aan een docent kan. Versie 1 is te slordig, en zegt je tegen de docent.",
+    "Koos je \"versie 3\"? Dan denk je dat hoe formeler hoe beter. Versie 3 is te stijf voor een schoolsituatie, de toon past niet bij de lezer.",
+    "Koos je \"versie 1 en 2 zijn even goed\"? Dan denk je dat beide versies passen. Versie 1 is te informeel, en past niet bij een docent."
+   ],
+   "uh": "Past de toon bij de lezer?",
+   "ctx": "Een leerling stuurt een e-mail aan de docent. Versie 1: \"Hoi meneer, snap die opdracht niet, kun je helpen? Groetjes Lisa\". Versie 2: \"Beste meneer Smit, ik begrijp opdracht 3 niet helemaal. Kunt u mij helpen? Met vriendelijke groet, Lisa de Vries\". Versie 3: \"Geachte heer Smit, hierbij deel ik u mede dat ik niet in staat ben de opdracht te begrijpen, hetgeen ik zeer betreur. Hoogachtend, Lisa\"."
+  },
+  {
+   "v": "Welke zin past niet bij het register van deze brief?",
+   "o": [
+    "\"Geachte heer De Vries,\"",
+    "\"Ik reageer graag op uw vacature voor kassamedewerker.\"",
+    "\"Ik werk al twee jaar in de bediening en ben flexibel inzetbaar.\"",
+    "\"Dan hoor ik wel van u, tot ziens!\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 1,
+   "u": "Houd het register van begin tot eind gelijk.",
+   "uo": [
+    "Koos je \"Geachte heer De Vries,\"? Dan denk je dat de aanhef te formeel is. Bij een sollicitatiebrief hoort een formele aanhef, dus deze past juist.",
+    "Koos je \"Ik reageer graag op uw vacature voor...\"? Dan denk je dat deze zin te stijf is. Hij is beleefd en zakelijk, zoals in een sollicitatie hoort.",
+    "Koos je \"Ik werk al twee jaar in de bediening en ben...\"? Dan denk je dat de zin te zakelijk is. Dat past juist bij een sollicitatie, omdat je jezelf zakelijk presenteert.",
+    "Klopt: de zin is te informeel voor een sollicitatiebrief."
+   ],
+   "uh": "Welke zin valt uit de toon?",
+   "ctx": "Uit een sollicitatiebrief: \"Geachte heer De Vries, Ik reageer graag op uw vacature voor kassamedewerker. Ik werk al twee jaar in de bediening en ben flexibel inzetbaar. Dan hoor ik wel van u, tot ziens! Sam Bakker\""
+  },
+  {
+   "v": "Welke herschrijving is het beknoptst zonder informatie te verliezen?",
+   "o": [
+    "\"Er is een aantal mensen in de stad die vinden dat er meer paden moeten zijn.\"",
+    "\"Op dit moment is het zo dat sommige mensen meer fietspaden willen.\"",
+    "\"Sommige inwoners vinden dat er meer fietspaden moeten komen.\"",
+    "\"Sommige inwoners vinden iets.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 2,
+   "u": "Beknopt: geen overbodige woorden, geen informatieverlies.",
+   "uo": [
+    "Koos je \"Er is een aantal mensen in de stad die vinden dat...\"? Dan denk je dat deze zin korter is. Hij is bijna even lang, en \"paden\" is minder precies dan \"fietspaden\".",
+    "Koos je \"Op dit moment is het zo dat sommige mensen meer...\"? Dan denk je dat \"op dit moment is het zo dat\" nodig is. Die woorden voegen niets toe, ze maken de zin langer.",
+    "Klopt: dezelfde boodschap in minder woorden en zonder overbodige uitdrukking.",
+    "Koos je \"Sommige inwoners vinden iets.\"? Dan denk je dat een kortere zin altijd beter is. Hij laat de boodschap weg, namelijk dat er meer fietspaden moeten komen."
+   ],
+   "uh": "Wat is de kern?",
+   "ctx": "Een schrijver schrijft: \"Op dit moment is het zo dat er in de stad een aantal mensen is die vinden dat er meer fietspaden moeten komen.\""
+  },
+  {
+   "v": "Welke herschrijving van de zin uit de schoolkrant is het best?",
+   "o": [
+    "\"De school, die lokalen tekort heeft, gaat verbouwen.\"",
+    "\"De school gaat verbouwen, die al jaren een tekort aan lokalen heeft, dat zich voordoet bij de exacte vakken, waar ook lesuitval is.\"",
+    "\"De school verbouwt. Zij heeft al jaren te weinig lokalen, vooral voor de exacte vakken. Ook valt er les uit door ziekte.\"",
+    "\"De school heeft lesuitval wegens ziekte en verbouwt daarom het gebouw.\""
+   ],
+   "c": 2,
+   "d": 3,
+   "s": 3,
+   "u": "Splits een lange zin in korte, zonder informatie te verliezen.",
+   "uo": [
+    "Koos je \"De school, die lokalen tekort heeft, gaat verbouwen.\"? Dan denk je dat korter altijd beter is. Hier valt informatie weg, zoals het tekort bij de exacte vakken en de lesuitval.",
+    "Koos je \"De school gaat verbouwen, die al jaren een tekort...\"? Dan denk je dat de volgorde van de bijzinnen genoeg is. Hij blijft een lange zin, en de lezer raakt de draad kwijt.",
+    "Klopt: drie korte zinnen houden alle informatie en lezen vlot.",
+    "Koos je \"De school heeft lesuitval wegens ziekte en verbouwt...\"? Dan denk je dat dit de oorspronkelijke zin is. Hier verandert de betekenis, want het tekort aan lokalen is de reden voor de verbouwing."
+   ],
+   "uh": "Staat alles er nog in?",
+   "ctx": "Uit een schoolkrant: \"De school, die al jaren worstelt met een tekort aan lokalen, dat zich vooral bij de exacte vakken voordoet, waar ook nog lesuitval plaatsvindt wegens ziekte, gaat verbouwen.\""
+  },
+  {
+   "v": "Welk woord in het fragment is fout gespeld?",
+   "o": [
+    "\"gewacht\" voor het woord antwoord",
+    "\"gebeld\" achter het woord oma",
+    "\"antwoord\" na het woord een",
+    "\"teruggebelt\""
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 4,
+   "u": "Voltooid deelwoord: stam in 't kofschip, dan -t, anders -d.",
+   "uo": [
+    "Koos je \"gewacht voor het woord antwoord\"? Dan denk je dat \"gewacht\" een d heeft. De stam \"wacht\" eindigt op een t, dus er komt geen extra letter bij.",
+    "Koos je \"gebeld achter het woord oma\"? Dan denk je dat dit woord fout is. \"Bel\" eindigt niet op een letter uit 't kofschip, daarom is \"gebeld\" met een d juist.",
+    "Koos je \"antwoord na het woord een\"? Dan denk je dat \"antwoord\" met een t moet. Het woord eindigt op een d, dat hoort bij de spelling van het zelfstandig naamwoord.",
+    "Klopt: de stam \"bel\" eindigt niet op een letter uit 't kofschip, dus het is \"teruggebeld\"."
+   ],
+   "uh": "Welke letter staat er aan het eind van de stam?",
+   "ctx": "Een leerling schrijft: \"Gisteren heb ik mijn oma gebeld en daarna heb ik lang gewacht op een antwoord, maar zij heeft nooit teruggebelt, ook niet toen het al laat was.\""
+  },
+  {
+   "v": "Welke zin is volledig goed?",
+   "o": [
+    "Ik zag hen gisteren lopen.",
+    "Ik zag hun gisteren in de stad lopen.",
+    "Ik gaf een cadeau aan hun gisteren.",
+    "Hen ouders waren er gisteren ook."
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 4,
+   "u": "Hen na voorzetsel of als lijdend voorwerp, hun bij bezit of meewerkend voorwerp.",
+   "uo": [
+    "Klopt: \"hen\" is hier het lijdend voorwerp, dus niet \"hun\".",
+    "Koos je \"Ik zag hun gisteren in de stad lopen.\"? Dan denk je dat \"hun\" overal past. \"Hun\" is een meewerkend voorwerp of bezit, hier is het een lijdend voorwerp, dus \"hen\".",
+    "Koos je \"Ik gaf een cadeau aan hun gisteren.\"? Dan denk je dat na een voorzetsel \"hun\" past. Na een voorzetsel gebruik je \"hen\", dus het is \"aan hen\".",
+    "Koos je \"Hen ouders waren er gisteren ook.\"? Dan denk je dat \"hen\" bij bezit past. Bezit schrijf je met \"hun\", dus het is \"hun ouders\"."
+   ],
+   "uh": "Welk voorwerp is het?"
+  },
+  {
+   "v": "Waarom moet er \"die\" in plaats van \"dat\" staan in \"de vrouw dat er woont\"?",
+   "o": [
+    "omdat de zin in de verleden tijd staat",
+    "omdat \"vrouw\" een de-woord is",
+    "omdat \"dat\" altijd fout is in een bijzin",
+    "omdat \"woont\" een meervoud is"
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 4,
+   "u": "De- of het-woord: die of dat.",
+   "uo": [
+    "Koos je \"omdat de zin in de verleden tijd staat\"? Dan denk je dat de tijd de keuze bepaalt. De tijd maakt niet uit, het gaat om het lidwoord van het woord ervoor.",
+    "Klopt: bij een de-woord hoort \"die\" en bij een het-woord \"dat\".",
+    "Koos je \"omdat dat altijd fout is in een bijzin\"? Dan denk je dat \"dat\" nooit past. Bij een het-woord is \"dat\" juist goed, zoals in \"het huis dat\".",
+    "Koos je \"omdat woont een meervoud is\"? Dan denk je dat het werkwoord de keuze bepaalt. \"Woont\" is enkelvoud, de keuze hangt af van de-woord of het-woord."
+   ],
+   "uh": "De of het?",
+   "ctx": "Een leerling schrijft: \"Het huis dat de gemeente wil slopen, staat al jaren leeg. De vrouw dat er woont, protesteert fel tegen de sloop en heeft een petitie gestart.\""
+  },
+  {
+   "v": "Welke aanpassingen heeft de zin nodig?",
+   "o": [
+    "alleen een hoofdletter bij het eerste woord van de zin, verder niets",
+    "hoofdletters bij de plaatsnamen, maar geen hoofdletter bij Ik en geen komma's",
+    "hoofdletters bij Ik en Utrecht, komma's bij hoewel en maar",
+    "hoofdletters bij Ik en alle plaatsnamen, komma's bij hoewel en maar"
+   ],
+   "c": 3,
+   "d": 3,
+   "s": 5,
+   "u": "Zinsbegin en plaatsnamen krijgen een hoofdletter en bijzinnen worden gescheiden.",
+   "uo": [
+    "Koos je \"alleen een hoofdletter bij het eerste woord van de...\"? Dan denk je dat alleen het zinsbegin telt. Plaatsnamen krijgen ook een hoofdletter, en de bijzinnen hebben komma's nodig.",
+    "Koos je \"hoofdletters bij de plaatsnamen, maar geen...\"? Dan denk je dat het zinsbegin geen hoofdletter nodig heeft. Een zin begint altijd met een hoofdletter, en de bijzinnen hebben komma's nodig.",
+    "Koos je \"hoofdletters bij Ik en Utrecht, komma's bij hoewel...\"? Dan denk je dat alleen de eerste plaatsnaam een hoofdletter krijgt. Alle plaatsnamen krijgen er een, dus ook Zwolle en Amsterdam.",
+    "Klopt: zinsbegin en plaatsnamen krijgen een hoofdletter en bijzinnen scheid je met komma's."
+   ],
+   "uh": "Wat ontbreekt er?",
+   "ctx": "Een leerling schrijft in een verslag over verhuizen: \"ik woon in utrecht en mijn zus woont in zwolle hoewel ze liever in amsterdam woont, maar daar zijn de huren te hoog.\""
+  },
+  {
+   "v": "In welke situatie is spreektaal in een geschreven tekst gepast?",
+   "o": [
+    "in de dialoog van een personage",
+    "in een zakelijke e-mail aan een bedrijf",
+    "in de inleiding van een betoog voor een examen",
+    "in een samenvatting voor een schoolvak"
+   ],
+   "c": 0,
+   "d": 3,
+   "s": 0,
+   "u": "Spreektaal past in dialogen, niet in zakelijke teksten.",
+   "uo": [
+    "Klopt: spreektaal maakt een personage in een verhaal geloofwaardig.",
+    "Koos je \"in een zakelijke e-mail aan een bedrijf\"? Dan denk je dat spreektaal een zakelijke mail vriendelijker maakt. Het komt slordig over, de lezer verwacht een zakelijke toon.",
+    "Koos je \"in de inleiding van een betoog voor een examen\"? Dan denk je dat spreektaal een betoog toegankelijker maakt. Voor een examen verwacht men schrijftaal, de toon moet verzorgd zijn.",
+    "Koos je \"in een samenvatting voor een schoolvak\"? Dan denk je dat spreektaal in een samenvatting past. Een samenvatting is zakelijk, spreektaal maakt hem vaag."
+   ],
+   "uh": "Wie praat er?"
+  },
+  {
+   "v": "Welke formulering over de telling is het preciest?",
+   "o": [
+    "\"Veel leerlingen komen op de fiets naar school.\"",
+    "\"Zestig van de honderd leerlingen fietsen.\"",
+    "\"Een groot aantal leerlingen fietst wel eens.\"",
+    "\"Best wel veel leerlingen fietsen enzovoort.\""
+   ],
+   "c": 1,
+   "d": 3,
+   "s": 2,
+   "u": "Gebruik de aantallen uit de bron.",
+   "uo": [
+    "Koos je \"Veel leerlingen komen op de fiets naar school.\"? Dan denk je dat \"veel\" volstaat. Het zegt niets over het aantal, terwijl de telling precieze getallen geeft.",
+    "Klopt: de zin noemt de aantallen uit de telling en laat niets weg.",
+    "Koos je \"Een groot aantal leerlingen fietst wel eens.\"? Dan denk je dat dit de telling weergeeft. \"Wel eens\" is vaag, en het zegt niets over hoeveel er fietsen.",
+    "Koos je \"Best wel veel leerlingen fietsen enzovoort.\"? Dan denk je dat dit een bruikbare formulering is. \"Best wel\" en \"enzovoort\" zijn vaag, ze zeggen niets over het aantal."
+   ],
+   "uh": "Hoeveel precies?",
+   "ctx": "Uit een telling onder honderd leerlingen van een school bleek dat zestig leerlingen op de fiets naar school komen, vijfentwintig met de bus gaan en vijftien lopen. De telling is gehouden op een dinsdag in oktober."
+  }
+ ],
+ "oe": [
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft in een boekverslag: \"Ik vond dat boek eigenlijk best wel echt super leuk, want het was gewoon, nou ja, heel spannend en zo.\"",
+   "v": "Herschrijf het fragment in schrijftaal en noem twee spreektaalwoorden die je hebt weggelaten.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: Ik vond het boek zeer spannend (2p). Weggelaten zijn bijvoorbeeld \"nou ja\" en \"gewoon\" (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling stuurt een e-mail aan de docent. Versie 1: \"Hoi meneer, snap die opdracht niet, kun je helpen? Groetjes Lisa\". Versie 2: \"Beste meneer Smit, ik begrijp opdracht 3 niet helemaal. Kunt u mij helpen? Met vriendelijke groet, Lisa de Vries\". Versie 3: \"Geachte heer Smit, hierbij deel ik u mede dat ik niet in staat ben de opdracht te begrijpen, hetgeen ik zeer betreur. Hoogachtend, Lisa\".",
+   "v": "Beoordeel versie 1 en versie 3 van de e-mail en leg uit welke versie het best past.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Versie 1 is te informeel (1p), versie 3 te stijf (1p), versie 2 past het best bij een docent (1p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Uit een schoolkrant: \"De school, die al jaren worstelt met een tekort aan lokalen, dat zich vooral bij de exacte vakken voordoet, waar ook nog lesuitval plaatsvindt wegens ziekte, gaat verbouwen.\"",
+   "v": "Schrijf de zin uit de schoolkrant opnieuw in korte zinnen, zonder informatie te verliezen.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Bijvoorbeeld: De school gaat verbouwen. Er is al jaren een tekort aan lokalen, vooral bij de exacte vakken. Ook valt er les uit wegens ziekte (3p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft: \"Gisteren heb ik mijn oma gebeld en daarna heb ik lang gewacht op een antwoord, maar zij heeft nooit teruggebelt, ook niet toen het al laat was.\"",
+   "v": "Verbeter de spelfout in het fragment en leg de spellingsregel uit.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Teruggebeld (1p). De stam bel eindigt niet op een letter uit 't kofschip, dus het voltooid deelwoord krijgt een d (2p)."
+  },
+  {
+   "bron": "Examenstijl",
+   "ctx": "Een leerling schrijft in een verslag over verhuizen: \"ik woon in utrecht en mijn zus woont in zwolle hoewel ze liever in amsterdam woont, maar daar zijn de huren te hoog.\"",
+   "v": "Verbeter alle fouten in de hoofdletters en leestekens in het fragment.",
+   "o": [
+    ""
+   ],
+   "c": 0,
+   "u": "Ik (1p), Utrecht, Zwolle en Amsterdam met hoofdletter (1p), en komma's voor hoewel en maar (1p)."
+  }
+ ]
+}

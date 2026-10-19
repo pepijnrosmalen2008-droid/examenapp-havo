@@ -5,7 +5,7 @@
 Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is): https://slagio.nl/llms-full.txt
 
 ## In het kort
-- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.122 oefenvragen en 4.346 begrippen.
+- 12 vakken havo, 16 vakken vwo, 12 vakken vmbo; 23.149 oefenvragen en 4.346 begrippen.
 - Adaptief oefenen: na een fout een vraag over hetzelfde onderwerp, een niveau makkelijker; uitleg bij elk fout antwoord.
 - Foutenboek en herhalen met gespreide herhaling, beheersing per leerdoel, studieplan tot het examen.
 - Examens met klok, proefexamens in examenstijl met modelantwoord en puntenverdeling, archief met officiële oude examens.
@@ -112,6 +112,7 @@ Volledige beschrijving (functies, inhoud per niveau, prijs, wat Slagio niet is):
 - [Tekstsoort, doel en lezersgroep afstemmen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekstsoort-doel-en-lezersgroep-afstemmen.html): Je kiest bij een schrijfopdracht de juiste tekstsoort (uiteenzetting, beschouwing of betoog), bepaalt je schrijfdoel en je lezers, en stemt inhoud, woordkeus…
 - [Een betoog schrijven (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/een-betoog-schrijven.html): Je schrijft een betoog met een goede stelling, onderbouwde argumenten, een reactie op een tegenwerping en een slot met conclusie, en je ordent je tekst met…
 - [Tekst en alinea opbouwen (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/tekst-en-alinea-opbouwen.html): Je bouwt een tekst op met inleiding, kern en slot, schrijft alinea's met één hoofdgedachte en een kernzin, kiest een passende volgorde en zorgt met…
+- [Schrijftaal, stijl en correctheid (Nederlands VWO)](https://slagio.nl/leren/vwo/nederlands/schrijftaal-stijl-en-correctheid.html): Je schrijft in verzorgde schrijftaal met een toon die bij lezer en doel past, kiest precieze woorden en overzichtelijke zinnen en controleert spelling,…
 
 ## Examenvragen in examenstijl (met modelantwoord en puntenverdeling)
 - [Examenvragen Nederlands HAVO](https://slagio.nl/leren/havo/nederlands/examenvragen.html): 11 vragen uit een Slagio-proefexamen
